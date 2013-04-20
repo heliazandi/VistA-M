@@ -21991,7 +21991,7 @@ ZWR
 ^DIC(778,0)="HLO MESSAGES^778"
 ^DIC(778,0,"GL")="^HLB("
 ^DIC(778,"%",0)="^1.005^^0"
-^DIC(778,"%D",0)="^1.001^3^3^3050317^^^"
+^DIC(778,"%D",0)="^1.001^3^3^3071102^^^^"
 ^DIC(778,"%D",1,0)="Used to record each message as it is sent or received.  The content of the"
 ^DIC(778,"%D",2,0)="message is stored in a file #777, as it might be sent to multiple locations"
 ^DIC(778,"%D",3,0)="and applications."
