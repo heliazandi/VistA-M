@@ -1,5 +1,5 @@
-HLOSRVR ;ALB/CJM/OAK/PIJ- Server for receiving messages - 10/4/94 1pm ;04/08/2010
- ;;1.6;HEALTH LEVEL SEVEN;**126,130,131,134,137,138,139,143,147**;Oct 13, 1995;Build 15
+HLOSRVR ;ALB/CJM/OAK/PIJ- Server for receiving messages - 10/4/94 1pm ;08/02/2011
+ ;;1.6;HEALTH LEVEL SEVEN;**126,130,131,134,137,138,139,143,147,157**;Oct 13, 1995;Build 8
  ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 GETWORK(WORK) ;
@@ -38,6 +38,27 @@ VMS ;Called from VMS TCP Service once a connection request has been received. Th
  .S LINKNAME="HLO DEFAULT LISTENER"
  ;
  D SERVER(LINKNAME,"SYS$NET")
+ Q
+LINUX1 ;The listener entry point on Linux systems.  The HL LOGICAL LINK should
+ ;be specified in the xinetd configuration file as the variable
+ ;HLOLINK or otherwise in the HLO SYSTEM PARAMETERS file 
+ ;
+ N LINKNAME,NODE
+ S LINKNAME=$System.Util.GetEnviron("HLOLINK")
+ I '$L(LINKNAME) S NODE=$G(^HLD(779.1,1,0)) I $P(NODE,"^",10) S LINKNAME=$P($G(^HLCS(870,$P(NODE,"^",10),0)),"^")
+ S:'$L(LINKNAME) LINKNAME="HLO DEFAULT LISTENER"
+ D LINUX(LINKNAME)
+ Q
+ ;
+LINUX(LINKNAME) ;Listener for Linux systems running under Xinetd.
+ ;Input:
+ ;  LINKNAME - name of the HL LOGICAL LINK for the listener
+ ;
+ Q:'$L($G(LINKNAME))
+ Q:$$CHKSTOP^HLOPROC
+ ;
+ D $ZU(68,15,1) ;need error on disconnect
+ D SERVER(LINKNAME,$PRINCIPAL)
  Q
  ;
 SERVER(LINKNAME,LOGICAL) ; LINKNAME identifies the logical link, which describes the communication channel to be used
