@@ -1,6 +1,6 @@
-FBAAPET ;AISC/DMK-EDIT PAYMENT ;7/13/2003
- ;;3.5;FEE BASIS;**4,38,55,61,77,116,122,133,108,124**;JAN 30, 1995;Build 20
- ;;Per VHA Directive 10-93-142, this routine should not be modified.
+FBAAPET ;AISC/DMK - EDIT PAYMENT ; 5/16/12 12:44pm
+ ;;3.5;FEE BASIS;**4,38,55,61,77,116,122,133,108,124,132**;JAN 30, 1995;Build 17
+ ;;VHA Directive 2004-038, this routine should not be modified.
  S FBOT=1
 GETPT I $G(BAT) D
  .I '$D(^FBAAC("AC",+BAT)) F I=9,10,11 S $P(^FBAA(161.7,+BAT,0),U,I)=""
@@ -44,8 +44,12 @@ SERV S DA(3)=FBDA(3),DA(2)=FBDA(2),DA(1)=FBDA(1)
  S FBFPPSL(0)=$P($G(^FBAAC(FBDA(3),1,FBDA(2),1,FBDA(1),1,FBDA,3)),U,2)
  S FBFPPSL=FBFPPSL(0)
  G:BAT']"" EDIT
- I $G(^FBAA(161.7,BAT,"ST"))]"",$P(^FBAA(161.7,BAT,"ST"),"^")="S"!($P(^FBAA(161.7,BAT,"ST"),"^")="T")&('$D(^XUSEC("FBAASUPERVISOR",DUZ))) W !!,*7,"Sorry, only the Supervisor can edit a payment once the batch has been released." G GETPT
- I $G(^FBAA(161.7,BAT,"ST"))]"",$P(^FBAA(161.7,BAT,"ST"),"^")="V" W !!,*7,"Sorry,you cannot edit a payment once the batch has been Finalized." G GETPT
+ ; check batch status
+ S FBSTAT=$P($G(^FBAA(161.7,BAT,"ST")),U) ; batch status
+ I FBSTAT="S",'$D(^XUSEC("FBAASUPERVISOR",DUZ)) W !!,*7,"Sorry, only the Supervisor can edit a payment once the batch has been released." G GETPT
+ I "^T^F^V^"[(U_FBSTAT_U) W !!,*7,"Sorry, you cannot edit a payment when the batch has been sent to Austin." G GETPT
+ K FBSTAT
+ ;
 EDIT S DA=FBSV
  ;
  ; first edit CPT code and modifiers
@@ -100,7 +104,7 @@ EDIT S DA=FBSV
 BADDATE(FBDOS,INVRCVDT) ;Reject entry if InvRcvDt is Prior to the Date of Service on the Invoice
  I INVRCVDT<FBDOS D  Q 1 ;Reject entry
  .N SHOWDOS S SHOWDOS=$E(FBDOS,4,5)_"/"_$E(FBDOS,6,7)_"/"_$E(FBDOS,2,3) ;Convert FBDOS into display format for error message
- .W *7,!!?5,"*** Invoice Received Date cannot be prior to the",!?8," Date of Service ("_SHOWDOS_") !!!"
+ .W *7,!!?5,"*** Invoice Received Date cannot be prior to the",!?8,"Date of Service ("_SHOWDOS_") !!!"
  Q 0 ;Accept entry
  ;
 END K DR,DIC,DIE,X,DFN,FBOT,FBVD,FBSD,BAT,FBAADT,FBSV,DA,FBDA,FBZ,FBDUZ,FBAACP,FBFY,FY,FBAMTPD,J,K,Y,ZZ,PRC,FBHOLDX,FBV,FBSDI,FBAACPI

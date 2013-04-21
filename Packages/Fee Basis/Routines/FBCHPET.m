@@ -1,5 +1,5 @@
-FBCHPET ;AISC/DMK-EDIT ANCILLARY PAYMENT ;7/13/2003
- ;;3.5;FEE BASIS;**4,38,61,77,116,108,124**;JAN 30, 1995;Build 20
+FBCHPET ;AISC/DMK - EDIT ANCILLARY PAYMENT ; 5/16/12 12:52pm
+ ;;3.5;FEE BASIS;**4,38,61,77,116,108,124,132**;JAN 30, 1995;Build 17
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  S FY=$E(DT,1,3)+1700+$S($E(4,5)>9:1,1:0)
 GETPT I $G(BAT) D
@@ -42,8 +42,11 @@ SERV S DA(3)=FBDA(3),DA(2)=FBDA(2),DA(1)=FBDA(1)
  S FBFPPSL(0)=$P($G(^FBAAC(FBDA(3),1,FBDA(2),1,FBDA(1),1,FBDA,3)),U,2)
  S FBFPPSL=FBFPPSL(0)
  G:BAT']"" EDIT
- I $P($G(^FBAA(161.7,BAT,"ST")),"^",1)="S"!($P($G(^FBAA(161.7,BAT,"ST")),"^",1)="T")&('$D(^XUSEC("FBAASUPERVISOR",DUZ))) W !!,*7,"Sorry, only the Supervisor can edit a payment once the batch has been released." G GETPT
- I $P($G(^FBAA(161.7,BAT,"ST")),"^",1)="V" W !!,*7,"Sorry,you cannot edit a payment once the batch has been Finalized." G GETPT
+ ; check batch status
+ S FBSTAT=$P($G(^FBAA(161.7,BAT,"ST")),U) ; batch status
+ I FBSTAT="S",'$D(^XUSEC("FBAASUPERVISOR",DUZ)) W !!,*7,"Sorry, only the Supervisor can edit a payment once the batch has been released." G GETPT
+ I "^T^F^V^"[(U_FBSTAT_U) W !!,*7,"Sorry, you cannot edit a payment when the batch has been sent to Austin." G GETPT
+ K FBSTAT
 EDIT S DA=FBSV
  ;
  ; first edit CPT code and modifiers
@@ -97,7 +100,7 @@ EDIT S DA=FBSV
 BADDATE(FBDOS,INVRCVDT) ;Reject entry if InvRcvDt is Prior to the Date of Service on the Invoice
  I INVRCVDT<FBDOS D  Q 1 ;Reject entry
  .N SHOWDOS S SHOWDOS=$E(FBDOS,4,5)_"/"_$E(FBDOS,6,7)_"/"_$E(FBDOS,2,3) ;Convert FBDOS into display format for error message
- .W *7,!!?5,"*** Invoice Received Date cannot be prior to the",!?8," Date of Service ("_SHOWDOS_") !!!"
+ .W *7,!!?5,"*** Invoice Received Date cannot be prior to the",!?8,"Date of Service ("_SHOWDOS_") !!!"
  Q 0 ;Accept entry
  ;
 END K DR,DIC,DIE,X,DFN,FBVD,FBSD,BAT,FBSV,DA,FBDA,FBZ,FBDUZ,FBAACP,FBFY,FY,FBAMTPD,J,K,Y,PRC,FBHOLDX,ZZ,FBAADT,FBV,FBSDI,FBAACPI

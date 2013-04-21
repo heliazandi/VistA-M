@@ -1,6 +1,6 @@
-FBAAEPI ;AISC/GRR-EDIT PREVIOUSLY ENTERED PHARMACY INVOICE ;7/16/2003
- ;;3.5;FEE BASIS;**38,61,124**;JAN 30, 1995;Build 20
- ;;Per VHA Directive 10-93-142, this routine should not be modified.
+FBAAEPI ;AISC/GRR - EDIT PREVIOUSLY ENTERED PHARMACY INVOICE ; 5/16/12 12:24pm
+ ;;3.5;FEE BASIS;**38,61,124,132**;JAN 30, 1995;Build 17
+ ;;Per VHA Directive 2004-038, this routine should not be modified.
 RD W ! S DIC="^FBAA(162.1,",DIC(0)="AEQM",DIC("A")="Select Invoice #: ",DIC("S")="I $P(^(0),U,5)'=4!($P(^(0),U,5)=4&$D(^XUSEC(""FBAASUPERVISOR"",DUZ)))" D ^DIC K DIC("S") G END:X=""!(X="^"),RD:Y<0
  S (DA,FBDA)=+Y,DIE=DIC
  ; save FPPS data prior to edit session
@@ -17,8 +17,8 @@ RD W ! S DIC="^FBAA(162.1,",DIC(0)="AEQM",DIC("A")="Select Invoice #: ",DIC("S")
  .I '$D(^XUSEC("FBAASUPERVISOR",DUZ)) D
  .. I $S(FBSTAT="O":0,FBSTAT="C":0,1:1) D
  ... W !,*7,"You cannot edit a payment once released by a supervisor.",! S FBOUT=1 Q
- .I $S(FBSTAT="T":1,FBSTAT="V":1,1:0) D
- .. W !,*7,"You cannot edit an invoice when the batch has a status of transmitted",!,"or vouchered.",! S FBOUT=1
+ .I $S(FBSTAT="T":1,FBSTAT="F":1,FBSTAT="V":1,1:0) D
+ .. W !,*7,"You cannot edit an invoice when the batch has been sent to Austin",! S FBOUT=1
  I $G(FBOUT) D END G FBAAEPI
  S DIE="^FBAA(162.1,FBDA,""RX"","
  ; get current value of FPPS LINE ITEM to use as default
