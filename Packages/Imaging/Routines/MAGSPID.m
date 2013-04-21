@@ -1,5 +1,5 @@
-MAGSPID ;WOIFO/SF/JSL - PATIENT DATA UTILITIES ; 02 Mar 2012 12:18 PM
- ;;3.0;IMAGING;**122**;Mar 19, 2002;Build 92;Aug 02, 2012
+MAGSPID ;WOIFO/SF,JSL,DAC - PATIENT DATA UTILITIES ; 07 Jun 2012 12:00 PM
+ ;;3.0;IMAGING;**122,123**;Mar 19, 2002;Build 67;Jul 24, 2012
  ;; Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
@@ -16,6 +16,7 @@ MAGSPID ;WOIFO/SF/JSL - PATIENT DATA UTILITIES ; 02 Mar 2012 12:18 PM
  ;; +---------------------------------------------------------------+
  ;;
  Q
+ ; This routine is used on both VistA and the DICOM Gateway
 PIDLABEL() ;
  Q $S($$ISIHS():"HRN",1:"SSN")
  ;
@@ -29,4 +30,7 @@ DEM(LOC) ;For IHS, call DEM^VADPT but reset DUZ(2) to the instrument division
  Q
  ;
 ISIHS() ;Is this IHS site? (P123)
- Q $S($G(DUZ("AG"))="I":1,$G(^MAGDICOM(2006.563,1,"AG"))="I":1,1:0)
+ ; This function is used on both VistA and the DICOM gateway
+ ; In VistA DUZ("AG") will be used to determine if a site is an IHS site
+ ; On the DICOM gateway the DICOM GATEWAY PARAMETER (#2006.563) file will be checked
+ Q $S($G(DUZ("AG"))="I":1,$G(^MAGDICOM(2006.563,1,"AGENCY"))="I":1,1:0)
