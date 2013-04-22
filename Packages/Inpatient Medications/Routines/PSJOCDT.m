@@ -1,5 +1,5 @@
 PSJOCDT ;BIR/MV - PROCESS DUPLICATE THERAPY ORDER CHECKS ;6 Jun 07 / 3:37 PM
- ;;5.0;INPATIENT MEDICATIONS;**181,260**;16 DEC 97;Build 94
+ ;;5.0;INPATIENT MEDICATIONS;**181,260,288**;16 DEC 97;Build 7
  ;
  ; Reference to EN^PSODRDU2 is supported by DBIA# 2189.
  ;
@@ -55,7 +55,7 @@ DSPOC ;
  D LINE^PSJMISC("=",81)
  I '$D(PSJOCDT(10)),$D(PSJOCDT) K PSJPAUSE D PAUSE^PSJLMUT1 W @IOF Q
  ;I ($Y+8)>IOSL D PAUSE^PSJMISC(1,) W @IOF
- ;I $D(PSJDGCK) W ! K DIR S DIR(0)="E",DIR("A")="Press Return to Continue..." D ^DIR K DIR Q
+ I $D(PSJDGCK) W ! K DIR S DIR(0)="E",DIR("A")="Press Return to Continue..." D ^DIR K DIR Q
  I $D(PSJDGCK) Q
  D CONT
  Q:$G(PSGORQF)
@@ -132,12 +132,10 @@ SORTLST() ;Sort orders into a numeric list
  S PSJN=0,PSJDNM=""
  F  S PSJDNM=$O(PSJOCDT(10,PSJDNM)) Q:PSJDNM=""  S PSJS="" F  S PSJS=$O(PSJOCDT(10,PSJDNM,PSJS)) Q:PSJS=""  D
  . S PSJPONX=$P(PSJS,";",2)
- . I $D(PSJDSPON(PSJPONX)) Q
- .; S PSJCLINF="",PSJCLINF=PSJOCDT(10,PSJDNM,PSJS)
+ . S PSJCLINF="",PSJCLINF=PSJOCDT(10,PSJDNM,PSJS)
+ . ;Business Rule(s): don't show orders that have a status of DISCONTINUED in list
  . S PSJDSPON(PSJPONX)=""
- . S PSJN=PSJN+1
- . S PSJOCDTL(PSJN)=PSJPONX
- .; S:'$P(PSJCLINF,";",2) PSJOCDTL(PSJN)=PSJPONX ; rule: don't show clinic orders in the "to be DC'ed" list
+ . S:'$$CKDC^PSJOCDT PSJN=PSJN+1,PSJOCDTL(PSJN)=PSJPONX
  Q PSJN
 LST() ;
  ;Only present the list if there are more than 1 orders the list
@@ -157,3 +155,11 @@ PROCLST(PSJY) ;DC the orders selected by user
  . D DC^PSJOCDC(PSGP,PSJON,.PSJCLINF)
  . W !
  Q
+CKDC() ; rule: don't show orders that have a status of DISCONTINUED in list
+ N PSJCKPON,PSJCKFLD
+ S (PSJCKFLD,PSJCKPON)="",PSJCKPON=$S(PSJPONX["U":55.06,PSJPONX["I"!(PSJPONX["V"):55.01,1:53.1)
+ S PSJCKFLD=$S(PSJPONX["V"!(PSJPONX="I"):"100",1:"28")  ;Unit dose and pending/non-verified file statuses are in field 28 in each file
+ D GETS^DIQ(PSJCKPON,+PSJPONX_","_DFN,PSJCKFLD,"I","DCTMP")
+ I '$D(DCTMP(PSJCKPON,+PSJPONX_","_DFN_",",PSJCKFLD,"I")) K DCTMP Q 0
+ I DCTMP(PSJCKPON,+PSJPONX_","_DFN_",",PSJCKFLD,"I")="D" K DCTMP Q 1
+ K DCTMP Q 0
