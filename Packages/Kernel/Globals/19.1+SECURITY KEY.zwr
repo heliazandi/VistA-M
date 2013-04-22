@@ -2184,7 +2184,7 @@ ZWR
 ^DIC(19.1,524,1,1,0)="Allows use of the patient cross reference report in the list of reports "
 ^DIC(19.1,524,1,2,0)="for the emergency department."
 ^DIC(19.1,525,0)="EDPF KIOSKS"
-^DIC(19.1,525,1,0)="^19.11^2^2^3090817^^"
+^DIC(19.1,525,1,0)="^19.11^2^2^3120329^^"
 ^DIC(19.1,525,1,1,0)="This key grants access to access to the EDPF BIGBOARD KIOSKS option to"
 ^DIC(19.1,525,1,2,0)="edit the values for the parameter of the same name."
 ^DIC(19.1,526,0)="PSO TRICARE/CHAMPVA^TRICARE OVERRIDE FUNCTION.^^^"
