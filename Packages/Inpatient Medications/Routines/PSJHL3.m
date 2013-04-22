@@ -1,5 +1,5 @@
 PSJHL3 ;BIR/RLW-PHARMACY ORDER SEGMENTS ;4/24/12 2:46pm
- ;;5.0;INPATIENT MEDICATIONS;**1,11,14,40,42,47,50,56,58,92,101,102,123,110,111,152,134,226,267**;16 DEC 97;Build 158
+ ;;5.0;INPATIENT MEDICATIONS;**1,11,14,40,42,47,50,56,58,92,101,102,123,110,111,152,134,226,267,260**;16 DEC 97;Build 94
  ;
  ; Reference to ^PS(50.606 is supported by DBIA# 2174.
  ; Reference to ^PS(50.607 is supported by DBIA# 2221.        
@@ -29,6 +29,16 @@ EN1(PSJHLDFN,PSOC,PSJORDER) ; start here
  S IVTYPE=$S(RXORDER["U":"",1:$$IVTYPE^PSJHLU(PSJORDER))
  D RXO,RXE,RXR D ZRX
  D CALL^PSJHLU(PSJI)
+ ;PSJ*5*260
+ I +$G(^TMP("PSODAOC",$J,1,0)) D
+ .N DA,OCCDT,ORN,ORL,Z,RET,PSJDAOC,RXN
+ .S PSJDAOC="IP MEDS "_$S($G(PSJOCFG)]"":PSJOCFG,1:"")_" Order Acceptance",OCCDT=$$NOW^XLFDT
+ .S RXN=+RXORDER
+ .I RXORDER["P" S ORN=$P(^PS(53.1,+RXORDER,0),U,21)
+ .I RXORDER["U" S ORN=$P(^PS(55,DFN,5,+RXORDER,0),U,21)
+ .I RXORDER["V" S ORN=$P(^PS(55,DFN,"IV",+RXORDER,0),U,21)
+ .Q:'$G(ORN)
+ .D DAOC
  Q
 INIT ; initialize HL7 variables
  D INIT^PSJHLU
@@ -163,4 +173,29 @@ ZRX ; pharmacy Z-segment
  Q
 CNT ;Count dispense drugs for an order
  S (CNT,DDNUM)=0 F  S DDNUM=$O(@(PSJORDER_"1,"_DDNUM_")")) Q:'DDNUM  S CNT=CNT+1
+ Q
+DAOC ;stores drug allergies w/sign/symptoms - psj*5*260
+ S ORL(1,1)=+ORN_"^"_PSJDAOC_"^"_DUZ_"^"_OCCDT_"^3^"
+ S ORL(1,2)="A Drug-Allergy Reaction exists for this medication and/or class"
+ D SAVEOC^OROCAPI1(.ORL,.RET)
+ S DA=$O(RET(1,0)) Q:'DA
+ S $P(^ORD(100.05,DA,0),"^",2)=6
+ S ^ORD(100.05,DA,4,0)="100.517PA^1^1"
+ S ^ORD(100.05,DA,4,1,0)=^TMP("PSODAOC",$J,1,0)
+ S ^ORD(100.05,DA,4,"B",$P(^TMP("PSODAOC",$J,1,0),"^"),1)=""
+ ;
+ I $O(^TMP("PSODAOC",$J,1,0)) F I=0:0 S I=$O(^TMP("PSODAOC",$J,1,I)) Q:'I  D
+ .S ^ORD(100.05,DA,4,1,1,0)="100.5173PA^"_I_"^"_I
+ .S ^ORD(100.05,DA,4,1,1,I,0)=^TMP("PSODAOC",$J,1,I)
+ .S ^ORD(100.05,DA,4,1,1,"B",^TMP("PSODAOC",$J,1,I),I)=""
+ ;
+ I $O(^TMP("PSODAOC",$J,2,0)) S Z=0 F I=0:0 S I=$O(^TMP("PSODAOC",$J,2,I)) Q:'I  S Z=Z+1 D
+ .S ^ORD(100.05,DA,4,1,2,0)="100.5174PA^"_Z_"^"_Z
+ .S ^ORD(100.05,DA,4,1,2,Z,0)=^TMP("PSODAOC",$J,2,I)
+ .S ^ORD(100.05,DA,4,1,2,"B",^TMP("PSODAOC",$J,2,I),Z)=""
+ ;
+ I $O(^TMP("PSODAOC",$J,3,0)) F I=0:0 S I=$O(^TMP("PSODAOC",$J,3,I)) Q:'I  D
+ .S ^ORD(100.05,DA,4,1,3,0)="100.5175PA^"_I_"^"_I
+ .S ^ORD(100.05,DA,4,1,3,I,0)=^TMP("PSODAOC",$J,3,I)
+ .S ^ORD(100.05,DA,4,1,3,"B",^TMP("PSODAOC",$J,3,I),I)=""
  Q
