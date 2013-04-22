@@ -1,5 +1,5 @@
 PSGOETO ;BIR/CML3-TRANSCRIBE ORDERS ;25 Feb 99 / 1:17 PM
- ;;5.0;INPATIENT MEDICATIONS;**3,13,25,31,33,50,68,58,85,105,90,117,110,111,112,161,254,267**;16 DEC 97;Build 158
+ ;;5.0;INPATIENT MEDICATIONS;**3,13,25,31,33,50,68,58,85,105,90,117,110,111,112,161,254,267,268**;16 DEC 97;Build 9
  ;
  ; Reference to ^PS(51.2 is supported by DBIA #2178.
  ; Reference to ^PS(55 is supported by DBIA #2191.
@@ -51,6 +51,9 @@ PSGOETO ;BIR/CML3-TRANSCRIBE ORDERS ;25 Feb 99 / 1:17 PM
  D STOREINT^PSGSICH1
 OUT ;
  K PSGOETOF
+  ; ** This is where the Automated Dispensing Machine hook is called. Do NOT DELETE or change location **
+ D NEWG^PSJADM
+  ; ** END of Interface hook **
 DONE ;
  I PSGOEAV L -^PS(55,PSGP,5,+PSGORD)
  I 'PSGOEAV L -^PS(53.1,+PSGORD)
