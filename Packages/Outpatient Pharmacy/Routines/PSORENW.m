@@ -1,5 +1,5 @@
 PSORENW ;BIR/SAB-renew main driver ;4/25/07 8:42am
- ;;7.0;OUTPATIENT PHARMACY;**11,27,30,46,71,96,100,130,148,206,390**;DEC 1997;Build 86
+ ;;7.0;OUTPATIENT PHARMACY;**11,27,30,46,71,96,100,130,148,206,388,390,417**;DEC 1997;Build 7
  ;External reference to ^PSDRUG supported by DBIA 221
  ;External references L, UL, PSOL, and PSOUL^PSSLOCK supported by DBIA 2789
  ;External reference to LK^ORX2 and ULK^ORX2 supported by DBIA 867
@@ -19,16 +19,15 @@ ASKX Q
  ;
 EOJ ;
  K VERB,RTE,DRET,PSOMSG,PSORNW,PSOLIST,PSORENW,PSORX("BAR CODE"),PSORX("FILL DATE"),PSODIR,PSOID,PSONOOR,PSOCOU,PSOCOUU,PSOID,PSOFDMX,PSODRUG,COPY,PSOBCKDR
- N ZRXN
- S ZRXN=$G(RXN)
+ N ZRXN S ZRXN=$G(RXN)
  S RXN=$O(^TMP("PSORXN",$J,0)) I RXN S ZRXN=RXN D
  .S RXN1=^TMP("PSORXN",$J,RXN) D EN^PSOHLSN1(RXN,$P(RXN1,"^"),$P(RXN1,"^",2),"",$P(RXN1,"^",3))
  .I $P(^PSRX(RXN,"STA"),"^")=5 D EN^PSOHLSN1(RXN,"SC","ZS",$P(RXN1,"^",4))
- ;saves drug allergy order chks pso*7*390
- I +$G(^TMP("PSODAOC",$J,1,0)) D
- .I $G(PSORX("DFLG")) K ^TMP("PSODAOC",$J) Q
- .S RXN=ZRXN,PSODAOC="Rx Backdoor "_$S($P(^PSRX(RXN,"STA"),"^")=4:"NON-VERIFIED ",1:"")_"RENEW Order Acceptance_OP"
- .D DAOC^PSONEW
+ .;saves drug allergy order chks pso*7*390
+ .I +$G(^TMP("PSODAOC",$J,1,0)) D
+ ..I $G(PSORX("DFLG")) K ^TMP("PSODAOC",$J) Q
+ ..S RXN=ZRXN,PSODAOC="Rx Backdoor "_$S($P(^PSRX(RXN,"STA"),"^")=4:"NON-VERIFIED ",1:"")_"RENEW Order Acceptance_OP"
+ ..D DAOC^PSONEW
  K ZRXN,RXN,RXN1,^TMP("PSORXN",$J),^TMP("PSODAOC",$J)
  I $G(PSONOTE) D MAIN^TIUEDIT(3,.TIUDA,PSODFN,"","","","",1)
  K PSONOTE
@@ -67,7 +66,7 @@ RENEW(PLACER,PSOCPDRG) ;passes flag to CPRS for front door renews
  I ($P(PSODRUG0,"^",3)[1)!($P(PSODRUG0,"^",3)[2)!($P(PSODRUG0,"^",3)["W") Q "0^Non-Renewable "_$S($P(PSODRUG0,"^",3)["A":"Drug Narcotic.",1:"Drug.")
  I $D(^PS(53,+$P(RX0,"^",3),0)),'$P(^(0),"^",5) Q "0^Non-Renewable Prescription."
  S PSOLC=$P(RX0,"^"),PSOLC=$E(PSOLC,$L(PSOLC)) I $A(PSOLC)'<90 Q "0^Max number of renewals (26) has been reached."
- I ST,ST'=2,ST'=5,ST'=6,ST'=11,ST'=12,ST'=14 Q "0^Prescritpion is in a Non-Renewable Status."
+ I ST,ST'=2,ST'=5,ST'=6,ST'=11,ST'=12,ST'=14 Q "0^Prescription is in a Non-Renewable Status."
  I $P($G(^PSRX(RXN,"OR1")),"^",4) Q "0^Duplicate Rx Renewal Request."
  I $O(^PS(52.41,"AQ",RXN,0)) Q "0^Duplicate Rx Renewal Request."
  K PSORFRM,PSOLC,PSODRG,PSODRUG0,RXN,ST

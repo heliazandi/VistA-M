@@ -1,5 +1,5 @@
 PSONEW ;BIR/SAB-new rx order main driver ;07/26/96
- ;;7.0;OUTPATIENT PHARMACY;**11,27,32,46,94,130,268,225,251,379,390**;DEC 1997;Build 86
+ ;;7.0;OUTPATIENT PHARMACY;**11,27,32,46,94,130,268,225,251,379,390,417**;DEC 1997;Build 7
  ;External references L and UL^PSSLOCK supported by DBIA 2789
  ;External reference to ^VA(200 supported by DBIA 224
  ;External reference to ^XUSEC supported by DBIA 10076
@@ -98,6 +98,7 @@ NOORE(PSONEW) ;entry point for renew
  S PSONEW("NOO")=PSONOOR
  Q
 DAOC ;stores drug allergies w/sign/symptoms
+ Q:'$D(^TMP("PSODAOC",$J,1,0))
  N DA,OCCDT,ORN,ORL,Z,RET S OCCDT=$$NOW^XLFDT,ORN=$P(^PSRX(RXN,"OR1"),"^",2)
  S ORL(1,1)=ORN_"^"_PSODAOC_"^"_DUZ_"^"_OCCDT_"^3^"
  S ORL(1,2)="A Drug-Allergy Reaction exists for this medication and/or class"
