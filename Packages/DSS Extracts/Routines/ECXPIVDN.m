@@ -1,5 +1,5 @@
-ECXPIVDN ;ALB/JAP,BIR/DMA,CML,PTD-Extract from IV EXTRACT DATA File (#728.113) ; 10/31/07 1:38pm
- ;;3.0;DSS EXTRACTS;**10,11,8,13,24,33,39,46,49,71,84,96,92,107,105,112,120,127,136**;Dec 22, 1997;Build 28
+ECXPIVDN ;ALB/JAP,BIR/DMA,CML,PTD-Extract from IV EXTRACT DATA File (#728.113) ;12/5/12  12:19
+ ;;3.0;DSS EXTRACTS;**10,11,8,13,24,33,39,46,49,71,84,96,92,107,105,112,120,127,136,143**;Dec 22, 1997;Build 4
 BEG ;entry point from option
  D SETUP I ECFILE="" Q
  D ^ECXTRAC,^ECXKILL
@@ -34,13 +34,8 @@ START ; start package specific extract
  K ^TMP($J),CLIN,DA,DFN,DIC,DIK,DRG,ON,SA,X,Y,P1,P3
  Q
 STUFF ;get data
- N ECORDST,ECTI,ECXADCU,ECIA
- S (ECXADCU,ECIA)=0
+ N ECORDST,ECTI ;143
  S ECST=^TMP($J,SA,DRG),ECXCNT=^(DRG,1),ECXCOST=^(2),ECVACL=$P(ECXPHA,U,2),ECORDST="",ECTI=""
- ;Loop through the IV additives file 52.6 to find match and get Average Cost Per Unit **136 
- I ECXLOGIC>2012 D
- .F  S ECIA=$O(^PS(52.6,ECIA)) Q:'ECIA  Q:$P(^PS(52.6,ECIA,0),"^",2)=DRG
- .I +ECIA'=0 S ECXADCU=+$P($G(^PS(52.6,ECIA,0)),"^",7) I 'ECIA S ECXADCU=0
  ;if older logic, use incorrect calculation for cost **136
  I ECXLOGIC<2013 S ECXCOST=ECXCOST*ECXCNT
  ;S ECST=^TMP($J,SA,DRG),ECXCNT=^(DRG,1),ECXCOST=^(2),ECXCOST=ECXCOST*ECXCNT,ECVACL=$P(ECXPHA,U,2),ECORDST="",ECTI="" removed old cost calc **136
@@ -69,7 +64,8 @@ STUFF ;get data
  .I ECINV["1" S ECTI="1"
  .I ECINV["I" S ECTI="I"
  .S ECINV=ECTI
- .S ECXCOST=+ECST*ECXADCU
+ .; Update cost calculation use exist cost x quant x count
+ .S ECXCOST=+ECST*ECXCOST ;143
  ; old method of dea spl hndlg **136
  I ECXLOGIC<2013 S ECINV=$S(ECINV["I":"I",1:"")
  S ECNDC=$P(ECXPHA,U,3),ECNFC=$$RJ^XLFSTR($P(ECNDC,"-"),6,0)_$$RJ^XLFSTR($P(ECNDC,"-",2),4,0)_$$RJ^XLFSTR($P(ECNDC,"-",3),2,0),ECNFC=$TR(ECNFC,"*",0)
