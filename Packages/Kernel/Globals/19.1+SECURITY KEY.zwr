@@ -1,6 +1,6 @@
 SECURITY KEY
 ZWR
-^DIC(19.1,0)="SECURITY KEY^19.1^557^524"
+^DIC(19.1,0)="SECURITY KEY^19.1^558^525"
 ^DIC(19.1,0,"DD")="#"
 ^DIC(19.1,0,"DEL")="#"
 ^DIC(19.1,0,"GL")="^DIC(19.1,"
@@ -2321,6 +2321,9 @@ ZWR
 ^DIC(19.1,557,1,4,0)="this security key is allowing the ability to assign consults.  "
 ^DIC(19.1,557,1,5,0)="Users with this security key will also need the CAPRI VRE"
 ^DIC(19.1,557,1,6,0)="Counselor security key as well."
+^DIC(19.1,558,0)="IBCNF EDIT"
+^DIC(19.1,558,1,0)="^^1^1^3111122^"
+^DIC(19.1,558,1,1,0)="This security key is assigned to eII Edit Configuration option. Only users with this security key can access this option. "
 ^DIC(19.1,"%",0)="^1.005^2^2"
 ^DIC(19.1,"%",1,0)="XU"
 ^DIC(19.1,"%",2,0)="XQ"
@@ -2472,6 +2475,7 @@ ZWR
 ^DIC(19.1,"B","IBCI CM MULTIPLE CLAIM SEND",363)=""
 ^DIC(19.1,"B","IBCNE IIV AUTO MATCH",390)=""
 ^DIC(19.1,"B","IBCNE IIV SUPERVISOR",389)=""
+^DIC(19.1,"B","IBCNF EDIT",558)=""
 ^DIC(19.1,"B","IBCNR E-PHARMACY SUPERVISOR",416)=""
 ^DIC(19.1,"B","IBCNR ROI",498)=""
 ^DIC(19.1,"B","IBD MANAGER",285)=""
