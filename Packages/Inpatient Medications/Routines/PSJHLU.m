@@ -1,5 +1,5 @@
 PSJHLU ;BIR/RLW-UTILITIES USED IN BUILDING HL7 SEGMENTS ;4/24/12 2:52pm
- ;;5.0;INPATIENT MEDICATIONS;**1,56,72,102,134,181,267**;16 DEC 97;Build 158
+ ;;5.0;INPATIENT MEDICATIONS;**1,56,72,102,134,181,267,285**;16 DEC 97;Build 4
  ;
  ; Reference to ^PS(52.6 is supported by DBIA# 1231.
  ; Reference to ^PS(52.7 is supported by DBIA# 2173.
@@ -97,7 +97,8 @@ ENI ;Calculate Frequency for IV orders
  .I X2=+X2 S X2=X2_" ml/hr"
  .S:$P(X2,"@")=+X2 $P(X2,"@")=$P(X2,"@")_" ml/hr"
  .S X=X1_"="_X2
- I X'=+X,($P($TR(X," ml/hr",""),"@",2,999)'=+$P($TR(X," ml/hr",""),"@",2,999)!(+$P(X,"@",2,999)<0)),($P(X," ml/hr")'=+$P(X," ml/hr")!(+$P(X," ml/hr")<0)) Q:(X>0&($E(X)=0))  K X Q
+ ;*285 - Allow for decimals with trailing zeroes
+ I X'?.N.1".".N,($P($TR(X," ml/hr",""),"@",2,999)'=+$P($TR(X," ml/hr",""),"@",2,999)!(+$P(X,"@",2,999)<0)),($P(X," ml/hr")'?.N.1".".N!(+$P(X," ml/hr")<0)) Q:(X>0&($E(X)=0))  K X Q
  I X=+X!(X>0&($E(X)=0)) S:$S(X'["ml/hr":0,X["@":0,1:1) X=X_" ml/hr" D SPSOL S FREQ=$S('X:0,1:SPSOL\X*60+(SPSOL#X/X*60+.5)\1) K SPSOL Q
  I X[" ml/hr" D SPSOL S FREQ=$S('X:0,1:SPSOL\X*60+(SPSOL#X/X*60+.5)\1) K SPSOL Q
  S SPSOL=$P(X,"@",2) S:$P(X,"@")=+X $P(X,"@")=$P(X,"@")_" ml/hr" S FREQ=$S('SPSOL:0,1:1440/SPSOL\1) K SPSOL
