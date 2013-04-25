@@ -1,5 +1,5 @@
 ONCSG1 ;Hines OIFO/GWB - Automatic Staging Tables ;10/28/10
- ;;2.11;ONCOLOGY;**35,51,52,54,56**;Mar 07, 1995;Build 10
+ ;;2.11;ONCOLOGY;**35,51,52,54,56,57**;Mar 07, 1995;Build 6
  ;
  ;DIGESTIVE SYSTEM
  ;
@@ -57,7 +57,7 @@ ESO7A ;Squamous Cell Carcinoma
  I T="IS" S TNM=T_N_M
  E  S TNM=$E(T,1)_N_M
  D  K TNM Q
- .I (TNM="IS00")&(G=1) S SG=0 Q
+ .I TNM="IS00" S SG=0 Q
  .I (TNM=100)&(G=1) S SG="1A" Q
  .I (TNM=100)&((G=2)!(G=3)) S SG="1B" Q
  .I TNM=100 S SG="1A" Q
@@ -84,7 +84,7 @@ ESO7B ;Adenocarcinoma
  I T="IS" S TNM=T_N_M
  E  S TNM=$E(T,1)_N_M
  D  K TNM Q
- .I (TNM="IS00")&(G=1) S SG=0 Q
+ .I TNM="IS00" S SG=0 Q
  .I (TNM=100)&((G=1)!(G=2)) S SG="1A" Q
  .I (TNM=100)&(G=3) S SG="1B" Q
  .I (TNM=200)&((G=1)!(G=2)) S SG="1B" Q
