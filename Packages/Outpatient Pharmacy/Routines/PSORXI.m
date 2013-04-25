@@ -1,5 +1,5 @@
 PSORXI ;IHS/DSD/JCM - logs pharmacy interventions ;03/19/93 11:56
- ;;7.0;OUTPATIENT PHARMACY;**268,324,251,390**;DEC 1997;Build 86
+ ;;7.0;OUTPATIENT PHARMACY;**268,324,251,387,390,417**;DEC 1997;Build 7
  ;External reference to ^APSPQA(32.4 supported by DBIA 2179
  ; This routine is used to create entries in the APSP INTERVENTION file.
 START ;  
