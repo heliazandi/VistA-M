@@ -1,5 +1,5 @@
 PSGOEV ;BIR/CML3-VERIFY (MAKE ACTIVE) ORDERS ; 4/16/10 9:18am
- ;;5.0;INPATIENT MEDICATIONS;**5,7,15,28,33,50,64,58,77,78,80,110,111,133,171,207,241,267**;16 DEC 97;Build 158
+ ;;5.0;INPATIENT MEDICATIONS;**5,7,15,28,33,50,64,58,77,78,80,110,111,133,171,207,241,267,268**;16 DEC 97;Build 9
  ;
  ; Reference to ^ORD(101 supported by DBIA #872.
  ; Reference to ^PS(50.7 supported by DBIA #2180.
@@ -74,6 +74,9 @@ VFY ; change status, move to 55, and change label record
  I '$D(PSJSPEED) K DIR S DIR(0)="E" D ^DIR K DIR
  S:+PSJSYSU=3 ^PS(55,"AUE",PSGP,+PSGORD)="" S PSGACT="C"_$S('$D(^PS(55,PSGP,5,+PSGORD,4)):"E",$P(^(4),"^",16):"",1:"E")_"RS",PSGCANFL=2
  S VALMBCK="Q" D EN1^PSJHL2(PSGP,$S(+PSJSYSU=3:"SC",+PSJSYSU=1:"SC",1:"XX"),+PSGORD_"U")     ; allow status change to be sent for pharmacists & nurses
+  ; **This is where the Automated Dispensing Machine hook is called. Do NOT DELETE or change this location **
+ D NEWJ^PSJADM
+  ; **END of Interface hook **
  D:+PSJSYSU=1 EN1^PSJHL2(PSGP,"ZV",+PSGORD_"U")
 DONE ;
  W:CHK !!,"...order NOT verified..."

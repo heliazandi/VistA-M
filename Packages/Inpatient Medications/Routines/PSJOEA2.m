@@ -1,5 +1,5 @@
 PSJOEA2 ;BIR/MLM-INPATIENT ORDER ENTRY ; 5/11/09 7:50am
- ;;5.0;INPATIENT MEDICATIONS;**127,133,200,267**;16 DEC 97;Build 158
+ ;;5.0;INPATIENT MEDICATIONS;**127,133,200,268**;16 DEC 97;Build 9
  ;
  ; Reference to ^PS(55 is supported by DBIA #2191.
  ; Reference to ^PSSLOCK is supported by DBIA #2789.
@@ -9,7 +9,6 @@ CHK ;Check to be sure all the orders in the complex order series are completed, 
  .S PSGP=$P(PSGND,"^",15)
  .I $P(PSGND,U,4)="U",$P(PSGND,U,9)="A",($P(PSGND,U,24)'="R") D ^PSGOT D  Q
  ..M ^PS(55,PSGP,5,+PSGORD,4)=^PS(53.1,PSJO,4)
- ..M ^PS(55,PSGP,5,+PSGORD,15)=^PS(53.1,PSJO,15)
  ..N PSGND2P5 S PSGND2P5=$G(^PS(53.1,+PSJO,2.5)),DUR=$P(PSGND2P5,"^",2) I $G(DUR)]"" N DA,DR,DIE S DIE="^PS(55,"_PSGP_",5,",DA(1)=PSGP,DA=+PSGORD,DR="126////"_$G(DUR) D ^DIE
  ..D ACTLOG^PSJOEA(PSJO,PSGP,PSGORD)
  ..S VND4=$G(^PS(55,PSGP,5,+PSGORD,4))
@@ -24,6 +23,9 @@ CHK ;Check to be sure all the orders in the complex order series are completed, 
  ..S PSJCOM=$P($G(^PS(55,PSGP,5,+PSGORD,.2)),"^",8) I PSJCOM]"" K ^PS(53.1,"ACX",PSJCOM,PSJO) ;S $P(^PS(55,PSGP,5,+PSGORD,4),"^",9)=1
  ..D EN1^PSJHL2(PSGP,$S(+PSJSYSU=3:"SC",+PSJSYSU=1:"SC",1:"XX"),+PSGORD_"U")     ; allow status change to be sent for pharmacists & nurses
  ..D:+PSJSYSU=1 EN1^PSJHL2(PSGP,"ZV",+PSGORD_"U") L -^PS(55,PSGP,5,+PSGORD)
+ ..; ** This is where the Automated Dispensing hook is called. Do NOT DELETE or change location **
+ ..D NEWJ^PSJADM
+ ..; ** END to Interface Hook **
  ..S PSJPREX=1 D CMPLX2^PSJCOM1(PSGP,PSJORD,PSGORD) K PSJPREX
  .I $P(PSGND,U,4)'="U",$P(PSGND,U,9)="A" D GT531^PSIVORFA(PSGP,PSJO_"P") D  Q
  ..S ON55="" I $P(PSGND,"^",24)="R" S ON55=$P(PSGND,"^",25) D
