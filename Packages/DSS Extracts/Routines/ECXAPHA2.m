@@ -1,5 +1,5 @@
-ECXAPHA2 ;ALB/TMD-Pharmacy Extracts Unusual Volumes Report ;5/31/12  12:28
- ;;3.0;DSS EXTRACTS;**40,49,84,104,105,113,136**;Dec 22, 1997;Build 28
+ECXAPHA2 ;ALB/TMD-Pharmacy Extracts Unusual Volumes Report ;12/5/12  12:24
+ ;;3.0;DSS EXTRACTS;**40,49,84,104,105,113,136,143**;Dec 22, 1997;Build 4
  ;
 EN ; entry point
  N COUNT,ECUNIT,LINE,ECDFN,ECD,ECDRG,ECDAY,ECDFN,ECQTY,ECUNIT,ECCOST,ECDS,ECXCOUNT
@@ -49,8 +49,7 @@ PRE2 ; get Prescription data
  Q
  ;
 IVP ; entry point for IVP Data
- N DFN,ON,DA,SA,ECCOUNT,ECIA
- S ECIA=0
+ N DFN,ON,DA,SA,ECCOUNT ;143
  F  S ECD=$O(^ECX(728.113,"A",ECD)),DFN=0 Q:'ECD  Q:ECD>ECED  Q:ECXERR  F  S DFN=$O(^ECX(728.113,"A",ECD,DFN)),ON=0  Q:'DFN  F  S ON=$O(^ECX(728.113,"A",ECD,DFN,ON)),DA=0 Q:'ON  K ^TMP($J,"A"),^("S") D  Q:ECXERR
  .F  S DA=$O(^ECX(728.113,"A",ECD,DFN,ON,DA)) Q:'DA  Q:ECXERR  I $D(^ECX(728.113,DA,0)) S EC=^(0) Q:ECXERR  D
  ..S ECDRG=$P(EC,U,4)
@@ -59,12 +58,7 @@ IVP ; entry point for IVP Data
  ..I '$D(^TMP($J,SA,ECDRG)) D
  ...S ECQTY=+$S(SA="A":+$P(EC,U,7),SA="S":+$P(EC,U,9),1:0)
  ...S ECUNIT=$S(SA="A":$P(EC,U,8),SA="S":"ML",1:"")
- ...S ECIA=0
- ...F  S ECIA=$O(^PS(52.6,ECIA)) Q:'ECIA  Q:$P(^PS(52.6,ECIA,0),"^",2)=ECDRG
- ...I +ECIA'=0 S ECCOST=(+$P($G(^PS(52.6,ECIA,0)),"^",7))*ECQTY
- ...I 'ECIA S ECCOST=0
- ...S ECDFN=DFN
- ...;S ECCOST=$P(EC,U,12),ECDFN=DFN
+ ...S ECCOST=$P(EC,U,12),ECDFN=DFN
  ...S ^TMP($J,SA,ECDRG)=ECUNIT_U_ECD_U_ECDFN_U_ECCOST_U_ECQTY
  ...S ^(ECDRG,1)=0
  ..; add to qty (0,1, or -1) to total
@@ -79,11 +73,8 @@ IVP ; entry point for IVP Data
  ...S ECDAY=$P(^(ECDRG),U,2)
  ...S ECDFN=$P(^(ECDRG),U,3)
  ...; New Cost calculation ** 136
- ...S ECIA=0
- ...F  S ECIA=$O(^PS(52.6,ECIA)) Q:'ECIA  Q:$P(^PS(52.6,ECIA,0),"^",2)=ECDRG
- ...I +ECIA'=0 S ECCOST=(+$P($G(^PS(52.6,ECIA,0)),"^",7))*ECQTY
- ...I 'ECIA S ECCOST=0
- ...;S ECCOST=$P(^(ECDRG),U,4)*ECQTY
+ ...; Removed avg cost search from 136 use existing avgcost and quantity vs count  ** 143
+ ...S ECCOST=$P(^(ECDRG),U,4)*ECQTY
  ...D FILE Q:ECXERR
  K ^TMP($J,"A"),^("S")
  Q
