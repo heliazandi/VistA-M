@@ -1,5 +1,5 @@
 PSGOE7 ;BIR/CML3-SELECT DRUG ;15 MAY 00 / 1:43 PM
- ;;5.0;INPATIENT MEDICATIONS;**9,26,34,52,55,50,87,111,181,254,267,260**;16 DEC 97;Build 94
+ ;;5.0;INPATIENT MEDICATIONS;**9,26,34,52,55,50,87,111,181,254,267,260,288**;16 DEC 97;Build 7
  ;
  ; Reference to ^PS(50.7 is supported by DBIA 2180
  ; Reference to ^PS(59.7 is supported by DBIA 2181
@@ -27,7 +27,7 @@ AD1 ;
  I ("^"[X)!(X="") S PSGORQF=1 G DONE
  G:X?1"S."1.E DONE
  I X?1."?" W !!?2,"Select the medication you wish the patient to receive." W:PSJSYSU<3 "  You should consult",!,"with your pharmacy before ordering any non-formulary medication." W !
- D MIX^DIC1 G:X?1."?" AD1 G:"^"[X!(Y'>0) AD1 S (PSGDO,PSGDRG,PSGDRGN,PSGNEDFD,PSGPDRG,PSGPDRGN)=""
+ D MIX^DIC1 G:X?1."?" AD1 G:"^"[X!(Y'>0) AD1 G:$$PSJSUPCK^PSJDGCK(+Y) AD1 S (PSGDO,PSGDRG,PSGDRGN,PSGNEDFD,PSGPDRG,PSGPDRGN)=""
 DGCKX I $P(PSJSYSU,";",4) D  G DO
  .S:'$D(PSJDGCK) PSGDRG=+Y,PSGDRGN=Y(0,0)
  .S:$D(PSJDGCK)&'$D(PSGDGCKF) PSGDRG=+Y,PSGDRGN=Y(0,0)

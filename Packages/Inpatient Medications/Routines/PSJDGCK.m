@@ -1,5 +1,5 @@
 PSJDGCK ;HP/MJE - Drug Interaction Utility ;09/22/11 5:00pm
- ;;5.0;INPATIENT MEDICATIONS;**260**;16 DEC 97;Build 94
+ ;;5.0;INPATIENT MEDICATIONS;**260,288**;16 DEC 97;Build 7
  ;External references to ^PSSDSAPM supported by DBIA 5570
  ;
 DGCK ;
@@ -26,6 +26,7 @@ DGCKIEN() ;
  Q PSJDGCK7
  ;
 PSJSUPCK(CHK) ;
+ I '$D(PSJDGCK) K CHK Q 0
  I '($P($G(^PSDRUG(CHK,0)),"^",3)["S"!($E($P($G(^PSDRUG(CHK,0)),"^",2),1,2)="XA")) K CHK Q 0
  W !,"You have selected a supply item, please select another drug"
  W !,"or leave blank and hit enter for Profile Order Checks."
