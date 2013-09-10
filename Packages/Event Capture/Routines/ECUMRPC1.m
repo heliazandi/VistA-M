@@ -1,5 +1,5 @@
-ECUMRPC1 ;ALB/JAM-Event Capture Management Broker Utilities ;11/18/11  13:31
- ;;2.0;EVENT CAPTURE;**25,30,33,72,94,95,105,100,107,110,112**;8 May 96;Build 18
+ECUMRPC1 ;ALB/JAM-Event Capture Management Broker Utilities ; 7/21/09 2:05pm
+ ;;2.0; EVENT CAPTURE ;**25,30,33,72,94,95,105,100**;8 May 96;Build 21
  ;
 DSSUNT(RESULTS,ECARY) ;
  ;
@@ -13,8 +13,8 @@ DSSUNT(RESULTS,ECARY) ;
  ;                      no other filters evaluated
  ;               P4 =   optional field to filter based on the DSS Unit Number
  ;               
- ;               if data is passed into the other fields then all criteria
- ;               must be met for data on a unit to be returned
+ ;               with the exception of P3, if data is passed into the other fields
+ ;               then all criteria must be met for data on a unit to be returned
  ;
  ;OUTPUTS        RESULTS - Array of DSS units. Data pieces as follows:-
  ;               PIECE - Description
@@ -48,7 +48,6 @@ DSSUNT(RESULTS,ECARY) ;
  . ; execute new filters
  . I DNM'="",$$UP^XLFSTR($P(NODE,U))'[DNM Q
  . I DUNIT'="",$$UP^XLFSTR($P(NODE,U,5))'[DUNIT Q
- . I DIEN'="",$$UP^XLFSTR(UNT)'[DIEN Q
  . S CNT=CNT+1,CAT=$P(NODE,U,11),CAT=$S(CAT:"Y",1:"N"),UNO=$P(NODE,U,5)
  . S SRV=$$GET1^DIQ(49,$P(NODE,U,2),.01,"I")
  . S MED=$$GET1^DIQ(723,$P(NODE,U,3),.01,"I")
@@ -131,22 +130,20 @@ SRCLST(RESULTS,ECARY) ;
  ;search string.
  ;        RPC: EC GETLIST
  ;
- ;INPUTS    ECARY   - Contains the following subscripted elements
- ;          ECSTR   - Search string
- ;          ECFIL   - File to search
- ;          ECDIR   - Search order
- ;          ECNUM   - (Optional) # records to return [default=44]
- ;          ECADT   - (Optional) date to determine clinic inactivity
- ;OUTPUTS   RESULTS - Array of values based on the search criteria.
+ ;INPUTS   ECARY   - Contains the following subscripted elements
+ ;           ECSTR  - Search string
+ ;           ECFIL  - File to search
+ ;           ECDIR  - Search order
+ ;           ECNUM  - (Optional) # records to return [default=44]
+ ;OUTPUTS     RESULTS - Array of values based on the search criteria.
  ;
- N ECNT,DIC,ECSTR,ECFIL,ECORD,ECER,ECDI,ECNUM,ECDIR,ECADT ;112
+ N ECNT,DIC,ECSTR,ECFIL,ECORD,ECER,ECDI,ECNUM,ECDIR
  D SETENV^ECUMRPC
  S ECNT=0,ECFIL=$P(ECARY,U),ECSTR=$P(ECARY,U,2),ECDIR=$P(ECARY,U,3)
  S ECORD=$S(ECDIR=-1:"B",1:"I")
  K ^TMP($J,"ECFIND"),^TMP("ECSRCH",$J)
  I ECFIL="" Q
  S ECNUM=$S(+$P(ECARY,U,4)>0:$P(ECARY,U,4),1:44)
- S ECADT=$S(+$P(ECARY,U,5):$P(ECARY,U,5),1:DT) ;112
  I ECFIL=420.1 D CSTCTR            ;Cost Center search
  I ECFIL=49 D SERVC                ;Service search
  I ECFIL=723 D MEDSPC              ;Medical specialty
@@ -164,16 +161,8 @@ EXIT K ^TMP("ECSRCH",$J)
  Q
 ASCLN ;Search for active associated clinics (file #44)
  N CLN,CNT,NOD,ECDT,INACT,REACT,ERR
- S CNT=0,ECDT=ECADT ;112
+ S CNT=0,ECDT=DT
  I (ECDIR'=1)&(ECDIR'=-1) S ECDIR=1
- ;the next 2 lines of code compensate for the M collating sequence & how the
- ;clinic code is passed in from a CPRS RPC, in a unique situation. If the
- ;code is numeric, ending in 0 and there is a similar code ending with a
- ;letter, the correct clinic is not returned. EX: 2 clinics, 3010 and "3010A"
- ;exist, the code is written to return 3010, yet 3010A is incorrectly returned. 
- ;This code puts the 0 back on and subtracts 1 to the clinic code
- I $E(ECSTR,$L(ECSTR)-1)="/",$E(ECSTR,1,($L(ECSTR)-2))?.N D
- .S ECSTR=$E(ECSTR,1,($L(ECSTR)-2))_0,ECSTR=ECSTR-1
  F  Q:CNT=ECNUM  S ECSTR=$O(^SC("B",ECSTR),ECDIR) Q:ECSTR=""  S CLN="" D
  .F  S CLN=$O(^SC("B",ECSTR,CLN),ECDIR) Q:CLN=""  S NOD=$G(^SC(CLN,0)) D
  ..Q:NOD=""  Q:$P(NOD,U,3)'="C"  ;Q:+$G(^SC(CLN,"OOS"))
@@ -182,7 +171,7 @@ ASCLN ;Search for active associated clinics (file #44)
  ...I INACT D  I ERR Q
  ....I REACT="" S:ECDT'<INACT ERR=1 Q
  ....I ECDT'<INACT,ECDT<REACT S ERR=1 Q
- ...;I REACT,ECDT<REACT S ERR=1  removed in EC*110 - BGP
+ ...I REACT,ECDT<REACT S ERR=1
  ..S CNT=CNT+1,^TMP($J,"ECFIND",CNT)=CLN_U_$P(NOD,U)
  Q
 CSTCTR ;Search for cost centers (File #420.1)
@@ -209,13 +198,11 @@ STPCDE ;Search for associated stop code (File #40.7)
  I +ECSTR,+ECSTR?.N S INDX="C",IEN=0 D  Q
  .S ECSTR=$O(^DIC(40.7,INDX,+ECSTR)) I ECSTR="" Q
  .F  S IEN=$O(^DIC(40.7,INDX,ECSTR,IEN)) Q:'IEN  D  I ECNT>(ECNUM-1) Q
- ..;07/27/09 llh added checks on piece 2 and 6
- ..S STR=$G(^DIC(40.7,IEN,0)) I ($P(STR,U,3)'=""&($P(STR,U,3)'>DT))!($P(STR,U,6)="S")!($P(STR,U,6)="")!($L($P(STR,U,2))'=3) Q
+ ..;07/27/09 llh added checks on piece 6
+ ..S STR=$G(^DIC(40.7,IEN,0)) I (STR="")!($P(STR,U,3)'="")!($P(STR,U,6)="S")!($P(STR,U,6)="") Q
  ..S STR=$E($P(STR,U),1,30)_"  ["_$J($P(STR,U,2),3,0)_"]"_U_$P(STR,U,2)_U_IEN
  ..S ECNT=ECNT+1,^TMP($J,"ECFIND",ECNT)=STR
- ;added validation checks here as well
- ;D LISTDIC(ECFIL,"",".01;1",ECORD,ECNUM,ECSTR,"",INDX,"I $P(^(0),U,3)=""""!($P(^(0),U,3)'<DT)&($P(^(0),U,6)'=""S"")","","^TMP(""ECSRCH"",$J)","ECER")
- D LISTDIC(ECFIL,"",".01;1",ECORD,ECNUM,ECSTR,"",INDX,"I $P(^(0),U,3)=""""!($P(^(0),U,3)'<DT)&($L($P(^(0),U,2))=3)&(($P(^(0),U,6)=""P"")!($P(^(0),U,6)=""E""))","","^TMP(""ECSRCH"",$J)","ECER")
+ D LISTDIC(ECFIL,"",".01;1",ECORD,ECNUM,ECSTR,"",INDX,"I $P(^(0),""^"",3)=""""!($P(^(0),U,3)'<DT)&($P(^(0),U,6)'=""S"")","","^TMP(""ECSRCH"",$J)","ECER")
  S ECNT=0
  F  S ECNT=$O(^TMP("ECSRCH",$J,"DILIST","ID",ECNT)) Q:'ECNT  D
  .S STR=$G(^TMP("ECSRCH",$J,"DILIST","ID",ECNT,.01))_U_$G(^(1))

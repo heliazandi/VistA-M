@@ -95,7 +95,7 @@ XPARDEL(MDPAR,VALUES) ; [Procedure] Remove a parameter for XPAR
  Q
  ;
 URL() ; [Function] Return Clinical Procedures Homepage URL
- Q "vista.domain.ext/ClinicalSpecialties/clinproc/"
+ Q "vista.med.va.gov/ClinicalSpecialties/clinproc/"
  ;
 FILEDAT ; [Data Module] Allowable file types
  ;;.txt^Text files

@@ -1,5 +1,5 @@
 BPSSCRU5 ;BHAM ISC/SS - ECME SCREEN UTILITIES ;05-APR-05
- ;;1.0;E CLAIMS MGMT ENGINE;**1,5,7,8,10**;JUN 2004;Build 27
+ ;;1.0;E CLAIMS MGMT ENGINE;**1,5,7**;JUN 2004;Build 46
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;USER SCREEN
  Q
@@ -122,21 +122,20 @@ RESPSTAT(BPIEN03) ;
  ;
  ;Electronic payer - ptr to #9002313.92 
  ;BPIEN02 - ptr in #9002313.02
-B1PYRIEN(BP57) ;
- N BPX,BPX2
- S BPX2=+$P($G(^BPSTL(BP57,10,+$G(^BPSTL(BP57,9)),0)),U,2)
- S BPX=$P($G(^BPSF(9002313.92,BPX2,0)),U)
- Q BPX
+PYRIEN(BPIEN02) ;
+ Q $P($G(^BPSF(9002313.92,+$P($G(^BPSC(BPIEN02,0)),U,2),0)),U)
  ;
  ;BPIEN02 - ptr in #9002313.02
-B2PYRIEN(BP57) ;
+B2PYRIEN(BPIEN02,BP57) ;
  N BPX,BPX2
- S BPX2=+$P($G(^BPSTL(BP57,10,+$G(^BPSTL(BP57,9)),0)),U,3)
- S BPX=$P($G(^BPSF(9002313.92,BPX2,0)),U)
+ S BPX=$G(^BPSF(9002313.92,+$$PYRIEN(BPIEN02),"REVERSAL"))
+ I $L(BPX)=0 D
+ . S BPX2=+$P($G(^BPSTL(BP57,10,+$G(^BPSTL(BP57,9)),0)),U,3)
+ . S BPX=$P($G(^BPSF(9002313.92,BPX2,0)),U)
  Q BPX
  ;
  ;B3 payer sheet 
-B3PYRIEN(BP57) ;
+B3PYRIEN(BPIEN02,BP59,BP57) ;
  N BPX,BPX2
  S BPX2=+$P($G(^BPSTL(BP57,10,+$G(^BPSTL(BP57,9)),0)),U,4)
  S BPX=$P($G(^BPSF(9002313.92,BPX2,0)),U)
@@ -219,11 +218,10 @@ PRN(BPPATNAM,BPRETV,BPRXINFO,BPPRNFL) ;
  ;
 MS2NDINS ;
  N Y,Z
- W !,"This patient has ADDITIONAL insurance with Rx Coverage that may be"
- W !,"used to bill this claim.  The system will change the CT entry to a"
- W !,"NON-BILLABLE Episode. If appropriate, please go to the ECME Pharmacy"
- W !,"COB menu and use the PRO - Process Secondary/TRICARE Rx to ECME"
- W !,"option to create an ePharmacy secondary claim."
+ W !,"This patient HAS additional insurance with Rx Coverage that may be"
+ W !,"used to bill this claim.  The system WILL change the CT entry to a"
+ W !,"NON-BILLABLE Episode. If appropriate, please go to Claims Tracking"
+ W !,"to manually create a bill to the additional payer listed below."
  W !!,"Patient: ",?18,BPPATNAM
  S Y=$P(BPRETV,U,4)\1 D DD^%DT
  W !,"Date of service: ",?18,Y

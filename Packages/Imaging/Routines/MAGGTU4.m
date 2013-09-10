@@ -1,6 +1,6 @@
-MAGGTU4 ;WOIFO/GEK/SG/NST - VERSION CHECKS FOR IMAGING CLIENTS ; 25 May 2010 12:33 PM
- ;;3.0;IMAGING;**8,48,63,45,46,59,96,95,72,93,94**;Mar 19, 2002;Build 1744;May 26, 2010
- ;; Per VHA Directive 2004-038, this routine should not be modified.
+MAGGTU4 ;WOIFO/GEK/SG - VERSION CHECKS FOR IMAGING CLIENTS ; 2/2/09 10:49am
+ ;;3.0;IMAGING;**8,48,63,45,46,59,96,95,72,93**;Dec 02, 2009;Build 163
+ ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
  ;; | No permission to copy or redistribute this software is given. |
@@ -165,10 +165,9 @@ MESSAGE(CLNAME,CLVER,CVRC) ;
  ;
  ;--- Quit if the site has VERSION CHECKING=0 (OFF) in
  ;--- the IMAGING SITE PARAMETERS file (#2006.1)
- ; Patch 94 - don't check for VERSION CHECKING
- ;I '$$VERCHKON(PLC)  D  Q 1
- ;. S MAGRES(0)="1^"_$$EZBLD^DIALOG(20050005.014)
- ;. Q
+ I '$$VERCHKON(PLC)  D  Q 1
+ . S MAGRES(0)="1^"_$$EZBLD^DIALOG(20050005.014)
+ . Q
  ;
  ;--- Is this server version alpha/beta or released?
  D VERSTAT(.SVSTAT,MAGVCD(CLNAME,"SV"))
@@ -207,13 +206,8 @@ MESSAGE(CLNAME,CLVER,CVRC) ;
  ;
  ;--- Load and format the message
  D BLD^DIALOG(DLG,.MAGPRMS,,"MAGRES")
- ; check for "version nag message" only if the server is not in alpha/beta
- I 'BETA D
- . I RC'=0 Q  ; the application will terminate or will not show the nag message 
- . I '$$NAGMSGON(PLC) S RC=1  ; do not show the nag message
- . Q
  S MAGRES(0)=RC_U_$G(MAGRES(1))  K MAGRES(1)
- D:$G(DLG1)&(RC'=1) BLD^DIALOG(DLG1,,,"MAGRES")
+ D:$G(DLG1) BLD^DIALOG(DLG1,,,"MAGRES")
  ;---
  Q RC
  ;
@@ -228,18 +222,6 @@ MESSAGE(CLNAME,CLVER,CVRC) ;
  ;
 VERCHKON(PLC) ;
  Q +$P(^MAG(2006.1,PLC,"KEYS"),U,5)
- ;
- ;+++++ RETURNS STATUS OF THE VERSION NAG MESSAGE FOR THE SITE
- ;
- ; PLC           IEN of the Imaging site parameters (file #2006.1)
- ;
- ; Return Values
- ; =============
- ;            0  No nag message
- ;            1  Display nag message
- ;
-NAGMSGON(PLC) ;
- Q +$$GET1^DIQ(2006.1,PLC,132,"I")
  ;
  ;***** RETURNS THE STATUS OF IMAGING VERSION
  ; RPC: MAG4 VERSION STATUS
@@ -278,45 +260,13 @@ VERSTAT(MAGRES,MAGVER) ;RPC [MAG4 VERSION STATUS]
  ;***** IMPLEMENATION OF THE 'MAG CLIENT VERSION REPORT' OPTION
 WSCVCROP ;
  N DA,DIR,DIRUT,DTOUT,DUOUT,MAGSORT,X,Y
- N MAGLLGDT  ; Workstation Last Login date
- N MAGWNMB ; Workstation name contains
- N MAGALLW  ; Include all workstations in the report
- ;
- ; Get Last login date
- K DIR
- S DIR(0)="N^1:9999:0"
- S DIR("A")="Last login date is within this many days"
- S DIR("?")="Enter the number of days prior to today"
- S DIR("B")=30
- D ^DIR  Q:$G(DIRUT)!($G(Y)="")
- S MAGLLGDT=$P($$FMADD^XLFDT($$NOW^XLFDT,-Y),".")  ; just get the date
- ;
- ; Get Workstation start with
- K DIR
- S DIR(0)="FO^"
- S DIR("A")="Workstation name contains text"
- S DIR("?")="Enter text that the workstation name must contain to be included in the search."
- D ^DIR Q:$G(Y)="^"
- S MAGWNMB=Y
- ;
- ;--- Include all workstations in the report
- K DIR
- S DIR(0)="Y^"
- S DIR("A")="Include all workstations in the report"
- S DIR("B")="N"
- D ^DIR  Q:$G(DIRUT)!($G(Y)="")
- S MAGALLW=Y
- ;
  ;--- Let the user select the report sort mode
- K DIR
  S DIR(0)="SO^"
  S DIR(0)=DIR(0)_"V:Site-Client-Version-Workstation Name;"
  S DIR(0)=DIR(0)_"W:Site-Workstation Name-Client;"
  S DIR("A")="Report Sort Mode"
- S DIR("B")="W"
  D ^DIR  Q:$G(DIRUT)!($G(Y)="")
  S MAGSORT=Y
- ;
  ;--- Let the user select the device and queue the report
  W !  S %ZIS="Q"  D ^%ZIS  Q:$G(POP)
  I $D(IO("Q"))  D  K IO("Q")
@@ -324,10 +274,7 @@ WSCVCROP ;
  . N ZTRTN,ZTSAVE,ZTSK,ZTSYNC,ZTUCI
  . S ZTRTN="WSCVCRPT^MAGGTU42"
  . S ZTDESC="Imaging Workstations and Clients Report"
- . S ZTSAVE("MAGSORT")=MAGSORT
- . S ZTSAVE("MAGWNMB")=MAGWNMB
- . S ZTSAVE("MAGLLGDT")=MAGLLGDT
- . S ZTSAVE("MAGALLW")=MAGALLW
+ . S ZTSAVE="MAGSORT"
  . D ^%ZTLOAD,HOME^%ZIS
  . Q
  E  U IO  D WSCVCRPT^MAGGTU42

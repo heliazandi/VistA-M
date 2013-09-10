@@ -1,5 +1,5 @@
-LEXTRAN1 ;ISL/FJF/KER - Lexicon code and text wrapper API's ;01/03/2011
- ;;2.0;LEXICON UTILITY;**59,73,51**;Sep 23, 1996;Build 77
+LEXTRAN1 ;ISL/FJF - Lexicon code and text wrapper API's ;07/16/2008
+ ;;2.0;LEXICON UTILITY;**59**;Sep 23, 1996;Build 6
  ; Per VHA Directive 2004-038, this routine should not be modified.
 GETSYN(LEXSRC,LEXCODE,LEXVDT,LEXRAY,LEXIENS) ; obtain synonyms
  ;
@@ -58,19 +58,18 @@ GETSYN(LEXSRC,LEXCODE,LEXVDT,LEXRAY,LEXIENS) ; obtain synonyms
  ;
  K LEXSTAT
  K ^TMP("LEXSCH",$J)
- S LEXSTAT=$$STATCHK^LEXSRC2(LEXCODE,LEXVDT,.LEXSTAT,$E($G(LEXSRC),1,3)) ; Pch 73 adds parameter LEXSRC
+ S LEXSTAT=$$STATCHK^LEXSRC2(LEXCODE,LEXVDT,.LEXSTAT)
  N RESP
  S RESP=0
- I +LEXSTAT=0 S RESP=-4_U_$$LEXSCNM(LEXSRC)_" code "_LEXCODE_" not active for "_$S(LEXVDT?7N:$$FMTE^XLFDT(LEXVDT,"5Z"),1:"") ; Pch 73 use external date
- I +LEXSTAT=-1 S RESP=-8_U_$S(LEXVDT?7N:$$FMTE^XLFDT(LEXVDT,"5Z"),1:"")_" precedes earliest activation date for code" ; Pch 73 use external date
+ I +LEXSTAT=0 S RESP=-4_U_$$LEXSCNM(LEXSRC)_" code "_LEXCODE_" not active for "_LEXVDT
+ I +LEXSTAT=-1 S RESP=-8_U_LEXVDT_" precedes earliest activation date for code"
  ;
  ; code is good for source for date
  ; 
  K LEX
  N CNIEN,EXIEN,ARR,FINDS,FOUND
  S LEXCIEN=$$GETCIEN(LEXCODE)
- Q:'$D(^LEX(757.02,+LEXCIEN,0)) -1_U_"code "_LEXCODE_" not yet active for "_$S(LEXVDT?7N:$$FMTE^XLFDT(LEXVDT,"5Z"),1:"") ; Pch 73 quit if date precedes activation or LEXCIEN=-1
- S CNIEN=$P(^LEX(757.02,+LEXCIEN,0),U,4) ; Pch 73 + plused LEXCIEN
+ S CNIEN=$P(^LEX(757.02,LEXCIEN,0),U,4)
  S EXIEN="",FINDS=0
  F  S EXIEN=$O(^LEX(757.01,"AMC",CNIEN,EXIEN)) Q:EXIEN=""  D
  .S FINDS=FINDS+1
@@ -85,7 +84,6 @@ GETSYN(LEXSRC,LEXCODE,LEXVDT,LEXRAY,LEXIENS) ; obtain synonyms
  .S CT=CT+1
  .S LEXW("S",CT)=EXP_$S(LEXIENS:U_EXIEN,1:"")
  M LEX=LEXW
- S FINDS=''$D(LEX("F"))+''$D(LEX("P"))+$O(LEX("S"," "),-1) ; Pch 73 adds calculation of FINDS
  I $D(LEXRAY),LEXRAY'="LEX" M @LEXRAY=LEX K LEX
  I RESP=0 S RESP=''FINDS_U_FINDS
  Q RESP
@@ -109,13 +107,6 @@ GETFSN(LEXSRC,LEXCODE,LEXVDT) ; obtain fully specified name
  ;     where LEXSCNM is the source name
  ;       
  N SYNS,LEX
- I $G(LEXCODE)="" Q -1_U_"no code specified"
- I $G(LEXSRC)="" Q -1_U_"no source specified"
- I '$D(^LEX(757.03,"B",LEXSRC)) Q -1_U_"source not recognized"
- I $D(^TMP("LEXSCH",$J,"VDT",0)) S LEXVDT=^(0)
- I $G(LEXVDT)'="" S LEXVDT=$$INTDAT(LEXVDT)
- I $G(LEXVDT)=-1 Q -1_U_"invalid date format"
- I $G(LEXVDT)="" S LEXVDT=$$DT^XLFDT
  S SYNS=$$GETSYN(LEXSRC,LEXCODE,$G(LEXVDT))
  I +SYNS'>0 Q SYNS
  I $D(LEX("F")) Q 1_U_LEX("F")
@@ -140,13 +131,6 @@ GETPREF(LEXSRC,LEXCODE,LEXVDT) ; obtain preferred term
  ;     where LEXSCNM is the source name
  ;
  N SYNS,LEX
- I $G(LEXCODE)="" Q -1_U_"no code specified"
- I $G(LEXSRC)="" Q -1_U_"no source specified"
- I '$D(^LEX(757.03,"B",LEXSRC)) Q -1_U_"source not recognized"
- I $D(^TMP("LEXSCH",$J,"VDT",0)) S LEXVDT=^(0)
- I $G(LEXVDT)'="" S LEXVDT=$$INTDAT(LEXVDT)
- I $G(LEXVDT)=-1 Q -1_U_"invalid date format"
- I $G(LEXVDT)="" S LEXVDT=$$DT^XLFDT
  S SYNS=$$GETSYN(LEXSRC,LEXCODE,$G(LEXVDT))
  I +SYNS'>0 Q SYNS
  Q 1_U_LEX("P")
@@ -200,7 +184,7 @@ GETDES(LEXSRC,LEXTEXT,LEXVDT) ; obtain designation code
  .S SRC=$P(^LEX(757.02,CIEN,0),U,3)
  .I $O(^LEX(757.03,"B",LEXSRC,""))'=SRC K TARR(XIEN) Q
  .; eliminate if inactive for LEXVDT
- .I '+$$STATCHK^LEXSRC2(CODE,LEXVDT,,$E(LEXSRC,1,3)) K TARR(XIEN) Q   ; Pch 73 adds parameter LEXSRC
+ .I '+$$STATCHK^LEXSRC2(CODE,LEXVDT) K TARR(XIEN) Q
  ; get the designation code
  S XIEN=$O(TARR(""))
  I XIEN="" Q -1_U_"text not recognized for source"
@@ -251,9 +235,9 @@ GETASSN(LEXCODE,LEXMAP,LEXVDT,LEXRAY) ;
  I $G(LEXVDT)="" S LEXVDT=$$DT^XLFDT
  S LEXRAY=$G(LEXRAY,"LEX")
  ;
- N MIDIEN,CSYS,CIEN,VALCD,MORD,MTAR,MIEN,EFDT,STAT,CT,VUID
+ N MIDIEN,CSYS,CIEN,VALCD,MORD,MTAR,MIEN,EFDT,STAT,CT
  ;
- I '$D(^LEX(757.32,"B",LEXMAP)),'$D(^LEX(757.32,"C",LEXMAP)) Q -1_U_"unrecognized mapping identifier"
+ I '$D(^LEX(757.32,"B",LEXMAP)),'$D(^LEX(757.32,"C",LEXMAP))
  I $D(^LEX(757.32,"C",LEXMAP)) D
  .S MIDIEN=$O(^LEX(757.32,"C",LEXMAP,""))
  I $D(^LEX(757.32,"B",LEXMAP)) D
@@ -277,14 +261,12 @@ GETASSN(LEXCODE,LEXMAP,LEXVDT,LEXRAY) ;
  F  S MORD=$O(^LEX(757.33,"C",MIDIEN,LEXCODE,MORD)) Q:MORD=""  D
  .F  S MTAR=$O(^LEX(757.33,"C",MIDIEN,LEXCODE,MORD,MTAR)) Q:MTAR=""  D
  ..F  S MIEN=$O(^LEX(757.33,"C",MIDIEN,LEXCODE,MORD,MTAR,MIEN)) Q:MIEN=""  D
- ...N MAT S MAT=$P($G(^LEX(757.33,+MIEN,0)),U,5) ; Pch 73 adds variable MAT for match
- ...S VUID=$P(^LEX(757.33,MIEN,0),U)
- ...S EFDT=+$O(^LEX(757.33,"G",VUID,LEXVDT+.0001),-1)
+ ...S EFDT=+$O(^LEX(757.33,"G",MIEN,LEXVDT+.0001),-1)
  ...Q:EFDT=0
- ...S STAT=+$O(^LEX(757.33,"G",VUID,EFDT,""))
+ ...S STAT=+$O(^LEX(757.33,"G",MIEN,EFDT,""))
  ...Q:STAT=0
  ...S LEX=LEX+1
- ...S LEX(MORD,MTAR)=MAT ; Pch 73 adds variable MAT for match
+ ...S LEX(MORD,MTAR)=""
  I LEXRAY'="LEX" M @LEXRAY=LEX K LEX
  Q ''@LEXRAY_U_@LEXRAY
  ;
@@ -301,17 +283,13 @@ INTDAT(X) ; convert date from external format to VA internal format
  ;
 GETCIEN(CODE) ; get correct code ien for code and date
  ; CODE must be defined
- ; LEXVDT must be defined
- N STA,DAT,CIEN,ARR,CDT S CDT=$G(LEXVDT)
+ ; LEXVXT must be defined
+ N STA,DAT,CIEN,ARR
  S (STA,DAT,CIEN)=""
  F  S STA=$O(^LEX(757.02,"ACT",CODE_" ",STA)) Q:STA=""  D
  .Q:(STA+1)>2
  .F  S DAT=$O(^LEX(757.02,"ACT",CODE_" ",STA,DAT)) Q:DAT=""  D
  ..F  S CIEN=$O(^LEX(757.02,"ACT",CODE_" ",STA,DAT,CIEN)) Q:CIEN=""  D
  ...S ARR(DAT,CIEN)=""
- Q:'$D(ARR) ("-1^No Code entry found for date "_$S(CDT?7N:$$FMTE^XLFDT(CDT,"5Z"),1:""))
- S CIEN=$O(ARR(CDT+.001),-1)
- Q:'$L(CIEN) ("-1^No Code entry found for date "_$S(CDT?7N:$$FMTE^XLFDT(CDT,"5Z"),1:""))
- S CIEN=$O(ARR(CIEN,""),-1)
- Q:'$D(^LEX(757.02,+CIEN,0)) ("-1^No Code entry found for date "_$S(CDT?7N:$$FMTE^XLFDT(CDT,"5Z"),1:""))
+ S CIEN=$O(ARR($O(ARR(LEXVDT+.001),-1),""),-1)
  Q CIEN

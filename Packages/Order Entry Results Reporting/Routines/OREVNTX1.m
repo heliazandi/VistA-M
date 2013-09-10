@@ -1,5 +1,5 @@
-OREVNTX1 ; SLC/JLI - Event delayed orders RPC's ; 4/5/11 2:53pm
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**141,165,149,243,280,347**;Dec 17, 1997;Build 4
+OREVNTX1 ; SLC/JLI - Event delayed orders RPC's ;9/19/02  13:35
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**141,165,149,243**;Dec 17, 1997;Build 242
  ;
 PUTEVNT(ORY,DFN,EVT,ORIFN) ; Save new patient delayed events to file 100.2
  S ORY=$$NEW^OREVNT(DFN,EVT,ORIFN)
@@ -204,10 +204,9 @@ ISDCOD(ORY,ORIFN) ;True: the order need to be filtered out
  . S THEGRP=$P($G(ORGRPLST(IDX)),U,2)
  . I $$GRPCHK(THEGRP,ODGRP) S ORY=1
  I ORY Q
- S PAS=";1;2;7;13;"  ;*347 Update Filter
+ S PAS=";1;"
  S:$D(^OR(100,+ORIFN,3)) X3=^OR(100,+ORIFN,3)
- ;*347 Filter out DC
- S:(PAS[(";"_$P(X3,U,3)_";")) ORY=1
+ S:(PAS'[(";"_$P(X3,U,3)_";")) ORY=0
  Q
 DEFLTS(ORY,EVTID) ;Return default specialty for EVTID(#100.5)
  Q:'+EVTID
@@ -302,10 +301,3 @@ GETSTS(ORY,ORDID) ;Return Order status
  Q:'$D(^OR(100,+ORDID,0))
  S ORY=$P($G(^OR(100,+ORDID,3)),U,3)
  Q
- ;
-CHKORD(ORDER) ;Extrinsic function to determine if order is delayed and the "event" order
- ;
- N VALUE
- S VALUE=0
- I +$P($G(^OR(100,ORDER,0)),U,17),'$O(^ORE(100.2,"AO",ORDER,0)) S VALUE=1 ;Delayed but not the "event" order
- Q VALUE

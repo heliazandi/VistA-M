@@ -1,17 +1,16 @@
 BPSTEST ;OAK/ELZ - ECME TESTING TOOL ;11/15/07  09:55
- ;;1.0;E CLAIMS MGMT ENGINE;**6,7,8,10,11**;JUN 2004;Build 27
+ ;;1.0;E CLAIMS MGMT ENGINE;**6,7**;JUN 2004;Build 46
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;
  ;
-GETOVER(KEY1,KEY2,BPSORESP,BPSWHERE,BPSTYPE,BPPAYSEQ) ;
+GETOVER(BPSRXIEN,BPSFILL,BPSORESP,BPSWHERE,BPSTYPE) ;
  ; called by BPSNCPDP to enter overrides for a particular RX
  ; INPUT
- ;    KEY1      - Prescription IEN/Patient IEN
- ;    KEY2      - Fill Number/Policy Number
+ ;    BPSRXIEN  - Prescription Number
+ ;    BPSFILL   - Fill Number
  ;    BPSORESP  - Previous response when this claim was processed
  ;    BPSWHERE  - RX Action passed into BPSNCPDP
- ;    BPSTYPE   - R (Reversal), S (Submission), E (Eligibility)
- ;    BPPAYSEQ  - payer sequence 1 - primary, 2 - secondary 
+ ;    BPSTYPE   - R (Reversal), S (Submission)
  ; OUTPUT
  ;    None - Table BPS PAYER RESPONSE OVERRIDE entry is created.
  ;
@@ -23,11 +22,12 @@ GETOVER(KEY1,KEY2,BPSORESP,BPSWHERE,BPSTYPE,BPPAYSEQ) ;
  ; Option can not be run for Date of Death option as it causes errors
  I $G(XQY0)["DG DEATH ENTRY" W !,"The testing tool can not be run from Date of Death option" Q
  ;
- ; Do not run for background jobs
- I $D(ZTQUEUED)!(",AREV,CRLB,CRLR,CRLX,CRRL,PC,PL,"[(","_BPSWHERE_",")) Q
+ ; Do not run for background jobs (CMOP (CR*) or ARES/AREV)
+ I $D(ZTQUEUED)!(",ARES,AREV,CRLB,CRLR,CRLX,PC,PL,"[(","_BPSWHERE_",")) Q
  ;
  ; Create Transaction Number
- S BPSTRANS=$$IEN59^BPSOSRX(KEY1,KEY2,$S($G(BPPAYSEQ)>0:+BPPAYSEQ,1:1))
+ S BPSFILL="0000"_+BPSFILL
+ S BPSTRANS=BPSRXIEN_"."_$E(BPSFILL,$L(BPSFILL)-3,$L(BPSFILL))_"1"
  ;
  ; Lookup the record in the BPS PAYER RESPONSE OVERRIDE table
  S DIC=9002313.32,DIC(0)="",X=BPSTRANS
@@ -39,9 +39,9 @@ GETOVER(KEY1,KEY2,BPSORESP,BPSWHERE,BPSTYPE,BPPAYSEQ) ;
  W !,"do not enter overrides (enter No at the next prompt) and disable this"
  W !,"functionality in the BPS SETUP table."
  W !!,"Entering No at the next prompt will delete any current overrides for the"
- W !,"request, if they exist.",!
+ W !,"prescription, if they exist.",!
  S DIR(0)="SA^Y:Yes;N:No"
- S DIR("A")="Do you want to enter overrides for this request? ",DIR("B")="NO"
+ S DIR("A")="Do you want to enter overrides for this prescription? ",DIR("B")="YES"
  D ^DIR
  ;
  ; If no, delete the transaction (if it exists) and quit
@@ -64,21 +64,10 @@ GETOVER(KEY1,KEY2,BPSORESP,BPSWHERE,BPSTYPE,BPPAYSEQ) ;
  . W !!,"This submission may also have a reversal so you will be prompted for the"
  . W !,"reversal overrides."
  ;
- ; If BPSTYPE is equal to 'E', then prompt for eligibility response
- I BPSTYPE["E" D
- . W !!,"Eligibility Questions"
- . D PROMPT(BPSTIEN,.08,"A")
- . N BPSRESP
- . S BPSRESP=$$GET1^DIQ(9002313.32,BPSTIEN_",",.08,"I")
- . I BPSRESP="R" D PROMPT(BPSTIEN,1,"07")
- ;
  ; If BPSTYPE contains 'R', then prompt for reversal response
  I BPSTYPE["R" D
  . W !!,"Reversal Questions"
  . D PROMPT(BPSTIEN,.05,"A")
- . N BPSRESP
- . S BPSRESP=$$GET1^DIQ(9002313.32,BPSTIEN_",",.05,"I")
- . I BPSRESP="R" D ENREVRJ(BPSTRANS)
  ;
  ; If BPSTYPE contains 'S', do submission response
  I BPSTYPE["S" D
@@ -109,32 +98,6 @@ SETOVER(BPSTRANS,BPSTYPE,BPSDATA) ;
  S BPSTIEN=$O(^BPS(9002313.32,"B",BPSTRANS,""))
  I BPSTIEN="" Q
  ;
- ; If a eligibility, check for specific reversal overrides and set
- I BPSTYPE="E1" D  Q
- . S BPSRRESP=$$GET1^DIQ(9002313.32,BPSTIEN_",",.08,"I")
- . ;
- . ; If the response is Stranded, force an <UNDEF> error
- . I BPSRRESP="S" S BPSXXXX=BPSUNDEF
- . I BPSRRESP]"" S BPSDATA(1,112)=BPSRRESP
- . S BPSDATA(9002313.03,9002313.03,"+1,",501)=$S(BPSRRESP="R":"R",1:"A")
- . ; 
- . ; If the response is accepted, delete the reject code count and codes
- . I BPSRRESP="A" K BPSDATA(1,510),BPSDATA(1,511)
- . ; 
- . ; If the response is rejected, delete the rejections returned by payers
- . ;   and put in the ones entered by the user
- . I BPSRRESP="R" D
- .. K BPSDATA(1,509),BPSDATA(1,511)
- .. S BPSRCNT=0
- .. S BPSRIEN=0 F  S BPSRIEN=$O(^BPS(9002313.32,BPSTIEN,1,BPSRIEN)) Q:+BPSRIEN=0  D
- ... S BPSRCODE=$P($G(^BPS(9002313.32,BPSTIEN,1,BPSRIEN,0)),"^",1)
- ... ; Increment counter and store
- ... I BPSRCODE]"" D
- .... S BPSRCD=$$GET1^DIQ(9002313.93,BPSRCODE_",",.01,"E")
- .... I BPSRCD]"" S BPSRCNT=BPSRCNT+1,BPSDATA(1,511,BPSRCNT)=BPSRCD
- .. ; Store total number of rejections
- .. S BPSDATA(1,510)=BPSRCNT
- ;
  ; If a reversal, check for specific reversal overrides and set
  I BPSTYPE="B2" D
  . S BPSRRESP=$$GET1^DIQ(9002313.32,BPSTIEN_",",.05,"I")
@@ -143,12 +106,6 @@ SETOVER(BPSTRANS,BPSTYPE,BPSDATA) ;
  . I BPSRRESP="S" S BPSXXXX=BPSUNDEF
  . I BPSRRESP]"" S BPSDATA(1,112)=$S(BPSRRESP="D":"S",1:BPSRRESP)
  . S BPSDATA(9002313.03,9002313.03,"+1,",501)=$S(BPSRRESP="R":"R",1:"A")
- . ;
- . ; If the response is accepted or duplicate, kill the reject code count and codes
- . I BPSRRESP="A"!(BPSRRESP="D") K BPSDATA(1,510),BPSDATA(1,511)
- . ;
- . ; If the response is rejected, set the reject codes
- . I BPSRRESP="R" D SETREJ(BPSTRANS)
  ;
  ; If a submission, check for specific submission overrides and set
  I BPSTYPE="B1" D
@@ -157,8 +114,7 @@ SETOVER(BPSTRANS,BPSTYPE,BPSDATA) ;
  . ;
  . ; If the response is Stranded, force an <UNDEF> error
  . I BPSSRESP="S" S BPSXXXX=BPSUNDEF
- . ;
- . ; If BPSSRESP exists, file it
+ . ; If it exists, file it
  . I BPSSRESP]"" D
  .. S BPSDATA(1,112)=BPSSRESP
  .. S BPSDATA(9002313.03,9002313.03,"+1,",501)=$S(BPSSRESP="R":"R",1:"A")
@@ -166,10 +122,13 @@ SETOVER(BPSTRANS,BPSTYPE,BPSDATA) ;
  .. ; exists.  Also delete any reject codes
  .. I BPSSRESP="P"!(BPSSRESP="D") D
  ... S BPSPAID=$$GET1^DIQ(9002313.32,BPSTIEN_",",.04,"I")
- ... I BPSPAID]"" S BPSDATA(1,509)=$$DFF^BPSECFM(BPSPAID,8)
- ... K BPSDATA(1,510),BPSDATA(1,511)
+ ... I BPSPAID]"" D
+ .... S BPSDATA(1,509)=$$DFF^BPSECFM(BPSPAID,8)
+ .... K BPSDATA(1,510),BPSDATA(1,511)
+ .. I BPSSRESP="P"!(BPSSRESP="D") D
  ... S BPSCOPAY=$$GET1^DIQ(9002313.32,BPSTIEN_",",.06,"I")
- ... I BPSCOPAY]"" S BPSDATA(1,518)=$$DFF^BPSECFM(BPSCOPAY,8)
+ ... I BPSCOPAY]"" D
+ .... S BPSDATA(1,518)=$$DFF^BPSECFM(BPSCOPAY,8)
  .. ; If rejected, get the rejection code and file them
  .. ; Also, delete the BPSPAID amount
  .. I BPSSRESP="R" D
@@ -188,13 +147,10 @@ SETOVER(BPSTRANS,BPSTYPE,BPSDATA) ;
  Q
  ;
 SELOVER ;
- ; Used to create overrides for prescription that will processed in the
+ ; used to create overrides for prescription that will processed in the
  ; background (CMOP, auto-reversals).  The user is prompted for the
  ; prescription and other information and then calls GETOVER.  It is called
  ; by option BPS PROVIDER RESPONSE OVERRIDES
- ;
- ; This does not work for eligibility but we don't do them in the background 
- ;   right now.
  ;
  N BPSRXIEN,BPSRXNM,BPSRXFL,BPSRFL,BPSORESP,BPSTYPE,BPSRXARR,BPSRARR,DIC,Y,DIR
  ;
@@ -287,23 +243,3 @@ SETDELAY(BPSTRANS) ;
 RUNECME ;
  D RUNNING^BPSOSRX()
  Q
- ;get the reversal reject from the ^XTMP and set BPSDATA to override data
-SETREJ(BPSTRANS) ;
- N BPSREJ
- S BPSREJ=$G(^XTMP("BPSTEST",BPSTRANS))
- I BPSREJ="" Q
- S BPSDATA(1,511,1)=BPSREJ
- S BPSDATA(1,510)=1
- Q
- ;enter a reversal reject
-ENREVRJ(BPSTRANS) ;
- N BPRJCODE,TMSTAMP
- S BPRJCODE=$$PROMPT^BPSSCRU4("Enter a reject code for reversal")
- I $P(BPRJCODE,U)="" Q
- I $P(BPRJCODE,U)=0 Q
- N X,X1,X2
- S X1=DT,X2=2 D C^%DTC
- S ^XTMP("BPSTEST",0)=X_U_DT_U_"ECME TESTING TOOL, SEE BPSTEST ROUTINE"
- S ^XTMP("BPSTEST",BPSTRANS)=$P(BPRJCODE,U)
- Q
- ;

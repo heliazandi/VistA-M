@@ -1,5 +1,5 @@
 IBNCPNB ;OAK/ELZ - UTILITIES FOR NCPCP ;5/22/08  15:23
- ;;2.0;INTEGRATED BILLING;**276,342,384,452**;21-MAR-94;Build 26
+ ;;2.0;INTEGRATED BILLING;**276,342,384**;21-MAR-94;Build 74
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;
  ;NCPDP PHASE III
@@ -11,7 +11,7 @@ NONBR(DFN,IBRX,IBFIL,IBADT,IBCR,IBPAP,IBRC,IBCC,IBUSER) ; Set non-billable reaso
  ;    DFN - Patient
  ;    IBRX - Rx IEN
  ;    IBFIL - fill#
- ;    IBADT - Date of Service
+ ;    IBADT - fill date
  ;    IBCR - Close Claim Reason (#356.8)
  ;    IBPAP - Autobillable flag (billable (1) / non-billable (0) flag)
  ;    IBRC - Release Copay (entered by OPECC)
@@ -88,7 +88,7 @@ RELCOPAY(DFN,IBRX,IBFIL,IBRETRY,IBADT,IBIFN) ; Release copay charges on hold
  ;    IBRX - Rx IEN
  ;    IBFIL - fill/refill #
  ;    IBRETRY - retry flag
- ;    IBADT - Date of Service
+ ;    IBADT - fill date
  ;    IBIFN - 3rd party bill IEN
  ; output:
  ;    -2  == there is no any copay

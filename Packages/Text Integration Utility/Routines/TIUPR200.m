@@ -1,7 +1,7 @@
 TIUPR200 ; SLC/AJB - Pre-install/Home Telehealth Titles; July 26, 2005
  ;;1.0;TEXT INTEGRATION UTILITIES;**200**;Jun 20, 1997
  ;
- Q  
+ N LINE,TIUABORT,TIUCNSLT,TIUCOCOR,TIUFPRIV,TIUNAME,TIUPGNTS,TIUPRNT,TITLE,X,Y
  W !,"Verifying installation environment..."
  S TIUCOCOR=$$LU(8930,"CLINICAL COORDINATOR","X") I '+TIUCOCOR W !,"Installation Error:  CLINICAL COORDINATOR (Class Owner) cannot be defined." S TIUABORT=1
  S TIUCNSLT=$$LU(8925.1,"CONSULTS","X","I $P(^TIU(8925.1,+Y,0),U,4)=""DC""") I '+TIUCNSLT W !,"Installation Error:  Cannot define CONSULTS class." S TIUABORT=1
@@ -9,7 +9,7 @@ TIUPR200 ; SLC/AJB - Pre-install/Home Telehealth Titles; July 26, 2005
  I +$G(TIUABORT) W !!,"Please re-install TIU*1.0*200 after the necessary changes have been made." S XPDABORT=1 Q
  W "complete."
  Q 
-EN Q  
+EN ;
  N LINE,TIUABORT,TIUCNSLT,TIUCOCOR,TIUFPRIV,TIUNAME,TIUPGNTS,TIUPRNT,TITLE,X,Y
  X ^%ZOSF("EON") W $G(IOCUON) W:+$L($G(IOF)) @IOF
  W !,"Preparing installation environment..."

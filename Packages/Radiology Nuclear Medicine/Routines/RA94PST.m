@@ -151,6 +151,6 @@ MAIL ; pass the negative results concerning the tasked process
  I '$$GOTLOCAL^XMXAPIG("G.RAD HL7 MESSAGES") D
  .S XMY(DUZ)=""
  E  S XMY("G.RAD HL7 MESSAGES")=""
- S XMY("VAOITVHITRadDevIssues@domain.ext")="" ;to me...
+ S XMY("VAOITVHITRadDevIssues@va.gov")="" ;to me...
  D ^XMD Q
  ;

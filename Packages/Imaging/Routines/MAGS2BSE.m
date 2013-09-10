@@ -1,5 +1,5 @@
-MAGS2BSE ;WOIFO/JSL - IMAGING BROKER SECURITY PROGRAM ; 9-JUN-2010 2:45 PM
- ;;3.0;IMAGING;**111,90**;Mar 19, 2002;Build 1764;Jun 09, 2010
+MAGS2BSE ;;WOIFO/JSL ~IMAGING BROKER SECURITY PROGRAM ; 21 JUL 2009 11:33 AM
+ ;;3.0;IMAGING;**111**;28-September-2009;;Build 1461
  ;; Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
@@ -20,26 +20,3 @@ MAGS2BSE ;WOIFO/JSL - IMAGING BROKER SECURITY PROGRAM ; 9-JUN-2010 2:45 PM
 BSE(RES) ;RETURN A BROKER SECURITY TOKEN
  D SETVISIT^XUSBSE1(.RES)  ;XUS SET VISITOR - RPC return a token RES
  Q
- ;
- ;+++++ RPC: MAG BROKER GET VISITOR
- ; 
- ;   External Call: GETVISIT^XUSBSE1()  ; Check for expired token.
- ; 
- ; MAGREF1 -- Local variable name for the return value.
- ; MAGTKN  -- The token to be checked.
- ; 
- ; Returns ...
- ; ===========
- ;                ______ON_ERROR_______    ___EXPECTED___
- ; MAGREF1      : 0                        "^"-delimited demographic data
- ;
- ; Notes:
- ; ======
- ; 
- ; See the description for RPC: XUS GET VISITOR.
-BSEXP(MAGREF1,MAGTKN) ;
- D GETVISIT^XUSBSE1(.MAGREF2,MAGTKN)
- S MAGREF1=$S(MAGREF2="":0,1:MAGREF2)
- Q
- ;
- ; MAGS2BSE

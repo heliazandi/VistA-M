@@ -71,7 +71,7 @@ CRE ;create BI-RADS entry in file 78.3
  .S XMSUB="DIAGNOSTIC CODES file IEN issue @ "_RAFAC,XMTEXT="RATXT("
  .S XMY(DUZ)=""  ;send Vista email of problem to the patch installer
  .; Define Outlook mail group to receive email of problem
- .S XMY("VAOITVHITRadiologyFacilityLevelApplicationIssues@domain.ext")=""
+ .S XMY("VAOITVHITRadiologyFacilityLevelApplicationIssues@va.gov")=""
  .NEW DIFROM
  .D ^XMD,BMES^XPDUTL(.RATXT)
  .Q

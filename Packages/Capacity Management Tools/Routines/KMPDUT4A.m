@@ -1,5 +1,5 @@
 KMPDUT4A ;OAK/RAK; Multi-Lookup Global/Array Check ;2/17/04  10:47
- ;;3.0;KMPD;;Jan 22, 2009;Build 42
+ ;;2.0;CAPACITY MANAGEMENT TOOLS;;Mar 22, 2002
  ;
 CHECK() ;extrinsic function
  ;--------------------------------------------------------------------

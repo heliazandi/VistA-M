@@ -1,5 +1,5 @@
-PXRMINTR ;SLC/PKR/PJH - Input transforms for Clinical Reminders. ;02/024/2011
- ;;2.0;CLINICAL REMINDERS;**4,12,16,18**;Feb 04, 2005;Build 152
+PXRMINTR ; SLC/PKR/PJH - Input transforms for Clinical Reminders.;06/01/2009
+ ;;2.0;CLINICAL REMINDERS;**4,12**;Feb 04, 2005;Build 73
  ;=======================================================
 VASP(DA,X) ;Check for valid associate sponsor in file 811.6.
  ;Do not execute as part of a verify fields.
@@ -37,11 +37,8 @@ VCLASS(X) ;Check for valid CLASS field, ordinary users cannot create
  ;=======================================================
 VDT(X) ;Check for a valid date/time. Input transform on 
  ;beginning date/time and ending date/time fields.
- N FMDATE,PXRMINTR,VALID
- S PXRMINTR=1
- ;If X is already in internal FileMan format make sure it is valid.
- I X?7N0.1"."0.6N D DT^DILF("ST",X,.FMDATE,"","MSG")
- I X'?7N0.1"."0.6N S FMDATE=$$CTFMD^PXRMDATE(X)
+ N FMDATE,VALID
+ S FMDATE=$$CTFMD^PXRMDATE(X)
  S VALID=$S(FMDATE=-1:0,1:1)
  I 'VALID D 
  . N TEXT
@@ -72,16 +69,6 @@ VFINDING(X) ;Check X to see if it is a valid finding. This is the input
  ;I X["RAMIS(71," Q 1
  ;I X["YTT(601," Q 1
  Q 1
- ;
- ;=======================================================
-VFREQ(X) ;Check for a valid frequency. It must be of the form NU,
- ;where N is an integer and U is unit. The integer can be between
- ;0 and 9999 inclusive. Valid units are: H (hours),
- ;D (days), W (weeks), M (months), and Y (years). Used as input
- ;transform for Baseline Frequency, finding multiple Reminder
- ;Frequency and called by Custom Date Due input transform.
- S X=$$UP^XLFSTR(X)
- Q X?1.4N1(1"H",1"D",1"W",1"M",1"Y")
  ;
  ;=======================================================
 VHF(X) ;Check for valid health factor findings. It must be a factor, not
@@ -209,12 +196,21 @@ VTAX(X) ;Make sure the taxonomy is active.
  Q 1
  ;
  ;=======================================================
+VTPER(X) ;Check for valid time period. They must be of the form NS,
+ ; where N is a number and S is D for days, M for months, or Y for years.
+ N LEN
+ S X=$$UP^XLFSTR(X)
+ S LEN=$L(X)
+ I (LEN>5)!(LEN<2) Q 0
+ I ((X'?1N.N1"D")&(X'?1N.N1"M")&(X'?1N.N1"Y")) Q 0
+ Q 1
+ ;
+ ;=======================================================
 VUSAGE(X) ;Check X to see if it contains valid USAGE codes.
  ;This is part of the input transform for this field. The length of the
  ;USAGE field is 10 characters. The valid codes are:
  ;   C - CPRS
  ;   L - Reminder Patient List
- ;   O - Reminder Order Checks
  ;   P - Patient
  ;   R - Reports
  ;   X - Extracts
@@ -227,7 +223,6 @@ VUSAGE(X) ;Check X to see if it contains valid USAGE codes.
  S TEMP=$$UP^XLFSTR(X)
  S TEMP=$TR(TEMP,"C","")
  S TEMP=$TR(TEMP,"L","")
- S TEMP=$TR(TEMP,"O","")
  S TEMP=$TR(TEMP,"P","")
  S TEMP=$TR(TEMP,"R","")
  S TEMP=$TR(TEMP,"X","")

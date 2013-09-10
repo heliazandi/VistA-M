@@ -1,5 +1,5 @@
-MAGGTU42 ;WOIFO/SG/NST - WORKSTATION-CLIENT VERSION REPORTS  ; 30 Apr 2010 11:07 AM
- ;;3.0;IMAGING;**93,94**;Mar 19, 2002;Build 1744;May 26, 2010
+MAGGTU42 ;WOIFO/SG - WORKSTATION-CLIENT VERSION REPORTS  ; 12/4/08 4:52pm
+ ;;3.0;IMAGING;**93**;Dec 02, 2009;Build 163
  ;; Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
@@ -8,6 +8,7 @@ MAGGTU42 ;WOIFO/SG/NST - WORKSTATION-CLIENT VERSION REPORTS  ; 30 Apr 2010 11:07
  ;; | to execute a written test agreement with the VistA Imaging    |
  ;; | Development Office of the Department of Veterans Affairs,     |
  ;; | telephone (301) 734-0100.                                     |
+ ;; |                                                               |
  ;; | The Food and Drug Administration classifies this software as  |
  ;; | a medical device.  As such, it may not be changed in any way. |
  ;; | Modifications to this software may result in an adulterated   |
@@ -175,10 +176,6 @@ PRTBLH ;
  ;   "PWC",      Number of subscripts in the Place-Workstation-Client
  ;               index (see the "W" flag below).
  ;     PlaceName,WSName,ClientName,Seq#)=""
- ;    
- ;    "TOTALS"   Count total workstations processed and how many have to updated
- ;                ^01: Total workstations processed
- ;                ^02: Total workstations need to be updated
  ;
  ; [FLAGS]       Flags that control the execution (can be combined):
  ;
@@ -205,26 +202,17 @@ PRTBLH ;
  ;
  ;               By default ($G(CLALST)=""), all supported clients
  ;               are checked.
- ;   
- ;   MAGLLGDT    Workstation Last Login date
- ; 
- ;   MAGWNMB     Workstation name contains
- ;   
- ;   MAGALLW     Include all workstations in the report (0/1)
- ;
  ; 
  ; Return Values
  ; =============
  ;           <0  Error descriptor (see $$ERROR^MAGUERR)
  ;            0  Ok
  ;
-WSCVCHCK(MAG8DST,FLAGS,CVRCTRSH,CLALST,MAGLLGDT,MAGWNMB,MAGALLW) ;
+WSCVCHCK(MAG8DST,FLAGS,CVRCTRSH,CLALST) ;
  N MAGVCD        ; Version control data
  ;
  N CLNAME,CLVER,CVRC,FLDLST,I,IENS,MAG8BUF,MAG8I
  N MAGMSG,N,PLACE,TMP,WSIEN,WSNAME
- N FUPDWS   ; Should I update the workstation
- N FRPTWS   ; Workstation has at least one version check
  ;
  ;=== Validate parameters and initialize variables
  Q:$G(MAG8DST)?." " $$ERROR^MAGUERR(-8,,"MAG8DST")
@@ -261,24 +249,18 @@ WSCVCHCK(MAG8DST,FLAGS,CVRCTRSH,CLALST,MAGLLGDT,MAGWNMB,MAGALLW) ;
  . ;=== Get the workstation data
  . S IENS=WSIEN_","
  . D GETS^DIQ(2006.81,IENS,FLDLST,"EI","MAG8BUF","MAGMSG")
- . I MAGLLGDT>$G(MAG8BUF(2006.81,IENS,2,"I")) Q  ; Last login date is older than requested
  . S WSNAME=$G(MAG8BUF(2006.81,IENS,.01,"E"))  ; NAME
  . S:WSNAME="" WSNAME="#"_WSIEN                ; Just in case ;-)
- . I '(WSNAME[MAGWNMB) Q  ; Skip. Machine name does not contain MAGWNMB
  . S PLACE=$G(MAG8BUF(2006.81,IENS,.04,"E"))   ; PLACE
  . S:PLACE="" PLACE=" "
  . ;
  . ;=== Check the clients
  . S CLNAME=""
- . S FRPTWS=0
  . F  S CLNAME=$O(FLDLST(CLNAME))  Q:CLNAME=""  D
  . . S CLVER=$G(MAG8BUF(2006.81,IENS,+FLDLST(CLNAME),"E"))  Q:CLVER=""
  . . ;--- Check the version
  . . S CVRC=$$CHKVER1^MAGGTU41(.MAGVCD,CLNAME,.CLVER)
- . . Q:CVRC<0  ; Skip values with errors
- . . S FRPTWS=1  ; at least one client version is checked
- . . S FUPDWS=1
- . . I CVRC<CVRCTRSH  Q:'MAGALLW  S FUPDWS=0,CLVER="*"_CLVER  ; Skip values below threshold or add them we report all workstations
+ . . Q:CVRC<CVRCTRSH  ; Skip values below threshold and errors
  . . ;--- Store the result
  . . S MAG8BUF=WSIEN_U_CLNAME_U_CLVER_U_CVRC_U_WSNAME_U_PLACE
  . . S TMP=+$P(FLDLST(CLNAME),U,2)
@@ -291,14 +273,6 @@ WSCVCHCK(MAG8DST,FLAGS,CVRCTRSH,CLALST,MAGLLGDT,MAGWNMB,MAGALLW) ;
  . . . S @TMP@(+$P(CLVER,".",3),+$P(CLVER,".",4),WSNAME,MAG8I)=""
  . . . Q
  . . S:FLAGS["W" @MAG8DST@("PWC",PLACE,WSNAME,CLNAME,MAG8I)=""
- . . I FUPDWS,'$D(@MAG8DST@("TOTALSU",WSNAME)) D
- . . . S @MAG8DST@("TOTALSU",WSNAME)=""
- . . . S $P(@MAG8DST@("TOTALS"),U,2)=$P($G(@MAG8DST@("TOTALS")),U,2)+1
- . . . Q
- . . Q
- . I FRPTWS,'$D(@MAG8DST@("TOTALS",WSNAME)) D
- . . S @MAG8DST@("TOTALS",WSNAME)=""
- . . S $P(@MAG8DST@("TOTALS"),U)=$P($G(@MAG8DST@("TOTALS")),U)+1
  . . Q
  . Q
  ;
@@ -319,9 +293,6 @@ WSCVCHCK(MAG8DST,FLAGS,CVRCTRSH,CLALST,MAGLLGDT,MAGWNMB,MAGALLW) ;
  ; Input Variables
  ; ===============
  ;   MAGSORT     ; Sort mode for the report
- ;   MAGLLGDT    ; Workstation Last Login date
- ;   MAGWNMB     ; Workstation name contains
- ;   
  ;
  ; Notes
  ; =====
@@ -334,32 +305,28 @@ WSCVCRPT ;
  N MAGRAW        ; Closed reference (name) of the raw report data
  ;
  N RC
- N PRINTHDR      ; If the header is printed already
  S MAGRAW=$NA(^TMP("MAGGTU42",$J))
  S (MAGPAGE,RC)=0
  ;
  D
  . N BUF,FLAGS,IQS,PLACE,XREF
  . S FLAGS=$S($G(MAGSORT)'="":MAGSORT,1:"V")
- . S MAGLLGDT=$S($G(MAGLLGDT)="":$P($$FMADD^XLFDT($$NOW^XLFDT,-30),"."),1:MAGLLGDT)
- . S MAGWNMB=$G(MAGWNMB)
- . S MAGALLW=$S($G(MAGALLW)="":"N",1:MAGALLW)
  . S XREF=$S(FLAGS="V":"PCVW",FLAGS="W":"PWC",1:"")
  . I XREF=""  S RC=$$IPVE^MAGUERR("MAGSORT")  Q
  . ;
  . ;=== Compile the list of workstations and clients
- . S RC=$$WSCVCHCK(MAGRAW,FLAGS,"","",MAGLLGDT,MAGWNMB,MAGALLW)  Q:RC<0
+ . S RC=$$WSCVCHCK(MAGRAW,FLAGS)  Q:RC<0
  . S IQS=+$G(@MAGRAW@(XREF))
- . I IQS<0  S RC=$$ERROR^MAGUERR(-26,,$NA(@MAGRAW@(XREF)))  Q
+ . I IQS'>0  S RC=$$ERROR^MAGUERR(-26,,$NA(@MAGRAW@(XREF)))  Q
  . ;
  . ;=== Print the report for each site
- . S PRINTHDR=1  ; will print report header if there is no data to print
  . S PLACE="",$Y=0
  . F  S PLACE=$O(@MAGRAW@(XREF,PLACE))  Q:PLACE=""  D  Q:RC<0
  . . W:$E(IOST,1,2)="C-" @IOF
  . . ;--- Print the header
- . . S PRINTHDR=0
- . . D PRTRHDR(MAGALLW,MAGLLGDT,MAGWNMB,IOM)
+ . . S BUF="LIST OF WORKSTATIONS AND CLIENTS THAT HAVE TO BE UPDATED"
+ . . W !,$$CJ^XLFSTR(BUF,IOM)
+ . . W !,$$CJ^XLFSTR($$REPEAT^XLFSTR("=",$L(BUF)),IOM)
  . . W !,$$CJ^XLFSTR(PLACE,IOM),!
  . . D PRTBLH
  . . ;--- Print the table
@@ -367,25 +334,10 @@ WSCVCRPT ;
  . . ;--- Force the new page after the end of each section
  . . S RC=$$PAGE^MAGUTL05(1,1)  Q:RC<0
  . . Q
- . D:PRINTHDR PRTRHDR(MAGALLW,MAGLLGDT,MAGWNMB,IOM)
- . S BUF="Workstation(s) found: "_$P(@MAGRAW@("TOTALS"),U)
- . W !!,$$LJ^XLFSTR(BUF,IOM)
- . S BUF="Workstation(s) to be updated: "_+$P(@MAGRAW@("TOTALS"),U,2)
- . W !,$$LJ^XLFSTR(BUF,IOM)
  . Q
  ;
  ;=== Error handling and cleanup
  D ERROR(RC):RC<-2,^%ZISC
  S:$D(ZTQUEUED) ZTREQ="@"
  K @MAGRAW
- Q
- ;
-PRTRHDR(MAGALLW,MAGLLGDT,MAGWNMB,IOM) ;--- Print report the header
- N BUF
- S BUF=$S(MAGALLW:"LIST OF ALL WORKSTATIONS AND CLIENTS",1:"LIST OF WORKSTATIONS AND CLIENTS THAT HAVE TO BE UPDATED")
- W !,$$CJ^XLFSTR(BUF,IOM)
- S BUF="LAST LOGIN DATE: "_$$FMTE^XLFDT(MAGLLGDT)
- S BUF=BUF_$S(MAGWNMB'="":"   WS NAME CONTAINS: "_MAGWNMB,1:"")
- W !,$$CJ^XLFSTR(BUF,IOM)
- W !,$$CJ^XLFSTR($$REPEAT^XLFSTR("=",$L(BUF)),IOM)
  Q

@@ -1,0 +1,8 @@
+ZSTU ;START THIS... ; 6/30/10 9:21pm
+ ;
+ ZN "CMM"
+ D ^ZTMB
+ ZN "UVA"
+ D ^ZTMB
+ ZN "%SYS"
+ Q

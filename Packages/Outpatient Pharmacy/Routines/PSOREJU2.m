@@ -1,5 +1,5 @@
-PSOREJU2 ;BIRM/MFR - BPS (ECME) - Clinical Rejects Utilities (1) ;10/15/04
- ;;7.0;OUTPATIENT PHARMACY;**148,260,287,341,290,358,359,385,403**;DEC 1997;Build 9
+PSOREJU2 ;BIRM/MFR - BPS (ECME) - Clinical Rejects Utilities (1) ; 5/3/10 12:43pm
+ ;;7.0;OUTPATIENT PHARMACY;**148,260,287,341**;DEC 1997;Build 8
  ;Reference to $$NABP^BPSBUTL supported by IA 4719
  ;Reference to File 9002313.23 - BPS NCPDP REASON FOR SERVICE CODE supported by IA 4714
  ;
@@ -7,13 +7,11 @@ GET(RX,RFL,REJDATA,REJID,OKCL,CODE) ;
  ; Input:  (r) RX  - Rx IEN (#52) 
  ;         (o) RFL - Refill # (Default: most recent)
  ;         (r) REJDATA(REJECT IEN,FIELD) - Array where these Reject fields will be returned:
- ;                       "BIN" - Payer BIN number
  ;                       "CODE" - Reject Code (79 or 88)
  ;                       "DATE/TIME" - DATE/TIME Reject was detected
  ;                       "PAYER MESSAGE" - Message returned by the payer
  ;                       "REASON" - Reject Reason description (from payer)
  ;                       "INSURANCE NAME" - Patient's Insurance Company Name
- ;                       "COB" - Coordination of Benefits
  ;                       "GROUP NAME" - Patient's Insurance Group Name
  ;                       "GROUP NUMBER" - Patient's Insurance Group Number
  ;                       "CARDHOLDER ID" - Patient's Insurance Cardholder ID
@@ -21,7 +19,6 @@ GET(RX,RFL,REJDATA,REJID,OKCL,CODE) ;
  ;                       "PLAN PREVIOUS FILL DATE" - Last time Rx was paid by payer
  ;                       "STATUS" - REJECTS status ("OPEN/UNRESOLVED" or "CLOSED/RESOLVED")
  ;                       "DUR TEXT" - Payer's DUR description
- ;                       "DUR ADD MSG TEXT" - Payer's DUR additional description
  ;                       "OTHER REJECTS" - Other Rejects on the same response
  ;                       "REASON SVC CODE" - Reason for Service Code
  ;                  If REJECT is closed, the following fields will be returned:
@@ -60,24 +57,21 @@ GET(RX,RFL,REJDATA,REJID,OKCL,CODE) ;
  F  S IDX=$O(REJS(IDX)) Q:'IDX  D
  . K ARRAY D GETS^DIQ(52.25,IDX_","_RX_",","*","","ARRAY")
  . K REJFLD M REJFLD=ARRAY(52.25,IDX_","_RX_",")
- . I $G(CODE)'="",REJFLD(.01)'=CODE Q   ;cnf, PSO*7.0*358, add check for '=""
+ . I $G(CODE),REJFLD(.01)'=CODE Q
  . S REJDATA(IDX,"CODE")=$G(REJFLD(.01))
  . S REJDATA(IDX,"DATE/TIME")=$G(REJFLD(1))
  . S REJDATA(IDX,"PAYER MESSAGE")=$G(REJFLD(2))
  . S REJDATA(IDX,"REASON")=$G(REJFLD(3))
  . S REJDATA(IDX,"PHARMACIST")=$G(REJFLD(4))
  . S REJDATA(IDX,"INSURANCE NAME")=$G(REJFLD(20))
- . S REJDATA(IDX,"COB")=$G(REJFLD(27))
  . S REJDATA(IDX,"GROUP NAME")=$G(REJFLD(6))
  . S REJDATA(IDX,"GROUP NUMBER")=$G(REJFLD(21))
- . S REJDATA(IDX,"BIN")=$G(REJFLD(29))
  . S REJDATA(IDX,"CARDHOLDER ID")=$G(REJFLD(22))
  . S REJDATA(IDX,"PLAN CONTACT")=$G(REJFLD(7))
  . S REJDATA(IDX,"PLAN PREVIOUS FILL DATE")=$G(REJFLD(8))
  . S REJDATA(IDX,"STATUS")=$G(REJFLD(9))
  . S REJDATA(IDX,"OTHER REJECTS")=$G(REJFLD(17))
  . S REJDATA(IDX,"DUR TEXT")=$G(REJFLD(18))
- . S REJDATA(IDX,"DUR ADD MSG TEXT")=$G(REJFLD(28))
  . S REJDATA(IDX,"REASON SVC CODE")=$G(REJFLD(14))
  . S REJDATA(IDX,"RESPONSE IEN")=$G(REJFLD(16))
  . I '$G(OKCL) Q
@@ -135,9 +129,9 @@ DVINFO(RX,RFL,LM) ; Returns header displayable Division Information
 PTINFO(RX,LM) ; Returns header displayable Patient Information
  ;Input: (r) RX   - Rx IEN (#52)
  ;       (o) LM   - ListManager format? (1 - Yes / 0 - No) - Default: 0
- N DFN,VADM,PTINFO,SSN4
- S DFN=$$GET1^DIQ(52,RX,2,"I") D DEM^VADPT S SSN4=$P($G(VADM(2)),"^",2)
- S PTINFO="Patient  : "_$E($G(VADM(1)),1,$S($G(LM):24,1:20))_"("_$E(SSN4,$L(SSN4)-3,$L(SSN4))_")"
+ N DFN,VADM,PTINFO
+ S DFN=$$GET1^DIQ(52,RX,2,"I") D DEM^VADPT
+ S PTINFO="Patient  : "_$E($G(VADM(1)),1,$S($G(LM):24,1:20))_"("_$P($G(VADM(2)),"^",2)_")"
  S PTINFO=PTINFO_"  Sex: "_$P($G(VADM(5)),"^")
  S $E(PTINFO,$S($G(LM):61,1:54))="DOB: "_$P($G(VADM(3)),"^",2)_"("_$P($G(VADM(4)),"^")_")"
  Q PTINFO
@@ -183,25 +177,25 @@ PRT(FIELD,P,L) ; Sets the lines for fields that require text wrapping
  Q
  ;
 PA() ; - Ask for Prior Authorization Type and Number
- ; Called by PA^PSOREJP1 (PA acton) and SMA^PSOREJP1 (SMA action)
- ;
- ;Output:(PAT^PAN) PAT - Prior Authorization Type
- ;                 (See DD File #9002313.26 for possible values)
+ ;Output:(PAT^PAN) PAT - Prior Authorization Type (See DD File#52,
+ ;                         Sub-file#52.25,field#25 for possible values)
  ;                 PAN - Prior Authorization Number (11 digits)
  ;        
- N DIC,DIR,DIROUT,DIRUT,DTOUT,DUOUT,PAN,PAT,X,Y
- S DIC("B")=0
- S DIC(0)="QEAM",DIC=9002313.26,DIC("A")="Prior Authorization Type: "
- D ^DIC
- I ($D(DUOUT))!($D(DTOUT))!(Y=-1) Q "^"  ;Check for "^" or timeout
- S PAT=$P(Y,U,2)
- ;
- K DIR,DIC,X,Y
- S DIR(0)="52.25,26",DIR("A")="Prior Authorization Number"
+ N DIR,Y,DIRUT,DIROUT,PAT,PAN
+ S DIR(0)="52.25,25",DIR("A")="  Prior Authorization Type",DIR("B")="0"
+ S (DIR("?"),DIR("??"))="^D PAHLP^PSOREJU2"
+ D ^DIR I $D(DIRUT)!$D(DIROUT) Q "^"
+ S PAT=Y
+ K DIR S DIR(0)="52.25,26",DIR("A")="Prior Authorization Number"
  S DIR("?")="^D PANHLP^PSOREJU2",DIR("??")=""
- D ^DIR I (Y["^")!$D(DTOUT) Q "^"
+ D ^DIR I (Y["^")!$D(DIROUT) Q "^"
  S PAN=Y
  Q (PAT_"^"_PAN)
+ ;
+PAHLP ; Prior Authorization Type Help
+ W !?9,"EPSDT - Early Periodic Screening Diagnosis Treatment"
+ W !?9,"AFDC  - Aid to Family with Dependent Children"
+ Q
  ;
 PANHLP ; Prior Authorization Number Help
  W "OR you may leave it blank if the claim does not require a number."

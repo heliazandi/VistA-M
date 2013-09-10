@@ -1,6 +1,6 @@
 MAGJLS2B ;WIRMFO/JHC VistARad RPC calls ; 29 Jul 2003  9:59 AM
- ;;3.0;IMAGING;**16,22,18,76,101,90**;Mar 19, 2002;Build 1764;Jun 09, 2010
- ;; Per VHA Directive 2004-038, this routine should not be modified.
+ ;;3.0;IMAGING;**16,22,18,76,101**;Nov 06, 2009;Build 50
+ ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
  ;; | No permission to copy or redistribute this software is given. |
@@ -8,6 +8,7 @@ MAGJLS2B ;WIRMFO/JHC VistARad RPC calls ; 29 Jul 2003  9:59 AM
  ;; | to execute a written test agreement with the VistA Imaging    |
  ;; | Development Office of the Department of Veterans Affairs,     |
  ;; | telephone (301) 734-0100.                                     |
+ ;; |                                                               |
  ;; | The Food and Drug Administration classifies this software as  |
  ;; | a medical device.  As such, it may not be changed in any way. |
  ;; | Modifications to this software may result in an adulterated   |
@@ -72,10 +73,10 @@ SELVAR(LSTID) ; build selection logic executes in DIS array
  K DIS,MDCVAR S DIS(0)=0
  F IDL=1:1 S DLX=$G(DL(IDL)) Q:DLX=""  S DIS(0)=DIS(0)+1,DIS(DIS(0))="" D
  . F I=2:1:$L(DLX,U)-1 S CX=$P(DLX,U,I) S DCX=DC(+CX) D
- . . S EXP="(MD("_+DCX_")"_$P(DCX,U,2)_")"
- . . S EXP="I "_$S(CX["'":"'",1:"")_EXP
- . . S DIS(DIS(0))=DIS(DIS(0))_" "_EXP
- . . S MDCVAR(+DCX)=""
+ .. S EXP="(MD("_+DCX_")"_$P(DCX,U,2)_")"
+ .. S EXP="I "_$S(CX["'":"'",1:"")_EXP
+ .. S DIS(DIS(0))=DIS(DIS(0))_" "_EXP
+ .. S MDCVAR(+DCX)=""
  Q
  ;
 CHKLOCK(RARPT,DAYCASE) ; return ini of locking user & truth flag for locking user = logon user
@@ -118,8 +119,7 @@ LSTOUT(MAGGRY,LSTID,MAGLST,LSTAGE,WRNMSG) ; Build output list, w/ sort & selecti
  ; 
  N DIS,MDCVAR,SNDREMOT,ILST,IMD,MAGRACNT
  N RARPT,RAST,RADFN,RACNI,RADTI,T,WHOLOCK,XX,MYLOCK,DAYCASE,MODALITY
- N OUT,QX,SORT,SORTSS,LSTHDR,MD,MDLVAR,MDSVAR,REMONLY,REMOTCAS
- N SHOWPLAC,SORTLEN,STATPRIORITY
+ N OUT,QX,SORT,SORTSS,LSTHDR,MD,MDLVAR,MDSVAR,REMONLY,REMOTCAS,SHOWPLAC,SORTLEN
  S LSTAGE=$G(LSTAGE),WRNMSG=$G(WRNMSG)
  S SHOWPLAC=$$SHOWPLAC("") ; Show any Place (Site Code) that is NOT the Login Place
  S REMONLY=0
@@ -138,7 +138,7 @@ LSTOUT(MAGGRY,LSTID,MAGLST,LSTAGE,WRNMSG) ; Build output list, w/ sort & selecti
  F  S ILST=$O(@MAGLST@(ILST)) Q:'ILST  S XX=^(ILST,1),XX2=^(2) K MD D  ; contents described above
  . S XX=XX_U_$P(XX2,"|"),$P(XX2,"|")=""
  . S $P(XX,U,24)=$$RISTISME($P(XX,U,24)) ; calculate value @ list output time
- . ; Execute Selection logic
+ .  ; Execute Selection logic
  . S X=0 F  S X=$O(MDCVAR(X)) Q:'X  S MD(X)=$P(XX,U,X) ; load needed data
  . I 1 F I=1:1:$G(DIS(0)) X DIS(I) I  Q  ; quit if search logic True
  . E  Q  ; failed selection criteria--skip
@@ -161,35 +161,32 @@ LSTOUT(MAGGRY,LSTID,MAGLST,LSTAGE,WRNMSG) ; Build output list, w/ sort & selecti
  . ; proceed thru sort index until the string contained in SORT is not present
  . ; get data w/ indirect refs to the stored data
  . F ILST=0:1 S QX=$Q(@QX) Q:($E(QX,1,SORTLEN))'=SORT  S XX=@MAGLST@(+(@QX),1),XX2=^(2),OUT="" D
- . . I 'ILST D  Q       ; Header string
- . . . S T="" I LSTAGE?1N.N S T=LSTAGE\60 S T=" (List age: "_$S(T:T_" min, ",1:"")_(LSTAGE#60)_" sec)"
- . . . I WRNMSG]"" S T=T_"  **  "_WRNMSG_"  **"
- . . . I +$P(XX,U,2)=1 S $P(XX,"~",2)=LSTTL_T  ; List Title
- . . . S ^TMP($J,"RET",0)=XX
- . . S XX=XX_U_$P(XX2,"|"),$P(XX2,"|")=""
- . . S $P(XX,U,24)=$$RISTISME($P(XX,U,24)) ; calculate value @ list output time
- . . S RARPT=$P(@QX,U,2),DAYCASE=$P(XX,U)
- . . S T=$$CHKLOCK(RARPT,DAYCASE),WHOLOCK=$P(T,U),MYLOCK=$P(T,U,2)
- . . S $P(XX,U,2)=WHOLOCK
- . . S MODALITY=$P(XX,U,15),STATPRIORITY=0
- . . F IMD=1:1:$L(MDLVAR,U) S X=$P(MDLVAR,U,IMD),MD=$P(XX,U,+X) D
- . . . I +X=12,(MD]""),SNDREMOT D
- . . . . ; if site routes images, disp Remote Cache ind.
- . . . . N I,T S T="" F I=1:1:$L(MD,",") S T=T_$S(T="":"",1:",")_$P($G(^MAG(2005.2,$P(MD,",",I),3)),U,5)
- . . . . S MD=T
- . . . I +X=23,(MD]""),SHOWPLAC D
- . . . . I SHOWPLAC'[(","_MD_",") S MD=""  ; Don't show user's local place
- . . . I +X=22,(MD]""),$G(MAGJOB("CONSOLIDATED")) D
- . . . . I '$D(MAGJOB("DIVSCRN",MD)) S MD=""  ; Don't show user's local Div
- . . . I +X=5,(LSTREQ="U"),(MD]""),("1-Stat^2-Urg"[MD) S STATPRIORITY=1 ; Stat or Urgent Unread exam
- . . . I X[";" S T=+$P(X,";",2) I T S MD=$E(MD,1,T)  ; truncate output col
- . . . S $P(OUT,U,IMD)=MD
- . . S $P(OUT,U,IMD+1)="",OUT=U_OUT,OUT=OUT_"|"_$P(XX2,"|",2,9)
- . . S T=$P(OUT,"|",4) D  S $P(OUT,"|",4)=T
- . . . I WHOLOCK]"" S $P(T,U,2)=WHOLOCK,$P(T,U,3)=MYLOCK ; pass lock info to Client
- . . . S $P(T,U,11)=STATPRIORITY
- . . ; * Note: Keep Pipe piece 4, above, in sync with svmag2a^magjls3 *
- . . S ^TMP($J,"RET",ILST+1)=OUT
+ .. I 'ILST D  Q       ; Header string
+ ... S T="" I LSTAGE?1N.N S T=LSTAGE\60 S T=" (List age: "_$S(T:T_" min, ",1:"")_(LSTAGE#60)_" sec)"
+ ... I WRNMSG]"" S T=T_"  **  "_WRNMSG_"  **"
+ ... I +$P(XX,U,2)=1 S $P(XX,"~",2)=LSTTL_T  ; List Title
+ ... S ^TMP($J,"RET",0)=XX
+ .. S XX=XX_U_$P(XX2,"|"),$P(XX2,"|")=""
+ .. S $P(XX,U,24)=$$RISTISME($P(XX,U,24)) ; calculate value @ list output time
+ .. S RARPT=$P(@QX,U,2),DAYCASE=$P(XX,U)
+ .. S T=$$CHKLOCK(RARPT,DAYCASE),WHOLOCK=$P(T,U),MYLOCK=$P(T,U,2)
+ .. S $P(XX,U,2)=WHOLOCK
+ .. S MODALITY=$P(XX,U,15)
+ .. F IMD=1:1:$L(MDLVAR,U) S X=$P(MDLVAR,U,IMD),MD=$P(XX,U,+X) D
+ ... I +X=12,(MD]""),SNDREMOT D
+ .... ; if site routes images, disp Remote Cache ind.
+ .... N I,T S T="" F I=1:1:$L(MD,",") S T=T_$S(T="":"",1:",")_$P($G(^MAG(2005.2,$P(MD,",",I),3)),U,5)
+ .... S MD=T
+ ... I +X=23,(MD]""),SHOWPLAC D
+ .... I SHOWPLAC'[(","_MD_",") S MD=""  ; Don't show user's local place
+ ... I +X=22,(MD]""),$G(MAGJOB("CONSOLIDATED")) D
+ .... I '$D(MAGJOB("DIVSCRN",MD)) S MD=""  ; Don't show user's local Div
+ ... I X[";" S T=+$P(X,";",2) I T S MD=$E(MD,1,T)  ; truncate output col
+ ... S $P(OUT,U,IMD)=MD
+ .. S $P(OUT,U,IMD+1)="",OUT=U_OUT,OUT=OUT_"|"_$P(XX2,"|",2,9)
+ .. I WHOLOCK]"" S T=$P(OUT,"|",4),$P(T,U,2)=WHOLOCK,$P(T,U,3)=MYLOCK,$P(OUT,"|",4)=T ; pass lock info to Client
+ .. ; * Note: Keep Pipe piece 4, above, in sync with svmag2a^magjls3 *
+ .. S ^TMP($J,"RET",ILST+1)=OUT
  . S ^TMP($J,"RET",1)=U_LSTHDR
  . S $P(^TMP($J,"RET",0),U)=MAGRACNT
 LSTOUTZ K MAGGRY,^TMP($J,"MAGJSORT") S MAGGRY=$NA(^TMP($J,"RET"))

@@ -1,8 +1,8 @@
-PSGS0 ;BIR/CML3 - SCHEDULE PROCESSOR ;06/22/09 7:12 PM
- ;;5.0;INPATIENT MEDICATIONS;**12,25,26,50,63,74,83,116,110,111,133,138,174,134,213,207,190,113,245,227**;DEC 16, 1997;Build 1
+PSGS0 ;BIR/CML3-SCHEDULE PROCESSOR ; 6/22/09 7:12am
+ ;;5.0; INPATIENT MEDICATIONS ;**12,25,26,50,63,74,83,116,110,111,133,138,174,134,213,207,190,113**;16 DEC 97;Build 63
  ;
- ; Reference to ^PS(51.1 is supported by DBIA 2177.
- ; Reference to ^PS(55   is supported by DBIA 2191.
+ ; Reference to ^PS(51.1 is supported by DBIA 2177
+ ; Reference to ^PS(55   is supported by DBIA 2191
  ;
 ENA ; entry point for train option
  D ENCV^PSGSETU Q:$D(XQUIT)
@@ -18,7 +18,7 @@ EN5 ;
 EN ; validate
  K PSGS0Y
  I X[""""!($A(X)=45)!(X?.E1C.E)!($L(X)>70)!($L(X)<1) K X Q
- S:X'=" " X=$$TRIM^XLFSTR(X,"R"," ") ;PSJ*5*227 - Prevent schedule crash
+ S X=$$TRIM^XLFSTR(X,"R"," ")
  I X?.E1L.E S X=$$ENLU^PSGMI(X) I '$D(PSGOES) D EN^DDIOL("  ("_X_")")
  ;
 ENOS ; order set entry
@@ -37,7 +37,7 @@ ENOS ; order set entry
  ; * GUI 27 CHANGES *
  I X["PRN",$$PRNOK(X),'$D(^PS(51.1,"AC","PSJ",X)) D  G Q
  .;PSJ*5*190 Check for One-time PRN
- .I $$ONE^PSJBCMA($G(DFN),$G(ON),X)="O" S XT="O" Q
+ .I $$ONE^PSJBCMA(DFN,$G(ON),X)="O" S XT="O" Q
  .I X["@"!$$DOW^PSIVUTL($P(X," PRN")) N DOW D  I $G(DOW) S (Y0,Y,PSGS0Y)=$P($P(X,"@",2)," ")
  ..N TMP S TMP=X N X S X=$P(TMP," PRN") D DW I $G(X)]"" S DOW=1
  ..I $G(DOW),$G(PSGST)]"" I ",P,R,"'[(","_PSGST_",") S (XT,PSGS0XT)="D"
@@ -48,7 +48,7 @@ ENOS ; order set entry
  .; OR the order's schedule type is fill on request and the order's schedule is defined as continuous in schedule file,
  .; AND the order's schedule is not a PRN schedule, the order must have admin times.
  .Q:$G(PSGOES)'=2  Q:'$D(^PS(51.1,"AC","PSJ",X))
- .I $G(PSGST)="C"!($G(PSGST)="R"&($P($G(ZZND),"^",3))) I ($G(PSGST)'="P"),($G(PSGSCH)'[" PRN"),('$G(PSGAT)&'$G(PSGS0Y)),'$$ODD^PSGS0($G(PSGS0XT)) Q:($P($G(ZZND),"^",5)="O")  Q:$$ODD^PSGS0($P(ZZND,"^",3))  K X Q
+ .I $G(PSGST)="C"!($G(PSGST)="R"&($P($G(ZZND),"^",3))) I ($G(PSGST)'="P"),($G(PSGSCH)'[" PRN"),'$G(PSGAT),($P($G(ZZND),"^",5)'="O"),'$$ODD^PSGS0($G(PSGS0XT)),'$$ODD^PSGS0($P(ZZND,"^",3)) K X Q
  N TMPSCHX S TMPSCHX=X I $L(X,"@")<3 S TMPX=X D DW I $G(X)]"" K PSJNSS S (PSGS0XT,XT)="D" D  G Q
  .S Y=$S(($G(TMPSCHX)["@"):$P(TMPSCHX,"@",2),1:"")
  .I Y,(X'["@"),(TMPSCHX["@") S X=TMPSCHX

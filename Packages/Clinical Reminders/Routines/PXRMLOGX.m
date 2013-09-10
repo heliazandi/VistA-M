@@ -1,5 +1,5 @@
-PXRMLOGX ;SLC/PKR - Clinical Reminders logic cross-reference routines. ;11/04/2011
- ;;2.0;CLINICAL REMINDERS;**4,18**;Feb 04, 2005;Build 152
+PXRMLOGX ; SLC/PKR - Clinical Reminders logic cross-reference routines. ;08/29/2005
+ ;;2.0;CLINICAL REMINDERS;**4**;Feb 04, 2005;Build 21
  ;
  ;==================
 BLDAFL(IEN,KI,NODEP) ;Build a list of findings that can change the
@@ -201,7 +201,7 @@ CPPCLS(IEN,X) ;Copy the user input Patient Cohort Logic string to the
  ;Get the list of findings.
  N FLIST,IND,NUM,OK,OPER,STACK,STARTCHK,T1,T2
  S STARTCHK=$S($D(^PXD(811.9,IEN,25)):100,1:150)
- S OPER="'U!&",OK=1,NUM=0,FLIST=""
+ S OPER="'!&<>,",NUM=0,OK=1,FLIST=""
  D POSTFIX^PXRMSTAC(X,OPER,.STACK)
  F IND=1:1:STACK(0) D
  . S T1=STACK(IND)
@@ -235,8 +235,7 @@ CPRESLS(IEN,X) ;Copy the user input Resolution Logic string to the
  ;Get the list of findings.
  N FLIST,IND,NUM,OK,OPER,STACK,STARTCHK,T1,T2
  S STARTCHK=$S($D(^PXD(811.9,IEN,25)):100,1:150)
- ;The unary NOT operator is stored as 'U in the stack.
- S OPER="'U!&",OK=1,NUM=0,FLIST=""
+ S OPER="'!&<>",OK=1,NUM=0,FLIST=""
  D POSTFIX^PXRMSTAC(X,OPER,.STACK)
  F IND=1:1:STACK(0) D
  . S T1=STACK(IND)

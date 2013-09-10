@@ -1,5 +1,5 @@
 IBNCPDPI ;DALOI/SS - ECME SCREEN INSURANCE VIEW AND UTILITIES ;3/6/08  16:21
- ;;2.0;INTEGRATED BILLING;**276,383,384,411,435**;21-MAR-94;Build 27
+ ;;2.0;INTEGRATED BILLING;**276,383,384**;21-MAR-94;Build 74
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;
  ;
@@ -66,34 +66,13 @@ SELINSUR(PRMTMSG,DFLTVAL) ;
  I IBQUIT=1 Q "-1^"
  Q Y
  ;
-RNB(IBRX,IBFL) ; Return the Claims Tracking Reason Not Billable for a Prescription
- ; API for ECME (DBIA #4729)
- ; Input:  IBRX - prescription ien (required)
- ;         IBFL - fill# (required)
- ; Output:  function value
- ;                [1] RNB ien (ptr to file# 356.8)
- ;                [2] RNB description
- ;                [3] RNB ECME flag
- ;                [4] RNB ECME paper flag
- ;                [5] RNB code
- ;                [6] RNB active/inactive flag
- ;          or 0 if no CT entry or if CT entry is billable
  ;
- N RNB,IBTRKRN
- S RNB=0
- S IBTRKRN=+$O(^IBT(356,"ARXFL",+$G(IBRX),+$G(IBFL),0)) I 'IBTRKRN G RNBX
- S RNB=+$P($G(^IBT(356,IBTRKRN,0)),U,19) I 'RNB G RNBX
- S RNB=RNB_U_$G(^IBE(356.8,RNB,0))
-RNBX ;
- Q RNB
- ;
-BILLINFO(IBRX,IBREF,IBPSEQ) ;
+BILLINFO(IBRX,IBREF) ;
  ;API for ECME (DBIA #4729)
  ;Determine Bill# and Account Receivable information about the bill
  ;input:
  ; IBRX - pointer to file #52 (internal prescription number)
  ; IBREF - re-fill number
- ; IBPSEQ - payer sequence
  ;output:
  ;Returns a string of information about the bill requested:
  ; piece #1:  Bill number (field(#.01) of file (#399))
@@ -103,17 +82,11 @@ BILLINFO(IBRX,IBREF,IBPSEQ) ;
  ; piece #5:  Total Collected
  ; piece #6:  % Collected Returns null if no data or bill found.
  ;
- N IBIEN,IBBNUM,RCRET,IBRETV,IBARR,IBZ
- I +$G(IBPSEQ)=0 S IBPSEQ=1
- S RCRET="",IBRETV="",IBIEN=""
- I IBPSEQ=1 S IBBNUM=$$BILL^IBNCPDPU(IBRX,IBREF) ;get from the CT record
- ;find secondary bill, return null if none
- I IBPSEQ=2 S IBZ=$$RXBILL^IBNCPUT3(IBRX,IBREF,"S",,.IBARR) D  Q:+IBIEN=0 "^"  S IBBNUM=$P($G(IBARR(IBIEN)),U)
- . S IBIEN=$P(IBZ,U,2) Q:+IBIEN>0
- . ;if there is no active bill then get the latest bill with whatever status
- . S IBIEN=$O(IBARR(999999999),-1)
+ N IBIEN,IBBNUM,RCRET,IBRETV
+ S RCRET="",IBRETV=""
+ S IBBNUM=$$BILL^IBNCPDPU(IBRX,IBREF)
  I IBBNUM]"" D
- .I IBIEN="" S IBIEN=$O(^DGCR(399,"B",IBBNUM,"")) Q:IBIEN=""
+ .S IBIEN=$O(^DGCR(399,"B",IBBNUM,"")) Q:IBIEN=""
  .S RCRET=$$BILL^RCJIBFN2(IBIEN)
  S IBRETV=IBBNUM_U_RCRET
  Q IBRETV
@@ -126,8 +99,8 @@ TPJI(DFN) ; entry point for TPJI option of the ECME User Screen
 INSNM(IBINSIEN) ; api to return insurance company name
  Q $P($G(^DIC(36,+$G(IBINSIEN),0)),"^")
  ;
-ACPHONE() ; API to return the default Pay-to provider phone#
- Q $$PRVPHONE^IBJPS3()
+ACPHONE() ; API to return the agent cashier's phone number
+ Q $P($G(^IBE(350.9,1,2)),"^",6)
  ;
 INSPL(IBPL) ; api to return the insurance company IEN from the plan
  ; passed in.
@@ -141,7 +114,7 @@ MXTRNS(IBPLID) ; api to return MAXIMUM NCPDP TRANSACTIONS for a plan
  Q:$O(^IBCNR(366.03,"B",$G(IBPLID),0))']"" 1
  Q $P($G(^IBCNR(366.03,$O(^IBCNR(366.03,"B",$G(IBPLID),0)),10)),"^",10)
  ;
-EPHON() ; API to return if ePharmacy is on within IB
+EPHON() ; API to return if ePhamracy is on within IB
  ;   1 FOR Active
  ;   0 FOR Not Active
  ;

@@ -1,6 +1,6 @@
-MAGGTU4T ;WOIFO/SG/NST/JSL - VERSION CONTROL (TELEREADER) ; 08 Mar 2011 2:52 PM
- ;;3.0;IMAGING;**93,94,106,117,122**;Mar 19, 2002;Build 92;Aug 02, 2012
- ;; Per VHA Directive 2004-038, this routine should not be modified.
+MAGGTU4T ;WOIFO/SG - VERSION CONTROL (TELEREADER) ; 5/8/09 10:15am
+ ;;3.0;IMAGING;**93**;Dec 02, 2009;Build 163
+ ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
  ;; | No permission to copy or redistribute this software is given. |
@@ -23,10 +23,12 @@ CLVERCT ;***** VERSION CONTROL TABLE FOR THE TELEREADER CLIENTS
  ;;==================================================================
  ;;| Version |Build|Seq #|                Comment                   |
  ;;|---------+-----+------------------------------------------------|
- ;;| 3.0.122 |  15 |  55 | Jul 2012                                 |
- ;;| 3.0.117 |   8 |  45 | Jul 2011                                 |
- ;;| 3.0.106 |  13 |  40 | Feb 2011                                 |
- ;;| 3.0.94  |  12 |  35 | May 2010                                 |
+ ;;| 3.0.93  |  15 |     | Dec 2009                                 |
+ ;;| 3.0.83  |  25 |     | Mar 2008                                 |
+ ;;| 3.0.72  |  30 |  58 | Feb 2009                                 |
+ ;;| 3.0.95  |   7 |  57 | Jun 2008                                 |
+ ;;| 3.0.96  |   4 |  54 | Jun 2008                                 |
+ ;;| 3.0.59  |  31 |  53 | Feb 2008                                 |
  ;;==================================================================
  ;
  ; Each row of the version control table contains the version and

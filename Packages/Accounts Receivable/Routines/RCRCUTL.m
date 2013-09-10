@@ -107,28 +107,28 @@ ECHK ;Check to see if pending EOB Code Processing exists
 ECHKQ Q
  ;
 ADDR ;Regional Counsel Addresses and Death Notification addresses.
- ;;OGCBOSRI@MAIL.domain.ext^OGCRegion1DeathNotification@mail.domain.ext
- ;;OGCNYNRI@MAIL.domain.ext^OGCRegion2DeathNotification@mail.domain.ext
- ;;OGCBALRI@MAIL.domain.ext^OGCRegion3DeathNotification@mail.domain.ext
- ;;OGCPHIRI@MAIL.domain.ext^OGCRegion4DeathNotification@mail.domain.ext
- ;;OGCATLRI@MAIL.domain.ext^OGCRegion5DeathNotification@mail.domain.ext
- ;;OGCBAYRI@MAIL.domain.ext^OGCRegion6DeathNotification@mail.domain.ext
- ;;OGCCLERI@MAIL.domain.ext^OGCRegion7DeathNotification@mail.domain.ext
- ;;OGCNASRI@MAIL.domain.ext^OGCRegion8DeathNotification@mail.domain.ext
- ;;OGCJACRI@MAIL.domain.ext^OGCRegion9DeathNotification@mail.domain.ext
- ;;OGCCHIRI@MAIL.domain.ext^OGCRegion10DeathNotification@mail.domain.ext
- ;;OGCDETRI@MAIL.domain.ext^OGCRegion11DeathNotification@mail.domain.ext
- ;;OGCSTLRI@MAIL.domain.ext^OGCRegion12DeathNotification@mail.domain.ext
- ;;OGCWACRI@MAIL.domain.ext^OGCRegion13DeathNotification@mail.domain.ext
- ;;OGCHOURI@MAIL.domain.ext^OGCRegion14DeathNotification@mail.domain.ext
- ;;OGCMINRI@MAIL.domain.ext^OGCRegion15DeathNotification@mail.domain.ext
- ;;OGCDENRI@MAIL.domain.ext^OGCRegion16DeathNotification@mail.domain.ext
- ;;OGCLOSRI@MAIL.domain.ext^OGCRegion17DeathNotification@mail.domain.ext
- ;;OGCSFCRI@MAIL.domain.ext^OGCRegion18DeathNotification@mail.domain.ext
- ;;OGCPHORI@MAIL.domain.ext^OGCRegion19DeathNotification@mail.domain.ext
- ;;OGCPORRI@MAIL.domain.ext^OGCRegion20DeathNotification@mail.domain.ext
- ;;OGCBUFRI@MAIL.domain.ext^OGCRegion21DeathNotification@mail.domain.ext
- ;;OGCINDRI@MAIL.domain.ext^OGCRegion22DeathNotification@mail.domain.ext
- ;;OGCWINRI@MAIL.domain.ext^OGCRegion23DeathNotification@mail.domain.ext
+ ;;OGCBOSRI@MAIL.VA.GOV^OGCRegion1DeathNotification@mail.va.gov
+ ;;OGCNYNRI@MAIL.VA.GOV^OGCRegion2DeathNotification@mail.va.gov
+ ;;OGCBALRI@MAIL.VA.GOV^OGCRegion3DeathNotification@mail.va.gov
+ ;;OGCPHIRI@MAIL.VA.GOV^OGCRegion4DeathNotification@mail.va.gov
+ ;;OGCATLRI@MAIL.VA.GOV^OGCRegion5DeathNotification@mail.va.gov
+ ;;OGCBAYRI@MAIL.VA.GOV^OGCRegion6DeathNotification@mail.va.gov
+ ;;OGCCLERI@MAIL.VA.GOV^OGCRegion7DeathNotification@mail.va.gov
+ ;;OGCNASRI@MAIL.VA.GOV^OGCRegion8DeathNotification@mail.va.gov
+ ;;OGCJACRI@MAIL.VA.GOV^OGCRegion9DeathNotification@mail.va.gov
+ ;;OGCCHIRI@MAIL.VA.GOV^OGCRegion10DeathNotification@mail.va.gov
+ ;;OGCDETRI@MAIL.VA.GOV^OGCRegion11DeathNotification@mail.va.gov
+ ;;OGCSTLRI@MAIL.VA.GOV^OGCRegion12DeathNotification@mail.va.gov
+ ;;OGCWACRI@MAIL.VA.GOV^OGCRegion13DeathNotification@mail.va.gov
+ ;;OGCHOURI@MAIL.VA.GOV^OGCRegion14DeathNotification@mail.va.gov
+ ;;OGCMINRI@MAIL.VA.GOV^OGCRegion15DeathNotification@mail.va.gov
+ ;;OGCDENRI@MAIL.VA.GOV^OGCRegion16DeathNotification@mail.va.gov
+ ;;OGCLOSRI@MAIL.VA.GOV^OGCRegion17DeathNotification@mail.va.gov
+ ;;OGCSFCRI@MAIL.VA.GOV^OGCRegion18DeathNotification@mail.va.gov
+ ;;OGCPHORI@MAIL.VA.GOV^OGCRegion19DeathNotification@mail.va.gov
+ ;;OGCPORRI@MAIL.VA.GOV^OGCRegion20DeathNotification@mail.va.gov
+ ;;OGCBUFRI@MAIL.VA.GOV^OGCRegion21DeathNotification@mail.va.gov
+ ;;OGCINDRI@MAIL.VA.GOV^OGCRegion22DeathNotification@mail.va.gov
+ ;;OGCWINRI@MAIL.VA.GOV^OGCRegion23DeathNotification@mail.va.gov
  ;;END
  ;RCRCUTL

@@ -1,5 +1,5 @@
-HLCSTCP2 ;SFIRMFO/RSD - BI-DIRECTIONAL TCP ;08/04/2011 16:27
- ;;1.6;HEALTH LEVEL SEVEN;**19,43,49,57,63,64,66,67,76,77,87,109,133,122,140,142,145,153,157**;Oct 13,1995;Build 8
+HLCSTCP2 ;SFIRMFO/RSD - BI-DIRECTIONAL TCP ;10/31/2008 09:18
+ ;;1.6;HEALTH LEVEL SEVEN;**19,43,49,57,63,64,66,67,76,77,87,109,133,122,140,142**;Oct 13,1995;Build 17
  ;Per VHA Directive 2004-038, this routine should not be modified.
  ;Sender 
  ;Request connection, send outbound message(s) delimited by MLLP
@@ -139,7 +139,7 @@ QUE ; -- Check "OUT" queue for processing IF there is a message do it
  ...D LLCNT^HLCSTCP(HLDP,4,1)
  ...S HLREREAD="0^No Response"
  ...;check if the port needs to be closed and re-opened before the next re-transmission attempt
- ...I $G(HLDRETR("CLOSE")) D CLOSE^%ZISTCP K HLPORT
+ ...I $G(HLDRETRY("CLOSE")) D CLOSE^%ZISTCP K HLPORT
  .. ;X 0=re-read msg, 1=commit ack, 3=app ack success, 4=error
  .. S X=$$RSP^HLTP31(HLRESP,.HLN)
  .. ;X=0, re-read msg. Incorrect ack (bad MSH,MSA,msg id,or sending app)
@@ -226,9 +226,7 @@ CHKMSG(HLI) ;check status of message and update if not cancelled
  ;
  ;get status, quit if msg was cancelled
  ;
- ; patch HL*1.6*145
- ; S X=+^HLMA(HLMSG,"P") Q:X=3 0
- S X=+^HLMA(HLMSG,"P")
+ S X=+^HLMA(HLMSG,"P") Q:X=3 0
  ;
  ;update status if it is different
  I $G(HLI),HLI'=X D STATUS^HLTF0(HLMSG,HLI)
@@ -301,10 +299,7 @@ OPEN() ; -- Open TCP/IP device (Client)
  ;HLPORTA=number of attempted opens
  I $D(HLPORT) S IO=HLPORT D  Q 1
  . U IO
- . ; patch HL*1.6*157: HLOS is from calling $$OS^%ZOSV
- . ; use packet mode on Cache'
- . ; I HLOS["OpenM" X "U IO:(::""-M"")" ;use packet mode on Cache'
- . I (HLOS["VMS")!(HLOS["UNIX"),^%ZOSF("OS")'["GT.M"  X "U IO:(::""-M"")"
+ . I HLOS["OpenM" X "U IO:(::""-M"")" ;use packet mode on Cache'
  N HLDOM,HLI,HLIP,HLPORTA
  G OPENA^HLCSTCP3
  ;

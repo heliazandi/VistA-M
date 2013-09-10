@@ -1,31 +1,22 @@
-KMPRPOST ;OAK/RAK - RUM Post Install Routine ;11/19/04  09:02
- ;;2.0;CAPACITY MANAGEMENT - RUM;**1**;May 28, 2003
+KMPRPOST ;SF/RAK - RUM Post Install Routine ;1/20/00  07:36
+ ;;1.0;CAPACITY MANAGEMENT - RUM;**1**;Dec 09, 1998
+ ;;
  ;
-EN ;-- entry point for post-install
+ ; This post install routine is for RUM patch KMPR*1.0*1
  ;
- D BMES^XPDUTL(" Begin Post-Install...")
- D KILL
- D FIELD
- D MES^XPDUTL(" Post-Install complete!")
+EN ;-- entry point.
  ;
- Q
- ;
-FIELD ;-- update field #2.11 - RUM WEEKS TO KEEP DATA
- ;
- N ERROR,FDA,IEN
- S IEN=$O(^KMPD(8973,0)) Q:'IEN
- ; quit if field #2.11 RUM WEEKS TO KEEP DATA contains data
- Q:$P($G(^KMPD(8973,IEN,2)),U,11)
- ; update field
- D MES^XPDUTL(" Updating field #2.11 - RUM WEEKS TO KEEP DATA...")
- S FDA($J,8973,IEN_",",2.11)=2
- D FILE^DIE("","FDA($J)","ERROR")
- ;
- Q
- ;
-KILL ;-- kill off no longer used subscript
- ;
- D MES^XPDUTL(" Removing data from  ^KMPTMP(""KMPR"",""BACKGROUND"")...")
- K ^KMPTMP("KMPR","BACKGROUND")
+ N FDA,IEN,MESSAGE
+ ; let background job know system ready to track hours.
+ S ^XTMP("KMPR","HOURS","START")=1
+ ; get ien for backgroung job.
+ S IEN=$O(^DIC(19,"B","KMPR BACKGROUND DRIVER",0)) Q:'IEN
+ ; get ien for background driver from 'option scheduling' file.
+ S IEN=$O(^DIC(19.2,"B",+IEN,0)) Q:'IEN
+ ; if data in 'special queueing'.
+ I $P($G(^DIC(19.2,+IEN,0)),U,9)]"" D 
+ .; remove special queueing.
+ .S FDA($J,19.2,IEN_",",9)="@"
+ .D FILE^DIE("","FDA($J)","MESSAGE")
  ;
  Q

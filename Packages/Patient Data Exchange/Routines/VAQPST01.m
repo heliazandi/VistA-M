@@ -53,7 +53,7 @@ T2 W !!
  W !,X
  W !
  D TERMTYP^VAQPST05
- ; -- send mail message on install to G.PDX DEVELOPERS@ISC-ALBANY.domain.ext
+ ; -- send mail message on install to G.PDX DEVELOPERS@ISC-ALBANY.VA.GOV
  S XQABT5=$H
  S X="VAQINITY" X ^%ZOSF("TEST") I $T D @("^"_X)
  W !!!,"Post init process completed"

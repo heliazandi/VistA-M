@@ -1,6 +1,6 @@
-MAGGI13 ;WOIFO/SG/BNT/NST/GEK/JSL - IMAGE FILE API (QUERY) ; 21 Jul 2010 11:05 AM
- ;;3.0;IMAGING;**93,117,122**;Mar 19, 2002;Build 92;Aug 02, 2012
- ;; Per VHA Directive 2004-038, this routine should not be modified.
+MAGGI13 ;WOIFO/SG - IMAGE FILE API (QUERY) ; 2/23/09 11:14am
+ ;;3.0;IMAGING;**93**;Dec 02, 2009;Build 163
+ ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
  ;; | No permission to copy or redistribute this software is given. |
@@ -8,6 +8,7 @@ MAGGI13 ;WOIFO/SG/BNT/NST/GEK/JSL - IMAGE FILE API (QUERY) ; 21 Jul 2010 11:05 A
  ;; | to execute a written test agreement with the VistA Imaging    |
  ;; | Development Office of the Department of Veterans Affairs,     |
  ;; | telephone (301) 734-0100.                                     |
+ ;; |                                                               |
  ;; | The Food and Drug Administration classifies this software as  |
  ;; | a medical device.  As such, it may not be changed in any way. |
  ;; | Modifications to this software may result in an adulterated   |
@@ -15,10 +16,6 @@ MAGGI13 ;WOIFO/SG/BNT/NST/GEK/JSL - IMAGE FILE API (QUERY) ; 21 Jul 2010 11:05 A
  ;; | to be a violation of US Federal Statutes.                     |
  ;; +---------------------------------------------------------------+
  ;;
- ;P122 : Stop Timeout error from QA Review window.
- ;       Modified tag : QUERY,  to now use ADTDUZ Cross reference 
- ;       when searching for images captured by a User.
- ;       Remedy _<todo, get remedy ticket>
  Q
  ;
  ;+++++ RETURNS INVERTED/REVERSED DATE/TIME (FILEMAN)
@@ -130,15 +127,6 @@ PTCHK(IMGIEN,DFN) ;
  ;                    field (15) and cross-references "APDTPX" and
  ;                    "APDT").
  ;
- ;                 G  Include Group Images in the list of images returned. 
- ;                    If any image in a group has an image that matches the 
- ;                    status provided in the search criteria then 
- ;                    the group will be returned.
- ;                    
- ;                    If the G flag is not set then only the status of the 
- ;                    Group entry will be checked and the group will be 
- ;                    returned if it passes.
- ;                    
  ;                 D  Include only deleted images (file #2005.1)
  ;
  ;                 E  Include only existing images (file #2005)
@@ -181,16 +169,13 @@ PTCHK(IMGIEN,DFN) ;
  ;
 QUERY(CALLBACK,FLAGS,MAG8DATA,MAG8FROM,MAG8TO,DFN) ;
  N MAG8BOTH,MAG8CALL,MAG8DT,MAG8IEN,MAG8RC,MAG8ROOT,MAG8XREF,TMP
- ;P122
- N MAG8APP,MAG8DUZ,MAG8SITE,BOTHAPP
- ;
  S FLAGS=$G(FLAGS)
  ;=== Validate parameters
  Q:'(CALLBACK?2"$"1.8UN1"^MAG"1.5UN) $$IPVE^MAGUERR("CALLBACK")
  ;--- If a patient IEN is provided, it must be valid
  I $G(DFN)>0,'$$VALDFN^MAGUTL05(DFN,.TMP)  D STORE^MAGUERR(TMP)  Q TMP
  ;--- Unknown/Unsupported flag(s)
- Q:$TR(FLAGS,"CDEG")'="" $$IPVE^MAGUERR("FLAGS")
+ Q:$TR(FLAGS,"CDE")'="" $$IPVE^MAGUERR("FLAGS")
  ;--- Missing required flag
  Q:$TR(FLAGS,"DE")=FLAGS $$ERROR^MAGUERR(-6,,"D,E")
  ;
@@ -202,33 +187,7 @@ QUERY(CALLBACK,FLAGS,MAG8DATA,MAG8FROM,MAG8TO,DFN) ;
  S TMP=$$DDQ^MAGUTL05(FLAGS)
  S MAG8CALL="S MAG8RC="_CALLBACK_"(MAG8IEN,"_TMP_",.MAG8DATA)"
  S MAG8RC=0
- ;P122 set a variable (MAG8DUZ) to $Order through the Cross Ref.
- S MAG8DUZ=+$P($G(MAG8DATA("SAVEDBY")),"^",1)
- ;=== Return images in the capture date range captured by a User MAG8DUZ
- ;    This call is made by the QA Review window.  Looking for a list of images
- ;    captured by a certain user in a certain date range.
- I (FLAGS["C"),(MAG8DUZ) D  Q MAG8RC
- . ;--- Modify the callback to check for patient
- . S:$G(DFN)>0 $E(MAG8CALL,1)="S:$$PTCHK(MAG8IEN,"_DFN_")"
- . ;---
- . ; ATDUZ may be used by more than QA Review,  can't Force MAG8BOTH
- . ; to '0', Deleted Images may be wanted by other functions.
- . ;- S MAG8BOTH=0
- . ; Loop through both Capture Application nodes of  ADTDUZ
- . F MAG8APP="C","I" D
- . . S MAG8XREF=$NA(@MAG8ROOT@("ADTDUZ",MAG8APP))
- . . S MAG8DT=MAG8TO
- . . F  S MAG8DT=$$MAGORD($NA(@MAG8XREF@(MAG8DT)),-1,MAG8BOTH)  Q:(MAG8DT="")!(MAG8DT<MAG8FROM)  D  Q:MAG8RC
- . . . S MAG8SITE=""
- . . . F  S MAG8SITE=$$MAGORD($NA(@MAG8XREF@(MAG8DT,MAG8DUZ,MAG8SITE)),-1,MAG8BOTH) Q:(MAG8SITE="")  D
- . . . . S MAG8IEN=""
- . . . . F  D  Q:(MAG8IEN="")!MAG8RC  X MAG8CALL  Q:MAG8RC
- . . . . . S MAG8IEN=$$MAGORD($NA(@MAG8XREF@(MAG8DT,MAG8DUZ,MAG8SITE,MAG8IEN)),-1,MAG8BOTH)
- . . . . . I $D(ZTQUEUED),$$S^%ZTLOAD S MAG8RC="1^Task asked to stop",ZTSTOP=1
- . . . . . Q
- . . . . Q
- . . Q
- . Q
+ ;
  ;=== Browse images in the capture date range
  I FLAGS["C"  D  Q MAG8RC
  . ;--- Modify the callback to check for patient
@@ -238,9 +197,8 @@ QUERY(CALLBACK,FLAGS,MAG8DATA,MAG8FROM,MAG8TO,DFN) ;
  . S MAG8DT=MAG8TO
  . F  S MAG8DT=$$MAGORD($NA(@MAG8XREF@(MAG8DT)),-1,MAG8BOTH)  Q:(MAG8DT="")!(MAG8DT<MAG8FROM)  D  Q:MAG8RC
  . . S MAG8IEN=""
- . . F  D  Q:(MAG8IEN="")!MAG8RC  X MAG8CALL  Q:MAG8RC
+ . . F  D  Q:MAG8IEN=""  X MAG8CALL  Q:MAG8RC
  . . . S MAG8IEN=$$MAGORD($NA(@MAG8XREF@(MAG8DT,MAG8IEN)),-1,MAG8BOTH)
- . . . I $D(ZTQUEUED),$$S^%ZTLOAD S MAG8RC="1^Task asked to stop",ZTSTOP=1
  . . . Q
  . . Q
  . Q
@@ -256,7 +214,6 @@ QUERY(CALLBACK,FLAGS,MAG8DATA,MAG8FROM,MAG8TO,DFN) ;
  . S MAG8DT=MAG8DT1
  . F  S MAG8DT=$$MAGORD($NA(@MAG8XREF@(MAG8DT)),1,MAG8BOTH)  Q:(MAG8DT="")!(MAG8DT>MAG8DT2)  D  Q:MAG8RC
  . . K @MAG8TMP
- . . I $D(ZTQUEUED),$$S^%ZTLOAD S MAG8RC="1^Task asked to stop",ZTSTOP=1 Q
  . . ;--- Merge IEN lists from both files
  . . S MAG8PRX=""
  . . F  S MAG8PRX=$$MAGORD($NA(@MAG8XREF@(MAG8DT,MAG8PRX)),1,MAG8BOTH)  Q:MAG8PRX=""  D
@@ -266,9 +223,8 @@ QUERY(CALLBACK,FLAGS,MAG8DATA,MAG8FROM,MAG8TO,DFN) ;
  . . . . Q
  . . ;--- Browse the list and select the images
  . . S MAG8IEN=""
- . . F  D  Q:(MAG8IEN'>0)!MAG8RC  X MAG8CALL  Q:MAG8RC
+ . . F  D  Q:MAG8IEN'>0  X MAG8CALL  Q:MAG8RC
  . . . S MAG8IEN=$O(@MAG8TMP@(MAG8IEN),-1)
- . . . I $D(ZTQUEUED),$$S^%ZTLOAD S MAG8RC="1^Task asked to stop",ZTSTOP=1
  . . . Q
  . . Q
  . ;---
@@ -280,9 +236,8 @@ QUERY(CALLBACK,FLAGS,MAG8DATA,MAG8FROM,MAG8TO,DFN) ;
  S MAG8DT=MAG8TO
  F  S MAG8DT=$$MAGORD($NA(@MAG8XREF@(MAG8DT)),-1,MAG8BOTH)  Q:(MAG8DT="")!(MAG8DT<MAG8FROM)  D  Q:MAG8RC
  . S MAG8IEN=""
- . F  D  Q:(MAG8IEN="")!MAG8RC  X MAG8CALL  Q:MAG8RC
+ . F  D  Q:MAG8IEN=""  X MAG8CALL  Q:MAG8RC
  . . S MAG8IEN=$$MAGORD($NA(@MAG8XREF@(MAG8DT,MAG8IEN)),-1,MAG8BOTH)
- . . I $D(ZTQUEUED),$$S^%ZTLOAD S MAG8RC="1^Task asked to stop",ZTSTOP=1
  . . Q
  . Q
  ;---

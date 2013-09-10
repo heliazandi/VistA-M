@@ -1,6 +1,6 @@
-MAGJMN1 ;WIRMFO/JHC - VRad Maint functions ; 9 Sep 2011  4:05 PM
- ;;3.0;IMAGING;**16,9,22,18,65,76,101,90,115,120**;Mar 19, 2002;Build 27;May 23, 2012
- ;; Per VHA Directive 2004-038, this routine should not be modified.
+MAGJMN1 ;WIRMFO/JHC VRad Maint functions ; 29 Jul 2003  4:02 PM
+ ;;3.0;IMAGING;**16,9,22,18,65,76,101**;Nov 06, 2009;Build 50
+ ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
  ;; | No permission to copy or redistribute this software is given. |
@@ -8,6 +8,7 @@ MAGJMN1 ;WIRMFO/JHC - VRad Maint functions ; 9 Sep 2011  4:05 PM
  ;; | to execute a written test agreement with the VistA Imaging    |
  ;; | Development Office of the Department of Veterans Affairs,     |
  ;; | telephone (301) 734-0100.                                     |
+ ;; |                                                               |
  ;; | The Food and Drug Administration classifies this software as  |
  ;; | a medical device.  As such, it may not be changed in any way. |
  ;; | Modifications to this software may result in an adulterated   |
@@ -16,7 +17,6 @@ MAGJMN1 ;WIRMFO/JHC - VRad Maint functions ; 9 Sep 2011  4:05 PM
  ;; +---------------------------------------------------------------+
  ;;
 ENVCHK ; "Environment Check" for KIDS Install
- I 'XPDENV Q  ; Proceed only if in Install phase
  N MAGJKIDS S MAGJKIDS=1
  D BGCSTOP
  Q
@@ -96,18 +96,14 @@ ENSRCH ; Invoke Search for 2006.631 def'n
  Q
  ;
 BLDDEF(LSTID) ; build DEF nodes for Column/Sort defs
- N X,QX,SS,STR,LSTHDR,T,T0,T8,T6,HASCASE,XT,HASDATE,HASNIMG,HASPRIO,HASLOCK,LISTYPE
- S SS=0,HASCASE=0,HASDATE=0,HASNIMG=0,HASPRIO=0,HASLOCK=0
- S LISTYPE=$P($G(^MAG(2006.631,LSTID,0)),U,3)
+ N QX,SS,STR,LSTHDR,T,T0,T8,T6,HASCASE,XT,HASDATE,HASNIMG
+ S SS=0,HASCASE=0,HASDATE=0,HASNIMG=0
  ; columns/hdrs: Order in T array by the Relative Column Order
  F  S SS=$O(^MAG(2006.631,LSTID,1,SS)) D  Q:'SS
  . I 'SS D  Q
- . . I 'HASCASE S X=1 D BLDDEF2(X)  ; Force CASE#
+ . . I 'HASCASE S X=1 D BLDDEF2(X)  ; FORCE CASE#
  . . I 'HASDATE S X=7 D BLDDEF2(X)  ; DATE/TIME
  . . I 'HASNIMG S X=9 D BLDDEF2(X)  ; NUMBER IMAGES
- . . Q:LISTYPE'="U"  ; force below only if for an Unread list
- . . I 'HASLOCK S X=2 D BLDDEF2(X)  ; EXAM LOCK IND.
- . . I 'HASPRIO S X=5 D BLDDEF2(X)  ; PRIORITY
  . E  S X=^MAG(2006.631,LSTID,1,SS,0)
  . D BLDDEF2(X)
  ; go thru T to build ordered field sequence for output columns
@@ -130,8 +126,6 @@ BLDDEF2(X) ;
  I 'HASCASE S HASCASE=(+X=1)
  I 'HASDATE S HASDATE=(+X=7)
  I 'HASNIMG S HASNIMG=(+X=9)
- I 'HASLOCK S HASLOCK=(+X=2)
- I 'HASPRIO S HASPRIO=(+X=5)
  S T0=^MAG(2006.63,+X,0),T6=+$P(T0,U,6) S:'T6 T6=99
  S T8=$P(T0,U,8) I T8]"" S T8="~"_T8
  S XT=$S($P(T0,U,3)]"":$P(T0,U,3),1:$P(T0,U,2))_T8
@@ -139,9 +133,25 @@ BLDDEF2(X) ;
  S T(T6,+X)=X_U_XT
  Q
  ;
+BLDP101 ; build DEF nodes for selection logic for exported Patch 101 MY RECENT EXAMS list
+ N NODE
+ S NODE=$O(^MAG(2006.631,"C",8001,""))
+ Q:'NODE
+ S ^MAG(2006.631,NODE,"DEF",3,0)=1
+ S ^MAG(2006.631,NODE,"DEF",3,1)="24^=""Y"""
+ S ^MAG(2006.631,NODE,"DEF",4,0)=1
+ S ^MAG(2006.631,NODE,"DEF",4,1)="^1^"
+ S ^MAG(2006.631,NODE,"DEF",5,1)="INTERP BY LOGON RADIOLOGIST? EQUALS ""Y""^YES"
+ Q
+ ;
+PRE ; init 2006.63 prior to KIDS install
+ N DIK,DA S DIK="^MAG(2006.63,",DA=0 F  S DA=$O(@(DIK_DA_")")) Q:'DA  D ^DIK
+ Q
+ ;
 POSTINST ; Patch installation inits, etc.
- D P120DD ; Patch 120 DD mods
- ; D BLDALL ; update list definitions  <*> Use any time fields are added
+ D BLDALL ; update list definitions
+ D BLDP101 ; patch 101--update selection logic for Patch 101 MY RECENT EXAMS  <*> for P101 only!!!
+ D HPDAT ; patch 101--updates to some system HP's  <*> for P101 only!!!
  D BGCSTRT ; re-start background compile
  D POST ; install message, etc.
  Q
@@ -160,23 +170,6 @@ BLDALL ; Create "DEF" nodes, Button labels List Def'ns
  ;
 POST ; Install msg
  D INS^MAGQBUT4(XPDNM,DUZ,$$NOW^XLFDT,XPDA)
- Q
- ;
-P120DD ; DD changes for MAG VISTARAD SITE PARAMETERS, deleting deprecated fields
- ;
- W !!,"Deleting deprecated fields from MAG VISTARAD SITE PARAMETERS file ... "
- ; First, delete the field entries
- N I,REC
- S REC=$G(^MAG(2006.69,1,0))
- I REC]"" D
- . F I=6,12,14,15 S $P(REC,U,I)=""
- . S ^MAG(2006.69,1,0)=REC
- ;
- ; Then, delete the field definitions
- S DIK="^DD(2006.69,",DA(1)=2006.69
- F DA=4,5.5,10,11 D ^DIK
- K DIK,DA
- W " done! ",!
  Q
  ;
 YN(MSG,DFLT) ; get Yes/No reply
@@ -213,7 +206,7 @@ VRSIT ;
  S DIC=2006.69,DIC(0)="ALMEQ"
  I '$D(^MAG(DIC,1)) S DLAYGO=DIC
  D ^DIC I Y=-1 K DIC,DA,DR,DIE,DLAYGO Q
- S DIE=2006.69,DA=+Y,DR=".01:20"
+ S DIE=2006.69,DA=+Y,DR=".01:3.99;4.1:20"
  D ^DIE
  K DIC,DA,DR,DIE,DLAYGO
  N PLACE S DA=""
@@ -225,29 +218,6 @@ VRSIT ;
  K DA,DR,DIE
  Q
  ;
- ;+++++ OPTION: MAGJ E/E DEFAULT USER PROFILES
- ;
- ; FileMan ^DIE call to enter/edit IMAGING SITE PARAMETERS File (#2006.1),
- ;   fields #202: DEFAULT VISTARAD USERPREF RAD and
- ;          #203: DEFAULT VISTARAD USERPREF NON.
- ; 
- ; These fields point to entries in the MAGJ USER DATA File (#2006.68), and
- ;   allow the VistARad client to initialize new VistARad users to the settings
- ;   held by the appropriate default user type ("Radiologist", "Non-rad'ist").
- ;
-EEPRO ;
- ;
- ;--- Get IEN of IMAGING SITE PARAMETERS File.
- N FIELD,SITEPIEN S SITEPIEN=+$$IMGSIT^MAGJUTL1(DUZ(2),1)
- F FIELD=202,203 D
- . ;
- . ;--- Report field being edited.
- . N PROMPT S PROMPT=$S(FIELD=202:"RADIOLOGIST",FIELD=203:"NON-RADIOLOGIST")
- . W !!,"Editing default "_PROMPT_" profile ...",!
- . N DA,DIE,DR
- . S DIE=2006.1,DR=FIELD,DA=SITEPIEN D ^DIE
- . Q
- Q
 EEPREF ;
  W @IOF,!!?10,"Enter/Edit VistARad Prefetch Logic",!!
  N MAGIEN
@@ -307,5 +277,46 @@ BGCSTRT ; re-enable Background Compile
  K ^MAG(2006.69,"BGSTOP")
  W !!,"Background Compile Enabled.",! H 3
  Q
+ ;
+HPDAT ; update system internal HP definitions
+ ; Patch 101 mod for consistency with removing Master Image Set construct
+ N GLB,HPNAM,HPNUM,ICT,IHP,T,TAG,USER
+ S USER=$O(^MAG(2006.68,"B","POSTMASTER",""))
+ I 'USER Q
+ S GLB=$NA(^MAG(2006.68,USER,"VR-HP"))
+ F IHP=1,2 S TAG="HPDAT"_IHP D
+ . S X=$T(@(TAG)) Q:X=""
+ . S HPNAM=$P(X,";",3)
+ . S HPNUM=$O(@GLB@("B",HPNAM,"")) Q:'HPNUM
+ . K @GLB@(HPNUM,1)
+ . F ICT=1:1 S X=$P($T(@(TAG)+ICT),";",3,999) Q:X=""  S @GLB@(HPNUM,1,ICT,0)=X
+ . S T=ICT-1,X=U_2006.6831_U_T_U_T,@GLB@(HPNUM,1,0)=X
+ . W !,"System internal hanging protocol updated: ",HPNAM,!
+ Q
+ ;
+HPDAT1 ;;CRSYS_INT_HP;
+ ;;*KEY
+ ;;<SV attrName="MODALITY" attrTag="fffffff4">CR</SV>
+ ;;*END_KEY
+ ;;<HP name="CRSYS_INT_HP" level="SITE_DEFAULT" createdBy=".5"><HPDefinition>
+ ;;<ImgSetSeq><ImgSetSeqItem index="1"><SearchDesc desc=""><ExactMatch>1</ExactMatch>
+ ;;<SV attrName="MODALITY" attrTag="fffffff4">CR</SV>
+ ;;<SV attrName="MODALITY" attrTag="fffffff4">DX</SV>
+ ;;<TimeBaseValue stdIndex="1" type="CURRENT" priorIndex="0" label="">0\0</TimeBaseValue>
+ ;;</SearchDesc><Study stdIndex="1" splitToSeriesBySerIUID="0"></Study></ImgSetSeqItem>
+ ;;</ImgSetSeq></HPDefinition><HPDisplay><LinkGroups/></HPDisplay></HP>
+ ;;
+ ;
+HPDAT2 ;;MODMatchAllSYS_INT_HP;
+ ;;*KEY
+ ;;<SV attrName="MODALITY" attrTag="fffffff4">Match Any</SV>
+ ;;*END_KEY
+ ;;<HP name="MODMatchAllSYS_INT_HP" level="SITE_DEFAULT" createdBy=".5"><HPDefinition>
+ ;;<ImgSetSeq><ImgSetSeqItem index="1"><SearchDesc desc=""><ExactMatch>1</ExactMatch>
+ ;;<SV attrName="MODALITY" attrTag="fffffff4">Match Any</SV>
+ ;;<TimeBaseValue stdIndex="1" type="CURRENT" priorIndex="0" label="">0\0</TimeBaseValue>
+ ;;</SearchDesc><Study stdIndex="1" splitToSeriesBySerIUID="0"></Study></ImgSetSeqItem>
+ ;;</ImgSetSeq></HPDefinition><HPDisplay><LinkGroups/></HPDisplay></HP>
+ ;;
  ;
 END ;

@@ -1,5 +1,5 @@
 MAGGNTI2 ;WOIFO/GEK - Imaging interface to TIU. RPC Calls etc. ; 04 Apr 2002  2:37 PM
- ;;3.0;IMAGING;**46,59**;Nov 27, 2007;Build 20
+ ;;3.0;IMAGING;**46,59**;Mar 27, 2007;Build 15
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.        |
@@ -104,7 +104,7 @@ ADMNCLOS(MAGRY,MAGDFN,MAGTIUDA,MAGMODE) ; calls TIU API to set as Admin Closed.
  Q
 VALES(X) ; Validate the esig
  N MAGY S MAGY=0
- D HASH^ROUTINE
+ D HASH^XUSHSHP
  I X]"",(X=$P($G(^VA(200,+DUZ,20)),U,4)) S MAGY=1
  Q MAGY
 VALDATA(RY,MAGDFN,MAGTIUDA) ; Validate the TIUDA and the DFN

@@ -1,5 +1,5 @@
 BPSBUTL ;BHAM ISC/MFR/VA/DLF - IB Communication Utilities ;06/01/2004
- ;;1.0;E CLAIMS MGMT ENGINE;**1,3,2,5,7,8,9,10,11**;JUN 2004;Build 27
+ ;;1.0;E CLAIMS MGMT ENGINE;**1,3,2,5,7**;JUN 2004;Build 46
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;Reference to STORESP^IBNCPDP supported by DBIA 4299
  Q
@@ -21,8 +21,7 @@ CLOSE(CLAIM,TRNDX,REASON,PAPER,RELCOP,COMMENT,ERROR) ; Send IB an update on the 
  I $$RXAPI1^BPSUTIL1(RXIEN,.01)="" S ERROR="Prescription not found." Q
  S BPSARRY("FILL NUMBER")=TRANINFO(9002313.59,TRNDX_",",9,"I")
  D GETS^DIQ("9002313.02",CLAIM,"400*;401;402;403;426","","CLAIMNFO")
- S BPSARRY("DOS")=$G(CLAIMNFO("9002313.02",CLAIM_",","401"))
- I BPSARRY("DOS") S BPSARRY("DOS")=BPSARRY("DOS")-17000000
+ S BPSARRY("FILL DATE")=$$EXT2FM^BPSOSU1(CLAIMNFO("9002313.0201","1,"_CLAIM_",","401"))
  S FILLNUM=+BPSARRY("FILL NUMBER")
  S DFN=$$RXAPI1^BPSUTIL1(RXIEN,2,"I")
  S BPSARRY("FILLED BY")=$$RXAPI1^BPSUTIL1(RXIEN,16,"I")
@@ -35,7 +34,6 @@ CLOSE(CLAIM,TRNDX,REASON,PAPER,RELCOP,COMMENT,ERROR) ; Send IB an update on the 
  S BPSARRY("RELEASE DATE")=$S(FILLNUM=0:$$RXAPI1^BPSUTIL1(RXIEN,31,"I"),1:$$RXSUBF1^BPSUTIL1(RXIEN,52,52.1,FILLNUM,17,"I"))
  S BPSARRY("USER")=DUZ
  S BPSARRY("EPHARM")=$$GET1^DIQ(9002313.59,TRNDX,1.07,"I")
- S BPSARRY("RXCOB")=$$COB59^BPSUTIL2(TRNDX)
  I REASON'="" D
  . S BPSARRY("CLOSE REASON")=$O(^IBE(356.8,"B",REASON,0))
  . S BPSARRY("DROP TO PAPER")=+$G(PAPER)
@@ -56,23 +54,20 @@ CLOSE2(RXIEN,BFILL,BWHERE) ;
  ;
  ; Check parameters
  I '$G(RXIEN) S ERROR="No prescription parameter" Q
- I $G(BFILL)="" S ERROR="No fill parameter" Q
- I $G(BWHERE)="" S ERROR="No RX Action parameter" Q
  ;
  I $$RXAPI1^BPSUTIL1(RXIEN,.01)="" S ERROR="Prescription not found." Q
- I ",DE,RS,"'[(","_BWHERE_",") S ERROR="Invalid BWHERE parameter" Q
+ I ",DDED,DE,RS,"'[(","_BWHERE_",") S ERROR="Invalid BWHERE parameter" Q
  ;
  ; Calculate the transaction IEN and see that it exists
- S IEN59=$$IEN59^BPSOSRX(RXIEN,BFILL,1)
+ S FILL=".0000"_+BFILL
+ S IEN59=RXIEN_"."_$E(FILL,$L(FILL)-3,$L(FILL))_"1"
  I '$D(^BPST(IEN59,0)) Q
  ;
  ; Get claim data
  S CLAIM=$P(^BPST(IEN59,0),"^",4)
- I 'CLAIM S ERROR="Claim not found in BPS Transaction" Q
  D GETS^DIQ("9002313.02",CLAIM,"400*;401;402;426","","CLAIMNFO")
  S BPSARRY("FILL NUMBER")=+BFILL
- S BPSARRY("DOS")=$G(CLAIMNFO("9002313.02",CLAIM_",","401"))
- I BPSARRY("DOS") S BPSARRY("DOS")=BPSARRY("DOS")-17000000
+ S BPSARRY("FILL DATE")=$$EXT2FM^BPSOSU1(CLAIMNFO("9002313.0201","1,"_CLAIM_",","401"))
  ;
  ; Get prescription data
  S FILLNUM=BPSARRY("FILL NUMBER")
@@ -87,11 +82,10 @@ CLOSE2(RXIEN,BFILL,BWHERE) ;
  S BPSARRY("RELEASE DATE")=$S(FILLNUM=0:$$RXAPI1^BPSUTIL1(RXIEN,31,"I"),1:$$RXSUBF1^BPSUTIL1(RXIEN,52,52.1,FILLNUM,17,"I"))
  S BPSARRY("USER")=.5
  S BPSARRY("EPHARM")=$$GET1^DIQ(9002313.59,IEN59,1.07,"I")
- S BPSARRY("RXCOB")=$$COB59^BPSUTIL2(IEN59)
  ;
  ; Determine the reversal reason based on the BWHERE value
  I BWHERE="RS" S REASON="PRESCRIPTION NOT RELEASED"
- I BWHERE="DE" S REASON="PRESCRIPTION DELETED"
+ I BWHERE="DE"!(BWHERE="DDED") S REASON="PRESCRIPTION DELETED"
  I REASON]"" S BPSARRY("CLOSE REASON")=$O(^IBE(356.8,"B",REASON,0))
  ;
  ;if a refill was deleted while RX is still active (not deleted) then send DELETION OF REFILL comment for CT record
@@ -105,30 +99,22 @@ CLOSE2(RXIEN,BFILL,BWHERE) ;
  S DIE="^BPSC(",DA=CLAIM
  S DR="901///1;902///"_$$NOW^XLFDT()_";903////.5;904///"_BPSARRY("CLOSE REASON")
  D ^DIE
- ;
- ; If this is a primary claim, check and send a bulletin if the secondary claim is open or if there
- ;   is a non-cancelled IB bill for the secondary claim
- I BPSARRY("RXCOB")=1 D BULL^BPSECMP2(RXIEN,BFILL,CLAIM,DFN,REASON,BPSARRY("CLAIMID"))
  Q
  ;
  ; Function to return Transaction, claim, and response IENs
  ; Parameters:
  ;    RXI: Prescription IEN
  ;    RXR: Fill Number
- ;    COB: COB Indicator
  ; Returns:
- ;    IEN59^Claim IEN^Response IEN^Reversal Claim IEN^Reversal Response IEN^Prescription/Service Ref Number from BPS CLAIMS file
-CLAIM(RXI,RXR,COB) ;
- N IEN59,CLAIMIEN,RESPIEN,REVCLAIM,REVRESP,ECMENUM
- I '$G(RXI) Q ""
- ; Note that IEN59 will treat RXR="" as the original fill (0)
- ;   and COB="" as primary (1)
- S IEN59=$$IEN59^BPSOSRX(RXI,$G(RXR),$G(COB))
+ ;    IEN59^Claim IEN^Response IEN^Reversal Claim IEN^Reversal Response IEN
+CLAIM(RXI,RXR) ;
+ N IEN59,CLAIMIEN,RESPIEN,REVCLAIM,REVRESP
+ I '$G(RXI) Q
+ S IEN59=$$IEN59^BPSOSRX(RXI,RXR)
  I '$D(^BPST(IEN59,0)) Q ""
  S CLAIMIEN=$P(^BPST(IEN59,0),"^",4),RESPIEN=$P(^BPST(IEN59,0),"^",5)
  S REVCLAIM=$P($G(^BPST(IEN59,4)),"^",1),REVRESP=$P($G(^BPST(IEN59,4)),"^",2)
- S ECMENUM=$$ECMENUM^BPSSCRU2(IEN59)
- Q IEN59_U_CLAIMIEN_U_RESPIEN_U_REVCLAIM_U_REVRESP_U_ECMENUM
+ Q IEN59_U_CLAIMIEN_U_RESPIEN_U_REVCLAIM_U_REVRESP
  ;
  ; NABP - Return the value in the Service Provider ID (201-B1) field
  ;   of the claim.  Note that as of the NPI release (BPS*1*2), this
@@ -173,32 +159,28 @@ DIVNCPDP(BPSDIV) ;
  ;Input:
  ; BPRX - ien in file #52 
  ; BPREF - refill number (0,1,2,...)
- ; BPRCMNT - comment text
+ ; BPRCMNT - comment text 
  ;Output:
  ;  1 - okay
  ; -1 - failed
 ADDCOMM(BPRX,BPREF,BPRCMNT) ;
- N IEN59,BPNOW,BPREC,BPDA,BPERR
- ; Check parameters
- I '$G(BPRX) Q -1
+ N BP59,BPNOW,BPLCK,BPREC,BPDA,BPERR
+ N %,%H,%I,X
+ I $L(BPRX)<1 Q -1
  I $G(BPRCMNT)="" Q -1
- ; Get BPS Transaction number, if needed, and check for existance
- S IEN59=$$IEN59^BPSOSRX(BPRX,$G(BPREF),1)
- I IEN59="" Q -1
- I '$D(^BPST(IEN59)) Q -1
- ; Lock record and quit if you cannot get the lock
- L +^BPST(9002313.59111,+IEN59):10
- I '$T Q -1
- ; Create record and file data
- S BPNOW=$$NOW^XLFDT
- D INSITEM^BPSCMT01(9002313.59111,+IEN59,BPNOW)
- S BPREC=$O(^BPST(IEN59,11,"B",BPNOW,99999999),-1)
+ S BP59=BPRX_$S($L(+BPREF)=1:".000",1:".00")_+BPREF_"1" ;borrowed from CLOSE2 above
+ D NOW^%DTC
+ S BPNOW=%
+ L +^BPST(9002313.59111,+BP59):10
+ S BPLCK=$T
+ I 'BPLCK Q -1  ;quit
+ D INSITEM^BPSCMT01(9002313.59111,+BP59,BPNOW)
+ S BPREC=$O(^BPST(BP59,11,"B",BPNOW,0))
  I BPREC>0 D
- . S BPDA(9002313.59111,BPREC_","_IEN59_",",.02)=+$G(DUZ)
- . S BPDA(9002313.59111,BPREC_","_IEN59_",",.03)=$E($G(BPRCMNT),1,63)
+ . S BPDA(9002313.59111,BPREC_","_BP59_",",.02)=+$G(DUZ)
+ . S BPDA(9002313.59111,BPREC_","_BP59_",",.03)=$E($G(BPRCMNT),1,63)
  . D FILE^DIE("","BPDA","BPERR")
- L -^BPST(9002313.59111,+IEN59)
- ; Quit with result
+ I BPLCK L -^BPST(9002313.59111,+BP59)
  I BPREC>0,'$D(BPERR) Q 1
  Q -1
  ;
@@ -213,7 +195,7 @@ ADDCOMM(BPRX,BPREF,BPRCMNT) ;
  ; 0^message_error - error
  ; 1 - success
 REOPEN(BP59,BP02,BPREOPDT,BPDUZ,BPCOMM) ;
- N RECIENS,BPDA,ERRARR,BPREFNO,BPRXIEN,BPZ,BPSARRY,BPDFN,BPRETVAL,BPZ1
+ N RECIENS,BPDA,ERRARR,BPREFNO,BPRXIEN,BPFILLDT,BPCLMID,BPZ,BPSARRY,BPDFN,BPRETVAL,BPZ1
  S BPDFN=$P($G(^BPST(BP59,0)),U,6)
  S BPREFNO=$P($G(^BPST(BP59,1)),U)
  I BPREFNO="" Q "0^Null Fill Number"
@@ -223,6 +205,8 @@ REOPEN(BP59,BP02,BPREOPDT,BPDUZ,BPCOMM) ;
  ;so take the latest one
  S BPZ=$O(^BPSC(BP02,400,9999999),-1)
  I BPRXIEN="" Q "0^Database Error"
+ S BPFILLDT=$$YMD2FM^BPSSCRU6(+$P($G(^BPSC(BP02,400,+BPZ,400)),U))
+ S BPCLMID=$$CONVCLID^BPSSCRU6($P($G(^BPSC(BP02,400,+BPZ,400)),U,2))
  ;============
  ;Now update ECME database
  S BPRETVAL=$$UPDREOP^BPSREOP1(BP02,0,BPREOPDT,BPDUZ,BPCOMM)
@@ -232,17 +216,15 @@ REOPEN(BP59,BP02,BPREOPDT,BPDUZ,BPCOMM) ;
  ;============
  ;Now call IB API for "REOPEN" event
  S BPSARRY("STATUS")="REOPEN"
- S BPSARRY("DOS")=$P($G(^BPSC(BP02,401)),U)
- I BPSARRY("DOS") S BPSARRY("DOS")=BPSARRY("DOS")-17000000
+ S BPSARRY("FILL DATE")=BPFILLDT
  S BPSARRY("FILL NUMBER")=BPREFNO
  S BPSARRY("PRESCRIPTION")=BPRXIEN
- S BPSARRY("CLAIMID")=$$CONVCLID^BPSSCRU6($P($G(^BPSC(BP02,400,+BPZ,400)),U,2))
+ S BPSARRY("CLAIMID")=BPCLMID
  S BPSARRY("DRUG")=$$DRUGIEN^BPSSCRU6(BPRXIEN,BPDFN)
  S BPSARRY("PLAN")=$P($G(^BPST(BP59,10,1,0)),"^")
  S BPSARRY("USER")=BPDUZ
  S BPSARRY("REOPEN COMMENT")=BPCOMM
  S BPSARRY("EPHARM")=$$GET1^DIQ(9002313.59,BP59,1.07,"I")
- S BPSARRY("RXCOB")=$$COB59^BPSUTIL2(BP59)
  S BPRETVAL=$$STORESP^IBNCPDP(BPDFN,.BPSARRY)
  ;if successful
  I +BPRETVAL>0 Q "1^ReOpening Claim: "_$P($G(^BPSC(BP02,0)),U)_" ... OK"
@@ -252,30 +234,3 @@ REOPEN(BP59,BP02,BPREOPDT,BPDUZ,BPCOMM) ;
  I $$UPDREOP^BPSREOP1(BP02,1,"@",+BPDUZ,"@")
  ;return IB error message
  Q BPRETVAL
- ;
-GETDAT(RX,FIL,COB,LDOS,LDSUP) ;Returns Last Date of Service and Last Days Supply
- ;Input:
- ;  RX (req)  --> RX IEN
- ;  FIL (req) --> Fill number
- ;  COB (opt) --> Coordination of Benifits indicator; default is 1
- ;Output:
- ;  LDOS  --> Last Date of Service
- ;  LDSUP --> Last Days Supply
- ;
- Q:'($G(RX))!($G(FIL)="")
- S:'$G(COB) COB=1
- N IEN59,IEN02,STAT,IEN57
- S IEN02=""
- S IEN59=$$IEN59^BPSOSRX(RX,FIL,COB)
- S STAT=$P($G(^BPST(IEN59,0)),U,2)
- I STAT=99 S IEN02=$P($G(^BPST(IEN59,0)),U,4)
- I IEN02="" D
- . S IEN57=""
- . F  S IEN57=$O(^BPSTL("B",IEN59,IEN57),-1) Q:IEN57=""!(IEN02)  D
- .. S STAT=$P($G(^BPSTL(IEN57,0)),U,2)
- .. I STAT=99 S IEN02=$P($G(^BPSTL(IEN57,0)),U,4)
- I 'IEN02 S (LDOS,LDSUP)="" Q
- S LDOS=$$GET1^DIQ(9002313.02,IEN02,401,"E")  ;LAST DATE OF SERVICE
- I LDOS S LDOS=LDOS-17000000    ;CONVERT DATE TO FILEMAN FORMAT
- S LDSUP=$$GET1^DIQ(9002313.0201,"1,"_IEN02,405,"I")  ;LAST DAYS SUPPLY
- Q

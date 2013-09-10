@@ -1,5 +1,5 @@
 SCRPW24 ;RENO/KEITH - ACRP Ad Hoc Report (cont.) ;06/19/99
- ;;5.3;Scheduling;**144,163,180,254,243,295,329,351,510,530,562,576**;AUG 13, 1993;Build 5
+ ;;5.3;Scheduling;**144,163,180,254,243,295,329,351,510,530**;AUG 13, 1993;Build 8
  ;06/19/99 ACS - Added CPT modifier API calls
  ;11/26/03 RLC - 329 fixes primary/secondary dx problem with report
  ;
@@ -139,8 +139,7 @@ OECL(SDX,SDZ) ;Get classification values
 OEOU(SDX) ;Get option used to create
  K SDX S SDX=+$P(SDOE0,U,5),SDX=+$P($G(^AUPNVSIT(SDX,0)),U,24)
  N SDY D GETS^DIQ(19,SDX,.01,"","SDY")
- I 'SDX S SDX="0^UNKNOWN",SDX(1)=SDX    ;SD*576
- I +SDX S SDX=SDX_U_SDY(19,SDX_",",.01) S:$L($P(SDX,U,2)) SDX(1)=SDX
+ S SDX=SDX_U_SDY(19,SDX_",",.01) S:$L($P(SDX,U,2)) SDX(1)=SDX
  D NX Q
  ;
 SUQ(DIR) ;Set up DIR() array for Scheduled/unscheduled question
@@ -186,7 +185,6 @@ ENROL(SDATE)  ;Get enrollment record (most recent to encounter date)
  N SDY,SDI,X1,X2,X,%Y
  S:SDATE#1=0 SDATE=SDATE+.9999 S SDI=0 F  S SDI=$O(^DGEN(27.11,"C",+$P(SDOE0,U,2),SDI)) Q:'SDI  D
  .Q:'$D(^DGEN(27.11,SDI,0))
- .I '$D(^DGEN(27.11,SDI,"U")) S SDY=$G(^DGEN(27.11,SDI,0)),SDY(+SDY)=SDY Q   ;SD*562
  .S SDY=$G(^DGEN(27.11,SDI,0)),SDY($P($P(^DGEN(27.11,SDI,"U"),U,1),".",1))=SDY  ;SD/510 changed logic to use date/time entered
  S SDI=$O(SDY(SDATE),-1) Q:'SDI ""  S X1=$P($P(SDOE0,U),"."),X2=SDI D ^%DTC Q SDY(SDI)
  ;

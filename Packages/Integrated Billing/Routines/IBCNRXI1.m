@@ -57,7 +57,7 @@ INIT ; Initialize local variables
  ;
 FIX ; Reinitialize (fix) PLAN APPLICATION sub-file fields
  S $P(S,U,3)=0
- S $P(S,U,5)=DATE("NOW")
+ ;S $P(S,U,5)=DATE("NOW")
  S ^IBCNR(366.03,IEN(366.03),3,IEN(366.033),0)=S
  Q
  ;

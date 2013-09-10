@@ -1,6 +1,5 @@
-ONCACDU2 ;Hines OIFO/GWB - Utility routine ;05/03/12
- ;;2.11;Oncology;**12,18,20,21,22,24,26,27,29,30,31,32,34,36,37,38,39,41,46,47,49,50,51,52,53,56,57**;Mar 07, 1995;Build 6
- ;rvd - 05/03/12 p56.  Use ICD API (#3990) instead of direct global read.
+ONCACDU2 ;Hines OIFO/GWB - UTILITY ROUTINE #1 ;09/20/2000
+ ;;2.11;Oncology;**12,18,20,21,22,24,26,27,29,30,31,32,34,36,37,38,39,41,46,47,49,50**;Mar 07, 1995;Build 29
  ;
 VAFLD(ACDANS) ;Convert data to NAACCR format
  I ACDANS="N" S ACDANS=0
@@ -8,17 +7,11 @@ VAFLD(ACDANS) ;Convert data to NAACCR format
  I ACDANS="U" S ACDANS=9
  Q ACDANS
  ;
-VASIT() ;VISN (160.1,7) [2340-2341]
+VASIT() ;VISN 1452-1453
+ ;Output: X = VISN
  N X
  S OSPIEN=$O(^ONCO(160.1,0))
  S X=$P($G(^ONCO(160.1,OSPIEN,1)),U,7)
- K OSPIEN
- Q X
- ;
-COCACC() ;COC ACCREDITATION (160.1,68) [2547-2548]
- N X
- S OSPIEN=$O(^ONCO(160.1,0))
- S X=$P($G(^ONCO(160.1,OSPIEN,7)),U,2)
  K OSPIEN
  Q X
  ;
@@ -46,47 +39,55 @@ VENDOR() ;Vendor Name [2170] 1204-1213
  S X="VA"_VERSION_$E($T(LOGO+3^ONCODIS),62,64)_SUFFIX
  Q X
  ;
+BDATE(ACD160) ;Birth Date [240] 122-129
+ N D0,X
+ S D0=ACD160
+ D DOB^ONCOES
+ S X=$G(X)
+ Q X
+ ;
 WORD(IEN,NODE,LEN) ;Get word processing data
  N X
  S X=""
  I $D(^ONCO(165.5,IEN,NODE,0)) D
- .N CNT,LINE,ONCLINE
+ .N CNT,LINE
  .S CNT=0
- .S (LINE,ONCLINE)=""
- .F  S CNT=$O(^ONCO(165.5,IEN,NODE,CNT)) Q:CNT<1  D  Q:($L(ONCLINE)>LEN)
+ .S LINE=""
+ .F  S CNT=$O(^ONCO(165.5,IEN,NODE,CNT)) Q:CNT<1  D  Q:($L(LINE)>LEN)
  ..Q:'$D(^ONCO(165.5,IEN,NODE,CNT,0))
- ..S ONCLINE=LINE_^ONCO(165.5,IEN,NODE,CNT,0)_" "
- ..I ($L(ONCLINE)>LEN) S LINE=$E(ONCLINE,1,LEN) Q
  ..S LINE=LINE_^ONCO(165.5,IEN,NODE,CNT,0)_" "
  .S X=LINE
  S X=$TR(X,$C(10,12,13),"   ")
  Q X
  ;
 STAGE(IEN,TYPE) ;TNM Descriptors
- ;TNM Path Descriptor [910] 956-956
- ;TNM Clin Descriptor [980] 974-974
- N CD,LOC,PD,X
+ ;TNM Path Descriptor [910] 571-571
+ ;TNM Clin Descriptor [980] 581-581
+ N LOC,X
  S X=""
- S CD=$$GET1^DIQ(165.5,IEN,241,"I")
- S PD=$$GET1^DIQ(165.5,IEN,242,"I")
- I TYPE="C",CD'="" S X=CD G STAGEEX
- I TYPE="P",PD'="" S X=PD G STAGEEX
  S LOC=$S(TYPE="P":89.1,TYPE="C":37,1:"")
  I TYPE'="" D
  .N STRING
  .S STRING=$$GET1^DIQ(165.5,IEN,LOC,"E")
  .I ($P(STRING," ")["m")&($P(STRING," ")["y") S X=6 Q
  .I $P(STRING," ")["m" S X=3 Q
- .I TYPE="P",$P(STRING," ")["y" S X=4 Q
-STAGEEX Q X
+ .I $P(STRING," ")["y" S X=4 Q
+ Q X
  ;
-CCOUNTY(ACD160) ;County--Current [1840] 2192-2194
- I $$DPTLRT^ONCOES(ACD160)="LRT" S X="" G CCEX
- N DPT,DPTPNT,X
- S DPT=$$GET1^DIQ(160,ACD160,.01,"I")
- S DPTPNT=$P(DPT,";",1)
- S X=$$GET1^DIQ(2,DPTPNT,.117)
-CCEX Q X
+CCOUNTY(ACD160) ;County--Current
+ N ZIP,X
+ S X=""
+ S ZIP=$$GET1^DIQ(160,ACD160,.116,"E")
+ I ZIP'="" D
+ .N ZIP1,CODE,COUNTY
+ .S ZIP1=$P($P(ZIP,",",2)," ",3) S:$L(ZIP1)>5 ZIP1=$E(ZIP1,1,5)
+ .Q:$L(ZIP1)<5
+ .S CODE=$O(^VIC(5.11,"C",ZIP1,""))
+ .Q:CODE<1
+ .S COUNTY=$$GET1^DIQ(5.11,CODE,2,"I")
+ .Q:COUNTY=""
+ .S X=$$GET1^DIQ(5.1,COUNTY,2,"I")
+ Q X
  ;
 SUB(IEN,CNT,FIELD) ;
  ;Subsq RX 2nd Course Date [1660] 988-995
@@ -219,43 +220,9 @@ CSTST(ACD160) ;
  S X=$S(X="CANAD":"CD",X="EU":"YY",X="MX":"XX",X="NF":"NL",X="PH":"XX",X="UN":"ZZ",1:X)
  Q X
  ;
-ADDCTRY(IEN,ITEM) ;
- ;Addr at DX--Country [102] 436-438
- ;Addr Current--Country [1832] 439-441
- ;Followup Contact--Country [1847] 447-449
- ; Value derived from:
- ;    ITEM #102 - STATE AT DX (#165.5,16) pointer to File #5
- ;    ITEM #1832 - STATE (#160,.115 --> #2,.115) pointer to File #5
- ;    ITEM #1847 - ZIP CODE (#165,.119 --> #5.11,3) pointer to File #5
- N XX
- I ITEM=102 S XX=$S($$GET1^DIQ(165.5,IEN,16,"I")'="":$$GET1^DIQ(5,$$GET1^DIQ(165.5,IEN,16,"I"),1,"I"),1:"")
- I ITEM=1832 S XX=$$GET1^DIQ(160,ACD160,.115,"E")
- I ITEM=1847 S XX="",VICPNT=$$FCNODE^ONCACDU2(ACD160,.119,"I") S:$G(VICPNT) STATE=$P($G(^VIC(5.11,VICPNT,0)),U,4) S:$G(STATE)'="" XX=$$GET1^DIQ(5,STATE,1,"I") K STATE,VICPNT
- I XX="" Q XX
- S ACDANS="USA"
- I XX="QC"!(XX="AB")!(XX="ZZMB")!(XX="NB")!(XX="NF")!(XX="NS")!(XX="NT")!(XX="ON")!(XX="PE")!(XX="SK")!(XX="YT")!(XX="CANAD")!(XX="MB")!(XX="NU")!(XX="BC") S ACDANS="CAN"
- I XX="FM" S ACDANS="FSM"
- I XX="GU" S ACDANS="GUM"
- I XX="MH" S ACDANS="MHL"
- I XX="MP" S ACDANS="MNP"
- I XX="PW" S ACDANS="PWL"
- I XX="UM" S ACDANS="UMI"
- I XX="FG" S ACDANS="ZZX"
- I XX="MX" S ACDANS="MEX"
- I XX="EU" S ACDANS="ZZE"
- I XX="PH" S ACDANS="PHL"
- I XX="AS" S ACDANS="ASM"
- I XX="PR" S ACDANS="PRI"
- I XX="VI" S ACDANS="VIR"
- I XX="ZZEQ" S ACDANS="KIR"
- I XX="ZZIQ" S ACDANS="ZZP"
- I XX="ZZYQ" S ACDANS="JPN"
- I XX="UN" S ACDANS="ZZU"
- Q ACDANS
- ;
 ICD(ICD) ;ICD Code
  N X
- S ICD=$S(ICD'="":$P($$ICDDX^ICDCODE(ICD),U,2),1:"0000")
+ S ICD=$S(ICD'="":$P($G(^ICD9(ICD,0)),U),1:"0000")
  I ICD["." S ICD=$P(ICD,".")_$P(ICD,".",2)
  S:$L(ICD)=3 ICD=ICD_9
  S:$L(ICD)<4 ICD=$E("0000",1,4-$L(ICD))_ICD
@@ -287,13 +254,9 @@ DS(IEN) ;RX Date--Surgery [1200] 755-762
  K SURGDT
  Q X
 STRIP ;Replace punctuation marks with spaces
- S ACDANS=$TR(ACDANS,"!""""@#$%&'()*+,-./:;<=>?[>]^_\{|}~`","                                    ")
- S ACDANS=$$TRIM^XLFSTR(ACDANS)
+ S ACDANS=$TR(ACDANS,"!""""#$%&'()*+,-./:;<=>?[>]^_\{|}~`","                                   ")
  Q
  ;
 STRIP1 ;Strip out punctuation marks
  S ACDANS=$$STRIP^XLFSTR(ACDANS,"!""""#$%&'()*+,-./:;<=>?[>]^_\{|}~`")
  Q
- ;
-CLEANUP ;Cleanup
- K EXTRACT

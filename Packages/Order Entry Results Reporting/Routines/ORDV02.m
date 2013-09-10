@@ -1,10 +1,10 @@
 ORDV02 ; slc/dcm - OE/RR Report Extracts ;10/8/03  11:18
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**109,118,146,141,208,318**;Dec 17, 1997;Build 23
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**109,118,146,141,208**;Dec 17, 1997
  ;LAB Components
 LO(ROOT,ORALPHA,OROMEGA,ORMAX,ORDBEG,ORDEND,OREXT)      ; Lab Order Component
  ;External calls to ^GMTSLROE
  ;
- I $L($T(GCPR^OMGCOAS1)) D  ; Call if FHIE station 200
+ I 1>2 D  ; Call if FHIE station 200 JET
  . N BEG,END,MAX
  . Q:'$G(ORALPHA)  Q:'$G(OROMEGA)
  . S MAX=$S(+$G(ORMAX)>0:ORMAX,1:999)
@@ -18,7 +18,7 @@ LO(ROOT,ORALPHA,OROMEGA,ORMAX,ORDBEG,ORDEND,OREXT)      ; Lab Order Component
  S MAX=$S(+$G(ORMAX)>0:ORMAX,1:999),GMTS1=OROMEGA,GMTS2=ORALPHA,GMTSBEG=ORDBEG,GMTSEND=ORDEND
  S ORSITE=$$SITE^VASITE,ORSITE=$P(ORSITE,"^",2)_";"_$P(ORSITE,"^",3)
  K ^TMP("ORDATA",$J)
- I '$L($T(GCPR^OMGCOAS1)) D
+ I 2>1 D     ;JET
  . K ^TMP("LRO",$J)
  . D @GO
  S (CTR,D)=0
@@ -26,26 +26,26 @@ LO(ROOT,ORALPHA,OROMEGA,ORMAX,ORDBEG,ORDEND,OREXT)      ; Lab Order Component
  . S SN=0
  . F  S SN=$O(^TMP("LRO",$J,D,SN)) Q:'SN  S ORX0=^(SN) I $L(ORX0) D
  .. S SITE=$S($L($G(^TMP("LRO",$J,D,SN,"facility"))):^("facility"),1:ORSITE)
- .. S ^TMP("ORDATA",$J,D,SN,"WP",1)="1^"_SITE ;Station ID ;DJE *318 add SN node for multiple labs per date
- .. S ^TMP("ORDATA",$J,D,SN,"WP",2)="2^"_$P(ORX0,U) ;collection date
- .. S ^TMP("ORDATA",$J,D,SN,"WP",3)="3^"_$P($P(ORX0,U,2),";",2) ;test name
- .. S ^TMP("ORDATA",$J,D,SN,"WP",4)="4^"_$P($P(ORX0,U,2),";") ;test ien
- .. S ^TMP("ORDATA",$J,D,SN,"WP",5)="5^"_$P($P(ORX0,U,3),";",2) ;specimen name
- .. S ^TMP("ORDATA",$J,D,SN,"WP",6)="6^"_$P($P(ORX0,U,3),";") ;specimen ien
- .. S ^TMP("ORDATA",$J,D,SN,"WP",7)="7^"_$P(ORX0,U,4) ;urgency
- .. S ^TMP("ORDATA",$J,D,SN,"WP",8)="8^"_$P($P(ORX0,U,6),";",2) ;provider name
- .. S ^TMP("ORDATA",$J,D,SN,"WP",9)="9^"_$P($P(ORX0,U,6),";") ;provider ien
- .. S ^TMP("ORDATA",$J,D,SN,"WP",10)="10^"_$P(ORX0,U,7) ;order date/time
- .. S ^TMP("ORDATA",$J,D,SN,"WP",11)="11^"_$P(ORX0,U,8) ;accession number
- .. S ^TMP("ORDATA",$J,D,SN,"WP",12)="12^"_$P(ORX0,U,9) ;available date/time
- .. S ^TMP("ORDATA",$J,D,SN,"WP",13)="13^"_$P(ORX0,U,5) ;status
+ .. S ^TMP("ORDATA",$J,D,"WP",1)="1^"_SITE ;Station ID
+ .. S ^TMP("ORDATA",$J,D,"WP",2)="2^"_$P(ORX0,U) ;collection date
+ .. S ^TMP("ORDATA",$J,D,"WP",3)="3^"_$P($P(ORX0,U,2),";",2) ;test name
+ .. S ^TMP("ORDATA",$J,D,"WP",4)="4^"_$P($P(ORX0,U,2),";") ;test ien
+ .. S ^TMP("ORDATA",$J,D,"WP",5)="5^"_$P($P(ORX0,U,3),";",2) ;specimen name
+ .. S ^TMP("ORDATA",$J,D,"WP",6)="6^"_$P($P(ORX0,U,3),";") ;specimen ien
+ .. S ^TMP("ORDATA",$J,D,"WP",7)="7^"_$P(ORX0,U,4) ;urgency
+ .. S ^TMP("ORDATA",$J,D,"WP",8)="8^"_$P($P(ORX0,U,6),";",2) ;provider name
+ .. S ^TMP("ORDATA",$J,D,"WP",9)="9^"_$P($P(ORX0,U,6),";") ;provider ien
+ .. S ^TMP("ORDATA",$J,D,"WP",10)="10^"_$P(ORX0,U,7) ;order date/time
+ .. S ^TMP("ORDATA",$J,D,"WP",11)="11^"_$P(ORX0,U,8) ;accession number
+ .. S ^TMP("ORDATA",$J,D,"WP",12)="12^"_$P(ORX0,U,9) ;available date/time
+ .. S ^TMP("ORDATA",$J,D,"WP",13)="13^"_$P(ORX0,U,5) ;status
  K ^TMP("LRO",$J)
  S ROOT=$NA(^TMP("ORDATA",$J))
  Q
 CH(ROOT,ORALPHA,OROMEGA,ORMAX,ORDBEG,ORDEND,OREXT)     ;Chemistry/Hematology
  ;External references to ^DPT(DFN,"LR"),^LR(LRDFN, ^GMTSLRCE
  ;
- I $L($T(GCPR^OMGCOAS1)) D  ; Call if FHIE station 200
+ I 1>2 D  ; Call if FHIE station 200 JET
  . N BEG,END,MAX
  . Q:'$G(ORALPHA)  Q:'$G(OROMEGA)
  . S MAX=$S(+$G(ORMAX)>0:ORMAX,1:999)
@@ -63,7 +63,7 @@ CH(ROOT,ORALPHA,OROMEGA,ORMAX,ORDBEG,ORDEND,OREXT)     ;Chemistry/Hematology
  S MAX=$S(+$G(ORMAX)>0:ORMAX,1:999),GMTS1=OROMEGA,GMTS2=ORALPHA
  S ORSITE=$$SITE^VASITE,ORSITE=$P(ORSITE,"^",2)_";"_$P(ORSITE,"^",3)
  K ^TMP("ORDATA",$J)
- I '$L($T(GCPR^OMGCOAS1)) D
+ I 2>1 D      ;JET
  . K ^TMP("LRC",$J)
  . D @GO
  S CTR=0,ORI=GMTS1
@@ -90,7 +90,7 @@ CH(ROOT,ORALPHA,OROMEGA,ORMAX,ORDBEG,ORDEND,OREXT)     ;Chemistry/Hematology
 SP(ROOT,ORALPHA,OROMEGA,ORMAX,ORDBEG,ORDEND,OREXT)      ;Surgical Pathology
  ;External references to ^DPT(DFN,"LR"), ^GMTSLRAE,
  ;
- I $L($T(GCPR^OMGCOAS1)) D  ; Call if FHIE station 200
+ I 1>2 D  ; Call if FHIE station 200  JET
  . N BEG,END,MAX
  . Q:'$G(ORALPHA)  Q:'$G(OROMEGA)
  . S MAX=$S(+$G(ORMAX)>0:ORMAX,1:999)
@@ -106,7 +106,7 @@ SP(ROOT,ORALPHA,OROMEGA,ORMAX,ORDBEG,ORDEND,OREXT)      ;Surgical Pathology
  S MAX=$S(+$G(ORMAX)>0:ORMAX,1:999),GMTS1=OROMEGA,GMTS2=ORALPHA
  S ORSITE=$$SITE^VASITE,ORSITE=$P(ORSITE,"^",2)_";"_$P(ORSITE,"^",3)
  K ^TMP("ORDATA",$J)
- I '$L($T(GCPR^OMGCOAS1)) D
+ I 2>1 D      ;JET
  . K ^TMP("LRA",$J)
  . D @GO
  S ORDT=GMTS1,ORCNT=0
@@ -131,7 +131,7 @@ SP(ROOT,ORALPHA,OROMEGA,ORMAX,ORDBEG,ORDEND,OREXT)      ;Surgical Pathology
 CY(ROOT,ORALPHA,OROMEGA,ORMAX,ORDBEG,ORDEND,OREXT)      ;Cytopathology
  ;External references to ^DPT(DFN,"LR"), ^GMTSLRPE
  ;
- I $L($T(GCPR^OMGCOAS1)) D  ; Call if FHIE station 200
+ I 1>2 D  ; Call if FHIE station 200 JET
  . N BEG,END,MAX
  . Q:'$G(ORALPHA)  Q:'$G(OROMEGA)
  . S MAX=$S(+$G(ORMAX)>0:ORMAX,1:999)
@@ -147,7 +147,7 @@ CY(ROOT,ORALPHA,OROMEGA,ORMAX,ORDBEG,ORDEND,OREXT)      ;Cytopathology
  S MAX=$S(+$G(ORMAX)>0:ORMAX,1:999),GMTS1=OROMEGA,GMTS2=ORALPHA
  S ORSITE=$$SITE^VASITE,ORSITE=$P(ORSITE,"^",2)_";"_$P(ORSITE,"^",3)
  K ^TMP("ORDATA",$J)
- I '$L($T(GCPR^OMGCOAS1)) D
+ I 2>1 D      ;JET
  . K ^TMP("LRCY",$J)
  . D @GO
  S ORDT=GMTS1,ORSITE=$$SITE^VASITE,ORSITE=$P(ORSITE,"^",2)_";"_$P(ORSITE,"^",3)

@@ -1,11 +1,8 @@
 PSOREJP1 ;BIRM/MFR - Third Party Reject Display Screen ;04/29/05
- ;;7.0;OUTPATIENT PHARMACY;**148,247,260,281,287,289,290,358,359,385,403**;DEC 1997;Build 9
+ ;;7.0;OUTPATIENT PHARMACY;**148,247,260,281,287,289**;DEC 1997;Build 107
  ;Reference to File 9002313.93 - BPS NCPDP REJECT CODES supported by IA 4720
  ;Reference to ^PS(59.7 supported by IA 694
  ;Reference to ^PSDRUG("AQ" supported by IA 3165
- ;Reference to File 9002313.25 supported by IA 5064
- ;Reference to BPSNCPD3 supported by IA 4560
- ;Reference to ^BPSVRX supported by IA 5723
  ;
 EN(RX,REJ,CHANGE) ; Entry point
  ;
@@ -15,34 +12,25 @@ EN(RX,REJ,CHANGE) ; Entry point
  S PSOTRIC="",PSOTRIC=$$TRIC(RX,FILL,PSOTRIC),PSOCODE=$$GET1^DIQ(52.25,REJ_","_RX,.01)
  S PSOTCODE=0 S:PSOCODE'=79&(PSOCODE'=88)&(PSOTRIC) PSOTCODE=1
  I $$CLOSED(RX,REJ) D EN^VALM("PSO REJECT DISPLAY - RESOLVED")
- I '$$CLOSED(RX,REJ)&(PSOTRIC) D EN^VALM("PSO REJECT TRICARE")   ;cnf, PSO*7*358, replace PSOTCODE with PSOTRIC
- I '$$CLOSED(RX,REJ)&('PSOTCODE)&('PSOTRIC) D EN^VALM("PSO REJECT DISPLAY")   ;cnf, PSO*7*358, add PSOTRIC check
+ I '$$CLOSED(RX,REJ)&(PSOTCODE) D EN^VALM("PSO REJECT TRICARE")
+ I '$$CLOSED(RX,REJ)&('PSOTCODE) D EN^VALM("PSO REJECT DISPLAY")
  D FULL^VALM1
  Q
  ;
-HDR ; - Builds the Header section
+HDR      ; - Builds the Header section
  N LINE1,LINE2,X
  S VALMHDR(1)=$$DVINFO^PSOREJU2(RX,FILL,1),VALMHDR(2)=$$PTINFO^PSOREJU2(RX,1)
- ;cnf, PSO*7*358, add REJ to parameter list for RXINFO^PSOREJP3
- S VALMHDR(3)=$$RXINFO^PSOREJP3(RX,FILL,1),VALMHDR(4)=$$RXINFO^PSOREJP3(RX,FILL,2,REJ)
+ S VALMHDR(3)=$$RXINFO^PSOREJP3(RX,FILL,1),VALMHDR(4)=$$RXINFO^PSOREJP3(RX,FILL,2)
  Q
  ;
-TRIC(RX,RFL,PSOTRIC) ; - Return 1 for TRICARE, 2 for CHAMPVA or 0 (zero) for not TRICARE or CHAMPVA
- I '$D(RFL) S RFL=$$LSTRFL^PSOBPSU1(RX)
- S PSOTRIC="",PSOTRIC=$S(RFL=0&($$GET1^DIQ(52,RX_",",85,"I")="T"):1,$$GET1^DIQ(52.1,RFL_","_RX_",",85,"I")="T":1,RFL=0&($$GET1^DIQ(52,RX_",",85,"I")="C"):2,$$GET1^DIQ(52.1,RFL_","_RX_",",85,"I")="C":2,1:0)
+TRIC(RX,RFL,PSOTRIC) ; - Return 1 for TRICARE or 0 (zero) for not TRICARE
+ S PSOTRIC="",PSOTRIC=$S(RFL=0&($$GET1^DIQ(52,RX_",",85,"I")="T"):1,$$GET1^DIQ(52.1,RFL_","_RX_",",85,"I")="T":1,1:0)
  Q PSOTRIC
- ;
-ELIGDISP(RX,RFL) ; Return either CHAMPVA or TRICARE for display
- ; purposes, or null if neither
- N PSOELIG
- S PSOELIG=$$TRIC(RX,RFL)
- Q $S(PSOELIG=1:"TRICARE",PSOELIG=2:"CHAMPVA",1:"")
  ;
 INIT ; Builds the Body section
  N DATA,LINE
  I '$D(RFL) S RFL=$$LSTRFL^PSOBPSU1(RX)
  S PSOTRIC="",PSOTRIC=$$TRIC(RX,RFL,PSOTRIC)
- I '$$CLOSED(RX,REJ)&(PSOTRIC) S VALM("TITLE")="Reject Information ("_$$ELIGDISP(RX,RFL)_")"
  F I=1:1:$G(LASTLN) D RESTORE^VALM10(I)
  K ^TMP("PSOREJP1",$J) S VALMCNT=0,LINE=0
  D GET^PSOREJU2(RX,FILL,.DATA,REJ,1)
@@ -55,21 +43,27 @@ INIT ; Builds the Body section
  Q
  ;
 REJ ; - DUR Information
- N TYPE,PFLDT,TREJ,TDATA,PSOTRIC,PSOET S TDATA=""
+ N TYPE,PFLDT,TREJ,TDATA,PSOTRIC S TDATA=""
  S PSOTRIC="",PSOTRIC=$$TRIC(RX,FILL,PSOTRIC)
- D SETLN("REJECT Information"_$S($G(PSOTRIC)=1:" (TRICARE)",$G(PSOTRIC)=2:" (CHAMPVA)",1:""),1,1)
- S TYPE=$S($G(DATA(REJ,"CODE"))=79:"79 - REFILL TOO SOON",1:"")
- I TYPE="" S TYPE=DATA(REJ,"CODE")_" - "_$E($$EXP(DATA(REJ,"CODE")),1,23)_"-"
- D SETLN("Reject Type    : "_TYPE_" received on "_$$FMTE^XLFDT($G(DATA(REJ,"DATE/TIME"))),,,18)
- ;cnf, PSO*7*358, if TRICARE/CHAMPVA non-billable then reset Status line
- S PSOET=$$PSOET^PSOREJP3(RX,FILL)
- I PSOET D SETLN("Status         : NO CLAIM SUBMITTED")
- I 'PSOET D SETLN("Reject Status  : "_$G(DATA(REJ,"STATUS"))_" - "_$$STATUS^PSOBPSUT(RX,FILL),,,18)
- D SET("PAYER MESSAGE",63)
- D SET("REASON",63)
- S PFLDT=$$FMTE^XLFDT($G(DATA(REJ,"PLAN PREVIOUS FILL DATE")))
- D SET("DUR TEXT",63,$S(PFLDT="":1,1:0))
- I PFLDT'="" D SETLN("Last Fill Date : "_PFLDT_" (from payer)",,1,18)
+ I $G(PSOTRIC) D
+ . D SETLN("REJECT Information"_$S($G(PSOTRIC):" (TRICARE)",1:""),1,1)
+ . S TDATA=$$EXP(DATA(REJ,"CODE"))_" ("_$G(DATA(REJ,"CODE"))_") "
+ . D SETLN("Date/Time     : "_$$FMTE^XLFDT($G(DATA(REJ,"DATE/TIME"))),,,18)
+ . D SETLN("Reject(s)     : "_TDATA,,,18)
+ . F I=1:1 Q:'$D(TDATA(I))  D SETLN("              : "_TDATA(I),,,18)
+ . D SETLN("Status        : "_$G(DATA(REJ,"STATUS"))_" - "_$$STATUS^PSOBPSUT(RX,FILL),,,18)
+ . ;REJDATA(REJ,"OTHER REJECTS"
+ I '$G(PSOTRIC) D
+ .D SETLN("REJECT Information",1,1)
+ .S TYPE=$S($G(DATA(REJ,"CODE"))=79:"79 - REFILL TOO SOON",1:"")
+ .I TYPE="" S TYPE=DATA(REJ,"CODE")_" - "_$E($$EXP(DATA(REJ,"CODE")),1,23)_"-"
+ .D SETLN("Reject Type    : "_TYPE_" received on "_$$FMTE^XLFDT($G(DATA(REJ,"DATE/TIME"))),,,18)
+ .D SETLN("Reject Status  : "_$G(DATA(REJ,"STATUS")),,,18)
+ .D SET("PAYER MESSAGE",63)
+ .D SET("REASON",63)
+ .S PFLDT=$$FMTE^XLFDT($G(DATA(REJ,"PLAN PREVIOUS FILL DATE")))
+ .D SET("DUR TEXT",63,$S(PFLDT="":1,1:0))
+ .I PFLDT'="" D SETLN("Last Fill Date : "_PFLDT_" (from payer)",,1,18)
  Q
  ;
 OTH ; - Other Rejects Information
@@ -85,14 +79,9 @@ OTH ; - Other Rejects Information
 INS ; - Insurance Information
  D SETLN()
  D SETLN("INSURANCE Information",1,1)
- N PSOINS,PSOINS1,I
- S PSOINS=$G(DATA(REJ,"INSURANCE NAME"))
- F I=1:1:(50-($L(PSOINS)+18)) S PSOINS=PSOINS_" "
- S PSOINS1=$G(DATA(REJ,"COB"))
- I PSOINS1="SECONDARY" S PSOINS=PSOINS_"Coord. Of Benefits: "_PSOINS1
- D SETLN("Insurance      : "_PSOINS,,,18)
+ D SETLN("Insurance      : "_$G(DATA(REJ,"INSURANCE NAME")),,,18)
  D SETLN("Contact        : "_$G(DATA(REJ,"PLAN CONTACT")),,,18)
- D SETLN("BIN            : "_$G(DATA(REJ,"BIN")),,,18)
+ D SETLN("Group Name     : "_$G(DATA(REJ,"GROUP NAME")),,,18)
  D SETLN("Group Number   : "_$G(DATA(REJ,"GROUP NUMBER")),,,18)
  D SETLN("Cardholder ID  : "_$G(DATA(REJ,"CARDHOLDER ID")),,1,18)
  Q
@@ -128,9 +117,9 @@ SET(FIELD,L,UND) ; Sets the lines for fields that require text wrapping
  Q
  ;
 LABEL(FIELD) ; Sets the label for the field
- I FIELD="REASON" Q "Reason Code    : "
- I FIELD="PAYER MESSAGE" Q "Payer Addl Msg : "
- I FIELD="DUR TEXT" Q $S(+$$ISDUR^PSOREJP5(RX,REJ):"+DUR Text      : ",1:"DUR Text       : ")
+ I FIELD="REASON" Q "Reason         : "
+ I FIELD="PAYER MESSAGE" Q "Payer Message  : "
+ I FIELD="DUR TEXT" Q "DUR Text       : "
  I FIELD="CLOSE COMMENTS" Q "Comments       : "
  Q ""
  ;
@@ -167,52 +156,36 @@ EDT ; - Rx Edit hidden action
  Q
  ;
 OVR ; - Override a REJECT action
- N PSOET
  I $$CLOSED(RX,REJ,1) Q
- ;cnf, PSO*7*358
- S PSOET=$$PSOET^PSOREJP3(RX,FILL)
- I PSOET S VALMSG="OVR not allowed for "_$$ELIGDISP^PSOREJP1(RX,FILL)_" Non-Billable claim.",VALMBCK="R" Q
  N COD1,COD2,COD3
  D FULL^VALM1 W !
- S COD1=$$OVRCOD^PSOREJU1(1,$$GET1^DIQ(52.25,REJ_","_RX,14)) I COD1="^"!(COD1="") S VALMBCK="R" Q
+ S COD1=$$OVRCOD^PSOREJU1(1,$$GET1^DIQ(52.25,REJ_","_RX,14)) I COD1="^" S VALMBCK="R" Q
  S COD2=$$OVRCOD^PSOREJU1(2) I COD2="^" S VALMBCK="R" Q
  S COD3=$$OVRCOD^PSOREJU1(3) I COD3="^" S VALMBCK="R" Q
  D OVRDSP^PSOREJU1(COD1_"^"_COD2_"^"_COD3)
- D SEND^PSOREJP3(COD1_"^"_COD2_"^"_COD3)
+ D SEND^PSOREJP3(COD1,COD2,COD3)
  Q
  ;
 RES ; - Re-submit a claim action
- N PSOET
  I $$CLOSED(RX,REJ,1) Q
- ;cnf, PSO*7*358
- S PSOET=$$PSOET^PSOREJP3(RX,FILL)
- I PSOET S VALMSG="RES not allowed for "_$$ELIGDISP^PSOREJP1(RX,FILL)_" Non-Billable claim.",VALMBCK="R" Q
  D FULL^VALM1 W !
  D SEND^PSOREJP3()
  Q
  ;
 CLA ; - Submit Clarification Code
- N CLA,PSOET
+ N CLA
  I $$CLOSED(RX,REJ,1) Q
- ;cnf, PSO*7*358
- S PSOET=$$PSOET^PSOREJP3(RX,FILL)
- I PSOET S VALMSG="CLA not allowed for "_$$ELIGDISP^PSOREJP1(RX,FILL)_" Non-Billable claim.",VALMBCK="R" Q
  D FULL^VALM1 W !
- ; Prompt for the Submission Clarification Codes (up to three)
- S CLA=$$CLA^PSOREJU1() I CLA="^"!(CLA="") S VALMBCK="R" Q
- W ! D SEND^PSOREJP3(,CLA)
+ S CLA=$$CLA^PSOREJU1() I CLA="^" S VALMBCK="R" Q
+ W ! D SEND^PSOREJP3(,,,CLA)
  Q
  ;
 PA ; - Submit Prior Authorization
- N PA,PSOET
+ N PA
  I $$CLOSED(RX,REJ,1) Q
- ;cnf, PSO*7*358
- S PSOET=$$PSOET^PSOREJP3(RX,FILL)
- I PSOET S VALMSG="PA not allowed for "_$$ELIGDISP^PSOREJP1(RX,FILL)_" Non-Billable claim.",VALMBCK="R" Q
  D FULL^VALM1 W !
- ; Prompt for Prior Auth fields
  S PA=$$PA^PSOREJU2() I PA="^" S VALMBCK="R" Q
- W ! D SEND^PSOREJP3(,,PA)
+ W ! D SEND^PSOREJP3(,,,,PA)
  Q
  ;
 MP ; - Patient Medication Profile
@@ -273,77 +246,5 @@ OUT(RX) ; - Supported call by outside PROTOCOLs to act on specific REJECTs
  S X=$$FIND^PSOREJUT(RX,RFL,.DATA) S REJ=$O(DATA(""))
  I '$G(REJ) S VALMSG="Invalid selection!",VALMBCK="R" Q
  D EN(RX,REJ) S VALMBCK="R"
- Q
- ;
-SMA ;Submit multiple actions
- N CLA,I,OVR,OVRSTR,PA,REJIEN,DUR,RSC,DURIEN
- I $$CLOSED(RX,REJ,1) Q
- S PSOET=$$PSOET^PSOREJP3(RX,FILL)
- I PSOET S VALMSG="SMA not allowed for "_$$ELIGDISP^PSOREJP1(RX,FILL)_" Non-Billable claim.",VALMBCK="R" Q
- D FULL^VALM1 W !
- S DURIEN=$P($G(^PSRX(RX,"REJ",REJ,0)),U,11)
- D DURRESP^BPSNCPD3(DURIEN,.DUR) ; Reference to BPSNCPD3 supported by IA 4560
- ;
- ; Prompt for Prior Auth fields
- S PA=$$PA^PSOREJU2
- I PA="^" S VALMBCK="R" Q  ;User terminated or did not answer
- ;
- ; Prompt for submission clarification codes (up to three)
- W !
- S CLA=$$CLA^PSOREJU1
- I CLA="^" S VALMBCK="R" Q  ;User terminated or did not answer
- ;
- ; Prompt for DUR Overrides (up to three)
- S OVRSTR="",REJIEN=0 F I=1:1:3 D  Q:OVR="^"!(OVR="")  S $P(OVRSTR,"~",I)=OVR
- . I REJIEN]"" S REJIEN=$O(DUR(1,"DUR PPS",REJIEN))
- . S RSC="" I +REJIEN S RSC=$P($G(DUR(1,"DUR PPS",REJIEN,"REASON FOR SERVICE CODE"))," ",1)
- . S OVR=$$SMAOVR^PSOREJU1(RSC)
- I OVR="^" S VALMBCK="R" Q  ;User exited or timed-out
- ;
- W !!,?6,"RECAP:"
- W !,?6,"Prior Authorization Type       : ",$P(PA,"^"),"  ",$$DSC^PSOREJU1(9002313.26,$P(PA,"^"),.02)
- W !,?6,"Prior Authorization Number     : ",$P(PA,"^",2)
- W !,?6,"Submission Clarification Code 1: ",$P(CLA,"~",1),"  ",$$DSC^PSOREJU1(9002313.25,$P(CLA,"~",1),.02)
- I $P(CLA,"~",2)]"" W !,?6,"Submission Clarification Code 2: ",$P(CLA,"~",2),"  ",$$DSC^PSOREJU1(9002313.25,$P(CLA,"~",2),.02)
- I $P(CLA,"~",3)]"" W !,?6,"Submission Clarification Code 3: ",$P(CLA,"~",3),"  ",$$DSC^PSOREJU1(9002313.25,$P(CLA,"~",3),.02)
- W !,?6,"Reason for Service Code 1      : ",$P($P(OVRSTR,"~",1),U,1),"  ",$$DSC^PSOREJU1(9002313.23,$P($P(OVRSTR,"~",1),U,1),1)
- W !,?6,"Professional Service Code 1    : ",$P($P(OVRSTR,"~",1),U,2),"  ",$$DSC^PSOREJU1(9002313.21,$P($P(OVRSTR,"~",1),U,2),1)
- W !,?6,"Result of Service Code 1       : ",$P($P(OVRSTR,"~",1),U,3),"  ",$$DSC^PSOREJU1(9002313.22,$P($P(OVRSTR,"~",1),U,3),1)
- I $P($P(OVRSTR,"~",2),U,1)]"" W !,?6,"Reason for Service Code 2      : ",$P($P(OVRSTR,"~",2),U,1),"  ",$$DSC^PSOREJU1(9002313.23,$P($P(OVRSTR,"~",2),U,1),1)
- I $P($P(OVRSTR,"~",2),U,2)]"" W !,?6,"Professional Service Code 2    : ",$P($P(OVRSTR,"~",2),U,2),"  ",$$DSC^PSOREJU1(9002313.21,$P($P(OVRSTR,"~",2),U,2),1)
- I $P($P(OVRSTR,"~",2),U,3)]"" W !,?6,"Result of Service Code 2       : ",$P($P(OVRSTR,"~",2),U,3),"  ",$$DSC^PSOREJU1(9002313.22,$P($P(OVRSTR,"~",2),U,3),1)
- I $P($P(OVRSTR,"~",3),U,1)]"" W !,?6,"Reason for Service Code 3      : ",$P($P(OVRSTR,"~",3),U,1),"  ",$$DSC^PSOREJU1(9002313.23,$P($P(OVRSTR,"~",3),U,1),1)
- I $P($P(OVRSTR,"~",3),U,2)]"" W !,?6,"Professional Service Code 3    : ",$P($P(OVRSTR,"~",3),U,2),"  ",$$DSC^PSOREJU1(9002313.21,$P($P(OVRSTR,"~",3),U,2),1)
- I $P($P(OVRSTR,"~",3),U,3)]"" W !,?6,"Result of Service Code 3       : ",$P($P(OVRSTR,"~",3),U,3),"  ",$$DSC^PSOREJU1(9002313.22,$P($P(OVRSTR,"~",3),U,3),1)
- W ! D SEND^PSOREJP3(OVRSTR,CLA,PA)
- Q
- ;
-VRX ; View ePharmacy Prescription - invoked from the Reject Information screen
- N BPSVRX
- D FULL^VALM1
- S BPSVRX("RXIEN")=$G(RX)
- S BPSVRX("FILL#")=$G(FILL)
- D ^BPSVRX    ; DBIA #5723
- S VALMBCK="R"
- Q
- ;
-VER ; View ePharmacy Prescription - invoked from the Rx view hidden action of Medication Profile
- N BPSVRX
- K ^TMP("BPSVRX-PSO VIEW RX",$J)
- D FULL^VALM1
- ;
- ; save the current PSO Rx display array and header
- M ^TMP("BPSVRX-PSO VIEW RX",$J,"PSOHDR")=^TMP("PSOHDR",$J)
- M ^TMP("BPSVRX-PSO VIEW RX",$J,"PSOAL")=^TMP("PSOAL",$J)
- ;
- S BPSVRX("RXIEN")=$G(RXN)    ; Rx ien ptr file 52
- D ^BPSVRX    ; DBIA #5723
- ;
- ; restore the PSO Rx display array and header upon return
- I '$D(^TMP("PSOHDR",$J)) M ^TMP("PSOHDR",$J)=^TMP("BPSVRX-PSO VIEW RX",$J,"PSOHDR")
- I '$D(^TMP("PSOAL",$J)) M ^TMP("PSOAL",$J)=^TMP("BPSVRX-PSO VIEW RX",$J,"PSOAL")
- ;
- S VALMBCK="R"
- K ^TMP("BPSVRX-PSO VIEW RX",$J)
  Q
  ;

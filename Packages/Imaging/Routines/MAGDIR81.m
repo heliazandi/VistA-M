@@ -1,5 +1,5 @@
-MAGDIR81 ;WOIFO/PMK/JSL/SAF - Read a DICOM image file ; 25 Feb 2008 11:06 AM
- ;;3.0;IMAGING;**11,30,51,50,46,54,53,123**;Mar 19, 2002;Build 67;Jul 24, 2012
+MAGDIR81 ;WOIFO/PMK - Read a DICOM image file ; 08 Feb 2008 11:13 AM
+ ;;3.0;IMAGING;**11,30,51,50,46,54**;03-July-2009;;Build 1424
  ;; Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
@@ -27,21 +27,17 @@ ENTRY ; process one image
  N FILEDATA ;- array of data to be passed between routines
  N FIRSTDCM ;- patient first name from the image header (ie, PNAMEDCM)
  N GMRCIEN ;-- internal entry number of consult/procedure request
- N IMPORTER ;- flag set by a gateway that is running the IMPORTER app
  N LASTDCM ;-- patient last name from the image header (ie, PNAMEDCM)
- N MEDIA ;---- source of DICOM object for Importer (D=disk, T=transmission)
  N MAGGP ;---- image's group pointer in ^MAG(2005)
  N MAGIEN ;--- pointer to the entry for the image in ^MAG(2005)
  N MIDCM ;---- patient middle initial from the image header (PNAMEDCM)
- N OLDPATH ;-- original path for imported images (set by Importer)
- N ORIGINDX ;- origin index (file 2005, field 45)
  N PNAMEVAH ;- patient name from VADM(1)
  N PROCDESC ;- procedure description (VA's name)
  N RADATA ;--- radiology pkg patient & study data (set in ^MAGDIR8A)
  N VADM ;----- array of demographic variables filled in by DEM^VADPT
  N I,MAG0,MAG1,MAG2,QUIT,X
  ;
- N ACNUMB,ARG2,CASENUMB,EMAIL,FROMPATH,IMAGEUID,IMAGNAME,IMAGNUMB,IMGSVC
+ N ACNUMB,CASENUMB,EMAIL,FROMPATH,IMAGEUID,IMAGNAME,IMAGNUMB,IMGSVC
  N INSTLOC,INSTNAME,LASTIMG,LOCATION,MACHID,MFGR,MODALITY,MODEL,MODPARMS
  N MULTFRAM,PID,PNAMEDCM,ROUTRULE,SERINUMB,SERIEUID,SOPCLASS,STAMP,STATUS
  N STUDYDAT,STUDYTIM,STUDYDAT,STUDYTIM,STUDYUID,SYSTITLE
@@ -52,7 +48,7 @@ ENTRY ; process one image
  S PID=$P(ARGS,"|",7),PNAMEDCM=$P(ARGS,"|",8)
  S CASENUMB=$P(ARGS,"|",9),ACNUMB=$P(ARGS,"|",10)
  S STUDYDAT=$P(ARGS,"|",11),STUDYTIM=$P(ARGS,"|",12)
- S IMPORTER=$P(ARGS,"|",13),MODALITY=$P(ARGS,"|",14)
+ S MODALITY=$P(ARGS,"|",14)
  S IMAGNAME=$P(ARGS,"|",15),MODPARMS=$P(ARGS,"|",16)
  S SERINUMB=$P(ARGS,"|",17),IMAGNUMB=$P(ARGS,"|",18)
  S INSTLOC=$P(ARGS,"|",19),MULTFRAM=$P(ARGS,"|",20)
@@ -61,13 +57,12 @@ ENTRY ; process one image
  I OPCODE'="STORE2" D  Q
  . D RESULT^MAGDIR8("STORE","-101 Expecting STORE2, got """_OPCODE_"""")
  . Q
- S ARG2=$P(REQUEST(IREQUEST),"|",2,999)
- S STUDYUID=$P(ARG2,"|",1),SERIEUID=$P(ARG2,"|",2)
- S IMAGEUID=$P(ARG2,"|",3),SOPCLASS=$P(ARG2,"|",4)
- S LASTIMG=$P(ARG2,"|",5),ROUTRULE=$P(ARG2,"|",6)
- S MFGR=$P(ARG2,"|",7),MODEL=$P(ARG2,"|",8)
- S STAMP=$P(ARG2,"|",9),ORIGINDX=$P(ARG2,"|",10)
- S MEDIA=$P(ARG2,"|",11),OLDPATH=$P(ARG2,"|",12)
+ S ARGS=$P(REQUEST(IREQUEST),"|",2,999)
+ S STUDYUID=$P(ARGS,"|",1),SERIEUID=$P(ARGS,"|",2)
+ S IMAGEUID=$P(ARGS,"|",3),SOPCLASS=$P(ARGS,"|",4)
+ S LASTIMG=$P(ARGS,"|",5),ROUTRULE=$P(ARGS,"|",6)
+ S MFGR=$P(ARGS,"|",7),MODEL=$P(ARGS,"|",8)
+ S STAMP=$P(ARGS,"|",9)
  ;
  ; get a pointer to the image, if it is already on file
  S MAGIEN=$O(^MAG(2005,"P",IMAGEUID,0))
@@ -104,8 +99,7 @@ ENTRY ; process one image
  . S X="0|"_RETURN
  . ; save pname, pid, dob, age, and sex from DEM^VADPT for gateway
  . F I=1:1:5 S X=X_"|"_VADM(I)
- . I $T(GETICN^MPIF001)'="" S X=X_"|"_$$GETICN^MPIF001(DFN) ; save ICN value
- . E  S X=X_"|"  ;P123 - for sites that have not implemented the MPI package
+ . S X=X_"|"_$$GETICN^MPIF001(DFN) ; save ICN value
  . D RESULT^MAGDIR8("STORE",X)
  . Q
  Q
@@ -151,12 +145,7 @@ NEWIMAGE() ; processing for a new image
  . K MSG
  . S MSG(1)=PIDCHECK
  . S (ROWS,COLUMNS,OFFSET,MODIEN,MFGR,MODEL,CASETEXT)=""
- . I 'IMPORTER D
- . . D MOVE^MAGDLBAA
- . . Q
- . E  D
- . . D STORE^MAGDIR8R ; record miss-matched image
- . . Q
+ . D MOVE^MAGDLBAA
  . Q
  ; create the group pointer
  I IMGSVC="RAD" D  Q:ERRCODE ERRCODE
@@ -170,8 +159,6 @@ NEWIMAGE() ; processing for a new image
  . S MSG(1)="Undefined Imaging Service: "_IMGSVC
  . D ERROR^MAGDIRVE($T(+0),"DICOM IMAGE PROCESSING ERROR",.MSG)
  . Q
- ; delete import reconciliation entry
- I IMPORTER,$L(OLDPATH) Q $$DELETE^MAGDIR8R(IMAGEUID,MACHID,OLDPATH)
  Q 0
  ;
 SAVEUID(MACHID,UID) ; record the UID of the image being processed

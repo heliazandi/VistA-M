@@ -1,13 +1,12 @@
-LA7VHLU ;DALOI/JMC - HL7 segment builder utility ;12/07/11  16:18
- ;;5.2;AUTOMATED LAB INSTRUMENTS;**46,62,64,68,74**;Sep 27, 1994;Build 229
+LA7VHLU ;DALOI/JMC - HL7 segment builder utility ; 11-25-1998
+ ;;5.2;AUTOMATED LAB INSTRUMENTS;**46,62,64**;Sep 27, 1994
  ;
  ; Reference to PROTOCOL file (#101) supported by DBIA #872
  ;
-STARTMSG(LA7EVNT,LA76249,LA7NOMSG) ; Create/initialize HL message
+STARTMSG(LA7EVNT,LA76249) ; Create/initialize HL message
  ;
  ; Call with LA7EVNT = Lab event protocol in file (#101)
  ;           LA76249 = if entry already exists, do not create new entry
- ;          LA7NOMSG = flag to not store MSH segment in file #62.49
  ;
  N LA7MSH,X
  ;
@@ -25,7 +24,7 @@ STARTMSG(LA7EVNT,LA76249,LA7NOMSG) ; Create/initialize HL message
  S:$D(HL("ACAT")) $P(X,LA7FS,15)=HL("ACAT")
  S:$D(HL("APAT")) $P(X,LA7FS,16)=HL("APAT")
  S LA7MSH(0)=X
- I '$G(LA7NOMSG) D FILE6249^LA7VHLU(LA76249,.LA7MSH)
+ D FILE6249^LA7VHLU(LA76249,.LA7MSH)
  ;
  Q
  ;
@@ -58,7 +57,7 @@ GEN ; Generate HL7 v1.6 message
  ; HLP("CONTPTR") - continuation pointer field value
  ; HLP("PRIORITY") - priority field value
  ; HLP("NAMESPACE") - package namespace
- ;
+ ; 
  N HLEID,HLARYTYP,HLFORMAT,HLMTIEN,HLRESLT,I
  S HLEID=LA7101,HLARYTYP="GM",HLFORMAT=1,HLMTIEN="",HLRESLT=""
  S HLP("NAMESPACE")="LA"
@@ -97,14 +96,13 @@ BUILDSEG(LA7ARRAY,LA7DATA,LA7FS) ; Build HL segment
  ;
  F LA7I=0:1:LA7LAST D
  . I ($L($G(LA7DATA(LA7SUB)))+$L($G(LA7ARRAY(LA7I))))>245 S LA7SUB=LA7SUB+1
- . I LA7I>0 S LA7DATA(LA7SUB)=$G(LA7DATA(LA7SUB))_LA7FS
  . I $O(LA7ARRAY(LA7I,""))'="" D
  . . S LA7J=""
  . . F  S LA7J=$O(LA7ARRAY(LA7I,LA7J)) Q:LA7J=""  D
  . . . I ($L($G(LA7DATA(LA7SUB)))+$L($G(LA7ARRAY(LA7I,LA7J))))>245 S LA7SUB=LA7SUB+1
  . . . S LA7DATA(LA7SUB)=$G(LA7DATA(LA7SUB))_$G(LA7ARRAY(LA7I,LA7J))
- . S LA7DATA(LA7SUB)=$G(LA7DATA(LA7SUB))_$G(LA7ARRAY(LA7I))
- Q
+ . S LA7DATA(LA7SUB)=$G(LA7DATA(LA7SUB))_$G(LA7ARRAY(LA7I))_LA7FS
+ Q 
  ;
  ;
 FILESEG(LA7ROOT,LA7DATA) ; File HL segment in global
@@ -129,31 +127,31 @@ FILESEG(LA7ROOT,LA7DATA) ; File HL segment in global
  ;
 INIT6249() ; Create stub entry in file #62.49
  ; Returns ien of entry in #62.49 that was created
- ; NOTE: set lock on entry in #62.49, does not release it - calling process should release lock
+ ; NOTE: set lock on entry in #62.49, does not release it.
+ ;       calling process should release lock
  ;
- N LA7ERR,LA7FDA,ZERO
+ N LA7ERR,LA7FDA,LA7IEN,X,Y
  ;
  ; Lock zeroth node of file.
  L +^LAHM(62.49,0):99999
  I '$T Q -1
  ;
- S ZERO=$G(^LAHM(62.49,0))
- F LA76249=$P(ZERO,"^",3):1 I '$D(^LAHM(62.49,LA76249)) D  Q
- . S $P(^LAHM(62.49,LA76249,0),"^")=LA76249,^LAHM(62.49,"B",LA76249,LA76249)=""
- . S $P(ZERO,"^",3)=LA76249,$P(ZERO,"^",4)=$P(ZERO,"^",4)+1,^LAHM(62.49,0)=ZERO
+ F LA76249=$P(^LAHM(62.49,0),"^",3):1 Q:'$D(^LAHM(62.49,LA76249))
+ ; Lock entry in file 62.49 - Calling process is responsible for releasing
+ ; lock when no longer needed.
+ L +^LAHM(62.49,LA76249):99999
+ I '$T Q -1
+ ;
+ S LA7DT=$$NOW^XLFDT
+ S LA7FDA(1,62.49,"+1,",.01)=LA76249 ; message number
+ S LA7FDA(1,62.49,"+1,",2)="B" ; status =(B)uilding
+ S LA7FDA(1,62.49,"+1,",4)=LA7DT ; Date/time entered
+ S LA7IEN(1)=LA76249
+ D UPDATE^DIE("S","LA7FDA(1)","LA7IEN","LA7ERR")
+ I $D(LA7ERR) S LA76249=-1
  ;
  ; Unlock zero node
  L -^LAHM(62.49,0)
- ;
- ; Lock entry in file 62.49 - Calling process is responsible for releasing lock when no longer needed.
- L +^LAHM(62.49,LA76249):99999
- I '$T L -^LAHM(62.49,0) Q -1
- ;
- S LA7FDA(1,62.49,LA76249_",",2)="B" ; status =(B)uilding
- S LA7FDA(1,62.49,LA76249_",",4)=$$NOW^XLFDT ; Date/time entered
- D FILE^DIE("","LA7FDA(1)","LA7ERR(1)")
- I $D(LA7ERR) S LA76249=-1
- ;
  Q LA76249
  ;
  ;
@@ -268,21 +266,17 @@ RETOBR(LA74,LA7UID,LA7NLT,LA7Y) ; Retrieve placer's various OBR's that were tran
  ;               LA7Y("FS")     - original field separator
  ;               LA7Y("ECH")    - original encoding characters used
  ;               LA7Y("OBR-4")  - original OBR-4 sequence
- ;               LA7Y("OBR-17)  - modified info from OBR-17
  ;               LA7Y("OBR-18") - original OBR-18 sequence
  ;               LA7Y("OBR-19") - original OBR-19 sequence
  ;
- N I,LA7696,LA76964,LA7X
+ N LA7696,LA76964,LA7X
  ;
- ; Initialize return array
  S LA74=$G(LA74),LA7UID=$G(LA7UID),LA7Y=""
- F I="FS","ECH","OBR-4","OBR-17","OBR-18","OBR-19" S LA7Y(I)=""
  ;
  ; Return null if no values passed
  I LA74<1!(LA7UID="")!(LA7NLT="") Q
  ;
- S LA7696=0
- F  S LA7696=$O(^LRO(69.6,"RST",LA74,LA7UID,LA7696)) I 'LA7696!($D(^LRO(69.6,+LA7696,2,"C",LA7NLT))) Q
+ S LA7696=$O(^LRO(69.6,"RST",LA74,LA7UID,0))
  I LA7696<1 Q
  ;
  S LA7X=$G(^LRO(69.6,LA7696,700))
@@ -293,7 +287,6 @@ RETOBR(LA74,LA7UID,LA7NLT,LA7Y) ; Retrieve placer's various OBR's that were tran
  I LA76964<1 Q
  ;
  S LA7Y("OBR-4")=$G(^LRO(69.6,LA7696,2,LA76964,700.04))
- S LA7Y("OBR-17")=$P($G(^LRO(69.6,LA7696,2,LA76964,1)),"^")
  S LA7Y("OBR-18")=$G(^LRO(69.6,LA7696,2,LA76964,700.18))
  S LA7Y("OBR-19")=$G(^LRO(69.6,LA7696,2,LA76964,700.19))
  ;

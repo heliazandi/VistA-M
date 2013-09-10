@@ -1,5 +1,5 @@
 IBCNSP01 ;ALB/AAS - INSURANCE MANAGEMENT - EXPANDED POLICY  ;05-MAR-1993
- ;;2.0;INTEGRATED BILLING;**43,52,85,251,371,377,416,452**;21-MAR-94;Build 26
+ ;;2.0;INTEGRATED BILLING;**43,52,85,251,371,377**;21-MAR-94;Build 23
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;
  ;
@@ -7,8 +7,8 @@ IBCNSP01 ;ALB/AAS - INSURANCE MANAGEMENT - EXPANDED POLICY  ;05-MAR-1993
  Q
  ;
 SUBSC ; -- subscriber region
- N OFFSET,START,RX
- S START=24,OFFSET=2,RX=0
+ N OFFSET,START
+ S START=24,OFFSET=2
  D SET^IBCNSP(START,OFFSET," Subscriber Information ",IORVON,IORVOFF)
  S Y=$P(IBCDFND,"^",6),C=$P(^DD(2.312,6,0),"^",2) D Y^DIQ
  D SET^IBCNSP(START+1,OFFSET," Whose Insurance: "_Y)
@@ -20,31 +20,18 @@ SUBSC ; -- subscriber region
  D SET^IBCNSP(START+5,OFFSET,"Coord.  Benefits: "_Y)
  D SET^IBCNSP(START+6,OFFSET,"Primary Provider: "_$P(IBCDFND4,"^",1))
  D SET^IBCNSP(START+7,OFFSET," Prim Prov Phone: "_$P(IBCDFND4,"^",2))
- ;
- ; IB*2*452 - esg - display Pharmacy fields if they exist
- I $P(IBCDFND4,U,5)'=""!($P(IBCDFND4,U,6)'="") D
- . N G,IBY S G=+$P(IBCDFND4,U,5),IBY="",RX=2
- . I G S IBY=$$GET1^DIQ(9002313.19,G_",",.01)_" - "_$$GET1^DIQ(9002313.19,G_",",.02)
- . D SET^IBCNSP(START+8,OFFSET," Rx Relationship: "_IBY)
- . D SET^IBCNSP(START+9,OFFSET,"  Rx Person Code: "_$P(IBCDFND4,U,6))
- . Q
- ;
- ; Two blank lines at end of section
- D SET^IBCNSP(START+8+RX,OFFSET," ")
- D SET^IBCNSP(START+9+RX,OFFSET," ")
  Q
  ;
 VER ; -- Entered/Verfied Region
- N OFFSET,START,EIVFLG
- S EIVFLG=+$P(IBCDFND4,"^",4)
+ N OFFSET,START
  S START=$O(^TMP("IBCNSVP",$J,""),-1)+1,OFFSET=2
  S IB1ST("VERIFY")=START
  D SET^IBCNSP(START,OFFSET," User Information ",IORVON,IORVOFF)
  D SET^IBCNSP(START+1,OFFSET,"      Entered By: "_$E($P($G(^VA(200,+$P(IBCDFND1,"^",2),0)),"^",1),1,20))
  D SET^IBCNSP(START+2,OFFSET,"      Entered On: "_$$DAT1^IBOUTL(+IBCDFND1))
- D SET^IBCNSP(START+3,OFFSET,"Last Verified By: "_$S(EIVFLG:"AUTOUPDATE,IB-eIV",1:$E($P($G(^VA(200,+$P(IBCDFND1,"^",4),0)),"^",1),1,20)))
+ D SET^IBCNSP(START+3,OFFSET,"Last Verified By: "_$E($P($G(^VA(200,+$P(IBCDFND1,"^",4),0)),"^",1),1,20))
  D SET^IBCNSP(START+4,OFFSET,"Last Verified On: "_$$DAT1^IBOUTL(+$P(IBCDFND1,"^",3)))
- D SET^IBCNSP(START+5,OFFSET," Last Updated By: "_$S(EIVFLG:"AUTOUPDATE,IB-eIV",1:$E($P($G(^VA(200,+$P(IBCDFND1,"^",6),0)),"^",1),1,20)))
+ D SET^IBCNSP(START+5,OFFSET," Last Updated By: "_$E($P($G(^VA(200,+$P(IBCDFND1,"^",6),0)),"^",1),1,20))
  D SET^IBCNSP(START+6,OFFSET," Last Updated On: "_$$DAT1^IBOUTL(+$P(IBCDFND1,"^",5)))
  D SET^IBCNSP(START+7,2," ")   ; 2 blank lines to end section
  D SET^IBCNSP(START+8,2," ")

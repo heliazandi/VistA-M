@@ -1,17 +1,15 @@
 ICDHLPD ;ALB/GRR/EG - HELP DISPLAY DIAGNOSIS IDENTIFIERS ; 9/22/04 9:41am
- ;;18.0;DRG Grouper;**10,14,20,24,55**;Oct 20, 2000;Build 20
+ ;;18.0;DRG Grouper;**10,14,20,24**;Oct 20, 2000;Build 5
 EN ;routine revised 12/94
  N ICDID,I,J,ID
- F I=1:1 S ICDID=$T(DXCODE+I),ICDID=$E($P(ICDID,";;",2),1,25) Q:ICDID="EXIT"  D
- . S ICDID($P(ICDID,"="))=ICDID
- W ! S I="" F J=0:1 S I=$O(ICDID(I)) Q:I=""  D
- . I J#3 W ?(J#3*27)
- . I '(J#3) W !
- . W ICDID(I)
- K ICDID
- W ! F I=1:1 S ICDID=$T(DNCODE+I),ICDID=$E($P(ICDID,";;",2),1,25) Q:ICDID="EXIT"  D
- . W ?(I-1#3*27) I '(I-1#3) W !
- .W ICDID
+ F ID="DXCODE","DNCODE" D
+ . F I=1:1 S ICDID=$T(@ID+I),ICDID=$P(ICDID,";;",2) Q:ICDID="EXIT"  D
+ .. S ICDID($P(ICDID,"="))=ICDID
+ . W ! S I="" F J=0:1 S I=$O(ICDID(I)) Q:I=""  D
+ .. I J#3 W ?(J#3*27)
+ .. I '(J#3) W !
+ .. W ICDID(I)
+ . K ICDID
  W !
  Q
 MAJ ;display major or procedure identifier
@@ -21,63 +19,57 @@ MAJ ;display major or procedure identifier
  W !,"A=Cardio",?20,"M=Musculoskeletal",?50,"B=Spine"
  Q
 DXCODE ;DIAGNOSIS CODES
- ;;A=AMI/CHF
- ;;B=abrtn
- ;;D=Delivered
- ;;E=extrm immtrty
- ;;F=fem
- ;;G=Ganglion
  ;;H=any DX
- ;;I=Acute MI
- ;;J=Maj prblm
- ;;K=Intracranial Hemorrhage
- ;;L=Leukemia/lymphoma
- ;;M=malignancy/Neoplasm
- ;;O=only
- ;;P=Pruritis
- ;;Q=Acute CNS DX
- ;;R=full term
- ;;S=Significant problem
- ;;T=Trauma
- ;;U=Ulcer/itis
  ;;V=CV cmplctn
- ;;W=Severe Sepsis
- ;;X=cmplx/cmplctd
- ;;Y=Mouth,Larynx,Pharynx
- ;;Z=2ndry DX of Heart failur
- ;;a=Adenoidectomy/Tonsillect
- ;;b=full thickness burn
- ;;c=MCV in prime or 2ndry
+ ;;p=prematurity
+ ;;F=fem
+ ;;J=Maj prblm
+ ;;T=Trauma
+ ;;A=AMI/CHF
+ ;;P=Pruritis
  ;;d=Postpartum
- ;;g=major GI dx
+ ;;Y=Mouth,Larynx,Pharynx
+ ;;t=Therapy
+ ;;r=Breast Malig
+ ;;l=Acute leuk.
+ ;;E=extrm immtrty
+ ;;K=Intracranial Hemorrhage
+ ;;R=full term
+ ;;O=only
+ ;;I=Acute MI
+ ;;G=Ganglion
+ ;;D=Delivered
+ ;;m=hist malig as 2ry dx
+ ;;S=Significant problem
+ ;;u=antepartum cmplx
+ ;;X=cmplx/cmplctd
+ ;;a=Adenoidectomy/Tonsillect
+ ;;B=abrtn
+ ;;b=full thickness burn
+ ;;z=not sig 2ry dx
+ ;;M=malignancy/Neoplasm
+ ;;U=Ulcer/itis
+ ;;L=Leukemia/lymphoma
+ ;;v=Dx comp vag delivry
+ ;;k=infection
  ;;h=HIV
  ;;i=hiv related cond
  ;;j=inhalation injury
- ;;k=infection
- ;;l=Acute leuk.
- ;;m=hist malig as 2ry dx
- ;;p=prematurity
- ;;r=Breast Malig
+ ;;Q=Acute CNS DX
+ ;;W=Severe Sepsis
+ ;;Z=2ndry HF (2ndry dx of heart failure)
+ ;;c=MCV in prime or 2ndry
  ;;s=MCV in 2ndry
- ;;t=Therapy
- ;;u=antepartum cmplx
- ;;v=Dx comp vag delivry
- ;;z=not sig 2ry dx
+ ;;g=major GI dx 
  ;;EXIT
  Q
-DNCODE ; NUMERIC/OTHER ID CODES
+DNCODE ;  NUMERIC/OTHER ID CODES
  ;;1=coma>1hr
- ;;2=DRG492 before10/1/07(CMS) Chemo w acute leukemia as sdx or w high dose chemo agent
- ;;2=DRG 837 after 9/31/07(MS) Chemo w acute leukemia as sdx or w high dose chemo agent
- ;;3=DRG480 before10/1/07(CMS) liver transplant
- ;;3=DRG 005 after 9/31/07(MS) liver transplant
- ;;4=DRG481 before10/1/07(CMS) Bone marrow transplant  
- ;;4=DRG 009 after 9/31/07(MS) TRACH W MV 96+ HRS OR PDX EXC FACE, MOUTH & NECK W/O MAJ O.R
- ;;4=DRG14,15 after 10/1/07 ALLOGENEIC/AUTOLOGOUS BONE MARROW TRANSPLANT
- ;;4=DRG14,16,17 aft 9/31/11 ALLOGENEIC/AUTOLOGOUS BONE MARROW TRANSPLANT
+ ;;2=DRG492
+ ;;3=DRG480
+ ;;4=DRG481
  ;;5=DRG481 w/leuk
- ;;6=DRG546 curvature of spine or malignancy - before 10012007
- ;;6=DRG456 after 9/31/07 - Spinal fus exc cerv w spinal curv/malig/infec or 9+ fus w MCC
+ ;;6=DRG546 curvature of spine or malignancy
  ;;*=extensive burn
  ;;EXIT
  Q

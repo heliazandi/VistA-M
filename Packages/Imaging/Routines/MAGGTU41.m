@@ -1,5 +1,5 @@
-MAGGTU41 ;WOIFO/GEK/SG - VERSION CONTROL UTILITIES  ; 3/04/10 4:25pm
- ;;3.0;IMAGING;**46,59,93,90**;Mar 19, 2002;Build 1764;Jun 09, 2010
+MAGGTU41 ;WOIFO/GEK/SG - VERSION CONTROL UTILITIES  ; 6/27/08 11:33am
+ ;;3.0;IMAGING;**46,59,93**;Dec 02, 2009;Build 163
  ;; Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
@@ -8,6 +8,7 @@ MAGGTU41 ;WOIFO/GEK/SG - VERSION CONTROL UTILITIES  ; 3/04/10 4:25pm
  ;; | to execute a written test agreement with the VistA Imaging    |
  ;; | Development Office of the Department of Veterans Affairs,     |
  ;; | telephone (301) 734-0100.                                     |
+ ;; |                                                               |
  ;; | The Food and Drug Administration classifies this software as  |
  ;; | a medical device.  As such, it may not be changed in any way. |
  ;; | Modifications to this software may result in an adulterated   |
@@ -81,7 +82,7 @@ CLADESC(CLNAME) ;
  . I CLNAME="CLUTILS"     S DSC="MAGGTU4L^9.9^5.9"  Q
  . I CLNAME="DISPLAY"     S DSC="MAGGTU4D^9^5"      Q
  . I CLNAME="TELEREADER"  S DSC="MAGGTU4T^9.3^5.3"  Q
- . I CLNAME="VISTARAD"    S DSC="MAGJTU4V^9.7^5.7"  Q
+ . I CLNAME="VISTARAD"    S DSC=""              Q
  . Q
  ;
  Q $S($G(DSC)'="":DSC,1:$$ERROR^MAGUERR(-24,,CLNAME))

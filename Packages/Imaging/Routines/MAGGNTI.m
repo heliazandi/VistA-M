@@ -1,6 +1,6 @@
-MAGGNTI ;WOIFO/GEK/SG/NST/JSL - Imaging interface to TIU RPC Calls etc. ; 20 Jan 2010 10:08 AM
- ;;3.0;IMAGING;**10,8,59,93,108,122**;Mar 19, 2002;Build 92;Aug 02, 2012
- ;; Per VHA Directive 2004-038, this routine should not be modified.
+MAGGNTI ;WOIFO/GEK/SG - Imaging interface to TIU RPC Calls etc. ; 1/16/09 1:45pm
+ ;;3.0;IMAGING;**10,8,59,93**;Dec 02, 2009;Build 163
+ ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
  ;; | No permission to copy or redistribute this software is given. |
@@ -20,9 +20,6 @@ FILE(MAGRY,MAGDA,TIUDA) ;RPC [MAG3 TIU IMAGE]
  ; Call to file TIU and Imaging Pointers
  ; TIU API to add image to TIU
  N X
- ;Patch 108
- ; Create a new TIU note if TIUDA equals zero
- I (TIUDA=0),'$$SETTIUDA(.MAGRY,MAGDA,.TIUDA) Q
  I $P(^TIU(8925,TIUDA,0),U,2)'=$P(^MAG(2005,MAGDA,0),U,7) S MAGRY="0^Patient Mismatch." Q
  D PUTIMAGE^TIUSRVPL(.MAGRY,TIUDA,MAGDA) ;
  I 'MAGRY Q
@@ -35,28 +32,9 @@ FILE(MAGRY,MAGDA,TIUDA) ;RPC [MAG3 TIU IMAGE]
  Q
 DATA(MAGRY,TIUDA) ;RPC [MAG3 TIU DATA FROM DA]
  ; Call to get TIU data from the TIUDA
- ; MAGRY: returns data from fields .01,1201,.02,1202 , .05
- ;           .01            1201         .02   1202 
- ;    TIUDA^Document Type ^Document Date^DFN^Author DUZ^Status
+ ; Return =     TIUDA^Document Type ^Document Date^DFN^Author DUZ
  ;
- ;  - old code
- ;S MAGRY=TIUDA_U_$$GET1^DIQ(8925,TIUDA,".01","E")_U_$$GET1^DIQ(8925,TIUDA,"1201","I")_U_$$GET1^DIQ(8925,TIUDA,".02","I")_U_$$GET1^DIQ(8925,TIUDA,"1202","I")_U
- ;
- ;P122 we need 1 if Status is Complete 0 otherwise. Status is field .05
- ; reformat code for easier reading, and add the 1 or 0 as 6th piece.
- ;
- N RES,CDA,ST
- D GETS^DIQ(8925,TIUDA,".01;1201;.02;1202;.05","EI","RES")
- I '$D(RES) S MAGRY="" Q  ;no TIU data
- S CDA=TIUDA_","
- S $P(MAGRY,U,1)=TIUDA
- S $P(MAGRY,U,2)=RES(8925,CDA,".01","E") ; Document Type
- S $P(MAGRY,U,3)=RES(8925,CDA,"1201","I") ;Document Date
- S $P(MAGRY,U,4)=RES(8925,CDA,".02","I") ;DFN
- S $P(MAGRY,U,5)=RES(8925,CDA,"1202","I") ;Author DUZ
- ; P122 Return Status  as 6th piece of Result String
- S $P(MAGRY,U,6)=RES(8925,CDA,".05","E") ; Status
- S $P(MAGRY,U,7)="" ; put's "^" on end of string.
+ S MAGRY=TIUDA_U_$$GET1^DIQ(8925,TIUDA,".01","E")_U_$$GET1^DIQ(8925,TIUDA,"1201","I")_U_$$GET1^DIQ(8925,TIUDA,".02","I")_U_$$GET1^DIQ(8925,TIUDA,"1202","I")_U
  Q
 IMAGES(MAGRY,TIUDA) ;RPC [MAG3 CPRS TIU NOTE]
  ; Call to get all images for a given TIU DA
@@ -71,7 +49,7 @@ IMAGES(MAGRY,TIUDA) ;RPC [MAG3 CPRS TIU NOTE]
  N MAGARR,CT,TCT,I,J,Z K ^TMP($J,"MAGGX")
  N DA,MAGQI,MAGNCHK,MAGXX,MAGRSLT
  N TIUDFN,MAGQUIT ; MAGQI 8/22/01
- N MAGFILE ; MAGFILE is returned from MAGGTII
+ ; MAGFILE is returned from MAGGTII
  ; 
  S MAGQUIT=0 ; MAGQI 8/22/01
  S TIUDFN=$P($G(^TIU(8925,TIUDA,0)),U,2) ;MAGQI 8/22/01
@@ -181,77 +159,4 @@ ISDOCCL(MAGRY,IEN,TIUFILE,CLASS) ;RPC [MAGG IS DOC CLASS]
  S RES=$$ISA^TIULX(DEFIEN,DOCCL)
  I RES S MAGRY="1^The "_NTTL_" is of Document Class "_CLASS Q
  S MAGRY="0^The "_NTTL_" is Not of Document Class "_CLASS
- Q
- ;
- ; *******************
- ; Patch 108
- ; Create a new TIU stub using data in ^MAG(2006.82 by Tracking ID
- ; In this way BP doesn't need to be recompiled
- ;
- ; Return Values
- ; =============
- ;  0 for failure
- ;  1 for success
- ;  
- ;  MAGRY 
- ;     for failure   "0^message"
- ;     for success   "TIU Note IEN^message"
- ;  TIUDA - TIU Note IEN
- ;   
- ; Input Parameters
- ; ================
- ;  MAGDA - Image IEN in file #2005
- ; 
-SETTIUDA(MAGRY,MAGDA,TIUDA) ;
- N TRKID,TIUTTL,TIUTCNT
- N MAGTEXT,MAGDFN,MAGADCL,MAGMODE,MAGES,MAGESBY,MAGDATE
- N MAGIAPI,TIUIEN
- S TRKID=$$GET1^DIQ(2005,MAGDA,"108")  ; Tracking ID - it is unique
- I TRKID="" S MAGRY="0^TIUDA equals zero and Tracking ID is not found." Q 0
- ; Get import data
- D GETIAPID^MAGGSIUI(.MAGIAPI,TRKID)
- I '$D(MAGIAPI) S MAGRY="0^TIUDA equals zero and no data found by Tracking ID." Q 0  ; no data quit
- S TIUTTL=$G(MAGIAPI("PXTIUTTL")) ; Get TIU Title
- ; Validate TIU Title
- I '$$GETTIUDA^MAGGSIV(.MAGRY,TIUTTL,.TIUIEN) Q 0
- S TIUTTL=TIUIEN  ; set TIUTTL to internal TIU Title in case the external value is provided
- ; Get Text
- S TIUTCNT=+$G(MAGIAPI("PXTIUTCNT"))  ; TIU note Text Lines Count
- F I=0:1:TIUTCNT-1 D
- . S MAGTEXT(I)=$G(MAGIAPI("PXTIUTXT"_$TR($J(I,5)," ",0)))  ; Get Text Lines
- . Q
- S MAGTEXT(TIUTCNT)="   VistA Imaging Import API - Imported Document"
- S MAGDFN=$$GET1^DIQ(2005,MAGDA,"5","I")  ; Patient DFN
- S MAGADCL=+$G(MAGIAPI("PXSGNTYP"))  ; Signature Type - 0 unsigned/ 1 Admin closed/ 2 Signed
- S MAGMODE="E"
- S MAGES=""
- S MAGESBY=$$GET1^DIQ(2005,MAGDA,"8","I")   ; Image Capture by ( Signed)
- S MAGDATE=$G(MAGIAPI("PXDT")) ; TIU note Date
- ; Create a new TIU note
- D NEW^MAGGNTI1(.MAGRY,MAGDFN,TIUTTL,MAGADCL,MAGMODE,MAGES,MAGESBY,"",MAGDATE,"",.MAGTEXT)
- I $P(MAGRY,"^") S TIUDA=+MAGRY  D UPDPKG^MAGGNTI(MAGDA,TIUDA) Q 1
- Q 0
- ;
- ; *******************
- ; Patch 108
- ; Update Package Index (#40) in #2005 based on TIU Note info.
- ; 
- ; Input Parameters
- ; ================
- ;  MAGDA - Image IEN in file #2005
- ;  PXIEN - TIU Note IEN in file #8925
- ;
-UPDPKG(MAGDA,PXIEN) ;Patch 108: Update Package Index (#40) in #2005 based on TIU Note info.
- N PKG,MAGRY,OK,MAGGFDA,MAGGXE,MAGNOFMAUDIT
- S PKG=$$GET1^DIQ(2005,MAGDA_",",40)
- I PKG'="NONE" Q  ; Quit if the package is already set to something else than "NONE"
- S PKG=""
- D DATA^MAGGNTI(.MAGRY,PXIEN)
- D ISCP^TIUCP(.OK,$P(MAGRY,U,2)) I OK S PKG="CP"
- I PKG="" D ISCNSLT^TIUCNSLT(.OK,$P(MAGRY,U,2)) I OK S PKG="CONS"
- I PKG="" S PKG="NOTE"
- S MAGGFDA(2005,MAGDA_",",40)=PKG
- S MAGNOFMAUDIT=1  ; Do not file the changes in Audit file.
- ;                   We are not done with initial setup
- D UPDATE^DIE("","MAGGFDA","","MAGGXE")
  Q

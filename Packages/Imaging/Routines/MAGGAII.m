@@ -1,6 +1,6 @@
-MAGGAII ;WOIFO/GEK/SG/JSL - RETURNS IMAGE INFO ; 2/20/09 11:37am
- ;;3.0;IMAGING;**93,94,122**;Mar 19, 2002;Build 92;Aug 02, 2012
- ;; Per VHA Directive 2004-038, this routine should not be modified.
+MAGGAII ;WOIFO/GEK/SG - RETURNS IMAGE INFO ; 2/20/09 11:37am
+ ;;3.0;IMAGING;**93**;Dec 02, 2009;Build 163
+ ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
  ;; | No permission to copy or redistribute this software is given. |
@@ -148,11 +148,6 @@ FILENAME(MAGXX,FILETYPE,MAGTYPE,MAGJBOL) ;
  ;                      converted to a number {0|1}
  ;                 ^29: Viewable Status
  ;                 ^30: Internal value of STATUS field (113)
- ;                 ^31: Image annotated flag (0 or 1)
- ;                 ^32: Image TIU note is completed (0 or 1)
- ;                 ^33: Annotation operation Status
- ;                 ^34: Annotation operation Status Description
- ;                 ^35: Package is the package: RAD,LAB,MED,SUR,NONE,PHOTOID
  ;
 INFO(MAGIEN,FLAGS,GRPCNTS) ;
  N GROUP         ; 1 if the entry referenced by MAGIEN is a group
@@ -163,9 +158,8 @@ INFO(MAGIEN,FLAGS,GRPCNTS) ;
  N MAGNODE       ; Global node of the image referenced by MAGIEN
  N MAGRES        ; Result value (image descriptor)
  ;
- ;N MAG3P59 ;gek/ out in P94t7
- N MAGMSG,MAGN0,MAGN100,MAGN2,MAGN40,MAGJBOL
- N MAGVST,MDFN,IEN,PLC,PLCODE,RC,TMP,X,ANNOTATED,TMPN2
+ N MAG3P59,MAGMSG,MAGN0,MAGN100,MAGN2,MAGN40,MAGJBOL
+ N MAGVST,MDFN,IEN,PLC,PLCODE,RC,TMP,X
  ;
  ;=== Validate control flags
  S FLAGS=$G(FLAGS)
@@ -179,7 +173,7 @@ INFO(MAGIEN,FLAGS,GRPCNTS) ;
  ;
  ;=== Initialize variables
  S MAGRES=MAGIEN,RC=0
- ;gek/ out in P94t7   S MAG3P59=$D(MAGJOB("RPCSERVER"))&$D(MAGJOB("RPCPORT"))
+ S MAG3P59=$D(MAGJOB("RPCSERVER"))&$D(MAGJOB("RPCPORT"))
  D:'$D(MAGJOB("NETPLC")) NETPLCS^MAGGTU6
  I MAGNODE'=""  D
  . S MAGN0=$G(@MAGNODE@(0)),MAGN2=$G(@MAGNODE@(2))
@@ -217,14 +211,7 @@ INFO(MAGIEN,FLAGS,GRPCNTS) ;
  . ;--- Get the type of the first image of the group
  . S GRPCH1TYPE=$P(@GRPCH1NODE@(0),U,6)
  . Q
- ;--- Check the annotation info
- S ANNOTATED=+$P($G(^MAG(2005.002,MAGIEN,1,0)),U,4) ;p122 - add IMAGE annotated flag
- I 'ANNOTATED I $D(^MAG(2005,MAGIEN,210,0)) S ANNOTATED=1 ;VistARad annotation #2005.001/PS data #2005.05
- I 'ANNOTATED I GROUP!$D(^MAG(2005,MAGIEN,1,0)) D   ;p122 - find any child w/ annotation
- . N NO,CH S NO=0
- . F  S NO=$O(^MAG(2005,MAGIEN,1,NO)) Q:'NO  S CH=+$G(^(NO,0)) S:CH ANNOTATED=+$P($G(^MAG(2005.002,CH,1,0)),U,4) S:$D(^MAG(2005,CH,210,0)) ANNOTATED=1 Q:ANNOTATED
- . Q
- S:ANNOTATED ANNOTATED=1
+ ;
  ;=== If this is a group and it is not empty, then use
  ;    the first image to get the names of image files.
  ;=== Otherwise, get them from the group header itself.
@@ -287,7 +274,6 @@ INFO(MAGIEN,FLAGS,GRPCNTS) ;
  ;=== Data integrity checks
  S TMP=$S('$G(MAGNOCHK):"Q",1:"")
  S MAGVST=$$VIEWSTAT^MAGGI12(MAGIEN,TMP,.MAGMSG)
- ;;W !,"MAGVST : ",$G(MAGVST) ; TESTING, TAKE OUT THIS LINE.
  I MAGVST["Q"  D
  . ;--- Remove the file name of the full resolution image
  . S $P(MAGRES,U,2)="-1~Questionable Data Integrity"
@@ -314,29 +300,18 @@ INFO(MAGIEN,FLAGS,GRPCNTS) ;
  ;=== If the client is newer than patch 59, then we can set beyond
  ;    25 pieces. Additional "^" at the end of the result prevents
  ;=== problems on the client side.
- D  ;gek/ out in P94t7  I MAG3P59  D
+ I MAG3P59  D
  . S $P(MAGRES,U,24)=$P(MAGN0,U,10)      ; GROUP PARENT (14)
  . S:GRPCHCNT>1 $P(MAGRES,U,25)=GRPCH1IEN_":"_GRPCH1TYPE
- . S $P(MAGRES,U,26)=$G(MAGJOB("RPCSERVER")) ; GEK P94 put in $G
- . S $P(MAGRES,U,27)=$G(MAGJOB("RPCPORT")) ; GEK P94 put in $G
+ . S $P(MAGRES,U,26)=MAGJOB("RPCSERVER")
+ . S $P(MAGRES,U,27)=MAGJOB("RPCPORT")
  . S TMP=+$P(MAGN100,U,7)                ; CONTROLLED IMAGE (112)
  . S $P(MAGRES,U,28)=TMP
  . S:TMP $P(MAGRES,U,3)=".\bmp\magsensitive.bmp"
  . S TMP=+$P(MAGN100,U,8)                ; STATUS (113)
  . S $P(MAGRES,U,29)=$$VSTCODE(MAGVST,TMP)
  . S $P(MAGRES,U,30)=TMP
- . ; patch 122 new data pieces (31-35) for annotation.
- . S $P(MAGRES,U,31)=$G(ANNOTATED)       ;IMAGE annotated
- . S TMP=""
- . ; if it is a child of a Group,  the Parent data is in the Group.
- . S TMPN2=MAGN2 I $P(MAGN0,U,10) S TMPN2=$G(^MAG(2005,$P(MAGN0,U,10),2))
- . I $P(TMPN2,U,6)=8925 D DATA^MAGGNTI(.TMP,$P(TMPN2,U,7)) S TMP=$P(TMP,U,6)
- . S $P(MAGRES,U,32)=$S(TMP="":"",TMP="COMPLETED":1,1:0) ; if TIU check Note status
- . S TMP="" ; use TMP to return Description.
- . S $P(MAGRES,U,33)=$$ANNSTAT^MAGGI12(MAGIEN,$P(MAGRES,U,29),.TMP) ;Annotation Status
- . S $P(MAGRES,U,34)=TMP ; This is Desc of Annotation Status
- . S $P(MAGRES,U,35)=$P(MAGN40,U,1)  ;the package RAD,LAB,MED,SUR...etc  
- . S $P(MAGRES,U,36)="" ; This forces "^" to be last character in string.
+ . S $P(MAGRES,U,31)=""
  . Q:GRPCH1NODE=""
  . ;--- If the group header is not marked as controlled but the 1st
  . ;    image is, override the sensitivity flag so that the image
@@ -345,35 +320,23 @@ INFO(MAGIEN,FLAGS,GRPCNTS) ;
  . . S $P(MAGRES,U,28)=1,$P(MAGRES,U,3)=".\bmp\magsensitive.bmp"
  . . Q
  . Q
- ;gek/ out in P94t7    E  S $P(MAGRES,U,25)=""
+ E  S $P(MAGRES,U,25)=""
  ;
  ;=== Stop displaying a group of 1 as a group
  I GROUP,GRPCHCNT=1  D
  . N CH1N100,CH1VST
  . S $P(MAGRES,U,1)=GRPCH1IEN   ; IEN of the 1st image of the group
  . S $P(MAGRES,U,6)=GRPCH1TYPE  ; OBJECT TYPE (3) of the 1st image
- . ;gek/ out in P94t7  Q:'MAG3P59
+ . Q:'MAG3P59
  . ;--- Get the viewable status of the 1st "child"
  . S TMP=$S('$G(MAGNOCHK):"Q",1:"")
  . S CH1VST=$$VIEWSTAT^MAGGI12(GRPCH1IEN,TMP)
  . ;--- Get the image status of the 1st "child"
  . S CH1N100=$S(GRPCH1NODE'="":$G(@GRPCH1NODE@(100)),1:"")
  . S TMP=+$P(CH1N100,U,8)       ; STATUS (113)
- . ;--- Override the group's values with those of Child 1
- . S $P(MAGRES,U,29)=$$VSTCODE(CH1VST,TMP) ; numeric code of 'View Status'
- . S $P(MAGRES,U,30)=TMP ; Status
- . ; ANNOTATED due to only child was annotated 
- . S $P(MAGRES,U,31)=$G(ANNOTATED,0) ; IMAGE been annotated
- . ;      Don't change to Child for Report Parent info.
- . ;      Parent Data values are stored in '2' node of the Group.
- . S TMP=""
- . I $P(MAGN2,U,6)=8925 D DATA^MAGGNTI(.TMP,$P(MAGN2,U,7)) S TMP=$P(TMP,U,6)
- . S $P(MAGRES,U,32)=$S(TMP="COMPLETED":1,1:0)
- . ; Now need to change the Annotation Status, cause change in 'View Status'
- . S TMP="" ; use TMP to return Description.
- . S $P(MAGRES,U,33)=$$ANNSTAT^MAGGI12(GRPCH1IEN,$P(MAGRES,U,29),.TMP) ;Annotation Status
- . S $P(MAGRES,U,34)=TMP ; Annotation Status Description.
- . ; $P(35) is package RAD,LAB,SUR,MED,NOTE etc  defined in Group and Child.
+ . ;--- Override the group's values
+ . S $P(MAGRES,U,29)=$$VSTCODE(CH1VST,TMP)
+ . S $P(MAGRES,U,30)=TMP
  . Q
  ;
  ;===

@@ -1,5 +1,5 @@
-HLOUSR ;ALB/CJM/OAK/PIJ/RBN -ListManager Screen for viewing system status;12 JUN 1997 10:00 am ;02/28/2012
- ;;1.6;HEALTH LEVEL SEVEN;**126,130,134,137,138,139,146,147,153,158**;Oct 13, 1995;Build 14
+HLOUSR ;ALB/CJM/OAK/PIJ/RBN -ListManager Screen for viewing system status;12 JUN 1997 10:00 am ;11/21/2008
+ ;;1.6;HEALTH LEVEL SEVEN;**126,130,134,137,138,139,146**;Oct 13, 1995;Build 16
  ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 EN ;
@@ -10,13 +10,11 @@ EN ;
  Q
  ;
 BRIEF ;
- N COUNT,LINK,QUE,FROM,TIME,STATUS,TEMP,DIR,TODAY,LIST,LNKMSG,OS
+ N COUNT,LINK,QUE,FROM,TIME,STATUS,TEMP,DIR,TODAY,LIST,LNKMSG
  S HLRFRSH="BRIEF^HLOUSR"
  S (HLSCREEN,VALMSG)="Brief System Status"
  S VALMCNT=16
  ;K @VALMAR
- S OS=$$OS^%ZOSV
- ;
  D CLEAN^VALM10
  S VALMBG=1
  S VALMBCK="R"
@@ -26,38 +24,28 @@ BRIEF ;
  S @VALMAR@(1,0)="SYSTEM STATUS:             "_$S($$CHKSTOP^HLOPROC:"STOPPED",1:"RUNNING")
  S @VALMAR@(2,0)="PROCESS MANAGER:           "_$S($$RUNNING:"RUNNING",1:"STOPPED")
  ;
- ;
- I $$CHKSTOP^HLOPROC,OS'["VMS" S TESTOPEN("LISTENER")=""
  S TIME=$P($G(TESTOPEN("LISTENER")),"^",2)
- I TIME,$$FMDIFF^XLFDT($$NOW^XLFDT,TIME,2)<100 D
+ I TIME,$$FMDIFF^XLFDT($$NOW^XLFDT,TIME,2)<300 D
  .S STATUS=+TESTOPEN("LISTENER")
  E  D
- .;** P147 START CJM
- .;is the Kernel listener running under the HLO process manager?
- .S STATUS=$$KLISTEN
+ .S STATUS=0
+ .S LINK=$P($G(^HLD(779.1,1,0)),"^",10)
+ .I LINK S LINK=$P($G(^HLCS(870,LINK,0)),"^") Q:'$L(LINK)  S STATUS=$$IFOPEN^HLOUSR1(LINK)
  .;
- .;if the Kernel listner is NOT running, might check the listener via the OPEN command.  With loadbalancing, the IP address of the listener link sometimes fails, so also try 'loopback'.
- .I 'STATUS,(OS["VMS")!('$$CHKSTOP^HLOPROC) D
- ..N IP,LINK
- ..S LINK=$P($G(^HLD(779.1,1,0)),"^",10)
- ..I LINK,$$GET^HLOTLNK(LINK,.LINK) D
- ...F IP="127.0.0.1","0.0.0.0",LINK("IP") D  Q:STATUS
- ....N POP,IO,IOF,IOST
- ....D CALL^%ZISTCP(IP,LINK("PORT"),5)
- ....S STATUS='POP
- ....C:STATUS IO
- .;
- .S:(('STATUS)&('$$CHKSTOP^HLOPROC)) LNKMSG=$S(OS["VMS":" Please start the HLO VMS TCPIP SERVICE",1:"Please start the HLO Listener")
- .;
- .;** P147 END CJM
- .;
- .D:'STATUS CNTRL^VALM10(3,38,85,IOINHI,IOINORM)
+ .;** P139 start CJM**
+ .I 'STATUS D
+ ..N SYS,POP,IO,IOF,IOST
+ ..D SYSPARMS^HLOSITE(.SYS)
+ ..D CALL^%ZISTCP("0.0.0.0",SYS("PORT"),5)
+ ..S STATUS='POP
+ ..C:STATUS IO
+ ..S:'STATUS LNKMSG=" Please restart the VMS TCPIP SERVICE FOR THE HLO LISTENER"
+ ..D:'STATUS CNTRL^VALM10(3,43,85,IOINHI,IOINORM)
  .S TESTOPEN("LISTENER")=STATUS_"^"_$$NOW^XLFDT
- ;
- S @VALMAR@(3,0)="STANDARD LISTENER:         "_$S(STATUS:"RUNNING",1:"STOPPED   ")_$G(LNKMSG)
+ S @VALMAR@(3,0)="STANDARD LISTENER:         "_$S(STATUS:"OPERATIONAL",1:"NOT OPERATIONAL ")_$G(LNKMSG)
  ;** P139 end **
  ;
- S @VALMAR@(4,0)="TASKMAN:                   "_$S($$TM^%ZTLOAD:"RUNNING",1:"STOPPED")
+ S @VALMAR@(4,0)="TASKMAN:                   "_$S($$TM^%ZTLOAD:"RUNNING",1:"NOT RUNNING")
  ;
  S (LIST,LINK)=""
  F  S LINK=$O(^HLTMP("FAILING LINKS",LINK)) Q:LINK=""  D  I $L(LIST)>60 S LIST=LIST_",..." Q
@@ -237,7 +225,6 @@ TESTLINK ;
  Q:'PORT
  S LINK=LINKNAME_":"_PORT
  ;S OK=$$IFOPEN^HLOUSR1(LINKNAME)
- W !,"Testing...." ;P158
  S OK=$$IFOPEN^HLOUSR1(LINK)
  ;** P138 END
  I OK W !,LINK_" IS operational..."
@@ -249,7 +236,7 @@ TESTLINK ;
 ASKLINK() ;
  N DIC,TCP,X,Y,DTOUT,DUOUT
  S DIC=870
- S DIC(0)="AEMNQ"
+ S DIC(0)="AENQ"
  S TCP=$O(^HLCS(869.1,"B","TCP",0))
  S DIC("A")="Select a TCP link:"
  S DIC("S")="I $P(^(0),U,3)=TCP"
@@ -314,24 +301,3 @@ EDITSITE ;
  S DR="[HLO EDIT SYSTEM PARAMETERS]"
  D ^DIE
  Q
- ;
-LOGALL ;
- N ON,CHANGE,DATA
- ;Will turn on/off logging of all errors
- S ON=$G(^HLTMP("LOG ALL ERRORS"))
- W !!,"Logging of all HLO errors is turned ",$S(ON:"ON",1:"OFF"),"."
- W !!,"Logging of all HLO errors, including READ and WRITE errors, should be turned",!,"on only for short periods for troubleshooting purposes.",!
- S CHANGE=$$ASKYESNO^HLOUSR2("Do you want logging of all HLO errors turned "_$S(ON:"OFF",1:"ON"),$S(ON:"YES",1:"NO"))
- Q:'CHANGE
- S ON='ON
- S ^HLTMP("LOG ALL ERRORS")=ON
- W !,"Logging of all HLO errors is turned ",$S(ON:"ON",1:"OFF"),"."
- Q
- ;
-KLISTEN() ;
- ;checks if the Kernel multi-listener is running
- N DOLLARJ,FOUND
- S DOLLARJ=""
- S FOUND=0
- F  S DOLLARJ=$O(^HLTMP("HL7 RUNNING PROCESSES",DOLLARJ)) Q:DOLLARJ=""  I $P($G(^HLTMP("HL7 RUNNING PROCESSES",DOLLARJ)),"^",3)["TASKMAN MULTI-LISTENER" S FOUND=1 Q
- Q FOUND

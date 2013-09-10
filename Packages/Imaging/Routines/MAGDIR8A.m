@@ -1,6 +1,5 @@
-MAGDIR8A ;WOIFO/PMK/JSL/SAF - Read a DICOM image file ; 03/08/2005  07:02
- ;;3.0;IMAGING;**11,51,49,123**;Mar 19, 2002;Build 67;Jul 24, 2012
- ;; Per VHA Directive 2004-038, this routine should not be modified.
+MAGDIR8A ;WOIFO/PMK - Read a DICOM image file ; 03/08/2005  07:02
+ ;;3.0;IMAGING;**11,51**;26-August-2005
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
  ;; | No permission to copy or redistribute this software is given. |
@@ -8,6 +7,7 @@ MAGDIR8A ;WOIFO/PMK/JSL/SAF - Read a DICOM image file ; 03/08/2005  07:02
  ;; | to execute a written test agreement with the VistA Imaging    |
  ;; | Development Office of the Department of Veterans Affairs,     |
  ;; | telephone (301) 734-0100.                                     |
+ ;; |                                                               |
  ;; | The Food and Drug Administration classifies this software as  |
  ;; | a medical device.  As such, it may not be changed in any way. |
  ;; | Modifications to this software may result in an adulterated   |
@@ -47,11 +47,13 @@ RADLKUP ; Radiology patient/study lookup -- called by ^MAGDIR81
  Q
  ;
 RADLKUP1 ; not an entry point
- N LIST
  Q:CASENUMB=""    ;LB 12/16/98
- S X=$$ACCFIND^RAAPI(CASENUMB,.LIST)
- Q:X'=1  S X=LIST(1) ; two conditions, no accession number & duplicate
- S RADPT1=$P(X,"^",1),RADPT2=$P(X,"^",2),RADPT3=$P(X,"^",3)
+ S RAIX=$S($D(^RADPT("C")):"C",1:"AE") ; for Radiology Patch RA*5*7
+ S RAIX=$S(CASENUMB["-":"ADC",1:RAIX) ; select the cross-reference
+ S RADPT1=$O(^RADPT(RAIX,CASENUMB,"")) I 'RADPT1 Q
+ S RADPT2=$O(^RADPT(RAIX,CASENUMB,RADPT1,"")) I 'RADPT2 Q
+ S RADPT3=$O(^RADPT(RAIX,CASENUMB,RADPT1,RADPT2,"")) I 'RADPT3 Q
+ S X=$O(^RADPT(RAIX,CASENUMB,RADPT1,RADPT2,RADPT3))
  I '$D(^RADPT(RADPT1,0)) Q  ; no patient demographics file pointer
  ; get patient demographics file pointer
  S X=^RADPT(RADPT1,0),DFN=$P(X,"^")
@@ -119,12 +121,11 @@ PIDCHECK() ; compare VistA patient ID with DICOM patient ID
  I $G(RADATA("EXAMSTS"))="CANCELLED" Q "-3,CANCELLED"
  ;
  ; lookup patient in VistA database
- S DIQUIET=1 D DEM^MAGSPID($G(INSTLOC)) ; P123
+ S DIQUIET=1 D DEM^VADPT
  S PNAMEVAH=VADM(1)
  S LASTVAH=$P(PNAMEVAH,","),FIRSTVAH=$P(PNAMEVAH,",",2)
  S MIVAH=$TR($P(FIRSTVAH," ",2,999),"."),FIRSTVAH=$P(FIRSTVAH," ")
- I $$ISIHS^MAGSPID() S (IDVAH,DCMPID)=VA("PID")  ; P123 proper VA/IHS PID
- E  S IDVAH=$P(VADM(2),"^"),DCMPID=$P(VADM(2),"^",2)
+ S IDVAH=$P(VADM(2),"^"),DCMPID=$P(VADM(2),"^",2)
  ;
  ; compare the values - allow a single transposition in the patient name,
  ; but require exact patient id values (i.e., social security numbers)

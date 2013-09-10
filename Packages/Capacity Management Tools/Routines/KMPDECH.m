@@ -1,5 +1,5 @@
 KMPDECH ; OAK/RAK - CM Tools Echo ;4/6/06  08:40
- ;;3.0;KMPD;;Jan 22, 2009;Build 42
+ ;;2.0;CAPACITY MANAGEMENT TOOLS;**5**;Mar 22, 2002
  ;
 ECHO ;-entry point
  ;

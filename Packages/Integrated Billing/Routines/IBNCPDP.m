@@ -1,20 +1,20 @@
 IBNCPDP ;OAK/ELZ - APIS FOR NCPCP/ECME ;1/9/08  17:27
- ;;2.0;INTEGRATED BILLING;**223,276,363,383,384,411,435,452**;21-MAR-94;Build 26
+ ;;2.0;INTEGRATED BILLING;**223,276,363,383,384**;21-MAR-94;Build 74
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;
  ;
-RX(DFN,IBD) ; IB Billing Determination
+RX(DFN,IBD) ; pharmacy package call, passing in IBD by ref
  ; this is called by PSO for all prescriptions issued, return is
  ; a response to bill ECME or not with array for billing data elements
  ; third piece of return is an Eligibility indicator for the prescription
  ;
  ; IBD("IEN")         = Prescription IEN
  ;    ("FILL NUMBER") = Fill number (0 is initial)
- ;    ("DOS")         = Date of Service
+ ;    ("FILL DATE")   = Fill or refill date
  ;    ("RELEASE DATE")= Date of the Rx release in FileMan format
  ;    ("NDC")         = NDC number for drug
  ;    ("DEA")         = DEA special handling info
- ;    ("COST")        = cost of medication being dispensed
+ ;    ("COST")        = cost of medication being dispenced
  ;    ("AO")          = Agent Orange (0,1 OR Null)
  ;    ("EC")          = Environmental Contaminant (0,1 OR Null)
  ;    ("HNC")         = Head/neck cancer (0,1 OR Null)
@@ -22,23 +22,19 @@ RX(DFN,IBD) ; IB Billing Determination
  ;    ("MST")         = Military sexual trauma (0,1 OR Null)
  ;    ("SC")          = Service connected (0,1 OR Null)
  ;    ("CV")          = Combat Veteran (0,1 OR Null)
- ;    ("QTY")         = Quantity of med dispensed
+ ;    ("QTY")         = Quantity of med
  ;    ("EPHARM")      = #9002313.56 ien (E-PHARMACY division)
  ;
  ;
- ; IBD("INS",n,1) = insurance array to bill in n order (see SETINSUR^IBNCPDP1 for details)
- ;                  file 355.3 ien (group)^bin^pcn^Payer Sheet B1^group id^
+ ; IBD("INS",n,1) = insurance array to bill in n order
+ ;                  file 355.3 ien (group)^bin^pcn^payer sheet^group id^
  ;                  cardholder id^patient relationship code^
  ;                  cardholder first name^cardholder last name^
- ;                  home plan state^Payer Sheet B2^Payer Sheet B3^
- ;                  Software/Vendor Cert ID ^ Ins Name^Payer Sheet E1^
- ;                  Payer Sheet B1 ien^B2 ien^B3 ien^E1 ien^Pharmacy Person Code
- ;                  
- ;
+ ;                  home plan state ^Payer Sheet B2 ^Payer Sheet B3
+ ;                  Software/Vendor Cert ID ^ Ins Name
  ;    ("INS",n,2) = dispensing fee^basis of cost determination^
  ;                  awp or tort rate or cost^gross amount due^
- ;                  administrative fee^ingredient cost^usual & customary charge
- ;                  (see RATEPRIC^IBNCPDP1 for details)
+ ;                  administrative fee
  ;
  ;   for basis of cost determination the following is used:
  ;      "07" would be sent for Usual & Customary
@@ -46,11 +42,8 @@ RX(DFN,IBD) ; IB Billing Determination
  ;      "05" would be sent for Cost calculations
  ;
  ;    ("INS",n,3) = group name^ins co ph 3^plan ID^
- ;                  insurance type (V=VETERAN, T=TRICARE, C=CHAMPVA)^
- ;                  insurance company (#36) ien^COB field (.2) in 2.312 subfile^
- ;                  2.312 subfile ien (pt. insurance policy ien)^
- ;                  maximum NCPDP transactions (366.03,10.1)
- ;                  (see SETINSUR^IBNCPDP1 for details)
+ ;                  insurance type (V=vet, T=tricare)^
+ ;                  insurance company (#36) ien
  ;
  N IBRES,IBNB
  S IBRES=$$RX^IBNCPDP1(DFN,.IBD)
@@ -67,7 +60,7 @@ STORESP(DFN,IBD) ; this is an API for pharmacy/ecme to use to relay
  ;
  ; IBD("STATUS")       = Bill status (PAID, REJECTED,REVERSED
  ;                        CLOSED,RELEASED,or SUBMITTED)
- ;    ("DOS")          = Date of Service
+ ;    ("FILL DATE")    = Fill Date
  ;    ("PRESCRIPTION") = Prescription IEN from drug file (#52)
  ;    ("FILL NUMBER")  = Fill or refill number
  ;    ("BILLED")       = Amount billed
@@ -81,7 +74,7 @@ STORESP(DFN,IBD) ; this is an API for pharmacy/ecme to use to relay
  ;    ("RX NO")        = RX number from file 52
  ;    ("DRUG")         = IEN of file #50 DRUG
  ;    ("DAYS SUPPLY")  = Days Supply
- ;    ("QTY")          = Quantity Dispensed (should be from the Rx fill or refill 52/52.1)
+ ;    ("QTY")          = Quantity
  ;    ("NDC")          = NDC
  ;    ("CLOSE REASON") = Optional, Pointer to the IB file #356.8
  ;                      "CLAIMS TRACKING NON-BILLABLE REASONS"
@@ -99,18 +92,10 @@ STORESP(DFN,IBD) ; this is an API for pharmacy/ecme to use to relay
  ;    ("AUTH #")       = ECME approval/authorization number
  ;    ("CLAIMID")      = Reference Number to ECME
  ;    ("EPHARM")       = Optional, #9002313.56 ien (E-PHARMACY division)
- ;    ("RTYPE")        = Optional, rate type specified by user during
- ;                       manual ePharmacy processing
- ;    ("PRIMARY BILL") = Optional, if this is to be a secondary bill,
- ;                       this is the primary bill the secondary relates
- ;    ("PRIOR PAYMENT")= Optional, on secondary bills this is the offset
- ;                       to be applied from the primary payment.
- ;    ("RXCOB")        = Optional, COB indicator (secondary = 2)
  ;
  ;
  ; Return is the bill number for success or 1 if not billable.
  ; "0^reason" indicates not success
- ;
  ;
  Q $$ECME^IBNCPDP2(DFN,.IBD)
  ;

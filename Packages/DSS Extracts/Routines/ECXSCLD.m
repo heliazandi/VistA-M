@@ -1,5 +1,5 @@
-ECXSCLD ;BIR/DMA,CML-Enter, Print and Edit Entries in 728.44 ;9/4/12  12:55
- ;;3.0;DSS EXTRACTS;**2,8,24,30,71,80,105,112,120,126,132,136**;Dec 22, 1997;Build 28
+ECXSCLD ;BIR/DMA,CML-Enter, Print and Edit Entries in 728.44 ; 6/16/09 3:50pm
+ ;;3.0;DSS EXTRACTS;**2,8,24,30,71,80,105,112,120**;Dec 22, 1997;Build 43
 EN ;entry point from option
  ;load entries
  W !!,"This option creates local entries in the DSS CLINIC AND STOP CODES"
@@ -127,17 +127,13 @@ PRINT ; print worksheet for updates
  W !!,"This option produces a worksheet of (A) All Clinics, (C) Active, (I) Inactive, "
  W !,"or only the (U) Unreviewed Clinics that are awaiting approval."
  W !!,"Clinics that were defined as ""inactive"" by MAS the last time the option"
- W !,"""Create DSS Clinic Stop Code File"" was run will be indicated with an ""*""."
- W !!,"Choose (X) for exporting the CLINICS AND STOP CODES FILE to a text file for"
- W !,"spreadsheet use.",!
- S DIR(0)="S^A:ALL CLINICS;C:ALL ACTIVE CLINICS;I:ALL INACTIVE CLINICS;U:UNREVIEWED CLINICS;X:EXPORT TO TEXT FILE FOR SPREADSHEET USE",DIR("A")="Enter ""A"", ""C"", ""I"", ""U"", or ""X"""
+ W !,"""Create DSS Clinic Stop Code File"" was run will be indicated with an ""*"".",!
+ S DIR(0)="S^A:ALL CLINICS;C:ALL ACTIVE CLINICS;I:ALL INACTIVE CLINICS;U:UNREVIEWED CLINICS",DIR("A")="Enter ""A"", ""C"", ""I"", or ""U"""
  S DIR("?",1)="Enter: ""C"" to print a worksheet of all active DSS Clinic Stops,"
  S DIR("?",2)="Enter: ""I"" to print a worksheet of all inactive DSS Clinic  Stops,"
  S DIR("?",3)="Enter: ""A"" to print a worksheet of all DSS Clinic  Stops,"
- S DIR("?",4)="Enter: ""U"" to print only the Clinic Stops that have not been approved."
- S DIR("?")="Enter: ""X"" to export CLINICS AND STOP CODES FILE to a text file."
+ S DIR("?")="       ""U"" to print only the Clinic Stops that have not been approved."
  D ^DIR K DIR G ENDX:$D(DIRUT) S ECALL=$E(Y)
- I ECALL="X" D EXPORT^ECXSCLD1 Q
  ;sync #728.44 with #44 before printing 'unreviewed'
  I ECALL="U" D  Q
  .W !!,?5,"Before the UNREVIEWED CLINICS report prints, the Clinics and"
@@ -198,7 +194,7 @@ SHOWEM ; list clinics for worksheet
 SS ;SCROLL STOPS
  N JJ,SS
  W !,LN
- ;W !,"Key: + - new clinic; ! - updated since last review; * - currently inactiv
+ ;W !,"Key: + - new clinic; ! - updated since last review; * - currently inactive"
  I $E(IOST)="C" S SS=21-$Y F JJ=1:1:SS W !
  I $E(IOST)="C",PG>0 S DIR(0)="E" W ! D ^DIR K DIR I 'Y S QFLG=1 Q
  Q
@@ -206,99 +202,61 @@ SS ;SCROLL STOPS
 EDIT ; put in DSS stopcodes and which one to send
  I '$O(^ECX(728.44,0)) W !,"DSS Clinic stop code file does not exist",!! R X:5 K X Q
  W ! K DIC S DIC=728.44,DIC(0)="QEAMZ" D ^DIC G ENDX:Y<0
- S CLIEN1=+Y
- W !!,"EXISTING CLINIC FILE DATA:",?35,"EXISTING DSS CLINIC FILE DATA:"
- W !!,"STOP CODE :       ",$P(Y(0),U,2),?35,"DSS STOP CODE :   ",$P(Y(0),U,4)
- W !,"CREDIT STOP CODE :",$P(Y(0),U,3),?35,"DSS CREDIT STOP CODE :",$P(Y(0),U,5)
- W !
-EDIT1 ;check input & update field #3; allow '@' deletion; allow bypass empty with no entry
- N DIR ;136
+ S CLIEN=+Y
+ W !,"STOP CODE : ",$P(Y(0),U,2),!,"CREDIT STOP CODE : ",$P(Y(0),U,3)
+ ;check input & update field #3; allow '@' deletion; allow bypass empty with no entry
  S OUT=0 F  D  Q:OUT
  .K DIC,DIR,ECXMSG,FDA,AMIS,X,Y
- .S STOP=$P(^ECX(728.44,CLIEN1,0),U,4)
+ .S STOP=$P(^ECX(728.44,CLIEN,0),U,4)
  .S DIR(0)="FO^1:99",DIR("A")="DSS STOP CODE (3-digit code only)" I STOP]"" S DIR("B")=STOP
  .S DIR("?")="^S DIC=40.7,DIC(0)=""EMQZ"" D ^DIC"
  .D ^DIR
  .I X="@" D  Q
- ..S IENS=CLIEN1_",",FDA(728.44,IENS,3)=X D FILE^DIE("","FDA")
+ ..S IENS=CLIEN_",",FDA(728.44,IENS,3)=X D FILE^DIE("","FDA")
  ..S OUT=1 W "   deleted..."
- .I X="" S X=STOP K DIRUT S OUT=2 Q
- .S DIC("A")="DSS STOP CODE (3-digit code only): "
- .S DIC="^DIC(40.7,",DIC(0)="EMQZ"
- .S DIC("S")="I $P(^(0),U,3)=""""" D ^DIC
- .I X="@" D  Q
- ..S IENS=CLIEN1_",",FDA(728.44,IENS,3)=X D FILE^DIE("","FDA")
- ..S OUT=2 W "   deleted..."
- .I X="" K DIRUT S OUT=2 Q
- .I ($G(DIRUT)!$G(DUOUT)!$G(DTOUT)) S OUT=3 Q
+ .I X="" K DIRUT S OUT=1 Q
+ .I ($G(DIRUT)!$G(DUOUT)!$G(DTOUT)) S OUT=1 Q
  .I +X'=X W !,?5,"Invalid... try again." Q
- .I +Y'>0  Q
- .S AMIS=$P(^DIC(40.7,+Y,0),"^",2)
- .S CODE=+Y,ECXMSG=$$ERRCHK(CODE,3,CLIEN1)
+ .S AMIS=X K DIC,Y S DIC=40.7,DIC(0)="MXZ" D ^DIC
+ .I $D(Y(0)) W " ",$P(Y(0),"^")
+ .I Y=-1 W !,?5,"Invalid... try again." Q
+ .S CODE=+Y,ECXMSG=$$ERRCHK(CODE,3,CLIEN)
  .I ECXMSG=-1 W !,?5,"Invalid... try again." Q
  .I $G(ECXMSG)]"" W !,?5,ECXMSG,! Q
- .S IENS=CLIEN1_",",FDA(728.44,IENS,3)=AMIS D FILE^DIE("U","FDA")
+ .S IENS=CLIEN_",",FDA(728.44,IENS,3)=AMIS D FILE^DIE("","FDA")
  .S OUT=1
  I ($G(DIRUT)!$G(DUOUT)!$G(DTOUT)) G ENDX
  ;check input & update field #4; allow '@' deletion; allow bypass empty with no entry
- S OUT=0 F  D  G:OUT=1 ENDCHK
+ S OUT=0 F  D  Q:OUT
  .K DIC,DIR,ECXMSG,FDA,AMIS,X,Y
- .S CSTOP=$P(^ECX(728.44,CLIEN1,0),U,5)
+ .S CSTOP=$P(^ECX(728.44,CLIEN,0),U,5)
  .S DIR(0)="FO^1:99",DIR("A")="DSS CREDIT STOP CODE (3-digit code only)" I CSTOP]"" S DIR("B")=CSTOP
  .S DIR("?")="^S DIC=40.7,DIC(0)=""EMQZ"" D ^DIC"
  .D ^DIR
  .I X="@" D  Q
- ..S IENS=CLIEN1_",",FDA(728.44,IENS,4)=X D FILE^DIE("","FDA")
+ ..S IENS=CLIEN_",",FDA(728.44,IENS,4)=X D FILE^DIE("","FDA")
  ..S OUT=1 W "   deleted..."
- .I X="" S X=CSTOP K DIRUT S OUT=1 Q
- .S DIC("A")="DSS CREDIT STOP CODE (3-digit code only): "
- .S DIC("S")="I $P(^(0),U,3)=""""" D ^DIC
- .S DIC=40.7,DIC(0)="EMQZ" D ^DIC
  .I X="" K DIRUT S OUT=1 Q
  .I ($G(DIRUT)!$G(DUOUT)!$G(DTOUT)) S OUT=1 Q
  .I +X'=X W !,?5,"Invalid... try again." Q
- .I +Y'>0  Q
- .S AMIS=$P(^DIC(40.7,+Y,0),"^",2)
- .S CODE=+Y,ECXMSG=$$ERRCHK(CODE,4,CLIEN1)
+ .S AMIS=X K DIC,Y S DIC=40.7,DIC(0)="MXZ" D ^DIC
+ .I $D(Y(0)) W " ",$P(Y(0),"^")
+ .I Y=-1 W !,?5,"Invalid... try again." Q
+ .S CODE=+Y,ECXMSG=$$ERRCHK(CODE,4,CLIEN)
  .I ECXMSG=-1 W !,?5,"Invalid... try again." Q
  .I $G(ECXMSG)]"" W !,?5,ECXMSG,! Q
- .S IENS=CLIEN1_",",FDA(728.44,IENS,4)=AMIS D FILE^DIE("U","FDA")
+ .S IENS=CLIEN_",",FDA(728.44,IENS,4)=AMIS D FILE^DIE("","FDA")
  .S OUT=1
  I ($G(DIRUT)!$G(DUOUT)!$G(DTOUT)) G ENDX
- K I,WARNING,DIC,DIE,DA,DR,DIR,DIRUT,DTOUT,DUOUT,X,Y,ERRCHK
- K CLIEN1,CODE,ECXMSG,IENS,STOP,CSTOP,AMIS,FDA,OUT,ERR,WRN,ECXERR
- Q
-ENDCHK ;check validity of clinic
- S CODE=$P(^ECX(728.44,CLIEN1,0),U,4)
- K ERR,WRN,ECXERR,WARNING,ERRCHK
- S ERRCHK=0
- D STOP^ECXSTOP(CODE,"DSS Stop Code",CLIEN1) D ERRPRNT
- I $D(ECXERR) S ERRCHK=1
- K ERR,WRN,ECXERR,WARNING
- S CODE=$P(^ECX(728.44,CLIEN1,0),U,5)
- D STOP^ECXSTOP(CODE,"Credit Stop Code",CLIEN1) D ERRPRNT
- I $D(ECXERR) S ERRCHK=1
- W !!,"...Validity Checker Complete."
- I ERRCHK=1 W !!,"...Errors found please fix." G EDIT1
  ;remaining fields
- S DIE=728.44,DA=+CLIEN1
- S DR="5//1;S:X'=4 Y=6;7;6///"_DT_";8;10" D ^DIE ;136
+ S DIE=728.44,DA=+CLIEN
+ S DR="5//1;S:X'=4 Y=6;7;6///"_DT_";8" D ^DIE
  S:$P(^ECX(728.44,DA,0),U,6)'=4 $P(^(0),U,8)="" S $P(^(0),U,7)=""
- Q
-ERRPRNT ;print errors
- I $G(ERR)>0,$D(ECXERR) D
- . W ! S I=0 F  S I=$O(ECXERR(I)) Q:'I  D
- . . W !,"..",ECXERR(I)
- I $G(WRN)>0,$D(WARNING) D
- . W ! S I=0 F  S I=$O(WARNING(I)) Q:'I  D
- . . W !,"..",WARNING(I)
- Q
-KILL ;
- K I,WARNING,DIC,DIE,DA,DR,DIR,DIRUT,DTOUT,DUOUT,X,Y,ERRCHK
- K CLIEN1,CODE,ECXMSG,IENS,STOP,CSTOP,AMIS,FDA,OUT,ERR,WRN,ECXERR
+ K DIC,DIE,DA,DR,DIR,DIRUT,DTOUT,DUOUT,X,Y
+ K CLIEN,CODE,ECXMSG,IENS,STOP,CSTOP,AMIS,FDA,OUT
  G EDIT
  ;
-ERRCHK(CODE,TYPE,CLIEN1) ;check for problems
+ERRCHK(CODE,TYPE,CLIEN) ;check for problems
  ;input
  ;   code: stop code IEN in #40.7
  ;   type: type (3=dss stop code, 4=dss credit stop code)
@@ -308,12 +266,11 @@ ERRCHK(CODE,TYPE,CLIEN1) ;check for problems
  N XCODE,INACT,RTYPE,ERR,WRN
  K ECXERR,WARNING
  S ECXERR="",WARNING="",ERR=0
- Q:'$G(CODE) -1 Q:'$G(CLIEN1) -1
+ Q:'$G(CODE) -1 Q:'$G(CLIEN) -1
  Q:(TYPE="") -1 Q:((TYPE<3)&(TYPE>4)) -1
  S XCODE=$P(^DIC(40.7,CODE,0),"^",2)
  S TYPE=$S(TYPE=3:"DSS Stop Code",1:"DSS Credit Stop Code")
- I TYPE="DSS Stop Code" D STOP^ECXSTOP(XCODE,TYPE,,,CODE)
- I TYPE="DSS Credit Stop Code" D STOP^ECXSTOP(XCODE,TYPE,CLIEN1,,CODE)
+ D STOP^ECXSTOP(XCODE,TYPE,CLIEN)
  I $G(ERR)>0,$D(ECXERR(1)) S ERR=$O(ECXERR(0)),ECXERR=ECXERR(ERR) Q ECXERR
  E  S ECXERR="" Q ECXERR
  Q ECXERR

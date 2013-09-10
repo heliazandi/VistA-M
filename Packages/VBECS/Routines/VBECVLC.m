@@ -1,5 +1,5 @@
 VBECVLC ;HOIFO/BNT-VBECS VistALink Client ;07/27/2002
- ;;1.0;VBECS;**3**;Apr 14, 2005;Build 21
+ ;;1.0;VBECS;;Apr 14, 2005;Build 35
  ;
  ; Note: This routine supports data exchange with an FDA registered
  ; medical device. As such, it may not be changed in any way without
@@ -80,7 +80,7 @@ SYSERR ; -- send system error message
  SET VBECDAT("ERRORS",1,"CODE")=1
  SET VBECDAT("ERRORS",1,"ERROR TYPE")="system"
  SET VBECDAT("ERRORS",1,"CDATA")=1
- SET VBECDAT("ERRORS",1,"MESSAGE")=$P($TEXT(SYSERRS+1),";;",2)_VBECMSG
+ SET VBECDAT("ERRORS",1,"MESSAGE",1)=$P($TEXT(SYSERRS+1),";;",2)_VBECMSG
  DO BUILD(.VBECROOT,.VBECDAT)
  QUIT
  ;
@@ -96,7 +96,7 @@ BUILD(VBECY,VBECDAT) ;  -- store built xml in passed store reference (VBECY)
  ;
  DO ADD($$XMLHDR^XOBVLIB())
  DO ADD("<VistaLink messageType="""_$G(VBECDAT("MESSAGE TYPE"))_""" version=""1.0"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xsi:noNamespaceSchemaLocation=""rpcFault.xsd"" >")
- DO ADD("xmlns=""http://domain.ext/Foundations"">")
+ DO ADD("xmlns=""http://med.va.gov/Foundations"">")
  DO ADD("<Fault>")
  DO ADD("<FaultString>Internal Application Error</FaultString>")
  DO ADD("<FaultActor>VBECS VistaLink Client</FaultActor>")
@@ -122,7 +122,7 @@ ADD(TXT) ; -- add line
 CLIERRS ; -- VistALink client errors
  ;;'Address' parameter not specified.
  ;;'Port' parameter not specified.
- ;;Unable to retrieve patient information at this time, please contact the Blood Bank. [restart VBECS VistALink listener]
+ ;;Not able to open port.
  ;
 SYSERRS ; -- application errors
  ;;A system error occurred in M: "

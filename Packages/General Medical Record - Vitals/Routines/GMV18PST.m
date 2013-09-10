@@ -1,5 +1,5 @@
 GMV18PST ;HOIFO/KAM-POST INSTALLATION FOR GMRV*5*18 ;5/16/06 1:35pm
- ;;5.0;GEN. MED. REC. - VITALS;**18**;Oct 31, 2002;Build 7
+ ;;5.0;GEN. MED. REC. - VITALS;**18**;Oct 31, 2002;Build 8
  ;
  ;
 POST ; New private variables

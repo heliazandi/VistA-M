@@ -1,5 +1,5 @@
-MAGDIR9A ;WOIFO/PMK/RRB - Read a DICOM image file ; 06 Apr 2011 9:29 AM
- ;;3.0;IMAGING;**11,30,51,46,54,53,49,99**;Mar 19, 2002;Build 2057;Apr 19, 2011
+MAGDIR9A ;WOIFO/PMK - Read a DICOM image file ; 10/31/2007 12:28
+ ;;3.0;IMAGING;**11,30,51,46,54**;03-July-2009;;Build 1424
  ;; Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
@@ -35,7 +35,7 @@ GROUP() ; entry point from ^MAGDIR81
  N ERRCODE ;- error trap code
  N GROUP ;--- array to pass group data to ^MAGGTIA
  N GROUPDFN ; DFN value from image group entry for double checking
- N P ;------- scratch variable (pointer to ACQUISITION DEVICE file)
+ N P ;-------- scratch variable (pointer to ACQUISITION DEVICE file)
  N RACNE ;--- external "3rd level" subscript in ^RADPT
  N RACNI ;--- internal "3rd level" subscript in ^RADPT
  N RADFN ;--- radiology package's DFN
@@ -44,7 +44,6 @@ GROUP() ; entry point from ^MAGDIR81
  N RARPT ;--- 1st level node in ^RARPT for report (ie, the ien)
  N RARPT3 ;-- 3rd level node for 2005 multiple under ^RARPT's report
  N RARPTDFN ; DFN value from ^RARPT for double checking
- N RETURN ;-- variable returned by ^MAGGTIA
  N SOPCLASP ; pointer to SOP Class file (#2006.532)
  N HIT,ISPECIDX,X,Y ; scratch variables
  ;
@@ -59,9 +58,9 @@ GROUP() ; entry point from ^MAGDIR81
  . S ERRCODE=-301
  . Q
  ;
- S RADTE=9999999.9999-RADTI ; 9's complement conversion
+ S RADTE=$TR(RADATA("RADPT2"),"0123456789","9876543210")
  S RACNI=RADATA("RADPT3")
- S RACNE=$P(CASENUMB,"-",$L(CASENUMB,"-")) ; short case #
+ S RACNE=$S(CASENUMB["-":$P(CASENUMB,"-",2),1:CASENUMB) ; short case #
  ;
  ; check for the existence of the entry in ^RADPT (redundant)
  I '$D(^RADPT(RADFN,"DT",RADTI,0)) D  Q ERRCODE ; can't process further
@@ -74,26 +73,22 @@ GROUP() ; entry point from ^MAGDIR81
  ; check for the existence of the report pointer
  S RARPT=$P($G(^RADPT(RADFN,"DT",RADTI,"P",RACNI,0)),"^",17)
  ; if the report does not yet exist, create it
- ; 
- I RARPT="" D  Q:ERRCODE ERRCODE ; can't process further
- . N RACN,RATIMEOUT
- . S RATIMEOUT=1
+ D:RARPT=""
+ . N RACN
  . S RACN=RACNE D CREATE^RARIC ; create the report
- . ;
- . I RARPT="-1^radiology exam locked" S ERRCODE="-399^"_$P(RARPT,"^",2) Q
- . ;
- . ; If RARPT is no longer defined at this point, this means
- . ; that we're dealing with an old study, and the report has
- . ; been archived and purged.
- . ;
- . I '$G(RARPT) D  Q
- . . K MSG
- . . S MSG(1)="IMAGE GROUP CREATION ERROR:"
- . . S MSG(2)="Radiology Report has been archived and purged."
- . . S MSG(3)="Patient "_$G(RADFN)_", 9's Complement Date "_$G(RADTI)_", Case "_$G(RACNI)
- . . D ERROR^MAGDIRVE($T(+0),"DICOM IMAGE PROCESSING ERROR",.MSG)
- . . S ERRCODE=-303
- . . Q
+ . Q
+ ;
+ ; If RARPT is no longer defined at this point, this means
+ ; that we're dealing with an old study, and the report has
+ ; been archived and purged.
+ ;
+ I '$G(RARPT) D  Q ERRCODE
+ . K MSG
+ . S MSG(1)="IMAGE GROUP CREATION ERROR:"
+ . S MSG(2)="Radiology Report has been archived and purged."
+ . S MSG(3)="Patient "_$G(RADFN)_", Date "_$G(RADTI)_", Case "_$G(RACNI)
+ . D ERROR^MAGDIRVE($T(+0),"DICOM IMAGE PROCESSING ERROR",.MSG)
+ . S ERRCODE=-303
  . Q
  ;
  ; double check the DFN value from ^RARPT to make sure its right
@@ -133,8 +128,6 @@ GROUP() ; entry point from ^MAGDIR81
  . . S ERRCODE=-305
  . . Q
  . E  I $P($G(^MAG(2005,MAGGP,0)),"^",6)=11 D
- . . ; create a new group if this is for a different Study Instance UID
- . . I STUDYUID'=$P($G(^MAG(2005,MAGGP,"PACS")),"^",1) Q
  . . ; check to see that this group is for the same SOP Class
  . . S P=$P($G(^MAG(2005,MAGGP,"SOP")),"^",1)
  . . S HIT=$$EQUIVGRP^MAGDFCNV(P,SOPCLASP) ; equivalent groups?
@@ -152,10 +145,7 @@ GROUP() ; entry point from ^MAGDIR81
  . D NEWGROUP(PROCEDUR,RADRPT,RADPTR) Q:ERRCODE
  . ;
  . ; store the cross-reference for the report
- . D PTR^RARIC Q:Y>0
- . I Y="-1^radiology report locked" S ERRCODE="-399^"_$P(Y,"^",2)
- . E  I Y=0 S ERRCODE=-311
- . E  S ERRCODE=-312
+ . D PTR^RARIC
  . Q
  ;
  I 'MAGGP D  Q ERRCODE ; fatal error
@@ -191,7 +181,6 @@ NEWGROUP(PROCEDUR,RADRPT,RADPTR) ; create an imaging group (called by ^MAGDIR9E)
  S I=I+1,GROUP(I)="42^"_FILEDATA("TYPE")
  S I=I+1,GROUP(I)="43^"_FILEDATA("PROC/EVENT")
  S I=I+1,GROUP(I)="44^"_FILEDATA("SPEC/SUBSPEC")
- S I=I+1,GROUP(I)="45^"_ORIGINDX
  S I=I+1,GROUP(I)="107^"_FILEDATA("ACQUISITION DEVICE")
  S I=I+1,GROUP(I)="110^"_STAMP
  S I=I+1,GROUP(I)="251^"_FILEDATA("SOP CLASS POINTER")

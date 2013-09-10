@@ -1,5 +1,5 @@
-LEXU ;ISL/KER - Miscellaneous Lexicon Utilities ; 25 Aug 2011  10:41 AM
- ;;2.0;LEXICON UTILITY;**2,6,9,15,25,36,73,51**;Sep 23, 1996;Build 77
+LEXU ; ISA/FJF-Miscellaneous Lexicon Utilities; 06/23/2005
+ ;;2.0;LEXICON UTILITY;**2,6,9,15,25,36**;Sep 23, 1996
  ;
  ; External References
  ;   DBIA 10103  $$DT^XLFDT
@@ -37,7 +37,7 @@ SO(LEX,LEXS,LEXVDT) ; Filter by Source
  . . F  S LEXCREC=$O(^LEX(757.02,"AMC",LEXMC,LEXCREC)) Q:+LEXCREC=0!(LEXFND)  D
  . . . S LEXN0=$G(^LEX(757.02,LEXCREC,0))
  . . . S LEXSAB=+($P(LEXN0,U,3)),LEXSO=$P(LEXN0,U,2)
- . . . S LEXSTA=$$STATCHK^LEXSRC2(LEXSO,$G(LEXVDT),,LEXSAB) Q:+LEXSTA'>0  Q:$P(LEXSTA,U,2)'=LEXCREC
+ . . . S LEXSTA=$$STATCHK^LEXSRC2(LEXSO,$G(LEXVDT)) Q:+LEXSTA'>0
  . . . Q:'$D(^LEX(757.03,LEXSAB,0))
  . . . S LEXSAB=$E(^LEX(757.03,LEXSAB,0),1,3)
  . . . I LEXSAB=LEXCODE S LEXFND=1
@@ -70,7 +70,8 @@ ICDONE(LEX,LEXVDT) ; Return one ICD code for an expression
  ;    LEXVDT   Date to use for screening by codes
  N LEXICD
  S LEXVDT=$S(+$G(LEXVDT)>0:LEXVDT,1:$$DT^XLFDT)
- S LEX=$$ONE^LEXSRC(LEX,"ICD",LEXVDT) Q:LEX="" ""
+ S LEX=$$ONE^LEXSRC(LEX,"ICD",LEXVDT)
+ Q:LEX="" ""
  S LEXICD=$$ICDDX^ICDCODE(LEX,LEXVDT)
  Q:$P(LEXICD,"^",2)="INVALID CODE" ""
  Q LEX
@@ -118,6 +119,6 @@ DSMONE(LEX) ; Return one DSM code for an expression
  ; If not DSM-IV, then check for DSM-III
  S LEX=$$ONE^LEXSRC(LEX,"DS3") Q LEX
 ADR(LEX) ; Mailing Address
- N DIC,DTOUT,DUOUT,X,Y S DIC="^DIC(4.2,",DIC(0)="M",(LEX,X)="FO-SLC.DOMAIN.EXT" D ^DIC Q:+Y>0 LEX
- S DIC="^DIC(4.2,",DIC(0)="M",(LEX,X)="ISC-SLC.DOMAIN.EXT" D ^DIC Q:+Y>0 LEX
- Q "ISC-SLC.domain.ext"
+ N DIC,DTOUT,DUOUT,X,Y S DIC="^DIC(4.2,",DIC(0)="M",(LEX,X)="FO-SLC.MED.VA.GOV" D ^DIC Q:+Y>0 LEX
+ S DIC="^DIC(4.2,",DIC(0)="M",(LEX,X)="ISC-SLC.MED.VA.GOV" D ^DIC Q:+Y>0 LEX
+ Q "ISC-SLC.VA.GOV"

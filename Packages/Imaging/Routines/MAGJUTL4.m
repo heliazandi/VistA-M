@@ -1,6 +1,6 @@
-MAGJUTL4 ;WIRMFO/JHC - VistARad subroutines for RPC calls ; 9 Sep 2011  4:05 PM
- ;;3.0;IMAGING;**18,76,101,90,120**;Mar 19, 2002;Build 27;May 23, 2012
- ;; Per VHA Directive 2004-038, this routine should not be modified.
+MAGJUTL4 ;WIRMFO/JHC VistARad subroutines for RPC calls ; 18 Jun 2009 3:30 PM
+ ;;3.0;IMAGING;**18,76,101**;Nov 06, 2009;Build 50
+ ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
  ;; | No permission to copy or redistribute this software is given. |
@@ -8,6 +8,7 @@ MAGJUTL4 ;WIRMFO/JHC - VistARad subroutines for RPC calls ; 9 Sep 2011  4:05 PM
  ;; | to execute a written test agreement with the VistA Imaging    |
  ;; | Development Office of the Department of Veterans Affairs,     |
  ;; | telephone (301) 734-0100.                                     |
+ ;; |                                                               |
  ;; | The Food and Drug Administration classifies this software as  |
  ;; | a medical device.  As such, it may not be changed in any way. |
  ;; | Modifications to this software may result in an adulterated   |
@@ -139,22 +140,20 @@ MDLLST(CPTIEN,DLM) ; return DLM-delimited list of modality values for this CPT
  ;
 DATADUMP(MAGGRY,DATA) ;
  ;
- ; Initialize. <*> Do NOT change name of EP
- ;   Also called as subroutine from INCPT^MAGJMN3
- ;   
- N $ETRAP,$ESTACK S $ETRAP="G ERR1^MAGJUTL4"
- N CT,CPT,CPTFILIEN,CPTNAM,DIQUIET,IMGIEN,INVALID,PARAM1,PARAM2,REQUEST
+ ; Initialize. <*> Do NOT change name of EP.
+ N $ETRAP,$ESTACK S $ETRAP="G ERR3^MAGJUTL4"
+ N CT,DIQUIET,IMGIEN,INVALID,PARAM1,PARAM2,REQUEST
  S DIQUIET=1 D DT^DICRW
  K MAGGRY S MAGGRY=$NA(^TMP($J,"MAGJDATA")) K @MAGGRY
  ;
  ; Validate input.
- S INVALID=$$DDMPVLD8()
+ S INVALID=0 D DDMPVLD8
  ;
  ; Process then Exit, REPLYing with data or error code.
  I 'INVALID D
  . D DDMPROCS S REPLY=CT_U_"1~ "_CT_" lines of text returned for "_DATA
- . M @MAGGRY=XMM K XMM
  E  S REPLY="0^Invalid image data request: "_""""_DATA_""""_" (ck"_INVALID_")."
+ M @MAGGRY=XMM K XMM
  S @MAGGRY@(0)=REPLY
  Q
  ;
@@ -178,44 +177,44 @@ DDMPROCS ;
  S REPLY="0^Retrieving imaging internal data ..."
  ;
  ; Process. CPT request via MAG RAD CPT MATCHING File (#2006.67).
- I REQUEST="CPT" D DDMPRCPT(CPTFILIEN)
+ I REQUEST="CPT" D DDMPRCPT(PARAM1)
  I REQUEST="FLDS" D GETS^MAGGTSYS(.M,IMGIEN,PARAM1) M MM(3)=@M K M
  I REQUEST="GLB" D MAG^MAGGTSY2(.M,IMGIEN) M MM(4)=@M K M
  ;
- ; Re-subscript array MM into XMM to simplify MERGE to broker output global.
- S CT=0,MMX=$NA(MM(0))
- F  S MMX=$Q(@MMX) Q:MMX=""  S CT=CT+1,XMM(CT)=@MMX
- K MM,MMX
+ ; Re-subscript array MM to simplify MERGE to broker output global.
+ S CT=0,MMX=$NA(MM(.999)) F  S MMX=$Q(@MMX) Q:MMX=""  D  S CT=CT+1
+ . S MXX="XMM("_$QS(MMX,1)_"."_(1000+$QS(MMX,2))_")" S @MXX=@MMX
+ K MM,MMX,MXX
  Q
  ;
- ;+++++ Process a CPT request. Called by DDMPROCS
+ ;+++++ Process a CPT request. Called by DDMPROCS.
  ;
  ; Calls CPT^ICPTCOD for CPT Description.
  ;
-DDMPRCPT(CPTFILIEN) ; 
+DDMPRCPT(CPT) ;
  ;
  ; Initialize.
- N FN,FN1,NDX,NOD,SS,X
+ N FN,FN1,NDX,NOD,SS
  ;
  ; Set section headers.
- S MM(.1)="Input CPT Code ........... "_CPT_"  ("_CPTNAM_")"
+ S MM(.1)="Input CPT Code ........... "_CPT_"  ("_$P($$CPT^ICPTCOD(CPT),U,3)_")."
  S MM(.2)="          Body Part(s) ... "
  S MM(.3)="          Modality(s) .... "
  ;
  ; Set primary CPT bodyPart & modality.
- S FN=2006.67,FN1=2006.671,NDX=$O(^MAG(FN,"B",CPTFILIEN,""))
+ S FN=2006.67,FN1=2006.671,NDX=$O(^MAG(FN,"B",CPT,""))
  S NOD=$NA(^MAG(FN,NDX,0)) F  S NOD=$Q(@NOD) Q:$QS(NOD,2)>NDX  I $QS(NOD,4)="B" D
  . I $QS(NOD,3)=1 S MM(.2)=MM(.2)_$G(^MAG(FN1,$QS(NOD,5),0))_"; "
  . I $QS(NOD,3)=2 S MM(.3)=MM(.3)_$P($G(^RAMIS(73.1,$QS(NOD,5),0)),U)_"; "
  . Q
  ;
  ; Strip dangling concatenators.
- F SS=.2,.3 S MM(SS)=$$ZRUPUNCT(MM(SS),"; ","")
+ F SS=.2,.3 S MM(SS)=$$ZRUPUNCT(MM(SS),"; ",".")
  ;
  ; Fetch CPTs matching on CPT.
  D CPTGRP(.M,CPT_"^1") M MM(1)=@M K M
  S MM(1,0)=$P(MM(1,0),"~ ",2)
- S MM(1,0)=$J(+$P(MM(1,0)," "),3)_" matching CPT(s) via Similar CPT:"
+ S MM(1,0)=$J(+$P(MM(1,0)," "),3)_" matching CPT(s) via similar CPT:"
  ;
  ; Fetch CPTs matching on BodyPart & Modality.
  D CPTGRP(.M,CPT_"^3") M MM(2)=@M K M
@@ -228,33 +227,29 @@ DDMPRCPT(CPTFILIEN) ;
  ;
  ;+++++ Validate. Called by DATADUMP.
  ;
-DDMPVLD8() ;
+DDMPVLD8 ;
  ;
  ; ... DATA string format or exit invalid (code 1).
- Q:'$D(DATA) 1
- Q:DATA="" 1
- Q:DATA'["^"!(DATA'["|") 1
+ Q:'$D(DATA) INVALID=1
+ Q:DATA="" INVALID=1
+ Q:DATA'["^"!(DATA'["|") INVALID=1
  ;
  ; Initialize.
- N GO,RACNI,RADFN,RADTI,RARPT S REPLY="0^Validating input parameters ..."
+ N RACNI,RADFN,RADTI,RARPT S REPLY="0^Validating input parameters ..."
  S REQUEST=$P(DATA,U),PARAM1=$P($P(DATA,U,2),"|"),PARAM2=$P(DATA,"|",2)
  ;
  ; ... DATA string's REQUEST piece or exit (invalid: code 2).
- Q:"^CPT^FLDS^GLB^"'[(U_REQUEST_U) 2
+ Q:"^CPT^FLDS^GLB^"'[(U_REQUEST_U) INVALID=2
  ;
  ; ... PARAM1 if REQUEST="CPT" or exit (invalid: code 3).
- I REQUEST="CPT" D  I 'GO Q 3
- . S GO=PARAM1]"" Q:'GO
- . S X=$$CPT^ICPTCOD(PARAM1),CPTFILIEN=$P(X,U),CPT=$P(X,U,2),CPTNAM=$P(X,U,3)
- . I CPTFILIEN,$D(^MAG(2006.67,"B",CPTFILIEN))
- . E  S GO=0
+ Q:REQUEST="CPT"&('$D(^MAG(2006.67,"B",+PARAM1))) INVALID=3
  ;
  ; ... PARAM1 if REQUEST="FLDS" or re-set to null. External call will set defaults.
  ; .......... only validate format of FileMan flags.
  I REQUEST="FLDS"&(PARAM1'?1U.U) S PARAM1=""
  ; 
  ; ... PARAM2 if REQUEST=("FLDS" or "GLB") or exit (invalid: code 4).
- I REQUEST="FLDS"!(REQUEST="GLB") S IMGIEN="" D  Q:IMGIEN="" 4
+ I REQUEST="FLDS"!(REQUEST="GLB") S IMGIEN="" D  I IMGIEN="" S INVALID=4
  . ;
  . ; Case 1: PARAM2 holds IMGIEN.
  . I PARAM2?1N.N,$D(^MAG(2005,PARAM2)) S IMGIEN=PARAM2 Q
@@ -268,7 +263,7 @@ DDMPVLD8() ;
  . I RADFN,RADTI,RACNI D
  . . S RARPT=$P(^RADPT(RADFN,"DT",RADTI,"P",RACNI,0),U,17)
  . . I RARPT'="",$D(^RARPT(RARPT,2005,"B"))>1 S IMGIEN=$O(^RARPT(RARPT,2005,"B",""))
- Q 0
+ Q
  ;
  ;***** Check Exam Status.
  ; RPC: MAGJ RADSTATUSCHECK

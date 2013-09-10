@@ -28,7 +28,7 @@ PARAM ; set up parameter file; all settings off initially
  .S $P(^AWC(177100.12,DA,0),U)=AWCDIV
  .S DR="1///0;1.2///0;1.5////"_AWCMSTA_";2///0;3///0;5////cprsmonitor"_AWCMSTA
  .S DR=DR_";6///8;7///30;8///192,0,0;9///0,192,0;10///0,0,192;11///1;12///230,230,230"
- .S DR=DR_";13///7;20///vaftp.domain.ext;21////itmuser;22////Padfoot1;23///0;24///1"
+ .S DR=DR_";13///7;20///vaftp.va.gov;21////itmuser;22////Padfoot1;23///0;24///1"
  .D ^DIE
  . ;now re-index .01 field because it changed (DIK executes KILL and then SET)
  .S DIK="^AWC(177100.12,",DA=1,DIK(1)=".01" D EN^DIK
@@ -36,7 +36,7 @@ PARAM ; set up parameter file; all settings off initially
  I '$D(^AWC(177100.12,1,0)) DO
  .S X=AWCDIV,DIC("DR")="1///0;1.2///0;2///0;3///0;5///cprsmonitor"_AWCMSTA
  .S DIC("DR")=DIC("DR")_";6///8;7///30;8///192,0,0;9///0,192,0;10///0,0,192;11///YES;12///230,230,230"
- .S DIC("DR")=DIC("DR")_";13///7;20///vaftp.domain.ext;21///itmuser;22///Padfoot1;23///0;24///1"
+ .S DIC("DR")=DIC("DR")_";13///7;20///vaftp.va.gov;21///itmuser;22///Padfoot1;23///0;24///1"
  .S (DIC,DIE)="^AWC(177100.12,",DIC(0)="EQLM" K DO,DD D FILE^DICN
  ;
 EXIT K AWCDIV,AWCDA,AWCDNAME,AWCMSTA,DO,DD,DIC,DIE,DR,%DT,AWCPGDT,X,Y

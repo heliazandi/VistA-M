@@ -1,5 +1,5 @@
-PXRM ;SLC/PKR - Clinical Reminders entry points. ;04/26/2011
- ;;2.0;CLINICAL REMINDERS;**4,11,12,16,18**;Feb 04, 2005;Build 152
+PXRM ; SLC/PKR - Clinical Reminders entry points. ; 09/01/2009
+ ;;2.0;CLINICAL REMINDERS;**4,11,12**;Feb 04, 2005;Build 73
  ;Entry points in this routine are listed in DBIA #2182.
  ;==========================================================
 MAIN(DFN,PXRMITEM,OUTTYPE,DISC) ;Main driver for clinical reminders.
@@ -15,7 +15,6 @@ MAIN(DFN,PXRMITEM,OUTTYPE,DISC) ;Main driver for clinical reminders.
  ;        10 - MyHealtheVet summary
  ;        11 - MyHealtheVet detailed
  ;        12 - MyHealtheVet combined
- ;        55 - Order check
  ;        DISC - (optional) if this is true then the disclaimer will
  ;             be loaded in ^TMP("PXRM",$J,"DISC").
  ;
@@ -36,14 +35,13 @@ MAIN(DFN,PXRMITEM,OUTTYPE,DISC) ;Main driver for clinical reminders.
  ;        two ^TMP arrays as it chooses. The caller should also make
  ;        sure the ^TMP globals are killed before it exits.
  ;
- N DEFARR,EVALDT,FIEVAL
+ N DEFARR,FIEVAL
  ;Load the definition into DEFARR.
  D DEF^PXRMLDR(PXRMITEM,.DEFARR)
  ;
  I $G(NODISC)="" S NODISC=1
  I $D(GMFLAG) S NODISC=0
- S EVALDT=$$NOW^XLFDT
- D EVAL(DFN,.DEFARR,OUTTYPE,NODISC,.FIEVAL,EVALDT)
+ D EVAL(DFN,.DEFARR,OUTTYPE,NODISC,.FIEVAL)
  Q
  ;
  ;==========================================================
@@ -53,13 +51,13 @@ EVAL(DFN,DEFARR,OUTTYPE,NODISC,FIEVAL,DATE) ;Reminder evaluation entry
  ;PXRM namespaced variables are the reminder evaluation "global"
  ;variables. If date is specified then the reminder will be evaluated
  ;as if the current date is DATE.
- N PXRMAGE,PXRMDATE,PXRMDOB,PXRMDOD,PXRMLAD,PXRMPDEM,PXRMPID
- N PXRMITEM,PXRMRM,PXRMRNAM,PXRMSEX,PXRMXTLK
+ N PXRMAGE,PXRMDATE,PXRMDOB,PXRMDOD,PXRMLAD,PXRMPDEM,PXRMPID,PXRMITEM
+ N PXRMRM,PXRMRNAM,PXRMSEX,PXRMXTLK
  ;Make sure the reminder exists.
  I $D(DEFARR("DNE")) D NODEF^PXRMERRH(DEFARR("IEN")) Q
  ;PXRMRM is the right margin for output.
- S PXRMRM=80
- S PXRMDATE=+$G(DATE)
+ S PXRMRM=72
+ S PXRMDATE=$G(DATE)
  S PXRMITEM=DEFARR("IEN")
  S PXRMPID="PXRM"_PXRMITEM_$H
  N D00

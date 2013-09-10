@@ -1,5 +1,5 @@
-ECXASUR ;ALB/JAP - SUR Extract Audit Report ; 4/26/02 11:16am
- ;;3.0;DSS EXTRACTS;**8,33,44,123**;Dec 22, 1997;Build 8
+ECXASUR ;ALB/JAP - SUR Extract Audit Report ;Oct 22, 1997
+ ;;3.0;DSS EXTRACTS;**8**;Dec 22, 1997
  ;
 EN ;entry point for SUR extract audit report
  ;select extract
@@ -47,7 +47,7 @@ EN ;entry point for SUR extract audit report
  Q
  ;
 PROCESS ;process data in file #727.811
- N X,Y,JJ,DIV,IEN,DATA,DATE,CASE,CASES,OR,LOC,PROC,PROCN,PSI,CAN,CPT,DIC,QQFLG,CNT
+ N X,Y,JJ,DIV,IEN,DATA,DATE,CASE,CASES,OR,LOC,PROC,PROCN,PSI,CPT,DIC,QQFLG,CNT
  K ^TMP($J,"ECXAUD"),^TMP($J,"ECXS")
  S (CNT,QQFLG)=0
  S ECXEXT=ECXARRAY("EXTRACT"),ECXDEF=ECXARRAY("DEF")
@@ -56,24 +56,19 @@ PROCESS ;process data in file #727.811
  D NOW^%DTC S Y=$E(%,1,12) D DD^%DT S ECXRUN=Y
  ;get records within date range and surgery site(s)
  S IEN="" F  S IEN=$O(^ECX(727.811,"AC",ECXEXT,IEN)) Q:IEN=""  D  Q:QQFLG
- .S DATA=^ECX(727.811,IEN,0),DATA1=^(1),DATE=$P(DATA,U,9)
- .S DIV=$P(DATA,U,4)
+ .S DATA=^ECX(727.811,IEN,0),DATE=$P(DATA,U,9),DIV=$P(DATA,U,4)
  .;convert free text date to fm internal format date
  .S $E(DATE,1,2)=$E(DATE,1,2)-17
  .Q:$L(DATE)<7  Q:(DATE<ECXSTART)  Q:(DATE>ECXEND)
  .Q:'$D(ECXDIV(DIV))
- .Q:$P(DATA,U,17)="I"
- .S CASE=$P(DATA,U,10),OR=$P(DATA,U,12),PSI=$P(DATA,U,17)
- .S CAN=$P(DATA,U,28)
- .S PROC=$E($P(DATA1,U,11),1,5)
+ .S CASE=$P(DATA,U,10),OR=$P(DATA,U,12),PSI=$P(DATA,U,17),PROC=$P(DATA,U,18)
  .Q:(PROC="")&(PSI="I")
  .S (CPT,PROCN)="" I PROC]"" D
  ..;from cpt code get procedure name; variable cpt should be same as variable proc
- ..S Y=$$CPT^ICPTCOD(PROC,DATE)
- ..S CPT=$P($G(Y),U,2),PROCN=$P($G(Y),U,3)
+ ..K Y S DIC="^ICPT(",DIC(0)="XZ",X=PROC D ^DIC
+ ..S CPT=$P($G(Y(0)),U,1),PROCN=$P($G(Y(0)),U,2)
  .S:CPT="" CPT="Unknown" S:PROCN="" PROCN="Unknown" S CPT="A"_CPT
  .S LOC=$S(OR="":2,1:1)
- .I CAN'="" S LOC=3
  .;tally procedures by location and division
  .I '$D(^TMP($J,"ECXAUD",DIV,LOC,CPT)) S ^TMP($J,"ECXAUD",DIV,LOC,CPT)=0_U_PROCN
  .S $P(^(CPT),U,1)=$P(^TMP($J,"ECXAUD",DIV,LOC,CPT),U,1)+1,CNT=CNT+1
@@ -81,7 +76,7 @@ PROCESS ;process data in file #727.811
  .I '$D(^TMP($J,"ECXS",DIV,LOC,CASE)) S ^TMP($J,"ECXS",DIV,LOC,CASE)=""
  ;total cases for each division and location
  I $D(ZTQUEUED),$$S^%ZTLOAD S ZTSTOP=1 K ZTREQ Q
- S DIV="" F  S DIV=$O(^TMP($J,"ECXS",DIV)) Q:DIV=""  F LOC=1:1:3 S CASES(DIV,LOC)=0,CASE="" D
+ S DIV="" F  S DIV=$O(^TMP($J,"ECXS",DIV)) Q:DIV=""  F LOC=1:1:2 S CASES(DIV,LOC)=0,CASE="" D
  .F  S CASE=$O(^TMP($J,"ECXS",DIV,LOC,CASE)) Q:CASE=""  S CASES(DIV,LOC)=CASES(DIV,LOC)+1
  K ^TMP($J,"ECXS")
  ;print the report
@@ -94,9 +89,9 @@ PRINT ;print the SUR audit report by location and division
  U IO
  I $D(ZTQUEUED),$$S^%ZTLOAD S ZTSTOP=1 K ZTREQ Q
  S (QFLG,PG)=0,$P(LN,"-",80)="",DIV=""
- F  S DIV=$O(ECXDIV(DIV)) Q:DIV=""  F LOC=1:1:3 D  Q:QFLG
- .S DIVNM=$P(ECXDIV(DIV),U,2)_" ("_DIV_")",GTOT(LOC)=0
- .S LOCNM=$S(LOC=1:"O.R. Surgical Procedures",LOC=2:"Non-O.R. Surgical Procedures",1:"Cancelled/Aborted Procedures")
+ F  S DIV=$O(ECXDIV(DIV)) Q:DIV=""  F LOC=1:1:2 D  Q:QFLG
+ .S DIVNM=$P(ECXDIV(DIV),U,2)_" ("_DIV_")",GTOT(1)=0,GTOT(2)=0
+ .S LOCNM=$S(LOC=1:"O.R. Surgical Procedures",1:"Non-O.R. Surgical Procedures")
  .D HEADER
  .I '$D(^TMP($J,"ECXAUD",DIV,LOC)) D
  ..W !!,?3,"No data available for "_LOCNM_".",!!

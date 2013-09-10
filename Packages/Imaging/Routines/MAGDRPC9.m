@@ -1,5 +1,5 @@
-MAGDRPC9 ;WOIFO/EdM/JSL/SAF - Imaging RPCs ; 11 Feb 2008 12:36 PM
- ;;3.0;IMAGING;**50,54,53,49,123**;Mar 19, 2002;Build 67;Jul 24, 2012
+MAGDRPC9 ;WOIFO/EdM - Imaging RPCs ; 11/30/2007 13:20
+ ;;3.0;IMAGING;**50,54**;03-July-2009;;Build 1424
  ;; Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
@@ -111,7 +111,7 @@ NXTPTRPT(OUT,DFN,RARPT1,DIR) ; RPC = MAG RAD GET NEXT RPT BY PT
  Q
  ;
 GETICN(OUT,DFN) ; RPC = MAG DICOM GET ICN
- S OUT=$S($T(GETICN^MPIF001)'="":$$GETICN^MPIF001(DFN),1:"-1^NO MPI") ;P123
+ S OUT=$$GETICN^MPIF001(DFN)
  Q
  ;
 CLEAN ; Overflow from MAGDRPC4
@@ -140,7 +140,7 @@ CLEAN ; Overflow from MAGDRPC4
  ;
 IENLOOK ; Overflow from MAGDRPC4
  ; lookup image by the IEN
- N ACNUMB,D0,DFN,GROUPIEN,MODIFIER,P,PROCNAME,STUDYDAT,X,Y
+ N D0,GROUPIEN,P,X
  S NUMBER=+$P(NUMBER,"`",2)
  ; patient safety checks
  D CHK^MAGGSQI(.X,NUMBER) I +$G(X(0))'=1 D  Q
@@ -159,37 +159,18 @@ IENLOOK ; Overflow from MAGDRPC4
  S OUT(2)=P_"^"_D0_"^"_NUMBER_"^" ; result w/o Accession Number
  I 'P!'D0 S OUT(1)="-6,Warning - Parent file entry is not present - no Accession Number."
  E  I P=74 D
- . N DATETIME,I,INFO,PROC,RADPT0,RADPT1,RADPT2,RADPT3,RARPT0
- . S X=$$ACCRPT^RAAPI(D0,.INFO)
- . I X<0 S OUT(1)="-11,Radiology Problem: "_X Q
- . S ACNUMB=INFO(1)
- . S RARPT0=$G(^RARPT(D0,0)) ; IA # 1171
- . S RADPT1=$P(RARPT0,"^",2),DATETIME=$P(RARPT0,"^",3)
- . S RADPT2=9999999.9999-DATETIME,RADPT3=1
- . S RADPT0=$G(^RADPT(RADPT1,"DT",RADPT2,"P",RADPT3,0))
- . S PROCNAME=$$GET1^DIQ(71,$P(RADPT0,"^",2),.01)
- . S STUDYDAT=17000000+(DATETIME\1)
- . S MODIFIER=""
- . S I=0 F  S I=$O(^RADPT(RADPT1,"DT",RADPT2,"P",RADPT3,"M",I)) Q:'I  D
- . . S X=^RADPT(RADPT1,"DT",RADPT2,"P",RADPT3,"M",I,0)
- . . S:I>1 MODIFIER=MODIFIER_", " S MODIFIER=MODIFIER_$$GET1^DIQ(71.2,X,.01)
- . . Q
- . S X=P_"^"_D0_"^"_NUMBER_"^"_ACNUMB_"^"_STUDYDAT_"^"_PROCNAME_"^"_MODIFIER
+ . S X=P_"^"_D0_"^"_NUMBER_"^"_$P($G(^RARPT(D0,0)),"^",1) ; IA # 1171
  . S OUT(1)=1,OUT(2)=X
  . Q
  E  I P=8925 D
- . N GMRCIEN
  . ; get pointer from TIU to consult request
  . S X=$$GET1^DIQ(8925,D0,1405,"I") ; IA ???
  . I $P(X,";",2)="GMR(123," D
- . . S GMRCIEN=$P(X,";"),ACNUMB="GMRC-"_GMRCIEN
- . . S STUDYDAT=17000000+($$GET1^DIQ(123,GMRCIEN,.01,"I")\1)
- . . S PROCNAME=$$GET1^DIQ(123,GMRCIEN,1) ; TO SERVICE
- . . S MODIFIER=$$GET1^DIQ(123,GMRCIEN,4) ; PROCEDURE
- . . S X=P_"^"_D0_"^"_NUMBER_"^"_ACNUMB_"^"_STUDYDAT_"^"_PROCNAME_"^"_MODIFIER
+ . . S X=P_"^"_D0_"^"_NUMBER_"^GMRC-"_$P(X,";")
  . . S OUT(1)=1,OUT(2)=X
  . . Q
  . E  S OUT(1)="-8,Problem with parent file "_P_", internal entry number "_D0_" - no Accession Number."
  . Q
  E  S OUT(1)="-7,Parent file "_P_" not yet supported - no Accession Number."
  Q
+ ;

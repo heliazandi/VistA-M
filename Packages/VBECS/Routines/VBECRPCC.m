@@ -41,7 +41,7 @@ REQUEST(VBECPRMS) ; -- build xml request
  ;
  DO ADD($$XMLHDR^XOBVLIB())
  DO ADD("<VistaLink messageType="""_$G(VBECPRMS("MESSAGE TYPE"))_""" mode="""_$G(VBECPRMS("MODE"))_""" version=""1.0"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xsi:noNamespaceSchemaLocation=""rpcRequest.xsd"" ")
- DO ADD("xmlns=""http://domain.ext/Foundations"">")
+ DO ADD("xmlns=""http://med.va.gov/Foundations"">")
  DO ADD("<RpcHandler version=""1.0"" />")
  DO ADD("<Request rpcName="""_$G(VBECPRMS("RPC NAME"))_""" version=""1.0"" rpcClientTimeOut=""900"" >")
  DO ADD("<RpcContext><![CDATA["_$G(VBECPRMS("RPC CONTEXT"))_"]]></RpcContext>")
@@ -135,7 +135,7 @@ ERR(ERRTXT) ; Set VBECPRMS("ERROR") node with error text and quit
  ; [ Parameter Array Format -->> passed to REQUEST^VBECRPCC(.VBECPRMS) ] 
  ; 
  ; -- general information
- ; VBECPRMS("ADDRESS")="127.0.0.1"
+ ; VBECPRMS("ADDRESS")="10.3.21.12"
  ; VBECPRMS("PORT")=19811
  ; VBECPRMS("RPC NAME")="VBECS Order Entry"
  ; VBECPRMS("RPC CONTEXT")="VBECS VISTALINK CONTEXT"
@@ -161,7 +161,7 @@ ERR(ERRTXT) ; Set VBECPRMS("ERROR") node with error text and quit
  ; <VistaLink type="gov.va.med.foundations.rpc.request" mode="singleton" 
  ;   version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  ;   xsi:noNamespaceSchemaLocation="rpcRequest.xsd"
- ;   xmlns="http://domain.ext/Foundations">
+ ;   xmlns="http://med.va.gov/Foundations">
  ;   <RpcHandler version="1.0" />
  ;   <Request rpcName="VBECS Order Entry" version="1.0"
  ;     rpcClientTimeOut="900">

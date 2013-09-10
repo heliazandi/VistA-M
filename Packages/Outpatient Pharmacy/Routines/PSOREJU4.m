@@ -1,5 +1,5 @@
 PSOREJU4 ;BIRM/LE - Pharmacy Reject Overrides ;06/26/08
- ;;7.0;OUTPATIENT PHARMACY;**289,290,358,359,385**;DEC 1997;Build 27
+ ;;7.0;OUTPATIENT PHARMACY;**289**;DEC 1997;Build 107
  ;Reference to DUR1^BPSNCPD3 supported by IA 4560
  ;
 AUTOREJ(CODES,PSODIV) ;API to evaluate an array of reject codes to see if they are allowed to be passed to OP reject Worklist 
@@ -7,7 +7,7 @@ AUTOREJ(CODES,PSODIV) ;API to evaluate an array of reject codes to see if they a
  ;           PSODIV - optional; Division for the Rx and Fill to be evaluated
  ;        
  ;Output:     CODES(0)=   1 for all reject codes are allowed to be passed to Pharmacy
- ;                         Reject Worklist or 0 (zero) means only default of 79/88/TRICARE/CHAMPVA and
+ ;                         Reject Worklist or 0 (zero) means only default of 79/88/Tricare and
  ;                         any individually override rejects can be passed to the worklist. 
  ;                        
  ;            CODES(SEQ,REJECT)= 0 (zero) if the fill is not allowed to be passed to the Pharmacy
@@ -29,33 +29,22 @@ AUTOREJ(CODES,PSODIV) ;API to evaluate an array of reject codes to see if they a
  . E  S CODES(SEQ,COD)=0
  Q
  ;
-WRKLST(RX,RFL,COMMTXT,USERID,DTTIME,OPECC,RXCOB,RESP) ;External API to store reject codes other that 79/88/TRICARE/CHAMPVA on the OP Reject Worklist
+WRKLST(RX,RFL,COMMTXT,USERID,DTTIME,OPECC) ;External API to store reject codes other that 79/88/Tricare on the OP Reject Worklist
  ; 
- N REJ,REJS,REJLST,I,IDX,CODE,DATA,TXT,PSOTRIC,SPDVI,PSODIV,REJCD,CLOSECHK
+ N REJ,REJS,REJLST,I,IDX,CODE,DATA,TXT,PSOTRIC,SPDVI,PSODIV
  S PSODIV=$$RXSITE^PSOBPSUT(RX,RFL)
  L +^PSRX("REJ",RX):15 Q:'$T "0^Rx locked by another user."
- I $G(RFL)="" S RFL=$$LSTRFL^PSOBPSU1(RX)
- D DUR1^BPSNCPD3(RX,RFL,.REJ,"",RXCOB)
- ;cnf, PSO*7*358, add TRICARE logic
- S REJCD="",CLOSECHK=0
- I $L($G(RESP)) D
- .I $P(RESP,"^",3)'="T",$P(RESP,"^",3)'="C" Q       ;ignore if not TRICARE or CHAMPVA
- .I 'RESP Q   ;Piece 1 will be 0 if claim was submitted thru ECME
- .S REJCD="e"_$P(RESP,"^",3) ; either eT for TRICARE or eC for CHAMPVA
- .S REJ(1,"REJ CODE LST")=REJCD
- .S REJ(1,"PAYER MESSAGE",1)="Not ECME Billable: "_$P(RESP,U,2)
- .S REJ(1,"ELIGBLT")=$P(RESP,"^",3)
- .S CLOSECHK=1
- S PSOTRIC="",PSOTRIC=$$TRIC^PSOREJP1(RX,RFL,PSOTRIC)
+ I '$D(RFL) S RFL=$$LSTRFL^PSOBPSU1(RX)
+ D DUR1^BPSNCPD3(RX,RFL,.REJ)
+ S PSOTRIC="" S:$G(REJ(1,"ELIGBLT"))="T" PSOTRIC=1
+ S:PSOTRIC="" PSOTRIC=$$TRIC^PSOREJP1(RX,RFL,PSOTRIC)
  K REJS S (AUTO,IDX)=""
  F  S IDX=$O(REJ(IDX)) Q:IDX=""  D  Q:AUTO'=""
  . S TXT=REJ(IDX,"REJ CODE LST")
  . F I=1:1:$L(TXT,",") D
  . . S CODE=$P(TXT,",",I)
- . . I CODE="" Q   ;BNT-2/15/11 Rare, but could happen that a code is null.
  . . I CODE'="79"&(CODE'="88")&('$G(PSOTRIC)) S AUTO=$$EVAL(PSODIV,CODE,OPECC,.AUTO) Q:'+AUTO
- . . I PSOTRIC S AUTO=1  ;cnf, send all billable and non-billable rejects to worklist if TRICARE or CHAMPVA
- . . I $$DUP^PSOREJU1(RX,+$$CLEAN^PSOREJU1($G(REJ(IDX,"RESPONSE IEN"))),CLOSECHK) S AUTO="0^Rx is already on Pharmacy Reject Worklist."
+ . . I $$DUP^PSOREJU1(RX,+$$CLEAN^PSOREJU1($G(REJ(IDX,"RESPONSE IEN")))) S AUTO="0^Rx is already on Pharmacy Reject Worklist."
  . . S REJS(IDX,CODE)=""
  I '$D(REJS) L -^PSRX("REJ",RX) S AUTO="0^No action taken" Q AUTO
  ;D SAVECOM^PSOREJP3(RX,PSREJIEN,COMMTXT,DTTIME,USER)
@@ -67,7 +56,7 @@ EXIT ;
  L -^PSRX("REJ",RX)
  Q AUTO
  ;
-EVAL(PSODIV,CODE,OPECC,AUTO) ;Evaluates whether the reject codes other than 79/88/TRICARE/CHAMPVA is allowed to be passed to OP Reject Worklist
+EVAL(PSODIV,CODE,OPECC,AUTO) ;Evaluates whether the reject codes other than 79/88/Tricare is allowed to be passed to OP Reject Worklist
  ;Input:      PSODIV - required; Division for the Rx and Fill to be evaluated
  ;              CODE - required; reject code
  ;             OPECC - optional, 1 means manually passed by OPECC means not passed
@@ -120,19 +109,14 @@ OVRMSG(RX,RFL,OVRMSG,REJDAT) ;
  . D SAVECOM^PSOREJP3(RX,COD,OVRMSG,REJDAT,$S($G(DUZ):DUZ,1:.5))
  Q
  ;
-INLIST(RX,RFL,RXCOB) ;Returns whether a prescription/fill contains UNRESOLVED rejects
+INLIST(RX,RFL) ;Returns whether a prescription/fill contains UNRESOLVED rejects
  ;Input:
  ;RX - Prescription IEN. 
  ;FILL - Fill number being processed. 
  ;Output:
  ;0 - the fill is not on the Pharmacy Reject Worklist
  ;1 - the fill is already on the Pharmacy Reject Worklist
- N PSOX,PSOX1,PSOX2,REJDATA1
- S PSOX=$$FIND^PSOREJUT(RX,RFL,.REJDATA1,"") I PSOX=0  Q 0
- S RXCOB=$S(RXCOB=1:"PRIMARY",RXCOB=2:"SECONDARY")
- S PSOX1="" F  S PSOX1=$O(REJDATA1(PSOX1))  Q:PSOX1=""  I REJDATA1(PSOX1,"COB")=RXCOB  S PSOX2=1  Q
- I '$G(PSOX2) Q 0
- Q 1
+ Q $$FIND^PSOREJUT(RX,RFL)
  ;
 MULTI(RX,RFL,REJDATA,CODE,REJS) ;due to routine size, called from FIND^PSOREJUT
  ;returns REJS = 1 means reject code found on Rx, 0 (zero) means not found

@@ -1,5 +1,5 @@
-IVMLDEM7 ;ALB/KCL,LBD - IVM DEMOGRAPHIC UPLOAD - DELETE ADDRESS ; 3/11/12 2:39pm
- ;;2.0;INCOME VERIFICATION MATCH;**10,79,152**; 21-OCT-94;Build 4
+IVMLDEM7 ;ALB/KCL - IVM DEMOGRAPHIC UPLOAD - DELETE ADDRESS ; 5/28/03 3:55pm
+ ;;2.0;INCOME VERIFICATION MATCH;**10,79**; 21-OCT-94
  ;;Per VHA Directive 10-93-142, this routine should not be modified.
  ;
  ;
@@ -22,7 +22,7 @@ ADDR(DFN,IVMDA2,IVMDA1,IVMDA,IVMPPICK) ; - function to check if the delete field
  ;                      0 if field is not an address field
  ;
  ;
- N IVMFLAG,IVMI,IVMJ,IVMNODE,IVMPTR,Y,IVMFNAM
+ N IVMFLAG,IVMI,IVMJ,IVMNODE,IVMPTR,Y
  ;
  ; - initialize flag
  S IVMFLAG=0
@@ -42,9 +42,7 @@ ASK I '$D(^IVM(301.92,"AD",+IVMPTR)) G ADDRQ
  S DIR("?")="Enter 'YES' to continue or 'NO' to abort."
  S DIR(0)="Y",DIR("B")="NO"
  D ^DIR K DIR
- S IVMFLAG=1
- I 'Y,IVMPPICK=1 G ADDRQ    ;only address selected so quit
- I 'Y S IVMPPICK=2 G ASK1   ;check if phone should be deleted
+ S IVMFLAG=1 G ADDRQ:'Y
  W ! S DIR("A")="Are you sure that you want to delete the complete address"
  S DIR("A",1)="If you delete this address, then the previously filed address"
  S DIR("A",2)="will be transmitted to HEC and all sites visited by this patient."
@@ -52,19 +50,16 @@ ASK I '$D(^IVM(301.92,"AD",+IVMPTR)) G ADDRQ
  S DIR("?")="HEC.  Enter 'NO' to quit."
  S DIR(0)="Y",DIR("B")="NO"
  D ^DIR K DIR
- S IVMFLAG=1
- I 'Y,IVMPPICK=1 G ADDRQ    ;only address selected so quit
- I 'Y S IVMPPICK=2 G ASK1   ;check if phone # should be deleted
+ S IVMFLAG=1 G ADDRQ:'Y
  ;
  ; file new Address Change Date/Time
  N FDA,ERRMSG
  S FDA(2,DFN_",",.118)=$$FMTE^XLFDT($$NOW^XLFDT)
  D FILE^DIE("E","FDA","ERRMSG")
  ;
- I IVMPPICK=3 G ASK1   ;check if phone # should be deleted
+ W !,"Deleting address fields... "
  ;
 LOOP ; - loop thru fields in ^IVM(301.92,"AD" x-ref
- I IVMPPICK'=2 W !,"Deleting address fields... "
  S IVMI=0 F  S IVMI=$O(^IVM(301.92,"AD",IVMI)) Q:IVMI']""  D
  .S IVMJ=0 F  S IVMJ=$O(^IVM(301.5,IVMDA2,"IN",IVMDA1,"DEM","B",IVMI,IVMJ)) Q:IVMJ']""  D
  ..;
@@ -72,11 +67,10 @@ LOOP ; - loop thru fields in ^IVM(301.92,"AD" x-ref
  ..S IVMNODE=$G(^IVM(301.5,IVMDA2,"IN",IVMDA1,"DEM",IVMJ,0)) Q:IVMNODE']""
  ..Q:'(+IVMNODE)!($P(IVMNODE,"^",2)']"")
  ..;
- ..S IVMFNAM=$P($G(^IVM(301.92,+IVMNODE,0)),U) Q:IVMFNAM=""
  ..; - check if residence phone number and not selected to delete
- ..I IVMPPICK=1&(IVMFNAM="PHONE NUMBER [RESIDENCE]"!(IVMFNAM["RESIDENCE NUMBER CHANGE")) Q
+ ..Q:(IVMPPICK=1&(+IVMNODE=$O(^IVM(301.92,"B","PHONE NUMBER [RESIDENCE]",0))))
  ..; - check if not residence phone number and only phone selected to delete
- ..I IVMPPICK=2&(IVMFNAM'="PHONE NUMBER [RESIDENCE]"&(IVMFNAM'["RESIDENCE NUMBER CHANGE")) Q
+ ..Q:(IVMPPICK=2&(+IVMNODE'=$O(^IVM(301.92,"B","PHONE NUMBER [RESIDENCE]",0))))
  ..;
  ..; - remove entry from (#301.511) sub-file
  ..D DELENT^IVMLDEMU(IVMDA2,IVMDA1,IVMJ)
@@ -96,9 +90,6 @@ ASK1 ; - phone selected to be deleted - address fields not selected
  S DIR("?",2)="received from HEC.  Enter 'NO' to quit."
  S DIR(0)="Y",DIR("B")="YES"
  D ^DIR K DIR
- S IVMFLAG=1
- I 'Y,IVMPPICK=2 G ADDRQ   ;no phone or address deletions, just quit
- I 'Y S IVMPPICK=1 G LOOP  ;address still needs to be deleted
- ;
+ S IVMFLAG=1 G ADDRQ:'Y
  W !,"Deleting PHONE NUMBER [RESIDENCE] field from the list... "
  G LOOP

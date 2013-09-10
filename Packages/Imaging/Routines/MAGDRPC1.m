@@ -1,5 +1,5 @@
-MAGDRPC1 ;WOIFO/EdM,JSL - Imaging RPCs ; 27 Jul 2010 6:50 AM
- ;;3.0;IMAGING;**11,30,51,50,54,49,122**;Mar 19, 2002;Build 92;Aug 02, 2012
+MAGDRPC1 ;WOIFO/EdM - Imaging RPCs ; 11/09/2007 07:19
+ ;;3.0;IMAGING;**11,30,51,50,54**;03-July-2009;;Build 1424
  ;; Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
@@ -39,12 +39,8 @@ DOMAIN(OUT) ; RPC = MAG DICOM GET DOMAIN
  I $T(WHERE^XUPARAM)'="" S OUT=$$KSP^XUPARAM("WHERE") Q
  ; The coding standards frown upon the line below,
  ; but it is the best we can do when the line above cannot be used.
- S X=^DD("SITE") S:X'[".DOMAIN.EXT" X=X_".DOMAIN.EXT"
+ S X=^DD("SITE") S:X'[".VA.GOV" X=X_".VA.GOV"
  S OUT=X
- Q
- ;
-AGENCY(OUT) ; RPC = MAG DICOM GET AGENCY
- S OUT=$G(DUZ("AG")) ;P123
  Q
  ;
 INFO(OUT,LOCATION) ; RPC = MAG DICOM ET PHONE HOME
@@ -186,13 +182,11 @@ PAT(OUT,DFN) ; RPC = MAG DICOM GET PATIENT
  K OUT
  I '$G(DFN) S OUT(1)="-1,No Patient Identified" Q
  S N=1,DIQUIET=1
- D DEM^VADPT,VA("DEM","VADM","") D VA("ID","VA","")
+ D DEM^VADPT,VA("DEM","VADM","")
  D ADD^VADPT,VA("ADD","VAPA","")
  D INP^VADPT,VA("INP","VAIN","")
  D SDA^VADPT,VA("SDA","VASD","")
- I $T(GETICN^MPIF001)'="" S X=$$GETICN^MPIF001(DFN) S:X'<0 N=N+1,OUT(N)="ICN^1^"_X
- S N=N+1,OUT(N)="Site-DFN^1^"_$P($$SITE^VASITE(),"^",3)_"-"_DFN
- ;S N=N+1,OUT(N)="Site-DFN^1^"_$E($P($$NS^XUAF4($$KSP^XUPARAM("INST")),U,2),1,3)_"-"_DFN
+ S X=$$GETICN^MPIF001(DFN) S:X'<0 N=N+1,OUT(N)="ICN^1^"_X
  S OUT(1)=N-1
  Q
  ;

@@ -1,10 +1,7 @@
 RMPR9DO ;HOIFO/HNC -  ORDER CONROL PROCESSING-REMOTE PROCEDURE ;9/8/03  07:12
- ;;3.0;PROSTHETICS;**59,77,90,60,135,163**;Feb 09, 1996;Build 9
+ ;;3.0;PROSTHETICS;**59,77,90,60,135**;Feb 09, 1996;Build 12
  ;
  ;8/5/03 Make sure no dups, HNC patch 77
- ;
- ;Patch RMPR*3.0*163 check all three $O for x-ref 'L', 'L1' and 'CD' to
- ;insure the linked master record has a node 0 defined.
  ;
 A1(START,STOP,SITE,SORT,DATE,WHAT) ;entry point for rollup
  ;activated from (option name)
@@ -80,7 +77,6 @@ ALL ;all open pending records regardless of date passed
  . .I SORT'["P"&(RMPRST="P") Q
  . .S RMPRA=0
  . .F  S RMPRA=$O(^RMPR(668,"L1",RMPRI,RMPRST,RMPRA)) Q:RMPRA'>0  D
- . . .Q:'$D(^RMPR(668,RMPRA,0))    ;;Patch RMPR*3.0*163 check
  . . .S STN=$P(^RMPR(668,RMPRA,0),U,7)
  . . .I SITE'="ALL"&(SITE'=STN) Q
  . . .S STNX=$$STATN^RMPRUTIL(STN)
@@ -109,7 +105,6 @@ DTFWD ;from date passed forward
  .. .I SORT'["C"&(RMPRST="C") Q
  .. .S RMPRA=0
  .. .F  S RMPRA=$O(^RMPR(668,"L",RMPRI,RMPRDTM,RMPRST,RMPRA)) Q:RMPRA'>0  D
- .. . .Q:'$D(^RMPR(668,RMPRA,0))      ;;;;Patch RMPR*3.0*163 check
  .. . .Q:RMPRA=""
  .. . .S STN=$P(^RMPR(668,RMPRA,0),U,7)
  .. . .I SITE'="ALL"&(SITE'=STN) Q
@@ -129,7 +124,6 @@ DTFWD ;from date passed forward
  . .Q:RMPRDYS'>5
  . .S RMPRA=0
  . .F  S RMPRA=$O(^RMPR(668,"CD",RMPRDTC,RMPRDYS,RMPRA)) Q:RMPRA'>0  D
- . . .Q:'$D(^RMPR(668,RMPRA,0))     ;;Patch RMPR*3.0*163 check
  . . .;check site
  . . .S STN=$P(^RMPR(668,RMPRA,0),U,7)
  . . .I SITE'="ALL"&(SITE'=STN) Q
@@ -245,7 +239,7 @@ EXIT ;common exit point
  Q
 MAIL ;send to PCM full dataset
  S XMY("G.RMPR SERVER")=""
- S XMY("G.PROSTHETICS@PSAS.DOMAIN.EXT")=""
+ S XMY("G.PROSTHETICS@PSAS.MED.VA.GOV")=""
  S XMDUZ=.5
  S XMSUB="Full DOR From Station: "_STNX
  N LASTIEN
@@ -264,7 +258,7 @@ MAIL ;send to PCM full dataset
 MAILG ;Mail message to local staff
  S XMDUZ=.5
  S XMY("G.RMPR SERVER")=""
- S XMY("VHACOPSASPIPReport@DOMAIN.EXT")=""
+ S XMY("VHACOPSASPIPReport@MED.VA.GOV")=""
  S XMSUB="DOR From Station: "_STNX
  S RMPRMSG(1)="The Automated Delayed Order Report has transmitted to Prosthetics HQ."
  S RMPRMSG(2)="This was activated by "_$P(XMFROM,"@",1)

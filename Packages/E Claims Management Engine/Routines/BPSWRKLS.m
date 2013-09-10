@@ -1,5 +1,5 @@
 BPSWRKLS ;ALB/SS - SEND CLAIMS TO PHARMACY WORKLIST ;12/26/07
- ;;1.0;E CLAIMS MGMT ENGINE;**7,8,11**;JUN 2004;Build 27
+ ;;1.0;E CLAIMS MGMT ENGINE;**7**;JUN 2004;Build 46
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;
  ; -- main entry point for BPS PRTCL USRSCR PHARM WRKLST protocol (ECME User Screen option)
@@ -31,7 +31,7 @@ EN ;
  E  S BPCOMZ="Sent to Pharmacy Worklist"
  W !!,"Eligible claim(s) will be sent to the Pharmacy Worklist...",!
  S BPQ=$$YESNO^BPSSCRRS("Are you sure?(Y/N)")
- I BPQ<1 D QUIT() Q
+ I BPQ=0 D QUIT() Q
  ;send to Pharmacy
  S BP59=0,BPUPD=0
  F  S BP59=$O(BP59SENT(BP59)) Q:+BP59=0  S BPUPD=$$TOPHARM(BP59,BPCOMZ,.BPSARR59)
@@ -51,7 +51,7 @@ TOPHARM(BP59,BPCOMM,BPSARR59) ;
  S BPRXIEN=+BPX
  S BPRXFIL=$P(BPX,U,2)
  ;use Pharmacy API to send the claim and the comment IA #5063
- S BPRET=$$WRKLST^PSOREJU4(BPRXIEN,BPRXFIL,BPCOMM,DUZ,DT,1,$$COB59^BPSUTIL2(BP59))
+ S BPRET=$$WRKLST^PSOREJU4(BPRXIEN,BPRXFIL,BPCOMM,DUZ,DT,1)
  W !,$G(@VALMAR@(+$G(BPSARR59(BP59)),0))
  I +BPRET=2 W !,"was ALREADY sent to the Pharmacy Work List." Q 0
  I +BPRET=0 W !,"cannot be sent: ",$P(BPRET,U,2) Q 0
@@ -146,7 +146,7 @@ INWRKLST(BP59) ;
  S BPRXIEN=+BPX
  S BPRXFIL=$P(BPX,U,2)
  ;IA #5063
- Q $$INLIST^PSOREJU4(BPRXIEN,BPRXFIL,$$COB59^BPSUTIL2(BP59))
+ Q $$INLIST^PSOREJU4(BPRXIEN,BPRXFIL)
  ;
  ;Converts external values of the BPS NCPDP REJECT CODES file #9002313.93
  ;stored in the local array BPSARRJ1 to IENs and save them in the local 
@@ -158,22 +158,4 @@ CONVERT(BPSARRJ1,BPSARRJ2) ;
  . S BPREJ2=+$O(^BPSF(9002313.93,"B",BPREJ1,0))
  . I BPREJ2>0 S BPSARRJ2(1,BPREJ2)=""
  Q
- ;send the rejected claims with 79 and 88 codes to Pharmacy Worklist 
- ;Input: 
- ; BPRXI - RX ien
- ; BPRXR - refill
- ; BPIEN59 - ien of BPS TRANSACTION file
- ; BPPAYSEQ - payer sequence
- ;Returns: 
- ; 1 sent succesfully
- ; 2 was ALREADY sent to the Pharmacy Work List
- ; 0 cannot be sent
-SENDREJ(BPRXI,BPRXR,BPIEN59,BPPAYSEQ) ;
- N BPZ,BPALLREJ,BPREJ,BPRET
- S BPRET=0
- D DUR1^BPSNCPD3(BPRXI,BPRXR,.BPREJ,"",BPPAYSEQ)
- S BPZ=","_BPREJ(BPPAYSEQ,"REJ CODE LST")_","
- I BPZ[",79,"!(BPZ[",88,") S BPRET=$$WRKLST^PSOREJU4(BPRXI,BPRXR,"Sent by ECME engine",DUZ,DT,1,BPPAYSEQ)
- Q +BPRET
- ;
  ;BPSWRKLS

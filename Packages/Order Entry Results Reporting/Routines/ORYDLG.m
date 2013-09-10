@@ -1,5 +1,5 @@
-ORYDLG ;SLC/MKB -- Postinit bulletin for order dialogs ;05/01/09  12:16
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**141,165,216,243,280**;Dec 17, 1997;Build 85
+ORYDLG ;SLC/MKB -- Postinit bulletin for order dialogs ;7/28/04  08:18
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**141,165,216,243**;Dec 17, 1997;Build 242
  ;
 EN(PATCH,ORDLG,USERS) ; -- look for local copies of ORDLG(NAME) by package,
  ;    send list in bulletin to DUZ, POSTMASTER, USERS(DUZ) when done

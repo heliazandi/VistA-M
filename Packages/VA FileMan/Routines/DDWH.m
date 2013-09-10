@@ -1,5 +1,5 @@
 DDWH ;SFISC/MKO-SCREEN EDITOR HELP ;08:38 AM  23 Nov 1994
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
+ ;;22.0;VA FileMan;;Mar 30, 1999
  ;Per VHA Directive 10-93-142, this routine should not be modified.
 HLP ;
  N DX,DY,DDWI

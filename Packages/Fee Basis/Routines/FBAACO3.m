@@ -1,5 +1,5 @@
 FBAACO3 ;AISC/GRR-ENTER PAYMENT CONTINUED ;7/7/2003
- ;;3.5;FEE BASIS;**4,38,55,61,116,122,133,108,124**;JAN 30, 1995;Build 20
+ ;;3.5;FEE BASIS;**4,38,55,61**;JAN 30, 1995
  ;;Per VHA Directive 10-93-142, this routine should not be modified.
 DOEDIT ;
  N FB1725,FBFPPSC
@@ -12,7 +12,6 @@ DOEDIT ;
  ; set FB1725 true (1) if payment is for a Mill Bill claim
  S FB1725=$S($P(Y(0),U,13)["FB583":+$P($G(^FB583(+$P(Y(0),U,13),0)),U,28),1:0)
  S FBAAMM1=$P($G(^FBAAC(DFN,1,FBV,1,FBSDI,1,FBAACPI,2)),U,2)
- S FBCNTRP=$P($G(^FBAAC(DFN,1,FBV,1,FBSDI,1,FBAACPI,3)),U,8)
  S FBFSAMT(0)=$P($G(^FBAAC(DFN,1,FBV,1,FBSDI,1,FBAACPI,2)),U,12)
  ; determine lesser of original fee schedule amount and amount claimed
  S FBAMTPD(0)=$S(FBFSAMT(0)="":J(0),FBFSAMT(0)>J(0):J(0),1:FBFSAMT(0))
@@ -42,16 +41,13 @@ DOEDIT ;
  ; now edit remaining fields
  D SETO K DR
  S DR="48;47;S FBUNITS=X;42R;S FBZIP=X;S:$$ANES^FBAAFS($$CPT^FBAAUTL4(FBAACP)) Y=""@2"";43///@;S FBTIME=X;S Y=""@3"";@2;43R;S FBTIME=X;@3"
- ; fb*3.5*116 remove edit of interest indicator (162.03,34) to prevent different interest indicator values at line item level; interest indicator set at invoice level only
- S DR(1,162.03,1)="S FBAAMM=$S(FBAAPTC=""R"":"""",1:1);D PPT^FBAACO1(FBAAMM1,FBCNTRP,1);34///@;34////^S X=FBAAMM1;54///@;54////^S X=FBCNTRP;30R;S FBHCFA(30)=X;1;S J=X;Q"
- ;S DR(1,162.03,1)="30R;S FBHCFA(30)=X;1;S J=X;Q"
+ S DR(1,162.03,1)="S FBAAMM=$S(FBAAPTC=""R"":"""",1:1);D PPT^FBAACO1(FBAAMM1);34///@;34////^S X=FBAAMM1;30R;S FBHCFA(30)=X;1;S J=X;Q"
  S DR(1,162.03,2)="D FEEDT^FBAACO3;44///@;44///^S X=FBFSAMT;45///@;45///^S X=FBFSUSD;S:FBAMTPD'>0!(FBAMTPD=FBAMTPD(0)) Y=""@4"";2///^S X=FBAMTPD;@4;2//^S X=FBAMTPD;D CHKIT^FBAACO3;S K=X"
  ;S DR(1,162.03,3)="3//^S X=$S(J-K:J-K,1:"""");4;S:X'=4 Y=6;22;6////^S X=DUZ;13;33"
  S DR(1,162.03,3)="K FBADJD;M FBADJD=FBADJ;S FBX=$$ADJ^FBUTL2(J-K,.FBADJ,2,,.FBADJD,1)"
- S DR(1,162.03,4)="S:FBFPPSC="""" Y=13;W !,""FPPS CLAIM ID: ""_FBFPPSC;S FBX=$$FPPSL^FBUTL5(FBFPPSL,,1);51///^S X=FBX;S FBFPPSL=X;@13;13;I $$BADDATE^FBAACO3(FBAADT,X) S Y=""@13"";33"
+ S DR(1,162.03,4)="S:FBFPPSC="""" Y=13;W !,""FPPS CLAIM ID: ""_FBFPPSC;S FBX=$$FPPSL^FBUTL5(FBFPPSL,,1);51///^S X=FBX;S FBFPPSL=X;13;33"
  S DR(1,162.03,5)="S:$$EXTPV^FBAAUTL5(FBPOV)=""01"" Y=""@1"";S Y=$S('$D(FB7078):28,FB7078]"""":31,1:28);@5;28R;S:$$INPICD9^FBCSV1(X,"""",$G(FBAADT)) Y=""@5"";31;32R;S Y=""@7"";@1;28;I X]"""" S:$$INPICD9^FBCSV1(X,"""",$G(FBAADT)) Y=""@1"";31"
  S DR(1,162.03,6)="@7;K FBRRMKD;M FBRRMKD=FBRRMK;S FBX=$$RR^FBUTL4(.FBRRMK,2,,.FBRRMKD)"
- S DR(1,162.03,7)="73;74;75;58;59;60;61;62;63;64;65;66;67;76;77;78;79;68;69"
  S DIE="^FBAAC("_DFN_",1,"_FBV_",1,"_FBSDI_",1,",DIE("NO^")="",FBOT=1
  D LOCK^FBUCUTL("^FBAAC("_DFN_",1,"_FBV_",1,"_FBSDI_",1,",FBAACPI) I 'FBLOCK S FBAAOUT=1 Q
  D ^DIE
@@ -63,19 +59,9 @@ DOEDIT ;
  Q:$D(FBDL)
  I $G(FBAAIN) S FBINTOT=0 D CALC
  Q
- ;
-BADDATE(FBDOS,INVRCVDT) ;Reject entry if InvRcvDt is Prior to the Date of Service on the Invoice
- I INVRCVDT<FBDOS D  Q 1 ;Reject entry
- .N SHOWDOS  S SHOWDOS=$E(FBDOS,4,5)_"/"_$E(FBDOS,6,7)_"/"_$E(FBDOS,2,3) ;Convert FBDOS into display format for error message
- .W *7,!!?5,"*** Invoice Received Date cannot be prior to the",!?8," Date of Service ("_SHOWDOS_") !!!"
- Q 0 ;Accept entry
- ;
 SETO S FY=$E(FBAADT,1,3)+1700+$S($E(FBAADT,4,5)>9:1,1:0)
  Q
-OUT ;
- ; FB*3.5*116 count line items that have 0.00 amount paid
- ;I K>0 S Z1=$P(^FBAA(161.7,FBAABE,0),"^",11)+1,$P(^(0),"^",11)=Z1,FBINTOT=FBINTOT+K
- S Z1=$P(^FBAA(161.7,FBAABE,0),"^",11)+1,$P(^(0),"^",11)=Z1,FBINTOT=FBINTOT+K
+OUT I K>0 S Z1=$P(^FBAA(161.7,FBAABE,0),"^",11)+1,$P(^(0),"^",11)=Z1,FBINTOT=FBINTOT+K
  Q
 CKMAX S (FBAOT,A)=0,O="" F Z=S-.1:0 S Z=$O(^FBAAC(DFN,"AB",Z)) Q:Z'>0!(Z>R)  F Q=0:0 S Q=$O(^FBAAC(DFN,"AB",Z,Q)) Q:Q'>0  S W=$O(^FBAAC(DFN,"AB",Z,Q,0)) I $D(^FBAAC(DFN,1,Q,1,W,0)) D SMORE
  I A>$P(FBSITE(1),"^",9) G NO

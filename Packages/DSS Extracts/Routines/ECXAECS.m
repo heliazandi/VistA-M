@@ -1,5 +1,5 @@
 ECXAECS ;ALB/JAP - ECS Extract Audit Report ;Oct 15, 1997
- ;;3.0;DSS EXTRACTS;**8,33,123**;Dec 22, 1997;Build 8
+ ;;3.0;DSS EXTRACTS;**8**;Dec 22, 1997
  ;
 EN ;entry point for ECS extract audit report
  N %X,%Y,X,Y,DIC,DA,DR,DIQ,DIR,CNT
@@ -65,12 +65,13 @@ PROCESS ;process data in file #727.815
  ..S UNIT=$P(DATA,U,10),UNITN=$P($G(^ECD(UNIT,0)),U,1),UNIT(UNITN)=UNIT
  ..;if no category, then cat=0
  ..S CAT=+$P(DATA,U,11),CATN="" S:+CAT CATN=$P($G(^EC(726,CAT,0)),U,1) S:CATN="" CATN="Unknown"
- ..S VOL=$P(DATA,U,13) S:VOL="" VOL=1 S PROC=$E($P(DATA,U,12),1,5)
+ ..S VOL=$P(DATA,U,13) S:VOL="" VOL=1 S PROC=$P(DATA,U,12)
  ..I '$D(^TMP($J,"ECXAUD",DIV,UNITN,CATN,PROC)) S ^TMP($J,"ECXAUD",DIV,UNITN,CATN,PROC)=0
  ..S ^(PROC)=^TMP($J,"ECXAUD",DIV,UNITN,CATN,PROC)+VOL,CNT=CNT+1
  ..I $D(ZTQUEUED),(CNT>499),'(CNT#500),$$S^%ZTLOAD S QQFLG=1,ZTSTOP=1 K ZTREQ Q
  ..;get the procedure name and setup in global array
- ..S PIEN=0,PROCN="" S:PROC'?5N PIEN=$O(^EC(725,"E",PROC,""))
+ ..S PIEN=0,PROCN=""
+ ..I $L(PROC)=6 S P=$E(PROC,1,5),PIEN=$O(^EC(725,"E",P,""))
  ..;procedures from file #725
  ..I +PIEN>0 D
  ...S PROCN=$P($G(^EC(725,PIEN,0)),U,1)
@@ -79,7 +80,7 @@ PROCESS ;process data in file #727.815
  ...I PRSYN]"" S PROCN=PRSYN
  ..;procedures from file #81
  ..I PIEN=0,PROCN="" D
- ...S PIEN=$$CODEN^ICPTCOD(PROC) I +PIEN>0 S PROCN=$P($$CPT^ICPTCOD(PROC,DATE),U,3)
+ ...S PIEN=$O(^ICPT("B",PROC,"")) I +PIEN>0 S PROCN=$P($G(^ICPT(PIEN,0)),U,2)
  ...S PRXF=PIEN_";ICPT("
  ...S PRI=+$O(^ECJ("AP",DIV,UNIT,CAT,PRXF,0)),PRSYN=$P($G(^ECJ(PRI,"PRO")),U,2)
  ...I PRSYN]"" S PROCN=PRSYN

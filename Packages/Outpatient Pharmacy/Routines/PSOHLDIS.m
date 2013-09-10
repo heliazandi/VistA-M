@@ -1,20 +1,17 @@
-PSOHLDIS ;BIR/PWC,SAB - Automated Dispense Completion HL7 v.2.4 ;8/28/07 5:00pm
- ;;7.0;OUTPATIENT PHARMACY;**156,189,193,209,148,259,200,330,354**;DEC 1997;Build 16
+PSOHLDIS ;BIR/PWC,SAB - Automated Dispense Completion HL7 v.2.4 ;10/20/06 3:39pm
+ ;;7.0;OUTPATIENT PHARMACY;**156,189,193,209,148,259,200**;DEC 1997;Build 7
  ;Reference to ^PSDRUG supported by DBIA #221
  ;Reference to $$NDCFMT^PSSNDCUT supported by IA 4707
  ;This routine is called by FACK1^PSOHLDS
  ;
  ;*209 add Drug accountability & fix Copay for refills
  ;*259 check for refill node to exist before updating the Release msg
- ;*330 send variable PSOSITE when updating drug accountability
  ;
 EN ;main entry and process
  N NONODE
  D GETHL7,GETPID,GETORC,GETRXD
  ;
  ;Begin Updating files           ;*259
- I $G(MDUP) D  G END             ;duplicate entry w tracking information.
- .I TRKLOC'="" D ALCOM
  I MEDDISP  D                    ;if dispensed
  . I FLL="F",'FLLN D FILL              ;orig fill
  . I FLL="F",FLLN D REFILL             ;refill
@@ -22,7 +19,7 @@ EN ;main entry and process
  . D ACTLOG                            ;activity log
  . Q:$G(NONODE)                        ;quit, no refill node to update
  . I $D(BGRP),$D(BNAM),$D(BDIV) D BINGREL^PSOHLDI1    ;bingo board rel
- . D DRGACCT^PSOHLDI1(RXID,PSOSITE)     ;drug accountability *209,*330
+ . D DRGACCT^PSOHLDI1(RXID)            ;drug accountability *209
  . I '$G(PRT) D CHKADDR^PSODISPS(RXID)
  E  D                            ;else not dispensed
  . D ACTLOG                            ;activity log no release
@@ -81,7 +78,6 @@ GETRXD ;get RXD segment data
  S X=$P($P($G(NODE5),"|",10),"^",2),RELDT=$S($$FMDATE^HLFNC(X)>0:$$FMDATE^HLFNC(X),1:"") K X  ;release dt
  S PRT=$S($P($P($G(NODE5),"|",10),"^",3)=1:1,$P($P($G(NODE5),"|",10),"^",3)=2:1,1:0)  ;label printed by vendor
  S MEDDISP=$S($P($P($G(NODE5),"|",10),"^",3)=1:1,$P($P($G(NODE5),"|",10),"^",3)=4:1,1:0)  ;med dispensed by vendor
- S TRKLOC=$P($G(NODE5),"|",14)   ;mail tracking info
  S RPHARM=$P($P($G(NODE5),"|",11),"~",1)      ;releasing pharmacist
  K DIC,X,Y S DIC="^VA(200,",DIC(0)="N,Z",X=+RPHARM D
  .D ^DIC I +Y>0 S RPHARM=+Y Q
@@ -164,16 +160,6 @@ ACTLOG ;activity log entry
  .S ^PSRX(RXID,"A",ACL,2,0)="^52.34A^2^2"
  .S ^PSRX(RXID,"A",ACL,2,1,0)="Filled By: "_FPERN
  .S ^PSRX(RXID,"A",ACL,2,2,0)="Checking Pharmacist: "_CPHARMN
- I TRKLOC="" Q
- ;
-ALCOM ;activity log entry - tracking information
- N DCNT,I
- I $G(ACL)="" S ACL=0 F I=0:0 S I=$O(^PSRX(RXID,"A",I)) Q:'I  I $G(^PSRX(RXID,"A",I,2,1,0))["Filled By: " S ACL=I
- I 'ACL Q
- S DCNT=0 F I=0:0 S I=$O(^PSRX(RXID,"A",ACL,2,I)) Q:'I  S DCNT=I
- S DCNT=DCNT+1 I $G(NOW)="" D NOW^%DTC S NOW=%
- S ^PSRX(RXID,"A",ACL,2,0)="^52.34A^"_DCNT_"^"_DCNT
- S ^PSRX(RXID,"A",ACL,2,DCNT,0)="Mail Tracking Info.: "_TRKLOC_" received at "_$$FMTE^XLFDT(NOW,2)
  Q
 ERROR ;sends the error message back to the sending station
  ;parse the data from the msh segment in order to send back the error message release
@@ -192,5 +178,5 @@ END K ACL,I,NOW,LBI,LB,PRT,MEDDISP
  K NAM,NDA,NFLAG,NME,ODA,PSZ,RXO,SSN,TDFN,TFLAG,TIC,TICK,TIEN,TM,TM1,TSSN,X,Y,XX,BNAM,BRT,BGRP
  K Y,OK,XQADATA,SITEN,RDOM,CMOP,REQT,RTDTM,SITENUM,XQSOP,XQMSG,SITEN,NAME,XQAMSG,SITEN
  K XQAROU,XQAID,RDTM,NODE1,NODE2,NODE3,NODE4,NODE5,PIDID,PIDD,PICN,PSSN,PPID,PCLM
- K CPHARM,CPHARMN,FPER,FPERN,RPHARM,TRKLOC
+ K CPHARM,CPHARMN,FPER,FPERN,RPHARM
  Q

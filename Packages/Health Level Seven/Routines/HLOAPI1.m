@@ -1,5 +1,5 @@
-HLOAPI1 ;;ALB/CJM-HL7 - Developer API's for sending & receiving messages(continued) ;03/12/2012
- ;;1.6;HEALTH LEVEL SEVEN;**126,132,134,137,146,158**;Oct 13, 1995;Build 14
+HLOAPI1 ;;ALB/CJM-HL7 - Developer API's for sending & receiving messages(continued) ;06/10/2009
+ ;;1.6;HEALTH LEVEL SEVEN;**126,132,134,137,146**;Oct 13, 1995;Build 16
  ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 SENDONE(HLMSTATE,PARMS,WHOTO,ERROR) ;Sends the message to a single receiving application.
@@ -206,11 +206,10 @@ DONTSEND(HLMSTATE,ERROR) ;
  ;;       ERROR (optional, pass-by-value) error text to store with the message
  ;;Output: none
  ;;
- D:HLMSTATE("UNSTORED LINES") SAVEMSG^HLOF777(.HLMSTATE)
+ I HLMSTATE("UNSTORED LINES"),'$$SAVEMSG^HLOF777(.HLMSTATE) ;; just continue
  ;;
  S HLMSTATE("STATUS")="ER"
- ;
+ S HLMSTATE("STATUS","PURGE")=$$FMADD^XLFDT(HLMSTATE("DT/TM CREATED"),HLMSTATE("SYSTEM","ERROR PURGE"))
  S HLMSTATE("STATUS","ERROR TEXT")=$G(ERROR)
- D SAVEMSG^HLOF778(.HLMSTATE)
- D SETPURGE^HLOF778A($G(HLMSTATE("IEN")),"ER",$S($G(HLMSTATE("ACK TO IEN")):HLMSTATE("ACK TO IEN"),1:""))
+ I '$$SAVEMSG^HLOF778(.HLMSTATE) ;;already reported an error to the app
  Q

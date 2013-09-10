@@ -1,8 +1,8 @@
-HLOQUE ;ALB/CJM/OAK/PIJ/RBN- HL7 QUEUE MANAGEMENT - 10/4/94 1pm ;03/07/2012
- ;;1.6;HEALTH LEVEL SEVEN;**126,132,134,137,138,143,147,153,158**;Oct 13, 1995;Build 14
+HLOQUE ;ALB/CJM/OAK/PIJ/RBN- HL7 QUEUE MANAGEMENT - 10/4/94 1pm ;06/18/2009
+ ;;1.6;HEALTH LEVEL SEVEN;**126,132,134,137,138,143**;Oct 13, 1995;Build 3
  ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
-INQUE(FROM,QNAME,IEN778,ACTION,PURGE,ORIG) ;
+INQUE(FROM,QNAME,IEN778,ACTION,PURGE) ;
  ;Will place the message=IEN778 on the IN queue, incoming
  ;Input:
  ;  FROM - sending facility from message header.
@@ -10,18 +10,15 @@ INQUE(FROM,QNAME,IEN778,ACTION,PURGE,ORIG) ;
  ;  QNAME - queue named by the application
  ;  IEN778 = ien of the message in file 778
  ;  ACTION - <tag^routine> that should be executed for the application
- ;  PURGE (optional) - +PURGE>0 indicates that the purge dt/tm needs to be set by the infiler. 
- ;  ORIG - (optional, pass by reference)
- ;     If ORIG("IEN") is set, it indicates that the the incomming message was an app ack, and the original message needs to be updated with the purge dtate, status (ORIG("STATUS")), and the msgid of the original (ORIG("ACK BY"))
+ ;  PURGE (optional) - PURGE=1 indicates that the purge dt/tm needs to be set by the infiler
+ ;     If PURGE("ACKTOIEN") is set, it indicates that the purge dt/tm of
+ ;     the original message to this application ack also needs to be set.
  ;Output: none
  ;
- N FLG
 ZB36 I $G(FROM)="" S FROM="UNKNOWN"
- I $$RCNT^HLOSITE L +RECOUNT("IN",FROM,QNAME):20 S:$T FLG=1
  I '$L($G(QNAME)) S QNAME="DEFAULT"
- S ^HLB("QUEUE","IN",FROM,QNAME,IEN778)=ACTION_"^"_$G(PURGE)_"^"_$G(ORIG("IEN"))_"^"_$G(ORIG("ACK BY"))_"^"_$G(ORIG("STATUS"))
+ S ^HLB("QUEUE","IN",FROM,QNAME,IEN778)=ACTION_"^"_$G(PURGE)_"^"_$G(PURGE("ACKTOIEN"))
  I $$INC^HLOSITE($NA(^HLC("QUEUECOUNT","IN",FROM,QNAME)))
- L:$G(FLG) -RECOUNT("IN",FROM,QNAME)
  Q
  ;
 OUTQUE(LINKNAME,PORT,QNAME,IEN778) ;
@@ -33,8 +30,8 @@ OUTQUE(LINKNAME,PORT,QNAME,IEN778) ;
  ;  IEN778 = ien of the message in file 778
  ;Output: none
  ;
- ;
  N SUB,FLG
+ S FLG=0
  S SUB=LINKNAME
  I PORT S SUB=SUB_":"_PORT
  I '$L($G(QNAME)) S QNAME="DEFAULT"
@@ -44,7 +41,7 @@ OUTQUE(LINKNAME,PORT,QNAME,IEN778) ;
  ;***End HL*1.6*138 PIJ"
  S ^HLB("QUEUE","OUT",SUB,QNAME,IEN778)=""
  I $$INC^HLOSITE($NA(^HLC("QUEUECOUNT","OUT",SUB,QNAME)))
- L:$G(FLG) -RECOUNT("OUT",SUB,QNAME)
+ L:FLG -RECOUNT("OUT",SUB,QNAME)
  Q
  ;
 DEQUE(FROMORTO,QNAME,DIR,IEN778) ;
@@ -64,12 +61,9 @@ DEQUE(FROMORTO,QNAME,DIR,IEN778) ;
  I DIR'="IN",DIR'="OUT" Q
  Q:'$G(IEN778)
  D:$D(^HLB("QUEUE",DIR,FROMORTO,QNAME,IEN778))
- .N FLG
- .I $$RCNT^HLOSITE L +RECOUNT(DIR,FROMORTO,QNAME):20 S:$T FLG=1
  .K ^HLB("QUEUE",DIR,FROMORTO,QNAME,IEN778)
  .;don't let the count become negative
  .I $$INC^HLOSITE($NA(^HLC("QUEUECOUNT",DIR,FROMORTO,QNAME)),-1)<0,$$INC^HLOSITE($NA(^HLC("QUEUECOUNT",DIR,FROMORTO,QNAME)))
- .L:$G(FLG) -RECOUNT(DIR,FROMORTO,QNAME)
  Q
  ;
 STOPQUE(DIR,QUEUE) ;
@@ -115,7 +109,7 @@ SQUE(SQUE,LINKNAME,PORT,QNAME,IEN778) ;
  ;Output: 1 if placed on the outgoing queue, 0 if placed on the sequence queue
  ;
  N NEXT,MOVED,FLG
- S MOVED=0
+ S (FLG,MOVED)=0
  ;
  ;keep a count of messages pending on sequence queues for the HLO System Monitor
  ;
@@ -156,12 +150,8 @@ SQUE(SQUE,LINKNAME,PORT,QNAME,IEN778) ;
  .I 'NEXT,$$ADVANCE(SQUE,"")
  .;**P143 END CJM
  .;
- .;**P147 START CJM
- .I NEXT,$L($P($G(^HLB(NEXT,0)),"^",7)) D ADVANCE(SQUE,NEXT)
- .;**P147 END CJM
- .;
  L -^HLB("QUEUE","SEQUENCE",SQUE)
- L:$G(FLG) -RECOUNT("SEQUENCE",SQUE)
+ L:FLG -RECOUNT("SEQUENCE",SQUE)
  Q MOVED
  ;
 ADVANCE(SQUE,MSGIEN) ;
@@ -363,119 +353,3 @@ SEQ(QUEARRAY) ;
  Q
  ;
  ; *** End HL*1.6*143 -  RBN ***
- ;
- ;** P147 START CJM
-RESETF(IEN) ;
- ;resets the "F" index on the HLO Priority Queues file (#779.9) for
- ;for record IEN
- ;
- N DA
- S DA(1)=IEN
- S DA=0
- F  S DA=$O(^HLD(779.9,DA(1),1,DA)) Q:'DA  D
- .N DATA
- .S DATA(.01)=$P($G(^HLD(779.9,DA(1),1,DA,0)),"^")
- .Q:DATA(.01)=""
- .D UPD^HLOASUB1(779.91,.DA,.DATA)
- Q
- ;
-GETPRTY(QUEUE,LINK) ;
- ;Inputs:
- ;    QUEUE (required)
- ;    LINK (required) the name of hte link, possibly with the port # appeded
- ;
- ;
- N PRTY,LNK
- S PRTY=0
- S LNK=$P(LINK,":")
- I $L(LNK) S PRTY=$G(^HLD(779.9,"F",QUEUE,"OUT",LNK))
- I PRTY Q PRTY
- S PRTY=$G(^HLD(779.9,"E",QUEUE,"OUT"))
- Q:'PRTY 50
- Q PRTY
- ; 
-SETPRTY ;  User interface to set queue priority
- ; 
- N DIC,DA,DR,Y,DIE,QUEUE
- S DIC="^HLD(779.9,"
- S DIC(0)="QEAL"
- S DIC("A")="Enter the name of an outgoing queue: "
- S DIC("DR")=".01"
- D ^DIC
- I $G(DTOUT)!($G(DUOUT))!(Y=-1) D  Q
- . K DIC,DA,DR,Y,DIE
- S DA=+Y,QUEUE=$P(Y,"^",2)
- I $$ASKYESNO^HLOUSR2("Do you want to set "_QUEUE_"'s priority for just one specific logical link","YES") D
- .N DATA
- .S DATA(.02)="OUT"
- .D UPD^HLOASUB1(779.9,DA,.DATA)
- .S DIC="^HLD(779.9,"_DA_",1,"
- .S DA(1)=DA,DA=""
- .;S DIC("DR")=.02
- .S DIC(0)="QEAL"
- .S DIC("A")="Select the specific link: "
- .D ^DIC
- .I Y>0 D
- ..S DA=+Y
- ..S DIE="^HLD(779.9,"_DA(1)_",1,"
- ..S DR=.02
- ..D ^DIE
- E  D
- .N DATA
- .S DATA(.02)="OUT"
- .S DATA(.03)=1
- .D UPD^HLOASUB1(779.9,DA,.DATA)
- .S DIE="^HLD(779.9,"
- .S DR=.04
- .D ^DIE
- Q
-SETP(QUEUE,PRIORITY,LINK) ;
- ;Description: API for setting an outgoing queue's priority
- ;Input:
- ;   QUEUE (required) the name of the queue
- ;   PRIORITY (required) the priority, 20-100
- ;   LINK (optional) name or IEN of an HL Logical Link. If specified, 
- ;                   the priority will be applied only to the specific
- ;                   link, otherwise the priority will be applied to all
- ;                   queues named QUEUE
- ;Output:
- ;     function returns 1 on success, 0 on failure
- ;
- N LINKIEN,DA,DATA
- S LINKIEN=0
- S PRIORITY=+$G(PRIORITY)
- I $G(PRIORITY)<20 Q 0
- I PRIORITY>100 Q 0
- I '$L($G(QUEUE)) Q 0
- I $L(QUEUE)>20 Q 0
- I $L($G(LINK)) D  Q:'LINKIEN 0
- .S LINKIEN=0
- .I LINK,$D(^HLCS(870,LINK,0)) S LINKIEN=LINK Q
- .S LINKIEN=$O(^HLCS(870,"B",LINK,0))
- S DA=$O(^HLD(779.9,"B",QUEUE,0))
- I 'DA D
- .S DATA(.02)="OUT"
- .S DATA(.01)=QUEUE
- .I 'LINKIEN S DATA(.03)=1,DATA(.04)=PRIORITY
- .S DA=$$ADD^HLOASUB1(779.9,,.DATA)
- E  I 'LINKIEN D  Q $$UPD^HLOASUB1(779.9,DA,.DATA)
- .S DATA(.02)="OUT"
- .S DATA(.03)=1
- .S DATA(.04)=PRIORITY
- Q:'DA 0
- Q:'LINKIEN 1
- S DA(1)=DA
- S DA=$O(^HLD(779.9,DA(1),1,"B",LINKIEN,0))
- K DATA
- S DATA(.01)=LINKIEN
- S DATA(.02)=PRIORITY
- I DA Q $$UPD^HLOASUB1(779.91,.DA,.DATA)
- I $$ADD^HLOASUB1(779.91,.DA,.DATA,.ERROR) Q 1
- Q 0
- ;**P147 END CJM
- ;
- ;
- ;
- ;
- ;
- ;

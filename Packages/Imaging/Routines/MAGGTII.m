@@ -1,6 +1,6 @@
-MAGGTII ;WOIFO/GEK - RETURN IMAGE INFO ; 08 Jan 2010 2:28 PM
- ;;3.0;IMAGING;**8,48,63,59,83**;Mar 19, 2002;Build 1690;Mar 29, 2010
- ;; Per VHA Directive 2004-038, this routine should not be modified.
+MAGGTII ;WOIFO/GEK - RETURN IMAGE INFO ; [ 11/08/2001 17:18 ]
+ ;;3.0;IMAGING;**8,48,63,59**;Mar 27, 2007;Build 15
+ ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
  ;; | No permission to copy or redistribute this software is given. |
@@ -30,8 +30,7 @@ INFO ;Get info for an Image File entry
  ; $P(8)       display date
  ; $P(9)       to return the PARENT DATA FILE image pointer
  ; $p(10)      return the ABSTYPE  'M' magnetic 'W' worm  'O' offline
- ; change $p(11) from A or O to 'M' 'W' or 'O'.  Same as Abs
- ; $p(11)      is 'M' magnetic 'W' worm  'O' offline for FullType
+ ; $p(11)      is  'A' accessible   'O' offline
  ; $p(12^13)   Dicom Series Number  $p(12) and   Image Number  $p(13)
  ; $p(14)      is count of images in group, 1 if single image.
  ; VISN15
@@ -48,12 +47,11 @@ INFO ;Get info for an Image File entry
  N ABSFILE,FULLFILE,BIGFILE,PATCH,MDFN,FNL,PLC,PLCODE
  N MAGN0,MAGN2,MAGN40,MAGN100
  ;    set the Variables for the Global Nodes of the Image Entry
- S MAGN0=$G(^MAG(2005,MAGXX,0))
- S MDFN=$P(MAGN0,"^",7)
+ S MAGN0=$G(^MAG(2005,MAGXX,0)),MDFN=$P(MAGN0,"^",7) ; P48T1 MDFN
  S MAGN2=$G(^MAG(2005,MAGXX,2))
  S MAGN40=$G(^MAG(2005,MAGXX,40))
  S MAGN100=$G(^MAG(2005,MAGXX,100))
- ; Set Name in Variable, Call $$GET 1 time not 2000
+ ; P48T1 Set Name in Variable, Call $$GET 1 time not 2000
  I MDFN I '$D(MAGJOB("PTNM",MDFN)) S MAGJOB("PTNM",MDFN)=$$GET1^DIQ(2,MDFN_",",.01)
  I '$D(MAGJOB("NETPLC")) D NETPLCS^MAGGTU6
  ;  Object Type
@@ -94,13 +92,12 @@ INFO ;Get info for an Image File entry
  S ABSFILE=MAGPREF_MAGFILE1
  ;
  ;    now lets get the Full Path and file name FULL RES image.
- ;p83 S FULLTYPE="A" ; Accessible
+ S FULLTYPE="A" ; Accessible
  S FILETYPE="FULL" K MAGFILE1("ERROR")
  S MAGPREF="" D FINDFILE^MAGFILEB
  S MAGFILE1=$TR(MAGFILE1,"^","~") ; MAGFILE1 has '^' in it if errors
  I $D(MAGFILE1("ERROR")) S MAGFILE1=MAGFILE1("ERROR")
- ;p83 MAGTYPE is "MAG... " or "WORM...", use instead of 'A'
- S FULLTYPE=$E(MAGTYPE,1) I MAGOFFLN S FULLTYPE="O"
+ I MAGOFFLN S FULLTYPE="O" ; Offline
  ;  here we have to do the same test as above. for bad data.
  S MAGPREF=$G(MAGPREF)
  S FULLFILE=MAGPREF_MAGFILE1
@@ -136,11 +133,11 @@ INFO ;Get info for an Image File entry
  S PATCH=$P($G(MAGJOB("VERSION")),".",3) ; //'="3.0.8")
  K MAGFILE
  S $P(MAGFILE,U,25)="" ; We put extra '^^^' on end of String to stop error in Delphi.
- ; Pieces 26 BrokerServer and 27 Broker Port are set if this is P59 Client.
- ; Clients Prior to Patch 59, the String must only be 25 pieces. - Patch 45 snafu
- ; 
+ ; PIECES 26 BROKER SERVER, 27 AND BROKER PORT  
+ ; DON'T SET THEM HERE, THEY ARE SET IN THE WORKSTATION BY RPMag4PatImages.
  ; $P(1^2^3) IEN^Image FullPath and name^Abstract FullPath and Name 
  S $P(MAGFILE,U,1,3)=MAGXX_U_FULLFILE_U_ABSFILE
+ S $P(MAGFILE,U,18)=BIGFILE
  ;
  ; now set $P(4) SHORT DESCRIPTION field and desc of offline JukeBox
  S $P(MAGFILE,U,4)=$P(MAGN2,U,4)_$G(MAGJBOL)
@@ -175,7 +172,7 @@ INFO ;Get info for an Image File entry
  ;  2/1/99 Dicom Series number and Dicom Image Number  
  ;    $p(12) and $p(13)
  ;
- ; 14 - count of images , if this is a group
+ ; lets add the count of images , if this is a group
  S X=+$P($G(^MAG(2005,MAGXX,1,0)),U,4),$P(MAGFILE,U,14)=$S(X:X,1:1)
  ;
  ; $p(15^16 ) are SiteIEN and SiteCode Consolidation - DBI
@@ -192,11 +189,13 @@ INFO ;Get info for an Image File entry
  . S $P(MAGFILE,U,10)="M"
  . ;Send the error message
  . S $P(MAGFILE,U,17)=$P(MAGQI(0),U,2)
- ; $p(18) is BIGFile Full name and path.
- S $P(MAGFILE,U,18)=BIGFILE
- ; DFN
- S $P(MAGFILE,U,19)=$P(MAGN0,U,7)
- ; Patient Name
+ ; $p(18) is BIGFile Full name and path. ( set above)
+ ; Patches prior to 8, only had 17 pieces of data. this will speed up their listings.
+ ; Patch 8 had New M rtn MAGSIXG1, if it doesn't exist, this is PRE - 8.
+ I '$L($T(PGI^MAGSIXG1)) Q
+ S $P(MAGFILE,U,19)=$P(MAGN0,U,7)                         ; DFN
+ ; P48T1 The change to speed up access to large groups left out patient name.
+ ;S $P(MAGFILE,U,20)=$$GET1^DIQ(2,$P(MAGN0,U,7)_",",.01)   ; Patient Name
  S $P(MAGFILE,U,20)=$S(MDFN:MAGJOB("PTNM",MDFN),1:MDFN)
  S $P(MAGFILE,U,21)=$S(+$P(MAGN40,U,2):$P(^MAG(2005.82,$P(MAGN40,U,2),0),U),1:"")
  S X=$$FMTE^XLFDT($P(MAGN2,U,1),"5Z") ; Date/Time Image Saved  #7
@@ -205,12 +204,6 @@ INFO ;Get info for an Image File entry
  S X=$$FMTE^XLFDT($P(MAGN100,U,6),"5Z")   ; DocumentDate #110
  S X=$TR(X,"@"," ")
  S $P(MAGFILE,U,23)=X
- ; If Patch 59 Client - we can set beyond 25 pieces.
- I $D(MAGJOB("RPCSERVER"))&$D(MAGJOB("RPCPORT")) D
- . S $P(MAGFILE,U,26)=MAGJOB("RPCSERVER")
- . S $P(MAGFILE,U,27)=MAGJOB("RPCPORT")
- . S $P(MAGFILE,U,28)="" ; "^" at end, stops problems in delphi
- . Q
  ; Stop displaying a Group of 1 as a Group, so here we'll change Object type
  ;  to that of the '1ST' image in the group of 1.
  I $P($G(^MAG(2005,MAGXX,1,0)),U,4)=1 D
@@ -218,5 +211,5 @@ INFO ;Get info for an Image File entry
  . S X=+^MAG(2005,MAGXX,1,X,0)
  . S $P(MAGFILE,U,6)=$P(^MAG(2005,X,0),U,6) ; OBJECT TYPE OF 1ST IMAGE IN GROUP
  . S $P(MAGFILE,U,1)=X
- . Q
+ . ; Need Site and Site code of 
  Q

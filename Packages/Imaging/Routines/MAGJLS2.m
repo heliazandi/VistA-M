@@ -1,6 +1,6 @@
-MAGJLS2 ;WIRMFO/JHC Rad. Workstation RPC calls ; 24-Mar-2010  1:26pm
- ;;3.0;IMAGING;**22,18,76,101,90**;Mar 19, 2002;Build 1764;Jun 09, 2010
- ;; Per VHA Directive 2004-038, this routine should not be modified.
+MAGJLS2 ;WIRMFO/JHC Rad. Workstation RPC calls ; 29 Jul 2003  9:58 AM
+ ;;3.0;IMAGING;**22,18,76,101**;Nov 06, 2009;Build 50
+ ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
  ;; | No permission to copy or redistribute this software is given. |
@@ -8,6 +8,7 @@ MAGJLS2 ;WIRMFO/JHC Rad. Workstation RPC calls ; 24-Mar-2010  1:26pm
  ;; | to execute a written test agreement with the VistA Imaging    |
  ;; | Development Office of the Department of Veterans Affairs,     |
  ;; | telephone (301) 734-0100.                                     |
+ ;; |                                                               |
  ;; | The Food and Drug Administration classifies this software as  |
  ;; | a medical device.  As such, it may not be changed in any way. |
  ;; | Modifications to this software may result in an adulterated   |
@@ -28,48 +29,24 @@ ERR N ERR S ERR=$$EC^%ZOSV S ^TMP($J,"RET",0)="0^4~"_ERR
  S MAGGRY=$NA(^TMP($J,"RET"))
  D @^%ZOSF("ERRTN")
  Q:$Q 1  Q
- ;
 ACTIVE(MAGGRY,DATA) ; EP--get Active (Unread/Recent/Pend) Exam Lists
  ; MAGGRY holds $NA ref to ^TMP where return msg is assembled
  ;   all refs to MAGGRY use SS indirection
  ; If not use bkgnd, compile in foregnd
  ;
- N BKGND,COMPFAIL,DATA01,LSTID,LSTNAM,LSTNUM,LSTPARAM,LSTREQ,MAGLST
+ N BKGND,COMPFAIL,MAGLST,LSTPARAM,LSTREQ,LSTID,LSTNUM,LSTNAM,NEWLIST
  N $ETRAP,$ESTACK S $ETRAP="D ERR^MAGJLS2"
- S DATA01=$P(DATA,U) D PARAMS^MAGJLS2B(DATA01)
- I 'LSTID S MAGGRY=$NA(^TMP($J,"RET")) D  Q
- . ;
- . ; Initialize to the error condition.
- . S @MAGGRY@(0)="0^4~Problem with Exams List Compile--"_DATA_"."
- . ;
- . ;--- next line--hard-coded 99999 value from client and here for logon initial Manager screen (MAG*3.0*101).
- . D:DATA01=99999
- . . S @MAGGRY@(0)="0^1~           * * *  Use PATIENT LOOKUP button, or select Exam List tab of interest.  * * *"
- . ;
- . ;--- next line--hard-coded 99998 value from client and here for VIX EXAMID LOOKUP (MAG*3.0*90).
- . D:DATA01=99998
- . . ;
- . . ;--- Validate additional DATA pieces for this context.
- . . N V,X,XX S V=-1
- . . ;
- . . ;--- Are RADPT, RACNI, and RDFN numbers?
- . . F X=2,4,5 Q:'V  S XX=$P(DATA,U,X) S:XX=""!(XX'?1N.N) V=0
- . . ;
- . . ;--- Is RADTM in FileMan format?
- . . I V<0 S XX=$P(DATA,U,3) S:XX=""!(XX'?7N1"."1.6N) V=0
- . . ;
- . . ;--- Set return array for VIX.
- . . D:V<0
- . . . S @MAGGRY@(0)="1^1~FOR VIX EXAMID LOOKUP"
- . . . S @MAGGRY@(1)="^VIX LOOKUP"
- . . . S @MAGGRY@(2)="^EXAMID^|"_$P(DATA,U,2,5)_"||"
+ S X=$P(DATA,U) D PARAMS^MAGJLS2B(X)
+ I 'LSTID D  Q
+ . S MAGGRY=$NA(^TMP($J,"RET"))
+ . ; next line--hard-coded 99999 value from client and here for logon initial Manager screen (P101)
+ . I $P(DATA,U)=99999 S @MAGGRY@(0)="0^1~           * * *  Use PATIENT LOOKUP button, or select Exam List tab of interest.  * * *"
+ . E  S @MAGGRY@(0)="0^4~Problem with Exams List Compile--"_DATA_"."
  I MAGJOB("P32"),+$G(MAGJOB("P32STOP")) S MAGGRY=$NA(^TMP($J,"RET")),@MAGGRY@(0)="0^4~VistARad Patch 32 is no longer supported.  Contact Imaging support for the current version of the VistARad client software." Q  ; <*>
  I BKGND,LSTREQ="U" D BKREQU Q  ; UNREAD in bkgnd
  I BKGND,LSTREQ="R" D BKREQR Q  ; RECENT in bkgnd
  I BKGND,LSTREQ="A" D BKREQA(DATA) Q  ; ALL Active Exams
- ;
- ;--- Process other list types, or bkgnd compile not enabled.
- D FOREGND
+ D FOREGND  ; other list types, or bkgnd compile not enabled
 ACTIVEZ Q
  ;
 FOREGND ; compile in foregnd
@@ -218,9 +195,8 @@ LSTCOMP(COMPFAIL) ; Compile new list; subrtn used by Active and Bkgnd tags
  S COMPFAIL=0 ; Return T/F for "Executed a List Compile?"
  L +^XTMP("MAGJ2","BKGND",LSTNAM,"COMPILE"):60
  E  S COMPFAIL=1 G LSTCOMZ
- ;
- N COMTIM,NEWLIST,TS
  S NEWLIST=$S(LSTNUM=1:2,1:1) ; toggle node to use
+ N TS,COMTIM
  S TS="" F I=2,0 S TS=TS_$S(TS="":"",1:U)_$$HTFM^XLFDT($H+I,0)
  S ^XTMP("MAGJ2",0)=TS_U_"VistARad List Compile"
  S ^XTMP("MAGJ2",0,LSTNAM,NEWLIST)=$H

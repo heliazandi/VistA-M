@@ -30,7 +30,7 @@ MAIL ; send bulletin of installation time
  N COUNT,DIFROM,I,START,TEXT,XMDUZ,XMSUB,XMTEXT,XMY
  S COUNT=0,XMDUZ="CPRS PACKAGE",XMTEXT="TEXT("
  S XMSUB="Version "_$P($T(VERSION),";;",2)_" Installed"
- F I="G.CPRS GUI INSTALL@ISC-SLC.domain.ext",DUZ S XMY(I)=""
+ F I="G.CPRS GUI INSTALL@ISC-SLC.VA.GOV",DUZ S XMY(I)=""
  ;
  S X=$P($T(VERSION),";;",2)
  D LINE("Version "_X_" has been installed.")
@@ -135,7 +135,7 @@ CMUPDT ;
  Q
 PARVAL ; Set parameter values
  ; Set VistaWeb Parameter
- D EN^XPAR("PKG","ORWRP VISTAWEB ADDRESS",1,"https://vhaiswwebv7.vha.domain.ext/vistaweb/ToolsPage.aspx")
+ D EN^XPAR("PKG","ORWRP VISTAWEB ADDRESS",1,"https://vhaiswwebv7.vha.med.va.gov/vistaweb/ToolsPage.aspx")
  D EN^XPAR("PKG","ORWRP REPORT LIST",6,"ORRPW HDR")
  Q
 IVUPDT ;

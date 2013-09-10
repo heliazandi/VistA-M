@@ -1,8 +1,7 @@
-PSOUTL ;BHAM ISC/SAB - pso utility routine ;4/28/09 4:14pm
- ;;7.0;OUTPATIENT PHARMACY;**1,21,126,174,218,259,324,390**;DEC 1997;Build 86
+PSOUTL ;BHAM ISC/SAB - pso utility routine ; 4/29/10 6:13am
+ ;;7.0;OUTPATIENT PHARMACY;**1,21,126,174,218,259,324**;DEC 1997;Build 6
  ;External reference SERV^IBARX1 supported by DBIA 2245
  ;External reference ^PS(55,     supported by DBIA 2228
- ;External reference ^PSSDIUTL is supported by DBIA# 5737.
  ;
  ;*218 prevent refill from being deleted if pending processing via
  ; external dispense machines
@@ -70,9 +69,9 @@ KILL N DFN
  S ^PSRX(DA(1),"A",CNT,0)=^PSRX(DA(1),"A",CNT,0)_$S($G(RESK):"returned to stock.",$G(PSOPSDAL):"deleted during Controlled Subs release.",$G(PSOXX)=1:"Partial deleted from suspense file.",1:"deleted during Rx edit.") K CNT,SUB
  Q
 CID ;calculates six months limit on issue dates
- S PSID=X,X="T-6M",%DT="X" D ^%DT S %DT(0)=Y,X=PSID,%DT="EX" D ^%DT K PSID
+ S PSID=X,X="T-120M",%DT="X" D ^%DT S %DT(0)=Y,X=PSID,%DT="EX" D ^%DT K PSID
  Q
-CIDH S X="T-6M",%DT="X" D ^%DT X ^DD("DD") D EN^DDIOL("Issue Date must be greater or equal to "_Y,"","!")
+CIDH S X="T-120M",%DT="X" D ^%DT X ^DD("DD") D EN^DDIOL("Issue Date must be greater or equal to "_Y,"","!")
  Q
 SPR F RF=0:0 S RF=$O(^PSRX(DA(1),1,RF)) Q:'RF  S NODE=RF
  I NODE=1 S $P(^PSRX(DA(1),3),"^",4)=$P(^PSRX(DA(1),2),"^",2) Q
@@ -237,37 +236,4 @@ MAILCMOP(RX,STR,REA) ;Send mail message to mail group PSX EXTERNAL DISPENSE ALER
  S PSOTEXT(8)="********    Please contact CMOP or take appropriate action    ********"
  S XMTEXT="PSOTEXT(" D ^XMD
  D KVA^VADPT
- Q
- ;
-PSOCK ;
- W !!!,"*The following list of order checks is a comprehensive report of all"
- W !,"Outpatient, Non-VA, and Clinic medication orders on this patient's profile."
- W !,"It may include orders that are local, remote, active, pending, recently"
- W !,"discontinued, or expired. Please note that the sort order and format"
- W !,"displayed in this report differs from the display of MOCHA 1.0 order"
- W !,"checks which occurs during order processing.*",!
- Q
- ;
-PSSDGCK ;
- D ^PSSDIUTL
- Q
- ;
-PSOSUPCK(CHK) ;
- I '($P($G(^PSDRUG(CHK,0)),"^",3)["S"!($E($P($G(^PSDRUG(CHK,0)),"^",2),1,2)="XA")) K CHK Q 0
- W !!,"You have selected a supply item, please select another drug"
- W !,"or leave blank and hit enter for Profile Order Checks." W !
- K CHK
- Q 1
- ;
-PRFLP ;ZB POST+18^PSODRG THE RUN D LOOP^ZZME3
- N PSODRUG S (DGCKSTA,DGCKDNM)="" S PSODGCKF=1
- I $D(PSOSD) F  S DGCKSTA=$O(PSOSD(DGCKSTA)) Q:DGCKSTA=""  F  S DGCKDNM=$O(PSOSD(DGCKSTA,DGCKDNM)) Q:DGCKDNM=""  D
- .S DIC=50,DIC(0)="MQZV",X=DGCKDNM D ^DIC K DIC
- .S DIC=50,DIC(0)="MQZV",X=+Y D ^DIC K DIC Q:Y=-1
- .S PSODRUG("IEN")=DGCKDNM,PSODRUG("VA CLASS")=$P(Y(0),"^",2),PSODRUG("NAME")=$P(Y(0),"^")
- .S:+$G(^PSDRUG(+Y,2)) PSODRUG("OI")=+$G(^(2)),PSODRUG("OIN")=$P(^PS(50.7,+$G(^(2)),0),"^")
- .S PSODRUG("NDF")=$S($G(^PSDRUG(DGCKDNM,"ND"))]"":+^("ND")_"A"_$P(^("ND"),"^",3),1:0)
- .S PSODFN=DFN D ^PSODGAL1
- .K X,Y,DTOUT,DUOUT
- K DGCKSTA,DGCKDNM,PSODGCKF,X,Y,DTOUT,DUOUT
  Q

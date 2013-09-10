@@ -1,5 +1,5 @@
 PSSPOIMO ;BIR/RTR/WRT-Edit Orderable Item Name and Inactive date ; 4/28/09 4:39pm
- ;;1.0;PHARMACY DATA MANAGEMENT;**29,32,38,47,68,102,125,141,153,159**;9/30/97;Build 29
+ ;;1.0;PHARMACY DATA MANAGEMENT;**29,32,38,47,68,102,125,141**;9/30/97;Build 8
  S PSSITE=+$O(^PS(59.7,0)) I +$P($G(^PS(59.7,PSSITE,80)),"^",2)<2 W !!?3,"Orderable Item Auto-Create has not been completed yet!",! K PSSITE K DIR S DIR("A")="Press RETURN to continue",DIR(0)="E" D ^DIR K DIR Q
  K PSSITE W !!,"This option enables you to edit Orderable Item names, Formulary status,",!,"drug text, Inactive Dates, and Synonyms."
 EN I $D(PSOIEN) L -^PS(50.7,PSOIEN)
@@ -29,7 +29,7 @@ DIR K DIR S DIR(0)="F^3:40",DIR("B")=PSOINAME,DIR("A")="Orderable Item Name" D ^
  ;I $P($G(^PS(59.7,1,20.4)),"^",16)=1,$P(^PS(50.7,PSOIEN,0),"^",3)'=1,$P(^PS(50.7,PSOIEN,0),"^",10)="" D IVMSG K DIE S DIE="^PS(50.7,",DR="4",DA=PSOIEN D ^DIE
  S PSSDTENT=0 W ! K DIE N MFLG S PSBEFORE=$P(^PS(50.7,PSOIEN,0),"^",4),PSAFTER=0,PSINORDE="" D
  .;If reactivate OI, prompt to reactivate DD's only if there are any, then always give message saying OI now Active. If Inactivate, prompt to inactivate any active DD's if there are any, and give message
- .;but if OI is reactivated, and there are no activities matched to it, and user does not want to activate the drugs, then inactivate the OI again, and give a clear message explaining this.
+ .;but if OI is reactivated, and there are no actitives matched to it, and user does not want to activate the drugs, then inactivate the OI again, and give a clear message explaining this.
  .W !,"This Orderable Item is "_$S($P($G(^PS(50.7,PSOIEN,0)),"^",12):"Non-Formulary.",1:"Formulary."),!
  .I $P($G(^PS(50.7,PSOIEN,0)),"^",10) W !,"This Orderable Item is marked as a Non-VA Med.",!
  .S DIE="^PS(50.7,",DA=PSOIEN,DR=6 S PSCREATE=1 D ^DIE K DIE,PSCREATE I $D(DTOUT)!($D(Y)) Q
@@ -40,8 +40,7 @@ DIR K DIR S DIR(0)="F^3:40",DIR("B")=PSOINAME,DIR("A")="Orderable Item Name" D ^
  .I $G(PSBEFORE),'$G(Y) W ?40,"Inactive Date deleted!"
  .S PSSDTENT=$G(Y) I $G(Y) D DD^%DT W ?40,$G(Y)
  .S PSSOTH=$S($P($G(^PS(59.7,1,40.2)),"^"):1,1:0)
- .S DIE="^PS(50.7,",DA=PSOIEN,DIE("NO^")="BACK"
- .S DR=".05;@1;.06;D DFR^PSSPOIMO(PSDOSE),DFRL^PSSPOIMO;10//YES;I X=""Y"" S Y=""@2"";D PDCHK^PSSPOIMO;I $$DP^PSSPOIMO(PSOIEN) S Y=""@1"";@2;.07;.08;7;S:'$G(PSSOTH) Y=""@3"";7.1;@3"
+ .S DIE="^PS(50.7,",DA=PSOIEN,DR=".05;.06;.07;.08;7;S:'$G(PSSOTH) Y=""@1"";7.1;@1"
  .S PSCREATE=1 D ^DIE K DIE,PSCREATE,PSSOTH
  .S $P(^PS(50.7,PSOIEN,0),"^",4)=PSSDTENT,PSAFTER=PSSDTENT
  S:PSBEFORE&('$P(^PS(50.7,PSOIEN,0),"^",4)) PSINORDE="D" S:$P(^PS(50.7,PSOIEN,0),"^",4) PSINORDE="I"
@@ -126,77 +125,3 @@ UDMSG ; display a message if the CORRESPONDING UD field is entered
  W !!,"The Corresponding UD Item is currently identified as: "_PSSUDMSG,!
  K PSSUDMSG,PSSUDFRM
  Q
-DFR(PSDOSE) ; dosage form med routes - called by DR string at DIR+20^PSSPOIMO
- N MCT,MR,MRNODE,XX K ^TMP("PSSMR",$J)
- S (MCT,MR)=0 F  S MR=$O(^PS(50.606,PSDOSE,"MR",MR)) Q:'MR  D
- .S XX=+$G(^PS(50.606,PSDOSE,"MR",MR,0)) Q:'XX  S MRNODE=$G(^PS(51.2,XX,0)) I $P($G(MRNODE),"^",4)'=1 Q
- .S MCT=MCT+1,^TMP("PSSMR",$J,MCT)=$P(MRNODE,U),^TMP("PSSMR",$J,"B",XX)=""
- Q
-DFRL W !!," List of med routes associated with the DOSAGE FORM of the orderable item:",!
- S MCT=0 I '$O(^TMP("PSSMR",$J,MCT)) W !,?3,"NO MED ROUTE DEFINED"
- F  S MCT=$O(^TMP("PSSMR",$J,MCT)) Q:'MCT  W !,?3,$G(^(MCT))
- D EN^DDIOL(" If you answer YES to the next prompt, the DEFAULT MED ROUTE (if populated)",,"!!")
- D EN^DDIOL(" and this list (if populated) will be displayed as selectable med routes",,"!")
- D EN^DDIOL(" during medication ordering dialog. If you answer NO, the DEFAULT MED ROUTE",,"!")
- D EN^DDIOL(" (if populated) and POSSIBLE MED ROUTES list will be displayed instead.",,"!") W !
- K ^TMP("PSSMR",$J)
- Q
-PDR ; possible med routes - called by DR string at DIR+20^PSSPOIMO
- N MCT,MR,MRNODE,XX K ^TMP("PSSMR",$J)
- S (XX,MCT)=0 F  S XX=$O(^PS(50.7,$S($G(PSVAR):PSVAR,1:PSOIEN),3,"B",XX)) Q:'XX  S MRNODE=$G(^PS(51.2,XX,0)),MCT=MCT+1,^TMP("PSSMR",$J,MCT)=$P(MRNODE,U)
- I $O(^TMP("PSSMR",$J,0)) D
- .W !!," List of Possible Med Routes associated with the orderable item:",!
- .S MCT=0 F  S MCT=$O(^TMP("PSSMR",$J,MCT)) Q:'MCT  W !,?3,$G(^(MCT))
- W ! K ^TMP("PSSMR",$J)
- Q
-PDCHK ; called by called by DR string at DIR+20^PSSPOIMO
- N ANS,D,DIC,DIE,DO,DICR,DR,DIR,PSOUT,PSSDA,PSSX,PSSXA,PSSY,Q,X,Y,Z
- S DIR(0)="PO^51.2:EMZ",DIR("A")="POSSIBLE MED ROUTES",DIR("S")="I $P(^(0),U,4)" S PSOUT=0
- S DIR("PRE")="I X=""?"" D MRTHLP^PSSPOIMO"
- F  D PDR,^DIR D  I PSOUT Q
- .I (X="")!$D(DTOUT)!$D(DUOUT) S PSOUT=1 Q
- .I X="@",$D(PSSY) S ANS=DA D:$$DASK  Q
- ..N DIK,DA S DA(1)=ANS,DIK="^PS(50.7,"_DA(1)_",3,"
- ..S DA=$O(^PS(50.7,DA(1),3,"B",PSSY,"")) I DA="" Q
- ..D ^DIK K PSSY,DIR("B")
- .I Y="" W "  ??" Q
- .I $D(^PS(50.7,DA,3,"B",+Y)) D  Q
- ..I $D(DIR("B")) K PSSY,DIR("B") Q
- ..S DIR("B")=Y(0,0),PSSY=+Y Q
- .S PSSXA=Y(0,0),PSSX=+Y D DFR(+$P(^PS(50.7,DA,0),"^",2))
- .I $G(PSSX) S ANS=$$ASK() I 'ANS Q
- .S PSSDA(50.711,"+1,"_DA_",",.01)=+PSSX
- .D UPDATE^DIE("","PSSDA")
- .K ^TMP("PSSMR",$J)
-  Q
-ASK() ; confirm adding the new entry
- N DIR,X,Y W ! S DIR(0)="YO",DIR("B")="YES"
- I '$D(^TMP("PSSMR",$J,"B",PSSX)) S DIR("B")="NO",DIR("A",1)="The selected entry does not match any of the dosage form med routes."
- W $C(7) S DIR("A")="  Are you adding '"_PSSXA_"' as a new POSSIBLE MED ROUTE" D ^DIR
- Q $S(Y=1:1,1:0)
-DASK() ; delete possible med route
- N DIR
- W $C(7) S DIR("A")="     SURE YOU WANT TO DELETE ",DIR(0)="Y" D ^DIR
- Q $S(Y=1:1,1:0)
-MRTHLP ; help of possible med route
- N DIC,RTE,D
- S RTE=0 F  S RTE=$O(^PS(50.7,DA,3,"B",RTE)) Q:'RTE   D EN^DDIOL($P($G(^PS(51.2,RTE,0)),"^"),,"!,?4")
- W ! D EN^DDIOL("Enter the most common MED ROUTE associated with this Orderable Item.",,"!,?5")
- D EN^DDIOL("ONLY MED ROUTES MARKED FOR USE BY ALL PACKAGES ARE SELECTABLE.",,"!,?5")
- Q
-DP(PSOIEN) ; check the existence of Default Med Route & Possible Med Routes
- N D,DIC,DIE,DO,DICR,DR,DIR,PSSFG,Q,X,Y,Z S PSSFG=0
- I '$P($G(^PS(50.7,PSOIEN,0)),"^",6)&('$O(^PS(50.7,PSOIEN,3,0))) D
- .S PSR(1)=" You have not selected ANY med routes to display during order entry. In"
- .S PSR(2)=" order to have med routes displayed during order entry, you must either"
- .S PSR(3)=" define a DEFAULT MED ROUTE and/or at least one POSSIBLE MED ROUTE, or"
- .S PSR(4)=" answer YES to the USE DOSAGE FORM MED ROUTE LIST prompt."
- .S PSR(5)=" **WITH THE CURRENT SETTINGS, NO MED ROUTES WILL DISPLAY FOR SELECTION ",PSR(5,"F")="!!"
- .S PSR(6)=" DURING ORDER ENTRY FOR THIS ORDERABLE ITEM**"
- .D EN^DDIOL(.PSR),EN^DDIOL(" ","","!")
- .K DIR S DIR(0)="Y",DIR("?",1)="If you select NO, you will continue to loop back to the Default Med Route"
- .S DIR("?")="prompt until either a selection is made or you answer YES to this prompt to proceed."
- .S DIR("A",1)="",DIR("A",2)="The current setting is usually only appropriate for supply items."
- .S DIR("A")="Continue with no med routes displaying for selection during order entry",DIR("B")="NO"
- .D ^DIR K DIR W ! I 'Y!($D(DTOUT))!($D(DUOUT)) S PSSFG=1
- Q PSSFG
