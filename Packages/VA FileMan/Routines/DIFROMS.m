@@ -1,6 +1,6 @@
 DIFROMS ;SFISC/DCL-DIFROM SERVER DD/DATA IN/OUT ;09:47 AM  19 Jan 1995
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  Q
 DDOUT(DIFRFILE,DIFRFLG,DIFRFIA,DIFRTA,DIFRMSGR) ; DD OUT TO TARGET ARRAY
  ;FILE,FLAGS,FIA_ARRAY,TARGET_ARRAY,MSG_ROOT

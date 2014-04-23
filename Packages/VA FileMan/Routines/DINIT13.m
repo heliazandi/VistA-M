@@ -1,6 +1,6 @@
-DINIT13 ;SFISC-INITIALIZE VA FILEMAN ;9:09 AM  16 Nov 1998
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DINIT13 ;SFISC-INITIALIZE VA FILEMAN ;6APR2005
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 DD F I=1:1 S X=$T(DD+I),Y=$P(X," ",3,99) G ^DINIT14:X?.P S @("^DD("_$E($P(X," ",2),3,99)_")=Y")
  ;;.402,10,0 DESCRIPTION^.4021^^%D;0
  ;;.4021,0,"UP" .402
@@ -45,4 +45,5 @@ DD F I=1:1 S X=$T(DD+I),Y=$P(X," ",3,99) G ^DINIT14:X?.P S @("^DD("_$E($P(X," ",
  ;;.4,115,"DT" 2921119
  ;;.4,704,0 HEADER^CJ60^^ ; ^S X=$S($D(^DIPT(D0,"H")):^("H"),1:"")
  ;;.4,707,0 SUB-HEADER SUPPRESSED^S^1:YES^SUB;1^Q
- ;;.4,1620,0 PRINT FIELDS^XCmJ50^^ ; ^D ^DIPT
+ ;;.4,1620,0 PRINT FIELDS^XCmJ50^^ ; ^N DIR,DIPT,DRK,D,C,J,L,DHD,DA S DIPT=D0  D GET^DIPTED("DIR") F D=0:0 S D=$O(DIR(D)) Q:'D  S X=DIR(D) X DICMX Q:'$D(D)
+ ;;.4,21400,0 BUILD(S)^Cmp9.6^^ ; ^N DIPTNAME,D S DIPTNAME=$P($G(^DIPT(D0,0)),U)_"    FILE #"_$P($G(^(0)),U,4) F D=0:0 S D=$O(^XPD(9.6,D)) Q:'D  I $D(^(D,"KRN",.4,"NM","B",DIPTNAME)) N D0 S D0=D,X=$P(^XPD(9.6,D,0),U) X DICMX Q:'$D(D)

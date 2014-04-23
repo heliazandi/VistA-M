@@ -1,6 +1,7 @@
-DINIT0FE ;SFISC/MKO-DATA FOR FORM AND BLOCK FILES ;06:21 PM  2 Apr 2001
- ;;22.0;VA FileMan;**62,82**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DINIT0FE ;SFISC/MKO-DATA FOR FORM AND BLOCK FILES ;11JUN2010
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
+ ;
  F I=1:2 S X=$T(ENTRY+I) G:X="" ^DINIT0FF S Y=$E($T(ENTRY+I+1),5,999),X=$E(X,4,999),@X=Y
  Q
 ENTRY ;
@@ -204,20 +205,6 @@ ENTRY ;
  ;;=D ACCVAL^DIU20(X)
  ;;^DIST(.404,.402011,40,7,20)
  ;;=F
- ;;^DIST(.404,.402011,40,8,0)
- ;;=8^DD AUDIT^2^^DD AUDIT
- ;;^DIST(.404,.402011,40,8,2)
- ;;=12,36^3^12,26
- ;;^DIST(.404,.402011,40,8,3)
- ;;=!M
- ;;^DIST(.404,.402011,40,8,3.1)
- ;;=I $D(^DD(DA,0,"DDA")) S Y=$P("NO^YES",U,^("DDA")="Y"+1)
- ;;^DIST(.404,.402011,40,8,20)
- ;;=Y
- ;;^DIST(.404,.402011,40,8,21,0)
- ;;=^^1^1^2981023
- ;;^DIST(.404,.402011,40,8,21,1,0)
- ;;=Enter YES if you want to audit the Data Dictionary changes
  ;;^DIST(.404,.402011,40,9,0)
  ;;=9^ASK 'OK' WHEN LOOKING UP AN ENTRY^2^^ASK OK
  ;;^DIST(.404,.402011,40,9,2)
@@ -233,7 +220,7 @@ ENTRY ;
  ;;^DIST(.404,.402011,40,9,21,1,0)
  ;;=Answer YES to cause a lookup into this file to verify the
  ;;^DIST(.404,.402011,40,9,21,2,0)
- ;;=selection by prompting with
+ ;;=selection by prompting with 
  ;;^DIST(.404,.402011,40,9,21,3,0)
  ;;=   '...OK?  YES//  '
  ;;^DIST(.404,.402011,40,9.5,0)

@@ -1,6 +1,6 @@
 DICLIX1 ;SEA/TOAD,SF/TKW-FileMan: Lister, Search Compound Indexes (cont.) ;11/5/99  15:13
- ;;22.0;VA FileMan;**17**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013;
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 BLDTMP(DINDEX,DISCREEN,DIFLAGS,DIDENT) ; Build temporary index of external values when pointer/vp subscript is encountered.
  N DISUB,DIXSAV,DIX,DIDOUT S DIDOUT=0

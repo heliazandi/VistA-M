@@ -1,6 +1,6 @@
-DINIT00L ; SFISC/TKW-DIALOG & LANGUAGE FILE INITS ; 3/30/99  10:41:48
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DINIT00L ; SFISC/TKW-DIALOG & LANGUAGE FILE INITS ;29AUG2003
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) S @X=Y
 Q Q
  ;;^UTILITY(U,$J,.84,8084,2,0)
@@ -44,7 +44,7 @@ Q Q
  ;;^UTILITY(U,$J,.84,8086,2,5,0)
  ;;=MERGE ENTRIES AFTER COMPARING THEM 
  ;;^UTILITY(U,$J,.84,8087,0)
- ;;=8087^2^^5^End of Page message for Lookup (DIC)
+ ;;=8087^2^y^5^End of Page message for Lookup (DIC)
  ;;^UTILITY(U,$J,.84,8087,1,0)
  ;;=^^2^2^2970529^
  ;;^UTILITY(U,$J,.84,8087,1,1,0)
@@ -54,7 +54,11 @@ Q Q
  ;;^UTILITY(U,$J,.84,8087,2,0)
  ;;=^^1^1^2970529^
  ;;^UTILITY(U,$J,.84,8087,2,1,0)
- ;;=Press <RETURN> to see more, '^' to exit this list, OR
+ ;;=Press <Enter> to see more, '^' to exit this list, |T| OR
+ ;;^UTILITY(U,$J,.84,8087,3,0)
+ ;;=^.845^1^1
+ ;;^UTILITY(U,$J,.84,8087,3,1,0)
+ ;;=T^TO EXIT ALL LISTS
  ;;^UTILITY(U,$J,.84,8087,5,0)
  ;;=^.841^1^1
  ;;^UTILITY(U,$J,.84,8087,5,1,0)

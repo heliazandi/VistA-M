@@ -1,0 +1,6 @@
+DIINIT5 ; ; 28-MAR-2013 ; 3/28/13 10:57am
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
+ K ^UTILITY("DIF",$J) S DIFRDIFI=1 F I=1:1:0 S ^UTILITY("DIF",$J,DIFRDIFI)=$T(IXF+I),DIFRDIFI=DIFRDIFI+1
+ Q
+IXF ;;VA FILEMAN^DI

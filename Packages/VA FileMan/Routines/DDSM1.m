@@ -1,6 +1,6 @@
-DDSM1 ;SFISC/MKO-MULTILINE, LOAD AND DELETE ;9:49 AM  20 Apr 1999
- ;;22.0;VA FileMan;**8**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DDSM1 ;SFISC/MKO-MULTILINE, LOAD AND DELETE ;26SEP2003
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 LOAD(DDSIEN) ;Load subentries
 MLOAD ;Entry point from MLOAD^DDSUTL
@@ -32,8 +32,8 @@ MLOAD ;Entry point from MLOAD^DDSUTL
  D DMULTN^DDSR(DDSPG,DDSBK,DDSPDA,$P(DDSREP,U,5),1)
  ;
  ;Update DIR0
- S DIR0=$P(@DDSREFS@(DDSPG,DDSBK,DDO,"D"),U,1,3)
- S:$P($G(DDSREP),U,3)>1 $P(DIR0,U)=$P(DIR0,U)+$P(DDSREP,U,3)-1
+DIR0 S DIR0=$P(@DDSREFS@(DDSPG,DDSBK,DDO,"D"),U,1,3)
+ S:$P($G(DDSREP),U,3)>1 $P(DIR0,U)=$P(DIR0,U)+($P(DDSREP,U,3)-1*$$HITE^DDSR(DDSBK)) ;DJW/GFT
  Q
  ;
 DEL(DDSIEN) ;Delete subentries
@@ -83,8 +83,7 @@ MDEL ;Entry point from MDEL^DDSUTL
  D POSSN^DDSM(999999999999,1)
  ;
  ;Update DIR0
- S DIR0=$P(@DDSREFS@(DDSPG,DDSBK,DDO,"D"),U,1,3)
- S:$P($G(DDSREP),U,3)>1 $P(DIR0,U)=$P(DIR0,U)+$P(DDSREP,U,3)-1
+DIR01 D DIR0
  Q
  ;
 MDELONE ;Delete one subentry in the current repeating block
@@ -111,7 +110,5 @@ MDELONE ;Delete one subentry in the current repeating block
  ;
  E  D POSSN^DDSM(999999999999,1)
  ;
- ;Update DIR0
- S DIR0=$P(@DDSREFS@(DDSPG,DDSBK,DDO,"D"),U,1,3)
- S:$P($G(DDSREP),U,3)>1 $P(DIR0,U)=$P(DIR0,U)+$P(DDSREP,U,3)-1
+DIR02 D DIR0
  Q

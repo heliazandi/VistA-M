@@ -1,6 +1,6 @@
-DICATTD0 ;GFT;01:06 PM  9 Jan 1999
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DICATTD0 ;GFT/GFT - CREATE WORD-PROCESSING ATTRIBUTES IN SCREENMAN ;01:06 PM  9 Jan 1999
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 WORD(DICT) ;DICT=21 or 23  for DESCRIPTION and TECHNICAL DESCRIPTION
  N DIC,DUOUT,DTOUT,DICR,DIWETXT

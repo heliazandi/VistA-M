@@ -1,7 +1,8 @@
-DIKZ ;SFISC/XAK-XREF COMPILER ;19JAN2010
- ;;22.0;VA FileMan;**140,163**;Mar 30, 1999;Build 1
+DIKZ ;SFISC/XAK-XREF COMPILER ;1JUN2010
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
  ;Per VHA Directive 2004-038, this routine should not be modified.
- I $G(DUZ(0))'="@" W $C(7),$$EZBLD^DIALOG(101) Q
+ ;
+ I $G(DUZ(0))'="@" W:$D(^DI(.84,0)) $C(7),$$EZBLD^DIALOG(101) Q
 EN1 N DIKJ,%X D:'$D(DISYS) OS^DII
  I '$D(^DD("OS",DISYS,"ZS")) W $C(7),$$EZBLD^DIALOG(820) Q
  S U="^" S:'$G(DTIME) DTIME=300

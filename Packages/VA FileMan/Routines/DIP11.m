@@ -1,9 +1,9 @@
 DIP11 ;SFISC/XAK,TKW-GET SORT TEMPLATE ;29MAR2010
- ;;22.0;VA FileMan;**97,163*;Mar 30, 1999;Build 1
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
  ;Per VHA Directive 2004-038, this routine should not be modified.
 SCREENTM(Z,D2) ;Z=ZERO NODE OF SORT TEMPLATE;  D2 = THERE IS SORT-BY LOGIC
  I $P(Z,U,4)-DL Q 0 ;TEMPLATE MUST BE FOR THIS FILE
- I 'D2&'L D  Q $D(Z) ;IN SILENT MODE (L=0), DON'T PICK SEARCH OR INQUIRY TYPE IF THERE'S A SORT TYPE OF SAME NAME
+ I 'D2&'L D  Q $D(Z) ;IN SILENT MODE, DON'T PICK SEARCH OR INQUIRY TYPE IF THERE'S A SORT TYPE OF SAME NAME
  .N NAME,I S NAME=$P(Z,U) F I=0:0 S I=$O(^DIBT("B",NAME,I)) Q:'I  I I-Y,$P($G(^DIBT(I,0)),U,4)=DL,$D(^(2)) K Z Q
  I DUZ(0)="@" Q 1
  I D2 Q:'L 1 Q:$P(Z,U,3)="" 1 Q $TR($P(Z,U,3),DUZ(0))'=$P(Z,U,3) ;IF A SORT TEMPLATE, ACCESS CODES MUST MATCH
@@ -15,13 +15,12 @@ TEM ;
  G B^DIP:DJ-1 K DPP,DIC
  S X=$P($E(X,2,99),"]",1),DIC(0)="ZQS"_$E("E",'($D(BY)#2)!''L),DIC="^DIBT(",D="F"_DL
  S DIC("S")="I $$SCREENTM^DIP11(^(0),$D(^(2)))"
- ;I $P(^(0),U,4)=DL,$S(L=0!(DUZ(0)=""@""):1,'$D(^(1)):$TR(DUZ(0),$P(^(^(0),U,6)'=DUZ(0)&$L(DUZ(0),'$P(^(0),U,5):1,1:$P(^(0),U,5)=DUZ),$D(^(1))!'$D(^(""DIS""))"
  I X?."?" S:X'?1"???" X="??" D IX^DIC S DJ=0 Q
  D ^DIC I Y<0 S DJ=0 Q
-EMPTY I '$D(^DIBT(+Y,2)),'$D(^(1)) W:'$G(DIQUIET) !,"This SEARCH template has no search results!" S DJ=0 Q
- S DPP(DJ)=DL_"^^'"_$P(Y,U,2)_"' NUMBER^@'"_P,(DIBT1,X)=+Y,DIBT2=$P(Y(0),U),D=DIC_X_C K DIC
+EMPTY I '$D(^DIBT(+Y,2)),'$D(^(1)) W:'$G(DIQUIET) !,$$EZBLD^DIALOG(1509) S DJ=0 Q  ;**CCO/NI  SORT TEMPLATE HAS NO VALUES
+ S DPP(DJ)=DL_"^^'"_$P(Y,U,2)_"' "_$$EZBLD^DIALOG(7099)_"^@'"_P,(DIBT1,X)=+Y,DIBT2=$P(Y(0),U),D=DIC_X_"," K DIC ;*CCO/NI   SORT TEMPLATE 'NUMBER'
  I '$D(FLDS),$G(^DIBT(X,"DIPT"))]"" S FLDS="["_^("DIPT")_"]" I L D
- . N %,A S %(1)=^("DIPT") D BLD^DIALOG(8030,.%,"","A") W ! F %=0:0 S %=$O(A(%)) Q:'%  W A(%),!
+ . ;N %,A S %(1)=^("DIPT") D BLD^DIALOG(8030,.%,"","A") W ! F %=0:0 S %=$O(A(%)) Q:'%  W A(%),!
  . S L=0 Q
  I $D(^DIBT(X,1)) S DIC=D_1_C,DPP(DJ,"SER")="998^998" D ENT^DIP10(DJ,DIBT1) I $D(^DIBT(X,1)) S Y=1 D
  .F DY=1:1 S Y=$O(^(Y,-1)) S:Y="" Y=-1 S:$O(^(Y)) Y=$O(^(Y)) I $D(^(Y))<9 S DPP(DJ,"IX")=DIC_DI_U_DY,DIBT=X Q

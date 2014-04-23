@@ -1,5 +1,5 @@
 DICATT0 ;SFISC/GFT,XAK-DATES, NUMERIC ;1/7/2009
- ;;22.0;VA FileMan;**160**;Mar 30, 1999;Build 1
+ ;;22.2;VA FILEMAN;;Mar 28, 2013;Build 17
  ;Per VHA Directive 2004-038, this routine should not be modified.
  G @N
  ;

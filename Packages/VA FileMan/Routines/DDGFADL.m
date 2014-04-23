@@ -1,6 +1,6 @@
 DDGFADL ;SFISC/MKO-ADJUST DATA LENGTH ;11:28 AM  22 Dec 1993
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  N DDGFE
  D DRAW(1)
  S DDGFE=0 F  S Y=$$READ W:$T(@Y)="" $C(7) D:$T(@Y)]"" @Y Q:DDGFE

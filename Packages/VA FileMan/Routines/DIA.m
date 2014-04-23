@@ -1,5 +1,5 @@
 DIA ;SFISC/GFT-SELECT FIELDS TO EDIT ;4JUNE2008
- ;;22.0;VA FileMan;**159**;Mar 30, 1999;Build 1
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
  ;Per VHA Directive 2004-038, this routine should not be modified.
  D DICS
 1 D F W !?F*3,"EDIT WHICH "_X I $S(DB:DIAT="",1:1) R ": ALL// ",X:DTIME S:'$T X=U,DTOUT=1 G ALL^DIA1:X=""!(X="ALL"),TEMP^DIA1:X?1"[".E&'F,L
@@ -14,7 +14,7 @@ L S DSC=X?1"^".E I DSC S X=$E(X,2,999) I U[X K DR Q
  I $A(X)=64 G X:X'?1P.N,P:$L(X)>1,X:'DB S DB=DB+1 G 2
  K DIC,DIAB D DICS S DV="",J=$P(X,"-",2) I +J=J,$P(X,"-",1)=+X,J>X S D(F)=J K DA D RANGE^DIA1 K D S Y=DA G X:Y="" D DB G 2
 DIC ;
- S DIC(0)="EZI",DIC="^DD(DI,",Y=-1 G X^DIA3:X[";" S DIC("W")="S %=$P(^(0),U,2) I % W $S($P(^DD(+%,.01,0),U,2)[""W"":""  (word-processing)"",1:""  (multiple)"")" D ^DIC Q:$D(DTOUT)
+EGP S DIC(0)="EZI",DIC="^DD(DI,",Y=-1 G X^DIA3:X[";" D DICW^DIALOGZ(DI),^DIC Q:$D(DTOUT)  ;**CCO/NI
  I Y>0 D SET S Y=$P(Y(0),U,2) G 2:'Y S L=L+1,(DI,J(L))=+Y,I(L)=""""_$P($P(Y(0),U,4),";")_"""" G DOWN
  I $E(X)="]" S DRS=9,X=$E(X,2,999) G DIC:X]"",2
  G DIA^DIQQQ:X?."?" I $D(^DD(DI,"GR")) K Y S Y=-1 D:$L(X)<31

@@ -1,6 +1,6 @@
 DIAXM ;SFISC/DCM-PROCESS MAPPING INFORMATION ;6/16/93  4:04 PM
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 ASK S DIAXTAB=DL+DL-2 S:DJ DIAXTAB=DIAXTAB+1
  I $D(DC(DC)),$P(DC(DC),U,3)]"",'DINS S DIAXDEF=$P($G(^DD(DIAXF,$P(DC(DC),U,3),0)),U)_"// "
  W !?DIAXTAB,"MAP ",DIAXDICA," TO ",DIAXEF,$S($D(DIAXSB):" SUB-FIELD: ",1:" FIELD: ") W:'DINS $G(DIAXDEF)

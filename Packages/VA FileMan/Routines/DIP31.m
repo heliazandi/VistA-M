@@ -1,6 +1,6 @@
 DIP31 ;SFISC/TKW-ASK USER QUESTIONS ABOUT HEADING ;7:19 AM  27 May 1999
- ;;22.0;VA FileMan;**2**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 HQ N DISAVX,Y,DA,DIZ S DISAVX=X K DIR,DTOUT,DUOUT,DIRUT
  G:$D(DISUPNO)!($D(DIPCRIT)) HQ1 S DISUPNO=0,DIPCRIT=0
  I $D(DIS)>9 S DIZ(1)=$$EZBLD^DIALOG(8006),DIZ(2)=$$EZBLD^DIALOG(8038)

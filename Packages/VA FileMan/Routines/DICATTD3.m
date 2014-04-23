@@ -1,6 +1,6 @@
-DICATTD3 ;GFT;09:06 AM  21 Jan 1999;SET OF CODES
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DICATTD3 ;GFT/GFT - Set of Codes ;09:06 AM  21 Jan 1999
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 Y(ORDER,CM) ;
  S Y=$P($P(DICATT3,";",ORDER),":",CM) Q

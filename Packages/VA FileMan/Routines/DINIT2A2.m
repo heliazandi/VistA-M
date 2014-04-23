@@ -1,5 +1,5 @@
 DINIT2A2 ;SFISC/MKO-KEY AND INDEX FILES ;11:29 AM  19 Nov 2012
- ;;22.0;VA FileMan;**1,167**;Mar 30, 1999;Build 18
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
  ;Per VHA Directive 2004-038, this routine should not be modified.
  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) S @X=Y
  G ^DINIT2A3
@@ -17,7 +17,7 @@ Q Q
  ;;^DD(.11,2.1,21,4,0)
  ;;=LOGIC.
  ;;^DD(.11,2.1,21,5,0)
- ;;= 
+ ;;=
  ;;^DD(.11,2.1,21,6,0)
  ;;=Assume the DA array describes the record to be cross-referenced, and that
  ;;^DD(.11,2.1,21,7,0)
@@ -27,7 +27,7 @@ Q Q
  ;;^DD(.11,2.1,21,9,0)
  ;;=also equals X(order#) of the lowest order number.
  ;;^DD(.11,2.1,21,10,0)
- ;;= 
+ ;;=
  ;;^DD(.11,2.1,21,11,0)
  ;;=When fields that make up a cross-reference are edited and the kill and set
  ;;^DD(.11,2.1,21,12,0)
@@ -89,7 +89,7 @@ Q Q
  ;;^DD(.11,2.4,21,8,0)
  ;;=also equals X(order#) of the lowest order number.
  ;;^DD(.11,2.4,21,9,0)
- ;;= 
+ ;;=
  ;;^DD(.11,2.4,21,10,0)
  ;;=When fields that make up a cross-reference are edited and the kill and set
  ;;^DD(.11,2.4,21,11,0)
@@ -199,6 +199,6 @@ Q Q
  ;;^DD(.111,1,21,3,0)
  ;;=logic must invoke the additional code stored in this overflow node.
  ;;^DD(.111,1,21,4,0)
- ;;= 
+ ;;=
  ;;^DD(.111,1,21,5,0)
  ;;=The M code can assume that DIXR contains the internal entry number of the

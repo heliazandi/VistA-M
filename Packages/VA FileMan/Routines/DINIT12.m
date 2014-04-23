@@ -1,6 +1,7 @@
-DINIT12 ;SFISC/GFT,XAK-INITIALIZE VA FILEMAN ;16FEB2010
- ;;22.0;VA FileMan;**104,163**;Mar 30, 1999;Build 1
+DINIT12 ;SFISC/GFT,XAK-INITIALIZE VA FILEMAN ;23FEB2010
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
  ;Per VHA Directive 2004-038, this routine should not be modified.
+ ;**CCO/NI TAGS 'EGP'& 'EGP+1' ADDED TO CREATE NEW FIELDS IN PRINT TEMPLATES, TO REMEMBER THE DEVELOPER'S LANGUAGE, T+1 FOR DATE FORMAT
 DD F I=1:1 S X=$T(DD+I),Y=$P(X," ",3,99) G T:X?.P S @("^DD("_$E($P(X," ",2),3,99)_")=Y")
  ;;.4,0 FIELD^^1819^21
  ;;.4,0,"DT" 2950909
@@ -41,7 +42,7 @@ DD F I=1:1 S X=$T(DD+I),Y=$P(X," ",3,99) G T:X?.P S @("^DD("_$E($P(X," ",2),3,99
  ;;.4001,.01,0 DESCRIPTION^W^^0;1^Q
  ;
 T ;
- ;;N D,D1,D2 S D2=^(0) S:$X>30 D1(1,"F")="!" S D=$P(D2,U,2) S:D D1(2)="("_$$FMTE^DILIBF(D)_")",D1(2,"F")="?30" S D=$P(D2,U,5) S:D D1(3)=" User #"_D,D1(3,"F")="?50" S D=$P(D2,U,4) S:D D1(4)=" File #"_D,D1(4,"F")="?59" D EN^DDIOL(.D1)
+ ;;N D,D1,D2 S D2=^(0) S:$X>30 D1(1,"F")="!" S D=$P(D2,U,2) S:D D1(2)="("_$$DATE^DIUTL(D)_")",D1(2,"F")="?30" S D=$P(D2,U,5) S:D D1(3)=" User #"_D,D1(3,"F")="?50" S D=$P(D2,U,4) S:D D1(4)=" File #"_D,D1(4,"F")="?59" D EN^DDIOL(.D1)
  S ^DD(.4,0,"ID","WRITE")=$P($T(T+1),";",3,99)
  S %X="^DD(.4," S %Y="^DD(.402," D %XY^%RCR
  S %X="^DD(.4001," S %Y="^DD(.4021," D %XY^%RCR
@@ -58,7 +59,7 @@ DD1 F I=1:1 S X=$T(DD1+I),Y=$P(X," ",3,99) G DD2:X?.P S @("^DD("_$E($P(X," ",2),
  ;;.402,0,"ID","WRITED" I $G(DZ)?1"???".E N % S %=0 F  S %=$O(^DIE(Y,"%D",%)) Q:%'>0  I $D(^(%,0))#2 D EN^DDIOL(^(0),"","!?5")
  ;;.4,1620,9 ^
  ;;.4,1620,9.01
- ;;.4,1620,9.1 D ^DIET
+ ;;.4,1620,9.1 
  ;;.402,1620,0 EDIT FIELDS^Cm^^ ; ^D EN^DIET
  ;;.402,1620,21,0 ^
  ;;.402,1620,21,1,0 This multi-line field displays all the "EDIT" prompts of this Input Template
@@ -69,8 +70,13 @@ DD1 F I=1:1 S X=$T(DD1+I),Y=$P(X," ",3,99) G DD2:X?.P S @("^DD("_$E($P(X," ",2),
  ;;.4,1819,9 ^
  ;;.4,1819,9.01
  ;;.4,1819,9.1 S X=$S('$D(^DIPT(D0,"ROU"))#2:"NO",^("ROU")="":"NO",1:"YES")
+EGP ;;.4,1819.1,0 LANGUAGE IN WHICH COMPILED^P.85^DI(.85,^ROULANG;1
+ ;;.4,709.1,0 LANGUAGE OF HEADING^P.85^DI(.85,^HLANG;1
  ;;.402,1819,0 COMPILED^CJ3^^ ; ^S X=$S('$D(^DIE(D0,"ROU"))#2:"NO",^("ROU")="":"NO",1:"YES")
  ;;.402,1819,9.1 S X=$S('$D(^DIE(D0,"ROU"))#2:"NO",^("ROU")="":"NO",1:"YES")
+ ;;.402,1819,9 ^
+ ;;.402,1819,9.01
+ ;;.402,21400,0 BUILD(S)^Cmp9.6^^ ; ^N DIENAME,D S DIENAME=$P($G(^DIE(D0,0)),U)_"    FILE #"_$P($G(^(0)),U,4) F D=0:0 S D=$O(^XPD(9.6,D)) Q:'D  I $D(^(D,"KRN",.402,"NM","B",DIENAME)) N D0 S D0=D,X=$P(^XPD(9.6,D,0),U) X DICMX Q:'$D(D)
  ;;
 DD2 N DICNT F DICNT=0:1:7 D @("^DINIT12"_DICNT)
  K DICNT G ^DINIT13

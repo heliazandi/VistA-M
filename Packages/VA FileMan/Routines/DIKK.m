@@ -1,6 +1,6 @@
 DIKK ;SFISC/MKO-CHECK KEY INTEGRITY ;9:14 AM  23 Feb 1999
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 INTEG(DIFILE,DIREC,DIFLD,DIKKEY,DICTRL,DIKPROC) ;
  N DA,DIF,DIKERR,DIKFIL,DIKKQUIT,DIMF,DIROOT,DITAR

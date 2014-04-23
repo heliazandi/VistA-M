@@ -1,6 +1,6 @@
-DICUIX1 ;SF/TOAD/TKW-FileMan: Lookup Tools, Indexes (called by DICUIX) ;4/13/00  13:40
- ;;22.0;VA FileMan;**4,28,3**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DICUIX1 ;SF/TOAD/TKW-FileMan: Lookup Tools, Indexes (called by DICUIX) ;4JUL2008
+ ;;22.2;VA FILEMAN;;Mar 28, 2013;
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 GET(DITOP,DIFILE,DIFIELD,DIDEF,DICODE) ;
  ; get the definition and fetch code for a field
@@ -22,6 +22,7 @@ G2 ; piece out the fields data type, & handle multiples and WPs
 G3 ; handle computed fields
  ;
  I DITYPE["C" D  Q
+ .I DITYPE["m" D ERR^DICU1(520,DIFILE,"",DIFIELD,"Multiple Computed") Q  ;**GFT
  . S DICODE=$P(DIDEF,U,5,9999)
  . S DIDEF=$P(DIDEF,U,1,4)
  ;

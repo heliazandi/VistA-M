@@ -1,6 +1,6 @@
 DICF5 ;SEA/TOAD,SF/TKW-VA FileMan: Finder, (Other lookup value transform) ;5/26/99  10:05
- ;;22.0;VA FileMan;**4**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 PREPS(DIFLAGS,DISUB,DINDEX,DINODE,DIVALUE) ;
  ; transform value for indexed set of codes field

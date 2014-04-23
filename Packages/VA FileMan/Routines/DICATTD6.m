@@ -1,6 +1,6 @@
-DICATTD6 ;GFT;09:51 AM  3 Dec 2002;COMPUTED FIELD
- ;;22.0;VA FileMan;**42,118**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DICATTD6 ;GFT/GFT - Computed Field;12:54 PM  21 Mar 2001
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
  ;78 = COMPUTED EXPRESSION
  ;79 = TYPE OF RESULT

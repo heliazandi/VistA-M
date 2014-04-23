@@ -1,6 +1,6 @@
-DICATTD5 ;GFT ;06:12 PM  23 Nov 1998
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DICATTD5 ;GFT/GFT - SUBDICTIONARY NUMBER FOR MULTIPLE FIELDS IN SCREENMAN ;06:12 PM  23 Nov 1998
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 SUBDIC ;
  N %,DE
  S %=$P(DICATTA,"."),DE=%_"."_+$P(DICATTA,".",2)_DICATTF

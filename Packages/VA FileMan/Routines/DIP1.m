@@ -1,6 +1,6 @@
-DIP1 ;SFISC/GFT,TKW-PROCESS FROM-TO ;02:37 PM  30 Apr 2002
- ;;22.0;VA FileMan;**2,25,34,64,79,97**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DIP1 ;SFISC/GFT,TKW-PROCESS FROM-TO ;11:38 AM  9 Aug 2002
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  D DJ Q
 DUP D DPQ G DIP1^DIQQQ:$D(A(1))
  I '($D(BY)#2),$D(DPP((+$G(DPP(0))+2),"T"))!$D(DPP((+$G(DPP(0))+3)))!$D(DPP(0))!$D(DXS) S DK=S G S^DIBT
@@ -33,26 +33,26 @@ J ;
  E  S DC=$P(DPP(DJ),U,7,8),DIPR=$P(DPP(DJ),";""",2,99),DIPR=$P(DIPR,"""",1,$L(DIPR,"""")-1),DIPR=$S(DIPR'="":DIPR,1:R),%=$E(DIPR,$L(DIPR)-1,$L(DIPR)),%=$S(%=": ":2,$E(%,2)=":":1,1:0) I % S DIPR=$E(DIPR,1,$L(DIPR)-%)
  K DIC,DIARE,DIARS N DIFRTO
 S K DIERR,DPP(DJ,"SRTTXT")
- S A="FIRST",DIFRTO="?" I 'L I $D(FR)#2!($O(FR(0))) D Z("FR") I DIFRTO'="?" G S0
+ S A=$$EZBLD^DIALOG(7070),DIFRTO="?" I 'L I $D(FR)#2!($O(FR(0))) D Z("FR") I DIFRTO'="?" G S0 ;**CCO/NI 'FIRST'
  I $D(DISV) D FROM^DIARCALC
-PREV K DIR I $G(F3)]"" S A=F3,X=$G(DPP(DJ,"TXT")) S:X="" X=$G(DIPP(DIJ,"TXT")) I X]"" S DIR("A",1)=$J("",DJ-1*2)_"* Previous selection: "_X
- S DIR(0)="FO^1:245",DIR("A")=$J("",DJ-1*2)_"START WITH "_DIPR,DIR("?")="^D DIP1^DIQQ(1)" S:A]"" DIR("B")=A
+PREV K DIR I $G(F3)]"" S A=F3,X=$G(DPP(DJ,"TXT")) S:X="" X=$G(DIPP(DIJ,"TXT")) I X]"" ;S DIR("A",1)=$J("",DJ-1*2)_"* Previous selection: "_X
+ S DIR(0)="FO^1:245",DIR("A")=$J("",DJ-1*2)_$$EZBLD^DIALOG(7068,DIPR),DIR("?")="^D DIP1^DIQQ(1)" S:A]"" DIR("B")=A ;**CCO/NI 'START WITH'
  D ^DIR W:$D(DTOUT) $C(7) G Q:$D(DTOUT)!$D(DUOUT)
- I X="FIRST" S A="FIRST",X=""
+ I X=$$EZBLD^DIALOG(7070) S A=X,X="" ;**CCO/NI
  K DIR,DIRUT,DIROUT,DIERR
-S0 I X="",A="FIRST" D:$P(DPP(DJ),U,5)[";TXT" STXT(DJ,"","",DITYP) D OPT^DIP12 Q
+S0 I X="",A=$$EZBLD^DIALOG(7070) D:$P(DPP(DJ),U,5)[";TXT" STXT(DJ,"","",DITYP) D OPT^DIP12 Q  ;**CCO/NI
  S Y(0)="" D CK^DIP12:X'="" I X'="" I X'?.ANP!($D(DIERR)) G:DIFRTO="?" S G Q
-QUOTE I $A(X)=34,'$G(DIQUIET),DIFRTO="?" W !,"(Note that this value, starting with a quote (""""), precedes all alphanumerics)"
+QUOTE I $A(X)=34,'$G(DIQUIET),DIFRTO="?" D BLD^DIALOG(7075),MSG^DIALOG("WH")
  D PAR(1)
  D FRV
  S Y=Y_U_X S:Y(0)]"" Y=Y_U_Y(0) S (B,DPP(DJ,"F"))=Y
-T K DIERR S Y="z",A="LAST",DIFRTO="?" I 'L I $D(TO)#2!($O(TO(0))) D Z("TO") I DIFRTO'="?" G T0
+T K DIERR S Y="z",A=$$EZBLD^DIALOG(7071),DIFRTO="?" I 'L I $D(TO)#2!($O(TO(0))) D Z("TO") I DIFRTO'="?" G T0 ;**CCO/NI
  I $D(DISV) D TO^DIARCALC
  G T0:$G(DIAR)=4
-TOPR K DIR S DIR(0)="FO^1:245",DIR("A")=$J("",DJ-1*2)_"GO TO "_DIPR,DIR("?")="^D DIP1^DIQQ(2)" D  S:A]"" DIR("B")=A
- .I $G(T3)]"" S A=T3 I $G(T1)]"",$$BEF^DIU5(T1,$P(B,U)) S A="LAST"
+TOPR K DIR S DIR(0)="FO^1:245",DIR("A")=$J("",DJ-1*2)_$$EZBLD^DIALOG(7069,DIPR),DIR("?")="^D DIP1^DIQQ(2)" D  S:A]"" DIR("B")=A
+ .I $G(T3)]"" S A=T3 I $G(T1)]"",$$BEF^DIU5(T1,$P(B,U)) S A=$$EZBLD^DIALOG(7071) ;*CCO/NI 'LAST'
  D ^DIR W:$D(DTOUT) $C(7) G Q:$D(DUOUT)!($D(DTOUT))
- I X="LAST" S X="",Y="z"
+LAST I X=$$EZBLD^DIALOG(7071) S X="",Y="z" ;**CCO/NI
  K DIR,DIRUT,DIROUT,DIERR
 T0 S Y(0)=""
  D STXT(DJ,B,"^"_X,DITYP)

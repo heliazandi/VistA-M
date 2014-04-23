@@ -1,5 +1,5 @@
 DDUCHK1 ;SFISC/RWF-CHECK DD part 2 ;3JUNE2011
- ;;22.0;VA FileMan;**130,168**;Mar 30, 1999;Build 25
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
  ;Per VHA Directive 2004-038, this routine should not be modified.
 ID S DDUCRFE="" F DDUCZ=0:0 S DDUCRFE=$O(^DD(DDUCFI,0,"ID",DDUCRFE)) Q:DDUCRFE=""  S DDUCX=$S($D(^DD(DDUCFI,0,"ID",DDUCRFE))#2:^(DDUCRFE),1:"") I DDUCX="Q" W !?5,"'ID' node for field ",DDUCRFE," = 'Q'" D:DDUCFIX ID1
  Q

@@ -1,5 +1,5 @@
 DIKCP1 ;SFISC/MKO-PRINT INDEX(ES) ;20DEC2010
- ;;22.0;VA FileMan;**20,167**;Mar 30, 1999;Build 18
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
  ;Per VHA Directive 2004-038, this routine should not be modified.
 PRINDEX ;Come here from PRINDEX^DIKCP
  Q:'$G(XR)

@@ -1,6 +1,6 @@
-DINIT00N ; SFISC/TKW-DIALOG & LANGUAGE FILE INITS ; 3/30/99  10:41:48
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DINIT00N ; SFISC/TKW-DIALOG & LANGUAGE FILE INITS ;06:19 PM  21 Aug 2002
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) S @X=Y
 Q Q
  ;;^UTILITY(U,$J,.84,9026,5,0)
@@ -128,7 +128,7 @@ Q Q
  ;;^UTILITY(U,$J,.84,9033,2,0)
  ;;=^^1^1^2940310^
  ;;^UTILITY(U,$J,.84,9033,2,1,0)
- ;;=Enter either RETURN or '^'
+ ;;=Enter either <Enter> or '^'
  ;;^UTILITY(U,$J,.84,9034,0)
  ;;=9034^2^^5
  ;;^UTILITY(U,$J,.84,9034,1,0)
@@ -172,7 +172,7 @@ Q Q
  ;;^UTILITY(U,$J,.84,9037,2,2,0)
  ;;=Enter 'N' or '^' to exit without saving.
  ;;^UTILITY(U,$J,.84,9037,2,3,0)
- ;;=Press 'RETURN' to return to form
+ ;;=Press <Enter> to return to form
  ;;^UTILITY(U,$J,.84,9038,0)
  ;;=9038^3^^5
  ;;^UTILITY(U,$J,.84,9038,1,0)
@@ -184,7 +184,7 @@ Q Q
  ;;^UTILITY(U,$J,.84,9038,2,1,0)
  ;;=Enter 'Y' to delete.
  ;;^UTILITY(U,$J,.84,9038,2,2,0)
- ;;=Enter 'N' or 'RETURN' to return to form.
+ ;;=Enter 'N' or <Enter> to return to form.
  ;;^UTILITY(U,$J,.84,9040,0)
  ;;=9040^2^^5
  ;;^UTILITY(U,$J,.84,9040,1,0)

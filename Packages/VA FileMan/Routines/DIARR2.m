@@ -1,6 +1,6 @@
 DIARR2 ;SFISC/DCM-ARCHIVING(READ ARCHIVED FG) PROCESS REQUEST ;11/18/92  11:29 AM
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  I $D(DIARIDX) D PROC^DIARR6 G C
  ;
 FG F DIARZ=1:1 X DIARX Q:(DIARL="#$#")  S ^TMP("DIARFG",$J,DIARZ)=DIARL D:DIARL="$END DAT" FG1

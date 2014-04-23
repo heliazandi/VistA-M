@@ -1,6 +1,6 @@
-DIE3 ;SFISC/XAK-PROCESS SINGLE-VALUED VARIABLE PNTR ;5:50 AM  13 Feb 2003
- ;;22.0;VA FileMan;**4,123**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DIE3 ;SFISC/XAK-PROCESS SINGLE-VALUED VARIABLE PNTR ;03:06 PM  14 Feb 2003
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 V ;
  S DIEX=X ;I $D(DNM) S DIDS=D
  G ALL:X'["." S DIVP=$P(X,"."),X=$P(X,".",2,999),Y=-1,A9=1 I X="" G Q
@@ -38,7 +38,7 @@ H S DDH=$S($D(DDH):DDH+1,1:1),DDH(DDH,A1)=DST K DST Q
  ;
 H1 ;also called by DICM3
  W:'$D(DDS) !
- S A1="T",DST=$$EZBLD^DIALOG(8070,$P(DIVPDIC,U,2))
+EGP S A1="T",DST=$$EZBLD^DIALOG(8070,$$FILENAME^DIALOGZ(+DIVPDIC)) ;** 'SEARCHING FOR A ...'
 S I $D(DDS) D H S DDD=1 D ^DDSU K DDD G QS
  I A1["T" W !,DST G QS
  I A1["Q" S %=+$P(DST,U,1) W !,$P(DST,U,2) D YN^DICN G QS

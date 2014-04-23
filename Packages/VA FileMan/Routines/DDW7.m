@@ -1,6 +1,6 @@
 DDW7 ;SFISC/MKO-MARK TEXT ;2:30 PM  27 Jul 2000
- ;;22.0;VA FileMan;**18**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 MARK ;Mark the text
  I $D(DDWMARK) D

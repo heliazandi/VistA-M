@@ -1,6 +1,7 @@
-DDBRGE ;SFISC/DCL-BROWSE GET/EXECUTE EVENT ;1:50 PM  7 Jan 2013
- ;;22.0;VA FileMan;**169**;Mar 30, 1999;Build 26
+DDBRGE ;SFISC/DCL-BROWSE GET/EXECUTE EVENT ;2013-01-22  3:34 PM
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
  ;Per VHA Directive 2004-038, this routine should not be modified.
+ ;
 EN N DDBGF
  D GETKEY
  S DDBRPE=0
@@ -149,13 +150,14 @@ BQT W $C(7)
  Q
 1 S DX=0,DY=$P(DDBRSA(1,"DDBSY"),";",4) X IOXY W $P(DDGLCLR,DDGLDEL) Q
 2 S DX=0,DY=$P(DDBRSA(2,"DDBSY"),";") X IOXY W $P(DDGLCLR,DDGLDEL) Q
-DDBMAP ;
+DDBMAP ; (CTRL+E ($C(5)) added by VEN/SMH for Fileman V22.2
  ;;LNU;AU;
  ;;LND;AD;
  ;;COLR;AR;
  ;;COLL;AL;
  ;;EXIT;F1_"E";
  ;;QUIT;F1_"Q";
+ ;;QUIT;$C(5);
  ;;PU;F1_AU;
  ;;PU;PREVSC;
  ;;PD;F1_AD;

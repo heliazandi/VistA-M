@@ -1,6 +1,6 @@
 DIKKUTL1 ;SFISC/MKO-KEY CREATION ;10:08 AM  12 Jan 2001
- ;;22.0;VA FileMan;**68**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 CREATE(DIKKTOP,DIKKFILE) ;Create a new key
  N DIKKEY,DIKKFDA,DIKKNAME,DIKKIEN

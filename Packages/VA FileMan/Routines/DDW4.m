@@ -1,6 +1,6 @@
 DDW4 ;SFISC/PD KELTZ-OTHER NAVIGATION, DEL ;2:54 PM  23 Aug 2000
- ;;22.0;VA FileMan;**18**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 TAB N DDWX
  S DDWX=$F(DDWRUL,"T",DDWC+1) G:'DDWX ERR

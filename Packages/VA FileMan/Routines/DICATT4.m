@@ -1,6 +1,6 @@
 DICATT4 ;SFISC/XAK-DELETE A FIELD ;12:39 PM  7 Mar 2002
- ;;22.0;VA FileMan;**26,52,82,106**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 DIEZ S DI=A,DA=D0 D DIPZ^DIU0
  K ^DD(A,0,"ID",D0),^DD(A,0,"SP",D0)
 EN I $O(@(I(0)_"0)"))>0 D

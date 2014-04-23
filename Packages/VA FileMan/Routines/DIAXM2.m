@@ -1,6 +1,6 @@
 DIAXM2 ;SFISC/DCM-PROCESS MAPPING INFORMATION (CONT) ;3/11/93  2:59 PM
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 P K DIC
  ;
 P1 S DIC="^DD("_+$P($P(Y(0),U,2),"P",2)_",",DIC(0)="Z",X=.01

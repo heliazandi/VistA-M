@@ -1,6 +1,6 @@
 DIKKDD ;SFISC/MKO-DATA DICTIONARY CODE FOR KEY FILE ;1:49 PM  8 Sep 1997
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 ITFLD ;Input transform for field
  Q:'$D(DA)  Q:'$D(DA(1))
  N DIKKFILE

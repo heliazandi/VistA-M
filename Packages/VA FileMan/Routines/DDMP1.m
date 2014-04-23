@@ -1,6 +1,6 @@
 DDMP1 ;SFISC/DPC-ASCII IMPORT UTIILTIES ;9/19/96  14:58
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 GETFMT(DDMPFMT) ;
  ; Sets up format info.
  ;DDMPFMT passed by reference.

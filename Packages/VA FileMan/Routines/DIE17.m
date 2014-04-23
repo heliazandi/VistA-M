@@ -1,6 +1,6 @@
-DIE17 ;SFISC/GFT-COMPILED TMPLT UTIL ;9:08 AM  22 Oct 1999
- ;;22.0;VA FileMan;**4,11**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DIE17 ;SFISC/GFT-COMPILED TMPLT UTIL ;03:47 PM  13 Aug 2002
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  I $D(DTOUT) S X="" G OUT
  G:$A(X)-94 X:'$P(DW,";E",2),@("T^"_DNM)
  I $D(DIE("NO^")),X=U,DIE("NO^")'["OUTOK" W !?3,"EXIT NOT ALLOWED " S D="" G X
@@ -131,7 +131,7 @@ UNIQUE(X,DA,DIUIR,DISETX,DIMAXL) ;
 UNIQFERR ;The field is part of a key and is not unique
  I '$D(ZTQUEUED),'$D(DDS) D
  . W $C(7)_"??"
- . W:'$D(DB(DQ)) !,"     Another entry already exists with this key value."
+ . W:'$D(DB(DQ)) !,"     ",$$EZBLD^DIALOG(3094)
  K DIEFXREF S ^("N")=@DIEZTMP@("V",DP,DIIENS,DIFLD,"O")
  G:$D(DB(DQ)) Z
  S X="?BAD"

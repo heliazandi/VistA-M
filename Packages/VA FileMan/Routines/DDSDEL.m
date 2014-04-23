@@ -1,6 +1,6 @@
-DDSDEL ;SFISC/MKO-DELETE FORMS FOR A FILE ;3:06 PM  2 Nov 1998
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DDSDEL ;SFISC/MKO-DELETE FORMS FOR A FILE ;24JUL2003
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 FORM(DDSFILE,DDSECHO) ;
  ;Delete all forms/blocks associated with file DDSFILE
@@ -44,7 +44,7 @@ QUIT ;Cleanup and quit
  ;
 SETUP ;Setup local variables
  S:$D(DDSECHO)[0 DDSECHO=0
- S DDSREF="^TMP(""DDSDEL"","_$J_")"
+ S DDSREF="^TMP(""DDSDEL"","""_$J_""")" ;IF $J IS NOT NUMERIC
  K @DDSREF
  Q
  ;

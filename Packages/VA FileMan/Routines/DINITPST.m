@@ -1,6 +1,6 @@
 DINITPST ;SFISC/MKO-POST INIT FOR DINIT ;9:31 AM  23 Mar 1999
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  N %,%Y,C,D,D0,DI,DIV,DQ
  ;
  ;Delete ^DIPT("EX") index (also done in patch DI*21*8 in DIPOST)

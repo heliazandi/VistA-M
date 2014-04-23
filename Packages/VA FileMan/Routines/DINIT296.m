@@ -1,6 +1,6 @@
-DINIT296 ;SFISC/MKO-FORM AND BLOCK FILES ;10:49 AM  30 Mar 1999
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DINIT296 ;SFISC/MKO-FORM AND BLOCK FILES ;05:32 PM  14 Aug 2002
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) S @X=Y
  G ^DINIT297
 Q Q
@@ -107,9 +107,9 @@ Q Q
  ;;^DD(.4044,3.1,1,1,0)
  ;;=.4044^D^MUMPS
  ;;^DD(.4044,3.1,1,1,1)
- ;;=S ^DIST(.404,DA(1),40,"D",$TR(X,"abcdefghijklmnopqrstuvwxyz","ABCDEFGHIJKLMNOPQRSTUVWXYZ"),DA)=""
+ ;;=S ^DIST(.404,DA(1),40,"D",$$UP^DILIBF(X),DA)=""
  ;;^DD(.4044,3.1,1,1,2)
- ;;=K ^DIST(.404,DA(1),40,"D",$TR(X,"abcdefghijklmnopqrstuvwxyz","ABCDEFGHIJKLMNOPQRSTUVWXYZ"),DA)
+ ;;=K ^DIST(.404,DA(1),40,"D",$$UP^DILIBF(X),DA)
  ;;^DD(.4044,3.1,1,1,3)
  ;;=Programmer only
  ;;^DD(.4044,3.1,1,1,"%D",0)

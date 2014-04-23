@@ -1,6 +1,7 @@
-DINIT121 ;SFISC/MKO-SORT TEMPLATE FILE ;1:13 PM  13 Nov 1998
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DINIT121 ;SFISC/MKO-SORT TEMPLATE FILE ;29MAR2010
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
+ ;.
  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) S @X=Y
  G ^DINIT122
 Q Q
@@ -44,13 +45,17 @@ Q Q
  ;;=
  ;;^DD(.401,1819,9.1)
  ;;=S X=$S($G(^DIBT(D0,"ROU"))]"":"YES",1:"NO")
+ ;;^DD(.401,6666,0)
+ ;;=ENTRIES^Cm^^ ; ^N FILE,DINAME,D S FILE=$P($G(^DIBT(D0,0)),U,4) I $D(^(1)) S DINAME=$G(^DIC(FILE,0,"GL"))_"D,0)" I DINAME[U F D=0:0 S D=$O(^DIBT(D0,1,D)) Q:'D  I $D(@DINAME) S X=$$GET1^DIQ(FILE,D,.01) X DICMX Q:'$D(D)
+ ;;^DD(.401,21400,0)
+ ;;=BUILD(S)^Cmp9.6^^ ; ^N DIBTNAME,D S DIBTNAME=$P($G(^DIBT(D0,0)),U)_"    FILE #"_$P($G(^(0)),U,4) F D=0:0 S D=$O(^XPD(9.6,D)) Q:'D  I $D(^(D,"KRN",.401,"NM","B",DIBTNAME)) N D0 S D0=D,X=$P(^XPD(9.6,D,0),U) X DICMX Q:'$D(D)
  ;;^DD(.401,491620,0)
  ;;=PRINT TEMPLATE^F^^DIPT;1^K:'$D(^DIPT("B",X)) X
  ;;^DD(.401,491620,4)
  ;;=N D1 S D1(1)="If this Sort Template should always be used with a particular",D1(2)="Print Template, enter the name of that Print Template.",D1(3)="" D EN^DDIOL(.D1)
  ;;^DD(.4011,0)
- ;;=FIELD^.01^.01^1
- ;;^DD(.4011,0,"NM","FIELD")
+ ;;=SEARCH SPECIFICATIONS SUB-FIELD^^.01^1
+ ;;^DD(.4011,0,"NM","SEARCH SPECIFICATIONS SUB-FIELD")
  ;;=
  ;;^DD(.4011,0,"UP")
  ;;=.401

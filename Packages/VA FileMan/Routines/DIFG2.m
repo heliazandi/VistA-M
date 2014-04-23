@@ -1,6 +1,6 @@
 DIFG2 ;SFISC/DG(OHPRD)-PROCESSING OF MULTIPLES FROM FILEGRAM ; [ 02/02/93  4:21 PM ]
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 START ;CALLED BY DIFG
  S DIFG=DIFG+1
  I DIFGMULT=0 S DIFGNDC=0,DIFGM(0)=DIC ;ENTERING HIGHEST LEVEL MULTIPLE

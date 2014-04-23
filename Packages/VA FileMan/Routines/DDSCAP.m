@@ -1,6 +1,6 @@
-DDSCAP ;SFISC/MKO-INPUT TRANSFORM FOR CAPTIONS ;10:45 AM  6 Mar 1996
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DDSCAP ;SFISC/MKO-INPUT TRANSFORM FOR CAPTIONS ;01:24 PM  14 Aug 2002
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 FUNC(X) ;
  Q:$E(X)'="!"
@@ -44,4 +44,4 @@ DUP(X1,X) ;;The DUP function
  Q X
  ;
 UPCASE(X) ;Convert X to uppercase
- Q $TR(X,"abcdefghijklmnopqrstuvwxyz","ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+ Q $$UP^DILIBF(X)  ;**

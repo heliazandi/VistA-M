@@ -1,6 +1,6 @@
-DDGLIBH ;SFISC/MKO-SCREEN EDITOR HELP ;08:00 AM  23 Feb 1995
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DDGLIBH ;SFISC/MKO-SCREEN EDITOR HELP ; 15NOV2012
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 HLP(DDGLHN1,DDGLHN2,DDGLSUB,DDGLPLN) ;
  ;DDGLHN1  = Entry number in Dialog file of first help screen
@@ -44,7 +44,7 @@ PT ;Prompt for device and print
  S DY=IOTM+1,DX=0 X IOXY
  ;
  X DDGLZOSF("EON"),DDGLZOSF("TRMOFF")
- S X=$G(IOM,80) X ^%ZOSF("RM")
+ S X=$G(IOM,80) X DDGLZOSF("RM") ; VEN/SMH changed.
  W $P(DDGLVID,DDGLDEL,9)
  ;
 DEVICE ;Device prompt
@@ -68,8 +68,9 @@ DEVICE ;Device prompt
  . K ZTSK
  . S IOP="HOME" D ^%ZIS
  ;
- E  I $E(IOST,1,2)="C-" D  G DEVICE
+ E  I $E(IOST,1,2)="C-" D
  . W !,$C(7)_"You cannot print the help screens on a CRT.",!
+ . H 2
  ;
  ;Non-queued report
  E  D
@@ -80,7 +81,7 @@ DEVICE ;Device prompt
  ;
  ;Repaint help screen
  X DDGLZOSF("EOFF"),DDGLZOSF("TRMON")
- S X=0 X ^%ZOSF("RM")
+ S X=0 X DDGLZOSF("RM") ; VEN/SMH changed.
  W $P(DDGLVID,DDGLDEL,8)
  D DISP(DDGLSC)
  Q

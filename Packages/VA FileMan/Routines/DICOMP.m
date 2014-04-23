@@ -1,6 +1,7 @@
-DICOMP ;SFISC/GFT-EVALUATE COMPUTED FLD EXPR ;27FEB2008
- ;;22.0;VA FileMan;**6,76,114,118,157**;;Build 1
+DICOMP ;SFISC/GFT-EVALUATE COMPUTED FLD EXPR ;16JUN2010
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
  ;Per VHA Directive 2004-038, this routine should not be modified.
+ ;
  S DICOMP=$G(DICOMP) N DLV,K S K=0 F DLV=0:1 G A:'$D(J(DLV+1))
 EN1 ;
  S K=0 F  S DLV=K,K=$O(I(K)) G A:K="",A:$D(J(K))[0!($D(I(K\100*100))[0)
@@ -27,11 +28,12 @@ N ;
  S DBOOL="><]['=!&"[X,Y="[]!&/\_><*="
 NOT I X="'" S %=$E(I,2) I "_"""[% G 0
  G N:Y'[X
-BINOP I ")"'[$E(I_W,M),$G(K(K))]"",'$D(K(K,2)),'$F($TR(DPUNC,")'"),K(K)),$F(Y,W)<2 D:X="_"  G N:K(K)'="'" S K(K)="'"_X,X="" G N:DBOOL
+BINOP I ")"'[$E(I_W,M),$G(K(K))]"" I '$D(K(K,2)),'$F($TR(DPUNC,")'"),K(K)),$F(Y,W)<2 D:X="_"  G N:K(K)'="'" S K(K)="'"_X,X="" G N:DBOOL
 CONCAT .I $D(DATE(K)) K DATE(K) S X=" S Y=X X ^DD(""DD"") S X=Y_"
 0 G 0^DICOMP1
  ;
-I I $A(I,M+1)=34 S M=$F(I,"""",M+2)-1 G I:M>0 S W=0,M=999,X=U Q
+I ;parse off the next element
+ I $A(I,M+1)=34 S M=$F(I,"""",M+2)-1 G I:M>0 S W=0,M=999,X=U Q
 MR F M=M+1:1 S W=$E(I,M) Q:DPUNC[W
  S X=$E(I,1,M-1) Q
  ;
@@ -45,10 +47,10 @@ DPS G 0:'DPS I $D(DPS(DPS,"ST")) D DPS^DICOMPW S:X]"" K=K+1,K(K)=X G DPS
 DUP I $D(DPS(DPS,"DUPLICATED")) D  G 0:'DPS
  .I $G(Y(0))'[U S DPS=0 Q
  .S Y=$O(^DD(J(DLV),"B",$P(Y(0),U),0)) I 'Y S DPS=0 Q
- .F T=0:0 S T=$O(^DD(J(DLV),Y,1,T)) Q:'T  I +$G(^(T,0))=J(0),$P(^(0),U,3,99)="" S Y=$P(^(0),U,2) I Y?1U.AN Q  ;find a regular cross_refs
+ .F T=0:0 S T=$O(^DD(J(DLV),Y,1,T)) Q:'T  I +$G(^(T,0))=J(DLV0),$P(^(0),U,3,99)="" S Y=$P(^(0),U,2) I Y?1U.AN Q  ;find a regular cross_refs
  .I 'T F T=0:0 S T=$O(^DD("IX","F",J(DLV),Y,T)) Q:'T  I $P($G(^DD("IX",T,0)),U,4)="R",$P(^(0),U,6)="F",$P(^(0),U,9)=J(0) S Y=$P(^(0),U,2) Q  ;or find a regular INDEX
  .I 'T S DPS=0 Q
- .D DIMP^DICOMPZ("N Z S Z=X,X="""" I $L(Z) S Z=$O("_I(0)_""""_Y_""",Z,0)) I Z,Z-D0!$O(^(D0)) S X=1") S DPS(DPS)=X_" S X=X",DPS(DPS,"BOOL")=1
+ .D DIMP^DICOMPZ("N Z S Z=X,X="""" I $L(Z) S Z=$O("_I(DLV0)_""""_Y_""",Z,0)) I Z,Z-D0!$O(^(D0)) S X=1") S DPS(DPS)=X_" S X=X",DPS(DPS,"BOOL")=1
  D DPS^DICOMPW G N:'$D(W(DPS+1)),0
  ;
 FUNC S Y=+$O(^DD("FUNC","B",X,0)) I '$D(^DD("FUNC",Y,0)),X'?1N.N2A,X'?1"$"1U G V
@@ -68,7 +70,7 @@ B S M=M+1,W="" G 0:$E(I,M)=")",N
  .S DPS(DPS)=" K X"_%_DPS(DPS)
  S:%>1 W(DPS)=% Q
  ;
-ST ;
+ST ;stack
  N Y
  S DPS=DPS+1,%="",Y=K I $D(DBOOL) S DPS(DPS,"BOOL")=DBOOL K DBOOL
 S I 'Y S X="",DPS(DPS)=$P(" S X="_%_"X",U,%]"") Q

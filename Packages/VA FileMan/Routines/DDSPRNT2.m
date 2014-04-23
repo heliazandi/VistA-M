@@ -1,7 +1,6 @@
-DDSPRNT2 ;SFISC/MKO-PRINT A FORM ;10:52 AM  23 Aug 1995
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
- ;
+DDSPRNT2 ;SFISC/MKO-PRINT A FORM ;29JAN2004
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 BLOCK ;Print Block properties from Block file
  D WP^DDSPRNT($NA(^DIST(.404,DDSBK,15)),DDSCOL2+1,"AB") Q:$D(DIRUT)
  ;
@@ -71,8 +70,8 @@ FIELD ;Print Block properties
  D WR("EXECUTABLE DEFAULT:",$G(^DIST(.404,DDSBK,40,DDSFD,3.1))) Q:$D(DIRUT)
  ;
  I DDSFD(4)'?."^" D
- . D WR("REQUIRED:",$S($P(DDSFD(4),U):"YES",1:"")) Q:$D(DIRUT)
- . D WR("DISABLE EDITING:",$S($P(DDSFD(4),U,4):"YES",1:"")) Q:$D(DIRUT)
+ . D WR("REQUIRED:",$S($P(DDSFD(4),U):"YES",$P(DDSFD(4),U)=0:"NO",1:"")) Q:$D(DIRUT)
+ . D WR("DISABLE EDITING:",$S($P(DDSFD(4),U,4)=2:"REACHABLE",$P(DDSFD(4),U,4):"YES",1:"")) Q:$D(DIRUT)
  . D WR("RIGHT JUSTIFY:",$S($P(DDSFD(4),U,3):"YES",1:"")) Q:$D(DIRUT)
  . D WR("DISALLOW LAYGO:",$S($P(DDSFD(4),U,5):"YES",1:"")) Q:$D(DIRUT)
  K DDSFD(4)

@@ -1,6 +1,6 @@
-DIKCUTL ;SFISC/MKO-UTILITY OPTION TO MODIFY INDEX ;2:57 PM  25 Apr 2002
- ;;22.0;VA FileMan;**68,108**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DIKCUTL ;SFISC/MKO-UTILITY OPTION TO MODIFY INDEX ;26MAR2010
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 MOD ;Utility option to modify an index
  N DIKCCNT,DIKCFILE,DIKCQUIT,DIKCROOT,DIKCTOP,DIXR
@@ -23,6 +23,7 @@ REMOD ;Get and list indexes
  ;Delete
  I Y="D" D  G REMOD
  . S DIXR=$$CHOOSE^DIKCUTL2(.DIKCCNT,"delete") Q:'DIXR
+NODELETE . I $D(^DD("IX",DIXR,666)) W !?5,$C(7),"This Index cannot be deleted.",! S DIXR=0 Q  ;**GFT
  . I $D(^DD("KEY","AU",DIXR)) W ! D PRTMSG^DIKCUTL2(DIXR) Q
  . S DIR(0)="Y"
  . S DIR("A")="Are you sure you want to delete the index definition"

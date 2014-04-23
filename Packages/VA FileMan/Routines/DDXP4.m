@@ -1,6 +1,6 @@
 DDXP4 ;SFISC/DPC,S0-EXPORT DATA ;7:37 AM  30 May 2000
- ;;22.0;VA FileMan;**9,38**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 EN1 ;
  K ^UTILITY($J)
  D ^DICRW I Y=-1 G QUIT

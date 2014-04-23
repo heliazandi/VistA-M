@@ -1,6 +1,6 @@
 DICF0 ;SEA/TOAD,SF/TKW-VA FileMan: Finder, get alternate index ;2/8/00  11:11
- ;;22.0;VA FileMan;**28**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 ALTIDX(DINDEX,DIFILE,DIVALUE,DISCREEN,DINUMBER) ; Find alternate index when lookup value for first subscript is null.
  N DIX S DIX=DINDEX,DIX("WAY")=DINDEX("WAY"),DIX("OLDSUB")=DINDEX("#")
  D IDXOK(.DINDEX,DIFILE,.DIX) Q:DIX'=DINDEX

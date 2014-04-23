@@ -1,6 +1,6 @@
-DIFROMH ;SFISC/XAK-HELP FOR DIFROM ;03:19 PM  7 Sep 1994
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DIFROMH ;SFISC/XAK-HELP FOR DIFROM ; 31OCT2012
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;HELP FOR OPTIONS, BULLETINS, ETC.
  W !!?5,"YES means that you want to bring the ",$P(^DIC(DL,0),U)
  W "S in this namespace."
@@ -29,7 +29,7 @@ S ; HELP FOR SECURITY CODES
  Q
 M ; HELP FOR MAX RTN SIZE
  W !!?5,"Enter the maximum number of characters each routine should"
- W !?5,"contain.  This number must be between 2000 and 9999."
+ W !?5,"contain.  This number must be between 2000 and "_^DD("ROU")_"." ; VEN/SMH V22.2
  Q
  ;
 MSG ; HELP FOR MAILMAN MESSAGE

@@ -1,6 +1,6 @@
-DIU31 ;SFISC/GFT-UNEDITABLE, INPUT TRANS., OUTPUT TRANS. ;10/4/90  8:57 AM
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DIU31 ;SFISC/GFT-UNEDITABLE, INPUT TRANS., OUTPUT TRANS. ;10APR2003
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 9 ;
  S %=2,DA=+Y
@@ -11,17 +11,19 @@ DIU31 ;SFISC/GFT-UNEDITABLE, INPUT TRANS., OUTPUT TRANS. ;10/4/90  8:57 AM
  G DIEZ^DIU0
  ;
 5 W !,$P(Y,U,2) S DA=+Y,Y=$P(Y(0),U,5,99) S:$D(DDA) DDA=Y
- W " INPUT TRANSFORM: ",Y D RW^DIR2 Q:X=""  S %=$L($P(Y(0),U,1,4))+$L(X) I %>244 W !!?5,$C(7),"Input Transform is TOO LONG by ",%-244," characters.",! K X S Y=DA_U_$P(Y(0),U) G 5
+ W " INPUT TRANSFORM: ",Y D RW^DIR2 G MORE:X="" S %=$L($P(Y(0),U,1,4))+$L(X) I %>244 W !!?5,$C(7),"Input Transform is TOO LONG by ",%-244," characters.",! K X S Y=DA_U_$P(Y(0),U) G 5
  I $P(Y(0),U,2)["K",X'[" ^DIM" K X S Y=DA_U_$P(Y(0),U) W $C(7),!?5,"Input Transform must contain D ^DIM",! G 5
  I $P(Y(0),U,2)["F",X["DINUM" W $C(7),!?5,"DINUM on a Freetext field can cause database",!?5,"problems unless you are sure DINUM is numeric."
  D ^DIM I '$D(X) W $C(7),"??" S Y=DA_U_$P(Y(0),U) G 5
  S ^DD(DI,DA,0)=$P(Y(0),U,1,2)_$E("X",$P(Y(0),U,2)'["X")_U_$P(Y(0),U,3,4)_U_X
  I $D(DDA),DDA'=X S A0="INPUT TRANSFORM^.5",A1=DDA,A2=X D IT^DICATTA
- S DR="3:4" I $P(Y(0),U,2)["P" S %=$F(X," D ^DIC") I % S X=$E(X,1,%-8),%=$F(X,"DIC(""S"")=") I % S X=$E(X,%-9,$L(X)),^(12.1)="S "_X,DR=DR_";12EXPLANATION OF SCREEN"
- S DIE=DIC I $P(Y(0),U,2)["C" D PZ^DIU0 G Q
+ I $P(Y(0),U,2)["C" D PZ^DIU0 G Q
+MORE I $P(Y(0),U,2)["C" G Q
+ S DIE=DIC,DR="3:4" I $P(Y(0),U,2)["P" S %=$F(X," D ^DIC") I % S X=$E(X,1,%-8),%=$F(X,"DIC(""S"")=") I % S X=$E(X,%-9,$L(X)),^(12.1)="S "_X,DR=DR_";12EXPLANATION OF SCREEN"
  F %=3,4,12.1 S:$D(^DD(DI,DA,%)) ^UTILITY("DDA",$J,DI,DA,%)=^(%)
- S DDA=DI D ^DIE S DI=DDA D IT1^DICATTA,DIEZ^DIU0 G Q
- ;
+ D  D IT1^DICATTA,DIEZ^DIU0,LENGTH^DICATT2(DI,DA) G Q
+ .N DI D ^DIE
+  ;
 O S DIK=1,DJJ=+Y W !,$P(Y,U,2)_" OUTPUT TRANSFORM: "
  I '$D(^DD(DI,DJJ,2)) R X:DTIME I '$T S DTOUT=1 G Q
  I $D(^(2)) S (DIK,Y)=^(2) S:$D(DDA) DDA=Y S:$D(^(2.1)) Y=^(2.1) W Y D RW^DIR2 I X="@" W !?9,"DELETED!" K ^(2),^(2.1) S Y=$P(^(0),U,2),$P(^(0),U,2)=$P(Y,"O")_$P(Y,"O",2),%="" G EX

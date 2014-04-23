@@ -1,5 +1,5 @@
 DIK1 ;SFISC/GFT-ACTUAL INDEXER ;7SEP2011
- ;;22.0;VA FileMan;**1,10,41,146,160,165,169**;Mar 30, 1999;Build 26
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
  ;Per VHA Directive 2004-038, this routine should not be modified.
 EN N DIC D DI
  D

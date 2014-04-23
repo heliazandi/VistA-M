@@ -1,6 +1,6 @@
 DICU11 ;SEA/TOAD,SF/TKW-VA FileMan: Lookup Tools, Get IDs & Index ;11/5/99  15:13
- ;;22.0;VA FileMan;**17**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
  ; Routines called from DICU1
  ;

@@ -1,5 +1,5 @@
-DDGLIBP ;SFISC/MKO-PRINT FROM WITHIN SCREEN TOOLS ;10:27 AM  14 Feb 2013
- ;;22.0;VA FileMan;**169**;Mar 30, 1999;Build 26
+DDGLIBP ;SFISC/MKO-PRINT FROM WITHIN SCREEN TOOLS ;2013-03-04
+ ;;22.2;VA FILEMAN;;Mar 28, 2013;Build 19
  ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 PT(DDGLROOT,DDGLHDR) ;Prompt for device and print
@@ -12,7 +12,7 @@ PT(DDGLROOT,DDGLHDR) ;Prompt for device and print
  ;
  ;Set terminal characterstics for scroll mode
  X DDGLZOSF("EON"),DDGLZOSF("TRMOFF")
- S X=$G(IOM,80) X ^%ZOSF("RM")
+ S X=$G(IOM,80) X DDGLZOSF("RM")
  W $P(DDGLVID,DDGLDEL,9)
  ;
  W:$G(DDGLHDR)]"" "Document: "_DDGLHDR,!
@@ -78,7 +78,7 @@ DEVICE ;Device prompt
  ;
  ;Non-queued report
  D PRINT
- I $E(IOST,1,2)="C-" W @IOF W:$D(IOSTBM)#2 @IOSTBM
+ I $E(IOST,1,2)="C-" W @IOF W:$D(IOSTBM)#2 @IOSTBM ; Reset bottom margin
  X $G(^%ZIS("C"))
  D FINISH("Done.")
  Q
@@ -158,6 +158,6 @@ FINISH(DDGLMSG) ;Print message and reset terminal characteristics
  ;
  ;Reset terminal characteristics for screen handling
  X DDGLZOSF("EOFF"),DDGLZOSF("TRMON")
- S X=0 X ^%ZOSF("RM")
+ S X=0 X DDGLZOSF("RM")
  W $P(DDGLVID,DDGLDEL,8)
  Q

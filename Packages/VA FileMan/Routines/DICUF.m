@@ -1,6 +1,6 @@
-DICUF ;SEA/TOAD,SF/TKW-FileMan: Lookup Tools, Files ;2/6/98  08:13
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DICUF ;SEA/TOAD,SF/TKW-FileMan: Lookup Tools, Files ;12APR2008
+ ;;22.2;VA FILEMAN;;Mar 28, 2013;
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
  ;
 FILE(DIFILE,DIFIEN,DIFLAGS) ;
@@ -27,7 +27,7 @@ F3 ; set and check the Lister's IENS parameter
 F4 ; calculate the source file's global root (open & closed)
  ;
  S DIFILE(DIFILE)=$$ROOT^DIQGU(DIFILE,DIFIEN,1,1) Q:$G(DIERR)
- I DIFILE(DIFILE)'?1"^"1U.7UN.ANP,DIFILE(DIFILE)'?1"^%".7UN.ANP D  Q
+ I DIFILE(DIFILE)'?1"^"1A.ANP,DIFILE(DIFILE)'?1"^%".ANP D  Q  ;JIM SELF --ALLOW LC GLOBAL NAMES
  . D ERR(402,DIFILE,DIFIEN,"",DIFILE(DIFILE))
  S DIFILE(DIFILE,"O")=$$OREF^DIQGU(DIFILE(DIFILE))
  Q

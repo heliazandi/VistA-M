@@ -1,6 +1,6 @@
-DITR1 ;SFISC/GFT-FIND ENTRY MATCHES ;9:20 AM  15 Jun 2001
- ;;22.0;VA FileMan;**41**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DITR1 ;SFISC/GFT-FIND ENTRY MATCHES ;04:12 PM  3 Dec 2002
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  S W=DMRG,X=$P(Z,U),%=DFL\2,Y=@("D"_%),A=1 S:$G(DIFRDKP) DIFRNOAD=$D(@DIFRSA@("^DD",DIFRFILE,DDT(DTL),.01,0))
  N DIMATCH S DIMATCH=0
  G WORD:$P(^DD(DDT(DTL),.01,0),U,2)["W",Q:X="",ON:'W
@@ -76,7 +76,7 @@ P S A=$P(^DD(DIFL,DIREC,0),U,4)
  I % S W=$P(^(W),U,%)
  E  S W=$E(^(W),+$E(W,2,9),$P(W,",",2))
  Q:DIKEY
- I %["F",W?.E1L.E F %=1:1:$L(W) I $E(W,%)?1L S W=$E(W,0,%-1)_$C($A(W,%)-32)_$E(W,%+1,999)
+UP I %["F" S W=$$UP^DILIBF(W)
  Q
  ;
 MATCHKEY(DIKEY,V,A,DIMATCH) ; Match Primary Key fields

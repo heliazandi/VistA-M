@@ -1,6 +1,6 @@
 DIFROM12 ;SFISC/XAK-CREATES RTN ENDING IN INIT1 ;12:50 PM  28 Sep 1998
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 VER ;
  W !!?5,"Now you must enter the information that goes on the second line",!?5,"of the INIT routines.",!
  G:DPK<1 V2

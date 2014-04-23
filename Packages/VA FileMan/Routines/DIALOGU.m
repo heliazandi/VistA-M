@@ -1,6 +1,7 @@
-DIALOGU ;SFISC/MMW - FUNCTIONS FOR DIALOGS ;11/21/94  13:26
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DIALOGU ;SFISC/MMW - FUNCTIONS FOR DIALOGS ;24MAR2010
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
+ ;
  Q  ;not for interactive use
 OUT(Y,DIALF,%F) ;convert FileMan Data to language dependant output format
  ;Y is the value to transform, DIALF is the type of data
@@ -9,7 +10,7 @@ OUT(Y,DIALF,%F) ;convert FileMan Data to language dependant output format
  ;for the english language (entry #1) but may also have corresponding
  ;entries for other languages
  I $D(Y)[0!($G(DIALF)="") Q ""
- N DINAKED,DIY S DINAKED=$$LGR^%ZOSV
+ N DINAKED,DIY S DINAKED=$NA(^(0))
  N DILANG S DILANG=+$G(DUZ("LANG")) S:DILANG<1 DILANG=1
  S DIY=$G(^DI(.85,DILANG,DIALF)) I DIY="" S:DILANG'=1 DIY=$G(^DI(.85,1,DIALF)) I DIY="" S Y="" G Q
  X DIY
@@ -26,7 +27,7 @@ PRS(D0,X) ;parse language dependant user input
  ;plus the corresponding english text. If no match was found -1 will
  ;be returned. If there is no user input the function returns the
  ;null string.
- N DINAKED,Y S DINAKED=$$LGR^%ZOSV
+ N DINAKED,Y S DINAKED=$NA(^(0))
  I '$D(^DI(.84,+$G(D0)))!($G(X)']"") S Y=0 G Q
  N R,I,I1,IL,T,W,%,DILANG
  S DILANG=+$G(DUZ("LANG")) S:DILANG<1 DILANG=1

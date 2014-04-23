@@ -1,6 +1,6 @@
-DDSLIB ;SFISC/MKO-LIBRARY FUNCTIONS ;01:37 PM  6 Sep 1994
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DDSLIB ;SFISC/MKO-LIBRARY FUNCTIONS ;11:55 AM  14 Aug 2002
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 FIND(E,C,S) ;Find in expression E, starting from pos S, the char pos
  ;after the next occurrence of char C, ignoring those within quoted
  ;strings.
@@ -134,4 +134,4 @@ FD ;Get internal field number
  ;
 UPCASE(X) ;
  ;Return X in uppercase
- Q $TR(X,"abcdefghijklmnopqrstuvwxyz","ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+ Q $$UP^DILIBF(X)  ;**

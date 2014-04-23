@@ -1,6 +1,6 @@
-DICATTDD ;GFT;12:02 PM  8 Apr 2001; multiple fields
- ;;22.0;VA FileMan;**42,76**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DICATTDD ;GFT/GFT - Multiple Fields;12:02 PM  8 Apr 2001
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
  ;
 MULMAKE(DICATTD,TYPE) ;DICATTD=sub-dictionary number, TYPE 1-9

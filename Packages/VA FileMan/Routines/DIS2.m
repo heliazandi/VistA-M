@@ -1,5 +1,5 @@
 DIS2 ;SFISC/GFT-SEARCH, TEMPLATES & COMPUTED FIELDS;4JUN2005
- ;;22.0;VA FileMan;**6,144**;Mar 30, 1999;Build 1
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
  ;Per VHA Directive 2004-038, this routine should not be modified.
  K DISV G G:'DUZ
 0 D  K DIRUT,DIROUT I $D(DTOUT)!($D(DUOUT)) G Q
@@ -29,8 +29,10 @@ COMP ;
  D EN^DICOMP,XA G X:'$D(X),X:Y["m" ;I Y["m" S X=E_":" G COMP
  S DA(DC)=X,DU=-DC,E=$E("B",Y["B")_$E("D",Y["D") I Y["p" S E="p"_+$P(Y,"p",2)
  G G^DIS
+ ;
 XA S %=0 F  S %=$O(X(%)) Q:%=""  S @(DA_%_")")=X(%)
  S %=-1 Q
+ ;
 COLON D ^DICOMPW,XA G X:'$D(X)
  S R(DL)=R,N(DL)=N,N=+Y,DY=DY+1,DV(DL)=DV,DL(DL)=DK,DL=DL+1,DV=DV_-DY_C,DY(DY)=DP_U_$S(Y["m":DC_"."_DL,1:"")_U_X,R=U_$P(DP,U,2)
  K X G R^DIS

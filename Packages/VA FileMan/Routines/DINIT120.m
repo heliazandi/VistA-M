@@ -1,6 +1,7 @@
-DINIT120 ;SFISC/MKO-SORT TEMPLATE FILE ;1:13 PM  13 Nov 1998
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DINIT120 ;SFISC/MKO-SORT TEMPLATE FILE ;06:18 PM  16 Dec 1999
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
+ ;**CCO/NI  TAG Q+24 CHANGED FOR DATE FORMAT
  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) S @X=Y
  G ^DINIT121
 Q Q
@@ -27,7 +28,7 @@ Q Q
  ;;^DD(.401,0,"DT")
  ;;=2960910
  ;;^DD(.401,0,"ID","WRITE")
- ;;=N D,D1,D2 S D2=^(0) S:$X>30 D1(1,"F")="!" S D=$P(D2,U,2) S:D D1(2)="("_$$FMTE^DILIBF(D)_")",D1(2,"F")="?30" S D=$P(D2,U,5) S:D D1(3)=" User #"_D,D1(3,"F")="?50" S D=$P(D2,U,4) S:D D1(4)=" File #"_D,D1(4,"F")="?59" D EN^DDIOL(.D1)
+ ;;=N D,D1,D2 S D2=^(0) S:$X>30 D1(1,"F")="!" S D=$P(D2,U,2) S:D D1(2)="("_$$DATE^DIUTL(D)_")",D1(2,"F")="?30" S D=$P(D2,U,5) S:D D1(3)=" User #"_D,D1(3,"F")="?50" S D=$P(D2,U,4) S:D D1(4)=" File #"_D,D1(4,"F")="?59" D EN^DDIOL(.D1)
  ;;^DD(.401,0,"ID","WRITE1")
  ;;=N D1 S D1=$S($D(^DIBT(+Y,2)):"SORT",$D(^("DIS")):"SEARCH",$D(^(1)):"INQ",1:"") D EN^DDIOL(D1,"","?73")
  ;;^DD(.401,0,"ID","WRITED")

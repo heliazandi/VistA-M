@@ -1,6 +1,6 @@
-DIEVK1 ;SFISC/MKO-KEY VALIDATION ;10:42 AM  30 Sep 1998
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DIEVK1 ;SFISC/MKO-KEY VALIDATION ;06:38 PM  6 Dec 1999
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 BUILD(DIVKFDA,DIVKFLAG) ;Loop thru FDA and load key info
  N DIVKEYOK,DIVKFIL,DIVKFLD,DIVKIENS,DIVKQUIT
@@ -74,7 +74,7 @@ ERR740(FILE,KEY,IENS) ;New values are invalid because they create a duplicate
  ;Key '|1|' for the |2| file.
  N P,PEXT
  S P(1)=$P(^DD("KEY",KEY,0),U,2)
- S P(2)=$O(^DD(FILE,0,"NM","")) S:P(2)?." " P(2)="#"_FILE
+ S P(2)=$$FILENAME^DIALOGZ(FILE) S:P(2)?." " P(2)="#"_FILE ;**CCO/NI FILE NAME
  S PEXT("FILE")=FILE,PEXT("KEY")=KEY,PEXT("IENS")=IENS
  D BLD^DIALOG(740,.P,.PEXT)
  Q
@@ -83,7 +83,7 @@ ERR742(FILE,FIELD,KEY,IENS) ; The value of field |1| in the |2| file
  ;cannot be deleted because that field is part of the '|3|' key.
  N P,PEXT
  S P(1)=$$FLDNM^DIEFU(FILE,FIELD)
- S P(2)=$O(^DD(FILE,0,"NM","")) S:P(2)?." " P(2)="#"_FILE
+ S P(2)=$$FILENAME^DIALOGZ(FILE) S:P(2)?." " P(2)="#"_FILE ;**CCO/NI FILE NAME
  S P(3)=$P(^DD("KEY",KEY,0),U,2)
  S PEXT("FILE")=FILE,PEXT("FIELD")=FIELD,PEXT("IENS")=IENS
  D BLD^DIALOG(742,.P,.PEXT)
@@ -102,7 +102,7 @@ ERR746(FILE,KEY,IENS) ;At least one field in Primary Key '|1|' must be
  ;provided in the FDA to look up '|IENS|' in the |2| file.
  N P,PEXT
  S P(1)=$P(^DD("KEY",KEY,0),U,2)
- S P(2)=$O(^DD(FILE,0,"NM","")) S:P(2)?." " P(2)="#"_FILE
+ S P(2)=$$FILENAME^DIALOGZ(FILE) S:P(2)?." " P(2)="#"_FILE ;**CCO/NI FILE NAME
  S P("IENS")=IENS
  S PEXT("FILE")=FILE,PEXT("KEY")=KEY,PEXT("IENS")=IENS
  D BLD^DIALOG(746,.P,.PEXT)

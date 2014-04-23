@@ -1,6 +1,6 @@
 DICM0 ;SF/XAK,TKW - LOOKUP WHEN INPUT MUST BE TRANSFORMED ;2/15/00  14:40
- ;;22.0;VA FileMan;**16,4,20,31**;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 P ;Pointers, called by ^DICM1
  S D="" N DICODE,DIASKOK,DIPTRIX

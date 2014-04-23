@@ -1,6 +1,6 @@
-DDSPTR ;SFISC/MKO-SET "PT" AND "PTB" NODES ;9:43 AM  4 Apr 1996
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DDSPTR ;SFISC/MKO-SET "PT" AND "PTB" NODES ;7JAN2004
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 PT(DDSDDP,EXP,DDS,PG,BK) ;Set "PT" and "PTB" nodes
  N DDP,FDL,CD,FD
@@ -66,6 +66,10 @@ LOOP1 I $E(EXP)="""" D
  . S CD(CD)="S X=$$GET^DDSVAL("_DDP_","_$S(CD=1:".DA",1:"X")_","_FD1_")"
  . S FDL=$G(FDL)_DDP_","_FD1_U
  . S DDP=+$P(TYP,"P",2)
+COMPTR E  I TYP["Cp" D
+ .S CD(CD)="N D0 S D0=DA X $P(^DD("_DDP_","_FD1_",0),U,5,999) S X=X"
+ .S FDL=$G(FDL)_DDP_","_FD1_U
+ .S DDP=+$P(TYP,"p",2)
  E  D  Q:$G(DIERR)
  . N D,F,S
  . S FDL=$G(FDL)_DDP_","_FD1_";J^"

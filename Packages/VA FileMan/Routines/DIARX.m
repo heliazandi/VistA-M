@@ -1,6 +1,6 @@
 DIARX ;SFISC/DCM-ARCHIVING FUNCTION, BUILD INDEX ;8/12/98  10:25
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 IX K ^UTILITY("DIQ1",$J) N DIC
  S DIARREC=^DIAR(1.11,DIARC,0),(DIARIXF,DIC)=$P(DIARREC,U,2),DIARIXST=$P(DIARREC,U,3),(DA,DIARDR,DIARIX,DIARDA)="",DR=".01",DIARLINE=.01_":"_$P(^DD(DIARIXF,.01,0),U)
  N DIXIEN S DIXIEN=$O(^DD("KEY","AP",DIARIXF,"P",0))

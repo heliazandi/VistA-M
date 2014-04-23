@@ -1,10 +1,13 @@
-DICFIX1 ;SEA/TOAD,SF/TKW-FileMan: Finder, Search Compound Indexes (cont.) ;2/20/98  09:53
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+DICFIX1 ;SEA/TOAD,SF/TKW-FileMan: Finder, Search Compound Indexes (cont.) ;15MAY2011
+ ;;22.2;VA FILEMAN;;Mar 28, 2013;
+ ;Per VHA Directive 2004-038, this routine should not be modified.
+ ;
  ;
 NXTNAM(DIVAL,DIPART,DINDEX,DISKIP,DIDONE) ;
  ; limited comma piece lookup, skip nonmatching names in index
- I $P(DIVAL,",")=DIPART S DIVAL=DIPART_",~",DISKIP=1 Q
+ N DIUTF8 D
+ .N X,Y S Y=$C(126),X=$G(^DD("OS",^DD("OS"),"HIGHESTCHAR")) X:X]"" X S DIUTF8=Y
+ I $P(DIVAL,",")=DIPART S DIVAL=DIPART_","_DIUTF8,DISKIP=1 Q  ;UTH/SMH
  N DIPREC,DIPOSTC,DIPPOSTC
  S DIPREC=$P(DIVAL,","),DIPOSTC=$P(DIVAL,",",2)
  S DIPPOSTC=DINDEX(DISUB,DITRXNO,"c")
@@ -22,8 +25,7 @@ SKIP(DISKIP,DIVAL,DIPREC,DIPOSTC,DIPART,DIPPOSTC,DINDEX) ;
  . ; Current first name before starting first name, skip to starting first name
  . S DIVAL=DIPREC_","_DIPPOSTC
  . I '$D(@DINDEX(DISUB,"ROOT")@(DIVAL)) S DISKIP=1
- . Q
  ; Else, skip the rest of the first names within current last name.
- S DIVAL=DIPREC_",~",DISKIP=1 Q
+ S DIVAL=DIPREC_","_DIUTF8,DISKIP=1 Q  ;UTH/SMH
  ;
  ;

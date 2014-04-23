@@ -1,6 +1,6 @@
 DILFD ;SFISC/STAFF-LIBRARY OF FUNCTIONS ;11/18/94  11:05
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
  Q
 ROOT(DIC,DA,CP,ERR) ;
  G ENROOT^DIQGU

@@ -1,6 +1,6 @@
 DDMAP2 ;SFISC/JKS(Helsinki)-GRAPH OF FILEMAN PTRS ;2/4/91  3:38 PM
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
+ ;;22.2;VA FILEMAN;;Mar 28, 2013
+ ;Per VHA Directive 2004-038, this routine should not be modified.
 NXF ;Loop thru file selected and get to/from pointers
  F DDFLE=0:0 S DDFLE=$O(^UTILITY($J,"F",DDFLE)) G:DDFLE'>0 ST D GETTO,GETFR
 GETTO ;Look down "PT" X-ref to find files that point to me.
