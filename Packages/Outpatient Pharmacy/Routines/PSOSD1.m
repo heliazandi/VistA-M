@@ -1,5 +1,5 @@
 PSOSD1 ;BHAM ISC/SAB/JMB - action or informational profile cont. ; 10/30/07 10:39am
- ;;7.0;OUTPATIENT PHARMACY;**2,17,19,22,40,49,66,107,110,132,233,258,240,320,326,360**;DEC 1997;Build 3
+ ;;7.0;OUTPATIENT PHARMACY;**2,17,19,22,40,49,66,107,110,132,233,258,240,320,326**;DEC 1997;Build 7
  ;External reference to ^PS(59.7 is supported by DBIA 694
  ;
 INIT N PSOPTLK
@@ -16,7 +16,7 @@ DEV N PSOBARS,PSOBAR0,PSOBAR1 K %ZIS,IOP,ZTSK,ZTQUEUED S PSOION=ION,%ZIS="QM",%Z
  .S ZTSAVE("DOD*")="",ZTSAVE("PSOBAR*")="" D ^%ZTLOAD W:$D(ZTSK) !,"Report Queued to Print !!",! K:'$G(LM) ZTSK,IO("Q")
  D START G:'$G(LM) ^PSOSD
  Q
-START U IO S PSTYPE=$S($D(PSTYPE):PSTYPE,1:0),LINE="",$P(LINE,"-",132)="-"
+START U IO S PSTYPE=$S($D(PSTYPE):PSTYPE,1:0),$P(LINE,"-",132)="-"
  F PSIX=1:1 S DFN=$P(PRF,",",PSIX) G:DFN']"" EXIT D ELIG S PAGE=1 D  G:$G(PSQFLG)!($D(DTOUT))!($D(DUOUT)) EXIT
  .D PAT^PSOSD Q:$D(DTOUT)!($D(DUOUT))  D  Q:PSQFLG  D RXPAD:PSTYPE D ENSTUFF^PSODACT
  ..Q:$D(DUOUT)!($D(DTOUT))  S PSQFLG=0 D ^PSOSD3,NVA^PSOSD3,EN^PSORMRXP(DFN)
@@ -61,9 +61,11 @@ HD S FN=DFN S:'$D(PSORM) PSORM=1
  S PSNAME=$E(VADM(1),1,28),PSDOB=$P(VADM(3),"^",2) I $D(IOF),$G(PAGE)'=1 W @IOF
  W "Action Rx Profile",?47,"Run Date: " S Y=DT D DT^DIO2 W ?71,"Page: "_PAGE S PAGE=PAGE+1,X=$$SITE^VASITE
  W !,"Sorted by drug classification for Rx's currently active"_$S('PSDAYS:" only.",1:"") W:PSDAYS !,"and for those Rx's that have been inactive less than "_PSDAYS_" days."
- W @$S(PSORM:"?70",1:"!"),"Site: VAMC "_$P(X,"^",2)_" ("_$P(X,"^",3)_")",!,$E(LINE,1,$S('PSORM:80,1:IOM)-1)
- I $P(VAIN(4),"^",2)]"",+$P($G(^PS(59.7,1,40.1)),"^") W !,"Outpatient prescriptions are discontinued 72 hours after admission.",!
- W !?1,"Name  : ",PSNAME W ?58,"Action Date: ________" W !?1,"DOB   : "_PSDOB
+ ;DSS/CRL - BEGIN MOD - Deveteranization - orig line arg of ELSE
+ I $T(VX^VFDI0000)'="",$$VX^VFDI0000["VX" D VFD("SD1")
+ E  W @$S(PSORM:"?70",1:"!"),"Site: VAMC "_$P(X,"^",2)_" ("_$P(X,"^",3)_")",!,$E(LINE,1,$S('PSORM:80,1:IOM)-1)
+ ;DSS/CRL - END MODS
+ I $P(VAIN(4),"^",2)]"",+$P($G(^PS(59.7,1,40.1)),"^") W !,"Outpatient prescriptions are discontinued 72 hours after admission.",! W !?1,"Name  : ",PSNAME W ?58,"Action Date: ________" W !?1,"DOB   : "_PSDOB
  W:ADDRFL]"" ?30,ADDRFL,! W ?30,"Address  :"
  I $G(ADDRFL)="" D CHECKBAI
  W ?41,VAPA(1) W:VAPA(2)]"" !?41,VAPA(2) W:VAPA(3)]"" !?41,VAPA(3) W !?41,VAPA(4)_", "_$P(VAPA(5),"^",2)_"  "_$S(VAPA(11)]"":$P(VAPA(11),"^",2),1:VAPA(6)),!?30,"Phone    : "_VAPA(8)
@@ -72,7 +74,12 @@ HD S FN=DFN S:'$D(PSORM) PSORM=1
  .F GMRVSTR="WT","HT" S VM=GMRVSTR D EN6^GMRVUTL S @VM=X,$P(@VM,"^")=$E($P(@VM,"^"),4,5)_"/"_$E($P(@VM,"^"),6,7)_"/"_($E($P(@VM,"^"),1,3)+1700)
  .S X=$P(WT,"^",8),Y=$J(X/2.2,0,2),$P(WT,"^",9)=Y,X=$P(HT,"^",8),Y=$J(2.54*X,0,2),$P(HT,"^",9)=Y
  W !!,"WEIGHT(Kg): " W:+$P(WT,"^",8) $P(WT,"^",9)_" ("_$P(WT,"^")_")" W ?41,"HEIGHT(cm): " W:$P(HT,"^",8) $P(HT,"^",9)_" ("_$P(HT,"^")_")" K VM,WT,HT
- D GMRA^PSODEM W !,$E(LINE,1,$S('PSORM:80,1:IOM)-1),!,"Instructions to the provider:",!,"A prescription blank (VA FORM 10-2577f) must be used for All Class II NARCOTICS."
+ ;DSS/RAC - BEGIN MOD - Split orginal line for deveteranization and OSHERA
+ ;D GMRA^PSODEM W !,$E(LINE,1,$S('PSORM:80,1:IOM)-1),!,"Instructions to the provider:",!,"A prescription blank (VA FORM 10-2577f) must be used for All Class II NARCOTICS."
+ D GMRA^PSODEM W !,$E(LINE,1,$S('PSORM:80,1:IOM)-1),!,"Instructions to the provider:"
+ W !,"A prescription blank " I $G(^%ZOSF("ZVX"))'["VX" W "(VA FORM 10-2577f) "
+ W "must be used for All Class II NARCOTICS."
+ ;DSS/RAC - END MOD
  S (ELN,LN,LINE)="",$P(LN,"_",53)="",$P(LINE,"-",132)=""
  W !,$E(LINE,1,$S('PSORM:80,1:IOM)-1),!?4,"OTHER MEDICATIONS:",!
  Q
@@ -98,3 +105,12 @@ CHECKBAI ;
  W ?40,"** BAD ADDRESS INDICATED **",!
  Q
  ;
+VFD(FR) ;DSS/CRL - BEGIN MODS - deveteranize
+ ; called from routines PSOSD1, PSOSD2, PSOSD3, PSOSDP
+ ; replaced "Site: VAMC "_$P(X,"^",2)_" ("_$P(X,"^",3)_")"
+ ;     with "Site: "_$P(X,"^",2)
+ I $G(FR)="SDP" W !,"Sorted by drug name for Rx's currently active"
+ W @$S(PSORM:"?70",1:"!"),"Site: "_$P(X,"^",2)
+ W !,$E(LINE,1,$S('PSORM:80,1:IOM)-1)
+ I 1
+ Q

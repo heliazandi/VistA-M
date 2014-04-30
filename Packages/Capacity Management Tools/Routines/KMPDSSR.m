@@ -1,5 +1,5 @@
 KMPDSSR ;OAK/RAK - Resource Usage Monitor Status ;2/14/05  13:50
- ;;3.0;KMPD;;Jan 22, 2009;Build 42
+ ;;2.0;CAPACITY MANAGEMENT - RUM;**3**;Mar 22, 2002
  ;
 FORMAT(KMPRLN) ;-format text for display
  ;-----------------------------------------------------------------------------

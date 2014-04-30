@@ -1,5 +1,5 @@
 GMPLHIST ; SLC/MKB/KER -- Problem List Historical data ; 04/15/2002
- ;;2.0;Problem List;**7,26,,31,35**;Aug 25, 1994;Build 26
+ ;;2.0;Problem List;**7,26,,31,35**;Aug 25, 1994;Build 7
  ;
  ; External References
  ;   DBIA 10060  ^VA(200
@@ -25,6 +25,10 @@ DT ; Add historical data (audit trail) to DT list
  I +FLD=.12 S GMPDT(LCNT,0)=$J("from ",17)_$S(OLD="A":"ACTIVE",OLD="I":"INACTIVE",1:"UNKNOWN")_" to "_$S(NEW="A":"ACTIVE",NEW="I":"INACTIVE",1:"UNKNOWN") Q
  I (+FLD=.13)!(+FLD=1.07) S GMPDT(LCNT,0)=$J("from ",17)_$$EXTDT^GMPLX(OLD)_" to "_$$EXTDT^GMPLX(NEW) Q
  I +FLD=1.14 S GMPDT(LCNT,0)=$J("from ",17)_$S(OLD="A":"ACUTE",OLD="C":"CHRONIC",1:"UNSPECIFIED")_" to "_$S(NEW="A":"ACUTE",NEW="C":"CHRONIC",1:"UNSPECIFIED") Q
+ ;DSS/SMP - BEGIN MODS allow for audits of vxVistA field 21600.01
+ I +FLD=21600.01 D  Q
+ . S GMPDT(LCNT,0)=$J("from ",17)_$S(OLD="m":"MEDICAL/SURGICAL",OLD="s":"SOCIAL",OLD="f":"FAMILY",1:"UNKNOWN")_" to "_$S(NEW="m":"MEDICAL/SURGICAL",NEW="s":"SOCIAL",NEW="f":"FAMILY",1:"UNKNOWN")
+ ;DSS END MODS
  I +FLD>1.09 S GMPDT(LCNT,0)=$J("from ",17)_$S(+OLD:"YES",OLD=0:"NO",1:"UNKNOWN")_" to "_$S(+NEW:"YES",NEW=0:"NO",1:"UNKNOWN") Q
  I "^.01^.05^1.01^1.04^1.05^1.06^1.08^"[(U_+FLD_U) D
  . S ROOT=$S(+FLD=.01:"ICD9(",+FLD=.05:"AUTNPOV(",+FLD=1.01:"LEX(757.01,",(+FLD=1.04)!(+FLD=1.05):"VA(200,",+FLD=1.06:"DIC(49,",+FLD=1.08:"SC(",1:"") Q:ROOT=""

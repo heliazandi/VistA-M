@@ -1,5 +1,5 @@
 LRRP5A ;DALISC/JBM - COLLECTION REPORT-PRINT ;10/20/92
- ;;5.2;LAB SERVICE;**201**;Sep 27, 1994
+ ;;5.2;LAB SERVICE;**201**;Sep 27, 1994;Build 25
 EN ;
 PRINT ;
  W:$E(IOST,1,2)="C-" @IOF
@@ -26,7 +26,14 @@ DET ;
  ....S LRLOC=$P(^TMP($J,"PAT",LRPAT,LRSSN,LRORD,LRCS1,0),U,2)
  ....S LRCLCTD=$P(^TMP($J,"PAT",LRPAT,LRSSN,LRORD,LRCS1,0),U,3)
  ....I LRTGLNAM D
- .....S LRLCNT=LRLCNT+1,LRBUF(LRLCNT)=$E(LRPAT_LRBLANK,1,18)_"  "_LRSSN
+ .....;DSS/RAF - BEGIN MOD to add DOB using DFN in 4th piece set in LRRP5
+ .....;S LRLCNT=LRLCNT+1,LRBUF(LRLCNT)=$E(LRPAT_LRBLANK,1,18)_"  "_LRSSN
+ .....I $T(VX^VFDI0000)]"",$$VX^VFDI0000["VX" D
+ ......N VFDDFN S VFDDFN=$P(^TMP($J,"PAT",LRPAT,LRSSN,LRORD,LRCS1,0),U,4)
+ ......S LRLCNT=LRLCNT+1,LRBUF(LRLCNT)=$E(LRPAT_LRBLANK,1,18)_"  "_LRSSN
+ ......S LRLCNT=LRLCNT+1,LRBUF(LRLCNT)="                    "_$$GET1^DIQ(2,VFDDFN,.03,"E","VFDERR")
+ .....E  S LRLCNT=LRLCNT+1,LRBUF(LRLCNT)=$E(LRPAT_LRBLANK,1,18)_"  "_LRSSN
+ .....;DSS/RAF - END MOD
  .....S LRTGLNAM=0
  ....S LRLCNT=LRLCNT+1
  ....I LRTGLORD D
@@ -102,7 +109,14 @@ HDR ;
  W !,"LAB ORDERS BY COLLECTION TYPE"
  W !,LRRCNAM," ORDERS ON "
  W LRODAT,?(62),LRDAT,?(72)," PAGE ",LRPAG
- W !!,"Name",?20,"SSN",!?2,"Order #",?11,"Location",?20,"Coll Sample"
+ ;DSS/RAF - BEGIN MOD for MRN label and DOB
+ ;W !!,"Name",?20,"SSN",!?2,"Order #",?11,"Location",?20,"Coll Sample"
+ I $T(VX^VFDI0000)]"",$$VX^VFDI0000["VX" D
+ . W !!,"Name",?20,$G(VA("MRN",0))
+ . W !,?20,"DOB"
+ . W !?2,"Order #",?11,"Location",?20,"Coll Sample"
+ E  W !!,"Name",?20,"SSN",!?2,"Order #",?11,"Location",?20,"Coll Sample"
+ ;DSS/RAF - END MOD
  W ?34,"Tests",! F I=1:1:80 W "-"
  Q
 PAUSE ;

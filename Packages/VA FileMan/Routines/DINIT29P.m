@@ -1,5 +1,5 @@
 DINIT29P ;SFISC/MKO-SCREENMAN POSTINIT ;11:21 AM  2 Oct 1998
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
+ ;;22.0;VA FileMan;;Mar 30, 1999
  ;Per VHA Directive 10-93-142, this routine should not be modified.
  N B,F
  ;

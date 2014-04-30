@@ -1,4 +1,4 @@
-OCXOZ0B ;SLC/RJS,CLA - Order Check Scan ;MAR 8,2011 at 13:52
+OCXOZ0B ;SLC/RJS,CLA - Order Check Scan ;MAR 19,2013 at 14:13
  ;;3.0;ORDER ENTRY/RESULTS REPORTING;**32,221,243**;Dec 17,1997;Build 242
  ;;  ;;ORDER CHECK EXPERT version 1.01 released OCT 29,1998
  ;
@@ -58,34 +58,31 @@ CHK270 ; Look through the current environment for valid Event/Elements for this 
  S OCXDF(84)=$P($$WARDRMBD(OCXDF(37)),"^",1) I $L(OCXDF(84)),(OCXDF(84)) S OCXDF(147)=$P($$PATLOC(OCXDF(37)),"^",2),OCXOERR=$$FILE(DFN,84,"82,147") Q:OCXOERR 
  Q
  ;
-CHK279 ; Look through the current environment for valid Event/Elements for this patient.
+CHK280 ; Look through the current environment for valid Event/Elements for this patient.
  ;  Called from CHK188+15^OCXOZ09.
  ;
  Q:$G(OCXOERR)
  ;
- ;    Local CHK279 Variables
+ ;    Local CHK280 Variables
  ; OCXDF(2) ----> Data Field: FILLER (FREE TEXT)
  ; OCXDF(37) ---> Data Field: PATIENT IEN (NUMERIC)
  ; OCXDF(125) --> Data Field: RECENT GLUCOPHAGE CREATININE TEXT (FREE TEXT)
+ ; OCXDF(127) --> Data Field: RECENT GLUCOPHAGE CREATININE DAYS (NUMERIC)
  ;
  ;      Local Extrinsic Functions
  ;
- I $L(OCXDF(2)),($E(OCXDF(2),1,2)="PS") S OCXDF(37)=$G(DFN) I $L(OCXDF(37)) S OCXDF(125)=$P($$GLCREAT^ORKPS(OCXDF(37)),"^",2) D CHK284
+ I ($E(OCXDF(2),1,2)="PS") S OCXDF(37)=$G(DFN) I $L(OCXDF(37)) S OCXDF(125)=$P($$GLCREAT^ORKPS(OCXDF(37)),"^",2),OCXDF(127)=$P($$GCDAYS^ORKPS(OCXDF(37)),"^",1) D CHK285
  Q
  ;
-CHK284 ; Look through the current environment for valid Event/Elements for this patient.
- ;  Called from CHK279+12.
+CHK285 ; Look through the current environment for valid Event/Elements for this patient.
+ ;  Called from CHK280+13.
  ;
  Q:$G(OCXOERR)
- ;
- ;    Local CHK284 Variables
- ; OCXDF(37) ---> Data Field: PATIENT IEN (NUMERIC)
- ; OCXDF(127) --> Data Field: RECENT GLUCOPHAGE CREATININE DAYS (NUMERIC)
  ;
  ;      Local Extrinsic Functions
  ; FILE(DFN,86, -----> FILE DATA IN PATIENT ACTIVE DATA FILE  (Event/Element: GLUCOPHAGE ORDER)
  ;
- S OCXDF(127)=$P($$GCDAYS^ORKPS(OCXDF(37)),"^",1),OCXOERR=$$FILE(DFN,86,"125,127") Q:OCXOERR 
+ S OCXOERR=$$FILE(DFN,86,"125,127") Q:OCXOERR 
  Q
  ;
 CHK293 ; Look through the current environment for valid Event/Elements for this patient.

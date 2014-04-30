@@ -1,5 +1,5 @@
 LRTSTJAM ;DALOI/STAFF - JAM TESTS ONTO (OR OFF) ACCESSIONS ;10/25/11  12:29
- ;;5.2;LAB SERVICE;**121,153,291,350**;Sep 27, 1994;Build 230
+ ;;5.2;LAB SERVICE;**121,153,291,350**;Sep 27, 1994;Build 7
  ;
 EN ;
 ADD ; I $G(LRAA),$G(LRAD),$G(LRAN) L -^LRO(68,LRAA,1,LRAD,1,LRAN)
@@ -37,10 +37,14 @@ ADD1 ;
  L +^LRO(68,LRAA,1,LRAD,1,LRAN):DILOCKTM
  I '$T W !?5,"Someone else is editing this entry ",!,$C(7) S LRADD1=1 Q
  ;
- S X=^LRO(68,LRAA,1,LRAD,1,LRAN,0),LRDFN=$P(X,U),LRAODT=$P(X,U,3),LRODT=$P(X,U,4),LRSN=$P(X,U,5),LRDPF=$P(^LR(LRDFN,0),U,2),DFN=$P(^(0),U,3) D PT^LRX W !,PNM,?30,SSN
- ;
- ; Only ask nature of order on file #2 patients.
- I LRDPF=2,'$D(LRNATURE) D NEW^LROR6() I $G(LRNATURE)=-1 W !!,"...process aborted",$C(7) K LRNATURE S LRADD1=1 Q
+ ;DSS/RAF - BEGIN MOD to add MRN label and DOB. original line broken after call to PT^LRX
+ ;S X=^LRO(68,LRAA,1,LRAD,1,LRAN,0),LRDFN=$P(X,U),LRAODT=$P(X,U,3),LRODT=$P(X,U,4),LRSN=$P(X,U,5),LRDPF=$P(^LR(LRDFN,0),U,2),DFN=$P(^(0),U,3) D PT^LRX W !,PNM,?30,SSN
+ S X=^LRO(68,LRAA,1,LRAD,1,LRAN,0),LRDFN=$P(X,U),LRAODT=$P(X,U,3),LRODT=$P(X,U,4),LRSN=$P(X,U,5),LRDPF=$P(^LR(LRDFN,0),U,2),DFN=$P(^(0),U,3) D PT^LRX
+ I $G(VA("MRN"))]"" D
+ .W !,PNM,?30,$G(VA("MRN",0))_": ",SSN
+ .W !,?30,"DOB: ",$P($G(VADM(3)),U,2)
+ E   W !,PNM,?30,SSN
+ ;DSS/RAF - END MOD
  ;
  W !,"TESTS ALREADY ON THE ACCESSION: "
  S I=0

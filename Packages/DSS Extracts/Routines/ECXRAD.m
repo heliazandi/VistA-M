@@ -1,5 +1,5 @@
-ECXRAD ;ALB/JAP,BIR/PDW,PTD-Extract for Radiology ;6/28/12  11:08
- ;;3.0;DSS EXTRACTS;**11,8,13,16,24,33,39,46,71,84,92,105,120,127,136**;Dec 22, 1997;Build 28
+ECXRAD ;ALB/JAP,BIR/PDW,PTD-Extract for Radiology ; 5/30/2007
+ ;;3.0;DSS EXTRACTS;**11,8,13,16,24,33,39,46,71,84,92,105,120**;Dec 22, 1997;Build 43
 BEG ;entry point from option
  D SETUP I ECFILE="" Q
  D ^ECXTRAC,^ECXKILL
@@ -16,7 +16,7 @@ START ;start rad extract
  Q
  ;
 GET ;get data
- N ECXIEN,X,SUB,TYPE,ECDOCPC,ECXIS,ECXISPC,ECXPRCL,ECXCSC,ECXUSRTN,ECXCM,ECSTAT ;136
+ N ECXIEN,X,SUB,TYPE,ECDOCPC,ECXIS,ECXISPC,ECXPRCL,ECXCSC,ECXUSRTN
  S ^TMP("ECL",$J,ECXDFN)=""
  ;with dfn get all exams within date range
  S ECXMDT=ECSD-.1
@@ -50,8 +50,6 @@ GET ;get data
  ..S ECXIEN=+$P($G(^RADPT(ECXDFN,"DT",ECXMDA,"P",1,0)),U,11)
  ..S ECXORDDT=$$ECXDATE^ECXUTL($P($G(^RAO(75.1,ECXIEN,0)),U,16),ECXYM)
  ..;
- ..;******* - PATCH 127, ADD PATCAT CODE ********
- ..S ECXPATCAT=$$PATCAT^ECXUTL(ECXDFN)
  ..;- If no encounter number don't file record
  ..S ECXENC=$$ENCNUM^ECXUTL4(ECXA,ECXSSN,ECXADMDT,ECXMDT,ECXTS,ECXOBS,ECHEAD,ECTY,) Q:ECXENC=""
  ..;procedures and modifiers for specific exam (case numbers)
@@ -59,7 +57,6 @@ GET ;get data
  ..S ECCN=0
  ..F  S ECCN=$O(^RADPT(ECXDFN,"DT",ECXMDA,"P",ECCN)) Q:ECCN'>0  D
  ...S ECCA=^RADPT(ECXDFN,"DT",ECXMDA,"P",ECCN,0)
- ...S ECXCM=$P(ECCA,U,26) S ECXCM=$S("^0^1^2^3^"[("^"_ECXCM_"^"):ECXCM,1:"") ;136 - Get Credit Method and validate that it's a number between 0 and 3 otherwise set it to null
  ...S ECXW=$P(ECCA,U,6),ECXW=$P($G(^DIC(42,+ECXW,44)),U)
  ...S:ECXW="" ECXW=$P(ECCA,U,8)
  ...S ECDOCNPI=$$NPI^XUSNPI("Individual_ID",$P(ECCA,U,14),ECDT)
@@ -112,18 +109,18 @@ FILE ;file record
  ;dss product ECXDSSP^requesting provider person class ECDOCPC^interp-
  ;reting radiologist ECXIS^interpreting radiologist pc ECXISPC^princi-
  ;pal clinic ECXPRCL^clinc stop code ECXCSC^emergency response indicator
- ;(FEMA) ECXERI^assoc pc provider npi^interpreting rad npi^pc provider npi^req physician npi^Patient Category (PATCAT) ECXPATCAT^Credit Method ECXCM
+ ;(FEMA) ECXERI^assoc pc provider npi^interpreting rad npi^pc provider npi^req physician npi
  ;
  ;convert specialty to PTF Code for transmission
- N ECXDATA,ECXTSC
+ N ECXDATA
  S ECXDATA=$$TSDATA^DGACT(42.4,+ECXTS,.ECXDATA)
- S ECXTSC=$G(ECXDATA(7))
+ S ECXTS=$G(ECXDATA(7))
  ;done
  N DA,DIK
  S EC7=$O(^ECX(ECFILE,999999999),-1),EC7=EC7+1
  S ECODE=EC7_U_EC23_U_ECXDIV_U_ECXDFN_U_ECXSSN_U_ECXPNM_U_ECXA_U
  S ECODE=ECODE_ECXDAY_U_ECXCPT_U_ECPRO_U_ECLOC_U_ECXW_U_ECS_U_ECDI_U
- S ECODE=ECODE_ECDOC_U_ECMODS_U_ECXMN_U_ECXTSC_U_ECTM_U_ECTY_U_ECPTTM_U
+ S ECODE=ECODE_ECDOC_U_ECMODS_U_ECXMN_U_ECXTS_U_ECTM_U_ECTY_U_ECPTTM_U
  S ECODE=ECODE_ECPTPR_U
  S ECODE1=ECXMPI_U_ECXDSSD_U_U_U_ECCLAS_U_ECASPR_U
  S ECODE1=ECODE1_ECCLAS2_U_U_ECXDOM_U_ECXOBS_U_ECXENC_U_ECXORDST_U
@@ -132,8 +129,6 @@ FILE ;file record
  I ECXLOGIC>2005 S ECODE1=ECODE1_U_ECXIS_U_ECXISPC_U_ECXPRCL_U_ECXCSC
  I ECXLOGIC>2006 S ECODE1=ECODE1_U_ECXERI
  I ECXLOGIC>2007 S ECODE1=ECODE1_U_ECASNPI_U_ECISNPI_U_ECPTNPI_U_ECDOCNPI
- I ECXLOGIC>2010 S ECODE1=ECODE1_U_ECXPATCAT ;127 PATCAT
- I ECXLOGIC>2012 S ECODE1=ECODE1_U_ECXCM ;136 Credit Method
  S ^ECX(ECFILE,EC7,0)=ECODE,^ECX(ECFILE,EC7,1)=ECODE1,ECRN=ECRN+1
  S DA=EC7,DIK="^ECX("_ECFILE_"," D IX1^DIK K DIK,DA
  I $D(ZTQUEUED),$$S^%ZTLOAD S QFLG=1

@@ -1,5 +1,5 @@
 ORWRP ; ALB/MJK,dcm Report Calls ; 12/05/02 11:03
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**1,10,85,109,132,160,194,227,215,262,243,280**;Dec 17, 1997;Build 85
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**1,10,85,109,132,160,194,227,215,262,243,280**;Dec 17, 1997;Build 7
  ;
 LABLIST(LST) ; -- report list for labs tab
  ;  RPC: ORWRP LAB REPORT LIST
@@ -157,7 +157,9 @@ ERR ;Error trap
  I $D(ORHFS) D
  . N ORARR,OROK
  . S ORARR(ORHFS)="",OROK=$$DEL^%ZISH("",$NA(ORARR)) ;delete HFS file
- S $ECODE=",UOR69 error during CPRS report build,"
+ ;DSS/SGM - BEGIN MODS - comment out, not supported in Cache 2009.1
+ ;S $ECODE=",UOR69 error during CPRS report build,"
+ ;DSS/SGM - END MODS 
  Q
 UNWIND ;Unwind Error stack
  Q:$ESTACK>1  ;pop stack

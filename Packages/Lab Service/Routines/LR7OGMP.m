@@ -1,10 +1,13 @@
 LR7OGMP ;DALOI/STAFF- Interim report rpc memo print ;11/20/09  10:36
- ;;5.2;LAB SERVICE;**187,246,282,286,344,395,350**;Sep 27, 1994;Build 230
+ ;;5.2;LAB SERVICE;**187,246,282,286,344,395,350**;Sep 27, 1994;Build 7
  ;
 PRINT(OUTCNT) ; from LR7OGMC
  N ACC,AGE,CDT,CMNT,DATA,DOC,FLAG,HIGH,IDT,INTP,LINE,LOW,LRCW,LRDRL,LREAL,LRX,PORDER,PRNTCODE,RANGE,REFHIGH,REFLOW,SEX,SITE,SPEC,SUB,TESTNUM
  N TESTSPEC,THER,THERHIGH,THERLOW,UNITS,VALUE,X,ZERO
- ;
+ ;DSS/RAF - BEGIN MOD for call out to modified copy of this routine for lab interface enhancement
+ I $T(VX^VFDI0000)'="",$$VX^VFDI0000["VX",$T(PRINT^VFDLR7OGMP)]"" D  Q
+ .D PRINT^VFDLR7OGMP
+ ;DSS/RAF - END MOD
  ; the variables AGE, SEX, LRCW, and X are used within the lab's print codes and ref ranges
  S AGE=$P(^TMP("LR7OG",$J,"G"),U,4),SEX=$P(^("G"),U,5),LRCW=$P(^("G"),U,6)
  ;

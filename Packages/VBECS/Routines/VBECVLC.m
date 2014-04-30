@@ -96,7 +96,7 @@ BUILD(VBECY,VBECDAT) ;  -- store built xml in passed store reference (VBECY)
  ;
  DO ADD($$XMLHDR^XOBVLIB())
  DO ADD("<VistaLink messageType="""_$G(VBECDAT("MESSAGE TYPE"))_""" version=""1.0"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xsi:noNamespaceSchemaLocation=""rpcFault.xsd"" >")
- DO ADD("xmlns=""http://domain.ext/Foundations"">")
+ DO ADD("xmlns=""http://med.va.gov/Foundations"">")
  DO ADD("<Fault>")
  DO ADD("<FaultString>Internal Application Error</FaultString>")
  DO ADD("<FaultActor>VBECS VistaLink Client</FaultActor>")

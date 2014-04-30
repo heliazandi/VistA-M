@@ -1,5 +1,5 @@
 PXKMAIN ;ISL/JVS,ISA/Zoltan - Main Routine for Data Capture ;9/11/98
- ;;1.0;PCE PATIENT CARE ENCOUNTER;**22,59,73,88,69,117,130,124,174,164**;Aug 12, 1996
+ ;;1.0;PCE PATIENT CARE ENCOUNTER;**22,59,73,88,69,117,130,124,174,164**;Aug 12, 1996;Build 2
  ;+This routine is responsible for:
  ;+
  ;+LOCAL VARIABLE LIST:
@@ -79,6 +79,10 @@ VISIT S (PXKVST,VSIT("IEN"))=$G(^TMP("PXK",$J,"VST",1,"IEN"))
 ORDER ;--$ORDER Through the ^TMP("PXK", global setting variables
  S PXKREF="^TMP(""PXK"",$J)"
 CATEG S PXKCAT="" F  S (PXKCAT,PXKVCAT)=$O(@PXKREF@(PXKCAT)) Q:PXKCAT=""  D
+ .;DSS/CFS - BEGIN MODS - Incorporate OSHERA compliant vxVistA tabs from CPRS/PCE.
+ .I $G(^%ZOSF("ZVX"))["VX",$E(PXKCAT,1,5)="VFDPX" D  Q  ;All vxVistA tabs will be updated here.
+ ..D VFDLOOP^VFDPXPE(PXKREF,PXKCAT,PXKSOR,.PXKERROR)
+ .;DSS/CFS - END MODES
  .I PXKCAT="VST" S PXKVCAT="SIT"
  .S PXKRTN="PXKF"_PXKCAT
  .S X=PXKRTN X ^%ZOSF("TEST") Q:'$T

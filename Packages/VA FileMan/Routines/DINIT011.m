@@ -1,7 +1,7 @@
-DINIT011 ; SFISC/TKW-DIALOG & LANGUAGE FILE INITS ; 3/30/99  10:41:48
- ;;22.0;VA FileMan;;Mar 30, 1999;Build 1
- ;Per VHA Directive 10-93-142, this routine should not be modified.
- F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) S @X=Y
+DINIT011 ; SFISC/TKW-DIALOG & LANGUAGE FILE INITS ;13JAN2011
+ ;;22.0;VA FileMan;**1041**;Mar 30, 1999;Build 7
+ ;
+ F I=1:2 S X=$T(Q+I) Q:X'["^"  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) S @X=Y
 Q Q
  ;;^DIC(.85,0,"GL")
  ;;=^DI(.85,
@@ -211,3 +211,23 @@ Q Q
  ;;=2960318
  ;;^DD(.85,10.3,0)
  ;;=CARDINAL NUMBER FORMAT^K^^CRD;E1,245^K:$L(X)>245 X D:$D(X) ^DIM
+ ;;^DD(.85,.03,0)
+ ;;=3 LETTER ABBREVIATION^F^^0;3^K:$L(X)>3 X
+ ;;^DD(.85,.03,1,0)
+ ;;=^.1
+ ;;^DD(.85,.03,1,1,0)
+ ;;=.85^D
+ ;;^DD(.85,.03,1,1,1)
+ ;;=S ^DI(.85,"D",$E(X,1,30),DA)=""
+ ;;^DD(.85,.03,1,1,2)
+ ;;=K ^DI(.85,"D",$E(X,1,30),DA)
+ ;;^DD(.85,.04,0)
+ ;;=2 LETTER ABBREVIATION^F^^0;4^K:$L(X)>2 X
+ ;;^DD(.85,.04,1,0)
+ ;;=^.1
+ ;;^DD(.85,.04,1,1,0)
+ ;;=.85^E
+ ;;^DD(.85,.04,1,1,1)
+ ;;=S ^DI(.85,"E",$E(X,1,30),DA)=""
+ ;;^DD(.85,.04,1,1,2)
+ ;;=K ^DI(.85,"E",$E(X,1,30),DA)

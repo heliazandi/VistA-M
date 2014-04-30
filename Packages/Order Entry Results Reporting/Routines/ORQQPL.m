@@ -1,5 +1,5 @@
 ORQQPL ; slc/CLA/REV - Functions which return patient problem list data ;12/15/97  [ 23-APR-1999 11:02:10 ]
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**9,10,85,173**;Dec 17, 1997
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**9,10,85,173**;Dec 17, 1997;Build 153
 LIST(ORPY,DFN,STATUS)  ;return pt's problem list in format: ien^description^
  ; ICD^onset^last modified^SC^SpExp
  ; STATUS = status of problems to return: (A)CTIVE, (I)NACTIVE, ("")ALL 
@@ -12,6 +12,9 @@ LIST(ORPY,DFN,STATUS)  ;return pt's problem list in format: ien^description^
  .S DETAIL=$$DETAIL^ORWCV1(10)
  .F I=1:1:ORGMPL(0) D
  ..S X=ORGMPL(I),ORPY(I)=$P(X,U)_U_$P(X,U,3)_U_$P(X,U,2)_U_$P(X,U,4)_U_$P(X,U,5)_U_$P(X,U,6)_U_$P(X,U,7)_U_$P(X,U,8)_U_$P(X,U,10)_U_$P(X,U,9)_U_U_DETAIL
+ ..;DSS/LM - BEGIN MODS - resolved status
+ ..D VFD(1)
+ ..;DSS/LM - END MODS
  ..I +ORICD186,'+$$STATCHK^ICDAPIU($P(ORPY(I),U,4),DT) D
  ...S $P(ORPY(I),U,13)="#",$P(ORPY(I),U,9)="#"
  .S:+$G(ORPY(1))<1 ORPY(1)="^No problems found."
@@ -41,6 +44,9 @@ DETAIL(Y,DFN,PROBIEN,ID)  ; RETURN DETAILED PROBLEM DATA
  .S Y(I)="Recorded: "_$P(ORGMPL("RECORDED"),U)_", by "_$P(ORGMPL("RECORDED"),U,2),I=I+1
  .S Y(I)=" Entered: "_$P(ORGMPL("ENTERED"),U)_", by "_$P(ORGMPL("ENTERED"),U,2),I=I+1
  .S Y(I)=" Updated: "_ORGMPL("MODIFIED"),I=I+1
+ .;DSS/LM - BEGIN MODS - report resolved status
+ .D VFD(2)
+ .;DSS/LM - END MODS
  .S Y(I)=" ",I=I+1
  .;S Y(I)=" Comment: "_$S($G(ORGMPL("COMMENT"))>0:ORGMPL("COMMENT"),1:"")
  .I $G(ORGMPL("COMMENT"))>0 D
@@ -55,7 +61,11 @@ DETAIL(Y,DFN,PROBIEN,ID)  ; RETURN DETAILED PROBLEM DATA
  .D HIST^ORQQPL2(.GMPDT,PROBIEN)
  .I $G(GMPDT(0))>0 D
  ..S Y(I)="----------- Audit History -----------",I=I+1
- ..F J=1:1:GMPDT(0)  S Y(I)=$P(GMPDT(J),U)_":  "_$P(GMPDT(J),U,2),I=I+1
+ ..;DSS/LM/SGM - BEGIN MODS - see description in VFD
+ ..;F J=1:1:GMPDT(0)  S Y(I)=$P(GMPDT(J),U)_":  "_$P(GMPDT(J),U,2),I=I+1
+ ..I $$VFD(3)
+ ..E  F J=1:1:GMPDT(0)  S Y(I)=$P(GMPDT(J),U)_":  "_$P(GMPDT(J),U,2),I=I+1
+ ..;DSS/LM/SGM - END MODS
  I $L($T(DETAIL^GMPLUTL2))<1 S Y(1)="Problem list not available."
  Q
 HASPROB(ORDFN,ORPROB) ;extrinsic function returns 1^problem text;ICD9 if
@@ -88,3 +98,22 @@ HASPROB(ORDFN,ORPROB) ;extrinsic function returns 1^problem text;ICD9 if
  ..I $L(ORQICD),(ORQICD'["."),($P($P(ORQAPL,U,4),".")=ORQICD) D
  ...S ORQRSLT="1^"_$P(ORQAPL,U,2)_";"_$P(ORQAPL,U,4)
  Q ORQRSLT
+ ;DSS/LM/SGM - BEGIN MODS - resolved status. Lines added to end of rtn
+VFD(VFD) ;
+ N VFDX S VFDX=1
+ S:$T(VX^VFDI0000)="" VFDX=0
+ I VFDX,'($$VX^VFDI0000["VX") S VFDX=0
+ I 'VFDX Q:$Q 0 Q
+ I VFD=1,$P(X,U,11)'="" S ORPY(I)=ORPY(I)_U_$P(X,U,11)
+ I VFD=2,$G(ORGMPL("VFD RESOLVED"))="R" D
+ . S Y(I)=" ",I=I+1,Y(I)="Resolved: YES",I=I+1
+ . Q
+ I VFD=3 F J=1:1:GMPDT(0) D
+ . ;if status is inactive, replace RESOLVED with INACTIVATED in display
+ . S VFDX=$P(GMPDT(J),U,2)
+ . I ORGMPL("STATUS")="INACTIVE",$G(ORGMPL("VFD RESOLVED"))'="R",VFDX["RESOLVED" D
+ . . S $P(GMPDT(J),U,2)=$P(VFDX,"RESOLVED")_"INACTIVATED"_$P(VFDX,"RESOLVED",2,99)
+ . . Q
+ . S Y(I)=$P(GMPDT(J),U)_":  "_$P(GMPDT(J),U,2),I=I+1
+ . Q
+ Q:$Q 1 Q

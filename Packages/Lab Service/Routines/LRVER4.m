@@ -1,5 +1,5 @@
 LRVER4 ;DALOI/STAFF - LAB ROUTINE DATA VERIFICATION ;07/06/10  14:08
- ;;5.2;LAB SERVICE;**14,42,112,121,140,171,153,188,279,283,286,350**;Sep 27, 1994;Build 230
+ ;;5.2;LAB SERVICE;**14,42,112,121,140,171,153,188,279,283,286,350**;Sep 27, 1994;Build 7
  ;
  N LRAMEND,LRRFLAG
  ;
@@ -7,8 +7,17 @@ LOOP ;
  S LRLCT=0
  I '$D(LRGVP) D
  . S:$D(LRWRDS) LRWRD=LRWRDS
- . W !!,PNM,"  SSN: ",SSN,"   " S LRLCT=LRLCT+1
- . I LRDPF=2 W "   LOC: ",$S(LRWRD'="":LRWRD,1:$S($L($P(^LRO(68,LRAA,1,LRAD,1,LRAN,0),U,7)):$P(^(0),U,7),1:"??"))
+ . ;DSS/RAF - BEGIN MOD to change SSN label to MRN and add DOB
+ . ;W !!,PNM,"  SSN: ",SSN,"   " S LRLCT=LRLCT+1
+ . ;I LRDPF=2 W "   LOC: ",$S(LRWRD'="":LRWRD,1:$S($L($P(^LRO(68,LRAA,1,LRAD,1,LRAN,0),U,7)):$P(^(0),U,7),1:"??"))
+ . I $T(VX^VFDI0000)'="",$$VX^VFDI0000["VX",$G(VA("MRN"))]"" D
+ . . W !!,PNM_"  ",?35,$G(VA("MRN",0))_": "_SSN,"   " S LRLCT=LRLCT+1
+ . . W !,?35,"DOB: ",$P($G(VADM(3)),U,2)
+ . . I LRDPF=2 W !,?20,"LOC: ",$S(LRWRD'="":LRWRD,1:$S($L($P(^LRO(68,LRAA,1,LRAD,1,LRAN,0),U,7)):$P(^(0),U,7),1:"??"))
+ . E  D
+ . . W !!,PNM,"  SSN: ",SSN,"   " S LRLCT=LRLCT+1
+ . . I LRDPF=2 W "   LOC: ",$S(LRWRD'="":LRWRD,1:$S($L($P(^LRO(68,LRAA,1,LRAD,1,LRAN,0),U,7)):$P(^(0),U,7),1:"??"))
+ . ;DSS/RAF - END MOD
  ;
  W !,"Pat Info: ",$P($G(^LR(LRDFN,.091)),U)
  W ?34," Sex: ",$S(SEX="M":"MALE",SEX="F":"FEMALE",1:SEX)

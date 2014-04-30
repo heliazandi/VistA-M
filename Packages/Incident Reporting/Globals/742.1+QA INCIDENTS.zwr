@@ -17,7 +17,7 @@ ZWR
 ^QA(742.1,16,0)="Death^1^^2^^N"
 ^QA(742.1,17,0)="Missing Patient^1^^2^^N"
 ^QA(742.1,18,0)="Informed Consent-Fail. To Obtain^1^^^^N"
-^QA(742.1,19,0)="Inaccurate Counts in Surgery^1^^2^^1"
+^QA(742.1,19,0)="Inaccurate Counts in Surgery^1^^1^^1"
 ^QA(742.1,20,0)="React. to Blood/Blood Products^1^^2^^1"
 ^QA(742.1,21,0)="Diagnostic Error^1^^2^^1"
 ^QA(742.1,22,0)="Cardiac Cath-Incidents Involving^2^^2^^1"

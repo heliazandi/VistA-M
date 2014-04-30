@@ -1,5 +1,5 @@
 VADPT6 ;ALB/MJK - PATIENT ID VARIABLES ; 12 AUG 89 @1200
- ;;5.3;Registration;;Aug 13, 1993
+ ;;5.3;Registration;;Aug 13, 1993;Build 153
  ;
 PID ;
 13 ; -- Returns the patient id variables for DFN patient
@@ -21,7 +21,18 @@ PID ;
  I L="",$D(^DPT(DFN,.36)) S X=^(.36) I +X S L=$P(X,"^",3),B=$P(X,"^",4)
  I L="" S X=$P(^DPT(DFN,0),"^",9) I X]"" S L=$E(X,1,3)_"-"_$E(X,4,5)_"-"_$E(X,6,10),B=$E(X,6,10)
  ;
-PIDQ S VA("PID")=L,VA("BID")=B Q
+PIDQ S VA("PID")=L,VA("BID")=B
+ ;DSS/JG/SGM - BEGIN MODS - MRNs
+ ;Q
+ Q:'$L($T(ID^VFDDFN))
+ ; Parameter VFD PATIENT ID controls behavior here
+ N X,VFDP D RPCIDL^VFDDFN(.VFDP) I $G(VFDP)<3 Q ; not vxVistA
+ S X=$$ID^VFDDFN(DFN,,"MRN",,1) I $L(X),+X'=-1 D
+ . S VA("MRN")=X S:$L(X)<11 $E(X,11)=" " S VA("PID")=X
+ . S VA("MRN",0)=$P(VFDP,U,2)
+ . Q
+ Q
+ ;DSS/JG - END MODS
  ;
 SET ;-- execute id format specific long id, short id and x-ref set logic
  ;   input: VADFN == DFN

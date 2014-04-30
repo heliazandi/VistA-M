@@ -1,4 +1,4 @@
-IBXSC117 ; ;07/14/09
+IBXSC117 ; ;03/19/13
  D DE G BEGIN
 DE S DIE="^DPT(",DIC=DIE,DP=2,DL=2,DIEL=0,DU="" K DG,DE,DB Q:$O(^DPT(DA,""))=""
  I $D(^(.121)) S %Z=^(.121) S %=$P(%Z,U,1) S:%]"" DE(2)=% S %=$P(%Z,U,2) S:%]"" DE(4)=% S %=$P(%Z,U,3) S:%]"" DE(6)=% S %=$P(%Z,U,4) S:%]"" DE(7)=% S %=$P(%Z,U,5) S:%]"" DE(8)=% S %=$P(%Z,U,8) S:%]"" DE(1)=% S %=$P(%Z,U,10) S:%]"" DE(10)=%

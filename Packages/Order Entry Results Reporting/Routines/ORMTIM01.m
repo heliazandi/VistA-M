@@ -1,5 +1,5 @@
 ORMTIM01 ; SLC-ISC/RJS - PROCESS TIME BASED EVENT ;2/01/00  10:30 [8/3/05 7:19am]
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**31,40,190,232**;Dec 17, 1997;Build 19
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**31,40,190,232**;Dec 17, 1997;Build 153
  ;
 SCAN ;
  S OCXORMTR="ORMTIME: scan"
@@ -9,7 +9,9 @@ SCAN ;
  ;
  S OCXORMTR="ORMTIME: scan expiring orders"
  S OCXDATE=0 F  S OCXDATE=$O(^OR(100,"AE",OCXDATE)) Q:'OCXDATE  I '((+OCXDATE)>OCXNOW) D
- .S OCXORD=0 F  S OCXORD=$O(^OR(100,"AE",OCXDATE,OCXORD)) Q:'OCXORD  D
+ .;DSS/Con- BEGIN MODS - Check whether order is exempt from expiring
+ .S OCXORD=0 F  S OCXORD=$O(^OR(100,"AE",OCXDATE,OCXORD)) Q:'OCXORD  Q:$$VFD  D
+ ..;DSS/Con - END MODS
  ..D EXP^OCXOTIME(OCXDATE,OCXORD)
  ..I $G(^OR(100,"AE",OCXDATE,OCXORD)),(^OR(100,"AE",OCXDATE,OCXORD)>OCXNOW) Q
  ..S ^OR(100,"AE",OCXDATE,OCXORD)=OCXTMT
@@ -91,3 +93,18 @@ IDATE(X) N %DT,Y S %DT="TF" D ^%DT Q Y
  ;
 TIME(X) N M,H S M=$E(100+(X#60),2,3),H=$E(100+(X\60),2,3) Q H_M
  ;
+VFD() ;DSS/Con - Is ORDER exempt from expiring?
+ ; Context variable OCXORD  = ORDER IEN to check
+ ; Context variable OCXDATE = STOP DATE
+ ;
+ ; Returns 1 (TRUE) if and only if this order is exempt
+ ; Resets "AE" index value to the empty string
+ ;
+ N VFD S VFD=$P($G(^OR(100,OCXORD,0)),U,14) Q:'VFD 0  ;No PACKAGE
+ I '$$GET^XPAR("SYS","VFD ORDERS DO NOT EXPIRE",VFD,"I") Q 0
+ ; let inactive orders continue through ORMTIME unabated
+ S VFD=+$$STATUS^ORQOR2(OCXORD) S:VFD="" VFD=99
+ I "^1^2^7^11^12^13^14^15^"[(U_VFD_U) Q 0
+ ;
+ S ^OR(100,"AE",OCXDATE,OCXORD)=""
+ Q 1

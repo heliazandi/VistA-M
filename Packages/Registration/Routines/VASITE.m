@@ -1,5 +1,5 @@
 VASITE ;ALB/AAS - TIME SENSETIVE VA STATION NUMBER UTILITY ; 4/22/92
- ;;5.3;Registration;**134**;Aug 13, 1993
+ ;;5.3;Registration;**134**;Aug 13, 1993;Build 153
  ;
 SITE(DATE,DIV) ;
  ;       -Output= Institution file pointer^Institution name^station number with suffix
@@ -52,7 +52,9 @@ PRIM(DATE) ;  -returns medical center division of primary medical center divisio
  N PRIM
  S:'$D(DATE) DATE=DT S DATE=DATE+.24
  S PRIM=$G(^VA(389.9,+$O(^(+$O(^VA(389.9,"AIVDT1",1,$$IVDATE(DATE))),0)),0))
- Q $S($P(PRIM,"^",4)?3N:$P(PRIM,"^",3),1:-1)
+ ;DSS/SGM - BEGIN MODS - change ?3N on next line with ?3.N
+ Q $S($P(PRIM,"^",4)?3.N:$P(PRIM,"^",3),1:-1)
+ ;DSS/SGM - END MODS
  ;
 NAME(DATE) ;  -returns the new name of medical centers that have integrated
  ;

@@ -1,5 +1,5 @@
 GMVRPCM ; HOIFO/DP - RPC for Vitals Manager ;07/25/05 9:10am
- ;;5.0;GEN. MED. REC. - VITALS;**1,8,13,3,22**;Oct 31, 2002;Build 22
+ ;;5.0;GEN. MED. REC. - VITALS;**1,8,13,3,22**;Oct 31, 2002;Build 153
  ; Integration Agreements:
  ; #10040 [Supported] File 44 references
  ; #10076 [Supported] XUSEC Calls
@@ -242,7 +242,10 @@ TYPE(X) ; [F] Returns the type of template
 VT ;VitalTypeIENS
  N X,Y,Z
  S Y=0,@RESULTS@(0)="-1"
- F X="T","P","R","BP","HT","WT","PN","PO2","CVP","CG" D
+ ;DSS/LM - BEGIN MODS - additional vitals
+ ;F X="T","P","R","BP","HT","WT","PN","PO2","CVP","CG" D
+ F X="T","P","R","BP","HT","WT","PN","PO2","CVP","CG","LMP","EDD","LEN" D
+ .;DSS/LM - END MODS
  .S Z=$O(^GMRD(120.51,"C",X,0))
  .Q:'Z
  .S Y=Y+1,@RESULTS@(Y)=Z

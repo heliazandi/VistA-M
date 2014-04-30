@@ -1,5 +1,5 @@
-ORQ2 ; SLC/MKB/GSS - Detailed Order Report ;03/14/11  09:33
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**12,56,75,94,141,213,195,243,282,293,280,346**;Dec 17, 1997;Build 5
+ORQ2 ; SLC/MKB/GSS - Detailed Order Report ;11/16/09  06:07
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**12,56,75,94,141,213,195,243,282,293,280**;Dec 17, 1997;Build 7
  ;
  ;
  ;Reference to ^DIC(45.7 supported by IA #519
@@ -68,6 +68,9 @@ D4 S CNT=CNT+1,@ORY@(CNT)="Order:" D:$D(IOUON) SETVIDEO(CNT,1,6,IOUON,IOUOFF)
  . . D ^DIWP
  . . D:$D(^ORD(101.41,+ORDIALOG,10,"DAD",PRMT)) CHILDREN(PRMT)
  . . S I=0 F  S I=$O(^UTILITY($J,"W",DIWL,I)) Q:I'>0  S CNT=CNT+1,@ORY@(CNT)=$S((INST=FIRST)&(I=1):TITLE,1:$$REPEAT^XLFSTR(" ",30))_^(I,0)
+ ;DSS/RAF - BEGIN MODS - add performing lab to detailed view
+ D VFD1
+ ;DSS/RAF - END MODS
  I ORNMSP="GMRC",$G(^OR(100,ORIFN,4)) S CNT=CNT+1,@ORY@(CNT)="Consult No.:                  "_+^(4)
  S CNT=CNT+1,@ORY@(CNT)="   " ;blank
  D RAD^ORQ21(1):ORNMSP="RA",MED^ORQ21:ORNMSP="PS" ;add'l data
@@ -92,12 +95,12 @@ D5 K ^TMP($J,"OCDATA") I $$OCAPI^ORCHECK(+ORIFN,"OCDATA") D
  Q
  ;
 XTRA ;
- I $O(^TMP($J,"OCDATA",CK,"OC TEXT",1)) N ORXT S ORXT=1 F  S ORXT=$O(^TMP($J,"OCDATA",CK,"OC TEXT",ORXT)) Q:'ORXT  D
+ I $D(^TMP($J,"OCDATA",CK,"OC TEXT",2,0)) N ORXT S ORXT=1 F  S ORXT=$O(^TMP($J,"OCDATA",CK,"OC TEXT",ORXT)) Q:'ORXT  D
  . S X=^TMP($J,"OCDATA",CK,"OC TEXT",ORXT,0),CDL="              "
  . I $L(X)'>68 S CNT=CNT+1,@ORY@(CNT)=CDL_X Q
  . S DIWL=1,DIWR=68,DIWF="C68" K ^UTILITY($J,"W") D ^DIWP
  . S I=0 F  S I=$O(^UTILITY($J,"W",DIWL,I)) Q:I'>0  S CNT=CNT+1,@ORY@(CNT)=CDL_^(I,0),CDL="              "
- I $O(^TMP($J,"OCDATA",CK,"OC TEXT",1)) S X="",CNT=CNT+1,@ORY@(CNT)="              "
+ I $D(^TMP($J,"OCDATA",CK,"OC TEXT",2,0)) S X="",CNT=CNT+1,@ORY@(CNT)="              "
  Q
  ;
 SUB(IFN) ; -- add suborder or parent
@@ -149,3 +152,16 @@ ORIG(IFN) ; -- Return original start date of [renewal] order
  . I $P(X3,U,11)=2,$P(X3,U,5) S I=$P(X3,U,5) Q  ;loop
  . S Y=$P($G(^OR(100,I,0)),U,8),DONE=1
  Q Y
+ ;DSS/SGM - BEGIN MODS
+VFD() ; return 0,1,2
+ N A S A=0 I $T(VX^VFDI0000)'="" S A=$$VX^VFDI0000,A=1+(A="VXS")
+ Q A
+ ;
+VFD1 ; display performing lab in vxCPRS
+ I $$VFD D
+ . N A,B,X,DIERR,VFDMSG
+ . S B="",A=+$$GET1^DIQ(100,ORIFN_",",21600.01,"E","VFDMSG") 
+ . I A>0 S B=$$GET1^DIQ(9999999.64,A_",",.01,"E","VFDMSG")
+ . S CNT=CNT+1,@ORY@(CNT)="Performing Lab:               "_B
+ . Q
+ Q

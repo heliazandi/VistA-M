@@ -1,5 +1,5 @@
 ORWRPP1 ; slc/dcm - Background Report Prints (cont.) ; 12/05/02  11:02
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**109,160,192,263**;Dec 17, 1997;Build 9
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**109,160,192,263**;Dec 17, 1997;Build 153
  ;;Per VHA Directive 2004-038, this routine should not be modified.
 MEDB(ROOT,ORDFN,OREXAMID,ORALPHA,OROMEGA,ORDTRNG,REMOTE,ORMAX,ORFHIE)  ;Print Medicine report
  K ^TMP("MCAR",$J)
@@ -79,8 +79,12 @@ HEAD(ORDFN,PAGE,TITLE,STATION) ;Print a patient header
  D PAT^ORPR03(ORDFN)
  D SITE^ORWRPP($G(STATION))
  W !,TITLE,?(IOM-$L("Page "_PAGE)),"Page "_PAGE
- S X=ORDOB_" ("_ORAGE_")"
- W !,ORPNM_"   "_ORSSN,?39,$G(ORL(0))_$S($L($G(ORL(1))):"/"_ORL(1),1:""),?(79-$L(X)),X
+ ;DSS/SGM - BEGIN MODS - REDO HEADER LINE
+ ;S X=ORDOB_" ("_ORAGE_")"
+ ;W !,ORPNM_"   "_ORSSN,?39,$G(ORL(0))_$S($L($G(ORL(1))):"/"_ORL(1),1:""),?(79-$L(X)),X
+ W !,$$VFD(ORPNM,ORSSN,ORDOB,ORAGE,ORSEX)
+ S X=$G(ORL(0))_$S($L($G(ORL(1))):"/"_ORL(1),1:"") W:X'="" !,X
+ ;DSS/SGM - END MODS
  S $P(ORHLINE,"=",IOM+1)=""
  W !,ORHLINE
  S X="Printed: "_$$DATE^ORU($$NOW^XLFDT,"MM/DD/CCYY HR:MIN")
@@ -114,3 +118,16 @@ HURL(Y,ORDFN,TITLE,FORMAT,STATION,READ) ;Write out the file
  . W !,@Y@(L,0)
  W !?27,"*** WORK COPY ONLY ***"
  Q
+ ;DSS/SGM - BEGIN MODS - extrinsic function for patient demographics
+VFD(NAME,MRN,DOB,AGE,SEX) ;
+ ; NAME - patient name
+ ;  MRN - medical record number
+ ;  DOB - human readable date of birth
+ ;  AGE - patient's age
+ ;  SEX - single character patient sex
+ ;S X=ORDOB_" ("_ORAGE_")"
+ ;W !,ORPNM_"   "_ORSSN,?39,$G(ORL(0))_$S($L($G(ORL(1))):"/"_ORL(1),1:""),?(79-$L(X)),X
+ N X S NAME=$G(NAME),MRN=$G(MRN),DOB=$G(DOB),AGE=$G(AGE),SEX=$G(SEX)
+ N X S X=$E($G(NAME),1,26),$E(X,29)="MRN: "_MRN,$E(X,45)="Sex: "_SEX
+ S $E(X,53)="DOB" S:AGE X=X_" (Age)" S X=X_": "_DOB S:AGE X=X_" ("_AGE_")"
+ Q X

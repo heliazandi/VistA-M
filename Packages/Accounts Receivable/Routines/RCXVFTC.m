@@ -1,6 +1,5 @@
-RCXVFTC ;DAOU/ALA-FTP for Cache NT ; 10/10/12 11:54am
- ;;4.5;Accounts Receivable;**201,292**;Mar 20, 1995;Build 3
- ;Per VHA Directive 2004-038, this routine should not be modified.
+RCXVFTC ;DAOU/ALA-FTP for Cache NT ;16-DEC-2003
+ ;;4.5;Accounts Receivable;**201**;Mar 20, 1995
  ;
 OUT ;  Outgoing
  D CTXT
@@ -11,10 +10,6 @@ OUT ;  Outgoing
  ;
 BAT ;  Create the .COM file
  S RCXVOUT="S X=$ZF(-1,""ftp -n -s:""_RCXVPTH_RCXVBAT_"">""_RCXVPTH_RCXVSCR)"
- ;
- ;  For Full Linux OS
- I RCXVSYS["UNIX" D
- . S RCXVOUT="S X=$ZF(-1,""ftp -n -v <""_RCXVPTH_RCXVBAT_"">""_RCXVPTH_RCXVSCR)"
  ;
  X RCXVOUT
  ;

@@ -1,5 +1,5 @@
 TIUSRVLO ; SLC/JER - Server fns - lists for CPRS ;9/12/06  14:17
- ;;1.0;TEXT INTEGRATION UTILITIES;**1,15,19,63,108,122,181,194,211**;Jun 20, 1997;Build 26
+ ;;1.0;TEXT INTEGRATION UTILITIES;**1,15,19,63,108,122,181,194,211**;Jun 20, 1997;Build 7
 NOTES(TIUY,DFN,EARLY,LATE,PERSON,SEQUENCE) ; Get notes
  N TIUPREF,TIUOCC S TIUPREF=$$PERSPRF^TIULE(DUZ)
  S TIUOCC=$P(TIUPREF,U,10),PERSON=$S(+$G(PERSON):+$G(PERSON),1:+$G(DUZ))
@@ -162,9 +162,13 @@ RESOLVE(DA) ; Resolve to external data
  S IDPARENT=+$G(^TIU(8925,+DA,21))
  S TIUPT=$G(^DPT(+$P(TIUR0,U,2),0))
  S DOC=$$PNAME^TIULC1(+TIUR0)
- I +$G(^TIU(8925.1,+DA,15)) D
+ ;DSS/SGM - BEGIN MODS - Fix wrong var ref
+ ; first line of original code replaced I with E  I
+ I $$VFD
+ E  I +$G(^TIU(8925.1,+DA,15)) D
  . N TIUD15 S TIUD15=$G(^TIU(8925.1,+DA,15))
  . S DOC=DOC_";"_$P($G(^TIU(8926.1,+TIUD15,0)),U)
+ ;DSS/SGM - END MODS
  I DOC="Addendum" S DOC=DOC_" to "_$$PNAME^TIULC1(+$G(^TIU(8925,+$P(TIUR0,U,6),0)))
  ; If IDNotes (TIU*1.0*100) installed, use $$PREFIX^TIULA2 to evaluate
  ; which prefix to use:
@@ -206,3 +210,12 @@ IDSORT(TIUDA) ; Get ID Sort indicator when appropriate
  N TIUDPRM
  D DOCPRM^TIULC1(+$G(^TIU(8925,+TIUDA,0)),.TIUDPRM)
  Q +$P(TIUDPRM(0),U,18)
+ ;DSS/SGM - BEGIN MODS - lines added to end of routine
+VFD() ; called from RESOLVE above
+ ; First two lines referenced +DA but should ref'd +TIUR0
+ Q:'$G(^TIU(8925.1,+TIUR0,15)) 1
+ Q:$T(VX^VFDI0000)="" 0 Q:$$VX^VFDI0000'["VX" 0
+ N X,TIUD15 S TIUD15=$G(^TIU(8925.1,+TIUR0,15))
+ S X="" I $$GET1^VFDCXPR(,"~VFD TIU STANDARD TITLE")=1 S X=$P($G(^TIU(8926.1,+TIUD15,0)),U)
+ S DOC=DOC_";"_X
+ Q 1

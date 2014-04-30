@@ -1,5 +1,5 @@
 LRVER ;DALOI/STAFF - LAB ROUTINE DATA VERIFICATION ;11/23/11  12:08
- ;;5.2;LAB SERVICE;**153,286,350**;Sep 27, 1994;Build 230
+ ;;5.2;LAB SERVICE;**153,286,350**;Sep 27, 1994;Build 7
  ;
  D ^LRPARAM
  S LRCW=8,LREND=0,LRPANEL=0,LRUID=""
@@ -61,7 +61,11 @@ WLN1 I '$D(^LRO(68,LRAA,1,LRAD,1,LRAN,0)) W !,"Accession does not exist." D NEXT
  S LRDFN=+^LRO(68,LRAA,1,LRAD,1,LRAN,0),LRORD=$S($D(^(.1)):^(.1),1:0),LRODT=+$S($P(^(0),U,4):$P(^(0),U,4),1:$P(^(0),U,3)),LRSN=+$P(^(0),U,5)
  S LRUID=$P($G(^LRO(68,LRAA,1,LRAD,1,LRAN,.3)),"^")
  S LRDPF=$P(^LR(LRDFN,0),U,2),DFN=$P(^(0),U,3) D PT^LRX
- W !,PNM,?30,SSN
+ ;DSS/RAF - BEGIN MOD - add MRN and DOB to display
+ ;W !,PNM,?30,SSN
+ I $G(VA("MRN"))]"" W !,PNM,?30,$G(VA("MRN",0))_": "_SSN,?49,"DOB: ",$P($G(VADM(3)),U,2)
+ E  W !,PNM,?30,SSN
+ ;DSS/RAF - END MOD
  W:LRDPF=2 "   LOC:",$S($L(LRWRD):LRWRD,1:$S($L($P(^LRO(68,LRAA,1,LRAD,1,LRAN,0),U,7)):$P(^(0),U,7),1:"??"))
  W !
  S LRCDT=$P($G(^LRO(68,LRAA,1,LRAD,1,LRAN,3)),U)

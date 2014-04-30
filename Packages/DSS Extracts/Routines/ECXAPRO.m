@@ -1,5 +1,5 @@
-ECXAPRO ;ALB/JAP - PRO Extract Audit Report ;11/30/11  15:43
- ;;3.0;DSS EXTRACTS;**9,21,33,36,132,137**;Dec 22, 1997;Build 3
+ECXAPRO ;ALB/JAP - PRO Extract Audit Report ; Nov 16, 1998
+ ;;3.0;DSS EXTRACTS;**9,21,33,36**;Dec 22, 1997
  ;
 EN ;entry point for PRO extract audit report
  N %X,%Y,DIV,X,Y,DIC,DA,DR,DIQ,DIR,DIRUT,DTOUT,DUOUT
@@ -99,7 +99,7 @@ PROCESS ;process the data in file #727.826
  .Q:LOC["LAB"
  .;duplicate the logic in sort^rmprn6 that sets cost=0 if form=4
  .I LOC["ORD" S COST=0
- .S LOC=$S(LOC["ORD":$P(LOC,"ORD",1),LOC["HO2":$P(LOC,"HO2",1),1:$P(LOC,"NONL",1)) ;137
+ .S LOC=$S(LOC["ORD":$P(LOC,"ORD",1),1:$P(LOC,"NONL",1))
  .;quit if feeder location isn't for division selected for report
  .I ECXALL=1,LOC'[STN Q
  .I ECXALL=0,LOC'=STN Q
@@ -124,7 +124,6 @@ PROCESS ;process the data in file #727.826
  ....S ^TMP($J,CODE,RD)=^TMP($J,"RMPRGN",STN,GN,FLG,CODE,RD)
  ....I TYPE="X" D REP(CODE)
  ....I TYPE="N" D NEW(CODE)
- ....I TYPE="R" D RENT(CODE)
  Q
  ;
 GETCODE(PSAS,NODE) ;find the appropriate nppd code using psas hcpcs
@@ -157,7 +156,6 @@ GROUP ;total grouper to main key
  S ^TMP($J,BL,BR)=^TMP($J,"RMPRGN",STN,GN,1,BL,BR),$P(^TMP($J,BL,BR),U,4)=COST
  I TYPE="X" D REP(BL)
  I TYPE="N" D NEW(BL)
- I TYPE="R" D RENT(BL)
  Q
  ;
 REP(C) ;calculate repair cost
@@ -177,13 +175,4 @@ NEW(C) ;calculate new costs
  I SRCE["V" S $P(^TMP($J,"N",STN,LINE),U,1)=$P(^TMP($J,"N",STN,LINE),U,1)+QTY
  I SRCE["C" S $P(^TMP($J,"N",STN,LINE),U,2)=$P(^TMP($J,"N",STN,LINE),U,2)+QTY
  S $P(^TMP($J,"N",STN,LINE),U,3)=$P(^TMP($J,"N",STN,LINE),U,3)+COST
- Q
- ;
-RENT(C) ;calculate rental costs
- N LINE
- S LINE=C
- I $G(^TMP($J,"RT",STN,LINE))="" S ^TMP($J,"RT",STN,LINE)=""
- I SRCE["V" S $P(^TMP($J,"RT",STN,LINE),U,1)=$P(^TMP($J,"RT",STN,LINE),U,1)+QTY
- I SRCE["C" S $P(^TMP($J,"RT",STN,LINE),U,2)=$P(^TMP($J,"RT",STN,LINE),U,2)+QTY
- S $P(^TMP($J,"RT",STN,LINE),U,3)=$P(^TMP($J,"RT",STN,LINE),U,3)+COST
  Q

@@ -191,4 +191,25 @@ PCE4NOTE(LST,IEN,DFN,VSITSTR) ; Return encounter for an associated note
  .. S $P(LST(ILST),U,10)=ICOM
  .. S ILST=ILST+1
  .. S LST(ILST)="COM"_U_ICOM_U_X811
+ ;DSS/SMP - BEGIN MODS - Incorporate OSHERA compliant vxVistA tabs from CPRS/PCE.
+ I $G(^%ZOSF("ZVX"))["VX" D
+ .;for vxVistA SnoMed:
+ .; LST(n)="VFDSNO"^Code^CAT^NARR^prv
+ .S VFDSNO=0 F  S VFDSNO=$O(^TMP("PXKENC",$J,VISIT,"VFDPXSN4",VFDSNO)) Q:'VFDSNO  D
+ .. S X0=^TMP("PXKENC",$J,VISIT,"VFDPXSN4",VFDSNO,0),X802=$G(^(802)),X12=$G(^(12)),X811=$G(^(811))
+ .. S CODE=$P(X0,U)
+ .. S CAT=$P(X802,U)
+ .. S:CAT CAT=$P(^AUTNPOV(CAT,0),U)
+ .. S NARR=$P(X0,U,4)
+ .. S:NARR NARR=$P(^AUTNPOV(NARR,0),U)
+ .. S USAGE=$P(X0,U,5)
+ .. S PRV=$P(X12,U,4)
+ .. S ILST=ILST+1
+ .. S LST(ILST)="VFDSNO"_U_CODE_U_CAT_U_NARR_U_PRV_U_USAGE
+ .. I X811]"" D
+ ... S ICOM=ICOM+1
+ ... S $P(LST(ILST),U,10)=ICOM
+ ... S ILST=ILST+1
+ ... S LST(ILST)="COM"_U_ICOM_U_X811
+ ;DSS/SMP - END MODES
  Q

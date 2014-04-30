@@ -1,5 +1,5 @@
 DPTLK ;ALB/RMO,RTK - MAS Patient Look-up Main Routine ; 3/22/05 4:19pm
- ;;5.3;Registration;**32,72,93,73,136,157,197,232,265,277,223,327,244,513,528,541,576,600,485,633,629,647,769**;Aug 13, 1993;Build 2
+ ;;5.3;Registration;**32,72,93,73,136,157,197,232,265,277,223,327,244,513,528,541,576,600,485,633,629,647,769**;Aug 13, 1993;Build 153
  ;
  ; mods made for magstripe read 12/96 - JFP
  ;
@@ -192,6 +192,9 @@ FIELDS(IATA) ; -- Sets fields
  S DPTIDS(.09)=$G(@DGFLDS@(1)) ;SSN
  Q
 ENR ;Display Enrollment information after patient selection
+ ;DSS/SGM - BEGIN MODS - do not display enroll data
+ Q
+ ;DSS/SGM - END MODS
  N DGENCAT,DGENDFN,DGENR,DGEGTIEN,DGEGT
  I '$$GET^DGENA($$FINDCUR^DGENA(+DPTDFN),.DGENR) Q
  S DGENCAT=$$CATEGORY^DGENA4(+DPTDFN)

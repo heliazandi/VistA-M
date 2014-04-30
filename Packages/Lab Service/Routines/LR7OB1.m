@@ -1,5 +1,5 @@
 LR7OB1 ;slc/dcm - Build message, backdoor Lab from file 69 ;8/11/97
- ;;5.2;LAB SERVICE;**121,187,238**;Sep 27, 1994
+ ;;5.2;LAB SERVICE;**121,187,238**;Sep 27, 1994;Build 25
  ;
 NEW(ODT,SN,CONTROL,NAT,TESTS,LRSTATI) ;Set-up order message
  ;Need ODT & SN of entry in ^LRO(69,ODT,1,SN)
@@ -24,6 +24,13 @@ NEW(ODT,SN,CONTROL,NAT,TESTS,LRSTATI) ;Set-up order message
  .. S ODT=+$P(X,"^",14),SN=$P($P(X,"^",14),";",2)
  .. I $D(^LRO(69,+ODT,1,+SN,0)) S:CONTROL="RE" LRSTATI=2 D EN1^LR7OB0(ODT,SN,CONTROL,$G(NAT)),CALL(CONTROL) K ^TMP("LRAP",$J),^TMP("LRCH",$J),^TMP("LRBB",$J)
  . D EN1^LR7OB0(ODT,SN,CONTROL,$G(NAT)),CALL(CONTROL) K ^TMP("LRAP",$J),^TMP("LRCH",$J),^TMP("LRBB",$J)
+ ;DSS/RAF - BEGIN MOD - set grouper number
+ I +$G(LRORIFN)>0,$T(VX^VFDI0000)]"",$$VX^VFDI0000["VX",$T(ORDERID^VFDOR)]"" D
+ .I $O(^VFD(21695,"AD",LRORIFN,0)) Q  ;stops duplicate grouper ID entries
+ .N VFDDATA,VFDORID
+ .S VFDDATA(1)=+$G(LRORIFN)
+ .S VFDORID=$$ORDERID^VFDOR(.VFDDATA,1)
+ ;DSS/RAF - END MOD
  Q
 CALL(CNTRL) ;Make protocol calls
  Q:'$L($T(MSG^XQOR))

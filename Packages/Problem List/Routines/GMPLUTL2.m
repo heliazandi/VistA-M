@@ -1,5 +1,5 @@
-GMPLUTL2 ; SLC/MKB/KER -- PL Utilities (OE/TIU)             ; 04/15/2002
- ;;2.0;Problem List;**10,18,21,26,35**;Aug 25, 1994;Build 26
+GMPLUTL2 ; SLC/MKB/KER -- PL Utilities (OE/TIU) ; 04/15/2002
+ ;;2.0;Problem List;**10,18,21,26,35**;Aug 25, 1994;Build 153
  ; External References
  ;   DBIA   348  ^DPT(  file #2
  ;   DBIA 10082  ^ICD9(  file #80
@@ -41,6 +41,9 @@ LIST(GMPL,GMPDFN,GMPSTAT,GMPCOMM) ; Returns list of Prob for Pt.
  . S SC=$S(+$P(GMPL1,U,10):"SC",$P(GMPL1,U,10)=0:"NSC",1:"")
  . N SCS D SCS^GMPLX1(IFN,.SCS) S SP=$G(SCS(3))
  . S GMPL(CNT)=IFN_U_ST_U_$$PROBTEXT^GMPLX(IFN)_U_ICD_U_ONSET_U_LASTMOD_U_SC_U_SP_U_$S($P(GMPL1,U,14)="A":"*",1:"")_U_$S('$P($G(^GMPL(125.99,1,0)),U,2):"",$P(GMPL1,U,2)'="T":"",1:"$")
+ . ;DSS/SGM/LM - BEGIN MODS
+ . D VFD(1)
+ . ;DSS/LM - END MODS
  . I $G(GMPCOMM) D
  . . N FAC,NIFN,NOTE,NOTECNT
  . . S NOTECNT=0,FAC=0
@@ -83,7 +86,9 @@ DETAIL(IFN,GMPL) ; Returns Detailed Data for Problem
  ;
  ;         GMPL("COMMENT") = #
  ;         GMPL("COMMENT",CNT) = Date ^ Author ^ Text of Note
- ;              
+ ;  
+ ; DSS/LM  GMPL("VFD RESOLVED") = RESOLVED flag 'R' or EMPTY STRING - 3/16/2011
+ ;            
  N GMPL0,GMPL1,GMPLP,X,I,FAC,CNT,NIFN Q:'$D(^AUPNPROB(IFN,0))
  S GMPLP=+($$PTR^GMPLUTL4),GMPL0=$G(^AUPNPROB(IFN,0)),GMPL1=$G(^(1))
  S GMPL("DIAGNOSIS")=$P($G(^ICD9(+GMPL0,0)),U)
@@ -112,6 +117,9 @@ DETAIL(IFN,GMPL) ; Returns Detailed Data for Problem
  . . S X=$G(^AUPNPROB(IFN,11,FAC,11,NIFN,0))
  . . S CNT=CNT+1,GMPL("COMMENT",CNT)=$$EXTDT^GMPLX($P(X,U,5))_U_$P($G(^VA(200,+$P(X,U,6),0)),U)_U_$P(X,U,3)
  S GMPL("COMMENT")=CNT D AUDIT
+ ;DSS/LM - BEGIN MODS - return vxVistA resolved status
+ D VFD(2)
+ ;DSS/LM - END MODS
  Q
  ;
 AUDIT ; 14 Sep 99 - MA - Add audit trail to OE Problem List.
@@ -199,4 +207,11 @@ VAF(DFN,SILENT) ; -- print PL VA Form chart copy
  . I GMPRT'>0 W !!,"No problems available." S GMPQUIT=1 Q
  . D DEVICE^GMPLPRNT Q:$G(GMPQUIT)  D CLEAR^VALM1
  D PRT^GMPLPRNT
+ Q
+ ;DSS/SGM - BEGIN MODS - all lines below vxVistA added to this routine
+VFD(N) ;
+ Q:$T(VX^VFDI0000)=""  Q:'($$VX^VFDI0000["VX")
+ I N=1 N X S X=$P($G(^AUPNPROB(IFN,21600)),U,2)
+ I N=1,$L(X) S GMPL(CNT)=GMPL(CNT)_U_X
+ I N=2 S GMPL("VFD RESOLVED")=$P($G(^AUPNPROB(IFN,21600)),U,2)
  Q

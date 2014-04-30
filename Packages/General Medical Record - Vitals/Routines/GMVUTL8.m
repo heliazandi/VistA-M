@@ -1,5 +1,5 @@
 GMVUTL8 ;HIOFO/DS,FT-RPC API TO RETURN ALL VITALS/CATEGORIES/QUALIFIERS ;3/31/05  13:34
- ;;5.0;GEN. MED. REC. - VITALS;**1,3**;Oct 31, 2002
+ ;;5.0;GEN. MED. REC. - VITALS;**1,3**;Oct 31, 2002;Build 153
  ;
  ; This routine uses the following IAs:
  ;  #2263 - ^XPAR calls            (Supported)
@@ -68,7 +68,10 @@ VITALIEN() ;Returns the Vital Type IENS in a list separated by commas.
  ;
  N GMVABB,GMVIEN,GMVLIST
  S GMVLIST=""
- F GMVABB="BP","T","R","P","HT","WT","CVP","CG","PO2","PN" D
+ ;DSS/SGM - BEGIN MODS - also return VFD vitals
+ ;F GMVABB="BP","T","R","P","HT","WT","CVP","CG","PO2","PN" D
+ F GMVABB="BP","T","R","P","HT","WT","CVP","CG","PO2","PN","LMP","EDD","LEN" D
+ .;DSS/SGM - END MODS
  .S GMVIEN=$O(^GMRD(120.51,"C",GMVABB,0))
  .Q:'GMVIEN
  .S GMVLIST=GMVLIST_","_GMVIEN

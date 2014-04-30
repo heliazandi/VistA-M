@@ -1,5 +1,5 @@
 LRSORD1A ;DALISC/DRH - LRSORC Continued ;07-22-93
- ;;5.2;LAB SERVICE;**201,344**;Sep 27, 1994
+ ;;5.2;LAB SERVICE;**201,344**;Sep 27, 1994;Build 25
 INIT ;
  S U="^"
  D CONTROL
@@ -53,7 +53,14 @@ PRINT ;
  ....;S LRCHNG=PNM2 D CHNCASE^LRSORA2 S PNM2=LRCHNG
  ....;S PNM=PNM1_","_PNM2
  ....;S LRCHNG=LRSPEC D CHNCASE^LRSORA2 S LRSPEC=LRCHNG
- ....W !,$E(PNM,1,23),?25,SSN W:LRDPF=2 " ",LRLOC,?50,$E(LRAN,1,14)
+ ....;DSS/RAF - BEGIN MOD for MRN label and DOB
+ ....;W !,$E(PNM,1,23),?25,SSN W:LRDPF=2 " ",LRLOC,?50,$E(LRAN,1,14)
+ ....I $G(VA("MRN"))]"" D
+ .....W !,$E(PNM,1,23),?25,$G(VA("MRN",0))_": ",SSN
+ .....W !,?25,"DOB: ",$P($G(VADM(3)),U,2)
+ .....W:LRDPF=2 !,LRLOC,?25,$E(LRAN,1,14)
+ ....E  W !,$E(PNM,1,23),?25,SSN W:LRDPF=2 " ",LRLOC,?50,$E(LRAN,1,14)
+ ....;DSS/RAF - END MOD
  ....W ?63,LRSPDAT
  ....W !," ",LRSPEC
  ....D PRNTST
@@ -100,7 +107,14 @@ COM ;Print comments on specimen
  .I ($Y>(IOSL-7)) D
  ..D CONT D:$E(IOST,1,2)="C-" WAIT Q:LREND
  ..W @IOF D HDR
- ..W !,$E(PNM,1,23),?25,SSN W:LRDPF=2 " ",LRLOC,?50,$E(LRAN,1,14)
+ ..;DSS/RAF - BEGIN MOD for MRN label and DOB
+ ..;W !,$E(PNM,1,23),?25,SSN W:LRDPF=2 " ",LRLOC,?50,$E(LRAN,1,14)
+ ..I $G(VA("MRN"))]"" D
+ ...W !,$E(PNM,1,23),?25,$G(VA("MRN",0))_": ",SSN
+ ...W !,?25,"DOB: ",$P($G(VADM(3)),U,2)
+ ...W:LRDPF=2 " ",LRLOC,?25,$E(LRAN,1,14)
+ ..E  W !,$E(PNM,1,23),?25,SSN W:LRDPF=2 " ",LRLOC,?50,$E(LRAN,1,14)
+ ..;DSS/RAF - END MOD
  ..W ?63,LRSPDAT
  ..;W !,PNM,?35,SSN W:LRDPF=2 " ",LRLOC,?60,LRAN
  ..;D HDR

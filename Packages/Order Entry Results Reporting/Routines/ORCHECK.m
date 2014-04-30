@@ -1,5 +1,5 @@
-ORCHECK ;SLC/MKB-Order checking calls ;06/08/12  07:16
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**7,56,70,94,141,215,243,293,280,346,357,352**;Dec 17, 1997;Build 18
+ORCHECK ;SLC/MKB-Order checking calls ;10/28/10  08:12
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**7,56,70,94,141,215,243,293,280**;Dec 17, 1997;Build 85
  ;;Per VHA Directive 2004-038, this routine should not be modified.
 DISPLAY ; -- DISPLAY event [called from ORCDLG,ORCACT4,ORCMED]
  ;    Expects ORVP, ORNMSP, ORTAB, [ORWARD]
@@ -24,7 +24,6 @@ SELECT ; -- SELECT event
  ;
 ACCEPT(MODE) ; -- ACCEPT event [called from ORCDLG,ORCACT4,ORCMED]
  ;    Expects ORVP, ORDIALOG(), ORNMSP
- K ^TMP($J,"ORK XTRA TXT")
  Q:$$GET^XPAR("DIV^SYS^PKG","ORK SYSTEM ENABLE/DISABLE")'="E"
  N ORX,ORY,ORZ,OI,ORSTRT,ORI,ORIT,ORID,ORSP
  S:'$L($G(MODE)) MODE="ACCEPT"
@@ -67,7 +66,7 @@ REMDUPS ;
  S IFN=0 F  S IFN=$O(ORCHECK(IFN)) Q:'IFN  D
  . S CDL=0 F  S CDL=$O(ORCHECK(IFN,CDL)) Q:'CDL  D
  . . S I=0 F  S I=$O(ORCHECK(IFN,CDL,I)) Q:'I  D
- . . . S J=I F  S J=$O(ORCHECK(IFN,CDL,J)) Q:'J  I $TR($P($G(ORCHECK(IFN,CDL,I)),U,3),";",",")=$TR($P($G(ORCHECK(IFN,CDL,J)),U,3),";",",") K ORCHECK(IFN,CDL,J) S ORCHECK=$G(ORCHECK)-1
+ . . . S J=I F  S J=$O(ORCHECK(IFN,CDL,J)) Q:'J  I $P($G(ORCHECK(IFN,CDL,I)),U,3)=$P($G(ORCHECK(IFN,CDL,J)),U,3) K ORCHECK(IFN,CDL,J) S ORCHECK=$G(ORCHECK)-1
  Q
 START(DA) ; -- Returns start date/time
  N I,X,Y,%DT S Y=""
@@ -127,7 +126,6 @@ REASON() ; -- Reason for overriding order checks
  ;
 SESSION ; -- SESSION event [called from ORCSIGN]
  ;    Expects ORVP, ORES()
- K ^TMP($J,"ORK XTRA TXT")
  Q:$$GET^XPAR("DIV^SYS^PKG","ORK SYSTEM ENABLE/DISABLE")'="E"
  N ORX,ORY,ORIFN,I,X,Y,ORGLOB
  S ORGLOB=$H
@@ -141,7 +139,7 @@ SESSION ; -- SESSION event [called from ORCSIGN]
  . . I $G(^TMP($J,"OCDATA",I,"OC NUMBER"))=3 Q
  . . I $G(^TMP($J,"OCDATA",I,"OC TEXT",1,0))["Drug-Drug order checks (Duplicate Therapy, Duplicate Drug, Drug Interaction) were not able to be performed." Q
  . . S ORCHECK=+$G(ORCHECK)+1,ORCHECK(+ORIFN,$S($G(^TMP($J,"OCDATA",I,"OC LEVEL")):^TMP($J,"OCDATA",I,"OC LEVEL"),1:99),ORCHECK)=$G(^TMP($J,"OCDATA",I,"OC NUMBER"))_U_$G(^TMP($J,"OCDATA",I,"OC LEVEL"))_U_$G(^TMP($J,"OCDATA",I,"OC TEXT",1,0))_U_1
- . . I $O(^TMP($J,"OCDATA",I,"OC TEXT",1)) D
+ . . I $D(^TMP($J,"OCDATA",I,"OC TEXT",2,0)) D
  . . . S ORCHECK(+ORIFN,$S($G(^TMP($J,"OCDATA",I,"OC LEVEL")):^TMP($J,"OCDATA",I,"OC LEVEL"),1:99),ORCHECK)=$G(^TMP($J,"OCDATA",I,"OC NUMBER"))_U_$G(^TMP($J,"OCDATA",I,"OC LEVEL"))_U_"||"_ORGLOB_"&"_$G(^TMP($J,"OCDATA",I,"OC TEXT",1,0))_U_1
  . . . N ORI S ORI=0 F  S ORI=$O(^TMP($J,"OCDATA",I,"OC TEXT",ORI)) Q:'ORI  S ^TMP($J,"ORK XTRA TXT",ORGLOB,^TMP($J,"OCDATA",I,"OC TEXT",1,0),ORI)=^TMP($J,"OCDATA",I,"OC TEXT",ORI,0)
  . . I $D(^ORD(100.05,^TMP($J,"OCDATA",I,"OC INSTANCE"),16)) D
@@ -157,28 +155,31 @@ FDBDOWN(ORX) ; -- Checks to see if the FDB was down and if so set appropriate OC
  ; expects ORCHECK array of order checks
  ; if ORX is 1 then this is getting called from SESSION order checks
  Q:'$D(ORCHECK)
+ N ORDSG,ORENH,ORI,ORTHERE
+ S ORDSG=0,ORENH=0,ORI=$O(ORCHECK("IFN")),ORTHERE=0
+ I '$L(ORI) S ORI=$O(ORCHECK(ORI))
+ N ORNEXT S ORNEXT=$O(ORCHECK(ORI,2,""),-1)
+ I 'ORNEXT S ORNEXT=1
  ;look for the "not able to be performed" OCs for each type (DSG and ENH), set flag for each to 1 if found and remove them from ORCHECK
  N I S I="" F  S I=$O(ORCHECK(I)) Q:'$L(I)  D
- .N ORNEXT,ORDSG,ORENH,ORTHERE
- .S ORDSG=0,ORENH=0,ORTHERE=0,ORNEXT=1
  .N J S J=0 F  S J=$O(ORCHECK(I,J)) Q:'J  D
  ..N K S K=0 F  S K=$O(ORCHECK(I,J,K)) Q:'K  D
- ...I (K+1)>ORNEXT S ORNEXT=K+1
  ...I $G(ORCHECK(I,J,K))["Drug Dosage checks were not able to be performed." K ORCHECK(I,J,K) S ORDSG=1
  ...I $G(ORCHECK(I,J,K))["Drug-Drug order checks (Duplicate Therapy, Duplicate Drug, Drug Interaction) were not able to be performed." K ORCHECK(I,J,K) S ORENH=1
- ...I $G(ORCHECK(I,J,K))["These checks could not be completed for this patient:" S ORTHERE=1
- .;if DSG or ENH flag is set then add to ORY
- .I ORDSG!(ORENH) D
- ..;look to see if message already exists
- ..I ORTHERE Q
- ..N ORKGLOB S ORKGLOB=$H
- ..N ORMAIN S ORMAIN="These checks could not be completed for this patient:"
- ..S ORCHECK(I,2,ORNEXT)="25^2^||"_ORKGLOB_"&"_ORMAIN
- ..I $G(ORX) S ^TMP($J,"ORK XTRA TXT",ORKGLOB,ORMAIN,0)=ORMAIN
- ..N ORCNT S ORCNT=1
- ..I ORENH S ORCNT=ORCNT+1,^TMP($J,"ORK XTRA TXT",ORKGLOB,ORMAIN,ORCNT)="      Drug Interactions"
- ..I ORENH S ORCNT=ORCNT+1,^TMP($J,"ORK XTRA TXT",ORKGLOB,ORMAIN,ORCNT)="      Duplicate Therapy"
- ..I '$G(ORX),ORDSG S ORCNT=ORCNT+1,^TMP($J,"ORK XTRA TXT",ORKGLOB,ORMAIN,ORCNT)="      Dosing"
+ ...I $G(ORCHECK(I,J,K))["These checks will NOT be performed for this patient:" S ORTHERE=1
+ ;if DSG or ENH flag is set then add to ORY
+ I ORDSG!(ORENH) D
+ .;look to see if message already exists
+ .I ORTHERE Q
+ .N ORKGLOB S ORKGLOB=$H
+ .N ORMAIN S ORMAIN="These checks could not be completed for this patient:"
+ .S ORCHECK(ORI,2,ORNEXT)="25^2^||"_ORKGLOB_"&"_ORMAIN
+ .I $G(ORX) S ^TMP($J,"ORK XTRA TXT",ORKGLOB,ORMAIN,0)="These checks could not be completed for this patient:"
+ .N ORCNT S ORCNT=0
+ .I ORENH S ORCNT=ORCNT+1,^TMP($J,"ORK XTRA TXT",ORKGLOB,ORMAIN,ORCNT)="      Drug Interactions"
+ .I ORENH S ORCNT=ORCNT+1,^TMP($J,"ORK XTRA TXT",ORKGLOB,ORMAIN,ORCNT)="      Duplicate Therapy"
+ .I '$G(ORX),ORDSG S ORCNT=ORCNT+1,^TMP($J,"ORK XTRA TXT",ORKGLOB,ORMAIN,ORCNT)="      Dosing Warnings"
+ ;.S ORCNT=ORCNT+1,^TMP($J,"ORK XTRA TXT",ORKGLOB,ORMAIN,ORCNT)="    Drug reference system is currently unavailable!"
  Q
  ;
 RETURN ; -- Return checks in ORCHECK(ORIFN,CDL,#)

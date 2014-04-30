@@ -1,20 +1,20 @@
-NVSSTB ;MB/SLCOIFO  START BROKER,MAILMAN,TASKMAN             AUG 16, 2007 ; 8/10/12 11:23am
- ;;1.8;;NVSMENU;;Build 5
- ; originally written by Mike Boggess SLCOIFO   4/28/03
- ; ------------------------------------------------------------------------
- ;V1.8.3
- ;V2.0 testing for Linux - BJS
- ; check for Cache
- I $ZV'["Cache" W !,"This routine is for Cache systems only." Q
- ;call NVSSTM if Cache 2011 or greater - 7/31/12 bjs
- I $$OS^%ZOSV="UNIX"&($E($P($ZV,"x86-64)",2),2,10)>2011) G ^NVSSTM
- I $$OS^%ZOSV="VMS"&($E($P($ZV,"(Alpha)",2),2,10)>2011) G ^NVSSTM
- ; VMS/Cache only...
+NVSSTB ;slciofo/mdb-options for VMS/Cache systems to start TM/Broker/MailMan; 04/01/04
+ ;;2.0;EMC SYSTEM UTILITIES; Apr 28, 2003
  ;
+ ;Options to manually start and stop Taskman, Broker Listener(s) and the
+ ;network mail background listener.
+ ;
+ ; *****NOTE*****
+ ; additions made by MW@VISN20 on 9/9/04 to include options to
+ ; stop TaskMan and Broker listener(s).
+ ; **************
+ ;
+ ; the function OS^%ZOSV is not present in DSM systems, check for DSM system...
+ I $ZV'["Cache for OpenVMS" W !,"This routine is for Cache systems only." Q
+ ; VMS/Cache only...
  I $$OS^%ZOSV()'="VMS" W !,"This routine is for VMS/Cache systems only." Q
  ;
  I $G(IOF)="" D HOME^%ZIS
- S NVSNODE=$ZU(110)
  S NVSVOL=$ZU(5)
  S NVSCFG=$P($ZU(86),"*",2)
  F  D  Q:$D(DIRUT)
@@ -25,17 +25,16 @@ NVSSTB ;MB/SLCOIFO  START BROKER,MAILMAN,TASKMAN             AUG 16, 2007 ; 8/10
  .W !,$$CJ^XLFSTR("must be started by a call to a VMS command file to insure that",80)
  .W !,$$CJ^XLFSTR("these processes are started with the appropriate privileges.",80)
  .W !,$$CJ^XLFSTR("**********",80)
- .W !!?3,"Current Node : ",NVSNODE
+ .W !!?3,"Current Node : ",$ZU(110)
  .W !?3,"Namespace    : ",NVSVOL
  .W !?3,"Cache Config : ",NVSCFG
- .; -----------------------------------------------------------------------------------
  .S DIR(0)="NA^1:7"
- .S DIR("A",1)="   1 = Start Task Manager for config "_NVSCFG_" on node "_NVSNODE
- .S DIR("A",2)="   2 = Start Broker Listener(s) for config "_NVSCFG_" on node "_NVSNODE
- .S DIR("A",3)="   3 = Start Network Mail Listener for config "_NVSCFG_" on node "_NVSNODE
- .S DIR("A",4)="   4 = Start All (TM, Broker, Network Mail) for config "_NVSCFG_" on node "_NVSNODE
- .S DIR("A",5)="   5 = Stop Task Manager and Sub-managers for config "_NVSCFG_" on node "_NVSNODE
- .S DIR("A",6)="   6 = Stop Broker Listener(s) for config "_NVSCFG_" on node "_NVSNODE
+ .S DIR("A",1)="   1 = Manually Start Task Manager"
+ .S DIR("A",2)="   2 = Manually Start Broker Listener(s)"
+ .S DIR("A",3)="   3 = Manually Start Network Mail Listener"
+ .S DIR("A",4)="   4 = Manually Start All (Task Manager, Broker, Network Mail Listener)"
+ .S DIR("A",5)="   5 = Stop Task Manager and Sub-managers"
+ .S DIR("A",6)="   6 = Stop Broker Listener(s)"
  .S DIR("A",7)="   7 = Exit"
  .S DIR("A",8)=" "
  .S DIR("A")="  Select OPTION NUMBER (1-7): "
@@ -55,26 +54,19 @@ NVSSTB ;MB/SLCOIFO  START BROKER,MAILMAN,TASKMAN             AUG 16, 2007 ; 8/10
  ..D ML
  .I NVSANS=5 D STM Q
  .I NVSANS=6 D SBL
- K DIRUT,DTOUT,NVSANS,NVSCFG,NVSNODE,NVSVOL,X,Y
+ K DIRUT,DTOUT,NVSANS,NVSCFG,NVSVOL,X,Y
  Q
  ;
 TM ; start Task Manager...
- ;check TM status
- D RUN^ZTMON
- I $D(^%ZTSCH("STATUS")) W !!,"It appears Taskman is already running for config ",NVSCFG
- K DIR S DIR(0)="Y",DIR("A")="Are you sure you want to start Taskman",DIR("B")="NO"
- W ! D ^DIR K DIR
- Q:$D(DIRUT)!(Y'=1)
- ;
  N DIR,DIRUT,DTOUT,X,Y
  I NVSVOL="VAH" D
  .W !!,"Submitting batch job for USER$:[CACHEMGR]TASKMAN_START.COM to start"
  .W !,"TaskMan in VAH..."
  .S X=$ZF(-1,"SUBMIT/USER=CACHEMGR/QUE=SYS$BATCH USER$:[CACHEMGR]TASKMAN_START.COM")
  I NVSVOL'="VAH" D
- .W !!,"Submitting batch job for USER$:[CACHEMGR]",NVSVOL,"_TASKMAN_START.COM to"
+ .W !!,"Submitting batch job for USER$:[CACHEMGR]PLATINUM_TASKMAN_START.COM to"
  .W !,"start TaskMan in ",NVSVOL,"..."
- .S X=$ZF(-1,"SUBMIT/USER=CACHEMGR/QUE=SYS$BATCH USER$:[CACHEMGR]"_NVSVOL_"_TASKMAN_START.COM")
+ .S X=$ZF(-1,"SUBMIT/USER=CACHEMGR/QUE=SYS$BATCH USER$:[CACHEMGR]PLATINUM_TASKMAN_START.COM")
  ;I NVSVOL="TST" S X=$ZF(-1,"SUBMIT/USER=CACHEMGR/QUE=SYS$BATCH USER$:[CACHEMGR]TST_TASKMAN_START.COM")
  ;I NVSVOL'="VAH"&(NVSVOL'="TST") W !!,$C(7),"This Configuration is not VAH or TST."
  S DIR(0)="EA"
@@ -82,28 +74,7 @@ TM ; start Task Manager...
  W ! D ^DIR K DIR
  Q
  ;
-BL ;check/start Broker Listeners...
- W !!,"Checking for existing TCPIP Broker Services...",!
- S NVSBLTCP=0
- S HFSDIR=$P($G(^XTV(8989.3,1,"DEV")),"^") S:HFSDIR="" HFSDIR="USER$:[TEMP]"
- S X=$ZF(-1,"TCPIP SHOW SERVICE/OUTPUT="_HFSDIR_"NVSBLTCP.TXT")
- S X=$$FTG^%ZISH(HFSDIR,"NVSBLTCP.TXT","NVSTEMP(1)",1,"OVF")
- I X=0 W !,"TCPIP SERVICE LISTING NOT AVAILABLE - CHECK VMS DIRECTORY ",HFSDIR
- S NVS=0
- F  S NVS=$O(NVSTEMP(NVS)) Q:NVS=""  D
- .S NVSTCPIP=$G(NVSTEMP(NVS))
- .I NVSTCPIP["BROKER" I NVSTCPIP["Enabled" W !,NVSTCPIP S NVSBLTCP=1
- .K NVSTCPIP
- .Q
- I NVSBLTCP=1 D
- .W !!,"It appears you are running the Broker Listener as a TCPIP Service."
- .Q
- S X=$ZF(-1,"DEL/NOLOG/NOCONFIRM "_HFSDIR_"NVSBLTCP.TXT;")
- K HFSDIR,NVSBLTCP,NVSTEMP,NVS,X
- K DIR S DIR(0)="Y",DIR("A")="Are you sure you want to do this",DIR("B")="NO"
- W ! D ^DIR K DIR
- Q:$D(DIRUT)!(Y'=1)
- ; -- submit to sys$batch --
+BL ;start Broker Listeners...
  N DIR,DIRUT,DTOUT,X,Y
  I NVSVOL="VAH" D
  .W !!,"Submitting batch job for USER$:[CACHEMGR]BROKER_START.COM to start Broker"
@@ -120,29 +91,7 @@ BL ;check/start Broker Listeners...
  W ! D ^DIR K DIR
  Q
  ;
-ML ; check/start network mail listener if tcpip service not used...
- W !!,"Checking for existing TCPIP XMINETMM Service...",!
- S NVSXMTCP=0
- S HFSDIR=$P($G(^XTV(8989.3,1,"DEV")),"^") S:HFSDIR="" HFSDIR="USER$:[TEMP]"
- S X=$ZF(-1,"TCPIP SHOW SERVICE/OUTPUT="_HFSDIR_"NVSXMTCP.TXT")
- S X=$$FTG^%ZISH(HFSDIR,"NVSXMTCP.TXT","NVSTEMP(1)",1,"OVF")
- I X=0 W !,"TCPIP SERVICE LISTING NOT AVAILABLE - CHECK VMS DIRECTORY ",HFSDIR
- S NVS=0
- F  S NVS=$O(NVSTEMP(NVS)) Q:NVS=""  D
- .S NVSTCPIP=$G(NVSTEMP(NVS))
- .I NVSTCPIP["XMINETMM" I NVSTCPIP[" 25  TCP" W !,NVSTCPIP S NVSXMTCP=1
- .K NVSTCPIP
- .Q
- I NVSXMTCP=1 D
- .W !!,"It appears you are running mailman as a TCPIP Service that is using port 25."
- .W !,"Attempting to use this option will fail since it also wants to use port 25."
- .Q
- S X=$ZF(-1,"DEL/NOLOG/NOCONFIRM "_HFSDIR_"NVSXMTCP.TXT;")
- K HFSDIR,NVSXMTCP,NVSTEMP,NVS,X
- K DIR S DIR(0)="Y",DIR("A")="Are you sure you want to do this",DIR("B")="NO"
- W ! D ^DIR K DIR
- Q:$D(DIRUT)!(Y'=1)
- ;
+ML ; start network mail listener...
  W !!,"JOBbing the routine ^XMRONT..."
  J ^XMRONT::5
  I $T'=1 W !?2,"ERROR -- the command JOB ^XMRONT failed!"
@@ -178,7 +127,7 @@ STM ; stop Task Manager and Sub-managers...
  .W !?2,"stopping any idle sub-manager(s)..."
  .D SSUB^ZTMKU(NVSTMNOD)
  .W "done."
- K DIRUT,DTOUT,NVSTMNOD,X,Y
+ K DIRUT,DTOUT,X,Y
  S DIR(0)="EA"
  S DIR("A")="Press <enter> to return to the main menu..."
  W ! D ^DIR K DIR

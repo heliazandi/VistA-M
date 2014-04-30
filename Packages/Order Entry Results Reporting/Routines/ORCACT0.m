@@ -1,5 +1,5 @@
 ORCACT0 ;SLC/MKB-Validate order action ;5/19/08
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**7,27,48,72,86,92,94,141,165,177,173,190,215,243,289,204**;Dec 17, 1997;Build 1
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**7,27,48,72,86,92,94,141,165,177,173,190,215,243,289**;Dec 17, 1997;Build 3
  ;
  ;Reference to REFILL^PSOREF supported by IA #2399
  ;
@@ -40,14 +40,18 @@ XFR I ACTION="XFR" D  G VQ
  . N A
  . S A=""
  . F  S A=$O(^OR(100,+IFN,4.5,"ID","CONJ",A)) Q:'A  I ^OR(100,+IFN,4.5,A,1)="X" S ERROR="Orders with a conjunction of 'EXCEPT' may not be transferred." Q
- . F  S A=$O(^OR(100,+IFN,4.5,"ID","CONJ",A)) Q:'A  I ^OR(100,+IFN,4.5,A,1)="T" S ERROR="Orders with a conjunction of 'THEN' may not be transferred." Q
  . I $G(ERROR)]"" Q
  . D XFR^ORCACT01 ; transfer to in/outpt
 RN I ACTION="RN" D RN^ORCACT01 G VQ ; renew
 TRM I $$DONE G VQ ; ORDSTS=1,2,7,12,13
 EV I ACTION="EV" D  G VQ ; change delay event
  . I ORDSTS'=10,ORDSTS'=11 S ERROR="This order has been released!" Q
- . I DG="NV RX" S ERROR="Non-VA Med orders do not support this action!" Q
+ . ;DSS/SMP - BEGIN MODS - Deveteranize error message
+ . ;I DG="NV RX" S ERROR="Non-VA Med orders do not support this action!" Q
+ . I DG="NV RX" D  Q
+ .. I $G(^%ZOSF("ZVX"))["VX" S ERROR="Meds/OTC from Elsewhere orders do not support this action!"
+ .. E  S ERROR="Non-VA Med orders do not support this action!"
+ . ;DSS/SMP - END MODS
  . I $$EVTORDER^OREVNTX(IFN) S ERROR="The release event for this order may not be changed!" Q
  . S X=$P(ORA0,U,4) I X'=2,X'=3 S ERROR="Signed orders may not be delayed to another event!" Q
 DC2 I ACTION="DC",ACTSTS="" D  G VQ ; DC released order
@@ -92,7 +96,12 @@ HD I ACTION="HD" D  G VQ ; hold
  . I PKG="LR" S ERROR="Lab orders cannot be held!" Q
  . I PKG="RA" S ERROR="Radiology orders cannot be held!" Q
  . I PKG="GMRC" S ERROR="Consult orders cannot be held!" Q
- . I DG="NV RX" S ERROR="Non-VA Med orders cannot be held!" Q
+ . ;DSS/SMP - BEGIN MODS - Deveteranize error message
+ . ;I DG="NV RX" S ERROR="Non-VA Med orders cannot be held!" Q
+ . I DG="NV RX" D  Q
+ .. I $G(^%ZOSF("ZVX"))["VX" S ERROR="Meds/OTC from Elsewhere orders cannot be held!"
+ .. E  S ERROR="Non-VA Med orders cannot be held!"
+ . ;DSS/SMP - END MODS
  . I ORDSTS=3 S ERROR="This order is already on hold!" Q
  . I ORDSTS'=6,PKG="PS" S ERROR="Only active Pharmacy orders may be held!" Q
  . I (ORDSTS=11)!(ORDSTS=10) S ERROR="This order has not been released to the service." Q

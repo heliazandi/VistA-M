@@ -111,7 +111,7 @@ EN ; entry point for the pre-install logic
  .S RATXT(1)=RAFAC_" has a conflict with national teleradiology codes"
  .S RATXT(2)="diagnostic codes occupying IENS: 999-1003 in file 78.3."
  .S XMSUB="DIAGNOSTIC CODES file IEN issue @ "_RAFAC,XMTEXT="RATXT("
- .S XMY("VAOITVHITRadiologyFacilityLevelApplicationIssues@domain.ext")=""
+ .S XMY("VAOITVHITRadiologyFacilityLevelApplicationIssues@va.gov")=""
  .NEW DIFROM
  .D ^XMD,BMES^XPDUTL(.RATXT)
  .Q

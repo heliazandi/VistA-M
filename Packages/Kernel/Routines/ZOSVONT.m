@@ -1,5 +1,5 @@
 %ZOSV ;SFISC/AC - $View commands for Open M for NT.  ;09/15/08  12:12
- ;;8.0;KERNEL;**34,94,107,118,136,215,293,284,385,425,440,499**;Jul 10, 1995;Build 14
+ ;;8.0;KERNEL;**34,94,107,118,136,215,293,284,385,425,440,499**;Jul 10, 1995;Build 86
  ;Per VHA Directive 2004-038, this routine should not be modified
 ACTJ() ;# Active jobs
  N %,V,Y S V=$$VERSION()
@@ -68,7 +68,15 @@ PROGMODE() ;Check if in PROG mode
 PRGMODE ;
  N X,XMB,XQZ,XUCI,XUSLNT,XUVOL,Y,ZTPAC
  W ! S ZTPAC=$S('$D(^VA(200,+DUZ,.1)):"",1:$P(^(.1),U,5)),XUVOL=^%ZOSF("VOL")
- S X="" X ^%ZOSF("EOFF") R:ZTPAC]"" !,"PAC: ",X:60 D LC^XUS X ^%ZOSF("EON") I X'=ZTPAC W "??"_$C(7) Q
+ ;DSS/SGM - BEGIN MODS - have system PAC for all
+ ;S X="" X ^%ZOSF("EOFF") R:ZTPAC]"" !,"PAC: ",X:60 D LC^XUS X ^%ZOSF("EON") I X'=ZTPAC W "??"_$C(7) Q
+ N VFD S VFD=$$VX(2) ; 0:VA; 1:VX; -1:VX-no PAC
+ I VFD,VFD<0 Q
+ S X="" I ZTPAC'="" D  I '$D(X) W "??"_$C(7) Q
+ . X ^%ZOSF("EOFF") R !,"PAC: ",X:60 K:'$T X X ^%ZOSF("EON")
+ . I $D(X) D:'VFD LC^XUS S:VFD X=$$EN^XUSHSH(X) I X'=ZTPAC K X
+ . Q
+ ;DSS/SGM - END MODS
  S XMB="XUPROGMODE",XMB(1)=DUZ,XMB(2)=$I D ^XMB:$L($T(^XMB)) D BYE^XUSCLEAN K ZTPAC,X,XMB
  D UCI S XUCI=Y,XQZ="PRGM^ZUA[MGR]",XUSLNT=1 D DO^%XUCI D ^%PMODE U $I:(:"+B+C+R") S $ZT="" Q
  Q
@@ -117,6 +125,9 @@ OPNERR S $EC="",Y=-1 Q
 GETENV ;Get environment  (UCI^VOL^NODE^BOX:VOLUME)
  N %,%1 S %=$$VERSION,%1=$ZU(86),%1=$S(%<3.1:$P(%1,"*",3),1:$P(%1,"*",2))
  D UCI S Y=$P(Y,",")_"^"_^%ZOSF("VOL")_"^"_$ZU(110)_"^"_^%ZOSF("VOL")_":"_%1
+ ;DSS/LM/SGM - BEGIN MODS - multi-taskman fix, OSHERA compliance
+ I $$VX(1) S Y=Y_"~"_$ZU(110)
+ ;DSS/LM - END MODS
  Q
 VERSION(X) ;return Cache version, X=1 - return full name
  Q $S($G(X):$P($ZV,")")_")",1:$P($P($ZV,") ",2),"("))
@@ -165,6 +176,19 @@ SETTRM(X) ;Turn on specified terminators.
 T0 ; start RT clock, obsolete
  ;S XRT0=$H
  Q
+ ;
 T1 ; store RT datum, obsolete
  ;S ^%ZRTL(3,XRTL,+$H,XRTN,$P($H,",",2))=XRT0 K XRT0
  Q
+ ;
+VX(F) ;DSS/SGM - BEGIN MODS - vxVistA added all lines below this point
+ ; OSHERA compliance check and other checks
+ Q:$T(VX^VFDI0000)="" 0 Q:$$VX^VFDI0000'["VX" 0
+ N X S X=1
+ I $G(F)=1,'$$GET^XPAR("SYS","VFD ENVIRONMENT INCLUDES NODE") S X=0
+ I $G(F)=2 D
+ . ; parameter (already encrypted) always overrides user PAC 
+ . S X=$$GET^XPAR("SYS","VFD XUS PAC",,"Q") I X="" S X=-1
+ . E  S ZTPAC=X,X=1
+ . Q
+ Q X

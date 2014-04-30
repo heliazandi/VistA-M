@@ -1,6 +1,5 @@
 RCXVFTP ;DAOU/ALA-FTP AR Data Extract Batch Files ;08-SEP-03
- ;;4.5;Accounts Receivable;**201,256,292**;Mar 20, 1995;Build 3
- ;Per VHA Directive 2004-038, this routine should not be modified.
+ ;;4.5;Accounts Receivable;**201,256**;Mar 20, 1995;Build 6
  ;
  ;**Program Description**
  ;  This code will ftp a batch file
@@ -19,8 +18,6 @@ SYS ;  Get system type
  . E  S RCXVSYS="UNIX",RCXVSYT="MSM"
  I RCXVSYS["Cache" D
  . I RCXVSYS["VMS" S RCXVSYS="VMS",RCXVSYT="CACHE" Q
- . ; For Full Linux OS
- . I RCXVSYS["UNIX" S RCXVSYS="UNIX",RCXVSYT="CACHE" Q
  . S RCXVSYS="CACHE",RCXVSYT="CACHE"
  ;
  I RCXVSYS="VMS" S RCXVNME=FILE_";1"
@@ -28,12 +25,12 @@ SYS ;  Get system type
  ;
 ARC ;  Directly FTP to the Boston Allocation Resource Center
  I $$GET1^DIQ(342,"1,",20.06,"I")="P" D
- . S RCXVIP="MORPHEUS.ARC.DOMAIN.EXT"
+ . S RCXVIP="MORPHEUS.ARC.MED.VA.GOV"
  . S RCXVUSR="mccf"
  . S RCXVPAS="1qaz2wsx"
  ;
  I $$GET1^DIQ(342,"1,",20.06,"I")'="P" D
- . S RCXVIP="MORPHEUS.ARC.DOMAIN.EXT"
+ . S RCXVIP="MORPHEUS.ARC.MED.VA.GOV"
  . S RCXVUSR="cbotest1"
  . S RCXVPAS="1qaz2wsx"
  ;

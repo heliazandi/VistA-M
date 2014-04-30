@@ -1,5 +1,5 @@
 PSOLBLN2 ;BHAM ISC/RTR - NEW LABEL TRAILER ;06/06/94
- ;;7.0;OUTPATIENT PHARMACY;**92,107,110,305,326**;DEC 1997;Build 11
+ ;;7.0;OUTPATIENT PHARMACY;**92,107,110,305,326**;DEC 1997;Build 7
  Q:'+$G(RXN)!('$G(PSOTRAIL))!('+$G(DFN))
  I $G(PSOBLALL),$P(PPL,",",PI+1)'="" Q
  K ^TMP($J,"PSOMAIL"),^TMP($J,"PSONARR"),^TMP($J,"PSOSUSP") S PRCOPAY=$S('$D(PSOCPN):0,1:1)
@@ -7,7 +7,10 @@ START ;RETURN MAIL
  S PS=$S($D(^PS(59,PSOSITE,0)):^(0),1:"") I $P(PSOSYS,"^",4),$D(^PS(59,+$P($G(PSOSYS),"^",4),0)) S PS=^PS(59,$P($G(PSOSYS),"^",4),0)
  S VAADDR1=$P(PS,"^"),VASTREET=$P(PS,"^",2),STATE=$S($D(^DIC(5,+$P(PS,"^",8),0)):$P(^(0),"^",2),1:"UNKNOWN")
  S PSZIP=$P(PS,"^",5) S PSOHZIP=$S(PSZIP["-":PSZIP,1:$E(PSZIP,1,5)_$S($E(PSZIP,6,9)]"":"-"_$E(PSZIP,6,9),1:""))
- S ^TMP($J,"PSOMAIL",$S(PRCOPAY:1,1:3))="Pharmacy Service (119)",^($S(PRCOPAY:2,1:4))=$G(VAADDR1),^($S(PRCOPAY:3,1:5))=$G(VASTREET),^($S(PRCOPAY:4,1:6))=$P(PS,"^",7)_", "_$G(STATE)_"  "_$G(PSOHZIP)
+ ;DSS/SGM - BEGIN MODS - Conditionally remove VA service #119, orig code now follows 'E  ' statement
+ I $G(VFDPSOLB) D SVC^VFDPSOLB("LBLN2") I 1
+ E  S ^TMP($J,"PSOMAIL",$S(PRCOPAY:1,1:3))="Pharmacy Service (119)",^($S(PRCOPAY:2,1:4))=$G(VAADDR1),^($S(PRCOPAY:3,1:5))=$G(VASTREET),^($S(PRCOPAY:4,1:6))=$P(PS,"^",7)_", "_$G(STATE)_"  "_$G(PSOHZIP)
+ ;DSS/SGM - END MODS
  I PRCOPAY F ZZZ=5:1:15 S ^TMP($J,"PSOMAIL",ZZZ)=""
  I 'PRCOPAY F ZZZ=7:1:17 S ^TMP($J,"PSOMAIL",ZZZ)=""
  S ^TMP($J,"PSOMAIL",$S(PRCOPAY:16,1:18))="Use the label above to mail the computer",^($S(PRCOPAY:17,1:19))="copies back to us. Apply enough postage",^($S(PRCOPAY:18,1:20))="to your envelope to ensure delivery."
@@ -54,17 +57,20 @@ END K ^TMP($J,"PSONARR"),^TMP($J,"PSOMAIL"),^TMP($J,"PSOSUSP"),^UTILITY($J,"W")
  I $P(PSOPAR,"^",31) D BLANK^PSOLBLD W @IOF
  Q
 NPP1 ;
+ ;DSS/SGM - BEGIN MODS - Conditionally suppress Privacy Notice
+ I $G(VFDPSOLB) Q
+ ;DSS/SGM - END MODS
  N PSOLAN S PSOLAN=$P($G(^PS(55,DFN,"LAN")),"^",2) S:'PSOLAN PSOLAN=1
  I $G(PSOLAN)=1 D
  . W !,"The VA Notice of Privacy Practices, IB 10-163, which outlines your privacy",!
- . W "rights, is available online at http://www1.domain.ext/Health/ or you may obtain",!
+ . W "rights, is available online at http://www1.va.gov/Health/ or you may obtain",!
  . W "a copy by writing the VHA Privacy Office (19F2), 810 Vermont Avenue NW,",!
  . W "Washington, DC 20420.",!
  I $G(PSOLAN)=2 D
  . W !,"La Notificacion relacionada con las Politicas de Privacidad del Departamento",!
  . W "de Asuntos del Veterano, IB 10-163, contiene los detalles acerca de sus",!
  . W "derechos de privacidad y esta disponible electronicamente en la siguiente",!
- . W "direccion: http://www1.domain.ext/Health/.  Usted tambien puede conseguir una",!
+ . W "direccion: http://www1.va.gov/Health/.  Usted tambien puede conseguir una",!
  . W "copia escribiendo a la Oficina de Privacidad del Departamento de Asuntos de",!
  . W "Salud del Veterano, (19F2), 810 Vermont Avenue NW, Washington, DC 20420.",!
  Q

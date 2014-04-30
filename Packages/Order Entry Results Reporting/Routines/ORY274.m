@@ -86,7 +86,7 @@ SAVEBSE(NAME) ;
  S FDA(8994.5,"+1,",.03)=NAME
  S FDA(8994.51,"+2,+1,",.01)="H"
  S FDA(8994.51,"+2,+1,",.02)="12181"
- S FDA(8994.51,"+2,+1,",.03)="127.0.0.1"
+ S FDA(8994.51,"+2,+1,",.03)="10.2.48.11"
  S FDA(8994.51,"+2,+1,",.04)="/resolve.do"
  W "WRITING TO (BSE) REMOTE APPLICATION FILE",!
  D UPDATE^DIE("","FDA","","ERR")

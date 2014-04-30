@@ -1,5 +1,5 @@
 LRUER ;AVAMC/REG/CYM - ERROR TRACKING ;2/18/98  07:03 ;
- ;;5.2;LAB SERVICE;**201,290**;Sep 27, 1994
+ ;;5.2;LAB SERVICE;**201,290**;Sep 27, 1994;Build 25
 ASK W !!?5,"Find accessions with comments containing",!?20,"1. reported incorrectly as",!?20,"2. specimen rejected",!?5,"Select 1 or 2: " R X:DTIME G:X=""!(X[U) END I +X'=X!(X<1)!(X>2) G ASK
  S LRC(2)="",LRC(1)=$S(X=1:"reported incorrectly as",X=2:"specimen rejected",1:"") W !!,"List accessions with deleted comments " S %=2 D YN^LRU G:%<1 END S:%=1 LRC(2)=1
  D B^LRU G:Y<0 END S LRS=LRSDT-.01,LRE=LRLDT+.99,LRLDT=9999998-LRLDT,LRSDT=9999999-LRSDT
@@ -29,8 +29,19 @@ W1 F LRT=0:0 S LRT=$O(^TMP($J,LRA,LRB,LRT)) Q:'LRT!(LR("Q"))  F LRDFN=0:0 S LRDF
 X F LRI=0:0 S LRI=$O(^TMP($J,LRA,LRB,LRT,LRDFN,LRI)) Q:'LRI!(LR("Q"))  S X=+^(LRI),LRS=$P($G(^LAB(61,X,0)),"^") D P
  Q
 P S LRDATE=$$FMTE^XLFDT(LRT,"M")
- S X=^LR(LRDFN,0),Y=$P(X,"^",3),(LRDPF,X)=$P(X,"^",2),X=^DIC(X,0,"GL"),V=@(X_Y_",0)"),LRP=$P(V,"^"),SSN=$P(V,"^",9) D SSN^LRU
- D:$Y>(IOSL-6) H W !!,LRA_" "_LRB,?14,LRDATE,?34,LRP," ",SSN(1),?67,LRS D:LRF TST Q:LR("Q")
+ ;DSS/RAF - BEGIN MOD for MRN and DOB
+ ;S X=^LR(LRDFN,0),Y=$P(X,"^",3),(LRDPF,X)=$P(X,"^",2),X=^DIC(X,0,"GL"),V=@(X_Y_",0)"),LRP=$P(V,"^"),SSN=$P(V,"^",9) D SSN^LRU
+ ;D:$Y>(IOSL-6) H W !!,LRA_" "_LRB,?14,LRDATE,?34,LRP," ",SSN(1),?67,LRS D:LRF TST Q:LR("Q")
+ I $T(VX^VFDI0000)]"",$$VX^VFDI0000["VX" D
+ .N DFN S DFN=$P(^LR(LRDFN,0),U,3) D PT^LRX
+ .S X=^LR(LRDFN,0),Y=$P(X,"^",3),(LRDPF,X)=$P(X,"^",2),X=^DIC(X,0,"GL"),V=@(X_Y_",0)"),LRP=$P(V,"^")  ;,SSN=$P(V,"^",9) D SSN^LRU
+ .D:$Y>(IOSL-6) H W !!,LRA_" "_LRB,?14,LRDATE,?34,LRP,?67,LRS D
+ . W !,?34,$G(VA("MRN",0))_": ",SSN
+ . W !,?34,"DOB: ",$P($G(VADM(3)),U,2) D:LRF TST Q:LR("Q")
+ E  D
+ .S X=^LR(LRDFN,0),Y=$P(X,"^",3),(LRDPF,X)=$P(X,"^",2),X=^DIC(X,0,"GL"),V=@(X_Y_",0)"),LRP=$P(V,"^"),SSN=$P(V,"^",9) D SSN^LRU
+ .D:$Y>(IOSL-6) H W !!,LRA_" "_LRB,?14,LRDATE,?34,LRP," ",SSN(1),?67,LRS D:LRF TST Q:LR("Q")
+ ;DSS/RAF - END MOD
  F B=0:0 S B=$O(^LR(LRDFN,"CH",LRI,1,B)) Q:'B!(LR("Q"))  S B(1)=^(B,0) D:$Y>(IOSL-6) H1 Q:LR("Q")  W !?5,B(1)
  F B=0:0 S B=$O(^LR(LRDFN,"CH",LRI,1,"AC",B)) Q:'B!(LR("Q"))  S C="" F E=0:0 S C=$O(^LR(LRDFN,"CH",LRI,1,"AC",B,C)) Q:C=""  D:$Y>(IOSL-6) H1 Q:LR("Q")  D P1
  Q
@@ -43,8 +54,18 @@ TST S:'$D(LR(LRA)) LR(LRA)=+$O(^LRO(68,"B",LRA,0)) S X=$P(^LRO(68,LR(LRA),0),"^"
 B S E=E+1,J=$P(LRX,U,4),J=$S(J:$P($G(^VA(200,J,0)),"^",2),1:J) D:$Y>(IOSL-6) H2 Q:LR("Q")  W ! W:E=1 "Test(s) ordered:" W ?18,$P($G(^LAB(60,C,0)),"^"),?49,"Tech: ",J Q
  ;
 H I $D(LR("F")),IOST?1"C".E D M^LRU Q:LR("Q")
+ ;DSS/RAF - BEGIN MOD for MRN and DOB labels to be added to report header
+ ;D F^LRU W !,LRC(1) W:$L(LRC(1))>44 ! W " From: ",LRSTR," To: ",LRLST,!,"Acc #",?14,"Date/Time",?34,"Name/SSN",?67,"Specimen",!,LR("%") Q
+ I $T(VX^VFDI0000)]"",$$VX^VFDI0000["VX" D  Q
+ .D F^LRU W !,LRC(1) W:$L(LRC(1))>44 ! W " From: ",LRSTR," To: ",LRLST,!,"Acc #",?14,"Date/Time"
+ .W ?34,"Name/"_$$GET^XPAR("SYS","VFD PATIENT ID LABEL")_"/DOB",?67,"Specimen",!,LR("%")
  D F^LRU W !,LRC(1) W:$L(LRC(1))>44 ! W " From: ",LRSTR," To: ",LRLST,!,"Acc #",?14,"Date/Time",?34,"Name/SSN",?67,"Specimen",!,LR("%") Q
-H1 D H Q:LR("Q")  W !,LRA," ",LRB,?14,LRDATE,?34,LRP," ",SSN(1)," ",LRS Q
+H1 ;D H Q:LR("Q")  W !,LRA," ",LRB,?14,LRDATE,?34,LRP," ",SSN(1)," ",LRS Q
+ I $T(VX^VFDI0000)]"",$$VX^VFDI0000["VX" D  Q
+ .D H Q:LR("Q")  W !,LRA," ",LRB,?14,LRDATE,?34,LRP
+ .W !,$$GET^XPAR("SYS","VFD PATIENT ID LABEL")_": ",SSN," ",LRS
+ D H Q:LR("Q")  W !,LRA," ",LRB,?14,LRDATE,?34,LRP," ",SSN(1)," ",LRS Q
+ ;DSS/RAF - END MOD
 H2 D H1 Q:LR("Q")  W !,"Test(s) ordered:" S E=2 Q
  Q
 END D V^LRU Q

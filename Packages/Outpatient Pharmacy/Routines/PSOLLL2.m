@@ -1,5 +1,5 @@
 PSOLLL2 ;BIR/JLC-LASER LABEL ;11/19/02
- ;;7.0;OUTPATIENT PHARMACY;**120,138,141,161,200**;DEC 1997;Build 7
+ ;;7.0;OUTPATIENT PHARMACY;**120,138,141,161,200**;DEC 1997;Build 153
  ;
  ;Reference to $$ECMEON^BPSUTIL supported by DBIA 4410
 L1 I $G(PSOIO("PFDI"))]"" X PSOIO("PFDI")
@@ -61,7 +61,10 @@ L12 S PSOX=OPSOX,T="Tech___________________    RPh _____________________" D PRIN
  .. S T=$P(PTEXT,",",1,$L(PTEXT,",")-1) D PRINT(T) S PTEXT=""
  .. I PSOY>PSOYM W "*"
  . I PTEXT]"" S T=$P(PTEXT,",",1,$L(PTEXT,",")-1) D PRINT(T)
- S PTEXT="Pat. Stat "_PATST_" Clinic: "_PSCLN D STRT^PSOLLU1("SIG2",PTEXT,.L) S T=PTEXT D PRINT(T)
+ ;DSS/SGM - BEGIN MODS - orig code is now argument of ELSE
+ I $G(VFDPSOLB) D PSTAT^VFDPSOLB("LLL2")
+ E  S PTEXT="Pat. Stat "_PATST_" Clinic: "_PSCLN D STRT^PSOLLU1("SIG2",PTEXT,.L) S T=PTEXT D PRINT(T)
+ ;DSS/SGM - END MODS
  Q
  ;
 PRINT(T,B) ;

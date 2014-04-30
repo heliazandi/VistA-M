@@ -1,6 +1,7 @@
 XOBVPOST ;; ld,mjk/alb - VistaLink Post-Init ; 07/27/2002  13:00
- ;;1.6;VistALink;;May 08, 2009;Build 15
- ;Per VHA directive 2004-038, this routine should not be modified.
+ ;;1.5;VistALink;;Sep 09, 2005
+ ;;Foundations Toolbox Release v1.5 [Build: 1.5.0.026]
+ ;
  QUIT
  ;
 EN ; -- add post-init code here
@@ -23,7 +24,7 @@ EN ; -- add post-init code here
  QUIT
  ;
  ;
-CFG() ; -- add default config if not present
+CFG() ; -- add default config if not pressent
  NEW DIC,X,Y,XOBDA,XOBNEW
  ;
  ; -- DEFAULT configuration --
@@ -47,7 +48,7 @@ CFGQ ;
 PORTS(XOBDA) ; -- add 8000 port
  NEW XOBOK,XOBNEW,DIC,DIE,DR,X,DA,Y
  ;
- ; -- set 0th of multiple is needed
+ ; -- set oth of multiple is needed
  IF $DATA(^XOB(18.03,1,"PORTS",0))=0 SET ^XOB(18.03,1,"PORTS",0)="^18.031^^"
  ;
  SET DA(1)=XOBDA
@@ -223,7 +224,7 @@ FILEOPT(XOBIEN,XOBOPT,XOBQUE,XOBDEV,XOBRSCH,XOBSPARM)   ;-- Schedule the option
  ;    XOBQUE   -   Queued to run at what time; (optional)
  ;    XOBDEV   -   Device for queued job output; (optional)
  ;    XOBRSCH  -   Rescheduling frequency; (optional)
- ;    XOBSPARM -   Special queuing; (optional)
+ ;    XOBSPARM -   Special queueing; (optional)
  ;
  ; Output:
  ;    Function Value - Returns IEN of record on success, 0 on failure

@@ -1,5 +1,5 @@
 PSOMHV1 ;BIR/MHA - MHV API, Build patient medication ; 4/20/05 8:54am
- ;;7.0;OUTPATIENT PHARMACY;**204**;DEC 1997
+ ;;7.0;OUTPATIENT PHARMACY;**204**;DEC 1997;Build 153
  ;External reference ^PS(55 supported by DBIA 2228
  ;External reference ^PSDRUG( supported by DBIA 221
  ;External reference to ^PS(51 supported by DBIA 2224
@@ -78,7 +78,10 @@ GET ;
  Q:$P(^PSRX(RX,0),"^",2)'=DFN
  S RX0=^PSRX(RX,0),RX2=^PSRX(RX,2)
  S DRG=$P(^PSRX(RX,0),"^",6),STA=+^("STA") Q:'$D(^PSDRUG(DRG,0))
- S DRGN=$P(^PSDRUG(DRG,0),"^"),ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ ;DSS/LM - BEGIN MODS - add new condition when to expire
+ ;S DRGN=$P(^PSDRUG(DRG,0),"^"),ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ D VFD^PSOORRL(3)
+ ;DSS/LM - END MODS
  I $D(PSOSD(DRGN)),ST0>10 Q:$P(PSOSD(DRGN),"^",2)<11  Q:$P(PSOSD(DRGN),"^",2)>10&($P(RX0,"^",13)<$P(^PSRX(+$P(PSOSD(DRGN),"^"),0),"^",13))
  I $D(PSOSD(DRGN)),$P(PSOSD(DRGN),"^",2)<10,ST0<10 S PSOSD(DRGN_"^"_RX)=RX_"^"_ST0
  E  S PSOSD(DRGN)=RX_"^"_ST0
@@ -88,7 +91,10 @@ GET1 ;
  Q:$P(^PSRX(RX,0),"^",2)'=DFN
  S RX0=^PSRX(RX,0),RX2=^PSRX(RX,2)
  S DRG=$P(^PSRX(RX,0),"^",6),STA=+^("STA") Q:'$D(^PSDRUG(DRG,0))
- S DRGN=$P(^PSDRUG(DRG,0),"^"),ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ ;DSS/LM - BEGIN MODS - add new condition when to expire
+ ;S DRGN=$P(^PSDRUG(DRG,0),"^"),ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ D VFD^PSOORRL(4)
+ ;DSS/LM - END MODS
  S PSOSD(RX)=RX_"^"_ST0
  Q
 BLD ;
@@ -109,7 +115,10 @@ RXD ;
  .S ^TMP("PSO",$J,TR,TD,"PAR",0)=$G(^TMP("PSO",$J,TR,TD,"PAR",0))+1
  S ^TMP("PSO",$J,TR,TD,0)=$P($G(^PSDRUG(+$P(RX0,"^",6),0)),"^")_"^^"_$P(RX2,"^",6)
  S ^TMP("PSO",$J,TR,TD,"P",0)=$P(RX0,"^",4)_"^"_$P($G(^VA(200,+$P(RX0,"^",4),0)),"^")
- S ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ ;DSS/LM - BEGIN MODS - add new condition when to expire
+ ;S ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ D VFD^PSOORRL(5)
+ ;DSS/LM - END MODS
  S SC=$P("ERROR^ACTIVE^NON-VERIFIED^REFILL FILL^HOLD^NON-VERIFIED^SUSPENDED^^^^^DONE^EXPIRED^DISCONTINUED^DELETED^DISCONTINUED^DISCONTINUED (EDIT)^HOLD^","^",ST0+2)
  S ^TMP("PSO",$J,TR,TD,0)=^TMP("PSO",$J,TR,TD,0)_"^"_($P(RX0,"^",9)-TRM)_"^"_$P(RX0,"^",13)_"^"_SC_"^"_$P(RX0,"^",8)_"^"_$P(RX0,"^",7)_"^^^"_$P($G(^PSRX(IFN,"OR1")),"^",2)_"^"_LSTFD_"^^"
  S ^TMP("PSO",$J,TR,TD,"DD",0)=1,^TMP("PSO",$J,TR,TD,"DD",1,0)=$P(RX0,"^",6)_"^^"

@@ -1,5 +1,5 @@
-IBCNBLE ;ALB/ARH - Ins Buffer: LM buffer entry screen ;1-Jun-97
- ;;2.0;INTEGRATED BILLING;**82,231,184,251,371,416,435,452**;21-MAR-94;Build 26
+IBCNBLE ;ALB/ARH-Ins Buffer: LM buffer entry screen ;1 Jun 97
+ ;;2.0;INTEGRATED BILLING;**82,231,184,251,371,416**;21-MAR-94;Build 58
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 EN ; - main entry point for list manager display
@@ -59,8 +59,6 @@ BLD ; display buffer entry
  ..Q
  .Q
  ;
- I +$P(IB0,U,17) D EN^IBCNBLE2    ; IB*2*435 - Display e-Pharmacy ELIG response data
- ;
  D SET(" ") S IBY=$J("",26)_"Insurance Company Information" D SET(IBY,"B") S IBLINE=""
  S IBL="Name: ",IBY=$P(IB20,U,1) S IBLINE=$$SETL("",IBY,IBL,10,30)
  S IBL="Reimburse?: ",IBY=$$EXPAND^IBTRE(355.33,20.05,$P(IB20,U,5)) S IBLINE=$$SETL(IBLINE,IBY,IBL,57,20)
@@ -113,17 +111,7 @@ BLD ; display buffer entry
  I $P(IB60,U,6)'="01"!($P(IB60,U,8)'="") S IBL="Insured's DOB: ",IBY=$$DATE($P(IB60,U,8)) S IBLINE=$$SETL("",IBY,IBL,18,8)
  S IBL="Coord of Benefits: ",IBY=$$EXPAND^IBTRE(355.33,60.12,$P(IB60,U,12)) S IBLINE=$$SETL(IBLINE,IBY,IBL,62,16)
  D SET(IBLINE) S IBLINE=""
- ;
- I $P(IB60,U,15)'=""!($P(IB60,U,16)'="") D      ; IB*2*452 - esg - display Pharmacy fields if they exist
- . S IBL="Rx Relationship: ",IBY=""
- . N G S G=+$P(IB60,U,15)
- . I G S IBY=$$GET1^DIQ(9002313.19,G_",",.01)_" - "_$$GET1^DIQ(9002313.19,G_",",.02)
- . S IBLINE=$$SETL("",IBY,IBL,18,20)
- . S IBL="Rx Person Code: ",IBY=$P(IB60,U,16),IBLINE=$$SETL(IBLINE,IBY,IBL,62,10)
- . D SET(IBLINE) S IBLINE=""
- . Q
- ;
- I $P(IB62,U,1)'="" S IBL="Patient Id: ",IBY=$P(IB62,U,1) S IBLINE=$$SETL(IBLINE,IBY,IBL,62,13)
+ I $P(IB62,U)'="" S IBL="Patient Id: ",IBY=$P(IB62,U) S IBLINE=$$SETL(IBLINE,IBY,IBL,62,13)
  I IBLINE'="" D SET(IBLINE) S IBLINE=""
  ;
  I '$P(IB61,U,1) D SET(" ") S IBL="Employer Sponsored Group Health Plan?: ",IBY=$$YN($P(IB61,U,1)) S IBLINE=$$SETL("",IBY,IBL,40,3) D SET(IBLINE) S IBLINE="" G NXT

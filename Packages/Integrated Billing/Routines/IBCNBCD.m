@@ -1,5 +1,5 @@
-IBCNBCD ;ALB/ARH - Ins Buffer: display/compare buffer and existing ins ;1 Jun 97
- ;;2.0;INTEGRATED BILLING;**82,251,361,371,416,438,452**;21-MAR-94;Build 26
+IBCNBCD ;ALB/ARH-Ins Buffer: display/compare buffer and existing ins ;1 Jun 97
+ ;;2.0;INTEGRATED BILLING;**82,251,361,371,416**;21-MAR-94;Build 58
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 INS(IBBUFDA,IBINSDA) ; display a buffer entry's insurance company fields and
@@ -69,8 +69,6 @@ POLICY(IBBUFDA,IBPOLDA) ; display a buffer entry's patient policy fields and an 
  D DISPLAY(60.04,2.312,1,"Subscriber Id:")
  D DISPLAY(60.05,2.312,6,"Whose Insurance:")
  D DISPLAY(60.06,2.312,16,"Relationship:")
- D DISPLAY(60.15,2.312,4.05,"Rx Relationship:")
- D DISPLAY(60.16,2.312,4.06,"Rx Person Code:")
  D DISPLAY(60.07,2.312,17,"Name of Insured:")
  D DISPLAY(60.08,2.312,3.01,"Insured's DOB:")
  D DISPLAY(60.09,2.312,3.05,"Insured's SSN:")
@@ -85,8 +83,6 @@ POLICY(IBBUFDA,IBPOLDA) ; display a buffer entry's patient policy fields and an 
  D DISPLAY(62.04,2.312,3.08,"Subscr City:")
  D DISPLAY(62.05,2.312,3.09,"Subscr State:")
  D DISPLAY(62.06,2.312,3.1,"Subscr Zip:")
- D DISPLAY(62.07,2.312,3.13,"Subscr Country:")
- D DISPLAY(62.08,2.312,3.14,"Subscr Subdiv:")
  ;
  I +$G(^IBA(355.33,IBBUFDA,61))!($$GET1^DIQ(2.312,IBEXTDA,2.1)="YES") D ESGHP
  ;

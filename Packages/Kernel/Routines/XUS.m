@@ -1,6 +1,5 @@
-XUS ;SFISC/STAFF - SIGNON ;11/29/2011
- ;;8.0;KERNEL;**16,26,49,59,149,180,265,337,419,434,584**;Jul 10, 1995;Build 6
- ;Per VHA Directive 2004-038, this routine should not be modified
+XUS ;SFISC/STAFF - SIGNON ; 8/25/09 9:41am
+ ;;8.0;KERNEL;**16,26,49,59,149,180,265,337,419,434**;Jul 10, 1995;Build 86
  ;Sign-on message numbers are 30810.51 to 30810.99
  S U="^" D INTRO^XUS1A()
  K  K ^XUTL("ZISPARAM",$I)
@@ -82,12 +81,18 @@ ACCEPT(TO) ;Read A/V and echo '*' char.
  Q A
  ;
 CHECKAV(X1) ;Check A/V code return DUZ or Zero. (Called from XUSRB)
+ ;DSS/SGM - BEGIN MODS - if vxVistA, use its Acc/Ver checker
+ S X=$$VFD("CKAV") I X'=-1 Q X
+ ;DSS/SGM - END MODS
  N %,%1,X,Y,IEN,DA,DIK
  S IEN=0
  ;Start CCOW
  I $E(X1,1,7)="~~TOK~~" D  Q:IEN>0 IEN
  . I $E(X1,8,9)="~1" S IEN=$$CHKASH^XUSRB4($E(X1,8,255))
  . I $E(X1,8,9)="~2" S IEN=$$CHKCCOW^XUSRB4($E(X1,8,255))
+ . ;DSS/LM - BEGIN MOD - License Sharing
+ . D VFD("LSU")
+ . ;DSS/LM - END MOD
  . Q
  ;End CCOW
  S X1=$$UP(X1) S:X1[":" XUTT=1,X1=$TR(X1,":")
@@ -95,9 +100,15 @@ CHECKAV(X1) ;Check A/V code return DUZ or Zero. (Called from XUSRB)
  Q:X'?1.20ANP 0
  S X=$$EN^XUSHSH(X) I '$D(^VA(200,"A",X)) D LBAV Q 0
  S %1="",IEN=$O(^VA(200,"A",X,0)),XUF(.3)=IEN D USER(IEN)
+ ;DSS/LM - BEGIN MOD - External authentication
+ D VFD("EA")
+ ;DSS/LM - END MOD
  S X=$P(X1,";",2) S:XUF %1="Verify: "_X S X=$$EN^XUSHSH(X)
  I $P(XUSER(1),"^",2)'=X D LBAV Q 0
  I $G(XUFAC(1)) S DIK="^XUSEC(4,",DA=XUFAC(1) D ^DIK
+ ;DSS/LM - BEGIN MOD - License Sharing
+ D VFD("LSU")
+ ;DSS/LM - END MOD
  Q IEN
 LBAV ;Log Bad AV
  D:XUF FAC
@@ -108,8 +119,8 @@ USER(IX) ;Build XUSER
  S XUSER(0)=$G(^VA(200,+IX,0)),XUSER(1)=$G(^(.1)),XUSER(1.1)=$G(^(1.1))
  Q
  ;
-XUVOL ;Setup XUENV, XUCI,XQVOL,XUVOL,XUOSVER
- S U="^" D GETENV^%ZOSV S XUENV=Y,XUCI=$P(Y,U,1),XQVOL=$P(Y,U,2),XUOSVER=$$VERSION^%ZOSV
+XUVOL ;Setup XUENV, XUCI,XQVOL,XUVOL
+ S U="^" D GETENV^%ZOSV S XUENV=Y,XUCI=$P(Y,U,1),XQVOL=$P(Y,U,2)
  S X=$O(^XTV(8989.3,1,4,"B",XQVOL,0)),XUVOL=$S(X>0:^XTV(8989.3,1,4,X,0),1:XQVOL_"^y^1")
  Q
  ;
@@ -158,3 +169,35 @@ DEVPAS() ;EF. Ask device password
  S X=$E(X,1,30) S:'$T X="^" D LC Q:X["^" -1 I $P(XU1,U,2)'=X S:XUF %1="Device: "_X D:XUF FAC Q 6
  Q 0
  ;
+ ;DSS/SGM - BEGIN MODS - used to minimize actual code inserted
+ ; This was done to observe OSEHRA compliance which means that if all
+ ; of vxVistA that is needed is not there, then the mods to VA VistA
+ ; will continue just as if no modification had been made.
+ ; Also, to standardize the method for checking for OSEHRA compliance
+ ; and to minimize the actual code inserted into VA VistA routines,
+ ; this VFD module will be the central API for all modifications to
+ ; Kernel Security or Taskman.
+ ;
+VFD(VFD) ; OSEHRA compliance
+ ; ext funct calls: CHECKAV+2
+ ; also called from START^%ZTMS, DEVICE^XUS, XUS2
+ I $T(VX^VFDI0000)="" Q:$Q -1 Q
+ I $$VX^VFDI0000'["VX" Q:$Q -1 Q
+ S VFD=$G(VFD) I VFD="" Q:$Q -1 Q
+ ; put any extrinsic function calls here
+ I $Q S VFD(1)=-1 D  Q VFD(1)
+ . I VFD="VX" S VFD(1)=1 Q  ; generic ext funct ck for vx vs VA
+ . ; CHECKAV^VFDXUS2A replaces the CHECKAV module in XUS
+ . ; do not drop through the rest of XUS if you go to VFDXUS2A
+ . I VFD="CKAV" S:$T(^VFDXUS2A)'="" VFD(1)=$$CHECKAV^VFDXUS2A(.X1) Q
+ . Q
+ ; EA,LSU - expects that IEN exists and equals DUZ
+ ; EA - expects that X1 exists as defined above
+ I VFD="ACE" S VFD(0)="ACCESS CODE EDIT"
+ I VFD="EA" S VFD(0)="AUTHENTICATE USER EXTERNALLY"
+ ; SGM/2012-06-07 - next two lines deprecated
+ I 0,VFD="LST" S VFD(0)="SHARE LICENSE SLOTS (TASKMAN)"
+ I 0,VFD="LSU" S VFD(0)="SHARE LICENSE SLOTS (USER)"
+ I VFD="VCE" S VFD(0)="VERIFY CODE EDIT"
+ I $G(VFD(0))'="" D X^VFDXTX(VFD(0))
+ Q

@@ -1,5 +1,5 @@
-PSORXVW ;BHAM ISC/SAB - listman view of a prescription ; 6/7/12 7:00pm
- ;;7.0;OUTPATIENT PHARMACY;**14,35,46,96,103,88,117,131,146,156,185,210,148,233,260,264,281,359,385,400**;DEC 1997;Build 3
+PSORXVW ;BHAM ISC/SAB - listman view of a prescription ;5/25/05 2:10pm
+ ;;7.0;OUTPATIENT PHARMACY;**14,35,46,96,103,88,117,131,146,156,185,210,148,233,260,264,281**;DEC 1997;Build 41
  ;External reference to File ^PS(55 supported by DBIA 2228
  ;External reference to ^PS(50.7 supported by DBIA 2223
  ;External reference ^PSDRUG( supported by DBIA 221
@@ -8,22 +8,18 @@ PSORXVW ;BHAM ISC/SAB - listman view of a prescription ; 6/7/12 7:00pm
  ;External reference to ^DPT supported by DBIA 10035
  ;External reference to ^PS(50.606 supported by DBIA 2174
  ;External reference to GMRADPT supported by DBIA 10099
- ;External reference to $$BADADR^DGUTL3 supported by DBIA 4080
  ;
  S PS="VIEW"
 A1 ; - Prescription prompt
  S DIR(0)="FAO^1:30",DIR("A")=PS_" PRESCRIPTION: ",(DIR("?"),DIR("??"))="^D HLP^PSORXVW1"
- W ! D ^DIR I X=""!$D(DIRUT) K:$G(PS)="VIEW" DA K PS G KILL
+ W ! D ^DIR I X=""!$D(DIRUT) G KILL
  S X=$$UP^XLFSTR(X),QUIT=0
  I $E(X,1,2)'="E." S (DA,PSOVDA)=+$$LKP^PSORXVW1(X) I DA<0 G A1
- I $E(X,1,2)="E." D  I QUIT G A1   ; esg 12/7/10 - ECME# lookup - PSO*7*359
- .S (DA,PSOVDA)=+$$RXNUM^PSOBPSU2($E(X,3,$L(X))) I DA<0 W " ??",$C(7) S QUIT=1
+ I $E(X,1,2)="E." D  I QUIT G A1
+ . I $L(X)'=9 W !?5,"The ECME# must be 7 digits long!",$C(7) S QUIT=1 Q
+ . S (DA,PSOVDA)=+$$RXNUM^PSOBPSU2($E(X,3,9)) I DA<0 W " ??" S QUIT=1
  ;
- ; pso*7*385 - esg - Routine BPSRVX is calling this routine here at entry point DP in order to capture the
- ; scratch global data for the View ECME Rx option.  Special variable BPSVRX=1 in this case.
-DP ; DBIA #4711 entry point from ECME
- ;
- S (PSODFN,DFN)=+$P(^PSRX(DA,0),"^",2) S PSOLOUD=1 D:$P($G(^PS(55,PSODFN,0)),"^",6)'=2 EN^PSOHLUP(PSODFN) K PSOLOUD
+DP S (PSODFN,DFN)=+$P(^PSRX(DA,0),"^",2) S PSOLOUD=1 D:$P($G(^PS(55,PSODFN,0)),"^",6)'=2 EN^PSOHLUP(PSODFN) K PSOLOUD
  D ICN^PSODPT(PSODFN)
  K ^TMP("PSOHDR",$J) D ^VADPT,ADD^VADPT
  S ^TMP("PSOHDR",$J,1,0)=VADM(1)
@@ -76,7 +72,7 @@ PTST S $P(RN," ",25)=" ",PTST=$S($G(^PS(53,+$P(RX0,"^",3),0))]"":$P($G(^PS(53,+$
  S ROU=$S($P(RX0,"^",11)="W":"Window",1:"Mail")
  S REFL=$P(RX0,"^",9),I=0 F  S I=$O(^PSRX(RXN,1,I)) Q:'I  S REFL=REFL-1,ROU=$S($P(^PSRX(RXN,1,I,0),"^",2)="W":"Window",1:"Mail")
  S IEN=IEN+1,^TMP("PSOAL",$J,IEN,0)="      Last Fill Date: "_$E($P(RX3,"^"),4,5)_"/"_$E($P(RX3,"^"),6,7)_"/"_$E($P(RX3,"^"),2,3)
- D CMOP^PSOORNE3 S DA=RXN
+  D CMOP^PSOORNE3 S DA=RXN
  S ^TMP("PSOAL",$J,IEN,0)=^TMP("PSOAL",$J,IEN,0)_" ("_ROU_$S($G(PSOCMOP)]"":", "_PSOCMOP,1:"")_")" K ROU,PSOCMOP
  S IEN=IEN+1 I $P(RX2,"^",15) S ^TMP("PSOAL",$J,IEN,0)="   Returned to Stock: "_$E($P(RX2,"^",15),4,5)_"/"_$E($P(RX2,"^",15),6,7)_"/"_$E($P(RX2,"^",15),2,3)
  E  S ^TMP("PSOAL",$J,IEN,0)="   Last Release Date: " D
@@ -110,16 +106,11 @@ PTST S $P(RN," ",25)=" ",PTST=$S($G(^PS(53,+$P(RX0,"^",3),0))]"":$P($G(^PS(53,+$
  I ST<12,$P(RX2,"^",6)<DT S ST=11
  S VALM("TITLE")="Rx View "_"("_$P("Error^Active^Non-Verified^Refill^Hold^Non-Verified^Suspended^^^^^Done^Expired^Discontinued^Deleted^Discontinued^Discontinued (Edit)^Provider Hold^","^",ST+2)_")"
  S:$P($G(^PSRX(DA,"PKI")),"^") VALMSG="Digitally Signed Order"
- ;
- ; pso*7*385 - esg - if being called by the BPSVRX routine, call HDR^PSOLMUTL to build the VALMHDR array and then Quit
- I $G(BPSVRX) D HDR^PSOLMUTL Q
- ;
  D EN^PSOORAL,KILL I $G(PS)="VIEW" G PSORXVW
- K:$G(PS)="VIEW" DA K PS
  Q
  ;
 KILL K ^TMP("PSOAL",$J),PSOAL,IEN,^TMP("PSOHDR",$J) I $G(PS)="VIEW" K DA
  K ST,RFL,RFLL,RFL1,ST,II,J,N,PHYS,L1,DIRUT,PSDIV,PSEXDT,MED,M1,FFX,DTT,DAT,RX0,RX2,R3,RTN,SIG,STA,P1,PL,P0,Z0,Z1,EXDT,IFN,DIR,DUOUT,DTOUT,PSOELSE
  K LBL,I,RFDATE,%H,%I,RN,RFT,%,%I,DFN,GMRA,GMRAL,HDR,POERR,PTST,REFL,RF,RLD,RX3
- K RXN,RXOR,SG,VA,VADM,VAERR,VALMBCK,VAPA,X,DIC,REA,ZD,PSOHD,PSOBCK,PSODFN,QUIT
+ K RXN,RXOR,SG,VA,VADM,VAERR,VALMBCK,VAPA,X,DIC,REA,ZD,PSOHD,PSOBCK,PSODFN
  Q

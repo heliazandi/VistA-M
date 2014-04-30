@@ -1,35 +1,6 @@
-RORXU002 ;HCIOFO/SG - REPORT BUILDER UTILITIES ; 8/3/11 3:55pm
- ;;1.5;CLINICAL CASE REGISTRIES;**1,10,13,15,17**;Feb 17, 2006;Build 33
+RORXU002 ;HCIOFO/SG - REPORT BUILDER UTILITIES ; 5/18/06 11:13am
+ ;;1.5;CLINICAL CASE REGISTRIES;**1**;Feb 17, 2006;Build 24
  ;
- ; This routine uses the following IAs:
- ;
- ; #3990   $$ICDD^ICDCODE (supported)
- ; #2050   BLD^DIALOG (supported)
- ; #2056   GETS^DIQ (supported)
- ; #2056   $$GET1^DIQ (supported)
- ; #10103  $$NOW^XLFDT  (supported)
- ; #10104  $$TRIM^XLFSTR (supported)
- ; #417    Read access to .01 field of file #40.8 (controlled)
- ; #10040  Read access to file #44 (supported)
- ;
- ;******************************************************************************
- ;******************************************************************************
- ;                 --- ROUTINE MODIFICATION LOG ---
- ;        
- ;PKG/PATCH    DATE        DEVELOPER    MODIFICATION
- ;-----------  ----------  -----------  ----------------------------------------
- ;ROR*1.5*10   APR  2010   A SAUNDERS   Modified Lab Tests Ranges section in
- ;                                      PARAMS tag to include the 3 new reports.
- ;ROR*1.5*13   DEC  2010   A SAUNDERS   Added Division and Clinic sections in
- ;                                      PARAMS tag (pulled from RORXU006).
- ;ROR*1.5*15   JUN  2011   C RAY        Added HIV_DX
- ; 
- ;ROR*1.5*17   AUG  2011   C RAY        Modified to allow 
- ;                                      PATIENTS,OPTIONS params to have other
- ;                                      values besides boolean
- ;                                      Modified to add DATE_RANGE_4
- ;******************************************************************************
- ;******************************************************************************
  Q
  ;
  ;***** SCANS THE TABLE DEFINITION (RORSRC) FOR COLUMN NAMES
@@ -64,7 +35,7 @@ DATE(DT) ;
  ;       >0  IEN of the HEADER element
  ;
 HEADER(RORTSK,PARTAG) ;
- N HEADER,IENS,REGIEN,RORBUF,RORMSG,TMP,DIERR
+ N HEADER,IENS,REGIEN,RORBUF,RORMSG,TMP
  S HEADER=$$ADDVAL^RORTSK11(RORTSK,"HEADER",,PARTAG)
  Q:HEADER<0 HEADER
  D ADDVAL^RORTSK11(RORTSK,"DATE",$$DATE($$NOW^XLFDT),HEADER)
@@ -136,7 +107,7 @@ OPTXT(OPTIONS,DLGNUM) ;
  ;       >0  IEN of the PARAMETERS element
  ;
 PARAMS(RORTSK,PARTAG,STDT,ENDT,FLAGS) ;
- N BUF,ELEMENT,I,LTAG,MODE,NAME,PARAMS,RC,REGIEN,RORMSG,TMP,IEN,DIERR
+ N BUF,ELEMENT,I,LTAG,MODE,NAME,PARAMS,RC,REGIEN,RORMSG,TMP
  S PARAMS=$$ADDVAL^RORTSK11(RORTSK,"PARAMETERS",,PARTAG)
  S RC=0,(ENDT,STDT)="",FLAGS=""
  ;
@@ -148,7 +119,7 @@ PARAMS(RORTSK,PARTAG,STDT,ENDT,FLAGS) ;
  . S RC=$$ADDVAL^RORTSK11(RORTSK,"REGNAME",TMP,PARAMS)
  ;
  ;=== Alternate date ranges
- F I=2:1:4  D  Q:RC<0
+ F I=2:1:3  D  Q:RC<0
  . S STDT=$$PARAM^RORTSK01("DATE_RANGE_"_I,"START")\1  Q:STDT'>0
  . S ENDT=$$PARAM^RORTSK01("DATE_RANGE_"_I,"END")\1    Q:ENDT'>0
  . S ELEMENT=$$ADDVAL^RORTSK11(RORTSK,"DATE_RANGE_"_I,,PARAMS)
@@ -171,31 +142,6 @@ PARAMS(RORTSK,PARTAG,STDT,ENDT,FLAGS) ;
  S TMP=$$PARAM^RORTSK01("TASK_COMMENT")
  D:TMP'="" ADDVAL^RORTSK11(RORTSK,"TASK_COMMENT",TMP,PARAMS)
  ;
- ;=== Clinic Selection - patch 13
- D:$D(RORTSK("PARAMS","CLINICS","C"))
- . S LTAG=$$ADDVAL^RORTSK11(RORTSK,"CLINICS",,PARAMS)  Q:LTAG'>0
- . S IEN=0
- . F  S IEN=$O(RORTSK("PARAMS","CLINICS","C",IEN))  Q:IEN'>0  D
- . . S TMP=$$GET1^DIQ(44,IEN_",",.01,,,"RORMSG")
- . . D:$G(DIERR) DBS^RORERR("RORMSG",-9,,,44,IEN_",")
- . . Q:TMP=""
- . . D ADDVAL^RORTSK11(RORTSK,"CLINIC",TMP,LTAG,,IEN)
- D:$$PARAM^RORTSK01("CLINICS","ALL")
- . S LTAG=$$ADDVAL^RORTSK11(RORTSK,"CLINICS","ALL",PARAMS)
- ;
- ;=== Division Selection - patch 13
- D:$D(RORTSK("PARAMS","DIVISIONS","C"))
- . S LTAG=$$ADDVAL^RORTSK11(RORTSK,"DIVISIONS",,PARAMS)  Q:LTAG'>0
- . S IEN=0
- . F  S IEN=$O(RORTSK("PARAMS","DIVISIONS","C",IEN))  Q:IEN'>0  D
- . . S TMP=$$GET1^DIQ(40.8,IEN_",",.01,,,"RORMSG")
- . . D:$G(DIERR) DBS^RORERR("RORMSG",-9,,,40.8,IEN_",")
- . . Q:TMP=""
- . . D ADDVAL^RORTSK11(RORTSK,"DIVISION",TMP,LTAG,,IEN)
- D:$$PARAM^RORTSK01("DIVISIONS","ALL")
- . S LTAG=$$ADDVAL^RORTSK11(RORTSK,"DIVISIONS","ALL",PARAMS)
- ;
- ;
  ;=== Patient selection and Options
  F NAME="PATIENTS","OPTIONS"  D  Q:RC<0
  . K BUF  M BUF=RORTSK("PARAMS",NAME,"A")  Q:$D(BUF)<10
@@ -204,7 +150,7 @@ PARAMS(RORTSK,PARTAG,STDT,ENDT,FLAGS) ;
  . I ELEMENT'>0  S RC=ELEMENT  Q
  . S TMP=""
  . F  S TMP=$O(BUF(TMP))  Q:TMP=""  D  Q:RC<0
- . . S RC=$$ADDATTR^RORTSK11(RORTSK,ELEMENT,TMP,$G(BUF(TMP)))
+ . . S RC=$$ADDATTR^RORTSK11(RORTSK,ELEMENT,TMP,"1")
  . ;--- Compile the flags
  . D:NAME="PATIENTS"
  . . S:'$D(BUF("DE_BEFORE")) FLAGS=FLAGS_"P"
@@ -245,54 +191,12 @@ PARAMS(RORTSK,PARTAG,STDT,ENDT,FLAGS) ;
  ;
  ;=== Lab test ranges
  I $D(RORTSK("PARAMS","LRGRANGES","C"))>1  D  Q:RC<0 RC
- . N TYPE S TYPE=3 ;default = 3 for 'lab by range' report
- . I $G(RORTSK("EP"))["BMIRANGE" S TYPE=5 ;change to 5 if BMI
- . I $G(RORTSK("EP"))["MLDRANGE" S TYPE=6 ;change to 6 if MELD
- . I $G(RORTSK("EP"))["RFRANGE" S TYPE=7 ;change to 7 if Renal
  . N GRC,NODE
  . S NODE=$NA(RORTSK("PARAMS","LRGRANGES","C"))
  . S GRC=0
  . F  S GRC=$O(@NODE@(GRC))  Q:GRC'>0  D  Q:RC<0
- . . S RC=$$ITEMIEN^RORUTL09(TYPE,REGIEN,GRC,.TMP)
+ . . S RC=$$ITEMIEN^RORUTL09(3,REGIEN,GRC,.TMP)
  . . S:RC'<0 @NODE@(GRC)=TMP
- ;
- ;=== ICD-9 filter/group/codes
- N LEV1FILT,LEV2GRP,LEV3ICD9,ICD9IEN,ICD9CODE,GRPNAME,FILTER,ICD9DESC
- S FILTER=$G(RORTSK("PARAMS","ICD9FILT","A","FILTER"))
- I $L(FILTER)>0 D  ;quit if no ICD9 filter exists
- . S LEV1FILT=$$ADDVAL^RORTSK11(RORTSK,"ICD9FILT",,PARAMS)
- . I LEV1FILT<0 S RC=LEV1FILT Q
- . ;add filter value to the output
- . S RC=$$ADDATTR^RORTSK11(RORTSK,LEV1FILT,"FILTER",FILTER)
- . ;if there's an ICD9 group, process it
- . I $D(RORTSK("PARAMS","ICD9FILT","G"))>1 D  Q:RC<0
- .. S NODE=$NA(RORTSK("PARAMS","ICD9FILT","G"))
- .. S GRPNAME=0,RC=0
- .. F  S GRPNAME=$O(@NODE@(GRPNAME)) Q:GRPNAME=""  D  Q:RC<0
- ... S LEV2GRP=$$ADDVAL^RORTSK11(RORTSK,"GROUP",,LEV1FILT)
- ... I LEV2GRP'>0  S RC=LEV2GRP Q 
- ... ;add group name to the output
- ... D ADDATTR^RORTSK11(RORTSK,LEV2GRP,"ID",GRPNAME)
- ... S ICD9IEN=0
- ... F  S ICD9IEN=$O(@NODE@(GRPNAME,"C",ICD9IEN)) Q:ICD9IEN'>0  D
- .... S ICD9CODE=+$G(@NODE@(GRPNAME,"C",ICD9IEN)) Q:ICD9CODE'>0
- .... ;get diagnosis description
- .... N RORDESC K RORDESC S TMP=$$ICDD^ICDCODE(ICD9CODE,"RORDESC")
- .... S ICD9DESC=$G(RORDESC(1))
- .... S LEV3ICD9=$$ADDVAL^RORTSK11(RORTSK,"ICD9",$G(ICD9DESC),LEV2GRP)
- .... D ADDATTR^RORTSK11(RORTSK,LEV3ICD9,"ID",$G(ICD9CODE))
- .... K RORDESC
- ;
- ;=== get Max Date
- N MAXDT S MAXDT=$$PARAM^RORTSK01("OPTIONS","MAX_DATE")
- I $G(MAXDT)>0 D ADDVAL^RORTSK11(RORTSK,"MAX_DATE",MAXDT,PARAMS)
- ;
- ;=== get HIV_DX
- N RORMODE S RORMODE=$$PARAM^RORTSK01("HIV_DX")
- S RORMODE=$S(RORMODE=1:"Include",RORMODE=-1:"Exclude",1:"")
- I RORMODE'="" D
- . D ADDVAL^RORTSK11(RORTSK,"HIV_DX",RORMODE,PARAMS)
- . S FLAGS=FLAGS_"H"
  ;
  ;=== Defaults
  S TMP=$TR(FLAGS,"FNP")  S:$L(FLAGS)-$L(TMP)=3 FLAGS=TMP

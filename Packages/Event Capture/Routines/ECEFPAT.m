@@ -1,5 +1,5 @@
-ECEFPAT ;ALB/JAM-Enter Event Capture Data Patient Filer ;11/18/11  13:30
- ;;2.0;EVENT CAPTURE;**25,32,39,42,47,49,54,65,72,95,76,112**;8 May 96;Build 18
+ECEFPAT ;ALB/JAM - Enter Event Capture Data Patient Filer ;14 JUL 2008
+ ;;2.0; EVENT CAPTURE ;**25,32,39,42,47,49,54,65,72,95**;8 May 96;Build 26
  ;
 FILE ;Used by the RPC broker to file patient encounter in file #721
  ;  Uses Supported IA 1995 - allow access to $$CPT^ICPTCOD
@@ -22,8 +22,6 @@ FILE ;Used by the RPC broker to file patient encounter in file #721
  ;       EC4     - Associated Clinic, required if sending data to PCE
  ;       ECPTSTAT- Patient Status
  ;       ECPXREAS- Procedure reason, optional
- ;       ECPXREA2- Procedure reason #2, optional ;112
- ;       ECPXREA3- Procedure reason #3, optional ;112
  ;       ECMOD   - CPT modifiers, optional
  ;       ECLASS  - Classification, optional
  ;       ECELIG  - Eligibility, optional
@@ -76,12 +74,10 @@ FILE ;Used by the RPC broker to file patient encounter in file #721
  S $P(^ECH(ECFN,0),"^",9)=ECP
  D ^DIE I $D(DTOUT) D RECDEL,MSG Q
  S DA=ECFN,DR="11////"_ECMN_";13////"_ECDUZ_";2////"_ECDT
- ;S ECPXREAS=$G(ECPXREAS) ;112
+ S ECPXREAS=$G(ECPXREAS)
  S DR=DR_";19////"_$S(+ECCPT:ECCPT,1:"@")_";20////"_ECDX
  S DR=DR_";26////"_$G(EC4)_";27////"_$G(ECID)_";29////"_ECPTSTAT
- S DR=DR_";34////"_$S($G(ECPXREAS)="":"@",1:ECPXREAS) ;112
- S DR=DR_";43////"_$S($G(ECPXREA2)="":"@",1:ECPXREA2) ;112
- S DR=DR_";44////"_$S($G(ECPXREA3)="":"@",1:ECPXREA3) ;112
+ S DR=DR_";34////"_$S(ECPXREAS="":"@",1:ECPXREAS)
  D ^DIE I $D(DTOUT) D RECDEL,MSG Q
  I ECDX S ^DISV(DUZ,"^ICD9(")=ECDX  ;last ICD9 code
  S ECX=$O(ECPRV("A"),-1) I ECX'="" S ^DISV(DUZ,"^VA(200,")=+ECPRV(ECX)
@@ -120,9 +116,9 @@ FILE ;Used by the RPC broker to file patient encounter in file #721
  . K PXUPD,ECDXY,ECDXX,DXS,DXSIEN,DIC,DXCDE,DA,DD,DO
  I $D(DTOUT) D RECDEL,MSG Q
  S DA=ECFN
- ;File classification AO^IR^SC^EC^MST^HNC^CV^SHAD
+ ;File classification AO^IR^SC^EC^MST^HNC^CV
  I $G(ECLASS)'="" D
- . S CLSTR="21^22^24^23^35^39^40^41",DR=""
+ . S CLSTR="21^22^24^23^35^39^40",DR=""
  . F ECX=1:1:$L(CLSTR,"^") D
  . . S DR=DR_$P(CLSTR,U,ECX)_"////"_$P(ECLASS,U,ECX)_";"
  . S DR=$E(DR,1,($L(DR)-1)) D ^DIE
@@ -141,7 +137,7 @@ PCE ; format PCE data to send
  ;
 NEWIEN ;Create new IEN in file #721
  N DIC,DA,DD,DO,ECRN
-RLCK L +^ECH(0):60 S ECRN=$P(^ECH(0),"^",3)+1
+RLCK L +^ECH(0) S ECRN=$P(^ECH(0),"^",3)+1
  I $D(^ECH(ECRN)) S $P(^ECH(0),"^",3)=$P(^(0),"^",3)+1 L -^ECH(0) G RLCK
  L -^ECH(0) S DIC(0)="L",DIC="^ECH(",X=ECRN
  D FILE^DICN S ECIEN=+Y

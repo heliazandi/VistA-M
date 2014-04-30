@@ -1,5 +1,5 @@
 PSOQ0496 ;BHAM ISC/SAB - returns patient's outpatient meds ; 30 Nov 2007  7:53 AM
- ;;7.0;OUTPATIENT PHARMACY;**294**;DEC 1997;Build 13
+ ;;7.0;OUTPATIENT PHARMACY;**294**;DEC 1997;Build 153
  ;
  ;Reference to ^PS(55 supported by DBIA 2228
  ;Reference to ^PSDRUG supported by DBIA 221
@@ -22,7 +22,10 @@ OCL(DFN,BDT,EDT) ;entry point to return condensed list
  .F I=0:0 S I=$O(^PSRX(IFN,1,I)) Q:'I  S TRM=TRM+1,LSTFD=$P(^PSRX(IFN,1,I,0),"^"),LSTDS=$P(^(0),"^",10) S:$P(^(0),"^",18)]"" LSTRD=$P(^(0),"^",18)
  .S ^TMP("PS",$J,TFN,0)=IFN_"R;O"_"^"_$P($G(^PSDRUG(+$P(RX0,"^",6),0)),"^")_"^^"_$P(RX2,"^",6)_"^"_($P(RX0,"^",9)-TRM)_"^^^"_$P($G(^PSRX(IFN,"OR1")),"^",2)
  .N DIC,X,Y S DIC=200,DIC(0)="N",X="`"_$P(RX0,"^",4) D ^DIC S ^TMP("PS",$J,TFN,"P",0)=Y K DIC,X,Y
- .S ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ .;DSS/LM - BEGIN MODS - add new condition when to expire
+ .;S ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ .D VFD^PSOORRL(8)
+ .;DSS/LM - END MODS
  .S ST=$P("ERROR^ACTIVE^NON-VERIFIED^REFILL FILL^HOLD^NON-VERIFIED^ACTIVE/SUSP^^^^^DONE^EXPIRED^DISCONTINUED^DISCONTINUED^DISCONTINUED^DISCONTINUED (EDIT)^HOLD^","^",ST0+2)
  .S ^TMP("PS",$J,TFN,0)=^TMP("PS",$J,TFN,0)_"^"_ST_"^"_LSTFD_"^"_$P(RX0,"^",8)_"^"_$P(RX0,"^",7)_"^^^"_$P(RX0,"^",13)_"^"_LSTRD_"^"_LSTDS
  .S ^TMP("PS",$J,TFN,"SCH",0)=0
@@ -71,7 +74,10 @@ OEL(DFN,RXNUM) ;returns expanded list on specific order
  .S ^TMP("PS",$J,"PAR",0)=$G(^TMP("PS",$J,"PAR",0))+1
  S ^TMP("PS",$J,0)=$P($G(^PSDRUG(+$P(RX0,"^",6),0)),"^")_"^^"_$P(RX2,"^",6)
  N DIC,X,Y S DIC=200,DIC(0)="N",X="`"_$P(RX0,"^",4) D ^DIC S ^TMP("PS",$J,"P",0)=Y K DIC,X,Y
- S ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ ;DSS/LM - BEGIN MODS - add new condition when to expire
+ ;S ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ D VFD^PSOORRL(8)
+ ;DSS/LM - END MODS
  S ST=$P("ERROR^ACTIVE^NON-VERIFIED^REFILL FILL^HOLD^NON-VERIFIED^ACTIVE/SUSP^^^^^DONE^EXPIRED^DISCONTINUE^DISCONTINUED^DISCONTINUED^DISCONTINUED (EDIT)^HOLD^","^",ST0+2)
  S ^TMP("PS",$J,0)=^TMP("PS",$J,0)_"^"_($P(RX0,"^",9)-TRM)_"^"_$P(RX0,"^",13)_"^"_ST_"^"_$P(RX0,"^",8)_"^"_$P(RX0,"^",7)_"^^^"_$P($G(^PSRX(IFN,"OR1")),"^",2)_"^"_LSTFD_"^^"
  S ^TMP("PS",$J,"DD",0)=1,^TMP("PS",$J,"DD",1,0)=$P(RX0,"^",6)_"^^"
@@ -130,3 +136,9 @@ TMPBLD S TFN=$G(TFN)+1,^TMP("PS",$J,TFN,0)=I_"N;O^"_DRG
  S ^TMP("PS",$J,TFN,"SCH",0)=1,^TMP("PS",$J,TFN,"SCH",1,0)=$P(X,"^",5)
  S ^TMP("PS",$J,TFN,"SIG",0)=1,^TMP("PS",$J,TFN,"SIG",1,0)=$P(X,"^",3)_" "_$P(X,"^",4)_" "_$P(X,"^",5)
  Q
+VFD() ;DSS/LM - Evaluate parameter VFD PKG FILTER EXPIRED STATUS
+ ; for OUTPATIENT PHARMACY package
+ ;
+ N VFD S VFD=$$FIND1^DIC(9.4,,"X","OUTPATIENT PHARMACY","B") Q:'(VFD>0) 0
+ Q $$GET^XPAR("SYS","VFD PKG FILTER EXPIRED STATUS",VFD,"I")
+ ;

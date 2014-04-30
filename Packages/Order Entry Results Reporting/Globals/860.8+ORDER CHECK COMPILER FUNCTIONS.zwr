@@ -877,7 +877,7 @@ ZWR
 ^OCXS(860.8,55,"DESC",2,0)="file. If not, a ""0"" (zero) is returned.  If the patient does have an"
 ^OCXS(860.8,55,"DESC",3,0)="allergy assessment or no know allergies (NKA), a ""1"" (one) is returned."
 ^OCXS(860.8,56,0)="OPIOID MEDICATIONS^OPIOID"
-^OCXS(860.8,56,"CODE",0)="^^30^30^3110308^"
+^OCXS(860.8,56,"CODE",0)="^^30^30^3130319^"
 ^OCXS(860.8,56,"CODE",1,0)="   ;OPIOID(ORPT) ;determine if pat is receiving opioid med"
 ^OCXS(860.8,56,"CODE",2,0)="   ; ; rtn 1^opioid drug 1, opioid drug 2, opioid drug3, ..."
 ^OCXS(860.8,56,"CODE",3,0)="   ; N ORDG,ORTN,ORNUM,ORDI,ORDCLAS,ORDERS,ORTEXT,DUP,DUPI,DUPJ,DUPLEN"

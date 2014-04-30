@@ -1,5 +1,5 @@
 KMPDENV ;OAK/RAK - CM Tools Environmnet Check ;4/21/04
- ;;3.0;KMPD;;Jan 22, 2009;Build 42
+ ;;2.0;CAPACITY MANAGEMENT TOOLS;**1**;Mar 22, 2002
  ;
 EN ;-entry point
  ; if version 2.0

@@ -1,5 +1,5 @@
 LRUPT ;AVAMC/REG/WTY - PATIENT TESTS ORDERED BY DATE ;9/25/00
- ;;5.2;LAB SERVICE;**1,153,201,248**;Sep 27, 1994
+ ;;5.2;LAB SERVICE;**1,153,201,248**;Sep 27, 1994;Build 25
  ;
  ;Reference to ^VA(200 supported by IA #10060
  ;Reference to ^%ZIS supported by IA #10086
@@ -13,7 +13,13 @@ ASK I $D(Z(0)),Z(0)="BB" S DIC("B")="BLOOD BANK"
 REST S LRSS=$P(Y(0),U,2),Z(3)=$P(Y(0),U,3),LRAA=+Y,LRAA(1)=$P(Y,U,2),Z(8)=$P(Y(0),U,11)
 GETP K T W ! S A("A")="Y" K DIC D ^LRDPA Q:LRDFN=-1  Q:'$D(^LR(LRDFN,0))
  W !,"Is this the patient " S %=1 D YN^LRU Q:%<1  G:%=2 GETP D SHOW G GETP
-SHOW W @IOF,!,LRAA(1),?20,LRP," ID: ",SSN I "AUCYEMSP"'[LRSS W "  TESTS ORDERED"
+SHOW ;DSS/RAF - BEGIN MOD for MRN and DOB
+ ;W @IOF,!,LRAA(1),?20,LRP," ID: ",SSN I "AUCYEMSP"'[LRSS W "  TESTS ORDERED"
+ I $G(VA("MRN"))]"" D
+ .W @IOF,!,LRAA(1),?20,LRP,"  "_$G(VA("MRN",0))_": ",SSN
+ .W !,?40,"DOB: ",$P($G(VADM(3)),U,2) I "AUCYEMSP"'[LRSS W "  TESTS ORDERED"
+ E  W @IOF,!,LRAA(1),?20,LRP," ID: ",SSN I "AUCYEMSP"'[LRSS W "  TESTS ORDERED"
+ ;DSS/RAF END MOD
  I LRSS="AU" D AUTO Q
  I '$D(^LR(LRDFN,LRSS)) W $C(7),!!,"No ",LRAA(1),$S("SPCYEM"'[LRSS:" Tests",1:""),!! Q
  D HDR S N=0 F A=1:1 S N=$O(^LR(LRDFN,LRSS,N)) Q:'N  I $D(^LR(LRDFN,LRSS,N,0)) S Z(7)=^(0) D S Q:A("A")'?1"Y".E

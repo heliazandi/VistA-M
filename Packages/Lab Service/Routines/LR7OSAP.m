@@ -1,5 +1,5 @@
 LR7OSAP ;DALOI/STAFF - Silent AP rpt (compare to LRAPCUM) ;12/03/09  15:42
- ;;5.2;LAB SERVICE;**121,187,230,256,259,317,350**;Sep 27, 1994;Build 230
+ ;;5.2;LAB SERVICE;**121,187,230,256,259,317,350**;Sep 27, 1994;Build 7
  ;
 GET I '$D(^LR(LRDFN,LRSS)) Q
  N FST,X
@@ -26,7 +26,15 @@ GET I '$D(^LR(LRDFN,LRSS)) Q
  ;
 F(PIECE) ;
  ;If PIECE=1, then only get 1st piece; otherwise get whole node
- I '$G(PIECE) D WRAP^LR7OSAP1("^LR("_LRDFN_","""_LRSS_""","_LRI_","_LRV_")",79) Q
+ ;DSS/JDB/RAF - BEGIN MODS
+ ; enhances WRAP function to lab interface - 2010/01/27
+ ; Original line was
+ ;I '$G(PIECE) D WRAP^LR7OSAP1("^LR("_LRDFN_","""_LRSS_""","_LRI_","_LRV_")",79) Q
+ I '$G(PIECE) D  Q
+ . I $$VFD D WRAP^VFDLR7OA(LRDFN,LRSS,LRI,LRV) Q
+ . D WRAP^LR7OSAP1("^LR("_LRDFN_","""_LRSS_""","_LRI_","_LRV_")",79)
+ . Q
+ ;DSS/JDB/RAF - END MODS
  S C=0
  F  S C=$O(^LR(LRDFN,LRSS,LRI,LRV,C)) Q:'C  S X=$P(^(C,0),"^") D LN S ^TMP("LRC",$J,GCNT,0)=$$S^LR7OS(1,CCNT,X)
  Q
@@ -66,6 +74,9 @@ W ; Called from above and LR7OSAP4
  S LRW(4)=X,X=$P(B,"^",7)
  D:X D^LRUA
  S LRW(7)=X
+ ;DSS/RAF - BEGIN MOD - add ref lab acc#
+ D VFD2
+ ;DSS/RAF - END MOD
  D LN
  S ^TMP("LRC",$J,GCNT,0)=$$S^LR7OS(1,CCNT,"Date Spec taken: "_LRW(1)),^(0)=^TMP("LRC",$J,GCNT,0)_$$S^LR7OS(38,CCNT,"Pathologist:"_LRW(2))
  D LN
@@ -263,3 +274,12 @@ FIND(SS) ; Find a valid entry in 68
  N I,Y
  S I=0,Y="" F  S I=$O(^LRO(68,I)) Q:I<1  I $P($G(^LRO(68,I,0)),"^",2)=SS S Y=I Q
  Q Y
+ ;DSS/RAF - BEGIN MODS
+VFD() N A S A=$G(^%ZOSF("ZVX")) Q $S(A="VXS":2,A["VX":1,1:0)
+ ;
+VFD2 ;DSS/RAF - add ref lab acc#
+ Q:'$$VFD
+ D LN S ^TMP("LRC",$J,GCNT,0)=$$S^LR7OS(1,CCNT,"Ref Lab Acc#: "_$P($G(^LR(LRDFN,"SP",LRI,"ORU")),U,4))
+ I $D(^LR(LRDFN,LRSS,LRI,99)) D LN S ^TMP("LRC",$J,GCNT,0)=$$S^LR7OS(1,CCNT,"Comments:") S LRV=99 D F(1)
+ D LN S ^TMP("LRC",$J,GCNT,0)=$$S^LR7OS(1,CCNT,"-------------------------------------")
+ Q

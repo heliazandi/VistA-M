@@ -1,5 +1,5 @@
 TIULV ; SLC/JER - Visit/Movement related library ; 4/18/03
- ;;1.0;TEXT INTEGRATION UTILITIES;**7,30,55,45,52,148,156,152,113,200**;Jun 20, 1997
+ ;;1.0;TEXT INTEGRATION UTILITIES;**7,30,55,45,52,148,156,152,113,200**;Jun 20, 1997;Build 153
 PATPN(TIUY,DFN) ; Get minimum demographics for PN Print
  N VADM,VAIP,VAIN,VA,VAPA
  D OERR^VADPT
@@ -12,6 +12,9 @@ PATPN(TIUY,DFN) ; Get minimum demographics for PN Print
  S TIUY("INTNM")=$$NAME^VASITE ;Integration Name
  S TIUY("SITE")=$P($$SITE^VASITE,U,2)
  S TIUY("LOCP")="Pt Loc: "_$S(VAIN(4)]"":$P(VAIN(4),U,2)_"  "_VAIN(5),1:"OUTPATIENT")
+ ;DSS/SGM - Begin mods - Replace SSN, pat loc with div
+ D MRNLOC(1)
+ ;DSS/SGM/LM - End mods
  Q
  ;
 PATVADPT(TIUY,DFN,TIUMVN,TIUVSTR,TIUSDC) ; Extract MAS data
@@ -20,6 +23,9 @@ PATVADPT(TIUY,DFN,TIUMVN,TIUVSTR,TIUSDC) ; Extract MAS data
  S TIUY("PNM")=$G(VADM(1)),TIUY("SSN")=$G(VA("PID"))
  S TIUY("AGE")=$G(VADM(4)),TIUY("PID")="("_$E(TIUY("PNM"))_VA("BID")_")"
  S TIUY("DOB")=$G(VADM(3))
+ ;DSS/SGM - Begin mods - Replace SSN with MRN
+ D MRNLOC(0)
+ ;DSS/SGM/LM - End mods
  D ADD^VADPT
  I $G(VAPA(8))'="" S TIUY("PH#")=VAPA(8)
  I $G(VAPA(8))="" S TIUY("PH#")="**UNKNOWN**"
@@ -126,4 +132,17 @@ CURRENT(TIUY,DFN) ; Get current INPATIENT data
  . D EN^DIQ1
  . ;TIU*1*152 changed TIUDIV1(4,DUZ(2),.01) to $G(TIUDIV1(4,$G(DUZ(2)),.01)) ; TIU*1*200 Added + to 2nd piece and + to $G(DUZ(2))
  . S TIUY("DIV")=+$G(DUZ(2))_U_+$G(TIUDIV1(4,+$G(DUZ(2)),.01))
+ Q
+ ;
+ ;DSS/SGM - All lines below this point added
+MRNLOC(VLOC) ; resets TIUY("SSN") to MRN and 
+ ; vloc - opt - boolean, if true reset inpat loc with division
+ N VFDX
+ S VFDX=$G(VA("MRN"))
+ I VFDX="",$T(ID^VFDDFN)'="" S VFDX=$$ID^VFDDFN(DFN,"*","MRN",,1)
+ S:VFDX'="" TIUY("SSN")=VFDX
+ Q:'$G(VLOC)  Q:'$G(VAIN(4))
+ ; from PATPN above
+ ;S TIUY("LOCP")="Pt Loc: "_$S(VAIN(4)]"":$P(VAIN(4),U,2)_"  "_VAIN(5),1:"OUTPATIENT")
+ S VFDX=$$GET1^DIQ(42,+VAIN(4),.015) I VFDX'="" S TIUY("LOCP")=VFDX
  Q

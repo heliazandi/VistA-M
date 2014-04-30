@@ -10,7 +10,7 @@ CKDT I '$D(DT) S %DT="",X="T" D ^%DT S DT=Y
  W !!,"This install of the Consolidated Mail Outpatient Pharmacy",!,"software at your medical center requires that you select the CMOP Host",!,"Facility which will be receiving your Outpatient Pharmacy prescription data.",!!
  S DIR(0)="SX^B:BEDFORD;D:DALLAS;L:LEAVENWORTH;W:WEST LA;M:MURFREESBORO;H:HINES",DIR("A")="Select the CMOP to RECEIVE YOUR DATA " D ^DIR K DIR
  I "BDLWMH"'[$E(X) S XPDABORT=2 Q
- S ^TMP("PSXCMOP",$J)="CMOP-"_$S($E(X)="L":"LEAV",$E(X)="B":"BED",$E(X)="D":"DAL",$E(X)="W":"WLA",$E(X)="M":"MURF",$E(X)="H":"HINES")_".DOMAIN.EXT"
+ S ^TMP("PSXCMOP",$J)="CMOP-"_$S($E(X)="L":"LEAV",$E(X)="B":"BED",$E(X)="D":"DAL",$E(X)="W":"WLA",$E(X)="M":"MURF",$E(X)="H":"HINES")_".MED.VA.GOV"
  D BMES^XPDUTL("You have chosen "_Y(0)_" CMOP to receive your transmissions.")
  I '$O(^DIC(4.2,"B",^TMP("PSXCMOP",$J),0)) D BMES^XPDUTL("There is no Mailmain Domain entry for "_Y(0)_". Please add this domain to   your system and re-run the CMOP installation. Discontinuing installation....") S XPDABORT=2 Q
 CKU S PSX=0 I $D(DUZ),DUZ(0)="@",$D(DT),$D(U),PSXDZ=0 D RXC G QUIT:ERROR D ENV G DONE

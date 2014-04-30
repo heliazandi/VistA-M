@@ -1,5 +1,5 @@
 PRCESOM ;WISC/SJG/ASU - CONTINUATION OF 1358 ADJUST OBLIAGTION PRCEADJ1 ;4/27/94  2:13 PM
-V ;;5.1;IFCAP;**148,153**;Oct 20, 2000;Build 10
+V ;;5.1;IFCAP;**148**;Oct 20, 2000;Build 5
  ;Per VHA Directive 2004-038, this routine should not be modified.
  N TI,PRCFASYS,IOINLOW,IOINHI,IOINORM,DIR,AMT,OLDTT,CS,HASH,DIE,DR,LAUTH,LBAL,TAUTH,TBAL,DLAYGO
  D SCREEN
@@ -171,12 +171,6 @@ Z S (X,Z)=$P(PO(0),U)
  S DA=DA(1358)
  S DR=".02///^S X=PODA;.03///^S X=""A"";.06///^S X=$P(TRNODE(4),U,8);.07///^S X=TI;.08////^S X=DUZ;1.1////^S X=""ADJUSTMENT OBLIGATION"";.15////^S X=TRDA"
  D ^DIE W "...adjustment completed..."
- ;
- ;Generate 1358 transaction message to OLCS. Messages will be generated
- ;upon obligation of a new 1358 or an adjustment. Messages will not be
- ;sent for a rebuild or retransmission to FMS. (PRC*5.1*153)
- I $G(PRCFA("RETRAN"))=0 D OLCSMSG^PRCFDO
- ;
  G OUT
  Q
  ;

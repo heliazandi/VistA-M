@@ -1,5 +1,5 @@
 IBCNEDE1 ;DAOU/DAC - eIV INSURANCE BUFFER EXTRACT ;04-JUN-2002
- ;;2.0;INTEGRATED BILLING;**184,271,416,438,435,467**;21-MAR-94;Build 11
+ ;;2.0;INTEGRATED BILLING;**184,271,416**;21-MAR-94;Build 58
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;
  ;**Program Description**
@@ -18,7 +18,7 @@ EN ; Loop through designated cross-references for updates
  N ORIGINSR,ORGRPSTR,ORGRPNUM,ORGRPNAM,ORGSUBCR
  N MAXCNT,CNT,ISYMBOLM,DATA1,DATA2,ORIG,SETSTR,ISYMBOL,IBCNETOT
  N SIDDATA,SID,SIDACT,BSID,FDA,PASSBUF,SIDCNT,SIDARRAY
- N TQDT,TQIENS,TQOK,STATIEN,PATID,MCAREFLG,INSNAME,PREL
+ N TQDT,TQIENS,TQOK,STATIEN,PATID,MCAREFLG,INSNAME
  ;
  S SETSTR=$$SETTINGS^IBCNEDE7(1) ; Returns buffer extract settings
  I 'SETSTR Q                    ; Quit if extract is not active
@@ -42,9 +42,6 @@ EN ; Loop through designated cross-references for updates
  .. ; Get symbol, if symbol'=" " OR "!" then quit
  .. S ISYMBOL=$$SYMBOL^IBCNBLL(IEN) ; Insurance buffer symbol
  .. I (ISYMBOL'=" ")&(ISYMBOL'="!") Q
- .. ;
- .. ; Don't extract ePharmacy buffer entries - IB*2*435
- .. I +$P($G(^IBA(355.33,IEN,0)),U,17) Q
  .. ;
  .. ; Get the eIV STATUS IEN and quit for response related errors
  .. S STATIEN=+$P($G(^IBA(355.33,IEN,0)),U,12)
@@ -82,17 +79,14 @@ EN ; Loop through designated cross-references for updates
  .. S INSNAME=$P($G(^IBA(355.33,IEN,20)),U)
  .. I INSNAME["MEDICARE",$G(MCAREFLG(DFN)) Q
  .. ;
- .. ; set pat. relationship to "self" if it's blank
- .. D SETREL(IEN)
- .. ;
- .. ; make sure that service type codes are set
- .. I '+$G(^IBA(355.33,IEN,80)) D SETSTC^IBCNERTQ(IEN)
- .. ;
- .. ; If freshness override flag is set, file to TQ and quit
+ .. ; If freshness overide flag is set, file to TQ and quit
  .. I OVRFRESH=1 D  Q
  ... NEW DIE,X,Y,DISYS
  ... S FDA(355.33,IEN_",",.13)="" D FILE^DIE("","FDA") K FDA
  ... S:INSNAME["MEDICARE" MCAREFLG(DFN)=1 D TQ
+ .. ;
+ .. ; If ADDTQ^IBCNEUT5 is 1 set TQ, otherwise stop processing that entry
+ .. I '$$ADDTQ^IBCNEUT5(DFN,PIEN,SRVICEDT,FRESHDAY) Q
  .. ; Check the existing TQ entries to confirm that this buffer IEN is
  .. ; not included
  .. S (TQDT,TQIENS)="",TQOK=1
@@ -103,19 +97,14 @@ EN ; Loop through designated cross-references for updates
  Q
 TQ ; Determine how many entries to create in the TQ file and set entries
  ;
+ S BSID=$P($G(^IBA(355.33,IEN,60)),U,4)     ; Subscriber ID from buffer
+ S PATID=$P($G(^IBA(355.33,IEN,62)),U,1)    ; Patient ID from buffer  IB*2*416
  K SIDARRAY
- S BSID=$P($G(^IBA(355.33,IEN,60)),U,4)   ; Subscriber ID from buffer
- S PATID=$P($G(^IBA(355.33,IEN,62)),U)    ; Patient ID from buffer
- S PREL=$P($G(^IBA(355.33,IEN,60)),U,14)  ; Pat. relationship from buffer
  S SIDDATA=$$SIDCHK^IBCNEDE5(PIEN,DFN,BSID,.SIDARRAY,FRESHDT) ;determine rules to follow
  S SIDACT=$P(SIDDATA,U,1)
- S SIDCNT=$P(SIDDATA,U,2)                 ;Pull cnt of SIDs - shd be 1
+ S SIDCNT=$P(SIDDATA,U,2)                   ;Pull cnt of SIDs - shd be 1
  ;
- I SIDACT=3 D BUFF^IBCNEUT2(IEN,18) Q   ; update buffer w/ bang & quit - no subscriber id
- I PREL'=18 D  Q
- .I PATID="" D BUFF^IBCNEUT2(IEN,23) Q  ; update buffer w/ bang & quit - no patient id
- .D SET(IEN,OVRFRESH,1,"") ; set TQ entry
- .Q
+ I SIDACT=3 D BUFF^IBCNEUT2(IEN,18) Q    ; update buffer w/ bang & quit
  I CNT+SIDCNT>MAXCNT Q
  S SID=""
  F  S SID=$O(SIDARRAY(SID)) Q:SID=""  D:$P(SID,"_")'="" SET(IEN,OVRFRESH,1,$P(SID,"_"))    ; set TQ w/ 'Pass Buffer' flag
@@ -148,9 +137,4 @@ SET(BUFFIEN,OVRFRESH,PASSBUF,SID1) ; Set data and check if set already
  S TQIEN=$$SETTQ^IBCNEDE7(DATA1,DATA2,ORIG,$G(OVRFRESH)) ; File TQ entry
  I TQIEN'="" S CNT=CNT+1 ; If filed increment count
  ;
- Q
- ;
-SETREL(IEN) ; set pat. relationship to "self"
- N DA,DIE,DR,X,Y
- I $P($G(^IBA(355.33,IEN,60)),U,14)="" S DIE="^IBA(355.33,",DA=IEN,DR="60.14///SELF" D ^DIE
  Q

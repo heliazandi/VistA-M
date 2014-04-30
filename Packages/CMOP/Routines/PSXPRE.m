@@ -10,7 +10,7 @@ ASK I ^XMB("NETNAME")?1"CMOP-".E G CKU
  W !!,*7,"This install of the Consolidated Mail Outpatient Pharmacy",!,"software at your medical center requires that you select the CMOP Host",!,"Facility which will be receiving your Outpatient Pharmacy prescription data.",!!
  S DIR(0)="SX^B:BEDFORD;D:DALLAS;L:LEAVENWORTH;W:WEST LA",DIR("A")="Select the CMOP to RECEIVE YOUR DATA " D ^DIR K DIR
  I "BDLW"'[$E(X) K DIFQ Q
- S ^TMP("PSXCMOP",$J)="CMOP-"_$S($E(X)="L":"LEAV",$E(X)="B":"BED",$E(X)="D":"DAL",$E(X)="W":"WLA")_".DOMAIN.EXT"
+ S ^TMP("PSXCMOP",$J)="CMOP-"_$S($E(X)="L":"LEAV",$E(X)="B":"BED",$E(X)="D":"DAL",$E(X)="W":"WLA")_".MED.VA.GOV"
 CKU S PSX=0 I $D(DUZ),DUZ(0)="@",$D(DT),$D(U),PSXDZ=0 D RXC G QUIT:ERROR D ENV G DONE
 QUIT ;
  K DIFQ I $G(ERROR)=1 K PSX,PSXDZ,ERROR Q

@@ -1,5 +1,5 @@
 LRWRKIN1 ;SLC/DCM/CJS-LRWRKINC, CONT ;2/22/87  11:39 AM
- ;;5.2;LAB SERVICE;**153,201,221**;Sep 27, 1994
+ ;;5.2;LAB SERVICE;**153,201,221**;Sep 27, 1994;Build 25
 LST1 ;from LRWRKINC
  S (LRDLC,LRDTO)=""
  S LRDX=$G(^LRO(68,LRAA,1,LRAD,1,LRAN,0))
@@ -30,9 +30,18 @@ X ;from LRWRKINC
  . . . . S J=J+1
  . . . . S W=^TMP($J,LRTSTN,LRUR,LRACCN,LRAN),LRST=$P(W,U,1),SSN=$P(W,U,2),PNM=$P(W,U,3),LRLLOC=$P(W,U,4),LRCOLL=$P(W,U,5),LRMAN=$P(W,U,6),LRACC=$P(W,U,7)
  . . . . W !,$E($S(LRSORTBY=1:$P(LRTSTN,"^",2),1:LRTSTN),1,20),?23,$E(LRU,1,9),?34,LRACC,?47," ",LRCOLL,?65,$E(LRLLOC,1,15)
- . . . . S LRCL=$S(IOM<120:5,1:82) W:IOM<120 ! I IOM<120!('LREXD) W ?LRCL,SSN
- . . . . S LRCL=$S(IOM<120:20,LREXD:82,1:97) W ?LRCL,$E(PNM,1,19)
- . . . . S LRCL=$S(IOM<120:40,LREXD:102,1:117) W ?LRCL,$S('LREXD&(IOM'<120):$E(LRST,1,15),1:$E(LRST,1,30))
+ . . . . ;DSS/RAF - BEGIN MOD - adding MRN and DOB
+ . . . . I $G(VA("MRN"))]"" D
+ . . . . . S LRCL=$S(IOM<120:5,1:82) W:IOM<120 ! I IOM<120!('LREXD) W ?LRCL,$E(PNM,1,35),?48,$P($G(VADM(3)),U,2)
+ . . . . . W !,?LRCL,SSN,?48,$G(LRST)
+ . . . . E  D
+ . . . . . S LRCL=$S(IOM<120:5,1:82) W:IOM<120 ! I IOM<120!('LREXD) W ?LRCL,SSN
+ . . . . . S LRCL=$S(IOM<120:20,LREXD:82,1:97) W ?LRCL,$E(PNM,1,19)
+ . . . . . S LRCL=$S(IOM<120:40,LREXD:102,1:117) W ?LRCL,$S('LREXD&(IOM'<120):$E(LRST,1,15),1:$E(LRST,1,30))
+ . . . . ;S LRCL=$S(IOM<120:5,1:82) W:IOM<120 ! I IOM<120!('LREXD) W ?LRCL,SSN
+ . . . . ;S LRCL=$S(IOM<120:20,LREXD:82,1:97) W ?LRCL,$E(PNM,1,19)
+ . . . . ;S LRCL=$S(IOM<120:40,LREXD:102,1:117) W ?LRCL,$S('LREXD&(IOM'<120):$E(LRST,1,15),1:$E(LRST,1,30))
+ . . . . ;DSS/RAF - END MOD
  . . . . I LREXD D
  . . . . . N A
  . . . . . S A=$G(^TMP($J,LRTSTN,LRUR,LRACCN,LRAN,.3))
@@ -50,14 +59,30 @@ HED ; Print header
  S LRINDEX=0
  F  S LRINDEX=$O(LRNAME(LRINDEX)) Q:'LRINDEX  W !,LRNAME(LRINDEX)
  W !!,"Test",?23,"Urgency",?34,"Accession",?48,"Date/time",?65,"Location"
- S LRCL=$S(IOM<120:5,1:82)
- W:IOM<120 !
- I IOM<120!('LREXD) W ?LRCL,"SSN"
- S LRCL=$S(IOM<120:20,LREXD:82,1:97) W ?LRCL,"Patient"
- S LRCL=$S(IOM<120:40,LREXD:102,1:117) W ?LRCL,"Status"
- I $G(LREXD) W !,?23,"UID",?48,"Sending Site",?65,"Sender's UID"
- I LREXD,IOM'<120 W ?82,"SSN"
- I LREXD W:IOM<120 ! S LRCL=$S(IOM<120:20,1:102) W ?LRCL,"Shipping Manifest"
+ ;DSS/RAF - BEGIN MOD - modify header for MRN and DOB
+ I $T(VX^VFDI0000)]"",$$VX^VFDI0000["VX" D
+ . W !?5,"Patient",?48,"DOB"
+ . W !?5,"MRN",?48,"Status"
+ . I $G(LREXD) W !,?23,"UID",?48,"Sending Site",?65,"Sender's UID"
+ . I LREXD W:IOM<120 ! S LRCL=$S(IOM<120:20,1:102) W ?LRCL,"Shipping Manifest"
+ E  D
+ . S LRCL=$S(IOM<120:5,1:82)
+ . W:IOM<120 !
+ . I IOM<120!('LREXD) W ?LRCL,"SSN"
+ . S LRCL=$S(IOM<120:20,LREXD:82,1:97) W ?LRCL,"Patient"
+ . S LRCL=$S(IOM<120:40,LREXD:102,1:117) W ?LRCL,"Status"
+ . I $G(LREXD) W !,?23,"UID",?48,"Sending Site",?65,"Sender's UID"
+ . I LREXD,IOM'<120 W ?82,"SSN"
+ . I LREXD W:IOM<120 ! S LRCL=$S(IOM<120:20,1:102) W ?LRCL,"Shipping Manifest" 
+ . S LRCL=$S(IOM<120:5,1:82)
+ ;W:IOM<120 !
+ ;I IOM<120!('LREXD) W ?LRCL,"SSN"
+ ;S LRCL=$S(IOM<120:20,LREXD:82,1:97) W ?LRCL,"Patient"
+ ;S LRCL=$S(IOM<120:40,LREXD:102,1:117) W ?LRCL,"Status"
+ ;I $G(LREXD) W !,?23,"UID",?48,"Sending Site",?65,"Sender's UID"
+ ;I LREXD,IOM'<120 W ?82,"SSN"
+ ;I LREXD W:IOM<120 ! S LRCL=$S(IOM<120:20,1:102) W ?LRCL,"Shipping Manifest"
+ ;DSS/RAF - END MOD
  D DASH^LRX
  W !
  Q

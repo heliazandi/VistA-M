@@ -1,5 +1,5 @@
-IBNCPDP6 ;OAK/ELZ - TRICARE NCPDP TOOLS; 02-AUG-96
- ;;2.0;INTEGRATED BILLING;**383,384,411,452**;21-MAR-94;Build 26
+IBNCPDP6 ;OAK/ELZ - TRICARE NCPDP TOOLS; 02-AUG-96 ;10/18/07  13:40
+ ;;2.0;INTEGRATED BILLING;**383,384,411**;21-MAR-94;Build 29
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;
 START(IBKEY,IBELIG,IBRT) ; initial storage done during
@@ -9,9 +9,8 @@ START(IBKEY,IBELIG,IBRT) ; initial storage done during
  ;                         2 = Pointer to the refill in file #52.1, or
  ;                             0 for the original fill
  ;            IBELIG --  single character indicating elig indicator
- ;                         V = VETERAN
- ;                         T = TRICARE
- ;                         C = CHAMPVA
+ ;                         V = Veteran
+ ;                         T = Tricare
  ;            IBRT   --  Rate type pointer to be used for the bill later
  ;
  N IBCHTRN,DO,DIC,X,Y,DIE,DA,DR
@@ -39,7 +38,7 @@ BILL(IBKEY,IBCHG,IBRT) ; Create the TRICARE Rx copay charge.
  I 'IBCHTRN G BILLQ
  S IBZ=$G(^IBCNR(366.15,IBCHTRN,0))
  ;
- ; - TRICARE?
+ ; - Tricare?
  I $P(IBZ,"^",2)'="T",'$G(IBRT) G BILLQ
  I $G(IBRT),$P($G(^DGCR(399.3,IBRT,0)),"^")'="TRICARE" G BILLQ
  ;
@@ -116,7 +115,7 @@ CANCQ ;
 RT(IBKEY) ; returns rate type previously determined
  Q $P($G(^IBCNR(366.15,+$O(^IBCNR(366.15,"B",IBKEY,0)),0)),"^",3)
  ;
-TRICARE(IBKEY) ; returns if the Key is RT TRICARE
+TRICARE(IBKEY) ; returns if the Key is RT Tricare
  N IBRT
  S IBRT=+$$RT(IBKEY)
  Q $S($P($G(^DGCR(399.3,IBRT,0)),"^")["TRICARE":1,1:0)

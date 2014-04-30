@@ -1,5 +1,5 @@
 ORQQVI ; slc/STAFF - Functions which return patient vital and I/O data ;10/26/06  11:44
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**10,198,215,250,260,285**;Dec 17, 1997;Build 5
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**10,198,215,250,260,285**;Dec 17, 1997;Build 7
 VITALS(ORY,DFN,ORSDT,OREDT) ; return patient's vital measurements taken between start date/time and end date/time
  ;ORY: return variable, results are returned in the format:
  ;     vital measurement ien^vital type^date/time taken^rate
@@ -10,7 +10,11 @@ VITALS(ORY,DFN,ORSDT,OREDT) ; return patient's vital measurements taken between 
  ;DBIA for ^GMVPXRM is 3647
  ;DBIA for ^GMRVUT0 is 1446
  K ^UTILITY($J,"GMRVD")
- S GMRVSTR="BP;HT;WT;T;R;P;PN" ;dee 2/12/99 added PN
+ ;DSS/LM - BEGIN MODS - Accommodate pediatric vitals
+ ; original line is now argument of line starting with 'E  '
+ I $$VFD S GMRVSTR="BP;HT;WT;T;R;P;PN;EDD;LEN;LMP"
+ E  S GMRVSTR="BP;HT;WT;T;R;P;PN" ;dee 2/12/99 added PN
+ ;DSS/LM - END MODS
  S GMRVSTR(0)=ORSDT_"^"_OREDT_"^"_"^"
  D EN1^GMRVUT0
  N ORT,ORD,ORI,I
@@ -87,6 +91,12 @@ FASTVIT(ORY,DFN,F1,F2) ; return patient's most recent vital measurements
  D VITAL("CENTRAL VENOUS PRESSURE","CVP",DFN,.ORY,.CNT,DT1,DT2)
  D VITAL("CIRCUMFERENCE/GIRTH","CG",DFN,.ORY,.CNT,DT1,DT2)
  D VITAL("BODY MASS INDEX","BMI",DFN,.ORY,.CNT,DT1,DT2)
+ ;DSS/RAC - BEGIN MOD - Additional vitals returned
+ Q:'$$VFD
+ D VITAL("LAST MENSTRUAL PERIOD","LMP",DFN,.ORY,.CNT,DT1,DT2)
+ D VITAL("ESTIMATED DELIVERY DATE","EDD",DFN,.ORY,.CNT,DT1,DT2)
+ D VITAL("LENGTH","LEN",DFN,.ORY,.CNT,DT1,DT2)
+ ;DSS/RAC - END MOD
  Q
  ;
 VITAL(VITAL,ABBREV,DFN,ORY,CNT,F1,F2) ;
@@ -152,5 +162,24 @@ VITAL(VITAL,ABBREV,DFN,ORY,CNT,F1,F2) ;
  ...I MVAL'=+MVAL,+MVAL=0 S ORY(CNT)=ORY(CNT)_"^",$P(ORY(CNT),U,7)="" Q
  ...S MVAL=$J((MVAL*2.54),3,1)
  ...S ORY(CNT)=ORY(CNT)_" in^("_MVAL_" cm)"
+ .. ;DSS/SGM - BEGIN MODS
+ .. I $$VFD D VFD1
+ .. ;DSS/SGM - END MODS
  ..S $P(ORY(CNT),U,7)=QUALS(CNT)
+ Q
+ ;DSS/SGM - BEGIN MODS - accommodate pediatric vitals
+VFD() Q $S($T(VX^VFDI0000)="":0,1:$$VX^VFDI0000["VX")
+ ;
+VFD1 ;
+ I $P(ORY(CNT),"^",2)="EDD" D:+VALUE  ; Est. Delivery Date
+ .S ORY(CNT)=ORY(CNT)_"^"_$$FMTE^XLFDT(VALUE,"5Z")
+ I $P(ORY(CNT),"^",2)="LMP" D:+VALUE  ; Last Menstral Period
+ .S ORY(CNT)=ORY(CNT)_"^"_$$FMTE^XLFDT(VALUE,"5Z")
+ I $P(ORY(CNT),"^",2)="LEN" D:+VALUE  ; Length
+ .S ORY(CNT)=ORY(CNT)_"^"_VALUE_$S($E(VALUE):" in",1:"")
+ .S MVAL=+VALUE
+ .Q:'MVAL
+ .S MVAL=$J((MVAL*2.54),3,1)
+ .S ORY(CNT)=ORY(CNT)_"^("_MVAL_" cm)"
+ .Q
  Q

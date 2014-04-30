@@ -1,18 +1,15 @@
-PSJBCMA ;BIR/MV-RETURN INPATIENT ACTIVE MEDS (CONDENSED) ;4/10/12 10:48am
- ;;5.0;INPATIENT MEDICATIONS ;**32,41,46,57,63,66,56,69,58,81,91,104,111,112,186,159,173,190,113,225,253,267**;16 DEC 97;Build 158
+PSJBCMA ;BIR/MV-RETURN INPATIENT ACTIVE MEDS (CONDENSED) ;16 Mar 99 / 10:13 AM
+ ;;5.0; INPATIENT MEDICATIONS ;**32,41,46,57,63,66,56,69,58,81,91,104,111,112,186,159,173,190,113**;16 DEC 97;Build 63
  ;
  ; Reference to ^PS(50.7 is supported by DBIA 2180.
  ; Reference to ^PS(51 is supported by DBIA 2176.
- ; Reference to ^PS(51.1 is supported by DBIA 2177.
+ ; Reference to ^PS(51.1 is supported by DIBA 2177.
  ; Reference to ^PS(51.2 is supported by DBIA 2178.
  ; Reference to ^PS(52.6 is supported by DBIA 1231.
  ; Reference to ^PS(52.7 is supported by DBIA 2173.
  ; Reference to ^PS(55 is supported by DBIA 2191.
  ; Reference to ^PSDRUG is supported by DBIA 2192.
  ; Usage of this routine by BCMA is supported by DBIA 2828.
- ;
- ;*267 - add new piece of info to return TMP gloabl. Need the Med 
- ;       route IEN per each order.
  ;
 EN(DFN,BDT,OTDATE)         ; return condensed list of inpatient meds
  NEW CNT,DN,F,FON,ON,PST,WBDT,X,X1,X2,Y,%
@@ -52,25 +49,22 @@ ORDER ;Loop thru orders.
  .. S X=$P($G(^PS(55,DFN,"IV",ON,0)),U,9)
  .. I X]"",$$ONE(DFN,ON_"V",X,$P(X,"^",2),$P(X,"^",3))="O" D
  ... S FON=ON_"V" D:'$D(PSJON(FON)) IVVAR
- K PSJON,PSJBCID
+ K PSJON
  Q
 UDVAR ;Set ^TMP for Unit dose & Pending orders
- N CLINIC
  D UDPEND Q:'$$CLINICS($G(CLINIC)) 
  D TMP
  ;Setup Dispense drug for ^TMP
  S CNT=0 D NOW^%DTC
  F X=0:0 S X=$O(@(F_ON_",1,"_X_")")) Q:'X  D
  . S PSJDD=@(F_ON_",1,"_X_",0)") I $P(PSJDD,"^",3)]"",$P(PSJDD,"^",3)'>% Q
- .;*225 Don't allow 0
- . I +$P(PSJDD,"^",2)=0 S $P(PSJDD,"^",2)=1
  . S CNT=CNT+1
  . S ^TMP("PSJ",$J,PSJINX,700,CNT,0)=+PSJDD_U_$P($G(^PSDRUG(+PSJDD,0)),U)_U_$S((FON["U")&($P(PSJDD,U,2)=""):1,(FON["U")&($E($P(PSJDD,U,2))="."):"0"_$P(PSJDD,U,2),1:$P(PSJDD,U,2))_U_$P(PSJDD,U,3)
  S:CNT ^TMP("PSJ",$J,PSJINX,700,0)=CNT
  K PSJ,PSJDD
  Q
 IVVAR ;Set variables for IV and pending orders
- NEW ND,X,Y,CLINIC
+ NEW ND,X,Y
  I FON["P" D UDPEND Q:'$$CLINICS(CLINIC)  S PSJ("INFRATE")=$P($G(^PS(53.1,ON,8)),U,5)
  I FON["V" D  Q:'$$CLINICS(CLINIC)
  . S X=$G(^PS(55,DFN,"IV",ON,0)),CLINIC=$G(^("DSS")) Q:'$$CLINICS(CLINIC)
@@ -95,7 +89,7 @@ IVVAR ;Set variables for IV and pending orders
  . N SCHD S SCHD=PSJ("SCHD")
  . S PSJ("STC")=$$ONE(DFN,ON_"V",SCHD,PSJ("STARTDT"),PSJ("STOPDT"))
  . I PSJ("STC")=""!(PSJ("STC")="C") S PSJ("STC")=$S(SCHD["PRN":"P",1:"C")
- . I PSJ("STC")="C" S PSJ("STC")=$S($$ONCALL(SCHD):"OC",1:"C")
+ . I PSJ("STC")="C" S PSJ("STC")=$S(SCHD["ON CALL":"OC",SCHD["ON-CALL":"OC",SCHD["ONCALL":"OC",1:"C")
  D TMP
  S CNT=0
  F X=0:0 S X=$O(@(F_ON_",""AD"","_X_")")) Q:'X  D
@@ -141,8 +135,8 @@ UDPEND ;
  S PSJ("SIOPI")=$S($P($G(@(F_ON_",6)")),"^",2)&($P($G(@(F_ON_",6)")),"^")'=""):"!",1:"")_$$ENSET($P($G(^(6)),"^"))
  D SIOPI
  S PSJ("STC")=PSJ("ST")
- I PSJ("ST")="R"!(PSJ("ST")="C") S PSJ("STC")=$S(PSJ("SCHD")["PRN":"P",$$ONCALL(PSJ("SCHD")):"OC",$$ONE(DFN,FON,PSJ("SCHD"))="O":"O",1:"C")
- Q
+ I PSJ("ST")="R"!(PSJ("ST")="C") S PSJ("STC")=$S(PSJ("SCHD")["PRN":"P","^ONCALL^ON-CALL^ON CALL^"[("^"_PSJ("SCHD")_"^"):"OC",$$ONE(DFN,FON,PSJ("SCHD"))="O":"O",1:"C")
+ Q 
 TMP ;Setup ^TMP that have common fields between IV and U/D
  N A
  S PSJINX=PSJINX+1
@@ -152,7 +146,7 @@ TMP ;Setup ^TMP that have common fields between IV and U/D
  S A=$G(^PS(51.2,+PSJ("MR"),0)),PSJ("MRABB")=$P(A,U,3),PSJ("MRNM")=$P(A,U)
  S ^TMP("PSJ",$J,PSJINX,0)=DFN_U_+ON_U_FON_U_PSJ("PREV")_U_PSJ("FOLLOW")_U_$G(PSJ("IVTYPE"))_U_$G(PSJ("INSYR"))_U_$G(PSJ("CHEMO"))_U_PSJ("CPRS")_U_$G(PSJ("RFO"))
  S ^TMP("PSJ",$J,PSJINX,1)=PSJ("MRABB")_U_PSJ("STC")_U_$G(PSJ("SCHD"))_U_PSJ("STARTDT")_U_PSJ("STOPDT")_U_PSJ("ADM")_U_PSJ("STATUS")_U_$G(PSJ("NGIVEN"))_U_$G(PSJ("ST"))_U_$G(PSJ("AUTO"))
- S ^TMP("PSJ",$J,PSJINX,1,0)=$P(A,U,8)_U_PSJ("MRNM")_U_$P(A,U,9)_U_+PSJ("MR")   ;*267 append file 51.2 ien
+ S ^TMP("PSJ",$J,PSJINX,1,0)=$P(A,U,8)_U_PSJ("MRNM")_U_$P(A,U,9)
  S ^TMP("PSJ",$J,PSJINX,2)=PSJ("DO")_U_$G(PSJ("INFRATE"))_U_$G(PSJ("SM"))_U_$G(PSJ("HSM"))
  S ^TMP("PSJ",$J,PSJINX,3)=PSJ("OI")_U_PSJ("OINAME")_U_PSJ("OIDF")
  S ^TMP("PSJ",$J,PSJINX,4)=PSJ("SIOPI")
@@ -209,14 +203,3 @@ DAY(SCH) ;determine if this is a 'day of the week' schedule
  . S X=0 F J=1:1:7 S DAY=$P(DAYS,",",J) D  Q:X=1
  .. I D=$E(DAY,1,$L(D)) S X=1
  Q X
- ;
-ONCALL(SCHD) ; Check if a schedule is type On Call (all "APPSJ" schedules with a given name must have the same schedule type)
- N NXT,SCHARR,OCCHK
- S OCCHK=0
- Q:$G(SCHD)="" OCCHK
- Q:'$D(^PS(51.1,"APPSJ",SCHD)) OCCHK
- S NXT=0 F  S NXT=$O(^PS(51.1,"APPSJ",SCHD,NXT)) Q:'NXT  S TYP=$P($G(^PS(51.1,+NXT,0)),"^",5) S:TYP]"" SCHARR(TYP)=""
- I '$D(SCHARR("OC")) S OCCHK=0 Q OCCHK
- I $O(SCHARR("OC"))]""!($O(SCHARR("OC"),-1)]"") S OCCHK=0 Q OCCHK
- I $D(SCHARR("OC")) S OCCHK=1
- Q OCCHK

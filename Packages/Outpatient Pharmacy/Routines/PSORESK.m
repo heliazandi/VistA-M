@@ -1,5 +1,5 @@
-PSORESK ;BIR/SAB-return to stock ; 8/12/11 12:34pm
- ;;7.0;OUTPATIENT PHARMACY;**15,9,27,40,47,55,85,130,185,184,196,148,201,259,261,368,332,374**;DEC 1997;Build 13
+PSORESK ;BIR/SAB-return to stock ;10/24/06 4:22pm
+ ;;7.0;OUTPATIENT PHARMACY;**15,9,27,40,47,55,85,130,185,184,196,148,201,259,261**;DEC 1997;Build 9
  ;
  ;REF/IA
  ;^PSDRUG/221
@@ -7,8 +7,6 @@ PSORESK ;BIR/SAB-return to stock ; 8/12/11 12:34pm
  ;L, UL, PSOL, and PSOUL^PSSLOCK/2789
  ;^PS(55/2228
  ;PSDRTS^PSDOPT0/3064
- ;
- ;External reference ^XTMP("PSA" supported by DBIA 1036
  ;
  ;*259 - if refill was Not deleted, then stop RTS from continuing
  ;
@@ -42,13 +40,11 @@ BC1 ;
  S DIR(0)="YO" D ^DIR K DIR I Y=0!($D(DIRUT)) D UL G BC
  ;ORI
  D  D UL,EX S (RESK,PSOPCECT)=1 G BC
- .;PSO*7*374 - Prompt user about copay before updating the vault
- .I +$G(^PSRX(RXP,"IB"))!($P($G(^PSRX(RXP,"PFS")),"^",2)) N PSOPFS S:$P($G(^PSRX(RXP,"PFS")),"^",2) PSOPFS="1^"_$P(^PSRX(RXP,"PFS"),"^",1,2) D CP^PSORESK1 Q:'$G(COPAYFLG)
- .K PSOINVTX,PSODEFLG I $G(PSOWHERE),$G(^PSDRUG(QDRUG,660.1)) D INVT^PSORXDL I $G(PSODEFLG) W !!?5,"Prescription Not Returned to Stock!",! Q
  .;VMP OIFO BAY PINES;PSO*7.0*196;KILL PSDS
  .I $T(PSDRTS^PSDOPT0)]"" D PSDRTS^PSDOPT0(RXP,"O^"_0,$P(^PSRX(RXP,2),"^",9),$P(^PSRX(RXP,0),"^",7)) D MSG K PSDS
  .Q:$G(RETSK)
- .;
+ .K PSOINVTX,PSODEFLG I $G(PSOWHERE),$G(^PSDRUG(QDRUG,660.1)) D INVT^PSORXDL I $G(PSODEFLG) W !!?5,"Prescription Not Returned to Stock!",! Q
+ .I +$G(^PSRX(RXP,"IB"))!($P($G(^PSRX(RXP,"PFS")),"^",2)) N PSOPFS S:$P($G(^PSRX(RXP,"PFS")),"^",2) PSOPFS="1^"_$P(^PSRX(RXP,"PFS"),"^",1,2) D CP^PSORESK1 Q:'$G(COPAYFLG)
  .;Ask comments until answered, do not allow exiting.
  .F  D  I '$D(DIRUT) Q
  ..K DIR,DUOUT,DTOUT,DIRUT,X,Y
@@ -64,11 +60,7 @@ BC1 ;
  .D NOW^%DTC S DA=RXP,DA=RXP,DIE="^PSRX(",DR="31///@;32.1///"_% D ^DIE K DIE,DR,DA Q:$D(Y)
  .D ACT^PSORESK1 S DA=$O(^PS(52.5,"B",RXP,0)) I DA S DIK="^PS(52.5," D ^DIK
  .D REVERSE^PSOBPSU1(RXP,0,"RS",4,,1)
- .D EN^PSOHDR("PRES",RXP)  ;*332
- .D EN^PSOHLSN1(RXP,"ZD")
- .S:'$P($G(^XTMP("PSA",0)),U,2) $P(^(0),U,2)=DT  ;PSO*7*368
- .S ^XTMP("PSA",PSOSITE,+QDRUG,+DT)=$G(^XTMP("PSA",PSOSITE,+QDRUG,+DT))-QTY  ;PSO*7*368
- .W !,"Rx # "_$P(^PSRX(RXP,0),"^")_" Returned to Stock.",!
+ .D EN^PSOHLSN1(RXP,"ZD") W !,"Rx # "_$P(^PSRX(RXP,0),"^")_" Returned to Stock.",!
  .Q
  ;
 REF I $O(^PSRX(RXP,1,0)),$O(^PSRX(RXP,"P",0)) D  I $D(DTOUT)!($D(DUOUT)) D UL G BC
@@ -85,15 +77,13 @@ PAR S:$G(XTYPE)']"" XTYPE=1 S TYPE=0 F YY=0:0 S YY=$O(^PSRX(RXP,XTYPE,YY)) Q:'YY
  S DIR("A",2)="for "_$P(^DPT($P(^PSRX(RXP,0),"^",2),0),"^")_" ("_$E($P(^(0),"^",9),6,9)_")",DIR("A")="Drug: "_$P(^PSDRUG($P(^PSRX(RXP,0),"^",6),0),"^")
  I $G(PSOWHERE) S DIR("A",3)=" ",DIR("A",4)="   *** This prescription was filled at the CMOP *** ",DIR("A",5)=" "
  D ^DIR K DIR I 'Y!($D(DUOUT))!($D(DTOUT)) D UL G BC
- ;
- ;PSO*7*374 - Prompt user about copay before updating the vault
- I XTYPE I +$G(^PSRX(RXP,"IB"))!($P($G(^PSRX(RXP,1,TYPE,"PFS")),"^",2)) N PSOPFS S:$P($G(^PSRX(RXP,1,TYPE,"PFS")),"^",2) PSOPFS="1^"_$P(^PSRX(RXP,1,TYPE,"PFS"),"^",1,2) D CP^PSORESK1 I '$G(COPAYFLG) D UL G BC
- K PSOINVTX,PSODEFLG I $G(PSOWHERE),$G(^PSDRUG(QDRUG,660.1)) D INVT^PSORXDL I $G(PSODEFLG) W !!?5,"Prescription Not Returned to Stock!",! D UL G BC
  I $T(PSDRTS^PSDOPT0)]"" D
  .;VMP OIFO BAY PINES;PSO*7.0*196;KILL PSDS
  .I XTYPE D PSDRTS^PSDOPT0(RXP,"R^"_TYPE,$P(^PSRX(RXP,1,TYPE,0),"^",9),$P(^(0),"^",4)) D MSG K PSDS Q
  .D PSDRTS^PSDOPT0(RXP,"P^"_TYPE,$P(^PSRX(RXP,"P",TYPE,0),"^",9),$P(^(0),"^",4)) D MSG K PSDS
  I $G(RETSK) D UL,EX G BC
+ K PSOINVTX,PSODEFLG I $G(PSOWHERE),$G(^PSDRUG(QDRUG,660.1)) D INVT^PSORXDL I $G(PSODEFLG) W !!?5,"Prescription Not Returned to Stock!",! D UL G BC
+ I XTYPE I +$G(^PSRX(RXP,"IB"))!($P($G(^PSRX(RXP,1,TYPE,"PFS")),"^",2)) N PSOPFS S:$P($G(^PSRX(RXP,1,TYPE,"PFS")),"^",2) PSOPFS="1^"_$P(^PSRX(RXP,1,TYPE,"PFS"),"^",1,2) D CP^PSORESK1 I '$G(COPAYFLG) D UL G BC
  ;Ask comments until answered, do not allow exiting.
  F  D  I '$D(DIRUT) Q
  .K DIR,DIRUT,DTOUT,DUOUT,X,Y
@@ -125,10 +115,8 @@ PAR S:$G(XTYPE)']"" XTYPE=1 S TYPE=0 F YY=0:0 S YY=$O(^PSRX(RXP,XTYPE,YY)) Q:'YY
  ;
  ;fall thru and perform RTS for refills/partials
  D:XTYPE'="P" NPF D ACT^PSORESK1
- S:'$P($G(^XTMP("PSA",0)),U,2) $P(^(0),U,2)=DT  ;PSO*7*368
- S ^XTMP("PSA",PSOSITE,+QDRUG,+DT)=$G(^XTMP("PSA",PSOSITE,+QDRUG,+DT))-QTY  ;PSO*7*368
  W !!,"Rx # "_$P(^PSRX(RXP,0),"^")_$S(XTYPE:" REFILL",1:" PARTIAL")_" #"_TYPE_" Returned to Stock" S DA=$O(^PS(52.5,"B",RXP,0)) I DA S DIK="^PS(52.5," D ^DIK
- K PSODISPP S:'XTYPE PSODISPP=1 D EN^PSOHDR("PRES",RXP) D EN^PSOHLSN1(RXP,"ZD") K PSODISPP  ;*332
+ K PSODISPP S:'XTYPE PSODISPP=1 D:XTYPE EN^PSOHDR("PRES",RXP) D EN^PSOHLSN1(RXP,"ZD") K PSODISPP
  D UL G BC
 EX ;
  K DA,DR,DIE,X,X1,X2,Y,RXP,REC,DIR,XDT,REC,RDUZ,DIRUT,PSOCPN,PSOCPRX,YY,QDRUG,QTY,TYPE,XTYPE,I,%,DIRUT,COPAYFLG,PSOINVTX,RESK,PSOPCECT,COM,PSOWHERE,PSOLOCRL,PSODEFLG,PSORRDFN,PSOMSG,PSOPLCK,PSDCS,PSDRS,RETSK

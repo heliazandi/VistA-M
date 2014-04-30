@@ -25,7 +25,7 @@ KIDS ; Entry point for post install run.
  ;
  N INSTALL,LRFIX,LRNUM,LRSITE,LRSUPFLG,XMY
  ;
- I $G(^XMB("NETNAME"))["domain.ext",$$PROD^XUPROD() S XMY("G.LAB DEV IRMFO@FORUM.domain.ext")="",XMY("G.CSCLIN4@FORUM.domain.ext")=""
+ I $G(^XMB("NETNAME"))["DOMAIN.EXT",$$PROD^XUPROD() S XMY("G.LAB DEV IRMFO@DOMAIN.EXT")="",XMY("G.CSCLIN4@DOMAIN.EXT")=""
  S XMY(DUZ)="",XMY("G.LMI")="",INSTALL=1
  D INIT
  ;S LRFIX=1   ; [ccr-8167] - LRFIX is set to 0 in INIT subroutine.
@@ -42,7 +42,7 @@ LRNIGHT ; Entry point for ^LRNIGHT run.
  S INSTALL=1
  D INIT,CHKDD,CHK63
  S (XMY(DUZ),XMY("G.LMI"))=""
- I $G(^XMB("NETNAME"))["domain.ext",$$PROD^XUPROD() S XMY("G.LAB DEV IRMFO@FORUM.domain.ext")="",XMY("G.CSCLIN4@FORUM.domain.ext")=""
+ I $G(^XMB("NETNAME"))["DOMAIN.EXT",$$PROD^XUPROD() S XMY("G.LAB DEV IRMFO@DOMAIN.EXT")="",XMY("G.CSCLIN4@DOMAIN.EXT")=""
  I $O(^TMP("LR",$J,"DD63.04",5))]"" D SENDMM
  ;
  K ^TMP("LR",$J)

@@ -23,11 +23,17 @@ EN ;ENTRY POINT FOR HEALTH SUMMARY
 HEADER N ATEST,ADATE,AVALUE,ATEXT
  D NVADT^PSOQCF04(DFN,.ATEST,.ADATE,.AVALUE,.ATEXT)
  D CKP^GMTSUP Q:$D(GMTSQIT)
- W $$REPEAT^XLFSTR("-",IOM),!,"Alphabetized list of outpatient Rx's, inpatient orders, remote and Non-VA meds"
+ ;DSS/SMP - BEGIN MODS - Deveteranize
+ N VFD S VFD=$G(^%ZOSF("ZVX"))["VX"
+ I VFD W $$REPEAT^XLFSTR("-",IOM),!,"Alphabetized list of outpatient Rx's, inpatient orders, remote and Meds/OTC",!,"from Elsewhere"
+ E  W $$REPEAT^XLFSTR("-",IOM),!,"Alphabetized list of outpatient Rx's, inpatient orders, remote and Non-VA meds"
  D CKP^GMTSUP Q:$D(GMTSQIT)
- W !,"Legend: OPT = VA issued outpatient prescription, INP = VA issued inpatient order"
+ I VFD W !,"Legend: OPT = outpatient prescription, INP = inpatient order"
+ E  W !,"Legend: OPT = VA issued outpatient prescription, INP = VA issued inpatient order"
  D CKP^GMTSUP Q:$D(GMTSQIT)
- W !,"Non-VA Meds Last Documented On: "
+ I VFD W !,"Meds/OTC from Elsewhere Last Documented On: "
+ E  W !,"Non-VA Meds Last Documented On: "
+ ;DSS/SMP - END MODS
  W $S(+ADATE:$$FMTE^XLFDT(ADATE,"D"),1:"** Data not found **")
  D CKP^GMTSUP Q:$D(GMTSQIT)
  W !,$$REPEAT^XLFSTR("-",IOM)
@@ -42,7 +48,10 @@ OUTPUT N DRUGNM,ORDER,PSNUM
  ... S PACK=$P(PSNUM,";",2),ORDNUM=$P(PSNUM,";")
  ... I PACK="I" D INPDISP
  ... I PACK="O" D OPTDISP
-  ... I PACK="R" D RDIDISP
+ ... I PACK="R" D RDIDISP
+ ;DSS/MKN - BEGIN MODS - Add Text Only and NewCrop Med orders
+ I $G(^%ZOSF("ZVX"))["VX" D VFDNC
+ ;DSS/MKN - END MODS
  Q
 FOOTER D CKP^GMTSUP Q:$D(GMTSQIT)
  N BLINE
@@ -142,9 +151,54 @@ RDIDISP D CKP^GMTSUP Q:$D(GMTSQIT)
  W ! D CKP^GMTSUP Q:$D(GMTSQIT)
  Q
 NVADISP D CKP^GMTSUP Q:$D(GMTSQIT)
- W !,"Non VA "_DRUGNM D CKP^GMTSUP Q:$D(GMTSQIT)
+ ;DSS/SMP - Begin Mods
+ I $G(^%ZOSF("ZVX"))["VX" D WRAPTEXT^PSOQUTIL("Meds/OTC from Elsewhere "_DRUGNM,73) D CKP^GMTSUP Q:$D(GMTSQIT)
+ I $G(^%ZOSF("ZVX"))'["VX" W !,"Non VA "_DRUGNM D CKP^GMTSUP Q:$D(GMTSQIT)
+ ;DSSM/SMP - End Mods
  S LASTACT=$O(^OR(100,ORDER,8,":"),-1)
  S OTLINE=1 F  S OTLINE=$O(^OR(100,ORDER,8,LASTACT,.1,OTLINE)) Q:'+OTLINE  D  ;
  .D WRAPTEXT^PSOQUTIL($G(^OR(100,ORDER,8,LASTACT,.1,OTLINE,0)),65,5) D CKP^GMTSUP Q:$D(GMTSQIT)
  W ! D CKP^GMTSUP Q:$D(GMTSQIT)
  Q
+ ;DSS/MKN - BEGIN MODS - Print Text Only and NewCrop meds
+VFDNC ;
+ N VFDARR,VFDC,VFDDRUG,VFDI,VFDJ,VFDN,VFDORD,VFDORDN,VFDPREF,VFDREL,VFDSTA,VFDSORT,VFDSTOP,VFDTX,VFDTXT,VFDW,VFDX,VFDX2,VFDY
+ D AGET^ORWORR(.VFDARR,DFN,"1^0",1,0,0,,0)
+ S VFDN=+$G(@VFDARR@(.1)) F VFDI=1:1:VFDN S VFDX=@VFDARR@(VFDI),VFDORDN=+VFDX D
+ . K VFDORD D GETS^DIQ(100,VFDORDN_",","2;5;7;.8*;22;33","IE","VFDORD","ERR")
+ . I $G(VFDORD(100,VFDORDN_",",2,"E"))="OR GXTEXT WORD PROCESSING ORDER" D
+ . . S VFDX="",VFDJ=0 F  S VFDJ=$O(VFDORD(100.008,"1,"_VFDORDN_",",.1,VFDJ)) Q:'VFDJ  D
+ . . . S VFDX=VFDX_VFDORD(100.008,"1,"_VFDORDN_",",.1,VFDJ)
+ . . S VFDDRUG=$P(VFDX,"~",3) I VFDDRUG'="" D
+ . . . S VFDDRUG=$$VFDNOSP(VFDDRUG)
+ . . . S VFDSTA=$G(VFDORD(100,VFDORDN_",",5,"E")),VFDREL=$G(VFDORD(100.008,"1,"_VFDORDN_",",16,"I"))
+ . . . S VFDREL=$$FMTE^XLFDT(VFDREL,"2D"),VFDPREF=$G(VFDORD(100,VFDORDN_",",33,"E"))
+ . . . S VFDSTOP=$G(VFDORD(100,VFDORDN_",",22,"I")),VFDSTOP=$$FMTE^XLFDT(VFDSTOP,"2D")
+ . . . S VFDSORT(VFDDRUG)=VFDSTA_U_VFDREL_U_$P($P(VFDX,"~",9),U,2)_U_VFDSTOP_U_$P($P(VFDX,"~",8),U,2)_U_VFDPREF
+ S VFDDRUG="" F  S VFDDRUG=$O(VFDSORT(VFDDRUG)) Q:VFDDRUG=""  S VFDX=VFDSORT(VFDDRUG) D
+ . D CKP^GMTSUP Q:$D(GMTSQIT)
+ . ;W !,$S($P($P(VFDX,U,6),"~",2)'="":"NC ",1:"TXT")_" "_VFDDRUG_" (Status = "_$P(VFDX,U,1)_")"
+ . W !,$S($P($P(VFDX,U,6),"~",2)'="":"eRx",1:"TXT")_" "
+ . S VFDX2=VFDDRUG_" (Status = "_$P(VFDX,U,1)_")",VFDW=74
+ . D VFDWRAP(VFDX2) F VFDI=1:1 Q:'$D(VFDTX(VFDI))  W:VFDI>1 !,"    " W VFDTX(VFDI) D CKP^GMTSUP Q:$D(GMTSQIT)
+ . W !?10,"Last Released: "_$$FMTE^XLFDT($P(VFDX,U,2),"2D"),?55,"Days Supply: "_$P(VFDX,U,3) D CKP^GMTSUP Q:$D(GMTSQIT)
+ . W !?10,"Rx Expiration Date: ",$P(VFDX,U,4),?55,"Refills Remaining: ",$P(VFDX,U,5) D CKP^GMTSUP Q:$D(GMTSQIT)
+ . W ! D CKP^GMTSUP Q:$D(GMTSQIT)
+ Q
+VFDWRAP(VFDX) ;Split text in variable X into an array where each line length is determined by VFDW
+ N VFDI,VFDY,VFDZ K VFDTX S VFDTX=0,VFDY=$L(VFDX) S:VFDY VFDY=VFDY+1 ;allow for space
+ I VFDY+$L(VFDX)'>VFDW S VFDTX(1)=$$VFDNOSP(VFDX) Q
+ F VFDI=1:1:$L(VFDX," ") S VFDZ=$P(VFDX," ",VFDI) D:(VFDY+$L(VFDZ))>VFDW  S VFDTX(VFDTX)=$G(VFDTX(VFDTX))_$S(VFDY:" ",1:"")_VFDZ,VFDY=$L(VFDTX(VFDTX)) S:VFDY VFDY=VFDY+1
+ . I $L(VFDZ)>VFDW F  S VFDTX(VFDTX)=$G(VFDTX(VFDTX))_$S(VFDY:" ",1:"")_$E(VFDZ,1,VFDW-VFDY),VFDZ=$E(VFDZ,VFDW-VFDY+1,999) Q:$L(VFDZ)'>VFDW  S VFDTX=VFDTX+1,VFDY=0
+ . S VFDTX=VFDTX+1,VFDY=0
+ S VFDI="" F  S VFDI=$O(VFDTX(VFDI)) Q:VFDI=""  S VFDTX(VFDI)=$$VFDNOSP(VFDTX(VFDI))
+ Q
+ ;
+VFDNOSP(VFDX) ;Remove leading and trailing spaces
+ N VFDI
+ F VFDI=1:1:$L(VFDX) Q:$E(VFDX,VFDI)'=" "
+ S VFDX=$E(VFDX,VFDI,$L(VFDX))
+ F VFDI=$L(VFDX):-1:1 Q:$E(VFDX,VFDI)'=" "
+ S VFDX=$E(VFDX,1,VFDI)
+ Q VFDX
+ ;

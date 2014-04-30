@@ -1,5 +1,5 @@
 LRTSTOUT ;DALOI/STAFF - JAM TESTS OFF ACCESSIONS ;10/12/11  11:54
- ;;5.2;LAB SERVICE;**100,121,153,202,221,337,350**;Sep 27, 1994;Build 230
+ ;;5.2;LAB SERVICE;**100,121,153,202,221,337,350**;Sep 27, 1994;Build 7
  ;
  ; Cancel tests - Test are no longer deleted, instead the status is changed to Not Performed.
  ;
@@ -32,7 +32,13 @@ FIX ;
  S LRDFN=+LRX,LRSN=+$P(LRX,U,5),LRODT=+$P(LRX,U,4)
  S LRDPF=$P(^LR(LRDFN,0),U,2),DFN=$P(^(0),U,3)
  D PT^LRX
- W !,PNM,?30,SSN
+ ;DSS/RAF - BEGIN MOD for MRN and DOB
+ ;W !,PNM,?30,SSN
+ I $G(VA("MRN"))]"" D
+ .W !,PNM,?35,$G(VA("MRN",0))_": "_SSN
+ .W !,?35,"DOB: "_$P($G(VADM(3)),U,2)
+ E  W !,PNM,?30,SSN
+ ;DSS/RAF END MOD
  S LRIDT=$P($G(^LRO(68,LRAA,1,LRAD,1,LRAN,3)),U,5)
  D LOCK^DILF("^LR(LRDFN,LRSS,LRIDT)")
  I '$T W !,"Someone else is working on this data." S LRNOP=1 Q

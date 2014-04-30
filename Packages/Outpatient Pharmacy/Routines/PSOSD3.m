@@ -1,5 +1,5 @@
 PSOSD3 ;BHAM ISC/RTR - Prints pending orders on action profile ;11/20/95
- ;;7.0;OUTPATIENT PHARMACY;**2,19,107,110,132,233,258,326**;DEC 1997;Build 11
+ ;;7.0;OUTPATIENT PHARMACY;**2,19,107,110,132,233,258,326**;DEC 1997;Build 7
  ;External reference ^PS(50.7 - 2223
  ;External reference ^PS(50.606 - 2174
  ;External reference ^PSDRUG( - 221
@@ -35,7 +35,10 @@ HD1 S FN=DFN
  W $S(PSTYPE:"Action",1:"Informational")_" Rx Profile",?47,"Run Date: " S Y=DT D DT^DIO2 W ?71,"Page: "_PAGE
  W !,"Sorted by drug classification for Rx's currently active"_$S('PSDAYS:" only.",1:"") W:PSDAYS !,"and for those Rx's that have been inactive less than "_PSDAYS_" days."
  S X=$$SITE^VASITE
- W @$S(PSORM:"?70",1:"!"),"Site: VAMC "_$P(X,"^",2)_" ("_$P(X,"^",3)_")",!,$E(LINE,1,$S('PSORM:80,1:IOM)-1)
+ ;DSS/RAC - BEGIN MOD - Deveteranization - orig line arg of ELSE
+ I $T(VX^VFDI0000)'="",$$VX^VFDI0000["VX" D VFD^PSOSD1("SD3")
+ E  W @$S(PSORM:"?70",1:"!"),"Site: VAMC "_$P(X,"^",2)_" ("_$P(X,"^",3)_")",!,$E(LINE,1,$S('PSORM:80,1:IOM)-1)
+ ;DSS/SGM - END MODS
  I $P(VAIN(4),"^",2)]"",+$P($G(^PS(59.7,1,40.1)),"^") W !,"Outpatient prescriptions are discontinued 72 hours after admission.",!
  I $D(CLINICX) W !?1,"Clinic: "_$E(CLINICX,1,28),?45,"Date/Time: " S Y=CLDT D DT^DIO2
  W !?1,"Name  : ",PSNAME W:PSTYPE ?58,"Action Date: ________" W !?1,"DOB   : "_PSDOB
@@ -55,7 +58,10 @@ NVA ;displays non-va meds
  Q:'$O(^PS(55,DFN,"NVA",0))
  Q:$D(DUOUT)!($D(DTOUT))!('$G(DFN))
  D HD1 S $P(PNDLINE,"-",IOM)="",PSODFN=DFN
- W !,PNDLINE,!?25,"Non-VA Meds (Not dispensed by VA)",!,PNDLINE,!
+ ;DSS/RAC - BEGIN MODS - Original code in else arg
+ I $T(VX^VFDI0000)'="",$$VX^VFDI0000["VX" W !,PNDLINE,!?32,"OTC/Elsewhere Meds",!,PNDLINE,!
+ E  W !,PNDLINE,!?25,"Non-VA Meds (Not dispensed by VA)",!,PNDLINE,!
+ ;DSS/RAC - END MODS
  F NVA=0:0 S NVA=$O(^PS(55,DFN,"NVA",NVA)) Q:'NVA  D  Q:$G(PSQFLG)
  .I $Y+6>IOSL D HD1 S:$D(DTOUT)!($D(DUOUT)) PSQFLG=1 Q:$G(PSQFLG)
  .Q:'$P(^PS(55,PSODFN,"NVA",NVA,0),"^")

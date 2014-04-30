@@ -1,6 +1,5 @@
-MAGJRPT ;WIRMFO/JHC - Display Rad reports ; 9 Sep 2011  4:05 PM
- ;;3.0;IMAGING;**18,101,120**;Mar 19, 2002;Build 27;May 23, 2012
- ;; Per VHA Directive 2004-038, this routine should not be modified.
+MAGJRPT ;WIRMFO/JHC-Display Rad reports ; 15 OCT 2004  10:02 AM
+ ;;3.0;IMAGING;**18**;Mar 07, 2006
  ;; +---------------------------------------------------------------+
  ;; | Property of the US Government.                                |
  ;; | No permission to copy or redistribute this software is given. |
@@ -8,6 +7,7 @@ MAGJRPT ;WIRMFO/JHC - Display Rad reports ; 9 Sep 2011  4:05 PM
  ;; | to execute a written test agreement with the VistA Imaging    |
  ;; | Development Office of the Department of Veterans Affairs,     |
  ;; | telephone (301) 734-0100.                                     |
+ ;; |                                                               |
  ;; | The Food and Drug Administration classifies this software as  |
  ;; | a medical device.  As such, it may not be changed in any way. |
  ;; | Modifications to this software may result in an adulterated   |
@@ -27,7 +27,7 @@ ORD(MAGRPTY,DATA) ; Radiology Order Display
  S MAGRPTY=$NA(^TMP($J,"WSDAT")) K @MAGRPTY
  N $ETRAP,$ESTACK S $ETRAP="D ERR^MAGJRPT"
  N RARPT,RADFN,RADTI,RACNI,RAPGE,RAX,RAOIFN
- N REPLY,POP,DFN,COMPLIC,XX,HDR,MAGRET,REQONLY,TMPDATA
+ N REPLY,POP,DFN,COMPLIC,XX,HDR,MAGRET,REQONLY
  S REPLY="0^4~Attempting to display order info"
  D OPENDEV
  I POP S REPLY="0^4~Unable to open device 'IMAGING WORKSTATION'" G ORDZ
@@ -45,13 +45,10 @@ ORD(MAGRPTY,DATA) ; Radiology Order Display
  S COMPLIC=$P(XX,U,4)      ;  Complications text
  F I=4,12,9 S HDR=HDR_$P(RADATA,U,I)_"   " ; PtName, Case #, Procedure
  I REQONLY D CKINTEG(.REPLY,RADFN,RADTI,RACNI,RARPT,RADATA) I REPLY]"" S REPLY="0^7~"_REPLY G ORDZ  ; Database integrity problems
- S TMPDATA=MAGRPTY_"~"_RADTI_"~"_RACNI
  S RAX="",RAPGE=0 D ^RAORD5
- S MAGRPTY=$P(TMPDATA,"~"),RADTI=$P(TMPDATA,"~",2),RACNI=$P(TMPDATA,"~",3)
  D:IO'=IO(0) ^%ZISC
  S @MAGRPTY@(1)="REQ: "_HDR
  D COMMENTS(RADFN,RADTI,RACNI,MAGRPTY,2,COMPLIC)
- D TIUNOTE(RARPT,MAGRPTY,10000) ; append TIU note to reply at node 10000
  S REPLY="1^OK"
  K ^TMP($J,"MAGRAEX")
 ORDZ S @MAGRPTY@(0)=REPLY
@@ -75,34 +72,19 @@ COMMENTS(RADFN,RADTI,RACNI,MAGRPTY,DNODE,COMPLIC) ; add Complications & Tech Com
  F  S QTMP=$Q(@QTMP) Q:QTMP=""  Q:QTMP'["RAE2"  I QTMP["TCOM" D
  . S XX=@(QTMP) N HI,TXT,LINE1 S LINE1=0
  . F  Q:XX=""  S HI=$L(XX) S:HI>63 HI=63 F I=HI:-1:0 S:'I XX="" I HI<63!($E(XX,I)=" ") D  Q
- . . S TXT=$S('LINE1:"Tech Comments: ",1:"               ")_$E(XX,1,I),XX=$E(XX,I+1,999),LINE1=1
- . . I XX]"" F I=1:1:999 I $E(XX,I)'=" " S XX=$E(XX,I,999) Q
- . . S CT=CT+.01,@MAGRPTY@(DNODE+CT)=TXT
+ .. S TXT=$S('LINE1:"Tech Comments: ",1:"               ")_$E(XX,1,I),XX=$E(XX,I+1,999),LINE1=1
+ .. I XX]"" F I=1:1:999 I $E(XX,I)'=" " S XX=$E(XX,I,999) Q
+ .. S CT=CT+.01,@MAGRPTY@(DNODE+CT)=TXT
  K ^TMP($J,"RAE2")
  Q
  ;
-TIUNOTE(RARPT,MAGRPTY,DNODE) ; FUT-70/IHS append Rad TIU Notes to report
- ; 1/2011--only works at IHS where TIU notes may exist for Radiology exams
- ; test for this by presence of DOCTEXT^BEHOTIU
- ;  RARPT--exam pointer
- ;  MAGRPTY--indirect reference to output file
- ;  DNODE--starting node for lines of output
- ;
- N CT,QTMP,TEXT,XX
- I RARPT,$L(MAGRPTY),DNODE,$L($T(DOCTEXT^BEHOTIU)) D
- . D DOCTEXT^BEHOTIU("TEXT",RARPT_";RARPT(")
- . I $D(TEXT) D
- . . S CT=0,QTMP="TEXT"
- . . S @MAGRPTY@(DNODE)=" "
- . . F  S QTMP=$Q(@QTMP) Q:QTMP=""  S XX=@(QTMP) S CT=CT+.01,@MAGRPTY@(DNODE+CT)=XX
- Q
- ;
 OPENDEV ;
- N IOP,%ZIS
+ N IOP
  S IOP="IMAGING WORKSTATION",%ZIS=0 D ^%ZIS
  I POP
  E  U IO
  Q
+ ;
  ;
 RADRPT(MAGRPTY,DATA) ; Display rad report; 1st must pass integrity checks
  ; Note: adds an additional line of output for the Report Window header
@@ -110,9 +92,9 @@ RADRPT(MAGRPTY,DATA) ; Display rad report; 1st must pass integrity checks
  ;
  ; MAGRPTY holds $NA reference to  return message; references to it use subscript indirection
  ;
- S MAGRPTY=$NA(^TMP($J,"MAGJRADRPT")) K @MAGRPTY
+ S MAGRPTY=$NA(^TMP($J,"WSDAT")) K @MAGRPTY
  N $ETRAP,$ESTACK S $ETRAP="D ERR^MAGJRPT"
- N RARPT,RADATA,MAGDFN,MAGDTI,MAGCNI,X,MAGRET,HDR,REPLY,MAGPRC,COMPLIC,DNODE
+ N RARPT,RADATA,MAGDFN,MAGDTI,MAGCNI,X,MAGRET,HDR,REPLY,POP,MAGPRC,COMPLIC
  S MAGDFN=$P(DATA,U),MAGDTI=$P(DATA,U,2),MAGCNI=$P(DATA,U,3),RARPT=+$P(DATA,U,4)
  I '(MAGDFN&MAGDTI&MAGCNI) D  G RPTZ
  . S REPLY="0^4~Request Contains Invalid Case Pointer ("_MAGDFN_" "_MAGDTI_" "_MAGCNI_")."
@@ -122,15 +104,14 @@ RADRPT(MAGRPTY,DATA) ; Display rad report; 1st must pass integrity checks
  F I=4,12,9 S HDR=HDR_$P(RADATA,U,I)_"   "
  D CKINTEG(.REPLY,MAGDFN,MAGDTI,MAGCNI,RARPT,RADATA)
  I REPLY]"" S REPLY="0^7~"_REPLY G RPTZ  ; DB integ problem
+ D OPENDEV
+ I POP S REPLY="0^4~Unable to open device 'IMAGING WORKSTATION'" G RPTZ
  D EN3^RAO7PC3(MAGDFN_"^"_MAGDTI_"^"_MAGCNI)
  I '$D(^TMP($J,"RAE3")) S REPLY="0^4~No report on file." G RPTZ
  D COMMENTS(MAGDFN,MAGDTI,MAGCNI,MAGRPTY,2,COMPLIC)
- S MAGPRC=$O(^TMP($J,"RAE3",MAGDFN,MAGCNI,"")),I=0,DNODE=2
- F  S I=$O(^TMP($J,"RAE3",MAGDFN,MAGCNI,MAGPRC,I)) Q:'I  D
- . S DNODE=DNODE+1
- . S @MAGRPTY@(DNODE)=$G(^TMP($J,"RAE3",MAGDFN,MAGCNI,MAGPRC,I))
- F I=1:1:4  S DNODE=DNODE+1,@MAGRPTY@(DNODE)=$S(I'=3:"",1:"** END REPORT "_$$FMTE^XLFDT($$NOW^XLFDT,"1P")_" **")
- D TIUNOTE(RARPT,MAGRPTY,10000) ; append TIU note to reply at node 10000
+ S MAGPRC=$O(^TMP($J,"RAE3",MAGDFN,MAGCNI,"")),I=0
+ F  S I=$O(^TMP($J,"RAE3",MAGDFN,MAGCNI,MAGPRC,I)) Q:'I  W !,$G(^TMP($J,"RAE3",MAGDFN,MAGCNI,MAGPRC,I))
+ D:IO'=IO(0) ^%ZISC
  S REPLY="1^1~Radiology Report"
 RPTZ S @MAGRPTY@(0)=REPLY
  I +$G(@MAGRPTY@(0)) S @MAGRPTY@(1)="RPT: "_HDR ; if a report exists, add header line to output
@@ -146,15 +127,15 @@ CKINTEG(REPLY,RADFN,RADTI,RACNI,RARPT,RADATA) ; check integrity between Exam, Re
  . S X=$G(^RARPT(RARPT,0)),CKDFN=$P(X,U,2),CKACN=$P(X,U,4)
  . I CKDFN'=RADFN S MIXEDUP=1_U_+CKDFN Q
  . I $G(RADATA)]"" D
- . . I $P(RADATA,U,8)'=CKACN D
- . . . N MAGPSET,RAPRTSET,ACN,OK S OK=0
- . . . S RAPRTSET=0 D EN2^RAUTL20(.MAGPSET) I RAPRTSET D
- . . . . N I S I=0 F  S I=$O(MAGPSET(I)) Q:'I  I +MAGPSET(I)=CKACN S OK=1 Q
- . . . I 'OK S MIXEDUP=5_U_CKACN_U_$P(RADATA,U,8)
+ .. I $P(RADATA,U,8)'=CKACN D
+ ... N MAGPSET,RAPRTSET,ACN,OK S OK=0
+ ... S RAPRTSET=0 D EN2^RAUTL20(.MAGPSET) I RAPRTSET D
+ .... N I S I=0 F  S I=$O(MAGPSET(I)) Q:'I  I +MAGPSET(I)=CKACN S OK=1 Q
+ ... I 'OK S MIXEDUP=5_U_CKACN_U_$P(RADATA,U,8)
  I $D(^RARPT(+RARPT,2005)) S IEN=0 D  G CK2:MIXEDUP
  . F  S IEN=$O(^RARPT(RARPT,2005,IEN)) Q:'IEN  S MAGIEN=+$G(^(IEN,0)) D  Q:MIXEDUP
- . . S X=$P($G(^MAG(2005,MAGIEN,0)),U,7) I X'=RADFN S MIXEDUP=2_U_+X Q
- . . S X=$P($G(^MAG(2005,MAGIEN,2)),U,7) I X'=RARPT S MIXEDUP=3_U_+X Q
+ .. S X=$P($G(^MAG(2005,MAGIEN,0)),U,7) I X'=RADFN S MIXEDUP=2_U_+X Q
+ .. S X=$P($G(^MAG(2005,MAGIEN,2)),U,7) I X'=RARPT S MIXEDUP=3_U_+X Q
 CK2 I 'MIXEDUP Q  ; no problems detected
  I +MIXEDUP=1!(+MIXEDUP=2) D  Q
  . S X=$$PNAM^MAGJEX1($P(MIXEDUP,U,2))

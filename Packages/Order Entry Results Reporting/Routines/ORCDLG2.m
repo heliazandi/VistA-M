@@ -1,9 +1,6 @@
 ORCDLG2 ;SLC/MKB-Order dialogs cont ;10/12/2007
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**4,60,79,94,243,297**;Dec 17, 1997;Build 14
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**4,60,79,94,243**;Dec 17, 1997;Build 242
  ;;Per VHA Directive 2004-038, this routine should not be modified.
- ;;
- ;Reference to ^DISV supported by IA #510
- ;
 DIR ; -- ^DIR read of X, returns Y
  N INPUTXFM,LKUP,REPL K DTOUT,DUOUT,DIRUT,DIROUT,DDER,Y
  S (X,Y)="",INPUTXFM=$P(DIR(0),U,3,99)
@@ -26,16 +23,15 @@ DIR1 I 'REPL W !,DIR("A")_$S($D(DIR("B")):DIR("B")_"// ",1:"") R X:DTIME I '$T S
  I $L(INPUTXFM) X INPUTXFM I '$D(X) D ERR G DIR1
  I $L(LKUP),$L($T(@LKUP)) D @LKUP Q:Y>0  D ERR G DIR1
  I $G(ORDIALOG(PROMPT,"LIST")) D  Q:$L(Y)  I $P(ORDIALOG(PROMPT,"LIST"),U,2) W $C(7) D LIST^ORCD G DIR1
- . N OROOT,ORY S OROOT="ORDIALOG("_PROMPT_",""LIST"")"
+ . N OROOT S OROOT="ORDIALOG("_PROMPT_",""LIST"")"
  . S:(X=" ")&(DATATYPE="P") X=$$SPACE(DOMAIN)
- . S ORY=$$FIND(OROOT,X)
- . I $L(ORY)!$P(ORDIALOG(PROMPT,"LIST"),U,2) S Y=ORY ;matched, or require list
+ . S Y=$$FIND(OROOT,X) ; I X'[",",X'["-" S Y=$$FIND Q
+ . ; S ORX=$$EXPLIST(X) F  S Y(Y+1)=$$FIND
  I DATATYPE="P" D DIC I Y'>0 D ERR G DIR1
  I (DATATYPE="R")!(DATATYPE="D") D DT I Y<0 D ERR G DIR1
- I "^F^N^S^Y^"[(U_DATATYPE_U) D  I $G(DDER) D ERR G DIR1
- . I REPL S Y=X Q                  ; free text - already validated
+ I "^F^N^S^Y^"[(U_DATATYPE_U) D  I $G(DDER) D ERR G DIR1 ;JEH 'REPL was  checked 
  . N I F I=1:1:31 S X=$TR(X,$C(I)) ; strip out control char's
- . S DIR("V")="" D ^DIR K DIR("V") ; silent
+ . S DIR("V")="" D ^DIR ; silent
  Q
  ;
 ERR ; -- show help msg on error

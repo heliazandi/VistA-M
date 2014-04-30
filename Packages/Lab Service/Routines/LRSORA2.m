@@ -1,5 +1,5 @@
 LRSORA2 ;DALOI/KCM/DRH/RLM-SEARCH LAB DATA AND PRINT REPORT ;8/28/89  12:07
- ;;5.2;LAB SERVICE;**2,62,201,272,369**;Sep 27, 1994;Build 2
+ ;;5.2;LAB SERVICE;**2,62,201,272,369**;Sep 27, 1994;Build 25
  ; Reference to $$FMTE^XLFDT supported by IA #10103
  ; Reference to DD^%DT supported by IA #10003
  ; Reference to ^DIR supported by IA #10026
@@ -137,7 +137,13 @@ HDR1 ;
  S LRCHKSP=0
  Q
 HDR2 ;
- W !,PNM,?28,SSN,?61,$E(LRWRD,1,16),!
+ ;DSS/RAF - BEGIN MOD for MRN label and DOB
+ ;W !,PNM,?28,SSN,?61,$E(LRWRD,1,16),!
+ I $G(VA("MRN"))]"" D
+ .W !,PNM,?28,$G(VA("MRN",0))_": ",SSN
+ .W !,?28,"DOB: ",$P($G(VADM(3)),U,2),?61,$E(LRWRD,1,16)
+ E  W !,PNM,?28,SSN,?61,$E(LRWRD,1,16),!
+ ;DSS/RAF - END MOD
  Q
 WAIT W ! K DIR S DIR(0)="E" D ^DIR S:($D(DUOUT))!($D(DTOUT)) LREND=1
  Q

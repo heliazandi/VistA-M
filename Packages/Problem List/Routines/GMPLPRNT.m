@@ -1,5 +1,5 @@
 GMPLPRNT ; SLC/MKB,KER -- Problem List prints/displays; 04/15/2002
- ;;2.0;Problem List;**1,13,26,41**;Aug 25, 1994;Build 1
+ ;;2.0;Problem List;**1,13,26,41**;Aug 25, 1994;Build 7
  ;
  ; External References
  ;   DBIA 10090  ^DIC(4
@@ -80,16 +80,21 @@ FTR ; Footer Code
  F I=1:1:(IOSL-$Y-6) W !
  S SITE=$$SITE^VASITE,SITE=$P(SITE,"^",2)
  S:SITE'["VAMC" SITE=SITE_" VAMC"
+ ;DSS/SMP - BEGIN MODS remove references to the VA
+ I $G(^%ZOSF("ZVX"))["VX" S SITE=$P(SITE," VAMC")
  S DFN=+GMPDFN D OERR^VADPT
  S LOC="Pt Loc: "_$S(VAIN(4)]"":$P(VAIN(4),U,2)_"  "_VAIN(5),1:"OUTPATIENT") K VAIN
  I $L(LOC)>51 S LOC=$E(LOC,1,51),FORM="VAF10-141"
  E  S FORM="VA FORM 10-1415"
+ I $G(^%ZOSF("ZVX"))["VX" S FORM=""
+ ;DSS/SMP - END MODS
  W !,$S($D(GMPLFLAG):"$ = Requires verification by provider",1:"")
  W !,$$REPEAT^XLFSTR("-",79)
  W !,$P(GMPDFN,U,2),?(79-$L(SITE)\2),SITE
  S DATE=$$FMTE^XLFDT($E(($$NOW^XLFDT),1,12),2)
  S DATE="Printed:"_$P(DATE,"@")_" "_$P(DATE,"@",2)
  W ?(79-$L(DATE)),DATE
+ I $G(VFD) S VA("PID")=$$GET1^DIQ(2.0216,"1,"_DFN_",",.02)
  W !,VA("PID"),?(79-$L(LOC)\2),LOC,?(79-$L(FORM)),FORM
  W !,$$REPEAT^XLFSTR("-",79),@IOF
  Q

@@ -1,5 +1,5 @@
 PSOORRL ;BHAM ISC/SAB - returns patient's outpatient meds ;07/21/96
- ;;7.0;OUTPATIENT PHARMACY;**4,20,9,34,54,82,124,132,159,214,225**;DEC 1997;Build 29
+ ;;7.0;OUTPATIENT PHARMACY;**4,20,9,34,54,82,124,132,159,214,225**;DEC 1997;Build 153
  ;External reference to ^PS(55 supported by DBIA 2228
  ;External reference to ^PSDRUG supported by DBIA 221
  ;External reference to ^VA(200 supported by DBIA 10060
@@ -26,7 +26,10 @@ ST N SD,SDT,SDT1
  .F I=0:0 S I=$O(^PSRX(IFN,1,I)) Q:'I  S TRM=TRM+1,LSTFD=$P(^PSRX(IFN,1,I,0),"^"),LSTDS=$P(^(0),"^",10) S:$P(^(0),"^",18)]"" LSTRD=$P(^(0),"^",18)
  .S ^TMP("PS",$J,TFN,0)=IFN_"R;O"_"^"_$P($G(^PSDRUG(+$P(RX0,"^",6),0)),"^")_"^^"_$P(RX2,"^",6)_"^"_($P(RX0,"^",9)-TRM)_"^^^"_$P($G(^PSRX(IFN,"OR1")),"^",2)
  .S ^TMP("PS",$J,TFN,"P",0)=$P(RX0,"^",4)_"^"_$P($G(^VA(200,+$P(RX0,"^",4),0)),"^")
- .S ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ .;DSS/LM - BEGIN MODS - add new condition when to expire
+ .;S ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ .D VFD(1)
+ .;DSS/LM - END MODS
  .S ST=$P("ERROR^ACTIVE^NON-VERIFIED^REFILL FILL^HOLD^NON-VERIFIED^ACTIVE/SUSP^^^^^DONE^EXPIRED^DISCONTINUED^DISCONTINUED^DISCONTINUED^DISCONTINUED (EDIT)^HOLD^","^",ST0+2)
  .S ^TMP("PS",$J,TFN,0)=^TMP("PS",$J,TFN,0)_"^"_ST_"^"_LSTFD_"^"_$P(RX0,"^",8)_"^"_$P(RX0,"^",7)_"^^^"_$P(RX0,"^",13)_"^"_LSTRD_"^"_LSTDS
  .S ^TMP("PS",$J,TFN,"SCH",0)=0
@@ -77,7 +80,10 @@ OEL(DFN,RXNUM) ;returns expanded list on specific order
  .S ^TMP("PS",$J,"PAR",0)=$G(^TMP("PS",$J,"PAR",0))+1
  S ^TMP("PS",$J,0)=$P($G(^PSDRUG(+$P(RX0,"^",6),0)),"^")_"^^"_$P(RX2,"^",6)
  S ^TMP("PS",$J,"P",0)=$P(RX0,"^",4)_"^"_$P($G(^VA(200,+$P(RX0,"^",4),0)),"^")
- S ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ ;DSS/LM - BEGIN MODS - add new condition when to expire
+ ;S ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ D VFD(2)
+ ;DSS/LM - END MODS
  S ST=$P("ERROR^ACTIVE^NON-VERIFIED^REFILL FILL^HOLD^NON-VERIFIED^ACTIVE/SUSP^^^^^DONE^EXPIRED^DISCONTINUE^DISCONTINUED^DISCONTINUED^DISCONTINUED (EDIT)^HOLD^","^",ST0+2)
  S ^TMP("PS",$J,0)=^TMP("PS",$J,0)_"^"_($P(RX0,"^",9)-TRM)_"^"_$P(RX0,"^",13)_"^"_ST_"^"_$P(RX0,"^",8)_"^"_$P(RX0,"^",7)_"^^^"_$P($G(^PSRX(IFN,"OR1")),"^",2)_"^"_LSTFD_"^^"
  S ^TMP("PS",$J,"DD",0)=1,^TMP("PS",$J,"DD",1,0)=$P(RX0,"^",6)_"^^"
@@ -137,3 +143,28 @@ RSTC(REF) ; return to stock
  .I REF=0,'$$RXRLDT^PSOBPSUT(IFN,0) S ^TMP("PS",$J,"RXN","RSTC")=$P(II,"^")_"^"_$P(II,"^",3)_"^"_$P(II,"^",5) Q
  .I REF>0,'$$RXRLDT^PSOBPSUT(IFN,REF) S ^TMP("PS",$J,"REF",REF,"RSTC")=$P(II,"^")_"^"_$P(II,"^",3)_"^"_$P(II,"^",5)
  Q
+ ;
+VFD(VFDX) ;DSS/LM - check vxVistA parameter about expiring order
+ ; vfdx - indicates where this module is called from
+ ;   Routine   Line Label  VFDX VALUE
+ ;   --------  ----------  ----------
+ ;   PSOORRL   ST             1
+ ;   PSOORRL   OEL            2
+ ;   PSOMHV1   GET            3 (set DGRN)
+ ;   PSOMHV1   GET1           4 (set DGRN)
+ ;   PSOMHV1   RXD            5
+ ;   PSOORRLN  OCL            6
+ ;   PSOORRLO  OCL            7
+ ;   PSOQ0496  OCL            8
+ ;   PSOQ0496  OEL            9
+ ; original code below from GET and GET1 in PSOMVH1
+ ;S DRGN=$P(^PSDRUG(DRG,0),"^"),ST0=$S(STA<12&($P(RX2,"^",6)<DT):11,1:STA)
+ N X,VFD S VFD=$$VFDXPAR
+ I 34[VFDX S DRGN=$P(^PSDRUG(DRG,0),"^")
+ S ST0=STA I STA<12,$P(RX2,U,6)<DT,'VFD S ST0=11
+ Q
+ ;
+VFDXPAR() ; Boolean, is the PSO expired status paran set?
+ ; also called from PSOHCSUM, VFDPSOEX
+ N X S X=$$LKPKG^XPDUTL("PSO")
+ Q $$GET^XPAR("SYS","VFD PKG FILTER EXPIRED STATUS",X,"I")

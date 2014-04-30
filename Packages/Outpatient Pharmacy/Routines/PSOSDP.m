@@ -1,5 +1,5 @@
 PSOSDP ;BHAM ISC/SAB - poly pharmacy report attached to action/info profile ;12/13/93 8:24
- ;;7.0;OUTPATIENT PHARMACY;**2,17,19,107,110,155,176,233,258,326**;DEC 1997;Build 11
+ ;;7.0;OUTPATIENT PHARMACY;**2,17,19,107,110,155,176,233,258,326**;DEC 1997;Build 7
  ;called from PSOSD
  Q:+$G(^TMP($J,DFN))<PSONUM!($G(DOD(DFN))]"")  S DRG="",P=0,PSOPOLP=0 D HD K SGY
  F  S DRG=$O(^TMP($J,DFN,DRG)) Q:DRG=""  F  S P=$O(^TMP($J,DFN,DRG,P)) Q:'P  I $G(^PSRX(P,0))]"" S RX0=^PSRX(P,0),RX2=$G(^(2)),RX3=$G(^(3)) D  K SGY
@@ -16,9 +16,11 @@ HD S FN=DFN
  D ELIG^PSOSD1,DEM^VADPT,INP^VADPT,ADD^VADPT,PID^VADPT S PSSN=VA("PID"),ADDRFL=$S(+VAPA(9):"Temporary ",1:"")
  S PSNAME=$E(VADM(1),1,28),PSDOB=$P(VADM(3),"^",2)
  W @IOF,!,"Polypharmacy Rx Profile Review",?47,"Run Date: " S Y=DT D DT^DIO2 W ?71,"Page: "_PAGE S PAGE=PAGE+1,X=$$SITE^VASITE
- W !,"Sorted by drug name for Rx's currently active",@$S(PSORM:"?70",1:"!"),"Site: VAMC "_$P(X,"^",2)_"( "_$P(X,"^",3)_")",!,$E(LINE,1,$S('PSORM:80,1:IOM)-1)
- I $D(CLINICX) W !?1,"Clinic: ",$E(CLINICX,1,28),?45,"Date/Time: " S Y=CLDT D DT^DIO2
- W !?1,"Name  : ",PSNAME,?30 W ?58,"Review Date: ________" W !?1,"DOB   : "_PSDOB
+ ;DSS/CRL - BEGIN MOD - deveteranize, orig code argument of ELSE
+ I $T(VX^VFDI0000)'="",$$VX^VFDI0000["VX" D VFD^PSOSD1("SDP")
+ E  W !,"Sorted by drug name for Rx's currently active",@$S(PSORM:"?70",1:"!"),"Site: VAMC "_$P(X,"^",2)_"( "_$P(X,"^",3)_")",!,$E(LINE,1,$S('PSORM:80,1:IOM)-1)
+ ;DSS/CRL - END MOD
+ I $D(CLINICX) W !?1,"Clinic: ",$E(CLINICX,1,28),?45,"Date/Time: " S Y=CLDT D DT^DIO2 W !?1,"Name  : ",PSNAME,?30 W ?58,"Review Date: ________" W !?1,"DOB   : "_PSDOB
  W:ADDRFL]"" ?30,ADDRFL,! W ?30,"Address  :"
  I ADDRFL="" D CHECKBAI^PSOSD1
  W ?41,VAPA(1) W:VAPA(2)]"" !?41,VAPA(2) W:VAPA(3)]"" !?41,VAPA(3) W !?41,VAPA(4)_", "_$P(VAPA(5),"^",2)_"  "_VAPA(6),!?30,"Phone    : "_VAPA(8)

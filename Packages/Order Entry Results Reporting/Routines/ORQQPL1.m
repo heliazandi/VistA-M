@@ -1,5 +1,5 @@
 ORQQPL1 ; ALB/PDR/REV - PROBLEM LIST FOR CPRS GUI ;11/19/09  10:06
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**10,85,148,173,203,206,249,243,280**;Dec 17, 1997;Build 85
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**10,85,148,173,203,206,249,243,280**;Dec 17, 1997;Build 7
  ;
  ;------------------------- GET PROBLEM FROM LEXICON -------------------
  ;
@@ -48,10 +48,14 @@ LEXSRCH(LIST,FROM,N,VIEW,ORDATE) ; Get candidate Problems from LEX file
  . S NAME=$P(NAME," (ICD-9-CM")
  . ;
  . S VAL=NAME_U_COD_U_CIEN_U_SYS ; ien^.01^icd^icdifn^system
- . S LIST(S)=VAL
- . S MAX=S
+ . ;DSS/RAF - BEGIN MODS - do not return empty strings
+ . ;          original VA code is commented out 
+ . I '$$VFD(2) S LIST(S)=VAL,MAX=S
+ .; S LIST(S)=VAL
+ .; S MAX=S
  I $G(MAX)'="" S LIST(MAX+1)=$G(LEX("MAT"))
- K ^TMP("LEXSCH",$J)
+ K ^TMP("LEXSCH",$J),VFD
+ ;DSS/RAF - END MODS
  Q
  ;
 ICDREC(COD) ;
@@ -78,9 +82,12 @@ EDLOAD(RETURN,DA,GMPROV,GMPVAMC) ; LOAD  EDIT ARRAYS
 LOADFLDS(RETURN,NAM,TYP,I) ; LOAD FIELDS FOR TYPE OF ARRAY
  N S,V,CVP,PN,PID
  S S="",V=$C(254)
- F  S S=$O(@NAM@(S)) Q:S=10  D
+ ;DSS/SGM - BEGIN MODS - return all fields
+ I $$VFD(1)
+ E  F  S S=$O(@NAM@(S)) Q:S=10  D
  . S RETURN(I)=TYP_V_S_V_@NAM@(S)
  . S I=I+1
+ ;DSS/SGM - END MODS
  S S=""
  F  S S=$O(@NAM@(10,S)) Q:S=""  D
  . S CVP=@NAM@(10,S)
@@ -252,3 +259,13 @@ DUP(Y,DFN,TERM,TEXT) ;Check for duplicate problem
  I $P(^AUPNPROB(Y,1),U,2)="H" S Y=0 Q
  S Y=Y_U_$P(^AUPNPROB(Y,0),U,12)
  Q
+ ;DSS/SGM - BEGIN MODS - all following lines added by vxVistA
+VFDVX() Q:$T(VX^VFDI0000)="" 0 Q:'($$VX^VFDI0000["VX") 0 Q 1
+VFD(N) ;
+ I '$$VFDVX Q 0
+ ; only return top level fields, GMPLFD(10,0) valued, GMPLFD(10) is not
+ I N=1 F  S S=$O(@NAM@(S)) Q:S=""  I ($D(@NAM@(S))#2)>0 D
+ . S RETURN(I)=TYP_V_S_V_@NAM@(S) S I=I+1
+ . Q
+ I N=2,VAL'["^^^" S VFD=1+$G(VFD),LIST(VFD)=VAL,MAX=VFD
+ Q 1

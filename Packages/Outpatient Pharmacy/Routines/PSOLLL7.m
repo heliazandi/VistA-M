@@ -1,5 +1,5 @@
 PSOLLL7 ;BHAM/JLC - LASER LABEL MULTI RX REFILL REQUEST FORM ;12/12/92
- ;;7.0;OUTPATIENT PHARMACY;**120,161,200,326**;DEC 1997;Build 11
+ ;;7.0;OUTPATIENT PHARMACY;**120,161,200,326**;DEC 1997;Build 7
  ;
  ;Reference to ^PS(59.7 supported by DBIA 694
  ;Reference to ^PS(55 supported by DBIA 2228
@@ -67,6 +67,14 @@ ADD S PSOY=PSOY+PSOYI,T="Please check prescriptions to be refilled, sign the for
  S T="mail or return to your pharmacy." D PRINT(T) S PSOY=PSOY+PSOYI
  Q
 MAIL ;PRINT MAILING ADHESIVE LABEL
+ ;DSS/SGM - BEGIN MODS - Remove VA-specific references
+ I $G(VFDPSOLB) D  Q
+ . N I,J,VFD D MAIL^VFDPSOLB(.VFD,PSOSITE)
+ . I $G(PSOIO("MLI"))]"" X PSOIO("MLI")
+ . D PRINT("Attn: Pharmacy")
+ . F I=1:1:3 D PRINT(VFD(I))
+ . Q
+ ;DSS/SGM - END MODS
  S PS=$S($D(^PS(59,PSOSITE,0)):^(0),1:"")
  I $P(PSOSYS,"^",4),$D(^PS(59,+$P($G(PSOSYS),"^",4),0)) S PS=^PS(59,$P($G(PSOSYS),"^",4),0)
  S VAADDR1=$P(PS,"^"),VASTREET=$P(PS,"^",2),STATE=$S($D(^DIC(5,+$P(PS,"^",8),0)):$P(^(0),"^",2),1:"UNKNOWN")

@@ -1,10 +1,15 @@
 PSOSD2 ;BHAM ISC/SAB - action or informational profile cont. ;3/24/93
- ;;7.0;OUTPATIENT PHARMACY;**2,19,107,110,176,233,258,326**;DEC 1997;Build 11
+ ;;7.0;OUTPATIENT PHARMACY;**2,19,107,110,176,233,258,326**;DEC 1997;Build 7
  ;External reference to ^PS(59.7 is supported by DBIA 694
  ;
 1 W !,$E(LINE,1,$S('PSORM:80,1:IOM)-1),!
  W !,"Instructions to the provider:"
- W !,"   A. A prescription blank (VA FORM 10-2577f) must be used for the"
+ ;DSS/RAC - BEGIN MOD - VA original code commented
+ ;W !,"   A. A prescription blank (VA FORM 10-2577f) must be used for the"
+ W !,"   A. A prescription blank "
+ I $G(^%ZOSF("ZVX"))'["VX" W "(VA FORM 10-2577f) "
+ W "must be used for the"
+ ;DSS/RAC - END MOD
  W !,"      following: 1) any new medication"
  W !,"                 2) any changes in dosage, direction or quantity"
  W !,"                 3) all class II narcotics."
@@ -36,7 +41,10 @@ HD1 S RXCNT=0 I $E(IOST)="C",'PSTYPE K DIR S DIR(0)="E",DIR("A")="Press Return t
  W $S(PSTYPE:"Action",1:"Informational")_" Rx Profile",?47,"Run Date: " S Y=DT D DT^DIO2 W ?71,"Page: "_PAGE
  W !,"Sorted by drug classification for Rx's currently active"_$S('PSDAYS:" only.",1:"") W:PSDAYS !,"and for those Rx's that have been inactive less than "_PSDAYS_" days."
  S X=$$SITE^VASITE
- W @$S(PSORM:"?70",1:"!"),"Site: VAMC "_$P(X,"^",2)_" ("_$P(X,"^",3)_")",!,$E(LINE,1,$S('PSORM:80,1:IOM)-1)
+ ;DSS/RAC - BEGIN MOD - Deveteranization - orig line arg of ELSE
+ I $T(VX^VFDI0000)'="",$$VX^VFDI0000["VX" D VFD^PSOSD1("SD2")
+ E  W @$S(PSORM:"?70",1:"!"),"Site: VAMC "_$P(X,"^",2)_" ("_$P(X,"^",3)_")",!,$E(LINE,1,$S('PSORM:80,1:IOM)-1)
+ ;DSS/RAC - END MODS
  I $P(VAIN(4),"^",2)]"",+$P($G(^PS(59.7,1,40.1)),"^") W !,"Outpatient prescriptions are discontinued 72 hours after admission.",!
  I $D(CLINICX) W !?1,"Clinic: ",$E(CLINICX,1,28),?45,"Date/Time: " S Y=CLDT D DT^DIO2
  W !?1,"Name  : ",PSNAME W:PSTYPE ?58,"Action Date: ________" W !?1,"DOB   : "_PSDOB

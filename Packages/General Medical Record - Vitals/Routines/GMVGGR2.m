@@ -1,5 +1,5 @@
-GMVGGR2 ;HOIFO/YH,FT-SET ^TMP($J) GLOBAL ;6/6/07
- ;;5.0;GEN. MED. REC. - VITALS;**3,23**;Oct 31, 2002;Build 25
+GMVGGR2 ;HOIFO/YH,FT-SET ^TMP($J) GLOBAL ;9/30/02  14:58
+ ;;5.0;GEN. MED. REC. - VITALS;**3**;Oct 31, 2002;Build 153
  ;CONTINUTATION OF GMVGGR1
  ;
  ; This routine uses the following IAs:
@@ -26,15 +26,14 @@ GRAPH ;
  Q
 SETV ;Set patient data in ^TMP($J,"GMRK" global
  D DEM^VADPT,INP^VADPT
- S GN=1,^TMP($J,GN)=$S(VADM(1)'="":VADM(1),1:"         ")_"  "_$S(VADM(2)'="":$E($P(VADM(2),"^",2),8,11),1:" ")_"  "_$S($D(VADM(3)):$P(VADM(3),"^",2),1:" ")_"  "_$S($D(VADM(4)):VADM(4),1:" ")_" (Yrs)"
+ S GN=1,^TMP($J,GN)=$S(VADM(1)'="":VADM(1),1:"         ")_"  "_$S(VADM(2)'="":$P(VADM(2),"^",2),1:" ")_"  "_$S($D(VADM(3)):$P(VADM(3),"^",2),1:" ")_"  "_$S($D(VADM(4)):VADM(4),1:" ")_" (Yrs)"
  S ^TMP($J,GN)=^(GN)_"  "_$S($D(VADM(5)):$P(VADM(5),"^",2),1:" ")
  S GN=2,^TMP($J,GN)="Unit: "_$P($G(VAIN(4)),"^",2)_"   Room: "_$P($G(VAIN(5)),"-",1,2)
  I '$D(GMRVHLOC) S GMRVHLOC=$$HOSPLOC^GMVUTL1(+$G(VAIN(4)))
  S GN=3,^TMP($J,GN)="Division: "_$$DIVISION^GMVUTL1(+GMRVHLOC)
  S GN=4,^TMP($J,GN)=GSTRFIN
  Q
-DATE ;
- S:GMR=0 $P(^TMP($J,GN),"^")=$E(GDT,4,5)_"-"_$E(GDT,6,7)_"-"_$E(GDT,2,3)
+DATE S:GMR=0 $P(^TMP($J,GN),"^")=$E(GDT,4,5)_"-"_$E(GDT,6,7)_"-"_$E(GDT,2,3)
  S:GMR=0 Y=$E($P(GDT,".",2)_"000000",1,6),$P(^TMP($J,GN),"^",2)=$E(Y,1,2)_":"_$E(Y,3,4)_":"_$E(Y,5,6)
  Q
 SETA ;Store measurements in ^TMP($J, global
@@ -42,7 +41,6 @@ SETA ;Store measurements in ^TMP($J, global
  S GMVNODE=$G(^TMP($J,"GMRVG",GDT,GI,GK))
  S $P(^TMP($J,GN),"^",22)=$P(GMVNODE,U,5)
  S $P(^TMP($J,GN),"^",23)=$P(GMVNODE,U,6)
- S $P(^TMP($J,GN),"^",24)=$P(GMVNODE,U,7)
  S GK(1)=GK
  I GK(1)="Unavailable" S GK(1)="Unavail"
  I GI="I" S:GMR=0 $P(^TMP($J,GN),"^",17)=GK(1) Q
@@ -70,4 +68,13 @@ SETA ;Store measurements in ^TMP($J, global
   . S $P(^TMP($J,GN),"^",10)=GMRBMI K GMRBMI
  I GI="T" S $P(^TMP($J,GN),"^",3)=GK(1)_$S(GMRVJ=1:"*",1:"")_"- "_GMRSITE Q
  I GI="P" S $P(^TMP($J,GN),"^",4)=GK(1)_$S(GMRVJ=1:"*",1:"")_"- "_GMRSITE
+ ;DSS/LM - Begin insert to include added vitals
+ ;7/30/2010 - Place LMP, EDD, and LEN on "^"pieces 26, 27, and 28
+ ;I GI="LMP"!(GI="EDD") S $P(^TMP($J,GN),"^",4)=$$FMTE^XLFDT(GK(1),"5D")_"~"_GI
+ I GI="LMP" S $P(^TMP($J,GN),"^",26)=$$FMTE^XLFDT(GK(1),"5D")_"~"_GI
+ I GI="EDD" S $P(^TMP($J,GN),"^",27)=$$FMTE^XLFDT(GK(1),"5D")_"~"_GI
+ ;2/16/2010 - Add LENGTH ; Moved to "^"-piece 28 on 7/30/2010
+ ;I GI="LEN" S $P(^TMP($J,GN),"^",4)=GK(1)_"~"_GI
+ I GI="LEN" S $P(^TMP($J,GN),"^",28)=GK(1)_"~"_GI
+ ;DSS/LM - End insert
  Q

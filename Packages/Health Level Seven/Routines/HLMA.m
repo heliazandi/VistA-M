@@ -1,5 +1,5 @@
-HLMA ;AISC/SAW-Message Administration Module ;02/26/2009  15:42
- ;;1.6;HEALTH LEVEL SEVEN;**19,43,58,63,66,82,91,109,115,133,132,122,140,142**;Oct 13, 1995;Build 17
+HLMA ;AISC/SAW-Message Administration Module ;05/02/2008  10:27
+ ;;1.6;HEALTH LEVEL SEVEN;**19,43,58,63,66,82,91,109,115,133,132,122,140**;Oct 13, 1995;Build 5
  ;Per VHA Directive 2004-038, this routine should not be modified.
 GENERATE(HLEID,HLARYTYP,HLFORMAT,HLRESLT,HLMTIEN,HLP) ;
  ;Entry point to generate a deferred message
@@ -40,8 +40,6 @@ GENERATE(HLEID,HLARYTYP,HLFORMAT,HLRESLT,HLMTIEN,HLP) ;
  ;
  ;can't have link open when generating new message
  N HLTCP,HLTCPO,HLPRIO,HLMIDAR
- ; patch HL*1.6*142- to protect application who call this entry
- N HLSUP
  S HLPRIO="D"
  S HLRESLT=""
  ;Check for required parameters
@@ -195,7 +193,7 @@ DNS ;
  ; patch HL*1.6*122
  ; I HLDOM]"" D  Q:'POP
  I HLDOM]""!($L(HLDOM("DNS"),".")>2) D  Q:'POP
- . I HLDOM["domain.ext"&(HLDOM'[".MED.") S HLDOM=$P(HLDOM,".domain.ext")_".DOMAIN.EXT"
+ . I HLDOM["VA.GOV"&(HLDOM'[".MED.") S HLDOM=$P(HLDOM,".VA.GOV")_".MED.VA.GOV"
  . I HLTCPORT=5000 S HLDOM="HL7."_HLDOM
  . I HLTCPORT=5500 S HLDOM="MPI."_HLDOM
  . ; patch HL*1.6*122

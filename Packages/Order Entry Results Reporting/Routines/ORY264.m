@@ -5,5 +5,5 @@ PRE ; Pre-init for patch 264
  Q
 PARVAL ; Set parameter values
  ; Set VistaWeb Parameter
- D EN^XPAR("PKG","ORWRP VISTAWEB ADDRESS",1,"https://vistaweb.domain.ext/ToolsPage.aspx")
+ D EN^XPAR("PKG","ORWRP VISTAWEB ADDRESS",1,"https://vistaweb.med.va.gov/ToolsPage.aspx")
  Q

@@ -1,5 +1,5 @@
 DGRPD ;ALB/MRL/MLR/JAN/LBD/EG/BRM/JRC/BAJ-PATIENT INQUIRY (NEW) ; 05/03/06
- ;;5.3;Registration;**109,124,121,57,161,149,286,358,436,445,489,498,506,513,518,550,545,568,585,677,703,688**;Aug 13, 1993;Build 29
+ ;;5.3;Registration;**109,124,121,57,161,149,286,358,436,445,489,498,506,513,518,550,545,568,585,677,703,688**;Aug 13, 1993;Build 153
  ;  *286*  Newing variables X,Y in OKLINE subroutine
  ;  *358*  If a patient is on a domiciliary ward, don't display MEANS
  ;         TEST required/Medication Copayment Exemption messages
@@ -10,6 +10,9 @@ DGRPD ;ALB/MRL/MLR/JAN/LBD/EG/BRM/JRC/BAJ-PATIENT INQUIRY (NEW) ; 05/03/06
  ;  *688*  Modified to display Country and Foreign Address
 SEL K DFN,DGRPOUT W ! S DIC="^DPT(",DIC(0)="AEQMZ" D ^DIC G Q:Y'>0 S DFN=+Y N Y W ! S DIR(0)="E" D ^DIR G SEL:$D(DTOUT)!($D(DUOUT)) D EN G SEL
 EN ;call to display patient inquiry - input DFN
+ ;DSS/MKN - BEGIN MODS - Deveteranization flag VFDVX
+ N VFDVX S VFDVX=$$VX
+ ;DSS/MKN - END MODS
  ;MPI/PD CHANGE
  S DGCMOR="UNSPECIFIED",DGMPI=$G(^DPT(+DFN,"MPI"))
  S DGLOCATN=$$FIND1^DIC(4,"","MX","`"_+$P(DGMPI,U,3)),DGLOCATN=$S(+DGLOCATN>0:$P($$NS^XUAF4(DGLOCATN),U),1:"NOT LISTED")
@@ -17,6 +20,9 @@ EN ;call to display patient inquiry - input DFN
  ;END MPI/PD CHANGE
  K DGRPOUT,DGHOW S DGABBRV=$S($D(^DG(43,1,0)):+$P(^(0),"^",38),1:0),DGRPU="UNSPECIFIED" D DEM^VADPT,HDR^DGRPD1 F I=0,.11,.13,.121,.122,.31,.32,.36,.361,.141,.3 S DGRP(I)=$S($D(^DPT(DFN,I)):^(I),1:"")
  S DGAD=.11,(DGA1,DGA2)=1 D A^DGRPU S DGTMPAD=0 I $P(DGRP(.121),"^",9)="Y" S DGTMPAD=$S('$P(DGRP(.121),"^",8):1,$P(DGRP(.121),"^",8)'<DT:1,1:0) I DGTMPAD S DGAD=.121,DGA1=1,DGA2=2 D A^DGRPU
+ ;DSS/LM - BEGIN MODS - display time of birth
+ D VFD(21601.01)
+ ;DSS/LM - END MODS
  W ?1,"Address: ",$S($D(DGA(1)):DGA(1),1:"NONE ON FILE"),?40,"Temporary: ",$S($D(DGA(2)):DGA(2),1:"NO TEMPORARY ADDRESS")
  S I=2 F I1=0:0 S I=$O(DGA(I)) Q:I=""  W:(I#2)!($X>50) !?9 W:'(I#2) ?48 W DGA(I)
  S DGCC=+$P(DGRP(.11),U,7),DGST=+$P(DGRP(.11),U,5),DGCC=$S($D(^DIC(5,DGST,1,DGCC,0)):$E($P(^(0),U,1),1,20)_$S($P(^(0),U,3)]"":" ("_$P(^(0),U,3)_")",1:""),1:DGRPU)
@@ -31,7 +37,10 @@ EN ;call to display patient inquiry - input DFN
  D CA
  N DGEMER S DGEMER=$$EXTERNAL^DILFD(2,.181,"",$P($G(^DPT(DFN,.18)),"^"))
  W:DGEMER]"" !?32,"Emergency Response: ",DGEMER
- I 'DGABBRV W !!?4,"POS: ",$S($D(^DIC(21,+$P(DGRP(.32),"^",3),0)):$P(^(0),"^",1),1:DGRPU),?42,"Claim #: ",$S($P(DGRP(.31),"^",3)]"":$P(DGRP(.31),"^",3),1:"UNSPECIFIED")
+ ;DSS/MKN - BEGIN MODS - Deveteranization to remove POS: and Claim #:
+ I 'VFDVX D
+ .I 'DGABBRV W !!?4,"POS: ",$S($D(^DIC(21,+$P(DGRP(.32),"^",3),0)):$P(^(0),"^",1),1:DGRPU),?42,"Claim #: ",$S($P(DGRP(.31),"^",3)]"":$P(DGRP(.31),"^",3),1:"UNSPECIFIED")
+ ;DSS/MKN - END MODS
  I 'DGABBRV W !?2,"Relig: ",$S($D(^DIC(13,+$P(DGRP(0),"^",8),0)):$P(^(0),"^",1),1:DGRPU),?46,"Sex: ",$S($P(VADM(5),"^",2)]"":$P(VADM(5),"^",2),1:"UNSPECIFIED")
  I 'DGABBRV W ! D
  .N RACE,ETHNIC,PTR,VAL,X,DIWL,DIWR,DIWF
@@ -51,14 +60,22 @@ EN ;call to display patient inquiry - input DFN
  .M ETHNIC=^UTILITY($J,"W",0) S:$G(ETHNIC(1,0))="" ETHNIC(1,0)="UNANSWERED"
  .K ^UTILITY($J,"W")
  .W ?3,"Race: ",RACE(1,0),?40,"Ethnicity: ",ETHNIC(1,0)
+ .;DSS/LM - BEGIN MODS - preferred language added to display
+ .D VFD(21601.02)
+ .;DSS/LM - END MODS
  .F X=2:1 Q:'$D(RACE(X,0))&'$D(ETHNIC(X,0))  W !,?9,$G(RACE(X,0)),?51,$G(ETHNIC(X,0))
  I '$$OKLINE^DGRPD1(16) G Q
  ;display cv status #4156
  N DGCV S DGCV=$$CVEDT^DGCV(+DFN)
- W !!,?2,"Combat Vet Status: "_$S($P(DGCV,U,3)=1:"ELIGIBLE",$P(DGCV,U,3)="":"NOT ELIGIBLE",1:"EXPIRED") I DGCV>0 W ?45,"End Date: "_$$FMTE^XLFDT($P(DGCV,U,2),"5DZ")
- ;display primary eligibility
- S X1=DGRP(.36),X=$P(DGRP(.361),"^",1) W !,"Primary Eligibility: ",$S($D(^DIC(8,+X1,0)):$P(^(0),"^",1)_" ("_$S(X="V":"VERIFIED",X="P":"PENDING VERIFICATION",X="R":"PENDING REVERIFICATION",1:"NOT VERIFIED")_")",1:DGRPU)
- W !,"Other Eligibilities: " F I=0:0 S I=$O(^DIC(8,I)) Q:'I  I $D(^DIC(8,I,0)),I'=+X1 S X=$P(^(0),"^",1)_", " I $D(^DPT("AEL",DFN,I)) W:$X+$L(X)>79 !?21 W X
+ ;DSS/MKN - BEGIN MODS - Deveteranization to remove Combat VET Status, 
+ ;  Primary Eligibility and Other Eligibilities
+ ;  Original code in argumentless DO
+ I 'VFDVX D
+ .W !!,?2,"Combat Vet Status: "_$S($P(DGCV,U,3)=1:"ELIGIBLE",$P(DGCV,U,3)="":"NOT ELIGIBLE",1:"EXPIRED") I DGCV>0 W ?45,"End Date: "_$$FMTE^XLFDT($P(DGCV,U,2),"5DZ")
+ .;display primary eligibility
+ .S X1=DGRP(.36),X=$P(DGRP(.361),"^",1) W !,"Primary Eligibility: ",$S($D(^DIC(8,+X1,0)):$P(^(0),"^",1)_" ("_$S(X="V":"VERIFIED",X="P":"PENDING VERIFICATION",X="R":"PENDING REVERIFICATION",1:"NOT VERIFIED")_")",1:DGRPU)
+ .W !,"Other Eligibilities: " F I=0:0 S I=$O(^DIC(8,I)) Q:'I  I $D(^DIC(8,I,0)),I'=+X1 S X=$P(^(0),"^",1)_", " I $D(^DPT("AEL",DFN,I)) W:$X+$L(X)>79 !?21 W X
+ ;DSS/MKN - END MODS
  I '$$OKLINE^DGRPD1(16) G Q
  ;employability status
  W !?6,"Unemployable: ",$S($P(DGRP(.3),U,5)="Y":"YES",1:"NO")
@@ -87,6 +104,9 @@ EN ;call to display patient inquiry - input DFN
  S VAIP("L")=""
  I $$OKLINE^DGRPD1(14) D INP
  I '$G(DGRPOUT),($$OKLINE^DGRPD1(17)) D SA
+ ;DSS/LM - BEGIN MODS -INFECTIOUS CONTACT information added to display
+ D VFD2
+ ;DSS/LM - END MODS
  ;MPI/PD CHANGE
 Q D KVA^VADPT K %DT,D0,D1,DGA,DGA1,DGA2,DGABBRV,DGAD,DGCC,DGCMOR,DGDOM,DGLOCATN,DGMPI,DGRP,DGRPU,DGS,DGST,DGXFR0,DIC,DIR,DTOUT,DUOUT,DIRUT,DIROUT,I,I1,L,LDM,POP,SDCT,VA,X,X1,Y Q
 CA ;Confidential Address
@@ -123,7 +143,12 @@ SAA ;Scheduled Admit Data
  W " on "_$$FMTE^XLFDT(L,"5DZ")
  Q  ;SAA
  ;
-CL G FA:$O(^DPT(DFN,"DE",0))="" S SDCT=0 F I=0:0 S I=$O(^DPT(DFN,"DE",I)) Q:'I  I $D(^(I,0)),$P(^(0),"^",2)'="I",$O(^(0)) S SDCT=SDCT+1 W:SDCT=1 !!,"Currently enrolled in " W:$X>50 !?22 W $S($D(^SC(+^(0),0)):$P(^(0),"^",1)_", ",1:"")
+ ;DSS/WLC - BEGIN MODS - reformat display of clinic enrollment
+ ; original CL line had the original VA code starting with "G FA:..."
+CL ;
+ I $$VX D CL^VFDDGRPD(,DFN,3) G FA
+ G FA:$O(^DPT(DFN,"DE",0))="" S SDCT=0 F I=0:0 S I=$O(^DPT(DFN,"DE",I)) Q:'I  I $D(^(I,0)),$P(^(0),"^",2)'="I",$O(^(0)) S SDCT=SDCT+1 W:SDCT=1 !!,"Currently enrolled in " W:$X>50 !?22 W $S($D(^SC(+^(0),0)):$P(^(0),"^",1)_", ",1:"")
+ ;DSS/WLC - END MODS
  ;
 FA G:'$$OKLINE^DGRPD1(20) RMK
  ;
@@ -152,6 +177,9 @@ RMK I '$G(DGRPOUT),($$OKLINE^DGRPD1(21)) W !!,"Remarks: ",$P(^DPT(DFN,0),"^",10)
  W "Date of Death Information"
  W !,?5,"Date of Death: ",$G(PDTHINFO(2,DFN_",",.351,"E"))
  W !,?5,"Source of Notification: ",$G(PDTHINFO(2,DFN_",",.353,"E"))
+ ;DSS/LM - BEGIN MODS - display preliminary cause/diagnosis of death
+ D VFD(21601.03),VFD(21601.04)
+ ;DSS/LM - END MODS
  W !,?5,"Updated Date/Time: ",$G(PDTHINFO(2,DFN_",",.354,"E"))
  W !,?5,"Last Edited By: ",$G(PDTHINFO(2,DFN_",",.355,"E")),!
  I $$OKLINE^DGRPD1(14) D EC^DGRPD1
@@ -163,3 +191,28 @@ COV S COV=$S(+$P(^TMP($J,"SDAMA301",DFN,FA),U,18)=7:" (Collateral) ",1:"")
  ;
 OREN S XQORQUIT=1 Q:'$D(ORVP)  S DFN=+ORVP D EN R !!,"Press RETURN to CONTINUE: ",X:DTIME
  Q
+ ;
+ ;DSS/ - lines add at the end of this routine
+VFD(FLD) ;DSS/LM - Add Time of Birth and newline in RPC Broker context
+ Q:'$G(FLD)  ;Q:'$$BROKER^VFDVUTL
+ N X,Y,D0,D1,DA,DIERR,VFDER
+ S X=$$GET1^DIQ(2,+DFN_",",FLD,,,"VFDER") Q:X=""  Q:$D(DIERR)
+ I FLD=21601.01 W ?55," Time of birth: "_X,!
+ I FLD=21601.02 W ?3,"Preferred language: "_X
+ I FLD=21601.03 W ?5,"Preliminary cause of death: " W:$L(X)>55 ! W X
+ I FLD=21601.04 W ?5,"Preliminary diagnosis of death: "_X
+ Q
+ ;
+VFD2 ;DSS/LM - Add sub-file 21602 fields
+ N X,Y,D0,D1,DA,DIERR,VFDER,VFDIENS,VFDR,VFDY
+ D GETS^DIQ(2,DFN_",","21602*","E",$NA(VFDY)) Q:'$D(VFDY)
+ Q:$D(DIERR)  Q:$O(VFDY(2.021602,0))=""
+ W !!?3,"Infectious Contact Name",?32,"Initial Contact Date",?56,"Last Contact Date",!
+ S VFDIENS="" F  S VFDIENS=$O(VFDY(2.021602,VFDIENS)) Q:'VFDIENS  D
+ .S VFDR=$NA(VFDY(2.021602,VFDIENS))
+ .W !,@VFDR@(.01,"E"),?36,@VFDR@(.02,"E"),?58,@VFDR@(.03,"E")
+ .Q
+ W !
+ Q
+ ;
+VX() Q:$T(VX^VFDI0000)="" 0 Q $$VX^VFDI0000["VX"

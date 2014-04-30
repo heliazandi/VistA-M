@@ -1,5 +1,5 @@
 PXKENC ;ISL/dee,ESW - Builds the array of all encounter data for the event point ; 12/5/02 11:53am  ; 1/5/07 4:54pm
- ;;1.0;PCE PATIENT CARE ENCOUNTER;**15,22,73,108,143,183**;Aug 12, 1996;Build 3
+ ;;1.0;PCE PATIENT CARE ENCOUNTER;**15,22,73,108,143,183**;Aug 12, 1996;Build 2
  Q
  ;
 GETENC(DFN,ENCDT,HLOC) ;Get all of the encounter data
@@ -70,6 +70,10 @@ ENCEVENT(VISITIEN,DONTKILL) ;Create the ^TMP("PXKENC",$J, array of all the
  ...... S @PXKROOT@(FILESTR,IEN,PXKNODE,SUBIEN,0)=$G(@VFILE@(IEN,PXKNODE,SUBIEN,0))
  .... ;
  .... S @PXKROOT@(FILESTR,IEN,PXKNODE)=$G(@VFILE@(IEN,PXKNODE))
+ ;DSS/CFS - BEGIN MODS - Incorporate OSHERA compliant SNOMED codes into CPRS/PCE
+ ;Create the ^TMP("PXKENC" global for PCE4NOTE^ORWPCE3
+ I $G(^%ZOSF("ZVX"))["VX" D ENCEVENT^VFDPXENC(VISITIEN,PXKROOT)
+ ;DSS/CFS - END MODS
  Q
 EVALD(VISITIEN,PXKROOT,VFILE,FILESTR) ;evaluation for duplicate providers
  N CNT,PR,PRS,PS,PP,PRV,STR
@@ -120,5 +124,8 @@ COEVENT(VISITIEN) ;Add to the ^TMP("PXKCO",$J, array all of the
  ...... S @PXKROOT@(FILE,IEN,PXKNODE,"AFTER",MOD)=""
  .... S @PXKROOT@(FILE,IEN,PXKNODE,"BEFORE")=$G(@VFILE@(IEN,PXKNODE))
  .... S @PXKROOT@(FILE,IEN,PXKNODE,"AFTER")=$G(@VFILE@(IEN,PXKNODE))
+ ;DSS/CFS - BEGIN MODS - Incorporate OSHERA compliant SNOMED codes into CPRS/PCE
+ I $G(^%ZOSF("ZVX"))["VX" D COEVENT^VFDPXENC(VISITIEN,PXKROOT)
+ ;DSS/CFS - END MODS
  Q
  ;

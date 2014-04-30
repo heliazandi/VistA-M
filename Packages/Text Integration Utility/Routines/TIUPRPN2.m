@@ -1,5 +1,5 @@
 TIUPRPN2 ;SLC/MJC - Header/Footer for Progress Notes ;25-JAN-2001 08:50:35
- ;;1.0;TEXT INTEGRATION UTILITIES;**44,45,52,100,222**;Jun 20, 1997
+ ;;1.0;TEXT INTEGRATION UTILITIES;**44,45,52,100,222**;Jun 20, 1997;Build 153
 FOOTER(TIUFOOT,TIUMISC,TIUCONT1,TIUHDR,TIUROOT) ; Function returns TIUCONT
  ; Also controls Pagination position, writes footer when appropriate.
  ; Requires array TIUFOOT, vars TIUMISC,TIUCONT1. Optional TIUHDR.
@@ -31,8 +31,10 @@ FTR I (IOT'="HFS")!(IOSL<250) F  Q:$Y+6'<IOSL  W ! ;moves ftr to pg bottom
  . W ?58,TIUPRTDT,!?(80-$L(TIUPRTNM)\2),TIUPRTNM
  I +$G(TIUFLAG) W !,TIUFOOT("SSN")," ",TIUFOOT("DOB"),?(80-$L(TIUFOOT("LOCP"))\2),TIUFOOT("LOCP") ; *222 only print if NOT WORKCOPY
  I '+$G(TIUFLAG) W !,?(80-$L(TIUFOOT("LOCP"))\2),TIUFOOT("LOCP")
- I +$G(TIUFLAG) W ?(80-$L(TIUPFNBR)),TIUPFNBR
- I '+$G(TIUFLAG) W ?(80-$L(TIUFOOT("PH#"))),TIUFOOT("PH#")
+ ;DSS/SGM - BEGIN MODS - disable printing of VA form and phone #
+ ;I +$G(TIUFLAG) W ?(80-$L(TIUPFNBR)),TIUPFNBR
+ ;I '+$G(TIUFLAG) W ?(80-$L(TIUFOOT("PH#"))),TIUFOOT("PH#")
+ ;DSS/SGM - END MODS
  I +$G(TIUFLAG) W !,TIULINE
  E  W !,"=========================== CONFIDENTIAL INFORMATION ==========================="
  W @IOF

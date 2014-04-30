@@ -1,5 +1,5 @@
 DIM1 ;SFISC/JFW,GFT,TOAD-FileMan: M Syntax Checker, Exprs ;1:55 PM  19 Jul 1999
- ;;22.0;VA FileMan;**6**;Mar 30, 1999;Build 1
+ ;;22.0;VA FileMan;**6**;Mar 30, 1999
  ;Per VHA Directive 10-93-142, this routine should not be modified.
  ;12276;6135531;3766;
  ;
@@ -76,7 +76,10 @@ EXT ; extrinsic functions and variables (FUNC)
  D %INC
  F %I=%I+1:1 S %C1=$E(%,%I) Q:%C1?1PC&("^%"'[%C1)!(%C1="")  S %C=%C_%C1
  G:%C="" E G:%C?.E1"^" E G:%C["^^" E
- S %C1=$P(%C,"^",2) I %C1]"",%C1'?1U.7AN,%C1'?1"%".7AN G E
+ ; DSS/LM Begin mods - Allow routine length up to 16
+ ;S %C1=$P(%C,"^",2) I %C1]"",%C1'?1U.7AN,%C1'?1"%".7AN G E
+ S %C1=$P(%C,"^",2) I %C1]"",%C1'?1U.15AN,%C1'?1"%".15AN G E
+ ; DSS/LM End mods
  S %C=$P(%C,"^") I %C]"",%C'?1U.7AN,%C'?1"%".7AN,%C'?1.8N G E
  I $E(%,%I)="(",$E(%,%I+1)'=")" S %(%N,0)="P^",(%(%N,1),%(%N,2),%(%N,3))=0,%N=%N+1 G GG
  S %I=%I+$S($E(%,%I,%I+1)="()":1,1:-1)

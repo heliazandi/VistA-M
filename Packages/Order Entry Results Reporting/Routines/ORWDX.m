@@ -1,10 +1,16 @@
 ORWDX ; SLC/KCM/REV/JLI - Order dialog utilities ;09/08/2008 [2/11/09 8:00am]
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**10,85,125,131,132,141,164,178,187,190,195,215,246,243,283,296,280**;Dec 17, 1997;Build 85
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**10,85,125,131,132,141,164,178,187,190,195,215,246,243,283,296,280**;Dec 17, 1997;Build 7
  ;Per VHA Directive 2004-038, this routine should not be modified.
  ;Reference to DIC(9.4 supported by IA #2058
  ;
-ORDITM(Y,FROM,DIR,XREF) ; Subset of orderable items
+ ;DSS/RAF - BEGIN MOD
+ ;  add screen of orderable item list for DSS lab interface
+ ;  new parameter VFDVLAB added to the ORDITM call
+ORDITM(Y,FROM,DIR,XREF,VFDVLAB) ; Subset of orderable items
  ; Y(n)=IEN^.01 Name^.01 Name  -or-  IEN^Synonym <.01 Name>^.01 Name
+ I $G(^%ZOSF("ZVX"))["VX",+$G(VFDVLAB)>0 D  Q
+ . D SCREEN^VFDOR(.Y,FROM,DIR,XREF,VFDVLAB)
+ ;DSS/RAF - END MOD
  N I,IEN,CNT,X,DTXT,CURTM,DEFROUTE
  S DEFROUTE=""
  S I=0,CNT=44,CURTM=$$NOW^XLFDT
@@ -160,6 +166,10 @@ SEND1 N ORVP,ORWI,ORWERR,ORWREL,ORWSIG,ORWNATR,ORDERID,ORBEF,ORLR,ORLAB,X,I
  . I ORWSIG'=2 S X=X_"S"
  . S $P(ORWLST(ORWI),U,2)=X
  I $G(ORLAB) D BTS^ORMBLD(ORVP)
+ ;DSS/RAF - BEGIN MOD - for Order Group ID call
+ I $G(^%ZOSF("ZVX"))["VX",$L(ES)>1 D
+ . N VFDOID S VFDOID=$$ORDERID^VFDOR(.ORWREC,1)
+ ;DSS/RAF - END MOD
  I $D(ORWLST)>9 D
  . N I,A
  . S I=0 F  S I=$O(ORWLST(I)) Q:I=""  S A=$G(ORWLST(I)) I A["Invalid Procedure, Inactive, no Imaging Type" D SM^ORWDX2(A)

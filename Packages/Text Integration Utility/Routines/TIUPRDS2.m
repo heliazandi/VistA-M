@@ -1,5 +1,5 @@
-TIUPRDS2 ;SLC/SBW - Header & Footer for Form 10-1000 ; 11/29/02
- ;;1.0;TEXT INTEGRATION UTILITIES;**7,55,52,148**;Jun 20, 1997
+TIUPRDS2 ;SLC/SBW - Header & Footer for Form 10-1000 ; 4/15/09 5:32pm
+ ;;1.0;TEXT INTEGRATION UTILITIES;**7,55,52,148**;Jun 20, 1997;Build 153
 FOOTER(TIUDA,TIU,TIUFLAG,TIUPAGE,TIUCOPY,TIUHDR) ; Control Pagination
  ; position, write footer when appropriate
  ; IF TIUHDR=1, HEADER WILL NOT BE PRINTED
@@ -7,7 +7,10 @@ FOOTER(TIUDA,TIU,TIUFLAG,TIUPAGE,TIUCOPY,TIUHDR) ; Control Pagination
  I (IOT'="HFS")!(IOSL<250) F  Q:$Y+4>IOSL  W ! ;moves ftr to pg bottom
  I $E(IOST)="P" D
  . W !,"PATIENT: ",^TMP("TIULQ",$J,TIUDA,.02,"E")
- . W ?47,"VA FORM 10-1000 DISCHARGE SUMMARY"
+ . ;DSS/SGM/LM - Begin mods - Remove VA FORM reference from next
+ . ;W ?47,"VA FORM 10-1000 DISCHARGE SUMMARY"
+ . W ?63,"DISCHARGE SUMMARY"
+ . ;DSS/LM end mods
  . W !,TIU("SSN"),"  DOB: ",$$DATE^TIULS(+$G(TIU("DOB")),"MM/DD/CCYY")
  W ?40,$J(TIUCOPY,39)
  I $E(IOST)="C" S TIUCONT=$$STOP^TIUU G FOOTEXIT:'TIUCONT

@@ -1,5 +1,5 @@
 VSITPUT1 ;ISD/RJP - Continued...Verify/set fields and file visit record ;6/20/96
- ;;1.0;PCE PATIENT CARE ENCOUNTER;**76**;Aug 12, 1996
+ ;;1.0;PCE PATIENT CARE ENCOUNTER;**76**;Aug 12, 1996;Build 7
  ; Patch PX*1*76 changes the 2nd line of all VSIT* routines to reflect
  ; the incorporation of the module into PCE.  For historical reference,
  ; the old (VISIT TRACKING) 2nd line is included below to reference VSIT
@@ -30,6 +30,11 @@ VSITPUT1 ;ISD/RJP - Continued...Verify/set fields and file visit record ;6/20/96
  . L:VSITI'>0 -^AUPNVSIT(VSITI)
  . S Y=VSITI_"^"_VSIT("VDT")_"^1"
  D:Y>0
+ . ;DSS/SGM - BEGIN MODS - if field 15003 (150,3) is null stuff "P"
+ . I $G(^%ZOSF("ZVX"))["VX" D
+ . . I $G(VSITREC(150))]"",$P(VSITREC(150),U,3)="" S $P(VSITREC(150),U,3)="P"
+ . . Q
+ . ;DSS/SGM -END MODS
  . S VSIT("IEN")=Y
  . S $P(^AUPNVSIT(+Y,0),"^",2,99)=$P(VSITREC(0),"^",2,99)
  . S:$G(VSITREC(21))]"" ^AUPNVSIT(+Y,21)=VSITREC(21)

@@ -1,5 +1,5 @@
-DGDEATH ;ALB/MRL/PJR-PROCESS DECEASED PATIENTS ; 10/27/04 9:45pm
- ;;5.3;Registration;**45,84,101,149,392,545,595,568,563,725,772**;Aug 13, 1993;Build 4
+DGDEATH ;ALB/MRL/PJR-PROCESS DECEASED PATIENTS ; 3/14/11 2:02pm
+ ;;5.3;Registration;**45,84,101,149,392,545,595,568,563,725,772**;Aug 13, 1993;Build 153
  ;
 GET N DGMTI,DATA
  S DGDTHEN="" W !! S DIC="^DPT(",DIC(0)="AEQMZ" D ^DIC G Q:Y'>0 S (DA,DFN)=+Y
@@ -8,7 +8,10 @@ GET N DGMTI,DATA
  I $S($D(^DPT(DFN,.35)):^(.35),1:"") F DGY=0:0 S DGY=$O(^DGPM("ATID1",DFN,DGY)) Q:'DGY  S DGDA=$O(^(DGY,0)) I $D(^DGPM(+DGDA,0)),$P(^(0),"^",17)]"" S DGXX=$P(^(0),"^",17),DGXX=^DGPM(DGXX,0) I "^12^38^"[("^"_$P(DGXX,"^",18)_"^") G DIS
  D NOW^%DTC S DGNOW=%
  S ^TMP("DEATH",$J)=1
- K A W ! S DIE=DIC,DR=".351" D ^DIE
+ ; DSS/LM - Add preliminary cause of death fields
+ ;K A W ! S DIE=DIC,DR=".351" D ^DIE
+ K A W ! S DIE=DIC,DR=".351;S:'(X>0) Y=""@99"";21601.03;21601.04;@99" D ^DIE
+ ; DSS/LM - End modification
  I '$D(^DPT(DFN,.35)) K ^TMP("DEATH",$J) G GET
  S DGDNEW=^DPT(DFN,.35)
  I $P(DGDNEW,"^",1)="",$P(DGDNEW,"^",2)'="" S DR=".352////@" D ^DIE

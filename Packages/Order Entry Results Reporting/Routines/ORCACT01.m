@@ -64,7 +64,12 @@ XFR ; -- transfer to inpt/outpt [IFN=order to be transferred]
  ;
 RW ; -- rewrite/copy
  I ACTSTS=12 S ERROR="Orders that have been dc'd due to editing may not be copied!" Q
- I DG="NV RX" S ERROR="Non-VA Med orders cannot be copied!" Q
+ ;DSS/SMP - BEGIN MODS - Deveteranize error message
+ ;I DG="NV RX" S ERROR="Non-VA Med orders cannot be copied!" Q
+ I DG="NV RX" D  Q
+ . I $G(^%ZOSF("ZVX"))["VX" S ERROR="Meds/OTC from Elsewhere orders cannont be copied!"
+ . E  S ERROR="Non-VA Med orders cannot be copied!"
+ ;DSS/SMP - END MODS
  I DG="TPN" S ERROR="TPN orders may not be rewritten!" Q
  I DG="UD RX",$$NTBG^ORCACT03(+IFN) S ERROR="This order has been marked 'Not to be Given' and may not be rewritten!" Q
  I $$INACTIVE^ORCACT03 S ERROR="Orders for inactive orderables may not be copied; please enter a new order!" Q

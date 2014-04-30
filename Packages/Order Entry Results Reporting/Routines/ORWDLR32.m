@@ -1,14 +1,7 @@
-ORWDLR32 ; SLC/KCM/REV/JDL - Lab Calls; 6/28/2002
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**10,85,141,215,250,243,315**;Dec 17, 1997;Build 20
+ORWDLR32 ; SLC/KCM/REV/JDL - Lab Calls 6/28/2002
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**10,85,141,215,250,243**;Dec 17, 1997;Build 7
  ;
- ; DBIA   91   ^LAB(60
  ; DBIA 2263   GETLST^XPAR  ^TMP($J,"WC")
- ; DBIA 2388   ^LAB(61
- ; DBIA 2389   ^LAB(62
- ; DBIA 2390   ^LAB(62.05
- ; DBIA 2428   DEFURG^LR7OR3
- ; DBIA 2428   TEST^LR7OR3
- ; DBIA 2429   ON^LR7OV4
  ;
 DEF(LST,ALOC,ADIV) ; procedure
  ; For Event Delay Order
@@ -181,17 +174,17 @@ LOAD(LST,TESTID) ; procedure
  . . . I X S $P(LST(ILST),U,10)=$P($G(^LAB(61,X,0)),U,1)
  . . I $D(ORY(PARAM,I,"WP")) S J=0 F  S J=$O(ORY(PARAM,I,"WP",J)) Q:'J  D
  . . . S LST($$NXT)="t"_ORY(PARAM,I,"WP",J,0)
+ ;DSS/RAF - BEGIN MOD
+ D VFD1
+ ;DSS/RAF - END MOD
  Q
 ALLSAMP(LST) ; procedure
  ; returns all collection samples
  ; n^SampIEN^SampName^SpecPtr^TubeTop^^^LabCollect^^SpecName
- N SMP,SPC,ILST,IEN,X,X0,A,%,INC
+ N SMP,SPC,ILST,IEN,X,X0
  S ILST=0,LST($$NXT)="~CollSamp"
  S SMP="" F  S SMP=$O(^LAB(62,"B",SMP)) Q:SMP=""  D
  . S IEN=0 F  S IEN=$O(^LAB(62,"B",SMP,IEN)) Q:'IEN  D
- . . S INC=1 I $D(^LAB(62,IEN,64.91)) D  I 'INC Q
- . . . S A=^LAB(62,IEN,64.91)
- . . . S B=$P(A,"^") D NOW^%DTC I B]"",B'>$P(%,".") S INC=0 Q
  . . S X0=^LAB(62,IEN,0)
  . . S X="i"_U_IEN_U_SMP_U_$P(X0,U,2)_U_$P(X0,U,3)_U_U_U_$P(X0,U,7)
  . . I $P(X0,U,2) D
@@ -228,4 +221,17 @@ ABBSPEC(LST) ; procedure
 NXT() ; called by TESTINFO, increments ILST
  S ILST=ILST+1
  Q ILST
+ ;DSS/RAF - BEGIN MODS
+VFD() N A S A=0 S:$T(VX^VFDI0000)'="" A=$$VX^VFDI0000
+ Q $S(A=0:0,A="VXS":2,1:A["VX")
  ;
+VFD1 ; set default collection type set by test and/or parameter
+ Q:'$$VFD
+ N I,J,X,Y,Z,COLTYP,DIERR,TSTSUB,VFDER
+ S COLTYP=$$GET^XPAR("DIV^SYS","VFD CPRS LAB DEF COLTYP",,"B")
+ Q:COLTYP=""
+ S TSTSUB=$$GET1^DIQ(60,TESTID_",",4,"I",,"VFDER")
+ S X="WC^Ward Collect"
+ S LST($$NXT)="~Collection Types"
+ S LST($$NXT)="d"_$S("SPCYEMMI"[TSTSUB:X,1:COLTYP)
+ Q

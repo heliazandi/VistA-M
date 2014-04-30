@@ -1,5 +1,5 @@
 LRWRKS2 ;SLC/RWF/MILW/JMC - WORK SHEET ACCESSION LIST PART 2 ;2/7/91  14:48 ;
- ;;5.2;LAB SERVICE;**153**;Sep 27, 1994
+ ;;5.2;LAB SERVICE;**153**;Sep 27, 1994;Build 25
  ;MILW/JMC commented out line "HED+1", repeated line at "HED+2", set %DT="T", avoid echoing date/time on print out.
  ;MILW/JMC 3/11/92 Commented out lines "LP4+2", "LP4+4", "LP3+2", "HED+5"
  ;                 Inserted lines "LP3+3", "LP4+5", & "HED+6"
@@ -17,7 +17,14 @@ LP4 S LRACC=^LRO(68,LRAA,1,LRAD,1,LRAN,.2)
  I $L(LRDFN) S LRLLOC=$P(^LRO(68,LRAA,1,LRAD,1,LRAN,0),U,7),LRDOC=$P(^(0),U,8),LRODNUM=$S($D(^(.1)):^(.1),1:""),LRIDT=$S($D(^(3)):9999999-^(3),1:0),LRSPEC=$S($D(^(5,1,0)):+^(0),1:0),LRSPEC=$S($D(^LAB(61,LRSPEC,0)):$P(^(0),U,1),1:"")
  S X=LRDOC,LRLLOC=LRLLOC D DOC^LRX
  S DFN=+$P(^LR(LRDFN,0),U,3),LRDPF=+$P(^(0),U,2),LRV=$S($D(^LR(LRDFN,"CH",LRIDT,0)):$P(^(0),U,3),1:0) D PT^LRX
- W !,LRACC,?17,$E(PNM,1,19),?41,SSN(1) W:LRV " Ver" W ?61,LRURG(LRURG)
+ ;DSS/RAF - BEGIN MOD for MRN label and DOB
+ I $G(VA("MRN"))]"" D
+ . W !,LRACC W:LRV ?17,"Ver" W ?61,LRURG(LRURG)
+ . W !,$E(PNM,1,19),?41,$P($G(VADM(3)),U,2) 
+ . W !,SSN
+ . W !,"----------"
+ E  W !,LRACC,?17,$E(PNM,1,19),?41,SSN(1) W:LRV " Ver" W ?61,LRURG(LRURG)
+ ;DSS/RAF - END MOD
  W !,LRUID,?17,LRCDT,?41,$E(LRDOC,1,18),?61,$E(LRLLOC,1,19)
  ;W !,LRACC,?16,$E(PNM,1,19),?40,SSN W:LRV " Ver" D VA^LRZUTIL
 LP3 ;
@@ -35,6 +42,15 @@ HED ;
  W:LRDC!(IOSL\2<$Y) @IOF
  W !!,"LAB ONLY WORK-SHEET FOR Accession area ",$P(^LRO(68,LRAA,0),U,1),?60,LRDT0,"@"_T W:LRUNC !?5,"Uncompleted work only"
  ;W !,"Accession",?16,"Name",?40,"ID",?50,"Doc",?60,"Loc",?70,"Urgency"
- W !,"Accession",?17,"Name",?41,"ID",?61,"Urgency",!,"UID",?17,"Collection Time",?41,"Doc",?61,"Loc"
+ ;DSS/RAF - BEGIN MOD - add MRN and DOB labels to header
+ I $T(VX^VFDI0000)]"",$$VX^VFDI0000["VX" D
+ . W !,"Accession",?17,?61,"Urgency"
+ . W !,"NAME",?41,"DOB"
+ . W !,$$GET^XPAR("SYS","VFD PATIENT ID LABEL")
+ . W !,"UID",?17,"Collection Time",?41,"Doc",?61,"Loc"
+ E  D
+ . W !,"Accession",?17,"Name",?41,"ID",?61,"Urgency",!,"UID",?17,"Collection Time",?41,"Doc",?61,"Loc"
+ ;W !,"Accession",?17,"Name",?41,"ID",?61,"Urgency",!,"UID",?17,"Collection Time",?41,"Doc",?61,"Loc"
+ ;DSS/RAF - END MOD
  S LRDC=0 D BLANK Q
 END W:$E(IOST,1,2)="P-" @IOF D ^%ZISC Q

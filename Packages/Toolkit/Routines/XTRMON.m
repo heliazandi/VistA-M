@@ -1,6 +1,11 @@
 XTRMON ;ISCSF/RWF - Watch for changes in routine checksums. ;02 Jul 2003 2:59 pm
  ;;7.3;TOOLKIT;**27,59,70**;Apr 25, 1995
 A N CNT,NOW,MODE,RTN,RN,RSUM,TEST,XMB,DA,DIC,X0,OS
+ ;DSS/RAC - BEGIN MOD
+ N VFDVX
+ S VFDVX=$$VFD
+ G:VFDVX ^VFDRTMON
+ ;DSS/RAC - END MOD
  K ^TMP($J)
  S CNT=0,NOW=$$HTFM^XLFDT($H),U="^"
  S RSUM=^%ZOSF("RSUM"),TEST=^%ZOSF("TEST")
@@ -82,3 +87,7 @@ LOST ;Look for routines no-longer in the system
  . S DA=IX,DIK="^DIC(9.8," D ^DIK
  . Q
  Q
+ ;DSS/RAC - Add VFD modules
+VFD() ; Check for vxVistA
+ I $T(VX^VFDI0000)'="",$$VX^VFDI0000["VX" Q 1
+ Q 0

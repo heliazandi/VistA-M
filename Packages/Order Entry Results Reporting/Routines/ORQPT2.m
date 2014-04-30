@@ -1,5 +1,5 @@
 ORQPT2 ; HIRMFO/DAD-Patient Look-Up Security Check and Notification ;1/31/97  07:57
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;;Dec 17, 1997
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;;Dec 17, 1997;Build 153
  ;
 EN1(ORDFN) ;
  ; Sensitive Patient record check
@@ -9,6 +9,9 @@ EN1(ORDFN) ;
  ;   0 - Patient record IS NOT sensitive
  ;   1 - Patient record IS sensitive
  ;
+ ;DSS/LM - Begin modification for 'accessed audit'
+ D VFD(+$G(ORDFN))
+ ;DSS/LM - End modification
  Q ''$$GET1^DIQ(38.1,+$G(ORDFN),2,"I")
  ;
 EN2(ORDFN) ;
@@ -98,3 +101,7 @@ CWAD(DFN) ;
  ; Remove any remaining lower case items
  S ORLST=$TR(ORLST,"cwad")
  Q ORLST
+VFD(DFN) ;DSS/LM [Private] Accessed audit hook
+ Q:$$GET^XPAR("ALL","VFD AUDIT PATIENT LOOKUPS")=0
+ I $G(DFN)>0,$G(DUZ)>0 D ACCESSED^DIET(2,+DFN)
+ Q

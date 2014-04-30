@@ -1,5 +1,5 @@
-PXRMFFAT ;SLC/PKR - Function Finding argument type routines. ;05/02/2011
- ;;2.0;CLINICAL REMINDERS;**4,6,18**;Feb 04, 2005;Build 152
+PXRMFFAT ;SLC/PKR - Function Finding argument type routines. ;09/11/2007
+ ;;2.0;CLINICAL REMINDERS;**4,6**;Feb 04, 2005;Build 123
  ;
  ;============================================
 ARGTYPE(FUNCTION,AN) ;Given a FUNCTION and argument number return the
@@ -9,11 +9,10 @@ ARGTYPE(FUNCTION,AN) ;Given a FUNCTION and argument number return the
  ; S - string
  ; U - undefined
  N ROUTINE
- ;The routine for any function is determined by first removing
- ;the "_" character from the function name and then taking the
- ;first 8 characters. The first 8 character of a function must
- ;be unique.
- S ROUTINE="$$"_$E($TR(FUNCTION,"_",""),1,8)_"(AN)"
+ ;The routine for any function is the same as the name of the
+ ;function except for functions with "_" in the name. In that
+ ;case the "_" is removed.
+ S ROUTINE="$$"_$TR(FUNCTION,"_","")_"(AN)"
  Q @ROUTINE
  ;
  ;============================================
@@ -22,11 +21,7 @@ COUNT(AN) ;
  ;
  ;===========================================
 DIFFDATE(AN) ;
- Q $S(AN=1:"F",AN=2:"F",AN=3:"S",1:"U")
- ;
- ;===========================================
-DTIMEDIF(AN) ;
- Q $S(AN=1:"F",AN=2:"N",AN=3:"S",AN=4:"F",AN=5:"N",AN=6:"S",AN=7:"S",AN=8:"S",1:"U")
+ Q $S(AN=1:"F",AN=2:"F",1:"U")
  ;
  ;===========================================
 DUR(AN) ;
@@ -42,17 +37,9 @@ MAXDATE(AN) ;
  E  Q "U"
  ;
  ;============================================
-MAXVALUE(AN) ;
- Q $S(AN#2=1:"F",AN#2=0:"S",1:"U")
- ;
- ;============================================
 MINDATE(AN) ;
  I AN>0,AN<100 Q "F"
  E  Q "U"
- ;
- ;============================================
-MINVALUE(AN) ;
- Q $S(AN#2=1:"F",AN#2=0:"S",1:"U")
  ;
  ;============================================
 MRD(AN) ;

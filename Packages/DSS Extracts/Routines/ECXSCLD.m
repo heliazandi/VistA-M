@@ -1,5 +1,5 @@
-ECXSCLD ;BIR/DMA,CML-Enter, Print and Edit Entries in 728.44 ;9/4/12  12:55
- ;;3.0;DSS EXTRACTS;**2,8,24,30,71,80,105,112,120,126,132,136**;Dec 22, 1997;Build 28
+ECXSCLD ;BIR/DMA,CML-Enter, Print and Edit Entries in 728.44 ; 6/16/09 3:50pm
+ ;;3.0;DSS EXTRACTS;**2,8,24,30,71,80,105,112,120,126**;Dec 22, 1997;Build 7
 EN ;entry point from option
  ;load entries
  W !!,"This option creates local entries in the DSS CLINIC AND STOP CODES"
@@ -127,17 +127,13 @@ PRINT ; print worksheet for updates
  W !!,"This option produces a worksheet of (A) All Clinics, (C) Active, (I) Inactive, "
  W !,"or only the (U) Unreviewed Clinics that are awaiting approval."
  W !!,"Clinics that were defined as ""inactive"" by MAS the last time the option"
- W !,"""Create DSS Clinic Stop Code File"" was run will be indicated with an ""*""."
- W !!,"Choose (X) for exporting the CLINICS AND STOP CODES FILE to a text file for"
- W !,"spreadsheet use.",!
- S DIR(0)="S^A:ALL CLINICS;C:ALL ACTIVE CLINICS;I:ALL INACTIVE CLINICS;U:UNREVIEWED CLINICS;X:EXPORT TO TEXT FILE FOR SPREADSHEET USE",DIR("A")="Enter ""A"", ""C"", ""I"", ""U"", or ""X"""
+ W !,"""Create DSS Clinic Stop Code File"" was run will be indicated with an ""*"".",!
+ S DIR(0)="S^A:ALL CLINICS;C:ALL ACTIVE CLINICS;I:ALL INACTIVE CLINICS;U:UNREVIEWED CLINICS",DIR("A")="Enter ""A"", ""C"", ""I"", or ""U"""
  S DIR("?",1)="Enter: ""C"" to print a worksheet of all active DSS Clinic Stops,"
  S DIR("?",2)="Enter: ""I"" to print a worksheet of all inactive DSS Clinic  Stops,"
  S DIR("?",3)="Enter: ""A"" to print a worksheet of all DSS Clinic  Stops,"
- S DIR("?",4)="Enter: ""U"" to print only the Clinic Stops that have not been approved."
- S DIR("?")="Enter: ""X"" to export CLINICS AND STOP CODES FILE to a text file."
+ S DIR("?")="       ""U"" to print only the Clinic Stops that have not been approved."
  D ^DIR K DIR G ENDX:$D(DIRUT) S ECALL=$E(Y)
- I ECALL="X" D EXPORT^ECXSCLD1 Q
  ;sync #728.44 with #44 before printing 'unreviewed'
  I ECALL="U" D  Q
  .W !!,?5,"Before the UNREVIEWED CLINICS report prints, the Clinics and"
@@ -198,7 +194,7 @@ SHOWEM ; list clinics for worksheet
 SS ;SCROLL STOPS
  N JJ,SS
  W !,LN
- ;W !,"Key: + - new clinic; ! - updated since last review; * - currently inactiv
+ ;W !,"Key: + - new clinic; ! - updated since last review; * - currently inactive"
  I $E(IOST)="C" S SS=21-$Y F JJ=1:1:SS W !
  I $E(IOST)="C",PG>0 S DIR(0)="E" W ! D ^DIR K DIR I 'Y S QFLG=1 Q
  Q
@@ -212,7 +208,6 @@ EDIT ; put in DSS stopcodes and which one to send
  W !,"CREDIT STOP CODE :",$P(Y(0),U,3),?35,"DSS CREDIT STOP CODE :",$P(Y(0),U,5)
  W !
 EDIT1 ;check input & update field #3; allow '@' deletion; allow bypass empty with no entry
- N DIR ;136
  S OUT=0 F  D  Q:OUT
  .K DIC,DIR,ECXMSG,FDA,AMIS,X,Y
  .S STOP=$P(^ECX(728.44,CLIEN1,0),U,4)
@@ -282,7 +277,7 @@ ENDCHK ;check validity of clinic
  I ERRCHK=1 W !!,"...Errors found please fix." G EDIT1
  ;remaining fields
  S DIE=728.44,DA=+CLIEN1
- S DR="5//1;S:X'=4 Y=6;7;6///"_DT_";8;10" D ^DIE ;136
+ S DR="5//1;S:X'=4 Y=6;7;6///"_DT_";8" D ^DIE
  S:$P(^ECX(728.44,DA,0),U,6)'=4 $P(^(0),U,8)="" S $P(^(0),U,7)=""
  Q
 ERRPRNT ;print errors

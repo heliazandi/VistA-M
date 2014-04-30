@@ -1,5 +1,5 @@
 KMPDTU02 ;OAK/RAK - CP Tools Compile & File Daily Timing Stats ;2/17/04  09:43
- ;;3.0;KMPD;;Jan 22, 2009;Build 42
+ ;;2.0;CAPACITY MANAGEMENT TOOLS;;Mar 22, 2002
  ;
 DAILY ;(KMPDST,KMPDEN);-entry point
  ;-----------------------------------------------------------------------

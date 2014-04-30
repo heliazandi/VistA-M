@@ -1,5 +1,5 @@
-OROCAPI1 ; JMH - ORDER CHECK INSTANCES File APIs;8/24/07 ;03/14/11  09:32
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**293,346**;Dec 17, 1997;Build 5
+OROCAPI1 ; JMH - ORDER CHECK INSTANCES File APIs;8/24/07 ;06/08/10  11:48
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**293**;Dec 17, 1997;Build 20
 SAVEOC(ORL,RET) ;SAVE A GROUP OF ORDER CHECKS
          ;ORL=LIST OF ORDER CHECKS
          ;(D0,1)=ORDER NUMBER (FILE 100)^
@@ -25,7 +25,7 @@ SAVEOC(ORL,RET) ;SAVE A GROUP OF ORDER CHECKS
          .S DR="1////"_ORSTATUS_";2////"_$P($G(ORL(I,1)),U,2)_";3////"_$P($G(ORL(I,1)),U,3)_";4////"_$P($G(ORL(I,1)),U,4)_";5////"_$P($G(ORL(I,1)),U,5)_";6////"_ORDANG_";8///"_$TR($G(ORL(I,2)),";",",")_";7///"_$TR($G(ORL(I,3)),";",",")
          .D ^DIE
          .;set ^ORD(100.05,DA,2) if ORL(DO,2,1) exists
-         .I $D(ORL(I,2))=11 N J S J=0 F  S J=$O(ORL(I,2,J)) Q:'J  S ^ORD(100.05,DA,2,J+1,0)=ORL(I,2,J)
+         .I $D(ORL(I,2,1)) N J S J=0 F  S J=$O(ORL(I,2,J)) Q:'J  S ^ORD(100.05,DA,2,J+1,0)=ORL(I,2,J)
          Q
 GETOC1(IEN,RET) ;GET A SINGLE ORDER CHECK
          ;IEN = 100.05 IEN

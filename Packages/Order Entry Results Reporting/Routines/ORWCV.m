@@ -1,5 +1,5 @@
 ORWCV ; SLC/KCM - Background Cover Sheet Load; ; 06/10/09
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**10,85,109,132,209,214,195,215,260,243,282,302,280**;Dec 17, 1997;Build 85
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**10,85,109,132,209,214,195,215,260,243,282,302,280**;Dec 17, 1997;Build 7
  ;
  ;
  ; DBIA 1096    Reference to ^DGPM("ATID1"
@@ -76,7 +76,9 @@ ERR ;Error trap
  . S ^XTMP(NODE,"DONE")=1
  . L -^XTMP(NODE)
  D @^%ZOSF("ERRTN") ;file error
- S $ECODE=",UOR70 error during Cover Sheet build,"
+ ;DSS/SGM - BEGIN MODS - Cache does not allow SET $EC, comment out
+ ;S $ECODE=",UOR70 error during Cover Sheet build,"
+ ;DSS/SGM - END MODS
  Q
 UNWIND ;Unwind Error stack
  Q:$ESTACK>1  ;pop the stack
@@ -97,7 +99,11 @@ POLL(LST,DFN,IP,HWND) ; poll for completed cover sheet parts
  F ID="PROB","CWAD","MEDS","RMND","LABS","VITL","VSIT" D
  . I '$G(^XTMP(NODE,ID)) Q
  . S ILST=ILST+1,LST(ILST)="~"_ID
- . S I=0 F  S I=$O(^XTMP(NODE,ID,I)) Q:'I  S ILST=ILST+1,LST(ILST)="i"_^(I)
+ . ;DSS/RAF - BEGIN MOD - original line now argument of 'E  '
+ . ;adding screen to filter POC tests from recent LABS on coversheet
+ . I ID["LABS",$$VFD3
+ . E  S I=0 F  S I=$O(^XTMP(NODE,ID,I)) Q:'I  S ILST=ILST+1,LST(ILST)="i"_^(I)
+ . ;DSS/RAF - END MOD
  . K ^XTMP(NODE,ID)
  ; Stop capacity planning timing clock - was started in START code
  I DONE K ^XTMP(NODE) I +$G(^KMPTMP("KMPD-CPRS")) S $P(^KMPTMP("KMPDT","ORWCV",NODE),"^",2)=$H
@@ -131,6 +137,9 @@ TEST ;D VST(.ZZZ,76,2950101,3050401,777,1,1)
  Q
 VST(ORVISIT,DFN,BEG,END,SKIP,ERR,ERRMSG) ; return appts/admissions for patient
  N CHECKERR,VAERR,VASD,BDT,COUNT,DTM,EDT,LOC,NOW,ORQUERY,ORLST,STI,STS,TODAY,I,J,K,XI,XE,X
+ ;DSS/CRL - BEGIN MODS - set vxVistA flag for use below
+ N VFD I $T(VX^VFDI0000)'="",$$VX^VFDI0000["VX" S VFD=1
+ ;DSS/CRL - END MODS
  S CHECKERR=($G(ERR)=0) ; kludge to check for errors
  S NOW=$$NOW^XLFDT(),TODAY=$P(NOW,".",1)
  I '$G(BEG) S BEG=$$X2FM($$RNGVBEG)
@@ -148,7 +157,10 @@ VST(ORVISIT,DFN,BEG,END,SKIP,ERR,ERRMSG) ; return appts/admissions for patient
  . . S XI=^UTILITY("VASD",$J,I,"I"),XE=^("E")
  . . S DTM=$P(XI,U),IEN=$P(XI,U,2),STI=$P(XI,U,3)
  . . S LOC=$P(XE,U,2),STS=$P(XE,U,3)
- . . I DTM<TODAY,(STI=""!(STI["I")!(STI="NT")) Q  ; no prior kept appts
+ . . ;DSS/SGM - BEGIN MODS - orig code now argument of 'E  I'
+ . . N A S A=$$VFD1 Q:A=-1  I A
+ . . E  I DTM<TODAY,(STI=""!(STI["I")!(STI="NT")) Q  ; no prior kept appts
+ . . ;DSS/SGM - END MODS - sliding window for appts
  . . S ^TMP("ORVSTLIST",$J,DTM,"A",1)="A;"_DTM_";"_IEN_U_DTM_U_LOC_U_STS
  . K ^UTILITY("VASD",$J)
  I BEG'>NOW D  ;past encounters from ACRP Toolkit - set in CALLBACK
@@ -183,6 +195,9 @@ VST(ORVISIT,DFN,BEG,END,SKIP,ERR,ERRMSG) ; return appts/admissions for patient
  . . S K=0 F  S K=$O(^TMP("ORVSTLIST",$J,I,J,K)) Q:'K  D
  . . . S COUNT=COUNT+1
  . . . S ORVISIT(COUNT)=^TMP("ORVSTLIST",$J,I,J,K)
+ ;DSS/SGM - BEGIN MODS - assign a default location
+ D VFD2
+ ;DSS/SGM - END MODS
  K ^TMP("ORVSTLIST",$J)
  Q
 CALLBACK(IEN,NODE0,ARRAY,STOP) ; called back from ACRP Toolkit for encounters
@@ -235,3 +250,34 @@ RANGES(REC,DFN) ; return ranges given a patient
  N REC
  S REC=$$RNGLAB(DFN)_U_$$RNGVBEG_U_$$RNGVEND
  Q
+ ;DSS/SGM - BEGIN MODS - lines add at end of routine
+VFD() N A S A=0 S:$T(VX^VFDI0000) A=$$VX^VFDI0000
+ Q $S('A:0,A="VXS":2,1:A["VX")
+ ;
+VFD1() ; called from VST module
+ ;I DTM<TODAY,(STI=""!(STI["I")!(STI="NT")) Q  ; no prior kept appts
+ I '$$VFD Q 0
+ N I,J,X,Y,Z
+ S X=+$$GET^XPAR("SYS","VFD SD APPOINTMENT WINDOW")
+ S Y=DTM S:X Y=$$FMADD^XLFDT(DTM,X) S Z=1
+ I Y<TODAY,(STI=""!(STI["I")!(STI="NT")) S Z=-1
+ Q Z
+ ;
+VFD2 ; called from VST module
+ I $$VFD=2,$T(LOCMAP^VFDSD001)'="" D LOCMAP^VFDSD001(.ORVISIT)
+ Q
+ ;
+VFD3() ; called from POLL module
+ I '$$VFD Q 0
+ I '$$GET^XPAR("ALL","VFD CPRS LAB SCREEN POC",,"I") Q 0
+ S I=0 F  S I=$O(^XTMP(NODE,ID,I)) Q:'I  I '$$VFD4(+$G(^XTMP(NODE,ID,I))) S ILST=ILST+1,LST(ILST)="i"_^XTMP(NODE,ID,I)
+ Q 1
+ ;
+VFD4(VFDIEN) ;
+ N DIERR,IEN60,ORDITM,RET,VFDER
+ S RET=0
+ S ORDITM=$$VALUE^ORX8(VFDIEN,"ORDERABLE",,"I") I +ORDITM D
+ . S IEN60=+$$GET1^DIQ(101.43,ORDITM_",",2,"I","VFDER")
+ . I +IEN60,$$GET1^DIQ(60,IEN60_",",.01,"E","VFDER")["POC~" S RET=1
+ . Q
+ Q RET

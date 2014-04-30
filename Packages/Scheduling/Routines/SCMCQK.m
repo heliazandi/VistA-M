@@ -1,10 +1,5 @@
-SCMCQK ;ALB/REW - Single Pt Tm/Pt Tm Pos Assign and Discharge ; 5/17/12 1:39pm
- ;;5.3;Scheduling;**148,177,297,563**;AUG 13, 1993;Build 45
- ;
- ;
- ; Reference/ICR
- ; ^DPT(DFN,.35)/10035
- ;
+SCMCQK ;ALB/REW - Single Pt Tm/Pt Tm Pos Assign and Discharge ; 1 Jul 1998
+ ;;5.3;Scheduling;**148,177,297**;AUG 13, 1993
  ;
 EN ; - main call
  W !,"Primary Care Team/PC Assignment/Unassignment",!
@@ -26,18 +21,7 @@ EN ; - main call
  ;
 PAT ;process patient
  Q:'$G(DFN)
- N SCTPSTAT,SCTMSTAT,SCSTAT,SCTM,SCTP,SDDOD,SDDODRES,SDUSRANS
- ;If patient is deceased prompt user to continue SD*5.3*563
- I $P($G(^DPT(DFN,.35)),U)'="" D  I SDUSRANS'="Y" Q
- .S SDDOD=$P(^DPT(DFN,.35),U)
- .S SDDODRES=$$FMTE^XLFDT(SDDOD)
- .W !!,"This Patient is deceased as of "_SDDODRES_". Would you like to continue?"
- .S DIR(0)="SA^Y:YES;N:NO"
- .S DIR("B")="NO"
- .S DIR("?")="[Y]ES=continue with current patient, [N]o=select a new patient or quit"
- .W ! D ^DIR K DIR S SDUSRANS=Y
- .I $D(DIRUT) K DIRUT,DUOUT,DTOUT,X,Y Q
- ;End SD*5.3*563
+ N SCTPSTAT,SCTMSTAT,SCSTAT,SCTM,SCTP
  W !,"Checking PC Team and Position Status...",!
  ;display PC info, check if patient has a current PC team
  D PCMM^SCRPU4(DFN,DT)

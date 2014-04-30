@@ -1,5 +1,5 @@
 MHVXPAT ;WAS/DLF - Patient extract ; 9/25/08 4:11pm
- ;;1.0;My HealtheVet;**6,9**;Aug 23, 2005;Build 24
+ ;;1.0;My HealtheVet;**6**;Aug 23, 2005;Build 82
  ;;Per VHA Directive 2004-038, this routine should not be modified.
  ;
  Q
@@ -7,7 +7,6 @@ MHVXPAT ;WAS/DLF - Patient extract ; 9/25/08 4:11pm
  ;  Integration Agreements:
  ;
  ;               10060 : New Person file #200
- ;                1252 : OUTPTPR^SDUTL3
  ;                1916 : PTPR^SCAPMC
  ;                       PRPT^SCAPMC
  ;                3859 : GETAPPT^SDAMA201
@@ -235,15 +234,11 @@ PTREL(QRY,ERR,DATAROOT)                       ; patient relationships
  M ^TMP("MHVXPAT",$J,"TEAMS")=MHVTEAMS
  ;
  ;Load Providers
- S RSLTLST=$NA(^TMP(RTN,$J,"PROVIDERS"))
- ;S (SCPOSA,SCUSRA,SCROLEA,SCPURPA,SCER)=""
- ;S X=$$PRPT^SCAPMC(PATIEN,.MHVDATES,SCPOSA,SCUSRA,SCROLEA,SCPURPA,RSLTLST,SCER)
  ;
- S X=$$OUTPTPR^SDUTL3(PATIEN) ;MHV*1*9 Always return PC
- I +X  D
- .S ^TMP(RTN,$J,"PROVIDERS",0)=""
- .S ^TMP(RTN,$J,"PROVIDERS",1)=X
- .S $P(^TMP(RTN,$J,"PROVIDERS",1),U,8)="PHYSICIAN-PRIMARY CARE"
+ S (SCPOSA,SCUSRA,SCROLEA,SCPURPA,SCER)=""
+ S RSLTLST=$NA(^TMP(RTN,$J,"PROVIDERS"))
+ S X=$$PRPT^SCAPMC(PATIEN,.MHVDATES,SCPOSA,SCUSRA,SCROLEA,SCPURPA,RSLTLST,SCER)
+ ;
  ; now save results
  ;
  N MHVHDAT
