@@ -1,5 +1,9 @@
-HDISVF01 ;BPFO/JRP - FILE UTILITIES/API;12/20/2004 ; 07 Mar 2005  9:53 AM
- ;;1.0;HEALTH DATA & INFORMATICS;**1**;Feb 22, 2005
+HDISVF01 ;BPFO/JRP - FILE UTILITIES/API;12/20/2004 ; 09 Apr 2015
+ ;;1.0;HEALTH DATA & INFORMATICS;**1,10002**;Feb 22, 2005
+ ;
+ ; Submitted to OSEHRA 10/20/2014 by George Lilly
+ ; Original routine authored by U.S. Department of Veterans Affairs 1980-2005
+ ; Screen entry point modified by George Lilly 2015
  ;
  ;---- Begin HDIS VUID IMPLEMENTATION STATUS file (#7118.25) APIs ----
  ;
@@ -119,6 +123,16 @@ SCREEN(FILE,FIELD,DATE) ;Apply screening logic to file/field ?
  S SCREEN=0
  S FILE=+$G(FILE)
  I 'FILE Q SCREEN
+ ;
+ ; BEGIN OSEHRA CHANGE
+ ;
+ ; Return 1 if file is 120.82 or 120.83 to allow screening of inactive
+ ; Allergies regardless of the state of the HDIS tables. 4/8/2015 gpl
+ ;
+ I FILE=120.82!(FILE=120.83) Q 1
+ ;
+ ; END OSEHRA CHANGE
+ ;
  S FIELD=+$G(FIELD)
  I 'FIELD S FIELD=.01
  S DATE=+$G(DATE)
