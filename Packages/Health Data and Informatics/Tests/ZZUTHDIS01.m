@@ -1,8 +1,8 @@
 ZZUTHDIS01 ;KRM/CJE - HDISVF01 unit tests ;04/16/2015 ; 4/16/15
  ;;1.0;UNIT TEST;;Aug 28, 2013;Build 1
  ; makes it easy to run tests simply by running this routine and
- ; insures that XTMUNIT will be run only where it is present
- I $T(EN^XTMUNIT)'="" D EN^XTMUNIT("ZZUTHDIS01")
+ ; insures that M-Unit will be run only where it is present
+ I $T(EN^%ut)'="" D EN^%ut("ZZUTHDIS01")
  Q
  ;
 STARTUP ; optional entry point
@@ -28,15 +28,15 @@ TEARDOWN ; optional entry point
  ;
 ALLERGY ;; @TEST that an inactive allergy is active
  ; ensure that the screen for allergy is active
- D CHKEQ^XTMUNIT(1,$$SCREEN^HDISVF01(120.82),"Allergy screen not active")
+ D CHKEQ^%ut(1,$$SCREEN^HDISVF01(120.82),"Allergy screen not active")
  Q
  ;
 SIGNS ;; @TEST that an inactive sign/symptom is active
  ; ensure that the screen for sign/symptom is active
- D CHKEQ^XTMUNIT(1,$$SCREEN^HDISVF01(120.83),"Sign/Symptom Screen not active")
+ D CHKEQ^%ut(1,$$SCREEN^HDISVF01(120.83),"Sign/Symptom Screen not active")
  Q
  ;
 DOSE ;; @TEST that an DOSE UNITS screen is inactive
  ; ensure that the screen for other is inactive
- D CHKEQ^XTMUNIT(0,$$SCREEN^HDISVF01(51.24),"DOSE UNITS Screen is active")
+ D CHKEQ^%ut(0,$$SCREEN^HDISVF01(51.24),"DOSE UNITS Screen is active")
  ;
