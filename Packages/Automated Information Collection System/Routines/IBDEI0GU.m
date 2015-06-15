@@ -1,136 +1,142 @@
-IBDEI0GU ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0GU ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8178,1,0)
+ ;;^UTILITY(U,$J,358.3,8144,0)
+ ;;=364.41^^52^578^50
+ ;;^UTILITY(U,$J,358.3,8144,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8178,1,3,0)
- ;;=3^Old Retinal Detachment, Partial
- ;;^UTILITY(U,$J,358.3,8178,1,4,0)
- ;;=4^361.06
- ;;^UTILITY(U,$J,358.3,8178,2)
- ;;=Old Retinal Detachment, Part^268591
- ;;^UTILITY(U,$J,358.3,8179,0)
- ;;=361.07^^58^607^66
- ;;^UTILITY(U,$J,358.3,8179,1,0)
+ ;;^UTILITY(U,$J,358.3,8144,1,3,0)
+ ;;=3^Hyphema
+ ;;^UTILITY(U,$J,358.3,8144,1,4,0)
+ ;;=4^364.41
+ ;;^UTILITY(U,$J,358.3,8144,2)
+ ;;=Hyphema^60498
+ ;;^UTILITY(U,$J,358.3,8145,0)
+ ;;=364.05^^52^578^51
+ ;;^UTILITY(U,$J,358.3,8145,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8179,1,3,0)
- ;;=3^Old Retinal Detachment,Total/Subtotal
- ;;^UTILITY(U,$J,358.3,8179,1,4,0)
- ;;=4^361.07
- ;;^UTILITY(U,$J,358.3,8179,2)
- ;;=Old Retinal Detacment, Total^268592
- ;;^UTILITY(U,$J,358.3,8180,0)
- ;;=362.57^^58^607^35
- ;;^UTILITY(U,$J,358.3,8180,1,0)
+ ;;^UTILITY(U,$J,358.3,8145,1,3,0)
+ ;;=3^Hypopyon
+ ;;^UTILITY(U,$J,358.3,8145,1,4,0)
+ ;;=4^364.05
+ ;;^UTILITY(U,$J,358.3,8145,2)
+ ;;=Hypopion^60720
+ ;;^UTILITY(U,$J,358.3,8146,0)
+ ;;=365.02^^52^578^4
+ ;;^UTILITY(U,$J,358.3,8146,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8180,1,3,0)
- ;;=3^Drusen
- ;;^UTILITY(U,$J,358.3,8180,1,4,0)
- ;;=4^362.57
- ;;^UTILITY(U,$J,358.3,8180,2)
- ;;=Drusen^105561
- ;;^UTILITY(U,$J,358.3,8181,0)
- ;;=362.55^^58^607^101
- ;;^UTILITY(U,$J,358.3,8181,1,0)
+ ;;^UTILITY(U,$J,358.3,8146,1,3,0)
+ ;;=3^Angle, Narrow
+ ;;^UTILITY(U,$J,358.3,8146,1,4,0)
+ ;;=4^365.02
+ ;;^UTILITY(U,$J,358.3,8146,2)
+ ;;=Angle, Narrow^268748
+ ;;^UTILITY(U,$J,358.3,8147,0)
+ ;;=372.63^^52^578^117
+ ;;^UTILITY(U,$J,358.3,8147,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8181,1,3,0)
- ;;=3^Toxic Maculopathy
- ;;^UTILITY(U,$J,358.3,8181,1,4,0)
- ;;=4^362.55
- ;;^UTILITY(U,$J,358.3,8181,2)
- ;;=Toxic Maculopathy^268640
- ;;^UTILITY(U,$J,358.3,8182,0)
- ;;=363.31^^58^607^99
- ;;^UTILITY(U,$J,358.3,8182,1,0)
+ ;;^UTILITY(U,$J,358.3,8147,1,3,0)
+ ;;=3^Symblepharon
+ ;;^UTILITY(U,$J,358.3,8147,1,4,0)
+ ;;=4^372.63
+ ;;^UTILITY(U,$J,358.3,8147,2)
+ ;;=Symblepharon^265885
+ ;;^UTILITY(U,$J,358.3,8148,0)
+ ;;=372.75^^52^578^27
+ ;;^UTILITY(U,$J,358.3,8148,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8182,1,3,0)
- ;;=3^Solar Retinopathy
- ;;^UTILITY(U,$J,358.3,8182,1,4,0)
- ;;=4^363.31
- ;;^UTILITY(U,$J,358.3,8182,2)
- ;;=Solar Retinopathy^265207
- ;;^UTILITY(U,$J,358.3,8183,0)
- ;;=363.32^^58^607^56
- ;;^UTILITY(U,$J,358.3,8183,1,0)
+ ;;^UTILITY(U,$J,358.3,8148,1,3,0)
+ ;;=3^Cysts, Conjunctival
+ ;;^UTILITY(U,$J,358.3,8148,1,4,0)
+ ;;=4^372.75
+ ;;^UTILITY(U,$J,358.3,8148,2)
+ ;;=Cysts, Conjunctival^269049
+ ;;^UTILITY(U,$J,358.3,8149,0)
+ ;;=364.81^^52^578^43
+ ;;^UTILITY(U,$J,358.3,8149,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8183,1,3,0)
- ;;=3^Macular Scars
- ;;^UTILITY(U,$J,358.3,8183,1,4,0)
- ;;=4^363.32
- ;;^UTILITY(U,$J,358.3,8183,2)
- ;;=Macular Scars^268680
- ;;^UTILITY(U,$J,358.3,8184,0)
- ;;=362.83^^58^607^53
- ;;^UTILITY(U,$J,358.3,8184,1,0)
+ ;;^UTILITY(U,$J,358.3,8149,1,3,0)
+ ;;=3^Floppy Iris Syndrome
+ ;;^UTILITY(U,$J,358.3,8149,1,4,0)
+ ;;=4^364.81
+ ;;^UTILITY(U,$J,358.3,8149,2)
+ ;;=^335254
+ ;;^UTILITY(U,$J,358.3,8150,0)
+ ;;=006.9^^52^578^2
+ ;;^UTILITY(U,$J,358.3,8150,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8184,1,3,0)
- ;;=3^Macular Edema (Csme)
- ;;^UTILITY(U,$J,358.3,8184,1,4,0)
- ;;=4^362.83
- ;;^UTILITY(U,$J,358.3,8184,2)
- ;;=Macular Edema (CSME)^89576
- ;;^UTILITY(U,$J,358.3,8185,0)
- ;;=362.84^^58^607^87
- ;;^UTILITY(U,$J,358.3,8185,1,0)
+ ;;^UTILITY(U,$J,358.3,8150,1,3,0)
+ ;;=3^Amebiasis
+ ;;^UTILITY(U,$J,358.3,8150,1,4,0)
+ ;;=4^006.9
+ ;;^UTILITY(U,$J,358.3,8150,2)
+ ;;=^5818
+ ;;^UTILITY(U,$J,358.3,8151,0)
+ ;;=190.8^^52^578^60
+ ;;^UTILITY(U,$J,358.3,8151,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8185,1,3,0)
- ;;=3^Retinal Ischemia
- ;;^UTILITY(U,$J,358.3,8185,1,4,0)
- ;;=4^362.84
- ;;^UTILITY(U,$J,358.3,8185,2)
- ;;=Retinal Ischemia^276868
- ;;^UTILITY(U,$J,358.3,8186,0)
- ;;=363.20^^58^607^14
- ;;^UTILITY(U,$J,358.3,8186,1,0)
+ ;;^UTILITY(U,$J,358.3,8151,1,3,0)
+ ;;=3^Iris Melanoma,Contiguous Site
+ ;;^UTILITY(U,$J,358.3,8151,1,4,0)
+ ;;=4^190.8
+ ;;^UTILITY(U,$J,358.3,8151,2)
+ ;;=^267278
+ ;;^UTILITY(U,$J,358.3,8152,0)
+ ;;=224.1^^52^578^93
+ ;;^UTILITY(U,$J,358.3,8152,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8186,1,3,0)
- ;;=3^Chorioretinitis
- ;;^UTILITY(U,$J,358.3,8186,1,4,0)
- ;;=4^363.20
- ;;^UTILITY(U,$J,358.3,8186,2)
- ;;=Chorioretinitis^23913
- ;;^UTILITY(U,$J,358.3,8187,0)
- ;;=115.92^^58^607^43
- ;;^UTILITY(U,$J,358.3,8187,1,0)
+ ;;^UTILITY(U,$J,358.3,8152,1,3,0)
+ ;;=3^Orbit Neoplasm,Benign
+ ;;^UTILITY(U,$J,358.3,8152,1,4,0)
+ ;;=4^224.1
+ ;;^UTILITY(U,$J,358.3,8152,2)
+ ;;=^267671
+ ;;^UTILITY(U,$J,358.3,8153,0)
+ ;;=360.33^^52^578^52
+ ;;^UTILITY(U,$J,358.3,8153,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8187,1,3,0)
- ;;=3^Histoplamosis (Pohs)
- ;;^UTILITY(U,$J,358.3,8187,1,4,0)
- ;;=4^115.92
- ;;^UTILITY(U,$J,358.3,8187,2)
- ;;=Histoplamosis Retinitis^266905
- ;;^UTILITY(U,$J,358.3,8188,0)
- ;;=363.70^^58^607^15
- ;;^UTILITY(U,$J,358.3,8188,1,0)
+ ;;^UTILITY(U,$J,358.3,8153,1,3,0)
+ ;;=3^Hypotony,Assoc w/ Ocular D/O
+ ;;^UTILITY(U,$J,358.3,8153,1,4,0)
+ ;;=4^360.33
+ ;;^UTILITY(U,$J,358.3,8153,2)
+ ;;=^268560
+ ;;^UTILITY(U,$J,358.3,8154,0)
+ ;;=224.8^^52^578^86
+ ;;^UTILITY(U,$J,358.3,8154,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8188,1,3,0)
- ;;=3^Choroidal Detachment
- ;;^UTILITY(U,$J,358.3,8188,1,4,0)
- ;;=4^363.70
- ;;^UTILITY(U,$J,358.3,8188,2)
- ;;=Choroidal Detachment^276841
- ;;^UTILITY(U,$J,358.3,8189,0)
- ;;=363.63^^58^607^19
- ;;^UTILITY(U,$J,358.3,8189,1,0)
+ ;;^UTILITY(U,$J,358.3,8154,1,3,0)
+ ;;=3^Neopl Eye Bgn,Oth Iris Nevus
+ ;;^UTILITY(U,$J,358.3,8154,1,4,0)
+ ;;=4^224.8
+ ;;^UTILITY(U,$J,358.3,8154,2)
+ ;;=^267678
+ ;;^UTILITY(U,$J,358.3,8155,0)
+ ;;=364.01^^52^578^103
+ ;;^UTILITY(U,$J,358.3,8155,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8189,1,3,0)
- ;;=3^Choroidal Rupture
- ;;^UTILITY(U,$J,358.3,8189,1,4,0)
- ;;=4^363.63
- ;;^UTILITY(U,$J,358.3,8189,2)
- ;;=Choroidal Rupture^268698
- ;;^UTILITY(U,$J,358.3,8190,0)
- ;;=379.22^^58^607^5
- ;;^UTILITY(U,$J,358.3,8190,1,0)
+ ;;^UTILITY(U,$J,358.3,8155,1,3,0)
+ ;;=3^Prim Iridocyclitis
+ ;;^UTILITY(U,$J,358.3,8155,1,4,0)
+ ;;=4^364.01
+ ;;^UTILITY(U,$J,358.3,8155,2)
+ ;;=^268704
+ ;;^UTILITY(U,$J,358.3,8156,0)
+ ;;=364.04^^52^578^53
+ ;;^UTILITY(U,$J,358.3,8156,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8190,1,3,0)
- ;;=3^Asteroid Hyalosis
- ;;^UTILITY(U,$J,358.3,8190,1,4,0)
- ;;=4^379.22
- ;;^UTILITY(U,$J,358.3,8190,2)
- ;;=Asteroid Hyalosis^269310
- ;;^UTILITY(U,$J,358.3,8191,0)
- ;;=379.21^^58^607^104
- ;;^UTILITY(U,$J,358.3,8191,1,0)
+ ;;^UTILITY(U,$J,358.3,8156,1,3,0)
+ ;;=3^Iridociclyties 2ary,Non Infectious
+ ;;^UTILITY(U,$J,358.3,8156,1,4,0)
+ ;;=4^364.04
+ ;;^UTILITY(U,$J,358.3,8156,2)
+ ;;=^268710
+ ;;^UTILITY(U,$J,358.3,8157,0)
+ ;;=364.21^^52^578^46
+ ;;^UTILITY(U,$J,358.3,8157,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8157,1,3,0)
+ ;;=3^Fuch's Hetero Cyclitis
+ ;;^UTILITY(U,$J,358.3,8157,1,4,0)
+ ;;=4^364.21

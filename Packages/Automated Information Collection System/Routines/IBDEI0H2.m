@@ -1,142 +1,128 @@
-IBDEI0H2 ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0H2 ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8286,1,0)
+ ;;^UTILITY(U,$J,358.3,8252,1,4,0)
+ ;;=4^361.31
+ ;;^UTILITY(U,$J,358.3,8252,2)
+ ;;=Peripheral Retinal Hole^268605
+ ;;^UTILITY(U,$J,358.3,8253,0)
+ ;;=362.51^^52^580^2
+ ;;^UTILITY(U,$J,358.3,8253,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8286,1,3,0)
- ;;=3^Pituitary/Craniopharyngeal Neopl,Benign
- ;;^UTILITY(U,$J,358.3,8286,1,4,0)
- ;;=4^227.3
- ;;^UTILITY(U,$J,358.3,8286,2)
- ;;=^267690
- ;;^UTILITY(U,$J,358.3,8287,0)
- ;;=237.0^^58^608^104
- ;;^UTILITY(U,$J,358.3,8287,1,0)
+ ;;^UTILITY(U,$J,358.3,8253,1,3,0)
+ ;;=3^Age Macular Degeneration, Dry (Armd)
+ ;;^UTILITY(U,$J,358.3,8253,1,4,0)
+ ;;=4^362.51
+ ;;^UTILITY(U,$J,358.3,8253,2)
+ ;;=^268636
+ ;;^UTILITY(U,$J,358.3,8254,0)
+ ;;=362.52^^52^580^3
+ ;;^UTILITY(U,$J,358.3,8254,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8287,1,3,0)
- ;;=3^Pituitary/Craniopharyngeal Neopl,Uncert
- ;;^UTILITY(U,$J,358.3,8287,1,4,0)
- ;;=4^237.0
- ;;^UTILITY(U,$J,358.3,8287,2)
- ;;=^81969
- ;;^UTILITY(U,$J,358.3,8288,0)
- ;;=250.52^^58^608^27
- ;;^UTILITY(U,$J,358.3,8288,1,0)
+ ;;^UTILITY(U,$J,358.3,8254,1,3,0)
+ ;;=3^Age Macular Degeneration, Wet (Armd)
+ ;;^UTILITY(U,$J,358.3,8254,1,4,0)
+ ;;=4^362.52
+ ;;^UTILITY(U,$J,358.3,8254,2)
+ ;;=Macular Degeneration, Wet^268637
+ ;;^UTILITY(U,$J,358.3,8255,0)
+ ;;=362.32^^52^580^6
+ ;;^UTILITY(U,$J,358.3,8255,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8288,1,3,0)
- ;;=3^DM II w/Ophthalmic,Uncontrolled
- ;;^UTILITY(U,$J,358.3,8288,1,4,0)
- ;;=4^250.52
- ;;^UTILITY(U,$J,358.3,8288,2)
- ;;=^331801
- ;;^UTILITY(U,$J,358.3,8289,0)
- ;;=253.8^^58^608^35
- ;;^UTILITY(U,$J,358.3,8289,1,0)
+ ;;^UTILITY(U,$J,358.3,8255,1,3,0)
+ ;;=3^Brao/Branch Retinal Artery Occlusion
+ ;;^UTILITY(U,$J,358.3,8255,1,4,0)
+ ;;=4^362.32
+ ;;^UTILITY(U,$J,358.3,8255,2)
+ ;;=ARTERIAL BRANCH OCCLUSION^16756
+ ;;^UTILITY(U,$J,358.3,8256,0)
+ ;;=362.15^^52^580^100
+ ;;^UTILITY(U,$J,358.3,8256,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8289,1,3,0)
- ;;=3^Empty Sella/Turcica
- ;;^UTILITY(U,$J,358.3,8289,1,4,0)
- ;;=4^253.8
- ;;^UTILITY(U,$J,358.3,8289,2)
- ;;=^87533
- ;;^UTILITY(U,$J,358.3,8290,0)
- ;;=300.11^^58^608^55
- ;;^UTILITY(U,$J,358.3,8290,1,0)
+ ;;^UTILITY(U,$J,358.3,8256,1,3,0)
+ ;;=3^Telangiectasia
+ ;;^UTILITY(U,$J,358.3,8256,1,4,0)
+ ;;=4^362.15
+ ;;^UTILITY(U,$J,358.3,8256,2)
+ ;;=Retinal Telangiectasia^268616
+ ;;^UTILITY(U,$J,358.3,8257,0)
+ ;;=362.60^^52^580^30
+ ;;^UTILITY(U,$J,358.3,8257,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8290,1,3,0)
- ;;=3^Hysterical Blindness
- ;;^UTILITY(U,$J,358.3,8290,1,4,0)
- ;;=4^300.11
- ;;^UTILITY(U,$J,358.3,8290,2)
- ;;=^28139
- ;;^UTILITY(U,$J,358.3,8291,0)
- ;;=307.81^^58^608^48
- ;;^UTILITY(U,$J,358.3,8291,1,0)
+ ;;^UTILITY(U,$J,358.3,8257,1,3,0)
+ ;;=3^Degeneration, Periph, Retina
+ ;;^UTILITY(U,$J,358.3,8257,1,4,0)
+ ;;=4^362.60
+ ;;^UTILITY(U,$J,358.3,8257,2)
+ ;;=Peripheral Retinal Degeneration^92193
+ ;;^UTILITY(U,$J,358.3,8258,0)
+ ;;=362.81^^52^580^86
+ ;;^UTILITY(U,$J,358.3,8258,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8291,1,3,0)
- ;;=3^Headache,Tension
- ;;^UTILITY(U,$J,358.3,8291,1,4,0)
- ;;=4^307.81
- ;;^UTILITY(U,$J,358.3,8291,2)
- ;;=^100405
- ;;^UTILITY(U,$J,358.3,8292,0)
- ;;=325.^^58^608^18
- ;;^UTILITY(U,$J,358.3,8292,1,0)
+ ;;^UTILITY(U,$J,358.3,8258,1,3,0)
+ ;;=3^Retinal Hemorrhage
+ ;;^UTILITY(U,$J,358.3,8258,1,4,0)
+ ;;=4^362.81
+ ;;^UTILITY(U,$J,358.3,8258,2)
+ ;;=Retinal Hemorrhage^105587
+ ;;^UTILITY(U,$J,358.3,8259,0)
+ ;;=190.6^^52^580^57
+ ;;^UTILITY(U,$J,358.3,8259,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8292,1,3,0)
- ;;=3^Cavernous Sinus Thrombosis
- ;;^UTILITY(U,$J,358.3,8292,1,4,0)
- ;;=4^325.
- ;;^UTILITY(U,$J,358.3,8292,2)
- ;;=^268392
- ;;^UTILITY(U,$J,358.3,8293,0)
- ;;=332.0^^58^608^100
- ;;^UTILITY(U,$J,358.3,8293,1,0)
+ ;;^UTILITY(U,$J,358.3,8259,1,3,0)
+ ;;=3^Malig Choroid
+ ;;^UTILITY(U,$J,358.3,8259,1,4,0)
+ ;;=4^190.6
+ ;;^UTILITY(U,$J,358.3,8259,2)
+ ;;=Malig Neoplasm of Choroid (Primary)^267276
+ ;;^UTILITY(U,$J,358.3,8260,0)
+ ;;=362.33^^52^580^45
+ ;;^UTILITY(U,$J,358.3,8260,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8293,1,3,0)
- ;;=3^Parkinson's
- ;;^UTILITY(U,$J,358.3,8293,1,4,0)
- ;;=4^332.0
- ;;^UTILITY(U,$J,358.3,8293,2)
- ;;=^304847
- ;;^UTILITY(U,$J,358.3,8294,0)
- ;;=334.3^^58^608^19
- ;;^UTILITY(U,$J,358.3,8294,1,0)
+ ;;^UTILITY(U,$J,358.3,8260,1,3,0)
+ ;;=3^Hollenhorst Plaque
+ ;;^UTILITY(U,$J,358.3,8260,1,4,0)
+ ;;=4^362.33
+ ;;^UTILITY(U,$J,358.3,8260,2)
+ ;;=Hollenhorst Plaque^268620
+ ;;^UTILITY(U,$J,358.3,8261,0)
+ ;;=361.00^^52^580^84
+ ;;^UTILITY(U,$J,358.3,8261,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8294,1,3,0)
- ;;=3^Cerebella Ataxia
- ;;^UTILITY(U,$J,358.3,8294,1,4,0)
- ;;=4^334.3
- ;;^UTILITY(U,$J,358.3,8294,2)
- ;;=^87376
- ;;^UTILITY(U,$J,358.3,8295,0)
- ;;=337.9^^58^608^52
- ;;^UTILITY(U,$J,358.3,8295,1,0)
+ ;;^UTILITY(U,$J,358.3,8261,1,3,0)
+ ;;=3^Retinal Detachment w/ Ret Defect,Unspec
+ ;;^UTILITY(U,$J,358.3,8261,1,4,0)
+ ;;=4^361.00
+ ;;^UTILITY(U,$J,358.3,8261,2)
+ ;;=Retinal Detachment, Unspecified^268585
+ ;;^UTILITY(U,$J,358.3,8262,0)
+ ;;=361.01^^52^580^77
+ ;;^UTILITY(U,$J,358.3,8262,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8295,1,3,0)
- ;;=3^Horner's Syndrome
- ;;^UTILITY(U,$J,358.3,8295,1,4,0)
- ;;=4^337.9
- ;;^UTILITY(U,$J,358.3,8295,2)
- ;;=^11827
- ;;^UTILITY(U,$J,358.3,8296,0)
- ;;=341.9^^58^608^28
- ;;^UTILITY(U,$J,358.3,8296,1,0)
+ ;;^UTILITY(U,$J,358.3,8262,1,3,0)
+ ;;=3^Recent Retinal Detachment, Partial
+ ;;^UTILITY(U,$J,358.3,8262,1,4,0)
+ ;;=4^361.01
+ ;;^UTILITY(U,$J,358.3,8262,2)
+ ;;=Recent Retinal Detachment, Partial^268586
+ ;;^UTILITY(U,$J,358.3,8263,0)
+ ;;=361.05^^52^580^78
+ ;;^UTILITY(U,$J,358.3,8263,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8296,1,3,0)
- ;;=3^Demyelinating Disease
- ;;^UTILITY(U,$J,358.3,8296,1,4,0)
- ;;=4^341.9
- ;;^UTILITY(U,$J,358.3,8296,2)
- ;;=^31807
- ;;^UTILITY(U,$J,358.3,8297,0)
- ;;=346.00^^58^608^63
- ;;^UTILITY(U,$J,358.3,8297,1,0)
+ ;;^UTILITY(U,$J,358.3,8263,1,3,0)
+ ;;=3^Recent Retinal Detachment, Total
+ ;;^UTILITY(U,$J,358.3,8263,1,4,0)
+ ;;=4^361.05
+ ;;^UTILITY(U,$J,358.3,8263,2)
+ ;;=Recent Retinal Detachment, Total^268590
+ ;;^UTILITY(U,$J,358.3,8264,0)
+ ;;=361.06^^52^580^65
+ ;;^UTILITY(U,$J,358.3,8264,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8297,1,3,0)
- ;;=3^Migraine,Classic,Not Intractable
- ;;^UTILITY(U,$J,358.3,8297,1,4,0)
- ;;=4^346.00
- ;;^UTILITY(U,$J,358.3,8297,2)
- ;;=^336875
- ;;^UTILITY(U,$J,358.3,8298,0)
- ;;=346.01^^58^608^62
- ;;^UTILITY(U,$J,358.3,8298,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8298,1,3,0)
- ;;=3^Migraine,Classic,Intractable
- ;;^UTILITY(U,$J,358.3,8298,1,4,0)
- ;;=4^346.01
- ;;^UTILITY(U,$J,358.3,8298,2)
- ;;=^336828
- ;;^UTILITY(U,$J,358.3,8299,0)
- ;;=346.10^^58^608^61
- ;;^UTILITY(U,$J,358.3,8299,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8299,1,3,0)
- ;;=3^Migraine w/o Aura,Not Intractable
- ;;^UTILITY(U,$J,358.3,8299,1,4,0)
- ;;=4^346.10
- ;;^UTILITY(U,$J,358.3,8299,2)
- ;;=^336876
+ ;;^UTILITY(U,$J,358.3,8264,1,3,0)
+ ;;=3^Old Retinal Detachment, Partial
+ ;;^UTILITY(U,$J,358.3,8264,1,4,0)
+ ;;=4^361.06
+ ;;^UTILITY(U,$J,358.3,8264,2)
+ ;;=Old Retinal Detachment, Part^268591

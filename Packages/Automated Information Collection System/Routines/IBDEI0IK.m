@@ -1,132 +1,134 @@
-IBDEI0IK ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0IK ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,9043,1,4,0)
- ;;=4^CA of Ileocecal Valve
- ;;^UTILITY(U,$J,358.3,9043,1,5,0)
- ;;=5^153.4
- ;;^UTILITY(U,$J,358.3,9043,2)
- ;;=CA of Ileocecal Valve^267083
- ;;^UTILITY(U,$J,358.3,9044,0)
- ;;=154.0^^61^636^9
- ;;^UTILITY(U,$J,358.3,9044,1,0)
+ ;;^UTILITY(U,$J,358.3,9008,2)
+ ;;=CA, Male Breast^267205
+ ;;^UTILITY(U,$J,358.3,9009,0)
+ ;;=175.0^^55^603^2
+ ;;^UTILITY(U,$J,358.3,9009,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,9044,1,4,0)
- ;;=4^CA of Colon and Rectum
- ;;^UTILITY(U,$J,358.3,9044,1,5,0)
- ;;=5^154.0
- ;;^UTILITY(U,$J,358.3,9044,2)
- ;;=CA of Colon and Rectum^267089
- ;;^UTILITY(U,$J,358.3,9045,0)
- ;;=153.6^^61^636^6
- ;;^UTILITY(U,$J,358.3,9045,1,0)
+ ;;^UTILITY(U,$J,358.3,9009,1,4,0)
+ ;;=4^Ca, Male Nipple
+ ;;^UTILITY(U,$J,358.3,9009,1,5,0)
+ ;;=5^175.0
+ ;;^UTILITY(U,$J,358.3,9009,2)
+ ;;=CA, Male Nipple^267204
+ ;;^UTILITY(U,$J,358.3,9010,0)
+ ;;=611.1^^55^603^3
+ ;;^UTILITY(U,$J,358.3,9010,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,9045,1,4,0)
- ;;=4^CA of Ascending Colon
- ;;^UTILITY(U,$J,358.3,9045,1,5,0)
- ;;=5^153.6
- ;;^UTILITY(U,$J,358.3,9045,2)
- ;;=CA of Ascending Colon^267085
- ;;^UTILITY(U,$J,358.3,9046,0)
- ;;=153.8^^61^636^12
- ;;^UTILITY(U,$J,358.3,9046,1,0)
+ ;;^UTILITY(U,$J,358.3,9010,1,4,0)
+ ;;=4^Gynecomastia,Male
+ ;;^UTILITY(U,$J,358.3,9010,1,5,0)
+ ;;=5^611.1
+ ;;^UTILITY(U,$J,358.3,9010,2)
+ ;;=^60454
+ ;;^UTILITY(U,$J,358.3,9011,0)
+ ;;=216.0^^55^604^4
+ ;;^UTILITY(U,$J,358.3,9011,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,9046,1,4,0)
- ;;=4^CA of Colon/Contiguous Sites
- ;;^UTILITY(U,$J,358.3,9046,1,5,0)
- ;;=5^153.8
- ;;^UTILITY(U,$J,358.3,9046,2)
- ;;=CA of Colon/Contiguous Sites^267087
- ;;^UTILITY(U,$J,358.3,9047,0)
- ;;=153.2^^61^636^13
- ;;^UTILITY(U,$J,358.3,9047,1,0)
+ ;;^UTILITY(U,$J,358.3,9011,1,4,0)
+ ;;=4^Benign Lesion, Lip
+ ;;^UTILITY(U,$J,358.3,9011,1,5,0)
+ ;;=5^216.0
+ ;;^UTILITY(U,$J,358.3,9011,2)
+ ;;=Benign Neoplasm of Skin of Lip^267629
+ ;;^UTILITY(U,$J,358.3,9012,0)
+ ;;=216.1^^55^604^2
+ ;;^UTILITY(U,$J,358.3,9012,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,9047,1,4,0)
- ;;=4^CA of Descending Colon
- ;;^UTILITY(U,$J,358.3,9047,1,5,0)
- ;;=5^153.2
- ;;^UTILITY(U,$J,358.3,9047,2)
- ;;=CA of Descending Colon^267081
- ;;^UTILITY(U,$J,358.3,9048,0)
- ;;=153.3^^61^636^28
- ;;^UTILITY(U,$J,358.3,9048,1,0)
+ ;;^UTILITY(U,$J,358.3,9012,1,4,0)
+ ;;=4^Benign Lesion, Eyelid
+ ;;^UTILITY(U,$J,358.3,9012,1,5,0)
+ ;;=5^216.1
+ ;;^UTILITY(U,$J,358.3,9012,2)
+ ;;=Benign Neoplasm of Skin of Eyelid^267630
+ ;;^UTILITY(U,$J,358.3,9013,0)
+ ;;=216.2^^55^604^1
+ ;;^UTILITY(U,$J,358.3,9013,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,9048,1,4,0)
- ;;=4^CA of Sigmoid Colon
- ;;^UTILITY(U,$J,358.3,9048,1,5,0)
- ;;=5^153.3
- ;;^UTILITY(U,$J,358.3,9048,2)
- ;;=Ca of Sigmoid Colon^267082
- ;;^UTILITY(U,$J,358.3,9049,0)
- ;;=153.1^^61^636^37
- ;;^UTILITY(U,$J,358.3,9049,1,0)
+ ;;^UTILITY(U,$J,358.3,9013,1,4,0)
+ ;;=4^Benign Lesion, Ear
+ ;;^UTILITY(U,$J,358.3,9013,1,5,0)
+ ;;=5^216.2
+ ;;^UTILITY(U,$J,358.3,9013,2)
+ ;;=Benign Neoplasm of Skin of Ear^267631
+ ;;^UTILITY(U,$J,358.3,9014,0)
+ ;;=216.4^^55^604^6
+ ;;^UTILITY(U,$J,358.3,9014,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,9049,1,4,0)
- ;;=4^CA of Transverse Colon
- ;;^UTILITY(U,$J,358.3,9049,1,5,0)
- ;;=5^153.1
- ;;^UTILITY(U,$J,358.3,9049,2)
- ;;=CA of Transverse Colon^267080
- ;;^UTILITY(U,$J,358.3,9050,0)
- ;;=153.0^^61^636^11
- ;;^UTILITY(U,$J,358.3,9050,1,0)
+ ;;^UTILITY(U,$J,358.3,9014,1,4,0)
+ ;;=4^Benign Lesion, Neck
+ ;;^UTILITY(U,$J,358.3,9014,1,5,0)
+ ;;=5^216.4
+ ;;^UTILITY(U,$J,358.3,9014,2)
+ ;;=Benign Neoplasm of Skin of Neck^267633
+ ;;^UTILITY(U,$J,358.3,9015,0)
+ ;;=216.5^^55^604^9
+ ;;^UTILITY(U,$J,358.3,9015,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,9050,1,4,0)
- ;;=4^CA of Colon, Hepatic Flexure.
- ;;^UTILITY(U,$J,358.3,9050,1,5,0)
- ;;=5^153.0
- ;;^UTILITY(U,$J,358.3,9050,2)
- ;;=CA of Colon at Hepatic Flexure^267079
- ;;^UTILITY(U,$J,358.3,9051,0)
- ;;=153.7^^61^636^10
- ;;^UTILITY(U,$J,358.3,9051,1,0)
+ ;;^UTILITY(U,$J,358.3,9015,1,4,0)
+ ;;=4^Benign Lesion, Trunk
+ ;;^UTILITY(U,$J,358.3,9015,1,5,0)
+ ;;=5^216.5
+ ;;^UTILITY(U,$J,358.3,9015,2)
+ ;;=Benign Neoplasm of Skin of Trunk^267634
+ ;;^UTILITY(U,$J,358.3,9016,0)
+ ;;=216.6^^55^604^10
+ ;;^UTILITY(U,$J,358.3,9016,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,9051,1,4,0)
- ;;=4^CA of Colon at Splenic Flexure
- ;;^UTILITY(U,$J,358.3,9051,1,5,0)
- ;;=5^153.7
- ;;^UTILITY(U,$J,358.3,9051,2)
- ;;=CA of Colon at Splenic Flexure^267086
- ;;^UTILITY(U,$J,358.3,9052,0)
- ;;=151.9^^61^636^29
- ;;^UTILITY(U,$J,358.3,9052,1,0)
+ ;;^UTILITY(U,$J,358.3,9016,1,4,0)
+ ;;=4^Benign Lesion, Upper Limb
+ ;;^UTILITY(U,$J,358.3,9016,1,5,0)
+ ;;=5^216.6
+ ;;^UTILITY(U,$J,358.3,9016,2)
+ ;;=Benign Neoplasm of Skin of Arm^267635
+ ;;^UTILITY(U,$J,358.3,9017,0)
+ ;;=216.7^^55^604^5
+ ;;^UTILITY(U,$J,358.3,9017,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,9052,1,4,0)
- ;;=4^CA of Stomach
- ;;^UTILITY(U,$J,358.3,9052,1,5,0)
- ;;=5^151.9
- ;;^UTILITY(U,$J,358.3,9052,2)
- ;;=CA of Stomach^73532
- ;;^UTILITY(U,$J,358.3,9053,0)
- ;;=151.2^^61^636^4
- ;;^UTILITY(U,$J,358.3,9053,1,0)
+ ;;^UTILITY(U,$J,358.3,9017,1,4,0)
+ ;;=4^Benign Lesion, Lower Limb
+ ;;^UTILITY(U,$J,358.3,9017,1,5,0)
+ ;;=5^216.7
+ ;;^UTILITY(U,$J,358.3,9017,2)
+ ;;=Benign Neoplasm of of skin of leg^267636
+ ;;^UTILITY(U,$J,358.3,9018,0)
+ ;;=216.8^^55^604^8
+ ;;^UTILITY(U,$J,358.3,9018,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,9053,1,4,0)
- ;;=4^CA of Antrum of Stomach
- ;;^UTILITY(U,$J,358.3,9053,1,5,0)
- ;;=5^151.2
- ;;^UTILITY(U,$J,358.3,9053,2)
- ;;=CA of Antrum of Stomach^267065
- ;;^UTILITY(U,$J,358.3,9054,0)
- ;;=151.4^^61^636^30
- ;;^UTILITY(U,$J,358.3,9054,1,0)
+ ;;^UTILITY(U,$J,358.3,9018,1,4,0)
+ ;;=4^Benign Lesion, Skin Other
+ ;;^UTILITY(U,$J,358.3,9018,1,5,0)
+ ;;=5^216.8
+ ;;^UTILITY(U,$J,358.3,9018,2)
+ ;;=Ben Neoplasm, Skin, Unspec^267637
+ ;;^UTILITY(U,$J,358.3,9019,0)
+ ;;=216.3^^55^604^3
+ ;;^UTILITY(U,$J,358.3,9019,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,9054,1,4,0)
- ;;=4^CA of Stomach Body
- ;;^UTILITY(U,$J,358.3,9054,1,5,0)
- ;;=5^151.4
- ;;^UTILITY(U,$J,358.3,9054,2)
- ;;=CA of Stomach Body^267067
- ;;^UTILITY(U,$J,358.3,9055,0)
- ;;=151.0^^61^636^31
- ;;^UTILITY(U,$J,358.3,9055,1,0)
+ ;;^UTILITY(U,$J,358.3,9019,1,4,0)
+ ;;=4^Benign Lesion, Face
+ ;;^UTILITY(U,$J,358.3,9019,1,5,0)
+ ;;=5^216.3
+ ;;^UTILITY(U,$J,358.3,9019,2)
+ ;;=^267632
+ ;;^UTILITY(U,$J,358.3,9020,0)
+ ;;=216.9^^55^604^7
+ ;;^UTILITY(U,$J,358.3,9020,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,9055,1,4,0)
- ;;=4^CA of Stomach Cardia
- ;;^UTILITY(U,$J,358.3,9055,1,5,0)
- ;;=5^151.0
- ;;^UTILITY(U,$J,358.3,9055,2)
- ;;=CA of Stomach Cardia^267063
- ;;^UTILITY(U,$J,358.3,9056,0)
- ;;=151.3^^61^636^32
+ ;;^UTILITY(U,$J,358.3,9020,1,4,0)
+ ;;=4^Benign Lesion, Skin NOS
+ ;;^UTILITY(U,$J,358.3,9020,1,5,0)
+ ;;=5^216.9
+ ;;^UTILITY(U,$J,358.3,9020,2)
+ ;;=^13314
+ ;;^UTILITY(U,$J,358.3,9021,0)
+ ;;=173.00^^55^605^17
+ ;;^UTILITY(U,$J,358.3,9021,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,9021,1,4,0)
+ ;;=4^CA Skin Lip, Unspec
+ ;;^UTILITY(U,$J,358.3,9021,1,5,0)
+ ;;=5^173.00

@@ -1,152 +1,144 @@
-IBDEI017 ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI017 ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,65,0)
- ;;=294.0^^2^8^7
- ;;^UTILITY(U,$J,358.3,65,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,65,1,2,0)
- ;;=2^294.0
- ;;^UTILITY(U,$J,358.3,65,1,5,0)
- ;;=5^Amnestic Syndrome, NOS
- ;;^UTILITY(U,$J,358.3,65,2)
- ;;=^6319
- ;;^UTILITY(U,$J,358.3,66,0)
- ;;=292.83^^2^8^6
- ;;^UTILITY(U,$J,358.3,66,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,66,1,2,0)
- ;;=2^292.83
- ;;^UTILITY(U,$J,358.3,66,1,5,0)
- ;;=5^Amnestic Syndrome Due to Drugs
- ;;^UTILITY(U,$J,358.3,66,2)
- ;;=^268027
- ;;^UTILITY(U,$J,358.3,67,0)
- ;;=291.2^^2^8^3
- ;;^UTILITY(U,$J,358.3,67,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,67,1,2,0)
- ;;=2^291.2
- ;;^UTILITY(U,$J,358.3,67,1,5,0)
- ;;=5^Alcohol Persisting Dementia
- ;;^UTILITY(U,$J,358.3,67,2)
- ;;=^331824
- ;;^UTILITY(U,$J,358.3,68,0)
- ;;=291.3^^2^8^1
- ;;^UTILITY(U,$J,358.3,68,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,68,1,2,0)
- ;;=2^291.3
- ;;^UTILITY(U,$J,358.3,68,1,5,0)
- ;;=5^Alc Ind Psy D/O w/ Hallucination
- ;;^UTILITY(U,$J,358.3,68,2)
- ;;=^331825
- ;;^UTILITY(U,$J,358.3,69,0)
- ;;=291.4^^2^8^8
- ;;^UTILITY(U,$J,358.3,69,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,69,1,2,0)
- ;;=2^291.4
- ;;^UTILITY(U,$J,358.3,69,1,5,0)
- ;;=5^Idiosyncratic Alcohol Intox
- ;;^UTILITY(U,$J,358.3,69,2)
- ;;=^4574
- ;;^UTILITY(U,$J,358.3,70,0)
- ;;=291.5^^2^8^2
- ;;^UTILITY(U,$J,358.3,70,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,70,1,2,0)
- ;;=2^291.5
- ;;^UTILITY(U,$J,358.3,70,1,5,0)
- ;;=5^Alc Ind Psych d/o w/ Delusions
- ;;^UTILITY(U,$J,358.3,70,2)
- ;;=^331826
- ;;^UTILITY(U,$J,358.3,71,0)
- ;;=291.81^^2^8^4
- ;;^UTILITY(U,$J,358.3,71,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,71,1,2,0)
- ;;=2^291.81
- ;;^UTILITY(U,$J,358.3,71,1,5,0)
- ;;=5^Alcohol Withdrawal
- ;;^UTILITY(U,$J,358.3,71,2)
- ;;=^123498
- ;;^UTILITY(U,$J,358.3,72,0)
- ;;=310.1^^2^9^7
- ;;^UTILITY(U,$J,358.3,72,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,72,1,2,0)
- ;;=2^310.1
- ;;^UTILITY(U,$J,358.3,72,1,5,0)
- ;;=5^Personality Syndrome
- ;;^UTILITY(U,$J,358.3,72,2)
- ;;=^268318
- ;;^UTILITY(U,$J,358.3,73,0)
- ;;=293.81^^2^9^4
- ;;^UTILITY(U,$J,358.3,73,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,73,1,2,0)
- ;;=2^293.81
- ;;^UTILITY(U,$J,358.3,73,1,5,0)
- ;;=5^Delusional Syndrome
- ;;^UTILITY(U,$J,358.3,73,2)
- ;;=^259055
- ;;^UTILITY(U,$J,358.3,74,0)
- ;;=294.9^^2^9^3
- ;;^UTILITY(U,$J,358.3,74,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,74,1,2,0)
- ;;=2^294.9
- ;;^UTILITY(U,$J,358.3,74,1,5,0)
- ;;=5^Cognitive Disorder, NOS
- ;;^UTILITY(U,$J,358.3,74,2)
- ;;=^123962
- ;;^UTILITY(U,$J,358.3,75,0)
- ;;=293.84^^2^9^2
- ;;^UTILITY(U,$J,358.3,75,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,75,1,2,0)
- ;;=2^293.84
- ;;^UTILITY(U,$J,358.3,75,1,5,0)
- ;;=5^Anxiety Syndrome
- ;;^UTILITY(U,$J,358.3,75,2)
- ;;=^304299
- ;;^UTILITY(U,$J,358.3,76,0)
- ;;=293.89^^2^9^1
- ;;^UTILITY(U,$J,358.3,76,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,76,1,2,0)
- ;;=2^293.89
- ;;^UTILITY(U,$J,358.3,76,1,5,0)
- ;;=5^Affective Syndrome
- ;;^UTILITY(U,$J,358.3,76,2)
- ;;=^331840
- ;;^UTILITY(U,$J,358.3,77,0)
- ;;=310.89^^2^9^6
- ;;^UTILITY(U,$J,358.3,77,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,77,1,2,0)
- ;;=2^310.89
- ;;^UTILITY(U,$J,358.3,77,1,5,0)
- ;;=5^Oth Non Psychotic Mental Disord NEC
- ;;^UTILITY(U,$J,358.3,77,2)
- ;;=^268320
- ;;^UTILITY(U,$J,358.3,78,0)
- ;;=293.82^^2^9^5
- ;;^UTILITY(U,$J,358.3,78,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,78,1,2,0)
- ;;=2^293.82
- ;;^UTILITY(U,$J,358.3,78,1,5,0)
- ;;=5^Hallucinosis
- ;;^UTILITY(U,$J,358.3,78,2)
- ;;=^331837
- ;;^UTILITY(U,$J,358.3,79,0)
- ;;=290.20^^2^10^17
- ;;^UTILITY(U,$J,358.3,79,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,79,1,2,0)
- ;;=2^290.20
- ;;^UTILITY(U,$J,358.3,79,1,5,0)
- ;;=5^Dementia w/Delusion
+ ;;^UTILITY(U,$J,358.3)
+ ;;=^IBE(358.3,
+ ;;^UTILITY(U,$J,358.3,0)
+ ;;=IMP/EXP SELECTION^358.3I^34806^34806
+ ;;^UTILITY(U,$J,358.3,1,0)
+ ;;=H0001^^1^1^1^^^^1
+ ;;^UTILITY(U,$J,358.3,1,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1,1,2,0)
+ ;;=2^H0001
+ ;;^UTILITY(U,$J,358.3,1,1,3,0)
+ ;;=3^Addictions Assessment
+ ;;^UTILITY(U,$J,358.3,2,0)
+ ;;=H0002^^1^1^11^^^^1
+ ;;^UTILITY(U,$J,358.3,2,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2,1,2,0)
+ ;;=2^H0002
+ ;;^UTILITY(U,$J,358.3,2,1,3,0)
+ ;;=3^Screen for Addictions Admit
+ ;;^UTILITY(U,$J,358.3,3,0)
+ ;;=H0004^^1^1^7
+ ;;^UTILITY(U,$J,358.3,3,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3,1,2,0)
+ ;;=2^H0004
+ ;;^UTILITY(U,$J,358.3,3,1,3,0)
+ ;;=3^Individual Counseling per 15 min
+ ;;^UTILITY(U,$J,358.3,4,0)
+ ;;=H0005^^1^1^3^^^^1
+ ;;^UTILITY(U,$J,358.3,4,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,4,1,2,0)
+ ;;=2^H0005
+ ;;^UTILITY(U,$J,358.3,4,1,3,0)
+ ;;=3^Addictions Group
+ ;;^UTILITY(U,$J,358.3,5,0)
+ ;;=H0020^^1^1^8^^^^1
+ ;;^UTILITY(U,$J,358.3,5,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5,1,2,0)
+ ;;=2^H0020
+ ;;^UTILITY(U,$J,358.3,5,1,3,0)
+ ;;=3^Methadone Administration
+ ;;^UTILITY(U,$J,358.3,6,0)
+ ;;=H0030^^1^1^4^^^^1
+ ;;^UTILITY(U,$J,358.3,6,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,6,1,2,0)
+ ;;=2^H0030
+ ;;^UTILITY(U,$J,358.3,6,1,3,0)
+ ;;=3^Addictions Phone Services
+ ;;^UTILITY(U,$J,358.3,7,0)
+ ;;=H0025^^1^1^2^^^^1
+ ;;^UTILITY(U,$J,358.3,7,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7,1,2,0)
+ ;;=2^H0025
+ ;;^UTILITY(U,$J,358.3,7,1,3,0)
+ ;;=3^Addictions Education Service
+ ;;^UTILITY(U,$J,358.3,8,0)
+ ;;=H0046^^1^1^9^^^^1
+ ;;^UTILITY(U,$J,358.3,8,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,8,1,2,0)
+ ;;=2^H0046
+ ;;^UTILITY(U,$J,358.3,8,1,3,0)
+ ;;=3^PTSD Group
+ ;;^UTILITY(U,$J,358.3,9,0)
+ ;;=H0003^^1^1^6^^^^1
+ ;;^UTILITY(U,$J,358.3,9,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,9,1,2,0)
+ ;;=2^H0003
+ ;;^UTILITY(U,$J,358.3,9,1,3,0)
+ ;;=3^Alcohol/Drug Scrn;lab analysis
+ ;;^UTILITY(U,$J,358.3,10,0)
+ ;;=H0006^^1^1^5^^^^1
+ ;;^UTILITY(U,$J,358.3,10,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,10,1,2,0)
+ ;;=2^H0006
+ ;;^UTILITY(U,$J,358.3,10,1,3,0)
+ ;;=3^Alcohol/Drug Case Management
+ ;;^UTILITY(U,$J,358.3,11,0)
+ ;;=H2027^^1^1^10^^^^1
+ ;;^UTILITY(U,$J,358.3,11,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,11,1,2,0)
+ ;;=2^H2027
+ ;;^UTILITY(U,$J,358.3,11,1,3,0)
+ ;;=3^Psychoeducational Svc,per 15min
+ ;;^UTILITY(U,$J,358.3,12,0)
+ ;;=90791^^1^2^1^^^^1
+ ;;^UTILITY(U,$J,358.3,12,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12,1,2,0)
+ ;;=2^90791
+ ;;^UTILITY(U,$J,358.3,12,1,3,0)
+ ;;=3^Psych Diagnostic Eval
+ ;;^UTILITY(U,$J,358.3,13,0)
+ ;;=90792^^1^2^2^^^^1
+ ;;^UTILITY(U,$J,358.3,13,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,13,1,2,0)
+ ;;=2^90792
+ ;;^UTILITY(U,$J,358.3,13,1,3,0)
+ ;;=3^Psych Diag Eval w/ Med Svcs
+ ;;^UTILITY(U,$J,358.3,14,0)
+ ;;=90853^^1^3^13^^^^1
+ ;;^UTILITY(U,$J,358.3,14,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14,1,2,0)
+ ;;=2^90853
+ ;;^UTILITY(U,$J,358.3,14,1,3,0)
+ ;;=3^Group Psychotherapy
+ ;;^UTILITY(U,$J,358.3,15,0)
+ ;;=90846^^1^3^14^^^^1
+ ;;^UTILITY(U,$J,358.3,15,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15,1,2,0)
+ ;;=2^90846
+ ;;^UTILITY(U,$J,358.3,15,1,3,0)
+ ;;=3^Family Psychotherapy w/o pt.
+ ;;^UTILITY(U,$J,358.3,16,0)
+ ;;=90847^^1^3^15^^^^1
+ ;;^UTILITY(U,$J,358.3,16,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16,1,2,0)
+ ;;=2^90847
+ ;;^UTILITY(U,$J,358.3,16,1,3,0)
+ ;;=3^Family Psychotherpy w/pt.
+ ;;^UTILITY(U,$J,358.3,17,0)
+ ;;=90875^^1^3^16^^^^1
+ ;;^UTILITY(U,$J,358.3,17,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17,1,2,0)
+ ;;=2^90875
+ ;;^UTILITY(U,$J,358.3,17,1,3,0)
+ ;;=3^Psych Thpy w/ Biofeedback 20-30min

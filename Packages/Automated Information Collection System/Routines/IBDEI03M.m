@@ -1,132 +1,128 @@
-IBDEI03M ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI03M ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1350,1,0)
+ ;;^UTILITY(U,$J,358.3,1330,1,2,0)
+ ;;=2^93799
+ ;;^UTILITY(U,$J,358.3,1330,1,3,0)
+ ;;=3^Unlisted Cardiovascular Procedure
+ ;;^UTILITY(U,$J,358.3,1331,0)
+ ;;=93015^^10^119^1^^^^1
+ ;;^UTILITY(U,$J,358.3,1331,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1350,1,2,0)
- ;;=2^92924
- ;;^UTILITY(U,$J,358.3,1350,1,3,0)
- ;;=3^PRQ Card Angio/Athrect 1 Art
- ;;^UTILITY(U,$J,358.3,1351,0)
- ;;=92925^^14^130^11^^^^1
- ;;^UTILITY(U,$J,358.3,1351,1,0)
+ ;;^UTILITY(U,$J,358.3,1331,1,2,0)
+ ;;=2^93015
+ ;;^UTILITY(U,$J,358.3,1331,1,3,0)
+ ;;=3^Cardiovascular Stress Test
+ ;;^UTILITY(U,$J,358.3,1332,0)
+ ;;=93016^^10^119^5^^^^1
+ ;;^UTILITY(U,$J,358.3,1332,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1351,1,2,0)
- ;;=2^92925
- ;;^UTILITY(U,$J,358.3,1351,1,3,0)
- ;;=3^PRQ Card Angio/Athrect Addl Art
- ;;^UTILITY(U,$J,358.3,1352,0)
- ;;=92928^^14^130^17^^^^1
- ;;^UTILITY(U,$J,358.3,1352,1,0)
+ ;;^UTILITY(U,$J,358.3,1332,1,2,0)
+ ;;=2^93016
+ ;;^UTILITY(U,$J,358.3,1332,1,3,0)
+ ;;=3^Stress Test, Phy Super Only No Report
+ ;;^UTILITY(U,$J,358.3,1333,0)
+ ;;=93017^^10^119^6^^^^1
+ ;;^UTILITY(U,$J,358.3,1333,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1352,1,2,0)
- ;;=2^92928
- ;;^UTILITY(U,$J,358.3,1352,1,3,0)
- ;;=3^PRQ Card Stent w/ Angio 1 Vsl
- ;;^UTILITY(U,$J,358.3,1353,0)
- ;;=92929^^14^130^18^^^^1
- ;;^UTILITY(U,$J,358.3,1353,1,0)
+ ;;^UTILITY(U,$J,358.3,1333,1,2,0)
+ ;;=2^93017
+ ;;^UTILITY(U,$J,358.3,1333,1,3,0)
+ ;;=3^Stress Test, Tracing Only
+ ;;^UTILITY(U,$J,358.3,1334,0)
+ ;;=93018^^10^119^4^^^^1
+ ;;^UTILITY(U,$J,358.3,1334,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1353,1,2,0)
- ;;=2^92929
- ;;^UTILITY(U,$J,358.3,1353,1,3,0)
- ;;=3^PRQ Card Stent w/ Angio Addl Vsl
- ;;^UTILITY(U,$J,358.3,1354,0)
- ;;=92933^^14^130^15^^^^1
- ;;^UTILITY(U,$J,358.3,1354,1,0)
+ ;;^UTILITY(U,$J,358.3,1334,1,2,0)
+ ;;=2^93018
+ ;;^UTILITY(U,$J,358.3,1334,1,3,0)
+ ;;=3^Stress Test, Interr & Report Only
+ ;;^UTILITY(U,$J,358.3,1335,0)
+ ;;=78451^^10^119^2^^^^1
+ ;;^UTILITY(U,$J,358.3,1335,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1354,1,2,0)
- ;;=2^92933
- ;;^UTILITY(U,$J,358.3,1354,1,3,0)
- ;;=3^PRQ Card Stent Ath/Angio
- ;;^UTILITY(U,$J,358.3,1355,0)
- ;;=92934^^14^130^16^^^^1
- ;;^UTILITY(U,$J,358.3,1355,1,0)
+ ;;^UTILITY(U,$J,358.3,1335,1,2,0)
+ ;;=2^78451
+ ;;^UTILITY(U,$J,358.3,1335,1,3,0)
+ ;;=3^SPECT,Single Study
+ ;;^UTILITY(U,$J,358.3,1336,0)
+ ;;=93350^^10^119^3^^^^1
+ ;;^UTILITY(U,$J,358.3,1336,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1355,1,2,0)
- ;;=2^92934
- ;;^UTILITY(U,$J,358.3,1355,1,3,0)
- ;;=3^PRQ Card Stent Ath/Angio Ea Addl Branch
- ;;^UTILITY(U,$J,358.3,1356,0)
- ;;=92937^^14^130^21^^^^1
- ;;^UTILITY(U,$J,358.3,1356,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1356,1,2,0)
- ;;=2^92937
- ;;^UTILITY(U,$J,358.3,1356,1,3,0)
- ;;=3^PRQ Revasc Byp Graft 1 Vsl
- ;;^UTILITY(U,$J,358.3,1357,0)
- ;;=92938^^14^130^22^^^^1
- ;;^UTILITY(U,$J,358.3,1357,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1357,1,2,0)
- ;;=2^92938
- ;;^UTILITY(U,$J,358.3,1357,1,3,0)
- ;;=3^PRQ Revasc Byp Graft Addl Vsl
- ;;^UTILITY(U,$J,358.3,1358,0)
- ;;=92941^^14^130^14^^^^1
- ;;^UTILITY(U,$J,358.3,1358,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1358,1,2,0)
- ;;=2^92941
- ;;^UTILITY(U,$J,358.3,1358,1,3,0)
- ;;=3^PRQ Card Revasc MI 1 Vsl
- ;;^UTILITY(U,$J,358.3,1359,0)
- ;;=92943^^14^130^12^^^^1
- ;;^UTILITY(U,$J,358.3,1359,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1359,1,2,0)
- ;;=2^92943
- ;;^UTILITY(U,$J,358.3,1359,1,3,0)
- ;;=3^PRQ Card Revasc Chronic 1 Vsl
- ;;^UTILITY(U,$J,358.3,1360,0)
- ;;=92944^^14^130^13^^^^1
- ;;^UTILITY(U,$J,358.3,1360,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1360,1,2,0)
- ;;=2^92944
- ;;^UTILITY(U,$J,358.3,1360,1,3,0)
- ;;=3^PRQ Card Revasc Chronic Addl Vsl
- ;;^UTILITY(U,$J,358.3,1361,0)
- ;;=93600^^14^131^3^^^^1
- ;;^UTILITY(U,$J,358.3,1361,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1361,1,2,0)
- ;;=2^93600
- ;;^UTILITY(U,$J,358.3,1361,1,3,0)
- ;;=3^Bundle Of His Record
- ;;^UTILITY(U,$J,358.3,1362,0)
- ;;=93602^^14^131^21^^^^1
- ;;^UTILITY(U,$J,358.3,1362,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1362,1,2,0)
- ;;=2^93602
- ;;^UTILITY(U,$J,358.3,1362,1,3,0)
- ;;=3^Intra-Atrial Record
- ;;^UTILITY(U,$J,358.3,1363,0)
- ;;=93603^^14^131^26^^^^1
- ;;^UTILITY(U,$J,358.3,1363,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1363,1,2,0)
- ;;=2^93603
- ;;^UTILITY(U,$J,358.3,1363,1,3,0)
- ;;=3^R Vent Record
- ;;^UTILITY(U,$J,358.3,1364,0)
- ;;=93609^^14^131^24^^^^1
- ;;^UTILITY(U,$J,358.3,1364,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1364,1,2,0)
- ;;=2^93609
- ;;^UTILITY(U,$J,358.3,1364,1,3,0)
- ;;=3^Mapping Of Tachycardia
- ;;^UTILITY(U,$J,358.3,1365,0)
- ;;=93610^^14^131^20^^^^1
- ;;^UTILITY(U,$J,358.3,1365,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1365,1,2,0)
- ;;=2^93610
- ;;^UTILITY(U,$J,358.3,1365,1,3,0)
- ;;=3^Intra-Atrial Pacing
- ;;^UTILITY(U,$J,358.3,1366,0)
- ;;=93612^^14^131^23^^^^1
+ ;;^UTILITY(U,$J,358.3,1336,1,2,0)
+ ;;=2^93350
+ ;;^UTILITY(U,$J,358.3,1336,1,3,0)
+ ;;=3^Stress TTE Only
+ ;;^UTILITY(U,$J,358.3,1337,0)
+ ;;=410.01^^11^120^13
+ ;;^UTILITY(U,$J,358.3,1337,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,1337,1,4,0)
+ ;;=4^410.01
+ ;;^UTILITY(U,$J,358.3,1337,1,5,0)
+ ;;=5^Acute MI, Anterolateral, Initial
+ ;;^UTILITY(U,$J,358.3,1337,2)
+ ;;=Acute MI, Anterolateral, Initial^269639
+ ;;^UTILITY(U,$J,358.3,1338,0)
+ ;;=410.02^^11^120^6
+ ;;^UTILITY(U,$J,358.3,1338,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,1338,1,4,0)
+ ;;=4^410.02
+ ;;^UTILITY(U,$J,358.3,1338,1,5,0)
+ ;;=5^Acute MI Anterolateral, Subsequent
+ ;;^UTILITY(U,$J,358.3,1338,2)
+ ;;=Acute MI Anterolateral, Subsequent^269640
+ ;;^UTILITY(U,$J,358.3,1339,0)
+ ;;=410.11^^11^120^11
+ ;;^UTILITY(U,$J,358.3,1339,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,1339,1,4,0)
+ ;;=4^410.11
+ ;;^UTILITY(U,$J,358.3,1339,1,5,0)
+ ;;=5^Acute MI, Anterior, Initial
+ ;;^UTILITY(U,$J,358.3,1339,2)
+ ;;=Acute MI, Anterior, Initial^269643
+ ;;^UTILITY(U,$J,358.3,1340,0)
+ ;;=410.12^^11^120^12
+ ;;^UTILITY(U,$J,358.3,1340,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,1340,1,4,0)
+ ;;=4^410.12
+ ;;^UTILITY(U,$J,358.3,1340,1,5,0)
+ ;;=5^Acute MI, Anterior, Subsequent
+ ;;^UTILITY(U,$J,358.3,1340,2)
+ ;;=Acute MI, Anterior, Subsequent^269644
+ ;;^UTILITY(U,$J,358.3,1341,0)
+ ;;=410.21^^11^120^15
+ ;;^UTILITY(U,$J,358.3,1341,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,1341,1,4,0)
+ ;;=4^410.21
+ ;;^UTILITY(U,$J,358.3,1341,1,5,0)
+ ;;=5^Acute MI, Inferolateral, Initial
+ ;;^UTILITY(U,$J,358.3,1341,2)
+ ;;=Acute MI, Inferolateral, Initial^269647
+ ;;^UTILITY(U,$J,358.3,1342,0)
+ ;;=410.22^^11^120^14
+ ;;^UTILITY(U,$J,358.3,1342,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,1342,1,4,0)
+ ;;=4^410.22
+ ;;^UTILITY(U,$J,358.3,1342,1,5,0)
+ ;;=5^Acute MI, Inferior, Subsequent
+ ;;^UTILITY(U,$J,358.3,1342,2)
+ ;;=Acute MI, Inferior, Subsequent^269648
+ ;;^UTILITY(U,$J,358.3,1343,0)
+ ;;=410.31^^11^120^17
+ ;;^UTILITY(U,$J,358.3,1343,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,1343,1,4,0)
+ ;;=4^410.31
+ ;;^UTILITY(U,$J,358.3,1343,1,5,0)
+ ;;=5^Acute MI, Inferopostior, Initial
+ ;;^UTILITY(U,$J,358.3,1343,2)
+ ;;=Acute MI, Inferopostior, Initial^269651
+ ;;^UTILITY(U,$J,358.3,1344,0)
+ ;;=410.32^^11^120^16

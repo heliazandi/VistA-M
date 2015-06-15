@@ -1,142 +1,132 @@
-IBDEI0EM ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0EM ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7054,0)
- ;;=626.2^^55^576^31
- ;;^UTILITY(U,$J,358.3,7054,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7054,1,4,0)
- ;;=4^626.2
- ;;^UTILITY(U,$J,358.3,7054,1,5,0)
- ;;=5^Menometrorrhagia
- ;;^UTILITY(U,$J,358.3,7054,2)
- ;;=Menometrorrhagia^75895
- ;;^UTILITY(U,$J,358.3,7055,0)
- ;;=627.2^^55^576^43
- ;;^UTILITY(U,$J,358.3,7055,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7055,1,4,0)
- ;;=4^627.2
- ;;^UTILITY(U,$J,358.3,7055,1,5,0)
- ;;=5^Perimenopause
- ;;^UTILITY(U,$J,358.3,7055,2)
- ;;=Perimenopause^75863
- ;;^UTILITY(U,$J,358.3,7056,0)
- ;;=611.79^^55^576^33
- ;;^UTILITY(U,$J,358.3,7056,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7056,1,4,0)
- ;;=4^611.79
- ;;^UTILITY(U,$J,358.3,7056,1,5,0)
- ;;=5^Nipple Discharge
- ;;^UTILITY(U,$J,358.3,7056,2)
- ;;=Nipple Discharge^270462
- ;;^UTILITY(U,$J,358.3,7057,0)
- ;;=278.00^^55^576^34
- ;;^UTILITY(U,$J,358.3,7057,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7057,1,4,0)
- ;;=4^278.00
- ;;^UTILITY(U,$J,358.3,7057,1,5,0)
- ;;=5^Obesity
- ;;^UTILITY(U,$J,358.3,7057,2)
- ;;=Obesity^84823
- ;;^UTILITY(U,$J,358.3,7058,0)
- ;;=626.1^^55^576^35
- ;;^UTILITY(U,$J,358.3,7058,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7058,1,4,0)
- ;;=4^626.1
- ;;^UTILITY(U,$J,358.3,7058,1,5,0)
- ;;=5^Oligomenorrhea
- ;;^UTILITY(U,$J,358.3,7058,2)
- ;;=Oligomenorrhea^108125
- ;;^UTILITY(U,$J,358.3,7059,0)
- ;;=733.00^^55^576^36
- ;;^UTILITY(U,$J,358.3,7059,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7059,1,4,0)
- ;;=4^733.00
- ;;^UTILITY(U,$J,358.3,7059,1,5,0)
- ;;=5^Osteoporosis
- ;;^UTILITY(U,$J,358.3,7059,2)
- ;;=Osteoporosis^87159
- ;;^UTILITY(U,$J,358.3,7060,0)
- ;;=626.5^^55^576^38
- ;;^UTILITY(U,$J,358.3,7060,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7060,1,4,0)
- ;;=4^626.5
- ;;^UTILITY(U,$J,358.3,7060,1,5,0)
- ;;=5^Ovulation Bleeding
- ;;^UTILITY(U,$J,358.3,7060,2)
- ;;=Ovulation Bleeding^270570
- ;;^UTILITY(U,$J,358.3,7061,0)
- ;;=625.2^^55^576^39
- ;;^UTILITY(U,$J,358.3,7061,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7061,1,4,0)
- ;;=4^625.2
- ;;^UTILITY(U,$J,358.3,7061,1,5,0)
- ;;=5^Ovulation Pain
- ;;^UTILITY(U,$J,358.3,7061,2)
- ;;=Ovulation Pain^265259
- ;;^UTILITY(U,$J,358.3,7062,0)
- ;;=614.9^^55^576^42
- ;;^UTILITY(U,$J,358.3,7062,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7062,1,4,0)
- ;;=4^614.9
- ;;^UTILITY(U,$J,358.3,7062,1,5,0)
- ;;=5^Pelvic inflammatory disease
- ;;^UTILITY(U,$J,358.3,7062,2)
- ;;=^3537
- ;;^UTILITY(U,$J,358.3,7063,0)
- ;;=789.30^^55^576^40
- ;;^UTILITY(U,$J,358.3,7063,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7063,1,4,0)
- ;;=4^789.30
- ;;^UTILITY(U,$J,358.3,7063,1,5,0)
- ;;=5^Pelvic Mass
- ;;^UTILITY(U,$J,358.3,7063,2)
- ;;=Pelvic Mass^917
- ;;^UTILITY(U,$J,358.3,7064,0)
- ;;=622.7^^55^576^44
- ;;^UTILITY(U,$J,358.3,7064,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7064,1,4,0)
- ;;=4^622.7
- ;;^UTILITY(U,$J,358.3,7064,1,5,0)
- ;;=5^Polyp of Cervix
- ;;^UTILITY(U,$J,358.3,7064,2)
- ;;=Polyp of Cervix^79612
- ;;^UTILITY(U,$J,358.3,7065,0)
- ;;=627.1^^55^576^45
- ;;^UTILITY(U,$J,358.3,7065,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7065,1,4,0)
- ;;=4^627.1
- ;;^UTILITY(U,$J,358.3,7065,1,5,0)
- ;;=5^Postmenopausal bleeding
- ;;^UTILITY(U,$J,358.3,7065,2)
- ;;=^97040
- ;;^UTILITY(U,$J,358.3,7066,0)
- ;;=V24.2^^55^576^46
- ;;^UTILITY(U,$J,358.3,7066,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7066,1,4,0)
- ;;=4^V24.2
- ;;^UTILITY(U,$J,358.3,7066,1,5,0)
- ;;=5^Postpartum
- ;;^UTILITY(U,$J,358.3,7066,2)
- ;;=Postpartum^114052
- ;;^UTILITY(U,$J,358.3,7067,0)
- ;;=V22.2^^55^576^47
- ;;^UTILITY(U,$J,358.3,7067,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7067,1,4,0)
- ;;=4^V22.2
- ;;^UTILITY(U,$J,358.3,7067,1,5,0)
- ;;=5^Pregnancy Status
+ ;;^UTILITY(U,$J,358.3,7031,1,3,0)
+ ;;=3^Lacrimal,Punctum Eversion
+ ;;^UTILITY(U,$J,358.3,7031,1,4,0)
+ ;;=4^375.51
+ ;;^UTILITY(U,$J,358.3,7031,2)
+ ;;=Lacrimal Punctum Eversion^269150
+ ;;^UTILITY(U,$J,358.3,7032,0)
+ ;;=375.54^^49^553^71
+ ;;^UTILITY(U,$J,358.3,7032,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7032,1,3,0)
+ ;;=3^Lacrimal,Sac Stenosis
+ ;;^UTILITY(U,$J,358.3,7032,1,4,0)
+ ;;=4^375.54
+ ;;^UTILITY(U,$J,358.3,7032,2)
+ ;;=Lacrimal Punctum Stenosis^269156
+ ;;^UTILITY(U,$J,358.3,7033,0)
+ ;;=375.56^^49^553^78
+ ;;^UTILITY(U,$J,358.3,7033,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7033,1,3,0)
+ ;;=3^Nasolacrimal Duct Obstruction
+ ;;^UTILITY(U,$J,358.3,7033,1,4,0)
+ ;;=4^375.56
+ ;;^UTILITY(U,$J,358.3,7033,2)
+ ;;=Obstruction, Nasolacrimal duct^269159
+ ;;^UTILITY(U,$J,358.3,7034,0)
+ ;;=376.30^^49^553^87
+ ;;^UTILITY(U,$J,358.3,7034,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7034,1,3,0)
+ ;;=3^Orbit Exophalmos
+ ;;^UTILITY(U,$J,358.3,7034,1,4,0)
+ ;;=4^376.30
+ ;;^UTILITY(U,$J,358.3,7034,2)
+ ;;=Exophthalmos^43683
+ ;;^UTILITY(U,$J,358.3,7035,0)
+ ;;=802.8^^49^553^88
+ ;;^UTILITY(U,$J,358.3,7035,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7035,1,3,0)
+ ;;=3^Orbit Fracture
+ ;;^UTILITY(U,$J,358.3,7035,1,4,0)
+ ;;=4^802.8
+ ;;^UTILITY(U,$J,358.3,7035,2)
+ ;;=Fracture of Orbit^25315
+ ;;^UTILITY(U,$J,358.3,7036,0)
+ ;;=870.4^^49^553^92
+ ;;^UTILITY(U,$J,358.3,7036,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7036,1,3,0)
+ ;;=3^Orbit Penetrating Wound w/ Foreign Body
+ ;;^UTILITY(U,$J,358.3,7036,1,4,0)
+ ;;=4^870.4
+ ;;^UTILITY(U,$J,358.3,7036,2)
+ ;;=Foreign Body in Orbit^274883
+ ;;^UTILITY(U,$J,358.3,7037,0)
+ ;;=376.10^^49^553^91
+ ;;^UTILITY(U,$J,358.3,7037,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7037,1,3,0)
+ ;;=3^Orbit Inflammation,Chronic
+ ;;^UTILITY(U,$J,358.3,7037,1,4,0)
+ ;;=4^376.10
+ ;;^UTILITY(U,$J,358.3,7037,2)
+ ;;=Orbital Inflammation^269175
+ ;;^UTILITY(U,$J,358.3,7038,0)
+ ;;=360.41^^49^553^66
+ ;;^UTILITY(U,$J,358.3,7038,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7038,1,3,0)
+ ;;=3^Hypotensive Blind Phthisis,Blind
+ ;;^UTILITY(U,$J,358.3,7038,1,4,0)
+ ;;=4^360.41
+ ;;^UTILITY(U,$J,358.3,7038,2)
+ ;;=Phthisis^268564
+ ;;^UTILITY(U,$J,358.3,7039,0)
+ ;;=376.50^^49^553^86
+ ;;^UTILITY(U,$J,358.3,7039,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7039,1,3,0)
+ ;;=3^Orbit Enopthalmos
+ ;;^UTILITY(U,$J,358.3,7039,1,4,0)
+ ;;=4^376.50
+ ;;^UTILITY(U,$J,358.3,7039,2)
+ ;;=Enopthalmos^40801
+ ;;^UTILITY(U,$J,358.3,7040,0)
+ ;;=239.2^^49^553^95
+ ;;^UTILITY(U,$J,358.3,7040,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7040,1,3,0)
+ ;;=3^Orbital Tumor,Neopl,Unspec Nature
+ ;;^UTILITY(U,$J,358.3,7040,1,4,0)
+ ;;=4^239.2
+ ;;^UTILITY(U,$J,358.3,7040,2)
+ ;;=Orbital Tumor^267783
+ ;;^UTILITY(U,$J,358.3,7041,0)
+ ;;=239.7^^49^553^79
+ ;;^UTILITY(U,$J,358.3,7041,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7041,1,3,0)
+ ;;=3^Optic Nerve Neop,Unspec Nature
+ ;;^UTILITY(U,$J,358.3,7041,1,4,0)
+ ;;=4^239.7
+ ;;^UTILITY(U,$J,358.3,7041,2)
+ ;;=Optic Nerve Tumor^267785
+ ;;^UTILITY(U,$J,358.3,7042,0)
+ ;;=V52.2^^49^553^2
+ ;;^UTILITY(U,$J,358.3,7042,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7042,1,3,0)
+ ;;=3^Artificial Eye Prosthethic Check
+ ;;^UTILITY(U,$J,358.3,7042,1,4,0)
+ ;;=4^V52.2
+ ;;^UTILITY(U,$J,358.3,7042,2)
+ ;;=Prosthethic Eye Check^295498^V43.0
+ ;;^UTILITY(U,$J,358.3,7043,0)
+ ;;=173.10^^49^553^56
+ ;;^UTILITY(U,$J,358.3,7043,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7043,1,3,0)
+ ;;=3^Eyelid/Canthus,Malig Neopl,Unspec
+ ;;^UTILITY(U,$J,358.3,7043,1,4,0)
+ ;;=4^173.10
+ ;;^UTILITY(U,$J,358.3,7043,2)
+ ;;=^340597
+ ;;^UTILITY(U,$J,358.3,7044,0)
+ ;;=173.11^^49^553^53
