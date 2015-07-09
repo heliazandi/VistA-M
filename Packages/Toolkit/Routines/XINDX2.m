@@ -158,6 +158,7 @@ OP(NEW) ;Sets or returns the current operator
  Q $G(LV(LV,"OP",W))
  ;
 OBJTST(OBJ) ;test if OBJ exists, returns 1 if exists
- Q:$G(OBJ)="" 0
+ ; If the object parameter doesn't exist or we are running the object doesn't exist (0)
+ Q:$G(OBJ)=""!($G(^ZOSF("OS"))["GT.M") 0
  Q ##class(%Dictionary.ClassDefinition).%ExistsId(""_OBJ_"")
  ;
