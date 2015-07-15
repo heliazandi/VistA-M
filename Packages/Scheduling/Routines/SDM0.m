@@ -1,10 +1,12 @@
-SDM0 ;SF/GFT - MAKE APPOINTMENT ; 11 Jun 2001  5:20 PM
- ;;5.3;Scheduling;**140,167,206,186,223,237,241,384,334,547**;Aug 13, 1993;Build 17
+SDM0 ;SF/GFT - MAKE APPOINTMENT ;11 Jun 2001  5:20 PM
+ ;;5.3;Scheduling;**140,167,206,186,223,237,241,384,334,547,621,622**;Aug 13, 1993;Build 30
  I $D(SDXXX) S SDOK=1 Q
- N SDSRTY,SDDATE,SDSDATE,SDSRFU,SDDMAX,SDONCE
+ N SDSRTY,SDDATE,SDSDATE,SDDATE2,SDSRFU,SDDMAX,SDONCE
  ;Prompt for scheduling request type
 M N SDHX,SDXF,SDXD
  Q:'$$SRTY(.SDSRTY)  S:SDSRTY SDDATE=DT
+ ;  SD*5.3*622 - let user see desired date
+ I $D(SDDATE) S Y=SDDATE,SDDATE2=$$FMTE^XLFDT(Y) W !!,"APPOINTMENT DESIRED DATE:  "_SDDATE2 W ! H 3
  ;Calculate appointment follow-up indicator
  S SDSRFU=$$PTFU(DFN,SC)
  ;Determine maximum days for scheduling
@@ -39,7 +41,8 @@ NEXT D SET I $S('$D(FND):1,'FND:1,1:0) D  G EN
  .H 3 S (X,Y)=SDDATE
  .Q
  S (X,Y)=SDAPP K SDXXX G DISP
-D W #!?36,$P(SC,U,2) S:$O(^SC(+SC,"T",0))>X X=+$O(^(0)) D DOW S I=Y+32,D=Y S SDXF=0 D WM I SDXF D WMH
+ ; SD*5.3*622 - display clinic name all the time
+D W #!?36,$P(^SC(+SC,0),U,1) S:$O(^SC(+SC,"T",0))>X X=+$O(^(0)) D DOW S I=Y+32,D=Y S SDXF=0 D WM I SDXF D WMH
 X1 S X1=X\100_$P("31^28^31^30^31^30^31^31^30^31^30^31",U,+$E(X,4,5)) ;28
  ;SD*5.3*547 next line don't allow past dates to be added to pattern if prior to date DOW was added
 W I '$D(^SC(+SC,"ST",X,1)) S DWFLG=1,POP=0,XDT=X D DOWCHK K DWFLG,XDT G L:POP
@@ -171,16 +174,24 @@ DASK N DIR,X,Y,SDX,DTOUT,DUOUT
  .W "    First available"
  .S (SDDATE,SDSRTY)=$TR(Y,"f","F")
  .Q
- N %DT,SDX,SDI
+ N %DT,SDX,SDI,POP
  S SDX="N^n^NOW^now^Now" F SDI=1:1:5 S:X=$P(SDX,U,SDI) X="T"
  S %DT="EFT" D ^%DT
  G:Y<1 DASK S SDDATE=Y
  I DFN<1 S SDDATE=SDDATE\1
+ ;SD*5.3*621 - check if desired date if prior to DOB and if clinic schedule is available.
+ I DFN>0 S POP=0 D DDCHK I POP G DASK
  I DFN>0,Y'<DT,(Y\1)>SDMAX D  G DASK
  .W !,$C(7)
  .W "Scheduling cannot be more than ",SDMAX(1)," days in the future"
  .Q
  Q 1
+ ;
+DDCHK ;SD*5.3*621 - check if desired date if prior to DOB and if clinic schedule is available.
+ N X
+ S X=SDDATE D AVCHK^SDM1 I POP Q
+ D AVCHK1^SDM1
+ Q
  ;
 DOWCHK ;SD*5.3*547 check if date is prior to date DOW was added to pattern
  S (DY,DYW)="" S:'$D(DWFLG) DWFLG=0

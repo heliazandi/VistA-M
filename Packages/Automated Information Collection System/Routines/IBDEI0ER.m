@@ -1,142 +1,136 @@
-IBDEI0ER ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0ER ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7123,1,4,0)
- ;;=4^185.
- ;;^UTILITY(U,$J,358.3,7123,1,5,0)
- ;;=5^Ca Prostate
- ;;^UTILITY(U,$J,358.3,7123,2)
- ;;=Prostate CA^99481
- ;;^UTILITY(U,$J,358.3,7124,0)
- ;;=189.0^^55^577^48
- ;;^UTILITY(U,$J,358.3,7124,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7124,1,4,0)
- ;;=4^189.0
- ;;^UTILITY(U,$J,358.3,7124,1,5,0)
- ;;=5^Ca Renal
- ;;^UTILITY(U,$J,358.3,7124,2)
- ;;=Renal Cancer^73523
- ;;^UTILITY(U,$J,358.3,7125,0)
- ;;=189.1^^55^577^49
- ;;^UTILITY(U,$J,358.3,7125,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7125,1,4,0)
- ;;=4^189.1
- ;;^UTILITY(U,$J,358.3,7125,1,5,0)
- ;;=5^Ca Renal Pelvis
- ;;^UTILITY(U,$J,358.3,7125,2)
- ;;=   ^267264
- ;;^UTILITY(U,$J,358.3,7126,0)
- ;;=171.9^^55^577^113
- ;;^UTILITY(U,$J,358.3,7126,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7126,1,4,0)
- ;;=4^171.9
- ;;^UTILITY(U,$J,358.3,7126,1,5,0)
- ;;=5^Soft Tissue Sarcoma
- ;;^UTILITY(U,$J,358.3,7126,2)
- ;;=^267165
- ;;^UTILITY(U,$J,358.3,7127,0)
- ;;=186.9^^55^577^52
- ;;^UTILITY(U,$J,358.3,7127,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7127,1,4,0)
- ;;=4^186.9
- ;;^UTILITY(U,$J,358.3,7127,1,5,0)
- ;;=5^Ca Testicular
- ;;^UTILITY(U,$J,358.3,7127,2)
- ;;=^267242
- ;;^UTILITY(U,$J,358.3,7128,0)
- ;;=198.7^^55^577^7
- ;;^UTILITY(U,$J,358.3,7128,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7128,1,4,0)
- ;;=4^198.7
- ;;^UTILITY(U,$J,358.3,7128,1,5,0)
- ;;=5^Adrenal Metastasis
- ;;^UTILITY(U,$J,358.3,7128,2)
- ;;=^267337
- ;;^UTILITY(U,$J,358.3,7129,0)
- ;;=198.5^^55^577^95
- ;;^UTILITY(U,$J,358.3,7129,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7129,1,4,0)
- ;;=4^198.5
- ;;^UTILITY(U,$J,358.3,7129,1,5,0)
- ;;=5^Mets to Bone or Bone Marrow
- ;;^UTILITY(U,$J,358.3,7129,2)
- ;;=^267336
- ;;^UTILITY(U,$J,358.3,7130,0)
- ;;=198.3^^55^577^96
- ;;^UTILITY(U,$J,358.3,7130,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7130,1,4,0)
- ;;=4^198.3
- ;;^UTILITY(U,$J,358.3,7130,1,5,0)
- ;;=5^Mets to Brain
- ;;^UTILITY(U,$J,358.3,7130,2)
- ;;=Brain Metatastasis^267334
- ;;^UTILITY(U,$J,358.3,7131,0)
- ;;=197.7^^55^577^39
- ;;^UTILITY(U,$J,358.3,7131,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7131,1,4,0)
- ;;=4^197.7
- ;;^UTILITY(U,$J,358.3,7131,1,5,0)
- ;;=5^Ca Liver, Secondary
- ;;^UTILITY(U,$J,358.3,7131,2)
- ;;=CA Liver, Secondary^267328
- ;;^UTILITY(U,$J,358.3,7132,0)
- ;;=197.0^^55^577^97
- ;;^UTILITY(U,$J,358.3,7132,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7132,1,4,0)
- ;;=4^197.0
- ;;^UTILITY(U,$J,358.3,7132,1,5,0)
- ;;=5^Mets to Lung
- ;;^UTILITY(U,$J,358.3,7132,2)
- ;;=Mets to Lung^267322
- ;;^UTILITY(U,$J,358.3,7133,0)
- ;;=196.2^^55^577^98
- ;;^UTILITY(U,$J,358.3,7133,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7133,1,4,0)
- ;;=4^196.2
- ;;^UTILITY(U,$J,358.3,7133,1,5,0)
- ;;=5^Mets to Lymph Nodes,Abdominal
- ;;^UTILITY(U,$J,358.3,7133,2)
- ;;=^267316
- ;;^UTILITY(U,$J,358.3,7134,0)
- ;;=196.3^^55^577^99
- ;;^UTILITY(U,$J,358.3,7134,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7134,1,4,0)
- ;;=4^196.3
- ;;^UTILITY(U,$J,358.3,7134,1,5,0)
- ;;=5^Mets to Lymph Nodes,Axillary Or Brachial
- ;;^UTILITY(U,$J,358.3,7134,2)
- ;;=^267317
- ;;^UTILITY(U,$J,358.3,7135,0)
- ;;=196.0^^55^577^100
- ;;^UTILITY(U,$J,358.3,7135,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7135,1,4,0)
- ;;=4^196.0
- ;;^UTILITY(U,$J,358.3,7135,1,5,0)
- ;;=5^Mets to Lymph Nodes,Cervical
- ;;^UTILITY(U,$J,358.3,7135,2)
- ;;=Lymph Nodes^267314
- ;;^UTILITY(U,$J,358.3,7136,0)
- ;;=196.1^^55^577^101
- ;;^UTILITY(U,$J,358.3,7136,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7136,1,4,0)
- ;;=4^196.1
- ;;^UTILITY(U,$J,358.3,7136,1,5,0)
- ;;=5^Mets to Lymph Nodes,Mediastinal 
- ;;^UTILITY(U,$J,358.3,7136,2)
- ;;=Lymph Nodes^267315
- ;;^UTILITY(U,$J,358.3,7137,0)
- ;;=196.8^^55^577^102
+ ;;^UTILITY(U,$J,358.3,7099,1,3,0)
+ ;;=3^Corneal Dystrophy,Unspec
+ ;;^UTILITY(U,$J,358.3,7099,1,4,0)
+ ;;=4^371.50
+ ;;^UTILITY(U,$J,358.3,7099,2)
+ ;;=Dystrophy, Corneal^28381
+ ;;^UTILITY(U,$J,358.3,7100,0)
+ ;;=930.0^^49^554^44
+ ;;^UTILITY(U,$J,358.3,7100,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7100,1,3,0)
+ ;;=3^Foreign Body, Cornea
+ ;;^UTILITY(U,$J,358.3,7100,1,4,0)
+ ;;=4^930.0
+ ;;^UTILITY(U,$J,358.3,7100,2)
+ ;;=Corneal Foreign Body^275485
+ ;;^UTILITY(U,$J,358.3,7101,0)
+ ;;=054.43^^49^554^64
+ ;;^UTILITY(U,$J,358.3,7101,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7101,1,3,0)
+ ;;=3^Keratitis, Disciform (HSV)
+ ;;^UTILITY(U,$J,358.3,7101,1,4,0)
+ ;;=4^054.43
+ ;;^UTILITY(U,$J,358.3,7101,2)
+ ;;=Herpes Simplex Keratitis^266564
+ ;;^UTILITY(U,$J,358.3,7102,0)
+ ;;=370.23^^49^554^42
+ ;;^UTILITY(U,$J,358.3,7102,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7102,1,3,0)
+ ;;=3^Filamentary Keratitis
+ ;;^UTILITY(U,$J,358.3,7102,1,4,0)
+ ;;=4^370.23
+ ;;^UTILITY(U,$J,358.3,7102,2)
+ ;;=^268924
+ ;;^UTILITY(U,$J,358.3,7103,0)
+ ;;=370.33^^49^554^68
+ ;;^UTILITY(U,$J,358.3,7103,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7103,1,3,0)
+ ;;=3^Keratoconjunctivitis Sicca
+ ;;^UTILITY(U,$J,358.3,7103,1,4,0)
+ ;;=4^370.33
+ ;;^UTILITY(U,$J,358.3,7103,2)
+ ;;=Keratoconjunctivitis Sicca^268931
+ ;;^UTILITY(U,$J,358.3,7104,0)
+ ;;=371.60^^49^554^70
+ ;;^UTILITY(U,$J,358.3,7104,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7104,1,3,0)
+ ;;=3^Keratoconus
+ ;;^UTILITY(U,$J,358.3,7104,1,4,0)
+ ;;=4^371.60
+ ;;^UTILITY(U,$J,358.3,7104,2)
+ ;;=Keratoconus^66799
+ ;;^UTILITY(U,$J,358.3,7105,0)
+ ;;=371.13^^49^554^73
+ ;;^UTILITY(U,$J,358.3,7105,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7105,1,3,0)
+ ;;=3^Krunkenberg's Spindle
+ ;;^UTILITY(U,$J,358.3,7105,1,4,0)
+ ;;=4^371.13
+ ;;^UTILITY(U,$J,358.3,7105,2)
+ ;;=^268961
+ ;;^UTILITY(U,$J,358.3,7106,0)
+ ;;=371.03^^49^554^91
+ ;;^UTILITY(U,$J,358.3,7106,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7106,1,3,0)
+ ;;=3^Opacity, Corneal, Central
+ ;;^UTILITY(U,$J,358.3,7106,1,4,0)
+ ;;=4^371.03
+ ;;^UTILITY(U,$J,358.3,7106,2)
+ ;;=Corneal Opacity, Central^21253
+ ;;^UTILITY(U,$J,358.3,7107,0)
+ ;;=371.02^^49^554^92
+ ;;^UTILITY(U,$J,358.3,7107,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7107,1,3,0)
+ ;;=3^Opacity, Periph, Corneal
+ ;;^UTILITY(U,$J,358.3,7107,1,4,0)
+ ;;=4^371.02
+ ;;^UTILITY(U,$J,358.3,7107,2)
+ ;;=Opacity, Peripheral^268955
+ ;;^UTILITY(U,$J,358.3,7108,0)
+ ;;=371.42^^49^554^108
+ ;;^UTILITY(U,$J,358.3,7108,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7108,1,3,0)
+ ;;=3^Recurrent Erosion, Cornea
+ ;;^UTILITY(U,$J,358.3,7108,1,4,0)
+ ;;=4^371.42
+ ;;^UTILITY(U,$J,358.3,7108,2)
+ ;;=Recurrent Cornea Erosion^268978
+ ;;^UTILITY(U,$J,358.3,7109,0)
+ ;;=370.03^^49^554^118
+ ;;^UTILITY(U,$J,358.3,7109,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7109,1,3,0)
+ ;;=3^Ulcer, Central Cornea
+ ;;^UTILITY(U,$J,358.3,7109,1,4,0)
+ ;;=4^370.03
+ ;;^UTILITY(U,$J,358.3,7109,2)
+ ;;=Corneal Ulcer, Central^268910
+ ;;^UTILITY(U,$J,358.3,7110,0)
+ ;;=370.01^^49^554^119
+ ;;^UTILITY(U,$J,358.3,7110,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7110,1,3,0)
+ ;;=3^Ulcer, Marginal Cornea
+ ;;^UTILITY(U,$J,358.3,7110,1,4,0)
+ ;;=4^370.01
+ ;;^UTILITY(U,$J,358.3,7110,2)
+ ;;=Corneal Ulcer,Marginal^268908
+ ;;^UTILITY(U,$J,358.3,7111,0)
+ ;;=371.57^^49^554^48
+ ;;^UTILITY(U,$J,358.3,7111,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7111,1,3,0)
+ ;;=3^Guttata
+ ;;^UTILITY(U,$J,358.3,7111,1,4,0)
+ ;;=4^371.57
+ ;;^UTILITY(U,$J,358.3,7111,2)
+ ;;=^268988
+ ;;^UTILITY(U,$J,358.3,7112,0)
+ ;;=370.34^^49^554^41
+ ;;^UTILITY(U,$J,358.3,7112,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7112,1,3,0)
+ ;;=3^Exposure Keratonconjunctivitis,Lid Path

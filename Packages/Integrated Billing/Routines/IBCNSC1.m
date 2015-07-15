@@ -1,6 +1,6 @@
 IBCNSC1 ;ALB/NLR - IBCNS INSURANCE COMPANY ;23-MAR-93
- ;;2.0;INTEGRATED BILLING;**62,137,232,291,320,348,349,371,400**;21-MAR-94;Build 52
- ;;Per VHA Directive 2004-038, this routine should not be modified.
+ ;;2.0;INTEGRATED BILLING;**62,137,232,291,320,348,349,371,400,519,516**;21-MAR-94;Build 123
+ ;;Per VA Directive 6402, this routine should not be modified.
  ;
 % G EN^IBCNSC
  ;
@@ -44,6 +44,8 @@ MAIN ; -- Call edit template
  I $G(IBY)=",12," D EDITID^IBCEP(+IBCNS)
  I $F(",6,13,",$G(IBY)) D PARENT^IBCNSC02(+IBCNS)   ; parent/child management
  L -^DIC(36,+IBCNS)
+ ; IB*2.0*519:  If field 3.02 or 3.04 has changed, trigger HL7 to update the NIF
+ I (IBEDIKEY(2)'=$P($G(^DIC(36,+IBCNS,3)),U,2))!(IBEDIKEY(4)'=$P($G(^DIC(36,+IBCNS,3)),U,4)) D EXR^IBCNHUT1(IBCNS),SEND^IBCNHHLO(IBCNS)
 MAINQ Q
  ;
 FACID ; -- Edit facility ids
@@ -181,23 +183,25 @@ PROVID N OFFSET,START,IBCNS4,IBCNS3,IBDISP,Z,LINE
  S LINE=LINE+1
  D SET^IBCNSP(LINE,OFFSET,TEXT)
  ;
- S TEXT="Always use main VAMC as Billing Provider (1500)?: "_$$EXPAND^IBTRE(36,4.11,+$P(IBCNS4,U,11))
- S LINE=LINE+1
- D SET^IBCNSP(LINE,OFFSET,TEXT)
+ ; MRD;IB*2.0*516 - Marked fields 4.07, 4.11, 4.12 and 4.13 for
+ ; deletion and removed all references to them.
+ ;S TEXT="Always use main VAMC as Billing Provider (1500)?: "_$$EXPAND^IBTRE(36,4.11,+$P(IBCNS4,U,11))
+ ;S LINE=LINE+1
+ ;D SET^IBCNSP(LINE,OFFSET,TEXT)
  ;
- S TEXT="Always use main VAMC as Billing Provider (UB-04)?: "_$$EXPAND^IBTRE(36,4.12,+$P(IBCNS4,U,12))
- S LINE=LINE+1
- D SET^IBCNSP(LINE,OFFSET,TEXT)
+ ;S TEXT="Always use main VAMC as Billing Provider (UB-04)?: "_$$EXPAND^IBTRE(36,4.12,+$P(IBCNS4,U,12))
+ ;S LINE=LINE+1
+ ;D SET^IBCNSP(LINE,OFFSET,TEXT)
  ;
- I $P(IBCNS4,U,11)!($P(IBCNS4,U,12)) D
- .S TEXT="Send VA Lab/Facility IDs or Facility Data for VAMC?: "_$$EXPAND^IBTRE(36,4.07,+$P(IBCNS4,U,7))
- .S LINE=LINE+1
- .D SET^IBCNSP(LINE,OFFSET,TEXT)
- .;
- .S TEXT="Use the Billing Provider (VAMC) Name and Street Address?: "_$$EXPAND^IBTRE(36,4.13,+$P(IBCNS4,U,13))
- .S LINE=LINE+1
- .D SET^IBCNSP(LINE,OFFSET,TEXT)
- .Q
+ ;I $P(IBCNS4,U,11)!($P(IBCNS4,U,12)) D
+ ;.S TEXT="Send VA Lab/Facility IDs or Facility Data for VAMC?: "_$$EXPAND^IBTRE(36,4.07,+$P(IBCNS4,U,7))
+ ;.S LINE=LINE+1
+ ;.D SET^IBCNSP(LINE,OFFSET,TEXT)
+ ;.;
+ ;.S TEXT="Use the Billing Provider (VAMC) Name and Street Address?: "_$$EXPAND^IBTRE(36,4.13,+$P(IBCNS4,U,13))
+ ;.S LINE=LINE+1
+ ;.D SET^IBCNSP(LINE,OFFSET,TEXT)
+ ;.Q
  ;
  S TEXT="Transmit no Billing Provider Sec. ID for the Electronic Plan Types: "
  S LINE=LINE+1

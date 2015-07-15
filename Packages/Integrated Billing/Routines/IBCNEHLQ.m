@@ -1,6 +1,6 @@
 IBCNEHLQ ;DAOU/ALA - HL7 RQI Message ;17-JUN-2002
- ;;2.0;INTEGRATED BILLING;**184,271,300,361,416,438,467,497**;21-MAR-94;Build 120
- ;;Per VHA Directive 2004-038, this routine should not be modified.
+ ;;2.0;INTEGRATED BILLING;**184,271,300,361,416,438,467,497,533,516**;21-MAR-94;Build 123
+ ;;Per VA Directive 6402, this routine should not be modified.
  ;
  ;**Program Description**
  ;  This routine builds an eIV Verification (RQI^I01) or
@@ -19,7 +19,7 @@ EN ;  Entry Point
  ;    FRDT = Freshness Date
  ;
 PID ; Patient Identification Segment
- N VAFSTR,ICN,NM,I,PID11,EDQ
+ N VAFSTR,ICN,NM,I,PID11,EDQ,IBWHO
  S VAFSTR=",1,7,8,11,",DFN=+$G(DFN)
  S PID=$$EN^VAFHLPID(DFN,VAFSTR,1)
  S PID11=$P(PID,HLFS,12)
@@ -31,11 +31,17 @@ PID ; Patient Identification Segment
  ;         need to be modified as they currently expect 11 pieces to be returned.
  I DFN D
  .; try to get name of insured from NAME OF INSURED
- .I EXT'=1,IRIEN S NM=$P($G(^DPT(DFN,.312,IRIEN,7)),U,1)
- .I EXT=1,BUFF,$G(NM)="" S NM=$P($G(^IBA(355.33,BUFF,91)),U)
- .S NM=$$HLNAME^HLFNC(NM,HLECH)
+ .I EXT'=1,$G(IRIEN)'="" D
+ .. S IBWHO=$P($G(^DPT(DFN,.312,IRIEN,0)),U,6)
+ .. I IBWHO'="",IBWHO'="v" Q
+ .. S NM=$P($G(^DPT(DFN,.312,IRIEN,7)),U,1)
+ .I EXT=1,BUFF,$G(NM)="" D
+ .. S IBWHO=$P($G(^IBA(355.33,BUFF,60)),U,5)
+ .. I IBWHO'="",IBWHO'="v" Q
+ .. S NM=$P($G(^IBA(355.33,BUFF,91)),U)
+ .I $G(NM)'="" S NM=$$HLNAME^HLFNC(NM,HLECH)
  .; if unsuccessful, get patient name from 2/.01
- .I NM="" D
+ .I $G(NM)="" D
  ..S NM("FILE")=2,NM("IENS")=DFN,NM("FIELD")=.01
  ..S NM=$$HLNAME^XLFNAME(.NM,"",$E(HLECH)),NM=$S(NM]"":NM,1:HLQ)
  ..Q
@@ -58,7 +64,8 @@ GT1 ;  Guarantor Segment
  I EXT=1 D
  . S WHO=$P($G(^IBA(355.33,BUFF,60)),U,5)
  . I WHO="v"!(WHO="") Q
- . S NM=$P($G(^IBA(355.33,BUFF,60)),U,7),NM=$$NAME^IBCNEHLU(NM)
+ . ;S NM=$P($G(^IBA(355.33,BUFF,60)),U,7),NM=$$NAME^IBCNEHLU(NM)
+ . S NM=$$GET1^DIQ(355.33,BUFF,91.01),NM=$$NAME^IBCNEHLU(NM) ;Get HIPAA data from new fields - IB*2*516
  . S NM=$$HLNAME^HLFNC(NM,HLECH)
  . S NM=$$ENCHL7(NM)
  . S $P(GT1,HLFS,3)=NM_HLECH_HLECH_HLECH
@@ -110,8 +117,11 @@ IN1 ;  Insurance Segment
  .I PAYR'=$$FIND1^DIC(365.12,"","X","~NO PAYER") D
  ..S $P(IN1,HLFS,3)=$$ENCHL7($P(^IBE(365.12,PAYR,0),U,2))_HLECH_HLECH_HLECH_"USVHA"_HLECH_"VP"_HLECH
  ..S $P(IN1,HLFS,4)=$$ENCHL7($P(^IBE(365.12,PAYR,0),U,1))
- .S $P(IN1,HLFS,8)=$$ENCHL7($P($G(^IBA(355.33,BUFF,40)),U,3))
- .S $P(IN1,HLFS,9)=$$ENCHL7($P($G(^IBA(355.33,BUFF,40)),U,2))
+ . ;IB*2.0*516/TAZ - Use HIPAA compliant fields
+ .;S $P(IN1,HLFS,8)=$$ENCHL7($P($G(^IBA(355.33,BUFF,40)),U,3))
+ .;S $P(IN1,HLFS,9)=$$ENCHL7($P($G(^IBA(355.33,BUFF,40)),U,2))
+ .S $P(IN1,HLFS,8)=$$ENCHL7($$GET1^DIQ(355.33,BUFF_",",90.02))
+ .S $P(IN1,HLFS,9)=$$ENCHL7($$GET1^DIQ(355.33,BUFF_",",90.01))
  .S EFFDT=$P($G(^IBA(355.33,BUFF,60)),U,2),EFFDT=$$HLDATE^HLFNC(EFFDT)
  .S EXPDT=$P($G(^IBA(355.33,BUFF,60)),U,3),EXPDT=$$HLDATE^HLFNC(EXPDT)
  .S $P(IN1,HLFS,12)=EFFDT

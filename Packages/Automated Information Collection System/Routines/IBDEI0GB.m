@@ -1,134 +1,134 @@
-IBDEI0GB ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0GB ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7923,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7923,1,3,0)
- ;;=3^Ectropion, Mechanical
- ;;^UTILITY(U,$J,358.3,7923,1,4,0)
- ;;=4^374.12
- ;;^UTILITY(U,$J,358.3,7923,2)
- ;;=Ectropion, Mechanical^269085
- ;;^UTILITY(U,$J,358.3,7924,0)
- ;;=374.13^^58^604^16
- ;;^UTILITY(U,$J,358.3,7924,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7924,1,3,0)
- ;;=3^Ectropion, Spastic
- ;;^UTILITY(U,$J,358.3,7924,1,4,0)
- ;;=4^374.13
- ;;^UTILITY(U,$J,358.3,7924,2)
- ;;=Ectropion, Spastic^269087
- ;;^UTILITY(U,$J,358.3,7925,0)
- ;;=374.00^^58^604^22
- ;;^UTILITY(U,$J,358.3,7925,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7925,1,3,0)
- ;;=3^Entropion, Unspec
- ;;^UTILITY(U,$J,358.3,7925,1,4,0)
- ;;=4^374.00
- ;;^UTILITY(U,$J,358.3,7925,2)
- ;;=Entropion, Unspec^41016
- ;;^UTILITY(U,$J,358.3,7926,0)
- ;;=374.04^^58^604^18
- ;;^UTILITY(U,$J,358.3,7926,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7926,1,3,0)
- ;;=3^Entropion, Cicatricial
- ;;^UTILITY(U,$J,358.3,7926,1,4,0)
- ;;=4^374.04
- ;;^UTILITY(U,$J,358.3,7926,2)
- ;;=Entropion, Cicatricial^269080
- ;;^UTILITY(U,$J,358.3,7927,0)
- ;;=374.02^^58^604^19
- ;;^UTILITY(U,$J,358.3,7927,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7927,1,3,0)
- ;;=3^Entropion, Mechanical
- ;;^UTILITY(U,$J,358.3,7927,1,4,0)
- ;;=4^374.02
- ;;^UTILITY(U,$J,358.3,7927,2)
- ;;=Entropion, Mechanical^269076
- ;;^UTILITY(U,$J,358.3,7928,0)
- ;;=374.03^^58^604^21
- ;;^UTILITY(U,$J,358.3,7928,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7928,1,3,0)
- ;;=3^Entropion, Spastic
- ;;^UTILITY(U,$J,358.3,7928,1,4,0)
- ;;=4^374.03
- ;;^UTILITY(U,$J,358.3,7928,2)
- ;;=Spastic Entropion^269078
- ;;^UTILITY(U,$J,358.3,7929,0)
- ;;=870.0^^58^604^58
- ;;^UTILITY(U,$J,358.3,7929,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7929,1,3,0)
- ;;=3^Eyelid/Periocular Skin Laceration
- ;;^UTILITY(U,$J,358.3,7929,1,4,0)
- ;;=4^870.0
- ;;^UTILITY(U,$J,358.3,7929,2)
- ;;=Laceration, Eyelid^274879
- ;;^UTILITY(U,$J,358.3,7930,0)
- ;;=374.20^^58^604^72
- ;;^UTILITY(U,$J,358.3,7930,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7930,1,3,0)
- ;;=3^Lagophthalmos
- ;;^UTILITY(U,$J,358.3,7930,1,4,0)
- ;;=4^374.20
- ;;^UTILITY(U,$J,358.3,7930,2)
- ;;=Lagophthalmos^265452
- ;;^UTILITY(U,$J,358.3,7931,0)
- ;;=378.9^^58^604^98
- ;;^UTILITY(U,$J,358.3,7931,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7931,1,3,0)
- ;;=3^Strabismus
- ;;^UTILITY(U,$J,358.3,7931,1,4,0)
- ;;=4^378.9
- ;;^UTILITY(U,$J,358.3,7931,2)
- ;;=Strabismus^123833
- ;;^UTILITY(U,$J,358.3,7932,0)
- ;;=242.90^^58^604^99
- ;;^UTILITY(U,$J,358.3,7932,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7932,1,3,0)
- ;;=3^Thyrotoxicosis w/o Crisis Thyroid Eye Dis
- ;;^UTILITY(U,$J,358.3,7932,1,4,0)
- ;;=4^242.90
- ;;^UTILITY(U,$J,358.3,7932,2)
- ;;=Thyroid Eye Disease^267811^376.21
- ;;^UTILITY(U,$J,358.3,7933,0)
- ;;=374.05^^58^604^100
- ;;^UTILITY(U,$J,358.3,7933,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7933,1,3,0)
- ;;=3^Trichiasis w/o Entropion
- ;;^UTILITY(U,$J,358.3,7933,1,4,0)
- ;;=4^374.05
- ;;^UTILITY(U,$J,358.3,7933,2)
- ;;=Trichiasis^269082
- ;;^UTILITY(U,$J,358.3,7934,0)
- ;;=375.21^^58^604^69
- ;;^UTILITY(U,$J,358.3,7934,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7934,1,3,0)
- ;;=3^Lacrimal,Epiphora,Excess
- ;;^UTILITY(U,$J,358.3,7934,1,4,0)
- ;;=4^375.21
- ;;^UTILITY(U,$J,358.3,7934,2)
- ;;=Epiphora, excess lacrimation^269137
- ;;^UTILITY(U,$J,358.3,7935,0)
- ;;=375.22^^58^604^23
- ;;^UTILITY(U,$J,358.3,7935,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7935,1,3,0)
- ;;=3^Epiphora, Insuff Drainage
- ;;^UTILITY(U,$J,358.3,7935,1,4,0)
- ;;=4^375.22
- ;;^UTILITY(U,$J,358.3,7935,2)
- ;;=Epiphora, Insuff Drainage^269138
- ;;^UTILITY(U,$J,358.3,7936,0)
- ;;=375.53^^58^604^67
+ ;;^UTILITY(U,$J,358.3,7869,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7869,1,2,0)
+ ;;=2^Contact Lens Tx for Ocular Disease
+ ;;^UTILITY(U,$J,358.3,7869,1,3,0)
+ ;;=3^92071
+ ;;^UTILITY(U,$J,358.3,7870,0)
+ ;;=92072^^51^569^1^^^^1
+ ;;^UTILITY(U,$J,358.3,7870,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7870,1,2,0)
+ ;;=2^Contact Lens Mgmt Keratoconus,Init
+ ;;^UTILITY(U,$J,358.3,7870,1,3,0)
+ ;;=3^92072
+ ;;^UTILITY(U,$J,358.3,7871,0)
+ ;;=65430^^51^570^9^^^^1
+ ;;^UTILITY(U,$J,358.3,7871,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7871,1,2,0)
+ ;;=2^Corneal Scrape* (dx culture)
+ ;;^UTILITY(U,$J,358.3,7871,1,3,0)
+ ;;=3^65430
+ ;;^UTILITY(U,$J,358.3,7872,0)
+ ;;=92285^^51^570^15^^^^1
+ ;;^UTILITY(U,$J,358.3,7872,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7872,1,2,0)
+ ;;=2^External Eye Photography
+ ;;^UTILITY(U,$J,358.3,7872,1,3,0)
+ ;;=3^92285
+ ;;^UTILITY(U,$J,358.3,7873,0)
+ ;;=92225^^51^570^14^^^^1
+ ;;^UTILITY(U,$J,358.3,7873,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7873,1,2,0)
+ ;;=2^Extended Ophthalmoscopy,Initial
+ ;;^UTILITY(U,$J,358.3,7873,1,3,0)
+ ;;=3^92225
+ ;;^UTILITY(U,$J,358.3,7874,0)
+ ;;=92235^^51^570^16^^^^1
+ ;;^UTILITY(U,$J,358.3,7874,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7874,1,2,0)
+ ;;=2^Fluorescein Angio
+ ;;^UTILITY(U,$J,358.3,7874,1,3,0)
+ ;;=3^92235
+ ;;^UTILITY(U,$J,358.3,7875,0)
+ ;;=92250^^51^570^17^^^^1
+ ;;^UTILITY(U,$J,358.3,7875,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7875,1,2,0)
+ ;;=2^Fundus Photography
+ ;;^UTILITY(U,$J,358.3,7875,1,3,0)
+ ;;=3^92250
+ ;;^UTILITY(U,$J,358.3,7876,0)
+ ;;=92020^^51^570^20^^^^1
+ ;;^UTILITY(U,$J,358.3,7876,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7876,1,2,0)
+ ;;=2^Gonioscopy
+ ;;^UTILITY(U,$J,358.3,7876,1,3,0)
+ ;;=3^92020
+ ;;^UTILITY(U,$J,358.3,7877,0)
+ ;;=92081^^51^570^40^^^^1
+ ;;^UTILITY(U,$J,358.3,7877,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7877,1,2,0)
+ ;;=2^Visual Field - Screening
+ ;;^UTILITY(U,$J,358.3,7877,1,3,0)
+ ;;=3^92081
+ ;;^UTILITY(U,$J,358.3,7878,0)
+ ;;=92082^^51^570^39^^^^1
+ ;;^UTILITY(U,$J,358.3,7878,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7878,1,2,0)
+ ;;=2^Visual Field - Intermediate
+ ;;^UTILITY(U,$J,358.3,7878,1,3,0)
+ ;;=3^92082
+ ;;^UTILITY(U,$J,358.3,7879,0)
+ ;;=92083^^51^570^41^^^^1
+ ;;^UTILITY(U,$J,358.3,7879,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7879,1,2,0)
+ ;;=2^Visual Field - Threshold
+ ;;^UTILITY(U,$J,358.3,7879,1,3,0)
+ ;;=3^92083
+ ;;^UTILITY(U,$J,358.3,7880,0)
+ ;;=92100^^51^570^33^^^^1
+ ;;^UTILITY(U,$J,358.3,7880,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7880,1,2,0)
+ ;;=2^Serial Tonometry
+ ;;^UTILITY(U,$J,358.3,7880,1,3,0)
+ ;;=3^92100
+ ;;^UTILITY(U,$J,358.3,7881,0)
+ ;;=76519^^51^570^1^^^^1
+ ;;^UTILITY(U,$J,358.3,7881,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7881,1,2,0)
+ ;;=2^A-Scan w/ Intraoc Lens Power Calc
+ ;;^UTILITY(U,$J,358.3,7881,1,3,0)
+ ;;=3^76519
+ ;;^UTILITY(U,$J,358.3,7881,3,0)
+ ;;=^357.33^^0
+ ;;^UTILITY(U,$J,358.3,7882,0)
+ ;;=76512^^51^570^3^^^^1
+ ;;^UTILITY(U,$J,358.3,7882,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7882,1,2,0)
+ ;;=2^B-Scan
+ ;;^UTILITY(U,$J,358.3,7882,1,3,0)
+ ;;=3^76512
+ ;;^UTILITY(U,$J,358.3,7882,3,0)
+ ;;=^357.33^^0
+ ;;^UTILITY(U,$J,358.3,7883,0)
+ ;;=92226^^51^570^13^^^^1
+ ;;^UTILITY(U,$J,358.3,7883,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7883,1,2,0)
+ ;;=2^Ext Ophthalmoscopy, Subseq
+ ;;^UTILITY(U,$J,358.3,7883,1,3,0)
+ ;;=3^92226
+ ;;^UTILITY(U,$J,358.3,7884,0)
+ ;;=92060^^51^570^32^^^^1
+ ;;^UTILITY(U,$J,358.3,7884,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7884,1,2,0)
+ ;;=2^Sensorimotor Exam w/ Mult Meas Ocular Dev
+ ;;^UTILITY(U,$J,358.3,7884,1,3,0)
+ ;;=3^92060

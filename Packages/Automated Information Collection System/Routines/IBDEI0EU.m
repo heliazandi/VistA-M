@@ -1,142 +1,134 @@
-IBDEI0EU ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0EU ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7164,2)
- ;;=^293664
- ;;^UTILITY(U,$J,358.3,7165,0)
- ;;=280.9^^55^577^86
- ;;^UTILITY(U,$J,358.3,7165,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7165,1,4,0)
- ;;=4^280.9
- ;;^UTILITY(U,$J,358.3,7165,1,5,0)
- ;;=5^Iron Defic Anemia,Unspec
- ;;^UTILITY(U,$J,358.3,7165,2)
- ;;=^276946
- ;;^UTILITY(U,$J,358.3,7166,0)
- ;;=285.1^^55^577^84
- ;;^UTILITY(U,$J,358.3,7166,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7166,1,4,0)
- ;;=4^285.1
- ;;^UTILITY(U,$J,358.3,7166,1,5,0)
- ;;=5^Iron Defic Anemia d/t Acute Blood Loss
- ;;^UTILITY(U,$J,358.3,7166,2)
- ;;=^267986
- ;;^UTILITY(U,$J,358.3,7167,0)
- ;;=280.0^^55^577^85
- ;;^UTILITY(U,$J,358.3,7167,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7167,1,4,0)
- ;;=4^280.0
- ;;^UTILITY(U,$J,358.3,7167,1,5,0)
- ;;=5^Iron Defic Anemia d/t Chronic Blood Loss
- ;;^UTILITY(U,$J,358.3,7167,2)
- ;;=^267971
- ;;^UTILITY(U,$J,358.3,7168,0)
- ;;=281.9^^55^577^107
- ;;^UTILITY(U,$J,358.3,7168,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7168,1,4,0)
- ;;=4^281.9
- ;;^UTILITY(U,$J,358.3,7168,1,5,0)
- ;;=5^Nutritional Anemia
- ;;^UTILITY(U,$J,358.3,7168,2)
- ;;=^123801
- ;;^UTILITY(U,$J,358.3,7169,0)
- ;;=281.0^^55^577^123
- ;;^UTILITY(U,$J,358.3,7169,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7169,1,4,0)
- ;;=4^281.0
- ;;^UTILITY(U,$J,358.3,7169,1,5,0)
- ;;=5^Vit B12 Deficiency (Pernicious Anemia)
- ;;^UTILITY(U,$J,358.3,7169,2)
- ;;=^7161
- ;;^UTILITY(U,$J,358.3,7170,0)
- ;;=282.60^^55^577^111
- ;;^UTILITY(U,$J,358.3,7170,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7170,1,4,0)
- ;;=4^282.60
- ;;^UTILITY(U,$J,358.3,7170,1,5,0)
- ;;=5^Sickle-Cell Anemia
- ;;^UTILITY(U,$J,358.3,7170,2)
- ;;=^7188
- ;;^UTILITY(U,$J,358.3,7171,0)
- ;;=282.62^^55^577^112
- ;;^UTILITY(U,$J,358.3,7171,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7171,1,4,0)
- ;;=4^282.62
- ;;^UTILITY(U,$J,358.3,7171,1,5,0)
- ;;=5^Sickle-Cell With Crisis
- ;;^UTILITY(U,$J,358.3,7171,2)
- ;;=^267982
- ;;^UTILITY(U,$J,358.3,7172,0)
- ;;=281.1^^55^577^124
- ;;^UTILITY(U,$J,358.3,7172,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7172,1,4,0)
- ;;=4^281.1
- ;;^UTILITY(U,$J,358.3,7172,1,5,0)
- ;;=5^Vit B12 Deficiency(Dietary)
- ;;^UTILITY(U,$J,358.3,7172,2)
- ;;=^267974
- ;;^UTILITY(U,$J,358.3,7173,0)
- ;;=286.7^^55^577^54
- ;;^UTILITY(U,$J,358.3,7173,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7173,1,4,0)
- ;;=4^286.7
- ;;^UTILITY(U,$J,358.3,7173,1,5,0)
- ;;=5^Coagulation Defect(Any),Acquired
- ;;^UTILITY(U,$J,358.3,7173,2)
- ;;=^2235
- ;;^UTILITY(U,$J,358.3,7174,0)
- ;;=289.9^^55^577^120
- ;;^UTILITY(U,$J,358.3,7174,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7174,1,4,0)
- ;;=4^289.9
- ;;^UTILITY(U,$J,358.3,7174,1,5,0)
- ;;=5^Thrombocytosis, Essential
- ;;^UTILITY(U,$J,358.3,7174,2)
- ;;=^55344
- ;;^UTILITY(U,$J,358.3,7175,0)
- ;;=451.9^^55^577^121
- ;;^UTILITY(U,$J,358.3,7175,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7175,1,4,0)
- ;;=4^451.9
- ;;^UTILITY(U,$J,358.3,7175,1,5,0)
- ;;=5^Thrombophlebitis 
- ;;^UTILITY(U,$J,358.3,7175,2)
- ;;=^93357
- ;;^UTILITY(U,$J,358.3,7176,0)
- ;;=446.6^^55^577^122
- ;;^UTILITY(U,$J,358.3,7176,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7176,1,4,0)
- ;;=4^446.6
- ;;^UTILITY(U,$J,358.3,7176,1,5,0)
- ;;=5^Thrombotic Thrombocytopenic Purpura(Ttp)
- ;;^UTILITY(U,$J,358.3,7176,2)
- ;;=^119061
- ;;^UTILITY(U,$J,358.3,7177,0)
- ;;=286.4^^55^577^125
- ;;^UTILITY(U,$J,358.3,7177,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7177,1,4,0)
- ;;=4^286.4
- ;;^UTILITY(U,$J,358.3,7177,1,5,0)
- ;;=5^Von Willebrand's Disease
- ;;^UTILITY(U,$J,358.3,7177,2)
- ;;=^127267
- ;;^UTILITY(U,$J,358.3,7178,0)
- ;;=204.00^^55^577^1
- ;;^UTILITY(U,$J,358.3,7178,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7178,1,4,0)
- ;;=4^204.00
+ ;;^UTILITY(U,$J,358.3,7139,0)
+ ;;=694.5^^49^554^95
+ ;;^UTILITY(U,$J,358.3,7139,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7139,1,3,0)
+ ;;=3^Pemphigoid
+ ;;^UTILITY(U,$J,358.3,7139,1,4,0)
+ ;;=4^694.5
+ ;;^UTILITY(U,$J,358.3,7139,2)
+ ;;=Pemphigoid^91108
+ ;;^UTILITY(U,$J,358.3,7140,0)
+ ;;=364.10^^49^554^54
+ ;;^UTILITY(U,$J,358.3,7140,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7140,1,3,0)
+ ;;=3^Iridocyclitis, Chronic
+ ;;^UTILITY(U,$J,358.3,7140,1,4,0)
+ ;;=4^364.10
+ ;;^UTILITY(U,$J,358.3,7140,2)
+ ;;=Iridocyclitis, Chronic^24398
+ ;;^UTILITY(U,$J,358.3,7141,0)
+ ;;=054.44^^49^554^55
+ ;;^UTILITY(U,$J,358.3,7141,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7141,1,3,0)
+ ;;=3^Iridocyclitis, H Simplex
+ ;;^UTILITY(U,$J,358.3,7141,1,4,0)
+ ;;=4^054.44
+ ;;^UTILITY(U,$J,358.3,7141,2)
+ ;;=Iridocyclitis, H Simplex^266565
+ ;;^UTILITY(U,$J,358.3,7142,0)
+ ;;=053.22^^49^554^56
+ ;;^UTILITY(U,$J,358.3,7142,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7142,1,3,0)
+ ;;=3^Iridocyclitis, H Zoster
+ ;;^UTILITY(U,$J,358.3,7142,1,4,0)
+ ;;=4^053.22
+ ;;^UTILITY(U,$J,358.3,7142,2)
+ ;;=Iridocyclitis, H Zoster^266554
+ ;;^UTILITY(U,$J,358.3,7143,0)
+ ;;=364.42^^49^554^111
+ ;;^UTILITY(U,$J,358.3,7143,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7143,1,3,0)
+ ;;=3^Rubeosis Iridis
+ ;;^UTILITY(U,$J,358.3,7143,1,4,0)
+ ;;=4^364.42
+ ;;^UTILITY(U,$J,358.3,7143,2)
+ ;;=Rubeosis Iridis^268716
+ ;;^UTILITY(U,$J,358.3,7144,0)
+ ;;=364.59^^49^554^59
+ ;;^UTILITY(U,$J,358.3,7144,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7144,1,3,0)
+ ;;=3^Iris Atrophy,Other
+ ;;^UTILITY(U,$J,358.3,7144,1,4,0)
+ ;;=4^364.59
+ ;;^UTILITY(U,$J,358.3,7144,2)
+ ;;=Iris Atrophy^268731
+ ;;^UTILITY(U,$J,358.3,7145,0)
+ ;;=224.0^^49^554^11
+ ;;^UTILITY(U,$J,358.3,7145,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7145,1,3,0)
+ ;;=3^Benign Neopl of Iris
+ ;;^UTILITY(U,$J,358.3,7145,1,4,0)
+ ;;=4^224.0
+ ;;^UTILITY(U,$J,358.3,7145,2)
+ ;;=^267670
+ ;;^UTILITY(U,$J,358.3,7146,0)
+ ;;=364.72^^49^554^6
+ ;;^UTILITY(U,$J,358.3,7146,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7146,1,3,0)
+ ;;=3^Anterior Synechiae
+ ;;^UTILITY(U,$J,358.3,7146,1,4,0)
+ ;;=4^364.72
+ ;;^UTILITY(U,$J,358.3,7146,2)
+ ;;=Anterior Synechiae^265517
+ ;;^UTILITY(U,$J,358.3,7147,0)
+ ;;=364.71^^49^554^102
+ ;;^UTILITY(U,$J,358.3,7147,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7147,1,3,0)
+ ;;=3^Posterior Synechiae
+ ;;^UTILITY(U,$J,358.3,7147,1,4,0)
+ ;;=4^364.71
+ ;;^UTILITY(U,$J,358.3,7147,2)
+ ;;=Posterior Synechiae^265519
+ ;;^UTILITY(U,$J,358.3,7148,0)
+ ;;=364.00^^49^554^57
+ ;;^UTILITY(U,$J,358.3,7148,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7148,1,3,0)
+ ;;=3^Iridocyclitis,Acute/Subacute,Unspec
+ ;;^UTILITY(U,$J,358.3,7148,1,4,0)
+ ;;=4^364.00
+ ;;^UTILITY(U,$J,358.3,7148,2)
+ ;;=Iridocyclitis, Acute^268703
+ ;;^UTILITY(U,$J,358.3,7149,0)
+ ;;=379.40^^49^554^106
+ ;;^UTILITY(U,$J,358.3,7149,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7149,1,3,0)
+ ;;=3^Pupil, Abnormal function
+ ;;^UTILITY(U,$J,358.3,7149,1,4,0)
+ ;;=4^379.40
+ ;;^UTILITY(U,$J,358.3,7149,2)
+ ;;=Pupil, Abnormal function^101288
+ ;;^UTILITY(U,$J,358.3,7150,0)
+ ;;=190.0^^49^554^84
+ ;;^UTILITY(U,$J,358.3,7150,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7150,1,3,0)
+ ;;=3^Malig Neopl of Eyeball,Iris
+ ;;^UTILITY(U,$J,358.3,7150,1,4,0)
+ ;;=4^190.0
+ ;;^UTILITY(U,$J,358.3,7150,2)
+ ;;=Malig Neopl of Iris^267271
+ ;;^UTILITY(U,$J,358.3,7151,0)
+ ;;=190.3^^49^554^83
+ ;;^UTILITY(U,$J,358.3,7151,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7151,1,3,0)
+ ;;=3^Malig Neopl Conjunctiva
+ ;;^UTILITY(U,$J,358.3,7151,1,4,0)
+ ;;=4^190.3
+ ;;^UTILITY(U,$J,358.3,7151,2)
+ ;;=Malig Neopl Conjunctiva^267274

@@ -1,144 +1,132 @@
-IBDEI0H4 ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0H4 ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8314,0)
- ;;=368.01^^58^608^7
- ;;^UTILITY(U,$J,358.3,8314,1,0)
+ ;;^UTILITY(U,$J,358.3,8278,0)
+ ;;=379.24^^52^580^105
+ ;;^UTILITY(U,$J,358.3,8278,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8314,1,3,0)
- ;;=3^Amblyopia,Strabismic
- ;;^UTILITY(U,$J,358.3,8314,1,4,0)
- ;;=4^368.01
- ;;^UTILITY(U,$J,358.3,8314,2)
- ;;=^265358
- ;;^UTILITY(U,$J,358.3,8315,0)
- ;;=368.12^^58^608^123
- ;;^UTILITY(U,$J,358.3,8315,1,0)
+ ;;^UTILITY(U,$J,358.3,8278,1,3,0)
+ ;;=3^Vitreous Floaters
+ ;;^UTILITY(U,$J,358.3,8278,1,4,0)
+ ;;=4^379.24
+ ;;^UTILITY(U,$J,358.3,8278,2)
+ ;;=Vitreous Floaters^88242
+ ;;^UTILITY(U,$J,358.3,8279,0)
+ ;;=379.26^^52^580^107
+ ;;^UTILITY(U,$J,358.3,8279,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8315,1,3,0)
- ;;=3^Transient Visual Loss
- ;;^UTILITY(U,$J,358.3,8315,1,4,0)
- ;;=4^368.12
- ;;^UTILITY(U,$J,358.3,8315,2)
- ;;=^268834
- ;;^UTILITY(U,$J,358.3,8316,0)
- ;;=368.14^^58^608^59
- ;;^UTILITY(U,$J,358.3,8316,1,0)
+ ;;^UTILITY(U,$J,358.3,8279,1,3,0)
+ ;;=3^Vitreous Prolapse
+ ;;^UTILITY(U,$J,358.3,8279,1,4,0)
+ ;;=4^379.26
+ ;;^UTILITY(U,$J,358.3,8279,2)
+ ;;=Vitreous Prolapse^269312
+ ;;^UTILITY(U,$J,358.3,8280,0)
+ ;;=379.23^^52^580^106
+ ;;^UTILITY(U,$J,358.3,8280,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8316,1,3,0)
- ;;=3^Metamorphopsia
- ;;^UTILITY(U,$J,358.3,8316,1,4,0)
- ;;=4^368.14
- ;;^UTILITY(U,$J,358.3,8316,2)
- ;;=^268836
- ;;^UTILITY(U,$J,358.3,8317,0)
- ;;=368.15^^58^608^102
- ;;^UTILITY(U,$J,358.3,8317,1,0)
+ ;;^UTILITY(U,$J,358.3,8280,1,3,0)
+ ;;=3^Vitreous Hemorrhage
+ ;;^UTILITY(U,$J,358.3,8280,1,4,0)
+ ;;=4^379.23
+ ;;^UTILITY(U,$J,358.3,8280,2)
+ ;;=Vitreous Hemorrhage^127096
+ ;;^UTILITY(U,$J,358.3,8281,0)
+ ;;=362.18^^52^580^89
+ ;;^UTILITY(U,$J,358.3,8281,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8317,1,3,0)
- ;;=3^Photopsia
- ;;^UTILITY(U,$J,358.3,8317,1,4,0)
- ;;=4^368.15
- ;;^UTILITY(U,$J,358.3,8317,2)
- ;;=^268837
- ;;^UTILITY(U,$J,358.3,8318,0)
- ;;=368.16^^58^608^45
- ;;^UTILITY(U,$J,358.3,8318,1,0)
+ ;;^UTILITY(U,$J,358.3,8281,1,3,0)
+ ;;=3^Retinal Vasculitis
+ ;;^UTILITY(U,$J,358.3,8281,1,4,0)
+ ;;=4^362.18
+ ;;^UTILITY(U,$J,358.3,8281,2)
+ ;;=Retinal Vasculitis^264463
+ ;;^UTILITY(U,$J,358.3,8282,0)
+ ;;=360.21^^52^580^31
+ ;;^UTILITY(U,$J,358.3,8282,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8318,1,3,0)
- ;;=3^Hallucinations,Visual
- ;;^UTILITY(U,$J,358.3,8318,1,4,0)
- ;;=4^368.16
- ;;^UTILITY(U,$J,358.3,8318,2)
- ;;=^268838
- ;;^UTILITY(U,$J,358.3,8319,0)
- ;;=368.41^^58^608^109
- ;;^UTILITY(U,$J,358.3,8319,1,0)
+ ;;^UTILITY(U,$J,358.3,8282,1,3,0)
+ ;;=3^Degenerative Myopia
+ ;;^UTILITY(U,$J,358.3,8282,1,4,0)
+ ;;=4^360.21
+ ;;^UTILITY(U,$J,358.3,8282,2)
+ ;;=Degenerative Myopia^268553
+ ;;^UTILITY(U,$J,358.3,8283,0)
+ ;;=362.64^^52^580^80
+ ;;^UTILITY(U,$J,358.3,8283,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8319,1,3,0)
- ;;=3^Scotoma,Central Area
- ;;^UTILITY(U,$J,358.3,8319,1,4,0)
- ;;=4^368.41
- ;;^UTILITY(U,$J,358.3,8319,2)
- ;;=^265366
- ;;^UTILITY(U,$J,358.3,8320,0)
- ;;=368.42^^58^608^108
- ;;^UTILITY(U,$J,358.3,8320,1,0)
+ ;;^UTILITY(U,$J,358.3,8283,1,3,0)
+ ;;=3^Reticular Degeneration
+ ;;^UTILITY(U,$J,358.3,8283,1,4,0)
+ ;;=4^362.64
+ ;;^UTILITY(U,$J,358.3,8283,2)
+ ;;=Reticular Degeneration^268645
+ ;;^UTILITY(U,$J,358.3,8284,0)
+ ;;=362.61^^52^580^29
+ ;;^UTILITY(U,$J,358.3,8284,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8320,1,3,0)
- ;;=3^Scotoma,Blind Spot
- ;;^UTILITY(U,$J,358.3,8320,1,4,0)
- ;;=4^368.42
- ;;^UTILITY(U,$J,358.3,8320,2)
- ;;=^265368
- ;;^UTILITY(U,$J,358.3,8321,0)
- ;;=368.43^^58^608^10
- ;;^UTILITY(U,$J,358.3,8321,1,0)
+ ;;^UTILITY(U,$J,358.3,8284,1,3,0)
+ ;;=3^Degeneration, Paving Stone
+ ;;^UTILITY(U,$J,358.3,8284,1,4,0)
+ ;;=4^362.61
+ ;;^UTILITY(U,$J,358.3,8284,2)
+ ;;=Paving Stone Degeneration^268642
+ ;;^UTILITY(U,$J,358.3,8285,0)
+ ;;=362.42^^52^580^94
+ ;;^UTILITY(U,$J,358.3,8285,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8321,1,3,0)
- ;;=3^Arcuate Defects
- ;;^UTILITY(U,$J,358.3,8321,1,4,0)
- ;;=4^368.43
- ;;^UTILITY(U,$J,358.3,8321,2)
- ;;=^268845
- ;;^UTILITY(U,$J,358.3,8322,0)
- ;;=368.44^^58^608^124
- ;;^UTILITY(U,$J,358.3,8322,1,0)
+ ;;^UTILITY(U,$J,358.3,8285,1,3,0)
+ ;;=3^Rpe Detachment, Serous
+ ;;^UTILITY(U,$J,358.3,8285,1,4,0)
+ ;;=4^362.42
+ ;;^UTILITY(U,$J,358.3,8285,2)
+ ;;=Serous RPE Detachment^268633
+ ;;^UTILITY(U,$J,358.3,8286,0)
+ ;;=362.43^^52^580^93
+ ;;^UTILITY(U,$J,358.3,8286,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8322,1,3,0)
- ;;=3^Visual Field Defect,Oth Localized
- ;;^UTILITY(U,$J,358.3,8322,1,4,0)
- ;;=4^368.44
- ;;^UTILITY(U,$J,358.3,8322,2)
- ;;=^87688
- ;;^UTILITY(U,$J,358.3,8323,0)
- ;;=368.45^^58^608^42
- ;;^UTILITY(U,$J,358.3,8323,1,0)
+ ;;^UTILITY(U,$J,358.3,8286,1,3,0)
+ ;;=3^Rpe Detachment, Hemorrhagic
+ ;;^UTILITY(U,$J,358.3,8286,1,4,0)
+ ;;=4^362.43
+ ;;^UTILITY(U,$J,358.3,8286,2)
+ ;;=Hemorrhagic RPE Detachment^268634
+ ;;^UTILITY(U,$J,358.3,8287,0)
+ ;;=250.00^^52^580^34
+ ;;^UTILITY(U,$J,358.3,8287,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8323,1,3,0)
- ;;=3^Generalized Constriction
- ;;^UTILITY(U,$J,358.3,8323,1,4,0)
- ;;=4^368.45
- ;;^UTILITY(U,$J,358.3,8323,2)
- ;;=^268846
- ;;^UTILITY(U,$J,358.3,8324,0)
- ;;=368.46^^58^608^51
- ;;^UTILITY(U,$J,358.3,8324,1,0)
+ ;;^UTILITY(U,$J,358.3,8287,1,3,0)
+ ;;=3^Dm Type II, No Retinopathy
+ ;;^UTILITY(U,$J,358.3,8287,1,4,0)
+ ;;=4^250.00
+ ;;^UTILITY(U,$J,358.3,8287,2)
+ ;;=DM Type II, No Retinopathy^33605
+ ;;^UTILITY(U,$J,358.3,8288,0)
+ ;;=250.01^^52^580^33
+ ;;^UTILITY(U,$J,358.3,8288,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8324,1,3,0)
- ;;=3^Homonymous Field Defect
- ;;^UTILITY(U,$J,358.3,8324,1,4,0)
- ;;=4^368.46
- ;;^UTILITY(U,$J,358.3,8324,2)
- ;;=^58452
- ;;^UTILITY(U,$J,358.3,8325,0)
- ;;=368.47^^58^608^50
- ;;^UTILITY(U,$J,358.3,8325,1,0)
+ ;;^UTILITY(U,$J,358.3,8288,1,3,0)
+ ;;=3^Dm Type I, No Retinopathy
+ ;;^UTILITY(U,$J,358.3,8288,1,4,0)
+ ;;=4^250.01
+ ;;^UTILITY(U,$J,358.3,8288,2)
+ ;;=DM Type I, No Retinopathy^33586
+ ;;^UTILITY(U,$J,358.3,8289,0)
+ ;;=250.50^^52^580^25
+ ;;^UTILITY(U,$J,358.3,8289,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8325,1,3,0)
- ;;=3^Heteronymous Field Defect
- ;;^UTILITY(U,$J,358.3,8325,1,4,0)
- ;;=4^368.47
- ;;^UTILITY(U,$J,358.3,8325,2)
- ;;=^268847
- ;;^UTILITY(U,$J,358.3,8326,0)
- ;;=368.55^^58^608^23
- ;;^UTILITY(U,$J,358.3,8326,1,0)
+ ;;^UTILITY(U,$J,358.3,8289,1,3,0)
+ ;;=3^Csme In DM Type II
+ ;;^UTILITY(U,$J,358.3,8289,1,4,0)
+ ;;=4^250.50
+ ;;^UTILITY(U,$J,358.3,8289,2)
+ ;;=CSME in DM type II^267839^362.83
+ ;;^UTILITY(U,$J,358.3,8290,0)
+ ;;=250.51^^52^580^27
+ ;;^UTILITY(U,$J,358.3,8290,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8326,1,3,0)
- ;;=3^Color Blind,Acquired
- ;;^UTILITY(U,$J,358.3,8326,1,4,0)
- ;;=4^368.55
- ;;^UTILITY(U,$J,358.3,8326,2)
- ;;=^268856
- ;;^UTILITY(U,$J,358.3,8327,0)
- ;;=369.62^^58^608^14
- ;;^UTILITY(U,$J,358.3,8327,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8327,1,3,0)
- ;;=3^Blindness-One Eye
- ;;^UTILITY(U,$J,358.3,8327,1,4,0)
- ;;=4^369.62
- ;;^UTILITY(U,$J,358.3,8327,2)
- ;;=^268890
+ ;;^UTILITY(U,$J,358.3,8290,1,3,0)
+ ;;=3^DM Type I w/ Ophtharlmic Manifestation
+ ;;^UTILITY(U,$J,358.3,8290,1,4,0)
+ ;;=4^250.51
