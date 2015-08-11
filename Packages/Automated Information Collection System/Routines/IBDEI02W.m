@@ -1,138 +1,132 @@
-IBDEI02W ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI02W ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,976,0)
- ;;=V5130^^12^109^15^^^^1
- ;;^UTILITY(U,$J,358.3,976,1,0)
+ ;;^UTILITY(U,$J,358.3,914,0)
+ ;;=92541^^9^98^8^^^^1
+ ;;^UTILITY(U,$J,358.3,914,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,976,1,2,0)
- ;;=2^V5130
- ;;^UTILITY(U,$J,358.3,976,1,3,0)
- ;;=3^HA,Binaural,In Ear
- ;;^UTILITY(U,$J,358.3,977,0)
- ;;=V5140^^12^109^12^^^^1
- ;;^UTILITY(U,$J,358.3,977,1,0)
+ ;;^UTILITY(U,$J,358.3,914,1,2,0)
+ ;;=2^92541
+ ;;^UTILITY(U,$J,358.3,914,1,3,0)
+ ;;=3^Spontaneous Nystagmus Test W/Recording
+ ;;^UTILITY(U,$J,358.3,915,0)
+ ;;=92540^^9^98^1^^^^1
+ ;;^UTILITY(U,$J,358.3,915,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,977,1,2,0)
- ;;=2^V5140
- ;;^UTILITY(U,$J,358.3,977,1,3,0)
- ;;=3^HA,Binaural,Behind Ear
- ;;^UTILITY(U,$J,358.3,978,0)
- ;;=V5150^^12^109^14^^^^1
- ;;^UTILITY(U,$J,358.3,978,1,0)
+ ;;^UTILITY(U,$J,358.3,915,1,2,0)
+ ;;=2^92540
+ ;;^UTILITY(U,$J,358.3,915,1,3,0)
+ ;;=3^Basic Vestibular Eval w/Recordings
+ ;;^UTILITY(U,$J,358.3,916,0)
+ ;;=92531^^9^99^1^^^^1
+ ;;^UTILITY(U,$J,358.3,916,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,978,1,2,0)
- ;;=2^V5150
- ;;^UTILITY(U,$J,358.3,978,1,3,0)
- ;;=3^HA,Binaural,Glasses
- ;;^UTILITY(U,$J,358.3,979,0)
- ;;=V5170^^12^109^18^^^^1
- ;;^UTILITY(U,$J,358.3,979,1,0)
+ ;;^UTILITY(U,$J,358.3,916,1,2,0)
+ ;;=2^92531
+ ;;^UTILITY(U,$J,358.3,916,1,3,0)
+ ;;=3^Spontaneous Nystagmus Test, W/O Recording
+ ;;^UTILITY(U,$J,358.3,917,0)
+ ;;=92532^^9^99^2^^^^1
+ ;;^UTILITY(U,$J,358.3,917,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,979,1,2,0)
- ;;=2^V5170
- ;;^UTILITY(U,$J,358.3,979,1,3,0)
- ;;=3^HA,CROS,In Ear
- ;;^UTILITY(U,$J,358.3,980,0)
- ;;=V5180^^12^109^16^^^^1
- ;;^UTILITY(U,$J,358.3,980,1,0)
+ ;;^UTILITY(U,$J,358.3,917,1,2,0)
+ ;;=2^92532
+ ;;^UTILITY(U,$J,358.3,917,1,3,0)
+ ;;=3^Positional Nystagmus Test, W/O Recording
+ ;;^UTILITY(U,$J,358.3,918,0)
+ ;;=92533^^9^99^3^^^^1
+ ;;^UTILITY(U,$J,358.3,918,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,980,1,2,0)
- ;;=2^V5180
- ;;^UTILITY(U,$J,358.3,980,1,3,0)
- ;;=3^HA,CROS,Behind Ear
- ;;^UTILITY(U,$J,358.3,981,0)
- ;;=V5190^^12^109^17^^^^1
- ;;^UTILITY(U,$J,358.3,981,1,0)
+ ;;^UTILITY(U,$J,358.3,918,1,2,0)
+ ;;=2^92533
+ ;;^UTILITY(U,$J,358.3,918,1,3,0)
+ ;;=3^Caloric Vestibular Test, W/O Recording
+ ;;^UTILITY(U,$J,358.3,919,0)
+ ;;=92534^^9^99^4^^^^1
+ ;;^UTILITY(U,$J,358.3,919,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,981,1,2,0)
- ;;=2^V5190
- ;;^UTILITY(U,$J,358.3,981,1,3,0)
- ;;=3^HA,CROS,Glasses
- ;;^UTILITY(U,$J,358.3,982,0)
- ;;=V5210^^12^109^10^^^^1
- ;;^UTILITY(U,$J,358.3,982,1,0)
+ ;;^UTILITY(U,$J,358.3,919,1,2,0)
+ ;;=2^92534
+ ;;^UTILITY(U,$J,358.3,919,1,3,0)
+ ;;=3^Opokinetic Nystagmus Test, W/O Recording
+ ;;^UTILITY(U,$J,358.3,920,0)
+ ;;=98960^^9^100^1^^^^1
+ ;;^UTILITY(U,$J,358.3,920,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,982,1,2,0)
- ;;=2^V5210
- ;;^UTILITY(U,$J,358.3,982,1,3,0)
- ;;=3^HA,BICROS,In Ear
- ;;^UTILITY(U,$J,358.3,983,0)
- ;;=V5220^^12^109^8^^^^1
- ;;^UTILITY(U,$J,358.3,983,1,0)
+ ;;^UTILITY(U,$J,358.3,920,1,2,0)
+ ;;=2^98960
+ ;;^UTILITY(U,$J,358.3,920,1,3,0)
+ ;;=3^Education & Training, Individual
+ ;;^UTILITY(U,$J,358.3,921,0)
+ ;;=98961^^9^100^2^^^^1
+ ;;^UTILITY(U,$J,358.3,921,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,983,1,2,0)
- ;;=2^V5220
- ;;^UTILITY(U,$J,358.3,983,1,3,0)
- ;;=3^HA,BICROS,Behind Ear
- ;;^UTILITY(U,$J,358.3,984,0)
- ;;=V5230^^12^109^9^^^^1
- ;;^UTILITY(U,$J,358.3,984,1,0)
+ ;;^UTILITY(U,$J,358.3,921,1,2,0)
+ ;;=2^98961
+ ;;^UTILITY(U,$J,358.3,921,1,3,0)
+ ;;=3^Education & Training,2-4 Patients
+ ;;^UTILITY(U,$J,358.3,922,0)
+ ;;=98962^^9^100^3^^^^1
+ ;;^UTILITY(U,$J,358.3,922,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,984,1,2,0)
- ;;=2^V5230
- ;;^UTILITY(U,$J,358.3,984,1,3,0)
- ;;=3^HA,BICROS,Glasses
- ;;^UTILITY(U,$J,358.3,985,0)
- ;;=V5240^^12^109^2^^^^1
- ;;^UTILITY(U,$J,358.3,985,1,0)
+ ;;^UTILITY(U,$J,358.3,922,1,2,0)
+ ;;=2^98962
+ ;;^UTILITY(U,$J,358.3,922,1,3,0)
+ ;;=3^Education & Training,5-8 Patients
+ ;;^UTILITY(U,$J,358.3,923,0)
+ ;;=V5011^^9^100^4^^^^1
+ ;;^UTILITY(U,$J,358.3,923,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,985,1,2,0)
- ;;=2^V5240
- ;;^UTILITY(U,$J,358.3,985,1,3,0)
- ;;=3^Dispensing Fee,BICROS
- ;;^UTILITY(U,$J,358.3,986,0)
- ;;=V5241^^12^109^3^^^^1
- ;;^UTILITY(U,$J,358.3,986,1,0)
+ ;;^UTILITY(U,$J,358.3,923,1,2,0)
+ ;;=2^V5011
+ ;;^UTILITY(U,$J,358.3,923,1,3,0)
+ ;;=3^Hearing Aid Fitting/Checking
+ ;;^UTILITY(U,$J,358.3,924,0)
+ ;;=92626^^9^101^3^^^^1
+ ;;^UTILITY(U,$J,358.3,924,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,986,1,2,0)
- ;;=2^V5241
- ;;^UTILITY(U,$J,358.3,986,1,3,0)
- ;;=3^Dispensing Fee,Monaural HA
- ;;^UTILITY(U,$J,358.3,987,0)
- ;;=V5242^^12^109^6^^^^1
- ;;^UTILITY(U,$J,358.3,987,1,0)
+ ;;^UTILITY(U,$J,358.3,924,1,2,0)
+ ;;=2^92626
+ ;;^UTILITY(U,$J,358.3,924,1,3,0)
+ ;;=3^Eval of Auditory Rehab Status,1st Hr
+ ;;^UTILITY(U,$J,358.3,925,0)
+ ;;=92627^^9^101^4^^^^1
+ ;;^UTILITY(U,$J,358.3,925,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,987,1,2,0)
- ;;=2^V5242
- ;;^UTILITY(U,$J,358.3,987,1,3,0)
- ;;=3^HA,Analog,Monaural,CIC
- ;;^UTILITY(U,$J,358.3,988,0)
- ;;=V5243^^12^109^7^^^^1
- ;;^UTILITY(U,$J,358.3,988,1,0)
+ ;;^UTILITY(U,$J,358.3,925,1,2,0)
+ ;;=2^92627
+ ;;^UTILITY(U,$J,358.3,925,1,3,0)
+ ;;=3^Eval of Auditory Rehab Status,Ea Addl 15min
+ ;;^UTILITY(U,$J,358.3,926,0)
+ ;;=92630^^9^101^1^^^^1
+ ;;^UTILITY(U,$J,358.3,926,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,988,1,2,0)
- ;;=2^V5243
- ;;^UTILITY(U,$J,358.3,988,1,3,0)
- ;;=3^HA,Analog,Monaural,ITC
- ;;^UTILITY(U,$J,358.3,989,0)
- ;;=V5244^^12^109^31^^^^1
- ;;^UTILITY(U,$J,358.3,989,1,0)
+ ;;^UTILITY(U,$J,358.3,926,1,2,0)
+ ;;=2^92630
+ ;;^UTILITY(U,$J,358.3,926,1,3,0)
+ ;;=3^Auditory Rehab;Prelingual Hearing Loss
+ ;;^UTILITY(U,$J,358.3,927,0)
+ ;;=92633^^9^101^2^^^^1
+ ;;^UTILITY(U,$J,358.3,927,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,989,1,2,0)
- ;;=2^V5244
- ;;^UTILITY(U,$J,358.3,989,1,3,0)
- ;;=3^HA,Monaural,Completely In Ear Canal
- ;;^UTILITY(U,$J,358.3,990,0)
- ;;=V5245^^12^109^33^^^^1
- ;;^UTILITY(U,$J,358.3,990,1,0)
+ ;;^UTILITY(U,$J,358.3,927,1,2,0)
+ ;;=2^92633
+ ;;^UTILITY(U,$J,358.3,927,1,3,0)
+ ;;=3^Auditory Rehab;Postlingual Hearing Loss
+ ;;^UTILITY(U,$J,358.3,928,0)
+ ;;=92625^^9^101^5^^^^1
+ ;;^UTILITY(U,$J,358.3,928,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,990,1,2,0)
- ;;=2^V5245
- ;;^UTILITY(U,$J,358.3,990,1,3,0)
- ;;=3^HA,Monaural,In Ear Canal
- ;;^UTILITY(U,$J,358.3,991,0)
- ;;=V5246^^12^109^22^^^^1
- ;;^UTILITY(U,$J,358.3,991,1,0)
+ ;;^UTILITY(U,$J,358.3,928,1,2,0)
+ ;;=2^92625
+ ;;^UTILITY(U,$J,358.3,928,1,3,0)
+ ;;=3^Tinnitus Assessment
+ ;;^UTILITY(U,$J,358.3,929,0)
+ ;;=99366^^9^102^1^^^^1
+ ;;^UTILITY(U,$J,358.3,929,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,991,1,2,0)
- ;;=2^V5246
- ;;^UTILITY(U,$J,358.3,991,1,3,0)
- ;;=3^HA,Digital Analog,Monaural,ITE
- ;;^UTILITY(U,$J,358.3,992,0)
- ;;=V5247^^12^109^20^^^^1
- ;;^UTILITY(U,$J,358.3,992,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,992,1,2,0)
- ;;=2^V5247
+ ;;^UTILITY(U,$J,358.3,929,1,2,0)
+ ;;=2^99366
+ ;;^UTILITY(U,$J,358.3,929,1,3,0)
+ ;;=3^Team Conf w/ Pt by HC Pro,30 Min

@@ -1,140 +1,138 @@
-IBDEI0HQ ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0HQ ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8617,0)
- ;;=371.71^^58^612^42
- ;;^UTILITY(U,$J,358.3,8617,1,0)
+ ;;^UTILITY(U,$J,358.3,8580,1,4,0)
+ ;;=4^V60.0
+ ;;^UTILITY(U,$J,358.3,8580,2)
+ ;;=^295539
+ ;;^UTILITY(U,$J,358.3,8581,0)
+ ;;=V65.5^^52^582^13
+ ;;^UTILITY(U,$J,358.3,8581,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8617,1,3,0)
- ;;=3^Corneal Ectasia
- ;;^UTILITY(U,$J,358.3,8617,1,4,0)
- ;;=4^371.71
- ;;^UTILITY(U,$J,358.3,8617,2)
- ;;=^268994
- ;;^UTILITY(U,$J,358.3,8618,0)
- ;;=371.72^^58^612^49
- ;;^UTILITY(U,$J,358.3,8618,1,0)
+ ;;^UTILITY(U,$J,358.3,8581,1,3,0)
+ ;;=3^Condition Not Found
+ ;;^UTILITY(U,$J,358.3,8581,1,4,0)
+ ;;=4^V65.5
+ ;;^UTILITY(U,$J,358.3,8581,2)
+ ;;=^295564
+ ;;^UTILITY(U,$J,358.3,8582,0)
+ ;;=V67.51^^52^582^12
+ ;;^UTILITY(U,$J,358.3,8582,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8618,1,3,0)
- ;;=3^Descemetocele
- ;;^UTILITY(U,$J,358.3,8618,1,4,0)
- ;;=4^371.72
- ;;^UTILITY(U,$J,358.3,8618,2)
- ;;=^268995
- ;;^UTILITY(U,$J,358.3,8619,0)
- ;;=372.00^^58^612^22
- ;;^UTILITY(U,$J,358.3,8619,1,0)
+ ;;^UTILITY(U,$J,358.3,8582,1,3,0)
+ ;;=3^Completed Trmt of High Risk Med
+ ;;^UTILITY(U,$J,358.3,8582,1,4,0)
+ ;;=4^V67.51
+ ;;^UTILITY(U,$J,358.3,8582,2)
+ ;;=^295577
+ ;;^UTILITY(U,$J,358.3,8583,0)
+ ;;=V87.39^^52^582^15
+ ;;^UTILITY(U,$J,358.3,8583,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8619,1,3,0)
- ;;=3^Conjunctivitis,Acute
- ;;^UTILITY(U,$J,358.3,8619,1,4,0)
- ;;=4^372.00
- ;;^UTILITY(U,$J,358.3,8619,2)
- ;;=^269000
- ;;^UTILITY(U,$J,358.3,8620,0)
- ;;=372.02^^58^612^25
- ;;^UTILITY(U,$J,358.3,8620,1,0)
+ ;;^UTILITY(U,$J,358.3,8583,1,3,0)
+ ;;=3^Cont/Exp Hazard Sub NEC
+ ;;^UTILITY(U,$J,358.3,8583,1,4,0)
+ ;;=4^V87.39
+ ;;^UTILITY(U,$J,358.3,8583,2)
+ ;;=^336815
+ ;;^UTILITY(U,$J,358.3,8584,0)
+ ;;=369.05^^52^582^76
+ ;;^UTILITY(U,$J,358.3,8584,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8620,1,3,0)
- ;;=3^Conjunctivitis,Acute,Follicular
- ;;^UTILITY(U,$J,358.3,8620,1,4,0)
- ;;=4^372.02
- ;;^UTILITY(U,$J,358.3,8620,2)
- ;;=^269003
- ;;^UTILITY(U,$J,358.3,8621,0)
- ;;=372.03^^58^612^10
- ;;^UTILITY(U,$J,358.3,8621,1,0)
+ ;;^UTILITY(U,$J,358.3,8584,1,3,0)
+ ;;=3^One Eye-Profound,Oth Eye-NOS
+ ;;^UTILITY(U,$J,358.3,8584,1,4,0)
+ ;;=4^369.05
+ ;;^UTILITY(U,$J,358.3,8584,2)
+ ;;=^268865
+ ;;^UTILITY(U,$J,358.3,8585,0)
+ ;;=365.11^^52^583^20
+ ;;^UTILITY(U,$J,358.3,8585,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8621,1,3,0)
- ;;=3^Conjuctivitis,Mucopurulent
- ;;^UTILITY(U,$J,358.3,8621,1,4,0)
- ;;=4^372.03
- ;;^UTILITY(U,$J,358.3,8621,2)
- ;;=^87718
- ;;^UTILITY(U,$J,358.3,8622,0)
- ;;=372.04^^58^612^33
- ;;^UTILITY(U,$J,358.3,8622,1,0)
+ ;;^UTILITY(U,$J,358.3,8585,1,3,0)
+ ;;=3^Glaucoma,Open Angle
+ ;;^UTILITY(U,$J,358.3,8585,1,4,0)
+ ;;=4^365.11
+ ;;^UTILITY(U,$J,358.3,8585,2)
+ ;;=Open Angle Glaucoma^51203
+ ;;^UTILITY(U,$J,358.3,8586,0)
+ ;;=365.12^^52^583^16
+ ;;^UTILITY(U,$J,358.3,8586,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8622,1,3,0)
- ;;=3^Conjunctivitis,Pseudomembranous
- ;;^UTILITY(U,$J,358.3,8622,1,4,0)
- ;;=4^372.04
- ;;^UTILITY(U,$J,358.3,8622,2)
- ;;=^269006
- ;;^UTILITY(U,$J,358.3,8623,0)
- ;;=372.05^^58^612^23
- ;;^UTILITY(U,$J,358.3,8623,1,0)
+ ;;^UTILITY(U,$J,358.3,8586,1,3,0)
+ ;;=3^Glaucoma,Low Tension
+ ;;^UTILITY(U,$J,358.3,8586,1,4,0)
+ ;;=4^365.12
+ ;;^UTILITY(U,$J,358.3,8586,2)
+ ;;=Low Tension Glaucoma^265223
+ ;;^UTILITY(U,$J,358.3,8587,0)
+ ;;=365.63^^52^583^19
+ ;;^UTILITY(U,$J,358.3,8587,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8623,1,3,0)
- ;;=3^Conjunctivitis,Acute,Atopic
- ;;^UTILITY(U,$J,358.3,8623,1,4,0)
- ;;=4^372.05
- ;;^UTILITY(U,$J,358.3,8623,2)
- ;;=^2605
- ;;^UTILITY(U,$J,358.3,8624,0)
- ;;=372.06^^58^612^24
- ;;^UTILITY(U,$J,358.3,8624,1,0)
+ ;;^UTILITY(U,$J,358.3,8587,1,3,0)
+ ;;=3^Glaucoma,Neovascular
+ ;;^UTILITY(U,$J,358.3,8587,1,4,0)
+ ;;=4^365.63
+ ;;^UTILITY(U,$J,358.3,8587,2)
+ ;;=Neovascular Glaucoma^268778
+ ;;^UTILITY(U,$J,358.3,8588,0)
+ ;;=365.10^^52^583^22
+ ;;^UTILITY(U,$J,358.3,8588,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8624,1,3,0)
- ;;=3^Conjunctivitis,Acute,Chemical
- ;;^UTILITY(U,$J,358.3,8624,1,4,0)
- ;;=4^372.06
- ;;^UTILITY(U,$J,358.3,8624,2)
- ;;=^338237
- ;;^UTILITY(U,$J,358.3,8625,0)
- ;;=372.10^^58^612^30
- ;;^UTILITY(U,$J,358.3,8625,1,0)
+ ;;^UTILITY(U,$J,358.3,8588,1,3,0)
+ ;;=3^Glaucoma,Open Angle Unspec
+ ;;^UTILITY(U,$J,358.3,8588,1,4,0)
+ ;;=4^365.10
+ ;;^UTILITY(U,$J,358.3,8588,2)
+ ;;=^51206
+ ;;^UTILITY(U,$J,358.3,8589,0)
+ ;;=365.13^^52^583^25
+ ;;^UTILITY(U,$J,358.3,8589,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8625,1,3,0)
- ;;=3^Conjunctivitis,Chronic,Unspec
- ;;^UTILITY(U,$J,358.3,8625,1,4,0)
- ;;=4^372.10
- ;;^UTILITY(U,$J,358.3,8625,2)
- ;;=^269008
- ;;^UTILITY(U,$J,358.3,8626,0)
- ;;=372.11^^58^612^29
- ;;^UTILITY(U,$J,358.3,8626,1,0)
+ ;;^UTILITY(U,$J,358.3,8589,1,3,0)
+ ;;=3^Glaucoma,Pigmentary
+ ;;^UTILITY(U,$J,358.3,8589,1,4,0)
+ ;;=4^365.13
+ ;;^UTILITY(U,$J,358.3,8589,2)
+ ;;=Pigmentary Glaucoma^51211
+ ;;^UTILITY(U,$J,358.3,8590,0)
+ ;;=365.20^^52^583^26
+ ;;^UTILITY(U,$J,358.3,8590,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8626,1,3,0)
- ;;=3^Conjunctivitis,Chronic,Simple
- ;;^UTILITY(U,$J,358.3,8626,1,4,0)
- ;;=4^372.11
- ;;^UTILITY(U,$J,358.3,8626,2)
- ;;=^269010
- ;;^UTILITY(U,$J,358.3,8627,0)
- ;;=372.12^^58^612^28
- ;;^UTILITY(U,$J,358.3,8627,1,0)
+ ;;^UTILITY(U,$J,358.3,8590,1,3,0)
+ ;;=3^Glaucoma,Prim Angle Closure
+ ;;^UTILITY(U,$J,358.3,8590,1,4,0)
+ ;;=4^365.20
+ ;;^UTILITY(U,$J,358.3,8590,2)
+ ;;=^51195
+ ;;^UTILITY(U,$J,358.3,8591,0)
+ ;;=365.52^^52^583^27
+ ;;^UTILITY(U,$J,358.3,8591,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8627,1,3,0)
- ;;=3^Conjunctivitis,Chronic,Follicular
- ;;^UTILITY(U,$J,358.3,8627,1,4,0)
- ;;=4^372.12
- ;;^UTILITY(U,$J,358.3,8627,2)
- ;;=^269013
- ;;^UTILITY(U,$J,358.3,8628,0)
- ;;=372.13^^58^612^36
- ;;^UTILITY(U,$J,358.3,8628,1,0)
+ ;;^UTILITY(U,$J,358.3,8591,1,3,0)
+ ;;=3^Glaucoma,Pseudoexfoliation
+ ;;^UTILITY(U,$J,358.3,8591,1,4,0)
+ ;;=4^365.52
+ ;;^UTILITY(U,$J,358.3,8591,2)
+ ;;=Pseudoexfoliation Glaucoma^268771
+ ;;^UTILITY(U,$J,358.3,8592,0)
+ ;;=365.15^^52^583^29
+ ;;^UTILITY(U,$J,358.3,8592,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8628,1,3,0)
- ;;=3^Conjunctivitis,Vernal
- ;;^UTILITY(U,$J,358.3,8628,1,4,0)
- ;;=4^372.13
- ;;^UTILITY(U,$J,358.3,8628,2)
- ;;=^27613
- ;;^UTILITY(U,$J,358.3,8629,0)
- ;;=372.14^^58^612^27
- ;;^UTILITY(U,$J,358.3,8629,1,0)
+ ;;^UTILITY(U,$J,358.3,8592,1,3,0)
+ ;;=3^Glaucoma,Residual Open Angle
+ ;;^UTILITY(U,$J,358.3,8592,1,4,0)
+ ;;=4^365.15
+ ;;^UTILITY(U,$J,358.3,8592,2)
+ ;;=Residual Open Angle Glaucoma^268751
+ ;;^UTILITY(U,$J,358.3,8593,0)
+ ;;=365.31^^52^583^32
+ ;;^UTILITY(U,$J,358.3,8593,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8629,1,3,0)
- ;;=3^Conjunctivitis,Chronic,Allergic
- ;;^UTILITY(U,$J,358.3,8629,1,4,0)
- ;;=4^372.14
- ;;^UTILITY(U,$J,358.3,8629,2)
- ;;=^87396
- ;;^UTILITY(U,$J,358.3,8630,0)
- ;;=372.20^^58^612^4
- ;;^UTILITY(U,$J,358.3,8630,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8630,1,3,0)
- ;;=3^Blepharoconjunctivitis,Unspec
+ ;;^UTILITY(U,$J,358.3,8593,1,3,0)
+ ;;=3^Glaucoma,Steroid Induced
+ ;;^UTILITY(U,$J,358.3,8593,1,4,0)
+ ;;=4^365.31
+ ;;^UTILITY(U,$J,358.3,8593,2)
+ ;;=Steroid Induced Glaucoma^268761

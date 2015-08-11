@@ -1,140 +1,138 @@
-IBDEI06V ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI06V ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3036,1,4,0)
- ;;=4^397.1
- ;;^UTILITY(U,$J,358.3,3036,1,5,0)
- ;;=5^Heart Dis Pulmon Valve
- ;;^UTILITY(U,$J,358.3,3036,2)
- ;;=^269587
- ;;^UTILITY(U,$J,358.3,3037,0)
- ;;=397.0^^33^271^42
- ;;^UTILITY(U,$J,358.3,3037,1,0)
+ ;;^UTILITY(U,$J,358.3,3019,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3037,1,4,0)
- ;;=4^397.0
- ;;^UTILITY(U,$J,358.3,3037,1,5,0)
- ;;=5^Heart Dis Tricuspid Valve
- ;;^UTILITY(U,$J,358.3,3037,2)
- ;;=^35528
- ;;^UTILITY(U,$J,358.3,3038,0)
- ;;=424.90^^33^271^83
- ;;^UTILITY(U,$J,358.3,3038,1,0)
+ ;;^UTILITY(U,$J,358.3,3019,1,4,0)
+ ;;=4^Aftercare after CA surgery
+ ;;^UTILITY(U,$J,358.3,3019,1,5,0)
+ ;;=5^V58.42
+ ;;^UTILITY(U,$J,358.3,3019,2)
+ ;;=Aftercare after CA surgery^295530
+ ;;^UTILITY(U,$J,358.3,3020,0)
+ ;;=V58.73^^26^246^5
+ ;;^UTILITY(U,$J,358.3,3020,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3038,1,4,0)
- ;;=4^424.90
- ;;^UTILITY(U,$J,358.3,3038,1,5,0)
- ;;=5^Valvular Heart Disease
- ;;^UTILITY(U,$J,358.3,3038,2)
- ;;=^40327
- ;;^UTILITY(U,$J,358.3,3039,0)
- ;;=V43.3^^33^271^77
- ;;^UTILITY(U,$J,358.3,3039,1,0)
+ ;;^UTILITY(U,$J,358.3,3020,1,4,0)
+ ;;=4^Aftercare after Vasc Surg
+ ;;^UTILITY(U,$J,358.3,3020,1,5,0)
+ ;;=5^V58.73
+ ;;^UTILITY(U,$J,358.3,3020,2)
+ ;;=Aftercare after Vasc Surg^295530
+ ;;^UTILITY(U,$J,358.3,3021,0)
+ ;;=V58.74^^26^246^3
+ ;;^UTILITY(U,$J,358.3,3021,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3039,1,4,0)
- ;;=4^V43.3
- ;;^UTILITY(U,$J,358.3,3039,1,5,0)
- ;;=5^S/P Heart Valve Replacement
- ;;^UTILITY(U,$J,358.3,3039,2)
- ;;=^295440
- ;;^UTILITY(U,$J,358.3,3040,0)
- ;;=401.1^^33^271^58
- ;;^UTILITY(U,$J,358.3,3040,1,0)
+ ;;^UTILITY(U,$J,358.3,3021,1,4,0)
+ ;;=4^Aftercare after Lung Surg
+ ;;^UTILITY(U,$J,358.3,3021,1,5,0)
+ ;;=5^V58.74
+ ;;^UTILITY(U,$J,358.3,3021,2)
+ ;;=Aftercare after Lung Surg^295530
+ ;;^UTILITY(U,$J,358.3,3022,0)
+ ;;=V58.77^^26^246^4
+ ;;^UTILITY(U,$J,358.3,3022,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3040,1,4,0)
- ;;=4^401.1
- ;;^UTILITY(U,$J,358.3,3040,1,5,0)
- ;;=5^Hypertension, Benign
- ;;^UTILITY(U,$J,358.3,3040,2)
- ;;=^269591
- ;;^UTILITY(U,$J,358.3,3041,0)
- ;;=796.2^^33^271^32
- ;;^UTILITY(U,$J,358.3,3041,1,0)
+ ;;^UTILITY(U,$J,358.3,3022,1,4,0)
+ ;;=4^Aftercare after Skin Surg
+ ;;^UTILITY(U,$J,358.3,3022,1,5,0)
+ ;;=5^V58.77
+ ;;^UTILITY(U,$J,358.3,3022,2)
+ ;;=Aftercare after Skin Surg^295530
+ ;;^UTILITY(U,$J,358.3,3023,0)
+ ;;=V58.75^^26^246^2
+ ;;^UTILITY(U,$J,358.3,3023,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3041,1,4,0)
- ;;=4^796.2
- ;;^UTILITY(U,$J,358.3,3041,1,5,0)
- ;;=5^Elev BP w/o dx hypertension
- ;;^UTILITY(U,$J,358.3,3041,2)
- ;;=^273464
- ;;^UTILITY(U,$J,358.3,3042,0)
- ;;=402.10^^33^271^33
- ;;^UTILITY(U,$J,358.3,3042,1,0)
+ ;;^UTILITY(U,$J,358.3,3023,1,4,0)
+ ;;=4^Aftercare after GI Surgery
+ ;;^UTILITY(U,$J,358.3,3023,1,5,0)
+ ;;=5^V58.75
+ ;;^UTILITY(U,$J,358.3,3023,2)
+ ;;=Aftercare after GI Surgery^295530
+ ;;^UTILITY(U,$J,358.3,3024,0)
+ ;;=V58.31^^26^246^12
+ ;;^UTILITY(U,$J,358.3,3024,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3042,1,4,0)
- ;;=4^402.10
- ;;^UTILITY(U,$J,358.3,3042,1,5,0)
- ;;=5^HTN w/ Heart Involvement
- ;;^UTILITY(U,$J,358.3,3042,2)
- ;;=^269598
- ;;^UTILITY(U,$J,358.3,3043,0)
- ;;=402.11^^33^271^34
- ;;^UTILITY(U,$J,358.3,3043,1,0)
+ ;;^UTILITY(U,$J,358.3,3024,1,4,0)
+ ;;=4^Removal Surg Dressing
+ ;;^UTILITY(U,$J,358.3,3024,1,5,0)
+ ;;=5^V58.31
+ ;;^UTILITY(U,$J,358.3,3024,2)
+ ;;=^334216
+ ;;^UTILITY(U,$J,358.3,3025,0)
+ ;;=V58.30^^26^246^10
+ ;;^UTILITY(U,$J,358.3,3025,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3043,1,4,0)
- ;;=4^402.11
- ;;^UTILITY(U,$J,358.3,3043,1,5,0)
- ;;=5^HTN with CHF
- ;;^UTILITY(U,$J,358.3,3043,2)
- ;;=HTN with CHF^269599
- ;;^UTILITY(U,$J,358.3,3044,0)
- ;;=403.11^^33^271^39
- ;;^UTILITY(U,$J,358.3,3044,1,0)
+ ;;^UTILITY(U,$J,358.3,3025,1,4,0)
+ ;;=4^Change/Remove Dressing
+ ;;^UTILITY(U,$J,358.3,3025,1,5,0)
+ ;;=5^V58.30
+ ;;^UTILITY(U,$J,358.3,3025,2)
+ ;;=^334215
+ ;;^UTILITY(U,$J,358.3,3026,0)
+ ;;=V58.32^^26^246^13
+ ;;^UTILITY(U,$J,358.3,3026,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3044,1,4,0)
- ;;=4^403.11
- ;;^UTILITY(U,$J,358.3,3044,1,5,0)
- ;;=5^HTN with Renal Failure
- ;;^UTILITY(U,$J,358.3,3044,2)
- ;;=^269608
- ;;^UTILITY(U,$J,358.3,3045,0)
- ;;=404.10^^33^271^37
- ;;^UTILITY(U,$J,358.3,3045,1,0)
+ ;;^UTILITY(U,$J,358.3,3026,1,4,0)
+ ;;=4^Removal Sutures
+ ;;^UTILITY(U,$J,358.3,3026,1,5,0)
+ ;;=5^V58.32
+ ;;^UTILITY(U,$J,358.3,3026,2)
+ ;;=^334217
+ ;;^UTILITY(U,$J,358.3,3027,0)
+ ;;=V58.71^^26^246^9
+ ;;^UTILITY(U,$J,358.3,3027,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3045,1,4,0)
- ;;=4^404.10
- ;;^UTILITY(U,$J,358.3,3045,1,5,0)
- ;;=5^HTN with Heart & Renal Involvement
- ;;^UTILITY(U,$J,358.3,3045,2)
- ;;=^269618
- ;;^UTILITY(U,$J,358.3,3046,0)
- ;;=404.11^^33^271^35
- ;;^UTILITY(U,$J,358.3,3046,1,0)
+ ;;^UTILITY(U,$J,358.3,3027,1,4,0)
+ ;;=4^Aftercare,Sense Organ Surg
+ ;;^UTILITY(U,$J,358.3,3027,1,5,0)
+ ;;=5^V58.71
+ ;;^UTILITY(U,$J,358.3,3027,2)
+ ;;=^328689
+ ;;^UTILITY(U,$J,358.3,3028,0)
+ ;;=V58.72^^26^246^8
+ ;;^UTILITY(U,$J,358.3,3028,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3046,1,4,0)
- ;;=4^404.11
- ;;^UTILITY(U,$J,358.3,3046,1,5,0)
- ;;=5^HTN with CHF & Renal Involvement
- ;;^UTILITY(U,$J,358.3,3046,2)
- ;;=^269619
- ;;^UTILITY(U,$J,358.3,3047,0)
- ;;=404.12^^33^271^38
- ;;^UTILITY(U,$J,358.3,3047,1,0)
+ ;;^UTILITY(U,$J,358.3,3028,1,4,0)
+ ;;=4^Aftercare,Nervous Sys Surg
+ ;;^UTILITY(U,$J,358.3,3028,1,5,0)
+ ;;=5^V58.72
+ ;;^UTILITY(U,$J,358.3,3028,2)
+ ;;=^328690
+ ;;^UTILITY(U,$J,358.3,3029,0)
+ ;;=V58.76^^26^246^6
+ ;;^UTILITY(U,$J,358.3,3029,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3047,1,4,0)
- ;;=4^404.12
- ;;^UTILITY(U,$J,358.3,3047,1,5,0)
- ;;=5^HTN with Heart Involvement & Renal Failure
- ;;^UTILITY(U,$J,358.3,3047,2)
- ;;=^269620
- ;;^UTILITY(U,$J,358.3,3048,0)
- ;;=404.13^^33^271^36
- ;;^UTILITY(U,$J,358.3,3048,1,0)
+ ;;^UTILITY(U,$J,358.3,3029,1,4,0)
+ ;;=4^Aftercare,GU Surg
+ ;;^UTILITY(U,$J,358.3,3029,1,5,0)
+ ;;=5^V58.76
+ ;;^UTILITY(U,$J,358.3,3029,2)
+ ;;=^328694
+ ;;^UTILITY(U,$J,358.3,3030,0)
+ ;;=V58.78^^26^246^7
+ ;;^UTILITY(U,$J,358.3,3030,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3048,1,4,0)
- ;;=4^404.13
- ;;^UTILITY(U,$J,358.3,3048,1,5,0)
- ;;=5^HTN with CHF & Renal failure
- ;;^UTILITY(U,$J,358.3,3048,2)
- ;;=^269621
- ;;^UTILITY(U,$J,358.3,3049,0)
- ;;=401.9^^33^271^59
- ;;^UTILITY(U,$J,358.3,3049,1,0)
+ ;;^UTILITY(U,$J,358.3,3030,1,4,0)
+ ;;=4^Aftercare,Musculos Surg
+ ;;^UTILITY(U,$J,358.3,3030,1,5,0)
+ ;;=5^V58.78
+ ;;^UTILITY(U,$J,358.3,3030,2)
+ ;;=^328696
+ ;;^UTILITY(U,$J,358.3,3031,0)
+ ;;=443.9^^26^247^16
+ ;;^UTILITY(U,$J,358.3,3031,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3049,1,4,0)
- ;;=4^401.9
- ;;^UTILITY(U,$J,358.3,3049,1,5,0)
- ;;=5^Hypertension, Essential
- ;;^UTILITY(U,$J,358.3,3049,2)
- ;;=^186630
+ ;;^UTILITY(U,$J,358.3,3031,1,4,0)
+ ;;=4^PVD
+ ;;^UTILITY(U,$J,358.3,3031,1,5,0)
+ ;;=5^443.9
+ ;;^UTILITY(U,$J,358.3,3031,2)
+ ;;=PVD^184182
+ ;;^UTILITY(U,$J,358.3,3032,0)
+ ;;=441.4^^26^247^3
+ ;;^UTILITY(U,$J,358.3,3032,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3032,1,4,0)
+ ;;=4^Aneurysm,Abdom Aortic

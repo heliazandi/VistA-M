@@ -1,142 +1,128 @@
-IBDEI0F3 ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0F3 ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7291,0)
- ;;=V08.^^55^578^24
- ;;^UTILITY(U,$J,358.3,7291,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7291,1,4,0)
- ;;=4^V08.
- ;;^UTILITY(U,$J,358.3,7291,1,5,0)
- ;;=5^HIV + Status (Asymptomatic)
- ;;^UTILITY(U,$J,358.3,7291,2)
- ;;=HIV + Status (Asymptomatic)^303392
- ;;^UTILITY(U,$J,358.3,7292,0)
- ;;=042.^^55^578^25
- ;;^UTILITY(U,$J,358.3,7292,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7292,1,4,0)
- ;;=4^042.
- ;;^UTILITY(U,$J,358.3,7292,1,5,0)
- ;;=5^HIV Disease (symptomatic)
- ;;^UTILITY(U,$J,358.3,7292,2)
- ;;=HIV Disease (symptomatic)^266500
- ;;^UTILITY(U,$J,358.3,7293,0)
- ;;=464.00^^55^578^2
- ;;^UTILITY(U,$J,358.3,7293,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7293,1,4,0)
- ;;=4^464.00
- ;;^UTILITY(U,$J,358.3,7293,1,5,0)
- ;;=5^Acute Laryngitis
- ;;^UTILITY(U,$J,358.3,7293,2)
- ;;=Acute Laryngitis^323469
- ;;^UTILITY(U,$J,358.3,7294,0)
- ;;=790.6^^55^578^1
- ;;^UTILITY(U,$J,358.3,7294,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7294,1,4,0)
- ;;=4^790.6
- ;;^UTILITY(U,$J,358.3,7294,1,5,0)
- ;;=5^Abnormal LFT's
- ;;^UTILITY(U,$J,358.3,7294,2)
- ;;=^87228
- ;;^UTILITY(U,$J,358.3,7295,0)
- ;;=780.60^^55^578^20
- ;;^UTILITY(U,$J,358.3,7295,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7295,1,4,0)
- ;;=4^780.60
- ;;^UTILITY(U,$J,358.3,7295,1,5,0)
- ;;=5^Fever
- ;;^UTILITY(U,$J,358.3,7295,2)
- ;;=^336764
- ;;^UTILITY(U,$J,358.3,7296,0)
- ;;=795.51^^55^578^55
- ;;^UTILITY(U,$J,358.3,7296,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7296,1,4,0)
- ;;=4^795.51
- ;;^UTILITY(U,$J,358.3,7296,1,5,0)
- ;;=5^Pos PPD w/o Active TB
- ;;^UTILITY(U,$J,358.3,7296,2)
- ;;=^340572
- ;;^UTILITY(U,$J,358.3,7297,0)
- ;;=482.9^^55^578^53
- ;;^UTILITY(U,$J,358.3,7297,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7297,1,4,0)
- ;;=4^482.9
- ;;^UTILITY(U,$J,358.3,7297,1,5,0)
- ;;=5^Pneumonia,Bacterial
- ;;^UTILITY(U,$J,358.3,7297,2)
- ;;=^12347
- ;;^UTILITY(U,$J,358.3,7298,0)
- ;;=571.42^^55^578^31
- ;;^UTILITY(U,$J,358.3,7298,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7298,1,4,0)
- ;;=4^571.42
- ;;^UTILITY(U,$J,358.3,7298,1,5,0)
- ;;=5^Hepatitis, Autoimunne
- ;;^UTILITY(U,$J,358.3,7298,2)
- ;;=^336610
- ;;^UTILITY(U,$J,358.3,7299,0)
- ;;=795.52^^55^578^54
- ;;^UTILITY(U,$J,358.3,7299,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7299,1,4,0)
- ;;=4^795.52
- ;;^UTILITY(U,$J,358.3,7299,1,5,0)
- ;;=5^Pos GMA Interferon w/o Active TB
- ;;^UTILITY(U,$J,358.3,7299,2)
- ;;=^340573
- ;;^UTILITY(U,$J,358.3,7300,0)
- ;;=682.0^^55^579^6
- ;;^UTILITY(U,$J,358.3,7300,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7300,1,4,0)
- ;;=4^682.0
- ;;^UTILITY(U,$J,358.3,7300,1,5,0)
- ;;=5^Cellulitis Of Face
- ;;^UTILITY(U,$J,358.3,7300,2)
- ;;=^271888
- ;;^UTILITY(U,$J,358.3,7301,0)
- ;;=681.00^^55^579^7
- ;;^UTILITY(U,$J,358.3,7301,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7301,1,4,0)
- ;;=4^681.00
- ;;^UTILITY(U,$J,358.3,7301,1,5,0)
- ;;=5^Cellulitis Of Finger NOS
- ;;^UTILITY(U,$J,358.3,7301,2)
- ;;=^271883
- ;;^UTILITY(U,$J,358.3,7302,0)
- ;;=682.7^^55^579^8
- ;;^UTILITY(U,$J,358.3,7302,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7302,1,4,0)
- ;;=4^682.7
- ;;^UTILITY(U,$J,358.3,7302,1,5,0)
- ;;=5^Cellulitis Of Foot
- ;;^UTILITY(U,$J,358.3,7302,2)
- ;;=^271895
- ;;^UTILITY(U,$J,358.3,7303,0)
- ;;=682.4^^55^579^9
- ;;^UTILITY(U,$J,358.3,7303,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7303,1,4,0)
- ;;=4^682.4
- ;;^UTILITY(U,$J,358.3,7303,1,5,0)
- ;;=5^Cellulitis Of Hand
- ;;^UTILITY(U,$J,358.3,7303,2)
- ;;=^271892
- ;;^UTILITY(U,$J,358.3,7304,0)
- ;;=682.6^^55^579^10
- ;;^UTILITY(U,$J,358.3,7304,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7304,1,4,0)
- ;;=4^682.6
- ;;^UTILITY(U,$J,358.3,7304,1,5,0)
- ;;=5^Cellulitis Of Leg
+ ;;^UTILITY(U,$J,358.3,7260,1,4,0)
+ ;;=4^361.31
+ ;;^UTILITY(U,$J,358.3,7260,2)
+ ;;=Peripheral Retinal Hole^268605
+ ;;^UTILITY(U,$J,358.3,7261,0)
+ ;;=362.51^^49^556^2
+ ;;^UTILITY(U,$J,358.3,7261,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7261,1,3,0)
+ ;;=3^Age Macular Degeneration, Dry (Armd)
+ ;;^UTILITY(U,$J,358.3,7261,1,4,0)
+ ;;=4^362.51
+ ;;^UTILITY(U,$J,358.3,7261,2)
+ ;;=^268636
+ ;;^UTILITY(U,$J,358.3,7262,0)
+ ;;=362.52^^49^556^3
+ ;;^UTILITY(U,$J,358.3,7262,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7262,1,3,0)
+ ;;=3^Age Macular Degeneration, Wet (Armd)
+ ;;^UTILITY(U,$J,358.3,7262,1,4,0)
+ ;;=4^362.52
+ ;;^UTILITY(U,$J,358.3,7262,2)
+ ;;=Macular Degeneration, Wet^268637
+ ;;^UTILITY(U,$J,358.3,7263,0)
+ ;;=362.32^^49^556^6
+ ;;^UTILITY(U,$J,358.3,7263,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7263,1,3,0)
+ ;;=3^Brao/Branch Retinal Artery Occlusion
+ ;;^UTILITY(U,$J,358.3,7263,1,4,0)
+ ;;=4^362.32
+ ;;^UTILITY(U,$J,358.3,7263,2)
+ ;;=ARTERIAL BRANCH OCCLUSION^16756
+ ;;^UTILITY(U,$J,358.3,7264,0)
+ ;;=362.15^^49^556^100
+ ;;^UTILITY(U,$J,358.3,7264,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7264,1,3,0)
+ ;;=3^Telangiectasia
+ ;;^UTILITY(U,$J,358.3,7264,1,4,0)
+ ;;=4^362.15
+ ;;^UTILITY(U,$J,358.3,7264,2)
+ ;;=Retinal Telangiectasia^268616
+ ;;^UTILITY(U,$J,358.3,7265,0)
+ ;;=362.60^^49^556^30
+ ;;^UTILITY(U,$J,358.3,7265,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7265,1,3,0)
+ ;;=3^Degeneration, Periph, Retina
+ ;;^UTILITY(U,$J,358.3,7265,1,4,0)
+ ;;=4^362.60
+ ;;^UTILITY(U,$J,358.3,7265,2)
+ ;;=Peripheral Retinal Degeneration^92193
+ ;;^UTILITY(U,$J,358.3,7266,0)
+ ;;=362.81^^49^556^86
+ ;;^UTILITY(U,$J,358.3,7266,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7266,1,3,0)
+ ;;=3^Retinal Hemorrhage
+ ;;^UTILITY(U,$J,358.3,7266,1,4,0)
+ ;;=4^362.81
+ ;;^UTILITY(U,$J,358.3,7266,2)
+ ;;=Retinal Hemorrhage^105587
+ ;;^UTILITY(U,$J,358.3,7267,0)
+ ;;=190.6^^49^556^57
+ ;;^UTILITY(U,$J,358.3,7267,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7267,1,3,0)
+ ;;=3^Malig Choroid
+ ;;^UTILITY(U,$J,358.3,7267,1,4,0)
+ ;;=4^190.6
+ ;;^UTILITY(U,$J,358.3,7267,2)
+ ;;=Malig Neoplasm of Choroid (Primary)^267276
+ ;;^UTILITY(U,$J,358.3,7268,0)
+ ;;=362.33^^49^556^45
+ ;;^UTILITY(U,$J,358.3,7268,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7268,1,3,0)
+ ;;=3^Hollenhorst Plaque
+ ;;^UTILITY(U,$J,358.3,7268,1,4,0)
+ ;;=4^362.33
+ ;;^UTILITY(U,$J,358.3,7268,2)
+ ;;=Hollenhorst Plaque^268620
+ ;;^UTILITY(U,$J,358.3,7269,0)
+ ;;=361.00^^49^556^84
+ ;;^UTILITY(U,$J,358.3,7269,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7269,1,3,0)
+ ;;=3^Retinal Detachment w/ Ret Defect,Unspec
+ ;;^UTILITY(U,$J,358.3,7269,1,4,0)
+ ;;=4^361.00
+ ;;^UTILITY(U,$J,358.3,7269,2)
+ ;;=Retinal Detachment, Unspecified^268585
+ ;;^UTILITY(U,$J,358.3,7270,0)
+ ;;=361.01^^49^556^77
+ ;;^UTILITY(U,$J,358.3,7270,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7270,1,3,0)
+ ;;=3^Recent Retinal Detachment, Partial
+ ;;^UTILITY(U,$J,358.3,7270,1,4,0)
+ ;;=4^361.01
+ ;;^UTILITY(U,$J,358.3,7270,2)
+ ;;=Recent Retinal Detachment, Partial^268586
+ ;;^UTILITY(U,$J,358.3,7271,0)
+ ;;=361.05^^49^556^78
+ ;;^UTILITY(U,$J,358.3,7271,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7271,1,3,0)
+ ;;=3^Recent Retinal Detachment, Total
+ ;;^UTILITY(U,$J,358.3,7271,1,4,0)
+ ;;=4^361.05
+ ;;^UTILITY(U,$J,358.3,7271,2)
+ ;;=Recent Retinal Detachment, Total^268590
+ ;;^UTILITY(U,$J,358.3,7272,0)
+ ;;=361.06^^49^556^65
+ ;;^UTILITY(U,$J,358.3,7272,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7272,1,3,0)
+ ;;=3^Old Retinal Detachment, Partial
+ ;;^UTILITY(U,$J,358.3,7272,1,4,0)
+ ;;=4^361.06
+ ;;^UTILITY(U,$J,358.3,7272,2)
+ ;;=Old Retinal Detachment, Part^268591

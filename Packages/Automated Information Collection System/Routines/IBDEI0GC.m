@@ -1,132 +1,134 @@
-IBDEI0GC ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0GC ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7936,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7936,1,3,0)
- ;;=3^Lacrimal,Canal Stenosis
- ;;^UTILITY(U,$J,358.3,7936,1,4,0)
- ;;=4^375.53
- ;;^UTILITY(U,$J,358.3,7936,2)
- ;;=Lacrimal Canal Stenosis^269154
- ;;^UTILITY(U,$J,358.3,7937,0)
- ;;=375.51^^58^604^70
- ;;^UTILITY(U,$J,358.3,7937,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7937,1,3,0)
- ;;=3^Lacrimal,Punctum Eversion
- ;;^UTILITY(U,$J,358.3,7937,1,4,0)
- ;;=4^375.51
- ;;^UTILITY(U,$J,358.3,7937,2)
- ;;=Lacrimal Punctum Eversion^269150
- ;;^UTILITY(U,$J,358.3,7938,0)
- ;;=375.54^^58^604^71
- ;;^UTILITY(U,$J,358.3,7938,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7938,1,3,0)
- ;;=3^Lacrimal,Sac Stenosis
- ;;^UTILITY(U,$J,358.3,7938,1,4,0)
- ;;=4^375.54
- ;;^UTILITY(U,$J,358.3,7938,2)
- ;;=Lacrimal Punctum Stenosis^269156
- ;;^UTILITY(U,$J,358.3,7939,0)
- ;;=375.56^^58^604^78
- ;;^UTILITY(U,$J,358.3,7939,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7939,1,3,0)
- ;;=3^Nasolacrimal Duct Obstruction
- ;;^UTILITY(U,$J,358.3,7939,1,4,0)
- ;;=4^375.56
- ;;^UTILITY(U,$J,358.3,7939,2)
- ;;=Obstruction, Nasolacrimal duct^269159
- ;;^UTILITY(U,$J,358.3,7940,0)
- ;;=376.30^^58^604^87
- ;;^UTILITY(U,$J,358.3,7940,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7940,1,3,0)
- ;;=3^Orbit Exophalmos
- ;;^UTILITY(U,$J,358.3,7940,1,4,0)
- ;;=4^376.30
- ;;^UTILITY(U,$J,358.3,7940,2)
- ;;=Exophthalmos^43683
- ;;^UTILITY(U,$J,358.3,7941,0)
- ;;=802.8^^58^604^88
- ;;^UTILITY(U,$J,358.3,7941,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7941,1,3,0)
- ;;=3^Orbit Fracture
- ;;^UTILITY(U,$J,358.3,7941,1,4,0)
- ;;=4^802.8
- ;;^UTILITY(U,$J,358.3,7941,2)
- ;;=Fracture of Orbit^25315
- ;;^UTILITY(U,$J,358.3,7942,0)
- ;;=870.4^^58^604^92
- ;;^UTILITY(U,$J,358.3,7942,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7942,1,3,0)
- ;;=3^Orbit Penetrating Wound w/ Foreign Body
- ;;^UTILITY(U,$J,358.3,7942,1,4,0)
- ;;=4^870.4
- ;;^UTILITY(U,$J,358.3,7942,2)
- ;;=Foreign Body in Orbit^274883
- ;;^UTILITY(U,$J,358.3,7943,0)
- ;;=376.10^^58^604^91
- ;;^UTILITY(U,$J,358.3,7943,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7943,1,3,0)
- ;;=3^Orbit Inflammation,Chronic
- ;;^UTILITY(U,$J,358.3,7943,1,4,0)
- ;;=4^376.10
- ;;^UTILITY(U,$J,358.3,7943,2)
- ;;=Orbital Inflammation^269175
- ;;^UTILITY(U,$J,358.3,7944,0)
- ;;=360.41^^58^604^66
- ;;^UTILITY(U,$J,358.3,7944,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7944,1,3,0)
- ;;=3^Hypotensive Blind Phthisis,Blind
- ;;^UTILITY(U,$J,358.3,7944,1,4,0)
- ;;=4^360.41
- ;;^UTILITY(U,$J,358.3,7944,2)
- ;;=Phthisis^268564
- ;;^UTILITY(U,$J,358.3,7945,0)
- ;;=376.50^^58^604^86
- ;;^UTILITY(U,$J,358.3,7945,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7945,1,3,0)
- ;;=3^Orbit Enopthalmos
- ;;^UTILITY(U,$J,358.3,7945,1,4,0)
- ;;=4^376.50
- ;;^UTILITY(U,$J,358.3,7945,2)
- ;;=Enopthalmos^40801
- ;;^UTILITY(U,$J,358.3,7946,0)
- ;;=239.2^^58^604^95
- ;;^UTILITY(U,$J,358.3,7946,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7946,1,3,0)
- ;;=3^Orbital Tumor,Neopl,Unspec Nature
- ;;^UTILITY(U,$J,358.3,7946,1,4,0)
- ;;=4^239.2
- ;;^UTILITY(U,$J,358.3,7946,2)
- ;;=Orbital Tumor^267783
- ;;^UTILITY(U,$J,358.3,7947,0)
- ;;=239.7^^58^604^79
- ;;^UTILITY(U,$J,358.3,7947,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7947,1,3,0)
- ;;=3^Optic Nerve Neop,Unspec Nature
- ;;^UTILITY(U,$J,358.3,7947,1,4,0)
- ;;=4^239.7
- ;;^UTILITY(U,$J,358.3,7947,2)
- ;;=Optic Nerve Tumor^267785
- ;;^UTILITY(U,$J,358.3,7948,0)
- ;;=V52.2^^58^604^2
- ;;^UTILITY(U,$J,358.3,7948,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7948,1,3,0)
- ;;=3^Artificial Eye Prosthethic Check
- ;;^UTILITY(U,$J,358.3,7948,1,4,0)
- ;;=4^V52.2
- ;;^UTILITY(U,$J,358.3,7948,2)
- ;;=Prosthethic Eye Check^295498^V43.0
+ ;;^UTILITY(U,$J,358.3,7885,0)
+ ;;=92240^^51^570^21^^^^1
+ ;;^UTILITY(U,$J,358.3,7885,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7885,1,2,0)
+ ;;=2^ICG Angiography
+ ;;^UTILITY(U,$J,358.3,7885,1,3,0)
+ ;;=3^92240
+ ;;^UTILITY(U,$J,358.3,7886,0)
+ ;;=92065^^51^570^27^^^^1
+ ;;^UTILITY(U,$J,358.3,7886,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7886,1,2,0)
+ ;;=2^Orthoptic/Pleoptic Training
+ ;;^UTILITY(U,$J,358.3,7886,1,3,0)
+ ;;=3^92065
+ ;;^UTILITY(U,$J,358.3,7887,0)
+ ;;=G0117^^51^570^18^^^^1
+ ;;^UTILITY(U,$J,358.3,7887,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7887,1,2,0)
+ ;;=2^Glaucoma Screen by MD/OD
+ ;;^UTILITY(U,$J,358.3,7887,1,3,0)
+ ;;=3^G0117
+ ;;^UTILITY(U,$J,358.3,7888,0)
+ ;;=G0118^^51^570^19^^^^1
+ ;;^UTILITY(U,$J,358.3,7888,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7888,1,2,0)
+ ;;=2^Glaucoma Screen by Tech
+ ;;^UTILITY(U,$J,358.3,7888,1,3,0)
+ ;;=3^G0118
+ ;;^UTILITY(U,$J,358.3,7889,0)
+ ;;=S9150^^51^570^12^^^^1
+ ;;^UTILITY(U,$J,358.3,7889,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7889,1,2,0)
+ ;;=2^Evaluation by ocularist
+ ;;^UTILITY(U,$J,358.3,7889,1,3,0)
+ ;;=3^S9150
+ ;;^UTILITY(U,$J,358.3,7890,0)
+ ;;=76514^^51^570^8^^^^1
+ ;;^UTILITY(U,$J,358.3,7890,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7890,1,2,0)
+ ;;=2^Corneal Pachymetry
+ ;;^UTILITY(U,$J,358.3,7890,1,3,0)
+ ;;=3^76514
+ ;;^UTILITY(U,$J,358.3,7891,0)
+ ;;=92060^^51^570^34^^^^1
+ ;;^UTILITY(U,$J,358.3,7891,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7891,1,2,0)
+ ;;=2^Special Eye Evaluation
+ ;;^UTILITY(U,$J,358.3,7891,1,3,0)
+ ;;=3^92060
+ ;;^UTILITY(U,$J,358.3,7892,0)
+ ;;=92133^^51^570^6^^^^1
+ ;;^UTILITY(U,$J,358.3,7892,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7892,1,2,0)
+ ;;=2^Cmptr Ophth Img Optic Nerve;Optic Nerve
+ ;;^UTILITY(U,$J,358.3,7892,1,3,0)
+ ;;=3^92133
+ ;;^UTILITY(U,$J,358.3,7893,0)
+ ;;=92134^^51^570^5^^^^1
+ ;;^UTILITY(U,$J,358.3,7893,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7893,1,2,0)
+ ;;=2^Cmptr Ophth Dx Img Post Segmt;Retina
+ ;;^UTILITY(U,$J,358.3,7893,1,3,0)
+ ;;=3^92134
+ ;;^UTILITY(U,$J,358.3,7894,0)
+ ;;=92132^^51^570^4^^^^1
+ ;;^UTILITY(U,$J,358.3,7894,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7894,1,2,0)
+ ;;=2^Cmptr Ophth Dx Img Ant Segmt
+ ;;^UTILITY(U,$J,358.3,7894,1,3,0)
+ ;;=3^92132
+ ;;^UTILITY(U,$J,358.3,7895,0)
+ ;;=0329T^^51^570^23^^^^1
+ ;;^UTILITY(U,$J,358.3,7895,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7895,1,2,0)
+ ;;=2^Mntr IOP 24hrs+,Uni;Bil w/Intrp&Rpt
+ ;;^UTILITY(U,$J,358.3,7895,1,3,0)
+ ;;=3^0329T
+ ;;^UTILITY(U,$J,358.3,7896,0)
+ ;;=0333T^^51^570^38^^^^1
+ ;;^UTILITY(U,$J,358.3,7896,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7896,1,2,0)
+ ;;=2^Visual EP Acuity Scrn Auto
+ ;;^UTILITY(U,$J,358.3,7896,1,3,0)
+ ;;=3^0333T
+ ;;^UTILITY(U,$J,358.3,7897,0)
+ ;;=92136^^51^570^26^^^^1
+ ;;^UTILITY(U,$J,358.3,7897,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7897,1,2,0)
+ ;;=2^Ophthalmic Biometry
+ ;;^UTILITY(U,$J,358.3,7897,1,3,0)
+ ;;=3^92136
+ ;;^UTILITY(U,$J,358.3,7898,0)
+ ;;=92025^^51^570^10^^^^1
+ ;;^UTILITY(U,$J,358.3,7898,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7898,1,2,0)
+ ;;=2^Corneal Topography
+ ;;^UTILITY(U,$J,358.3,7898,1,3,0)
+ ;;=3^92025
+ ;;^UTILITY(U,$J,358.3,7899,0)
+ ;;=G9376^^51^570^29^^^^1
+ ;;^UTILITY(U,$J,358.3,7899,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7899,1,2,0)
+ ;;=2^Retina Attach 6M F/U
+ ;;^UTILITY(U,$J,358.3,7899,1,3,0)
+ ;;=3^G9376
+ ;;^UTILITY(U,$J,358.3,7900,0)
+ ;;=G9377^^51^570^31^^^^1
+ ;;^UTILITY(U,$J,358.3,7900,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,7900,1,2,0)
+ ;;=2^Retina Detach 6M F/U
+ ;;^UTILITY(U,$J,358.3,7900,1,3,0)
+ ;;=3^G9377
+ ;;^UTILITY(U,$J,358.3,7901,0)
+ ;;=G9378^^51^570^30^^^^1

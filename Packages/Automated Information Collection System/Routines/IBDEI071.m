@@ -1,138 +1,134 @@
-IBDEI071 ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI071 ; ; 20-MAY-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3117,1,4,0)
- ;;=4^245.0
- ;;^UTILITY(U,$J,358.3,3117,1,5,0)
- ;;=5^Thyroiditis, Acute
- ;;^UTILITY(U,$J,358.3,3117,2)
- ;;=^2692
- ;;^UTILITY(U,$J,358.3,3118,0)
- ;;=245.1^^33^272^46
- ;;^UTILITY(U,$J,358.3,3118,1,0)
+ ;;^UTILITY(U,$J,358.3,3102,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3118,1,4,0)
- ;;=4^245.1
- ;;^UTILITY(U,$J,358.3,3118,1,5,0)
- ;;=5^Thyroiditis, Subacute
- ;;^UTILITY(U,$J,358.3,3118,2)
- ;;=^119376
- ;;^UTILITY(U,$J,358.3,3119,0)
- ;;=733.01^^33^272^42
- ;;^UTILITY(U,$J,358.3,3119,1,0)
+ ;;^UTILITY(U,$J,358.3,3102,1,4,0)
+ ;;=4^CA of Descending Colon
+ ;;^UTILITY(U,$J,358.3,3102,1,5,0)
+ ;;=5^153.2
+ ;;^UTILITY(U,$J,358.3,3102,2)
+ ;;=CA of Descending Colon^267081
+ ;;^UTILITY(U,$J,358.3,3103,0)
+ ;;=153.3^^26^250^28
+ ;;^UTILITY(U,$J,358.3,3103,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3119,1,4,0)
- ;;=4^733.01
- ;;^UTILITY(U,$J,358.3,3119,1,5,0)
- ;;=5^Osteoporosis, Senile
- ;;^UTILITY(U,$J,358.3,3119,2)
- ;;=Osteoporosis, Senile^87188
- ;;^UTILITY(U,$J,358.3,3120,0)
- ;;=733.02^^33^272^41
- ;;^UTILITY(U,$J,358.3,3120,1,0)
+ ;;^UTILITY(U,$J,358.3,3103,1,4,0)
+ ;;=4^CA of Sigmoid Colon
+ ;;^UTILITY(U,$J,358.3,3103,1,5,0)
+ ;;=5^153.3
+ ;;^UTILITY(U,$J,358.3,3103,2)
+ ;;=Ca of Sigmoid Colon^267082
+ ;;^UTILITY(U,$J,358.3,3104,0)
+ ;;=153.1^^26^250^37
+ ;;^UTILITY(U,$J,358.3,3104,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3120,1,4,0)
- ;;=4^733.02
- ;;^UTILITY(U,$J,358.3,3120,1,5,0)
- ;;=5^Osteoporosis, Idiopathic
- ;;^UTILITY(U,$J,358.3,3120,2)
- ;;=Osteoporosis, Idiopathic^272692
- ;;^UTILITY(U,$J,358.3,3121,0)
- ;;=268.2^^33^272^38
- ;;^UTILITY(U,$J,358.3,3121,1,0)
+ ;;^UTILITY(U,$J,358.3,3104,1,4,0)
+ ;;=4^CA of Transverse Colon
+ ;;^UTILITY(U,$J,358.3,3104,1,5,0)
+ ;;=5^153.1
+ ;;^UTILITY(U,$J,358.3,3104,2)
+ ;;=CA of Transverse Colon^267080
+ ;;^UTILITY(U,$J,358.3,3105,0)
+ ;;=153.0^^26^250^11
+ ;;^UTILITY(U,$J,358.3,3105,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3121,1,4,0)
- ;;=4^268.2
- ;;^UTILITY(U,$J,358.3,3121,1,5,0)
- ;;=5^Osteomalacia
- ;;^UTILITY(U,$J,358.3,3121,2)
- ;;=Osteomalacia^87103
- ;;^UTILITY(U,$J,358.3,3122,0)
- ;;=733.90^^33^272^39
- ;;^UTILITY(U,$J,358.3,3122,1,0)
+ ;;^UTILITY(U,$J,358.3,3105,1,4,0)
+ ;;=4^CA of Colon, Hepatic Flexure.
+ ;;^UTILITY(U,$J,358.3,3105,1,5,0)
+ ;;=5^153.0
+ ;;^UTILITY(U,$J,358.3,3105,2)
+ ;;=CA of Colon at Hepatic Flexure^267079
+ ;;^UTILITY(U,$J,358.3,3106,0)
+ ;;=153.7^^26^250^10
+ ;;^UTILITY(U,$J,358.3,3106,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3122,1,4,0)
- ;;=4^733.90
- ;;^UTILITY(U,$J,358.3,3122,1,5,0)
- ;;=5^Osteopenia
- ;;^UTILITY(U,$J,358.3,3122,2)
- ;;=Osteopenia^35593
- ;;^UTILITY(U,$J,358.3,3123,0)
- ;;=275.49^^33^272^43
- ;;^UTILITY(U,$J,358.3,3123,1,0)
+ ;;^UTILITY(U,$J,358.3,3106,1,4,0)
+ ;;=4^CA of Colon at Splenic Flexure
+ ;;^UTILITY(U,$J,358.3,3106,1,5,0)
+ ;;=5^153.7
+ ;;^UTILITY(U,$J,358.3,3106,2)
+ ;;=CA of Colon at Splenic Flexure^267086
+ ;;^UTILITY(U,$J,358.3,3107,0)
+ ;;=151.9^^26^250^29
+ ;;^UTILITY(U,$J,358.3,3107,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3123,1,4,0)
- ;;=4^275.49
- ;;^UTILITY(U,$J,358.3,3123,1,5,0)
- ;;=5^Pseudohypoparathyroidism
- ;;^UTILITY(U,$J,358.3,3123,2)
- ;;=Pseudohypparathyroidism^317904
- ;;^UTILITY(U,$J,358.3,3124,0)
- ;;=266.2^^33^272^47
- ;;^UTILITY(U,$J,358.3,3124,1,0)
+ ;;^UTILITY(U,$J,358.3,3107,1,4,0)
+ ;;=4^CA of Stomach
+ ;;^UTILITY(U,$J,358.3,3107,1,5,0)
+ ;;=5^151.9
+ ;;^UTILITY(U,$J,358.3,3107,2)
+ ;;=CA of Stomach^73532
+ ;;^UTILITY(U,$J,358.3,3108,0)
+ ;;=151.2^^26^250^4
+ ;;^UTILITY(U,$J,358.3,3108,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3124,1,4,0)
- ;;=4^266.2
- ;;^UTILITY(U,$J,358.3,3124,1,5,0)
- ;;=5^Vitamin B12 Deficiency
- ;;^UTILITY(U,$J,358.3,3124,2)
- ;;=Vitamin B12 Deficiency^87347
- ;;^UTILITY(U,$J,358.3,3125,0)
- ;;=268.9^^33^272^49
- ;;^UTILITY(U,$J,358.3,3125,1,0)
+ ;;^UTILITY(U,$J,358.3,3108,1,4,0)
+ ;;=4^CA of Antrum of Stomach
+ ;;^UTILITY(U,$J,358.3,3108,1,5,0)
+ ;;=5^151.2
+ ;;^UTILITY(U,$J,358.3,3108,2)
+ ;;=CA of Antrum of Stomach^267065
+ ;;^UTILITY(U,$J,358.3,3109,0)
+ ;;=151.4^^26^250^30
+ ;;^UTILITY(U,$J,358.3,3109,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3125,1,4,0)
- ;;=4^268.9
- ;;^UTILITY(U,$J,358.3,3125,1,5,0)
- ;;=5^Vitamin D Deficiency
- ;;^UTILITY(U,$J,358.3,3125,2)
- ;;=Vitamin D Deficiency^126968
- ;;^UTILITY(U,$J,358.3,3126,0)
- ;;=266.1^^33^272^48
- ;;^UTILITY(U,$J,358.3,3126,1,0)
+ ;;^UTILITY(U,$J,358.3,3109,1,4,0)
+ ;;=4^CA of Stomach Body
+ ;;^UTILITY(U,$J,358.3,3109,1,5,0)
+ ;;=5^151.4
+ ;;^UTILITY(U,$J,358.3,3109,2)
+ ;;=CA of Stomach Body^267067
+ ;;^UTILITY(U,$J,358.3,3110,0)
+ ;;=151.0^^26^250^31
+ ;;^UTILITY(U,$J,358.3,3110,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3126,1,4,0)
- ;;=4^266.1
- ;;^UTILITY(U,$J,358.3,3126,1,5,0)
- ;;=5^Vitamin B6 Deficiency
- ;;^UTILITY(U,$J,358.3,3126,2)
- ;;=^101683
- ;;^UTILITY(U,$J,358.3,3127,0)
- ;;=780.99^^33^272^2
- ;;^UTILITY(U,$J,358.3,3127,1,0)
+ ;;^UTILITY(U,$J,358.3,3110,1,4,0)
+ ;;=4^CA of Stomach Cardia
+ ;;^UTILITY(U,$J,358.3,3110,1,5,0)
+ ;;=5^151.0
+ ;;^UTILITY(U,$J,358.3,3110,2)
+ ;;=CA of Stomach Cardia^267063
+ ;;^UTILITY(U,$J,358.3,3111,0)
+ ;;=151.3^^26^250^32
+ ;;^UTILITY(U,$J,358.3,3111,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3127,1,4,0)
- ;;=4^780.99
- ;;^UTILITY(U,$J,358.3,3127,1,5,0)
- ;;=5^Cold Intolerance
- ;;^UTILITY(U,$J,358.3,3127,2)
- ;;=Cold Intolerance^328568
- ;;^UTILITY(U,$J,358.3,3128,0)
- ;;=255.41^^33^272^1
- ;;^UTILITY(U,$J,358.3,3128,1,0)
+ ;;^UTILITY(U,$J,358.3,3111,1,4,0)
+ ;;=4^CA of Stomach Fundus
+ ;;^UTILITY(U,$J,358.3,3111,1,5,0)
+ ;;=5^151.3
+ ;;^UTILITY(U,$J,358.3,3111,2)
+ ;;=CA of Fundus of Stomach^267066
+ ;;^UTILITY(U,$J,358.3,3112,0)
+ ;;=151.6^^26^250^33
+ ;;^UTILITY(U,$J,358.3,3112,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3128,1,4,0)
- ;;=4^255.41
- ;;^UTILITY(U,$J,358.3,3128,1,5,0)
- ;;=5^Adrenal Insuff
- ;;^UTILITY(U,$J,358.3,3128,2)
- ;;=^335240
- ;;^UTILITY(U,$J,358.3,3129,0)
- ;;=276.9^^33^272^10
- ;;^UTILITY(U,$J,358.3,3129,1,0)
+ ;;^UTILITY(U,$J,358.3,3112,1,4,0)
+ ;;=4^CA of Stomach Great Curve
+ ;;^UTILITY(U,$J,358.3,3112,1,5,0)
+ ;;=5^151.6
+ ;;^UTILITY(U,$J,358.3,3112,2)
+ ;;=^267069
+ ;;^UTILITY(U,$J,358.3,3113,0)
+ ;;=151.5^^26^250^34
+ ;;^UTILITY(U,$J,358.3,3113,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3129,1,4,0)
- ;;=4^276.9
- ;;^UTILITY(U,$J,358.3,3129,1,5,0)
- ;;=5^FLUID/ELECTROLYTE ABNORMALITY
- ;;^UTILITY(U,$J,358.3,3129,2)
- ;;=^267949
- ;;^UTILITY(U,$J,358.3,3130,0)
- ;;=793.2^^33^273^3
- ;;^UTILITY(U,$J,358.3,3130,1,0)
+ ;;^UTILITY(U,$J,358.3,3113,1,4,0)
+ ;;=4^CA of Stomach Less Curv
+ ;;^UTILITY(U,$J,358.3,3113,1,5,0)
+ ;;=5^151.5
+ ;;^UTILITY(U,$J,358.3,3113,2)
+ ;;=CA of Lesser Curve of Stomach^267068
+ ;;^UTILITY(U,$J,358.3,3114,0)
+ ;;=151.1^^26^250^26
+ ;;^UTILITY(U,$J,358.3,3114,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3130,1,4,0)
- ;;=4^793.2
- ;;^UTILITY(U,$J,358.3,3130,1,5,0)
- ;;=5^Abnormal Chest x-ray, other
+ ;;^UTILITY(U,$J,358.3,3114,1,4,0)
+ ;;=4^CA of Pylorus
+ ;;^UTILITY(U,$J,358.3,3114,1,5,0)
+ ;;=5^151.1
+ ;;^UTILITY(U,$J,358.3,3114,2)
+ ;;=Cancer of Pylorus^267064
+ ;;^UTILITY(U,$J,358.3,3115,0)
+ ;;=151.8^^26^250^35
