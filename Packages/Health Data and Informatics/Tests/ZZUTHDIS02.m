@@ -52,13 +52,13 @@ SIGNSA ;; @TEST that an active sign/symptom can be selected
  ;
 DOSEI ;; @TEST that an inactive DOSE UNIT can be selected
  ; ensure that the screen for other is inactive
- D CHKEQ^%ut(0,$$SCREEN^HDISVF01(120.83),"Dose Unit Screen active")
+ D CHKEQ^%ut(0,$$SCREEN^HDISVF01(51.24),"Dose Unit Screen active")
  ; try to select an inactive dose unit and ensure it succeeds
  Q
  ;
 DOSEA ;; @TEST that an active DOSE UNIT can be selected
  ; ensure that the screen for other is inactive
- D CHKEQ^%ut(0,$$SCREEN^HDISVF01(120.83),"Dose Unit Screen active")
+ D CHKEQ^%ut(0,$$SCREEN^HDISVF01(51.24),"Dose Unit Screen active")
  ; try to select an active dose unit and ensure it succeeds
  Q
  ;
