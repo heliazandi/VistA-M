@@ -1,370 +1,128 @@
-IBDEI024 ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
+IBDEI024 ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2430,1,4,0)
- ;;=4^M65.351
- ;;^UTILITY(U,$J,358.3,2430,2)
- ;;=^5012789
- ;;^UTILITY(U,$J,358.3,2431,0)
- ;;=M65.352^^12^104^294
- ;;^UTILITY(U,$J,358.3,2431,1,0)
+ ;;^UTILITY(U,$J,358.3,441,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2431,1,3,0)
- ;;=3^Trigger finger, lft little finger
- ;;^UTILITY(U,$J,358.3,2431,1,4,0)
- ;;=4^M65.352
- ;;^UTILITY(U,$J,358.3,2431,2)
- ;;=^5012790
- ;;^UTILITY(U,$J,358.3,2432,0)
- ;;=M65.4^^12^104^211
- ;;^UTILITY(U,$J,358.3,2432,1,0)
+ ;;^UTILITY(U,$J,358.3,441,1,3,0)
+ ;;=3^Mix cellular class Hdgkn lymph, extrnod and solid org sites
+ ;;^UTILITY(U,$J,358.3,441,1,4,0)
+ ;;=4^C81.29
+ ;;^UTILITY(U,$J,358.3,441,2)
+ ;;=^5001420
+ ;;^UTILITY(U,$J,358.3,442,0)
+ ;;=C81.30^^2^21^41
+ ;;^UTILITY(U,$J,358.3,442,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2432,1,3,0)
- ;;=3^Radial styloid tenosynovitis [de Quervain]
- ;;^UTILITY(U,$J,358.3,2432,1,4,0)
- ;;=4^M65.4
- ;;^UTILITY(U,$J,358.3,2432,2)
- ;;=^5012792
- ;;^UTILITY(U,$J,358.3,2433,0)
- ;;=M65.841^^12^104^277
- ;;^UTILITY(U,$J,358.3,2433,1,0)
+ ;;^UTILITY(U,$J,358.3,442,1,3,0)
+ ;;=3^Lymphocyte depleted classical Hodgkin lymphoma, unsp site
+ ;;^UTILITY(U,$J,358.3,442,1,4,0)
+ ;;=4^C81.30
+ ;;^UTILITY(U,$J,358.3,442,2)
+ ;;=^5001421
+ ;;^UTILITY(U,$J,358.3,443,0)
+ ;;=C81.39^^2^21^40
+ ;;^UTILITY(U,$J,358.3,443,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2433,1,3,0)
- ;;=3^Synovitis & Tenosynovitis, rt hand, oth
- ;;^UTILITY(U,$J,358.3,2433,1,4,0)
- ;;=4^M65.841
- ;;^UTILITY(U,$J,358.3,2433,2)
- ;;=^5012803
- ;;^UTILITY(U,$J,358.3,2434,0)
- ;;=M65.842^^12^104^275
- ;;^UTILITY(U,$J,358.3,2434,1,0)
+ ;;^UTILITY(U,$J,358.3,443,1,3,0)
+ ;;=3^Lymphocy deplet class Hdgkn lymph, extrnod & solid org site
+ ;;^UTILITY(U,$J,358.3,443,1,4,0)
+ ;;=4^C81.39
+ ;;^UTILITY(U,$J,358.3,443,2)
+ ;;=^5001430
+ ;;^UTILITY(U,$J,358.3,444,0)
+ ;;=C81.40^^2^21^42
+ ;;^UTILITY(U,$J,358.3,444,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2434,1,3,0)
- ;;=3^Synovitis & Tenosynovitis, lft hand, oth
- ;;^UTILITY(U,$J,358.3,2434,1,4,0)
- ;;=4^M65.842
- ;;^UTILITY(U,$J,358.3,2434,2)
- ;;=^5012804
- ;;^UTILITY(U,$J,358.3,2435,0)
- ;;=M65.871^^12^104^276
- ;;^UTILITY(U,$J,358.3,2435,1,0)
+ ;;^UTILITY(U,$J,358.3,444,1,3,0)
+ ;;=3^Lymphocyte-rich classical Hodgkin lymphoma, unspecified site
+ ;;^UTILITY(U,$J,358.3,444,1,4,0)
+ ;;=4^C81.40
+ ;;^UTILITY(U,$J,358.3,444,2)
+ ;;=^5001431
+ ;;^UTILITY(U,$J,358.3,445,0)
+ ;;=C81.49^^2^21^37
+ ;;^UTILITY(U,$J,358.3,445,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2435,1,3,0)
- ;;=3^Synovitis & Tenosynovitis, rt ankle & foot, oth
- ;;^UTILITY(U,$J,358.3,2435,1,4,0)
- ;;=4^M65.871
- ;;^UTILITY(U,$J,358.3,2435,2)
- ;;=^5012812
- ;;^UTILITY(U,$J,358.3,2436,0)
- ;;=M65.872^^12^104^274
- ;;^UTILITY(U,$J,358.3,2436,1,0)
+ ;;^UTILITY(U,$J,358.3,445,1,3,0)
+ ;;=3^Lymp-rich class Hodgkin lymph, extrnod and solid organ sites
+ ;;^UTILITY(U,$J,358.3,445,1,4,0)
+ ;;=4^C81.49
+ ;;^UTILITY(U,$J,358.3,445,2)
+ ;;=^5001440
+ ;;^UTILITY(U,$J,358.3,446,0)
+ ;;=C81.99^^2^21^35
+ ;;^UTILITY(U,$J,358.3,446,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2436,1,3,0)
- ;;=3^Synovitis & Tenosynovitis, lft ankle & foot, oth
- ;;^UTILITY(U,$J,358.3,2436,1,4,0)
- ;;=4^M65.872
- ;;^UTILITY(U,$J,358.3,2436,2)
- ;;=^5012813
- ;;^UTILITY(U,$J,358.3,2437,0)
- ;;=M20.11^^12^104^159
- ;;^UTILITY(U,$J,358.3,2437,1,0)
+ ;;^UTILITY(U,$J,358.3,446,1,3,0)
+ ;;=3^Hodgkin lymphoma, unsp, extranodal and solid organ sites
+ ;;^UTILITY(U,$J,358.3,446,1,4,0)
+ ;;=4^C81.99
+ ;;^UTILITY(U,$J,358.3,446,2)
+ ;;=^5001460
+ ;;^UTILITY(U,$J,358.3,447,0)
+ ;;=C81.90^^2^21^36
+ ;;^UTILITY(U,$J,358.3,447,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2437,1,3,0)
- ;;=3^Hallux valgus (acquired), rt foot
- ;;^UTILITY(U,$J,358.3,2437,1,4,0)
- ;;=4^M20.11
- ;;^UTILITY(U,$J,358.3,2437,2)
- ;;=^5011042
- ;;^UTILITY(U,$J,358.3,2438,0)
- ;;=M20.12^^12^104^158
- ;;^UTILITY(U,$J,358.3,2438,1,0)
+ ;;^UTILITY(U,$J,358.3,447,1,3,0)
+ ;;=3^Hodgkin lymphoma, unspecified, unspecified site
+ ;;^UTILITY(U,$J,358.3,447,1,4,0)
+ ;;=4^C81.90
+ ;;^UTILITY(U,$J,358.3,447,2)
+ ;;=^5001451
+ ;;^UTILITY(U,$J,358.3,448,0)
+ ;;=C82.69^^2^21^17
+ ;;^UTILITY(U,$J,358.3,448,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2438,1,3,0)
- ;;=3^Hallux valgus (acquired), lft foot
- ;;^UTILITY(U,$J,358.3,2438,1,4,0)
- ;;=4^M20.12
- ;;^UTILITY(U,$J,358.3,2438,2)
- ;;=^5011043
- ;;^UTILITY(U,$J,358.3,2439,0)
- ;;=M70.031^^12^104^98
- ;;^UTILITY(U,$J,358.3,2439,1,0)
+ ;;^UTILITY(U,$J,358.3,448,1,3,0)
+ ;;=3^Cutan folicl center lymphoma, extrnod and solid organ sites
+ ;;^UTILITY(U,$J,358.3,448,1,4,0)
+ ;;=4^C82.69
+ ;;^UTILITY(U,$J,358.3,448,2)
+ ;;=^5001530
+ ;;^UTILITY(U,$J,358.3,449,0)
+ ;;=C82.60^^2^21^18
+ ;;^UTILITY(U,$J,358.3,449,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2439,1,3,0)
- ;;=3^Crepitant synovitis (acute/chronic), rt wrist
- ;;^UTILITY(U,$J,358.3,2439,1,4,0)
- ;;=4^M70.031
- ;;^UTILITY(U,$J,358.3,2439,2)
- ;;=^5013037
- ;;^UTILITY(U,$J,358.3,2440,0)
- ;;=M70.032^^12^104^97
- ;;^UTILITY(U,$J,358.3,2440,1,0)
+ ;;^UTILITY(U,$J,358.3,449,1,3,0)
+ ;;=3^Cutaneous follicle center lymphoma, unspecified site
+ ;;^UTILITY(U,$J,358.3,449,1,4,0)
+ ;;=4^C82.60
+ ;;^UTILITY(U,$J,358.3,449,2)
+ ;;=^5001521
+ ;;^UTILITY(U,$J,358.3,450,0)
+ ;;=C82.49^^2^21^22
+ ;;^UTILITY(U,$J,358.3,450,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2440,1,3,0)
- ;;=3^Crepitant synovitis (acute/chronic), lft wrist
- ;;^UTILITY(U,$J,358.3,2440,1,4,0)
- ;;=4^M70.032
- ;;^UTILITY(U,$J,358.3,2440,2)
- ;;=^5013038
- ;;^UTILITY(U,$J,358.3,2441,0)
- ;;=M70.31^^12^104^69
- ;;^UTILITY(U,$J,358.3,2441,1,0)
+ ;;^UTILITY(U,$J,358.3,450,1,3,0)
+ ;;=3^Foliclar lymphoma grade IIIb, extrnod and solid organ sites
+ ;;^UTILITY(U,$J,358.3,450,1,4,0)
+ ;;=4^C82.49
+ ;;^UTILITY(U,$J,358.3,450,2)
+ ;;=^5001510
+ ;;^UTILITY(U,$J,358.3,451,0)
+ ;;=C82.40^^2^21^29
+ ;;^UTILITY(U,$J,358.3,451,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2441,1,3,0)
- ;;=3^Bursitis, rt elbow
- ;;^UTILITY(U,$J,358.3,2441,1,4,0)
- ;;=4^M70.31
- ;;^UTILITY(U,$J,358.3,2441,2)
- ;;=^5013050
- ;;^UTILITY(U,$J,358.3,2442,0)
- ;;=M70.32^^12^104^67
- ;;^UTILITY(U,$J,358.3,2442,1,0)
+ ;;^UTILITY(U,$J,358.3,451,1,3,0)
+ ;;=3^Follicular lymphoma grade IIIb, unspecified site
+ ;;^UTILITY(U,$J,358.3,451,1,4,0)
+ ;;=4^C82.40
+ ;;^UTILITY(U,$J,358.3,451,2)
+ ;;=^5001501
+ ;;^UTILITY(U,$J,358.3,452,0)
+ ;;=C82.19^^2^21^25
+ ;;^UTILITY(U,$J,358.3,452,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2442,1,3,0)
- ;;=3^Bursitis, lft elbow
- ;;^UTILITY(U,$J,358.3,2442,1,4,0)
- ;;=4^M70.32
- ;;^UTILITY(U,$J,358.3,2442,2)
- ;;=^5013051
- ;;^UTILITY(U,$J,358.3,2443,0)
- ;;=M70.41^^12^104^205
- ;;^UTILITY(U,$J,358.3,2443,1,0)
+ ;;^UTILITY(U,$J,358.3,452,1,3,0)
+ ;;=3^Follicular lymphoma grade II, extrnod and solid organ sites
+ ;;^UTILITY(U,$J,358.3,452,1,4,0)
+ ;;=4^C82.19
+ ;;^UTILITY(U,$J,358.3,452,2)
+ ;;=^5001480
+ ;;^UTILITY(U,$J,358.3,453,0)
+ ;;=C82.39^^2^21^21
+ ;;^UTILITY(U,$J,358.3,453,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2443,1,3,0)
- ;;=3^Prepatellar bursitis, rt knee
- ;;^UTILITY(U,$J,358.3,2443,1,4,0)
- ;;=4^M70.41
- ;;^UTILITY(U,$J,358.3,2443,2)
- ;;=^5013053
- ;;^UTILITY(U,$J,358.3,2444,0)
- ;;=M70.42^^12^104^204
- ;;^UTILITY(U,$J,358.3,2444,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2444,1,3,0)
- ;;=3^Prepatellar bursitis, lft knee
- ;;^UTILITY(U,$J,358.3,2444,1,4,0)
- ;;=4^M70.42
- ;;^UTILITY(U,$J,358.3,2444,2)
- ;;=^5013054
- ;;^UTILITY(U,$J,358.3,2445,0)
- ;;=M67.411^^12^104^148
- ;;^UTILITY(U,$J,358.3,2445,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2445,1,3,0)
- ;;=3^Ganglion, rt shoulder
- ;;^UTILITY(U,$J,358.3,2445,1,4,0)
- ;;=4^M67.411
- ;;^UTILITY(U,$J,358.3,2445,2)
- ;;=^5012957
- ;;^UTILITY(U,$J,358.3,2446,0)
- ;;=M67.412^^12^104^140
- ;;^UTILITY(U,$J,358.3,2446,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2446,1,3,0)
- ;;=3^Ganglion, lft shoulder
- ;;^UTILITY(U,$J,358.3,2446,1,4,0)
- ;;=4^M67.412
- ;;^UTILITY(U,$J,358.3,2446,2)
- ;;=^5012958
- ;;^UTILITY(U,$J,358.3,2447,0)
- ;;=M67.421^^12^104^143
- ;;^UTILITY(U,$J,358.3,2447,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2447,1,3,0)
- ;;=3^Ganglion, rt elbow
- ;;^UTILITY(U,$J,358.3,2447,1,4,0)
- ;;=4^M67.421
- ;;^UTILITY(U,$J,358.3,2447,2)
- ;;=^5012960
- ;;^UTILITY(U,$J,358.3,2448,0)
- ;;=M67.422^^12^104^137
- ;;^UTILITY(U,$J,358.3,2448,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2448,1,3,0)
- ;;=3^Ganglion, lft elbow
- ;;^UTILITY(U,$J,358.3,2448,1,4,0)
- ;;=4^M67.422
- ;;^UTILITY(U,$J,358.3,2448,2)
- ;;=^5012961
- ;;^UTILITY(U,$J,358.3,2449,0)
- ;;=M67.431^^12^104^149
- ;;^UTILITY(U,$J,358.3,2449,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2449,1,3,0)
- ;;=3^Ganglion, rt wrist
- ;;^UTILITY(U,$J,358.3,2449,1,4,0)
- ;;=4^M67.431
- ;;^UTILITY(U,$J,358.3,2449,2)
- ;;=^5012963
- ;;^UTILITY(U,$J,358.3,2450,0)
- ;;=M67.432^^12^104^141
- ;;^UTILITY(U,$J,358.3,2450,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2450,1,3,0)
- ;;=3^Ganglion, lft wrist
- ;;^UTILITY(U,$J,358.3,2450,1,4,0)
- ;;=4^M67.432
- ;;^UTILITY(U,$J,358.3,2450,2)
- ;;=^5012964
- ;;^UTILITY(U,$J,358.3,2451,0)
- ;;=M67.441^^12^104^144
- ;;^UTILITY(U,$J,358.3,2451,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2451,1,3,0)
- ;;=3^Ganglion, rt hand
- ;;^UTILITY(U,$J,358.3,2451,1,4,0)
- ;;=4^M67.441
- ;;^UTILITY(U,$J,358.3,2451,2)
- ;;=^5012966
- ;;^UTILITY(U,$J,358.3,2452,0)
- ;;=M67.442^^12^104^138
- ;;^UTILITY(U,$J,358.3,2452,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2452,1,3,0)
- ;;=3^Ganglion, lft hand
- ;;^UTILITY(U,$J,358.3,2452,1,4,0)
- ;;=4^M67.442
- ;;^UTILITY(U,$J,358.3,2452,2)
- ;;=lft^5012967
- ;;^UTILITY(U,$J,358.3,2453,0)
- ;;=M67.451^^12^104^145
- ;;^UTILITY(U,$J,358.3,2453,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2453,1,3,0)
- ;;=3^Ganglion, rt hip
- ;;^UTILITY(U,$J,358.3,2453,1,4,0)
- ;;=4^M67.451
- ;;^UTILITY(U,$J,358.3,2453,2)
- ;;=^5012969
- ;;^UTILITY(U,$J,358.3,2454,0)
- ;;=M67.452^^12^104^146
- ;;^UTILITY(U,$J,358.3,2454,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2454,1,3,0)
- ;;=3^Ganglion, rt hip
- ;;^UTILITY(U,$J,358.3,2454,1,4,0)
- ;;=4^M67.452
- ;;^UTILITY(U,$J,358.3,2454,2)
- ;;=^5012970
- ;;^UTILITY(U,$J,358.3,2455,0)
- ;;=M67.461^^12^104^147
- ;;^UTILITY(U,$J,358.3,2455,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2455,1,3,0)
- ;;=3^Ganglion, rt knee
- ;;^UTILITY(U,$J,358.3,2455,1,4,0)
- ;;=4^M67.461
- ;;^UTILITY(U,$J,358.3,2455,2)
- ;;=^5012972
- ;;^UTILITY(U,$J,358.3,2456,0)
- ;;=M67.462^^12^104^139
- ;;^UTILITY(U,$J,358.3,2456,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2456,1,3,0)
- ;;=3^Ganglion, lft knee
- ;;^UTILITY(U,$J,358.3,2456,1,4,0)
- ;;=4^M67.462
- ;;^UTILITY(U,$J,358.3,2456,2)
- ;;=^5012973
- ;;^UTILITY(U,$J,358.3,2457,0)
- ;;=M67.471^^12^104^142
- ;;^UTILITY(U,$J,358.3,2457,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2457,1,3,0)
- ;;=3^Ganglion, rt ankle & foot
- ;;^UTILITY(U,$J,358.3,2457,1,4,0)
- ;;=4^M67.471
- ;;^UTILITY(U,$J,358.3,2457,2)
- ;;=^5012975
- ;;^UTILITY(U,$J,358.3,2458,0)
- ;;=M67.472^^12^104^136
- ;;^UTILITY(U,$J,358.3,2458,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2458,1,3,0)
- ;;=3^Ganglion, lft ankle & foot
- ;;^UTILITY(U,$J,358.3,2458,1,4,0)
- ;;=4^M67.472
- ;;^UTILITY(U,$J,358.3,2458,2)
- ;;=^5012976
- ;;^UTILITY(U,$J,358.3,2459,0)
- ;;=M67.40^^12^104^150
- ;;^UTILITY(U,$J,358.3,2459,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2459,1,3,0)
- ;;=3^Ganglion, unspec site
- ;;^UTILITY(U,$J,358.3,2459,1,4,0)
- ;;=4^M67.40
- ;;^UTILITY(U,$J,358.3,2459,2)
- ;;=^5012956
- ;;^UTILITY(U,$J,358.3,2460,0)
- ;;=M71.30^^12^104^65
- ;;^UTILITY(U,$J,358.3,2460,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2460,1,3,0)
- ;;=3^Bursal cyst, unspec site, oth
- ;;^UTILITY(U,$J,358.3,2460,1,4,0)
- ;;=4^M71.30
- ;;^UTILITY(U,$J,358.3,2460,2)
- ;;=^5013149
- ;;^UTILITY(U,$J,358.3,2461,0)
- ;;=M66.10^^12^104^218
- ;;^UTILITY(U,$J,358.3,2461,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2461,1,3,0)
- ;;=3^Rupture of synovium, unspec joint
- ;;^UTILITY(U,$J,358.3,2461,1,4,0)
- ;;=4^M66.10
- ;;^UTILITY(U,$J,358.3,2461,2)
- ;;=^5012818
- ;;^UTILITY(U,$J,358.3,2462,0)
- ;;=M71.21^^12^104^279
- ;;^UTILITY(U,$J,358.3,2462,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2462,1,3,0)
- ;;=3^Synovl cyst of popliteal spc [Baker], rt knee
- ;;^UTILITY(U,$J,358.3,2462,1,4,0)
- ;;=4^M71.21
- ;;^UTILITY(U,$J,358.3,2462,2)
- ;;=^5013147
- ;;^UTILITY(U,$J,358.3,2463,0)
- ;;=M71.22^^12^104^227
- ;;^UTILITY(U,$J,358.3,2463,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2463,1,3,0)
- ;;=3^Snyovl cyst of popliteal spc [Baker], lft knee
- ;;^UTILITY(U,$J,358.3,2463,1,4,0)
- ;;=4^M71.22
- ;;^UTILITY(U,$J,358.3,2463,2)
- ;;=^5013148
- ;;^UTILITY(U,$J,358.3,2464,0)
- ;;=M66.18^^12^104^217
- ;;^UTILITY(U,$J,358.3,2464,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2464,1,3,0)
- ;;=3^Rupture of synovium, oth site
- ;;^UTILITY(U,$J,358.3,2464,1,4,0)
- ;;=4^M66.18
- ;;^UTILITY(U,$J,358.3,2464,2)
- ;;=^5012846
- ;;^UTILITY(U,$J,358.3,2465,0)
- ;;=M66.9^^12^104^273
- ;;^UTILITY(U,$J,358.3,2465,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2465,1,3,0)
- ;;=3^Spontaneous rupture of unspec tendon
- ;;^UTILITY(U,$J,358.3,2465,1,4,0)
- ;;=4^M66.9
- ;;^UTILITY(U,$J,358.3,2465,2)
- ;;=^5012904
- ;;^UTILITY(U,$J,358.3,2466,0)
- ;;=M75.121^^12^104^96
- ;;^UTILITY(U,$J,358.3,2466,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2466,1,3,0)
- ;;=3^Compl rotatr-cuff tear/ruptr of rt shldr, not trauma
- ;;^UTILITY(U,$J,358.3,2466,1,4,0)
- ;;=4^M75.121
- ;;^UTILITY(U,$J,358.3,2466,2)
- ;;=^5013248
- ;;^UTILITY(U,$J,358.3,2467,0)
- ;;=M75.122^^12^104^95
+ ;;^UTILITY(U,$J,358.3,453,1,3,0)
+ ;;=3^Foliclar lymphoma grade IIIa, extrnod and solid organ sites

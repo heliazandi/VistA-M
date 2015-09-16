@@ -1,140 +1,118 @@
-IBDEI0TH ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0TH ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14554,1,4,0)
- ;;=4^V17.89
- ;;^UTILITY(U,$J,358.3,14554,1,5,0)
- ;;=5^Family h/o Musculosk Disease
- ;;^UTILITY(U,$J,358.3,14554,2)
- ;;=^332861
- ;;^UTILITY(U,$J,358.3,14555,0)
- ;;=V12.54^^90^861^56
- ;;^UTILITY(U,$J,358.3,14555,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14555,1,4,0)
- ;;=4^V12.54
- ;;^UTILITY(U,$J,358.3,14555,1,5,0)
- ;;=5^Hx of TIA
- ;;^UTILITY(U,$J,358.3,14555,2)
- ;;=^335309
- ;;^UTILITY(U,$J,358.3,14556,0)
- ;;=V12.54^^90^861^52
- ;;^UTILITY(U,$J,358.3,14556,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14556,1,4,0)
- ;;=4^V12.54
- ;;^UTILITY(U,$J,358.3,14556,1,5,0)
- ;;=5^Hx of Stroke w/o Residual
- ;;^UTILITY(U,$J,358.3,14556,2)
- ;;=^335309
- ;;^UTILITY(U,$J,358.3,14557,0)
- ;;=V15.88^^90^861^33
- ;;^UTILITY(U,$J,358.3,14557,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14557,1,4,0)
- ;;=4^V15.88
- ;;^UTILITY(U,$J,358.3,14557,1,5,0)
- ;;=5^Hx of Fall(s)
- ;;^UTILITY(U,$J,358.3,14557,2)
- ;;=^332859
- ;;^UTILITY(U,$J,358.3,14558,0)
- ;;=V13.59^^90^861^42
- ;;^UTILITY(U,$J,358.3,14558,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14558,1,4,0)
- ;;=4^V13.59
- ;;^UTILITY(U,$J,358.3,14558,1,5,0)
- ;;=5^Hx of Musculosk Disease
- ;;^UTILITY(U,$J,358.3,14558,2)
- ;;=^295268
- ;;^UTILITY(U,$J,358.3,14559,0)
- ;;=V15.52^^90^861^55
- ;;^UTILITY(U,$J,358.3,14559,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14559,1,4,0)
- ;;=4^V15.52
- ;;^UTILITY(U,$J,358.3,14559,1,5,0)
- ;;=5^Hx of TBI
- ;;^UTILITY(U,$J,358.3,14559,2)
- ;;=^338495
- ;;^UTILITY(U,$J,358.3,14560,0)
- ;;=V12.04^^90^861^38
- ;;^UTILITY(U,$J,358.3,14560,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14560,1,4,0)
- ;;=4^V12.04
- ;;^UTILITY(U,$J,358.3,14560,1,5,0)
- ;;=5^Hx of MRSA Infection
- ;;^UTILITY(U,$J,358.3,14560,2)
- ;;=^336780
- ;;^UTILITY(U,$J,358.3,14561,0)
- ;;=V13.51^^90^861^23
- ;;^UTILITY(U,$J,358.3,14561,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14561,1,4,0)
- ;;=4^V13.51
- ;;^UTILITY(U,$J,358.3,14561,1,5,0)
- ;;=5^Hs of Pathological Fx
- ;;^UTILITY(U,$J,358.3,14561,2)
- ;;=^336781
- ;;^UTILITY(U,$J,358.3,14562,0)
- ;;=V15.51^^90^861^58
- ;;^UTILITY(U,$J,358.3,14562,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14562,1,4,0)
- ;;=4^V15.51
- ;;^UTILITY(U,$J,358.3,14562,1,5,0)
- ;;=5^Hx of Traumatic Fx
- ;;^UTILITY(U,$J,358.3,14562,2)
- ;;=^336786
- ;;^UTILITY(U,$J,358.3,14563,0)
- ;;=V62.22^^90^861^49
- ;;^UTILITY(U,$J,358.3,14563,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14563,1,4,0)
- ;;=4^V62.22
- ;;^UTILITY(U,$J,358.3,14563,1,5,0)
- ;;=5^Hx of Return from Military Deployment
- ;;^UTILITY(U,$J,358.3,14563,2)
- ;;=^336807
- ;;^UTILITY(U,$J,358.3,14564,0)
- ;;=V70.0^^90^862^1
- ;;^UTILITY(U,$J,358.3,14564,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14564,1,4,0)
- ;;=4^V70.0
- ;;^UTILITY(U,$J,358.3,14564,1,5,0)
- ;;=5^Routine Med Exam
- ;;^UTILITY(U,$J,358.3,14564,2)
- ;;=^295590
- ;;^UTILITY(U,$J,358.3,14565,0)
- ;;=V77.91^^90^862^2
- ;;^UTILITY(U,$J,358.3,14565,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14565,1,4,0)
- ;;=4^V77.91
- ;;^UTILITY(U,$J,358.3,14565,1,5,0)
- ;;=5^Screen for High Cholesterol
- ;;^UTILITY(U,$J,358.3,14565,2)
- ;;=Screen for High Cholesterol^322093
- ;;^UTILITY(U,$J,358.3,14566,0)
- ;;=V76.44^^90^862^3
- ;;^UTILITY(U,$J,358.3,14566,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14566,1,4,0)
- ;;=4^V76.44
- ;;^UTILITY(U,$J,358.3,14566,1,5,0)
- ;;=5^Screen for Prostate CA
- ;;^UTILITY(U,$J,358.3,14566,2)
- ;;=Screen for Prostate CA^321548
- ;;^UTILITY(U,$J,358.3,14567,0)
- ;;=V74.5^^90^862^5
- ;;^UTILITY(U,$J,358.3,14567,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14567,1,4,0)
- ;;=4^V74.5
- ;;^UTILITY(U,$J,358.3,14567,1,5,0)
- ;;=5^Screening for STD's
- ;;^UTILITY(U,$J,358.3,14567,2)
- ;;=Screening for STD's^295637
+ ;;^UTILITY(U,$J,358.3,14270,1,3,0)
+ ;;=3^12020
+ ;;^UTILITY(U,$J,358.3,14271,0)
+ ;;=12021^^75^879^11^^^^1
+ ;;^UTILITY(U,$J,358.3,14271,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14271,1,2,0)
+ ;;=2^TX of Superficial Wound Dehiscence; simple closure with packing
+ ;;^UTILITY(U,$J,358.3,14271,1,3,0)
+ ;;=3^12021
+ ;;^UTILITY(U,$J,358.3,14272,0)
+ ;;=13160^^75^879^7^^^^1
+ ;;^UTILITY(U,$J,358.3,14272,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14272,1,2,0)
+ ;;=2^Secondary Closure of Surgical Wound or Dehiscence, extensive or complicated 
+ ;;^UTILITY(U,$J,358.3,14272,1,3,0)
+ ;;=3^13160
+ ;;^UTILITY(U,$J,358.3,14273,0)
+ ;;=27650^^75^879^6^^^^1
+ ;;^UTILITY(U,$J,358.3,14273,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14273,1,2,0)
+ ;;=2^Repair Primary Ruptured Achilles Tendon
+ ;;^UTILITY(U,$J,358.3,14273,1,3,0)
+ ;;=3^27650
+ ;;^UTILITY(U,$J,358.3,14274,0)
+ ;;=28406^^75^879^5^^^^1
+ ;;^UTILITY(U,$J,358.3,14274,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14274,1,2,0)
+ ;;=2^Perc Fixation Calcaneous Fx
+ ;;^UTILITY(U,$J,358.3,14274,1,3,0)
+ ;;=3^28406
+ ;;^UTILITY(U,$J,358.3,14275,0)
+ ;;=16020^^75^880^2^^^^1
+ ;;^UTILITY(U,$J,358.3,14275,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14275,1,2,0)
+ ;;=2^Dressings and/or Debridement, initial or subsequent; without anesthesia, office or hospital, small
+ ;;^UTILITY(U,$J,358.3,14275,1,3,0)
+ ;;=3^16020
+ ;;^UTILITY(U,$J,358.3,14276,0)
+ ;;=11100^^75^881^1^^^^1
+ ;;^UTILITY(U,$J,358.3,14276,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14276,1,2,0)
+ ;;=2^Biopsy of skin,subq tissue single lesion
+ ;;^UTILITY(U,$J,358.3,14276,1,3,0)
+ ;;=3^11100
+ ;;^UTILITY(U,$J,358.3,14277,0)
+ ;;=11101^^75^881^2^^^^1
+ ;;^UTILITY(U,$J,358.3,14277,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14277,1,2,0)
+ ;;=2^Biopsy of skin,subq tissue ea addl lesion
+ ;;^UTILITY(U,$J,358.3,14277,1,3,0)
+ ;;=3^11101
+ ;;^UTILITY(U,$J,358.3,14278,0)
+ ;;=20605^^75^882^1^^^^1
+ ;;^UTILITY(U,$J,358.3,14278,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14278,1,2,0)
+ ;;=2^Arthroc,Aspir/Inj Int Joint/Bursa
+ ;;^UTILITY(U,$J,358.3,14278,1,3,0)
+ ;;=3^20605
+ ;;^UTILITY(U,$J,358.3,14279,0)
+ ;;=20615^^75^882^6^^^^1
+ ;;^UTILITY(U,$J,358.3,14279,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14279,1,2,0)
+ ;;=2^Aspiration and injection for tx of bone cyst
+ ;;^UTILITY(U,$J,358.3,14279,1,3,0)
+ ;;=3^20615
+ ;;^UTILITY(U,$J,358.3,14280,0)
+ ;;=20600^^75^882^3^^^^1
+ ;;^UTILITY(U,$J,358.3,14280,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14280,1,2,0)
+ ;;=2^Arthroc,Aspir/Inj Sm Joint/Bursa
+ ;;^UTILITY(U,$J,358.3,14280,1,3,0)
+ ;;=3^20600
+ ;;^UTILITY(U,$J,358.3,14281,0)
+ ;;=11900^^75^882^15^^^^1
+ ;;^UTILITY(U,$J,358.3,14281,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14281,1,2,0)
+ ;;=2^Injection, intralesional; up to and including seven lesion 
+ ;;^UTILITY(U,$J,358.3,14281,1,3,0)
+ ;;=3^11900
+ ;;^UTILITY(U,$J,358.3,14282,0)
+ ;;=11901^^75^882^14^^^^1
+ ;;^UTILITY(U,$J,358.3,14282,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14282,1,2,0)
+ ;;=2^Injection, intralesional; more than seven lesions
+ ;;^UTILITY(U,$J,358.3,14282,1,3,0)
+ ;;=3^11901
+ ;;^UTILITY(U,$J,358.3,14283,0)
+ ;;=64450^^75^882^13^^^^1
+ ;;^UTILITY(U,$J,358.3,14283,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14283,1,2,0)
+ ;;=2^Injection, anesthetic agent; other peripheral nerve or branch
+ ;;^UTILITY(U,$J,358.3,14283,1,3,0)
+ ;;=3^64450
+ ;;^UTILITY(U,$J,358.3,14284,0)
+ ;;=20550^^75^882^16^^^^1
+ ;;^UTILITY(U,$J,358.3,14284,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14284,1,2,0)
+ ;;=2^Injection; tendon sheath, ligament, ganglion cyst
+ ;;^UTILITY(U,$J,358.3,14284,1,3,0)
+ ;;=3^20550

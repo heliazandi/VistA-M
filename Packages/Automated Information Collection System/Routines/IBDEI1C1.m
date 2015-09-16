@@ -1,142 +1,124 @@
-IBDEI1C1 ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI1C1 ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,23876,1,2,0)
- ;;=2^223.3
- ;;^UTILITY(U,$J,358.3,23876,1,5,0)
- ;;=5^Benign Neop Bladder
- ;;^UTILITY(U,$J,358.3,23876,2)
- ;;=^267665
- ;;^UTILITY(U,$J,358.3,23877,0)
- ;;=233.7^^153^1523^3
- ;;^UTILITY(U,$J,358.3,23877,1,0)
+ ;;^UTILITY(U,$J,358.3,23604,1,5,0)
+ ;;=5^Borderline Personality Disorder
+ ;;^UTILITY(U,$J,358.3,23604,2)
+ ;;=Borderline Personality Disorder^16372
+ ;;^UTILITY(U,$J,358.3,23605,0)
+ ;;=301.6^^127^1427^6
+ ;;^UTILITY(U,$J,358.3,23605,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23877,1,2,0)
- ;;=2^233.7
- ;;^UTILITY(U,$J,358.3,23877,1,5,0)
- ;;=5^Bladder CA in Situ
- ;;^UTILITY(U,$J,358.3,23877,2)
- ;;=^267742
- ;;^UTILITY(U,$J,358.3,23878,0)
- ;;=016.10^^153^1523^25
- ;;^UTILITY(U,$J,358.3,23878,1,0)
+ ;;^UTILITY(U,$J,358.3,23605,1,2,0)
+ ;;=2^301.6
+ ;;^UTILITY(U,$J,358.3,23605,1,5,0)
+ ;;=5^Dependent Personality Disorder
+ ;;^UTILITY(U,$J,358.3,23605,2)
+ ;;=Dependent Personality Disorder^32860
+ ;;^UTILITY(U,$J,358.3,23606,0)
+ ;;=301.50^^127^1427^8
+ ;;^UTILITY(U,$J,358.3,23606,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23878,1,2,0)
- ;;=2^016.10
- ;;^UTILITY(U,$J,358.3,23878,1,5,0)
- ;;=5^Tuberculous Cystitis
- ;;^UTILITY(U,$J,358.3,23878,2)
- ;;=^266274
- ;;^UTILITY(U,$J,358.3,23879,0)
- ;;=112.2^^153^1523^23
- ;;^UTILITY(U,$J,358.3,23879,1,0)
+ ;;^UTILITY(U,$J,358.3,23606,1,2,0)
+ ;;=2^301.50
+ ;;^UTILITY(U,$J,358.3,23606,1,5,0)
+ ;;=5^Histrionic Personality Disorder
+ ;;^UTILITY(U,$J,358.3,23606,2)
+ ;;=Histrionic Personality Disorder^57763
+ ;;^UTILITY(U,$J,358.3,23607,0)
+ ;;=301.81^^127^1427^11
+ ;;^UTILITY(U,$J,358.3,23607,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23879,1,2,0)
- ;;=2^112.2
- ;;^UTILITY(U,$J,358.3,23879,1,5,0)
- ;;=5^Monilial Cystitis
- ;;^UTILITY(U,$J,358.3,23879,2)
- ;;=^266866
- ;;^UTILITY(U,$J,358.3,23880,0)
- ;;=595.0^^153^1523^1
- ;;^UTILITY(U,$J,358.3,23880,1,0)
+ ;;^UTILITY(U,$J,358.3,23607,1,2,0)
+ ;;=2^301.81
+ ;;^UTILITY(U,$J,358.3,23607,1,5,0)
+ ;;=5^Narcissistic Personality Disorder
+ ;;^UTILITY(U,$J,358.3,23607,2)
+ ;;=Narcissistic Personality Disorder^265353
+ ;;^UTILITY(U,$J,358.3,23608,0)
+ ;;=301.0^^127^1427^12
+ ;;^UTILITY(U,$J,358.3,23608,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23880,1,2,0)
- ;;=2^595.0
- ;;^UTILITY(U,$J,358.3,23880,1,5,0)
- ;;=5^Acute Cystitis
- ;;^UTILITY(U,$J,358.3,23880,2)
- ;;=^259104
- ;;^UTILITY(U,$J,358.3,23881,0)
- ;;=595.1^^153^1523^5
- ;;^UTILITY(U,$J,358.3,23881,1,0)
+ ;;^UTILITY(U,$J,358.3,23608,1,2,0)
+ ;;=2^301.0
+ ;;^UTILITY(U,$J,358.3,23608,1,5,0)
+ ;;=5^Paranoid Personality Disorder
+ ;;^UTILITY(U,$J,358.3,23608,2)
+ ;;=Paranoid Personality Disorder^89982
+ ;;^UTILITY(U,$J,358.3,23609,0)
+ ;;=301.9^^127^1427^16
+ ;;^UTILITY(U,$J,358.3,23609,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23881,1,2,0)
- ;;=2^595.1
- ;;^UTILITY(U,$J,358.3,23881,1,5,0)
- ;;=5^Chr Interstitial Cystitis
- ;;^UTILITY(U,$J,358.3,23881,2)
- ;;=^270387
- ;;^UTILITY(U,$J,358.3,23882,0)
- ;;=595.2^^153^1523^4
- ;;^UTILITY(U,$J,358.3,23882,1,0)
+ ;;^UTILITY(U,$J,358.3,23609,1,2,0)
+ ;;=2^301.9
+ ;;^UTILITY(U,$J,358.3,23609,1,5,0)
+ ;;=5^Unspecified Personality Disorder
+ ;;^UTILITY(U,$J,358.3,23609,2)
+ ;;=Unspecified Personality Disorder^92451
+ ;;^UTILITY(U,$J,358.3,23610,0)
+ ;;=301.20^^127^1427^14
+ ;;^UTILITY(U,$J,358.3,23610,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23882,1,2,0)
- ;;=2^595.2
- ;;^UTILITY(U,$J,358.3,23882,1,5,0)
- ;;=5^Chr Cystitis NEC
- ;;^UTILITY(U,$J,358.3,23882,2)
- ;;=^270389
- ;;^UTILITY(U,$J,358.3,23883,0)
- ;;=595.3^^153^1523^24
- ;;^UTILITY(U,$J,358.3,23883,1,0)
+ ;;^UTILITY(U,$J,358.3,23610,1,2,0)
+ ;;=2^301.20
+ ;;^UTILITY(U,$J,358.3,23610,1,5,0)
+ ;;=5^Schizoid Personality Disorder
+ ;;^UTILITY(U,$J,358.3,23610,2)
+ ;;=^108271
+ ;;^UTILITY(U,$J,358.3,23611,0)
+ ;;=301.22^^127^1427^15
+ ;;^UTILITY(U,$J,358.3,23611,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23883,1,2,0)
- ;;=2^595.3
- ;;^UTILITY(U,$J,358.3,23883,1,5,0)
- ;;=5^Trigonitis
- ;;^UTILITY(U,$J,358.3,23883,2)
- ;;=^122007
- ;;^UTILITY(U,$J,358.3,23884,0)
- ;;=595.81^^153^1523^6
- ;;^UTILITY(U,$J,358.3,23884,1,0)
+ ;;^UTILITY(U,$J,358.3,23611,1,2,0)
+ ;;=2^301.22
+ ;;^UTILITY(U,$J,358.3,23611,1,5,0)
+ ;;=5^Schizotypal Personality Disorder
+ ;;^UTILITY(U,$J,358.3,23611,2)
+ ;;=Schizotypal Personality Disorder^108367
+ ;;^UTILITY(U,$J,358.3,23612,0)
+ ;;=301.4^^127^1427^4
+ ;;^UTILITY(U,$J,358.3,23612,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23884,1,2,0)
- ;;=2^595.81
- ;;^UTILITY(U,$J,358.3,23884,1,5,0)
- ;;=5^Cystitis Cystica
- ;;^UTILITY(U,$J,358.3,23884,2)
- ;;=^265539
- ;;^UTILITY(U,$J,358.3,23885,0)
- ;;=595.82^^153^1523^9
- ;;^UTILITY(U,$J,358.3,23885,1,0)
+ ;;^UTILITY(U,$J,358.3,23612,1,2,0)
+ ;;=2^301.4
+ ;;^UTILITY(U,$J,358.3,23612,1,5,0)
+ ;;=5^Compulsive Personality Disorder
+ ;;^UTILITY(U,$J,358.3,23612,2)
+ ;;=Compulsive Personality Disorder^27122
+ ;;^UTILITY(U,$J,358.3,23613,0)
+ ;;=301.84^^127^1427^13
+ ;;^UTILITY(U,$J,358.3,23613,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23885,1,2,0)
- ;;=2^595.82
- ;;^UTILITY(U,$J,358.3,23885,1,5,0)
- ;;=5^Cystitis,Irradiation
- ;;^UTILITY(U,$J,358.3,23885,2)
- ;;=^270391
- ;;^UTILITY(U,$J,358.3,23886,0)
- ;;=595.89^^153^1523^7
- ;;^UTILITY(U,$J,358.3,23886,1,0)
+ ;;^UTILITY(U,$J,358.3,23613,1,2,0)
+ ;;=2^301.84
+ ;;^UTILITY(U,$J,358.3,23613,1,5,0)
+ ;;=5^Passive-Aggressive Personality Dis
+ ;;^UTILITY(U,$J,358.3,23613,2)
+ ;;=Passive-Aggressive Personality Dis^90602
+ ;;^UTILITY(U,$J,358.3,23614,0)
+ ;;=301.11^^127^1427^9
+ ;;^UTILITY(U,$J,358.3,23614,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23886,1,2,0)
- ;;=2^595.89
- ;;^UTILITY(U,$J,358.3,23886,1,5,0)
- ;;=5^Cystitis Glandularis
- ;;^UTILITY(U,$J,358.3,23886,2)
- ;;=^88153
- ;;^UTILITY(U,$J,358.3,23887,0)
- ;;=595.9^^153^1523^8
- ;;^UTILITY(U,$J,358.3,23887,1,0)
+ ;;^UTILITY(U,$J,358.3,23614,1,2,0)
+ ;;=2^301.11
+ ;;^UTILITY(U,$J,358.3,23614,1,5,0)
+ ;;=5^Hypomanic Personality D/O,Chr
+ ;;^UTILITY(U,$J,358.3,23614,2)
+ ;;=^268171
+ ;;^UTILITY(U,$J,358.3,23615,0)
+ ;;=301.12^^127^1427^7
+ ;;^UTILITY(U,$J,358.3,23615,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23887,1,2,0)
- ;;=2^595.9
- ;;^UTILITY(U,$J,358.3,23887,1,5,0)
- ;;=5^Cystitis NOS
- ;;^UTILITY(U,$J,358.3,23887,2)
- ;;=^30304
- ;;^UTILITY(U,$J,358.3,23888,0)
- ;;=V10.51^^153^1523^10
- ;;^UTILITY(U,$J,358.3,23888,1,0)
+ ;;^UTILITY(U,$J,358.3,23615,1,2,0)
+ ;;=2^301.12
+ ;;^UTILITY(U,$J,358.3,23615,1,5,0)
+ ;;=5^Depressive Personality D/O,Chr
+ ;;^UTILITY(U,$J,358.3,23615,2)
+ ;;=^268173
+ ;;^UTILITY(U,$J,358.3,23616,0)
+ ;;=301.13^^127^1427^5
+ ;;^UTILITY(U,$J,358.3,23616,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23888,1,2,0)
- ;;=2^V10.51
- ;;^UTILITY(U,$J,358.3,23888,1,5,0)
- ;;=5^H/O Bladder Cancer
- ;;^UTILITY(U,$J,358.3,23888,2)
- ;;=^295228
- ;;^UTILITY(U,$J,358.3,23889,0)
- ;;=V10.59^^153^1523^11
- ;;^UTILITY(U,$J,358.3,23889,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23889,1,2,0)
- ;;=2^V10.59
- ;;^UTILITY(U,$J,358.3,23889,1,5,0)
- ;;=5^H/O Urethral Cancer
- ;;^UTILITY(U,$J,358.3,23889,2)
- ;;=^295230
- ;;^UTILITY(U,$J,358.3,23890,0)
- ;;=593.70^^153^1524^46
+ ;;^UTILITY(U,$J,358.3,23616,1,2,0)
+ ;;=2^301.13

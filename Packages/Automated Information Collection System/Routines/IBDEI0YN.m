@@ -1,134 +1,130 @@
-IBDEI0YN ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0YN ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,17214,1,1,0)
- ;;=1^205.90
- ;;^UTILITY(U,$J,358.3,17214,1,8,0)
- ;;=8^Unspec Myeloid Leuk w/o Remission
- ;;^UTILITY(U,$J,358.3,17214,2)
- ;;=^336860
- ;;^UTILITY(U,$J,358.3,17215,0)
- ;;=205.91^^111^1077^64
- ;;^UTILITY(U,$J,358.3,17215,1,0)
- ;;=^358.31IA^8^2
- ;;^UTILITY(U,$J,358.3,17215,1,1,0)
- ;;=1^205.91
- ;;^UTILITY(U,$J,358.3,17215,1,8,0)
- ;;=8^Unspec Myeloid Leuk in Remission
- ;;^UTILITY(U,$J,358.3,17215,2)
- ;;=^267542
- ;;^UTILITY(U,$J,358.3,17216,0)
- ;;=205.92^^111^1077^63
- ;;^UTILITY(U,$J,358.3,17216,1,0)
- ;;=^358.31IA^8^2
- ;;^UTILITY(U,$J,358.3,17216,1,1,0)
- ;;=1^205.92
- ;;^UTILITY(U,$J,358.3,17216,1,8,0)
- ;;=8^Unspec Myeloid Leuk in Relapse
- ;;^UTILITY(U,$J,358.3,17216,2)
- ;;=^336475
- ;;^UTILITY(U,$J,358.3,17217,0)
- ;;=206.00^^111^1077^6
- ;;^UTILITY(U,$J,358.3,17217,1,0)
- ;;=^358.31IA^8^2
- ;;^UTILITY(U,$J,358.3,17217,1,1,0)
- ;;=1^206.00
- ;;^UTILITY(U,$J,358.3,17217,1,8,0)
- ;;=8^Acute Monocytic Leuk w/o Remission
- ;;^UTILITY(U,$J,358.3,17217,2)
- ;;=^336861
- ;;^UTILITY(U,$J,358.3,17218,0)
- ;;=206.01^^111^1077^5
- ;;^UTILITY(U,$J,358.3,17218,1,0)
- ;;=^358.31IA^8^2
- ;;^UTILITY(U,$J,358.3,17218,1,1,0)
- ;;=1^206.01
- ;;^UTILITY(U,$J,358.3,17218,1,8,0)
- ;;=8^Acute Monocytic Leuk in Remission
- ;;^UTILITY(U,$J,358.3,17218,2)
- ;;=^267544
- ;;^UTILITY(U,$J,358.3,17219,0)
- ;;=206.02^^111^1077^4
- ;;^UTILITY(U,$J,358.3,17219,1,0)
- ;;=^358.31IA^8^2
- ;;^UTILITY(U,$J,358.3,17219,1,1,0)
- ;;=1^206.02
- ;;^UTILITY(U,$J,358.3,17219,1,8,0)
- ;;=8^Acute Monocytic Leuk in Relapse
- ;;^UTILITY(U,$J,358.3,17219,2)
- ;;=^336476
- ;;^UTILITY(U,$J,358.3,17220,0)
- ;;=206.10^^111^1077^15
- ;;^UTILITY(U,$J,358.3,17220,1,0)
- ;;=^358.31IA^8^2
- ;;^UTILITY(U,$J,358.3,17220,1,1,0)
- ;;=1^206.10
- ;;^UTILITY(U,$J,358.3,17220,1,8,0)
- ;;=8^Chr Monocytic Leuk w/o Remission
- ;;^UTILITY(U,$J,358.3,17220,2)
- ;;=^336862
- ;;^UTILITY(U,$J,358.3,17221,0)
- ;;=206.11^^111^1077^14
- ;;^UTILITY(U,$J,358.3,17221,1,0)
- ;;=^358.31IA^8^2
- ;;^UTILITY(U,$J,358.3,17221,1,1,0)
- ;;=1^206.11
- ;;^UTILITY(U,$J,358.3,17221,1,8,0)
- ;;=8^Chr Monocytic Leuk in Remission
- ;;^UTILITY(U,$J,358.3,17221,2)
- ;;=^267546
- ;;^UTILITY(U,$J,358.3,17222,0)
- ;;=206.12^^111^1077^13
- ;;^UTILITY(U,$J,358.3,17222,1,0)
- ;;=^358.31IA^8^2
- ;;^UTILITY(U,$J,358.3,17222,1,1,0)
- ;;=1^206.12
- ;;^UTILITY(U,$J,358.3,17222,1,8,0)
- ;;=8^Chr Monocytic Leuk in Relapse
- ;;^UTILITY(U,$J,358.3,17222,2)
- ;;=^336477
- ;;^UTILITY(U,$J,358.3,17223,0)
- ;;=206.20^^111^1077^55
- ;;^UTILITY(U,$J,358.3,17223,1,0)
- ;;=^358.31IA^8^2
- ;;^UTILITY(U,$J,358.3,17223,1,1,0)
- ;;=1^206.20
- ;;^UTILITY(U,$J,358.3,17223,1,8,0)
- ;;=8^Subacute Monocytic Leuk w/o Remiss
- ;;^UTILITY(U,$J,358.3,17223,2)
- ;;=^336863
- ;;^UTILITY(U,$J,358.3,17224,0)
- ;;=206.21^^111^1077^54
- ;;^UTILITY(U,$J,358.3,17224,1,0)
- ;;=^358.31IA^8^2
- ;;^UTILITY(U,$J,358.3,17224,1,1,0)
- ;;=1^206.21
- ;;^UTILITY(U,$J,358.3,17224,1,8,0)
- ;;=8^Subacute Monocytic Leuk in Relapse
- ;;^UTILITY(U,$J,358.3,17224,2)
- ;;=^267548
- ;;^UTILITY(U,$J,358.3,17225,0)
- ;;=206.22^^111^1077^56
- ;;^UTILITY(U,$J,358.3,17225,1,0)
- ;;=^358.31IA^8^2
- ;;^UTILITY(U,$J,358.3,17225,1,1,0)
- ;;=1^206.22
- ;;^UTILITY(U,$J,358.3,17225,1,8,0)
- ;;=8^Subacute Monocytic Leuk w/o Remiss
- ;;^UTILITY(U,$J,358.3,17225,2)
- ;;=^336478
- ;;^UTILITY(U,$J,358.3,17226,0)
- ;;=206.80^^111^1077^41
- ;;^UTILITY(U,$J,358.3,17226,1,0)
- ;;=^358.31IA^8^2
- ;;^UTILITY(U,$J,358.3,17226,1,1,0)
- ;;=1^206.80
- ;;^UTILITY(U,$J,358.3,17226,1,8,0)
- ;;=8^Oth Monocytic Leuk w/ Remission
- ;;^UTILITY(U,$J,358.3,17226,2)
- ;;=^336864
- ;;^UTILITY(U,$J,358.3,17227,0)
- ;;=206.81^^111^1077^40
- ;;^UTILITY(U,$J,358.3,17227,1,0)
- ;;=^358.31IA^8^2
+ ;;^UTILITY(U,$J,358.3,16890,1,3,0)
+ ;;=3^511.81
+ ;;^UTILITY(U,$J,358.3,16890,1,4,0)
+ ;;=4^Malignant Pleural Effusion
+ ;;^UTILITY(U,$J,358.3,16890,2)
+ ;;=^336603
+ ;;^UTILITY(U,$J,358.3,16891,0)
+ ;;=511.89^^87^1027^2
+ ;;^UTILITY(U,$J,358.3,16891,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16891,1,3,0)
+ ;;=3^511.89
+ ;;^UTILITY(U,$J,358.3,16891,1,4,0)
+ ;;=4^Effusion NEC Exc TB
+ ;;^UTILITY(U,$J,358.3,16891,2)
+ ;;=^336604
+ ;;^UTILITY(U,$J,358.3,16892,0)
+ ;;=039.1^^87^1028^30
+ ;;^UTILITY(U,$J,358.3,16892,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16892,1,3,0)
+ ;;=3^039.1
+ ;;^UTILITY(U,$J,358.3,16892,1,4,0)
+ ;;=4^Nocardiosis, Pulmonary
+ ;;^UTILITY(U,$J,358.3,16892,2)
+ ;;=Nocardiosis, Pulmonary^266495
+ ;;^UTILITY(U,$J,358.3,16893,0)
+ ;;=466.0^^87^1028^7
+ ;;^UTILITY(U,$J,358.3,16893,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16893,1,3,0)
+ ;;=3^466.0
+ ;;^UTILITY(U,$J,358.3,16893,1,4,0)
+ ;;=4^Bronchitis,Acute
+ ;;^UTILITY(U,$J,358.3,16893,2)
+ ;;=Acute Bronchitis^259084
+ ;;^UTILITY(U,$J,358.3,16894,0)
+ ;;=518.6^^87^1028^2
+ ;;^UTILITY(U,$J,358.3,16894,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16894,1,3,0)
+ ;;=3^518.6
+ ;;^UTILITY(U,$J,358.3,16894,1,4,0)
+ ;;=4^Allergic Bronchopulm Aspergillosis
+ ;;^UTILITY(U,$J,358.3,16894,2)
+ ;;=Allergic Bronchopulm Aspergillosis^10945
+ ;;^UTILITY(U,$J,358.3,16895,0)
+ ;;=486.^^87^1028^58
+ ;;^UTILITY(U,$J,358.3,16895,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16895,1,3,0)
+ ;;=3^486.
+ ;;^UTILITY(U,$J,358.3,16895,1,4,0)
+ ;;=4^Pneumonia,Organism Unspec
+ ;;^UTILITY(U,$J,358.3,16895,2)
+ ;;=Atypical Pneumonia^95632
+ ;;^UTILITY(U,$J,358.3,16896,0)
+ ;;=482.9^^87^1028^5
+ ;;^UTILITY(U,$J,358.3,16896,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16896,1,3,0)
+ ;;=3^482.9
+ ;;^UTILITY(U,$J,358.3,16896,1,4,0)
+ ;;=4^Bacterial Pneumonia,Unspec
+ ;;^UTILITY(U,$J,358.3,16896,2)
+ ;;=Bacterial Pneumonia^12347
+ ;;^UTILITY(U,$J,358.3,16897,0)
+ ;;=466.19^^87^1028^1
+ ;;^UTILITY(U,$J,358.3,16897,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16897,1,3,0)
+ ;;=3^466.19
+ ;;^UTILITY(U,$J,358.3,16897,1,4,0)
+ ;;=4^Acute Bronchiolitis
+ ;;^UTILITY(U,$J,358.3,16897,2)
+ ;;=Acute Bronchiolitis^304310
+ ;;^UTILITY(U,$J,358.3,16898,0)
+ ;;=491.21^^87^1028^11
+ ;;^UTILITY(U,$J,358.3,16898,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16898,1,3,0)
+ ;;=3^491.21
+ ;;^UTILITY(U,$J,358.3,16898,1,4,0)
+ ;;=4^COPD w/ Chr Bronchitis,Acute Exacerbation
+ ;;^UTILITY(U,$J,358.3,16898,2)
+ ;;=COPD with Chronic Bronchitis, Acute exacerbation^269954
+ ;;^UTILITY(U,$J,358.3,16899,0)
+ ;;=491.20^^87^1028^12
+ ;;^UTILITY(U,$J,358.3,16899,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16899,1,3,0)
+ ;;=3^491.20
+ ;;^UTILITY(U,$J,358.3,16899,1,4,0)
+ ;;=4^COPD w/ Chr Bronchitis,Stable
+ ;;^UTILITY(U,$J,358.3,16899,2)
+ ;;=COPD with Chronic Bronchitis, Stable^269953
+ ;;^UTILITY(U,$J,358.3,16900,0)
+ ;;=116.0^^87^1028^15
+ ;;^UTILITY(U,$J,358.3,16900,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16900,1,3,0)
+ ;;=3^116.0
+ ;;^UTILITY(U,$J,358.3,16900,1,4,0)
+ ;;=4^Fungus, Blastomycosis
+ ;;^UTILITY(U,$J,358.3,16900,2)
+ ;;=Blastomycosis^15213
+ ;;^UTILITY(U,$J,358.3,16901,0)
+ ;;=117.5^^87^1028^17
+ ;;^UTILITY(U,$J,358.3,16901,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16901,1,3,0)
+ ;;=3^117.5
+ ;;^UTILITY(U,$J,358.3,16901,1,4,0)
+ ;;=4^Fungus, Cryptococcosis
+ ;;^UTILITY(U,$J,358.3,16901,2)
+ ;;=Cryptococcosis^29608
+ ;;^UTILITY(U,$J,358.3,16902,0)
+ ;;=117.3^^87^1028^14
+ ;;^UTILITY(U,$J,358.3,16902,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16902,1,3,0)
+ ;;=3^117.3
+ ;;^UTILITY(U,$J,358.3,16902,1,4,0)
+ ;;=4^Fungus, Aspergillosis
+ ;;^UTILITY(U,$J,358.3,16902,2)
+ ;;=Aspergillosis^10935

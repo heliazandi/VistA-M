@@ -1,114 +1,138 @@
-IBDEI11X ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI11X ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18842,0)
- ;;=28455^^122^1205^11^^^^1
- ;;^UTILITY(U,$J,358.3,18842,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18842,1,2,0)
- ;;=2^TX of tarsal bone fracture; with manipulation, each
- ;;^UTILITY(U,$J,358.3,18842,1,3,0)
- ;;=3^28455
- ;;^UTILITY(U,$J,358.3,18843,0)
- ;;=28456^^122^1205^12^^^^1
- ;;^UTILITY(U,$J,358.3,18843,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18843,1,2,0)
- ;;=2^Perc Fixation Tarsal Fx
- ;;^UTILITY(U,$J,358.3,18843,1,3,0)
- ;;=3^28456
- ;;^UTILITY(U,$J,358.3,18844,0)
- ;;=28465^^122^1205^13^^^^1
- ;;^UTILITY(U,$J,358.3,18844,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18844,1,2,0)
- ;;=2^Open/Closed TX of tarsal FX,w/ internal fixation
- ;;^UTILITY(U,$J,358.3,18844,1,3,0)
- ;;=3^28465
- ;;^UTILITY(U,$J,358.3,18845,0)
- ;;=28470^^122^1205^14^^^^1
- ;;^UTILITY(U,$J,358.3,18845,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18845,1,2,0)
- ;;=2^Closed TX of metatarsal fracture; without manipulation, eachnt of me
- ;;^UTILITY(U,$J,358.3,18845,1,3,0)
- ;;=3^28470
- ;;^UTILITY(U,$J,358.3,18846,0)
- ;;=28475^^122^1205^15^^^^1
- ;;^UTILITY(U,$J,358.3,18846,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18846,1,2,0)
- ;;=2^Closed TX of metatarsal fracture; with manipulation, each
- ;;^UTILITY(U,$J,358.3,18846,1,3,0)
- ;;=3^28475
- ;;^UTILITY(U,$J,358.3,18847,0)
- ;;=28476^^122^1205^16^^^^1
- ;;^UTILITY(U,$J,358.3,18847,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18847,1,2,0)
- ;;=2^Perc Fixation Metatarsal Fx
- ;;^UTILITY(U,$J,358.3,18847,1,3,0)
- ;;=3^28476
- ;;^UTILITY(U,$J,358.3,18848,0)
- ;;=28485^^122^1205^17^^^^1
- ;;^UTILITY(U,$J,358.3,18848,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18848,1,2,0)
- ;;=2^Open/Closed TX of Metatarsal FX,w/internal fixation
- ;;^UTILITY(U,$J,358.3,18848,1,3,0)
- ;;=3^28485
- ;;^UTILITY(U,$J,358.3,18849,0)
- ;;=28490^^122^1205^18^^^^1
- ;;^UTILITY(U,$J,358.3,18849,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18849,1,2,0)
- ;;=2^Closed TX of fracture great toe, phalanx or phalanges; without manipulation
- ;;^UTILITY(U,$J,358.3,18849,1,3,0)
- ;;=3^28490
- ;;^UTILITY(U,$J,358.3,18850,0)
- ;;=28495^^122^1205^19^^^^1
- ;;^UTILITY(U,$J,358.3,18850,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18850,1,2,0)
- ;;=2^Closed TX of fracture great toe, phalanx or phalanges; with manipulation
- ;;^UTILITY(U,$J,358.3,18850,1,3,0)
- ;;=3^28495
- ;;^UTILITY(U,$J,358.3,18851,0)
- ;;=28496^^122^1205^20^^^^1
- ;;^UTILITY(U,$J,358.3,18851,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18851,1,2,0)
- ;;=2^Perc Fixation Great Toe Fx
- ;;^UTILITY(U,$J,358.3,18851,1,3,0)
- ;;=3^28496
- ;;^UTILITY(U,$J,358.3,18852,0)
- ;;=28505^^122^1205^21^^^^1
- ;;^UTILITY(U,$J,358.3,18852,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18852,1,2,0)
- ;;=2^Open TX of fracture great toe, phalanx or phalanges, with or without internal or external fixation
- ;;^UTILITY(U,$J,358.3,18852,1,3,0)
- ;;=3^28505
- ;;^UTILITY(U,$J,358.3,18853,0)
- ;;=28510^^122^1205^22^^^^1
- ;;^UTILITY(U,$J,358.3,18853,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18853,1,2,0)
- ;;=2^Closed TX of fracture, phalanx or phalanges, other than great toe; without manipulation, each
- ;;^UTILITY(U,$J,358.3,18853,1,3,0)
- ;;=3^28510
- ;;^UTILITY(U,$J,358.3,18854,0)
- ;;=28515^^122^1205^23^^^^1
- ;;^UTILITY(U,$J,358.3,18854,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18854,1,2,0)
- ;;=2^Closed TX of fracture, phalanx or phalanges, other than great toe; with manipulation, each
- ;;^UTILITY(U,$J,358.3,18854,1,3,0)
- ;;=3^28515
- ;;^UTILITY(U,$J,358.3,18855,0)
- ;;=28525^^122^1205^24^^^^1
- ;;^UTILITY(U,$J,358.3,18855,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18855,1,2,0)
- ;;=2^Open TX of fracture, phalanx or phalanges, other than great toe, with or without internal or external fixation, each
+ ;;^UTILITY(U,$J,358.3,18541,0)
+ ;;=204.02^^102^1191^15
+ ;;^UTILITY(U,$J,358.3,18541,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18541,1,4,0)
+ ;;=4^LYMPHOID LEUK AC,RELAPSE
+ ;;^UTILITY(U,$J,358.3,18541,1,5,0)
+ ;;=5^204.02
+ ;;^UTILITY(U,$J,358.3,18541,2)
+ ;;=^336465
+ ;;^UTILITY(U,$J,358.3,18542,0)
+ ;;=204.12^^102^1191^17
+ ;;^UTILITY(U,$J,358.3,18542,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18542,1,4,0)
+ ;;=4^LYMPHOID LEUK CHR,RELAPSE
+ ;;^UTILITY(U,$J,358.3,18542,1,5,0)
+ ;;=5^204.12
+ ;;^UTILITY(U,$J,358.3,18542,2)
+ ;;=^336466
+ ;;^UTILITY(U,$J,358.3,18543,0)
+ ;;=204.11^^102^1191^18
+ ;;^UTILITY(U,$J,358.3,18543,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18543,1,4,0)
+ ;;=4^LYMPHOID LEUK CHR,REMISSION
+ ;;^UTILITY(U,$J,358.3,18543,1,5,0)
+ ;;=5^204.11
+ ;;^UTILITY(U,$J,358.3,18543,2)
+ ;;=^267524
+ ;;^UTILITY(U,$J,358.3,18544,0)
+ ;;=204.22^^102^1191^19
+ ;;^UTILITY(U,$J,358.3,18544,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18544,1,4,0)
+ ;;=4^LYMPHOID LEUK SUBACUTE,RELAPSE
+ ;;^UTILITY(U,$J,358.3,18544,1,5,0)
+ ;;=5^204.22
+ ;;^UTILITY(U,$J,358.3,18544,2)
+ ;;=^336467
+ ;;^UTILITY(U,$J,358.3,18545,0)
+ ;;=204.21^^102^1191^20
+ ;;^UTILITY(U,$J,358.3,18545,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18545,1,4,0)
+ ;;=4^LYMPHOID LEUK SUBACUTE,REMISS
+ ;;^UTILITY(U,$J,358.3,18545,1,5,0)
+ ;;=5^204.21
+ ;;^UTILITY(U,$J,358.3,18545,2)
+ ;;=^267526
+ ;;^UTILITY(U,$J,358.3,18546,0)
+ ;;=200.18^^102^1191^21
+ ;;^UTILITY(U,$J,358.3,18546,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18546,1,4,0)
+ ;;=4^LYMPHOSARC,LYMPH NODE MULTI
+ ;;^UTILITY(U,$J,358.3,18546,1,5,0)
+ ;;=5^200.18
+ ;;^UTILITY(U,$J,358.3,18546,2)
+ ;;=^267357
+ ;;^UTILITY(U,$J,358.3,18547,0)
+ ;;=202.38^^102^1191^22
+ ;;^UTILITY(U,$J,358.3,18547,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18547,1,4,0)
+ ;;=4^MAL HISTIOCYTOSIS NODES MULTI
+ ;;^UTILITY(U,$J,358.3,18547,1,5,0)
+ ;;=5^202.38
+ ;;^UTILITY(U,$J,358.3,18547,2)
+ ;;=^267471
+ ;;^UTILITY(U,$J,358.3,18548,0)
+ ;;=202.88^^102^1191^23
+ ;;^UTILITY(U,$J,358.3,18548,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18548,1,4,0)
+ ;;=4^MAL LYMPHOMAS,OTH
+ ;;^UTILITY(U,$J,358.3,18548,1,5,0)
+ ;;=5^202.88
+ ;;^UTILITY(U,$J,358.3,18548,2)
+ ;;=^267503
+ ;;^UTILITY(U,$J,358.3,18549,0)
+ ;;=202.68^^102^1191^24
+ ;;^UTILITY(U,$J,358.3,18549,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18549,1,4,0)
+ ;;=4^MAL MAST CELL TUMORS LYMPH
+ ;;^UTILITY(U,$J,358.3,18549,1,5,0)
+ ;;=5^202.68
+ ;;^UTILITY(U,$J,358.3,18549,2)
+ ;;=^267495
+ ;;^UTILITY(U,$J,358.3,18550,0)
+ ;;=200.48^^102^1191^25
+ ;;^UTILITY(U,$J,358.3,18550,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18550,1,4,0)
+ ;;=4^MANTLE CELL LYMPH MULTIP
+ ;;^UTILITY(U,$J,358.3,18550,1,5,0)
+ ;;=5^200.48
+ ;;^UTILITY(U,$J,358.3,18550,2)
+ ;;=^335204
+ ;;^UTILITY(U,$J,358.3,18551,0)
+ ;;=200.38^^102^1191^26
+ ;;^UTILITY(U,$J,358.3,18551,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18551,1,4,0)
+ ;;=4^MARGIN ZONE LYMPH MULTIP
+ ;;^UTILITY(U,$J,358.3,18551,1,5,0)
+ ;;=5^200.38
+ ;;^UTILITY(U,$J,358.3,18551,2)
+ ;;=^335196
+ ;;^UTILITY(U,$J,358.3,18552,0)
+ ;;=206.01^^102^1191^30
+ ;;^UTILITY(U,$J,358.3,18552,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18552,1,4,0)
+ ;;=4^MONOCYTIC LEUK AC,REMISSION
+ ;;^UTILITY(U,$J,358.3,18552,1,5,0)
+ ;;=5^206.01
+ ;;^UTILITY(U,$J,358.3,18552,2)
+ ;;=^267544
+ ;;^UTILITY(U,$J,358.3,18553,0)
+ ;;=206.02^^102^1191^29
+ ;;^UTILITY(U,$J,358.3,18553,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18553,1,4,0)
+ ;;=4^MONOCYTIC LEUK AC,RELAPSE
+ ;;^UTILITY(U,$J,358.3,18553,1,5,0)
+ ;;=5^206.02
+ ;;^UTILITY(U,$J,358.3,18553,2)
+ ;;=^336476
+ ;;^UTILITY(U,$J,358.3,18554,0)
+ ;;=206.12^^102^1191^31
+ ;;^UTILITY(U,$J,358.3,18554,1,0)
+ ;;=^358.31IA^5^2

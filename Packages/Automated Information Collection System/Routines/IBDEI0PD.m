@@ -1,128 +1,130 @@
-IBDEI0PD ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0PD ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,12518,0)
- ;;=428.31^^87^819^46
- ;;^UTILITY(U,$J,358.3,12518,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,12518,1,4,0)
- ;;=4^428.31
- ;;^UTILITY(U,$J,358.3,12518,1,5,0)
- ;;=5^Heart Failure, Acute Diastolic
- ;;^UTILITY(U,$J,358.3,12518,2)
- ;;=Heart Failure, Acute Diastolic^328497
- ;;^UTILITY(U,$J,358.3,12519,0)
- ;;=428.32^^87^819^48
- ;;^UTILITY(U,$J,358.3,12519,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,12519,1,4,0)
- ;;=4^428.32
- ;;^UTILITY(U,$J,358.3,12519,1,5,0)
- ;;=5^Heart Failure, Chronic Diastolic
- ;;^UTILITY(U,$J,358.3,12519,2)
- ;;=Heart Failure, Chronic Diastolic^328498
- ;;^UTILITY(U,$J,358.3,12520,0)
- ;;=428.33^^87^819^52
- ;;^UTILITY(U,$J,358.3,12520,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,12520,1,4,0)
- ;;=4^428.33
- ;;^UTILITY(U,$J,358.3,12520,1,5,0)
- ;;=5^Heart Failure, Diastolic, Acute on Chronic
- ;;^UTILITY(U,$J,358.3,12520,2)
- ;;=Heart Failure, Diastolic, Acute on Chronic^328499
- ;;^UTILITY(U,$J,358.3,12521,0)
- ;;=428.40^^87^819^51
- ;;^UTILITY(U,$J,358.3,12521,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,12521,1,4,0)
- ;;=4^428.40
- ;;^UTILITY(U,$J,358.3,12521,1,5,0)
- ;;=5^Heart Failure, Diastolic& Systolic
- ;;^UTILITY(U,$J,358.3,12521,2)
- ;;=Heart Failure, Systolic and Diastolic^328596
- ;;^UTILITY(U,$J,358.3,12522,0)
- ;;=428.41^^87^819^55
- ;;^UTILITY(U,$J,358.3,12522,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,12522,1,4,0)
- ;;=4^428.41
- ;;^UTILITY(U,$J,358.3,12522,1,5,0)
- ;;=5^Heart Failure,Systolic&Diastol,Acute
- ;;^UTILITY(U,$J,358.3,12522,2)
- ;;=Heart Failure, Systolic & Diastolic, Acute^328500
- ;;^UTILITY(U,$J,358.3,12523,0)
- ;;=428.42^^87^819^56
- ;;^UTILITY(U,$J,358.3,12523,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,12523,1,4,0)
- ;;=4^428.42
- ;;^UTILITY(U,$J,358.3,12523,1,5,0)
- ;;=5^Heart Failure,Systolic&Diastol,Chr
- ;;^UTILITY(U,$J,358.3,12523,2)
- ;;=^328501
- ;;^UTILITY(U,$J,358.3,12524,0)
- ;;=428.43^^87^819^54
- ;;^UTILITY(U,$J,358.3,12524,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,12524,1,4,0)
- ;;=4^428.43
- ;;^UTILITY(U,$J,358.3,12524,1,5,0)
- ;;=5^Heart Failure,Syst&Diastol Act on Chr
- ;;^UTILITY(U,$J,358.3,12524,2)
- ;;=^328502
- ;;^UTILITY(U,$J,358.3,12525,0)
- ;;=396.3^^87^819^9
- ;;^UTILITY(U,$J,358.3,12525,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,12525,1,4,0)
- ;;=4^396.3
- ;;^UTILITY(U,$J,358.3,12525,1,5,0)
- ;;=5^Aortic and Mitral Insufficiency
- ;;^UTILITY(U,$J,358.3,12525,2)
- ;;=Aortic and Mitral Insufficiency^269583
- ;;^UTILITY(U,$J,358.3,12526,0)
- ;;=429.9^^87^819^30
- ;;^UTILITY(U,$J,358.3,12526,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,12526,1,4,0)
- ;;=4^429.9
- ;;^UTILITY(U,$J,358.3,12526,1,5,0)
- ;;=5^Diastolic Dysfunction
- ;;^UTILITY(U,$J,358.3,12526,2)
- ;;=^54741
- ;;^UTILITY(U,$J,358.3,12527,0)
- ;;=453.79^^87^819^27
- ;;^UTILITY(U,$J,358.3,12527,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,12527,1,4,0)
- ;;=4^453.79
- ;;^UTILITY(U,$J,358.3,12527,1,5,0)
- ;;=5^Chr Venous Emblsm Oth Spec Veins
- ;;^UTILITY(U,$J,358.3,12527,2)
- ;;=^338251
- ;;^UTILITY(U,$J,358.3,12528,0)
- ;;=453.89^^87^819^1
- ;;^UTILITY(U,$J,358.3,12528,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,12528,1,4,0)
- ;;=4^453.89
- ;;^UTILITY(U,$J,358.3,12528,1,5,0)
- ;;=5^AC Venous Emblsm Oth Spec Veins
- ;;^UTILITY(U,$J,358.3,12528,2)
- ;;=^338259
- ;;^UTILITY(U,$J,358.3,12529,0)
- ;;=454.0^^87^819^80
- ;;^UTILITY(U,$J,358.3,12529,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,12529,1,4,0)
- ;;=4^454.0
- ;;^UTILITY(U,$J,358.3,12529,1,5,0)
- ;;=5^Varicose Veins w/ Ulcer
- ;;^UTILITY(U,$J,358.3,12529,2)
- ;;=^125410
- ;;^UTILITY(U,$J,358.3,12530,0)
- ;;=454.2^^87^819^81
- ;;^UTILITY(U,$J,358.3,12530,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,12121,0)
+ ;;=95910^^59^714^26^^^^1
+ ;;^UTILITY(U,$J,358.3,12121,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12121,1,2,0)
+ ;;=2^95910
+ ;;^UTILITY(U,$J,358.3,12121,1,3,0)
+ ;;=3^NCS,7-8 Studies
+ ;;^UTILITY(U,$J,358.3,12122,0)
+ ;;=95911^^59^714^27^^^^1
+ ;;^UTILITY(U,$J,358.3,12122,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12122,1,2,0)
+ ;;=2^95911
+ ;;^UTILITY(U,$J,358.3,12122,1,3,0)
+ ;;=3^NCS,9-10 Studies
+ ;;^UTILITY(U,$J,358.3,12123,0)
+ ;;=95912^^59^714^22^^^^1
+ ;;^UTILITY(U,$J,358.3,12123,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12123,1,2,0)
+ ;;=2^95912
+ ;;^UTILITY(U,$J,358.3,12123,1,3,0)
+ ;;=3^NCS,11-12 Studies
+ ;;^UTILITY(U,$J,358.3,12124,0)
+ ;;=95913^^59^714^23^^^^1
+ ;;^UTILITY(U,$J,358.3,12124,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12124,1,2,0)
+ ;;=2^95913
+ ;;^UTILITY(U,$J,358.3,12124,1,3,0)
+ ;;=3^NCS,13 or More Studies
+ ;;^UTILITY(U,$J,358.3,12125,0)
+ ;;=95937^^59^714^29^^^^1
+ ;;^UTILITY(U,$J,358.3,12125,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12125,1,2,0)
+ ;;=2^95937
+ ;;^UTILITY(U,$J,358.3,12125,1,3,0)
+ ;;=3^Neuromuscular Junction Test
+ ;;^UTILITY(U,$J,358.3,12126,0)
+ ;;=95860^^59^714^20^^^^1
+ ;;^UTILITY(U,$J,358.3,12126,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12126,1,2,0)
+ ;;=2^95860
+ ;;^UTILITY(U,$J,358.3,12126,1,3,0)
+ ;;=3^Muscle Test,One Limb
+ ;;^UTILITY(U,$J,358.3,12127,0)
+ ;;=95869^^59^714^19^^^^1
+ ;;^UTILITY(U,$J,358.3,12127,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12127,1,2,0)
+ ;;=2^95869
+ ;;^UTILITY(U,$J,358.3,12127,1,3,0)
+ ;;=3^Muscle Test Thor Paraspinal
+ ;;^UTILITY(U,$J,358.3,12128,0)
+ ;;=95925^^59^715^7^^^^1
+ ;;^UTILITY(U,$J,358.3,12128,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12128,1,2,0)
+ ;;=2^95925
+ ;;^UTILITY(U,$J,358.3,12128,1,3,0)
+ ;;=3^Short Latency SSEP, Periph Nerve, Upper Ext
+ ;;^UTILITY(U,$J,358.3,12129,0)
+ ;;=95926^^59^715^5^^^^1
+ ;;^UTILITY(U,$J,358.3,12129,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12129,1,2,0)
+ ;;=2^95926
+ ;;^UTILITY(U,$J,358.3,12129,1,3,0)
+ ;;=3^Short Latency SSEP, Periph Nerve, Lower Ext
+ ;;^UTILITY(U,$J,358.3,12130,0)
+ ;;=95927^^59^715^6^^^^1
+ ;;^UTILITY(U,$J,358.3,12130,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12130,1,2,0)
+ ;;=2^95927
+ ;;^UTILITY(U,$J,358.3,12130,1,3,0)
+ ;;=3^Short Latency SSEP, Periph Nerve, Trunk/Head
+ ;;^UTILITY(U,$J,358.3,12131,0)
+ ;;=95930^^59^715^9^^^^1
+ ;;^UTILITY(U,$J,358.3,12131,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12131,1,2,0)
+ ;;=2^95930
+ ;;^UTILITY(U,$J,358.3,12131,1,3,0)
+ ;;=3^Visual Evoked Potential
+ ;;^UTILITY(U,$J,358.3,12132,0)
+ ;;=95933^^59^715^1^^^^1
+ ;;^UTILITY(U,$J,358.3,12132,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12132,1,2,0)
+ ;;=2^95933
+ ;;^UTILITY(U,$J,358.3,12132,1,3,0)
+ ;;=3^Blink Reflex Test
+ ;;^UTILITY(U,$J,358.3,12133,0)
+ ;;=95937^^59^715^4^^^^1
+ ;;^UTILITY(U,$J,358.3,12133,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12133,1,2,0)
+ ;;=2^95937
+ ;;^UTILITY(U,$J,358.3,12133,1,3,0)
+ ;;=3^Neuromuscular Junction Test
+ ;;^UTILITY(U,$J,358.3,12134,0)
+ ;;=95938^^59^715^8^^^^1
+ ;;^UTILITY(U,$J,358.3,12134,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12134,1,2,0)
+ ;;=2^95938
+ ;;^UTILITY(U,$J,358.3,12134,1,3,0)
+ ;;=3^Short Latency SSEP,Periph Nerve,Upper&Lower
+ ;;^UTILITY(U,$J,358.3,12135,0)
+ ;;=20206^^59^716^4^^^^1
+ ;;^UTILITY(U,$J,358.3,12135,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12135,1,2,0)
+ ;;=2^20206
+ ;;^UTILITY(U,$J,358.3,12135,1,3,0)
+ ;;=3^Needle Biopsy of Muscle
+ ;;^UTILITY(U,$J,358.3,12136,0)
+ ;;=64795^^59^716^1^^^^1
+ ;;^UTILITY(U,$J,358.3,12136,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,12136,1,2,0)
+ ;;=2^64795

@@ -1,140 +1,132 @@
-IBDEI0MR ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0MR ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,11171,0)
- ;;=574.01^^71^728^10
- ;;^UTILITY(U,$J,358.3,11171,1,0)
+ ;;^UTILITY(U,$J,358.3,10829,1,5,0)
+ ;;=5^Narcissistic Personality Disorder
+ ;;^UTILITY(U,$J,358.3,10829,2)
+ ;;=Narcissistic Personality Disorder^265353
+ ;;^UTILITY(U,$J,358.3,10830,0)
+ ;;=301.0^^47^606^12
+ ;;^UTILITY(U,$J,358.3,10830,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11171,1,2,0)
- ;;=2^574.01
- ;;^UTILITY(U,$J,358.3,11171,1,5,0)
- ;;=5^Cholelith w/ Acute CHOL w/ OBST
- ;;^UTILITY(U,$J,358.3,11171,2)
- ;;=^270313
- ;;^UTILITY(U,$J,358.3,11172,0)
- ;;=574.20^^71^728^13
- ;;^UTILITY(U,$J,358.3,11172,1,0)
+ ;;^UTILITY(U,$J,358.3,10830,1,2,0)
+ ;;=2^301.0
+ ;;^UTILITY(U,$J,358.3,10830,1,5,0)
+ ;;=5^Paranoid Personality Disorder
+ ;;^UTILITY(U,$J,358.3,10830,2)
+ ;;=Paranoid Personality Disorder^89982
+ ;;^UTILITY(U,$J,358.3,10831,0)
+ ;;=301.9^^47^606^16
+ ;;^UTILITY(U,$J,358.3,10831,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11172,1,2,0)
- ;;=2^574.20
- ;;^UTILITY(U,$J,358.3,11172,1,5,0)
- ;;=5^Cholithiasis NOS w/o OBST
- ;;^UTILITY(U,$J,358.3,11172,2)
- ;;=^18282
- ;;^UTILITY(U,$J,358.3,11173,0)
- ;;=574.21^^71^728^12
- ;;^UTILITY(U,$J,358.3,11173,1,0)
+ ;;^UTILITY(U,$J,358.3,10831,1,2,0)
+ ;;=2^301.9
+ ;;^UTILITY(U,$J,358.3,10831,1,5,0)
+ ;;=5^Unspecified Personality Disorder
+ ;;^UTILITY(U,$J,358.3,10831,2)
+ ;;=Unspecified Personality Disorder^92451
+ ;;^UTILITY(U,$J,358.3,10832,0)
+ ;;=301.20^^47^606^14
+ ;;^UTILITY(U,$J,358.3,10832,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11173,1,2,0)
- ;;=2^574.21
- ;;^UTILITY(U,$J,358.3,11173,1,5,0)
- ;;=5^Cholelithias NOS w/ OBST
- ;;^UTILITY(U,$J,358.3,11173,2)
- ;;=^270317
- ;;^UTILITY(U,$J,358.3,11174,0)
- ;;=575.12^^71^728^7
- ;;^UTILITY(U,$J,358.3,11174,1,0)
+ ;;^UTILITY(U,$J,358.3,10832,1,2,0)
+ ;;=2^301.20
+ ;;^UTILITY(U,$J,358.3,10832,1,5,0)
+ ;;=5^Schizoid Personality Disorder
+ ;;^UTILITY(U,$J,358.3,10832,2)
+ ;;=^108271
+ ;;^UTILITY(U,$J,358.3,10833,0)
+ ;;=301.22^^47^606^15
+ ;;^UTILITY(U,$J,358.3,10833,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11174,1,2,0)
- ;;=2^575.12
- ;;^UTILITY(U,$J,358.3,11174,1,5,0)
- ;;=5^Cholecystitis,AC & CHR
- ;;^UTILITY(U,$J,358.3,11174,2)
- ;;=^304322
- ;;^UTILITY(U,$J,358.3,11175,0)
- ;;=575.10^^71^728^9
- ;;^UTILITY(U,$J,358.3,11175,1,0)
+ ;;^UTILITY(U,$J,358.3,10833,1,2,0)
+ ;;=2^301.22
+ ;;^UTILITY(U,$J,358.3,10833,1,5,0)
+ ;;=5^Schizotypal Personality Disorder
+ ;;^UTILITY(U,$J,358.3,10833,2)
+ ;;=Schizotypal Personality Disorder^108367
+ ;;^UTILITY(U,$J,358.3,10834,0)
+ ;;=301.4^^47^606^4
+ ;;^UTILITY(U,$J,358.3,10834,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11175,1,2,0)
- ;;=2^575.10
- ;;^UTILITY(U,$J,358.3,11175,1,5,0)
- ;;=5^Cholecystitis,Unspec
- ;;^UTILITY(U,$J,358.3,11175,2)
- ;;=^23341
- ;;^UTILITY(U,$J,358.3,11176,0)
- ;;=575.11^^71^728^8
- ;;^UTILITY(U,$J,358.3,11176,1,0)
+ ;;^UTILITY(U,$J,358.3,10834,1,2,0)
+ ;;=2^301.4
+ ;;^UTILITY(U,$J,358.3,10834,1,5,0)
+ ;;=5^Compulsive Personality Disorder
+ ;;^UTILITY(U,$J,358.3,10834,2)
+ ;;=Compulsive Personality Disorder^27122
+ ;;^UTILITY(U,$J,358.3,10835,0)
+ ;;=301.84^^47^606^13
+ ;;^UTILITY(U,$J,358.3,10835,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11176,1,2,0)
- ;;=2^575.11
- ;;^UTILITY(U,$J,358.3,11176,1,5,0)
- ;;=5^Cholecystitis,Chr
- ;;^UTILITY(U,$J,358.3,11176,2)
- ;;=^186925
- ;;^UTILITY(U,$J,358.3,11177,0)
- ;;=575.8^^71^728^14
- ;;^UTILITY(U,$J,358.3,11177,1,0)
+ ;;^UTILITY(U,$J,358.3,10835,1,2,0)
+ ;;=2^301.84
+ ;;^UTILITY(U,$J,358.3,10835,1,5,0)
+ ;;=5^Passive-Aggressive Personality Dis
+ ;;^UTILITY(U,$J,358.3,10835,2)
+ ;;=Passive-Aggressive Personality Dis^90602
+ ;;^UTILITY(U,$J,358.3,10836,0)
+ ;;=301.11^^47^606^9
+ ;;^UTILITY(U,$J,358.3,10836,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11177,1,2,0)
- ;;=2^575.8
- ;;^UTILITY(U,$J,358.3,11177,1,5,0)
- ;;=5^Gallbladder Disorder
- ;;^UTILITY(U,$J,358.3,11177,2)
- ;;=^88000
- ;;^UTILITY(U,$J,358.3,11178,0)
- ;;=576.2^^71^728^1
- ;;^UTILITY(U,$J,358.3,11178,1,0)
+ ;;^UTILITY(U,$J,358.3,10836,1,2,0)
+ ;;=2^301.11
+ ;;^UTILITY(U,$J,358.3,10836,1,5,0)
+ ;;=5^Hypomanic Personality D/O,Chr
+ ;;^UTILITY(U,$J,358.3,10836,2)
+ ;;=^268171
+ ;;^UTILITY(U,$J,358.3,10837,0)
+ ;;=301.12^^47^606^7
+ ;;^UTILITY(U,$J,358.3,10837,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11178,1,2,0)
- ;;=2^576.2
- ;;^UTILITY(U,$J,358.3,11178,1,5,0)
- ;;=5^Bile Duct Obstruction
- ;;^UTILITY(U,$J,358.3,11178,2)
- ;;=^14194
- ;;^UTILITY(U,$J,358.3,11179,0)
- ;;=575.2^^71^728^15
- ;;^UTILITY(U,$J,358.3,11179,1,0)
+ ;;^UTILITY(U,$J,358.3,10837,1,2,0)
+ ;;=2^301.12
+ ;;^UTILITY(U,$J,358.3,10837,1,5,0)
+ ;;=5^Depressive Personality D/O,Chr
+ ;;^UTILITY(U,$J,358.3,10837,2)
+ ;;=^268173
+ ;;^UTILITY(U,$J,358.3,10838,0)
+ ;;=301.13^^47^606^5
+ ;;^UTILITY(U,$J,358.3,10838,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11179,1,2,0)
- ;;=2^575.2
- ;;^UTILITY(U,$J,358.3,11179,1,5,0)
- ;;=5^Gallbladder Obstruction
- ;;^UTILITY(U,$J,358.3,11179,2)
- ;;=^270326
- ;;^UTILITY(U,$J,358.3,11180,0)
- ;;=156.0^^71^728^16
- ;;^UTILITY(U,$J,358.3,11180,1,0)
+ ;;^UTILITY(U,$J,358.3,10838,1,2,0)
+ ;;=2^301.13
+ ;;^UTILITY(U,$J,358.3,10838,1,5,0)
+ ;;=5^Cyclothymic Disorder
+ ;;^UTILITY(U,$J,358.3,10838,2)
+ ;;=^30028
+ ;;^UTILITY(U,$J,358.3,10839,0)
+ ;;=301.21^^47^606^10
+ ;;^UTILITY(U,$J,358.3,10839,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11180,1,2,0)
- ;;=2^156.0
- ;;^UTILITY(U,$J,358.3,11180,1,5,0)
- ;;=5^Mal Neop of Gallbladder
- ;;^UTILITY(U,$J,358.3,11180,2)
- ;;=^267098
- ;;^UTILITY(U,$J,358.3,11181,0)
- ;;=V64.1^^71^729^1
- ;;^UTILITY(U,$J,358.3,11181,1,0)
+ ;;^UTILITY(U,$J,358.3,10839,1,2,0)
+ ;;=2^301.21
+ ;;^UTILITY(U,$J,358.3,10839,1,5,0)
+ ;;=5^Introverted Personality
+ ;;^UTILITY(U,$J,358.3,10839,2)
+ ;;=^268174
+ ;;^UTILITY(U,$J,358.3,10840,0)
+ ;;=302.2^^47^607^7
+ ;;^UTILITY(U,$J,358.3,10840,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11181,1,2,0)
- ;;=2^V64.1
- ;;^UTILITY(U,$J,358.3,11181,1,5,0)
- ;;=5^No Procedure/Contraindication
- ;;^UTILITY(U,$J,358.3,11181,2)
- ;;=^295558
- ;;^UTILITY(U,$J,358.3,11182,0)
- ;;=V64.2^^71^729^2
- ;;^UTILITY(U,$J,358.3,11182,1,0)
+ ;;^UTILITY(U,$J,358.3,10840,1,2,0)
+ ;;=2^302.2
+ ;;^UTILITY(U,$J,358.3,10840,1,5,0)
+ ;;=5^Pedophilia
+ ;;^UTILITY(U,$J,358.3,10840,2)
+ ;;=^91008
+ ;;^UTILITY(U,$J,358.3,10841,0)
+ ;;=302.4^^47^607^2
+ ;;^UTILITY(U,$J,358.3,10841,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11182,1,2,0)
- ;;=2^V64.2
- ;;^UTILITY(U,$J,358.3,11182,1,5,0)
- ;;=5^No Procedure/Patient Decision
- ;;^UTILITY(U,$J,358.3,11182,2)
- ;;=^295559
- ;;^UTILITY(U,$J,358.3,11183,0)
- ;;=V64.3^^71^729^3
- ;;^UTILITY(U,$J,358.3,11183,1,0)
+ ;;^UTILITY(U,$J,358.3,10841,1,2,0)
+ ;;=2^302.4
+ ;;^UTILITY(U,$J,358.3,10841,1,5,0)
+ ;;=5^Exhibitionism
+ ;;^UTILITY(U,$J,358.3,10841,2)
+ ;;=^43610
+ ;;^UTILITY(U,$J,358.3,10842,0)
+ ;;=302.72^^47^607^6
+ ;;^UTILITY(U,$J,358.3,10842,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11183,1,2,0)
- ;;=2^V64.3
- ;;^UTILITY(U,$J,358.3,11183,1,5,0)
- ;;=5^No Procedure/Reason NEC
- ;;^UTILITY(U,$J,358.3,11183,2)
- ;;=^295560
- ;;^UTILITY(U,$J,358.3,11184,0)
- ;;=43200^^72^730^40^^^^1
- ;;^UTILITY(U,$J,358.3,11184,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11184,1,2,0)
- ;;=2^43200

@@ -1,364 +1,132 @@
-IBDEI02L ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
+IBDEI02L ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3044,1,3,0)
- ;;=3^Fitting/Adjustment of Devices NEC
- ;;^UTILITY(U,$J,358.3,3044,1,4,0)
- ;;=4^Z46.89
- ;;^UTILITY(U,$J,358.3,3044,2)
- ;;=^5063023
- ;;^UTILITY(U,$J,358.3,3045,0)
- ;;=M75.01^^13^123^4
- ;;^UTILITY(U,$J,358.3,3045,1,0)
+ ;;^UTILITY(U,$J,358.3,660,2)
+ ;;=^5063437
+ ;;^UTILITY(U,$J,358.3,661,0)
+ ;;=Z85.831^^2^27^29
+ ;;^UTILITY(U,$J,358.3,661,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3045,1,3,0)
- ;;=3^Adhesive Capsulitis,Right Shoulder
- ;;^UTILITY(U,$J,358.3,3045,1,4,0)
- ;;=4^M75.01
- ;;^UTILITY(U,$J,358.3,3045,2)
- ;;=^5013239
- ;;^UTILITY(U,$J,358.3,3046,0)
- ;;=M75.02^^13^123^3
- ;;^UTILITY(U,$J,358.3,3046,1,0)
+ ;;^UTILITY(U,$J,358.3,661,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of soft tissue
+ ;;^UTILITY(U,$J,358.3,661,1,4,0)
+ ;;=4^Z85.831
+ ;;^UTILITY(U,$J,358.3,661,2)
+ ;;=^5063445
+ ;;^UTILITY(U,$J,358.3,662,0)
+ ;;=Z85.71^^2^27^1
+ ;;^UTILITY(U,$J,358.3,662,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3046,1,3,0)
- ;;=3^Adhesive Capsulitis,Left Shoulder
- ;;^UTILITY(U,$J,358.3,3046,1,4,0)
- ;;=4^M75.02
- ;;^UTILITY(U,$J,358.3,3046,2)
- ;;=^5013240
- ;;^UTILITY(U,$J,358.3,3047,0)
- ;;=M54.12^^13^123^12
- ;;^UTILITY(U,$J,358.3,3047,1,0)
+ ;;^UTILITY(U,$J,358.3,662,1,3,0)
+ ;;=3^Personal history of Hodgkin lymphoma
+ ;;^UTILITY(U,$J,358.3,662,1,4,0)
+ ;;=4^Z85.71
+ ;;^UTILITY(U,$J,358.3,662,2)
+ ;;=^5063435
+ ;;^UTILITY(U,$J,358.3,663,0)
+ ;;=Z85.830^^2^27^30
+ ;;^UTILITY(U,$J,358.3,663,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3047,1,3,0)
- ;;=3^Radiculopathy,Cervical Region
- ;;^UTILITY(U,$J,358.3,3047,1,4,0)
- ;;=4^M54.12
- ;;^UTILITY(U,$J,358.3,3047,2)
- ;;=^5012297
- ;;^UTILITY(U,$J,358.3,3048,0)
- ;;=M54.13^^13^123^13
- ;;^UTILITY(U,$J,358.3,3048,1,0)
+ ;;^UTILITY(U,$J,358.3,663,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of bone
+ ;;^UTILITY(U,$J,358.3,663,1,4,0)
+ ;;=4^Z85.830
+ ;;^UTILITY(U,$J,358.3,663,2)
+ ;;=^5063444
+ ;;^UTILITY(U,$J,358.3,664,0)
+ ;;=Z85.820^^2^27^2
+ ;;^UTILITY(U,$J,358.3,664,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3048,1,3,0)
- ;;=3^Radiculopathy,Cervicothoracic Region
- ;;^UTILITY(U,$J,358.3,3048,1,4,0)
- ;;=4^M54.13
- ;;^UTILITY(U,$J,358.3,3048,2)
- ;;=^5012298
- ;;^UTILITY(U,$J,358.3,3049,0)
- ;;=B18.2^^13^124^1
- ;;^UTILITY(U,$J,358.3,3049,1,0)
+ ;;^UTILITY(U,$J,358.3,664,1,3,0)
+ ;;=3^Personal history of malignant melanoma of skin
+ ;;^UTILITY(U,$J,358.3,664,1,4,0)
+ ;;=4^Z85.820
+ ;;^UTILITY(U,$J,358.3,664,2)
+ ;;=^5063441
+ ;;^UTILITY(U,$J,358.3,665,0)
+ ;;=Z85.828^^2^27^31
+ ;;^UTILITY(U,$J,358.3,665,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3049,1,3,0)
- ;;=3^Hepatitis C,Viral,Chronic
- ;;^UTILITY(U,$J,358.3,3049,1,4,0)
- ;;=4^B18.2
- ;;^UTILITY(U,$J,358.3,3049,2)
- ;;=^5000548
- ;;^UTILITY(U,$J,358.3,3050,0)
- ;;=K92.1^^13^124^2
- ;;^UTILITY(U,$J,358.3,3050,1,0)
+ ;;^UTILITY(U,$J,358.3,665,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of skin NEC
+ ;;^UTILITY(U,$J,358.3,665,1,4,0)
+ ;;=4^Z85.828
+ ;;^UTILITY(U,$J,358.3,665,2)
+ ;;=^5063443
+ ;;^UTILITY(U,$J,358.3,666,0)
+ ;;=Z85.840^^2^27^32
+ ;;^UTILITY(U,$J,358.3,666,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3050,1,3,0)
- ;;=3^Melena
- ;;^UTILITY(U,$J,358.3,3050,1,4,0)
- ;;=4^K92.1
- ;;^UTILITY(U,$J,358.3,3050,2)
- ;;=^5008914
- ;;^UTILITY(U,$J,358.3,3051,0)
- ;;=N39.0^^13^124^3
- ;;^UTILITY(U,$J,358.3,3051,1,0)
+ ;;^UTILITY(U,$J,358.3,666,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of eye
+ ;;^UTILITY(U,$J,358.3,666,1,4,0)
+ ;;=4^Z85.840
+ ;;^UTILITY(U,$J,358.3,666,2)
+ ;;=^5063446
+ ;;^UTILITY(U,$J,358.3,667,0)
+ ;;=Z85.841^^2^27^33
+ ;;^UTILITY(U,$J,358.3,667,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3051,1,3,0)
- ;;=3^UTI,Site Unspec
- ;;^UTILITY(U,$J,358.3,3051,1,4,0)
- ;;=4^N39.0
- ;;^UTILITY(U,$J,358.3,3051,2)
- ;;=^124436
- ;;^UTILITY(U,$J,358.3,3052,0)
- ;;=G82.20^^13^125^5
- ;;^UTILITY(U,$J,358.3,3052,1,0)
+ ;;^UTILITY(U,$J,358.3,667,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of brain
+ ;;^UTILITY(U,$J,358.3,667,1,4,0)
+ ;;=4^Z85.841
+ ;;^UTILITY(U,$J,358.3,667,2)
+ ;;=^5063447
+ ;;^UTILITY(U,$J,358.3,668,0)
+ ;;=Z85.848^^2^27^34
+ ;;^UTILITY(U,$J,358.3,668,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3052,1,3,0)
- ;;=3^Paraplegia,Unspec
- ;;^UTILITY(U,$J,358.3,3052,1,4,0)
- ;;=4^G82.20
- ;;^UTILITY(U,$J,358.3,3052,2)
- ;;=^5004125
- ;;^UTILITY(U,$J,358.3,3053,0)
- ;;=S14.109S^^13^125^1
- ;;^UTILITY(U,$J,358.3,3053,1,0)
+ ;;^UTILITY(U,$J,358.3,668,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of prt nervous tissue
+ ;;^UTILITY(U,$J,358.3,668,1,4,0)
+ ;;=4^Z85.848
+ ;;^UTILITY(U,$J,358.3,668,2)
+ ;;=^5063448
+ ;;^UTILITY(U,$J,358.3,669,0)
+ ;;=Z85.850^^2^27^35
+ ;;^UTILITY(U,$J,358.3,669,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3053,1,3,0)
- ;;=3^Injury of Cervical Spinal Cord,Unspec Level,Sequela
- ;;^UTILITY(U,$J,358.3,3053,1,4,0)
- ;;=4^S14.109S
- ;;^UTILITY(U,$J,358.3,3053,2)
- ;;=^5134243
- ;;^UTILITY(U,$J,358.3,3054,0)
- ;;=S24.109S^^13^125^2
- ;;^UTILITY(U,$J,358.3,3054,1,0)
+ ;;^UTILITY(U,$J,358.3,669,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of thyroid
+ ;;^UTILITY(U,$J,358.3,669,1,4,0)
+ ;;=4^Z85.850
+ ;;^UTILITY(U,$J,358.3,669,2)
+ ;;=^5063449
+ ;;^UTILITY(U,$J,358.3,670,0)
+ ;;=Z85.858^^2^27^36
+ ;;^UTILITY(U,$J,358.3,670,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3054,1,3,0)
- ;;=3^Injury of Thoracic Spinal Cord,Unspec Level,Sequela
- ;;^UTILITY(U,$J,358.3,3054,1,4,0)
- ;;=4^S24.109S
- ;;^UTILITY(U,$J,358.3,3054,2)
- ;;=^5134384
- ;;^UTILITY(U,$J,358.3,3055,0)
- ;;=S34.109S^^13^125^3
- ;;^UTILITY(U,$J,358.3,3055,1,0)
+ ;;^UTILITY(U,$J,358.3,670,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of endocrine glands
+ ;;^UTILITY(U,$J,358.3,670,1,4,0)
+ ;;=4^Z85.858
+ ;;^UTILITY(U,$J,358.3,670,2)
+ ;;=^5063450
+ ;;^UTILITY(U,$J,358.3,671,0)
+ ;;=N17.1^^3^28^2
+ ;;^UTILITY(U,$J,358.3,671,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3055,1,3,0)
- ;;=3^Injury to Lumbar Spinal Cord,Unspec Level,Sequela
- ;;^UTILITY(U,$J,358.3,3055,1,4,0)
- ;;=4^S34.109S
- ;;^UTILITY(U,$J,358.3,3055,2)
- ;;=^5134570
- ;;^UTILITY(U,$J,358.3,3056,0)
- ;;=S34.139S^^13^125^4
- ;;^UTILITY(U,$J,358.3,3056,1,0)
+ ;;^UTILITY(U,$J,358.3,671,1,3,0)
+ ;;=3^Acute kidney failure w/ acute cortical necrosis
+ ;;^UTILITY(U,$J,358.3,671,1,4,0)
+ ;;=4^N17.1
+ ;;^UTILITY(U,$J,358.3,671,2)
+ ;;=^5015599
+ ;;^UTILITY(U,$J,358.3,672,0)
+ ;;=N17.2^^3^28^3
+ ;;^UTILITY(U,$J,358.3,672,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3056,1,3,0)
- ;;=3^Injury to Sacral Spinal Cord,Sequela
- ;;^UTILITY(U,$J,358.3,3056,1,4,0)
- ;;=4^S34.139S
- ;;^UTILITY(U,$J,358.3,3056,2)
- ;;=^5025249
- ;;^UTILITY(U,$J,358.3,3057,0)
- ;;=G82.51^^13^126^1
- ;;^UTILITY(U,$J,358.3,3057,1,0)
+ ;;^UTILITY(U,$J,358.3,672,1,3,0)
+ ;;=3^Acute kidney failure w/ medullary necrosis
+ ;;^UTILITY(U,$J,358.3,672,1,4,0)
+ ;;=4^N17.2
+ ;;^UTILITY(U,$J,358.3,672,2)
+ ;;=^5015600
+ ;;^UTILITY(U,$J,358.3,673,0)
+ ;;=N17.8^^3^28^1
+ ;;^UTILITY(U,$J,358.3,673,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3057,1,3,0)
- ;;=3^Quadriplegia,C1-C4,Complete
- ;;^UTILITY(U,$J,358.3,3057,1,4,0)
- ;;=4^G82.51
- ;;^UTILITY(U,$J,358.3,3057,2)
- ;;=^5004129
- ;;^UTILITY(U,$J,358.3,3058,0)
- ;;=G82.52^^13^126^2
- ;;^UTILITY(U,$J,358.3,3058,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3058,1,3,0)
- ;;=3^Quadriplegia,C1-C4,Incomplete
- ;;^UTILITY(U,$J,358.3,3058,1,4,0)
- ;;=4^G82.52
- ;;^UTILITY(U,$J,358.3,3058,2)
- ;;=^5004130
- ;;^UTILITY(U,$J,358.3,3059,0)
- ;;=G82.53^^13^126^3
- ;;^UTILITY(U,$J,358.3,3059,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3059,1,3,0)
- ;;=3^Quadriplegia,C5-C7,Complete
- ;;^UTILITY(U,$J,358.3,3059,1,4,0)
- ;;=4^G82.53
- ;;^UTILITY(U,$J,358.3,3059,2)
- ;;=^5004131
- ;;^UTILITY(U,$J,358.3,3060,0)
- ;;=G82.54^^13^126^4
- ;;^UTILITY(U,$J,358.3,3060,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3060,1,3,0)
- ;;=3^Quadriplegia,C5-C7,Incomplete
- ;;^UTILITY(U,$J,358.3,3060,1,4,0)
- ;;=4^G82.54
- ;;^UTILITY(U,$J,358.3,3060,2)
- ;;=^5004132
- ;;^UTILITY(U,$J,358.3,3061,0)
- ;;=G82.50^^13^126^5
- ;;^UTILITY(U,$J,358.3,3061,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3061,1,3,0)
- ;;=3^Quadriplegia,Unspec
- ;;^UTILITY(U,$J,358.3,3061,1,4,0)
- ;;=4^G82.50
- ;;^UTILITY(U,$J,358.3,3061,2)
- ;;=^5004128
- ;;^UTILITY(U,$J,358.3,3062,0)
- ;;=L89.010^^13^127^60
- ;;^UTILITY(U,$J,358.3,3062,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3062,1,3,0)
- ;;=3^Pressure Ulcer Right Elbow,Unstageable
- ;;^UTILITY(U,$J,358.3,3062,1,4,0)
- ;;=4^L89.010
- ;;^UTILITY(U,$J,358.3,3062,2)
- ;;=^5009337
- ;;^UTILITY(U,$J,358.3,3063,0)
- ;;=L89.011^^13^127^55
- ;;^UTILITY(U,$J,358.3,3063,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3063,1,3,0)
- ;;=3^Pressure Ulcer Right Elbow,Stage 1
- ;;^UTILITY(U,$J,358.3,3063,1,4,0)
- ;;=4^L89.011
- ;;^UTILITY(U,$J,358.3,3063,2)
- ;;=^5009338
- ;;^UTILITY(U,$J,358.3,3064,0)
- ;;=L89.012^^13^127^56
- ;;^UTILITY(U,$J,358.3,3064,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3064,1,3,0)
- ;;=3^Pressure Ulcer Right Elbow,Stage 2
- ;;^UTILITY(U,$J,358.3,3064,1,4,0)
- ;;=4^L89.012
- ;;^UTILITY(U,$J,358.3,3064,2)
- ;;=^5009339
- ;;^UTILITY(U,$J,358.3,3065,0)
- ;;=L89.013^^13^127^57
- ;;^UTILITY(U,$J,358.3,3065,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3065,1,3,0)
- ;;=3^Pressure Ulcer Right Elbow,Stage 3
- ;;^UTILITY(U,$J,358.3,3065,1,4,0)
- ;;=4^L89.013
- ;;^UTILITY(U,$J,358.3,3065,2)
- ;;=^5009340
- ;;^UTILITY(U,$J,358.3,3066,0)
- ;;=L89.014^^13^127^58
- ;;^UTILITY(U,$J,358.3,3066,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3066,1,3,0)
- ;;=3^Pressure Ulcer Right Elbow,Stage 4
- ;;^UTILITY(U,$J,358.3,3066,1,4,0)
- ;;=4^L89.014
- ;;^UTILITY(U,$J,358.3,3066,2)
- ;;=^5009341
- ;;^UTILITY(U,$J,358.3,3067,0)
- ;;=L89.019^^13^127^59
- ;;^UTILITY(U,$J,358.3,3067,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3067,1,3,0)
- ;;=3^Pressure Ulcer Right Elbow,Stage Unspec
- ;;^UTILITY(U,$J,358.3,3067,1,4,0)
- ;;=4^L89.019
- ;;^UTILITY(U,$J,358.3,3067,2)
- ;;=^5133648
- ;;^UTILITY(U,$J,358.3,3068,0)
- ;;=L89.020^^13^127^18
- ;;^UTILITY(U,$J,358.3,3068,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3068,1,3,0)
- ;;=3^Pressure Ulcer Left Elbow,Unstageable
- ;;^UTILITY(U,$J,358.3,3068,1,4,0)
- ;;=4^L89.020
- ;;^UTILITY(U,$J,358.3,3068,2)
- ;;=^5009342
- ;;^UTILITY(U,$J,358.3,3069,0)
- ;;=L89.021^^13^127^13
- ;;^UTILITY(U,$J,358.3,3069,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3069,1,3,0)
- ;;=3^Pressure Ulcer Left Elbow,Stage 1
- ;;^UTILITY(U,$J,358.3,3069,1,4,0)
- ;;=4^L89.021
- ;;^UTILITY(U,$J,358.3,3069,2)
- ;;=^5009343
- ;;^UTILITY(U,$J,358.3,3070,0)
- ;;=L89.022^^13^127^14
- ;;^UTILITY(U,$J,358.3,3070,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3070,1,3,0)
- ;;=3^Pressure Ulcer Left Elbow,Stage 2
- ;;^UTILITY(U,$J,358.3,3070,1,4,0)
- ;;=4^L89.022
- ;;^UTILITY(U,$J,358.3,3070,2)
- ;;=^5009344
- ;;^UTILITY(U,$J,358.3,3071,0)
- ;;=L89.023^^13^127^15
- ;;^UTILITY(U,$J,358.3,3071,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3071,1,3,0)
- ;;=3^Pressure Ulcer Left Elbow,Stage 3
- ;;^UTILITY(U,$J,358.3,3071,1,4,0)
- ;;=4^L89.023
- ;;^UTILITY(U,$J,358.3,3071,2)
- ;;=^5009345
- ;;^UTILITY(U,$J,358.3,3072,0)
- ;;=L89.024^^13^127^16
- ;;^UTILITY(U,$J,358.3,3072,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3072,1,3,0)
- ;;=3^Pressure Ulcer Left Elbow,Stage 4
- ;;^UTILITY(U,$J,358.3,3072,1,4,0)
- ;;=4^L89.024
- ;;^UTILITY(U,$J,358.3,3072,2)
- ;;=^5009346
- ;;^UTILITY(U,$J,358.3,3073,0)
- ;;=L89.029^^13^127^17
- ;;^UTILITY(U,$J,358.3,3073,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3073,1,3,0)
- ;;=3^Pressure Ulcer Left Elbow,Stage Unspec
- ;;^UTILITY(U,$J,358.3,3073,1,4,0)
- ;;=4^L89.029
- ;;^UTILITY(U,$J,358.3,3073,2)
- ;;=^5133649
- ;;^UTILITY(U,$J,358.3,3074,0)
- ;;=L89.119^^13^127^83
- ;;^UTILITY(U,$J,358.3,3074,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3074,1,3,0)
- ;;=3^Pressure Ulcer Right Upper Back,Stage Unspec
- ;;^UTILITY(U,$J,358.3,3074,1,4,0)
- ;;=4^L89.119
- ;;^UTILITY(U,$J,358.3,3074,2)
- ;;=^5009357
- ;;^UTILITY(U,$J,358.3,3075,0)
- ;;=L89.110^^13^127^84
- ;;^UTILITY(U,$J,358.3,3075,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3075,1,3,0)
- ;;=3^Pressure Ulcer Right Upper Back,Unstageable
- ;;^UTILITY(U,$J,358.3,3075,1,4,0)
- ;;=4^L89.110
- ;;^UTILITY(U,$J,358.3,3075,2)
- ;;=^5009352
- ;;^UTILITY(U,$J,358.3,3076,0)
- ;;=L89.111^^13^127^79
- ;;^UTILITY(U,$J,358.3,3076,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3076,1,3,0)
- ;;=3^Pressure Ulcer Right Upper Back,Stage 1
- ;;^UTILITY(U,$J,358.3,3076,1,4,0)
- ;;=4^L89.111
- ;;^UTILITY(U,$J,358.3,3076,2)
- ;;=^5009353
- ;;^UTILITY(U,$J,358.3,3077,0)
- ;;=L89.112^^13^127^80
- ;;^UTILITY(U,$J,358.3,3077,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3077,1,3,0)
- ;;=3^Pressure Ulcer Right Upper Back,Stage 2
- ;;^UTILITY(U,$J,358.3,3077,1,4,0)
- ;;=4^L89.112
- ;;^UTILITY(U,$J,358.3,3077,2)
- ;;=^5009354
- ;;^UTILITY(U,$J,358.3,3078,0)
- ;;=L89.113^^13^127^81
- ;;^UTILITY(U,$J,358.3,3078,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3078,1,3,0)
- ;;=3^Pressure Ulcer Right Upper Back,Stage 3
- ;;^UTILITY(U,$J,358.3,3078,1,4,0)
- ;;=4^L89.113
- ;;^UTILITY(U,$J,358.3,3078,2)
- ;;=^5009355
- ;;^UTILITY(U,$J,358.3,3079,0)
- ;;=L89.114^^13^127^82
- ;;^UTILITY(U,$J,358.3,3079,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3079,1,3,0)
- ;;=3^Pressure Ulcer Right Upper Back,Stage 4
- ;;^UTILITY(U,$J,358.3,3079,1,4,0)
- ;;=4^L89.114
- ;;^UTILITY(U,$J,358.3,3079,2)
- ;;=^5009356
- ;;^UTILITY(U,$J,358.3,3080,0)
- ;;=L89.129^^13^127^41
- ;;^UTILITY(U,$J,358.3,3080,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,673,1,3,0)
+ ;;=3^Acute Kidney Failure NEC

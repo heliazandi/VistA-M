@@ -1,110 +1,140 @@
-IBDEI11I ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI11I ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18637,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18637,1,2,0)
- ;;=2^Incision and Drainage of abscess; complicated or multiple
- ;;^UTILITY(U,$J,358.3,18637,1,3,0)
- ;;=3^10061
- ;;^UTILITY(U,$J,358.3,18638,0)
- ;;=10120^^122^1188^3
- ;;^UTILITY(U,$J,358.3,18638,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18638,1,2,0)
- ;;=2^Incision & Removal foreign body, subcutaneous tissues; simple
- ;;^UTILITY(U,$J,358.3,18638,1,3,0)
- ;;=3^10120
- ;;^UTILITY(U,$J,358.3,18639,0)
- ;;=10121^^122^1188^4
- ;;^UTILITY(U,$J,358.3,18639,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18639,1,2,0)
- ;;=2^Incision & Removal foreign body, subcutaneous tissues; complicated
- ;;^UTILITY(U,$J,358.3,18639,1,3,0)
- ;;=3^10121
- ;;^UTILITY(U,$J,358.3,18640,0)
- ;;=10140^^122^1188^5
- ;;^UTILITY(U,$J,358.3,18640,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18640,1,2,0)
- ;;=2^Incision and Drainage of hematoma, seroma or fluid collection
- ;;^UTILITY(U,$J,358.3,18640,1,3,0)
- ;;=3^10140
- ;;^UTILITY(U,$J,358.3,18641,0)
- ;;=10160^^122^1188^6
- ;;^UTILITY(U,$J,358.3,18641,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18641,1,2,0)
- ;;=2^Puncture aspiration of abscess, hemtoma, bulla, or cyst
- ;;^UTILITY(U,$J,358.3,18641,1,3,0)
- ;;=3^10160
- ;;^UTILITY(U,$J,358.3,18642,0)
- ;;=10180^^122^1188^7
- ;;^UTILITY(U,$J,358.3,18642,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18642,1,2,0)
- ;;=2^Incision and Drainage, complex, postoperative wound infection
- ;;^UTILITY(U,$J,358.3,18642,1,3,0)
- ;;=3^10180
- ;;^UTILITY(U,$J,358.3,18643,0)
- ;;=11000^^122^1189^1
- ;;^UTILITY(U,$J,358.3,18643,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18643,1,2,0)
- ;;=2^Debr of extensive eczematous 10%
- ;;^UTILITY(U,$J,358.3,18643,1,3,0)
- ;;=3^11000
- ;;^UTILITY(U,$J,358.3,18644,0)
- ;;=11010^^122^1189^3
- ;;^UTILITY(U,$J,358.3,18644,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18644,1,2,0)
- ;;=2^Debridement including removal of foreign material associated w/open fracture(s) &/or dislocation(s); skin and subcutaneous tissues
- ;;^UTILITY(U,$J,358.3,18644,1,3,0)
- ;;=3^11010
- ;;^UTILITY(U,$J,358.3,18645,0)
- ;;=11011^^122^1189^4
- ;;^UTILITY(U,$J,358.3,18645,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18645,1,2,0)
- ;;=2^Debridement including removal of foreign material associated w/ open FX(s) and/or dislocation(s);skin, subcutaneous tissue, muscle fascia, & muscle
- ;;^UTILITY(U,$J,358.3,18645,1,3,0)
- ;;=3^11011
- ;;^UTILITY(U,$J,358.3,18646,0)
- ;;=11042^^122^1189^8
- ;;^UTILITY(U,$J,358.3,18646,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18646,1,2,0)
- ;;=2^Debridement; Skin & Subcutaneous Tissue
- ;;^UTILITY(U,$J,358.3,18646,1,3,0)
- ;;=3^11042
- ;;^UTILITY(U,$J,358.3,18647,0)
- ;;=11043^^122^1189^9
- ;;^UTILITY(U,$J,358.3,18647,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18647,1,2,0)
- ;;=2^Debridement; Skin, Subcutaneous Tissue & Muscle 
- ;;^UTILITY(U,$J,358.3,18647,1,3,0)
- ;;=3^11043
- ;;^UTILITY(U,$J,358.3,18648,0)
- ;;=11044^^122^1189^10
- ;;^UTILITY(U,$J,358.3,18648,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18648,1,2,0)
- ;;=2^Debridement; Skin, Subcutaneous Tissue, Muscle & Bone
- ;;^UTILITY(U,$J,358.3,18648,1,3,0)
- ;;=3^11044
- ;;^UTILITY(U,$J,358.3,18649,0)
- ;;=11012^^122^1189^5^^^^1
- ;;^UTILITY(U,$J,358.3,18649,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18649,1,2,0)
- ;;=2^Debridement incl. removal of foreign material associate w/ openFx(s) &/or dislocation(s); skin, subcutaneous tissue, muscle fascia, muscle & bone
- ;;^UTILITY(U,$J,358.3,18649,1,3,0)
- ;;=3^11012
- ;;^UTILITY(U,$J,358.3,18650,0)
- ;;=11001^^122^1189^2^^^^1
- ;;^UTILITY(U,$J,358.3,18650,1,0)
- ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,18325,1,4,0)
+ ;;=4^796.4
+ ;;^UTILITY(U,$J,358.3,18325,2)
+ ;;=^273466
+ ;;^UTILITY(U,$J,358.3,18326,0)
+ ;;=794.9^^99^1168^1
+ ;;^UTILITY(U,$J,358.3,18326,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18326,1,3,0)
+ ;;=3^ABN FUNCTION STUDY NEC
+ ;;^UTILITY(U,$J,358.3,18326,1,4,0)
+ ;;=4^794.9
+ ;;^UTILITY(U,$J,358.3,18326,2)
+ ;;=^273451
+ ;;^UTILITY(U,$J,358.3,18327,0)
+ ;;=790.29^^99^1168^2
+ ;;^UTILITY(U,$J,358.3,18327,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18327,1,3,0)
+ ;;=3^ABNORMAL GLUCOSE NOS
+ ;;^UTILITY(U,$J,358.3,18327,1,4,0)
+ ;;=4^790.29
+ ;;^UTILITY(U,$J,358.3,18327,2)
+ ;;=^329955
+ ;;^UTILITY(U,$J,358.3,18328,0)
+ ;;=790.6^^99^1168^4
+ ;;^UTILITY(U,$J,358.3,18328,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18328,1,3,0)
+ ;;=3^ABNORMAL LIVER FUNCTION TEST
+ ;;^UTILITY(U,$J,358.3,18328,1,4,0)
+ ;;=4^790.6
+ ;;^UTILITY(U,$J,358.3,18328,2)
+ ;;=^87228
+ ;;^UTILITY(U,$J,358.3,18329,0)
+ ;;=793.99^^99^1168^5
+ ;;^UTILITY(U,$J,358.3,18329,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18329,1,3,0)
+ ;;=3^ABNORMAL X-RAY
+ ;;^UTILITY(U,$J,358.3,18329,1,4,0)
+ ;;=4^793.99
+ ;;^UTILITY(U,$J,358.3,18329,2)
+ ;;=^334168
+ ;;^UTILITY(U,$J,358.3,18330,0)
+ ;;=V58.83^^99^1168^37
+ ;;^UTILITY(U,$J,358.3,18330,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18330,1,3,0)
+ ;;=3^THERAP. DRUG MONITORING
+ ;;^UTILITY(U,$J,358.3,18330,1,4,0)
+ ;;=4^V58.83
+ ;;^UTILITY(U,$J,358.3,18330,2)
+ ;;=^322076
+ ;;^UTILITY(U,$J,358.3,18331,0)
+ ;;=V58.61^^99^1168^24
+ ;;^UTILITY(U,$J,358.3,18331,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18331,1,3,0)
+ ;;=3^L/T (CURRENT) USE - ANTICOAG
+ ;;^UTILITY(U,$J,358.3,18331,1,4,0)
+ ;;=4^V58.61
+ ;;^UTILITY(U,$J,358.3,18331,2)
+ ;;=^303459
+ ;;^UTILITY(U,$J,358.3,18332,0)
+ ;;=V68.1^^99^1168^23
+ ;;^UTILITY(U,$J,358.3,18332,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18332,1,3,0)
+ ;;=3^ISSUE REPEAT PRESCRIPT
+ ;;^UTILITY(U,$J,358.3,18332,1,4,0)
+ ;;=4^V68.1
+ ;;^UTILITY(U,$J,358.3,18332,2)
+ ;;=^295585
+ ;;^UTILITY(U,$J,358.3,18333,0)
+ ;;=V45.89^^99^1168^32
+ ;;^UTILITY(U,$J,358.3,18333,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18333,1,3,0)
+ ;;=3^POSTSURGICAL CALL
+ ;;^UTILITY(U,$J,358.3,18333,1,4,0)
+ ;;=4^V45.89
+ ;;^UTILITY(U,$J,358.3,18333,2)
+ ;;=^276679
+ ;;^UTILITY(U,$J,358.3,18334,0)
+ ;;=V72.84^^99^1168^33
+ ;;^UTILITY(U,$J,358.3,18334,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18334,1,3,0)
+ ;;=3^PRE-OP CALL
+ ;;^UTILITY(U,$J,358.3,18334,1,4,0)
+ ;;=4^V72.84
+ ;;^UTILITY(U,$J,358.3,18334,2)
+ ;;=^295830
+ ;;^UTILITY(U,$J,358.3,18335,0)
+ ;;=V62.82^^99^1168^8
+ ;;^UTILITY(U,$J,358.3,18335,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18335,1,3,0)
+ ;;=3^BEREAVEMENT-DEATH/DYING ISSUES
+ ;;^UTILITY(U,$J,358.3,18335,1,4,0)
+ ;;=4^V62.82
+ ;;^UTILITY(U,$J,358.3,18335,2)
+ ;;=^123500
+ ;;^UTILITY(U,$J,358.3,18336,0)
+ ;;=V11.4^^99^1168^17
+ ;;^UTILITY(U,$J,358.3,18336,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18336,1,3,0)
+ ;;=3^HX COMBAT & OPERATION STRESS
+ ;;^UTILITY(U,$J,358.3,18336,1,4,0)
+ ;;=4^V11.4
+ ;;^UTILITY(U,$J,358.3,18336,2)
+ ;;=^339674
+ ;;^UTILITY(U,$J,358.3,18337,0)
+ ;;=V68.09^^99^1168^6
+ ;;^UTILITY(U,$J,358.3,18337,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18337,1,3,0)
+ ;;=3^ADVANCE DIRECTIVE
+ ;;^UTILITY(U,$J,358.3,18337,1,4,0)
+ ;;=4^V68.09
+ ;;^UTILITY(U,$J,358.3,18337,2)
+ ;;=^335321
+ ;;^UTILITY(U,$J,358.3,18338,0)
+ ;;=V63.2^^99^1168^7
+ ;;^UTILITY(U,$J,358.3,18338,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18338,1,3,0)
+ ;;=3^AWAITING ADM TO OTH FACILITY
+ ;;^UTILITY(U,$J,358.3,18338,1,4,0)
+ ;;=4^V63.2
+ ;;^UTILITY(U,$J,358.3,18338,2)
+ ;;=^295554
+ ;;^UTILITY(U,$J,358.3,18339,0)
+ ;;=V65.8^^99^1168^9

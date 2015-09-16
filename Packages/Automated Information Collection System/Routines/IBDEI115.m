@@ -1,126 +1,138 @@
-IBDEI115 ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI115 ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18467,0)
- ;;=110.4^^121^1169^15
- ;;^UTILITY(U,$J,358.3,18467,1,0)
+ ;;^UTILITY(U,$J,358.3,18139,0)
+ ;;=785.2^^96^1155^34
+ ;;^UTILITY(U,$J,358.3,18139,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18467,1,3,0)
- ;;=3^110.4
- ;;^UTILITY(U,$J,358.3,18467,1,5,0)
- ;;=5^Dermatophytosis of foot
- ;;^UTILITY(U,$J,358.3,18467,2)
- ;;=^33168
- ;;^UTILITY(U,$J,358.3,18468,0)
- ;;=250.00^^121^1169^4
- ;;^UTILITY(U,$J,358.3,18468,1,0)
+ ;;^UTILITY(U,$J,358.3,18139,1,4,0)
+ ;;=4^785.2
+ ;;^UTILITY(U,$J,358.3,18139,1,5,0)
+ ;;=5^Cardiac murmurs, undiagnosed
+ ;;^UTILITY(U,$J,358.3,18139,2)
+ ;;=^295854
+ ;;^UTILITY(U,$J,358.3,18140,0)
+ ;;=786.50^^96^1155^37
+ ;;^UTILITY(U,$J,358.3,18140,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18468,1,3,0)
- ;;=3^250.00
- ;;^UTILITY(U,$J,358.3,18468,1,5,0)
- ;;=5^DM II w/o complication 
- ;;^UTILITY(U,$J,358.3,18468,2)
- ;;=^33605
- ;;^UTILITY(U,$J,358.3,18469,0)
- ;;=250.01^^121^1169^3
- ;;^UTILITY(U,$J,358.3,18469,1,0)
+ ;;^UTILITY(U,$J,358.3,18140,1,4,0)
+ ;;=4^786.50
+ ;;^UTILITY(U,$J,358.3,18140,1,5,0)
+ ;;=5^Chest pain/Discomfort (nonsp) chest pain diff from discomfort
+ ;;^UTILITY(U,$J,358.3,18140,2)
+ ;;=^22485
+ ;;^UTILITY(U,$J,358.3,18141,0)
+ ;;=786.51^^96^1155^121
+ ;;^UTILITY(U,$J,358.3,18141,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18469,1,3,0)
- ;;=3^250.01
- ;;^UTILITY(U,$J,358.3,18469,1,5,0)
- ;;=5^DM I w/o complication 
- ;;^UTILITY(U,$J,358.3,18469,2)
- ;;=^33586
- ;;^UTILITY(U,$J,358.3,18470,0)
- ;;=838.00^^121^1169^20
- ;;^UTILITY(U,$J,358.3,18470,1,0)
+ ;;^UTILITY(U,$J,358.3,18141,1,4,0)
+ ;;=4^786.51
+ ;;^UTILITY(U,$J,358.3,18141,1,5,0)
+ ;;=5^Precordial Pain
+ ;;^UTILITY(U,$J,358.3,18141,2)
+ ;;=Precordial Pain^276877
+ ;;^UTILITY(U,$J,358.3,18142,0)
+ ;;=786.2^^96^1155^43
+ ;;^UTILITY(U,$J,358.3,18142,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18470,1,3,0)
- ;;=3^838.00
- ;;^UTILITY(U,$J,358.3,18470,1,5,0)
- ;;=5^Dislocation of foot, closed dislocation; foot, unspecified
- ;;^UTILITY(U,$J,358.3,18470,2)
- ;;=^274391
- ;;^UTILITY(U,$J,358.3,18471,0)
- ;;=838.01^^121^1169^21
- ;;^UTILITY(U,$J,358.3,18471,1,0)
+ ;;^UTILITY(U,$J,358.3,18142,1,4,0)
+ ;;=4^786.2
+ ;;^UTILITY(U,$J,358.3,18142,1,5,0)
+ ;;=5^Cough
+ ;;^UTILITY(U,$J,358.3,18142,2)
+ ;;=Cough^28905
+ ;;^UTILITY(U,$J,358.3,18143,0)
+ ;;=396.0^^96^1155^40
+ ;;^UTILITY(U,$J,358.3,18143,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18471,1,3,0)
- ;;=3^838.01
- ;;^UTILITY(U,$J,358.3,18471,1,5,0)
- ;;=5^Dislocation of foot, closed dislocation; tarsal(bone), joint unspecified 
- ;;^UTILITY(U,$J,358.3,18471,2)
- ;;=^274394
- ;;^UTILITY(U,$J,358.3,18472,0)
- ;;=838.02^^121^1169^22
- ;;^UTILITY(U,$J,358.3,18472,1,0)
+ ;;^UTILITY(U,$J,358.3,18143,1,4,0)
+ ;;=4^396.0
+ ;;^UTILITY(U,$J,358.3,18143,1,5,0)
+ ;;=5^Combined Aortic&Mitral Valve stenosis
+ ;;^UTILITY(U,$J,358.3,18143,2)
+ ;;=^269580
+ ;;^UTILITY(U,$J,358.3,18144,0)
+ ;;=786.09^^96^1155^55
+ ;;^UTILITY(U,$J,358.3,18144,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18472,1,3,0)
- ;;=3^838.02
- ;;^UTILITY(U,$J,358.3,18472,1,5,0)
- ;;=5^Dislocation of foot, closed dislocation; midtarsal (joint)
- ;;^UTILITY(U,$J,358.3,18472,2)
- ;;=^274395
- ;;^UTILITY(U,$J,358.3,18473,0)
- ;;=838.03^^121^1169^23
- ;;^UTILITY(U,$J,358.3,18473,1,0)
+ ;;^UTILITY(U,$J,358.3,18144,1,4,0)
+ ;;=4^786.09
+ ;;^UTILITY(U,$J,358.3,18144,1,5,0)
+ ;;=5^Dyspnea
+ ;;^UTILITY(U,$J,358.3,18144,2)
+ ;;=Dyspnea^87547
+ ;;^UTILITY(U,$J,358.3,18145,0)
+ ;;=786.8^^96^1155^76
+ ;;^UTILITY(U,$J,358.3,18145,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18473,1,3,0)
- ;;=3^838.03
- ;;^UTILITY(U,$J,358.3,18473,1,5,0)
- ;;=5^Dislocation of foot, closed dislocation; tarsometatarsal (joint)
- ;;^UTILITY(U,$J,358.3,18473,2)
- ;;=^274396
- ;;^UTILITY(U,$J,358.3,18474,0)
- ;;=838.04^^121^1169^24
- ;;^UTILITY(U,$J,358.3,18474,1,0)
+ ;;^UTILITY(U,$J,358.3,18145,1,4,0)
+ ;;=4^786.8
+ ;;^UTILITY(U,$J,358.3,18145,1,5,0)
+ ;;=5^Hiccough
+ ;;^UTILITY(U,$J,358.3,18145,2)
+ ;;=Hiccough^57197
+ ;;^UTILITY(U,$J,358.3,18146,0)
+ ;;=786.01^^96^1155^80
+ ;;^UTILITY(U,$J,358.3,18146,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18474,1,3,0)
- ;;=3^838.04
- ;;^UTILITY(U,$J,358.3,18474,1,5,0)
- ;;=5^Dislocation of foot, closed dislocation; metatarsal(bone), joint unspecified
- ;;^UTILITY(U,$J,358.3,18474,2)
- ;;=^274397
- ;;^UTILITY(U,$J,358.3,18475,0)
- ;;=838.05^^121^1169^25
- ;;^UTILITY(U,$J,358.3,18475,1,0)
+ ;;^UTILITY(U,$J,358.3,18146,1,4,0)
+ ;;=4^786.01
+ ;;^UTILITY(U,$J,358.3,18146,1,5,0)
+ ;;=5^Hyperventilation
+ ;;^UTILITY(U,$J,358.3,18146,2)
+ ;;=Hyperventilation^60480
+ ;;^UTILITY(U,$J,358.3,18147,0)
+ ;;=786.6^^96^1155^99
+ ;;^UTILITY(U,$J,358.3,18147,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18475,1,3,0)
- ;;=3^838.05
- ;;^UTILITY(U,$J,358.3,18475,1,5,0)
- ;;=5^Dislocation of foot, closed dislocation; metatarsophalangeal(joint)
- ;;^UTILITY(U,$J,358.3,18475,2)
- ;;=^274398
- ;;^UTILITY(U,$J,358.3,18476,0)
- ;;=838.06^^121^1169^26
- ;;^UTILITY(U,$J,358.3,18476,1,0)
+ ;;^UTILITY(U,$J,358.3,18147,1,4,0)
+ ;;=4^786.6
+ ;;^UTILITY(U,$J,358.3,18147,1,5,0)
+ ;;=5^Mass, Lump of chest
+ ;;^UTILITY(U,$J,358.3,18147,2)
+ ;;=^273380
+ ;;^UTILITY(U,$J,358.3,18148,0)
+ ;;=786.02^^96^1155^113
+ ;;^UTILITY(U,$J,358.3,18148,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18476,1,3,0)
- ;;=3^838.06
- ;;^UTILITY(U,$J,358.3,18476,1,5,0)
- ;;=5^Dislocation of foot, closed dislocation; interphalangeal(joint) foot
- ;;^UTILITY(U,$J,358.3,18476,2)
- ;;=^274399
- ;;^UTILITY(U,$J,358.3,18477,0)
- ;;=838.09^^121^1169^27
- ;;^UTILITY(U,$J,358.3,18477,1,0)
+ ;;^UTILITY(U,$J,358.3,18148,1,4,0)
+ ;;=4^786.02
+ ;;^UTILITY(U,$J,358.3,18148,1,5,0)
+ ;;=5^Orthopnea
+ ;;^UTILITY(U,$J,358.3,18148,2)
+ ;;=Orthopnea^186737
+ ;;^UTILITY(U,$J,358.3,18149,0)
+ ;;=786.52^^96^1155^114
+ ;;^UTILITY(U,$J,358.3,18149,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18477,1,3,0)
- ;;=3^838.09
- ;;^UTILITY(U,$J,358.3,18477,1,5,0)
- ;;=5^Dislocation of foot, closed dislocation; other, toe(s)
- ;;^UTILITY(U,$J,358.3,18477,2)
- ;;=^274400
- ;;^UTILITY(U,$J,358.3,18478,0)
- ;;=12.5^1^121^1169^16^-DIABETES MELLITUS^1^1
- ;;^UTILITY(U,$J,358.3,18478,1,0)
+ ;;^UTILITY(U,$J,358.3,18149,1,4,0)
+ ;;=4^786.52
+ ;;^UTILITY(U,$J,358.3,18149,1,5,0)
+ ;;=5^Painful Respiration
+ ;;^UTILITY(U,$J,358.3,18149,2)
+ ;;=^89126
+ ;;^UTILITY(U,$J,358.3,18150,0)
+ ;;=785.1^^96^1155^116
+ ;;^UTILITY(U,$J,358.3,18150,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18478,1,3,0)
- ;;=3
- ;;^UTILITY(U,$J,358.3,18478,1,5,0)
- ;;=5
- ;;^UTILITY(U,$J,358.3,18479,0)
- ;;=64.5^1^121^1169^19^-Dislocation^1^1
- ;;^UTILITY(U,$J,358.3,18479,1,0)
+ ;;^UTILITY(U,$J,358.3,18150,1,4,0)
+ ;;=4^785.1
+ ;;^UTILITY(U,$J,358.3,18150,1,5,0)
+ ;;=5^Palpitations
+ ;;^UTILITY(U,$J,358.3,18150,2)
+ ;;=Palpitations^89281
+ ;;^UTILITY(U,$J,358.3,18151,0)
+ ;;=786.4^^96^1155^131
+ ;;^UTILITY(U,$J,358.3,18151,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18151,1,4,0)
+ ;;=4^786.4
+ ;;^UTILITY(U,$J,358.3,18151,1,5,0)
+ ;;=5^Sputum production, abnormal
+ ;;^UTILITY(U,$J,358.3,18151,2)
+ ;;=^273377
+ ;;^UTILITY(U,$J,358.3,18152,0)
+ ;;=786.1^^96^1155^132
+ ;;^UTILITY(U,$J,358.3,18152,1,0)
  ;;=^358.31IA^5^2

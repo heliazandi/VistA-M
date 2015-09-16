@@ -1,110 +1,142 @@
-IBDEI11Q ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI11Q ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18746,1,3,0)
- ;;=3^27686
- ;;^UTILITY(U,$J,358.3,18747,0)
- ;;=27685^^122^1201^4^^^^1
- ;;^UTILITY(U,$J,358.3,18747,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18747,1,2,0)
- ;;=2^Lengthening or shortening of tendon, leg or ankle; single tendon
- ;;^UTILITY(U,$J,358.3,18747,1,3,0)
- ;;=3^27685
- ;;^UTILITY(U,$J,358.3,18748,0)
- ;;=27695^^122^1201^7^^^^1
- ;;^UTILITY(U,$J,358.3,18748,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18748,1,2,0)
- ;;=2^Repair, primary, disrupted ligament, ankle; both collateral ligaments
- ;;^UTILITY(U,$J,358.3,18748,1,3,0)
- ;;=3^27695
- ;;^UTILITY(U,$J,358.3,18749,0)
- ;;=27698^^122^1201^8^^^^1
- ;;^UTILITY(U,$J,358.3,18749,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18749,1,2,0)
- ;;=2^Repair, secondary, disrupted ligament ankle, collateral
- ;;^UTILITY(U,$J,358.3,18749,1,3,0)
- ;;=3^27698
- ;;^UTILITY(U,$J,358.3,18750,0)
- ;;=28200^^122^1201^9^^^^1
- ;;^UTILITY(U,$J,358.3,18750,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18750,1,2,0)
- ;;=2^Repair, tendon, flexor, foot; primary or secondary, without free graft, each tendon
- ;;^UTILITY(U,$J,358.3,18750,1,3,0)
- ;;=3^28200
- ;;^UTILITY(U,$J,358.3,18751,0)
- ;;=28202^^122^1201^10^^^^1
- ;;^UTILITY(U,$J,358.3,18751,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18751,1,2,0)
- ;;=2^Repair, tendon, flexor, foot; secondarywith free graft, each tendon (includes obtaining graft), 
- ;;^UTILITY(U,$J,358.3,18751,1,3,0)
- ;;=3^28202
- ;;^UTILITY(U,$J,358.3,18752,0)
- ;;=28210^^122^1201^12^^^^1
- ;;^UTILITY(U,$J,358.3,18752,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18752,1,2,0)
- ;;=2^Repair, tendon, extensor, foot; secondary with free graft, each tendon (includes obtaining graft) 
- ;;^UTILITY(U,$J,358.3,18752,1,3,0)
- ;;=3^28210
- ;;^UTILITY(U,$J,358.3,18753,0)
- ;;=28208^^122^1201^11^^^^1
- ;;^UTILITY(U,$J,358.3,18753,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18753,1,2,0)
- ;;=2^Repair, tendon, extensor, foot; primary or secondary, each tendon
- ;;^UTILITY(U,$J,358.3,18753,1,3,0)
- ;;=3^28208
- ;;^UTILITY(U,$J,358.3,18754,0)
- ;;=28230^^122^1201^13^^^^1
- ;;^UTILITY(U,$J,358.3,18754,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18754,1,2,0)
- ;;=2^Tenotomy, open, tendon flexor; foot, single or multiple tendon(s)(separate procedure)
- ;;^UTILITY(U,$J,358.3,18754,1,3,0)
- ;;=3^28230
- ;;^UTILITY(U,$J,358.3,18755,0)
- ;;=28232^^122^1201^14^^^^1
- ;;^UTILITY(U,$J,358.3,18755,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18755,1,2,0)
- ;;=2^Tenotomy, open, tendon flexor; toe, single tendon (separate procedure) 
- ;;^UTILITY(U,$J,358.3,18755,1,3,0)
- ;;=3^28232
- ;;^UTILITY(U,$J,358.3,18756,0)
- ;;=28234^^122^1201^15^^^^1
- ;;^UTILITY(U,$J,358.3,18756,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18756,1,2,0)
- ;;=2^Tenotomy, open, extensor, foot or toe, each tendon
- ;;^UTILITY(U,$J,358.3,18756,1,3,0)
- ;;=3^28234
- ;;^UTILITY(U,$J,358.3,18757,0)
- ;;=28270^^122^1201^16^^^^1
- ;;^UTILITY(U,$J,358.3,18757,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18757,1,2,0)
- ;;=2^Capsulotomy; metatarsophalangeal joint, with or without tenorrhaphy, each joint (separate procedure) 
- ;;^UTILITY(U,$J,358.3,18757,1,3,0)
- ;;=3^28270
- ;;^UTILITY(U,$J,358.3,18758,0)
- ;;=28272^^122^1201^17^^^^1
- ;;^UTILITY(U,$J,358.3,18758,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18758,1,2,0)
- ;;=2^Capsulotomy; interphalangeal joint, each joint
- ;;^UTILITY(U,$J,358.3,18758,1,3,0)
- ;;=3^28272
- ;;^UTILITY(U,$J,358.3,18759,0)
- ;;=28285^^122^1201^18^^^^1
- ;;^UTILITY(U,$J,358.3,18759,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18759,1,2,0)
- ;;=2^Correction, hammertoe
- ;;^UTILITY(U,$J,358.3,18759,1,3,0)
- ;;=3^28285
+ ;;^UTILITY(U,$J,358.3,18445,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18445,1,4,0)
+ ;;=4^EMPHYSEMATOUS BLEB
+ ;;^UTILITY(U,$J,358.3,18445,1,5,0)
+ ;;=5^492.0
+ ;;^UTILITY(U,$J,358.3,18445,2)
+ ;;=^265486
+ ;;^UTILITY(U,$J,358.3,18446,0)
+ ;;=162.8^^102^1183^2
+ ;;^UTILITY(U,$J,358.3,18446,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18446,1,4,0)
+ ;;=4^CA BRONCHUS/LUNG NEC
+ ;;^UTILITY(U,$J,358.3,18446,1,5,0)
+ ;;=5^162.8
+ ;;^UTILITY(U,$J,358.3,18446,2)
+ ;;=^267139
+ ;;^UTILITY(U,$J,358.3,18447,0)
+ ;;=163.8^^102^1183^4
+ ;;^UTILITY(U,$J,358.3,18447,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18447,1,4,0)
+ ;;=4^CA PLEURA NEC
+ ;;^UTILITY(U,$J,358.3,18447,1,5,0)
+ ;;=5^163.8
+ ;;^UTILITY(U,$J,358.3,18447,2)
+ ;;=^267143
+ ;;^UTILITY(U,$J,358.3,18448,0)
+ ;;=164.2^^102^1183^1
+ ;;^UTILITY(U,$J,358.3,18448,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18448,1,4,0)
+ ;;=4^CA ANT MEDIASTINUM
+ ;;^UTILITY(U,$J,358.3,18448,1,5,0)
+ ;;=5^164.2
+ ;;^UTILITY(U,$J,358.3,18448,2)
+ ;;=^267147
+ ;;^UTILITY(U,$J,358.3,18449,0)
+ ;;=164.3^^102^1183^5
+ ;;^UTILITY(U,$J,358.3,18449,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18449,1,4,0)
+ ;;=4^CA POST MEDIASTINUM
+ ;;^UTILITY(U,$J,358.3,18449,1,5,0)
+ ;;=5^164.3
+ ;;^UTILITY(U,$J,358.3,18449,2)
+ ;;=^267148
+ ;;^UTILITY(U,$J,358.3,18450,0)
+ ;;=197.3^^102^1183^3
+ ;;^UTILITY(U,$J,358.3,18450,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18450,1,4,0)
+ ;;=4^CA METS RESP ORGANS
+ ;;^UTILITY(U,$J,358.3,18450,1,5,0)
+ ;;=5^197.3
+ ;;^UTILITY(U,$J,358.3,18450,2)
+ ;;=^267325
+ ;;^UTILITY(U,$J,358.3,18451,0)
+ ;;=745.4^^102^1183^6
+ ;;^UTILITY(U,$J,358.3,18451,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18451,1,4,0)
+ ;;=4^VENTRICULAR SEPT DEFECT
+ ;;^UTILITY(U,$J,358.3,18451,1,5,0)
+ ;;=5^745.4
+ ;;^UTILITY(U,$J,358.3,18451,2)
+ ;;=^125970
+ ;;^UTILITY(U,$J,358.3,18452,0)
+ ;;=416.0^^102^1184^2
+ ;;^UTILITY(U,$J,358.3,18452,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18452,1,4,0)
+ ;;=4^HTN PRIM PULM
+ ;;^UTILITY(U,$J,358.3,18452,1,5,0)
+ ;;=5^416.0
+ ;;^UTILITY(U,$J,358.3,18452,2)
+ ;;=^265310
+ ;;^UTILITY(U,$J,358.3,18453,0)
+ ;;=416.1^^102^1184^1
+ ;;^UTILITY(U,$J,358.3,18453,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18453,1,4,0)
+ ;;=4^HEART DIS DYPHOSCOLIOTIC
+ ;;^UTILITY(U,$J,358.3,18453,1,5,0)
+ ;;=5^416.1
+ ;;^UTILITY(U,$J,358.3,18453,2)
+ ;;=^265120
+ ;;^UTILITY(U,$J,358.3,18454,0)
+ ;;=416.2^^102^1184^5
+ ;;^UTILITY(U,$J,358.3,18454,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18454,1,4,0)
+ ;;=4^PULMONARY EMBOLISM CHR
+ ;;^UTILITY(U,$J,358.3,18454,1,5,0)
+ ;;=5^416.2
+ ;;^UTILITY(U,$J,358.3,18454,2)
+ ;;=^338238
+ ;;^UTILITY(U,$J,358.3,18455,0)
+ ;;=416.8^^102^1184^3
+ ;;^UTILITY(U,$J,358.3,18455,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18455,1,4,0)
+ ;;=4^PULM HEART DIS CHR NEC
+ ;;^UTILITY(U,$J,358.3,18455,1,5,0)
+ ;;=5^416.8
+ ;;^UTILITY(U,$J,358.3,18455,2)
+ ;;=^269684
+ ;;^UTILITY(U,$J,358.3,18456,0)
+ ;;=416.9^^102^1184^4
+ ;;^UTILITY(U,$J,358.3,18456,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18456,1,4,0)
+ ;;=4^PULM HEART DIS CHR NOS
+ ;;^UTILITY(U,$J,358.3,18456,1,5,0)
+ ;;=5^416.9
+ ;;^UTILITY(U,$J,358.3,18456,2)
+ ;;=^24430
+ ;;^UTILITY(U,$J,358.3,18457,0)
+ ;;=283.9^^102^1185^1
+ ;;^UTILITY(U,$J,358.3,18457,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18457,1,4,0)
+ ;;=4^ACQ HEMOLYTIC ANEMIA NOS
+ ;;^UTILITY(U,$J,358.3,18457,1,5,0)
+ ;;=5^283.9
+ ;;^UTILITY(U,$J,358.3,18457,2)
+ ;;=^7071
+ ;;^UTILITY(U,$J,358.3,18458,0)
+ ;;=284.11^^102^1185^2
+ ;;^UTILITY(U,$J,358.3,18458,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18458,1,4,0)
+ ;;=4^ANTIN CHEMO INDCD PANCYT
+ ;;^UTILITY(U,$J,358.3,18458,1,5,0)
+ ;;=5^284.11
+ ;;^UTILITY(U,$J,358.3,18458,2)
+ ;;=^340499

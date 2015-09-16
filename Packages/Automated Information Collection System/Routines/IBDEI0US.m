@@ -1,138 +1,120 @@
-IBDEI0US ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0US ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15217,2)
- ;;=^268188
- ;;^UTILITY(U,$J,358.3,15218,0)
- ;;=303.92^^93^914^4
- ;;^UTILITY(U,$J,358.3,15218,1,0)
+ ;;^UTILITY(U,$J,358.3,14955,1,4,0)
+ ;;=4^414.02
+ ;;^UTILITY(U,$J,358.3,14955,1,5,0)
+ ;;=5^CAD, Occlusion of Venous Graft
+ ;;^UTILITY(U,$J,358.3,14955,2)
+ ;;=CAD, Occlusion of Venous Graft^303282
+ ;;^UTILITY(U,$J,358.3,14956,0)
+ ;;=459.10^^81^936^73
+ ;;^UTILITY(U,$J,358.3,14956,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15218,1,2,0)
- ;;=2^303.92
- ;;^UTILITY(U,$J,358.3,15218,1,5,0)
- ;;=5^Alc Dep, Episodic
- ;;^UTILITY(U,$J,358.3,15218,2)
- ;;=^268189
- ;;^UTILITY(U,$J,358.3,15219,0)
- ;;=304.01^^93^914^73
- ;;^UTILITY(U,$J,358.3,15219,1,0)
+ ;;^UTILITY(U,$J,358.3,14956,1,4,0)
+ ;;=4^459.10
+ ;;^UTILITY(U,$J,358.3,14956,1,5,0)
+ ;;=5^Post Phlebotic Syndrome
+ ;;^UTILITY(U,$J,358.3,14956,2)
+ ;;=Post Phlebotic Syndrome^328597
+ ;;^UTILITY(U,$J,358.3,14957,0)
+ ;;=428.20^^81^936^50
+ ;;^UTILITY(U,$J,358.3,14957,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15219,1,2,0)
- ;;=2^304.01
- ;;^UTILITY(U,$J,358.3,15219,1,5,0)
- ;;=5^Opioid Depend, Continuous
- ;;^UTILITY(U,$J,358.3,15219,2)
- ;;=^268191
- ;;^UTILITY(U,$J,358.3,15220,0)
- ;;=304.02^^93^914^75
- ;;^UTILITY(U,$J,358.3,15220,1,0)
+ ;;^UTILITY(U,$J,358.3,14957,1,4,0)
+ ;;=4^428.20
+ ;;^UTILITY(U,$J,358.3,14957,1,5,0)
+ ;;=5^Heart Failure, Systolic, Unspec
+ ;;^UTILITY(U,$J,358.3,14957,2)
+ ;;=Heart Failure, Systolic^328594
+ ;;^UTILITY(U,$J,358.3,14958,0)
+ ;;=428.21^^81^936^42
+ ;;^UTILITY(U,$J,358.3,14958,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15220,1,2,0)
- ;;=2^304.02
- ;;^UTILITY(U,$J,358.3,15220,1,5,0)
- ;;=5^Opioid Dependence, Episodic
- ;;^UTILITY(U,$J,358.3,15220,2)
- ;;=^268192
- ;;^UTILITY(U,$J,358.3,15221,0)
- ;;=304.11^^93^914^29
- ;;^UTILITY(U,$J,358.3,15221,1,0)
+ ;;^UTILITY(U,$J,358.3,14958,1,4,0)
+ ;;=4^428.21
+ ;;^UTILITY(U,$J,358.3,14958,1,5,0)
+ ;;=5^Heart Failure, Acute Systolic
+ ;;^UTILITY(U,$J,358.3,14958,2)
+ ;;=Heart Failure, Acute Systolic^328494
+ ;;^UTILITY(U,$J,358.3,14959,0)
+ ;;=428.22^^81^936^44
+ ;;^UTILITY(U,$J,358.3,14959,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15221,1,2,0)
- ;;=2^304.11
- ;;^UTILITY(U,$J,358.3,15221,1,5,0)
- ;;=5^Anxiolytic Depend, Continuous
- ;;^UTILITY(U,$J,358.3,15221,2)
- ;;=^331932
- ;;^UTILITY(U,$J,358.3,15222,0)
- ;;=304.12^^93^914^30
- ;;^UTILITY(U,$J,358.3,15222,1,0)
+ ;;^UTILITY(U,$J,358.3,14959,1,4,0)
+ ;;=4^428.22
+ ;;^UTILITY(U,$J,358.3,14959,1,5,0)
+ ;;=5^Heart Failure, Chronic Systolic
+ ;;^UTILITY(U,$J,358.3,14959,2)
+ ;;=Heart Failure, Chronic Systolic^328495
+ ;;^UTILITY(U,$J,358.3,14960,0)
+ ;;=428.23^^81^936^49
+ ;;^UTILITY(U,$J,358.3,14960,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15222,1,2,0)
- ;;=2^304.12
- ;;^UTILITY(U,$J,358.3,15222,1,5,0)
- ;;=5^Anxiolytic Depend, Episodic
- ;;^UTILITY(U,$J,358.3,15222,2)
- ;;=^331933
- ;;^UTILITY(U,$J,358.3,15223,0)
- ;;=304.21^^93^914^44
- ;;^UTILITY(U,$J,358.3,15223,1,0)
+ ;;^UTILITY(U,$J,358.3,14960,1,4,0)
+ ;;=4^428.23
+ ;;^UTILITY(U,$J,358.3,14960,1,5,0)
+ ;;=5^Heart Failure, Systolic, Acute on Chronic
+ ;;^UTILITY(U,$J,358.3,14960,2)
+ ;;=Heart Failure, Systolic, Acute on Chronic^328496
+ ;;^UTILITY(U,$J,358.3,14961,0)
+ ;;=428.30^^81^936^45
+ ;;^UTILITY(U,$J,358.3,14961,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15223,1,2,0)
- ;;=2^304.21
- ;;^UTILITY(U,$J,358.3,15223,1,5,0)
- ;;=5^Cocaine Depend, Continuous
- ;;^UTILITY(U,$J,358.3,15223,2)
- ;;=^268198
- ;;^UTILITY(U,$J,358.3,15224,0)
- ;;=304.22^^93^914^45
- ;;^UTILITY(U,$J,358.3,15224,1,0)
+ ;;^UTILITY(U,$J,358.3,14961,1,4,0)
+ ;;=4^428.30
+ ;;^UTILITY(U,$J,358.3,14961,1,5,0)
+ ;;=5^Heart Failure, Diastolic
+ ;;^UTILITY(U,$J,358.3,14961,2)
+ ;;=Heart Failure, Diastolic^328595
+ ;;^UTILITY(U,$J,358.3,14962,0)
+ ;;=428.31^^81^936^41
+ ;;^UTILITY(U,$J,358.3,14962,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15224,1,2,0)
- ;;=2^304.22
- ;;^UTILITY(U,$J,358.3,15224,1,5,0)
- ;;=5^Cocaine Depend, Episodic
- ;;^UTILITY(U,$J,358.3,15224,2)
- ;;=^268199
- ;;^UTILITY(U,$J,358.3,15225,0)
- ;;=304.31^^93^914^37
- ;;^UTILITY(U,$J,358.3,15225,1,0)
+ ;;^UTILITY(U,$J,358.3,14962,1,4,0)
+ ;;=4^428.31
+ ;;^UTILITY(U,$J,358.3,14962,1,5,0)
+ ;;=5^Heart Failure, Acute Diastolic
+ ;;^UTILITY(U,$J,358.3,14962,2)
+ ;;=Heart Failure, Acute Diastolic^328497
+ ;;^UTILITY(U,$J,358.3,14963,0)
+ ;;=428.32^^81^936^43
+ ;;^UTILITY(U,$J,358.3,14963,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15225,1,2,0)
- ;;=2^304.31
- ;;^UTILITY(U,$J,358.3,15225,1,5,0)
- ;;=5^Cannabis Depend, Continuous
- ;;^UTILITY(U,$J,358.3,15225,2)
- ;;=^268201
- ;;^UTILITY(U,$J,358.3,15226,0)
- ;;=304.32^^93^914^38
- ;;^UTILITY(U,$J,358.3,15226,1,0)
+ ;;^UTILITY(U,$J,358.3,14963,1,4,0)
+ ;;=4^428.32
+ ;;^UTILITY(U,$J,358.3,14963,1,5,0)
+ ;;=5^Heart Failure, Chronic Diastolic
+ ;;^UTILITY(U,$J,358.3,14963,2)
+ ;;=Heart Failure, Chronic Diastolic^328498
+ ;;^UTILITY(U,$J,358.3,14964,0)
+ ;;=428.33^^81^936^47
+ ;;^UTILITY(U,$J,358.3,14964,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15226,1,2,0)
- ;;=2^304.32
- ;;^UTILITY(U,$J,358.3,15226,1,5,0)
- ;;=5^Cannabis Depend, Episodic
- ;;^UTILITY(U,$J,358.3,15226,2)
- ;;=^268202
- ;;^UTILITY(U,$J,358.3,15227,0)
- ;;=304.41^^93^914^21
- ;;^UTILITY(U,$J,358.3,15227,1,0)
+ ;;^UTILITY(U,$J,358.3,14964,1,4,0)
+ ;;=4^428.33
+ ;;^UTILITY(U,$J,358.3,14964,1,5,0)
+ ;;=5^Heart Failure, Diastolic, Acute on Chronic
+ ;;^UTILITY(U,$J,358.3,14964,2)
+ ;;=Heart Failure, Diastolic, Acute on Chronic^328499
+ ;;^UTILITY(U,$J,358.3,14965,0)
+ ;;=428.40^^81^936^46
+ ;;^UTILITY(U,$J,358.3,14965,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15227,1,2,0)
- ;;=2^304.41
- ;;^UTILITY(U,$J,358.3,15227,1,5,0)
- ;;=5^Amphetamine Depend, Continuous
- ;;^UTILITY(U,$J,358.3,15227,2)
- ;;=^268205
- ;;^UTILITY(U,$J,358.3,15228,0)
- ;;=304.42^^93^914^22
- ;;^UTILITY(U,$J,358.3,15228,1,0)
+ ;;^UTILITY(U,$J,358.3,14965,1,4,0)
+ ;;=4^428.40
+ ;;^UTILITY(U,$J,358.3,14965,1,5,0)
+ ;;=5^Heart Failure, Diastolic& Systolic
+ ;;^UTILITY(U,$J,358.3,14965,2)
+ ;;=Heart Failure, Systolic and Diastolic^328596
+ ;;^UTILITY(U,$J,358.3,14966,0)
+ ;;=428.41^^81^936^48
+ ;;^UTILITY(U,$J,358.3,14966,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15228,1,2,0)
- ;;=2^304.42
- ;;^UTILITY(U,$J,358.3,15228,1,5,0)
- ;;=5^Amphetamine Depend, Episodic
- ;;^UTILITY(U,$J,358.3,15228,2)
- ;;=^268206
- ;;^UTILITY(U,$J,358.3,15229,0)
- ;;=304.51^^93^914^60
- ;;^UTILITY(U,$J,358.3,15229,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15229,1,2,0)
- ;;=2^304.51
- ;;^UTILITY(U,$J,358.3,15229,1,5,0)
- ;;=5^Hallucinogen Depend, Continuous
- ;;^UTILITY(U,$J,358.3,15229,2)
- ;;=^268208
- ;;^UTILITY(U,$J,358.3,15230,0)
- ;;=304.52^^93^914^61
- ;;^UTILITY(U,$J,358.3,15230,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15230,1,2,0)
- ;;=2^304.52
- ;;^UTILITY(U,$J,358.3,15230,1,5,0)
- ;;=5^Hallucinogen Depend, Episodic
- ;;^UTILITY(U,$J,358.3,15230,2)
- ;;=^268209
- ;;^UTILITY(U,$J,358.3,15231,0)
- ;;=304.61^^93^914^52
+ ;;^UTILITY(U,$J,358.3,14966,1,4,0)
+ ;;=4^428.41
+ ;;^UTILITY(U,$J,358.3,14966,1,5,0)
+ ;;=5^Heart Failure, Systolic & Diastolic, Acute
+ ;;^UTILITY(U,$J,358.3,14966,2)
+ ;;=Heart Failure, Systolic & Diastolic, Acute^328500

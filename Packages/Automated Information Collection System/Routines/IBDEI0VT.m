@@ -1,134 +1,138 @@
-IBDEI0VT ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0VT ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15734,0)
- ;;=354.0^^98^967^3
- ;;^UTILITY(U,$J,358.3,15734,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15734,1,2,0)
- ;;=2^354.0
- ;;^UTILITY(U,$J,358.3,15734,1,3,0)
- ;;=3^Carpal Tunnel
- ;;^UTILITY(U,$J,358.3,15734,2)
- ;;=Carpal Tunnel^19944
- ;;^UTILITY(U,$J,358.3,15735,0)
- ;;=351.0^^98^967^2
- ;;^UTILITY(U,$J,358.3,15735,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15735,1,2,0)
- ;;=2^351.0
- ;;^UTILITY(U,$J,358.3,15735,1,3,0)
- ;;=3^Bell's Palsy
- ;;^UTILITY(U,$J,358.3,15735,2)
- ;;=Bell's Palsy^13238
- ;;^UTILITY(U,$J,358.3,15736,0)
- ;;=354.9^^98^967^4
- ;;^UTILITY(U,$J,358.3,15736,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15736,1,2,0)
- ;;=2^354.9
- ;;^UTILITY(U,$J,358.3,15736,1,3,0)
- ;;=3^Compression Neuropathy,Arm
- ;;^UTILITY(U,$J,358.3,15736,2)
- ;;=Compression Neuropathy, Arm^268509
- ;;^UTILITY(U,$J,358.3,15737,0)
- ;;=356.8^^98^967^8
- ;;^UTILITY(U,$J,358.3,15737,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15737,1,2,0)
- ;;=2^356.8
- ;;^UTILITY(U,$J,358.3,15737,1,3,0)
- ;;=3^Peripheral Neuropathy
- ;;^UTILITY(U,$J,358.3,15737,2)
- ;;=Peripheral Neuropathy^268525
- ;;^UTILITY(U,$J,358.3,15738,0)
- ;;=357.0^^98^967^7.5
- ;;^UTILITY(U,$J,358.3,15738,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15738,1,2,0)
- ;;=2^357.0
- ;;^UTILITY(U,$J,358.3,15738,1,3,0)
- ;;=3^Guillain Barre Syndrome
- ;;^UTILITY(U,$J,358.3,15738,2)
- ;;=Guillain Barre Synd^2622
- ;;^UTILITY(U,$J,358.3,15739,0)
- ;;=291.2^^98^968^1
- ;;^UTILITY(U,$J,358.3,15739,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15739,1,2,0)
- ;;=2^291.2
- ;;^UTILITY(U,$J,358.3,15739,1,3,0)
- ;;=3^Alcoholic Encephalopathy
- ;;^UTILITY(U,$J,358.3,15739,2)
- ;;=Alcoholic Encephalopathy^268015
- ;;^UTILITY(U,$J,358.3,15740,0)
- ;;=349.89^^98^968^2
- ;;^UTILITY(U,$J,358.3,15740,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15740,1,2,0)
- ;;=2^349.89
- ;;^UTILITY(U,$J,358.3,15740,1,3,0)
- ;;=3^Other Encephalopathy
- ;;^UTILITY(U,$J,358.3,15740,2)
- ;;=Other Encephalopathy^88015
- ;;^UTILITY(U,$J,358.3,15741,0)
- ;;=349.82^^98^968^3
- ;;^UTILITY(U,$J,358.3,15741,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15741,1,2,0)
- ;;=2^349.82
- ;;^UTILITY(U,$J,358.3,15741,1,3,0)
- ;;=3^Toxic Encephalopathy
- ;;^UTILITY(U,$J,358.3,15741,2)
- ;;=Toxic Encephalopathy^259061
- ;;^UTILITY(U,$J,358.3,15742,0)
- ;;=723.0^^98^969^1
- ;;^UTILITY(U,$J,358.3,15742,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15742,1,2,0)
- ;;=2^723.0
- ;;^UTILITY(U,$J,358.3,15742,1,3,0)
- ;;=3^Cervical Spinal Stenosis
- ;;^UTILITY(U,$J,358.3,15742,2)
- ;;=Cervical Spinal Stenosis^272497
- ;;^UTILITY(U,$J,358.3,15743,0)
- ;;=724.02^^98^969^7
- ;;^UTILITY(U,$J,358.3,15743,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15743,1,2,0)
- ;;=2^724.02
- ;;^UTILITY(U,$J,358.3,15743,1,3,0)
- ;;=3^Lumbar Stenosis
- ;;^UTILITY(U,$J,358.3,15743,2)
- ;;=Lumbar Stenosis^272505
- ;;^UTILITY(U,$J,358.3,15744,0)
- ;;=721.1^^98^969^2
- ;;^UTILITY(U,$J,358.3,15744,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15744,1,2,0)
- ;;=2^721.1
- ;;^UTILITY(U,$J,358.3,15744,1,3,0)
- ;;=3^Cervical Myelopathy
- ;;^UTILITY(U,$J,358.3,15744,2)
- ;;=Cervical Myelopathy^272453
- ;;^UTILITY(U,$J,358.3,15745,0)
- ;;=721.42^^98^969^5
- ;;^UTILITY(U,$J,358.3,15745,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15745,1,2,0)
- ;;=2^721.42
- ;;^UTILITY(U,$J,358.3,15745,1,3,0)
- ;;=3^Lumbar Myelopathy
- ;;^UTILITY(U,$J,358.3,15745,2)
- ;;=Lumbar Myelopathy^272459
- ;;^UTILITY(U,$J,358.3,15746,0)
- ;;=721.41^^98^969^12
- ;;^UTILITY(U,$J,358.3,15746,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,15746,1,2,0)
- ;;=2^721.41
- ;;^UTILITY(U,$J,358.3,15746,1,3,0)
- ;;=3^Thoracic Myelopathy
- ;;^UTILITY(U,$J,358.3,15746,2)
- ;;=Thoracic Myelopathy^272458
+ ;;^UTILITY(U,$J,358.3,15457,1,4,0)
+ ;;=4^275.41
+ ;;^UTILITY(U,$J,358.3,15457,1,5,0)
+ ;;=5^Hypocalcemia
+ ;;^UTILITY(U,$J,358.3,15457,2)
+ ;;=Hypocalcemia^60542
+ ;;^UTILITY(U,$J,358.3,15458,0)
+ ;;=276.7^^81^944^29
+ ;;^UTILITY(U,$J,358.3,15458,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15458,1,4,0)
+ ;;=4^276.7
+ ;;^UTILITY(U,$J,358.3,15458,1,5,0)
+ ;;=5^Hyperkalemia/Hyperpotassemia
+ ;;^UTILITY(U,$J,358.3,15458,2)
+ ;;=Hyperkalemia/Hyperpotassemia^60042
+ ;;^UTILITY(U,$J,358.3,15459,0)
+ ;;=276.8^^81^944^32
+ ;;^UTILITY(U,$J,358.3,15459,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15459,1,4,0)
+ ;;=4^276.8
+ ;;^UTILITY(U,$J,358.3,15459,1,5,0)
+ ;;=5^Hypokalemia/Hypopotassemia
+ ;;^UTILITY(U,$J,358.3,15459,2)
+ ;;=Hypokalemia/Hypopotassemia^60611
+ ;;^UTILITY(U,$J,358.3,15460,0)
+ ;;=275.2^^81^944^26
+ ;;^UTILITY(U,$J,358.3,15460,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15460,1,4,0)
+ ;;=4^275.2
+ ;;^UTILITY(U,$J,358.3,15460,1,5,0)
+ ;;=5^Hyper Or Hypomagnesemia
+ ;;^UTILITY(U,$J,358.3,15460,2)
+ ;;=^35626
+ ;;^UTILITY(U,$J,358.3,15461,0)
+ ;;=276.0^^81^944^30
+ ;;^UTILITY(U,$J,358.3,15461,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15461,1,4,0)
+ ;;=4^276.0
+ ;;^UTILITY(U,$J,358.3,15461,1,5,0)
+ ;;=5^Hypernatremia
+ ;;^UTILITY(U,$J,358.3,15461,2)
+ ;;=^60144
+ ;;^UTILITY(U,$J,358.3,15462,0)
+ ;;=276.1^^81^944^33
+ ;;^UTILITY(U,$J,358.3,15462,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15462,1,4,0)
+ ;;=4^276.1
+ ;;^UTILITY(U,$J,358.3,15462,1,5,0)
+ ;;=5^Hyponatremia
+ ;;^UTILITY(U,$J,358.3,15462,2)
+ ;;=Hyponatremia^60722
+ ;;^UTILITY(U,$J,358.3,15463,0)
+ ;;=275.3^^81^944^27
+ ;;^UTILITY(U,$J,358.3,15463,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15463,1,4,0)
+ ;;=4^275.3
+ ;;^UTILITY(U,$J,358.3,15463,1,5,0)
+ ;;=5^Hyper Or Hypophosphatemia
+ ;;^UTILITY(U,$J,358.3,15463,2)
+ ;;=^93796
+ ;;^UTILITY(U,$J,358.3,15464,0)
+ ;;=250.40^^81^944^16
+ ;;^UTILITY(U,$J,358.3,15464,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15464,1,4,0)
+ ;;=4^250.40
+ ;;^UTILITY(U,$J,358.3,15464,1,5,0)
+ ;;=5^DM type II with Nephropathy
+ ;;^UTILITY(U,$J,358.3,15464,2)
+ ;;=DM type II with Nephropathy^267837^583.81
+ ;;^UTILITY(U,$J,358.3,15465,0)
+ ;;=790.93^^81^944^1
+ ;;^UTILITY(U,$J,358.3,15465,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15465,1,4,0)
+ ;;=4^790.93
+ ;;^UTILITY(U,$J,358.3,15465,1,5,0)
+ ;;=5^Abnormal PSA
+ ;;^UTILITY(U,$J,358.3,15465,2)
+ ;;=Abnormal PSA^295772
+ ;;^UTILITY(U,$J,358.3,15466,0)
+ ;;=627.3^^81^944^3
+ ;;^UTILITY(U,$J,358.3,15466,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15466,1,4,0)
+ ;;=4^627.3
+ ;;^UTILITY(U,$J,358.3,15466,1,5,0)
+ ;;=5^Atrophic Vaginitis
+ ;;^UTILITY(U,$J,358.3,15466,2)
+ ;;=^270577
+ ;;^UTILITY(U,$J,358.3,15467,0)
+ ;;=607.1^^81^944^6
+ ;;^UTILITY(U,$J,358.3,15467,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15467,1,4,0)
+ ;;=4^607.1
+ ;;^UTILITY(U,$J,358.3,15467,1,5,0)
+ ;;=5^Balanitis
+ ;;^UTILITY(U,$J,358.3,15467,2)
+ ;;=^12530
+ ;;^UTILITY(U,$J,358.3,15468,0)
+ ;;=596.0^^81^944^7
+ ;;^UTILITY(U,$J,358.3,15468,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15468,1,4,0)
+ ;;=4^596.0
+ ;;^UTILITY(U,$J,358.3,15468,1,5,0)
+ ;;=5^Bladder Neck Obstruction
+ ;;^UTILITY(U,$J,358.3,15468,2)
+ ;;=^15144
+ ;;^UTILITY(U,$J,358.3,15469,0)
+ ;;=595.0^^81^944^10
+ ;;^UTILITY(U,$J,358.3,15469,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15469,1,4,0)
+ ;;=4^595.0
+ ;;^UTILITY(U,$J,358.3,15469,1,5,0)
+ ;;=5^Cystitis, Acute
+ ;;^UTILITY(U,$J,358.3,15469,2)
+ ;;=^259104
+ ;;^UTILITY(U,$J,358.3,15470,0)
+ ;;=595.82^^81^944^11
+ ;;^UTILITY(U,$J,358.3,15470,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,15470,1,4,0)
+ ;;=4^595.82
+ ;;^UTILITY(U,$J,358.3,15470,1,5,0)
+ ;;=5^Cystitis, Radiation

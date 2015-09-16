@@ -1,374 +1,140 @@
-IBDEI01H ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
+IBDEI01H ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1609,1,4,0)
- ;;=4^R10.30
- ;;^UTILITY(U,$J,358.3,1609,2)
- ;;=^5019210
- ;;^UTILITY(U,$J,358.3,1610,0)
- ;;=I21.3^^7^82^15
- ;;^UTILITY(U,$J,358.3,1610,1,0)
+ ;;^UTILITY(U,$J,358.3,138,0)
+ ;;=H83.3X2^^1^8^2
+ ;;^UTILITY(U,$J,358.3,138,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1610,1,3,0)
- ;;=3^STEMI,Unspec Site
- ;;^UTILITY(U,$J,358.3,1610,1,4,0)
- ;;=4^I21.3
- ;;^UTILITY(U,$J,358.3,1610,2)
- ;;=^5007087
- ;;^UTILITY(U,$J,358.3,1611,0)
- ;;=I21.4^^7^82^11
- ;;^UTILITY(U,$J,358.3,1611,1,0)
+ ;;^UTILITY(U,$J,358.3,138,1,3,0)
+ ;;=3^Noise effects on left inner ear
+ ;;^UTILITY(U,$J,358.3,138,1,4,0)
+ ;;=4^H83.3X2
+ ;;^UTILITY(U,$J,358.3,138,2)
+ ;;=^5006907
+ ;;^UTILITY(U,$J,358.3,139,0)
+ ;;=H83.3X3^^1^8^1
+ ;;^UTILITY(U,$J,358.3,139,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1611,1,3,0)
- ;;=3^NSTEMI
- ;;^UTILITY(U,$J,358.3,1611,1,4,0)
- ;;=4^I21.4
- ;;^UTILITY(U,$J,358.3,1611,2)
- ;;=^5007088
- ;;^UTILITY(U,$J,358.3,1612,0)
- ;;=I42.9^^7^82^5
- ;;^UTILITY(U,$J,358.3,1612,1,0)
+ ;;^UTILITY(U,$J,358.3,139,1,3,0)
+ ;;=3^Noise effects on bilateral inner ear
+ ;;^UTILITY(U,$J,358.3,139,1,4,0)
+ ;;=4^H83.3X3
+ ;;^UTILITY(U,$J,358.3,139,2)
+ ;;=^5006908
+ ;;^UTILITY(U,$J,358.3,140,0)
+ ;;=H55.01^^1^9^1
+ ;;^UTILITY(U,$J,358.3,140,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1612,1,3,0)
- ;;=3^Cardiomyopathy,Unspec
- ;;^UTILITY(U,$J,358.3,1612,1,4,0)
- ;;=4^I42.9
- ;;^UTILITY(U,$J,358.3,1612,2)
- ;;=^5007200
- ;;^UTILITY(U,$J,358.3,1613,0)
- ;;=I48.91^^7^82^1
- ;;^UTILITY(U,$J,358.3,1613,1,0)
+ ;;^UTILITY(U,$J,358.3,140,1,3,0)
+ ;;=3^Congenital nystagmus
+ ;;^UTILITY(U,$J,358.3,140,1,4,0)
+ ;;=4^H55.01
+ ;;^UTILITY(U,$J,358.3,140,2)
+ ;;=^5006371
+ ;;^UTILITY(U,$J,358.3,141,0)
+ ;;=H55.04^^1^9^2
+ ;;^UTILITY(U,$J,358.3,141,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1613,1,3,0)
- ;;=3^Atrial Fibrillation,Unspec
- ;;^UTILITY(U,$J,358.3,1613,1,4,0)
- ;;=4^I48.91
- ;;^UTILITY(U,$J,358.3,1613,2)
- ;;=^5007229
- ;;^UTILITY(U,$J,358.3,1614,0)
- ;;=I48.92^^7^82^2
- ;;^UTILITY(U,$J,358.3,1614,1,0)
+ ;;^UTILITY(U,$J,358.3,141,1,3,0)
+ ;;=3^Dissociated nystagmus
+ ;;^UTILITY(U,$J,358.3,141,1,4,0)
+ ;;=4^H55.04
+ ;;^UTILITY(U,$J,358.3,141,2)
+ ;;=^269325
+ ;;^UTILITY(U,$J,358.3,142,0)
+ ;;=H55.02^^1^9^3
+ ;;^UTILITY(U,$J,358.3,142,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1614,1,3,0)
- ;;=3^Atrial Flutter,Unspec
- ;;^UTILITY(U,$J,358.3,1614,1,4,0)
- ;;=4^I48.92
- ;;^UTILITY(U,$J,358.3,1614,2)
- ;;=^5007230
- ;;^UTILITY(U,$J,358.3,1615,0)
- ;;=I46.9^^7^82^3
- ;;^UTILITY(U,$J,358.3,1615,1,0)
+ ;;^UTILITY(U,$J,358.3,142,1,3,0)
+ ;;=3^Latent nystagmus
+ ;;^UTILITY(U,$J,358.3,142,1,4,0)
+ ;;=4^H55.02
+ ;;^UTILITY(U,$J,358.3,142,2)
+ ;;=^5006372
+ ;;^UTILITY(U,$J,358.3,143,0)
+ ;;=H55.09^^1^9^4
+ ;;^UTILITY(U,$J,358.3,143,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1615,1,3,0)
- ;;=3^Cardiac Arrest,Unspec Cause
- ;;^UTILITY(U,$J,358.3,1615,1,4,0)
- ;;=4^I46.9
- ;;^UTILITY(U,$J,358.3,1615,2)
- ;;=^5007221
- ;;^UTILITY(U,$J,358.3,1616,0)
- ;;=I49.9^^7^82^4
- ;;^UTILITY(U,$J,358.3,1616,1,0)
+ ;;^UTILITY(U,$J,358.3,143,1,3,0)
+ ;;=3^Nystagmus NEC
+ ;;^UTILITY(U,$J,358.3,143,1,4,0)
+ ;;=4^H55.09
+ ;;^UTILITY(U,$J,358.3,143,2)
+ ;;=^87599
+ ;;^UTILITY(U,$J,358.3,144,0)
+ ;;=H55.81^^1^9^5
+ ;;^UTILITY(U,$J,358.3,144,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1616,1,3,0)
- ;;=3^Cardiac Arrhythmia,Unspec
- ;;^UTILITY(U,$J,358.3,1616,1,4,0)
- ;;=4^I49.9
- ;;^UTILITY(U,$J,358.3,1616,2)
- ;;=^5007237
- ;;^UTILITY(U,$J,358.3,1617,0)
- ;;=I50.9^^7^82^10
- ;;^UTILITY(U,$J,358.3,1617,1,0)
+ ;;^UTILITY(U,$J,358.3,144,1,3,0)
+ ;;=3^Saccadic eye movements
+ ;;^UTILITY(U,$J,358.3,144,1,4,0)
+ ;;=4^H55.81
+ ;;^UTILITY(U,$J,358.3,144,2)
+ ;;=^5006373
+ ;;^UTILITY(U,$J,358.3,145,0)
+ ;;=H55.03^^1^9^6
+ ;;^UTILITY(U,$J,358.3,145,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1617,1,3,0)
- ;;=3^Heart Failure,Unspec
- ;;^UTILITY(U,$J,358.3,1617,1,4,0)
- ;;=4^I50.9
- ;;^UTILITY(U,$J,358.3,1617,2)
- ;;=^5007251
- ;;^UTILITY(U,$J,358.3,1618,0)
- ;;=I65.21^^7^82^14
- ;;^UTILITY(U,$J,358.3,1618,1,0)
+ ;;^UTILITY(U,$J,358.3,145,1,3,0)
+ ;;=3^Visual deprivation nystagmus
+ ;;^UTILITY(U,$J,358.3,145,1,4,0)
+ ;;=4^H55.03
+ ;;^UTILITY(U,$J,358.3,145,2)
+ ;;=^269322
+ ;;^UTILITY(U,$J,358.3,146,0)
+ ;;=T36.5X5A^^1^10^1
+ ;;^UTILITY(U,$J,358.3,146,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1618,1,3,0)
- ;;=3^Occlusion & Stenosis Right Carotid Artery
- ;;^UTILITY(U,$J,358.3,1618,1,4,0)
- ;;=4^I65.21
- ;;^UTILITY(U,$J,358.3,1618,2)
- ;;=^5007360
- ;;^UTILITY(U,$J,358.3,1619,0)
- ;;=I65.22^^7^82^13
- ;;^UTILITY(U,$J,358.3,1619,1,0)
+ ;;^UTILITY(U,$J,358.3,146,1,3,0)
+ ;;=3^Adverse effect of aminoglycosides, initial encounter
+ ;;^UTILITY(U,$J,358.3,146,1,4,0)
+ ;;=4^T36.5X5A
+ ;;^UTILITY(U,$J,358.3,146,2)
+ ;;=^5049358
+ ;;^UTILITY(U,$J,358.3,147,0)
+ ;;=T36.5X5S^^1^10^2
+ ;;^UTILITY(U,$J,358.3,147,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1619,1,3,0)
- ;;=3^Occlusion & Stenosis Left Carotid Artery
- ;;^UTILITY(U,$J,358.3,1619,1,4,0)
- ;;=4^I65.22
- ;;^UTILITY(U,$J,358.3,1619,2)
- ;;=^5007361
- ;;^UTILITY(U,$J,358.3,1620,0)
- ;;=I65.23^^7^82^12
- ;;^UTILITY(U,$J,358.3,1620,1,0)
+ ;;^UTILITY(U,$J,358.3,147,1,3,0)
+ ;;=3^Adverse effect of aminoglycosides, sequela
+ ;;^UTILITY(U,$J,358.3,147,1,4,0)
+ ;;=4^T36.5X5S
+ ;;^UTILITY(U,$J,358.3,147,2)
+ ;;=^5049360
+ ;;^UTILITY(U,$J,358.3,148,0)
+ ;;=T36.5X5D^^1^10^3
+ ;;^UTILITY(U,$J,358.3,148,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1620,1,3,0)
- ;;=3^Occlusion & Stenosis Bilateral Carotid Arteries
- ;;^UTILITY(U,$J,358.3,1620,1,4,0)
- ;;=4^I65.23
- ;;^UTILITY(U,$J,358.3,1620,2)
- ;;=^5007362
- ;;^UTILITY(U,$J,358.3,1621,0)
- ;;=I63.131^^7^82^9
- ;;^UTILITY(U,$J,358.3,1621,1,0)
+ ;;^UTILITY(U,$J,358.3,148,1,3,0)
+ ;;=3^Adverse effect of aminoglycosides, subsequent encounter
+ ;;^UTILITY(U,$J,358.3,148,1,4,0)
+ ;;=4^T36.5X5D
+ ;;^UTILITY(U,$J,358.3,148,2)
+ ;;=^5049359
+ ;;^UTILITY(U,$J,358.3,149,0)
+ ;;=T45.1X5A^^1^10^5
+ ;;^UTILITY(U,$J,358.3,149,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1621,1,3,0)
- ;;=3^Cerebral Infarction d/t Embolism Right Carotid Artery
- ;;^UTILITY(U,$J,358.3,1621,1,4,0)
- ;;=4^I63.131
- ;;^UTILITY(U,$J,358.3,1621,2)
- ;;=^5007308
- ;;^UTILITY(U,$J,358.3,1622,0)
- ;;=I63.132^^7^82^8
- ;;^UTILITY(U,$J,358.3,1622,1,0)
+ ;;^UTILITY(U,$J,358.3,149,1,3,0)
+ ;;=3^Adverse effect of antineoplastic and immunosup drugs, init
+ ;;^UTILITY(U,$J,358.3,149,1,4,0)
+ ;;=4^T45.1X5A
+ ;;^UTILITY(U,$J,358.3,149,2)
+ ;;=^5051026
+ ;;^UTILITY(U,$J,358.3,150,0)
+ ;;=T45.1X5D^^1^10^6
+ ;;^UTILITY(U,$J,358.3,150,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1622,1,3,0)
- ;;=3^Cerebral Infarction d/t Embolism Left Carotid Artery
- ;;^UTILITY(U,$J,358.3,1622,1,4,0)
- ;;=4^I63.132
- ;;^UTILITY(U,$J,358.3,1622,2)
- ;;=^5007309
- ;;^UTILITY(U,$J,358.3,1623,0)
- ;;=I63.231^^7^82^7
- ;;^UTILITY(U,$J,358.3,1623,1,0)
+ ;;^UTILITY(U,$J,358.3,150,1,3,0)
+ ;;=3^Adverse effect of antineoplastic and immunosup drugs, subs
+ ;;^UTILITY(U,$J,358.3,150,1,4,0)
+ ;;=4^T45.1X5D
+ ;;^UTILITY(U,$J,358.3,150,2)
+ ;;=^5051027
+ ;;^UTILITY(U,$J,358.3,151,0)
+ ;;=T45.1X5S^^1^10^4
+ ;;^UTILITY(U,$J,358.3,151,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1623,1,3,0)
- ;;=3^Cereb Infrc d/t Unspec Occls/Stenosis Right Carotid Artery
- ;;^UTILITY(U,$J,358.3,1623,1,4,0)
- ;;=4^I63.231
- ;;^UTILITY(U,$J,358.3,1623,2)
- ;;=^5007316
- ;;^UTILITY(U,$J,358.3,1624,0)
- ;;=I63.232^^7^82^6
- ;;^UTILITY(U,$J,358.3,1624,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1624,1,3,0)
- ;;=3^Cereb Infrc d/t Unspec Occls/Stenosis Left Carotid Artery
- ;;^UTILITY(U,$J,358.3,1624,1,4,0)
- ;;=4^I63.232
- ;;^UTILITY(U,$J,358.3,1624,2)
- ;;=^5007317
- ;;^UTILITY(U,$J,358.3,1625,0)
- ;;=K63.9^^7^83^4
- ;;^UTILITY(U,$J,358.3,1625,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1625,1,3,0)
- ;;=3^Intestinal Disease,Unspec
- ;;^UTILITY(U,$J,358.3,1625,1,4,0)
- ;;=4^K63.9
- ;;^UTILITY(U,$J,358.3,1625,2)
- ;;=^5008768
- ;;^UTILITY(U,$J,358.3,1626,0)
- ;;=K76.6^^7^83^7
- ;;^UTILITY(U,$J,358.3,1626,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1626,1,3,0)
- ;;=3^Portal Hypertension
- ;;^UTILITY(U,$J,358.3,1626,1,4,0)
- ;;=4^K76.6
- ;;^UTILITY(U,$J,358.3,1626,2)
- ;;=^5008834
- ;;^UTILITY(U,$J,358.3,1627,0)
- ;;=K76.9^^7^83^5
- ;;^UTILITY(U,$J,358.3,1627,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1627,1,3,0)
- ;;=3^Liver Disease,Unspec
- ;;^UTILITY(U,$J,358.3,1627,1,4,0)
- ;;=4^K76.9
- ;;^UTILITY(U,$J,358.3,1627,2)
- ;;=^5008836
- ;;^UTILITY(U,$J,358.3,1628,0)
- ;;=K80.20^^7^83^2
- ;;^UTILITY(U,$J,358.3,1628,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1628,1,3,0)
- ;;=3^Calculus of Gallbladder w/o  Cholecystitis w/o Obstruction
- ;;^UTILITY(U,$J,358.3,1628,1,4,0)
- ;;=4^K80.20
- ;;^UTILITY(U,$J,358.3,1628,2)
- ;;=^5008846
- ;;^UTILITY(U,$J,358.3,1629,0)
- ;;=K83.0^^7^83^3
- ;;^UTILITY(U,$J,358.3,1629,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1629,1,3,0)
- ;;=3^Cholangitis
- ;;^UTILITY(U,$J,358.3,1629,1,4,0)
- ;;=4^K83.0
- ;;^UTILITY(U,$J,358.3,1629,2)
- ;;=^23291
- ;;^UTILITY(U,$J,358.3,1630,0)
- ;;=K83.9^^7^83^1
- ;;^UTILITY(U,$J,358.3,1630,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1630,1,3,0)
- ;;=3^Biliary Tract Disease,Unspec
- ;;^UTILITY(U,$J,358.3,1630,1,4,0)
- ;;=4^K83.9
- ;;^UTILITY(U,$J,358.3,1630,2)
- ;;=^5008881
- ;;^UTILITY(U,$J,358.3,1631,0)
- ;;=K86.1^^7^83^6
- ;;^UTILITY(U,$J,358.3,1631,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1631,1,3,0)
- ;;=3^Pancreatitis, Chronic
- ;;^UTILITY(U,$J,358.3,1631,1,4,0)
- ;;=4^K86.1
- ;;^UTILITY(U,$J,358.3,1631,2)
- ;;=^5008889
- ;;^UTILITY(U,$J,358.3,1632,0)
- ;;=K86.3^^7^83^8
- ;;^UTILITY(U,$J,358.3,1632,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1632,1,3,0)
- ;;=3^Pseudocyst of Pancreas
- ;;^UTILITY(U,$J,358.3,1632,1,4,0)
- ;;=4^K86.3
- ;;^UTILITY(U,$J,358.3,1632,2)
- ;;=^5008891
- ;;^UTILITY(U,$J,358.3,1633,0)
- ;;=G04.91^^7^84^31
- ;;^UTILITY(U,$J,358.3,1633,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1633,1,3,0)
- ;;=3^Myelitis,Unspec
- ;;^UTILITY(U,$J,358.3,1633,1,4,0)
- ;;=4^G04.91
- ;;^UTILITY(U,$J,358.3,1633,2)
- ;;=^5003742
- ;;^UTILITY(U,$J,358.3,1634,0)
- ;;=G95.0^^7^84^49
- ;;^UTILITY(U,$J,358.3,1634,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1634,1,3,0)
- ;;=3^Syringomyelia & Syringobulbia
- ;;^UTILITY(U,$J,358.3,1634,1,4,0)
- ;;=4^G95.0
- ;;^UTILITY(U,$J,358.3,1634,2)
- ;;=^116874
- ;;^UTILITY(U,$J,358.3,1635,0)
- ;;=G99.0^^7^84^1
- ;;^UTILITY(U,$J,358.3,1635,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1635,1,3,0)
- ;;=3^Autonomic Neuropathy
- ;;^UTILITY(U,$J,358.3,1635,1,4,0)
- ;;=4^G99.0
- ;;^UTILITY(U,$J,358.3,1635,2)
- ;;=^5004215
- ;;^UTILITY(U,$J,358.3,1636,0)
- ;;=G90.50^^7^84^5
- ;;^UTILITY(U,$J,358.3,1636,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1636,1,3,0)
- ;;=3^Complex Regional Pain Syndrome I,Unspec
- ;;^UTILITY(U,$J,358.3,1636,1,4,0)
- ;;=4^G90.50
- ;;^UTILITY(U,$J,358.3,1636,2)
- ;;=^5004163
- ;;^UTILITY(U,$J,358.3,1637,0)
- ;;=G83.4^^7^84^4
- ;;^UTILITY(U,$J,358.3,1637,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1637,1,3,0)
- ;;=3^Cauda Equina Syndrome
- ;;^UTILITY(U,$J,358.3,1637,1,4,0)
- ;;=4^G83.4
- ;;^UTILITY(U,$J,358.3,1637,2)
- ;;=^265172
- ;;^UTILITY(U,$J,358.3,1638,0)
- ;;=G50.0^^7^84^50
- ;;^UTILITY(U,$J,358.3,1638,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1638,1,3,0)
- ;;=3^Trigeminal Neuralgia
- ;;^UTILITY(U,$J,358.3,1638,1,4,0)
- ;;=4^G50.0
- ;;^UTILITY(U,$J,358.3,1638,2)
- ;;=^121978
- ;;^UTILITY(U,$J,358.3,1639,0)
- ;;=G51.9^^7^84^17
- ;;^UTILITY(U,$J,358.3,1639,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1639,1,3,0)
- ;;=3^Facial Nerve Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,1639,1,4,0)
- ;;=4^G51.9
- ;;^UTILITY(U,$J,358.3,1639,2)
- ;;=^5003998
- ;;^UTILITY(U,$J,358.3,1640,0)
- ;;=G52.9^^7^84^6
- ;;^UTILITY(U,$J,358.3,1640,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1640,1,3,0)
- ;;=3^Cranial Nerve Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,1640,1,4,0)
- ;;=4^G52.9
- ;;^UTILITY(U,$J,358.3,1640,2)
- ;;=^5004005
- ;;^UTILITY(U,$J,358.3,1641,0)
- ;;=G54.9^^7^84^41
- ;;^UTILITY(U,$J,358.3,1641,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1641,1,3,0)
- ;;=3^Nerve Root & Plexus Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,1641,1,4,0)
- ;;=4^G54.9
- ;;^UTILITY(U,$J,358.3,1641,2)
- ;;=^5004015
- ;;^UTILITY(U,$J,358.3,1642,0)
- ;;=G56.01^^7^84^3
- ;;^UTILITY(U,$J,358.3,1642,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1642,1,3,0)
- ;;=3^Carpal Tunnel Syndrome,Right Upper Limb
- ;;^UTILITY(U,$J,358.3,1642,1,4,0)
- ;;=4^G56.01
- ;;^UTILITY(U,$J,358.3,1642,2)
- ;;=^5004018
- ;;^UTILITY(U,$J,358.3,1643,0)
- ;;=G56.02^^7^84^2
- ;;^UTILITY(U,$J,358.3,1643,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1643,1,3,0)
- ;;=3^Carpal Tunnel Syndrome,Left Upper Limb
- ;;^UTILITY(U,$J,358.3,1643,1,4,0)
- ;;=4^G56.02
- ;;^UTILITY(U,$J,358.3,1643,2)
- ;;=^5004019
- ;;^UTILITY(U,$J,358.3,1644,0)
- ;;=G56.11^^7^84^21
- ;;^UTILITY(U,$J,358.3,1644,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1644,1,3,0)
- ;;=3^Median Nerve Lesions,Right Upper Limb
- ;;^UTILITY(U,$J,358.3,1644,1,4,0)
- ;;=4^G56.11
- ;;^UTILITY(U,$J,358.3,1644,2)
- ;;=^5004021
- ;;^UTILITY(U,$J,358.3,1645,0)
- ;;=G56.12^^7^84^20
- ;;^UTILITY(U,$J,358.3,1645,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1645,1,3,0)
- ;;=3^Median Nerve Lesions,Left Upper Limb
- ;;^UTILITY(U,$J,358.3,1645,1,4,0)
- ;;=4^G56.12
- ;;^UTILITY(U,$J,358.3,1645,2)
- ;;=^5004022
- ;;^UTILITY(U,$J,358.3,1646,0)
- ;;=G56.21^^7^84^52
- ;;^UTILITY(U,$J,358.3,1646,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1646,1,3,0)
- ;;=3^Ulnar Nerve Lesion,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,151,1,3,0)
+ ;;=3^Adverse effect of antineopl and immunosup drugs, sequela

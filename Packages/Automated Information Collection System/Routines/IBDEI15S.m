@@ -1,136 +1,130 @@
-IBDEI15S ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI15S ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,20750,1,4,0)
- ;;=4^338.21
- ;;^UTILITY(U,$J,358.3,20750,1,5,0)
- ;;=5^Chronic Pain due to Trauma
- ;;^UTILITY(U,$J,358.3,20750,2)
- ;;=^334074
- ;;^UTILITY(U,$J,358.3,20751,0)
- ;;=338.22^^131^1294^13
- ;;^UTILITY(U,$J,358.3,20751,1,0)
+ ;;^UTILITY(U,$J,358.3,20451,1,5,0)
+ ;;=5^440.32
+ ;;^UTILITY(U,$J,358.3,20451,2)
+ ;;=^303288
+ ;;^UTILITY(U,$J,358.3,20452,0)
+ ;;=789.06^^109^1265^3
+ ;;^UTILITY(U,$J,358.3,20452,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20751,1,4,0)
- ;;=4^338.22
- ;;^UTILITY(U,$J,358.3,20751,1,5,0)
- ;;=5^Chronic Post-Thoracotomy Pain
- ;;^UTILITY(U,$J,358.3,20751,2)
- ;;=^334075
- ;;^UTILITY(U,$J,358.3,20752,0)
- ;;=338.28^^131^1294^28
- ;;^UTILITY(U,$J,358.3,20752,1,0)
+ ;;^UTILITY(U,$J,358.3,20452,1,4,0)
+ ;;=4^Epigastric Pain
+ ;;^UTILITY(U,$J,358.3,20452,1,5,0)
+ ;;=5^789.06
+ ;;^UTILITY(U,$J,358.3,20452,2)
+ ;;=Epigastric Pain^303323
+ ;;^UTILITY(U,$J,358.3,20453,0)
+ ;;=789.07^^109^1265^4
+ ;;^UTILITY(U,$J,358.3,20453,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20752,1,4,0)
- ;;=4^338.28
- ;;^UTILITY(U,$J,358.3,20752,1,5,0)
- ;;=5^Other Chronic Postop Pain
- ;;^UTILITY(U,$J,358.3,20752,2)
- ;;=^334076
- ;;^UTILITY(U,$J,358.3,20753,0)
- ;;=338.29^^131^1294^27
- ;;^UTILITY(U,$J,358.3,20753,1,0)
+ ;;^UTILITY(U,$J,358.3,20453,1,4,0)
+ ;;=4^Generalized Abdominal Pain
+ ;;^UTILITY(U,$J,358.3,20453,1,5,0)
+ ;;=5^789.07
+ ;;^UTILITY(U,$J,358.3,20453,2)
+ ;;=Generalized Abdominal Pain^303324
+ ;;^UTILITY(U,$J,358.3,20454,0)
+ ;;=789.04^^109^1265^5
+ ;;^UTILITY(U,$J,358.3,20454,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20753,1,4,0)
- ;;=4^338.29
- ;;^UTILITY(U,$J,358.3,20753,1,5,0)
- ;;=5^Other Chronic Pain
- ;;^UTILITY(U,$J,358.3,20753,2)
- ;;=^334077
- ;;^UTILITY(U,$J,358.3,20754,0)
- ;;=338.3^^131^1294^8
- ;;^UTILITY(U,$J,358.3,20754,1,0)
+ ;;^UTILITY(U,$J,358.3,20454,1,4,0)
+ ;;=4^LL Quad Abdominal
+ ;;^UTILITY(U,$J,358.3,20454,1,5,0)
+ ;;=5^789.04
+ ;;^UTILITY(U,$J,358.3,20454,2)
+ ;;=LL Quad Abdominal^303321
+ ;;^UTILITY(U,$J,358.3,20455,0)
+ ;;=789.02^^109^1265^6
+ ;;^UTILITY(U,$J,358.3,20455,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20754,1,4,0)
- ;;=4^338.3
- ;;^UTILITY(U,$J,358.3,20754,1,5,0)
- ;;=5^Cancer Associated Pain
- ;;^UTILITY(U,$J,358.3,20754,2)
- ;;=^334078
- ;;^UTILITY(U,$J,358.3,20755,0)
- ;;=338.4^^131^1294^11
- ;;^UTILITY(U,$J,358.3,20755,1,0)
+ ;;^UTILITY(U,$J,358.3,20455,1,4,0)
+ ;;=4^LU Quadrant Abdominal Pain
+ ;;^UTILITY(U,$J,358.3,20455,1,5,0)
+ ;;=5^789.02
+ ;;^UTILITY(U,$J,358.3,20455,2)
+ ;;=LU Quadrant Abdominal Pain^303319
+ ;;^UTILITY(U,$J,358.3,20456,0)
+ ;;=789.09^^109^1265^1
+ ;;^UTILITY(U,$J,358.3,20456,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20755,1,4,0)
- ;;=4^338.4
- ;;^UTILITY(U,$J,358.3,20755,1,5,0)
- ;;=5^Chronic Pain Syndrome
- ;;^UTILITY(U,$J,358.3,20755,2)
- ;;=^334079
- ;;^UTILITY(U,$J,358.3,20756,0)
- ;;=780.96^^131^1294^17
- ;;^UTILITY(U,$J,358.3,20756,1,0)
+ ;;^UTILITY(U,$J,358.3,20456,1,4,0)
+ ;;=4^Abdominal Pain, Mult Sites
+ ;;^UTILITY(U,$J,358.3,20456,1,5,0)
+ ;;=5^789.09
+ ;;^UTILITY(U,$J,358.3,20456,2)
+ ;;=Abdominal Pain, Mult Sites^303325
+ ;;^UTILITY(U,$J,358.3,20457,0)
+ ;;=789.05^^109^1265^7
+ ;;^UTILITY(U,$J,358.3,20457,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20756,1,4,0)
- ;;=4^780.96
- ;;^UTILITY(U,$J,358.3,20756,1,5,0)
- ;;=5^Generalized Pain
- ;;^UTILITY(U,$J,358.3,20756,2)
- ;;=^334163
- ;;^UTILITY(U,$J,358.3,20757,0)
- ;;=607.9^^131^1294^30
- ;;^UTILITY(U,$J,358.3,20757,1,0)
+ ;;^UTILITY(U,$J,358.3,20457,1,4,0)
+ ;;=4^Periumbilical Pain
+ ;;^UTILITY(U,$J,358.3,20457,1,5,0)
+ ;;=5^789.05
+ ;;^UTILITY(U,$J,358.3,20457,2)
+ ;;=Periumbilical Pain^303322
+ ;;^UTILITY(U,$J,358.3,20458,0)
+ ;;=789.03^^109^1265^8
+ ;;^UTILITY(U,$J,358.3,20458,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20757,1,4,0)
- ;;=4^607.9
- ;;^UTILITY(U,$J,358.3,20757,1,5,0)
- ;;=5^Penile Pain
- ;;^UTILITY(U,$J,358.3,20757,2)
- ;;=^270442
- ;;^UTILITY(U,$J,358.3,20758,0)
- ;;=608.9^^131^1294^32
- ;;^UTILITY(U,$J,358.3,20758,1,0)
+ ;;^UTILITY(U,$J,358.3,20458,1,4,0)
+ ;;=4^RL Quadrant Abdominal Pain
+ ;;^UTILITY(U,$J,358.3,20458,1,5,0)
+ ;;=5^789.03
+ ;;^UTILITY(U,$J,358.3,20458,2)
+ ;;=RL Quadrant Abdominal Pain^303320
+ ;;^UTILITY(U,$J,358.3,20459,0)
+ ;;=789.01^^109^1265^9
+ ;;^UTILITY(U,$J,358.3,20459,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20758,1,4,0)
- ;;=4^608.9
- ;;^UTILITY(U,$J,358.3,20758,1,5,0)
- ;;=5^Scrotal Pain
- ;;^UTILITY(U,$J,358.3,20758,2)
- ;;=^123856
- ;;^UTILITY(U,$J,358.3,20759,0)
- ;;=V68.1^^131^1295^4
- ;;^UTILITY(U,$J,358.3,20759,1,0)
+ ;;^UTILITY(U,$J,358.3,20459,1,4,0)
+ ;;=4^RU Quadrant Abdominal Pain
+ ;;^UTILITY(U,$J,358.3,20459,1,5,0)
+ ;;=5^789.01
+ ;;^UTILITY(U,$J,358.3,20459,2)
+ ;;=RU Quadrant Abdominal Pain^303318
+ ;;^UTILITY(U,$J,358.3,20460,0)
+ ;;=789.00^^109^1265^2
+ ;;^UTILITY(U,$J,358.3,20460,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20759,1,4,0)
- ;;=4^V68.1
- ;;^UTILITY(U,$J,358.3,20759,1,5,0)
- ;;=5^Rx Refill (Also mark Condition)
- ;;^UTILITY(U,$J,358.3,20759,2)
- ;;=RX Refill (also mark Condition)^295585
- ;;^UTILITY(U,$J,358.3,20760,0)
- ;;=V68.81^^131^1295^6
- ;;^UTILITY(U,$J,358.3,20760,1,0)
+ ;;^UTILITY(U,$J,358.3,20460,1,4,0)
+ ;;=4^Abdominal Pain, Unspec
+ ;;^UTILITY(U,$J,358.3,20460,1,5,0)
+ ;;=5^789.00
+ ;;^UTILITY(U,$J,358.3,20460,2)
+ ;;=Abdominal Pain, Unspec^303317
+ ;;^UTILITY(U,$J,358.3,20461,0)
+ ;;=V67.09^^109^1266^4
+ ;;^UTILITY(U,$J,358.3,20461,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20760,1,4,0)
- ;;=4^V68.81
- ;;^UTILITY(U,$J,358.3,20760,1,5,0)
- ;;=5^Transfer of Care (Also Mark Dx)
- ;;^UTILITY(U,$J,358.3,20760,2)
- ;;=Transfer of Care ^295587
- ;;^UTILITY(U,$J,358.3,20761,0)
- ;;=V58.83^^131^1295^5
- ;;^UTILITY(U,$J,358.3,20761,1,0)
+ ;;^UTILITY(U,$J,358.3,20461,1,4,0)
+ ;;=4^F/U Exam, Completed Treatment
+ ;;^UTILITY(U,$J,358.3,20461,1,5,0)
+ ;;=5^V67.09
+ ;;^UTILITY(U,$J,358.3,20461,2)
+ ;;=F/U exam, completed treatment^322080
+ ;;^UTILITY(U,$J,358.3,20462,0)
+ ;;=V58.73^^109^1266^1
+ ;;^UTILITY(U,$J,358.3,20462,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20761,1,4,0)
- ;;=4^V58.83
- ;;^UTILITY(U,$J,358.3,20761,1,5,0)
- ;;=5^Therapeutic Drug Monitoring
- ;;^UTILITY(U,$J,358.3,20761,2)
- ;;=Encounter for Therapeutic Drug Monitoring^322076
- ;;^UTILITY(U,$J,358.3,20762,0)
- ;;=V65.19^^131^1295^3
- ;;^UTILITY(U,$J,358.3,20762,1,0)
+ ;;^UTILITY(U,$J,358.3,20462,1,4,0)
+ ;;=4^Aftercare After Vasc Surg
+ ;;^UTILITY(U,$J,358.3,20462,1,5,0)
+ ;;=5^V58.73
+ ;;^UTILITY(U,$J,358.3,20462,2)
+ ;;=Aftercare after Vasc Surg^295530
+ ;;^UTILITY(U,$J,358.3,20463,0)
+ ;;=V58.31^^109^1266^2
+ ;;^UTILITY(U,$J,358.3,20463,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20762,1,4,0)
- ;;=4^V65.19
- ;;^UTILITY(U,$J,358.3,20762,1,5,0)
- ;;=5^Person Consulting on Behalf of Pt
- ;;^UTILITY(U,$J,358.3,20762,2)
- ;;=^329985
- ;;^UTILITY(U,$J,358.3,20763,0)
- ;;=V60.89^^131^1295^1
- ;;^UTILITY(U,$J,358.3,20763,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20763,1,4,0)
- ;;=4^V60.89
+ ;;^UTILITY(U,$J,358.3,20463,1,4,0)
+ ;;=4^Attn Rem Surg Dressing
+ ;;^UTILITY(U,$J,358.3,20463,1,5,0)
+ ;;=5^V58.31
+ ;;^UTILITY(U,$J,358.3,20463,2)
+ ;;=^334216
+ ;;^UTILITY(U,$J,358.3,20464,0)
+ ;;=V58.32^^109^1266^3

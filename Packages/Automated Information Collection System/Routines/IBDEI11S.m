@@ -1,112 +1,140 @@
-IBDEI11S ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI11S ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18774,0)
- ;;=28002^^122^1202^2^^^^1
- ;;^UTILITY(U,$J,358.3,18774,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18774,1,2,0)
- ;;=2^Incision and Drainage below fascia, with/without tendon sheath involvement, foot; single bursal space 
- ;;^UTILITY(U,$J,358.3,18774,1,3,0)
- ;;=3^28002
- ;;^UTILITY(U,$J,358.3,18775,0)
- ;;=28003^^122^1202^3^^^^1
- ;;^UTILITY(U,$J,358.3,18775,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18775,1,2,0)
- ;;=2^Incision and Drainage below fascia, with/without tendon sheath involvement, foot; multiple areas 
- ;;^UTILITY(U,$J,358.3,18775,1,3,0)
- ;;=3^28003
- ;;^UTILITY(U,$J,358.3,18776,0)
- ;;=28008^^122^1202^4^^^^1
- ;;^UTILITY(U,$J,358.3,18776,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18776,1,2,0)
- ;;=2^Fasciotomy, foot and/or toe
- ;;^UTILITY(U,$J,358.3,18776,1,3,0)
- ;;=3^28008
- ;;^UTILITY(U,$J,358.3,18777,0)
- ;;=28010^^122^1202^5^^^^1
- ;;^UTILITY(U,$J,358.3,18777,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18777,1,2,0)
- ;;=2^Tenotomy, percutaneous, toe; single tendon
- ;;^UTILITY(U,$J,358.3,18777,1,3,0)
- ;;=3^28010
- ;;^UTILITY(U,$J,358.3,18778,0)
- ;;=28011^^122^1202^6^^^^1
- ;;^UTILITY(U,$J,358.3,18778,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18778,1,2,0)
- ;;=2^Tenotomy, percutaneous, toe; multiple tendons
- ;;^UTILITY(U,$J,358.3,18778,1,3,0)
- ;;=3^28011
- ;;^UTILITY(U,$J,358.3,18779,0)
- ;;=28020^^122^1202^7^^^^1
- ;;^UTILITY(U,$J,358.3,18779,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18779,1,2,0)
- ;;=2^Arthrotomy, including exploration, drainage, or removal of loose or foreign body; intertarsal or tarsometatarsal joint
- ;;^UTILITY(U,$J,358.3,18779,1,3,0)
- ;;=3^28020
- ;;^UTILITY(U,$J,358.3,18780,0)
- ;;=28022^^122^1202^8^^^^1
- ;;^UTILITY(U,$J,358.3,18780,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18780,1,2,0)
- ;;=2^Arthrotomy, including exploration, drainage, or removal of loose or foreign body; metatarsophalangeal joint 
- ;;^UTILITY(U,$J,358.3,18780,1,3,0)
- ;;=3^28022
- ;;^UTILITY(U,$J,358.3,18781,0)
- ;;=28024^^122^1202^9^^^^1
- ;;^UTILITY(U,$J,358.3,18781,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18781,1,2,0)
- ;;=2^Arthrotomy, including exploration, drainage, or removal of loose or foreign body; interphalangeal joint
- ;;^UTILITY(U,$J,358.3,18781,1,3,0)
- ;;=3^28024
- ;;^UTILITY(U,$J,358.3,18782,0)
- ;;=28035^^122^1202^11^^^^1
- ;;^UTILITY(U,$J,358.3,18782,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18782,1,2,0)
- ;;=2^Release, tarsal tunnel
- ;;^UTILITY(U,$J,358.3,18782,1,3,0)
- ;;=3^28035
- ;;^UTILITY(U,$J,358.3,18783,0)
- ;;=28055^^122^1202^10^^^^1
- ;;^UTILITY(U,$J,358.3,18783,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18783,1,2,0)
- ;;=2^Neurectomy, Foot
- ;;^UTILITY(U,$J,358.3,18783,1,3,0)
- ;;=3^28055
- ;;^UTILITY(U,$J,358.3,18784,0)
- ;;=28043^^122^1203^1^^^^1
- ;;^UTILITY(U,$J,358.3,18784,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18784,1,2,0)
- ;;=2^Excision Tumor-Foot,SQ Tissue >1.5cm
- ;;^UTILITY(U,$J,358.3,18784,1,3,0)
- ;;=3^28043
- ;;^UTILITY(U,$J,358.3,18785,0)
- ;;=28045^^122^1203^2^^^^1
- ;;^UTILITY(U,$J,358.3,18785,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18785,1,2,0)
- ;;=2^Excision Tumor-Foot,Deep Subfascial >1.5cm
- ;;^UTILITY(U,$J,358.3,18785,1,3,0)
- ;;=3^28045
- ;;^UTILITY(U,$J,358.3,18786,0)
- ;;=28050^^122^1203^3^^^^1
- ;;^UTILITY(U,$J,358.3,18786,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18786,1,2,0)
- ;;=2^Arthrotomy with biopsy; intertarsal or tarsometatarsal joint 
- ;;^UTILITY(U,$J,358.3,18786,1,3,0)
- ;;=3^28050
- ;;^UTILITY(U,$J,358.3,18787,0)
- ;;=28052^^122^1203^4^^^^1
- ;;^UTILITY(U,$J,358.3,18787,1,0)
- ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,18472,2)
+ ;;=^331797
+ ;;^UTILITY(U,$J,358.3,18473,0)
+ ;;=250.40^^102^1188^5
+ ;;^UTILITY(U,$J,358.3,18473,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18473,1,4,0)
+ ;;=4^DM II RENAL
+ ;;^UTILITY(U,$J,358.3,18473,1,5,0)
+ ;;=5^250.40
+ ;;^UTILITY(U,$J,358.3,18473,2)
+ ;;=^331795
+ ;;^UTILITY(U,$J,358.3,18474,0)
+ ;;=585.6^^102^1188^7
+ ;;^UTILITY(U,$J,358.3,18474,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18474,1,4,0)
+ ;;=4^END STAGE RENAL DISEASE
+ ;;^UTILITY(U,$J,358.3,18474,1,5,0)
+ ;;=5^585.6
+ ;;^UTILITY(U,$J,358.3,18474,2)
+ ;;=^303986
+ ;;^UTILITY(U,$J,358.3,18475,0)
+ ;;=403.91^^102^1188^8
+ ;;^UTILITY(U,$J,358.3,18475,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18475,1,4,0)
+ ;;=4^HTN KID NOS W CHR KID
+ ;;^UTILITY(U,$J,358.3,18475,1,5,0)
+ ;;=5^403.91
+ ;;^UTILITY(U,$J,358.3,18475,2)
+ ;;=^334242
+ ;;^UTILITY(U,$J,358.3,18476,0)
+ ;;=585.9^^102^1188^9
+ ;;^UTILITY(U,$J,358.3,18476,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18476,1,4,0)
+ ;;=4^KIDNEY DIS CHR NOS
+ ;;^UTILITY(U,$J,358.3,18476,1,5,0)
+ ;;=5^585.9
+ ;;^UTILITY(U,$J,358.3,18476,2)
+ ;;=^332812
+ ;;^UTILITY(U,$J,358.3,18477,0)
+ ;;=585.1^^102^1188^10
+ ;;^UTILITY(U,$J,358.3,18477,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18477,1,4,0)
+ ;;=4^KIDNEY DIS CHR STAGE I
+ ;;^UTILITY(U,$J,358.3,18477,1,5,0)
+ ;;=5^585.1
+ ;;^UTILITY(U,$J,358.3,18477,2)
+ ;;=^332807
+ ;;^UTILITY(U,$J,358.3,18478,0)
+ ;;=585.2^^102^1188^11
+ ;;^UTILITY(U,$J,358.3,18478,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18478,1,4,0)
+ ;;=4^KIDNEY DIS CHR STAGE II
+ ;;^UTILITY(U,$J,358.3,18478,1,5,0)
+ ;;=5^585.2
+ ;;^UTILITY(U,$J,358.3,18478,2)
+ ;;=^332808
+ ;;^UTILITY(U,$J,358.3,18479,0)
+ ;;=585.3^^102^1188^12
+ ;;^UTILITY(U,$J,358.3,18479,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18479,1,4,0)
+ ;;=4^KIDNEY DIS CHR STAGE III
+ ;;^UTILITY(U,$J,358.3,18479,1,5,0)
+ ;;=5^585.3
+ ;;^UTILITY(U,$J,358.3,18479,2)
+ ;;=^332809
+ ;;^UTILITY(U,$J,358.3,18480,0)
+ ;;=585.4^^102^1188^13
+ ;;^UTILITY(U,$J,358.3,18480,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18480,1,4,0)
+ ;;=4^KIDNEY DIS CHR STAGE IV
+ ;;^UTILITY(U,$J,358.3,18480,1,5,0)
+ ;;=5^585.4
+ ;;^UTILITY(U,$J,358.3,18480,2)
+ ;;=^332810
+ ;;^UTILITY(U,$J,358.3,18481,0)
+ ;;=585.5^^102^1188^14
+ ;;^UTILITY(U,$J,358.3,18481,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18481,1,4,0)
+ ;;=4^KIDNEY DIS CHR STAGE V
+ ;;^UTILITY(U,$J,358.3,18481,1,5,0)
+ ;;=5^585.5
+ ;;^UTILITY(U,$J,358.3,18481,2)
+ ;;=^332811
+ ;;^UTILITY(U,$J,358.3,18482,0)
+ ;;=584.5^^102^1188^16
+ ;;^UTILITY(U,$J,358.3,18482,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18482,1,4,0)
+ ;;=4^KIDNEY FAIL AC,TUBR NECR
+ ;;^UTILITY(U,$J,358.3,18482,1,5,0)
+ ;;=5^584.5
+ ;;^UTILITY(U,$J,358.3,18482,2)
+ ;;=^338528
+ ;;^UTILITY(U,$J,358.3,18483,0)
+ ;;=584.6^^102^1188^15
+ ;;^UTILITY(U,$J,358.3,18483,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18483,1,4,0)
+ ;;=4^KIDNEY FAIL AC,CORT NECR
+ ;;^UTILITY(U,$J,358.3,18483,1,5,0)
+ ;;=5^584.6
+ ;;^UTILITY(U,$J,358.3,18483,2)
+ ;;=^338529
+ ;;^UTILITY(U,$J,358.3,18484,0)
+ ;;=403.01^^102^1188^17
+ ;;^UTILITY(U,$J,358.3,18484,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18484,1,4,0)
+ ;;=4^MAL HTN KID W CHR KID V
+ ;;^UTILITY(U,$J,358.3,18484,1,5,0)
+ ;;=5^403.01
+ ;;^UTILITY(U,$J,358.3,18484,2)
+ ;;=^334240
+ ;;^UTILITY(U,$J,358.3,18485,0)
+ ;;=189.1^^102^1188^19
+ ;;^UTILITY(U,$J,358.3,18485,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18485,1,4,0)
+ ;;=4^MAL NEO RENAL PELVIS
+ ;;^UTILITY(U,$J,358.3,18485,1,5,0)
+ ;;=5^189.1
+ ;;^UTILITY(U,$J,358.3,18485,2)
+ ;;=^267264
+ ;;^UTILITY(U,$J,358.3,18486,0)
+ ;;=189.0^^102^1188^18
+ ;;^UTILITY(U,$J,358.3,18486,1,0)
+ ;;=^358.31IA^5^2

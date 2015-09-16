@@ -1,144 +1,130 @@
-IBDEI1GY ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
- F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI1GY ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,"OR",207,0)
- ;;=207^IBDE^^OE/RR-CLEVELAND
- ;;^UTILITY(U,$J,"PKG",207,0)
- ;;=IB ENCOUNTER FORM IMP/EXP^IBDE^The import/export utilities for encounter forms.
- ;;^UTILITY(U,$J,"PKG",207,4,0)
- ;;=^9.44PA^14^14
- ;;^UTILITY(U,$J,"PKG",207,4,1,0)
- ;;=358
- ;;^UTILITY(U,$J,"PKG",207,4,1,1,0)
- ;;=^9.45A^1^1
- ;;^UTILITY(U,$J,"PKG",207,4,1,1,1,0)
- ;;=NAME
- ;;^UTILITY(U,$J,"PKG",207,4,1,1,"B","NAME",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,1,222)
- ;;=n^n^^y^^^y^o^y
- ;;^UTILITY(U,$J,"PKG",207,4,2,0)
- ;;=358.1
- ;;^UTILITY(U,$J,"PKG",207,4,2,1,0)
- ;;=^9.45A^1^1
- ;;^UTILITY(U,$J,"PKG",207,4,2,1,1,0)
- ;;=NAME
- ;;^UTILITY(U,$J,"PKG",207,4,2,1,"B","NAME",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,2,222)
- ;;=y^y^^n^^^y^o^y
- ;;^UTILITY(U,$J,"PKG",207,4,3,0)
- ;;=358.2
- ;;^UTILITY(U,$J,"PKG",207,4,3,1,0)
- ;;=^9.45A^1^1
- ;;^UTILITY(U,$J,"PKG",207,4,3,1,1,0)
- ;;=NAME
- ;;^UTILITY(U,$J,"PKG",207,4,3,1,"B","NAME",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,3,222)
- ;;=y^n^^y^^^y^o^n
- ;;^UTILITY(U,$J,"PKG",207,4,4,0)
- ;;=358.3
- ;;^UTILITY(U,$J,"PKG",207,4,4,1,0)
- ;;=^9.45A^2^2
- ;;^UTILITY(U,$J,"PKG",207,4,4,1,1,0)
- ;;=SELECTION ID
- ;;^UTILITY(U,$J,"PKG",207,4,4,1,2,0)
- ;;=SELECTION ID
- ;;^UTILITY(U,$J,"PKG",207,4,4,1,"B","SELECTION ID",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,4,1,"B","SELECTION ID",2)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,4,222)
- ;;=y^n^^y^^^y^o^y
- ;;^UTILITY(U,$J,"PKG",207,4,5,0)
- ;;=358.4
- ;;^UTILITY(U,$J,"PKG",207,4,5,1,0)
- ;;=^9.45A^1^1
- ;;^UTILITY(U,$J,"PKG",207,4,5,1,1,0)
- ;;=HEADER
- ;;^UTILITY(U,$J,"PKG",207,4,5,1,"B","HEADER",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,5,222)
- ;;=y^n^^y^^^y^o^y
- ;;^UTILITY(U,$J,"PKG",207,4,6,0)
- ;;=358.5
- ;;^UTILITY(U,$J,"PKG",207,4,6,1,0)
- ;;=^9.45A^1^1
- ;;^UTILITY(U,$J,"PKG",207,4,6,1,1,0)
- ;;=NAME
- ;;^UTILITY(U,$J,"PKG",207,4,6,1,"B","NAME",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,6,222)
- ;;=y^y^^y^^^y^o^y
- ;;^UTILITY(U,$J,"PKG",207,4,7,0)
- ;;=358.6
- ;;^UTILITY(U,$J,"PKG",207,4,7,1,0)
- ;;=^9.45A^1^1
- ;;^UTILITY(U,$J,"PKG",207,4,7,1,1,0)
- ;;=NAME
- ;;^UTILITY(U,$J,"PKG",207,4,7,1,"B","NAME",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,7,222)
- ;;=n^n^^y^^^y^o^y
- ;;^UTILITY(U,$J,"PKG",207,4,8,0)
- ;;=358.7
- ;;^UTILITY(U,$J,"PKG",207,4,8,1,0)
- ;;=^9.45A^1^1
- ;;^UTILITY(U,$J,"PKG",207,4,8,1,1,0)
- ;;=NAME
- ;;^UTILITY(U,$J,"PKG",207,4,8,1,"B","NAME",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,8,222)
- ;;=n^n^^n^^^n^o^n
- ;;^UTILITY(U,$J,"PKG",207,4,9,0)
- ;;=358.8
- ;;^UTILITY(U,$J,"PKG",207,4,9,1,0)
- ;;=^9.45A^1^1
- ;;^UTILITY(U,$J,"PKG",207,4,9,1,1,0)
- ;;=NAME
- ;;^UTILITY(U,$J,"PKG",207,4,9,1,"B","NAME",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,9,222)
- ;;=n^n^^n^^^y^o^n
- ;;^UTILITY(U,$J,"PKG",207,4,10,0)
- ;;=358.91
- ;;^UTILITY(U,$J,"PKG",207,4,10,1,0)
- ;;=^9.45A^1^1
- ;;^UTILITY(U,$J,"PKG",207,4,10,1,1,0)
- ;;=NAME
- ;;^UTILITY(U,$J,"PKG",207,4,10,1,"B","NAME",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,10,222)
- ;;=n^n^^n^^^y^o^n
- ;;^UTILITY(U,$J,"PKG",207,4,11,0)
- ;;=358.94
- ;;^UTILITY(U,$J,"PKG",207,4,11,1,0)
- ;;=^9.45A^1^1
- ;;^UTILITY(U,$J,"PKG",207,4,11,1,1,0)
- ;;=NAME
- ;;^UTILITY(U,$J,"PKG",207,4,11,1,"B","NAME",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,11,222)
- ;;=n^y^^n^^^y^o^n
- ;;^UTILITY(U,$J,"PKG",207,4,12,0)
- ;;=358.93
- ;;^UTILITY(U,$J,"PKG",207,4,12,1,0)
- ;;=^9.45A^1^1
- ;;^UTILITY(U,$J,"PKG",207,4,12,1,1,0)
- ;;=NAME
- ;;^UTILITY(U,$J,"PKG",207,4,12,1,"B","NAME",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,12,222)
- ;;=n^n^^n^^^y^o^n
- ;;^UTILITY(U,$J,"PKG",207,4,13,0)
- ;;=358.99
- ;;^UTILITY(U,$J,"PKG",207,4,13,1,0)
- ;;=^9.45A^1^1
- ;;^UTILITY(U,$J,"PKG",207,4,13,1,1,0)
- ;;=DHCP DATA TYPE
- ;;^UTILITY(U,$J,"PKG",207,4,13,1,"B","DHCP DATA TYPE",1)
- ;;=
- ;;^UTILITY(U,$J,"PKG",207,4,13,222)
- ;;=n^y^^n^^^y^o^n
+ ;;^UTILITY(U,$J,358.3,26059,1,2,0)
+ ;;=2^90834
+ ;;^UTILITY(U,$J,358.3,26059,1,3,0)
+ ;;=3^Psychotherapy 38-52 min
+ ;;^UTILITY(U,$J,358.3,26060,0)
+ ;;=90837^^151^1658^3^^^^1
+ ;;^UTILITY(U,$J,358.3,26060,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26060,1,2,0)
+ ;;=2^90837
+ ;;^UTILITY(U,$J,358.3,26060,1,3,0)
+ ;;=3^Psychotherapy 53-89 min
+ ;;^UTILITY(U,$J,358.3,26061,0)
+ ;;=90853^^151^1658^4^^^^1
+ ;;^UTILITY(U,$J,358.3,26061,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26061,1,2,0)
+ ;;=2^90853
+ ;;^UTILITY(U,$J,358.3,26061,1,3,0)
+ ;;=3^Group Psychotherapy
+ ;;^UTILITY(U,$J,358.3,26062,0)
+ ;;=90846^^151^1658^5^^^^1
+ ;;^UTILITY(U,$J,358.3,26062,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26062,1,2,0)
+ ;;=2^90846
+ ;;^UTILITY(U,$J,358.3,26062,1,3,0)
+ ;;=3^Family Psychotherapy w/o Pt
+ ;;^UTILITY(U,$J,358.3,26063,0)
+ ;;=90847^^151^1658^6^^^^1
+ ;;^UTILITY(U,$J,358.3,26063,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26063,1,2,0)
+ ;;=2^90847
+ ;;^UTILITY(U,$J,358.3,26063,1,3,0)
+ ;;=3^Family Psychotherapy w/ Pt
+ ;;^UTILITY(U,$J,358.3,26064,0)
+ ;;=90875^^151^1658^7^^^^1
+ ;;^UTILITY(U,$J,358.3,26064,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26064,1,2,0)
+ ;;=2^90875
+ ;;^UTILITY(U,$J,358.3,26064,1,3,0)
+ ;;=3^With Biofeedback 20-30 min
+ ;;^UTILITY(U,$J,358.3,26065,0)
+ ;;=90876^^151^1658^8^^^^1
+ ;;^UTILITY(U,$J,358.3,26065,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26065,1,2,0)
+ ;;=2^90876
+ ;;^UTILITY(U,$J,358.3,26065,1,3,0)
+ ;;=3^With Biofeedback 45-50 min
+ ;;^UTILITY(U,$J,358.3,26066,0)
+ ;;=90839^^151^1659^1^^^^1
+ ;;^UTILITY(U,$J,358.3,26066,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26066,1,2,0)
+ ;;=2^90839
+ ;;^UTILITY(U,$J,358.3,26066,1,3,0)
+ ;;=3^PsychTx Crisis Init,30-74 Min
+ ;;^UTILITY(U,$J,358.3,26067,0)
+ ;;=90840^^151^1659^2^^^^1
+ ;;^UTILITY(U,$J,358.3,26067,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26067,1,2,0)
+ ;;=2^90840
+ ;;^UTILITY(U,$J,358.3,26067,1,3,0)
+ ;;=3^PsychTx Crisis;Ea Addl 30 min
+ ;;^UTILITY(U,$J,358.3,26068,0)
+ ;;=97545^^151^1660^30^^^^1
+ ;;^UTILITY(U,$J,358.3,26068,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26068,1,2,0)
+ ;;=2^97545
+ ;;^UTILITY(U,$J,358.3,26068,1,3,0)
+ ;;=3^Work Therapy, Init 2 hrs
+ ;;^UTILITY(U,$J,358.3,26069,0)
+ ;;=97546^^151^1660^29^^^^1
+ ;;^UTILITY(U,$J,358.3,26069,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26069,1,2,0)
+ ;;=2^97546
+ ;;^UTILITY(U,$J,358.3,26069,1,3,0)
+ ;;=3^Work Ther, addl hrs after 2
+ ;;^UTILITY(U,$J,358.3,26070,0)
+ ;;=97537^^151^1660^4^^^^1
+ ;;^UTILITY(U,$J,358.3,26070,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26070,1,2,0)
+ ;;=2^97537
+ ;;^UTILITY(U,$J,358.3,26070,1,3,0)
+ ;;=3^Community/Work Reintegration per 15 min
+ ;;^UTILITY(U,$J,358.3,26071,0)
+ ;;=97532^^151^1660^3^^^^1
+ ;;^UTILITY(U,$J,358.3,26071,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26071,1,2,0)
+ ;;=2^97532
+ ;;^UTILITY(U,$J,358.3,26071,1,3,0)
+ ;;=3^Cognitive Sk Dev (PhD/OT)per 15min
+ ;;^UTILITY(U,$J,358.3,26072,0)
+ ;;=97533^^151^1660^23^^^^1
+ ;;^UTILITY(U,$J,358.3,26072,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26072,1,2,0)
+ ;;=2^97533
+ ;;^UTILITY(U,$J,358.3,26072,1,3,0)
+ ;;=3^Sensory Integrat per 15 min
+ ;;^UTILITY(U,$J,358.3,26073,0)
+ ;;=97535^^151^1660^1^^^^1
+ ;;^UTILITY(U,$J,358.3,26073,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26073,1,2,0)
+ ;;=2^97535
+ ;;^UTILITY(U,$J,358.3,26073,1,3,0)
+ ;;=3^ADL Train per 15 min
+ ;;^UTILITY(U,$J,358.3,26074,0)
+ ;;=H0004^^151^1660^25^^^^1
+ ;;^UTILITY(U,$J,358.3,26074,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26074,1,2,0)
+ ;;=2^H0004
+ ;;^UTILITY(U,$J,358.3,26074,1,3,0)
+ ;;=3^Subs Abuse Ind Counseling,per 15 min
+ ;;^UTILITY(U,$J,358.3,26075,0)
+ ;;=H0046^^151^1660^14^^^^1

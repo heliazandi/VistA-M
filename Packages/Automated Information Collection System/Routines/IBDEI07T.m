@@ -1,44 +1,142 @@
-IBDEI07T ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
- Q:'DIFQ(358.98)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI07T ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.98,0,"GL")
- ;;=^IBD(358.98,
- ;;^DIC("B","IMP/EXP AICS DATA QUALIFIERS",358.98)
- ;;=
- ;;^DIC(358.98,"%D",0)
- ;;=^^1^1^2950927^^^
- ;;^DIC(358.98,"%D",1,0)
- ;;=Used by the import/export utility of the encounter forms as a workspace.
- ;;^DD(358.98,0)
- ;;=FIELD^^.03^3
- ;;^DD(358.98,0,"DDA")
- ;;=N
- ;;^DD(358.98,0,"DT")
- ;;=2950717
- ;;^DD(358.98,0,"ID",.02)
- ;;=W "   ",$P(^(0),U,2)
- ;;^DD(358.98,0,"IX","B",358.98,.01)
- ;;=
- ;;^DD(358.98,0,"NM","IMP/EXP AICS DATA QUALIFIERS")
- ;;=
- ;;^DD(358.98,0,"PT",358.22,.09)
- ;;=
- ;;^DD(358.98,0,"PT",358.613,.01)
- ;;=
- ;;^DD(358.98,0,"PT",358.931,.09)
- ;;=
- ;;^DD(358.98,0,"VRPK")
- ;;=IBD
- ;;^DD(358.98,.01,0)
- ;;=NAME^RF^^0;1^K:$L(X)>30!(X?.N)!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.98,.01,1,0)
- ;;=^.1
- ;;^DD(358.98,.01,1,1,0)
- ;;=358.98^B
- ;;^DD(358.98,.01,1,1,1)
- ;;=S ^IBD(358.98,"B",$E(X,1,30),DA)=""
- ;;^DD(358.98,.01,1,1,2)
- ;;=K ^IBD(358.98,"B",$E(X,1,30),DA)
- ;;^DD(358.98,.01,3)
- ;;=NAME MUST BE 3-30 CHARACTERS, NOT NUMERIC OR STARTING WITH PUNCTUATION
+ ;;^UTILITY(U,$J,358.3,3156,1,4,0)
+ ;;=4^R41.83
+ ;;^UTILITY(U,$J,358.3,3156,2)
+ ;;=^5019442
+ ;;^UTILITY(U,$J,358.3,3157,0)
+ ;;=F90.0^^8^100^3
+ ;;^UTILITY(U,$J,358.3,3157,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3157,1,3,0)
+ ;;=3^ADHD,Inattentive Type
+ ;;^UTILITY(U,$J,358.3,3157,1,4,0)
+ ;;=4^F90.0
+ ;;^UTILITY(U,$J,358.3,3157,2)
+ ;;=^5003692
+ ;;^UTILITY(U,$J,358.3,3158,0)
+ ;;=F90.2^^8^100^1
+ ;;^UTILITY(U,$J,358.3,3158,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3158,1,3,0)
+ ;;=3^ADHD,Combined Type
+ ;;^UTILITY(U,$J,358.3,3158,1,4,0)
+ ;;=4^F90.2
+ ;;^UTILITY(U,$J,358.3,3158,2)
+ ;;=^5003694
+ ;;^UTILITY(U,$J,358.3,3159,0)
+ ;;=F90.1^^8^100^2
+ ;;^UTILITY(U,$J,358.3,3159,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3159,1,3,0)
+ ;;=3^ADHD,Hyperactive/Impulsive Type
+ ;;^UTILITY(U,$J,358.3,3159,1,4,0)
+ ;;=4^F90.1
+ ;;^UTILITY(U,$J,358.3,3159,2)
+ ;;=^5003693
+ ;;^UTILITY(U,$J,358.3,3160,0)
+ ;;=Z70.9^^8^101^2
+ ;;^UTILITY(U,$J,358.3,3160,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3160,1,3,0)
+ ;;=3^Sex Counseling
+ ;;^UTILITY(U,$J,358.3,3160,1,4,0)
+ ;;=4^Z70.9
+ ;;^UTILITY(U,$J,358.3,3160,2)
+ ;;=^5063241
+ ;;^UTILITY(U,$J,358.3,3161,0)
+ ;;=Z71.9^^8^101^1
+ ;;^UTILITY(U,$J,358.3,3161,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3161,1,3,0)
+ ;;=3^Counseling/Consultation NEC
+ ;;^UTILITY(U,$J,358.3,3161,1,4,0)
+ ;;=4^Z71.9
+ ;;^UTILITY(U,$J,358.3,3161,2)
+ ;;=^5063254
+ ;;^UTILITY(U,$J,358.3,3162,0)
+ ;;=Z60.0^^8^102^2
+ ;;^UTILITY(U,$J,358.3,3162,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3162,1,3,0)
+ ;;=3^Phase of Life Problem
+ ;;^UTILITY(U,$J,358.3,3162,1,4,0)
+ ;;=4^Z60.0
+ ;;^UTILITY(U,$J,358.3,3162,2)
+ ;;=^5063139
+ ;;^UTILITY(U,$J,358.3,3163,0)
+ ;;=Z60.2^^8^102^3
+ ;;^UTILITY(U,$J,358.3,3163,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3163,1,3,0)
+ ;;=3^Problem Related to Living Alone
+ ;;^UTILITY(U,$J,358.3,3163,1,4,0)
+ ;;=4^Z60.2
+ ;;^UTILITY(U,$J,358.3,3163,2)
+ ;;=^5063140
+ ;;^UTILITY(U,$J,358.3,3164,0)
+ ;;=Z60.3^^8^102^1
+ ;;^UTILITY(U,$J,358.3,3164,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3164,1,3,0)
+ ;;=3^Acculturation Difficulty
+ ;;^UTILITY(U,$J,358.3,3164,1,4,0)
+ ;;=4^Z60.3
+ ;;^UTILITY(U,$J,358.3,3164,2)
+ ;;=^5063141
+ ;;^UTILITY(U,$J,358.3,3165,0)
+ ;;=Z60.4^^8^102^5
+ ;;^UTILITY(U,$J,358.3,3165,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3165,1,3,0)
+ ;;=3^Social Exclusion or Rejection
+ ;;^UTILITY(U,$J,358.3,3165,1,4,0)
+ ;;=4^Z60.4
+ ;;^UTILITY(U,$J,358.3,3165,2)
+ ;;=^5063142
+ ;;^UTILITY(U,$J,358.3,3166,0)
+ ;;=Z60.5^^8^102^6
+ ;;^UTILITY(U,$J,358.3,3166,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3166,1,3,0)
+ ;;=3^Target of (Perceived) Adverse Discrimination or Persecution
+ ;;^UTILITY(U,$J,358.3,3166,1,4,0)
+ ;;=4^Z60.5
+ ;;^UTILITY(U,$J,358.3,3166,2)
+ ;;=^5063143
+ ;;^UTILITY(U,$J,358.3,3167,0)
+ ;;=Z60.9^^8^102^4
+ ;;^UTILITY(U,$J,358.3,3167,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3167,1,3,0)
+ ;;=3^Problem Related to Social Environment,Unspec
+ ;;^UTILITY(U,$J,358.3,3167,1,4,0)
+ ;;=4^Z60.9
+ ;;^UTILITY(U,$J,358.3,3167,2)
+ ;;=^5063145
+ ;;^UTILITY(U,$J,358.3,3168,0)
+ ;;=F65.4^^8^103^6
+ ;;^UTILITY(U,$J,358.3,3168,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3168,1,3,0)
+ ;;=3^Pedophilia Disorder
+ ;;^UTILITY(U,$J,358.3,3168,1,4,0)
+ ;;=4^F65.4
+ ;;^UTILITY(U,$J,358.3,3168,2)
+ ;;=^5003655
+ ;;^UTILITY(U,$J,358.3,3169,0)
+ ;;=F65.2^^8^103^1
+ ;;^UTILITY(U,$J,358.3,3169,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3169,1,3,0)
+ ;;=3^Exhibitionistic Disorder
+ ;;^UTILITY(U,$J,358.3,3169,1,4,0)
+ ;;=4^F65.2
+ ;;^UTILITY(U,$J,358.3,3169,2)
+ ;;=^5003653
+ ;;^UTILITY(U,$J,358.3,3170,0)
+ ;;=F65.3^^8^103^10
+ ;;^UTILITY(U,$J,358.3,3170,1,0)
+ ;;=^358.31IA^4^2

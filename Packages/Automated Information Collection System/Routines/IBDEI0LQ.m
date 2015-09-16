@@ -1,62 +1,138 @@
-IBDEI0LQ ; ; 19-NOV-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
- Q:'DIFQ(358.5)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI0LQ ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.5,0,"GL")
- ;;=^IBE(358.5,
- ;;^DIC("B","IMP/EXP DATA FIELD",358.5)
- ;;=
- ;;^DIC(358.5,"%D",0)
- ;;=^^1^1^2940829^^^^
- ;;^DIC(358.5,"%D",1,0)
- ;;=Used by the import/export utility as a workspace.
- ;;^DIC(358.5,"%D",2,0)
- ;;= 
- ;;^DIC(358.5,"%D",3,0)
- ;;= 
- ;;^DIC(358.5,"%D",4,0)
- ;;=This file is nearly identical to file #357.5. It is used by the
- ;;^DIC(358.5,"%D",5,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.5,"%D",6,0)
- ;;=that is being imported or exported.
- ;;^DD(358.5,0)
- ;;=FIELD^^2^13
- ;;^DD(358.5,0,"DDA")
- ;;=N
- ;;^DD(358.5,0,"DT")
- ;;=2930730
- ;;^DD(358.5,0,"ID",.02)
- ;;=W ""
- ;;^DD(358.5,0,"ID",.03)
- ;;=W ""
- ;;^DD(358.5,0,"IX","B",358.5,.01)
- ;;=
- ;;^DD(358.5,0,"IX","C",358.5,.02)
- ;;=
- ;;^DD(358.5,0,"NM","IMP/EXP DATA FIELD")
- ;;=
- ;;^DD(358.5,0,"VRPK")
- ;;=IBD
- ;;^DD(358.5,.01,0)
- ;;=NAME^RF^^0;1^K:$L(X)>30!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.5,.01,1,0)
- ;;=^.1
- ;;^DD(358.5,.01,1,1,0)
- ;;=358.5^B
- ;;^DD(358.5,.01,1,1,1)
- ;;=S ^IBE(358.5,"B",$E(X,1,30),DA)=""
- ;;^DD(358.5,.01,1,1,2)
- ;;=K ^IBE(358.5,"B",$E(X,1,30),DA)
- ;;^DD(358.5,.01,3)
- ;;=Answer must be 3-30 characters in length.
- ;;^DD(358.5,.01,21,0)
- ;;=^^3^3^2930419^^^
- ;;^DD(358.5,.01,21,1,0)
- ;;= 
- ;;^DD(358.5,.01,21,2,0)
- ;;=The name is used to identify the field within a block. It can be anything
- ;;^DD(358.5,.01,21,3,0)
- ;;=the designer of a form wants it to be.
- ;;^DD(358.5,.01,"DT")
- ;;=2930419
+ ;;^UTILITY(U,$J,358.3,10304,0)
+ ;;=804.00^^44^562^37
+ ;;^UTILITY(U,$J,358.3,10304,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10304,1,3,0)
+ ;;=3^FX Skull/Face Mult w/o Intracranial Inj
+ ;;^UTILITY(U,$J,358.3,10304,1,4,0)
+ ;;=4^804.00
+ ;;^UTILITY(U,$J,358.3,10304,2)
+ ;;=^273780
+ ;;^UTILITY(U,$J,358.3,10305,0)
+ ;;=V10.84^^44^562^47
+ ;;^UTILITY(U,$J,358.3,10305,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10305,1,3,0)
+ ;;=3^Hx Eye CA,Personal
+ ;;^UTILITY(U,$J,358.3,10305,1,4,0)
+ ;;=4^V10.84
+ ;;^UTILITY(U,$J,358.3,10305,2)
+ ;;=^295242
+ ;;^UTILITY(U,$J,358.3,10306,0)
+ ;;=V16.9^^44^562^46
+ ;;^UTILITY(U,$J,358.3,10306,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10306,1,3,0)
+ ;;=3^Hx CA,Family
+ ;;^UTILITY(U,$J,358.3,10306,1,4,0)
+ ;;=4^V16.9
+ ;;^UTILITY(U,$J,358.3,10306,2)
+ ;;=^295301
+ ;;^UTILITY(U,$J,358.3,10307,0)
+ ;;=V19.0^^44^562^45
+ ;;^UTILITY(U,$J,358.3,10307,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10307,1,3,0)
+ ;;=3^Hx Blindness/Visual Loss,Family
+ ;;^UTILITY(U,$J,358.3,10307,1,4,0)
+ ;;=4^V19.0
+ ;;^UTILITY(U,$J,358.3,10307,2)
+ ;;=^295320
+ ;;^UTILITY(U,$J,358.3,10308,0)
+ ;;=V60.0^^44^562^55
+ ;;^UTILITY(U,$J,358.3,10308,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10308,1,3,0)
+ ;;=3^Lack of Housing
+ ;;^UTILITY(U,$J,358.3,10308,1,4,0)
+ ;;=4^V60.0
+ ;;^UTILITY(U,$J,358.3,10308,2)
+ ;;=^295539
+ ;;^UTILITY(U,$J,358.3,10309,0)
+ ;;=V65.5^^44^562^13
+ ;;^UTILITY(U,$J,358.3,10309,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10309,1,3,0)
+ ;;=3^Condition Not Found
+ ;;^UTILITY(U,$J,358.3,10309,1,4,0)
+ ;;=4^V65.5
+ ;;^UTILITY(U,$J,358.3,10309,2)
+ ;;=^295564
+ ;;^UTILITY(U,$J,358.3,10310,0)
+ ;;=V67.51^^44^562^12
+ ;;^UTILITY(U,$J,358.3,10310,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10310,1,3,0)
+ ;;=3^Completed Trmt of High Risk Med
+ ;;^UTILITY(U,$J,358.3,10310,1,4,0)
+ ;;=4^V67.51
+ ;;^UTILITY(U,$J,358.3,10310,2)
+ ;;=^295577
+ ;;^UTILITY(U,$J,358.3,10311,0)
+ ;;=V87.39^^44^562^15
+ ;;^UTILITY(U,$J,358.3,10311,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10311,1,3,0)
+ ;;=3^Cont/Exp Hazard Sub NEC
+ ;;^UTILITY(U,$J,358.3,10311,1,4,0)
+ ;;=4^V87.39
+ ;;^UTILITY(U,$J,358.3,10311,2)
+ ;;=^336815
+ ;;^UTILITY(U,$J,358.3,10312,0)
+ ;;=369.05^^44^562^76
+ ;;^UTILITY(U,$J,358.3,10312,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10312,1,3,0)
+ ;;=3^One Eye-Profound,Oth Eye-NOS
+ ;;^UTILITY(U,$J,358.3,10312,1,4,0)
+ ;;=4^369.05
+ ;;^UTILITY(U,$J,358.3,10312,2)
+ ;;=^268865
+ ;;^UTILITY(U,$J,358.3,10313,0)
+ ;;=365.11^^44^563^20
+ ;;^UTILITY(U,$J,358.3,10313,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10313,1,3,0)
+ ;;=3^Glaucoma,Open Angle
+ ;;^UTILITY(U,$J,358.3,10313,1,4,0)
+ ;;=4^365.11
+ ;;^UTILITY(U,$J,358.3,10313,2)
+ ;;=Open Angle Glaucoma^51203
+ ;;^UTILITY(U,$J,358.3,10314,0)
+ ;;=365.12^^44^563^16
+ ;;^UTILITY(U,$J,358.3,10314,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10314,1,3,0)
+ ;;=3^Glaucoma,Low Tension
+ ;;^UTILITY(U,$J,358.3,10314,1,4,0)
+ ;;=4^365.12
+ ;;^UTILITY(U,$J,358.3,10314,2)
+ ;;=Low Tension Glaucoma^265223
+ ;;^UTILITY(U,$J,358.3,10315,0)
+ ;;=365.63^^44^563^19
+ ;;^UTILITY(U,$J,358.3,10315,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10315,1,3,0)
+ ;;=3^Glaucoma,Neovascular
+ ;;^UTILITY(U,$J,358.3,10315,1,4,0)
+ ;;=4^365.63
+ ;;^UTILITY(U,$J,358.3,10315,2)
+ ;;=Neovascular Glaucoma^268778
+ ;;^UTILITY(U,$J,358.3,10316,0)
+ ;;=365.10^^44^563^22
+ ;;^UTILITY(U,$J,358.3,10316,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10316,1,3,0)
+ ;;=3^Glaucoma,Open Angle Unspec
+ ;;^UTILITY(U,$J,358.3,10316,1,4,0)
+ ;;=4^365.10
+ ;;^UTILITY(U,$J,358.3,10316,2)
+ ;;=^51206
+ ;;^UTILITY(U,$J,358.3,10317,0)
+ ;;=365.13^^44^563^25
+ ;;^UTILITY(U,$J,358.3,10317,1,0)
+ ;;=^358.31IA^4^2

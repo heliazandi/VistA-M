@@ -1,58 +1,140 @@
-IBDEI0LX ; ; 19-NOV-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
- Q:'DIFQ(358.7)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI0LX ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.7,0,"GL")
- ;;=^IBE(358.7,
- ;;^DIC("B","IMP/EXP FORM LINE",358.7)
- ;;=
- ;;^DIC(358.7,"%D",0)
- ;;=^^3^3^2940217^
- ;;^DIC(358.7,"%D",1,0)
- ;;=This file is nearly identical to file #357.7. It is used by the
- ;;^DIC(358.7,"%D",2,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.7,"%D",3,0)
- ;;=that is being imported or exported.
- ;;^DD(358.7,0)
- ;;=FIELD^^.08^8
- ;;^DD(358.7,0,"DDA")
- ;;=N
- ;;^DD(358.7,0,"DT")
- ;;=2950717
- ;;^DD(358.7,0,"ID",.02)
- ;;=W " STARTING COL=",$P(^(0),U,2)+1
- ;;^DD(358.7,0,"ID",.03)
- ;;=W " STARTING ROW=",$P(^(0),U,3)+1
- ;;^DD(358.7,0,"ID",.06)
- ;;=W ""
- ;;^DD(358.7,0,"IX","B",358.7,.01)
- ;;=
- ;;^DD(358.7,0,"IX","C",358.7,.06)
- ;;=
- ;;^DD(358.7,0,"NM","IMP/EXP FORM LINE")
- ;;=
- ;;^DD(358.7,0,"VRPK")
- ;;=IBD
- ;;^DD(358.7,.01,0)
- ;;=NAME^RF^^0;1^K:$L(X)>30!(X?.N)!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.7,.01,1,0)
- ;;=^.1
- ;;^DD(358.7,.01,1,1,0)
- ;;=358.7^B
- ;;^DD(358.7,.01,1,1,1)
- ;;=S ^IBE(358.7,"B",$E(X,1,30),DA)=""
- ;;^DD(358.7,.01,1,1,2)
- ;;=K ^IBE(358.7,"B",$E(X,1,30),DA)
- ;;^DD(358.7,.01,3)
- ;;=NAME MUST BE 3-30 CHARACTERS, NOT NUMERIC OR STARTING WITH PUNCTUATION
- ;;^DD(358.7,.01,21,0)
- ;;=^^4^4^2930527^
- ;;^DD(358.7,.01,21,1,0)
- ;;= 
- ;;^DD(358.7,.01,21,2,0)
- ;;=The name given to the line. Lines should be given names that will allow
- ;;^DD(358.7,.01,21,3,0)
- ;;=them to be identifies, such as V(1,1), meaning a vertical line starting at
- ;;^DD(358.7,.01,21,4,0)
- ;;=coordinates (1,1).
+ ;;^UTILITY(U,$J,358.3,10397,1,3,0)
+ ;;=3^Conjunctivitis,Inclusion
+ ;;^UTILITY(U,$J,358.3,10397,1,4,0)
+ ;;=4^077.0
+ ;;^UTILITY(U,$J,358.3,10397,2)
+ ;;=^27600
+ ;;^UTILITY(U,$J,358.3,10398,0)
+ ;;=077.1^^44^565^61
+ ;;^UTILITY(U,$J,358.3,10398,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10398,1,3,0)
+ ;;=3^Keratoconjunctivitis,Epidemic EKC
+ ;;^UTILITY(U,$J,358.3,10398,1,4,0)
+ ;;=4^077.1
+ ;;^UTILITY(U,$J,358.3,10398,2)
+ ;;=^41251
+ ;;^UTILITY(U,$J,358.3,10399,0)
+ ;;=077.8^^44^565^37
+ ;;^UTILITY(U,$J,358.3,10399,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10399,1,3,0)
+ ;;=3^Conjunctivitis,Viral,Oth
+ ;;^UTILITY(U,$J,358.3,10399,1,4,0)
+ ;;=4^077.8
+ ;;^UTILITY(U,$J,358.3,10399,2)
+ ;;=^88239
+ ;;^UTILITY(U,$J,358.3,10400,0)
+ ;;=078.5^^44^565^46
+ ;;^UTILITY(U,$J,358.3,10400,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10400,1,3,0)
+ ;;=3^Cytomegaloviral Disease
+ ;;^UTILITY(U,$J,358.3,10400,1,4,0)
+ ;;=4^078.5
+ ;;^UTILITY(U,$J,358.3,10400,2)
+ ;;=^30676
+ ;;^UTILITY(U,$J,358.3,10401,0)
+ ;;=090.3^^44^565^59
+ ;;^UTILITY(U,$J,358.3,10401,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10401,1,3,0)
+ ;;=3^Keratitis,Interstitial,Syphilitic
+ ;;^UTILITY(U,$J,358.3,10401,1,4,0)
+ ;;=4^090.3
+ ;;^UTILITY(U,$J,358.3,10401,2)
+ ;;=^266697
+ ;;^UTILITY(U,$J,358.3,10402,0)
+ ;;=091.50^^44^565^93
+ ;;^UTILITY(U,$J,358.3,10402,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10402,1,3,0)
+ ;;=3^Uveitis Syphilitica,Unspec
+ ;;^UTILITY(U,$J,358.3,10402,1,4,0)
+ ;;=4^091.50
+ ;;^UTILITY(U,$J,358.3,10402,2)
+ ;;=^266715
+ ;;^UTILITY(U,$J,358.3,10403,0)
+ ;;=094.83^^44^565^83
+ ;;^UTILITY(U,$J,358.3,10403,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10403,1,3,0)
+ ;;=3^Retinochoroiditis,Dissem,Syphilitic
+ ;;^UTILITY(U,$J,358.3,10403,1,4,0)
+ ;;=4^094.83
+ ;;^UTILITY(U,$J,358.3,10403,2)
+ ;;=^266752
+ ;;^UTILITY(U,$J,358.3,10404,0)
+ ;;=099.3^^44^565^82
+ ;;^UTILITY(U,$J,358.3,10404,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10404,1,3,0)
+ ;;=3^Reiter's Disease
+ ;;^UTILITY(U,$J,358.3,10404,1,4,0)
+ ;;=4^099.3
+ ;;^UTILITY(U,$J,358.3,10404,2)
+ ;;=^104534
+ ;;^UTILITY(U,$J,358.3,10405,0)
+ ;;=112.89^^44^565^5
+ ;;^UTILITY(U,$J,358.3,10405,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10405,1,3,0)
+ ;;=3^Candida,Oth
+ ;;^UTILITY(U,$J,358.3,10405,1,4,0)
+ ;;=4^112.89
+ ;;^UTILITY(U,$J,358.3,10405,2)
+ ;;=^87368
+ ;;^UTILITY(U,$J,358.3,10406,0)
+ ;;=136.1^^44^565^1
+ ;;^UTILITY(U,$J,358.3,10406,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10406,1,3,0)
+ ;;=3^Behcet's Disease
+ ;;^UTILITY(U,$J,358.3,10406,1,4,0)
+ ;;=4^136.1
+ ;;^UTILITY(U,$J,358.3,10406,2)
+ ;;=^13205
+ ;;^UTILITY(U,$J,358.3,10407,0)
+ ;;=190.3^^44^565^11
+ ;;^UTILITY(U,$J,358.3,10407,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10407,1,3,0)
+ ;;=3^Conjunctiva Malig Neopl
+ ;;^UTILITY(U,$J,358.3,10407,1,4,0)
+ ;;=4^190.3
+ ;;^UTILITY(U,$J,358.3,10407,2)
+ ;;=^267274
+ ;;^UTILITY(U,$J,358.3,10408,0)
+ ;;=198.89^^44^565^91
+ ;;^UTILITY(U,$J,358.3,10408,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10408,1,3,0)
+ ;;=3^Uveal Metastasis
+ ;;^UTILITY(U,$J,358.3,10408,1,4,0)
+ ;;=4^198.89
+ ;;^UTILITY(U,$J,358.3,10408,2)
+ ;;=^267330
+ ;;^UTILITY(U,$J,358.3,10409,0)
+ ;;=202.80^^44^565^64
+ ;;^UTILITY(U,$J,358.3,10409,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10409,1,3,0)
+ ;;=3^Lymphoma,Extranod/Solid Org,Unspec Site
+ ;;^UTILITY(U,$J,358.3,10409,1,4,0)
+ ;;=4^202.80
+ ;;^UTILITY(U,$J,358.3,10409,2)
+ ;;=^87701
+ ;;^UTILITY(U,$J,358.3,10410,0)
+ ;;=224.3^^44^565^12
+ ;;^UTILITY(U,$J,358.3,10410,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10410,1,3,0)
+ ;;=3^Conjunctiva,Benign Neopl
+ ;;^UTILITY(U,$J,358.3,10410,1,4,0)
+ ;;=4^224.3
+ ;;^UTILITY(U,$J,358.3,10410,2)
+ ;;=^267673

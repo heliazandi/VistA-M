@@ -1,48 +1,136 @@
-IBDEI1GO ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
- Q:'DIFQ(358.91)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI1GO ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.91,0,"GL")
- ;;=^IBE(358.91,
- ;;^DIC("B","IMP/EXP MARKING AREA",358.91)
- ;;=
- ;;^DIC(358.91,"%D",0)
- ;;=^^4^4^2940217^
- ;;^DIC(358.91,"%D",1,0)
- ;;= 
- ;;^DIC(358.91,"%D",2,0)
- ;;=This file is nearly identical to file #357.91. It is used by the
- ;;^DIC(358.91,"%D",3,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.91,"%D",4,0)
- ;;=that is being imported or exported.
- ;;^DD(358.91,0)
- ;;=FIELD^^.04^4
- ;;^DD(358.91,0,"DDA")
- ;;=N
- ;;^DD(358.91,0,"DT")
- ;;=2960123
- ;;^DD(358.91,0,"IX","B",358.91,.01)
- ;;=
- ;;^DD(358.91,0,"NM","IMP/EXP MARKING AREA")
- ;;=
- ;;^DD(358.91,0,"PT",358.22,.06)
- ;;=
- ;;^DD(358.91,0,"VRPK")
- ;;=IBD
- ;;^DD(358.91,.01,0)
- ;;=NAME^RFX^^0;1^K:$L(X)>30 X
- ;;^DD(358.91,.01,1,0)
- ;;=^.1
- ;;^DD(358.91,.01,1,1,0)
- ;;=358.91^B
- ;;^DD(358.91,.01,1,1,1)
- ;;=S ^IBE(358.91,"B",$E(X,1,30),DA)=""
- ;;^DD(358.91,.01,1,1,2)
- ;;=K ^IBE(358.91,"B",$E(X,1,30),DA)
- ;;^DD(358.91,.01,3)
- ;;=NAME MUST BE UNDER 31 CHARACTERS
- ;;^DD(358.91,.01,21,0)
- ;;=^^1^1^2930608^
- ;;^DD(358.91,.01,21,1,0)
- ;;=The name should describe the appearance of the marking area on the form.
+ ;;^UTILITY(U,$J,358.3,25925,1,5,0)
+ ;;=5^Cannabis Abuse, Continued
+ ;;^UTILITY(U,$J,358.3,25925,2)
+ ;;=^268234
+ ;;^UTILITY(U,$J,358.3,25926,0)
+ ;;=305.22^^150^1647^33
+ ;;^UTILITY(U,$J,358.3,25926,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25926,1,2,0)
+ ;;=2^305.22
+ ;;^UTILITY(U,$J,358.3,25926,1,5,0)
+ ;;=5^Cannabis Abuse, Episodic
+ ;;^UTILITY(U,$J,358.3,25926,2)
+ ;;=^268235
+ ;;^UTILITY(U,$J,358.3,25927,0)
+ ;;=305.31^^150^1647^57
+ ;;^UTILITY(U,$J,358.3,25927,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25927,1,2,0)
+ ;;=2^305.31
+ ;;^UTILITY(U,$J,358.3,25927,1,5,0)
+ ;;=5^Hallucinogen Abuse, Continuous
+ ;;^UTILITY(U,$J,358.3,25927,2)
+ ;;=^268237
+ ;;^UTILITY(U,$J,358.3,25928,0)
+ ;;=305.32^^150^1647^58
+ ;;^UTILITY(U,$J,358.3,25928,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25928,1,2,0)
+ ;;=2^305.32
+ ;;^UTILITY(U,$J,358.3,25928,1,5,0)
+ ;;=5^Hallucinogen Abuse, Episodic
+ ;;^UTILITY(U,$J,358.3,25928,2)
+ ;;=^268238
+ ;;^UTILITY(U,$J,358.3,25929,0)
+ ;;=305.41^^150^1647^24
+ ;;^UTILITY(U,$J,358.3,25929,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25929,1,2,0)
+ ;;=2^305.41
+ ;;^UTILITY(U,$J,358.3,25929,1,5,0)
+ ;;=5^Anxiolytic Abuse, Continuous
+ ;;^UTILITY(U,$J,358.3,25929,2)
+ ;;=^331936
+ ;;^UTILITY(U,$J,358.3,25930,0)
+ ;;=305.42^^150^1647^25
+ ;;^UTILITY(U,$J,358.3,25930,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25930,1,2,0)
+ ;;=2^305.42
+ ;;^UTILITY(U,$J,358.3,25930,1,5,0)
+ ;;=5^Anxiolytic Abuse, Episodic
+ ;;^UTILITY(U,$J,358.3,25930,2)
+ ;;=^331937
+ ;;^UTILITY(U,$J,358.3,25931,0)
+ ;;=305.51^^150^1647^69
+ ;;^UTILITY(U,$J,358.3,25931,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25931,1,2,0)
+ ;;=2^305.51
+ ;;^UTILITY(U,$J,358.3,25931,1,5,0)
+ ;;=5^Opioid Abuse, Continuous
+ ;;^UTILITY(U,$J,358.3,25931,2)
+ ;;=^268244
+ ;;^UTILITY(U,$J,358.3,25932,0)
+ ;;=305.52^^150^1647^70
+ ;;^UTILITY(U,$J,358.3,25932,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25932,1,2,0)
+ ;;=2^305.52
+ ;;^UTILITY(U,$J,358.3,25932,1,5,0)
+ ;;=5^Opioid Abuse, Episodic
+ ;;^UTILITY(U,$J,358.3,25932,2)
+ ;;=^268245
+ ;;^UTILITY(U,$J,358.3,25933,0)
+ ;;=305.61^^150^1647^40
+ ;;^UTILITY(U,$J,358.3,25933,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25933,1,2,0)
+ ;;=2^305.61
+ ;;^UTILITY(U,$J,358.3,25933,1,5,0)
+ ;;=5^Cocaine Abuse, Continuous
+ ;;^UTILITY(U,$J,358.3,25933,2)
+ ;;=^268247
+ ;;^UTILITY(U,$J,358.3,25934,0)
+ ;;=305.62^^150^1647^41
+ ;;^UTILITY(U,$J,358.3,25934,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25934,1,2,0)
+ ;;=2^305.62
+ ;;^UTILITY(U,$J,358.3,25934,1,5,0)
+ ;;=5^Cocaine Abuse, Episodic
+ ;;^UTILITY(U,$J,358.3,25934,2)
+ ;;=^268248
+ ;;^UTILITY(U,$J,358.3,25935,0)
+ ;;=305.71^^150^1647^16
+ ;;^UTILITY(U,$J,358.3,25935,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25935,1,2,0)
+ ;;=2^305.71
+ ;;^UTILITY(U,$J,358.3,25935,1,5,0)
+ ;;=5^Amphetamine Abuse, Continuous
+ ;;^UTILITY(U,$J,358.3,25935,2)
+ ;;=^268251
+ ;;^UTILITY(U,$J,358.3,25936,0)
+ ;;=305.72^^150^1647^17
+ ;;^UTILITY(U,$J,358.3,25936,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25936,1,2,0)
+ ;;=2^305.72
+ ;;^UTILITY(U,$J,358.3,25936,1,5,0)
+ ;;=5^Amphetamine Abuse, Episodic
+ ;;^UTILITY(U,$J,358.3,25936,2)
+ ;;=^268252
+ ;;^UTILITY(U,$J,358.3,25937,0)
+ ;;=305.91^^150^1647^77
+ ;;^UTILITY(U,$J,358.3,25937,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25937,1,2,0)
+ ;;=2^305.91
+ ;;^UTILITY(U,$J,358.3,25937,1,5,0)
+ ;;=5^Other Drug Abuse, Continuous
+ ;;^UTILITY(U,$J,358.3,25937,2)
+ ;;=^268259
+ ;;^UTILITY(U,$J,358.3,25938,0)
+ ;;=305.92^^150^1647^78
+ ;;^UTILITY(U,$J,358.3,25938,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25938,1,2,0)
+ ;;=2^305.92
+ ;;^UTILITY(U,$J,358.3,25938,1,5,0)
+ ;;=5^Other Drug Abuse, Episodic

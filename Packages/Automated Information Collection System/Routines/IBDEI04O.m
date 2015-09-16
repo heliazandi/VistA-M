@@ -1,58 +1,128 @@
-IBDEI04O ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
- Q:'DIFQ(358.7)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI04O ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.7,0,"GL")
- ;;=^IBE(358.7,
- ;;^DIC("B","IMP/EXP FORM LINE",358.7)
- ;;=
- ;;^DIC(358.7,"%D",0)
- ;;=^^3^3^2940217^
- ;;^DIC(358.7,"%D",1,0)
- ;;=This file is nearly identical to file #357.7. It is used by the
- ;;^DIC(358.7,"%D",2,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.7,"%D",3,0)
- ;;=that is being imported or exported.
- ;;^DD(358.7,0)
- ;;=FIELD^^.08^8
- ;;^DD(358.7,0,"DDA")
- ;;=N
- ;;^DD(358.7,0,"DT")
- ;;=2950717
- ;;^DD(358.7,0,"ID",.02)
- ;;=W " STARTING COL=",$P(^(0),U,2)+1
- ;;^DD(358.7,0,"ID",.03)
- ;;=W " STARTING ROW=",$P(^(0),U,3)+1
- ;;^DD(358.7,0,"ID",.06)
- ;;=W ""
- ;;^DD(358.7,0,"IX","B",358.7,.01)
- ;;=
- ;;^DD(358.7,0,"IX","C",358.7,.06)
- ;;=
- ;;^DD(358.7,0,"NM","IMP/EXP FORM LINE")
- ;;=
- ;;^DD(358.7,0,"VRPK")
- ;;=IBD
- ;;^DD(358.7,.01,0)
- ;;=NAME^RF^^0;1^K:$L(X)>30!(X?.N)!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.7,.01,1,0)
- ;;=^.1
- ;;^DD(358.7,.01,1,1,0)
- ;;=358.7^B
- ;;^DD(358.7,.01,1,1,1)
- ;;=S ^IBE(358.7,"B",$E(X,1,30),DA)=""
- ;;^DD(358.7,.01,1,1,2)
- ;;=K ^IBE(358.7,"B",$E(X,1,30),DA)
- ;;^DD(358.7,.01,3)
- ;;=NAME MUST BE 3-30 CHARACTERS, NOT NUMERIC OR STARTING WITH PUNCTUATION
- ;;^DD(358.7,.01,21,0)
- ;;=^^4^4^2930527^
- ;;^DD(358.7,.01,21,1,0)
- ;;= 
- ;;^DD(358.7,.01,21,2,0)
- ;;=The name given to the line. Lines should be given names that will allow
- ;;^DD(358.7,.01,21,3,0)
- ;;=them to be identifies, such as V(1,1), meaning a vertical line starting at
- ;;^DD(358.7,.01,21,4,0)
- ;;=coordinates (1,1).
+ ;;^UTILITY(U,$J,358.3,1661,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1661,1,3,0)
+ ;;=3^Benign paroxysmal vertigo, bilateral
+ ;;^UTILITY(U,$J,358.3,1661,1,4,0)
+ ;;=4^H81.13
+ ;;^UTILITY(U,$J,358.3,1661,2)
+ ;;=^5006867
+ ;;^UTILITY(U,$J,358.3,1662,0)
+ ;;=H81.11^^3^46^15
+ ;;^UTILITY(U,$J,358.3,1662,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1662,1,3,0)
+ ;;=3^Benign paroxysmal vertigo, right ear
+ ;;^UTILITY(U,$J,358.3,1662,1,4,0)
+ ;;=4^H81.11
+ ;;^UTILITY(U,$J,358.3,1662,2)
+ ;;=^5006865
+ ;;^UTILITY(U,$J,358.3,1663,0)
+ ;;=H81.12^^3^46^14
+ ;;^UTILITY(U,$J,358.3,1663,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1663,1,3,0)
+ ;;=3^Benign paroxysmal vertigo, left ear
+ ;;^UTILITY(U,$J,358.3,1663,1,4,0)
+ ;;=4^H81.12
+ ;;^UTILITY(U,$J,358.3,1663,2)
+ ;;=^5006866
+ ;;^UTILITY(U,$J,358.3,1664,0)
+ ;;=I63.50^^3^46^16
+ ;;^UTILITY(U,$J,358.3,1664,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1664,1,3,0)
+ ;;=3^Cereb infrc due to unsp occls or stenos of unsp cereb artery
+ ;;^UTILITY(U,$J,358.3,1664,1,4,0)
+ ;;=4^I63.50
+ ;;^UTILITY(U,$J,358.3,1664,2)
+ ;;=^5007343
+ ;;^UTILITY(U,$J,358.3,1665,0)
+ ;;=G45.9^^3^46^63
+ ;;^UTILITY(U,$J,358.3,1665,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1665,1,3,0)
+ ;;=3^Transient cerebral ischemic attack, unspecified
+ ;;^UTILITY(U,$J,358.3,1665,1,4,0)
+ ;;=4^G45.9
+ ;;^UTILITY(U,$J,358.3,1665,2)
+ ;;=^5003959
+ ;;^UTILITY(U,$J,358.3,1666,0)
+ ;;=I67.9^^3^46^17
+ ;;^UTILITY(U,$J,358.3,1666,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1666,1,3,0)
+ ;;=3^Cerebrovascular disease, unspecified
+ ;;^UTILITY(U,$J,358.3,1666,1,4,0)
+ ;;=4^I67.9
+ ;;^UTILITY(U,$J,358.3,1666,2)
+ ;;=^5007389
+ ;;^UTILITY(U,$J,358.3,1667,0)
+ ;;=I69.91^^3^46^18
+ ;;^UTILITY(U,$J,358.3,1667,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1667,1,3,0)
+ ;;=3^Cognitive deficits following unsp cerebrovascular disease
+ ;;^UTILITY(U,$J,358.3,1667,1,4,0)
+ ;;=4^I69.91
+ ;;^UTILITY(U,$J,358.3,1667,2)
+ ;;=^5007552
+ ;;^UTILITY(U,$J,358.3,1668,0)
+ ;;=I69.920^^3^46^9
+ ;;^UTILITY(U,$J,358.3,1668,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1668,1,3,0)
+ ;;=3^Aphasia following unspecified cerebrovascular disease
+ ;;^UTILITY(U,$J,358.3,1668,1,4,0)
+ ;;=4^I69.920
+ ;;^UTILITY(U,$J,358.3,1668,2)
+ ;;=^5007553
+ ;;^UTILITY(U,$J,358.3,1669,0)
+ ;;=I69.921^^3^46^27
+ ;;^UTILITY(U,$J,358.3,1669,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1669,1,3,0)
+ ;;=3^Dysphasia following unspecified cerebrovascular disease
+ ;;^UTILITY(U,$J,358.3,1669,1,4,0)
+ ;;=4^I69.921
+ ;;^UTILITY(U,$J,358.3,1669,2)
+ ;;=^5007554
+ ;;^UTILITY(U,$J,358.3,1670,0)
+ ;;=I69.951^^3^46^33
+ ;;^UTILITY(U,$J,358.3,1670,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1670,1,3,0)
+ ;;=3^Hemiplga fol unsp cerebvasc disease aff right dominant side
+ ;;^UTILITY(U,$J,358.3,1670,1,4,0)
+ ;;=4^I69.951
+ ;;^UTILITY(U,$J,358.3,1670,2)
+ ;;=^5007561
+ ;;^UTILITY(U,$J,358.3,1671,0)
+ ;;=I69.952^^3^46^34
+ ;;^UTILITY(U,$J,358.3,1671,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1671,1,3,0)
+ ;;=3^Hemiplga fol unsp cerebvasc disease aff left dominant side
+ ;;^UTILITY(U,$J,358.3,1671,1,4,0)
+ ;;=4^I69.952
+ ;;^UTILITY(U,$J,358.3,1671,2)
+ ;;=^5133586
+ ;;^UTILITY(U,$J,358.3,1672,0)
+ ;;=I69.953^^3^46^35
+ ;;^UTILITY(U,$J,358.3,1672,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1672,1,3,0)
+ ;;=3^Hemiplga fol unsp cerebvasc disease aff right nondom side
+ ;;^UTILITY(U,$J,358.3,1672,1,4,0)
+ ;;=4^I69.953
+ ;;^UTILITY(U,$J,358.3,1672,2)
+ ;;=^5007562
+ ;;^UTILITY(U,$J,358.3,1673,0)
+ ;;=I69.954^^3^46^36
+ ;;^UTILITY(U,$J,358.3,1673,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1673,1,3,0)
+ ;;=3^Hemiplga fol unsp cerebvasc disease aff left nondom side

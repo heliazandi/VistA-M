@@ -1,62 +1,148 @@
-IBDEI07F ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
- Q:'DIFQ(358.5)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI07F ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.5,0,"GL")
- ;;=^IBE(358.5,
- ;;^DIC("B","IMP/EXP DATA FIELD",358.5)
- ;;=
- ;;^DIC(358.5,"%D",0)
- ;;=^^1^1^2940829^^^^
- ;;^DIC(358.5,"%D",1,0)
- ;;=Used by the import/export utility as a workspace.
- ;;^DIC(358.5,"%D",2,0)
- ;;= 
- ;;^DIC(358.5,"%D",3,0)
- ;;= 
- ;;^DIC(358.5,"%D",4,0)
- ;;=This file is nearly identical to file #357.5. It is used by the
- ;;^DIC(358.5,"%D",5,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.5,"%D",6,0)
- ;;=that is being imported or exported.
- ;;^DD(358.5,0)
- ;;=FIELD^^2^13
- ;;^DD(358.5,0,"DDA")
- ;;=N
- ;;^DD(358.5,0,"DT")
- ;;=2930730
- ;;^DD(358.5,0,"ID",.02)
- ;;=W ""
- ;;^DD(358.5,0,"ID",.03)
- ;;=W ""
- ;;^DD(358.5,0,"IX","B",358.5,.01)
- ;;=
- ;;^DD(358.5,0,"IX","C",358.5,.02)
- ;;=
- ;;^DD(358.5,0,"NM","IMP/EXP DATA FIELD")
- ;;=
- ;;^DD(358.5,0,"VRPK")
- ;;=IBD
- ;;^DD(358.5,.01,0)
- ;;=NAME^RF^^0;1^K:$L(X)>30!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.5,.01,1,0)
- ;;=^.1
- ;;^DD(358.5,.01,1,1,0)
- ;;=358.5^B
- ;;^DD(358.5,.01,1,1,1)
- ;;=S ^IBE(358.5,"B",$E(X,1,30),DA)=""
- ;;^DD(358.5,.01,1,1,2)
- ;;=K ^IBE(358.5,"B",$E(X,1,30),DA)
- ;;^DD(358.5,.01,3)
- ;;=Answer must be 3-30 characters in length.
- ;;^DD(358.5,.01,21,0)
- ;;=^^3^3^2930419^^^
- ;;^DD(358.5,.01,21,1,0)
- ;;= 
- ;;^DD(358.5,.01,21,2,0)
- ;;=The name is used to identify the field within a block. It can be anything
- ;;^DD(358.5,.01,21,3,0)
- ;;=the designer of a form wants it to be.
- ;;^DD(358.5,.01,"DT")
- ;;=2930419
+ ;;^UTILITY(U,$J,358.3,2975,1,3,0)
+ ;;=3^Sinusitis,Acute
+ ;;^UTILITY(U,$J,358.3,2975,1,4,0)
+ ;;=4^J01.90
+ ;;^UTILITY(U,$J,358.3,2975,2)
+ ;;=^5008127
+ ;;^UTILITY(U,$J,358.3,2976,0)
+ ;;=J32.9^^7^84^85
+ ;;^UTILITY(U,$J,358.3,2976,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2976,1,3,0)
+ ;;=3^Sinusitis,Chronic
+ ;;^UTILITY(U,$J,358.3,2976,1,4,0)
+ ;;=4^J32.9
+ ;;^UTILITY(U,$J,358.3,2976,2)
+ ;;=^5008207
+ ;;^UTILITY(U,$J,358.3,2977,0)
+ ;;=R61.^^7^84^86
+ ;;^UTILITY(U,$J,358.3,2977,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2977,1,3,0)
+ ;;=3^Sweats/Night Sweats
+ ;;^UTILITY(U,$J,358.3,2977,1,4,0)
+ ;;=4^R61.
+ ;;^UTILITY(U,$J,358.3,2977,2)
+ ;;=^331970
+ ;;^UTILITY(U,$J,358.3,2978,0)
+ ;;=A51.0^^7^84^88
+ ;;^UTILITY(U,$J,358.3,2978,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2978,1,3,0)
+ ;;=3^Syphilis,Genital,Primary
+ ;;^UTILITY(U,$J,358.3,2978,1,4,0)
+ ;;=4^A51.0
+ ;;^UTILITY(U,$J,358.3,2978,2)
+ ;;=^5000272
+ ;;^UTILITY(U,$J,358.3,2979,0)
+ ;;=A51.5^^7^84^87
+ ;;^UTILITY(U,$J,358.3,2979,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2979,1,3,0)
+ ;;=3^Syphilis,EArly Latent
+ ;;^UTILITY(U,$J,358.3,2979,1,4,0)
+ ;;=4^A51.5
+ ;;^UTILITY(U,$J,358.3,2979,2)
+ ;;=^266730
+ ;;^UTILITY(U,$J,358.3,2980,0)
+ ;;=A52.8^^7^84^89
+ ;;^UTILITY(U,$J,358.3,2980,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2980,1,3,0)
+ ;;=3^Syphilis,Late Latent
+ ;;^UTILITY(U,$J,358.3,2980,1,4,0)
+ ;;=4^A52.8
+ ;;^UTILITY(U,$J,358.3,2980,2)
+ ;;=^266779
+ ;;^UTILITY(U,$J,358.3,2981,0)
+ ;;=A52.3^^7^84^90
+ ;;^UTILITY(U,$J,358.3,2981,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2981,1,3,0)
+ ;;=3^Syphilis,Neurosyphilis
+ ;;^UTILITY(U,$J,358.3,2981,1,4,0)
+ ;;=4^A52.3
+ ;;^UTILITY(U,$J,358.3,2981,2)
+ ;;=^5000298
+ ;;^UTILITY(U,$J,358.3,2982,0)
+ ;;=A52.9^^7^84^91
+ ;;^UTILITY(U,$J,358.3,2982,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2982,1,3,0)
+ ;;=3^Syphilis,Tertiary
+ ;;^UTILITY(U,$J,358.3,2982,1,4,0)
+ ;;=4^A52.9
+ ;;^UTILITY(U,$J,358.3,2982,2)
+ ;;=^5000308
+ ;;^UTILITY(U,$J,358.3,2983,0)
+ ;;=A15.8^^7^84^93
+ ;;^UTILITY(U,$J,358.3,2983,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2983,1,3,0)
+ ;;=3^Tuberculosis NEC
+ ;;^UTILITY(U,$J,358.3,2983,1,4,0)
+ ;;=4^A15.8
+ ;;^UTILITY(U,$J,358.3,2983,2)
+ ;;=^266093
+ ;;^UTILITY(U,$J,358.3,2984,0)
+ ;;=A15.0^^7^84^95
+ ;;^UTILITY(U,$J,358.3,2984,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2984,1,3,0)
+ ;;=3^Tuberculosis,Pulmonary
+ ;;^UTILITY(U,$J,358.3,2984,1,4,0)
+ ;;=4^A15.0
+ ;;^UTILITY(U,$J,358.3,2984,2)
+ ;;=^5000062
+ ;;^UTILITY(U,$J,358.3,2985,0)
+ ;;=R76.11^^7^84^94
+ ;;^UTILITY(U,$J,358.3,2985,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2985,1,3,0)
+ ;;=3^Tuberculosis,Latent
+ ;;^UTILITY(U,$J,358.3,2985,1,4,0)
+ ;;=4^R76.11
+ ;;^UTILITY(U,$J,358.3,2985,2)
+ ;;=^5019570
+ ;;^UTILITY(U,$J,358.3,2986,0)
+ ;;=N34.2^^7^84^97
+ ;;^UTILITY(U,$J,358.3,2986,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2986,1,3,0)
+ ;;=3^Urethritis NEC
+ ;;^UTILITY(U,$J,358.3,2986,1,4,0)
+ ;;=4^N34.2
+ ;;^UTILITY(U,$J,358.3,2986,2)
+ ;;=^88231
+ ;;^UTILITY(U,$J,358.3,2987,0)
+ ;;=N39.0^^7^84^96
+ ;;^UTILITY(U,$J,358.3,2987,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2987,1,3,0)
+ ;;=3^UTI
+ ;;^UTILITY(U,$J,358.3,2987,1,4,0)
+ ;;=4^N39.0
+ ;;^UTILITY(U,$J,358.3,2987,2)
+ ;;=^124436
+ ;;^UTILITY(U,$J,358.3,2988,0)
+ ;;=E55.9^^7^84^98
+ ;;^UTILITY(U,$J,358.3,2988,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2988,1,3,0)
+ ;;=3^Vitamin D Deficiency
+ ;;^UTILITY(U,$J,358.3,2988,1,4,0)
+ ;;=4^E55.9
+ ;;^UTILITY(U,$J,358.3,2988,2)
+ ;;=^5002799
+ ;;^UTILITY(U,$J,358.3,2989,0)
+ ;;=R63.4^^7^84^99
+ ;;^UTILITY(U,$J,358.3,2989,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2989,1,3,0)
+ ;;=3^Weight Loss
+ ;;^UTILITY(U,$J,358.3,2989,1,4,0)
+ ;;=4^R63.4

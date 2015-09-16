@@ -1,112 +1,140 @@
-IBDEI120 ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI120 ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18880,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18880,1,2,0)
- ;;=2^Open TX of tarsal bone disloc,w/ internal fixation
- ;;^UTILITY(U,$J,358.3,18880,1,3,0)
- ;;=3^28555
- ;;^UTILITY(U,$J,358.3,18881,0)
- ;;=28570^^122^1205^50^^^^1
- ;;^UTILITY(U,$J,358.3,18881,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18881,1,2,0)
- ;;=2^Closed Tx of talotarsal joint dislocation; w/o anesthesia
- ;;^UTILITY(U,$J,358.3,18881,1,3,0)
- ;;=3^28570
- ;;^UTILITY(U,$J,358.3,18882,0)
- ;;=28575^^122^1205^51^^^^1
- ;;^UTILITY(U,$J,358.3,18882,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18882,1,2,0)
- ;;=2^Closed Tx of talotarsal joint dislocation; requiring anesthesia
- ;;^UTILITY(U,$J,358.3,18882,1,3,0)
- ;;=3^28575
- ;;^UTILITY(U,$J,358.3,18883,0)
- ;;=28576^^122^1205^52^^^^1
- ;;^UTILITY(U,$J,358.3,18883,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18883,1,2,0)
- ;;=2^Perc Fixation Talotarsal Joint Dislocation
- ;;^UTILITY(U,$J,358.3,18883,1,3,0)
- ;;=3^28576
- ;;^UTILITY(U,$J,358.3,18884,0)
- ;;=28585^^122^1205^53^^^^1
- ;;^UTILITY(U,$J,358.3,18884,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18884,1,2,0)
- ;;=2^Open Tx of talotarsal joint dislocation, with or w/o internal or external fixation
- ;;^UTILITY(U,$J,358.3,18884,1,3,0)
- ;;=3^28585
- ;;^UTILITY(U,$J,358.3,18885,0)
- ;;=28600^^122^1205^55^^^^1
- ;;^UTILITY(U,$J,358.3,18885,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18885,1,2,0)
- ;;=2^Closed Tx of tarsometatarsal joint dislocation; requiring anesthesia
- ;;^UTILITY(U,$J,358.3,18885,1,3,0)
- ;;=3^28600
- ;;^UTILITY(U,$J,358.3,18886,0)
- ;;=28606^^122^1205^56^^^^1
- ;;^UTILITY(U,$J,358.3,18886,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18886,1,2,0)
- ;;=2^Perc Fixation Tarsometatarsal Joint Dislocation
- ;;^UTILITY(U,$J,358.3,18886,1,3,0)
- ;;=3^28606
- ;;^UTILITY(U,$J,358.3,18887,0)
- ;;=28615^^122^1205^57^^^^1
- ;;^UTILITY(U,$J,358.3,18887,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18887,1,2,0)
- ;;=2^Open Tx of tarsometatarsal joint dislocation, with or w/o internal or external fixation
- ;;^UTILITY(U,$J,358.3,18887,1,3,0)
- ;;=3^28615
- ;;^UTILITY(U,$J,358.3,18888,0)
- ;;=28630^^122^1205^58^^^^1
- ;;^UTILITY(U,$J,358.3,18888,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18888,1,2,0)
- ;;=2^Closed Tx of metatarsophalangeal joint dislocation; w/o anesthesia
- ;;^UTILITY(U,$J,358.3,18888,1,3,0)
- ;;=3^28630
- ;;^UTILITY(U,$J,358.3,18889,0)
- ;;=28635^^122^1205^59^^^^1
- ;;^UTILITY(U,$J,358.3,18889,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18889,1,2,0)
- ;;=2^Closed Tx of metatarsophalangeal joint dislocation; requiring anesthesia
- ;;^UTILITY(U,$J,358.3,18889,1,3,0)
- ;;=3^28635
- ;;^UTILITY(U,$J,358.3,18890,0)
- ;;=28636^^122^1205^60^^^^1
- ;;^UTILITY(U,$J,358.3,18890,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18890,1,2,0)
- ;;=2^Perc Fixation Metatarsophalangeal Joint Dislocation
- ;;^UTILITY(U,$J,358.3,18890,1,3,0)
- ;;=3^28636
- ;;^UTILITY(U,$J,358.3,18891,0)
- ;;=28645^^122^1205^61^^^^1
- ;;^UTILITY(U,$J,358.3,18891,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18891,1,2,0)
- ;;=2^Open Tx of metatarsophalangeal joint dislocation, with or w/o internal or external fixation
- ;;^UTILITY(U,$J,358.3,18891,1,3,0)
- ;;=3^28645
- ;;^UTILITY(U,$J,358.3,18892,0)
- ;;=28660^^122^1205^62^^^^1
- ;;^UTILITY(U,$J,358.3,18892,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18892,1,2,0)
- ;;=2^Closed Tx of interphalangeal joint dislocation; w/o anesthesia
- ;;^UTILITY(U,$J,358.3,18892,1,3,0)
- ;;=3^28660
- ;;^UTILITY(U,$J,358.3,18893,0)
- ;;=28665^^122^1205^63^^^^1
- ;;^UTILITY(U,$J,358.3,18893,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18893,1,2,0)
- ;;=2^Closed Tx of interphalangeal joint dislocation; requiring anesthesia
+ ;;^UTILITY(U,$J,358.3,18581,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18581,1,4,0)
+ ;;=4^WISKOTT-ALDRICH SYNDROME
+ ;;^UTILITY(U,$J,358.3,18581,1,5,0)
+ ;;=5^279.12
+ ;;^UTILITY(U,$J,358.3,18581,2)
+ ;;=^127982
+ ;;^UTILITY(U,$J,358.3,18582,0)
+ ;;=277.00^^102^1193^3
+ ;;^UTILITY(U,$J,358.3,18582,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18582,1,4,0)
+ ;;=4^CYSTIC FIBROS W/O ILEUS
+ ;;^UTILITY(U,$J,358.3,18582,1,5,0)
+ ;;=5^277.00
+ ;;^UTILITY(U,$J,358.3,18582,2)
+ ;;=^30278
+ ;;^UTILITY(U,$J,358.3,18583,0)
+ ;;=277.01^^102^1193^2
+ ;;^UTILITY(U,$J,358.3,18583,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18583,1,4,0)
+ ;;=4^CYST FIBR W MECONIUM ILEUS
+ ;;^UTILITY(U,$J,358.3,18583,1,5,0)
+ ;;=5^277.01
+ ;;^UTILITY(U,$J,358.3,18583,2)
+ ;;=^267951
+ ;;^UTILITY(U,$J,358.3,18584,0)
+ ;;=277.6^^102^1193^4
+ ;;^UTILITY(U,$J,358.3,18584,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18584,1,4,0)
+ ;;=4^DEFIC CIRCUL ENZYME NEC
+ ;;^UTILITY(U,$J,358.3,18584,1,5,0)
+ ;;=5^277.6
+ ;;^UTILITY(U,$J,358.3,18584,2)
+ ;;=^87463
+ ;;^UTILITY(U,$J,358.3,18585,0)
+ ;;=277.82^^102^1193^1
+ ;;^UTILITY(U,$J,358.3,18585,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18585,1,4,0)
+ ;;=4^CRNITNE DEF D/T NB MET
+ ;;^UTILITY(U,$J,358.3,18585,1,5,0)
+ ;;=5^277.82
+ ;;^UTILITY(U,$J,358.3,18585,2)
+ ;;=^329882
+ ;;^UTILITY(U,$J,358.3,18586,0)
+ ;;=277.83^^102^1193^7
+ ;;^UTILITY(U,$J,358.3,18586,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18586,1,4,0)
+ ;;=4^IATROGENIC CARNITINE DEF
+ ;;^UTILITY(U,$J,358.3,18586,1,5,0)
+ ;;=5^277.83
+ ;;^UTILITY(U,$J,358.3,18586,2)
+ ;;=^329883
+ ;;^UTILITY(U,$J,358.3,18587,0)
+ ;;=277.84^^102^1193^9
+ ;;^UTILITY(U,$J,358.3,18587,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18587,1,4,0)
+ ;;=4^SEC CARNITINE DEFNCY NEC
+ ;;^UTILITY(U,$J,358.3,18587,1,5,0)
+ ;;=5^277.84
+ ;;^UTILITY(U,$J,358.3,18587,2)
+ ;;=^329884
+ ;;^UTILITY(U,$J,358.3,18588,0)
+ ;;=277.85^^102^1193^6
+ ;;^UTILITY(U,$J,358.3,18588,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18588,1,4,0)
+ ;;=4^DISORDERS ACID OXIDATION
+ ;;^UTILITY(U,$J,358.3,18588,1,5,0)
+ ;;=5^277.85
+ ;;^UTILITY(U,$J,358.3,18588,2)
+ ;;=^331443
+ ;;^UTILITY(U,$J,358.3,18589,0)
+ ;;=277.86^^102^1193^8
+ ;;^UTILITY(U,$J,358.3,18589,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18589,1,4,0)
+ ;;=4^PEROXISOMAL DISORDERS
+ ;;^UTILITY(U,$J,358.3,18589,1,5,0)
+ ;;=5^277.86
+ ;;^UTILITY(U,$J,358.3,18589,2)
+ ;;=^331444
+ ;;^UTILITY(U,$J,358.3,18590,0)
+ ;;=277.87^^102^1193^5
+ ;;^UTILITY(U,$J,358.3,18590,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18590,1,4,0)
+ ;;=4^DIS MITOCHONDRIAL METAB
+ ;;^UTILITY(U,$J,358.3,18590,1,5,0)
+ ;;=5^277.87
+ ;;^UTILITY(U,$J,358.3,18590,2)
+ ;;=^331445
+ ;;^UTILITY(U,$J,358.3,18591,0)
+ ;;=277.88^^102^1193^10
+ ;;^UTILITY(U,$J,358.3,18591,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18591,1,4,0)
+ ;;=4^TUMOR LYSIS SYNDROME
+ ;;^UTILITY(U,$J,358.3,18591,1,5,0)
+ ;;=5^277.88
+ ;;^UTILITY(U,$J,358.3,18591,2)
+ ;;=^338229
+ ;;^UTILITY(U,$J,358.3,18592,0)
+ ;;=V42.0^^102^1194^7
+ ;;^UTILITY(U,$J,358.3,18592,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18592,1,4,0)
+ ;;=4^KIDNEY TRANSPLANT STATUS
+ ;;^UTILITY(U,$J,358.3,18592,1,5,0)
+ ;;=5^V42.0
+ ;;^UTILITY(U,$J,358.3,18592,2)
+ ;;=^121356
+ ;;^UTILITY(U,$J,358.3,18593,0)
+ ;;=V42.1^^102^1194^4
+ ;;^UTILITY(U,$J,358.3,18593,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18593,1,4,0)
+ ;;=4^HEART TRANSPLANT STATUS
+ ;;^UTILITY(U,$J,358.3,18593,1,5,0)
+ ;;=5^V42.1
+ ;;^UTILITY(U,$J,358.3,18593,2)
+ ;;=^54832
+ ;;^UTILITY(U,$J,358.3,18594,0)
+ ;;=V42.2^^102^1194^5
+ ;;^UTILITY(U,$J,358.3,18594,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18594,1,4,0)
+ ;;=4^HEART VALVE TRANSPLANT
+ ;;^UTILITY(U,$J,358.3,18594,1,5,0)
+ ;;=5^V42.2

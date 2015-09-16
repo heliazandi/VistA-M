@@ -1,116 +1,140 @@
-IBDEI11V ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI11V ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18813,1,3,0)
- ;;=3^64774
- ;;^UTILITY(U,$J,358.3,18814,0)
- ;;=64776^^122^1203^31^^^^1
- ;;^UTILITY(U,$J,358.3,18814,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18814,1,2,0)
- ;;=2^Excision of neuroma; digital nerve, one or both, same digit
- ;;^UTILITY(U,$J,358.3,18814,1,3,0)
- ;;=3^64776
- ;;^UTILITY(U,$J,358.3,18815,0)
- ;;=64778^^122^1203^32^^^^1
- ;;^UTILITY(U,$J,358.3,18815,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18815,1,2,0)
- ;;=2^Excision of neuroma; digital nerve, each additional digit (list separately in addition to code for primary procedure)
- ;;^UTILITY(U,$J,358.3,18815,1,3,0)
- ;;=3^64778
- ;;^UTILITY(U,$J,358.3,18816,0)
- ;;=64782^^122^1203^33^^^^1
- ;;^UTILITY(U,$J,358.3,18816,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18816,1,2,0)
- ;;=2^Excision of neuroma; hand or foot, except digital nerve
- ;;^UTILITY(U,$J,358.3,18816,1,3,0)
- ;;=3^64782
- ;;^UTILITY(U,$J,358.3,18817,0)
- ;;=64783^^122^1203^34^^^^1
- ;;^UTILITY(U,$J,358.3,18817,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18817,1,2,0)
- ;;=2^Excision of neuroma; hand or foot, each additional nerve, except same digit
- ;;^UTILITY(U,$J,358.3,18817,1,3,0)
- ;;=3^64783
- ;;^UTILITY(U,$J,358.3,18818,0)
- ;;=29999^^122^1204^11^^^^1
- ;;^UTILITY(U,$J,358.3,18818,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18818,1,2,0)
- ;;=2^Unlisted procedure, arthroscopy
- ;;^UTILITY(U,$J,358.3,18818,1,3,0)
- ;;=3^29999
- ;;^UTILITY(U,$J,358.3,18819,0)
- ;;=29893^^122^1204^3^^^^1
- ;;^UTILITY(U,$J,358.3,18819,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18819,1,2,0)
- ;;=2^Endoscopic plantar fasciotomy
- ;;^UTILITY(U,$J,358.3,18819,1,3,0)
- ;;=3^29893
- ;;^UTILITY(U,$J,358.3,18820,0)
- ;;=29894^^122^1204^4^^^^1
- ;;^UTILITY(U,$J,358.3,18820,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18820,1,2,0)
- ;;=2^Arthroscopy, ankle, surgical; w/removalof loose body or foreign body
- ;;^UTILITY(U,$J,358.3,18820,1,3,0)
- ;;=3^29894
- ;;^UTILITY(U,$J,358.3,18821,0)
- ;;=29897^^122^1204^5^^^^1
- ;;^UTILITY(U,$J,358.3,18821,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18821,1,2,0)
- ;;=2^Arthroscopy, ankle, surgical; debridement, limited
- ;;^UTILITY(U,$J,358.3,18821,1,3,0)
- ;;=3^29897
- ;;^UTILITY(U,$J,358.3,18822,0)
- ;;=29898^^122^1204^6^^^^1
- ;;^UTILITY(U,$J,358.3,18822,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18822,1,2,0)
- ;;=2^Arthroscopy, ankle, surgical; debridement, extensive
- ;;^UTILITY(U,$J,358.3,18822,1,3,0)
- ;;=3^29898
- ;;^UTILITY(U,$J,358.3,18823,0)
- ;;=20220^^122^1204^1^^^^1
- ;;^UTILITY(U,$J,358.3,18823,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18823,1,2,0)
- ;;=2^Biopsy, bone, trocar, or needle; superficial
- ;;^UTILITY(U,$J,358.3,18823,1,3,0)
- ;;=3^20220
- ;;^UTILITY(U,$J,358.3,18824,0)
- ;;=20650^^122^1204^2^^^^1
- ;;^UTILITY(U,$J,358.3,18824,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18824,1,2,0)
- ;;=2^Insertion of wire or pin with application of skeletal traction, including removal
- ;;^UTILITY(U,$J,358.3,18824,1,3,0)
- ;;=3^20650
- ;;^UTILITY(U,$J,358.3,18825,0)
- ;;=64726^^122^1204^12^^^^1
- ;;^UTILITY(U,$J,358.3,18825,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18825,1,2,0)
- ;;=2^Decompression; plantar digital nerve
- ;;^UTILITY(U,$J,358.3,18825,1,3,0)
- ;;=3^64726
- ;;^UTILITY(U,$J,358.3,18826,0)
- ;;=64999^^122^1204^13^^^^1
- ;;^UTILITY(U,$J,358.3,18826,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18826,1,2,0)
- ;;=2^Unlisted procedure, nervous system
- ;;^UTILITY(U,$J,358.3,18826,1,3,0)
- ;;=3^64999
- ;;^UTILITY(U,$J,358.3,18827,0)
- ;;=93922^^122^1204^14^^^^1
- ;;^UTILITY(U,$J,358.3,18827,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18827,1,2,0)
- ;;=2^Non-invasive physiologic studies of upper or lower extremity arteries, single level, bilateral
+ ;;^UTILITY(U,$J,358.3,18514,0)
+ ;;=198.1^^102^1190^3
+ ;;^UTILITY(U,$J,358.3,18514,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18514,1,4,0)
+ ;;=4^CA METS TO URIN NEC
+ ;;^UTILITY(U,$J,358.3,18514,1,5,0)
+ ;;=5^198.1
+ ;;^UTILITY(U,$J,358.3,18514,2)
+ ;;=^267332
+ ;;^UTILITY(U,$J,358.3,18515,0)
+ ;;=189.4^^102^1190^11
+ ;;^UTILITY(U,$J,358.3,18515,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18515,1,4,0)
+ ;;=4^MAL NEO PARAURETHRAL
+ ;;^UTILITY(U,$J,358.3,18515,1,5,0)
+ ;;=5^189.4
+ ;;^UTILITY(U,$J,358.3,18515,2)
+ ;;=^267267
+ ;;^UTILITY(U,$J,358.3,18516,0)
+ ;;=189.1^^102^1190^12
+ ;;^UTILITY(U,$J,358.3,18516,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18516,1,4,0)
+ ;;=4^MAL NEO RENAL PELVIS
+ ;;^UTILITY(U,$J,358.3,18516,1,5,0)
+ ;;=5^189.1
+ ;;^UTILITY(U,$J,358.3,18516,2)
+ ;;=^267264
+ ;;^UTILITY(U,$J,358.3,18517,0)
+ ;;=189.2^^102^1190^17
+ ;;^UTILITY(U,$J,358.3,18517,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18517,1,4,0)
+ ;;=4^MAL NEO URETER
+ ;;^UTILITY(U,$J,358.3,18517,1,5,0)
+ ;;=5^189.2
+ ;;^UTILITY(U,$J,358.3,18517,2)
+ ;;=^267265
+ ;;^UTILITY(U,$J,358.3,18518,0)
+ ;;=189.3^^102^1190^18
+ ;;^UTILITY(U,$J,358.3,18518,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18518,1,4,0)
+ ;;=4^MAL NEO URETHRA
+ ;;^UTILITY(U,$J,358.3,18518,1,5,0)
+ ;;=5^189.3
+ ;;^UTILITY(U,$J,358.3,18518,2)
+ ;;=^267266
+ ;;^UTILITY(U,$J,358.3,18519,0)
+ ;;=174.6^^102^1190^5
+ ;;^UTILITY(U,$J,358.3,18519,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18519,1,4,0)
+ ;;=4^MAL NEO BREAST-AXILLARY
+ ;;^UTILITY(U,$J,358.3,18519,1,5,0)
+ ;;=5^174.6
+ ;;^UTILITY(U,$J,358.3,18519,2)
+ ;;=^267200
+ ;;^UTILITY(U,$J,358.3,18520,0)
+ ;;=174.1^^102^1190^6
+ ;;^UTILITY(U,$J,358.3,18520,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18520,1,4,0)
+ ;;=4^MAL NEO BREAST-CENTRAL
+ ;;^UTILITY(U,$J,358.3,18520,1,5,0)
+ ;;=5^174.1
+ ;;^UTILITY(U,$J,358.3,18520,2)
+ ;;=^267195
+ ;;^UTILITY(U,$J,358.3,18521,0)
+ ;;=174.0^^102^1190^10
+ ;;^UTILITY(U,$J,358.3,18521,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18521,1,4,0)
+ ;;=4^MAL NEO NIPPLE
+ ;;^UTILITY(U,$J,358.3,18521,1,5,0)
+ ;;=5^174.0
+ ;;^UTILITY(U,$J,358.3,18521,2)
+ ;;=^73528
+ ;;^UTILITY(U,$J,358.3,18522,0)
+ ;;=171.2^^102^1190^13
+ ;;^UTILITY(U,$J,358.3,18522,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18522,1,4,0)
+ ;;=4^MAL NEO SOFT TIS ARM
+ ;;^UTILITY(U,$J,358.3,18522,1,5,0)
+ ;;=5^171.2
+ ;;^UTILITY(U,$J,358.3,18522,2)
+ ;;=^267167
+ ;;^UTILITY(U,$J,358.3,18523,0)
+ ;;=171.3^^102^1190^14
+ ;;^UTILITY(U,$J,358.3,18523,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18523,1,4,0)
+ ;;=4^MAL NEO SOFT TIS LEG
+ ;;^UTILITY(U,$J,358.3,18523,1,5,0)
+ ;;=5^171.3
+ ;;^UTILITY(U,$J,358.3,18523,2)
+ ;;=^267168
+ ;;^UTILITY(U,$J,358.3,18524,0)
+ ;;=171.6^^102^1190^15
+ ;;^UTILITY(U,$J,358.3,18524,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18524,1,4,0)
+ ;;=4^MAL NEO SOFT TIS PELVIS
+ ;;^UTILITY(U,$J,358.3,18524,1,5,0)
+ ;;=5^171.6
+ ;;^UTILITY(U,$J,358.3,18524,2)
+ ;;=^267171
+ ;;^UTILITY(U,$J,358.3,18525,0)
+ ;;=171.4^^102^1190^16
+ ;;^UTILITY(U,$J,358.3,18525,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18525,1,4,0)
+ ;;=4^MAL NEO SOFT TIS THORAX
+ ;;^UTILITY(U,$J,358.3,18525,1,5,0)
+ ;;=5^171.4
+ ;;^UTILITY(U,$J,358.3,18525,2)
+ ;;=^267169
+ ;;^UTILITY(U,$J,358.3,18526,0)
+ ;;=200.68^^102^1191^1
+ ;;^UTILITY(U,$J,358.3,18526,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18526,1,4,0)
+ ;;=4^ANAPLASTIC LG CELL LYMPHOMA
+ ;;^UTILITY(U,$J,358.3,18526,1,5,0)
+ ;;=5^200.68
+ ;;^UTILITY(U,$J,358.3,18526,2)
+ ;;=^335220
+ ;;^UTILITY(U,$J,358.3,18527,0)
+ ;;=200.28^^102^1191^2
+ ;;^UTILITY(U,$J,358.3,18527,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18527,1,4,0)
+ ;;=4^BURKITT'S TUMOR MULT

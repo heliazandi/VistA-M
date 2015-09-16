@@ -1,370 +1,134 @@
-IBDEI02B ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
+IBDEI02B ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2683,1,0)
+ ;;^UTILITY(U,$J,358.3,531,1,4,0)
+ ;;=4^C44.520
+ ;;^UTILITY(U,$J,358.3,531,2)
+ ;;=^5001057
+ ;;^UTILITY(U,$J,358.3,532,0)
+ ;;=C44.521^^2^23^30
+ ;;^UTILITY(U,$J,358.3,532,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2683,1,3,0)
- ;;=3^Effusion, unspec joint
- ;;^UTILITY(U,$J,358.3,2683,1,4,0)
- ;;=4^M25.40
- ;;^UTILITY(U,$J,358.3,2683,2)
- ;;=^5011575
- ;;^UTILITY(U,$J,358.3,2684,0)
- ;;=M25.511^^12^106^48
- ;;^UTILITY(U,$J,358.3,2684,1,0)
+ ;;^UTILITY(U,$J,358.3,532,1,3,0)
+ ;;=3^Squamous cell carcinoma of skin of breast
+ ;;^UTILITY(U,$J,358.3,532,1,4,0)
+ ;;=4^C44.521
+ ;;^UTILITY(U,$J,358.3,532,2)
+ ;;=^5001058
+ ;;^UTILITY(U,$J,358.3,533,0)
+ ;;=C44.529^^2^23^34
+ ;;^UTILITY(U,$J,358.3,533,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2684,1,3,0)
- ;;=3^Pain in rt shoulder
- ;;^UTILITY(U,$J,358.3,2684,1,4,0)
- ;;=4^M25.511
- ;;^UTILITY(U,$J,358.3,2684,2)
- ;;=^5011602
- ;;^UTILITY(U,$J,358.3,2685,0)
- ;;=M25.512^^12^106^41
- ;;^UTILITY(U,$J,358.3,2685,1,0)
+ ;;^UTILITY(U,$J,358.3,533,1,3,0)
+ ;;=3^Squamous cell carcinoma of skin of other part of trunk
+ ;;^UTILITY(U,$J,358.3,533,1,4,0)
+ ;;=4^C44.529
+ ;;^UTILITY(U,$J,358.3,533,2)
+ ;;=^5001059
+ ;;^UTILITY(U,$J,358.3,534,0)
+ ;;=C46.9^^2^23^11
+ ;;^UTILITY(U,$J,358.3,534,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2685,1,3,0)
- ;;=3^Pain in lft shoulder
- ;;^UTILITY(U,$J,358.3,2685,1,4,0)
- ;;=4^M25.512
- ;;^UTILITY(U,$J,358.3,2685,2)
- ;;=^5011603
- ;;^UTILITY(U,$J,358.3,2686,0)
- ;;=M25.521^^12^106^44
- ;;^UTILITY(U,$J,358.3,2686,1,0)
+ ;;^UTILITY(U,$J,358.3,534,1,3,0)
+ ;;=3^Kaposi's sarcoma, unspecified
+ ;;^UTILITY(U,$J,358.3,534,1,4,0)
+ ;;=4^C46.9
+ ;;^UTILITY(U,$J,358.3,534,2)
+ ;;=^5001108
+ ;;^UTILITY(U,$J,358.3,535,0)
+ ;;=C71.9^^2^23^15
+ ;;^UTILITY(U,$J,358.3,535,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2686,1,3,0)
- ;;=3^Pain in rt elbow
- ;;^UTILITY(U,$J,358.3,2686,1,4,0)
- ;;=4^M25.521
- ;;^UTILITY(U,$J,358.3,2686,2)
- ;;=^5011605
- ;;^UTILITY(U,$J,358.3,2687,0)
- ;;=M25.522^^12^106^38
- ;;^UTILITY(U,$J,358.3,2687,1,0)
+ ;;^UTILITY(U,$J,358.3,535,1,3,0)
+ ;;=3^Malignant neoplasm of brain, unspecified
+ ;;^UTILITY(U,$J,358.3,535,1,4,0)
+ ;;=4^C71.9
+ ;;^UTILITY(U,$J,358.3,535,2)
+ ;;=^5001297
+ ;;^UTILITY(U,$J,358.3,536,0)
+ ;;=C72.1^^2^23^16
+ ;;^UTILITY(U,$J,358.3,536,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2687,1,3,0)
- ;;=3^Pain in lft elbow
- ;;^UTILITY(U,$J,358.3,2687,1,4,0)
- ;;=4^M25.522
- ;;^UTILITY(U,$J,358.3,2687,2)
- ;;=^5011606
- ;;^UTILITY(U,$J,358.3,2688,0)
- ;;=M25.531^^12^106^49
- ;;^UTILITY(U,$J,358.3,2688,1,0)
+ ;;^UTILITY(U,$J,358.3,536,1,3,0)
+ ;;=3^Malignant neoplasm of cauda equina
+ ;;^UTILITY(U,$J,358.3,536,1,4,0)
+ ;;=4^C72.1
+ ;;^UTILITY(U,$J,358.3,536,2)
+ ;;=^5001298
+ ;;^UTILITY(U,$J,358.3,537,0)
+ ;;=C72.0^^2^23^24
+ ;;^UTILITY(U,$J,358.3,537,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2688,1,3,0)
- ;;=3^Pain in rt wrist
- ;;^UTILITY(U,$J,358.3,2688,1,4,0)
- ;;=4^M25.531
- ;;^UTILITY(U,$J,358.3,2688,2)
- ;;=^5011608
- ;;^UTILITY(U,$J,358.3,2689,0)
- ;;=M25.532^^12^106^42
- ;;^UTILITY(U,$J,358.3,2689,1,0)
+ ;;^UTILITY(U,$J,358.3,537,1,3,0)
+ ;;=3^Malignant neoplasm of spinal cord
+ ;;^UTILITY(U,$J,358.3,537,1,4,0)
+ ;;=4^C72.0
+ ;;^UTILITY(U,$J,358.3,537,2)
+ ;;=^267292
+ ;;^UTILITY(U,$J,358.3,538,0)
+ ;;=C74.01^^2^23^19
+ ;;^UTILITY(U,$J,358.3,538,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2689,1,3,0)
- ;;=3^Pain in lft wrist
- ;;^UTILITY(U,$J,358.3,2689,1,4,0)
- ;;=4^M25.532
- ;;^UTILITY(U,$J,358.3,2689,2)
- ;;=^5011609
- ;;^UTILITY(U,$J,358.3,2690,0)
- ;;=M25.551^^12^106^46
- ;;^UTILITY(U,$J,358.3,2690,1,0)
+ ;;^UTILITY(U,$J,358.3,538,1,3,0)
+ ;;=3^Malignant neoplasm of cortex of right adrenal gland
+ ;;^UTILITY(U,$J,358.3,538,1,4,0)
+ ;;=4^C74.01
+ ;;^UTILITY(U,$J,358.3,538,2)
+ ;;=^5001312
+ ;;^UTILITY(U,$J,358.3,539,0)
+ ;;=C74.02^^2^23^18
+ ;;^UTILITY(U,$J,358.3,539,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2690,1,3,0)
- ;;=3^Pain in rt hip
- ;;^UTILITY(U,$J,358.3,2690,1,4,0)
- ;;=4^M25.551
- ;;^UTILITY(U,$J,358.3,2690,2)
- ;;=^5011611
- ;;^UTILITY(U,$J,358.3,2691,0)
- ;;=M25.552^^12^106^36
- ;;^UTILITY(U,$J,358.3,2691,1,0)
+ ;;^UTILITY(U,$J,358.3,539,1,3,0)
+ ;;=3^Malignant neoplasm of cortex of left adrenal gland
+ ;;^UTILITY(U,$J,358.3,539,1,4,0)
+ ;;=4^C74.02
+ ;;^UTILITY(U,$J,358.3,539,2)
+ ;;=^5001313
+ ;;^UTILITY(U,$J,358.3,540,0)
+ ;;=C74.11^^2^23^21
+ ;;^UTILITY(U,$J,358.3,540,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2691,1,3,0)
- ;;=3^Pain in left hip
- ;;^UTILITY(U,$J,358.3,2691,1,4,0)
- ;;=4^M25.552
- ;;^UTILITY(U,$J,358.3,2691,2)
- ;;=^5011612
- ;;^UTILITY(U,$J,358.3,2692,0)
- ;;=M25.561^^12^106^47
- ;;^UTILITY(U,$J,358.3,2692,1,0)
+ ;;^UTILITY(U,$J,358.3,540,1,3,0)
+ ;;=3^Malignant neoplasm of medulla of right adrenal gland
+ ;;^UTILITY(U,$J,358.3,540,1,4,0)
+ ;;=4^C74.11
+ ;;^UTILITY(U,$J,358.3,540,2)
+ ;;=^5001315
+ ;;^UTILITY(U,$J,358.3,541,0)
+ ;;=C74.12^^2^23^20
+ ;;^UTILITY(U,$J,358.3,541,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2692,1,3,0)
- ;;=3^Pain in rt knee
- ;;^UTILITY(U,$J,358.3,2692,1,4,0)
- ;;=4^M25.561
- ;;^UTILITY(U,$J,358.3,2692,2)
- ;;=^5011614
- ;;^UTILITY(U,$J,358.3,2693,0)
- ;;=M25.562^^12^106^40
- ;;^UTILITY(U,$J,358.3,2693,1,0)
+ ;;^UTILITY(U,$J,358.3,541,1,3,0)
+ ;;=3^Malignant neoplasm of medulla of left adrenal gland
+ ;;^UTILITY(U,$J,358.3,541,1,4,0)
+ ;;=4^C74.12
+ ;;^UTILITY(U,$J,358.3,541,2)
+ ;;=^5001316
+ ;;^UTILITY(U,$J,358.3,542,0)
+ ;;=C74.91^^2^23^26
+ ;;^UTILITY(U,$J,358.3,542,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2693,1,3,0)
- ;;=3^Pain in lft knee
- ;;^UTILITY(U,$J,358.3,2693,1,4,0)
- ;;=4^M25.562
- ;;^UTILITY(U,$J,358.3,2693,2)
- ;;=^5011615
- ;;^UTILITY(U,$J,358.3,2694,0)
- ;;=M25.571^^12^106^43
- ;;^UTILITY(U,$J,358.3,2694,1,0)
+ ;;^UTILITY(U,$J,358.3,542,1,3,0)
+ ;;=3^Malignant neoplasm of unsp part of right adrenal gland
+ ;;^UTILITY(U,$J,358.3,542,1,4,0)
+ ;;=4^C74.91
+ ;;^UTILITY(U,$J,358.3,542,2)
+ ;;=^5001318
+ ;;^UTILITY(U,$J,358.3,543,0)
+ ;;=C74.92^^2^23^25
+ ;;^UTILITY(U,$J,358.3,543,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2694,1,3,0)
- ;;=3^Pain in rt ankle & joints of rt foot
- ;;^UTILITY(U,$J,358.3,2694,1,4,0)
- ;;=4^M25.571
- ;;^UTILITY(U,$J,358.3,2694,2)
- ;;=^5011617
- ;;^UTILITY(U,$J,358.3,2695,0)
- ;;=M25.572^^12^106^37
- ;;^UTILITY(U,$J,358.3,2695,1,0)
+ ;;^UTILITY(U,$J,358.3,543,1,3,0)
+ ;;=3^Malignant neoplasm of unsp part of left adrenal gland
+ ;;^UTILITY(U,$J,358.3,543,1,4,0)
+ ;;=4^C74.92
+ ;;^UTILITY(U,$J,358.3,543,2)
+ ;;=^5001319
+ ;;^UTILITY(U,$J,358.3,544,0)
+ ;;=C92.40^^2^24^21
+ ;;^UTILITY(U,$J,358.3,544,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2695,1,3,0)
- ;;=3^Pain in lft ankle & joints of lft foot
- ;;^UTILITY(U,$J,358.3,2695,1,4,0)
- ;;=4^M25.572
- ;;^UTILITY(U,$J,358.3,2695,2)
- ;;=^5011618
- ;;^UTILITY(U,$J,358.3,2696,0)
- ;;=M25.60^^12^106^61
- ;;^UTILITY(U,$J,358.3,2696,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2696,1,3,0)
- ;;=3^Stiffness of unspec joint, NEC
- ;;^UTILITY(U,$J,358.3,2696,1,4,0)
- ;;=4^M25.60
- ;;^UTILITY(U,$J,358.3,2696,2)
- ;;=^5011620
- ;;^UTILITY(U,$J,358.3,2697,0)
- ;;=M25.611^^12^106^59
- ;;^UTILITY(U,$J,358.3,2697,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2697,1,3,0)
- ;;=3^Stiffness of rt shldr, NEC
- ;;^UTILITY(U,$J,358.3,2697,1,4,0)
- ;;=4^M25.611
- ;;^UTILITY(U,$J,358.3,2697,2)
- ;;=^5011621
- ;;^UTILITY(U,$J,358.3,2698,0)
- ;;=M25.612^^12^106^54
- ;;^UTILITY(U,$J,358.3,2698,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2698,1,3,0)
- ;;=3^Stiffness of lft shldr, NEC
- ;;^UTILITY(U,$J,358.3,2698,1,4,0)
- ;;=4^M25.612
- ;;^UTILITY(U,$J,358.3,2698,2)
- ;;=^5011622
- ;;^UTILITY(U,$J,358.3,2699,0)
- ;;=M25.621^^12^106^56
- ;;^UTILITY(U,$J,358.3,2699,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2699,1,3,0)
- ;;=3^Stiffness of rt elbow, NEC
- ;;^UTILITY(U,$J,358.3,2699,1,4,0)
- ;;=4^M25.621
- ;;^UTILITY(U,$J,358.3,2699,2)
- ;;=^5011624
- ;;^UTILITY(U,$J,358.3,2700,0)
- ;;=M25.622^^12^106^51
- ;;^UTILITY(U,$J,358.3,2700,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2700,1,3,0)
- ;;=3^Stiffness of lft elbow, NEC
- ;;^UTILITY(U,$J,358.3,2700,1,4,0)
- ;;=4^M25.622
- ;;^UTILITY(U,$J,358.3,2700,2)
- ;;=^5011625
- ;;^UTILITY(U,$J,358.3,2701,0)
- ;;=M25.631^^12^106^60
- ;;^UTILITY(U,$J,358.3,2701,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2701,1,3,0)
- ;;=3^Stiffness of rt wrist, NEC
- ;;^UTILITY(U,$J,358.3,2701,1,4,0)
- ;;=4^M25.631
- ;;^UTILITY(U,$J,358.3,2701,2)
- ;;=^5011627
- ;;^UTILITY(U,$J,358.3,2702,0)
- ;;=M25.632^^12^106^55
- ;;^UTILITY(U,$J,358.3,2702,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2702,1,3,0)
- ;;=3^Stiffness of lft wrist, NEC
- ;;^UTILITY(U,$J,358.3,2702,1,4,0)
- ;;=4^M25.632
- ;;^UTILITY(U,$J,358.3,2702,2)
- ;;=^5011628
- ;;^UTILITY(U,$J,358.3,2703,0)
- ;;=M25.651^^12^106^57
- ;;^UTILITY(U,$J,358.3,2703,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2703,1,3,0)
- ;;=3^Stiffness of rt hip, NEC
- ;;^UTILITY(U,$J,358.3,2703,1,4,0)
- ;;=4^M25.651
- ;;^UTILITY(U,$J,358.3,2703,2)
- ;;=^5011633
- ;;^UTILITY(U,$J,358.3,2704,0)
- ;;=M25.652^^12^106^52
- ;;^UTILITY(U,$J,358.3,2704,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2704,1,3,0)
- ;;=3^Stiffness of lft hip, NEC
- ;;^UTILITY(U,$J,358.3,2704,1,4,0)
- ;;=4^M25.652
- ;;^UTILITY(U,$J,358.3,2704,2)
- ;;=^5011634
- ;;^UTILITY(U,$J,358.3,2705,0)
- ;;=M25.661^^12^106^58
- ;;^UTILITY(U,$J,358.3,2705,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2705,1,3,0)
- ;;=3^Stiffness of rt knee, NEC
- ;;^UTILITY(U,$J,358.3,2705,1,4,0)
- ;;=4^M25.661
- ;;^UTILITY(U,$J,358.3,2705,2)
- ;;=^5011636
- ;;^UTILITY(U,$J,358.3,2706,0)
- ;;=M25.662^^12^106^53
- ;;^UTILITY(U,$J,358.3,2706,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2706,1,3,0)
- ;;=3^Stiffness of lft knee, NEC
- ;;^UTILITY(U,$J,358.3,2706,1,4,0)
- ;;=4^M25.662
- ;;^UTILITY(U,$J,358.3,2706,2)
- ;;=^5011637
- ;;^UTILITY(U,$J,358.3,2707,0)
- ;;=R29.898^^12^106^62
- ;;^UTILITY(U,$J,358.3,2707,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2707,1,3,0)
- ;;=3^Sympt/signs invlvng msculskltal syst, oth
- ;;^UTILITY(U,$J,358.3,2707,1,4,0)
- ;;=4^R29.898
- ;;^UTILITY(U,$J,358.3,2707,2)
- ;;=^5019319
- ;;^UTILITY(U,$J,358.3,2708,0)
- ;;=M25.80^^12^106^21
- ;;^UTILITY(U,$J,358.3,2708,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2708,1,3,0)
- ;;=3^Joint disorder, unspec joint, oth, spec
- ;;^UTILITY(U,$J,358.3,2708,1,4,0)
- ;;=4^M25.80
- ;;^UTILITY(U,$J,358.3,2708,2)
- ;;=^5011671
- ;;^UTILITY(U,$J,358.3,2709,0)
- ;;=M25.811^^12^106^34
- ;;^UTILITY(U,$J,358.3,2709,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2709,1,3,0)
- ;;=3^Joint disorders, rt shldr, oth, spec
- ;;^UTILITY(U,$J,358.3,2709,1,4,0)
- ;;=4^M25.811
- ;;^UTILITY(U,$J,358.3,2709,2)
- ;;=^5011672
- ;;^UTILITY(U,$J,358.3,2710,0)
- ;;=M25.812^^12^106^27
- ;;^UTILITY(U,$J,358.3,2710,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2710,1,3,0)
- ;;=3^Joint disorders, lft shldr, oth, spec
- ;;^UTILITY(U,$J,358.3,2710,1,4,0)
- ;;=4^M25.812
- ;;^UTILITY(U,$J,358.3,2710,2)
- ;;=^5011673
- ;;^UTILITY(U,$J,358.3,2711,0)
- ;;=M25.821^^12^106^30
- ;;^UTILITY(U,$J,358.3,2711,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2711,1,3,0)
- ;;=3^Joint disorders, rt elbow, oth, spec
- ;;^UTILITY(U,$J,358.3,2711,1,4,0)
- ;;=4^M25.821
- ;;^UTILITY(U,$J,358.3,2711,2)
- ;;=^5011675
- ;;^UTILITY(U,$J,358.3,2712,0)
- ;;=M25.822^^12^106^23
- ;;^UTILITY(U,$J,358.3,2712,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2712,1,3,0)
- ;;=3^Joint disorders, lft elbow, oth, spec
- ;;^UTILITY(U,$J,358.3,2712,1,4,0)
- ;;=4^M25.822
- ;;^UTILITY(U,$J,358.3,2712,2)
- ;;=^5011676
- ;;^UTILITY(U,$J,358.3,2713,0)
- ;;=M25.831^^12^106^35
- ;;^UTILITY(U,$J,358.3,2713,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2713,1,3,0)
- ;;=3^Joint disorders, rt wrist, oth, spec
- ;;^UTILITY(U,$J,358.3,2713,1,4,0)
- ;;=4^M25.831
- ;;^UTILITY(U,$J,358.3,2713,2)
- ;;=^5011678
- ;;^UTILITY(U,$J,358.3,2714,0)
- ;;=M25.832^^12^106^28
- ;;^UTILITY(U,$J,358.3,2714,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2714,1,3,0)
- ;;=3^Joint disorders, lft wrist, oth, spec
- ;;^UTILITY(U,$J,358.3,2714,1,4,0)
- ;;=4^M25.832
- ;;^UTILITY(U,$J,358.3,2714,2)
- ;;=^5011679
- ;;^UTILITY(U,$J,358.3,2715,0)
- ;;=M25.841^^12^106^31
- ;;^UTILITY(U,$J,358.3,2715,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2715,1,3,0)
- ;;=3^Joint disorders, rt hand, oth, spec
- ;;^UTILITY(U,$J,358.3,2715,1,4,0)
- ;;=4^M25.841
- ;;^UTILITY(U,$J,358.3,2715,2)
- ;;=^5011681
- ;;^UTILITY(U,$J,358.3,2716,0)
- ;;=M25.842^^12^106^24
- ;;^UTILITY(U,$J,358.3,2716,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2716,1,3,0)
- ;;=3^Joint disorders, lft hand, oth, spec
- ;;^UTILITY(U,$J,358.3,2716,1,4,0)
- ;;=4^M25.842
- ;;^UTILITY(U,$J,358.3,2716,2)
- ;;=^5011682
- ;;^UTILITY(U,$J,358.3,2717,0)
- ;;=M25.851^^12^106^32
- ;;^UTILITY(U,$J,358.3,2717,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2717,1,3,0)
- ;;=3^Joint disorders, rt hip, oth, spec
- ;;^UTILITY(U,$J,358.3,2717,1,4,0)
- ;;=4^M25.851
- ;;^UTILITY(U,$J,358.3,2717,2)
- ;;=^5011684
- ;;^UTILITY(U,$J,358.3,2718,0)
- ;;=M25.852^^12^106^25
- ;;^UTILITY(U,$J,358.3,2718,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2718,1,3,0)
- ;;=3^Joint disorders, lft hip, oth, spec
- ;;^UTILITY(U,$J,358.3,2718,1,4,0)
- ;;=4^M25.852
- ;;^UTILITY(U,$J,358.3,2718,2)
- ;;=^5011685
- ;;^UTILITY(U,$J,358.3,2719,0)
- ;;=M25.861^^12^106^33
- ;;^UTILITY(U,$J,358.3,2719,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2719,1,3,0)
- ;;=3^Joint disorders, rt knee, oth, spec
- ;;^UTILITY(U,$J,358.3,2719,1,4,0)
- ;;=4^M25.861
+ ;;^UTILITY(U,$J,358.3,544,1,3,0)
+ ;;=3^Acute promyelocytic leukemia, not having achieved remission

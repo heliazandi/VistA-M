@@ -1,132 +1,140 @@
-IBDEI112 ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI112 ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18428,0)
- ;;=736.76^^121^1168^2
- ;;^UTILITY(U,$J,358.3,18428,1,0)
+ ;;^UTILITY(U,$J,358.3,18098,1,5,0)
+ ;;=5^Chronic fatigue syndrome
+ ;;^UTILITY(U,$J,358.3,18098,2)
+ ;;=^304659
+ ;;^UTILITY(U,$J,358.3,18099,0)
+ ;;=781.5^^96^1155^39
+ ;;^UTILITY(U,$J,358.3,18099,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18428,1,3,0)
- ;;=3^736.76
- ;;^UTILITY(U,$J,358.3,18428,1,5,0)
- ;;=5^Calcaneovalgus, talipes, acquired
- ;;^UTILITY(U,$J,358.3,18428,2)
- ;;=^272748
- ;;^UTILITY(U,$J,358.3,18429,0)
- ;;=754.59^^121^1168^3
- ;;^UTILITY(U,$J,358.3,18429,1,0)
+ ;;^UTILITY(U,$J,358.3,18099,1,4,0)
+ ;;=4^781.5
+ ;;^UTILITY(U,$J,358.3,18099,1,5,0)
+ ;;=5^Clubbing of fingers
+ ;;^UTILITY(U,$J,358.3,18099,2)
+ ;;=^273354
+ ;;^UTILITY(U,$J,358.3,18100,0)
+ ;;=780.39^^96^1155^125
+ ;;^UTILITY(U,$J,358.3,18100,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18429,1,3,0)
- ;;=3^754.59
- ;;^UTILITY(U,$J,358.3,18429,1,5,0)
- ;;=5^Calcaneovarus, talipes
- ;;^UTILITY(U,$J,358.3,18429,2)
- ;;=^273008
- ;;^UTILITY(U,$J,358.3,18430,0)
- ;;=V64.2^^121^1168^6
- ;;^UTILITY(U,$J,358.3,18430,1,0)
+ ;;^UTILITY(U,$J,358.3,18100,1,4,0)
+ ;;=4^780.39
+ ;;^UTILITY(U,$J,358.3,18100,1,5,0)
+ ;;=5^Seizures
+ ;;^UTILITY(U,$J,358.3,18100,2)
+ ;;=Seizures^28162
+ ;;^UTILITY(U,$J,358.3,18101,0)
+ ;;=780.4^^96^1155^52
+ ;;^UTILITY(U,$J,358.3,18101,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18430,1,3,0)
- ;;=3^V64.2
- ;;^UTILITY(U,$J,358.3,18430,1,5,0)
- ;;=5^Cancelled surgical or other procedures because of patient decision 
- ;;^UTILITY(U,$J,358.3,18430,2)
- ;;=^295559
- ;;^UTILITY(U,$J,358.3,18431,0)
- ;;=V64.1^^121^1168^5
- ;;^UTILITY(U,$J,358.3,18431,1,0)
+ ;;^UTILITY(U,$J,358.3,18101,1,4,0)
+ ;;=4^780.4
+ ;;^UTILITY(U,$J,358.3,18101,1,5,0)
+ ;;=5^Dizziness and Giddiness
+ ;;^UTILITY(U,$J,358.3,18101,2)
+ ;;=^35946
+ ;;^UTILITY(U,$J,358.3,18102,0)
+ ;;=782.3^^96^1155^58
+ ;;^UTILITY(U,$J,358.3,18102,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18431,1,3,0)
- ;;=3^V64.1
- ;;^UTILITY(U,$J,358.3,18431,1,5,0)
- ;;=5^Cancelled surgical or other procedure because of contraindication
- ;;^UTILITY(U,$J,358.3,18431,2)
- ;;=^295558
- ;;^UTILITY(U,$J,358.3,18432,0)
- ;;=V64.3^^121^1168^4
- ;;^UTILITY(U,$J,358.3,18432,1,0)
+ ;;^UTILITY(U,$J,358.3,18102,1,4,0)
+ ;;=4^782.3
+ ;;^UTILITY(U,$J,358.3,18102,1,5,0)
+ ;;=5^Edema
+ ;;^UTILITY(U,$J,358.3,18102,2)
+ ;;=Edema^38340
+ ;;^UTILITY(U,$J,358.3,18103,0)
+ ;;=457.1^^96^1155^59
+ ;;^UTILITY(U,$J,358.3,18103,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18432,1,3,0)
- ;;=3^V64.3
- ;;^UTILITY(U,$J,358.3,18432,1,5,0)
- ;;=5^Cancelled procedure because of other reasons
- ;;^UTILITY(U,$J,358.3,18432,2)
- ;;=^295560
- ;;^UTILITY(U,$J,358.3,18433,0)
- ;;=726.79^^121^1168^7
- ;;^UTILITY(U,$J,358.3,18433,1,0)
+ ;;^UTILITY(U,$J,358.3,18103,1,4,0)
+ ;;=4^457.1
+ ;;^UTILITY(U,$J,358.3,18103,1,5,0)
+ ;;=5^Edema due to lymphatic obstruction
+ ;;^UTILITY(U,$J,358.3,18103,2)
+ ;;=   ^87693
+ ;;^UTILITY(U,$J,358.3,18104,0)
+ ;;=459.2^^96^1155^60
+ ;;^UTILITY(U,$J,358.3,18104,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18433,1,3,0)
- ;;=3^726.79
- ;;^UTILITY(U,$J,358.3,18433,1,5,0)
- ;;=5^Capsulitis of ankle/toe/foot
- ;;^UTILITY(U,$J,358.3,18433,2)
- ;;=^272555
- ;;^UTILITY(U,$J,358.3,18434,0)
- ;;=736.75^^121^1168^8
- ;;^UTILITY(U,$J,358.3,18434,1,0)
+ ;;^UTILITY(U,$J,358.3,18104,1,4,0)
+ ;;=4^459.2
+ ;;^UTILITY(U,$J,358.3,18104,1,5,0)
+ ;;=5^Edema due to venous obstruction 
+ ;;^UTILITY(U,$J,358.3,18104,2)
+ ;;=^269850
+ ;;^UTILITY(U,$J,358.3,18105,0)
+ ;;=780.79^^96^1155^97
+ ;;^UTILITY(U,$J,358.3,18105,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18434,1,3,0)
- ;;=3^736.75
- ;;^UTILITY(U,$J,358.3,18434,1,5,0)
- ;;=5^Cavovarus deformity of foot/ankle acquired
- ;;^UTILITY(U,$J,358.3,18434,2)
- ;;=^272747
- ;;^UTILITY(U,$J,358.3,18435,0)
- ;;=681.10^^121^1168^11
- ;;^UTILITY(U,$J,358.3,18435,1,0)
+ ;;^UTILITY(U,$J,358.3,18105,1,4,0)
+ ;;=4^780.79
+ ;;^UTILITY(U,$J,358.3,18105,1,5,0)
+ ;;=5^Malaise
+ ;;^UTILITY(U,$J,358.3,18105,2)
+ ;;=Malaise^73344
+ ;;^UTILITY(U,$J,358.3,18106,0)
+ ;;=783.3^^96^1155^65
+ ;;^UTILITY(U,$J,358.3,18106,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18435,1,3,0)
- ;;=3^681.10
- ;;^UTILITY(U,$J,358.3,18435,1,5,0)
- ;;=5^Cellulitis and abscess, toe, acquired
- ;;^UTILITY(U,$J,358.3,18435,2)
- ;;=^271885
- ;;^UTILITY(U,$J,358.3,18436,0)
- ;;=682.7^^121^1168^9
- ;;^UTILITY(U,$J,358.3,18436,1,0)
+ ;;^UTILITY(U,$J,358.3,18106,1,4,0)
+ ;;=4^783.3
+ ;;^UTILITY(U,$J,358.3,18106,1,5,0)
+ ;;=5^Feeding problem of the elderly
+ ;;^UTILITY(U,$J,358.3,18106,2)
+ ;;=   ^273364
+ ;;^UTILITY(U,$J,358.3,18107,0)
+ ;;=780.1^^96^1155^70
+ ;;^UTILITY(U,$J,358.3,18107,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18436,1,3,0)
- ;;=3^682.7
- ;;^UTILITY(U,$J,358.3,18436,1,5,0)
- ;;=5^Cellulitis and abscess, foot, except toes
- ;;^UTILITY(U,$J,358.3,18436,2)
- ;;=^271895
- ;;^UTILITY(U,$J,358.3,18437,0)
- ;;=682.6^^121^1168^10
- ;;^UTILITY(U,$J,358.3,18437,1,0)
+ ;;^UTILITY(U,$J,358.3,18107,1,4,0)
+ ;;=4^780.1
+ ;;^UTILITY(U,$J,358.3,18107,1,5,0)
+ ;;=5^Hallucinations
+ ;;^UTILITY(U,$J,358.3,18107,2)
+ ;;=Hallucinations^53738
+ ;;^UTILITY(U,$J,358.3,18108,0)
+ ;;=780.8^^96^1155^79
+ ;;^UTILITY(U,$J,358.3,18108,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18437,1,3,0)
- ;;=3^682.6
- ;;^UTILITY(U,$J,358.3,18437,1,5,0)
- ;;=5^Cellulitis and abscess, leg, except foot
- ;;^UTILITY(U,$J,358.3,18437,2)
- ;;=^271894
- ;;^UTILITY(U,$J,358.3,18438,0)
- ;;=094.0^^121^1168^12
- ;;^UTILITY(U,$J,358.3,18438,1,0)
+ ;;^UTILITY(U,$J,358.3,18108,1,4,0)
+ ;;=4^780.8
+ ;;^UTILITY(U,$J,358.3,18108,1,5,0)
+ ;;=5^Hyperhidrosis
+ ;;^UTILITY(U,$J,358.3,18108,2)
+ ;;=Hyperhidrosis^60030
+ ;;^UTILITY(U,$J,358.3,18109,0)
+ ;;=307.41^^96^1155^90
+ ;;^UTILITY(U,$J,358.3,18109,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18438,1,3,0)
- ;;=3^094.0
- ;;^UTILITY(U,$J,358.3,18438,1,5,0)
- ;;=5^Charcot's joint disease 
- ;;^UTILITY(U,$J,358.3,18438,2)
- ;;=^117008^713.5
- ;;^UTILITY(U,$J,358.3,18439,0)
- ;;=443.9^^121^1168^13
- ;;^UTILITY(U,$J,358.3,18439,1,0)
+ ;;^UTILITY(U,$J,358.3,18109,1,4,0)
+ ;;=4^307.41
+ ;;^UTILITY(U,$J,358.3,18109,1,5,0)
+ ;;=5^Insomnia, Nonorganic, Transient
+ ;;^UTILITY(U,$J,358.3,18109,2)
+ ;;=^268285
+ ;;^UTILITY(U,$J,358.3,18110,0)
+ ;;=780.52^^96^1155^91
+ ;;^UTILITY(U,$J,358.3,18110,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18439,1,3,0)
- ;;=3^443.9
- ;;^UTILITY(U,$J,358.3,18439,1,5,0)
- ;;=5^Claudication, intermittent
- ;;^UTILITY(U,$J,358.3,18439,2)
- ;;=^184182
- ;;^UTILITY(U,$J,358.3,18440,0)
- ;;=440.21^^121^1168^14
- ;;^UTILITY(U,$J,358.3,18440,1,0)
+ ;;^UTILITY(U,$J,358.3,18110,1,4,0)
+ ;;=4^780.52
+ ;;^UTILITY(U,$J,358.3,18110,1,5,0)
+ ;;=5^Insomnia, Organic
+ ;;^UTILITY(U,$J,358.3,18110,2)
+ ;;=Insomnia, Organic^87662
+ ;;^UTILITY(U,$J,358.3,18111,0)
+ ;;=302.71^^96^1155^45
+ ;;^UTILITY(U,$J,358.3,18111,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18440,1,3,0)
- ;;=3^440.21
- ;;^UTILITY(U,$J,358.3,18440,1,5,0)
- ;;=5^Claudication, intermittent due to arteriosclerosis
+ ;;^UTILITY(U,$J,358.3,18111,1,4,0)
+ ;;=4^302.71
+ ;;^UTILITY(U,$J,358.3,18111,1,5,0)
+ ;;=5^Decreased Libido
+ ;;^UTILITY(U,$J,358.3,18111,2)
+ ;;=^268178
+ ;;^UTILITY(U,$J,358.3,18112,0)
+ ;;=785.6^^96^1155^96

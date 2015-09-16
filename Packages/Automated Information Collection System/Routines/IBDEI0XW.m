@@ -1,136 +1,130 @@
-IBDEI0XW ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0XW ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16813,1,4,0)
- ;;=4^Spotting-Antepartum
- ;;^UTILITY(U,$J,358.3,16813,2)
- ;;=^334146
- ;;^UTILITY(U,$J,358.3,16814,0)
- ;;=649.63^^108^1056^13
- ;;^UTILITY(U,$J,358.3,16814,1,0)
+ ;;^UTILITY(U,$J,358.3,16503,1,3,0)
+ ;;=3^511.89
+ ;;^UTILITY(U,$J,358.3,16503,1,4,0)
+ ;;=4^Effusion NEC Exc TB
+ ;;^UTILITY(U,$J,358.3,16503,2)
+ ;;=^336604
+ ;;^UTILITY(U,$J,358.3,16504,0)
+ ;;=039.1^^84^987^30
+ ;;^UTILITY(U,$J,358.3,16504,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16814,1,3,0)
- ;;=3^649.63
- ;;^UTILITY(U,$J,358.3,16814,1,4,0)
- ;;=4^Uterine size discrep-Antepartum
- ;;^UTILITY(U,$J,358.3,16814,2)
- ;;=^334149
- ;;^UTILITY(U,$J,358.3,16815,0)
- ;;=649.64^^108^1056^14
- ;;^UTILITY(U,$J,358.3,16815,1,0)
+ ;;^UTILITY(U,$J,358.3,16504,1,3,0)
+ ;;=3^039.1
+ ;;^UTILITY(U,$J,358.3,16504,1,4,0)
+ ;;=4^Nocardiosis, Pulmonary
+ ;;^UTILITY(U,$J,358.3,16504,2)
+ ;;=Nocardiosis, Pulmonary^266495
+ ;;^UTILITY(U,$J,358.3,16505,0)
+ ;;=466.0^^84^987^7
+ ;;^UTILITY(U,$J,358.3,16505,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16815,1,3,0)
- ;;=3^649.64
- ;;^UTILITY(U,$J,358.3,16815,1,4,0)
- ;;=4^Uterine size discrep-Postpartum
- ;;^UTILITY(U,$J,358.3,16815,2)
- ;;=^334150
- ;;^UTILITY(U,$J,358.3,16816,0)
- ;;=649.73^^108^1056^3
- ;;^UTILITY(U,$J,358.3,16816,1,0)
+ ;;^UTILITY(U,$J,358.3,16505,1,3,0)
+ ;;=3^466.0
+ ;;^UTILITY(U,$J,358.3,16505,1,4,0)
+ ;;=4^Bronchitis,Acute
+ ;;^UTILITY(U,$J,358.3,16505,2)
+ ;;=Acute Bronchitis^259084
+ ;;^UTILITY(U,$J,358.3,16506,0)
+ ;;=518.6^^84^987^2
+ ;;^UTILITY(U,$J,358.3,16506,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16816,1,3,0)
- ;;=3^649.73
- ;;^UTILITY(U,$J,358.3,16816,1,4,0)
- ;;=4^Cervical Shortening-Antepartum
- ;;^UTILITY(U,$J,358.3,16816,2)
- ;;=^336621
- ;;^UTILITY(U,$J,358.3,16817,0)
- ;;=658.03^^108^1057^7
- ;;^UTILITY(U,$J,358.3,16817,1,0)
+ ;;^UTILITY(U,$J,358.3,16506,1,3,0)
+ ;;=3^518.6
+ ;;^UTILITY(U,$J,358.3,16506,1,4,0)
+ ;;=4^Allergic Bronchopulm Aspergillosis
+ ;;^UTILITY(U,$J,358.3,16506,2)
+ ;;=Allergic Bronchopulm Aspergillosis^10945
+ ;;^UTILITY(U,$J,358.3,16507,0)
+ ;;=486.^^84^987^58
+ ;;^UTILITY(U,$J,358.3,16507,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16817,1,3,0)
- ;;=3^658.03
- ;;^UTILITY(U,$J,358.3,16817,1,4,0)
- ;;=4^Oligohydramnios-Antepartum
- ;;^UTILITY(U,$J,358.3,16817,2)
- ;;=^271322
- ;;^UTILITY(U,$J,358.3,16818,0)
- ;;=658.13^^108^1057^8
- ;;^UTILITY(U,$J,358.3,16818,1,0)
+ ;;^UTILITY(U,$J,358.3,16507,1,3,0)
+ ;;=3^486.
+ ;;^UTILITY(U,$J,358.3,16507,1,4,0)
+ ;;=4^Pneumonia,Organism Unspec
+ ;;^UTILITY(U,$J,358.3,16507,2)
+ ;;=Atypical Pneumonia^95632
+ ;;^UTILITY(U,$J,358.3,16508,0)
+ ;;=482.9^^84^987^5
+ ;;^UTILITY(U,$J,358.3,16508,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16818,1,3,0)
- ;;=3^658.13
- ;;^UTILITY(U,$J,358.3,16818,1,4,0)
- ;;=4^Prem rupt memb-Antepartum
- ;;^UTILITY(U,$J,358.3,16818,2)
- ;;=^271326
- ;;^UTILITY(U,$J,358.3,16819,0)
- ;;=658.23^^108^1057^9
- ;;^UTILITY(U,$J,358.3,16819,1,0)
+ ;;^UTILITY(U,$J,358.3,16508,1,3,0)
+ ;;=3^482.9
+ ;;^UTILITY(U,$J,358.3,16508,1,4,0)
+ ;;=4^Bacterial Pneumonia,Unspec
+ ;;^UTILITY(U,$J,358.3,16508,2)
+ ;;=Bacterial Pneumonia^12347
+ ;;^UTILITY(U,$J,358.3,16509,0)
+ ;;=466.19^^84^987^1
+ ;;^UTILITY(U,$J,358.3,16509,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16819,1,3,0)
- ;;=3^658.23
- ;;^UTILITY(U,$J,358.3,16819,1,4,0)
- ;;=4^Prolong rup memb-Antepartum
- ;;^UTILITY(U,$J,358.3,16819,2)
- ;;=^271330
- ;;^UTILITY(U,$J,358.3,16820,0)
- ;;=658.33^^108^1057^3
- ;;^UTILITY(U,$J,358.3,16820,1,0)
+ ;;^UTILITY(U,$J,358.3,16509,1,3,0)
+ ;;=3^466.19
+ ;;^UTILITY(U,$J,358.3,16509,1,4,0)
+ ;;=4^Acute Bronchiolitis
+ ;;^UTILITY(U,$J,358.3,16509,2)
+ ;;=Acute Bronchiolitis^304310
+ ;;^UTILITY(U,$J,358.3,16510,0)
+ ;;=491.21^^84^987^11
+ ;;^UTILITY(U,$J,358.3,16510,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16820,1,3,0)
- ;;=3^658.33
- ;;^UTILITY(U,$J,358.3,16820,1,4,0)
- ;;=4^Artif Rupt Memb-Antepartum
- ;;^UTILITY(U,$J,358.3,16820,2)
- ;;=^271334
- ;;^UTILITY(U,$J,358.3,16821,0)
- ;;=658.43^^108^1057^2
- ;;^UTILITY(U,$J,358.3,16821,1,0)
+ ;;^UTILITY(U,$J,358.3,16510,1,3,0)
+ ;;=3^491.21
+ ;;^UTILITY(U,$J,358.3,16510,1,4,0)
+ ;;=4^COPD w/ Chr Bronchitis,Acute Exacerbation
+ ;;^UTILITY(U,$J,358.3,16510,2)
+ ;;=COPD with Chronic Bronchitis, Acute exacerbation^269954
+ ;;^UTILITY(U,$J,358.3,16511,0)
+ ;;=491.20^^84^987^12
+ ;;^UTILITY(U,$J,358.3,16511,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16821,1,3,0)
- ;;=3^658.43
- ;;^UTILITY(U,$J,358.3,16821,1,4,0)
- ;;=4^Amniotic infect-Antepartum
- ;;^UTILITY(U,$J,358.3,16821,2)
- ;;=^271337
- ;;^UTILITY(U,$J,358.3,16822,0)
- ;;=659.43^^108^1057^6
- ;;^UTILITY(U,$J,358.3,16822,1,0)
+ ;;^UTILITY(U,$J,358.3,16511,1,3,0)
+ ;;=3^491.20
+ ;;^UTILITY(U,$J,358.3,16511,1,4,0)
+ ;;=4^COPD w/ Chr Bronchitis,Stable
+ ;;^UTILITY(U,$J,358.3,16511,2)
+ ;;=COPD with Chronic Bronchitis, Stable^269953
+ ;;^UTILITY(U,$J,358.3,16512,0)
+ ;;=116.0^^84^987^15
+ ;;^UTILITY(U,$J,358.3,16512,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16822,1,3,0)
- ;;=3^659.43
- ;;^UTILITY(U,$J,358.3,16822,1,4,0)
- ;;=4^Grand multiparity-Antepartum
- ;;^UTILITY(U,$J,358.3,16822,2)
- ;;=^271366
- ;;^UTILITY(U,$J,358.3,16823,0)
- ;;=659.53^^108^1057^5
- ;;^UTILITY(U,$J,358.3,16823,1,0)
+ ;;^UTILITY(U,$J,358.3,16512,1,3,0)
+ ;;=3^116.0
+ ;;^UTILITY(U,$J,358.3,16512,1,4,0)
+ ;;=4^Fungus, Blastomycosis
+ ;;^UTILITY(U,$J,358.3,16512,2)
+ ;;=Blastomycosis^15213
+ ;;^UTILITY(U,$J,358.3,16513,0)
+ ;;=117.5^^84^987^17
+ ;;^UTILITY(U,$J,358.3,16513,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16823,1,3,0)
- ;;=3^659.53
- ;;^UTILITY(U,$J,358.3,16823,1,4,0)
- ;;=4^Elder primigravida-Antepartum
- ;;^UTILITY(U,$J,358.3,16823,2)
- ;;=^271370
- ;;^UTILITY(U,$J,358.3,16824,0)
- ;;=659.63^^108^1057^4
- ;;^UTILITY(U,$J,358.3,16824,1,0)
+ ;;^UTILITY(U,$J,358.3,16513,1,3,0)
+ ;;=3^117.5
+ ;;^UTILITY(U,$J,358.3,16513,1,4,0)
+ ;;=4^Fungus, Cryptococcosis
+ ;;^UTILITY(U,$J,358.3,16513,2)
+ ;;=Cryptococcosis^29608
+ ;;^UTILITY(U,$J,358.3,16514,0)
+ ;;=117.3^^84^987^14
+ ;;^UTILITY(U,$J,358.3,16514,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16824,1,3,0)
- ;;=3^659.63
- ;;^UTILITY(U,$J,358.3,16824,1,4,0)
- ;;=4^Elder multigravida-Antepartum
- ;;^UTILITY(U,$J,358.3,16824,2)
- ;;=^293920
- ;;^UTILITY(U,$J,358.3,16825,0)
- ;;=659.73^^108^1057^1
- ;;^UTILITY(U,$J,358.3,16825,1,0)
+ ;;^UTILITY(U,$J,358.3,16514,1,3,0)
+ ;;=3^117.3
+ ;;^UTILITY(U,$J,358.3,16514,1,4,0)
+ ;;=4^Fungus, Aspergillosis
+ ;;^UTILITY(U,$J,358.3,16514,2)
+ ;;=Aspergillosis^10935
+ ;;^UTILITY(U,$J,358.3,16515,0)
+ ;;=115.95^^84^987^18
+ ;;^UTILITY(U,$J,358.3,16515,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16825,1,3,0)
- ;;=3^659.73
- ;;^UTILITY(U,$J,358.3,16825,1,4,0)
- ;;=4^ABN Fetal HRT/Rhythm-Antepartum
- ;;^UTILITY(U,$J,358.3,16825,2)
- ;;=^321195
- ;;^UTILITY(U,$J,358.3,16826,0)
- ;;=672.04^^108^1058^1
- ;;^UTILITY(U,$J,358.3,16826,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16826,1,3,0)
- ;;=3^672.04
- ;;^UTILITY(U,$J,358.3,16826,1,4,0)
- ;;=4^Puerperal Pyrexia-Postpartum
+ ;;^UTILITY(U,$J,358.3,16515,1,3,0)
+ ;;=3^115.95
+ ;;^UTILITY(U,$J,358.3,16515,1,4,0)
+ ;;=4^Fungus, Histoplasmosis Pneumonia
+ ;;^UTILITY(U,$J,358.3,16515,2)
+ ;;=Histoplasmosis Pneumonia^266908

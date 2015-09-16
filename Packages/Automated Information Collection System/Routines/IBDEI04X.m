@@ -1,44 +1,132 @@
-IBDEI04X ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
- Q:'DIFQ(358.98)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI04X ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.98,0,"GL")
- ;;=^IBD(358.98,
- ;;^DIC("B","IMP/EXP AICS DATA QUALIFIERS",358.98)
- ;;=
- ;;^DIC(358.98,"%D",0)
- ;;=^^1^1^2950927^^^
- ;;^DIC(358.98,"%D",1,0)
- ;;=Used by the import/export utility of the encounter forms as a workspace.
- ;;^DD(358.98,0)
- ;;=FIELD^^.03^3
- ;;^DD(358.98,0,"DDA")
- ;;=N
- ;;^DD(358.98,0,"DT")
- ;;=2950717
- ;;^DD(358.98,0,"ID",.02)
- ;;=W "   ",$P(^(0),U,2)
- ;;^DD(358.98,0,"IX","B",358.98,.01)
- ;;=
- ;;^DD(358.98,0,"NM","IMP/EXP AICS DATA QUALIFIERS")
- ;;=
- ;;^DD(358.98,0,"PT",358.22,.09)
- ;;=
- ;;^DD(358.98,0,"PT",358.613,.01)
- ;;=
- ;;^DD(358.98,0,"PT",358.931,.09)
- ;;=
- ;;^DD(358.98,0,"VRPK")
- ;;=IBD
- ;;^DD(358.98,.01,0)
- ;;=NAME^RF^^0;1^K:$L(X)>30!(X?.N)!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.98,.01,1,0)
- ;;=^.1
- ;;^DD(358.98,.01,1,1,0)
- ;;=358.98^B
- ;;^DD(358.98,.01,1,1,1)
- ;;=S ^IBD(358.98,"B",$E(X,1,30),DA)=""
- ;;^DD(358.98,.01,1,1,2)
- ;;=K ^IBD(358.98,"B",$E(X,1,30),DA)
- ;;^DD(358.98,.01,3)
- ;;=NAME MUST BE 3-30 CHARACTERS, NOT NUMERIC OR STARTING WITH PUNCTUATION
+ ;;^UTILITY(U,$J,358.3,1780,2)
+ ;;=^5008174
+ ;;^UTILITY(U,$J,358.3,1781,0)
+ ;;=J15.211^^3^53^8
+ ;;^UTILITY(U,$J,358.3,1781,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1781,1,3,0)
+ ;;=3^Pneumonia due to methicillin suscep staph
+ ;;^UTILITY(U,$J,358.3,1781,1,4,0)
+ ;;=4^J15.211
+ ;;^UTILITY(U,$J,358.3,1781,2)
+ ;;=^336833
+ ;;^UTILITY(U,$J,358.3,1782,0)
+ ;;=J15.212^^3^53^6
+ ;;^UTILITY(U,$J,358.3,1782,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1782,1,3,0)
+ ;;=3^Pneumonia due to Methicillin resistant Staphylococcus aureus
+ ;;^UTILITY(U,$J,358.3,1782,1,4,0)
+ ;;=4^J15.212
+ ;;^UTILITY(U,$J,358.3,1782,2)
+ ;;=^336602
+ ;;^UTILITY(U,$J,358.3,1783,0)
+ ;;=J15.9^^3^53^1
+ ;;^UTILITY(U,$J,358.3,1783,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1783,1,3,0)
+ ;;=3^Bacterial Pneumonia,Unspec
+ ;;^UTILITY(U,$J,358.3,1783,1,4,0)
+ ;;=4^J15.9
+ ;;^UTILITY(U,$J,358.3,1783,2)
+ ;;=^5008178
+ ;;^UTILITY(U,$J,358.3,1784,0)
+ ;;=J18.9^^3^53^10
+ ;;^UTILITY(U,$J,358.3,1784,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1784,1,3,0)
+ ;;=3^Pneumonia, unspecified organism
+ ;;^UTILITY(U,$J,358.3,1784,1,4,0)
+ ;;=4^J18.9
+ ;;^UTILITY(U,$J,358.3,1784,2)
+ ;;=^95632
+ ;;^UTILITY(U,$J,358.3,1785,0)
+ ;;=J09.X1^^3^53^2
+ ;;^UTILITY(U,$J,358.3,1785,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1785,1,3,0)
+ ;;=3^Flu d/t ident novel influenza A virus w pneumonia
+ ;;^UTILITY(U,$J,358.3,1785,1,4,0)
+ ;;=4^J09.X1
+ ;;^UTILITY(U,$J,358.3,1785,2)
+ ;;=^5008144
+ ;;^UTILITY(U,$J,358.3,1786,0)
+ ;;=J09.X2^^3^53^3
+ ;;^UTILITY(U,$J,358.3,1786,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1786,1,3,0)
+ ;;=3^Flu d/t ident novel influenza A virus w oth resp manifest
+ ;;^UTILITY(U,$J,358.3,1786,1,4,0)
+ ;;=4^J09.X2
+ ;;^UTILITY(U,$J,358.3,1786,2)
+ ;;=^5008145
+ ;;^UTILITY(U,$J,358.3,1787,0)
+ ;;=J09.X3^^3^53^4
+ ;;^UTILITY(U,$J,358.3,1787,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1787,1,3,0)
+ ;;=3^Flu d/t ident novel influenza A virus w GI manifest
+ ;;^UTILITY(U,$J,358.3,1787,1,4,0)
+ ;;=4^J09.X3
+ ;;^UTILITY(U,$J,358.3,1787,2)
+ ;;=^5008146
+ ;;^UTILITY(U,$J,358.3,1788,0)
+ ;;=J09.X9^^3^53^5
+ ;;^UTILITY(U,$J,358.3,1788,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1788,1,3,0)
+ ;;=3^Flu d/t ident novel influenza A virus w oth manifest
+ ;;^UTILITY(U,$J,358.3,1788,1,4,0)
+ ;;=4^J09.X9
+ ;;^UTILITY(U,$J,358.3,1788,2)
+ ;;=^5008147
+ ;;^UTILITY(U,$J,358.3,1789,0)
+ ;;=I26.92^^3^54^7
+ ;;^UTILITY(U,$J,358.3,1789,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1789,1,3,0)
+ ;;=3^Saddle embolus of pulmonary artery w/o acute cor pulmonale
+ ;;^UTILITY(U,$J,358.3,1789,1,4,0)
+ ;;=4^I26.92
+ ;;^UTILITY(U,$J,358.3,1789,2)
+ ;;=^5007149
+ ;;^UTILITY(U,$J,358.3,1790,0)
+ ;;=I26.99^^3^54^4
+ ;;^UTILITY(U,$J,358.3,1790,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1790,1,3,0)
+ ;;=3^Pulmonary embolism without acute cor pulmonale NEC
+ ;;^UTILITY(U,$J,358.3,1790,1,4,0)
+ ;;=4^I26.99
+ ;;^UTILITY(U,$J,358.3,1790,2)
+ ;;=^5007150
+ ;;^UTILITY(U,$J,358.3,1791,0)
+ ;;=I27.0^^3^54^3
+ ;;^UTILITY(U,$J,358.3,1791,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1791,1,3,0)
+ ;;=3^Primary pulmonary hypertension
+ ;;^UTILITY(U,$J,358.3,1791,1,4,0)
+ ;;=4^I27.0
+ ;;^UTILITY(U,$J,358.3,1791,2)
+ ;;=^265310
+ ;;^UTILITY(U,$J,358.3,1792,0)
+ ;;=I27.2^^3^54^8
+ ;;^UTILITY(U,$J,358.3,1792,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1792,1,3,0)
+ ;;=3^Secondary pulmonary hypertension NEC
+ ;;^UTILITY(U,$J,358.3,1792,1,4,0)
+ ;;=4^I27.2
+ ;;^UTILITY(U,$J,358.3,1792,2)
+ ;;=^5007151
+ ;;^UTILITY(U,$J,358.3,1793,0)
+ ;;=I27.89^^3^54^6
+ ;;^UTILITY(U,$J,358.3,1793,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1793,1,3,0)
+ ;;=3^Pulmonary heart diseases NEC

@@ -1,382 +1,130 @@
-IBDEI02V ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
+IBDEI02V ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3408,2)
- ;;=^329929
- ;;^UTILITY(U,$J,358.3,3409,0)
- ;;=K22.11^^16^154^10
- ;;^UTILITY(U,$J,358.3,3409,1,0)
+ ;;^UTILITY(U,$J,358.3,798,2)
+ ;;=^5133686
+ ;;^UTILITY(U,$J,358.3,799,0)
+ ;;=L97.921^^3^32^56
+ ;;^UTILITY(U,$J,358.3,799,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3409,1,3,0)
- ;;=3^Esophagus Ulcer w/ Bleeding
- ;;^UTILITY(U,$J,358.3,3409,1,4,0)
- ;;=4^K22.11
- ;;^UTILITY(U,$J,358.3,3409,2)
- ;;=^329930
- ;;^UTILITY(U,$J,358.3,3410,0)
- ;;=K22.2^^16^154^8
- ;;^UTILITY(U,$J,358.3,3410,1,0)
+ ;;^UTILITY(U,$J,358.3,799,1,3,0)
+ ;;=3^Non-prs chr ulc unsp prt of l low leg limited to brkdwn skin
+ ;;^UTILITY(U,$J,358.3,799,1,4,0)
+ ;;=4^L97.921
+ ;;^UTILITY(U,$J,358.3,799,2)
+ ;;=^5133680
+ ;;^UTILITY(U,$J,358.3,800,0)
+ ;;=L97.919^^3^32^62
+ ;;^UTILITY(U,$J,358.3,800,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3410,1,3,0)
- ;;=3^Esophageal Obstruction
- ;;^UTILITY(U,$J,358.3,3410,1,4,0)
- ;;=4^K22.2
- ;;^UTILITY(U,$J,358.3,3410,2)
- ;;=^5008507
- ;;^UTILITY(U,$J,358.3,3411,0)
- ;;=M79.7^^16^154^14
- ;;^UTILITY(U,$J,358.3,3411,1,0)
+ ;;^UTILITY(U,$J,358.3,800,1,3,0)
+ ;;=3^Non-prs chr ulc unsp prt of r low leg w unsp severity
+ ;;^UTILITY(U,$J,358.3,800,1,4,0)
+ ;;=4^L97.919
+ ;;^UTILITY(U,$J,358.3,800,2)
+ ;;=^5133688
+ ;;^UTILITY(U,$J,358.3,801,0)
+ ;;=L97.913^^3^32^63
+ ;;^UTILITY(U,$J,358.3,801,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3411,1,3,0)
- ;;=3^Fibromyalgia
- ;;^UTILITY(U,$J,358.3,3411,1,4,0)
- ;;=4^M79.7
- ;;^UTILITY(U,$J,358.3,3411,2)
- ;;=^46261
- ;;^UTILITY(U,$J,358.3,3412,0)
- ;;=R50.9^^16^154^13
- ;;^UTILITY(U,$J,358.3,3412,1,0)
+ ;;^UTILITY(U,$J,358.3,801,1,3,0)
+ ;;=3^Non-prs chr ulc unsp prt of r low leg w necros muscle
+ ;;^UTILITY(U,$J,358.3,801,1,4,0)
+ ;;=4^L97.913
+ ;;^UTILITY(U,$J,358.3,801,2)
+ ;;=^5133683
+ ;;^UTILITY(U,$J,358.3,802,0)
+ ;;=L97.914^^3^32^64
+ ;;^UTILITY(U,$J,358.3,802,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3412,1,3,0)
- ;;=3^Fever,Unspec
- ;;^UTILITY(U,$J,358.3,3412,1,4,0)
- ;;=4^R50.9
- ;;^UTILITY(U,$J,358.3,3412,2)
- ;;=^5019512
- ;;^UTILITY(U,$J,358.3,3413,0)
- ;;=R53.83^^16^154^12
- ;;^UTILITY(U,$J,358.3,3413,1,0)
+ ;;^UTILITY(U,$J,358.3,802,1,3,0)
+ ;;=3^Non-prs chr ulc unsp prt of r low leg w necrosis of bone
+ ;;^UTILITY(U,$J,358.3,802,1,4,0)
+ ;;=4^L97.914
+ ;;^UTILITY(U,$J,358.3,802,2)
+ ;;=^5133685
+ ;;^UTILITY(U,$J,358.3,803,0)
+ ;;=L97.912^^3^32^65
+ ;;^UTILITY(U,$J,358.3,803,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3413,1,3,0)
- ;;=3^Fatigue,Other
- ;;^UTILITY(U,$J,358.3,3413,1,4,0)
- ;;=4^R53.83
- ;;^UTILITY(U,$J,358.3,3413,2)
- ;;=^5019520
- ;;^UTILITY(U,$J,358.3,3414,0)
- ;;=R60.9^^16^154^1
- ;;^UTILITY(U,$J,358.3,3414,1,0)
+ ;;^UTILITY(U,$J,358.3,803,1,3,0)
+ ;;=3^Non-prs chr ulc unsp prt of r low leg w fat layer exposed
+ ;;^UTILITY(U,$J,358.3,803,1,4,0)
+ ;;=4^L97.912
+ ;;^UTILITY(U,$J,358.3,803,2)
+ ;;=^5133681
+ ;;^UTILITY(U,$J,358.3,804,0)
+ ;;=L97.911^^3^32^61
+ ;;^UTILITY(U,$J,358.3,804,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3414,1,3,0)
- ;;=3^Edema,Unspec
- ;;^UTILITY(U,$J,358.3,3414,1,4,0)
- ;;=4^R60.9
- ;;^UTILITY(U,$J,358.3,3414,2)
- ;;=^5019534
- ;;^UTILITY(U,$J,358.3,3415,0)
- ;;=R04.0^^16^154^7
- ;;^UTILITY(U,$J,358.3,3415,1,0)
+ ;;^UTILITY(U,$J,358.3,804,1,3,0)
+ ;;=3^Non-prs chr ulc unsp prt of r low leg limited to brkdwn skin
+ ;;^UTILITY(U,$J,358.3,804,1,4,0)
+ ;;=4^L97.911
+ ;;^UTILITY(U,$J,358.3,804,2)
+ ;;=^5133679
+ ;;^UTILITY(U,$J,358.3,805,0)
+ ;;=L97.112^^3^32^102
+ ;;^UTILITY(U,$J,358.3,805,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3415,1,3,0)
- ;;=3^Epistaxis
- ;;^UTILITY(U,$J,358.3,3415,1,4,0)
- ;;=4^R04.0
- ;;^UTILITY(U,$J,358.3,3415,2)
- ;;=^5019173
- ;;^UTILITY(U,$J,358.3,3416,0)
- ;;=G40.909^^16^154^6
- ;;^UTILITY(U,$J,358.3,3416,1,0)
+ ;;^UTILITY(U,$J,358.3,805,1,3,0)
+ ;;=3^Non-prs chr ulcer of right thigh w fat layer exposed
+ ;;^UTILITY(U,$J,358.3,805,1,4,0)
+ ;;=4^L97.112
+ ;;^UTILITY(U,$J,358.3,805,2)
+ ;;=^5009486
+ ;;^UTILITY(U,$J,358.3,806,0)
+ ;;=L97.111^^3^32^101
+ ;;^UTILITY(U,$J,358.3,806,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3416,1,3,0)
- ;;=3^Epilepsy Not Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,3416,1,4,0)
- ;;=4^G40.909
- ;;^UTILITY(U,$J,358.3,3416,2)
- ;;=^5003865
- ;;^UTILITY(U,$J,358.3,3417,0)
- ;;=M77.9^^16^154^5
- ;;^UTILITY(U,$J,358.3,3417,1,0)
+ ;;^UTILITY(U,$J,358.3,806,1,3,0)
+ ;;=3^Non-prs chr ulcer of right thigh limited to brkdwn skin
+ ;;^UTILITY(U,$J,358.3,806,1,4,0)
+ ;;=4^L97.111
+ ;;^UTILITY(U,$J,358.3,806,2)
+ ;;=^5009485
+ ;;^UTILITY(U,$J,358.3,807,0)
+ ;;=L97.124^^3^32^83
+ ;;^UTILITY(U,$J,358.3,807,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3417,1,3,0)
- ;;=3^Enthesopathy,Unspec
- ;;^UTILITY(U,$J,358.3,3417,1,4,0)
- ;;=4^M77.9
- ;;^UTILITY(U,$J,358.3,3417,2)
- ;;=^5013319
- ;;^UTILITY(U,$J,358.3,3418,0)
- ;;=M10.9^^16^155^8
- ;;^UTILITY(U,$J,358.3,3418,1,0)
+ ;;^UTILITY(U,$J,358.3,807,1,3,0)
+ ;;=3^Non-prs chr ulcer of left thigh w necrosis of bone
+ ;;^UTILITY(U,$J,358.3,807,1,4,0)
+ ;;=4^L97.124
+ ;;^UTILITY(U,$J,358.3,807,2)
+ ;;=^5009493
+ ;;^UTILITY(U,$J,358.3,808,0)
+ ;;=L97.129^^3^32^85
+ ;;^UTILITY(U,$J,358.3,808,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3418,1,3,0)
- ;;=3^Gout,Unspec
- ;;^UTILITY(U,$J,358.3,3418,1,4,0)
- ;;=4^M10.9
- ;;^UTILITY(U,$J,358.3,3418,2)
- ;;=^5010404
- ;;^UTILITY(U,$J,358.3,3419,0)
- ;;=H40.9^^16^155^7
- ;;^UTILITY(U,$J,358.3,3419,1,0)
+ ;;^UTILITY(U,$J,358.3,808,1,3,0)
+ ;;=3^Non-prs chr ulcer of left thigh with unsp severity
+ ;;^UTILITY(U,$J,358.3,808,1,4,0)
+ ;;=4^L97.129
+ ;;^UTILITY(U,$J,358.3,808,2)
+ ;;=^5009494
+ ;;^UTILITY(U,$J,358.3,809,0)
+ ;;=L97.123^^3^32^84
+ ;;^UTILITY(U,$J,358.3,809,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3419,1,3,0)
- ;;=3^Glaucoma,Unspec
- ;;^UTILITY(U,$J,358.3,3419,1,4,0)
- ;;=4^H40.9
- ;;^UTILITY(U,$J,358.3,3419,2)
- ;;=^5005931
- ;;^UTILITY(U,$J,358.3,3420,0)
- ;;=K21.9^^16^155^1
- ;;^UTILITY(U,$J,358.3,3420,1,0)
+ ;;^UTILITY(U,$J,358.3,809,1,3,0)
+ ;;=3^Non-prs chr ulcer of left thigh w necrosis of muscle
+ ;;^UTILITY(U,$J,358.3,809,1,4,0)
+ ;;=4^L97.123
+ ;;^UTILITY(U,$J,358.3,809,2)
+ ;;=^5009492
+ ;;^UTILITY(U,$J,358.3,810,0)
+ ;;=L97.113^^3^32^103
+ ;;^UTILITY(U,$J,358.3,810,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3420,1,3,0)
- ;;=3^GERD w/o Esophagitis
- ;;^UTILITY(U,$J,358.3,3420,1,4,0)
- ;;=4^K21.9
- ;;^UTILITY(U,$J,358.3,3420,2)
- ;;=^5008505
- ;;^UTILITY(U,$J,358.3,3421,0)
- ;;=K29.70^^16^155^4
- ;;^UTILITY(U,$J,358.3,3421,1,0)
+ ;;^UTILITY(U,$J,358.3,810,1,3,0)
+ ;;=3^Non-prs chr ulcer of right thigh w necrosis of muscle
+ ;;^UTILITY(U,$J,358.3,810,1,4,0)
+ ;;=4^L97.113
+ ;;^UTILITY(U,$J,358.3,810,2)
+ ;;=^5009487
+ ;;^UTILITY(U,$J,358.3,811,0)
+ ;;=L97.114^^3^32^104
+ ;;^UTILITY(U,$J,358.3,811,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3421,1,3,0)
- ;;=3^Gastritis w/o Bleeding,Unspec
- ;;^UTILITY(U,$J,358.3,3421,1,4,0)
- ;;=4^K29.70
- ;;^UTILITY(U,$J,358.3,3421,2)
- ;;=^5008552
- ;;^UTILITY(U,$J,358.3,3422,0)
- ;;=K52.9^^16^155^5
- ;;^UTILITY(U,$J,358.3,3422,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3422,1,3,0)
- ;;=3^Gastroenteritis & Colitis Noninfective,Unspec
- ;;^UTILITY(U,$J,358.3,3422,1,4,0)
- ;;=4^K52.9
- ;;^UTILITY(U,$J,358.3,3422,2)
- ;;=^5008704
- ;;^UTILITY(U,$J,358.3,3423,0)
- ;;=K82.9^^16^155^2
- ;;^UTILITY(U,$J,358.3,3423,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3423,1,3,0)
- ;;=3^Gallbladder Disease,Unspec
- ;;^UTILITY(U,$J,358.3,3423,1,4,0)
- ;;=4^K82.9
- ;;^UTILITY(U,$J,358.3,3423,2)
- ;;=^5008875
- ;;^UTILITY(U,$J,358.3,3424,0)
- ;;=K92.2^^16^155^6
- ;;^UTILITY(U,$J,358.3,3424,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3424,1,3,0)
- ;;=3^Gastrointestinal Hemorrhage,Unspec
- ;;^UTILITY(U,$J,358.3,3424,1,4,0)
- ;;=4^K92.2
- ;;^UTILITY(U,$J,358.3,3424,2)
- ;;=^5008915
- ;;^UTILITY(U,$J,358.3,3425,0)
- ;;=K25.9^^16^155^3
- ;;^UTILITY(U,$J,358.3,3425,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3425,1,3,0)
- ;;=3^Gastric Ulcer w/o Hemorrhage/Perforation
- ;;^UTILITY(U,$J,358.3,3425,1,4,0)
- ;;=4^K25.9
- ;;^UTILITY(U,$J,358.3,3425,2)
- ;;=^5008522
- ;;^UTILITY(U,$J,358.3,3426,0)
- ;;=I69.959^^16^156^11
- ;;^UTILITY(U,$J,358.3,3426,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3426,1,3,0)
- ;;=3^Hemiplegia/Hemiparesis Following Unspec Cerebrovascular Disease
- ;;^UTILITY(U,$J,358.3,3426,1,4,0)
- ;;=4^I69.959
- ;;^UTILITY(U,$J,358.3,3426,2)
- ;;=^5007563
- ;;^UTILITY(U,$J,358.3,3427,0)
- ;;=D89.2^^16^156^22
- ;;^UTILITY(U,$J,358.3,3427,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3427,1,3,0)
- ;;=3^Hypergammaglobulinemia,Unspec
- ;;^UTILITY(U,$J,358.3,3427,1,4,0)
- ;;=4^D89.2
- ;;^UTILITY(U,$J,358.3,3427,2)
- ;;=^5002455
- ;;^UTILITY(U,$J,358.3,3428,0)
- ;;=B19.10^^16^156^15
- ;;^UTILITY(U,$J,358.3,3428,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3428,1,3,0)
- ;;=3^Hepatitis B w/o Hepatic Coma
- ;;^UTILITY(U,$J,358.3,3428,1,4,0)
- ;;=4^B19.10
- ;;^UTILITY(U,$J,358.3,3428,2)
- ;;=^5000552
- ;;^UTILITY(U,$J,358.3,3429,0)
- ;;=B17.10^^16^156^17
- ;;^UTILITY(U,$J,358.3,3429,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3429,1,3,0)
- ;;=3^Hepatitis C w/o Hepatic Coma,Acute
- ;;^UTILITY(U,$J,358.3,3429,1,4,0)
- ;;=4^B17.10
- ;;^UTILITY(U,$J,358.3,3429,2)
- ;;=^5000542
- ;;^UTILITY(U,$J,358.3,3430,0)
- ;;=B18.2^^16^156^18
- ;;^UTILITY(U,$J,358.3,3430,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3430,1,3,0)
- ;;=3^Hepatitis C,Chr
- ;;^UTILITY(U,$J,358.3,3430,1,4,0)
- ;;=4^B18.2
- ;;^UTILITY(U,$J,358.3,3430,2)
- ;;=^5000548
- ;;^UTILITY(U,$J,358.3,3431,0)
- ;;=E03.9^^16^156^31
- ;;^UTILITY(U,$J,358.3,3431,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3431,1,3,0)
- ;;=3^Hypothyroidism,Unspec
- ;;^UTILITY(U,$J,358.3,3431,1,4,0)
- ;;=4^E03.9
- ;;^UTILITY(U,$J,358.3,3431,2)
- ;;=^5002476
- ;;^UTILITY(U,$J,358.3,3432,0)
- ;;=E16.2^^16^156^28
- ;;^UTILITY(U,$J,358.3,3432,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3432,1,3,0)
- ;;=3^Hypoglycemia,Unspec
- ;;^UTILITY(U,$J,358.3,3432,1,4,0)
- ;;=4^E16.2
- ;;^UTILITY(U,$J,358.3,3432,2)
- ;;=^5002708
- ;;^UTILITY(U,$J,358.3,3433,0)
- ;;=E78.0^^16^156^21
- ;;^UTILITY(U,$J,358.3,3433,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3433,1,3,0)
- ;;=3^Hypercholesterolemia,Pure
- ;;^UTILITY(U,$J,358.3,3433,1,4,0)
- ;;=4^E78.0
- ;;^UTILITY(U,$J,358.3,3433,2)
- ;;=^5002966
- ;;^UTILITY(U,$J,358.3,3434,0)
- ;;=E78.1^^16^156^23
- ;;^UTILITY(U,$J,358.3,3434,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3434,1,3,0)
- ;;=3^Hyperglyceridemia,Pure
- ;;^UTILITY(U,$J,358.3,3434,1,4,0)
- ;;=4^E78.1
- ;;^UTILITY(U,$J,358.3,3434,2)
- ;;=^101303
- ;;^UTILITY(U,$J,358.3,3435,0)
- ;;=E78.5^^16^156^26
- ;;^UTILITY(U,$J,358.3,3435,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3435,1,3,0)
- ;;=3^Hyperlipidemia,Unspec
- ;;^UTILITY(U,$J,358.3,3435,1,4,0)
- ;;=4^E78.5
- ;;^UTILITY(U,$J,358.3,3435,2)
- ;;=^5002969
- ;;^UTILITY(U,$J,358.3,3436,0)
- ;;=E78.4^^16^156^25
- ;;^UTILITY(U,$J,358.3,3436,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3436,1,3,0)
- ;;=3^Hyperlipidemia,Other
- ;;^UTILITY(U,$J,358.3,3436,1,4,0)
- ;;=4^E78.4
- ;;^UTILITY(U,$J,358.3,3436,2)
- ;;=^5002968
- ;;^UTILITY(U,$J,358.3,3437,0)
- ;;=E87.1^^16^156^27
- ;;^UTILITY(U,$J,358.3,3437,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3437,1,3,0)
- ;;=3^Hypo-osmolatlity & Hyponatremia
- ;;^UTILITY(U,$J,358.3,3437,1,4,0)
- ;;=4^E87.1
- ;;^UTILITY(U,$J,358.3,3437,2)
- ;;=^5003019
- ;;^UTILITY(U,$J,358.3,3438,0)
- ;;=E87.5^^16^156^24
- ;;^UTILITY(U,$J,358.3,3438,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3438,1,3,0)
- ;;=3^Hyperkalemia
- ;;^UTILITY(U,$J,358.3,3438,1,4,0)
- ;;=4^E87.5
- ;;^UTILITY(U,$J,358.3,3438,2)
- ;;=^60041
- ;;^UTILITY(U,$J,358.3,3439,0)
- ;;=E87.6^^16^156^29
- ;;^UTILITY(U,$J,358.3,3439,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3439,1,3,0)
- ;;=3^Hypokalemia
- ;;^UTILITY(U,$J,358.3,3439,1,4,0)
- ;;=4^E87.6
- ;;^UTILITY(U,$J,358.3,3439,2)
- ;;=^60610
- ;;^UTILITY(U,$J,358.3,3440,0)
- ;;=G81.90^^16^156^10
- ;;^UTILITY(U,$J,358.3,3440,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3440,1,3,0)
- ;;=3^Hemiplegia,Unspec
- ;;^UTILITY(U,$J,358.3,3440,1,4,0)
- ;;=4^G81.90
- ;;^UTILITY(U,$J,358.3,3440,2)
- ;;=^5004120
- ;;^UTILITY(U,$J,358.3,3441,0)
- ;;=G81.91^^16^156^9
- ;;^UTILITY(U,$J,358.3,3441,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3441,1,3,0)
- ;;=3^Hemiplegia Affecting Right Dominant Side
- ;;^UTILITY(U,$J,358.3,3441,1,4,0)
- ;;=4^G81.91
- ;;^UTILITY(U,$J,358.3,3441,2)
- ;;=^5004121
- ;;^UTILITY(U,$J,358.3,3442,0)
- ;;=G81.92^^16^156^8
- ;;^UTILITY(U,$J,358.3,3442,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3442,1,3,0)
- ;;=3^Hemiplegia Affecting Left Dominant Side
- ;;^UTILITY(U,$J,358.3,3442,1,4,0)
- ;;=4^G81.92
- ;;^UTILITY(U,$J,358.3,3442,2)
- ;;=^5004122
- ;;^UTILITY(U,$J,358.3,3443,0)
- ;;=H91.91^^16^156^6
- ;;^UTILITY(U,$J,358.3,3443,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3443,1,3,0)
- ;;=3^Hearing Loss,Unspec,Right Ear
- ;;^UTILITY(U,$J,358.3,3443,1,4,0)
- ;;=4^H91.91
- ;;^UTILITY(U,$J,358.3,3443,2)
- ;;=^5133553
- ;;^UTILITY(U,$J,358.3,3444,0)
- ;;=H91.92^^16^156^5
- ;;^UTILITY(U,$J,358.3,3444,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3444,1,3,0)
- ;;=3^Hearing Loss,Unspec,Left Ear
- ;;^UTILITY(U,$J,358.3,3444,1,4,0)
- ;;=4^H91.92
- ;;^UTILITY(U,$J,358.3,3444,2)
- ;;=^5133554
- ;;^UTILITY(U,$J,358.3,3445,0)
- ;;=H91.93^^16^156^4
- ;;^UTILITY(U,$J,358.3,3445,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3445,1,3,0)
- ;;=3^Hearing Loss,Unspec,Bilateral
- ;;^UTILITY(U,$J,358.3,3445,1,4,0)
- ;;=4^H91.93
- ;;^UTILITY(U,$J,358.3,3445,2)
- ;;=^5006944
- ;;^UTILITY(U,$J,358.3,3446,0)
- ;;=I10.^^16^156^2
- ;;^UTILITY(U,$J,358.3,3446,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3446,1,3,0)
- ;;=3^HTN,Essential

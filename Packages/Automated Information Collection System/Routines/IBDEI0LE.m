@@ -1,64 +1,138 @@
-IBDEI0LE ; ; 19-NOV-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
- Q:'DIFQ(358.4)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI0LE ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.4,0,"GL")
- ;;=^IBE(358.4,
- ;;^DIC("B","IMP/EXP SELECTION GROUP",358.4)
- ;;=
- ;;^DIC(358.4,"%D",0)
- ;;=^^4^4^2940217^
- ;;^DIC(358.4,"%D",1,0)
- ;;= 
- ;;^DIC(358.4,"%D",2,0)
- ;;=This file is nearly identical to file #357.4. It is used by the
- ;;^DIC(358.4,"%D",3,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.4,"%D",4,0)
- ;;=that is being imported or exported.
- ;;^DD(358.4,0)
- ;;=FIELD^^.04^4
- ;;^DD(358.4,0,"DDA")
- ;;=N
- ;;^DD(358.4,0,"DT")
- ;;=2950717
- ;;^DD(358.4,0,"ID",.02)
- ;;=W "   ",$P(^(0),U,2)
- ;;^DD(358.4,0,"ID",.03)
- ;;=S %I=Y,Y=$S('$D(^(0)):"",$D(^IBE(358.2,+$P(^(0),U,3),0))#2:$P(^(0),U,1),1:""),C=$P(^DD(358.2,.01,0),U,2) D Y^DIQ:Y]"" W "   ",Y,@("$E("_DIC_"%I,0),0)") S Y=%I K %I
- ;;^DD(358.4,0,"IX","APO",358.4,.02)
- ;;=
- ;;^DD(358.4,0,"IX","APO1",358.4,.03)
- ;;=
- ;;^DD(358.4,0,"IX","B",358.4,.01)
- ;;=
- ;;^DD(358.4,0,"IX","D",358.4,.03)
- ;;=
- ;;^DD(358.4,0,"NM","IMP/EXP SELECTION GROUP")
- ;;=
- ;;^DD(358.4,0,"PT",358.3,.04)
- ;;=
- ;;^DD(358.4,0,"VRPK")
- ;;=IBD
- ;;^DD(358.4,.01,0)
- ;;=HEADER^RF^^0;1^K:$L(X)>40!($L(X)<1) X
- ;;^DD(358.4,.01,1,0)
- ;;=^.1
- ;;^DD(358.4,.01,1,1,0)
- ;;=358.4^B
- ;;^DD(358.4,.01,1,1,1)
- ;;=S ^IBE(358.4,"B",$E(X,1,30),DA)=""
- ;;^DD(358.4,.01,1,1,2)
- ;;=K ^IBE(358.4,"B",$E(X,1,30),DA)
- ;;^DD(358.4,.01,3)
- ;;=What text do you want to appear at the top of this group?
- ;;^DD(358.4,.01,21,0)
- ;;=^^2^2^2930604^^^^
- ;;^DD(358.4,.01,21,1,0)
- ;;= 
- ;;^DD(358.4,.01,21,2,0)
- ;;=The name given to a group of selections appearing on a selection list.
- ;;^DD(358.4,.01,"DEL",1,0)
- ;;=I '$G(IBLISTPR) W "...Selection Groups can only be deleted through the Encounter Form Utilities!"
- ;;^DD(358.4,.01,"DT")
- ;;=2930604
+ ;;^UTILITY(U,$J,358.3,10141,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10141,1,3,0)
+ ;;=3^Blindness-One Eye
+ ;;^UTILITY(U,$J,358.3,10141,1,4,0)
+ ;;=4^369.62
+ ;;^UTILITY(U,$J,358.3,10141,2)
+ ;;=^268890
+ ;;^UTILITY(U,$J,358.3,10142,0)
+ ;;=377.00^^44^561^99
+ ;;^UTILITY(U,$J,358.3,10142,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10142,1,3,0)
+ ;;=3^Papilledema,Unspec
+ ;;^UTILITY(U,$J,358.3,10142,1,4,0)
+ ;;=4^377.00
+ ;;^UTILITY(U,$J,358.3,10142,2)
+ ;;=^89575
+ ;;^UTILITY(U,$J,358.3,10143,0)
+ ;;=377.02^^44^561^98
+ ;;^UTILITY(U,$J,358.3,10143,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10143,1,3,0)
+ ;;=3^Papilledema,Decreased Ocul Pressure
+ ;;^UTILITY(U,$J,358.3,10143,1,4,0)
+ ;;=4^377.02
+ ;;^UTILITY(U,$J,358.3,10143,2)
+ ;;=^269213
+ ;;^UTILITY(U,$J,358.3,10144,0)
+ ;;=377.03^^44^561^97
+ ;;^UTILITY(U,$J,358.3,10144,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10144,1,3,0)
+ ;;=3^Papilledema w/ Retina D/O
+ ;;^UTILITY(U,$J,358.3,10144,1,4,0)
+ ;;=4^377.03
+ ;;^UTILITY(U,$J,358.3,10144,2)
+ ;;=^269214
+ ;;^UTILITY(U,$J,358.3,10145,0)
+ ;;=377.04^^44^561^40
+ ;;^UTILITY(U,$J,358.3,10145,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10145,1,3,0)
+ ;;=3^Foster-Kennedy Syndrome
+ ;;^UTILITY(U,$J,358.3,10145,1,4,0)
+ ;;=4^377.04
+ ;;^UTILITY(U,$J,358.3,10145,2)
+ ;;=^265146
+ ;;^UTILITY(U,$J,358.3,10146,0)
+ ;;=377.11^^44^561^83
+ ;;^UTILITY(U,$J,358.3,10146,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10146,1,3,0)
+ ;;=3^Optic Atrophy,Primary
+ ;;^UTILITY(U,$J,358.3,10146,1,4,0)
+ ;;=4^377.11
+ ;;^UTILITY(U,$J,358.3,10146,2)
+ ;;=^269215
+ ;;^UTILITY(U,$J,358.3,10147,0)
+ ;;=377.12^^44^561^82
+ ;;^UTILITY(U,$J,358.3,10147,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10147,1,3,0)
+ ;;=3^Optic Atrophy,Postinflammatory
+ ;;^UTILITY(U,$J,358.3,10147,1,4,0)
+ ;;=4^377.12
+ ;;^UTILITY(U,$J,358.3,10147,2)
+ ;;=^269216
+ ;;^UTILITY(U,$J,358.3,10148,0)
+ ;;=377.15^^44^561^81
+ ;;^UTILITY(U,$J,358.3,10148,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10148,1,3,0)
+ ;;=3^Optic Atrophy,Partial
+ ;;^UTILITY(U,$J,358.3,10148,1,4,0)
+ ;;=4^377.15
+ ;;^UTILITY(U,$J,358.3,10148,2)
+ ;;=^269219
+ ;;^UTILITY(U,$J,358.3,10149,0)
+ ;;=377.16^^44^561^80
+ ;;^UTILITY(U,$J,358.3,10149,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10149,1,3,0)
+ ;;=3^Optic Atrophy,Leber's
+ ;;^UTILITY(U,$J,358.3,10149,1,4,0)
+ ;;=4^377.16
+ ;;^UTILITY(U,$J,358.3,10149,2)
+ ;;=^85931
+ ;;^UTILITY(U,$J,358.3,10150,0)
+ ;;=377.31^^44^561^94
+ ;;^UTILITY(U,$J,358.3,10150,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10150,1,3,0)
+ ;;=3^Optic Papillitis
+ ;;^UTILITY(U,$J,358.3,10150,1,4,0)
+ ;;=4^377.31
+ ;;^UTILITY(U,$J,358.3,10150,2)
+ ;;=^276874
+ ;;^UTILITY(U,$J,358.3,10151,0)
+ ;;=377.32^^44^561^89
+ ;;^UTILITY(U,$J,358.3,10151,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10151,1,3,0)
+ ;;=3^Optic Neuritis,Retrobulbar,Acute
+ ;;^UTILITY(U,$J,358.3,10151,1,4,0)
+ ;;=4^377.32
+ ;;^UTILITY(U,$J,358.3,10151,2)
+ ;;=^269225
+ ;;^UTILITY(U,$J,358.3,10152,0)
+ ;;=377.33^^44^561^92
+ ;;^UTILITY(U,$J,358.3,10152,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10152,1,3,0)
+ ;;=3^Optic Neuropathy,Nutritional
+ ;;^UTILITY(U,$J,358.3,10152,1,4,0)
+ ;;=4^377.33
+ ;;^UTILITY(U,$J,358.3,10152,2)
+ ;;=^269226
+ ;;^UTILITY(U,$J,358.3,10153,0)
+ ;;=377.39^^44^561^93
+ ;;^UTILITY(U,$J,358.3,10153,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10153,1,3,0)
+ ;;=3^Optic Neuropathy,Other
+ ;;^UTILITY(U,$J,358.3,10153,1,4,0)
+ ;;=4^377.39
+ ;;^UTILITY(U,$J,358.3,10153,2)
+ ;;=^87748
+ ;;^UTILITY(U,$J,358.3,10154,0)
+ ;;=377.42^^44^561^87
+ ;;^UTILITY(U,$J,358.3,10154,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10154,1,3,0)
+ ;;=3^Optic Nerve Sheaths Hemorrhage

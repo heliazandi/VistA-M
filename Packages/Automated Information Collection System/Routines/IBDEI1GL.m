@@ -1,58 +1,140 @@
-IBDEI1GL ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
- Q:'DIFQ(358.7)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI1GL ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.7,0,"GL")
- ;;=^IBE(358.7,
- ;;^DIC("B","IMP/EXP FORM LINE",358.7)
- ;;=
- ;;^DIC(358.7,"%D",0)
- ;;=^^3^3^2940217^
- ;;^DIC(358.7,"%D",1,0)
- ;;=This file is nearly identical to file #357.7. It is used by the
- ;;^DIC(358.7,"%D",2,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.7,"%D",3,0)
- ;;=that is being imported or exported.
- ;;^DD(358.7,0)
- ;;=FIELD^^.08^8
- ;;^DD(358.7,0,"DDA")
- ;;=N
- ;;^DD(358.7,0,"DT")
- ;;=2950717
- ;;^DD(358.7,0,"ID",.02)
- ;;=W " STARTING COL=",$P(^(0),U,2)+1
- ;;^DD(358.7,0,"ID",.03)
- ;;=W " STARTING ROW=",$P(^(0),U,3)+1
- ;;^DD(358.7,0,"ID",.06)
- ;;=W ""
- ;;^DD(358.7,0,"IX","B",358.7,.01)
- ;;=
- ;;^DD(358.7,0,"IX","C",358.7,.06)
- ;;=
- ;;^DD(358.7,0,"NM","IMP/EXP FORM LINE")
- ;;=
- ;;^DD(358.7,0,"VRPK")
- ;;=IBD
- ;;^DD(358.7,.01,0)
- ;;=NAME^RF^^0;1^K:$L(X)>30!(X?.N)!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.7,.01,1,0)
- ;;=^.1
- ;;^DD(358.7,.01,1,1,0)
- ;;=358.7^B
- ;;^DD(358.7,.01,1,1,1)
- ;;=S ^IBE(358.7,"B",$E(X,1,30),DA)=""
- ;;^DD(358.7,.01,1,1,2)
- ;;=K ^IBE(358.7,"B",$E(X,1,30),DA)
- ;;^DD(358.7,.01,3)
- ;;=NAME MUST BE 3-30 CHARACTERS, NOT NUMERIC OR STARTING WITH PUNCTUATION
- ;;^DD(358.7,.01,21,0)
- ;;=^^4^4^2930527^
- ;;^DD(358.7,.01,21,1,0)
- ;;= 
- ;;^DD(358.7,.01,21,2,0)
- ;;=The name given to the line. Lines should be given names that will allow
- ;;^DD(358.7,.01,21,3,0)
- ;;=them to be identifies, such as V(1,1), meaning a vertical line starting at
- ;;^DD(358.7,.01,21,4,0)
- ;;=coordinates (1,1).
+ ;;^UTILITY(U,$J,358.3,25885,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25885,1,2,0)
+ ;;=2^304.53
+ ;;^UTILITY(U,$J,358.3,25885,1,5,0)
+ ;;=5^Hallucinogen Dep-Remission
+ ;;^UTILITY(U,$J,358.3,25885,2)
+ ;;=^268210
+ ;;^UTILITY(U,$J,358.3,25886,0)
+ ;;=305.30^^150^1647^56
+ ;;^UTILITY(U,$J,358.3,25886,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25886,1,2,0)
+ ;;=2^305.30
+ ;;^UTILITY(U,$J,358.3,25886,1,5,0)
+ ;;=5^Hallucinogen Abuse
+ ;;^UTILITY(U,$J,358.3,25886,2)
+ ;;=^53741
+ ;;^UTILITY(U,$J,358.3,25887,0)
+ ;;=305.33^^150^1647^55
+ ;;^UTILITY(U,$J,358.3,25887,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25887,1,2,0)
+ ;;=2^305.33
+ ;;^UTILITY(U,$J,358.3,25887,1,5,0)
+ ;;=5^Hallucinog Abuse-Remission
+ ;;^UTILITY(U,$J,358.3,25887,2)
+ ;;=^268239
+ ;;^UTILITY(U,$J,358.3,25888,0)
+ ;;=304.60^^150^1647^54
+ ;;^UTILITY(U,$J,358.3,25888,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25888,1,2,0)
+ ;;=2^304.60
+ ;;^UTILITY(U,$J,358.3,25888,1,5,0)
+ ;;=5^Drug Dependence, Other
+ ;;^UTILITY(U,$J,358.3,25888,2)
+ ;;=^88038
+ ;;^UTILITY(U,$J,358.3,25889,0)
+ ;;=304.63^^150^1647^51
+ ;;^UTILITY(U,$J,358.3,25889,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25889,1,2,0)
+ ;;=2^304.63
+ ;;^UTILITY(U,$J,358.3,25889,1,5,0)
+ ;;=5^Drug Depend Other-Remission
+ ;;^UTILITY(U,$J,358.3,25889,2)
+ ;;=^268213
+ ;;^UTILITY(U,$J,358.3,25890,0)
+ ;;=305.90^^150^1647^76
+ ;;^UTILITY(U,$J,358.3,25890,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25890,1,2,0)
+ ;;=2^305.90
+ ;;^UTILITY(U,$J,358.3,25890,1,5,0)
+ ;;=5^Other Drug Abuse
+ ;;^UTILITY(U,$J,358.3,25890,2)
+ ;;=^268258
+ ;;^UTILITY(U,$J,358.3,25891,0)
+ ;;=305.93^^150^1647^79
+ ;;^UTILITY(U,$J,358.3,25891,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25891,1,2,0)
+ ;;=2^305.93
+ ;;^UTILITY(U,$J,358.3,25891,1,5,0)
+ ;;=5^Other Drug Abuse-Remission
+ ;;^UTILITY(U,$J,358.3,25891,2)
+ ;;=^268261
+ ;;^UTILITY(U,$J,358.3,25892,0)
+ ;;=304.70^^150^1647^65
+ ;;^UTILITY(U,$J,358.3,25892,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25892,1,2,0)
+ ;;=2^304.70
+ ;;^UTILITY(U,$J,358.3,25892,1,5,0)
+ ;;=5^Opioid + Other Depend
+ ;;^UTILITY(U,$J,358.3,25892,2)
+ ;;=^268214
+ ;;^UTILITY(U,$J,358.3,25893,0)
+ ;;=304.73^^150^1647^64
+ ;;^UTILITY(U,$J,358.3,25893,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25893,1,2,0)
+ ;;=2^304.73
+ ;;^UTILITY(U,$J,358.3,25893,1,5,0)
+ ;;=5^Opioid + Other Dep-Remis
+ ;;^UTILITY(U,$J,358.3,25893,2)
+ ;;=^268217
+ ;;^UTILITY(U,$J,358.3,25894,0)
+ ;;=304.80^^150^1647^50
+ ;;^UTILITY(U,$J,358.3,25894,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25894,1,2,0)
+ ;;=2^304.80
+ ;;^UTILITY(U,$J,358.3,25894,1,5,0)
+ ;;=5^Combination Drug Dep
+ ;;^UTILITY(U,$J,358.3,25894,2)
+ ;;=^268218
+ ;;^UTILITY(U,$J,358.3,25895,0)
+ ;;=304.83^^150^1647^47
+ ;;^UTILITY(U,$J,358.3,25895,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25895,1,2,0)
+ ;;=2^304.83
+ ;;^UTILITY(U,$J,358.3,25895,1,5,0)
+ ;;=5^Comb Drug Dep-Remission
+ ;;^UTILITY(U,$J,358.3,25895,2)
+ ;;=^268221
+ ;;^UTILITY(U,$J,358.3,25896,0)
+ ;;=305.1^^150^1647^63
+ ;;^UTILITY(U,$J,358.3,25896,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25896,1,2,0)
+ ;;=2^305.1
+ ;;^UTILITY(U,$J,358.3,25896,1,5,0)
+ ;;=5^Nicotine Dependence
+ ;;^UTILITY(U,$J,358.3,25896,2)
+ ;;=^119899
+ ;;^UTILITY(U,$J,358.3,25897,0)
+ ;;=291.81^^150^1647^14
+ ;;^UTILITY(U,$J,358.3,25897,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25897,1,2,0)
+ ;;=2^291.81
+ ;;^UTILITY(U,$J,358.3,25897,1,5,0)
+ ;;=5^Alcohol Withdrawal
+ ;;^UTILITY(U,$J,358.3,25897,2)
+ ;;=^123498
+ ;;^UTILITY(U,$J,358.3,25898,0)
+ ;;=291.0^^150^1647^13
+ ;;^UTILITY(U,$J,358.3,25898,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25898,1,2,0)
+ ;;=2^291.0
+ ;;^UTILITY(U,$J,358.3,25898,1,5,0)
+ ;;=5^Alcohol Withdraw Delir

@@ -1,134 +1,136 @@
-IBDEI11C ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI11C ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18556,2)
- ;;=^272742
- ;;^UTILITY(U,$J,358.3,18557,0)
- ;;=754.53^^121^1177^8
- ;;^UTILITY(U,$J,358.3,18557,1,0)
+ ;;^UTILITY(U,$J,358.3,18234,1,4,0)
+ ;;=4^787.60
+ ;;^UTILITY(U,$J,358.3,18234,1,5,0)
+ ;;=5^Incontinence of Feces
+ ;;^UTILITY(U,$J,358.3,18234,2)
+ ;;=^339670
+ ;;^UTILITY(U,$J,358.3,18235,0)
+ ;;=V68.1^^96^1156^4
+ ;;^UTILITY(U,$J,358.3,18235,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18557,1,3,0)
- ;;=3^754.53
- ;;^UTILITY(U,$J,358.3,18557,1,5,0)
- ;;=5^Metatarsal adductus/varus; Congenital
- ;;^UTILITY(U,$J,358.3,18557,2)
- ;;=^273007
- ;;^UTILITY(U,$J,358.3,18558,0)
- ;;=355.8^^121^1177^9
- ;;^UTILITY(U,$J,358.3,18558,1,0)
+ ;;^UTILITY(U,$J,358.3,18235,1,4,0)
+ ;;=4^V68.1
+ ;;^UTILITY(U,$J,358.3,18235,1,5,0)
+ ;;=5^Rx Refill (Also mark Condition)
+ ;;^UTILITY(U,$J,358.3,18235,2)
+ ;;=RX Refill (also mark Condition)^295585
+ ;;^UTILITY(U,$J,358.3,18236,0)
+ ;;=V68.81^^96^1156^5
+ ;;^UTILITY(U,$J,358.3,18236,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18558,1,3,0)
- ;;=3^355.8
- ;;^UTILITY(U,$J,358.3,18558,1,5,0)
- ;;=5^Mononeuritis of lower limb, unspecified
- ;;^UTILITY(U,$J,358.3,18558,2)
- ;;=^268511
- ;;^UTILITY(U,$J,358.3,18559,0)
- ;;=729.1^^121^1177^11
- ;;^UTILITY(U,$J,358.3,18559,1,0)
+ ;;^UTILITY(U,$J,358.3,18236,1,4,0)
+ ;;=4^V68.81
+ ;;^UTILITY(U,$J,358.3,18236,1,5,0)
+ ;;=5^Transfer of Care-Also mark DX
+ ;;^UTILITY(U,$J,358.3,18236,2)
+ ;;=Transfer of Care ^295587
+ ;;^UTILITY(U,$J,358.3,18237,0)
+ ;;=V58.83^^96^1156^2
+ ;;^UTILITY(U,$J,358.3,18237,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18559,1,3,0)
- ;;=3^729.1
- ;;^UTILITY(U,$J,358.3,18559,1,5,0)
- ;;=5^Myalgia and myositis, unspecified
- ;;^UTILITY(U,$J,358.3,18559,2)
- ;;=^80160
- ;;^UTILITY(U,$J,358.3,18560,0)
- ;;=355.71^^121^1178^4
- ;;^UTILITY(U,$J,358.3,18560,1,0)
+ ;;^UTILITY(U,$J,358.3,18237,1,4,0)
+ ;;=4^V58.83
+ ;;^UTILITY(U,$J,358.3,18237,1,5,0)
+ ;;=5^Encounter for Therapeutic Drug Monitoring
+ ;;^UTILITY(U,$J,358.3,18237,2)
+ ;;=Encounter for Therapeutic Drug Monitoring^322076
+ ;;^UTILITY(U,$J,358.3,18238,0)
+ ;;=V68.09^^96^1156^3
+ ;;^UTILITY(U,$J,358.3,18238,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18560,1,3,0)
- ;;=3^355.71
- ;;^UTILITY(U,$J,358.3,18560,1,5,0)
- ;;=5^Nerve entrapment, lower limb
- ;;^UTILITY(U,$J,358.3,18560,2)
- ;;=^295729
- ;;^UTILITY(U,$J,358.3,18561,0)
- ;;=216.7^^121^1178^2
- ;;^UTILITY(U,$J,358.3,18561,1,0)
+ ;;^UTILITY(U,$J,358.3,18238,1,4,0)
+ ;;=4^V68.09
+ ;;^UTILITY(U,$J,358.3,18238,1,5,0)
+ ;;=5^Issue of Medical Cert NEC
+ ;;^UTILITY(U,$J,358.3,18238,2)
+ ;;=^335321
+ ;;^UTILITY(U,$J,358.3,18239,0)
+ ;;=V68.01^^96^1156^1
+ ;;^UTILITY(U,$J,358.3,18239,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18561,1,3,0)
- ;;=3^216.7
- ;;^UTILITY(U,$J,358.3,18561,1,5,0)
- ;;=5^Neoplasm, skin of lower limb, including hip; Benign
- ;;^UTILITY(U,$J,358.3,18561,2)
- ;;=^267636
- ;;^UTILITY(U,$J,358.3,18562,0)
- ;;=239.2^^121^1178^3
- ;;^UTILITY(U,$J,358.3,18562,1,0)
+ ;;^UTILITY(U,$J,358.3,18239,1,4,0)
+ ;;=4^V68.01
+ ;;^UTILITY(U,$J,358.3,18239,1,5,0)
+ ;;=5^Disability Examination
+ ;;^UTILITY(U,$J,358.3,18239,2)
+ ;;=^335320
+ ;;^UTILITY(U,$J,358.3,18240,0)
+ ;;=V82.89^^96^1157^4
+ ;;^UTILITY(U,$J,358.3,18240,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18562,1,3,0)
- ;;=3^239.2
- ;;^UTILITY(U,$J,358.3,18562,1,5,0)
- ;;=5^Neoplasm, skin, bone and soft tissue; Unspecified
- ;;^UTILITY(U,$J,358.3,18562,2)
- ;;=^267783
- ;;^UTILITY(U,$J,358.3,18563,0)
- ;;=356.9^^121^1178^7
- ;;^UTILITY(U,$J,358.3,18563,1,0)
+ ;;^UTILITY(U,$J,358.3,18240,1,4,0)
+ ;;=4^V82.89
+ ;;^UTILITY(U,$J,358.3,18240,1,5,0)
+ ;;=5^Screening for TBI/Not Found
+ ;;^UTILITY(U,$J,358.3,18240,2)
+ ;;=^322099
+ ;;^UTILITY(U,$J,358.3,18241,0)
+ ;;=V15.51^^96^1157^5
+ ;;^UTILITY(U,$J,358.3,18241,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18563,1,3,0)
- ;;=3^356.9
- ;;^UTILITY(U,$J,358.3,18563,1,5,0)
- ;;=5^Neuropathy, peripheral, Hereditary; Unspecified
- ;;^UTILITY(U,$J,358.3,18563,2)
- ;;=^123931
- ;;^UTILITY(U,$J,358.3,18564,0)
- ;;=355.8^^121^1178^8
- ;;^UTILITY(U,$J,358.3,18564,1,0)
+ ;;^UTILITY(U,$J,358.3,18241,1,4,0)
+ ;;=4^V15.51
+ ;;^UTILITY(U,$J,358.3,18241,1,5,0)
+ ;;=5^TBI w/ HX Skull FX
+ ;;^UTILITY(U,$J,358.3,18241,2)
+ ;;=^336786
+ ;;^UTILITY(U,$J,358.3,18242,0)
+ ;;=V15.59^^96^1157^6
+ ;;^UTILITY(U,$J,358.3,18242,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18564,1,3,0)
- ;;=3^355.8
- ;;^UTILITY(U,$J,358.3,18564,1,5,0)
- ;;=5^Neuropathy, peripheral, lower limb; Unspecified
- ;;^UTILITY(U,$J,358.3,18564,2)
- ;;=^268511
- ;;^UTILITY(U,$J,358.3,18565,0)
- ;;=356.2^^121^1178^5
- ;;^UTILITY(U,$J,358.3,18565,1,0)
+ ;;^UTILITY(U,$J,358.3,18242,1,4,0)
+ ;;=4^V15.59
+ ;;^UTILITY(U,$J,358.3,18242,1,5,0)
+ ;;=5^TBI w/o HX Skull FX
+ ;;^UTILITY(U,$J,358.3,18242,2)
+ ;;=^336787
+ ;;^UTILITY(U,$J,358.3,18243,0)
+ ;;=905.0^^96^1157^3
+ ;;^UTILITY(U,$J,358.3,18243,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18565,1,3,0)
- ;;=3^356.2
- ;;^UTILITY(U,$J,358.3,18565,1,5,0)
- ;;=5^Neuropathy, Hereditary sensory
- ;;^UTILITY(U,$J,358.3,18565,2)
- ;;=^56583
- ;;^UTILITY(U,$J,358.3,18566,0)
- ;;=714.0^^121^1178^9
- ;;^UTILITY(U,$J,358.3,18566,1,0)
+ ;;^UTILITY(U,$J,358.3,18243,1,4,0)
+ ;;=4^905.0
+ ;;^UTILITY(U,$J,358.3,18243,1,5,0)
+ ;;=5^Late Effect Skull/Face FX
+ ;;^UTILITY(U,$J,358.3,18243,2)
+ ;;=^275214
+ ;;^UTILITY(U,$J,358.3,18244,0)
+ ;;=907.0^^96^1157^2
+ ;;^UTILITY(U,$J,358.3,18244,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18566,1,3,0)
- ;;=3^714.0
- ;;^UTILITY(U,$J,358.3,18566,1,5,0)
- ;;=5^Nodules, rheumatoid arthritis
- ;;^UTILITY(U,$J,358.3,18566,2)
- ;;=^10473
- ;;^UTILITY(U,$J,358.3,18567,0)
- ;;=733.82^^121^1178^10
- ;;^UTILITY(U,$J,358.3,18567,1,0)
+ ;;^UTILITY(U,$J,358.3,18244,1,4,0)
+ ;;=4^907.0
+ ;;^UTILITY(U,$J,358.3,18244,1,5,0)
+ ;;=5^LT Eff Intracranial Inj
+ ;;^UTILITY(U,$J,358.3,18244,2)
+ ;;=^68489
+ ;;^UTILITY(U,$J,358.3,18245,0)
+ ;;=V15.52^^96^1157^1
+ ;;^UTILITY(U,$J,358.3,18245,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18567,1,3,0)
- ;;=3^733.82
- ;;^UTILITY(U,$J,358.3,18567,1,5,0)
- ;;=5^Nonunion of fracture
- ;;^UTILITY(U,$J,358.3,18567,2)
- ;;=^83875
- ;;^UTILITY(U,$J,358.3,18568,0)
- ;;=173.70^^121^1178^1
- ;;^UTILITY(U,$J,358.3,18568,1,0)
+ ;;^UTILITY(U,$J,358.3,18245,1,4,0)
+ ;;=4^V15.52
+ ;;^UTILITY(U,$J,358.3,18245,1,5,0)
+ ;;=5^HX Traumatic Brain Injury
+ ;;^UTILITY(U,$J,358.3,18245,2)
+ ;;=^338495
+ ;;^UTILITY(U,$J,358.3,18246,0)
+ ;;=E999.0^^96^1158^2
+ ;;^UTILITY(U,$J,358.3,18246,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18568,1,3,0)
- ;;=3^173.70
- ;;^UTILITY(U,$J,358.3,18568,1,5,0)
- ;;=5^Neoplasm, Skin Lower Limb
- ;;^UTILITY(U,$J,358.3,18568,2)
- ;;=^340603
- ;;^UTILITY(U,$J,358.3,18569,0)
- ;;=356.8^^121^1178^6
- ;;^UTILITY(U,$J,358.3,18569,1,0)
+ ;;^UTILITY(U,$J,358.3,18246,1,4,0)
+ ;;=4^E999.0
+ ;;^UTILITY(U,$J,358.3,18246,1,5,0)
+ ;;=5^Late Effect of Injury of War
+ ;;^UTILITY(U,$J,358.3,18246,2)
+ ;;=^328744
+ ;;^UTILITY(U,$J,358.3,18247,0)
+ ;;=E929.0^^96^1158^3
+ ;;^UTILITY(U,$J,358.3,18247,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18569,1,3,0)
- ;;=3^356.8
- ;;^UTILITY(U,$J,358.3,18569,1,5,0)
- ;;=5^Neuropathy, Idiopathic Perip,Oth Spec
+ ;;^UTILITY(U,$J,358.3,18247,1,4,0)
+ ;;=4^E929.0
