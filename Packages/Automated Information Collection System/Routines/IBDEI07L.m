@@ -1,48 +1,128 @@
-IBDEI07L ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
- Q:'DIFQ(358.8)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI07L ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.8,0,"GL")
- ;;=^IBE(358.8,
- ;;^DIC("B","IMP/EXP TEXT AREA",358.8)
- ;;=
- ;;^DIC(358.8,"%D",0)
- ;;=^^3^3^2940217^
- ;;^DIC(358.8,"%D",1,0)
- ;;=This file is nearly identical to file #357.8. It is used by the
- ;;^DIC(358.8,"%D",2,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.8,"%D",3,0)
- ;;=that is being imported or exported.
- ;;^DD(358.8,0)
- ;;=FIELD^^1^7
- ;;^DD(358.8,0,"DDA")
- ;;=N
- ;;^DD(358.8,0,"DT")
- ;;=2930802
- ;;^DD(358.8,0,"IX","B",358.8,.01)
- ;;=
- ;;^DD(358.8,0,"IX","C",358.8,.02)
- ;;=
- ;;^DD(358.8,0,"NM","IMP/EXP TEXT AREA")
- ;;=
- ;;^DD(358.8,0,"VRPK")
- ;;=IBD
- ;;^DD(358.8,.01,0)
- ;;=NAME^RF^^0;1^K:$L(X)>30!(X?.N)!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.8,.01,1,0)
- ;;=^.1
- ;;^DD(358.8,.01,1,1,0)
- ;;=358.8^B
- ;;^DD(358.8,.01,1,1,1)
- ;;=S ^IBE(358.8,"B",$E(X,1,30),DA)=""
- ;;^DD(358.8,.01,1,1,2)
- ;;=K ^IBE(358.8,"B",$E(X,1,30),DA)
- ;;^DD(358.8,.01,3)
- ;;=NAME MUST BE 3-30 CHARACTERS, NOT NUMERIC OR STARTING WITH PUNCTUATION
- ;;^DD(358.8,.01,21,0)
- ;;=^^2^2^2930528^
- ;;^DD(358.8,.01,21,1,0)
- ;;= 
- ;;^DD(358.8,.01,21,2,0)
- ;;=The name of the text area.
+ ;;^UTILITY(U,$J,358.3,3051,1,3,0)
+ ;;=3^Delirium d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,3051,1,4,0)
+ ;;=4^F05.
+ ;;^UTILITY(U,$J,358.3,3051,2)
+ ;;=^5003052
+ ;;^UTILITY(U,$J,358.3,3052,0)
+ ;;=F05.^^8^88^5
+ ;;^UTILITY(U,$J,358.3,3052,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3052,1,3,0)
+ ;;=3^Delirium d/t Multiple Etiologies
+ ;;^UTILITY(U,$J,358.3,3052,1,4,0)
+ ;;=4^F05.
+ ;;^UTILITY(U,$J,358.3,3052,2)
+ ;;=^5003052
+ ;;^UTILITY(U,$J,358.3,3053,0)
+ ;;=A81.00^^8^89^5
+ ;;^UTILITY(U,$J,358.3,3053,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3053,1,3,0)
+ ;;=3^Creutzfeldt-Jakob Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,3053,1,4,0)
+ ;;=4^A81.00
+ ;;^UTILITY(U,$J,358.3,3053,2)
+ ;;=^5000409
+ ;;^UTILITY(U,$J,358.3,3054,0)
+ ;;=A81.01^^8^89^23
+ ;;^UTILITY(U,$J,358.3,3054,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3054,1,3,0)
+ ;;=3^Variant Creutzfeldt-Jakob Disease
+ ;;^UTILITY(U,$J,358.3,3054,1,4,0)
+ ;;=4^A81.01
+ ;;^UTILITY(U,$J,358.3,3054,2)
+ ;;=^336701
+ ;;^UTILITY(U,$J,358.3,3055,0)
+ ;;=A81.09^^8^89^4
+ ;;^UTILITY(U,$J,358.3,3055,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3055,1,3,0)
+ ;;=3^Creutzfeldt-Jakob Disease,Other
+ ;;^UTILITY(U,$J,358.3,3055,1,4,0)
+ ;;=4^A81.09
+ ;;^UTILITY(U,$J,358.3,3055,2)
+ ;;=^5000410
+ ;;^UTILITY(U,$J,358.3,3056,0)
+ ;;=A81.2^^8^89^20
+ ;;^UTILITY(U,$J,358.3,3056,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3056,1,3,0)
+ ;;=3^Progressive Multifocal Leukoencephalopathy
+ ;;^UTILITY(U,$J,358.3,3056,1,4,0)
+ ;;=4^A81.2
+ ;;^UTILITY(U,$J,358.3,3056,2)
+ ;;=^5000411
+ ;;^UTILITY(U,$J,358.3,3057,0)
+ ;;=F03.90^^8^89^12
+ ;;^UTILITY(U,$J,358.3,3057,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3057,1,3,0)
+ ;;=3^Dementia w/o Behavioral Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,3057,1,4,0)
+ ;;=4^F03.90
+ ;;^UTILITY(U,$J,358.3,3057,2)
+ ;;=^5003050
+ ;;^UTILITY(U,$J,358.3,3058,0)
+ ;;=F01.50^^8^89^18
+ ;;^UTILITY(U,$J,358.3,3058,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3058,1,3,0)
+ ;;=3^Probable Major Vascular Neurocognitive Disorder w/o Behavioral Disturbance
+ ;;^UTILITY(U,$J,358.3,3058,1,4,0)
+ ;;=4^F01.50
+ ;;^UTILITY(U,$J,358.3,3058,2)
+ ;;=^5003046
+ ;;^UTILITY(U,$J,358.3,3059,0)
+ ;;=F01.51^^8^89^19
+ ;;^UTILITY(U,$J,358.3,3059,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3059,1,3,0)
+ ;;=3^Probable Major Vascular Neurocognitive Disorder w/ Behavioral Disturbance
+ ;;^UTILITY(U,$J,358.3,3059,1,4,0)
+ ;;=4^F01.51
+ ;;^UTILITY(U,$J,358.3,3059,2)
+ ;;=^5003047
+ ;;^UTILITY(U,$J,358.3,3060,0)
+ ;;=F10.27^^8^89^1
+ ;;^UTILITY(U,$J,358.3,3060,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3060,1,3,0)
+ ;;=3^Alcohol-Induced Major Neurocognitive Disorder,Nonamnestic Confabulatory Type
+ ;;^UTILITY(U,$J,358.3,3060,1,4,0)
+ ;;=4^F10.27
+ ;;^UTILITY(U,$J,358.3,3060,2)
+ ;;=^5003095
+ ;;^UTILITY(U,$J,358.3,3061,0)
+ ;;=F19.97^^8^89^22
+ ;;^UTILITY(U,$J,358.3,3061,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3061,1,3,0)
+ ;;=3^Substance-Induced Major Neurocognitive Disorder NEC
+ ;;^UTILITY(U,$J,358.3,3061,1,4,0)
+ ;;=4^F19.97
+ ;;^UTILITY(U,$J,358.3,3061,2)
+ ;;=^5003465
+ ;;^UTILITY(U,$J,358.3,3062,0)
+ ;;=F02.80^^8^89^9
+ ;;^UTILITY(U,$J,358.3,3062,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3062,1,3,0)
+ ;;=3^Dementia in Other Diseases Classified Elsewhere w/o Behavorial Disturbance
+ ;;^UTILITY(U,$J,358.3,3062,1,4,0)
+ ;;=4^F02.80
+ ;;^UTILITY(U,$J,358.3,3062,2)
+ ;;=^5003048
+ ;;^UTILITY(U,$J,358.3,3063,0)
+ ;;=F02.81^^8^89^10
+ ;;^UTILITY(U,$J,358.3,3063,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3063,1,3,0)
+ ;;=3^Dementia in Other Diseases Classified Elsewhere w/ Behavioral Disturbance
+ ;;^UTILITY(U,$J,358.3,3063,1,4,0)
+ ;;=4^F02.81

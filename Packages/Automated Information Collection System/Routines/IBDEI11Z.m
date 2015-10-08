@@ -1,96 +1,140 @@
-IBDEI11Z ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI11Z ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18868,1,3,0)
- ;;=3^27818
- ;;^UTILITY(U,$J,358.3,18869,0)
- ;;=27822^^122^1205^38^^^^1
- ;;^UTILITY(U,$J,358.3,18869,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18869,1,2,0)
- ;;=2^Open Tx of trimalleolar ankle fracture, with or w/o internal or external fixation of, medial and/or lateral malleolus; w/o fixation of posterior lip
- ;;^UTILITY(U,$J,358.3,18869,1,3,0)
- ;;=3^27822
- ;;^UTILITY(U,$J,358.3,18870,0)
- ;;=27823^^122^1205^39^^^^1
- ;;^UTILITY(U,$J,358.3,18870,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18870,1,2,0)
- ;;=2^Open Tx of trimalleolar ankle fracture, with or w/o internal or external fixation, medial and/or lateral malleolus; with fixation of posterior lip  
- ;;^UTILITY(U,$J,358.3,18870,1,3,0)
- ;;=3^27823
- ;;^UTILITY(U,$J,358.3,18871,0)
- ;;=27824^^122^1205^40^^^^1
- ;;^UTILITY(U,$J,358.3,18871,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18871,1,2,0)
- ;;=2^Closed Tx of fracture of weight bearing articular portion of distal tibia, with or w/o anesthesia; w/o manipulation 
- ;;^UTILITY(U,$J,358.3,18871,1,3,0)
- ;;=3^27824
- ;;^UTILITY(U,$J,358.3,18872,0)
- ;;=27825^^122^1205^41^^^^1
- ;;^UTILITY(U,$J,358.3,18872,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18872,1,2,0)
- ;;=2^Closed Tx of fracture of weight bearing articular portion of distal tibia, with or w/o anesthesia; with skeletal traction &/or requiring manipulation
- ;;^UTILITY(U,$J,358.3,18872,1,3,0)
- ;;=3^27825
- ;;^UTILITY(U,$J,358.3,18873,0)
- ;;=27826^^122^1205^42^^^^1
- ;;^UTILITY(U,$J,358.3,18873,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18873,1,2,0)
- ;;=2^Open Tx of fracture of weight bearing articular surface/portion of distal tibia, w/ internal or external fixation; of fibula only
- ;;^UTILITY(U,$J,358.3,18873,1,3,0)
- ;;=3^27826
- ;;^UTILITY(U,$J,358.3,18874,0)
- ;;=27827^^122^1205^43^^^^1
- ;;^UTILITY(U,$J,358.3,18874,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18874,1,2,0)
- ;;=2^Open Tx of fracture of weight bearing articular surface/portion of distal tibia, w/ internal or external fixation; of tibia only
- ;;^UTILITY(U,$J,358.3,18874,1,3,0)
- ;;=3^27827
- ;;^UTILITY(U,$J,358.3,18875,0)
- ;;=27828^^122^1205^44^^^^1
- ;;^UTILITY(U,$J,358.3,18875,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18875,1,2,0)
- ;;=2^Open Tx of fracture of weight bearing articular surface/portionof distal tibia, w/ internal or external fixation; of both tibia & fibula
- ;;^UTILITY(U,$J,358.3,18875,1,3,0)
- ;;=3^27828
- ;;^UTILITY(U,$J,358.3,18876,0)
- ;;=27829^^122^1205^45^^^^1
- ;;^UTILITY(U,$J,358.3,18876,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18876,1,2,0)
- ;;=2^Open Tx of distal tibiofibular joint disruption, with or w/o internal or external fixation
- ;;^UTILITY(U,$J,358.3,18876,1,3,0)
- ;;=3^27829
- ;;^UTILITY(U,$J,358.3,18877,0)
- ;;=28540^^122^1205^46^^^^1
- ;;^UTILITY(U,$J,358.3,18877,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18877,1,2,0)
- ;;=2^Closed Tx of tarsal bone dislocation, other than talotarsal; w/o anesthesia
- ;;^UTILITY(U,$J,358.3,18877,1,3,0)
- ;;=3^28540
- ;;^UTILITY(U,$J,358.3,18878,0)
- ;;=28545^^122^1205^47^^^^1
- ;;^UTILITY(U,$J,358.3,18878,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18878,1,2,0)
- ;;=2^Closed Tx of tarsal bone dislocation, other than talotarsal; requiring anesthesia
- ;;^UTILITY(U,$J,358.3,18878,1,3,0)
- ;;=3^28545
- ;;^UTILITY(U,$J,358.3,18879,0)
- ;;=28546^^122^1205^48^^^^1
- ;;^UTILITY(U,$J,358.3,18879,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18879,1,2,0)
- ;;=2^Perc Fixation Tarsal Bone Dislocation
- ;;^UTILITY(U,$J,358.3,18879,1,3,0)
- ;;=3^28546
- ;;^UTILITY(U,$J,358.3,18880,0)
- ;;=28555^^122^1205^49^^^^1
+ ;;^UTILITY(U,$J,358.3,18567,1,5,0)
+ ;;=5^205.32
+ ;;^UTILITY(U,$J,358.3,18567,2)
+ ;;=^336473
+ ;;^UTILITY(U,$J,358.3,18568,0)
+ ;;=205.31^^102^1191^44
+ ;;^UTILITY(U,$J,358.3,18568,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18568,1,4,0)
+ ;;=4^MYELOID SARCOMA IN REMISSION
+ ;;^UTILITY(U,$J,358.3,18568,1,5,0)
+ ;;=5^205.31
+ ;;^UTILITY(U,$J,358.3,18568,2)
+ ;;=^267538
+ ;;^UTILITY(U,$J,358.3,18569,0)
+ ;;=202.08^^102^1191^45
+ ;;^UTILITY(U,$J,358.3,18569,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18569,1,4,0)
+ ;;=4^NODULAR LYMPHOMA NODES MULT
+ ;;^UTILITY(U,$J,358.3,18569,1,5,0)
+ ;;=5^202.08
+ ;;^UTILITY(U,$J,358.3,18569,2)
+ ;;=^267447
+ ;;^UTILITY(U,$J,358.3,18570,0)
+ ;;=202.78^^102^1191^46
+ ;;^UTILITY(U,$J,358.3,18570,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18570,1,4,0)
+ ;;=4^PERIPHERAL T-CELL LYMPHOMA
+ ;;^UTILITY(U,$J,358.3,18570,1,5,0)
+ ;;=5^202.78
+ ;;^UTILITY(U,$J,358.3,18570,2)
+ ;;=^335236
+ ;;^UTILITY(U,$J,358.3,18571,0)
+ ;;=203.11^^102^1191^48
+ ;;^UTILITY(U,$J,358.3,18571,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18571,1,4,0)
+ ;;=4^PLASMA CELL LEUK,REMISSION
+ ;;^UTILITY(U,$J,358.3,18571,1,5,0)
+ ;;=5^203.11
+ ;;^UTILITY(U,$J,358.3,18571,2)
+ ;;=^267517
+ ;;^UTILITY(U,$J,358.3,18572,0)
+ ;;=203.12^^102^1191^47
+ ;;^UTILITY(U,$J,358.3,18572,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18572,1,4,0)
+ ;;=4^PLASMA CELL LEUK,RELAPSE
+ ;;^UTILITY(U,$J,358.3,18572,1,5,0)
+ ;;=5^203.12
+ ;;^UTILITY(U,$J,358.3,18572,2)
+ ;;=^336463
+ ;;^UTILITY(U,$J,358.3,18573,0)
+ ;;=200.58^^102^1191^49
+ ;;^UTILITY(U,$J,358.3,18573,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18573,1,4,0)
+ ;;=4^PRIM CNS LYMPHOMA MULTI
+ ;;^UTILITY(U,$J,358.3,18573,1,5,0)
+ ;;=5^200.58
+ ;;^UTILITY(U,$J,358.3,18573,2)
+ ;;=^335212
+ ;;^UTILITY(U,$J,358.3,18574,0)
+ ;;=200.08^^102^1191^50
+ ;;^UTILITY(U,$J,358.3,18574,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18574,1,4,0)
+ ;;=4^RETICULOSARCOMA MULT
+ ;;^UTILITY(U,$J,358.3,18574,1,5,0)
+ ;;=5^200.08
+ ;;^UTILITY(U,$J,358.3,18574,2)
+ ;;=^267349
+ ;;^UTILITY(U,$J,358.3,18575,0)
+ ;;=202.28^^102^1191^51
+ ;;^UTILITY(U,$J,358.3,18575,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18575,1,4,0)
+ ;;=4^SEZARY'S DISEASE MULT
+ ;;^UTILITY(U,$J,358.3,18575,1,5,0)
+ ;;=5^202.28
+ ;;^UTILITY(U,$J,358.3,18575,2)
+ ;;=^267463
+ ;;^UTILITY(U,$J,358.3,18576,0)
+ ;;=200.88^^102^1191^28
+ ;;^UTILITY(U,$J,358.3,18576,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18576,1,4,0)
+ ;;=4^MIXED LYMPHOSARC MULT
+ ;;^UTILITY(U,$J,358.3,18576,1,5,0)
+ ;;=5^200.88
+ ;;^UTILITY(U,$J,358.3,18576,2)
+ ;;=^267373
+ ;;^UTILITY(U,$J,358.3,18577,0)
+ ;;=279.2^^102^1192^1
+ ;;^UTILITY(U,$J,358.3,18577,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18577,1,4,0)
+ ;;=4^COMBINED IMMUNITY DEFIC
+ ;;^UTILITY(U,$J,358.3,18577,1,5,0)
+ ;;=5^279.2
+ ;;^UTILITY(U,$J,358.3,18577,2)
+ ;;=^267967
+ ;;^UTILITY(U,$J,358.3,18578,0)
+ ;;=279.11^^102^1192^2
+ ;;^UTILITY(U,$J,358.3,18578,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18578,1,4,0)
+ ;;=4^DIGEORGE'S SYNDROME
+ ;;^UTILITY(U,$J,358.3,18578,1,5,0)
+ ;;=5^279.11
+ ;;^UTILITY(U,$J,358.3,18578,2)
+ ;;=^34561
+ ;;^UTILITY(U,$J,358.3,18579,0)
+ ;;=272.7^^102^1192^3
+ ;;^UTILITY(U,$J,358.3,18579,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18579,1,4,0)
+ ;;=4^LIPIDOSES
+ ;;^UTILITY(U,$J,358.3,18579,1,5,0)
+ ;;=5^272.7
+ ;;^UTILITY(U,$J,358.3,18579,2)
+ ;;=^71139
+ ;;^UTILITY(U,$J,358.3,18580,0)
+ ;;=277.5^^102^1192^4
+ ;;^UTILITY(U,$J,358.3,18580,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18580,1,4,0)
+ ;;=4^MUCOPOLYSACCHARIDOSIS
+ ;;^UTILITY(U,$J,358.3,18580,1,5,0)
+ ;;=5^277.5
+ ;;^UTILITY(U,$J,358.3,18580,2)
+ ;;=^79518
+ ;;^UTILITY(U,$J,358.3,18581,0)
+ ;;=279.12^^102^1192^5

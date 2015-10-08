@@ -1,112 +1,142 @@
-IBDEI1GI ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
- Q:'DIFQR(358.6)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI1GI ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.6,4,7,1,0)
- ;;=DFN
- ;;^UTILITY(U,$J,358.6,5,0)
- ;;=DPT PATIENT'S DOB/AGE^VADPT^IBDFN^REGISTRATION^1^2^2^^1^^^1
- ;;^UTILITY(U,$J,358.6,5,1,0)
- ;;=^^2^2^2951023^
- ;;^UTILITY(U,$J,358.6,5,1,1,0)
- ;;=Patient's DOB in MM DD, YYYY format
- ;;^UTILITY(U,$J,358.6,5,1,2,0)
- ;;=Patient's age in years.
- ;;^UTILITY(U,$J,358.6,5,2)
- ;;=Patient's DOB^12^Patient's Age^3^^^^^^^^^^^^^1
- ;;^UTILITY(U,$J,358.6,5,3)
- ;;=PATIENT DOB AGE PIMS
- ;;^UTILITY(U,$J,358.6,5,7,0)
- ;;=^358.67^1^1
- ;;^UTILITY(U,$J,358.6,5,7,1,0)
- ;;=DFN
- ;;^UTILITY(U,$J,358.6,5,15,0)
- ;;=^358.615I^1^1
- ;;^UTILITY(U,$J,358.6,5,15,1,0)
- ;;=Patient's Age^3^2
- ;;^UTILITY(U,$J,358.6,6,0)
- ;;=DG SELECT VISIT TYPE CPT PROCEDURES^VSIT^IBDFN4^SCHEDULING^^3^2^^1^^^1^7^^^^^^^^1
- ;;^UTILITY(U,$J,358.6,6,1,0)
- ;;=^^1^1^2941116^^^^
- ;;^UTILITY(U,$J,358.6,6,1,1,0)
- ;;=Allows for select of just Visit type CPT codes from the CPT file.
- ;;^UTILITY(U,$J,358.6,6,2)
- ;;=CODE^5^RECOMMENDED TEXT-SHORT NAME^40^RECOMMENDED HEADER^30^SHORT NAME FROM CPT FILE^28^^^^^^^^^1^1
- ;;^UTILITY(U,$J,358.6,6,3)
- ;;=SELECT TYPE OF VISIT CPT
- ;;^UTILITY(U,$J,358.6,6,11)
- ;;=D TESTVST^IBDFN7
- ;;^UTILITY(U,$J,358.6,6,15,0)
- ;;=^358.615I^4^3
- ;;^UTILITY(U,$J,358.6,6,15,2,0)
- ;;=RECOMMENDED TEXT-SHORT NAME^40^2
- ;;^UTILITY(U,$J,358.6,6,15,3,0)
- ;;=RECOMMENDED HEADER^30^3
- ;;^UTILITY(U,$J,358.6,6,15,4,0)
- ;;=SHORT NAME FROM CPT FILE^28^4
- ;;^UTILITY(U,$J,358.6,7,0)
- ;;=INPUT VISIT TYPE^^^PATIENT CARE ENCOUNTER^^1^^^1^^^1^^^^SMP
- ;;^UTILITY(U,$J,358.6,7,1,0)
- ;;=^^1^1^2951023^
- ;;^UTILITY(U,$J,358.6,7,1,1,0)
- ;;=Used for inputting the visit type that applies to the visit.
- ;;^UTILITY(U,$J,358.6,7,2)
- ;;=^^^^^^^^^^^^^^^^^1
- ;;^UTILITY(U,$J,358.6,7,3)
- ;;=VISIT TYPE OF VISIT
- ;;^UTILITY(U,$J,358.6,7,9)
- ;;=D INPUTCPT^IBDFN8(.X)
- ;;^UTILITY(U,$J,358.6,7,10)
- ;;=Enter an active Visit Type code.
- ;;^UTILITY(U,$J,358.6,7,11)
- ;;=D TESTVST^IBDFN7
- ;;^UTILITY(U,$J,358.6,7,12)
- ;;=ENCOUNTER^5
- ;;^UTILITY(U,$J,358.6,7,14)
- ;;=S Y=$$DSPLYCPT^IBDFN9(Y)
- ;;^UTILITY(U,$J,358.6,7,17)
- ;;=D SLCTVST^IBDFN12(.X)
- ;;^UTILITY(U,$J,358.6,7,18)
- ;;=S IBDF("OTHER")="357.69^I '$P(^(0),U,4)" D LIST^IBDFDE2(.IBDSEL,.IBDF,"Visit Type (EM) Code")
- ;;^UTILITY(U,$J,358.6,7,19)
- ;;=D VST^IBDFN14(X)
- ;;^UTILITY(U,$J,358.6,8,0)
- ;;=DG SELECT CPT PROCEDURE CODES^CPT^IBDFN4^SCHEDULING^^3^2^^1^^^1^9^^^^^^^^1
- ;;^UTILITY(U,$J,358.6,8,1,0)
- ;;=^^2^2^2961007^^^^
- ;;^UTILITY(U,$J,358.6,8,1,1,0)
- ;;=Allows for the selection of CPT codes from the CPT file. Only active codes
- ;;^UTILITY(U,$J,358.6,8,1,2,0)
- ;;=are allowed.
- ;;^UTILITY(U,$J,358.6,8,2)
- ;;=CODE^5^SHORT NAME^28^DESCRIPTION^161^^^^^^^^^^CODE^1^1
- ;;^UTILITY(U,$J,358.6,8,3)
- ;;=SELECT CPT PROCEDURE CODES
- ;;^UTILITY(U,$J,358.6,8,9)
- ;;=S X=$$CPT^IBDFN12(X)
- ;;^UTILITY(U,$J,358.6,8,11)
- ;;=D TESTCPT^IBDFN7
- ;;^UTILITY(U,$J,358.6,8,15,0)
- ;;=^358.615I^2^2
- ;;^UTILITY(U,$J,358.6,8,15,1,0)
- ;;=SHORT NAME^28^2^^PROCEDURE
- ;;^UTILITY(U,$J,358.6,8,15,2,0)
- ;;=DESCRIPTION^161^3^^PROCEDURE
- ;;^UTILITY(U,$J,358.6,8,16)
- ;;=o^4^Procedure Narrative^^r^5^CPT CODE^1
- ;;^UTILITY(U,$J,358.6,9,0)
- ;;=INPUT PROCEDURE CODE (CPT4)^^^PATIENT CARE ENCOUNTER^^1^4^^1^0^^1^^^^SMP
- ;;^UTILITY(U,$J,358.6,9,1,0)
- ;;=^^1^1^2960205^^^^
- ;;^UTILITY(U,$J,358.6,9,1,1,0)
- ;;=Used for inputting CPT coded procedures performed on the patient.
- ;;^UTILITY(U,$J,358.6,9,2)
- ;;=^^^^^^^^^^^^^^^^^1
- ;;^UTILITY(U,$J,358.6,9,3)
- ;;=CPT4 PROCEDURE CODES
- ;;^UTILITY(U,$J,358.6,9,9)
- ;;=D INPUTCPT^IBDFN8(.X)
- ;;^UTILITY(U,$J,358.6,9,10)
- ;;=Enter an active CPT procedure code.
- ;;^UTILITY(U,$J,358.6,9,11)
- ;;=D TESTCPT^IBDFN7
+ ;;^UTILITY(U,$J,358.3,25844,0)
+ ;;=780.52^^150^1645^3
+ ;;^UTILITY(U,$J,358.3,25844,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25844,1,2,0)
+ ;;=2^780.52
+ ;;^UTILITY(U,$J,358.3,25844,1,5,0)
+ ;;=5^Insomnia
+ ;;^UTILITY(U,$J,358.3,25844,2)
+ ;;=^87662
+ ;;^UTILITY(U,$J,358.3,25845,0)
+ ;;=780.51^^150^1645^4
+ ;;^UTILITY(U,$J,358.3,25845,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25845,1,2,0)
+ ;;=2^780.51
+ ;;^UTILITY(U,$J,358.3,25845,1,5,0)
+ ;;=5^Insomnia w/Sleep Apnea
+ ;;^UTILITY(U,$J,358.3,25845,2)
+ ;;=^273348
+ ;;^UTILITY(U,$J,358.3,25846,0)
+ ;;=780.57^^150^1645^5
+ ;;^UTILITY(U,$J,358.3,25846,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25846,1,2,0)
+ ;;=2^780.57
+ ;;^UTILITY(U,$J,358.3,25846,1,5,0)
+ ;;=5^Sleep Apnea
+ ;;^UTILITY(U,$J,358.3,25846,2)
+ ;;=^293933
+ ;;^UTILITY(U,$J,358.3,25847,0)
+ ;;=780.50^^150^1645^6
+ ;;^UTILITY(U,$J,358.3,25847,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25847,1,2,0)
+ ;;=2^780.50
+ ;;^UTILITY(U,$J,358.3,25847,1,5,0)
+ ;;=5^Sleep Disturbance, Unspec
+ ;;^UTILITY(U,$J,358.3,25847,2)
+ ;;=^111271
+ ;;^UTILITY(U,$J,358.3,25848,0)
+ ;;=291.82^^150^1645^1
+ ;;^UTILITY(U,$J,358.3,25848,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25848,1,2,0)
+ ;;=2^291.82
+ ;;^UTILITY(U,$J,358.3,25848,1,5,0)
+ ;;=5^Alcohol Induced Sleep D/O
+ ;;^UTILITY(U,$J,358.3,25848,2)
+ ;;=^332750
+ ;;^UTILITY(U,$J,358.3,25849,0)
+ ;;=292.85^^150^1645^2
+ ;;^UTILITY(U,$J,358.3,25849,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25849,1,2,0)
+ ;;=2^292.85
+ ;;^UTILITY(U,$J,358.3,25849,1,5,0)
+ ;;=5^Drug Induced Sleep D/O
+ ;;^UTILITY(U,$J,358.3,25849,2)
+ ;;=^332751
+ ;;^UTILITY(U,$J,358.3,25850,0)
+ ;;=316.^^150^1646^10
+ ;;^UTILITY(U,$J,358.3,25850,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25850,1,2,0)
+ ;;=2^316.
+ ;;^UTILITY(U,$J,358.3,25850,1,5,0)
+ ;;=5^Psychic Fact w/Other Dis
+ ;;^UTILITY(U,$J,358.3,25850,2)
+ ;;=^268363
+ ;;^UTILITY(U,$J,358.3,25851,0)
+ ;;=314.01^^150^1646^2
+ ;;^UTILITY(U,$J,358.3,25851,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25851,1,2,0)
+ ;;=2^314.01
+ ;;^UTILITY(U,$J,358.3,25851,1,5,0)
+ ;;=5^Attn Defic w/ Hyperactiv
+ ;;^UTILITY(U,$J,358.3,25851,2)
+ ;;=^303679
+ ;;^UTILITY(U,$J,358.3,25852,0)
+ ;;=317.^^150^1646^8
+ ;;^UTILITY(U,$J,358.3,25852,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25852,1,2,0)
+ ;;=2^317.
+ ;;^UTILITY(U,$J,358.3,25852,1,5,0)
+ ;;=5^Mild Intellect Disability
+ ;;^UTILITY(U,$J,358.3,25852,2)
+ ;;=^77931
+ ;;^UTILITY(U,$J,358.3,25853,0)
+ ;;=312.32^^150^1646^7
+ ;;^UTILITY(U,$J,358.3,25853,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25853,1,2,0)
+ ;;=2^312.32
+ ;;^UTILITY(U,$J,358.3,25853,1,5,0)
+ ;;=5^Kleptomania
+ ;;^UTILITY(U,$J,358.3,25853,2)
+ ;;=^67477
+ ;;^UTILITY(U,$J,358.3,25854,0)
+ ;;=312.33^^150^1646^11
+ ;;^UTILITY(U,$J,358.3,25854,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25854,1,2,0)
+ ;;=2^312.33
+ ;;^UTILITY(U,$J,358.3,25854,1,5,0)
+ ;;=5^Pyromania
+ ;;^UTILITY(U,$J,358.3,25854,2)
+ ;;=^46554
+ ;;^UTILITY(U,$J,358.3,25855,0)
+ ;;=312.34^^150^1646^5
+ ;;^UTILITY(U,$J,358.3,25855,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25855,1,2,0)
+ ;;=2^312.34
+ ;;^UTILITY(U,$J,358.3,25855,1,5,0)
+ ;;=5^Intermittent Explosive Disorder
+ ;;^UTILITY(U,$J,358.3,25855,2)
+ ;;=^64512
+ ;;^UTILITY(U,$J,358.3,25856,0)
+ ;;=312.35^^150^1646^6
+ ;;^UTILITY(U,$J,358.3,25856,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25856,1,2,0)
+ ;;=2^312.35
+ ;;^UTILITY(U,$J,358.3,25856,1,5,0)
+ ;;=5^Isolated Explosive Disorder
+ ;;^UTILITY(U,$J,358.3,25856,2)
+ ;;=^268334
+ ;;^UTILITY(U,$J,358.3,25857,0)
+ ;;=300.16^^150^1646^4
+ ;;^UTILITY(U,$J,358.3,25857,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25857,1,2,0)
+ ;;=2^300.16
+ ;;^UTILITY(U,$J,358.3,25857,1,5,0)
+ ;;=5^Factitious Disorder

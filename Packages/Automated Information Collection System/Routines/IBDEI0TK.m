@@ -1,142 +1,108 @@
-IBDEI0TK ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0TK ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14595,1,4,0)
- ;;=4^919.3
- ;;^UTILITY(U,$J,358.3,14595,1,5,0)
- ;;=5^Blister, Infected
- ;;^UTILITY(U,$J,358.3,14595,2)
- ;;=^275359
- ;;^UTILITY(U,$J,358.3,14596,0)
- ;;=919.2^^90^864^31
- ;;^UTILITY(U,$J,358.3,14596,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14596,1,4,0)
- ;;=4^919.2
- ;;^UTILITY(U,$J,358.3,14596,1,5,0)
- ;;=5^Blister, Not infected
- ;;^UTILITY(U,$J,358.3,14596,2)
- ;;=^15350
- ;;^UTILITY(U,$J,358.3,14597,0)
- ;;=799.4^^90^864^33
- ;;^UTILITY(U,$J,358.3,14597,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14597,1,4,0)
- ;;=4^799.4
- ;;^UTILITY(U,$J,358.3,14597,1,5,0)
- ;;=5^Cachexia
- ;;^UTILITY(U,$J,358.3,14597,2)
- ;;=Cachexia^17920
- ;;^UTILITY(U,$J,358.3,14598,0)
- ;;=780.71^^90^864^39
- ;;^UTILITY(U,$J,358.3,14598,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14598,1,4,0)
- ;;=4^780.71
- ;;^UTILITY(U,$J,358.3,14598,1,5,0)
- ;;=5^Chronic fatigue syndrome
- ;;^UTILITY(U,$J,358.3,14598,2)
- ;;=^304659
- ;;^UTILITY(U,$J,358.3,14599,0)
- ;;=781.5^^90^864^40
- ;;^UTILITY(U,$J,358.3,14599,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14599,1,4,0)
- ;;=4^781.5
- ;;^UTILITY(U,$J,358.3,14599,1,5,0)
- ;;=5^Clubbing of fingers
- ;;^UTILITY(U,$J,358.3,14599,2)
- ;;=^273354
- ;;^UTILITY(U,$J,358.3,14600,0)
- ;;=780.39^^90^864^135
- ;;^UTILITY(U,$J,358.3,14600,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14600,1,4,0)
- ;;=4^780.39
- ;;^UTILITY(U,$J,358.3,14600,1,5,0)
- ;;=5^Seizures
- ;;^UTILITY(U,$J,358.3,14600,2)
- ;;=Seizures^28162
- ;;^UTILITY(U,$J,358.3,14601,0)
- ;;=780.4^^90^864^53
- ;;^UTILITY(U,$J,358.3,14601,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14601,1,4,0)
- ;;=4^780.4
- ;;^UTILITY(U,$J,358.3,14601,1,5,0)
- ;;=5^Dizziness and Giddiness
- ;;^UTILITY(U,$J,358.3,14601,2)
- ;;=^35946
- ;;^UTILITY(U,$J,358.3,14602,0)
- ;;=782.3^^90^864^63
- ;;^UTILITY(U,$J,358.3,14602,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14602,1,4,0)
- ;;=4^782.3
- ;;^UTILITY(U,$J,358.3,14602,1,5,0)
- ;;=5^Edema
- ;;^UTILITY(U,$J,358.3,14602,2)
- ;;=Edema^38340
- ;;^UTILITY(U,$J,358.3,14603,0)
- ;;=457.1^^90^864^64
- ;;^UTILITY(U,$J,358.3,14603,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14603,1,4,0)
- ;;=4^457.1
- ;;^UTILITY(U,$J,358.3,14603,1,5,0)
- ;;=5^Edema due to lymphatic obstruction
- ;;^UTILITY(U,$J,358.3,14603,2)
- ;;=   ^87693
- ;;^UTILITY(U,$J,358.3,14604,0)
- ;;=459.2^^90^864^65
- ;;^UTILITY(U,$J,358.3,14604,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14604,1,4,0)
- ;;=4^459.2
- ;;^UTILITY(U,$J,358.3,14604,1,5,0)
- ;;=5^Edema due to venous obstruction 
- ;;^UTILITY(U,$J,358.3,14604,2)
- ;;=^269850
- ;;^UTILITY(U,$J,358.3,14605,0)
- ;;=780.79^^90^864^107
- ;;^UTILITY(U,$J,358.3,14605,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14605,1,4,0)
- ;;=4^780.79
- ;;^UTILITY(U,$J,358.3,14605,1,5,0)
- ;;=5^Malaise
- ;;^UTILITY(U,$J,358.3,14605,2)
- ;;=Malaise^73344
- ;;^UTILITY(U,$J,358.3,14606,0)
- ;;=783.3^^90^864^70
- ;;^UTILITY(U,$J,358.3,14606,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14606,1,4,0)
- ;;=4^783.3
- ;;^UTILITY(U,$J,358.3,14606,1,5,0)
- ;;=5^Feeding problem of the elderly
- ;;^UTILITY(U,$J,358.3,14606,2)
- ;;=   ^273364
- ;;^UTILITY(U,$J,358.3,14607,0)
- ;;=780.1^^90^864^78
- ;;^UTILITY(U,$J,358.3,14607,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14607,1,4,0)
- ;;=4^780.1
- ;;^UTILITY(U,$J,358.3,14607,1,5,0)
- ;;=5^Hallucinations
- ;;^UTILITY(U,$J,358.3,14607,2)
- ;;=Hallucinations^53738
- ;;^UTILITY(U,$J,358.3,14608,0)
- ;;=780.8^^90^864^87
- ;;^UTILITY(U,$J,358.3,14608,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14608,1,4,0)
- ;;=4^780.8
- ;;^UTILITY(U,$J,358.3,14608,1,5,0)
- ;;=5^Hyperhidrosis
- ;;^UTILITY(U,$J,358.3,14608,2)
- ;;=Hyperhidrosis^60030
- ;;^UTILITY(U,$J,358.3,14609,0)
- ;;=307.41^^90^864^99
+ ;;^UTILITY(U,$J,358.3,14315,0)
+ ;;=27698^^75^884^16^^^^1
+ ;;^UTILITY(U,$J,358.3,14315,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14315,1,2,0)
+ ;;=2^Repair, secondary, disrupted ligament ankle, collateral
+ ;;^UTILITY(U,$J,358.3,14315,1,3,0)
+ ;;=3^27698
+ ;;^UTILITY(U,$J,358.3,14316,0)
+ ;;=28200^^75^884^19^^^^1
+ ;;^UTILITY(U,$J,358.3,14316,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14316,1,2,0)
+ ;;=2^Repair, tendon, flexor, foot; primary or secondary, without free graft, each tendon
+ ;;^UTILITY(U,$J,358.3,14316,1,3,0)
+ ;;=3^28200
+ ;;^UTILITY(U,$J,358.3,14317,0)
+ ;;=28202^^75^884^20^^^^1
+ ;;^UTILITY(U,$J,358.3,14317,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14317,1,2,0)
+ ;;=2^Repair, tendon, flexor, foot; secondarywith free graft, each tendon (includes obtaining graft), 
+ ;;^UTILITY(U,$J,358.3,14317,1,3,0)
+ ;;=3^28202
+ ;;^UTILITY(U,$J,358.3,14318,0)
+ ;;=28210^^75^884^18^^^^1
+ ;;^UTILITY(U,$J,358.3,14318,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14318,1,2,0)
+ ;;=2^Repair, tendon, extensor, foot; secondary with free graft, each tendon (includes obtaining graft) 
+ ;;^UTILITY(U,$J,358.3,14318,1,3,0)
+ ;;=3^28210
+ ;;^UTILITY(U,$J,358.3,14319,0)
+ ;;=28208^^75^884^17^^^^1
+ ;;^UTILITY(U,$J,358.3,14319,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14319,1,2,0)
+ ;;=2^Repair, tendon, extensor, foot; primary or secondary, each tendon
+ ;;^UTILITY(U,$J,358.3,14319,1,3,0)
+ ;;=3^28208
+ ;;^UTILITY(U,$J,358.3,14320,0)
+ ;;=28230^^75^884^29^^^^1
+ ;;^UTILITY(U,$J,358.3,14320,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14320,1,2,0)
+ ;;=2^Tenotomy, open, tendon flexor; foot, single or multiple tendon(s)(separate procedure)
+ ;;^UTILITY(U,$J,358.3,14320,1,3,0)
+ ;;=3^28230
+ ;;^UTILITY(U,$J,358.3,14321,0)
+ ;;=28232^^75^884^30^^^^1
+ ;;^UTILITY(U,$J,358.3,14321,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14321,1,2,0)
+ ;;=2^Tenotomy, open, tendon flexor; toe, single tendon (separate procedure) 
+ ;;^UTILITY(U,$J,358.3,14321,1,3,0)
+ ;;=3^28232
+ ;;^UTILITY(U,$J,358.3,14322,0)
+ ;;=28234^^75^884^28^^^^1
+ ;;^UTILITY(U,$J,358.3,14322,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14322,1,2,0)
+ ;;=2^Tenotomy, open, extensor, foot or toe, each tendon
+ ;;^UTILITY(U,$J,358.3,14322,1,3,0)
+ ;;=3^28234
+ ;;^UTILITY(U,$J,358.3,14323,0)
+ ;;=28270^^75^884^4^^^^1
+ ;;^UTILITY(U,$J,358.3,14323,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14323,1,2,0)
+ ;;=2^Capsulotomy; metatarsophalangeal joint, with or without tenorrhaphy, each joint (separate procedure) 
+ ;;^UTILITY(U,$J,358.3,14323,1,3,0)
+ ;;=3^28270
+ ;;^UTILITY(U,$J,358.3,14324,0)
+ ;;=28272^^75^884^3^^^^1
+ ;;^UTILITY(U,$J,358.3,14324,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14324,1,2,0)
+ ;;=2^Capsulotomy; interphalangeal joint, each joint
+ ;;^UTILITY(U,$J,358.3,14324,1,3,0)
+ ;;=3^28272
+ ;;^UTILITY(U,$J,358.3,14325,0)
+ ;;=28285^^75^884^6^^^^1
+ ;;^UTILITY(U,$J,358.3,14325,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14325,1,2,0)
+ ;;=2^Correction, hammertoe
+ ;;^UTILITY(U,$J,358.3,14325,1,3,0)
+ ;;=3^28285
+ ;;^UTILITY(U,$J,358.3,14326,0)
+ ;;=28288^^75^884^9^^^^1
+ ;;^UTILITY(U,$J,358.3,14326,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14326,1,2,0)
+ ;;=2^Ostectomy, partial, exostectomy or condylectomy, metatarsal head, each metatarsal head
+ ;;^UTILITY(U,$J,358.3,14326,1,3,0)
+ ;;=3^28288
+ ;;^UTILITY(U,$J,358.3,14327,0)
+ ;;=28290^^75^884^5^^^^1
+ ;;^UTILITY(U,$J,358.3,14327,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14327,1,2,0)
+ ;;=2^Correction, hallux valgus, with or without sesamoidectomy; simple exostectomy
+ ;;^UTILITY(U,$J,358.3,14327,1,3,0)
+ ;;=3^28290

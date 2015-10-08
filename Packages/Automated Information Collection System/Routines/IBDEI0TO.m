@@ -1,142 +1,112 @@
-IBDEI0TO ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0TO ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14649,1,4,0)
- ;;=4^786.52
- ;;^UTILITY(U,$J,358.3,14649,1,5,0)
- ;;=5^Painful Respiration
- ;;^UTILITY(U,$J,358.3,14649,2)
- ;;=^89126
- ;;^UTILITY(U,$J,358.3,14650,0)
- ;;=785.1^^90^864^126
- ;;^UTILITY(U,$J,358.3,14650,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14650,1,4,0)
- ;;=4^785.1
- ;;^UTILITY(U,$J,358.3,14650,1,5,0)
- ;;=5^Palpitations
- ;;^UTILITY(U,$J,358.3,14650,2)
- ;;=Palpitations^89281
- ;;^UTILITY(U,$J,358.3,14651,0)
- ;;=786.4^^90^864^141
- ;;^UTILITY(U,$J,358.3,14651,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14651,1,4,0)
- ;;=4^786.4
- ;;^UTILITY(U,$J,358.3,14651,1,5,0)
- ;;=5^Sputum production, abnormal
- ;;^UTILITY(U,$J,358.3,14651,2)
- ;;=^273377
- ;;^UTILITY(U,$J,358.3,14652,0)
- ;;=786.1^^90^864^142
- ;;^UTILITY(U,$J,358.3,14652,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14652,1,4,0)
- ;;=4^786.1
- ;;^UTILITY(U,$J,358.3,14652,1,5,0)
- ;;=5^Stridor
- ;;^UTILITY(U,$J,358.3,14652,2)
- ;;=Stridor^114767
- ;;^UTILITY(U,$J,358.3,14653,0)
- ;;=785.0^^90^864^145
- ;;^UTILITY(U,$J,358.3,14653,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14653,1,4,0)
- ;;=4^785.0
- ;;^UTILITY(U,$J,358.3,14653,1,5,0)
- ;;=5^Tachycardia
- ;;^UTILITY(U,$J,358.3,14653,2)
- ;;=Tachycardia^117041
- ;;^UTILITY(U,$J,358.3,14654,0)
- ;;=786.06^^90^864^146
- ;;^UTILITY(U,$J,358.3,14654,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14654,1,4,0)
- ;;=4^786.06
- ;;^UTILITY(U,$J,358.3,14654,1,5,0)
- ;;=5^Tachypnea
- ;;^UTILITY(U,$J,358.3,14654,2)
- ;;=Tachypnea^321213
- ;;^UTILITY(U,$J,358.3,14655,0)
- ;;=305.1^^90^864^150
- ;;^UTILITY(U,$J,358.3,14655,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14655,1,4,0)
- ;;=4^305.1
- ;;^UTILITY(U,$J,358.3,14655,1,5,0)
- ;;=5^Tobacco Use
- ;;^UTILITY(U,$J,358.3,14655,2)
- ;;=Tobacco Use^119899
- ;;^UTILITY(U,$J,358.3,14656,0)
- ;;=786.07^^90^864^158
- ;;^UTILITY(U,$J,358.3,14656,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14656,1,4,0)
- ;;=4^786.07
- ;;^UTILITY(U,$J,358.3,14656,1,5,0)
- ;;=5^Wheezing
- ;;^UTILITY(U,$J,358.3,14656,2)
- ;;=Wheezing^127848
- ;;^UTILITY(U,$J,358.3,14657,0)
- ;;=787.7^^90^864^11
- ;;^UTILITY(U,$J,358.3,14657,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14657,1,4,0)
- ;;=4^787.7
- ;;^UTILITY(U,$J,358.3,14657,1,5,0)
- ;;=5^Abnormal Feces
- ;;^UTILITY(U,$J,358.3,14657,2)
- ;;=Abdominal Feces^276857
- ;;^UTILITY(U,$J,358.3,14658,0)
- ;;=787.99^^90^864^147
- ;;^UTILITY(U,$J,358.3,14658,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14658,1,4,0)
- ;;=4^787.99
- ;;^UTILITY(U,$J,358.3,14658,1,5,0)
- ;;=5^Tenesmus
- ;;^UTILITY(U,$J,358.3,14658,2)
- ;;=Tenesmus^273388
- ;;^UTILITY(U,$J,358.3,14659,0)
- ;;=787.91^^90^864^49
- ;;^UTILITY(U,$J,358.3,14659,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14659,1,4,0)
- ;;=4^787.91
- ;;^UTILITY(U,$J,358.3,14659,1,5,0)
- ;;=5^Diarrhea
- ;;^UTILITY(U,$J,358.3,14659,2)
- ;;=Diarrhea^33921
- ;;^UTILITY(U,$J,358.3,14660,0)
- ;;=787.3^^90^864^75
- ;;^UTILITY(U,$J,358.3,14660,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14660,1,4,0)
- ;;=4^787.3
- ;;^UTILITY(U,$J,358.3,14660,1,5,0)
- ;;=5^Flatulence/Eructation/Gas pain
- ;;^UTILITY(U,$J,358.3,14660,2)
- ;;=^46766
- ;;^UTILITY(U,$J,358.3,14661,0)
- ;;=787.1^^90^864^81
- ;;^UTILITY(U,$J,358.3,14661,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14661,1,4,0)
- ;;=4^787.1
- ;;^UTILITY(U,$J,358.3,14661,1,5,0)
- ;;=5^Heartburn
- ;;^UTILITY(U,$J,358.3,14661,2)
- ;;=Heartburn^54996
- ;;^UTILITY(U,$J,358.3,14662,0)
- ;;=786.59^^90^864^36
- ;;^UTILITY(U,$J,358.3,14662,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14662,1,4,0)
- ;;=4^786.59
- ;;^UTILITY(U,$J,358.3,14662,1,5,0)
- ;;=5^Chest Pain
- ;;^UTILITY(U,$J,358.3,14662,2)
- ;;=Chest Pain^87384
- ;;^UTILITY(U,$J,358.3,14663,0)
- ;;=787.02^^90^864^114
+ ;;^UTILITY(U,$J,358.3,14368,1,3,0)
+ ;;=3^28111
+ ;;^UTILITY(U,$J,358.3,14369,0)
+ ;;=28112^^75^886^29^^^^1
+ ;;^UTILITY(U,$J,358.3,14369,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14369,1,2,0)
+ ;;=2^Ostectomy, complete excision; other metatarsal head (2nd, 3rd, 4th)
+ ;;^UTILITY(U,$J,358.3,14369,1,3,0)
+ ;;=3^28112
+ ;;^UTILITY(U,$J,358.3,14370,0)
+ ;;=28113^^75^886^27^^^^1
+ ;;^UTILITY(U,$J,358.3,14370,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14370,1,2,0)
+ ;;=2^Ostectomy, complete excision; 5th metatarsal head
+ ;;^UTILITY(U,$J,358.3,14370,1,3,0)
+ ;;=3^28113
+ ;;^UTILITY(U,$J,358.3,14371,0)
+ ;;=28114^^75^886^28^^^^1
+ ;;^UTILITY(U,$J,358.3,14371,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14371,1,2,0)
+ ;;=2^Ostectomy, complete excision; all metatarsal heads, with partial proximal phalangectomy, excluding first metatarsal 
+ ;;^UTILITY(U,$J,358.3,14371,1,3,0)
+ ;;=3^28114
+ ;;^UTILITY(U,$J,358.3,14372,0)
+ ;;=28140^^75^886^24^^^^1
+ ;;^UTILITY(U,$J,358.3,14372,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14372,1,2,0)
+ ;;=2^Metatarsectomy
+ ;;^UTILITY(U,$J,358.3,14372,1,3,0)
+ ;;=3^28140
+ ;;^UTILITY(U,$J,358.3,14373,0)
+ ;;=28119^^75^886^25^^^^1
+ ;;^UTILITY(U,$J,358.3,14373,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14373,1,2,0)
+ ;;=2^Ostectomy, calcaneus; for spur, with or without plantar fascial release
+ ;;^UTILITY(U,$J,358.3,14373,1,3,0)
+ ;;=3^28119
+ ;;^UTILITY(U,$J,358.3,14374,0)
+ ;;=28120^^75^886^32^^^^1
+ ;;^UTILITY(U,$J,358.3,14374,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14374,1,2,0)
+ ;;=2^Partial excision bone; talus or calcaneus
+ ;;^UTILITY(U,$J,358.3,14374,1,3,0)
+ ;;=3^28120
+ ;;^UTILITY(U,$J,358.3,14375,0)
+ ;;=28122^^75^886^33^^^^1
+ ;;^UTILITY(U,$J,358.3,14375,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14375,1,2,0)
+ ;;=2^Partial excision bone; tarsal or metatarsal bone, except talus or calcaneus
+ ;;^UTILITY(U,$J,358.3,14375,1,3,0)
+ ;;=3^28122
+ ;;^UTILITY(U,$J,358.3,14376,0)
+ ;;=28124^^75^886^31^^^^1
+ ;;^UTILITY(U,$J,358.3,14376,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14376,1,2,0)
+ ;;=2^Partial excision bone; phalanx of toe
+ ;;^UTILITY(U,$J,358.3,14376,1,3,0)
+ ;;=3^28124
+ ;;^UTILITY(U,$J,358.3,14377,0)
+ ;;=28153^^75^886^34^^^^1
+ ;;^UTILITY(U,$J,358.3,14377,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14377,1,2,0)
+ ;;=2^Resection, condyle(s), distal end of phalanx, each toe
+ ;;^UTILITY(U,$J,358.3,14377,1,3,0)
+ ;;=3^28153
+ ;;^UTILITY(U,$J,358.3,14378,0)
+ ;;=28160^^75^886^23^^^^1
+ ;;^UTILITY(U,$J,358.3,14378,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14378,1,2,0)
+ ;;=2^Hemiphalangectomy or interphalangeal joint excision, toe, proximal end of phalanx, each
+ ;;^UTILITY(U,$J,358.3,14378,1,3,0)
+ ;;=3^28160
+ ;;^UTILITY(U,$J,358.3,14379,0)
+ ;;=64774^^75^886^8^^^^1
+ ;;^UTILITY(U,$J,358.3,14379,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14379,1,2,0)
+ ;;=2^Excision of neuroma; cutaneous nerve, surgically identifiable
+ ;;^UTILITY(U,$J,358.3,14379,1,3,0)
+ ;;=3^64774
+ ;;^UTILITY(U,$J,358.3,14380,0)
+ ;;=64776^^75^886^9^^^^1
+ ;;^UTILITY(U,$J,358.3,14380,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14380,1,2,0)
+ ;;=2^Excision of neuroma; digital nerve, one or both, same digit
+ ;;^UTILITY(U,$J,358.3,14380,1,3,0)
+ ;;=3^64776
+ ;;^UTILITY(U,$J,358.3,14381,0)
+ ;;=64778^^75^886^10^^^^1
+ ;;^UTILITY(U,$J,358.3,14381,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14381,1,2,0)
+ ;;=2^Excision of neuroma; digital nerve, each additional digit (list separately in addition to code for primary procedure)
+ ;;^UTILITY(U,$J,358.3,14381,1,3,0)
+ ;;=3^64778
+ ;;^UTILITY(U,$J,358.3,14382,0)
+ ;;=64782^^75^886^11^^^^1

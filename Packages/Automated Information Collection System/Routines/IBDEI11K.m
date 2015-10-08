@@ -1,114 +1,140 @@
-IBDEI11K ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI11K ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18663,1,3,0)
- ;;=3^11730
- ;;^UTILITY(U,$J,358.3,18664,0)
- ;;=11732^^122^1191^6^^^^1
- ;;^UTILITY(U,$J,358.3,18664,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18664,1,2,0)
- ;;=2^Avulsion of Nail Plate,part/comp,ea addl nail
- ;;^UTILITY(U,$J,358.3,18664,1,3,0)
- ;;=3^11732
- ;;^UTILITY(U,$J,358.3,18665,0)
- ;;=11740^^122^1191^7^^^^1
- ;;^UTILITY(U,$J,358.3,18665,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18665,1,2,0)
- ;;=2^Evacuation Subungual Hematoma
- ;;^UTILITY(U,$J,358.3,18665,1,3,0)
- ;;=3^11740
- ;;^UTILITY(U,$J,358.3,18666,0)
- ;;=11750^^122^1191^8^^^^1
- ;;^UTILITY(U,$J,358.3,18666,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18666,1,2,0)
- ;;=2^Excision of Nail and Nail Matrx, partial or complete, for permanent removal
- ;;^UTILITY(U,$J,358.3,18666,1,3,0)
- ;;=3^11750
- ;;^UTILITY(U,$J,358.3,18667,0)
- ;;=11755^^122^1191^9^^^^1
- ;;^UTILITY(U,$J,358.3,18667,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18667,1,2,0)
- ;;=2^Biopsy of Nail Unit
- ;;^UTILITY(U,$J,358.3,18667,1,3,0)
- ;;=3^11755
- ;;^UTILITY(U,$J,358.3,18668,0)
- ;;=11760^^122^1191^10^^^^1
- ;;^UTILITY(U,$J,358.3,18668,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18668,1,2,0)
- ;;=2^Repair of Nail Bed
- ;;^UTILITY(U,$J,358.3,18668,1,3,0)
- ;;=3^11760
- ;;^UTILITY(U,$J,358.3,18669,0)
- ;;=11765^^122^1191^11^^^^1
- ;;^UTILITY(U,$J,358.3,18669,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18669,1,2,0)
- ;;=2^Wedge Excision of Skin Nail Fold
- ;;^UTILITY(U,$J,358.3,18669,1,3,0)
- ;;=3^11765
- ;;^UTILITY(U,$J,358.3,18670,0)
- ;;=11055^^122^1192^1^^^^1
- ;;^UTILITY(U,$J,358.3,18670,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18670,1,2,0)
- ;;=2^Trim Skin Lesion, Single Lesion
- ;;^UTILITY(U,$J,358.3,18670,1,3,0)
- ;;=3^11055
- ;;^UTILITY(U,$J,358.3,18671,0)
- ;;=11056^^122^1192^2^^^^1
- ;;^UTILITY(U,$J,358.3,18671,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18671,1,2,0)
- ;;=2^Trim Skin Lesion,2-4 Lesions
- ;;^UTILITY(U,$J,358.3,18671,1,3,0)
- ;;=3^11056
- ;;^UTILITY(U,$J,358.3,18672,0)
- ;;=11057^^122^1192^3^^^^1
- ;;^UTILITY(U,$J,358.3,18672,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18672,1,2,0)
- ;;=2^Trim Skin Lesions, Over 4
- ;;^UTILITY(U,$J,358.3,18672,1,3,0)
- ;;=3^11057
- ;;^UTILITY(U,$J,358.3,18673,0)
- ;;=17000^^122^1193^1^^^^1
- ;;^UTILITY(U,$J,358.3,18673,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18673,1,2,0)
- ;;=2^Destruction, all benign or premalignant lesions other than skin tags or cutaneous vascular proliferative lesion; 1st lesion
- ;;^UTILITY(U,$J,358.3,18673,1,3,0)
- ;;=3^17000
- ;;^UTILITY(U,$J,358.3,18674,0)
- ;;=17003^^122^1193^2^^^^1
- ;;^UTILITY(U,$J,358.3,18674,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18674,1,2,0)
- ;;=2^Destruction, all benign or premalignant lesions other than skin tags or cutaneous vascular proliferative lesions; 2nd-14th lesion, each
- ;;^UTILITY(U,$J,358.3,18674,1,3,0)
- ;;=3^17003
- ;;^UTILITY(U,$J,358.3,18675,0)
- ;;=17004^^122^1193^3^^^^1
- ;;^UTILITY(U,$J,358.3,18675,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18675,1,2,0)
- ;;=2^Destruction, all benign or premalignant lesions other than skin tags or cutaneous vascular proliferative lesions; 15 or more lesions
- ;;^UTILITY(U,$J,358.3,18675,1,3,0)
- ;;=3^17004
- ;;^UTILITY(U,$J,358.3,18676,0)
- ;;=17110^^122^1193^4^^^^1
- ;;^UTILITY(U,$J,358.3,18676,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18676,1,2,0)
- ;;=2^Destruction, of flat warts, molluscum contagiosum, or milia; up to 14 lesions
- ;;^UTILITY(U,$J,358.3,18676,1,3,0)
- ;;=3^17110
- ;;^UTILITY(U,$J,358.3,18677,0)
- ;;=17111^^122^1193^5^^^^1
- ;;^UTILITY(U,$J,358.3,18677,1,0)
- ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,18353,0)
+ ;;=V63.8^^99^1168^36
+ ;;^UTILITY(U,$J,358.3,18353,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18353,1,3,0)
+ ;;=3^REFERRAL-OTHER AGENCY
+ ;;^UTILITY(U,$J,358.3,18353,1,4,0)
+ ;;=4^V63.8
+ ;;^UTILITY(U,$J,358.3,18353,2)
+ ;;=^295555
+ ;;^UTILITY(U,$J,358.3,18354,0)
+ ;;=V63.0^^99^1168^38
+ ;;^UTILITY(U,$J,358.3,18354,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18354,1,3,0)
+ ;;=3^TRANSPORTATION PROBLEM
+ ;;^UTILITY(U,$J,358.3,18354,1,4,0)
+ ;;=4^V63.0
+ ;;^UTILITY(U,$J,358.3,18354,2)
+ ;;=^295552
+ ;;^UTILITY(U,$J,358.3,18355,0)
+ ;;=V62.89^^99^1168^34
+ ;;^UTILITY(U,$J,358.3,18355,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18355,1,3,0)
+ ;;=3^PSYCHOLOGICAL STRESS NEC
+ ;;^UTILITY(U,$J,358.3,18355,1,4,0)
+ ;;=4^V62.89
+ ;;^UTILITY(U,$J,358.3,18355,2)
+ ;;=^87822
+ ;;^UTILITY(U,$J,358.3,18356,0)
+ ;;=V60.0^^99^1168^25
+ ;;^UTILITY(U,$J,358.3,18356,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18356,1,3,0)
+ ;;=3^LACK OF HOUSING
+ ;;^UTILITY(U,$J,358.3,18356,1,4,0)
+ ;;=4^V60.0
+ ;;^UTILITY(U,$J,358.3,18356,2)
+ ;;=^295539
+ ;;^UTILITY(U,$J,358.3,18357,0)
+ ;;=V62.22^^99^1168^18
+ ;;^UTILITY(U,$J,358.3,18357,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18357,1,3,0)
+ ;;=3^HX RETRN FROM MILITARY DEPLOYMENT
+ ;;^UTILITY(U,$J,358.3,18357,1,4,0)
+ ;;=4^V62.22
+ ;;^UTILITY(U,$J,358.3,18357,2)
+ ;;=^336807
+ ;;^UTILITY(U,$J,358.3,18358,0)
+ ;;=99201^^100^1169^1
+ ;;^UTILITY(U,$J,358.3,18358,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18358,1,1,0)
+ ;;=1^Problem Focus
+ ;;^UTILITY(U,$J,358.3,18358,1,2,0)
+ ;;=2^99201
+ ;;^UTILITY(U,$J,358.3,18359,0)
+ ;;=99202^^100^1169^2
+ ;;^UTILITY(U,$J,358.3,18359,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18359,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,18359,1,2,0)
+ ;;=2^99202
+ ;;^UTILITY(U,$J,358.3,18360,0)
+ ;;=99203^^100^1169^3
+ ;;^UTILITY(U,$J,358.3,18360,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18360,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,18360,1,2,0)
+ ;;=2^99203
+ ;;^UTILITY(U,$J,358.3,18361,0)
+ ;;=99204^^100^1169^4
+ ;;^UTILITY(U,$J,358.3,18361,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18361,1,1,0)
+ ;;=1^Comprehensive, Moderate
+ ;;^UTILITY(U,$J,358.3,18361,1,2,0)
+ ;;=2^99204
+ ;;^UTILITY(U,$J,358.3,18362,0)
+ ;;=99205^^100^1169^5
+ ;;^UTILITY(U,$J,358.3,18362,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18362,1,1,0)
+ ;;=1^Comprehensive, High
+ ;;^UTILITY(U,$J,358.3,18362,1,2,0)
+ ;;=2^99205
+ ;;^UTILITY(U,$J,358.3,18363,0)
+ ;;=99211^^100^1170^1
+ ;;^UTILITY(U,$J,358.3,18363,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18363,1,1,0)
+ ;;=1^Brief (no MD seen)
+ ;;^UTILITY(U,$J,358.3,18363,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,18364,0)
+ ;;=99212^^100^1170^2
+ ;;^UTILITY(U,$J,358.3,18364,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18364,1,1,0)
+ ;;=1^Problem Focused
+ ;;^UTILITY(U,$J,358.3,18364,1,2,0)
+ ;;=2^99212
+ ;;^UTILITY(U,$J,358.3,18365,0)
+ ;;=99213^^100^1170^3
+ ;;^UTILITY(U,$J,358.3,18365,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18365,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,18365,1,2,0)
+ ;;=2^99213
+ ;;^UTILITY(U,$J,358.3,18366,0)
+ ;;=99214^^100^1170^4
+ ;;^UTILITY(U,$J,358.3,18366,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18366,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,18366,1,2,0)
+ ;;=2^99214
+ ;;^UTILITY(U,$J,358.3,18367,0)
+ ;;=99215^^100^1170^5
+ ;;^UTILITY(U,$J,358.3,18367,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18367,1,1,0)
+ ;;=1^Comprehensive
+ ;;^UTILITY(U,$J,358.3,18367,1,2,0)
+ ;;=2^99215
+ ;;^UTILITY(U,$J,358.3,18368,0)
+ ;;=99241^^100^1171^1
+ ;;^UTILITY(U,$J,358.3,18368,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18368,1,1,0)
+ ;;=1^Problem Focused

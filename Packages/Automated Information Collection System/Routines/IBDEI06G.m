@@ -1,380 +1,128 @@
-IBDEI06G ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
+IBDEI06G ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8622,1,4,0)
- ;;=4^871.1
- ;;^UTILITY(U,$J,358.3,8622,2)
- ;;=^274887
- ;;^UTILITY(U,$J,358.3,8623,0)
- ;;=871.2^^53^575^100
- ;;^UTILITY(U,$J,358.3,8623,1,0)
+ ;;^UTILITY(U,$J,358.3,2496,1,3,0)
+ ;;=3^Hemochromatosis due to repeated red blood cell transfusions
+ ;;^UTILITY(U,$J,358.3,2496,1,4,0)
+ ;;=4^E83.111
+ ;;^UTILITY(U,$J,358.3,2496,2)
+ ;;=^5002994
+ ;;^UTILITY(U,$J,358.3,2497,0)
+ ;;=E83.10^^6^75^26
+ ;;^UTILITY(U,$J,358.3,2497,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8623,1,3,0)
- ;;=3^Rupture Eye,Trauma Enuc
- ;;^UTILITY(U,$J,358.3,8623,1,4,0)
- ;;=4^871.2
- ;;^UTILITY(U,$J,358.3,8623,2)
- ;;=^274888
- ;;^UTILITY(U,$J,358.3,8624,0)
- ;;=871.6^^53^575^59
- ;;^UTILITY(U,$J,358.3,8624,1,0)
+ ;;^UTILITY(U,$J,358.3,2497,1,3,0)
+ ;;=3^Disorder of iron metabolism, unspecified
+ ;;^UTILITY(U,$J,358.3,2497,1,4,0)
+ ;;=4^E83.10
+ ;;^UTILITY(U,$J,358.3,2497,2)
+ ;;=^5002993
+ ;;^UTILITY(U,$J,358.3,2498,0)
+ ;;=D64.9^^6^75^5
+ ;;^UTILITY(U,$J,358.3,2498,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8624,1,3,0)
- ;;=3^Lens,Penetration w/ FB
- ;;^UTILITY(U,$J,358.3,8624,1,4,0)
- ;;=4^871.6
- ;;^UTILITY(U,$J,358.3,8624,2)
- ;;=^274891
- ;;^UTILITY(U,$J,358.3,8625,0)
- ;;=871.7^^53^575^72
- ;;^UTILITY(U,$J,358.3,8625,1,0)
+ ;;^UTILITY(U,$J,358.3,2498,1,3,0)
+ ;;=3^Anemia, unspecified
+ ;;^UTILITY(U,$J,358.3,2498,1,4,0)
+ ;;=4^D64.9
+ ;;^UTILITY(U,$J,358.3,2498,2)
+ ;;=^5002351
+ ;;^UTILITY(U,$J,358.3,2499,0)
+ ;;=K50.919^^6^75^24
+ ;;^UTILITY(U,$J,358.3,2499,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8625,1,3,0)
- ;;=3^Ocular Penetration,Unspec
- ;;^UTILITY(U,$J,358.3,8625,1,4,0)
- ;;=4^871.7
- ;;^UTILITY(U,$J,358.3,8625,2)
- ;;=^274892
- ;;^UTILITY(U,$J,358.3,8626,0)
- ;;=871.9^^53^575^9
- ;;^UTILITY(U,$J,358.3,8626,1,0)
+ ;;^UTILITY(U,$J,358.3,2499,1,3,0)
+ ;;=3^Crohn's disease, unspecified, with unspecified complications
+ ;;^UTILITY(U,$J,358.3,2499,1,4,0)
+ ;;=4^K50.919
+ ;;^UTILITY(U,$J,358.3,2499,2)
+ ;;=^5008651
+ ;;^UTILITY(U,$J,358.3,2500,0)
+ ;;=K50.918^^6^75^22
+ ;;^UTILITY(U,$J,358.3,2500,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8626,1,3,0)
- ;;=3^Ciliary Body,Open Wound
- ;;^UTILITY(U,$J,358.3,8626,1,4,0)
- ;;=4^871.9
- ;;^UTILITY(U,$J,358.3,8626,2)
- ;;=^274893
- ;;^UTILITY(U,$J,358.3,8627,0)
- ;;=907.2^^53^575^56
- ;;^UTILITY(U,$J,358.3,8627,1,0)
+ ;;^UTILITY(U,$J,358.3,2500,1,3,0)
+ ;;=3^Crohn's disease, unspecified, with other complication
+ ;;^UTILITY(U,$J,358.3,2500,1,4,0)
+ ;;=4^K50.918
+ ;;^UTILITY(U,$J,358.3,2500,2)
+ ;;=^5008650
+ ;;^UTILITY(U,$J,358.3,2501,0)
+ ;;=K50.914^^6^75^19
+ ;;^UTILITY(U,$J,358.3,2501,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8627,1,3,0)
- ;;=3^Late Eff Spinal Cord Injury
- ;;^UTILITY(U,$J,358.3,8627,1,4,0)
- ;;=4^907.2
- ;;^UTILITY(U,$J,358.3,8627,2)
- ;;=^275240
- ;;^UTILITY(U,$J,358.3,8628,0)
- ;;=909.5^^53^575^57
- ;;^UTILITY(U,$J,358.3,8628,1,0)
+ ;;^UTILITY(U,$J,358.3,2501,1,3,0)
+ ;;=3^Crohn's disease, unspecified, with abscess
+ ;;^UTILITY(U,$J,358.3,2501,1,4,0)
+ ;;=4^K50.914
+ ;;^UTILITY(U,$J,358.3,2501,2)
+ ;;=^5008649
+ ;;^UTILITY(U,$J,358.3,2502,0)
+ ;;=K50.913^^6^75^20
+ ;;^UTILITY(U,$J,358.3,2502,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8628,1,3,0)
- ;;=3^Late or Adverse Effect of Drug
- ;;^UTILITY(U,$J,358.3,8628,1,4,0)
- ;;=4^909.5
- ;;^UTILITY(U,$J,358.3,8628,2)
- ;;=^303353
- ;;^UTILITY(U,$J,358.3,8629,0)
- ;;=918.0^^53^575^105
- ;;^UTILITY(U,$J,358.3,8629,1,0)
+ ;;^UTILITY(U,$J,358.3,2502,1,3,0)
+ ;;=3^Crohn's disease, unspecified, with fistula
+ ;;^UTILITY(U,$J,358.3,2502,1,4,0)
+ ;;=4^K50.913
+ ;;^UTILITY(U,$J,358.3,2502,2)
+ ;;=^5008648
+ ;;^UTILITY(U,$J,358.3,2503,0)
+ ;;=K50.912^^6^75^21
+ ;;^UTILITY(U,$J,358.3,2503,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8629,1,3,0)
- ;;=3^Superfic Inj,Eyelids/Periocular
- ;;^UTILITY(U,$J,358.3,8629,1,4,0)
- ;;=4^918.0
- ;;^UTILITY(U,$J,358.3,8629,2)
- ;;=^275352
- ;;^UTILITY(U,$J,358.3,8630,0)
- ;;=918.2^^53^575^104
- ;;^UTILITY(U,$J,358.3,8630,1,0)
+ ;;^UTILITY(U,$J,358.3,2503,1,3,0)
+ ;;=3^Crohn's disease, unspecified, with intestinal obstruction
+ ;;^UTILITY(U,$J,358.3,2503,1,4,0)
+ ;;=4^K50.912
+ ;;^UTILITY(U,$J,358.3,2503,2)
+ ;;=^5008647
+ ;;^UTILITY(U,$J,358.3,2504,0)
+ ;;=K50.90^^6^75^25
+ ;;^UTILITY(U,$J,358.3,2504,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8630,1,3,0)
- ;;=3^Superfic Inj,Conjunctiva
- ;;^UTILITY(U,$J,358.3,8630,1,4,0)
- ;;=4^918.2
- ;;^UTILITY(U,$J,358.3,8630,2)
- ;;=^275353
- ;;^UTILITY(U,$J,358.3,8631,0)
- ;;=921.3^^53^575^112
- ;;^UTILITY(U,$J,358.3,8631,1,0)
+ ;;^UTILITY(U,$J,358.3,2504,1,3,0)
+ ;;=3^Crohn's disease, unspecified, without complications
+ ;;^UTILITY(U,$J,358.3,2504,1,4,0)
+ ;;=4^K50.90
+ ;;^UTILITY(U,$J,358.3,2504,2)
+ ;;=^5008645
+ ;;^UTILITY(U,$J,358.3,2505,0)
+ ;;=K50.911^^6^75^23
+ ;;^UTILITY(U,$J,358.3,2505,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8631,1,3,0)
- ;;=3^Traumatic Hyphemia
- ;;^UTILITY(U,$J,358.3,8631,1,4,0)
- ;;=4^921.3
- ;;^UTILITY(U,$J,358.3,8631,2)
- ;;=^275369
- ;;^UTILITY(U,$J,358.3,8632,0)
- ;;=930.1^^53^575^14
- ;;^UTILITY(U,$J,358.3,8632,1,0)
+ ;;^UTILITY(U,$J,358.3,2505,1,3,0)
+ ;;=3^Crohn's disease, unspecified, with rectal bleeding
+ ;;^UTILITY(U,$J,358.3,2505,1,4,0)
+ ;;=4^K50.911
+ ;;^UTILITY(U,$J,358.3,2505,2)
+ ;;=^5008646
+ ;;^UTILITY(U,$J,358.3,2506,0)
+ ;;=K51.20^^6^75^56
+ ;;^UTILITY(U,$J,358.3,2506,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8632,1,3,0)
- ;;=3^Conjunctival Sac,Foreign Body
- ;;^UTILITY(U,$J,358.3,8632,1,4,0)
- ;;=4^930.1
- ;;^UTILITY(U,$J,358.3,8632,2)
- ;;=^275486
- ;;^UTILITY(U,$J,358.3,8633,0)
- ;;=930.8^^53^575^33
- ;;^UTILITY(U,$J,358.3,8633,1,0)
+ ;;^UTILITY(U,$J,358.3,2506,1,3,0)
+ ;;=3^Ulcerative (chronic) proctitis without complications
+ ;;^UTILITY(U,$J,358.3,2506,1,4,0)
+ ;;=4^K51.20
+ ;;^UTILITY(U,$J,358.3,2506,2)
+ ;;=^5008659
+ ;;^UTILITY(U,$J,358.3,2507,0)
+ ;;=K51.211^^6^75^54
+ ;;^UTILITY(U,$J,358.3,2507,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8633,1,3,0)
- ;;=3^Eye,Oth/Combined Sites,Foreign Body
- ;;^UTILITY(U,$J,358.3,8633,1,4,0)
- ;;=4^930.8
- ;;^UTILITY(U,$J,358.3,8633,2)
- ;;=^275488
- ;;^UTILITY(U,$J,358.3,8634,0)
- ;;=940.0^^53^575^8
- ;;^UTILITY(U,$J,358.3,8634,1,0)
+ ;;^UTILITY(U,$J,358.3,2507,1,3,0)
+ ;;=3^Ulcerative (chronic) proctitis with rectal bleeding
+ ;;^UTILITY(U,$J,358.3,2507,1,4,0)
+ ;;=4^K51.211
+ ;;^UTILITY(U,$J,358.3,2507,2)
+ ;;=^5008660
+ ;;^UTILITY(U,$J,358.3,2508,0)
+ ;;=K51.212^^6^75^52
+ ;;^UTILITY(U,$J,358.3,2508,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8634,1,3,0)
- ;;=3^Chemical Burn,Periocular
- ;;^UTILITY(U,$J,358.3,8634,1,4,0)
- ;;=4^940.0
- ;;^UTILITY(U,$J,358.3,8634,2)
- ;;=^275512
- ;;^UTILITY(U,$J,358.3,8635,0)
- ;;=940.1^^53^575^35
- ;;^UTILITY(U,$J,358.3,8635,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8635,1,3,0)
- ;;=3^Eyelid,Burns
- ;;^UTILITY(U,$J,358.3,8635,1,4,0)
- ;;=4^940.1
- ;;^UTILITY(U,$J,358.3,8635,2)
- ;;=^275513
- ;;^UTILITY(U,$J,358.3,8636,0)
- ;;=940.2^^53^575^18
- ;;^UTILITY(U,$J,358.3,8636,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8636,1,3,0)
- ;;=3^Cornea/Conj,Alkaline Burn
- ;;^UTILITY(U,$J,358.3,8636,1,4,0)
- ;;=4^940.2
- ;;^UTILITY(U,$J,358.3,8636,2)
- ;;=^275514
- ;;^UTILITY(U,$J,358.3,8637,0)
- ;;=940.3^^53^575^17
- ;;^UTILITY(U,$J,358.3,8637,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8637,1,3,0)
- ;;=3^Cornea/Conj,Acid Burn
- ;;^UTILITY(U,$J,358.3,8637,1,4,0)
- ;;=4^940.3
- ;;^UTILITY(U,$J,358.3,8637,2)
- ;;=^275515
- ;;^UTILITY(U,$J,358.3,8638,0)
- ;;=940.4^^53^575^19
- ;;^UTILITY(U,$J,358.3,8638,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8638,1,3,0)
- ;;=3^Cornea/Conj,Oth Burn
- ;;^UTILITY(U,$J,358.3,8638,1,4,0)
- ;;=4^940.4
- ;;^UTILITY(U,$J,358.3,8638,2)
- ;;=^275516
- ;;^UTILITY(U,$J,358.3,8639,0)
- ;;=941.12^^53^575^31
- ;;^UTILITY(U,$J,358.3,8639,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8639,1,3,0)
- ;;=3^Eye Erythema
- ;;^UTILITY(U,$J,358.3,8639,1,4,0)
- ;;=4^941.12
- ;;^UTILITY(U,$J,358.3,8639,2)
- ;;=^275531
- ;;^UTILITY(U,$J,358.3,8640,0)
- ;;=977.8^^53^575^4
- ;;^UTILITY(U,$J,358.3,8640,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8640,1,3,0)
- ;;=3^Allergy to Fluorescein
- ;;^UTILITY(U,$J,358.3,8640,1,4,0)
- ;;=4^977.8
- ;;^UTILITY(U,$J,358.3,8640,2)
- ;;=^276154
- ;;^UTILITY(U,$J,358.3,8641,0)
- ;;=989.83^^53^575^111
- ;;^UTILITY(U,$J,358.3,8641,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8641,1,3,0)
- ;;=3^Toxic Effect of Silicone
- ;;^UTILITY(U,$J,358.3,8641,1,4,0)
- ;;=4^989.83
- ;;^UTILITY(U,$J,358.3,8641,2)
- ;;=^303356
- ;;^UTILITY(U,$J,358.3,8642,0)
- ;;=995.29^^53^575^3
- ;;^UTILITY(U,$J,358.3,8642,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8642,1,3,0)
- ;;=3^Adverse Effect of Drug
- ;;^UTILITY(U,$J,358.3,8642,1,4,0)
- ;;=4^995.29
- ;;^UTILITY(U,$J,358.3,8642,2)
- ;;=^334181
- ;;^UTILITY(U,$J,358.3,8643,0)
- ;;=998.30^^53^575^25
- ;;^UTILITY(U,$J,358.3,8643,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8643,1,3,0)
- ;;=3^Disruption OP Wound
- ;;^UTILITY(U,$J,358.3,8643,1,4,0)
- ;;=4^998.30
- ;;^UTILITY(U,$J,358.3,8643,2)
- ;;=^336767
- ;;^UTILITY(U,$J,358.3,8644,0)
- ;;=998.31^^53^575^27
- ;;^UTILITY(U,$J,358.3,8644,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8644,1,3,0)
- ;;=3^Disruption of Internal OP Wound
- ;;^UTILITY(U,$J,358.3,8644,1,4,0)
- ;;=4^998.31
- ;;^UTILITY(U,$J,358.3,8644,2)
- ;;=^336843
- ;;^UTILITY(U,$J,358.3,8645,0)
- ;;=998.32^^53^575^26
- ;;^UTILITY(U,$J,358.3,8645,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8645,1,3,0)
- ;;=3^Disruption of External OP Wound
- ;;^UTILITY(U,$J,358.3,8645,1,4,0)
- ;;=4^998.32
- ;;^UTILITY(U,$J,358.3,8645,2)
- ;;=^336844
- ;;^UTILITY(U,$J,358.3,8646,0)
- ;;=804.00^^53^575^37
- ;;^UTILITY(U,$J,358.3,8646,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8646,1,3,0)
- ;;=3^FX Skull/Face Mult w/o Intracranial Inj
- ;;^UTILITY(U,$J,358.3,8646,1,4,0)
- ;;=4^804.00
- ;;^UTILITY(U,$J,358.3,8646,2)
- ;;=^273780
- ;;^UTILITY(U,$J,358.3,8647,0)
- ;;=V10.84^^53^575^47
- ;;^UTILITY(U,$J,358.3,8647,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8647,1,3,0)
- ;;=3^Hx Eye CA,Personal
- ;;^UTILITY(U,$J,358.3,8647,1,4,0)
- ;;=4^V10.84
- ;;^UTILITY(U,$J,358.3,8647,2)
- ;;=^295242
- ;;^UTILITY(U,$J,358.3,8648,0)
- ;;=V16.9^^53^575^46
- ;;^UTILITY(U,$J,358.3,8648,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8648,1,3,0)
- ;;=3^Hx CA,Family
- ;;^UTILITY(U,$J,358.3,8648,1,4,0)
- ;;=4^V16.9
- ;;^UTILITY(U,$J,358.3,8648,2)
- ;;=^295301
- ;;^UTILITY(U,$J,358.3,8649,0)
- ;;=V19.0^^53^575^45
- ;;^UTILITY(U,$J,358.3,8649,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8649,1,3,0)
- ;;=3^Hx Blindness/Visual Loss,Family
- ;;^UTILITY(U,$J,358.3,8649,1,4,0)
- ;;=4^V19.0
- ;;^UTILITY(U,$J,358.3,8649,2)
- ;;=^295320
- ;;^UTILITY(U,$J,358.3,8650,0)
- ;;=V60.0^^53^575^55
- ;;^UTILITY(U,$J,358.3,8650,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8650,1,3,0)
- ;;=3^Lack of Housing
- ;;^UTILITY(U,$J,358.3,8650,1,4,0)
- ;;=4^V60.0
- ;;^UTILITY(U,$J,358.3,8650,2)
- ;;=^295539
- ;;^UTILITY(U,$J,358.3,8651,0)
- ;;=V65.5^^53^575^13
- ;;^UTILITY(U,$J,358.3,8651,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8651,1,3,0)
- ;;=3^Condition Not Found
- ;;^UTILITY(U,$J,358.3,8651,1,4,0)
- ;;=4^V65.5
- ;;^UTILITY(U,$J,358.3,8651,2)
- ;;=^295564
- ;;^UTILITY(U,$J,358.3,8652,0)
- ;;=V67.51^^53^575^12
- ;;^UTILITY(U,$J,358.3,8652,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8652,1,3,0)
- ;;=3^Completed Trmt of High Risk Med
- ;;^UTILITY(U,$J,358.3,8652,1,4,0)
- ;;=4^V67.51
- ;;^UTILITY(U,$J,358.3,8652,2)
- ;;=^295577
- ;;^UTILITY(U,$J,358.3,8653,0)
- ;;=V87.39^^53^575^15
- ;;^UTILITY(U,$J,358.3,8653,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8653,1,3,0)
- ;;=3^Cont/Exp Hazard Sub NEC
- ;;^UTILITY(U,$J,358.3,8653,1,4,0)
- ;;=4^V87.39
- ;;^UTILITY(U,$J,358.3,8653,2)
- ;;=^336815
- ;;^UTILITY(U,$J,358.3,8654,0)
- ;;=369.05^^53^575^76
- ;;^UTILITY(U,$J,358.3,8654,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8654,1,3,0)
- ;;=3^One Eye-Profound,Oth Eye-NOS
- ;;^UTILITY(U,$J,358.3,8654,1,4,0)
- ;;=4^369.05
- ;;^UTILITY(U,$J,358.3,8654,2)
- ;;=^268865
- ;;^UTILITY(U,$J,358.3,8655,0)
- ;;=365.11^^53^576^20
- ;;^UTILITY(U,$J,358.3,8655,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8655,1,3,0)
- ;;=3^Glaucoma,Open Angle
- ;;^UTILITY(U,$J,358.3,8655,1,4,0)
- ;;=4^365.11
- ;;^UTILITY(U,$J,358.3,8655,2)
- ;;=Open Angle Glaucoma^51203
- ;;^UTILITY(U,$J,358.3,8656,0)
- ;;=365.12^^53^576^16
- ;;^UTILITY(U,$J,358.3,8656,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8656,1,3,0)
- ;;=3^Glaucoma,Low Tension
- ;;^UTILITY(U,$J,358.3,8656,1,4,0)
- ;;=4^365.12
- ;;^UTILITY(U,$J,358.3,8656,2)
- ;;=Low Tension Glaucoma^265223
- ;;^UTILITY(U,$J,358.3,8657,0)
- ;;=365.63^^53^576^19
- ;;^UTILITY(U,$J,358.3,8657,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8657,1,3,0)
- ;;=3^Glaucoma,Neovascular
- ;;^UTILITY(U,$J,358.3,8657,1,4,0)
- ;;=4^365.63
- ;;^UTILITY(U,$J,358.3,8657,2)
- ;;=Neovascular Glaucoma^268778
- ;;^UTILITY(U,$J,358.3,8658,0)
- ;;=365.10^^53^576^22
- ;;^UTILITY(U,$J,358.3,8658,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8658,1,3,0)
- ;;=3^Glaucoma,Open Angle Unspec
- ;;^UTILITY(U,$J,358.3,8658,1,4,0)
- ;;=4^365.10
- ;;^UTILITY(U,$J,358.3,8658,2)
- ;;=^51206
- ;;^UTILITY(U,$J,358.3,8659,0)
- ;;=365.13^^53^576^25
- ;;^UTILITY(U,$J,358.3,8659,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8659,1,3,0)
- ;;=3^Glaucoma,Pigmentary
- ;;^UTILITY(U,$J,358.3,8659,1,4,0)
- ;;=4^365.13
- ;;^UTILITY(U,$J,358.3,8659,2)
- ;;=Pigmentary Glaucoma^51211
- ;;^UTILITY(U,$J,358.3,8660,0)
- ;;=365.20^^53^576^26
+ ;;^UTILITY(U,$J,358.3,2508,1,3,0)
+ ;;=3^Ulcerative (chronic) proctitis with intestinal obstruction
+ ;;^UTILITY(U,$J,358.3,2508,1,4,0)
+ ;;=4^K51.212

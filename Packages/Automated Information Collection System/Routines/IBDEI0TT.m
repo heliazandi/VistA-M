@@ -1,142 +1,96 @@
-IBDEI0TT ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0TT ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14717,1,4,0)
- ;;=4^784.49
- ;;^UTILITY(U,$J,358.3,14717,1,5,0)
- ;;=5^Hoarseness
- ;;^UTILITY(U,$J,358.3,14717,2)
- ;;=Hoarseness^88244
- ;;^UTILITY(U,$J,358.3,14718,0)
- ;;=525.10^^90^864^104
- ;;^UTILITY(U,$J,358.3,14718,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14718,1,4,0)
- ;;=4^525.10
- ;;^UTILITY(U,$J,358.3,14718,1,5,0)
- ;;=5^Loss of Teeth
- ;;^UTILITY(U,$J,358.3,14718,2)
- ;;=Loss of Teeth^323490
- ;;^UTILITY(U,$J,358.3,14719,0)
- ;;=795.39^^90^864^130
- ;;^UTILITY(U,$J,358.3,14719,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14719,1,4,0)
- ;;=4^795.39
- ;;^UTILITY(U,$J,358.3,14719,1,5,0)
- ;;=5^Positive Culture findings
- ;;^UTILITY(U,$J,358.3,14719,2)
- ;;=Positive Culture findings^328582
- ;;^UTILITY(U,$J,358.3,14720,0)
- ;;=564.00^^90^864^43
- ;;^UTILITY(U,$J,358.3,14720,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14720,1,4,0)
- ;;=4^564.00
- ;;^UTILITY(U,$J,358.3,14720,1,5,0)
- ;;=5^Constipation
- ;;^UTILITY(U,$J,358.3,14720,2)
- ;;=Constipation^323537
- ;;^UTILITY(U,$J,358.3,14721,0)
- ;;=790.22^^90^864^90
- ;;^UTILITY(U,$J,358.3,14721,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14721,1,4,0)
- ;;=4^790.22
- ;;^UTILITY(U,$J,358.3,14721,1,5,0)
- ;;=5^Impaired Oral Glucse Tol
- ;;^UTILITY(U,$J,358.3,14721,2)
- ;;=^329896
- ;;^UTILITY(U,$J,358.3,14722,0)
- ;;=719.7^^90^864^50
- ;;^UTILITY(U,$J,358.3,14722,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14722,1,4,0)
- ;;=4^719.7
- ;;^UTILITY(U,$J,358.3,14722,1,5,0)
- ;;=5^Difficulty In Walking
- ;;^UTILITY(U,$J,358.3,14722,2)
- ;;=^329945
- ;;^UTILITY(U,$J,358.3,14723,0)
- ;;=799.01^^90^864^27
- ;;^UTILITY(U,$J,358.3,14723,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14723,1,4,0)
- ;;=4^799.01
- ;;^UTILITY(U,$J,358.3,14723,1,5,0)
- ;;=5^Asphyxia
- ;;^UTILITY(U,$J,358.3,14723,2)
- ;;=^11005
- ;;^UTILITY(U,$J,358.3,14724,0)
- ;;=780.97^^90^864^21
- ;;^UTILITY(U,$J,358.3,14724,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14724,1,4,0)
- ;;=4^780.97
- ;;^UTILITY(U,$J,358.3,14724,1,5,0)
- ;;=5^Altered Mental Status
- ;;^UTILITY(U,$J,358.3,14724,2)
- ;;=^334164
- ;;^UTILITY(U,$J,358.3,14725,0)
- ;;=793.99^^90^864^15
- ;;^UTILITY(U,$J,358.3,14725,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14725,1,4,0)
- ;;=4^793.99
- ;;^UTILITY(U,$J,358.3,14725,1,5,0)
- ;;=5^Abnormal X-Ray Finding
- ;;^UTILITY(U,$J,358.3,14725,2)
- ;;=^334168
- ;;^UTILITY(U,$J,358.3,14726,0)
- ;;=787.20^^90^864^55
- ;;^UTILITY(U,$J,358.3,14726,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14726,1,4,0)
- ;;=4^787.20
- ;;^UTILITY(U,$J,358.3,14726,1,5,0)
- ;;=5^Dysphagia
- ;;^UTILITY(U,$J,358.3,14726,2)
- ;;=^335307
- ;;^UTILITY(U,$J,358.3,14727,0)
- ;;=789.59^^90^864^26
- ;;^UTILITY(U,$J,358.3,14727,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14727,1,4,0)
- ;;=4^789.59
- ;;^UTILITY(U,$J,358.3,14727,1,5,0)
- ;;=5^Ascites
- ;;^UTILITY(U,$J,358.3,14727,2)
- ;;=^335282
- ;;^UTILITY(U,$J,358.3,14728,0)
- ;;=790.6^^90^864^13
- ;;^UTILITY(U,$J,358.3,14728,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14728,1,4,0)
- ;;=4^790.6
- ;;^UTILITY(U,$J,358.3,14728,1,5,0)
- ;;=5^Abnormal LFT's
- ;;^UTILITY(U,$J,358.3,14728,2)
- ;;=^87228
- ;;^UTILITY(U,$J,358.3,14729,0)
- ;;=790.29^^90^864^86
- ;;^UTILITY(U,$J,358.3,14729,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14729,1,4,0)
- ;;=4^790.29
- ;;^UTILITY(U,$J,358.3,14729,1,5,0)
- ;;=5^Hyperglycemia (NOT DM)
- ;;^UTILITY(U,$J,358.3,14729,2)
- ;;=^329955
- ;;^UTILITY(U,$J,358.3,14730,0)
- ;;=780.60^^90^864^71
- ;;^UTILITY(U,$J,358.3,14730,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14730,1,4,0)
- ;;=4^780.60
- ;;^UTILITY(U,$J,358.3,14730,1,5,0)
- ;;=5^Fever
- ;;^UTILITY(U,$J,358.3,14730,2)
- ;;=^336764
- ;;^UTILITY(U,$J,358.3,14731,0)
- ;;=784.59^^90^864^139
+ ;;^UTILITY(U,$J,358.3,14438,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14438,1,2,0)
+ ;;=2^Open TX of bimalleolar ankle fracture, with or without internal or external fixation
+ ;;^UTILITY(U,$J,358.3,14438,1,3,0)
+ ;;=3^27814
+ ;;^UTILITY(U,$J,358.3,14439,0)
+ ;;=27816^^75^888^18^^^^1
+ ;;^UTILITY(U,$J,358.3,14439,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14439,1,2,0)
+ ;;=2^Closed TX of trimalleolar ankle fracture; without manipulation
+ ;;^UTILITY(U,$J,358.3,14439,1,3,0)
+ ;;=3^27816
+ ;;^UTILITY(U,$J,358.3,14440,0)
+ ;;=27818^^75^888^19^^^^1
+ ;;^UTILITY(U,$J,358.3,14440,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14440,1,2,0)
+ ;;=2^Closed TX of trimalleolar ankle fracture; with manipulation
+ ;;^UTILITY(U,$J,358.3,14440,1,3,0)
+ ;;=3^27818
+ ;;^UTILITY(U,$J,358.3,14441,0)
+ ;;=27822^^75^888^51^^^^1
+ ;;^UTILITY(U,$J,358.3,14441,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14441,1,2,0)
+ ;;=2^Open Tx of trimalleolar ankle fracture, with or w/o internal or external fixation of, medial and/or lateral malleolus; w/o fixation of posterior lip
+ ;;^UTILITY(U,$J,358.3,14441,1,3,0)
+ ;;=3^27822
+ ;;^UTILITY(U,$J,358.3,14442,0)
+ ;;=27823^^75^888^52^^^^1
+ ;;^UTILITY(U,$J,358.3,14442,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14442,1,2,0)
+ ;;=2^Open Tx of trimalleolar ankle fracture, with or w/o internal or external fixation, medial and/or lateral malleolus; with fixation of posterior lip  
+ ;;^UTILITY(U,$J,358.3,14442,1,3,0)
+ ;;=3^27823
+ ;;^UTILITY(U,$J,358.3,14443,0)
+ ;;=27824^^75^888^22^^^^1
+ ;;^UTILITY(U,$J,358.3,14443,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14443,1,2,0)
+ ;;=2^Closed Tx of fracture of weight bearing articular portion of distal tibia, with or w/o anesthesia; w/o manipulation 
+ ;;^UTILITY(U,$J,358.3,14443,1,3,0)
+ ;;=3^27824
+ ;;^UTILITY(U,$J,358.3,14444,0)
+ ;;=27825^^75^888^23^^^^1
+ ;;^UTILITY(U,$J,358.3,14444,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14444,1,2,0)
+ ;;=2^Closed Tx of fracture of weight bearing articular portion of distal tibia, with or w/o anesthesia; with skeletal traction &/or requiring manipulation
+ ;;^UTILITY(U,$J,358.3,14444,1,3,0)
+ ;;=3^27825
+ ;;^UTILITY(U,$J,358.3,14445,0)
+ ;;=27826^^75^888^44^^^^1
+ ;;^UTILITY(U,$J,358.3,14445,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14445,1,2,0)
+ ;;=2^Open Tx of fracture of weight bearing articular surface/portion of distal tibia, w/ internal or external fixation; of fibula only
+ ;;^UTILITY(U,$J,358.3,14445,1,3,0)
+ ;;=3^27826
+ ;;^UTILITY(U,$J,358.3,14446,0)
+ ;;=27827^^75^888^45^^^^1
+ ;;^UTILITY(U,$J,358.3,14446,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14446,1,2,0)
+ ;;=2^Open Tx of fracture of weight bearing articular surface/portion of distal tibia, w/ internal or external fixation; of tibia only
+ ;;^UTILITY(U,$J,358.3,14446,1,3,0)
+ ;;=3^27827
+ ;;^UTILITY(U,$J,358.3,14447,0)
+ ;;=27828^^75^888^46^^^^1
+ ;;^UTILITY(U,$J,358.3,14447,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14447,1,2,0)
+ ;;=2^Open Tx of fracture of weight bearing articular surface/portionof distal tibia, w/ internal or external fixation; of both tibia & fibula
+ ;;^UTILITY(U,$J,358.3,14447,1,3,0)
+ ;;=3^27828
+ ;;^UTILITY(U,$J,358.3,14448,0)
+ ;;=27829^^75^888^43^^^^1
+ ;;^UTILITY(U,$J,358.3,14448,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14448,1,2,0)
+ ;;=2^Open Tx of distal tibiofibular joint disruption, with or w/o internal or external fixation
+ ;;^UTILITY(U,$J,358.3,14448,1,3,0)
+ ;;=3^27829
+ ;;^UTILITY(U,$J,358.3,14449,0)
+ ;;=28540^^75^888^30^^^^1
+ ;;^UTILITY(U,$J,358.3,14449,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14449,1,2,0)
+ ;;=2^Closed Tx of tarsal bone dislocation, other than talotarsal; w/o anesthesia

@@ -1,132 +1,138 @@
-IBDEI04M ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
- Q:'DIFQ(358.6)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI04M ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.6,0,"GL")
- ;;=^IBE(358.6,
- ;;^DIC("B","IMP/EXP PACKAGE INTERFACE",358.6)
- ;;=
- ;;^DIC(358.6,"%D",0)
- ;;=^^1^1^2950927^^^^
- ;;^DIC(358.6,"%D",1,0)
- ;;=This file is used as a workspace by the import/export utility.
- ;;^DIC(358.6,"%D",2,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.6,"%D",3,0)
- ;;=that is being imported or exported.
- ;;^DIC(358.6,"%D",4,0)
- ;;= 
- ;;^DIC(358.6,"%D",5,0)
- ;;=This file contains a description of all of the interfaces with other packages.
- ;;^DIC(358.6,"%D",6,0)
- ;;=The form will invoke the proper interface routines by doing a lookup on
- ;;^DIC(358.6,"%D",7,0)
- ;;=this file and then invoking the routine by indirection. The INPUT VARIABLE
- ;;^DIC(358.6,"%D",8,0)
- ;;=fields are for documentation purposes and to verify that the proper
- ;;^DIC(358.6,"%D",9,0)
- ;;=variables are defined. Data will be exchanged between the encounter form
- ;;^DIC(358.6,"%D",10,0)
- ;;=utilities and other packages by putting the data in a predefined location.
- ;;^DIC(358.6,"%D",11,0)
- ;;=The first part of the subscript is always be ^TMP("IB",$J,"INTERFACES".
- ;;^DIC(358.6,"%D",12,0)
- ;;=For output routines, but not selection routines, the fourth subscript is
- ;;^DIC(358.6,"%D",13,0)
- ;;=be the patient DFN. The next subscript is the name of the Package
- ;;^DIC(358.6,"%D",14,0)
- ;;=Interface. For single valued data and record valued data there is no
- ;;^DIC(358.6,"%D",15,0)
- ;;=additional subscript. For interfaces returning a list there is one
- ;;^DIC(358.6,"%D",16,0)
- ;;=additional subscript level, the number of the item on the list. For
- ;;^DIC(358.6,"%D",17,0)
- ;;=word processing type data the data will be in FM word-processing format,
- ;;^DIC(358.6,"%D",18,0)
- ;;=i.e., the final subscripts will be ...1,0),...2,0),...3,0), etc.
- ;;^DIC(358.6,"%D",19,0)
- ;;=these items of data can have its own entry in the Package Interface file,
- ;;^DIC(358.6,"%D",20,0)
- ;;=but by using the same entry point there is a savings because all of the
- ;;^DIC(358.6,"%D",21,0)
- ;;=data on that node can be obtained at once. The routines that invoke the
- ;;^DIC(358.6,"%D",22,0)
- ;;=entry point keep track of the entry points already invoked so they are
- ;;^DIC(358.6,"%D",23,0)
- ;;=not repeated.
- ;;^DD(358.6,0)
- ;;=FIELD^^21^76
- ;;^DD(358.6,0,"DDA")
- ;;=N
- ;;^DD(358.6,0,"DT")
- ;;=3000124
- ;;^DD(358.6,0,"ID",.06)
- ;;=W ""
- ;;^DD(358.6,0,"ID","WRITE")
- ;;=N IBDWNAM S IBDWNAM=$E($P(^(0),U),1,40) D EN^DDIOL(IBDWNAM,"","!?0")
- ;;^DD(358.6,0,"ID","WRITE1")
- ;;=N IBDWTYPE S IBDWTYPE=$S($P(^(0),"^",6)=1:"INPUT",$P(^(0),"^",6)=2:"OUTPUT",$P(^(0),"^",6)=3:"SELECTION",1:"REPORT")_$S($P(^(0),U,6)=3&'$P(^(0),"^",13):"  ** NOT SCANNABLE **",1:"") D EN^DDIOL("TYPE="_IBDWTYPE,"","?45")
- ;;^DD(358.6,0,"IX","B",358.6,.01)
- ;;=
- ;;^DD(358.6,0,"IX","C",358.6,.04)
- ;;=
- ;;^DD(358.6,0,"IX","D",358.6,3)
- ;;=
- ;;^DD(358.6,0,"IX","E",358.6,.01)
- ;;=
- ;;^DD(358.6,0,"NM","IMP/EXP PACKAGE INTERFACE")
- ;;=
- ;;^DD(358.6,0,"PT",358.2,.11)
- ;;=
- ;;^DD(358.6,0,"PT",358.5,.03)
- ;;=
- ;;^DD(358.6,0,"PT",358.6,.13)
- ;;=
- ;;^DD(358.6,0,"PT",358.93,.06)
- ;;=
- ;;^DD(358.6,0,"VRPK")
- ;;=IBD
- ;;^DD(358.6,.01,0)
- ;;=NAME^RF^^0;1^K:X[""""!($A(X)=45) X I $D(X) K:$L(X)>40!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.6,.01,1,0)
- ;;=^.1
- ;;^DD(358.6,.01,1,1,0)
- ;;=358.6^B
- ;;^DD(358.6,.01,1,1,1)
- ;;=S ^IBE(358.6,"B",$E(X,1,30),DA)=""
- ;;^DD(358.6,.01,1,1,2)
- ;;=K ^IBE(358.6,"B",$E(X,1,30),DA)
- ;;^DD(358.6,.01,1,2,0)
- ;;=358.6^E^MUMPS
- ;;^DD(358.6,.01,1,2,1)
- ;;=S ^IBE(358.6,"E",$E(X,$F(X," "),40),DA)=""
- ;;^DD(358.6,.01,1,2,2)
- ;;=K ^IBE(358.6,"E",$E(X,$F(X," "),40),DA)
- ;;^DD(358.6,.01,1,2,"%D",0)
- ;;=^^4^4^2940224^
- ;;^DD(358.6,.01,1,2,"%D",1,0)
- ;;= 
- ;;^DD(358.6,.01,1,2,"%D",2,0)
- ;;=For package interfaces that are output routines the name has the custodial
- ;;^DD(358.6,.01,1,2,"%D",3,0)
- ;;=package's name space as a prefix. This cross-reference removes that
- ;;^DD(358.6,.01,1,2,"%D",4,0)
- ;;=prefix. It is used to improve the display of output routines for the user.
- ;;^DD(358.6,.01,1,2,"DT")
- ;;=2930409
- ;;^DD(358.6,.01,3)
- ;;=Answer must be 3-40 characters in length. All entries with Action Type other than PRINT REPORT must be be prefixed with the namespace of the package that is responsible for the data.
- ;;^DD(358.6,.01,21,0)
- ;;=^^3^3^2950412^^^^
- ;;^DD(358.6,.01,21,1,0)
- ;;= 
- ;;^DD(358.6,.01,21,2,0)
- ;;=The name of the Package Interface. For interfaces returning data the name
- ;;^DD(358.6,.01,21,3,0)
- ;;=should be preceded with the namespace of the package.
- ;;^DD(358.6,.01,23,0)
- ;;=^^1^1^2950412^
- ;;^DD(358.6,.01,23,1,0)
- ;;= 
- ;;^DD(358.6,.01,"DT")
- ;;=2930409
+ ;;^UTILITY(U,$J,358.3,1634,2)
+ ;;=^5003808
+ ;;^UTILITY(U,$J,358.3,1635,0)
+ ;;=G20.^^3^46^52
+ ;;^UTILITY(U,$J,358.3,1635,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1635,1,3,0)
+ ;;=3^Parkinson's disease
+ ;;^UTILITY(U,$J,358.3,1635,1,4,0)
+ ;;=4^G20.
+ ;;^UTILITY(U,$J,358.3,1635,2)
+ ;;=^5003770
+ ;;^UTILITY(U,$J,358.3,1636,0)
+ ;;=G25.0^^3^46^30
+ ;;^UTILITY(U,$J,358.3,1636,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1636,1,3,0)
+ ;;=3^Essential tremor
+ ;;^UTILITY(U,$J,358.3,1636,1,4,0)
+ ;;=4^G25.0
+ ;;^UTILITY(U,$J,358.3,1636,2)
+ ;;=^5003791
+ ;;^UTILITY(U,$J,358.3,1637,0)
+ ;;=G25.1^^3^46^26
+ ;;^UTILITY(U,$J,358.3,1637,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1637,1,3,0)
+ ;;=3^Drug-induced tremor
+ ;;^UTILITY(U,$J,358.3,1637,1,4,0)
+ ;;=4^G25.1
+ ;;^UTILITY(U,$J,358.3,1637,2)
+ ;;=^5003792
+ ;;^UTILITY(U,$J,358.3,1638,0)
+ ;;=G25.2^^3^46^64
+ ;;^UTILITY(U,$J,358.3,1638,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1638,1,3,0)
+ ;;=3^Tremor NEC
+ ;;^UTILITY(U,$J,358.3,1638,1,4,0)
+ ;;=4^G25.2
+ ;;^UTILITY(U,$J,358.3,1638,2)
+ ;;=^5003793
+ ;;^UTILITY(U,$J,358.3,1639,0)
+ ;;=G25.81^^3^46^57
+ ;;^UTILITY(U,$J,358.3,1639,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1639,1,3,0)
+ ;;=3^Restless legs syndrome
+ ;;^UTILITY(U,$J,358.3,1639,1,4,0)
+ ;;=4^G25.81
+ ;;^UTILITY(U,$J,358.3,1639,2)
+ ;;=^5003801
+ ;;^UTILITY(U,$J,358.3,1640,0)
+ ;;=G90.59^^3^46^19
+ ;;^UTILITY(U,$J,358.3,1640,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1640,1,3,0)
+ ;;=3^Complex regional pain syndrome I of other specified site
+ ;;^UTILITY(U,$J,358.3,1640,1,4,0)
+ ;;=4^G90.59
+ ;;^UTILITY(U,$J,358.3,1640,2)
+ ;;=^5004171
+ ;;^UTILITY(U,$J,358.3,1641,0)
+ ;;=G35.^^3^46^43
+ ;;^UTILITY(U,$J,358.3,1641,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1641,1,3,0)
+ ;;=3^Multiple sclerosis
+ ;;^UTILITY(U,$J,358.3,1641,1,4,0)
+ ;;=4^G35.
+ ;;^UTILITY(U,$J,358.3,1641,2)
+ ;;=^79761
+ ;;^UTILITY(U,$J,358.3,1642,0)
+ ;;=G82.20^^3^46^50
+ ;;^UTILITY(U,$J,358.3,1642,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1642,1,3,0)
+ ;;=3^Paraplegia, unspecified
+ ;;^UTILITY(U,$J,358.3,1642,1,4,0)
+ ;;=4^G82.20
+ ;;^UTILITY(U,$J,358.3,1642,2)
+ ;;=^5004125
+ ;;^UTILITY(U,$J,358.3,1643,0)
+ ;;=G40.909^^3^46^29
+ ;;^UTILITY(U,$J,358.3,1643,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1643,1,3,0)
+ ;;=3^Epilepsy, unsp, not intractable, without status epilepticus
+ ;;^UTILITY(U,$J,358.3,1643,1,4,0)
+ ;;=4^G40.909
+ ;;^UTILITY(U,$J,358.3,1643,2)
+ ;;=^5003865
+ ;;^UTILITY(U,$J,358.3,1644,0)
+ ;;=G40.901^^3^46^28
+ ;;^UTILITY(U,$J,358.3,1644,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1644,1,3,0)
+ ;;=3^Epilepsy, unsp, not intractable, with status epilepticus
+ ;;^UTILITY(U,$J,358.3,1644,1,4,0)
+ ;;=4^G40.901
+ ;;^UTILITY(U,$J,358.3,1644,2)
+ ;;=^5003864
+ ;;^UTILITY(U,$J,358.3,1645,0)
+ ;;=G43.809^^3^46^48
+ ;;^UTILITY(U,$J,358.3,1645,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1645,1,3,0)
+ ;;=3^Other migraine, not intractable, without status migrainosus
+ ;;^UTILITY(U,$J,358.3,1645,1,4,0)
+ ;;=4^G43.809
+ ;;^UTILITY(U,$J,358.3,1645,2)
+ ;;=^5003901
+ ;;^UTILITY(U,$J,358.3,1646,0)
+ ;;=G43.A0^^3^46^23
+ ;;^UTILITY(U,$J,358.3,1646,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1646,1,3,0)
+ ;;=3^Cyclical vomiting, not intractable
+ ;;^UTILITY(U,$J,358.3,1646,1,4,0)
+ ;;=4^G43.A0
+ ;;^UTILITY(U,$J,358.3,1646,2)
+ ;;=^5003912
+ ;;^UTILITY(U,$J,358.3,1647,0)
+ ;;=G43.B0^^3^46^46
+ ;;^UTILITY(U,$J,358.3,1647,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1647,1,3,0)
+ ;;=3^Ophthalmoplegic migraine, not intractable
+ ;;^UTILITY(U,$J,358.3,1647,1,4,0)
+ ;;=4^G43.B0
+ ;;^UTILITY(U,$J,358.3,1647,2)
+ ;;=^5003914
+ ;;^UTILITY(U,$J,358.3,1648,0)
+ ;;=G43.C0^^3^46^54

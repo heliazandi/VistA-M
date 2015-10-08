@@ -1,130 +1,130 @@
-IBDEI1CG ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI1CG ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,24084,1,0)
+ ;;^UTILITY(U,$J,358.3,23805,1,2,0)
+ ;;=2^293.82
+ ;;^UTILITY(U,$J,358.3,23805,1,5,0)
+ ;;=5^Psychotic D/O,Transient,Hallucination
+ ;;^UTILITY(U,$J,358.3,23805,2)
+ ;;=^331837
+ ;;^UTILITY(U,$J,358.3,23806,0)
+ ;;=293.83^^127^1435^3
+ ;;^UTILITY(U,$J,358.3,23806,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24084,1,4,0)
- ;;=4^LL Quad Abdominal
- ;;^UTILITY(U,$J,358.3,24084,1,5,0)
- ;;=5^789.04
- ;;^UTILITY(U,$J,358.3,24084,2)
- ;;=LL Quad Abdominal^303321
- ;;^UTILITY(U,$J,358.3,24085,0)
- ;;=789.02^^155^1535^6
- ;;^UTILITY(U,$J,358.3,24085,1,0)
+ ;;^UTILITY(U,$J,358.3,23806,1,2,0)
+ ;;=2^293.83
+ ;;^UTILITY(U,$J,358.3,23806,1,5,0)
+ ;;=5^Mood D/O,Transient,Depressive
+ ;;^UTILITY(U,$J,358.3,23806,2)
+ ;;=^331838
+ ;;^UTILITY(U,$J,358.3,23807,0)
+ ;;=295.12^^127^1436^2
+ ;;^UTILITY(U,$J,358.3,23807,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24085,1,4,0)
- ;;=4^LU Quadrant Abdominal Pain
- ;;^UTILITY(U,$J,358.3,24085,1,5,0)
- ;;=5^789.02
- ;;^UTILITY(U,$J,358.3,24085,2)
- ;;=LU Quadrant Abdominal Pain^303319
- ;;^UTILITY(U,$J,358.3,24086,0)
- ;;=789.09^^155^1535^1
- ;;^UTILITY(U,$J,358.3,24086,1,0)
+ ;;^UTILITY(U,$J,358.3,23807,1,2,0)
+ ;;=2^295.12
+ ;;^UTILITY(U,$J,358.3,23807,1,5,0)
+ ;;=5^Disorganized Schizophrenia, Chronic
+ ;;^UTILITY(U,$J,358.3,23807,2)
+ ;;=^268051
+ ;;^UTILITY(U,$J,358.3,23808,0)
+ ;;=295.14^^127^1436^3
+ ;;^UTILITY(U,$J,358.3,23808,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24086,1,4,0)
- ;;=4^Abdominal Pain, Mult Sites
- ;;^UTILITY(U,$J,358.3,24086,1,5,0)
- ;;=5^789.09
- ;;^UTILITY(U,$J,358.3,24086,2)
- ;;=Abdominal Pain, Mult Sites^303325
- ;;^UTILITY(U,$J,358.3,24087,0)
- ;;=789.05^^155^1535^7
- ;;^UTILITY(U,$J,358.3,24087,1,0)
+ ;;^UTILITY(U,$J,358.3,23808,1,2,0)
+ ;;=2^295.14
+ ;;^UTILITY(U,$J,358.3,23808,1,5,0)
+ ;;=5^Disorganized Schizophrenia,Chr w/Exacerbation
+ ;;^UTILITY(U,$J,358.3,23808,2)
+ ;;=^268053
+ ;;^UTILITY(U,$J,358.3,23809,0)
+ ;;=295.52^^127^1436^6
+ ;;^UTILITY(U,$J,358.3,23809,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24087,1,4,0)
- ;;=4^Periumbilical Pain
- ;;^UTILITY(U,$J,358.3,24087,1,5,0)
- ;;=5^789.05
- ;;^UTILITY(U,$J,358.3,24087,2)
- ;;=Periumbilical Pain^303322
- ;;^UTILITY(U,$J,358.3,24088,0)
- ;;=789.03^^155^1535^8
- ;;^UTILITY(U,$J,358.3,24088,1,0)
+ ;;^UTILITY(U,$J,358.3,23809,1,2,0)
+ ;;=2^295.52
+ ;;^UTILITY(U,$J,358.3,23809,1,5,0)
+ ;;=5^Latent Schizophrenia, Chronic
+ ;;^UTILITY(U,$J,358.3,23809,2)
+ ;;=Latent Schizophrenia, Chronic^268073
+ ;;^UTILITY(U,$J,358.3,23810,0)
+ ;;=295.54^^127^1436^5
+ ;;^UTILITY(U,$J,358.3,23810,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24088,1,4,0)
- ;;=4^RL Quadrant Abdominal Pain
- ;;^UTILITY(U,$J,358.3,24088,1,5,0)
- ;;=5^789.03
- ;;^UTILITY(U,$J,358.3,24088,2)
- ;;=RL Quadrant Abdominal Pain^303320
- ;;^UTILITY(U,$J,358.3,24089,0)
- ;;=789.01^^155^1535^9
- ;;^UTILITY(U,$J,358.3,24089,1,0)
+ ;;^UTILITY(U,$J,358.3,23810,1,2,0)
+ ;;=2^295.54
+ ;;^UTILITY(U,$J,358.3,23810,1,5,0)
+ ;;=5^Latent Schizophrenia, Chr w/Exacerbation
+ ;;^UTILITY(U,$J,358.3,23810,2)
+ ;;=^268075
+ ;;^UTILITY(U,$J,358.3,23811,0)
+ ;;=295.32^^127^1436^8
+ ;;^UTILITY(U,$J,358.3,23811,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24089,1,4,0)
- ;;=4^RU Quadrant Abdominal Pain
- ;;^UTILITY(U,$J,358.3,24089,1,5,0)
- ;;=5^789.01
- ;;^UTILITY(U,$J,358.3,24089,2)
- ;;=RU Quadrant Abdominal Pain^303318
- ;;^UTILITY(U,$J,358.3,24090,0)
- ;;=789.00^^155^1535^2
- ;;^UTILITY(U,$J,358.3,24090,1,0)
+ ;;^UTILITY(U,$J,358.3,23811,1,2,0)
+ ;;=2^295.32
+ ;;^UTILITY(U,$J,358.3,23811,1,5,0)
+ ;;=5^Paranoid Schizophrenia, Chronic
+ ;;^UTILITY(U,$J,358.3,23811,2)
+ ;;=Paranoid Schizophrenia, Chronic^268061
+ ;;^UTILITY(U,$J,358.3,23812,0)
+ ;;=295.34^^127^1436^9
+ ;;^UTILITY(U,$J,358.3,23812,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24090,1,4,0)
- ;;=4^Abdominal Pain, Unspec
- ;;^UTILITY(U,$J,358.3,24090,1,5,0)
- ;;=5^789.00
- ;;^UTILITY(U,$J,358.3,24090,2)
- ;;=Abdominal Pain, Unspec^303317
- ;;^UTILITY(U,$J,358.3,24091,0)
- ;;=V67.09^^155^1536^4
- ;;^UTILITY(U,$J,358.3,24091,1,0)
+ ;;^UTILITY(U,$J,358.3,23812,1,2,0)
+ ;;=2^295.34
+ ;;^UTILITY(U,$J,358.3,23812,1,5,0)
+ ;;=5^Paranoid, Schizophrenia Chr w/Exacerbation
+ ;;^UTILITY(U,$J,358.3,23812,2)
+ ;;=^268063
+ ;;^UTILITY(U,$J,358.3,23813,0)
+ ;;=295.62^^127^1436^23
+ ;;^UTILITY(U,$J,358.3,23813,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24091,1,4,0)
- ;;=4^F/U Exam, Completed Treatment
- ;;^UTILITY(U,$J,358.3,24091,1,5,0)
- ;;=5^V67.09
- ;;^UTILITY(U,$J,358.3,24091,2)
- ;;=F/U exam, completed treatment^322080
- ;;^UTILITY(U,$J,358.3,24092,0)
- ;;=V58.73^^155^1536^1
- ;;^UTILITY(U,$J,358.3,24092,1,0)
+ ;;^UTILITY(U,$J,358.3,23813,1,2,0)
+ ;;=2^295.62
+ ;;^UTILITY(U,$J,358.3,23813,1,5,0)
+ ;;=5^Undifferentiated Schizophrenia, Chr
+ ;;^UTILITY(U,$J,358.3,23813,2)
+ ;;=^268078
+ ;;^UTILITY(U,$J,358.3,23814,0)
+ ;;=295.72^^127^1436^11
+ ;;^UTILITY(U,$J,358.3,23814,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24092,1,4,0)
- ;;=4^Aftercare After Vasc Surg
- ;;^UTILITY(U,$J,358.3,24092,1,5,0)
- ;;=5^V58.73
- ;;^UTILITY(U,$J,358.3,24092,2)
- ;;=Aftercare after Vasc Surg^295530
- ;;^UTILITY(U,$J,358.3,24093,0)
- ;;=V58.31^^155^1536^2
- ;;^UTILITY(U,$J,358.3,24093,1,0)
+ ;;^UTILITY(U,$J,358.3,23814,1,2,0)
+ ;;=2^295.72
+ ;;^UTILITY(U,$J,358.3,23814,1,5,0)
+ ;;=5^Schizoaffective Disorder, Chr
+ ;;^UTILITY(U,$J,358.3,23814,2)
+ ;;=^268083
+ ;;^UTILITY(U,$J,358.3,23815,0)
+ ;;=295.74^^127^1436^12
+ ;;^UTILITY(U,$J,358.3,23815,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24093,1,4,0)
- ;;=4^Attn Rem Surg Dressing
- ;;^UTILITY(U,$J,358.3,24093,1,5,0)
- ;;=5^V58.31
- ;;^UTILITY(U,$J,358.3,24093,2)
- ;;=^334216
- ;;^UTILITY(U,$J,358.3,24094,0)
- ;;=V58.32^^155^1536^3
- ;;^UTILITY(U,$J,358.3,24094,1,0)
+ ;;^UTILITY(U,$J,358.3,23815,1,2,0)
+ ;;=2^295.74
+ ;;^UTILITY(U,$J,358.3,23815,1,5,0)
+ ;;=5^Schizoaffective Disorder, w/Exacerb.
+ ;;^UTILITY(U,$J,358.3,23815,2)
+ ;;=^268085
+ ;;^UTILITY(U,$J,358.3,23816,0)
+ ;;=295.42^^127^1436^17
+ ;;^UTILITY(U,$J,358.3,23816,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24094,1,4,0)
- ;;=4^Attn Removal Of Sutures
- ;;^UTILITY(U,$J,358.3,24094,1,5,0)
- ;;=5^V58.32
- ;;^UTILITY(U,$J,358.3,24094,2)
- ;;=^334217
- ;;^UTILITY(U,$J,358.3,24095,0)
- ;;=250.61^^155^1537^72
- ;;^UTILITY(U,$J,358.3,24095,1,0)
+ ;;^UTILITY(U,$J,358.3,23816,1,2,0)
+ ;;=2^295.42
+ ;;^UTILITY(U,$J,358.3,23816,1,5,0)
+ ;;=5^Schizophreniform Disorder, Chr
+ ;;^UTILITY(U,$J,358.3,23816,2)
+ ;;=^268068
+ ;;^UTILITY(U,$J,358.3,23817,0)
+ ;;=295.44^^127^1436^18
+ ;;^UTILITY(U,$J,358.3,23817,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24095,1,4,0)
- ;;=4^DMI Neuro Nt St Uncntrld
- ;;^UTILITY(U,$J,358.3,24095,1,5,0)
- ;;=5^250.61
- ;;^UTILITY(U,$J,358.3,24095,2)
- ;;=^331804
- ;;^UTILITY(U,$J,358.3,24096,0)
- ;;=250.62^^155^1537^75
- ;;^UTILITY(U,$J,358.3,24096,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,24096,1,4,0)
- ;;=4^DMII Neuro Uncntrld
- ;;^UTILITY(U,$J,358.3,24096,1,5,0)
- ;;=5^250.62
+ ;;^UTILITY(U,$J,358.3,23817,1,2,0)
+ ;;=2^295.44
+ ;;^UTILITY(U,$J,358.3,23817,1,5,0)
+ ;;=5^Schizophreniform Disorderw/Exacerb.
+ ;;^UTILITY(U,$J,358.3,23817,2)
+ ;;=^268070

@@ -1,138 +1,134 @@
-IBDEI0MO ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0MO ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,11130,1,5,0)
- ;;=5^Obesity,Unsp
- ;;^UTILITY(U,$J,358.3,11130,2)
- ;;=^84823
- ;;^UTILITY(U,$J,358.3,11131,0)
- ;;=278.01^^71^725^22
- ;;^UTILITY(U,$J,358.3,11131,1,0)
+ ;;^UTILITY(U,$J,358.3,10790,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11131,1,2,0)
- ;;=2^278.01
- ;;^UTILITY(U,$J,358.3,11131,1,5,0)
- ;;=5^Morbid Obesity
- ;;^UTILITY(U,$J,358.3,11131,2)
- ;;=^84844
- ;;^UTILITY(U,$J,358.3,11132,0)
- ;;=578.0^^71^725^20
- ;;^UTILITY(U,$J,358.3,11132,1,0)
+ ;;^UTILITY(U,$J,358.3,10790,1,2,0)
+ ;;=2^294.11
+ ;;^UTILITY(U,$J,358.3,10790,1,5,0)
+ ;;=5^Dementia d/t MS w/ Behav Disturb
+ ;;^UTILITY(U,$J,358.3,10790,2)
+ ;;=^321982^340.
+ ;;^UTILITY(U,$J,358.3,10791,0)
+ ;;=294.10^^47^602^10
+ ;;^UTILITY(U,$J,358.3,10791,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11132,1,2,0)
- ;;=2^578.0
- ;;^UTILITY(U,$J,358.3,11132,1,5,0)
- ;;=5^Hematemesis
- ;;^UTILITY(U,$J,358.3,11132,2)
- ;;=^55289
- ;;^UTILITY(U,$J,358.3,11133,0)
- ;;=578.1^^71^725^9
- ;;^UTILITY(U,$J,358.3,11133,1,0)
+ ;;^UTILITY(U,$J,358.3,10791,1,2,0)
+ ;;=2^294.10
+ ;;^UTILITY(U,$J,358.3,10791,1,5,0)
+ ;;=5^Dementia d/t MS w/o Behav Disturb
+ ;;^UTILITY(U,$J,358.3,10791,2)
+ ;;=^321980^340.
+ ;;^UTILITY(U,$J,358.3,10792,0)
+ ;;=293.0^^47^603^1
+ ;;^UTILITY(U,$J,358.3,10792,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11133,1,2,0)
- ;;=2^578.1
- ;;^UTILITY(U,$J,358.3,11133,1,5,0)
- ;;=5^Blood in Stool
- ;;^UTILITY(U,$J,358.3,11133,2)
- ;;=^276839
- ;;^UTILITY(U,$J,358.3,11134,0)
- ;;=578.9^^71^725^18
- ;;^UTILITY(U,$J,358.3,11134,1,0)
+ ;;^UTILITY(U,$J,358.3,10792,1,2,0)
+ ;;=2^293.0
+ ;;^UTILITY(U,$J,358.3,10792,1,5,0)
+ ;;=5^Acute Delirium d/t Oth Spec Condition
+ ;;^UTILITY(U,$J,358.3,10792,2)
+ ;;=Acute Delirium^268035
+ ;;^UTILITY(U,$J,358.3,10793,0)
+ ;;=291.0^^47^603^2
+ ;;^UTILITY(U,$J,358.3,10793,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11134,1,2,0)
- ;;=2^578.9
- ;;^UTILITY(U,$J,358.3,11134,1,5,0)
- ;;=5^GI Bleed
- ;;^UTILITY(U,$J,358.3,11134,2)
- ;;=^49525
- ;;^UTILITY(U,$J,358.3,11135,0)
- ;;=571.3^^71^726^2
- ;;^UTILITY(U,$J,358.3,11135,1,0)
+ ;;^UTILITY(U,$J,358.3,10793,1,2,0)
+ ;;=2^291.0
+ ;;^UTILITY(U,$J,358.3,10793,1,5,0)
+ ;;=5^Alcohol Withdrawal Delirium
+ ;;^UTILITY(U,$J,358.3,10793,2)
+ ;;=Withdrawal Delirium^4589
+ ;;^UTILITY(U,$J,358.3,10794,0)
+ ;;=292.81^^47^603^3
+ ;;^UTILITY(U,$J,358.3,10794,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11135,1,2,0)
- ;;=2^571.3
- ;;^UTILITY(U,$J,358.3,11135,1,5,0)
- ;;=5^Alcholic Liver Damage
- ;;^UTILITY(U,$J,358.3,11135,2)
- ;;=Alcholic Liver Damage^4638
- ;;^UTILITY(U,$J,358.3,11136,0)
- ;;=571.5^^71^726^7
- ;;^UTILITY(U,$J,358.3,11136,1,0)
+ ;;^UTILITY(U,$J,358.3,10794,1,2,0)
+ ;;=2^292.81
+ ;;^UTILITY(U,$J,358.3,10794,1,5,0)
+ ;;=5^Drug Induced Delirium
+ ;;^UTILITY(U,$J,358.3,10794,2)
+ ;;=Drug Induced Delirium^268022
+ ;;^UTILITY(U,$J,358.3,10795,0)
+ ;;=296.50^^47^604^6
+ ;;^UTILITY(U,$J,358.3,10795,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11136,1,2,0)
- ;;=2^571.5
- ;;^UTILITY(U,$J,358.3,11136,1,5,0)
- ;;=5^Cirrhosis, Unspecified
- ;;^UTILITY(U,$J,358.3,11136,2)
- ;;=Cirrhosis, Unspecified^24731
- ;;^UTILITY(U,$J,358.3,11137,0)
- ;;=571.2^^71^726^3
- ;;^UTILITY(U,$J,358.3,11137,1,0)
+ ;;^UTILITY(U,$J,358.3,10795,1,2,0)
+ ;;=2^296.50
+ ;;^UTILITY(U,$J,358.3,10795,1,5,0)
+ ;;=5^Bipolar Depressed, NOS
+ ;;^UTILITY(U,$J,358.3,10795,2)
+ ;;=^268130
+ ;;^UTILITY(U,$J,358.3,10796,0)
+ ;;=296.51^^47^604^4
+ ;;^UTILITY(U,$J,358.3,10796,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11137,1,2,0)
- ;;=2^571.2
- ;;^UTILITY(U,$J,358.3,11137,1,5,0)
- ;;=5^Alcoholic Cirrhosis Liver
- ;;^UTILITY(U,$J,358.3,11137,2)
- ;;=Cirrhosis, Alcoholic^71505
- ;;^UTILITY(U,$J,358.3,11138,0)
- ;;=572.0^^71^726^8
- ;;^UTILITY(U,$J,358.3,11138,1,0)
+ ;;^UTILITY(U,$J,358.3,10796,1,2,0)
+ ;;=2^296.51
+ ;;^UTILITY(U,$J,358.3,10796,1,5,0)
+ ;;=5^Bipolar Depressed, Mild
+ ;;^UTILITY(U,$J,358.3,10796,2)
+ ;;=^303620
+ ;;^UTILITY(U,$J,358.3,10797,0)
+ ;;=296.52^^47^604^5
+ ;;^UTILITY(U,$J,358.3,10797,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11138,1,2,0)
- ;;=2^572.0
- ;;^UTILITY(U,$J,358.3,11138,1,5,0)
- ;;=5^Hepatic Abscess
- ;;^UTILITY(U,$J,358.3,11138,2)
- ;;=Hepatic Abscess^71453
- ;;^UTILITY(U,$J,358.3,11139,0)
- ;;=070.1^^71^726^9
- ;;^UTILITY(U,$J,358.3,11139,1,0)
+ ;;^UTILITY(U,$J,358.3,10797,1,2,0)
+ ;;=2^296.52
+ ;;^UTILITY(U,$J,358.3,10797,1,5,0)
+ ;;=5^Bipolar Depressed, Moderate
+ ;;^UTILITY(U,$J,358.3,10797,2)
+ ;;=^303621
+ ;;^UTILITY(U,$J,358.3,10798,0)
+ ;;=296.53^^47^604^2
+ ;;^UTILITY(U,$J,358.3,10798,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11139,1,2,0)
- ;;=2^070.1
- ;;^UTILITY(U,$J,358.3,11139,1,5,0)
- ;;=5^Hepatitis A
- ;;^UTILITY(U,$J,358.3,11139,2)
- ;;=Hepatitis A^126486
- ;;^UTILITY(U,$J,358.3,11140,0)
- ;;=070.30^^71^726^10
- ;;^UTILITY(U,$J,358.3,11140,1,0)
+ ;;^UTILITY(U,$J,358.3,10798,1,2,0)
+ ;;=2^296.53
+ ;;^UTILITY(U,$J,358.3,10798,1,5,0)
+ ;;=5^Bipolar Depress Severe w/o Psychosis
+ ;;^UTILITY(U,$J,358.3,10798,2)
+ ;;=^303622
+ ;;^UTILITY(U,$J,358.3,10799,0)
+ ;;=296.54^^47^604^1
+ ;;^UTILITY(U,$J,358.3,10799,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11140,1,2,0)
- ;;=2^070.30
- ;;^UTILITY(U,$J,358.3,11140,1,5,0)
- ;;=5^Hepatitis B w/o Coma
- ;;^UTILITY(U,$J,358.3,11140,2)
- ;;=Hepatitis B w/o coma^266626
- ;;^UTILITY(U,$J,358.3,11141,0)
- ;;=070.51^^71^726^13
- ;;^UTILITY(U,$J,358.3,11141,1,0)
+ ;;^UTILITY(U,$J,358.3,10799,1,2,0)
+ ;;=2^296.54
+ ;;^UTILITY(U,$J,358.3,10799,1,5,0)
+ ;;=5^Bipolar Depress Severe w/Psychosis
+ ;;^UTILITY(U,$J,358.3,10799,2)
+ ;;=Bipolar Depress Severe w/Psychosis^303623
+ ;;^UTILITY(U,$J,358.3,10800,0)
+ ;;=296.55^^47^604^7
+ ;;^UTILITY(U,$J,358.3,10800,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11141,1,2,0)
- ;;=2^070.51
- ;;^UTILITY(U,$J,358.3,11141,1,5,0)
- ;;=5^Hepatitis C,Acute w/o Coma
- ;;^UTILITY(U,$J,358.3,11141,2)
- ;;=Hepatitis C w/o coma^266632
- ;;^UTILITY(U,$J,358.3,11142,0)
- ;;=571.40^^71^726^17
- ;;^UTILITY(U,$J,358.3,11142,1,0)
+ ;;^UTILITY(U,$J,358.3,10800,1,2,0)
+ ;;=2^296.55
+ ;;^UTILITY(U,$J,358.3,10800,1,5,0)
+ ;;=5^Bipolar Depressed, Part or Unspec Remiss
+ ;;^UTILITY(U,$J,358.3,10800,2)
+ ;;=^303624
+ ;;^UTILITY(U,$J,358.3,10801,0)
+ ;;=296.56^^47^604^3
+ ;;^UTILITY(U,$J,358.3,10801,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11142,1,2,0)
- ;;=2^571.40
- ;;^UTILITY(U,$J,358.3,11142,1,5,0)
- ;;=5^Hepatitis,Unspecified
- ;;^UTILITY(U,$J,358.3,11142,2)
- ;;=Hepatitis, Unspecified^24390
- ;;^UTILITY(U,$J,358.3,11143,0)
- ;;=155.0^^71^726^22
- ;;^UTILITY(U,$J,358.3,11143,1,0)
+ ;;^UTILITY(U,$J,358.3,10801,1,2,0)
+ ;;=2^296.56
+ ;;^UTILITY(U,$J,358.3,10801,1,5,0)
+ ;;=5^Bipolar Depressed, Full Remission
+ ;;^UTILITY(U,$J,358.3,10801,2)
+ ;;=^303625
+ ;;^UTILITY(U,$J,358.3,10802,0)
+ ;;=296.40^^47^604^14
+ ;;^UTILITY(U,$J,358.3,10802,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11143,1,2,0)
- ;;=2^155.0
- ;;^UTILITY(U,$J,358.3,11143,1,5,0)
- ;;=5^Mal Neo Liver Primary
- ;;^UTILITY(U,$J,358.3,11143,2)
- ;;=CA of Liver, Primary^73526
+ ;;^UTILITY(U,$J,358.3,10802,1,2,0)
+ ;;=2^296.40
+ ;;^UTILITY(U,$J,358.3,10802,1,5,0)
+ ;;=5^Bipolar Manic, NOS
+ ;;^UTILITY(U,$J,358.3,10802,2)
+ ;;=^303607
+ ;;^UTILITY(U,$J,358.3,10803,0)
+ ;;=296.41^^47^604^12

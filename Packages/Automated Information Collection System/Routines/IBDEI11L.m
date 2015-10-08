@@ -1,112 +1,132 @@
-IBDEI11L ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI11L ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18677,1,2,0)
- ;;=2^Destruction, of flat warts, molluscum contagiosum, or milia; 15 or more lesions
- ;;^UTILITY(U,$J,358.3,18677,1,3,0)
- ;;=3^17111
- ;;^UTILITY(U,$J,358.3,18678,0)
- ;;=17250^^122^1193^6^^^^1
- ;;^UTILITY(U,$J,358.3,18678,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18678,1,2,0)
- ;;=2^Chemical cauterization of granulation tissue
- ;;^UTILITY(U,$J,358.3,18678,1,3,0)
- ;;=3^17250
- ;;^UTILITY(U,$J,358.3,18679,0)
- ;;=11400^^122^1194^1^^^^1
- ;;^UTILITY(U,$J,358.3,18679,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18679,1,2,0)
- ;;=2^Excision Benign Lesion-trunk,  legs; 0.5 cm or less 
- ;;^UTILITY(U,$J,358.3,18679,1,3,0)
- ;;=3^11400
- ;;^UTILITY(U,$J,358.3,18680,0)
- ;;=11401^^122^1194^2^^^^1
- ;;^UTILITY(U,$J,358.3,18680,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18680,1,2,0)
- ;;=2^Excision Benign Lesion-trunk,  legs; 0.6cm to 1.0cm
- ;;^UTILITY(U,$J,358.3,18680,1,3,0)
- ;;=3^11401
- ;;^UTILITY(U,$J,358.3,18681,0)
- ;;=11402^^122^1194^3^^^^1
- ;;^UTILITY(U,$J,358.3,18681,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18681,1,2,0)
- ;;=2^Excision Benign Lesion-trunk,  legs; 1.1cm to 2.0cm
- ;;^UTILITY(U,$J,358.3,18681,1,3,0)
- ;;=3^11402
- ;;^UTILITY(U,$J,358.3,18682,0)
- ;;=11403^^122^1194^4^^^^1
- ;;^UTILITY(U,$J,358.3,18682,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18682,1,2,0)
- ;;=2^Excision Benign Lesion-trunk,  legs; 2.1cm to 3.0cm
- ;;^UTILITY(U,$J,358.3,18682,1,3,0)
- ;;=3^11403
- ;;^UTILITY(U,$J,358.3,18683,0)
- ;;=11404^^122^1194^5^^^^1
- ;;^UTILITY(U,$J,358.3,18683,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18683,1,2,0)
- ;;=2^Excision Benign Lesion-trunk,  legs; 3.1cm to 4.0cm
- ;;^UTILITY(U,$J,358.3,18683,1,3,0)
- ;;=3^11404
- ;;^UTILITY(U,$J,358.3,18684,0)
- ;;=11406^^122^1194^6^^^^1
- ;;^UTILITY(U,$J,358.3,18684,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18684,1,2,0)
- ;;=2^Excision Benign Lesion-trunk,  legs; over 4.0cm
- ;;^UTILITY(U,$J,358.3,18684,1,3,0)
- ;;=3^11406
- ;;^UTILITY(U,$J,358.3,18685,0)
- ;;=11420^^122^1194^7^^^^1
- ;;^UTILITY(U,$J,358.3,18685,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18685,1,2,0)
- ;;=2^Excisiofeet, genitalia; 0.5cm or less
- ;;^UTILITY(U,$J,358.3,18685,1,3,0)
- ;;=3^11420
- ;;^UTILITY(U,$J,358.3,18686,0)
- ;;=11421^^122^1194^8^^^^1
- ;;^UTILITY(U,$J,358.3,18686,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18686,1,2,0)
- ;;=2^Excision Benign Lesion-scalp, neck, hands, feet, genitalia; 0.6cm to 1.0cm
- ;;^UTILITY(U,$J,358.3,18686,1,3,0)
- ;;=3^11421
- ;;^UTILITY(U,$J,358.3,18687,0)
- ;;=11422^^122^1194^9^^^^1
- ;;^UTILITY(U,$J,358.3,18687,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18687,1,2,0)
- ;;=2^Excision Benign Lesion-scalp, neck, hands, feet, genitalia; 1.1cm to 2.0cm
- ;;^UTILITY(U,$J,358.3,18687,1,3,0)
- ;;=3^11422
- ;;^UTILITY(U,$J,358.3,18688,0)
- ;;=11423^^122^1194^10^^^^1
- ;;^UTILITY(U,$J,358.3,18688,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18688,1,2,0)
- ;;=2^Excision Benign Lesion-scalp, neck, hands, feet, genitalia; 2.1cm to 4.0cm
- ;;^UTILITY(U,$J,358.3,18688,1,3,0)
- ;;=3^11423
- ;;^UTILITY(U,$J,358.3,18689,0)
- ;;=11424^^122^1194^11^^^^1
- ;;^UTILITY(U,$J,358.3,18689,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18689,1,2,0)
- ;;=2^Excision Benign Lesion-scalp, neck, hands,feet, genitalia; 3.1cm to 4.0cm 
- ;;^UTILITY(U,$J,358.3,18689,1,3,0)
- ;;=3^11424
- ;;^UTILITY(U,$J,358.3,18690,0)
- ;;=11426^^122^1194^12^^^^1
- ;;^UTILITY(U,$J,358.3,18690,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18690,1,2,0)
- ;;=2^Excision Benign Lesion-scalp, neck, hands, feet, genitalia; over 4.0cm
- ;;^UTILITY(U,$J,358.3,18690,1,3,0)
- ;;=3^11426
+ ;;^UTILITY(U,$J,358.3,18368,1,2,0)
+ ;;=2^99241
+ ;;^UTILITY(U,$J,358.3,18369,0)
+ ;;=99242^^100^1171^2
+ ;;^UTILITY(U,$J,358.3,18369,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18369,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,18369,1,2,0)
+ ;;=2^99242
+ ;;^UTILITY(U,$J,358.3,18370,0)
+ ;;=99243^^100^1171^3
+ ;;^UTILITY(U,$J,358.3,18370,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18370,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,18370,1,2,0)
+ ;;=2^99243
+ ;;^UTILITY(U,$J,358.3,18371,0)
+ ;;=99244^^100^1171^4
+ ;;^UTILITY(U,$J,358.3,18371,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18371,1,1,0)
+ ;;=1^Comprehensive, Moderate
+ ;;^UTILITY(U,$J,358.3,18371,1,2,0)
+ ;;=2^99244
+ ;;^UTILITY(U,$J,358.3,18372,0)
+ ;;=99245^^100^1171^5
+ ;;^UTILITY(U,$J,358.3,18372,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18372,1,1,0)
+ ;;=1^Comprehensive, High
+ ;;^UTILITY(U,$J,358.3,18372,1,2,0)
+ ;;=2^99245
+ ;;^UTILITY(U,$J,358.3,18373,0)
+ ;;=99024^^100^1172^1
+ ;;^UTILITY(U,$J,358.3,18373,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,18373,1,1,0)
+ ;;=1^Post Op F/U Visit (Global)
+ ;;^UTILITY(U,$J,358.3,18373,1,2,0)
+ ;;=2^99024
+ ;;^UTILITY(U,$J,358.3,18374,0)
+ ;;=38240^^101^1173^1^^^^1
+ ;;^UTILITY(U,$J,358.3,18374,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18374,1,2,0)
+ ;;=2^BN MARROW/STM TRANSPLT ALLO
+ ;;^UTILITY(U,$J,358.3,18374,1,4,0)
+ ;;=4^38240
+ ;;^UTILITY(U,$J,358.3,18375,0)
+ ;;=38241^^101^1173^2^^^^1
+ ;;^UTILITY(U,$J,358.3,18375,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18375,1,2,0)
+ ;;=2^BN MARROW/STM TRANSPLT AUTO
+ ;;^UTILITY(U,$J,358.3,18375,1,4,0)
+ ;;=4^38241
+ ;;^UTILITY(U,$J,358.3,18376,0)
+ ;;=38242^^101^1173^6^^^^1
+ ;;^UTILITY(U,$J,358.3,18376,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18376,1,2,0)
+ ;;=2^LYMPHOCYTE INFUSE TRANSPLANT
+ ;;^UTILITY(U,$J,358.3,18376,1,4,0)
+ ;;=4^38242
+ ;;^UTILITY(U,$J,358.3,18377,0)
+ ;;=38230^^101^1173^3^^^^1
+ ;;^UTILITY(U,$J,358.3,18377,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18377,1,2,0)
+ ;;=2^BONE MARROW HARVEST ALLOGEN
+ ;;^UTILITY(U,$J,358.3,18377,1,4,0)
+ ;;=4^38230
+ ;;^UTILITY(U,$J,358.3,18378,0)
+ ;;=38205^^101^1173^4^^^^1
+ ;;^UTILITY(U,$J,358.3,18378,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18378,1,2,0)
+ ;;=2^HARVEST ALLOGENEIC STEM CELL
+ ;;^UTILITY(U,$J,358.3,18378,1,4,0)
+ ;;=4^38205
+ ;;^UTILITY(U,$J,358.3,18379,0)
+ ;;=38206^^101^1173^5^^^^1
+ ;;^UTILITY(U,$J,358.3,18379,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18379,1,2,0)
+ ;;=2^HARVEST AUTO STEM CELLS
+ ;;^UTILITY(U,$J,358.3,18379,1,4,0)
+ ;;=4^38206
+ ;;^UTILITY(U,$J,358.3,18380,0)
+ ;;=33945^^101^1174^2^^^^1
+ ;;^UTILITY(U,$J,358.3,18380,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18380,1,2,0)
+ ;;=2^TRANSPLANTATION OF HEART
+ ;;^UTILITY(U,$J,358.3,18380,1,4,0)
+ ;;=4^33945
+ ;;^UTILITY(U,$J,358.3,18381,0)
+ ;;=33944^^101^1174^1^^^^1
+ ;;^UTILITY(U,$J,358.3,18381,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18381,1,2,0)
+ ;;=2^PREPARE DONOR HEART
+ ;;^UTILITY(U,$J,358.3,18381,1,4,0)
+ ;;=4^33944
+ ;;^UTILITY(U,$J,358.3,18382,0)
+ ;;=33935^^101^1175^2^^^^1
+ ;;^UTILITY(U,$J,358.3,18382,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18382,1,2,0)
+ ;;=2^TRANSPLANTATION HEART/LUNG
+ ;;^UTILITY(U,$J,358.3,18382,1,4,0)
+ ;;=4^33935
+ ;;^UTILITY(U,$J,358.3,18383,0)
+ ;;=33933^^101^1175^1^^^^1
+ ;;^UTILITY(U,$J,358.3,18383,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18383,1,2,0)
+ ;;=2^PREPARE DONOR HEART/LUNG
+ ;;^UTILITY(U,$J,358.3,18383,1,4,0)
+ ;;=4^33933
+ ;;^UTILITY(U,$J,358.3,18384,0)
+ ;;=47135^^101^1176^6^^^^1
+ ;;^UTILITY(U,$J,358.3,18384,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18384,1,2,0)
+ ;;=2^TRANSPLANT ORTHOTOPIC

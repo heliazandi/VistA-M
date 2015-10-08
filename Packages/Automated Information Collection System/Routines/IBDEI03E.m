@@ -1,380 +1,132 @@
-IBDEI03E ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
+IBDEI03E ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,4096,2)
- ;;=^5062636
- ;;^UTILITY(U,$J,358.3,4097,0)
- ;;=Z02.1^^19^187^25
- ;;^UTILITY(U,$J,358.3,4097,1,0)
+ ;;^UTILITY(U,$J,358.3,1052,0)
+ ;;=K20.9^^3^37^45
+ ;;^UTILITY(U,$J,358.3,1052,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4097,1,3,0)
- ;;=3^Exam for Pre-Employment
- ;;^UTILITY(U,$J,358.3,4097,1,4,0)
- ;;=4^Z02.1
- ;;^UTILITY(U,$J,358.3,4097,2)
- ;;=^5062634
- ;;^UTILITY(U,$J,358.3,4098,0)
- ;;=Z02.89^^19^187^24
- ;;^UTILITY(U,$J,358.3,4098,1,0)
+ ;;^UTILITY(U,$J,358.3,1052,1,3,0)
+ ;;=3^Esophagitis, unspecified
+ ;;^UTILITY(U,$J,358.3,1052,1,4,0)
+ ;;=4^K20.9
+ ;;^UTILITY(U,$J,358.3,1052,2)
+ ;;=^295809
+ ;;^UTILITY(U,$J,358.3,1053,0)
+ ;;=K21.0^^3^37^54
+ ;;^UTILITY(U,$J,358.3,1053,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4098,1,3,0)
- ;;=3^Exam for Administrative Purpose
- ;;^UTILITY(U,$J,358.3,4098,1,4,0)
- ;;=4^Z02.89
- ;;^UTILITY(U,$J,358.3,4098,2)
- ;;=^5062645
- ;;^UTILITY(U,$J,358.3,4099,0)
- ;;=N20.0^^20^188^1
- ;;^UTILITY(U,$J,358.3,4099,1,0)
+ ;;^UTILITY(U,$J,358.3,1053,1,3,0)
+ ;;=3^Gastro-esophageal reflux disease with esophagitis
+ ;;^UTILITY(U,$J,358.3,1053,1,4,0)
+ ;;=4^K21.0
+ ;;^UTILITY(U,$J,358.3,1053,2)
+ ;;=^5008504
+ ;;^UTILITY(U,$J,358.3,1054,0)
+ ;;=K22.10^^3^37^97
+ ;;^UTILITY(U,$J,358.3,1054,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4099,1,3,0)
- ;;=3^Calculus of Kidney
- ;;^UTILITY(U,$J,358.3,4099,1,4,0)
- ;;=4^N20.0
- ;;^UTILITY(U,$J,358.3,4099,2)
- ;;=^67056
- ;;^UTILITY(U,$J,358.3,4100,0)
- ;;=N28.9^^20^188^9
- ;;^UTILITY(U,$J,358.3,4100,1,0)
+ ;;^UTILITY(U,$J,358.3,1054,1,3,0)
+ ;;=3^Ulcer of esophagus without bleeding
+ ;;^UTILITY(U,$J,358.3,1054,1,4,0)
+ ;;=4^K22.10
+ ;;^UTILITY(U,$J,358.3,1054,2)
+ ;;=^329929
+ ;;^UTILITY(U,$J,358.3,1055,0)
+ ;;=K22.11^^3^37^96
+ ;;^UTILITY(U,$J,358.3,1055,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4100,1,3,0)
- ;;=3^Kidney & Ureter Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,4100,1,4,0)
- ;;=4^N28.9
- ;;^UTILITY(U,$J,358.3,4100,2)
- ;;=^5015630
- ;;^UTILITY(U,$J,358.3,4101,0)
- ;;=N39.0^^20^188^10
- ;;^UTILITY(U,$J,358.3,4101,1,0)
+ ;;^UTILITY(U,$J,358.3,1055,1,3,0)
+ ;;=3^Ulcer of esophagus with bleeding
+ ;;^UTILITY(U,$J,358.3,1055,1,4,0)
+ ;;=4^K22.11
+ ;;^UTILITY(U,$J,358.3,1055,2)
+ ;;=^329930
+ ;;^UTILITY(U,$J,358.3,1056,0)
+ ;;=K21.9^^3^37^55
+ ;;^UTILITY(U,$J,358.3,1056,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4101,1,3,0)
- ;;=3^UTI,Site Unspec
- ;;^UTILITY(U,$J,358.3,4101,1,4,0)
- ;;=4^N39.0
- ;;^UTILITY(U,$J,358.3,4101,2)
- ;;=^124436
- ;;^UTILITY(U,$J,358.3,4102,0)
- ;;=R31.9^^20^188^5
- ;;^UTILITY(U,$J,358.3,4102,1,0)
+ ;;^UTILITY(U,$J,358.3,1056,1,3,0)
+ ;;=3^Gastro-esophageal reflux disease without esophagitis
+ ;;^UTILITY(U,$J,358.3,1056,1,4,0)
+ ;;=4^K21.9
+ ;;^UTILITY(U,$J,358.3,1056,2)
+ ;;=^5008505
+ ;;^UTILITY(U,$J,358.3,1057,0)
+ ;;=K22.70^^3^37^14
+ ;;^UTILITY(U,$J,358.3,1057,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4102,1,3,0)
- ;;=3^Hematuria,Unspec
- ;;^UTILITY(U,$J,358.3,4102,1,4,0)
- ;;=4^R31.9
- ;;^UTILITY(U,$J,358.3,4102,2)
- ;;=^5019328
- ;;^UTILITY(U,$J,358.3,4103,0)
- ;;=R31.0^^20^188^3
- ;;^UTILITY(U,$J,358.3,4103,1,0)
+ ;;^UTILITY(U,$J,358.3,1057,1,3,0)
+ ;;=3^Barrett's esophagus without dysplasia
+ ;;^UTILITY(U,$J,358.3,1057,1,4,0)
+ ;;=4^K22.70
+ ;;^UTILITY(U,$J,358.3,1057,2)
+ ;;=^5008511
+ ;;^UTILITY(U,$J,358.3,1058,0)
+ ;;=K22.710^^3^37^13
+ ;;^UTILITY(U,$J,358.3,1058,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4103,1,3,0)
- ;;=3^Hematuria,Gross
- ;;^UTILITY(U,$J,358.3,4103,1,4,0)
- ;;=4^R31.0
- ;;^UTILITY(U,$J,358.3,4103,2)
- ;;=^5019325
- ;;^UTILITY(U,$J,358.3,4104,0)
- ;;=R31.1^^20^188^2
- ;;^UTILITY(U,$J,358.3,4104,1,0)
+ ;;^UTILITY(U,$J,358.3,1058,1,3,0)
+ ;;=3^Barrett's esophagus with low grade dysplasia
+ ;;^UTILITY(U,$J,358.3,1058,1,4,0)
+ ;;=4^K22.710
+ ;;^UTILITY(U,$J,358.3,1058,2)
+ ;;=^5008512
+ ;;^UTILITY(U,$J,358.3,1059,0)
+ ;;=K22.711^^3^37^12
+ ;;^UTILITY(U,$J,358.3,1059,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4104,1,3,0)
- ;;=3^Hematuria,Benign Essential Microscopic
- ;;^UTILITY(U,$J,358.3,4104,1,4,0)
- ;;=4^R31.1
- ;;^UTILITY(U,$J,358.3,4104,2)
- ;;=^5019326
- ;;^UTILITY(U,$J,358.3,4105,0)
- ;;=R31.2^^20^188^4
- ;;^UTILITY(U,$J,358.3,4105,1,0)
+ ;;^UTILITY(U,$J,358.3,1059,1,3,0)
+ ;;=3^Barrett's esophagus with high grade dysplasia
+ ;;^UTILITY(U,$J,358.3,1059,1,4,0)
+ ;;=4^K22.711
+ ;;^UTILITY(U,$J,358.3,1059,2)
+ ;;=^5008513
+ ;;^UTILITY(U,$J,358.3,1060,0)
+ ;;=K22.719^^3^37^11
+ ;;^UTILITY(U,$J,358.3,1060,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4105,1,3,0)
- ;;=3^Hematuria,Microscopic,Other
- ;;^UTILITY(U,$J,358.3,4105,1,4,0)
- ;;=4^R31.2
- ;;^UTILITY(U,$J,358.3,4105,2)
- ;;=^5019327
- ;;^UTILITY(U,$J,358.3,4106,0)
- ;;=N39.3^^20^188^7
- ;;^UTILITY(U,$J,358.3,4106,1,0)
+ ;;^UTILITY(U,$J,358.3,1060,1,3,0)
+ ;;=3^Barrett's esophagus with dysplasia, unspecified
+ ;;^UTILITY(U,$J,358.3,1060,1,4,0)
+ ;;=4^K22.719
+ ;;^UTILITY(U,$J,358.3,1060,2)
+ ;;=^5008514
+ ;;^UTILITY(U,$J,358.3,1061,0)
+ ;;=K25.7^^3^37^22
+ ;;^UTILITY(U,$J,358.3,1061,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4106,1,3,0)
- ;;=3^Incontinence,Stress
- ;;^UTILITY(U,$J,358.3,4106,1,4,0)
- ;;=4^N39.3
- ;;^UTILITY(U,$J,358.3,4106,2)
- ;;=^5015679
- ;;^UTILITY(U,$J,358.3,4107,0)
- ;;=N39.41^^20^188^8
- ;;^UTILITY(U,$J,358.3,4107,1,0)
+ ;;^UTILITY(U,$J,358.3,1061,1,3,0)
+ ;;=3^Chronic gastric ulcer without hemorrhage or perforation
+ ;;^UTILITY(U,$J,358.3,1061,1,4,0)
+ ;;=4^K25.7
+ ;;^UTILITY(U,$J,358.3,1061,2)
+ ;;=^5008521
+ ;;^UTILITY(U,$J,358.3,1062,0)
+ ;;=K25.9^^3^37^52
+ ;;^UTILITY(U,$J,358.3,1062,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4107,1,3,0)
- ;;=3^Incontinence,Urge
- ;;^UTILITY(U,$J,358.3,4107,1,4,0)
- ;;=4^N39.41
- ;;^UTILITY(U,$J,358.3,4107,2)
- ;;=^5015680
- ;;^UTILITY(U,$J,358.3,4108,0)
- ;;=N39.46^^20^188^6
- ;;^UTILITY(U,$J,358.3,4108,1,0)
+ ;;^UTILITY(U,$J,358.3,1062,1,3,0)
+ ;;=3^Gastric ulcer, unsp as acute or chronic, w/o hemor or perf
+ ;;^UTILITY(U,$J,358.3,1062,1,4,0)
+ ;;=4^K25.9
+ ;;^UTILITY(U,$J,358.3,1062,2)
+ ;;=^5008522
+ ;;^UTILITY(U,$J,358.3,1063,0)
+ ;;=K26.9^^3^37^36
+ ;;^UTILITY(U,$J,358.3,1063,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4108,1,3,0)
- ;;=3^Incontinence,Mixed
- ;;^UTILITY(U,$J,358.3,4108,1,4,0)
- ;;=4^N39.46
- ;;^UTILITY(U,$J,358.3,4108,2)
- ;;=^5015685
- ;;^UTILITY(U,$J,358.3,4109,0)
- ;;=A63.0^^20^189^7
- ;;^UTILITY(U,$J,358.3,4109,1,0)
+ ;;^UTILITY(U,$J,358.3,1063,1,3,0)
+ ;;=3^Duodenal ulcer, unsp as acute or chronic, w/o hemor or perf
+ ;;^UTILITY(U,$J,358.3,1063,1,4,0)
+ ;;=4^K26.9
+ ;;^UTILITY(U,$J,358.3,1063,2)
+ ;;=^5008527
+ ;;^UTILITY(U,$J,358.3,1064,0)
+ ;;=K27.9^^3^37^78
+ ;;^UTILITY(U,$J,358.3,1064,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4109,1,3,0)
- ;;=3^Anogenital Warts,Venereal
- ;;^UTILITY(U,$J,358.3,4109,1,4,0)
- ;;=4^A63.0
- ;;^UTILITY(U,$J,358.3,4109,2)
- ;;=^5000360
- ;;^UTILITY(U,$J,358.3,4110,0)
- ;;=A56.02^^20^189^16
- ;;^UTILITY(U,$J,358.3,4110,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4110,1,3,0)
- ;;=3^Chlamydial Vulvovaginitis
- ;;^UTILITY(U,$J,358.3,4110,1,4,0)
- ;;=4^A56.02
- ;;^UTILITY(U,$J,358.3,4110,2)
- ;;=^5000340
- ;;^UTILITY(U,$J,358.3,4111,0)
- ;;=B37.3^^20^189^9
- ;;^UTILITY(U,$J,358.3,4111,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4111,1,3,0)
- ;;=3^Candidiasis of Vulva & Vagina
- ;;^UTILITY(U,$J,358.3,4111,1,4,0)
- ;;=4^B37.3
- ;;^UTILITY(U,$J,358.3,4111,2)
- ;;=^5000615
- ;;^UTILITY(U,$J,358.3,4112,0)
- ;;=A59.01^^20^189^51
- ;;^UTILITY(U,$J,358.3,4112,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4112,1,3,0)
- ;;=3^Trichomonal Vulvovaginitis
- ;;^UTILITY(U,$J,358.3,4112,1,4,0)
- ;;=4^A59.01
- ;;^UTILITY(U,$J,358.3,4112,2)
- ;;=^121763
- ;;^UTILITY(U,$J,358.3,4113,0)
- ;;=D25.9^^20^189^35
- ;;^UTILITY(U,$J,358.3,4113,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4113,1,3,0)
- ;;=3^Leiomyoma of Uterus,Unspec
- ;;^UTILITY(U,$J,358.3,4113,1,4,0)
- ;;=4^D25.9
- ;;^UTILITY(U,$J,358.3,4113,2)
- ;;=^5002081
- ;;^UTILITY(U,$J,358.3,4114,0)
- ;;=D06.9^^20^189^10
- ;;^UTILITY(U,$J,358.3,4114,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4114,1,3,0)
- ;;=3^Carcinoma in Situ of Cervix,Unspec
- ;;^UTILITY(U,$J,358.3,4114,1,4,0)
- ;;=4^D06.9
- ;;^UTILITY(U,$J,358.3,4114,2)
- ;;=^5001941
- ;;^UTILITY(U,$J,358.3,4115,0)
- ;;=D06.0^^20^189^11
- ;;^UTILITY(U,$J,358.3,4115,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4115,1,3,0)
- ;;=3^Carcinoma in Situ of Endocervix
- ;;^UTILITY(U,$J,358.3,4115,1,4,0)
- ;;=4^D06.0
- ;;^UTILITY(U,$J,358.3,4115,2)
- ;;=^5001938
- ;;^UTILITY(U,$J,358.3,4116,0)
- ;;=D06.1^^20^189^12
- ;;^UTILITY(U,$J,358.3,4116,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4116,1,3,0)
- ;;=3^Carcinoma in Situ of Exocervix
- ;;^UTILITY(U,$J,358.3,4116,1,4,0)
- ;;=4^D06.1
- ;;^UTILITY(U,$J,358.3,4116,2)
- ;;=^5001939
- ;;^UTILITY(U,$J,358.3,4117,0)
- ;;=N60.11^^20^189^21
- ;;^UTILITY(U,$J,358.3,4117,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4117,1,3,0)
- ;;=3^Diffuse Cystic Mastopathy,Right Breast
- ;;^UTILITY(U,$J,358.3,4117,1,4,0)
- ;;=4^N60.11
- ;;^UTILITY(U,$J,358.3,4117,2)
- ;;=^5015773
- ;;^UTILITY(U,$J,358.3,4118,0)
- ;;=N60.12^^20^189^20
- ;;^UTILITY(U,$J,358.3,4118,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4118,1,3,0)
- ;;=3^Diffuse Cystic Mastopathy,Left Breast
- ;;^UTILITY(U,$J,358.3,4118,1,4,0)
- ;;=4^N60.12
- ;;^UTILITY(U,$J,358.3,4118,2)
- ;;=^5015774
- ;;^UTILITY(U,$J,358.3,4119,0)
- ;;=N63.^^20^189^36
- ;;^UTILITY(U,$J,358.3,4119,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4119,1,3,0)
- ;;=3^Lump in Breast,Unspec
- ;;^UTILITY(U,$J,358.3,4119,1,4,0)
- ;;=4^N63.
- ;;^UTILITY(U,$J,358.3,4119,2)
- ;;=^5015791
- ;;^UTILITY(U,$J,358.3,4120,0)
- ;;=N73.9^^20^189^28
- ;;^UTILITY(U,$J,358.3,4120,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4120,1,3,0)
- ;;=3^Female Pelvic Inflammatory Disease,Unspec
- ;;^UTILITY(U,$J,358.3,4120,1,4,0)
- ;;=4^N73.9
- ;;^UTILITY(U,$J,358.3,4120,2)
- ;;=^5015820
- ;;^UTILITY(U,$J,358.3,4121,0)
- ;;=N72.^^20^189^32
- ;;^UTILITY(U,$J,358.3,4121,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4121,1,3,0)
- ;;=3^Inflammatory Disease of Cervix Uteri
- ;;^UTILITY(U,$J,358.3,4121,1,4,0)
- ;;=4^N72.
- ;;^UTILITY(U,$J,358.3,4121,2)
- ;;=^5015812
- ;;^UTILITY(U,$J,358.3,4122,0)
- ;;=N76.0^^20^189^56
- ;;^UTILITY(U,$J,358.3,4122,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4122,1,3,0)
- ;;=3^Vaginitis,Acute
- ;;^UTILITY(U,$J,358.3,4122,1,4,0)
- ;;=4^N76.0
- ;;^UTILITY(U,$J,358.3,4122,2)
- ;;=^5015826
- ;;^UTILITY(U,$J,358.3,4123,0)
- ;;=N76.1^^20^189^57
- ;;^UTILITY(U,$J,358.3,4123,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4123,1,3,0)
- ;;=3^Vaginitis,Subacute & Chronic
- ;;^UTILITY(U,$J,358.3,4123,1,4,0)
- ;;=4^N76.1
- ;;^UTILITY(U,$J,358.3,4123,2)
- ;;=^5015827
- ;;^UTILITY(U,$J,358.3,4124,0)
- ;;=N81.3^^20^189^53
- ;;^UTILITY(U,$J,358.3,4124,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4124,1,3,0)
- ;;=3^Uterovaginal Prolapse,Complete
- ;;^UTILITY(U,$J,358.3,4124,1,4,0)
- ;;=4^N81.3
- ;;^UTILITY(U,$J,358.3,4124,2)
- ;;=^5015840
- ;;^UTILITY(U,$J,358.3,4125,0)
- ;;=N81.2^^20^189^54
- ;;^UTILITY(U,$J,358.3,4125,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4125,1,3,0)
- ;;=3^Uterovaginal Prolapse,Incomplete
- ;;^UTILITY(U,$J,358.3,4125,1,4,0)
- ;;=4^N81.2
- ;;^UTILITY(U,$J,358.3,4125,2)
- ;;=^5015839
- ;;^UTILITY(U,$J,358.3,4126,0)
- ;;=N81.4^^20^189^55
- ;;^UTILITY(U,$J,358.3,4126,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4126,1,3,0)
- ;;=3^Uterovaginal Prolapse,Unspec
- ;;^UTILITY(U,$J,358.3,4126,1,4,0)
- ;;=4^N81.4
- ;;^UTILITY(U,$J,358.3,4126,2)
- ;;=^5015841
- ;;^UTILITY(U,$J,358.3,4127,0)
- ;;=N87.9^^20^189^24
- ;;^UTILITY(U,$J,358.3,4127,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4127,1,3,0)
- ;;=3^Dysplasia of Cervix Uteri,Unspec
- ;;^UTILITY(U,$J,358.3,4127,1,4,0)
- ;;=4^N87.9
- ;;^UTILITY(U,$J,358.3,4127,2)
- ;;=^5015877
- ;;^UTILITY(U,$J,358.3,4128,0)
- ;;=N87.0^^20^189^13
- ;;^UTILITY(U,$J,358.3,4128,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4128,1,3,0)
- ;;=3^Cervical Dysplasia,Mild
- ;;^UTILITY(U,$J,358.3,4128,1,4,0)
- ;;=4^N87.0
- ;;^UTILITY(U,$J,358.3,4128,2)
- ;;=^5015875
- ;;^UTILITY(U,$J,358.3,4129,0)
- ;;=N87.1^^20^189^14
- ;;^UTILITY(U,$J,358.3,4129,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4129,1,3,0)
- ;;=3^Cervical Dysplasia,Moderate
- ;;^UTILITY(U,$J,358.3,4129,1,4,0)
- ;;=4^N87.1
- ;;^UTILITY(U,$J,358.3,4129,2)
- ;;=^5015876
- ;;^UTILITY(U,$J,358.3,4130,0)
- ;;=N94.1^^20^189^23
- ;;^UTILITY(U,$J,358.3,4130,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4130,1,3,0)
- ;;=3^Dyspareunia
- ;;^UTILITY(U,$J,358.3,4130,1,4,0)
- ;;=4^N94.1
- ;;^UTILITY(U,$J,358.3,4130,2)
- ;;=^5015917
- ;;^UTILITY(U,$J,358.3,4131,0)
- ;;=N94.6^^20^189^22
- ;;^UTILITY(U,$J,358.3,4131,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4131,1,3,0)
- ;;=3^Dysmenorrhea,Unspec
- ;;^UTILITY(U,$J,358.3,4131,1,4,0)
- ;;=4^N94.6
- ;;^UTILITY(U,$J,358.3,4131,2)
- ;;=^5015922
- ;;^UTILITY(U,$J,358.3,4132,0)
- ;;=R10.2^^20^189^41
- ;;^UTILITY(U,$J,358.3,4132,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4132,1,3,0)
- ;;=3^Pelvic & Perineal Pain
- ;;^UTILITY(U,$J,358.3,4132,1,4,0)
- ;;=4^R10.2
- ;;^UTILITY(U,$J,358.3,4132,2)
- ;;=^5019209
- ;;^UTILITY(U,$J,358.3,4133,0)
- ;;=N91.2^^20^189^6
- ;;^UTILITY(U,$J,358.3,4133,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4133,1,3,0)
- ;;=3^Amenorrhea,Unspec
- ;;^UTILITY(U,$J,358.3,4133,1,4,0)
- ;;=4^N91.2
- ;;^UTILITY(U,$J,358.3,4133,2)
- ;;=^5015904
- ;;^UTILITY(U,$J,358.3,4134,0)
- ;;=N93.8^^20^189^52
- ;;^UTILITY(U,$J,358.3,4134,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1064,1,3,0)
+ ;;=3^Peptic ulc, site unsp, unsp as ac or chr, w/o hemor or perf
+ ;;^UTILITY(U,$J,358.3,1064,1,4,0)
+ ;;=4^K27.9

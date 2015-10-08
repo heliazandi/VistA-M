@@ -1,120 +1,136 @@
-IBDEI167 ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI167 ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,20959,1,5,0)
- ;;=5^CAD, Occlusion Of Venous Graft
- ;;^UTILITY(U,$J,358.3,20959,2)
- ;;=CAD, Occlusion of Venous Graft^303282
- ;;^UTILITY(U,$J,358.3,20960,0)
- ;;=459.10^^133^1307^70
- ;;^UTILITY(U,$J,358.3,20960,1,0)
+ ;;^UTILITY(U,$J,358.3,20656,0)
+ ;;=996.74^^109^1271^2
+ ;;^UTILITY(U,$J,358.3,20656,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20960,1,4,0)
- ;;=4^459.10
- ;;^UTILITY(U,$J,358.3,20960,1,5,0)
- ;;=5^Post Phlebotic Syndrome
- ;;^UTILITY(U,$J,358.3,20960,2)
- ;;=Post Phlebotic Syndrome^328597
- ;;^UTILITY(U,$J,358.3,20961,0)
- ;;=428.20^^133^1307^50
- ;;^UTILITY(U,$J,358.3,20961,1,0)
+ ;;^UTILITY(U,$J,358.3,20656,1,4,0)
+ ;;=4^Complications d/t Vascular Device/Graft
+ ;;^UTILITY(U,$J,358.3,20656,1,5,0)
+ ;;=5^996.74
+ ;;^UTILITY(U,$J,358.3,20656,2)
+ ;;=^276297
+ ;;^UTILITY(U,$J,358.3,20657,0)
+ ;;=V72.84^^109^1272^7
+ ;;^UTILITY(U,$J,358.3,20657,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20961,1,4,0)
- ;;=4^428.20
- ;;^UTILITY(U,$J,358.3,20961,1,5,0)
- ;;=5^Heart Failure, Systolic, Unspec
- ;;^UTILITY(U,$J,358.3,20961,2)
- ;;=Heart Failure, Systolic^328594
- ;;^UTILITY(U,$J,358.3,20962,0)
- ;;=428.21^^133^1307^40
- ;;^UTILITY(U,$J,358.3,20962,1,0)
+ ;;^UTILITY(U,$J,358.3,20657,1,4,0)
+ ;;=4^Pre-Op Exam,Unspec
+ ;;^UTILITY(U,$J,358.3,20657,1,5,0)
+ ;;=5^V72.84
+ ;;^UTILITY(U,$J,358.3,20657,2)
+ ;;=^295830
+ ;;^UTILITY(U,$J,358.3,20658,0)
+ ;;=V67.00^^109^1272^2
+ ;;^UTILITY(U,$J,358.3,20658,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20962,1,4,0)
- ;;=4^428.21
- ;;^UTILITY(U,$J,358.3,20962,1,5,0)
- ;;=5^Heart Failure, Acute Systolic
- ;;^UTILITY(U,$J,358.3,20962,2)
- ;;=Heart Failure, Acute Systolic^328494
- ;;^UTILITY(U,$J,358.3,20963,0)
- ;;=428.22^^133^1307^42
- ;;^UTILITY(U,$J,358.3,20963,1,0)
+ ;;^UTILITY(U,$J,358.3,20658,1,4,0)
+ ;;=4^Follow-Up Exam,Unspec Surgery
+ ;;^UTILITY(U,$J,358.3,20658,1,5,0)
+ ;;=5^V67.00
+ ;;^UTILITY(U,$J,358.3,20658,2)
+ ;;=^322077
+ ;;^UTILITY(U,$J,358.3,20659,0)
+ ;;=V67.09^^109^1272^1
+ ;;^UTILITY(U,$J,358.3,20659,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20963,1,4,0)
- ;;=4^428.22
- ;;^UTILITY(U,$J,358.3,20963,1,5,0)
- ;;=5^Heart Failure, Chronic Systolic
- ;;^UTILITY(U,$J,358.3,20963,2)
- ;;=Heart Failure, Chronic Systolic^328495
- ;;^UTILITY(U,$J,358.3,20964,0)
- ;;=428.23^^133^1307^49
- ;;^UTILITY(U,$J,358.3,20964,1,0)
+ ;;^UTILITY(U,$J,358.3,20659,1,4,0)
+ ;;=4^Follow-Up Exam,Other Surgery
+ ;;^UTILITY(U,$J,358.3,20659,1,5,0)
+ ;;=5^V67.09
+ ;;^UTILITY(U,$J,358.3,20659,2)
+ ;;=^322080
+ ;;^UTILITY(U,$J,358.3,20660,0)
+ ;;=V12.54^^109^1272^4
+ ;;^UTILITY(U,$J,358.3,20660,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20964,1,4,0)
- ;;=4^428.23
- ;;^UTILITY(U,$J,358.3,20964,1,5,0)
- ;;=5^Heart Failure, Systolic, Acute On Chronic
- ;;^UTILITY(U,$J,358.3,20964,2)
- ;;=Heart Failure, Systolic, Acute on Chronic^328496
- ;;^UTILITY(U,$J,358.3,20965,0)
- ;;=428.30^^133^1307^43
- ;;^UTILITY(U,$J,358.3,20965,1,0)
+ ;;^UTILITY(U,$J,358.3,20660,1,4,0)
+ ;;=4^Hx TIA/Stroke w/o Residual
+ ;;^UTILITY(U,$J,358.3,20660,1,5,0)
+ ;;=5^V12.54
+ ;;^UTILITY(U,$J,358.3,20660,2)
+ ;;=^335309
+ ;;^UTILITY(U,$J,358.3,20661,0)
+ ;;=V12.59^^109^1272^3
+ ;;^UTILITY(U,$J,358.3,20661,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20965,1,4,0)
- ;;=4^428.30
- ;;^UTILITY(U,$J,358.3,20965,1,5,0)
- ;;=5^Heart Failure, Diastolic
- ;;^UTILITY(U,$J,358.3,20965,2)
- ;;=Heart Failure, Diastolic^328595
- ;;^UTILITY(U,$J,358.3,20966,0)
- ;;=428.31^^133^1307^39
- ;;^UTILITY(U,$J,358.3,20966,1,0)
+ ;;^UTILITY(U,$J,358.3,20661,1,4,0)
+ ;;=4^Hx Circ Sys Dis NEC
+ ;;^UTILITY(U,$J,358.3,20661,1,5,0)
+ ;;=5^V12.59
+ ;;^UTILITY(U,$J,358.3,20661,2)
+ ;;=^303399
+ ;;^UTILITY(U,$J,358.3,20662,0)
+ ;;=V12.52^^109^1272^5
+ ;;^UTILITY(U,$J,358.3,20662,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20966,1,4,0)
- ;;=4^428.31
- ;;^UTILITY(U,$J,358.3,20966,1,5,0)
- ;;=5^Heart Failure, Acute Diastolic
- ;;^UTILITY(U,$J,358.3,20966,2)
- ;;=Heart Failure, Acute Diastolic^328497
- ;;^UTILITY(U,$J,358.3,20967,0)
- ;;=428.32^^133^1307^41
- ;;^UTILITY(U,$J,358.3,20967,1,0)
+ ;;^UTILITY(U,$J,358.3,20662,1,4,0)
+ ;;=4^Hx Thrombophlebitis
+ ;;^UTILITY(U,$J,358.3,20662,1,5,0)
+ ;;=5^V12.52
+ ;;^UTILITY(U,$J,358.3,20662,2)
+ ;;=^303398
+ ;;^UTILITY(U,$J,358.3,20663,0)
+ ;;=V12.51^^109^1272^6
+ ;;^UTILITY(U,$J,358.3,20663,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20967,1,4,0)
- ;;=4^428.32
- ;;^UTILITY(U,$J,358.3,20967,1,5,0)
- ;;=5^Heart Failure, Chronic Diastolic
- ;;^UTILITY(U,$J,358.3,20967,2)
- ;;=Heart Failure, Chronic Diastolic^328498
- ;;^UTILITY(U,$J,358.3,20968,0)
- ;;=428.33^^133^1307^45
- ;;^UTILITY(U,$J,358.3,20968,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20968,1,4,0)
- ;;=4^428.33
- ;;^UTILITY(U,$J,358.3,20968,1,5,0)
- ;;=5^Heart Failure, Diastolic, Acute On Chronic
- ;;^UTILITY(U,$J,358.3,20968,2)
- ;;=Heart Failure, Diastolic, Acute on Chronic^328499
- ;;^UTILITY(U,$J,358.3,20969,0)
- ;;=428.40^^133^1307^44
- ;;^UTILITY(U,$J,358.3,20969,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20969,1,4,0)
- ;;=4^428.40
- ;;^UTILITY(U,$J,358.3,20969,1,5,0)
- ;;=5^Heart Failure, Diastolic& Systolic
- ;;^UTILITY(U,$J,358.3,20969,2)
- ;;=Heart Failure, Systolic and Diastolic^328596
- ;;^UTILITY(U,$J,358.3,20970,0)
- ;;=428.41^^133^1307^46
- ;;^UTILITY(U,$J,358.3,20970,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20970,1,4,0)
- ;;=4^428.41
- ;;^UTILITY(U,$J,358.3,20970,1,5,0)
- ;;=5^Heart Failure, Systolic & Diastolic, Acute
- ;;^UTILITY(U,$J,358.3,20970,2)
- ;;=Heart Failure, Systolic & Diastolic, Acute^328500
- ;;^UTILITY(U,$J,358.3,20971,0)
- ;;=428.42^^133^1307^48
+ ;;^UTILITY(U,$J,358.3,20663,1,4,0)
+ ;;=4^Hx Ven Throm & Embolism
+ ;;^UTILITY(U,$J,358.3,20663,1,5,0)
+ ;;=5^V12.51
+ ;;^UTILITY(U,$J,358.3,20663,2)
+ ;;=^303397
+ ;;^UTILITY(U,$J,358.3,20664,0)
+ ;;=11042^^110^1273^1^^^^1
+ ;;^UTILITY(U,$J,358.3,20664,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20664,1,2,0)
+ ;;=2^Debride Skin & Sq
+ ;;^UTILITY(U,$J,358.3,20664,1,4,0)
+ ;;=4^11042
+ ;;^UTILITY(U,$J,358.3,20665,0)
+ ;;=11043^^110^1273^2^^^^1
+ ;;^UTILITY(U,$J,358.3,20665,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20665,1,2,0)
+ ;;=2^Debride Skin,Sq,& Muscle
+ ;;^UTILITY(U,$J,358.3,20665,1,4,0)
+ ;;=4^11043
+ ;;^UTILITY(U,$J,358.3,20666,0)
+ ;;=97597^^110^1273^3^^^^1
+ ;;^UTILITY(U,$J,358.3,20666,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20666,1,2,0)
+ ;;=2^Rmvl Devital Tiss up to 20sq cm
+ ;;^UTILITY(U,$J,358.3,20666,1,4,0)
+ ;;=4^97597
+ ;;^UTILITY(U,$J,358.3,20667,0)
+ ;;=97598^^110^1273^4^^^^1
+ ;;^UTILITY(U,$J,358.3,20667,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20667,1,2,0)
+ ;;=2^Rmvl Devitl Tis,ea addl 20sq cm
+ ;;^UTILITY(U,$J,358.3,20667,1,4,0)
+ ;;=4^97598
+ ;;^UTILITY(U,$J,358.3,20668,0)
+ ;;=10140^^110^1274^2
+ ;;^UTILITY(U,$J,358.3,20668,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20668,1,2,0)
+ ;;=2^I&D Hematoma/Seroma,Skin
+ ;;^UTILITY(U,$J,358.3,20668,1,4,0)
+ ;;=4^10140
+ ;;^UTILITY(U,$J,358.3,20669,0)
+ ;;=10180^^110^1274^1^^^^1
+ ;;^UTILITY(U,$J,358.3,20669,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20669,1,2,0)
+ ;;=2^I&D Complex Postop Wound
+ ;;^UTILITY(U,$J,358.3,20669,1,4,0)
+ ;;=4^10180
+ ;;^UTILITY(U,$J,358.3,20670,0)
+ ;;=29580^^110^1275^1^^^^1
+ ;;^UTILITY(U,$J,358.3,20670,1,0)
+ ;;=^358.31IA^4^2

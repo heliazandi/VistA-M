@@ -1,140 +1,128 @@
-IBDEI0XT ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0XT ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16773,1,3,0)
- ;;=3^647.03
- ;;^UTILITY(U,$J,358.3,16773,1,4,0)
- ;;=4^Syphillis-Antepartum
- ;;^UTILITY(U,$J,358.3,16773,2)
- ;;=^270957
- ;;^UTILITY(U,$J,358.3,16774,0)
- ;;=647.04^^108^1055^39
- ;;^UTILITY(U,$J,358.3,16774,1,0)
+ ;;^UTILITY(U,$J,358.3,16462,1,4,0)
+ ;;=4^Aspriation Pneumonitia/Pneumonia
+ ;;^UTILITY(U,$J,358.3,16462,2)
+ ;;=Aspriation Pneumonitia/Pneumonia^95581
+ ;;^UTILITY(U,$J,358.3,16463,0)
+ ;;=495.2^^84^983^2
+ ;;^UTILITY(U,$J,358.3,16463,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16774,1,3,0)
- ;;=3^647.04
- ;;^UTILITY(U,$J,358.3,16774,1,4,0)
- ;;=4^Syphillis-Postpartum
- ;;^UTILITY(U,$J,358.3,16774,2)
- ;;=^270958
- ;;^UTILITY(U,$J,358.3,16775,0)
- ;;=647.13^^108^1055^19
- ;;^UTILITY(U,$J,358.3,16775,1,0)
+ ;;^UTILITY(U,$J,358.3,16463,1,3,0)
+ ;;=3^495.2
+ ;;^UTILITY(U,$J,358.3,16463,1,4,0)
+ ;;=4^Bird Fanciers Lung
+ ;;^UTILITY(U,$J,358.3,16463,2)
+ ;;=Bird Fanciers Lung^14840
+ ;;^UTILITY(U,$J,358.3,16464,0)
+ ;;=506.4^^84^983^7
+ ;;^UTILITY(U,$J,358.3,16464,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16775,1,3,0)
- ;;=3^647.13
- ;;^UTILITY(U,$J,358.3,16775,1,4,0)
- ;;=4^Gonorrhea-Antepartum
- ;;^UTILITY(U,$J,358.3,16775,2)
- ;;=^270963
- ;;^UTILITY(U,$J,358.3,16776,0)
- ;;=647.14^^108^1055^20
- ;;^UTILITY(U,$J,358.3,16776,1,0)
+ ;;^UTILITY(U,$J,358.3,16464,1,3,0)
+ ;;=3^506.4
+ ;;^UTILITY(U,$J,358.3,16464,1,4,0)
+ ;;=4^Interstitial Lung Disease, Chemical
+ ;;^UTILITY(U,$J,358.3,16464,2)
+ ;;=Interstitial Lung Disease, Chemical^269978
+ ;;^UTILITY(U,$J,358.3,16465,0)
+ ;;=515.^^84^983^6
+ ;;^UTILITY(U,$J,358.3,16465,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16776,1,3,0)
- ;;=3^647.14
- ;;^UTILITY(U,$J,358.3,16776,1,4,0)
- ;;=4^Gonorrhea-Postpartum
- ;;^UTILITY(U,$J,358.3,16776,2)
- ;;=^270964
- ;;^UTILITY(U,$J,358.3,16777,0)
- ;;=647.23^^108^1055^28
- ;;^UTILITY(U,$J,358.3,16777,1,0)
+ ;;^UTILITY(U,$J,358.3,16465,1,3,0)
+ ;;=3^515.
+ ;;^UTILITY(U,$J,358.3,16465,1,4,0)
+ ;;=4^Interstital Lung Disease, Unspec
+ ;;^UTILITY(U,$J,358.3,16465,2)
+ ;;=Interstital Lung Disease, Unspec^101072
+ ;;^UTILITY(U,$J,358.3,16466,0)
+ ;;=495.9^^84^983^4
+ ;;^UTILITY(U,$J,358.3,16466,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16777,1,3,0)
- ;;=3^647.23
- ;;^UTILITY(U,$J,358.3,16777,1,4,0)
- ;;=4^Oth Veneral Disease-Antepartum
- ;;^UTILITY(U,$J,358.3,16777,2)
- ;;=^270969
- ;;^UTILITY(U,$J,358.3,16778,0)
- ;;=647.24^^108^1055^29
- ;;^UTILITY(U,$J,358.3,16778,1,0)
+ ;;^UTILITY(U,$J,358.3,16466,1,3,0)
+ ;;=3^495.9
+ ;;^UTILITY(U,$J,358.3,16466,1,4,0)
+ ;;=4^Hypersensitivity Pneumonitis
+ ;;^UTILITY(U,$J,358.3,16466,2)
+ ;;=Hypersensitivity Pneumonitis^5656
+ ;;^UTILITY(U,$J,358.3,16467,0)
+ ;;=495.0^^84^983^3
+ ;;^UTILITY(U,$J,358.3,16467,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16778,1,3,0)
- ;;=3^647.24
- ;;^UTILITY(U,$J,358.3,16778,1,4,0)
- ;;=4^Oth Veneral Disease-Postpartum
- ;;^UTILITY(U,$J,358.3,16778,2)
- ;;=^270970
- ;;^UTILITY(U,$J,358.3,16779,0)
- ;;=647.33^^108^1055^42
- ;;^UTILITY(U,$J,358.3,16779,1,0)
+ ;;^UTILITY(U,$J,358.3,16467,1,3,0)
+ ;;=3^495.0
+ ;;^UTILITY(U,$J,358.3,16467,1,4,0)
+ ;;=4^Farmer's Lung
+ ;;^UTILITY(U,$J,358.3,16467,2)
+ ;;=Farmer's Lung^44970
+ ;;^UTILITY(U,$J,358.3,16468,0)
+ ;;=507.1^^84^983^8
+ ;;^UTILITY(U,$J,358.3,16468,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16779,1,3,0)
- ;;=3^647.33
- ;;^UTILITY(U,$J,358.3,16779,1,4,0)
- ;;=4^Tuberculosis-Antepartum
- ;;^UTILITY(U,$J,358.3,16779,2)
- ;;=^270975
- ;;^UTILITY(U,$J,358.3,16780,0)
- ;;=647.34^^108^1055^43
- ;;^UTILITY(U,$J,358.3,16780,1,0)
+ ;;^UTILITY(U,$J,358.3,16468,1,3,0)
+ ;;=3^507.1
+ ;;^UTILITY(U,$J,358.3,16468,1,4,0)
+ ;;=4^Lipoid Pneumonia
+ ;;^UTILITY(U,$J,358.3,16468,2)
+ ;;=Lipoid Pneumonia^95664
+ ;;^UTILITY(U,$J,358.3,16469,0)
+ ;;=710.0^^84^983^9
+ ;;^UTILITY(U,$J,358.3,16469,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16780,1,3,0)
- ;;=3^647.34
- ;;^UTILITY(U,$J,358.3,16780,1,4,0)
- ;;=4^Tuberculosis-Postpartum
- ;;^UTILITY(U,$J,358.3,16780,2)
- ;;=^270976
- ;;^UTILITY(U,$J,358.3,16781,0)
- ;;=647.43^^108^1055^22
- ;;^UTILITY(U,$J,358.3,16781,1,0)
+ ;;^UTILITY(U,$J,358.3,16469,1,3,0)
+ ;;=3^710.0
+ ;;^UTILITY(U,$J,358.3,16469,1,4,0)
+ ;;=4^Lupus Pneumonitis
+ ;;^UTILITY(U,$J,358.3,16469,2)
+ ;;=Lupus Pneumonitis^72159^517.8
+ ;;^UTILITY(U,$J,358.3,16470,0)
+ ;;=516.0^^84^983^10
+ ;;^UTILITY(U,$J,358.3,16470,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16781,1,3,0)
- ;;=3^647.43
- ;;^UTILITY(U,$J,358.3,16781,1,4,0)
- ;;=4^Malaria-Antepartum
- ;;^UTILITY(U,$J,358.3,16781,2)
- ;;=^270981
- ;;^UTILITY(U,$J,358.3,16782,0)
- ;;=647.44^^108^1055^23
- ;;^UTILITY(U,$J,358.3,16782,1,0)
+ ;;^UTILITY(U,$J,358.3,16470,1,3,0)
+ ;;=3^516.0
+ ;;^UTILITY(U,$J,358.3,16470,1,4,0)
+ ;;=4^Pulmonary Alveolar Proteinosis
+ ;;^UTILITY(U,$J,358.3,16470,2)
+ ;;=Pulmonary Alveolar Proteinosis^100985
+ ;;^UTILITY(U,$J,358.3,16471,0)
+ ;;=135.^^84^983^11
+ ;;^UTILITY(U,$J,358.3,16471,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16782,1,3,0)
- ;;=3^647.44
- ;;^UTILITY(U,$J,358.3,16782,1,4,0)
- ;;=4^Malaria-Postpartum
- ;;^UTILITY(U,$J,358.3,16782,2)
- ;;=^270982
- ;;^UTILITY(U,$J,358.3,16783,0)
- ;;=647.53^^108^1055^36
- ;;^UTILITY(U,$J,358.3,16783,1,0)
+ ;;^UTILITY(U,$J,358.3,16471,1,3,0)
+ ;;=3^135.
+ ;;^UTILITY(U,$J,358.3,16471,1,4,0)
+ ;;=4^Pulmonary Sarcoidosis
+ ;;^UTILITY(U,$J,358.3,16471,2)
+ ;;=Pulmonary Sarcoidosis^107916^517.8
+ ;;^UTILITY(U,$J,358.3,16472,0)
+ ;;=714.81^^84^983^12
+ ;;^UTILITY(U,$J,358.3,16472,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16783,1,3,0)
- ;;=3^647.53
- ;;^UTILITY(U,$J,358.3,16783,1,4,0)
- ;;=4^Rubella-Antepartum
- ;;^UTILITY(U,$J,358.3,16783,2)
- ;;=^270987
- ;;^UTILITY(U,$J,358.3,16784,0)
- ;;=647.54^^108^1055^37
- ;;^UTILITY(U,$J,358.3,16784,1,0)
+ ;;^UTILITY(U,$J,358.3,16472,1,3,0)
+ ;;=3^714.81
+ ;;^UTILITY(U,$J,358.3,16472,1,4,0)
+ ;;=4^Rheumatoid Lung
+ ;;^UTILITY(U,$J,358.3,16472,2)
+ ;;=Rheumatoid Lung^106037
+ ;;^UTILITY(U,$J,358.3,16473,0)
+ ;;=710.1^^84^983^13
+ ;;^UTILITY(U,$J,358.3,16473,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16784,1,3,0)
- ;;=3^647.54
- ;;^UTILITY(U,$J,358.3,16784,1,4,0)
- ;;=4^Rubella-Postpartum
- ;;^UTILITY(U,$J,358.3,16784,2)
- ;;=^270988
- ;;^UTILITY(U,$J,358.3,16785,0)
- ;;=648.03^^108^1055^11
- ;;^UTILITY(U,$J,358.3,16785,1,0)
+ ;;^UTILITY(U,$J,358.3,16473,1,3,0)
+ ;;=3^710.1
+ ;;^UTILITY(U,$J,358.3,16473,1,4,0)
+ ;;=4^Scleroderma/Systemic Sclerosis
+ ;;^UTILITY(U,$J,358.3,16473,2)
+ ;;=Scleroderma/Systemic Sclerosis^108590^517.8
+ ;;^UTILITY(U,$J,358.3,16474,0)
+ ;;=710.2^^84^983^14
+ ;;^UTILITY(U,$J,358.3,16474,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16785,1,3,0)
- ;;=3^648.03
- ;;^UTILITY(U,$J,358.3,16785,1,4,0)
- ;;=4^Diabetes-Antepartum
- ;;^UTILITY(U,$J,358.3,16785,2)
- ;;=^341480
- ;;^UTILITY(U,$J,358.3,16786,0)
- ;;=648.04^^108^1055^12
- ;;^UTILITY(U,$J,358.3,16786,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16786,1,3,0)
- ;;=3^648.04
- ;;^UTILITY(U,$J,358.3,16786,1,4,0)
- ;;=4^Diabetes-Postpartum
- ;;^UTILITY(U,$J,358.3,16786,2)
- ;;=^271013
+ ;;^UTILITY(U,$J,358.3,16474,1,3,0)
+ ;;=3^710.2
+ ;;^UTILITY(U,$J,358.3,16474,1,4,0)
+ ;;=4^Sjogren's Syndrome
+ ;;^UTILITY(U,$J,358.3,16474,2)
+ ;;=Sjogren's Syndrome^192145^517.8

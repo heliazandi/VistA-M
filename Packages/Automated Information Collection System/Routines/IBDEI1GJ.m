@@ -1,114 +1,142 @@
-IBDEI1GJ ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
- Q:'DIFQR(358.6)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI1GJ ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.6,9,12)
- ;;=PROCEDURE^1^6^7^3^2
- ;;^UTILITY(U,$J,358.6,9,13,0)
- ;;=^358.613V^2^2
- ;;^UTILITY(U,$J,358.6,9,13,1,0)
- ;;=1;IBD(358.98,^^0
- ;;^UTILITY(U,$J,358.6,9,13,2,0)
- ;;=2;IBD(358.98,^^0
- ;;^UTILITY(U,$J,358.6,9,14)
- ;;=S Y=$$DSPLYCPT^IBDFN9(Y)
- ;;^UTILITY(U,$J,358.6,9,17)
- ;;=D SLCTCPT^IBDFN12(.X)
- ;;^UTILITY(U,$J,358.6,9,18)
- ;;=S IBDF("OTHER")="81^I '$P(^(0),U,4)" D LIST^IBDFDE2(.IBDSEL,.IBDF,"CPT Procedure Code")
- ;;^UTILITY(U,$J,358.6,9,19)
- ;;=D CPT^IBDFN14(X)
- ;;^UTILITY(U,$J,358.6,10,0)
- ;;=DG SELECT ICD-9 DIAGNOSIS CODES^ICD9^IBDFN4^SCHEDULING^^3^2^^1^^^1^11^^^^1^1^^^^1
- ;;^UTILITY(U,$J,358.6,10,1,0)
- ;;=^^2^2^2970304^^^^
- ;;^UTILITY(U,$J,358.6,10,1,1,0)
- ;;=Allows the user to select ICD-9 diagnosis codes from the ICD Diagnosis
- ;;^UTILITY(U,$J,358.6,10,1,2,0)
- ;;=file. Allows only active codes to be selected.
- ;;^UTILITY(U,$J,358.6,10,2)
- ;;=CODE^7^DIAGNOSIS^30^DESCRIPTION^200^^^^^^^^^^^1^1
- ;;^UTILITY(U,$J,358.6,10,3)
- ;;=SELECT ICD9 ICD-9 CODES DIAGNOSIS
- ;;^UTILITY(U,$J,358.6,10,9)
- ;;=D INPUTICD^IBDFN8(.X)
- ;;^UTILITY(U,$J,358.6,10,11)
- ;;=D TESTICD^IBDFN7
- ;;^UTILITY(U,$J,358.6,10,13,0)
- ;;=^358.613V^2^2
- ;;^UTILITY(U,$J,358.6,10,13,1,0)
- ;;=1;IBD(358.98,
- ;;^UTILITY(U,$J,358.6,10,13,2,0)
- ;;=2;IBD(358.98,
- ;;^UTILITY(U,$J,358.6,10,15,0)
- ;;=^357.615I^2^2
- ;;^UTILITY(U,$J,358.6,10,15,1,0)
- ;;=DIAGNOSIS^30^2^^DIAGNOSIS
- ;;^UTILITY(U,$J,358.6,10,15,2,0)
- ;;=DESCRIPTION^200^3^^DIAGNOSIS
- ;;^UTILITY(U,$J,358.6,10,16)
- ;;=o^4^Diagnosis^^r^1^ICD-9 Code^^1
- ;;^UTILITY(U,$J,358.6,10,17)
- ;;=D SLCTDX^IBDFN12(.X)
- ;;^UTILITY(U,$J,358.6,10,19)
- ;;=D DX^IBDFN14(X)
- ;;^UTILITY(U,$J,358.6,11,0)
- ;;=INPUT DIAGNOSIS CODE (ICD9)^^^PATIENT CARE ENCOUNTER^^1^^^1^^^1^^^^SMP^^^1
- ;;^UTILITY(U,$J,358.6,11,1,0)
- ;;=^^1^1^2970304^^^^
- ;;^UTILITY(U,$J,358.6,11,1,1,0)
- ;;=Used for inputting ICD9 diagnosis codes.
- ;;^UTILITY(U,$J,358.6,11,2)
- ;;=^^^^^^^^^^^^^^^^^1
- ;;^UTILITY(U,$J,358.6,11,3)
- ;;=INPUT ICD9 ICD-9 DIAGNOSIS CODES
- ;;^UTILITY(U,$J,358.6,11,9)
- ;;=D INPUTICD^IBDFN8(.X)
- ;;^UTILITY(U,$J,358.6,11,10)
- ;;=Enter an active ICD9 diagnosis code.
- ;;^UTILITY(U,$J,358.6,11,11)
- ;;=D TESTICD^IBDFN7
- ;;^UTILITY(U,$J,358.6,11,12)
- ;;=DIAGNOSIS/PROBLEM^1^13^14^2
- ;;^UTILITY(U,$J,358.6,11,13,0)
- ;;=^358.613V^10^10
- ;;^UTILITY(U,$J,358.6,11,13,1,0)
- ;;=1;IBD(358.98,^^1^^^^^2
- ;;^UTILITY(U,$J,358.6,11,13,2,0)
- ;;=2;IBD(358.98,^^1^^^^^2
- ;;^UTILITY(U,$J,358.6,11,13,3,0)
- ;;=3;IBD(358.98,^^1^^^^^9
- ;;^UTILITY(U,$J,358.6,11,13,4,0)
- ;;=1;IBE(358.99,^^0
- ;;^UTILITY(U,$J,358.6,11,13,5,0)
- ;;=4;IBD(358.98,^^1^^^^^10
- ;;^UTILITY(U,$J,358.6,11,13,6,0)
- ;;=5;IBD(358.98,^^1^^^^^11
- ;;^UTILITY(U,$J,358.6,11,13,7,0)
- ;;=6;IBD(358.98,^^1^^^^^12
- ;;^UTILITY(U,$J,358.6,11,13,8,0)
- ;;=7;IBD(358.98,^^1^^^^^5
- ;;^UTILITY(U,$J,358.6,11,13,9,0)
- ;;=8;IBD(358.98,^^1^^^^^6
- ;;^UTILITY(U,$J,358.6,11,13,10,0)
- ;;=9;IBD(358.98,^^1^^^^^6
- ;;^UTILITY(U,$J,358.6,11,14)
- ;;=S Y=$$DSPLYICD^IBDFN9(Y)
- ;;^UTILITY(U,$J,358.6,11,15,0)
- ;;=^357.615I^0^0
- ;;^UTILITY(U,$J,358.6,11,17)
- ;;=D SLCTDX^IBDFN12(.X)
- ;;^UTILITY(U,$J,358.6,11,18)
- ;;=S IBDF("OTHER")="80^I '$P(^(0),U,9)" D LIST^IBDFDE2(.IBDSEL,.IBDF,"ICD-9 Diagnosis Code")
- ;;^UTILITY(U,$J,358.6,11,19)
- ;;=D DX^IBDFN14(X)
- ;;^UTILITY(U,$J,358.6,12,0)
- ;;=IBDF UTILITY FOR LABELS ONLY^LABELS^IBDFN^AUTOMATED INFO COLLECTION SYS^0^2^2^^1^^^1
- ;;^UTILITY(U,$J,358.6,12,1,0)
- ;;=^^2^2^2970319^^^
- ;;^UTILITY(U,$J,358.6,12,1,1,0)
- ;;=This interface returns no data. Its purpose is to print labels without
- ;;^UTILITY(U,$J,358.6,12,1,2,0)
- ;;=data to the form.
- ;;^UTILITY(U,$J,358.6,12,2)
- ;;=Underscore Only^0^^^^^^^^^^^^^^^1
+ ;;^UTILITY(U,$J,358.3,25857,2)
+ ;;=^331910
+ ;;^UTILITY(U,$J,358.3,25858,0)
+ ;;=312.31^^150^1646^9
+ ;;^UTILITY(U,$J,358.3,25858,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25858,1,2,0)
+ ;;=2^312.31
+ ;;^UTILITY(U,$J,358.3,25858,1,5,0)
+ ;;=5^Pathological Gambling
+ ;;^UTILITY(U,$J,358.3,25858,2)
+ ;;=^90682
+ ;;^UTILITY(U,$J,358.3,25859,0)
+ ;;=314.00^^150^1646^3
+ ;;^UTILITY(U,$J,358.3,25859,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25859,1,2,0)
+ ;;=2^314.00
+ ;;^UTILITY(U,$J,358.3,25859,1,5,0)
+ ;;=5^Attn Defic w/o Hyperactiv
+ ;;^UTILITY(U,$J,358.3,25859,2)
+ ;;=^268351
+ ;;^UTILITY(U,$J,358.3,25860,0)
+ ;;=796.0^^150^1646^1
+ ;;^UTILITY(U,$J,358.3,25860,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25860,1,2,0)
+ ;;=2^796.0
+ ;;^UTILITY(U,$J,358.3,25860,1,5,0)
+ ;;=5^Abn Toxicologic Finding
+ ;;^UTILITY(U,$J,358.3,25860,2)
+ ;;=^273463
+ ;;^UTILITY(U,$J,358.3,25861,0)
+ ;;=303.90^^150^1647^12
+ ;;^UTILITY(U,$J,358.3,25861,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25861,1,2,0)
+ ;;=2^303.90
+ ;;^UTILITY(U,$J,358.3,25861,1,5,0)
+ ;;=5^Alcohol Dependence
+ ;;^UTILITY(U,$J,358.3,25861,2)
+ ;;=^268187
+ ;;^UTILITY(U,$J,358.3,25862,0)
+ ;;=303.93^^150^1647^11
+ ;;^UTILITY(U,$J,358.3,25862,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25862,1,2,0)
+ ;;=2^303.93
+ ;;^UTILITY(U,$J,358.3,25862,1,5,0)
+ ;;=5^Alcohol Dep-Remission
+ ;;^UTILITY(U,$J,358.3,25862,2)
+ ;;=^268190
+ ;;^UTILITY(U,$J,358.3,25863,0)
+ ;;=305.00^^150^1647^9
+ ;;^UTILITY(U,$J,358.3,25863,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25863,1,2,0)
+ ;;=2^305.00
+ ;;^UTILITY(U,$J,358.3,25863,1,5,0)
+ ;;=5^Alcohol Abuse
+ ;;^UTILITY(U,$J,358.3,25863,2)
+ ;;=^268227
+ ;;^UTILITY(U,$J,358.3,25864,0)
+ ;;=305.03^^150^1647^10
+ ;;^UTILITY(U,$J,358.3,25864,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25864,1,2,0)
+ ;;=2^305.03
+ ;;^UTILITY(U,$J,358.3,25864,1,5,0)
+ ;;=5^Alcohol Abuse-Remission
+ ;;^UTILITY(U,$J,358.3,25864,2)
+ ;;=^268230
+ ;;^UTILITY(U,$J,358.3,25865,0)
+ ;;=304.00^^150^1647^74
+ ;;^UTILITY(U,$J,358.3,25865,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25865,1,2,0)
+ ;;=2^304.00
+ ;;^UTILITY(U,$J,358.3,25865,1,5,0)
+ ;;=5^Opioid Dependence
+ ;;^UTILITY(U,$J,358.3,25865,2)
+ ;;=^81364
+ ;;^UTILITY(U,$J,358.3,25866,0)
+ ;;=304.23^^150^1647^43
+ ;;^UTILITY(U,$J,358.3,25866,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25866,1,2,0)
+ ;;=2^304.23
+ ;;^UTILITY(U,$J,358.3,25866,1,5,0)
+ ;;=5^Cocaine Dep-Remission
+ ;;^UTILITY(U,$J,358.3,25866,2)
+ ;;=^268200
+ ;;^UTILITY(U,$J,358.3,25867,0)
+ ;;=305.50^^150^1647^68
+ ;;^UTILITY(U,$J,358.3,25867,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25867,1,2,0)
+ ;;=2^305.50
+ ;;^UTILITY(U,$J,358.3,25867,1,5,0)
+ ;;=5^Opioid Abuse
+ ;;^UTILITY(U,$J,358.3,25867,2)
+ ;;=^85868
+ ;;^UTILITY(U,$J,358.3,25868,0)
+ ;;=305.53^^150^1647^71
+ ;;^UTILITY(U,$J,358.3,25868,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25868,1,2,0)
+ ;;=2^305.53
+ ;;^UTILITY(U,$J,358.3,25868,1,5,0)
+ ;;=5^Opioid Abuse-Remission
+ ;;^UTILITY(U,$J,358.3,25868,2)
+ ;;=^268246
+ ;;^UTILITY(U,$J,358.3,25869,0)
+ ;;=304.10^^150^1647^30
+ ;;^UTILITY(U,$J,358.3,25869,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25869,1,2,0)
+ ;;=2^304.10
+ ;;^UTILITY(U,$J,358.3,25869,1,5,0)
+ ;;=5^Anxiolytic Dependence
+ ;;^UTILITY(U,$J,358.3,25869,2)
+ ;;=^268194
+ ;;^UTILITY(U,$J,358.3,25870,0)
+ ;;=304.13^^150^1647^27
+ ;;^UTILITY(U,$J,358.3,25870,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25870,1,2,0)
+ ;;=2^304.13
+ ;;^UTILITY(U,$J,358.3,25870,1,5,0)
+ ;;=5^Anxiolytic Dep-Remis
+ ;;^UTILITY(U,$J,358.3,25870,2)
+ ;;=^268197
+ ;;^UTILITY(U,$J,358.3,25871,0)
+ ;;=305.40^^150^1647^23
+ ;;^UTILITY(U,$J,358.3,25871,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,25871,1,2,0)
+ ;;=2^305.40

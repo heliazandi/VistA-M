@@ -1,136 +1,134 @@
-IBDEI0SV ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0SV ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14253,1,4,0)
- ;;=4^198.5
- ;;^UTILITY(U,$J,358.3,14253,1,5,0)
- ;;=5^Mets to Bone or Bone Marrow
- ;;^UTILITY(U,$J,358.3,14253,2)
- ;;=^267336
- ;;^UTILITY(U,$J,358.3,14254,0)
- ;;=198.3^^90^858^96
- ;;^UTILITY(U,$J,358.3,14254,1,0)
+ ;;^UTILITY(U,$J,358.3,13976,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14254,1,4,0)
- ;;=4^198.3
- ;;^UTILITY(U,$J,358.3,14254,1,5,0)
- ;;=5^Mets to Brain
- ;;^UTILITY(U,$J,358.3,14254,2)
- ;;=Brain Metatastasis^267334
- ;;^UTILITY(U,$J,358.3,14255,0)
- ;;=197.7^^90^858^39
- ;;^UTILITY(U,$J,358.3,14255,1,0)
+ ;;^UTILITY(U,$J,358.3,13976,1,3,0)
+ ;;=3^782.0
+ ;;^UTILITY(U,$J,358.3,13976,1,5,0)
+ ;;=5^Burning skin sensation
+ ;;^UTILITY(U,$J,358.3,13976,2)
+ ;;=^35757
+ ;;^UTILITY(U,$J,358.3,13977,0)
+ ;;=726.79^^74^850^28
+ ;;^UTILITY(U,$J,358.3,13977,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14255,1,4,0)
- ;;=4^197.7
- ;;^UTILITY(U,$J,358.3,14255,1,5,0)
- ;;=5^Ca Liver, Secondary
- ;;^UTILITY(U,$J,358.3,14255,2)
- ;;=CA Liver, Secondary^267328
- ;;^UTILITY(U,$J,358.3,14256,0)
- ;;=197.0^^90^858^97
- ;;^UTILITY(U,$J,358.3,14256,1,0)
+ ;;^UTILITY(U,$J,358.3,13977,1,3,0)
+ ;;=3^726.79
+ ;;^UTILITY(U,$J,358.3,13977,1,5,0)
+ ;;=5^Bursitis-foot/toe/ankle/calcaneal
+ ;;^UTILITY(U,$J,358.3,13977,2)
+ ;;=^272555
+ ;;^UTILITY(U,$J,358.3,13978,0)
+ ;;=266.2^^74^850^1
+ ;;^UTILITY(U,$J,358.3,13978,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14256,1,4,0)
- ;;=4^197.0
- ;;^UTILITY(U,$J,358.3,14256,1,5,0)
- ;;=5^Mets to Lung
- ;;^UTILITY(U,$J,358.3,14256,2)
- ;;=Mets to Lung^267322
- ;;^UTILITY(U,$J,358.3,14257,0)
- ;;=196.2^^90^858^98
- ;;^UTILITY(U,$J,358.3,14257,1,0)
+ ;;^UTILITY(U,$J,358.3,13978,1,3,0)
+ ;;=3^266.2
+ ;;^UTILITY(U,$J,358.3,13978,1,5,0)
+ ;;=5^B12 Deficiency
+ ;;^UTILITY(U,$J,358.3,13978,2)
+ ;;=^87347
+ ;;^UTILITY(U,$J,358.3,13979,0)
+ ;;=754.62^^74^851^1
+ ;;^UTILITY(U,$J,358.3,13979,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14257,1,4,0)
- ;;=4^196.2
- ;;^UTILITY(U,$J,358.3,14257,1,5,0)
- ;;=5^Mets to Lymph Nodes,Abdominal
- ;;^UTILITY(U,$J,358.3,14257,2)
- ;;=^267316
- ;;^UTILITY(U,$J,358.3,14258,0)
- ;;=196.3^^90^858^99
- ;;^UTILITY(U,$J,358.3,14258,1,0)
+ ;;^UTILITY(U,$J,358.3,13979,1,3,0)
+ ;;=3^754.62
+ ;;^UTILITY(U,$J,358.3,13979,1,5,0)
+ ;;=5^Calcaneovalgus, talipes
+ ;;^UTILITY(U,$J,358.3,13979,2)
+ ;;=^265474
+ ;;^UTILITY(U,$J,358.3,13980,0)
+ ;;=736.76^^74^851^2
+ ;;^UTILITY(U,$J,358.3,13980,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14258,1,4,0)
- ;;=4^196.3
- ;;^UTILITY(U,$J,358.3,14258,1,5,0)
- ;;=5^Mets to Lymph Nodes,Axillary Or Brachial
- ;;^UTILITY(U,$J,358.3,14258,2)
- ;;=^267317
- ;;^UTILITY(U,$J,358.3,14259,0)
- ;;=196.0^^90^858^100
- ;;^UTILITY(U,$J,358.3,14259,1,0)
+ ;;^UTILITY(U,$J,358.3,13980,1,3,0)
+ ;;=3^736.76
+ ;;^UTILITY(U,$J,358.3,13980,1,5,0)
+ ;;=5^Calcaneovalgus, talipes, acquired
+ ;;^UTILITY(U,$J,358.3,13980,2)
+ ;;=^272748
+ ;;^UTILITY(U,$J,358.3,13981,0)
+ ;;=754.59^^74^851^3
+ ;;^UTILITY(U,$J,358.3,13981,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14259,1,4,0)
- ;;=4^196.0
- ;;^UTILITY(U,$J,358.3,14259,1,5,0)
- ;;=5^Mets to Lymph Nodes,Cervical
- ;;^UTILITY(U,$J,358.3,14259,2)
- ;;=Lymph Nodes^267314
- ;;^UTILITY(U,$J,358.3,14260,0)
- ;;=196.1^^90^858^101
- ;;^UTILITY(U,$J,358.3,14260,1,0)
+ ;;^UTILITY(U,$J,358.3,13981,1,3,0)
+ ;;=3^754.59
+ ;;^UTILITY(U,$J,358.3,13981,1,5,0)
+ ;;=5^Calcaneovarus, talipes
+ ;;^UTILITY(U,$J,358.3,13981,2)
+ ;;=^273008
+ ;;^UTILITY(U,$J,358.3,13982,0)
+ ;;=V64.2^^74^851^6
+ ;;^UTILITY(U,$J,358.3,13982,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14260,1,4,0)
- ;;=4^196.1
- ;;^UTILITY(U,$J,358.3,14260,1,5,0)
- ;;=5^Mets to Lymph Nodes,Mediastinal 
- ;;^UTILITY(U,$J,358.3,14260,2)
- ;;=Lymph Nodes^267315
- ;;^UTILITY(U,$J,358.3,14261,0)
- ;;=196.8^^90^858^102
- ;;^UTILITY(U,$J,358.3,14261,1,0)
+ ;;^UTILITY(U,$J,358.3,13982,1,3,0)
+ ;;=3^V64.2
+ ;;^UTILITY(U,$J,358.3,13982,1,5,0)
+ ;;=5^Cancelled surgical or other procedures because of patient decision 
+ ;;^UTILITY(U,$J,358.3,13982,2)
+ ;;=^295559
+ ;;^UTILITY(U,$J,358.3,13983,0)
+ ;;=V64.1^^74^851^5
+ ;;^UTILITY(U,$J,358.3,13983,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14261,1,4,0)
- ;;=4^196.8
- ;;^UTILITY(U,$J,358.3,14261,1,5,0)
- ;;=5^Mets to Lymph Nodes,Multiple Sites
- ;;^UTILITY(U,$J,358.3,14261,2)
- ;;=^267320
- ;;^UTILITY(U,$J,358.3,14262,0)
- ;;=V10.51^^90^858^56
- ;;^UTILITY(U,$J,358.3,14262,1,0)
+ ;;^UTILITY(U,$J,358.3,13983,1,3,0)
+ ;;=3^V64.1
+ ;;^UTILITY(U,$J,358.3,13983,1,5,0)
+ ;;=5^Cancelled surgical or other procedure because of contraindication
+ ;;^UTILITY(U,$J,358.3,13983,2)
+ ;;=^295558
+ ;;^UTILITY(U,$J,358.3,13984,0)
+ ;;=V64.3^^74^851^4
+ ;;^UTILITY(U,$J,358.3,13984,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14262,1,4,0)
- ;;=4^V10.51
- ;;^UTILITY(U,$J,358.3,14262,1,5,0)
- ;;=5^H/O Bladder Cancer
- ;;^UTILITY(U,$J,358.3,14262,2)
- ;;=^295228
- ;;^UTILITY(U,$J,358.3,14263,0)
- ;;=V10.3^^90^858^57
- ;;^UTILITY(U,$J,358.3,14263,1,0)
+ ;;^UTILITY(U,$J,358.3,13984,1,3,0)
+ ;;=3^V64.3
+ ;;^UTILITY(U,$J,358.3,13984,1,5,0)
+ ;;=5^Cancelled procedure because of other reasons
+ ;;^UTILITY(U,$J,358.3,13984,2)
+ ;;=^295560
+ ;;^UTILITY(U,$J,358.3,13985,0)
+ ;;=726.79^^74^851^7
+ ;;^UTILITY(U,$J,358.3,13985,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14263,1,4,0)
- ;;=4^V10.3
- ;;^UTILITY(U,$J,358.3,14263,1,5,0)
- ;;=5^H/O Breast Cancer
- ;;^UTILITY(U,$J,358.3,14263,2)
- ;;=^295217
- ;;^UTILITY(U,$J,358.3,14264,0)
- ;;=V10.41^^90^858^58
- ;;^UTILITY(U,$J,358.3,14264,1,0)
+ ;;^UTILITY(U,$J,358.3,13985,1,3,0)
+ ;;=3^726.79
+ ;;^UTILITY(U,$J,358.3,13985,1,5,0)
+ ;;=5^Capsulitis of ankle/toe/foot
+ ;;^UTILITY(U,$J,358.3,13985,2)
+ ;;=^272555
+ ;;^UTILITY(U,$J,358.3,13986,0)
+ ;;=736.75^^74^851^8
+ ;;^UTILITY(U,$J,358.3,13986,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14264,1,4,0)
- ;;=4^V10.41
- ;;^UTILITY(U,$J,358.3,14264,1,5,0)
- ;;=5^H/O Cervical Cancer
- ;;^UTILITY(U,$J,358.3,14264,2)
- ;;=^295219
- ;;^UTILITY(U,$J,358.3,14265,0)
- ;;=V10.05^^90^858^59
- ;;^UTILITY(U,$J,358.3,14265,1,0)
+ ;;^UTILITY(U,$J,358.3,13986,1,3,0)
+ ;;=3^736.75
+ ;;^UTILITY(U,$J,358.3,13986,1,5,0)
+ ;;=5^Cavovarus deformity of foot/ankle acquired
+ ;;^UTILITY(U,$J,358.3,13986,2)
+ ;;=^272747
+ ;;^UTILITY(U,$J,358.3,13987,0)
+ ;;=681.10^^74^851^11
+ ;;^UTILITY(U,$J,358.3,13987,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14265,1,4,0)
- ;;=4^V10.05
- ;;^UTILITY(U,$J,358.3,14265,1,5,0)
- ;;=5^H/O Colon Cancer
- ;;^UTILITY(U,$J,358.3,14265,2)
- ;;=H/O Colon Cancer^295207
- ;;^UTILITY(U,$J,358.3,14266,0)
- ;;=V10.03^^90^858^60
- ;;^UTILITY(U,$J,358.3,14266,1,0)
+ ;;^UTILITY(U,$J,358.3,13987,1,3,0)
+ ;;=3^681.10
+ ;;^UTILITY(U,$J,358.3,13987,1,5,0)
+ ;;=5^Cellulitis and abscess, toe, acquired
+ ;;^UTILITY(U,$J,358.3,13987,2)
+ ;;=^271885
+ ;;^UTILITY(U,$J,358.3,13988,0)
+ ;;=682.7^^74^851^9
+ ;;^UTILITY(U,$J,358.3,13988,1,0)
  ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14266,1,4,0)
- ;;=4^V10.03
+ ;;^UTILITY(U,$J,358.3,13988,1,3,0)
+ ;;=3^682.7
+ ;;^UTILITY(U,$J,358.3,13988,1,5,0)
+ ;;=5^Cellulitis and abscess, foot, except toes
+ ;;^UTILITY(U,$J,358.3,13988,2)
+ ;;=^271895
+ ;;^UTILITY(U,$J,358.3,13989,0)
+ ;;=682.6^^74^851^10

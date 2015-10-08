@@ -1,110 +1,130 @@
-IBDEI11N ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI11N ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18704,0)
- ;;=12002^^122^1196^2^^^^1
- ;;^UTILITY(U,$J,358.3,18704,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18704,1,2,0)
- ;;=2^Simple Repair of Superficial Wounds of scalp, neck, exillae, external genitalia, trunk, extremities; 2.6cm to 7.5cm 
- ;;^UTILITY(U,$J,358.3,18704,1,3,0)
- ;;=3^12002
- ;;^UTILITY(U,$J,358.3,18705,0)
- ;;=12041^^122^1196^3^^^^1
- ;;^UTILITY(U,$J,358.3,18705,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18705,1,2,0)
- ;;=2^Layer Closure of Wounds of neck, hands, feet, external genitalia; 2.5cm or less
- ;;^UTILITY(U,$J,358.3,18705,1,3,0)
- ;;=3^12041
- ;;^UTILITY(U,$J,358.3,18706,0)
- ;;=12042^^122^1196^4^^^^1
- ;;^UTILITY(U,$J,358.3,18706,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18706,1,2,0)
- ;;=2^Layer Closure of Wounds of neck, hands, feet, external genitalia; 2.6cm to 7.5cm
- ;;^UTILITY(U,$J,358.3,18706,1,3,0)
- ;;=3^12042
- ;;^UTILITY(U,$J,358.3,18707,0)
- ;;=12031^^122^1196^5^^^^1
- ;;^UTILITY(U,$J,358.3,18707,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18707,1,2,0)
- ;;=2^Layer Closure of Wounds of scalp, axillae, trunk, extremities; 2.5cm or less Wounds of
- ;;^UTILITY(U,$J,358.3,18707,1,3,0)
- ;;=3^12031
- ;;^UTILITY(U,$J,358.3,18708,0)
- ;;=12032^^122^1196^6^^^^1
- ;;^UTILITY(U,$J,358.3,18708,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18708,1,2,0)
- ;;=2^Layer Closure of Wounds of scalp, axillae, trunk, extremities; 2.6cm to 7.5cm Wounds of
- ;;^UTILITY(U,$J,358.3,18708,1,3,0)
- ;;=3^12032
- ;;^UTILITY(U,$J,358.3,18709,0)
- ;;=12020^^122^1196^7^^^^1
- ;;^UTILITY(U,$J,358.3,18709,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18709,1,2,0)
- ;;=2^TX of Superficial Wound Dehiscence; simple closure
- ;;^UTILITY(U,$J,358.3,18709,1,3,0)
- ;;=3^12020
- ;;^UTILITY(U,$J,358.3,18710,0)
- ;;=12021^^122^1196^8^^^^1
- ;;^UTILITY(U,$J,358.3,18710,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18710,1,2,0)
- ;;=2^TX of Superficial Wound Dehiscence; simple closure with packing
- ;;^UTILITY(U,$J,358.3,18710,1,3,0)
- ;;=3^12021
- ;;^UTILITY(U,$J,358.3,18711,0)
- ;;=13160^^122^1196^9^^^^1
- ;;^UTILITY(U,$J,358.3,18711,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18711,1,2,0)
- ;;=2^Secondary Closure of Surgical Wound or Dehiscence, extensive or complicated 
- ;;^UTILITY(U,$J,358.3,18711,1,3,0)
- ;;=3^13160
- ;;^UTILITY(U,$J,358.3,18712,0)
- ;;=27650^^122^1196^10^^^^1
- ;;^UTILITY(U,$J,358.3,18712,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18712,1,2,0)
- ;;=2^Repair Primary Ruptured Achilles Tendon
- ;;^UTILITY(U,$J,358.3,18712,1,3,0)
- ;;=3^27650
- ;;^UTILITY(U,$J,358.3,18713,0)
- ;;=28406^^122^1196^11^^^^1
- ;;^UTILITY(U,$J,358.3,18713,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18713,1,2,0)
- ;;=2^Perc Fixation Calcaneous Fx
- ;;^UTILITY(U,$J,358.3,18713,1,3,0)
- ;;=3^28406
- ;;^UTILITY(U,$J,358.3,18714,0)
- ;;=16020^^122^1197^2^^^^1
- ;;^UTILITY(U,$J,358.3,18714,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18714,1,2,0)
- ;;=2^Dressings and/or Debridement, initial or subsequent; without anesthesia, office or hospital, small
- ;;^UTILITY(U,$J,358.3,18714,1,3,0)
- ;;=3^16020
- ;;^UTILITY(U,$J,358.3,18715,0)
- ;;=11100^^122^1198^1^^^^1
- ;;^UTILITY(U,$J,358.3,18715,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18715,1,2,0)
- ;;=2^Biopsy of skin,subq tissue single lesion
- ;;^UTILITY(U,$J,358.3,18715,1,3,0)
- ;;=3^11100
- ;;^UTILITY(U,$J,358.3,18716,0)
- ;;=11101^^122^1198^2^^^^1
- ;;^UTILITY(U,$J,358.3,18716,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,18716,1,2,0)
- ;;=2^Biopsy of skin,subq tissue ea addl lesion
- ;;^UTILITY(U,$J,358.3,18716,1,3,0)
- ;;=3^11101
- ;;^UTILITY(U,$J,358.3,18717,0)
- ;;=20605^^122^1199^1^^^^1
+ ;;^UTILITY(U,$J,358.3,18400,1,4,0)
+ ;;=4^48550
+ ;;^UTILITY(U,$J,358.3,18401,0)
+ ;;=48551^^101^1178^3^^^^1
+ ;;^UTILITY(U,$J,358.3,18401,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18401,1,2,0)
+ ;;=2^PREP DONOR PANCREAS
+ ;;^UTILITY(U,$J,358.3,18401,1,4,0)
+ ;;=4^48551
+ ;;^UTILITY(U,$J,358.3,18402,0)
+ ;;=48552^^101^1178^4^^^^1
+ ;;^UTILITY(U,$J,358.3,18402,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18402,1,2,0)
+ ;;=2^PREP DONOR PANCREAS/VENOUS
+ ;;^UTILITY(U,$J,358.3,18402,1,4,0)
+ ;;=4^48552
+ ;;^UTILITY(U,$J,358.3,18403,0)
+ ;;=50360^^101^1179^13^^^^1
+ ;;^UTILITY(U,$J,358.3,18403,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18403,1,2,0)
+ ;;=2^TRANSPLANTATION OF KIDNEY
+ ;;^UTILITY(U,$J,358.3,18403,1,4,0)
+ ;;=4^50360
+ ;;^UTILITY(U,$J,358.3,18404,0)
+ ;;=50365^^101^1179^1^^^^1
+ ;;^UTILITY(U,$J,358.3,18404,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18404,1,2,0)
+ ;;=2^KIDNEY TRANS W/RECP NEPHRECTOMY
+ ;;^UTILITY(U,$J,358.3,18404,1,4,0)
+ ;;=4^50365
+ ;;^UTILITY(U,$J,358.3,18405,0)
+ ;;=50380^^101^1179^8^^^^1
+ ;;^UTILITY(U,$J,358.3,18405,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18405,1,2,0)
+ ;;=2^REIMPLANTATION OF KIDNEY
+ ;;^UTILITY(U,$J,358.3,18405,1,4,0)
+ ;;=4^50380
+ ;;^UTILITY(U,$J,358.3,18406,0)
+ ;;=50300^^101^1179^11^^^^1
+ ;;^UTILITY(U,$J,358.3,18406,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18406,1,2,0)
+ ;;=2^REMOVE CADAVER DONOR KIDNEY
+ ;;^UTILITY(U,$J,358.3,18406,1,4,0)
+ ;;=4^50300
+ ;;^UTILITY(U,$J,358.3,18407,0)
+ ;;=50320^^101^1179^12^^^^1
+ ;;^UTILITY(U,$J,358.3,18407,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18407,1,2,0)
+ ;;=2^REMOVE KIDNEY LIVING DONOR
+ ;;^UTILITY(U,$J,358.3,18407,1,4,0)
+ ;;=4^50320
+ ;;^UTILITY(U,$J,358.3,18408,0)
+ ;;=50547^^101^1179^2^^^^1
+ ;;^UTILITY(U,$J,358.3,18408,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18408,1,2,0)
+ ;;=2^LAPARO REMOVAL DONOR KIDNEY
+ ;;^UTILITY(U,$J,358.3,18408,1,4,0)
+ ;;=4^50547
+ ;;^UTILITY(U,$J,358.3,18409,0)
+ ;;=50340^^101^1179^10^^^^1
+ ;;^UTILITY(U,$J,358.3,18409,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18409,1,2,0)
+ ;;=2^REMOVAL OF KIDNEY
+ ;;^UTILITY(U,$J,358.3,18409,1,4,0)
+ ;;=4^50340
+ ;;^UTILITY(U,$J,358.3,18410,0)
+ ;;=50370^^101^1179^9^^^^1
+ ;;^UTILITY(U,$J,358.3,18410,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18410,1,2,0)
+ ;;=2^REM TRANSPLANT KIDNEY ALLOGRAFT
+ ;;^UTILITY(U,$J,358.3,18410,1,4,0)
+ ;;=4^50370
+ ;;^UTILITY(U,$J,358.3,18411,0)
+ ;;=50323^^101^1179^3^^^^1
+ ;;^UTILITY(U,$J,358.3,18411,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18411,1,2,0)
+ ;;=2^PREP CADAVER RENAL ALLOGRAFT
+ ;;^UTILITY(U,$J,358.3,18411,1,4,0)
+ ;;=4^50323
+ ;;^UTILITY(U,$J,358.3,18412,0)
+ ;;=50325^^101^1179^4^^^^1
+ ;;^UTILITY(U,$J,358.3,18412,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18412,1,2,0)
+ ;;=2^PREP DONOR RENAL GRAFT
+ ;;^UTILITY(U,$J,358.3,18412,1,4,0)
+ ;;=4^50325
+ ;;^UTILITY(U,$J,358.3,18413,0)
+ ;;=50327^^101^1179^7^^^^1
+ ;;^UTILITY(U,$J,358.3,18413,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18413,1,2,0)
+ ;;=2^PREP RENAL GRAFT/VENOUS EA
+ ;;^UTILITY(U,$J,358.3,18413,1,4,0)
+ ;;=4^50327
+ ;;^UTILITY(U,$J,358.3,18414,0)
+ ;;=50328^^101^1179^5^^^^1
+ ;;^UTILITY(U,$J,358.3,18414,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18414,1,2,0)
+ ;;=2^PREP RENAL GRAFT/ARTERIAL EA
+ ;;^UTILITY(U,$J,358.3,18414,1,4,0)
+ ;;=4^50328
+ ;;^UTILITY(U,$J,358.3,18415,0)
+ ;;=50329^^101^1179^6^^^^1
+ ;;^UTILITY(U,$J,358.3,18415,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18415,1,2,0)
+ ;;=2^PREP RENAL GRAFT/URETERAL EA
+ ;;^UTILITY(U,$J,358.3,18415,1,4,0)
+ ;;=4^50329
+ ;;^UTILITY(U,$J,358.3,18416,0)
+ ;;=33300^^101^1180^9^^^^1
+ ;;^UTILITY(U,$J,358.3,18416,1,0)
+ ;;=^358.31IA^4^2

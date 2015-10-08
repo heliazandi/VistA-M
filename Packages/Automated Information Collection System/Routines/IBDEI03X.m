@@ -1,350 +1,140 @@
-IBDEI03X ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
+IBDEI03X ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,4775,0)
- ;;=C83.04^^22^216^463
- ;;^UTILITY(U,$J,358.3,4775,1,0)
+ ;;^UTILITY(U,$J,358.3,1302,2)
+ ;;=^5002306
+ ;;^UTILITY(U,$J,358.3,1303,0)
+ ;;=D58.9^^3^39^38
+ ;;^UTILITY(U,$J,358.3,1303,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4775,1,3,0)
- ;;=3^Small Cell B-Cell Lymphoma,Axilla/Upper Limb Nodes
- ;;^UTILITY(U,$J,358.3,4775,1,4,0)
- ;;=4^C83.04
- ;;^UTILITY(U,$J,358.3,4775,2)
- ;;=^5001555
- ;;^UTILITY(U,$J,358.3,4776,0)
- ;;=C83.05^^22^216^466
- ;;^UTILITY(U,$J,358.3,4776,1,0)
+ ;;^UTILITY(U,$J,358.3,1303,1,3,0)
+ ;;=3^Hereditary hemolytic anemia, unspecified
+ ;;^UTILITY(U,$J,358.3,1303,1,4,0)
+ ;;=4^D58.9
+ ;;^UTILITY(U,$J,358.3,1303,2)
+ ;;=^5002322
+ ;;^UTILITY(U,$J,358.3,1304,0)
+ ;;=D59.0^^3^39^29
+ ;;^UTILITY(U,$J,358.3,1304,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4776,1,3,0)
- ;;=3^Small Cell B-Cell Lymphoma,Ing Region/Lower Limb Nodes
- ;;^UTILITY(U,$J,358.3,4776,1,4,0)
- ;;=4^C83.05
- ;;^UTILITY(U,$J,358.3,4776,2)
- ;;=^5001556
- ;;^UTILITY(U,$J,358.3,4777,0)
- ;;=C83.06^^22^216^468
- ;;^UTILITY(U,$J,358.3,4777,1,0)
+ ;;^UTILITY(U,$J,358.3,1304,1,3,0)
+ ;;=3^Drug-induced autoimmune hemolytic anemia
+ ;;^UTILITY(U,$J,358.3,1304,1,4,0)
+ ;;=4^D59.0
+ ;;^UTILITY(U,$J,358.3,1304,2)
+ ;;=^5002323
+ ;;^UTILITY(U,$J,358.3,1305,0)
+ ;;=D59.9^^3^39^2
+ ;;^UTILITY(U,$J,358.3,1305,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4777,1,3,0)
- ;;=3^Small Cell B-Cell Lymphoma,Intrapelvic Nodes
- ;;^UTILITY(U,$J,358.3,4777,1,4,0)
- ;;=4^C83.06
- ;;^UTILITY(U,$J,358.3,4777,2)
- ;;=^5001557
- ;;^UTILITY(U,$J,358.3,4778,0)
- ;;=C83.07^^22^216^471
- ;;^UTILITY(U,$J,358.3,4778,1,0)
+ ;;^UTILITY(U,$J,358.3,1305,1,3,0)
+ ;;=3^Acquired hemolytic anemia, unspecified
+ ;;^UTILITY(U,$J,358.3,1305,1,4,0)
+ ;;=4^D59.9
+ ;;^UTILITY(U,$J,358.3,1305,2)
+ ;;=^5002330
+ ;;^UTILITY(U,$J,358.3,1306,0)
+ ;;=D61.82^^3^39^89
+ ;;^UTILITY(U,$J,358.3,1306,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4778,1,3,0)
- ;;=3^Small Cell B-Cell Lymphoma,Spleen
- ;;^UTILITY(U,$J,358.3,4778,1,4,0)
- ;;=4^C83.07
- ;;^UTILITY(U,$J,358.3,4778,2)
- ;;=^5001558
- ;;^UTILITY(U,$J,358.3,4779,0)
- ;;=C83.08^^22^216^470
- ;;^UTILITY(U,$J,358.3,4779,1,0)
+ ;;^UTILITY(U,$J,358.3,1306,1,3,0)
+ ;;=3^Myelophthisis
+ ;;^UTILITY(U,$J,358.3,1306,1,4,0)
+ ;;=4^D61.82
+ ;;^UTILITY(U,$J,358.3,1306,2)
+ ;;=^334037
+ ;;^UTILITY(U,$J,358.3,1307,0)
+ ;;=D61.9^^3^39^16
+ ;;^UTILITY(U,$J,358.3,1307,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4779,1,3,0)
- ;;=3^Small Cell B-Cell Lymphoma,Mult Site Nodes
- ;;^UTILITY(U,$J,358.3,4779,1,4,0)
- ;;=4^C83.08
- ;;^UTILITY(U,$J,358.3,4779,2)
- ;;=^5001559
- ;;^UTILITY(U,$J,358.3,4780,0)
- ;;=C83.09^^22^216^464
- ;;^UTILITY(U,$J,358.3,4780,1,0)
+ ;;^UTILITY(U,$J,358.3,1307,1,3,0)
+ ;;=3^Aplastic anemia, unspecified
+ ;;^UTILITY(U,$J,358.3,1307,1,4,0)
+ ;;=4^D61.9
+ ;;^UTILITY(U,$J,358.3,1307,2)
+ ;;=^5002342
+ ;;^UTILITY(U,$J,358.3,1308,0)
+ ;;=D62.^^3^39^10
+ ;;^UTILITY(U,$J,358.3,1308,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4780,1,3,0)
- ;;=3^Small Cell B-Cell Lymphoma,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,4780,1,4,0)
- ;;=4^C83.09
- ;;^UTILITY(U,$J,358.3,4780,2)
- ;;=^5001560
- ;;^UTILITY(U,$J,358.3,4781,0)
- ;;=C83.10^^22^216^295
- ;;^UTILITY(U,$J,358.3,4781,1,0)
+ ;;^UTILITY(U,$J,358.3,1308,1,3,0)
+ ;;=3^Acute posthemorrhagic anemia
+ ;;^UTILITY(U,$J,358.3,1308,1,4,0)
+ ;;=4^D62.
+ ;;^UTILITY(U,$J,358.3,1308,2)
+ ;;=^267986
+ ;;^UTILITY(U,$J,358.3,1309,0)
+ ;;=D63.1^^3^39^11
+ ;;^UTILITY(U,$J,358.3,1309,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4781,1,3,0)
- ;;=3^Mantle Cell Lymphoma,Unspec Site
- ;;^UTILITY(U,$J,358.3,4781,1,4,0)
- ;;=4^C83.10
- ;;^UTILITY(U,$J,358.3,4781,2)
- ;;=^5001561
- ;;^UTILITY(U,$J,358.3,4782,0)
- ;;=C83.11^^22^216^288
- ;;^UTILITY(U,$J,358.3,4782,1,0)
+ ;;^UTILITY(U,$J,358.3,1309,1,3,0)
+ ;;=3^Anemia in chronic kidney disease
+ ;;^UTILITY(U,$J,358.3,1309,1,4,0)
+ ;;=4^D63.1
+ ;;^UTILITY(U,$J,358.3,1309,2)
+ ;;=^332908
+ ;;^UTILITY(U,$J,358.3,1310,0)
+ ;;=D63.0^^3^39^12
+ ;;^UTILITY(U,$J,358.3,1310,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4782,1,3,0)
- ;;=3^Mantle Cell Lymphoma,Head/Face/Neck Nodes
- ;;^UTILITY(U,$J,358.3,4782,1,4,0)
- ;;=4^C83.11
- ;;^UTILITY(U,$J,358.3,4782,2)
- ;;=^5001562
- ;;^UTILITY(U,$J,358.3,4783,0)
- ;;=C83.12^^22^216^292
- ;;^UTILITY(U,$J,358.3,4783,1,0)
+ ;;^UTILITY(U,$J,358.3,1310,1,3,0)
+ ;;=3^Anemia in neoplastic disease
+ ;;^UTILITY(U,$J,358.3,1310,1,4,0)
+ ;;=4^D63.0
+ ;;^UTILITY(U,$J,358.3,1310,2)
+ ;;=^321978
+ ;;^UTILITY(U,$J,358.3,1311,0)
+ ;;=D63.8^^3^39^13
+ ;;^UTILITY(U,$J,358.3,1311,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4783,1,3,0)
- ;;=3^Mantle Cell Lymphoma,Intrathoracic Nodes
- ;;^UTILITY(U,$J,358.3,4783,1,4,0)
- ;;=4^C83.12
- ;;^UTILITY(U,$J,358.3,4783,2)
- ;;=^5001563
- ;;^UTILITY(U,$J,358.3,4784,0)
- ;;=C83.13^^22^216^290
- ;;^UTILITY(U,$J,358.3,4784,1,0)
+ ;;^UTILITY(U,$J,358.3,1311,1,3,0)
+ ;;=3^Anemia in other chronic diseases classified elsewhere
+ ;;^UTILITY(U,$J,358.3,1311,1,4,0)
+ ;;=4^D63.8
+ ;;^UTILITY(U,$J,358.3,1311,2)
+ ;;=^5002343
+ ;;^UTILITY(U,$J,358.3,1312,0)
+ ;;=D64.9^^3^39^14
+ ;;^UTILITY(U,$J,358.3,1312,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4784,1,3,0)
- ;;=3^Mantle Cell Lymphoma,Intra-Abdominal Nodes
- ;;^UTILITY(U,$J,358.3,4784,1,4,0)
- ;;=4^C83.13
- ;;^UTILITY(U,$J,358.3,4784,2)
- ;;=^5001564
- ;;^UTILITY(U,$J,358.3,4785,0)
- ;;=C83.14^^22^216^286
- ;;^UTILITY(U,$J,358.3,4785,1,0)
+ ;;^UTILITY(U,$J,358.3,1312,1,3,0)
+ ;;=3^Anemia, unspecified
+ ;;^UTILITY(U,$J,358.3,1312,1,4,0)
+ ;;=4^D64.9
+ ;;^UTILITY(U,$J,358.3,1312,2)
+ ;;=^5002351
+ ;;^UTILITY(U,$J,358.3,1313,0)
+ ;;=D68.0^^3^39^133
+ ;;^UTILITY(U,$J,358.3,1313,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4785,1,3,0)
- ;;=3^Mantle Cell Lymphoma,Axilla/Upper Limb Nodes
- ;;^UTILITY(U,$J,358.3,4785,1,4,0)
- ;;=4^C83.14
- ;;^UTILITY(U,$J,358.3,4785,2)
- ;;=^5001565
- ;;^UTILITY(U,$J,358.3,4786,0)
- ;;=C83.15^^22^216^289
- ;;^UTILITY(U,$J,358.3,4786,1,0)
+ ;;^UTILITY(U,$J,358.3,1313,1,3,0)
+ ;;=3^Von Willebrand's disease
+ ;;^UTILITY(U,$J,358.3,1313,1,4,0)
+ ;;=4^D68.0
+ ;;^UTILITY(U,$J,358.3,1313,2)
+ ;;=^127267
+ ;;^UTILITY(U,$J,358.3,1314,0)
+ ;;=D68.4^^3^39^1
+ ;;^UTILITY(U,$J,358.3,1314,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4786,1,3,0)
- ;;=3^Mantle Cell Lymphoma,Ing Region/Lower Limb Nodes
- ;;^UTILITY(U,$J,358.3,4786,1,4,0)
- ;;=4^C83.15
- ;;^UTILITY(U,$J,358.3,4786,2)
- ;;=^5001566
- ;;^UTILITY(U,$J,358.3,4787,0)
- ;;=C83.16^^22^216^291
- ;;^UTILITY(U,$J,358.3,4787,1,0)
+ ;;^UTILITY(U,$J,358.3,1314,1,3,0)
+ ;;=3^Acquired coagulation factor deficiency
+ ;;^UTILITY(U,$J,358.3,1314,1,4,0)
+ ;;=4^D68.4
+ ;;^UTILITY(U,$J,358.3,1314,2)
+ ;;=^2235
+ ;;^UTILITY(U,$J,358.3,1315,0)
+ ;;=D68.32^^3^39^36
+ ;;^UTILITY(U,$J,358.3,1315,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4787,1,3,0)
- ;;=3^Mantle Cell Lymphoma,Intrapelvic Nodes
- ;;^UTILITY(U,$J,358.3,4787,1,4,0)
- ;;=4^C83.16
- ;;^UTILITY(U,$J,358.3,4787,2)
- ;;=^5001567
- ;;^UTILITY(U,$J,358.3,4788,0)
- ;;=C83.17^^22^216^294
- ;;^UTILITY(U,$J,358.3,4788,1,0)
+ ;;^UTILITY(U,$J,358.3,1315,1,3,0)
+ ;;=3^Hemorrhagic disord d/t extrinsic circulating anticoagulants
+ ;;^UTILITY(U,$J,358.3,1315,1,4,0)
+ ;;=4^D68.32
+ ;;^UTILITY(U,$J,358.3,1315,2)
+ ;;=^5002357
+ ;;^UTILITY(U,$J,358.3,1316,0)
+ ;;=D68.9^^3^39^28
+ ;;^UTILITY(U,$J,358.3,1316,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4788,1,3,0)
- ;;=3^Mantle Cell Lymphoma,Spleen
- ;;^UTILITY(U,$J,358.3,4788,1,4,0)
- ;;=4^C83.17
- ;;^UTILITY(U,$J,358.3,4788,2)
- ;;=^5001568
- ;;^UTILITY(U,$J,358.3,4789,0)
- ;;=C83.18^^22^216^293
- ;;^UTILITY(U,$J,358.3,4789,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4789,1,3,0)
- ;;=3^Mantle Cell Lymphoma,Mult Site Nodes
- ;;^UTILITY(U,$J,358.3,4789,1,4,0)
- ;;=4^C83.18
- ;;^UTILITY(U,$J,358.3,4789,2)
- ;;=^5001569
- ;;^UTILITY(U,$J,358.3,4790,0)
- ;;=C83.19^^22^216^287
- ;;^UTILITY(U,$J,358.3,4790,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4790,1,3,0)
- ;;=3^Mantle Cell Lymphoma,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,4790,1,4,0)
- ;;=4^C83.19
- ;;^UTILITY(U,$J,358.3,4790,2)
- ;;=^5001570
- ;;^UTILITY(U,$J,358.3,4791,0)
- ;;=C83.30^^22^216^133
- ;;^UTILITY(U,$J,358.3,4791,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4791,1,3,0)
- ;;=3^Diffuse Large B-Cell Lymphoma,Unspec Site
- ;;^UTILITY(U,$J,358.3,4791,1,4,0)
- ;;=4^C83.30
- ;;^UTILITY(U,$J,358.3,4791,2)
- ;;=^5001571
- ;;^UTILITY(U,$J,358.3,4792,0)
- ;;=C83.31^^22^216^126
- ;;^UTILITY(U,$J,358.3,4792,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4792,1,3,0)
- ;;=3^Diffuse Large B-Cell Lymphoma,Head/Face/Neck Nodes
- ;;^UTILITY(U,$J,358.3,4792,1,4,0)
- ;;=4^C83.31
- ;;^UTILITY(U,$J,358.3,4792,2)
- ;;=^5001572
- ;;^UTILITY(U,$J,358.3,4793,0)
- ;;=C83.32^^22^216^130
- ;;^UTILITY(U,$J,358.3,4793,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4793,1,3,0)
- ;;=3^Diffuse Large B-Cell Lymphoma,Intrathoracic Nodes
- ;;^UTILITY(U,$J,358.3,4793,1,4,0)
- ;;=4^C83.32
- ;;^UTILITY(U,$J,358.3,4793,2)
- ;;=^5001573
- ;;^UTILITY(U,$J,358.3,4794,0)
- ;;=C83.33^^22^216^128
- ;;^UTILITY(U,$J,358.3,4794,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4794,1,3,0)
- ;;=3^Diffuse Large B-Cell Lymphoma,Intra-Abdominal Nodes
- ;;^UTILITY(U,$J,358.3,4794,1,4,0)
- ;;=4^C83.33
- ;;^UTILITY(U,$J,358.3,4794,2)
- ;;=^5001574
- ;;^UTILITY(U,$J,358.3,4795,0)
- ;;=C83.34^^22^216^124
- ;;^UTILITY(U,$J,358.3,4795,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4795,1,3,0)
- ;;=3^Diffuse Large B-Cell Lymphoma,Axilla/Upper Limb Nodes
- ;;^UTILITY(U,$J,358.3,4795,1,4,0)
- ;;=4^C83.34
- ;;^UTILITY(U,$J,358.3,4795,2)
- ;;=^5001575
- ;;^UTILITY(U,$J,358.3,4796,0)
- ;;=C83.35^^22^216^127
- ;;^UTILITY(U,$J,358.3,4796,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4796,1,3,0)
- ;;=3^Diffuse Large B-Cell Lymphoma,Ing Region/Lower Limb
- ;;^UTILITY(U,$J,358.3,4796,1,4,0)
- ;;=4^C83.35
- ;;^UTILITY(U,$J,358.3,4796,2)
- ;;=^5001576
- ;;^UTILITY(U,$J,358.3,4797,0)
- ;;=C83.36^^22^216^129
- ;;^UTILITY(U,$J,358.3,4797,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4797,1,3,0)
- ;;=3^Diffuse Large B-Cell Lymphoma,Intrapelvic Nodes
- ;;^UTILITY(U,$J,358.3,4797,1,4,0)
- ;;=4^C83.36
- ;;^UTILITY(U,$J,358.3,4797,2)
- ;;=^5001577
- ;;^UTILITY(U,$J,358.3,4798,0)
- ;;=C83.37^^22^216^132
- ;;^UTILITY(U,$J,358.3,4798,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4798,1,3,0)
- ;;=3^Diffuse Large B-Cell Lymphoma,Spleen
- ;;^UTILITY(U,$J,358.3,4798,1,4,0)
- ;;=4^C83.37
- ;;^UTILITY(U,$J,358.3,4798,2)
- ;;=^5001578
- ;;^UTILITY(U,$J,358.3,4799,0)
- ;;=C83.38^^22^216^131
- ;;^UTILITY(U,$J,358.3,4799,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4799,1,3,0)
- ;;=3^Diffuse Large B-Cell Lymphoma,Mult Site Nodes
- ;;^UTILITY(U,$J,358.3,4799,1,4,0)
- ;;=4^C83.38
- ;;^UTILITY(U,$J,358.3,4799,2)
- ;;=^5001579
- ;;^UTILITY(U,$J,358.3,4800,0)
- ;;=C83.39^^22^216^125
- ;;^UTILITY(U,$J,358.3,4800,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4800,1,3,0)
- ;;=3^Diffuse Large B-Cell Lymphoma,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,4800,1,4,0)
- ;;=4^C83.39
- ;;^UTILITY(U,$J,358.3,4800,2)
- ;;=^5001580
- ;;^UTILITY(U,$J,358.3,4801,0)
- ;;=C83.50^^22^216^254
- ;;^UTILITY(U,$J,358.3,4801,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4801,1,3,0)
- ;;=3^Lymphoblastic Lymphoma,Unspec Site
- ;;^UTILITY(U,$J,358.3,4801,1,4,0)
- ;;=4^C83.50
- ;;^UTILITY(U,$J,358.3,4801,2)
- ;;=^5001581
- ;;^UTILITY(U,$J,358.3,4802,0)
- ;;=C83.51^^22^216^247
- ;;^UTILITY(U,$J,358.3,4802,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4802,1,3,0)
- ;;=3^Lymphoblastic Lymphoma,Head/Face/Neck Nodes
- ;;^UTILITY(U,$J,358.3,4802,1,4,0)
- ;;=4^C83.51
- ;;^UTILITY(U,$J,358.3,4802,2)
- ;;=^5001582
- ;;^UTILITY(U,$J,358.3,4803,0)
- ;;=C83.52^^22^216^251
- ;;^UTILITY(U,$J,358.3,4803,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4803,1,3,0)
- ;;=3^Lymphoblastic Lymphoma,Intrathoracic Nodes
- ;;^UTILITY(U,$J,358.3,4803,1,4,0)
- ;;=4^C83.52
- ;;^UTILITY(U,$J,358.3,4803,2)
- ;;=^5001583
- ;;^UTILITY(U,$J,358.3,4804,0)
- ;;=C83.53^^22^216^249
- ;;^UTILITY(U,$J,358.3,4804,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4804,1,3,0)
- ;;=3^Lymphoblastic Lymphoma,Intra-Abdominal Nodes
- ;;^UTILITY(U,$J,358.3,4804,1,4,0)
- ;;=4^C83.53
- ;;^UTILITY(U,$J,358.3,4804,2)
- ;;=^5001584
- ;;^UTILITY(U,$J,358.3,4805,0)
- ;;=C83.54^^22^216^245
- ;;^UTILITY(U,$J,358.3,4805,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4805,1,3,0)
- ;;=3^Lymphoblastic Lymphoma,Axilla/Upper Limb Nodes
- ;;^UTILITY(U,$J,358.3,4805,1,4,0)
- ;;=4^C83.54
- ;;^UTILITY(U,$J,358.3,4805,2)
- ;;=^5001585
- ;;^UTILITY(U,$J,358.3,4806,0)
- ;;=C83.55^^22^216^248
- ;;^UTILITY(U,$J,358.3,4806,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4806,1,3,0)
- ;;=3^Lymphoblastic Lymphoma,Ing Region/Lower Limb Nodes
- ;;^UTILITY(U,$J,358.3,4806,1,4,0)
- ;;=4^C83.55
- ;;^UTILITY(U,$J,358.3,4806,2)
- ;;=^5001586
- ;;^UTILITY(U,$J,358.3,4807,0)
- ;;=C83.56^^22^216^250
- ;;^UTILITY(U,$J,358.3,4807,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4807,1,3,0)
- ;;=3^Lymphoblastic Lymphoma,Intrapelvic Nodes
- ;;^UTILITY(U,$J,358.3,4807,1,4,0)
- ;;=4^C83.56
- ;;^UTILITY(U,$J,358.3,4807,2)
- ;;=^5001587
- ;;^UTILITY(U,$J,358.3,4808,0)
- ;;=C83.57^^22^216^253
- ;;^UTILITY(U,$J,358.3,4808,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4808,1,3,0)
- ;;=3^Lymphoblastic Lymphoma,Spleen
- ;;^UTILITY(U,$J,358.3,4808,1,4,0)
- ;;=4^C83.57
- ;;^UTILITY(U,$J,358.3,4808,2)
- ;;=^5001588
- ;;^UTILITY(U,$J,358.3,4809,0)
- ;;=C83.58^^22^216^252
- ;;^UTILITY(U,$J,358.3,4809,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4809,1,3,0)
- ;;=3^Lymphoblastic Lymphoma,Mult Site Nodes

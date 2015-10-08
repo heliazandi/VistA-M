@@ -1,128 +1,142 @@
-IBDEI0ZT ; ; 12-AUG-2014
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 15, 2014
+IBDEI0ZT ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,17793,1,5,0)
- ;;=5^Histrionic Personality Disorder
- ;;^UTILITY(U,$J,358.3,17793,2)
- ;;=Histrionic Personality Disorder^57763
- ;;^UTILITY(U,$J,358.3,17794,0)
- ;;=301.81^^116^1109^11
- ;;^UTILITY(U,$J,358.3,17794,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17794,1,2,0)
- ;;=2^301.81
- ;;^UTILITY(U,$J,358.3,17794,1,5,0)
- ;;=5^Narcissistic Personality Disorder
- ;;^UTILITY(U,$J,358.3,17794,2)
- ;;=Narcissistic Personality Disorder^265353
- ;;^UTILITY(U,$J,358.3,17795,0)
- ;;=301.0^^116^1109^12
- ;;^UTILITY(U,$J,358.3,17795,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17795,1,2,0)
- ;;=2^301.0
- ;;^UTILITY(U,$J,358.3,17795,1,5,0)
- ;;=5^Paranoid Personality Disorder
- ;;^UTILITY(U,$J,358.3,17795,2)
- ;;=Paranoid Personality Disorder^89982
- ;;^UTILITY(U,$J,358.3,17796,0)
- ;;=301.9^^116^1109^16
- ;;^UTILITY(U,$J,358.3,17796,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17796,1,2,0)
- ;;=2^301.9
- ;;^UTILITY(U,$J,358.3,17796,1,5,0)
- ;;=5^Unspecified Personality Disorder
- ;;^UTILITY(U,$J,358.3,17796,2)
- ;;=Unspecified Personality Disorder^92451
- ;;^UTILITY(U,$J,358.3,17797,0)
- ;;=301.20^^116^1109^14
- ;;^UTILITY(U,$J,358.3,17797,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17797,1,2,0)
- ;;=2^301.20
- ;;^UTILITY(U,$J,358.3,17797,1,5,0)
- ;;=5^Schizoid Personality Disorder
- ;;^UTILITY(U,$J,358.3,17797,2)
- ;;=^108271
- ;;^UTILITY(U,$J,358.3,17798,0)
- ;;=301.22^^116^1109^15
- ;;^UTILITY(U,$J,358.3,17798,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17798,1,2,0)
- ;;=2^301.22
- ;;^UTILITY(U,$J,358.3,17798,1,5,0)
- ;;=5^Schizotypal Personality Disorder
- ;;^UTILITY(U,$J,358.3,17798,2)
- ;;=Schizotypal Personality Disorder^108367
- ;;^UTILITY(U,$J,358.3,17799,0)
- ;;=301.4^^116^1109^4
- ;;^UTILITY(U,$J,358.3,17799,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17799,1,2,0)
- ;;=2^301.4
- ;;^UTILITY(U,$J,358.3,17799,1,5,0)
- ;;=5^Compulsive Personality Disorder
- ;;^UTILITY(U,$J,358.3,17799,2)
- ;;=Compulsive Personality Disorder^27122
- ;;^UTILITY(U,$J,358.3,17800,0)
- ;;=301.84^^116^1109^13
- ;;^UTILITY(U,$J,358.3,17800,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17800,1,2,0)
- ;;=2^301.84
- ;;^UTILITY(U,$J,358.3,17800,1,5,0)
- ;;=5^Passive-Aggressive Personality Dis
- ;;^UTILITY(U,$J,358.3,17800,2)
- ;;=Passive-Aggressive Personality Dis^90602
- ;;^UTILITY(U,$J,358.3,17801,0)
- ;;=301.11^^116^1109^9
- ;;^UTILITY(U,$J,358.3,17801,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17801,1,2,0)
- ;;=2^301.11
- ;;^UTILITY(U,$J,358.3,17801,1,5,0)
- ;;=5^Hypomanic Personality D/O,Chr
- ;;^UTILITY(U,$J,358.3,17801,2)
- ;;=^268171
- ;;^UTILITY(U,$J,358.3,17802,0)
- ;;=301.12^^116^1109^7
- ;;^UTILITY(U,$J,358.3,17802,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17802,1,2,0)
- ;;=2^301.12
- ;;^UTILITY(U,$J,358.3,17802,1,5,0)
- ;;=5^Depressive Personality D/O,Chr
- ;;^UTILITY(U,$J,358.3,17802,2)
- ;;=^268173
- ;;^UTILITY(U,$J,358.3,17803,0)
- ;;=301.13^^116^1109^5
- ;;^UTILITY(U,$J,358.3,17803,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17803,1,2,0)
- ;;=2^301.13
- ;;^UTILITY(U,$J,358.3,17803,1,5,0)
- ;;=5^Cyclothymic Disorder
- ;;^UTILITY(U,$J,358.3,17803,2)
- ;;=^30028
- ;;^UTILITY(U,$J,358.3,17804,0)
- ;;=301.21^^116^1109^10
- ;;^UTILITY(U,$J,358.3,17804,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17804,1,2,0)
- ;;=2^301.21
- ;;^UTILITY(U,$J,358.3,17804,1,5,0)
- ;;=5^Introverted Personality
- ;;^UTILITY(U,$J,358.3,17804,2)
- ;;=^268174
- ;;^UTILITY(U,$J,358.3,17805,0)
- ;;=780.52^^116^1110^3
- ;;^UTILITY(U,$J,358.3,17805,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17805,1,2,0)
- ;;=2^780.52
- ;;^UTILITY(U,$J,358.3,17805,1,5,0)
- ;;=5^Insomnia
- ;;^UTILITY(U,$J,358.3,17805,2)
- ;;=^87662
+ ;;^UTILITY(U,$J,358.3,17469,1,3,0)
+ ;;=3^784.61
+ ;;^UTILITY(U,$J,358.3,17469,1,4,0)
+ ;;=4^Alexia And Dyslexia
+ ;;^UTILITY(U,$J,358.3,17469,2)
+ ;;=^4790
+ ;;^UTILITY(U,$J,358.3,17470,0)
+ ;;=784.69^^90^1081^10
+ ;;^UTILITY(U,$J,358.3,17470,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17470,1,3,0)
+ ;;=3^784.69
+ ;;^UTILITY(U,$J,358.3,17470,1,4,0)
+ ;;=4^Symbolic Dysfunction, Apraxia
+ ;;^UTILITY(U,$J,358.3,17470,2)
+ ;;=^88194
+ ;;^UTILITY(U,$J,358.3,17471,0)
+ ;;=784.51^^90^1081^5
+ ;;^UTILITY(U,$J,358.3,17471,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17471,1,3,0)
+ ;;=3^784.51
+ ;;^UTILITY(U,$J,358.3,17471,1,4,0)
+ ;;=4^Dysarthria
+ ;;^UTILITY(U,$J,358.3,17471,2)
+ ;;=^338286
+ ;;^UTILITY(U,$J,358.3,17472,0)
+ ;;=784.59^^90^1081^8
+ ;;^UTILITY(U,$J,358.3,17472,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17472,1,3,0)
+ ;;=3^784.59
+ ;;^UTILITY(U,$J,358.3,17472,1,4,0)
+ ;;=4^Speech Disturbance NEC
+ ;;^UTILITY(U,$J,358.3,17472,2)
+ ;;=^338287
+ ;;^UTILITY(U,$J,358.3,17473,0)
+ ;;=V57.3^^90^1081^9
+ ;;^UTILITY(U,$J,358.3,17473,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17473,1,3,0)
+ ;;=3^V57.3
+ ;;^UTILITY(U,$J,358.3,17473,1,4,0)
+ ;;=4^Speech-Language Therapy
+ ;;^UTILITY(U,$J,358.3,17473,2)
+ ;;=^338565
+ ;;^UTILITY(U,$J,358.3,17474,0)
+ ;;=V55.0^^90^1081^4
+ ;;^UTILITY(U,$J,358.3,17474,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17474,1,3,0)
+ ;;=3^V55.0
+ ;;^UTILITY(U,$J,358.3,17474,1,4,0)
+ ;;=4^Atten to Tracheostomy
+ ;;^UTILITY(U,$J,358.3,17474,2)
+ ;;=^295516
+ ;;^UTILITY(U,$J,358.3,17475,0)
+ ;;=784.40^^90^1081^11
+ ;;^UTILITY(U,$J,358.3,17475,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17475,1,3,0)
+ ;;=3^784.40
+ ;;^UTILITY(U,$J,358.3,17475,1,4,0)
+ ;;=4^Voice/Resonance Disturb NOS
+ ;;^UTILITY(U,$J,358.3,17475,2)
+ ;;=^338558
+ ;;^UTILITY(U,$J,358.3,17476,0)
+ ;;=V41.4^^90^1081^7
+ ;;^UTILITY(U,$J,358.3,17476,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17476,1,3,0)
+ ;;=3^V41.4
+ ;;^UTILITY(U,$J,358.3,17476,1,4,0)
+ ;;=4^Prob w/ Voice Production
+ ;;^UTILITY(U,$J,358.3,17476,2)
+ ;;=^295431
+ ;;^UTILITY(U,$J,358.3,17477,0)
+ ;;=784.42^^90^1081^6
+ ;;^UTILITY(U,$J,358.3,17477,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17477,1,3,0)
+ ;;=3^784.42
+ ;;^UTILITY(U,$J,358.3,17477,1,4,0)
+ ;;=4^Dysphonia
+ ;;^UTILITY(U,$J,358.3,17477,2)
+ ;;=^338283
+ ;;^UTILITY(U,$J,358.3,17478,0)
+ ;;=V10.00^^90^1082^2
+ ;;^UTILITY(U,$J,358.3,17478,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17478,1,3,0)
+ ;;=3^V10.00
+ ;;^UTILITY(U,$J,358.3,17478,1,4,0)
+ ;;=4^Hx of GI Tract CA
+ ;;^UTILITY(U,$J,358.3,17478,2)
+ ;;=^295202
+ ;;^UTILITY(U,$J,358.3,17479,0)
+ ;;=V10.01^^90^1082^5
+ ;;^UTILITY(U,$J,358.3,17479,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17479,1,3,0)
+ ;;=3^V10.01
+ ;;^UTILITY(U,$J,358.3,17479,1,4,0)
+ ;;=4^Hx of Tongue CA
+ ;;^UTILITY(U,$J,358.3,17479,2)
+ ;;=^295203
+ ;;^UTILITY(U,$J,358.3,17480,0)
+ ;;=V10.02^^90^1082^4
+ ;;^UTILITY(U,$J,358.3,17480,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17480,1,3,0)
+ ;;=3^V10.02
+ ;;^UTILITY(U,$J,358.3,17480,1,4,0)
+ ;;=4^Hx of Oral Cavity & Pharynx CA
+ ;;^UTILITY(U,$J,358.3,17480,2)
+ ;;=^295204
+ ;;^UTILITY(U,$J,358.3,17481,0)
+ ;;=V10.03^^90^1082^1
+ ;;^UTILITY(U,$J,358.3,17481,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17481,1,3,0)
+ ;;=3^V10.03
+ ;;^UTILITY(U,$J,358.3,17481,1,4,0)
+ ;;=4^Hx of Esophagus CA
+ ;;^UTILITY(U,$J,358.3,17481,2)
+ ;;=^295205
+ ;;^UTILITY(U,$J,358.3,17482,0)
+ ;;=V10.12^^90^1082^6
+ ;;^UTILITY(U,$J,358.3,17482,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17482,1,3,0)
+ ;;=3^V10.12
+ ;;^UTILITY(U,$J,358.3,17482,1,4,0)
+ ;;=4^Hx of Trachea CA
+ ;;^UTILITY(U,$J,358.3,17482,2)
+ ;;=^295212
+ ;;^UTILITY(U,$J,358.3,17483,0)
+ ;;=V10.21^^90^1082^3

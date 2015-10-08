@@ -1,58 +1,144 @@
-IBDEI08D ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
- Q:'DIFQ(358.7)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI08D ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.7,0,"GL")
- ;;=^IBE(358.7,
- ;;^DIC("B","IMP/EXP FORM LINE",358.7)
- ;;=
- ;;^DIC(358.7,"%D",0)
- ;;=^^3^3^2940217^
- ;;^DIC(358.7,"%D",1,0)
- ;;=This file is nearly identical to file #357.7. It is used by the
- ;;^DIC(358.7,"%D",2,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.7,"%D",3,0)
- ;;=that is being imported or exported.
- ;;^DD(358.7,0)
- ;;=FIELD^^.08^8
- ;;^DD(358.7,0,"DDA")
- ;;=N
- ;;^DD(358.7,0,"DT")
- ;;=2950717
- ;;^DD(358.7,0,"ID",.02)
- ;;=W " STARTING COL=",$P(^(0),U,2)+1
- ;;^DD(358.7,0,"ID",.03)
- ;;=W " STARTING ROW=",$P(^(0),U,3)+1
- ;;^DD(358.7,0,"ID",.06)
- ;;=W ""
- ;;^DD(358.7,0,"IX","B",358.7,.01)
- ;;=
- ;;^DD(358.7,0,"IX","C",358.7,.06)
- ;;=
- ;;^DD(358.7,0,"NM","IMP/EXP FORM LINE")
- ;;=
- ;;^DD(358.7,0,"VRPK")
- ;;=IBD
- ;;^DD(358.7,.01,0)
- ;;=NAME^RF^^0;1^K:$L(X)>30!(X?.N)!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.7,.01,1,0)
- ;;=^.1
- ;;^DD(358.7,.01,1,1,0)
- ;;=358.7^B
- ;;^DD(358.7,.01,1,1,1)
- ;;=S ^IBE(358.7,"B",$E(X,1,30),DA)=""
- ;;^DD(358.7,.01,1,1,2)
- ;;=K ^IBE(358.7,"B",$E(X,1,30),DA)
- ;;^DD(358.7,.01,3)
- ;;=NAME MUST BE 3-30 CHARACTERS, NOT NUMERIC OR STARTING WITH PUNCTUATION
- ;;^DD(358.7,.01,21,0)
- ;;=^^4^4^2930527^
- ;;^DD(358.7,.01,21,1,0)
- ;;= 
- ;;^DD(358.7,.01,21,2,0)
- ;;=The name given to the line. Lines should be given names that will allow
- ;;^DD(358.7,.01,21,3,0)
- ;;=them to be identifies, such as V(1,1), meaning a vertical line starting at
- ;;^DD(358.7,.01,21,4,0)
- ;;=coordinates (1,1).
+ ;;^UTILITY(U,$J,358.3,3438,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3438,1,2,0)
+ ;;=2^309.89
+ ;;^UTILITY(U,$J,358.3,3438,1,5,0)
+ ;;=5^Adj Reaction NEC
+ ;;^UTILITY(U,$J,358.3,3438,2)
+ ;;=^268313
+ ;;^UTILITY(U,$J,358.3,3439,0)
+ ;;=300.00^^11^146^4
+ ;;^UTILITY(U,$J,358.3,3439,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3439,1,2,0)
+ ;;=2^300.00
+ ;;^UTILITY(U,$J,358.3,3439,1,5,0)
+ ;;=5^Anxiety State
+ ;;^UTILITY(U,$J,358.3,3439,2)
+ ;;=^9200
+ ;;^UTILITY(U,$J,358.3,3440,0)
+ ;;=300.01^^11^146^9
+ ;;^UTILITY(U,$J,358.3,3440,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3440,1,2,0)
+ ;;=2^300.01
+ ;;^UTILITY(U,$J,358.3,3440,1,5,0)
+ ;;=5^Panic Disord w/o Agoraphobia
+ ;;^UTILITY(U,$J,358.3,3440,2)
+ ;;=^89489
+ ;;^UTILITY(U,$J,358.3,3441,0)
+ ;;=300.02^^11^146^7
+ ;;^UTILITY(U,$J,358.3,3441,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3441,1,2,0)
+ ;;=2^300.02
+ ;;^UTILITY(U,$J,358.3,3441,1,5,0)
+ ;;=5^Generalized Anxiety Dis
+ ;;^UTILITY(U,$J,358.3,3441,2)
+ ;;=^50059
+ ;;^UTILITY(U,$J,358.3,3442,0)
+ ;;=300.20^^11^146^14
+ ;;^UTILITY(U,$J,358.3,3442,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3442,1,2,0)
+ ;;=2^300.20
+ ;;^UTILITY(U,$J,358.3,3442,1,5,0)
+ ;;=5^Phobia, Unspecified
+ ;;^UTILITY(U,$J,358.3,3442,2)
+ ;;=^93428
+ ;;^UTILITY(U,$J,358.3,3443,0)
+ ;;=300.21^^11^146^10
+ ;;^UTILITY(U,$J,358.3,3443,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3443,1,2,0)
+ ;;=2^300.21
+ ;;^UTILITY(U,$J,358.3,3443,1,5,0)
+ ;;=5^Panic W/Agoraphobia
+ ;;^UTILITY(U,$J,358.3,3443,2)
+ ;;=^268168
+ ;;^UTILITY(U,$J,358.3,3444,0)
+ ;;=300.22^^11^146^3
+ ;;^UTILITY(U,$J,358.3,3444,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3444,1,2,0)
+ ;;=2^300.22
+ ;;^UTILITY(U,$J,358.3,3444,1,5,0)
+ ;;=5^Agoraphobia w/o Panic
+ ;;^UTILITY(U,$J,358.3,3444,2)
+ ;;=^4218
+ ;;^UTILITY(U,$J,358.3,3445,0)
+ ;;=300.23^^11^146^13
+ ;;^UTILITY(U,$J,358.3,3445,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3445,1,2,0)
+ ;;=2^300.23
+ ;;^UTILITY(U,$J,358.3,3445,1,5,0)
+ ;;=5^Phobia, Social
+ ;;^UTILITY(U,$J,358.3,3445,2)
+ ;;=^93420
+ ;;^UTILITY(U,$J,358.3,3446,0)
+ ;;=300.29^^11^146^12
+ ;;^UTILITY(U,$J,358.3,3446,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3446,1,2,0)
+ ;;=2^300.29
+ ;;^UTILITY(U,$J,358.3,3446,1,5,0)
+ ;;=5^Phobia, Simple
+ ;;^UTILITY(U,$J,358.3,3446,2)
+ ;;=^87670
+ ;;^UTILITY(U,$J,358.3,3447,0)
+ ;;=300.3^^11^146^8
+ ;;^UTILITY(U,$J,358.3,3447,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3447,1,2,0)
+ ;;=2^300.3
+ ;;^UTILITY(U,$J,358.3,3447,1,5,0)
+ ;;=5^Obsessive/Compulsive
+ ;;^UTILITY(U,$J,358.3,3447,2)
+ ;;=^84904
+ ;;^UTILITY(U,$J,358.3,3448,0)
+ ;;=308.9^^11^146^1
+ ;;^UTILITY(U,$J,358.3,3448,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3448,1,2,0)
+ ;;=2^308.9
+ ;;^UTILITY(U,$J,358.3,3448,1,5,0)
+ ;;=5^Acute Stress Reaction,Unspec
+ ;;^UTILITY(U,$J,358.3,3448,2)
+ ;;=^268303
+ ;;^UTILITY(U,$J,358.3,3449,0)
+ ;;=300.15^^11^146^6
+ ;;^UTILITY(U,$J,358.3,3449,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3449,1,2,0)
+ ;;=2^300.15
+ ;;^UTILITY(U,$J,358.3,3449,1,5,0)
+ ;;=5^Dissociative Reaction,Unspec
+ ;;^UTILITY(U,$J,358.3,3449,2)
+ ;;=^35700
+ ;;^UTILITY(U,$J,358.3,3450,0)
+ ;;=291.1^^11^147^5
+ ;;^UTILITY(U,$J,358.3,3450,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3450,1,2,0)
+ ;;=2^291.1
+ ;;^UTILITY(U,$J,358.3,3450,1,5,0)
+ ;;=5^Amnestic Syndrome Due to Alcohol
+ ;;^UTILITY(U,$J,358.3,3450,2)
+ ;;=^303492
+ ;;^UTILITY(U,$J,358.3,3451,0)
+ ;;=294.0^^11^147^7
+ ;;^UTILITY(U,$J,358.3,3451,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3451,1,2,0)
+ ;;=2^294.0
+ ;;^UTILITY(U,$J,358.3,3451,1,5,0)
+ ;;=5^Amnestic Syndrome in Oth Conditions
+ ;;^UTILITY(U,$J,358.3,3451,2)
+ ;;=^6319
+ ;;^UTILITY(U,$J,358.3,3452,0)
+ ;;=292.83^^11^147^6

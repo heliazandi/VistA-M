@@ -1,48 +1,134 @@
-IBDEI08G ; ; 09-FEB-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;OCT 15, 2014
- Q:'DIFQ(358.91)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI08G ; ; 06-AUG-2015
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.91,0,"GL")
- ;;=^IBE(358.91,
- ;;^DIC("B","IMP/EXP MARKING AREA",358.91)
- ;;=
- ;;^DIC(358.91,"%D",0)
- ;;=^^4^4^2940217^
- ;;^DIC(358.91,"%D",1,0)
- ;;= 
- ;;^DIC(358.91,"%D",2,0)
- ;;=This file is nearly identical to file #357.91. It is used by the
- ;;^DIC(358.91,"%D",3,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.91,"%D",4,0)
- ;;=that is being imported or exported.
- ;;^DD(358.91,0)
- ;;=FIELD^^.04^4
- ;;^DD(358.91,0,"DDA")
- ;;=N
- ;;^DD(358.91,0,"DT")
- ;;=2960123
- ;;^DD(358.91,0,"IX","B",358.91,.01)
- ;;=
- ;;^DD(358.91,0,"NM","IMP/EXP MARKING AREA")
- ;;=
- ;;^DD(358.91,0,"PT",358.22,.06)
- ;;=
- ;;^DD(358.91,0,"VRPK")
- ;;=IBD
- ;;^DD(358.91,.01,0)
- ;;=NAME^RFX^^0;1^K:$L(X)>30 X
- ;;^DD(358.91,.01,1,0)
- ;;=^.1
- ;;^DD(358.91,.01,1,1,0)
- ;;=358.91^B
- ;;^DD(358.91,.01,1,1,1)
- ;;=S ^IBE(358.91,"B",$E(X,1,30),DA)=""
- ;;^DD(358.91,.01,1,1,2)
- ;;=K ^IBE(358.91,"B",$E(X,1,30),DA)
- ;;^DD(358.91,.01,3)
- ;;=NAME MUST BE UNDER 31 CHARACTERS
- ;;^DD(358.91,.01,21,0)
- ;;=^^1^1^2930608^
- ;;^DD(358.91,.01,21,1,0)
- ;;=The name should describe the appearance of the marking area on the form.
+ ;;^UTILITY(U,$J,358.3,3479,2)
+ ;;=^321980^332.0
+ ;;^UTILITY(U,$J,358.3,3480,0)
+ ;;=294.11^^11^149^11
+ ;;^UTILITY(U,$J,358.3,3480,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3480,1,2,0)
+ ;;=2^294.11
+ ;;^UTILITY(U,$J,358.3,3480,1,5,0)
+ ;;=5^Dementia d/t Parkinson w/ Behav Disturb
+ ;;^UTILITY(U,$J,358.3,3480,2)
+ ;;=^321982^332.0
+ ;;^UTILITY(U,$J,358.3,3481,0)
+ ;;=294.11^^11^149^9
+ ;;^UTILITY(U,$J,358.3,3481,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3481,1,2,0)
+ ;;=2^294.11
+ ;;^UTILITY(U,$J,358.3,3481,1,5,0)
+ ;;=5^Dementia d/t MS w/ Behav Disturb
+ ;;^UTILITY(U,$J,358.3,3481,2)
+ ;;=^321982^340.
+ ;;^UTILITY(U,$J,358.3,3482,0)
+ ;;=294.10^^11^149^10
+ ;;^UTILITY(U,$J,358.3,3482,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3482,1,2,0)
+ ;;=2^294.10
+ ;;^UTILITY(U,$J,358.3,3482,1,5,0)
+ ;;=5^Dementia d/t MS w/o Behav Disturb
+ ;;^UTILITY(U,$J,358.3,3482,2)
+ ;;=^321980^340.
+ ;;^UTILITY(U,$J,358.3,3483,0)
+ ;;=293.0^^11^150^1
+ ;;^UTILITY(U,$J,358.3,3483,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3483,1,2,0)
+ ;;=2^293.0
+ ;;^UTILITY(U,$J,358.3,3483,1,5,0)
+ ;;=5^Acute Delirium d/t Oth Spec Condition
+ ;;^UTILITY(U,$J,358.3,3483,2)
+ ;;=Acute Delirium^268035
+ ;;^UTILITY(U,$J,358.3,3484,0)
+ ;;=291.0^^11^150^2
+ ;;^UTILITY(U,$J,358.3,3484,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3484,1,2,0)
+ ;;=2^291.0
+ ;;^UTILITY(U,$J,358.3,3484,1,5,0)
+ ;;=5^Alcohol Withdrawal Delirium
+ ;;^UTILITY(U,$J,358.3,3484,2)
+ ;;=Withdrawal Delirium^4589
+ ;;^UTILITY(U,$J,358.3,3485,0)
+ ;;=292.81^^11^150^3
+ ;;^UTILITY(U,$J,358.3,3485,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3485,1,2,0)
+ ;;=2^292.81
+ ;;^UTILITY(U,$J,358.3,3485,1,5,0)
+ ;;=5^Drug Induced Delirium
+ ;;^UTILITY(U,$J,358.3,3485,2)
+ ;;=Drug Induced Delirium^268022
+ ;;^UTILITY(U,$J,358.3,3486,0)
+ ;;=296.50^^11^151^6
+ ;;^UTILITY(U,$J,358.3,3486,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3486,1,2,0)
+ ;;=2^296.50
+ ;;^UTILITY(U,$J,358.3,3486,1,5,0)
+ ;;=5^Bipolar Depressed, NOS
+ ;;^UTILITY(U,$J,358.3,3486,2)
+ ;;=^268130
+ ;;^UTILITY(U,$J,358.3,3487,0)
+ ;;=296.51^^11^151^4
+ ;;^UTILITY(U,$J,358.3,3487,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3487,1,2,0)
+ ;;=2^296.51
+ ;;^UTILITY(U,$J,358.3,3487,1,5,0)
+ ;;=5^Bipolar Depressed, Mild
+ ;;^UTILITY(U,$J,358.3,3487,2)
+ ;;=^303620
+ ;;^UTILITY(U,$J,358.3,3488,0)
+ ;;=296.52^^11^151^5
+ ;;^UTILITY(U,$J,358.3,3488,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3488,1,2,0)
+ ;;=2^296.52
+ ;;^UTILITY(U,$J,358.3,3488,1,5,0)
+ ;;=5^Bipolar Depressed, Moderate
+ ;;^UTILITY(U,$J,358.3,3488,2)
+ ;;=^303621
+ ;;^UTILITY(U,$J,358.3,3489,0)
+ ;;=296.53^^11^151^2
+ ;;^UTILITY(U,$J,358.3,3489,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3489,1,2,0)
+ ;;=2^296.53
+ ;;^UTILITY(U,$J,358.3,3489,1,5,0)
+ ;;=5^Bipolar Depress Severe w/o Psychosis
+ ;;^UTILITY(U,$J,358.3,3489,2)
+ ;;=^303622
+ ;;^UTILITY(U,$J,358.3,3490,0)
+ ;;=296.54^^11^151^1
+ ;;^UTILITY(U,$J,358.3,3490,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3490,1,2,0)
+ ;;=2^296.54
+ ;;^UTILITY(U,$J,358.3,3490,1,5,0)
+ ;;=5^Bipolar Depress Severe w/Psychosis
+ ;;^UTILITY(U,$J,358.3,3490,2)
+ ;;=Bipolar Depress Severe w/Psychosis^303623
+ ;;^UTILITY(U,$J,358.3,3491,0)
+ ;;=296.55^^11^151^7
+ ;;^UTILITY(U,$J,358.3,3491,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3491,1,2,0)
+ ;;=2^296.55
+ ;;^UTILITY(U,$J,358.3,3491,1,5,0)
+ ;;=5^Bipolar Depressed, Part or Unspec Remiss
+ ;;^UTILITY(U,$J,358.3,3491,2)
+ ;;=^303624
+ ;;^UTILITY(U,$J,358.3,3492,0)
+ ;;=296.56^^11^151^3
+ ;;^UTILITY(U,$J,358.3,3492,1,0)
+ ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,3492,1,2,0)
+ ;;=2^296.56
+ ;;^UTILITY(U,$J,358.3,3492,1,5,0)
+ ;;=5^Bipolar Depressed, Full Remission
