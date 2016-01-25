@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.VistaInfoHeader">
+<Description><![CDATA[
+This SOAP header class allows for the transmission of environment and Kernel variables as part of a SOAP message.
+<br><br>
+The following M/VistA environmental variable values are available using this SOAP header:
+<ul>
+	<li>mio - the M parition's $IO value
+	<li>mjob - the M parition's $JOB value
+	<li>duz - the VistA user's DUZ value
+	<li>vpid - the VistA user's VPID value returned by...
+	<example language=none>$$VPID^XUPS($GET(DUZ))</example>
+	<li>station - VistA station number returned by...
+	<example language=none>+$$STA^XUAF4($$KSP^XUPARAM("INST"))</example>
+	<li>production - VistA production flag (0/1) returned by...
+	<example language=none>$$PROD^XUPROD(0)</example>
+</ul>
+For an example of how this header is handled and how these values are used in an XFire web services framework,
+reference the following Java source code in the sample web service provided with HWSC:
+<ul>
+	<li>gov.va.med.webservice.samples.VistaInfoHandler
+	<li>gov.va.med.webservice.samples.TesterWebServiceImpl
+</ul> 
+<br><b>Restricted Use:</b> The properties and methods of this class are for HWSC use only.]]></Description>
+<ClassType/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>%SOAP.Header</Super>
+<TimeCreated>60655,58903.721545</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Parameter name="XMLNAME">
+<Default>hdr:VistaInfoHeader</Default>
+</Parameter>
+
+<Parameter name="KEYNAME">
+<Default>VistaInfoHeader</Default>
+</Parameter>
+
+<Property name="vistaInfo">
+<Type>%String</Type>
+<Collection>array</Collection>
+<Parameter name="TRUNCATE" value="1"/>
+<Parameter name="XMLKEYNAME" value="name"/>
+<Parameter name="XMLNAME" value="hdr:vistaInfo"/>
+</Property>
+
+<Method name="attachHeader">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>proxy:%SOAP.WebClient,infoArray:%Library.ArrayOfDataTypes</FormalSpec>
+<Implementation><![CDATA[
+	set hdr=##class(xobw.VistaInfoHeader).%New()
+	set hdr.vistaInfo=infoArray
+	
+	// set hdr.mustUnderstand=1
+	
+	// attach header to client proxy instance
+	do proxy.HeadersOut.SetAt(hdr,..#KEYNAME)
+]]></Implementation>
+</Method>
+
+<Method name="detachHeader">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>proxy:%SOAP.WebClient</FormalSpec>
+<Implementation><![CDATA[
+	// detach header from client proxy instance
+	do proxy.HeadersOut.RemoveAt(..#KEYNAME)
+]]></Implementation>
+</Method>
+</Class>
+</Export>

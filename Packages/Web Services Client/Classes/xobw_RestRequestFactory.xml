@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.RestRequestFactory">
+<Description><![CDATA[
+This factory class contains methods to create REST service request instances [ <class>xobw.RestRequest</class> ].
+<br><br>As part of the creation process, web server ip/port resolution is performed and
+any security implementation, as defined by ISS, is executed. ]]></Description>
+<ClassType/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>%RegisteredObject</Super>
+<TimeCreated>60708,28613.600515</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Property name="webServiceMetadata">
+<Type>WebServiceMetadata</Type>
+<Private>1</Private>
+</Property>
+
+<Method name="%OnNew">
+<FormalSpec>webServiceName:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set webServiceId=##class(xobw.WebServiceMetadata).getWebServiceId(webServiceName)
+	if 'webServiceId {
+	    do ##class(xobw.error.DialogError).forceError(186006_"^"_webServiceName)
+	}
+	set ..webServiceMetadata=##class(xobw.WebServiceMetadata).%OpenId(webServiceId)
+	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="createRestRequest">
+<Description><![CDATA[
+Creates REST request service instance for web server.
+<ul>
+Parameter:
+	<li><parameter>webServiceName = name of service as it appears in NAME (#.01) field in an WEB SERVICE (#18.02) file entry</parameter>
+</ul>]]></Description>
+<FormalSpec>webServerName:%String</FormalSpec>
+<ReturnType>xobw.RestRequest</ReturnType>
+<Implementation><![CDATA[
+	if ..webServiceMetadata.type'=2 {
+	    do ##class(xobw.error.DialogError).forceError(186007)
+	}
+	set restRequest=##class(xobw.RestRequest).%New()
+	 if restRequest'=$$$NULLOREF {
+		 set restRequest.ReadRawMode=1 ;per InterSystems ticket# 736138
+		 set webServerId=##class(xobw.WebServer).getWebServerId(webServerName)
+		 if 'webServerId {
+		    do ##class(xobw.error.DialogError).forceError(186005_"^"_webServerName)
+		 }			 
+		 set webServer=##class(xobw.WebServer).%OpenId(webServerId)
+	 
+		 // web server is disabled
+		 if 'webServer.status {
+			 do ##class(xobw.error.DialogError).forceError(186002_"^"_webServer.name)
+		 }
+		 
+		 do ..setUpCredentials(webServer, restRequest)
+		 do ..setUpServer(webServer, restRequest)
+	 }
+	quit $get(restRequest)
+]]></Implementation>
+</Method>
+
+<Method name="setUpCredentials">
+<FormalSpec>webServer:WebServer,restRequest:xobw.RestRequest</FormalSpec>
+<Private>1</Private>
+<Implementation><![CDATA[
+	set authorizedWebServiceId=##class(xobw.WebServicesAuthorized).getAuthorizedWebServiceId(webServer,..webServiceMetadata)
+	
+	// web service is not authorized
+	if 'authorizedWebServiceId {
+		do ##class(xobw.error.DialogError).forceError(186003_"^"_..webServiceMetadata.name_"^"_webServer.name)
+	}
+	
+	set authorizedWebService=##class(xobw.WebServicesAuthorized).%OpenId(authorizedWebServiceId)
+	
+	// web service is disabled
+	if 'authorizedWebService.status {
+		do ##class(xobw.error.DialogError).forceError(186004_"^"_..webServiceMetadata.name_"^"_webServer.name)
+	}
+	
+	if webServer.loginRequired="1"!(webServer.loginRequired="") {
+		set restRequest.Username=webServer.userName
+		set restRequest.Password=webServer.getPassword()
+	}
+	quit
+]]></Implementation>
+</Method>
+
+<Method name="setUpServer">
+<FormalSpec>webServer:WebServer,restRequest:xobw.RestRequest</FormalSpec>
+<Private>1</Private>
+<Implementation><![CDATA[
+	do webServer.setUpHttpRequest(restRequest)
+	set restRequest.restServiceContext=..webServiceMetadata.contextRoot
+	quit
+]]></Implementation>
+</Method>
+
+<Method name="getRestRequest">
+<Description><![CDATA[
+Create REST service request
+<ul>
+Parameters:
+	<li><parameter>webServiceName = name of service as it appears NAME (#.01) field in an WEB SERVICE (#18.02) file entry</parameter>
+	<li><parameter>webServerName = name of server as it appears NAME (#.01) field in an WEB SERVER (#18.12) file entry</parameter>
+</ul>
+<br><b>Restricted Use:</b> This method is for HWSC use only. Applications should use the $$GETREST^XOBWLB(...) API]]></Description>
+<ClassMethod>1</ClassMethod>
+<FormalSpec>webServiceName:%String,webServerName:%String</FormalSpec>
+<ReturnType>xobw.RestRequest</ReturnType>
+<Implementation><![CDATA[
+	set factory=##class(xobw.RestRequestFactory).%New(webServiceName)
+	if factory'=$$$NULLOREF {
+		set restRequest=factory.createRestRequest(webServerName)
+	}
+	quit $get(restRequest,$$$NULLOREF)
+]]></Implementation>
+</Method>
+
+<Storage name="StorageSQL">
+<Type>%CacheSQLStorage</Type>
+</Storage>
+</Class>
+</Export>

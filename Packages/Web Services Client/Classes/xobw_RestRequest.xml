@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.RestRequest">
+<Description>
+This class is used to make REST-type requests to an external web service.</Description>
+<ClassType/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>%Net.HttpRequest</Super>
+<TimeCreated>60708,28613.320409</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Property name="restServiceContext">
+<Description>
+This property contains the main context root for the REST web service</Description>
+<Type>%String</Type>
+<Private>1</Private>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Method name="Get">
+<FormalSpec>resource:%String,test:%Integer=0</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[	quit ##super(i%restServiceContext_resource, .test)
+]]></Implementation>
+</Method>
+
+<Method name="Post">
+<FormalSpec>resource:%String,test:%Integer=0</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[	quit ##super(i%restServiceContext_resource, .test)
+]]></Implementation>
+</Method>
+
+<Method name="Put">
+<FormalSpec>resource:%String,test:%Integer=0</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[	quit ##super(i%restServiceContext_resource, .test)
+]]></Implementation>
+</Method>
+
+<Method name="Head">
+<FormalSpec>resource:%String,test:%Integer=0</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[	quit ##super(i%restServiceContext_resource, .test)
+]]></Implementation>
+</Method>
+
+<Method name="restServiceContextGet">
+<Description><![CDATA[
+This method retrieves the main context root for the REST web service (less the resource and query parameters).
+<br><br><b>Restricted Use:</b> This method is for HWSC use only.]]></Description>
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[	quit i%restServiceContext
+]]></Implementation>
+</Method>
+
+<Method name="restServiceContextSet">
+<Description><![CDATA[
+This method sets the main context root for the REST web service (less the resource and query parameters).
+<br><br><b>Restricted Use:</b> This method is for HWSC use only.]]></Description>
+<FormalSpec>value:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set i%restServiceContext=$select($extract(value)="/":"",1:"/")_value
+	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Storage name="StorageSQL">
+<Type>%CacheSQLStorage</Type>
+</Storage>
+</Class>
+</Export>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.WebServer">
+<Description><![CDATA[
+This persistent class contains web server connection information used to connect to server hosting web services
+<br>
+This class is mapped to the VA FileMan WEB SERVER (#18.12) file
+<br><br>
+<b>Restricted Use:</b> The properties and methods of this class are for HWSC use only.
+  ]]></Description>
+<ClassType>persistent</ClassType>
+<ProcedureBlock>1</ProcedureBlock>
+<SqlRowIdPrivate>1</SqlRowIdPrivate>
+<SqlTableName>WebServer</SqlTableName>
+<StorageStrategy>WebServerStorage</StorageStrategy>
+<Super>%Persistent</Super>
+<TimeCreated>60654,21265.065878</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Index name="ienIndex">
+<IdKey>1</IdKey>
+<PrimaryKey>1</PrimaryKey>
+<Properties>ien</Properties>
+<Unique>1</Unique>
+</Index>
+
+<Property name="server">
+<Type>%String</Type>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Property name="port">
+<Type>%Integer</Type>
+<Collection/>
+<Relationship>0</Relationship>
+</Property>
+
+<Property name="ien">
+<Type>%String</Type>
+<Collection/>
+<Relationship>0</Relationship>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Property name="name">
+<Type>%String</Type>
+<Collection/>
+<Relationship>0</Relationship>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Property name="production">
+<Type>%Boolean</Type>
+<Collection/>
+<Relationship>0</Relationship>
+<Transient>1</Transient>
+</Property>
+
+<UDLText name="T">
+<Content><![CDATA[
+// server credentials
+
+]]></Content>
+</UDLText>
+
+<Property name="loginRequired">
+<Type>%Boolean</Type>
+<SqlFieldName>loginRequired</SqlFieldName>
+</Property>
+
+<Property name="password">
+<Type>%String</Type>
+<Private>1</Private>
+<SqlFieldName>password</SqlFieldName>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Property name="userName">
+<Type>%String</Type>
+<SqlFieldName>userName</SqlFieldName>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Property name="defaultTimeout">
+<Type>%Integer</Type>
+<InitialExpression>30</InitialExpression>
+<SqlFieldName>defaultTimeout</SqlFieldName>
+<Parameter name="MAXVAL" value="7200"/>
+<Parameter name="MINVAL" value="5"/>
+</Property>
+
+<Property name="sslEnabled">
+<Type>%Boolean</Type>
+<SqlFieldName>sslEnabled</SqlFieldName>
+</Property>
+
+<Property name="sslConfiguration">
+<Type>%String</Type>
+<SqlFieldName>sslConfiguration</SqlFieldName>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Property name="sslPort">
+<Type>%String</Type>
+<SqlFieldName>sslPort</SqlFieldName>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<UDLText name="T">
+<Content><![CDATA[
+// for ISS use ------------------------
+
+]]></Content>
+</UDLText>
+
+<Property name="authorizedWebServices">
+<Type>xobw.WebServicesAuthorized</Type>
+<Cardinality>children</Cardinality>
+<Inverse>webServerRef</Inverse>
+<Relationship>1</Relationship>
+</Property>
+
+<Property name="status">
+<Type>%Boolean</Type>
+<Collection/>
+<Relationship>0</Relationship>
+</Property>
+
+<Method name="getPassword">
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[	quit $$DECRYP^XOBWPWD(..password)
+]]></Implementation>
+</Method>
+
+<Method name="checkWebServicesAvailability">
+<FormalSpec>dots:%String</FormalSpec>
+<ReturnType>%Library.ListOfDataTypes</ReturnType>
+<Implementation><![CDATA[
+	set key = ""
+	set count=0
+	set result=##class(%ListOfDataTypes).%New()
+	
+	// if server is disabled, stop
+	if '..status {
+		do result.Insert("")
+		do result.Insert(" o  Web server is disabled")
+		do result.Insert("")
+		quit result
+	}
+
+	// loop thru web services credentials defined for server and build list output
+	// mainly for ListMan consumption (AVAIL^XOBWUT1)
+	do {
+		set authorizedWebService = ..authorizedWebServices.GetNext(.key)
+		if $get(dots) write "."
+		set count=count+1
+		if (authorizedWebService '= $$$NULLOREF) {
+			set webService=##class(xobw.WebServiceMetadata).%OpenId(authorizedWebService.webServiceIen)
+			if (authorizedWebService.status) {
+				if ((webService.type=1) || (webService.type=2)) {
+					if ##class(xobw.WebServiceMetadata).checkResourceAvailability(##this,authorizedWebService,webService,.httpStatusCode) {
+						do result.Insert(count_"  "_webService.name_" is available")
+					} else {
+						do result.Insert(count_"  Unable to retrieve '"_webService.availResource_"' for "_webService.name)
+						//
+						// the following lines will report spurious %objlasterror errors.
+						// supposed to be fixed in Cache 5.1+.
+						// 
+						if ($data(%objlasterror)'=0) {
+							do $system.Status.DecomposeStatus(%objlasterror,.err)
+							set x=$get(err(1),"  o  no reason available")
+							set length=$length(x)
+							do result.Insert("  o  "_$extract(x,1,70))
+							set x=$extract(x,71,length)
+							while (x'="") {
+								do result.Insert("     "_$extract(x,1,70))
+								set x=$extract(x,71,length)
+							} // while
+							// if there is a status code, show it
+							if $get(httpStatusCode)]"" do result.Insert("  o  HTTP Response Status Code: "_httpStatusCode)
+						} else {
+							do result.Insert("  o  HTTP Response Status Code: "_$get(httpStatusCode,"<no status code available>"))
+						} // %objlasterror	
+					} // resource availability
+				} else {
+					do result.Insert(count_"  "_webService.name_" is not a valid web service type ["_webservice.type_"]")
+				} // not valid type (rare and should not occur)
+			} else {
+				do result.Insert(count_"  "_webService.name_" is not enabled")
+			} // authorizedWebService.status
+		} // authorizedWebService
+	} while (key '= "")
+	quit result
+]]></Implementation>
+</Method>
+
+<Method name="getWebServerId">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>name:%String</FormalSpec>
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[
+	if $get(name)="" {
+	    do ##class(xobw.error.DialogError).forceError(186005_"^<empty string>")
+	}
+	quit +$order(^XOB(18.12,"B",name,0))
+]]></Implementation>
+</Method>
+
+<Method name="setUpHttpRequest">
+<FormalSpec>httpRequest:%Net.HttpRequest</FormalSpec>
+<Implementation><![CDATA[
+	if (..sslEnabled && ('$$SSLOK^XOBWENV())) {
+		do ##class(xobw.error.DialogError).forceError(186002_"^"_..name_" (SSL is disabled on VMS)")
+	}
+	if (..sslEnabled) {
+		set httpRequest.Https=1
+		set httpRequest.SSLConfiguration=..sslConfiguration
+		set httpRequest.Port=..sslPort
+	} else {
+		set httpRequest.Port=..port
+	}
+	// common setting
+	set httpRequest.Server=..server
+	set httpRequest.Timeout=..defaultTimeout
+	quit
+]]></Implementation>
+</Method>
+
+<Method name="defaultTimeoutGet">
+<ReturnType>%Integer</ReturnType>
+<Implementation><![CDATA[	quit $select(i%defaultTimeout:i%defaultTimeout,1:30)
+]]></Implementation>
+</Method>
+
+<Storage name="WebServerStorage">
+<Type>%CacheSQLStorage</Type>
+<StreamLocation>^xobw.WebServerS</StreamLocation>
+<ExtentSize>100000</ExtentSize>
+<SQLMap name="MasterMap">
+<Type>data</Type>
+<Global>^XOB</Global>
+<Subscript name="1">
+<Expression>18.12</Expression>
+</Subscript>
+<Subscript name="2">
+<Expression>{ien}</Expression>
+<LoopInitValue>0</LoopInitValue>
+<StopExpression>'+{L2}</StopExpression>
+</Subscript>
+<RowIdSpec name="1">
+<Expression>{L2}</Expression>
+<Field>ien</Field>
+</RowIdSpec>
+<Data name="defaultTimeout">
+<Delimiter>"^"</Delimiter>
+<Node>0</Node>
+<Piece>7</Piece>
+</Data>
+<Data name="loginRequired">
+<Delimiter>"^"</Delimiter>
+<Node>1</Node>
+<Piece>1</Piece>
+</Data>
+<Data name="name">
+<Delimiter>"^"</Delimiter>
+<Node>0</Node>
+<Piece>1</Piece>
+</Data>
+<Data name="password">
+<Node>300</Node>
+</Data>
+<Data name="port">
+<Delimiter>"^"</Delimiter>
+<Node>0</Node>
+<Piece>3</Piece>
+</Data>
+<Data name="server">
+<Delimiter>"^"</Delimiter>
+<Node>0</Node>
+<Piece>4</Piece>
+</Data>
+<Data name="sslConfiguration">
+<Delimiter>"^"</Delimiter>
+<Node>3</Node>
+<Piece>2</Piece>
+</Data>
+<Data name="sslEnabled">
+<Delimiter>"^"</Delimiter>
+<Node>3</Node>
+<Piece>1</Piece>
+</Data>
+<Data name="sslPort">
+<Delimiter>"^"</Delimiter>
+<Node>3</Node>
+<Piece>3</Piece>
+</Data>
+<Data name="status">
+<Delimiter>"^"</Delimiter>
+<Node>0</Node>
+<Piece>6</Piece>
+</Data>
+<Data name="userName">
+<Node>200</Node>
+</Data>
+</SQLMap>
+</Storage>
+</Class>
+</Export>

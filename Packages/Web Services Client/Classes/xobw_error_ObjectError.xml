@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.error.ObjectError">
+<Description>
+Error class used by the HWSC error processing sub-system when a CacheObject error occurs.</Description>
+<ClassType/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>xobw.error.AbstractError</Super>
+<TimeCreated>60708,28616.396991</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Property name="dcode">
+<Type>%String</Type>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Property name="domain">
+<Type>%String</Type>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Parameter name="ERRORTYPE">
+<Description>
+Error type constant</Description>
+<Default>OBJECT</Default>
+</Parameter>
+
+<Method name="%OnNew">
+<FormalSpec>statuscode:%Status</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set ..errorType=..#ERRORTYPE
+	do $system.Status.DecomposeStatus(statuscode,.err)
+	set ..code=$GET(err(1,"code"),"<unknown>")
+	set ..dcode=$GET(err(1,"dcode"),"<unknown>")
+	set ..domain=$GET(err(1,"domain"),"<unknown>")
+	set x=$get(err(1))
+	for  do ..text.Insert($extract(x,1,70)) set x=$extract(x,71,9999) quit:x=""
+	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="display">
+<Description><![CDATA[
+This method provides a simple display of the error using MUMPS WRITE commands.
+<br><br>Information displayed:
+<ul>
+	<li>Class name
+	<li>Properties:
+	<ul>
+		<li>code
+		<li><property>dcode</property>
+		<li><property>domain</property>
+		<li>text
+	</ul>
+</ul>]]></Description>
+<Implementation><![CDATA[
+	write !," Error Class: ",..%ClassName(1)
+	write !,"  Error Code: ",..code
+	write !," Error DCode: ",..dcode
+	write !,"Error Domain: ",..domain
+	write !,"  Error Text: "
+	set I=""
+	for  set X=..text.GetNext(.I) quit:I=""  write !?5,X
+]]></Implementation>
+</Method>
+
+<Method name="decompose">
+<Description><![CDATA[
+This method converts the error object properties into a traditional M array.
+<br>Structure of ARRAY returned ByRef:
+<example language=none>
+	ARRAY("errorType") = type of error (OBJECT)
+	ARRAY("code") = error code
+	ARRAY("dcode") = error dcode
+	ARRAY("domain") = error domain
+	ARRAY("text") = <error text row count>
+	ARRAY("text",i..n) = <errot text>
+</example> ]]></Description>
+<FormalSpec><![CDATA[&error]]></FormalSpec>
+<Implementation><![CDATA[
+	set error("errorType")=..errorType
+	set error("code")=..code
+	set error("dcode")=..dcode
+	set error("domain")=..domain
+	set error("text")=..text.Count()
+	set i=""
+	for  set x=..text.GetNext(.i) quit:i=""  set error("text",i)=x
+	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Storage name="StorageSQL">
+<Type>%CacheSQLStorage</Type>
+</Storage>
+</Class>
+</Export>

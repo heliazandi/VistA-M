@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.error.SoapError">
+<Description>
+Error class used by the HWSC error processing sub-system when a SOAP fault is returned.</Description>
+<ClassType/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>xobw.error.AbstractError</Super>
+<TimeCreated>60708,28616.612984</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Property name="soapFault">
+<Description>
+SOAP fault object instance returned by a web method call</Description>
+<Type>%SOAP.Fault</Type>
+</Property>
+
+<Parameter name="ERRORTYPE">
+<Description>
+Error type constant</Description>
+<Default>SOAP</Default>
+</Parameter>
+
+<Property name="soapFaultType">
+<Description><![CDATA[
+Type of SOAP fault returned by web method call<br>
+Possible types:
+<ul>
+	<li>Server
+	<li>Client
+	<li>Must Understand
+	<li>Version Mismatch
+	<li>Unknown
+</ul>]]></Description>
+<Type>%String</Type>
+<Calculated>1</Calculated>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<UDLText name="T">
+<Content><![CDATA[
+//store soap fault, set other associated properties
+
+]]></Content>
+</UDLText>
+
+<Method name="%OnNew">
+<FormalSpec>fault:%SOAP.Fault</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set ..errorType=..#ERRORTYPE
+	set ..code="" ; normally this holds the Cache Object error code but this is a SOAP fault
+	set i%soapFault=fault
+	set x=fault.faultstring
+	for  do ..text.Insert($extract(x,1,70)) set x=$extract(x,71,9999) quit:x=""
+	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="soapFaultGet">
+<ReturnType>%SOAP.Fault</ReturnType>
+<Implementation><![CDATA[	quit i%soapFault
+]]></Implementation>
+</Method>
+
+<Method name="soapFaultTypeGet">
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[	quit $select(..isFaultServer():"Server",..isFaultClient():"Client",..isFaultVersionMismatch():"Version Mismatch",..isFaultMustUnderstand():"Must Understand",1:"Unknown")
+]]></Implementation>
+</Method>
+
+<Method name="display">
+<Description><![CDATA[
+This method provides a simple display of the error using MUMPS WRITE commands.
+<br><br>Information displayed:
+<ul>
+	<li>Class name
+	<li>Properties:
+	<ul>
+		<li><property>soapFaultType</property>
+		<li><property>soapFault</property>.faultactor
+		<li><property>soapFault</property>.faultcode
+		<li><property>soapFault</property>.faultstring
+		<li><property>soapFault</property>.detail
+	</ul>
+</ul>]]></Description>
+<Implementation><![CDATA[
+ #include %soap
+ write !,"      Error Class: ",..soapFault.%ClassName(1)
+ write !,"  SOAP Fault Type: ",..soapFaultType
+ write !," SOAP Fault Actor: ",..soapFault.faultactor
+ write !,"  SOAP Fault Code: ",..soapFault.faultcode
+ write !,"SOAP Fault String: ",..soapFault.faultstring
+ write !,"SOAP Fault Detail: ",..soapFault.detail
+]]></Implementation>
+</Method>
+
+<Method name="decompose">
+<Description><![CDATA[
+This method converts the error object properties into a traditional M array.
+<br>Structure of ARRAY returned ByRef:
+<example language=none>
+	ARRAY("errorType") = type of error (SOAP)
+	ARRAY("soapFaultType") = SOAP Fault Type
+	ARRAY("faultactor") = SOAP fault actor
+	ARRAY("faultcode") = SOAP fault code
+	ARRAY("faultstring") = SOAP fault string
+	ARRAY("detail") = SOAP fault detail
+	ARRAY("text") = <error text row count>
+	ARRAY("text",i..n) = <error text>
+</example> ]]></Description>
+<FormalSpec><![CDATA[&error]]></FormalSpec>
+<Implementation><![CDATA[
+	set error("errorType")=..errorType
+	set error("soapFaultType")=..soapFaultType
+	set error("faultactor")=..soapFault.faultactor
+	set error("faultcode")=..soapFault.faultcode
+	set error("faultstring")=..soapFault.faultstring
+	set error("detail")=..soapFault.detail
+	set error("text")=..text.Count()
+	set i=""
+	for  set x=..text.GetNext(.i) quit:i=""  set error("text",i)=x
+	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="isFaultServer">
+<Description>
+Indicates if fault was produced when server side error occurred</Description>
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[
+	#include %soap
+	quit ($P(..soapFault.faultcode,":",2)=$P($$$FAULTServer,":",2))
+]]></Implementation>
+</Method>
+
+<Method name="isFaultClient">
+<Description>
+Indicates if fault was produced when the client made an incorrect/incomplete request </Description>
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[
+	#include %soap
+	quit ($P(..soapFault.faultcode,":",2)=$P($$$FAULTClient,":",2))
+]]></Implementation>
+</Method>
+
+<Method name="isFaultMustUnderstand">
+<Description>
+Indicates if fault was produced when a header was not handled by server when the 'MustUnderstand'
+attribute was set to 'true' </Description>
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[
+	#include %soap
+	quit ($P(..soapFault.faultcode,":",2)=$P($$$FAULTMustUnderstand,":",2))
+]]></Implementation>
+</Method>
+
+<Method name="isFaultVersionMismatch">
+<Description>
+Indicates if fault was produced when the SOAP versions between client and server were incompatible</Description>
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[
+	#include %soap
+	quit ($P(..soapFault.faultcode,":",2)=$P($$$FAULTVersionMismatch,":",2))
+]]></Implementation>
+</Method>
+</Class>
+</Export>

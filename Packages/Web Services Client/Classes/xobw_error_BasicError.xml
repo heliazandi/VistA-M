@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.error.BasicError">
+<Description>
+Error class used by the HWSC error processing sub-system when a basic M/Cache error occurs.</Description>
+<ClassType/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>xobw.error.AbstractError</Super>
+<TimeCreated>60708,28615.636936</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Parameter name="ERRORTYPE">
+<Description>
+Error type constant</Description>
+<Default>BASIC</Default>
+</Parameter>
+
+<Method name="%OnNew">
+<FormalSpec>ecode:%String,zerror:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set ..errorType=..#ERRORTYPE
+	set ..code=ecode
+	set x=zerror
+	for  do ..text.Insert($extract(x,1,70)) set x=$extract(x,71,9999) quit:x=""
+	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Storage name="StorageSQL">
+<Type>%CacheSQLStorage</Type>
+</Storage>
+</Class>
+</Export>

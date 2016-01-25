@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.error.AbstractError">
+<Description>
+Abstract class extended by other error classes that are part of the HWSC error processing sub-system. </Description>
+<Abstract>1</Abstract>
+<ClassType/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>%Library.RegisteredObject</Super>
+<TimeCreated>60708,28615.40254</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Property name="code">
+<Description>
+Code associated with the error</Description>
+<Type>%String</Type>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Property name="errorType">
+<Description>
+Human readable name for the type of error</Description>
+<Type>%String</Type>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Parameter name="ERRORTYPE">
+<Description>
+Error type constant</Description>
+</Parameter>
+
+<Property name="text">
+<Description>
+Human readable text that provides information about the error</Description>
+<Type>%String</Type>
+<Collection>list</Collection>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Method name="display">
+<Description><![CDATA[
+This method provides a simple display of the error using MUMPS WRITE commands.
+<br><br>Information displayed:
+<ul>
+	<li>Class name
+	<li>Properties:
+	<ul>
+		<li><property>code</property>
+		<li><property>text</property>
+	</ul>
+</ul>]]></Description>
+<Implementation><![CDATA[
+	write !,"Error Class: ",..%ClassName(1)
+	write !,"Error Code: ",..code
+	write !,"Error Text: "
+	set i=""
+	for  set x=..text.GetNext(.i) quit:i=""  write !?5,x
+]]></Implementation>
+</Method>
+
+<Method name="decompose">
+<Description><![CDATA[
+This method converts the error object properties into a traditional M array.
+<br>Structure of ARRAY returned ByRef:
+<example language=none>
+	ARRAY("errorType") = type of error (BASIC, DIALOG)
+	ARRAY("code") = error code
+	ARRAY("text") = <error text row count>
+	ARRAY("text",i..n) = <errot text>
+</example> ]]></Description>
+<FormalSpec><![CDATA[&error]]></FormalSpec>
+<Implementation><![CDATA[
+	set error("errorType")=..errorType
+	set error("code")=..code
+	set error("text")=..text.Count()
+	set i=""
+	for  set x=..text.GetNext(.i) quit:i=""  set error("text",i)=x
+	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Storage name="StorageSQL">
+<Type>%CacheSQLStorage</Type>
+</Storage>
+</Class>
+</Export>

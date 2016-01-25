@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.WebServicesAuthorized">
+<Description><![CDATA[
+This persistent class contains information indicating, for each web server, the web services that VistA
+applications are authorized/allowed to access on each the web server.
+<br><br>
+This class is mapped to the VA FileMan WEB SERVER | AUTHORIZED WEB SERVICES (#18.121) sub-file 
+<br><br>
+<b>Restricted Use:</b> The properties and methods of this class are for HWSC use only.
+  ]]></Description>
+<ClassType>persistent</ClassType>
+<ProcedureBlock>1</ProcedureBlock>
+<SqlRowIdPrivate>1</SqlRowIdPrivate>
+<SqlTableName>WebServicesAuthorized</SqlTableName>
+<StorageStrategy>WebServicesAuthorizedStorage</StorageStrategy>
+<Super>%Persistent,%XML.Adaptor</Super>
+<TimeCreated>60654,21265.073659</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Index name="ienIndex">
+<IdKey>1</IdKey>
+<PrimaryKey>1</PrimaryKey>
+<Properties>webServerRef,ien</Properties>
+<Unique>1</Unique>
+</Index>
+
+<Property name="ien">
+<Type>%String</Type>
+<Collection/>
+<Relationship>0</Relationship>
+<SqlFieldName>ien</SqlFieldName>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Property name="status">
+<Type>%Boolean</Type>
+<Collection/>
+<Relationship>0</Relationship>
+<SqlFieldName>status</SqlFieldName>
+</Property>
+
+<Property name="webServerRef">
+<Type>xobw.WebServer</Type>
+<Cardinality>parent</Cardinality>
+<Collection/>
+<Inverse>authorizedWebServices</Inverse>
+<Relationship>1</Relationship>
+<SqlFieldName>webServerRef</SqlFieldName>
+</Property>
+
+<Property name="webServiceIen">
+<Type>%String</Type>
+<Collection/>
+<Relationship>0</Relationship>
+<SqlFieldName>webServiceIen</SqlFieldName>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Method name="getAuthorizedWebServiceId">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>webServer:xobw.WebServer,webServiceMetadata:xobw.WebServiceMetadata</FormalSpec>
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[
+	set id=+$order(^XOB(18.12,webServer.ien,100,"B",webServiceMetadata.ien,""))
+	if (id) {
+		set id = webServer.ien_"||"_id
+	}
+	quit id
+]]></Implementation>
+</Method>
+
+<Storage name="WebServicesAuthorizedStorage">
+<Type>%CacheSQLStorage</Type>
+<StreamLocation>^xobw.WebServerSerAD4S</StreamLocation>
+<ExtentSize>100000</ExtentSize>
+<SQLMap name="MasterMap">
+<Type>data</Type>
+<Global>^XOB</Global>
+<Subscript name="1">
+<Expression>18.12</Expression>
+</Subscript>
+<Subscript name="2">
+<Expression>{xobw.WebServer.ien}</Expression>
+</Subscript>
+<Subscript name="3">
+<Expression>100</Expression>
+</Subscript>
+<Subscript name="4">
+<Expression>{ien}</Expression>
+<LoopInitValue>0</LoopInitValue>
+<StopExpression>'+{L4}</StopExpression>
+</Subscript>
+<RowIdSpec name="1">
+<Expression>{L2}</Expression>
+<Field>xobw.WebServer.ien</Field>
+</RowIdSpec>
+<RowIdSpec name="2">
+<Expression>{L4}</Expression>
+<Field>ien</Field>
+</RowIdSpec>
+<Data name="status">
+<Delimiter>"^"</Delimiter>
+<Node>0</Node>
+<Piece>6</Piece>
+</Data>
+<Data name="webServiceIen">
+<Delimiter>"^"</Delimiter>
+<Node>0</Node>
+<Piece>1</Piece>
+</Data>
+</SQLMap>
+</Storage>
+</Class>
+</Export>

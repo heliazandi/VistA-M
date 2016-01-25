@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.error.HttpError">
+<Description>
+Error class used by the HWSC error processing sub-system when an HTTP error occurs.</Description>
+<ClassType/>
+<ProcedureBlock>1</ProcedureBlock>
+<StorageStrategy>StorageSQL</StorageStrategy>
+<Super>xobw.error.AbstractError</Super>
+<TimeCreated>60708,28616.121561</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Parameter name="ERRORTYPE">
+<Description>
+Error type constant</Description>
+<Default>HTTP</Default>
+</Parameter>
+
+<Property name="statusLine">
+<Description>
+The HTTP status line. This is the first line of the response and signals if the request was sucessful or if there was a problem. </Description>
+<Type>%String</Type>
+<Parameter name="TRUNCATE" value="1"/>
+</Property>
+
+<Method name="%OnNew">
+<FormalSpec>httpResponse:%Net.HttpResponse</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set ..errorType=..#ERRORTYPE
+	set ..code=httpResponse.StatusCode
+	set ..statusLine=httpResponse.StatusLine
+	set len=70
+	for  set x=httpResponse.Data.Read(.len) quit:len=-1  do ..text.Insert(x)
+	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="display">
+<Description><![CDATA[
+This method provides a simple display of the error using MUMPS WRITE commands.
+<br><br>Information displayed:
+<ul>
+	<li>Class name
+	<li>Properties:
+	<ul>
+		<li>code
+		<li><property>statusLine</property>
+		<li>text
+	</ul>
+</ul>]]></Description>
+<Implementation><![CDATA[
+	write !,"           Error Class: ",..%ClassName(1)
+	write !,"       HTTP Error Code: ",..code
+	write !,"      HTTP Status Line: ",..statusLine
+	write !,"Application Error Text: "
+	set i=""
+	for  set x=..text.GetNext(.i) quit:i=""  write !?5,x
+]]></Implementation>
+</Method>
+
+<Method name="decompose">
+<Description><![CDATA[
+This method converts the HTTP error object properties into a traditional M array.
+<br>Structure of ARRAY returned ByRef:
+<example language=none>
+	ARRAY("errorType") = type of error (HTTP)
+	ARRAY("code") = error code
+	ARRAY("statusLine") = error dcode
+	ARRAY("text") = <error text row count>
+	ARRAY("text",i..n) = <errot text>
+</example> ]]></Description>
+<FormalSpec><![CDATA[&error]]></FormalSpec>
+<Implementation><![CDATA[
+	set error("errorType")=..errorType
+	set error("code")=..code
+	set error("statusLine")=..statusLine
+	set error("text")=..text.Count()
+	set i=""
+	for  set x=..text.GetNext(.i) quit:i=""  set error("text",i)=x
+	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Storage name="StorageSQL">
+<Type>%CacheSQLStorage</Type>
+</Storage>
+</Class>
+</Export>

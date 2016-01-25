@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.WebServiceProxyFactory">
+<Description><![CDATA[
+This factory class contains methods to create web service proxy instances.
+<br><br>As part of the creation process, web server ip/port resolution is performed and
+any security implementation, as defined by ISS, is executed. ]]></Description>
+<ClassType/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>%RegisteredObject</Super>
+<TimeCreated>60655,58903.754395</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Property name="webServiceMetadata">
+<Type>WebServiceMetadata</Type>
+<Private>1</Private>
+</Property>
+
+<Method name="%OnNew">
+<FormalSpec>webServiceName:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set webServiceId=##class(xobw.WebServiceMetadata).getWebServiceId(webServiceName)
+	if 'webServiceId {
+	    do ##class(xobw.error.DialogError).forceError(186006_"^"_webServiceName)
+	}
+	set ..webServiceMetadata=##class(xobw.WebServiceMetadata).%OpenId(webServiceId)
+	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="getProxy">
+<Description><![CDATA[
+Creates web service client proxy for a web server.
+<ul>
+Parameter:
+	<li><parameter>webServerName = name of server as it appears in NAME (#.01) field of a WEB SERVER (#18.12) file entry</parameter>
+</ul>]]></Description>
+<FormalSpec>webServerName:%String</FormalSpec>
+<ReturnType>%SOAP.WebClient</ReturnType>
+<Implementation><![CDATA[
+	 // Future: Add any required headers to proxy when discovered, if any
+	 new %proxy
+	 if ..webServiceMetadata.type'=1 {
+		    do ##class(xobw.error.DialogError).forceError(186007)
+	 }
+	 xecute "set %proxy=##class("_..webServiceMetadata.proxyClassName_").%New()"
+	 if %proxy'=$$$NULLOREF {
+		 set webServerId=##class(xobw.WebServer).getWebServerId(webServerName)
+ 		 if 'webServerId {
+		    do ##class(xobw.error.DialogError).forceError(186005_"^"_webServerName)
+		 }			 
+		 set webServer=##class(xobw.WebServer).%OpenId(webServerId)
+		 
+		 // web server is disabled
+		 if 'webServer.status {
+			 do ##class(xobw.error.DialogError).forceError(186002_"^"_webServer.name)
+		 }
+		 
+		 do ..setUpCredentials(webServer, %proxy)
+		 do ..setUpLocation(webServer, %proxy)
+	 }
+	quit $get(%proxy)
+]]></Implementation>
+</Method>
+
+<Method name="setUpCredentials">
+<FormalSpec>webServer:WebServer,proxy:%SOAP.WebClient</FormalSpec>
+<Private>1</Private>
+<Implementation><![CDATA[
+	set authorizedWebServiceId=##class(xobw.WebServicesAuthorized).getAuthorizedWebServiceId(webServer,..webServiceMetadata)
+	
+	// web service is not authorized
+	if 'authorizedWebServiceId {
+		do ##class(xobw.error.DialogError).forceError(186003_"^"_..webServiceMetadata.name_"^"_webServer.name)
+	}
+	
+	set authorizedWebService=##class(xobw.WebServicesAuthorized).%OpenId(authorizedWebServiceId)
+	
+	// web service is disabled
+	if 'authorizedWebService.status {
+		do ##class(xobw.error.DialogError).forceError(186004_"^"_..webServiceMetadata.name_"^"_webServer.name)
+	}
+	
+	if webServer.loginRequired="1"!(webServer.loginRequired="") {
+		set proxy.HttpUsername=webServer.userName
+		set proxy.HttpPassword=webServer.getPassword()
+	}
+	quit
+]]></Implementation>
+</Method>
+
+<Method name="setUpLocation">
+<FormalSpec>webServer:WebServer,proxy:%SOAP.WebClient</FormalSpec>
+<Private>1</Private>
+<Implementation><![CDATA[
+	if (webServer.sslEnabled && ('$$SSLOK^XOBWENV())) {
+		do ##class(xobw.error.DialogError).forceError(186002_"^"_webServer.name_" (SSL is disabled on VMS)")
+	}
+	if (webServer.sslEnabled) {
+		set proxy.Location="https://"_webServer.server_":"_webServer.sslPort_"/"_..webServiceMetadata.contextRoot
+		set proxy.SSLConfiguration = webServer.sslConfiguration
+	} else {
+		set proxy.Location="http://"_webServer.server_":"_webServer.port_"/"_..webServiceMetadata.contextRoot
+	}
+	set proxy.Timeout=webServer.defaultTimeout
+	quit
+]]></Implementation>
+</Method>
+
+<Method name="close">
+<Description><![CDATA[
+Close web service proxy factory
+<br>
+<br>Performs any close processing activities required.]]></Description>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="getWebServiceProxy">
+<Description><![CDATA[
+Create web service proxy
+<ul>
+Parameters:
+	<li><parameter>webServiceName = name of service as it appears NAME (#.01) field in an WEB SERVICE (#18.02) file entry</parameter>
+	<li><parameter>webServerName = name of server as it appears NAME (#.01) field in an WEB SERVER (#18.12) file entry</parameter>
+</ul>
+<br><b>Restricted Use:</b> This method is for HWSC use only. Applications should use the $$GETPROXY^XOBWLB(...) API]]></Description>
+<ClassMethod>1</ClassMethod>
+<FormalSpec>webServiceName:%String,webServerName:%String</FormalSpec>
+<ReturnType>%SOAP.WebClient</ReturnType>
+<Implementation><![CDATA[
+	set factory=##class(xobw.WebServiceProxyFactory).%New(webServiceName)
+	if factory'=$$$NULLOREF {
+		set proxy=factory.getProxy(webServerName)
+		set ok=factory.close()
+	}
+	quit $get(proxy,$$$NULLOREF)
+]]></Implementation>
+</Method>
+</Class>
+</Export>

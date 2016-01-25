@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.error.DialogError">
+<Description><![CDATA[
+Class for errors associated with DIALOG file (#.84) entries and used by the HWSC error processing sub-system 
+<br>
+<br> The Kernel API EZBLD^DIALOG should be used to produce the 'text' property value and
+<br> the ien of the DIALOIG file entry should be the 'code' property value.]]></Description>
+<ClassType/>
+<ProcedureBlock>1</ProcedureBlock>
+<StorageStrategy>StorageSQL</StorageStrategy>
+<Super>xobw.error.AbstractError</Super>
+<TimeCreated>60708,28615.887083</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Parameter name="ERRORTYPE">
+<Description>
+Error type constant</Description>
+<Default>DIALOG</Default>
+</Parameter>
+
+<Method name="forceError">
+<Description><![CDATA[
+Force an error to occur passing in DIALOG information to be used in $$EZBLD^DIALOG(...)<br>
+<ul>
+Parameter:
+	<li><parameter>dialogInfo</parameter>
+	<ul>
+		<li>Piece #1: DIALOG IEN
+		<li>Piece #2: Parameter #1 for EZBLD^DIALOG
+		<li>Piece #3: Parameter #2 for EZBLD^DIALOG
+		<li>Piece #n+1: Parameter #n for EZBLD^DIALOG
+	</ul>
+</ul>
+<br><b>Restricted Use:</b> This method is currently for HWSC use only.]]></Description>
+<ClassMethod>1</ClassMethod>
+<FormalSpec>dialogInfo:%String</FormalSpec>
+<Implementation><![CDATA[
+	kill %XOBWERR,%objlasterror
+	set %XOBWERR=dialogInfo
+	set $ECODE=",UXOBW,"
+]]></Implementation>
+</Method>
+
+<Method name="%OnNew">
+<FormalSpec>dialogCode:%String,errorMessage:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set ..errorType=..#ERRORTYPE
+	set ..code=dialogCode
+	set x=errorMessage
+	for  do ..text.Insert($extract(x,1,70)) set x=$extract(x,71,9999) quit:x=""
+	quit $$$OK
+]]></Implementation>
+</Method>
+
+<Storage name="StorageSQL">
+<Type>%CacheSQLStorage</Type>
+</Storage>
+</Class>
+</Export>

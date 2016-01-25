@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="xobw.WsdlHandler">
+<Description><![CDATA[
+This class is used to determine class name of web service client port and url context value of the web service.
+<br><br>
+<b>Restricted Use:</b> The properties and methods of this class are for HWSC use only. ]]></Description>
+<ClassType/>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>%RegisteredObject</Super>
+<TimeCreated>60655,58903.759394</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// 1.0;HwscWebServiceClient;;September 13, 2010
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// HealtheVet Web Service Client v1 [Build: 1.0.0.031]
+
+]]></Content>
+</UDLText>
+
+<Method name="parse">
+<Description><![CDATA[
+parses WSDL. 
+<br><br><b>Restricted Use:</b> This method is for HWSC use only.]]></Description>
+<ClassMethod>1</ClassMethod>
+<FormalSpec>reader:%XML.TextReader</FormalSpec>
+<ReturnType>%List</ReturnType>
+<Implementation><![CDATA[
+ set serviceFlag=0
+ while ('reader.EOF && reader.Read()) {
+	 set:((reader.NodeType = "endelement") && (reader.LocalName = "service")) serviceFlag=0
+	 if ((reader.NodeType = "element") && (reader.LocalName = "service")) {
+	 	set serviceFlag=1
+	 	set:reader.MoveToAttributeName("name") serviceName=reader.Value
+	 }
+	 elseif (serviceFlag && (reader.NodeType="element") && (reader.LocalName="port")) {
+	  set:reader.MoveToAttributeName("name") servicePort=reader.Value
+	 }
+	 elseif (serviceFlag && (reader.NodeType="element") && (reader.LocalName="address")) {
+	 	set:reader.MoveToAttributeName("location") serviceUrl=$P(reader.Value,"/",4,999)
+	 }
+ }
+ quit $listbuild(serviceName,servicePort,serviceUrl)
+]]></Implementation>
+</Method>
+
+<Method name="getInfoFromFile">
+<Description><![CDATA[
+parses WSDL from a file. 
+<br><br><b>Restricted Use:</b> This method is for HWSC use only.]]></Description>
+<ClassMethod>1</ClassMethod>
+<FormalSpec>wsdlFile:%String</FormalSpec>
+<ReturnType>%List</ReturnType>
+<Implementation><![CDATA[
+	set status = ##class(%XML.TextReader).ParseFile(wsdlFile,.reader)
+	if (reader '= $$$NULLOREF) {
+ 		quit ##class(xobw.WsdlHandler).parse(reader)
+	} else {
+		quit ""
+	}
+]]></Implementation>
+</Method>
+
+<Method name="getInfoFromStream">
+<Description><![CDATA[
+parses WSDL from a stream.
+<br><br><b>Restricted Use:</b> This method is for HWSC use only.]]></Description>
+<ClassMethod>1</ClassMethod>
+<FormalSpec>wsdlStream:%Stream</FormalSpec>
+<ReturnType>%List</ReturnType>
+<Implementation><![CDATA[
+	set status = ##class(%XML.TextReader).ParseStream(wsdlStream,.reader)
+	if (reader '= $$$NULLOREF) {
+ 		quit ##class(xobw.WsdlHandler).parse(reader)
+	} else {
+		quit ""
+	}
+]]></Implementation>
+</Method>
+
+<Method name="getInfoFromString">
+<Description><![CDATA[
+parses WSDL from a string
+<br><br><b>Restricted Use:</b> This method is for HWSC use only.]]></Description>
+<ClassMethod>1</ClassMethod>
+<FormalSpec>wsdlString:%String</FormalSpec>
+<ReturnType>%List</ReturnType>
+<Implementation><![CDATA[
+	set status = ##class(%XML.TextReader).ParseString(wsdlString,.reader)
+	if (reader '= $$$NULLOREF) {
+ 		quit ##class(xobw.WsdlHandler).parse(reader)
+	} else {
+		quit ""
+	}
+]]></Implementation>
+</Method>
+</Class>
+</Export>
