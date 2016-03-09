@@ -1,128 +1,136 @@
-IBDEI0KF ; ; 06-AUG-2015
+IBDEI0KF ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,9663,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9663,1,2,0)
- ;;=2^Remove Corneal Epith, EDTA
- ;;^UTILITY(U,$J,358.3,9663,1,3,0)
- ;;=3^65436
- ;;^UTILITY(U,$J,358.3,9664,0)
- ;;=65772^^43^551^24^^^^1
- ;;^UTILITY(U,$J,358.3,9664,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9664,1,2,0)
- ;;=2^Incision, Cornea, Relaxation
- ;;^UTILITY(U,$J,358.3,9664,1,3,0)
- ;;=3^65772
- ;;^UTILITY(U,$J,358.3,9665,0)
- ;;=37609^^43^551^32^^^^1
- ;;^UTILITY(U,$J,358.3,9665,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9665,1,2,0)
- ;;=2^Temporal Artery Biopsy
- ;;^UTILITY(U,$J,358.3,9665,1,3,0)
- ;;=3^37609
- ;;^UTILITY(U,$J,358.3,9666,0)
- ;;=66170^^43^551^23^^^^1
- ;;^UTILITY(U,$J,358.3,9666,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9666,1,2,0)
- ;;=2^Fistulization Sclera for Glauc Trabeculectomy
- ;;^UTILITY(U,$J,358.3,9666,1,3,0)
- ;;=3^66170
- ;;^UTILITY(U,$J,358.3,9667,0)
- ;;=65800^^43^551^13^^^^1
- ;;^UTILITY(U,$J,358.3,9667,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9667,1,2,0)
- ;;=2^Drainage of Eye
- ;;^UTILITY(U,$J,358.3,9667,1,3,0)
- ;;=3^65800
- ;;^UTILITY(U,$J,358.3,9668,0)
- ;;=67805^^43^551^6^^^^1
- ;;^UTILITY(U,$J,358.3,9668,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9668,1,2,0)
- ;;=2^Chalazion-Excision;Mult,Different Lid
- ;;^UTILITY(U,$J,358.3,9668,1,3,0)
- ;;=3^67805
- ;;^UTILITY(U,$J,358.3,9669,0)
- ;;=67801^^43^551^7^^^^1
- ;;^UTILITY(U,$J,358.3,9669,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9669,1,2,0)
- ;;=2^Chalazion-Excision;Mult,Same Lid
- ;;^UTILITY(U,$J,358.3,9669,1,3,0)
- ;;=3^67801
- ;;^UTILITY(U,$J,358.3,9670,0)
- ;;=68110^^43^551^29^^^^1
- ;;^UTILITY(U,$J,358.3,9670,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9670,1,2,0)
- ;;=2^Remove Eyelid Lining Lesion
- ;;^UTILITY(U,$J,358.3,9670,1,3,0)
- ;;=3^68110
- ;;^UTILITY(U,$J,358.3,9671,0)
- ;;=65855^^43^552^11^^^^1
- ;;^UTILITY(U,$J,358.3,9671,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9671,1,2,0)
- ;;=2^Trabeculoplasty, one/more sessions
- ;;^UTILITY(U,$J,358.3,9671,1,3,0)
- ;;=3^65855
- ;;^UTILITY(U,$J,358.3,9672,0)
- ;;=65860^^43^552^10^^^^1
- ;;^UTILITY(U,$J,358.3,9672,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9672,1,2,0)
- ;;=2^Sever Adhesions of Ant Segment
- ;;^UTILITY(U,$J,358.3,9672,1,3,0)
- ;;=3^65860
- ;;^UTILITY(U,$J,358.3,9673,0)
- ;;=66761^^43^552^5^^^^1
- ;;^UTILITY(U,$J,358.3,9673,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9673,1,2,0)
- ;;=2^Iridotomy/Iridectomy, one/more session
- ;;^UTILITY(U,$J,358.3,9673,1,3,0)
- ;;=3^66761
- ;;^UTILITY(U,$J,358.3,9674,0)
- ;;=66762^^43^552^4^^^^1
- ;;^UTILITY(U,$J,358.3,9674,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9674,1,2,0)
- ;;=2^Iridoplasty, one/more sessions
- ;;^UTILITY(U,$J,358.3,9674,1,3,0)
- ;;=3^66762
- ;;^UTILITY(U,$J,358.3,9675,0)
- ;;=67105^^43^552^9^^^^1
- ;;^UTILITY(U,$J,358.3,9675,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9675,1,2,0)
- ;;=2^Repair Detach Retina 1 or + Sessions,Photocoag
- ;;^UTILITY(U,$J,358.3,9675,1,3,0)
- ;;=3^67105
- ;;^UTILITY(U,$J,358.3,9676,0)
- ;;=67145^^43^552^8^^^^1
- ;;^UTILITY(U,$J,358.3,9676,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9676,1,2,0)
- ;;=2^Prophylactic Tx of Retina 1 or + Sessions,Photocoag
- ;;^UTILITY(U,$J,358.3,9676,1,3,0)
- ;;=3^67145
- ;;^UTILITY(U,$J,358.3,9677,0)
- ;;=67210^^43^552^3^^^^1
- ;;^UTILITY(U,$J,358.3,9677,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9677,1,2,0)
- ;;=2^Destroy Retinal Lesion 1 or + Sessions,Photocoag
- ;;^UTILITY(U,$J,358.3,9677,1,3,0)
- ;;=3^67210
- ;;^UTILITY(U,$J,358.3,9678,0)
- ;;=67228^^43^552^2^^^^1
- ;;^UTILITY(U,$J,358.3,9678,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9678,1,2,0)
- ;;=2^Destroy Ext Retinopathy, one/more sessions
+ ;;^UTILITY(U,$J,358.3,9495,2)
+ ;;=^5005587
+ ;;^UTILITY(U,$J,358.3,9496,0)
+ ;;=H35.021^^41^478^42
+ ;;^UTILITY(U,$J,358.3,9496,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9496,1,3,0)
+ ;;=3^Exudative Retinopathy,Right Eye
+ ;;^UTILITY(U,$J,358.3,9496,1,4,0)
+ ;;=4^H35.021
+ ;;^UTILITY(U,$J,358.3,9496,2)
+ ;;=^5005586
+ ;;^UTILITY(U,$J,358.3,9497,0)
+ ;;=H35.373^^41^478^67
+ ;;^UTILITY(U,$J,358.3,9497,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9497,1,3,0)
+ ;;=3^Puckering of Macula,Bilateral
+ ;;^UTILITY(U,$J,358.3,9497,1,4,0)
+ ;;=4^H35.373
+ ;;^UTILITY(U,$J,358.3,9497,2)
+ ;;=^5005664
+ ;;^UTILITY(U,$J,358.3,9498,0)
+ ;;=H35.31^^41^478^60
+ ;;^UTILITY(U,$J,358.3,9498,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9498,1,3,0)
+ ;;=3^Nonexudative Age-Related Macular Degeneration
+ ;;^UTILITY(U,$J,358.3,9498,1,4,0)
+ ;;=4^H35.31
+ ;;^UTILITY(U,$J,358.3,9498,2)
+ ;;=^5005647
+ ;;^UTILITY(U,$J,358.3,9499,0)
+ ;;=H31.422^^41^478^96
+ ;;^UTILITY(U,$J,358.3,9499,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9499,1,3,0)
+ ;;=3^Serous Choroidal Detachment,Left Eye
+ ;;^UTILITY(U,$J,358.3,9499,1,4,0)
+ ;;=4^H31.422
+ ;;^UTILITY(U,$J,358.3,9499,2)
+ ;;=^5005484
+ ;;^UTILITY(U,$J,358.3,9500,0)
+ ;;=H31.421^^41^478^97
+ ;;^UTILITY(U,$J,358.3,9500,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9500,1,3,0)
+ ;;=3^Serous Choroidal Detachment,Right Eye
+ ;;^UTILITY(U,$J,358.3,9500,1,4,0)
+ ;;=4^H31.421
+ ;;^UTILITY(U,$J,358.3,9500,2)
+ ;;=^5005483
+ ;;^UTILITY(U,$J,358.3,9501,0)
+ ;;=B58.01^^41^478^105
+ ;;^UTILITY(U,$J,358.3,9501,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9501,1,3,0)
+ ;;=3^Toxoplasma Chorioretinitis
+ ;;^UTILITY(U,$J,358.3,9501,1,4,0)
+ ;;=4^B58.01
+ ;;^UTILITY(U,$J,358.3,9501,2)
+ ;;=^5000724
+ ;;^UTILITY(U,$J,358.3,9502,0)
+ ;;=H34.812^^41^478^10
+ ;;^UTILITY(U,$J,358.3,9502,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9502,1,3,0)
+ ;;=3^Central Retinal Vein Occlusion,Left Eye
+ ;;^UTILITY(U,$J,358.3,9502,1,4,0)
+ ;;=4^H34.812
+ ;;^UTILITY(U,$J,358.3,9502,2)
+ ;;=^5005569
+ ;;^UTILITY(U,$J,358.3,9503,0)
+ ;;=H34.823^^41^478^109
+ ;;^UTILITY(U,$J,358.3,9503,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9503,1,3,0)
+ ;;=3^Venous Engorgement,Bilateral
+ ;;^UTILITY(U,$J,358.3,9503,1,4,0)
+ ;;=4^H34.823
+ ;;^UTILITY(U,$J,358.3,9503,2)
+ ;;=^5005574
+ ;;^UTILITY(U,$J,358.3,9504,0)
+ ;;=H34.822^^41^478^110
+ ;;^UTILITY(U,$J,358.3,9504,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9504,1,3,0)
+ ;;=3^Venous Engorgement,Left Eye
+ ;;^UTILITY(U,$J,358.3,9504,1,4,0)
+ ;;=4^H34.822
+ ;;^UTILITY(U,$J,358.3,9504,2)
+ ;;=^5005573
+ ;;^UTILITY(U,$J,358.3,9505,0)
+ ;;=H34.821^^41^478^111
+ ;;^UTILITY(U,$J,358.3,9505,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9505,1,3,0)
+ ;;=3^Venous Engorgement,Right Eye
+ ;;^UTILITY(U,$J,358.3,9505,1,4,0)
+ ;;=4^H34.821
+ ;;^UTILITY(U,$J,358.3,9505,2)
+ ;;=^5005572
+ ;;^UTILITY(U,$J,358.3,9506,0)
+ ;;=H43.813^^41^478^115
+ ;;^UTILITY(U,$J,358.3,9506,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9506,1,3,0)
+ ;;=3^Vitreous Degeneration,Bilateral
+ ;;^UTILITY(U,$J,358.3,9506,1,4,0)
+ ;;=4^H43.813
+ ;;^UTILITY(U,$J,358.3,9506,2)
+ ;;=^5005955
+ ;;^UTILITY(U,$J,358.3,9507,0)
+ ;;=H43.812^^41^478^116
+ ;;^UTILITY(U,$J,358.3,9507,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9507,1,3,0)
+ ;;=3^Vitreous Degeneration,Left Eye
+ ;;^UTILITY(U,$J,358.3,9507,1,4,0)
+ ;;=4^H43.812
+ ;;^UTILITY(U,$J,358.3,9507,2)
+ ;;=^5005954
+ ;;^UTILITY(U,$J,358.3,9508,0)
+ ;;=H43.811^^41^478^117
+ ;;^UTILITY(U,$J,358.3,9508,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9508,1,3,0)
+ ;;=3^Vitreous Degeneration,Right Eye
+ ;;^UTILITY(U,$J,358.3,9508,1,4,0)
+ ;;=4^H43.811
+ ;;^UTILITY(U,$J,358.3,9508,2)
+ ;;=^5005953

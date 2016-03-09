@@ -1,138 +1,140 @@
-IBDEI04H ; ; 06-AUG-2015
+IBDEI04H ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1569,1,3,0)
- ;;=3^Cervicalgia
- ;;^UTILITY(U,$J,358.3,1569,1,4,0)
- ;;=4^M54.2
- ;;^UTILITY(U,$J,358.3,1569,2)
- ;;=^5012304
- ;;^UTILITY(U,$J,358.3,1570,0)
- ;;=M48.00^^3^45^95
- ;;^UTILITY(U,$J,358.3,1570,1,0)
+ ;;^UTILITY(U,$J,358.3,1670,2)
+ ;;=^5004173
+ ;;^UTILITY(U,$J,358.3,1671,0)
+ ;;=R56.00^^11^147^23
+ ;;^UTILITY(U,$J,358.3,1671,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1570,1,3,0)
- ;;=3^Spinal stenosis, site unspecified
- ;;^UTILITY(U,$J,358.3,1570,1,4,0)
- ;;=4^M48.00
- ;;^UTILITY(U,$J,358.3,1570,2)
- ;;=^5012087
- ;;^UTILITY(U,$J,358.3,1571,0)
- ;;=M54.5^^3^45^48
- ;;^UTILITY(U,$J,358.3,1571,1,0)
+ ;;^UTILITY(U,$J,358.3,1671,1,3,0)
+ ;;=3^Simple Febrile Convulsions
+ ;;^UTILITY(U,$J,358.3,1671,1,4,0)
+ ;;=4^R56.00
+ ;;^UTILITY(U,$J,358.3,1671,2)
+ ;;=^5019522
+ ;;^UTILITY(U,$J,358.3,1672,0)
+ ;;=R56.9^^11^147^9
+ ;;^UTILITY(U,$J,358.3,1672,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1571,1,3,0)
- ;;=3^Low back pain
- ;;^UTILITY(U,$J,358.3,1571,1,4,0)
- ;;=4^M54.5
- ;;^UTILITY(U,$J,358.3,1571,2)
- ;;=^5012311
- ;;^UTILITY(U,$J,358.3,1572,0)
- ;;=M54.30^^3^45^91
- ;;^UTILITY(U,$J,358.3,1572,1,0)
+ ;;^UTILITY(U,$J,358.3,1672,1,3,0)
+ ;;=3^Convulsions,Unspec
+ ;;^UTILITY(U,$J,358.3,1672,1,4,0)
+ ;;=4^R56.9
+ ;;^UTILITY(U,$J,358.3,1672,2)
+ ;;=^5019524
+ ;;^UTILITY(U,$J,358.3,1673,0)
+ ;;=R42.^^11^147^10
+ ;;^UTILITY(U,$J,358.3,1673,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1572,1,3,0)
- ;;=3^Sciatica, unspecified side
- ;;^UTILITY(U,$J,358.3,1572,1,4,0)
- ;;=4^M54.30
- ;;^UTILITY(U,$J,358.3,1572,2)
- ;;=^5012305
- ;;^UTILITY(U,$J,358.3,1573,0)
- ;;=M54.14^^3^45^84
- ;;^UTILITY(U,$J,358.3,1573,1,0)
+ ;;^UTILITY(U,$J,358.3,1673,1,3,0)
+ ;;=3^Dizziness and Giddiness
+ ;;^UTILITY(U,$J,358.3,1673,1,4,0)
+ ;;=4^R42.
+ ;;^UTILITY(U,$J,358.3,1673,2)
+ ;;=^5019450
+ ;;^UTILITY(U,$J,358.3,1674,0)
+ ;;=R50.81^^11^147^12
+ ;;^UTILITY(U,$J,358.3,1674,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1573,1,3,0)
- ;;=3^Radiculopathy, thoracic region
- ;;^UTILITY(U,$J,358.3,1573,1,4,0)
- ;;=4^M54.14
- ;;^UTILITY(U,$J,358.3,1573,2)
- ;;=^5012299
- ;;^UTILITY(U,$J,358.3,1574,0)
- ;;=M54.16^^3^45^81
- ;;^UTILITY(U,$J,358.3,1574,1,0)
+ ;;^UTILITY(U,$J,358.3,1674,1,3,0)
+ ;;=3^Fever in Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,1674,1,4,0)
+ ;;=4^R50.81
+ ;;^UTILITY(U,$J,358.3,1674,2)
+ ;;=^5019508
+ ;;^UTILITY(U,$J,358.3,1675,0)
+ ;;=R50.82^^11^147^20
+ ;;^UTILITY(U,$J,358.3,1675,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1574,1,3,0)
- ;;=3^Radiculopathy, lumbar region
- ;;^UTILITY(U,$J,358.3,1574,1,4,0)
- ;;=4^M54.16
- ;;^UTILITY(U,$J,358.3,1574,2)
- ;;=^5012301
- ;;^UTILITY(U,$J,358.3,1575,0)
- ;;=M54.15^^3^45^85
- ;;^UTILITY(U,$J,358.3,1575,1,0)
+ ;;^UTILITY(U,$J,358.3,1675,1,3,0)
+ ;;=3^Postprocedural Fever
+ ;;^UTILITY(U,$J,358.3,1675,1,4,0)
+ ;;=4^R50.82
+ ;;^UTILITY(U,$J,358.3,1675,2)
+ ;;=^5019509
+ ;;^UTILITY(U,$J,358.3,1676,0)
+ ;;=Z13.6^^11^147^21
+ ;;^UTILITY(U,$J,358.3,1676,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1575,1,3,0)
- ;;=3^Radiculopathy, thoracolumbar region
- ;;^UTILITY(U,$J,358.3,1575,1,4,0)
- ;;=4^M54.15
- ;;^UTILITY(U,$J,358.3,1575,2)
- ;;=^5012300
- ;;^UTILITY(U,$J,358.3,1576,0)
- ;;=M54.17^^3^45^82
- ;;^UTILITY(U,$J,358.3,1576,1,0)
+ ;;^UTILITY(U,$J,358.3,1676,1,3,0)
+ ;;=3^Screening for Cardiovascular Disorders
+ ;;^UTILITY(U,$J,358.3,1676,1,4,0)
+ ;;=4^Z13.6
+ ;;^UTILITY(U,$J,358.3,1676,2)
+ ;;=^5062707
+ ;;^UTILITY(U,$J,358.3,1677,0)
+ ;;=I25.2^^11^148^3
+ ;;^UTILITY(U,$J,358.3,1677,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1576,1,3,0)
- ;;=3^Radiculopathy, lumbosacral region
- ;;^UTILITY(U,$J,358.3,1576,1,4,0)
- ;;=4^M54.17
- ;;^UTILITY(U,$J,358.3,1576,2)
- ;;=^5012302
- ;;^UTILITY(U,$J,358.3,1577,0)
- ;;=M54.9^^3^45^24
- ;;^UTILITY(U,$J,358.3,1577,1,0)
+ ;;^UTILITY(U,$J,358.3,1677,1,3,0)
+ ;;=3^Old MI
+ ;;^UTILITY(U,$J,358.3,1677,1,4,0)
+ ;;=4^I25.2
+ ;;^UTILITY(U,$J,358.3,1677,2)
+ ;;=^259884
+ ;;^UTILITY(U,$J,358.3,1678,0)
+ ;;=Z95.2^^11^148^6
+ ;;^UTILITY(U,$J,358.3,1678,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1577,1,3,0)
- ;;=3^Dorsalgia, unspecified
- ;;^UTILITY(U,$J,358.3,1577,1,4,0)
- ;;=4^M54.9
- ;;^UTILITY(U,$J,358.3,1577,2)
- ;;=^5012314
- ;;^UTILITY(U,$J,358.3,1578,0)
- ;;=M75.101^^3^45^89
- ;;^UTILITY(U,$J,358.3,1578,1,0)
+ ;;^UTILITY(U,$J,358.3,1678,1,3,0)
+ ;;=3^Presence of Prosthetic Heart Valve
+ ;;^UTILITY(U,$J,358.3,1678,1,4,0)
+ ;;=4^Z95.2
+ ;;^UTILITY(U,$J,358.3,1678,2)
+ ;;=^5063670
+ ;;^UTILITY(U,$J,358.3,1679,0)
+ ;;=Z95.1^^11^148^4
+ ;;^UTILITY(U,$J,358.3,1679,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1578,1,3,0)
- ;;=3^Rotatr-cuff tear/ruptr of right shoulder, not trauma,Unspec
- ;;^UTILITY(U,$J,358.3,1578,1,4,0)
- ;;=4^M75.101
- ;;^UTILITY(U,$J,358.3,1578,2)
- ;;=^5013242
- ;;^UTILITY(U,$J,358.3,1579,0)
- ;;=M75.102^^3^45^88
- ;;^UTILITY(U,$J,358.3,1579,1,0)
+ ;;^UTILITY(U,$J,358.3,1679,1,3,0)
+ ;;=3^Presence of Aortocoronary Bypass Graft
+ ;;^UTILITY(U,$J,358.3,1679,1,4,0)
+ ;;=4^Z95.1
+ ;;^UTILITY(U,$J,358.3,1679,2)
+ ;;=^5063669
+ ;;^UTILITY(U,$J,358.3,1680,0)
+ ;;=Z98.61^^11^148^1
+ ;;^UTILITY(U,$J,358.3,1680,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1579,1,3,0)
- ;;=3^Rotatr-cuff tear/ruptr of left shoulder, not trauma,Unspec
- ;;^UTILITY(U,$J,358.3,1579,1,4,0)
- ;;=4^M75.102
- ;;^UTILITY(U,$J,358.3,1579,2)
- ;;=^5013243
- ;;^UTILITY(U,$J,358.3,1580,0)
- ;;=M75.81^^3^45^94
- ;;^UTILITY(U,$J,358.3,1580,1,0)
+ ;;^UTILITY(U,$J,358.3,1680,1,3,0)
+ ;;=3^Coronary Angioplasty Status
+ ;;^UTILITY(U,$J,358.3,1680,1,4,0)
+ ;;=4^Z98.61
+ ;;^UTILITY(U,$J,358.3,1680,2)
+ ;;=^5063742
+ ;;^UTILITY(U,$J,358.3,1681,0)
+ ;;=Z95.2^^11^148^7
+ ;;^UTILITY(U,$J,358.3,1681,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1580,1,3,0)
- ;;=3^Shoulder NEC lesions, right shoulder
- ;;^UTILITY(U,$J,358.3,1580,1,4,0)
- ;;=4^M75.81
- ;;^UTILITY(U,$J,358.3,1580,2)
- ;;=^5013261
- ;;^UTILITY(U,$J,358.3,1581,0)
- ;;=M75.82^^3^45^93
- ;;^UTILITY(U,$J,358.3,1581,1,0)
+ ;;^UTILITY(U,$J,358.3,1681,1,3,0)
+ ;;=3^Presence of Prosthetic Heart Valve
+ ;;^UTILITY(U,$J,358.3,1681,1,4,0)
+ ;;=4^Z95.2
+ ;;^UTILITY(U,$J,358.3,1681,2)
+ ;;=^5063670
+ ;;^UTILITY(U,$J,358.3,1682,0)
+ ;;=Z95.3^^11^148^8
+ ;;^UTILITY(U,$J,358.3,1682,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1581,1,3,0)
- ;;=3^Shoulder NEC lesions, left shoulder
- ;;^UTILITY(U,$J,358.3,1581,1,4,0)
- ;;=4^M75.82
- ;;^UTILITY(U,$J,358.3,1581,2)
- ;;=^5013262
- ;;^UTILITY(U,$J,358.3,1582,0)
- ;;=M77.11^^3^45^45
- ;;^UTILITY(U,$J,358.3,1582,1,0)
+ ;;^UTILITY(U,$J,358.3,1682,1,3,0)
+ ;;=3^Presence of Xenogenic Heart Valve
+ ;;^UTILITY(U,$J,358.3,1682,1,4,0)
+ ;;=4^Z95.3
+ ;;^UTILITY(U,$J,358.3,1682,2)
+ ;;=^5063671
+ ;;^UTILITY(U,$J,358.3,1683,0)
+ ;;=Z95.4^^11^148^5
+ ;;^UTILITY(U,$J,358.3,1683,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1582,1,3,0)
- ;;=3^Lateral epicondylitis, right elbow
- ;;^UTILITY(U,$J,358.3,1582,1,4,0)
- ;;=4^M77.11
+ ;;^UTILITY(U,$J,358.3,1683,1,3,0)
+ ;;=3^Presence of Heart Valve Replacement NEC
+ ;;^UTILITY(U,$J,358.3,1683,1,4,0)
+ ;;=4^Z95.4
+ ;;^UTILITY(U,$J,358.3,1683,2)
+ ;;=^5063672
+ ;;^UTILITY(U,$J,358.3,1684,0)
+ ;;=Z79.01^^11^148^2
+ ;;^UTILITY(U,$J,358.3,1684,1,0)
+ ;;=^358.31IA^4^2

@@ -1,124 +1,138 @@
-IBDEI21M ; ; 06-AUG-2015
+IBDEI21M ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35696,1,3,0)
- ;;=3^Disruption of wound, unspecified, subsequent encounter
- ;;^UTILITY(U,$J,358.3,35696,1,4,0)
- ;;=4^T81.30XD
- ;;^UTILITY(U,$J,358.3,35696,2)
- ;;=^5054468
- ;;^UTILITY(U,$J,358.3,35697,0)
- ;;=T81.30XS^^189^2061^13
- ;;^UTILITY(U,$J,358.3,35697,1,0)
+ ;;^UTILITY(U,$J,358.3,34657,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35697,1,3,0)
- ;;=3^Disruption of wound, unspecified, sequela
- ;;^UTILITY(U,$J,358.3,35697,1,4,0)
- ;;=4^T81.30XS
- ;;^UTILITY(U,$J,358.3,35697,2)
- ;;=^5054469
- ;;^UTILITY(U,$J,358.3,35698,0)
- ;;=T81.31XA^^189^2061^3
- ;;^UTILITY(U,$J,358.3,35698,1,0)
+ ;;^UTILITY(U,$J,358.3,34657,1,3,0)
+ ;;=3^Morbid Obesity
+ ;;^UTILITY(U,$J,358.3,34657,1,4,0)
+ ;;=4^E66.01
+ ;;^UTILITY(U,$J,358.3,34657,2)
+ ;;=^5002826
+ ;;^UTILITY(U,$J,358.3,34658,0)
+ ;;=F18.10^^131^1692^95
+ ;;^UTILITY(U,$J,358.3,34658,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35698,1,3,0)
- ;;=3^Disruption of external surgical wound, NEC, init
- ;;^UTILITY(U,$J,358.3,35698,1,4,0)
- ;;=4^T81.31XA
- ;;^UTILITY(U,$J,358.3,35698,2)
- ;;=^5054470
- ;;^UTILITY(U,$J,358.3,35699,0)
- ;;=T81.31XD^^189^2061^4
- ;;^UTILITY(U,$J,358.3,35699,1,0)
+ ;;^UTILITY(U,$J,358.3,34658,1,3,0)
+ ;;=3^Inhalant Abuse,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,34658,1,4,0)
+ ;;=4^F18.10
+ ;;^UTILITY(U,$J,358.3,34658,2)
+ ;;=^5003380
+ ;;^UTILITY(U,$J,358.3,34659,0)
+ ;;=F55.0^^131^1692^38
+ ;;^UTILITY(U,$J,358.3,34659,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35699,1,3,0)
- ;;=3^Disruption of external surgical wound, NEC, subs
- ;;^UTILITY(U,$J,358.3,35699,1,4,0)
- ;;=4^T81.31XD
- ;;^UTILITY(U,$J,358.3,35699,2)
- ;;=^5054471
- ;;^UTILITY(U,$J,358.3,35700,0)
- ;;=T81.31XS^^189^2061^5
- ;;^UTILITY(U,$J,358.3,35700,1,0)
+ ;;^UTILITY(U,$J,358.3,34659,1,3,0)
+ ;;=3^Antacid Abuse
+ ;;^UTILITY(U,$J,358.3,34659,1,4,0)
+ ;;=4^F55.0
+ ;;^UTILITY(U,$J,358.3,34659,2)
+ ;;=^5003628
+ ;;^UTILITY(U,$J,358.3,34660,0)
+ ;;=F18.90^^131^1692^96
+ ;;^UTILITY(U,$J,358.3,34660,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35700,1,3,0)
- ;;=3^Disruption of external surgical wound, NEC, sequela
- ;;^UTILITY(U,$J,358.3,35700,1,4,0)
- ;;=4^T81.31XS
- ;;^UTILITY(U,$J,358.3,35700,2)
- ;;=^5054472
- ;;^UTILITY(U,$J,358.3,35701,0)
- ;;=T81.32XA^^189^2061^6
- ;;^UTILITY(U,$J,358.3,35701,1,0)
+ ;;^UTILITY(U,$J,358.3,34660,1,3,0)
+ ;;=3^Inhalant Use Uncomplicated,Unspec
+ ;;^UTILITY(U,$J,358.3,34660,1,4,0)
+ ;;=4^F18.90
+ ;;^UTILITY(U,$J,358.3,34660,2)
+ ;;=^5003405
+ ;;^UTILITY(U,$J,358.3,34661,0)
+ ;;=F55.2^^131^1692^102
+ ;;^UTILITY(U,$J,358.3,34661,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35701,1,3,0)
- ;;=3^Disruption of internal surgical wound, NEC, init
- ;;^UTILITY(U,$J,358.3,35701,1,4,0)
- ;;=4^T81.32XA
- ;;^UTILITY(U,$J,358.3,35701,2)
- ;;=^5054473
- ;;^UTILITY(U,$J,358.3,35702,0)
- ;;=T81.32XD^^189^2061^7
- ;;^UTILITY(U,$J,358.3,35702,1,0)
+ ;;^UTILITY(U,$J,358.3,34661,1,3,0)
+ ;;=3^Laxative Abuse
+ ;;^UTILITY(U,$J,358.3,34661,1,4,0)
+ ;;=4^F55.2
+ ;;^UTILITY(U,$J,358.3,34661,2)
+ ;;=^5003630
+ ;;^UTILITY(U,$J,358.3,34662,0)
+ ;;=F55.1^^131^1692^81
+ ;;^UTILITY(U,$J,358.3,34662,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35702,1,3,0)
- ;;=3^Disruption of internal surgical wound, NEC, subs
- ;;^UTILITY(U,$J,358.3,35702,1,4,0)
- ;;=4^T81.32XD
- ;;^UTILITY(U,$J,358.3,35702,2)
- ;;=^5054474
- ;;^UTILITY(U,$J,358.3,35703,0)
- ;;=T81.32XS^^189^2061^8
- ;;^UTILITY(U,$J,358.3,35703,1,0)
+ ;;^UTILITY(U,$J,358.3,34662,1,3,0)
+ ;;=3^Herbal/Folk Remedy Abuse
+ ;;^UTILITY(U,$J,358.3,34662,1,4,0)
+ ;;=4^F55.1
+ ;;^UTILITY(U,$J,358.3,34662,2)
+ ;;=^5003629
+ ;;^UTILITY(U,$J,358.3,34663,0)
+ ;;=F55.8^^131^1692^124
+ ;;^UTILITY(U,$J,358.3,34663,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35703,1,3,0)
- ;;=3^Disruption of internal surgical wound, NEC, sequela
- ;;^UTILITY(U,$J,358.3,35703,1,4,0)
- ;;=4^T81.32XS
- ;;^UTILITY(U,$J,358.3,35703,2)
- ;;=^5054475
- ;;^UTILITY(U,$J,358.3,35704,0)
- ;;=T81.33XA^^189^2061^9
- ;;^UTILITY(U,$J,358.3,35704,1,0)
+ ;;^UTILITY(U,$J,358.3,34663,1,3,0)
+ ;;=3^Non-Psychoactive Substance Abuse
+ ;;^UTILITY(U,$J,358.3,34663,1,4,0)
+ ;;=4^F55.8
+ ;;^UTILITY(U,$J,358.3,34663,2)
+ ;;=^5003633
+ ;;^UTILITY(U,$J,358.3,34664,0)
+ ;;=F55.4^^131^1692^161
+ ;;^UTILITY(U,$J,358.3,34664,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35704,1,3,0)
- ;;=3^Disruption of traumatic injury wound repair, init encntr
- ;;^UTILITY(U,$J,358.3,35704,1,4,0)
- ;;=4^T81.33XA
- ;;^UTILITY(U,$J,358.3,35704,2)
- ;;=^5054476
- ;;^UTILITY(U,$J,358.3,35705,0)
- ;;=T81.33XD^^189^2061^10
- ;;^UTILITY(U,$J,358.3,35705,1,0)
+ ;;^UTILITY(U,$J,358.3,34664,1,3,0)
+ ;;=3^Vitamin Abuse
+ ;;^UTILITY(U,$J,358.3,34664,1,4,0)
+ ;;=4^F55.4
+ ;;^UTILITY(U,$J,358.3,34664,2)
+ ;;=^5003632
+ ;;^UTILITY(U,$J,358.3,34665,0)
+ ;;=F55.3^^131^1692^151
+ ;;^UTILITY(U,$J,358.3,34665,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35705,1,3,0)
- ;;=3^Disruption of traumatic injury wound repair, subs encntr
- ;;^UTILITY(U,$J,358.3,35705,1,4,0)
- ;;=4^T81.33XD
- ;;^UTILITY(U,$J,358.3,35705,2)
- ;;=^5054477
- ;;^UTILITY(U,$J,358.3,35706,0)
- ;;=T81.33XS^^189^2061^11
- ;;^UTILITY(U,$J,358.3,35706,1,0)
+ ;;^UTILITY(U,$J,358.3,34665,1,3,0)
+ ;;=3^Steroid/Hormone Abuse
+ ;;^UTILITY(U,$J,358.3,34665,1,4,0)
+ ;;=4^F55.3
+ ;;^UTILITY(U,$J,358.3,34665,2)
+ ;;=^5003631
+ ;;^UTILITY(U,$J,358.3,34666,0)
+ ;;=F51.09^^131^1692^97
+ ;;^UTILITY(U,$J,358.3,34666,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35706,1,3,0)
- ;;=3^Disruption of traumatic injury wound repair, sequela
- ;;^UTILITY(U,$J,358.3,35706,1,4,0)
- ;;=4^T81.33XS
- ;;^UTILITY(U,$J,358.3,35706,2)
- ;;=^5054478
- ;;^UTILITY(U,$J,358.3,35707,0)
- ;;=T81.4XXA^^189^2061^15
- ;;^UTILITY(U,$J,358.3,35707,1,0)
+ ;;^UTILITY(U,$J,358.3,34666,1,3,0)
+ ;;=3^Insomnia not d/t Substance/Known Physiol Condition
+ ;;^UTILITY(U,$J,358.3,34666,1,4,0)
+ ;;=4^F51.09
+ ;;^UTILITY(U,$J,358.3,34666,2)
+ ;;=^5003608
+ ;;^UTILITY(U,$J,358.3,34667,0)
+ ;;=H53.9^^131^1692^159
+ ;;^UTILITY(U,$J,358.3,34667,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35707,1,3,0)
- ;;=3^Infection following a procedure, initial encounter
- ;;^UTILITY(U,$J,358.3,35707,1,4,0)
- ;;=4^T81.4XXA
- ;;^UTILITY(U,$J,358.3,35707,2)
- ;;=^5054479
- ;;^UTILITY(U,$J,358.3,35708,0)
- ;;=K68.11^^189^2061^17
- ;;^UTILITY(U,$J,358.3,35708,1,0)
+ ;;^UTILITY(U,$J,358.3,34667,1,3,0)
+ ;;=3^Visual Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,34667,1,4,0)
+ ;;=4^H53.9
+ ;;^UTILITY(U,$J,358.3,34667,2)
+ ;;=^124001
+ ;;^UTILITY(U,$J,358.3,34668,0)
+ ;;=I89.0^^131^1692^113
+ ;;^UTILITY(U,$J,358.3,34668,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34668,1,3,0)
+ ;;=3^Lymphedema NEC
+ ;;^UTILITY(U,$J,358.3,34668,1,4,0)
+ ;;=4^I89.0
+ ;;^UTILITY(U,$J,358.3,34668,2)
+ ;;=^5008073
+ ;;^UTILITY(U,$J,358.3,34669,0)
+ ;;=I87.1^^131^1692^158
+ ;;^UTILITY(U,$J,358.3,34669,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34669,1,3,0)
+ ;;=3^Vein Compression
+ ;;^UTILITY(U,$J,358.3,34669,1,4,0)
+ ;;=4^I87.1
+ ;;^UTILITY(U,$J,358.3,34669,2)
+ ;;=^269850
+ ;;^UTILITY(U,$J,358.3,34670,0)
+ ;;=K08.8^^131^1692^60
+ ;;^UTILITY(U,$J,358.3,34670,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34670,1,3,0)
+ ;;=3^Disorder of Teeth/Supporting Structures,Oth Specified

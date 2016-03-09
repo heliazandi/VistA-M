@@ -1,124 +1,134 @@
-IBDEI1ZD ; ; 06-AUG-2015
+IBDEI1ZD ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34699,1,4,0)
- ;;=4^M84.344S
- ;;^UTILITY(U,$J,358.3,34699,2)
- ;;=^5013661
- ;;^UTILITY(U,$J,358.3,34700,0)
- ;;=S62.522S^^183^2021^15
- ;;^UTILITY(U,$J,358.3,34700,1,0)
+ ;;^UTILITY(U,$J,358.3,33608,1,4,0)
+ ;;=4^D12.6
+ ;;^UTILITY(U,$J,358.3,33608,2)
+ ;;=^5001969
+ ;;^UTILITY(U,$J,358.3,33609,0)
+ ;;=D12.1^^131^1675^10
+ ;;^UTILITY(U,$J,358.3,33609,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34700,1,3,0)
- ;;=3^Disp fx of distal phalanx of left thumb, sequela
- ;;^UTILITY(U,$J,358.3,34700,1,4,0)
- ;;=4^S62.522S
- ;;^UTILITY(U,$J,358.3,34700,2)
- ;;=^5034353
- ;;^UTILITY(U,$J,358.3,34701,0)
- ;;=S62.521S^^183^2021^20
- ;;^UTILITY(U,$J,358.3,34701,1,0)
+ ;;^UTILITY(U,$J,358.3,33609,1,3,0)
+ ;;=3^Benign Neop of Appendix
+ ;;^UTILITY(U,$J,358.3,33609,1,4,0)
+ ;;=4^D12.1
+ ;;^UTILITY(U,$J,358.3,33609,2)
+ ;;=^5001964
+ ;;^UTILITY(U,$J,358.3,33610,0)
+ ;;=K63.5^^131^1675^73
+ ;;^UTILITY(U,$J,358.3,33610,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34701,1,3,0)
- ;;=3^Disp fx of distal phalanx of right thumb, sequela
- ;;^UTILITY(U,$J,358.3,34701,1,4,0)
- ;;=4^S62.521S
- ;;^UTILITY(U,$J,358.3,34701,2)
- ;;=^5034346
- ;;^UTILITY(U,$J,358.3,34702,0)
- ;;=S62.512S^^183^2021^43
- ;;^UTILITY(U,$J,358.3,34702,1,0)
+ ;;^UTILITY(U,$J,358.3,33610,1,3,0)
+ ;;=3^Polyp of Colon
+ ;;^UTILITY(U,$J,358.3,33610,1,4,0)
+ ;;=4^K63.5
+ ;;^UTILITY(U,$J,358.3,33610,2)
+ ;;=^5008765
+ ;;^UTILITY(U,$J,358.3,33611,0)
+ ;;=D12.3^^131^1675^17
+ ;;^UTILITY(U,$J,358.3,33611,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34702,1,3,0)
- ;;=3^Disp fx of proximal phalanx of left thumb, sequela
- ;;^UTILITY(U,$J,358.3,34702,1,4,0)
- ;;=4^S62.512S
- ;;^UTILITY(U,$J,358.3,34702,2)
- ;;=^5034311
- ;;^UTILITY(U,$J,358.3,34703,0)
- ;;=S62.511S^^183^2021^48
- ;;^UTILITY(U,$J,358.3,34703,1,0)
+ ;;^UTILITY(U,$J,358.3,33611,1,3,0)
+ ;;=3^Benign Neop of Transverse Colon
+ ;;^UTILITY(U,$J,358.3,33611,1,4,0)
+ ;;=4^D12.3
+ ;;^UTILITY(U,$J,358.3,33611,2)
+ ;;=^5001966
+ ;;^UTILITY(U,$J,358.3,33612,0)
+ ;;=D12.2^^131^1675^11
+ ;;^UTILITY(U,$J,358.3,33612,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34703,1,3,0)
- ;;=3^Disp fx of proximal phalanx of right thumb, sequela
- ;;^UTILITY(U,$J,358.3,34703,1,4,0)
- ;;=4^S62.511S
- ;;^UTILITY(U,$J,358.3,34703,2)
- ;;=^5034304
- ;;^UTILITY(U,$J,358.3,34704,0)
- ;;=S62.525S^^183^2021^73
- ;;^UTILITY(U,$J,358.3,34704,1,0)
+ ;;^UTILITY(U,$J,358.3,33612,1,3,0)
+ ;;=3^Benign Neop of Ascending Colon
+ ;;^UTILITY(U,$J,358.3,33612,1,4,0)
+ ;;=4^D12.2
+ ;;^UTILITY(U,$J,358.3,33612,2)
+ ;;=^5001965
+ ;;^UTILITY(U,$J,358.3,33613,0)
+ ;;=D12.5^^131^1675^16
+ ;;^UTILITY(U,$J,358.3,33613,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34704,1,3,0)
- ;;=3^Nondisp fx of distal phalanx of left thumb, sequela
- ;;^UTILITY(U,$J,358.3,34704,1,4,0)
- ;;=4^S62.525S
- ;;^UTILITY(U,$J,358.3,34704,2)
- ;;=^5034374
- ;;^UTILITY(U,$J,358.3,34705,0)
- ;;=S62.524S^^183^2021^78
- ;;^UTILITY(U,$J,358.3,34705,1,0)
+ ;;^UTILITY(U,$J,358.3,33613,1,3,0)
+ ;;=3^Benign Neop of Sigmoid Colon
+ ;;^UTILITY(U,$J,358.3,33613,1,4,0)
+ ;;=4^D12.5
+ ;;^UTILITY(U,$J,358.3,33613,2)
+ ;;=^5001968
+ ;;^UTILITY(U,$J,358.3,33614,0)
+ ;;=D12.4^^131^1675^14
+ ;;^UTILITY(U,$J,358.3,33614,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34705,1,3,0)
- ;;=3^Nondisp fx of distal phalanx of right thumb, sequela
- ;;^UTILITY(U,$J,358.3,34705,1,4,0)
- ;;=4^S62.524S
- ;;^UTILITY(U,$J,358.3,34705,2)
- ;;=^5034367
- ;;^UTILITY(U,$J,358.3,34706,0)
- ;;=S62.515S^^183^2021^101
- ;;^UTILITY(U,$J,358.3,34706,1,0)
+ ;;^UTILITY(U,$J,358.3,33614,1,3,0)
+ ;;=3^Benign Neop of Descending Colon
+ ;;^UTILITY(U,$J,358.3,33614,1,4,0)
+ ;;=4^D12.4
+ ;;^UTILITY(U,$J,358.3,33614,2)
+ ;;=^5001967
+ ;;^UTILITY(U,$J,358.3,33615,0)
+ ;;=D73.2^^131^1675^19
+ ;;^UTILITY(U,$J,358.3,33615,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34706,1,3,0)
- ;;=3^Nondisp fx of proximal phalanx of left thumb, sequela
- ;;^UTILITY(U,$J,358.3,34706,1,4,0)
- ;;=4^S62.515S
- ;;^UTILITY(U,$J,358.3,34706,2)
- ;;=^5034332
- ;;^UTILITY(U,$J,358.3,34707,0)
- ;;=S62.514S^^183^2021^106
- ;;^UTILITY(U,$J,358.3,34707,1,0)
+ ;;^UTILITY(U,$J,358.3,33615,1,3,0)
+ ;;=3^Congestive Splenomegaly,Chronic
+ ;;^UTILITY(U,$J,358.3,33615,1,4,0)
+ ;;=4^D73.2
+ ;;^UTILITY(U,$J,358.3,33615,2)
+ ;;=^268000
+ ;;^UTILITY(U,$J,358.3,33616,0)
+ ;;=I85.00^^131^1675^46
+ ;;^UTILITY(U,$J,358.3,33616,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34707,1,3,0)
- ;;=3^Nondisp fx of proximal phalanx of right thumb, sequela
- ;;^UTILITY(U,$J,358.3,34707,1,4,0)
- ;;=4^S62.514S
- ;;^UTILITY(U,$J,358.3,34707,2)
- ;;=^5034325
- ;;^UTILITY(U,$J,358.3,34708,0)
- ;;=S32.462S^^183^2022^5
- ;;^UTILITY(U,$J,358.3,34708,1,0)
+ ;;^UTILITY(U,$J,358.3,33616,1,3,0)
+ ;;=3^Esophageal Varices w/o Bleeding
+ ;;^UTILITY(U,$J,358.3,33616,1,4,0)
+ ;;=4^I85.00
+ ;;^UTILITY(U,$J,358.3,33616,2)
+ ;;=^5008023
+ ;;^UTILITY(U,$J,358.3,33617,0)
+ ;;=K20.9^^131^1675^47
+ ;;^UTILITY(U,$J,358.3,33617,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34708,1,3,0)
- ;;=3^Disp fx of associated transv/post of left acetabulum, sequela
- ;;^UTILITY(U,$J,358.3,34708,1,4,0)
- ;;=4^S32.462S
- ;;^UTILITY(U,$J,358.3,34708,2)
- ;;=^5024892
- ;;^UTILITY(U,$J,358.3,34709,0)
- ;;=S32.461S^^183^2022^6
- ;;^UTILITY(U,$J,358.3,34709,1,0)
+ ;;^UTILITY(U,$J,358.3,33617,1,3,0)
+ ;;=3^Esophagitis,Unspec
+ ;;^UTILITY(U,$J,358.3,33617,1,4,0)
+ ;;=4^K20.9
+ ;;^UTILITY(U,$J,358.3,33617,2)
+ ;;=^295809
+ ;;^UTILITY(U,$J,358.3,33618,0)
+ ;;=K21.9^^131^1675^55
+ ;;^UTILITY(U,$J,358.3,33618,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34709,1,3,0)
- ;;=3^Disp fx of associated transv/post of right acetab, sequela
- ;;^UTILITY(U,$J,358.3,34709,1,4,0)
- ;;=4^S32.461S
- ;;^UTILITY(U,$J,358.3,34709,2)
- ;;=^5024886
- ;;^UTILITY(U,$J,358.3,34710,0)
- ;;=S32.312S^^183^2022^7
- ;;^UTILITY(U,$J,358.3,34710,1,0)
+ ;;^UTILITY(U,$J,358.3,33618,1,3,0)
+ ;;=3^Gastroesophageal Reflux Disease w/o Esophagitis
+ ;;^UTILITY(U,$J,358.3,33618,1,4,0)
+ ;;=4^K21.9
+ ;;^UTILITY(U,$J,358.3,33618,2)
+ ;;=^5008505
+ ;;^UTILITY(U,$J,358.3,33619,0)
+ ;;=K25.7^^131^1675^50
+ ;;^UTILITY(U,$J,358.3,33619,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34710,1,3,0)
- ;;=3^Disp fx of avulsion of left ilium, sequela
- ;;^UTILITY(U,$J,358.3,34710,1,4,0)
- ;;=4^S32.312S
- ;;^UTILITY(U,$J,358.3,34710,2)
- ;;=^5024658
- ;;^UTILITY(U,$J,358.3,34711,0)
- ;;=S32.311S^^183^2022^9
- ;;^UTILITY(U,$J,358.3,34711,1,0)
+ ;;^UTILITY(U,$J,358.3,33619,1,3,0)
+ ;;=3^Gastric Ulcer w/o Hemorrhage/Perforation,Chronic
+ ;;^UTILITY(U,$J,358.3,33619,1,4,0)
+ ;;=4^K25.7
+ ;;^UTILITY(U,$J,358.3,33619,2)
+ ;;=^5008521
+ ;;^UTILITY(U,$J,358.3,33620,0)
+ ;;=K26.9^^131^1675^44
+ ;;^UTILITY(U,$J,358.3,33620,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34711,1,3,0)
- ;;=3^Disp fx of avulsion of right ilium, sequela
+ ;;^UTILITY(U,$J,358.3,33620,1,3,0)
+ ;;=3^Duadenal Ulcer w/o Hemorrhage/Perforation,Unspec
+ ;;^UTILITY(U,$J,358.3,33620,1,4,0)
+ ;;=4^K26.9
+ ;;^UTILITY(U,$J,358.3,33620,2)
+ ;;=^5008527
+ ;;^UTILITY(U,$J,358.3,33621,0)
+ ;;=K27.9^^131^1675^72
+ ;;^UTILITY(U,$J,358.3,33621,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33621,1,3,0)
+ ;;=3^Peptic Ulcer w/o Hemorrhage/Perforation,Unspec

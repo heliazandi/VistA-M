@@ -1,118 +1,126 @@
-IBDEI0TP ; ; 06-AUG-2015
+IBDEI0TP ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14382,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14382,1,2,0)
- ;;=2^Excision of neuroma; hand or foot, except digital nerve
- ;;^UTILITY(U,$J,358.3,14382,1,3,0)
- ;;=3^64782
- ;;^UTILITY(U,$J,358.3,14383,0)
- ;;=64783^^75^886^12^^^^1
- ;;^UTILITY(U,$J,358.3,14383,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14383,1,2,0)
- ;;=2^Excision of neuroma; hand or foot, each additional nerve, except same digit
- ;;^UTILITY(U,$J,358.3,14383,1,3,0)
- ;;=3^64783
- ;;^UTILITY(U,$J,358.3,14384,0)
- ;;=29999^^75^887^19^^^^1
- ;;^UTILITY(U,$J,358.3,14384,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14384,1,2,0)
- ;;=2^Unlisted procedure, arthroscopy
- ;;^UTILITY(U,$J,358.3,14384,1,3,0)
- ;;=3^29999
- ;;^UTILITY(U,$J,358.3,14385,0)
- ;;=29893^^75^887^11^^^^1
- ;;^UTILITY(U,$J,358.3,14385,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14385,1,2,0)
- ;;=2^Endoscopic plantar fasciotomy
- ;;^UTILITY(U,$J,358.3,14385,1,3,0)
- ;;=3^29893
- ;;^UTILITY(U,$J,358.3,14386,0)
- ;;=29894^^75^887^3^^^^1
- ;;^UTILITY(U,$J,358.3,14386,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14386,1,2,0)
- ;;=2^Arthroscopy, ankle, surgical; w/removalof loose body or foreign body
- ;;^UTILITY(U,$J,358.3,14386,1,3,0)
- ;;=3^29894
- ;;^UTILITY(U,$J,358.3,14387,0)
- ;;=29897^^75^887^1^^^^1
- ;;^UTILITY(U,$J,358.3,14387,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14387,1,2,0)
- ;;=2^Arthroscopy, ankle, surgical; debridement, limited
- ;;^UTILITY(U,$J,358.3,14387,1,3,0)
- ;;=3^29897
- ;;^UTILITY(U,$J,358.3,14388,0)
- ;;=29898^^75^887^2^^^^1
- ;;^UTILITY(U,$J,358.3,14388,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14388,1,2,0)
- ;;=2^Arthroscopy, ankle, surgical; debridement, extensive
- ;;^UTILITY(U,$J,358.3,14388,1,3,0)
- ;;=3^29898
- ;;^UTILITY(U,$J,358.3,14389,0)
- ;;=20220^^75^887^8^^^^1
- ;;^UTILITY(U,$J,358.3,14389,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14389,1,2,0)
- ;;=2^Biopsy, bone, trocar, or needle; superficial
- ;;^UTILITY(U,$J,358.3,14389,1,3,0)
- ;;=3^20220
- ;;^UTILITY(U,$J,358.3,14390,0)
- ;;=20650^^75^887^14^^^^1
- ;;^UTILITY(U,$J,358.3,14390,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14390,1,2,0)
- ;;=2^Insertion of wire or pin with application of skeletal traction, including removal
- ;;^UTILITY(U,$J,358.3,14390,1,3,0)
- ;;=3^20650
- ;;^UTILITY(U,$J,358.3,14391,0)
- ;;=64726^^75^887^10^^^^1
- ;;^UTILITY(U,$J,358.3,14391,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14391,1,2,0)
- ;;=2^Decompression; plantar digital nerve
- ;;^UTILITY(U,$J,358.3,14391,1,3,0)
- ;;=3^64726
- ;;^UTILITY(U,$J,358.3,14392,0)
- ;;=64999^^75^887^20^^^^1
- ;;^UTILITY(U,$J,358.3,14392,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14392,1,2,0)
- ;;=2^Unlisted procedure, nervous system
- ;;^UTILITY(U,$J,358.3,14392,1,3,0)
- ;;=3^64999
- ;;^UTILITY(U,$J,358.3,14393,0)
- ;;=93922^^75^887^18^^^^1
- ;;^UTILITY(U,$J,358.3,14393,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14393,1,2,0)
- ;;=2^Non-invasive physiologic studies of upper or lower extremity arteries, single level, bilateral
- ;;^UTILITY(U,$J,358.3,14393,1,3,0)
- ;;=3^93922
- ;;^UTILITY(U,$J,358.3,14394,0)
- ;;=29904^^75^887^6^^^^1
- ;;^UTILITY(U,$J,358.3,14394,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14394,1,2,0)
- ;;=2^Arthroscopy,subtalar jt,w/rem of foreign body
- ;;^UTILITY(U,$J,358.3,14394,1,3,0)
- ;;=3^29904
- ;;^UTILITY(U,$J,358.3,14395,0)
- ;;=29905^^75^887^5^^^^1
- ;;^UTILITY(U,$J,358.3,14395,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14395,1,2,0)
- ;;=2^Arthroscopy,subtalar jt,w/ Synovectomy
- ;;^UTILITY(U,$J,358.3,14395,1,3,0)
- ;;=3^29905
- ;;^UTILITY(U,$J,358.3,14396,0)
- ;;=29906^^75^887^4^^^^1
- ;;^UTILITY(U,$J,358.3,14396,1,0)
- ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,13927,1,4,0)
+ ;;=4^M45.8
+ ;;^UTILITY(U,$J,358.3,13927,2)
+ ;;=^5011968
+ ;;^UTILITY(U,$J,358.3,13928,0)
+ ;;=M47.22^^53^599^172
+ ;;^UTILITY(U,$J,358.3,13928,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13928,1,3,0)
+ ;;=3^Sponylosis w/ Radiculopathy,Cervical Region NEC
+ ;;^UTILITY(U,$J,358.3,13928,1,4,0)
+ ;;=4^M47.22
+ ;;^UTILITY(U,$J,358.3,13928,2)
+ ;;=^5012061
+ ;;^UTILITY(U,$J,358.3,13929,0)
+ ;;=M47.24^^53^599^174
+ ;;^UTILITY(U,$J,358.3,13929,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13929,1,3,0)
+ ;;=3^Sponylosis w/ Radiculopathy,Thoracic Region NEC
+ ;;^UTILITY(U,$J,358.3,13929,1,4,0)
+ ;;=4^M47.24
+ ;;^UTILITY(U,$J,358.3,13929,2)
+ ;;=^5012063
+ ;;^UTILITY(U,$J,358.3,13930,0)
+ ;;=M47.27^^53^599^173
+ ;;^UTILITY(U,$J,358.3,13930,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13930,1,3,0)
+ ;;=3^Sponylosis w/ Radiculopathy,Lumbosacral Region NEC
+ ;;^UTILITY(U,$J,358.3,13930,1,4,0)
+ ;;=4^M47.27
+ ;;^UTILITY(U,$J,358.3,13930,2)
+ ;;=^5012066
+ ;;^UTILITY(U,$J,358.3,13931,0)
+ ;;=M47.812^^53^599^169
+ ;;^UTILITY(U,$J,358.3,13931,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13931,1,3,0)
+ ;;=3^Spondylosis w/o Myelopathy/Radiculopathy,Cervical Region
+ ;;^UTILITY(U,$J,358.3,13931,1,4,0)
+ ;;=4^M47.812
+ ;;^UTILITY(U,$J,358.3,13931,2)
+ ;;=^5012069
+ ;;^UTILITY(U,$J,358.3,13932,0)
+ ;;=M47.814^^53^599^170
+ ;;^UTILITY(U,$J,358.3,13932,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13932,1,3,0)
+ ;;=3^Spondylosis w/o Myelopathy/Radiculopathy,Thoracic Region
+ ;;^UTILITY(U,$J,358.3,13932,1,4,0)
+ ;;=4^M47.814
+ ;;^UTILITY(U,$J,358.3,13932,2)
+ ;;=^5012071
+ ;;^UTILITY(U,$J,358.3,13933,0)
+ ;;=M47.817^^53^599^171
+ ;;^UTILITY(U,$J,358.3,13933,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13933,1,3,0)
+ ;;=3^Spondylosis w/o Myelopathy/Radiculopathy,Lumbosacral Region
+ ;;^UTILITY(U,$J,358.3,13933,1,4,0)
+ ;;=4^M47.817
+ ;;^UTILITY(U,$J,358.3,13933,2)
+ ;;=^5012074
+ ;;^UTILITY(U,$J,358.3,13934,0)
+ ;;=M48.50XA^^53^599^21
+ ;;^UTILITY(U,$J,358.3,13934,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13934,1,3,0)
+ ;;=3^Collapsed Vertebra NEC,Site Unspec,Init Encntr
+ ;;^UTILITY(U,$J,358.3,13934,1,4,0)
+ ;;=4^M48.50XA
+ ;;^UTILITY(U,$J,358.3,13934,2)
+ ;;=^5012159
+ ;;^UTILITY(U,$J,358.3,13935,0)
+ ;;=M48.50XD^^53^599^22
+ ;;^UTILITY(U,$J,358.3,13935,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13935,1,3,0)
+ ;;=3^Collapsed Vertebra NEC,Site Unspec,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,13935,1,4,0)
+ ;;=4^M48.50XD
+ ;;^UTILITY(U,$J,358.3,13935,2)
+ ;;=^5012160
+ ;;^UTILITY(U,$J,358.3,13936,0)
+ ;;=M48.52XA^^53^599^23
+ ;;^UTILITY(U,$J,358.3,13936,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13936,1,3,0)
+ ;;=3^Collapsed Vertebra,Cervical Region,Init Encntr
+ ;;^UTILITY(U,$J,358.3,13936,1,4,0)
+ ;;=4^M48.52XA
+ ;;^UTILITY(U,$J,358.3,13936,2)
+ ;;=^5012167
+ ;;^UTILITY(U,$J,358.3,13937,0)
+ ;;=M48.52XD^^53^599^24
+ ;;^UTILITY(U,$J,358.3,13937,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13937,1,3,0)
+ ;;=3^Collapsed Vertebra,Cervical Region,Subs Encntr,Rt Healing
+ ;;^UTILITY(U,$J,358.3,13937,1,4,0)
+ ;;=4^M48.52XD
+ ;;^UTILITY(U,$J,358.3,13937,2)
+ ;;=^5012168
+ ;;^UTILITY(U,$J,358.3,13938,0)
+ ;;=M48.54XA^^53^599^32
+ ;;^UTILITY(U,$J,358.3,13938,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13938,1,3,0)
+ ;;=3^Collapsed Vertebra,Throacic Region,Init Encntr
+ ;;^UTILITY(U,$J,358.3,13938,1,4,0)
+ ;;=4^M48.54XA
+ ;;^UTILITY(U,$J,358.3,13938,2)
+ ;;=^5012175
+ ;;^UTILITY(U,$J,358.3,13939,0)
+ ;;=M48.54XD^^53^599^33
+ ;;^UTILITY(U,$J,358.3,13939,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13939,1,3,0)
+ ;;=3^Collapsed Vertebra,Throacic Region,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,13939,1,4,0)
+ ;;=4^M48.54XD

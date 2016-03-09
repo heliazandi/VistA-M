@@ -1,138 +1,144 @@
-IBDEI01Q ; ; 06-AUG-2015
+IBDEI01Q ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,251,2)
- ;;=^5062668
- ;;^UTILITY(U,$J,358.3,252,0)
- ;;=Z02.79^^1^11^21
- ;;^UTILITY(U,$J,358.3,252,1,0)
+ ;;^UTILITY(U,$J,358.3,313,1,4,0)
+ ;;=4^F06.1
+ ;;^UTILITY(U,$J,358.3,313,2)
+ ;;=^5003054
+ ;;^UTILITY(U,$J,358.3,314,0)
+ ;;=R41.9^^3^36^3
+ ;;^UTILITY(U,$J,358.3,314,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,252,1,3,0)
- ;;=3^Medical Certificate Issue NEC
- ;;^UTILITY(U,$J,358.3,252,1,4,0)
- ;;=4^Z02.79
- ;;^UTILITY(U,$J,358.3,252,2)
- ;;=^5062641
- ;;^UTILITY(U,$J,358.3,253,0)
- ;;=Z02.1^^1^11^10
- ;;^UTILITY(U,$J,358.3,253,1,0)
+ ;;^UTILITY(U,$J,358.3,314,1,3,0)
+ ;;=3^Neurocognitive Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,314,1,4,0)
+ ;;=4^R41.9
+ ;;^UTILITY(U,$J,358.3,314,2)
+ ;;=^5019449
+ ;;^UTILITY(U,$J,358.3,315,0)
+ ;;=F29.^^3^36^7
+ ;;^UTILITY(U,$J,358.3,315,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,253,1,3,0)
- ;;=3^Exam for Employment
- ;;^UTILITY(U,$J,358.3,253,1,4,0)
- ;;=4^Z02.1
- ;;^UTILITY(U,$J,358.3,253,2)
- ;;=^5062634
- ;;^UTILITY(U,$J,358.3,254,0)
- ;;=Z13.5^^1^11^14
- ;;^UTILITY(U,$J,358.3,254,1,0)
+ ;;^UTILITY(U,$J,358.3,315,1,3,0)
+ ;;=3^Schizophrenia Spectrum/Psychotic Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,315,1,4,0)
+ ;;=4^F29.
+ ;;^UTILITY(U,$J,358.3,315,2)
+ ;;=^5003484
+ ;;^UTILITY(U,$J,358.3,316,0)
+ ;;=F07.0^^3^36^4
+ ;;^UTILITY(U,$J,358.3,316,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,254,1,3,0)
- ;;=3^Eye/Ear Disorder Screening
- ;;^UTILITY(U,$J,358.3,254,1,4,0)
- ;;=4^Z13.5
- ;;^UTILITY(U,$J,358.3,254,2)
- ;;=^5062706
- ;;^UTILITY(U,$J,358.3,255,0)
- ;;=Z82.2^^1^11^16
- ;;^UTILITY(U,$J,358.3,255,1,0)
+ ;;^UTILITY(U,$J,358.3,316,1,3,0)
+ ;;=3^Personality Change d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,316,1,4,0)
+ ;;=4^F07.0
+ ;;^UTILITY(U,$J,358.3,316,2)
+ ;;=^5003063
+ ;;^UTILITY(U,$J,358.3,317,0)
+ ;;=Z91.49^^3^37^12
+ ;;^UTILITY(U,$J,358.3,317,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,255,1,3,0)
- ;;=3^Family history of deafness and hearing loss
- ;;^UTILITY(U,$J,358.3,255,1,4,0)
- ;;=4^Z82.2
- ;;^UTILITY(U,$J,358.3,255,2)
- ;;=^5063366
- ;;^UTILITY(U,$J,358.3,256,0)
- ;;=Z83.52^^1^11^17
- ;;^UTILITY(U,$J,358.3,256,1,0)
+ ;;^UTILITY(U,$J,358.3,317,1,3,0)
+ ;;=3^Personal Hx of Psychological Trauma
+ ;;^UTILITY(U,$J,358.3,317,1,4,0)
+ ;;=4^Z91.49
+ ;;^UTILITY(U,$J,358.3,317,2)
+ ;;=^5063623
+ ;;^UTILITY(U,$J,358.3,318,0)
+ ;;=Z91.5^^3^37^13
+ ;;^UTILITY(U,$J,358.3,318,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,256,1,3,0)
- ;;=3^Family history of ear disorders
- ;;^UTILITY(U,$J,358.3,256,1,4,0)
- ;;=4^Z83.52
- ;;^UTILITY(U,$J,358.3,256,2)
- ;;=^5063384
- ;;^UTILITY(U,$J,358.3,257,0)
- ;;=Z91.81^^1^11^19
- ;;^UTILITY(U,$J,358.3,257,1,0)
+ ;;^UTILITY(U,$J,358.3,318,1,3,0)
+ ;;=3^Personal Hx of Self-Harm
+ ;;^UTILITY(U,$J,358.3,318,1,4,0)
+ ;;=4^Z91.5
+ ;;^UTILITY(U,$J,358.3,318,2)
+ ;;=^5063624
+ ;;^UTILITY(U,$J,358.3,319,0)
+ ;;=Z91.82^^3^37^11
+ ;;^UTILITY(U,$J,358.3,319,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,257,1,3,0)
- ;;=3^History of falling
- ;;^UTILITY(U,$J,358.3,257,1,4,0)
- ;;=4^Z91.81
- ;;^UTILITY(U,$J,358.3,257,2)
- ;;=^5063625
- ;;^UTILITY(U,$J,358.3,258,0)
- ;;=Z76.5^^1^11^20
- ;;^UTILITY(U,$J,358.3,258,1,0)
+ ;;^UTILITY(U,$J,358.3,319,1,3,0)
+ ;;=3^Personal Hx of Military Deployment
+ ;;^UTILITY(U,$J,358.3,319,1,4,0)
+ ;;=4^Z91.82
+ ;;^UTILITY(U,$J,358.3,319,2)
+ ;;=^5063626
+ ;;^UTILITY(U,$J,358.3,320,0)
+ ;;=Z91.89^^3^37^14
+ ;;^UTILITY(U,$J,358.3,320,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,258,1,3,0)
- ;;=3^Malingerer [conscious simulation]
- ;;^UTILITY(U,$J,358.3,258,1,4,0)
+ ;;^UTILITY(U,$J,358.3,320,1,3,0)
+ ;;=3^Personal Risk Factors
+ ;;^UTILITY(U,$J,358.3,320,1,4,0)
+ ;;=4^Z91.89
+ ;;^UTILITY(U,$J,358.3,320,2)
+ ;;=^5063628
+ ;;^UTILITY(U,$J,358.3,321,0)
+ ;;=Z72.9^^3^37^15
+ ;;^UTILITY(U,$J,358.3,321,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,321,1,3,0)
+ ;;=3^Problem Related to Lifestyle
+ ;;^UTILITY(U,$J,358.3,321,1,4,0)
+ ;;=4^Z72.9
+ ;;^UTILITY(U,$J,358.3,321,2)
+ ;;=^5063267
+ ;;^UTILITY(U,$J,358.3,322,0)
+ ;;=Z72.811^^3^37^1
+ ;;^UTILITY(U,$J,358.3,322,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,322,1,3,0)
+ ;;=3^Adult Antisocial Behavior
+ ;;^UTILITY(U,$J,358.3,322,1,4,0)
+ ;;=4^Z72.811
+ ;;^UTILITY(U,$J,358.3,322,2)
+ ;;=^5063263
+ ;;^UTILITY(U,$J,358.3,323,0)
+ ;;=Z91.19^^3^37^5
+ ;;^UTILITY(U,$J,358.3,323,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,323,1,3,0)
+ ;;=3^Nonadherence to Medical Treatment
+ ;;^UTILITY(U,$J,358.3,323,1,4,0)
+ ;;=4^Z91.19
+ ;;^UTILITY(U,$J,358.3,323,2)
+ ;;=^5063618
+ ;;^UTILITY(U,$J,358.3,324,0)
+ ;;=E66.9^^3^37^6
+ ;;^UTILITY(U,$J,358.3,324,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,324,1,3,0)
+ ;;=3^Obesity
+ ;;^UTILITY(U,$J,358.3,324,1,4,0)
+ ;;=4^E66.9
+ ;;^UTILITY(U,$J,358.3,324,2)
+ ;;=^5002832
+ ;;^UTILITY(U,$J,358.3,325,0)
+ ;;=Z76.5^^3^37^3
+ ;;^UTILITY(U,$J,358.3,325,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,325,1,3,0)
+ ;;=3^Malingering
+ ;;^UTILITY(U,$J,358.3,325,1,4,0)
  ;;=4^Z76.5
- ;;^UTILITY(U,$J,358.3,258,2)
+ ;;^UTILITY(U,$J,358.3,325,2)
  ;;=^5063302
- ;;^UTILITY(U,$J,358.3,259,0)
- ;;=Z53.09^^1^11^22
- ;;^UTILITY(U,$J,358.3,259,1,0)
+ ;;^UTILITY(U,$J,358.3,326,0)
+ ;;=R41.83^^3^37^2
+ ;;^UTILITY(U,$J,358.3,326,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,259,1,3,0)
- ;;=3^Proc/trtmt not carried out because of contraindication
- ;;^UTILITY(U,$J,358.3,259,1,4,0)
- ;;=4^Z53.09
- ;;^UTILITY(U,$J,358.3,259,2)
- ;;=^5063093
- ;;^UTILITY(U,$J,358.3,260,0)
- ;;=Z53.29^^1^11^24
- ;;^UTILITY(U,$J,358.3,260,1,0)
+ ;;^UTILITY(U,$J,358.3,326,1,3,0)
+ ;;=3^Borderline Intellectual Functioning
+ ;;^UTILITY(U,$J,358.3,326,1,4,0)
+ ;;=4^R41.83
+ ;;^UTILITY(U,$J,358.3,326,2)
+ ;;=^5019442
+ ;;^UTILITY(U,$J,358.3,327,0)
+ ;;=Z56.82^^3^37^4
+ ;;^UTILITY(U,$J,358.3,327,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,260,1,3,0)
- ;;=3^Proc/trtmt not crd out bec pt decision for oth reasons
- ;;^UTILITY(U,$J,358.3,260,1,4,0)
- ;;=4^Z53.29
- ;;^UTILITY(U,$J,358.3,260,2)
- ;;=^5063097
- ;;^UTILITY(U,$J,358.3,261,0)
- ;;=Z53.1^^1^11^23
- ;;^UTILITY(U,$J,358.3,261,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,261,1,3,0)
- ;;=3^Proc/trtmt not crd out bec pt belief and group pressure
- ;;^UTILITY(U,$J,358.3,261,1,4,0)
- ;;=4^Z53.1
- ;;^UTILITY(U,$J,358.3,261,2)
- ;;=^5063094
- ;;^UTILITY(U,$J,358.3,262,0)
- ;;=Z53.21^^1^11^26
- ;;^UTILITY(U,$J,358.3,262,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,262,1,3,0)
- ;;=3^Proc/trtmt not crd out d/t pt lv bef seen by hlth care prov
- ;;^UTILITY(U,$J,358.3,262,1,4,0)
- ;;=4^Z53.21
- ;;^UTILITY(U,$J,358.3,262,2)
- ;;=^5063096
- ;;^UTILITY(U,$J,358.3,263,0)
- ;;=Z53.8^^1^11^25
- ;;^UTILITY(U,$J,358.3,263,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,263,1,3,0)
- ;;=3^Proc/trtmt not crd out d/t other reasons
- ;;^UTILITY(U,$J,358.3,263,1,4,0)
- ;;=4^Z53.8
- ;;^UTILITY(U,$J,358.3,263,2)
- ;;=^5063098
- ;;^UTILITY(U,$J,358.3,264,0)
- ;;=D50.9^^2^12^27
- ;;^UTILITY(U,$J,358.3,264,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,264,1,3,0)
- ;;=3^Iron deficiency anemia, unspecified
- ;;^UTILITY(U,$J,358.3,264,1,4,0)
- ;;=4^D50.9
- ;;^UTILITY(U,$J,358.3,264,2)
- ;;=^5002283
- ;;^UTILITY(U,$J,358.3,265,0)
- ;;=D51.0^^2^12^37
+ ;;^UTILITY(U,$J,358.3,327,1,3,0)
+ ;;=3^Military Deployment Status,Current

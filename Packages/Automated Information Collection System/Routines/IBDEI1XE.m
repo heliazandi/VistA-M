@@ -1,128 +1,130 @@
-IBDEI1XE ; ; 06-AUG-2015
+IBDEI1XE ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33836,1,4,0)
- ;;=4^W18.42XA
- ;;^UTILITY(U,$J,358.3,33836,2)
- ;;=^5059824
- ;;^UTILITY(U,$J,358.3,33837,0)
- ;;=W18.42XD^^182^2011^106
- ;;^UTILITY(U,$J,358.3,33837,1,0)
+ ;;^UTILITY(U,$J,358.3,32662,1,4,0)
+ ;;=4^I83.224
+ ;;^UTILITY(U,$J,358.3,32662,2)
+ ;;=^5008007
+ ;;^UTILITY(U,$J,358.3,32663,0)
+ ;;=I83.225^^126^1622^7
+ ;;^UTILITY(U,$J,358.3,32663,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33837,1,3,0)
- ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping into Hole,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33837,1,4,0)
- ;;=4^W18.42XD
- ;;^UTILITY(U,$J,358.3,33837,2)
- ;;=^5059825
- ;;^UTILITY(U,$J,358.3,33838,0)
- ;;=W18.43XA^^182^2011^99
- ;;^UTILITY(U,$J,358.3,33838,1,0)
+ ;;^UTILITY(U,$J,358.3,32663,1,3,0)
+ ;;=3^Varicose veins lft lwr extrem w/ ulc oth prt ft & inflam
+ ;;^UTILITY(U,$J,358.3,32663,1,4,0)
+ ;;=4^I83.225
+ ;;^UTILITY(U,$J,358.3,32663,2)
+ ;;=^5008008
+ ;;^UTILITY(U,$J,358.3,32664,0)
+ ;;=B07.9^^126^1622^23
+ ;;^UTILITY(U,$J,358.3,32664,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33838,1,3,0)
- ;;=3^Slipping/Tripping w/o Fall d/t Step from One Level to Another,Init Encntr
- ;;^UTILITY(U,$J,358.3,33838,1,4,0)
- ;;=4^W18.43XA
- ;;^UTILITY(U,$J,358.3,33838,2)
- ;;=^5059827
- ;;^UTILITY(U,$J,358.3,33839,0)
- ;;=W18.43XD^^182^2011^100
- ;;^UTILITY(U,$J,358.3,33839,1,0)
+ ;;^UTILITY(U,$J,358.3,32664,1,3,0)
+ ;;=3^Viral wart, unspecified
+ ;;^UTILITY(U,$J,358.3,32664,1,4,0)
+ ;;=4^B07.9
+ ;;^UTILITY(U,$J,358.3,32664,2)
+ ;;=^5000519
+ ;;^UTILITY(U,$J,358.3,32665,0)
+ ;;=I87.2^^126^1622^22
+ ;;^UTILITY(U,$J,358.3,32665,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33839,1,3,0)
- ;;=3^Slipping/Tripping w/o Fall d/t Step from One Level to Another,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33839,1,4,0)
- ;;=4^W18.43XD
- ;;^UTILITY(U,$J,358.3,33839,2)
- ;;=^5059828
- ;;^UTILITY(U,$J,358.3,33840,0)
- ;;=W18.49XA^^182^2011^107
- ;;^UTILITY(U,$J,358.3,33840,1,0)
+ ;;^UTILITY(U,$J,358.3,32665,1,3,0)
+ ;;=3^Venous insufficiency (chronic) (peripheral)
+ ;;^UTILITY(U,$J,358.3,32665,1,4,0)
+ ;;=4^I87.2
+ ;;^UTILITY(U,$J,358.3,32665,2)
+ ;;=^5008047
+ ;;^UTILITY(U,$J,358.3,32666,0)
+ ;;=I87.9^^126^1622^21
+ ;;^UTILITY(U,$J,358.3,32666,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33840,1,3,0)
- ;;=3^Slipping/Tripping/Stumbling w/o Falling NEC,Init Encntr
- ;;^UTILITY(U,$J,358.3,33840,1,4,0)
- ;;=4^W18.49XA
- ;;^UTILITY(U,$J,358.3,33840,2)
- ;;=^5059830
- ;;^UTILITY(U,$J,358.3,33841,0)
- ;;=W18.49XD^^182^2011^108
- ;;^UTILITY(U,$J,358.3,33841,1,0)
+ ;;^UTILITY(U,$J,358.3,32666,1,3,0)
+ ;;=3^Vein Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,32666,1,4,0)
+ ;;=4^I87.9
+ ;;^UTILITY(U,$J,358.3,32666,2)
+ ;;=^5008069
+ ;;^UTILITY(U,$J,358.3,32667,0)
+ ;;=Q66.2^^126^1622^20
+ ;;^UTILITY(U,$J,358.3,32667,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33841,1,3,0)
- ;;=3^Slipping/Tripping/Stumbling w/o Falling NEC,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33841,1,4,0)
- ;;=4^W18.49XD
- ;;^UTILITY(U,$J,358.3,33841,2)
- ;;=^5059831
- ;;^UTILITY(U,$J,358.3,33842,0)
- ;;=W19.XXXA^^182^2011^85
- ;;^UTILITY(U,$J,358.3,33842,1,0)
+ ;;^UTILITY(U,$J,358.3,32667,1,3,0)
+ ;;=3^Varus,Metatarsus,Congenital
+ ;;^UTILITY(U,$J,358.3,32667,1,4,0)
+ ;;=4^Q66.2
+ ;;^UTILITY(U,$J,358.3,32667,2)
+ ;;=^5018863
+ ;;^UTILITY(U,$J,358.3,32668,0)
+ ;;=S91.001A^^126^1623^7
+ ;;^UTILITY(U,$J,358.3,32668,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33842,1,3,0)
- ;;=3^Fall,Unspec,Init Encntr
- ;;^UTILITY(U,$J,358.3,33842,1,4,0)
- ;;=4^W19.XXXA
- ;;^UTILITY(U,$J,358.3,33842,2)
- ;;=^5059833
- ;;^UTILITY(U,$J,358.3,33843,0)
- ;;=W19.XXXD^^182^2011^86
- ;;^UTILITY(U,$J,358.3,33843,1,0)
+ ;;^UTILITY(U,$J,358.3,32668,1,3,0)
+ ;;=3^Open wound, rt ankl, unspec, init enc
+ ;;^UTILITY(U,$J,358.3,32668,1,4,0)
+ ;;=4^S91.001A
+ ;;^UTILITY(U,$J,358.3,32668,2)
+ ;;=^5044129
+ ;;^UTILITY(U,$J,358.3,32669,0)
+ ;;=S91.002A^^126^1623^1
+ ;;^UTILITY(U,$J,358.3,32669,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33843,1,3,0)
- ;;=3^Fall,Unspec,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33843,1,4,0)
- ;;=4^W19.XXXD
- ;;^UTILITY(U,$J,358.3,33843,2)
- ;;=^5059834
- ;;^UTILITY(U,$J,358.3,33844,0)
- ;;=W54.0XXA^^182^2011^11
- ;;^UTILITY(U,$J,358.3,33844,1,0)
+ ;;^UTILITY(U,$J,358.3,32669,1,3,0)
+ ;;=3^Open wound, lft ankl, unspec, init enc
+ ;;^UTILITY(U,$J,358.3,32669,1,4,0)
+ ;;=4^S91.002A
+ ;;^UTILITY(U,$J,358.3,32669,2)
+ ;;=^5044132
+ ;;^UTILITY(U,$J,358.3,32670,0)
+ ;;=S91.301A^^126^1623^8
+ ;;^UTILITY(U,$J,358.3,32670,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33844,1,3,0)
- ;;=3^Bitten by Dog,Init Encntr
- ;;^UTILITY(U,$J,358.3,33844,1,4,0)
- ;;=4^W54.0XXA
- ;;^UTILITY(U,$J,358.3,33844,2)
- ;;=^5060256
- ;;^UTILITY(U,$J,358.3,33845,0)
- ;;=W54.0XXD^^182^2011^12
- ;;^UTILITY(U,$J,358.3,33845,1,0)
+ ;;^UTILITY(U,$J,358.3,32670,1,3,0)
+ ;;=3^Open wound, rt foot, unspec, init enc
+ ;;^UTILITY(U,$J,358.3,32670,1,4,0)
+ ;;=4^S91.301A
+ ;;^UTILITY(U,$J,358.3,32670,2)
+ ;;=^5044314
+ ;;^UTILITY(U,$J,358.3,32671,0)
+ ;;=S91.302A^^126^1623^2
+ ;;^UTILITY(U,$J,358.3,32671,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33845,1,3,0)
- ;;=3^Bitten by Dog,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33845,1,4,0)
- ;;=4^W54.0XXD
- ;;^UTILITY(U,$J,358.3,33845,2)
- ;;=^5060257
- ;;^UTILITY(U,$J,358.3,33846,0)
- ;;=W55.01XA^^182^2011^9
- ;;^UTILITY(U,$J,358.3,33846,1,0)
+ ;;^UTILITY(U,$J,358.3,32671,1,3,0)
+ ;;=3^Open wound, lft foot, unspec, init enc
+ ;;^UTILITY(U,$J,358.3,32671,1,4,0)
+ ;;=4^S91.302A
+ ;;^UTILITY(U,$J,358.3,32671,2)
+ ;;=^5044317
+ ;;^UTILITY(U,$J,358.3,32672,0)
+ ;;=S91.101A^^126^1623^10
+ ;;^UTILITY(U,$J,358.3,32672,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33846,1,3,0)
- ;;=3^Bitten by Cat,Init Encntr
- ;;^UTILITY(U,$J,358.3,33846,1,4,0)
- ;;=4^W55.01XA
- ;;^UTILITY(U,$J,358.3,33846,2)
- ;;=^5060265
- ;;^UTILITY(U,$J,358.3,33847,0)
- ;;=W55.01XD^^182^2011^10
- ;;^UTILITY(U,$J,358.3,33847,1,0)
+ ;;^UTILITY(U,$J,358.3,32672,1,3,0)
+ ;;=3^Open wound, rt grt toe w/o nail dmg, unspec, init enc
+ ;;^UTILITY(U,$J,358.3,32672,1,4,0)
+ ;;=4^S91.101A
+ ;;^UTILITY(U,$J,358.3,32672,2)
+ ;;=^5044168
+ ;;^UTILITY(U,$J,358.3,32673,0)
+ ;;=S91.102A^^126^1623^4
+ ;;^UTILITY(U,$J,358.3,32673,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33847,1,3,0)
- ;;=3^Bitten by Cat,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33847,1,4,0)
- ;;=4^W55.01XD
- ;;^UTILITY(U,$J,358.3,33847,2)
- ;;=^5060266
- ;;^UTILITY(U,$J,358.3,33848,0)
- ;;=W55.03XA^^182^2011^97
- ;;^UTILITY(U,$J,358.3,33848,1,0)
+ ;;^UTILITY(U,$J,358.3,32673,1,3,0)
+ ;;=3^Open wound, lft grt toe w/o nail dmg, unspec, init enc
+ ;;^UTILITY(U,$J,358.3,32673,1,4,0)
+ ;;=4^S91.102A
+ ;;^UTILITY(U,$J,358.3,32673,2)
+ ;;=^5044171
+ ;;^UTILITY(U,$J,358.3,32674,0)
+ ;;=S91.104A^^126^1623^12
+ ;;^UTILITY(U,$J,358.3,32674,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33848,1,3,0)
- ;;=3^Scratched by Cat,Init Encntr
- ;;^UTILITY(U,$J,358.3,33848,1,4,0)
- ;;=4^W55.03XA
- ;;^UTILITY(U,$J,358.3,33848,2)
- ;;=^5060268
+ ;;^UTILITY(U,$J,358.3,32674,1,3,0)
+ ;;=3^Open wound, rt lsr toe(s) w/o nail dmg, unspec, init enc
+ ;;^UTILITY(U,$J,358.3,32674,1,4,0)
+ ;;=4^S91.104A
+ ;;^UTILITY(U,$J,358.3,32674,2)
+ ;;=^5044174
+ ;;^UTILITY(U,$J,358.3,32675,0)
+ ;;=S91.105A^^126^1623^6

@@ -1,136 +1,126 @@
-IBDEI1VE ; ; 06-AUG-2015
+IBDEI1VE ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32908,1,4,0)
- ;;=4^Z89.611
- ;;^UTILITY(U,$J,358.3,32908,2)
- ;;=^5063572
- ;;^UTILITY(U,$J,358.3,32909,0)
- ;;=Z89.612^^182^1993^2
- ;;^UTILITY(U,$J,358.3,32909,1,0)
+ ;;^UTILITY(U,$J,358.3,31773,1,3,0)
+ ;;=3^Burn of rt toe(s) (nail), third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31773,1,4,0)
+ ;;=4^T25.331A
+ ;;^UTILITY(U,$J,358.3,31773,2)
+ ;;=^5048604
+ ;;^UTILITY(U,$J,358.3,31774,0)
+ ;;=T25.332A^^126^1605^31
+ ;;^UTILITY(U,$J,358.3,31774,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32909,1,3,0)
- ;;=3^Acquired Absence of Left Leg Above Knee
- ;;^UTILITY(U,$J,358.3,32909,1,4,0)
- ;;=4^Z89.612
- ;;^UTILITY(U,$J,358.3,32909,2)
- ;;=^5063573
- ;;^UTILITY(U,$J,358.3,32910,0)
- ;;=Z90.710^^182^1993^1
- ;;^UTILITY(U,$J,358.3,32910,1,0)
+ ;;^UTILITY(U,$J,358.3,31774,1,3,0)
+ ;;=3^Burn of lft toe(s) (nail), third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31774,1,4,0)
+ ;;=4^T25.332A
+ ;;^UTILITY(U,$J,358.3,31774,2)
+ ;;=^5048607
+ ;;^UTILITY(U,$J,358.3,31775,0)
+ ;;=T25.321A^^126^1605^40
+ ;;^UTILITY(U,$J,358.3,31775,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32910,1,3,0)
- ;;=3^Acquired Absence of Cervix & Uterus
- ;;^UTILITY(U,$J,358.3,32910,1,4,0)
- ;;=4^Z90.710
- ;;^UTILITY(U,$J,358.3,32910,2)
- ;;=^5063591
- ;;^UTILITY(U,$J,358.3,32911,0)
- ;;=Z91.030^^182^1993^9
- ;;^UTILITY(U,$J,358.3,32911,1,0)
+ ;;^UTILITY(U,$J,358.3,31775,1,3,0)
+ ;;=3^Burn of rt ft, third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31775,1,4,0)
+ ;;=4^T25.321A
+ ;;^UTILITY(U,$J,358.3,31775,2)
+ ;;=^5048595
+ ;;^UTILITY(U,$J,358.3,31776,0)
+ ;;=T25.322A^^126^1605^24
+ ;;^UTILITY(U,$J,358.3,31776,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32911,1,3,0)
- ;;=3^Bee Allergy
- ;;^UTILITY(U,$J,358.3,32911,1,4,0)
- ;;=4^Z91.030
- ;;^UTILITY(U,$J,358.3,32911,2)
- ;;=^5063605
- ;;^UTILITY(U,$J,358.3,32912,0)
- ;;=Z91.038^^182^1993^48
- ;;^UTILITY(U,$J,358.3,32912,1,0)
+ ;;^UTILITY(U,$J,358.3,31776,1,3,0)
+ ;;=3^Burn of lft ft, third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31776,1,4,0)
+ ;;=4^T25.322A
+ ;;^UTILITY(U,$J,358.3,31776,2)
+ ;;=^5048598
+ ;;^UTILITY(U,$J,358.3,31777,0)
+ ;;=T25.311A^^126^1605^36
+ ;;^UTILITY(U,$J,358.3,31777,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32912,1,3,0)
- ;;=3^Insect Allergy NEC
- ;;^UTILITY(U,$J,358.3,32912,1,4,0)
- ;;=4^Z91.038
- ;;^UTILITY(U,$J,358.3,32912,2)
- ;;=^5063606
- ;;^UTILITY(U,$J,358.3,32913,0)
- ;;=Z91.041^^182^1993^122
- ;;^UTILITY(U,$J,358.3,32913,1,0)
+ ;;^UTILITY(U,$J,358.3,31777,1,3,0)
+ ;;=3^Burn of rt ankl, third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31777,1,4,0)
+ ;;=4^T25.311A
+ ;;^UTILITY(U,$J,358.3,31777,2)
+ ;;=^5048586
+ ;;^UTILITY(U,$J,358.3,31778,0)
+ ;;=T25.312A^^126^1605^20
+ ;;^UTILITY(U,$J,358.3,31778,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32913,1,3,0)
- ;;=3^Radiographic Dye Allergy
- ;;^UTILITY(U,$J,358.3,32913,1,4,0)
- ;;=4^Z91.041
- ;;^UTILITY(U,$J,358.3,32913,2)
- ;;=^5063608
- ;;^UTILITY(U,$J,358.3,32914,0)
- ;;=Z91.130^^182^1993^128
- ;;^UTILITY(U,$J,358.3,32914,1,0)
+ ;;^UTILITY(U,$J,358.3,31778,1,3,0)
+ ;;=3^Burn of lft ankl, third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31778,1,4,0)
+ ;;=4^T25.312A
+ ;;^UTILITY(U,$J,358.3,31778,2)
+ ;;=^5048589
+ ;;^UTILITY(U,$J,358.3,31779,0)
+ ;;=T24.331A^^126^1605^44
+ ;;^UTILITY(U,$J,358.3,31779,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32914,1,3,0)
- ;;=3^Underdose of Med Regiment d/t Age-Related Debility
- ;;^UTILITY(U,$J,358.3,32914,1,4,0)
- ;;=4^Z91.130
- ;;^UTILITY(U,$J,358.3,32914,2)
- ;;=^5063614
- ;;^UTILITY(U,$J,358.3,32915,0)
- ;;=Z91.138^^182^1993^129
- ;;^UTILITY(U,$J,358.3,32915,1,0)
+ ;;^UTILITY(U,$J,358.3,31779,1,3,0)
+ ;;=3^Burn of rt lwr leg, third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31779,1,4,0)
+ ;;=4^T24.331A
+ ;;^UTILITY(U,$J,358.3,31779,2)
+ ;;=^5048316
+ ;;^UTILITY(U,$J,358.3,31780,0)
+ ;;=T24.332A^^126^1605^28
+ ;;^UTILITY(U,$J,358.3,31780,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32915,1,3,0)
- ;;=3^Underdose of Med Regiment for Other Reason
- ;;^UTILITY(U,$J,358.3,32915,1,4,0)
- ;;=4^Z91.138
- ;;^UTILITY(U,$J,358.3,32915,2)
- ;;=^5063615
- ;;^UTILITY(U,$J,358.3,32916,0)
- ;;=Z91.14^^182^1993^56
- ;;^UTILITY(U,$J,358.3,32916,1,0)
+ ;;^UTILITY(U,$J,358.3,31780,1,3,0)
+ ;;=3^Burn of lft lwr leg, third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31780,1,4,0)
+ ;;=4^T24.332A
+ ;;^UTILITY(U,$J,358.3,31780,2)
+ ;;=^5048319
+ ;;^UTILITY(U,$J,358.3,31781,0)
+ ;;=T31.0^^126^1605^50
+ ;;^UTILITY(U,$J,358.3,31781,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32916,1,3,0)
- ;;=3^Noncompliance w/ Medication Regimen
- ;;^UTILITY(U,$J,358.3,32916,1,4,0)
- ;;=4^Z91.14
- ;;^UTILITY(U,$J,358.3,32916,2)
- ;;=^5063616
- ;;^UTILITY(U,$J,358.3,32917,0)
- ;;=Z91.19^^182^1993^55
- ;;^UTILITY(U,$J,358.3,32917,1,0)
+ ;;^UTILITY(U,$J,358.3,31781,1,3,0)
+ ;;=3^Burns involving less than 10% of body surface
+ ;;^UTILITY(U,$J,358.3,31781,1,4,0)
+ ;;=4^T31.0
+ ;;^UTILITY(U,$J,358.3,31781,2)
+ ;;=^5048924
+ ;;^UTILITY(U,$J,358.3,31782,0)
+ ;;=T31.10^^126^1605^51
+ ;;^UTILITY(U,$J,358.3,31782,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32917,1,3,0)
- ;;=3^Noncompliance w/ Medical Treatment & Regimen
- ;;^UTILITY(U,$J,358.3,32917,1,4,0)
- ;;=4^Z91.19
- ;;^UTILITY(U,$J,358.3,32917,2)
- ;;=^5063618
- ;;^UTILITY(U,$J,358.3,32918,0)
- ;;=Z93.1^^182^1993^41
- ;;^UTILITY(U,$J,358.3,32918,1,0)
+ ;;^UTILITY(U,$J,358.3,31782,1,3,0)
+ ;;=3^Burns of 10-19% of body surfc w 0% to 9% 3rd degree burns
+ ;;^UTILITY(U,$J,358.3,31782,1,4,0)
+ ;;=4^T31.10
+ ;;^UTILITY(U,$J,358.3,31782,2)
+ ;;=^5048925
+ ;;^UTILITY(U,$J,358.3,31783,0)
+ ;;=S90.424A^^126^1605^16
+ ;;^UTILITY(U,$J,358.3,31783,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32918,1,3,0)
- ;;=3^Gastrostomy Status
- ;;^UTILITY(U,$J,358.3,32918,1,4,0)
- ;;=4^Z93.1
- ;;^UTILITY(U,$J,358.3,32918,2)
- ;;=^5063643
- ;;^UTILITY(U,$J,358.3,32919,0)
- ;;=Z93.2^^182^1993^47
- ;;^UTILITY(U,$J,358.3,32919,1,0)
+ ;;^UTILITY(U,$J,358.3,31783,1,3,0)
+ ;;=3^Blister (nontherm), rt lsr toe(s), init enc
+ ;;^UTILITY(U,$J,358.3,31783,1,4,0)
+ ;;=4^S90.424A
+ ;;^UTILITY(U,$J,358.3,31783,2)
+ ;;=^5043916
+ ;;^UTILITY(U,$J,358.3,31784,0)
+ ;;=S90.425A^^126^1605^13
+ ;;^UTILITY(U,$J,358.3,31784,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32919,1,3,0)
- ;;=3^Ileostomy Status
- ;;^UTILITY(U,$J,358.3,32919,1,4,0)
- ;;=4^Z93.2
- ;;^UTILITY(U,$J,358.3,32919,2)
- ;;=^5063644
- ;;^UTILITY(U,$J,358.3,32920,0)
- ;;=Z93.3^^182^1993^11
- ;;^UTILITY(U,$J,358.3,32920,1,0)
+ ;;^UTILITY(U,$J,358.3,31784,1,3,0)
+ ;;=3^Blister (nontherm), lft lsr toe(s), init enc
+ ;;^UTILITY(U,$J,358.3,31784,1,4,0)
+ ;;=4^S90.425A
+ ;;^UTILITY(U,$J,358.3,31784,2)
+ ;;=^5043919
+ ;;^UTILITY(U,$J,358.3,31785,0)
+ ;;=S90.821A^^126^1605^14
+ ;;^UTILITY(U,$J,358.3,31785,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32920,1,3,0)
- ;;=3^Colostomy Status
- ;;^UTILITY(U,$J,358.3,32920,1,4,0)
- ;;=4^Z93.3
- ;;^UTILITY(U,$J,358.3,32920,2)
- ;;=^5063645
- ;;^UTILITY(U,$J,358.3,32921,0)
- ;;=Z94.0^^182^1993^50
- ;;^UTILITY(U,$J,358.3,32921,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32921,1,3,0)
- ;;=3^Kidney Transplant Status
- ;;^UTILITY(U,$J,358.3,32921,1,4,0)
- ;;=4^Z94.0
+ ;;^UTILITY(U,$J,358.3,31785,1,3,0)
+ ;;=3^Blister (nontherm), rt ft, init enc

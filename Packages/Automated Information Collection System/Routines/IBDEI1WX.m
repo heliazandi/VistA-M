@@ -1,128 +1,134 @@
-IBDEI1WX ; ; 06-AUG-2015
+IBDEI1WX ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33621,2)
- ;;=^5003257
- ;;^UTILITY(U,$J,358.3,33622,0)
- ;;=F14.221^^182^2006^16
- ;;^UTILITY(U,$J,358.3,33622,1,0)
+ ;;^UTILITY(U,$J,358.3,32449,2)
+ ;;=^5044273
+ ;;^UTILITY(U,$J,358.3,32450,0)
+ ;;=G57.61^^126^1613^31
+ ;;^UTILITY(U,$J,358.3,32450,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33622,1,3,0)
- ;;=3^Cocaine Dependence w/ Intoxication Delirium
- ;;^UTILITY(U,$J,358.3,33622,1,4,0)
- ;;=4^F14.221
- ;;^UTILITY(U,$J,358.3,33622,2)
- ;;=^5003256
- ;;^UTILITY(U,$J,358.3,33623,0)
- ;;=F14.220^^182^2006^18
- ;;^UTILITY(U,$J,358.3,33623,1,0)
+ ;;^UTILITY(U,$J,358.3,32450,1,3,0)
+ ;;=3^Lesion of plantar nerve, right lower limb
+ ;;^UTILITY(U,$J,358.3,32450,1,4,0)
+ ;;=4^G57.61
+ ;;^UTILITY(U,$J,358.3,32450,2)
+ ;;=^5004057
+ ;;^UTILITY(U,$J,358.3,32451,0)
+ ;;=G57.62^^126^1613^30
+ ;;^UTILITY(U,$J,358.3,32451,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33623,1,3,0)
- ;;=3^Cocaine Dependence w/ Intoxication,Uncomplicated
- ;;^UTILITY(U,$J,358.3,33623,1,4,0)
- ;;=4^F14.220
- ;;^UTILITY(U,$J,358.3,33623,2)
- ;;=^5003255
- ;;^UTILITY(U,$J,358.3,33624,0)
- ;;=F14.20^^182^2006^23
- ;;^UTILITY(U,$J,358.3,33624,1,0)
+ ;;^UTILITY(U,$J,358.3,32451,1,3,0)
+ ;;=3^Lesion of plantar nerve, left lower limb
+ ;;^UTILITY(U,$J,358.3,32451,1,4,0)
+ ;;=4^G57.62
+ ;;^UTILITY(U,$J,358.3,32451,2)
+ ;;=^5004058
+ ;;^UTILITY(U,$J,358.3,32452,0)
+ ;;=L03.042^^126^1613^32
+ ;;^UTILITY(U,$J,358.3,32452,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33624,1,3,0)
- ;;=3^Cocaine Dependence,Uncompicated
- ;;^UTILITY(U,$J,358.3,33624,1,4,0)
- ;;=4^F14.20
- ;;^UTILITY(U,$J,358.3,33624,2)
- ;;=^5003253
- ;;^UTILITY(U,$J,358.3,33625,0)
- ;;=F10.120^^182^2006^1
- ;;^UTILITY(U,$J,358.3,33625,1,0)
+ ;;^UTILITY(U,$J,358.3,32452,1,3,0)
+ ;;=3^Lymphangitis,Left Toe,Acute
+ ;;^UTILITY(U,$J,358.3,32452,1,4,0)
+ ;;=4^L03.042
+ ;;^UTILITY(U,$J,358.3,32452,2)
+ ;;=^5009029
+ ;;^UTILITY(U,$J,358.3,32453,0)
+ ;;=L03.041^^126^1613^33
+ ;;^UTILITY(U,$J,358.3,32453,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33625,1,3,0)
- ;;=3^Alcohol Abuse w/ Intoxication,Uncomplicated
- ;;^UTILITY(U,$J,358.3,33625,1,4,0)
- ;;=4^F10.120
- ;;^UTILITY(U,$J,358.3,33625,2)
- ;;=^5003069
- ;;^UTILITY(U,$J,358.3,33626,0)
- ;;=F10.10^^182^2006^2
- ;;^UTILITY(U,$J,358.3,33626,1,0)
+ ;;^UTILITY(U,$J,358.3,32453,1,3,0)
+ ;;=3^Lymphangitis,Right Toe,Acute
+ ;;^UTILITY(U,$J,358.3,32453,1,4,0)
+ ;;=4^L03.041
+ ;;^UTILITY(U,$J,358.3,32453,2)
+ ;;=^5009028
+ ;;^UTILITY(U,$J,358.3,32454,0)
+ ;;=M77.41^^126^1614^5
+ ;;^UTILITY(U,$J,358.3,32454,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33626,1,3,0)
- ;;=3^Alcohol Abuse,Uncomplicated
- ;;^UTILITY(U,$J,358.3,33626,1,4,0)
- ;;=4^F10.10
- ;;^UTILITY(U,$J,358.3,33626,2)
- ;;=^5003068
- ;;^UTILITY(U,$J,358.3,33627,0)
- ;;=F17.201^^182^2006^28
- ;;^UTILITY(U,$J,358.3,33627,1,0)
+ ;;^UTILITY(U,$J,358.3,32454,1,3,0)
+ ;;=3^Metatarsalgia, right foot
+ ;;^UTILITY(U,$J,358.3,32454,1,4,0)
+ ;;=4^M77.41
+ ;;^UTILITY(U,$J,358.3,32454,2)
+ ;;=^5013313
+ ;;^UTILITY(U,$J,358.3,32455,0)
+ ;;=M77.42^^126^1614^4
+ ;;^UTILITY(U,$J,358.3,32455,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33627,1,3,0)
- ;;=3^Nicotine Dependence In Remission,Unspec
- ;;^UTILITY(U,$J,358.3,33627,1,4,0)
- ;;=4^F17.201
- ;;^UTILITY(U,$J,358.3,33627,2)
- ;;=^5003361
- ;;^UTILITY(U,$J,358.3,33628,0)
- ;;=F17.210^^182^2006^27
- ;;^UTILITY(U,$J,358.3,33628,1,0)
+ ;;^UTILITY(U,$J,358.3,32455,1,3,0)
+ ;;=3^Metatarsalgia, left foot
+ ;;^UTILITY(U,$J,358.3,32455,1,4,0)
+ ;;=4^M77.42
+ ;;^UTILITY(U,$J,358.3,32455,2)
+ ;;=^5013314
+ ;;^UTILITY(U,$J,358.3,32456,0)
+ ;;=D22.71^^126^1614^3
+ ;;^UTILITY(U,$J,358.3,32456,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33628,1,3,0)
- ;;=3^Nicotine Dependence Cigarettes,Uncomplicated
- ;;^UTILITY(U,$J,358.3,33628,1,4,0)
- ;;=4^F17.210
- ;;^UTILITY(U,$J,358.3,33628,2)
- ;;=^5003365
- ;;^UTILITY(U,$J,358.3,33629,0)
- ;;=F17.291^^182^2006^29
- ;;^UTILITY(U,$J,358.3,33629,1,0)
+ ;;^UTILITY(U,$J,358.3,32456,1,3,0)
+ ;;=3^Melanocytic nevi of rt lwr limb, including hip
+ ;;^UTILITY(U,$J,358.3,32456,1,4,0)
+ ;;=4^D22.71
+ ;;^UTILITY(U,$J,358.3,32456,2)
+ ;;=^5002056
+ ;;^UTILITY(U,$J,358.3,32457,0)
+ ;;=D22.72^^126^1614^2
+ ;;^UTILITY(U,$J,358.3,32457,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33629,1,3,0)
- ;;=3^Nicotine Dependence Oth Tobacco Product,In Remission
- ;;^UTILITY(U,$J,358.3,33629,1,4,0)
- ;;=4^F17.291
- ;;^UTILITY(U,$J,358.3,33629,2)
- ;;=^5003376
- ;;^UTILITY(U,$J,358.3,33630,0)
- ;;=F17.290^^182^2006^30
- ;;^UTILITY(U,$J,358.3,33630,1,0)
+ ;;^UTILITY(U,$J,358.3,32457,1,3,0)
+ ;;=3^Melanocytic nevi of lft lwr limb, including hip
+ ;;^UTILITY(U,$J,358.3,32457,1,4,0)
+ ;;=4^D22.72
+ ;;^UTILITY(U,$J,358.3,32457,2)
+ ;;=^5002057
+ ;;^UTILITY(U,$J,358.3,32458,0)
+ ;;=Q74.2^^126^1614^1
+ ;;^UTILITY(U,$J,358.3,32458,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33630,1,3,0)
- ;;=3^Nicotine Dependence Oth Tobacco Product,Uncomplicated
- ;;^UTILITY(U,$J,358.3,33630,1,4,0)
- ;;=4^F17.290
- ;;^UTILITY(U,$J,358.3,33630,2)
- ;;=^5003375
- ;;^UTILITY(U,$J,358.3,33631,0)
- ;;=F17.221^^182^2006^24
- ;;^UTILITY(U,$J,358.3,33631,1,0)
+ ;;^UTILITY(U,$J,358.3,32458,1,3,0)
+ ;;=3^Malformity,Lower Limb(s),Congenital
+ ;;^UTILITY(U,$J,358.3,32458,1,4,0)
+ ;;=4^Q74.2
+ ;;^UTILITY(U,$J,358.3,32458,2)
+ ;;=^5018992
+ ;;^UTILITY(U,$J,358.3,32459,0)
+ ;;=M60.9^^126^1614^15
+ ;;^UTILITY(U,$J,358.3,32459,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33631,1,3,0)
- ;;=3^Nicotine Dependence Chewing Tobacco,In Remission
- ;;^UTILITY(U,$J,358.3,33631,1,4,0)
- ;;=4^F17.221
- ;;^UTILITY(U,$J,358.3,33631,2)
- ;;=^5003371
- ;;^UTILITY(U,$J,358.3,33632,0)
- ;;=F17.220^^182^2006^25
- ;;^UTILITY(U,$J,358.3,33632,1,0)
+ ;;^UTILITY(U,$J,358.3,32459,1,3,0)
+ ;;=3^Myositis, unspecified
+ ;;^UTILITY(U,$J,358.3,32459,1,4,0)
+ ;;=4^M60.9
+ ;;^UTILITY(U,$J,358.3,32459,2)
+ ;;=^5012409
+ ;;^UTILITY(U,$J,358.3,32460,0)
+ ;;=G57.92^^126^1614^7
+ ;;^UTILITY(U,$J,358.3,32460,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33632,1,3,0)
- ;;=3^Nicotine Dependence Chewing Tobacco,Uncomplicated
- ;;^UTILITY(U,$J,358.3,33632,1,4,0)
- ;;=4^F17.220
- ;;^UTILITY(U,$J,358.3,33632,2)
- ;;=^5003370
- ;;^UTILITY(U,$J,358.3,33633,0)
- ;;=F17.211^^182^2006^26
- ;;^UTILITY(U,$J,358.3,33633,1,0)
+ ;;^UTILITY(U,$J,358.3,32460,1,3,0)
+ ;;=3^Mononeuropathy lft lwr limb, unspec
+ ;;^UTILITY(U,$J,358.3,32460,1,4,0)
+ ;;=4^G57.92
+ ;;^UTILITY(U,$J,358.3,32460,2)
+ ;;=^5133370
+ ;;^UTILITY(U,$J,358.3,32461,0)
+ ;;=G57.91^^126^1614^8
+ ;;^UTILITY(U,$J,358.3,32461,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33633,1,3,0)
- ;;=3^Nicotine Dependence Cigarettes,In Remission
- ;;^UTILITY(U,$J,358.3,33633,1,4,0)
- ;;=4^F17.211
- ;;^UTILITY(U,$J,358.3,33633,2)
- ;;=^5003366
- ;;^UTILITY(U,$J,358.3,33634,0)
- ;;=F17.200^^182^2006^31
+ ;;^UTILITY(U,$J,358.3,32461,1,3,0)
+ ;;=3^Mononeuropathy rt lwr limb, unspec
+ ;;^UTILITY(U,$J,358.3,32461,1,4,0)
+ ;;=4^G57.91
+ ;;^UTILITY(U,$J,358.3,32461,2)
+ ;;=^5133369
+ ;;^UTILITY(U,$J,358.3,32462,0)
+ ;;=M60.862^^126^1614^11
+ ;;^UTILITY(U,$J,358.3,32462,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32462,1,3,0)
+ ;;=3^Myositis, lft lwr leg, oth
+ ;;^UTILITY(U,$J,358.3,32462,1,4,0)
+ ;;=4^M60.862

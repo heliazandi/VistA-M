@@ -1,144 +1,126 @@
-IBDEI0HP ; ; 06-AUG-2015
+IBDEI0HP ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8257,2)
- ;;=^267524
- ;;^UTILITY(U,$J,358.3,8258,0)
- ;;=201.90^^35^482^83
- ;;^UTILITY(U,$J,358.3,8258,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8258,1,4,0)
- ;;=4^201.90
- ;;^UTILITY(U,$J,358.3,8258,1,5,0)
- ;;=5^Hodgkin's Lymphoma, Unpsec Type & Site
- ;;^UTILITY(U,$J,358.3,8258,2)
- ;;=^267430
- ;;^UTILITY(U,$J,358.3,8259,0)
- ;;=785.6^^35^482^89
- ;;^UTILITY(U,$J,358.3,8259,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8259,1,4,0)
- ;;=4^785.6
- ;;^UTILITY(U,$J,358.3,8259,1,5,0)
- ;;=5^Lymphadenopathy
- ;;^UTILITY(U,$J,358.3,8259,2)
- ;;=^72368
- ;;^UTILITY(U,$J,358.3,8260,0)
- ;;=200.20^^35^482^90
- ;;^UTILITY(U,$J,358.3,8260,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8260,1,4,0)
- ;;=4^200.20
- ;;^UTILITY(U,$J,358.3,8260,1,5,0)
- ;;=5^Lymphoma,Burkitt's,Site Unspec
- ;;^UTILITY(U,$J,358.3,8260,2)
- ;;=^17529
- ;;^UTILITY(U,$J,358.3,8261,0)
- ;;=202.00^^35^482^92
- ;;^UTILITY(U,$J,358.3,8261,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8261,1,4,0)
- ;;=4^202.00
- ;;^UTILITY(U,$J,358.3,8261,1,5,0)
- ;;=5^Lymphoma,Low-Grade,Site Unspec
- ;;^UTILITY(U,$J,358.3,8261,2)
- ;;=^72606
- ;;^UTILITY(U,$J,358.3,8262,0)
- ;;=200.10^^35^482^91
- ;;^UTILITY(U,$J,358.3,8262,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8262,1,4,0)
- ;;=4^200.10
- ;;^UTILITY(U,$J,358.3,8262,1,5,0)
- ;;=5^Lymphoma,Int or High Grade,Site Unspec
- ;;^UTILITY(U,$J,358.3,8262,2)
- ;;=^175886
- ;;^UTILITY(U,$J,358.3,8263,0)
- ;;=273.3^^35^482^93
- ;;^UTILITY(U,$J,358.3,8263,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8263,1,4,0)
- ;;=4^273.3
- ;;^UTILITY(U,$J,358.3,8263,1,5,0)
- ;;=5^Macroglobulinemia
- ;;^UTILITY(U,$J,358.3,8263,2)
- ;;=^73013
- ;;^UTILITY(U,$J,358.3,8264,0)
- ;;=203.00^^35^482^103
- ;;^UTILITY(U,$J,358.3,8264,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8264,1,4,0)
- ;;=4^203.00
- ;;^UTILITY(U,$J,358.3,8264,1,5,0)
- ;;=5^Multiple Myeloma w/o Remission
- ;;^UTILITY(U,$J,358.3,8264,2)
- ;;=^267514
- ;;^UTILITY(U,$J,358.3,8265,0)
- ;;=203.01^^35^482^105
- ;;^UTILITY(U,$J,358.3,8265,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8265,1,4,0)
- ;;=4^203.01
- ;;^UTILITY(U,$J,358.3,8265,1,5,0)
- ;;=5^Multiple Myeloma,In Remission
- ;;^UTILITY(U,$J,358.3,8265,2)
- ;;=^267515
- ;;^UTILITY(U,$J,358.3,8266,0)
- ;;=238.6^^35^482^108
- ;;^UTILITY(U,$J,358.3,8266,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8266,1,4,0)
- ;;=4^238.6
- ;;^UTILITY(U,$J,358.3,8266,1,5,0)
- ;;=5^Plasmacytoma NOS
- ;;^UTILITY(U,$J,358.3,8266,2)
- ;;=^81973
- ;;^UTILITY(U,$J,358.3,8267,0)
- ;;=205.00^^35^482^4
- ;;^UTILITY(U,$J,358.3,8267,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8267,1,4,0)
- ;;=4^205.00
- ;;^UTILITY(U,$J,358.3,8267,1,5,0)
- ;;=5^AML w/o Remission
- ;;^UTILITY(U,$J,358.3,8267,2)
- ;;=^267531
- ;;^UTILITY(U,$J,358.3,8268,0)
- ;;=205.01^^35^482^6
- ;;^UTILITY(U,$J,358.3,8268,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8268,1,4,0)
- ;;=4^205.01
- ;;^UTILITY(U,$J,358.3,8268,1,5,0)
- ;;=5^AML,In Remission
- ;;^UTILITY(U,$J,358.3,8268,2)
- ;;=^267532
- ;;^UTILITY(U,$J,358.3,8269,0)
- ;;=205.10^^35^482^19
- ;;^UTILITY(U,$J,358.3,8269,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8269,1,4,0)
- ;;=4^205.10
- ;;^UTILITY(U,$J,358.3,8269,1,5,0)
- ;;=5^CML w/o Remission
- ;;^UTILITY(U,$J,358.3,8269,2)
- ;;=^267533
- ;;^UTILITY(U,$J,358.3,8270,0)
- ;;=205.11^^35^482^21
- ;;^UTILITY(U,$J,358.3,8270,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8270,1,4,0)
- ;;=4^205.11
- ;;^UTILITY(U,$J,358.3,8270,1,5,0)
- ;;=5^CML,In Remission
- ;;^UTILITY(U,$J,358.3,8270,2)
- ;;=^267534
- ;;^UTILITY(U,$J,358.3,8271,0)
- ;;=289.0^^35^482^55
- ;;^UTILITY(U,$J,358.3,8271,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8271,1,4,0)
- ;;=4^289.0
- ;;^UTILITY(U,$J,358.3,8271,1,5,0)
- ;;=5^Erthryocytosis, Secondary
+ ;;^UTILITY(U,$J,358.3,8185,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8185,1,3,0)
+ ;;=3^Strain of muscle, fascia and tendon at neck level, init
+ ;;^UTILITY(U,$J,358.3,8185,1,4,0)
+ ;;=4^S16.1XXA
+ ;;^UTILITY(U,$J,358.3,8185,2)
+ ;;=^5022358
+ ;;^UTILITY(U,$J,358.3,8186,0)
+ ;;=T69.9XXA^^33^431^56
+ ;;^UTILITY(U,$J,358.3,8186,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8186,1,3,0)
+ ;;=3^Effect of reduced temperature, unspecified, init encntr
+ ;;^UTILITY(U,$J,358.3,8186,1,4,0)
+ ;;=4^T69.9XXA
+ ;;^UTILITY(U,$J,358.3,8186,2)
+ ;;=^5053978
+ ;;^UTILITY(U,$J,358.3,8187,0)
+ ;;=T69.8XXA^^33^431^57
+ ;;^UTILITY(U,$J,358.3,8187,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8187,1,3,0)
+ ;;=3^Effects of Reduced Temperature NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,8187,1,4,0)
+ ;;=4^T69.8XXA
+ ;;^UTILITY(U,$J,358.3,8187,2)
+ ;;=^5053975
+ ;;^UTILITY(U,$J,358.3,8188,0)
+ ;;=L57.8^^33^431^196
+ ;;^UTILITY(U,$J,358.3,8188,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8188,1,3,0)
+ ;;=3^Skin Changes d/t Chr Expsr to Nonionizing Radiation NEC
+ ;;^UTILITY(U,$J,358.3,8188,1,4,0)
+ ;;=4^L57.8
+ ;;^UTILITY(U,$J,358.3,8188,2)
+ ;;=^5009226
+ ;;^UTILITY(U,$J,358.3,8189,0)
+ ;;=S91.001A^^33^431^165
+ ;;^UTILITY(U,$J,358.3,8189,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8189,1,3,0)
+ ;;=3^Open wnd of right ankle unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8189,1,4,0)
+ ;;=4^S91.001A
+ ;;^UTILITY(U,$J,358.3,8189,2)
+ ;;=^5044129
+ ;;^UTILITY(U,$J,358.3,8190,0)
+ ;;=S91.002A^^33^431^155
+ ;;^UTILITY(U,$J,358.3,8190,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8190,1,3,0)
+ ;;=3^Open wnd of left ankle unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8190,1,4,0)
+ ;;=4^S91.002A
+ ;;^UTILITY(U,$J,358.3,8190,2)
+ ;;=^5044132
+ ;;^UTILITY(U,$J,358.3,8191,0)
+ ;;=S41.101A^^33^431^174
+ ;;^UTILITY(U,$J,358.3,8191,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8191,1,3,0)
+ ;;=3^Open wnd of right upper arm unspec, initial enco
+ ;;^UTILITY(U,$J,358.3,8191,1,4,0)
+ ;;=4^S41.101A
+ ;;^UTILITY(U,$J,358.3,8191,2)
+ ;;=^5026330
+ ;;^UTILITY(U,$J,358.3,8192,0)
+ ;;=S41.102A^^33^431^164
+ ;;^UTILITY(U,$J,358.3,8192,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8192,1,3,0)
+ ;;=3^Open wnd of left upper arm unspec, initial encou
+ ;;^UTILITY(U,$J,358.3,8192,1,4,0)
+ ;;=4^S41.102A
+ ;;^UTILITY(U,$J,358.3,8192,2)
+ ;;=^5026333
+ ;;^UTILITY(U,$J,358.3,8193,0)
+ ;;=S61.200A^^33^431^169
+ ;;^UTILITY(U,$J,358.3,8193,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8193,1,3,0)
+ ;;=3^Open wnd of right idx fngr w/o damage to nail unspec, init
+ ;;^UTILITY(U,$J,358.3,8193,1,4,0)
+ ;;=4^S61.200A
+ ;;^UTILITY(U,$J,358.3,8193,2)
+ ;;=^5032741
+ ;;^UTILITY(U,$J,358.3,8194,0)
+ ;;=S61.201A^^33^431^159
+ ;;^UTILITY(U,$J,358.3,8194,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8194,1,3,0)
+ ;;=3^Open wnd of left idx fngr w/o damage to nail unspec, init
+ ;;^UTILITY(U,$J,358.3,8194,1,4,0)
+ ;;=4^S61.201A
+ ;;^UTILITY(U,$J,358.3,8194,2)
+ ;;=^5032744
+ ;;^UTILITY(U,$J,358.3,8195,0)
+ ;;=S61.202A^^33^431^172
+ ;;^UTILITY(U,$J,358.3,8195,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8195,1,3,0)
+ ;;=3^Open wnd of right mid finger w/o damage to nail unspec, ini
+ ;;^UTILITY(U,$J,358.3,8195,1,4,0)
+ ;;=4^S61.202A
+ ;;^UTILITY(U,$J,358.3,8195,2)
+ ;;=^5032747
+ ;;^UTILITY(U,$J,358.3,8196,0)
+ ;;=S61.203A^^33^431^162
+ ;;^UTILITY(U,$J,358.3,8196,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8196,1,3,0)
+ ;;=3^Open wnd of left mid finger w/o damage to nail unspec, ini
+ ;;^UTILITY(U,$J,358.3,8196,1,4,0)
+ ;;=4^S61.203A
+ ;;^UTILITY(U,$J,358.3,8196,2)
+ ;;=^5032750
+ ;;^UTILITY(U,$J,358.3,8197,0)
+ ;;=S61.204A^^33^431^173
+ ;;^UTILITY(U,$J,358.3,8197,1,0)
+ ;;=^358.31IA^4^2

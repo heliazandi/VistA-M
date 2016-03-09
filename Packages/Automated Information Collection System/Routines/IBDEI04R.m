@@ -1,138 +1,138 @@
-IBDEI04R ; ; 06-AUG-2015
+IBDEI04R ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1701,1,0)
+ ;;^UTILITY(U,$J,358.3,1799,2)
+ ;;=^269771
+ ;;^UTILITY(U,$J,358.3,1800,0)
+ ;;=I72.2^^11^156^7
+ ;;^UTILITY(U,$J,358.3,1800,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1701,1,3,0)
- ;;=3^Emphysema, unspecified
- ;;^UTILITY(U,$J,358.3,1701,1,4,0)
- ;;=4^J43.9
- ;;^UTILITY(U,$J,358.3,1701,2)
- ;;=^5008238
- ;;^UTILITY(U,$J,358.3,1702,0)
- ;;=J44.0^^3^47^9
- ;;^UTILITY(U,$J,358.3,1702,1,0)
+ ;;^UTILITY(U,$J,358.3,1800,1,3,0)
+ ;;=3^Aneurysm of Renal Artery
+ ;;^UTILITY(U,$J,358.3,1800,1,4,0)
+ ;;=4^I72.2
+ ;;^UTILITY(U,$J,358.3,1800,2)
+ ;;=^269773
+ ;;^UTILITY(U,$J,358.3,1801,0)
+ ;;=I72.3^^11^156^5
+ ;;^UTILITY(U,$J,358.3,1801,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1702,1,3,0)
- ;;=3^Chronic obstructive pulmon disease w acute lower resp infct
- ;;^UTILITY(U,$J,358.3,1702,1,4,0)
- ;;=4^J44.0
- ;;^UTILITY(U,$J,358.3,1702,2)
- ;;=^5008239
- ;;^UTILITY(U,$J,358.3,1703,0)
- ;;=J45.990^^3^47^14
- ;;^UTILITY(U,$J,358.3,1703,1,0)
+ ;;^UTILITY(U,$J,358.3,1801,1,3,0)
+ ;;=3^Aneurysm of Iliac Artery
+ ;;^UTILITY(U,$J,358.3,1801,1,4,0)
+ ;;=4^I72.3
+ ;;^UTILITY(U,$J,358.3,1801,2)
+ ;;=^269775
+ ;;^UTILITY(U,$J,358.3,1802,0)
+ ;;=I72.4^^11^156^6
+ ;;^UTILITY(U,$J,358.3,1802,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1703,1,3,0)
- ;;=3^Exercise induced bronchospasm
- ;;^UTILITY(U,$J,358.3,1703,1,4,0)
- ;;=4^J45.990
- ;;^UTILITY(U,$J,358.3,1703,2)
- ;;=^329926
- ;;^UTILITY(U,$J,358.3,1704,0)
- ;;=J45.991^^3^47^12
- ;;^UTILITY(U,$J,358.3,1704,1,0)
+ ;;^UTILITY(U,$J,358.3,1802,1,3,0)
+ ;;=3^Aneurysm of Lower Extremity Artery
+ ;;^UTILITY(U,$J,358.3,1802,1,4,0)
+ ;;=4^I72.4
+ ;;^UTILITY(U,$J,358.3,1802,2)
+ ;;=^269777
+ ;;^UTILITY(U,$J,358.3,1803,0)
+ ;;=I72.0^^11^156^4
+ ;;^UTILITY(U,$J,358.3,1803,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1704,1,3,0)
- ;;=3^Cough variant asthma
- ;;^UTILITY(U,$J,358.3,1704,1,4,0)
- ;;=4^J45.991
- ;;^UTILITY(U,$J,358.3,1704,2)
- ;;=^329927
- ;;^UTILITY(U,$J,358.3,1705,0)
- ;;=J45.909^^3^47^5
- ;;^UTILITY(U,$J,358.3,1705,1,0)
+ ;;^UTILITY(U,$J,358.3,1803,1,3,0)
+ ;;=3^Aneurysm of Carotid Artery
+ ;;^UTILITY(U,$J,358.3,1803,1,4,0)
+ ;;=4^I72.0
+ ;;^UTILITY(U,$J,358.3,1803,2)
+ ;;=^5007793
+ ;;^UTILITY(U,$J,358.3,1804,0)
+ ;;=I72.8^^11^156^3
+ ;;^UTILITY(U,$J,358.3,1804,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1705,1,3,0)
- ;;=3^Asthma,Uncomplicated
- ;;^UTILITY(U,$J,358.3,1705,1,4,0)
- ;;=4^J45.909
- ;;^UTILITY(U,$J,358.3,1705,2)
- ;;=^5008256
- ;;^UTILITY(U,$J,358.3,1706,0)
- ;;=J45.902^^3^47^4
- ;;^UTILITY(U,$J,358.3,1706,1,0)
+ ;;^UTILITY(U,$J,358.3,1804,1,3,0)
+ ;;=3^Aneurysm of Arteries NEC
+ ;;^UTILITY(U,$J,358.3,1804,1,4,0)
+ ;;=4^I72.8
+ ;;^UTILITY(U,$J,358.3,1804,2)
+ ;;=^5007794
+ ;;^UTILITY(U,$J,358.3,1805,0)
+ ;;=I73.00^^11^156^84
+ ;;^UTILITY(U,$J,358.3,1805,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1706,1,3,0)
- ;;=3^Asthma w/ Status Asthmaticus,Unspec
- ;;^UTILITY(U,$J,358.3,1706,1,4,0)
- ;;=4^J45.902
- ;;^UTILITY(U,$J,358.3,1706,2)
- ;;=^5008255
- ;;^UTILITY(U,$J,358.3,1707,0)
- ;;=J45.901^^3^47^3
- ;;^UTILITY(U,$J,358.3,1707,1,0)
+ ;;^UTILITY(U,$J,358.3,1805,1,3,0)
+ ;;=3^Raynaud's Syndrome w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,1805,1,4,0)
+ ;;=4^I73.00
+ ;;^UTILITY(U,$J,358.3,1805,2)
+ ;;=^5007796
+ ;;^UTILITY(U,$J,358.3,1806,0)
+ ;;=I73.1^^11^156^91
+ ;;^UTILITY(U,$J,358.3,1806,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1707,1,3,0)
- ;;=3^Asthma w/ Acute Exacerbation,Unspec
- ;;^UTILITY(U,$J,358.3,1707,1,4,0)
- ;;=4^J45.901
- ;;^UTILITY(U,$J,358.3,1707,2)
- ;;=^5008254
- ;;^UTILITY(U,$J,358.3,1708,0)
- ;;=J47.9^^3^47^7
- ;;^UTILITY(U,$J,358.3,1708,1,0)
+ ;;^UTILITY(U,$J,358.3,1806,1,3,0)
+ ;;=3^Thromboangiitis Obliterans
+ ;;^UTILITY(U,$J,358.3,1806,1,4,0)
+ ;;=4^I73.1
+ ;;^UTILITY(U,$J,358.3,1806,2)
+ ;;=^5007798
+ ;;^UTILITY(U,$J,358.3,1807,0)
+ ;;=I73.9^^11^156^83
+ ;;^UTILITY(U,$J,358.3,1807,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1708,1,3,0)
- ;;=3^Bronchiectasis, uncomplicated
- ;;^UTILITY(U,$J,358.3,1708,1,4,0)
- ;;=4^J47.9
- ;;^UTILITY(U,$J,358.3,1708,2)
- ;;=^5008260
- ;;^UTILITY(U,$J,358.3,1709,0)
- ;;=J47.1^^3^47^6
- ;;^UTILITY(U,$J,358.3,1709,1,0)
+ ;;^UTILITY(U,$J,358.3,1807,1,3,0)
+ ;;=3^Peripheral Vascular Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,1807,1,4,0)
+ ;;=4^I73.9
+ ;;^UTILITY(U,$J,358.3,1807,2)
+ ;;=^184182
+ ;;^UTILITY(U,$J,358.3,1808,0)
+ ;;=I74.01^^11^156^85
+ ;;^UTILITY(U,$J,358.3,1808,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1709,1,3,0)
- ;;=3^Bronchiectasis with (acute) exacerbation
- ;;^UTILITY(U,$J,358.3,1709,1,4,0)
- ;;=4^J47.1
- ;;^UTILITY(U,$J,358.3,1709,2)
- ;;=^5008259
- ;;^UTILITY(U,$J,358.3,1710,0)
- ;;=K11.20^^3^48^6
- ;;^UTILITY(U,$J,358.3,1710,1,0)
+ ;;^UTILITY(U,$J,358.3,1808,1,3,0)
+ ;;=3^Saddle Embolus of Abdominal Aorta
+ ;;^UTILITY(U,$J,358.3,1808,1,4,0)
+ ;;=4^I74.01
+ ;;^UTILITY(U,$J,358.3,1808,2)
+ ;;=^340522
+ ;;^UTILITY(U,$J,358.3,1809,0)
+ ;;=I74.09^^11^156^10
+ ;;^UTILITY(U,$J,358.3,1809,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1710,1,3,0)
- ;;=3^Sialoadenitis, unspecified
- ;;^UTILITY(U,$J,358.3,1710,1,4,0)
- ;;=4^K11.20
- ;;^UTILITY(U,$J,358.3,1710,2)
- ;;=^5008473
- ;;^UTILITY(U,$J,358.3,1711,0)
- ;;=K12.2^^3^48^1
- ;;^UTILITY(U,$J,358.3,1711,1,0)
+ ;;^UTILITY(U,$J,358.3,1809,1,3,0)
+ ;;=3^Arterial Embolism/Thrombosis of Abdominal Aorta NEC
+ ;;^UTILITY(U,$J,358.3,1809,1,4,0)
+ ;;=4^I74.09
+ ;;^UTILITY(U,$J,358.3,1809,2)
+ ;;=^340523
+ ;;^UTILITY(U,$J,358.3,1810,0)
+ ;;=I74.11^^11^156^70
+ ;;^UTILITY(U,$J,358.3,1810,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1711,1,3,0)
- ;;=3^Cellulitis and abscess of mouth
- ;;^UTILITY(U,$J,358.3,1711,1,4,0)
- ;;=4^K12.2
- ;;^UTILITY(U,$J,358.3,1711,2)
- ;;=^5008485
- ;;^UTILITY(U,$J,358.3,1712,0)
- ;;=K12.30^^3^48^4
- ;;^UTILITY(U,$J,358.3,1712,1,0)
+ ;;^UTILITY(U,$J,358.3,1810,1,3,0)
+ ;;=3^Embolism/Thrombosis of Thoracic Aorta
+ ;;^UTILITY(U,$J,358.3,1810,1,4,0)
+ ;;=4^I74.11
+ ;;^UTILITY(U,$J,358.3,1810,2)
+ ;;=^269787
+ ;;^UTILITY(U,$J,358.3,1811,0)
+ ;;=I74.2^^11^156^73
+ ;;^UTILITY(U,$J,358.3,1811,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1712,1,3,0)
- ;;=3^Oral mucositis (ulcerative), unspecified
- ;;^UTILITY(U,$J,358.3,1712,1,4,0)
- ;;=4^K12.30
- ;;^UTILITY(U,$J,358.3,1712,2)
- ;;=^5008486
- ;;^UTILITY(U,$J,358.3,1713,0)
- ;;=K12.0^^3^48^5
- ;;^UTILITY(U,$J,358.3,1713,1,0)
+ ;;^UTILITY(U,$J,358.3,1811,1,3,0)
+ ;;=3^Embolism/Thrombosis of Upper Extremity Arteries
+ ;;^UTILITY(U,$J,358.3,1811,1,4,0)
+ ;;=4^I74.2
+ ;;^UTILITY(U,$J,358.3,1811,2)
+ ;;=^5007801
+ ;;^UTILITY(U,$J,358.3,1812,0)
+ ;;=I74.3^^11^156^68
+ ;;^UTILITY(U,$J,358.3,1812,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1713,1,3,0)
- ;;=3^Recurrent oral aphthae
- ;;^UTILITY(U,$J,358.3,1713,1,4,0)
- ;;=4^K12.0
- ;;^UTILITY(U,$J,358.3,1713,2)
- ;;=^5008483
- ;;^UTILITY(U,$J,358.3,1714,0)
- ;;=K13.70^^3^48^3
- ;;^UTILITY(U,$J,358.3,1714,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1714,1,3,0)
- ;;=3^Oral Mucosa Lesions,Unspec
+ ;;^UTILITY(U,$J,358.3,1812,1,3,0)
+ ;;=3^Embolism/Thrombosis of Lower Extremity Arteries
+ ;;^UTILITY(U,$J,358.3,1812,1,4,0)
+ ;;=4^I74.3
+ ;;^UTILITY(U,$J,358.3,1812,2)
+ ;;=^5007802
+ ;;^UTILITY(U,$J,358.3,1813,0)
+ ;;=I74.5^^11^156^67

@@ -1,0 +1,130 @@
+IBDEI2GU ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,41819,0)
+ ;;=M87.012^^159^2010^42
+ ;;^UTILITY(U,$J,358.3,41819,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41819,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Left Shoulder
+ ;;^UTILITY(U,$J,358.3,41819,1,4,0)
+ ;;=4^M87.012
+ ;;^UTILITY(U,$J,358.3,41819,2)
+ ;;=^5014659
+ ;;^UTILITY(U,$J,358.3,41820,0)
+ ;;=M87.050^^159^2010^43
+ ;;^UTILITY(U,$J,358.3,41820,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41820,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Pelvis
+ ;;^UTILITY(U,$J,358.3,41820,1,4,0)
+ ;;=4^M87.050
+ ;;^UTILITY(U,$J,358.3,41820,2)
+ ;;=^5014679
+ ;;^UTILITY(U,$J,358.3,41821,0)
+ ;;=M87.051^^159^2010^44
+ ;;^UTILITY(U,$J,358.3,41821,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41821,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Right Femur
+ ;;^UTILITY(U,$J,358.3,41821,1,4,0)
+ ;;=4^M87.051
+ ;;^UTILITY(U,$J,358.3,41821,2)
+ ;;=^5014680
+ ;;^UTILITY(U,$J,358.3,41822,0)
+ ;;=M87.052^^159^2010^41
+ ;;^UTILITY(U,$J,358.3,41822,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41822,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Left Femur
+ ;;^UTILITY(U,$J,358.3,41822,1,4,0)
+ ;;=4^M87.052
+ ;;^UTILITY(U,$J,358.3,41822,2)
+ ;;=^5014681
+ ;;^UTILITY(U,$J,358.3,41823,0)
+ ;;=M87.111^^159^2010^74
+ ;;^UTILITY(U,$J,358.3,41823,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41823,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,41823,1,4,0)
+ ;;=4^M87.111
+ ;;^UTILITY(U,$J,358.3,41823,2)
+ ;;=^5014701
+ ;;^UTILITY(U,$J,358.3,41824,0)
+ ;;=M87.112^^159^2010^71
+ ;;^UTILITY(U,$J,358.3,41824,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41824,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,41824,1,4,0)
+ ;;=4^M87.112
+ ;;^UTILITY(U,$J,358.3,41824,2)
+ ;;=^5014702
+ ;;^UTILITY(U,$J,358.3,41825,0)
+ ;;=M87.150^^159^2010^72
+ ;;^UTILITY(U,$J,358.3,41825,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41825,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Pelvis
+ ;;^UTILITY(U,$J,358.3,41825,1,4,0)
+ ;;=4^M87.150
+ ;;^UTILITY(U,$J,358.3,41825,2)
+ ;;=^5014722
+ ;;^UTILITY(U,$J,358.3,41826,0)
+ ;;=M87.151^^159^2010^73
+ ;;^UTILITY(U,$J,358.3,41826,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41826,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Right Femur
+ ;;^UTILITY(U,$J,358.3,41826,1,4,0)
+ ;;=4^M87.151
+ ;;^UTILITY(U,$J,358.3,41826,2)
+ ;;=^5014723
+ ;;^UTILITY(U,$J,358.3,41827,0)
+ ;;=M87.152^^159^2010^70
+ ;;^UTILITY(U,$J,358.3,41827,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41827,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Left Femur
+ ;;^UTILITY(U,$J,358.3,41827,1,4,0)
+ ;;=4^M87.152
+ ;;^UTILITY(U,$J,358.3,41827,2)
+ ;;=^5014724
+ ;;^UTILITY(U,$J,358.3,41828,0)
+ ;;=M87.180^^159^2010^69
+ ;;^UTILITY(U,$J,358.3,41828,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41828,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Jaw
+ ;;^UTILITY(U,$J,358.3,41828,1,4,0)
+ ;;=4^M87.180
+ ;;^UTILITY(U,$J,358.3,41828,2)
+ ;;=^5014741
+ ;;^UTILITY(U,$J,358.3,41829,0)
+ ;;=M87.311^^159^2010^168
+ ;;^UTILITY(U,$J,358.3,41829,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41829,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,41829,1,4,0)
+ ;;=4^M87.311
+ ;;^UTILITY(U,$J,358.3,41829,2)
+ ;;=^5014788
+ ;;^UTILITY(U,$J,358.3,41830,0)
+ ;;=M87.312^^159^2010^165
+ ;;^UTILITY(U,$J,358.3,41830,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41830,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,41830,1,4,0)
+ ;;=4^M87.312
+ ;;^UTILITY(U,$J,358.3,41830,2)
+ ;;=^5014789
+ ;;^UTILITY(U,$J,358.3,41831,0)
+ ;;=M87.350^^159^2010^166
+ ;;^UTILITY(U,$J,358.3,41831,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41831,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Pelvis

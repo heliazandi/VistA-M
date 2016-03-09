@@ -1,134 +1,136 @@
-IBDEI20S ; ; 06-AUG-2015
+IBDEI20S ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35312,1,4,0)
- ;;=4^G47.34
- ;;^UTILITY(U,$J,358.3,35312,2)
- ;;=^5003978
- ;;^UTILITY(U,$J,358.3,35313,0)
- ;;=G47.33^^185^2031^3
- ;;^UTILITY(U,$J,358.3,35313,1,0)
+ ;;^UTILITY(U,$J,358.3,34267,2)
+ ;;=^5008785
+ ;;^UTILITY(U,$J,358.3,34268,0)
+ ;;=K70.2^^131^1683^4
+ ;;^UTILITY(U,$J,358.3,34268,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35313,1,3,0)
- ;;=3^Obstructive Sleep Apnea
- ;;^UTILITY(U,$J,358.3,35313,1,4,0)
- ;;=4^G47.33
- ;;^UTILITY(U,$J,358.3,35313,2)
- ;;=^332763
- ;;^UTILITY(U,$J,358.3,35314,0)
- ;;=G47.10^^185^2031^4
- ;;^UTILITY(U,$J,358.3,35314,1,0)
+ ;;^UTILITY(U,$J,358.3,34268,1,3,0)
+ ;;=3^Alcoholic Fibrosis & Sclerosis of Liver
+ ;;^UTILITY(U,$J,358.3,34268,1,4,0)
+ ;;=4^K70.2
+ ;;^UTILITY(U,$J,358.3,34268,2)
+ ;;=^5008787
+ ;;^UTILITY(U,$J,358.3,34269,0)
+ ;;=K70.30^^131^1683^2
+ ;;^UTILITY(U,$J,358.3,34269,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35314,1,3,0)
- ;;=3^Organic Hypersomnia NOS
- ;;^UTILITY(U,$J,358.3,35314,1,4,0)
- ;;=4^G47.10
- ;;^UTILITY(U,$J,358.3,35314,2)
- ;;=^332926
- ;;^UTILITY(U,$J,358.3,35315,0)
- ;;=G47.30^^185^2031^5
- ;;^UTILITY(U,$J,358.3,35315,1,0)
+ ;;^UTILITY(U,$J,358.3,34269,1,3,0)
+ ;;=3^Alcoholic Cirrhosis of Liver w/o Ascites
+ ;;^UTILITY(U,$J,358.3,34269,1,4,0)
+ ;;=4^K70.30
+ ;;^UTILITY(U,$J,358.3,34269,2)
+ ;;=^5008788
+ ;;^UTILITY(U,$J,358.3,34270,0)
+ ;;=K70.31^^131^1683^1
+ ;;^UTILITY(U,$J,358.3,34270,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35315,1,3,0)
- ;;=3^Organic Sleep Apnea NOS
- ;;^UTILITY(U,$J,358.3,35315,1,4,0)
- ;;=4^G47.30
- ;;^UTILITY(U,$J,358.3,35315,2)
- ;;=^5003977
- ;;^UTILITY(U,$J,358.3,35316,0)
- ;;=G47.61^^185^2031^6
- ;;^UTILITY(U,$J,358.3,35316,1,0)
+ ;;^UTILITY(U,$J,358.3,34270,1,3,0)
+ ;;=3^Alcoholic Cirrhosis of Liver w/ Ascites
+ ;;^UTILITY(U,$J,358.3,34270,1,4,0)
+ ;;=4^K70.31
+ ;;^UTILITY(U,$J,358.3,34270,2)
+ ;;=^5008789
+ ;;^UTILITY(U,$J,358.3,34271,0)
+ ;;=K70.9^^131^1683^9
+ ;;^UTILITY(U,$J,358.3,34271,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35316,1,3,0)
- ;;=3^Periodic Limb Movement Disorder
- ;;^UTILITY(U,$J,358.3,35316,1,4,0)
- ;;=4^G47.61
- ;;^UTILITY(U,$J,358.3,35316,2)
- ;;=^5003987
- ;;^UTILITY(U,$J,358.3,35317,0)
- ;;=G47.52^^185^2031^8
- ;;^UTILITY(U,$J,358.3,35317,1,0)
+ ;;^UTILITY(U,$J,358.3,34271,1,3,0)
+ ;;=3^Alcoholic Liver Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,34271,1,4,0)
+ ;;=4^K70.9
+ ;;^UTILITY(U,$J,358.3,34271,2)
+ ;;=^5008792
+ ;;^UTILITY(U,$J,358.3,34272,0)
+ ;;=K70.40^^131^1683^6
+ ;;^UTILITY(U,$J,358.3,34272,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35317,1,3,0)
- ;;=3^REM Sleep Behavior Disorder
- ;;^UTILITY(U,$J,358.3,35317,1,4,0)
- ;;=4^G47.52
- ;;^UTILITY(U,$J,358.3,35317,2)
- ;;=^332778
- ;;^UTILITY(U,$J,358.3,35318,0)
- ;;=G25.81^^185^2031^9
- ;;^UTILITY(U,$J,358.3,35318,1,0)
+ ;;^UTILITY(U,$J,358.3,34272,1,3,0)
+ ;;=3^Alcoholic Hepatic Failure w/o Coma
+ ;;^UTILITY(U,$J,358.3,34272,1,4,0)
+ ;;=4^K70.40
+ ;;^UTILITY(U,$J,358.3,34272,2)
+ ;;=^5008790
+ ;;^UTILITY(U,$J,358.3,34273,0)
+ ;;=K70.41^^131^1683^5
+ ;;^UTILITY(U,$J,358.3,34273,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35318,1,3,0)
- ;;=3^Restless Legs Syndrome
- ;;^UTILITY(U,$J,358.3,35318,1,4,0)
- ;;=4^G25.81
- ;;^UTILITY(U,$J,358.3,35318,2)
- ;;=^5003801
- ;;^UTILITY(U,$J,358.3,35319,0)
- ;;=F81.9^^186^2032^1
- ;;^UTILITY(U,$J,358.3,35319,1,0)
+ ;;^UTILITY(U,$J,358.3,34273,1,3,0)
+ ;;=3^Alcoholic Hepatic Failure w/ Coma
+ ;;^UTILITY(U,$J,358.3,34273,1,4,0)
+ ;;=4^K70.41
+ ;;^UTILITY(U,$J,358.3,34273,2)
+ ;;=^5008791
+ ;;^UTILITY(U,$J,358.3,34274,0)
+ ;;=K73.0^^131^1683^15
+ ;;^UTILITY(U,$J,358.3,34274,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35319,1,3,0)
- ;;=3^Developmental disorder of scholastic skills, unspecified
- ;;^UTILITY(U,$J,358.3,35319,1,4,0)
- ;;=4^F81.9
- ;;^UTILITY(U,$J,358.3,35319,2)
- ;;=^5003682
- ;;^UTILITY(U,$J,358.3,35320,0)
- ;;=F81.81^^186^2032^11
- ;;^UTILITY(U,$J,358.3,35320,1,0)
+ ;;^UTILITY(U,$J,358.3,34274,1,3,0)
+ ;;=3^Hepatitis, Chronic Persistent NEC
+ ;;^UTILITY(U,$J,358.3,34274,1,4,0)
+ ;;=4^K73.0
+ ;;^UTILITY(U,$J,358.3,34274,2)
+ ;;=^5008811
+ ;;^UTILITY(U,$J,358.3,34275,0)
+ ;;=K74.0^^131^1683^14
+ ;;^UTILITY(U,$J,358.3,34275,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35320,1,3,0)
- ;;=3^Written Expression Disorder
- ;;^UTILITY(U,$J,358.3,35320,1,4,0)
- ;;=4^F81.81
- ;;^UTILITY(U,$J,358.3,35320,2)
- ;;=^5003680
- ;;^UTILITY(U,$J,358.3,35321,0)
- ;;=F80.1^^186^2032^2
- ;;^UTILITY(U,$J,358.3,35321,1,0)
+ ;;^UTILITY(U,$J,358.3,34275,1,3,0)
+ ;;=3^Hepatic Fibrosis
+ ;;^UTILITY(U,$J,358.3,34275,1,4,0)
+ ;;=4^K74.0
+ ;;^UTILITY(U,$J,358.3,34275,2)
+ ;;=^5008816
+ ;;^UTILITY(U,$J,358.3,34276,0)
+ ;;=K74.69^^131^1683^10
+ ;;^UTILITY(U,$J,358.3,34276,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35321,1,3,0)
- ;;=3^Expressive language disorder
- ;;^UTILITY(U,$J,358.3,35321,1,4,0)
- ;;=4^F80.1
- ;;^UTILITY(U,$J,358.3,35321,2)
- ;;=^331958
- ;;^UTILITY(U,$J,358.3,35322,0)
- ;;=F81.2^^186^2032^3
- ;;^UTILITY(U,$J,358.3,35322,1,0)
+ ;;^UTILITY(U,$J,358.3,34276,1,3,0)
+ ;;=3^Cirrhosis of Liver,Oth
+ ;;^UTILITY(U,$J,358.3,34276,1,4,0)
+ ;;=4^K74.69
+ ;;^UTILITY(U,$J,358.3,34276,2)
+ ;;=^5008823
+ ;;^UTILITY(U,$J,358.3,34277,0)
+ ;;=K74.60^^131^1683^11
+ ;;^UTILITY(U,$J,358.3,34277,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35322,1,3,0)
- ;;=3^Mathematics disorder
- ;;^UTILITY(U,$J,358.3,35322,1,4,0)
- ;;=4^F81.2
- ;;^UTILITY(U,$J,358.3,35322,2)
- ;;=^331957
- ;;^UTILITY(U,$J,358.3,35323,0)
- ;;=F80.2^^186^2032^4
- ;;^UTILITY(U,$J,358.3,35323,1,0)
+ ;;^UTILITY(U,$J,358.3,34277,1,3,0)
+ ;;=3^Cirrhosis of Liver,Unspec
+ ;;^UTILITY(U,$J,358.3,34277,1,4,0)
+ ;;=4^K74.60
+ ;;^UTILITY(U,$J,358.3,34277,2)
+ ;;=^5008822
+ ;;^UTILITY(U,$J,358.3,34278,0)
+ ;;=K76.0^^131^1683^12
+ ;;^UTILITY(U,$J,358.3,34278,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35323,1,3,0)
- ;;=3^Mixed receptive-expressive language disorder
- ;;^UTILITY(U,$J,358.3,35323,1,4,0)
- ;;=4^F80.2
- ;;^UTILITY(U,$J,358.3,35323,2)
- ;;=^331959
- ;;^UTILITY(U,$J,358.3,35324,0)
- ;;=F88.^^186^2032^8
- ;;^UTILITY(U,$J,358.3,35324,1,0)
+ ;;^UTILITY(U,$J,358.3,34278,1,3,0)
+ ;;=3^Fatty Liver NEC
+ ;;^UTILITY(U,$J,358.3,34278,1,4,0)
+ ;;=4^K76.0
+ ;;^UTILITY(U,$J,358.3,34278,2)
+ ;;=^5008831
+ ;;^UTILITY(U,$J,358.3,34279,0)
+ ;;=K76.89^^131^1683^18
+ ;;^UTILITY(U,$J,358.3,34279,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35324,1,3,0)
- ;;=3^Psychological Development Disorder NEC
- ;;^UTILITY(U,$J,358.3,35324,1,4,0)
- ;;=4^F88.
- ;;^UTILITY(U,$J,358.3,35324,2)
- ;;=^5003690
- ;;^UTILITY(U,$J,358.3,35325,0)
- ;;=F07.0^^186^2032^6
- ;;^UTILITY(U,$J,358.3,35325,1,0)
+ ;;^UTILITY(U,$J,358.3,34279,1,3,0)
+ ;;=3^Liver Disease NEC
+ ;;^UTILITY(U,$J,358.3,34279,1,4,0)
+ ;;=4^K76.89
+ ;;^UTILITY(U,$J,358.3,34279,2)
+ ;;=^5008835
+ ;;^UTILITY(U,$J,358.3,34280,0)
+ ;;=K71.6^^131^1683^32
+ ;;^UTILITY(U,$J,358.3,34280,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35325,1,3,0)
- ;;=3^Personality change due to known physiological condition
+ ;;^UTILITY(U,$J,358.3,34280,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Hepatitis NEC
+ ;;^UTILITY(U,$J,358.3,34280,1,4,0)
+ ;;=4^K71.6
+ ;;^UTILITY(U,$J,358.3,34280,2)
+ ;;=^5008801

@@ -1,140 +1,126 @@
-IBDEI0LB ; ; 06-AUG-2015
+IBDEI0LB ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10100,0)
- ;;=227.3^^44^561^103
- ;;^UTILITY(U,$J,358.3,10100,1,0)
+ ;;^UTILITY(U,$J,358.3,9944,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Bilateral,Mild Stage
+ ;;^UTILITY(U,$J,358.3,9944,1,4,0)
+ ;;=4^H40.63X1
+ ;;^UTILITY(U,$J,358.3,9944,2)
+ ;;=^5005915
+ ;;^UTILITY(U,$J,358.3,9945,0)
+ ;;=H40.63X2^^44^496^31
+ ;;^UTILITY(U,$J,358.3,9945,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10100,1,3,0)
- ;;=3^Pituitary/Craniopharyngeal Neopl,Benign
- ;;^UTILITY(U,$J,358.3,10100,1,4,0)
- ;;=4^227.3
- ;;^UTILITY(U,$J,358.3,10100,2)
- ;;=^267690
- ;;^UTILITY(U,$J,358.3,10101,0)
- ;;=237.0^^44^561^104
- ;;^UTILITY(U,$J,358.3,10101,1,0)
+ ;;^UTILITY(U,$J,358.3,9945,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Bilateral,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,9945,1,4,0)
+ ;;=4^H40.63X2
+ ;;^UTILITY(U,$J,358.3,9945,2)
+ ;;=^5005916
+ ;;^UTILITY(U,$J,358.3,9946,0)
+ ;;=H40.63X3^^44^496^32
+ ;;^UTILITY(U,$J,358.3,9946,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10101,1,3,0)
- ;;=3^Pituitary/Craniopharyngeal Neopl,Uncert
- ;;^UTILITY(U,$J,358.3,10101,1,4,0)
- ;;=4^237.0
- ;;^UTILITY(U,$J,358.3,10101,2)
- ;;=^81969
- ;;^UTILITY(U,$J,358.3,10102,0)
- ;;=250.52^^44^561^27
- ;;^UTILITY(U,$J,358.3,10102,1,0)
+ ;;^UTILITY(U,$J,358.3,9946,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Bilateral,Severe Stage
+ ;;^UTILITY(U,$J,358.3,9946,1,4,0)
+ ;;=4^H40.63X3
+ ;;^UTILITY(U,$J,358.3,9946,2)
+ ;;=^5005917
+ ;;^UTILITY(U,$J,358.3,9947,0)
+ ;;=H40.63X4^^44^496^29
+ ;;^UTILITY(U,$J,358.3,9947,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10102,1,3,0)
- ;;=3^DM II w/Ophthalmic,Uncontrolled
- ;;^UTILITY(U,$J,358.3,10102,1,4,0)
- ;;=4^250.52
- ;;^UTILITY(U,$J,358.3,10102,2)
- ;;=^331801
- ;;^UTILITY(U,$J,358.3,10103,0)
- ;;=253.8^^44^561^35
- ;;^UTILITY(U,$J,358.3,10103,1,0)
+ ;;^UTILITY(U,$J,358.3,9947,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Bilateral,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,9947,1,4,0)
+ ;;=4^H40.63X4
+ ;;^UTILITY(U,$J,358.3,9947,2)
+ ;;=^5005918
+ ;;^UTILITY(U,$J,358.3,9948,0)
+ ;;=H40.51X0^^44^496^54
+ ;;^UTILITY(U,$J,358.3,9948,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10103,1,3,0)
- ;;=3^Empty Sella/Turcica
- ;;^UTILITY(U,$J,358.3,10103,1,4,0)
- ;;=4^253.8
- ;;^UTILITY(U,$J,358.3,10103,2)
- ;;=^87533
- ;;^UTILITY(U,$J,358.3,10104,0)
- ;;=300.11^^44^561^55
- ;;^UTILITY(U,$J,358.3,10104,1,0)
+ ;;^UTILITY(U,$J,358.3,9948,1,3,0)
+ ;;=3^Glaucoma Sec to Oth Eye Disorder,Right Eye,Unspec Stage
+ ;;^UTILITY(U,$J,358.3,9948,1,4,0)
+ ;;=4^H40.51X0
+ ;;^UTILITY(U,$J,358.3,9948,2)
+ ;;=^5005888
+ ;;^UTILITY(U,$J,358.3,9949,0)
+ ;;=H40.51X1^^44^496^55
+ ;;^UTILITY(U,$J,358.3,9949,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10104,1,3,0)
- ;;=3^Hysterical Blindness
- ;;^UTILITY(U,$J,358.3,10104,1,4,0)
- ;;=4^300.11
- ;;^UTILITY(U,$J,358.3,10104,2)
- ;;=^28139
- ;;^UTILITY(U,$J,358.3,10105,0)
- ;;=307.81^^44^561^48
- ;;^UTILITY(U,$J,358.3,10105,1,0)
+ ;;^UTILITY(U,$J,358.3,9949,1,3,0)
+ ;;=3^Glaucoma Sec to Oth Eye Disorder,Right Eye,Mild Stage
+ ;;^UTILITY(U,$J,358.3,9949,1,4,0)
+ ;;=4^H40.51X1
+ ;;^UTILITY(U,$J,358.3,9949,2)
+ ;;=^5005889
+ ;;^UTILITY(U,$J,358.3,9950,0)
+ ;;=H40.51X2^^44^496^56
+ ;;^UTILITY(U,$J,358.3,9950,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10105,1,3,0)
- ;;=3^Headache,Tension
- ;;^UTILITY(U,$J,358.3,10105,1,4,0)
- ;;=4^307.81
- ;;^UTILITY(U,$J,358.3,10105,2)
- ;;=^100405
- ;;^UTILITY(U,$J,358.3,10106,0)
- ;;=325.^^44^561^18
- ;;^UTILITY(U,$J,358.3,10106,1,0)
+ ;;^UTILITY(U,$J,358.3,9950,1,3,0)
+ ;;=3^Glaucoma Sec to Oth Eye Disorder,Right Eye,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,9950,1,4,0)
+ ;;=4^H40.51X2
+ ;;^UTILITY(U,$J,358.3,9950,2)
+ ;;=^5005890
+ ;;^UTILITY(U,$J,358.3,9951,0)
+ ;;=H40.51X3^^44^496^57
+ ;;^UTILITY(U,$J,358.3,9951,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10106,1,3,0)
- ;;=3^Cavernous Sinus Thrombosis
- ;;^UTILITY(U,$J,358.3,10106,1,4,0)
- ;;=4^325.
- ;;^UTILITY(U,$J,358.3,10106,2)
- ;;=^268392
- ;;^UTILITY(U,$J,358.3,10107,0)
- ;;=332.0^^44^561^100
- ;;^UTILITY(U,$J,358.3,10107,1,0)
+ ;;^UTILITY(U,$J,358.3,9951,1,3,0)
+ ;;=3^Glaucoma Sec to Oth Eye Disorder,Right Eye,Severe Stage
+ ;;^UTILITY(U,$J,358.3,9951,1,4,0)
+ ;;=4^H40.51X3
+ ;;^UTILITY(U,$J,358.3,9951,2)
+ ;;=^5133507
+ ;;^UTILITY(U,$J,358.3,9952,0)
+ ;;=H40.51X4^^44^496^58
+ ;;^UTILITY(U,$J,358.3,9952,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10107,1,3,0)
- ;;=3^Parkinson's
- ;;^UTILITY(U,$J,358.3,10107,1,4,0)
- ;;=4^332.0
- ;;^UTILITY(U,$J,358.3,10107,2)
- ;;=^304847
- ;;^UTILITY(U,$J,358.3,10108,0)
- ;;=334.3^^44^561^19
- ;;^UTILITY(U,$J,358.3,10108,1,0)
+ ;;^UTILITY(U,$J,358.3,9952,1,3,0)
+ ;;=3^Glaucoma Sec to Oth Eye Disorder,Right Eye,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,9952,1,4,0)
+ ;;=4^H40.51X4
+ ;;^UTILITY(U,$J,358.3,9952,2)
+ ;;=^5005891
+ ;;^UTILITY(U,$J,358.3,9953,0)
+ ;;=H40.52X0^^44^496^49
+ ;;^UTILITY(U,$J,358.3,9953,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10108,1,3,0)
- ;;=3^Cerebella Ataxia
- ;;^UTILITY(U,$J,358.3,10108,1,4,0)
- ;;=4^334.3
- ;;^UTILITY(U,$J,358.3,10108,2)
- ;;=^87376
- ;;^UTILITY(U,$J,358.3,10109,0)
- ;;=337.9^^44^561^52
- ;;^UTILITY(U,$J,358.3,10109,1,0)
+ ;;^UTILITY(U,$J,358.3,9953,1,3,0)
+ ;;=3^Glaucoma Sec to Oth Eye Disorder,Left Eye,Unspec Stage
+ ;;^UTILITY(U,$J,358.3,9953,1,4,0)
+ ;;=4^H40.52X0
+ ;;^UTILITY(U,$J,358.3,9953,2)
+ ;;=^5005892
+ ;;^UTILITY(U,$J,358.3,9954,0)
+ ;;=H40.52X1^^44^496^50
+ ;;^UTILITY(U,$J,358.3,9954,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10109,1,3,0)
- ;;=3^Horner's Syndrome
- ;;^UTILITY(U,$J,358.3,10109,1,4,0)
- ;;=4^337.9
- ;;^UTILITY(U,$J,358.3,10109,2)
- ;;=^11827
- ;;^UTILITY(U,$J,358.3,10110,0)
- ;;=341.9^^44^561^28
- ;;^UTILITY(U,$J,358.3,10110,1,0)
+ ;;^UTILITY(U,$J,358.3,9954,1,3,0)
+ ;;=3^Glaucoma Sec to Oth Eye Disorder,Left Eye,Mild Stage
+ ;;^UTILITY(U,$J,358.3,9954,1,4,0)
+ ;;=4^H40.52X1
+ ;;^UTILITY(U,$J,358.3,9954,2)
+ ;;=^5005893
+ ;;^UTILITY(U,$J,358.3,9955,0)
+ ;;=H40.52X2^^44^496^51
+ ;;^UTILITY(U,$J,358.3,9955,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10110,1,3,0)
- ;;=3^Demyelinating Disease
- ;;^UTILITY(U,$J,358.3,10110,1,4,0)
- ;;=4^341.9
- ;;^UTILITY(U,$J,358.3,10110,2)
- ;;=^31807
- ;;^UTILITY(U,$J,358.3,10111,0)
- ;;=346.00^^44^561^63
- ;;^UTILITY(U,$J,358.3,10111,1,0)
+ ;;^UTILITY(U,$J,358.3,9955,1,3,0)
+ ;;=3^Glaucoma Sec to Oth Eye Disorder,Left Eye,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,9955,1,4,0)
+ ;;=4^H40.52X2
+ ;;^UTILITY(U,$J,358.3,9955,2)
+ ;;=^5005894
+ ;;^UTILITY(U,$J,358.3,9956,0)
+ ;;=H40.52X3^^44^496^52
+ ;;^UTILITY(U,$J,358.3,9956,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10111,1,3,0)
- ;;=3^Migraine,Classic,Not Intractable
- ;;^UTILITY(U,$J,358.3,10111,1,4,0)
- ;;=4^346.00
- ;;^UTILITY(U,$J,358.3,10111,2)
- ;;=^336875
- ;;^UTILITY(U,$J,358.3,10112,0)
- ;;=346.01^^44^561^62
- ;;^UTILITY(U,$J,358.3,10112,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10112,1,3,0)
- ;;=3^Migraine,Classic,Intractable
- ;;^UTILITY(U,$J,358.3,10112,1,4,0)
- ;;=4^346.01
- ;;^UTILITY(U,$J,358.3,10112,2)
- ;;=^336828
- ;;^UTILITY(U,$J,358.3,10113,0)
- ;;=346.10^^44^561^61
- ;;^UTILITY(U,$J,358.3,10113,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10113,1,3,0)
- ;;=3^Migraine w/o Aura,Not Intractable
+ ;;^UTILITY(U,$J,358.3,9956,1,3,0)
+ ;;=3^Glaucoma Sec to Oth Eye Disorder,Left Eye,Severe Stage

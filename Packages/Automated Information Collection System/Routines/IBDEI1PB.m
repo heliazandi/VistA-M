@@ -1,122 +1,126 @@
-IBDEI1PB ; ; 06-AUG-2015
+IBDEI1PB ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30162,2)
- ;;=^5016468
- ;;^UTILITY(U,$J,358.3,30163,0)
- ;;=O30.203^^178^1915^52
- ;;^UTILITY(U,$J,358.3,30163,1,0)
+ ;;^UTILITY(U,$J,358.3,28913,0)
+ ;;=O99.331^^115^1453^20
+ ;;^UTILITY(U,$J,358.3,28913,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30163,1,3,0)
- ;;=3^Quad preg, unsp num plcnta & amnio sacs, third trimester
- ;;^UTILITY(U,$J,358.3,30163,1,4,0)
- ;;=4^O30.203
- ;;^UTILITY(U,$J,358.3,30163,2)
- ;;=^5016469
- ;;^UTILITY(U,$J,358.3,30164,0)
- ;;=O30.211^^178^1915^44
- ;;^UTILITY(U,$J,358.3,30164,1,0)
+ ;;^UTILITY(U,$J,358.3,28913,1,3,0)
+ ;;=3^Tobacco complicating pregnancy, first trimester
+ ;;^UTILITY(U,$J,358.3,28913,1,4,0)
+ ;;=4^O99.331
+ ;;^UTILITY(U,$J,358.3,28913,2)
+ ;;=^5017953
+ ;;^UTILITY(U,$J,358.3,28914,0)
+ ;;=O99.332^^115^1453^21
+ ;;^UTILITY(U,$J,358.3,28914,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30164,1,3,0)
- ;;=3^Quad preg w two or more monochorionic fetuses, first tri
- ;;^UTILITY(U,$J,358.3,30164,1,4,0)
- ;;=4^O30.211
- ;;^UTILITY(U,$J,358.3,30164,2)
- ;;=^5016470
- ;;^UTILITY(U,$J,358.3,30165,0)
- ;;=O30.212^^178^1915^45
- ;;^UTILITY(U,$J,358.3,30165,1,0)
+ ;;^UTILITY(U,$J,358.3,28914,1,3,0)
+ ;;=3^Tobacco complicating pregnancy, second trimester
+ ;;^UTILITY(U,$J,358.3,28914,1,4,0)
+ ;;=4^O99.332
+ ;;^UTILITY(U,$J,358.3,28914,2)
+ ;;=^5017954
+ ;;^UTILITY(U,$J,358.3,28915,0)
+ ;;=O99.333^^115^1453^22
+ ;;^UTILITY(U,$J,358.3,28915,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30165,1,3,0)
- ;;=3^Quad preg w two or more monochorionic fetuses, second tri
- ;;^UTILITY(U,$J,358.3,30165,1,4,0)
- ;;=4^O30.212
- ;;^UTILITY(U,$J,358.3,30165,2)
- ;;=^5016471
- ;;^UTILITY(U,$J,358.3,30166,0)
- ;;=O30.213^^178^1915^46
- ;;^UTILITY(U,$J,358.3,30166,1,0)
+ ;;^UTILITY(U,$J,358.3,28915,1,3,0)
+ ;;=3^Tobacco complicating pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,28915,1,4,0)
+ ;;=4^O99.333
+ ;;^UTILITY(U,$J,358.3,28915,2)
+ ;;=^5017955
+ ;;^UTILITY(U,$J,358.3,28916,0)
+ ;;=O99.335^^115^1453^23
+ ;;^UTILITY(U,$J,358.3,28916,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30166,1,3,0)
- ;;=3^Quad preg w two or more monochorionic fetuses, third tri
- ;;^UTILITY(U,$J,358.3,30166,1,4,0)
- ;;=4^O30.213
- ;;^UTILITY(U,$J,358.3,30166,2)
- ;;=^5016472
- ;;^UTILITY(U,$J,358.3,30167,0)
- ;;=O30.221^^178^1915^41
- ;;^UTILITY(U,$J,358.3,30167,1,0)
+ ;;^UTILITY(U,$J,358.3,28916,1,3,0)
+ ;;=3^Tobacco complicating the puerperium
+ ;;^UTILITY(U,$J,358.3,28916,1,4,0)
+ ;;=4^O99.335
+ ;;^UTILITY(U,$J,358.3,28916,2)
+ ;;=^5017957
+ ;;^UTILITY(U,$J,358.3,28917,0)
+ ;;=O99.211^^115^1453^14
+ ;;^UTILITY(U,$J,358.3,28917,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30167,1,3,0)
- ;;=3^Quad preg w two or more monoamnio fetuses, first trimester
- ;;^UTILITY(U,$J,358.3,30167,1,4,0)
- ;;=4^O30.221
- ;;^UTILITY(U,$J,358.3,30167,2)
- ;;=^5016474
- ;;^UTILITY(U,$J,358.3,30168,0)
- ;;=O30.222^^178^1915^42
- ;;^UTILITY(U,$J,358.3,30168,1,0)
+ ;;^UTILITY(U,$J,358.3,28917,1,3,0)
+ ;;=3^Obesity complicating pregnancy, first trimester
+ ;;^UTILITY(U,$J,358.3,28917,1,4,0)
+ ;;=4^O99.211
+ ;;^UTILITY(U,$J,358.3,28917,2)
+ ;;=^5017929
+ ;;^UTILITY(U,$J,358.3,28918,0)
+ ;;=O99.212^^115^1453^15
+ ;;^UTILITY(U,$J,358.3,28918,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30168,1,3,0)
- ;;=3^Quad preg w two or more monoamnio fetuses, second trimester
- ;;^UTILITY(U,$J,358.3,30168,1,4,0)
- ;;=4^O30.222
- ;;^UTILITY(U,$J,358.3,30168,2)
- ;;=^5016475
- ;;^UTILITY(U,$J,358.3,30169,0)
- ;;=O30.223^^178^1915^43
- ;;^UTILITY(U,$J,358.3,30169,1,0)
+ ;;^UTILITY(U,$J,358.3,28918,1,3,0)
+ ;;=3^Obesity complicating pregnancy, second trimester
+ ;;^UTILITY(U,$J,358.3,28918,1,4,0)
+ ;;=4^O99.212
+ ;;^UTILITY(U,$J,358.3,28918,2)
+ ;;=^5017930
+ ;;^UTILITY(U,$J,358.3,28919,0)
+ ;;=O99.213^^115^1453^16
+ ;;^UTILITY(U,$J,358.3,28919,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30169,1,3,0)
- ;;=3^Quad preg w two or more monoamnio fetuses, third trimester
- ;;^UTILITY(U,$J,358.3,30169,1,4,0)
- ;;=4^O30.223
- ;;^UTILITY(U,$J,358.3,30169,2)
- ;;=^5016476
- ;;^UTILITY(U,$J,358.3,30170,0)
- ;;=O30.291^^178^1915^47
- ;;^UTILITY(U,$J,358.3,30170,1,0)
+ ;;^UTILITY(U,$J,358.3,28919,1,3,0)
+ ;;=3^Obesity complicating pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,28919,1,4,0)
+ ;;=4^O99.213
+ ;;^UTILITY(U,$J,358.3,28919,2)
+ ;;=^5017931
+ ;;^UTILITY(U,$J,358.3,28920,0)
+ ;;=O99.215^^115^1453^18
+ ;;^UTILITY(U,$J,358.3,28920,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30170,1,3,0)
- ;;=3^Quad preg, unable to dtrm num plcnta & amnio sacs, 1st tri
- ;;^UTILITY(U,$J,358.3,30170,1,4,0)
- ;;=4^O30.291
- ;;^UTILITY(U,$J,358.3,30170,2)
- ;;=^5016478
- ;;^UTILITY(U,$J,358.3,30171,0)
- ;;=O30.292^^178^1915^48
- ;;^UTILITY(U,$J,358.3,30171,1,0)
+ ;;^UTILITY(U,$J,358.3,28920,1,3,0)
+ ;;=3^Obesity complicating the puerperium
+ ;;^UTILITY(U,$J,358.3,28920,1,4,0)
+ ;;=4^O99.215
+ ;;^UTILITY(U,$J,358.3,28920,2)
+ ;;=^5017933
+ ;;^UTILITY(U,$J,358.3,28921,0)
+ ;;=O99.841^^115^1453^2
+ ;;^UTILITY(U,$J,358.3,28921,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30171,1,3,0)
- ;;=3^Quad preg, unable to dtrm num plcnta & amnio sacs, 2nd tri
- ;;^UTILITY(U,$J,358.3,30171,1,4,0)
- ;;=4^O30.292
- ;;^UTILITY(U,$J,358.3,30171,2)
- ;;=^5016479
- ;;^UTILITY(U,$J,358.3,30172,0)
- ;;=O30.293^^178^1915^49
- ;;^UTILITY(U,$J,358.3,30172,1,0)
+ ;;^UTILITY(U,$J,358.3,28921,1,3,0)
+ ;;=3^Bariatric surgery status comp pregnancy, first trimester
+ ;;^UTILITY(U,$J,358.3,28921,1,4,0)
+ ;;=4^O99.841
+ ;;^UTILITY(U,$J,358.3,28921,2)
+ ;;=^5018004
+ ;;^UTILITY(U,$J,358.3,28922,0)
+ ;;=O99.842^^115^1453^3
+ ;;^UTILITY(U,$J,358.3,28922,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30172,1,3,0)
- ;;=3^Quad preg, unable to dtrm num plcnta & amnio sacs, 3rd tri
- ;;^UTILITY(U,$J,358.3,30172,1,4,0)
- ;;=4^O30.293
- ;;^UTILITY(U,$J,358.3,30172,2)
- ;;=^5016480
- ;;^UTILITY(U,$J,358.3,30173,0)
- ;;=O31.11X0^^178^1915^25
- ;;^UTILITY(U,$J,358.3,30173,1,0)
+ ;;^UTILITY(U,$J,358.3,28922,1,3,0)
+ ;;=3^Bariatric surgery status comp pregnancy, second trimester
+ ;;^UTILITY(U,$J,358.3,28922,1,4,0)
+ ;;=4^O99.842
+ ;;^UTILITY(U,$J,358.3,28922,2)
+ ;;=^5018005
+ ;;^UTILITY(U,$J,358.3,28923,0)
+ ;;=O99.843^^115^1453^4
+ ;;^UTILITY(U,$J,358.3,28923,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30173,1,3,0)
- ;;=3^Cont preg aft spon abort of 1 fetus or more, 1st tri, unsp
- ;;^UTILITY(U,$J,358.3,30173,1,4,0)
- ;;=4^O31.11X0
- ;;^UTILITY(U,$J,358.3,30173,2)
- ;;=^5016537
- ;;^UTILITY(U,$J,358.3,30174,0)
- ;;=O31.11X1^^178^1915^26
- ;;^UTILITY(U,$J,358.3,30174,1,0)
+ ;;^UTILITY(U,$J,358.3,28923,1,3,0)
+ ;;=3^Bariatric surgery status comp pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,28923,1,4,0)
+ ;;=4^O99.843
+ ;;^UTILITY(U,$J,358.3,28923,2)
+ ;;=^5018006
+ ;;^UTILITY(U,$J,358.3,28924,0)
+ ;;=O99.845^^115^1453^5
+ ;;^UTILITY(U,$J,358.3,28924,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30174,1,3,0)
- ;;=3^Cont preg aft spon abort of 1 fetus or more, 1st tri, fetus 1
+ ;;^UTILITY(U,$J,358.3,28924,1,3,0)
+ ;;=3^Bariatric surgery status complicating the puerperium
+ ;;^UTILITY(U,$J,358.3,28924,1,4,0)
+ ;;=4^O99.845
+ ;;^UTILITY(U,$J,358.3,28924,2)
+ ;;=^5018008
+ ;;^UTILITY(U,$J,358.3,28925,0)
+ ;;=O99.351^^115^1453^10

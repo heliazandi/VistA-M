@@ -1,144 +1,120 @@
-IBDEI0G7 ; ; 06-AUG-2015
+IBDEI0G7 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7509,2)
- ;;=Past MI^259884
- ;;^UTILITY(U,$J,358.3,7510,0)
- ;;=458.0^^35^472^64
- ;;^UTILITY(U,$J,358.3,7510,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7510,1,4,0)
- ;;=4^458.0
- ;;^UTILITY(U,$J,358.3,7510,1,5,0)
- ;;=5^Orthostatic Hypotension
- ;;^UTILITY(U,$J,358.3,7510,2)
- ;;=^60741
- ;;^UTILITY(U,$J,358.3,7511,0)
- ;;=420.91^^35^472^72
- ;;^UTILITY(U,$J,358.3,7511,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7511,1,4,0)
- ;;=4^420.91
- ;;^UTILITY(U,$J,358.3,7511,1,5,0)
- ;;=5^Pericarditis, Acute idiopathic
- ;;^UTILITY(U,$J,358.3,7511,2)
- ;;=   ^269695
- ;;^UTILITY(U,$J,358.3,7512,0)
- ;;=780.2^^35^472^80
- ;;^UTILITY(U,$J,358.3,7512,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7512,1,4,0)
- ;;=4^780.2
- ;;^UTILITY(U,$J,358.3,7512,1,5,0)
- ;;=5^Syncope
- ;;^UTILITY(U,$J,358.3,7512,2)
- ;;=Syncope^116707
- ;;^UTILITY(U,$J,358.3,7513,0)
- ;;=443.9^^35^472^65
- ;;^UTILITY(U,$J,358.3,7513,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7513,1,4,0)
- ;;=4^443.9
- ;;^UTILITY(U,$J,358.3,7513,1,5,0)
- ;;=5^PVD
- ;;^UTILITY(U,$J,358.3,7513,2)
- ;;=^184182
- ;;^UTILITY(U,$J,358.3,7514,0)
- ;;=440.21^^35^472^67
- ;;^UTILITY(U,$J,358.3,7514,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7514,1,4,0)
- ;;=4^440.21
- ;;^UTILITY(U,$J,358.3,7514,1,5,0)
- ;;=5^PVD w/ intermittent claudication
- ;;^UTILITY(U,$J,358.3,7514,2)
- ;;=^293885
- ;;^UTILITY(U,$J,358.3,7515,0)
- ;;=440.23^^35^472^68
- ;;^UTILITY(U,$J,358.3,7515,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7515,1,4,0)
- ;;=4^440.23
- ;;^UTILITY(U,$J,358.3,7515,1,5,0)
- ;;=5^PVD w/ ulceration
- ;;^UTILITY(U,$J,358.3,7515,2)
- ;;=^295739
- ;;^UTILITY(U,$J,358.3,7516,0)
- ;;=440.24^^35^472^66
- ;;^UTILITY(U,$J,358.3,7516,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7516,1,4,0)
- ;;=4^440.24
- ;;^UTILITY(U,$J,358.3,7516,1,5,0)
- ;;=5^PVD w/ Gangrene
- ;;^UTILITY(U,$J,358.3,7516,2)
- ;;=PVD w/ Gangrene^295740
- ;;^UTILITY(U,$J,358.3,7517,0)
- ;;=V45.81^^35^472^76
- ;;^UTILITY(U,$J,358.3,7517,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7517,1,4,0)
- ;;=4^V45.81
- ;;^UTILITY(U,$J,358.3,7517,1,5,0)
- ;;=5^S/P CABG
- ;;^UTILITY(U,$J,358.3,7517,2)
- ;;=^97129
- ;;^UTILITY(U,$J,358.3,7518,0)
- ;;=459.81^^35^472^86
- ;;^UTILITY(U,$J,358.3,7518,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7518,1,4,0)
- ;;=4^459.81
- ;;^UTILITY(U,$J,358.3,7518,1,5,0)
- ;;=5^Venous Insufficiency
- ;;^UTILITY(U,$J,358.3,7518,2)
- ;;=^125826
- ;;^UTILITY(U,$J,358.3,7519,0)
- ;;=V45.01^^35^472^78
- ;;^UTILITY(U,$J,358.3,7519,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7519,1,4,0)
- ;;=4^V45.01
- ;;^UTILITY(U,$J,358.3,7519,1,5,0)
- ;;=5^S/P Pacer Placement
- ;;^UTILITY(U,$J,358.3,7519,2)
- ;;=^303419
- ;;^UTILITY(U,$J,358.3,7520,0)
- ;;=427.31^^35^472^13
- ;;^UTILITY(U,$J,358.3,7520,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7520,1,4,0)
- ;;=4^427.31
- ;;^UTILITY(U,$J,358.3,7520,1,5,0)
- ;;=5^Atrial Fibrillation
- ;;^UTILITY(U,$J,358.3,7520,2)
- ;;=^11378
- ;;^UTILITY(U,$J,358.3,7521,0)
- ;;=427.89^^35^472^15
- ;;^UTILITY(U,$J,358.3,7521,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7521,1,4,0)
- ;;=4^427.89
- ;;^UTILITY(U,$J,358.3,7521,1,5,0)
- ;;=5^Bradycardia
- ;;^UTILITY(U,$J,358.3,7521,2)
- ;;=Bradycardia^87896
- ;;^UTILITY(U,$J,358.3,7522,0)
- ;;=427.9^^35^472^21
- ;;^UTILITY(U,$J,358.3,7522,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7522,1,4,0)
- ;;=4^427.9
- ;;^UTILITY(U,$J,358.3,7522,1,5,0)
- ;;=5^Cardiac Dysrythmia
- ;;^UTILITY(U,$J,358.3,7522,2)
- ;;=^10166
- ;;^UTILITY(U,$J,358.3,7523,0)
- ;;=427.0^^35^472^70
- ;;^UTILITY(U,$J,358.3,7523,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7523,1,4,0)
- ;;=4^427.0
- ;;^UTILITY(U,$J,358.3,7523,1,5,0)
- ;;=5^Paroxysmal Supravent Tachycardia
+ ;;^UTILITY(U,$J,358.3,7492,1,3,0)
+ ;;=3^Strain of Left Index Finger at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,7492,1,4,0)
+ ;;=4^S56.112A
+ ;;^UTILITY(U,$J,358.3,7492,2)
+ ;;=^5031619
+ ;;^UTILITY(U,$J,358.3,7493,0)
+ ;;=S56.113A^^30^409^49
+ ;;^UTILITY(U,$J,358.3,7493,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7493,1,3,0)
+ ;;=3^Strain of Right Middle Finger at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,7493,1,4,0)
+ ;;=4^S56.113A
+ ;;^UTILITY(U,$J,358.3,7493,2)
+ ;;=^5031622
+ ;;^UTILITY(U,$J,358.3,7494,0)
+ ;;=S56.114A^^30^409^30
+ ;;^UTILITY(U,$J,358.3,7494,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7494,1,3,0)
+ ;;=3^Strain of Left Middle Finger at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,7494,1,4,0)
+ ;;=4^S56.114A
+ ;;^UTILITY(U,$J,358.3,7494,2)
+ ;;=^5031625
+ ;;^UTILITY(U,$J,358.3,7495,0)
+ ;;=S56.115A^^30^409^51
+ ;;^UTILITY(U,$J,358.3,7495,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7495,1,3,0)
+ ;;=3^Strain of Right Ring Finger at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,7495,1,4,0)
+ ;;=4^S56.115A
+ ;;^UTILITY(U,$J,358.3,7495,2)
+ ;;=^5031628
+ ;;^UTILITY(U,$J,358.3,7496,0)
+ ;;=S56.417A^^30^409^43
+ ;;^UTILITY(U,$J,358.3,7496,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7496,1,3,0)
+ ;;=3^Strain of Right Little Finger at Forearm Level Extn Musc/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,7496,1,4,0)
+ ;;=4^S56.417A
+ ;;^UTILITY(U,$J,358.3,7496,2)
+ ;;=^5031781
+ ;;^UTILITY(U,$J,358.3,7497,0)
+ ;;=S56.418A^^30^409^24
+ ;;^UTILITY(U,$J,358.3,7497,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7497,1,3,0)
+ ;;=3^Strain of Left Little Finger at Forearm Level Extn Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,7497,1,4,0)
+ ;;=4^S56.418A
+ ;;^UTILITY(U,$J,358.3,7497,2)
+ ;;=^5031784
+ ;;^UTILITY(U,$J,358.3,7498,0)
+ ;;=S56.811A^^30^409^39
+ ;;^UTILITY(U,$J,358.3,7498,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7498,1,3,0)
+ ;;=3^Strain of Right Forearm Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,7498,1,4,0)
+ ;;=4^S56.811A
+ ;;^UTILITY(U,$J,358.3,7498,2)
+ ;;=^5031862
+ ;;^UTILITY(U,$J,358.3,7499,0)
+ ;;=S56.812A^^30^409^20
+ ;;^UTILITY(U,$J,358.3,7499,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7499,1,3,0)
+ ;;=3^Strain of Left Forearm Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,7499,1,4,0)
+ ;;=4^S56.812A
+ ;;^UTILITY(U,$J,358.3,7499,2)
+ ;;=^5031865
+ ;;^UTILITY(U,$J,358.3,7500,0)
+ ;;=S56.116A^^30^409^32
+ ;;^UTILITY(U,$J,358.3,7500,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7500,1,3,0)
+ ;;=3^Strain of Left Ring Finger at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,7500,1,4,0)
+ ;;=4^S56.116A
+ ;;^UTILITY(U,$J,358.3,7500,2)
+ ;;=^5031631
+ ;;^UTILITY(U,$J,358.3,7501,0)
+ ;;=S56.117A^^30^409^44
+ ;;^UTILITY(U,$J,358.3,7501,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7501,1,3,0)
+ ;;=3^Strain of Right Little Finger at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,7501,1,4,0)
+ ;;=4^S56.117A
+ ;;^UTILITY(U,$J,358.3,7501,2)
+ ;;=^5031634
+ ;;^UTILITY(U,$J,358.3,7502,0)
+ ;;=S56.118A^^30^409^25
+ ;;^UTILITY(U,$J,358.3,7502,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7502,1,3,0)
+ ;;=3^Strain of Left Little Finger at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,7502,1,4,0)
+ ;;=4^S56.118A
+ ;;^UTILITY(U,$J,358.3,7502,2)
+ ;;=^5031637
+ ;;^UTILITY(U,$J,358.3,7503,0)
+ ;;=S56.211A^^30^409^38
+ ;;^UTILITY(U,$J,358.3,7503,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7503,1,3,0)
+ ;;=3^Strain of Right Forearm Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,7503,1,4,0)
+ ;;=4^S56.211A
+ ;;^UTILITY(U,$J,358.3,7503,2)
+ ;;=^5031691

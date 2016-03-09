@@ -1,134 +1,130 @@
-IBDEI1OB ; ; 06-AUG-2015
+IBDEI1OB ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,29708,1,0)
+ ;;^UTILITY(U,$J,358.3,28432,2)
+ ;;=^5002284
+ ;;^UTILITY(U,$J,358.3,28433,0)
+ ;;=D50.0^^112^1421^3
+ ;;^UTILITY(U,$J,358.3,28433,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29708,1,3,0)
- ;;=3^Pressure Ulcer Other Site,Stage 1
- ;;^UTILITY(U,$J,358.3,29708,1,4,0)
- ;;=4^L89.891
- ;;^UTILITY(U,$J,358.3,29708,2)
- ;;=^5009447
- ;;^UTILITY(U,$J,358.3,29709,0)
- ;;=L89.892^^177^1892^56
- ;;^UTILITY(U,$J,358.3,29709,1,0)
+ ;;^UTILITY(U,$J,358.3,28433,1,3,0)
+ ;;=3^Anemia d/t Blood Loss (Chronic)
+ ;;^UTILITY(U,$J,358.3,28433,1,4,0)
+ ;;=4^D50.0
+ ;;^UTILITY(U,$J,358.3,28433,2)
+ ;;=^267971
+ ;;^UTILITY(U,$J,358.3,28434,0)
+ ;;=E11.21^^112^1421^18
+ ;;^UTILITY(U,$J,358.3,28434,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29709,1,3,0)
- ;;=3^Pressure Ulcer Other Site,Stage 2
- ;;^UTILITY(U,$J,358.3,29709,1,4,0)
- ;;=4^L89.892
- ;;^UTILITY(U,$J,358.3,29709,2)
- ;;=^5009448
- ;;^UTILITY(U,$J,358.3,29710,0)
- ;;=L89.893^^177^1892^57
- ;;^UTILITY(U,$J,358.3,29710,1,0)
+ ;;^UTILITY(U,$J,358.3,28434,1,3,0)
+ ;;=3^DM Type 2 w/ Nephropathy
+ ;;^UTILITY(U,$J,358.3,28434,1,4,0)
+ ;;=4^E11.21
+ ;;^UTILITY(U,$J,358.3,28434,2)
+ ;;=^5002629
+ ;;^UTILITY(U,$J,358.3,28435,0)
+ ;;=E11.22^^112^1421^8
+ ;;^UTILITY(U,$J,358.3,28435,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29710,1,3,0)
- ;;=3^Pressure Ulcer Other Site,Stage 3
- ;;^UTILITY(U,$J,358.3,29710,1,4,0)
- ;;=4^L89.893
- ;;^UTILITY(U,$J,358.3,29710,2)
- ;;=^5009449
- ;;^UTILITY(U,$J,358.3,29711,0)
- ;;=L89.894^^177^1892^58
- ;;^UTILITY(U,$J,358.3,29711,1,0)
+ ;;^UTILITY(U,$J,358.3,28435,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic CKD
+ ;;^UTILITY(U,$J,358.3,28435,1,4,0)
+ ;;=4^E11.22
+ ;;^UTILITY(U,$J,358.3,28435,2)
+ ;;=^5002630
+ ;;^UTILITY(U,$J,358.3,28436,0)
+ ;;=E11.29^^112^1421^19
+ ;;^UTILITY(U,$J,358.3,28436,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29711,1,3,0)
- ;;=3^Pressure Ulcer Other Site,Stage 4
- ;;^UTILITY(U,$J,358.3,29711,1,4,0)
- ;;=4^L89.894
- ;;^UTILITY(U,$J,358.3,29711,2)
- ;;=^5009450
- ;;^UTILITY(U,$J,358.3,29712,0)
- ;;=L89.899^^177^1892^59
- ;;^UTILITY(U,$J,358.3,29712,1,0)
+ ;;^UTILITY(U,$J,358.3,28436,1,3,0)
+ ;;=3^DM Type 2 w/ Other Diabetic Kidney Complication
+ ;;^UTILITY(U,$J,358.3,28436,1,4,0)
+ ;;=4^E11.29
+ ;;^UTILITY(U,$J,358.3,28436,2)
+ ;;=^5002631
+ ;;^UTILITY(U,$J,358.3,28437,0)
+ ;;=E11.311^^112^1421^20
+ ;;^UTILITY(U,$J,358.3,28437,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29712,1,3,0)
- ;;=3^Pressure Ulcer Other Site,Stage Unspec
- ;;^UTILITY(U,$J,358.3,29712,1,4,0)
- ;;=4^L89.899
- ;;^UTILITY(U,$J,358.3,29712,2)
- ;;=^5133663
- ;;^UTILITY(U,$J,358.3,29713,0)
- ;;=L89.91^^177^1892^109
- ;;^UTILITY(U,$J,358.3,29713,1,0)
+ ;;^UTILITY(U,$J,358.3,28437,1,3,0)
+ ;;=3^DM Type 2 w/ Unspec Diabetic Retinopathy w/ Macular edema
+ ;;^UTILITY(U,$J,358.3,28437,1,4,0)
+ ;;=4^E11.311
+ ;;^UTILITY(U,$J,358.3,28437,2)
+ ;;=^5002632
+ ;;^UTILITY(U,$J,358.3,28438,0)
+ ;;=E11.319^^112^1421^21
+ ;;^UTILITY(U,$J,358.3,28438,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29713,1,3,0)
- ;;=3^Pressure Ulcer Site Unspec,Stage 1
- ;;^UTILITY(U,$J,358.3,29713,1,4,0)
- ;;=4^L89.91
- ;;^UTILITY(U,$J,358.3,29713,2)
- ;;=^5133664
- ;;^UTILITY(U,$J,358.3,29714,0)
- ;;=L89.92^^177^1892^110
- ;;^UTILITY(U,$J,358.3,29714,1,0)
+ ;;^UTILITY(U,$J,358.3,28438,1,3,0)
+ ;;=3^DM Type 2 w/ Unspec Diabetic Retinopathy w/o Macular Edema
+ ;;^UTILITY(U,$J,358.3,28438,1,4,0)
+ ;;=4^E11.319
+ ;;^UTILITY(U,$J,358.3,28438,2)
+ ;;=^5002633
+ ;;^UTILITY(U,$J,358.3,28439,0)
+ ;;=E11.40^^112^1421^10
+ ;;^UTILITY(U,$J,358.3,28439,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29714,1,3,0)
- ;;=3^Pressure Ulcer Site Unspec,Stage 2
- ;;^UTILITY(U,$J,358.3,29714,1,4,0)
- ;;=4^L89.92
- ;;^UTILITY(U,$J,358.3,29714,2)
- ;;=^5133667
- ;;^UTILITY(U,$J,358.3,29715,0)
- ;;=L89.93^^177^1892^111
- ;;^UTILITY(U,$J,358.3,29715,1,0)
+ ;;^UTILITY(U,$J,358.3,28439,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Neuropathy,Unspec
+ ;;^UTILITY(U,$J,358.3,28439,1,4,0)
+ ;;=4^E11.40
+ ;;^UTILITY(U,$J,358.3,28439,2)
+ ;;=^5002644
+ ;;^UTILITY(U,$J,358.3,28440,0)
+ ;;=E11.41^^112^1421^9
+ ;;^UTILITY(U,$J,358.3,28440,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29715,1,3,0)
- ;;=3^Pressure Ulcer Site Unspec,Stage 3
- ;;^UTILITY(U,$J,358.3,29715,1,4,0)
- ;;=4^L89.93
- ;;^UTILITY(U,$J,358.3,29715,2)
- ;;=^5133668
- ;;^UTILITY(U,$J,358.3,29716,0)
- ;;=L89.94^^177^1892^112
- ;;^UTILITY(U,$J,358.3,29716,1,0)
+ ;;^UTILITY(U,$J,358.3,28440,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Mononeuropathy
+ ;;^UTILITY(U,$J,358.3,28440,1,4,0)
+ ;;=4^E11.41
+ ;;^UTILITY(U,$J,358.3,28440,2)
+ ;;=^5002645
+ ;;^UTILITY(U,$J,358.3,28441,0)
+ ;;=E11.42^^112^1421^13
+ ;;^UTILITY(U,$J,358.3,28441,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29716,1,3,0)
- ;;=3^Pressure Ulcer Site Unspec,Stage 4
- ;;^UTILITY(U,$J,358.3,29716,1,4,0)
- ;;=4^L89.94
- ;;^UTILITY(U,$J,358.3,29716,2)
- ;;=^5133669
- ;;^UTILITY(U,$J,358.3,29717,0)
- ;;=L89.95^^177^1892^113
- ;;^UTILITY(U,$J,358.3,29717,1,0)
+ ;;^UTILITY(U,$J,358.3,28441,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,28441,1,4,0)
+ ;;=4^E11.42
+ ;;^UTILITY(U,$J,358.3,28441,2)
+ ;;=^5002646
+ ;;^UTILITY(U,$J,358.3,28442,0)
+ ;;=E11.43^^112^1421^7
+ ;;^UTILITY(U,$J,358.3,28442,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29717,1,3,0)
- ;;=3^Pressure Ulcer Site Unspec,Unstageable
- ;;^UTILITY(U,$J,358.3,29717,1,4,0)
- ;;=4^L89.95
- ;;^UTILITY(U,$J,358.3,29717,2)
- ;;=^5133660
- ;;^UTILITY(U,$J,358.3,29718,0)
- ;;=B35.1^^177^1893^23
- ;;^UTILITY(U,$J,358.3,29718,1,0)
+ ;;^UTILITY(U,$J,358.3,28442,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Autonomic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,28442,1,4,0)
+ ;;=4^E11.43
+ ;;^UTILITY(U,$J,358.3,28442,2)
+ ;;=^5002647
+ ;;^UTILITY(U,$J,358.3,28443,0)
+ ;;=E11.51^^112^1421^11
+ ;;^UTILITY(U,$J,358.3,28443,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29718,1,3,0)
- ;;=3^Tinea Unguium
- ;;^UTILITY(U,$J,358.3,29718,1,4,0)
- ;;=4^B35.1
- ;;^UTILITY(U,$J,358.3,29718,2)
- ;;=^119748
- ;;^UTILITY(U,$J,358.3,29719,0)
- ;;=L03.011^^177^1893^3
- ;;^UTILITY(U,$J,358.3,29719,1,0)
+ ;;^UTILITY(U,$J,358.3,28443,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Peripheral Angiopathy w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,28443,1,4,0)
+ ;;=4^E11.51
+ ;;^UTILITY(U,$J,358.3,28443,2)
+ ;;=^5002650
+ ;;^UTILITY(U,$J,358.3,28444,0)
+ ;;=E11.52^^112^1421^12
+ ;;^UTILITY(U,$J,358.3,28444,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29719,1,3,0)
- ;;=3^Cellulitis Right Finger
- ;;^UTILITY(U,$J,358.3,29719,1,4,0)
- ;;=4^L03.011
- ;;^UTILITY(U,$J,358.3,29719,2)
- ;;=^5009019
- ;;^UTILITY(U,$J,358.3,29720,0)
- ;;=L03.012^^177^1893^1
- ;;^UTILITY(U,$J,358.3,29720,1,0)
+ ;;^UTILITY(U,$J,358.3,28444,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Peripheral Angiopathy w/ Gangrene
+ ;;^UTILITY(U,$J,358.3,28444,1,4,0)
+ ;;=4^E11.52
+ ;;^UTILITY(U,$J,358.3,28444,2)
+ ;;=^5002651
+ ;;^UTILITY(U,$J,358.3,28445,0)
+ ;;=E11.621^^112^1421^14
+ ;;^UTILITY(U,$J,358.3,28445,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29720,1,3,0)
- ;;=3^Cellulitis Left Finger
- ;;^UTILITY(U,$J,358.3,29720,1,4,0)
- ;;=4^L03.012
- ;;^UTILITY(U,$J,358.3,29720,2)
- ;;=^5009020
- ;;^UTILITY(U,$J,358.3,29721,0)
- ;;=L03.021^^177^1893^10

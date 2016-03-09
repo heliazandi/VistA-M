@@ -1,126 +1,134 @@
-IBDEI05H ; ; 06-AUG-2015
+IBDEI05H ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2045,1,3,0)
- ;;=3^Open bite, left forearm, initial encounter
- ;;^UTILITY(U,$J,358.3,2045,1,4,0)
- ;;=4^S51.852A
- ;;^UTILITY(U,$J,358.3,2045,2)
- ;;=^5028692
- ;;^UTILITY(U,$J,358.3,2046,0)
- ;;=S40.861A^^4^62^111
- ;;^UTILITY(U,$J,358.3,2046,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2046,1,3,0)
- ;;=3^Insect bite (nonvenomous) of right upper arm, init encntr
- ;;^UTILITY(U,$J,358.3,2046,1,4,0)
- ;;=4^S40.861A
- ;;^UTILITY(U,$J,358.3,2046,2)
- ;;=^5026261
- ;;^UTILITY(U,$J,358.3,2047,0)
- ;;=S40.862A^^4^62^109
- ;;^UTILITY(U,$J,358.3,2047,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2047,1,3,0)
- ;;=3^Insect bite (nonvenomous) of left upper arm, init encntr
- ;;^UTILITY(U,$J,358.3,2047,1,4,0)
- ;;=4^S40.862A
- ;;^UTILITY(U,$J,358.3,2047,2)
- ;;=^5026264
- ;;^UTILITY(U,$J,358.3,2048,0)
- ;;=S50.861A^^4^62^110
- ;;^UTILITY(U,$J,358.3,2048,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2048,1,3,0)
- ;;=3^Insect bite (nonvenomous) of right forearm, init encntr
- ;;^UTILITY(U,$J,358.3,2048,1,4,0)
- ;;=4^S50.861A
- ;;^UTILITY(U,$J,358.3,2048,2)
- ;;=^5028590
- ;;^UTILITY(U,$J,358.3,2049,0)
- ;;=S50.862A^^4^62^108
- ;;^UTILITY(U,$J,358.3,2049,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2049,1,3,0)
- ;;=3^Insect bite (nonvenomous) of left forearm, initial encounter
- ;;^UTILITY(U,$J,358.3,2049,1,4,0)
- ;;=4^S50.862A
- ;;^UTILITY(U,$J,358.3,2049,2)
- ;;=^5028593
- ;;^UTILITY(U,$J,358.3,2050,0)
- ;;=S91.351A^^4^62^148
- ;;^UTILITY(U,$J,358.3,2050,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2050,1,3,0)
- ;;=3^Open bite, right foot, initial encounter
- ;;^UTILITY(U,$J,358.3,2050,1,4,0)
- ;;=4^S91.351A
- ;;^UTILITY(U,$J,358.3,2050,2)
- ;;=^5044344
- ;;^UTILITY(U,$J,358.3,2051,0)
- ;;=S91.352A^^4^62^140
- ;;^UTILITY(U,$J,358.3,2051,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2051,1,3,0)
- ;;=3^Open bite, left foot, initial encounter
- ;;^UTILITY(U,$J,358.3,2051,1,4,0)
- ;;=4^S91.352A
- ;;^UTILITY(U,$J,358.3,2051,2)
- ;;=^5044347
- ;;^UTILITY(U,$J,358.3,2052,0)
- ;;=S61.451A^^4^62^151
- ;;^UTILITY(U,$J,358.3,2052,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2052,1,3,0)
- ;;=3^Open bite, right hand, initial encounter
- ;;^UTILITY(U,$J,358.3,2052,1,4,0)
- ;;=4^S61.451A
- ;;^UTILITY(U,$J,358.3,2052,2)
- ;;=^5033011
- ;;^UTILITY(U,$J,358.3,2053,0)
- ;;=S61.452A^^4^62^143
- ;;^UTILITY(U,$J,358.3,2053,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2053,1,3,0)
- ;;=3^Open bite, left hand, initial encounter
- ;;^UTILITY(U,$J,358.3,2053,1,4,0)
- ;;=4^S61.452A
- ;;^UTILITY(U,$J,358.3,2053,2)
- ;;=^5033014
- ;;^UTILITY(U,$J,358.3,2054,0)
- ;;=S81.851A^^4^62^153
- ;;^UTILITY(U,$J,358.3,2054,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2054,1,3,0)
- ;;=3^Open bite, right lower leg, initial encounter
- ;;^UTILITY(U,$J,358.3,2054,1,4,0)
- ;;=4^S81.851A
- ;;^UTILITY(U,$J,358.3,2054,2)
- ;;=^5040095
- ;;^UTILITY(U,$J,358.3,2055,0)
- ;;=S81.852A^^4^62^145
- ;;^UTILITY(U,$J,358.3,2055,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2055,1,3,0)
- ;;=3^Open bite, left lower leg, initial encounter
- ;;^UTILITY(U,$J,358.3,2055,1,4,0)
- ;;=4^S81.852A
- ;;^UTILITY(U,$J,358.3,2055,2)
- ;;=^5040098
- ;;^UTILITY(U,$J,358.3,2056,0)
- ;;=S91.151A^^4^62^150
- ;;^UTILITY(U,$J,358.3,2056,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2056,1,3,0)
- ;;=3^Open bite, right great toe w/o damage to nail, init encntr
- ;;^UTILITY(U,$J,358.3,2056,1,4,0)
- ;;=4^S91.151A
- ;;^UTILITY(U,$J,358.3,2056,2)
- ;;=^5044243
- ;;^UTILITY(U,$J,358.3,2057,0)
- ;;=S91.152A^^4^62^142
- ;;^UTILITY(U,$J,358.3,2057,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2057,1,3,0)
- ;;=3^Open bite, left great toe w/o damage to nail, init encntr
+ ;;^UTILITY(U,$J,358.3,2202,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2202,1,2,0)
+ ;;=2^96368
+ ;;^UTILITY(U,$J,358.3,2202,1,3,0)
+ ;;=3^IV Inf Ther/Proph/Diag Concurrent
+ ;;^UTILITY(U,$J,358.3,2203,0)
+ ;;=82948^^12^173^8^^^^1
+ ;;^UTILITY(U,$J,358.3,2203,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2203,1,2,0)
+ ;;=2^82948
+ ;;^UTILITY(U,$J,358.3,2203,1,3,0)
+ ;;=3^REAGENT STRIP/BLOOD GLUCOSE
+ ;;^UTILITY(U,$J,358.3,2204,0)
+ ;;=90471^^12^173^7^^^^1
+ ;;^UTILITY(U,$J,358.3,2204,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2204,1,2,0)
+ ;;=2^90471
+ ;;^UTILITY(U,$J,358.3,2204,1,3,0)
+ ;;=3^Immunization Admin
+ ;;^UTILITY(U,$J,358.3,2205,0)
+ ;;=J1644^^12^174^8^^^^1
+ ;;^UTILITY(U,$J,358.3,2205,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2205,1,2,0)
+ ;;=2^J1644
+ ;;^UTILITY(U,$J,358.3,2205,1,3,0)
+ ;;=3^Heparin Sodium Inj 1000U
+ ;;^UTILITY(U,$J,358.3,2206,0)
+ ;;=J1642^^12^174^7^^^^1
+ ;;^UTILITY(U,$J,358.3,2206,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2206,1,2,0)
+ ;;=2^J1642
+ ;;^UTILITY(U,$J,358.3,2206,1,3,0)
+ ;;=3^Heparin Lock Flush 10U
+ ;;^UTILITY(U,$J,358.3,2207,0)
+ ;;=J3490^^12^174^28^^^^1
+ ;;^UTILITY(U,$J,358.3,2207,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2207,1,2,0)
+ ;;=2^J3490
+ ;;^UTILITY(U,$J,358.3,2207,1,3,0)
+ ;;=3^Unclassified Drug Inj
+ ;;^UTILITY(U,$J,358.3,2208,0)
+ ;;=J1250^^12^174^4^^^^1
+ ;;^UTILITY(U,$J,358.3,2208,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2208,1,2,0)
+ ;;=2^J1250
+ ;;^UTILITY(U,$J,358.3,2208,1,3,0)
+ ;;=3^Dobutamine HCL 250mg
+ ;;^UTILITY(U,$J,358.3,2209,0)
+ ;;=J2001^^12^174^12^^^^1
+ ;;^UTILITY(U,$J,358.3,2209,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2209,1,2,0)
+ ;;=2^J2001
+ ;;^UTILITY(U,$J,358.3,2209,1,3,0)
+ ;;=3^Lidocaine HCL IV Inf 10mg
+ ;;^UTILITY(U,$J,358.3,2210,0)
+ ;;=Q9965^^12^174^9^^^^1
+ ;;^UTILITY(U,$J,358.3,2210,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2210,1,2,0)
+ ;;=2^Q9965
+ ;;^UTILITY(U,$J,358.3,2210,1,3,0)
+ ;;=3^LOCM 100-199mg/ml Iodine 1ml
+ ;;^UTILITY(U,$J,358.3,2211,0)
+ ;;=Q9966^^12^174^10^^^^1
+ ;;^UTILITY(U,$J,358.3,2211,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2211,1,2,0)
+ ;;=2^Q9966
+ ;;^UTILITY(U,$J,358.3,2211,1,3,0)
+ ;;=3^LOCM 200-299mg/ml Iodine 1ml
+ ;;^UTILITY(U,$J,358.3,2212,0)
+ ;;=Q9967^^12^174^11^^^^1
+ ;;^UTILITY(U,$J,358.3,2212,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2212,1,2,0)
+ ;;=2^Q9967
+ ;;^UTILITY(U,$J,358.3,2212,1,3,0)
+ ;;=3^LOCM 300-399mg/ml Iodine 1ml
+ ;;^UTILITY(U,$J,358.3,2213,0)
+ ;;=J2250^^12^174^13^^^^1
+ ;;^UTILITY(U,$J,358.3,2213,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2213,1,2,0)
+ ;;=2^J2250
+ ;;^UTILITY(U,$J,358.3,2213,1,3,0)
+ ;;=3^Midazolam Hydrochloride 1mg
+ ;;^UTILITY(U,$J,358.3,2214,0)
+ ;;=J3010^^12^174^5^^^^1
+ ;;^UTILITY(U,$J,358.3,2214,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2214,1,2,0)
+ ;;=2^J3010
+ ;;^UTILITY(U,$J,358.3,2214,1,3,0)
+ ;;=3^Fentanyl Citrate 0.1mg
+ ;;^UTILITY(U,$J,358.3,2215,0)
+ ;;=J2405^^12^174^18^^^^1
+ ;;^UTILITY(U,$J,358.3,2215,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2215,1,2,0)
+ ;;=2^J2405
+ ;;^UTILITY(U,$J,358.3,2215,1,3,0)
+ ;;=3^Ondansetron HCL 1mg
+ ;;^UTILITY(U,$J,358.3,2216,0)
+ ;;=J2550^^12^174^20^^^^1
+ ;;^UTILITY(U,$J,358.3,2216,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2216,1,2,0)
+ ;;=2^J2550
+ ;;^UTILITY(U,$J,358.3,2216,1,3,0)
+ ;;=3^Promethazine HCL 50mg
+ ;;^UTILITY(U,$J,358.3,2217,0)
+ ;;=90658^^12^174^6^^^^1
+ ;;^UTILITY(U,$J,358.3,2217,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2217,1,2,0)
+ ;;=2^90658
+ ;;^UTILITY(U,$J,358.3,2217,1,3,0)
+ ;;=3^Flu Vaccine
+ ;;^UTILITY(U,$J,358.3,2218,0)
+ ;;=J1568^^12^174^17^^^^1
+ ;;^UTILITY(U,$J,358.3,2218,1,0)
+ ;;=^358.31IA^3^2

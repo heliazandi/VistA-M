@@ -1,124 +1,136 @@
-IBDEI1ZT ; ; 06-AUG-2015
+IBDEI1ZT ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34889,1,4,0)
- ;;=4^S82.121S
- ;;^UTILITY(U,$J,358.3,34889,2)
- ;;=^5040694
- ;;^UTILITY(U,$J,358.3,34890,0)
- ;;=S82.152S^^183^2024^12
- ;;^UTILITY(U,$J,358.3,34890,1,0)
+ ;;^UTILITY(U,$J,358.3,33816,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34890,1,3,0)
- ;;=3^Disp fx of left tibial tuberosity, sequela   
- ;;^UTILITY(U,$J,358.3,34890,1,4,0)
- ;;=4^S82.152S
- ;;^UTILITY(U,$J,358.3,34890,2)
- ;;=^5040998
- ;;^UTILITY(U,$J,358.3,34891,0)
- ;;=S82.132S^^183^2024^13
- ;;^UTILITY(U,$J,358.3,34891,1,0)
+ ;;^UTILITY(U,$J,358.3,33816,1,3,0)
+ ;;=3^Rheumatic Mitral Valve Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,33816,1,4,0)
+ ;;=4^I05.9
+ ;;^UTILITY(U,$J,358.3,33816,2)
+ ;;=^5007044
+ ;;^UTILITY(U,$J,358.3,33817,0)
+ ;;=I07.1^^131^1679^21
+ ;;^UTILITY(U,$J,358.3,33817,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34891,1,3,0)
- ;;=3^Disp fx of medial condyle of left tibia, sequela
- ;;^UTILITY(U,$J,358.3,34891,1,4,0)
- ;;=4^S82.132S
- ;;^UTILITY(U,$J,358.3,34891,2)
- ;;=^5040806
- ;;^UTILITY(U,$J,358.3,34892,0)
- ;;=S82.131S^^183^2024^14
- ;;^UTILITY(U,$J,358.3,34892,1,0)
+ ;;^UTILITY(U,$J,358.3,33817,1,3,0)
+ ;;=3^Rheumatic Tricuspid Insufficiency
+ ;;^UTILITY(U,$J,358.3,33817,1,4,0)
+ ;;=4^I07.1
+ ;;^UTILITY(U,$J,358.3,33817,2)
+ ;;=^5007048
+ ;;^UTILITY(U,$J,358.3,33818,0)
+ ;;=I07.9^^131^1679^22
+ ;;^UTILITY(U,$J,358.3,33818,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34892,1,3,0)
- ;;=3^Disp fx of medial condyle of right tibia, sequela 
- ;;^UTILITY(U,$J,358.3,34892,1,4,0)
- ;;=4^S82.131S
- ;;^UTILITY(U,$J,358.3,34892,2)
- ;;=^5040790
- ;;^UTILITY(U,$J,358.3,34893,0)
- ;;=S82.52XS^^183^2024^15
- ;;^UTILITY(U,$J,358.3,34893,1,0)
+ ;;^UTILITY(U,$J,358.3,33818,1,3,0)
+ ;;=3^Rheumatic Tricuspid Valve Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,33818,1,4,0)
+ ;;=4^I07.9
+ ;;^UTILITY(U,$J,358.3,33818,2)
+ ;;=^5007051
+ ;;^UTILITY(U,$J,358.3,33819,0)
+ ;;=I08.0^^131^1679^16
+ ;;^UTILITY(U,$J,358.3,33819,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34893,1,3,0)
- ;;=3^Disp fx of medial malleolus of left tibia, sequela
- ;;^UTILITY(U,$J,358.3,34893,1,4,0)
- ;;=4^S82.52XS
- ;;^UTILITY(U,$J,358.3,34893,2)
- ;;=^5042246
- ;;^UTILITY(U,$J,358.3,34894,0)
- ;;=S82.51XS^^183^2024^16
- ;;^UTILITY(U,$J,358.3,34894,1,0)
+ ;;^UTILITY(U,$J,358.3,33819,1,3,0)
+ ;;=3^Rheumatic Disorders of Mitral & Aortic Valves
+ ;;^UTILITY(U,$J,358.3,33819,1,4,0)
+ ;;=4^I08.0
+ ;;^UTILITY(U,$J,358.3,33819,2)
+ ;;=^5007052
+ ;;^UTILITY(U,$J,358.3,33820,0)
+ ;;=I09.89^^131^1679^17
+ ;;^UTILITY(U,$J,358.3,33820,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34894,1,3,0)
- ;;=3^Disp fx of medial malleolus of right tibia, sequela
- ;;^UTILITY(U,$J,358.3,34894,1,4,0)
- ;;=4^S82.51XS
- ;;^UTILITY(U,$J,358.3,34894,2)
- ;;=^5042230
- ;;^UTILITY(U,$J,358.3,34895,0)
- ;;=S82.111S^^183^2024^23
- ;;^UTILITY(U,$J,358.3,34895,1,0)
+ ;;^UTILITY(U,$J,358.3,33820,1,3,0)
+ ;;=3^Rheumatic Heart Diseases NEC
+ ;;^UTILITY(U,$J,358.3,33820,1,4,0)
+ ;;=4^I09.89
+ ;;^UTILITY(U,$J,358.3,33820,2)
+ ;;=^5007060
+ ;;^UTILITY(U,$J,358.3,33821,0)
+ ;;=I47.1^^131^1679^24
+ ;;^UTILITY(U,$J,358.3,33821,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34895,1,3,0)
- ;;=3^Disp fx of right tibial spine, sequela       
- ;;^UTILITY(U,$J,358.3,34895,1,4,0)
- ;;=4^S82.111S
- ;;^UTILITY(U,$J,358.3,34895,2)
- ;;=^5040598
- ;;^UTILITY(U,$J,358.3,34896,0)
- ;;=S82.151S^^183^2024^24
- ;;^UTILITY(U,$J,358.3,34896,1,0)
+ ;;^UTILITY(U,$J,358.3,33821,1,3,0)
+ ;;=3^Supraventricular Tachycardia
+ ;;^UTILITY(U,$J,358.3,33821,1,4,0)
+ ;;=4^I47.1
+ ;;^UTILITY(U,$J,358.3,33821,2)
+ ;;=^5007223
+ ;;^UTILITY(U,$J,358.3,33822,0)
+ ;;=I48.0^^131^1679^15
+ ;;^UTILITY(U,$J,358.3,33822,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34896,1,3,0)
- ;;=3^Disp fx of right tibial tuberosity, sequela  
- ;;^UTILITY(U,$J,358.3,34896,1,4,0)
- ;;=4^S82.151S
- ;;^UTILITY(U,$J,358.3,34896,2)
- ;;=^5040982
- ;;^UTILITY(U,$J,358.3,34897,0)
- ;;=S82.232S^^183^2024^18
- ;;^UTILITY(U,$J,358.3,34897,1,0)
+ ;;^UTILITY(U,$J,358.3,33822,1,3,0)
+ ;;=3^Paroxysmal Atrial Fibrillation
+ ;;^UTILITY(U,$J,358.3,33822,1,4,0)
+ ;;=4^I48.0
+ ;;^UTILITY(U,$J,358.3,33822,2)
+ ;;=^90473
+ ;;^UTILITY(U,$J,358.3,33823,0)
+ ;;=I49.5^^131^1679^23
+ ;;^UTILITY(U,$J,358.3,33823,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34897,1,3,0)
- ;;=3^Disp fx of oblique shaft of left tibia, sequela 
- ;;^UTILITY(U,$J,358.3,34897,1,4,0)
- ;;=4^S82.232S
- ;;^UTILITY(U,$J,358.3,34897,2)
- ;;=^5041266
- ;;^UTILITY(U,$J,358.3,34898,0)
- ;;=S82.231S^^183^2024^20
- ;;^UTILITY(U,$J,358.3,34898,1,0)
+ ;;^UTILITY(U,$J,358.3,33823,1,3,0)
+ ;;=3^Sick Sinus Syndrome
+ ;;^UTILITY(U,$J,358.3,33823,1,4,0)
+ ;;=4^I49.5
+ ;;^UTILITY(U,$J,358.3,33823,2)
+ ;;=^110404
+ ;;^UTILITY(U,$J,358.3,33824,0)
+ ;;=I49.8^^131^1679^3
+ ;;^UTILITY(U,$J,358.3,33824,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34898,1,3,0)
- ;;=3^Disp fx of oblique shaft of right tibia, sequela 
- ;;^UTILITY(U,$J,358.3,34898,1,4,0)
- ;;=4^S82.231S
- ;;^UTILITY(U,$J,358.3,34898,2)
- ;;=^5041250
- ;;^UTILITY(U,$J,358.3,34899,0)
- ;;=S82.872S^^183^2024^21
- ;;^UTILITY(U,$J,358.3,34899,1,0)
+ ;;^UTILITY(U,$J,358.3,33824,1,3,0)
+ ;;=3^Cardiac Arrhythmias
+ ;;^UTILITY(U,$J,358.3,33824,1,4,0)
+ ;;=4^I49.8
+ ;;^UTILITY(U,$J,358.3,33824,2)
+ ;;=^5007236
+ ;;^UTILITY(U,$J,358.3,33825,0)
+ ;;=I49.9^^131^1679^2
+ ;;^UTILITY(U,$J,358.3,33825,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34899,1,3,0)
- ;;=3^Disp fx of pilon of left tibia, sequela          
- ;;^UTILITY(U,$J,358.3,34899,1,4,0)
- ;;=4^S82.872S
- ;;^UTILITY(U,$J,358.3,34899,2)
- ;;=^5042798
- ;;^UTILITY(U,$J,358.3,34900,0)
- ;;=S82.871S^^183^2024^22
- ;;^UTILITY(U,$J,358.3,34900,1,0)
+ ;;^UTILITY(U,$J,358.3,33825,1,3,0)
+ ;;=3^Cardiac Arrhythmia,Unspec
+ ;;^UTILITY(U,$J,358.3,33825,1,4,0)
+ ;;=4^I49.9
+ ;;^UTILITY(U,$J,358.3,33825,2)
+ ;;=^5007237
+ ;;^UTILITY(U,$J,358.3,33826,0)
+ ;;=R00.1^^131^1679^1
+ ;;^UTILITY(U,$J,358.3,33826,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34900,1,3,0)
- ;;=3^Disp fx of pilon of right tibia, sequela         
- ;;^UTILITY(U,$J,358.3,34900,1,4,0)
- ;;=4^S82.871S
- ;;^UTILITY(U,$J,358.3,34900,2)
- ;;=^5042782
- ;;^UTILITY(U,$J,358.3,34901,0)
- ;;=S82.262S^^183^2024^26
- ;;^UTILITY(U,$J,358.3,34901,1,0)
+ ;;^UTILITY(U,$J,358.3,33826,1,3,0)
+ ;;=3^Bradycardia,Unspec
+ ;;^UTILITY(U,$J,358.3,33826,1,4,0)
+ ;;=4^R00.1
+ ;;^UTILITY(U,$J,358.3,33826,2)
+ ;;=^5019164
+ ;;^UTILITY(U,$J,358.3,33827,0)
+ ;;=I34.1^^131^1679^14
+ ;;^UTILITY(U,$J,358.3,33827,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34901,1,3,0)
- ;;=3^Disp fx of segmental shaft of left tibia, sequela  
+ ;;^UTILITY(U,$J,358.3,33827,1,3,0)
+ ;;=3^Nonrheumatic Mitral Valve Prolapse
+ ;;^UTILITY(U,$J,358.3,33827,1,4,0)
+ ;;=4^I34.1
+ ;;^UTILITY(U,$J,358.3,33827,2)
+ ;;=^5007170
+ ;;^UTILITY(U,$J,358.3,33828,0)
+ ;;=D68.4^^131^1680^1
+ ;;^UTILITY(U,$J,358.3,33828,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33828,1,3,0)
+ ;;=3^Acquired Coagulation Factor Deficiency
+ ;;^UTILITY(U,$J,358.3,33828,1,4,0)
+ ;;=4^D68.4
+ ;;^UTILITY(U,$J,358.3,33828,2)
+ ;;=^2235
+ ;;^UTILITY(U,$J,358.3,33829,0)
+ ;;=D59.9^^131^1680^2
+ ;;^UTILITY(U,$J,358.3,33829,1,0)
+ ;;=^358.31IA^4^2

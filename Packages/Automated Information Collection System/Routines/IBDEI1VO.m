@@ -1,136 +1,132 @@
-IBDEI1VO ; ; 06-AUG-2015
+IBDEI1VO ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33039,1,3,0)
- ;;=3^Alcoholic Hepatic Failure w/o Coma
- ;;^UTILITY(U,$J,358.3,33039,1,4,0)
- ;;=4^K70.40
- ;;^UTILITY(U,$J,358.3,33039,2)
- ;;=^5008790
- ;;^UTILITY(U,$J,358.3,33040,0)
- ;;=K70.41^^182^1995^5
- ;;^UTILITY(U,$J,358.3,33040,1,0)
+ ;;^UTILITY(U,$J,358.3,31898,2)
+ ;;=^5045639
+ ;;^UTILITY(U,$J,358.3,31899,0)
+ ;;=S93.114A^^126^1607^64
+ ;;^UTILITY(U,$J,358.3,31899,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33040,1,3,0)
- ;;=3^Alcoholic Hepatic Failure w/ Coma
- ;;^UTILITY(U,$J,358.3,33040,1,4,0)
- ;;=4^K70.41
- ;;^UTILITY(U,$J,358.3,33040,2)
- ;;=^5008791
- ;;^UTILITY(U,$J,358.3,33041,0)
- ;;=K73.0^^182^1995^15
- ;;^UTILITY(U,$J,358.3,33041,1,0)
+ ;;^UTILITY(U,$J,358.3,31899,1,3,0)
+ ;;=3^Dislocation of interphaln joint of rt lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,31899,1,4,0)
+ ;;=4^S93.114A
+ ;;^UTILITY(U,$J,358.3,31899,2)
+ ;;=^5045645
+ ;;^UTILITY(U,$J,358.3,31900,0)
+ ;;=S93.115A^^126^1607^62
+ ;;^UTILITY(U,$J,358.3,31900,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33041,1,3,0)
- ;;=3^Hepatitis, Chronic Persistent NEC
- ;;^UTILITY(U,$J,358.3,33041,1,4,0)
- ;;=4^K73.0
- ;;^UTILITY(U,$J,358.3,33041,2)
- ;;=^5008811
- ;;^UTILITY(U,$J,358.3,33042,0)
- ;;=K74.0^^182^1995^14
- ;;^UTILITY(U,$J,358.3,33042,1,0)
+ ;;^UTILITY(U,$J,358.3,31900,1,3,0)
+ ;;=3^Dislocation of interphaln joint of lft lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,31900,1,4,0)
+ ;;=4^S93.115A
+ ;;^UTILITY(U,$J,358.3,31900,2)
+ ;;=^5045648
+ ;;^UTILITY(U,$J,358.3,31901,0)
+ ;;=S93.104A^^126^1607^70
+ ;;^UTILITY(U,$J,358.3,31901,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33042,1,3,0)
- ;;=3^Hepatic Fibrosis
- ;;^UTILITY(U,$J,358.3,33042,1,4,0)
- ;;=4^K74.0
- ;;^UTILITY(U,$J,358.3,33042,2)
- ;;=^5008816
- ;;^UTILITY(U,$J,358.3,33043,0)
- ;;=K74.69^^182^1995^10
- ;;^UTILITY(U,$J,358.3,33043,1,0)
+ ;;^UTILITY(U,$J,358.3,31901,1,3,0)
+ ;;=3^Dislocation of rt toe(s), unspec, init enc
+ ;;^UTILITY(U,$J,358.3,31901,1,4,0)
+ ;;=4^S93.104A
+ ;;^UTILITY(U,$J,358.3,31901,2)
+ ;;=^5045630
+ ;;^UTILITY(U,$J,358.3,31902,0)
+ ;;=S93.105A^^126^1607^67
+ ;;^UTILITY(U,$J,358.3,31902,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33043,1,3,0)
- ;;=3^Cirrhosis of Liver,Oth
- ;;^UTILITY(U,$J,358.3,33043,1,4,0)
- ;;=4^K74.69
- ;;^UTILITY(U,$J,358.3,33043,2)
- ;;=^5008823
- ;;^UTILITY(U,$J,358.3,33044,0)
- ;;=K74.60^^182^1995^11
- ;;^UTILITY(U,$J,358.3,33044,1,0)
+ ;;^UTILITY(U,$J,358.3,31902,1,3,0)
+ ;;=3^Dislocation of lft toe(s), unspec, init enc
+ ;;^UTILITY(U,$J,358.3,31902,1,4,0)
+ ;;=4^S93.105A
+ ;;^UTILITY(U,$J,358.3,31902,2)
+ ;;=^5045633
+ ;;^UTILITY(U,$J,358.3,31903,0)
+ ;;=L30.9^^126^1607^56
+ ;;^UTILITY(U,$J,358.3,31903,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33044,1,3,0)
- ;;=3^Cirrhosis of Liver,Unspec
- ;;^UTILITY(U,$J,358.3,33044,1,4,0)
- ;;=4^K74.60
- ;;^UTILITY(U,$J,358.3,33044,2)
- ;;=^5008822
- ;;^UTILITY(U,$J,358.3,33045,0)
- ;;=K76.0^^182^1995^12
- ;;^UTILITY(U,$J,358.3,33045,1,0)
+ ;;^UTILITY(U,$J,358.3,31903,1,3,0)
+ ;;=3^Dermatitis,Unspec
+ ;;^UTILITY(U,$J,358.3,31903,1,4,0)
+ ;;=4^L30.9
+ ;;^UTILITY(U,$J,358.3,31903,2)
+ ;;=^5009159
+ ;;^UTILITY(U,$J,358.3,31904,0)
+ ;;=M20.5X2^^126^1607^40
+ ;;^UTILITY(U,$J,358.3,31904,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33045,1,3,0)
- ;;=3^Fatty Liver NEC
- ;;^UTILITY(U,$J,358.3,33045,1,4,0)
- ;;=4^K76.0
- ;;^UTILITY(U,$J,358.3,33045,2)
- ;;=^5008831
- ;;^UTILITY(U,$J,358.3,33046,0)
- ;;=K76.89^^182^1995^18
- ;;^UTILITY(U,$J,358.3,33046,1,0)
+ ;;^UTILITY(U,$J,358.3,31904,1,3,0)
+ ;;=3^Deformitis,Left Toe(s),Acquired
+ ;;^UTILITY(U,$J,358.3,31904,1,4,0)
+ ;;=4^M20.5X2
+ ;;^UTILITY(U,$J,358.3,31904,2)
+ ;;=^5011054
+ ;;^UTILITY(U,$J,358.3,31905,0)
+ ;;=M20.5X1^^126^1607^42
+ ;;^UTILITY(U,$J,358.3,31905,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33046,1,3,0)
- ;;=3^Liver Disease NEC
- ;;^UTILITY(U,$J,358.3,33046,1,4,0)
- ;;=4^K76.89
- ;;^UTILITY(U,$J,358.3,33046,2)
- ;;=^5008835
- ;;^UTILITY(U,$J,358.3,33047,0)
- ;;=K71.6^^182^1995^31
- ;;^UTILITY(U,$J,358.3,33047,1,0)
+ ;;^UTILITY(U,$J,358.3,31905,1,3,0)
+ ;;=3^Deformitis,Right Toe(s),Acquired
+ ;;^UTILITY(U,$J,358.3,31905,1,4,0)
+ ;;=4^M20.5X1
+ ;;^UTILITY(U,$J,358.3,31905,2)
+ ;;=^5011053
+ ;;^UTILITY(U,$J,358.3,31906,0)
+ ;;=M24.871^^126^1607^49
+ ;;^UTILITY(U,$J,358.3,31906,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33047,1,3,0)
- ;;=3^Toxic Liver Disease w/ Hepatitis NEC
- ;;^UTILITY(U,$J,358.3,33047,1,4,0)
- ;;=4^K71.6
- ;;^UTILITY(U,$J,358.3,33047,2)
- ;;=^5008801
- ;;^UTILITY(U,$J,358.3,33048,0)
- ;;=K75.9^^182^1995^17
- ;;^UTILITY(U,$J,358.3,33048,1,0)
+ ;;^UTILITY(U,$J,358.3,31906,1,3,0)
+ ;;=3^Derangement,Right Ankle Joint NEC
+ ;;^UTILITY(U,$J,358.3,31906,1,4,0)
+ ;;=4^M24.871
+ ;;^UTILITY(U,$J,358.3,31906,2)
+ ;;=^5011468
+ ;;^UTILITY(U,$J,358.3,31907,0)
+ ;;=M24.875^^126^1607^48
+ ;;^UTILITY(U,$J,358.3,31907,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33048,1,3,0)
- ;;=3^Inflammatory Liver Disease,Unspec
- ;;^UTILITY(U,$J,358.3,33048,1,4,0)
- ;;=4^K75.9
- ;;^UTILITY(U,$J,358.3,33048,2)
- ;;=^5008830
- ;;^UTILITY(U,$J,358.3,33049,0)
- ;;=K71.0^^182^1995^23
- ;;^UTILITY(U,$J,358.3,33049,1,0)
+ ;;^UTILITY(U,$J,358.3,31907,1,3,0)
+ ;;=3^Derangement,Left Foot Joint NEC
+ ;;^UTILITY(U,$J,358.3,31907,1,4,0)
+ ;;=4^M24.875
+ ;;^UTILITY(U,$J,358.3,31907,2)
+ ;;=^5011472
+ ;;^UTILITY(U,$J,358.3,31908,0)
+ ;;=M24.874^^126^1607^50
+ ;;^UTILITY(U,$J,358.3,31908,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33049,1,3,0)
- ;;=3^Toxic Liver Disease w/ Cholestasis
- ;;^UTILITY(U,$J,358.3,33049,1,4,0)
- ;;=4^K71.0
- ;;^UTILITY(U,$J,358.3,33049,2)
- ;;=^5008793
- ;;^UTILITY(U,$J,358.3,33050,0)
- ;;=K71.10^^182^1995^29
- ;;^UTILITY(U,$J,358.3,33050,1,0)
+ ;;^UTILITY(U,$J,358.3,31908,1,3,0)
+ ;;=3^Derangement,Right Foot Joint NEC
+ ;;^UTILITY(U,$J,358.3,31908,1,4,0)
+ ;;=4^M24.874
+ ;;^UTILITY(U,$J,358.3,31908,2)
+ ;;=^5011471
+ ;;^UTILITY(U,$J,358.3,31909,0)
+ ;;=M24.872^^126^1607^47
+ ;;^UTILITY(U,$J,358.3,31909,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33050,1,3,0)
- ;;=3^Toxic Liver Disease w/ Hepatic Necrosis w/o Coma
- ;;^UTILITY(U,$J,358.3,33050,1,4,0)
- ;;=4^K71.10
- ;;^UTILITY(U,$J,358.3,33050,2)
- ;;=^5008794
- ;;^UTILITY(U,$J,358.3,33051,0)
- ;;=K71.11^^182^1995^30
- ;;^UTILITY(U,$J,358.3,33051,1,0)
+ ;;^UTILITY(U,$J,358.3,31909,1,3,0)
+ ;;=3^Derangement,Left Ankle Joint NEC
+ ;;^UTILITY(U,$J,358.3,31909,1,4,0)
+ ;;=4^M24.872
+ ;;^UTILITY(U,$J,358.3,31909,2)
+ ;;=^5011469
+ ;;^UTILITY(U,$J,358.3,31910,0)
+ ;;=L30.1^^126^1607^74
+ ;;^UTILITY(U,$J,358.3,31910,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33051,1,3,0)
- ;;=3^Toxic Liver Disease w/ Hepatic Necrosis w/ Coma
- ;;^UTILITY(U,$J,358.3,33051,1,4,0)
- ;;=4^K71.11
- ;;^UTILITY(U,$J,358.3,33051,2)
- ;;=^5008795
- ;;^UTILITY(U,$J,358.3,33052,0)
- ;;=K71.2^^182^1995^22
- ;;^UTILITY(U,$J,358.3,33052,1,0)
+ ;;^UTILITY(U,$J,358.3,31910,1,3,0)
+ ;;=3^Dyshidrosis [pompholyx]
+ ;;^UTILITY(U,$J,358.3,31910,1,4,0)
+ ;;=4^L30.1
+ ;;^UTILITY(U,$J,358.3,31910,2)
+ ;;=^5009154
+ ;;^UTILITY(U,$J,358.3,31911,0)
+ ;;=L98.9^^126^1607^73
+ ;;^UTILITY(U,$J,358.3,31911,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33052,1,3,0)
- ;;=3^Toxic Liver Disease w/ Acute Hepatitis
+ ;;^UTILITY(U,$J,358.3,31911,1,3,0)
+ ;;=3^Disorder of skin and subcut tissue, unspec

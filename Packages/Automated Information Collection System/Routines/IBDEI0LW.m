@@ -1,138 +1,132 @@
-IBDEI0LW ; ; 06-AUG-2015
+IBDEI0LW ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10384,0)
- ;;=378.53^^44^564^16
- ;;^UTILITY(U,$J,358.3,10384,1,0)
+ ;;^UTILITY(U,$J,358.3,10209,1,3,0)
+ ;;=3^Pseudopapilledema of Optic Disc,Right Eye
+ ;;^UTILITY(U,$J,358.3,10209,1,4,0)
+ ;;=4^H47.331
+ ;;^UTILITY(U,$J,358.3,10209,2)
+ ;;=^5006145
+ ;;^UTILITY(U,$J,358.3,10210,0)
+ ;;=H47.332^^44^502^42
+ ;;^UTILITY(U,$J,358.3,10210,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10384,1,3,0)
- ;;=3^Nerve Palsy,Fourth
- ;;^UTILITY(U,$J,358.3,10384,1,4,0)
- ;;=4^378.53
- ;;^UTILITY(U,$J,358.3,10384,2)
- ;;=^265326
- ;;^UTILITY(U,$J,358.3,10385,0)
- ;;=360.01^^44^565^50
- ;;^UTILITY(U,$J,358.3,10385,1,0)
+ ;;^UTILITY(U,$J,358.3,10210,1,3,0)
+ ;;=3^Pseudopapilledema of Optic Disc,Left Eye
+ ;;^UTILITY(U,$J,358.3,10210,1,4,0)
+ ;;=4^H47.332
+ ;;^UTILITY(U,$J,358.3,10210,2)
+ ;;=^5006146
+ ;;^UTILITY(U,$J,358.3,10211,0)
+ ;;=H47.333^^44^502^41
+ ;;^UTILITY(U,$J,358.3,10211,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10385,1,3,0)
- ;;=3^Endophalmitis
- ;;^UTILITY(U,$J,358.3,10385,1,4,0)
- ;;=4^360.01
- ;;^UTILITY(U,$J,358.3,10385,2)
- ;;=Endophalmitis^268545
- ;;^UTILITY(U,$J,358.3,10386,0)
- ;;=V08.^^44^565^53
- ;;^UTILITY(U,$J,358.3,10386,1,0)
+ ;;^UTILITY(U,$J,358.3,10211,1,3,0)
+ ;;=3^Pseudopapilledema of Optic Disc,Bilateral
+ ;;^UTILITY(U,$J,358.3,10211,1,4,0)
+ ;;=4^H47.333
+ ;;^UTILITY(U,$J,358.3,10211,2)
+ ;;=^5006147
+ ;;^UTILITY(U,$J,358.3,10212,0)
+ ;;=H46.9^^44^502^36
+ ;;^UTILITY(U,$J,358.3,10212,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10386,1,3,0)
- ;;=3^HIV Status
- ;;^UTILITY(U,$J,358.3,10386,1,4,0)
- ;;=4^V08.
- ;;^UTILITY(U,$J,358.3,10386,2)
- ;;=HIV Status^303392
- ;;^UTILITY(U,$J,358.3,10387,0)
- ;;=130.2^^44^565^87
- ;;^UTILITY(U,$J,358.3,10387,1,0)
+ ;;^UTILITY(U,$J,358.3,10212,1,3,0)
+ ;;=3^Optic Neuritis,Unspec
+ ;;^UTILITY(U,$J,358.3,10212,1,4,0)
+ ;;=4^H46.9
+ ;;^UTILITY(U,$J,358.3,10212,2)
+ ;;=^5006104
+ ;;^UTILITY(U,$J,358.3,10213,0)
+ ;;=H47.011^^44^502^28
+ ;;^UTILITY(U,$J,358.3,10213,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10387,1,3,0)
- ;;=3^Toxoplasmosis Retinitis
- ;;^UTILITY(U,$J,358.3,10387,1,4,0)
- ;;=4^130.2
- ;;^UTILITY(U,$J,358.3,10387,2)
- ;;=Toxoplasmosis Retinitis^266947
- ;;^UTILITY(U,$J,358.3,10388,0)
- ;;=128.0^^44^565^86
- ;;^UTILITY(U,$J,358.3,10388,1,0)
+ ;;^UTILITY(U,$J,358.3,10213,1,3,0)
+ ;;=3^Ischemic Optic Neuropathy,Right Eye
+ ;;^UTILITY(U,$J,358.3,10213,1,4,0)
+ ;;=4^H47.011
+ ;;^UTILITY(U,$J,358.3,10213,2)
+ ;;=^5006105
+ ;;^UTILITY(U,$J,358.3,10214,0)
+ ;;=H47.012^^44^502^27
+ ;;^UTILITY(U,$J,358.3,10214,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10388,1,3,0)
- ;;=3^Toxocariasis
- ;;^UTILITY(U,$J,358.3,10388,1,4,0)
- ;;=4^128.0
- ;;^UTILITY(U,$J,358.3,10388,2)
- ;;=Toxocariasis^120683
- ;;^UTILITY(U,$J,358.3,10389,0)
- ;;=054.42^^44^565^48
- ;;^UTILITY(U,$J,358.3,10389,1,0)
+ ;;^UTILITY(U,$J,358.3,10214,1,3,0)
+ ;;=3^Ischemic Optic Neuropathy,Left Eye
+ ;;^UTILITY(U,$J,358.3,10214,1,4,0)
+ ;;=4^H47.012
+ ;;^UTILITY(U,$J,358.3,10214,2)
+ ;;=^5006106
+ ;;^UTILITY(U,$J,358.3,10215,0)
+ ;;=H49.881^^44^502^40
+ ;;^UTILITY(U,$J,358.3,10215,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10389,1,3,0)
- ;;=3^Dendritic Keratitis
- ;;^UTILITY(U,$J,358.3,10389,1,4,0)
- ;;=4^054.42
- ;;^UTILITY(U,$J,358.3,10389,2)
- ;;=Dendritic Keratitis^66763
- ;;^UTILITY(U,$J,358.3,10390,0)
- ;;=370.01^^44^565^65
- ;;^UTILITY(U,$J,358.3,10390,1,0)
+ ;;^UTILITY(U,$J,358.3,10215,1,3,0)
+ ;;=3^Paralytic Strabismus,Right Eye
+ ;;^UTILITY(U,$J,358.3,10215,1,4,0)
+ ;;=4^H49.881
+ ;;^UTILITY(U,$J,358.3,10215,2)
+ ;;=^5006203
+ ;;^UTILITY(U,$J,358.3,10216,0)
+ ;;=H49.882^^44^502^39
+ ;;^UTILITY(U,$J,358.3,10216,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10390,1,3,0)
- ;;=3^Marginal Corneal Ulcer
- ;;^UTILITY(U,$J,358.3,10390,1,4,0)
- ;;=4^370.01
- ;;^UTILITY(U,$J,358.3,10390,2)
- ;;=Marginal Corneal Ulcer^268908
- ;;^UTILITY(U,$J,358.3,10391,0)
- ;;=375.30^^44^565^47
- ;;^UTILITY(U,$J,358.3,10391,1,0)
+ ;;^UTILITY(U,$J,358.3,10216,1,3,0)
+ ;;=3^Paralytic Strabismus,Left Eye
+ ;;^UTILITY(U,$J,358.3,10216,1,4,0)
+ ;;=4^H49.882
+ ;;^UTILITY(U,$J,358.3,10216,2)
+ ;;=^5006204
+ ;;^UTILITY(U,$J,358.3,10217,0)
+ ;;=H49.01^^44^502^50
+ ;;^UTILITY(U,$J,358.3,10217,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10391,1,3,0)
- ;;=3^Dacrocystitis
- ;;^UTILITY(U,$J,358.3,10391,1,4,0)
- ;;=4^375.30
- ;;^UTILITY(U,$J,358.3,10391,2)
- ;;=Dacrocystitis^30880
- ;;^UTILITY(U,$J,358.3,10392,0)
- ;;=376.01^^44^565^69
- ;;^UTILITY(U,$J,358.3,10392,1,0)
+ ;;^UTILITY(U,$J,358.3,10217,1,3,0)
+ ;;=3^Third Oculomotor Nerve Palsy,Right Eye
+ ;;^UTILITY(U,$J,358.3,10217,1,4,0)
+ ;;=4^H49.01
+ ;;^UTILITY(U,$J,358.3,10217,2)
+ ;;=^5006180
+ ;;^UTILITY(U,$J,358.3,10218,0)
+ ;;=H49.02^^44^502^49
+ ;;^UTILITY(U,$J,358.3,10218,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10392,1,3,0)
- ;;=3^Orbital Cellulitis
- ;;^UTILITY(U,$J,358.3,10392,1,4,0)
- ;;=4^376.01
- ;;^UTILITY(U,$J,358.3,10392,2)
- ;;=Orbital Cellulitis^259068
- ;;^UTILITY(U,$J,358.3,10393,0)
- ;;=682.0^^44^565^6
- ;;^UTILITY(U,$J,358.3,10393,1,0)
+ ;;^UTILITY(U,$J,358.3,10218,1,3,0)
+ ;;=3^Third Oculomotor Nerve Palsy,Left Eye
+ ;;^UTILITY(U,$J,358.3,10218,1,4,0)
+ ;;=4^H49.02
+ ;;^UTILITY(U,$J,358.3,10218,2)
+ ;;=^5006181
+ ;;^UTILITY(U,$J,358.3,10219,0)
+ ;;=H49.11^^44^502^21
+ ;;^UTILITY(U,$J,358.3,10219,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10393,1,3,0)
- ;;=3^Cellulitis of Face
- ;;^UTILITY(U,$J,358.3,10393,1,4,0)
- ;;=4^682.0
- ;;^UTILITY(U,$J,358.3,10393,2)
- ;;=Cellulitis of Face^271888
- ;;^UTILITY(U,$J,358.3,10394,0)
- ;;=473.9^^44^565^84
- ;;^UTILITY(U,$J,358.3,10394,1,0)
+ ;;^UTILITY(U,$J,358.3,10219,1,3,0)
+ ;;=3^Fourth Trochlear Nerve Palsy,Right Eye
+ ;;^UTILITY(U,$J,358.3,10219,1,4,0)
+ ;;=4^H49.11
+ ;;^UTILITY(U,$J,358.3,10219,2)
+ ;;=^5006184
+ ;;^UTILITY(U,$J,358.3,10220,0)
+ ;;=H49.12^^44^502^20
+ ;;^UTILITY(U,$J,358.3,10220,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10394,1,3,0)
- ;;=3^Sinusitis,Unspec
- ;;^UTILITY(U,$J,358.3,10394,1,4,0)
- ;;=4^473.9
- ;;^UTILITY(U,$J,358.3,10394,2)
- ;;=Sinusitis^123985
- ;;^UTILITY(U,$J,358.3,10395,0)
- ;;=017.30^^44^565^90
- ;;^UTILITY(U,$J,358.3,10395,1,0)
+ ;;^UTILITY(U,$J,358.3,10220,1,3,0)
+ ;;=3^Fourth Trochlear Nerve Palsy,Left Eye
+ ;;^UTILITY(U,$J,358.3,10220,1,4,0)
+ ;;=4^H49.12
+ ;;^UTILITY(U,$J,358.3,10220,2)
+ ;;=^5006185
+ ;;^UTILITY(U,$J,358.3,10221,0)
+ ;;=H49.21^^44^502^46
+ ;;^UTILITY(U,$J,358.3,10221,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10395,1,3,0)
- ;;=3^Tuberculosis,Eye
- ;;^UTILITY(U,$J,358.3,10395,1,4,0)
- ;;=4^017.30
- ;;^UTILITY(U,$J,358.3,10395,2)
- ;;=^122722
- ;;^UTILITY(U,$J,358.3,10396,0)
- ;;=076.9^^44^565^88
- ;;^UTILITY(U,$J,358.3,10396,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10396,1,3,0)
- ;;=3^Trachoma,Unspec
- ;;^UTILITY(U,$J,358.3,10396,1,4,0)
- ;;=4^076.9
- ;;^UTILITY(U,$J,358.3,10396,2)
- ;;=^120805
- ;;^UTILITY(U,$J,358.3,10397,0)
- ;;=077.0^^44^565^31
- ;;^UTILITY(U,$J,358.3,10397,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10221,1,3,0)
+ ;;=3^Sixth Abducent Nerve Palsy,Right Eye
+ ;;^UTILITY(U,$J,358.3,10221,1,4,0)
+ ;;=4^H49.21
+ ;;^UTILITY(U,$J,358.3,10221,2)
+ ;;=^5006188
+ ;;^UTILITY(U,$J,358.3,10222,0)
+ ;;=H49.22^^44^502^45

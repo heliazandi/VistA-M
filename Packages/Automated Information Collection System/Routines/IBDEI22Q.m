@@ -1,146 +1,122 @@
-IBDEI22Q ; ; 06-AUG-2015
+IBDEI22Q ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQR(358.5)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.5,44,0)
- ;;=HEADER^62
- ;;^UTILITY(U,$J,358.5,44,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,44,2,1,0)
- ;;=NATIONAL ENT^^B^0^0
- ;;^UTILITY(U,$J,358.5,45,0)
- ;;=HEADER^66
- ;;^UTILITY(U,$J,358.5,45,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,45,2,1,0)
- ;;=NATIONAL EYE^^^0^0
- ;;^UTILITY(U,$J,358.5,46,0)
- ;;=Patient name^67^5
- ;;^UTILITY(U,$J,358.5,46,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,46,2,1,0)
- ;;=Name:^^^1^1^1^7^30^1
- ;;^UTILITY(U,$J,358.5,47,0)
- ;;=SSN^67^6
- ;;^UTILITY(U,$J,358.5,47,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,47,2,1,0)
- ;;=SSN:^^^39^1^1^44^15^1
- ;;^UTILITY(U,$J,358.5,48,0)
- ;;=Age^67^7
- ;;^UTILITY(U,$J,358.5,48,2,0)
- ;;=^358.52^2^2
- ;;^UTILITY(U,$J,358.5,48,2,1,0)
- ;;=DOB:^^^60^1^1^65^12^1
- ;;^UTILITY(U,$J,358.5,48,2,2,0)
- ;;=Age:^^^78^1^1^83^3^2
- ;;^UTILITY(U,$J,358.5,49,0)
- ;;=HEADER^70
- ;;^UTILITY(U,$J,358.5,49,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,49,2,1,0)
- ;;=NATIONAL MH MHICM^^^0^0
- ;;^UTILITY(U,$J,358.5,50,0)
- ;;=Patient name^71^5
- ;;^UTILITY(U,$J,358.5,50,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,50,2,1,0)
- ;;=Name:^^^1^1^1^7^30^1
- ;;^UTILITY(U,$J,358.5,51,0)
- ;;=SSN^71^6
- ;;^UTILITY(U,$J,358.5,51,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,51,2,1,0)
- ;;=SSN:^^^39^1^1^44^15^1
- ;;^UTILITY(U,$J,358.5,52,0)
- ;;=Age^71^7
- ;;^UTILITY(U,$J,358.5,52,2,0)
- ;;=^358.52^2^2
- ;;^UTILITY(U,$J,358.5,52,2,1,0)
- ;;=DOB:^^^60^1^1^65^12^1
- ;;^UTILITY(U,$J,358.5,52,2,2,0)
- ;;=Age:^^^78^1^1^83^3^2
- ;;^UTILITY(U,$J,358.5,53,0)
- ;;=HEADER^75
- ;;^UTILITY(U,$J,358.5,53,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,53,2,1,0)
- ;;=NATIONAL MENTAL HEALTH - NURSE^^^0^0
- ;;^UTILITY(U,$J,358.5,54,0)
- ;;=Patient name^76^5
- ;;^UTILITY(U,$J,358.5,54,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,54,2,1,0)
- ;;=Name:^^^1^1^1^7^30^1
- ;;^UTILITY(U,$J,358.5,55,0)
- ;;=SSN^76^6
- ;;^UTILITY(U,$J,358.5,55,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,55,2,1,0)
- ;;=SSN:^^^39^1^1^44^15^1
- ;;^UTILITY(U,$J,358.5,56,0)
- ;;=Age^76^7
- ;;^UTILITY(U,$J,358.5,56,2,0)
- ;;=^358.52^2^2
- ;;^UTILITY(U,$J,358.5,56,2,1,0)
- ;;=DOB:^^^60^1^1^65^12^1
- ;;^UTILITY(U,$J,358.5,56,2,2,0)
- ;;=Age:^^^78^1^1^83^3^2
- ;;^UTILITY(U,$J,358.5,57,0)
- ;;=HEADER^79
- ;;^UTILITY(U,$J,358.5,57,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,57,2,1,0)
- ;;=NATIONAL MENTAL HEALTH CLINICAL PHARMACIST^^B^0^0
- ;;^UTILITY(U,$J,358.5,58,0)
- ;;=Patient name^80^5
- ;;^UTILITY(U,$J,358.5,58,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,58,2,1,0)
- ;;=Name:^^^1^1^1^7^30^1
- ;;^UTILITY(U,$J,358.5,59,0)
- ;;=SSN^80^6
- ;;^UTILITY(U,$J,358.5,59,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,59,2,1,0)
- ;;=SSN:^^^39^1^1^44^15^1
- ;;^UTILITY(U,$J,358.5,60,0)
- ;;=Age^80^7
- ;;^UTILITY(U,$J,358.5,60,2,0)
- ;;=^358.52^2^2
- ;;^UTILITY(U,$J,358.5,60,2,1,0)
- ;;=DOB:^^^60^1^1^65^12^1
- ;;^UTILITY(U,$J,358.5,60,2,2,0)
- ;;=Age:^^^78^1^1^83^3^2
- ;;^UTILITY(U,$J,358.5,61,0)
- ;;=HEADER^84
- ;;^UTILITY(U,$J,358.5,61,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,61,2,1,0)
- ;;=NATIONAL MOVE!^^^0^0
- ;;^UTILITY(U,$J,358.5,62,0)
- ;;=Patient name^87^5
- ;;^UTILITY(U,$J,358.5,62,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,62,2,1,0)
- ;;=Name:^^^1^1^1^7^30^1
- ;;^UTILITY(U,$J,358.5,63,0)
- ;;=SSN^87^6
- ;;^UTILITY(U,$J,358.5,63,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,63,2,1,0)
- ;;=SSN:^^^39^1^1^44^15^1
- ;;^UTILITY(U,$J,358.5,64,0)
- ;;=Age^87^7
- ;;^UTILITY(U,$J,358.5,64,2,0)
- ;;=^358.52^2^2
- ;;^UTILITY(U,$J,358.5,64,2,1,0)
- ;;=DOB:^^^60^1^1^65^12^1
- ;;^UTILITY(U,$J,358.5,64,2,2,0)
- ;;=Age:^^^78^1^1^83^3^2
- ;;^UTILITY(U,$J,358.5,65,0)
- ;;=HEADER^91
- ;;^UTILITY(U,$J,358.5,65,2,0)
- ;;=^358.52^1^1
- ;;^UTILITY(U,$J,358.5,65,2,1,0)
- ;;=NATIONAL NEUROLOGY^^^0^0
+ ;;^UTILITY(U,$J,358.3,35165,1,4,0)
+ ;;=4^Y36.6X0A
+ ;;^UTILITY(U,$J,358.3,35165,2)
+ ;;=^5061775
+ ;;^UTILITY(U,$J,358.3,35166,0)
+ ;;=Y36.6X0D^^131^1699^115
+ ;;^UTILITY(U,$J,358.3,35166,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35166,1,3,0)
+ ;;=3^War Op Inv Biological Weapons,Milt,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,35166,1,4,0)
+ ;;=4^Y36.6X0D
+ ;;^UTILITY(U,$J,358.3,35166,2)
+ ;;=^5061776
+ ;;^UTILITY(U,$J,358.3,35167,0)
+ ;;=Y36.7X0A^^131^1699^128
+ ;;^UTILITY(U,$J,358.3,35167,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35167,1,3,0)
+ ;;=3^War Op w/ Chem Weapons/Unconvtl Warfare,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,35167,1,4,0)
+ ;;=4^Y36.7X0A
+ ;;^UTILITY(U,$J,358.3,35167,2)
+ ;;=^5061781
+ ;;^UTILITY(U,$J,358.3,35168,0)
+ ;;=Y36.7X0D^^131^1699^129
+ ;;^UTILITY(U,$J,358.3,35168,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35168,1,3,0)
+ ;;=3^War Op w/ Chem Weapons/Unconvtl Warfare,Milt,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,35168,1,4,0)
+ ;;=4^Y36.7X0D
+ ;;^UTILITY(U,$J,358.3,35168,2)
+ ;;=^5061782
+ ;;^UTILITY(U,$J,358.3,35169,0)
+ ;;=Y36.810A^^131^1699^22
+ ;;^UTILITY(U,$J,358.3,35169,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35169,1,3,0)
+ ;;=3^Explosn of Mine Placed During War Op but Expld Aft,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,35169,1,4,0)
+ ;;=4^Y36.810A
+ ;;^UTILITY(U,$J,358.3,35169,2)
+ ;;=^5061787
+ ;;^UTILITY(U,$J,358.3,35170,0)
+ ;;=Y36.810D^^131^1699^23
+ ;;^UTILITY(U,$J,358.3,35170,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35170,1,3,0)
+ ;;=3^Explosn of Mine Placed During War Op but Expld Aft,Milt,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,35170,1,4,0)
+ ;;=4^Y36.810D
+ ;;^UTILITY(U,$J,358.3,35170,2)
+ ;;=^5061788
+ ;;^UTILITY(U,$J,358.3,35171,0)
+ ;;=Y36.820A^^131^1699^19
+ ;;^UTILITY(U,$J,358.3,35171,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35171,1,3,0)
+ ;;=3^Explosn of Bomb Placed During War Op But Expld Aft,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,35171,1,4,0)
+ ;;=4^Y36.820A
+ ;;^UTILITY(U,$J,358.3,35171,2)
+ ;;=^5061793
+ ;;^UTILITY(U,$J,358.3,35172,0)
+ ;;=Y36.820D^^131^1699^20
+ ;;^UTILITY(U,$J,358.3,35172,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35172,1,3,0)
+ ;;=3^Explosn of Bomb Placed During War Op But Expld Aft,Milt,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,35172,1,4,0)
+ ;;=4^Y36.820D
+ ;;^UTILITY(U,$J,358.3,35172,2)
+ ;;=^5061794
+ ;;^UTILITY(U,$J,358.3,35173,0)
+ ;;=Y37.200A^^131^1699^91
+ ;;^UTILITY(U,$J,358.3,35173,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35173,1,3,0)
+ ;;=3^Miltary Op Inv Explosion/Fragments,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,35173,1,4,0)
+ ;;=4^Y37.200A
+ ;;^UTILITY(U,$J,358.3,35173,2)
+ ;;=^5137997
+ ;;^UTILITY(U,$J,358.3,35174,0)
+ ;;=Y37.200D^^131^1699^92
+ ;;^UTILITY(U,$J,358.3,35174,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35174,1,3,0)
+ ;;=3^Miltary Op Inv Explosion/Fragments,Milt,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,35174,1,4,0)
+ ;;=4^Y37.200D
+ ;;^UTILITY(U,$J,358.3,35174,2)
+ ;;=^5137999
+ ;;^UTILITY(U,$J,358.3,35175,0)
+ ;;=X00.1XXA^^131^1699^13
+ ;;^UTILITY(U,$J,358.3,35175,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35175,1,3,0)
+ ;;=3^Exp to Smoke in Uncontrolled Bldg Fire,Init Encntr
+ ;;^UTILITY(U,$J,358.3,35175,1,4,0)
+ ;;=4^X00.1XXA
+ ;;^UTILITY(U,$J,358.3,35175,2)
+ ;;=^5060664
+ ;;^UTILITY(U,$J,358.3,35176,0)
+ ;;=X00.1XXD^^131^1699^14
+ ;;^UTILITY(U,$J,358.3,35176,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35176,1,3,0)
+ ;;=3^Exp to Smoke in Uncontrolled Bldg Fire,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,35176,1,4,0)
+ ;;=4^X00.1XXD
+ ;;^UTILITY(U,$J,358.3,35176,2)
+ ;;=^5060665
+ ;;^UTILITY(U,$J,358.3,35177,0)
+ ;;=Y36.820S^^131^1699^21
+ ;;^UTILITY(U,$J,358.3,35177,1,0)
+ ;;=^358.31IA^4^2

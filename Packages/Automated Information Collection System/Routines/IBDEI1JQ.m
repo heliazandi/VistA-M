@@ -1,136 +1,124 @@
-IBDEI1JQ ; ; 06-AUG-2015
+IBDEI1JQ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,27450,1,4,0)
- ;;=4^257.2
- ;;^UTILITY(U,$J,358.3,27450,1,5,0)
- ;;=5^Hypogonadism,Male
- ;;^UTILITY(U,$J,358.3,27450,2)
- ;;=^88213
- ;;^UTILITY(U,$J,358.3,27451,0)
- ;;=253.2^^162^1782^33
- ;;^UTILITY(U,$J,358.3,27451,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27451,1,4,0)
- ;;=4^253.2
- ;;^UTILITY(U,$J,358.3,27451,1,5,0)
- ;;=5^Hypopituitarism
- ;;^UTILITY(U,$J,358.3,27451,2)
- ;;=^60686
- ;;^UTILITY(U,$J,358.3,27452,0)
- ;;=733.00^^162^1782^43
- ;;^UTILITY(U,$J,358.3,27452,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27452,1,4,0)
- ;;=4^733.00
- ;;^UTILITY(U,$J,358.3,27452,1,5,0)
- ;;=5^Osteoporosis NOS
- ;;^UTILITY(U,$J,358.3,27452,2)
- ;;=^87159
- ;;^UTILITY(U,$J,358.3,27453,0)
- ;;=278.00^^162^1782^40
- ;;^UTILITY(U,$J,358.3,27453,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27453,1,4,0)
- ;;=4^278.00
- ;;^UTILITY(U,$J,358.3,27453,1,5,0)
- ;;=5^Obesity
- ;;^UTILITY(U,$J,358.3,27453,2)
- ;;=^84823
- ;;^UTILITY(U,$J,358.3,27454,0)
- ;;=278.01^^162^1782^39
- ;;^UTILITY(U,$J,358.3,27454,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27454,1,4,0)
- ;;=4^278.01
- ;;^UTILITY(U,$J,358.3,27454,1,5,0)
- ;;=5^Morbid Obesity
- ;;^UTILITY(U,$J,358.3,27454,2)
- ;;=^84844
- ;;^UTILITY(U,$J,358.3,27455,0)
- ;;=250.80^^162^1782^4
- ;;^UTILITY(U,$J,358.3,27455,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27455,1,4,0)
- ;;=4^250.80
- ;;^UTILITY(U,$J,358.3,27455,1,5,0)
- ;;=5^DM Type II w/ LE Ulcer
- ;;^UTILITY(U,$J,358.3,27455,2)
- ;;=DM Type II with LE Ulcer^267846^707.10
- ;;^UTILITY(U,$J,358.3,27456,0)
- ;;=250.00^^162^1782^9
- ;;^UTILITY(U,$J,358.3,27456,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27456,1,4,0)
- ;;=4^250.00
- ;;^UTILITY(U,$J,358.3,27456,1,5,0)
- ;;=5^DM Type II w/o Complications
- ;;^UTILITY(U,$J,358.3,27456,2)
- ;;=^33605
- ;;^UTILITY(U,$J,358.3,27457,0)
- ;;=250.40^^162^1782^5
- ;;^UTILITY(U,$J,358.3,27457,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27457,1,4,0)
- ;;=4^250.40
- ;;^UTILITY(U,$J,358.3,27457,1,5,0)
- ;;=5^DM Type II w/ Nephropathy
- ;;^UTILITY(U,$J,358.3,27457,2)
- ;;=^267837^583.81
- ;;^UTILITY(U,$J,358.3,27458,0)
- ;;=250.50^^162^1782^7
- ;;^UTILITY(U,$J,358.3,27458,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27458,1,4,0)
- ;;=4^250.50
- ;;^UTILITY(U,$J,358.3,27458,1,5,0)
- ;;=5^DM Type II w/ PDR
- ;;^UTILITY(U,$J,358.3,27458,2)
- ;;=DM Type II w/ PDR^267839^362.02
- ;;^UTILITY(U,$J,358.3,27459,0)
- ;;=250.60^^162^1782^6
- ;;^UTILITY(U,$J,358.3,27459,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27459,1,4,0)
- ;;=4^250.60
- ;;^UTILITY(U,$J,358.3,27459,1,5,0)
- ;;=5^DM Type II w/ Neuropathy
- ;;^UTILITY(U,$J,358.3,27459,2)
- ;;=^267841^357.2
- ;;^UTILITY(U,$J,358.3,27460,0)
- ;;=250.70^^162^1782^8
- ;;^UTILITY(U,$J,358.3,27460,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27460,1,4,0)
- ;;=4^250.70
- ;;^UTILITY(U,$J,358.3,27460,1,5,0)
- ;;=5^DM Type II w/ Peripheral Vasc Dis
- ;;^UTILITY(U,$J,358.3,27460,2)
- ;;=^267843^443.81
- ;;^UTILITY(U,$J,358.3,27461,0)
- ;;=250.01^^162^1782^3
- ;;^UTILITY(U,$J,358.3,27461,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27461,1,4,0)
- ;;=4^250.01
- ;;^UTILITY(U,$J,358.3,27461,1,5,0)
- ;;=5^DM Type I w/o Complications
- ;;^UTILITY(U,$J,358.3,27461,2)
- ;;=^33586
- ;;^UTILITY(U,$J,358.3,27462,0)
- ;;=272.0^^162^1782^22
- ;;^UTILITY(U,$J,358.3,27462,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27462,1,4,0)
- ;;=4^272.0
- ;;^UTILITY(U,$J,358.3,27462,1,5,0)
- ;;=5^Hypercholesterolemia, Pure
- ;;^UTILITY(U,$J,358.3,27462,2)
- ;;=Hypercholesterolemia, Pure^59973
- ;;^UTILITY(U,$J,358.3,27463,0)
- ;;=272.1^^162^1782^27
- ;;^UTILITY(U,$J,358.3,27463,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27463,1,4,0)
- ;;=4^272.1
+ ;;^UTILITY(U,$J,358.3,26232,0)
+ ;;=F16.929^^98^1238^15
+ ;;^UTILITY(U,$J,358.3,26232,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26232,1,3,0)
+ ;;=3^Hallucinogen Intoxication w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26232,1,4,0)
+ ;;=4^F16.929
+ ;;^UTILITY(U,$J,358.3,26232,2)
+ ;;=^5003352
+ ;;^UTILITY(U,$J,358.3,26233,0)
+ ;;=F16.180^^98^1238^1
+ ;;^UTILITY(U,$J,358.3,26233,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26233,1,3,0)
+ ;;=3^Hallucinogen Induced Anxiety Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26233,1,4,0)
+ ;;=4^F16.180
+ ;;^UTILITY(U,$J,358.3,26233,2)
+ ;;=^5003332
+ ;;^UTILITY(U,$J,358.3,26234,0)
+ ;;=F16.280^^98^1238^2
+ ;;^UTILITY(U,$J,358.3,26234,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26234,1,3,0)
+ ;;=3^Hallucinogen Induced Anxiety Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26234,1,4,0)
+ ;;=4^F16.280
+ ;;^UTILITY(U,$J,358.3,26234,2)
+ ;;=^5003345
+ ;;^UTILITY(U,$J,358.3,26235,0)
+ ;;=F16.980^^98^1238^3
+ ;;^UTILITY(U,$J,358.3,26235,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26235,1,3,0)
+ ;;=3^Hallucinogen Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26235,1,4,0)
+ ;;=4^F16.980
+ ;;^UTILITY(U,$J,358.3,26235,2)
+ ;;=^5003357
+ ;;^UTILITY(U,$J,358.3,26236,0)
+ ;;=F16.14^^98^1238^4
+ ;;^UTILITY(U,$J,358.3,26236,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26236,1,3,0)
+ ;;=3^Hallucinogen Induced Bipolar Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26236,1,4,0)
+ ;;=4^F16.14
+ ;;^UTILITY(U,$J,358.3,26236,2)
+ ;;=^5003328
+ ;;^UTILITY(U,$J,358.3,26237,0)
+ ;;=F16.24^^98^1238^5
+ ;;^UTILITY(U,$J,358.3,26237,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26237,1,3,0)
+ ;;=3^Hallucinogen Induced Bipolar Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26237,1,4,0)
+ ;;=4^F16.24
+ ;;^UTILITY(U,$J,358.3,26237,2)
+ ;;=^5003341
+ ;;^UTILITY(U,$J,358.3,26238,0)
+ ;;=F16.94^^98^1238^6
+ ;;^UTILITY(U,$J,358.3,26238,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26238,1,3,0)
+ ;;=3^Hallucinogen Induced Bipolar Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26238,1,4,0)
+ ;;=4^F16.94
+ ;;^UTILITY(U,$J,358.3,26238,2)
+ ;;=^5003353
+ ;;^UTILITY(U,$J,358.3,26239,0)
+ ;;=F16.159^^98^1238^7
+ ;;^UTILITY(U,$J,358.3,26239,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26239,1,3,0)
+ ;;=3^Hallucinogen Induced Psychotic Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26239,1,4,0)
+ ;;=4^F16.159
+ ;;^UTILITY(U,$J,358.3,26239,2)
+ ;;=^5003331
+ ;;^UTILITY(U,$J,358.3,26240,0)
+ ;;=F16.259^^98^1238^8
+ ;;^UTILITY(U,$J,358.3,26240,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26240,1,3,0)
+ ;;=3^Hallucinogen Induced Psychotic Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26240,1,4,0)
+ ;;=4^F16.259
+ ;;^UTILITY(U,$J,358.3,26240,2)
+ ;;=^5003344
+ ;;^UTILITY(U,$J,358.3,26241,0)
+ ;;=F16.959^^98^1238^9
+ ;;^UTILITY(U,$J,358.3,26241,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26241,1,3,0)
+ ;;=3^Hallucinogen Induced Psychotic Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26241,1,4,0)
+ ;;=4^F16.959
+ ;;^UTILITY(U,$J,358.3,26241,2)
+ ;;=^5003356
+ ;;^UTILITY(U,$J,358.3,26242,0)
+ ;;=F16.99^^98^1238^20
+ ;;^UTILITY(U,$J,358.3,26242,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26242,1,3,0)
+ ;;=3^Phencyclidine Use Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,26242,1,4,0)
+ ;;=4^F16.99
+ ;;^UTILITY(U,$J,358.3,26242,2)
+ ;;=^5133359
+ ;;^UTILITY(U,$J,358.3,26243,0)
+ ;;=F11.10^^98^1239^23
+ ;;^UTILITY(U,$J,358.3,26243,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26243,1,3,0)
+ ;;=3^Opioid Use Disorder,Mild
+ ;;^UTILITY(U,$J,358.3,26243,1,4,0)
+ ;;=4^F11.10
+ ;;^UTILITY(U,$J,358.3,26243,2)
+ ;;=^5003114

@@ -1,132 +1,136 @@
-IBDEI1U7 ; ; 06-AUG-2015
+IBDEI1U7 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32354,1,0)
+ ;;^UTILITY(U,$J,358.3,31191,1,4,0)
+ ;;=4^F18.959
+ ;;^UTILITY(U,$J,358.3,31191,2)
+ ;;=^5003412
+ ;;^UTILITY(U,$J,358.3,31192,0)
+ ;;=F18.99^^123^1565^20
+ ;;^UTILITY(U,$J,358.3,31192,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32354,1,3,0)
- ;;=3^Iodine-Deficiency Related Multinodular (Endemic) Goiter
- ;;^UTILITY(U,$J,358.3,32354,1,4,0)
- ;;=4^E01.1
- ;;^UTILITY(U,$J,358.3,32354,2)
- ;;=^5002465
- ;;^UTILITY(U,$J,358.3,32355,0)
- ;;=E05.00^^182^1984^53
- ;;^UTILITY(U,$J,358.3,32355,1,0)
+ ;;^UTILITY(U,$J,358.3,31192,1,3,0)
+ ;;=3^Inhalant Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,31192,1,4,0)
+ ;;=4^F18.99
+ ;;^UTILITY(U,$J,358.3,31192,2)
+ ;;=^5133360
+ ;;^UTILITY(U,$J,358.3,31193,0)
+ ;;=F70.^^123^1566^1
+ ;;^UTILITY(U,$J,358.3,31193,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32355,1,3,0)
- ;;=3^Thyrotoxicosis w/ Diffuse Goiter w/o Thyrotoxic Crisis
- ;;^UTILITY(U,$J,358.3,32355,1,4,0)
- ;;=4^E05.00
- ;;^UTILITY(U,$J,358.3,32355,2)
- ;;=^5002481
- ;;^UTILITY(U,$J,358.3,32356,0)
- ;;=E05.01^^182^1984^52
- ;;^UTILITY(U,$J,358.3,32356,1,0)
+ ;;^UTILITY(U,$J,358.3,31193,1,3,0)
+ ;;=3^Intellectual Disabilities,Mild
+ ;;^UTILITY(U,$J,358.3,31193,1,4,0)
+ ;;=4^F70.
+ ;;^UTILITY(U,$J,358.3,31193,2)
+ ;;=^5003668
+ ;;^UTILITY(U,$J,358.3,31194,0)
+ ;;=F71.^^123^1566^2
+ ;;^UTILITY(U,$J,358.3,31194,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32356,1,3,0)
- ;;=3^Thyrotoxicosis w/ Diffuse Goiter w/ Thyrotoxic Crisis/Storm
- ;;^UTILITY(U,$J,358.3,32356,1,4,0)
- ;;=4^E05.01
- ;;^UTILITY(U,$J,358.3,32356,2)
- ;;=^5002482
- ;;^UTILITY(U,$J,358.3,32357,0)
- ;;=E05.90^^182^1984^55
- ;;^UTILITY(U,$J,358.3,32357,1,0)
+ ;;^UTILITY(U,$J,358.3,31194,1,3,0)
+ ;;=3^Intellectual Disabilities,Moderate
+ ;;^UTILITY(U,$J,358.3,31194,1,4,0)
+ ;;=4^F71.
+ ;;^UTILITY(U,$J,358.3,31194,2)
+ ;;=^5003669
+ ;;^UTILITY(U,$J,358.3,31195,0)
+ ;;=F72.^^123^1566^3
+ ;;^UTILITY(U,$J,358.3,31195,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32357,1,3,0)
- ;;=3^Thyrotoxicosis,Unspec w/o Thyrotoxic Crisis/Storm
- ;;^UTILITY(U,$J,358.3,32357,1,4,0)
- ;;=4^E05.90
- ;;^UTILITY(U,$J,358.3,32357,2)
- ;;=^5002492
- ;;^UTILITY(U,$J,358.3,32358,0)
- ;;=E05.91^^182^1984^54
- ;;^UTILITY(U,$J,358.3,32358,1,0)
+ ;;^UTILITY(U,$J,358.3,31195,1,3,0)
+ ;;=3^Intellectual Disabilities,Severe
+ ;;^UTILITY(U,$J,358.3,31195,1,4,0)
+ ;;=4^F72.
+ ;;^UTILITY(U,$J,358.3,31195,2)
+ ;;=^5003670
+ ;;^UTILITY(U,$J,358.3,31196,0)
+ ;;=F73.^^123^1566^4
+ ;;^UTILITY(U,$J,358.3,31196,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32358,1,3,0)
- ;;=3^Thyrotoxicosis,Unspec w/ Thyrotoxic Crisis/Storm
- ;;^UTILITY(U,$J,358.3,32358,1,4,0)
- ;;=4^E05.91
- ;;^UTILITY(U,$J,358.3,32358,2)
- ;;=^5002493
- ;;^UTILITY(U,$J,358.3,32359,0)
- ;;=E89.0^^182^1984^47
- ;;^UTILITY(U,$J,358.3,32359,1,0)
+ ;;^UTILITY(U,$J,358.3,31196,1,3,0)
+ ;;=3^Intellectual Disabilities,Profound
+ ;;^UTILITY(U,$J,358.3,31196,1,4,0)
+ ;;=4^F73.
+ ;;^UTILITY(U,$J,358.3,31196,2)
+ ;;=^5003671
+ ;;^UTILITY(U,$J,358.3,31197,0)
+ ;;=F78.^^123^1566^5
+ ;;^UTILITY(U,$J,358.3,31197,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32359,1,3,0)
- ;;=3^Postprocedural Hypothyroidism
- ;;^UTILITY(U,$J,358.3,32359,1,4,0)
- ;;=4^E89.0
- ;;^UTILITY(U,$J,358.3,32359,2)
- ;;=^5003035
- ;;^UTILITY(U,$J,358.3,32360,0)
- ;;=E03.2^^182^1984^31
- ;;^UTILITY(U,$J,358.3,32360,1,0)
+ ;;^UTILITY(U,$J,358.3,31197,1,3,0)
+ ;;=3^Intellectual Disabilities,Oth Specified
+ ;;^UTILITY(U,$J,358.3,31197,1,4,0)
+ ;;=4^F78.
+ ;;^UTILITY(U,$J,358.3,31197,2)
+ ;;=^5003672
+ ;;^UTILITY(U,$J,358.3,31198,0)
+ ;;=F79.^^123^1566^6
+ ;;^UTILITY(U,$J,358.3,31198,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32360,1,3,0)
- ;;=3^Hypothyroidism d/t Meds/Oth Exogenous Substances
- ;;^UTILITY(U,$J,358.3,32360,1,4,0)
- ;;=4^E03.2
- ;;^UTILITY(U,$J,358.3,32360,2)
- ;;=^5002471
- ;;^UTILITY(U,$J,358.3,32361,0)
- ;;=E03.9^^182^1984^32
- ;;^UTILITY(U,$J,358.3,32361,1,0)
+ ;;^UTILITY(U,$J,358.3,31198,1,3,0)
+ ;;=3^Intellectual Disabilities,Unspec
+ ;;^UTILITY(U,$J,358.3,31198,1,4,0)
+ ;;=4^F79.
+ ;;^UTILITY(U,$J,358.3,31198,2)
+ ;;=^5003673
+ ;;^UTILITY(U,$J,358.3,31199,0)
+ ;;=Z00.6^^123^1567^1
+ ;;^UTILITY(U,$J,358.3,31199,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32361,1,3,0)
- ;;=3^Hypothyroidism,Unspec
- ;;^UTILITY(U,$J,358.3,32361,1,4,0)
- ;;=4^E03.9
- ;;^UTILITY(U,$J,358.3,32361,2)
- ;;=^5002476
- ;;^UTILITY(U,$J,358.3,32362,0)
- ;;=E06.0^^182^1984^50
- ;;^UTILITY(U,$J,358.3,32362,1,0)
+ ;;^UTILITY(U,$J,358.3,31199,1,3,0)
+ ;;=3^Exam of Participant of Control in Clinical Research Program
+ ;;^UTILITY(U,$J,358.3,31199,1,4,0)
+ ;;=4^Z00.6
+ ;;^UTILITY(U,$J,358.3,31199,2)
+ ;;=^5062608
+ ;;^UTILITY(U,$J,358.3,31200,0)
+ ;;=F45.22^^123^1568^1
+ ;;^UTILITY(U,$J,358.3,31200,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32362,1,3,0)
- ;;=3^Thyroiditis,Acute
- ;;^UTILITY(U,$J,358.3,32362,1,4,0)
- ;;=4^E06.0
- ;;^UTILITY(U,$J,358.3,32362,2)
- ;;=^2692
- ;;^UTILITY(U,$J,358.3,32363,0)
- ;;=E06.1^^182^1984^51
- ;;^UTILITY(U,$J,358.3,32363,1,0)
+ ;;^UTILITY(U,$J,358.3,31200,1,3,0)
+ ;;=3^Body Dysmorphic Disorder
+ ;;^UTILITY(U,$J,358.3,31200,1,4,0)
+ ;;=4^F45.22
+ ;;^UTILITY(U,$J,358.3,31200,2)
+ ;;=^5003588
+ ;;^UTILITY(U,$J,358.3,31201,0)
+ ;;=F45.20^^123^1568^7
+ ;;^UTILITY(U,$J,358.3,31201,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32363,1,3,0)
- ;;=3^Thyroiditis,Subacute
- ;;^UTILITY(U,$J,358.3,32363,1,4,0)
- ;;=4^E06.1
- ;;^UTILITY(U,$J,358.3,32363,2)
- ;;=^119376
- ;;^UTILITY(U,$J,358.3,32364,0)
- ;;=C73.^^182^1984^36
- ;;^UTILITY(U,$J,358.3,32364,1,0)
+ ;;^UTILITY(U,$J,358.3,31201,1,3,0)
+ ;;=3^Hypochondiacal Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,31201,1,4,0)
+ ;;=4^F45.20
+ ;;^UTILITY(U,$J,358.3,31201,2)
+ ;;=^5003586
+ ;;^UTILITY(U,$J,358.3,31202,0)
+ ;;=F45.21^^123^1568^9
+ ;;^UTILITY(U,$J,358.3,31202,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32364,1,3,0)
- ;;=3^Malig Neop of Thyroid Gland
- ;;^UTILITY(U,$J,358.3,32364,1,4,0)
- ;;=4^C73.
- ;;^UTILITY(U,$J,358.3,32364,2)
- ;;=^267296
- ;;^UTILITY(U,$J,358.3,32365,0)
- ;;=E10.21^^182^1984^9
- ;;^UTILITY(U,$J,358.3,32365,1,0)
+ ;;^UTILITY(U,$J,358.3,31202,1,3,0)
+ ;;=3^Hypochondriasis
+ ;;^UTILITY(U,$J,358.3,31202,1,4,0)
+ ;;=4^F45.21
+ ;;^UTILITY(U,$J,358.3,31202,2)
+ ;;=^5003587
+ ;;^UTILITY(U,$J,358.3,31203,0)
+ ;;=F45.29^^123^1568^8
+ ;;^UTILITY(U,$J,358.3,31203,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32365,1,3,0)
- ;;=3^DM Type 1 w/ Nephropathy
- ;;^UTILITY(U,$J,358.3,32365,1,4,0)
- ;;=4^E10.21
- ;;^UTILITY(U,$J,358.3,32365,2)
- ;;=^5002589
- ;;^UTILITY(U,$J,358.3,32366,0)
- ;;=E10.9^^182^1984^11
- ;;^UTILITY(U,$J,358.3,32366,1,0)
+ ;;^UTILITY(U,$J,358.3,31203,1,3,0)
+ ;;=3^Hypochondriacal Disorders NEC
+ ;;^UTILITY(U,$J,358.3,31203,1,4,0)
+ ;;=4^F45.29
+ ;;^UTILITY(U,$J,358.3,31203,2)
+ ;;=^5003589
+ ;;^UTILITY(U,$J,358.3,31204,0)
+ ;;=F45.8^^123^1568^15
+ ;;^UTILITY(U,$J,358.3,31204,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32366,1,3,0)
- ;;=3^DM Type 1 w/o Complications
- ;;^UTILITY(U,$J,358.3,32366,1,4,0)
- ;;=4^E10.9
- ;;^UTILITY(U,$J,358.3,32366,2)
- ;;=^5002626
+ ;;^UTILITY(U,$J,358.3,31204,1,3,0)
+ ;;=3^Somatoform Disorders NEC
+ ;;^UTILITY(U,$J,358.3,31204,1,4,0)
+ ;;=4^F45.8

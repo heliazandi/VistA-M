@@ -1,134 +1,138 @@
-IBDEI04A ; ; 06-AUG-2015
+IBDEI04A ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1476,2)
- ;;=^5008300
- ;;^UTILITY(U,$J,358.3,1477,0)
- ;;=J84.111^^3^43^11
- ;;^UTILITY(U,$J,358.3,1477,1,0)
+ ;;^UTILITY(U,$J,358.3,1578,2)
+ ;;=^5007134
+ ;;^UTILITY(U,$J,358.3,1579,0)
+ ;;=I20.8^^11^144^1
+ ;;^UTILITY(U,$J,358.3,1579,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1477,1,3,0)
- ;;=3^Idiopathic interstitial pneumonia, not otherwise specified
- ;;^UTILITY(U,$J,358.3,1477,1,4,0)
- ;;=4^J84.111
- ;;^UTILITY(U,$J,358.3,1477,2)
- ;;=^340610
- ;;^UTILITY(U,$J,358.3,1478,0)
- ;;=J84.112^^3^43^13
- ;;^UTILITY(U,$J,358.3,1478,1,0)
+ ;;^UTILITY(U,$J,358.3,1579,1,3,0)
+ ;;=3^Angina Pectoris NEC
+ ;;^UTILITY(U,$J,358.3,1579,1,4,0)
+ ;;=4^I20.8
+ ;;^UTILITY(U,$J,358.3,1579,2)
+ ;;=^5007078
+ ;;^UTILITY(U,$J,358.3,1580,0)
+ ;;=I20.9^^11^144^2
+ ;;^UTILITY(U,$J,358.3,1580,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1478,1,3,0)
- ;;=3^Idiopathic pulmonary fibrosis
- ;;^UTILITY(U,$J,358.3,1478,1,4,0)
- ;;=4^J84.112
- ;;^UTILITY(U,$J,358.3,1478,2)
- ;;=^340534
- ;;^UTILITY(U,$J,358.3,1479,0)
- ;;=J84.113^^3^43^12
- ;;^UTILITY(U,$J,358.3,1479,1,0)
+ ;;^UTILITY(U,$J,358.3,1580,1,3,0)
+ ;;=3^Angina Pectoris,Unspec
+ ;;^UTILITY(U,$J,358.3,1580,1,4,0)
+ ;;=4^I20.9
+ ;;^UTILITY(U,$J,358.3,1580,2)
+ ;;=^5007079
+ ;;^UTILITY(U,$J,358.3,1581,0)
+ ;;=R07.9^^11^144^38
+ ;;^UTILITY(U,$J,358.3,1581,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1479,1,3,0)
- ;;=3^Idiopathic non-specific interstitial pneumonitis
- ;;^UTILITY(U,$J,358.3,1479,1,4,0)
- ;;=4^J84.113
- ;;^UTILITY(U,$J,358.3,1479,2)
- ;;=^340535
- ;;^UTILITY(U,$J,358.3,1480,0)
- ;;=J84.114^^3^43^1
- ;;^UTILITY(U,$J,358.3,1480,1,0)
+ ;;^UTILITY(U,$J,358.3,1581,1,3,0)
+ ;;=3^Chest Pain,Unspec
+ ;;^UTILITY(U,$J,358.3,1581,1,4,0)
+ ;;=4^R07.9
+ ;;^UTILITY(U,$J,358.3,1581,2)
+ ;;=^5019201
+ ;;^UTILITY(U,$J,358.3,1582,0)
+ ;;=R07.2^^11^144^41
+ ;;^UTILITY(U,$J,358.3,1582,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1480,1,3,0)
- ;;=3^Acute interstitial pneumonitis
- ;;^UTILITY(U,$J,358.3,1480,1,4,0)
- ;;=4^J84.114
- ;;^UTILITY(U,$J,358.3,1480,2)
- ;;=^340536
- ;;^UTILITY(U,$J,358.3,1481,0)
- ;;=J84.115^^3^43^21
- ;;^UTILITY(U,$J,358.3,1481,1,0)
+ ;;^UTILITY(U,$J,358.3,1582,1,3,0)
+ ;;=3^Precordial Pain
+ ;;^UTILITY(U,$J,358.3,1582,1,4,0)
+ ;;=4^R07.2
+ ;;^UTILITY(U,$J,358.3,1582,2)
+ ;;=^5019197
+ ;;^UTILITY(U,$J,358.3,1583,0)
+ ;;=R07.1^^11^144^37
+ ;;^UTILITY(U,$J,358.3,1583,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1481,1,3,0)
- ;;=3^Respiratory bronchiolitis interstitial lung disease
- ;;^UTILITY(U,$J,358.3,1481,1,4,0)
- ;;=4^J84.115
- ;;^UTILITY(U,$J,358.3,1481,2)
- ;;=^340537
- ;;^UTILITY(U,$J,358.3,1482,0)
- ;;=J84.2^^3^43^15
- ;;^UTILITY(U,$J,358.3,1482,1,0)
+ ;;^UTILITY(U,$J,358.3,1583,1,3,0)
+ ;;=3^Chest Pain on Breathing
+ ;;^UTILITY(U,$J,358.3,1583,1,4,0)
+ ;;=4^R07.1
+ ;;^UTILITY(U,$J,358.3,1583,2)
+ ;;=^5019196
+ ;;^UTILITY(U,$J,358.3,1584,0)
+ ;;=R07.81^^11^144^40
+ ;;^UTILITY(U,$J,358.3,1584,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1482,1,3,0)
- ;;=3^Lymphoid interstitial pneumonia
- ;;^UTILITY(U,$J,358.3,1482,1,4,0)
- ;;=4^J84.2
- ;;^UTILITY(U,$J,358.3,1482,2)
- ;;=^5008302
- ;;^UTILITY(U,$J,358.3,1483,0)
- ;;=J84.116^^3^43^7
- ;;^UTILITY(U,$J,358.3,1483,1,0)
+ ;;^UTILITY(U,$J,358.3,1584,1,3,0)
+ ;;=3^Pleurodynia
+ ;;^UTILITY(U,$J,358.3,1584,1,4,0)
+ ;;=4^R07.81
+ ;;^UTILITY(U,$J,358.3,1584,2)
+ ;;=^5019198
+ ;;^UTILITY(U,$J,358.3,1585,0)
+ ;;=R07.82^^11^144^39
+ ;;^UTILITY(U,$J,358.3,1585,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1483,1,3,0)
- ;;=3^Cryptogenic organizing pneumonia
- ;;^UTILITY(U,$J,358.3,1483,1,4,0)
- ;;=4^J84.116
- ;;^UTILITY(U,$J,358.3,1483,2)
- ;;=^340539
- ;;^UTILITY(U,$J,358.3,1484,0)
- ;;=J84.117^^3^43^8
- ;;^UTILITY(U,$J,358.3,1484,1,0)
+ ;;^UTILITY(U,$J,358.3,1585,1,3,0)
+ ;;=3^Intercostal Pain
+ ;;^UTILITY(U,$J,358.3,1585,1,4,0)
+ ;;=4^R07.82
+ ;;^UTILITY(U,$J,358.3,1585,2)
+ ;;=^5019199
+ ;;^UTILITY(U,$J,358.3,1586,0)
+ ;;=R07.89^^11^144^36
+ ;;^UTILITY(U,$J,358.3,1586,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1484,1,3,0)
- ;;=3^Desquamative interstitial pneumonia
- ;;^UTILITY(U,$J,358.3,1484,1,4,0)
- ;;=4^J84.117
- ;;^UTILITY(U,$J,358.3,1484,2)
- ;;=^340540
- ;;^UTILITY(U,$J,358.3,1485,0)
- ;;=J84.81^^3^43^14
- ;;^UTILITY(U,$J,358.3,1485,1,0)
+ ;;^UTILITY(U,$J,358.3,1586,1,3,0)
+ ;;=3^Chest Pain NEC
+ ;;^UTILITY(U,$J,358.3,1586,1,4,0)
+ ;;=4^R07.89
+ ;;^UTILITY(U,$J,358.3,1586,2)
+ ;;=^5019200
+ ;;^UTILITY(U,$J,358.3,1587,0)
+ ;;=I26.09^^11^145^47
+ ;;^UTILITY(U,$J,358.3,1587,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1485,1,3,0)
- ;;=3^Lymphangioleiomyomatosis
- ;;^UTILITY(U,$J,358.3,1485,1,4,0)
- ;;=4^J84.81
- ;;^UTILITY(U,$J,358.3,1485,2)
- ;;=^340541
- ;;^UTILITY(U,$J,358.3,1486,0)
- ;;=J84.82^^3^43^2
- ;;^UTILITY(U,$J,358.3,1486,1,0)
+ ;;^UTILITY(U,$J,358.3,1587,1,3,0)
+ ;;=3^Pulmonary Embolism w/ Acute Cor Pulmonale
+ ;;^UTILITY(U,$J,358.3,1587,1,4,0)
+ ;;=4^I26.09
+ ;;^UTILITY(U,$J,358.3,1587,2)
+ ;;=^5007147
+ ;;^UTILITY(U,$J,358.3,1588,0)
+ ;;=I26.90^^11^145^53
+ ;;^UTILITY(U,$J,358.3,1588,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1486,1,3,0)
- ;;=3^Adult pulmonary Langerhans cell histiocytosis
- ;;^UTILITY(U,$J,358.3,1486,1,4,0)
- ;;=4^J84.82
- ;;^UTILITY(U,$J,358.3,1486,2)
- ;;=^340542
- ;;^UTILITY(U,$J,358.3,1487,0)
- ;;=J84.842^^3^43^20
- ;;^UTILITY(U,$J,358.3,1487,1,0)
+ ;;^UTILITY(U,$J,358.3,1588,1,3,0)
+ ;;=3^Septic Pulmonary Embolism w/o Acute Cor Pulmonale
+ ;;^UTILITY(U,$J,358.3,1588,1,4,0)
+ ;;=4^I26.90
+ ;;^UTILITY(U,$J,358.3,1588,2)
+ ;;=^5007148
+ ;;^UTILITY(U,$J,358.3,1589,0)
+ ;;=I26.99^^11^145^48
+ ;;^UTILITY(U,$J,358.3,1589,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1487,1,3,0)
- ;;=3^Pulmonary interstitial glycogenosis
- ;;^UTILITY(U,$J,358.3,1487,1,4,0)
- ;;=4^J84.842
- ;;^UTILITY(U,$J,358.3,1487,2)
- ;;=^340544
- ;;^UTILITY(U,$J,358.3,1488,0)
- ;;=J84.83^^3^43^27
- ;;^UTILITY(U,$J,358.3,1488,1,0)
+ ;;^UTILITY(U,$J,358.3,1589,1,3,0)
+ ;;=3^Pulmonary Embolism w/o Acute Cor Pulmonale NEC
+ ;;^UTILITY(U,$J,358.3,1589,1,4,0)
+ ;;=4^I26.99
+ ;;^UTILITY(U,$J,358.3,1589,2)
+ ;;=^5007150
+ ;;^UTILITY(U,$J,358.3,1590,0)
+ ;;=T80.0XXA^^11^145^3
+ ;;^UTILITY(U,$J,358.3,1590,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1488,1,3,0)
- ;;=3^Surfactant mutations of the lung
- ;;^UTILITY(U,$J,358.3,1488,1,4,0)
- ;;=4^J84.83
- ;;^UTILITY(U,$J,358.3,1488,2)
- ;;=^340545
- ;;^UTILITY(U,$J,358.3,1489,0)
- ;;=J99.^^3^43^23
- ;;^UTILITY(U,$J,358.3,1489,1,0)
+ ;;^UTILITY(U,$J,358.3,1590,1,3,0)
+ ;;=3^Air Embolism Following Infusion/Transfusion/Therapeutic Inj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1590,1,4,0)
+ ;;=4^T80.0XXA
+ ;;^UTILITY(U,$J,358.3,1590,2)
+ ;;=^5054344
+ ;;^UTILITY(U,$J,358.3,1591,0)
+ ;;=T81.718A^^11^145^10
+ ;;^UTILITY(U,$J,358.3,1591,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1489,1,3,0)
- ;;=3^Respiratory disorders in diseases classified elsewhere
- ;;^UTILITY(U,$J,358.3,1489,1,4,0)
- ;;=4^J99.
+ ;;^UTILITY(U,$J,358.3,1591,1,3,0)
+ ;;=3^Complication of Artery Following Procedure NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1591,1,4,0)
+ ;;=4^T81.718A
+ ;;^UTILITY(U,$J,358.3,1591,2)
+ ;;=^5054644
+ ;;^UTILITY(U,$J,358.3,1592,0)
+ ;;=T81.72XA^^11^145^15

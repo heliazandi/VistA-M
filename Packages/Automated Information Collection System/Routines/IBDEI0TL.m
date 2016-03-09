@@ -1,116 +1,132 @@
-IBDEI0TL ; ; 06-AUG-2015
+IBDEI0TL ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14328,0)
- ;;=28292^^75^884^22^^^^1
- ;;^UTILITY(U,$J,358.3,14328,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14328,1,2,0)
- ;;=2^Resection of joint by Keller Type
- ;;^UTILITY(U,$J,358.3,14328,1,3,0)
- ;;=3^28292
- ;;^UTILITY(U,$J,358.3,14329,0)
- ;;=28293^^75^884^25^^^^1
- ;;^UTILITY(U,$J,358.3,14329,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14329,1,2,0)
- ;;=2^Resection of joint with implant
- ;;^UTILITY(U,$J,358.3,14329,1,3,0)
- ;;=3^28293
- ;;^UTILITY(U,$J,358.3,14330,0)
- ;;=28296^^75^884^26^^^^1
- ;;^UTILITY(U,$J,358.3,14330,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14330,1,2,0)
- ;;=2^Resection of joint with metatarsal osteotomy
- ;;^UTILITY(U,$J,358.3,14330,1,3,0)
- ;;=3^28296
- ;;^UTILITY(U,$J,358.3,14331,0)
- ;;=28298^^75^884^24^^^^1
- ;;^UTILITY(U,$J,358.3,14331,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14331,1,2,0)
- ;;=2^Resection of joint by Phalanx Osteotomy
- ;;^UTILITY(U,$J,358.3,14331,1,3,0)
- ;;=3^28298
- ;;^UTILITY(U,$J,358.3,14332,0)
- ;;=28299^^75^884^21^^^^1
- ;;^UTILITY(U,$J,358.3,14332,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14332,1,2,0)
- ;;=2^Resection of joint by Double Osteotomy 
- ;;^UTILITY(U,$J,358.3,14332,1,3,0)
- ;;=3^28299
- ;;^UTILITY(U,$J,358.3,14333,0)
- ;;=28300^^75^884^23^^^^1
- ;;^UTILITY(U,$J,358.3,14333,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14333,1,2,0)
- ;;=2^Resection of joint by Lapidus Type
- ;;^UTILITY(U,$J,358.3,14333,1,3,0)
- ;;=3^28300
- ;;^UTILITY(U,$J,358.3,14334,0)
- ;;=28302^^75^884^13^^^^1
- ;;^UTILITY(U,$J,358.3,14334,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14334,1,2,0)
- ;;=2^Osteotomy; talus
- ;;^UTILITY(U,$J,358.3,14334,1,3,0)
- ;;=3^28302
- ;;^UTILITY(U,$J,358.3,14335,0)
- ;;=28304^^75^884^10^^^^1
- ;;^UTILITY(U,$J,358.3,14335,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14335,1,2,0)
- ;;=2^Osteotomy, tarsal bones, other than calcaneus or talus
- ;;^UTILITY(U,$J,358.3,14335,1,3,0)
- ;;=3^28304
- ;;^UTILITY(U,$J,358.3,14336,0)
- ;;=28306^^75^884^11^^^^1
- ;;^UTILITY(U,$J,358.3,14336,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14336,1,2,0)
- ;;=2^Osteotomy, with or without lengthening, shortening or angular correction, metatarsal; 1st metatarsal
- ;;^UTILITY(U,$J,358.3,14336,1,3,0)
- ;;=3^28306
- ;;^UTILITY(U,$J,358.3,14337,0)
- ;;=28308^^75^884^12^^^^1
- ;;^UTILITY(U,$J,358.3,14337,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14337,1,2,0)
- ;;=2^Osteotomy, with or without lengthening, shortening or angular correction, metatarsal; other than first metatarsal, each
- ;;^UTILITY(U,$J,358.3,14337,1,3,0)
- ;;=3^28308
- ;;^UTILITY(U,$J,358.3,14338,0)
- ;;=28315^^75^884^27^^^^1
- ;;^UTILITY(U,$J,358.3,14338,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14338,1,2,0)
- ;;=2^Sesamoidectomy, first toe
- ;;^UTILITY(U,$J,358.3,14338,1,3,0)
- ;;=3^28315
- ;;^UTILITY(U,$J,358.3,14339,0)
- ;;=28001^^75^885^1^^^^1
- ;;^UTILITY(U,$J,358.3,14339,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14339,1,2,0)
- ;;=2^Incision and Drainage, bursa, foot
- ;;^UTILITY(U,$J,358.3,14339,1,3,0)
- ;;=3^28001
- ;;^UTILITY(U,$J,358.3,14340,0)
- ;;=28002^^75^885^2^^^^1
- ;;^UTILITY(U,$J,358.3,14340,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14340,1,2,0)
- ;;=2^Incision and Drainage below fascia, with/without tendon sheath involvement, foot; single bursal space 
- ;;^UTILITY(U,$J,358.3,14340,1,3,0)
- ;;=3^28002
- ;;^UTILITY(U,$J,358.3,14341,0)
- ;;=28003^^75^885^3^^^^1
- ;;^UTILITY(U,$J,358.3,14341,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14341,1,2,0)
- ;;=2^Incision and Drainage below fascia, with/without tendon sheath involvement, foot; multiple areas 
- ;;^UTILITY(U,$J,358.3,14341,1,3,0)
- ;;=3^28003
+ ;;^UTILITY(U,$J,358.3,13876,1,4,0)
+ ;;=4^G56.21
+ ;;^UTILITY(U,$J,358.3,13876,2)
+ ;;=^5004024
+ ;;^UTILITY(U,$J,358.3,13877,0)
+ ;;=G56.22^^53^599^55
+ ;;^UTILITY(U,$J,358.3,13877,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13877,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,13877,1,4,0)
+ ;;=4^G56.22
+ ;;^UTILITY(U,$J,358.3,13877,2)
+ ;;=^5004025
+ ;;^UTILITY(U,$J,358.3,13878,0)
+ ;;=M26.60^^53^599^180
+ ;;^UTILITY(U,$J,358.3,13878,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13878,1,3,0)
+ ;;=3^Temporomandibular Joint Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,13878,1,4,0)
+ ;;=4^M26.60
+ ;;^UTILITY(U,$J,358.3,13878,2)
+ ;;=^5011714
+ ;;^UTILITY(U,$J,358.3,13879,0)
+ ;;=L40.52^^53^599^137
+ ;;^UTILITY(U,$J,358.3,13879,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13879,1,3,0)
+ ;;=3^Psoriatic Arthritis Mutilans
+ ;;^UTILITY(U,$J,358.3,13879,1,4,0)
+ ;;=4^L40.52
+ ;;^UTILITY(U,$J,358.3,13879,2)
+ ;;=^5009167
+ ;;^UTILITY(U,$J,358.3,13880,0)
+ ;;=L40.53^^53^599^138
+ ;;^UTILITY(U,$J,358.3,13880,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13880,1,3,0)
+ ;;=3^Psoriatic Spondylitis
+ ;;^UTILITY(U,$J,358.3,13880,1,4,0)
+ ;;=4^L40.53
+ ;;^UTILITY(U,$J,358.3,13880,2)
+ ;;=^5009168
+ ;;^UTILITY(U,$J,358.3,13881,0)
+ ;;=M32.9^^53^599^179
+ ;;^UTILITY(U,$J,358.3,13881,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13881,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Unspec
+ ;;^UTILITY(U,$J,358.3,13881,1,4,0)
+ ;;=4^M32.9
+ ;;^UTILITY(U,$J,358.3,13881,2)
+ ;;=^5011761
+ ;;^UTILITY(U,$J,358.3,13882,0)
+ ;;=M32.0^^53^599^175
+ ;;^UTILITY(U,$J,358.3,13882,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13882,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Drug-Induced
+ ;;^UTILITY(U,$J,358.3,13882,1,4,0)
+ ;;=4^M32.0
+ ;;^UTILITY(U,$J,358.3,13882,2)
+ ;;=^5011752
+ ;;^UTILITY(U,$J,358.3,13883,0)
+ ;;=M32.13^^53^599^177
+ ;;^UTILITY(U,$J,358.3,13883,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13883,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Lung Involvement
+ ;;^UTILITY(U,$J,358.3,13883,1,4,0)
+ ;;=4^M32.13
+ ;;^UTILITY(U,$J,358.3,13883,2)
+ ;;=^5011756
+ ;;^UTILITY(U,$J,358.3,13884,0)
+ ;;=M32.14^^53^599^176
+ ;;^UTILITY(U,$J,358.3,13884,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13884,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Glomerular Disease
+ ;;^UTILITY(U,$J,358.3,13884,1,4,0)
+ ;;=4^M32.14
+ ;;^UTILITY(U,$J,358.3,13884,2)
+ ;;=^5011757
+ ;;^UTILITY(U,$J,358.3,13885,0)
+ ;;=M32.12^^53^599^178
+ ;;^UTILITY(U,$J,358.3,13885,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13885,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Pericarditis
+ ;;^UTILITY(U,$J,358.3,13885,1,4,0)
+ ;;=4^M32.12
+ ;;^UTILITY(U,$J,358.3,13885,2)
+ ;;=^5011755
+ ;;^UTILITY(U,$J,358.3,13886,0)
+ ;;=M05.59^^53^599^159
+ ;;^UTILITY(U,$J,358.3,13886,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13886,1,3,0)
+ ;;=3^Rheumatoid Polyneuropathy w/ Rheumatoid Arthritis of Mult Sites
+ ;;^UTILITY(U,$J,358.3,13886,1,4,0)
+ ;;=4^M05.59
+ ;;^UTILITY(U,$J,358.3,13886,2)
+ ;;=^5009976
+ ;;^UTILITY(U,$J,358.3,13887,0)
+ ;;=M05.711^^53^599^153
+ ;;^UTILITY(U,$J,358.3,13887,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13887,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Shoulder
+ ;;^UTILITY(U,$J,358.3,13887,1,4,0)
+ ;;=4^M05.711
+ ;;^UTILITY(U,$J,358.3,13887,2)
+ ;;=^5010001
+ ;;^UTILITY(U,$J,358.3,13888,0)
+ ;;=M05.712^^53^599^146
+ ;;^UTILITY(U,$J,358.3,13888,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13888,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Shoulder
+ ;;^UTILITY(U,$J,358.3,13888,1,4,0)
+ ;;=4^M05.712
+ ;;^UTILITY(U,$J,358.3,13888,2)
+ ;;=^5010002
+ ;;^UTILITY(U,$J,358.3,13889,0)
+ ;;=M05.731^^53^599^154
+ ;;^UTILITY(U,$J,358.3,13889,1,0)
+ ;;=^358.31IA^4^2

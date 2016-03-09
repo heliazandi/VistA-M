@@ -1,132 +1,120 @@
-IBDEI1WG ; ; 06-AUG-2015
+IBDEI1WG ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33404,1,3,0)
- ;;=3^Visual Disturbance,Unspec
- ;;^UTILITY(U,$J,358.3,33404,1,4,0)
- ;;=4^H53.9
- ;;^UTILITY(U,$J,358.3,33404,2)
- ;;=^124001
- ;;^UTILITY(U,$J,358.3,33405,0)
- ;;=K08.101^^182^2004^49
- ;;^UTILITY(U,$J,358.3,33405,1,0)
+ ;;^UTILITY(U,$J,358.3,32242,1,4,0)
+ ;;=4^S82.62XN
+ ;;^UTILITY(U,$J,358.3,32242,2)
+ ;;=^5042338
+ ;;^UTILITY(U,$J,358.3,32243,0)
+ ;;=S82.61XN^^126^1609^46
+ ;;^UTILITY(U,$J,358.3,32243,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33405,1,3,0)
- ;;=3^Complete Loss of Teeth,Unspec,Class I
- ;;^UTILITY(U,$J,358.3,33405,1,4,0)
- ;;=4^K08.101
- ;;^UTILITY(U,$J,358.3,33405,2)
- ;;=^5008406
- ;;^UTILITY(U,$J,358.3,33406,0)
- ;;=K08.102^^182^2004^50
- ;;^UTILITY(U,$J,358.3,33406,1,0)
+ ;;^UTILITY(U,$J,358.3,32243,1,3,0)
+ ;;=3^Disp fx ltrl mall rt fib, subs for opn fx type IIIA/B/C w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32243,1,4,0)
+ ;;=4^S82.61XN
+ ;;^UTILITY(U,$J,358.3,32243,2)
+ ;;=^5042322
+ ;;^UTILITY(U,$J,358.3,32244,0)
+ ;;=S82.62XM^^126^1609^44
+ ;;^UTILITY(U,$J,358.3,32244,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33406,1,3,0)
- ;;=3^Complete Loss of Teeth,Unspec,Class II
- ;;^UTILITY(U,$J,358.3,33406,1,4,0)
- ;;=4^K08.102
- ;;^UTILITY(U,$J,358.3,33406,2)
- ;;=^5008407
- ;;^UTILITY(U,$J,358.3,33407,0)
- ;;=K08.103^^182^2004^51
- ;;^UTILITY(U,$J,358.3,33407,1,0)
+ ;;^UTILITY(U,$J,358.3,32244,1,3,0)
+ ;;=3^Disp fx ltrl mall lft fib, subs for opn fx type I/II w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32244,1,4,0)
+ ;;=4^S82.62XM
+ ;;^UTILITY(U,$J,358.3,32244,2)
+ ;;=^5042337
+ ;;^UTILITY(U,$J,358.3,32245,0)
+ ;;=S82.61XM^^126^1609^47
+ ;;^UTILITY(U,$J,358.3,32245,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33407,1,3,0)
- ;;=3^Complete Loss of Teeth,Unspec,Class III
- ;;^UTILITY(U,$J,358.3,33407,1,4,0)
- ;;=4^K08.103
- ;;^UTILITY(U,$J,358.3,33407,2)
- ;;=^5008408
- ;;^UTILITY(U,$J,358.3,33408,0)
- ;;=K08.104^^182^2004^52
- ;;^UTILITY(U,$J,358.3,33408,1,0)
+ ;;^UTILITY(U,$J,358.3,32245,1,3,0)
+ ;;=3^Disp fx ltrl mall rt fib, subs for opn fx type I/II w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32245,1,4,0)
+ ;;=4^S82.61XM
+ ;;^UTILITY(U,$J,358.3,32245,2)
+ ;;=^5042321
+ ;;^UTILITY(U,$J,358.3,32246,0)
+ ;;=S82.62XK^^126^1609^42
+ ;;^UTILITY(U,$J,358.3,32246,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33408,1,3,0)
- ;;=3^Complete Loss of Teeth,Unspec,Class IV
- ;;^UTILITY(U,$J,358.3,33408,1,4,0)
- ;;=4^K08.104
- ;;^UTILITY(U,$J,358.3,33408,2)
- ;;=^5008409
- ;;^UTILITY(U,$J,358.3,33409,0)
- ;;=K08.109^^182^2004^53
- ;;^UTILITY(U,$J,358.3,33409,1,0)
+ ;;^UTILITY(U,$J,358.3,32246,1,3,0)
+ ;;=3^Disp fx ltrl mall lft fib, subs for clos fx w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32246,1,4,0)
+ ;;=4^S82.62XK
+ ;;^UTILITY(U,$J,358.3,32246,2)
+ ;;=^5042336
+ ;;^UTILITY(U,$J,358.3,32247,0)
+ ;;=S82.61XK^^126^1609^45
+ ;;^UTILITY(U,$J,358.3,32247,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33409,1,3,0)
- ;;=3^Complete Loss of Teeth,Unspec,Class Unspec
- ;;^UTILITY(U,$J,358.3,33409,1,4,0)
- ;;=4^K08.109
- ;;^UTILITY(U,$J,358.3,33409,2)
- ;;=^5008410
- ;;^UTILITY(U,$J,358.3,33410,0)
- ;;=K08.401^^182^2004^127
- ;;^UTILITY(U,$J,358.3,33410,1,0)
+ ;;^UTILITY(U,$J,358.3,32247,1,3,0)
+ ;;=3^Disp fx ltrl mall rt fib, subs for clos fx w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32247,1,4,0)
+ ;;=4^S82.61XK
+ ;;^UTILITY(U,$J,358.3,32247,2)
+ ;;=^5042320
+ ;;^UTILITY(U,$J,358.3,32248,0)
+ ;;=S82.855N^^126^1609^374
+ ;;^UTILITY(U,$J,358.3,32248,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33410,1,3,0)
- ;;=3^Partial Loss of Teeth,Unspec,Class I
- ;;^UTILITY(U,$J,358.3,33410,1,4,0)
- ;;=4^K08.401
- ;;^UTILITY(U,$J,358.3,33410,2)
- ;;=^5008432
- ;;^UTILITY(U,$J,358.3,33411,0)
- ;;=K08.402^^182^2004^128
- ;;^UTILITY(U,$J,358.3,33411,1,0)
+ ;;^UTILITY(U,$J,358.3,32248,1,3,0)
+ ;;=3^Nondisp trimall fx lft lwr leg, subs for opn fx type IIIA/B/C w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32248,1,4,0)
+ ;;=4^S82.855N
+ ;;^UTILITY(U,$J,358.3,32248,2)
+ ;;=^5042650
+ ;;^UTILITY(U,$J,358.3,32249,0)
+ ;;=S82.854N^^126^1609^379
+ ;;^UTILITY(U,$J,358.3,32249,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33411,1,3,0)
- ;;=3^Partial Loss of Teeth,Unspec,Class II
- ;;^UTILITY(U,$J,358.3,33411,1,4,0)
- ;;=4^K08.402
- ;;^UTILITY(U,$J,358.3,33411,2)
- ;;=^5008433
- ;;^UTILITY(U,$J,358.3,33412,0)
- ;;=K08.403^^182^2004^129
- ;;^UTILITY(U,$J,358.3,33412,1,0)
+ ;;^UTILITY(U,$J,358.3,32249,1,3,0)
+ ;;=3^Nondisp trimall fx rt lwr leg, subs for opn fx type IIIA/B/C w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32249,1,4,0)
+ ;;=4^S82.854N
+ ;;^UTILITY(U,$J,358.3,32249,2)
+ ;;=^5042634
+ ;;^UTILITY(U,$J,358.3,32250,0)
+ ;;=S82.855M^^126^1609^375
+ ;;^UTILITY(U,$J,358.3,32250,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33412,1,3,0)
- ;;=3^Partial Loss of Teeth,Unspec,Class III
- ;;^UTILITY(U,$J,358.3,33412,1,4,0)
- ;;=4^K08.403
- ;;^UTILITY(U,$J,358.3,33412,2)
- ;;=^5008434
- ;;^UTILITY(U,$J,358.3,33413,0)
- ;;=K08.404^^182^2004^130
- ;;^UTILITY(U,$J,358.3,33413,1,0)
+ ;;^UTILITY(U,$J,358.3,32250,1,3,0)
+ ;;=3^Nondisp trimall fx lft lwr leg, subs for opn fx type IIIA/B/C w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32250,1,4,0)
+ ;;=4^S82.855M
+ ;;^UTILITY(U,$J,358.3,32250,2)
+ ;;=^5042649
+ ;;^UTILITY(U,$J,358.3,32251,0)
+ ;;=S82.854M^^126^1609^380
+ ;;^UTILITY(U,$J,358.3,32251,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33413,1,3,0)
- ;;=3^Partial Loss of Teeth,Unspec,Class IV
- ;;^UTILITY(U,$J,358.3,33413,1,4,0)
- ;;=4^K08.404
- ;;^UTILITY(U,$J,358.3,33413,2)
- ;;=^5008435
- ;;^UTILITY(U,$J,358.3,33414,0)
- ;;=K08.409^^182^2004^131
- ;;^UTILITY(U,$J,358.3,33414,1,0)
+ ;;^UTILITY(U,$J,358.3,32251,1,3,0)
+ ;;=3^Nondisp trimall fx rt lwr leg, subs for opn fx type IIIA/B/C w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32251,1,4,0)
+ ;;=4^S82.854M
+ ;;^UTILITY(U,$J,358.3,32251,2)
+ ;;=^5042633
+ ;;^UTILITY(U,$J,358.3,32252,0)
+ ;;=S82.855K^^126^1609^376
+ ;;^UTILITY(U,$J,358.3,32252,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33414,1,3,0)
- ;;=3^Partial Loss of Teeth,Unspec,Class Unspec
- ;;^UTILITY(U,$J,358.3,33414,1,4,0)
- ;;=4^K08.409
- ;;^UTILITY(U,$J,358.3,33414,2)
- ;;=^5008436
- ;;^UTILITY(U,$J,358.3,33415,0)
- ;;=N39.42^^182^2004^87
- ;;^UTILITY(U,$J,358.3,33415,1,0)
+ ;;^UTILITY(U,$J,358.3,32252,1,3,0)
+ ;;=3^Nondisp trimall fx lft lwr leg, subs for clos w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32252,1,4,0)
+ ;;=4^S82.855K
+ ;;^UTILITY(U,$J,358.3,32252,2)
+ ;;=^5042648
+ ;;^UTILITY(U,$J,358.3,32253,0)
+ ;;=S82.854K^^126^1609^381
+ ;;^UTILITY(U,$J,358.3,32253,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33415,1,3,0)
- ;;=3^Incontinence w/o Sensory Awareness
- ;;^UTILITY(U,$J,358.3,33415,1,4,0)
- ;;=4^N39.42
- ;;^UTILITY(U,$J,358.3,33415,2)
- ;;=^5015681
- ;;^UTILITY(U,$J,358.3,33416,0)
- ;;=N39.43^^182^2004^137
- ;;^UTILITY(U,$J,358.3,33416,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33416,1,3,0)
- ;;=3^Post-Void Dribbling
- ;;^UTILITY(U,$J,358.3,33416,1,4,0)
- ;;=4^N39.43
- ;;^UTILITY(U,$J,358.3,33416,2)
- ;;=^5015682
- ;;^UTILITY(U,$J,358.3,33417,0)
- ;;=N39.44^^182^2004^117
+ ;;^UTILITY(U,$J,358.3,32253,1,3,0)
+ ;;=3^Nondisp trimall fx rt lwr leg, subs for clos w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32253,1,4,0)
+ ;;=4^S82.854K
+ ;;^UTILITY(U,$J,358.3,32253,2)
+ ;;=^5042632
+ ;;^UTILITY(U,$J,358.3,32254,0)
+ ;;=S82.851N^^126^1609^157

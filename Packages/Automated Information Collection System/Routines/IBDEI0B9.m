@@ -1,146 +1,130 @@
-IBDEI0B9 ; ; 06-AUG-2015
+IBDEI0B9 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,4933,1,5,0)
- ;;=5^Abscess/cellulitis leg
- ;;^UTILITY(U,$J,358.3,4933,2)
- ;;=^271894
- ;;^UTILITY(U,$J,358.3,4934,0)
- ;;=682.1^^25^254^9
- ;;^UTILITY(U,$J,358.3,4934,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4934,1,2,0)
- ;;=2^682.1
- ;;^UTILITY(U,$J,358.3,4934,1,5,0)
- ;;=5^Abscess/cellulitis neck
- ;;^UTILITY(U,$J,358.3,4934,2)
- ;;=^271889
- ;;^UTILITY(U,$J,358.3,4935,0)
- ;;=682.2^^25^254^11
- ;;^UTILITY(U,$J,358.3,4935,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4935,1,2,0)
- ;;=2^682.2
- ;;^UTILITY(U,$J,358.3,4935,1,5,0)
- ;;=5^Abscess/cellulitis trunk
- ;;^UTILITY(U,$J,358.3,4935,2)
- ;;=^271890
- ;;^UTILITY(U,$J,358.3,4936,0)
- ;;=682.9^^25^254^1
- ;;^UTILITY(U,$J,358.3,4936,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4936,1,2,0)
- ;;=2^682.9
- ;;^UTILITY(U,$J,358.3,4936,1,5,0)
- ;;=5^Abscess/cellulitis NOS
- ;;^UTILITY(U,$J,358.3,4936,2)
- ;;=^21160
- ;;^UTILITY(U,$J,358.3,4937,0)
- ;;=681.10^^25^254^10
- ;;^UTILITY(U,$J,358.3,4937,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4937,1,2,0)
- ;;=2^681.10
- ;;^UTILITY(U,$J,358.3,4937,1,5,0)
- ;;=5^Abscess/cellulitis toe
- ;;^UTILITY(U,$J,358.3,4937,2)
- ;;=^271885
- ;;^UTILITY(U,$J,358.3,4938,0)
- ;;=681.00^^25^254^5
- ;;^UTILITY(U,$J,358.3,4938,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4938,1,2,0)
- ;;=2^681.00
- ;;^UTILITY(U,$J,358.3,4938,1,5,0)
- ;;=5^Abscess/cellulitis finger
- ;;^UTILITY(U,$J,358.3,4938,2)
- ;;=^271883
- ;;^UTILITY(U,$J,358.3,4939,0)
- ;;=706.1^^25^255^2
- ;;^UTILITY(U,$J,358.3,4939,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4939,1,2,0)
- ;;=2^706.1
- ;;^UTILITY(U,$J,358.3,4939,1,5,0)
- ;;=5^Vulgaris
- ;;^UTILITY(U,$J,358.3,4939,2)
- ;;=^87239
- ;;^UTILITY(U,$J,358.3,4940,0)
- ;;=695.3^^25^255^1
- ;;^UTILITY(U,$J,358.3,4940,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4940,1,2,0)
- ;;=2^695.3
- ;;^UTILITY(U,$J,358.3,4940,1,5,0)
- ;;=5^Rosacea
- ;;^UTILITY(U,$J,358.3,4940,2)
- ;;=^107114
- ;;^UTILITY(U,$J,358.3,4941,0)
- ;;=704.00^^25^256^4
- ;;^UTILITY(U,$J,358.3,4941,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4941,1,2,0)
- ;;=2^704.00
- ;;^UTILITY(U,$J,358.3,4941,1,5,0)
- ;;=5^Loss Of Hair
- ;;^UTILITY(U,$J,358.3,4941,2)
- ;;=^5078
- ;;^UTILITY(U,$J,358.3,4942,0)
- ;;=704.01^^25^256^1
- ;;^UTILITY(U,$J,358.3,4942,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4942,1,2,0)
- ;;=2^704.01
- ;;^UTILITY(U,$J,358.3,4942,1,5,0)
- ;;=5^Alopecia Areata
- ;;^UTILITY(U,$J,358.3,4942,2)
- ;;=^5095
- ;;^UTILITY(U,$J,358.3,4943,0)
- ;;=704.02^^25^256^2
- ;;^UTILITY(U,$J,358.3,4943,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4943,1,2,0)
- ;;=2^704.02
- ;;^UTILITY(U,$J,358.3,4943,1,5,0)
- ;;=5^Alopecia, Telogen Effluvium
- ;;^UTILITY(U,$J,358.3,4943,2)
- ;;=^295751
- ;;^UTILITY(U,$J,358.3,4944,0)
- ;;=704.9^^25^256^3
- ;;^UTILITY(U,$J,358.3,4944,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4944,1,2,0)
- ;;=2^704.9
- ;;^UTILITY(U,$J,358.3,4944,1,5,0)
- ;;=5^Hair Disease NOS
- ;;^UTILITY(U,$J,358.3,4944,2)
- ;;=^53658
- ;;^UTILITY(U,$J,358.3,4945,0)
- ;;=692.71^^25^257^5
- ;;^UTILITY(U,$J,358.3,4945,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4945,1,2,0)
- ;;=2^692.71
- ;;^UTILITY(U,$J,358.3,4945,1,5,0)
- ;;=5^Sunburn, First Degree
- ;;^UTILITY(U,$J,358.3,4945,2)
- ;;=^115798
- ;;^UTILITY(U,$J,358.3,4946,0)
- ;;=692.76^^25^257^6
- ;;^UTILITY(U,$J,358.3,4946,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4946,1,2,0)
- ;;=2^692.76
- ;;^UTILITY(U,$J,358.3,4946,1,5,0)
- ;;=5^Sunburn, Second Degree
- ;;^UTILITY(U,$J,358.3,4946,2)
- ;;=^323553
- ;;^UTILITY(U,$J,358.3,4947,0)
- ;;=692.77^^25^257^7
- ;;^UTILITY(U,$J,358.3,4947,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,4947,1,2,0)
- ;;=2^692.77
- ;;^UTILITY(U,$J,358.3,4947,1,5,0)
- ;;=5^Sunburn, Third Degree
+ ;;^UTILITY(U,$J,358.3,5079,1,3,0)
+ ;;=3^Impaired Renal Tubular Function Disorders,Other
+ ;;^UTILITY(U,$J,358.3,5079,1,4,0)
+ ;;=4^N25.89
+ ;;^UTILITY(U,$J,358.3,5079,2)
+ ;;=^5015618
+ ;;^UTILITY(U,$J,358.3,5080,0)
+ ;;=T82.590A^^27^327^28
+ ;;^UTILITY(U,$J,358.3,5080,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5080,1,3,0)
+ ;;=3^Mech Comp,Surgically Created AV Fistula,Init Encntr
+ ;;^UTILITY(U,$J,358.3,5080,1,4,0)
+ ;;=4^T82.590A
+ ;;^UTILITY(U,$J,358.3,5080,2)
+ ;;=^5054884
+ ;;^UTILITY(U,$J,358.3,5081,0)
+ ;;=T82.590D^^27^327^29
+ ;;^UTILITY(U,$J,358.3,5081,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5081,1,3,0)
+ ;;=3^Mech Comp,Surgically Created AV Fistula,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,5081,1,4,0)
+ ;;=4^T82.590D
+ ;;^UTILITY(U,$J,358.3,5081,2)
+ ;;=^5054885
+ ;;^UTILITY(U,$J,358.3,5082,0)
+ ;;=T85.691A^^27^327^26
+ ;;^UTILITY(U,$J,358.3,5082,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5082,1,3,0)
+ ;;=3^Mech Comp,Intraperitoneal Dialysis Catheter,Init Encntr
+ ;;^UTILITY(U,$J,358.3,5082,1,4,0)
+ ;;=4^T85.691A
+ ;;^UTILITY(U,$J,358.3,5082,2)
+ ;;=^5055655
+ ;;^UTILITY(U,$J,358.3,5083,0)
+ ;;=T85.691D^^27^327^27
+ ;;^UTILITY(U,$J,358.3,5083,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5083,1,3,0)
+ ;;=3^Mech Comp,Intraperitoneal Dialysis Catheter,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,5083,1,4,0)
+ ;;=4^T85.691D
+ ;;^UTILITY(U,$J,358.3,5083,2)
+ ;;=^5055656
+ ;;^UTILITY(U,$J,358.3,5084,0)
+ ;;=T82.898A^^27^327^6
+ ;;^UTILITY(U,$J,358.3,5084,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5084,1,3,0)
+ ;;=3^Complication of Vascular Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,5084,1,4,0)
+ ;;=4^T82.898A
+ ;;^UTILITY(U,$J,358.3,5084,2)
+ ;;=^5054953
+ ;;^UTILITY(U,$J,358.3,5085,0)
+ ;;=T82.898D^^27^327^7
+ ;;^UTILITY(U,$J,358.3,5085,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5085,1,3,0)
+ ;;=3^Complication of Vascular Graft,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,5085,1,4,0)
+ ;;=4^T82.898D
+ ;;^UTILITY(U,$J,358.3,5085,2)
+ ;;=^5054954
+ ;;^UTILITY(U,$J,358.3,5086,0)
+ ;;=N25.81^^27^327^36
+ ;;^UTILITY(U,$J,358.3,5086,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5086,1,3,0)
+ ;;=3^Secondary Hyperparathyroidism of Renal Origin
+ ;;^UTILITY(U,$J,358.3,5086,1,4,0)
+ ;;=4^N25.81
+ ;;^UTILITY(U,$J,358.3,5086,2)
+ ;;=^5015617
+ ;;^UTILITY(U,$J,358.3,5087,0)
+ ;;=T82.858A^^27^327^37
+ ;;^UTILITY(U,$J,358.3,5087,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5087,1,3,0)
+ ;;=3^Stenosis of Vascular Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,5087,1,4,0)
+ ;;=4^T82.858A
+ ;;^UTILITY(U,$J,358.3,5087,2)
+ ;;=^5054941
+ ;;^UTILITY(U,$J,358.3,5088,0)
+ ;;=T82.858D^^27^327^38
+ ;;^UTILITY(U,$J,358.3,5088,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5088,1,3,0)
+ ;;=3^Stenosis of Vascular Graft,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,5088,1,4,0)
+ ;;=4^T82.858D
+ ;;^UTILITY(U,$J,358.3,5088,2)
+ ;;=^5054942
+ ;;^UTILITY(U,$J,358.3,5089,0)
+ ;;=T82.868A^^27^327^39
+ ;;^UTILITY(U,$J,358.3,5089,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5089,1,3,0)
+ ;;=3^Thrombosis of Vascular Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,5089,1,4,0)
+ ;;=4^T82.868A
+ ;;^UTILITY(U,$J,358.3,5089,2)
+ ;;=^5054947
+ ;;^UTILITY(U,$J,358.3,5090,0)
+ ;;=T82.868D^^27^327^40
+ ;;^UTILITY(U,$J,358.3,5090,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5090,1,3,0)
+ ;;=3^Thrombosis of Vascular Graft,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,5090,1,4,0)
+ ;;=4^T82.868D
+ ;;^UTILITY(U,$J,358.3,5090,2)
+ ;;=^5054948
+ ;;^UTILITY(U,$J,358.3,5091,0)
+ ;;=N28.1^^27^328^1
+ ;;^UTILITY(U,$J,358.3,5091,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5091,1,3,0)
+ ;;=3^Cyst of Kidney,Acquired
+ ;;^UTILITY(U,$J,358.3,5091,1,4,0)
+ ;;=4^N28.1
+ ;;^UTILITY(U,$J,358.3,5091,2)
+ ;;=^270380

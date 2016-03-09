@@ -1,124 +1,138 @@
-IBDEI1Z5 ; ; 06-AUG-2015
+IBDEI1Z5 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34604,2)
- ;;=^5033681
- ;;^UTILITY(U,$J,358.3,34605,0)
- ;;=S62.241S^^183^2021^50
- ;;^UTILITY(U,$J,358.3,34605,1,0)
+ ;;^UTILITY(U,$J,358.3,33504,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34605,1,3,0)
- ;;=3^Disp fx of shaft of 1st MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34605,1,4,0)
- ;;=4^S62.241S
- ;;^UTILITY(U,$J,358.3,34605,2)
- ;;=^5033674
- ;;^UTILITY(U,$J,358.3,34606,0)
- ;;=S62.325S^^183^2021^55
- ;;^UTILITY(U,$J,358.3,34606,1,0)
+ ;;^UTILITY(U,$J,358.3,33504,1,3,0)
+ ;;=3^Acute Upper Respiratory Infection,Unspec
+ ;;^UTILITY(U,$J,358.3,33504,1,4,0)
+ ;;=4^J06.9
+ ;;^UTILITY(U,$J,358.3,33504,2)
+ ;;=^5008143
+ ;;^UTILITY(U,$J,358.3,33505,0)
+ ;;=J33.9^^131^1671^19
+ ;;^UTILITY(U,$J,358.3,33505,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34606,1,3,0)
- ;;=3^Disp fx of shaft of 4th MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34606,1,4,0)
- ;;=4^S62.325S
- ;;^UTILITY(U,$J,358.3,34606,2)
- ;;=^5033940
- ;;^UTILITY(U,$J,358.3,34607,0)
- ;;=S62.324S^^183^2021^56
- ;;^UTILITY(U,$J,358.3,34607,1,0)
+ ;;^UTILITY(U,$J,358.3,33505,1,3,0)
+ ;;=3^Nasal Polyp,Unspec
+ ;;^UTILITY(U,$J,358.3,33505,1,4,0)
+ ;;=4^J33.9
+ ;;^UTILITY(U,$J,358.3,33505,2)
+ ;;=^5008208
+ ;;^UTILITY(U,$J,358.3,33506,0)
+ ;;=J32.0^^131^1671^15
+ ;;^UTILITY(U,$J,358.3,33506,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34607,1,3,0)
- ;;=3^Disp fx of shaft of 4th MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34607,1,4,0)
- ;;=4^S62.324S
- ;;^UTILITY(U,$J,358.3,34607,2)
- ;;=^5033933
- ;;^UTILITY(U,$J,358.3,34608,0)
- ;;=S62.321S^^183^2021^51
- ;;^UTILITY(U,$J,358.3,34608,1,0)
+ ;;^UTILITY(U,$J,358.3,33506,1,3,0)
+ ;;=3^Chronic Maxillary Sinusitis
+ ;;^UTILITY(U,$J,358.3,33506,1,4,0)
+ ;;=4^J32.0
+ ;;^UTILITY(U,$J,358.3,33506,2)
+ ;;=^24407
+ ;;^UTILITY(U,$J,358.3,33507,0)
+ ;;=J32.1^^131^1671^14
+ ;;^UTILITY(U,$J,358.3,33507,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34608,1,3,0)
- ;;=3^Disp fx of shaft of 2nd MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34608,1,4,0)
- ;;=4^S62.321S
- ;;^UTILITY(U,$J,358.3,34608,2)
- ;;=^5033912
- ;;^UTILITY(U,$J,358.3,34609,0)
- ;;=S62.320S^^183^2021^52
- ;;^UTILITY(U,$J,358.3,34609,1,0)
+ ;;^UTILITY(U,$J,358.3,33507,1,3,0)
+ ;;=3^Chronic Frontal Sinusitis
+ ;;^UTILITY(U,$J,358.3,33507,1,4,0)
+ ;;=4^J32.1
+ ;;^UTILITY(U,$J,358.3,33507,2)
+ ;;=^24380
+ ;;^UTILITY(U,$J,358.3,33508,0)
+ ;;=J32.9^^131^1671^16
+ ;;^UTILITY(U,$J,358.3,33508,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34609,1,3,0)
- ;;=3^Disp fx of shaft of 2nd MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34609,1,4,0)
- ;;=4^S62.320S
- ;;^UTILITY(U,$J,358.3,34609,2)
- ;;=^5033905
- ;;^UTILITY(U,$J,358.3,34610,0)
- ;;=S62.323S^^183^2021^53
- ;;^UTILITY(U,$J,358.3,34610,1,0)
+ ;;^UTILITY(U,$J,358.3,33508,1,3,0)
+ ;;=3^Chronic Sinusitis,Unspec
+ ;;^UTILITY(U,$J,358.3,33508,1,4,0)
+ ;;=4^J32.9
+ ;;^UTILITY(U,$J,358.3,33508,2)
+ ;;=^5008207
+ ;;^UTILITY(U,$J,358.3,33509,0)
+ ;;=J30.9^^131^1671^11
+ ;;^UTILITY(U,$J,358.3,33509,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34610,1,3,0)
- ;;=3^Disp fx of shaft of 3rd MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34610,1,4,0)
- ;;=4^S62.323S
- ;;^UTILITY(U,$J,358.3,34610,2)
- ;;=^5033926
- ;;^UTILITY(U,$J,358.3,34611,0)
- ;;=S62.322S^^183^2021^54
- ;;^UTILITY(U,$J,358.3,34611,1,0)
+ ;;^UTILITY(U,$J,358.3,33509,1,3,0)
+ ;;=3^Allergic Rhinitis,Unspec
+ ;;^UTILITY(U,$J,358.3,33509,1,4,0)
+ ;;=4^J30.9
+ ;;^UTILITY(U,$J,358.3,33509,2)
+ ;;=^5008205
+ ;;^UTILITY(U,$J,358.3,33510,0)
+ ;;=J30.0^^131^1671^24
+ ;;^UTILITY(U,$J,358.3,33510,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34611,1,3,0)
- ;;=3^Disp fx of shaft of 3rd MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34611,1,4,0)
- ;;=4^S62.322S
- ;;^UTILITY(U,$J,358.3,34611,2)
- ;;=^5033919
- ;;^UTILITY(U,$J,358.3,34612,0)
- ;;=S62.222S^^183^2021^59
- ;;^UTILITY(U,$J,358.3,34612,1,0)
+ ;;^UTILITY(U,$J,358.3,33510,1,3,0)
+ ;;=3^Vasomotor Rhinitis
+ ;;^UTILITY(U,$J,358.3,33510,1,4,0)
+ ;;=4^J30.0
+ ;;^UTILITY(U,$J,358.3,33510,2)
+ ;;=^5008201
+ ;;^UTILITY(U,$J,358.3,33511,0)
+ ;;=K05.00^^131^1671^2
+ ;;^UTILITY(U,$J,358.3,33511,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34612,1,3,0)
- ;;=3^Disp rolando's fx, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34612,1,4,0)
- ;;=4^S62.222S
- ;;^UTILITY(U,$J,358.3,34612,2)
- ;;=^5033597
- ;;^UTILITY(U,$J,358.3,34613,0)
- ;;=S62.221S^^183^2021^60
- ;;^UTILITY(U,$J,358.3,34613,1,0)
+ ;;^UTILITY(U,$J,358.3,33511,1,3,0)
+ ;;=3^Acute Gingivitis,Plaque Induced
+ ;;^UTILITY(U,$J,358.3,33511,1,4,0)
+ ;;=4^K05.00
+ ;;^UTILITY(U,$J,358.3,33511,2)
+ ;;=^334192
+ ;;^UTILITY(U,$J,358.3,33512,0)
+ ;;=R04.0^^131^1671^17
+ ;;^UTILITY(U,$J,358.3,33512,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34613,1,3,0)
- ;;=3^Disp rolando's fx, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34613,1,4,0)
- ;;=4^S62.221S
- ;;^UTILITY(U,$J,358.3,34613,2)
- ;;=^5033590
- ;;^UTILITY(U,$J,358.3,34614,0)
- ;;=S62.346S^^183^2021^67
- ;;^UTILITY(U,$J,358.3,34614,1,0)
+ ;;^UTILITY(U,$J,358.3,33512,1,3,0)
+ ;;=3^Epistaxis
+ ;;^UTILITY(U,$J,358.3,33512,1,4,0)
+ ;;=4^R04.0
+ ;;^UTILITY(U,$J,358.3,33512,2)
+ ;;=^5019173
+ ;;^UTILITY(U,$J,358.3,33513,0)
+ ;;=R09.82^^131^1671^21
+ ;;^UTILITY(U,$J,358.3,33513,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34614,1,3,0)
- ;;=3^Nondisp fx of base of 5th MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34614,1,4,0)
- ;;=4^S62.346S
- ;;^UTILITY(U,$J,358.3,34614,2)
- ;;=^5034087
- ;;^UTILITY(U,$J,358.3,34615,0)
- ;;=S62.347S^^183^2021^68
- ;;^UTILITY(U,$J,358.3,34615,1,0)
+ ;;^UTILITY(U,$J,358.3,33513,1,3,0)
+ ;;=3^Postnasal Drip
+ ;;^UTILITY(U,$J,358.3,33513,1,4,0)
+ ;;=4^R09.82
+ ;;^UTILITY(U,$J,358.3,33513,2)
+ ;;=^97058
+ ;;^UTILITY(U,$J,358.3,33514,0)
+ ;;=K12.30^^131^1671^20
+ ;;^UTILITY(U,$J,358.3,33514,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34615,1,3,0)
- ;;=3^Nondisp fx of base of 5th MC bone. left hand, sequela
- ;;^UTILITY(U,$J,358.3,34615,1,4,0)
- ;;=4^S62.347S
- ;;^UTILITY(U,$J,358.3,34615,2)
- ;;=^5034094
- ;;^UTILITY(U,$J,358.3,34616,0)
- ;;=S62.345S^^183^2021^65
- ;;^UTILITY(U,$J,358.3,34616,1,0)
+ ;;^UTILITY(U,$J,358.3,33514,1,3,0)
+ ;;=3^Oral Mucositis,Unspec
+ ;;^UTILITY(U,$J,358.3,33514,1,4,0)
+ ;;=4^K12.30
+ ;;^UTILITY(U,$J,358.3,33514,2)
+ ;;=^5008486
+ ;;^UTILITY(U,$J,358.3,33515,0)
+ ;;=J30.1^^131^1671^10
+ ;;^UTILITY(U,$J,358.3,33515,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34616,1,3,0)
- ;;=3^Nondisp fx of base of 4th MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34616,1,4,0)
- ;;=4^S62.345S
+ ;;^UTILITY(U,$J,358.3,33515,1,3,0)
+ ;;=3^Allergic Rhinitis d/t Pollen
+ ;;^UTILITY(U,$J,358.3,33515,1,4,0)
+ ;;=4^J30.1
+ ;;^UTILITY(U,$J,358.3,33515,2)
+ ;;=^269906
+ ;;^UTILITY(U,$J,358.3,33516,0)
+ ;;=R09.81^^131^1671^18
+ ;;^UTILITY(U,$J,358.3,33516,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33516,1,3,0)
+ ;;=3^Nasal Congestion
+ ;;^UTILITY(U,$J,358.3,33516,1,4,0)
+ ;;=4^R09.81
+ ;;^UTILITY(U,$J,358.3,33516,2)
+ ;;=^5019203
+ ;;^UTILITY(U,$J,358.3,33517,0)
+ ;;=I69.928^^131^1671^22
+ ;;^UTILITY(U,$J,358.3,33517,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33517,1,3,0)
+ ;;=3^Speech/Lang Deficit Following Cerebvasc Disease

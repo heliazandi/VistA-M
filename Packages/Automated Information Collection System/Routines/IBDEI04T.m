@@ -1,142 +1,134 @@
-IBDEI04T ; ; 06-AUG-2015
+IBDEI04T ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1728,1,3,0)
- ;;=3^Chronic post-thoracotomy pain
- ;;^UTILITY(U,$J,358.3,1728,1,4,0)
- ;;=4^G89.22
- ;;^UTILITY(U,$J,358.3,1728,2)
- ;;=^5004156
- ;;^UTILITY(U,$J,358.3,1729,0)
- ;;=G89.28^^3^50^9
- ;;^UTILITY(U,$J,358.3,1729,1,0)
+ ;;^UTILITY(U,$J,358.3,1826,1,4,0)
+ ;;=4^T82.818A
+ ;;^UTILITY(U,$J,358.3,1826,2)
+ ;;=^5054917
+ ;;^UTILITY(U,$J,358.3,1827,0)
+ ;;=T82.828A^^11^156^74
+ ;;^UTILITY(U,$J,358.3,1827,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1729,1,3,0)
- ;;=3^Chronic postprocedural pain NEC
- ;;^UTILITY(U,$J,358.3,1729,1,4,0)
- ;;=4^G89.28
- ;;^UTILITY(U,$J,358.3,1729,2)
- ;;=^5004157
- ;;^UTILITY(U,$J,358.3,1730,0)
- ;;=G89.29^^3^50^5
- ;;^UTILITY(U,$J,358.3,1730,1,0)
+ ;;^UTILITY(U,$J,358.3,1827,1,3,0)
+ ;;=3^Fibrosis of Vascular Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1827,1,4,0)
+ ;;=4^T82.828A
+ ;;^UTILITY(U,$J,358.3,1827,2)
+ ;;=^5054923
+ ;;^UTILITY(U,$J,358.3,1828,0)
+ ;;=T82.868A^^11^156^93
+ ;;^UTILITY(U,$J,358.3,1828,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1730,1,3,0)
- ;;=3^Chronic Pain NEC
- ;;^UTILITY(U,$J,358.3,1730,1,4,0)
- ;;=4^G89.29
- ;;^UTILITY(U,$J,358.3,1730,2)
- ;;=^5004158
- ;;^UTILITY(U,$J,358.3,1731,0)
- ;;=G89.3^^3^50^12
- ;;^UTILITY(U,$J,358.3,1731,1,0)
+ ;;^UTILITY(U,$J,358.3,1828,1,3,0)
+ ;;=3^Thrombosis of Vascular Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1828,1,4,0)
+ ;;=4^T82.868A
+ ;;^UTILITY(U,$J,358.3,1828,2)
+ ;;=^5054947
+ ;;^UTILITY(U,$J,358.3,1829,0)
+ ;;=I08.0^^11^157^5
+ ;;^UTILITY(U,$J,358.3,1829,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1731,1,3,0)
- ;;=3^Neoplasm related pain (acute) (chronic)
- ;;^UTILITY(U,$J,358.3,1731,1,4,0)
- ;;=4^G89.3
- ;;^UTILITY(U,$J,358.3,1731,2)
- ;;=^5004159
- ;;^UTILITY(U,$J,358.3,1732,0)
- ;;=G89.4^^3^50^7
- ;;^UTILITY(U,$J,358.3,1732,1,0)
+ ;;^UTILITY(U,$J,358.3,1829,1,3,0)
+ ;;=3^Rheumatic Disorders of Mitral and Aortic Valves
+ ;;^UTILITY(U,$J,358.3,1829,1,4,0)
+ ;;=4^I08.0
+ ;;^UTILITY(U,$J,358.3,1829,2)
+ ;;=^5007052
+ ;;^UTILITY(U,$J,358.3,1830,0)
+ ;;=I05.0^^11^157^8
+ ;;^UTILITY(U,$J,358.3,1830,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1732,1,3,0)
- ;;=3^Chronic pain syndrome
- ;;^UTILITY(U,$J,358.3,1732,1,4,0)
- ;;=4^G89.4
- ;;^UTILITY(U,$J,358.3,1732,2)
- ;;=^334079
- ;;^UTILITY(U,$J,358.3,1733,0)
- ;;=H92.01^^3^50^15
- ;;^UTILITY(U,$J,358.3,1733,1,0)
+ ;;^UTILITY(U,$J,358.3,1830,1,3,0)
+ ;;=3^Rheumatic Mitral Stenosis
+ ;;^UTILITY(U,$J,358.3,1830,1,4,0)
+ ;;=4^I05.0
+ ;;^UTILITY(U,$J,358.3,1830,2)
+ ;;=^5007041
+ ;;^UTILITY(U,$J,358.3,1831,0)
+ ;;=I05.1^^11^157^7
+ ;;^UTILITY(U,$J,358.3,1831,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1733,1,3,0)
- ;;=3^Otalgia, right ear
- ;;^UTILITY(U,$J,358.3,1733,1,4,0)
- ;;=4^H92.01
- ;;^UTILITY(U,$J,358.3,1733,2)
- ;;=^5006945
- ;;^UTILITY(U,$J,358.3,1734,0)
- ;;=H92.02^^3^50^14
- ;;^UTILITY(U,$J,358.3,1734,1,0)
+ ;;^UTILITY(U,$J,358.3,1831,1,3,0)
+ ;;=3^Rheumatic Mitral Insufficiency
+ ;;^UTILITY(U,$J,358.3,1831,1,4,0)
+ ;;=4^I05.1
+ ;;^UTILITY(U,$J,358.3,1831,2)
+ ;;=^269568
+ ;;^UTILITY(U,$J,358.3,1832,0)
+ ;;=I05.2^^11^157^9
+ ;;^UTILITY(U,$J,358.3,1832,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1734,1,3,0)
- ;;=3^Otalgia, left ear
- ;;^UTILITY(U,$J,358.3,1734,1,4,0)
- ;;=4^H92.02
- ;;^UTILITY(U,$J,358.3,1734,2)
- ;;=^5006946
- ;;^UTILITY(U,$J,358.3,1735,0)
- ;;=H92.03^^3^50^13
- ;;^UTILITY(U,$J,358.3,1735,1,0)
+ ;;^UTILITY(U,$J,358.3,1832,1,3,0)
+ ;;=3^Rheumatic Mitral Stenosis w/ Insufficiency
+ ;;^UTILITY(U,$J,358.3,1832,1,4,0)
+ ;;=4^I05.2
+ ;;^UTILITY(U,$J,358.3,1832,2)
+ ;;=^5007042
+ ;;^UTILITY(U,$J,358.3,1833,0)
+ ;;=I05.8^^11^157^10
+ ;;^UTILITY(U,$J,358.3,1833,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1735,1,3,0)
- ;;=3^Otalgia, bilateral
- ;;^UTILITY(U,$J,358.3,1735,1,4,0)
- ;;=4^H92.03
- ;;^UTILITY(U,$J,358.3,1735,2)
- ;;=^5006947
- ;;^UTILITY(U,$J,358.3,1736,0)
- ;;=R68.84^^3^50^10
- ;;^UTILITY(U,$J,358.3,1736,1,0)
+ ;;^UTILITY(U,$J,358.3,1833,1,3,0)
+ ;;=3^Rheumatic Mitral Valve Diseases NEC
+ ;;^UTILITY(U,$J,358.3,1833,1,4,0)
+ ;;=4^I05.8
+ ;;^UTILITY(U,$J,358.3,1833,2)
+ ;;=^5007043
+ ;;^UTILITY(U,$J,358.3,1834,0)
+ ;;=I06.0^^11^157^2
+ ;;^UTILITY(U,$J,358.3,1834,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1736,1,3,0)
- ;;=3^Jaw pain
- ;;^UTILITY(U,$J,358.3,1736,1,4,0)
- ;;=4^R68.84
- ;;^UTILITY(U,$J,358.3,1736,2)
- ;;=^5019556
- ;;^UTILITY(U,$J,358.3,1737,0)
- ;;=N48.89^^3^50^18
- ;;^UTILITY(U,$J,358.3,1737,1,0)
+ ;;^UTILITY(U,$J,358.3,1834,1,3,0)
+ ;;=3^Rheumatic Aortic Stenosis
+ ;;^UTILITY(U,$J,358.3,1834,1,4,0)
+ ;;=4^I06.0
+ ;;^UTILITY(U,$J,358.3,1834,2)
+ ;;=^269573
+ ;;^UTILITY(U,$J,358.3,1835,0)
+ ;;=I06.1^^11^157^1
+ ;;^UTILITY(U,$J,358.3,1835,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1737,1,3,0)
- ;;=3^Penis Disorders NEC
- ;;^UTILITY(U,$J,358.3,1737,1,4,0)
- ;;=4^N48.89
- ;;^UTILITY(U,$J,358.3,1737,2)
- ;;=^88018
- ;;^UTILITY(U,$J,358.3,1738,0)
- ;;=N50.8^^3^50^11
- ;;^UTILITY(U,$J,358.3,1738,1,0)
+ ;;^UTILITY(U,$J,358.3,1835,1,3,0)
+ ;;=3^Rheumatic Aortic Insufficiency
+ ;;^UTILITY(U,$J,358.3,1835,1,4,0)
+ ;;=4^I06.1
+ ;;^UTILITY(U,$J,358.3,1835,2)
+ ;;=^269575
+ ;;^UTILITY(U,$J,358.3,1836,0)
+ ;;=I06.2^^11^157^3
+ ;;^UTILITY(U,$J,358.3,1836,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1738,1,3,0)
- ;;=3^Male Genital Organ Disorders NEC
- ;;^UTILITY(U,$J,358.3,1738,1,4,0)
- ;;=4^N50.8
- ;;^UTILITY(U,$J,358.3,1738,2)
- ;;=^88009
- ;;^UTILITY(U,$J,358.3,1739,0)
- ;;=R10.2^^3^50^17
- ;;^UTILITY(U,$J,358.3,1739,1,0)
+ ;;^UTILITY(U,$J,358.3,1836,1,3,0)
+ ;;=3^Rheumatic Aortic Stenosis w/ Insufficiency
+ ;;^UTILITY(U,$J,358.3,1836,1,4,0)
+ ;;=4^I06.2
+ ;;^UTILITY(U,$J,358.3,1836,2)
+ ;;=^269577
+ ;;^UTILITY(U,$J,358.3,1837,0)
+ ;;=I06.8^^11^157^4
+ ;;^UTILITY(U,$J,358.3,1837,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1739,1,3,0)
- ;;=3^Pelvic and perineal pain
- ;;^UTILITY(U,$J,358.3,1739,1,4,0)
- ;;=4^R10.2
- ;;^UTILITY(U,$J,358.3,1739,2)
- ;;=^5019209
- ;;^UTILITY(U,$J,358.3,1740,0)
- ;;=Z85.810^^3^51^7
- ;;^UTILITY(U,$J,358.3,1740,1,0)
+ ;;^UTILITY(U,$J,358.3,1837,1,3,0)
+ ;;=3^Rheumatic Aortic Valve Diseases NEC
+ ;;^UTILITY(U,$J,358.3,1837,1,4,0)
+ ;;=4^I06.8
+ ;;^UTILITY(U,$J,358.3,1837,2)
+ ;;=^5007045
+ ;;^UTILITY(U,$J,358.3,1838,0)
+ ;;=I09.89^^11^157^6
+ ;;^UTILITY(U,$J,358.3,1838,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1740,1,3,0)
- ;;=3^Personal history of malignant neoplasm of tongue
- ;;^UTILITY(U,$J,358.3,1740,1,4,0)
- ;;=4^Z85.810
- ;;^UTILITY(U,$J,358.3,1740,2)
- ;;=^5063438
- ;;^UTILITY(U,$J,358.3,1741,0)
- ;;=Z85.05^^3^51^8
- ;;^UTILITY(U,$J,358.3,1741,1,0)
+ ;;^UTILITY(U,$J,358.3,1838,1,3,0)
+ ;;=3^Rheumatic Heart Diseases
+ ;;^UTILITY(U,$J,358.3,1838,1,4,0)
+ ;;=4^I09.89
+ ;;^UTILITY(U,$J,358.3,1838,2)
+ ;;=^5007060
+ ;;^UTILITY(U,$J,358.3,1839,0)
+ ;;=I08.8^^11^157^11
+ ;;^UTILITY(U,$J,358.3,1839,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1741,1,3,0)
- ;;=3^Personal history of malignant neoplasm of liver
- ;;^UTILITY(U,$J,358.3,1741,1,4,0)
- ;;=4^Z85.05
- ;;^UTILITY(U,$J,358.3,1741,2)
- ;;=^5063402
- ;;^UTILITY(U,$J,358.3,1742,0)
- ;;=Z85.068^^3^51^9
+ ;;^UTILITY(U,$J,358.3,1839,1,3,0)
+ ;;=3^Rheumatic Multiple Valve Dieases NEC

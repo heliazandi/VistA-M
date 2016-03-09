@@ -1,140 +1,146 @@
-IBDEI01D ; ; 06-AUG-2015
+IBDEI01D ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,83,1,4,0)
- ;;=4^H72.813
- ;;^UTILITY(U,$J,358.3,83,2)
- ;;=^5006756
- ;;^UTILITY(U,$J,358.3,84,0)
- ;;=H72.812^^1^5^27
- ;;^UTILITY(U,$J,358.3,84,1,0)
+ ;;^UTILITY(U,$J,358.3,139,0)
+ ;;=F41.1^^3^24^13
+ ;;^UTILITY(U,$J,358.3,139,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,84,1,3,0)
- ;;=3^Multiple perforations of tympanic membrane, left ear
- ;;^UTILITY(U,$J,358.3,84,1,4,0)
- ;;=4^H72.812
- ;;^UTILITY(U,$J,358.3,84,2)
- ;;=^5006755
- ;;^UTILITY(U,$J,358.3,85,0)
- ;;=H72.811^^1^5^28
- ;;^UTILITY(U,$J,358.3,85,1,0)
+ ;;^UTILITY(U,$J,358.3,139,1,3,0)
+ ;;=3^Generalized Anxiety Disorder
+ ;;^UTILITY(U,$J,358.3,139,1,4,0)
+ ;;=4^F41.1
+ ;;^UTILITY(U,$J,358.3,139,2)
+ ;;=^50059
+ ;;^UTILITY(U,$J,358.3,140,0)
+ ;;=F41.9^^3^24^5
+ ;;^UTILITY(U,$J,358.3,140,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,85,1,3,0)
- ;;=3^Multiple perforations of tympanic membrane, right ear
- ;;^UTILITY(U,$J,358.3,85,1,4,0)
- ;;=4^H72.811
- ;;^UTILITY(U,$J,358.3,85,2)
- ;;=^5006754
- ;;^UTILITY(U,$J,358.3,86,0)
- ;;=H72.2X3^^1^5^23
- ;;^UTILITY(U,$J,358.3,86,1,0)
+ ;;^UTILITY(U,$J,358.3,140,1,3,0)
+ ;;=3^Anxiety Disorder NOS
+ ;;^UTILITY(U,$J,358.3,140,1,4,0)
+ ;;=4^F41.9
+ ;;^UTILITY(U,$J,358.3,140,2)
+ ;;=^5003567
+ ;;^UTILITY(U,$J,358.3,141,0)
+ ;;=F40.02^^3^24^2
+ ;;^UTILITY(U,$J,358.3,141,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,86,1,3,0)
- ;;=3^Marginal perforations of tympanic membrane, bilateral NEC
- ;;^UTILITY(U,$J,358.3,86,1,4,0)
- ;;=4^H72.2X3
- ;;^UTILITY(U,$J,358.3,86,2)
- ;;=^5006752
- ;;^UTILITY(U,$J,358.3,87,0)
- ;;=H72.2X2^^1^5^24
- ;;^UTILITY(U,$J,358.3,87,1,0)
+ ;;^UTILITY(U,$J,358.3,141,1,3,0)
+ ;;=3^Agoraphobia
+ ;;^UTILITY(U,$J,358.3,141,1,4,0)
+ ;;=4^F40.02
+ ;;^UTILITY(U,$J,358.3,141,2)
+ ;;=^5003543
+ ;;^UTILITY(U,$J,358.3,142,0)
+ ;;=F40.10^^3^24^19
+ ;;^UTILITY(U,$J,358.3,142,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,87,1,3,0)
- ;;=3^Marginal perforations of tympanic membrane, left ear NEC
- ;;^UTILITY(U,$J,358.3,87,1,4,0)
- ;;=4^H72.2X2
- ;;^UTILITY(U,$J,358.3,87,2)
- ;;=^5006751
- ;;^UTILITY(U,$J,358.3,88,0)
- ;;=H72.2X1^^1^5^25
- ;;^UTILITY(U,$J,358.3,88,1,0)
+ ;;^UTILITY(U,$J,358.3,142,1,3,0)
+ ;;=3^Social Anxiety Disorder
+ ;;^UTILITY(U,$J,358.3,142,1,4,0)
+ ;;=4^F40.10
+ ;;^UTILITY(U,$J,358.3,142,2)
+ ;;=^5003544
+ ;;^UTILITY(U,$J,358.3,143,0)
+ ;;=F40.218^^3^24^4
+ ;;^UTILITY(U,$J,358.3,143,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,88,1,3,0)
- ;;=3^Marginal perforations of tympanic membrane, right ear NEC
- ;;^UTILITY(U,$J,358.3,88,1,4,0)
- ;;=4^H72.2X1
- ;;^UTILITY(U,$J,358.3,88,2)
- ;;=^5006750
- ;;^UTILITY(U,$J,358.3,89,0)
- ;;=H69.83^^1^5^14
- ;;^UTILITY(U,$J,358.3,89,1,0)
+ ;;^UTILITY(U,$J,358.3,143,1,3,0)
+ ;;=3^Animal Type Phobias
+ ;;^UTILITY(U,$J,358.3,143,1,4,0)
+ ;;=4^F40.218
+ ;;^UTILITY(U,$J,358.3,143,2)
+ ;;=^5003547
+ ;;^UTILITY(U,$J,358.3,144,0)
+ ;;=F40.228^^3^24^14
+ ;;^UTILITY(U,$J,358.3,144,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,89,1,3,0)
- ;;=3^Eustachian Tube Disorders,Bilateral NEC
- ;;^UTILITY(U,$J,358.3,89,1,4,0)
- ;;=4^H69.83
- ;;^UTILITY(U,$J,358.3,89,2)
- ;;=^5006680
- ;;^UTILITY(U,$J,358.3,90,0)
- ;;=H69.82^^1^5^16
- ;;^UTILITY(U,$J,358.3,90,1,0)
+ ;;^UTILITY(U,$J,358.3,144,1,3,0)
+ ;;=3^Natural Environment Type Phobia
+ ;;^UTILITY(U,$J,358.3,144,1,4,0)
+ ;;=4^F40.228
+ ;;^UTILITY(U,$J,358.3,144,2)
+ ;;=^5003549
+ ;;^UTILITY(U,$J,358.3,145,0)
+ ;;=F40.230^^3^24^9
+ ;;^UTILITY(U,$J,358.3,145,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,90,1,3,0)
- ;;=3^Eustachian Tube Disorders,Left Ear NEC
- ;;^UTILITY(U,$J,358.3,90,1,4,0)
- ;;=4^H69.82
- ;;^UTILITY(U,$J,358.3,90,2)
- ;;=^5006679
- ;;^UTILITY(U,$J,358.3,91,0)
- ;;=H69.81^^1^5^18
- ;;^UTILITY(U,$J,358.3,91,1,0)
+ ;;^UTILITY(U,$J,358.3,145,1,3,0)
+ ;;=3^Fear of Blood
+ ;;^UTILITY(U,$J,358.3,145,1,4,0)
+ ;;=4^F40.230
+ ;;^UTILITY(U,$J,358.3,145,2)
+ ;;=^5003550
+ ;;^UTILITY(U,$J,358.3,146,0)
+ ;;=F40.231^^3^24^10
+ ;;^UTILITY(U,$J,358.3,146,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,91,1,3,0)
- ;;=3^Eustachian Tube Disorders,Right Ear NEC
- ;;^UTILITY(U,$J,358.3,91,1,4,0)
- ;;=4^H69.81
- ;;^UTILITY(U,$J,358.3,91,2)
- ;;=^5006678
- ;;^UTILITY(U,$J,358.3,92,0)
- ;;=H69.03^^1^5^29
- ;;^UTILITY(U,$J,358.3,92,1,0)
+ ;;^UTILITY(U,$J,358.3,146,1,3,0)
+ ;;=3^Fear of Injections & Transfusions
+ ;;^UTILITY(U,$J,358.3,146,1,4,0)
+ ;;=4^F40.231
+ ;;^UTILITY(U,$J,358.3,146,2)
+ ;;=^5003551
+ ;;^UTILITY(U,$J,358.3,147,0)
+ ;;=F40.232^^3^24^12
+ ;;^UTILITY(U,$J,358.3,147,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,92,1,3,0)
- ;;=3^Patulous Eustachian tube, bilateral
- ;;^UTILITY(U,$J,358.3,92,1,4,0)
- ;;=4^H69.03
- ;;^UTILITY(U,$J,358.3,92,2)
- ;;=^5006676
- ;;^UTILITY(U,$J,358.3,93,0)
- ;;=H69.02^^1^5^30
- ;;^UTILITY(U,$J,358.3,93,1,0)
+ ;;^UTILITY(U,$J,358.3,147,1,3,0)
+ ;;=3^Fear of Oth Medical Care
+ ;;^UTILITY(U,$J,358.3,147,1,4,0)
+ ;;=4^F40.232
+ ;;^UTILITY(U,$J,358.3,147,2)
+ ;;=^5003552
+ ;;^UTILITY(U,$J,358.3,148,0)
+ ;;=F40.233^^3^24^11
+ ;;^UTILITY(U,$J,358.3,148,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,93,1,3,0)
- ;;=3^Patulous Eustachian tube, left ear
- ;;^UTILITY(U,$J,358.3,93,1,4,0)
- ;;=4^H69.02
- ;;^UTILITY(U,$J,358.3,93,2)
- ;;=^5006675
- ;;^UTILITY(U,$J,358.3,94,0)
- ;;=H69.01^^1^5^31
- ;;^UTILITY(U,$J,358.3,94,1,0)
+ ;;^UTILITY(U,$J,358.3,148,1,3,0)
+ ;;=3^Fear of Injury
+ ;;^UTILITY(U,$J,358.3,148,1,4,0)
+ ;;=4^F40.233
+ ;;^UTILITY(U,$J,358.3,148,2)
+ ;;=^5003553
+ ;;^UTILITY(U,$J,358.3,149,0)
+ ;;=F40.240^^3^24^8
+ ;;^UTILITY(U,$J,358.3,149,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,94,1,3,0)
- ;;=3^Patulous Eustachian tube, right ear
- ;;^UTILITY(U,$J,358.3,94,1,4,0)
- ;;=4^H69.01
- ;;^UTILITY(U,$J,358.3,94,2)
- ;;=^5006674
- ;;^UTILITY(U,$J,358.3,95,0)
- ;;=H60.333^^1^5^32
- ;;^UTILITY(U,$J,358.3,95,1,0)
+ ;;^UTILITY(U,$J,358.3,149,1,3,0)
+ ;;=3^Claustrophobia
+ ;;^UTILITY(U,$J,358.3,149,1,4,0)
+ ;;=4^F40.240
+ ;;^UTILITY(U,$J,358.3,149,2)
+ ;;=^5003554
+ ;;^UTILITY(U,$J,358.3,150,0)
+ ;;=F40.241^^3^24^1
+ ;;^UTILITY(U,$J,358.3,150,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,95,1,3,0)
- ;;=3^Swimmer's ear, bilateral
- ;;^UTILITY(U,$J,358.3,95,1,4,0)
- ;;=4^H60.333
- ;;^UTILITY(U,$J,358.3,95,2)
- ;;=^5006457
- ;;^UTILITY(U,$J,358.3,96,0)
- ;;=H60.332^^1^5^33
- ;;^UTILITY(U,$J,358.3,96,1,0)
+ ;;^UTILITY(U,$J,358.3,150,1,3,0)
+ ;;=3^Acrophobia
+ ;;^UTILITY(U,$J,358.3,150,1,4,0)
+ ;;=4^F40.241
+ ;;^UTILITY(U,$J,358.3,150,2)
+ ;;=^5003555
+ ;;^UTILITY(U,$J,358.3,151,0)
+ ;;=F40.248^^3^24^18
+ ;;^UTILITY(U,$J,358.3,151,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,96,1,3,0)
- ;;=3^Swimmer's ear, left ear
- ;;^UTILITY(U,$J,358.3,96,1,4,0)
- ;;=4^H60.332
- ;;^UTILITY(U,$J,358.3,96,2)
- ;;=^5006456
- ;;^UTILITY(U,$J,358.3,97,0)
- ;;=H60.331^^1^5^34
+ ;;^UTILITY(U,$J,358.3,151,1,3,0)
+ ;;=3^Situational Type Phobia NEC
+ ;;^UTILITY(U,$J,358.3,151,1,4,0)
+ ;;=4^F40.248
+ ;;^UTILITY(U,$J,358.3,151,2)
+ ;;=^5003558
+ ;;^UTILITY(U,$J,358.3,152,0)
+ ;;=F40.01^^3^24^3
+ ;;^UTILITY(U,$J,358.3,152,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,152,1,3,0)
+ ;;=3^Agoraphobia w/ Panic Disorder
+ ;;^UTILITY(U,$J,358.3,152,1,4,0)
+ ;;=4^F40.01
+ ;;^UTILITY(U,$J,358.3,152,2)
+ ;;=^331911
+ ;;^UTILITY(U,$J,358.3,153,0)
+ ;;=F40.298^^3^24^16

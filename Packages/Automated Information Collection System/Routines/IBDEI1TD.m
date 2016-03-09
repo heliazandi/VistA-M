@@ -1,124 +1,134 @@
-IBDEI1TD ; ; 06-AUG-2015
+IBDEI1TD ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31971,1,4,0)
- ;;=4^I65.21
- ;;^UTILITY(U,$J,358.3,31971,2)
- ;;=^5007360
- ;;^UTILITY(U,$J,358.3,31972,0)
- ;;=I70.219^^182^1979^3
- ;;^UTILITY(U,$J,358.3,31972,1,0)
+ ;;^UTILITY(U,$J,358.3,30815,2)
+ ;;=^5003527
+ ;;^UTILITY(U,$J,358.3,30816,0)
+ ;;=F34.1^^123^1534^22
+ ;;^UTILITY(U,$J,358.3,30816,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31972,1,3,0)
- ;;=3^Athscl Native Arteries of Extrm w/ Intrmt Claud,Unspec Extrm
- ;;^UTILITY(U,$J,358.3,31972,1,4,0)
- ;;=4^I70.219
- ;;^UTILITY(U,$J,358.3,31972,2)
- ;;=^5007582
- ;;^UTILITY(U,$J,358.3,31973,0)
- ;;=I70.213^^182^1979^4
- ;;^UTILITY(U,$J,358.3,31973,1,0)
+ ;;^UTILITY(U,$J,358.3,30816,1,3,0)
+ ;;=3^Persistent Depressive Disorder (Dysthymic)
+ ;;^UTILITY(U,$J,358.3,30816,1,4,0)
+ ;;=4^F34.1
+ ;;^UTILITY(U,$J,358.3,30816,2)
+ ;;=^331913
+ ;;^UTILITY(U,$J,358.3,30817,0)
+ ;;=F32.9^^123^1534^5
+ ;;^UTILITY(U,$J,358.3,30817,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31973,1,3,0)
- ;;=3^Athscl Native Arteries of Extrm w/ Intrmt Claud,Bilat Legs
- ;;^UTILITY(U,$J,358.3,31973,1,4,0)
- ;;=4^I70.213
- ;;^UTILITY(U,$J,358.3,31973,2)
- ;;=^5007580
- ;;^UTILITY(U,$J,358.3,31974,0)
- ;;=I70.212^^182^1979^5
- ;;^UTILITY(U,$J,358.3,31974,1,0)
+ ;;^UTILITY(U,$J,358.3,30817,1,3,0)
+ ;;=3^Depressive Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30817,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,30817,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,30818,0)
+ ;;=N94.3^^123^1534^23
+ ;;^UTILITY(U,$J,358.3,30818,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31974,1,3,0)
- ;;=3^Athscl Native Arteries of Extrm w/ Intrmt Claud,Left Leg
- ;;^UTILITY(U,$J,358.3,31974,1,4,0)
- ;;=4^I70.212
- ;;^UTILITY(U,$J,358.3,31974,2)
- ;;=^5007579
- ;;^UTILITY(U,$J,358.3,31975,0)
- ;;=I70.211^^182^1979^6
- ;;^UTILITY(U,$J,358.3,31975,1,0)
+ ;;^UTILITY(U,$J,358.3,30818,1,3,0)
+ ;;=3^Premenstrual Dysphoric Disorder
+ ;;^UTILITY(U,$J,358.3,30818,1,4,0)
+ ;;=4^N94.3
+ ;;^UTILITY(U,$J,358.3,30818,2)
+ ;;=^5015919
+ ;;^UTILITY(U,$J,358.3,30819,0)
+ ;;=G31.84^^123^1534^21
+ ;;^UTILITY(U,$J,358.3,30819,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31975,1,3,0)
- ;;=3^Athscl Native Arteries of Extrm w/ Intrmt Claud,Right Leg
- ;;^UTILITY(U,$J,358.3,31975,1,4,0)
- ;;=4^I70.211
- ;;^UTILITY(U,$J,358.3,31975,2)
- ;;=^5007578
- ;;^UTILITY(U,$J,358.3,31976,0)
- ;;=I70.25^^182^1979^2
- ;;^UTILITY(U,$J,358.3,31976,1,0)
+ ;;^UTILITY(U,$J,358.3,30819,1,3,0)
+ ;;=3^Mild Cognitive Impairment,So Stated
+ ;;^UTILITY(U,$J,358.3,30819,1,4,0)
+ ;;=4^G31.84
+ ;;^UTILITY(U,$J,358.3,30819,2)
+ ;;=^5003813
+ ;;^UTILITY(U,$J,358.3,30820,0)
+ ;;=F44.81^^123^1535^6
+ ;;^UTILITY(U,$J,358.3,30820,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31976,1,3,0)
- ;;=3^Athscl Native Arteries of Extremitis w/ Ulceration
- ;;^UTILITY(U,$J,358.3,31976,1,4,0)
- ;;=4^I70.25
- ;;^UTILITY(U,$J,358.3,31976,2)
- ;;=^5007602
- ;;^UTILITY(U,$J,358.3,31977,0)
- ;;=I70.249^^182^1979^7
- ;;^UTILITY(U,$J,358.3,31977,1,0)
+ ;;^UTILITY(U,$J,358.3,30820,1,3,0)
+ ;;=3^Dissociative Identity Disorder
+ ;;^UTILITY(U,$J,358.3,30820,1,4,0)
+ ;;=4^F44.81
+ ;;^UTILITY(U,$J,358.3,30820,2)
+ ;;=^331909
+ ;;^UTILITY(U,$J,358.3,30821,0)
+ ;;=F44.9^^123^1535^5
+ ;;^UTILITY(U,$J,358.3,30821,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31977,1,3,0)
- ;;=3^Athscl Natv Art of Lt Leg w/ Ulceration of Unspec Site
- ;;^UTILITY(U,$J,358.3,31977,1,4,0)
- ;;=4^I70.249
- ;;^UTILITY(U,$J,358.3,31977,2)
- ;;=^5007601
- ;;^UTILITY(U,$J,358.3,31978,0)
- ;;=I70.239^^182^1979^8
- ;;^UTILITY(U,$J,358.3,31978,1,0)
+ ;;^UTILITY(U,$J,358.3,30821,1,3,0)
+ ;;=3^Dissociative Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30821,1,4,0)
+ ;;=4^F44.9
+ ;;^UTILITY(U,$J,358.3,30821,2)
+ ;;=^5003584
+ ;;^UTILITY(U,$J,358.3,30822,0)
+ ;;=F44.0^^123^1535^2
+ ;;^UTILITY(U,$J,358.3,30822,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31978,1,3,0)
- ;;=3^Athscl Natv Art of Rt Leg w/ Ulcer of Unspec Site
- ;;^UTILITY(U,$J,358.3,31978,1,4,0)
- ;;=4^I70.239
- ;;^UTILITY(U,$J,358.3,31978,2)
- ;;=^5007594
- ;;^UTILITY(U,$J,358.3,31979,0)
- ;;=I70.269^^182^1979^9
- ;;^UTILITY(U,$J,358.3,31979,1,0)
+ ;;^UTILITY(U,$J,358.3,30822,1,3,0)
+ ;;=3^Dissociative Amnesia
+ ;;^UTILITY(U,$J,358.3,30822,1,4,0)
+ ;;=4^F44.0
+ ;;^UTILITY(U,$J,358.3,30822,2)
+ ;;=^5003577
+ ;;^UTILITY(U,$J,358.3,30823,0)
+ ;;=F48.1^^123^1535^1
+ ;;^UTILITY(U,$J,358.3,30823,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31979,1,3,0)
- ;;=3^Athscl Natv Arteries of Extrm w/ Gangrene,Unspec Extremity
- ;;^UTILITY(U,$J,358.3,31979,1,4,0)
- ;;=4^I70.269
- ;;^UTILITY(U,$J,358.3,31979,2)
- ;;=^5007607
- ;;^UTILITY(U,$J,358.3,31980,0)
- ;;=I70.263^^182^1979^10
- ;;^UTILITY(U,$J,358.3,31980,1,0)
+ ;;^UTILITY(U,$J,358.3,30823,1,3,0)
+ ;;=3^Depersonalization/Derealization Disorder
+ ;;^UTILITY(U,$J,358.3,30823,1,4,0)
+ ;;=4^F48.1
+ ;;^UTILITY(U,$J,358.3,30823,2)
+ ;;=^5003593
+ ;;^UTILITY(U,$J,358.3,30824,0)
+ ;;=F44.89^^123^1535^4
+ ;;^UTILITY(U,$J,358.3,30824,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31980,1,3,0)
- ;;=3^Athscl Natv Arteries of Extrm w/ Gangrene,Bilateral Legs
- ;;^UTILITY(U,$J,358.3,31980,1,4,0)
- ;;=4^I70.263
- ;;^UTILITY(U,$J,358.3,31980,2)
- ;;=^5007605
- ;;^UTILITY(U,$J,358.3,31981,0)
- ;;=I70.262^^182^1979^11
- ;;^UTILITY(U,$J,358.3,31981,1,0)
+ ;;^UTILITY(U,$J,358.3,30824,1,3,0)
+ ;;=3^Dissociative Disorder NEC
+ ;;^UTILITY(U,$J,358.3,30824,1,4,0)
+ ;;=4^F44.89
+ ;;^UTILITY(U,$J,358.3,30824,2)
+ ;;=^5003583
+ ;;^UTILITY(U,$J,358.3,30825,0)
+ ;;=F44.1^^123^1535^3
+ ;;^UTILITY(U,$J,358.3,30825,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31981,1,3,0)
- ;;=3^Athscl Natv Arteries of Extrm w/ Gangrene,Left Leg
- ;;^UTILITY(U,$J,358.3,31981,1,4,0)
- ;;=4^I70.262
- ;;^UTILITY(U,$J,358.3,31981,2)
- ;;=^5007604
- ;;^UTILITY(U,$J,358.3,31982,0)
- ;;=I70.261^^182^1979^12
- ;;^UTILITY(U,$J,358.3,31982,1,0)
+ ;;^UTILITY(U,$J,358.3,30825,1,3,0)
+ ;;=3^Dissociative Amnesia w/ Dissociative Fugue
+ ;;^UTILITY(U,$J,358.3,30825,1,4,0)
+ ;;=4^F44.1
+ ;;^UTILITY(U,$J,358.3,30825,2)
+ ;;=^331908
+ ;;^UTILITY(U,$J,358.3,30826,0)
+ ;;=F50.02^^123^1536^1
+ ;;^UTILITY(U,$J,358.3,30826,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31982,1,3,0)
- ;;=3^Athscl Natv Arteries of Extrm w/ Gangrene,Right Leg
- ;;^UTILITY(U,$J,358.3,31982,1,4,0)
- ;;=4^I70.261
- ;;^UTILITY(U,$J,358.3,31982,2)
- ;;=^5007603
- ;;^UTILITY(U,$J,358.3,31983,0)
- ;;=I71.2^^182^1979^20
- ;;^UTILITY(U,$J,358.3,31983,1,0)
+ ;;^UTILITY(U,$J,358.3,30826,1,3,0)
+ ;;=3^Anorexia Nervosa,Binge-Eating/Purging Type
+ ;;^UTILITY(U,$J,358.3,30826,1,4,0)
+ ;;=4^F50.02
+ ;;^UTILITY(U,$J,358.3,30826,2)
+ ;;=^5003599
+ ;;^UTILITY(U,$J,358.3,30827,0)
+ ;;=F50.01^^123^1536^2
+ ;;^UTILITY(U,$J,358.3,30827,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31983,1,3,0)
- ;;=3^Thoracic Aortic Aneurysm w/o Rupture
+ ;;^UTILITY(U,$J,358.3,30827,1,3,0)
+ ;;=3^Anorexia Nervosa,Restricting Type
+ ;;^UTILITY(U,$J,358.3,30827,1,4,0)
+ ;;=4^F50.01
+ ;;^UTILITY(U,$J,358.3,30827,2)
+ ;;=^5003598
+ ;;^UTILITY(U,$J,358.3,30828,0)
+ ;;=F50.9^^123^1536^7
+ ;;^UTILITY(U,$J,358.3,30828,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30828,1,3,0)
+ ;;=3^Feeding/Eating Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30828,1,4,0)
+ ;;=4^F50.9

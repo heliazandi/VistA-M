@@ -1,124 +1,134 @@
-IBDEI1ZI ; ; 06-AUG-2015
+IBDEI1ZI ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34759,1,4,0)
- ;;=4^S42.242S
- ;;^UTILITY(U,$J,358.3,34759,2)
- ;;=^5026879
- ;;^UTILITY(U,$J,358.3,34760,0)
- ;;=S42.241S^^183^2023^7
- ;;^UTILITY(U,$J,358.3,34760,1,0)
+ ;;^UTILITY(U,$J,358.3,33672,0)
+ ;;=K92.2^^131^1675^49
+ ;;^UTILITY(U,$J,358.3,33672,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34760,1,3,0)
- ;;=3^4-part fx of surgical neck of right humerus, sequela
- ;;^UTILITY(U,$J,358.3,34760,1,4,0)
- ;;=4^S42.241S
- ;;^UTILITY(U,$J,358.3,34760,2)
- ;;=^5026872
- ;;^UTILITY(U,$J,358.3,34761,0)
- ;;=S42.352S^^183^2023^14
- ;;^UTILITY(U,$J,358.3,34761,1,0)
+ ;;^UTILITY(U,$J,358.3,33672,1,3,0)
+ ;;=3^GI Bleed,Unspec
+ ;;^UTILITY(U,$J,358.3,33672,1,4,0)
+ ;;=4^K92.2
+ ;;^UTILITY(U,$J,358.3,33672,2)
+ ;;=^5008915
+ ;;^UTILITY(U,$J,358.3,33673,0)
+ ;;=K62.5^^131^1675^8
+ ;;^UTILITY(U,$J,358.3,33673,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34761,1,3,0)
- ;;=3^Disp fx of comminuted shaft of humerus, left arm, sequela
- ;;^UTILITY(U,$J,358.3,34761,1,4,0)
- ;;=4^S42.352S
- ;;^UTILITY(U,$J,358.3,34761,2)
- ;;=^5027202
- ;;^UTILITY(U,$J,358.3,34762,0)
- ;;=S42.351S^^183^2023^15
- ;;^UTILITY(U,$J,358.3,34762,1,0)
+ ;;^UTILITY(U,$J,358.3,33673,1,3,0)
+ ;;=3^BRBPR
+ ;;^UTILITY(U,$J,358.3,33673,1,4,0)
+ ;;=4^K62.5
+ ;;^UTILITY(U,$J,358.3,33673,2)
+ ;;=^5008755
+ ;;^UTILITY(U,$J,358.3,33674,0)
+ ;;=K92.1^^131^1675^71
+ ;;^UTILITY(U,$J,358.3,33674,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34762,1,3,0)
- ;;=3^Disp fx of comminuted shaft of humerus, right arm, sequela
- ;;^UTILITY(U,$J,358.3,34762,1,4,0)
- ;;=4^S42.351S
- ;;^UTILITY(U,$J,358.3,34762,2)
- ;;=^5027195
- ;;^UTILITY(U,$J,358.3,34763,0)
- ;;=S42.422S^^183^2023^16
- ;;^UTILITY(U,$J,358.3,34763,1,0)
+ ;;^UTILITY(U,$J,358.3,33674,1,3,0)
+ ;;=3^Melena/Hematochezia
+ ;;^UTILITY(U,$J,358.3,33674,1,4,0)
+ ;;=4^K92.1
+ ;;^UTILITY(U,$J,358.3,33674,2)
+ ;;=^5008914
+ ;;^UTILITY(U,$J,358.3,33675,0)
+ ;;=R19.5^^131^1675^48
+ ;;^UTILITY(U,$J,358.3,33675,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34763,1,3,0)
- ;;=3^Disp fx of commnt suprcndl w/o intrcndl fx l humerus, sequela
- ;;^UTILITY(U,$J,358.3,34763,1,4,0)
- ;;=4^S42.422S
- ;;^UTILITY(U,$J,358.3,34763,2)
- ;;=^5027356
- ;;^UTILITY(U,$J,358.3,34764,0)
- ;;=S42.421S^^183^2023^17
- ;;^UTILITY(U,$J,358.3,34764,1,0)
+ ;;^UTILITY(U,$J,358.3,33675,1,3,0)
+ ;;=3^Fecal Abnormalities NEC
+ ;;^UTILITY(U,$J,358.3,33675,1,4,0)
+ ;;=4^R19.5
+ ;;^UTILITY(U,$J,358.3,33675,2)
+ ;;=^5019274
+ ;;^UTILITY(U,$J,358.3,33676,0)
+ ;;=E53.8^^131^1675^81
+ ;;^UTILITY(U,$J,358.3,33676,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34764,1,3,0)
- ;;=3^Disp fx of commnt suprcndl w/o intrcndl fx r humerus, sequela
- ;;^UTILITY(U,$J,358.3,34764,1,4,0)
- ;;=4^S42.421S
- ;;^UTILITY(U,$J,358.3,34764,2)
- ;;=^5027349
- ;;^UTILITY(U,$J,358.3,34765,0)
- ;;=S42.432S^^183^2023^28
- ;;^UTILITY(U,$J,358.3,34765,1,0)
+ ;;^UTILITY(U,$J,358.3,33676,1,3,0)
+ ;;=3^Vitamin B12 Deficiency
+ ;;^UTILITY(U,$J,358.3,33676,1,4,0)
+ ;;=4^E53.8
+ ;;^UTILITY(U,$J,358.3,33676,2)
+ ;;=^5002797
+ ;;^UTILITY(U,$J,358.3,33677,0)
+ ;;=A54.00^^131^1676^47
+ ;;^UTILITY(U,$J,358.3,33677,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34765,1,3,0)
- ;;=3^Disp fx of lateral epicondyle of l humerus, sequela
- ;;^UTILITY(U,$J,358.3,34765,1,4,0)
- ;;=4^S42.432S
- ;;^UTILITY(U,$J,358.3,34765,2)
- ;;=^5027398
- ;;^UTILITY(U,$J,358.3,34766,0)
- ;;=S42.431S^^183^2023^29
- ;;^UTILITY(U,$J,358.3,34766,1,0)
+ ;;^UTILITY(U,$J,358.3,33677,1,3,0)
+ ;;=3^Gonococcal Infection Lower Genitourinary Tract,Unspec
+ ;;^UTILITY(U,$J,358.3,33677,1,4,0)
+ ;;=4^A54.00
+ ;;^UTILITY(U,$J,358.3,33677,2)
+ ;;=^5000311
+ ;;^UTILITY(U,$J,358.3,33678,0)
+ ;;=A54.09^^131^1676^48
+ ;;^UTILITY(U,$J,358.3,33678,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34766,1,3,0)
- ;;=3^Disp fx of lateral epicondyle of r humerus, sequela
- ;;^UTILITY(U,$J,358.3,34766,1,4,0)
- ;;=4^S42.431S
- ;;^UTILITY(U,$J,358.3,34766,2)
- ;;=^5027391
- ;;^UTILITY(U,$J,358.3,34767,0)
- ;;=S42.442S^^183^2023^34
- ;;^UTILITY(U,$J,358.3,34767,1,0)
+ ;;^UTILITY(U,$J,358.3,33678,1,3,0)
+ ;;=3^Gonococcal Infection Lower Genitourinary Tract,Other
+ ;;^UTILITY(U,$J,358.3,33678,1,4,0)
+ ;;=4^A54.09
+ ;;^UTILITY(U,$J,358.3,33678,2)
+ ;;=^5000315
+ ;;^UTILITY(U,$J,358.3,33679,0)
+ ;;=A54.02^^131^1676^49
+ ;;^UTILITY(U,$J,358.3,33679,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34767,1,3,0)
- ;;=3^Disp fx of medial epicondyle of l humerus, sequela
- ;;^UTILITY(U,$J,358.3,34767,1,4,0)
- ;;=4^S42.442S
- ;;^UTILITY(U,$J,358.3,34767,2)
- ;;=^5027440
- ;;^UTILITY(U,$J,358.3,34768,0)
- ;;=S42.441S^^183^2023^35
- ;;^UTILITY(U,$J,358.3,34768,1,0)
+ ;;^UTILITY(U,$J,358.3,33679,1,3,0)
+ ;;=3^Gonococcal Vulvovaginitis,Unspec
+ ;;^UTILITY(U,$J,358.3,33679,1,4,0)
+ ;;=4^A54.02
+ ;;^UTILITY(U,$J,358.3,33679,2)
+ ;;=^5000313
+ ;;^UTILITY(U,$J,358.3,33680,0)
+ ;;=A54.1^^131^1676^46
+ ;;^UTILITY(U,$J,358.3,33680,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34768,1,3,0)
- ;;=3^Disp fx of medial epicondyle of r humerus, sequela
- ;;^UTILITY(U,$J,358.3,34768,1,4,0)
- ;;=4^S42.441S
- ;;^UTILITY(U,$J,358.3,34768,2)
- ;;=^5027433
- ;;^UTILITY(U,$J,358.3,34769,0)
- ;;=S42.252S^^183^2023^22
- ;;^UTILITY(U,$J,358.3,34769,1,0)
+ ;;^UTILITY(U,$J,358.3,33680,1,3,0)
+ ;;=3^Gonococcal Infection Lower GU Tract w/ Periureth & Acc Gland Abscess
+ ;;^UTILITY(U,$J,358.3,33680,1,4,0)
+ ;;=4^A54.1
+ ;;^UTILITY(U,$J,358.3,33680,2)
+ ;;=^5000316
+ ;;^UTILITY(U,$J,358.3,33681,0)
+ ;;=A54.01^^131^1676^45
+ ;;^UTILITY(U,$J,358.3,33681,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34769,1,3,0)
- ;;=3^Disp fx of greater tuberosity of left humerus, sequela
- ;;^UTILITY(U,$J,358.3,34769,1,4,0)
- ;;=4^S42.252S
- ;;^UTILITY(U,$J,358.3,34769,2)
- ;;=^5026900
- ;;^UTILITY(U,$J,358.3,34770,0)
- ;;=S42.251S^^183^2023^23
- ;;^UTILITY(U,$J,358.3,34770,1,0)
+ ;;^UTILITY(U,$J,358.3,33681,1,3,0)
+ ;;=3^Gonococcal Cystitis & Urethritis,Unspec
+ ;;^UTILITY(U,$J,358.3,33681,1,4,0)
+ ;;=4^A54.01
+ ;;^UTILITY(U,$J,358.3,33681,2)
+ ;;=^5000312
+ ;;^UTILITY(U,$J,358.3,33682,0)
+ ;;=B37.49^^131^1676^12
+ ;;^UTILITY(U,$J,358.3,33682,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34770,1,3,0)
- ;;=3^Disp fx of greater tuberosity of right humerus, sequela
- ;;^UTILITY(U,$J,358.3,34770,1,4,0)
- ;;=4^S42.251S
- ;;^UTILITY(U,$J,358.3,34770,2)
- ;;=^5026893
- ;;^UTILITY(U,$J,358.3,34771,0)
- ;;=S42.452S^^183^2023^24
- ;;^UTILITY(U,$J,358.3,34771,1,0)
+ ;;^UTILITY(U,$J,358.3,33682,1,3,0)
+ ;;=3^Candidiasis Urogenital,Other
+ ;;^UTILITY(U,$J,358.3,33682,1,4,0)
+ ;;=4^B37.49
+ ;;^UTILITY(U,$J,358.3,33682,2)
+ ;;=^5000618
+ ;;^UTILITY(U,$J,358.3,33683,0)
+ ;;=B37.41^^131^1676^11
+ ;;^UTILITY(U,$J,358.3,33683,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34771,1,3,0)
- ;;=3^Disp fx of lateral condyle of left humerus, sequela
+ ;;^UTILITY(U,$J,358.3,33683,1,3,0)
+ ;;=3^Candidal Cystitis & Urethritis
+ ;;^UTILITY(U,$J,358.3,33683,1,4,0)
+ ;;=4^B37.41
+ ;;^UTILITY(U,$J,358.3,33683,2)
+ ;;=^5000616
+ ;;^UTILITY(U,$J,358.3,33684,0)
+ ;;=B37.42^^131^1676^10
+ ;;^UTILITY(U,$J,358.3,33684,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33684,1,3,0)
+ ;;=3^Candidal Balanitis
+ ;;^UTILITY(U,$J,358.3,33684,1,4,0)
+ ;;=4^B37.42
+ ;;^UTILITY(U,$J,358.3,33684,2)
+ ;;=^5000617

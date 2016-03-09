@@ -1,136 +1,138 @@
-IBDEI017 ; ; 06-AUG-2015
+IBDEI017 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3)
- ;;=^IBE(358.3,
- ;;^UTILITY(U,$J,358.3,0)
- ;;=IMP/EXP SELECTION^358.3I^35717^35717
- ;;^UTILITY(U,$J,358.3,1,0)
- ;;=S04.61XA^^1^1^4
- ;;^UTILITY(U,$J,358.3,1,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1,1,3,0)
- ;;=3^Injury of acoustic nerve, right side, initial encounter
- ;;^UTILITY(U,$J,358.3,1,1,4,0)
- ;;=4^S04.61XA
- ;;^UTILITY(U,$J,358.3,1,2)
- ;;=^5020540
- ;;^UTILITY(U,$J,358.3,2,0)
- ;;=S04.61XD^^1^1^5
- ;;^UTILITY(U,$J,358.3,2,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2,1,3,0)
- ;;=3^Injury of acoustic nerve, right side, subsequent encounter
- ;;^UTILITY(U,$J,358.3,2,1,4,0)
- ;;=4^S04.61XD
- ;;^UTILITY(U,$J,358.3,2,2)
- ;;=^5020541
- ;;^UTILITY(U,$J,358.3,3,0)
- ;;=S04.61XS^^1^1^6
- ;;^UTILITY(U,$J,358.3,3,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3,1,3,0)
- ;;=3^Injury of acoustic nerve, right side, sequela
- ;;^UTILITY(U,$J,358.3,3,1,4,0)
- ;;=4^S04.61XS
- ;;^UTILITY(U,$J,358.3,3,2)
- ;;=^5020542
- ;;^UTILITY(U,$J,358.3,4,0)
- ;;=S04.62XA^^1^1^1
- ;;^UTILITY(U,$J,358.3,4,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4,1,3,0)
- ;;=3^Injury of acoustic nerve, left side, initial encounter
- ;;^UTILITY(U,$J,358.3,4,1,4,0)
- ;;=4^S04.62XA
- ;;^UTILITY(U,$J,358.3,4,2)
- ;;=^5020543
- ;;^UTILITY(U,$J,358.3,5,0)
- ;;=S04.62XD^^1^1^3
- ;;^UTILITY(U,$J,358.3,5,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5,1,3,0)
- ;;=3^Injury of acoustic nerve, left side, subsequent encounter
- ;;^UTILITY(U,$J,358.3,5,1,4,0)
- ;;=4^S04.62XD
- ;;^UTILITY(U,$J,358.3,5,2)
- ;;=^5020544
- ;;^UTILITY(U,$J,358.3,6,0)
- ;;=S04.62XS^^1^1^2
- ;;^UTILITY(U,$J,358.3,6,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6,1,3,0)
- ;;=3^Injury of acoustic nerve, left side, sequela
- ;;^UTILITY(U,$J,358.3,6,1,4,0)
- ;;=4^S04.62XS
- ;;^UTILITY(U,$J,358.3,6,2)
- ;;=^5020545
- ;;^UTILITY(U,$J,358.3,7,0)
- ;;=S04.9XXA^^1^1^7
- ;;^UTILITY(U,$J,358.3,7,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7,1,3,0)
- ;;=3^Injury of unspecified cranial nerve, initial encounter
- ;;^UTILITY(U,$J,358.3,7,1,4,0)
- ;;=4^S04.9XXA
- ;;^UTILITY(U,$J,358.3,7,2)
- ;;=^5020573
- ;;^UTILITY(U,$J,358.3,8,0)
- ;;=S04.9XXD^^1^1^9
- ;;^UTILITY(U,$J,358.3,8,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8,1,3,0)
- ;;=3^Injury of unspecified cranial nerve, subsequent encounter
- ;;^UTILITY(U,$J,358.3,8,1,4,0)
- ;;=4^S04.9XXD
- ;;^UTILITY(U,$J,358.3,8,2)
- ;;=^5020574
- ;;^UTILITY(U,$J,358.3,9,0)
- ;;=S04.9XXS^^1^1^8
- ;;^UTILITY(U,$J,358.3,9,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9,1,3,0)
- ;;=3^Injury of unspecified cranial nerve, sequela
- ;;^UTILITY(U,$J,358.3,9,1,4,0)
- ;;=4^S04.9XXS
- ;;^UTILITY(U,$J,358.3,9,2)
- ;;=^5020575
- ;;^UTILITY(U,$J,358.3,10,0)
- ;;=H93.213^^1^2^5
- ;;^UTILITY(U,$J,358.3,10,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10,1,3,0)
- ;;=3^Auditory recruitment, bilateral
- ;;^UTILITY(U,$J,358.3,10,1,4,0)
- ;;=4^H93.213
- ;;^UTILITY(U,$J,358.3,10,2)
- ;;=^5006970
- ;;^UTILITY(U,$J,358.3,11,0)
- ;;=H93.212^^1^2^6
- ;;^UTILITY(U,$J,358.3,11,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11,1,3,0)
- ;;=3^Auditory recruitment, left ear
- ;;^UTILITY(U,$J,358.3,11,1,4,0)
- ;;=4^H93.212
- ;;^UTILITY(U,$J,358.3,11,2)
- ;;=^5006969
- ;;^UTILITY(U,$J,358.3,12,0)
- ;;=H93.211^^1^2^7
- ;;^UTILITY(U,$J,358.3,12,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12,1,3,0)
- ;;=3^Auditory recruitment, right ear
- ;;^UTILITY(U,$J,358.3,12,1,4,0)
- ;;=4^H93.211
- ;;^UTILITY(U,$J,358.3,12,2)
- ;;=^5006968
- ;;^UTILITY(U,$J,358.3,13,0)
- ;;=H93.25^^1^2^8
- ;;^UTILITY(U,$J,358.3,13,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13,1,3,0)
- ;;=3^Central auditory processing disorder
- ;;^UTILITY(U,$J,358.3,13,1,4,0)
- ;;=4^H93.25
+ ;;^UTILITY(U,$J,358.3,50,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,50,1,1,0)
+ ;;=1^DETAILED HX OR EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,50,1,2,0)
+ ;;=2^99214
+ ;;^UTILITY(U,$J,358.3,51,0)
+ ;;=99215^^2^7^4
+ ;;^UTILITY(U,$J,358.3,51,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,51,1,1,0)
+ ;;=1^COMPREH HX OR EXAM;HIGH COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,51,1,2,0)
+ ;;=2^99215
+ ;;^UTILITY(U,$J,358.3,52,0)
+ ;;=99241^^2^8^1
+ ;;^UTILITY(U,$J,358.3,52,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,52,1,1,0)
+ ;;=1^PROBLEM FOCUSED HX & EXAM;SF MDM
+ ;;^UTILITY(U,$J,358.3,52,1,2,0)
+ ;;=2^99241
+ ;;^UTILITY(U,$J,358.3,53,0)
+ ;;=99242^^2^8^2
+ ;;^UTILITY(U,$J,358.3,53,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,53,1,1,0)
+ ;;=1^EXPAND PROB FOCUS HX & EXAM;SF MDM
+ ;;^UTILITY(U,$J,358.3,53,1,2,0)
+ ;;=2^99242
+ ;;^UTILITY(U,$J,358.3,54,0)
+ ;;=99243^^2^8^3
+ ;;^UTILITY(U,$J,358.3,54,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,54,1,1,0)
+ ;;=1^DETAILED HX & EXAM;LOW COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,54,1,2,0)
+ ;;=2^99243
+ ;;^UTILITY(U,$J,358.3,55,0)
+ ;;=99244^^2^8^4
+ ;;^UTILITY(U,$J,358.3,55,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,55,1,1,0)
+ ;;=1^COMPREH HX & EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,55,1,2,0)
+ ;;=2^99244
+ ;;^UTILITY(U,$J,358.3,56,0)
+ ;;=99245^^2^8^5
+ ;;^UTILITY(U,$J,358.3,56,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,56,1,1,0)
+ ;;=1^COMPREH HX & EXAM;HIGH COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,56,1,2,0)
+ ;;=2^99245
+ ;;^UTILITY(U,$J,358.3,57,0)
+ ;;=99201^^2^9^1
+ ;;^UTILITY(U,$J,358.3,57,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,57,1,1,0)
+ ;;=1^PROBLEM FOCUSED HX & EXAM;SF MDM
+ ;;^UTILITY(U,$J,358.3,57,1,2,0)
+ ;;=2^99201
+ ;;^UTILITY(U,$J,358.3,58,0)
+ ;;=99202^^2^9^2
+ ;;^UTILITY(U,$J,358.3,58,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,58,1,1,0)
+ ;;=1^EXPAND PROB FOCUS HX & EXAM;SF MDM
+ ;;^UTILITY(U,$J,358.3,58,1,2,0)
+ ;;=2^99202
+ ;;^UTILITY(U,$J,358.3,59,0)
+ ;;=99203^^2^9^3
+ ;;^UTILITY(U,$J,358.3,59,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,59,1,1,0)
+ ;;=1^DETAILED HX & EXAM;LOW COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,59,1,2,0)
+ ;;=2^99203
+ ;;^UTILITY(U,$J,358.3,60,0)
+ ;;=99204^^2^9^4
+ ;;^UTILITY(U,$J,358.3,60,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,60,1,1,0)
+ ;;=1^COMPREH HX & EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,60,1,2,0)
+ ;;=2^99204
+ ;;^UTILITY(U,$J,358.3,61,0)
+ ;;=99205^^2^9^5
+ ;;^UTILITY(U,$J,358.3,61,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,61,1,1,0)
+ ;;=1^COMPREH HX & EXAM;HIGH COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,61,1,2,0)
+ ;;=2^99205
+ ;;^UTILITY(U,$J,358.3,62,0)
+ ;;=99251^^2^10^1
+ ;;^UTILITY(U,$J,358.3,62,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,62,1,1,0)
+ ;;=1^PROBLEM FOCUSED HX & EXAM;SF MDM
+ ;;^UTILITY(U,$J,358.3,62,1,2,0)
+ ;;=2^99251
+ ;;^UTILITY(U,$J,358.3,63,0)
+ ;;=99252^^2^10^2
+ ;;^UTILITY(U,$J,358.3,63,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,63,1,1,0)
+ ;;=1^EXPAN PROB FOCUS HX & EXAM;SF MDM
+ ;;^UTILITY(U,$J,358.3,63,1,2,0)
+ ;;=2^99252
+ ;;^UTILITY(U,$J,358.3,64,0)
+ ;;=99253^^2^10^3
+ ;;^UTILITY(U,$J,358.3,64,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,64,1,1,0)
+ ;;=1^DETAILED HX & EXAM;LOW COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,64,1,2,0)
+ ;;=2^99253
+ ;;^UTILITY(U,$J,358.3,65,0)
+ ;;=99254^^2^10^4
+ ;;^UTILITY(U,$J,358.3,65,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,65,1,1,0)
+ ;;=1^COMPREH HX & EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,65,1,2,0)
+ ;;=2^99254
+ ;;^UTILITY(U,$J,358.3,66,0)
+ ;;=99255^^2^10^5
+ ;;^UTILITY(U,$J,358.3,66,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,66,1,1,0)
+ ;;=1^COMPREH HX & EXAM;HIGH COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,66,1,2,0)
+ ;;=2^99255

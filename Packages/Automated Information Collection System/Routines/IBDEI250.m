@@ -1,0 +1,134 @@
+IBDEI250 ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,36261,1,4,0)
+ ;;=4^C34.11
+ ;;^UTILITY(U,$J,358.3,36261,2)
+ ;;=^5000961
+ ;;^UTILITY(U,$J,358.3,36262,0)
+ ;;=C34.12^^137^1755^50
+ ;;^UTILITY(U,$J,358.3,36262,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36262,1,3,0)
+ ;;=3^Malig Neop Upper Lobe,Lt Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,36262,1,4,0)
+ ;;=4^C34.12
+ ;;^UTILITY(U,$J,358.3,36262,2)
+ ;;=^5000962
+ ;;^UTILITY(U,$J,358.3,36263,0)
+ ;;=C34.2^^137^1755^44
+ ;;^UTILITY(U,$J,358.3,36263,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36263,1,3,0)
+ ;;=3^Malig Neop Middle Lobe,Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,36263,1,4,0)
+ ;;=4^C34.2
+ ;;^UTILITY(U,$J,358.3,36263,2)
+ ;;=^267137
+ ;;^UTILITY(U,$J,358.3,36264,0)
+ ;;=C34.31^^137^1755^42
+ ;;^UTILITY(U,$J,358.3,36264,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36264,1,3,0)
+ ;;=3^Malig Neop Lower Lobe,Rt Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,36264,1,4,0)
+ ;;=4^C34.31
+ ;;^UTILITY(U,$J,358.3,36264,2)
+ ;;=^5133321
+ ;;^UTILITY(U,$J,358.3,36265,0)
+ ;;=C34.32^^137^1755^41
+ ;;^UTILITY(U,$J,358.3,36265,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36265,1,3,0)
+ ;;=3^Malig Neop Lower Lobe,Lt Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,36265,1,4,0)
+ ;;=4^C34.32
+ ;;^UTILITY(U,$J,358.3,36265,2)
+ ;;=^5133322
+ ;;^UTILITY(U,$J,358.3,36266,0)
+ ;;=C34.81^^137^1755^46
+ ;;^UTILITY(U,$J,358.3,36266,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36266,1,3,0)
+ ;;=3^Malig Neop Overlapping Sites,Rt Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,36266,1,4,0)
+ ;;=4^C34.81
+ ;;^UTILITY(U,$J,358.3,36266,2)
+ ;;=^5000964
+ ;;^UTILITY(U,$J,358.3,36267,0)
+ ;;=C34.82^^137^1755^45
+ ;;^UTILITY(U,$J,358.3,36267,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36267,1,3,0)
+ ;;=3^Malig Neop Overlapping Sites,Lt Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,36267,1,4,0)
+ ;;=4^C34.82
+ ;;^UTILITY(U,$J,358.3,36267,2)
+ ;;=^5000965
+ ;;^UTILITY(U,$J,358.3,36268,0)
+ ;;=C34.91^^137^1755^49
+ ;;^UTILITY(U,$J,358.3,36268,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36268,1,3,0)
+ ;;=3^Malig Neop Unspec Part,Rt Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,36268,1,4,0)
+ ;;=4^C34.91
+ ;;^UTILITY(U,$J,358.3,36268,2)
+ ;;=^5000967
+ ;;^UTILITY(U,$J,358.3,36269,0)
+ ;;=C34.92^^137^1755^48
+ ;;^UTILITY(U,$J,358.3,36269,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36269,1,3,0)
+ ;;=3^Malig Neop Unspec Part,Lt Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,36269,1,4,0)
+ ;;=4^C34.92
+ ;;^UTILITY(U,$J,358.3,36269,2)
+ ;;=^5000968
+ ;;^UTILITY(U,$J,358.3,36270,0)
+ ;;=C38.4^^137^1755^47
+ ;;^UTILITY(U,$J,358.3,36270,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36270,1,3,0)
+ ;;=3^Malig Neop Pleura
+ ;;^UTILITY(U,$J,358.3,36270,1,4,0)
+ ;;=4^C38.4
+ ;;^UTILITY(U,$J,358.3,36270,2)
+ ;;=^267140
+ ;;^UTILITY(U,$J,358.3,36271,0)
+ ;;=C39.9^^137^1755^43
+ ;;^UTILITY(U,$J,358.3,36271,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36271,1,3,0)
+ ;;=3^Malig Neop Lower Respiratory Tract
+ ;;^UTILITY(U,$J,358.3,36271,1,4,0)
+ ;;=4^C39.9
+ ;;^UTILITY(U,$J,358.3,36271,2)
+ ;;=^5000972
+ ;;^UTILITY(U,$J,358.3,36272,0)
+ ;;=R76.11^^137^1755^87
+ ;;^UTILITY(U,$J,358.3,36272,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36272,1,3,0)
+ ;;=3^Reaction to Skin Test w/o Active TB
+ ;;^UTILITY(U,$J,358.3,36272,1,4,0)
+ ;;=4^R76.11
+ ;;^UTILITY(U,$J,358.3,36272,2)
+ ;;=^5019570
+ ;;^UTILITY(U,$J,358.3,36273,0)
+ ;;=E66.9^^137^1755^65
+ ;;^UTILITY(U,$J,358.3,36273,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36273,1,3,0)
+ ;;=3^Obesity,Unspec
+ ;;^UTILITY(U,$J,358.3,36273,1,4,0)
+ ;;=4^E66.9
+ ;;^UTILITY(U,$J,358.3,36273,2)
+ ;;=^5002832
+ ;;^UTILITY(U,$J,358.3,36274,0)
+ ;;=I26.99^^137^1755^79
+ ;;^UTILITY(U,$J,358.3,36274,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36274,1,3,0)
+ ;;=3^Pulmonary Embolism w/o Acute Cor Pulmonale

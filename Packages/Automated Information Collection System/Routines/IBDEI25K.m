@@ -1,0 +1,132 @@
+IBDEI25K ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,36519,1,3,0)
+ ;;=3^AC Actinic Otitis Externa,Bilateral
+ ;;^UTILITY(U,$J,358.3,36519,1,4,0)
+ ;;=4^H60.513
+ ;;^UTILITY(U,$J,358.3,36519,2)
+ ;;=^5006472
+ ;;^UTILITY(U,$J,358.3,36520,0)
+ ;;=H60.512^^137^1767^2
+ ;;^UTILITY(U,$J,358.3,36520,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36520,1,3,0)
+ ;;=3^AC Actinic Otitis Externa,Left Ear
+ ;;^UTILITY(U,$J,358.3,36520,1,4,0)
+ ;;=4^H60.512
+ ;;^UTILITY(U,$J,358.3,36520,2)
+ ;;=^5006471
+ ;;^UTILITY(U,$J,358.3,36521,0)
+ ;;=H60.511^^137^1767^3
+ ;;^UTILITY(U,$J,358.3,36521,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36521,1,3,0)
+ ;;=3^AC Actinic Otitis Externa,Right Ear
+ ;;^UTILITY(U,$J,358.3,36521,1,4,0)
+ ;;=4^H60.511
+ ;;^UTILITY(U,$J,358.3,36521,2)
+ ;;=^5006470
+ ;;^UTILITY(U,$J,358.3,36522,0)
+ ;;=J21.1^^137^1767^5
+ ;;^UTILITY(U,$J,358.3,36522,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36522,1,3,0)
+ ;;=3^AC Bronchiolitis d/t Human Metapneumovirus
+ ;;^UTILITY(U,$J,358.3,36522,1,4,0)
+ ;;=4^J21.1
+ ;;^UTILITY(U,$J,358.3,36522,2)
+ ;;=^5008197
+ ;;^UTILITY(U,$J,358.3,36523,0)
+ ;;=J21.8^^137^1767^6
+ ;;^UTILITY(U,$J,358.3,36523,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36523,1,3,0)
+ ;;=3^AC Bronchiolitis d/t Specified Organisms
+ ;;^UTILITY(U,$J,358.3,36523,1,4,0)
+ ;;=4^J21.8
+ ;;^UTILITY(U,$J,358.3,36523,2)
+ ;;=^5008198
+ ;;^UTILITY(U,$J,358.3,36524,0)
+ ;;=J21.9^^137^1767^4
+ ;;^UTILITY(U,$J,358.3,36524,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36524,1,3,0)
+ ;;=3^AC Bronchilitis,Unspec
+ ;;^UTILITY(U,$J,358.3,36524,1,4,0)
+ ;;=4^J21.9
+ ;;^UTILITY(U,$J,358.3,36524,2)
+ ;;=^5008199
+ ;;^UTILITY(U,$J,358.3,36525,0)
+ ;;=J20.3^^137^1767^7
+ ;;^UTILITY(U,$J,358.3,36525,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36525,1,3,0)
+ ;;=3^AC Bronchitis d/t Coxsackievirus
+ ;;^UTILITY(U,$J,358.3,36525,1,4,0)
+ ;;=4^J20.3
+ ;;^UTILITY(U,$J,358.3,36525,2)
+ ;;=^5008189
+ ;;^UTILITY(U,$J,358.3,36526,0)
+ ;;=J20.7^^137^1767^8
+ ;;^UTILITY(U,$J,358.3,36526,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36526,1,3,0)
+ ;;=3^AC Bronchitis d/t Echovirus
+ ;;^UTILITY(U,$J,358.3,36526,1,4,0)
+ ;;=4^J20.7
+ ;;^UTILITY(U,$J,358.3,36526,2)
+ ;;=^5008193
+ ;;^UTILITY(U,$J,358.3,36527,0)
+ ;;=J20.1^^137^1767^9
+ ;;^UTILITY(U,$J,358.3,36527,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36527,1,3,0)
+ ;;=3^AC Bronchitis d/t Hemophilus Influenzae
+ ;;^UTILITY(U,$J,358.3,36527,1,4,0)
+ ;;=4^J20.1
+ ;;^UTILITY(U,$J,358.3,36527,2)
+ ;;=^5008187
+ ;;^UTILITY(U,$J,358.3,36528,0)
+ ;;=J20.0^^137^1767^10
+ ;;^UTILITY(U,$J,358.3,36528,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36528,1,3,0)
+ ;;=3^AC Bronchitis d/t Mycoplasma Pneumoniae
+ ;;^UTILITY(U,$J,358.3,36528,1,4,0)
+ ;;=4^J20.0
+ ;;^UTILITY(U,$J,358.3,36528,2)
+ ;;=^5008186
+ ;;^UTILITY(U,$J,358.3,36529,0)
+ ;;=J20.8^^137^1767^14
+ ;;^UTILITY(U,$J,358.3,36529,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36529,1,3,0)
+ ;;=3^AC Bronchitis d/t Specified Organisms
+ ;;^UTILITY(U,$J,358.3,36529,1,4,0)
+ ;;=4^J20.8
+ ;;^UTILITY(U,$J,358.3,36529,2)
+ ;;=^5008194
+ ;;^UTILITY(U,$J,358.3,36530,0)
+ ;;=J20.4^^137^1767^11
+ ;;^UTILITY(U,$J,358.3,36530,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36530,1,3,0)
+ ;;=3^AC Bronchitis d/t Parainfluenza Virus
+ ;;^UTILITY(U,$J,358.3,36530,1,4,0)
+ ;;=4^J20.4
+ ;;^UTILITY(U,$J,358.3,36530,2)
+ ;;=^5008190
+ ;;^UTILITY(U,$J,358.3,36531,0)
+ ;;=J20.5^^137^1767^12
+ ;;^UTILITY(U,$J,358.3,36531,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36531,1,3,0)
+ ;;=3^AC Bronchitis d/t Respiratory Syncytial Virus
+ ;;^UTILITY(U,$J,358.3,36531,1,4,0)
+ ;;=4^J20.5
+ ;;^UTILITY(U,$J,358.3,36531,2)
+ ;;=^5008191
+ ;;^UTILITY(U,$J,358.3,36532,0)
+ ;;=J20.6^^137^1767^13

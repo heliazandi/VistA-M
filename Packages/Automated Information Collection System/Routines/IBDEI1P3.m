@@ -1,124 +1,132 @@
-IBDEI1P3 ; ; 06-AUG-2015
+IBDEI1P3 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30067,0)
- ;;=O98.211^^178^1913^29
- ;;^UTILITY(U,$J,358.3,30067,1,0)
+ ;;^UTILITY(U,$J,358.3,28815,1,3,0)
+ ;;=3^HELLP syndrome (HELLP), second trimester
+ ;;^UTILITY(U,$J,358.3,28815,1,4,0)
+ ;;=4^O14.22
+ ;;^UTILITY(U,$J,358.3,28815,2)
+ ;;=^5016169
+ ;;^UTILITY(U,$J,358.3,28816,0)
+ ;;=O14.23^^115^1449^8
+ ;;^UTILITY(U,$J,358.3,28816,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30067,1,3,0)
- ;;=3^Gonorrhea complicating pregnancy, first trimester
- ;;^UTILITY(U,$J,358.3,30067,1,4,0)
- ;;=4^O98.211
- ;;^UTILITY(U,$J,358.3,30067,2)
- ;;=^5017869
- ;;^UTILITY(U,$J,358.3,30068,0)
- ;;=O98.212^^178^1913^30
- ;;^UTILITY(U,$J,358.3,30068,1,0)
+ ;;^UTILITY(U,$J,358.3,28816,1,3,0)
+ ;;=3^HELLP syndrome (HELLP), third trimester
+ ;;^UTILITY(U,$J,358.3,28816,1,4,0)
+ ;;=4^O14.23
+ ;;^UTILITY(U,$J,358.3,28816,2)
+ ;;=^5016170
+ ;;^UTILITY(U,$J,358.3,28817,0)
+ ;;=O15.02^^115^1449^1
+ ;;^UTILITY(U,$J,358.3,28817,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30068,1,3,0)
- ;;=3^Gonorrhea complicating pregnancy, second trimester
- ;;^UTILITY(U,$J,358.3,30068,1,4,0)
- ;;=4^O98.212
- ;;^UTILITY(U,$J,358.3,30068,2)
- ;;=^5017870
- ;;^UTILITY(U,$J,358.3,30069,0)
- ;;=O98.213^^178^1913^31
- ;;^UTILITY(U,$J,358.3,30069,1,0)
+ ;;^UTILITY(U,$J,358.3,28817,1,3,0)
+ ;;=3^Eclampsia in pregnancy, second trimester
+ ;;^UTILITY(U,$J,358.3,28817,1,4,0)
+ ;;=4^O15.02
+ ;;^UTILITY(U,$J,358.3,28817,2)
+ ;;=^5016175
+ ;;^UTILITY(U,$J,358.3,28818,0)
+ ;;=O15.03^^115^1449^2
+ ;;^UTILITY(U,$J,358.3,28818,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30069,1,3,0)
- ;;=3^Gonorrhea complicating pregnancy, third trimester
- ;;^UTILITY(U,$J,358.3,30069,1,4,0)
- ;;=4^O98.213
- ;;^UTILITY(U,$J,358.3,30069,2)
- ;;=^5017871
- ;;^UTILITY(U,$J,358.3,30070,0)
- ;;=O98.23^^178^1913^32
- ;;^UTILITY(U,$J,358.3,30070,1,0)
+ ;;^UTILITY(U,$J,358.3,28818,1,3,0)
+ ;;=3^Eclampsia in pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,28818,1,4,0)
+ ;;=4^O15.03
+ ;;^UTILITY(U,$J,358.3,28818,2)
+ ;;=^5016176
+ ;;^UTILITY(U,$J,358.3,28819,0)
+ ;;=O21.0^^115^1450^3
+ ;;^UTILITY(U,$J,358.3,28819,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30070,1,3,0)
- ;;=3^Gonorrhea complicating the puerperium
- ;;^UTILITY(U,$J,358.3,30070,1,4,0)
- ;;=4^O98.23
- ;;^UTILITY(U,$J,358.3,30070,2)
- ;;=^5017874
- ;;^UTILITY(U,$J,358.3,30071,0)
- ;;=O98.011^^178^1913^84
- ;;^UTILITY(U,$J,358.3,30071,1,0)
+ ;;^UTILITY(U,$J,358.3,28819,1,3,0)
+ ;;=3^Mild hyperemesis gravidarum
+ ;;^UTILITY(U,$J,358.3,28819,1,4,0)
+ ;;=4^O21.0
+ ;;^UTILITY(U,$J,358.3,28819,2)
+ ;;=^5016185
+ ;;^UTILITY(U,$J,358.3,28820,0)
+ ;;=O21.1^^115^1450^1
+ ;;^UTILITY(U,$J,358.3,28820,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30071,1,3,0)
- ;;=3^Tuberculosis complicating pregnancy, first trimester
- ;;^UTILITY(U,$J,358.3,30071,1,4,0)
- ;;=4^O98.011
- ;;^UTILITY(U,$J,358.3,30071,2)
- ;;=^5017857
- ;;^UTILITY(U,$J,358.3,30072,0)
- ;;=O98.012^^178^1913^85
- ;;^UTILITY(U,$J,358.3,30072,1,0)
+ ;;^UTILITY(U,$J,358.3,28820,1,3,0)
+ ;;=3^Hyperemesis gravidarum with metabolic disturbance
+ ;;^UTILITY(U,$J,358.3,28820,1,4,0)
+ ;;=4^O21.1
+ ;;^UTILITY(U,$J,358.3,28820,2)
+ ;;=^270869
+ ;;^UTILITY(U,$J,358.3,28821,0)
+ ;;=O21.2^^115^1450^2
+ ;;^UTILITY(U,$J,358.3,28821,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30072,1,3,0)
- ;;=3^Tuberculosis complicating pregnancy, second trimester
- ;;^UTILITY(U,$J,358.3,30072,1,4,0)
- ;;=4^O98.012
- ;;^UTILITY(U,$J,358.3,30072,2)
- ;;=^5017858
- ;;^UTILITY(U,$J,358.3,30073,0)
- ;;=O98.013^^178^1913^86
- ;;^UTILITY(U,$J,358.3,30073,1,0)
+ ;;^UTILITY(U,$J,358.3,28821,1,3,0)
+ ;;=3^Late vomiting of pregnancy
+ ;;^UTILITY(U,$J,358.3,28821,1,4,0)
+ ;;=4^O21.2
+ ;;^UTILITY(U,$J,358.3,28821,2)
+ ;;=^270873
+ ;;^UTILITY(U,$J,358.3,28822,0)
+ ;;=O48.0^^115^1451^1
+ ;;^UTILITY(U,$J,358.3,28822,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30073,1,3,0)
- ;;=3^Tuberculosis complicating pregnancy, third trimester
- ;;^UTILITY(U,$J,358.3,30073,1,4,0)
- ;;=4^O98.013
- ;;^UTILITY(U,$J,358.3,30073,2)
- ;;=^5017859
- ;;^UTILITY(U,$J,358.3,30074,0)
- ;;=O98.03^^178^1913^87
- ;;^UTILITY(U,$J,358.3,30074,1,0)
+ ;;^UTILITY(U,$J,358.3,28822,1,3,0)
+ ;;=3^Post-term pregnancy
+ ;;^UTILITY(U,$J,358.3,28822,1,4,0)
+ ;;=4^O48.0
+ ;;^UTILITY(U,$J,358.3,28822,2)
+ ;;=^5017495
+ ;;^UTILITY(U,$J,358.3,28823,0)
+ ;;=O48.1^^115^1451^2
+ ;;^UTILITY(U,$J,358.3,28823,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30074,1,3,0)
- ;;=3^Tuberculosis complicating the puerperium
- ;;^UTILITY(U,$J,358.3,30074,1,4,0)
- ;;=4^O98.03
- ;;^UTILITY(U,$J,358.3,30074,2)
- ;;=^5017862
- ;;^UTILITY(U,$J,358.3,30075,0)
- ;;=O98.611^^178^1913^75
- ;;^UTILITY(U,$J,358.3,30075,1,0)
+ ;;^UTILITY(U,$J,358.3,28823,1,3,0)
+ ;;=3^Prolonged pregnancy
+ ;;^UTILITY(U,$J,358.3,28823,1,4,0)
+ ;;=4^O48.1
+ ;;^UTILITY(U,$J,358.3,28823,2)
+ ;;=^5017496
+ ;;^UTILITY(U,$J,358.3,28824,0)
+ ;;=O31.03X0^^115^1452^56
+ ;;^UTILITY(U,$J,358.3,28824,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30075,1,3,0)
- ;;=3^Protozoal diseases complicating pregnancy, first trimester
- ;;^UTILITY(U,$J,358.3,30075,1,4,0)
- ;;=4^O98.611
- ;;^UTILITY(U,$J,358.3,30075,2)
- ;;=^5017893
- ;;^UTILITY(U,$J,358.3,30076,0)
- ;;=O98.612^^178^1913^76
- ;;^UTILITY(U,$J,358.3,30076,1,0)
+ ;;^UTILITY(U,$J,358.3,28824,1,3,0)
+ ;;=3^Papyraceous fetus, third trimester, not applicable or unsp
+ ;;^UTILITY(U,$J,358.3,28824,1,4,0)
+ ;;=4^O31.03X0
+ ;;^UTILITY(U,$J,358.3,28824,2)
+ ;;=^5016523
+ ;;^UTILITY(U,$J,358.3,28825,0)
+ ;;=O31.03X1^^115^1452^51
+ ;;^UTILITY(U,$J,358.3,28825,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30076,1,3,0)
- ;;=3^Protozoal diseases complicating pregnancy, second trimester
- ;;^UTILITY(U,$J,358.3,30076,1,4,0)
- ;;=4^O98.612
- ;;^UTILITY(U,$J,358.3,30076,2)
- ;;=^5017894
- ;;^UTILITY(U,$J,358.3,30077,0)
- ;;=O98.613^^178^1913^77
- ;;^UTILITY(U,$J,358.3,30077,1,0)
+ ;;^UTILITY(U,$J,358.3,28825,1,3,0)
+ ;;=3^Papyraceous fetus, third trimester, fetus 1
+ ;;^UTILITY(U,$J,358.3,28825,1,4,0)
+ ;;=4^O31.03X1
+ ;;^UTILITY(U,$J,358.3,28825,2)
+ ;;=^5016524
+ ;;^UTILITY(U,$J,358.3,28826,0)
+ ;;=O31.03X2^^115^1452^52
+ ;;^UTILITY(U,$J,358.3,28826,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30077,1,3,0)
- ;;=3^Protozoal diseases complicating pregnancy, third trimester
- ;;^UTILITY(U,$J,358.3,30077,1,4,0)
- ;;=4^O98.613
- ;;^UTILITY(U,$J,358.3,30077,2)
- ;;=^5017895
- ;;^UTILITY(U,$J,358.3,30078,0)
- ;;=O98.63^^178^1913^78
- ;;^UTILITY(U,$J,358.3,30078,1,0)
+ ;;^UTILITY(U,$J,358.3,28826,1,3,0)
+ ;;=3^Papyraceous fetus, third trimester, fetus 2
+ ;;^UTILITY(U,$J,358.3,28826,1,4,0)
+ ;;=4^O31.03X2
+ ;;^UTILITY(U,$J,358.3,28826,2)
+ ;;=^5016525
+ ;;^UTILITY(U,$J,358.3,28827,0)
+ ;;=O31.03X3^^115^1452^53
+ ;;^UTILITY(U,$J,358.3,28827,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30078,1,3,0)
- ;;=3^Protozoal diseases complicating the puerperium
- ;;^UTILITY(U,$J,358.3,30078,1,4,0)
- ;;=4^O98.63
- ;;^UTILITY(U,$J,358.3,30078,2)
- ;;=^5017898
+ ;;^UTILITY(U,$J,358.3,28827,1,3,0)
+ ;;=3^Papyraceous fetus, third trimester, fetus 3
+ ;;^UTILITY(U,$J,358.3,28827,1,4,0)
+ ;;=4^O31.03X3
+ ;;^UTILITY(U,$J,358.3,28827,2)
+ ;;=^5016526
+ ;;^UTILITY(U,$J,358.3,28828,0)
+ ;;=O31.03X4^^115^1452^54

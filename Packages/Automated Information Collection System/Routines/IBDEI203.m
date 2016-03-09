@@ -1,122 +1,134 @@
-IBDEI203 ; ; 06-AUG-2015
+IBDEI203 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35008,1,4,0)
- ;;=4^S22.042S
- ;;^UTILITY(U,$J,358.3,35008,2)
- ;;=^5022942
- ;;^UTILITY(U,$J,358.3,35009,0)
- ;;=S32.022S^^183^2025^67
- ;;^UTILITY(U,$J,358.3,35009,1,0)
+ ;;^UTILITY(U,$J,358.3,33944,1,4,0)
+ ;;=4^C64.9
+ ;;^UTILITY(U,$J,358.3,33944,2)
+ ;;=^5001250
+ ;;^UTILITY(U,$J,358.3,33945,0)
+ ;;=C34.92^^131^1680^130
+ ;;^UTILITY(U,$J,358.3,33945,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35009,1,3,0)
- ;;=3^Unstable burst fracture of second lumbar vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35009,1,4,0)
- ;;=4^S32.022S
- ;;^UTILITY(U,$J,358.3,35009,2)
- ;;=^5024418
- ;;^UTILITY(U,$J,358.3,35010,0)
- ;;=S22.022S^^183^2025^68
- ;;^UTILITY(U,$J,358.3,35010,1,0)
+ ;;^UTILITY(U,$J,358.3,33945,1,3,0)
+ ;;=3^Malig Neop Left Bronchus/Lung,Unspec Part
+ ;;^UTILITY(U,$J,358.3,33945,1,4,0)
+ ;;=4^C34.92
+ ;;^UTILITY(U,$J,358.3,33945,2)
+ ;;=^5000968
+ ;;^UTILITY(U,$J,358.3,33946,0)
+ ;;=C34.90^^131^1680^116
+ ;;^UTILITY(U,$J,358.3,33946,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35010,1,3,0)
- ;;=3^Unstable burst fracture of second thoracic vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35010,1,4,0)
- ;;=4^S22.022S
- ;;^UTILITY(U,$J,358.3,35010,2)
- ;;=^5022882
- ;;^UTILITY(U,$J,358.3,35011,0)
- ;;=S22.082S^^183^2025^57
- ;;^UTILITY(U,$J,358.3,35011,1,0)
+ ;;^UTILITY(U,$J,358.3,33946,1,3,0)
+ ;;=3^Malig Neop Bronchus/Lung,Unspec Part
+ ;;^UTILITY(U,$J,358.3,33946,1,4,0)
+ ;;=4^C34.90
+ ;;^UTILITY(U,$J,358.3,33946,2)
+ ;;=^5000966
+ ;;^UTILITY(U,$J,358.3,33947,0)
+ ;;=C65.9^^131^1680^150
+ ;;^UTILITY(U,$J,358.3,33947,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35011,1,3,0)
- ;;=3^Unstable burst fracture of T11-T12 vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35011,1,4,0)
- ;;=4^S22.082S
- ;;^UTILITY(U,$J,358.3,35011,2)
- ;;=^5023062
- ;;^UTILITY(U,$J,358.3,35012,0)
- ;;=S22.052S^^183^2025^58
- ;;^UTILITY(U,$J,358.3,35012,1,0)
+ ;;^UTILITY(U,$J,358.3,33947,1,3,0)
+ ;;=3^Malig Neop Renal Pelvis,Unspec
+ ;;^UTILITY(U,$J,358.3,33947,1,4,0)
+ ;;=4^C65.9
+ ;;^UTILITY(U,$J,358.3,33947,2)
+ ;;=^5001253
+ ;;^UTILITY(U,$J,358.3,33948,0)
+ ;;=C50.912^^131^1680^131
+ ;;^UTILITY(U,$J,358.3,33948,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35012,1,3,0)
- ;;=3^Unstable burst fracture of T5-T6 vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35012,1,4,0)
- ;;=4^S22.052S
- ;;^UTILITY(U,$J,358.3,35012,2)
- ;;=^5022972
- ;;^UTILITY(U,$J,358.3,35013,0)
- ;;=S22.062S^^183^2025^59
- ;;^UTILITY(U,$J,358.3,35013,1,0)
+ ;;^UTILITY(U,$J,358.3,33948,1,3,0)
+ ;;=3^Malig Neop Left Female Breast,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33948,1,4,0)
+ ;;=4^C50.912
+ ;;^UTILITY(U,$J,358.3,33948,2)
+ ;;=^5001196
+ ;;^UTILITY(U,$J,358.3,33949,0)
+ ;;=C50.911^^131^1680^153
+ ;;^UTILITY(U,$J,358.3,33949,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35013,1,3,0)
- ;;=3^Unstable burst fracture of T7-T8 vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35013,1,4,0)
- ;;=4^S22.062S
- ;;^UTILITY(U,$J,358.3,35013,2)
- ;;=^5023002
- ;;^UTILITY(U,$J,358.3,35014,0)
- ;;=S22.072S^^183^2025^60
- ;;^UTILITY(U,$J,358.3,35014,1,0)
+ ;;^UTILITY(U,$J,358.3,33949,1,3,0)
+ ;;=3^Malig Neop Right Female Breast,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33949,1,4,0)
+ ;;=4^C50.911
+ ;;^UTILITY(U,$J,358.3,33949,2)
+ ;;=^5001195
+ ;;^UTILITY(U,$J,358.3,33950,0)
+ ;;=C50.919^^131^1680^123
+ ;;^UTILITY(U,$J,358.3,33950,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35014,1,3,0)
- ;;=3^Unstable burst fracture of T9-T10 vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35014,1,4,0)
- ;;=4^S22.072S
- ;;^UTILITY(U,$J,358.3,35014,2)
- ;;=^5023032
- ;;^UTILITY(U,$J,358.3,35015,0)
- ;;=S32.032S^^183^2025^69
- ;;^UTILITY(U,$J,358.3,35015,1,0)
+ ;;^UTILITY(U,$J,358.3,33950,1,3,0)
+ ;;=3^Malig Neop Female Breast,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33950,1,4,0)
+ ;;=4^C50.919
+ ;;^UTILITY(U,$J,358.3,33950,2)
+ ;;=^5001197
+ ;;^UTILITY(U,$J,358.3,33951,0)
+ ;;=C62.90^^131^1680^161
+ ;;^UTILITY(U,$J,358.3,33951,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35015,1,3,0)
- ;;=3^Unstable burst fracture of third lumbar vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35015,1,4,0)
- ;;=4^S32.032S
- ;;^UTILITY(U,$J,358.3,35015,2)
- ;;=^5024448
- ;;^UTILITY(U,$J,358.3,35016,0)
- ;;=S22.032S^^183^2025^70
- ;;^UTILITY(U,$J,358.3,35016,1,0)
+ ;;^UTILITY(U,$J,358.3,33951,1,3,0)
+ ;;=3^Malig Neop Testis,Unspec
+ ;;^UTILITY(U,$J,358.3,33951,1,4,0)
+ ;;=4^C62.90
+ ;;^UTILITY(U,$J,358.3,33951,2)
+ ;;=^5001236
+ ;;^UTILITY(U,$J,358.3,33952,0)
+ ;;=D03.9^^131^1680^165
+ ;;^UTILITY(U,$J,358.3,33952,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35016,1,3,0)
- ;;=3^Unstable burst fracture of third thoracic vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35016,1,4,0)
- ;;=4^S22.032S
- ;;^UTILITY(U,$J,358.3,35016,2)
- ;;=^5022912
- ;;^UTILITY(U,$J,358.3,35017,0)
- ;;=S32.050S^^183^2025^75
- ;;^UTILITY(U,$J,358.3,35017,1,0)
+ ;;^UTILITY(U,$J,358.3,33952,1,3,0)
+ ;;=3^Melanoma in Situ,Unspec
+ ;;^UTILITY(U,$J,358.3,33952,1,4,0)
+ ;;=4^D03.9
+ ;;^UTILITY(U,$J,358.3,33952,2)
+ ;;=^5001908
+ ;;^UTILITY(U,$J,358.3,33953,0)
+ ;;=C45.0^^131^1680^166
+ ;;^UTILITY(U,$J,358.3,33953,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35017,1,3,0)
- ;;=3^Wedge compression fracture of fifth lumbar vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35017,1,4,0)
- ;;=4^S32.050S
- ;;^UTILITY(U,$J,358.3,35017,2)
- ;;=^5024496
- ;;^UTILITY(U,$J,358.3,35018,0)
- ;;=S32.010S^^183^2025^76
- ;;^UTILITY(U,$J,358.3,35018,1,0)
+ ;;^UTILITY(U,$J,358.3,33953,1,3,0)
+ ;;=3^Mesothelioma of Pleura
+ ;;^UTILITY(U,$J,358.3,33953,1,4,0)
+ ;;=4^C45.0
+ ;;^UTILITY(U,$J,358.3,33953,2)
+ ;;=^5001095
+ ;;^UTILITY(U,$J,358.3,33954,0)
+ ;;=C90.01^^131^1680^168
+ ;;^UTILITY(U,$J,358.3,33954,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35018,1,3,0)
- ;;=3^Wedge compression fracture of first lumbar vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35018,1,4,0)
- ;;=4^S32.010S
- ;;^UTILITY(U,$J,358.3,35018,2)
- ;;=^5024376
- ;;^UTILITY(U,$J,358.3,35019,0)
- ;;=S22.010S^^183^2025^77
- ;;^UTILITY(U,$J,358.3,35019,1,0)
+ ;;^UTILITY(U,$J,358.3,33954,1,3,0)
+ ;;=3^Multiple Myeloma,In Remission
+ ;;^UTILITY(U,$J,358.3,33954,1,4,0)
+ ;;=4^C90.01
+ ;;^UTILITY(U,$J,358.3,33954,2)
+ ;;=^267515
+ ;;^UTILITY(U,$J,358.3,33955,0)
+ ;;=C90.00^^131^1680^169
+ ;;^UTILITY(U,$J,358.3,33955,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35019,1,3,0)
- ;;=3^Wedge compression fracture of first thor vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35019,1,4,0)
- ;;=4^S22.010S
- ;;^UTILITY(U,$J,358.3,35019,2)
- ;;=^5022840
- ;;^UTILITY(U,$J,358.3,35020,0)
- ;;=S32.040S^^183^2025^78
- ;;^UTILITY(U,$J,358.3,35020,1,0)
+ ;;^UTILITY(U,$J,358.3,33955,1,3,0)
+ ;;=3^Multiple Myeloma,Not in Remission
+ ;;^UTILITY(U,$J,358.3,33955,1,4,0)
+ ;;=4^C90.00
+ ;;^UTILITY(U,$J,358.3,33955,2)
+ ;;=^5001752
+ ;;^UTILITY(U,$J,358.3,33956,0)
+ ;;=C94.6^^131^1680^170
+ ;;^UTILITY(U,$J,358.3,33956,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33956,1,3,0)
+ ;;=3^Myelodysplastic Disease NEC
+ ;;^UTILITY(U,$J,358.3,33956,1,4,0)
+ ;;=4^C94.6
+ ;;^UTILITY(U,$J,358.3,33956,2)
+ ;;=^5001846
+ ;;^UTILITY(U,$J,358.3,33957,0)
+ ;;=D61.82^^131^1680^171
+ ;;^UTILITY(U,$J,358.3,33957,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33957,1,3,0)
+ ;;=3^Myelophthisis

@@ -1,138 +1,126 @@
-IBDEI0XG ; ; 06-AUG-2015
+IBDEI0XG ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16266,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16266,1,4,0)
- ;;=4^E888.9
- ;;^UTILITY(U,$J,358.3,16266,1,5,0)
- ;;=5^Fall NOS
- ;;^UTILITY(U,$J,358.3,16266,2)
- ;;=^323639
- ;;^UTILITY(U,$J,358.3,16267,0)
- ;;=E891.9^^81^958^18
- ;;^UTILITY(U,$J,358.3,16267,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16267,1,4,0)
- ;;=4^E891.9
- ;;^UTILITY(U,$J,358.3,16267,1,5,0)
- ;;=5^Fire in Building
- ;;^UTILITY(U,$J,358.3,16267,2)
- ;;=^294669
- ;;^UTILITY(U,$J,358.3,16268,0)
- ;;=369.00^^81^959^2
- ;;^UTILITY(U,$J,358.3,16268,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16268,1,4,0)
- ;;=4^369.00
- ;;^UTILITY(U,$J,358.3,16268,1,5,0)
- ;;=5^Both Eyes Blind-WHO Def
- ;;^UTILITY(U,$J,358.3,16268,2)
- ;;=^15310
- ;;^UTILITY(U,$J,358.3,16269,0)
- ;;=369.01^^81^959^26
- ;;^UTILITY(U,$J,358.3,16269,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16269,1,4,0)
- ;;=4^369.01
- ;;^UTILITY(U,$J,358.3,16269,1,5,0)
- ;;=5^Tot Impairment,Both Eyes
- ;;^UTILITY(U,$J,358.3,16269,2)
- ;;=^268861
- ;;^UTILITY(U,$J,358.3,16270,0)
- ;;=369.02^^81^959^14
- ;;^UTILITY(U,$J,358.3,16270,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16270,1,4,0)
- ;;=4^369.02
- ;;^UTILITY(U,$J,358.3,16270,1,5,0)
- ;;=5^One Eye Nr Total/Oth Eye NOS
- ;;^UTILITY(U,$J,358.3,16270,2)
- ;;=^268862
- ;;^UTILITY(U,$J,358.3,16271,0)
- ;;=369.03^^81^959^15
- ;;^UTILITY(U,$J,358.3,16271,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16271,1,4,0)
- ;;=4^369.03
- ;;^UTILITY(U,$J,358.3,16271,1,5,0)
- ;;=5^One Eye Nr Total/Oth Eye Total
- ;;^UTILITY(U,$J,358.3,16271,2)
- ;;=^268863
- ;;^UTILITY(U,$J,358.3,16272,0)
- ;;=369.04^^81^959^6
- ;;^UTILITY(U,$J,358.3,16272,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16272,1,4,0)
- ;;=4^369.04
- ;;^UTILITY(U,$J,358.3,16272,1,5,0)
- ;;=5^Near Total Impairment,Both Eyes
- ;;^UTILITY(U,$J,358.3,16272,2)
- ;;=^268864
- ;;^UTILITY(U,$J,358.3,16273,0)
- ;;=369.05^^81^959^16
- ;;^UTILITY(U,$J,358.3,16273,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16273,1,4,0)
- ;;=4^369.05
- ;;^UTILITY(U,$J,358.3,16273,1,5,0)
- ;;=5^One Eye Profound/Oth Eye NOS
- ;;^UTILITY(U,$J,358.3,16273,2)
- ;;=^268865
- ;;^UTILITY(U,$J,358.3,16274,0)
- ;;=369.06^^81^959^18
- ;;^UTILITY(U,$J,358.3,16274,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16274,1,4,0)
- ;;=4^369.06
- ;;^UTILITY(U,$J,358.3,16274,1,5,0)
- ;;=5^One Eye Profound/Oth Eye Total
- ;;^UTILITY(U,$J,358.3,16274,2)
- ;;=^268866
- ;;^UTILITY(U,$J,358.3,16275,0)
- ;;=369.07^^81^959^17
- ;;^UTILITY(U,$J,358.3,16275,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16275,1,4,0)
- ;;=4^369.07
- ;;^UTILITY(U,$J,358.3,16275,1,5,0)
- ;;=5^One Eye Profound/Oth Eye Near Total
- ;;^UTILITY(U,$J,358.3,16275,2)
- ;;=^268867
- ;;^UTILITY(U,$J,358.3,16276,0)
- ;;=369.08^^81^959^24
- ;;^UTILITY(U,$J,358.3,16276,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16276,1,4,0)
- ;;=4^369.08
- ;;^UTILITY(U,$J,358.3,16276,1,5,0)
- ;;=5^Profound Impairment,Both Eyes
- ;;^UTILITY(U,$J,358.3,16276,2)
- ;;=^268868
- ;;^UTILITY(U,$J,358.3,16277,0)
- ;;=369.10^^81^959^7
- ;;^UTILITY(U,$J,358.3,16277,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16277,1,4,0)
- ;;=4^369.10
- ;;^UTILITY(U,$J,358.3,16277,1,5,0)
- ;;=5^One Eye Blindness/Oth Eye Low Vision
- ;;^UTILITY(U,$J,358.3,16277,2)
- ;;=^268870
- ;;^UTILITY(U,$J,358.3,16278,0)
- ;;=369.11^^81^959^19
- ;;^UTILITY(U,$J,358.3,16278,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16278,1,4,0)
- ;;=4^369.11
- ;;^UTILITY(U,$J,358.3,16278,1,5,0)
- ;;=5^One Eye Severe/Oth Eye Blind NOS
- ;;^UTILITY(U,$J,358.3,16278,2)
- ;;=^268871
- ;;^UTILITY(U,$J,358.3,16279,0)
- ;;=369.12^^81^959^23
- ;;^UTILITY(U,$J,358.3,16279,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,16279,1,4,0)
- ;;=4^369.12
+ ;;^UTILITY(U,$J,358.3,15690,1,4,0)
+ ;;=4^F12.922
+ ;;^UTILITY(U,$J,358.3,15690,2)
+ ;;=^5003181
+ ;;^UTILITY(U,$J,358.3,15691,0)
+ ;;=F12.980^^58^686^1
+ ;;^UTILITY(U,$J,358.3,15691,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15691,1,3,0)
+ ;;=3^Cannabis Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,15691,1,4,0)
+ ;;=4^F12.980
+ ;;^UTILITY(U,$J,358.3,15691,2)
+ ;;=^5003186
+ ;;^UTILITY(U,$J,358.3,15692,0)
+ ;;=F12.159^^58^686^2
+ ;;^UTILITY(U,$J,358.3,15692,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15692,1,3,0)
+ ;;=3^Cannabis Induced Psychotic Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,15692,1,4,0)
+ ;;=4^F12.159
+ ;;^UTILITY(U,$J,358.3,15692,2)
+ ;;=^5003162
+ ;;^UTILITY(U,$J,358.3,15693,0)
+ ;;=F12.259^^58^686^3
+ ;;^UTILITY(U,$J,358.3,15693,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15693,1,3,0)
+ ;;=3^Cannabis Induced Psychotic Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,15693,1,4,0)
+ ;;=4^F12.259
+ ;;^UTILITY(U,$J,358.3,15693,2)
+ ;;=^5003174
+ ;;^UTILITY(U,$J,358.3,15694,0)
+ ;;=F12.959^^58^686^4
+ ;;^UTILITY(U,$J,358.3,15694,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15694,1,3,0)
+ ;;=3^Cannabis Induced Psychotic Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,15694,1,4,0)
+ ;;=4^F12.959
+ ;;^UTILITY(U,$J,358.3,15694,2)
+ ;;=^5003185
+ ;;^UTILITY(U,$J,358.3,15695,0)
+ ;;=F12.988^^58^686^5
+ ;;^UTILITY(U,$J,358.3,15695,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15695,1,3,0)
+ ;;=3^Cannabis Induced Sleep Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,15695,1,4,0)
+ ;;=4^F12.988
+ ;;^UTILITY(U,$J,358.3,15695,2)
+ ;;=^5003187
+ ;;^UTILITY(U,$J,358.3,15696,0)
+ ;;=F12.929^^58^686^13
+ ;;^UTILITY(U,$J,358.3,15696,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15696,1,3,0)
+ ;;=3^Cannabis Intoxication w/o Perceptual Disturbances w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,15696,1,4,0)
+ ;;=4^F12.929
+ ;;^UTILITY(U,$J,358.3,15696,2)
+ ;;=^5003182
+ ;;^UTILITY(U,$J,358.3,15697,0)
+ ;;=F12.99^^58^686^15
+ ;;^UTILITY(U,$J,358.3,15697,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15697,1,3,0)
+ ;;=3^Cannabis Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,15697,1,4,0)
+ ;;=4^F12.99
+ ;;^UTILITY(U,$J,358.3,15697,2)
+ ;;=^5003188
+ ;;^UTILITY(U,$J,358.3,15698,0)
+ ;;=F16.10^^58^687^17
+ ;;^UTILITY(U,$J,358.3,15698,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15698,1,3,0)
+ ;;=3^Phencyclidine Use Disorder,Mild
+ ;;^UTILITY(U,$J,358.3,15698,1,4,0)
+ ;;=4^F16.10
+ ;;^UTILITY(U,$J,358.3,15698,2)
+ ;;=^5003323
+ ;;^UTILITY(U,$J,358.3,15699,0)
+ ;;=F16.20^^58^687^18
+ ;;^UTILITY(U,$J,358.3,15699,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15699,1,3,0)
+ ;;=3^Phencyclidine Use Disorder,Moderate-Severe
+ ;;^UTILITY(U,$J,358.3,15699,1,4,0)
+ ;;=4^F16.20
+ ;;^UTILITY(U,$J,358.3,15699,2)
+ ;;=^5003336
+ ;;^UTILITY(U,$J,358.3,15700,0)
+ ;;=F16.21^^58^687^19
+ ;;^UTILITY(U,$J,358.3,15700,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15700,1,3,0)
+ ;;=3^Phencyclidine Use Disorder,Moderate-Severe,In Remission
+ ;;^UTILITY(U,$J,358.3,15700,1,4,0)
+ ;;=4^F16.21
+ ;;^UTILITY(U,$J,358.3,15700,2)
+ ;;=^5003337
+ ;;^UTILITY(U,$J,358.3,15701,0)
+ ;;=F16.983^^58^687^16
+ ;;^UTILITY(U,$J,358.3,15701,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15701,1,3,0)
+ ;;=3^Hallucinogen Persisting Perception Disorder
+ ;;^UTILITY(U,$J,358.3,15701,1,4,0)
+ ;;=4^F16.983
+ ;;^UTILITY(U,$J,358.3,15701,2)
+ ;;=^5003358
+ ;;^UTILITY(U,$J,358.3,15702,0)
+ ;;=F16.121^^58^687^10
+ ;;^UTILITY(U,$J,358.3,15702,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15702,1,3,0)
+ ;;=3^Hallucinogen Intoxication Delirium w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,15702,1,4,0)
+ ;;=4^F16.121

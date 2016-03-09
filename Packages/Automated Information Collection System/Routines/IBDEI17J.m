@@ -1,128 +1,130 @@
-IBDEI17J ; ; 06-AUG-2015
+IBDEI17J ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,21369,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21369,1,2,0)
- ;;=2^36228
- ;;^UTILITY(U,$J,358.3,21369,1,3,0)
- ;;=3^Place Cath Intracranial Art
- ;;^UTILITY(U,$J,358.3,21370,0)
- ;;=36221^^117^1330^21^^^^1
- ;;^UTILITY(U,$J,358.3,21370,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21370,1,2,0)
- ;;=2^36221
- ;;^UTILITY(U,$J,358.3,21370,1,3,0)
- ;;=3^Place Cath Thoracic Aorta
- ;;^UTILITY(U,$J,358.3,21371,0)
- ;;=37197^^117^1330^30^^^^1
- ;;^UTILITY(U,$J,358.3,21371,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21371,1,2,0)
- ;;=2^37197
- ;;^UTILITY(U,$J,358.3,21371,1,3,0)
- ;;=3^Remove Intrvas Foreign Body,Broken Cath
- ;;^UTILITY(U,$J,358.3,21372,0)
- ;;=36000^^117^1330^25^^^^1
- ;;^UTILITY(U,$J,358.3,21372,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21372,1,2,0)
- ;;=2^36000
- ;;^UTILITY(U,$J,358.3,21372,1,3,0)
- ;;=3^Placement of Needle in Vein
- ;;^UTILITY(U,$J,358.3,21373,0)
- ;;=36010^^117^1330^24^^^^1
- ;;^UTILITY(U,$J,358.3,21373,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21373,1,2,0)
- ;;=2^36010
- ;;^UTILITY(U,$J,358.3,21373,1,3,0)
- ;;=3^Placement of Cath in Vein
- ;;^UTILITY(U,$J,358.3,21374,0)
- ;;=37187^^117^1330^14^^^^1
- ;;^UTILITY(U,$J,358.3,21374,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21374,1,2,0)
- ;;=2^37187
- ;;^UTILITY(U,$J,358.3,21374,1,3,0)
- ;;=3^PTCA Thrombectomy,Vein(s)
- ;;^UTILITY(U,$J,358.3,21375,0)
- ;;=37236^^117^1330^52^^^^1
- ;;^UTILITY(U,$J,358.3,21375,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21375,1,2,0)
- ;;=2^37236
- ;;^UTILITY(U,$J,358.3,21375,1,3,0)
- ;;=3^Transcath Plcmt of Intravas Stent,Init Art
- ;;^UTILITY(U,$J,358.3,21376,0)
- ;;=37237^^117^1330^51^^^^1
- ;;^UTILITY(U,$J,358.3,21376,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21376,1,2,0)
- ;;=2^37237
- ;;^UTILITY(U,$J,358.3,21376,1,3,0)
- ;;=3^Transcath Plcmt Intravas Stnt,Ea Addl Art
- ;;^UTILITY(U,$J,358.3,21377,0)
- ;;=37214^^117^1330^3^^^^1
- ;;^UTILITY(U,$J,358.3,21377,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21377,1,2,0)
- ;;=2^37214
- ;;^UTILITY(U,$J,358.3,21377,1,3,0)
- ;;=3^Cessj Therapy Cath Removal
- ;;^UTILITY(U,$J,358.3,21378,0)
- ;;=37184^^117^1330^26^^^^1
- ;;^UTILITY(U,$J,358.3,21378,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21378,1,2,0)
- ;;=2^37184
- ;;^UTILITY(U,$J,358.3,21378,1,3,0)
- ;;=3^Prim Art Mech Thrombectomy
- ;;^UTILITY(U,$J,358.3,21379,0)
- ;;=37185^^117^1330^27^^^^1
- ;;^UTILITY(U,$J,358.3,21379,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21379,1,2,0)
- ;;=2^37185
- ;;^UTILITY(U,$J,358.3,21379,1,3,0)
- ;;=3^Prim Art Mech Thrombectomy,Add-On
- ;;^UTILITY(U,$J,358.3,21380,0)
- ;;=36002^^117^1330^28^^^^1
- ;;^UTILITY(U,$J,358.3,21380,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21380,1,2,0)
- ;;=2^36002
- ;;^UTILITY(U,$J,358.3,21380,1,3,0)
- ;;=3^Pseudoaneurysm Injection Trt
- ;;^UTILITY(U,$J,358.3,21381,0)
- ;;=33011^^117^1330^32^^^^1
- ;;^UTILITY(U,$J,358.3,21381,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21381,1,2,0)
- ;;=2^33011
- ;;^UTILITY(U,$J,358.3,21381,1,3,0)
- ;;=3^Repeat Drainage of Heart Sac
- ;;^UTILITY(U,$J,358.3,21382,0)
- ;;=37193^^117^1330^29^^^^1
- ;;^UTILITY(U,$J,358.3,21382,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21382,1,2,0)
- ;;=2^37193
- ;;^UTILITY(U,$J,358.3,21382,1,3,0)
- ;;=3^Remove Endovas Vena Cava Filter
- ;;^UTILITY(U,$J,358.3,21383,0)
- ;;=37212^^117^1330^43^^^^1
- ;;^UTILITY(U,$J,358.3,21383,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21383,1,2,0)
- ;;=2^37212
- ;;^UTILITY(U,$J,358.3,21383,1,3,0)
- ;;=3^Thrombolytic Venous Therapy
- ;;^UTILITY(U,$J,358.3,21384,0)
- ;;=37213^^117^1330^42^^^^1
- ;;^UTILITY(U,$J,358.3,21384,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21384,1,2,0)
- ;;=2^37213
+ ;;^UTILITY(U,$J,358.3,20528,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20528,1,3,0)
+ ;;=3^Inflammatory Polyarthropathy
+ ;;^UTILITY(U,$J,358.3,20528,1,4,0)
+ ;;=4^M06.4
+ ;;^UTILITY(U,$J,358.3,20528,2)
+ ;;=^5010120
+ ;;^UTILITY(U,$J,358.3,20529,0)
+ ;;=M06.39^^84^935^157
+ ;;^UTILITY(U,$J,358.3,20529,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20529,1,3,0)
+ ;;=3^Rheumatoid Nodule,Mult Sites
+ ;;^UTILITY(U,$J,358.3,20529,1,4,0)
+ ;;=4^M06.39
+ ;;^UTILITY(U,$J,358.3,20529,2)
+ ;;=^5010119
+ ;;^UTILITY(U,$J,358.3,20530,0)
+ ;;=M15.0^^84^935^121
+ ;;^UTILITY(U,$J,358.3,20530,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20530,1,3,0)
+ ;;=3^Primary Generalized Osteoarthritis
+ ;;^UTILITY(U,$J,358.3,20530,1,4,0)
+ ;;=4^M15.0
+ ;;^UTILITY(U,$J,358.3,20530,2)
+ ;;=^5010762
+ ;;^UTILITY(U,$J,358.3,20531,0)
+ ;;=M06.9^^84^935^156
+ ;;^UTILITY(U,$J,358.3,20531,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20531,1,3,0)
+ ;;=3^Rheumatoid Arthritis,Unspec
+ ;;^UTILITY(U,$J,358.3,20531,1,4,0)
+ ;;=4^M06.9
+ ;;^UTILITY(U,$J,358.3,20531,2)
+ ;;=^5010145
+ ;;^UTILITY(U,$J,358.3,20532,0)
+ ;;=M16.0^^84^935^124
+ ;;^UTILITY(U,$J,358.3,20532,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20532,1,3,0)
+ ;;=3^Primary Osteoarthritis of Hip,Bilateral
+ ;;^UTILITY(U,$J,358.3,20532,1,4,0)
+ ;;=4^M16.0
+ ;;^UTILITY(U,$J,358.3,20532,2)
+ ;;=^5010769
+ ;;^UTILITY(U,$J,358.3,20533,0)
+ ;;=M16.11^^84^935^133
+ ;;^UTILITY(U,$J,358.3,20533,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20533,1,3,0)
+ ;;=3^Primary Osteoarthritis of Right Hip
+ ;;^UTILITY(U,$J,358.3,20533,1,4,0)
+ ;;=4^M16.11
+ ;;^UTILITY(U,$J,358.3,20533,2)
+ ;;=^5010771
+ ;;^UTILITY(U,$J,358.3,20534,0)
+ ;;=M16.12^^84^935^127
+ ;;^UTILITY(U,$J,358.3,20534,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20534,1,3,0)
+ ;;=3^Primary Osteoarthritis of Left Hip
+ ;;^UTILITY(U,$J,358.3,20534,1,4,0)
+ ;;=4^M16.12
+ ;;^UTILITY(U,$J,358.3,20534,2)
+ ;;=^5010772
+ ;;^UTILITY(U,$J,358.3,20535,0)
+ ;;=M17.0^^84^935^123
+ ;;^UTILITY(U,$J,358.3,20535,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20535,1,3,0)
+ ;;=3^Primary Osteoarthritis of Bilateral Knees
+ ;;^UTILITY(U,$J,358.3,20535,1,4,0)
+ ;;=4^M17.0
+ ;;^UTILITY(U,$J,358.3,20535,2)
+ ;;=^5010784
+ ;;^UTILITY(U,$J,358.3,20536,0)
+ ;;=M17.11^^84^935^134
+ ;;^UTILITY(U,$J,358.3,20536,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20536,1,3,0)
+ ;;=3^Primary Osteoarthritis of Right Knee
+ ;;^UTILITY(U,$J,358.3,20536,1,4,0)
+ ;;=4^M17.11
+ ;;^UTILITY(U,$J,358.3,20536,2)
+ ;;=^5010786
+ ;;^UTILITY(U,$J,358.3,20537,0)
+ ;;=M17.12^^84^935^128
+ ;;^UTILITY(U,$J,358.3,20537,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20537,1,3,0)
+ ;;=3^Primary Osteoarthritis of Left Knee
+ ;;^UTILITY(U,$J,358.3,20537,1,4,0)
+ ;;=4^M17.12
+ ;;^UTILITY(U,$J,358.3,20537,2)
+ ;;=^5010787
+ ;;^UTILITY(U,$J,358.3,20538,0)
+ ;;=M18.0^^84^935^122
+ ;;^UTILITY(U,$J,358.3,20538,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20538,1,3,0)
+ ;;=3^Primary Osteoarthritis of Bilateral 1st Carpometacarp Jts
+ ;;^UTILITY(U,$J,358.3,20538,1,4,0)
+ ;;=4^M18.0
+ ;;^UTILITY(U,$J,358.3,20538,2)
+ ;;=^5010795
+ ;;^UTILITY(U,$J,358.3,20539,0)
+ ;;=M18.11^^84^935^132
+ ;;^UTILITY(U,$J,358.3,20539,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20539,1,3,0)
+ ;;=3^Primary Osteoarthritis of Right Hand 1st Carpometacarp Jt
+ ;;^UTILITY(U,$J,358.3,20539,1,4,0)
+ ;;=4^M18.11
+ ;;^UTILITY(U,$J,358.3,20539,2)
+ ;;=^5010797
+ ;;^UTILITY(U,$J,358.3,20540,0)
+ ;;=M18.12^^84^935^126
+ ;;^UTILITY(U,$J,358.3,20540,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20540,1,3,0)
+ ;;=3^Primary Osteoarthritis of Left Hand 1st Carpometacarp Jt
+ ;;^UTILITY(U,$J,358.3,20540,1,4,0)
+ ;;=4^M18.12

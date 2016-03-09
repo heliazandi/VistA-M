@@ -1,132 +1,128 @@
-IBDEI1TV ; ; 06-AUG-2015
+IBDEI1TV ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32205,0)
- ;;=L89.301^^182^1981^238
- ;;^UTILITY(U,$J,358.3,32205,1,0)
+ ;;^UTILITY(U,$J,358.3,31045,2)
+ ;;=^5003293
+ ;;^UTILITY(U,$J,358.3,31046,0)
+ ;;=F15.20^^123^1556^5
+ ;;^UTILITY(U,$J,358.3,31046,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32205,1,3,0)
- ;;=3^Pressure Ulcer of Buttock,Stage 1
- ;;^UTILITY(U,$J,358.3,32205,1,4,0)
- ;;=4^L89.301
- ;;^UTILITY(U,$J,358.3,32205,2)
- ;;=^5009390
- ;;^UTILITY(U,$J,358.3,32206,0)
- ;;=L89.302^^182^1981^239
- ;;^UTILITY(U,$J,358.3,32206,1,0)
+ ;;^UTILITY(U,$J,358.3,31046,1,3,0)
+ ;;=3^Amphetamine-Type Disorder,Moderate-Severe
+ ;;^UTILITY(U,$J,358.3,31046,1,4,0)
+ ;;=4^F15.20
+ ;;^UTILITY(U,$J,358.3,31046,2)
+ ;;=^5003295
+ ;;^UTILITY(U,$J,358.3,31047,0)
+ ;;=F15.21^^123^1556^6
+ ;;^UTILITY(U,$J,358.3,31047,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32206,1,3,0)
- ;;=3^Pressure Ulcer of Buttock,Stage 2
- ;;^UTILITY(U,$J,358.3,32206,1,4,0)
- ;;=4^L89.302
- ;;^UTILITY(U,$J,358.3,32206,2)
- ;;=^5009391
- ;;^UTILITY(U,$J,358.3,32207,0)
- ;;=L89.303^^182^1981^240
- ;;^UTILITY(U,$J,358.3,32207,1,0)
+ ;;^UTILITY(U,$J,358.3,31047,1,3,0)
+ ;;=3^Amphetamine-Type Disorder,Moderate-Severe In Remission
+ ;;^UTILITY(U,$J,358.3,31047,1,4,0)
+ ;;=4^F15.21
+ ;;^UTILITY(U,$J,358.3,31047,2)
+ ;;=^5003296
+ ;;^UTILITY(U,$J,358.3,31048,0)
+ ;;=F15.23^^123^1556^1
+ ;;^UTILITY(U,$J,358.3,31048,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32207,1,3,0)
- ;;=3^Pressure Ulcer of Buttock,Stage 3
- ;;^UTILITY(U,$J,358.3,32207,1,4,0)
- ;;=4^L89.303
- ;;^UTILITY(U,$J,358.3,32207,2)
- ;;=^5009392
- ;;^UTILITY(U,$J,358.3,32208,0)
- ;;=L89.304^^182^1981^241
- ;;^UTILITY(U,$J,358.3,32208,1,0)
+ ;;^UTILITY(U,$J,358.3,31048,1,3,0)
+ ;;=3^Amphetamine or Other Stimulant Withdrawal
+ ;;^UTILITY(U,$J,358.3,31048,1,4,0)
+ ;;=4^F15.23
+ ;;^UTILITY(U,$J,358.3,31048,2)
+ ;;=^5003301
+ ;;^UTILITY(U,$J,358.3,31049,0)
+ ;;=F12.10^^123^1557^16
+ ;;^UTILITY(U,$J,358.3,31049,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32208,1,3,0)
- ;;=3^Pressure Ulcer of Buttock,Stage 4
- ;;^UTILITY(U,$J,358.3,32208,1,4,0)
- ;;=4^L89.304
- ;;^UTILITY(U,$J,358.3,32208,2)
- ;;=^5009393
- ;;^UTILITY(U,$J,358.3,32209,0)
- ;;=L89.309^^182^1981^242
- ;;^UTILITY(U,$J,358.3,32209,1,0)
+ ;;^UTILITY(U,$J,358.3,31049,1,3,0)
+ ;;=3^Cannabis Use Disorder,Mild
+ ;;^UTILITY(U,$J,358.3,31049,1,4,0)
+ ;;=4^F12.10
+ ;;^UTILITY(U,$J,358.3,31049,2)
+ ;;=^5003155
+ ;;^UTILITY(U,$J,358.3,31050,0)
+ ;;=F12.180^^123^1557^20
+ ;;^UTILITY(U,$J,358.3,31050,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32209,1,3,0)
- ;;=3^Pressure Ulcer of Buttock,Stage Unspec
- ;;^UTILITY(U,$J,358.3,32209,1,4,0)
- ;;=4^L89.309
- ;;^UTILITY(U,$J,358.3,32209,2)
- ;;=^5133672
- ;;^UTILITY(U,$J,358.3,32210,0)
- ;;=L89.90^^182^1981^248
- ;;^UTILITY(U,$J,358.3,32210,1,0)
+ ;;^UTILITY(U,$J,358.3,31050,1,3,0)
+ ;;=3^Cannabis-Induced Anxiety Disorder w/ Mild Use Disorders
+ ;;^UTILITY(U,$J,358.3,31050,1,4,0)
+ ;;=4^F12.180
+ ;;^UTILITY(U,$J,358.3,31050,2)
+ ;;=^5003163
+ ;;^UTILITY(U,$J,358.3,31051,0)
+ ;;=F12.188^^123^1557^22
+ ;;^UTILITY(U,$J,358.3,31051,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32210,1,3,0)
- ;;=3^Pressure Ulcer of Unspec Site,Unspec Stage
- ;;^UTILITY(U,$J,358.3,32210,1,4,0)
- ;;=4^L89.90
- ;;^UTILITY(U,$J,358.3,32210,2)
- ;;=^5133666
- ;;^UTILITY(U,$J,358.3,32211,0)
- ;;=L89.91^^182^1981^244
- ;;^UTILITY(U,$J,358.3,32211,1,0)
+ ;;^UTILITY(U,$J,358.3,31051,1,3,0)
+ ;;=3^Cannabis-Induced Sleep Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,31051,1,4,0)
+ ;;=4^F12.188
+ ;;^UTILITY(U,$J,358.3,31051,2)
+ ;;=^5003164
+ ;;^UTILITY(U,$J,358.3,31052,0)
+ ;;=F12.20^^123^1557^17
+ ;;^UTILITY(U,$J,358.3,31052,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32211,1,3,0)
- ;;=3^Pressure Ulcer of Unspec Site,Stage 1
- ;;^UTILITY(U,$J,358.3,32211,1,4,0)
- ;;=4^L89.91
- ;;^UTILITY(U,$J,358.3,32211,2)
- ;;=^5133664
- ;;^UTILITY(U,$J,358.3,32212,0)
- ;;=L89.92^^182^1981^245
- ;;^UTILITY(U,$J,358.3,32212,1,0)
+ ;;^UTILITY(U,$J,358.3,31052,1,3,0)
+ ;;=3^Cannabis Use Disorder,Moderate-Severe
+ ;;^UTILITY(U,$J,358.3,31052,1,4,0)
+ ;;=4^F12.20
+ ;;^UTILITY(U,$J,358.3,31052,2)
+ ;;=^5003166
+ ;;^UTILITY(U,$J,358.3,31053,0)
+ ;;=F12.21^^123^1557^18
+ ;;^UTILITY(U,$J,358.3,31053,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32212,1,3,0)
- ;;=3^Pressure Ulcer of Unspec Site,Stage 2
- ;;^UTILITY(U,$J,358.3,32212,1,4,0)
- ;;=4^L89.92
- ;;^UTILITY(U,$J,358.3,32212,2)
- ;;=^5133667
- ;;^UTILITY(U,$J,358.3,32213,0)
- ;;=L89.93^^182^1981^246
- ;;^UTILITY(U,$J,358.3,32213,1,0)
+ ;;^UTILITY(U,$J,358.3,31053,1,3,0)
+ ;;=3^Cannabis Use Disorder,Moderate-Severe,In Remission
+ ;;^UTILITY(U,$J,358.3,31053,1,4,0)
+ ;;=4^F12.21
+ ;;^UTILITY(U,$J,358.3,31053,2)
+ ;;=^5003167
+ ;;^UTILITY(U,$J,358.3,31054,0)
+ ;;=F12.288^^123^1557^19
+ ;;^UTILITY(U,$J,358.3,31054,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32213,1,3,0)
- ;;=3^Pressure Ulcer of Unspec Site,Stage 3
- ;;^UTILITY(U,$J,358.3,32213,1,4,0)
- ;;=4^L89.93
- ;;^UTILITY(U,$J,358.3,32213,2)
- ;;=^5133668
- ;;^UTILITY(U,$J,358.3,32214,0)
- ;;=L89.94^^182^1981^247
- ;;^UTILITY(U,$J,358.3,32214,1,0)
+ ;;^UTILITY(U,$J,358.3,31054,1,3,0)
+ ;;=3^Cannabis Withdrawal
+ ;;^UTILITY(U,$J,358.3,31054,1,4,0)
+ ;;=4^F12.288
+ ;;^UTILITY(U,$J,358.3,31054,2)
+ ;;=^5003176
+ ;;^UTILITY(U,$J,358.3,31055,0)
+ ;;=F12.280^^123^1557^21
+ ;;^UTILITY(U,$J,358.3,31055,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32214,1,3,0)
- ;;=3^Pressure Ulcer of Unspec Site,Stage 4
- ;;^UTILITY(U,$J,358.3,32214,1,4,0)
- ;;=4^L89.94
- ;;^UTILITY(U,$J,358.3,32214,2)
- ;;=^5133669
- ;;^UTILITY(U,$J,358.3,32215,0)
- ;;=L89.95^^182^1981^249
- ;;^UTILITY(U,$J,358.3,32215,1,0)
+ ;;^UTILITY(U,$J,358.3,31055,1,3,0)
+ ;;=3^Cannabis-Induced Anxiety Disorder w/ Moderate-Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,31055,1,4,0)
+ ;;=4^F12.280
+ ;;^UTILITY(U,$J,358.3,31055,2)
+ ;;=^5003175
+ ;;^UTILITY(U,$J,358.3,31056,0)
+ ;;=F12.121^^123^1557^6
+ ;;^UTILITY(U,$J,358.3,31056,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32215,1,3,0)
- ;;=3^Pressure Ulcer of Unspec Site,Unstageable
- ;;^UTILITY(U,$J,358.3,32215,1,4,0)
- ;;=4^L89.95
- ;;^UTILITY(U,$J,358.3,32215,2)
- ;;=^5133660
- ;;^UTILITY(U,$J,358.3,32216,0)
- ;;=L92.0^^182^1981^156
- ;;^UTILITY(U,$J,358.3,32216,1,0)
+ ;;^UTILITY(U,$J,358.3,31056,1,3,0)
+ ;;=3^Cannabis Intoxication Delium w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,31056,1,4,0)
+ ;;=4^F12.121
+ ;;^UTILITY(U,$J,358.3,31056,2)
+ ;;=^5003157
+ ;;^UTILITY(U,$J,358.3,31057,0)
+ ;;=F12.221^^123^1557^7
+ ;;^UTILITY(U,$J,358.3,31057,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32216,1,3,0)
- ;;=3^Granuloma Annulare
- ;;^UTILITY(U,$J,358.3,32216,1,4,0)
- ;;=4^L92.0
- ;;^UTILITY(U,$J,358.3,32216,2)
- ;;=^184052
- ;;^UTILITY(U,$J,358.3,32217,0)
- ;;=L95.1^^182^1981^143
- ;;^UTILITY(U,$J,358.3,32217,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32217,1,3,0)
- ;;=3^Erythema Elevatum Diutinum
- ;;^UTILITY(U,$J,358.3,32217,1,4,0)
- ;;=4^L95.1
+ ;;^UTILITY(U,$J,358.3,31057,1,3,0)
+ ;;=3^Cannabis Intoxication Delium w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,31057,1,4,0)
+ ;;=4^F12.221
+ ;;^UTILITY(U,$J,358.3,31057,2)
+ ;;=^5003169
+ ;;^UTILITY(U,$J,358.3,31058,0)
+ ;;=F12.921^^123^1557^8

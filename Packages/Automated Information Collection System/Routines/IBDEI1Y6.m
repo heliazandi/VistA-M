@@ -1,126 +1,140 @@
-IBDEI1Y6 ; ; 06-AUG-2015
+IBDEI1Y6 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34183,1,4,0)
- ;;=4^M05.562
- ;;^UTILITY(U,$J,358.3,34183,2)
- ;;=^5009971
- ;;^UTILITY(U,$J,358.3,34184,0)
- ;;=M05.512^^183^2016^114
- ;;^UTILITY(U,$J,358.3,34184,1,0)
+ ;;^UTILITY(U,$J,358.3,33057,1,3,0)
+ ;;=3^Adjustment d/o w/ Depressed Mood
+ ;;^UTILITY(U,$J,358.3,33057,1,4,0)
+ ;;=4^F43.21
+ ;;^UTILITY(U,$J,358.3,33057,2)
+ ;;=^331948
+ ;;^UTILITY(U,$J,358.3,33058,0)
+ ;;=G43.909^^131^1664^37
+ ;;^UTILITY(U,$J,358.3,33058,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34184,1,3,0)
- ;;=3^Rheu polyneurop w rheu arthrit of left shoulder 
- ;;^UTILITY(U,$J,358.3,34184,1,4,0)
- ;;=4^M05.512
- ;;^UTILITY(U,$J,358.3,34184,2)
- ;;=^5009956
- ;;^UTILITY(U,$J,358.3,34185,0)
- ;;=M05.532^^183^2016^115
- ;;^UTILITY(U,$J,358.3,34185,1,0)
+ ;;^UTILITY(U,$J,358.3,33058,1,3,0)
+ ;;=3^Migraine,Unspec
+ ;;^UTILITY(U,$J,358.3,33058,1,4,0)
+ ;;=4^G43.909
+ ;;^UTILITY(U,$J,358.3,33058,2)
+ ;;=^5003909
+ ;;^UTILITY(U,$J,358.3,33059,0)
+ ;;=H91.90^^131^1664^25
+ ;;^UTILITY(U,$J,358.3,33059,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34185,1,3,0)
- ;;=3^Rheu polyneurop w rheu arthrit of left wrist
- ;;^UTILITY(U,$J,358.3,34185,1,4,0)
- ;;=4^M05.532
- ;;^UTILITY(U,$J,358.3,34185,2)
- ;;=^5009962
- ;;^UTILITY(U,$J,358.3,34186,0)
- ;;=M05.59^^183^2016^108
- ;;^UTILITY(U,$J,358.3,34186,1,0)
+ ;;^UTILITY(U,$J,358.3,33059,1,3,0)
+ ;;=3^Hearing Loss,Unspecified Ear
+ ;;^UTILITY(U,$J,358.3,33059,1,4,0)
+ ;;=4^H91.90
+ ;;^UTILITY(U,$J,358.3,33059,2)
+ ;;=^5006943
+ ;;^UTILITY(U,$J,358.3,33060,0)
+ ;;=H91.91^^131^1664^24
+ ;;^UTILITY(U,$J,358.3,33060,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34186,1,3,0)
- ;;=3^Rheu polyneurop w rheu arthrit mult sites 
- ;;^UTILITY(U,$J,358.3,34186,1,4,0)
- ;;=4^M05.59
- ;;^UTILITY(U,$J,358.3,34186,2)
- ;;=^5009976
- ;;^UTILITY(U,$J,358.3,34187,0)
- ;;=M05.571^^183^2016^116
- ;;^UTILITY(U,$J,358.3,34187,1,0)
+ ;;^UTILITY(U,$J,358.3,33060,1,3,0)
+ ;;=3^Hearing Loss,Right Ear
+ ;;^UTILITY(U,$J,358.3,33060,1,4,0)
+ ;;=4^H91.91
+ ;;^UTILITY(U,$J,358.3,33060,2)
+ ;;=^5133553
+ ;;^UTILITY(U,$J,358.3,33061,0)
+ ;;=H91.92^^131^1664^23
+ ;;^UTILITY(U,$J,358.3,33061,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34187,1,3,0)
- ;;=3^Rheu polyneurop w rheu arthrit of right ank/ft
- ;;^UTILITY(U,$J,358.3,34187,1,4,0)
- ;;=4^M05.571
- ;;^UTILITY(U,$J,358.3,34187,2)
- ;;=^5009973
- ;;^UTILITY(U,$J,358.3,34188,0)
- ;;=M05.521^^183^2016^117
- ;;^UTILITY(U,$J,358.3,34188,1,0)
+ ;;^UTILITY(U,$J,358.3,33061,1,3,0)
+ ;;=3^Hearing Loss,Left Ear
+ ;;^UTILITY(U,$J,358.3,33061,1,4,0)
+ ;;=4^H91.92
+ ;;^UTILITY(U,$J,358.3,33061,2)
+ ;;=^5133554
+ ;;^UTILITY(U,$J,358.3,33062,0)
+ ;;=H91.93^^131^1664^22
+ ;;^UTILITY(U,$J,358.3,33062,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34188,1,3,0)
- ;;=3^Rheu polyneurop w rheu arthrit of right elbow 
- ;;^UTILITY(U,$J,358.3,34188,1,4,0)
- ;;=4^M05.521
- ;;^UTILITY(U,$J,358.3,34188,2)
- ;;=^5009958
- ;;^UTILITY(U,$J,358.3,34189,0)
- ;;=M05.541^^183^2016^118
- ;;^UTILITY(U,$J,358.3,34189,1,0)
+ ;;^UTILITY(U,$J,358.3,33062,1,3,0)
+ ;;=3^Hearing Loss,Bilateral
+ ;;^UTILITY(U,$J,358.3,33062,1,4,0)
+ ;;=4^H91.93
+ ;;^UTILITY(U,$J,358.3,33062,2)
+ ;;=^5006944
+ ;;^UTILITY(U,$J,358.3,33063,0)
+ ;;=I10.^^131^1664^29
+ ;;^UTILITY(U,$J,358.3,33063,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34189,1,3,0)
- ;;=3^Rheu polyneurop w rheu arthrit of right hand 
- ;;^UTILITY(U,$J,358.3,34189,1,4,0)
- ;;=4^M05.541
- ;;^UTILITY(U,$J,358.3,34189,2)
- ;;=^5009964
- ;;^UTILITY(U,$J,358.3,34190,0)
- ;;=M05.551^^183^2016^119
- ;;^UTILITY(U,$J,358.3,34190,1,0)
+ ;;^UTILITY(U,$J,358.3,33063,1,3,0)
+ ;;=3^Hypertension
+ ;;^UTILITY(U,$J,358.3,33063,1,4,0)
+ ;;=4^I10.
+ ;;^UTILITY(U,$J,358.3,33063,2)
+ ;;=^5007062
+ ;;^UTILITY(U,$J,358.3,33064,0)
+ ;;=I50.9^^131^1664^14
+ ;;^UTILITY(U,$J,358.3,33064,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34190,1,3,0)
- ;;=3^Rheu polyneurop w rheu arthrit of right hip 
- ;;^UTILITY(U,$J,358.3,34190,1,4,0)
- ;;=4^M05.551
- ;;^UTILITY(U,$J,358.3,34190,2)
- ;;=^5009967
- ;;^UTILITY(U,$J,358.3,34191,0)
- ;;=M05.561^^183^2016^120
- ;;^UTILITY(U,$J,358.3,34191,1,0)
+ ;;^UTILITY(U,$J,358.3,33064,1,3,0)
+ ;;=3^Congestive Heart Failure,Unspec
+ ;;^UTILITY(U,$J,358.3,33064,1,4,0)
+ ;;=4^I50.9
+ ;;^UTILITY(U,$J,358.3,33064,2)
+ ;;=^5007251
+ ;;^UTILITY(U,$J,358.3,33065,0)
+ ;;=I67.89^^131^1664^13
+ ;;^UTILITY(U,$J,358.3,33065,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34191,1,3,0)
- ;;=3^Rheu polyneurop w rheu arthrit of right knee
- ;;^UTILITY(U,$J,358.3,34191,1,4,0)
- ;;=4^M05.561
- ;;^UTILITY(U,$J,358.3,34191,2)
- ;;=^5009970
- ;;^UTILITY(U,$J,358.3,34192,0)
- ;;=M05.511^^183^2016^121
- ;;^UTILITY(U,$J,358.3,34192,1,0)
+ ;;^UTILITY(U,$J,358.3,33065,1,3,0)
+ ;;=3^Cerebrovascular Disease,Oth
+ ;;^UTILITY(U,$J,358.3,33065,1,4,0)
+ ;;=4^I67.89
+ ;;^UTILITY(U,$J,358.3,33065,2)
+ ;;=^5007388
+ ;;^UTILITY(U,$J,358.3,33066,0)
+ ;;=J32.8^^131^1664^49
+ ;;^UTILITY(U,$J,358.3,33066,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34192,1,3,0)
- ;;=3^Rheu polyneurop w rheu arthrit of right shoulder 
- ;;^UTILITY(U,$J,358.3,34192,1,4,0)
- ;;=4^M05.511
- ;;^UTILITY(U,$J,358.3,34192,2)
- ;;=^5009955
- ;;^UTILITY(U,$J,358.3,34193,0)
- ;;=M05.531^^183^2016^122
- ;;^UTILITY(U,$J,358.3,34193,1,0)
+ ;;^UTILITY(U,$J,358.3,33066,1,3,0)
+ ;;=3^Sinusitis,Chr,Oth
+ ;;^UTILITY(U,$J,358.3,33066,1,4,0)
+ ;;=4^J32.8
+ ;;^UTILITY(U,$J,358.3,33066,2)
+ ;;=^269890
+ ;;^UTILITY(U,$J,358.3,33067,0)
+ ;;=J32.4^^131^1664^48
+ ;;^UTILITY(U,$J,358.3,33067,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34193,1,3,0)
- ;;=3^Rheu polyneurop w rheu arthrit of right wrist 
- ;;^UTILITY(U,$J,358.3,34193,1,4,0)
- ;;=4^M05.531
- ;;^UTILITY(U,$J,358.3,34193,2)
- ;;=^5009961
- ;;^UTILITY(U,$J,358.3,34194,0)
- ;;=M19.272^^183^2016^153
- ;;^UTILITY(U,$J,358.3,34194,1,0)
+ ;;^UTILITY(U,$J,358.3,33067,1,3,0)
+ ;;=3^Pansinusitis,Chr
+ ;;^UTILITY(U,$J,358.3,33067,1,4,0)
+ ;;=4^J32.4
+ ;;^UTILITY(U,$J,358.3,33067,2)
+ ;;=^5008206
+ ;;^UTILITY(U,$J,358.3,33068,0)
+ ;;=J40.^^131^1664^8
+ ;;^UTILITY(U,$J,358.3,33068,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34194,1,3,0)
- ;;=3^Secondary osteoarthritis, left ankle and foot
- ;;^UTILITY(U,$J,358.3,34194,1,4,0)
- ;;=4^M19.272
- ;;^UTILITY(U,$J,358.3,34194,2)
- ;;=^5010851
- ;;^UTILITY(U,$J,358.3,34195,0)
- ;;=M19.271^^183^2016^156
- ;;^UTILITY(U,$J,358.3,34195,1,0)
+ ;;^UTILITY(U,$J,358.3,33068,1,3,0)
+ ;;=3^Bronchitis,Unspec
+ ;;^UTILITY(U,$J,358.3,33068,1,4,0)
+ ;;=4^J40.
+ ;;^UTILITY(U,$J,358.3,33068,2)
+ ;;=^17164
+ ;;^UTILITY(U,$J,358.3,33069,0)
+ ;;=J45.909^^131^1664^4
+ ;;^UTILITY(U,$J,358.3,33069,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34195,1,3,0)
- ;;=3^Secondary osteoarthritis, right ankle and foot
- ;;^UTILITY(U,$J,358.3,34195,1,4,0)
- ;;=4^M19.271
+ ;;^UTILITY(U,$J,358.3,33069,1,3,0)
+ ;;=3^Asthma,Unspec,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,33069,1,4,0)
+ ;;=4^J45.909
+ ;;^UTILITY(U,$J,358.3,33069,2)
+ ;;=^5008256
+ ;;^UTILITY(U,$J,358.3,33070,0)
+ ;;=J44.9^^131^1664^9
+ ;;^UTILITY(U,$J,358.3,33070,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33070,1,3,0)
+ ;;=3^COPD,Unspec
+ ;;^UTILITY(U,$J,358.3,33070,1,4,0)
+ ;;=4^J44.9
+ ;;^UTILITY(U,$J,358.3,33070,2)
+ ;;=^5008241

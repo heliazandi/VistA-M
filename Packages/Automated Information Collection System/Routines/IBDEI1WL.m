@@ -1,140 +1,124 @@
-IBDEI1WL ; ; 06-AUG-2015
+IBDEI1WL ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33471,1,3,0)
- ;;=3^Age-Related Cognitive Decline
- ;;^UTILITY(U,$J,358.3,33471,1,4,0)
- ;;=4^R41.81
- ;;^UTILITY(U,$J,358.3,33471,2)
- ;;=^5019440
- ;;^UTILITY(U,$J,358.3,33472,0)
- ;;=R41.0^^182^2004^58
- ;;^UTILITY(U,$J,358.3,33472,1,0)
+ ;;^UTILITY(U,$J,358.3,32302,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33472,1,3,0)
- ;;=3^Disorientation,Unspec
- ;;^UTILITY(U,$J,358.3,33472,1,4,0)
- ;;=4^R41.0
- ;;^UTILITY(U,$J,358.3,33472,2)
- ;;=^5019436
- ;;^UTILITY(U,$J,358.3,33473,0)
- ;;=R41.82^^182^2004^32
- ;;^UTILITY(U,$J,358.3,33473,1,0)
+ ;;^UTILITY(U,$J,358.3,32302,1,3,0)
+ ;;=3^Fx of tarsal bone(s) lft ft, subs w/ nonunion, unspec
+ ;;^UTILITY(U,$J,358.3,32302,1,4,0)
+ ;;=4^S92.202K
+ ;;^UTILITY(U,$J,358.3,32302,2)
+ ;;=^5044833
+ ;;^UTILITY(U,$J,358.3,32303,0)
+ ;;=S92.201K^^126^1609^225
+ ;;^UTILITY(U,$J,358.3,32303,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33473,1,3,0)
- ;;=3^Altered Mental Status,Unspec
- ;;^UTILITY(U,$J,358.3,33473,1,4,0)
- ;;=4^R41.82
- ;;^UTILITY(U,$J,358.3,33473,2)
- ;;=^5019441
- ;;^UTILITY(U,$J,358.3,33474,0)
- ;;=R43.0^^182^2004^35
- ;;^UTILITY(U,$J,358.3,33474,1,0)
+ ;;^UTILITY(U,$J,358.3,32303,1,3,0)
+ ;;=3^Fx of tarsal bone(s) rt ft, subs w/ nonunion, unspec
+ ;;^UTILITY(U,$J,358.3,32303,1,4,0)
+ ;;=4^S92.201K
+ ;;^UTILITY(U,$J,358.3,32303,2)
+ ;;=^5044826
+ ;;^UTILITY(U,$J,358.3,32304,0)
+ ;;=S92.192K^^126^1609^200
+ ;;^UTILITY(U,$J,358.3,32304,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33474,1,3,0)
- ;;=3^Anosmia
- ;;^UTILITY(U,$J,358.3,33474,1,4,0)
- ;;=4^R43.0
- ;;^UTILITY(U,$J,358.3,33474,2)
- ;;=^7949
- ;;^UTILITY(U,$J,358.3,33475,0)
- ;;=R43.1^^182^2004^126
- ;;^UTILITY(U,$J,358.3,33475,1,0)
+ ;;^UTILITY(U,$J,358.3,32304,1,3,0)
+ ;;=3^Fx of lft talus, subs w/ nonunion, oth
+ ;;^UTILITY(U,$J,358.3,32304,1,4,0)
+ ;;=4^S92.192K
+ ;;^UTILITY(U,$J,358.3,32304,2)
+ ;;=^5137589
+ ;;^UTILITY(U,$J,358.3,32305,0)
+ ;;=S92.191K^^126^1609^217
+ ;;^UTILITY(U,$J,358.3,32305,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33475,1,3,0)
- ;;=3^Parosmia
- ;;^UTILITY(U,$J,358.3,33475,1,4,0)
- ;;=4^R43.1
- ;;^UTILITY(U,$J,358.3,33475,2)
- ;;=^5019451
- ;;^UTILITY(U,$J,358.3,33476,0)
- ;;=R43.2^^182^2004^123
- ;;^UTILITY(U,$J,358.3,33476,1,0)
+ ;;^UTILITY(U,$J,358.3,32305,1,3,0)
+ ;;=3^Fx of rt talus, subs w/ nonunion, oth
+ ;;^UTILITY(U,$J,358.3,32305,1,4,0)
+ ;;=4^S92.191K
+ ;;^UTILITY(U,$J,358.3,32305,2)
+ ;;=^5044819
+ ;;^UTILITY(U,$J,358.3,32306,0)
+ ;;=S92.155K^^126^1609^226
+ ;;^UTILITY(U,$J,358.3,32306,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33476,1,3,0)
- ;;=3^Parageusia
- ;;^UTILITY(U,$J,358.3,33476,1,4,0)
- ;;=4^R43.2
- ;;^UTILITY(U,$J,358.3,33476,2)
- ;;=^5019452
- ;;^UTILITY(U,$J,358.3,33477,0)
- ;;=R43.9^^182^2004^141
- ;;^UTILITY(U,$J,358.3,33477,1,0)
+ ;;^UTILITY(U,$J,358.3,32306,1,3,0)
+ ;;=3^Nondisp avuls fx (chip) lft talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32306,1,4,0)
+ ;;=4^S92.155K
+ ;;^UTILITY(U,$J,358.3,32306,2)
+ ;;=^5044805
+ ;;^UTILITY(U,$J,358.3,32307,0)
+ ;;=S92.154K^^126^1609^227
+ ;;^UTILITY(U,$J,358.3,32307,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33477,1,3,0)
- ;;=3^Smell and Taste Disturbances,Unspec
- ;;^UTILITY(U,$J,358.3,33477,1,4,0)
- ;;=4^R43.9
- ;;^UTILITY(U,$J,358.3,33477,2)
- ;;=^5019454
- ;;^UTILITY(U,$J,358.3,33478,0)
- ;;=R44.0^^182^2004^42
- ;;^UTILITY(U,$J,358.3,33478,1,0)
+ ;;^UTILITY(U,$J,358.3,32307,1,3,0)
+ ;;=3^Nondisp avuls fx (chip) rt talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32307,1,4,0)
+ ;;=4^S92.154K
+ ;;^UTILITY(U,$J,358.3,32307,2)
+ ;;=^5044798
+ ;;^UTILITY(U,$J,358.3,32308,0)
+ ;;=S92.152K^^126^1609^3
+ ;;^UTILITY(U,$J,358.3,32308,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33478,1,3,0)
- ;;=3^Auditory Hallucinations
- ;;^UTILITY(U,$J,358.3,33478,1,4,0)
- ;;=4^R44.0
- ;;^UTILITY(U,$J,358.3,33478,2)
- ;;=^5019455
- ;;^UTILITY(U,$J,358.3,33479,0)
- ;;=R44.2^^182^2004^74
- ;;^UTILITY(U,$J,358.3,33479,1,0)
+ ;;^UTILITY(U,$J,358.3,32308,1,3,0)
+ ;;=3^Disp avuls fx (chip) lft talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32308,1,4,0)
+ ;;=4^S92.152K
+ ;;^UTILITY(U,$J,358.3,32308,2)
+ ;;=^5044784
+ ;;^UTILITY(U,$J,358.3,32309,0)
+ ;;=S92.151K^^126^1609^4
+ ;;^UTILITY(U,$J,358.3,32309,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33479,1,3,0)
- ;;=3^Hallucinations NEC
- ;;^UTILITY(U,$J,358.3,33479,1,4,0)
- ;;=4^R44.2
- ;;^UTILITY(U,$J,358.3,33479,2)
- ;;=^5019457
- ;;^UTILITY(U,$J,358.3,33480,0)
- ;;=R44.3^^182^2004^75
- ;;^UTILITY(U,$J,358.3,33480,1,0)
+ ;;^UTILITY(U,$J,358.3,32309,1,3,0)
+ ;;=3^Disp avuls fx (chip) of rt talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32309,1,4,0)
+ ;;=4^S92.151K
+ ;;^UTILITY(U,$J,358.3,32309,2)
+ ;;=^5044777
+ ;;^UTILITY(U,$J,358.3,32310,0)
+ ;;=S92.145K^^126^1609^244
+ ;;^UTILITY(U,$J,358.3,32310,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33480,1,3,0)
- ;;=3^Hallucinations,Unspec
- ;;^UTILITY(U,$J,358.3,33480,1,4,0)
- ;;=4^R44.3
- ;;^UTILITY(U,$J,358.3,33480,2)
- ;;=^5019458
- ;;^UTILITY(U,$J,358.3,33481,0)
- ;;=R45.0^^182^2004^115
- ;;^UTILITY(U,$J,358.3,33481,1,0)
+ ;;^UTILITY(U,$J,358.3,32310,1,3,0)
+ ;;=3^Nondisp dome fx lft tauls, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32310,1,4,0)
+ ;;=4^S92.145K
+ ;;^UTILITY(U,$J,358.3,32310,2)
+ ;;=^5044763
+ ;;^UTILITY(U,$J,358.3,32311,0)
+ ;;=S92.055K^^126^1609^249
+ ;;^UTILITY(U,$J,358.3,32311,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33481,1,3,0)
- ;;=3^Nervousness
- ;;^UTILITY(U,$J,358.3,33481,1,4,0)
- ;;=4^R45.0
- ;;^UTILITY(U,$J,358.3,33481,2)
- ;;=^5019461
- ;;^UTILITY(U,$J,358.3,33482,0)
- ;;=R47.01^^182^2004^38
- ;;^UTILITY(U,$J,358.3,33482,1,0)
+ ;;^UTILITY(U,$J,358.3,32311,1,3,0)
+ ;;=3^Nondisp extrartic fx lft calcaneus, subs w/ nonunion, oth
+ ;;^UTILITY(U,$J,358.3,32311,1,4,0)
+ ;;=4^S92.055K
+ ;;^UTILITY(U,$J,358.3,32311,2)
+ ;;=^5044539
+ ;;^UTILITY(U,$J,358.3,32312,0)
+ ;;=S92.054K^^126^1609^252
+ ;;^UTILITY(U,$J,358.3,32312,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33482,1,3,0)
- ;;=3^Aphasia
- ;;^UTILITY(U,$J,358.3,33482,1,4,0)
- ;;=4^R47.01
- ;;^UTILITY(U,$J,358.3,33482,2)
- ;;=^5019488
- ;;^UTILITY(U,$J,358.3,33483,0)
- ;;=R47.9^^182^2004^144
- ;;^UTILITY(U,$J,358.3,33483,1,0)
+ ;;^UTILITY(U,$J,358.3,32312,1,3,0)
+ ;;=3^Nondisp extrartic fx rt calcaneus, subs w/ nonunion, oth
+ ;;^UTILITY(U,$J,358.3,32312,1,4,0)
+ ;;=4^S92.054K
+ ;;^UTILITY(U,$J,358.3,32312,2)
+ ;;=^5044532
+ ;;^UTILITY(U,$J,358.3,32313,0)
+ ;;=S92.052K^^126^1609^24
+ ;;^UTILITY(U,$J,358.3,32313,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33483,1,3,0)
- ;;=3^Speech Disturbances,Unspec
- ;;^UTILITY(U,$J,358.3,33483,1,4,0)
- ;;=4^R47.9
- ;;^UTILITY(U,$J,358.3,33483,2)
- ;;=^5019494
- ;;^UTILITY(U,$J,358.3,33484,0)
- ;;=R49.8^^182^2004^156
- ;;^UTILITY(U,$J,358.3,33484,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33484,1,3,0)
- ;;=3^Voice and Resonance Disorders NEC
- ;;^UTILITY(U,$J,358.3,33484,1,4,0)
- ;;=4^R49.8
- ;;^UTILITY(U,$J,358.3,33484,2)
- ;;=^5019505
+ ;;^UTILITY(U,$J,358.3,32313,1,3,0)
+ ;;=3^Disp extrartic fx lft calcaneus, subs w/ nonunion, oth
+ ;;^UTILITY(U,$J,358.3,32313,1,4,0)
+ ;;=4^S92.052K
+ ;;^UTILITY(U,$J,358.3,32313,2)
+ ;;=^5044518
+ ;;^UTILITY(U,$J,358.3,32314,0)
+ ;;=S92.051K^^126^1609^27

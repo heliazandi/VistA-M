@@ -1,140 +1,120 @@
-IBDEI1L9 ; ; 06-AUG-2015
+IBDEI1L9 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,28196,1,4,0)
- ;;=4^681.10
- ;;^UTILITY(U,$J,358.3,28196,1,5,0)
- ;;=5^Cellulitis Of Toe
- ;;^UTILITY(U,$J,358.3,28196,2)
- ;;=^271885
- ;;^UTILITY(U,$J,358.3,28197,0)
- ;;=682.2^^162^1793^14
- ;;^UTILITY(U,$J,358.3,28197,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28197,1,4,0)
- ;;=4^682.2
- ;;^UTILITY(U,$J,358.3,28197,1,5,0)
- ;;=5^Cellulitis Of Trunk
- ;;^UTILITY(U,$J,358.3,28197,2)
- ;;=^271890
- ;;^UTILITY(U,$J,358.3,28198,0)
- ;;=691.8^^162^1793^18
- ;;^UTILITY(U,$J,358.3,28198,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28198,1,4,0)
- ;;=4^691.8
- ;;^UTILITY(U,$J,358.3,28198,1,5,0)
- ;;=5^Dermatitis, Atopic
- ;;^UTILITY(U,$J,358.3,28198,2)
- ;;=^87342
- ;;^UTILITY(U,$J,358.3,28199,0)
- ;;=692.9^^162^1793^28
- ;;^UTILITY(U,$J,358.3,28199,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28199,1,4,0)
- ;;=4^692.9
- ;;^UTILITY(U,$J,358.3,28199,1,5,0)
- ;;=5^Eczema, Allergic
- ;;^UTILITY(U,$J,358.3,28199,2)
- ;;=^27800
- ;;^UTILITY(U,$J,358.3,28200,0)
- ;;=693.0^^162^1793^24
- ;;^UTILITY(U,$J,358.3,28200,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28200,1,4,0)
- ;;=4^693.0
- ;;^UTILITY(U,$J,358.3,28200,1,5,0)
- ;;=5^Drug Dermatitis NOS
- ;;^UTILITY(U,$J,358.3,28200,2)
- ;;=^33042
- ;;^UTILITY(U,$J,358.3,28201,0)
- ;;=459.81^^162^1793^19
- ;;^UTILITY(U,$J,358.3,28201,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28201,1,4,0)
- ;;=4^459.81
- ;;^UTILITY(U,$J,358.3,28201,1,5,0)
- ;;=5^Dermatitis, Stasis
- ;;^UTILITY(U,$J,358.3,28201,2)
- ;;=^125826
- ;;^UTILITY(U,$J,358.3,28202,0)
- ;;=110.0^^162^1793^62
- ;;^UTILITY(U,$J,358.3,28202,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28202,1,4,0)
- ;;=4^110.0
- ;;^UTILITY(U,$J,358.3,28202,1,5,0)
- ;;=5^Tinea Versicolor
- ;;^UTILITY(U,$J,358.3,28202,2)
- ;;=^33176
- ;;^UTILITY(U,$J,358.3,28203,0)
- ;;=110.5^^162^1793^21
- ;;^UTILITY(U,$J,358.3,28203,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28203,1,4,0)
- ;;=4^110.5
- ;;^UTILITY(U,$J,358.3,28203,1,5,0)
- ;;=5^Dermatophytosis Of Body
- ;;^UTILITY(U,$J,358.3,28203,2)
- ;;=^33179
- ;;^UTILITY(U,$J,358.3,28204,0)
- ;;=110.6^^162^1793^23
- ;;^UTILITY(U,$J,358.3,28204,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28204,1,4,0)
- ;;=4^110.6
- ;;^UTILITY(U,$J,358.3,28204,1,5,0)
- ;;=5^Dermatophytosis, Deep
- ;;^UTILITY(U,$J,358.3,28204,2)
- ;;=^266861
- ;;^UTILITY(U,$J,358.3,28205,0)
- ;;=110.4^^162^1793^22
- ;;^UTILITY(U,$J,358.3,28205,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28205,1,4,0)
- ;;=4^110.4
- ;;^UTILITY(U,$J,358.3,28205,1,5,0)
- ;;=5^Dermatophytosis Of Foot
- ;;^UTILITY(U,$J,358.3,28205,2)
- ;;=^33168
- ;;^UTILITY(U,$J,358.3,28206,0)
- ;;=110.3^^162^1793^61
- ;;^UTILITY(U,$J,358.3,28206,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28206,1,4,0)
- ;;=4^110.3
- ;;^UTILITY(U,$J,358.3,28206,1,5,0)
- ;;=5^Tinea Cruris
- ;;^UTILITY(U,$J,358.3,28206,2)
- ;;=^33171
- ;;^UTILITY(U,$J,358.3,28207,0)
- ;;=110.1^^162^1793^41
- ;;^UTILITY(U,$J,358.3,28207,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28207,1,4,0)
- ;;=4^110.1
- ;;^UTILITY(U,$J,358.3,28207,1,5,0)
- ;;=5^Onychomycosis Finger Or Toe
- ;;^UTILITY(U,$J,358.3,28207,2)
- ;;=^33173
- ;;^UTILITY(U,$J,358.3,28208,0)
- ;;=707.13^^162^1793^64
- ;;^UTILITY(U,$J,358.3,28208,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28208,1,4,0)
- ;;=4^707.13
- ;;^UTILITY(U,$J,358.3,28208,1,5,0)
- ;;=5^Ulcer Of Ankle, Non-Diabetic
- ;;^UTILITY(U,$J,358.3,28208,2)
- ;;=Ulcer of Ankle, non-diabetic^322145
- ;;^UTILITY(U,$J,358.3,28209,0)
- ;;=707.12^^162^1793^66
- ;;^UTILITY(U,$J,358.3,28209,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28209,1,4,0)
- ;;=4^707.12
- ;;^UTILITY(U,$J,358.3,28209,1,5,0)
- ;;=5^Ulcer Of Calf, Non-Diabetic
- ;;^UTILITY(U,$J,358.3,28209,2)
- ;;=Ulcer of Calf, non-diabetic^322144
+ ;;^UTILITY(U,$J,358.3,26933,1,4,0)
+ ;;=4^F19.20
+ ;;^UTILITY(U,$J,358.3,26933,2)
+ ;;=^5003431
+ ;;^UTILITY(U,$J,358.3,26934,0)
+ ;;=F19.21^^100^1296^5
+ ;;^UTILITY(U,$J,358.3,26934,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26934,1,3,0)
+ ;;=3^Psychoactive Substance Dependence NEC,In Remission
+ ;;^UTILITY(U,$J,358.3,26934,1,4,0)
+ ;;=4^F19.21
+ ;;^UTILITY(U,$J,358.3,26934,2)
+ ;;=^5003432
+ ;;^UTILITY(U,$J,358.3,26935,0)
+ ;;=F19.24^^100^1296^4
+ ;;^UTILITY(U,$J,358.3,26935,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26935,1,3,0)
+ ;;=3^Psychoactive Substance Dependence NEC w/ Induced Mood Disorder
+ ;;^UTILITY(U,$J,358.3,26935,1,4,0)
+ ;;=4^F19.24
+ ;;^UTILITY(U,$J,358.3,26935,2)
+ ;;=^5003441
+ ;;^UTILITY(U,$J,358.3,26936,0)
+ ;;=F13.10^^100^1297^1
+ ;;^UTILITY(U,$J,358.3,26936,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26936,1,3,0)
+ ;;=3^Sedative,Hypnotic or Anxiolytic Use Disorder,Mild
+ ;;^UTILITY(U,$J,358.3,26936,1,4,0)
+ ;;=4^F13.10
+ ;;^UTILITY(U,$J,358.3,26936,2)
+ ;;=^5003189
+ ;;^UTILITY(U,$J,358.3,26937,0)
+ ;;=F13.14^^100^1297^7
+ ;;^UTILITY(U,$J,358.3,26937,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26937,1,3,0)
+ ;;=3^Sedative,Hypnotic or Anxiolytic-Induced Depressive,Bipolar or Related Disorder w/ Mild use Disorder
+ ;;^UTILITY(U,$J,358.3,26937,1,4,0)
+ ;;=4^F13.14
+ ;;^UTILITY(U,$J,358.3,26937,2)
+ ;;=^5003193
+ ;;^UTILITY(U,$J,358.3,26938,0)
+ ;;=F13.182^^100^1297^8
+ ;;^UTILITY(U,$J,358.3,26938,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26938,1,3,0)
+ ;;=3^Sedative,Hypnotic or Anxiolytic-Induced Sleep Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26938,1,4,0)
+ ;;=4^F13.182
+ ;;^UTILITY(U,$J,358.3,26938,2)
+ ;;=^5003199
+ ;;^UTILITY(U,$J,358.3,26939,0)
+ ;;=F13.20^^100^1297^2
+ ;;^UTILITY(U,$J,358.3,26939,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26939,1,3,0)
+ ;;=3^Sedative,Hypnotic or Anxiolytic Use Disorder,Moderate-Severe
+ ;;^UTILITY(U,$J,358.3,26939,1,4,0)
+ ;;=4^F13.20
+ ;;^UTILITY(U,$J,358.3,26939,2)
+ ;;=^5003202
+ ;;^UTILITY(U,$J,358.3,26940,0)
+ ;;=F13.21^^100^1297^3
+ ;;^UTILITY(U,$J,358.3,26940,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26940,1,3,0)
+ ;;=3^Sedative,Hypnotic or Anxiolytic Use Disorder,Moderate-Severe In Remission
+ ;;^UTILITY(U,$J,358.3,26940,1,4,0)
+ ;;=4^F13.21
+ ;;^UTILITY(U,$J,358.3,26940,2)
+ ;;=^331934
+ ;;^UTILITY(U,$J,358.3,26941,0)
+ ;;=F13.232^^100^1297^4
+ ;;^UTILITY(U,$J,358.3,26941,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26941,1,3,0)
+ ;;=3^Sedative,Hypnotic or Anxiolytic Withdrawal w/ Perceptual Disturbances
+ ;;^UTILITY(U,$J,358.3,26941,1,4,0)
+ ;;=4^F13.232
+ ;;^UTILITY(U,$J,358.3,26941,2)
+ ;;=^5003208
+ ;;^UTILITY(U,$J,358.3,26942,0)
+ ;;=F13.239^^100^1297^5
+ ;;^UTILITY(U,$J,358.3,26942,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26942,1,3,0)
+ ;;=3^Sedative,Hypnotic or Anxiolytic Withdrawal w/o Perceptual Disturbances
+ ;;^UTILITY(U,$J,358.3,26942,1,4,0)
+ ;;=4^F13.239
+ ;;^UTILITY(U,$J,358.3,26942,2)
+ ;;=^5003209
+ ;;^UTILITY(U,$J,358.3,26943,0)
+ ;;=F13.24^^100^1297^9
+ ;;^UTILITY(U,$J,358.3,26943,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26943,1,3,0)
+ ;;=3^Sedative,Hypnotic or Anxiolytic-Induced Dep,Bip or Related Disorder w/ Mod-Sev Use Disorder
+ ;;^UTILITY(U,$J,358.3,26943,1,4,0)
+ ;;=4^F13.24
+ ;;^UTILITY(U,$J,358.3,26943,2)
+ ;;=^5003210
+ ;;^UTILITY(U,$J,358.3,26944,0)
+ ;;=F13.231^^100^1297^6
+ ;;^UTILITY(U,$J,358.3,26944,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26944,1,3,0)
+ ;;=3^Sedative,Hypnotic or Anxiolytic Withdrawal Delirium
+ ;;^UTILITY(U,$J,358.3,26944,1,4,0)
+ ;;=4^F13.231
+ ;;^UTILITY(U,$J,358.3,26944,2)
+ ;;=^5003207
+ ;;^UTILITY(U,$J,358.3,26945,0)
+ ;;=F17.200^^100^1298^9

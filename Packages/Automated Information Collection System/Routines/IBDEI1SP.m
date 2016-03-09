@@ -1,124 +1,130 @@
-IBDEI1SP ; ; 06-AUG-2015
+IBDEI1SP ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31668,1,4,0)
- ;;=4^M05.541
- ;;^UTILITY(U,$J,358.3,31668,2)
- ;;=^5009964
- ;;^UTILITY(U,$J,358.3,31669,0)
- ;;=M05.551^^180^1962^122
- ;;^UTILITY(U,$J,358.3,31669,1,0)
+ ;;^UTILITY(U,$J,358.3,30510,0)
+ ;;=64445^^120^1515^20^^^^1
+ ;;^UTILITY(U,$J,358.3,30510,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31669,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of right hip
- ;;^UTILITY(U,$J,358.3,31669,1,4,0)
- ;;=4^M05.551
- ;;^UTILITY(U,$J,358.3,31669,2)
- ;;=^5009967
- ;;^UTILITY(U,$J,358.3,31670,0)
- ;;=M05.561^^180^1962^123
- ;;^UTILITY(U,$J,358.3,31670,1,0)
+ ;;^UTILITY(U,$J,358.3,30510,1,2,0)
+ ;;=2^N Block Inj Sciatic SNG
+ ;;^UTILITY(U,$J,358.3,30510,1,4,0)
+ ;;=4^64445
+ ;;^UTILITY(U,$J,358.3,30511,0)
+ ;;=64461^^120^1515^21^^^^1
+ ;;^UTILITY(U,$J,358.3,30511,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31670,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of right knee
- ;;^UTILITY(U,$J,358.3,31670,1,4,0)
- ;;=4^M05.561
- ;;^UTILITY(U,$J,358.3,31670,2)
- ;;=^5009970
- ;;^UTILITY(U,$J,358.3,31671,0)
- ;;=M05.511^^180^1962^124
- ;;^UTILITY(U,$J,358.3,31671,1,0)
+ ;;^UTILITY(U,$J,358.3,30511,1,2,0)
+ ;;=2^PVB Thoracic;Single Inj Site
+ ;;^UTILITY(U,$J,358.3,30511,1,4,0)
+ ;;=4^64461
+ ;;^UTILITY(U,$J,358.3,30512,0)
+ ;;=64462^^120^1515^22^^^^1
+ ;;^UTILITY(U,$J,358.3,30512,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31671,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of right shoulder
- ;;^UTILITY(U,$J,358.3,31671,1,4,0)
- ;;=4^M05.511
- ;;^UTILITY(U,$J,358.3,31671,2)
- ;;=^5009955
- ;;^UTILITY(U,$J,358.3,31672,0)
- ;;=M05.531^^180^1962^125
- ;;^UTILITY(U,$J,358.3,31672,1,0)
+ ;;^UTILITY(U,$J,358.3,30512,1,2,0)
+ ;;=2^PVB Thoracic;Addl Inj Site
+ ;;^UTILITY(U,$J,358.3,30512,1,4,0)
+ ;;=4^64462
+ ;;^UTILITY(U,$J,358.3,30513,0)
+ ;;=64463^^120^1515^23^^^^1
+ ;;^UTILITY(U,$J,358.3,30513,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31672,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of right wrist
- ;;^UTILITY(U,$J,358.3,31672,1,4,0)
- ;;=4^M05.531
- ;;^UTILITY(U,$J,358.3,31672,2)
- ;;=^5009961
- ;;^UTILITY(U,$J,358.3,31673,0)
- ;;=M67.02^^180^1962^128
- ;;^UTILITY(U,$J,358.3,31673,1,0)
+ ;;^UTILITY(U,$J,358.3,30513,1,2,0)
+ ;;=2^PVB Thoracic;Continuous Infusion by Cath
+ ;;^UTILITY(U,$J,358.3,30513,1,4,0)
+ ;;=4^64463
+ ;;^UTILITY(U,$J,358.3,30514,0)
+ ;;=99366^^120^1516^1^^^^1
+ ;;^UTILITY(U,$J,358.3,30514,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31673,1,3,0)
- ;;=3^Short Achilles tendon (acquired), left ankle
- ;;^UTILITY(U,$J,358.3,31673,1,4,0)
- ;;=4^M67.02
- ;;^UTILITY(U,$J,358.3,31673,2)
- ;;=^5012907
- ;;^UTILITY(U,$J,358.3,31674,0)
- ;;=M67.01^^180^1962^129
- ;;^UTILITY(U,$J,358.3,31674,1,0)
+ ;;^UTILITY(U,$J,358.3,30514,1,2,0)
+ ;;=2^Interdisc Team Mtg w/ Pt w/o Provider
+ ;;^UTILITY(U,$J,358.3,30514,1,4,0)
+ ;;=4^99366
+ ;;^UTILITY(U,$J,358.3,30515,0)
+ ;;=99368^^120^1516^2^^^^1
+ ;;^UTILITY(U,$J,358.3,30515,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31674,1,3,0)
- ;;=3^Short Achilles tendon (acquired), right ankle
- ;;^UTILITY(U,$J,358.3,31674,1,4,0)
- ;;=4^M67.01
- ;;^UTILITY(U,$J,358.3,31674,2)
- ;;=^5012906
- ;;^UTILITY(U,$J,358.3,31675,0)
- ;;=G47.9^^180^1962^130
- ;;^UTILITY(U,$J,358.3,31675,1,0)
+ ;;^UTILITY(U,$J,358.3,30515,1,2,0)
+ ;;=2^Interdisc Team Mtg w/o Pt w/o Provider
+ ;;^UTILITY(U,$J,358.3,30515,1,4,0)
+ ;;=4^99368
+ ;;^UTILITY(U,$J,358.3,30516,0)
+ ;;=99367^^120^1516^3^^^^1
+ ;;^UTILITY(U,$J,358.3,30516,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31675,1,3,0)
- ;;=3^Sleep disorder, unspecified
- ;;^UTILITY(U,$J,358.3,31675,1,4,0)
- ;;=4^G47.9
- ;;^UTILITY(U,$J,358.3,31675,2)
- ;;=^5003990
- ;;^UTILITY(U,$J,358.3,31676,0)
- ;;=M66.232^^180^1962^131
- ;;^UTILITY(U,$J,358.3,31676,1,0)
+ ;;^UTILITY(U,$J,358.3,30516,1,2,0)
+ ;;=2^Interdisc Team Mtg w/o Pt w/ Provider
+ ;;^UTILITY(U,$J,358.3,30516,1,4,0)
+ ;;=4^99367
+ ;;^UTILITY(U,$J,358.3,30517,0)
+ ;;=99415^^120^1517^1^^^^1
+ ;;^UTILITY(U,$J,358.3,30517,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31676,1,3,0)
- ;;=3^Spontaneous rupture of extensor tendons, left forearm
- ;;^UTILITY(U,$J,358.3,31676,1,4,0)
- ;;=4^M66.232
- ;;^UTILITY(U,$J,358.3,31676,2)
- ;;=^5012855
- ;;^UTILITY(U,$J,358.3,31677,0)
- ;;=M66.242^^180^1962^132
- ;;^UTILITY(U,$J,358.3,31677,1,0)
+ ;;^UTILITY(U,$J,358.3,30517,1,2,0)
+ ;;=2^Prolonged Svs w/ Patient,1st hr
+ ;;^UTILITY(U,$J,358.3,30517,1,4,0)
+ ;;=4^99415
+ ;;^UTILITY(U,$J,358.3,30518,0)
+ ;;=99416^^120^1517^2^^^^1
+ ;;^UTILITY(U,$J,358.3,30518,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31677,1,3,0)
- ;;=3^Spontaneous rupture of extensor tendons, left hand
- ;;^UTILITY(U,$J,358.3,31677,1,4,0)
- ;;=4^M66.242
- ;;^UTILITY(U,$J,358.3,31677,2)
- ;;=^5012858
- ;;^UTILITY(U,$J,358.3,31678,0)
- ;;=M66.231^^180^1962^133
- ;;^UTILITY(U,$J,358.3,31678,1,0)
+ ;;^UTILITY(U,$J,358.3,30518,1,2,0)
+ ;;=2^Prolonged Svs w/ Patient,Ea Addl 30min
+ ;;^UTILITY(U,$J,358.3,30518,1,4,0)
+ ;;=4^99416
+ ;;^UTILITY(U,$J,358.3,30519,0)
+ ;;=R10.9^^121^1518^6
+ ;;^UTILITY(U,$J,358.3,30519,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31678,1,3,0)
- ;;=3^Spontaneous rupture of extensor tendons, right forearm
- ;;^UTILITY(U,$J,358.3,31678,1,4,0)
- ;;=4^M66.231
- ;;^UTILITY(U,$J,358.3,31678,2)
- ;;=^5012854
- ;;^UTILITY(U,$J,358.3,31679,0)
- ;;=M66.241^^180^1962^134
- ;;^UTILITY(U,$J,358.3,31679,1,0)
+ ;;^UTILITY(U,$J,358.3,30519,1,3,0)
+ ;;=3^Abdominal Pain,Unspec
+ ;;^UTILITY(U,$J,358.3,30519,1,4,0)
+ ;;=4^R10.9
+ ;;^UTILITY(U,$J,358.3,30519,2)
+ ;;=^5019230
+ ;;^UTILITY(U,$J,358.3,30520,0)
+ ;;=R10.11^^121^1518^5
+ ;;^UTILITY(U,$J,358.3,30520,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31679,1,3,0)
- ;;=3^Spontaneous rupture of extensor tendons, right hand
- ;;^UTILITY(U,$J,358.3,31679,1,4,0)
- ;;=4^M66.241
- ;;^UTILITY(U,$J,358.3,31679,2)
- ;;=^5012857
- ;;^UTILITY(U,$J,358.3,31680,0)
- ;;=M66.331^^180^1962^135
- ;;^UTILITY(U,$J,358.3,31680,1,0)
+ ;;^UTILITY(U,$J,358.3,30520,1,3,0)
+ ;;=3^Abdominal Pain,Right Upper Quadrant
+ ;;^UTILITY(U,$J,358.3,30520,1,4,0)
+ ;;=4^R10.11
+ ;;^UTILITY(U,$J,358.3,30520,2)
+ ;;=^5019206
+ ;;^UTILITY(U,$J,358.3,30521,0)
+ ;;=R10.12^^121^1518^3
+ ;;^UTILITY(U,$J,358.3,30521,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31680,1,3,0)
- ;;=3^Spontaneous rupture of flexor tendons, right forearm
+ ;;^UTILITY(U,$J,358.3,30521,1,3,0)
+ ;;=3^Abdominal Pain,Left Upper Quadrant
+ ;;^UTILITY(U,$J,358.3,30521,1,4,0)
+ ;;=4^R10.12
+ ;;^UTILITY(U,$J,358.3,30521,2)
+ ;;=^5019207
+ ;;^UTILITY(U,$J,358.3,30522,0)
+ ;;=R10.31^^121^1518^4
+ ;;^UTILITY(U,$J,358.3,30522,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30522,1,3,0)
+ ;;=3^Abdominal Pain,Right Lower Quadrant
+ ;;^UTILITY(U,$J,358.3,30522,1,4,0)
+ ;;=4^R10.31
+ ;;^UTILITY(U,$J,358.3,30522,2)
+ ;;=^5019211
+ ;;^UTILITY(U,$J,358.3,30523,0)
+ ;;=R10.32^^121^1518^2
+ ;;^UTILITY(U,$J,358.3,30523,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30523,1,3,0)
+ ;;=3^Abdominal Pain,Left Lower Quadrant
+ ;;^UTILITY(U,$J,358.3,30523,1,4,0)
+ ;;=4^R10.32
+ ;;^UTILITY(U,$J,358.3,30523,2)
+ ;;=^5019212
+ ;;^UTILITY(U,$J,358.3,30524,0)
+ ;;=R10.33^^121^1518^10
+ ;;^UTILITY(U,$J,358.3,30524,1,0)
+ ;;=^358.31IA^4^2

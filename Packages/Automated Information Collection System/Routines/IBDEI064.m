@@ -1,136 +1,136 @@
-IBDEI064 ; ; 06-AUG-2015
+IBDEI064 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2335,1,4,0)
- ;;=4^C03.9
- ;;^UTILITY(U,$J,358.3,2335,2)
- ;;=^5000892
- ;;^UTILITY(U,$J,358.3,2336,0)
- ;;=C04.9^^5^69^14
- ;;^UTILITY(U,$J,358.3,2336,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2336,1,3,0)
- ;;=3^Malignant neoplasm of floor of mouth, unspecified
- ;;^UTILITY(U,$J,358.3,2336,1,4,0)
- ;;=4^C04.9
- ;;^UTILITY(U,$J,358.3,2336,2)
- ;;=^5000896
- ;;^UTILITY(U,$J,358.3,2337,0)
- ;;=C05.2^^5^69^32
- ;;^UTILITY(U,$J,358.3,2337,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2337,1,3,0)
- ;;=3^Malignant neoplasm of uvula
- ;;^UTILITY(U,$J,358.3,2337,1,4,0)
- ;;=4^C05.2
- ;;^UTILITY(U,$J,358.3,2337,2)
- ;;=^267023
- ;;^UTILITY(U,$J,358.3,2338,0)
- ;;=C06.9^^5^69^20
- ;;^UTILITY(U,$J,358.3,2338,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2338,1,3,0)
- ;;=3^Malignant neoplasm of mouth, unspecified
- ;;^UTILITY(U,$J,358.3,2338,1,4,0)
- ;;=4^C06.9
- ;;^UTILITY(U,$J,358.3,2338,2)
- ;;=^5000901
- ;;^UTILITY(U,$J,358.3,2339,0)
- ;;=C09.9^^5^69^31
- ;;^UTILITY(U,$J,358.3,2339,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2339,1,3,0)
- ;;=3^Malignant neoplasm of tonsil, unspecified
- ;;^UTILITY(U,$J,358.3,2339,1,4,0)
- ;;=4^C09.9
- ;;^UTILITY(U,$J,358.3,2339,2)
- ;;=^5000905
- ;;^UTILITY(U,$J,358.3,2340,0)
- ;;=C10.9^^5^69^23
- ;;^UTILITY(U,$J,358.3,2340,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2340,1,3,0)
- ;;=3^Malignant neoplasm of oropharynx, unspecified
- ;;^UTILITY(U,$J,358.3,2340,1,4,0)
- ;;=4^C10.9
- ;;^UTILITY(U,$J,358.3,2340,2)
- ;;=^5000909
- ;;^UTILITY(U,$J,358.3,2341,0)
- ;;=C11.9^^5^69^22
- ;;^UTILITY(U,$J,358.3,2341,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2341,1,3,0)
- ;;=3^Malignant neoplasm of nasopharynx, unspecified
- ;;^UTILITY(U,$J,358.3,2341,1,4,0)
- ;;=4^C11.9
- ;;^UTILITY(U,$J,358.3,2341,2)
- ;;=^5000911
- ;;^UTILITY(U,$J,358.3,2342,0)
- ;;=C12.^^5^69^25
- ;;^UTILITY(U,$J,358.3,2342,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2342,1,3,0)
- ;;=3^Malignant neoplasm of pyriform sinus
- ;;^UTILITY(U,$J,358.3,2342,1,4,0)
- ;;=4^C12.
- ;;^UTILITY(U,$J,358.3,2342,2)
- ;;=^267046
- ;;^UTILITY(U,$J,358.3,2343,0)
- ;;=C13.9^^5^69^18
- ;;^UTILITY(U,$J,358.3,2343,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2343,1,3,0)
- ;;=3^Malignant neoplasm of hypopharynx, unspecified
- ;;^UTILITY(U,$J,358.3,2343,1,4,0)
- ;;=4^C13.9
- ;;^UTILITY(U,$J,358.3,2343,2)
- ;;=^5000915
- ;;^UTILITY(U,$J,358.3,2344,0)
- ;;=C30.0^^5^69^21
- ;;^UTILITY(U,$J,358.3,2344,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2344,1,3,0)
- ;;=3^Malignant neoplasm of nasal cavity
- ;;^UTILITY(U,$J,358.3,2344,1,4,0)
- ;;=4^C30.0
- ;;^UTILITY(U,$J,358.3,2344,2)
- ;;=^5000949
- ;;^UTILITY(U,$J,358.3,2345,0)
- ;;=C31.9^^5^69^12
- ;;^UTILITY(U,$J,358.3,2345,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2345,1,3,0)
- ;;=3^Malignant neoplasm of accessory sinus, unspecified
- ;;^UTILITY(U,$J,358.3,2345,1,4,0)
- ;;=4^C31.9
- ;;^UTILITY(U,$J,358.3,2345,2)
- ;;=^5000953
- ;;^UTILITY(U,$J,358.3,2346,0)
- ;;=C32.0^^5^69^15
- ;;^UTILITY(U,$J,358.3,2346,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2346,1,3,0)
- ;;=3^Malignant neoplasm of glottis
- ;;^UTILITY(U,$J,358.3,2346,1,4,0)
- ;;=4^C32.0
- ;;^UTILITY(U,$J,358.3,2346,2)
- ;;=^267129
- ;;^UTILITY(U,$J,358.3,2347,0)
- ;;=C32.1^^5^69^28
- ;;^UTILITY(U,$J,358.3,2347,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2347,1,3,0)
- ;;=3^Malignant neoplasm of supraglottis
- ;;^UTILITY(U,$J,358.3,2347,1,4,0)
- ;;=4^C32.1
- ;;^UTILITY(U,$J,358.3,2347,2)
- ;;=^267130
- ;;^UTILITY(U,$J,358.3,2348,0)
- ;;=C32.2^^5^69^26
- ;;^UTILITY(U,$J,358.3,2348,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2348,1,3,0)
- ;;=3^Malignant neoplasm of subglottis
- ;;^UTILITY(U,$J,358.3,2348,1,4,0)
- ;;=4^C32.2
+ ;;^UTILITY(U,$J,358.3,2528,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2528,1,1,0)
+ ;;=1^Exp Prob Focus
+ ;;^UTILITY(U,$J,358.3,2528,1,2,0)
+ ;;=2^99252
+ ;;^UTILITY(U,$J,358.3,2529,0)
+ ;;=99253^^16^195^3
+ ;;^UTILITY(U,$J,358.3,2529,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2529,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,2529,1,2,0)
+ ;;=2^99253
+ ;;^UTILITY(U,$J,358.3,2530,0)
+ ;;=99254^^16^195^4
+ ;;^UTILITY(U,$J,358.3,2530,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2530,1,1,0)
+ ;;=1^Comprehensive,Mod
+ ;;^UTILITY(U,$J,358.3,2530,1,2,0)
+ ;;=2^99254
+ ;;^UTILITY(U,$J,358.3,2531,0)
+ ;;=99255^^16^195^5
+ ;;^UTILITY(U,$J,358.3,2531,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2531,1,1,0)
+ ;;=1^Comprehensive,High
+ ;;^UTILITY(U,$J,358.3,2531,1,2,0)
+ ;;=2^99255
+ ;;^UTILITY(U,$J,358.3,2532,0)
+ ;;=99315^^16^196^1
+ ;;^UTILITY(U,$J,358.3,2532,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2532,1,1,0)
+ ;;=1^Discharge Day Mgmt,30 Min
+ ;;^UTILITY(U,$J,358.3,2532,1,2,0)
+ ;;=2^99315
+ ;;^UTILITY(U,$J,358.3,2533,0)
+ ;;=99316^^16^196^2
+ ;;^UTILITY(U,$J,358.3,2533,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2533,1,1,0)
+ ;;=1^Discharge Day Mgmt > 30 Min
+ ;;^UTILITY(U,$J,358.3,2533,1,2,0)
+ ;;=2^99316
+ ;;^UTILITY(U,$J,358.3,2534,0)
+ ;;=99318^^16^197^1
+ ;;^UTILITY(U,$J,358.3,2534,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2534,1,1,0)
+ ;;=1^E&M Annual NF Assessment
+ ;;^UTILITY(U,$J,358.3,2534,1,2,0)
+ ;;=2^99318
+ ;;^UTILITY(U,$J,358.3,2535,0)
+ ;;=99495^^16^198^2
+ ;;^UTILITY(U,$J,358.3,2535,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2535,1,1,0)
+ ;;=1^Trans Care,FTF w/in 14D of D/C
+ ;;^UTILITY(U,$J,358.3,2535,1,2,0)
+ ;;=2^99495
+ ;;^UTILITY(U,$J,358.3,2536,0)
+ ;;=99496^^16^198^1
+ ;;^UTILITY(U,$J,358.3,2536,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2536,1,1,0)
+ ;;=1^Trans Care,FTF w/in 7D of D/C
+ ;;^UTILITY(U,$J,358.3,2536,1,2,0)
+ ;;=2^99496
+ ;;^UTILITY(U,$J,358.3,2537,0)
+ ;;=94004^^17^199^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2537,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2537,1,2,0)
+ ;;=2^Inpt Vent Mgmt NF per Day
+ ;;^UTILITY(U,$J,358.3,2537,1,3,0)
+ ;;=3^94004
+ ;;^UTILITY(U,$J,358.3,2538,0)
+ ;;=S0250^^17^200^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2538,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2538,1,2,0)
+ ;;=2^Comp Geriatric Assess/Treat
+ ;;^UTILITY(U,$J,358.3,2538,1,3,0)
+ ;;=3^S0250
+ ;;^UTILITY(U,$J,358.3,2539,0)
+ ;;=99356^^17^201^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2539,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2539,1,2,0)
+ ;;=2^Prolonged Svc,Inpt,1st Hr
+ ;;^UTILITY(U,$J,358.3,2539,1,3,0)
+ ;;=3^99356
+ ;;^UTILITY(U,$J,358.3,2540,0)
+ ;;=99357^^17^201^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2540,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2540,1,2,0)
+ ;;=2^Prolonged Svc,Inpt,Ea Addl 30Min
+ ;;^UTILITY(U,$J,358.3,2540,1,3,0)
+ ;;=3^99357
+ ;;^UTILITY(U,$J,358.3,2541,0)
+ ;;=99366^^17^202^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2541,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2541,1,2,0)
+ ;;=2^Team Conf w/ Pat by HC Prof 30 Min
+ ;;^UTILITY(U,$J,358.3,2541,1,3,0)
+ ;;=3^99366
+ ;;^UTILITY(U,$J,358.3,2542,0)
+ ;;=99367^^17^202^5^^^^1
+ ;;^UTILITY(U,$J,358.3,2542,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2542,1,2,0)
+ ;;=2^Team Conf w/o Pat by Phys 30 Min
+ ;;^UTILITY(U,$J,358.3,2542,1,3,0)
+ ;;=3^99367
+ ;;^UTILITY(U,$J,358.3,2543,0)
+ ;;=99368^^17^202^4^^^^1
+ ;;^UTILITY(U,$J,358.3,2543,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2543,1,2,0)
+ ;;=2^Team Conf w/o Pat by HC Prof 30 Min
+ ;;^UTILITY(U,$J,358.3,2543,1,3,0)
+ ;;=3^99368
+ ;;^UTILITY(U,$J,358.3,2544,0)
+ ;;=99379^^17^202^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2544,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2544,1,2,0)
+ ;;=2^Phys Nurs Fac Spvn,Comp w/o Pt,15-29 min

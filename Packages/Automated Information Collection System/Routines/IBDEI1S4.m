@@ -1,130 +1,128 @@
-IBDEI1S4 ; ; 06-AUG-2015
+IBDEI1S4 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31406,1,4,0)
- ;;=4^M86.612
- ;;^UTILITY(U,$J,358.3,31406,2)
- ;;=^5014632
- ;;^UTILITY(U,$J,358.3,31407,0)
- ;;=M86.652^^180^1956^14
- ;;^UTILITY(U,$J,358.3,31407,1,0)
+ ;;^UTILITY(U,$J,358.3,30233,1,4,0)
+ ;;=4^C77.3
+ ;;^UTILITY(U,$J,358.3,30233,2)
+ ;;=^5001330
+ ;;^UTILITY(U,$J,358.3,30234,0)
+ ;;=C77.4^^118^1503^6
+ ;;^UTILITY(U,$J,358.3,30234,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31407,1,3,0)
- ;;=3^Chronic osteomyelitis, left thigh NEC
- ;;^UTILITY(U,$J,358.3,31407,1,4,0)
- ;;=4^M86.652
- ;;^UTILITY(U,$J,358.3,31407,2)
- ;;=^5014638
- ;;^UTILITY(U,$J,358.3,31408,0)
- ;;=M86.662^^180^1956^15
- ;;^UTILITY(U,$J,358.3,31408,1,0)
+ ;;^UTILITY(U,$J,358.3,30234,1,3,0)
+ ;;=3^Secondary malignant neoplasm of inguinal and lower limb nodes
+ ;;^UTILITY(U,$J,358.3,30234,1,4,0)
+ ;;=4^C77.4
+ ;;^UTILITY(U,$J,358.3,30234,2)
+ ;;=^5001331
+ ;;^UTILITY(U,$J,358.3,30235,0)
+ ;;=C77.8^^118^1503^15
+ ;;^UTILITY(U,$J,358.3,30235,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31408,1,3,0)
- ;;=3^Chronic osteomyelitis, left tibia and Fibula NEC
- ;;^UTILITY(U,$J,358.3,31408,1,4,0)
- ;;=4^M86.662
- ;;^UTILITY(U,$J,358.3,31408,2)
- ;;=^5134076
- ;;^UTILITY(U,$J,358.3,31409,0)
- ;;=M86.671^^180^1956^16
- ;;^UTILITY(U,$J,358.3,31409,1,0)
+ ;;^UTILITY(U,$J,358.3,30235,1,3,0)
+ ;;=3^Secondary malignant neoplasm of nodes of multiple regions
+ ;;^UTILITY(U,$J,358.3,30235,1,4,0)
+ ;;=4^C77.8
+ ;;^UTILITY(U,$J,358.3,30235,2)
+ ;;=^5001332
+ ;;^UTILITY(U,$J,358.3,30236,0)
+ ;;=C77.9^^118^1503^13
+ ;;^UTILITY(U,$J,358.3,30236,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31409,1,3,0)
- ;;=3^Chronic osteomyelitis, right ankle and foot NEC
- ;;^UTILITY(U,$J,358.3,31409,1,4,0)
- ;;=4^M86.671
- ;;^UTILITY(U,$J,358.3,31409,2)
- ;;=^5014641
- ;;^UTILITY(U,$J,358.3,31410,0)
- ;;=M86.641^^180^1956^17
- ;;^UTILITY(U,$J,358.3,31410,1,0)
+ ;;^UTILITY(U,$J,358.3,30236,1,3,0)
+ ;;=3^Secondary malignant neoplasm of lymph node, unsp
+ ;;^UTILITY(U,$J,358.3,30236,1,4,0)
+ ;;=4^C77.9
+ ;;^UTILITY(U,$J,358.3,30236,2)
+ ;;=^5001333
+ ;;^UTILITY(U,$J,358.3,30237,0)
+ ;;=C78.01^^118^1503^18
+ ;;^UTILITY(U,$J,358.3,30237,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31410,1,3,0)
- ;;=3^Chronic osteomyelitis, right hand
- ;;^UTILITY(U,$J,358.3,31410,1,4,0)
- ;;=4^M86.641
- ;;^UTILITY(U,$J,358.3,31410,2)
- ;;=^5014636
- ;;^UTILITY(U,$J,358.3,31411,0)
- ;;=M86.621^^180^1956^18
- ;;^UTILITY(U,$J,358.3,31411,1,0)
+ ;;^UTILITY(U,$J,358.3,30237,1,3,0)
+ ;;=3^Secondary malignant neoplasm of right lung
+ ;;^UTILITY(U,$J,358.3,30237,1,4,0)
+ ;;=4^C78.01
+ ;;^UTILITY(U,$J,358.3,30237,2)
+ ;;=^5001335
+ ;;^UTILITY(U,$J,358.3,30238,0)
+ ;;=C78.02^^118^1503^11
+ ;;^UTILITY(U,$J,358.3,30238,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31411,1,3,0)
- ;;=3^Chronic osteomyelitis, right humerus NEC
- ;;^UTILITY(U,$J,358.3,31411,1,4,0)
- ;;=4^M86.621
- ;;^UTILITY(U,$J,358.3,31411,2)
- ;;=^5014634
- ;;^UTILITY(U,$J,358.3,31412,0)
- ;;=M86.631^^180^1956^19
- ;;^UTILITY(U,$J,358.3,31412,1,0)
+ ;;^UTILITY(U,$J,358.3,30238,1,3,0)
+ ;;=3^Secondary malignant neoplasm of left lung
+ ;;^UTILITY(U,$J,358.3,30238,1,4,0)
+ ;;=4^C78.02
+ ;;^UTILITY(U,$J,358.3,30238,2)
+ ;;=^5001336
+ ;;^UTILITY(U,$J,358.3,30239,0)
+ ;;=C78.7^^118^1503^12
+ ;;^UTILITY(U,$J,358.3,30239,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31412,1,3,0)
- ;;=3^Chronic osteomyelitis, right radius and ulna
- ;;^UTILITY(U,$J,358.3,31412,1,4,0)
- ;;=4^M86.631
- ;;^UTILITY(U,$J,358.3,31412,2)
- ;;=^5014635
- ;;^UTILITY(U,$J,358.3,31413,0)
- ;;=M86.611^^180^1956^20
- ;;^UTILITY(U,$J,358.3,31413,1,0)
+ ;;^UTILITY(U,$J,358.3,30239,1,3,0)
+ ;;=3^Secondary malignant neoplasm of liver and intrahepatic bile duct
+ ;;^UTILITY(U,$J,358.3,30239,1,4,0)
+ ;;=4^C78.7
+ ;;^UTILITY(U,$J,358.3,30239,2)
+ ;;=^5001339
+ ;;^UTILITY(U,$J,358.3,30240,0)
+ ;;=C79.2^^118^1503^19
+ ;;^UTILITY(U,$J,358.3,30240,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31413,1,3,0)
- ;;=3^Chronic osteomyelitis, right shoulder NEC
- ;;^UTILITY(U,$J,358.3,31413,1,4,0)
- ;;=4^M86.611
- ;;^UTILITY(U,$J,358.3,31413,2)
- ;;=^5014631
- ;;^UTILITY(U,$J,358.3,31414,0)
- ;;=M86.651^^180^1956^21
- ;;^UTILITY(U,$J,358.3,31414,1,0)
+ ;;^UTILITY(U,$J,358.3,30240,1,3,0)
+ ;;=3^Secondary malignant neoplasm of skin
+ ;;^UTILITY(U,$J,358.3,30240,1,4,0)
+ ;;=4^C79.2
+ ;;^UTILITY(U,$J,358.3,30240,2)
+ ;;=^267333
+ ;;^UTILITY(U,$J,358.3,30241,0)
+ ;;=C79.31^^118^1503^4
+ ;;^UTILITY(U,$J,358.3,30241,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31414,1,3,0)
- ;;=3^Chronic osteomyelitis, right thigh NEC
- ;;^UTILITY(U,$J,358.3,31414,1,4,0)
- ;;=4^M86.651
- ;;^UTILITY(U,$J,358.3,31414,2)
- ;;=^5014637
- ;;^UTILITY(U,$J,358.3,31415,0)
- ;;=M86.661^^180^1956^22
- ;;^UTILITY(U,$J,358.3,31415,1,0)
+ ;;^UTILITY(U,$J,358.3,30241,1,3,0)
+ ;;=3^Secondary malignant neoplasm of brain
+ ;;^UTILITY(U,$J,358.3,30241,1,4,0)
+ ;;=4^C79.31
+ ;;^UTILITY(U,$J,358.3,30241,2)
+ ;;=^5001347
+ ;;^UTILITY(U,$J,358.3,30242,0)
+ ;;=C79.32^^118^1503^5
+ ;;^UTILITY(U,$J,358.3,30242,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31415,1,3,0)
- ;;=3^Chronic osteomyelitis, right tibia and fibula NEC
- ;;^UTILITY(U,$J,358.3,31415,1,4,0)
- ;;=4^M86.661
- ;;^UTILITY(U,$J,358.3,31415,2)
- ;;=^5014640
- ;;^UTILITY(U,$J,358.3,31416,0)
- ;;=M25.572^^180^1956^31
- ;;^UTILITY(U,$J,358.3,31416,1,0)
+ ;;^UTILITY(U,$J,358.3,30242,1,3,0)
+ ;;=3^Secondary malignant neoplasm of cerebral meninges
+ ;;^UTILITY(U,$J,358.3,30242,1,4,0)
+ ;;=4^C79.32
+ ;;^UTILITY(U,$J,358.3,30242,2)
+ ;;=^5001348
+ ;;^UTILITY(U,$J,358.3,30243,0)
+ ;;=C79.49^^118^1503^16
+ ;;^UTILITY(U,$J,358.3,30243,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31416,1,3,0)
- ;;=3^Pain in left ankle and joints of left foot
- ;;^UTILITY(U,$J,358.3,31416,1,4,0)
- ;;=4^M25.572
- ;;^UTILITY(U,$J,358.3,31416,2)
- ;;=^5011618
- ;;^UTILITY(U,$J,358.3,31417,0)
- ;;=M25.522^^180^1956^32
- ;;^UTILITY(U,$J,358.3,31417,1,0)
+ ;;^UTILITY(U,$J,358.3,30243,1,3,0)
+ ;;=3^Secondary malignant neoplasm of oth parts of nervous system
+ ;;^UTILITY(U,$J,358.3,30243,1,4,0)
+ ;;=4^C79.49
+ ;;^UTILITY(U,$J,358.3,30243,2)
+ ;;=^267335
+ ;;^UTILITY(U,$J,358.3,30244,0)
+ ;;=C79.51^^118^1503^2
+ ;;^UTILITY(U,$J,358.3,30244,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31417,1,3,0)
- ;;=3^Pain in left elbow
- ;;^UTILITY(U,$J,358.3,31417,1,4,0)
- ;;=4^M25.522
- ;;^UTILITY(U,$J,358.3,31417,2)
- ;;=^5011606
- ;;^UTILITY(U,$J,358.3,31418,0)
- ;;=M79.642^^180^1956^33
- ;;^UTILITY(U,$J,358.3,31418,1,0)
+ ;;^UTILITY(U,$J,358.3,30244,1,3,0)
+ ;;=3^Secondary malignant neoplasm of bone
+ ;;^UTILITY(U,$J,358.3,30244,1,4,0)
+ ;;=4^C79.51
+ ;;^UTILITY(U,$J,358.3,30244,2)
+ ;;=^5001350
+ ;;^UTILITY(U,$J,358.3,30245,0)
+ ;;=C79.52^^118^1503^3
+ ;;^UTILITY(U,$J,358.3,30245,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31418,1,3,0)
- ;;=3^Pain in left hand
- ;;^UTILITY(U,$J,358.3,31418,1,4,0)
- ;;=4^M79.642
- ;;^UTILITY(U,$J,358.3,31418,2)
- ;;=^5013339
- ;;^UTILITY(U,$J,358.3,31419,0)
- ;;=M25.552^^180^1956^34
+ ;;^UTILITY(U,$J,358.3,30245,1,3,0)
+ ;;=3^Secondary malignant neoplasm of bone marrow
+ ;;^UTILITY(U,$J,358.3,30245,1,4,0)
+ ;;=4^C79.52
+ ;;^UTILITY(U,$J,358.3,30245,2)
+ ;;=^5001351

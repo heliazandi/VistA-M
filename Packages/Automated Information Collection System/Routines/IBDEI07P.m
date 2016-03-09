@@ -1,140 +1,136 @@
-IBDEI07P ; ; 06-AUG-2015
+IBDEI07P ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3102,1,3,0)
- ;;=3^Dissociative Disorder NEC
- ;;^UTILITY(U,$J,358.3,3102,1,4,0)
- ;;=4^F44.89
- ;;^UTILITY(U,$J,358.3,3102,2)
- ;;=^5003583
- ;;^UTILITY(U,$J,358.3,3103,0)
- ;;=F50.02^^8^92^1
- ;;^UTILITY(U,$J,358.3,3103,1,0)
+ ;;^UTILITY(U,$J,358.3,3299,1,3,0)
+ ;;=3^Infection,Mycoses,Unspec
+ ;;^UTILITY(U,$J,358.3,3299,1,4,0)
+ ;;=4^B49.
+ ;;^UTILITY(U,$J,358.3,3299,2)
+ ;;=^5000690
+ ;;^UTILITY(U,$J,358.3,3300,0)
+ ;;=B89.^^18^217^14
+ ;;^UTILITY(U,$J,358.3,3300,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3103,1,3,0)
- ;;=3^Anorexia Nervosa,Binge-Eating/Purging Type
- ;;^UTILITY(U,$J,358.3,3103,1,4,0)
- ;;=4^F50.02
- ;;^UTILITY(U,$J,358.3,3103,2)
- ;;=^5003599
- ;;^UTILITY(U,$J,358.3,3104,0)
- ;;=F50.01^^8^92^2
- ;;^UTILITY(U,$J,358.3,3104,1,0)
+ ;;^UTILITY(U,$J,358.3,3300,1,3,0)
+ ;;=3^Infection,Parasitic Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,3300,1,4,0)
+ ;;=4^B89.
+ ;;^UTILITY(U,$J,358.3,3300,2)
+ ;;=^5000822
+ ;;^UTILITY(U,$J,358.3,3301,0)
+ ;;=B64.^^18^217^15
+ ;;^UTILITY(U,$J,358.3,3301,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3104,1,3,0)
- ;;=3^Anorexia Nervosa,Restricting Type
- ;;^UTILITY(U,$J,358.3,3104,1,4,0)
- ;;=4^F50.01
- ;;^UTILITY(U,$J,358.3,3104,2)
- ;;=^5003598
- ;;^UTILITY(U,$J,358.3,3105,0)
- ;;=F50.9^^8^92^7
- ;;^UTILITY(U,$J,358.3,3105,1,0)
+ ;;^UTILITY(U,$J,358.3,3301,1,3,0)
+ ;;=3^Infection,Protozoal Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,3301,1,4,0)
+ ;;=4^B64.
+ ;;^UTILITY(U,$J,358.3,3301,2)
+ ;;=^5000742
+ ;;^UTILITY(U,$J,358.3,3302,0)
+ ;;=A77.9^^18^217^17
+ ;;^UTILITY(U,$J,358.3,3302,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3105,1,3,0)
- ;;=3^Feeding/Eating Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,3105,1,4,0)
- ;;=4^F50.9
- ;;^UTILITY(U,$J,358.3,3105,2)
- ;;=^5003602
- ;;^UTILITY(U,$J,358.3,3106,0)
- ;;=F50.8^^8^92^6
- ;;^UTILITY(U,$J,358.3,3106,1,0)
+ ;;^UTILITY(U,$J,358.3,3302,1,3,0)
+ ;;=3^Infection,Spotted Fever,Unspec
+ ;;^UTILITY(U,$J,358.3,3302,1,4,0)
+ ;;=4^A77.9
+ ;;^UTILITY(U,$J,358.3,3302,2)
+ ;;=^5000399
+ ;;^UTILITY(U,$J,358.3,3303,0)
+ ;;=A64.^^18^217^16
+ ;;^UTILITY(U,$J,358.3,3303,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3106,1,3,0)
- ;;=3^Feeding/Eating Disorder NEC
- ;;^UTILITY(U,$J,358.3,3106,1,4,0)
- ;;=4^F50.8
- ;;^UTILITY(U,$J,358.3,3106,2)
- ;;=^5003601
- ;;^UTILITY(U,$J,358.3,3107,0)
- ;;=F50.8^^8^92^3
- ;;^UTILITY(U,$J,358.3,3107,1,0)
+ ;;^UTILITY(U,$J,358.3,3303,1,3,0)
+ ;;=3^Infection,Sexually Transmitted Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,3303,1,4,0)
+ ;;=4^A64.
+ ;;^UTILITY(U,$J,358.3,3303,2)
+ ;;=^5000362
+ ;;^UTILITY(U,$J,358.3,3304,0)
+ ;;=A49.1^^18^217^18
+ ;;^UTILITY(U,$J,358.3,3304,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3107,1,3,0)
- ;;=3^Avoidant/Restrictive Food Intake Disorder
- ;;^UTILITY(U,$J,358.3,3107,1,4,0)
- ;;=4^F50.8
- ;;^UTILITY(U,$J,358.3,3107,2)
- ;;=^5003601
- ;;^UTILITY(U,$J,358.3,3108,0)
- ;;=F50.8^^8^92^4
- ;;^UTILITY(U,$J,358.3,3108,1,0)
+ ;;^UTILITY(U,$J,358.3,3304,1,3,0)
+ ;;=3^Infection,Streptococcal,Unspec Site
+ ;;^UTILITY(U,$J,358.3,3304,1,4,0)
+ ;;=4^A49.1
+ ;;^UTILITY(U,$J,358.3,3304,2)
+ ;;=^5000237
+ ;;^UTILITY(U,$J,358.3,3305,0)
+ ;;=A15.9^^18^217^19
+ ;;^UTILITY(U,$J,358.3,3305,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3108,1,3,0)
- ;;=3^Binge-Eating Disorder
- ;;^UTILITY(U,$J,358.3,3108,1,4,0)
- ;;=4^F50.8
- ;;^UTILITY(U,$J,358.3,3108,2)
- ;;=^5003601
- ;;^UTILITY(U,$J,358.3,3109,0)
- ;;=F50.2^^8^92^5
- ;;^UTILITY(U,$J,358.3,3109,1,0)
+ ;;^UTILITY(U,$J,358.3,3305,1,3,0)
+ ;;=3^Infection,Tuberculosis,Respiratory,Unspec
+ ;;^UTILITY(U,$J,358.3,3305,1,4,0)
+ ;;=4^A15.9
+ ;;^UTILITY(U,$J,358.3,3305,2)
+ ;;=^5000066
+ ;;^UTILITY(U,$J,358.3,3306,0)
+ ;;=B01.9^^18^217^20
+ ;;^UTILITY(U,$J,358.3,3306,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3109,1,3,0)
- ;;=3^Bulimia Nervosa
- ;;^UTILITY(U,$J,358.3,3109,1,4,0)
- ;;=4^F50.2
- ;;^UTILITY(U,$J,358.3,3109,2)
- ;;=^5003600
- ;;^UTILITY(U,$J,358.3,3110,0)
- ;;=Z55.9^^8^93^1
- ;;^UTILITY(U,$J,358.3,3110,1,0)
+ ;;^UTILITY(U,$J,358.3,3306,1,3,0)
+ ;;=3^Infection,Varicella w/o Complication
+ ;;^UTILITY(U,$J,358.3,3306,1,4,0)
+ ;;=4^B01.9
+ ;;^UTILITY(U,$J,358.3,3306,2)
+ ;;=^5000487
+ ;;^UTILITY(U,$J,358.3,3307,0)
+ ;;=A86.^^18^217^21
+ ;;^UTILITY(U,$J,358.3,3307,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3110,1,3,0)
- ;;=3^Acedemic/Educational Problem
- ;;^UTILITY(U,$J,358.3,3110,1,4,0)
- ;;=4^Z55.9
- ;;^UTILITY(U,$J,358.3,3110,2)
- ;;=^5063106
- ;;^UTILITY(U,$J,358.3,3111,0)
- ;;=Z56.81^^8^93^4
- ;;^UTILITY(U,$J,358.3,3111,1,0)
+ ;;^UTILITY(U,$J,358.3,3307,1,3,0)
+ ;;=3^Infection,Viral Encephalitis,Unspec
+ ;;^UTILITY(U,$J,358.3,3307,1,4,0)
+ ;;=4^A86.
+ ;;^UTILITY(U,$J,358.3,3307,2)
+ ;;=^5000431
+ ;;^UTILITY(U,$J,358.3,3308,0)
+ ;;=B19.9^^18^217^22
+ ;;^UTILITY(U,$J,358.3,3308,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3111,1,3,0)
- ;;=3^Sexual Harassment on the Job
- ;;^UTILITY(U,$J,358.3,3111,1,4,0)
- ;;=4^Z56.81
- ;;^UTILITY(U,$J,358.3,3111,2)
- ;;=^5063114
- ;;^UTILITY(U,$J,358.3,3112,0)
- ;;=Z56.9^^8^93^3
- ;;^UTILITY(U,$J,358.3,3112,1,0)
+ ;;^UTILITY(U,$J,358.3,3308,1,3,0)
+ ;;=3^Infection,Viral Hepatitis w/o Hepatic Coma
+ ;;^UTILITY(U,$J,358.3,3308,1,4,0)
+ ;;=4^B19.9
+ ;;^UTILITY(U,$J,358.3,3308,2)
+ ;;=^5000554
+ ;;^UTILITY(U,$J,358.3,3309,0)
+ ;;=A87.9^^18^217^23
+ ;;^UTILITY(U,$J,358.3,3309,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3112,1,3,0)
- ;;=3^Problems Related to Employment NEC
- ;;^UTILITY(U,$J,358.3,3112,1,4,0)
- ;;=4^Z56.9
- ;;^UTILITY(U,$J,358.3,3112,2)
- ;;=^5063117
- ;;^UTILITY(U,$J,358.3,3113,0)
- ;;=Z56.82^^8^93^2
- ;;^UTILITY(U,$J,358.3,3113,1,0)
+ ;;^UTILITY(U,$J,358.3,3309,1,3,0)
+ ;;=3^Infection,Viral Meningitis,Unspec
+ ;;^UTILITY(U,$J,358.3,3309,1,4,0)
+ ;;=4^A87.9
+ ;;^UTILITY(U,$J,358.3,3309,2)
+ ;;=^5000435
+ ;;^UTILITY(U,$J,358.3,3310,0)
+ ;;=B34.9^^18^217^24
+ ;;^UTILITY(U,$J,358.3,3310,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3113,1,3,0)
- ;;=3^Problems Related to Current Military Deployment Status
- ;;^UTILITY(U,$J,358.3,3113,1,4,0)
- ;;=4^Z56.82
- ;;^UTILITY(U,$J,358.3,3113,2)
- ;;=^5063115
- ;;^UTILITY(U,$J,358.3,3114,0)
- ;;=F64.1^^8^94^2
- ;;^UTILITY(U,$J,358.3,3114,1,0)
+ ;;^UTILITY(U,$J,358.3,3310,1,3,0)
+ ;;=3^Infection,Viral,Unspec
+ ;;^UTILITY(U,$J,358.3,3310,1,4,0)
+ ;;=4^B34.9
+ ;;^UTILITY(U,$J,358.3,3310,2)
+ ;;=^5000603
+ ;;^UTILITY(U,$J,358.3,3311,0)
+ ;;=B02.9^^18^217^25
+ ;;^UTILITY(U,$J,358.3,3311,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3114,1,3,0)
- ;;=3^Gender Dysphoria in Adolescents & Adults
- ;;^UTILITY(U,$J,358.3,3114,1,4,0)
- ;;=4^F64.1
- ;;^UTILITY(U,$J,358.3,3114,2)
- ;;=^5003647
- ;;^UTILITY(U,$J,358.3,3115,0)
- ;;=F64.8^^8^94^1
- ;;^UTILITY(U,$J,358.3,3115,1,0)
+ ;;^UTILITY(U,$J,358.3,3311,1,3,0)
+ ;;=3^Infection,Zoster w/o Complications
+ ;;^UTILITY(U,$J,358.3,3311,1,4,0)
+ ;;=4^B02.9
+ ;;^UTILITY(U,$J,358.3,3311,2)
+ ;;=^5000501
+ ;;^UTILITY(U,$J,358.3,3312,0)
+ ;;=Z87.01^^18^217^26
+ ;;^UTILITY(U,$J,358.3,3312,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3115,1,3,0)
- ;;=3^Gender Dysphoria NEC
- ;;^UTILITY(U,$J,358.3,3115,1,4,0)
- ;;=4^F64.8
- ;;^UTILITY(U,$J,358.3,3115,2)
- ;;=^5003649
+ ;;^UTILITY(U,$J,358.3,3312,1,3,0)
+ ;;=3^Person Hx of Pneumonia

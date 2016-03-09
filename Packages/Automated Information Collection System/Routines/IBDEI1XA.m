@@ -1,128 +1,124 @@
-IBDEI1XA ; ; 06-AUG-2015
+IBDEI1XA ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33786,1,0)
+ ;;^UTILITY(U,$J,358.3,32614,1,3,0)
+ ;;=3^Non-pressure chron ulcer rt ankl w/ necr of bone
+ ;;^UTILITY(U,$J,358.3,32614,1,4,0)
+ ;;=4^L97.314
+ ;;^UTILITY(U,$J,358.3,32614,2)
+ ;;=^5009518
+ ;;^UTILITY(U,$J,358.3,32615,0)
+ ;;=L97.321^^126^1621^1
+ ;;^UTILITY(U,$J,358.3,32615,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33786,1,3,0)
- ;;=3^Fall from Non-Moving Wheelchair,Init Encntr
- ;;^UTILITY(U,$J,358.3,33786,1,4,0)
- ;;=4^W05.0XXA
- ;;^UTILITY(U,$J,358.3,33786,2)
- ;;=^5059550
- ;;^UTILITY(U,$J,358.3,33787,0)
- ;;=W05.0XXD^^182^2011^50
- ;;^UTILITY(U,$J,358.3,33787,1,0)
+ ;;^UTILITY(U,$J,358.3,32615,1,3,0)
+ ;;=3^Non-pressure chron ulcer lft ankl limited to brkdwn skin
+ ;;^UTILITY(U,$J,358.3,32615,1,4,0)
+ ;;=4^L97.321
+ ;;^UTILITY(U,$J,358.3,32615,2)
+ ;;=^5009520
+ ;;^UTILITY(U,$J,358.3,32616,0)
+ ;;=L97.319^^126^1621^25
+ ;;^UTILITY(U,$J,358.3,32616,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33787,1,3,0)
- ;;=3^Fall from Non-Moving Wheelchair,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33787,1,4,0)
- ;;=4^W05.0XXD
- ;;^UTILITY(U,$J,358.3,33787,2)
- ;;=^5059551
- ;;^UTILITY(U,$J,358.3,33788,0)
- ;;=W05.1XXA^^182^2011^47
- ;;^UTILITY(U,$J,358.3,33788,1,0)
+ ;;^UTILITY(U,$J,358.3,32616,1,3,0)
+ ;;=3^Non-pressure chron ulcer rt ankl w/ unsp severity
+ ;;^UTILITY(U,$J,358.3,32616,1,4,0)
+ ;;=4^L97.319
+ ;;^UTILITY(U,$J,358.3,32616,2)
+ ;;=^5009519
+ ;;^UTILITY(U,$J,358.3,32617,0)
+ ;;=L97.322^^126^1621^2
+ ;;^UTILITY(U,$J,358.3,32617,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33788,1,3,0)
- ;;=3^Fall from Non-Moving Non-Motorized Scooter,Init Encntr
- ;;^UTILITY(U,$J,358.3,33788,1,4,0)
- ;;=4^W05.1XXA
- ;;^UTILITY(U,$J,358.3,33788,2)
- ;;=^5059553
- ;;^UTILITY(U,$J,358.3,33789,0)
- ;;=W05.1XXD^^182^2011^48
- ;;^UTILITY(U,$J,358.3,33789,1,0)
+ ;;^UTILITY(U,$J,358.3,32617,1,3,0)
+ ;;=3^Non-pressure chron ulcer lft ankl w/ fat layer exposed
+ ;;^UTILITY(U,$J,358.3,32617,1,4,0)
+ ;;=4^L97.322
+ ;;^UTILITY(U,$J,358.3,32617,2)
+ ;;=^5009521
+ ;;^UTILITY(U,$J,358.3,32618,0)
+ ;;=L97.323^^126^1621^3
+ ;;^UTILITY(U,$J,358.3,32618,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33789,1,3,0)
- ;;=3^Fall from Non-Moving Non-Motorized Scooter,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33789,1,4,0)
- ;;=4^W05.1XXD
- ;;^UTILITY(U,$J,358.3,33789,2)
- ;;=^5059554
- ;;^UTILITY(U,$J,358.3,33790,0)
- ;;=W05.2XXA^^182^2011^45
- ;;^UTILITY(U,$J,358.3,33790,1,0)
+ ;;^UTILITY(U,$J,358.3,32618,1,3,0)
+ ;;=3^Non-pressure chron ulcer lft ankl w/ necr of muscle
+ ;;^UTILITY(U,$J,358.3,32618,1,4,0)
+ ;;=4^L97.323
+ ;;^UTILITY(U,$J,358.3,32618,2)
+ ;;=^5009522
+ ;;^UTILITY(U,$J,358.3,32619,0)
+ ;;=L97.329^^126^1621^5
+ ;;^UTILITY(U,$J,358.3,32619,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33790,1,3,0)
- ;;=3^Fall from Non-Moving Motorized Scooter,Init Encntr
- ;;^UTILITY(U,$J,358.3,33790,1,4,0)
- ;;=4^W05.2XXA
- ;;^UTILITY(U,$J,358.3,33790,2)
- ;;=^5059556
- ;;^UTILITY(U,$J,358.3,33791,0)
- ;;=W05.2XXD^^182^2011^46
- ;;^UTILITY(U,$J,358.3,33791,1,0)
+ ;;^UTILITY(U,$J,358.3,32619,1,3,0)
+ ;;=3^Non-pressure chron ulcer lft ankl w/ unsp severity
+ ;;^UTILITY(U,$J,358.3,32619,1,4,0)
+ ;;=4^L97.329
+ ;;^UTILITY(U,$J,358.3,32619,2)
+ ;;=^5009524
+ ;;^UTILITY(U,$J,358.3,32620,0)
+ ;;=L97.324^^126^1621^4
+ ;;^UTILITY(U,$J,358.3,32620,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33791,1,3,0)
- ;;=3^Fall from Non-Moving Motorized Scooter,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33791,1,4,0)
- ;;=4^W05.2XXD
- ;;^UTILITY(U,$J,358.3,33791,2)
- ;;=^5059557
- ;;^UTILITY(U,$J,358.3,33792,0)
- ;;=W06.XXXA^^182^2011^27
- ;;^UTILITY(U,$J,358.3,33792,1,0)
+ ;;^UTILITY(U,$J,358.3,32620,1,3,0)
+ ;;=3^Non-pressure chron ulcer lft ankl w/ necr of bone
+ ;;^UTILITY(U,$J,358.3,32620,1,4,0)
+ ;;=4^L97.324
+ ;;^UTILITY(U,$J,358.3,32620,2)
+ ;;=^5009523
+ ;;^UTILITY(U,$J,358.3,32621,0)
+ ;;=L97.412^^126^1621^36
+ ;;^UTILITY(U,$J,358.3,32621,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33792,1,3,0)
- ;;=3^Fall from Bed,Init Encntr
- ;;^UTILITY(U,$J,358.3,33792,1,4,0)
- ;;=4^W06.XXXA
- ;;^UTILITY(U,$J,358.3,33792,2)
- ;;=^5059559
- ;;^UTILITY(U,$J,358.3,33793,0)
- ;;=W06.XXXD^^182^2011^28
- ;;^UTILITY(U,$J,358.3,33793,1,0)
+ ;;^UTILITY(U,$J,358.3,32621,1,3,0)
+ ;;=3^Non-pressure chron ulcer rt heel/midft w/ fat layer exposed
+ ;;^UTILITY(U,$J,358.3,32621,1,4,0)
+ ;;=4^L97.412
+ ;;^UTILITY(U,$J,358.3,32621,2)
+ ;;=^5009531
+ ;;^UTILITY(U,$J,358.3,32622,0)
+ ;;=L97.414^^126^1621^37
+ ;;^UTILITY(U,$J,358.3,32622,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33793,1,3,0)
- ;;=3^Fall from Bed,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33793,1,4,0)
- ;;=4^W06.XXXD
- ;;^UTILITY(U,$J,358.3,33793,2)
- ;;=^5059560
- ;;^UTILITY(U,$J,358.3,33794,0)
- ;;=W07.XXXA^^182^2011^35
- ;;^UTILITY(U,$J,358.3,33794,1,0)
+ ;;^UTILITY(U,$J,358.3,32622,1,3,0)
+ ;;=3^Non-pressure chron ulcer rt heel/midft w/ necr of bone
+ ;;^UTILITY(U,$J,358.3,32622,1,4,0)
+ ;;=4^L97.414
+ ;;^UTILITY(U,$J,358.3,32622,2)
+ ;;=^5009533
+ ;;^UTILITY(U,$J,358.3,32623,0)
+ ;;=L97.413^^126^1621^38
+ ;;^UTILITY(U,$J,358.3,32623,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33794,1,3,0)
- ;;=3^Fall from Chair,Init Encntr
- ;;^UTILITY(U,$J,358.3,33794,1,4,0)
- ;;=4^W07.XXXA
- ;;^UTILITY(U,$J,358.3,33794,2)
- ;;=^5059562
- ;;^UTILITY(U,$J,358.3,33795,0)
- ;;=W07.XXXD^^182^2011^36
- ;;^UTILITY(U,$J,358.3,33795,1,0)
+ ;;^UTILITY(U,$J,358.3,32623,1,3,0)
+ ;;=3^Non-pressure chron ulcer rt heel/midft w/ necr muscle
+ ;;^UTILITY(U,$J,358.3,32623,1,4,0)
+ ;;=4^L97.413
+ ;;^UTILITY(U,$J,358.3,32623,2)
+ ;;=^5009532
+ ;;^UTILITY(U,$J,358.3,32624,0)
+ ;;=L97.411^^126^1621^39
+ ;;^UTILITY(U,$J,358.3,32624,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33795,1,3,0)
- ;;=3^Fall from Chair,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33795,1,4,0)
- ;;=4^W07.XXXD
- ;;^UTILITY(U,$J,358.3,33795,2)
- ;;=^5059563
- ;;^UTILITY(U,$J,358.3,33796,0)
- ;;=W10.1XXA^^182^2011^77
- ;;^UTILITY(U,$J,358.3,33796,1,0)
+ ;;^UTILITY(U,$J,358.3,32624,1,3,0)
+ ;;=3^Non-pressure chron ulcer rt heel/midft lmt to brkdwn skin
+ ;;^UTILITY(U,$J,358.3,32624,1,4,0)
+ ;;=4^L97.411
+ ;;^UTILITY(U,$J,358.3,32624,2)
+ ;;=^5009530
+ ;;^UTILITY(U,$J,358.3,32625,0)
+ ;;=L97.411^^126^1621^40
+ ;;^UTILITY(U,$J,358.3,32625,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33796,1,3,0)
- ;;=3^Fall on Sidewalk Curb,Init Encntr
- ;;^UTILITY(U,$J,358.3,33796,1,4,0)
- ;;=4^W10.1XXA
- ;;^UTILITY(U,$J,358.3,33796,2)
- ;;=^5059583
- ;;^UTILITY(U,$J,358.3,33797,0)
- ;;=W10.1XXD^^182^2011^78
- ;;^UTILITY(U,$J,358.3,33797,1,0)
+ ;;^UTILITY(U,$J,358.3,32625,1,3,0)
+ ;;=3^Non-pressure chron ulcer rt heel/midft lmt to brkdwn skin
+ ;;^UTILITY(U,$J,358.3,32625,1,4,0)
+ ;;=4^L97.411
+ ;;^UTILITY(U,$J,358.3,32625,2)
+ ;;=^5009530
+ ;;^UTILITY(U,$J,358.3,32626,0)
+ ;;=L97.429^^126^1621^16
+ ;;^UTILITY(U,$J,358.3,32626,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33797,1,3,0)
- ;;=3^Fall on Sidewalk Curb,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33797,1,4,0)
- ;;=4^W10.1XXD
- ;;^UTILITY(U,$J,358.3,33797,2)
- ;;=^5059584
- ;;^UTILITY(U,$J,358.3,33798,0)
- ;;=W11.XXXA^^182^2011^39
- ;;^UTILITY(U,$J,358.3,33798,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33798,1,3,0)
- ;;=3^Fall from Ladder,Init Encntr

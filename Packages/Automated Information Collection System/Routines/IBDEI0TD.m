@@ -1,120 +1,136 @@
-IBDEI0TD ; ; 06-AUG-2015
+IBDEI0TD ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14215,0)
- ;;=11305^^75^873^1
- ;;^UTILITY(U,$J,358.3,14215,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14215,1,2,0)
- ;;=2^Shaving of Epidermal Lesion,Single-Scalp,Neck,Hand;0.5cm or less
- ;;^UTILITY(U,$J,358.3,14215,1,3,0)
- ;;=3^11305
- ;;^UTILITY(U,$J,358.3,14216,0)
- ;;=11306^^75^873^2
- ;;^UTILITY(U,$J,358.3,14216,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14216,1,2,0)
- ;;=2^Shaving of Epidermal Lesion,Single-Scalp,Neck,Hand;0.6cm-1.0cm
- ;;^UTILITY(U,$J,358.3,14216,1,3,0)
- ;;=3^11306
- ;;^UTILITY(U,$J,358.3,14217,0)
- ;;=11307^^75^873^3
- ;;^UTILITY(U,$J,358.3,14217,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14217,1,2,0)
- ;;=2^Shaving of Epidermal Lesion,Single-Scalp,Neck,Hand;1.1cm-2.0cm
- ;;^UTILITY(U,$J,358.3,14217,1,3,0)
- ;;=3^11307
- ;;^UTILITY(U,$J,358.3,14218,0)
- ;;=11308^^75^873^4
- ;;^UTILITY(U,$J,358.3,14218,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14218,1,2,0)
- ;;=2^Shaving of Epidermal Lesion,Single-Scalp,Neck,Hand > 2.0cm
- ;;^UTILITY(U,$J,358.3,14218,1,3,0)
- ;;=3^11308
- ;;^UTILITY(U,$J,358.3,14219,0)
- ;;=11303^^75^873^8^^^^1
- ;;^UTILITY(U,$J,358.3,14219,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14219,1,2,0)
- ;;=2^Shaving of Epidermal Lesion,Single-Trunk,Arms,Legs;> 2.0cm
- ;;^UTILITY(U,$J,358.3,14219,1,3,0)
- ;;=3^11303
- ;;^UTILITY(U,$J,358.3,14220,0)
- ;;=11719^^75^874^10^^^^1
- ;;^UTILITY(U,$J,358.3,14220,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14220,1,2,0)
- ;;=2^Trimming Nondystrophic Nails, any number
- ;;^UTILITY(U,$J,358.3,14220,1,3,0)
- ;;=3^11719
- ;;^UTILITY(U,$J,358.3,14221,0)
- ;;=G0127^^75^874^9^^^^1
- ;;^UTILITY(U,$J,358.3,14221,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14221,1,2,0)
- ;;=2^Trimming Dystrophic Nails, any number
- ;;^UTILITY(U,$J,358.3,14221,1,3,0)
- ;;=3^G0127
- ;;^UTILITY(U,$J,358.3,14222,0)
- ;;=11720^^75^874^4^^^^1
- ;;^UTILITY(U,$J,358.3,14222,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14222,1,2,0)
- ;;=2^Debridement of Nail(s)any method(s); 1-5 
- ;;^UTILITY(U,$J,358.3,14222,1,3,0)
- ;;=3^11720
- ;;^UTILITY(U,$J,358.3,14223,0)
- ;;=11721^^75^874^5^^^^1
- ;;^UTILITY(U,$J,358.3,14223,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14223,1,2,0)
- ;;=2^Debridement of Nails any method; 6 or more
- ;;^UTILITY(U,$J,358.3,14223,1,3,0)
- ;;=3^11721
- ;;^UTILITY(U,$J,358.3,14224,0)
- ;;=11730^^75^874^1^^^^1
- ;;^UTILITY(U,$J,358.3,14224,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14224,1,2,0)
- ;;=2^Avulsion of Nail Plate,part/comp,single
- ;;^UTILITY(U,$J,358.3,14224,1,3,0)
- ;;=3^11730
- ;;^UTILITY(U,$J,358.3,14225,0)
- ;;=11732^^75^874^2^^^^1
- ;;^UTILITY(U,$J,358.3,14225,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14225,1,2,0)
- ;;=2^Avulsion of Nail Plate,part/comp,ea addl nail
- ;;^UTILITY(U,$J,358.3,14225,1,3,0)
- ;;=3^11732
- ;;^UTILITY(U,$J,358.3,14226,0)
- ;;=11740^^75^874^6^^^^1
- ;;^UTILITY(U,$J,358.3,14226,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14226,1,2,0)
- ;;=2^Evacuation Subungual Hematoma
- ;;^UTILITY(U,$J,358.3,14226,1,3,0)
- ;;=3^11740
- ;;^UTILITY(U,$J,358.3,14227,0)
- ;;=11750^^75^874^7^^^^1
- ;;^UTILITY(U,$J,358.3,14227,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14227,1,2,0)
- ;;=2^Excision of Nail and Nail Matrx, partial or complete, for permanent removal
- ;;^UTILITY(U,$J,358.3,14227,1,3,0)
- ;;=3^11750
- ;;^UTILITY(U,$J,358.3,14228,0)
- ;;=11755^^75^874^3^^^^1
- ;;^UTILITY(U,$J,358.3,14228,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14228,1,2,0)
- ;;=2^Biopsy of Nail Unit
- ;;^UTILITY(U,$J,358.3,14228,1,3,0)
- ;;=3^11755
- ;;^UTILITY(U,$J,358.3,14229,0)
- ;;=11760^^75^874^8^^^^1
- ;;^UTILITY(U,$J,358.3,14229,1,0)
- ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,13771,1,4,0)
+ ;;=4^N70.92
+ ;;^UTILITY(U,$J,358.3,13771,2)
+ ;;=^5015807
+ ;;^UTILITY(U,$J,358.3,13772,0)
+ ;;=N73.9^^53^595^37
+ ;;^UTILITY(U,$J,358.3,13772,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13772,1,3,0)
+ ;;=3^Inflammatory Disease Female Pelvic,Unspec
+ ;;^UTILITY(U,$J,358.3,13772,1,4,0)
+ ;;=4^N73.9
+ ;;^UTILITY(U,$J,358.3,13772,2)
+ ;;=^5015820
+ ;;^UTILITY(U,$J,358.3,13773,0)
+ ;;=A56.11^^53^595^36
+ ;;^UTILITY(U,$J,358.3,13773,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13773,1,3,0)
+ ;;=3^Inflammatory Disease Chlamydial Female Pelvic
+ ;;^UTILITY(U,$J,358.3,13773,1,4,0)
+ ;;=4^A56.11
+ ;;^UTILITY(U,$J,358.3,13773,2)
+ ;;=^5000342
+ ;;^UTILITY(U,$J,358.3,13774,0)
+ ;;=N73.5^^53^595^64
+ ;;^UTILITY(U,$J,358.3,13774,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13774,1,3,0)
+ ;;=3^Peritonitis Female Pelvic,Unspec
+ ;;^UTILITY(U,$J,358.3,13774,1,4,0)
+ ;;=4^N73.5
+ ;;^UTILITY(U,$J,358.3,13774,2)
+ ;;=^5015817
+ ;;^UTILITY(U,$J,358.3,13775,0)
+ ;;=N72.^^53^595^35
+ ;;^UTILITY(U,$J,358.3,13775,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13775,1,3,0)
+ ;;=3^Inflammatory Disease Cervix Uteri
+ ;;^UTILITY(U,$J,358.3,13775,1,4,0)
+ ;;=4^N72.
+ ;;^UTILITY(U,$J,358.3,13775,2)
+ ;;=^5015812
+ ;;^UTILITY(U,$J,358.3,13776,0)
+ ;;=N76.3^^53^595^92
+ ;;^UTILITY(U,$J,358.3,13776,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13776,1,3,0)
+ ;;=3^Vulvitis,Subacute & Chronic
+ ;;^UTILITY(U,$J,358.3,13776,1,4,0)
+ ;;=4^N76.3
+ ;;^UTILITY(U,$J,358.3,13776,2)
+ ;;=^5015829
+ ;;^UTILITY(U,$J,358.3,13777,0)
+ ;;=N76.1^^53^595^88
+ ;;^UTILITY(U,$J,358.3,13777,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13777,1,3,0)
+ ;;=3^Vaginitis,Subacute & Chronic
+ ;;^UTILITY(U,$J,358.3,13777,1,4,0)
+ ;;=4^N76.1
+ ;;^UTILITY(U,$J,358.3,13777,2)
+ ;;=^5015827
+ ;;^UTILITY(U,$J,358.3,13778,0)
+ ;;=N76.2^^53^595^91
+ ;;^UTILITY(U,$J,358.3,13778,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13778,1,3,0)
+ ;;=3^Vulvitis,Acute
+ ;;^UTILITY(U,$J,358.3,13778,1,4,0)
+ ;;=4^N76.2
+ ;;^UTILITY(U,$J,358.3,13778,2)
+ ;;=^5015828
+ ;;^UTILITY(U,$J,358.3,13779,0)
+ ;;=N76.0^^53^595^87
+ ;;^UTILITY(U,$J,358.3,13779,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13779,1,3,0)
+ ;;=3^Vaginitis,Acute
+ ;;^UTILITY(U,$J,358.3,13779,1,4,0)
+ ;;=4^N76.0
+ ;;^UTILITY(U,$J,358.3,13779,2)
+ ;;=^5015826
+ ;;^UTILITY(U,$J,358.3,13780,0)
+ ;;=M00.20^^53^595^3
+ ;;^UTILITY(U,$J,358.3,13780,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13780,1,3,0)
+ ;;=3^Arthritis Streptococcal,Unspec Joint
+ ;;^UTILITY(U,$J,358.3,13780,1,4,0)
+ ;;=4^M00.20
+ ;;^UTILITY(U,$J,358.3,13780,2)
+ ;;=^5009645
+ ;;^UTILITY(U,$J,358.3,13781,0)
+ ;;=M00.80^^53^595^4
+ ;;^UTILITY(U,$J,358.3,13781,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13781,1,3,0)
+ ;;=3^Arthritis d/t Bacteria,Unspec Joint
+ ;;^UTILITY(U,$J,358.3,13781,1,4,0)
+ ;;=4^M00.80
+ ;;^UTILITY(U,$J,358.3,13781,2)
+ ;;=^5009669
+ ;;^UTILITY(U,$J,358.3,13782,0)
+ ;;=M00.9^^53^595^72
+ ;;^UTILITY(U,$J,358.3,13782,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13782,1,3,0)
+ ;;=3^Pyogenic Arthritis,Unspec
+ ;;^UTILITY(U,$J,358.3,13782,1,4,0)
+ ;;=4^M00.9
+ ;;^UTILITY(U,$J,358.3,13782,2)
+ ;;=^5009693
+ ;;^UTILITY(U,$J,358.3,13783,0)
+ ;;=M00.00^^53^595^78
+ ;;^UTILITY(U,$J,358.3,13783,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13783,1,3,0)
+ ;;=3^Staphylococcal Arthritis,Unspec Joint
+ ;;^UTILITY(U,$J,358.3,13783,1,4,0)
+ ;;=4^M00.00
+ ;;^UTILITY(U,$J,358.3,13783,2)
+ ;;=^5009597
+ ;;^UTILITY(U,$J,358.3,13784,0)
+ ;;=M00.10^^53^595^65
+ ;;^UTILITY(U,$J,358.3,13784,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13784,1,3,0)
+ ;;=3^Pneumococcal Arthritis,Unspec Joint
+ ;;^UTILITY(U,$J,358.3,13784,1,4,0)
+ ;;=4^M00.10

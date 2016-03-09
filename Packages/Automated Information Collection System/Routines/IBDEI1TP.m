@@ -1,136 +1,134 @@
-IBDEI1TP ; ; 06-AUG-2015
+IBDEI1TP ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32124,1,0)
+ ;;^UTILITY(U,$J,358.3,30972,1,3,0)
+ ;;=3^Female Sexual Interest/Arousal Disorder
+ ;;^UTILITY(U,$J,358.3,30972,1,4,0)
+ ;;=4^F52.22
+ ;;^UTILITY(U,$J,358.3,30972,2)
+ ;;=^5003621
+ ;;^UTILITY(U,$J,358.3,30973,0)
+ ;;=F52.6^^123^1553^5
+ ;;^UTILITY(U,$J,358.3,30973,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32124,1,3,0)
- ;;=3^Local Infection of Skin/Subcutaneous Tissue,Unspec
- ;;^UTILITY(U,$J,358.3,32124,1,4,0)
- ;;=4^L08.9
- ;;^UTILITY(U,$J,358.3,32124,2)
- ;;=^5009082
- ;;^UTILITY(U,$J,358.3,32125,0)
- ;;=L11.0^^182^1981^9
- ;;^UTILITY(U,$J,358.3,32125,1,0)
+ ;;^UTILITY(U,$J,358.3,30973,1,3,0)
+ ;;=3^Genito-Pelvic Pain/Penetration Disorder
+ ;;^UTILITY(U,$J,358.3,30973,1,4,0)
+ ;;=4^F52.6
+ ;;^UTILITY(U,$J,358.3,30973,2)
+ ;;=^5003623
+ ;;^UTILITY(U,$J,358.3,30974,0)
+ ;;=F52.0^^123^1553^6
+ ;;^UTILITY(U,$J,358.3,30974,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32125,1,3,0)
- ;;=3^Acquired Keratosis Follicularis
- ;;^UTILITY(U,$J,358.3,32125,1,4,0)
- ;;=4^L11.0
- ;;^UTILITY(U,$J,358.3,32125,2)
- ;;=^5009091
- ;;^UTILITY(U,$J,358.3,32126,0)
- ;;=L20.0^^182^1981^90
- ;;^UTILITY(U,$J,358.3,32126,1,0)
+ ;;^UTILITY(U,$J,358.3,30974,1,3,0)
+ ;;=3^Male Hypoactive Sexual Desire Disorder
+ ;;^UTILITY(U,$J,358.3,30974,1,4,0)
+ ;;=4^F52.0
+ ;;^UTILITY(U,$J,358.3,30974,2)
+ ;;=^5003618
+ ;;^UTILITY(U,$J,358.3,30975,0)
+ ;;=F52.4^^123^1553^7
+ ;;^UTILITY(U,$J,358.3,30975,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32126,1,3,0)
- ;;=3^Besnier's Prurigo
- ;;^UTILITY(U,$J,358.3,32126,1,4,0)
- ;;=4^L20.0
- ;;^UTILITY(U,$J,358.3,32126,2)
- ;;=^5009107
- ;;^UTILITY(U,$J,358.3,32127,0)
- ;;=L20.81^^182^1981^87
- ;;^UTILITY(U,$J,358.3,32127,1,0)
+ ;;^UTILITY(U,$J,358.3,30975,1,3,0)
+ ;;=3^Premature (Early) Ejaculation
+ ;;^UTILITY(U,$J,358.3,30975,1,4,0)
+ ;;=4^F52.4
+ ;;^UTILITY(U,$J,358.3,30975,2)
+ ;;=^331928
+ ;;^UTILITY(U,$J,358.3,30976,0)
+ ;;=F52.8^^123^1553^9
+ ;;^UTILITY(U,$J,358.3,30976,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32127,1,3,0)
- ;;=3^Atopic Neurodermatitis
- ;;^UTILITY(U,$J,358.3,32127,1,4,0)
- ;;=4^L20.81
- ;;^UTILITY(U,$J,358.3,32127,2)
- ;;=^5009108
- ;;^UTILITY(U,$J,358.3,32128,0)
- ;;=L20.82^^182^1981^150
- ;;^UTILITY(U,$J,358.3,32128,1,0)
+ ;;^UTILITY(U,$J,358.3,30976,1,3,0)
+ ;;=3^Sexual Dysfuntion NEC
+ ;;^UTILITY(U,$J,358.3,30976,1,4,0)
+ ;;=4^F52.8
+ ;;^UTILITY(U,$J,358.3,30976,2)
+ ;;=^5003624
+ ;;^UTILITY(U,$J,358.3,30977,0)
+ ;;=F52.9^^123^1553^8
+ ;;^UTILITY(U,$J,358.3,30977,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32128,1,3,0)
- ;;=3^Flexural Eczema
- ;;^UTILITY(U,$J,358.3,32128,1,4,0)
- ;;=4^L20.82
- ;;^UTILITY(U,$J,358.3,32128,2)
- ;;=^5009109
- ;;^UTILITY(U,$J,358.3,32129,0)
- ;;=L20.84^^182^1981^163
- ;;^UTILITY(U,$J,358.3,32129,1,0)
+ ;;^UTILITY(U,$J,358.3,30977,1,3,0)
+ ;;=3^Sexual Dysfunction,Unspec
+ ;;^UTILITY(U,$J,358.3,30977,1,4,0)
+ ;;=4^F52.9
+ ;;^UTILITY(U,$J,358.3,30977,2)
+ ;;=^5003625
+ ;;^UTILITY(U,$J,358.3,30978,0)
+ ;;=G47.09^^123^1554^14
+ ;;^UTILITY(U,$J,358.3,30978,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32129,1,3,0)
- ;;=3^Intrinsic Eczema
- ;;^UTILITY(U,$J,358.3,32129,1,4,0)
- ;;=4^L20.84
- ;;^UTILITY(U,$J,358.3,32129,2)
- ;;=^5009111
- ;;^UTILITY(U,$J,358.3,32130,0)
- ;;=L20.89^^182^1981^85
- ;;^UTILITY(U,$J,358.3,32130,1,0)
+ ;;^UTILITY(U,$J,358.3,30978,1,3,0)
+ ;;=3^Insomnia,Other
+ ;;^UTILITY(U,$J,358.3,30978,1,4,0)
+ ;;=4^G47.09
+ ;;^UTILITY(U,$J,358.3,30978,2)
+ ;;=^5003970
+ ;;^UTILITY(U,$J,358.3,30979,0)
+ ;;=G47.00^^123^1554^15
+ ;;^UTILITY(U,$J,358.3,30979,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32130,1,3,0)
- ;;=3^Atopic Dermatitis NEC
- ;;^UTILITY(U,$J,358.3,32130,1,4,0)
- ;;=4^L20.89
- ;;^UTILITY(U,$J,358.3,32130,2)
- ;;=^5009112
- ;;^UTILITY(U,$J,358.3,32131,0)
- ;;=L20.9^^182^1981^86
- ;;^UTILITY(U,$J,358.3,32131,1,0)
+ ;;^UTILITY(U,$J,358.3,30979,1,3,0)
+ ;;=3^Insomnia,Unspec
+ ;;^UTILITY(U,$J,358.3,30979,1,4,0)
+ ;;=4^G47.00
+ ;;^UTILITY(U,$J,358.3,30979,2)
+ ;;=^332924
+ ;;^UTILITY(U,$J,358.3,30980,0)
+ ;;=G47.10^^123^1554^12
+ ;;^UTILITY(U,$J,358.3,30980,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32131,1,3,0)
- ;;=3^Atopic Dermatitis,Unspec
- ;;^UTILITY(U,$J,358.3,32131,1,4,0)
- ;;=4^L20.9
- ;;^UTILITY(U,$J,358.3,32131,2)
- ;;=^5009113
- ;;^UTILITY(U,$J,358.3,32132,0)
- ;;=L21.8^^182^1981^263
- ;;^UTILITY(U,$J,358.3,32132,1,0)
+ ;;^UTILITY(U,$J,358.3,30980,1,3,0)
+ ;;=3^Hypersomnolence Disorder/Unspec Hypersomnolence Disorder
+ ;;^UTILITY(U,$J,358.3,30980,1,4,0)
+ ;;=4^G47.10
+ ;;^UTILITY(U,$J,358.3,30980,2)
+ ;;=^332926
+ ;;^UTILITY(U,$J,358.3,30981,0)
+ ;;=G47.419^^123^1554^17
+ ;;^UTILITY(U,$J,358.3,30981,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32132,1,3,0)
- ;;=3^Seborrheic Dermatitis NEC
- ;;^UTILITY(U,$J,358.3,32132,1,4,0)
- ;;=4^L21.8
- ;;^UTILITY(U,$J,358.3,32132,2)
- ;;=^303310
- ;;^UTILITY(U,$J,358.3,32133,0)
- ;;=L21.9^^182^1981^264
- ;;^UTILITY(U,$J,358.3,32133,1,0)
+ ;;^UTILITY(U,$J,358.3,30981,1,3,0)
+ ;;=3^Narcolepsy w/o Cataplexy w/ Hypocretin Deficiency
+ ;;^UTILITY(U,$J,358.3,30981,1,4,0)
+ ;;=4^G47.419
+ ;;^UTILITY(U,$J,358.3,30981,2)
+ ;;=^5003982
+ ;;^UTILITY(U,$J,358.3,30982,0)
+ ;;=G47.33^^123^1554^21
+ ;;^UTILITY(U,$J,358.3,30982,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32133,1,3,0)
- ;;=3^Seborrheic Dermatitis,Unspec
- ;;^UTILITY(U,$J,358.3,32133,1,4,0)
- ;;=4^L21.9
- ;;^UTILITY(U,$J,358.3,32133,2)
- ;;=^188703
- ;;^UTILITY(U,$J,358.3,32134,0)
- ;;=L23.7^^182^1981^30
- ;;^UTILITY(U,$J,358.3,32134,1,0)
+ ;;^UTILITY(U,$J,358.3,30982,1,3,0)
+ ;;=3^Obstructive Sleep Apnea Hypopnea
+ ;;^UTILITY(U,$J,358.3,30982,1,4,0)
+ ;;=4^G47.33
+ ;;^UTILITY(U,$J,358.3,30982,2)
+ ;;=^332763
+ ;;^UTILITY(U,$J,358.3,30983,0)
+ ;;=G47.31^^123^1554^1
+ ;;^UTILITY(U,$J,358.3,30983,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32134,1,3,0)
- ;;=3^Allergic Contact Dermatitis d/t Plants
- ;;^UTILITY(U,$J,358.3,32134,1,4,0)
- ;;=4^L23.7
- ;;^UTILITY(U,$J,358.3,32134,2)
- ;;=^5009122
- ;;^UTILITY(U,$J,358.3,32135,0)
- ;;=L23.9^^182^1981^31
- ;;^UTILITY(U,$J,358.3,32135,1,0)
+ ;;^UTILITY(U,$J,358.3,30983,1,3,0)
+ ;;=3^Central Sleep Apnea
+ ;;^UTILITY(U,$J,358.3,30983,1,4,0)
+ ;;=4^G47.31
+ ;;^UTILITY(U,$J,358.3,30983,2)
+ ;;=^332761
+ ;;^UTILITY(U,$J,358.3,30984,0)
+ ;;=G47.21^^123^1554^5
+ ;;^UTILITY(U,$J,358.3,30984,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32135,1,3,0)
- ;;=3^Allergic Contact Dermatitis,Unspec
- ;;^UTILITY(U,$J,358.3,32135,1,4,0)
- ;;=4^L23.9
- ;;^UTILITY(U,$J,358.3,32135,2)
- ;;=^5009125
- ;;^UTILITY(U,$J,358.3,32136,0)
- ;;=L24.9^^182^1981^164
- ;;^UTILITY(U,$J,358.3,32136,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32136,1,3,0)
- ;;=3^Irritant Contact Dermatitis,Unspec
- ;;^UTILITY(U,$J,358.3,32136,1,4,0)
- ;;=4^L24.9
- ;;^UTILITY(U,$J,358.3,32136,2)
- ;;=^5009136
- ;;^UTILITY(U,$J,358.3,32137,0)
- ;;=L25.9^^182^1981^115
- ;;^UTILITY(U,$J,358.3,32137,1,0)
+ ;;^UTILITY(U,$J,358.3,30984,1,3,0)
+ ;;=3^Circadian Rhythm Sleep-Wake Disorder;Delayed Sleep Phase Type
+ ;;^UTILITY(U,$J,358.3,30984,1,4,0)
+ ;;=4^G47.21
+ ;;^UTILITY(U,$J,358.3,30984,2)
+ ;;=^332769
+ ;;^UTILITY(U,$J,358.3,30985,0)
+ ;;=G47.22^^123^1554^4
+ ;;^UTILITY(U,$J,358.3,30985,1,0)
  ;;=^358.31IA^4^2

@@ -1,138 +1,130 @@
-IBDEI1CM ; ; 06-AUG-2015
+IBDEI1CM ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,23889,1,3,0)
- ;;=3^Other Ortho Aftercare
- ;;^UTILITY(U,$J,358.3,23889,1,4,0)
- ;;=4^V54.89
- ;;^UTILITY(U,$J,358.3,23889,2)
- ;;=Other Ortho Aftercare^1
- ;;^UTILITY(U,$J,358.3,23890,0)
- ;;=V52.8^^130^1448^7
- ;;^UTILITY(U,$J,358.3,23890,1,0)
+ ;;^UTILITY(U,$J,358.3,22922,0)
+ ;;=M84.48XA^^87^987^118
+ ;;^UTILITY(U,$J,358.3,22922,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23890,1,3,0)
- ;;=3^Fitting/Adj Oth Spec Prosth Device
- ;;^UTILITY(U,$J,358.3,23890,1,4,0)
- ;;=4^V52.8
- ;;^UTILITY(U,$J,358.3,23890,2)
- ;;=^295501
- ;;^UTILITY(U,$J,358.3,23891,0)
- ;;=V45.89^^130^1448^9
- ;;^UTILITY(U,$J,358.3,23891,1,0)
+ ;;^UTILITY(U,$J,358.3,22922,1,3,0)
+ ;;=3^Pathological Fx,Oth Site,Init Encntr
+ ;;^UTILITY(U,$J,358.3,22922,1,4,0)
+ ;;=4^M84.48XA
+ ;;^UTILITY(U,$J,358.3,22922,2)
+ ;;=^5014016
+ ;;^UTILITY(U,$J,358.3,22923,0)
+ ;;=M84.48XD^^87^987^119
+ ;;^UTILITY(U,$J,358.3,22923,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23891,1,3,0)
- ;;=3^Oth Post-Procedural States
- ;;^UTILITY(U,$J,358.3,23891,1,4,0)
- ;;=4^V45.89
- ;;^UTILITY(U,$J,358.3,23891,2)
- ;;=^276679
- ;;^UTILITY(U,$J,358.3,23892,0)
- ;;=V53.8^^130^1448^1
- ;;^UTILITY(U,$J,358.3,23892,1,0)
+ ;;^UTILITY(U,$J,358.3,22923,1,3,0)
+ ;;=3^Pathological Fx,Oth Site,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,22923,1,4,0)
+ ;;=4^M84.48XD
+ ;;^UTILITY(U,$J,358.3,22923,2)
+ ;;=^5014017
+ ;;^UTILITY(U,$J,358.3,22924,0)
+ ;;=M87.011^^87^987^45
+ ;;^UTILITY(U,$J,358.3,22924,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23892,1,3,0)
- ;;=3^Adjustment Of Wheelchair
- ;;^UTILITY(U,$J,358.3,23892,1,4,0)
- ;;=4^V53.8
- ;;^UTILITY(U,$J,358.3,23892,2)
- ;;=^295511
- ;;^UTILITY(U,$J,358.3,23893,0)
- ;;=V65.19^^130^1448^11
- ;;^UTILITY(U,$J,358.3,23893,1,0)
+ ;;^UTILITY(U,$J,358.3,22924,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22924,1,4,0)
+ ;;=4^M87.011
+ ;;^UTILITY(U,$J,358.3,22924,2)
+ ;;=^5014658
+ ;;^UTILITY(U,$J,358.3,22925,0)
+ ;;=M87.012^^87^987^42
+ ;;^UTILITY(U,$J,358.3,22925,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23893,1,3,0)
- ;;=3^Other Person Consult for Another
- ;;^UTILITY(U,$J,358.3,23893,1,4,0)
- ;;=4^V65.19
- ;;^UTILITY(U,$J,358.3,23893,2)
- ;;=^329985
- ;;^UTILITY(U,$J,358.3,23894,0)
- ;;=V49.76^^130^1449^2
- ;;^UTILITY(U,$J,358.3,23894,1,0)
+ ;;^UTILITY(U,$J,358.3,22925,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22925,1,4,0)
+ ;;=4^M87.012
+ ;;^UTILITY(U,$J,358.3,22925,2)
+ ;;=^5014659
+ ;;^UTILITY(U,$J,358.3,22926,0)
+ ;;=M87.050^^87^987^43
+ ;;^UTILITY(U,$J,358.3,22926,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23894,1,3,0)
- ;;=3^Above Knee Amputat Status
- ;;^UTILITY(U,$J,358.3,23894,1,4,0)
- ;;=4^V49.76
- ;;^UTILITY(U,$J,358.3,23894,2)
- ;;=^303444
- ;;^UTILITY(U,$J,358.3,23895,0)
- ;;=V49.74^^130^1449^3
- ;;^UTILITY(U,$J,358.3,23895,1,0)
+ ;;^UTILITY(U,$J,358.3,22926,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Pelvis
+ ;;^UTILITY(U,$J,358.3,22926,1,4,0)
+ ;;=4^M87.050
+ ;;^UTILITY(U,$J,358.3,22926,2)
+ ;;=^5014679
+ ;;^UTILITY(U,$J,358.3,22927,0)
+ ;;=M87.051^^87^987^44
+ ;;^UTILITY(U,$J,358.3,22927,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23895,1,3,0)
- ;;=3^Ankle Amputat Status
- ;;^UTILITY(U,$J,358.3,23895,1,4,0)
- ;;=4^V49.74
- ;;^UTILITY(U,$J,358.3,23895,2)
- ;;=^303442
- ;;^UTILITY(U,$J,358.3,23896,0)
- ;;=V49.75^^130^1449^5
- ;;^UTILITY(U,$J,358.3,23896,1,0)
+ ;;^UTILITY(U,$J,358.3,22927,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Right Femur
+ ;;^UTILITY(U,$J,358.3,22927,1,4,0)
+ ;;=4^M87.051
+ ;;^UTILITY(U,$J,358.3,22927,2)
+ ;;=^5014680
+ ;;^UTILITY(U,$J,358.3,22928,0)
+ ;;=M87.052^^87^987^41
+ ;;^UTILITY(U,$J,358.3,22928,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23896,1,3,0)
- ;;=3^Below Knee Amputat Status
- ;;^UTILITY(U,$J,358.3,23896,1,4,0)
- ;;=4^V49.75
- ;;^UTILITY(U,$J,358.3,23896,2)
- ;;=^303443
- ;;^UTILITY(U,$J,358.3,23897,0)
- ;;=V49.73^^130^1449^6
- ;;^UTILITY(U,$J,358.3,23897,1,0)
+ ;;^UTILITY(U,$J,358.3,22928,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Left Femur
+ ;;^UTILITY(U,$J,358.3,22928,1,4,0)
+ ;;=4^M87.052
+ ;;^UTILITY(U,$J,358.3,22928,2)
+ ;;=^5014681
+ ;;^UTILITY(U,$J,358.3,22929,0)
+ ;;=M87.111^^87^987^74
+ ;;^UTILITY(U,$J,358.3,22929,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23897,1,3,0)
- ;;=3^Foot Amputat Status
- ;;^UTILITY(U,$J,358.3,23897,1,4,0)
- ;;=4^V49.73
- ;;^UTILITY(U,$J,358.3,23897,2)
- ;;=^303441
- ;;^UTILITY(U,$J,358.3,23898,0)
- ;;=V49.70^^130^1449^10
- ;;^UTILITY(U,$J,358.3,23898,1,0)
+ ;;^UTILITY(U,$J,358.3,22929,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22929,1,4,0)
+ ;;=4^M87.111
+ ;;^UTILITY(U,$J,358.3,22929,2)
+ ;;=^5014701
+ ;;^UTILITY(U,$J,358.3,22930,0)
+ ;;=M87.112^^87^987^71
+ ;;^UTILITY(U,$J,358.3,22930,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23898,1,3,0)
- ;;=3^Lower Limb Amputat Status
- ;;^UTILITY(U,$J,358.3,23898,1,4,0)
- ;;=4^V49.70
- ;;^UTILITY(U,$J,358.3,23898,2)
- ;;=^303438
- ;;^UTILITY(U,$J,358.3,23899,0)
- ;;=V49.71^^130^1449^7
- ;;^UTILITY(U,$J,358.3,23899,1,0)
+ ;;^UTILITY(U,$J,358.3,22930,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22930,1,4,0)
+ ;;=4^M87.112
+ ;;^UTILITY(U,$J,358.3,22930,2)
+ ;;=^5014702
+ ;;^UTILITY(U,$J,358.3,22931,0)
+ ;;=M87.150^^87^987^72
+ ;;^UTILITY(U,$J,358.3,22931,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23899,1,3,0)
- ;;=3^Great Toe Amputat Status
- ;;^UTILITY(U,$J,358.3,23899,1,4,0)
- ;;=4^V49.71
- ;;^UTILITY(U,$J,358.3,23899,2)
- ;;=^303439
- ;;^UTILITY(U,$J,358.3,23900,0)
- ;;=V49.72^^130^1449^12
- ;;^UTILITY(U,$J,358.3,23900,1,0)
+ ;;^UTILITY(U,$J,358.3,22931,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Pelvis
+ ;;^UTILITY(U,$J,358.3,22931,1,4,0)
+ ;;=4^M87.150
+ ;;^UTILITY(U,$J,358.3,22931,2)
+ ;;=^5014722
+ ;;^UTILITY(U,$J,358.3,22932,0)
+ ;;=M87.151^^87^987^73
+ ;;^UTILITY(U,$J,358.3,22932,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23900,1,3,0)
- ;;=3^Oth Toe(S) Amputat Status
- ;;^UTILITY(U,$J,358.3,23900,1,4,0)
- ;;=4^V49.72
- ;;^UTILITY(U,$J,358.3,23900,2)
- ;;=^303440
- ;;^UTILITY(U,$J,358.3,23901,0)
- ;;=V49.60^^130^1449^15
- ;;^UTILITY(U,$J,358.3,23901,1,0)
+ ;;^UTILITY(U,$J,358.3,22932,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Right Femur
+ ;;^UTILITY(U,$J,358.3,22932,1,4,0)
+ ;;=4^M87.151
+ ;;^UTILITY(U,$J,358.3,22932,2)
+ ;;=^5014723
+ ;;^UTILITY(U,$J,358.3,22933,0)
+ ;;=M87.152^^87^987^70
+ ;;^UTILITY(U,$J,358.3,22933,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23901,1,3,0)
- ;;=3^Upper Limb Amputat Status
- ;;^UTILITY(U,$J,358.3,23901,1,4,0)
- ;;=4^V49.60
- ;;^UTILITY(U,$J,358.3,23901,2)
- ;;=^303427
- ;;^UTILITY(U,$J,358.3,23902,0)
- ;;=V49.61^^130^1449^14
- ;;^UTILITY(U,$J,358.3,23902,1,0)
+ ;;^UTILITY(U,$J,358.3,22933,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Left Femur
+ ;;^UTILITY(U,$J,358.3,22933,1,4,0)
+ ;;=4^M87.152
+ ;;^UTILITY(U,$J,358.3,22933,2)
+ ;;=^5014724
+ ;;^UTILITY(U,$J,358.3,22934,0)
+ ;;=M87.180^^87^987^69
+ ;;^UTILITY(U,$J,358.3,22934,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,23902,1,3,0)
- ;;=3^Thumb Amput Status
- ;;^UTILITY(U,$J,358.3,23902,1,4,0)
- ;;=4^V49.61
+ ;;^UTILITY(U,$J,358.3,22934,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Jaw

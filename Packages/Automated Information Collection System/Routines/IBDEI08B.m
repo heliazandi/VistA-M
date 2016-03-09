@@ -1,132 +1,138 @@
-IBDEI08B ; ; 06-AUG-2015
+IBDEI08B ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3408,0)
- ;;=99335^^10^140^2
- ;;^UTILITY(U,$J,358.3,3408,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3408,1,1,0)
- ;;=1^Exp Prob Focus Hx/Exam;Low Complex MDM
- ;;^UTILITY(U,$J,358.3,3408,1,2,0)
- ;;=2^99335
- ;;^UTILITY(U,$J,358.3,3409,0)
- ;;=99336^^10^140^3
- ;;^UTILITY(U,$J,358.3,3409,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3409,1,1,0)
- ;;=1^Detailed Hx/Exam;Mod Complex MDM
- ;;^UTILITY(U,$J,358.3,3409,1,2,0)
- ;;=2^99336
- ;;^UTILITY(U,$J,358.3,3410,0)
- ;;=99337^^10^140^4
- ;;^UTILITY(U,$J,358.3,3410,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3410,1,1,0)
- ;;=1^Comp Hx/Exam;Mod Complex MDM
- ;;^UTILITY(U,$J,358.3,3410,1,2,0)
- ;;=2^99337
- ;;^UTILITY(U,$J,358.3,3411,0)
- ;;=99324^^10^141^1
- ;;^UTILITY(U,$J,358.3,3411,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3411,1,1,0)
- ;;=1^Problem Focus Hx & Exam;SF MDM
- ;;^UTILITY(U,$J,358.3,3411,1,2,0)
- ;;=2^99324
- ;;^UTILITY(U,$J,358.3,3412,0)
- ;;=99325^^10^141^2
- ;;^UTILITY(U,$J,358.3,3412,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3412,1,1,0)
- ;;=1^Exp Prob Focus Hx/Exam;Low Complex MDM
- ;;^UTILITY(U,$J,358.3,3412,1,2,0)
- ;;=2^99325
- ;;^UTILITY(U,$J,358.3,3413,0)
- ;;=99326^^10^141^3
- ;;^UTILITY(U,$J,358.3,3413,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3413,1,1,0)
- ;;=1^Detailed Hx/Exam;Mod Complex MDM
- ;;^UTILITY(U,$J,358.3,3413,1,2,0)
- ;;=2^99326
- ;;^UTILITY(U,$J,358.3,3414,0)
- ;;=99327^^10^141^4
- ;;^UTILITY(U,$J,358.3,3414,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3414,1,1,0)
- ;;=1^Comp Hx/Exam;Mod Complex MDM
- ;;^UTILITY(U,$J,358.3,3414,1,2,0)
- ;;=2^99327
- ;;^UTILITY(U,$J,358.3,3415,0)
- ;;=99328^^10^141^5
- ;;^UTILITY(U,$J,358.3,3415,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3415,1,1,0)
- ;;=1^Comp Hx/Exam;High Complex MDM
- ;;^UTILITY(U,$J,358.3,3415,1,2,0)
- ;;=2^99328
- ;;^UTILITY(U,$J,358.3,3416,0)
- ;;=99347^^10^142^1
- ;;^UTILITY(U,$J,358.3,3416,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3416,1,1,0)
- ;;=1^Problem Focus Hx & Exam;SF MDM
- ;;^UTILITY(U,$J,358.3,3416,1,2,0)
- ;;=2^99347
- ;;^UTILITY(U,$J,358.3,3417,0)
- ;;=99348^^10^142^2
- ;;^UTILITY(U,$J,358.3,3417,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3417,1,1,0)
- ;;=1^Exp Prob Focus Hx/Exam;Low Complex MDM
- ;;^UTILITY(U,$J,358.3,3417,1,2,0)
- ;;=2^99348
- ;;^UTILITY(U,$J,358.3,3418,0)
- ;;=99349^^10^142^3
- ;;^UTILITY(U,$J,358.3,3418,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3418,1,1,0)
- ;;=1^Detailed Dx/Exam;Mod Complex MDM
- ;;^UTILITY(U,$J,358.3,3418,1,2,0)
- ;;=2^99349
- ;;^UTILITY(U,$J,358.3,3419,0)
- ;;=99350^^10^142^4
- ;;^UTILITY(U,$J,358.3,3419,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3419,1,1,0)
- ;;=1^Comp Hx/Exam;High Complex MDM
- ;;^UTILITY(U,$J,358.3,3419,1,2,0)
- ;;=2^99350
- ;;^UTILITY(U,$J,358.3,3420,0)
- ;;=99342^^10^143^2
- ;;^UTILITY(U,$J,358.3,3420,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3420,1,1,0)
- ;;=1^Exp Prob Focus Hx & Exam;Low MDM
- ;;^UTILITY(U,$J,358.3,3420,1,2,0)
- ;;=2^99342
- ;;^UTILITY(U,$J,358.3,3421,0)
- ;;=99343^^10^143^3
- ;;^UTILITY(U,$J,358.3,3421,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3421,1,1,0)
- ;;=1^Detailed Hx & Exam;Mod Complex MDM
- ;;^UTILITY(U,$J,358.3,3421,1,2,0)
- ;;=2^99343
- ;;^UTILITY(U,$J,358.3,3422,0)
- ;;=99344^^10^143^4
- ;;^UTILITY(U,$J,358.3,3422,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3422,1,1,0)
- ;;=1^Comp Hx & Exam;Mod Complex MDM
- ;;^UTILITY(U,$J,358.3,3422,1,2,0)
- ;;=2^99344
- ;;^UTILITY(U,$J,358.3,3423,0)
- ;;=99345^^10^143^5
- ;;^UTILITY(U,$J,358.3,3423,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,3423,1,1,0)
- ;;=1^Comp Hx & Exam;High Complex MDM
- ;;^UTILITY(U,$J,358.3,3423,1,2,0)
- ;;=2^99345
+ ;;^UTILITY(U,$J,358.3,3590,1,4,0)
+ ;;=4^G25.70
+ ;;^UTILITY(U,$J,358.3,3590,2)
+ ;;=^5003798
+ ;;^UTILITY(U,$J,358.3,3591,0)
+ ;;=G35.^^18^220^81
+ ;;^UTILITY(U,$J,358.3,3591,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3591,1,3,0)
+ ;;=3^Multiple Sclerosis
+ ;;^UTILITY(U,$J,358.3,3591,1,4,0)
+ ;;=4^G35.
+ ;;^UTILITY(U,$J,358.3,3591,2)
+ ;;=^79761
+ ;;^UTILITY(U,$J,358.3,3592,0)
+ ;;=G25.3^^18^220^82
+ ;;^UTILITY(U,$J,358.3,3592,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3592,1,3,0)
+ ;;=3^Myoclonus
+ ;;^UTILITY(U,$J,358.3,3592,1,4,0)
+ ;;=4^G25.3
+ ;;^UTILITY(U,$J,358.3,3592,2)
+ ;;=^80620
+ ;;^UTILITY(U,$J,358.3,3593,0)
+ ;;=G70.9^^18^220^83
+ ;;^UTILITY(U,$J,358.3,3593,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3593,1,3,0)
+ ;;=3^Myoneural Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,3593,1,4,0)
+ ;;=4^G70.9
+ ;;^UTILITY(U,$J,358.3,3593,2)
+ ;;=^5004087
+ ;;^UTILITY(U,$J,358.3,3594,0)
+ ;;=G31.9^^18^220^84
+ ;;^UTILITY(U,$J,358.3,3594,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3594,1,3,0)
+ ;;=3^Nervous System Degenerative Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,3594,1,4,0)
+ ;;=4^G31.9
+ ;;^UTILITY(U,$J,358.3,3594,2)
+ ;;=^5003815
+ ;;^UTILITY(U,$J,358.3,3595,0)
+ ;;=G50.0^^18^220^86
+ ;;^UTILITY(U,$J,358.3,3595,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3595,1,3,0)
+ ;;=3^Neuralgia,Trigeminal
+ ;;^UTILITY(U,$J,358.3,3595,1,4,0)
+ ;;=4^G50.0
+ ;;^UTILITY(U,$J,358.3,3595,2)
+ ;;=^121978
+ ;;^UTILITY(U,$J,358.3,3596,0)
+ ;;=G62.81^^18^220^92
+ ;;^UTILITY(U,$J,358.3,3596,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3596,1,3,0)
+ ;;=3^Neuropathy,Critical Illness Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,3596,1,4,0)
+ ;;=4^G62.81
+ ;;^UTILITY(U,$J,358.3,3596,2)
+ ;;=^328481
+ ;;^UTILITY(U,$J,358.3,3597,0)
+ ;;=G62.1^^18^220^87
+ ;;^UTILITY(U,$J,358.3,3597,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3597,1,3,0)
+ ;;=3^Neuropathy,Alcoholic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,3597,1,4,0)
+ ;;=4^G62.1
+ ;;^UTILITY(U,$J,358.3,3597,2)
+ ;;=^5004076
+ ;;^UTILITY(U,$J,358.3,3598,0)
+ ;;=G51.0^^18^220^88
+ ;;^UTILITY(U,$J,358.3,3598,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3598,1,3,0)
+ ;;=3^Neuropathy,Bell's Palsy
+ ;;^UTILITY(U,$J,358.3,3598,1,4,0)
+ ;;=4^G51.0
+ ;;^UTILITY(U,$J,358.3,3598,2)
+ ;;=^13238
+ ;;^UTILITY(U,$J,358.3,3599,0)
+ ;;=G56.01^^18^220^90
+ ;;^UTILITY(U,$J,358.3,3599,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3599,1,3,0)
+ ;;=3^Neuropathy,Carpal Tunnel Syndrome,Rt Upper Limb
+ ;;^UTILITY(U,$J,358.3,3599,1,4,0)
+ ;;=4^G56.01
+ ;;^UTILITY(U,$J,358.3,3599,2)
+ ;;=^5004018
+ ;;^UTILITY(U,$J,358.3,3600,0)
+ ;;=G56.02^^18^220^89
+ ;;^UTILITY(U,$J,358.3,3600,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3600,1,3,0)
+ ;;=3^Neuropathy,Carpal Tunnel Syndrome,Lt Upper Limb
+ ;;^UTILITY(U,$J,358.3,3600,1,4,0)
+ ;;=4^G56.02
+ ;;^UTILITY(U,$J,358.3,3600,2)
+ ;;=^5004019
+ ;;^UTILITY(U,$J,358.3,3601,0)
+ ;;=G52.9^^18^220^91
+ ;;^UTILITY(U,$J,358.3,3601,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3601,1,3,0)
+ ;;=3^Neuropathy,Cranial Nerve Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,3601,1,4,0)
+ ;;=4^G52.9
+ ;;^UTILITY(U,$J,358.3,3601,2)
+ ;;=^5004005
+ ;;^UTILITY(U,$J,358.3,3602,0)
+ ;;=G51.9^^18^220^95
+ ;;^UTILITY(U,$J,358.3,3602,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3602,1,3,0)
+ ;;=3^Neuropathy,Facial Nerve Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,3602,1,4,0)
+ ;;=4^G51.9
+ ;;^UTILITY(U,$J,358.3,3602,2)
+ ;;=^5003998
+ ;;^UTILITY(U,$J,358.3,3603,0)
+ ;;=G62.0^^18^220^93
+ ;;^UTILITY(U,$J,358.3,3603,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3603,1,3,0)
+ ;;=3^Neuropathy,Drug-Induced Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,3603,1,4,0)
+ ;;=4^G62.0
+ ;;^UTILITY(U,$J,358.3,3603,2)
+ ;;=^5004075

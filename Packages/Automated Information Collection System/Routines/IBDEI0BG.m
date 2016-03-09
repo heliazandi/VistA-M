@@ -1,136 +1,140 @@
-IBDEI0BG ; ; 06-AUG-2015
+IBDEI0BG ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,5031,2)
- ;;=^266557
- ;;^UTILITY(U,$J,358.3,5032,0)
- ;;=V16.8^^25^270^5
- ;;^UTILITY(U,$J,358.3,5032,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5032,1,2,0)
- ;;=2^V16.8
- ;;^UTILITY(U,$J,358.3,5032,1,5,0)
- ;;=5^Family History of SCC/BCC
- ;;^UTILITY(U,$J,358.3,5032,2)
- ;;=Family Hx of Skin Cancer^295300
- ;;^UTILITY(U,$J,358.3,5033,0)
- ;;=V10.82^^25^270^10
- ;;^UTILITY(U,$J,358.3,5033,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5033,1,2,0)
- ;;=2^V10.82
- ;;^UTILITY(U,$J,358.3,5033,1,5,0)
- ;;=5^Personal History of Malig Melanoma
- ;;^UTILITY(U,$J,358.3,5033,2)
- ;;=Personal History of Malig Melanoma^295240
- ;;^UTILITY(U,$J,358.3,5034,0)
- ;;=V15.82^^25^270^7
- ;;^UTILITY(U,$J,358.3,5034,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5034,1,2,0)
- ;;=2^V15.82
- ;;^UTILITY(U,$J,358.3,5034,1,5,0)
- ;;=5^History Of Tobacco Use
- ;;^UTILITY(U,$J,358.3,5034,2)
- ;;=^303405
- ;;^UTILITY(U,$J,358.3,5035,0)
- ;;=V13.3^^25^270^6
- ;;^UTILITY(U,$J,358.3,5035,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5035,1,2,0)
- ;;=2^V13.3
- ;;^UTILITY(U,$J,358.3,5035,1,5,0)
- ;;=5^History Of Other Skin Disorder
- ;;^UTILITY(U,$J,358.3,5035,2)
- ;;=^295266
- ;;^UTILITY(U,$J,358.3,5036,0)
- ;;=V10.83^^25^270^9
- ;;^UTILITY(U,$J,358.3,5036,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5036,1,2,0)
- ;;=2^V10.83
- ;;^UTILITY(U,$J,358.3,5036,1,5,0)
- ;;=5^Personal History of BCC/SCC
- ;;^UTILITY(U,$J,358.3,5036,2)
- ;;=Hx of Skin Cancer^295241
- ;;^UTILITY(U,$J,358.3,5037,0)
- ;;=V15.89^^25^270^2
- ;;^UTILITY(U,$J,358.3,5037,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5037,1,2,0)
- ;;=2^V15.89
- ;;^UTILITY(U,$J,358.3,5037,1,5,0)
- ;;=5^Exposure to Env Contaminants in Pers Gulf
- ;;^UTILITY(U,$J,358.3,5037,2)
- ;;=Exposure to Env Contaminante in Pers Gulf^295291
- ;;^UTILITY(U,$J,358.3,5038,0)
- ;;=V15.81^^25^270^8
- ;;^UTILITY(U,$J,358.3,5038,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5038,1,2,0)
- ;;=2^V15.81
- ;;^UTILITY(U,$J,358.3,5038,1,5,0)
- ;;=5^History of non-compliance
- ;;^UTILITY(U,$J,358.3,5038,2)
- ;;=^295290
- ;;^UTILITY(U,$J,358.3,5039,0)
- ;;=757.1^^25^271^2
- ;;^UTILITY(U,$J,358.3,5039,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5039,1,2,0)
- ;;=2^757.1
- ;;^UTILITY(U,$J,358.3,5039,1,5,0)
- ;;=5^Ichthyosis Congenital
- ;;^UTILITY(U,$J,358.3,5039,2)
- ;;=^61019
- ;;^UTILITY(U,$J,358.3,5040,0)
- ;;=911.4^^25^272^7
- ;;^UTILITY(U,$J,358.3,5040,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5040,1,2,0)
- ;;=2^911.4
- ;;^UTILITY(U,$J,358.3,5040,1,5,0)
- ;;=5^Insect Bite, Trunk, W/O Infection
- ;;^UTILITY(U,$J,358.3,5040,2)
- ;;=^275279
- ;;^UTILITY(U,$J,358.3,5041,0)
- ;;=913.4^^25^272^1
- ;;^UTILITY(U,$J,358.3,5041,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5041,1,2,0)
- ;;=2^913.4
- ;;^UTILITY(U,$J,358.3,5041,1,5,0)
- ;;=5^Insect Bite, Arm, W/O Infection
- ;;^UTILITY(U,$J,358.3,5041,2)
- ;;=^275301
- ;;^UTILITY(U,$J,358.3,5042,0)
- ;;=910.4^^25^272^2
- ;;^UTILITY(U,$J,358.3,5042,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5042,1,2,0)
- ;;=2^910.4
- ;;^UTILITY(U,$J,358.3,5042,1,5,0)
- ;;=5^Insect Bite, Face, W/O Infection
- ;;^UTILITY(U,$J,358.3,5042,2)
- ;;=^275267
- ;;^UTILITY(U,$J,358.3,5043,0)
- ;;=915.4^^25^272^3
- ;;^UTILITY(U,$J,358.3,5043,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5043,1,2,0)
- ;;=2^915.4
- ;;^UTILITY(U,$J,358.3,5043,1,5,0)
- ;;=5^Insect Bite, Finger, W/O Infection
- ;;^UTILITY(U,$J,358.3,5043,2)
- ;;=^275323
- ;;^UTILITY(U,$J,358.3,5044,0)
- ;;=917.4^^25^272^4
- ;;^UTILITY(U,$J,358.3,5044,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,5044,1,2,0)
- ;;=2^917.4
- ;;^UTILITY(U,$J,358.3,5044,1,5,0)
- ;;=5^Insect Bite, Foot, W/O Infection 
- ;;^UTILITY(U,$J,358.3,5044,2)
- ;;=^275345
+ ;;^UTILITY(U,$J,358.3,5174,1,4,0)
+ ;;=4^N39.41
+ ;;^UTILITY(U,$J,358.3,5174,2)
+ ;;=^5015680
+ ;;^UTILITY(U,$J,358.3,5175,0)
+ ;;=N13.8^^27^332^21
+ ;;^UTILITY(U,$J,358.3,5175,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5175,1,3,0)
+ ;;=3^Urinary Obstruction
+ ;;^UTILITY(U,$J,358.3,5175,1,4,0)
+ ;;=4^N13.8
+ ;;^UTILITY(U,$J,358.3,5175,2)
+ ;;=^5015588
+ ;;^UTILITY(U,$J,358.3,5176,0)
+ ;;=R33.8^^27^332^22
+ ;;^UTILITY(U,$J,358.3,5176,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5176,1,3,0)
+ ;;=3^Urinary Retention,Unspec
+ ;;^UTILITY(U,$J,358.3,5176,1,4,0)
+ ;;=4^R33.8
+ ;;^UTILITY(U,$J,358.3,5176,2)
+ ;;=^5019331
+ ;;^UTILITY(U,$J,358.3,5177,0)
+ ;;=R39.15^^27^332^24
+ ;;^UTILITY(U,$J,358.3,5177,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5177,1,3,0)
+ ;;=3^Urinary Urgency
+ ;;^UTILITY(U,$J,358.3,5177,1,4,0)
+ ;;=4^R39.15
+ ;;^UTILITY(U,$J,358.3,5177,2)
+ ;;=^5019345
+ ;;^UTILITY(U,$J,358.3,5178,0)
+ ;;=R39.12^^27^332^25
+ ;;^UTILITY(U,$J,358.3,5178,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5178,1,3,0)
+ ;;=3^Weak Urinary Stream
+ ;;^UTILITY(U,$J,358.3,5178,1,4,0)
+ ;;=4^R39.12
+ ;;^UTILITY(U,$J,358.3,5178,2)
+ ;;=^5019342
+ ;;^UTILITY(U,$J,358.3,5179,0)
+ ;;=R80.9^^27^332^16
+ ;;^UTILITY(U,$J,358.3,5179,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5179,1,3,0)
+ ;;=3^Proteinuria,Unspec
+ ;;^UTILITY(U,$J,358.3,5179,1,4,0)
+ ;;=4^R80.9
+ ;;^UTILITY(U,$J,358.3,5179,2)
+ ;;=^5019599
+ ;;^UTILITY(U,$J,358.3,5180,0)
+ ;;=D51.8^^27^333^2
+ ;;^UTILITY(U,$J,358.3,5180,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5180,1,3,0)
+ ;;=3^Anemia,Vitamin B12 Deficiency
+ ;;^UTILITY(U,$J,358.3,5180,1,4,0)
+ ;;=4^D51.8
+ ;;^UTILITY(U,$J,358.3,5180,2)
+ ;;=^5002288
+ ;;^UTILITY(U,$J,358.3,5181,0)
+ ;;=D52.9^^27^333^1
+ ;;^UTILITY(U,$J,358.3,5181,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5181,1,3,0)
+ ;;=3^Anemia,Folate Deficiency
+ ;;^UTILITY(U,$J,358.3,5181,1,4,0)
+ ;;=4^D52.9
+ ;;^UTILITY(U,$J,358.3,5181,2)
+ ;;=^5002293
+ ;;^UTILITY(U,$J,358.3,5182,0)
+ ;;=I10.^^27^334^12
+ ;;^UTILITY(U,$J,358.3,5182,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5182,1,3,0)
+ ;;=3^Hypertension,Essential
+ ;;^UTILITY(U,$J,358.3,5182,1,4,0)
+ ;;=4^I10.
+ ;;^UTILITY(U,$J,358.3,5182,2)
+ ;;=^5007062
+ ;;^UTILITY(U,$J,358.3,5183,0)
+ ;;=I15.0^^27^334^13
+ ;;^UTILITY(U,$J,358.3,5183,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5183,1,3,0)
+ ;;=3^Hypertension,Renovascular
+ ;;^UTILITY(U,$J,358.3,5183,1,4,0)
+ ;;=4^I15.0
+ ;;^UTILITY(U,$J,358.3,5183,2)
+ ;;=^5007071
+ ;;^UTILITY(U,$J,358.3,5184,0)
+ ;;=I13.11^^27^334^8
+ ;;^UTILITY(U,$J,358.3,5184,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5184,1,3,0)
+ ;;=3^HTN Hrt & CKD w/o Hrt Failure w/ Stage 5 Chr Kidney/ESRD
+ ;;^UTILITY(U,$J,358.3,5184,1,4,0)
+ ;;=4^I13.11
+ ;;^UTILITY(U,$J,358.3,5184,2)
+ ;;=^5007069
+ ;;^UTILITY(U,$J,358.3,5185,0)
+ ;;=I13.2^^27^334^7
+ ;;^UTILITY(U,$J,358.3,5185,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5185,1,3,0)
+ ;;=3^HTN Hrt & CKD w/ Hrt Failure w/ Stage 5 Chr Kidney/ESRD
+ ;;^UTILITY(U,$J,358.3,5185,1,4,0)
+ ;;=4^I13.2
+ ;;^UTILITY(U,$J,358.3,5185,2)
+ ;;=^5007070
+ ;;^UTILITY(U,$J,358.3,5186,0)
+ ;;=I70.1^^27^334^3
+ ;;^UTILITY(U,$J,358.3,5186,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5186,1,3,0)
+ ;;=3^Atherosclerosis of Renal Artery
+ ;;^UTILITY(U,$J,358.3,5186,1,4,0)
+ ;;=4^I70.1
+ ;;^UTILITY(U,$J,358.3,5186,2)
+ ;;=^269760
+ ;;^UTILITY(U,$J,358.3,5187,0)
+ ;;=I77.3^^27^334^2
+ ;;^UTILITY(U,$J,358.3,5187,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5187,1,3,0)
+ ;;=3^Arterial Fibromuscular Dysplasia
+ ;;^UTILITY(U,$J,358.3,5187,1,4,0)
+ ;;=4^I77.3
+ ;;^UTILITY(U,$J,358.3,5187,2)
+ ;;=^5007812
+ ;;^UTILITY(U,$J,358.3,5188,0)
+ ;;=E26.02^^27^334^5

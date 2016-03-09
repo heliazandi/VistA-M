@@ -1,132 +1,110 @@
-IBDEI1UI ; ; 06-AUG-2015
+IBDEI1UI ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32496,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32496,1,3,0)
- ;;=3^Gonococcal Infection Lower Genitourinary Tract,Other
- ;;^UTILITY(U,$J,358.3,32496,1,4,0)
- ;;=4^A54.09
- ;;^UTILITY(U,$J,358.3,32496,2)
- ;;=^5000315
- ;;^UTILITY(U,$J,358.3,32497,0)
- ;;=A54.02^^182^1988^45
- ;;^UTILITY(U,$J,358.3,32497,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32497,1,3,0)
- ;;=3^Gonococcal Vulvovaginitis,Unspec
- ;;^UTILITY(U,$J,358.3,32497,1,4,0)
- ;;=4^A54.02
- ;;^UTILITY(U,$J,358.3,32497,2)
- ;;=^5000313
- ;;^UTILITY(U,$J,358.3,32498,0)
- ;;=A54.1^^182^1988^42
- ;;^UTILITY(U,$J,358.3,32498,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32498,1,3,0)
- ;;=3^Gonococcal Infection Lower GU Tract w/ Periureth & Acc Gland Abscess
- ;;^UTILITY(U,$J,358.3,32498,1,4,0)
- ;;=4^A54.1
- ;;^UTILITY(U,$J,358.3,32498,2)
- ;;=^5000316
- ;;^UTILITY(U,$J,358.3,32499,0)
- ;;=A54.01^^182^1988^41
- ;;^UTILITY(U,$J,358.3,32499,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32499,1,3,0)
- ;;=3^Gonococcal Cystitis & Urethritis,Unspec
- ;;^UTILITY(U,$J,358.3,32499,1,4,0)
- ;;=4^A54.01
- ;;^UTILITY(U,$J,358.3,32499,2)
- ;;=^5000312
- ;;^UTILITY(U,$J,358.3,32500,0)
- ;;=B37.49^^182^1988^11
- ;;^UTILITY(U,$J,358.3,32500,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32500,1,3,0)
- ;;=3^Candidiasis Urogenital,Other
- ;;^UTILITY(U,$J,358.3,32500,1,4,0)
- ;;=4^B37.49
- ;;^UTILITY(U,$J,358.3,32500,2)
- ;;=^5000618
- ;;^UTILITY(U,$J,358.3,32501,0)
- ;;=B37.41^^182^1988^10
- ;;^UTILITY(U,$J,358.3,32501,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32501,1,3,0)
- ;;=3^Candidal Cystitis & Urethritis
- ;;^UTILITY(U,$J,358.3,32501,1,4,0)
- ;;=4^B37.41
- ;;^UTILITY(U,$J,358.3,32501,2)
- ;;=^5000616
- ;;^UTILITY(U,$J,358.3,32502,0)
- ;;=B37.42^^182^1988^9
- ;;^UTILITY(U,$J,358.3,32502,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32502,1,3,0)
- ;;=3^Candidal Balanitis
- ;;^UTILITY(U,$J,358.3,32502,1,4,0)
- ;;=4^B37.42
- ;;^UTILITY(U,$J,358.3,32502,2)
- ;;=^5000617
- ;;^UTILITY(U,$J,358.3,32503,0)
- ;;=A59.03^^182^1988^92
- ;;^UTILITY(U,$J,358.3,32503,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32503,1,3,0)
- ;;=3^Trichomonal Cystitis & Urethritis
- ;;^UTILITY(U,$J,358.3,32503,1,4,0)
- ;;=4^A59.03
- ;;^UTILITY(U,$J,358.3,32503,2)
- ;;=^5000349
- ;;^UTILITY(U,$J,358.3,32504,0)
- ;;=E87.6^^182^1988^53
- ;;^UTILITY(U,$J,358.3,32504,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32504,1,3,0)
- ;;=3^Hypokalemia
- ;;^UTILITY(U,$J,358.3,32504,1,4,0)
- ;;=4^E87.6
- ;;^UTILITY(U,$J,358.3,32504,2)
- ;;=^60610
- ;;^UTILITY(U,$J,358.3,32505,0)
- ;;=F52.0^^182^1988^52
- ;;^UTILITY(U,$J,358.3,32505,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32505,1,3,0)
- ;;=3^Hypoactive Sexual Desire Disorder
- ;;^UTILITY(U,$J,358.3,32505,1,4,0)
- ;;=4^F52.0
- ;;^UTILITY(U,$J,358.3,32505,2)
- ;;=^5003618
- ;;^UTILITY(U,$J,358.3,32506,0)
- ;;=F52.22^^182^1988^89
- ;;^UTILITY(U,$J,358.3,32506,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32506,1,3,0)
- ;;=3^Sexual Arousal Disorder,Female
- ;;^UTILITY(U,$J,358.3,32506,1,4,0)
- ;;=4^F52.22
- ;;^UTILITY(U,$J,358.3,32506,2)
- ;;=^5003621
- ;;^UTILITY(U,$J,358.3,32507,0)
- ;;=F52.8^^182^1988^90
- ;;^UTILITY(U,$J,358.3,32507,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32507,1,3,0)
- ;;=3^Sexual Dysfnct Not d/t Substance/Known Physiological Cond
- ;;^UTILITY(U,$J,358.3,32507,1,4,0)
- ;;=4^F52.8
- ;;^UTILITY(U,$J,358.3,32507,2)
- ;;=^5003624
- ;;^UTILITY(U,$J,358.3,32508,0)
- ;;=F52.21^^182^1988^30
- ;;^UTILITY(U,$J,358.3,32508,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32508,1,3,0)
- ;;=3^Erectile Disorder,Male
- ;;^UTILITY(U,$J,358.3,32508,1,4,0)
- ;;=4^F52.21
- ;;^UTILITY(U,$J,358.3,32508,2)
- ;;=^5003620
+ ;;^UTILITY(U,$J,358.3,31343,1,3,0)
+ ;;=3^11604
+ ;;^UTILITY(U,$J,358.3,31344,0)
+ ;;=11606^^125^1585^6^^^^1
+ ;;^UTILITY(U,$J,358.3,31344,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31344,1,2,0)
+ ;;=2^Excision Malignant Lesions-trunk, arms or legs; over 4.0cm
+ ;;^UTILITY(U,$J,358.3,31344,1,3,0)
+ ;;=3^11606
+ ;;^UTILITY(U,$J,358.3,31345,0)
+ ;;=11620^^125^1585^7^^^^1
+ ;;^UTILITY(U,$J,358.3,31345,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31345,1,2,0)
+ ;;=2^Excision Malignant Lesions-scalp, neck, hands, feet, genitalia; 0.5cm or less
+ ;;^UTILITY(U,$J,358.3,31345,1,3,0)
+ ;;=3^11620
+ ;;^UTILITY(U,$J,358.3,31346,0)
+ ;;=11621^^125^1585^8^^^^1
+ ;;^UTILITY(U,$J,358.3,31346,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31346,1,2,0)
+ ;;=2^Excision Malignant Lesions-scalp, neck, hands, feet, genitalia; 0.6cm to 1.0cm
+ ;;^UTILITY(U,$J,358.3,31346,1,3,0)
+ ;;=3^11621
+ ;;^UTILITY(U,$J,358.3,31347,0)
+ ;;=11622^^125^1585^9^^^^1
+ ;;^UTILITY(U,$J,358.3,31347,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31347,1,2,0)
+ ;;=2^Excision Malignant Lesions-scalp, neck, hands, feet, genitalia; 1.1cm to 2.0cm
+ ;;^UTILITY(U,$J,358.3,31347,1,3,0)
+ ;;=3^11622
+ ;;^UTILITY(U,$J,358.3,31348,0)
+ ;;=11623^^125^1585^10^^^^1
+ ;;^UTILITY(U,$J,358.3,31348,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31348,1,2,0)
+ ;;=2^Excision Malignant Lesions-scalp, neck, hands, feet, genitalia; 2.1cm to 3.0cm
+ ;;^UTILITY(U,$J,358.3,31348,1,3,0)
+ ;;=3^11623
+ ;;^UTILITY(U,$J,358.3,31349,0)
+ ;;=11624^^125^1585^11^^^^1
+ ;;^UTILITY(U,$J,358.3,31349,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31349,1,2,0)
+ ;;=2^Excision Malignant Lesions-scalp, neck, hands, feet, genitalia; 3.1cm to 4.0cm
+ ;;^UTILITY(U,$J,358.3,31349,1,3,0)
+ ;;=3^11624
+ ;;^UTILITY(U,$J,358.3,31350,0)
+ ;;=11626^^125^1585^12^^^^1
+ ;;^UTILITY(U,$J,358.3,31350,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31350,1,2,0)
+ ;;=2^Excision Malignant Lesions-scalp, neck, hands, feet, gentalia; over 4.0cm
+ ;;^UTILITY(U,$J,358.3,31350,1,3,0)
+ ;;=3^11626
+ ;;^UTILITY(U,$J,358.3,31351,0)
+ ;;=12001^^125^1586^8^^^^1
+ ;;^UTILITY(U,$J,358.3,31351,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31351,1,2,0)
+ ;;=2^Simple Repair of Wnd-Scalp,Neck,Axillae,Trunk;2.5cm or less
+ ;;^UTILITY(U,$J,358.3,31351,1,3,0)
+ ;;=3^12001
+ ;;^UTILITY(U,$J,358.3,31352,0)
+ ;;=12002^^125^1586^9^^^^1
+ ;;^UTILITY(U,$J,358.3,31352,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31352,1,2,0)
+ ;;=2^Simple Repair of Wnd-Scalp,Neck,Axillae,Trunk;2.6cm-7.5cm
+ ;;^UTILITY(U,$J,358.3,31352,1,3,0)
+ ;;=3^12002
+ ;;^UTILITY(U,$J,358.3,31353,0)
+ ;;=12041^^125^1586^1^^^^1
+ ;;^UTILITY(U,$J,358.3,31353,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31353,1,2,0)
+ ;;=2^Layer Closure of Wnd-Neck,Hands,Feet,Ext Genitalia;2.5cm or less
+ ;;^UTILITY(U,$J,358.3,31353,1,3,0)
+ ;;=3^12041
+ ;;^UTILITY(U,$J,358.3,31354,0)
+ ;;=12042^^125^1586^2^^^^1
+ ;;^UTILITY(U,$J,358.3,31354,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31354,1,2,0)
+ ;;=2^Layer Closure of Wnd-Neck,Hands,Feet,Ext Genitalia;2.6cm-7.5cm
+ ;;^UTILITY(U,$J,358.3,31354,1,3,0)
+ ;;=3^12042
+ ;;^UTILITY(U,$J,358.3,31355,0)
+ ;;=12031^^125^1586^3^^^^1
+ ;;^UTILITY(U,$J,358.3,31355,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31355,1,2,0)
+ ;;=2^Layer Closure of Wnd-Scalp,Axillae,Trunk,Extrem;2.5cm or less
+ ;;^UTILITY(U,$J,358.3,31355,1,3,0)
+ ;;=3^12031
+ ;;^UTILITY(U,$J,358.3,31356,0)
+ ;;=12032^^125^1586^4^^^^1
+ ;;^UTILITY(U,$J,358.3,31356,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31356,1,2,0)
+ ;;=2^Layer Closure of Wnd-Scalp,Axillae,Trunk,Extrem;2.6cm-7.5cm
+ ;;^UTILITY(U,$J,358.3,31356,1,3,0)
+ ;;=3^12032

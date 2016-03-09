@@ -1,128 +1,138 @@
-IBDEI05V ; ; 06-AUG-2015
+IBDEI05V ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2217,2)
- ;;=^5022037
- ;;^UTILITY(U,$J,358.3,2218,0)
- ;;=S43.401A^^4^62^230
- ;;^UTILITY(U,$J,358.3,2218,1,0)
+ ;;^UTILITY(U,$J,358.3,2409,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2218,1,3,0)
- ;;=3^Sprain of right shoulder joint unspec, init encntr
- ;;^UTILITY(U,$J,358.3,2218,1,4,0)
- ;;=4^S43.401A
- ;;^UTILITY(U,$J,358.3,2218,2)
- ;;=^5027864
- ;;^UTILITY(U,$J,358.3,2219,0)
- ;;=S43.402A^^4^62^211
- ;;^UTILITY(U,$J,358.3,2219,1,0)
+ ;;^UTILITY(U,$J,358.3,2409,1,3,0)
+ ;;=3^Spont ruptr of flexor tendons, lft hand
+ ;;^UTILITY(U,$J,358.3,2409,1,4,0)
+ ;;=4^M66.342
+ ;;^UTILITY(U,$J,358.3,2409,2)
+ ;;=^5012882
+ ;;^UTILITY(U,$J,358.3,2410,0)
+ ;;=M67.01^^15^186^92
+ ;;^UTILITY(U,$J,358.3,2410,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2219,1,3,0)
- ;;=3^Sprain of left shoulder joint unspec, initial enco
- ;;^UTILITY(U,$J,358.3,2219,1,4,0)
- ;;=4^S43.402A
- ;;^UTILITY(U,$J,358.3,2219,2)
- ;;=^5027867
- ;;^UTILITY(U,$J,358.3,2220,0)
- ;;=S13.4XXA^^4^62^214
- ;;^UTILITY(U,$J,358.3,2220,1,0)
+ ;;^UTILITY(U,$J,358.3,2410,1,3,0)
+ ;;=3^Short Achilles tendon (acquired), rt ankle
+ ;;^UTILITY(U,$J,358.3,2410,1,4,0)
+ ;;=4^M67.01
+ ;;^UTILITY(U,$J,358.3,2410,2)
+ ;;=^5012906
+ ;;^UTILITY(U,$J,358.3,2411,0)
+ ;;=M67.02^^15^186^91
+ ;;^UTILITY(U,$J,358.3,2411,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2220,1,3,0)
- ;;=3^Sprain of ligaments of cervical spine, initial encounter
- ;;^UTILITY(U,$J,358.3,2220,1,4,0)
- ;;=4^S13.4XXA
- ;;^UTILITY(U,$J,358.3,2220,2)
- ;;=^5022028
- ;;^UTILITY(U,$J,358.3,2221,0)
- ;;=S23.3XXA^^4^62^216
- ;;^UTILITY(U,$J,358.3,2221,1,0)
+ ;;^UTILITY(U,$J,358.3,2411,1,3,0)
+ ;;=3^Short Achilles tendon (acquired), lft ankle
+ ;;^UTILITY(U,$J,358.3,2411,1,4,0)
+ ;;=4^M67.02
+ ;;^UTILITY(U,$J,358.3,2411,2)
+ ;;=^5012907
+ ;;^UTILITY(U,$J,358.3,2412,0)
+ ;;=M62.40^^15^186^26
+ ;;^UTILITY(U,$J,358.3,2412,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2221,1,3,0)
- ;;=3^Sprain of ligaments of thoracic spine, initial encounter
- ;;^UTILITY(U,$J,358.3,2221,1,4,0)
- ;;=4^S23.3XXA
- ;;^UTILITY(U,$J,358.3,2221,2)
- ;;=^5023246
- ;;^UTILITY(U,$J,358.3,2222,0)
- ;;=S63.601A^^4^62^231
- ;;^UTILITY(U,$J,358.3,2222,1,0)
+ ;;^UTILITY(U,$J,358.3,2412,1,3,0)
+ ;;=3^Contracture of muscle, unspec site
+ ;;^UTILITY(U,$J,358.3,2412,1,4,0)
+ ;;=4^M62.40
+ ;;^UTILITY(U,$J,358.3,2412,2)
+ ;;=^5012631
+ ;;^UTILITY(U,$J,358.3,2413,0)
+ ;;=M72.0^^15^186^76
+ ;;^UTILITY(U,$J,358.3,2413,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2222,1,3,0)
- ;;=3^Sprain of right thumb unspec, initial encounter
- ;;^UTILITY(U,$J,358.3,2222,1,4,0)
- ;;=4^S63.601A
- ;;^UTILITY(U,$J,358.3,2222,2)
- ;;=^5035616
- ;;^UTILITY(U,$J,358.3,2223,0)
- ;;=S63.602A^^4^62^212
- ;;^UTILITY(U,$J,358.3,2223,1,0)
+ ;;^UTILITY(U,$J,358.3,2413,1,3,0)
+ ;;=3^Palmar fascial fibromatosis [Dupuytren]
+ ;;^UTILITY(U,$J,358.3,2413,1,4,0)
+ ;;=4^M72.0
+ ;;^UTILITY(U,$J,358.3,2413,2)
+ ;;=^5013233
+ ;;^UTILITY(U,$J,358.3,2414,0)
+ ;;=M72.2^^15^186^80
+ ;;^UTILITY(U,$J,358.3,2414,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2223,1,3,0)
- ;;=3^Sprain of left thumb unspec, initial encounter
- ;;^UTILITY(U,$J,358.3,2223,1,4,0)
- ;;=4^S63.602A
- ;;^UTILITY(U,$J,358.3,2223,2)
- ;;=^5035619
- ;;^UTILITY(U,$J,358.3,2224,0)
- ;;=S93.501A^^4^62^224
- ;;^UTILITY(U,$J,358.3,2224,1,0)
+ ;;^UTILITY(U,$J,358.3,2414,1,3,0)
+ ;;=3^Plantar fascial fibromatosis
+ ;;^UTILITY(U,$J,358.3,2414,1,4,0)
+ ;;=4^M72.2
+ ;;^UTILITY(U,$J,358.3,2414,2)
+ ;;=^272598
+ ;;^UTILITY(U,$J,358.3,2415,0)
+ ;;=M62.838^^15^186^68
+ ;;^UTILITY(U,$J,358.3,2415,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2224,1,3,0)
- ;;=3^Sprain of right great toe unspec, initial encounte
- ;;^UTILITY(U,$J,358.3,2224,1,4,0)
- ;;=4^S93.501A
- ;;^UTILITY(U,$J,358.3,2224,2)
- ;;=^5045810
- ;;^UTILITY(U,$J,358.3,2225,0)
- ;;=S93.502A^^4^62^205
- ;;^UTILITY(U,$J,358.3,2225,1,0)
+ ;;^UTILITY(U,$J,358.3,2415,1,3,0)
+ ;;=3^Muscle spasm, oth
+ ;;^UTILITY(U,$J,358.3,2415,1,4,0)
+ ;;=4^M62.838
+ ;;^UTILITY(U,$J,358.3,2415,2)
+ ;;=^5012682
+ ;;^UTILITY(U,$J,358.3,2416,0)
+ ;;=M62.9^^15^186^27
+ ;;^UTILITY(U,$J,358.3,2416,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2225,1,3,0)
- ;;=3^Sprain of left great toe unspec, initial encounter
- ;;^UTILITY(U,$J,358.3,2225,1,4,0)
- ;;=4^S93.502A
- ;;^UTILITY(U,$J,358.3,2225,2)
- ;;=^5045813
- ;;^UTILITY(U,$J,358.3,2226,0)
- ;;=S93.504A^^4^62^226
- ;;^UTILITY(U,$J,358.3,2226,1,0)
+ ;;^UTILITY(U,$J,358.3,2416,1,3,0)
+ ;;=3^Disorder of muscle, unspec
+ ;;^UTILITY(U,$J,358.3,2416,1,4,0)
+ ;;=4^M62.9
+ ;;^UTILITY(U,$J,358.3,2416,2)
+ ;;=^5012684
+ ;;^UTILITY(U,$J,358.3,2417,0)
+ ;;=M79.1^^15^186^69
+ ;;^UTILITY(U,$J,358.3,2417,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2226,1,3,0)
- ;;=3^Sprain of right lesser toe(s) unspec, initial enco
- ;;^UTILITY(U,$J,358.3,2226,1,4,0)
- ;;=4^S93.504A
- ;;^UTILITY(U,$J,358.3,2226,2)
- ;;=^5045816
- ;;^UTILITY(U,$J,358.3,2227,0)
- ;;=S93.505A^^4^62^207
- ;;^UTILITY(U,$J,358.3,2227,1,0)
+ ;;^UTILITY(U,$J,358.3,2417,1,3,0)
+ ;;=3^Myalgia
+ ;;^UTILITY(U,$J,358.3,2417,1,4,0)
+ ;;=4^M79.1
+ ;;^UTILITY(U,$J,358.3,2417,2)
+ ;;=^5013321
+ ;;^UTILITY(U,$J,358.3,2418,0)
+ ;;=M79.2^^15^186^70
+ ;;^UTILITY(U,$J,358.3,2418,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2227,1,3,0)
- ;;=3^Sprain of left lesser toe(s) unspec, initial encou
- ;;^UTILITY(U,$J,358.3,2227,1,4,0)
- ;;=4^S93.505A
- ;;^UTILITY(U,$J,358.3,2227,2)
- ;;=^5045819
- ;;^UTILITY(U,$J,358.3,2228,0)
- ;;=S63.501A^^4^62^232
- ;;^UTILITY(U,$J,358.3,2228,1,0)
+ ;;^UTILITY(U,$J,358.3,2418,1,3,0)
+ ;;=3^Neuralgia & neuritis, unspec
+ ;;^UTILITY(U,$J,358.3,2418,1,4,0)
+ ;;=4^M79.2
+ ;;^UTILITY(U,$J,358.3,2418,2)
+ ;;=^5013322
+ ;;^UTILITY(U,$J,358.3,2419,0)
+ ;;=M21.751^^15^186^113
+ ;;^UTILITY(U,$J,358.3,2419,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2228,1,3,0)
- ;;=3^Sprain of right wrist unspec, initial encounter
- ;;^UTILITY(U,$J,358.3,2228,1,4,0)
- ;;=4^S63.501A
- ;;^UTILITY(U,$J,358.3,2228,2)
- ;;=^5035583
- ;;^UTILITY(U,$J,358.3,2229,0)
- ;;=S63.502A^^4^62^213
- ;;^UTILITY(U,$J,358.3,2229,1,0)
+ ;;^UTILITY(U,$J,358.3,2419,1,3,0)
+ ;;=3^Unequal limb length (acq), rt femur
+ ;;^UTILITY(U,$J,358.3,2419,1,4,0)
+ ;;=4^M21.751
+ ;;^UTILITY(U,$J,358.3,2419,2)
+ ;;=^5011140
+ ;;^UTILITY(U,$J,358.3,2420,0)
+ ;;=M21.752^^15^186^109
+ ;;^UTILITY(U,$J,358.3,2420,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2229,1,3,0)
- ;;=3^Sprain of left wrist unspec, initial encounter
- ;;^UTILITY(U,$J,358.3,2229,1,4,0)
- ;;=4^S63.502A
- ;;^UTILITY(U,$J,358.3,2229,2)
- ;;=^5035586
- ;;^UTILITY(U,$J,358.3,2230,0)
- ;;=S39.012A^^4^62^243
+ ;;^UTILITY(U,$J,358.3,2420,1,3,0)
+ ;;=3^Unequal limb length (acq), lft femur
+ ;;^UTILITY(U,$J,358.3,2420,1,4,0)
+ ;;=4^M21.752
+ ;;^UTILITY(U,$J,358.3,2420,2)
+ ;;=^5011141
+ ;;^UTILITY(U,$J,358.3,2421,0)
+ ;;=M21.761^^15^186^114
+ ;;^UTILITY(U,$J,358.3,2421,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2421,1,3,0)
+ ;;=3^Unequal limb length (acq), rt tibia
+ ;;^UTILITY(U,$J,358.3,2421,1,4,0)
+ ;;=4^M21.761
+ ;;^UTILITY(U,$J,358.3,2421,2)
+ ;;=^5011143
+ ;;^UTILITY(U,$J,358.3,2422,0)
+ ;;=M21.762^^15^186^111
+ ;;^UTILITY(U,$J,358.3,2422,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2422,1,3,0)
+ ;;=3^Unequal limb length (acq), lft tibia

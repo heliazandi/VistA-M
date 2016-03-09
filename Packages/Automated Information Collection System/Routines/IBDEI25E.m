@@ -1,0 +1,134 @@
+IBDEI25E ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,36442,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36442,1,3,0)
+ ;;=3^Rheumatic Mitral Insufficiency
+ ;;^UTILITY(U,$J,358.3,36442,1,4,0)
+ ;;=4^I05.1
+ ;;^UTILITY(U,$J,358.3,36442,2)
+ ;;=^269568
+ ;;^UTILITY(U,$J,358.3,36443,0)
+ ;;=I05.0^^137^1760^67
+ ;;^UTILITY(U,$J,358.3,36443,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36443,1,3,0)
+ ;;=3^Rheumatic Mitral Stenosis
+ ;;^UTILITY(U,$J,358.3,36443,1,4,0)
+ ;;=4^I05.0
+ ;;^UTILITY(U,$J,358.3,36443,2)
+ ;;=^5007041
+ ;;^UTILITY(U,$J,358.3,36444,0)
+ ;;=I05.9^^137^1760^68
+ ;;^UTILITY(U,$J,358.3,36444,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36444,1,3,0)
+ ;;=3^Rheumatic Mitral Valve Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,36444,1,4,0)
+ ;;=4^I05.9
+ ;;^UTILITY(U,$J,358.3,36444,2)
+ ;;=^5007044
+ ;;^UTILITY(U,$J,358.3,36445,0)
+ ;;=I21.3^^137^1760^71
+ ;;^UTILITY(U,$J,358.3,36445,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36445,1,3,0)
+ ;;=3^STEMI Myocardial Infarction,Unspec Site
+ ;;^UTILITY(U,$J,358.3,36445,1,4,0)
+ ;;=4^I21.3
+ ;;^UTILITY(U,$J,358.3,36445,2)
+ ;;=^5007087
+ ;;^UTILITY(U,$J,358.3,36446,0)
+ ;;=I44.30^^137^1760^43
+ ;;^UTILITY(U,$J,358.3,36446,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36446,1,3,0)
+ ;;=3^Atrioventricular Block,Unspec
+ ;;^UTILITY(U,$J,358.3,36446,1,4,0)
+ ;;=4^I44.30
+ ;;^UTILITY(U,$J,358.3,36446,2)
+ ;;=^5007204
+ ;;^UTILITY(U,$J,358.3,36447,0)
+ ;;=I50.40^^137^1760^51
+ ;;^UTILITY(U,$J,358.3,36447,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36447,1,3,0)
+ ;;=3^Combined Systolic & Diastolic Congestive Hrt Failure,Unspec
+ ;;^UTILITY(U,$J,358.3,36447,1,4,0)
+ ;;=4^I50.40
+ ;;^UTILITY(U,$J,358.3,36447,2)
+ ;;=^5007247
+ ;;^UTILITY(U,$J,358.3,36448,0)
+ ;;=I50.30^^137^1760^52
+ ;;^UTILITY(U,$J,358.3,36448,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36448,1,3,0)
+ ;;=3^Diastolic Congestive Hrt Failure,Unspec
+ ;;^UTILITY(U,$J,358.3,36448,1,4,0)
+ ;;=4^I50.30
+ ;;^UTILITY(U,$J,358.3,36448,2)
+ ;;=^5007243
+ ;;^UTILITY(U,$J,358.3,36449,0)
+ ;;=I50.20^^137^1760^72
+ ;;^UTILITY(U,$J,358.3,36449,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36449,1,3,0)
+ ;;=3^Systolic Congestive Hrt Failure,Unspec
+ ;;^UTILITY(U,$J,358.3,36449,1,4,0)
+ ;;=4^I50.20
+ ;;^UTILITY(U,$J,358.3,36449,2)
+ ;;=^5007239
+ ;;^UTILITY(U,$J,358.3,36450,0)
+ ;;=I20.0^^137^1760^73
+ ;;^UTILITY(U,$J,358.3,36450,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36450,1,3,0)
+ ;;=3^Unstable Angina
+ ;;^UTILITY(U,$J,358.3,36450,1,4,0)
+ ;;=4^I20.0
+ ;;^UTILITY(U,$J,358.3,36450,2)
+ ;;=^5007076
+ ;;^UTILITY(U,$J,358.3,36451,0)
+ ;;=M32.12^^137^1760^64
+ ;;^UTILITY(U,$J,358.3,36451,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36451,1,3,0)
+ ;;=3^Pericarditis in Systemic Lupus Erythematosus
+ ;;^UTILITY(U,$J,358.3,36451,1,4,0)
+ ;;=4^M32.12
+ ;;^UTILITY(U,$J,358.3,36451,2)
+ ;;=^5011755
+ ;;^UTILITY(U,$J,358.3,36452,0)
+ ;;=E87.8^^137^1761^3
+ ;;^UTILITY(U,$J,358.3,36452,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36452,1,3,0)
+ ;;=3^Electrolyte/Fluid Balance Disorders NEC
+ ;;^UTILITY(U,$J,358.3,36452,1,4,0)
+ ;;=4^E87.8
+ ;;^UTILITY(U,$J,358.3,36452,2)
+ ;;=^5003026
+ ;;^UTILITY(U,$J,358.3,36453,0)
+ ;;=E11.9^^137^1761^2
+ ;;^UTILITY(U,$J,358.3,36453,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36453,1,3,0)
+ ;;=3^DM Type 2 w/o Complications
+ ;;^UTILITY(U,$J,358.3,36453,1,4,0)
+ ;;=4^E11.9
+ ;;^UTILITY(U,$J,358.3,36453,2)
+ ;;=^5002666
+ ;;^UTILITY(U,$J,358.3,36454,0)
+ ;;=E10.9^^137^1761^1
+ ;;^UTILITY(U,$J,358.3,36454,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36454,1,3,0)
+ ;;=3^DM Type 1 w/o Complications
+ ;;^UTILITY(U,$J,358.3,36454,1,4,0)
+ ;;=4^E10.9
+ ;;^UTILITY(U,$J,358.3,36454,2)
+ ;;=^5002626
+ ;;^UTILITY(U,$J,358.3,36455,0)
+ ;;=Z79.4^^137^1761^4

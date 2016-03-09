@@ -1,136 +1,122 @@
-IBDEI1W9 ; ; 06-AUG-2015
+IBDEI1W9 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33311,1,3,0)
- ;;=3^Alcohol Use Screen
- ;;^UTILITY(U,$J,358.3,33311,1,4,0)
- ;;=4^Z13.89
- ;;^UTILITY(U,$J,358.3,33311,2)
- ;;=^5062720
- ;;^UTILITY(U,$J,358.3,33312,0)
- ;;=Z12.39^^182^2001^3
- ;;^UTILITY(U,$J,358.3,33312,1,0)
+ ;;^UTILITY(U,$J,358.3,32160,0)
+ ;;=S92.341K^^126^1609^73
+ ;;^UTILITY(U,$J,358.3,32160,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33312,1,3,0)
- ;;=3^Breast Malignant Neoplasm Screen
- ;;^UTILITY(U,$J,358.3,33312,1,4,0)
- ;;=4^Z12.39
- ;;^UTILITY(U,$J,358.3,33312,2)
- ;;=^5062686
- ;;^UTILITY(U,$J,358.3,33313,0)
- ;;=Z12.4^^182^2001^5
- ;;^UTILITY(U,$J,358.3,33313,1,0)
+ ;;^UTILITY(U,$J,358.3,32160,1,3,0)
+ ;;=3^Disp fx of 4th metrsl bone, rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32160,1,4,0)
+ ;;=4^S92.341K
+ ;;^UTILITY(U,$J,358.3,32160,2)
+ ;;=^5045190
+ ;;^UTILITY(U,$J,358.3,32161,0)
+ ;;=S92.335K^^126^1609^294
+ ;;^UTILITY(U,$J,358.3,32161,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33313,1,3,0)
- ;;=3^Cervix Malignant Neoplasm Screen
- ;;^UTILITY(U,$J,358.3,33313,1,4,0)
- ;;=4^Z12.4
- ;;^UTILITY(U,$J,358.3,33313,2)
- ;;=^5062687
- ;;^UTILITY(U,$J,358.3,33314,0)
- ;;=Z13.5^^182^2001^7
- ;;^UTILITY(U,$J,358.3,33314,1,0)
+ ;;^UTILITY(U,$J,358.3,32161,1,3,0)
+ ;;=3^Nondisp fx of 3rd metrsl bone, lft ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32161,1,4,0)
+ ;;=4^S92.335K
+ ;;^UTILITY(U,$J,358.3,32161,2)
+ ;;=^5045176
+ ;;^UTILITY(U,$J,358.3,32162,0)
+ ;;=S92.334K^^126^1609^295
+ ;;^UTILITY(U,$J,358.3,32162,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33314,1,3,0)
- ;;=3^Eye and Ear Disorder Screen
- ;;^UTILITY(U,$J,358.3,33314,1,4,0)
- ;;=4^Z13.5
- ;;^UTILITY(U,$J,358.3,33314,2)
- ;;=^5062706
- ;;^UTILITY(U,$J,358.3,33315,0)
- ;;=Z01.89^^182^2001^6
- ;;^UTILITY(U,$J,358.3,33315,1,0)
+ ;;^UTILITY(U,$J,358.3,32162,1,3,0)
+ ;;=3^Nondisp fx of 3rd metrsl bone, rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32162,1,4,0)
+ ;;=4^S92.334K
+ ;;^UTILITY(U,$J,358.3,32162,2)
+ ;;=^5045169
+ ;;^UTILITY(U,$J,358.3,32163,0)
+ ;;=S92.332K^^126^1609^69
+ ;;^UTILITY(U,$J,358.3,32163,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33315,1,3,0)
- ;;=3^Diabetic Foot Exam
- ;;^UTILITY(U,$J,358.3,33315,1,4,0)
- ;;=4^Z01.89
- ;;^UTILITY(U,$J,358.3,33315,2)
- ;;=^5062632
- ;;^UTILITY(U,$J,358.3,33316,0)
- ;;=Z11.59^^182^2001^13
- ;;^UTILITY(U,$J,358.3,33316,1,0)
+ ;;^UTILITY(U,$J,358.3,32163,1,3,0)
+ ;;=3^Disp fx of 3rd metrsl bone, lft ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32163,1,4,0)
+ ;;=4^S92.332K
+ ;;^UTILITY(U,$J,358.3,32163,2)
+ ;;=^5045155
+ ;;^UTILITY(U,$J,358.3,32164,0)
+ ;;=S92.331K^^126^1609^70
+ ;;^UTILITY(U,$J,358.3,32164,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33316,1,3,0)
- ;;=3^Viral Diseases Screen
- ;;^UTILITY(U,$J,358.3,33316,1,4,0)
- ;;=4^Z11.59
- ;;^UTILITY(U,$J,358.3,33316,2)
- ;;=^5062675
- ;;^UTILITY(U,$J,358.3,33317,0)
- ;;=Z13.6^^182^2001^4
- ;;^UTILITY(U,$J,358.3,33317,1,0)
+ ;;^UTILITY(U,$J,358.3,32164,1,3,0)
+ ;;=3^Disp fx of 3rd metrsl bone, rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32164,1,4,0)
+ ;;=4^S92.331K
+ ;;^UTILITY(U,$J,358.3,32164,2)
+ ;;=^5045148
+ ;;^UTILITY(U,$J,358.3,32165,0)
+ ;;=S92.325K^^126^1609^290
+ ;;^UTILITY(U,$J,358.3,32165,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33317,1,3,0)
- ;;=3^Cardiovascular Disorder Screen
- ;;^UTILITY(U,$J,358.3,33317,1,4,0)
- ;;=4^Z13.6
- ;;^UTILITY(U,$J,358.3,33317,2)
- ;;=^5062707
- ;;^UTILITY(U,$J,358.3,33318,0)
- ;;=Z12.12^^182^2001^12
- ;;^UTILITY(U,$J,358.3,33318,1,0)
+ ;;^UTILITY(U,$J,358.3,32165,1,3,0)
+ ;;=3^Nondisp fx of 2nd metrsl bone, lft ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32165,1,4,0)
+ ;;=4^S92.325K
+ ;;^UTILITY(U,$J,358.3,32165,2)
+ ;;=^5045134
+ ;;^UTILITY(U,$J,358.3,32166,0)
+ ;;=S92.324K^^126^1609^291
+ ;;^UTILITY(U,$J,358.3,32166,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33318,1,3,0)
- ;;=3^Rectum Malignant Neoplasm Screen
- ;;^UTILITY(U,$J,358.3,33318,1,4,0)
- ;;=4^Z12.12
- ;;^UTILITY(U,$J,358.3,33318,2)
- ;;=^5062682
- ;;^UTILITY(U,$J,358.3,33319,0)
- ;;=Z71.89^^182^2001^10
- ;;^UTILITY(U,$J,358.3,33319,1,0)
+ ;;^UTILITY(U,$J,358.3,32166,1,3,0)
+ ;;=3^Nondisp fx of 2nd metrsl bone, rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32166,1,4,0)
+ ;;=4^S92.324K
+ ;;^UTILITY(U,$J,358.3,32166,2)
+ ;;=^5045127
+ ;;^UTILITY(U,$J,358.3,32167,0)
+ ;;=S92.322K^^126^1609^65
+ ;;^UTILITY(U,$J,358.3,32167,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33319,1,3,0)
- ;;=3^Other Specified Counseling
- ;;^UTILITY(U,$J,358.3,33319,1,4,0)
- ;;=4^Z71.89
- ;;^UTILITY(U,$J,358.3,33319,2)
- ;;=^5063253
- ;;^UTILITY(U,$J,358.3,33320,0)
- ;;=Z12.5^^182^2001^11
- ;;^UTILITY(U,$J,358.3,33320,1,0)
+ ;;^UTILITY(U,$J,358.3,32167,1,3,0)
+ ;;=3^Disp fx of 2nd metrsl bone, lft ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32167,1,4,0)
+ ;;=4^S92.322K
+ ;;^UTILITY(U,$J,358.3,32167,2)
+ ;;=^5045113
+ ;;^UTILITY(U,$J,358.3,32168,0)
+ ;;=S92.321K^^126^1609^66
+ ;;^UTILITY(U,$J,358.3,32168,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33320,1,3,0)
- ;;=3^Prostate Malignant Neoplasm Screen
- ;;^UTILITY(U,$J,358.3,33320,1,4,0)
- ;;=4^Z12.5
- ;;^UTILITY(U,$J,358.3,33320,2)
- ;;=^5062688
- ;;^UTILITY(U,$J,358.3,33321,0)
- ;;=Z00.00^^182^2001^8
- ;;^UTILITY(U,$J,358.3,33321,1,0)
+ ;;^UTILITY(U,$J,358.3,32168,1,3,0)
+ ;;=3^Disp fx of 2nd metrsl bone, rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32168,1,4,0)
+ ;;=4^S92.321K
+ ;;^UTILITY(U,$J,358.3,32168,2)
+ ;;=^5045106
+ ;;^UTILITY(U,$J,358.3,32169,0)
+ ;;=S92.315K^^126^1609^285
+ ;;^UTILITY(U,$J,358.3,32169,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33321,1,3,0)
- ;;=3^General Adult Medical Exam w/o Abnormal Findings
- ;;^UTILITY(U,$J,358.3,33321,1,4,0)
- ;;=4^Z00.00
- ;;^UTILITY(U,$J,358.3,33321,2)
- ;;=^5062599
- ;;^UTILITY(U,$J,358.3,33322,0)
- ;;=Z02.79^^182^2001^9
- ;;^UTILITY(U,$J,358.3,33322,1,0)
+ ;;^UTILITY(U,$J,358.3,32169,1,3,0)
+ ;;=3^Nondisp fx of 1st metrsl bone, lft ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32169,1,4,0)
+ ;;=4^S92.315K
+ ;;^UTILITY(U,$J,358.3,32169,2)
+ ;;=^5045092
+ ;;^UTILITY(U,$J,358.3,32170,0)
+ ;;=S92.314K^^126^1609^286
+ ;;^UTILITY(U,$J,358.3,32170,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33322,1,3,0)
- ;;=3^Medical Certificate Encounter
- ;;^UTILITY(U,$J,358.3,33322,1,4,0)
- ;;=4^Z02.79
- ;;^UTILITY(U,$J,358.3,33322,2)
- ;;=^5062641
- ;;^UTILITY(U,$J,358.3,33323,0)
- ;;=D86.0^^182^2002^45
- ;;^UTILITY(U,$J,358.3,33323,1,0)
+ ;;^UTILITY(U,$J,358.3,32170,1,3,0)
+ ;;=3^Nondisp fx of 1st metrsl bone, rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32170,1,4,0)
+ ;;=4^S92.314K
+ ;;^UTILITY(U,$J,358.3,32170,2)
+ ;;=^5045085
+ ;;^UTILITY(U,$J,358.3,32171,0)
+ ;;=S92.312K^^126^1609^61
+ ;;^UTILITY(U,$J,358.3,32171,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33323,1,3,0)
- ;;=3^Sarcoidosis of Lung
- ;;^UTILITY(U,$J,358.3,33323,1,4,0)
- ;;=4^D86.0
- ;;^UTILITY(U,$J,358.3,33323,2)
- ;;=^5002442
- ;;^UTILITY(U,$J,358.3,33324,0)
- ;;=D86.1^^182^2002^47
- ;;^UTILITY(U,$J,358.3,33324,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33324,1,3,0)
- ;;=3^Sarcoidosis of Lymph nodes
+ ;;^UTILITY(U,$J,358.3,32171,1,3,0)
+ ;;=3^Disp fx of 1st metrsl bone, lft ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32171,1,4,0)
+ ;;=4^S92.312K

@@ -1,130 +1,124 @@
-IBDEI1G2 ; ; 06-AUG-2015
+IBDEI1G2 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,25613,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25613,1,2,0)
- ;;=2^90847
- ;;^UTILITY(U,$J,358.3,25613,1,3,0)
- ;;=3^Family Psychotherpy w/pt.
- ;;^UTILITY(U,$J,358.3,25614,0)
- ;;=90875^^148^1612^7^^^^1
- ;;^UTILITY(U,$J,358.3,25614,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25614,1,2,0)
- ;;=2^90875
- ;;^UTILITY(U,$J,358.3,25614,1,3,0)
- ;;=3^Psychophysiological Tx w/ Biofeedback,30 min
- ;;^UTILITY(U,$J,358.3,25615,0)
- ;;=90876^^148^1612^8^^^^1
- ;;^UTILITY(U,$J,358.3,25615,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25615,1,2,0)
- ;;=2^90876
- ;;^UTILITY(U,$J,358.3,25615,1,3,0)
- ;;=3^Psychophysiological Tx w/ Biofeedback,45 min
- ;;^UTILITY(U,$J,358.3,25616,0)
- ;;=90832^^148^1612^1^^^^1
- ;;^UTILITY(U,$J,358.3,25616,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25616,1,2,0)
- ;;=2^90832
- ;;^UTILITY(U,$J,358.3,25616,1,3,0)
- ;;=3^Psychotherapy 16-37 min
- ;;^UTILITY(U,$J,358.3,25617,0)
- ;;=90834^^148^1612^2^^^^1
- ;;^UTILITY(U,$J,358.3,25617,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25617,1,2,0)
- ;;=2^90834
- ;;^UTILITY(U,$J,358.3,25617,1,3,0)
- ;;=3^Psychotherapy 38-52 min
- ;;^UTILITY(U,$J,358.3,25618,0)
- ;;=90837^^148^1612^3^^^^1
- ;;^UTILITY(U,$J,358.3,25618,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25618,1,2,0)
- ;;=2^90837
- ;;^UTILITY(U,$J,358.3,25618,1,3,0)
- ;;=3^Psychotherapy 53-89 min
- ;;^UTILITY(U,$J,358.3,25619,0)
- ;;=90899^^148^1613^12^^^^1
- ;;^UTILITY(U,$J,358.3,25619,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25619,1,2,0)
- ;;=2^90899
- ;;^UTILITY(U,$J,358.3,25619,1,3,0)
- ;;=3^NOS Psych Service
- ;;^UTILITY(U,$J,358.3,25620,0)
- ;;=J1631^^148^1613^7^^^^1
- ;;^UTILITY(U,$J,358.3,25620,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25620,1,2,0)
- ;;=2^J1631
- ;;^UTILITY(U,$J,358.3,25620,1,3,0)
- ;;=3^Haldol, per 50 mg
- ;;^UTILITY(U,$J,358.3,25621,0)
- ;;=J2680^^148^1613^18^^^^1
- ;;^UTILITY(U,$J,358.3,25621,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25621,1,2,0)
- ;;=2^J2680
- ;;^UTILITY(U,$J,358.3,25621,1,3,0)
- ;;=3^Prolixin, per 25mg
- ;;^UTILITY(U,$J,358.3,25622,0)
- ;;=97545^^148^1613^34^^^^1
- ;;^UTILITY(U,$J,358.3,25622,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25622,1,2,0)
- ;;=2^97545
- ;;^UTILITY(U,$J,358.3,25622,1,3,0)
- ;;=3^Work Therapy, Init 2 hrs
- ;;^UTILITY(U,$J,358.3,25623,0)
- ;;=97546^^148^1613^33^^^^1
- ;;^UTILITY(U,$J,358.3,25623,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25623,1,2,0)
- ;;=2^97546
- ;;^UTILITY(U,$J,358.3,25623,1,3,0)
- ;;=3^Work Ther, addl hrs after 2
- ;;^UTILITY(U,$J,358.3,25624,0)
- ;;=97537^^148^1613^4^^^^1
- ;;^UTILITY(U,$J,358.3,25624,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25624,1,2,0)
- ;;=2^97537
- ;;^UTILITY(U,$J,358.3,25624,1,3,0)
- ;;=3^Community/Work Reintegration per 15 min
- ;;^UTILITY(U,$J,358.3,25625,0)
- ;;=97532^^148^1613^3^^^^1
- ;;^UTILITY(U,$J,358.3,25625,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25625,1,2,0)
- ;;=2^97532
- ;;^UTILITY(U,$J,358.3,25625,1,3,0)
- ;;=3^Cognitive Sk Dev (PhD/OT)per 15min
- ;;^UTILITY(U,$J,358.3,25626,0)
- ;;=97533^^148^1613^26^^^^1
- ;;^UTILITY(U,$J,358.3,25626,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25626,1,2,0)
- ;;=2^97533
- ;;^UTILITY(U,$J,358.3,25626,1,3,0)
- ;;=3^Sensory Integrat per 15 min
- ;;^UTILITY(U,$J,358.3,25627,0)
- ;;=97535^^148^1613^1^^^^1
- ;;^UTILITY(U,$J,358.3,25627,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25627,1,2,0)
- ;;=2^97535
- ;;^UTILITY(U,$J,358.3,25627,1,3,0)
- ;;=3^ADL Train per 15 min
- ;;^UTILITY(U,$J,358.3,25628,0)
- ;;=H0004^^148^1613^9^^^^1
- ;;^UTILITY(U,$J,358.3,25628,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,25628,1,2,0)
- ;;=2^H0004
- ;;^UTILITY(U,$J,358.3,25628,1,3,0)
- ;;=3^Ind Counseling, per 15 min
+ ;;^UTILITY(U,$J,358.3,24541,0)
+ ;;=T74.01XD^^93^1090^2
+ ;;^UTILITY(U,$J,358.3,24541,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24541,1,3,0)
+ ;;=3^Adult Neglect,Confirmed,Subsequent Encounter 
+ ;;^UTILITY(U,$J,358.3,24541,1,4,0)
+ ;;=4^T74.01XD
+ ;;^UTILITY(U,$J,358.3,24541,2)
+ ;;=^5054141
+ ;;^UTILITY(U,$J,358.3,24542,0)
+ ;;=T76.01XA^^93^1090^3
+ ;;^UTILITY(U,$J,358.3,24542,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24542,1,3,0)
+ ;;=3^Adult Neglect,Suspected,Initial Encounter  
+ ;;^UTILITY(U,$J,358.3,24542,1,4,0)
+ ;;=4^T76.01XA
+ ;;^UTILITY(U,$J,358.3,24542,2)
+ ;;=^5054215
+ ;;^UTILITY(U,$J,358.3,24543,0)
+ ;;=T76.01XD^^93^1090^4
+ ;;^UTILITY(U,$J,358.3,24543,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24543,1,3,0)
+ ;;=3^Adult Neglect,Suspected,Subsequent Encounter  
+ ;;^UTILITY(U,$J,358.3,24543,1,4,0)
+ ;;=4^T76.01XD
+ ;;^UTILITY(U,$J,358.3,24543,2)
+ ;;=^5054216
+ ;;^UTILITY(U,$J,358.3,24544,0)
+ ;;=Z91.412^^93^1090^31
+ ;;^UTILITY(U,$J,358.3,24544,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24544,1,3,0)
+ ;;=3^Personal Hx of Spouse or Partner Neglect
+ ;;^UTILITY(U,$J,358.3,24544,1,4,0)
+ ;;=4^Z91.412
+ ;;^UTILITY(U,$J,358.3,24544,2)
+ ;;=^5063621
+ ;;^UTILITY(U,$J,358.3,24545,0)
+ ;;=T74.31XA^^93^1090^9
+ ;;^UTILITY(U,$J,358.3,24545,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24545,1,3,0)
+ ;;=3^Adult Psychological Abuse,Confirmed,Initial Encounter  
+ ;;^UTILITY(U,$J,358.3,24545,1,4,0)
+ ;;=4^T74.31XA
+ ;;^UTILITY(U,$J,358.3,24545,2)
+ ;;=^5054158
+ ;;^UTILITY(U,$J,358.3,24546,0)
+ ;;=T74.31XD^^93^1090^10
+ ;;^UTILITY(U,$J,358.3,24546,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24546,1,3,0)
+ ;;=3^Adult Psychological Abuse,Confirmed,Subsequent Encounter 
+ ;;^UTILITY(U,$J,358.3,24546,1,4,0)
+ ;;=4^T74.31XD
+ ;;^UTILITY(U,$J,358.3,24546,2)
+ ;;=^5054159
+ ;;^UTILITY(U,$J,358.3,24547,0)
+ ;;=T76.31XA^^93^1090^11
+ ;;^UTILITY(U,$J,358.3,24547,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24547,1,3,0)
+ ;;=3^Adult Psychological Abuse,Suspected,Initial Encounter 
+ ;;^UTILITY(U,$J,358.3,24547,1,4,0)
+ ;;=4^T76.31XA
+ ;;^UTILITY(U,$J,358.3,24547,2)
+ ;;=^5054233
+ ;;^UTILITY(U,$J,358.3,24548,0)
+ ;;=T76.31XD^^93^1090^12
+ ;;^UTILITY(U,$J,358.3,24548,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24548,1,3,0)
+ ;;=3^Adult Psychological Abuse,Suspected,Subsequent Encounter 
+ ;;^UTILITY(U,$J,358.3,24548,1,4,0)
+ ;;=4^T76.31XD
+ ;;^UTILITY(U,$J,358.3,24548,2)
+ ;;=^5054234
+ ;;^UTILITY(U,$J,358.3,24549,0)
+ ;;=Z91.411^^93^1090^30
+ ;;^UTILITY(U,$J,358.3,24549,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24549,1,3,0)
+ ;;=3^Personal Hx of Spouse or Parnter Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,24549,1,4,0)
+ ;;=4^Z91.411
+ ;;^UTILITY(U,$J,358.3,24549,2)
+ ;;=^5063620
+ ;;^UTILITY(U,$J,358.3,24550,0)
+ ;;=Z69.021^^93^1090^17
+ ;;^UTILITY(U,$J,358.3,24550,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24550,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonparental Child Abuse
+ ;;^UTILITY(U,$J,358.3,24550,1,4,0)
+ ;;=4^Z69.021
+ ;;^UTILITY(U,$J,358.3,24550,2)
+ ;;=^5063231
+ ;;^UTILITY(U,$J,358.3,24551,0)
+ ;;=Z69.021^^93^1090^18
+ ;;^UTILITY(U,$J,358.3,24551,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24551,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonparental Child Neglect
+ ;;^UTILITY(U,$J,358.3,24551,1,4,0)
+ ;;=4^Z69.021
+ ;;^UTILITY(U,$J,358.3,24551,2)
+ ;;=^5063231
+ ;;^UTILITY(U,$J,358.3,24552,0)
+ ;;=Z69.021^^93^1090^19
+ ;;^UTILITY(U,$J,358.3,24552,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24552,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonparental Child Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,24552,1,4,0)
+ ;;=4^Z69.021
+ ;;^UTILITY(U,$J,358.3,24552,2)
+ ;;=^5063231

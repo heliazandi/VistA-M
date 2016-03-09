@@ -1,0 +1,132 @@
+IBDEI2GM ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,41717,1,4,0)
+ ;;=4^G90.59
+ ;;^UTILITY(U,$J,358.3,41717,2)
+ ;;=^5004171
+ ;;^UTILITY(U,$J,358.3,41718,0)
+ ;;=G56.01^^159^2010^12
+ ;;^UTILITY(U,$J,358.3,41718,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41718,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,41718,1,4,0)
+ ;;=4^G56.01
+ ;;^UTILITY(U,$J,358.3,41718,2)
+ ;;=^5004018
+ ;;^UTILITY(U,$J,358.3,41719,0)
+ ;;=G56.02^^159^2010^11
+ ;;^UTILITY(U,$J,358.3,41719,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41719,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,41719,1,4,0)
+ ;;=4^G56.02
+ ;;^UTILITY(U,$J,358.3,41719,2)
+ ;;=^5004019
+ ;;^UTILITY(U,$J,358.3,41720,0)
+ ;;=G56.21^^159^2010^56
+ ;;^UTILITY(U,$J,358.3,41720,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41720,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,41720,1,4,0)
+ ;;=4^G56.21
+ ;;^UTILITY(U,$J,358.3,41720,2)
+ ;;=^5004024
+ ;;^UTILITY(U,$J,358.3,41721,0)
+ ;;=G56.22^^159^2010^55
+ ;;^UTILITY(U,$J,358.3,41721,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41721,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,41721,1,4,0)
+ ;;=4^G56.22
+ ;;^UTILITY(U,$J,358.3,41721,2)
+ ;;=^5004025
+ ;;^UTILITY(U,$J,358.3,41722,0)
+ ;;=M26.60^^159^2010^180
+ ;;^UTILITY(U,$J,358.3,41722,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41722,1,3,0)
+ ;;=3^Temporomandibular Joint Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,41722,1,4,0)
+ ;;=4^M26.60
+ ;;^UTILITY(U,$J,358.3,41722,2)
+ ;;=^5011714
+ ;;^UTILITY(U,$J,358.3,41723,0)
+ ;;=L40.52^^159^2010^137
+ ;;^UTILITY(U,$J,358.3,41723,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41723,1,3,0)
+ ;;=3^Psoriatic Arthritis Mutilans
+ ;;^UTILITY(U,$J,358.3,41723,1,4,0)
+ ;;=4^L40.52
+ ;;^UTILITY(U,$J,358.3,41723,2)
+ ;;=^5009167
+ ;;^UTILITY(U,$J,358.3,41724,0)
+ ;;=L40.53^^159^2010^138
+ ;;^UTILITY(U,$J,358.3,41724,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41724,1,3,0)
+ ;;=3^Psoriatic Spondylitis
+ ;;^UTILITY(U,$J,358.3,41724,1,4,0)
+ ;;=4^L40.53
+ ;;^UTILITY(U,$J,358.3,41724,2)
+ ;;=^5009168
+ ;;^UTILITY(U,$J,358.3,41725,0)
+ ;;=M32.9^^159^2010^179
+ ;;^UTILITY(U,$J,358.3,41725,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41725,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Unspec
+ ;;^UTILITY(U,$J,358.3,41725,1,4,0)
+ ;;=4^M32.9
+ ;;^UTILITY(U,$J,358.3,41725,2)
+ ;;=^5011761
+ ;;^UTILITY(U,$J,358.3,41726,0)
+ ;;=M32.0^^159^2010^175
+ ;;^UTILITY(U,$J,358.3,41726,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41726,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Drug-Induced
+ ;;^UTILITY(U,$J,358.3,41726,1,4,0)
+ ;;=4^M32.0
+ ;;^UTILITY(U,$J,358.3,41726,2)
+ ;;=^5011752
+ ;;^UTILITY(U,$J,358.3,41727,0)
+ ;;=M32.13^^159^2010^177
+ ;;^UTILITY(U,$J,358.3,41727,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41727,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Lung Involvement
+ ;;^UTILITY(U,$J,358.3,41727,1,4,0)
+ ;;=4^M32.13
+ ;;^UTILITY(U,$J,358.3,41727,2)
+ ;;=^5011756
+ ;;^UTILITY(U,$J,358.3,41728,0)
+ ;;=M32.14^^159^2010^176
+ ;;^UTILITY(U,$J,358.3,41728,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41728,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Glomerular Disease
+ ;;^UTILITY(U,$J,358.3,41728,1,4,0)
+ ;;=4^M32.14
+ ;;^UTILITY(U,$J,358.3,41728,2)
+ ;;=^5011757
+ ;;^UTILITY(U,$J,358.3,41729,0)
+ ;;=M32.12^^159^2010^178
+ ;;^UTILITY(U,$J,358.3,41729,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41729,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Pericarditis
+ ;;^UTILITY(U,$J,358.3,41729,1,4,0)
+ ;;=4^M32.12
+ ;;^UTILITY(U,$J,358.3,41729,2)
+ ;;=^5011755
+ ;;^UTILITY(U,$J,358.3,41730,0)
+ ;;=M05.59^^159^2010^159
+ ;;^UTILITY(U,$J,358.3,41730,1,0)
+ ;;=^358.31IA^4^2

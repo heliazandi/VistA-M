@@ -1,140 +1,136 @@
-IBDEI0EY ; ; 06-AUG-2015
+IBDEI0EY ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6845,2)
- ;;=Abnormal UA^273408
- ;;^UTILITY(U,$J,358.3,6846,0)
- ;;=789.01^^31^415^7
- ;;^UTILITY(U,$J,358.3,6846,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6846,1,4,0)
- ;;=4^789.01
- ;;^UTILITY(U,$J,358.3,6846,1,5,0)
- ;;=5^Abdominal pain, RUQ
- ;;^UTILITY(U,$J,358.3,6846,2)
- ;;=^303318
- ;;^UTILITY(U,$J,358.3,6847,0)
- ;;=789.02^^31^415^4
- ;;^UTILITY(U,$J,358.3,6847,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6847,1,4,0)
- ;;=4^789.02
- ;;^UTILITY(U,$J,358.3,6847,1,5,0)
- ;;=5^Abdominal pain, LUQ
- ;;^UTILITY(U,$J,358.3,6847,2)
- ;;=^303319
- ;;^UTILITY(U,$J,358.3,6848,0)
- ;;=789.03^^31^415^6
- ;;^UTILITY(U,$J,358.3,6848,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6848,1,4,0)
- ;;=4^789.03
- ;;^UTILITY(U,$J,358.3,6848,1,5,0)
- ;;=5^Abdominal pain, RLQ
- ;;^UTILITY(U,$J,358.3,6848,2)
- ;;=^303320
- ;;^UTILITY(U,$J,358.3,6849,0)
- ;;=789.04^^31^415^3
- ;;^UTILITY(U,$J,358.3,6849,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6849,1,4,0)
- ;;=4^789.04
- ;;^UTILITY(U,$J,358.3,6849,1,5,0)
- ;;=5^Abdominal pain, LLQ
- ;;^UTILITY(U,$J,358.3,6849,2)
- ;;=^303321
- ;;^UTILITY(U,$J,358.3,6850,0)
- ;;=789.06^^31^415^2
- ;;^UTILITY(U,$J,358.3,6850,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6850,1,4,0)
- ;;=4^789.06
- ;;^UTILITY(U,$J,358.3,6850,1,5,0)
- ;;=5^Abdominal pain, Epigastric
- ;;^UTILITY(U,$J,358.3,6850,2)
- ;;=^303323
- ;;^UTILITY(U,$J,358.3,6851,0)
- ;;=789.05^^31^415^5
- ;;^UTILITY(U,$J,358.3,6851,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6851,1,4,0)
- ;;=4^789.05
- ;;^UTILITY(U,$J,358.3,6851,1,5,0)
- ;;=5^Abdominal pain, Periumbilical
- ;;^UTILITY(U,$J,358.3,6851,2)
- ;;=^303322
- ;;^UTILITY(U,$J,358.3,6852,0)
- ;;=789.40^^31^415^8
- ;;^UTILITY(U,$J,358.3,6852,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6852,1,4,0)
- ;;=4^789.40
- ;;^UTILITY(U,$J,358.3,6852,1,5,0)
- ;;=5^Abdominal rigidity, unsp site
- ;;^UTILITY(U,$J,358.3,6852,2)
- ;;=^273393
- ;;^UTILITY(U,$J,358.3,6853,0)
- ;;=789.1^^31^415^80
- ;;^UTILITY(U,$J,358.3,6853,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6853,1,4,0)
- ;;=4^789.1
- ;;^UTILITY(U,$J,358.3,6853,1,5,0)
- ;;=5^Hepatomegaly
- ;;^UTILITY(U,$J,358.3,6853,2)
- ;;=Hepatomegaly^56494
- ;;^UTILITY(U,$J,358.3,6854,0)
- ;;=789.30^^31^415^1
- ;;^UTILITY(U,$J,358.3,6854,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6854,1,4,0)
- ;;=4^789.30
- ;;^UTILITY(U,$J,358.3,6854,1,5,0)
- ;;=5^Abdominal Mass/Lump
- ;;^UTILITY(U,$J,358.3,6854,2)
- ;;=Abdominal Mass/Lump^917
- ;;^UTILITY(U,$J,358.3,6855,0)
- ;;=789.2^^31^415^139
- ;;^UTILITY(U,$J,358.3,6855,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6855,1,4,0)
- ;;=4^789.2
- ;;^UTILITY(U,$J,358.3,6855,1,5,0)
- ;;=5^Splenomegaly
- ;;^UTILITY(U,$J,358.3,6855,2)
- ;;=Splenomegaly^113452
- ;;^UTILITY(U,$J,358.3,6856,0)
- ;;=785.2^^31^415^36
- ;;^UTILITY(U,$J,358.3,6856,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6856,1,4,0)
- ;;=4^785.2
- ;;^UTILITY(U,$J,358.3,6856,1,5,0)
- ;;=5^Cardiac murmurs, undiagnosed
- ;;^UTILITY(U,$J,358.3,6856,2)
- ;;=^295854
- ;;^UTILITY(U,$J,358.3,6857,0)
- ;;=786.50^^31^415^39
- ;;^UTILITY(U,$J,358.3,6857,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6857,1,4,0)
- ;;=4^786.50
- ;;^UTILITY(U,$J,358.3,6857,1,5,0)
- ;;=5^Chest pain/Discomfort (nonsp) chest pain diff from discomfort
- ;;^UTILITY(U,$J,358.3,6857,2)
- ;;=^22485
- ;;^UTILITY(U,$J,358.3,6858,0)
- ;;=786.51^^31^415^130
- ;;^UTILITY(U,$J,358.3,6858,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6858,1,4,0)
- ;;=4^786.51
- ;;^UTILITY(U,$J,358.3,6858,1,5,0)
- ;;=5^Precordial Pain
- ;;^UTILITY(U,$J,358.3,6858,2)
- ;;=Precordial Pain^276877
- ;;^UTILITY(U,$J,358.3,6859,0)
- ;;=786.2^^31^415^45
- ;;^UTILITY(U,$J,358.3,6859,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,6888,1,3,0)
+ ;;=3^Pyogenic Arthritis,Unspec
+ ;;^UTILITY(U,$J,358.3,6888,1,4,0)
+ ;;=4^M00.9
+ ;;^UTILITY(U,$J,358.3,6888,2)
+ ;;=^5009693
+ ;;^UTILITY(U,$J,358.3,6889,0)
+ ;;=M00.00^^30^398^82
+ ;;^UTILITY(U,$J,358.3,6889,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6889,1,3,0)
+ ;;=3^Staphylococcal Arthritis,Unspec Joint
+ ;;^UTILITY(U,$J,358.3,6889,1,4,0)
+ ;;=4^M00.00
+ ;;^UTILITY(U,$J,358.3,6889,2)
+ ;;=^5009597
+ ;;^UTILITY(U,$J,358.3,6890,0)
+ ;;=M00.10^^30^398^69
+ ;;^UTILITY(U,$J,358.3,6890,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6890,1,3,0)
+ ;;=3^Pneumococcal Arthritis,Unspec Joint
+ ;;^UTILITY(U,$J,358.3,6890,1,4,0)
+ ;;=4^M00.10
+ ;;^UTILITY(U,$J,358.3,6890,2)
+ ;;=^5009621
+ ;;^UTILITY(U,$J,358.3,6891,0)
+ ;;=M86.20^^30^398^63
+ ;;^UTILITY(U,$J,358.3,6891,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6891,1,3,0)
+ ;;=3^Osteomyelitis,Subacute,Unspec Site
+ ;;^UTILITY(U,$J,358.3,6891,1,4,0)
+ ;;=4^M86.20
+ ;;^UTILITY(U,$J,358.3,6891,2)
+ ;;=^5014535
+ ;;^UTILITY(U,$J,358.3,6892,0)
+ ;;=M86.10^^30^398^59
+ ;;^UTILITY(U,$J,358.3,6892,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6892,1,3,0)
+ ;;=3^Osteomyelitis,Acute,Unspec Site
+ ;;^UTILITY(U,$J,358.3,6892,1,4,0)
+ ;;=4^M86.10
+ ;;^UTILITY(U,$J,358.3,6892,2)
+ ;;=^5014521
+ ;;^UTILITY(U,$J,358.3,6893,0)
+ ;;=M86.00^^30^398^58
+ ;;^UTILITY(U,$J,358.3,6893,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6893,1,3,0)
+ ;;=3^Osteomyelitis,Acute Hematogenous,Unspec Site
+ ;;^UTILITY(U,$J,358.3,6893,1,4,0)
+ ;;=4^M86.00
+ ;;^UTILITY(U,$J,358.3,6893,2)
+ ;;=^5014497
+ ;;^UTILITY(U,$J,358.3,6894,0)
+ ;;=M86.50^^30^398^60
+ ;;^UTILITY(U,$J,358.3,6894,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6894,1,3,0)
+ ;;=3^Osteomyelitis,Chronic Hematogenous,Unspec Site
+ ;;^UTILITY(U,$J,358.3,6894,1,4,0)
+ ;;=4^M86.50
+ ;;^UTILITY(U,$J,358.3,6894,2)
+ ;;=^5014607
+ ;;^UTILITY(U,$J,358.3,6895,0)
+ ;;=M86.30^^30^398^61
+ ;;^UTILITY(U,$J,358.3,6895,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6895,1,3,0)
+ ;;=3^Osteomyelitis,Chronic Multifocal,Unspec Site
+ ;;^UTILITY(U,$J,358.3,6895,1,4,0)
+ ;;=4^M86.30
+ ;;^UTILITY(U,$J,358.3,6895,2)
+ ;;=^5014559
+ ;;^UTILITY(U,$J,358.3,6896,0)
+ ;;=M86.8X9^^30^398^64
+ ;;^UTILITY(U,$J,358.3,6896,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6896,1,3,0)
+ ;;=3^Osteomyelitis,Unspec Sites
+ ;;^UTILITY(U,$J,358.3,6896,1,4,0)
+ ;;=4^M86.8X9
+ ;;^UTILITY(U,$J,358.3,6896,2)
+ ;;=^5014655
+ ;;^UTILITY(U,$J,358.3,6897,0)
+ ;;=M86.60^^30^398^62
+ ;;^UTILITY(U,$J,358.3,6897,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6897,1,3,0)
+ ;;=3^Osteomyelitis,Chronic,Unspec Site
+ ;;^UTILITY(U,$J,358.3,6897,1,4,0)
+ ;;=4^M86.60
+ ;;^UTILITY(U,$J,358.3,6897,2)
+ ;;=^5014630
+ ;;^UTILITY(U,$J,358.3,6898,0)
+ ;;=M86.40^^30^398^57
+ ;;^UTILITY(U,$J,358.3,6898,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6898,1,3,0)
+ ;;=3^Osteomyelitis w/ Draining Sinus,Chronic,Unspec Site
+ ;;^UTILITY(U,$J,358.3,6898,1,4,0)
+ ;;=4^M86.40
+ ;;^UTILITY(U,$J,358.3,6898,2)
+ ;;=^5014583
+ ;;^UTILITY(U,$J,358.3,6899,0)
+ ;;=R50.2^^30^398^24
+ ;;^UTILITY(U,$J,358.3,6899,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6899,1,3,0)
+ ;;=3^Fever,Drug-Induced
+ ;;^UTILITY(U,$J,358.3,6899,1,4,0)
+ ;;=4^R50.2
+ ;;^UTILITY(U,$J,358.3,6899,2)
+ ;;=^5019507
+ ;;^UTILITY(U,$J,358.3,6900,0)
+ ;;=R50.9^^30^398^28
+ ;;^UTILITY(U,$J,358.3,6900,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6900,1,3,0)
+ ;;=3^Fever,Unspec
+ ;;^UTILITY(U,$J,358.3,6900,1,4,0)
+ ;;=4^R50.9
+ ;;^UTILITY(U,$J,358.3,6900,2)
+ ;;=^5019512
+ ;;^UTILITY(U,$J,358.3,6901,0)
+ ;;=R76.11^^30^398^1
+ ;;^UTILITY(U,$J,358.3,6901,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6901,1,3,0)
+ ;;=3^Abnormal Reaction to TB Test w/o Active TB

@@ -1,124 +1,132 @@
-IBDEI0GA ; ; 06-AUG-2015
+IBDEI0GA ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7551,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7551,1,4,0)
- ;;=4^428.20
- ;;^UTILITY(U,$J,358.3,7551,1,5,0)
- ;;=5^Heart Failure, Systolic, Unspec
- ;;^UTILITY(U,$J,358.3,7551,2)
- ;;=Heart Failure, Systolic^328594
- ;;^UTILITY(U,$J,358.3,7552,0)
- ;;=428.21^^35^472^42
- ;;^UTILITY(U,$J,358.3,7552,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7552,1,4,0)
- ;;=4^428.21
- ;;^UTILITY(U,$J,358.3,7552,1,5,0)
- ;;=5^Heart Failure, Acute Systolic
- ;;^UTILITY(U,$J,358.3,7552,2)
- ;;=Heart Failure, Acute Systolic^328494
- ;;^UTILITY(U,$J,358.3,7553,0)
- ;;=428.22^^35^472^44
- ;;^UTILITY(U,$J,358.3,7553,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7553,1,4,0)
- ;;=4^428.22
- ;;^UTILITY(U,$J,358.3,7553,1,5,0)
- ;;=5^Heart Failure, Chronic Systolic
- ;;^UTILITY(U,$J,358.3,7553,2)
- ;;=Heart Failure, Chronic Systolic^328495
- ;;^UTILITY(U,$J,358.3,7554,0)
- ;;=428.23^^35^472^49
- ;;^UTILITY(U,$J,358.3,7554,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7554,1,4,0)
- ;;=4^428.23
- ;;^UTILITY(U,$J,358.3,7554,1,5,0)
- ;;=5^Heart Failure, Systolic, Acute on Chronic
- ;;^UTILITY(U,$J,358.3,7554,2)
- ;;=Heart Failure, Systolic, Acute on Chronic^328496
- ;;^UTILITY(U,$J,358.3,7555,0)
- ;;=428.30^^35^472^45
- ;;^UTILITY(U,$J,358.3,7555,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7555,1,4,0)
- ;;=4^428.30
- ;;^UTILITY(U,$J,358.3,7555,1,5,0)
- ;;=5^Heart Failure, Diastolic
- ;;^UTILITY(U,$J,358.3,7555,2)
- ;;=Heart Failure, Diastolic^328595
- ;;^UTILITY(U,$J,358.3,7556,0)
- ;;=428.31^^35^472^41
- ;;^UTILITY(U,$J,358.3,7556,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7556,1,4,0)
- ;;=4^428.31
- ;;^UTILITY(U,$J,358.3,7556,1,5,0)
- ;;=5^Heart Failure, Acute Diastolic
- ;;^UTILITY(U,$J,358.3,7556,2)
- ;;=Heart Failure, Acute Diastolic^328497
- ;;^UTILITY(U,$J,358.3,7557,0)
- ;;=428.32^^35^472^43
- ;;^UTILITY(U,$J,358.3,7557,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7557,1,4,0)
- ;;=4^428.32
- ;;^UTILITY(U,$J,358.3,7557,1,5,0)
- ;;=5^Heart Failure, Chronic Diastolic
- ;;^UTILITY(U,$J,358.3,7557,2)
- ;;=Heart Failure, Chronic Diastolic^328498
- ;;^UTILITY(U,$J,358.3,7558,0)
- ;;=428.33^^35^472^47
- ;;^UTILITY(U,$J,358.3,7558,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7558,1,4,0)
- ;;=4^428.33
- ;;^UTILITY(U,$J,358.3,7558,1,5,0)
- ;;=5^Heart Failure, Diastolic, Acute on Chronic
- ;;^UTILITY(U,$J,358.3,7558,2)
- ;;=Heart Failure, Diastolic, Acute on Chronic^328499
- ;;^UTILITY(U,$J,358.3,7559,0)
- ;;=428.40^^35^472^46
- ;;^UTILITY(U,$J,358.3,7559,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7559,1,4,0)
- ;;=4^428.40
- ;;^UTILITY(U,$J,358.3,7559,1,5,0)
- ;;=5^Heart Failure, Diastolic& Systolic
- ;;^UTILITY(U,$J,358.3,7559,2)
- ;;=Heart Failure, Systolic and Diastolic^328596
- ;;^UTILITY(U,$J,358.3,7560,0)
- ;;=428.41^^35^472^48
- ;;^UTILITY(U,$J,358.3,7560,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7560,1,4,0)
- ;;=4^428.41
- ;;^UTILITY(U,$J,358.3,7560,1,5,0)
- ;;=5^Heart Failure, Systolic & Diastolic, Acute
- ;;^UTILITY(U,$J,358.3,7560,2)
- ;;=Heart Failure, Systolic & Diastolic, Acute^328500
- ;;^UTILITY(U,$J,358.3,7561,0)
- ;;=428.42^^35^472^52
- ;;^UTILITY(U,$J,358.3,7561,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7561,1,4,0)
- ;;=4^428.42
- ;;^UTILITY(U,$J,358.3,7561,1,5,0)
- ;;=5^Heart Failure,Systolic&Diastolic,Chronic
- ;;^UTILITY(U,$J,358.3,7561,2)
- ;;=^328501
- ;;^UTILITY(U,$J,358.3,7562,0)
- ;;=428.43^^35^472^51
- ;;^UTILITY(U,$J,358.3,7562,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7562,1,4,0)
- ;;=4^428.43
- ;;^UTILITY(U,$J,358.3,7562,1,5,0)
- ;;=5^Heart Failure,Systolic&Diastolic
- ;;^UTILITY(U,$J,358.3,7562,2)
- ;;=^328502
- ;;^UTILITY(U,$J,358.3,7563,0)
- ;;=396.3^^35^472^10
+ ;;^UTILITY(U,$J,358.3,7528,1,4,0)
+ ;;=4^S83.402A
+ ;;^UTILITY(U,$J,358.3,7528,2)
+ ;;=^5043106
+ ;;^UTILITY(U,$J,358.3,7529,0)
+ ;;=S93.402A^^30^409^3
+ ;;^UTILITY(U,$J,358.3,7529,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7529,1,3,0)
+ ;;=3^Sprain of Left Ankle Ligament
+ ;;^UTILITY(U,$J,358.3,7529,1,4,0)
+ ;;=4^S93.402A
+ ;;^UTILITY(U,$J,358.3,7529,2)
+ ;;=^5045777
+ ;;^UTILITY(U,$J,358.3,7530,0)
+ ;;=S93.401A^^30^409^12
+ ;;^UTILITY(U,$J,358.3,7530,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7530,1,3,0)
+ ;;=3^Sprain of Right Ankle Ligament
+ ;;^UTILITY(U,$J,358.3,7530,1,4,0)
+ ;;=4^S93.401A
+ ;;^UTILITY(U,$J,358.3,7530,2)
+ ;;=^5045774
+ ;;^UTILITY(U,$J,358.3,7531,0)
+ ;;=S56.511A^^30^409^37
+ ;;^UTILITY(U,$J,358.3,7531,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7531,1,3,0)
+ ;;=3^Strain of Right Forearm Extn Musc/Fasc/Tend
+ ;;^UTILITY(U,$J,358.3,7531,1,4,0)
+ ;;=4^S56.511A
+ ;;^UTILITY(U,$J,358.3,7531,2)
+ ;;=^5031838
+ ;;^UTILITY(U,$J,358.3,7532,0)
+ ;;=S56.512A^^30^409^18
+ ;;^UTILITY(U,$J,358.3,7532,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7532,1,3,0)
+ ;;=3^Strain of Left Forearm Extn Musc/Fasc/Tend
+ ;;^UTILITY(U,$J,358.3,7532,1,4,0)
+ ;;=4^S56.512A
+ ;;^UTILITY(U,$J,358.3,7532,2)
+ ;;=^5031841
+ ;;^UTILITY(U,$J,358.3,7533,0)
+ ;;=S13.8XXA^^30^409^10
+ ;;^UTILITY(U,$J,358.3,7533,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7533,1,3,0)
+ ;;=3^Sprain of Neck Joints/Ligaments,Init Encntr
+ ;;^UTILITY(U,$J,358.3,7533,1,4,0)
+ ;;=4^S13.8XXA
+ ;;^UTILITY(U,$J,358.3,7533,2)
+ ;;=^5022034
+ ;;^UTILITY(U,$J,358.3,7534,0)
+ ;;=S16.1XXA^^30^409^36
+ ;;^UTILITY(U,$J,358.3,7534,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7534,1,3,0)
+ ;;=3^Strain of Neck Muscle/Fasc/Tendon,Init Encntr
+ ;;^UTILITY(U,$J,358.3,7534,1,4,0)
+ ;;=4^S16.1XXA
+ ;;^UTILITY(U,$J,358.3,7534,2)
+ ;;=^5022358
+ ;;^UTILITY(U,$J,358.3,7535,0)
+ ;;=S33.5XXA^^30^409^9
+ ;;^UTILITY(U,$J,358.3,7535,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7535,1,3,0)
+ ;;=3^Sprain of Lumbar Spine Ligaments,Init Encntr
+ ;;^UTILITY(U,$J,358.3,7535,1,4,0)
+ ;;=4^S33.5XXA
+ ;;^UTILITY(U,$J,358.3,7535,2)
+ ;;=^5025172
+ ;;^UTILITY(U,$J,358.3,7536,0)
+ ;;=S13.4XXA^^30^409^1
+ ;;^UTILITY(U,$J,358.3,7536,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7536,1,3,0)
+ ;;=3^Sprain of Cervical Spine Ligaments,Init Encntr
+ ;;^UTILITY(U,$J,358.3,7536,1,4,0)
+ ;;=4^S13.4XXA
+ ;;^UTILITY(U,$J,358.3,7536,2)
+ ;;=^5022028
+ ;;^UTILITY(U,$J,358.3,7537,0)
+ ;;=F10.20^^30^410^4
+ ;;^UTILITY(U,$J,358.3,7537,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7537,1,3,0)
+ ;;=3^Alcohol Dependence,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,7537,1,4,0)
+ ;;=4^F10.20
+ ;;^UTILITY(U,$J,358.3,7537,2)
+ ;;=^5003081
+ ;;^UTILITY(U,$J,358.3,7538,0)
+ ;;=F11.29^^30^410^46
+ ;;^UTILITY(U,$J,358.3,7538,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7538,1,3,0)
+ ;;=3^Opioid Dependence w/ Unspec Opioid-Induced Disorder
+ ;;^UTILITY(U,$J,358.3,7538,1,4,0)
+ ;;=4^F11.29
+ ;;^UTILITY(U,$J,358.3,7538,2)
+ ;;=^5003141
+ ;;^UTILITY(U,$J,358.3,7539,0)
+ ;;=F11.288^^30^410^45
+ ;;^UTILITY(U,$J,358.3,7539,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7539,1,3,0)
+ ;;=3^Opioid Dependence w/ Other Opioid-Induced Disorder
+ ;;^UTILITY(U,$J,358.3,7539,1,4,0)
+ ;;=4^F11.288
+ ;;^UTILITY(U,$J,358.3,7539,2)
+ ;;=^5003140
+ ;;^UTILITY(U,$J,358.3,7540,0)
+ ;;=F11.282^^30^410^44
+ ;;^UTILITY(U,$J,358.3,7540,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7540,1,3,0)
+ ;;=3^Opioid Dependence w/ Opioid-Induced Sleep Disorder
+ ;;^UTILITY(U,$J,358.3,7540,1,4,0)
+ ;;=4^F11.282
+ ;;^UTILITY(U,$J,358.3,7540,2)
+ ;;=^5003139
+ ;;^UTILITY(U,$J,358.3,7541,0)
+ ;;=F11.281^^30^410^43
+ ;;^UTILITY(U,$J,358.3,7541,1,0)
+ ;;=^358.31IA^4^2

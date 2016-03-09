@@ -1,130 +1,132 @@
-IBDEI1CG ; ; 06-AUG-2015
+IBDEI1CG ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,23805,1,2,0)
- ;;=2^293.82
- ;;^UTILITY(U,$J,358.3,23805,1,5,0)
- ;;=5^Psychotic D/O,Transient,Hallucination
- ;;^UTILITY(U,$J,358.3,23805,2)
- ;;=^331837
- ;;^UTILITY(U,$J,358.3,23806,0)
- ;;=293.83^^127^1435^3
- ;;^UTILITY(U,$J,358.3,23806,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23806,1,2,0)
- ;;=2^293.83
- ;;^UTILITY(U,$J,358.3,23806,1,5,0)
- ;;=5^Mood D/O,Transient,Depressive
- ;;^UTILITY(U,$J,358.3,23806,2)
- ;;=^331838
- ;;^UTILITY(U,$J,358.3,23807,0)
- ;;=295.12^^127^1436^2
- ;;^UTILITY(U,$J,358.3,23807,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23807,1,2,0)
- ;;=2^295.12
- ;;^UTILITY(U,$J,358.3,23807,1,5,0)
- ;;=5^Disorganized Schizophrenia, Chronic
- ;;^UTILITY(U,$J,358.3,23807,2)
- ;;=^268051
- ;;^UTILITY(U,$J,358.3,23808,0)
- ;;=295.14^^127^1436^3
- ;;^UTILITY(U,$J,358.3,23808,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23808,1,2,0)
- ;;=2^295.14
- ;;^UTILITY(U,$J,358.3,23808,1,5,0)
- ;;=5^Disorganized Schizophrenia,Chr w/Exacerbation
- ;;^UTILITY(U,$J,358.3,23808,2)
- ;;=^268053
- ;;^UTILITY(U,$J,358.3,23809,0)
- ;;=295.52^^127^1436^6
- ;;^UTILITY(U,$J,358.3,23809,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23809,1,2,0)
- ;;=2^295.52
- ;;^UTILITY(U,$J,358.3,23809,1,5,0)
- ;;=5^Latent Schizophrenia, Chronic
- ;;^UTILITY(U,$J,358.3,23809,2)
- ;;=Latent Schizophrenia, Chronic^268073
- ;;^UTILITY(U,$J,358.3,23810,0)
- ;;=295.54^^127^1436^5
- ;;^UTILITY(U,$J,358.3,23810,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23810,1,2,0)
- ;;=2^295.54
- ;;^UTILITY(U,$J,358.3,23810,1,5,0)
- ;;=5^Latent Schizophrenia, Chr w/Exacerbation
- ;;^UTILITY(U,$J,358.3,23810,2)
- ;;=^268075
- ;;^UTILITY(U,$J,358.3,23811,0)
- ;;=295.32^^127^1436^8
- ;;^UTILITY(U,$J,358.3,23811,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23811,1,2,0)
- ;;=2^295.32
- ;;^UTILITY(U,$J,358.3,23811,1,5,0)
- ;;=5^Paranoid Schizophrenia, Chronic
- ;;^UTILITY(U,$J,358.3,23811,2)
- ;;=Paranoid Schizophrenia, Chronic^268061
- ;;^UTILITY(U,$J,358.3,23812,0)
- ;;=295.34^^127^1436^9
- ;;^UTILITY(U,$J,358.3,23812,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23812,1,2,0)
- ;;=2^295.34
- ;;^UTILITY(U,$J,358.3,23812,1,5,0)
- ;;=5^Paranoid, Schizophrenia Chr w/Exacerbation
- ;;^UTILITY(U,$J,358.3,23812,2)
- ;;=^268063
- ;;^UTILITY(U,$J,358.3,23813,0)
- ;;=295.62^^127^1436^23
- ;;^UTILITY(U,$J,358.3,23813,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23813,1,2,0)
- ;;=2^295.62
- ;;^UTILITY(U,$J,358.3,23813,1,5,0)
- ;;=5^Undifferentiated Schizophrenia, Chr
- ;;^UTILITY(U,$J,358.3,23813,2)
- ;;=^268078
- ;;^UTILITY(U,$J,358.3,23814,0)
- ;;=295.72^^127^1436^11
- ;;^UTILITY(U,$J,358.3,23814,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23814,1,2,0)
- ;;=2^295.72
- ;;^UTILITY(U,$J,358.3,23814,1,5,0)
- ;;=5^Schizoaffective Disorder, Chr
- ;;^UTILITY(U,$J,358.3,23814,2)
- ;;=^268083
- ;;^UTILITY(U,$J,358.3,23815,0)
- ;;=295.74^^127^1436^12
- ;;^UTILITY(U,$J,358.3,23815,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23815,1,2,0)
- ;;=2^295.74
- ;;^UTILITY(U,$J,358.3,23815,1,5,0)
- ;;=5^Schizoaffective Disorder, w/Exacerb.
- ;;^UTILITY(U,$J,358.3,23815,2)
- ;;=^268085
- ;;^UTILITY(U,$J,358.3,23816,0)
- ;;=295.42^^127^1436^17
- ;;^UTILITY(U,$J,358.3,23816,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23816,1,2,0)
- ;;=2^295.42
- ;;^UTILITY(U,$J,358.3,23816,1,5,0)
- ;;=5^Schizophreniform Disorder, Chr
- ;;^UTILITY(U,$J,358.3,23816,2)
- ;;=^268068
- ;;^UTILITY(U,$J,358.3,23817,0)
- ;;=295.44^^127^1436^18
- ;;^UTILITY(U,$J,358.3,23817,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23817,1,2,0)
- ;;=2^295.44
- ;;^UTILITY(U,$J,358.3,23817,1,5,0)
- ;;=5^Schizophreniform Disorderw/Exacerb.
- ;;^UTILITY(U,$J,358.3,23817,2)
- ;;=^268070
+ ;;^UTILITY(U,$J,358.3,22845,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Knee
+ ;;^UTILITY(U,$J,358.3,22845,1,4,0)
+ ;;=4^M05.761
+ ;;^UTILITY(U,$J,358.3,22845,2)
+ ;;=^5010016
+ ;;^UTILITY(U,$J,358.3,22846,0)
+ ;;=M05.762^^87^987^145
+ ;;^UTILITY(U,$J,358.3,22846,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22846,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Knee
+ ;;^UTILITY(U,$J,358.3,22846,1,4,0)
+ ;;=4^M05.762
+ ;;^UTILITY(U,$J,358.3,22846,2)
+ ;;=^5010017
+ ;;^UTILITY(U,$J,358.3,22847,0)
+ ;;=M05.771^^87^987^149
+ ;;^UTILITY(U,$J,358.3,22847,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22847,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Ankle
+ ;;^UTILITY(U,$J,358.3,22847,1,4,0)
+ ;;=4^M05.771
+ ;;^UTILITY(U,$J,358.3,22847,2)
+ ;;=^5010019
+ ;;^UTILITY(U,$J,358.3,22848,0)
+ ;;=M05.772^^87^987^142
+ ;;^UTILITY(U,$J,358.3,22848,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22848,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Ankle
+ ;;^UTILITY(U,$J,358.3,22848,1,4,0)
+ ;;=4^M05.772
+ ;;^UTILITY(U,$J,358.3,22848,2)
+ ;;=^5010020
+ ;;^UTILITY(U,$J,358.3,22849,0)
+ ;;=M05.79^^87^987^148
+ ;;^UTILITY(U,$J,358.3,22849,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22849,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Multiple Sites
+ ;;^UTILITY(U,$J,358.3,22849,1,4,0)
+ ;;=4^M05.79
+ ;;^UTILITY(U,$J,358.3,22849,2)
+ ;;=^5010022
+ ;;^UTILITY(U,$J,358.3,22850,0)
+ ;;=M06.00^^87^987^155
+ ;;^UTILITY(U,$J,358.3,22850,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22850,1,3,0)
+ ;;=3^Rheumatoid Arthritis w/o Rhematoid Factor,Unspec Site
+ ;;^UTILITY(U,$J,358.3,22850,1,4,0)
+ ;;=4^M06.00
+ ;;^UTILITY(U,$J,358.3,22850,2)
+ ;;=^5010047
+ ;;^UTILITY(U,$J,358.3,22851,0)
+ ;;=M06.30^^87^987^158
+ ;;^UTILITY(U,$J,358.3,22851,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22851,1,3,0)
+ ;;=3^Rheumatoid Nodule,Unspec Site
+ ;;^UTILITY(U,$J,358.3,22851,1,4,0)
+ ;;=4^M06.30
+ ;;^UTILITY(U,$J,358.3,22851,2)
+ ;;=^5010096
+ ;;^UTILITY(U,$J,358.3,22852,0)
+ ;;=M06.4^^87^987^48
+ ;;^UTILITY(U,$J,358.3,22852,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22852,1,3,0)
+ ;;=3^Inflammatory Polyarthropathy
+ ;;^UTILITY(U,$J,358.3,22852,1,4,0)
+ ;;=4^M06.4
+ ;;^UTILITY(U,$J,358.3,22852,2)
+ ;;=^5010120
+ ;;^UTILITY(U,$J,358.3,22853,0)
+ ;;=M06.39^^87^987^157
+ ;;^UTILITY(U,$J,358.3,22853,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22853,1,3,0)
+ ;;=3^Rheumatoid Nodule,Mult Sites
+ ;;^UTILITY(U,$J,358.3,22853,1,4,0)
+ ;;=4^M06.39
+ ;;^UTILITY(U,$J,358.3,22853,2)
+ ;;=^5010119
+ ;;^UTILITY(U,$J,358.3,22854,0)
+ ;;=M15.0^^87^987^121
+ ;;^UTILITY(U,$J,358.3,22854,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22854,1,3,0)
+ ;;=3^Primary Generalized Osteoarthritis
+ ;;^UTILITY(U,$J,358.3,22854,1,4,0)
+ ;;=4^M15.0
+ ;;^UTILITY(U,$J,358.3,22854,2)
+ ;;=^5010762
+ ;;^UTILITY(U,$J,358.3,22855,0)
+ ;;=M06.9^^87^987^156
+ ;;^UTILITY(U,$J,358.3,22855,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22855,1,3,0)
+ ;;=3^Rheumatoid Arthritis,Unspec
+ ;;^UTILITY(U,$J,358.3,22855,1,4,0)
+ ;;=4^M06.9
+ ;;^UTILITY(U,$J,358.3,22855,2)
+ ;;=^5010145
+ ;;^UTILITY(U,$J,358.3,22856,0)
+ ;;=M16.0^^87^987^124
+ ;;^UTILITY(U,$J,358.3,22856,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22856,1,3,0)
+ ;;=3^Primary Osteoarthritis of Hip,Bilateral
+ ;;^UTILITY(U,$J,358.3,22856,1,4,0)
+ ;;=4^M16.0
+ ;;^UTILITY(U,$J,358.3,22856,2)
+ ;;=^5010769
+ ;;^UTILITY(U,$J,358.3,22857,0)
+ ;;=M16.11^^87^987^133
+ ;;^UTILITY(U,$J,358.3,22857,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22857,1,3,0)
+ ;;=3^Primary Osteoarthritis of Right Hip
+ ;;^UTILITY(U,$J,358.3,22857,1,4,0)
+ ;;=4^M16.11
+ ;;^UTILITY(U,$J,358.3,22857,2)
+ ;;=^5010771
+ ;;^UTILITY(U,$J,358.3,22858,0)
+ ;;=M16.12^^87^987^127

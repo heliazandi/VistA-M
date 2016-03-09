@@ -1,138 +1,126 @@
-IBDEI048 ; ; 06-AUG-2015
+IBDEI048 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1449,2)
- ;;=^5014535
- ;;^UTILITY(U,$J,358.3,1450,0)
- ;;=R50.9^^3^41^60
- ;;^UTILITY(U,$J,358.3,1450,1,0)
+ ;;^UTILITY(U,$J,358.3,1554,1,3,0)
+ ;;=3^Athscl Native Cor Art of Transplanted Hrt w/ Unspec Angina Pectoris
+ ;;^UTILITY(U,$J,358.3,1554,1,4,0)
+ ;;=4^I25.759
+ ;;^UTILITY(U,$J,358.3,1554,2)
+ ;;=^5007134
+ ;;^UTILITY(U,$J,358.3,1555,0)
+ ;;=I25.761^^11^144^12
+ ;;^UTILITY(U,$J,358.3,1555,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1450,1,3,0)
- ;;=3^Fever, unspecified
- ;;^UTILITY(U,$J,358.3,1450,1,4,0)
- ;;=4^R50.9
- ;;^UTILITY(U,$J,358.3,1450,2)
- ;;=^5019512
- ;;^UTILITY(U,$J,358.3,1451,0)
- ;;=R59.9^^3^41^57
- ;;^UTILITY(U,$J,358.3,1451,1,0)
+ ;;^UTILITY(U,$J,358.3,1555,1,3,0)
+ ;;=3^Athscl Bypass of Cor Art of Transplanted Hrt w/ Ang Pctrs w/ Spasm
+ ;;^UTILITY(U,$J,358.3,1555,1,4,0)
+ ;;=4^I25.761
+ ;;^UTILITY(U,$J,358.3,1555,2)
+ ;;=^5007136
+ ;;^UTILITY(U,$J,358.3,1556,0)
+ ;;=I25.768^^11^144^13
+ ;;^UTILITY(U,$J,358.3,1556,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1451,1,3,0)
- ;;=3^Enlarged lymph nodes, unspecified
- ;;^UTILITY(U,$J,358.3,1451,1,4,0)
- ;;=4^R59.9
- ;;^UTILITY(U,$J,358.3,1451,2)
- ;;=^5019531
- ;;^UTILITY(U,$J,358.3,1452,0)
- ;;=R36.9^^3^41^106
- ;;^UTILITY(U,$J,358.3,1452,1,0)
+ ;;^UTILITY(U,$J,358.3,1556,1,3,0)
+ ;;=3^Athscl Bypass of Cor Art of Transplanted Hrt w/ Oth Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1556,1,4,0)
+ ;;=4^I25.768
+ ;;^UTILITY(U,$J,358.3,1556,2)
+ ;;=^5007137
+ ;;^UTILITY(U,$J,358.3,1557,0)
+ ;;=I25.769^^11^144^14
+ ;;^UTILITY(U,$J,358.3,1557,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1452,1,3,0)
- ;;=3^Urethral discharge, unspecified
- ;;^UTILITY(U,$J,358.3,1452,1,4,0)
- ;;=4^R36.9
- ;;^UTILITY(U,$J,358.3,1452,2)
- ;;=^5019338
- ;;^UTILITY(U,$J,358.3,1453,0)
- ;;=R36.0^^3^41^105
- ;;^UTILITY(U,$J,358.3,1453,1,0)
+ ;;^UTILITY(U,$J,358.3,1557,1,3,0)
+ ;;=3^Athscl Bypass of Cor Art of Transplanted Hrt w/ Unspec Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1557,1,4,0)
+ ;;=4^I25.769
+ ;;^UTILITY(U,$J,358.3,1557,2)
+ ;;=^5007138
+ ;;^UTILITY(U,$J,358.3,1558,0)
+ ;;=I25.791^^11^144^28
+ ;;^UTILITY(U,$J,358.3,1558,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1453,1,3,0)
- ;;=3^Urethral discharge without blood
- ;;^UTILITY(U,$J,358.3,1453,1,4,0)
- ;;=4^R36.0
- ;;^UTILITY(U,$J,358.3,1453,2)
- ;;=^5019337
- ;;^UTILITY(U,$J,358.3,1454,0)
- ;;=R76.11^^3^41^82
- ;;^UTILITY(U,$J,358.3,1454,1,0)
+ ;;^UTILITY(U,$J,358.3,1558,1,3,0)
+ ;;=3^Athscl of CABG w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,1558,1,4,0)
+ ;;=4^I25.791
+ ;;^UTILITY(U,$J,358.3,1558,2)
+ ;;=^5007140
+ ;;^UTILITY(U,$J,358.3,1559,0)
+ ;;=I25.798^^11^144^30
+ ;;^UTILITY(U,$J,358.3,1559,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1454,1,3,0)
- ;;=3^Nonspecific reaction to skin test w/o active tuberculosis
- ;;^UTILITY(U,$J,358.3,1454,1,4,0)
- ;;=4^R76.11
- ;;^UTILITY(U,$J,358.3,1454,2)
- ;;=^5019570
- ;;^UTILITY(U,$J,358.3,1455,0)
- ;;=Z21.^^3^41^27
- ;;^UTILITY(U,$J,358.3,1455,1,0)
+ ;;^UTILITY(U,$J,358.3,1559,1,3,0)
+ ;;=3^Athscl of CABG w/ Oth Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1559,1,4,0)
+ ;;=4^I25.798
+ ;;^UTILITY(U,$J,358.3,1559,2)
+ ;;=^5133558
+ ;;^UTILITY(U,$J,358.3,1560,0)
+ ;;=I25.799^^11^144^32
+ ;;^UTILITY(U,$J,358.3,1560,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1455,1,3,0)
- ;;=3^Asymptomatic human immunodeficiency virus infection status
- ;;^UTILITY(U,$J,358.3,1455,1,4,0)
- ;;=4^Z21.
- ;;^UTILITY(U,$J,358.3,1455,2)
- ;;=^5062777
- ;;^UTILITY(U,$J,358.3,1456,0)
- ;;=Z86.19^^3^41^88
- ;;^UTILITY(U,$J,358.3,1456,1,0)
+ ;;^UTILITY(U,$J,358.3,1560,1,3,0)
+ ;;=3^Athscl of CABG w/ Unspec Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1560,1,4,0)
+ ;;=4^I25.799
+ ;;^UTILITY(U,$J,358.3,1560,2)
+ ;;=^5133559
+ ;;^UTILITY(U,$J,358.3,1561,0)
+ ;;=I25.111^^11^144^16
+ ;;^UTILITY(U,$J,358.3,1561,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1456,1,3,0)
- ;;=3^Personal history of other infectious and parasitic diseases
- ;;^UTILITY(U,$J,358.3,1456,1,4,0)
- ;;=4^Z86.19
- ;;^UTILITY(U,$J,358.3,1456,2)
- ;;=^5063465
- ;;^UTILITY(U,$J,358.3,1457,0)
- ;;=B49.^^3^42^5
- ;;^UTILITY(U,$J,358.3,1457,1,0)
+ ;;^UTILITY(U,$J,358.3,1561,1,3,0)
+ ;;=3^Athscl Hrt Disease of Native Cor Art w/ Ang Pctrs w/ Spasm
+ ;;^UTILITY(U,$J,358.3,1561,1,4,0)
+ ;;=4^I25.111
+ ;;^UTILITY(U,$J,358.3,1561,2)
+ ;;=^5007109
+ ;;^UTILITY(U,$J,358.3,1562,0)
+ ;;=I25.118^^11^144^17
+ ;;^UTILITY(U,$J,358.3,1562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1457,1,3,0)
- ;;=3^Mycosis,Unspec
- ;;^UTILITY(U,$J,358.3,1457,1,4,0)
- ;;=4^B49.
- ;;^UTILITY(U,$J,358.3,1457,2)
- ;;=^5000690
- ;;^UTILITY(U,$J,358.3,1458,0)
- ;;=J67.0^^3^42^3
- ;;^UTILITY(U,$J,358.3,1458,1,0)
+ ;;^UTILITY(U,$J,358.3,1562,1,3,0)
+ ;;=3^Athscl Hrt Disease of Native Cor Art w/ Oth Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1562,1,4,0)
+ ;;=4^I25.118
+ ;;^UTILITY(U,$J,358.3,1562,2)
+ ;;=^5007110
+ ;;^UTILITY(U,$J,358.3,1563,0)
+ ;;=I25.119^^11^144^18
+ ;;^UTILITY(U,$J,358.3,1563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1458,1,3,0)
- ;;=3^Farmer's lung
- ;;^UTILITY(U,$J,358.3,1458,1,4,0)
- ;;=4^J67.0
- ;;^UTILITY(U,$J,358.3,1458,2)
- ;;=^44962
- ;;^UTILITY(U,$J,358.3,1459,0)
- ;;=J67.9^^3^42^4
- ;;^UTILITY(U,$J,358.3,1459,1,0)
+ ;;^UTILITY(U,$J,358.3,1563,1,3,0)
+ ;;=3^Athscl Hrt Disease of Native Cor Art w/ Unspec Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1563,1,4,0)
+ ;;=4^I25.119
+ ;;^UTILITY(U,$J,358.3,1563,2)
+ ;;=^5007111
+ ;;^UTILITY(U,$J,358.3,1564,0)
+ ;;=I25.701^^11^144^29
+ ;;^UTILITY(U,$J,358.3,1564,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1459,1,3,0)
- ;;=3^Hypersensitivity pneumonitis due to unspecified organic dust
- ;;^UTILITY(U,$J,358.3,1459,1,4,0)
- ;;=4^J67.9
- ;;^UTILITY(U,$J,358.3,1459,2)
- ;;=^5008280
- ;;^UTILITY(U,$J,358.3,1460,0)
- ;;=J69.0^^3^42^6
- ;;^UTILITY(U,$J,358.3,1460,1,0)
+ ;;^UTILITY(U,$J,358.3,1564,1,3,0)
+ ;;=3^Athscl of CABG w/ Ang Pctrs w/ Documented Spasm,Unspec
+ ;;^UTILITY(U,$J,358.3,1564,1,4,0)
+ ;;=4^I25.701
+ ;;^UTILITY(U,$J,358.3,1564,2)
+ ;;=^5007118
+ ;;^UTILITY(U,$J,358.3,1565,0)
+ ;;=I25.708^^11^144^31
+ ;;^UTILITY(U,$J,358.3,1565,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1460,1,3,0)
- ;;=3^Pneumonitis due to inhalation of food and vomit
- ;;^UTILITY(U,$J,358.3,1460,1,4,0)
- ;;=4^J69.0
- ;;^UTILITY(U,$J,358.3,1460,2)
- ;;=^5008288
- ;;^UTILITY(U,$J,358.3,1461,0)
- ;;=J86.0^^3^42^7
- ;;^UTILITY(U,$J,358.3,1461,1,0)
+ ;;^UTILITY(U,$J,358.3,1565,1,3,0)
+ ;;=3^Athscl of CABG w/ Oth Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,1565,1,4,0)
+ ;;=4^I25.708
+ ;;^UTILITY(U,$J,358.3,1565,2)
+ ;;=^5007119
+ ;;^UTILITY(U,$J,358.3,1566,0)
+ ;;=I25.709^^11^144^33
+ ;;^UTILITY(U,$J,358.3,1566,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1461,1,3,0)
- ;;=3^Pyothorax with fistula
- ;;^UTILITY(U,$J,358.3,1461,1,4,0)
- ;;=4^J86.0
- ;;^UTILITY(U,$J,358.3,1461,2)
- ;;=^5008308
- ;;^UTILITY(U,$J,358.3,1462,0)
- ;;=J86.9^^3^42^8
- ;;^UTILITY(U,$J,358.3,1462,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1462,1,3,0)
- ;;=3^Pyothorax without fistula
- ;;^UTILITY(U,$J,358.3,1462,1,4,0)
- ;;=4^J86.9
- ;;^UTILITY(U,$J,358.3,1462,2)
- ;;=^5008309
- ;;^UTILITY(U,$J,358.3,1463,0)
- ;;=J85.2^^3^42^2
+ ;;^UTILITY(U,$J,358.3,1566,1,3,0)
+ ;;=3^Athscl of CABG w/ Unspec Ang Pctrs,Unspec

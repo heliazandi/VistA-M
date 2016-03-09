@@ -1,122 +1,136 @@
-IBDEI1XT ; ; 06-AUG-2015
+IBDEI1XT ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34021,1,3,0)
- ;;=3^Systolic (congestive) heart failure,Unspec
- ;;^UTILITY(U,$J,358.3,34021,1,4,0)
- ;;=4^I50.20
- ;;^UTILITY(U,$J,358.3,34021,2)
- ;;=^5007239
- ;;^UTILITY(U,$J,358.3,34022,0)
- ;;=T84.81XA^^183^2015^4
- ;;^UTILITY(U,$J,358.3,34022,1,0)
+ ;;^UTILITY(U,$J,358.3,32860,1,4,0)
+ ;;=4^Z12.2
+ ;;^UTILITY(U,$J,358.3,32860,2)
+ ;;=^5062684
+ ;;^UTILITY(U,$J,358.3,32861,0)
+ ;;=Z12.4^^128^1639^9
+ ;;^UTILITY(U,$J,358.3,32861,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34022,1,3,0)
- ;;=3^Embolism due to internal orthopedic prosth dev/grft, init
- ;;^UTILITY(U,$J,358.3,34022,1,4,0)
- ;;=4^T84.81XA
- ;;^UTILITY(U,$J,358.3,34022,2)
- ;;=^5055454
- ;;^UTILITY(U,$J,358.3,34023,0)
- ;;=T84.81XS^^183^2015^5
- ;;^UTILITY(U,$J,358.3,34023,1,0)
+ ;;^UTILITY(U,$J,358.3,32861,1,3,0)
+ ;;=3^Screening for Malig Neop Cervix
+ ;;^UTILITY(U,$J,358.3,32861,1,4,0)
+ ;;=4^Z12.4
+ ;;^UTILITY(U,$J,358.3,32861,2)
+ ;;=^5062687
+ ;;^UTILITY(U,$J,358.3,32862,0)
+ ;;=Z12.12^^128^1639^12
+ ;;^UTILITY(U,$J,358.3,32862,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34023,1,3,0)
- ;;=3^Embolism due to internal orthopedic prosth dev/grft, sequela
- ;;^UTILITY(U,$J,358.3,34023,1,4,0)
- ;;=4^T84.81XS
- ;;^UTILITY(U,$J,358.3,34023,2)
- ;;=^5055456
- ;;^UTILITY(U,$J,358.3,34024,0)
- ;;=T84.81XD^^183^2015^6
- ;;^UTILITY(U,$J,358.3,34024,1,0)
+ ;;^UTILITY(U,$J,358.3,32862,1,3,0)
+ ;;=3^Screening for Malig Neop Rectum
+ ;;^UTILITY(U,$J,358.3,32862,1,4,0)
+ ;;=4^Z12.12
+ ;;^UTILITY(U,$J,358.3,32862,2)
+ ;;=^5062682
+ ;;^UTILITY(U,$J,358.3,32863,0)
+ ;;=Z12.5^^128^1639^11
+ ;;^UTILITY(U,$J,358.3,32863,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34024,1,3,0)
- ;;=3^Embolism due to internal orthopedic prosth dev/grft, subs
- ;;^UTILITY(U,$J,358.3,34024,1,4,0)
- ;;=4^T84.81XD
- ;;^UTILITY(U,$J,358.3,34024,2)
- ;;=^5055455
- ;;^UTILITY(U,$J,358.3,34025,0)
- ;;=T84.82XA^^183^2015^7
- ;;^UTILITY(U,$J,358.3,34025,1,0)
+ ;;^UTILITY(U,$J,358.3,32863,1,3,0)
+ ;;=3^Screening for Malig Neop Prostate
+ ;;^UTILITY(U,$J,358.3,32863,1,4,0)
+ ;;=4^Z12.5
+ ;;^UTILITY(U,$J,358.3,32863,2)
+ ;;=^5062688
+ ;;^UTILITY(U,$J,358.3,32864,0)
+ ;;=Z12.11^^128^1639^10
+ ;;^UTILITY(U,$J,358.3,32864,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34025,1,3,0)
- ;;=3^Fibrosis due to internal orthopedic prosth dev/grft, init
- ;;^UTILITY(U,$J,358.3,34025,1,4,0)
- ;;=4^T84.82XA
- ;;^UTILITY(U,$J,358.3,34025,2)
- ;;=^5055457
- ;;^UTILITY(U,$J,358.3,34026,0)
- ;;=T84.82XD^^183^2015^8
- ;;^UTILITY(U,$J,358.3,34026,1,0)
+ ;;^UTILITY(U,$J,358.3,32864,1,3,0)
+ ;;=3^Screening for Malig Neop Colon
+ ;;^UTILITY(U,$J,358.3,32864,1,4,0)
+ ;;=4^Z12.11
+ ;;^UTILITY(U,$J,358.3,32864,2)
+ ;;=^5062681
+ ;;^UTILITY(U,$J,358.3,32865,0)
+ ;;=Z13.1^^128^1639^4
+ ;;^UTILITY(U,$J,358.3,32865,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34026,1,3,0)
- ;;=3^Fibrosis due to internal orthopedic prosth dev/grft, subs
- ;;^UTILITY(U,$J,358.3,34026,1,4,0)
- ;;=4^T84.82XD
- ;;^UTILITY(U,$J,358.3,34026,2)
- ;;=^5055458
- ;;^UTILITY(U,$J,358.3,34027,0)
- ;;=T84.82XS^^183^2015^9
- ;;^UTILITY(U,$J,358.3,34027,1,0)
+ ;;^UTILITY(U,$J,358.3,32865,1,3,0)
+ ;;=3^Screening for Diabetes Mellitus
+ ;;^UTILITY(U,$J,358.3,32865,1,4,0)
+ ;;=4^Z13.1
+ ;;^UTILITY(U,$J,358.3,32865,2)
+ ;;=^5062700
+ ;;^UTILITY(U,$J,358.3,32866,0)
+ ;;=Z13.0^^128^1639^2
+ ;;^UTILITY(U,$J,358.3,32866,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34027,1,3,0)
- ;;=3^Fibrosis due to internal orthopedic prosth dev/grft, sequela
- ;;^UTILITY(U,$J,358.3,34027,1,4,0)
- ;;=4^T84.82XS
- ;;^UTILITY(U,$J,358.3,34027,2)
- ;;=^5055459
- ;;^UTILITY(U,$J,358.3,34028,0)
- ;;=T84.83XA^^183^2015^10
- ;;^UTILITY(U,$J,358.3,34028,1,0)
+ ;;^UTILITY(U,$J,358.3,32866,1,3,0)
+ ;;=3^Screening for Blood/Blood-Forming Organs Diseases
+ ;;^UTILITY(U,$J,358.3,32866,1,4,0)
+ ;;=4^Z13.0
+ ;;^UTILITY(U,$J,358.3,32866,2)
+ ;;=^5062699
+ ;;^UTILITY(U,$J,358.3,32867,0)
+ ;;=Z13.850^^128^1639^15
+ ;;^UTILITY(U,$J,358.3,32867,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34028,1,3,0)
- ;;=3^Hemorrhage due to internal orthopedic prosth dev/grft, init
- ;;^UTILITY(U,$J,358.3,34028,1,4,0)
- ;;=4^T84.83XA
- ;;^UTILITY(U,$J,358.3,34028,2)
- ;;=^5055460
- ;;^UTILITY(U,$J,358.3,34029,0)
- ;;=T84.83XD^^183^2015^11
- ;;^UTILITY(U,$J,358.3,34029,1,0)
+ ;;^UTILITY(U,$J,358.3,32867,1,3,0)
+ ;;=3^Screening for TBI
+ ;;^UTILITY(U,$J,358.3,32867,1,4,0)
+ ;;=4^Z13.850
+ ;;^UTILITY(U,$J,358.3,32867,2)
+ ;;=^5062717
+ ;;^UTILITY(U,$J,358.3,32868,0)
+ ;;=Z13.6^^128^1639^3
+ ;;^UTILITY(U,$J,358.3,32868,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34029,1,3,0)
- ;;=3^Hemorrhage due to internal orthopedic prosth dev/grft, subs
- ;;^UTILITY(U,$J,358.3,34029,1,4,0)
- ;;=4^T84.83XD
- ;;^UTILITY(U,$J,358.3,34029,2)
- ;;=^5055461
- ;;^UTILITY(U,$J,358.3,34030,0)
- ;;=T84.83XS^^183^2015^12
- ;;^UTILITY(U,$J,358.3,34030,1,0)
+ ;;^UTILITY(U,$J,358.3,32868,1,3,0)
+ ;;=3^Screening for Cardiovascular Disorders
+ ;;^UTILITY(U,$J,358.3,32868,1,4,0)
+ ;;=4^Z13.6
+ ;;^UTILITY(U,$J,358.3,32868,2)
+ ;;=^5062707
+ ;;^UTILITY(U,$J,358.3,32869,0)
+ ;;=Z13.820^^128^1639^14
+ ;;^UTILITY(U,$J,358.3,32869,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34030,1,3,0)
- ;;=3^Hemorrhage due to internal orthopedic prosth dev/grft, sequela
- ;;^UTILITY(U,$J,358.3,34030,1,4,0)
- ;;=4^T84.83XS
- ;;^UTILITY(U,$J,358.3,34030,2)
- ;;=^5055462
- ;;^UTILITY(U,$J,358.3,34031,0)
- ;;=T84.89XA^^183^2015^1
- ;;^UTILITY(U,$J,358.3,34031,1,0)
+ ;;^UTILITY(U,$J,358.3,32869,1,3,0)
+ ;;=3^Screening for Osteoporosis
+ ;;^UTILITY(U,$J,358.3,32869,1,4,0)
+ ;;=4^Z13.820
+ ;;^UTILITY(U,$J,358.3,32869,2)
+ ;;=^5062713
+ ;;^UTILITY(U,$J,358.3,32870,0)
+ ;;=Z94.0^^128^1640^6
+ ;;^UTILITY(U,$J,358.3,32870,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34031,1,3,0)
- ;;=3^Comp of internal orthopedic prosth dev/grft, init
- ;;^UTILITY(U,$J,358.3,34031,1,4,0)
- ;;=4^T84.89XA
- ;;^UTILITY(U,$J,358.3,34031,2)
- ;;=^5055472
- ;;^UTILITY(U,$J,358.3,34032,0)
- ;;=T84.89XD^^183^2015^2
- ;;^UTILITY(U,$J,358.3,34032,1,0)
+ ;;^UTILITY(U,$J,358.3,32870,1,3,0)
+ ;;=3^Kidney Transplant Status
+ ;;^UTILITY(U,$J,358.3,32870,1,4,0)
+ ;;=4^Z94.0
+ ;;^UTILITY(U,$J,358.3,32870,2)
+ ;;=^5063654
+ ;;^UTILITY(U,$J,358.3,32871,0)
+ ;;=Z94.1^^128^1640^4
+ ;;^UTILITY(U,$J,358.3,32871,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34032,1,3,0)
- ;;=3^Comp of internal orthopedic prosth dev/grft, subs
- ;;^UTILITY(U,$J,358.3,34032,1,4,0)
- ;;=4^T84.89XD
- ;;^UTILITY(U,$J,358.3,34032,2)
- ;;=^5055473
- ;;^UTILITY(U,$J,358.3,34033,0)
- ;;=T84.89XS^^183^2015^3
+ ;;^UTILITY(U,$J,358.3,32871,1,3,0)
+ ;;=3^Heart Transplant Status
+ ;;^UTILITY(U,$J,358.3,32871,1,4,0)
+ ;;=4^Z94.1
+ ;;^UTILITY(U,$J,358.3,32871,2)
+ ;;=^5063655
+ ;;^UTILITY(U,$J,358.3,32872,0)
+ ;;=Z95.3^^128^1640^13
+ ;;^UTILITY(U,$J,358.3,32872,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32872,1,3,0)
+ ;;=3^Xenogenic Heart Valve Status
+ ;;^UTILITY(U,$J,358.3,32872,1,4,0)
+ ;;=4^Z95.3
+ ;;^UTILITY(U,$J,358.3,32872,2)
+ ;;=^5063671
+ ;;^UTILITY(U,$J,358.3,32873,0)
+ ;;=Z94.5^^128^1640^10
+ ;;^UTILITY(U,$J,358.3,32873,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32873,1,3,0)
+ ;;=3^Skin Transplant Status
+ ;;^UTILITY(U,$J,358.3,32873,1,4,0)
+ ;;=4^Z94.5

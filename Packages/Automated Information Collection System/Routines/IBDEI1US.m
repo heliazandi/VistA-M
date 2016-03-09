@@ -1,134 +1,122 @@
-IBDEI1US ; ; 06-AUG-2015
+IBDEI1US ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32627,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32627,1,3,0)
- ;;=3^Supraventricular Tachycardia
- ;;^UTILITY(U,$J,358.3,32627,1,4,0)
- ;;=4^I47.1
- ;;^UTILITY(U,$J,358.3,32627,2)
- ;;=^5007223
- ;;^UTILITY(U,$J,358.3,32628,0)
- ;;=I48.0^^182^1991^14
- ;;^UTILITY(U,$J,358.3,32628,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32628,1,3,0)
- ;;=3^Paroxysmal Atrial Fibrillation
- ;;^UTILITY(U,$J,358.3,32628,1,4,0)
- ;;=4^I48.0
- ;;^UTILITY(U,$J,358.3,32628,2)
- ;;=^90473
- ;;^UTILITY(U,$J,358.3,32629,0)
- ;;=I49.5^^182^1991^22
- ;;^UTILITY(U,$J,358.3,32629,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32629,1,3,0)
- ;;=3^Sick Sinus Syndrome
- ;;^UTILITY(U,$J,358.3,32629,1,4,0)
- ;;=4^I49.5
- ;;^UTILITY(U,$J,358.3,32629,2)
- ;;=^110404
- ;;^UTILITY(U,$J,358.3,32630,0)
- ;;=I49.8^^182^1991^3
- ;;^UTILITY(U,$J,358.3,32630,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32630,1,3,0)
- ;;=3^Cardiac Arrhythmias
- ;;^UTILITY(U,$J,358.3,32630,1,4,0)
- ;;=4^I49.8
- ;;^UTILITY(U,$J,358.3,32630,2)
- ;;=^5007236
- ;;^UTILITY(U,$J,358.3,32631,0)
- ;;=I49.9^^182^1991^2
- ;;^UTILITY(U,$J,358.3,32631,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32631,1,3,0)
- ;;=3^Cardiac Arrhythmia,Unspec
- ;;^UTILITY(U,$J,358.3,32631,1,4,0)
- ;;=4^I49.9
- ;;^UTILITY(U,$J,358.3,32631,2)
- ;;=^5007237
- ;;^UTILITY(U,$J,358.3,32632,0)
- ;;=R00.1^^182^1991^1
- ;;^UTILITY(U,$J,358.3,32632,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32632,1,3,0)
- ;;=3^Bradycardia,Unspec
- ;;^UTILITY(U,$J,358.3,32632,1,4,0)
- ;;=4^R00.1
- ;;^UTILITY(U,$J,358.3,32632,2)
- ;;=^5019164
- ;;^UTILITY(U,$J,358.3,32633,0)
- ;;=D68.4^^182^1992^1
- ;;^UTILITY(U,$J,358.3,32633,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32633,1,3,0)
- ;;=3^Acquired Coagulation Factor Deficiency
- ;;^UTILITY(U,$J,358.3,32633,1,4,0)
- ;;=4^D68.4
- ;;^UTILITY(U,$J,358.3,32633,2)
- ;;=^2235
- ;;^UTILITY(U,$J,358.3,32634,0)
- ;;=D59.9^^182^1992^2
- ;;^UTILITY(U,$J,358.3,32634,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32634,1,3,0)
- ;;=3^Acquired Hemolytic Anemia,Unspec
- ;;^UTILITY(U,$J,358.3,32634,1,4,0)
- ;;=4^D59.9
- ;;^UTILITY(U,$J,358.3,32634,2)
- ;;=^5002330
- ;;^UTILITY(U,$J,358.3,32635,0)
- ;;=C91.00^^182^1992^4
- ;;^UTILITY(U,$J,358.3,32635,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32635,1,3,0)
- ;;=3^Acute Lymphoblastic Leukemia,Not in Remission
- ;;^UTILITY(U,$J,358.3,32635,1,4,0)
- ;;=4^C91.00
- ;;^UTILITY(U,$J,358.3,32635,2)
- ;;=^5001762
- ;;^UTILITY(U,$J,358.3,32636,0)
- ;;=C91.01^^182^1992^3
- ;;^UTILITY(U,$J,358.3,32636,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32636,1,3,0)
- ;;=3^Acute Lymphoblastic Leukemia,In Remission
- ;;^UTILITY(U,$J,358.3,32636,1,4,0)
- ;;=4^C91.01
- ;;^UTILITY(U,$J,358.3,32636,2)
- ;;=^5001763
- ;;^UTILITY(U,$J,358.3,32637,0)
- ;;=C92.01^^182^1992^5
- ;;^UTILITY(U,$J,358.3,32637,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32637,1,3,0)
- ;;=3^Acute Myeloblastic Leukemia,In Remission
- ;;^UTILITY(U,$J,358.3,32637,1,4,0)
- ;;=4^C92.01
- ;;^UTILITY(U,$J,358.3,32637,2)
- ;;=^5001790
- ;;^UTILITY(U,$J,358.3,32638,0)
- ;;=C92.00^^182^1992^6
- ;;^UTILITY(U,$J,358.3,32638,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32638,1,3,0)
- ;;=3^Acute Myeloblastic Leukemia,Not in Remission
- ;;^UTILITY(U,$J,358.3,32638,1,4,0)
- ;;=4^C92.00
- ;;^UTILITY(U,$J,358.3,32638,2)
- ;;=^5001789
- ;;^UTILITY(U,$J,358.3,32639,0)
- ;;=C92.61^^182^1992^7
- ;;^UTILITY(U,$J,358.3,32639,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32639,1,3,0)
- ;;=3^Acute Myeloid Leukemia w/ 11q23-Abnormality,In Remission
- ;;^UTILITY(U,$J,358.3,32639,1,4,0)
- ;;=4^C92.61
- ;;^UTILITY(U,$J,358.3,32639,2)
- ;;=^5001808
- ;;^UTILITY(U,$J,358.3,32640,0)
- ;;=C92.60^^182^1992^8
+ ;;^UTILITY(U,$J,358.3,31482,0)
+ ;;=29904^^125^1594^6^^^^1
+ ;;^UTILITY(U,$J,358.3,31482,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31482,1,2,0)
+ ;;=2^Arthroscopy,subtalar jt,w/rem of foreign body
+ ;;^UTILITY(U,$J,358.3,31482,1,3,0)
+ ;;=3^29904
+ ;;^UTILITY(U,$J,358.3,31483,0)
+ ;;=29905^^125^1594^5^^^^1
+ ;;^UTILITY(U,$J,358.3,31483,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31483,1,2,0)
+ ;;=2^Arthroscopy,subtalar jt,w/ Synovectomy
+ ;;^UTILITY(U,$J,358.3,31483,1,3,0)
+ ;;=3^29905
+ ;;^UTILITY(U,$J,358.3,31484,0)
+ ;;=29906^^125^1594^4^^^^1
+ ;;^UTILITY(U,$J,358.3,31484,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31484,1,2,0)
+ ;;=2^Arthroscopy, subtalar jt,w/ debridement
+ ;;^UTILITY(U,$J,358.3,31484,1,3,0)
+ ;;=3^29906
+ ;;^UTILITY(U,$J,358.3,31485,0)
+ ;;=29907^^125^1594^7^^^^1
+ ;;^UTILITY(U,$J,358.3,31485,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31485,1,2,0)
+ ;;=2^Arthroscopy,subtalar w/ fusion
+ ;;^UTILITY(U,$J,358.3,31485,1,3,0)
+ ;;=3^29907
+ ;;^UTILITY(U,$J,358.3,31486,0)
+ ;;=97605^^125^1594^16^^^^1
+ ;;^UTILITY(U,$J,358.3,31486,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31486,1,2,0)
+ ;;=2^Neg Press Wound Tx <= 50 cm
+ ;;^UTILITY(U,$J,358.3,31486,1,3,0)
+ ;;=3^97605
+ ;;^UTILITY(U,$J,358.3,31487,0)
+ ;;=97606^^125^1594^17^^^^1
+ ;;^UTILITY(U,$J,358.3,31487,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31487,1,2,0)
+ ;;=2^Neg Press Wound Tx > 50 cm
+ ;;^UTILITY(U,$J,358.3,31487,1,3,0)
+ ;;=3^97606
+ ;;^UTILITY(U,$J,358.3,31488,0)
+ ;;=2028F^^125^1594^12^^^^1
+ ;;^UTILITY(U,$J,358.3,31488,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31488,1,2,0)
+ ;;=2^Foot Exam Performed
+ ;;^UTILITY(U,$J,358.3,31488,1,3,0)
+ ;;=3^2028F
+ ;;^UTILITY(U,$J,358.3,31489,0)
+ ;;=G8883^^125^1594^9^^^^1
+ ;;^UTILITY(U,$J,358.3,31489,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31489,1,2,0)
+ ;;=2^Bx Result RVW,Comm,Tracked
+ ;;^UTILITY(U,$J,358.3,31489,1,3,0)
+ ;;=3^G8883
+ ;;^UTILITY(U,$J,358.3,31490,0)
+ ;;=S0395^^125^1594^13^^^^1
+ ;;^UTILITY(U,$J,358.3,31490,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31490,1,2,0)
+ ;;=2^Impression Cast
+ ;;^UTILITY(U,$J,358.3,31490,1,3,0)
+ ;;=3^S0395
+ ;;^UTILITY(U,$J,358.3,31491,0)
+ ;;=E2402^^125^1594^15^^^^1
+ ;;^UTILITY(U,$J,358.3,31491,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31491,1,2,0)
+ ;;=2^Neg Press Wound Therapy Pump
+ ;;^UTILITY(U,$J,358.3,31491,1,3,0)
+ ;;=3^E2402
+ ;;^UTILITY(U,$J,358.3,31492,0)
+ ;;=28400^^125^1595^4^^^^1
+ ;;^UTILITY(U,$J,358.3,31492,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31492,1,2,0)
+ ;;=2^Closed TX of calcaneal fracture; without manipulation
+ ;;^UTILITY(U,$J,358.3,31492,1,3,0)
+ ;;=3^28400
+ ;;^UTILITY(U,$J,358.3,31493,0)
+ ;;=28405^^125^1595^3^^^^1
+ ;;^UTILITY(U,$J,358.3,31493,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31493,1,2,0)
+ ;;=2^Closed TX of calcaneal fracture; with manipulation
+ ;;^UTILITY(U,$J,358.3,31493,1,3,0)
+ ;;=3^28405
+ ;;^UTILITY(U,$J,358.3,31494,0)
+ ;;=28406^^125^1595^66^^^^1
+ ;;^UTILITY(U,$J,358.3,31494,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31494,1,2,0)
+ ;;=2^Perc Fixation of Calcaneous Fx
+ ;;^UTILITY(U,$J,358.3,31494,1,3,0)
+ ;;=3^28406
+ ;;^UTILITY(U,$J,358.3,31495,0)
+ ;;=28415^^125^1595^34^^^^1
+ ;;^UTILITY(U,$J,358.3,31495,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31495,1,2,0)
+ ;;=2^Open TX of calcaneal fracture, with or without internal or external fixation;
+ ;;^UTILITY(U,$J,358.3,31495,1,3,0)
+ ;;=3^28415
+ ;;^UTILITY(U,$J,358.3,31496,0)
+ ;;=28420^^125^1595^35^^^^1
+ ;;^UTILITY(U,$J,358.3,31496,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31496,1,2,0)
+ ;;=2^Open TX of calcaneal fracture, with or without internal or external fixation; with primary iliac or other autogenous bone graft

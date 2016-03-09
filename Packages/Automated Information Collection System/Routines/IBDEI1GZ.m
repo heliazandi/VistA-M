@@ -1,130 +1,122 @@
-IBDEI1GZ ; ; 06-AUG-2015
+IBDEI1GZ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,26075,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26075,1,2,0)
- ;;=2^H0046
- ;;^UTILITY(U,$J,358.3,26075,1,3,0)
- ;;=3^PTSD Group
- ;;^UTILITY(U,$J,358.3,26076,0)
- ;;=96119^^151^1660^11^^^^1
- ;;^UTILITY(U,$J,358.3,26076,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26076,1,2,0)
- ;;=2^96119
- ;;^UTILITY(U,$J,358.3,26076,1,3,0)
- ;;=3^Neuropsych Test by tech,per hr
- ;;^UTILITY(U,$J,358.3,26077,0)
- ;;=96102^^151^1660^18^^^^1
- ;;^UTILITY(U,$J,358.3,26077,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26077,1,2,0)
- ;;=2^96102
- ;;^UTILITY(U,$J,358.3,26077,1,3,0)
- ;;=3^Psych Test by Tech,per hr
- ;;^UTILITY(U,$J,358.3,26078,0)
- ;;=96103^^151^1660^19^^^^1
- ;;^UTILITY(U,$J,358.3,26078,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26078,1,2,0)
- ;;=2^96103
- ;;^UTILITY(U,$J,358.3,26078,1,3,0)
- ;;=3^Psych Test by computer
- ;;^UTILITY(U,$J,358.3,26079,0)
- ;;=96120^^151^1660^12^^^^1
- ;;^UTILITY(U,$J,358.3,26079,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26079,1,2,0)
- ;;=2^96120
- ;;^UTILITY(U,$J,358.3,26079,1,3,0)
- ;;=3^Neuropsych Tst Admin w/Comp
- ;;^UTILITY(U,$J,358.3,26080,0)
- ;;=96125^^151^1660^24^^^^1
- ;;^UTILITY(U,$J,358.3,26080,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26080,1,2,0)
- ;;=2^96125
- ;;^UTILITY(U,$J,358.3,26080,1,3,0)
- ;;=3^Stan Cog Perf Tst, per hr
- ;;^UTILITY(U,$J,358.3,26081,0)
- ;;=Q3014^^151^1660^26^^^^1
- ;;^UTILITY(U,$J,358.3,26081,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26081,1,2,0)
- ;;=2^Q3014
- ;;^UTILITY(U,$J,358.3,26081,1,3,0)
- ;;=3^Telehealth Facility Fee
- ;;^UTILITY(U,$J,358.3,26082,0)
- ;;=90887^^151^1660^5^^^^1
- ;;^UTILITY(U,$J,358.3,26082,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26082,1,2,0)
- ;;=2^90887
- ;;^UTILITY(U,$J,358.3,26082,1,3,0)
- ;;=3^Consultation w/Family
- ;;^UTILITY(U,$J,358.3,26083,0)
- ;;=90885^^151^1660^16^^^^1
- ;;^UTILITY(U,$J,358.3,26083,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26083,1,2,0)
- ;;=2^90885
- ;;^UTILITY(U,$J,358.3,26083,1,3,0)
- ;;=3^Psych Eval of Records
- ;;^UTILITY(U,$J,358.3,26084,0)
- ;;=90889^^151^1660^15^^^^1
- ;;^UTILITY(U,$J,358.3,26084,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26084,1,2,0)
- ;;=2^90889
- ;;^UTILITY(U,$J,358.3,26084,1,3,0)
- ;;=3^Preparation of Report
- ;;^UTILITY(U,$J,358.3,26085,0)
- ;;=96118^^151^1660^13^^^^1
- ;;^UTILITY(U,$J,358.3,26085,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26085,1,2,0)
- ;;=2^96118
- ;;^UTILITY(U,$J,358.3,26085,1,3,0)
- ;;=3^Neuropsych Tst/Hr of Psychologist/MD Time
- ;;^UTILITY(U,$J,358.3,26086,0)
- ;;=97150^^151^1660^7^^^^1
- ;;^UTILITY(U,$J,358.3,26086,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26086,1,2,0)
- ;;=2^97150
- ;;^UTILITY(U,$J,358.3,26086,1,3,0)
- ;;=3^Group Therapeutic Procedures
- ;;^UTILITY(U,$J,358.3,26087,0)
- ;;=97530^^151^1660^27^^^^1
- ;;^UTILITY(U,$J,358.3,26087,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26087,1,2,0)
- ;;=2^97530
- ;;^UTILITY(U,$J,358.3,26087,1,3,0)
- ;;=3^Therapeutic Activ,Dir Prov Contact,ea 15 min
- ;;^UTILITY(U,$J,358.3,26088,0)
- ;;=G0177^^151^1660^28^^^^1
- ;;^UTILITY(U,$J,358.3,26088,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26088,1,2,0)
- ;;=2^G0177
- ;;^UTILITY(U,$J,358.3,26088,1,3,0)
- ;;=3^Train/Ed for Disability > 44 Min
- ;;^UTILITY(U,$J,358.3,26089,0)
- ;;=H0038^^151^1660^20^^^^1
- ;;^UTILITY(U,$J,358.3,26089,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26089,1,2,0)
- ;;=2^H0038
- ;;^UTILITY(U,$J,358.3,26089,1,3,0)
- ;;=3^Self-Help/Peer Svc per 15 Min
- ;;^UTILITY(U,$J,358.3,26090,0)
- ;;=90899^^151^1660^9^^^^1
- ;;^UTILITY(U,$J,358.3,26090,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26090,1,2,0)
- ;;=2^90899
- ;;^UTILITY(U,$J,358.3,26090,1,3,0)
- ;;=3^NOS Psych Service
+ ;;^UTILITY(U,$J,358.3,24958,0)
+ ;;=F11.121^^93^1120^13
+ ;;^UTILITY(U,$J,358.3,24958,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24958,1,3,0)
+ ;;=3^Opioid Intoxication Delirium w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,24958,1,4,0)
+ ;;=4^F11.121
+ ;;^UTILITY(U,$J,358.3,24958,2)
+ ;;=^5003116
+ ;;^UTILITY(U,$J,358.3,24959,0)
+ ;;=F11.221^^93^1120^14
+ ;;^UTILITY(U,$J,358.3,24959,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24959,1,3,0)
+ ;;=3^Opioid Intoxication Delirium w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24959,1,4,0)
+ ;;=4^F11.221
+ ;;^UTILITY(U,$J,358.3,24959,2)
+ ;;=^5003130
+ ;;^UTILITY(U,$J,358.3,24960,0)
+ ;;=F11.921^^93^1120^15
+ ;;^UTILITY(U,$J,358.3,24960,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24960,1,3,0)
+ ;;=3^Opioid Intoxication Delirium w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24960,1,4,0)
+ ;;=4^F11.921
+ ;;^UTILITY(U,$J,358.3,24960,2)
+ ;;=^5003144
+ ;;^UTILITY(U,$J,358.3,24961,0)
+ ;;=F11.229^^93^1120^20
+ ;;^UTILITY(U,$J,358.3,24961,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24961,1,3,0)
+ ;;=3^Opioid Intoxication w/o Perceptual Disturbance w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24961,1,4,0)
+ ;;=4^F11.229
+ ;;^UTILITY(U,$J,358.3,24961,2)
+ ;;=^5003132
+ ;;^UTILITY(U,$J,358.3,24962,0)
+ ;;=F11.929^^93^1120^21
+ ;;^UTILITY(U,$J,358.3,24962,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24962,1,3,0)
+ ;;=3^Opioid Intoxication w/o Perceptual Disturbance w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24962,1,4,0)
+ ;;=4^F11.929
+ ;;^UTILITY(U,$J,358.3,24962,2)
+ ;;=^5003146
+ ;;^UTILITY(U,$J,358.3,24963,0)
+ ;;=F11.122^^93^1120^16
+ ;;^UTILITY(U,$J,358.3,24963,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24963,1,3,0)
+ ;;=3^Opioid Intoxication w/ Perceptual Disturbance w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,24963,1,4,0)
+ ;;=4^F11.122
+ ;;^UTILITY(U,$J,358.3,24963,2)
+ ;;=^5003117
+ ;;^UTILITY(U,$J,358.3,24964,0)
+ ;;=F11.222^^93^1120^17
+ ;;^UTILITY(U,$J,358.3,24964,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24964,1,3,0)
+ ;;=3^Opioid Intoxication w/ Perceptual Disturbance w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24964,1,4,0)
+ ;;=4^F11.222
+ ;;^UTILITY(U,$J,358.3,24964,2)
+ ;;=^5003131
+ ;;^UTILITY(U,$J,358.3,24965,0)
+ ;;=F11.922^^93^1120^18
+ ;;^UTILITY(U,$J,358.3,24965,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24965,1,3,0)
+ ;;=3^Opioid Intoxication w/ Perceptual Disturbance w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24965,1,4,0)
+ ;;=4^F11.922
+ ;;^UTILITY(U,$J,358.3,24965,2)
+ ;;=^5003145
+ ;;^UTILITY(U,$J,358.3,24966,0)
+ ;;=F11.99^^93^1120^22
+ ;;^UTILITY(U,$J,358.3,24966,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24966,1,3,0)
+ ;;=3^Opioid Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,24966,1,4,0)
+ ;;=4^F11.99
+ ;;^UTILITY(U,$J,358.3,24966,2)
+ ;;=^5133352
+ ;;^UTILITY(U,$J,358.3,24967,0)
+ ;;=F19.10^^93^1121^3
+ ;;^UTILITY(U,$J,358.3,24967,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24967,1,3,0)
+ ;;=3^Psychoactive Substance Abuse NEC,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,24967,1,4,0)
+ ;;=4^F19.10
+ ;;^UTILITY(U,$J,358.3,24967,2)
+ ;;=^5003416
+ ;;^UTILITY(U,$J,358.3,24968,0)
+ ;;=F19.14^^93^1121^1
+ ;;^UTILITY(U,$J,358.3,24968,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24968,1,3,0)
+ ;;=3^Psychoactive Substance Abuse NEC w/ Induced Mood Disorder
+ ;;^UTILITY(U,$J,358.3,24968,1,4,0)
+ ;;=4^F19.14
+ ;;^UTILITY(U,$J,358.3,24968,2)
+ ;;=^5003421
+ ;;^UTILITY(U,$J,358.3,24969,0)
+ ;;=F19.182^^93^1121^2
+ ;;^UTILITY(U,$J,358.3,24969,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24969,1,3,0)
+ ;;=3^Psychoactive Substance Abuse NEC w/ Induced Sleep Disorder
+ ;;^UTILITY(U,$J,358.3,24969,1,4,0)
+ ;;=4^F19.182

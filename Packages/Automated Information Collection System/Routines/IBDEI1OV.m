@@ -1,122 +1,136 @@
-IBDEI1OV ; ; 06-AUG-2015
+IBDEI1OV ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,29968,2)
- ;;=^5017480
- ;;^UTILITY(U,$J,358.3,29969,0)
- ;;=O46.093^^178^1909^12
- ;;^UTILITY(U,$J,358.3,29969,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29969,1,3,0)
- ;;=3^Antepartum hemorrhage w oth coag defect, third trimester
- ;;^UTILITY(U,$J,358.3,29969,1,4,0)
- ;;=4^O46.093
- ;;^UTILITY(U,$J,358.3,29969,2)
- ;;=^5017481
- ;;^UTILITY(U,$J,358.3,29970,0)
- ;;=O10.011^^178^1910^25
- ;;^UTILITY(U,$J,358.3,29970,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29970,1,3,0)
- ;;=3^Pre-existing essential htn comp pregnancy, first trimester
- ;;^UTILITY(U,$J,358.3,29970,1,4,0)
- ;;=4^O10.011
- ;;^UTILITY(U,$J,358.3,29970,2)
- ;;=^5016108
- ;;^UTILITY(U,$J,358.3,29971,0)
- ;;=O10.012^^178^1910^26
- ;;^UTILITY(U,$J,358.3,29971,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29971,1,3,0)
- ;;=3^Pre-existing essential htn comp pregnancy, second trimester
- ;;^UTILITY(U,$J,358.3,29971,1,4,0)
- ;;=4^O10.012
- ;;^UTILITY(U,$J,358.3,29971,2)
- ;;=^5016109
- ;;^UTILITY(U,$J,358.3,29972,0)
- ;;=O10.013^^178^1910^27
- ;;^UTILITY(U,$J,358.3,29972,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29972,1,3,0)
- ;;=3^Pre-existing essential htn comp pregnancy, third trimester
- ;;^UTILITY(U,$J,358.3,29972,1,4,0)
- ;;=4^O10.013
- ;;^UTILITY(U,$J,358.3,29972,2)
- ;;=^5016110
- ;;^UTILITY(U,$J,358.3,29973,0)
- ;;=O10.03^^178^1910^30
- ;;^UTILITY(U,$J,358.3,29973,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29973,1,3,0)
- ;;=3^Pre-existing essential htn comp the puerperium
- ;;^UTILITY(U,$J,358.3,29973,1,4,0)
- ;;=4^O10.03
- ;;^UTILITY(U,$J,358.3,29973,2)
- ;;=^5016113
- ;;^UTILITY(U,$J,358.3,29974,0)
- ;;=O10.411^^178^1910^39
- ;;^UTILITY(U,$J,358.3,29974,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29974,1,3,0)
- ;;=3^Pre-existing secondary htn comp pregnancy, first trimester
- ;;^UTILITY(U,$J,358.3,29974,1,4,0)
- ;;=4^O10.411
- ;;^UTILITY(U,$J,358.3,29974,2)
- ;;=^5016132
- ;;^UTILITY(U,$J,358.3,29975,0)
- ;;=O10.412^^178^1910^40
- ;;^UTILITY(U,$J,358.3,29975,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29975,1,3,0)
- ;;=3^Pre-existing secondary htn comp pregnancy, second trimester
- ;;^UTILITY(U,$J,358.3,29975,1,4,0)
- ;;=4^O10.412
- ;;^UTILITY(U,$J,358.3,29975,2)
- ;;=^5016133
- ;;^UTILITY(U,$J,358.3,29976,0)
- ;;=O10.413^^178^1910^41
- ;;^UTILITY(U,$J,358.3,29976,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29976,1,3,0)
- ;;=3^Pre-existing secondary htn comp pregnancy, third trimester
- ;;^UTILITY(U,$J,358.3,29976,1,4,0)
- ;;=4^O10.413
- ;;^UTILITY(U,$J,358.3,29976,2)
- ;;=^5016134
- ;;^UTILITY(U,$J,358.3,29977,0)
- ;;=O10.43^^178^1910^42
- ;;^UTILITY(U,$J,358.3,29977,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29977,1,3,0)
- ;;=3^Pre-existing secondary htn comp the puerperium
- ;;^UTILITY(U,$J,358.3,29977,1,4,0)
- ;;=4^O10.43
- ;;^UTILITY(U,$J,358.3,29977,2)
- ;;=^5016137
- ;;^UTILITY(U,$J,358.3,29978,0)
- ;;=O10.111^^178^1910^24
- ;;^UTILITY(U,$J,358.3,29978,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29978,1,3,0)
- ;;=3^Pre-exist hyp heart disease comp pregnancy, first trimester
- ;;^UTILITY(U,$J,358.3,29978,1,4,0)
- ;;=4^O10.111
- ;;^UTILITY(U,$J,358.3,29978,2)
- ;;=^5016114
- ;;^UTILITY(U,$J,358.3,29979,0)
- ;;=O10.012^^178^1910^28
- ;;^UTILITY(U,$J,358.3,29979,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29979,1,3,0)
- ;;=3^Pre-existing essential htn comp pregnancy, second trimester
- ;;^UTILITY(U,$J,358.3,29979,1,4,0)
- ;;=4^O10.012
- ;;^UTILITY(U,$J,358.3,29979,2)
- ;;=^5016109
- ;;^UTILITY(U,$J,358.3,29980,0)
- ;;=O10.013^^178^1910^29
- ;;^UTILITY(U,$J,358.3,29980,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29980,1,3,0)
- ;;=3^Pre-existing essential htn comp pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,28713,0)
+ ;;=99385^^113^1443^1^^^^1
+ ;;^UTILITY(U,$J,358.3,28713,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,28713,1,2,0)
+ ;;=2^99385
+ ;;^UTILITY(U,$J,358.3,28713,1,3,0)
+ ;;=3^PREV VISIT NEW AGE 18-39
+ ;;^UTILITY(U,$J,358.3,28714,0)
+ ;;=99386^^113^1443^2^^^^1
+ ;;^UTILITY(U,$J,358.3,28714,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,28714,1,2,0)
+ ;;=2^99386
+ ;;^UTILITY(U,$J,358.3,28714,1,3,0)
+ ;;=3^PREV VISIT NEW AGE 40-64
+ ;;^UTILITY(U,$J,358.3,28715,0)
+ ;;=99387^^113^1443^3^^^^1
+ ;;^UTILITY(U,$J,358.3,28715,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,28715,1,2,0)
+ ;;=2^99387
+ ;;^UTILITY(U,$J,358.3,28715,1,3,0)
+ ;;=3^PREV VISIT NEW 65 & OVER
+ ;;^UTILITY(U,$J,358.3,28716,0)
+ ;;=A4247^^113^1444^2^^^^1
+ ;;^UTILITY(U,$J,358.3,28716,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,28716,1,2,0)
+ ;;=2^A4247
+ ;;^UTILITY(U,$J,358.3,28716,1,3,0)
+ ;;=3^BETADINE/IODINE SWABS/WIPES,BOX
+ ;;^UTILITY(U,$J,358.3,28717,0)
+ ;;=A4332^^113^1444^3^^^^1
+ ;;^UTILITY(U,$J,358.3,28717,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,28717,1,2,0)
+ ;;=2^A4332
+ ;;^UTILITY(U,$J,358.3,28717,1,3,0)
+ ;;=3^LUBE STERILE PACKET
+ ;;^UTILITY(U,$J,358.3,28718,0)
+ ;;=A4208^^113^1444^1^^^^1
+ ;;^UTILITY(U,$J,358.3,28718,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,28718,1,2,0)
+ ;;=2^A4208
+ ;;^UTILITY(U,$J,358.3,28718,1,3,0)
+ ;;=3^3 CC STERILE SYRINGE & NEEDLE
+ ;;^UTILITY(U,$J,358.3,28719,0)
+ ;;=99201^^114^1445^1
+ ;;^UTILITY(U,$J,358.3,28719,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,28719,1,1,0)
+ ;;=1^Problem Focus
+ ;;^UTILITY(U,$J,358.3,28719,1,2,0)
+ ;;=2^99201
+ ;;^UTILITY(U,$J,358.3,28720,0)
+ ;;=99202^^114^1445^2
+ ;;^UTILITY(U,$J,358.3,28720,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,28720,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,28720,1,2,0)
+ ;;=2^99202
+ ;;^UTILITY(U,$J,358.3,28721,0)
+ ;;=99203^^114^1445^3
+ ;;^UTILITY(U,$J,358.3,28721,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,28721,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,28721,1,2,0)
+ ;;=2^99203
+ ;;^UTILITY(U,$J,358.3,28722,0)
+ ;;=99204^^114^1445^4
+ ;;^UTILITY(U,$J,358.3,28722,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,28722,1,1,0)
+ ;;=1^Comprehensive, Moderate
+ ;;^UTILITY(U,$J,358.3,28722,1,2,0)
+ ;;=2^99204
+ ;;^UTILITY(U,$J,358.3,28723,0)
+ ;;=99205^^114^1445^5
+ ;;^UTILITY(U,$J,358.3,28723,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,28723,1,1,0)
+ ;;=1^Comprehensive,High
+ ;;^UTILITY(U,$J,358.3,28723,1,2,0)
+ ;;=2^99205
+ ;;^UTILITY(U,$J,358.3,28724,0)
+ ;;=99211^^114^1446^1
+ ;;^UTILITY(U,$J,358.3,28724,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,28724,1,1,0)
+ ;;=1^Nurse Visit (no MD seen)
+ ;;^UTILITY(U,$J,358.3,28724,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,28725,0)
+ ;;=99212^^114^1446^2
+ ;;^UTILITY(U,$J,358.3,28725,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,28725,1,1,0)
+ ;;=1^Problem Focused
+ ;;^UTILITY(U,$J,358.3,28725,1,2,0)
+ ;;=2^99212
+ ;;^UTILITY(U,$J,358.3,28726,0)
+ ;;=99213^^114^1446^3
+ ;;^UTILITY(U,$J,358.3,28726,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,28726,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,28726,1,2,0)
+ ;;=2^99213
+ ;;^UTILITY(U,$J,358.3,28727,0)
+ ;;=99214^^114^1446^4
+ ;;^UTILITY(U,$J,358.3,28727,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,28727,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,28727,1,2,0)
+ ;;=2^99214
+ ;;^UTILITY(U,$J,358.3,28728,0)
+ ;;=99215^^114^1446^5
+ ;;^UTILITY(U,$J,358.3,28728,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,28728,1,1,0)
+ ;;=1^Comprehensive
+ ;;^UTILITY(U,$J,358.3,28728,1,2,0)
+ ;;=2^99215
+ ;;^UTILITY(U,$J,358.3,28729,0)
+ ;;=99024^^114^1446^6
+ ;;^UTILITY(U,$J,358.3,28729,1,0)
+ ;;=^358.31IA^2^2

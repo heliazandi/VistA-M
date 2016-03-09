@@ -1,142 +1,128 @@
-IBDEI0M4 ; ; 06-AUG-2015
+IBDEI0M4 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10492,0)
- ;;=362.52^^44^566^11
- ;;^UTILITY(U,$J,358.3,10492,1,0)
+ ;;^UTILITY(U,$J,358.3,10311,2)
+ ;;=^5020081
+ ;;^UTILITY(U,$J,358.3,10312,0)
+ ;;=C44.199^^44^503^66
+ ;;^UTILITY(U,$J,358.3,10312,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10492,1,3,0)
- ;;=3^Cystoid Macular Degeneration
- ;;^UTILITY(U,$J,358.3,10492,1,4,0)
- ;;=4^362.52
- ;;^UTILITY(U,$J,358.3,10492,2)
- ;;=^268637
- ;;^UTILITY(U,$J,358.3,10493,0)
- ;;=367.22^^44^566^32
- ;;^UTILITY(U,$J,358.3,10493,1,0)
+ ;;^UTILITY(U,$J,358.3,10312,1,3,0)
+ ;;=3^Malig Neop Skin Left Eyelid NEC
+ ;;^UTILITY(U,$J,358.3,10312,1,4,0)
+ ;;=4^C44.199
+ ;;^UTILITY(U,$J,358.3,10312,2)
+ ;;=^5001027
+ ;;^UTILITY(U,$J,358.3,10313,0)
+ ;;=C44.192^^44^503^68
+ ;;^UTILITY(U,$J,358.3,10313,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10493,1,3,0)
- ;;=3^Irregular Astigmatism
- ;;^UTILITY(U,$J,358.3,10493,1,4,0)
- ;;=4^367.22
- ;;^UTILITY(U,$J,358.3,10493,2)
- ;;=^265373
- ;;^UTILITY(U,$J,358.3,10494,0)
- ;;=V45.69^^44^566^49
- ;;^UTILITY(U,$J,358.3,10494,1,0)
+ ;;^UTILITY(U,$J,358.3,10313,1,3,0)
+ ;;=3^Malig Neop Skin Right Eyelid NEC
+ ;;^UTILITY(U,$J,358.3,10313,1,4,0)
+ ;;=4^C44.192
+ ;;^UTILITY(U,$J,358.3,10313,2)
+ ;;=^5001026
+ ;;^UTILITY(U,$J,358.3,10314,0)
+ ;;=S05.42XA^^44^503^79
+ ;;^UTILITY(U,$J,358.3,10314,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10494,1,3,0)
- ;;=3^States Following Surg of Eye
- ;;^UTILITY(U,$J,358.3,10494,1,4,0)
- ;;=4^V45.69
- ;;^UTILITY(U,$J,358.3,10494,2)
- ;;=^317957
- ;;^UTILITY(U,$J,358.3,10495,0)
- ;;=V58.71^^44^566^4
- ;;^UTILITY(U,$J,358.3,10495,1,0)
+ ;;^UTILITY(U,$J,358.3,10314,1,3,0)
+ ;;=3^Penetrating Wound of Orbit,Left Eye,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10314,1,4,0)
+ ;;=4^S05.42XA
+ ;;^UTILITY(U,$J,358.3,10314,2)
+ ;;=^5020618
+ ;;^UTILITY(U,$J,358.3,10315,0)
+ ;;=S05.41XA^^44^503^80
+ ;;^UTILITY(U,$J,358.3,10315,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10495,1,3,0)
- ;;=3^Aftercare Following Surg of Sense Organ
- ;;^UTILITY(U,$J,358.3,10495,1,4,0)
- ;;=4
- ;;^UTILITY(U,$J,358.3,10495,2)
- ;;=^328689
- ;;^UTILITY(U,$J,358.3,10496,0)
- ;;=V45.61^^44^566^9
- ;;^UTILITY(U,$J,358.3,10496,1,0)
+ ;;^UTILITY(U,$J,358.3,10315,1,3,0)
+ ;;=3^Penetrating Wound of Orbit,Right Eye,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10315,1,4,0)
+ ;;=4^S05.41XA
+ ;;^UTILITY(U,$J,358.3,10315,2)
+ ;;=^5020615
+ ;;^UTILITY(U,$J,358.3,10316,0)
+ ;;=S01.142A^^44^503^81
+ ;;^UTILITY(U,$J,358.3,10316,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10496,1,3,0)
- ;;=3^Cataract Extraction Status
- ;;^UTILITY(U,$J,358.3,10496,1,4,0)
- ;;=4^V45.61
- ;;^UTILITY(U,$J,358.3,10496,2)
- ;;=^295462
- ;;^UTILITY(U,$J,358.3,10497,0)
- ;;=V72.0^^44^566^21
- ;;^UTILITY(U,$J,358.3,10497,1,0)
+ ;;^UTILITY(U,$J,358.3,10316,1,3,0)
+ ;;=3^Puncture Wound w/ FB,Left Eyelid/Periocular Area,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10316,1,4,0)
+ ;;=4^S01.142A
+ ;;^UTILITY(U,$J,358.3,10316,2)
+ ;;=^5134196
+ ;;^UTILITY(U,$J,358.3,10317,0)
+ ;;=S01.141A^^44^503^82
+ ;;^UTILITY(U,$J,358.3,10317,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10497,1,3,0)
- ;;=3^Eye Exam
- ;;^UTILITY(U,$J,358.3,10497,1,4,0)
- ;;=4^V72.0
- ;;^UTILITY(U,$J,358.3,10497,2)
- ;;=^43432
- ;;^UTILITY(U,$J,358.3,10498,0)
- ;;=V71.89^^44^566^38
- ;;^UTILITY(U,$J,358.3,10498,1,0)
+ ;;^UTILITY(U,$J,358.3,10317,1,3,0)
+ ;;=3^Puncture Wound w/ FB,Right Eyelid/Periocular Area,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10317,1,4,0)
+ ;;=4^S01.141A
+ ;;^UTILITY(U,$J,358.3,10317,2)
+ ;;=^5020078
+ ;;^UTILITY(U,$J,358.3,10318,0)
+ ;;=S01.132A^^44^503^83
+ ;;^UTILITY(U,$J,358.3,10318,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10498,1,3,0)
- ;;=3^Observe SPEC Condition
- ;;^UTILITY(U,$J,358.3,10498,1,4,0)
- ;;=4^V71.89
- ;;^UTILITY(U,$J,358.3,10498,2)
- ;;=^322082
- ;;^UTILITY(U,$J,358.3,10499,0)
- ;;=V50.1^^44^566^39
- ;;^UTILITY(U,$J,358.3,10499,1,0)
+ ;;^UTILITY(U,$J,358.3,10318,1,3,0)
+ ;;=3^Puncture Wound w/o FB,Left Eyelid/Periocular Area,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10318,1,4,0)
+ ;;=4^S01.132A
+ ;;^UTILITY(U,$J,358.3,10318,2)
+ ;;=^5020072
+ ;;^UTILITY(U,$J,358.3,10319,0)
+ ;;=S01.131A^^44^503^84
+ ;;^UTILITY(U,$J,358.3,10319,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10499,1,3,0)
- ;;=3^Oth Plastic Surgery
- ;;^UTILITY(U,$J,358.3,10499,1,4,0)
- ;;=4^V50.1
- ;;^UTILITY(U,$J,358.3,10499,2)
- ;;=^87802
- ;;^UTILITY(U,$J,358.3,10500,0)
- ;;=368.8^^44^566^40
- ;;^UTILITY(U,$J,358.3,10500,1,0)
+ ;;^UTILITY(U,$J,358.3,10319,1,3,0)
+ ;;=3^Puncture Wound w/o FB,Right Eyelid/Periocular Area,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10319,1,4,0)
+ ;;=4^S01.131A
+ ;;^UTILITY(U,$J,358.3,10319,2)
+ ;;=^5020069
+ ;;^UTILITY(U,$J,358.3,10320,0)
+ ;;=H02.135^^44^503^87
+ ;;^UTILITY(U,$J,358.3,10320,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10500,1,3,0)
- ;;=3^Oth Specific Visual Disturbances
- ;;^UTILITY(U,$J,358.3,10500,1,4,0)
- ;;=4^368.8
- ;;^UTILITY(U,$J,358.3,10500,2)
- ;;=^88172
- ;;^UTILITY(U,$J,358.3,10501,0)
- ;;=368.13^^44^566^41
- ;;^UTILITY(U,$J,358.3,10501,1,0)
+ ;;^UTILITY(U,$J,358.3,10320,1,3,0)
+ ;;=3^Senile Ectropion Left Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,10320,1,4,0)
+ ;;=4^H02.135
+ ;;^UTILITY(U,$J,358.3,10320,2)
+ ;;=^5133414
+ ;;^UTILITY(U,$J,358.3,10321,0)
+ ;;=H02.134^^44^503^88
+ ;;^UTILITY(U,$J,358.3,10321,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10501,1,3,0)
- ;;=3^Photophobia
- ;;^UTILITY(U,$J,358.3,10501,1,4,0)
- ;;=4^368.13
- ;;^UTILITY(U,$J,358.3,10501,2)
- ;;=^126851
- ;;^UTILITY(U,$J,358.3,10502,0)
- ;;=998.59^^44^566^42
- ;;^UTILITY(U,$J,358.3,10502,1,0)
+ ;;^UTILITY(U,$J,358.3,10321,1,3,0)
+ ;;=3^Senile Ectropion Left Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,10321,1,4,0)
+ ;;=4^H02.134
+ ;;^UTILITY(U,$J,358.3,10321,2)
+ ;;=^5004320
+ ;;^UTILITY(U,$J,358.3,10322,0)
+ ;;=H02.132^^44^503^89
+ ;;^UTILITY(U,$J,358.3,10322,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10502,1,3,0)
- ;;=3^Post Op Infection
- ;;^UTILITY(U,$J,358.3,10502,1,4,0)
- ;;=4^998.59
- ;;^UTILITY(U,$J,358.3,10502,2)
- ;;=^97081
- ;;^UTILITY(U,$J,358.3,10503,0)
- ;;=368.03^^44^566^5
- ;;^UTILITY(U,$J,358.3,10503,1,0)
+ ;;^UTILITY(U,$J,358.3,10322,1,3,0)
+ ;;=3^Senile Ectropion Right Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,10322,1,4,0)
+ ;;=4^H02.132
+ ;;^UTILITY(U,$J,358.3,10322,2)
+ ;;=^5004318
+ ;;^UTILITY(U,$J,358.3,10323,0)
+ ;;=H02.131^^44^503^90
+ ;;^UTILITY(U,$J,358.3,10323,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10503,1,3,0)
- ;;=3^Amblyopia,Refractive
- ;;^UTILITY(U,$J,358.3,10503,1,4,0)
- ;;=4^368.03
- ;;^UTILITY(U,$J,358.3,10503,2)
- ;;=^265363
- ;;^UTILITY(U,$J,358.3,10504,0)
- ;;=367.31^^44^566^6
- ;;^UTILITY(U,$J,358.3,10504,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10504,1,3,0)
- ;;=3^Anisometropia
- ;;^UTILITY(U,$J,358.3,10504,1,4,0)
- ;;=4^367.31
- ;;^UTILITY(U,$J,358.3,10504,2)
- ;;=^7839
- ;;^UTILITY(U,$J,358.3,10505,0)
- ;;=367.20^^44^566^7
- ;;^UTILITY(U,$J,358.3,10505,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10505,1,3,0)
- ;;=3^Astigmatism,NOS
- ;;^UTILITY(U,$J,358.3,10505,1,4,0)
- ;;=4^367.20
+ ;;^UTILITY(U,$J,358.3,10323,1,3,0)
+ ;;=3^Senile Ectropion Right Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,10323,1,4,0)
+ ;;=4^H02.131
+ ;;^UTILITY(U,$J,358.3,10323,2)
+ ;;=^5004317
+ ;;^UTILITY(U,$J,358.3,10324,0)
+ ;;=H02.035^^44^503^91

@@ -1,134 +1,138 @@
-IBDEI02D ; ; 06-AUG-2015
+IBDEI02D ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,557,1,4,0)
- ;;=4^C92.21
- ;;^UTILITY(U,$J,358.3,557,2)
- ;;=^5001796
- ;;^UTILITY(U,$J,358.3,558,0)
- ;;=C92.22^^2^24^24
- ;;^UTILITY(U,$J,358.3,558,1,0)
+ ;;^UTILITY(U,$J,358.3,614,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,558,1,3,0)
- ;;=3^Atypical chronic myeloid leukemia, BCR/ABL-neg, in relapse
- ;;^UTILITY(U,$J,358.3,558,1,4,0)
- ;;=4^C92.22
- ;;^UTILITY(U,$J,358.3,558,2)
- ;;=^5001797
- ;;^UTILITY(U,$J,358.3,559,0)
- ;;=C92.30^^2^24^54
- ;;^UTILITY(U,$J,358.3,559,1,0)
+ ;;^UTILITY(U,$J,358.3,614,1,3,0)
+ ;;=3^Inhalant Induced Mild Neurocog Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,614,1,4,0)
+ ;;=4^F18.988
+ ;;^UTILITY(U,$J,358.3,614,2)
+ ;;=^5003415
+ ;;^UTILITY(U,$J,358.3,615,0)
+ ;;=F18.159^^3^59^11
+ ;;^UTILITY(U,$J,358.3,615,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,559,1,3,0)
- ;;=3^Myeloid sarcoma, not having achieved remission
- ;;^UTILITY(U,$J,358.3,559,1,4,0)
- ;;=4^C92.30
- ;;^UTILITY(U,$J,358.3,559,2)
- ;;=^5001798
- ;;^UTILITY(U,$J,358.3,560,0)
- ;;=C92.31^^2^24^53
- ;;^UTILITY(U,$J,358.3,560,1,0)
+ ;;^UTILITY(U,$J,358.3,615,1,3,0)
+ ;;=3^Inhalant Induced Psychotic Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,615,1,4,0)
+ ;;=4^F18.159
+ ;;^UTILITY(U,$J,358.3,615,2)
+ ;;=^5003387
+ ;;^UTILITY(U,$J,358.3,616,0)
+ ;;=F18.259^^3^59^12
+ ;;^UTILITY(U,$J,358.3,616,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,560,1,3,0)
- ;;=3^Myeloid sarcoma, in remission
- ;;^UTILITY(U,$J,358.3,560,1,4,0)
- ;;=4^C92.31
- ;;^UTILITY(U,$J,358.3,560,2)
- ;;=^5001799
- ;;^UTILITY(U,$J,358.3,561,0)
- ;;=C92.32^^2^24^52
- ;;^UTILITY(U,$J,358.3,561,1,0)
+ ;;^UTILITY(U,$J,358.3,616,1,3,0)
+ ;;=3^Inhalant Induced Psychotic Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,616,1,4,0)
+ ;;=4^F18.259
+ ;;^UTILITY(U,$J,358.3,616,2)
+ ;;=^5003400
+ ;;^UTILITY(U,$J,358.3,617,0)
+ ;;=F18.959^^3^59^13
+ ;;^UTILITY(U,$J,358.3,617,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,561,1,3,0)
- ;;=3^Myeloid sarcoma, in relapse
- ;;^UTILITY(U,$J,358.3,561,1,4,0)
- ;;=4^C92.32
- ;;^UTILITY(U,$J,358.3,561,2)
- ;;=^5001800
- ;;^UTILITY(U,$J,358.3,562,0)
- ;;=C92.90^^2^24^51
- ;;^UTILITY(U,$J,358.3,562,1,0)
+ ;;^UTILITY(U,$J,358.3,617,1,3,0)
+ ;;=3^Inhalant Induced Psychotic Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,617,1,4,0)
+ ;;=4^F18.959
+ ;;^UTILITY(U,$J,358.3,617,2)
+ ;;=^5003412
+ ;;^UTILITY(U,$J,358.3,618,0)
+ ;;=F18.99^^3^59^20
+ ;;^UTILITY(U,$J,358.3,618,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,562,1,3,0)
- ;;=3^Myeloid leukemia, unspecified, not having achieved remission
- ;;^UTILITY(U,$J,358.3,562,1,4,0)
- ;;=4^C92.90
- ;;^UTILITY(U,$J,358.3,562,2)
- ;;=^5001810
- ;;^UTILITY(U,$J,358.3,563,0)
- ;;=C92.91^^2^24^50
- ;;^UTILITY(U,$J,358.3,563,1,0)
+ ;;^UTILITY(U,$J,358.3,618,1,3,0)
+ ;;=3^Inhalant Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,618,1,4,0)
+ ;;=4^F18.99
+ ;;^UTILITY(U,$J,358.3,618,2)
+ ;;=^5133360
+ ;;^UTILITY(U,$J,358.3,619,0)
+ ;;=F70.^^3^60^1
+ ;;^UTILITY(U,$J,358.3,619,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,563,1,3,0)
- ;;=3^Myeloid leukemia, unspecified in remission
- ;;^UTILITY(U,$J,358.3,563,1,4,0)
- ;;=4^C92.91
- ;;^UTILITY(U,$J,358.3,563,2)
- ;;=^5001811
- ;;^UTILITY(U,$J,358.3,564,0)
- ;;=C92.92^^2^24^49
- ;;^UTILITY(U,$J,358.3,564,1,0)
+ ;;^UTILITY(U,$J,358.3,619,1,3,0)
+ ;;=3^Intellectual Disabilities,Mild
+ ;;^UTILITY(U,$J,358.3,619,1,4,0)
+ ;;=4^F70.
+ ;;^UTILITY(U,$J,358.3,619,2)
+ ;;=^5003668
+ ;;^UTILITY(U,$J,358.3,620,0)
+ ;;=F71.^^3^60^2
+ ;;^UTILITY(U,$J,358.3,620,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,564,1,3,0)
- ;;=3^Myeloid leukemia, unspecified in relapse
- ;;^UTILITY(U,$J,358.3,564,1,4,0)
- ;;=4^C92.92
- ;;^UTILITY(U,$J,358.3,564,2)
- ;;=^5001812
- ;;^UTILITY(U,$J,358.3,565,0)
- ;;=C93.00^^2^24^12
- ;;^UTILITY(U,$J,358.3,565,1,0)
+ ;;^UTILITY(U,$J,358.3,620,1,3,0)
+ ;;=3^Intellectual Disabilities,Moderate
+ ;;^UTILITY(U,$J,358.3,620,1,4,0)
+ ;;=4^F71.
+ ;;^UTILITY(U,$J,358.3,620,2)
+ ;;=^5003669
+ ;;^UTILITY(U,$J,358.3,621,0)
+ ;;=F72.^^3^60^3
+ ;;^UTILITY(U,$J,358.3,621,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,565,1,3,0)
- ;;=3^Acute monoblastic/monocytic leukemia, not achieve remission
- ;;^UTILITY(U,$J,358.3,565,1,4,0)
- ;;=4^C93.00
- ;;^UTILITY(U,$J,358.3,565,2)
- ;;=^5001819
- ;;^UTILITY(U,$J,358.3,566,0)
- ;;=C93.01^^2^24^10
- ;;^UTILITY(U,$J,358.3,566,1,0)
+ ;;^UTILITY(U,$J,358.3,621,1,3,0)
+ ;;=3^Intellectual Disabilities,Severe
+ ;;^UTILITY(U,$J,358.3,621,1,4,0)
+ ;;=4^F72.
+ ;;^UTILITY(U,$J,358.3,621,2)
+ ;;=^5003670
+ ;;^UTILITY(U,$J,358.3,622,0)
+ ;;=F73.^^3^60^4
+ ;;^UTILITY(U,$J,358.3,622,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,566,1,3,0)
- ;;=3^Acute monoblastic/monocytic leukemia, in remission
- ;;^UTILITY(U,$J,358.3,566,1,4,0)
- ;;=4^C93.01
- ;;^UTILITY(U,$J,358.3,566,2)
- ;;=^5001820
- ;;^UTILITY(U,$J,358.3,567,0)
- ;;=C93.02^^2^24^11
- ;;^UTILITY(U,$J,358.3,567,1,0)
+ ;;^UTILITY(U,$J,358.3,622,1,3,0)
+ ;;=3^Intellectual Disabilities,Profound
+ ;;^UTILITY(U,$J,358.3,622,1,4,0)
+ ;;=4^F73.
+ ;;^UTILITY(U,$J,358.3,622,2)
+ ;;=^5003671
+ ;;^UTILITY(U,$J,358.3,623,0)
+ ;;=F78.^^3^60^5
+ ;;^UTILITY(U,$J,358.3,623,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,567,1,3,0)
- ;;=3^Acute monoblastic/monocytic leukemia, in relapse
- ;;^UTILITY(U,$J,358.3,567,1,4,0)
- ;;=4^C93.02
- ;;^UTILITY(U,$J,358.3,567,2)
- ;;=^5001821
- ;;^UTILITY(U,$J,358.3,568,0)
- ;;=C93.10^^2^24^31
- ;;^UTILITY(U,$J,358.3,568,1,0)
+ ;;^UTILITY(U,$J,358.3,623,1,3,0)
+ ;;=3^Intellectual Disabilities,Oth Specified
+ ;;^UTILITY(U,$J,358.3,623,1,4,0)
+ ;;=4^F78.
+ ;;^UTILITY(U,$J,358.3,623,2)
+ ;;=^5003672
+ ;;^UTILITY(U,$J,358.3,624,0)
+ ;;=F79.^^3^60^6
+ ;;^UTILITY(U,$J,358.3,624,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,568,1,3,0)
- ;;=3^Chronic myelomonocytic leukemia not achieve remission
- ;;^UTILITY(U,$J,358.3,568,1,4,0)
- ;;=4^C93.10
- ;;^UTILITY(U,$J,358.3,568,2)
- ;;=^5001822
- ;;^UTILITY(U,$J,358.3,569,0)
- ;;=C93.11^^2^24^33
- ;;^UTILITY(U,$J,358.3,569,1,0)
+ ;;^UTILITY(U,$J,358.3,624,1,3,0)
+ ;;=3^Intellectual Disabilities,Unspec
+ ;;^UTILITY(U,$J,358.3,624,1,4,0)
+ ;;=4^F79.
+ ;;^UTILITY(U,$J,358.3,624,2)
+ ;;=^5003673
+ ;;^UTILITY(U,$J,358.3,625,0)
+ ;;=Z00.6^^3^61^1
+ ;;^UTILITY(U,$J,358.3,625,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,569,1,3,0)
- ;;=3^Chronic myelomonocytic leukemia, in remission
- ;;^UTILITY(U,$J,358.3,569,1,4,0)
- ;;=4^C93.11
- ;;^UTILITY(U,$J,358.3,569,2)
- ;;=^5001823
- ;;^UTILITY(U,$J,358.3,570,0)
- ;;=C93.12^^2^24^32
- ;;^UTILITY(U,$J,358.3,570,1,0)
+ ;;^UTILITY(U,$J,358.3,625,1,3,0)
+ ;;=3^Exam of Participant of Control in Clinical Research Program
+ ;;^UTILITY(U,$J,358.3,625,1,4,0)
+ ;;=4^Z00.6
+ ;;^UTILITY(U,$J,358.3,625,2)
+ ;;=^5062608
+ ;;^UTILITY(U,$J,358.3,626,0)
+ ;;=F45.22^^3^62^1
+ ;;^UTILITY(U,$J,358.3,626,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,570,1,3,0)
- ;;=3^Chronic myelomonocytic leukemia, in relapse
+ ;;^UTILITY(U,$J,358.3,626,1,3,0)
+ ;;=3^Body Dysmorphic Disorder
+ ;;^UTILITY(U,$J,358.3,626,1,4,0)
+ ;;=4^F45.22
+ ;;^UTILITY(U,$J,358.3,626,2)
+ ;;=^5003588
+ ;;^UTILITY(U,$J,358.3,627,0)
+ ;;=F45.20^^3^62^7
+ ;;^UTILITY(U,$J,358.3,627,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,627,1,3,0)
+ ;;=3^Hypochondiacal Disorder,Unspec

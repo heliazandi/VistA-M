@@ -1,130 +1,128 @@
-IBDEI03U ; ; 06-AUG-2015
+IBDEI03U ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1264,1,4,0)
- ;;=4^C79.52
- ;;^UTILITY(U,$J,358.3,1264,2)
- ;;=^5001351
- ;;^UTILITY(U,$J,358.3,1265,0)
- ;;=C79.71^^3^39^125
- ;;^UTILITY(U,$J,358.3,1265,1,0)
+ ;;^UTILITY(U,$J,358.3,1368,2)
+ ;;=^5020573
+ ;;^UTILITY(U,$J,358.3,1369,0)
+ ;;=R49.8^^8^135^92
+ ;;^UTILITY(U,$J,358.3,1369,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1265,1,3,0)
- ;;=3^Secondary malignant neoplasm of right adrenal gland
- ;;^UTILITY(U,$J,358.3,1265,1,4,0)
- ;;=4^C79.71
- ;;^UTILITY(U,$J,358.3,1265,2)
- ;;=^5001356
- ;;^UTILITY(U,$J,358.3,1266,0)
- ;;=C79.72^^3^39^122
- ;;^UTILITY(U,$J,358.3,1266,1,0)
+ ;;^UTILITY(U,$J,358.3,1369,1,3,0)
+ ;;=3^Voice and Resonance Disorders NEC
+ ;;^UTILITY(U,$J,358.3,1369,1,4,0)
+ ;;=4^R49.8
+ ;;^UTILITY(U,$J,358.3,1369,2)
+ ;;=^5019505
+ ;;^UTILITY(U,$J,358.3,1370,0)
+ ;;=T36.5X1A^^8^135^19
+ ;;^UTILITY(U,$J,358.3,1370,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1266,1,3,0)
- ;;=3^Secondary malignant neoplasm of left adrenal gland
- ;;^UTILITY(U,$J,358.3,1266,1,4,0)
- ;;=4^C79.72
- ;;^UTILITY(U,$J,358.3,1266,2)
- ;;=^5001357
- ;;^UTILITY(U,$J,358.3,1267,0)
- ;;=C83.50^^3^39^46
- ;;^UTILITY(U,$J,358.3,1267,1,0)
+ ;;^UTILITY(U,$J,358.3,1370,1,3,0)
+ ;;=3^Poisoning by aminoglycosides, accidental, init
+ ;;^UTILITY(U,$J,358.3,1370,1,4,0)
+ ;;=4^T36.5X1A
+ ;;^UTILITY(U,$J,358.3,1370,2)
+ ;;=^5049346
+ ;;^UTILITY(U,$J,358.3,1371,0)
+ ;;=T36.5X1D^^8^135^20
+ ;;^UTILITY(U,$J,358.3,1371,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1267,1,3,0)
- ;;=3^Lymphoblastic (diffuse) lymphoma, unspecified site
- ;;^UTILITY(U,$J,358.3,1267,1,4,0)
- ;;=4^C83.50
- ;;^UTILITY(U,$J,358.3,1267,2)
- ;;=^5001581
- ;;^UTILITY(U,$J,358.3,1268,0)
- ;;=C83.59^^3^39^47
- ;;^UTILITY(U,$J,358.3,1268,1,0)
+ ;;^UTILITY(U,$J,358.3,1371,1,3,0)
+ ;;=3^Poisoning by aminoglycosides, accidental, subs
+ ;;^UTILITY(U,$J,358.3,1371,1,4,0)
+ ;;=4^T36.5X1D
+ ;;^UTILITY(U,$J,358.3,1371,2)
+ ;;=^5049347
+ ;;^UTILITY(U,$J,358.3,1372,0)
+ ;;=T36.5X1S^^8^135^21
+ ;;^UTILITY(U,$J,358.3,1372,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1268,1,3,0)
- ;;=3^Lymphoblastic lymphoma, extrnod and solid organ sites
- ;;^UTILITY(U,$J,358.3,1268,1,4,0)
- ;;=4^C83.59
- ;;^UTILITY(U,$J,358.3,1268,2)
- ;;=^5001590
- ;;^UTILITY(U,$J,358.3,1269,0)
- ;;=C83.70^^3^39^18
- ;;^UTILITY(U,$J,358.3,1269,1,0)
+ ;;^UTILITY(U,$J,358.3,1372,1,3,0)
+ ;;=3^Poisoning by aminoglycosides, accidental, sequela
+ ;;^UTILITY(U,$J,358.3,1372,1,4,0)
+ ;;=4^T36.5X1S
+ ;;^UTILITY(U,$J,358.3,1372,2)
+ ;;=^5049348
+ ;;^UTILITY(U,$J,358.3,1373,0)
+ ;;=T36.5X3A^^8^135^22
+ ;;^UTILITY(U,$J,358.3,1373,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1269,1,3,0)
- ;;=3^Burkitt lymphoma, unspecified site
- ;;^UTILITY(U,$J,358.3,1269,1,4,0)
- ;;=4^C83.70
- ;;^UTILITY(U,$J,358.3,1269,2)
- ;;=^5001591
- ;;^UTILITY(U,$J,358.3,1270,0)
- ;;=C83.79^^3^39^17
- ;;^UTILITY(U,$J,358.3,1270,1,0)
+ ;;^UTILITY(U,$J,358.3,1373,1,3,0)
+ ;;=3^Poisoning by aminoglycosides, assault, initial encounter
+ ;;^UTILITY(U,$J,358.3,1373,1,4,0)
+ ;;=4^T36.5X3A
+ ;;^UTILITY(U,$J,358.3,1373,2)
+ ;;=^5049352
+ ;;^UTILITY(U,$J,358.3,1374,0)
+ ;;=T36.5X3D^^8^135^23
+ ;;^UTILITY(U,$J,358.3,1374,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1270,1,3,0)
- ;;=3^Burkitt lymphoma, extranodal and solid organ sites
- ;;^UTILITY(U,$J,358.3,1270,1,4,0)
- ;;=4^C83.79
- ;;^UTILITY(U,$J,358.3,1270,2)
- ;;=^5001600
- ;;^UTILITY(U,$J,358.3,1271,0)
- ;;=C81.90^^3^39^40
- ;;^UTILITY(U,$J,358.3,1271,1,0)
+ ;;^UTILITY(U,$J,358.3,1374,1,3,0)
+ ;;=3^Poisoning by aminoglycosides, assault, subsequent encounter
+ ;;^UTILITY(U,$J,358.3,1374,1,4,0)
+ ;;=4^T36.5X3D
+ ;;^UTILITY(U,$J,358.3,1374,2)
+ ;;=^5049353
+ ;;^UTILITY(U,$J,358.3,1375,0)
+ ;;=T36.5X3S^^8^135^24
+ ;;^UTILITY(U,$J,358.3,1375,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1271,1,3,0)
- ;;=3^Hodgkin lymphoma, unspecified, unspecified site
- ;;^UTILITY(U,$J,358.3,1271,1,4,0)
- ;;=4^C81.90
- ;;^UTILITY(U,$J,358.3,1271,2)
- ;;=^5001451
- ;;^UTILITY(U,$J,358.3,1272,0)
- ;;=C81.99^^3^39^39
- ;;^UTILITY(U,$J,358.3,1272,1,0)
+ ;;^UTILITY(U,$J,358.3,1375,1,3,0)
+ ;;=3^Poisoning by aminoglycosides, assault, sequela
+ ;;^UTILITY(U,$J,358.3,1375,1,4,0)
+ ;;=4^T36.5X3S
+ ;;^UTILITY(U,$J,358.3,1375,2)
+ ;;=^5049354
+ ;;^UTILITY(U,$J,358.3,1376,0)
+ ;;=T36.5X2A^^8^135^25
+ ;;^UTILITY(U,$J,358.3,1376,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1272,1,3,0)
- ;;=3^Hodgkin lymphoma, unsp, extranodal and solid organ sites
- ;;^UTILITY(U,$J,358.3,1272,1,4,0)
- ;;=4^C81.99
- ;;^UTILITY(U,$J,358.3,1272,2)
- ;;=^5001460
- ;;^UTILITY(U,$J,358.3,1273,0)
- ;;=C82.90^^3^39^33
- ;;^UTILITY(U,$J,358.3,1273,1,0)
+ ;;^UTILITY(U,$J,358.3,1376,1,3,0)
+ ;;=3^Poisoning by aminoglycosides, intentional self-harm, init
+ ;;^UTILITY(U,$J,358.3,1376,1,4,0)
+ ;;=4^T36.5X2A
+ ;;^UTILITY(U,$J,358.3,1376,2)
+ ;;=^5049349
+ ;;^UTILITY(U,$J,358.3,1377,0)
+ ;;=T36.5X2D^^8^135^26
+ ;;^UTILITY(U,$J,358.3,1377,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1273,1,3,0)
- ;;=3^Follicular lymphoma, unspecified, unspecified site
- ;;^UTILITY(U,$J,358.3,1273,1,4,0)
- ;;=4^C82.90
- ;;^UTILITY(U,$J,358.3,1273,2)
- ;;=^5001541
- ;;^UTILITY(U,$J,358.3,1274,0)
- ;;=C82.99^^3^39^32
- ;;^UTILITY(U,$J,358.3,1274,1,0)
+ ;;^UTILITY(U,$J,358.3,1377,1,3,0)
+ ;;=3^Poisoning by aminoglycosides, intentional self-harm, subs
+ ;;^UTILITY(U,$J,358.3,1377,1,4,0)
+ ;;=4^T36.5X2D
+ ;;^UTILITY(U,$J,358.3,1377,2)
+ ;;=^5049350
+ ;;^UTILITY(U,$J,358.3,1378,0)
+ ;;=T36.5X2S^^8^135^27
+ ;;^UTILITY(U,$J,358.3,1378,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1274,1,3,0)
- ;;=3^Follicular lymphoma, unsp, extranodal and solid organ sites
- ;;^UTILITY(U,$J,358.3,1274,1,4,0)
- ;;=4^C82.99
- ;;^UTILITY(U,$J,358.3,1274,2)
- ;;=^5001550
- ;;^UTILITY(U,$J,358.3,1275,0)
- ;;=C91.40^^3^39^34
- ;;^UTILITY(U,$J,358.3,1275,1,0)
+ ;;^UTILITY(U,$J,358.3,1378,1,3,0)
+ ;;=3^Poisoning by aminoglycosides, intentional self-harm, sequela
+ ;;^UTILITY(U,$J,358.3,1378,1,4,0)
+ ;;=4^T36.5X2S
+ ;;^UTILITY(U,$J,358.3,1378,2)
+ ;;=^5049351
+ ;;^UTILITY(U,$J,358.3,1379,0)
+ ;;=T36.5X4A^^8^135^28
+ ;;^UTILITY(U,$J,358.3,1379,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1275,1,3,0)
- ;;=3^Hairy cell leukemia not having achieved remission
- ;;^UTILITY(U,$J,358.3,1275,1,4,0)
- ;;=4^C91.40
- ;;^UTILITY(U,$J,358.3,1275,2)
- ;;=^5001771
- ;;^UTILITY(U,$J,358.3,1276,0)
- ;;=C90.00^^3^39^88
- ;;^UTILITY(U,$J,358.3,1276,1,0)
+ ;;^UTILITY(U,$J,358.3,1379,1,3,0)
+ ;;=3^Poisoning by aminoglycosides, undetermined, init encntr
+ ;;^UTILITY(U,$J,358.3,1379,1,4,0)
+ ;;=4^T36.5X4A
+ ;;^UTILITY(U,$J,358.3,1379,2)
+ ;;=^5049355
+ ;;^UTILITY(U,$J,358.3,1380,0)
+ ;;=T36.5X4D^^8^135^29
+ ;;^UTILITY(U,$J,358.3,1380,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1276,1,3,0)
- ;;=3^Multiple myeloma not having achieved remission
- ;;^UTILITY(U,$J,358.3,1276,1,4,0)
- ;;=4^C90.00
- ;;^UTILITY(U,$J,358.3,1276,2)
- ;;=^5001752
- ;;^UTILITY(U,$J,358.3,1277,0)
- ;;=C90.01^^3^39^87
+ ;;^UTILITY(U,$J,358.3,1380,1,3,0)
+ ;;=3^Poisoning by aminoglycosides, undetermined, subs encntr
+ ;;^UTILITY(U,$J,358.3,1380,1,4,0)
+ ;;=4^T36.5X4D
+ ;;^UTILITY(U,$J,358.3,1380,2)
+ ;;=^5049356
+ ;;^UTILITY(U,$J,358.3,1381,0)
+ ;;=T36.5X4S^^8^135^30

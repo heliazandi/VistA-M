@@ -1,132 +1,124 @@
-IBDEI127 ; ; 06-AUG-2015
+IBDEI127 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18689,0)
- ;;=96368^^104^1206^6^^^^1
- ;;^UTILITY(U,$J,358.3,18689,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18689,1,1,0)
- ;;=1^96368
- ;;^UTILITY(U,$J,358.3,18689,1,2,0)
- ;;=2^IVPB, Up to 1hr
- ;;^UTILITY(U,$J,358.3,18690,0)
- ;;=96374^^104^1206^7^^^^1
- ;;^UTILITY(U,$J,358.3,18690,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18690,1,1,0)
- ;;=1^96374
- ;;^UTILITY(U,$J,358.3,18690,1,2,0)
- ;;=2^IV PUSH,SINGLE DRUG
- ;;^UTILITY(U,$J,358.3,18691,0)
- ;;=96375^^104^1206^8^^^^1
- ;;^UTILITY(U,$J,358.3,18691,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18691,1,1,0)
- ;;=1^96375
- ;;^UTILITY(U,$J,358.3,18691,1,2,0)
- ;;=2^IV PUSH,EACH ADD DRUG
- ;;^UTILITY(U,$J,358.3,18692,0)
- ;;=J7608^^104^1207^1^^^^1
- ;;^UTILITY(U,$J,358.3,18692,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18692,1,1,0)
- ;;=1^J7608
- ;;^UTILITY(U,$J,358.3,18692,1,2,0)
- ;;=2^Acetylcysteine,UD
- ;;^UTILITY(U,$J,358.3,18693,0)
- ;;=J7644^^104^1207^4^^^^1
- ;;^UTILITY(U,$J,358.3,18693,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18693,1,1,0)
- ;;=1^J7644
- ;;^UTILITY(U,$J,358.3,18693,1,2,0)
- ;;=2^Ipratropium Bromide
- ;;^UTILITY(U,$J,358.3,18694,0)
- ;;=J7611^^104^1207^2^^^^1
- ;;^UTILITY(U,$J,358.3,18694,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18694,1,1,0)
- ;;=1^J7611
- ;;^UTILITY(U,$J,358.3,18694,1,2,0)
- ;;=2^Albuterol,Concentrated,1mg
- ;;^UTILITY(U,$J,358.3,18695,0)
- ;;=J7613^^104^1207^3^^^^1
- ;;^UTILITY(U,$J,358.3,18695,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18695,1,1,0)
- ;;=1^J7613
- ;;^UTILITY(U,$J,358.3,18695,1,2,0)
- ;;=2^Albuterol,Unit Dose,1mg
- ;;^UTILITY(U,$J,358.3,18696,0)
- ;;=J3535^^104^1208^1^^^^1
- ;;^UTILITY(U,$J,358.3,18696,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18696,1,1,0)
- ;;=1^J3535
- ;;^UTILITY(U,$J,358.3,18696,1,2,0)
- ;;=2^Drug Administered through MDI
- ;;^UTILITY(U,$J,358.3,18697,0)
- ;;=94664^^104^1209^1^^^^1
- ;;^UTILITY(U,$J,358.3,18697,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18697,1,1,0)
- ;;=1^94664
- ;;^UTILITY(U,$J,358.3,18697,1,2,0)
- ;;=2^Evaluate Pt Use of Inhaler
- ;;^UTILITY(U,$J,358.3,18698,0)
- ;;=36000^^104^1210^5^^^^1
- ;;^UTILITY(U,$J,358.3,18698,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18698,1,1,0)
- ;;=1^36000
- ;;^UTILITY(U,$J,358.3,18698,1,2,0)
- ;;=2^Place Needle in Vein
- ;;^UTILITY(U,$J,358.3,18699,0)
- ;;=94760^^104^1210^1^^^^1
- ;;^UTILITY(U,$J,358.3,18699,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18699,1,1,0)
- ;;=1^94760
- ;;^UTILITY(U,$J,358.3,18699,1,2,0)
- ;;=2^ABG
- ;;^UTILITY(U,$J,358.3,18700,0)
- ;;=82948^^104^1210^3^^^^1
- ;;^UTILITY(U,$J,358.3,18700,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18700,1,1,0)
- ;;=1^82948
- ;;^UTILITY(U,$J,358.3,18700,1,2,0)
- ;;=2^Fingerstick, Glucose
- ;;^UTILITY(U,$J,358.3,18701,0)
- ;;=36410^^104^1210^4^^^^1
- ;;^UTILITY(U,$J,358.3,18701,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18701,1,1,0)
- ;;=1^36410
- ;;^UTILITY(U,$J,358.3,18701,1,2,0)
- ;;=2^Non-Routine Blood Draw
- ;;^UTILITY(U,$J,358.3,18702,0)
- ;;=82075^^104^1210^2^^^^1
- ;;^UTILITY(U,$J,358.3,18702,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18702,1,1,0)
- ;;=1^82075
- ;;^UTILITY(U,$J,358.3,18702,1,2,0)
- ;;=2^Assay of Breath Ethanol
- ;;^UTILITY(U,$J,358.3,18703,0)
- ;;=36600^^104^1210^6^^^^1
- ;;^UTILITY(U,$J,358.3,18703,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18703,1,1,0)
- ;;=1^36600
- ;;^UTILITY(U,$J,358.3,18703,1,2,0)
- ;;=2^Withdrawal of Arterial Blood
- ;;^UTILITY(U,$J,358.3,18704,0)
- ;;=2000F^^104^1211^1^^^^1
- ;;^UTILITY(U,$J,358.3,18704,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,18704,1,1,0)
- ;;=1^2000F
- ;;^UTILITY(U,$J,358.3,18704,1,2,0)
- ;;=2^Blood Pressure Measure
+ ;;^UTILITY(U,$J,358.3,17993,1,4,0)
+ ;;=4^T80.212A
+ ;;^UTILITY(U,$J,358.3,17993,2)
+ ;;=^5054353
+ ;;^UTILITY(U,$J,358.3,17994,0)
+ ;;=T80.22XA^^76^860^3
+ ;;^UTILITY(U,$J,358.3,17994,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17994,1,3,0)
+ ;;=3^Infection Following Transfusion/Infusion/Injec Blood Products,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17994,1,4,0)
+ ;;=4^T80.22XA
+ ;;^UTILITY(U,$J,358.3,17994,2)
+ ;;=^5054362
+ ;;^UTILITY(U,$J,358.3,17995,0)
+ ;;=T80.29XA^^76^860^2
+ ;;^UTILITY(U,$J,358.3,17995,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17995,1,3,0)
+ ;;=3^Infection Following Infusion/Transfusion/Therapeutic Injection,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17995,1,4,0)
+ ;;=4^T80.29XA
+ ;;^UTILITY(U,$J,358.3,17995,2)
+ ;;=^5054365
+ ;;^UTILITY(U,$J,358.3,17996,0)
+ ;;=T81.4XXA^^76^860^4
+ ;;^UTILITY(U,$J,358.3,17996,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17996,1,3,0)
+ ;;=3^Infection Following a Procedure NEC,Init  Encntr
+ ;;^UTILITY(U,$J,358.3,17996,1,4,0)
+ ;;=4^T81.4XXA
+ ;;^UTILITY(U,$J,358.3,17996,2)
+ ;;=^5054479
+ ;;^UTILITY(U,$J,358.3,17997,0)
+ ;;=T83.51XA^^76^860^8
+ ;;^UTILITY(U,$J,358.3,17997,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17997,1,3,0)
+ ;;=3^Infection d/t Indwelling Urinary Catheter,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17997,1,4,0)
+ ;;=4^T83.51XA
+ ;;^UTILITY(U,$J,358.3,17997,2)
+ ;;=^5055058
+ ;;^UTILITY(U,$J,358.3,17998,0)
+ ;;=T85.79XA^^76^860^7
+ ;;^UTILITY(U,$J,358.3,17998,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17998,1,3,0)
+ ;;=3^Infection d/t Implantable Device Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17998,1,4,0)
+ ;;=4^T85.79XA
+ ;;^UTILITY(U,$J,358.3,17998,2)
+ ;;=^5055676
+ ;;^UTILITY(U,$J,358.3,17999,0)
+ ;;=T82.6XXA^^76^860^5
+ ;;^UTILITY(U,$J,358.3,17999,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17999,1,3,0)
+ ;;=3^Infection d/t Cardiac Valve Prosthesis,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17999,1,4,0)
+ ;;=4^T82.6XXA
+ ;;^UTILITY(U,$J,358.3,17999,2)
+ ;;=^5054908
+ ;;^UTILITY(U,$J,358.3,18000,0)
+ ;;=T84.52XA^^76^860^9
+ ;;^UTILITY(U,$J,358.3,18000,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18000,1,3,0)
+ ;;=3^Infection d/t Left Hip Prosthesis,Init Encntr
+ ;;^UTILITY(U,$J,358.3,18000,1,4,0)
+ ;;=4^T84.52XA
+ ;;^UTILITY(U,$J,358.3,18000,2)
+ ;;=^5055388
+ ;;^UTILITY(U,$J,358.3,18001,0)
+ ;;=T84.54XA^^76^860^10
+ ;;^UTILITY(U,$J,358.3,18001,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18001,1,3,0)
+ ;;=3^Infection d/t Left Knee Prosthesis,Init Encntrreaction due to internal left knee prosth, init
+ ;;^UTILITY(U,$J,358.3,18001,1,4,0)
+ ;;=4^T84.54XA
+ ;;^UTILITY(U,$J,358.3,18001,2)
+ ;;=^5055394
+ ;;^UTILITY(U,$J,358.3,18002,0)
+ ;;=T84.51XA^^76^860^11
+ ;;^UTILITY(U,$J,358.3,18002,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18002,1,3,0)
+ ;;=3^Infection d/t Right Hip Prosthesis,Init Encntr
+ ;;^UTILITY(U,$J,358.3,18002,1,4,0)
+ ;;=4^T84.51XA
+ ;;^UTILITY(U,$J,358.3,18002,2)
+ ;;=^5055385
+ ;;^UTILITY(U,$J,358.3,18003,0)
+ ;;=T84.53XA^^76^860^12
+ ;;^UTILITY(U,$J,358.3,18003,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18003,1,3,0)
+ ;;=3^Infection d/t Right Knee Prosthesis,Init Encntr
+ ;;^UTILITY(U,$J,358.3,18003,1,4,0)
+ ;;=4^T84.53XA
+ ;;^UTILITY(U,$J,358.3,18003,2)
+ ;;=^5055391
+ ;;^UTILITY(U,$J,358.3,18004,0)
+ ;;=T84.59XA^^76^860^13
+ ;;^UTILITY(U,$J,358.3,18004,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18004,1,3,0)
+ ;;=3^Infection d/t Shoulder Joint Prosthesis,Init Encntr
+ ;;^UTILITY(U,$J,358.3,18004,1,4,0)
+ ;;=4^T84.59XA
+ ;;^UTILITY(U,$J,358.3,18004,2)
+ ;;=^5055397
+ ;;^UTILITY(U,$J,358.3,18005,0)
+ ;;=47000^^77^861^3^^^^1
+ ;;^UTILITY(U,$J,358.3,18005,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18005,1,2,0)
+ ;;=2^Percutaneous Liver Biopsy

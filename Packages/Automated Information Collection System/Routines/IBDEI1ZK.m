@@ -1,122 +1,134 @@
-IBDEI1ZK ; ; 06-AUG-2015
+IBDEI1ZK ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34783,1,4,0)
- ;;=4^S42.342S
- ;;^UTILITY(U,$J,358.3,34783,2)
- ;;=^5027160
- ;;^UTILITY(U,$J,358.3,34784,0)
- ;;=S42.341S^^183^2023^48
- ;;^UTILITY(U,$J,358.3,34784,1,0)
+ ;;^UTILITY(U,$J,358.3,33697,1,4,0)
+ ;;=4^N15.9
+ ;;^UTILITY(U,$J,358.3,33697,2)
+ ;;=^5015596
+ ;;^UTILITY(U,$J,358.3,33698,0)
+ ;;=N17.9^^131^1676^61
+ ;;^UTILITY(U,$J,358.3,33698,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34784,1,3,0)
- ;;=3^Disp fx of spiral shaft of humerus, right arm, sequela
- ;;^UTILITY(U,$J,358.3,34784,1,4,0)
- ;;=4^S42.341S
- ;;^UTILITY(U,$J,358.3,34784,2)
- ;;=^5027153
- ;;^UTILITY(U,$J,358.3,34785,0)
- ;;=S42.472S^^183^2023^49
- ;;^UTILITY(U,$J,358.3,34785,1,0)
+ ;;^UTILITY(U,$J,358.3,33698,1,3,0)
+ ;;=3^Kidney Failure,Acute,Unspec
+ ;;^UTILITY(U,$J,358.3,33698,1,4,0)
+ ;;=4^N17.9
+ ;;^UTILITY(U,$J,358.3,33698,2)
+ ;;=^338532
+ ;;^UTILITY(U,$J,358.3,33699,0)
+ ;;=N19.^^131^1676^62
+ ;;^UTILITY(U,$J,358.3,33699,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34785,1,3,0)
- ;;=3^Disp fx of transcondylar of left humerus, sequela 
- ;;^UTILITY(U,$J,358.3,34785,1,4,0)
- ;;=4^S42.472S
- ;;^UTILITY(U,$J,358.3,34785,2)
- ;;=^5027587
- ;;^UTILITY(U,$J,358.3,34786,0)
- ;;=S42.471S^^183^2023^50
- ;;^UTILITY(U,$J,358.3,34786,1,0)
+ ;;^UTILITY(U,$J,358.3,33699,1,3,0)
+ ;;=3^Kidney Failure,Unspec
+ ;;^UTILITY(U,$J,358.3,33699,1,4,0)
+ ;;=4^N19.
+ ;;^UTILITY(U,$J,358.3,33699,2)
+ ;;=^5015607
+ ;;^UTILITY(U,$J,358.3,33700,0)
+ ;;=N11.0^^131^1676^90
+ ;;^UTILITY(U,$J,358.3,33700,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34786,1,3,0)
- ;;=3^Disp fx of transcondylar of right humerus, sequela 
- ;;^UTILITY(U,$J,358.3,34786,1,4,0)
- ;;=4^S42.471S
- ;;^UTILITY(U,$J,358.3,34786,2)
- ;;=^5027580
- ;;^UTILITY(U,$J,358.3,34787,0)
- ;;=S42.322S^^183^2023^51
- ;;^UTILITY(U,$J,358.3,34787,1,0)
+ ;;^UTILITY(U,$J,358.3,33700,1,3,0)
+ ;;=3^Pyelonephritis,Chronic Nonobstructive Reflux-Associated
+ ;;^UTILITY(U,$J,358.3,33700,1,4,0)
+ ;;=4^N11.0
+ ;;^UTILITY(U,$J,358.3,33700,2)
+ ;;=^5015571
+ ;;^UTILITY(U,$J,358.3,33701,0)
+ ;;=N10.^^131^1676^67
+ ;;^UTILITY(U,$J,358.3,33701,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34787,1,3,0)
- ;;=3^Disp fx of transverse shaft of humerus, left arm, sequela
- ;;^UTILITY(U,$J,358.3,34787,1,4,0)
- ;;=4^S42.322S
- ;;^UTILITY(U,$J,358.3,34787,2)
- ;;=^5027076
- ;;^UTILITY(U,$J,358.3,34788,0)
- ;;=S42.321S^^183^2023^52
- ;;^UTILITY(U,$J,358.3,34788,1,0)
+ ;;^UTILITY(U,$J,358.3,33701,1,3,0)
+ ;;=3^Nephritis Acute Tubulo-Interstitial
+ ;;^UTILITY(U,$J,358.3,33701,1,4,0)
+ ;;=4^N10.
+ ;;^UTILITY(U,$J,358.3,33701,2)
+ ;;=^5015570
+ ;;^UTILITY(U,$J,358.3,33702,0)
+ ;;=N20.2^^131^1676^8
+ ;;^UTILITY(U,$J,358.3,33702,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34788,1,3,0)
- ;;=3^Disp fx of transverse shaft of humerus, right arm, sequela
- ;;^UTILITY(U,$J,358.3,34788,1,4,0)
- ;;=4^S42.321S
- ;;^UTILITY(U,$J,358.3,34788,2)
- ;;=^5027069
- ;;^UTILITY(U,$J,358.3,34789,0)
- ;;=S42.312S^^183^2023^53
- ;;^UTILITY(U,$J,358.3,34789,1,0)
+ ;;^UTILITY(U,$J,358.3,33702,1,3,0)
+ ;;=3^Calculus Kidney w/ Calculus Ureter
+ ;;^UTILITY(U,$J,358.3,33702,1,4,0)
+ ;;=4^N20.2
+ ;;^UTILITY(U,$J,358.3,33702,2)
+ ;;=^5015609
+ ;;^UTILITY(U,$J,358.3,33703,0)
+ ;;=N20.0^^131^1676^7
+ ;;^UTILITY(U,$J,358.3,33703,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34789,1,3,0)
- ;;=3^Greenstick fracture of shaft of humerus, left arm, sequela
- ;;^UTILITY(U,$J,358.3,34789,1,4,0)
- ;;=4^S42.312S
- ;;^UTILITY(U,$J,358.3,34789,2)
- ;;=^5027056
- ;;^UTILITY(U,$J,358.3,34790,0)
- ;;=S42.311S^^183^2023^54
- ;;^UTILITY(U,$J,358.3,34790,1,0)
+ ;;^UTILITY(U,$J,358.3,33703,1,3,0)
+ ;;=3^Calculus Kidney
+ ;;^UTILITY(U,$J,358.3,33703,1,4,0)
+ ;;=4^N20.0
+ ;;^UTILITY(U,$J,358.3,33703,2)
+ ;;=^67056
+ ;;^UTILITY(U,$J,358.3,33704,0)
+ ;;=N29.^^131^1676^60
+ ;;^UTILITY(U,$J,358.3,33704,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34790,1,3,0)
- ;;=3^Greenstick fracture of shaft of humerus, right arm, sequela
- ;;^UTILITY(U,$J,358.3,34790,1,4,0)
- ;;=4^S42.311S
- ;;^UTILITY(U,$J,358.3,34790,2)
- ;;=^5027050
- ;;^UTILITY(U,$J,358.3,34791,0)
- ;;=S42.448S^^183^2023^55
- ;;^UTILITY(U,$J,358.3,34791,1,0)
+ ;;^UTILITY(U,$J,358.3,33704,1,3,0)
+ ;;=3^Kidney & Ureter Disorders in Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,33704,1,4,0)
+ ;;=4^N29.
+ ;;^UTILITY(U,$J,358.3,33704,2)
+ ;;=^5015631
+ ;;^UTILITY(U,$J,358.3,33705,0)
+ ;;=N28.9^^131^1676^59
+ ;;^UTILITY(U,$J,358.3,33705,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34791,1,3,0)
- ;;=3^Incarcerated fx of medial epicondyl of l humerus, sequela
- ;;^UTILITY(U,$J,358.3,34791,1,4,0)
- ;;=4^S42.448S
- ;;^UTILITY(U,$J,358.3,34791,2)
- ;;=^5027482
- ;;^UTILITY(U,$J,358.3,34792,0)
- ;;=S42.447S^^183^2023^56
- ;;^UTILITY(U,$J,358.3,34792,1,0)
+ ;;^UTILITY(U,$J,358.3,33705,1,3,0)
+ ;;=3^Kidney & Ureter Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,33705,1,4,0)
+ ;;=4^N28.9
+ ;;^UTILITY(U,$J,358.3,33705,2)
+ ;;=^5015630
+ ;;^UTILITY(U,$J,358.3,33706,0)
+ ;;=N30.01^^131^1676^20
+ ;;^UTILITY(U,$J,358.3,33706,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34792,1,3,0)
- ;;=3^Incarcerated fx of medial epicondyl of r humerus, sequela
- ;;^UTILITY(U,$J,358.3,34792,1,4,0)
- ;;=4^S42.447S
- ;;^UTILITY(U,$J,358.3,34792,2)
- ;;=^5027475
- ;;^UTILITY(U,$J,358.3,34793,0)
- ;;=S42.355S^^183^2023^61
- ;;^UTILITY(U,$J,358.3,34793,1,0)
+ ;;^UTILITY(U,$J,358.3,33706,1,3,0)
+ ;;=3^Cystitis w/ Hematuria,Acute
+ ;;^UTILITY(U,$J,358.3,33706,1,4,0)
+ ;;=4^N30.01
+ ;;^UTILITY(U,$J,358.3,33706,2)
+ ;;=^5015633
+ ;;^UTILITY(U,$J,358.3,33707,0)
+ ;;=N30.00^^131^1676^22
+ ;;^UTILITY(U,$J,358.3,33707,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34793,1,3,0)
- ;;=3^Nondisp fx of commnt shaft of humerus, left arm, sequela
- ;;^UTILITY(U,$J,358.3,34793,1,4,0)
- ;;=4^S42.355S
- ;;^UTILITY(U,$J,358.3,34793,2)
- ;;=^5027223
- ;;^UTILITY(U,$J,358.3,34794,0)
- ;;=S42.354S^^183^2023^62
- ;;^UTILITY(U,$J,358.3,34794,1,0)
+ ;;^UTILITY(U,$J,358.3,33707,1,3,0)
+ ;;=3^Cystitis w/o Hematuria,Acute
+ ;;^UTILITY(U,$J,358.3,33707,1,4,0)
+ ;;=4^N30.00
+ ;;^UTILITY(U,$J,358.3,33707,2)
+ ;;=^5015632
+ ;;^UTILITY(U,$J,358.3,33708,0)
+ ;;=N30.41^^131^1676^21
+ ;;^UTILITY(U,$J,358.3,33708,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34794,1,3,0)
- ;;=3^Nondisp fx of commnt shaft of humerus, right arm, sequela
- ;;^UTILITY(U,$J,358.3,34794,1,4,0)
- ;;=4^S42.354S
- ;;^UTILITY(U,$J,358.3,34794,2)
- ;;=^5027216
- ;;^UTILITY(U,$J,358.3,34795,0)
- ;;=S42.425S^^183^2023^63
- ;;^UTILITY(U,$J,358.3,34795,1,0)
+ ;;^UTILITY(U,$J,358.3,33708,1,3,0)
+ ;;=3^Cystitis w/ Hematuria,Irradiation
+ ;;^UTILITY(U,$J,358.3,33708,1,4,0)
+ ;;=4^N30.41
+ ;;^UTILITY(U,$J,358.3,33708,2)
+ ;;=^5015640
+ ;;^UTILITY(U,$J,358.3,33709,0)
+ ;;=N30.40^^131^1676^23
+ ;;^UTILITY(U,$J,358.3,33709,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33709,1,3,0)
+ ;;=3^Cystitis w/o Hematuria,Irradiation
+ ;;^UTILITY(U,$J,358.3,33709,1,4,0)
+ ;;=4^N30.40
+ ;;^UTILITY(U,$J,358.3,33709,2)
+ ;;=^5015639
+ ;;^UTILITY(U,$J,358.3,33710,0)
+ ;;=N32.0^^131^1676^6
+ ;;^UTILITY(U,$J,358.3,33710,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33710,1,3,0)
+ ;;=3^Bladder-Neck Obstruction

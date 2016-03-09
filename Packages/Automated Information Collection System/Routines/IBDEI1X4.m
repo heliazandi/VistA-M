@@ -1,132 +1,132 @@
-IBDEI1X4 ; ; 06-AUG-2015
+IBDEI1X4 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33712,2)
- ;;=^5024008
- ;;^UTILITY(U,$J,358.3,33713,0)
- ;;=S31.010A^^182^2009^2
- ;;^UTILITY(U,$J,358.3,33713,1,0)
+ ;;^UTILITY(U,$J,358.3,32539,1,4,0)
+ ;;=4^G90.523
+ ;;^UTILITY(U,$J,358.3,32539,2)
+ ;;=^5004169
+ ;;^UTILITY(U,$J,358.3,32540,0)
+ ;;=G90.522^^126^1618^2
+ ;;^UTILITY(U,$J,358.3,32540,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33713,1,3,0)
- ;;=3^Laceration w/o FB Low Back/Pelvis w/o Penet Retroperiton,Init
- ;;^UTILITY(U,$J,358.3,33713,1,4,0)
- ;;=4^S31.010A
- ;;^UTILITY(U,$J,358.3,33713,2)
- ;;=^5023999
- ;;^UTILITY(U,$J,358.3,33714,0)
- ;;=S38.3XXA^^182^2009^8
- ;;^UTILITY(U,$J,358.3,33714,1,0)
+ ;;^UTILITY(U,$J,358.3,32540,1,3,0)
+ ;;=3^Regional Pain Syndrome,Lft Lower Limb,Complex
+ ;;^UTILITY(U,$J,358.3,32540,1,4,0)
+ ;;=4^G90.522
+ ;;^UTILITY(U,$J,358.3,32540,2)
+ ;;=^5133371
+ ;;^UTILITY(U,$J,358.3,32541,0)
+ ;;=G90.521^^126^1618^3
+ ;;^UTILITY(U,$J,358.3,32541,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33714,1,3,0)
- ;;=3^Transection (Partial) Abdomen,Init
- ;;^UTILITY(U,$J,358.3,33714,1,4,0)
- ;;=4^S38.3XXA
- ;;^UTILITY(U,$J,358.3,33714,2)
- ;;=^5026087
- ;;^UTILITY(U,$J,358.3,33715,0)
- ;;=T07.^^182^2009^4
- ;;^UTILITY(U,$J,358.3,33715,1,0)
+ ;;^UTILITY(U,$J,358.3,32541,1,3,0)
+ ;;=3^Regional Pain Syndrome,Rt Lower Limb,Complex
+ ;;^UTILITY(U,$J,358.3,32541,1,4,0)
+ ;;=4^G90.521
+ ;;^UTILITY(U,$J,358.3,32541,2)
+ ;;=^5004168
+ ;;^UTILITY(U,$J,358.3,32542,0)
+ ;;=M06.272^^126^1618^10
+ ;;^UTILITY(U,$J,358.3,32542,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33715,1,3,0)
- ;;=3^Multiple Injuries,Unspec
- ;;^UTILITY(U,$J,358.3,33715,1,4,0)
- ;;=4^T07.
- ;;^UTILITY(U,$J,358.3,33715,2)
- ;;=^5046377
- ;;^UTILITY(U,$J,358.3,33716,0)
- ;;=L08.89^^182^2009^3
- ;;^UTILITY(U,$J,358.3,33716,1,0)
+ ;;^UTILITY(U,$J,358.3,32542,1,3,0)
+ ;;=3^Rheumatoid Bursitis,Lft Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,32542,1,4,0)
+ ;;=4^M06.272
+ ;;^UTILITY(U,$J,358.3,32542,2)
+ ;;=^5010092
+ ;;^UTILITY(U,$J,358.3,32543,0)
+ ;;=M06.271^^126^1618^11
+ ;;^UTILITY(U,$J,358.3,32543,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33716,1,3,0)
- ;;=3^Local Infections Skin/Subcutaneous Tissue,Oth Spec
- ;;^UTILITY(U,$J,358.3,33716,1,4,0)
- ;;=4^L08.89
- ;;^UTILITY(U,$J,358.3,33716,2)
- ;;=^5009081
- ;;^UTILITY(U,$J,358.3,33717,0)
- ;;=T14.90^^182^2009^1
- ;;^UTILITY(U,$J,358.3,33717,1,0)
+ ;;^UTILITY(U,$J,358.3,32543,1,3,0)
+ ;;=3^Rheumatoid Bursitis,Rt Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,32543,1,4,0)
+ ;;=4^M06.271
+ ;;^UTILITY(U,$J,358.3,32543,2)
+ ;;=^5010091
+ ;;^UTILITY(U,$J,358.3,32544,0)
+ ;;=Z47.2^^126^1618^4
+ ;;^UTILITY(U,$J,358.3,32544,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33717,1,3,0)
- ;;=3^Injury,Unspec
- ;;^UTILITY(U,$J,358.3,33717,1,4,0)
- ;;=4^T14.90
- ;;^UTILITY(U,$J,358.3,33717,2)
- ;;=^5046379
- ;;^UTILITY(U,$J,358.3,33718,0)
- ;;=E03.5^^182^2010^37
- ;;^UTILITY(U,$J,358.3,33718,1,0)
+ ;;^UTILITY(U,$J,358.3,32544,1,3,0)
+ ;;=3^Removal of Internal Fixation Device
+ ;;^UTILITY(U,$J,358.3,32544,1,4,0)
+ ;;=4^Z47.2
+ ;;^UTILITY(U,$J,358.3,32544,2)
+ ;;=^5063026
+ ;;^UTILITY(U,$J,358.3,32545,0)
+ ;;=Z48.89^^126^1619^46
+ ;;^UTILITY(U,$J,358.3,32545,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33718,1,3,0)
- ;;=3^Myxedema Coma
- ;;^UTILITY(U,$J,358.3,33718,1,4,0)
- ;;=4^E03.5
- ;;^UTILITY(U,$J,358.3,33718,2)
- ;;=^5002474
- ;;^UTILITY(U,$J,358.3,33719,0)
- ;;=R40.2121^^182^2010^33
- ;;^UTILITY(U,$J,358.3,33719,1,0)
+ ;;^UTILITY(U,$J,358.3,32545,1,3,0)
+ ;;=3^Surg aftercare, oth, spec
+ ;;^UTILITY(U,$J,358.3,32545,1,4,0)
+ ;;=4^Z48.89
+ ;;^UTILITY(U,$J,358.3,32545,2)
+ ;;=^5063055
+ ;;^UTILITY(U,$J,358.3,32546,0)
+ ;;=R20.8^^126^1619^1
+ ;;^UTILITY(U,$J,358.3,32546,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33719,1,3,0)
- ;;=3^Coma Scale,Eyes Open,to Pain,In the Field
- ;;^UTILITY(U,$J,358.3,33719,1,4,0)
- ;;=4^R40.2121
- ;;^UTILITY(U,$J,358.3,33719,2)
- ;;=^5019361
- ;;^UTILITY(U,$J,358.3,33720,0)
- ;;=R40.2120^^182^2010^34
- ;;^UTILITY(U,$J,358.3,33720,1,0)
+ ;;^UTILITY(U,$J,358.3,32546,1,3,0)
+ ;;=3^Skin Sensation Disturbance NEC
+ ;;^UTILITY(U,$J,358.3,32546,1,4,0)
+ ;;=4^R20.8
+ ;;^UTILITY(U,$J,358.3,32546,2)
+ ;;=^5019281
+ ;;^UTILITY(U,$J,358.3,32547,0)
+ ;;=L72.2^^126^1619^23
+ ;;^UTILITY(U,$J,358.3,32547,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33720,1,3,0)
- ;;=3^Coma Scale,Eyes Open,to Pain,Unspec Time
- ;;^UTILITY(U,$J,358.3,33720,1,4,0)
- ;;=4^R40.2120
- ;;^UTILITY(U,$J,358.3,33720,2)
- ;;=^5019360
- ;;^UTILITY(U,$J,358.3,33721,0)
- ;;=R40.2114^^182^2010^26
- ;;^UTILITY(U,$J,358.3,33721,1,0)
+ ;;^UTILITY(U,$J,358.3,32547,1,3,0)
+ ;;=3^Steatocystoma multiplex
+ ;;^UTILITY(U,$J,358.3,32547,1,4,0)
+ ;;=4^L72.2
+ ;;^UTILITY(U,$J,358.3,32547,2)
+ ;;=^5009280
+ ;;^UTILITY(U,$J,358.3,32548,0)
+ ;;=S93.301A^^126^1619^40
+ ;;^UTILITY(U,$J,358.3,32548,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33721,1,3,0)
- ;;=3^Coma Scale,Eyes Open,Never,24+ hrs
- ;;^UTILITY(U,$J,358.3,33721,1,4,0)
- ;;=4^R40.2114
- ;;^UTILITY(U,$J,358.3,33721,2)
- ;;=^5019359
- ;;^UTILITY(U,$J,358.3,33722,0)
- ;;=R40.2113^^182^2010^30
- ;;^UTILITY(U,$J,358.3,33722,1,0)
+ ;;^UTILITY(U,$J,358.3,32548,1,3,0)
+ ;;=3^Subluxation rt ft, unspec, init enc
+ ;;^UTILITY(U,$J,358.3,32548,1,4,0)
+ ;;=4^S93.301A
+ ;;^UTILITY(U,$J,358.3,32548,2)
+ ;;=^5045720
+ ;;^UTILITY(U,$J,358.3,32549,0)
+ ;;=S93.302A^^126^1619^29
+ ;;^UTILITY(U,$J,358.3,32549,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33722,1,3,0)
- ;;=3^Coma Scale,Eyes Open,Never,at Hospital Admission
- ;;^UTILITY(U,$J,358.3,33722,1,4,0)
- ;;=4^R40.2113
- ;;^UTILITY(U,$J,358.3,33722,2)
- ;;=^5019358
- ;;^UTILITY(U,$J,358.3,33723,0)
- ;;=R40.2112^^182^2010^27
- ;;^UTILITY(U,$J,358.3,33723,1,0)
+ ;;^UTILITY(U,$J,358.3,32549,1,3,0)
+ ;;=3^Subluxation lft ft, unspec, init enc
+ ;;^UTILITY(U,$J,358.3,32549,1,4,0)
+ ;;=4^S93.302A
+ ;;^UTILITY(U,$J,358.3,32549,2)
+ ;;=^5045723
+ ;;^UTILITY(U,$J,358.3,32550,0)
+ ;;=S93.311A^^126^1619^43
+ ;;^UTILITY(U,$J,358.3,32550,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33723,1,3,0)
- ;;=3^Coma Scale,Eyes Open,Never,Emerg Dept
- ;;^UTILITY(U,$J,358.3,33723,1,4,0)
- ;;=4^R40.2112
- ;;^UTILITY(U,$J,358.3,33723,2)
- ;;=^5019357
- ;;^UTILITY(U,$J,358.3,33724,0)
- ;;=R40.2111^^182^2010^28
- ;;^UTILITY(U,$J,358.3,33724,1,0)
+ ;;^UTILITY(U,$J,358.3,32550,1,3,0)
+ ;;=3^Subluxation tarsal jnt rt ft, init enc
+ ;;^UTILITY(U,$J,358.3,32550,1,4,0)
+ ;;=4^S93.311A
+ ;;^UTILITY(U,$J,358.3,32550,2)
+ ;;=^5045732
+ ;;^UTILITY(U,$J,358.3,32551,0)
+ ;;=S93.312A^^126^1619^42
+ ;;^UTILITY(U,$J,358.3,32551,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33724,1,3,0)
- ;;=3^Coma Scale,Eyes Open,Never,In the Field
- ;;^UTILITY(U,$J,358.3,33724,1,4,0)
- ;;=4^R40.2111
- ;;^UTILITY(U,$J,358.3,33724,2)
- ;;=^5019356
- ;;^UTILITY(U,$J,358.3,33725,0)
- ;;=R40.2110^^182^2010^29
- ;;^UTILITY(U,$J,358.3,33725,1,0)
+ ;;^UTILITY(U,$J,358.3,32551,1,3,0)
+ ;;=3^Subluxation tarsal jnt lft ft, init enc
+ ;;^UTILITY(U,$J,358.3,32551,1,4,0)
+ ;;=4^S93.312A
+ ;;^UTILITY(U,$J,358.3,32551,2)
+ ;;=^5045735
+ ;;^UTILITY(U,$J,358.3,32552,0)
+ ;;=S93.322A^^126^1619^44
+ ;;^UTILITY(U,$J,358.3,32552,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33725,1,3,0)
- ;;=3^Coma Scale,Eyes Open,Never,Unspec Time

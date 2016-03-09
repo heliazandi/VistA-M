@@ -1,144 +1,146 @@
-IBDEI02Q ; ; 06-AUG-2015
+IBDEI02Q ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,728,2)
- ;;=^5004560
- ;;^UTILITY(U,$J,358.3,729,0)
- ;;=H05.012^^3^32^17
- ;;^UTILITY(U,$J,358.3,729,1,0)
+ ;;^UTILITY(U,$J,358.3,812,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,729,1,3,0)
- ;;=3^Cellulitis of left orbit
- ;;^UTILITY(U,$J,358.3,729,1,4,0)
- ;;=4^H05.012
- ;;^UTILITY(U,$J,358.3,729,2)
- ;;=^5004561
- ;;^UTILITY(U,$J,358.3,730,0)
- ;;=H05.013^^3^32^13
- ;;^UTILITY(U,$J,358.3,730,1,0)
+ ;;^UTILITY(U,$J,358.3,812,1,3,0)
+ ;;=3^Anemia,Unspec
+ ;;^UTILITY(U,$J,358.3,812,1,4,0)
+ ;;=4^D64.9
+ ;;^UTILITY(U,$J,358.3,812,2)
+ ;;=^5002351
+ ;;^UTILITY(U,$J,358.3,813,0)
+ ;;=F41.9^^6^97^16
+ ;;^UTILITY(U,$J,358.3,813,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,730,1,3,0)
- ;;=3^Cellulitis of bilateral orbits
- ;;^UTILITY(U,$J,358.3,730,1,4,0)
- ;;=4^H05.013
- ;;^UTILITY(U,$J,358.3,730,2)
- ;;=^5004562
- ;;^UTILITY(U,$J,358.3,731,0)
- ;;=I87.2^^3^32^150
- ;;^UTILITY(U,$J,358.3,731,1,0)
+ ;;^UTILITY(U,$J,358.3,813,1,3,0)
+ ;;=3^Anxiety Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,813,1,4,0)
+ ;;=4^F41.9
+ ;;^UTILITY(U,$J,358.3,813,2)
+ ;;=^5003567
+ ;;^UTILITY(U,$J,358.3,814,0)
+ ;;=F10.20^^6^97^9
+ ;;^UTILITY(U,$J,358.3,814,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,731,1,3,0)
- ;;=3^Venous insufficiency (chronic) (peripheral)
- ;;^UTILITY(U,$J,358.3,731,1,4,0)
- ;;=4^I87.2
- ;;^UTILITY(U,$J,358.3,731,2)
- ;;=^5008047
- ;;^UTILITY(U,$J,358.3,732,0)
- ;;=K12.0^^3^32^134
- ;;^UTILITY(U,$J,358.3,732,1,0)
+ ;;^UTILITY(U,$J,358.3,814,1,3,0)
+ ;;=3^Alcohol Dependence Uncomplicated
+ ;;^UTILITY(U,$J,358.3,814,1,4,0)
+ ;;=4^F10.20
+ ;;^UTILITY(U,$J,358.3,814,2)
+ ;;=^5003081
+ ;;^UTILITY(U,$J,358.3,815,0)
+ ;;=G30.9^^6^97^12
+ ;;^UTILITY(U,$J,358.3,815,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,732,1,3,0)
- ;;=3^Recurrent oral aphthae
- ;;^UTILITY(U,$J,358.3,732,1,4,0)
- ;;=4^K12.0
- ;;^UTILITY(U,$J,358.3,732,2)
- ;;=^5008483
- ;;^UTILITY(U,$J,358.3,733,0)
- ;;=L02.33^^3^32^11
- ;;^UTILITY(U,$J,358.3,733,1,0)
+ ;;^UTILITY(U,$J,358.3,815,1,3,0)
+ ;;=3^Alzheimer's Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,815,1,4,0)
+ ;;=4^G30.9
+ ;;^UTILITY(U,$J,358.3,815,2)
+ ;;=^5003808
+ ;;^UTILITY(U,$J,358.3,816,0)
+ ;;=I20.9^^6^97^15
+ ;;^UTILITY(U,$J,358.3,816,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,733,1,3,0)
- ;;=3^Carbuncle of buttock
- ;;^UTILITY(U,$J,358.3,733,1,4,0)
- ;;=4^L02.33
- ;;^UTILITY(U,$J,358.3,733,2)
- ;;=^5008973
- ;;^UTILITY(U,$J,358.3,734,0)
- ;;=L02.92^^3^32^43
- ;;^UTILITY(U,$J,358.3,734,1,0)
+ ;;^UTILITY(U,$J,358.3,816,1,3,0)
+ ;;=3^Angina Pectoris,Unspec
+ ;;^UTILITY(U,$J,358.3,816,1,4,0)
+ ;;=4^I20.9
+ ;;^UTILITY(U,$J,358.3,816,2)
+ ;;=^5007079
+ ;;^UTILITY(U,$J,358.3,817,0)
+ ;;=I25.10^^6^97^19
+ ;;^UTILITY(U,$J,358.3,817,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,734,1,3,0)
- ;;=3^Furuncle, unspecified
- ;;^UTILITY(U,$J,358.3,734,1,4,0)
- ;;=4^L02.92
- ;;^UTILITY(U,$J,358.3,734,2)
- ;;=^5009017
- ;;^UTILITY(U,$J,358.3,735,0)
- ;;=L02.93^^3^32^12
- ;;^UTILITY(U,$J,358.3,735,1,0)
+ ;;^UTILITY(U,$J,358.3,817,1,3,0)
+ ;;=3^Athscl Hrt Disease w/o Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,817,1,4,0)
+ ;;=4^I25.10
+ ;;^UTILITY(U,$J,358.3,817,2)
+ ;;=^5007107
+ ;;^UTILITY(U,$J,358.3,818,0)
+ ;;=K46.9^^6^97^2
+ ;;^UTILITY(U,$J,358.3,818,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,735,1,3,0)
- ;;=3^Carbuncle, unspecified
- ;;^UTILITY(U,$J,358.3,735,1,4,0)
- ;;=4^L02.93
- ;;^UTILITY(U,$J,358.3,735,2)
- ;;=^5009018
- ;;^UTILITY(U,$J,358.3,736,0)
- ;;=L03.011^^3^32^21
- ;;^UTILITY(U,$J,358.3,736,1,0)
+ ;;^UTILITY(U,$J,358.3,818,1,3,0)
+ ;;=3^Abdominal Hernia w/o Obst/Gangr
+ ;;^UTILITY(U,$J,358.3,818,1,4,0)
+ ;;=4^K46.9
+ ;;^UTILITY(U,$J,358.3,818,2)
+ ;;=^5008623
+ ;;^UTILITY(U,$J,358.3,819,0)
+ ;;=I48.91^^6^97^20
+ ;;^UTILITY(U,$J,358.3,819,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,736,1,3,0)
- ;;=3^Cellulitis of right finger
- ;;^UTILITY(U,$J,358.3,736,1,4,0)
- ;;=4^L03.011
- ;;^UTILITY(U,$J,358.3,736,2)
- ;;=^5009019
- ;;^UTILITY(U,$J,358.3,737,0)
- ;;=L03.012^^3^32^15
- ;;^UTILITY(U,$J,358.3,737,1,0)
+ ;;^UTILITY(U,$J,358.3,819,1,3,0)
+ ;;=3^Atrial Fibrillation,Unspec
+ ;;^UTILITY(U,$J,358.3,819,1,4,0)
+ ;;=4^I48.91
+ ;;^UTILITY(U,$J,358.3,819,2)
+ ;;=^5007229
+ ;;^UTILITY(U,$J,358.3,820,0)
+ ;;=I48.92^^6^97^21
+ ;;^UTILITY(U,$J,358.3,820,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,737,1,3,0)
- ;;=3^Cellulitis of left finger
- ;;^UTILITY(U,$J,358.3,737,1,4,0)
- ;;=4^L03.012
- ;;^UTILITY(U,$J,358.3,737,2)
- ;;=^5009020
- ;;^UTILITY(U,$J,358.3,738,0)
- ;;=L03.031^^3^32^24
- ;;^UTILITY(U,$J,358.3,738,1,0)
+ ;;^UTILITY(U,$J,358.3,820,1,3,0)
+ ;;=3^Atrial Flutter,Unspec
+ ;;^UTILITY(U,$J,358.3,820,1,4,0)
+ ;;=4^I48.92
+ ;;^UTILITY(U,$J,358.3,820,2)
+ ;;=^5007230
+ ;;^UTILITY(U,$J,358.3,821,0)
+ ;;=I71.4^^6^97^1
+ ;;^UTILITY(U,$J,358.3,821,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,738,1,3,0)
- ;;=3^Cellulitis of right toe
- ;;^UTILITY(U,$J,358.3,738,1,4,0)
- ;;=4^L03.031
- ;;^UTILITY(U,$J,358.3,738,2)
- ;;=^5009025
- ;;^UTILITY(U,$J,358.3,739,0)
- ;;=L03.032^^3^32^18
- ;;^UTILITY(U,$J,358.3,739,1,0)
+ ;;^UTILITY(U,$J,358.3,821,1,3,0)
+ ;;=3^AAA w/o Rupture
+ ;;^UTILITY(U,$J,358.3,821,1,4,0)
+ ;;=4^I71.4
+ ;;^UTILITY(U,$J,358.3,821,2)
+ ;;=^5007789
+ ;;^UTILITY(U,$J,358.3,822,0)
+ ;;=J30.9^^6^97^10
+ ;;^UTILITY(U,$J,358.3,822,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,739,1,3,0)
- ;;=3^Cellulitis of left toe
- ;;^UTILITY(U,$J,358.3,739,1,4,0)
- ;;=4^L03.032
- ;;^UTILITY(U,$J,358.3,739,2)
- ;;=^5009026
- ;;^UTILITY(U,$J,358.3,740,0)
- ;;=L03.211^^3^32^14
- ;;^UTILITY(U,$J,358.3,740,1,0)
+ ;;^UTILITY(U,$J,358.3,822,1,3,0)
+ ;;=3^Allergic Rhinitis,Unspec
+ ;;^UTILITY(U,$J,358.3,822,1,4,0)
+ ;;=4^J30.9
+ ;;^UTILITY(U,$J,358.3,822,2)
+ ;;=^5008205
+ ;;^UTILITY(U,$J,358.3,823,0)
+ ;;=J45.909^^6^97^18
+ ;;^UTILITY(U,$J,358.3,823,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,740,1,3,0)
- ;;=3^Cellulitis of face
- ;;^UTILITY(U,$J,358.3,740,1,4,0)
- ;;=4^L03.211
- ;;^UTILITY(U,$J,358.3,740,2)
- ;;=^5009043
- ;;^UTILITY(U,$J,358.3,741,0)
- ;;=L03.221^^3^32^20
- ;;^UTILITY(U,$J,358.3,741,1,0)
+ ;;^UTILITY(U,$J,358.3,823,1,3,0)
+ ;;=3^Asthma Uncomplicated,Unspec
+ ;;^UTILITY(U,$J,358.3,823,1,4,0)
+ ;;=4^J45.909
+ ;;^UTILITY(U,$J,358.3,823,2)
+ ;;=^5008256
+ ;;^UTILITY(U,$J,358.3,824,0)
+ ;;=M12.9^^6^97^17
+ ;;^UTILITY(U,$J,358.3,824,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,741,1,3,0)
- ;;=3^Cellulitis of neck
- ;;^UTILITY(U,$J,358.3,741,1,4,0)
- ;;=4^L03.221
- ;;^UTILITY(U,$J,358.3,741,2)
- ;;=^5009045
- ;;^UTILITY(U,$J,358.3,742,0)
- ;;=L03.319^^3^32^26
- ;;^UTILITY(U,$J,358.3,742,1,0)
+ ;;^UTILITY(U,$J,358.3,824,1,3,0)
+ ;;=3^Arthropathy,Unspec
+ ;;^UTILITY(U,$J,358.3,824,1,4,0)
+ ;;=4^M12.9
+ ;;^UTILITY(U,$J,358.3,824,2)
+ ;;=^5010666
+ ;;^UTILITY(U,$J,358.3,825,0)
+ ;;=T78.40XA^^6^97^11
+ ;;^UTILITY(U,$J,358.3,825,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,742,1,3,0)
- ;;=3^Cellulitis of trunk, unspecified
- ;;^UTILITY(U,$J,358.3,742,1,4,0)
- ;;=4^L03.319
+ ;;^UTILITY(U,$J,358.3,825,1,3,0)
+ ;;=3^Allergy,Unspec Initial Encounter
+ ;;^UTILITY(U,$J,358.3,825,1,4,0)
+ ;;=4^T78.40XA
+ ;;^UTILITY(U,$J,358.3,825,2)
+ ;;=^5054284
+ ;;^UTILITY(U,$J,358.3,826,0)
+ ;;=L40.2^^6^97^6
+ ;;^UTILITY(U,$J,358.3,826,1,0)
+ ;;=^358.31IA^4^2

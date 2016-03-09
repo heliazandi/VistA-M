@@ -1,132 +1,134 @@
-IBDEI1XV ; ; 06-AUG-2015
+IBDEI1XV ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34045,1,0)
+ ;;^UTILITY(U,$J,358.3,32887,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34045,1,3,0)
- ;;=3^Adhesive capsulitis of left shoulder
- ;;^UTILITY(U,$J,358.3,34045,1,4,0)
- ;;=4^M75.02
- ;;^UTILITY(U,$J,358.3,34045,2)
- ;;=^5013240
- ;;^UTILITY(U,$J,358.3,34046,0)
- ;;=M75.01^^183^2016^4
- ;;^UTILITY(U,$J,358.3,34046,1,0)
+ ;;^UTILITY(U,$J,358.3,32887,1,3,0)
+ ;;=3^Abnormal Cytology Findings from Cervix Uteri Specimen
+ ;;^UTILITY(U,$J,358.3,32887,1,4,0)
+ ;;=4^R87.619
+ ;;^UTILITY(U,$J,358.3,32887,2)
+ ;;=^5019676
+ ;;^UTILITY(U,$J,358.3,32888,0)
+ ;;=Z79.890^^128^1642^7
+ ;;^UTILITY(U,$J,358.3,32888,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34046,1,3,0)
- ;;=3^Adhesive capsulitis of right shoulder
- ;;^UTILITY(U,$J,358.3,34046,1,4,0)
- ;;=4^M75.01
- ;;^UTILITY(U,$J,358.3,34046,2)
- ;;=^5013239
- ;;^UTILITY(U,$J,358.3,34047,0)
- ;;=M81.0^^183^2016^5
- ;;^UTILITY(U,$J,358.3,34047,1,0)
+ ;;^UTILITY(U,$J,358.3,32888,1,3,0)
+ ;;=3^Postmenopausal Hormone Replacement Therapy
+ ;;^UTILITY(U,$J,358.3,32888,1,4,0)
+ ;;=4^Z79.890
+ ;;^UTILITY(U,$J,358.3,32888,2)
+ ;;=^331975
+ ;;^UTILITY(U,$J,358.3,32889,0)
+ ;;=Z30.09^^128^1642^2
+ ;;^UTILITY(U,$J,358.3,32889,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34047,1,3,0)
- ;;=3^Age-related osteoporosis w/o current pathological fracture
- ;;^UTILITY(U,$J,358.3,34047,1,4,0)
- ;;=4^M81.0
- ;;^UTILITY(U,$J,358.3,34047,2)
- ;;=^5013555
- ;;^UTILITY(U,$J,358.3,34048,0)
- ;;=M75.22^^183^2016^6
- ;;^UTILITY(U,$J,358.3,34048,1,0)
+ ;;^UTILITY(U,$J,358.3,32889,1,3,0)
+ ;;=3^Contraception Counseling/Advice
+ ;;^UTILITY(U,$J,358.3,32889,1,4,0)
+ ;;=4^Z30.09
+ ;;^UTILITY(U,$J,358.3,32889,2)
+ ;;=^5062817
+ ;;^UTILITY(U,$J,358.3,32890,0)
+ ;;=Z15.01^^128^1642^3
+ ;;^UTILITY(U,$J,358.3,32890,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34048,1,3,0)
- ;;=3^Bicipital tendinitis, left shoulder
- ;;^UTILITY(U,$J,358.3,34048,1,4,0)
- ;;=4^M75.22
- ;;^UTILITY(U,$J,358.3,34048,2)
- ;;=^5013252
- ;;^UTILITY(U,$J,358.3,34049,0)
- ;;=M75.21^^183^2016^7
- ;;^UTILITY(U,$J,358.3,34049,1,0)
+ ;;^UTILITY(U,$J,358.3,32890,1,3,0)
+ ;;=3^Genetic Susceptibility to Malig Neop Breast
+ ;;^UTILITY(U,$J,358.3,32890,1,4,0)
+ ;;=4^Z15.01
+ ;;^UTILITY(U,$J,358.3,32890,2)
+ ;;=^331591
+ ;;^UTILITY(U,$J,358.3,32891,0)
+ ;;=Z15.02^^128^1642^4
+ ;;^UTILITY(U,$J,358.3,32891,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34049,1,3,0)
- ;;=3^Bicipital tendinitis, right shoulder
- ;;^UTILITY(U,$J,358.3,34049,1,4,0)
- ;;=4^M75.21
- ;;^UTILITY(U,$J,358.3,34049,2)
- ;;=^5013251
- ;;^UTILITY(U,$J,358.3,34050,0)
- ;;=M17.0^^183^2016^8
- ;;^UTILITY(U,$J,358.3,34050,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34050,1,3,0)
- ;;=3^Bilateral primary osteoarthritis of knee
- ;;^UTILITY(U,$J,358.3,34050,1,4,0)
- ;;=4^M17.0
- ;;^UTILITY(U,$J,358.3,34050,2)
- ;;=^5010784
- ;;^UTILITY(U,$J,358.3,34051,0)
- ;;=M75.52^^183^2016^9
- ;;^UTILITY(U,$J,358.3,34051,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34051,1,3,0)
- ;;=3^Bursitis of left shoulder
- ;;^UTILITY(U,$J,358.3,34051,1,4,0)
- ;;=4^M75.52
- ;;^UTILITY(U,$J,358.3,34051,2)
- ;;=^5133691
- ;;^UTILITY(U,$J,358.3,34052,0)
- ;;=M75.51^^183^2016^10
- ;;^UTILITY(U,$J,358.3,34052,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34052,1,3,0)
- ;;=3^Bursitis of right shoulder
- ;;^UTILITY(U,$J,358.3,34052,1,4,0)
- ;;=4^M75.51
- ;;^UTILITY(U,$J,358.3,34052,2)
- ;;=^5133690
- ;;^UTILITY(U,$J,358.3,34053,0)
- ;;=M75.32^^183^2016^11
- ;;^UTILITY(U,$J,358.3,34053,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34053,1,3,0)
- ;;=3^Calcific tendinitis of left shoulder
- ;;^UTILITY(U,$J,358.3,34053,1,4,0)
- ;;=4^M75.32
- ;;^UTILITY(U,$J,358.3,34053,2)
- ;;=^5013255
- ;;^UTILITY(U,$J,358.3,34054,0)
- ;;=M75.31^^183^2016^12
- ;;^UTILITY(U,$J,358.3,34054,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34054,1,3,0)
- ;;=3^Calcific tendinitis of right shoulder
- ;;^UTILITY(U,$J,358.3,34054,1,4,0)
- ;;=4^M75.31
- ;;^UTILITY(U,$J,358.3,34054,2)
- ;;=^5013254
- ;;^UTILITY(U,$J,358.3,34055,0)
- ;;=M22.42^^183^2016^13
- ;;^UTILITY(U,$J,358.3,34055,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34055,1,3,0)
- ;;=3^Chondromalacia patellae, left knee
- ;;^UTILITY(U,$J,358.3,34055,1,4,0)
- ;;=4^M22.42
- ;;^UTILITY(U,$J,358.3,34055,2)
- ;;=^5011187
- ;;^UTILITY(U,$J,358.3,34056,0)
- ;;=M22.41^^183^2016^14
- ;;^UTILITY(U,$J,358.3,34056,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34056,1,3,0)
- ;;=3^Chondromalacia patellae, right knee
- ;;^UTILITY(U,$J,358.3,34056,1,4,0)
- ;;=4^M22.41
- ;;^UTILITY(U,$J,358.3,34056,2)
- ;;=^5011186
- ;;^UTILITY(U,$J,358.3,34057,0)
- ;;=M62.472^^183^2016^15
- ;;^UTILITY(U,$J,358.3,34057,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34057,1,3,0)
- ;;=3^Contracture of muscle, left ankle and foot
- ;;^UTILITY(U,$J,358.3,34057,1,4,0)
- ;;=4^M62.472
- ;;^UTILITY(U,$J,358.3,34057,2)
- ;;=^5012651
+ ;;^UTILITY(U,$J,358.3,32891,1,3,0)
+ ;;=3^Genetic Susceptibility to Malig Neop Ovary
+ ;;^UTILITY(U,$J,358.3,32891,1,4,0)
+ ;;=4^Z15.02
+ ;;^UTILITY(U,$J,358.3,32891,2)
+ ;;=^331592
+ ;;^UTILITY(U,$J,358.3,32892,0)
+ ;;=99201^^129^1643^1
+ ;;^UTILITY(U,$J,358.3,32892,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,32892,1,1,0)
+ ;;=1^Problem Focus
+ ;;^UTILITY(U,$J,358.3,32892,1,2,0)
+ ;;=2^99201
+ ;;^UTILITY(U,$J,358.3,32893,0)
+ ;;=99202^^129^1643^2
+ ;;^UTILITY(U,$J,358.3,32893,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,32893,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,32893,1,2,0)
+ ;;=2^99202
+ ;;^UTILITY(U,$J,358.3,32894,0)
+ ;;=99203^^129^1643^3
+ ;;^UTILITY(U,$J,358.3,32894,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,32894,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,32894,1,2,0)
+ ;;=2^99203
+ ;;^UTILITY(U,$J,358.3,32895,0)
+ ;;=99204^^129^1643^4
+ ;;^UTILITY(U,$J,358.3,32895,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,32895,1,1,0)
+ ;;=1^Comprehensive,Moderate MDM
+ ;;^UTILITY(U,$J,358.3,32895,1,2,0)
+ ;;=2^99204
+ ;;^UTILITY(U,$J,358.3,32896,0)
+ ;;=99205^^129^1643^5
+ ;;^UTILITY(U,$J,358.3,32896,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,32896,1,1,0)
+ ;;=1^Comprehensive,High MDM
+ ;;^UTILITY(U,$J,358.3,32896,1,2,0)
+ ;;=2^99205
+ ;;^UTILITY(U,$J,358.3,32897,0)
+ ;;=99211^^129^1644^1
+ ;;^UTILITY(U,$J,358.3,32897,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,32897,1,1,0)
+ ;;=1^Brief (no MD seen)
+ ;;^UTILITY(U,$J,358.3,32897,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,32898,0)
+ ;;=99212^^129^1644^2
+ ;;^UTILITY(U,$J,358.3,32898,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,32898,1,1,0)
+ ;;=1^Problem Focused
+ ;;^UTILITY(U,$J,358.3,32898,1,2,0)
+ ;;=2^99212
+ ;;^UTILITY(U,$J,358.3,32899,0)
+ ;;=99213^^129^1644^3
+ ;;^UTILITY(U,$J,358.3,32899,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,32899,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,32899,1,2,0)
+ ;;=2^99213
+ ;;^UTILITY(U,$J,358.3,32900,0)
+ ;;=99214^^129^1644^4
+ ;;^UTILITY(U,$J,358.3,32900,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,32900,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,32900,1,2,0)
+ ;;=2^99214
+ ;;^UTILITY(U,$J,358.3,32901,0)
+ ;;=99215^^129^1644^5
+ ;;^UTILITY(U,$J,358.3,32901,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,32901,1,1,0)
+ ;;=1^Comprehensive
+ ;;^UTILITY(U,$J,358.3,32901,1,2,0)
+ ;;=2^99215
+ ;;^UTILITY(U,$J,358.3,32902,0)
+ ;;=99241^^129^1645^1

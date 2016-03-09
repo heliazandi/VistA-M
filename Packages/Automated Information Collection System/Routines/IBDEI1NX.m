@@ -1,130 +1,126 @@
-IBDEI1NX ; ; 06-AUG-2015
+IBDEI1NX ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,29531,1,3,0)
- ;;=3^Lumbosacral plexus disorders
- ;;^UTILITY(U,$J,358.3,29531,1,4,0)
- ;;=4^G54.1
- ;;^UTILITY(U,$J,358.3,29531,2)
- ;;=^5004008
- ;;^UTILITY(U,$J,358.3,29532,0)
- ;;=G54.8^^176^1888^30
- ;;^UTILITY(U,$J,358.3,29532,1,0)
+ ;;^UTILITY(U,$J,358.3,28249,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29532,1,3,0)
- ;;=3^Nerve root and plexus disorders NEC
- ;;^UTILITY(U,$J,358.3,29532,1,4,0)
- ;;=4^G54.8
- ;;^UTILITY(U,$J,358.3,29532,2)
- ;;=^268502
- ;;^UTILITY(U,$J,358.3,29533,0)
- ;;=G56.21^^176^1888^20
- ;;^UTILITY(U,$J,358.3,29533,1,0)
+ ;;^UTILITY(U,$J,358.3,28249,1,3,0)
+ ;;=3^Pressure Ulcer Left Buttock,Unstageable
+ ;;^UTILITY(U,$J,358.3,28249,1,4,0)
+ ;;=4^L89.320
+ ;;^UTILITY(U,$J,358.3,28249,2)
+ ;;=^5009399
+ ;;^UTILITY(U,$J,358.3,28250,0)
+ ;;=L89.321^^112^1416^19
+ ;;^UTILITY(U,$J,358.3,28250,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29533,1,3,0)
- ;;=3^Lesion of ulnar nerve, right upper limb
- ;;^UTILITY(U,$J,358.3,29533,1,4,0)
- ;;=4^G56.21
- ;;^UTILITY(U,$J,358.3,29533,2)
- ;;=^5004024
- ;;^UTILITY(U,$J,358.3,29534,0)
- ;;=G56.22^^176^1888^19
- ;;^UTILITY(U,$J,358.3,29534,1,0)
+ ;;^UTILITY(U,$J,358.3,28250,1,3,0)
+ ;;=3^Pressure Ulcer Left Buttock,Stage 1
+ ;;^UTILITY(U,$J,358.3,28250,1,4,0)
+ ;;=4^L89.321
+ ;;^UTILITY(U,$J,358.3,28250,2)
+ ;;=^5009400
+ ;;^UTILITY(U,$J,358.3,28251,0)
+ ;;=L89.322^^112^1416^20
+ ;;^UTILITY(U,$J,358.3,28251,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29534,1,3,0)
- ;;=3^Lesion of ulnar nerve, left upper limb
- ;;^UTILITY(U,$J,358.3,29534,1,4,0)
- ;;=4^G56.22
- ;;^UTILITY(U,$J,358.3,29534,2)
- ;;=^5004025
- ;;^UTILITY(U,$J,358.3,29535,0)
- ;;=G56.31^^176^1888^16
- ;;^UTILITY(U,$J,358.3,29535,1,0)
+ ;;^UTILITY(U,$J,358.3,28251,1,3,0)
+ ;;=3^Pressure Ulcer Left Buttock,Stage 2
+ ;;^UTILITY(U,$J,358.3,28251,1,4,0)
+ ;;=4^L89.322
+ ;;^UTILITY(U,$J,358.3,28251,2)
+ ;;=^5009401
+ ;;^UTILITY(U,$J,358.3,28252,0)
+ ;;=L89.323^^112^1416^21
+ ;;^UTILITY(U,$J,358.3,28252,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29535,1,3,0)
- ;;=3^Lesion of radial nerve, right upper limb
- ;;^UTILITY(U,$J,358.3,29535,1,4,0)
- ;;=4^G56.31
- ;;^UTILITY(U,$J,358.3,29535,2)
- ;;=^5004027
- ;;^UTILITY(U,$J,358.3,29536,0)
- ;;=G56.32^^176^1888^15
- ;;^UTILITY(U,$J,358.3,29536,1,0)
+ ;;^UTILITY(U,$J,358.3,28252,1,3,0)
+ ;;=3^Pressure Ulcer Left Buttock,Stage 3
+ ;;^UTILITY(U,$J,358.3,28252,1,4,0)
+ ;;=4^L89.323
+ ;;^UTILITY(U,$J,358.3,28252,2)
+ ;;=^5009402
+ ;;^UTILITY(U,$J,358.3,28253,0)
+ ;;=L89.324^^112^1416^22
+ ;;^UTILITY(U,$J,358.3,28253,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29536,1,3,0)
- ;;=3^Lesion of radial nerve, left upper limb
- ;;^UTILITY(U,$J,358.3,29536,1,4,0)
- ;;=4^G56.32
- ;;^UTILITY(U,$J,358.3,29536,2)
- ;;=^5004028
- ;;^UTILITY(U,$J,358.3,29537,0)
- ;;=G56.81^^176^1888^27
- ;;^UTILITY(U,$J,358.3,29537,1,0)
+ ;;^UTILITY(U,$J,358.3,28253,1,3,0)
+ ;;=3^Pressure Ulcer Left Buttock,Stage 4
+ ;;^UTILITY(U,$J,358.3,28253,1,4,0)
+ ;;=4^L89.324
+ ;;^UTILITY(U,$J,358.3,28253,2)
+ ;;=^5009403
+ ;;^UTILITY(U,$J,358.3,28254,0)
+ ;;=L89.329^^112^1416^23
+ ;;^UTILITY(U,$J,358.3,28254,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29537,1,3,0)
- ;;=3^Mononeuropathies of right upper limb NEC
- ;;^UTILITY(U,$J,358.3,29537,1,4,0)
- ;;=4^G56.81
- ;;^UTILITY(U,$J,358.3,29537,2)
- ;;=^5004033
- ;;^UTILITY(U,$J,358.3,29538,0)
- ;;=G56.82^^176^1888^25
- ;;^UTILITY(U,$J,358.3,29538,1,0)
+ ;;^UTILITY(U,$J,358.3,28254,1,3,0)
+ ;;=3^Pressure Ulcer Left Buttock,Stage Unspec
+ ;;^UTILITY(U,$J,358.3,28254,1,4,0)
+ ;;=4^L89.329
+ ;;^UTILITY(U,$J,358.3,28254,2)
+ ;;=^5133671
+ ;;^UTILITY(U,$J,358.3,28255,0)
+ ;;=L89.40^^112^1416^1
+ ;;^UTILITY(U,$J,358.3,28255,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29538,1,3,0)
- ;;=3^Mononeuropathies of left upper limb NEC
- ;;^UTILITY(U,$J,358.3,29538,1,4,0)
- ;;=4^G56.82
- ;;^UTILITY(U,$J,358.3,29538,2)
- ;;=^5004034
- ;;^UTILITY(U,$J,358.3,29539,0)
- ;;=G57.01^^176^1888^18
- ;;^UTILITY(U,$J,358.3,29539,1,0)
+ ;;^UTILITY(U,$J,358.3,28255,1,3,0)
+ ;;=3^Pressure Ulcer Contiguous Site Back,Buttock & Hip,Stage Unspec
+ ;;^UTILITY(U,$J,358.3,28255,1,4,0)
+ ;;=4^L89.40
+ ;;^UTILITY(U,$J,358.3,28255,2)
+ ;;=^5009404
+ ;;^UTILITY(U,$J,358.3,28256,0)
+ ;;=L89.41^^112^1416^2
+ ;;^UTILITY(U,$J,358.3,28256,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29539,1,3,0)
- ;;=3^Lesion of sciatic nerve, right lower limb
- ;;^UTILITY(U,$J,358.3,29539,1,4,0)
- ;;=4^G57.01
- ;;^UTILITY(U,$J,358.3,29539,2)
- ;;=^5004039
- ;;^UTILITY(U,$J,358.3,29540,0)
- ;;=G57.02^^176^1888^17
- ;;^UTILITY(U,$J,358.3,29540,1,0)
+ ;;^UTILITY(U,$J,358.3,28256,1,3,0)
+ ;;=3^Pressure Ulcer Contiguous Site Back,Buttock & Hip,Stage 1
+ ;;^UTILITY(U,$J,358.3,28256,1,4,0)
+ ;;=4^L89.41
+ ;;^UTILITY(U,$J,358.3,28256,2)
+ ;;=^5009405
+ ;;^UTILITY(U,$J,358.3,28257,0)
+ ;;=L89.42^^112^1416^3
+ ;;^UTILITY(U,$J,358.3,28257,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29540,1,3,0)
- ;;=3^Lesion of sciatic nerve, left lower limb
- ;;^UTILITY(U,$J,358.3,29540,1,4,0)
- ;;=4^G57.02
- ;;^UTILITY(U,$J,358.3,29540,2)
- ;;=^5004040
- ;;^UTILITY(U,$J,358.3,29541,0)
- ;;=G57.11^^176^1888^23
- ;;^UTILITY(U,$J,358.3,29541,1,0)
+ ;;^UTILITY(U,$J,358.3,28257,1,3,0)
+ ;;=3^Pressure Ulcer Contiguous Site Back,Buttock & Hip,Stage 2
+ ;;^UTILITY(U,$J,358.3,28257,1,4,0)
+ ;;=4^L89.42
+ ;;^UTILITY(U,$J,358.3,28257,2)
+ ;;=^5009406
+ ;;^UTILITY(U,$J,358.3,28258,0)
+ ;;=L89.43^^112^1416^4
+ ;;^UTILITY(U,$J,358.3,28258,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29541,1,3,0)
- ;;=3^Meralgia paresthetica, right lower limb
- ;;^UTILITY(U,$J,358.3,29541,1,4,0)
- ;;=4^G57.11
- ;;^UTILITY(U,$J,358.3,29541,2)
- ;;=^5004042
- ;;^UTILITY(U,$J,358.3,29542,0)
- ;;=G57.12^^176^1888^22
- ;;^UTILITY(U,$J,358.3,29542,1,0)
+ ;;^UTILITY(U,$J,358.3,28258,1,3,0)
+ ;;=3^Pressure Ulcer Contiguous Site Back,Buttock & Hip,Stage 3
+ ;;^UTILITY(U,$J,358.3,28258,1,4,0)
+ ;;=4^L89.43
+ ;;^UTILITY(U,$J,358.3,28258,2)
+ ;;=^5009407
+ ;;^UTILITY(U,$J,358.3,28259,0)
+ ;;=L89.44^^112^1416^5
+ ;;^UTILITY(U,$J,358.3,28259,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29542,1,3,0)
- ;;=3^Meralgia paresthetica, left lower limb
- ;;^UTILITY(U,$J,358.3,29542,1,4,0)
- ;;=4^G57.12
- ;;^UTILITY(U,$J,358.3,29542,2)
- ;;=^5004043
- ;;^UTILITY(U,$J,358.3,29543,0)
- ;;=G57.21^^176^1888^8
- ;;^UTILITY(U,$J,358.3,29543,1,0)
+ ;;^UTILITY(U,$J,358.3,28259,1,3,0)
+ ;;=3^Pressure Ulcer Contiguous Site Back,Buttock & Hip,Stage 4
+ ;;^UTILITY(U,$J,358.3,28259,1,4,0)
+ ;;=4^L89.44
+ ;;^UTILITY(U,$J,358.3,28259,2)
+ ;;=^5009408
+ ;;^UTILITY(U,$J,358.3,28260,0)
+ ;;=L89.45^^112^1416^6
+ ;;^UTILITY(U,$J,358.3,28260,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29543,1,3,0)
- ;;=3^Lesion of femoral nerve, right lower limb
- ;;^UTILITY(U,$J,358.3,29543,1,4,0)
- ;;=4^G57.21
- ;;^UTILITY(U,$J,358.3,29543,2)
- ;;=^5004045
+ ;;^UTILITY(U,$J,358.3,28260,1,3,0)
+ ;;=3^Pressure Ulcer Contiguous Site Back,Buttock & Hip,Unstageable
+ ;;^UTILITY(U,$J,358.3,28260,1,4,0)
+ ;;=4^L89.45
+ ;;^UTILITY(U,$J,358.3,28260,2)
+ ;;=^5009409
+ ;;^UTILITY(U,$J,358.3,28261,0)
+ ;;=L89.510^^112^1416^66
+ ;;^UTILITY(U,$J,358.3,28261,1,0)
+ ;;=^358.31IA^4^2

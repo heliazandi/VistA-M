@@ -1,128 +1,128 @@
-IBDEI1N5 ; ; 06-AUG-2015
+IBDEI1N5 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,29150,1,2,0)
- ;;=2^Asp/Inj Intermediate Jt w/o US
- ;;^UTILITY(U,$J,358.3,29150,1,3,0)
- ;;=3^20605
- ;;^UTILITY(U,$J,358.3,29151,0)
- ;;=20610^^173^1859^4^^^^1
- ;;^UTILITY(U,$J,358.3,29151,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29151,1,2,0)
- ;;=2^Asp/Inj Major Jt w/o US
- ;;^UTILITY(U,$J,358.3,29151,1,3,0)
- ;;=3^20610
- ;;^UTILITY(U,$J,358.3,29152,0)
- ;;=20550^^173^1859^9^^^^1
- ;;^UTILITY(U,$J,358.3,29152,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29152,1,2,0)
- ;;=2^Inject Tendon/Ligament/Cyst 
- ;;^UTILITY(U,$J,358.3,29152,1,3,0)
- ;;=3^20550
- ;;^UTILITY(U,$J,358.3,29153,0)
- ;;=J1100^^173^1859^8^^^^1
- ;;^UTILITY(U,$J,358.3,29153,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29153,1,2,0)
- ;;=2^Dexamethasone Sodium Phos 1 mg
- ;;^UTILITY(U,$J,358.3,29153,1,3,0)
- ;;=3^J1100
- ;;^UTILITY(U,$J,358.3,29154,0)
- ;;=J0800^^173^1859^7^^^^1
- ;;^UTILITY(U,$J,358.3,29154,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29154,1,2,0)
- ;;=2^Corticotropin Inj up to 40 units
- ;;^UTILITY(U,$J,358.3,29154,1,3,0)
- ;;=3^J0800
- ;;^UTILITY(U,$J,358.3,29155,0)
- ;;=J1040^^173^1859^10^^^^1
- ;;^UTILITY(U,$J,358.3,29155,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29155,1,2,0)
- ;;=2^Methylprednisolone 80 Mg Inj
- ;;^UTILITY(U,$J,358.3,29155,1,3,0)
- ;;=3^J1040
- ;;^UTILITY(U,$J,358.3,29156,0)
- ;;=20606^^173^1859^1^^^^1
- ;;^UTILITY(U,$J,358.3,29156,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29156,1,2,0)
- ;;=2^Asp/Inj Intermediate Jt w/ US
- ;;^UTILITY(U,$J,358.3,29156,1,3,0)
- ;;=3^20606
- ;;^UTILITY(U,$J,358.3,29157,0)
- ;;=20611^^173^1859^3^^^^1
- ;;^UTILITY(U,$J,358.3,29157,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29157,1,2,0)
- ;;=2^Asp/Inj Major Jt w/ US
- ;;^UTILITY(U,$J,358.3,29157,1,3,0)
- ;;=3^20611
- ;;^UTILITY(U,$J,358.3,29158,0)
- ;;=20604^^173^1859^5^^^^1
- ;;^UTILITY(U,$J,358.3,29158,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29158,1,2,0)
- ;;=2^Asp/Inj Small Jt w/ US
- ;;^UTILITY(U,$J,358.3,29158,1,3,0)
- ;;=3^20604
- ;;^UTILITY(U,$J,358.3,29159,0)
- ;;=97762^^173^1860^1^^^^1
- ;;^UTILITY(U,$J,358.3,29159,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29159,1,2,0)
- ;;=2^C/O for Orthotic/Prosth Use,Est Pt,ea 15min
- ;;^UTILITY(U,$J,358.3,29159,1,3,0)
- ;;=3^97762
- ;;^UTILITY(U,$J,358.3,29160,0)
- ;;=97760^^173^1860^2^^^^1
- ;;^UTILITY(U,$J,358.3,29160,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29160,1,2,0)
- ;;=2^Orthotic Mgmt and Training,ea 15min
- ;;^UTILITY(U,$J,358.3,29160,1,3,0)
- ;;=3^97760
- ;;^UTILITY(U,$J,358.3,29161,0)
- ;;=97761^^173^1860^3^^^^1
- ;;^UTILITY(U,$J,358.3,29161,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29161,1,2,0)
- ;;=2^Prosthetic Training,ea 15min
- ;;^UTILITY(U,$J,358.3,29161,1,3,0)
- ;;=3^97761
- ;;^UTILITY(U,$J,358.3,29162,0)
- ;;=97110^^173^1861^7^^^^1
- ;;^UTILITY(U,$J,358.3,29162,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29162,1,2,0)
- ;;=2^Therapeutic Exercises, Ea 15 Min
- ;;^UTILITY(U,$J,358.3,29162,1,3,0)
- ;;=3^97110
- ;;^UTILITY(U,$J,358.3,29163,0)
- ;;=97750^^173^1861^5^^^^1
- ;;^UTILITY(U,$J,358.3,29163,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29163,1,2,0)
- ;;=2^Physical Perform Test, Ea 15 Min
- ;;^UTILITY(U,$J,358.3,29163,1,3,0)
- ;;=3^97750
- ;;^UTILITY(U,$J,358.3,29164,0)
- ;;=97112^^173^1861^4^^^^1
- ;;^UTILITY(U,$J,358.3,29164,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29164,1,2,0)
- ;;=2^Neuromuscular Reeduc,  Ea 15 Min
- ;;^UTILITY(U,$J,358.3,29164,1,3,0)
- ;;=3^97112
- ;;^UTILITY(U,$J,358.3,29165,0)
- ;;=97113^^173^1861^1^^^^1
- ;;^UTILITY(U,$J,358.3,29165,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,29165,1,2,0)
- ;;=2^Aquatic Exercises,ea 15min
- ;;^UTILITY(U,$J,358.3,29165,1,3,0)
- ;;=3^97113
+ ;;^UTILITY(U,$J,358.3,27852,1,4,0)
+ ;;=4^G10.
+ ;;^UTILITY(U,$J,358.3,27852,2)
+ ;;=^5003751^F02.81
+ ;;^UTILITY(U,$J,358.3,27853,0)
+ ;;=G10.^^109^1388^25
+ ;;^UTILITY(U,$J,358.3,27853,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27853,1,3,0)
+ ;;=3^Huntington's Disease w/ Dementia w/o Behavioral Disturbances
+ ;;^UTILITY(U,$J,358.3,27853,1,4,0)
+ ;;=4^G10.
+ ;;^UTILITY(U,$J,358.3,27853,2)
+ ;;=^5003751^F02.80
+ ;;^UTILITY(U,$J,358.3,27854,0)
+ ;;=G90.3^^109^1388^27
+ ;;^UTILITY(U,$J,358.3,27854,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27854,1,3,0)
+ ;;=3^Multi-System Degeneration of the Autonomic Nervous System
+ ;;^UTILITY(U,$J,358.3,27854,1,4,0)
+ ;;=4^G90.3
+ ;;^UTILITY(U,$J,358.3,27854,2)
+ ;;=^5004162
+ ;;^UTILITY(U,$J,358.3,27855,0)
+ ;;=G91.2^^109^1388^28
+ ;;^UTILITY(U,$J,358.3,27855,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27855,1,3,0)
+ ;;=3^NPH w/ Dementia w/ Behavioral Disturbances
+ ;;^UTILITY(U,$J,358.3,27855,1,4,0)
+ ;;=4^G91.2
+ ;;^UTILITY(U,$J,358.3,27855,2)
+ ;;=^5004174^F02.81
+ ;;^UTILITY(U,$J,358.3,27856,0)
+ ;;=G91.2^^109^1388^29
+ ;;^UTILITY(U,$J,358.3,27856,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27856,1,3,0)
+ ;;=3^NPH w/ Dementia w/o Behavioral Disturbances
+ ;;^UTILITY(U,$J,358.3,27856,1,4,0)
+ ;;=4^G91.2
+ ;;^UTILITY(U,$J,358.3,27856,2)
+ ;;=^5004174^F02.80
+ ;;^UTILITY(U,$J,358.3,27857,0)
+ ;;=G30.8^^109^1388^2
+ ;;^UTILITY(U,$J,358.3,27857,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27857,1,3,0)
+ ;;=3^Alzheimer's Disease NEC
+ ;;^UTILITY(U,$J,358.3,27857,1,4,0)
+ ;;=4^G30.8
+ ;;^UTILITY(U,$J,358.3,27857,2)
+ ;;=^5003807
+ ;;^UTILITY(U,$J,358.3,27858,0)
+ ;;=G31.09^^109^1388^19
+ ;;^UTILITY(U,$J,358.3,27858,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27858,1,3,0)
+ ;;=3^Frontotemporal Dementia NEC
+ ;;^UTILITY(U,$J,358.3,27858,1,4,0)
+ ;;=4^G31.09
+ ;;^UTILITY(U,$J,358.3,27858,2)
+ ;;=^329916
+ ;;^UTILITY(U,$J,358.3,27859,0)
+ ;;=G20.^^109^1388^30
+ ;;^UTILITY(U,$J,358.3,27859,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27859,1,3,0)
+ ;;=3^Parkinson's Disease w/ Dementia w/ Behavioral Disturbances
+ ;;^UTILITY(U,$J,358.3,27859,1,4,0)
+ ;;=4^G20.
+ ;;^UTILITY(U,$J,358.3,27859,2)
+ ;;=^5003770^F02.81
+ ;;^UTILITY(U,$J,358.3,27860,0)
+ ;;=G20.^^109^1388^31
+ ;;^UTILITY(U,$J,358.3,27860,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27860,1,3,0)
+ ;;=3^Parkinson's Disease w/ Dementia w/o Behavioral Disturbances
+ ;;^UTILITY(U,$J,358.3,27860,1,4,0)
+ ;;=4^G20.
+ ;;^UTILITY(U,$J,358.3,27860,2)
+ ;;=^5003770^F02.80
+ ;;^UTILITY(U,$J,358.3,27861,0)
+ ;;=G23.1^^109^1388^34
+ ;;^UTILITY(U,$J,358.3,27861,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27861,1,3,0)
+ ;;=3^Progressive Supranuclear Ophthalmoplegia
+ ;;^UTILITY(U,$J,358.3,27861,1,4,0)
+ ;;=4^G23.1
+ ;;^UTILITY(U,$J,358.3,27861,2)
+ ;;=^5003780
+ ;;^UTILITY(U,$J,358.3,27862,0)
+ ;;=E53.8^^109^1389^6
+ ;;^UTILITY(U,$J,358.3,27862,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27862,1,3,0)
+ ;;=3^Deficiency of Vitamin B Group,Other Spec
+ ;;^UTILITY(U,$J,358.3,27862,1,4,0)
+ ;;=4^E53.8
+ ;;^UTILITY(U,$J,358.3,27862,2)
+ ;;=^5002797
+ ;;^UTILITY(U,$J,358.3,27863,0)
+ ;;=F44.4^^109^1389^4
+ ;;^UTILITY(U,$J,358.3,27863,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27863,1,3,0)
+ ;;=3^Conversion Disorder w/ Motor Symptom/Deficit
+ ;;^UTILITY(U,$J,358.3,27863,1,4,0)
+ ;;=4^F44.4
+ ;;^UTILITY(U,$J,358.3,27863,2)
+ ;;=^5003579
+ ;;^UTILITY(U,$J,358.3,27864,0)
+ ;;=F44.6^^109^1389^5
+ ;;^UTILITY(U,$J,358.3,27864,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27864,1,3,0)
+ ;;=3^Conversion Disorder w/ Sensory Symptom/Deficit
+ ;;^UTILITY(U,$J,358.3,27864,1,4,0)
+ ;;=4^F44.6
+ ;;^UTILITY(U,$J,358.3,27864,2)
+ ;;=^5003581

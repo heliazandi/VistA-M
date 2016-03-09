@@ -1,120 +1,140 @@
-IBDEI0TJ ; ; 06-AUG-2015
+IBDEI0TJ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14300,1,2,0)
- ;;=2^Hydrocortisone Sodium Phosphate Inj up to 50mg
- ;;^UTILITY(U,$J,358.3,14300,1,3,0)
- ;;=3^J1710
- ;;^UTILITY(U,$J,358.3,14301,0)
- ;;=J2550^^75^883^9^^^^1
- ;;^UTILITY(U,$J,358.3,14301,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14301,1,2,0)
- ;;=2^Promethazinc HCL Inj up to 50mg
- ;;^UTILITY(U,$J,358.3,14301,1,3,0)
- ;;=3^J2550
- ;;^UTILITY(U,$J,358.3,14302,0)
- ;;=J3301^^75^883^10^^^^1
- ;;^UTILITY(U,$J,358.3,14302,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14302,1,2,0)
- ;;=2^Triamcinolone Acetonide per 10mg
- ;;^UTILITY(U,$J,358.3,14302,1,3,0)
- ;;=3^J3301
- ;;^UTILITY(U,$J,358.3,14303,0)
- ;;=J3302^^75^883^11^^^^1
- ;;^UTILITY(U,$J,358.3,14303,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14303,1,2,0)
- ;;=2^Triamcinolone Diacetate per 5mg
- ;;^UTILITY(U,$J,358.3,14303,1,3,0)
- ;;=3^J3302
- ;;^UTILITY(U,$J,358.3,14304,0)
- ;;=J3303^^75^883^12^^^^1
- ;;^UTILITY(U,$J,358.3,14304,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14304,1,2,0)
- ;;=2^Triamcinolone Hexacetonide per 5mg
- ;;^UTILITY(U,$J,358.3,14304,1,3,0)
- ;;=3^J3303
- ;;^UTILITY(U,$J,358.3,14305,0)
- ;;=J3410^^75^883^7^^^^1
- ;;^UTILITY(U,$J,358.3,14305,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14305,1,2,0)
- ;;=2^Hydroxyzine HCL up to 25mg
- ;;^UTILITY(U,$J,358.3,14305,1,3,0)
- ;;=3^J3410
- ;;^UTILITY(U,$J,358.3,14306,0)
- ;;=J1094^^75^883^4^^^^1
- ;;^UTILITY(U,$J,358.3,14306,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14306,1,2,0)
- ;;=2^Dexamethasone, per mg
- ;;^UTILITY(U,$J,358.3,14306,1,3,0)
- ;;=3^J1094
- ;;^UTILITY(U,$J,358.3,14307,0)
- ;;=J3490^^75^883^1^^^^1
- ;;^UTILITY(U,$J,358.3,14307,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14307,1,2,0)
- ;;=2^Bupivicaine Hcl 1 ml
- ;;^UTILITY(U,$J,358.3,14307,1,3,0)
- ;;=3^J3490
- ;;^UTILITY(U,$J,358.3,14308,0)
- ;;=J3471^^75^883^8^^^^1
- ;;^UTILITY(U,$J,358.3,14308,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14308,1,2,0)
- ;;=2^Ovine,Up to 999 USP Units
- ;;^UTILITY(U,$J,358.3,14308,1,3,0)
- ;;=3^J3471
- ;;^UTILITY(U,$J,358.3,14309,0)
- ;;=26535^^75^884^1^^^^1
- ;;^UTILITY(U,$J,358.3,14309,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14309,1,2,0)
- ;;=2^Arthroplasty, interphalangeal joint; each joint
- ;;^UTILITY(U,$J,358.3,14309,1,3,0)
- ;;=3^26535
- ;;^UTILITY(U,$J,358.3,14310,0)
- ;;=26536^^75^884^2^^^^1
- ;;^UTILITY(U,$J,358.3,14310,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14310,1,2,0)
- ;;=2^Arthroplasty, interphalangeal joint; with prosthetic implant, each jointangeal 
- ;;^UTILITY(U,$J,358.3,14310,1,3,0)
- ;;=3^26536
- ;;^UTILITY(U,$J,358.3,14311,0)
- ;;=27650^^75^884^15^^^^1
- ;;^UTILITY(U,$J,358.3,14311,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14311,1,2,0)
- ;;=2^Repair, primary, open or percutaneous, ruptured Achilles tendon
- ;;^UTILITY(U,$J,358.3,14311,1,3,0)
- ;;=3^27650
- ;;^UTILITY(U,$J,358.3,14312,0)
- ;;=27686^^75^884^7^^^^1
- ;;^UTILITY(U,$J,358.3,14312,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14312,1,2,0)
- ;;=2^Lengthening or shortening of tendon each, leg or ankle; multiple  tendon
- ;;^UTILITY(U,$J,358.3,14312,1,3,0)
- ;;=3^27686
- ;;^UTILITY(U,$J,358.3,14313,0)
- ;;=27685^^75^884^8^^^^1
- ;;^UTILITY(U,$J,358.3,14313,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14313,1,2,0)
- ;;=2^Lengthening or shortening of tendon, leg or ankle; single tendon
- ;;^UTILITY(U,$J,358.3,14313,1,3,0)
- ;;=3^27685
- ;;^UTILITY(U,$J,358.3,14314,0)
- ;;=27695^^75^884^14^^^^1
- ;;^UTILITY(U,$J,358.3,14314,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14314,1,2,0)
- ;;=2^Repair, primary, disrupted ligament, ankle; both collateral ligaments
- ;;^UTILITY(U,$J,358.3,14314,1,3,0)
- ;;=3^27695
+ ;;^UTILITY(U,$J,358.3,13849,2)
+ ;;=^112280
+ ;;^UTILITY(U,$J,358.3,13850,0)
+ ;;=F69.^^53^597^2
+ ;;^UTILITY(U,$J,358.3,13850,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13850,1,3,0)
+ ;;=3^Adult Personality and Behavior Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,13850,1,4,0)
+ ;;=4^F69.
+ ;;^UTILITY(U,$J,358.3,13850,2)
+ ;;=^5003667
+ ;;^UTILITY(U,$J,358.3,13851,0)
+ ;;=F60.9^^53^597^17
+ ;;^UTILITY(U,$J,358.3,13851,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13851,1,3,0)
+ ;;=3^Personality Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,13851,1,4,0)
+ ;;=4^F60.9
+ ;;^UTILITY(U,$J,358.3,13851,2)
+ ;;=^5003639
+ ;;^UTILITY(U,$J,358.3,13852,0)
+ ;;=F32.9^^53^597^12
+ ;;^UTILITY(U,$J,358.3,13852,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13852,1,3,0)
+ ;;=3^MDD,Single Episode,Unspec
+ ;;^UTILITY(U,$J,358.3,13852,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,13852,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,13853,0)
+ ;;=F40.231^^53^597^9
+ ;;^UTILITY(U,$J,358.3,13853,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13853,1,3,0)
+ ;;=3^Fear of Injections/Transfusions
+ ;;^UTILITY(U,$J,358.3,13853,1,4,0)
+ ;;=4^F40.231
+ ;;^UTILITY(U,$J,358.3,13853,2)
+ ;;=^5003551
+ ;;^UTILITY(U,$J,358.3,13854,0)
+ ;;=F40.240^^53^597^8
+ ;;^UTILITY(U,$J,358.3,13854,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13854,1,3,0)
+ ;;=3^Claustrophobia
+ ;;^UTILITY(U,$J,358.3,13854,1,4,0)
+ ;;=4^F40.240
+ ;;^UTILITY(U,$J,358.3,13854,2)
+ ;;=^5003554
+ ;;^UTILITY(U,$J,358.3,13855,0)
+ ;;=F43.21^^53^597^10
+ ;;^UTILITY(U,$J,358.3,13855,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13855,1,3,0)
+ ;;=3^Grief Reaction
+ ;;^UTILITY(U,$J,358.3,13855,1,4,0)
+ ;;=4^F43.21
+ ;;^UTILITY(U,$J,358.3,13855,2)
+ ;;=^331948
+ ;;^UTILITY(U,$J,358.3,13856,0)
+ ;;=F43.10^^53^597^16
+ ;;^UTILITY(U,$J,358.3,13856,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13856,1,3,0)
+ ;;=3^PTSD,Unspec
+ ;;^UTILITY(U,$J,358.3,13856,1,4,0)
+ ;;=4^F43.10
+ ;;^UTILITY(U,$J,358.3,13856,2)
+ ;;=^5003570
+ ;;^UTILITY(U,$J,358.3,13857,0)
+ ;;=F43.11^^53^597^14
+ ;;^UTILITY(U,$J,358.3,13857,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13857,1,3,0)
+ ;;=3^PTSD,Acute
+ ;;^UTILITY(U,$J,358.3,13857,1,4,0)
+ ;;=4^F43.11
+ ;;^UTILITY(U,$J,358.3,13857,2)
+ ;;=^5003571
+ ;;^UTILITY(U,$J,358.3,13858,0)
+ ;;=F43.12^^53^597^15
+ ;;^UTILITY(U,$J,358.3,13858,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13858,1,3,0)
+ ;;=3^PTSD,Chronic
+ ;;^UTILITY(U,$J,358.3,13858,1,4,0)
+ ;;=4^F43.12
+ ;;^UTILITY(U,$J,358.3,13858,2)
+ ;;=^5003572
+ ;;^UTILITY(U,$J,358.3,13859,0)
+ ;;=F43.21^^53^597^1
+ ;;^UTILITY(U,$J,358.3,13859,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13859,1,3,0)
+ ;;=3^Adjustment Disorder w/ Depressed Mood
+ ;;^UTILITY(U,$J,358.3,13859,1,4,0)
+ ;;=4^F43.21
+ ;;^UTILITY(U,$J,358.3,13859,2)
+ ;;=^331948
+ ;;^UTILITY(U,$J,358.3,13860,0)
+ ;;=F45.9^^53^597^24
+ ;;^UTILITY(U,$J,358.3,13860,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13860,1,3,0)
+ ;;=3^Somatoform Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,13860,1,4,0)
+ ;;=4^F45.9
+ ;;^UTILITY(U,$J,358.3,13860,2)
+ ;;=^5003592
+ ;;^UTILITY(U,$J,358.3,13861,0)
+ ;;=F48.2^^53^597^18
+ ;;^UTILITY(U,$J,358.3,13861,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13861,1,3,0)
+ ;;=3^Pseudobulbar Affect
+ ;;^UTILITY(U,$J,358.3,13861,1,4,0)
+ ;;=4^F48.2
+ ;;^UTILITY(U,$J,358.3,13861,2)
+ ;;=^5003594
+ ;;^UTILITY(U,$J,358.3,13862,0)
+ ;;=G47.00^^53^597^11
+ ;;^UTILITY(U,$J,358.3,13862,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13862,1,3,0)
+ ;;=3^Insomnia,Unspec
+ ;;^UTILITY(U,$J,358.3,13862,1,4,0)
+ ;;=4^G47.00
+ ;;^UTILITY(U,$J,358.3,13862,2)
+ ;;=^332924
+ ;;^UTILITY(U,$J,358.3,13863,0)
+ ;;=F40.11^^53^597^22
+ ;;^UTILITY(U,$J,358.3,13863,1,0)
+ ;;=^358.31IA^4^2

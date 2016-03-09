@@ -1,126 +1,134 @@
-IBDEI051 ; ; 06-AUG-2015
+IBDEI051 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1833,1,3,0)
- ;;=3^Diabetes due to underlying condition w diabetic cataract
- ;;^UTILITY(U,$J,358.3,1833,1,4,0)
- ;;=4^E08.36
- ;;^UTILITY(U,$J,358.3,1833,2)
- ;;=^5002520
- ;;^UTILITY(U,$J,358.3,1834,0)
- ;;=E08.39^^3^56^10
- ;;^UTILITY(U,$J,358.3,1834,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1834,1,3,0)
- ;;=3^Diabetes due to underlying condition w oth diabetic opth comp
- ;;^UTILITY(U,$J,358.3,1834,1,4,0)
- ;;=4^E08.39
- ;;^UTILITY(U,$J,358.3,1834,2)
- ;;=^5002521
- ;;^UTILITY(U,$J,358.3,1835,0)
- ;;=E09.311^^3^56^56
- ;;^UTILITY(U,$J,358.3,1835,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1835,1,3,0)
- ;;=3^Drug/chem diabetes w unsp diabetic rtnop w macular edema
- ;;^UTILITY(U,$J,358.3,1835,1,4,0)
- ;;=4^E09.311
- ;;^UTILITY(U,$J,358.3,1835,2)
- ;;=^5002552
- ;;^UTILITY(U,$J,358.3,1836,0)
- ;;=E09.319^^3^56^57
- ;;^UTILITY(U,$J,358.3,1836,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1836,1,3,0)
- ;;=3^Drug/chem diabetes w unsp diabetic rtnop w/o macular edema
- ;;^UTILITY(U,$J,358.3,1836,1,4,0)
- ;;=4^E09.319
- ;;^UTILITY(U,$J,358.3,1836,2)
- ;;=^5002553
- ;;^UTILITY(U,$J,358.3,1837,0)
- ;;=E09.36^^3^56^32
- ;;^UTILITY(U,$J,358.3,1837,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1837,1,3,0)
- ;;=3^Drug/chem diabetes w diabetic cataract
- ;;^UTILITY(U,$J,358.3,1837,1,4,0)
- ;;=4^E09.36
- ;;^UTILITY(U,$J,358.3,1837,2)
- ;;=^5002562
- ;;^UTILITY(U,$J,358.3,1838,0)
- ;;=E09.39^^3^56^51
- ;;^UTILITY(U,$J,358.3,1838,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1838,1,3,0)
- ;;=3^Drug/chem diabetes w oth diabetic ophthalmic complication
- ;;^UTILITY(U,$J,358.3,1838,1,4,0)
- ;;=4^E09.39
- ;;^UTILITY(U,$J,358.3,1838,2)
- ;;=^5002563
- ;;^UTILITY(U,$J,358.3,1839,0)
- ;;=E08.40^^3^56^11
- ;;^UTILITY(U,$J,358.3,1839,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1839,1,3,0)
- ;;=3^Diabetes due to underlying condition w diabetic neurop, unsp
- ;;^UTILITY(U,$J,358.3,1839,1,4,0)
- ;;=4^E08.40
- ;;^UTILITY(U,$J,358.3,1839,2)
- ;;=^5002522
- ;;^UTILITY(U,$J,358.3,1840,0)
- ;;=E08.41^^3^56^12
- ;;^UTILITY(U,$J,358.3,1840,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1840,1,3,0)
- ;;=3^Diabetes due to underlying condition w diabetic mononeuropathy
- ;;^UTILITY(U,$J,358.3,1840,1,4,0)
- ;;=4^E08.41
- ;;^UTILITY(U,$J,358.3,1840,2)
- ;;=^5002523
- ;;^UTILITY(U,$J,358.3,1841,0)
- ;;=E08.42^^3^56^13
- ;;^UTILITY(U,$J,358.3,1841,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1841,1,3,0)
- ;;=3^Diabetes due to underlying condition w diabetic polyneurop
- ;;^UTILITY(U,$J,358.3,1841,1,4,0)
- ;;=4^E08.42
- ;;^UTILITY(U,$J,358.3,1841,2)
- ;;=^5002524
- ;;^UTILITY(U,$J,358.3,1842,0)
- ;;=E08.43^^3^56^14
- ;;^UTILITY(U,$J,358.3,1842,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1842,1,3,0)
- ;;=3^Diabetes due to underlying condition w diabetic autonm (poly)neuropathy
- ;;^UTILITY(U,$J,358.3,1842,1,4,0)
- ;;=4^E08.43
- ;;^UTILITY(U,$J,358.3,1842,2)
- ;;=^5002525
- ;;^UTILITY(U,$J,358.3,1843,0)
- ;;=E08.44^^3^56^15
- ;;^UTILITY(U,$J,358.3,1843,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1843,1,3,0)
- ;;=3^Diabetes due to underlying condition w diabetic amyotrophy
- ;;^UTILITY(U,$J,358.3,1843,1,4,0)
- ;;=4^E08.44
- ;;^UTILITY(U,$J,358.3,1843,2)
- ;;=^5002526
- ;;^UTILITY(U,$J,358.3,1844,0)
- ;;=E08.49^^3^56^16
- ;;^UTILITY(U,$J,358.3,1844,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1844,1,3,0)
- ;;=3^Diabetes due to underlying condition w oth diabetic neuro comp
- ;;^UTILITY(U,$J,358.3,1844,1,4,0)
- ;;=4^E08.49
- ;;^UTILITY(U,$J,358.3,1844,2)
- ;;=^5002527
- ;;^UTILITY(U,$J,358.3,1845,0)
- ;;=E08.610^^3^56^17
- ;;^UTILITY(U,$J,358.3,1845,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1845,1,3,0)
- ;;=3^Diabetes due to underlying condition w diabetic neuropathic arthrop
+ ;;^UTILITY(U,$J,358.3,1948,0)
+ ;;=93602^^12^162^21^^^^1
+ ;;^UTILITY(U,$J,358.3,1948,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1948,1,2,0)
+ ;;=2^93602
+ ;;^UTILITY(U,$J,358.3,1948,1,3,0)
+ ;;=3^Intra-Atrial Record
+ ;;^UTILITY(U,$J,358.3,1949,0)
+ ;;=93603^^12^162^26^^^^1
+ ;;^UTILITY(U,$J,358.3,1949,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1949,1,2,0)
+ ;;=2^93603
+ ;;^UTILITY(U,$J,358.3,1949,1,3,0)
+ ;;=3^R Vent Record
+ ;;^UTILITY(U,$J,358.3,1950,0)
+ ;;=93609^^12^162^24^^^^1
+ ;;^UTILITY(U,$J,358.3,1950,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1950,1,2,0)
+ ;;=2^93609
+ ;;^UTILITY(U,$J,358.3,1950,1,3,0)
+ ;;=3^Mapping Of Tachycardia
+ ;;^UTILITY(U,$J,358.3,1951,0)
+ ;;=93610^^12^162^20^^^^1
+ ;;^UTILITY(U,$J,358.3,1951,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1951,1,2,0)
+ ;;=2^93610
+ ;;^UTILITY(U,$J,358.3,1951,1,3,0)
+ ;;=3^Intra-Atrial Pacing
+ ;;^UTILITY(U,$J,358.3,1952,0)
+ ;;=93612^^12^162^23^^^^1
+ ;;^UTILITY(U,$J,358.3,1952,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1952,1,2,0)
+ ;;=2^93612
+ ;;^UTILITY(U,$J,358.3,1952,1,3,0)
+ ;;=3^Intraventricular Pacing
+ ;;^UTILITY(U,$J,358.3,1953,0)
+ ;;=93615^^12^162^17^^^^1
+ ;;^UTILITY(U,$J,358.3,1953,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1953,1,2,0)
+ ;;=2^93615
+ ;;^UTILITY(U,$J,358.3,1953,1,3,0)
+ ;;=3^Esoph Record
+ ;;^UTILITY(U,$J,358.3,1954,0)
+ ;;=93616^^12^162^18^^^^1
+ ;;^UTILITY(U,$J,358.3,1954,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1954,1,2,0)
+ ;;=2^93616
+ ;;^UTILITY(U,$J,358.3,1954,1,3,0)
+ ;;=3^Esoph Record W/Pacing
+ ;;^UTILITY(U,$J,358.3,1955,0)
+ ;;=93618^^12^162^19^^^^1
+ ;;^UTILITY(U,$J,358.3,1955,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1955,1,2,0)
+ ;;=2^93618
+ ;;^UTILITY(U,$J,358.3,1955,1,3,0)
+ ;;=3^Induct Of Arryth By Elec Pace
+ ;;^UTILITY(U,$J,358.3,1956,0)
+ ;;=93619^^12^162^14^^^^1
+ ;;^UTILITY(U,$J,358.3,1956,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1956,1,2,0)
+ ;;=2^93619
+ ;;^UTILITY(U,$J,358.3,1956,1,3,0)
+ ;;=3^Eps Eval, No Induct Of Arryth
+ ;;^UTILITY(U,$J,358.3,1957,0)
+ ;;=93620^^12^162^11^^^^1
+ ;;^UTILITY(U,$J,358.3,1957,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1957,1,2,0)
+ ;;=2^93620
+ ;;^UTILITY(U,$J,358.3,1957,1,3,0)
+ ;;=3^Eps Eval W/Induct Of Arryth
+ ;;^UTILITY(U,$J,358.3,1958,0)
+ ;;=93621^^12^162^10^^^^1
+ ;;^UTILITY(U,$J,358.3,1958,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1958,1,2,0)
+ ;;=2^93621
+ ;;^UTILITY(U,$J,358.3,1958,1,3,0)
+ ;;=3^Eps Eval W/Atrial Record
+ ;;^UTILITY(U,$J,358.3,1959,0)
+ ;;=93622^^12^162^12^^^^1
+ ;;^UTILITY(U,$J,358.3,1959,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1959,1,2,0)
+ ;;=2^93622
+ ;;^UTILITY(U,$J,358.3,1959,1,3,0)
+ ;;=3^Eps Eval W/L Vent Record
+ ;;^UTILITY(U,$J,358.3,1960,0)
+ ;;=93623^^12^162^13^^^^1
+ ;;^UTILITY(U,$J,358.3,1960,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1960,1,2,0)
+ ;;=2^93623
+ ;;^UTILITY(U,$J,358.3,1960,1,3,0)
+ ;;=3^Eps Eval W/Prog Stim Drug (W/
+ ;;^UTILITY(U,$J,358.3,1961,0)
+ ;;=93624^^12^162^15^^^^1
+ ;;^UTILITY(U,$J,358.3,1961,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1961,1,2,0)
+ ;;=2^93624
+ ;;^UTILITY(U,$J,358.3,1961,1,3,0)
+ ;;=3^Eps F/U Study W/Pace W/Record
+ ;;^UTILITY(U,$J,358.3,1962,0)
+ ;;=93640^^12^162^8^^^^1
+ ;;^UTILITY(U,$J,358.3,1962,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1962,1,2,0)
+ ;;=2^93640
+ ;;^UTILITY(U,$J,358.3,1962,1,3,0)
+ ;;=3^Eps Eval Sgl/Dual Lead
+ ;;^UTILITY(U,$J,358.3,1963,0)
+ ;;=93641^^12^162^16^^^^1
+ ;;^UTILITY(U,$J,358.3,1963,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1963,1,2,0)
+ ;;=2^93641
+ ;;^UTILITY(U,$J,358.3,1963,1,3,0)
+ ;;=3^Eps Test Sgl/Dual Pulse Gen
+ ;;^UTILITY(U,$J,358.3,1964,0)
+ ;;=93642^^12^162^9^^^^1

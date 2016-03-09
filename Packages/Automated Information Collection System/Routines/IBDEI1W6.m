@@ -1,130 +1,126 @@
-IBDEI1W6 ; ; 06-AUG-2015
+IBDEI1W6 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33272,1,0)
+ ;;^UTILITY(U,$J,358.3,32123,2)
+ ;;=^5049237
+ ;;^UTILITY(U,$J,358.3,32124,0)
+ ;;=T34.831S^^126^1609^189
+ ;;^UTILITY(U,$J,358.3,32124,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33272,1,3,0)
- ;;=3^Restless Legs Syndrome
- ;;^UTILITY(U,$J,358.3,33272,1,4,0)
- ;;=4^G25.81
- ;;^UTILITY(U,$J,358.3,33272,2)
- ;;=^5003801
- ;;^UTILITY(U,$J,358.3,33273,0)
- ;;=G35.^^182^1999^29
- ;;^UTILITY(U,$J,358.3,33273,1,0)
+ ;;^UTILITY(U,$J,358.3,32124,1,3,0)
+ ;;=3^Frostbite w/ tissue necrosis of rt toe(s), sequela
+ ;;^UTILITY(U,$J,358.3,32124,1,4,0)
+ ;;=4^T34.831S
+ ;;^UTILITY(U,$J,358.3,32124,2)
+ ;;=^5049243
+ ;;^UTILITY(U,$J,358.3,32125,0)
+ ;;=T34.832S^^126^1609^184
+ ;;^UTILITY(U,$J,358.3,32125,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33273,1,3,0)
- ;;=3^Multiple Sclerosis
- ;;^UTILITY(U,$J,358.3,33273,1,4,0)
- ;;=4^G35.
- ;;^UTILITY(U,$J,358.3,33273,2)
- ;;=^79761
- ;;^UTILITY(U,$J,358.3,33274,0)
- ;;=G40.901^^182^1999^13
- ;;^UTILITY(U,$J,358.3,33274,1,0)
+ ;;^UTILITY(U,$J,358.3,32125,1,3,0)
+ ;;=3^Frostbite w/ tissue necrosis of lft toe(s), sequela
+ ;;^UTILITY(U,$J,358.3,32125,1,4,0)
+ ;;=4^T34.832S
+ ;;^UTILITY(U,$J,358.3,32125,2)
+ ;;=^5049246
+ ;;^UTILITY(U,$J,358.3,32126,0)
+ ;;=S80.851A^^126^1609^174
+ ;;^UTILITY(U,$J,358.3,32126,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33274,1,3,0)
- ;;=3^Epilepsy,Not Intractable w/ Status Epilepticus,Unspec
- ;;^UTILITY(U,$J,358.3,33274,1,4,0)
- ;;=4^G40.901
- ;;^UTILITY(U,$J,358.3,33274,2)
- ;;=^5003864
- ;;^UTILITY(U,$J,358.3,33275,0)
- ;;=G40.909^^182^1999^14
- ;;^UTILITY(U,$J,358.3,33275,1,0)
+ ;;^UTILITY(U,$J,358.3,32126,1,3,0)
+ ;;=3^Foreign body, rt lwr leg,Superficial,init
+ ;;^UTILITY(U,$J,358.3,32126,1,4,0)
+ ;;=4^S80.851A
+ ;;^UTILITY(U,$J,358.3,32126,2)
+ ;;=^5039987
+ ;;^UTILITY(U,$J,358.3,32127,0)
+ ;;=S90.451A^^126^1609^172
+ ;;^UTILITY(U,$J,358.3,32127,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33275,1,3,0)
- ;;=3^Epilepsy,Not Intractable w/o Status Epilepticus,Unspec
- ;;^UTILITY(U,$J,358.3,33275,1,4,0)
- ;;=4^G40.909
- ;;^UTILITY(U,$J,358.3,33275,2)
- ;;=^5003865
- ;;^UTILITY(U,$J,358.3,33276,0)
- ;;=G43.809^^182^1999^26
- ;;^UTILITY(U,$J,358.3,33276,1,0)
+ ;;^UTILITY(U,$J,358.3,32127,1,3,0)
+ ;;=3^Foreign body, rt grt toe, Superficial,init
+ ;;^UTILITY(U,$J,358.3,32127,1,4,0)
+ ;;=4^S90.451A
+ ;;^UTILITY(U,$J,358.3,32127,2)
+ ;;=^5043943
+ ;;^UTILITY(U,$J,358.3,32128,0)
+ ;;=S90.454A^^126^1609^173
+ ;;^UTILITY(U,$J,358.3,32128,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33276,1,3,0)
- ;;=3^Migraine,Not Intractable w/o Status Migrainosus,Other
- ;;^UTILITY(U,$J,358.3,33276,1,4,0)
- ;;=4^G43.809
- ;;^UTILITY(U,$J,358.3,33276,2)
- ;;=^5003901
- ;;^UTILITY(U,$J,358.3,33277,0)
- ;;=G43.B0^^182^1999^28
- ;;^UTILITY(U,$J,358.3,33277,1,0)
+ ;;^UTILITY(U,$J,358.3,32128,1,3,0)
+ ;;=3^Foreign body, rt lsr toe(s),Superficial,init
+ ;;^UTILITY(U,$J,358.3,32128,1,4,0)
+ ;;=4^S90.454A
+ ;;^UTILITY(U,$J,358.3,32128,2)
+ ;;=^5043952
+ ;;^UTILITY(U,$J,358.3,32129,0)
+ ;;=S80.852A^^126^1609^170
+ ;;^UTILITY(U,$J,358.3,32129,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33277,1,3,0)
- ;;=3^Migraine,Ophthalmoplegic Not Intractable
- ;;^UTILITY(U,$J,358.3,33277,1,4,0)
- ;;=4^G43.B0
- ;;^UTILITY(U,$J,358.3,33277,2)
- ;;=^5003914
- ;;^UTILITY(U,$J,358.3,33278,0)
- ;;=G43.C0^^182^1999^17
- ;;^UTILITY(U,$J,358.3,33278,1,0)
+ ;;^UTILITY(U,$J,358.3,32129,1,3,0)
+ ;;=3^Foreign body, lft lwr leg, Superficial,init
+ ;;^UTILITY(U,$J,358.3,32129,1,4,0)
+ ;;=4^S80.852A
+ ;;^UTILITY(U,$J,358.3,32129,2)
+ ;;=^5039990
+ ;;^UTILITY(U,$J,358.3,32130,0)
+ ;;=S90.452A^^126^1609^168
+ ;;^UTILITY(U,$J,358.3,32130,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33278,1,3,0)
- ;;=3^Headache Syndromes,Periodic Not Intractable
- ;;^UTILITY(U,$J,358.3,33278,1,4,0)
- ;;=4^G43.C0
- ;;^UTILITY(U,$J,358.3,33278,2)
- ;;=^5003916
- ;;^UTILITY(U,$J,358.3,33279,0)
- ;;=G43.A0^^182^1999^8
- ;;^UTILITY(U,$J,358.3,33279,1,0)
+ ;;^UTILITY(U,$J,358.3,32130,1,3,0)
+ ;;=3^Foreign body, lft grt toe, Superficial,init
+ ;;^UTILITY(U,$J,358.3,32130,1,4,0)
+ ;;=4^S90.452A
+ ;;^UTILITY(U,$J,358.3,32130,2)
+ ;;=^5043946
+ ;;^UTILITY(U,$J,358.3,32131,0)
+ ;;=S90.455A^^126^1609^169
+ ;;^UTILITY(U,$J,358.3,32131,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33279,1,3,0)
- ;;=3^Cyclical Vomiting Not Intractable
- ;;^UTILITY(U,$J,358.3,33279,1,4,0)
- ;;=4^G43.A0
- ;;^UTILITY(U,$J,358.3,33279,2)
- ;;=^5003912
- ;;^UTILITY(U,$J,358.3,33280,0)
- ;;=G43.C1^^182^1999^16
- ;;^UTILITY(U,$J,358.3,33280,1,0)
+ ;;^UTILITY(U,$J,358.3,32131,1,3,0)
+ ;;=3^Foreign body, lft lsr toe(s), Superficial,init
+ ;;^UTILITY(U,$J,358.3,32131,1,4,0)
+ ;;=4^S90.455A
+ ;;^UTILITY(U,$J,358.3,32131,2)
+ ;;=^5043955
+ ;;^UTILITY(U,$J,358.3,32132,0)
+ ;;=S90.851A^^126^1609^171
+ ;;^UTILITY(U,$J,358.3,32132,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33280,1,3,0)
- ;;=3^Headache Syndromes,Periodic Intractable
- ;;^UTILITY(U,$J,358.3,33280,1,4,0)
- ;;=4^G43.C1
- ;;^UTILITY(U,$J,358.3,33280,2)
- ;;=^5003917
- ;;^UTILITY(U,$J,358.3,33281,0)
- ;;=G43.B1^^182^1999^27
- ;;^UTILITY(U,$J,358.3,33281,1,0)
+ ;;^UTILITY(U,$J,358.3,32132,1,3,0)
+ ;;=3^Foreign body, rt ft, Superficial,init
+ ;;^UTILITY(U,$J,358.3,32132,1,4,0)
+ ;;=4^S90.851A
+ ;;^UTILITY(U,$J,358.3,32132,2)
+ ;;=^5044078
+ ;;^UTILITY(U,$J,358.3,32133,0)
+ ;;=S90.852A^^126^1609^167
+ ;;^UTILITY(U,$J,358.3,32133,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33281,1,3,0)
- ;;=3^Migraine,Ophthalmoplegic Intractable
- ;;^UTILITY(U,$J,358.3,33281,1,4,0)
- ;;=4^G43.B1
- ;;^UTILITY(U,$J,358.3,33281,2)
- ;;=^5003915
- ;;^UTILITY(U,$J,358.3,33282,0)
- ;;=G43.A1^^182^1999^7
- ;;^UTILITY(U,$J,358.3,33282,1,0)
+ ;;^UTILITY(U,$J,358.3,32133,1,3,0)
+ ;;=3^Foreign body, lft ft, Superficial,init
+ ;;^UTILITY(U,$J,358.3,32133,1,4,0)
+ ;;=4^S90.852A
+ ;;^UTILITY(U,$J,358.3,32133,2)
+ ;;=^5044081
+ ;;^UTILITY(U,$J,358.3,32134,0)
+ ;;=T34.821A^^126^1609^188
+ ;;^UTILITY(U,$J,358.3,32134,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33282,1,3,0)
- ;;=3^Cyclical Vomiting Intractable
- ;;^UTILITY(U,$J,358.3,33282,1,4,0)
- ;;=4^G43.A1
- ;;^UTILITY(U,$J,358.3,33282,2)
- ;;=^5003913
- ;;^UTILITY(U,$J,358.3,33283,0)
- ;;=G43.819^^182^1999^23
- ;;^UTILITY(U,$J,358.3,33283,1,0)
+ ;;^UTILITY(U,$J,358.3,32134,1,3,0)
+ ;;=3^Frostbite w/ tissue necrosis of rt ft, init
+ ;;^UTILITY(U,$J,358.3,32134,1,4,0)
+ ;;=4^T34.821A
+ ;;^UTILITY(U,$J,358.3,32134,2)
+ ;;=^5049232
+ ;;^UTILITY(U,$J,358.3,32135,0)
+ ;;=T34.822A^^126^1609^183
+ ;;^UTILITY(U,$J,358.3,32135,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33283,1,3,0)
- ;;=3^Migraine Intractable w/o Status Migrainosus,Other
- ;;^UTILITY(U,$J,358.3,33283,1,4,0)
- ;;=4^G43.819
- ;;^UTILITY(U,$J,358.3,33283,2)
- ;;=^5003903
- ;;^UTILITY(U,$J,358.3,33284,0)
- ;;=G43.909^^182^1999^25
- ;;^UTILITY(U,$J,358.3,33284,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33284,1,3,0)
- ;;=3^Migraine Not Intractable w/o Status Migrainosus,Unspec
- ;;^UTILITY(U,$J,358.3,33284,1,4,0)
- ;;=4^G43.909
+ ;;^UTILITY(U,$J,358.3,32135,1,3,0)
+ ;;=3^Frostbite w/ tissue necrosis of lft ft, init
+ ;;^UTILITY(U,$J,358.3,32135,1,4,0)
+ ;;=4^T34.822A
+ ;;^UTILITY(U,$J,358.3,32135,2)
+ ;;=^5049235

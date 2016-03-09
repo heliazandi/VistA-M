@@ -1,114 +1,134 @@
-IBDEI0TE ; ; 06-AUG-2015
+IBDEI0TE ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14229,1,2,0)
- ;;=2^Repair of Nail Bed
- ;;^UTILITY(U,$J,358.3,14229,1,3,0)
- ;;=3^11760
- ;;^UTILITY(U,$J,358.3,14230,0)
- ;;=11765^^75^874^11^^^^1
- ;;^UTILITY(U,$J,358.3,14230,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14230,1,2,0)
- ;;=2^Wedge Excision of Skin Nail Fold
- ;;^UTILITY(U,$J,358.3,14230,1,3,0)
- ;;=3^11765
- ;;^UTILITY(U,$J,358.3,14231,0)
- ;;=11055^^75^875^1^^^^1
- ;;^UTILITY(U,$J,358.3,14231,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14231,1,2,0)
- ;;=2^Trim Skin Lesion, Single Lesion
- ;;^UTILITY(U,$J,358.3,14231,1,3,0)
- ;;=3^11055
- ;;^UTILITY(U,$J,358.3,14232,0)
- ;;=11056^^75^875^2^^^^1
- ;;^UTILITY(U,$J,358.3,14232,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14232,1,2,0)
- ;;=2^Trim Skin Lesion,2-4 Lesions
- ;;^UTILITY(U,$J,358.3,14232,1,3,0)
- ;;=3^11056
- ;;^UTILITY(U,$J,358.3,14233,0)
- ;;=11057^^75^875^3^^^^1
- ;;^UTILITY(U,$J,358.3,14233,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14233,1,2,0)
- ;;=2^Trim Skin Lesions, Over 4
- ;;^UTILITY(U,$J,358.3,14233,1,3,0)
- ;;=3^11057
- ;;^UTILITY(U,$J,358.3,14234,0)
- ;;=17000^^75^876^1^^^^1
- ;;^UTILITY(U,$J,358.3,14234,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14234,1,2,0)
- ;;=2^Destruction, all benign or premalignant lesions other than skin tags or cutaneous vascular proliferative lesion; 1st lesion
- ;;^UTILITY(U,$J,358.3,14234,1,3,0)
- ;;=3^17000
- ;;^UTILITY(U,$J,358.3,14235,0)
- ;;=17003^^75^876^2^^^^1
- ;;^UTILITY(U,$J,358.3,14235,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14235,1,2,0)
- ;;=2^Destruction, all benign or premalignant lesions other than skin tags or cutaneous vascular proliferative lesions; 2nd-14th lesion, each
- ;;^UTILITY(U,$J,358.3,14235,1,3,0)
- ;;=3^17003
- ;;^UTILITY(U,$J,358.3,14236,0)
- ;;=17004^^75^876^3^^^^1
- ;;^UTILITY(U,$J,358.3,14236,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14236,1,2,0)
- ;;=2^Destruction, all benign or premalignant lesions other than skin tags or cutaneous vascular proliferative lesions; 15 or more lesions
- ;;^UTILITY(U,$J,358.3,14236,1,3,0)
- ;;=3^17004
- ;;^UTILITY(U,$J,358.3,14237,0)
- ;;=17110^^75^876^4^^^^1
- ;;^UTILITY(U,$J,358.3,14237,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14237,1,2,0)
- ;;=2^Destruction, of flat warts, molluscum contagiosum, or milia; up to 14 lesions
- ;;^UTILITY(U,$J,358.3,14237,1,3,0)
- ;;=3^17110
- ;;^UTILITY(U,$J,358.3,14238,0)
- ;;=17111^^75^876^5^^^^1
- ;;^UTILITY(U,$J,358.3,14238,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14238,1,2,0)
- ;;=2^Destruction, of flat warts, molluscum contagiosum, or milia; 15 or more lesions
- ;;^UTILITY(U,$J,358.3,14238,1,3,0)
- ;;=3^17111
- ;;^UTILITY(U,$J,358.3,14239,0)
- ;;=17250^^75^876^6^^^^1
- ;;^UTILITY(U,$J,358.3,14239,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14239,1,2,0)
- ;;=2^Chemical cauterization of granulation tissue
- ;;^UTILITY(U,$J,358.3,14239,1,3,0)
- ;;=3^17250
- ;;^UTILITY(U,$J,358.3,14240,0)
- ;;=11400^^75^877^1^^^^1
- ;;^UTILITY(U,$J,358.3,14240,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14240,1,2,0)
- ;;=2^Exc Benign Lesion-Trunk,Legs;0.5cm or less
- ;;^UTILITY(U,$J,358.3,14240,1,3,0)
- ;;=3^11400
- ;;^UTILITY(U,$J,358.3,14241,0)
- ;;=11401^^75^877^2^^^^1
- ;;^UTILITY(U,$J,358.3,14241,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14241,1,2,0)
- ;;=2^Exc Benign Lesion-Trunk,Legs;0.6cm-1.0cm
- ;;^UTILITY(U,$J,358.3,14241,1,3,0)
- ;;=3^11401
- ;;^UTILITY(U,$J,358.3,14242,0)
- ;;=11402^^75^877^3^^^^1
- ;;^UTILITY(U,$J,358.3,14242,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14242,1,2,0)
- ;;=2^Exc Benign Lesion-Trunk,Legs;1.1cm-2.0cm
- ;;^UTILITY(U,$J,358.3,14242,1,3,0)
- ;;=3^11402
- ;;^UTILITY(U,$J,358.3,14243,0)
- ;;=11403^^75^877^4^^^^1
+ ;;^UTILITY(U,$J,358.3,13784,2)
+ ;;=^5009621
+ ;;^UTILITY(U,$J,358.3,13785,0)
+ ;;=M86.20^^53^595^62
+ ;;^UTILITY(U,$J,358.3,13785,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13785,1,3,0)
+ ;;=3^Osteomyelitis,Subacute,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13785,1,4,0)
+ ;;=4^M86.20
+ ;;^UTILITY(U,$J,358.3,13785,2)
+ ;;=^5014535
+ ;;^UTILITY(U,$J,358.3,13786,0)
+ ;;=M86.10^^53^595^58
+ ;;^UTILITY(U,$J,358.3,13786,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13786,1,3,0)
+ ;;=3^Osteomyelitis,Acute,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13786,1,4,0)
+ ;;=4^M86.10
+ ;;^UTILITY(U,$J,358.3,13786,2)
+ ;;=^5014521
+ ;;^UTILITY(U,$J,358.3,13787,0)
+ ;;=M86.00^^53^595^57
+ ;;^UTILITY(U,$J,358.3,13787,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13787,1,3,0)
+ ;;=3^Osteomyelitis,Acute Hematogenous,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13787,1,4,0)
+ ;;=4^M86.00
+ ;;^UTILITY(U,$J,358.3,13787,2)
+ ;;=^5014497
+ ;;^UTILITY(U,$J,358.3,13788,0)
+ ;;=M86.50^^53^595^59
+ ;;^UTILITY(U,$J,358.3,13788,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13788,1,3,0)
+ ;;=3^Osteomyelitis,Chronic Hematogenous,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13788,1,4,0)
+ ;;=4^M86.50
+ ;;^UTILITY(U,$J,358.3,13788,2)
+ ;;=^5014607
+ ;;^UTILITY(U,$J,358.3,13789,0)
+ ;;=M86.30^^53^595^60
+ ;;^UTILITY(U,$J,358.3,13789,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13789,1,3,0)
+ ;;=3^Osteomyelitis,Chronic Multifocal,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13789,1,4,0)
+ ;;=4^M86.30
+ ;;^UTILITY(U,$J,358.3,13789,2)
+ ;;=^5014559
+ ;;^UTILITY(U,$J,358.3,13790,0)
+ ;;=M86.8X9^^53^595^63
+ ;;^UTILITY(U,$J,358.3,13790,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13790,1,3,0)
+ ;;=3^Osteomyelitis,Unspec Sites
+ ;;^UTILITY(U,$J,358.3,13790,1,4,0)
+ ;;=4^M86.8X9
+ ;;^UTILITY(U,$J,358.3,13790,2)
+ ;;=^5014655
+ ;;^UTILITY(U,$J,358.3,13791,0)
+ ;;=M86.60^^53^595^61
+ ;;^UTILITY(U,$J,358.3,13791,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13791,1,3,0)
+ ;;=3^Osteomyelitis,Chronic,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13791,1,4,0)
+ ;;=4^M86.60
+ ;;^UTILITY(U,$J,358.3,13791,2)
+ ;;=^5014630
+ ;;^UTILITY(U,$J,358.3,13792,0)
+ ;;=M86.40^^53^595^56
+ ;;^UTILITY(U,$J,358.3,13792,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13792,1,3,0)
+ ;;=3^Osteomyelitis w/ Draining Sinus,Chronic,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13792,1,4,0)
+ ;;=4^M86.40
+ ;;^UTILITY(U,$J,358.3,13792,2)
+ ;;=^5014583
+ ;;^UTILITY(U,$J,358.3,13793,0)
+ ;;=R50.2^^53^595^23
+ ;;^UTILITY(U,$J,358.3,13793,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13793,1,3,0)
+ ;;=3^Fever,Drug-Induced
+ ;;^UTILITY(U,$J,358.3,13793,1,4,0)
+ ;;=4^R50.2
+ ;;^UTILITY(U,$J,358.3,13793,2)
+ ;;=^5019507
+ ;;^UTILITY(U,$J,358.3,13794,0)
+ ;;=R50.9^^53^595^27
+ ;;^UTILITY(U,$J,358.3,13794,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13794,1,3,0)
+ ;;=3^Fever,Unspec
+ ;;^UTILITY(U,$J,358.3,13794,1,4,0)
+ ;;=4^R50.9
+ ;;^UTILITY(U,$J,358.3,13794,2)
+ ;;=^5019512
+ ;;^UTILITY(U,$J,358.3,13795,0)
+ ;;=R76.11^^53^595^1
+ ;;^UTILITY(U,$J,358.3,13795,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13795,1,3,0)
+ ;;=3^Abnormal Reaction to TB Test w/o Active TB
+ ;;^UTILITY(U,$J,358.3,13795,1,4,0)
+ ;;=4^R76.11
+ ;;^UTILITY(U,$J,358.3,13795,2)
+ ;;=^5019570
+ ;;^UTILITY(U,$J,358.3,13796,0)
+ ;;=Z21.^^53^595^30
+ ;;^UTILITY(U,$J,358.3,13796,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13796,1,3,0)
+ ;;=3^HIV Asymptomatic,Infection Status
+ ;;^UTILITY(U,$J,358.3,13796,1,4,0)
+ ;;=4^Z21.
+ ;;^UTILITY(U,$J,358.3,13796,2)
+ ;;=^5062777
+ ;;^UTILITY(U,$J,358.3,13797,0)
+ ;;=B37.0^^53^595^16
+ ;;^UTILITY(U,$J,358.3,13797,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13797,1,3,0)
+ ;;=3^Candidal Stomatitis (Oral Thrush)
+ ;;^UTILITY(U,$J,358.3,13797,1,4,0)
+ ;;=4^B37.0

@@ -1,138 +1,124 @@
-IBDEI1GS ; ; 06-AUG-2015
+IBDEI1GS ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,25979,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25979,1,2,0)
- ;;=2^V62.84
- ;;^UTILITY(U,$J,358.3,25979,1,5,0)
- ;;=5^Suicidal Ideation
- ;;^UTILITY(U,$J,358.3,25979,2)
- ;;=^332876
- ;;^UTILITY(U,$J,358.3,25980,0)
- ;;=V62.85^^150^1648^18
- ;;^UTILITY(U,$J,358.3,25980,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25980,1,2,0)
- ;;=2^V62.85
- ;;^UTILITY(U,$J,358.3,25980,1,5,0)
- ;;=5^Homicidal Ideation
- ;;^UTILITY(U,$J,358.3,25980,2)
- ;;=^339690
- ;;^UTILITY(U,$J,358.3,25981,0)
- ;;=V58.61^^150^1648^25
- ;;^UTILITY(U,$J,358.3,25981,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25981,1,2,0)
- ;;=2^V58.61
- ;;^UTILITY(U,$J,358.3,25981,1,5,0)
- ;;=5^L/T (Current) Anticoagulant Use
- ;;^UTILITY(U,$J,358.3,25981,2)
- ;;=^303459
- ;;^UTILITY(U,$J,358.3,25982,0)
- ;;=V58.62^^150^1648^24
- ;;^UTILITY(U,$J,358.3,25982,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25982,1,2,0)
- ;;=2^V58.62
- ;;^UTILITY(U,$J,358.3,25982,1,5,0)
- ;;=5^L/T (Current) Antibiotics Use
- ;;^UTILITY(U,$J,358.3,25982,2)
- ;;=^321546
- ;;^UTILITY(U,$J,358.3,25983,0)
- ;;=V58.63^^150^1648^26
- ;;^UTILITY(U,$J,358.3,25983,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25983,1,2,0)
- ;;=2^V58.63
- ;;^UTILITY(U,$J,358.3,25983,1,5,0)
- ;;=5^L/T (Current) Antiplts/Antithrmbtcs
- ;;^UTILITY(U,$J,358.3,25983,2)
- ;;=^329978
- ;;^UTILITY(U,$J,358.3,25984,0)
- ;;=V58.64^^150^1648^30
- ;;^UTILITY(U,$J,358.3,25984,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25984,1,2,0)
- ;;=2^V58.64
- ;;^UTILITY(U,$J,358.3,25984,1,5,0)
- ;;=5^L/T (Current) NSAIDS Use
- ;;^UTILITY(U,$J,358.3,25984,2)
- ;;=^329979
- ;;^UTILITY(U,$J,358.3,25985,0)
- ;;=V58.65^^150^1648^32
- ;;^UTILITY(U,$J,358.3,25985,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25985,1,2,0)
- ;;=2^V58.65
- ;;^UTILITY(U,$J,358.3,25985,1,5,0)
- ;;=5^L/T (Current) Steroids Use
- ;;^UTILITY(U,$J,358.3,25985,2)
- ;;=^329980
- ;;^UTILITY(U,$J,358.3,25986,0)
- ;;=V58.66^^150^1648^27
- ;;^UTILITY(U,$J,358.3,25986,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25986,1,2,0)
- ;;=2^V58.66
- ;;^UTILITY(U,$J,358.3,25986,1,5,0)
- ;;=5^L/T (Current) Aspirin Use
- ;;^UTILITY(U,$J,358.3,25986,2)
- ;;=^331584
- ;;^UTILITY(U,$J,358.3,25987,0)
- ;;=V58.67^^150^1648^29
- ;;^UTILITY(U,$J,358.3,25987,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25987,1,2,0)
- ;;=2^V58.67
- ;;^UTILITY(U,$J,358.3,25987,1,5,0)
- ;;=5^L/T (Current) Insulin Use
- ;;^UTILITY(U,$J,358.3,25987,2)
- ;;=^331585
- ;;^UTILITY(U,$J,358.3,25988,0)
- ;;=V58.68^^150^1648^28
- ;;^UTILITY(U,$J,358.3,25988,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25988,1,2,0)
- ;;=2^V58.68
- ;;^UTILITY(U,$J,358.3,25988,1,5,0)
- ;;=5^L/T (Current) Bisphos Use
- ;;^UTILITY(U,$J,358.3,25988,2)
- ;;=^340624
- ;;^UTILITY(U,$J,358.3,25989,0)
- ;;=V58.69^^150^1648^31
- ;;^UTILITY(U,$J,358.3,25989,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25989,1,2,0)
- ;;=2^V58.69
- ;;^UTILITY(U,$J,358.3,25989,1,5,0)
- ;;=5^L/T (Current) Other Meds Use
- ;;^UTILITY(U,$J,358.3,25989,2)
- ;;=^303460
- ;;^UTILITY(U,$J,358.3,25990,0)
- ;;=V58.83^^150^1648^50
- ;;^UTILITY(U,$J,358.3,25990,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25990,1,2,0)
- ;;=2^V58.83
- ;;^UTILITY(U,$J,358.3,25990,1,5,0)
- ;;=5^Therapeutic Drug Monitoring
- ;;^UTILITY(U,$J,358.3,25990,2)
- ;;=^322076
- ;;^UTILITY(U,$J,358.3,25991,0)
- ;;=V62.5^^150^1648^34
- ;;^UTILITY(U,$J,358.3,25991,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25991,1,2,0)
- ;;=2^V62.5
- ;;^UTILITY(U,$J,358.3,25991,1,5,0)
- ;;=5^Legal Circumstances
- ;;^UTILITY(U,$J,358.3,25991,2)
- ;;=^175799
- ;;^UTILITY(U,$J,358.3,25992,0)
- ;;=V79.1^^150^1649^1
- ;;^UTILITY(U,$J,358.3,25992,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,25992,1,2,0)
- ;;=2^V79.1
+ ;;^UTILITY(U,$J,358.3,24872,2)
+ ;;=^5003099
+ ;;^UTILITY(U,$J,358.3,24873,0)
+ ;;=F10.988^^93^1116^6
+ ;;^UTILITY(U,$J,358.3,24873,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24873,1,3,0)
+ ;;=3^Alcohol Induced Mild Neurocog Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24873,1,4,0)
+ ;;=4^F10.988
+ ;;^UTILITY(U,$J,358.3,24873,2)
+ ;;=^5003113
+ ;;^UTILITY(U,$J,358.3,24874,0)
+ ;;=F10.159^^93^1116^11
+ ;;^UTILITY(U,$J,358.3,24874,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24874,1,3,0)
+ ;;=3^Alcohol Induced Psychotic Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,24874,1,4,0)
+ ;;=4^F10.159
+ ;;^UTILITY(U,$J,358.3,24874,2)
+ ;;=^5003075
+ ;;^UTILITY(U,$J,358.3,24875,0)
+ ;;=F10.259^^93^1116^12
+ ;;^UTILITY(U,$J,358.3,24875,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24875,1,3,0)
+ ;;=3^Alcohol Induced Psychotic Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24875,1,4,0)
+ ;;=4^F10.259
+ ;;^UTILITY(U,$J,358.3,24875,2)
+ ;;=^5003093
+ ;;^UTILITY(U,$J,358.3,24876,0)
+ ;;=F10.959^^93^1116^13
+ ;;^UTILITY(U,$J,358.3,24876,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24876,1,3,0)
+ ;;=3^Alcohol Induced Psychotic Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24876,1,4,0)
+ ;;=4^F10.959
+ ;;^UTILITY(U,$J,358.3,24876,2)
+ ;;=^5003107
+ ;;^UTILITY(U,$J,358.3,24877,0)
+ ;;=F10.181^^93^1116^14
+ ;;^UTILITY(U,$J,358.3,24877,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24877,1,3,0)
+ ;;=3^Alcohol Induced Sexual Dysfunction w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,24877,1,4,0)
+ ;;=4^F10.181
+ ;;^UTILITY(U,$J,358.3,24877,2)
+ ;;=^5003077
+ ;;^UTILITY(U,$J,358.3,24878,0)
+ ;;=F10.282^^93^1116^18
+ ;;^UTILITY(U,$J,358.3,24878,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24878,1,3,0)
+ ;;=3^Alcohol Induced Sleep Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24878,1,4,0)
+ ;;=4^F10.282
+ ;;^UTILITY(U,$J,358.3,24878,2)
+ ;;=^5003098
+ ;;^UTILITY(U,$J,358.3,24879,0)
+ ;;=F10.982^^93^1116^19
+ ;;^UTILITY(U,$J,358.3,24879,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24879,1,3,0)
+ ;;=3^Alcohol Induced Sleep Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24879,1,4,0)
+ ;;=4^F10.982
+ ;;^UTILITY(U,$J,358.3,24879,2)
+ ;;=^5003112
+ ;;^UTILITY(U,$J,358.3,24880,0)
+ ;;=F10.281^^93^1116^15
+ ;;^UTILITY(U,$J,358.3,24880,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24880,1,3,0)
+ ;;=3^Alcohol Induced Sexual Dysfunction w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24880,1,4,0)
+ ;;=4^F10.281
+ ;;^UTILITY(U,$J,358.3,24880,2)
+ ;;=^5003097
+ ;;^UTILITY(U,$J,358.3,24881,0)
+ ;;=F10.981^^93^1116^16
+ ;;^UTILITY(U,$J,358.3,24881,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24881,1,3,0)
+ ;;=3^Alcohol Induced Sexual Dysfunction w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24881,1,4,0)
+ ;;=4^F10.981
+ ;;^UTILITY(U,$J,358.3,24881,2)
+ ;;=^5003111
+ ;;^UTILITY(U,$J,358.3,24882,0)
+ ;;=F10.182^^93^1116^17
+ ;;^UTILITY(U,$J,358.3,24882,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24882,1,3,0)
+ ;;=3^Alcohol Induced Sleep Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,24882,1,4,0)
+ ;;=4^F10.182
+ ;;^UTILITY(U,$J,358.3,24882,2)
+ ;;=^5003078
+ ;;^UTILITY(U,$J,358.3,24883,0)
+ ;;=F10.121^^93^1116^20
+ ;;^UTILITY(U,$J,358.3,24883,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24883,1,3,0)
+ ;;=3^Alcohol Intoxication Delirium w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,24883,1,4,0)
+ ;;=4^F10.121
+ ;;^UTILITY(U,$J,358.3,24883,2)
+ ;;=^5003070
+ ;;^UTILITY(U,$J,358.3,24884,0)
+ ;;=F10.221^^93^1116^21
+ ;;^UTILITY(U,$J,358.3,24884,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24884,1,3,0)
+ ;;=3^Alcohol Intoxication Delirium w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24884,1,4,0)
+ ;;=4^F10.221

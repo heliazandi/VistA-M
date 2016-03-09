@@ -1,148 +1,132 @@
-IBDEI07F ; ; 06-AUG-2015
+IBDEI07F ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2975,1,3,0)
- ;;=3^Sinusitis,Acute
- ;;^UTILITY(U,$J,358.3,2975,1,4,0)
- ;;=4^J01.90
- ;;^UTILITY(U,$J,358.3,2975,2)
- ;;=^5008127
- ;;^UTILITY(U,$J,358.3,2976,0)
- ;;=J32.9^^7^84^85
- ;;^UTILITY(U,$J,358.3,2976,1,0)
+ ;;^UTILITY(U,$J,358.3,3164,1,3,0)
+ ;;=3^Fall Same Level w/ Strike Against Object,Init Encntr
+ ;;^UTILITY(U,$J,358.3,3164,1,4,0)
+ ;;=4^W01.10XA
+ ;;^UTILITY(U,$J,358.3,3164,2)
+ ;;=^5059525
+ ;;^UTILITY(U,$J,358.3,3165,0)
+ ;;=W01.0XXA^^18^215^3
+ ;;^UTILITY(U,$J,358.3,3165,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2976,1,3,0)
- ;;=3^Sinusitis,Chronic
- ;;^UTILITY(U,$J,358.3,2976,1,4,0)
- ;;=4^J32.9
- ;;^UTILITY(U,$J,358.3,2976,2)
- ;;=^5008207
- ;;^UTILITY(U,$J,358.3,2977,0)
- ;;=R61.^^7^84^86
- ;;^UTILITY(U,$J,358.3,2977,1,0)
+ ;;^UTILITY(U,$J,358.3,3165,1,3,0)
+ ;;=3^Fall Same Level w/o Strike Against Object,Init Encntr
+ ;;^UTILITY(U,$J,358.3,3165,1,4,0)
+ ;;=4^W01.0XXA
+ ;;^UTILITY(U,$J,358.3,3165,2)
+ ;;=^5059522
+ ;;^UTILITY(U,$J,358.3,3166,0)
+ ;;=W18.30XA^^18^215^18
+ ;;^UTILITY(U,$J,358.3,3166,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2977,1,3,0)
- ;;=3^Sweats/Night Sweats
- ;;^UTILITY(U,$J,358.3,2977,1,4,0)
- ;;=4^R61.
- ;;^UTILITY(U,$J,358.3,2977,2)
- ;;=^331970
- ;;^UTILITY(U,$J,358.3,2978,0)
- ;;=A51.0^^7^84^88
- ;;^UTILITY(U,$J,358.3,2978,1,0)
+ ;;^UTILITY(U,$J,358.3,3166,1,3,0)
+ ;;=3^Fall on Same Level,Unspec,Init Encntr
+ ;;^UTILITY(U,$J,358.3,3166,1,4,0)
+ ;;=4^W18.30XA
+ ;;^UTILITY(U,$J,358.3,3166,2)
+ ;;=^5059809
+ ;;^UTILITY(U,$J,358.3,3167,0)
+ ;;=W04.XXXA^^18^215^4
+ ;;^UTILITY(U,$J,358.3,3167,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2978,1,3,0)
- ;;=3^Syphilis,Genital,Primary
- ;;^UTILITY(U,$J,358.3,2978,1,4,0)
- ;;=4^A51.0
- ;;^UTILITY(U,$J,358.3,2978,2)
- ;;=^5000272
- ;;^UTILITY(U,$J,358.3,2979,0)
- ;;=A51.5^^7^84^87
- ;;^UTILITY(U,$J,358.3,2979,1,0)
+ ;;^UTILITY(U,$J,358.3,3167,1,3,0)
+ ;;=3^Fall While Being Carried by Oth Persons,Init Encntr
+ ;;^UTILITY(U,$J,358.3,3167,1,4,0)
+ ;;=4^W04.XXXA
+ ;;^UTILITY(U,$J,358.3,3167,2)
+ ;;=^5059547
+ ;;^UTILITY(U,$J,358.3,3168,0)
+ ;;=Z91.81^^18^215^23
+ ;;^UTILITY(U,$J,358.3,3168,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2979,1,3,0)
- ;;=3^Syphilis,EArly Latent
- ;;^UTILITY(U,$J,358.3,2979,1,4,0)
- ;;=4^A51.5
- ;;^UTILITY(U,$J,358.3,2979,2)
- ;;=^266730
- ;;^UTILITY(U,$J,358.3,2980,0)
- ;;=A52.8^^7^84^89
- ;;^UTILITY(U,$J,358.3,2980,1,0)
+ ;;^UTILITY(U,$J,358.3,3168,1,3,0)
+ ;;=3^Hx of Falling
+ ;;^UTILITY(U,$J,358.3,3168,1,4,0)
+ ;;=4^Z91.81
+ ;;^UTILITY(U,$J,358.3,3168,2)
+ ;;=^5063625
+ ;;^UTILITY(U,$J,358.3,3169,0)
+ ;;=W17.89XA^^18^215^14
+ ;;^UTILITY(U,$J,358.3,3169,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2980,1,3,0)
- ;;=3^Syphilis,Late Latent
- ;;^UTILITY(U,$J,358.3,2980,1,4,0)
- ;;=4^A52.8
- ;;^UTILITY(U,$J,358.3,2980,2)
- ;;=^266779
- ;;^UTILITY(U,$J,358.3,2981,0)
- ;;=A52.3^^7^84^90
- ;;^UTILITY(U,$J,358.3,2981,1,0)
+ ;;^UTILITY(U,$J,358.3,3169,1,3,0)
+ ;;=3^Fall from One Level to Another,Init Encntr
+ ;;^UTILITY(U,$J,358.3,3169,1,4,0)
+ ;;=4^W17.89XA
+ ;;^UTILITY(U,$J,358.3,3169,2)
+ ;;=^5059787
+ ;;^UTILITY(U,$J,358.3,3170,0)
+ ;;=W03.XXXA^^18^215^1
+ ;;^UTILITY(U,$J,358.3,3170,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2981,1,3,0)
- ;;=3^Syphilis,Neurosyphilis
- ;;^UTILITY(U,$J,358.3,2981,1,4,0)
- ;;=4^A52.3
- ;;^UTILITY(U,$J,358.3,2981,2)
- ;;=^5000298
- ;;^UTILITY(U,$J,358.3,2982,0)
- ;;=A52.9^^7^84^91
- ;;^UTILITY(U,$J,358.3,2982,1,0)
+ ;;^UTILITY(U,$J,358.3,3170,1,3,0)
+ ;;=3^Fall Same Level d/t Collision w/ Another Person,Init Encntr
+ ;;^UTILITY(U,$J,358.3,3170,1,4,0)
+ ;;=4^W03.XXXA
+ ;;^UTILITY(U,$J,358.3,3170,2)
+ ;;=^5059544
+ ;;^UTILITY(U,$J,358.3,3171,0)
+ ;;=W18.09XA^^18^215^6
+ ;;^UTILITY(U,$J,358.3,3171,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2982,1,3,0)
- ;;=3^Syphilis,Tertiary
- ;;^UTILITY(U,$J,358.3,2982,1,4,0)
- ;;=4^A52.9
- ;;^UTILITY(U,$J,358.3,2982,2)
- ;;=^5000308
- ;;^UTILITY(U,$J,358.3,2983,0)
- ;;=A15.8^^7^84^93
- ;;^UTILITY(U,$J,358.3,2983,1,0)
+ ;;^UTILITY(U,$J,358.3,3171,1,3,0)
+ ;;=3^Fall d/t Striking Against Other Object,Init Encntr
+ ;;^UTILITY(U,$J,358.3,3171,1,4,0)
+ ;;=4^W18.09XA
+ ;;^UTILITY(U,$J,358.3,3171,2)
+ ;;=^5059799
+ ;;^UTILITY(U,$J,358.3,3172,0)
+ ;;=W00.9XXA^^18^215^5
+ ;;^UTILITY(U,$J,358.3,3172,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2983,1,3,0)
- ;;=3^Tuberculosis NEC
- ;;^UTILITY(U,$J,358.3,2983,1,4,0)
- ;;=4^A15.8
- ;;^UTILITY(U,$J,358.3,2983,2)
- ;;=^266093
- ;;^UTILITY(U,$J,358.3,2984,0)
- ;;=A15.0^^7^84^95
- ;;^UTILITY(U,$J,358.3,2984,1,0)
+ ;;^UTILITY(U,$J,358.3,3172,1,3,0)
+ ;;=3^Fall d/t Snow/Ice,Init Encntr
+ ;;^UTILITY(U,$J,358.3,3172,1,4,0)
+ ;;=4^W00.9XXA
+ ;;^UTILITY(U,$J,358.3,3172,2)
+ ;;=^5059519
+ ;;^UTILITY(U,$J,358.3,3173,0)
+ ;;=R29.6^^18^215^24
+ ;;^UTILITY(U,$J,358.3,3173,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2984,1,3,0)
- ;;=3^Tuberculosis,Pulmonary
- ;;^UTILITY(U,$J,358.3,2984,1,4,0)
- ;;=4^A15.0
- ;;^UTILITY(U,$J,358.3,2984,2)
- ;;=^5000062
- ;;^UTILITY(U,$J,358.3,2985,0)
- ;;=R76.11^^7^84^94
- ;;^UTILITY(U,$J,358.3,2985,1,0)
+ ;;^UTILITY(U,$J,358.3,3173,1,3,0)
+ ;;=3^Repeated Falls
+ ;;^UTILITY(U,$J,358.3,3173,1,4,0)
+ ;;=4^R29.6
+ ;;^UTILITY(U,$J,358.3,3173,2)
+ ;;=^5019317
+ ;;^UTILITY(U,$J,358.3,3174,0)
+ ;;=W18.40XA^^18^215^25
+ ;;^UTILITY(U,$J,358.3,3174,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2985,1,3,0)
- ;;=3^Tuberculosis,Latent
- ;;^UTILITY(U,$J,358.3,2985,1,4,0)
- ;;=4^R76.11
- ;;^UTILITY(U,$J,358.3,2985,2)
- ;;=^5019570
- ;;^UTILITY(U,$J,358.3,2986,0)
- ;;=N34.2^^7^84^97
- ;;^UTILITY(U,$J,358.3,2986,1,0)
+ ;;^UTILITY(U,$J,358.3,3174,1,3,0)
+ ;;=3^Slip/Trip/Stumble w/o Falling,Init Encntr
+ ;;^UTILITY(U,$J,358.3,3174,1,4,0)
+ ;;=4^W18.40XA
+ ;;^UTILITY(U,$J,358.3,3174,2)
+ ;;=^5059818
+ ;;^UTILITY(U,$J,358.3,3175,0)
+ ;;=Z90.710^^18^216^2
+ ;;^UTILITY(U,$J,358.3,3175,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2986,1,3,0)
- ;;=3^Urethritis NEC
- ;;^UTILITY(U,$J,358.3,2986,1,4,0)
- ;;=4^N34.2
- ;;^UTILITY(U,$J,358.3,2986,2)
- ;;=^88231
- ;;^UTILITY(U,$J,358.3,2987,0)
- ;;=N39.0^^7^84^96
- ;;^UTILITY(U,$J,358.3,2987,1,0)
+ ;;^UTILITY(U,$J,358.3,3175,1,3,0)
+ ;;=3^Acquired Absence of Cervix & Uterus
+ ;;^UTILITY(U,$J,358.3,3175,1,4,0)
+ ;;=4^Z90.710
+ ;;^UTILITY(U,$J,358.3,3175,2)
+ ;;=^5063591
+ ;;^UTILITY(U,$J,358.3,3176,0)
+ ;;=Z90.712^^18^216^3
+ ;;^UTILITY(U,$J,358.3,3176,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2987,1,3,0)
- ;;=3^UTI
- ;;^UTILITY(U,$J,358.3,2987,1,4,0)
- ;;=4^N39.0
- ;;^UTILITY(U,$J,358.3,2987,2)
- ;;=^124436
- ;;^UTILITY(U,$J,358.3,2988,0)
- ;;=E55.9^^7^84^98
- ;;^UTILITY(U,$J,358.3,2988,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2988,1,3,0)
- ;;=3^Vitamin D Deficiency
- ;;^UTILITY(U,$J,358.3,2988,1,4,0)
- ;;=4^E55.9
- ;;^UTILITY(U,$J,358.3,2988,2)
- ;;=^5002799
- ;;^UTILITY(U,$J,358.3,2989,0)
- ;;=R63.4^^7^84^99
- ;;^UTILITY(U,$J,358.3,2989,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2989,1,3,0)
- ;;=3^Weight Loss
- ;;^UTILITY(U,$J,358.3,2989,1,4,0)
- ;;=4^R63.4
+ ;;^UTILITY(U,$J,358.3,3176,1,3,0)
+ ;;=3^Acquired Absence of Cervix w/ Remaining Uterus
+ ;;^UTILITY(U,$J,358.3,3176,1,4,0)
+ ;;=4^Z90.712
+ ;;^UTILITY(U,$J,358.3,3176,2)
+ ;;=^5063593
+ ;;^UTILITY(U,$J,358.3,3177,0)
+ ;;=Z90.711^^18^216^4

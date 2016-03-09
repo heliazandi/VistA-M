@@ -1,58 +1,134 @@
-IBDEI234 ; ; 06-AUG-2015
+IBDEI234 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQ(358.7)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.7,0,"GL")
- ;;=^IBE(358.7,
- ;;^DIC("B","IMP/EXP FORM LINE",358.7)
- ;;=
- ;;^DIC(358.7,"%D",0)
- ;;=^^3^3^2940217^
- ;;^DIC(358.7,"%D",1,0)
- ;;=This file is nearly identical to file #357.7. It is used by the
- ;;^DIC(358.7,"%D",2,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.7,"%D",3,0)
- ;;=that is being imported or exported.
- ;;^DD(358.7,0)
- ;;=FIELD^^.08^8
- ;;^DD(358.7,0,"DDA")
- ;;=N
- ;;^DD(358.7,0,"DT")
- ;;=2950717
- ;;^DD(358.7,0,"ID",.02)
- ;;=W " STARTING COL=",$P(^(0),U,2)+1
- ;;^DD(358.7,0,"ID",.03)
- ;;=W " STARTING ROW=",$P(^(0),U,3)+1
- ;;^DD(358.7,0,"ID",.06)
- ;;=W ""
- ;;^DD(358.7,0,"IX","B",358.7,.01)
- ;;=
- ;;^DD(358.7,0,"IX","C",358.7,.06)
- ;;=
- ;;^DD(358.7,0,"NM","IMP/EXP FORM LINE")
- ;;=
- ;;^DD(358.7,0,"VRPK")
- ;;=IBD
- ;;^DD(358.7,.01,0)
- ;;=NAME^RF^^0;1^K:$L(X)>30!(X?.N)!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.7,.01,1,0)
- ;;=^.1
- ;;^DD(358.7,.01,1,1,0)
- ;;=358.7^B
- ;;^DD(358.7,.01,1,1,1)
- ;;=S ^IBE(358.7,"B",$E(X,1,30),DA)=""
- ;;^DD(358.7,.01,1,1,2)
- ;;=K ^IBE(358.7,"B",$E(X,1,30),DA)
- ;;^DD(358.7,.01,3)
- ;;=NAME MUST BE 3-30 CHARACTERS, NOT NUMERIC OR STARTING WITH PUNCTUATION
- ;;^DD(358.7,.01,21,0)
- ;;=^^4^4^2930527^
- ;;^DD(358.7,.01,21,1,0)
- ;;= 
- ;;^DD(358.7,.01,21,2,0)
- ;;=The name given to the line. Lines should be given names that will allow
- ;;^DD(358.7,.01,21,3,0)
- ;;=them to be identifies, such as V(1,1), meaning a vertical line starting at
- ;;^DD(358.7,.01,21,4,0)
- ;;=coordinates (1,1).
+ ;;^UTILITY(U,$J,358.3,35363,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35363,1,3,0)
+ ;;=3^Malig Neop Lower Lobe,Lt Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35363,1,4,0)
+ ;;=4^C34.32
+ ;;^UTILITY(U,$J,358.3,35363,2)
+ ;;=^5133322
+ ;;^UTILITY(U,$J,358.3,35364,0)
+ ;;=C34.81^^134^1717^46
+ ;;^UTILITY(U,$J,358.3,35364,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35364,1,3,0)
+ ;;=3^Malig Neop Overlapping Sites,Rt Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35364,1,4,0)
+ ;;=4^C34.81
+ ;;^UTILITY(U,$J,358.3,35364,2)
+ ;;=^5000964
+ ;;^UTILITY(U,$J,358.3,35365,0)
+ ;;=C34.82^^134^1717^45
+ ;;^UTILITY(U,$J,358.3,35365,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35365,1,3,0)
+ ;;=3^Malig Neop Overlapping Sites,Lt Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35365,1,4,0)
+ ;;=4^C34.82
+ ;;^UTILITY(U,$J,358.3,35365,2)
+ ;;=^5000965
+ ;;^UTILITY(U,$J,358.3,35366,0)
+ ;;=C34.91^^134^1717^49
+ ;;^UTILITY(U,$J,358.3,35366,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35366,1,3,0)
+ ;;=3^Malig Neop Unspec Part,Rt Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35366,1,4,0)
+ ;;=4^C34.91
+ ;;^UTILITY(U,$J,358.3,35366,2)
+ ;;=^5000967
+ ;;^UTILITY(U,$J,358.3,35367,0)
+ ;;=C34.92^^134^1717^48
+ ;;^UTILITY(U,$J,358.3,35367,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35367,1,3,0)
+ ;;=3^Malig Neop Unspec Part,Lt Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35367,1,4,0)
+ ;;=4^C34.92
+ ;;^UTILITY(U,$J,358.3,35367,2)
+ ;;=^5000968
+ ;;^UTILITY(U,$J,358.3,35368,0)
+ ;;=C38.4^^134^1717^47
+ ;;^UTILITY(U,$J,358.3,35368,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35368,1,3,0)
+ ;;=3^Malig Neop Pleura
+ ;;^UTILITY(U,$J,358.3,35368,1,4,0)
+ ;;=4^C38.4
+ ;;^UTILITY(U,$J,358.3,35368,2)
+ ;;=^267140
+ ;;^UTILITY(U,$J,358.3,35369,0)
+ ;;=C39.9^^134^1717^43
+ ;;^UTILITY(U,$J,358.3,35369,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35369,1,3,0)
+ ;;=3^Malig Neop Lower Respiratory Tract
+ ;;^UTILITY(U,$J,358.3,35369,1,4,0)
+ ;;=4^C39.9
+ ;;^UTILITY(U,$J,358.3,35369,2)
+ ;;=^5000972
+ ;;^UTILITY(U,$J,358.3,35370,0)
+ ;;=R76.11^^134^1717^87
+ ;;^UTILITY(U,$J,358.3,35370,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35370,1,3,0)
+ ;;=3^Reaction to Skin Test w/o Active TB
+ ;;^UTILITY(U,$J,358.3,35370,1,4,0)
+ ;;=4^R76.11
+ ;;^UTILITY(U,$J,358.3,35370,2)
+ ;;=^5019570
+ ;;^UTILITY(U,$J,358.3,35371,0)
+ ;;=E66.9^^134^1717^65
+ ;;^UTILITY(U,$J,358.3,35371,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35371,1,3,0)
+ ;;=3^Obesity,Unspec
+ ;;^UTILITY(U,$J,358.3,35371,1,4,0)
+ ;;=4^E66.9
+ ;;^UTILITY(U,$J,358.3,35371,2)
+ ;;=^5002832
+ ;;^UTILITY(U,$J,358.3,35372,0)
+ ;;=I26.99^^134^1717^79
+ ;;^UTILITY(U,$J,358.3,35372,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35372,1,3,0)
+ ;;=3^Pulmonary Embolism w/o Acute Cor Pulmonale
+ ;;^UTILITY(U,$J,358.3,35372,1,4,0)
+ ;;=4^I26.99
+ ;;^UTILITY(U,$J,358.3,35372,2)
+ ;;=^5007150
+ ;;^UTILITY(U,$J,358.3,35373,0)
+ ;;=R09.1^^134^1717^69
+ ;;^UTILITY(U,$J,358.3,35373,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35373,1,3,0)
+ ;;=3^Pleurisy
+ ;;^UTILITY(U,$J,358.3,35373,1,4,0)
+ ;;=4^R09.1
+ ;;^UTILITY(U,$J,358.3,35373,2)
+ ;;=^95428
+ ;;^UTILITY(U,$J,358.3,35374,0)
+ ;;=J69.0^^134^1717^75
+ ;;^UTILITY(U,$J,358.3,35374,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35374,1,3,0)
+ ;;=3^Pneumonitis d/t Inhalation of Food/Vomit
+ ;;^UTILITY(U,$J,358.3,35374,1,4,0)
+ ;;=4^J69.0
+ ;;^UTILITY(U,$J,358.3,35374,2)
+ ;;=^5008288
+ ;;^UTILITY(U,$J,358.3,35375,0)
+ ;;=J15.9^^134^1717^71
+ ;;^UTILITY(U,$J,358.3,35375,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35375,1,3,0)
+ ;;=3^Pneumonia,Bacterial,Unspec
+ ;;^UTILITY(U,$J,358.3,35375,1,4,0)
+ ;;=4^J15.9
+ ;;^UTILITY(U,$J,358.3,35375,2)
+ ;;=^5008178
+ ;;^UTILITY(U,$J,358.3,35376,0)
+ ;;=J18.9^^134^1717^73

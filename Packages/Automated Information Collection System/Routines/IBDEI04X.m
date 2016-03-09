@@ -1,132 +1,130 @@
-IBDEI04X ; ; 06-AUG-2015
+IBDEI04X ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1780,2)
- ;;=^5008174
- ;;^UTILITY(U,$J,358.3,1781,0)
- ;;=J15.211^^3^53^8
- ;;^UTILITY(U,$J,358.3,1781,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1781,1,3,0)
- ;;=3^Pneumonia due to methicillin suscep staph
- ;;^UTILITY(U,$J,358.3,1781,1,4,0)
- ;;=4^J15.211
- ;;^UTILITY(U,$J,358.3,1781,2)
- ;;=^336833
- ;;^UTILITY(U,$J,358.3,1782,0)
- ;;=J15.212^^3^53^6
- ;;^UTILITY(U,$J,358.3,1782,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1782,1,3,0)
- ;;=3^Pneumonia due to Methicillin resistant Staphylococcus aureus
- ;;^UTILITY(U,$J,358.3,1782,1,4,0)
- ;;=4^J15.212
- ;;^UTILITY(U,$J,358.3,1782,2)
- ;;=^336602
- ;;^UTILITY(U,$J,358.3,1783,0)
- ;;=J15.9^^3^53^1
- ;;^UTILITY(U,$J,358.3,1783,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1783,1,3,0)
- ;;=3^Bacterial Pneumonia,Unspec
- ;;^UTILITY(U,$J,358.3,1783,1,4,0)
- ;;=4^J15.9
- ;;^UTILITY(U,$J,358.3,1783,2)
- ;;=^5008178
- ;;^UTILITY(U,$J,358.3,1784,0)
- ;;=J18.9^^3^53^10
- ;;^UTILITY(U,$J,358.3,1784,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1784,1,3,0)
- ;;=3^Pneumonia, unspecified organism
- ;;^UTILITY(U,$J,358.3,1784,1,4,0)
- ;;=4^J18.9
- ;;^UTILITY(U,$J,358.3,1784,2)
- ;;=^95632
- ;;^UTILITY(U,$J,358.3,1785,0)
- ;;=J09.X1^^3^53^2
- ;;^UTILITY(U,$J,358.3,1785,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1785,1,3,0)
- ;;=3^Flu d/t ident novel influenza A virus w pneumonia
- ;;^UTILITY(U,$J,358.3,1785,1,4,0)
- ;;=4^J09.X1
- ;;^UTILITY(U,$J,358.3,1785,2)
- ;;=^5008144
- ;;^UTILITY(U,$J,358.3,1786,0)
- ;;=J09.X2^^3^53^3
- ;;^UTILITY(U,$J,358.3,1786,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1786,1,3,0)
- ;;=3^Flu d/t ident novel influenza A virus w oth resp manifest
- ;;^UTILITY(U,$J,358.3,1786,1,4,0)
- ;;=4^J09.X2
- ;;^UTILITY(U,$J,358.3,1786,2)
- ;;=^5008145
- ;;^UTILITY(U,$J,358.3,1787,0)
- ;;=J09.X3^^3^53^4
- ;;^UTILITY(U,$J,358.3,1787,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1787,1,3,0)
- ;;=3^Flu d/t ident novel influenza A virus w GI manifest
- ;;^UTILITY(U,$J,358.3,1787,1,4,0)
- ;;=4^J09.X3
- ;;^UTILITY(U,$J,358.3,1787,2)
- ;;=^5008146
- ;;^UTILITY(U,$J,358.3,1788,0)
- ;;=J09.X9^^3^53^5
- ;;^UTILITY(U,$J,358.3,1788,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1788,1,3,0)
- ;;=3^Flu d/t ident novel influenza A virus w oth manifest
- ;;^UTILITY(U,$J,358.3,1788,1,4,0)
- ;;=4^J09.X9
- ;;^UTILITY(U,$J,358.3,1788,2)
- ;;=^5008147
- ;;^UTILITY(U,$J,358.3,1789,0)
- ;;=I26.92^^3^54^7
- ;;^UTILITY(U,$J,358.3,1789,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1789,1,3,0)
- ;;=3^Saddle embolus of pulmonary artery w/o acute cor pulmonale
- ;;^UTILITY(U,$J,358.3,1789,1,4,0)
- ;;=4^I26.92
- ;;^UTILITY(U,$J,358.3,1789,2)
- ;;=^5007149
- ;;^UTILITY(U,$J,358.3,1790,0)
- ;;=I26.99^^3^54^4
- ;;^UTILITY(U,$J,358.3,1790,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1790,1,3,0)
- ;;=3^Pulmonary embolism without acute cor pulmonale NEC
- ;;^UTILITY(U,$J,358.3,1790,1,4,0)
- ;;=4^I26.99
- ;;^UTILITY(U,$J,358.3,1790,2)
- ;;=^5007150
- ;;^UTILITY(U,$J,358.3,1791,0)
- ;;=I27.0^^3^54^3
- ;;^UTILITY(U,$J,358.3,1791,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1791,1,3,0)
- ;;=3^Primary pulmonary hypertension
- ;;^UTILITY(U,$J,358.3,1791,1,4,0)
- ;;=4^I27.0
- ;;^UTILITY(U,$J,358.3,1791,2)
- ;;=^265310
- ;;^UTILITY(U,$J,358.3,1792,0)
- ;;=I27.2^^3^54^8
- ;;^UTILITY(U,$J,358.3,1792,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1792,1,3,0)
- ;;=3^Secondary pulmonary hypertension NEC
- ;;^UTILITY(U,$J,358.3,1792,1,4,0)
- ;;=4^I27.2
- ;;^UTILITY(U,$J,358.3,1792,2)
- ;;=^5007151
- ;;^UTILITY(U,$J,358.3,1793,0)
- ;;=I27.89^^3^54^6
- ;;^UTILITY(U,$J,358.3,1793,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1793,1,3,0)
- ;;=3^Pulmonary heart diseases NEC
+ ;;^UTILITY(U,$J,358.3,1884,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1884,1,2,0)
+ ;;=2^93283
+ ;;^UTILITY(U,$J,358.3,1884,1,3,0)
+ ;;=3^ICD Device Progr Eval,Dual
+ ;;^UTILITY(U,$J,358.3,1885,0)
+ ;;=93284^^12^160^11^^^^1
+ ;;^UTILITY(U,$J,358.3,1885,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1885,1,2,0)
+ ;;=2^93284
+ ;;^UTILITY(U,$J,358.3,1885,1,3,0)
+ ;;=3^ICD Device Progr Eval,Multi
+ ;;^UTILITY(U,$J,358.3,1886,0)
+ ;;=93281^^12^160^33^^^^1
+ ;;^UTILITY(U,$J,358.3,1886,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1886,1,2,0)
+ ;;=2^93281
+ ;;^UTILITY(U,$J,358.3,1886,1,3,0)
+ ;;=3^PM Device Progr Eval,Multi
+ ;;^UTILITY(U,$J,358.3,1887,0)
+ ;;=33227^^12^160^50^^^^1
+ ;;^UTILITY(U,$J,358.3,1887,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1887,1,2,0)
+ ;;=2^33227
+ ;;^UTILITY(U,$J,358.3,1887,1,3,0)
+ ;;=3^Remove PM Pulse Gen w/Replc PM Gen,Single
+ ;;^UTILITY(U,$J,358.3,1888,0)
+ ;;=33228^^12^160^48^^^^1
+ ;;^UTILITY(U,$J,358.3,1888,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1888,1,2,0)
+ ;;=2^33228
+ ;;^UTILITY(U,$J,358.3,1888,1,3,0)
+ ;;=3^Remove PM Pulse Gen w/Replc PM Gen,Dual
+ ;;^UTILITY(U,$J,358.3,1889,0)
+ ;;=33229^^12^160^49^^^^1
+ ;;^UTILITY(U,$J,358.3,1889,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1889,1,2,0)
+ ;;=2^33229
+ ;;^UTILITY(U,$J,358.3,1889,1,3,0)
+ ;;=3^Remove PM Pulse Gen w/Replc PM Gen,Mult
+ ;;^UTILITY(U,$J,358.3,1890,0)
+ ;;=33230^^12^160^19^^^^1
+ ;;^UTILITY(U,$J,358.3,1890,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1890,1,2,0)
+ ;;=2^33230
+ ;;^UTILITY(U,$J,358.3,1890,1,3,0)
+ ;;=3^Insert ICD Gen Only,Existing Single
+ ;;^UTILITY(U,$J,358.3,1891,0)
+ ;;=33231^^12^160^18^^^^1
+ ;;^UTILITY(U,$J,358.3,1891,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1891,1,2,0)
+ ;;=2^33231
+ ;;^UTILITY(U,$J,358.3,1891,1,3,0)
+ ;;=3^Insert ICD Gen Only,Existing Mult
+ ;;^UTILITY(U,$J,358.3,1892,0)
+ ;;=33233^^12^160^44^^^^1
+ ;;^UTILITY(U,$J,358.3,1892,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1892,1,2,0)
+ ;;=2^33233
+ ;;^UTILITY(U,$J,358.3,1892,1,3,0)
+ ;;=3^Removal of PM Generator Only
+ ;;^UTILITY(U,$J,358.3,1893,0)
+ ;;=33262^^12^160^54^^^^1
+ ;;^UTILITY(U,$J,358.3,1893,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1893,1,2,0)
+ ;;=2^33262
+ ;;^UTILITY(U,$J,358.3,1893,1,3,0)
+ ;;=3^Remv ICD Gen w/Replc PM Gen,Single
+ ;;^UTILITY(U,$J,358.3,1894,0)
+ ;;=33263^^12^160^52^^^^1
+ ;;^UTILITY(U,$J,358.3,1894,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1894,1,2,0)
+ ;;=2^33263
+ ;;^UTILITY(U,$J,358.3,1894,1,3,0)
+ ;;=3^Remv ICD Gen w/Replc PM Gen,Dual
+ ;;^UTILITY(U,$J,358.3,1895,0)
+ ;;=33264^^12^160^53^^^^1
+ ;;^UTILITY(U,$J,358.3,1895,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1895,1,2,0)
+ ;;=2^33264
+ ;;^UTILITY(U,$J,358.3,1895,1,3,0)
+ ;;=3^Remv ICD Gen w/Replc PM Gen,Multiple
+ ;;^UTILITY(U,$J,358.3,1896,0)
+ ;;=93286^^12^160^40^^^^1
+ ;;^UTILITY(U,$J,358.3,1896,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1896,1,2,0)
+ ;;=2^93286
+ ;;^UTILITY(U,$J,358.3,1896,1,3,0)
+ ;;=3^Pre-Op PM Device Eval w/Review&Rpt
+ ;;^UTILITY(U,$J,358.3,1897,0)
+ ;;=93287^^12^160^39^^^^1
+ ;;^UTILITY(U,$J,358.3,1897,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1897,1,2,0)
+ ;;=2^93287
+ ;;^UTILITY(U,$J,358.3,1897,1,3,0)
+ ;;=3^Pre-Op ICD Device Eval
+ ;;^UTILITY(U,$J,358.3,1898,0)
+ ;;=93290^^12^160^12^^^^1
+ ;;^UTILITY(U,$J,358.3,1898,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1898,1,2,0)
+ ;;=2^93290
+ ;;^UTILITY(U,$J,358.3,1898,1,3,0)
+ ;;=3^ICM Device Eval
+ ;;^UTILITY(U,$J,358.3,1899,0)
+ ;;=93293^^12^160^35^^^^1
+ ;;^UTILITY(U,$J,358.3,1899,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1899,1,2,0)
+ ;;=2^93293
+ ;;^UTILITY(U,$J,358.3,1899,1,3,0)
+ ;;=3^PM Phone R-Strip Device Eval

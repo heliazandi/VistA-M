@@ -1,134 +1,126 @@
-IBDEI1VJ ; ; 06-AUG-2015
+IBDEI1VJ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32974,1,4,0)
- ;;=4^H83.02
- ;;^UTILITY(U,$J,358.3,32974,2)
- ;;=^5006895
- ;;^UTILITY(U,$J,358.3,32975,0)
- ;;=J01.91^^182^1994^69
- ;;^UTILITY(U,$J,358.3,32975,1,0)
+ ;;^UTILITY(U,$J,358.3,31835,1,3,0)
+ ;;=3^Contusion of rt lwr leg, init enc
+ ;;^UTILITY(U,$J,358.3,31835,1,4,0)
+ ;;=4^S80.11XA
+ ;;^UTILITY(U,$J,358.3,31835,2)
+ ;;=^5039900
+ ;;^UTILITY(U,$J,358.3,31836,0)
+ ;;=S90.31XA^^126^1606^31
+ ;;^UTILITY(U,$J,358.3,31836,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32975,1,3,0)
- ;;=3^Sinusitis,Acute Recurrent Unspec
- ;;^UTILITY(U,$J,358.3,32975,1,4,0)
- ;;=4^J01.91
- ;;^UTILITY(U,$J,358.3,32975,2)
- ;;=^5008128
- ;;^UTILITY(U,$J,358.3,32976,0)
- ;;=J03.90^^182^1994^73
- ;;^UTILITY(U,$J,358.3,32976,1,0)
+ ;;^UTILITY(U,$J,358.3,31836,1,3,0)
+ ;;=3^Contusion of rt ft, init enc
+ ;;^UTILITY(U,$J,358.3,31836,1,4,0)
+ ;;=4^S90.31XA
+ ;;^UTILITY(U,$J,358.3,31836,2)
+ ;;=^5043883
+ ;;^UTILITY(U,$J,358.3,31837,0)
+ ;;=S90.32XA^^126^1606^24
+ ;;^UTILITY(U,$J,358.3,31837,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32976,1,3,0)
- ;;=3^Tonsillitis,Acute Unspec
- ;;^UTILITY(U,$J,358.3,32976,1,4,0)
- ;;=4^J03.90
- ;;^UTILITY(U,$J,358.3,32976,2)
- ;;=^5008135
- ;;^UTILITY(U,$J,358.3,32977,0)
- ;;=J01.90^^182^1994^70
- ;;^UTILITY(U,$J,358.3,32977,1,0)
+ ;;^UTILITY(U,$J,358.3,31837,1,3,0)
+ ;;=3^Contusion of lft ft, init enc
+ ;;^UTILITY(U,$J,358.3,31837,1,4,0)
+ ;;=4^S90.32XA
+ ;;^UTILITY(U,$J,358.3,31837,2)
+ ;;=^5043886
+ ;;^UTILITY(U,$J,358.3,31838,0)
+ ;;=S90.02XA^^126^1606^23
+ ;;^UTILITY(U,$J,358.3,31838,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32977,1,3,0)
- ;;=3^Sinusitis,Acute Unspec
- ;;^UTILITY(U,$J,358.3,32977,1,4,0)
- ;;=4^J01.90
- ;;^UTILITY(U,$J,358.3,32977,2)
- ;;=^5008127
- ;;^UTILITY(U,$J,358.3,32978,0)
- ;;=J20.1^^182^1994^10
- ;;^UTILITY(U,$J,358.3,32978,1,0)
+ ;;^UTILITY(U,$J,358.3,31838,1,3,0)
+ ;;=3^Contusion of lft ankl, init enc
+ ;;^UTILITY(U,$J,358.3,31838,1,4,0)
+ ;;=4^S90.02XA
+ ;;^UTILITY(U,$J,358.3,31838,2)
+ ;;=^5043853
+ ;;^UTILITY(U,$J,358.3,31839,0)
+ ;;=S90.01XA^^126^1606^30
+ ;;^UTILITY(U,$J,358.3,31839,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32978,1,3,0)
- ;;=3^Bronchitis,Acute d/t Hemophilus Influenza
- ;;^UTILITY(U,$J,358.3,32978,1,4,0)
- ;;=4^J20.1
- ;;^UTILITY(U,$J,358.3,32978,2)
- ;;=^5008187
- ;;^UTILITY(U,$J,358.3,32979,0)
- ;;=J20.0^^182^1994^11
- ;;^UTILITY(U,$J,358.3,32979,1,0)
+ ;;^UTILITY(U,$J,358.3,31839,1,3,0)
+ ;;=3^Contusion of rt ankl, init enc
+ ;;^UTILITY(U,$J,358.3,31839,1,4,0)
+ ;;=4^S90.01XA
+ ;;^UTILITY(U,$J,358.3,31839,2)
+ ;;=^5043850
+ ;;^UTILITY(U,$J,358.3,31840,0)
+ ;;=S90.111A^^126^1606^33
+ ;;^UTILITY(U,$J,358.3,31840,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32979,1,3,0)
- ;;=3^Bronchitis,Acute d/t Mycoplasma Pneumonia
- ;;^UTILITY(U,$J,358.3,32979,1,4,0)
- ;;=4^J20.0
- ;;^UTILITY(U,$J,358.3,32979,2)
- ;;=^5008186
- ;;^UTILITY(U,$J,358.3,32980,0)
- ;;=J20.2^^182^1994^6
- ;;^UTILITY(U,$J,358.3,32980,1,0)
+ ;;^UTILITY(U,$J,358.3,31840,1,3,0)
+ ;;=3^Contusion of rt grt toe w/o damage to nail, init enc
+ ;;^UTILITY(U,$J,358.3,31840,1,4,0)
+ ;;=4^S90.111A
+ ;;^UTILITY(U,$J,358.3,31840,2)
+ ;;=^5043856
+ ;;^UTILITY(U,$J,358.3,31841,0)
+ ;;=S90.112A^^126^1606^26
+ ;;^UTILITY(U,$J,358.3,31841,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32980,1,3,0)
- ;;=3^Bonchitis,Acute d/t Streptococcus
- ;;^UTILITY(U,$J,358.3,32980,1,4,0)
- ;;=4^J20.2
- ;;^UTILITY(U,$J,358.3,32980,2)
- ;;=^5008188
- ;;^UTILITY(U,$J,358.3,32981,0)
- ;;=J20.4^^182^1994^13
- ;;^UTILITY(U,$J,358.3,32981,1,0)
+ ;;^UTILITY(U,$J,358.3,31841,1,3,0)
+ ;;=3^Contusion of lft grt toe w/o damage to nail, init enc
+ ;;^UTILITY(U,$J,358.3,31841,1,4,0)
+ ;;=4^S90.112A
+ ;;^UTILITY(U,$J,358.3,31841,2)
+ ;;=^5043859
+ ;;^UTILITY(U,$J,358.3,31842,0)
+ ;;=S90.121A^^126^1606^35
+ ;;^UTILITY(U,$J,358.3,31842,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32981,1,3,0)
- ;;=3^Bronchitis,Acute d/t Parainfluenza Virus
- ;;^UTILITY(U,$J,358.3,32981,1,4,0)
- ;;=4^J20.4
- ;;^UTILITY(U,$J,358.3,32981,2)
- ;;=^5008190
- ;;^UTILITY(U,$J,358.3,32982,0)
- ;;=J20.3^^182^1994^8
- ;;^UTILITY(U,$J,358.3,32982,1,0)
+ ;;^UTILITY(U,$J,358.3,31842,1,3,0)
+ ;;=3^Contusion of rt lsr toe(s) w/o damage to nail, init enc
+ ;;^UTILITY(U,$J,358.3,31842,1,4,0)
+ ;;=4^S90.121A
+ ;;^UTILITY(U,$J,358.3,31842,2)
+ ;;=^5043865
+ ;;^UTILITY(U,$J,358.3,31843,0)
+ ;;=S90.122A^^126^1606^29
+ ;;^UTILITY(U,$J,358.3,31843,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32982,1,3,0)
- ;;=3^Bronchitis,Acute d/t Coxsackievirus
- ;;^UTILITY(U,$J,358.3,32982,1,4,0)
- ;;=4^J20.3
- ;;^UTILITY(U,$J,358.3,32982,2)
- ;;=^5008189
- ;;^UTILITY(U,$J,358.3,32983,0)
- ;;=J20.9^^182^1994^7
- ;;^UTILITY(U,$J,358.3,32983,1,0)
+ ;;^UTILITY(U,$J,358.3,31843,1,3,0)
+ ;;=3^Contusion of lft lwr toe(s) w/o damage to nail, init enc
+ ;;^UTILITY(U,$J,358.3,31843,1,4,0)
+ ;;=4^S90.122A
+ ;;^UTILITY(U,$J,358.3,31843,2)
+ ;;=^5043868
+ ;;^UTILITY(U,$J,358.3,31844,0)
+ ;;=S90.211A^^126^1606^32
+ ;;^UTILITY(U,$J,358.3,31844,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32983,1,3,0)
- ;;=3^Bronchitis,Acute Unspec
- ;;^UTILITY(U,$J,358.3,32983,1,4,0)
- ;;=4^J20.9
- ;;^UTILITY(U,$J,358.3,32983,2)
- ;;=^5008195
- ;;^UTILITY(U,$J,358.3,32984,0)
- ;;=J20.8^^182^1994^12
- ;;^UTILITY(U,$J,358.3,32984,1,0)
+ ;;^UTILITY(U,$J,358.3,31844,1,3,0)
+ ;;=3^Contusion of rt grt toe w/ damage to nail, init enc
+ ;;^UTILITY(U,$J,358.3,31844,1,4,0)
+ ;;=4^S90.211A
+ ;;^UTILITY(U,$J,358.3,31844,2)
+ ;;=^5043874
+ ;;^UTILITY(U,$J,358.3,31845,0)
+ ;;=S90.212A^^126^1606^25
+ ;;^UTILITY(U,$J,358.3,31845,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32984,1,3,0)
- ;;=3^Bronchitis,Acute d/t Oth Spec Organisms
- ;;^UTILITY(U,$J,358.3,32984,1,4,0)
- ;;=4^J20.8
- ;;^UTILITY(U,$J,358.3,32984,2)
- ;;=^5008194
- ;;^UTILITY(U,$J,358.3,32985,0)
- ;;=J20.5^^182^1994^14
- ;;^UTILITY(U,$J,358.3,32985,1,0)
+ ;;^UTILITY(U,$J,358.3,31845,1,3,0)
+ ;;=3^Contusion of lft grt toe w/ damage to nail, enit enc
+ ;;^UTILITY(U,$J,358.3,31845,1,4,0)
+ ;;=4^S90.212A
+ ;;^UTILITY(U,$J,358.3,31845,2)
+ ;;=^5137379
+ ;;^UTILITY(U,$J,358.3,31846,0)
+ ;;=S90.221A^^126^1606^34
+ ;;^UTILITY(U,$J,358.3,31846,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32985,1,3,0)
- ;;=3^Bronchitis,Acute d/t Respiratory Syncytial Virus
- ;;^UTILITY(U,$J,358.3,32985,1,4,0)
- ;;=4^J20.5
- ;;^UTILITY(U,$J,358.3,32985,2)
- ;;=^5008191
- ;;^UTILITY(U,$J,358.3,32986,0)
- ;;=J20.7^^182^1994^9
- ;;^UTILITY(U,$J,358.3,32986,1,0)
+ ;;^UTILITY(U,$J,358.3,31846,1,3,0)
+ ;;=3^Contusion of rt lsr toe(s) w/ damage to nail, init enc
+ ;;^UTILITY(U,$J,358.3,31846,1,4,0)
+ ;;=4^S90.221A
+ ;;^UTILITY(U,$J,358.3,31846,2)
+ ;;=^5043877
+ ;;^UTILITY(U,$J,358.3,31847,0)
+ ;;=S90.222A^^126^1606^27
+ ;;^UTILITY(U,$J,358.3,31847,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32986,1,3,0)
- ;;=3^Bronchitis,Acute d/t Echovirus
- ;;^UTILITY(U,$J,358.3,32986,1,4,0)
- ;;=4^J20.7
- ;;^UTILITY(U,$J,358.3,32986,2)
- ;;=^5008193
- ;;^UTILITY(U,$J,358.3,32987,0)
- ;;=J20.6^^182^1994^15
- ;;^UTILITY(U,$J,358.3,32987,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32987,1,3,0)
- ;;=3^Bronchitis,Acute d/t Rhinovirus
+ ;;^UTILITY(U,$J,358.3,31847,1,3,0)
+ ;;=3^Contusion of lft lsr toe(s) w/ damage to nail, init

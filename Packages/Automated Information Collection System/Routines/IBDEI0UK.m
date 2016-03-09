@@ -1,126 +1,134 @@
-IBDEI0UK ; ; 06-AUG-2015
+IBDEI0UK ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14839,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14839,1,2,0)
- ;;=2^97597
- ;;^UTILITY(U,$J,358.3,14839,1,3,0)
- ;;=3^Debridement open wnd 1st 20sq cm
- ;;^UTILITY(U,$J,358.3,14840,0)
- ;;=97598^^80^924^11^^^^1
- ;;^UTILITY(U,$J,358.3,14840,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14840,1,2,0)
- ;;=2^97598
- ;;^UTILITY(U,$J,358.3,14840,1,3,0)
- ;;=3^Debridement open wnd ea addl 20sq cm
- ;;^UTILITY(U,$J,358.3,14841,0)
- ;;=11200^^80^924^23^^^^1
- ;;^UTILITY(U,$J,358.3,14841,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14841,1,2,0)
- ;;=2^11200
- ;;^UTILITY(U,$J,358.3,14841,1,3,0)
- ;;=3^Removal Skin Tags,up to 15 Lesions
- ;;^UTILITY(U,$J,358.3,14842,0)
- ;;=11201^^80^924^24^^^^1
- ;;^UTILITY(U,$J,358.3,14842,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14842,1,2,0)
- ;;=2^11201
- ;;^UTILITY(U,$J,358.3,14842,1,3,0)
- ;;=3^Removal Skin Tags,ea addl 10 Lesions
- ;;^UTILITY(U,$J,358.3,14843,0)
- ;;=11100^^80^924^7^^^^1
- ;;^UTILITY(U,$J,358.3,14843,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14843,1,2,0)
- ;;=2^11100
- ;;^UTILITY(U,$J,358.3,14843,1,3,0)
- ;;=3^Biopsy Skin Lesion,Single Lesion
- ;;^UTILITY(U,$J,358.3,14844,0)
- ;;=11101^^80^924^8^^^^1
- ;;^UTILITY(U,$J,358.3,14844,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14844,1,2,0)
- ;;=2^11101
- ;;^UTILITY(U,$J,358.3,14844,1,3,0)
- ;;=3^Biopsy Skin Lesion,ea addl Lesion
- ;;^UTILITY(U,$J,358.3,14845,0)
- ;;=10030^^80^924^19^^^^1
- ;;^UTILITY(U,$J,358.3,14845,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14845,1,2,0)
- ;;=2^10030
- ;;^UTILITY(U,$J,358.3,14845,1,3,0)
- ;;=3^Image Guided Collec by Cath,Abscess
- ;;^UTILITY(U,$J,358.3,14846,0)
- ;;=20604^^80^924^1^^^^1
- ;;^UTILITY(U,$J,358.3,14846,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14846,1,2,0)
- ;;=2^20604
- ;;^UTILITY(U,$J,358.3,14846,1,3,0)
- ;;=3^Arthrocentesis,Small Jt w/ US Guidance
- ;;^UTILITY(U,$J,358.3,14847,0)
- ;;=20606^^80^924^2^^^^1
- ;;^UTILITY(U,$J,358.3,14847,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14847,1,2,0)
- ;;=2^20606
- ;;^UTILITY(U,$J,358.3,14847,1,3,0)
- ;;=3^Arthrocentesis,Intermediate Jt w/ US Guidance
- ;;^UTILITY(U,$J,358.3,14848,0)
- ;;=20611^^80^924^5^^^^1
- ;;^UTILITY(U,$J,358.3,14848,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14848,1,2,0)
- ;;=2^20611
- ;;^UTILITY(U,$J,358.3,14848,1,3,0)
- ;;=3^Arthrocentesis,Major Jt w/ US Guidance
- ;;^UTILITY(U,$J,358.3,14849,0)
- ;;=10021^^80^924^16^^^^1
- ;;^UTILITY(U,$J,358.3,14849,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14849,1,2,0)
- ;;=2^10021
- ;;^UTILITY(U,$J,358.3,14849,1,3,0)
- ;;=3^Fine Needle Aspiration w/o Guidance
- ;;^UTILITY(U,$J,358.3,14850,0)
- ;;=11300^^80^924^25^^^^1
- ;;^UTILITY(U,$J,358.3,14850,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14850,1,2,0)
- ;;=2^11300
- ;;^UTILITY(U,$J,358.3,14850,1,3,0)
- ;;=3^Shave Epidermal Lesion,Trunk/Ext,0.5 cm or <
- ;;^UTILITY(U,$J,358.3,14851,0)
- ;;=11301^^80^924^26^^^^1
- ;;^UTILITY(U,$J,358.3,14851,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14851,1,2,0)
- ;;=2^11301
- ;;^UTILITY(U,$J,358.3,14851,1,3,0)
- ;;=3^Shave Epidermal Lesion,Trunk/Ext,0.6-1.0 cm
- ;;^UTILITY(U,$J,358.3,14852,0)
- ;;=12013^^80^924^28^^^^1
- ;;^UTILITY(U,$J,358.3,14852,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14852,1,2,0)
- ;;=2^12013
- ;;^UTILITY(U,$J,358.3,14852,1,3,0)
- ;;=3^Suture Simple Wound,Face,2.6-5.0 cm
- ;;^UTILITY(U,$J,358.3,14853,0)
- ;;=29105^^80^925^2^^^^1
- ;;^UTILITY(U,$J,358.3,14853,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14853,1,2,0)
- ;;=2^29105
- ;;^UTILITY(U,$J,358.3,14853,1,3,0)
- ;;=3^Long Arm Splint
- ;;^UTILITY(U,$J,358.3,14854,0)
- ;;=29125^^80^925^4^^^^1
- ;;^UTILITY(U,$J,358.3,14854,1,0)
- ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,14337,2)
+ ;;=^5019713
+ ;;^UTILITY(U,$J,358.3,14338,0)
+ ;;=R93.2^^53^605^9
+ ;;^UTILITY(U,$J,358.3,14338,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14338,1,3,0)
+ ;;=3^Abnormal Finding on Dx Image of Liver/Biliary Tract
+ ;;^UTILITY(U,$J,358.3,14338,1,4,0)
+ ;;=4^R93.2
+ ;;^UTILITY(U,$J,358.3,14338,2)
+ ;;=^5019715
+ ;;^UTILITY(U,$J,358.3,14339,0)
+ ;;=R93.3^^53^605^7
+ ;;^UTILITY(U,$J,358.3,14339,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14339,1,3,0)
+ ;;=3^Abnormal Finding on Dx Image of Digestive Tract Part
+ ;;^UTILITY(U,$J,358.3,14339,1,4,0)
+ ;;=4^R93.3
+ ;;^UTILITY(U,$J,358.3,14339,2)
+ ;;=^5019716
+ ;;^UTILITY(U,$J,358.3,14340,0)
+ ;;=R93.4^^53^605^11
+ ;;^UTILITY(U,$J,358.3,14340,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14340,1,3,0)
+ ;;=3^Abnormal Finding on Dx Image of Urinary Organs
+ ;;^UTILITY(U,$J,358.3,14340,1,4,0)
+ ;;=4^R93.4
+ ;;^UTILITY(U,$J,358.3,14340,2)
+ ;;=^5019717
+ ;;^UTILITY(U,$J,358.3,14341,0)
+ ;;=R93.5^^53^605^6
+ ;;^UTILITY(U,$J,358.3,14341,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14341,1,3,0)
+ ;;=3^Abnormal Finding on Dx Image of Abdominal Regions
+ ;;^UTILITY(U,$J,358.3,14341,1,4,0)
+ ;;=4^R93.5
+ ;;^UTILITY(U,$J,358.3,14341,2)
+ ;;=^5019718
+ ;;^UTILITY(U,$J,358.3,14342,0)
+ ;;=R93.6^^53^605^8
+ ;;^UTILITY(U,$J,358.3,14342,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14342,1,3,0)
+ ;;=3^Abnormal Finding on Dx Image of Limbs
+ ;;^UTILITY(U,$J,358.3,14342,1,4,0)
+ ;;=4^R93.6
+ ;;^UTILITY(U,$J,358.3,14342,2)
+ ;;=^5019719
+ ;;^UTILITY(U,$J,358.3,14343,0)
+ ;;=R94.4^^53^605^16
+ ;;^UTILITY(U,$J,358.3,14343,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14343,1,3,0)
+ ;;=3^Abnormal Kidney Function Studies
+ ;;^UTILITY(U,$J,358.3,14343,1,4,0)
+ ;;=4^R94.4
+ ;;^UTILITY(U,$J,358.3,14343,2)
+ ;;=^5019741
+ ;;^UTILITY(U,$J,358.3,14344,0)
+ ;;=R94.5^^53^605^17
+ ;;^UTILITY(U,$J,358.3,14344,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14344,1,3,0)
+ ;;=3^Abnormal Liver Function Studies
+ ;;^UTILITY(U,$J,358.3,14344,1,4,0)
+ ;;=4^R94.5
+ ;;^UTILITY(U,$J,358.3,14344,2)
+ ;;=^5019742
+ ;;^UTILITY(U,$J,358.3,14345,0)
+ ;;=R94.6^^53^605^21
+ ;;^UTILITY(U,$J,358.3,14345,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14345,1,3,0)
+ ;;=3^Abnormal Thyroid Function Studies
+ ;;^UTILITY(U,$J,358.3,14345,1,4,0)
+ ;;=4^R94.6
+ ;;^UTILITY(U,$J,358.3,14345,2)
+ ;;=^5019743
+ ;;^UTILITY(U,$J,358.3,14346,0)
+ ;;=R94.7^^53^605^5
+ ;;^UTILITY(U,$J,358.3,14346,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14346,1,3,0)
+ ;;=3^Abnormal Endocrine Function Sutdies NEC
+ ;;^UTILITY(U,$J,358.3,14346,1,4,0)
+ ;;=4^R94.7
+ ;;^UTILITY(U,$J,358.3,14346,2)
+ ;;=^5019744
+ ;;^UTILITY(U,$J,358.3,14347,0)
+ ;;=R94.31^^53^605^4
+ ;;^UTILITY(U,$J,358.3,14347,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14347,1,3,0)
+ ;;=3^Abnormal EKG
+ ;;^UTILITY(U,$J,358.3,14347,1,4,0)
+ ;;=4^R94.31
+ ;;^UTILITY(U,$J,358.3,14347,2)
+ ;;=^5019739
+ ;;^UTILITY(U,$J,358.3,14348,0)
+ ;;=R97.0^^53^605^67
+ ;;^UTILITY(U,$J,358.3,14348,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14348,1,3,0)
+ ;;=3^Elevated Carcinoembryonic Antigen 
+ ;;^UTILITY(U,$J,358.3,14348,1,4,0)
+ ;;=4^R97.0
+ ;;^UTILITY(U,$J,358.3,14348,2)
+ ;;=^5019746
+ ;;^UTILITY(U,$J,358.3,14349,0)
+ ;;=R97.1^^53^605^66
+ ;;^UTILITY(U,$J,358.3,14349,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14349,1,3,0)
+ ;;=3^Elevated Cancer Antigen 125
+ ;;^UTILITY(U,$J,358.3,14349,1,4,0)
+ ;;=4^R97.1
+ ;;^UTILITY(U,$J,358.3,14349,2)
+ ;;=^5019747
+ ;;^UTILITY(U,$J,358.3,14350,0)
+ ;;=R97.2^^53^605^68
+ ;;^UTILITY(U,$J,358.3,14350,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14350,1,3,0)
+ ;;=3^Elevated PSA
+ ;;^UTILITY(U,$J,358.3,14350,1,4,0)
+ ;;=4^R97.2

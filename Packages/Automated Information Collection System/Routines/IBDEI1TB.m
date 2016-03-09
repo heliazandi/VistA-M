@@ -1,130 +1,126 @@
-IBDEI1TB ; ; 06-AUG-2015
+IBDEI1TB ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31946,1,4,0)
- ;;=4^F43.12
- ;;^UTILITY(U,$J,358.3,31946,2)
- ;;=^5003572
- ;;^UTILITY(U,$J,358.3,31947,0)
- ;;=I25.119^^182^1976^5
- ;;^UTILITY(U,$J,358.3,31947,1,0)
+ ;;^UTILITY(U,$J,358.3,30790,1,3,0)
+ ;;=3^Atypical Virus Infections of CNS NEC
+ ;;^UTILITY(U,$J,358.3,30790,1,4,0)
+ ;;=4^A81.89
+ ;;^UTILITY(U,$J,358.3,30790,2)
+ ;;=^5000413
+ ;;^UTILITY(U,$J,358.3,30791,0)
+ ;;=F19.97^^123^1533^35
+ ;;^UTILITY(U,$J,358.3,30791,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31947,1,3,0)
- ;;=3^Athscl Hrt Dis of Native Cor Art w/ Ang Pctrs,Unspec
- ;;^UTILITY(U,$J,358.3,31947,1,4,0)
- ;;=4^I25.119
- ;;^UTILITY(U,$J,358.3,31947,2)
- ;;=^5007111
- ;;^UTILITY(U,$J,358.3,31948,0)
- ;;=I25.10^^182^1976^7
- ;;^UTILITY(U,$J,358.3,31948,1,0)
+ ;;^UTILITY(U,$J,358.3,30791,1,3,0)
+ ;;=3^Psychoactive Substance Use w/ Persisting Dementia NEC
+ ;;^UTILITY(U,$J,358.3,30791,1,4,0)
+ ;;=4^F19.97
+ ;;^UTILITY(U,$J,358.3,30791,2)
+ ;;=^5003465
+ ;;^UTILITY(U,$J,358.3,30792,0)
+ ;;=G20.^^123^1533^28
+ ;;^UTILITY(U,$J,358.3,30792,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31948,1,3,0)
- ;;=3^Athscl Hrt Dis of Native Cor Art w/o Ang Pctrs
- ;;^UTILITY(U,$J,358.3,31948,1,4,0)
- ;;=4^I25.10
- ;;^UTILITY(U,$J,358.3,31948,2)
- ;;=^5007107
- ;;^UTILITY(U,$J,358.3,31949,0)
- ;;=I25.110^^182^1976^6
- ;;^UTILITY(U,$J,358.3,31949,1,0)
+ ;;^UTILITY(U,$J,358.3,30792,1,3,0)
+ ;;=3^Parkinson's Disease w/ Dementia w/ Behavioral Disturbances
+ ;;^UTILITY(U,$J,358.3,30792,1,4,0)
+ ;;=4^G20.
+ ;;^UTILITY(U,$J,358.3,30792,2)
+ ;;=^5003770^F02.81
+ ;;^UTILITY(U,$J,358.3,30793,0)
+ ;;=G20.^^123^1533^29
+ ;;^UTILITY(U,$J,358.3,30793,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31949,1,3,0)
- ;;=3^Athscl Hrt Dis of Native Cor Art w/ Unstable Ang Pctrs
- ;;^UTILITY(U,$J,358.3,31949,1,4,0)
- ;;=4^I25.110
- ;;^UTILITY(U,$J,358.3,31949,2)
- ;;=^5007108
- ;;^UTILITY(U,$J,358.3,31950,0)
- ;;=Z51.81^^182^1977^4
- ;;^UTILITY(U,$J,358.3,31950,1,0)
+ ;;^UTILITY(U,$J,358.3,30793,1,3,0)
+ ;;=3^Parkinson's Disease w/ Dementia w/o Behavioral Disturbances
+ ;;^UTILITY(U,$J,358.3,30793,1,4,0)
+ ;;=4^G20.
+ ;;^UTILITY(U,$J,358.3,30793,2)
+ ;;=^5003770^F02.80
+ ;;^UTILITY(U,$J,358.3,30794,0)
+ ;;=G23.1^^123^1533^34
+ ;;^UTILITY(U,$J,358.3,30794,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31950,1,3,0)
- ;;=3^Encounter for Therapeutic Drug Level Monitoring
- ;;^UTILITY(U,$J,358.3,31950,1,4,0)
- ;;=4^Z51.81
- ;;^UTILITY(U,$J,358.3,31950,2)
- ;;=^5063064
- ;;^UTILITY(U,$J,358.3,31951,0)
- ;;=Z02.79^^182^1977^3
- ;;^UTILITY(U,$J,358.3,31951,1,0)
+ ;;^UTILITY(U,$J,358.3,30794,1,3,0)
+ ;;=3^Progressive Supranuclear Ophthalmoplegia Palsy
+ ;;^UTILITY(U,$J,358.3,30794,1,4,0)
+ ;;=4^G23.1
+ ;;^UTILITY(U,$J,358.3,30794,2)
+ ;;=^5003780
+ ;;^UTILITY(U,$J,358.3,30795,0)
+ ;;=F03.91^^123^1533^15
+ ;;^UTILITY(U,$J,358.3,30795,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31951,1,3,0)
- ;;=3^Encounter for Issue of other Medical Certificate
- ;;^UTILITY(U,$J,358.3,31951,1,4,0)
- ;;=4^Z02.79
- ;;^UTILITY(U,$J,358.3,31951,2)
- ;;=^5062641
- ;;^UTILITY(U,$J,358.3,31952,0)
- ;;=Z76.0^^182^1977^2
- ;;^UTILITY(U,$J,358.3,31952,1,0)
+ ;;^UTILITY(U,$J,358.3,30795,1,3,0)
+ ;;=3^Dementia w/ Behavioral Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,30795,1,4,0)
+ ;;=4^F03.91
+ ;;^UTILITY(U,$J,358.3,30795,2)
+ ;;=^5133350
+ ;;^UTILITY(U,$J,358.3,30796,0)
+ ;;=F03.90^^123^1533^17
+ ;;^UTILITY(U,$J,358.3,30796,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31952,1,3,0)
- ;;=3^Encounter for Issue of Repeat Prescription
- ;;^UTILITY(U,$J,358.3,31952,1,4,0)
- ;;=4^Z76.0
- ;;^UTILITY(U,$J,358.3,31952,2)
- ;;=^5063297
- ;;^UTILITY(U,$J,358.3,31953,0)
- ;;=Z04.9^^182^1977^1
- ;;^UTILITY(U,$J,358.3,31953,1,0)
+ ;;^UTILITY(U,$J,358.3,30796,1,3,0)
+ ;;=3^Dementia w/o Behavioral Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,30796,1,4,0)
+ ;;=4^F03.90
+ ;;^UTILITY(U,$J,358.3,30796,2)
+ ;;=^5003050
+ ;;^UTILITY(U,$J,358.3,30797,0)
+ ;;=F06.30^^123^1534^2
+ ;;^UTILITY(U,$J,358.3,30797,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31953,1,3,0)
- ;;=3^Encounter for Exam & Observation for Unsp Reason
- ;;^UTILITY(U,$J,358.3,31953,1,4,0)
- ;;=4^Z04.9
- ;;^UTILITY(U,$J,358.3,31953,2)
- ;;=^5062666
- ;;^UTILITY(U,$J,358.3,31954,0)
- ;;=I20.0^^182^1978^14
- ;;^UTILITY(U,$J,358.3,31954,1,0)
+ ;;^UTILITY(U,$J,358.3,30797,1,3,0)
+ ;;=3^Depressive Disorder d/t Another Medical Condition,Unspec
+ ;;^UTILITY(U,$J,358.3,30797,1,4,0)
+ ;;=4^F06.30
+ ;;^UTILITY(U,$J,358.3,30797,2)
+ ;;=^5003056
+ ;;^UTILITY(U,$J,358.3,30798,0)
+ ;;=F06.31^^123^1534^3
+ ;;^UTILITY(U,$J,358.3,30798,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31954,1,3,0)
- ;;=3^Unstable Angina
- ;;^UTILITY(U,$J,358.3,31954,1,4,0)
- ;;=4^I20.0
- ;;^UTILITY(U,$J,358.3,31954,2)
- ;;=^5007076
- ;;^UTILITY(U,$J,358.3,31955,0)
- ;;=I25.110^^182^1978^7
- ;;^UTILITY(U,$J,358.3,31955,1,0)
+ ;;^UTILITY(U,$J,358.3,30798,1,3,0)
+ ;;=3^Depressive Disorder d/t Another Medical Condition w/ Depressive Features
+ ;;^UTILITY(U,$J,358.3,30798,1,4,0)
+ ;;=4^F06.31
+ ;;^UTILITY(U,$J,358.3,30798,2)
+ ;;=^5003057
+ ;;^UTILITY(U,$J,358.3,30799,0)
+ ;;=F06.32^^123^1534^4
+ ;;^UTILITY(U,$J,358.3,30799,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31955,1,3,0)
- ;;=3^Athscl Hrt Dis of Native Cor Art w/ Unstable Ang Pctrs
- ;;^UTILITY(U,$J,358.3,31955,1,4,0)
- ;;=4^I25.110
- ;;^UTILITY(U,$J,358.3,31955,2)
- ;;=^5007108
- ;;^UTILITY(U,$J,358.3,31956,0)
- ;;=I25.700^^182^1978^12
- ;;^UTILITY(U,$J,358.3,31956,1,0)
+ ;;^UTILITY(U,$J,358.3,30799,1,3,0)
+ ;;=3^Depressive Disorder d/t Another Medical Condition w/ Major Depressive-Like Episode
+ ;;^UTILITY(U,$J,358.3,30799,1,4,0)
+ ;;=4^F06.32
+ ;;^UTILITY(U,$J,358.3,30799,2)
+ ;;=^5003058
+ ;;^UTILITY(U,$J,358.3,30800,0)
+ ;;=F32.9^^123^1534^20
+ ;;^UTILITY(U,$J,358.3,30800,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31956,1,3,0)
- ;;=3^Athscl of CABG,Unspec w/ Unstable Angina Pectoris
- ;;^UTILITY(U,$J,358.3,31956,1,4,0)
- ;;=4^I25.700
- ;;^UTILITY(U,$J,358.3,31956,2)
- ;;=^5007117
- ;;^UTILITY(U,$J,358.3,31957,0)
- ;;=I25.2^^182^1978^13
- ;;^UTILITY(U,$J,358.3,31957,1,0)
+ ;;^UTILITY(U,$J,358.3,30800,1,3,0)
+ ;;=3^MDD,Single Episode,Unspec
+ ;;^UTILITY(U,$J,358.3,30800,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,30800,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,30801,0)
+ ;;=F32.0^^123^1534^17
+ ;;^UTILITY(U,$J,358.3,30801,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31957,1,3,0)
- ;;=3^Old Myocardial Infarction
- ;;^UTILITY(U,$J,358.3,31957,1,4,0)
- ;;=4^I25.2
- ;;^UTILITY(U,$J,358.3,31957,2)
- ;;=^259884
- ;;^UTILITY(U,$J,358.3,31958,0)
- ;;=I20.8^^182^1978^2
- ;;^UTILITY(U,$J,358.3,31958,1,0)
+ ;;^UTILITY(U,$J,358.3,30801,1,3,0)
+ ;;=3^MDD,Single Episode,Mild
+ ;;^UTILITY(U,$J,358.3,30801,1,4,0)
+ ;;=4^F32.0
+ ;;^UTILITY(U,$J,358.3,30801,2)
+ ;;=^5003521
+ ;;^UTILITY(U,$J,358.3,30802,0)
+ ;;=F32.1^^123^1534^18
+ ;;^UTILITY(U,$J,358.3,30802,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31958,1,3,0)
- ;;=3^Angina Pectoris,Oth Forms
- ;;^UTILITY(U,$J,358.3,31958,1,4,0)
- ;;=4^I20.8
- ;;^UTILITY(U,$J,358.3,31958,2)
- ;;=^5007078
- ;;^UTILITY(U,$J,358.3,31959,0)
- ;;=I20.1^^182^1978^1
+ ;;^UTILITY(U,$J,358.3,30802,1,3,0)
+ ;;=3^MDD,Single Episode,Moderate

@@ -1,140 +1,128 @@
-IBDEI01Z ; ; 06-AUG-2015
+IBDEI01Z ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,374,1,0)
+ ;;^UTILITY(U,$J,358.3,436,1,4,0)
+ ;;=4^F10.21
+ ;;^UTILITY(U,$J,358.3,436,2)
+ ;;=^5003082
+ ;;^UTILITY(U,$J,358.3,437,0)
+ ;;=F10.230^^3^49^30
+ ;;^UTILITY(U,$J,358.3,437,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,374,1,3,0)
- ;;=3^Malignant neoplasm of left renal pelvis
- ;;^UTILITY(U,$J,358.3,374,1,4,0)
- ;;=4^C65.2
- ;;^UTILITY(U,$J,358.3,374,2)
- ;;=^5001252
- ;;^UTILITY(U,$J,358.3,375,0)
- ;;=C66.1^^2^17^14
- ;;^UTILITY(U,$J,358.3,375,1,0)
+ ;;^UTILITY(U,$J,358.3,437,1,3,0)
+ ;;=3^Alcohol Use Disorder,Moderate-Severe w/ Withdrawal
+ ;;^UTILITY(U,$J,358.3,437,1,4,0)
+ ;;=4^F10.230
+ ;;^UTILITY(U,$J,358.3,437,2)
+ ;;=^5003086
+ ;;^UTILITY(U,$J,358.3,438,0)
+ ;;=F10.231^^3^49^31
+ ;;^UTILITY(U,$J,358.3,438,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,375,1,3,0)
- ;;=3^Malignant neoplasm of right ureter
- ;;^UTILITY(U,$J,358.3,375,1,4,0)
- ;;=4^C66.1
- ;;^UTILITY(U,$J,358.3,375,2)
- ;;=^5001254
- ;;^UTILITY(U,$J,358.3,376,0)
- ;;=C66.2^^2^17^9
- ;;^UTILITY(U,$J,358.3,376,1,0)
+ ;;^UTILITY(U,$J,358.3,438,1,3,0)
+ ;;=3^Alcohol Use Disorder,Moderate-Severe w/ Withdrawal Delirium
+ ;;^UTILITY(U,$J,358.3,438,1,4,0)
+ ;;=4^F10.231
+ ;;^UTILITY(U,$J,358.3,438,2)
+ ;;=^5003087
+ ;;^UTILITY(U,$J,358.3,439,0)
+ ;;=F10.232^^3^49^32
+ ;;^UTILITY(U,$J,358.3,439,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,376,1,3,0)
- ;;=3^Malignant neoplasm of left ureter
- ;;^UTILITY(U,$J,358.3,376,1,4,0)
- ;;=4^C66.2
- ;;^UTILITY(U,$J,358.3,376,2)
- ;;=^5001255
- ;;^UTILITY(U,$J,358.3,377,0)
- ;;=C68.0^^2^17^15
- ;;^UTILITY(U,$J,358.3,377,1,0)
+ ;;^UTILITY(U,$J,358.3,439,1,3,0)
+ ;;=3^Alcohol Use Disorder,Moderate-Severe w/ Withdrawal Perceptual Disturbances
+ ;;^UTILITY(U,$J,358.3,439,1,4,0)
+ ;;=4^F10.232
+ ;;^UTILITY(U,$J,358.3,439,2)
+ ;;=^5003088
+ ;;^UTILITY(U,$J,358.3,440,0)
+ ;;=F10.239^^3^49^33
+ ;;^UTILITY(U,$J,358.3,440,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,377,1,3,0)
- ;;=3^Malignant neoplasm of urethra
- ;;^UTILITY(U,$J,358.3,377,1,4,0)
- ;;=4^C68.0
- ;;^UTILITY(U,$J,358.3,377,2)
- ;;=^267266
- ;;^UTILITY(U,$J,358.3,378,0)
- ;;=D09.0^^2^17^1
- ;;^UTILITY(U,$J,358.3,378,1,0)
+ ;;^UTILITY(U,$J,358.3,440,1,3,0)
+ ;;=3^Alcohol Withdrawal w/o Perceptual Disturbances
+ ;;^UTILITY(U,$J,358.3,440,1,4,0)
+ ;;=4^F10.239
+ ;;^UTILITY(U,$J,358.3,440,2)
+ ;;=^5003089
+ ;;^UTILITY(U,$J,358.3,441,0)
+ ;;=F10.24^^3^49^35
+ ;;^UTILITY(U,$J,358.3,441,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,378,1,3,0)
- ;;=3^Carcinoma in situ of bladder
- ;;^UTILITY(U,$J,358.3,378,1,4,0)
- ;;=4^D09.0
- ;;^UTILITY(U,$J,358.3,378,2)
- ;;=^267742
- ;;^UTILITY(U,$J,358.3,379,0)
- ;;=C15.9^^2^18^8
- ;;^UTILITY(U,$J,358.3,379,1,0)
+ ;;^UTILITY(U,$J,358.3,441,1,3,0)
+ ;;=3^Alcohol-Induced Depressive & Related Disorder w/ Moderate-Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,441,1,4,0)
+ ;;=4^F10.24
+ ;;^UTILITY(U,$J,358.3,441,2)
+ ;;=^5003090
+ ;;^UTILITY(U,$J,358.3,442,0)
+ ;;=F10.29^^3^49^37
+ ;;^UTILITY(U,$J,358.3,442,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,379,1,3,0)
- ;;=3^Malignant neoplasm of esophagus, unspecified
- ;;^UTILITY(U,$J,358.3,379,1,4,0)
- ;;=4^C15.9
- ;;^UTILITY(U,$J,358.3,379,2)
- ;;=^5000919
- ;;^UTILITY(U,$J,358.3,380,0)
- ;;=C16.9^^2^18^15
- ;;^UTILITY(U,$J,358.3,380,1,0)
+ ;;^UTILITY(U,$J,358.3,442,1,3,0)
+ ;;=3^Alcohol-Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,442,1,4,0)
+ ;;=4^F10.29
+ ;;^UTILITY(U,$J,358.3,442,2)
+ ;;=^5003100
+ ;;^UTILITY(U,$J,358.3,443,0)
+ ;;=F10.180^^3^49^1
+ ;;^UTILITY(U,$J,358.3,443,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,380,1,3,0)
- ;;=3^Malignant neoplasm of stomach, unspecified
- ;;^UTILITY(U,$J,358.3,380,1,4,0)
- ;;=4^C16.9
- ;;^UTILITY(U,$J,358.3,380,2)
- ;;=^5000923
- ;;^UTILITY(U,$J,358.3,381,0)
- ;;=C17.9^^2^18^14
- ;;^UTILITY(U,$J,358.3,381,1,0)
+ ;;^UTILITY(U,$J,358.3,443,1,3,0)
+ ;;=3^Alcohol Induced Anxiety Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,443,1,4,0)
+ ;;=4^F10.180
+ ;;^UTILITY(U,$J,358.3,443,2)
+ ;;=^5003076
+ ;;^UTILITY(U,$J,358.3,444,0)
+ ;;=F10.280^^3^49^2
+ ;;^UTILITY(U,$J,358.3,444,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,381,1,3,0)
- ;;=3^Malignant neoplasm of small intestine, unspecified
- ;;^UTILITY(U,$J,358.3,381,1,4,0)
- ;;=4^C17.9
- ;;^UTILITY(U,$J,358.3,381,2)
- ;;=^5000926
- ;;^UTILITY(U,$J,358.3,382,0)
- ;;=C18.9^^2^18^7
- ;;^UTILITY(U,$J,358.3,382,1,0)
+ ;;^UTILITY(U,$J,358.3,444,1,3,0)
+ ;;=3^Alcohol Induced Anxiety Disorder w/ Moderate/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,444,1,4,0)
+ ;;=4^F10.280
+ ;;^UTILITY(U,$J,358.3,444,2)
+ ;;=^5003096
+ ;;^UTILITY(U,$J,358.3,445,0)
+ ;;=F10.980^^3^49^3
+ ;;^UTILITY(U,$J,358.3,445,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,382,1,3,0)
- ;;=3^Malignant neoplasm of colon, unspecified
- ;;^UTILITY(U,$J,358.3,382,1,4,0)
- ;;=4^C18.9
- ;;^UTILITY(U,$J,358.3,382,2)
- ;;=^5000929
- ;;^UTILITY(U,$J,358.3,383,0)
- ;;=C20.^^2^18^13
- ;;^UTILITY(U,$J,358.3,383,1,0)
+ ;;^UTILITY(U,$J,358.3,445,1,3,0)
+ ;;=3^Alcohol Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,445,1,4,0)
+ ;;=4^F10.980
+ ;;^UTILITY(U,$J,358.3,445,2)
+ ;;=^5003110
+ ;;^UTILITY(U,$J,358.3,446,0)
+ ;;=F10.94^^3^49^4
+ ;;^UTILITY(U,$J,358.3,446,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,383,1,3,0)
- ;;=3^Malignant neoplasm of rectum
- ;;^UTILITY(U,$J,358.3,383,1,4,0)
- ;;=4^C20.
- ;;^UTILITY(U,$J,358.3,383,2)
- ;;=^267090
- ;;^UTILITY(U,$J,358.3,384,0)
- ;;=C21.0^^2^18^6
- ;;^UTILITY(U,$J,358.3,384,1,0)
+ ;;^UTILITY(U,$J,358.3,446,1,3,0)
+ ;;=3^Alcohol Induced Depressive Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,446,1,4,0)
+ ;;=4^F10.94
+ ;;^UTILITY(U,$J,358.3,446,2)
+ ;;=^5003104
+ ;;^UTILITY(U,$J,358.3,447,0)
+ ;;=F10.26^^3^49^7
+ ;;^UTILITY(U,$J,358.3,447,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,384,1,3,0)
- ;;=3^Malignant neoplasm of anus, unspecified
- ;;^UTILITY(U,$J,358.3,384,1,4,0)
- ;;=4^C21.0
- ;;^UTILITY(U,$J,358.3,384,2)
- ;;=^5000930
- ;;^UTILITY(U,$J,358.3,385,0)
- ;;=C22.8^^2^18^11
- ;;^UTILITY(U,$J,358.3,385,1,0)
+ ;;^UTILITY(U,$J,358.3,447,1,3,0)
+ ;;=3^Alcohol Induced Neurocog Disorder,Amnestic Cofabul Type w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,447,1,4,0)
+ ;;=4^F10.26
+ ;;^UTILITY(U,$J,358.3,447,2)
+ ;;=^5003094
+ ;;^UTILITY(U,$J,358.3,448,0)
+ ;;=F10.96^^3^49^8
+ ;;^UTILITY(U,$J,358.3,448,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,385,1,3,0)
- ;;=3^Malignant neoplasm of liver, primary, unspecified as to type
- ;;^UTILITY(U,$J,358.3,385,1,4,0)
- ;;=4^C22.8
- ;;^UTILITY(U,$J,358.3,385,2)
- ;;=^5000939
- ;;^UTILITY(U,$J,358.3,386,0)
- ;;=C22.7^^2^18^2
- ;;^UTILITY(U,$J,358.3,386,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,386,1,3,0)
- ;;=3^Carcinomas of Liver NEC
- ;;^UTILITY(U,$J,358.3,386,1,4,0)
- ;;=4^C22.7
- ;;^UTILITY(U,$J,358.3,386,2)
- ;;=^5000938
- ;;^UTILITY(U,$J,358.3,387,0)
- ;;=C22.2^^2^18^3
- ;;^UTILITY(U,$J,358.3,387,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,387,1,3,0)
- ;;=3^Hepatoblastoma
- ;;^UTILITY(U,$J,358.3,387,1,4,0)
- ;;=4^C22.2
+ ;;^UTILITY(U,$J,358.3,448,1,3,0)
+ ;;=3^Alcohol Induced Neurocog Disorder,Amnestic Cofabul Type w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,448,1,4,0)
+ ;;=4^F10.96
+ ;;^UTILITY(U,$J,358.3,448,2)
+ ;;=^5003108

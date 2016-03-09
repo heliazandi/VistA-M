@@ -1,48 +1,134 @@
-IBDEI237 ; ; 06-AUG-2015
+IBDEI237 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQ(358.91)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.91,0,"GL")
- ;;=^IBE(358.91,
- ;;^DIC("B","IMP/EXP MARKING AREA",358.91)
- ;;=
- ;;^DIC(358.91,"%D",0)
- ;;=^^4^4^2940217^
- ;;^DIC(358.91,"%D",1,0)
- ;;= 
- ;;^DIC(358.91,"%D",2,0)
- ;;=This file is nearly identical to file #357.91. It is used by the
- ;;^DIC(358.91,"%D",3,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.91,"%D",4,0)
- ;;=that is being imported or exported.
- ;;^DD(358.91,0)
- ;;=FIELD^^.04^4
- ;;^DD(358.91,0,"DDA")
- ;;=N
- ;;^DD(358.91,0,"DT")
- ;;=2960123
- ;;^DD(358.91,0,"IX","B",358.91,.01)
- ;;=
- ;;^DD(358.91,0,"NM","IMP/EXP MARKING AREA")
- ;;=
- ;;^DD(358.91,0,"PT",358.22,.06)
- ;;=
- ;;^DD(358.91,0,"VRPK")
- ;;=IBD
- ;;^DD(358.91,.01,0)
- ;;=NAME^RFX^^0;1^K:$L(X)>30 X
- ;;^DD(358.91,.01,1,0)
- ;;=^.1
- ;;^DD(358.91,.01,1,1,0)
- ;;=358.91^B
- ;;^DD(358.91,.01,1,1,1)
- ;;=S ^IBE(358.91,"B",$E(X,1,30),DA)=""
- ;;^DD(358.91,.01,1,1,2)
- ;;=K ^IBE(358.91,"B",$E(X,1,30),DA)
- ;;^DD(358.91,.01,3)
- ;;=NAME MUST BE UNDER 31 CHARACTERS
- ;;^DD(358.91,.01,21,0)
- ;;=^^1^1^2930608^
- ;;^DD(358.91,.01,21,1,0)
- ;;=The name should describe the appearance of the marking area on the form.
+ ;;^UTILITY(U,$J,358.3,35402,1,4,0)
+ ;;=4^F17.219
+ ;;^UTILITY(U,$J,358.3,35402,2)
+ ;;=^5003369
+ ;;^UTILITY(U,$J,358.3,35403,0)
+ ;;=J98.09^^134^1717^22
+ ;;^UTILITY(U,$J,358.3,35403,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35403,1,3,0)
+ ;;=3^Bronchus Diseases NEC
+ ;;^UTILITY(U,$J,358.3,35403,1,4,0)
+ ;;=4^J98.09
+ ;;^UTILITY(U,$J,358.3,35403,2)
+ ;;=^5008359
+ ;;^UTILITY(U,$J,358.3,35404,0)
+ ;;=A15.0^^134^1717^99
+ ;;^UTILITY(U,$J,358.3,35404,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35404,1,3,0)
+ ;;=3^Tuberculosis of Lung
+ ;;^UTILITY(U,$J,358.3,35404,1,4,0)
+ ;;=4^A15.0
+ ;;^UTILITY(U,$J,358.3,35404,2)
+ ;;=^5000062
+ ;;^UTILITY(U,$J,358.3,35405,0)
+ ;;=J05.0^^134^1717^40
+ ;;^UTILITY(U,$J,358.3,35405,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35405,1,3,0)
+ ;;=3^Laryngitis,Obstructive,Acute
+ ;;^UTILITY(U,$J,358.3,35405,1,4,0)
+ ;;=4^J05.0
+ ;;^UTILITY(U,$J,358.3,35405,2)
+ ;;=^5008141
+ ;;^UTILITY(U,$J,358.3,35406,0)
+ ;;=J06.9^^134^1717^89
+ ;;^UTILITY(U,$J,358.3,35406,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35406,1,3,0)
+ ;;=3^Respiratory Infection,Upper,Acute
+ ;;^UTILITY(U,$J,358.3,35406,1,4,0)
+ ;;=4^J06.9
+ ;;^UTILITY(U,$J,358.3,35406,2)
+ ;;=^5008143
+ ;;^UTILITY(U,$J,358.3,35407,0)
+ ;;=R63.4^^134^1717^100
+ ;;^UTILITY(U,$J,358.3,35407,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35407,1,3,0)
+ ;;=3^Weight Loss,Abnormal
+ ;;^UTILITY(U,$J,358.3,35407,1,4,0)
+ ;;=4^R63.4
+ ;;^UTILITY(U,$J,358.3,35407,2)
+ ;;=^5019542
+ ;;^UTILITY(U,$J,358.3,35408,0)
+ ;;=I26.09^^134^1717^78
+ ;;^UTILITY(U,$J,358.3,35408,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35408,1,3,0)
+ ;;=3^Pulmonary Embolism w/ Acute Cor Pulmonale
+ ;;^UTILITY(U,$J,358.3,35408,1,4,0)
+ ;;=4^I26.09
+ ;;^UTILITY(U,$J,358.3,35408,2)
+ ;;=^5007147
+ ;;^UTILITY(U,$J,358.3,35409,0)
+ ;;=I26.99^^134^1717^80
+ ;;^UTILITY(U,$J,358.3,35409,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35409,1,3,0)
+ ;;=3^Pulmonary Embolism w/o Acute Cor Pulmonale
+ ;;^UTILITY(U,$J,358.3,35409,1,4,0)
+ ;;=4^I26.99
+ ;;^UTILITY(U,$J,358.3,35409,2)
+ ;;=^5007150
+ ;;^UTILITY(U,$J,358.3,35410,0)
+ ;;=I27.0^^134^1717^84
+ ;;^UTILITY(U,$J,358.3,35410,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35410,1,3,0)
+ ;;=3^Pulmonary Hypertension,Primary
+ ;;^UTILITY(U,$J,358.3,35410,1,4,0)
+ ;;=4^I27.0
+ ;;^UTILITY(U,$J,358.3,35410,2)
+ ;;=^265310
+ ;;^UTILITY(U,$J,358.3,35411,0)
+ ;;=I27.2^^134^1717^85
+ ;;^UTILITY(U,$J,358.3,35411,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35411,1,3,0)
+ ;;=3^Pulmonary Hypertension,Secondary
+ ;;^UTILITY(U,$J,358.3,35411,1,4,0)
+ ;;=4^I27.2
+ ;;^UTILITY(U,$J,358.3,35411,2)
+ ;;=^5007151
+ ;;^UTILITY(U,$J,358.3,35412,0)
+ ;;=I26.01^^134^1717^93
+ ;;^UTILITY(U,$J,358.3,35412,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35412,1,3,0)
+ ;;=3^Septic Pulmonary Embolism w/ Acute Cor Pulmonale
+ ;;^UTILITY(U,$J,358.3,35412,1,4,0)
+ ;;=4^I26.01
+ ;;^UTILITY(U,$J,358.3,35412,2)
+ ;;=^5007145
+ ;;^UTILITY(U,$J,358.3,35413,0)
+ ;;=I26.90^^134^1717^94
+ ;;^UTILITY(U,$J,358.3,35413,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35413,1,3,0)
+ ;;=3^Septic Pulmonary Embolism w/o Acute Cor Pulmonale
+ ;;^UTILITY(U,$J,358.3,35413,1,4,0)
+ ;;=4^I26.90
+ ;;^UTILITY(U,$J,358.3,35413,2)
+ ;;=^5007148
+ ;;^UTILITY(U,$J,358.3,35414,0)
+ ;;=J06.9^^134^1717^1
+ ;;^UTILITY(U,$J,358.3,35414,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35414,1,3,0)
+ ;;=3^AC Upper Respiratory Infection,Unspec
+ ;;^UTILITY(U,$J,358.3,35414,1,4,0)
+ ;;=4^J06.9
+ ;;^UTILITY(U,$J,358.3,35414,2)
+ ;;=^5008143
+ ;;^UTILITY(U,$J,358.3,35415,0)
+ ;;=E66.01^^134^1717^52
+ ;;^UTILITY(U,$J,358.3,35415,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35415,1,3,0)
+ ;;=3^Morbid Obesity

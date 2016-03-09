@@ -1,142 +1,126 @@
-IBDEI0HQ ; ; 06-AUG-2015
+IBDEI0HQ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8271,2)
- ;;=^186856
- ;;^UTILITY(U,$J,358.3,8272,0)
- ;;=238.4^^35^482^109
- ;;^UTILITY(U,$J,358.3,8272,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8272,1,4,0)
- ;;=4^238.4
- ;;^UTILITY(U,$J,358.3,8272,1,5,0)
- ;;=5^Polycytheria Rubra Vera
- ;;^UTILITY(U,$J,358.3,8272,2)
- ;;=^96105
- ;;^UTILITY(U,$J,358.3,8273,0)
- ;;=V58.61^^35^482^126
- ;;^UTILITY(U,$J,358.3,8273,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8273,1,4,0)
- ;;=4^V58.61
- ;;^UTILITY(U,$J,358.3,8273,1,5,0)
- ;;=5^Warfarin/Coumadin Use
- ;;^UTILITY(U,$J,358.3,8273,2)
- ;;=Warfarin/Coumadin Use^303459
- ;;^UTILITY(U,$J,358.3,8274,0)
- ;;=282.49^^35^482^117
- ;;^UTILITY(U,$J,358.3,8274,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8274,1,4,0)
- ;;=4^282.49
- ;;^UTILITY(U,$J,358.3,8274,1,5,0)
- ;;=5^Thalassemia NEC
- ;;^UTILITY(U,$J,358.3,8274,2)
- ;;=^329910
- ;;^UTILITY(U,$J,358.3,8275,0)
- ;;=289.89^^35^482^15
- ;;^UTILITY(U,$J,358.3,8275,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8275,1,4,0)
- ;;=4^289.89
- ;;^UTILITY(U,$J,358.3,8275,1,5,0)
- ;;=5^Blood Diseases NEC
- ;;^UTILITY(U,$J,358.3,8275,2)
- ;;=^329887
- ;;^UTILITY(U,$J,358.3,8276,0)
- ;;=238.79^^35^482^88
- ;;^UTILITY(U,$J,358.3,8276,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8276,1,4,0)
- ;;=4^238.79
- ;;^UTILITY(U,$J,358.3,8276,1,5,0)
- ;;=5^Lymph/Hematopoietic Tissue NEC
- ;;^UTILITY(U,$J,358.3,8276,2)
- ;;=^334033
- ;;^UTILITY(U,$J,358.3,8277,0)
- ;;=287.30^^35^482^110
- ;;^UTILITY(U,$J,358.3,8277,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8277,1,4,0)
- ;;=4^287.30
- ;;^UTILITY(U,$J,358.3,8277,1,5,0)
- ;;=5^Primary Thrombocytopenia
- ;;^UTILITY(U,$J,358.3,8277,2)
- ;;=^332841
- ;;^UTILITY(U,$J,358.3,8278,0)
- ;;=288.09^^35^482^8
- ;;^UTILITY(U,$J,358.3,8278,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8278,1,4,0)
- ;;=4^288.09
- ;;^UTILITY(U,$J,358.3,8278,1,5,0)
- ;;=5^Agranulocytosis
- ;;^UTILITY(U,$J,358.3,8278,2)
- ;;=^334042
- ;;^UTILITY(U,$J,358.3,8279,0)
- ;;=V10.21^^35^482^61
- ;;^UTILITY(U,$J,358.3,8279,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8279,1,4,0)
- ;;=4^V10.21
- ;;^UTILITY(U,$J,358.3,8279,1,5,0)
- ;;=5^H/O Laryngeal Cancer
- ;;^UTILITY(U,$J,358.3,8279,2)
- ;;=^295214
- ;;^UTILITY(U,$J,358.3,8280,0)
- ;;=284.2^^35^482^106
- ;;^UTILITY(U,$J,358.3,8280,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8280,1,4,0)
- ;;=4^284.2
- ;;^UTILITY(U,$J,358.3,8280,1,5,0)
- ;;=5^Myelophthisic Anemia
- ;;^UTILITY(U,$J,358.3,8280,2)
- ;;=^334037
- ;;^UTILITY(U,$J,358.3,8281,0)
- ;;=202.40^^35^482^76
- ;;^UTILITY(U,$J,358.3,8281,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8281,1,4,0)
- ;;=4^202.40
- ;;^UTILITY(U,$J,358.3,8281,1,5,0)
- ;;=5^Hairy Cell Leukemia,Unspecified site
- ;;^UTILITY(U,$J,358.3,8281,2)
- ;;=^69587
- ;;^UTILITY(U,$J,358.3,8282,0)
- ;;=287.49^^35^482^118
- ;;^UTILITY(U,$J,358.3,8282,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8282,1,4,0)
- ;;=4^287.49
- ;;^UTILITY(U,$J,358.3,8282,1,5,0)
- ;;=5^Thrombocytopenia,Drug Induced
- ;;^UTILITY(U,$J,358.3,8282,2)
- ;;=^339610
- ;;^UTILITY(U,$J,358.3,8283,0)
- ;;=180.9^^35^482^29
- ;;^UTILITY(U,$J,358.3,8283,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8283,1,4,0)
- ;;=4^180.9
- ;;^UTILITY(U,$J,358.3,8283,1,5,0)
- ;;=5^Ca Cervix
- ;;^UTILITY(U,$J,358.3,8283,2)
- ;;=^267214
- ;;^UTILITY(U,$J,358.3,8284,0)
- ;;=203.02^^35^482^104
- ;;^UTILITY(U,$J,358.3,8284,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8284,1,4,0)
- ;;=4^203.02
- ;;^UTILITY(U,$J,358.3,8284,1,5,0)
- ;;=5^Multiple Myeloma,In Relapse
- ;;^UTILITY(U,$J,358.3,8284,2)
- ;;=^336462
- ;;^UTILITY(U,$J,358.3,8285,0)
- ;;=204.02^^35^482^2
- ;;^UTILITY(U,$J,358.3,8285,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8285,1,4,0)
- ;;=4^204.02
+ ;;^UTILITY(U,$J,358.3,8197,1,3,0)
+ ;;=3^Open wnd of right rng fngr w/o damage to nail unspec, init
+ ;;^UTILITY(U,$J,358.3,8197,1,4,0)
+ ;;=4^S61.204A
+ ;;^UTILITY(U,$J,358.3,8197,2)
+ ;;=^5032753
+ ;;^UTILITY(U,$J,358.3,8198,0)
+ ;;=S61.205A^^33^431^163
+ ;;^UTILITY(U,$J,358.3,8198,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8198,1,3,0)
+ ;;=3^Open wnd of left ring finger w/o damage to nail unspec,
+ ;;^UTILITY(U,$J,358.3,8198,1,4,0)
+ ;;=4^S61.205A
+ ;;^UTILITY(U,$J,358.3,8198,2)
+ ;;=^5032756
+ ;;^UTILITY(U,$J,358.3,8199,0)
+ ;;=S61.206A^^33^431^170
+ ;;^UTILITY(U,$J,358.3,8199,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8199,1,3,0)
+ ;;=3^Open wnd of right little finger w/o damage to nail unspec,
+ ;;^UTILITY(U,$J,358.3,8199,1,4,0)
+ ;;=4^S61.206A
+ ;;^UTILITY(U,$J,358.3,8199,2)
+ ;;=^5032759
+ ;;^UTILITY(U,$J,358.3,8200,0)
+ ;;=S61.207A^^33^431^160
+ ;;^UTILITY(U,$J,358.3,8200,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8200,1,3,0)
+ ;;=3^Open wnd of left little finger w/o damage to nail unspec,init enctr
+ ;;^UTILITY(U,$J,358.3,8200,1,4,0)
+ ;;=4^S61.207A
+ ;;^UTILITY(U,$J,358.3,8200,2)
+ ;;=^5032762
+ ;;^UTILITY(U,$J,358.3,8201,0)
+ ;;=S91.301A^^33^431^166
+ ;;^UTILITY(U,$J,358.3,8201,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8201,1,3,0)
+ ;;=3^Open wnd of right foot unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8201,1,4,0)
+ ;;=4^S91.301A
+ ;;^UTILITY(U,$J,358.3,8201,2)
+ ;;=^5044314
+ ;;^UTILITY(U,$J,358.3,8202,0)
+ ;;=S91.302A^^33^431^156
+ ;;^UTILITY(U,$J,358.3,8202,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8202,1,3,0)
+ ;;=3^Open wnd of left foot unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8202,1,4,0)
+ ;;=4^S91.302A
+ ;;^UTILITY(U,$J,358.3,8202,2)
+ ;;=^5044317
+ ;;^UTILITY(U,$J,358.3,8203,0)
+ ;;=S51.801A^^33^431^167
+ ;;^UTILITY(U,$J,358.3,8203,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8203,1,3,0)
+ ;;=3^Open wnd of right forearm unspec, initial encoun
+ ;;^UTILITY(U,$J,358.3,8203,1,4,0)
+ ;;=4^S51.801A
+ ;;^UTILITY(U,$J,358.3,8203,2)
+ ;;=^5028659
+ ;;^UTILITY(U,$J,358.3,8204,0)
+ ;;=S51.802A^^33^431^157
+ ;;^UTILITY(U,$J,358.3,8204,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8204,1,3,0)
+ ;;=3^Open wnd of left forearm unspec, initial encount
+ ;;^UTILITY(U,$J,358.3,8204,1,4,0)
+ ;;=4^S51.802A
+ ;;^UTILITY(U,$J,358.3,8204,2)
+ ;;=^5028662
+ ;;^UTILITY(U,$J,358.3,8205,0)
+ ;;=S61.401A^^33^431^168
+ ;;^UTILITY(U,$J,358.3,8205,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8205,1,3,0)
+ ;;=3^Open wnd of right hand unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8205,1,4,0)
+ ;;=4^S61.401A
+ ;;^UTILITY(U,$J,358.3,8205,2)
+ ;;=^5032981
+ ;;^UTILITY(U,$J,358.3,8206,0)
+ ;;=S61.402A^^33^431^158
+ ;;^UTILITY(U,$J,358.3,8206,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8206,1,3,0)
+ ;;=3^Open wnd of left hand unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8206,1,4,0)
+ ;;=4^S61.402A
+ ;;^UTILITY(U,$J,358.3,8206,2)
+ ;;=^5032984
+ ;;^UTILITY(U,$J,358.3,8207,0)
+ ;;=S81.801A^^33^431^171
+ ;;^UTILITY(U,$J,358.3,8207,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8207,1,3,0)
+ ;;=3^Open wnd of right lower leg unspec, initial encoun
+ ;;^UTILITY(U,$J,358.3,8207,1,4,0)
+ ;;=4^S81.801A
+ ;;^UTILITY(U,$J,358.3,8207,2)
+ ;;=^5040065
+ ;;^UTILITY(U,$J,358.3,8208,0)
+ ;;=S81.802A^^33^431^161
+ ;;^UTILITY(U,$J,358.3,8208,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8208,1,3,0)
+ ;;=3^Open wnd of left lower leg unspec, initial encount
+ ;;^UTILITY(U,$J,358.3,8208,1,4,0)
+ ;;=4^S81.802A
+ ;;^UTILITY(U,$J,358.3,8208,2)
+ ;;=^5040068
+ ;;^UTILITY(U,$J,358.3,8209,0)
+ ;;=B18.2^^33^432^13
+ ;;^UTILITY(U,$J,358.3,8209,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8209,1,3,0)
+ ;;=3^Chronic viral hepatitis C

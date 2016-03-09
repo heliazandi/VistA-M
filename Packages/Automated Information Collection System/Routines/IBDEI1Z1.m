@@ -1,126 +1,130 @@
-IBDEI1Z1 ; ; 06-AUG-2015
+IBDEI1Z1 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34556,1,3,0)
- ;;=3^Nondisp anterior process fx of right calcaneus, sequela
- ;;^UTILITY(U,$J,358.3,34556,1,4,0)
- ;;=4^S92.024S
- ;;^UTILITY(U,$J,358.3,34556,2)
- ;;=^5044436
- ;;^UTILITY(U,$J,358.3,34557,0)
- ;;=S92.015S^^183^2020^74
- ;;^UTILITY(U,$J,358.3,34557,1,0)
+ ;;^UTILITY(U,$J,358.3,33451,1,4,0)
+ ;;=4^I70.743
+ ;;^UTILITY(U,$J,358.3,33451,2)
+ ;;=^5133603
+ ;;^UTILITY(U,$J,358.3,33452,0)
+ ;;=I70.744^^131^1669^77
+ ;;^UTILITY(U,$J,358.3,33452,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34557,1,3,0)
- ;;=3^Nondisp body of left calcaneus fx, sequela
- ;;^UTILITY(U,$J,358.3,34557,1,4,0)
- ;;=4^S92.015S
- ;;^UTILITY(U,$J,358.3,34557,2)
- ;;=^5044401
- ;;^UTILITY(U,$J,358.3,34558,0)
- ;;=S92.125S^^183^2020^75
- ;;^UTILITY(U,$J,358.3,34558,1,0)
+ ;;^UTILITY(U,$J,358.3,33452,1,3,0)
+ ;;=3^Athscl of Bypass Graft of Left Leg w/ Heel/Midfoot Ulcer
+ ;;^UTILITY(U,$J,358.3,33452,1,4,0)
+ ;;=4^I70.744
+ ;;^UTILITY(U,$J,358.3,33452,2)
+ ;;=^5133604
+ ;;^UTILITY(U,$J,358.3,33453,0)
+ ;;=I70.745^^131^1669^78
+ ;;^UTILITY(U,$J,358.3,33453,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34558,1,3,0)
- ;;=3^Nondisp body of left talus fx, sequela
- ;;^UTILITY(U,$J,358.3,34558,1,4,0)
- ;;=4^S92.125S
- ;;^UTILITY(U,$J,358.3,34558,2)
- ;;=^5044681
- ;;^UTILITY(U,$J,358.3,34559,0)
- ;;=S92.014S^^183^2020^76
- ;;^UTILITY(U,$J,358.3,34559,1,0)
+ ;;^UTILITY(U,$J,358.3,33453,1,3,0)
+ ;;=3^Athscl of Bypass Graft of Left Leg w/ Oth Part Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,33453,1,4,0)
+ ;;=4^I70.745
+ ;;^UTILITY(U,$J,358.3,33453,2)
+ ;;=^5133605
+ ;;^UTILITY(U,$J,358.3,33454,0)
+ ;;=I83.009^^131^1669^287
+ ;;^UTILITY(U,$J,358.3,33454,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34559,1,3,0)
- ;;=3^Nondisp body of right calcaneus fx, sequela
- ;;^UTILITY(U,$J,358.3,34559,1,4,0)
- ;;=4^S92.014S
- ;;^UTILITY(U,$J,358.3,34559,2)
- ;;=^5044394
- ;;^UTILITY(U,$J,358.3,34560,0)
- ;;=S92.124S^^183^2020^77
- ;;^UTILITY(U,$J,358.3,34560,1,0)
+ ;;^UTILITY(U,$J,358.3,33454,1,3,0)
+ ;;=3^Varicose Veins of Lower Extremity w/ Ulcer
+ ;;^UTILITY(U,$J,358.3,33454,1,4,0)
+ ;;=4^I83.009
+ ;;^UTILITY(U,$J,358.3,33454,2)
+ ;;=^5007972
+ ;;^UTILITY(U,$J,358.3,33455,0)
+ ;;=H65.03^^131^1670^3
+ ;;^UTILITY(U,$J,358.3,33455,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34560,1,3,0)
- ;;=3^Nondisp body of right talus fx, sequela
- ;;^UTILITY(U,$J,358.3,34560,1,4,0)
- ;;=4^S92.124S
- ;;^UTILITY(U,$J,358.3,34560,2)
- ;;=^5044674
- ;;^UTILITY(U,$J,358.3,34561,0)
- ;;=S92.115S^^183^2020^98
- ;;^UTILITY(U,$J,358.3,34561,1,0)
+ ;;^UTILITY(U,$J,358.3,33455,1,3,0)
+ ;;=3^Acute Serous Otitis Media,Bilateral
+ ;;^UTILITY(U,$J,358.3,33455,1,4,0)
+ ;;=4^H65.03
+ ;;^UTILITY(U,$J,358.3,33455,2)
+ ;;=^5006572
+ ;;^UTILITY(U,$J,358.3,33456,0)
+ ;;=H65.01^^131^1670^5
+ ;;^UTILITY(U,$J,358.3,33456,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34561,1,3,0)
- ;;=3^Nondisp neck of left talus fx, sequela
- ;;^UTILITY(U,$J,358.3,34561,1,4,0)
- ;;=4^S92.115S
- ;;^UTILITY(U,$J,358.3,34561,2)
- ;;=^5044639
- ;;^UTILITY(U,$J,358.3,34562,0)
- ;;=S92.114S^^183^2020^99
- ;;^UTILITY(U,$J,358.3,34562,1,0)
+ ;;^UTILITY(U,$J,358.3,33456,1,3,0)
+ ;;=3^Acute Serous Otitis Media,Right Ear
+ ;;^UTILITY(U,$J,358.3,33456,1,4,0)
+ ;;=4^H65.01
+ ;;^UTILITY(U,$J,358.3,33456,2)
+ ;;=^5006570
+ ;;^UTILITY(U,$J,358.3,33457,0)
+ ;;=H65.23^^131^1670^15
+ ;;^UTILITY(U,$J,358.3,33457,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34562,1,3,0)
- ;;=3^Nondisp neck of right talus fx, sequela
- ;;^UTILITY(U,$J,358.3,34562,1,4,0)
- ;;=4^S92.114S
- ;;^UTILITY(U,$J,358.3,34562,2)
- ;;=^5044632
- ;;^UTILITY(U,$J,358.3,34563,0)
- ;;=S92.135S^^183^2020^100
- ;;^UTILITY(U,$J,358.3,34563,1,0)
+ ;;^UTILITY(U,$J,358.3,33457,1,3,0)
+ ;;=3^Chronic Serous Otitis Media,Bilateral
+ ;;^UTILITY(U,$J,358.3,33457,1,4,0)
+ ;;=4^H65.23
+ ;;^UTILITY(U,$J,358.3,33457,2)
+ ;;=^5006596
+ ;;^UTILITY(U,$J,358.3,33458,0)
+ ;;=H65.22^^131^1670^16
+ ;;^UTILITY(U,$J,358.3,33458,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34563,1,3,0)
- ;;=3^Nondisp posterior process fx of left talus, sequela
- ;;^UTILITY(U,$J,358.3,34563,1,4,0)
- ;;=4^S92.135S
- ;;^UTILITY(U,$J,358.3,34563,2)
- ;;=^5044723
- ;;^UTILITY(U,$J,358.3,34564,0)
- ;;=S92.134S^^183^2020^101
- ;;^UTILITY(U,$J,358.3,34564,1,0)
+ ;;^UTILITY(U,$J,358.3,33458,1,3,0)
+ ;;=3^Chronic Serous Otitis Media,Left Ear
+ ;;^UTILITY(U,$J,358.3,33458,1,4,0)
+ ;;=4^H65.22
+ ;;^UTILITY(U,$J,358.3,33458,2)
+ ;;=^5006595
+ ;;^UTILITY(U,$J,358.3,33459,0)
+ ;;=H65.21^^131^1670^17
+ ;;^UTILITY(U,$J,358.3,33459,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34564,1,3,0)
- ;;=3^Nondisp posterior process fx of right talus, sequela
- ;;^UTILITY(U,$J,358.3,34564,1,4,0)
- ;;=4^S92.134S
- ;;^UTILITY(U,$J,358.3,34564,2)
- ;;=^5044716
- ;;^UTILITY(U,$J,358.3,34565,0)
- ;;=S92.064S^^183^2020^89
- ;;^UTILITY(U,$J,358.3,34565,1,0)
+ ;;^UTILITY(U,$J,358.3,33459,1,3,0)
+ ;;=3^Chronic Serous Otitis Media,Right Ear
+ ;;^UTILITY(U,$J,358.3,33459,1,4,0)
+ ;;=4^H65.21
+ ;;^UTILITY(U,$J,358.3,33459,2)
+ ;;=^5006594
+ ;;^UTILITY(U,$J,358.3,33460,0)
+ ;;=H66.012^^131^1670^6
+ ;;^UTILITY(U,$J,358.3,33460,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34565,1,3,0)
- ;;=3^Nondisp intraarticular fx of right calcaneus, sequela
- ;;^UTILITY(U,$J,358.3,34565,1,4,0)
- ;;=4^S92.064S
- ;;^UTILITY(U,$J,358.3,34565,2)
- ;;=^5044576
- ;;^UTILITY(U,$J,358.3,34566,0)
- ;;=S92.065S^^183^2020^88
- ;;^UTILITY(U,$J,358.3,34566,1,0)
+ ;;^UTILITY(U,$J,358.3,33460,1,3,0)
+ ;;=3^Acute Suppr Otitis Media w/ Spon Rupt Ear Drum,Left Ear
+ ;;^UTILITY(U,$J,358.3,33460,1,4,0)
+ ;;=4^H66.012
+ ;;^UTILITY(U,$J,358.3,33460,2)
+ ;;=^5133534
+ ;;^UTILITY(U,$J,358.3,33461,0)
+ ;;=H66.011^^131^1670^7
+ ;;^UTILITY(U,$J,358.3,33461,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34566,1,3,0)
- ;;=3^Nondisp intraarticular fx of left calcaneus, sequela
- ;;^UTILITY(U,$J,358.3,34566,1,4,0)
- ;;=4^S92.065S
- ;;^UTILITY(U,$J,358.3,34566,2)
- ;;=^5044583
- ;;^UTILITY(U,$J,358.3,34567,0)
- ;;=M84.472S^^183^2020^108
- ;;^UTILITY(U,$J,358.3,34567,1,0)
+ ;;^UTILITY(U,$J,358.3,33461,1,3,0)
+ ;;=3^Acute Suppr Otitis Media w/ Spon Rupt Ear Drum,Right Ear
+ ;;^UTILITY(U,$J,358.3,33461,1,4,0)
+ ;;=4^H66.011
+ ;;^UTILITY(U,$J,358.3,33461,2)
+ ;;=^5006621
+ ;;^UTILITY(U,$J,358.3,33462,0)
+ ;;=H66.91^^131^1670^36
+ ;;^UTILITY(U,$J,358.3,33462,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34567,1,3,0)
- ;;=3^Pathological fracture, left ankle, sequela
- ;;^UTILITY(U,$J,358.3,34567,1,4,0)
- ;;=4^M84.472S
- ;;^UTILITY(U,$J,358.3,34567,2)
- ;;=^5013973
- ;;^UTILITY(U,$J,358.3,34568,0)
- ;;=M84.471S^^183^2020^111
- ;;^UTILITY(U,$J,358.3,34568,1,0)
+ ;;^UTILITY(U,$J,358.3,33462,1,3,0)
+ ;;=3^Otitis Media,Unspec,Right Ear
+ ;;^UTILITY(U,$J,358.3,33462,1,4,0)
+ ;;=4^H66.91
+ ;;^UTILITY(U,$J,358.3,33462,2)
+ ;;=^5006640
+ ;;^UTILITY(U,$J,358.3,33463,0)
+ ;;=H66.92^^131^1670^35
+ ;;^UTILITY(U,$J,358.3,33463,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34568,1,3,0)
- ;;=3^Pathological fracture, right ankle, sequela
+ ;;^UTILITY(U,$J,358.3,33463,1,3,0)
+ ;;=3^Otitis Media,Unspec,Left Ear
+ ;;^UTILITY(U,$J,358.3,33463,1,4,0)
+ ;;=4^H66.92
+ ;;^UTILITY(U,$J,358.3,33463,2)
+ ;;=^5006641
+ ;;^UTILITY(U,$J,358.3,33464,0)
+ ;;=H66.93^^131^1670^34

@@ -1,130 +1,130 @@
-IBDEI05E ; ; 06-AUG-2015
+IBDEI05E ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2007,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2007,1,3,0)
- ;;=3^Abrasion,Right ankle, initial encounter
- ;;^UTILITY(U,$J,358.3,2007,1,4,0)
- ;;=4^S90.511A
- ;;^UTILITY(U,$J,358.3,2007,2)
- ;;=^5043997
- ;;^UTILITY(U,$J,358.3,2008,0)
- ;;=S90.512A^^4^62^1
- ;;^UTILITY(U,$J,358.3,2008,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2008,1,3,0)
- ;;=3^Abrasion,Left ankle, initial encounter
- ;;^UTILITY(U,$J,358.3,2008,1,4,0)
- ;;=4^S90.512A
- ;;^UTILITY(U,$J,358.3,2008,2)
- ;;=^5044000
- ;;^UTILITY(U,$J,358.3,2009,0)
- ;;=S40.811A^^4^62^28
- ;;^UTILITY(U,$J,358.3,2009,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2009,1,3,0)
- ;;=3^Abrasion,Right upper arm, initial encounter
- ;;^UTILITY(U,$J,358.3,2009,1,4,0)
- ;;=4^S40.811A
- ;;^UTILITY(U,$J,358.3,2009,2)
- ;;=^5026225
- ;;^UTILITY(U,$J,358.3,2010,0)
- ;;=S40.812A^^4^62^13
- ;;^UTILITY(U,$J,358.3,2010,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2010,1,3,0)
- ;;=3^Abrasion,Left upper arm, initial encounter
- ;;^UTILITY(U,$J,358.3,2010,1,4,0)
- ;;=4^S40.812A
- ;;^UTILITY(U,$J,358.3,2010,2)
- ;;=^5026228
- ;;^UTILITY(U,$J,358.3,2011,0)
- ;;=S05.01XA^^4^62^46
- ;;^UTILITY(U,$J,358.3,2011,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2011,1,3,0)
- ;;=3^Conjunctiva/Corneal Abrasion w/o FB,Right Eye,Init Enctr
- ;;^UTILITY(U,$J,358.3,2011,1,4,0)
- ;;=4^S05.01XA
- ;;^UTILITY(U,$J,358.3,2011,2)
- ;;=^5020579
- ;;^UTILITY(U,$J,358.3,2012,0)
- ;;=S05.02XA^^4^62^45
- ;;^UTILITY(U,$J,358.3,2012,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2012,1,3,0)
- ;;=3^Conjuctiva/Corneal Abrasion w/o FB,Left Eye,Init Encntr
- ;;^UTILITY(U,$J,358.3,2012,1,4,0)
- ;;=4^S05.02XA
- ;;^UTILITY(U,$J,358.3,2012,2)
- ;;=^5020582
- ;;^UTILITY(U,$J,358.3,2013,0)
- ;;=S50.311A^^4^62^17
- ;;^UTILITY(U,$J,358.3,2013,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2013,1,3,0)
- ;;=3^Abrasion,Right elbow, initial encounter
- ;;^UTILITY(U,$J,358.3,2013,1,4,0)
- ;;=4^S50.311A
- ;;^UTILITY(U,$J,358.3,2013,2)
- ;;=^5028500
- ;;^UTILITY(U,$J,358.3,2014,0)
- ;;=S50.312A^^4^62^2
- ;;^UTILITY(U,$J,358.3,2014,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2014,1,3,0)
- ;;=3^Abrasion,Left elbow, initial encounter
- ;;^UTILITY(U,$J,358.3,2014,1,4,0)
- ;;=4^S50.312A
- ;;^UTILITY(U,$J,358.3,2014,2)
- ;;=^5028503
- ;;^UTILITY(U,$J,358.3,2015,0)
- ;;=S00.81XA^^4^62^15
- ;;^UTILITY(U,$J,358.3,2015,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2015,1,3,0)
- ;;=3^Abrasion,Other part of head, initial encounter
- ;;^UTILITY(U,$J,358.3,2015,1,4,0)
- ;;=4^S00.81XA
- ;;^UTILITY(U,$J,358.3,2015,2)
- ;;=^5019988
- ;;^UTILITY(U,$J,358.3,2016,0)
- ;;=S90.811A^^4^62^18
- ;;^UTILITY(U,$J,358.3,2016,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2016,1,3,0)
- ;;=3^Abrasion,Right foot, initial encounter
- ;;^UTILITY(U,$J,358.3,2016,1,4,0)
- ;;=4^S90.811A
- ;;^UTILITY(U,$J,358.3,2016,2)
- ;;=^5044051
- ;;^UTILITY(U,$J,358.3,2017,0)
- ;;=S90.812A^^4^62^3
- ;;^UTILITY(U,$J,358.3,2017,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2017,1,3,0)
- ;;=3^Abrasion,Left foot, initial encounter
- ;;^UTILITY(U,$J,358.3,2017,1,4,0)
- ;;=4^S90.812A
- ;;^UTILITY(U,$J,358.3,2017,2)
- ;;=^5044054
- ;;^UTILITY(U,$J,358.3,2018,0)
- ;;=S90.411A^^4^62^20
- ;;^UTILITY(U,$J,358.3,2018,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2018,1,3,0)
- ;;=3^Abrasion,Right great toe, initial encounter
- ;;^UTILITY(U,$J,358.3,2018,1,4,0)
- ;;=4^S90.411A
- ;;^UTILITY(U,$J,358.3,2018,2)
- ;;=^5043889
- ;;^UTILITY(U,$J,358.3,2019,0)
- ;;=S90.412A^^4^62^5
- ;;^UTILITY(U,$J,358.3,2019,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2019,1,3,0)
- ;;=3^Abrasion,Left great toe, initial encounter
- ;;^UTILITY(U,$J,358.3,2019,1,4,0)
- ;;=4^S90.412A
+ ;;^UTILITY(U,$J,358.3,2154,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2154,1,2,0)
+ ;;=2^93307
+ ;;^UTILITY(U,$J,358.3,2154,1,3,0)
+ ;;=3^Echo,TT,2D,M Mode
+ ;;^UTILITY(U,$J,358.3,2155,0)
+ ;;=93308^^12^171^5^^^^1
+ ;;^UTILITY(U,$J,358.3,2155,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2155,1,2,0)
+ ;;=2^93308
+ ;;^UTILITY(U,$J,358.3,2155,1,3,0)
+ ;;=3^Echo F/U Or Limited Study
+ ;;^UTILITY(U,$J,358.3,2156,0)
+ ;;=93320^^12^171^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2156,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2156,1,2,0)
+ ;;=2^93320
+ ;;^UTILITY(U,$J,358.3,2156,1,3,0)
+ ;;=3^Doppler Echo pulse wave
+ ;;^UTILITY(U,$J,358.3,2157,0)
+ ;;=93325^^12^171^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2157,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2157,1,2,0)
+ ;;=2^93325
+ ;;^UTILITY(U,$J,358.3,2157,1,3,0)
+ ;;=3^Doppler ECHO color flow velocity mapping
+ ;;^UTILITY(U,$J,358.3,2158,0)
+ ;;=93350^^12^171^15^^^^1
+ ;;^UTILITY(U,$J,358.3,2158,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2158,1,2,0)
+ ;;=2^93350
+ ;;^UTILITY(U,$J,358.3,2158,1,3,0)
+ ;;=3^Echo Transthoracic,Rest/Stress Test
+ ;;^UTILITY(U,$J,358.3,2159,0)
+ ;;=93306^^12^171^18^^^^1
+ ;;^UTILITY(U,$J,358.3,2159,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2159,1,2,0)
+ ;;=2^93306
+ ;;^UTILITY(U,$J,358.3,2159,1,3,0)
+ ;;=3^Echo,TT,2D,M Mode w/ Color Doppler
+ ;;^UTILITY(U,$J,358.3,2160,0)
+ ;;=93321^^12^171^4^^^^1
+ ;;^UTILITY(U,$J,358.3,2160,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2160,1,2,0)
+ ;;=2^93321
+ ;;^UTILITY(U,$J,358.3,2160,1,3,0)
+ ;;=3^Doppler Echo, Heart
+ ;;^UTILITY(U,$J,358.3,2161,0)
+ ;;=93351^^12^171^20^^^^1
+ ;;^UTILITY(U,$J,358.3,2161,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2161,1,2,0)
+ ;;=2^93351
+ ;;^UTILITY(U,$J,358.3,2161,1,3,0)
+ ;;=3^Stress TTE Complete
+ ;;^UTILITY(U,$J,358.3,2162,0)
+ ;;=93352^^12^171^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2162,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2162,1,2,0)
+ ;;=2^93352
+ ;;^UTILITY(U,$J,358.3,2162,1,3,0)
+ ;;=3^Admin ECHO Contrast Agent
+ ;;^UTILITY(U,$J,358.3,2163,0)
+ ;;=93312^^12^171^11^^^^1
+ ;;^UTILITY(U,$J,358.3,2163,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2163,1,2,0)
+ ;;=2^93312
+ ;;^UTILITY(U,$J,358.3,2163,1,3,0)
+ ;;=3^Echo Transesophageal w/wo M-mode record
+ ;;^UTILITY(U,$J,358.3,2164,0)
+ ;;=93313^^12^171^10^^^^1
+ ;;^UTILITY(U,$J,358.3,2164,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2164,1,2,0)
+ ;;=2^93313
+ ;;^UTILITY(U,$J,358.3,2164,1,3,0)
+ ;;=3^Echo Transesophageal w/ placement of probe
+ ;;^UTILITY(U,$J,358.3,2165,0)
+ ;;=93314^^12^171^9^^^^1
+ ;;^UTILITY(U,$J,358.3,2165,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2165,1,2,0)
+ ;;=2^93314
+ ;;^UTILITY(U,$J,358.3,2165,1,3,0)
+ ;;=3^Echo Transesophageal image interp and rpt
+ ;;^UTILITY(U,$J,358.3,2166,0)
+ ;;=93318^^12^171^19^^^^1
+ ;;^UTILITY(U,$J,358.3,2166,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2166,1,2,0)
+ ;;=2^93318
+ ;;^UTILITY(U,$J,358.3,2166,1,3,0)
+ ;;=3^Echo,Transesophageal Intraop
+ ;;^UTILITY(U,$J,358.3,2167,0)
+ ;;=93315^^12^171^12^^^^1
+ ;;^UTILITY(U,$J,358.3,2167,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2167,1,2,0)
+ ;;=2^93315
+ ;;^UTILITY(U,$J,358.3,2167,1,3,0)
+ ;;=3^Echo Transesophageal,Complete
+ ;;^UTILITY(U,$J,358.3,2168,0)
+ ;;=93316^^12^171^7^^^^1
+ ;;^UTILITY(U,$J,358.3,2168,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2168,1,2,0)
+ ;;=2^93316
+ ;;^UTILITY(U,$J,358.3,2168,1,3,0)
+ ;;=3^Echo Tranesophageal Placement Only
+ ;;^UTILITY(U,$J,358.3,2169,0)
+ ;;=93317^^12^171^6^^^^1
+ ;;^UTILITY(U,$J,358.3,2169,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2169,1,2,0)
+ ;;=2^93317
+ ;;^UTILITY(U,$J,358.3,2169,1,3,0)
+ ;;=3^Echo Image,Inerpretation and Report Only

@@ -1,124 +1,136 @@
-IBDEI1YN ; ; 06-AUG-2015
+IBDEI1YN ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34388,0)
- ;;=S72.145S^^183^2019^61
- ;;^UTILITY(U,$J,358.3,34388,1,0)
+ ;;^UTILITY(U,$J,358.3,33274,2)
+ ;;=^5009046
+ ;;^UTILITY(U,$J,358.3,33275,0)
+ ;;=L03.311^^131^1669^95
+ ;;^UTILITY(U,$J,358.3,33275,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34388,1,3,0)
- ;;=3^Nondisp intertroch fx of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34388,1,4,0)
- ;;=4^S72.145S
- ;;^UTILITY(U,$J,358.3,34388,2)
- ;;=^5037994
- ;;^UTILITY(U,$J,358.3,34389,0)
- ;;=S72.21XS^^183^2019^38
- ;;^UTILITY(U,$J,358.3,34389,1,0)
+ ;;^UTILITY(U,$J,358.3,33275,1,3,0)
+ ;;=3^Cellulitis of Abdominal Wall
+ ;;^UTILITY(U,$J,358.3,33275,1,4,0)
+ ;;=4^L03.311
+ ;;^UTILITY(U,$J,358.3,33275,2)
+ ;;=^5009047
+ ;;^UTILITY(U,$J,358.3,33276,0)
+ ;;=L03.312^^131^1669^96
+ ;;^UTILITY(U,$J,358.3,33276,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34389,1,3,0)
- ;;=3^Displaced subtrochanteric fx of right femur, sequela
- ;;^UTILITY(U,$J,358.3,34389,1,4,0)
- ;;=4^S72.21XS
- ;;^UTILITY(U,$J,358.3,34389,2)
- ;;=^5038026
- ;;^UTILITY(U,$J,358.3,34390,0)
- ;;=S72.22XS^^183^2019^37
- ;;^UTILITY(U,$J,358.3,34390,1,0)
+ ;;^UTILITY(U,$J,358.3,33276,1,3,0)
+ ;;=3^Cellulitis of Back
+ ;;^UTILITY(U,$J,358.3,33276,1,4,0)
+ ;;=4^L03.312
+ ;;^UTILITY(U,$J,358.3,33276,2)
+ ;;=^5009048
+ ;;^UTILITY(U,$J,358.3,33277,0)
+ ;;=L03.313^^131^1669^98
+ ;;^UTILITY(U,$J,358.3,33277,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34390,1,3,0)
- ;;=3^Displaced subtrochanteric fx of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34390,1,4,0)
- ;;=4^S72.22XS
- ;;^UTILITY(U,$J,358.3,34390,2)
- ;;=^5038042
- ;;^UTILITY(U,$J,358.3,34391,0)
- ;;=S72.24XS^^183^2019^85
- ;;^UTILITY(U,$J,358.3,34391,1,0)
+ ;;^UTILITY(U,$J,358.3,33277,1,3,0)
+ ;;=3^Cellulitis of Chest Wall
+ ;;^UTILITY(U,$J,358.3,33277,1,4,0)
+ ;;=4^L03.313
+ ;;^UTILITY(U,$J,358.3,33277,2)
+ ;;=^5009049
+ ;;^UTILITY(U,$J,358.3,33278,0)
+ ;;=L03.314^^131^1669^100
+ ;;^UTILITY(U,$J,358.3,33278,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34391,1,3,0)
- ;;=3^Nondisp subtrochanteric fx of right femur, sequela
- ;;^UTILITY(U,$J,358.3,34391,1,4,0)
- ;;=4^S72.24XS
- ;;^UTILITY(U,$J,358.3,34391,2)
- ;;=^5038074
- ;;^UTILITY(U,$J,358.3,34392,0)
- ;;=S72.25XS^^183^2019^84
- ;;^UTILITY(U,$J,358.3,34392,1,0)
+ ;;^UTILITY(U,$J,358.3,33278,1,3,0)
+ ;;=3^Cellulitis of Groin
+ ;;^UTILITY(U,$J,358.3,33278,1,4,0)
+ ;;=4^L03.314
+ ;;^UTILITY(U,$J,358.3,33278,2)
+ ;;=^5009050
+ ;;^UTILITY(U,$J,358.3,33279,0)
+ ;;=L03.315^^131^1669^107
+ ;;^UTILITY(U,$J,358.3,33279,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34392,1,3,0)
- ;;=3^Nondisp subtrochanteric fx of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34392,1,4,0)
- ;;=4^S72.25XS
- ;;^UTILITY(U,$J,358.3,34392,2)
- ;;=^5038090
- ;;^UTILITY(U,$J,358.3,34393,0)
- ;;=S72.321S^^183^2019^46
- ;;^UTILITY(U,$J,358.3,34393,1,0)
+ ;;^UTILITY(U,$J,358.3,33279,1,3,0)
+ ;;=3^Cellulitis of Perineum
+ ;;^UTILITY(U,$J,358.3,33279,1,4,0)
+ ;;=4^L03.315
+ ;;^UTILITY(U,$J,358.3,33279,2)
+ ;;=^5009051
+ ;;^UTILITY(U,$J,358.3,33280,0)
+ ;;=L03.316^^131^1669^114
+ ;;^UTILITY(U,$J,358.3,33280,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34393,1,3,0)
- ;;=3^Displaced transverse fx shaft of right femur, sequela
- ;;^UTILITY(U,$J,358.3,34393,1,4,0)
- ;;=4^S72.321S
- ;;^UTILITY(U,$J,358.3,34393,2)
- ;;=^5038159
- ;;^UTILITY(U,$J,358.3,34394,0)
- ;;=S72.322S^^183^2019^45
- ;;^UTILITY(U,$J,358.3,34394,1,0)
+ ;;^UTILITY(U,$J,358.3,33280,1,3,0)
+ ;;=3^Cellulitis of Umbilicus
+ ;;^UTILITY(U,$J,358.3,33280,1,4,0)
+ ;;=4^L03.316
+ ;;^UTILITY(U,$J,358.3,33280,2)
+ ;;=^5009052
+ ;;^UTILITY(U,$J,358.3,33281,0)
+ ;;=L03.319^^131^1669^113
+ ;;^UTILITY(U,$J,358.3,33281,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34394,1,3,0)
- ;;=3^Displaced transverse fx shaft of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34394,1,4,0)
- ;;=4^S72.322S
- ;;^UTILITY(U,$J,358.3,34394,2)
- ;;=^5038175
- ;;^UTILITY(U,$J,358.3,34395,0)
- ;;=S72.324S^^183^2019^93
- ;;^UTILITY(U,$J,358.3,34395,1,0)
+ ;;^UTILITY(U,$J,358.3,33281,1,3,0)
+ ;;=3^Cellulitis of Trunk,Unspec
+ ;;^UTILITY(U,$J,358.3,33281,1,4,0)
+ ;;=4^L03.319
+ ;;^UTILITY(U,$J,358.3,33281,2)
+ ;;=^5009054
+ ;;^UTILITY(U,$J,358.3,33282,0)
+ ;;=L03.321^^131^1669^13
+ ;;^UTILITY(U,$J,358.3,33282,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34395,1,3,0)
- ;;=3^Nondisp transverse fx shaft of right femur, sequela
- ;;^UTILITY(U,$J,358.3,34395,1,4,0)
- ;;=4^S72.324S
- ;;^UTILITY(U,$J,358.3,34395,2)
- ;;=^5038207
- ;;^UTILITY(U,$J,358.3,34396,0)
- ;;=S72.325S^^183^2019^92
- ;;^UTILITY(U,$J,358.3,34396,1,0)
+ ;;^UTILITY(U,$J,358.3,33282,1,3,0)
+ ;;=3^Acute Lymphangitis of Abdominal Wall
+ ;;^UTILITY(U,$J,358.3,33282,1,4,0)
+ ;;=4^L03.321
+ ;;^UTILITY(U,$J,358.3,33282,2)
+ ;;=^5009055
+ ;;^UTILITY(U,$J,358.3,33283,0)
+ ;;=L03.322^^131^1669^14
+ ;;^UTILITY(U,$J,358.3,33283,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34396,1,3,0)
- ;;=3^Nondisp transverse fx shaft of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34396,1,4,0)
- ;;=4^S72.325S
- ;;^UTILITY(U,$J,358.3,34396,2)
- ;;=^5038223
- ;;^UTILITY(U,$J,358.3,34397,0)
- ;;=S72.331S^^183^2019^30
- ;;^UTILITY(U,$J,358.3,34397,1,0)
+ ;;^UTILITY(U,$J,358.3,33283,1,3,0)
+ ;;=3^Acute Lymphangitis of Back
+ ;;^UTILITY(U,$J,358.3,33283,1,4,0)
+ ;;=4^L03.322
+ ;;^UTILITY(U,$J,358.3,33283,2)
+ ;;=^5009056
+ ;;^UTILITY(U,$J,358.3,33284,0)
+ ;;=L03.323^^131^1669^15
+ ;;^UTILITY(U,$J,358.3,33284,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34397,1,3,0)
- ;;=3^Displaced oblique fx of shaft of right femur, sequela
- ;;^UTILITY(U,$J,358.3,34397,1,4,0)
- ;;=4^S72.331S
- ;;^UTILITY(U,$J,358.3,34397,2)
- ;;=^5038255
- ;;^UTILITY(U,$J,358.3,34398,0)
- ;;=S72.332S^^183^2019^29
- ;;^UTILITY(U,$J,358.3,34398,1,0)
+ ;;^UTILITY(U,$J,358.3,33284,1,3,0)
+ ;;=3^Acute Lymphangitis of Chest Wall
+ ;;^UTILITY(U,$J,358.3,33284,1,4,0)
+ ;;=4^L03.323
+ ;;^UTILITY(U,$J,358.3,33284,2)
+ ;;=^5009057
+ ;;^UTILITY(U,$J,358.3,33285,0)
+ ;;=L03.324^^131^1669^17
+ ;;^UTILITY(U,$J,358.3,33285,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34398,1,3,0)
- ;;=3^Displaced oblique fx of shaft of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34398,1,4,0)
- ;;=4^S72.332S
- ;;^UTILITY(U,$J,358.3,34398,2)
- ;;=^5038271
- ;;^UTILITY(U,$J,358.3,34399,0)
- ;;=S72.334S^^183^2019^76
- ;;^UTILITY(U,$J,358.3,34399,1,0)
+ ;;^UTILITY(U,$J,358.3,33285,1,3,0)
+ ;;=3^Acute Lymphangitis of Groin
+ ;;^UTILITY(U,$J,358.3,33285,1,4,0)
+ ;;=4^L03.324
+ ;;^UTILITY(U,$J,358.3,33285,2)
+ ;;=^5009058
+ ;;^UTILITY(U,$J,358.3,33286,0)
+ ;;=L03.325^^131^1669^23
+ ;;^UTILITY(U,$J,358.3,33286,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34399,1,3,0)
- ;;=3^Nondisp oblique fx shaft of right femur, sequela
- ;;^UTILITY(U,$J,358.3,34399,1,4,0)
- ;;=4^S72.334S
- ;;^UTILITY(U,$J,358.3,34399,2)
- ;;=^5038303
+ ;;^UTILITY(U,$J,358.3,33286,1,3,0)
+ ;;=3^Acute Lymphangitis of Perineum
+ ;;^UTILITY(U,$J,358.3,33286,1,4,0)
+ ;;=4^L03.325
+ ;;^UTILITY(U,$J,358.3,33286,2)
+ ;;=^5009059
+ ;;^UTILITY(U,$J,358.3,33287,0)
+ ;;=L03.326^^131^1669^29
+ ;;^UTILITY(U,$J,358.3,33287,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33287,1,3,0)
+ ;;=3^Acute Lymphangitis of Umbilicus
+ ;;^UTILITY(U,$J,358.3,33287,1,4,0)
+ ;;=4^L03.326
+ ;;^UTILITY(U,$J,358.3,33287,2)
+ ;;=^5009060

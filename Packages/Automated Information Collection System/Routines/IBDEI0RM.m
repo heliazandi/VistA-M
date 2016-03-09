@@ -1,130 +1,122 @@
-IBDEI0RM ; ; 06-AUG-2015
+IBDEI0RM ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,13322,1,2,0)
- ;;=2^99245
- ;;^UTILITY(U,$J,358.3,13323,0)
- ;;=99201^^67^791^1
- ;;^UTILITY(U,$J,358.3,13323,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,13323,1,1,0)
- ;;=1^Problem Focused
- ;;^UTILITY(U,$J,358.3,13323,1,2,0)
- ;;=2^99201
- ;;^UTILITY(U,$J,358.3,13324,0)
- ;;=99202^^67^791^2
- ;;^UTILITY(U,$J,358.3,13324,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,13324,1,1,0)
- ;;=1^Exp Problem Focused
- ;;^UTILITY(U,$J,358.3,13324,1,2,0)
- ;;=2^99202
- ;;^UTILITY(U,$J,358.3,13325,0)
- ;;=99203^^67^791^3
- ;;^UTILITY(U,$J,358.3,13325,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,13325,1,1,0)
- ;;=1^Detailed
- ;;^UTILITY(U,$J,358.3,13325,1,2,0)
- ;;=2^99203
- ;;^UTILITY(U,$J,358.3,13326,0)
- ;;=99204^^67^791^4
- ;;^UTILITY(U,$J,358.3,13326,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,13326,1,1,0)
- ;;=1^Comprehensive,Moderate
- ;;^UTILITY(U,$J,358.3,13326,1,2,0)
- ;;=2^99204
- ;;^UTILITY(U,$J,358.3,13327,0)
- ;;=99205^^67^791^5
- ;;^UTILITY(U,$J,358.3,13327,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,13327,1,1,0)
- ;;=1^Comprehensive,High Complx
- ;;^UTILITY(U,$J,358.3,13327,1,2,0)
- ;;=2^99205
- ;;^UTILITY(U,$J,358.3,13328,0)
- ;;=64600^^68^792^21^^^^1
- ;;^UTILITY(U,$J,358.3,13328,1,0)
+ ;;^UTILITY(U,$J,358.3,12954,1,4,0)
+ ;;=4^L97.413
+ ;;^UTILITY(U,$J,358.3,12954,2)
+ ;;=^5009532
+ ;;^UTILITY(U,$J,358.3,12955,0)
+ ;;=L97.414^^53^582^219
+ ;;^UTILITY(U,$J,358.3,12955,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13328,1,2,0)
- ;;=2^Destruct Trigeminal Nerve
- ;;^UTILITY(U,$J,358.3,13328,1,4,0)
- ;;=4^64600
- ;;^UTILITY(U,$J,358.3,13329,0)
- ;;=64605^^68^792^17^^^^1
- ;;^UTILITY(U,$J,358.3,13329,1,0)
+ ;;^UTILITY(U,$J,358.3,12955,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Heel/Midfoot w/ Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,12955,1,4,0)
+ ;;=4^L97.414
+ ;;^UTILITY(U,$J,358.3,12955,2)
+ ;;=^5009533
+ ;;^UTILITY(U,$J,358.3,12956,0)
+ ;;=L97.419^^53^582^220
+ ;;^UTILITY(U,$J,358.3,12956,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13329,1,2,0)
- ;;=2^Destr Trigeminal Nerve;2nd/3rd Div-Foramen Ovale
- ;;^UTILITY(U,$J,358.3,13329,1,4,0)
- ;;=4^64605
- ;;^UTILITY(U,$J,358.3,13330,0)
- ;;=64610^^68^792^16^^^^1
- ;;^UTILITY(U,$J,358.3,13330,1,0)
+ ;;^UTILITY(U,$J,358.3,12956,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Heel/Midfoot w/ Unspec Severity
+ ;;^UTILITY(U,$J,358.3,12956,1,4,0)
+ ;;=4^L97.419
+ ;;^UTILITY(U,$J,358.3,12956,2)
+ ;;=^5009534
+ ;;^UTILITY(U,$J,358.3,12957,0)
+ ;;=L97.421^^53^582^186
+ ;;^UTILITY(U,$J,358.3,12957,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13330,1,2,0)
- ;;=2^Destr Trig Nerve;2nd/3rd Div;Rad Mon;Foramen Ovale
- ;;^UTILITY(U,$J,358.3,13330,1,4,0)
- ;;=4^64610
- ;;^UTILITY(U,$J,358.3,13331,0)
- ;;=64612^^68^792^4^^^^1
- ;;^UTILITY(U,$J,358.3,13331,1,0)
+ ;;^UTILITY(U,$J,358.3,12957,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Heel/Midfoot w/ Breakdown of Skin
+ ;;^UTILITY(U,$J,358.3,12957,1,4,0)
+ ;;=4^L97.421
+ ;;^UTILITY(U,$J,358.3,12957,2)
+ ;;=^5009535
+ ;;^UTILITY(U,$J,358.3,12958,0)
+ ;;=L97.422^^53^582^187
+ ;;^UTILITY(U,$J,358.3,12958,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13331,1,2,0)
- ;;=2^Botox Inj,Facial Nerve
- ;;^UTILITY(U,$J,358.3,13331,1,4,0)
- ;;=4^64612
- ;;^UTILITY(U,$J,358.3,13332,0)
- ;;=64633^^68^792^18^^^^1
- ;;^UTILITY(U,$J,358.3,13332,1,0)
+ ;;^UTILITY(U,$J,358.3,12958,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Heel/Midfoot w/ Fat Layer Exposed
+ ;;^UTILITY(U,$J,358.3,12958,1,4,0)
+ ;;=4^L97.422
+ ;;^UTILITY(U,$J,358.3,12958,2)
+ ;;=^5009536
+ ;;^UTILITY(U,$J,358.3,12959,0)
+ ;;=L97.423^^53^582^188
+ ;;^UTILITY(U,$J,358.3,12959,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13332,1,2,0)
- ;;=2^Destroy Cerv/Thor Facet Jnt w/Imaging
- ;;^UTILITY(U,$J,358.3,13332,1,4,0)
- ;;=4^64633
- ;;^UTILITY(U,$J,358.3,13333,0)
- ;;=64634^^68^792^13^^^^1
- ;;^UTILITY(U,$J,358.3,13333,1,0)
+ ;;^UTILITY(U,$J,358.3,12959,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Heel/Midfoot w/ Necrosis of Muscle
+ ;;^UTILITY(U,$J,358.3,12959,1,4,0)
+ ;;=4^L97.423
+ ;;^UTILITY(U,$J,358.3,12959,2)
+ ;;=^5009537
+ ;;^UTILITY(U,$J,358.3,12960,0)
+ ;;=L97.424^^53^582^189
+ ;;^UTILITY(U,$J,358.3,12960,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13333,1,2,0)
- ;;=2^Destr Cerv/Thor Facet Jnt w/Imag;ea addl
- ;;^UTILITY(U,$J,358.3,13333,1,4,0)
- ;;=4^64634
- ;;^UTILITY(U,$J,358.3,13334,0)
- ;;=64635^^68^792^19^^^^1
- ;;^UTILITY(U,$J,358.3,13334,1,0)
+ ;;^UTILITY(U,$J,358.3,12960,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Heel/Midfoot w/ Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,12960,1,4,0)
+ ;;=4^L97.424
+ ;;^UTILITY(U,$J,358.3,12960,2)
+ ;;=^5009538
+ ;;^UTILITY(U,$J,358.3,12961,0)
+ ;;=L97.429^^53^582^190
+ ;;^UTILITY(U,$J,358.3,12961,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13334,1,2,0)
- ;;=2^Destroy Lumb/Sac Facet Jnt w/Image
- ;;^UTILITY(U,$J,358.3,13334,1,4,0)
- ;;=4^64635
- ;;^UTILITY(U,$J,358.3,13335,0)
- ;;=64636^^68^792^20^^^^1
- ;;^UTILITY(U,$J,358.3,13335,1,0)
+ ;;^UTILITY(U,$J,358.3,12961,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Heel/Midfoot w/ Unspec Severity
+ ;;^UTILITY(U,$J,358.3,12961,1,4,0)
+ ;;=4^L97.429
+ ;;^UTILITY(U,$J,358.3,12961,2)
+ ;;=^5009539
+ ;;^UTILITY(U,$J,358.3,12962,0)
+ ;;=L97.511^^53^582^211
+ ;;^UTILITY(U,$J,358.3,12962,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13335,1,2,0)
- ;;=2^Destr Lumb/Sac Facet Jnt w/Imag;ea addl
- ;;^UTILITY(U,$J,358.3,13335,1,4,0)
- ;;=4^64636
- ;;^UTILITY(U,$J,358.3,13336,0)
- ;;=64640^^68^792^22^^^^1
- ;;^UTILITY(U,$J,358.3,13336,1,0)
+ ;;^UTILITY(U,$J,358.3,12962,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Foot w/ Breakdown of Skin
+ ;;^UTILITY(U,$J,358.3,12962,1,4,0)
+ ;;=4^L97.511
+ ;;^UTILITY(U,$J,358.3,12962,2)
+ ;;=^5009545
+ ;;^UTILITY(U,$J,358.3,12963,0)
+ ;;=L97.512^^53^582^212
+ ;;^UTILITY(U,$J,358.3,12963,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13336,1,2,0)
- ;;=2^Destruct of Oth Periph Nerve
- ;;^UTILITY(U,$J,358.3,13336,1,4,0)
- ;;=4^64640
- ;;^UTILITY(U,$J,358.3,13337,0)
- ;;=64615^^68^792^1^^^^1
- ;;^UTILITY(U,$J,358.3,13337,1,0)
+ ;;^UTILITY(U,$J,358.3,12963,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Foot w/ Fat Layer Exposed
+ ;;^UTILITY(U,$J,358.3,12963,1,4,0)
+ ;;=4^L97.512
+ ;;^UTILITY(U,$J,358.3,12963,2)
+ ;;=^5009546
+ ;;^UTILITY(U,$J,358.3,12964,0)
+ ;;=L97.513^^53^582^213
+ ;;^UTILITY(U,$J,358.3,12964,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13337,1,2,0)
- ;;=2^Botox Inj for Migraines,Facial
- ;;^UTILITY(U,$J,358.3,13337,1,4,0)
- ;;=4^64615
- ;;^UTILITY(U,$J,358.3,13338,0)
- ;;=64616^^68^792^10^^^^1
- ;;^UTILITY(U,$J,358.3,13338,1,0)
+ ;;^UTILITY(U,$J,358.3,12964,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Foot w/ Necrosis of Muscle
+ ;;^UTILITY(U,$J,358.3,12964,1,4,0)
+ ;;=4^L97.513
+ ;;^UTILITY(U,$J,358.3,12964,2)
+ ;;=^5009547
+ ;;^UTILITY(U,$J,358.3,12965,0)
+ ;;=L97.514^^53^582^214
+ ;;^UTILITY(U,$J,358.3,12965,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12965,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Foot w/ Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,12965,1,4,0)
+ ;;=4^L97.514
+ ;;^UTILITY(U,$J,358.3,12965,2)
+ ;;=^5009548
+ ;;^UTILITY(U,$J,358.3,12966,0)
+ ;;=L97.519^^53^582^215
+ ;;^UTILITY(U,$J,358.3,12966,1,0)
  ;;=^358.31IA^4^2

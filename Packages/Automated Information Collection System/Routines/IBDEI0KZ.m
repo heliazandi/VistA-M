@@ -1,134 +1,138 @@
-IBDEI0KZ ; ; 06-AUG-2015
+IBDEI0KZ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,9942,0)
- ;;=366.20^^44^559^19
- ;;^UTILITY(U,$J,358.3,9942,1,0)
+ ;;^UTILITY(U,$J,358.3,9790,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9942,1,3,0)
- ;;=3^Cataract, Traumatic
- ;;^UTILITY(U,$J,358.3,9942,1,4,0)
- ;;=4^366.20
- ;;^UTILITY(U,$J,358.3,9942,2)
- ;;=Traumatic Cataract, NOS^268802
- ;;^UTILITY(U,$J,358.3,9943,0)
- ;;=366.52^^44^559^13
- ;;^UTILITY(U,$J,358.3,9943,1,0)
+ ;;^UTILITY(U,$J,358.3,9790,1,3,0)
+ ;;=3^Conjunctival Cysts,Right Eye
+ ;;^UTILITY(U,$J,358.3,9790,1,4,0)
+ ;;=4^H11.441
+ ;;^UTILITY(U,$J,358.3,9790,2)
+ ;;=^5004797
+ ;;^UTILITY(U,$J,358.3,9791,0)
+ ;;=H11.442^^44^495^36
+ ;;^UTILITY(U,$J,358.3,9791,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9943,1,3,0)
- ;;=3^Cataract, Post Capsular-not obscuring vision
- ;;^UTILITY(U,$J,358.3,9943,1,4,0)
- ;;=4^366.52
- ;;^UTILITY(U,$J,358.3,9943,2)
- ;;=Posterior Capsular Fibrosis Not Obscuring Vision^268822
- ;;^UTILITY(U,$J,358.3,9944,0)
- ;;=366.53^^44^559^14
- ;;^UTILITY(U,$J,358.3,9944,1,0)
+ ;;^UTILITY(U,$J,358.3,9791,1,3,0)
+ ;;=3^Conjunctival Cysts,Left Eye
+ ;;^UTILITY(U,$J,358.3,9791,1,4,0)
+ ;;=4^H11.442
+ ;;^UTILITY(U,$J,358.3,9791,2)
+ ;;=^5004798
+ ;;^UTILITY(U,$J,358.3,9792,0)
+ ;;=H02.201^^44^495^110
+ ;;^UTILITY(U,$J,358.3,9792,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9944,1,3,0)
- ;;=3^Cataract, Post Capsular-obscuring vision
- ;;^UTILITY(U,$J,358.3,9944,1,4,0)
- ;;=4^366.53
- ;;^UTILITY(U,$J,358.3,9944,2)
- ;;=Post Capsular Fibrosis, Obscuring Vision^268823
- ;;^UTILITY(U,$J,358.3,9945,0)
- ;;=366.11^^44^559^15
- ;;^UTILITY(U,$J,358.3,9945,1,0)
+ ;;^UTILITY(U,$J,358.3,9792,1,3,0)
+ ;;=3^Lagophthalmos,Right Upper Eyelid,Unspec
+ ;;^UTILITY(U,$J,358.3,9792,1,4,0)
+ ;;=4^H02.201
+ ;;^UTILITY(U,$J,358.3,9792,2)
+ ;;=^5004327
+ ;;^UTILITY(U,$J,358.3,9793,0)
+ ;;=H02.202^^44^495^109
+ ;;^UTILITY(U,$J,358.3,9793,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9945,1,3,0)
- ;;=3^Cataract, Pseudoexfoliation
- ;;^UTILITY(U,$J,358.3,9945,1,4,0)
- ;;=4^366.11
- ;;^UTILITY(U,$J,358.3,9945,2)
- ;;=Pseudoexfoliation^265538
- ;;^UTILITY(U,$J,358.3,9946,0)
- ;;=366.17^^44^559^8
- ;;^UTILITY(U,$J,358.3,9946,1,0)
+ ;;^UTILITY(U,$J,358.3,9793,1,3,0)
+ ;;=3^Lagophthalmos,Right Lower Eyelid,Unspec
+ ;;^UTILITY(U,$J,358.3,9793,1,4,0)
+ ;;=4^H02.202
+ ;;^UTILITY(U,$J,358.3,9793,2)
+ ;;=^5004328
+ ;;^UTILITY(U,$J,358.3,9794,0)
+ ;;=H02.204^^44^495^108
+ ;;^UTILITY(U,$J,358.3,9794,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9946,1,3,0)
- ;;=3^Cataract, Mature
- ;;^UTILITY(U,$J,358.3,9946,1,4,0)
- ;;=4^366.17
- ;;^UTILITY(U,$J,358.3,9946,2)
- ;;=Mature Cataract^265530
- ;;^UTILITY(U,$J,358.3,9947,0)
- ;;=362.53^^44^559^21
- ;;^UTILITY(U,$J,358.3,9947,1,0)
+ ;;^UTILITY(U,$J,358.3,9794,1,3,0)
+ ;;=3^Lagophthalmos,Left Upper Eyelid,Unspec
+ ;;^UTILITY(U,$J,358.3,9794,1,4,0)
+ ;;=4^H02.204
+ ;;^UTILITY(U,$J,358.3,9794,2)
+ ;;=^5004330
+ ;;^UTILITY(U,$J,358.3,9795,0)
+ ;;=H02.205^^44^495^107
+ ;;^UTILITY(U,$J,358.3,9795,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9947,1,3,0)
- ;;=3^Cystoid Macular Edema (CME)
- ;;^UTILITY(U,$J,358.3,9947,1,4,0)
- ;;=4^362.53
- ;;^UTILITY(U,$J,358.3,9947,2)
- ;;=^268638^996.79
- ;;^UTILITY(U,$J,358.3,9948,0)
- ;;=743.30^^44^559^3
- ;;^UTILITY(U,$J,358.3,9948,1,0)
+ ;;^UTILITY(U,$J,358.3,9795,1,3,0)
+ ;;=3^Lagophthalmos,Left Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,9795,1,4,0)
+ ;;=4^H02.205
+ ;;^UTILITY(U,$J,358.3,9795,2)
+ ;;=^5133418
+ ;;^UTILITY(U,$J,358.3,9796,0)
+ ;;=H15.101^^44^495^64
+ ;;^UTILITY(U,$J,358.3,9796,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9948,1,3,0)
- ;;=3^Cataract, Congenital
- ;;^UTILITY(U,$J,358.3,9948,1,4,0)
- ;;=4^743.30
- ;;^UTILITY(U,$J,358.3,9948,2)
- ;;=Congenital Cataract^27422
- ;;^UTILITY(U,$J,358.3,9949,0)
- ;;=366.9^^44^559^20
- ;;^UTILITY(U,$J,358.3,9949,1,0)
+ ;;^UTILITY(U,$J,358.3,9796,1,3,0)
+ ;;=3^Episcleritis,Right Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,9796,1,4,0)
+ ;;=4^H15.101
+ ;;^UTILITY(U,$J,358.3,9796,2)
+ ;;=^5004835
+ ;;^UTILITY(U,$J,358.3,9797,0)
+ ;;=H15.102^^44^495^63
+ ;;^UTILITY(U,$J,358.3,9797,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9949,1,3,0)
- ;;=3^Cataract, Unspecified
- ;;^UTILITY(U,$J,358.3,9949,1,4,0)
- ;;=4^366.9
- ;;^UTILITY(U,$J,358.3,9949,2)
- ;;=^20266
- ;;^UTILITY(U,$J,358.3,9950,0)
- ;;=996.69^^44^559^24
- ;;^UTILITY(U,$J,358.3,9950,1,0)
+ ;;^UTILITY(U,$J,358.3,9797,1,3,0)
+ ;;=3^Episcleritis,Left Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,9797,1,4,0)
+ ;;=4^H15.102
+ ;;^UTILITY(U,$J,358.3,9797,2)
+ ;;=^5004836
+ ;;^UTILITY(U,$J,358.3,9798,0)
+ ;;=H15.001^^44^495^152
+ ;;^UTILITY(U,$J,358.3,9798,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9950,1,3,0)
- ;;=3^Post Op Endophthalmitis
- ;;^UTILITY(U,$J,358.3,9950,1,4,0)
- ;;=4^996.69
- ;;^UTILITY(U,$J,358.3,9950,2)
- ;;=Post Op Endophthalmitis^276291
- ;;^UTILITY(U,$J,358.3,9951,0)
- ;;=998.82^^44^559^6
- ;;^UTILITY(U,$J,358.3,9951,1,0)
+ ;;^UTILITY(U,$J,358.3,9798,1,3,0)
+ ;;=3^Scleritis,Right Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,9798,1,4,0)
+ ;;=4^H15.001
+ ;;^UTILITY(U,$J,358.3,9798,2)
+ ;;=^5004810
+ ;;^UTILITY(U,$J,358.3,9799,0)
+ ;;=H15.002^^44^495^151
+ ;;^UTILITY(U,$J,358.3,9799,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9951,1,3,0)
- ;;=3^Cataract, Fragment Following Cat Surg
- ;;^UTILITY(U,$J,358.3,9951,1,4,0)
- ;;=4^998.82
- ;;^UTILITY(U,$J,358.3,9951,2)
- ;;=^303364
- ;;^UTILITY(U,$J,358.3,9952,0)
- ;;=366.8^^44^559^11
- ;;^UTILITY(U,$J,358.3,9952,1,0)
+ ;;^UTILITY(U,$J,358.3,9799,1,3,0)
+ ;;=3^Scleritis,Left Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,9799,1,4,0)
+ ;;=4^H15.002
+ ;;^UTILITY(U,$J,358.3,9799,2)
+ ;;=^5004811
+ ;;^UTILITY(U,$J,358.3,9800,0)
+ ;;=H57.00^^44^495^5
+ ;;^UTILITY(U,$J,358.3,9800,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9952,1,3,0)
- ;;=3^Cataract, Other
- ;;^UTILITY(U,$J,358.3,9952,1,4,0)
- ;;=4^366.8
- ;;^UTILITY(U,$J,358.3,9952,2)
- ;;=^87370
- ;;^UTILITY(U,$J,358.3,9953,0)
- ;;=366.41^^44^559^5
- ;;^UTILITY(U,$J,358.3,9953,1,0)
+ ;;^UTILITY(U,$J,358.3,9800,1,3,0)
+ ;;=3^Anomaly of Pupillary Function,Unspec
+ ;;^UTILITY(U,$J,358.3,9800,1,4,0)
+ ;;=4^H57.00
+ ;;^UTILITY(U,$J,358.3,9800,2)
+ ;;=^5006375
+ ;;^UTILITY(U,$J,358.3,9801,0)
+ ;;=H57.9^^44^495^68
+ ;;^UTILITY(U,$J,358.3,9801,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9953,1,3,0)
- ;;=3^Cataract, Diabetic
- ;;^UTILITY(U,$J,358.3,9953,1,4,0)
- ;;=4^366.41
- ;;^UTILITY(U,$J,358.3,9953,2)
- ;;=^33638^250.00
- ;;^UTILITY(U,$J,358.3,9954,0)
- ;;=366.00^^44^559^9
- ;;^UTILITY(U,$J,358.3,9954,1,0)
+ ;;^UTILITY(U,$J,358.3,9801,1,3,0)
+ ;;=3^Eye and Adnexa Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,9801,1,4,0)
+ ;;=4^H57.9
+ ;;^UTILITY(U,$J,358.3,9801,2)
+ ;;=^269333
+ ;;^UTILITY(U,$J,358.3,9802,0)
+ ;;=L10.9^^44^495^126
+ ;;^UTILITY(U,$J,358.3,9802,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9954,1,3,0)
- ;;=3^Cataract, Nonsenile NOS
- ;;^UTILITY(U,$J,358.3,9954,1,4,0)
- ;;=4^366.00
- ;;^UTILITY(U,$J,358.3,9954,2)
- ;;=^268786
+ ;;^UTILITY(U,$J,358.3,9802,1,3,0)
+ ;;=3^Pemphigus,Unspec
+ ;;^UTILITY(U,$J,358.3,9802,1,4,0)
+ ;;=4^L10.9
+ ;;^UTILITY(U,$J,358.3,9802,2)
+ ;;=^5009090
+ ;;^UTILITY(U,$J,358.3,9803,0)
+ ;;=L10.81^^44^495^124
+ ;;^UTILITY(U,$J,358.3,9803,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9803,1,3,0)
+ ;;=3^Paraneoplastic Pemphigus

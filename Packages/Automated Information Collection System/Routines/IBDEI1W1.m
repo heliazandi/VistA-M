@@ -1,132 +1,126 @@
-IBDEI1W1 ; ; 06-AUG-2015
+IBDEI1W1 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33206,1,4,0)
- ;;=4^M87.111
- ;;^UTILITY(U,$J,358.3,33206,2)
- ;;=^5014701
- ;;^UTILITY(U,$J,358.3,33207,0)
- ;;=M87.112^^182^1998^62
- ;;^UTILITY(U,$J,358.3,33207,1,0)
+ ;;^UTILITY(U,$J,358.3,32062,1,3,0)
+ ;;=3^Nondisp fx of intermed cuneiform of lft ft, init
+ ;;^UTILITY(U,$J,358.3,32062,1,4,0)
+ ;;=4^S92.235A
+ ;;^UTILITY(U,$J,358.3,32062,2)
+ ;;=^5044948
+ ;;^UTILITY(U,$J,358.3,32063,0)
+ ;;=S92.241A^^126^1609^111
+ ;;^UTILITY(U,$J,358.3,32063,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33207,1,3,0)
- ;;=3^Osteonecrosis d/t Drugs,Left Shoulder
- ;;^UTILITY(U,$J,358.3,33207,1,4,0)
- ;;=4^M87.112
- ;;^UTILITY(U,$J,358.3,33207,2)
- ;;=^5014702
- ;;^UTILITY(U,$J,358.3,33208,0)
- ;;=M87.150^^182^1998^63
- ;;^UTILITY(U,$J,358.3,33208,1,0)
+ ;;^UTILITY(U,$J,358.3,32063,1,3,0)
+ ;;=3^Disp fx of medial cuneiform of rt ft, init
+ ;;^UTILITY(U,$J,358.3,32063,1,4,0)
+ ;;=4^S92.241A
+ ;;^UTILITY(U,$J,358.3,32063,2)
+ ;;=^5044962
+ ;;^UTILITY(U,$J,358.3,32064,0)
+ ;;=S92.242A^^126^1609^110
+ ;;^UTILITY(U,$J,358.3,32064,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33208,1,3,0)
- ;;=3^Osteonecrosis d/t Drugs,Pelvis
- ;;^UTILITY(U,$J,358.3,33208,1,4,0)
- ;;=4^M87.150
- ;;^UTILITY(U,$J,358.3,33208,2)
- ;;=^5014722
- ;;^UTILITY(U,$J,358.3,33209,0)
- ;;=M87.151^^182^1998^64
- ;;^UTILITY(U,$J,358.3,33209,1,0)
+ ;;^UTILITY(U,$J,358.3,32064,1,3,0)
+ ;;=3^Disp fx of medial cuneiform of lft ft, init
+ ;;^UTILITY(U,$J,358.3,32064,1,4,0)
+ ;;=4^S92.242A
+ ;;^UTILITY(U,$J,358.3,32064,2)
+ ;;=^5044969
+ ;;^UTILITY(U,$J,358.3,32065,0)
+ ;;=S92.354A^^126^1609^301
+ ;;^UTILITY(U,$J,358.3,32065,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33209,1,3,0)
- ;;=3^Osteonecrosis d/t Drugs,Right Femur
- ;;^UTILITY(U,$J,358.3,33209,1,4,0)
- ;;=4^M87.151
- ;;^UTILITY(U,$J,358.3,33209,2)
- ;;=^5014723
- ;;^UTILITY(U,$J,358.3,33210,0)
- ;;=M87.152^^182^1998^61
- ;;^UTILITY(U,$J,358.3,33210,1,0)
+ ;;^UTILITY(U,$J,358.3,32065,1,3,0)
+ ;;=3^Nondisp fx of 5th metatarsal bone, rt ft, init
+ ;;^UTILITY(U,$J,358.3,32065,1,4,0)
+ ;;=4^S92.354A
+ ;;^UTILITY(U,$J,358.3,32065,2)
+ ;;=^5045249
+ ;;^UTILITY(U,$J,358.3,32066,0)
+ ;;=S92.352A^^126^1609^75
+ ;;^UTILITY(U,$J,358.3,32066,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33210,1,3,0)
- ;;=3^Osteonecrosis d/t Drugs,Left Femur
- ;;^UTILITY(U,$J,358.3,33210,1,4,0)
- ;;=4^M87.152
- ;;^UTILITY(U,$J,358.3,33210,2)
- ;;=^5014724
- ;;^UTILITY(U,$J,358.3,33211,0)
- ;;=M87.180^^182^1998^60
- ;;^UTILITY(U,$J,358.3,33211,1,0)
+ ;;^UTILITY(U,$J,358.3,32066,1,3,0)
+ ;;=3^Disp fx of 5th metatarsal bone, lft ft
+ ;;^UTILITY(U,$J,358.3,32066,1,4,0)
+ ;;=4^S92.352A
+ ;;^UTILITY(U,$J,358.3,32066,2)
+ ;;=^5045235
+ ;;^UTILITY(U,$J,358.3,32067,0)
+ ;;=S92.351A^^126^1609^76
+ ;;^UTILITY(U,$J,358.3,32067,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33211,1,3,0)
- ;;=3^Osteonecrosis d/t Drugs,Jaw
- ;;^UTILITY(U,$J,358.3,33211,1,4,0)
- ;;=4^M87.180
- ;;^UTILITY(U,$J,358.3,33211,2)
- ;;=^5014741
- ;;^UTILITY(U,$J,358.3,33212,0)
- ;;=M87.311^^182^1998^141
- ;;^UTILITY(U,$J,358.3,33212,1,0)
+ ;;^UTILITY(U,$J,358.3,32067,1,3,0)
+ ;;=3^Disp fx of 5th metatarsal bone, rt ft
+ ;;^UTILITY(U,$J,358.3,32067,1,4,0)
+ ;;=4^S92.351A
+ ;;^UTILITY(U,$J,358.3,32067,2)
+ ;;=^5045228
+ ;;^UTILITY(U,$J,358.3,32068,0)
+ ;;=S92.345A^^126^1609^296
+ ;;^UTILITY(U,$J,358.3,32068,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33212,1,3,0)
- ;;=3^Secondary Osteonecrosis,Right Shoulder
- ;;^UTILITY(U,$J,358.3,33212,1,4,0)
- ;;=4^M87.311
- ;;^UTILITY(U,$J,358.3,33212,2)
- ;;=^5014788
- ;;^UTILITY(U,$J,358.3,33213,0)
- ;;=M87.312^^182^1998^138
- ;;^UTILITY(U,$J,358.3,33213,1,0)
+ ;;^UTILITY(U,$J,358.3,32068,1,3,0)
+ ;;=3^Nondisp fx of 4th metatarsal bone, lft ft
+ ;;^UTILITY(U,$J,358.3,32068,1,4,0)
+ ;;=4^S92.345A
+ ;;^UTILITY(U,$J,358.3,32068,2)
+ ;;=^5045214
+ ;;^UTILITY(U,$J,358.3,32069,0)
+ ;;=S92.325A^^126^1609^288
+ ;;^UTILITY(U,$J,358.3,32069,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33213,1,3,0)
- ;;=3^Secondary Osteonecrosis,Left Shoulder
- ;;^UTILITY(U,$J,358.3,33213,1,4,0)
- ;;=4^M87.312
- ;;^UTILITY(U,$J,358.3,33213,2)
- ;;=^5014789
- ;;^UTILITY(U,$J,358.3,33214,0)
- ;;=M87.350^^182^1998^139
- ;;^UTILITY(U,$J,358.3,33214,1,0)
+ ;;^UTILITY(U,$J,358.3,32069,1,3,0)
+ ;;=3^Nondisp fx of 2nd metatarsal bone, lft ft, init
+ ;;^UTILITY(U,$J,358.3,32069,1,4,0)
+ ;;=4^S92.325A
+ ;;^UTILITY(U,$J,358.3,32069,2)
+ ;;=^5045130
+ ;;^UTILITY(U,$J,358.3,32070,0)
+ ;;=S92.324A^^126^1609^289
+ ;;^UTILITY(U,$J,358.3,32070,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33214,1,3,0)
- ;;=3^Secondary Osteonecrosis,Pelvis
- ;;^UTILITY(U,$J,358.3,33214,1,4,0)
- ;;=4^M87.350
- ;;^UTILITY(U,$J,358.3,33214,2)
- ;;=^5014809
- ;;^UTILITY(U,$J,358.3,33215,0)
- ;;=M87.351^^182^1998^140
- ;;^UTILITY(U,$J,358.3,33215,1,0)
+ ;;^UTILITY(U,$J,358.3,32070,1,3,0)
+ ;;=3^Nondisp fx of 2nd metatarsal bone, rt ft, init
+ ;;^UTILITY(U,$J,358.3,32070,1,4,0)
+ ;;=4^S92.324A
+ ;;^UTILITY(U,$J,358.3,32070,2)
+ ;;=^5045123
+ ;;^UTILITY(U,$J,358.3,32071,0)
+ ;;=S92.322A^^126^1609^63
+ ;;^UTILITY(U,$J,358.3,32071,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33215,1,3,0)
- ;;=3^Secondary Osteonecrosis,Right Femur
- ;;^UTILITY(U,$J,358.3,33215,1,4,0)
- ;;=4^M87.351
- ;;^UTILITY(U,$J,358.3,33215,2)
- ;;=^5014810
- ;;^UTILITY(U,$J,358.3,33216,0)
- ;;=M87.352^^182^1998^137
- ;;^UTILITY(U,$J,358.3,33216,1,0)
+ ;;^UTILITY(U,$J,358.3,32071,1,3,0)
+ ;;=3^Disp fx of 2nd metatarsal bone, lft ft, init
+ ;;^UTILITY(U,$J,358.3,32071,1,4,0)
+ ;;=4^S92.322A
+ ;;^UTILITY(U,$J,358.3,32071,2)
+ ;;=^5045109
+ ;;^UTILITY(U,$J,358.3,32072,0)
+ ;;=S92.321A^^126^1609^64
+ ;;^UTILITY(U,$J,358.3,32072,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33216,1,3,0)
- ;;=3^Secondary Osteonecrosis,Left Femur
- ;;^UTILITY(U,$J,358.3,33216,1,4,0)
- ;;=4^M87.352
- ;;^UTILITY(U,$J,358.3,33216,2)
- ;;=^5014811
- ;;^UTILITY(U,$J,358.3,33217,0)
- ;;=M87.811^^182^1998^70
- ;;^UTILITY(U,$J,358.3,33217,1,0)
+ ;;^UTILITY(U,$J,358.3,32072,1,3,0)
+ ;;=3^Disp fx of 2nd metatarsal bone, rt ft
+ ;;^UTILITY(U,$J,358.3,32072,1,4,0)
+ ;;=4^S92.321A
+ ;;^UTILITY(U,$J,358.3,32072,2)
+ ;;=^5045102
+ ;;^UTILITY(U,$J,358.3,32073,0)
+ ;;=S92.315A^^126^1609^284
+ ;;^UTILITY(U,$J,358.3,32073,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33217,1,3,0)
- ;;=3^Osteonecrosis,Right Shoulder
- ;;^UTILITY(U,$J,358.3,33217,1,4,0)
- ;;=4^M87.811
- ;;^UTILITY(U,$J,358.3,33217,2)
- ;;=^5014831
- ;;^UTILITY(U,$J,358.3,33218,0)
- ;;=M87.812^^182^1998^67
- ;;^UTILITY(U,$J,358.3,33218,1,0)
+ ;;^UTILITY(U,$J,358.3,32073,1,3,0)
+ ;;=3^Nondisp fx of 1st metatarsal bone, lft ft, init
+ ;;^UTILITY(U,$J,358.3,32073,1,4,0)
+ ;;=4^S92.315A
+ ;;^UTILITY(U,$J,358.3,32073,2)
+ ;;=^5045088
+ ;;^UTILITY(U,$J,358.3,32074,0)
+ ;;=S92.312A^^126^1609^59
+ ;;^UTILITY(U,$J,358.3,32074,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33218,1,3,0)
- ;;=3^Osteonecrosis,Left Shoulder
- ;;^UTILITY(U,$J,358.3,33218,1,4,0)
- ;;=4^M87.812
- ;;^UTILITY(U,$J,358.3,33218,2)
- ;;=^5014832
- ;;^UTILITY(U,$J,358.3,33219,0)
- ;;=M87.850^^182^1998^68
- ;;^UTILITY(U,$J,358.3,33219,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32074,1,3,0)
+ ;;=3^Disp fx of 1st metatarsal bone, lft ft, init

@@ -1,136 +1,134 @@
-IBDEI1OK ; ; 06-AUG-2015
+IBDEI1OK ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,29827,1,0)
+ ;;^UTILITY(U,$J,358.3,28551,0)
+ ;;=Z43.1^^112^1429^8
+ ;;^UTILITY(U,$J,358.3,28551,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29827,1,3,0)
- ;;=3^UTI,Site Unspec
- ;;^UTILITY(U,$J,358.3,29827,1,4,0)
- ;;=4^N39.0
- ;;^UTILITY(U,$J,358.3,29827,2)
- ;;=^124436
- ;;^UTILITY(U,$J,358.3,29828,0)
- ;;=N40.0^^177^1900^12
- ;;^UTILITY(U,$J,358.3,29828,1,0)
+ ;;^UTILITY(U,$J,358.3,28551,1,3,0)
+ ;;=3^Attention to Gastrostomy
+ ;;^UTILITY(U,$J,358.3,28551,1,4,0)
+ ;;=4^Z43.1
+ ;;^UTILITY(U,$J,358.3,28551,2)
+ ;;=^5062959
+ ;;^UTILITY(U,$J,358.3,28552,0)
+ ;;=Z43.2^^112^1429^9
+ ;;^UTILITY(U,$J,358.3,28552,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29828,1,3,0)
- ;;=3^Enlarged Prostate w/o Lower Urinary Tract Symptoms
- ;;^UTILITY(U,$J,358.3,29828,1,4,0)
- ;;=4^N40.0
- ;;^UTILITY(U,$J,358.3,29828,2)
- ;;=^5015689
- ;;^UTILITY(U,$J,358.3,29829,0)
- ;;=N40.1^^177^1900^11
- ;;^UTILITY(U,$J,358.3,29829,1,0)
+ ;;^UTILITY(U,$J,358.3,28552,1,3,0)
+ ;;=3^Attention to Ileostomy
+ ;;^UTILITY(U,$J,358.3,28552,1,4,0)
+ ;;=4^Z43.2
+ ;;^UTILITY(U,$J,358.3,28552,2)
+ ;;=^5062960
+ ;;^UTILITY(U,$J,358.3,28553,0)
+ ;;=Z43.3^^112^1429^6
+ ;;^UTILITY(U,$J,358.3,28553,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29829,1,3,0)
- ;;=3^Enlarged Prostate w/ Lower Urinary Tract Symptoms
- ;;^UTILITY(U,$J,358.3,29829,1,4,0)
- ;;=4^N40.1
- ;;^UTILITY(U,$J,358.3,29829,2)
- ;;=^5015690
- ;;^UTILITY(U,$J,358.3,29830,0)
- ;;=N40.2^^177^1900^24
- ;;^UTILITY(U,$J,358.3,29830,1,0)
+ ;;^UTILITY(U,$J,358.3,28553,1,3,0)
+ ;;=3^Attention to Colostomy
+ ;;^UTILITY(U,$J,358.3,28553,1,4,0)
+ ;;=4^Z43.3
+ ;;^UTILITY(U,$J,358.3,28553,2)
+ ;;=^5062961
+ ;;^UTILITY(U,$J,358.3,28554,0)
+ ;;=Z43.4^^112^1429^4
+ ;;^UTILITY(U,$J,358.3,28554,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29830,1,3,0)
- ;;=3^Nodular Prostate w/o Lower Urinary Tract Symptoms
- ;;^UTILITY(U,$J,358.3,29830,1,4,0)
- ;;=4^N40.2
- ;;^UTILITY(U,$J,358.3,29830,2)
- ;;=^5015691
- ;;^UTILITY(U,$J,358.3,29831,0)
- ;;=N40.3^^177^1900^23
- ;;^UTILITY(U,$J,358.3,29831,1,0)
+ ;;^UTILITY(U,$J,358.3,28554,1,3,0)
+ ;;=3^Attention to Artif Opening of Digestive Tract NEC
+ ;;^UTILITY(U,$J,358.3,28554,1,4,0)
+ ;;=4^Z43.4
+ ;;^UTILITY(U,$J,358.3,28554,2)
+ ;;=^5062962
+ ;;^UTILITY(U,$J,358.3,28555,0)
+ ;;=Z43.5^^112^1429^7
+ ;;^UTILITY(U,$J,358.3,28555,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29831,1,3,0)
- ;;=3^Nodular Prostate w/ Lower Urinary Tract Symptoms
- ;;^UTILITY(U,$J,358.3,29831,1,4,0)
- ;;=4^N40.3
- ;;^UTILITY(U,$J,358.3,29831,2)
- ;;=^5015692
- ;;^UTILITY(U,$J,358.3,29832,0)
- ;;=N42.83^^177^1900^26
- ;;^UTILITY(U,$J,358.3,29832,1,0)
+ ;;^UTILITY(U,$J,358.3,28555,1,3,0)
+ ;;=3^Attention to Cystostomy
+ ;;^UTILITY(U,$J,358.3,28555,1,4,0)
+ ;;=4^Z43.5
+ ;;^UTILITY(U,$J,358.3,28555,2)
+ ;;=^5062963
+ ;;^UTILITY(U,$J,358.3,28556,0)
+ ;;=Z43.6^^112^1429^5
+ ;;^UTILITY(U,$J,358.3,28556,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29832,1,3,0)
- ;;=3^Prostate Cyst
- ;;^UTILITY(U,$J,358.3,29832,1,4,0)
- ;;=4^N42.83
- ;;^UTILITY(U,$J,358.3,29832,2)
- ;;=^322241
- ;;^UTILITY(U,$J,358.3,29833,0)
- ;;=N52.9^^177^1900^13
- ;;^UTILITY(U,$J,358.3,29833,1,0)
+ ;;^UTILITY(U,$J,358.3,28556,1,3,0)
+ ;;=3^Attention to Artif Opening of Urinary Tract NEC
+ ;;^UTILITY(U,$J,358.3,28556,1,4,0)
+ ;;=4^Z43.6
+ ;;^UTILITY(U,$J,358.3,28556,2)
+ ;;=^5062964
+ ;;^UTILITY(U,$J,358.3,28557,0)
+ ;;=Z48.00^^112^1429^12
+ ;;^UTILITY(U,$J,358.3,28557,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29833,1,3,0)
- ;;=3^Erectile Dysfunction,Unspec
- ;;^UTILITY(U,$J,358.3,29833,1,4,0)
- ;;=4^N52.9
- ;;^UTILITY(U,$J,358.3,29833,2)
- ;;=^5015763
- ;;^UTILITY(U,$J,358.3,29834,0)
- ;;=R39.89^^177^1900^15
- ;;^UTILITY(U,$J,358.3,29834,1,0)
+ ;;^UTILITY(U,$J,358.3,28557,1,3,0)
+ ;;=3^Change or Removal of Nonsurg Wound Dressing
+ ;;^UTILITY(U,$J,358.3,28557,1,4,0)
+ ;;=4^Z48.00
+ ;;^UTILITY(U,$J,358.3,28557,2)
+ ;;=^5063033
+ ;;^UTILITY(U,$J,358.3,28558,0)
+ ;;=Z48.01^^112^1429^13
+ ;;^UTILITY(U,$J,358.3,28558,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29834,1,3,0)
- ;;=3^Genitourinary System Symptoms/Signs NEC
- ;;^UTILITY(U,$J,358.3,29834,1,4,0)
- ;;=4^R39.89
- ;;^UTILITY(U,$J,358.3,29834,2)
- ;;=^5019350
- ;;^UTILITY(U,$J,358.3,29835,0)
- ;;=R39.2^^177^1900^14
- ;;^UTILITY(U,$J,358.3,29835,1,0)
+ ;;^UTILITY(U,$J,358.3,28558,1,3,0)
+ ;;=3^Change or Removal of Surg Wound Dressing
+ ;;^UTILITY(U,$J,358.3,28558,1,4,0)
+ ;;=4^Z48.01
+ ;;^UTILITY(U,$J,358.3,28558,2)
+ ;;=^5063034
+ ;;^UTILITY(U,$J,358.3,28559,0)
+ ;;=Z48.02^^112^1429^23
+ ;;^UTILITY(U,$J,358.3,28559,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29835,1,3,0)
- ;;=3^Extrarenal Uremia
- ;;^UTILITY(U,$J,358.3,29835,1,4,0)
- ;;=4^R39.2
- ;;^UTILITY(U,$J,358.3,29835,2)
- ;;=^5019348
- ;;^UTILITY(U,$J,358.3,29836,0)
- ;;=R30.1^^177^1900^29
- ;;^UTILITY(U,$J,358.3,29836,1,0)
+ ;;^UTILITY(U,$J,358.3,28559,1,3,0)
+ ;;=3^Suture Removal
+ ;;^UTILITY(U,$J,358.3,28559,1,4,0)
+ ;;=4^Z48.02
+ ;;^UTILITY(U,$J,358.3,28559,2)
+ ;;=^5063035
+ ;;^UTILITY(U,$J,358.3,28560,0)
+ ;;=Z48.03^^112^1429^11
+ ;;^UTILITY(U,$J,358.3,28560,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29836,1,3,0)
- ;;=3^Vesical Tenesmus
- ;;^UTILITY(U,$J,358.3,29836,1,4,0)
- ;;=4^R30.1
- ;;^UTILITY(U,$J,358.3,29836,2)
- ;;=^5019323
- ;;^UTILITY(U,$J,358.3,29837,0)
- ;;=Z85.46^^177^1900^16
- ;;^UTILITY(U,$J,358.3,29837,1,0)
+ ;;^UTILITY(U,$J,358.3,28560,1,3,0)
+ ;;=3^Change or Removal of Drains
+ ;;^UTILITY(U,$J,358.3,28560,1,4,0)
+ ;;=4^Z48.03
+ ;;^UTILITY(U,$J,358.3,28560,2)
+ ;;=^5063036
+ ;;^UTILITY(U,$J,358.3,28561,0)
+ ;;=Z48.89^^112^1429^22
+ ;;^UTILITY(U,$J,358.3,28561,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29837,1,3,0)
- ;;=3^Hx of Malig Neop of Prostate
- ;;^UTILITY(U,$J,358.3,29837,1,4,0)
- ;;=4^Z85.46
- ;;^UTILITY(U,$J,358.3,29837,2)
- ;;=^5063423
- ;;^UTILITY(U,$J,358.3,29838,0)
- ;;=N18.1^^177^1900^4
- ;;^UTILITY(U,$J,358.3,29838,1,0)
+ ;;^UTILITY(U,$J,358.3,28561,1,3,0)
+ ;;=3^Surgical Aftercare NEC
+ ;;^UTILITY(U,$J,358.3,28561,1,4,0)
+ ;;=4^Z48.89
+ ;;^UTILITY(U,$J,358.3,28561,2)
+ ;;=^5063055
+ ;;^UTILITY(U,$J,358.3,28562,0)
+ ;;=Z45.2^^112^1429^1
+ ;;^UTILITY(U,$J,358.3,28562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29838,1,3,0)
- ;;=3^Chr Kidney Disease,Stage 1
- ;;^UTILITY(U,$J,358.3,29838,1,4,0)
- ;;=4^N18.1
- ;;^UTILITY(U,$J,358.3,29838,2)
- ;;=^5015602
- ;;^UTILITY(U,$J,358.3,29839,0)
- ;;=N18.2^^177^1900^5
- ;;^UTILITY(U,$J,358.3,29839,1,0)
+ ;;^UTILITY(U,$J,358.3,28562,1,3,0)
+ ;;=3^Adjustment/Management of VAD
+ ;;^UTILITY(U,$J,358.3,28562,1,4,0)
+ ;;=4^Z45.2
+ ;;^UTILITY(U,$J,358.3,28562,2)
+ ;;=^5062999
+ ;;^UTILITY(U,$J,358.3,28563,0)
+ ;;=Z46.82^^112^1429^17
+ ;;^UTILITY(U,$J,358.3,28563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29839,1,3,0)
- ;;=3^Chr Kidney Disease,Stage 2
- ;;^UTILITY(U,$J,358.3,29839,1,4,0)
- ;;=4^N18.2
- ;;^UTILITY(U,$J,358.3,29839,2)
- ;;=^5015603
- ;;^UTILITY(U,$J,358.3,29840,0)
- ;;=N18.3^^177^1900^6
- ;;^UTILITY(U,$J,358.3,29840,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28563,1,3,0)
+ ;;=3^Fitting/Adjustment of Non-Vascular Catheter
+ ;;^UTILITY(U,$J,358.3,28563,1,4,0)
+ ;;=4^Z46.82
+ ;;^UTILITY(U,$J,358.3,28563,2)
+ ;;=^5063022

@@ -1,138 +1,130 @@
-IBDEI01E ; ; 06-AUG-2015
+IBDEI01E ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,97,1,0)
+ ;;^UTILITY(U,$J,358.3,153,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,97,1,3,0)
- ;;=3^Swimmer's ear, right ear
- ;;^UTILITY(U,$J,358.3,97,1,4,0)
- ;;=4^H60.331
- ;;^UTILITY(U,$J,358.3,97,2)
- ;;=^5006455
- ;;^UTILITY(U,$J,358.3,98,0)
- ;;=H72.823^^1^5^35
- ;;^UTILITY(U,$J,358.3,98,1,0)
+ ;;^UTILITY(U,$J,358.3,153,1,3,0)
+ ;;=3^Phobia,Oth Specified
+ ;;^UTILITY(U,$J,358.3,153,1,4,0)
+ ;;=4^F40.298
+ ;;^UTILITY(U,$J,358.3,153,2)
+ ;;=^5003561
+ ;;^UTILITY(U,$J,358.3,154,0)
+ ;;=F93.0^^3^24^17
+ ;;^UTILITY(U,$J,358.3,154,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,98,1,3,0)
- ;;=3^Total perforations of tympanic membrane, bilateral
- ;;^UTILITY(U,$J,358.3,98,1,4,0)
- ;;=4^H72.823
- ;;^UTILITY(U,$J,358.3,98,2)
- ;;=^5006760
- ;;^UTILITY(U,$J,358.3,99,0)
- ;;=H72.822^^1^5^36
- ;;^UTILITY(U,$J,358.3,99,1,0)
+ ;;^UTILITY(U,$J,358.3,154,1,3,0)
+ ;;=3^Separation Anxiety Disorder
+ ;;^UTILITY(U,$J,358.3,154,1,4,0)
+ ;;=4^F93.0
+ ;;^UTILITY(U,$J,358.3,154,2)
+ ;;=^5003702
+ ;;^UTILITY(U,$J,358.3,155,0)
+ ;;=F41.8^^3^24^7
+ ;;^UTILITY(U,$J,358.3,155,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,99,1,3,0)
- ;;=3^Total perforations of tympanic membrane, left ear
- ;;^UTILITY(U,$J,358.3,99,1,4,0)
- ;;=4^H72.822
- ;;^UTILITY(U,$J,358.3,99,2)
- ;;=^5006759
- ;;^UTILITY(U,$J,358.3,100,0)
- ;;=H72.821^^1^5^37
- ;;^UTILITY(U,$J,358.3,100,1,0)
+ ;;^UTILITY(U,$J,358.3,155,1,3,0)
+ ;;=3^Anxiety Disorder,Oth Specified
+ ;;^UTILITY(U,$J,358.3,155,1,4,0)
+ ;;=4^F41.8
+ ;;^UTILITY(U,$J,358.3,155,2)
+ ;;=^5003566
+ ;;^UTILITY(U,$J,358.3,156,0)
+ ;;=F06.33^^3^25^1
+ ;;^UTILITY(U,$J,358.3,156,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,100,1,3,0)
- ;;=3^Total perforations of tympanic membrane, right ear
- ;;^UTILITY(U,$J,358.3,100,1,4,0)
- ;;=4^H72.821
- ;;^UTILITY(U,$J,358.3,100,2)
- ;;=^5006758
- ;;^UTILITY(U,$J,358.3,101,0)
- ;;=H74.03^^1^5^38
- ;;^UTILITY(U,$J,358.3,101,1,0)
+ ;;^UTILITY(U,$J,358.3,156,1,3,0)
+ ;;=3^Bipolar & Related Disorder d/t Medical Condition w/ Manic Features
+ ;;^UTILITY(U,$J,358.3,156,1,4,0)
+ ;;=4^F06.33
+ ;;^UTILITY(U,$J,358.3,156,2)
+ ;;=^5003059
+ ;;^UTILITY(U,$J,358.3,157,0)
+ ;;=F06.34^^3^25^2
+ ;;^UTILITY(U,$J,358.3,157,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,101,1,3,0)
- ;;=3^Tympanosclerosis, bilateral
- ;;^UTILITY(U,$J,358.3,101,1,4,0)
- ;;=4^H74.03
- ;;^UTILITY(U,$J,358.3,101,2)
- ;;=^5006798
- ;;^UTILITY(U,$J,358.3,102,0)
- ;;=H74.02^^1^5^39
- ;;^UTILITY(U,$J,358.3,102,1,0)
+ ;;^UTILITY(U,$J,358.3,157,1,3,0)
+ ;;=3^Bipolar & Related Disorder d/t Medical Condition w/ Mixed Features
+ ;;^UTILITY(U,$J,358.3,157,1,4,0)
+ ;;=4^F06.34
+ ;;^UTILITY(U,$J,358.3,157,2)
+ ;;=^5003060
+ ;;^UTILITY(U,$J,358.3,158,0)
+ ;;=F31.11^^3^25^6
+ ;;^UTILITY(U,$J,358.3,158,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,102,1,3,0)
- ;;=3^Tympanosclerosis, left ear
- ;;^UTILITY(U,$J,358.3,102,1,4,0)
- ;;=4^H74.02
- ;;^UTILITY(U,$J,358.3,102,2)
- ;;=^5006797
- ;;^UTILITY(U,$J,358.3,103,0)
- ;;=H74.01^^1^5^40
- ;;^UTILITY(U,$J,358.3,103,1,0)
+ ;;^UTILITY(U,$J,358.3,158,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,Mild
+ ;;^UTILITY(U,$J,358.3,158,1,4,0)
+ ;;=4^F31.11
+ ;;^UTILITY(U,$J,358.3,158,2)
+ ;;=^5003496
+ ;;^UTILITY(U,$J,358.3,159,0)
+ ;;=F31.12^^3^25^7
+ ;;^UTILITY(U,$J,358.3,159,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,103,1,3,0)
- ;;=3^Tympanosclerosis, right ear
- ;;^UTILITY(U,$J,358.3,103,1,4,0)
- ;;=4^H74.01
- ;;^UTILITY(U,$J,358.3,103,2)
- ;;=^5006796
- ;;^UTILITY(U,$J,358.3,104,0)
- ;;=H69.93^^1^5^15
- ;;^UTILITY(U,$J,358.3,104,1,0)
+ ;;^UTILITY(U,$J,358.3,159,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,Moderate
+ ;;^UTILITY(U,$J,358.3,159,1,4,0)
+ ;;=4^F31.12
+ ;;^UTILITY(U,$J,358.3,159,2)
+ ;;=^5003497
+ ;;^UTILITY(U,$J,358.3,160,0)
+ ;;=F31.13^^3^25^8
+ ;;^UTILITY(U,$J,358.3,160,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,104,1,3,0)
- ;;=3^Eustachian Tube Disorders,Bilateral,Unspec
- ;;^UTILITY(U,$J,358.3,104,1,4,0)
- ;;=4^H69.93
- ;;^UTILITY(U,$J,358.3,104,2)
- ;;=^5006684
- ;;^UTILITY(U,$J,358.3,105,0)
- ;;=H69.92^^1^5^17
- ;;^UTILITY(U,$J,358.3,105,1,0)
+ ;;^UTILITY(U,$J,358.3,160,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,Severe
+ ;;^UTILITY(U,$J,358.3,160,1,4,0)
+ ;;=4^F31.13
+ ;;^UTILITY(U,$J,358.3,160,2)
+ ;;=^5003498
+ ;;^UTILITY(U,$J,358.3,161,0)
+ ;;=F31.2^^3^25^9
+ ;;^UTILITY(U,$J,358.3,161,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,105,1,3,0)
- ;;=3^Eustachian Tube Disorders,Left Ear,Unspec
- ;;^UTILITY(U,$J,358.3,105,1,4,0)
- ;;=4^H69.92
- ;;^UTILITY(U,$J,358.3,105,2)
- ;;=^5006683
- ;;^UTILITY(U,$J,358.3,106,0)
- ;;=H69.91^^1^5^19
- ;;^UTILITY(U,$J,358.3,106,1,0)
+ ;;^UTILITY(U,$J,358.3,161,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,w/ Psychotic Features
+ ;;^UTILITY(U,$J,358.3,161,1,4,0)
+ ;;=4^F31.2
+ ;;^UTILITY(U,$J,358.3,161,2)
+ ;;=^5003499
+ ;;^UTILITY(U,$J,358.3,162,0)
+ ;;=F31.73^^3^25^10
+ ;;^UTILITY(U,$J,358.3,162,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,106,1,3,0)
- ;;=3^Eustachian Tube Disorders,Right Ear,Unspec
- ;;^UTILITY(U,$J,358.3,106,1,4,0)
- ;;=4^H69.91
- ;;^UTILITY(U,$J,358.3,106,2)
- ;;=^5006682
- ;;^UTILITY(U,$J,358.3,107,0)
- ;;=T16.1XXA^^1^6^4
- ;;^UTILITY(U,$J,358.3,107,1,0)
+ ;;^UTILITY(U,$J,358.3,162,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,In Partial Remission
+ ;;^UTILITY(U,$J,358.3,162,1,4,0)
+ ;;=4^F31.73
+ ;;^UTILITY(U,$J,358.3,162,2)
+ ;;=^5003513
+ ;;^UTILITY(U,$J,358.3,163,0)
+ ;;=F31.74^^3^25^11
+ ;;^UTILITY(U,$J,358.3,163,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,107,1,3,0)
- ;;=3^Foreign body in right ear, initial encounter
- ;;^UTILITY(U,$J,358.3,107,1,4,0)
- ;;=4^T16.1XXA
- ;;^UTILITY(U,$J,358.3,107,2)
- ;;=^5046417
- ;;^UTILITY(U,$J,358.3,108,0)
- ;;=T16.1XXD^^1^6^6
- ;;^UTILITY(U,$J,358.3,108,1,0)
+ ;;^UTILITY(U,$J,358.3,163,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,In Full Remission
+ ;;^UTILITY(U,$J,358.3,163,1,4,0)
+ ;;=4^F31.74
+ ;;^UTILITY(U,$J,358.3,163,2)
+ ;;=^5003514
+ ;;^UTILITY(U,$J,358.3,164,0)
+ ;;=F31.30^^3^25^12
+ ;;^UTILITY(U,$J,358.3,164,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,108,1,3,0)
- ;;=3^Foreign body in right ear, subsequent encounter
- ;;^UTILITY(U,$J,358.3,108,1,4,0)
- ;;=4^T16.1XXD
- ;;^UTILITY(U,$J,358.3,108,2)
- ;;=^5046418
- ;;^UTILITY(U,$J,358.3,109,0)
- ;;=T16.1XXS^^1^6^5
- ;;^UTILITY(U,$J,358.3,109,1,0)
+ ;;^UTILITY(U,$J,358.3,164,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Depressed,Unspec
+ ;;^UTILITY(U,$J,358.3,164,1,4,0)
+ ;;=4^F31.30
+ ;;^UTILITY(U,$J,358.3,164,2)
+ ;;=^5003500
+ ;;^UTILITY(U,$J,358.3,165,0)
+ ;;=F31.31^^3^25^13
+ ;;^UTILITY(U,$J,358.3,165,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,109,1,3,0)
- ;;=3^Foreign body in right ear, sequela
- ;;^UTILITY(U,$J,358.3,109,1,4,0)
- ;;=4^T16.1XXS
- ;;^UTILITY(U,$J,358.3,109,2)
- ;;=^5046419
- ;;^UTILITY(U,$J,358.3,110,0)
- ;;=T16.2XXA^^1^6^1
- ;;^UTILITY(U,$J,358.3,110,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,110,1,3,0)
- ;;=3^Foreign body in left ear, initial encounter
+ ;;^UTILITY(U,$J,358.3,165,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Depressed,Mild
+ ;;^UTILITY(U,$J,358.3,165,1,4,0)
+ ;;=4^F31.31

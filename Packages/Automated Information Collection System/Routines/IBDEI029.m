@@ -1,134 +1,132 @@
-IBDEI029 ; ; 06-AUG-2015
+IBDEI029 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,505,1,4,0)
- ;;=4^C79.72
- ;;^UTILITY(U,$J,358.3,505,2)
- ;;=^5001357
- ;;^UTILITY(U,$J,358.3,506,0)
- ;;=C48.2^^2^23^22
- ;;^UTILITY(U,$J,358.3,506,1,0)
+ ;;^UTILITY(U,$J,358.3,562,0)
+ ;;=F17.201^^3^56^10
+ ;;^UTILITY(U,$J,358.3,562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,506,1,3,0)
- ;;=3^Malignant neoplasm of peritoneum, unspecified
- ;;^UTILITY(U,$J,358.3,506,1,4,0)
- ;;=4^C48.2
- ;;^UTILITY(U,$J,358.3,506,2)
- ;;=^5001122
- ;;^UTILITY(U,$J,358.3,507,0)
- ;;=C45.0^^2^23^28
- ;;^UTILITY(U,$J,358.3,507,1,0)
+ ;;^UTILITY(U,$J,358.3,562,1,3,0)
+ ;;=3^Nicotine Use Disorder,Moderate-Severe In Remission
+ ;;^UTILITY(U,$J,358.3,562,1,4,0)
+ ;;=4^F17.201
+ ;;^UTILITY(U,$J,358.3,562,2)
+ ;;=^5003361
+ ;;^UTILITY(U,$J,358.3,563,0)
+ ;;=F17.203^^3^56^11
+ ;;^UTILITY(U,$J,358.3,563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,507,1,3,0)
- ;;=3^Mesothelioma of pleura
- ;;^UTILITY(U,$J,358.3,507,1,4,0)
- ;;=4^C45.0
- ;;^UTILITY(U,$J,358.3,507,2)
- ;;=^5001095
- ;;^UTILITY(U,$J,358.3,508,0)
- ;;=C38.4^^2^23^23
- ;;^UTILITY(U,$J,358.3,508,1,0)
+ ;;^UTILITY(U,$J,358.3,563,1,3,0)
+ ;;=3^Nicotine Withdrawal
+ ;;^UTILITY(U,$J,358.3,563,1,4,0)
+ ;;=4^F17.203
+ ;;^UTILITY(U,$J,358.3,563,2)
+ ;;=^5003362
+ ;;^UTILITY(U,$J,358.3,564,0)
+ ;;=F17.210^^3^56^4
+ ;;^UTILITY(U,$J,358.3,564,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,508,1,3,0)
- ;;=3^Malignant neoplasm of pleura
- ;;^UTILITY(U,$J,358.3,508,1,4,0)
- ;;=4^C38.4
- ;;^UTILITY(U,$J,358.3,508,2)
- ;;=^267140
- ;;^UTILITY(U,$J,358.3,509,0)
- ;;=C41.9^^2^23^14
- ;;^UTILITY(U,$J,358.3,509,1,0)
+ ;;^UTILITY(U,$J,358.3,564,1,3,0)
+ ;;=3^Nicotine Dependence,Cigarettes,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,564,1,4,0)
+ ;;=4^F17.210
+ ;;^UTILITY(U,$J,358.3,564,2)
+ ;;=^5003365
+ ;;^UTILITY(U,$J,358.3,565,0)
+ ;;=F17.211^^3^56^3
+ ;;^UTILITY(U,$J,358.3,565,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,509,1,3,0)
- ;;=3^Malignant neoplasm of bone and articular cartilage, unsp
- ;;^UTILITY(U,$J,358.3,509,1,4,0)
- ;;=4^C41.9
- ;;^UTILITY(U,$J,358.3,509,2)
- ;;=^5000993
- ;;^UTILITY(U,$J,358.3,510,0)
- ;;=C49.9^^2^23^17
- ;;^UTILITY(U,$J,358.3,510,1,0)
+ ;;^UTILITY(U,$J,358.3,565,1,3,0)
+ ;;=3^Nicotine Dependence,Cigarettes,In Remission
+ ;;^UTILITY(U,$J,358.3,565,1,4,0)
+ ;;=4^F17.211
+ ;;^UTILITY(U,$J,358.3,565,2)
+ ;;=^5003366
+ ;;^UTILITY(U,$J,358.3,566,0)
+ ;;=F17.220^^3^56^2
+ ;;^UTILITY(U,$J,358.3,566,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,510,1,3,0)
- ;;=3^Malignant neoplasm of connective and soft tissue, unsp
- ;;^UTILITY(U,$J,358.3,510,1,4,0)
- ;;=4^C49.9
- ;;^UTILITY(U,$J,358.3,510,2)
- ;;=^5001136
- ;;^UTILITY(U,$J,358.3,511,0)
- ;;=C47.9^^2^23^12
- ;;^UTILITY(U,$J,358.3,511,1,0)
+ ;;^UTILITY(U,$J,358.3,566,1,3,0)
+ ;;=3^Nicotine Dependence,Chewing Tobacco,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,566,1,4,0)
+ ;;=4^F17.220
+ ;;^UTILITY(U,$J,358.3,566,2)
+ ;;=^5003370
+ ;;^UTILITY(U,$J,358.3,567,0)
+ ;;=F17.221^^3^56^1
+ ;;^UTILITY(U,$J,358.3,567,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,511,1,3,0)
- ;;=3^Malig neoplasm of prph nerves and autonm nervous sys, unsp
- ;;^UTILITY(U,$J,358.3,511,1,4,0)
- ;;=4^C47.9
- ;;^UTILITY(U,$J,358.3,511,2)
- ;;=^5001121
- ;;^UTILITY(U,$J,358.3,512,0)
- ;;=C43.9^^2^23^13
- ;;^UTILITY(U,$J,358.3,512,1,0)
+ ;;^UTILITY(U,$J,358.3,567,1,3,0)
+ ;;=3^Nicotine Dependence,Chewing Tobacco,In Remission
+ ;;^UTILITY(U,$J,358.3,567,1,4,0)
+ ;;=4^F17.221
+ ;;^UTILITY(U,$J,358.3,567,2)
+ ;;=^5003371
+ ;;^UTILITY(U,$J,358.3,568,0)
+ ;;=F17.290^^3^56^5
+ ;;^UTILITY(U,$J,358.3,568,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,512,1,3,0)
- ;;=3^Malignant melanoma of skin, unspecified
- ;;^UTILITY(U,$J,358.3,512,1,4,0)
- ;;=4^C43.9
- ;;^UTILITY(U,$J,358.3,512,2)
- ;;=^5001015
- ;;^UTILITY(U,$J,358.3,513,0)
- ;;=D03.9^^2^23^27
- ;;^UTILITY(U,$J,358.3,513,1,0)
+ ;;^UTILITY(U,$J,358.3,568,1,3,0)
+ ;;=3^Nicotine Dependence,Oth Tobacco Product,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,568,1,4,0)
+ ;;=4^F17.290
+ ;;^UTILITY(U,$J,358.3,568,2)
+ ;;=^5003375
+ ;;^UTILITY(U,$J,358.3,569,0)
+ ;;=F17.291^^3^56^6
+ ;;^UTILITY(U,$J,358.3,569,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,513,1,3,0)
- ;;=3^Melanoma in situ, unspecified
- ;;^UTILITY(U,$J,358.3,513,1,4,0)
- ;;=4^D03.9
- ;;^UTILITY(U,$J,358.3,513,2)
- ;;=^5001908
- ;;^UTILITY(U,$J,358.3,514,0)
- ;;=C44.01^^2^23^3
- ;;^UTILITY(U,$J,358.3,514,1,0)
+ ;;^UTILITY(U,$J,358.3,569,1,3,0)
+ ;;=3^Nicotine Dependence,Oth Tobacco Product,In Remission
+ ;;^UTILITY(U,$J,358.3,569,1,4,0)
+ ;;=4^F17.291
+ ;;^UTILITY(U,$J,358.3,569,2)
+ ;;=^5003376
+ ;;^UTILITY(U,$J,358.3,570,0)
+ ;;=F17.208^^3^56^7
+ ;;^UTILITY(U,$J,358.3,570,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,514,1,3,0)
- ;;=3^Basal cell carcinoma of skin of lip
- ;;^UTILITY(U,$J,358.3,514,1,4,0)
- ;;=4^C44.01
- ;;^UTILITY(U,$J,358.3,514,2)
- ;;=^340464
- ;;^UTILITY(U,$J,358.3,515,0)
- ;;=C44.02^^2^23^31
- ;;^UTILITY(U,$J,358.3,515,1,0)
+ ;;^UTILITY(U,$J,358.3,570,1,3,0)
+ ;;=3^Nicotine Induced Sleep Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,570,1,4,0)
+ ;;=4^F17.208
+ ;;^UTILITY(U,$J,358.3,570,2)
+ ;;=^5003363
+ ;;^UTILITY(U,$J,358.3,571,0)
+ ;;=F17.209^^3^56^8
+ ;;^UTILITY(U,$J,358.3,571,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,515,1,3,0)
- ;;=3^Squamous cell carcinoma of skin of lip
- ;;^UTILITY(U,$J,358.3,515,1,4,0)
- ;;=4^C44.02
- ;;^UTILITY(U,$J,358.3,515,2)
- ;;=^340465
- ;;^UTILITY(U,$J,358.3,516,0)
- ;;=C44.111^^2^23^10
- ;;^UTILITY(U,$J,358.3,516,1,0)
+ ;;^UTILITY(U,$J,358.3,571,1,3,0)
+ ;;=3^Nicotine Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,571,1,4,0)
+ ;;=4^F17.209
+ ;;^UTILITY(U,$J,358.3,571,2)
+ ;;=^5003364
+ ;;^UTILITY(U,$J,358.3,572,0)
+ ;;=F14.10^^3^57^1
+ ;;^UTILITY(U,$J,358.3,572,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,516,1,3,0)
- ;;=3^Basal cell carcinoma skin/ unsp eyelid, including canthus
- ;;^UTILITY(U,$J,358.3,516,1,4,0)
- ;;=4^C44.111
- ;;^UTILITY(U,$J,358.3,516,2)
- ;;=^5001019
- ;;^UTILITY(U,$J,358.3,517,0)
- ;;=C44.121^^2^23^38
- ;;^UTILITY(U,$J,358.3,517,1,0)
+ ;;^UTILITY(U,$J,358.3,572,1,3,0)
+ ;;=3^Cocaine Use Disorder,Mild
+ ;;^UTILITY(U,$J,358.3,572,1,4,0)
+ ;;=4^F14.10
+ ;;^UTILITY(U,$J,358.3,572,2)
+ ;;=^5003239
+ ;;^UTILITY(U,$J,358.3,573,0)
+ ;;=F14.14^^3^57^5
+ ;;^UTILITY(U,$J,358.3,573,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,517,1,3,0)
- ;;=3^Squamous cell carcinoma skin/ unsp eyelid, including canthus
- ;;^UTILITY(U,$J,358.3,517,1,4,0)
- ;;=4^C44.121
- ;;^UTILITY(U,$J,358.3,517,2)
- ;;=^5001022
- ;;^UTILITY(U,$J,358.3,518,0)
- ;;=C44.211^^2^23^9
- ;;^UTILITY(U,$J,358.3,518,1,0)
+ ;;^UTILITY(U,$J,358.3,573,1,3,0)
+ ;;=3^Cocaine-Induced Depressive,Bipolar or Related Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,573,1,4,0)
+ ;;=4^F14.14
+ ;;^UTILITY(U,$J,358.3,573,2)
+ ;;=^5003244
+ ;;^UTILITY(U,$J,358.3,574,0)
+ ;;=F14.182^^3^57^6
+ ;;^UTILITY(U,$J,358.3,574,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,518,1,3,0)
- ;;=3^Basal cell carcinoma skin/ unsp ear and external auric canal
+ ;;^UTILITY(U,$J,358.3,574,1,3,0)
+ ;;=3^Cocaine-Induced Sleep Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,574,1,4,0)
+ ;;=4^F14.182

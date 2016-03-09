@@ -1,134 +1,130 @@
-IBDEI219 ; ; 06-AUG-2015
+IBDEI219 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35530,1,4,0)
- ;;=4^I26.99
- ;;^UTILITY(U,$J,358.3,35530,2)
- ;;=^5007150
- ;;^UTILITY(U,$J,358.3,35531,0)
- ;;=J20.9^^188^2049^1
- ;;^UTILITY(U,$J,358.3,35531,1,0)
+ ;;^UTILITY(U,$J,358.3,34487,1,3,0)
+ ;;=3^Collapsed Vertebra,Lumbosacral Region,Subs Encntr,Del Healing
+ ;;^UTILITY(U,$J,358.3,34487,1,4,0)
+ ;;=4^M48.57XG
+ ;;^UTILITY(U,$J,358.3,34487,2)
+ ;;=^5012189
+ ;;^UTILITY(U,$J,358.3,34488,0)
+ ;;=M48.57XS^^131^1686^28
+ ;;^UTILITY(U,$J,358.3,34488,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35531,1,3,0)
- ;;=3^Acute bronchitis, unspecified
- ;;^UTILITY(U,$J,358.3,35531,1,4,0)
- ;;=4^J20.9
- ;;^UTILITY(U,$J,358.3,35531,2)
- ;;=^5008195
- ;;^UTILITY(U,$J,358.3,35532,0)
- ;;=J42.^^188^2049^4
- ;;^UTILITY(U,$J,358.3,35532,1,0)
+ ;;^UTILITY(U,$J,358.3,34488,1,3,0)
+ ;;=3^Collapsed Vertebra,Lumbosacral Region,Subs Encntr,Sequela
+ ;;^UTILITY(U,$J,358.3,34488,1,4,0)
+ ;;=4^M48.57XS
+ ;;^UTILITY(U,$J,358.3,34488,2)
+ ;;=^5012190
+ ;;^UTILITY(U,$J,358.3,34489,0)
+ ;;=M48.54XD^^131^1686^29
+ ;;^UTILITY(U,$J,358.3,34489,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35532,1,3,0)
- ;;=3^Chronic bronchitis,Unspec
- ;;^UTILITY(U,$J,358.3,35532,1,4,0)
- ;;=4^J42.
- ;;^UTILITY(U,$J,358.3,35532,2)
- ;;=^5008234
- ;;^UTILITY(U,$J,358.3,35533,0)
- ;;=J45.909^^188^2049^3
- ;;^UTILITY(U,$J,358.3,35533,1,0)
+ ;;^UTILITY(U,$J,358.3,34489,1,3,0)
+ ;;=3^Collapsed Vertebra,Thoracic Region,Subs Encntr,Rt Healing
+ ;;^UTILITY(U,$J,358.3,34489,1,4,0)
+ ;;=4^M48.54XD
+ ;;^UTILITY(U,$J,358.3,34489,2)
+ ;;=^5012176
+ ;;^UTILITY(U,$J,358.3,34490,0)
+ ;;=M48.57XG^^131^1686^30
+ ;;^UTILITY(U,$J,358.3,34490,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35533,1,3,0)
- ;;=3^Asthma, uncomplicated,Unspec
- ;;^UTILITY(U,$J,358.3,35533,1,4,0)
- ;;=4^J45.909
- ;;^UTILITY(U,$J,358.3,35533,2)
- ;;=^5008256
- ;;^UTILITY(U,$J,358.3,35534,0)
- ;;=J45.902^^188^2049^2
- ;;^UTILITY(U,$J,358.3,35534,1,0)
+ ;;^UTILITY(U,$J,358.3,34490,1,3,0)
+ ;;=3^Collapsed Vertebra,Thoracic Region,Subs Encntr,Del Healing
+ ;;^UTILITY(U,$J,358.3,34490,1,4,0)
+ ;;=4^M48.57XG
+ ;;^UTILITY(U,$J,358.3,34490,2)
+ ;;=^5012189
+ ;;^UTILITY(U,$J,358.3,34491,0)
+ ;;=M48.54XS^^131^1686^31
+ ;;^UTILITY(U,$J,358.3,34491,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35534,1,3,0)
- ;;=3^Asthma with status asthmaticus,Unspec
- ;;^UTILITY(U,$J,358.3,35534,1,4,0)
- ;;=4^J45.902
- ;;^UTILITY(U,$J,358.3,35534,2)
- ;;=^5008255
- ;;^UTILITY(U,$J,358.3,35535,0)
- ;;=J44.9^^188^2049^5
- ;;^UTILITY(U,$J,358.3,35535,1,0)
+ ;;^UTILITY(U,$J,358.3,34491,1,3,0)
+ ;;=3^Collapsed Vertebra,Thoracic Region,Subs Encntr,Sequela
+ ;;^UTILITY(U,$J,358.3,34491,1,4,0)
+ ;;=4^M48.54XS
+ ;;^UTILITY(U,$J,358.3,34491,2)
+ ;;=^5012178
+ ;;^UTILITY(U,$J,358.3,34492,0)
+ ;;=M62.830^^131^1686^59
+ ;;^UTILITY(U,$J,358.3,34492,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35535,1,3,0)
- ;;=3^Chronic obstructive pulmonary disease, unspecified
- ;;^UTILITY(U,$J,358.3,35535,1,4,0)
- ;;=4^J44.9
- ;;^UTILITY(U,$J,358.3,35535,2)
- ;;=^5008241
- ;;^UTILITY(U,$J,358.3,35536,0)
- ;;=J61.^^188^2049^8
- ;;^UTILITY(U,$J,358.3,35536,1,0)
+ ;;^UTILITY(U,$J,358.3,34492,1,3,0)
+ ;;=3^Muscle Spasm of Back
+ ;;^UTILITY(U,$J,358.3,34492,1,4,0)
+ ;;=4^M62.830
+ ;;^UTILITY(U,$J,358.3,34492,2)
+ ;;=^5012680
+ ;;^UTILITY(U,$J,358.3,34493,0)
+ ;;=M19.92^^131^1686^120
+ ;;^UTILITY(U,$J,358.3,34493,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35536,1,3,0)
- ;;=3^Pneumoconiosis due to asbestos and other mineral fibers
- ;;^UTILITY(U,$J,358.3,35536,1,4,0)
- ;;=4^J61.
- ;;^UTILITY(U,$J,358.3,35536,2)
- ;;=^5008262
- ;;^UTILITY(U,$J,358.3,35537,0)
- ;;=R09.1^^188^2049^7
- ;;^UTILITY(U,$J,358.3,35537,1,0)
+ ;;^UTILITY(U,$J,358.3,34493,1,3,0)
+ ;;=3^Post-Traumatic Osteoarthritis,Unspec Site
+ ;;^UTILITY(U,$J,358.3,34493,1,4,0)
+ ;;=4^M19.92
+ ;;^UTILITY(U,$J,358.3,34493,2)
+ ;;=^5010855
+ ;;^UTILITY(U,$J,358.3,34494,0)
+ ;;=M85.872^^131^1686^80
+ ;;^UTILITY(U,$J,358.3,34494,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35537,1,3,0)
- ;;=3^Pleurisy
- ;;^UTILITY(U,$J,358.3,35537,1,4,0)
- ;;=4^R09.1
- ;;^UTILITY(U,$J,358.3,35537,2)
- ;;=^95428
- ;;^UTILITY(U,$J,358.3,35538,0)
- ;;=J84.10^^188^2049^10
- ;;^UTILITY(U,$J,358.3,35538,1,0)
+ ;;^UTILITY(U,$J,358.3,34494,1,3,0)
+ ;;=3^Osteopenia,Left Ankle & Foot
+ ;;^UTILITY(U,$J,358.3,34494,1,4,0)
+ ;;=4^M85.872
+ ;;^UTILITY(U,$J,358.3,34494,2)
+ ;;=^5014493
+ ;;^UTILITY(U,$J,358.3,34495,0)
+ ;;=M85.832^^131^1686^81
+ ;;^UTILITY(U,$J,358.3,34495,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35538,1,3,0)
- ;;=3^Pulmonary fibrosis, unspecified
- ;;^UTILITY(U,$J,358.3,35538,1,4,0)
- ;;=4^J84.10
- ;;^UTILITY(U,$J,358.3,35538,2)
- ;;=^5008300
- ;;^UTILITY(U,$J,358.3,35539,0)
- ;;=R06.02^^188^2049^11
- ;;^UTILITY(U,$J,358.3,35539,1,0)
+ ;;^UTILITY(U,$J,358.3,34495,1,3,0)
+ ;;=3^Osteopenia,Left Forearm
+ ;;^UTILITY(U,$J,358.3,34495,1,4,0)
+ ;;=4^M85.832
+ ;;^UTILITY(U,$J,358.3,34495,2)
+ ;;=^5014481
+ ;;^UTILITY(U,$J,358.3,34496,0)
+ ;;=M85.842^^131^1686^82
+ ;;^UTILITY(U,$J,358.3,34496,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35539,1,3,0)
- ;;=3^Shortness of breath
- ;;^UTILITY(U,$J,358.3,35539,1,4,0)
- ;;=4^R06.02
- ;;^UTILITY(U,$J,358.3,35539,2)
- ;;=^5019181
- ;;^UTILITY(U,$J,358.3,35540,0)
- ;;=R06.00^^188^2049^6
- ;;^UTILITY(U,$J,358.3,35540,1,0)
+ ;;^UTILITY(U,$J,358.3,34496,1,3,0)
+ ;;=3^Osteopenia,Left Hand
+ ;;^UTILITY(U,$J,358.3,34496,1,4,0)
+ ;;=4^M85.842
+ ;;^UTILITY(U,$J,358.3,34496,2)
+ ;;=^5014484
+ ;;^UTILITY(U,$J,358.3,34497,0)
+ ;;=M85.862^^131^1686^83
+ ;;^UTILITY(U,$J,358.3,34497,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35540,1,3,0)
- ;;=3^Dyspnea, unspecified
- ;;^UTILITY(U,$J,358.3,35540,1,4,0)
- ;;=4^R06.00
- ;;^UTILITY(U,$J,358.3,35540,2)
- ;;=^5019180
- ;;^UTILITY(U,$J,358.3,35541,0)
- ;;=C49.9^^188^2050^1
- ;;^UTILITY(U,$J,358.3,35541,1,0)
+ ;;^UTILITY(U,$J,358.3,34497,1,3,0)
+ ;;=3^Osteopenia,Left Lower Leg
+ ;;^UTILITY(U,$J,358.3,34497,1,4,0)
+ ;;=4^M85.862
+ ;;^UTILITY(U,$J,358.3,34497,2)
+ ;;=^5014490
+ ;;^UTILITY(U,$J,358.3,34498,0)
+ ;;=M85.812^^131^1686^84
+ ;;^UTILITY(U,$J,358.3,34498,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35541,1,3,0)
- ;;=3^Malignant neoplasm of connective and soft tissue, unsp
- ;;^UTILITY(U,$J,358.3,35541,1,4,0)
- ;;=4^C49.9
- ;;^UTILITY(U,$J,358.3,35541,2)
- ;;=^5001136
- ;;^UTILITY(U,$J,358.3,35542,0)
- ;;=C34.11^^188^2050^13
- ;;^UTILITY(U,$J,358.3,35542,1,0)
+ ;;^UTILITY(U,$J,358.3,34498,1,3,0)
+ ;;=3^Osteopenia,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,34498,1,4,0)
+ ;;=4^M85.812
+ ;;^UTILITY(U,$J,358.3,34498,2)
+ ;;=^5014475
+ ;;^UTILITY(U,$J,358.3,34499,0)
+ ;;=M85.852^^131^1686^85
+ ;;^UTILITY(U,$J,358.3,34499,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35542,1,3,0)
- ;;=3^Malignant neoplasm of upper lobe, right bronchus or lung
- ;;^UTILITY(U,$J,358.3,35542,1,4,0)
- ;;=4^C34.11
- ;;^UTILITY(U,$J,358.3,35542,2)
- ;;=^5000961
- ;;^UTILITY(U,$J,358.3,35543,0)
- ;;=C34.12^^188^2050^12
- ;;^UTILITY(U,$J,358.3,35543,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35543,1,3,0)
- ;;=3^Malignant neoplasm of upper lobe, left bronchus or lung
+ ;;^UTILITY(U,$J,358.3,34499,1,3,0)
+ ;;=3^Osteopenia,Left Thigh
+ ;;^UTILITY(U,$J,358.3,34499,1,4,0)
+ ;;=4^M85.852
+ ;;^UTILITY(U,$J,358.3,34499,2)
+ ;;=^5014487

@@ -1,124 +1,124 @@
-IBDEI1XD ; ; 06-AUG-2015
+IBDEI1XD ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33824,1,4,0)
- ;;=4^W17.89XA
- ;;^UTILITY(U,$J,358.3,33824,2)
- ;;=^5059787
- ;;^UTILITY(U,$J,358.3,33825,0)
- ;;=W17.89XD^^182^2011^54
- ;;^UTILITY(U,$J,358.3,33825,1,0)
+ ;;^UTILITY(U,$J,358.3,32650,1,4,0)
+ ;;=4^I83.212
+ ;;^UTILITY(U,$J,358.3,32650,2)
+ ;;=^5007998
+ ;;^UTILITY(U,$J,358.3,32651,0)
+ ;;=I83.211^^126^1622^16
+ ;;^UTILITY(U,$J,358.3,32651,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33825,1,3,0)
- ;;=3^Fall from One level to Another,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33825,1,4,0)
- ;;=4^W17.89XD
- ;;^UTILITY(U,$J,358.3,33825,2)
- ;;=^5059788
- ;;^UTILITY(U,$J,358.3,33826,0)
- ;;=W18.11XA^^182^2011^63
- ;;^UTILITY(U,$J,358.3,33826,1,0)
+ ;;^UTILITY(U,$J,358.3,32651,1,3,0)
+ ;;=3^Varicose veins rt lwr extrem w/ ulc thigh & inflammation
+ ;;^UTILITY(U,$J,358.3,32651,1,4,0)
+ ;;=4^I83.211
+ ;;^UTILITY(U,$J,358.3,32651,2)
+ ;;=^5007997
+ ;;^UTILITY(U,$J,358.3,32652,0)
+ ;;=I83.213^^126^1622^11
+ ;;^UTILITY(U,$J,358.3,32652,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33826,1,3,0)
- ;;=3^Fall from Toilet w/o Strike Against Obj,Init Encntr
- ;;^UTILITY(U,$J,358.3,33826,1,4,0)
- ;;=4^W18.11XA
- ;;^UTILITY(U,$J,358.3,33826,2)
- ;;=^5059801
- ;;^UTILITY(U,$J,358.3,33827,0)
- ;;=W18.11XD^^182^2011^64
- ;;^UTILITY(U,$J,358.3,33827,1,0)
+ ;;^UTILITY(U,$J,358.3,32652,1,3,0)
+ ;;=3^Varicose veins rt lwr extrem w/ ulc ankl & inflammation
+ ;;^UTILITY(U,$J,358.3,32652,1,4,0)
+ ;;=4^I83.213
+ ;;^UTILITY(U,$J,358.3,32652,2)
+ ;;=^5007999
+ ;;^UTILITY(U,$J,358.3,32653,0)
+ ;;=I83.214^^126^1622^13
+ ;;^UTILITY(U,$J,358.3,32653,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33827,1,3,0)
- ;;=3^Fall from Toilet w/o Strike Against Obj,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33827,1,4,0)
- ;;=4^W18.11XD
- ;;^UTILITY(U,$J,358.3,33827,2)
- ;;=^5059802
- ;;^UTILITY(U,$J,358.3,33828,0)
- ;;=W18.12XA^^182^2011^61
- ;;^UTILITY(U,$J,358.3,33828,1,0)
+ ;;^UTILITY(U,$J,358.3,32653,1,3,0)
+ ;;=3^Varicose veins rt lwr extrem w/ ulc heel/midft & inflammation
+ ;;^UTILITY(U,$J,358.3,32653,1,4,0)
+ ;;=4^I83.214
+ ;;^UTILITY(U,$J,358.3,32653,2)
+ ;;=^5008000
+ ;;^UTILITY(U,$J,358.3,32654,0)
+ ;;=I83.219^^126^1622^10
+ ;;^UTILITY(U,$J,358.3,32654,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33828,1,3,0)
- ;;=3^Fall from Toilet w/ Strike Against Obj,Init Encntr
- ;;^UTILITY(U,$J,358.3,33828,1,4,0)
- ;;=4^W18.12XA
- ;;^UTILITY(U,$J,358.3,33828,2)
- ;;=^5059804
- ;;^UTILITY(U,$J,358.3,33829,0)
- ;;=W18.12XD^^182^2011^62
- ;;^UTILITY(U,$J,358.3,33829,1,0)
+ ;;^UTILITY(U,$J,358.3,32654,1,3,0)
+ ;;=3^Varicose veins rt lwr extrem w/ ulc & inflam, unsp site
+ ;;^UTILITY(U,$J,358.3,32654,1,4,0)
+ ;;=4^I83.219
+ ;;^UTILITY(U,$J,358.3,32654,2)
+ ;;=^5008003
+ ;;^UTILITY(U,$J,358.3,32655,0)
+ ;;=I83.218^^126^1622^14
+ ;;^UTILITY(U,$J,358.3,32655,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33829,1,3,0)
- ;;=3^Fall from Toilet w/ Strike Against Obj,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33829,1,4,0)
- ;;=4^W18.12XD
- ;;^UTILITY(U,$J,358.3,33829,2)
- ;;=^5137984
- ;;^UTILITY(U,$J,358.3,33830,0)
- ;;=W18.2XXA^^182^2011^69
- ;;^UTILITY(U,$J,358.3,33830,1,0)
+ ;;^UTILITY(U,$J,358.3,32655,1,3,0)
+ ;;=3^Varicose veins rt lwr extrem w/ ulc lwr extrm & inflam, oth prt
+ ;;^UTILITY(U,$J,358.3,32655,1,4,0)
+ ;;=4^I83.218
+ ;;^UTILITY(U,$J,358.3,32655,2)
+ ;;=^5008002
+ ;;^UTILITY(U,$J,358.3,32656,0)
+ ;;=I83.215^^126^1622^15
+ ;;^UTILITY(U,$J,358.3,32656,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33830,1,3,0)
- ;;=3^Fall into Empty Bathtub,Init Encntr
- ;;^UTILITY(U,$J,358.3,33830,1,4,0)
- ;;=4^W18.2XXA
- ;;^UTILITY(U,$J,358.3,33830,2)
- ;;=^5059806
- ;;^UTILITY(U,$J,358.3,33831,0)
- ;;=W18.2XXD^^182^2011^70
- ;;^UTILITY(U,$J,358.3,33831,1,0)
+ ;;^UTILITY(U,$J,358.3,32656,1,3,0)
+ ;;=3^Varicose veins rt lwr extrem w/ ulc oth prt of ft & inflam
+ ;;^UTILITY(U,$J,358.3,32656,1,4,0)
+ ;;=4^I83.215
+ ;;^UTILITY(U,$J,358.3,32656,2)
+ ;;=^5008001
+ ;;^UTILITY(U,$J,358.3,32657,0)
+ ;;=I83.229^^126^1622^2
+ ;;^UTILITY(U,$J,358.3,32657,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33831,1,3,0)
- ;;=3^Fall into Empty Bathtub,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33831,1,4,0)
- ;;=4^W18.2XXD
- ;;^UTILITY(U,$J,358.3,33831,2)
- ;;=^5059807
- ;;^UTILITY(U,$J,358.3,33832,0)
- ;;=W18.40XA^^182^2011^101
- ;;^UTILITY(U,$J,358.3,33832,1,0)
+ ;;^UTILITY(U,$J,358.3,32657,1,3,0)
+ ;;=3^Varicose veins lft lwr extrem w/ ulc & inflam, unsp site
+ ;;^UTILITY(U,$J,358.3,32657,1,4,0)
+ ;;=4^I83.229
+ ;;^UTILITY(U,$J,358.3,32657,2)
+ ;;=^5008010
+ ;;^UTILITY(U,$J,358.3,32658,0)
+ ;;=I83.228^^126^1622^6
+ ;;^UTILITY(U,$J,358.3,32658,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33832,1,3,0)
- ;;=3^Slipping/Tripping/Stumbling w/o Falling,Init Encntr
- ;;^UTILITY(U,$J,358.3,33832,1,4,0)
- ;;=4^W18.40XA
- ;;^UTILITY(U,$J,358.3,33832,2)
- ;;=^5059818
- ;;^UTILITY(U,$J,358.3,33833,0)
- ;;=W18.40XD^^182^2011^102
- ;;^UTILITY(U,$J,358.3,33833,1,0)
+ ;;^UTILITY(U,$J,358.3,32658,1,3,0)
+ ;;=3^Varicose veins lft lwr extrem w/ ulc lwr extrm & inflam, oth prt
+ ;;^UTILITY(U,$J,358.3,32658,1,4,0)
+ ;;=4^I83.228
+ ;;^UTILITY(U,$J,358.3,32658,2)
+ ;;=^5008009
+ ;;^UTILITY(U,$J,358.3,32659,0)
+ ;;=I83.221^^126^1622^8
+ ;;^UTILITY(U,$J,358.3,32659,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33833,1,3,0)
- ;;=3^Slipping/Tripping/Stumbling w/o Falling,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33833,1,4,0)
- ;;=4^W18.40XD
- ;;^UTILITY(U,$J,358.3,33833,2)
- ;;=^5059819
- ;;^UTILITY(U,$J,358.3,33834,0)
- ;;=W18.41XA^^182^2011^103
- ;;^UTILITY(U,$J,358.3,33834,1,0)
+ ;;^UTILITY(U,$J,358.3,32659,1,3,0)
+ ;;=3^Varicose veins lft lwr extrem w/ ulc thigh & inflam
+ ;;^UTILITY(U,$J,358.3,32659,1,4,0)
+ ;;=4^I83.221
+ ;;^UTILITY(U,$J,358.3,32659,2)
+ ;;=^5008004
+ ;;^UTILITY(U,$J,358.3,32660,0)
+ ;;=I83.223^^126^1622^3
+ ;;^UTILITY(U,$J,358.3,32660,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33834,1,3,0)
- ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping on Obj,Init Encntr
- ;;^UTILITY(U,$J,358.3,33834,1,4,0)
- ;;=4^W18.41XA
- ;;^UTILITY(U,$J,358.3,33834,2)
- ;;=^5059821
- ;;^UTILITY(U,$J,358.3,33835,0)
- ;;=W18.41XD^^182^2011^104
- ;;^UTILITY(U,$J,358.3,33835,1,0)
+ ;;^UTILITY(U,$J,358.3,32660,1,3,0)
+ ;;=3^Varicose veins lft lwr extrem w/ ulc ankl & inflam
+ ;;^UTILITY(U,$J,358.3,32660,1,4,0)
+ ;;=4^I83.223
+ ;;^UTILITY(U,$J,358.3,32660,2)
+ ;;=^5008006
+ ;;^UTILITY(U,$J,358.3,32661,0)
+ ;;=I83.222^^126^1622^4
+ ;;^UTILITY(U,$J,358.3,32661,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33835,1,3,0)
- ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping on Obj,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33835,1,4,0)
- ;;=4^W18.41XD
- ;;^UTILITY(U,$J,358.3,33835,2)
- ;;=^5059822
- ;;^UTILITY(U,$J,358.3,33836,0)
- ;;=W18.42XA^^182^2011^105
- ;;^UTILITY(U,$J,358.3,33836,1,0)
+ ;;^UTILITY(U,$J,358.3,32661,1,3,0)
+ ;;=3^Varicose veins lft lwr extrem w/ ulc calf & inflam
+ ;;^UTILITY(U,$J,358.3,32661,1,4,0)
+ ;;=4^I83.222
+ ;;^UTILITY(U,$J,358.3,32661,2)
+ ;;=^5008005
+ ;;^UTILITY(U,$J,358.3,32662,0)
+ ;;=I83.224^^126^1622^5
+ ;;^UTILITY(U,$J,358.3,32662,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33836,1,3,0)
- ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping into Hole,Init Encntr
+ ;;^UTILITY(U,$J,358.3,32662,1,3,0)
+ ;;=3^Varicose veins lft lwr extrem w/ ulc heel/midft & inflam

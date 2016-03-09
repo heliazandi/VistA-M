@@ -1,130 +1,132 @@
-IBDEI1SW ; ; 06-AUG-2015
+IBDEI1SW ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31755,1,4,0)
- ;;=4^S02.0XXS
- ;;^UTILITY(U,$J,358.3,31755,2)
- ;;=^5020257
- ;;^UTILITY(U,$J,358.3,31756,0)
- ;;=S02.10XS^^181^1967^2
- ;;^UTILITY(U,$J,358.3,31756,1,0)
+ ;;^UTILITY(U,$J,358.3,30602,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31756,1,3,0)
- ;;=3^Fracture of base of skull unspec, sequela
- ;;^UTILITY(U,$J,358.3,31756,1,4,0)
- ;;=4^S02.10XS
- ;;^UTILITY(U,$J,358.3,31756,2)
- ;;=^5020263
- ;;^UTILITY(U,$J,358.3,31757,0)
- ;;=S02.2XXS^^181^1967^10
- ;;^UTILITY(U,$J,358.3,31757,1,0)
+ ;;^UTILITY(U,$J,358.3,30602,1,3,0)
+ ;;=3^Nerve Injury,Left Hip & Thigh,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30602,1,4,0)
+ ;;=4^S74.92XA
+ ;;^UTILITY(U,$J,358.3,30602,2)
+ ;;=^5136510
+ ;;^UTILITY(U,$J,358.3,30603,0)
+ ;;=S84.91XA^^121^1521^40
+ ;;^UTILITY(U,$J,358.3,30603,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31757,1,3,0)
- ;;=3^Fracture of nasal bones, sequela
- ;;^UTILITY(U,$J,358.3,31757,1,4,0)
- ;;=4^S02.2XXS
- ;;^UTILITY(U,$J,358.3,31757,2)
- ;;=^5020311
- ;;^UTILITY(U,$J,358.3,31758,0)
- ;;=S02.401S^^181^1967^19
- ;;^UTILITY(U,$J,358.3,31758,1,0)
+ ;;^UTILITY(U,$J,358.3,30603,1,3,0)
+ ;;=3^Nerve Injury,Right Lower Leg,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30603,1,4,0)
+ ;;=4^S84.91XA
+ ;;^UTILITY(U,$J,358.3,30603,2)
+ ;;=^5137076
+ ;;^UTILITY(U,$J,358.3,30604,0)
+ ;;=S84.92XA^^121^1521^37
+ ;;^UTILITY(U,$J,358.3,30604,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31758,1,3,0)
- ;;=3^Maxillary fracture, unspecified, sequela
- ;;^UTILITY(U,$J,358.3,31758,1,4,0)
- ;;=4^S02.401S
- ;;^UTILITY(U,$J,358.3,31758,2)
- ;;=^5020329
- ;;^UTILITY(U,$J,358.3,31759,0)
- ;;=S02.402S^^181^1967^23
- ;;^UTILITY(U,$J,358.3,31759,1,0)
+ ;;^UTILITY(U,$J,358.3,30604,1,3,0)
+ ;;=3^Nerve Injury,Left Lower Leg,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30604,1,4,0)
+ ;;=4^S84.92XA
+ ;;^UTILITY(U,$J,358.3,30604,2)
+ ;;=^5137077
+ ;;^UTILITY(U,$J,358.3,30605,0)
+ ;;=E11.40^^121^1522^4
+ ;;^UTILITY(U,$J,358.3,30605,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31759,1,3,0)
- ;;=3^Zygomatic fracture, unspecified, sequela
- ;;^UTILITY(U,$J,358.3,31759,1,4,0)
- ;;=4^S02.402S
- ;;^UTILITY(U,$J,358.3,31759,2)
- ;;=^5020335
- ;;^UTILITY(U,$J,358.3,31760,0)
- ;;=S02.91XS^^181^1967^14
- ;;^UTILITY(U,$J,358.3,31760,1,0)
+ ;;^UTILITY(U,$J,358.3,30605,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Neuropathy,Unspec
+ ;;^UTILITY(U,$J,358.3,30605,1,4,0)
+ ;;=4^E11.40
+ ;;^UTILITY(U,$J,358.3,30605,2)
+ ;;=^5002644
+ ;;^UTILITY(U,$J,358.3,30606,0)
+ ;;=E11.41^^121^1522^3
+ ;;^UTILITY(U,$J,358.3,30606,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31760,1,3,0)
- ;;=3^Fracture of skull unspec, sequela
- ;;^UTILITY(U,$J,358.3,31760,1,4,0)
- ;;=4^S02.91XS
- ;;^UTILITY(U,$J,358.3,31760,2)
- ;;=^5020437
- ;;^UTILITY(U,$J,358.3,31761,0)
- ;;=S02.92XS^^181^1967^5
- ;;^UTILITY(U,$J,358.3,31761,1,0)
+ ;;^UTILITY(U,$J,358.3,30606,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Mononeuropathy
+ ;;^UTILITY(U,$J,358.3,30606,1,4,0)
+ ;;=4^E11.41
+ ;;^UTILITY(U,$J,358.3,30606,2)
+ ;;=^5002645
+ ;;^UTILITY(U,$J,358.3,30607,0)
+ ;;=E11.42^^121^1522^5
+ ;;^UTILITY(U,$J,358.3,30607,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31761,1,3,0)
- ;;=3^Fracture of facial bones unspec, sequela
- ;;^UTILITY(U,$J,358.3,31761,1,4,0)
- ;;=4^S02.92XS
- ;;^UTILITY(U,$J,358.3,31761,2)
- ;;=^5020443
- ;;^UTILITY(U,$J,358.3,31762,0)
- ;;=S06.0X0A^^181^1968^19
- ;;^UTILITY(U,$J,358.3,31762,1,0)
+ ;;^UTILITY(U,$J,358.3,30607,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,30607,1,4,0)
+ ;;=4^E11.42
+ ;;^UTILITY(U,$J,358.3,30607,2)
+ ;;=^5002646
+ ;;^UTILITY(U,$J,358.3,30608,0)
+ ;;=E11.43^^121^1522^2
+ ;;^UTILITY(U,$J,358.3,30608,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31762,1,3,0)
- ;;=3^Concussion w/o LOC, initial encounter
- ;;^UTILITY(U,$J,358.3,31762,1,4,0)
- ;;=4^S06.0X0A
- ;;^UTILITY(U,$J,358.3,31762,2)
- ;;=^5020666
- ;;^UTILITY(U,$J,358.3,31763,0)
- ;;=S06.0X1A^^181^1968^10
- ;;^UTILITY(U,$J,358.3,31763,1,0)
+ ;;^UTILITY(U,$J,358.3,30608,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Autonomic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,30608,1,4,0)
+ ;;=4^E11.43
+ ;;^UTILITY(U,$J,358.3,30608,2)
+ ;;=^5002647
+ ;;^UTILITY(U,$J,358.3,30609,0)
+ ;;=E11.44^^121^1522^1
+ ;;^UTILITY(U,$J,358.3,30609,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31763,1,3,0)
- ;;=3^Concussion w LOC of 30 minutes or less, init
- ;;^UTILITY(U,$J,358.3,31763,1,4,0)
- ;;=4^S06.0X1A
- ;;^UTILITY(U,$J,358.3,31763,2)
- ;;=^5020669
- ;;^UTILITY(U,$J,358.3,31764,0)
- ;;=S06.0X2A^^181^1968^13
- ;;^UTILITY(U,$J,358.3,31764,1,0)
+ ;;^UTILITY(U,$J,358.3,30609,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Amyotrophy
+ ;;^UTILITY(U,$J,358.3,30609,1,4,0)
+ ;;=4^E11.44
+ ;;^UTILITY(U,$J,358.3,30609,2)
+ ;;=^5002648
+ ;;^UTILITY(U,$J,358.3,30610,0)
+ ;;=E11.49^^121^1522^6
+ ;;^UTILITY(U,$J,358.3,30610,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31764,1,3,0)
- ;;=3^Concussion w LOC of 31-59 min, init
- ;;^UTILITY(U,$J,358.3,31764,1,4,0)
- ;;=4^S06.0X2A
- ;;^UTILITY(U,$J,358.3,31764,2)
- ;;=^5020672
- ;;^UTILITY(U,$J,358.3,31765,0)
- ;;=S06.0X3A^^181^1968^7
- ;;^UTILITY(U,$J,358.3,31765,1,0)
+ ;;^UTILITY(U,$J,358.3,30610,1,3,0)
+ ;;=3^DM Type 2 w/ Oth Diabetic Neurological Complications
+ ;;^UTILITY(U,$J,358.3,30610,1,4,0)
+ ;;=4^E11.49
+ ;;^UTILITY(U,$J,358.3,30610,2)
+ ;;=e860^5002649
+ ;;^UTILITY(U,$J,358.3,30611,0)
+ ;;=E86.0^^121^1522^7
+ ;;^UTILITY(U,$J,358.3,30611,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31765,1,3,0)
- ;;=3^Concussion w LOC of 1-5 hrs 59 min, init
- ;;^UTILITY(U,$J,358.3,31765,1,4,0)
- ;;=4^S06.0X3A
- ;;^UTILITY(U,$J,358.3,31765,2)
- ;;=^5020675
- ;;^UTILITY(U,$J,358.3,31766,0)
- ;;=S06.0X4A^^181^1968^16
- ;;^UTILITY(U,$J,358.3,31766,1,0)
+ ;;^UTILITY(U,$J,358.3,30611,1,3,0)
+ ;;=3^Dehydration
+ ;;^UTILITY(U,$J,358.3,30611,1,4,0)
+ ;;=4^E86.0
+ ;;^UTILITY(U,$J,358.3,30611,2)
+ ;;=^332743
+ ;;^UTILITY(U,$J,358.3,30612,0)
+ ;;=F32.9^^121^1522^10
+ ;;^UTILITY(U,$J,358.3,30612,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31766,1,3,0)
- ;;=3^Concussion w LOC of 6 hours to 24 hours, init
- ;;^UTILITY(U,$J,358.3,31766,1,4,0)
- ;;=4^S06.0X4A
- ;;^UTILITY(U,$J,358.3,31766,2)
- ;;=^5020678
- ;;^UTILITY(U,$J,358.3,31767,0)
- ;;=S06.0X5A^^181^1968^1
- ;;^UTILITY(U,$J,358.3,31767,1,0)
+ ;;^UTILITY(U,$J,358.3,30612,1,3,0)
+ ;;=3^MDD,Single Episode,Unspec
+ ;;^UTILITY(U,$J,358.3,30612,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,30612,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,30613,0)
+ ;;=G54.6^^121^1522^12
+ ;;^UTILITY(U,$J,358.3,30613,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31767,1,3,0)
- ;;=3^Concussion w LOC >24 hr w ret consc lev, init
- ;;^UTILITY(U,$J,358.3,31767,1,4,0)
- ;;=4^S06.0X5A
- ;;^UTILITY(U,$J,358.3,31767,2)
- ;;=^5020681
- ;;^UTILITY(U,$J,358.3,31768,0)
- ;;=S06.0X6A^^181^1968^4
+ ;;^UTILITY(U,$J,358.3,30613,1,3,0)
+ ;;=3^Phantom Limb Syndrome w/ Pain
+ ;;^UTILITY(U,$J,358.3,30613,1,4,0)
+ ;;=4^G54.6
+ ;;^UTILITY(U,$J,358.3,30613,2)
+ ;;=^5004013
+ ;;^UTILITY(U,$J,358.3,30614,0)
+ ;;=G54.7^^121^1522^13
+ ;;^UTILITY(U,$J,358.3,30614,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30614,1,3,0)
+ ;;=3^Phantom Limb Syndrome w/o Pain
+ ;;^UTILITY(U,$J,358.3,30614,1,4,0)
+ ;;=4^G54.7
+ ;;^UTILITY(U,$J,358.3,30614,2)
+ ;;=^5004014

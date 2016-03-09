@@ -1,126 +1,128 @@
-IBDEI1WT ; ; 06-AUG-2015
+IBDEI1WT ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33573,0)
- ;;=S83.8X1A^^182^2005^16
- ;;^UTILITY(U,$J,358.3,33573,1,0)
+ ;;^UTILITY(U,$J,358.3,32400,1,4,0)
+ ;;=4^T84.69XA
+ ;;^UTILITY(U,$J,358.3,32400,2)
+ ;;=^5055448
+ ;;^UTILITY(U,$J,358.3,32401,0)
+ ;;=T84.63XA^^126^1612^9
+ ;;^UTILITY(U,$J,358.3,32401,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33573,1,3,0)
- ;;=3^Sprain of Right Knee,Oth Spec Parts
- ;;^UTILITY(U,$J,358.3,33573,1,4,0)
- ;;=4^S83.8X1A
- ;;^UTILITY(U,$J,358.3,33573,2)
- ;;=^5043160
- ;;^UTILITY(U,$J,358.3,33574,0)
- ;;=S83.8X2A^^182^2005^5
- ;;^UTILITY(U,$J,358.3,33574,1,0)
+ ;;^UTILITY(U,$J,358.3,32401,1,3,0)
+ ;;=3^Infect/inflm react d/t int fix of spine, init
+ ;;^UTILITY(U,$J,358.3,32401,1,4,0)
+ ;;=4^T84.63XA
+ ;;^UTILITY(U,$J,358.3,32401,2)
+ ;;=^5055445
+ ;;^UTILITY(U,$J,358.3,32402,0)
+ ;;=T84.625A^^126^1612^3
+ ;;^UTILITY(U,$J,358.3,32402,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33574,1,3,0)
- ;;=3^Sprain of Left Knee,Oth Spec Parts
- ;;^UTILITY(U,$J,358.3,33574,1,4,0)
- ;;=4^S83.8X2A
- ;;^UTILITY(U,$J,358.3,33574,2)
- ;;=^5043163
- ;;^UTILITY(U,$J,358.3,33575,0)
- ;;=S86.211A^^182^2005^47
- ;;^UTILITY(U,$J,358.3,33575,1,0)
+ ;;^UTILITY(U,$J,358.3,32402,1,3,0)
+ ;;=3^Infect/inflm react d/t int fix lft fib, init
+ ;;^UTILITY(U,$J,358.3,32402,1,4,0)
+ ;;=4^T84.625A
+ ;;^UTILITY(U,$J,358.3,32402,2)
+ ;;=^5055439
+ ;;^UTILITY(U,$J,358.3,32403,0)
+ ;;=T84.624A^^126^1612^10
+ ;;^UTILITY(U,$J,358.3,32403,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33575,1,3,0)
- ;;=3^Strain of Right Lower Leg Anterior Muscle/Tendon
- ;;^UTILITY(U,$J,358.3,33575,1,4,0)
- ;;=4^S86.211A
- ;;^UTILITY(U,$J,358.3,33575,2)
- ;;=^5043484
- ;;^UTILITY(U,$J,358.3,33576,0)
- ;;=S86.212A^^182^2005^27
- ;;^UTILITY(U,$J,358.3,33576,1,0)
+ ;;^UTILITY(U,$J,358.3,32403,1,3,0)
+ ;;=3^Infect/inflm react d/t int fix rt fib, init
+ ;;^UTILITY(U,$J,358.3,32403,1,4,0)
+ ;;=4^T84.624A
+ ;;^UTILITY(U,$J,358.3,32403,2)
+ ;;=^5055436
+ ;;^UTILITY(U,$J,358.3,32404,0)
+ ;;=T84.612A^^126^1612^12
+ ;;^UTILITY(U,$J,358.3,32404,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33576,1,3,0)
- ;;=3^Strain of Left Lower Leg Anterior Muscle/Tendon
- ;;^UTILITY(U,$J,358.3,33576,1,4,0)
- ;;=4^S86.212A
- ;;^UTILITY(U,$J,358.3,33576,2)
- ;;=^5043487
- ;;^UTILITY(U,$J,358.3,33577,0)
- ;;=S86.311A^^182^2005^49
- ;;^UTILITY(U,$J,358.3,33577,1,0)
+ ;;^UTILITY(U,$J,358.3,32404,1,3,0)
+ ;;=3^Infect/inflm react d/t int fix rt radius, init
+ ;;^UTILITY(U,$J,358.3,32404,1,4,0)
+ ;;=4^T84.612A
+ ;;^UTILITY(U,$J,358.3,32404,2)
+ ;;=^5055409
+ ;;^UTILITY(U,$J,358.3,32405,0)
+ ;;=T84.611A^^126^1612^4
+ ;;^UTILITY(U,$J,358.3,32405,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33577,1,3,0)
- ;;=3^Strain of Right Lower Leg Peroneal Muscle/Tendon
- ;;^UTILITY(U,$J,358.3,33577,1,4,0)
- ;;=4^S86.311A
- ;;^UTILITY(U,$J,358.3,33577,2)
- ;;=^5043511
- ;;^UTILITY(U,$J,358.3,33578,0)
- ;;=S86.312A^^182^2005^29
- ;;^UTILITY(U,$J,358.3,33578,1,0)
+ ;;^UTILITY(U,$J,358.3,32405,1,3,0)
+ ;;=3^Infect/inflm react d/t int fix lft humerus, init
+ ;;^UTILITY(U,$J,358.3,32405,1,4,0)
+ ;;=4^T84.611A
+ ;;^UTILITY(U,$J,358.3,32405,2)
+ ;;=^5055406
+ ;;^UTILITY(U,$J,358.3,32406,0)
+ ;;=T84.610A^^126^1612^11
+ ;;^UTILITY(U,$J,358.3,32406,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33578,1,3,0)
- ;;=3^Strain of Left Lower Leg Peroneal Muscle/Tendon
- ;;^UTILITY(U,$J,358.3,33578,1,4,0)
- ;;=4^S86.312A
- ;;^UTILITY(U,$J,358.3,33578,2)
- ;;=^5043514
- ;;^UTILITY(U,$J,358.3,33579,0)
- ;;=S86.811A^^182^2005^48
- ;;^UTILITY(U,$J,358.3,33579,1,0)
+ ;;^UTILITY(U,$J,358.3,32406,1,3,0)
+ ;;=3^Infect/inflm react d/t int fix rt humerus, init
+ ;;^UTILITY(U,$J,358.3,32406,1,4,0)
+ ;;=4^T84.610A
+ ;;^UTILITY(U,$J,358.3,32406,2)
+ ;;=^5055403
+ ;;^UTILITY(U,$J,358.3,32407,0)
+ ;;=T84.623A^^126^1612^6
+ ;;^UTILITY(U,$J,358.3,32407,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33579,1,3,0)
- ;;=3^Strain of Right Lower Leg Muscle/Tendon NEC
- ;;^UTILITY(U,$J,358.3,33579,1,4,0)
- ;;=4^S86.811A
- ;;^UTILITY(U,$J,358.3,33579,2)
- ;;=^5043538
- ;;^UTILITY(U,$J,358.3,33580,0)
- ;;=S86.812A^^182^2005^28
- ;;^UTILITY(U,$J,358.3,33580,1,0)
+ ;;^UTILITY(U,$J,358.3,32407,1,3,0)
+ ;;=3^Infect/inflm react d/t int fix lft tib, init
+ ;;^UTILITY(U,$J,358.3,32407,1,4,0)
+ ;;=4^T84.623A
+ ;;^UTILITY(U,$J,358.3,32407,2)
+ ;;=^5055433
+ ;;^UTILITY(U,$J,358.3,32408,0)
+ ;;=T84.615A^^126^1612^7
+ ;;^UTILITY(U,$J,358.3,32408,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33580,1,3,0)
- ;;=3^Strain of Left Lower Leg Muscle/Tendon NEC
- ;;^UTILITY(U,$J,358.3,33580,1,4,0)
- ;;=4^S86.812A
- ;;^UTILITY(U,$J,358.3,33580,2)
- ;;=^5043541
- ;;^UTILITY(U,$J,358.3,33581,0)
- ;;=S86.111A^^182^2005^50
- ;;^UTILITY(U,$J,358.3,33581,1,0)
+ ;;^UTILITY(U,$J,358.3,32408,1,3,0)
+ ;;=3^Infect/inflm react d/t int fix lft ulna, init
+ ;;^UTILITY(U,$J,358.3,32408,1,4,0)
+ ;;=4^T84.615A
+ ;;^UTILITY(U,$J,358.3,32408,2)
+ ;;=^5055418
+ ;;^UTILITY(U,$J,358.3,32409,0)
+ ;;=T84.614A^^126^1612^2
+ ;;^UTILITY(U,$J,358.3,32409,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33581,1,3,0)
- ;;=3^Strain of Right Lower Leg Posterior Muscle/Tendon
- ;;^UTILITY(U,$J,358.3,33581,1,4,0)
- ;;=4^S86.111A
- ;;^UTILITY(U,$J,358.3,33581,2)
- ;;=^5043460
- ;;^UTILITY(U,$J,358.3,33582,0)
- ;;=S86.112A^^182^2005^30
- ;;^UTILITY(U,$J,358.3,33582,1,0)
+ ;;^UTILITY(U,$J,358.3,32409,1,3,0)
+ ;;=3^Infect/inflm react d/t init fix rt ulna, init
+ ;;^UTILITY(U,$J,358.3,32409,1,4,0)
+ ;;=4^T84.614A
+ ;;^UTILITY(U,$J,358.3,32409,2)
+ ;;=^5055415
+ ;;^UTILITY(U,$J,358.3,32410,0)
+ ;;=T84.613A^^126^1612^5
+ ;;^UTILITY(U,$J,358.3,32410,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33582,1,3,0)
- ;;=3^Strain of Left Lower Leg Posterior Muscle/Tendon
- ;;^UTILITY(U,$J,358.3,33582,1,4,0)
- ;;=4^S86.112A
- ;;^UTILITY(U,$J,358.3,33582,2)
- ;;=^5043463
- ;;^UTILITY(U,$J,358.3,33583,0)
- ;;=S83.401A^^182^2005^15
- ;;^UTILITY(U,$J,358.3,33583,1,0)
+ ;;^UTILITY(U,$J,358.3,32410,1,3,0)
+ ;;=3^Infect/inflm react d/t int fix lft radius, init
+ ;;^UTILITY(U,$J,358.3,32410,1,4,0)
+ ;;=4^T84.613A
+ ;;^UTILITY(U,$J,358.3,32410,2)
+ ;;=^5055412
+ ;;^UTILITY(U,$J,358.3,32411,0)
+ ;;=L08.9^^126^1612^1
+ ;;^UTILITY(U,$J,358.3,32411,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33583,1,3,0)
- ;;=3^Sprain of Right Knee Collateral Ligament
- ;;^UTILITY(U,$J,358.3,33583,1,4,0)
- ;;=4^S83.401A
- ;;^UTILITY(U,$J,358.3,33583,2)
- ;;=^5043103
- ;;^UTILITY(U,$J,358.3,33584,0)
- ;;=S83.402A^^182^2005^4
- ;;^UTILITY(U,$J,358.3,33584,1,0)
+ ;;^UTILITY(U,$J,358.3,32411,1,3,0)
+ ;;=3^Infect Skin/Subcut Tissue,Localized,Unspec
+ ;;^UTILITY(U,$J,358.3,32411,1,4,0)
+ ;;=4^L08.9
+ ;;^UTILITY(U,$J,358.3,32411,2)
+ ;;=^5009082
+ ;;^UTILITY(U,$J,358.3,32412,0)
+ ;;=M25.374^^126^1612^22
+ ;;^UTILITY(U,$J,358.3,32412,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33584,1,3,0)
- ;;=3^Sprain of Left Knee Collateral Ligament
- ;;^UTILITY(U,$J,358.3,33584,1,4,0)
- ;;=4^S83.402A
- ;;^UTILITY(U,$J,358.3,33584,2)
- ;;=^5043106
- ;;^UTILITY(U,$J,358.3,33585,0)
- ;;=S93.402A^^182^2005^2
+ ;;^UTILITY(U,$J,358.3,32412,1,3,0)
+ ;;=3^Instability, rt ft, oth
+ ;;^UTILITY(U,$J,358.3,32412,1,4,0)
+ ;;=4^M25.374
+ ;;^UTILITY(U,$J,358.3,32412,2)
+ ;;=^5011572

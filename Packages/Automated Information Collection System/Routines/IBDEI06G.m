@@ -1,128 +1,134 @@
-IBDEI06G ; ; 06-AUG-2015
+IBDEI06G ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2496,1,3,0)
- ;;=3^Hemochromatosis due to repeated red blood cell transfusions
- ;;^UTILITY(U,$J,358.3,2496,1,4,0)
- ;;=4^E83.111
- ;;^UTILITY(U,$J,358.3,2496,2)
- ;;=^5002994
- ;;^UTILITY(U,$J,358.3,2497,0)
- ;;=E83.10^^6^75^26
- ;;^UTILITY(U,$J,358.3,2497,1,0)
+ ;;^UTILITY(U,$J,358.3,2690,1,4,0)
+ ;;=4^K72.90
+ ;;^UTILITY(U,$J,358.3,2690,2)
+ ;;=^5008809
+ ;;^UTILITY(U,$J,358.3,2691,0)
+ ;;=K73.9^^18^206^50
+ ;;^UTILITY(U,$J,358.3,2691,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2497,1,3,0)
- ;;=3^Disorder of iron metabolism, unspecified
- ;;^UTILITY(U,$J,358.3,2497,1,4,0)
- ;;=4^E83.10
- ;;^UTILITY(U,$J,358.3,2497,2)
- ;;=^5002993
- ;;^UTILITY(U,$J,358.3,2498,0)
- ;;=D64.9^^6^75^5
- ;;^UTILITY(U,$J,358.3,2498,1,0)
+ ;;^UTILITY(U,$J,358.3,2691,1,3,0)
+ ;;=3^Hepatitis,Chronic,Unspec
+ ;;^UTILITY(U,$J,358.3,2691,1,4,0)
+ ;;=4^K73.9
+ ;;^UTILITY(U,$J,358.3,2691,2)
+ ;;=^5008815
+ ;;^UTILITY(U,$J,358.3,2692,0)
+ ;;=K45.8^^18^206^52
+ ;;^UTILITY(U,$J,358.3,2692,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2498,1,3,0)
- ;;=3^Anemia, unspecified
- ;;^UTILITY(U,$J,358.3,2498,1,4,0)
- ;;=4^D64.9
- ;;^UTILITY(U,$J,358.3,2498,2)
- ;;=^5002351
- ;;^UTILITY(U,$J,358.3,2499,0)
- ;;=K50.919^^6^75^24
- ;;^UTILITY(U,$J,358.3,2499,1,0)
+ ;;^UTILITY(U,$J,358.3,2692,1,3,0)
+ ;;=3^Hernia,Abdominal w/o Obstruction/Gangrene
+ ;;^UTILITY(U,$J,358.3,2692,1,4,0)
+ ;;=4^K45.8
+ ;;^UTILITY(U,$J,358.3,2692,2)
+ ;;=^5008620
+ ;;^UTILITY(U,$J,358.3,2693,0)
+ ;;=K45.0^^18^206^51
+ ;;^UTILITY(U,$J,358.3,2693,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2499,1,3,0)
- ;;=3^Crohn's disease, unspecified, with unspecified complications
- ;;^UTILITY(U,$J,358.3,2499,1,4,0)
- ;;=4^K50.919
- ;;^UTILITY(U,$J,358.3,2499,2)
- ;;=^5008651
- ;;^UTILITY(U,$J,358.3,2500,0)
- ;;=K50.918^^6^75^22
- ;;^UTILITY(U,$J,358.3,2500,1,0)
+ ;;^UTILITY(U,$J,358.3,2693,1,3,0)
+ ;;=3^Hernia,Abdominal w/ Obstruction w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,2693,1,4,0)
+ ;;=4^K45.0
+ ;;^UTILITY(U,$J,358.3,2693,2)
+ ;;=^5008618
+ ;;^UTILITY(U,$J,358.3,2694,0)
+ ;;=K41.00^^18^206^53
+ ;;^UTILITY(U,$J,358.3,2694,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2500,1,3,0)
- ;;=3^Crohn's disease, unspecified, with other complication
- ;;^UTILITY(U,$J,358.3,2500,1,4,0)
- ;;=4^K50.918
- ;;^UTILITY(U,$J,358.3,2500,2)
- ;;=^5008650
- ;;^UTILITY(U,$J,358.3,2501,0)
- ;;=K50.914^^6^75^19
- ;;^UTILITY(U,$J,358.3,2501,1,0)
+ ;;^UTILITY(U,$J,358.3,2694,1,3,0)
+ ;;=3^Hernia,Bilat Femoral w/ Obstructions w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,2694,1,4,0)
+ ;;=4^K41.00
+ ;;^UTILITY(U,$J,358.3,2694,2)
+ ;;=^5008593
+ ;;^UTILITY(U,$J,358.3,2695,0)
+ ;;=K40.20^^18^206^54
+ ;;^UTILITY(U,$J,358.3,2695,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2501,1,3,0)
- ;;=3^Crohn's disease, unspecified, with abscess
- ;;^UTILITY(U,$J,358.3,2501,1,4,0)
- ;;=4^K50.914
- ;;^UTILITY(U,$J,358.3,2501,2)
- ;;=^5008649
- ;;^UTILITY(U,$J,358.3,2502,0)
- ;;=K50.913^^6^75^20
- ;;^UTILITY(U,$J,358.3,2502,1,0)
+ ;;^UTILITY(U,$J,358.3,2695,1,3,0)
+ ;;=3^Hernia,Bilat Femoral w/o Obstruction/Gangrene
+ ;;^UTILITY(U,$J,358.3,2695,1,4,0)
+ ;;=4^K40.20
+ ;;^UTILITY(U,$J,358.3,2695,2)
+ ;;=^5008585
+ ;;^UTILITY(U,$J,358.3,2696,0)
+ ;;=K42.0^^18^206^55
+ ;;^UTILITY(U,$J,358.3,2696,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2502,1,3,0)
- ;;=3^Crohn's disease, unspecified, with fistula
- ;;^UTILITY(U,$J,358.3,2502,1,4,0)
- ;;=4^K50.913
- ;;^UTILITY(U,$J,358.3,2502,2)
- ;;=^5008648
- ;;^UTILITY(U,$J,358.3,2503,0)
- ;;=K50.912^^6^75^21
- ;;^UTILITY(U,$J,358.3,2503,1,0)
+ ;;^UTILITY(U,$J,358.3,2696,1,3,0)
+ ;;=3^Hernia,Umbilical w/ Obstruction w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,2696,1,4,0)
+ ;;=4^K42.0
+ ;;^UTILITY(U,$J,358.3,2696,2)
+ ;;=^5008605
+ ;;^UTILITY(U,$J,358.3,2697,0)
+ ;;=K42.9^^18^206^56
+ ;;^UTILITY(U,$J,358.3,2697,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2503,1,3,0)
- ;;=3^Crohn's disease, unspecified, with intestinal obstruction
- ;;^UTILITY(U,$J,358.3,2503,1,4,0)
- ;;=4^K50.912
- ;;^UTILITY(U,$J,358.3,2503,2)
- ;;=^5008647
- ;;^UTILITY(U,$J,358.3,2504,0)
- ;;=K50.90^^6^75^25
- ;;^UTILITY(U,$J,358.3,2504,1,0)
+ ;;^UTILITY(U,$J,358.3,2697,1,3,0)
+ ;;=3^Hernia,Umbilical w/o Obstruction/Gangrene
+ ;;^UTILITY(U,$J,358.3,2697,1,4,0)
+ ;;=4^K42.9
+ ;;^UTILITY(U,$J,358.3,2697,2)
+ ;;=^5008606
+ ;;^UTILITY(U,$J,358.3,2698,0)
+ ;;=K41.30^^18^206^57
+ ;;^UTILITY(U,$J,358.3,2698,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2504,1,3,0)
- ;;=3^Crohn's disease, unspecified, without complications
- ;;^UTILITY(U,$J,358.3,2504,1,4,0)
- ;;=4^K50.90
- ;;^UTILITY(U,$J,358.3,2504,2)
- ;;=^5008645
- ;;^UTILITY(U,$J,358.3,2505,0)
- ;;=K50.911^^6^75^23
- ;;^UTILITY(U,$J,358.3,2505,1,0)
+ ;;^UTILITY(U,$J,358.3,2698,1,3,0)
+ ;;=3^Hernia,Unil Femoral w/ Obstruction w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,2698,1,4,0)
+ ;;=4^K41.30
+ ;;^UTILITY(U,$J,358.3,2698,2)
+ ;;=^5008599
+ ;;^UTILITY(U,$J,358.3,2699,0)
+ ;;=K41.90^^18^206^58
+ ;;^UTILITY(U,$J,358.3,2699,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2505,1,3,0)
- ;;=3^Crohn's disease, unspecified, with rectal bleeding
- ;;^UTILITY(U,$J,358.3,2505,1,4,0)
- ;;=4^K50.911
- ;;^UTILITY(U,$J,358.3,2505,2)
- ;;=^5008646
- ;;^UTILITY(U,$J,358.3,2506,0)
- ;;=K51.20^^6^75^56
- ;;^UTILITY(U,$J,358.3,2506,1,0)
+ ;;^UTILITY(U,$J,358.3,2699,1,3,0)
+ ;;=3^Hernia,Unil Femoral w/o Obstruction/Gangrene
+ ;;^UTILITY(U,$J,358.3,2699,1,4,0)
+ ;;=4^K41.90
+ ;;^UTILITY(U,$J,358.3,2699,2)
+ ;;=^5008603
+ ;;^UTILITY(U,$J,358.3,2700,0)
+ ;;=K40.30^^18^206^59
+ ;;^UTILITY(U,$J,358.3,2700,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2506,1,3,0)
- ;;=3^Ulcerative (chronic) proctitis without complications
- ;;^UTILITY(U,$J,358.3,2506,1,4,0)
- ;;=4^K51.20
- ;;^UTILITY(U,$J,358.3,2506,2)
- ;;=^5008659
- ;;^UTILITY(U,$J,358.3,2507,0)
- ;;=K51.211^^6^75^54
- ;;^UTILITY(U,$J,358.3,2507,1,0)
+ ;;^UTILITY(U,$J,358.3,2700,1,3,0)
+ ;;=3^Hernia,Unil Inguinal w/ Obstruction w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,2700,1,4,0)
+ ;;=4^K40.30
+ ;;^UTILITY(U,$J,358.3,2700,2)
+ ;;=^5008587
+ ;;^UTILITY(U,$J,358.3,2701,0)
+ ;;=K40.90^^18^206^60
+ ;;^UTILITY(U,$J,358.3,2701,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2507,1,3,0)
- ;;=3^Ulcerative (chronic) proctitis with rectal bleeding
- ;;^UTILITY(U,$J,358.3,2507,1,4,0)
- ;;=4^K51.211
- ;;^UTILITY(U,$J,358.3,2507,2)
- ;;=^5008660
- ;;^UTILITY(U,$J,358.3,2508,0)
- ;;=K51.212^^6^75^52
- ;;^UTILITY(U,$J,358.3,2508,1,0)
+ ;;^UTILITY(U,$J,358.3,2701,1,3,0)
+ ;;=3^Hernia,Unil Inguinal w/o Obstruction/Gangrene
+ ;;^UTILITY(U,$J,358.3,2701,1,4,0)
+ ;;=4^K40.90
+ ;;^UTILITY(U,$J,358.3,2701,2)
+ ;;=^5008591
+ ;;^UTILITY(U,$J,358.3,2702,0)
+ ;;=K43.9^^18^206^61
+ ;;^UTILITY(U,$J,358.3,2702,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2508,1,3,0)
- ;;=3^Ulcerative (chronic) proctitis with intestinal obstruction
- ;;^UTILITY(U,$J,358.3,2508,1,4,0)
- ;;=4^K51.212
+ ;;^UTILITY(U,$J,358.3,2702,1,3,0)
+ ;;=3^Hernia,Ventral w/o Obstruction/Gangrene
+ ;;^UTILITY(U,$J,358.3,2702,1,4,0)
+ ;;=4^K43.9
+ ;;^UTILITY(U,$J,358.3,2702,2)
+ ;;=^5008615
+ ;;^UTILITY(U,$J,358.3,2703,0)
+ ;;=K59.9^^18^206^65
+ ;;^UTILITY(U,$J,358.3,2703,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2703,1,3,0)
+ ;;=3^Intestinal Disorder,Functional,Unspec

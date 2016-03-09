@@ -1,136 +1,134 @@
-IBDEI1TM ; ; 06-AUG-2015
+IBDEI1TM ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32084,2)
- ;;=^5009025
- ;;^UTILITY(U,$J,358.3,32085,0)
- ;;=L03.032^^182^1981^104
- ;;^UTILITY(U,$J,358.3,32085,1,0)
+ ;;^UTILITY(U,$J,358.3,30933,1,4,0)
+ ;;=4^F60.0
+ ;;^UTILITY(U,$J,358.3,30933,2)
+ ;;=^5003635
+ ;;^UTILITY(U,$J,358.3,30934,0)
+ ;;=F60.1^^123^1548^11
+ ;;^UTILITY(U,$J,358.3,30934,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32085,1,3,0)
- ;;=3^Cellulitis of Left Toe
- ;;^UTILITY(U,$J,358.3,32085,1,4,0)
- ;;=4^L03.032
- ;;^UTILITY(U,$J,358.3,32085,2)
- ;;=^5009026
- ;;^UTILITY(U,$J,358.3,32086,0)
- ;;=L03.041^^182^1981^26
- ;;^UTILITY(U,$J,358.3,32086,1,0)
+ ;;^UTILITY(U,$J,358.3,30934,1,3,0)
+ ;;=3^Schizoid Personality Disorder
+ ;;^UTILITY(U,$J,358.3,30934,1,4,0)
+ ;;=4^F60.1
+ ;;^UTILITY(U,$J,358.3,30934,2)
+ ;;=^108271
+ ;;^UTILITY(U,$J,358.3,30935,0)
+ ;;=F21.^^123^1548^12
+ ;;^UTILITY(U,$J,358.3,30935,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32086,1,3,0)
- ;;=3^Acute Lymphangitis of Right Toe
- ;;^UTILITY(U,$J,358.3,32086,1,4,0)
- ;;=4^L03.041
- ;;^UTILITY(U,$J,358.3,32086,2)
- ;;=^5009028
- ;;^UTILITY(U,$J,358.3,32087,0)
- ;;=L03.042^^182^1981^20
- ;;^UTILITY(U,$J,358.3,32087,1,0)
+ ;;^UTILITY(U,$J,358.3,30935,1,3,0)
+ ;;=3^Schizotypal Personality Disorder
+ ;;^UTILITY(U,$J,358.3,30935,1,4,0)
+ ;;=4^F21.
+ ;;^UTILITY(U,$J,358.3,30935,2)
+ ;;=^5003477
+ ;;^UTILITY(U,$J,358.3,30936,0)
+ ;;=F60.5^^123^1548^7
+ ;;^UTILITY(U,$J,358.3,30936,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32087,1,3,0)
- ;;=3^Acute Lymphangitis of Left Toe
- ;;^UTILITY(U,$J,358.3,32087,1,4,0)
- ;;=4^L03.042
- ;;^UTILITY(U,$J,358.3,32087,2)
- ;;=^5009029
- ;;^UTILITY(U,$J,358.3,32088,0)
- ;;=M34.0^^182^1981^250
- ;;^UTILITY(U,$J,358.3,32088,1,0)
+ ;;^UTILITY(U,$J,358.3,30936,1,3,0)
+ ;;=3^Obsessive-Compulsive Personality Disorder
+ ;;^UTILITY(U,$J,358.3,30936,1,4,0)
+ ;;=4^F60.5
+ ;;^UTILITY(U,$J,358.3,30936,2)
+ ;;=^331918
+ ;;^UTILITY(U,$J,358.3,30937,0)
+ ;;=F60.4^^123^1548^5
+ ;;^UTILITY(U,$J,358.3,30937,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32088,1,3,0)
- ;;=3^Progressive Systemic Sclerosis
- ;;^UTILITY(U,$J,358.3,32088,1,4,0)
- ;;=4^M34.0
- ;;^UTILITY(U,$J,358.3,32088,2)
- ;;=^5011778
- ;;^UTILITY(U,$J,358.3,32089,0)
- ;;=M34.1^^182^1981^91
- ;;^UTILITY(U,$J,358.3,32089,1,0)
+ ;;^UTILITY(U,$J,358.3,30937,1,3,0)
+ ;;=3^Histrionic Personality Disorder
+ ;;^UTILITY(U,$J,358.3,30937,1,4,0)
+ ;;=4^F60.4
+ ;;^UTILITY(U,$J,358.3,30937,2)
+ ;;=^5003636
+ ;;^UTILITY(U,$J,358.3,30938,0)
+ ;;=F60.7^^123^1548^4
+ ;;^UTILITY(U,$J,358.3,30938,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32089,1,3,0)
- ;;=3^CR(E)ST Syndrome
- ;;^UTILITY(U,$J,358.3,32089,1,4,0)
- ;;=4^M34.1
- ;;^UTILITY(U,$J,358.3,32089,2)
- ;;=^5011779
- ;;^UTILITY(U,$J,358.3,32090,0)
- ;;=M34.2^^182^1981^274
- ;;^UTILITY(U,$J,358.3,32090,1,0)
+ ;;^UTILITY(U,$J,358.3,30938,1,3,0)
+ ;;=3^Dependent Personality Disorder
+ ;;^UTILITY(U,$J,358.3,30938,1,4,0)
+ ;;=4^F60.7
+ ;;^UTILITY(U,$J,358.3,30938,2)
+ ;;=^5003637
+ ;;^UTILITY(U,$J,358.3,30939,0)
+ ;;=F60.2^^123^1548^1
+ ;;^UTILITY(U,$J,358.3,30939,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32090,1,3,0)
- ;;=3^Systemic Sclerosis Induced by Drug/Chemical
- ;;^UTILITY(U,$J,358.3,32090,1,4,0)
- ;;=4^M34.2
- ;;^UTILITY(U,$J,358.3,32090,2)
- ;;=^5011780
- ;;^UTILITY(U,$J,358.3,32091,0)
- ;;=M34.81^^182^1981^276
- ;;^UTILITY(U,$J,358.3,32091,1,0)
+ ;;^UTILITY(U,$J,358.3,30939,1,3,0)
+ ;;=3^Antisocial Personality Disorder
+ ;;^UTILITY(U,$J,358.3,30939,1,4,0)
+ ;;=4^F60.2
+ ;;^UTILITY(U,$J,358.3,30939,2)
+ ;;=^9066
+ ;;^UTILITY(U,$J,358.3,30940,0)
+ ;;=F60.81^^123^1548^6
+ ;;^UTILITY(U,$J,358.3,30940,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32091,1,3,0)
- ;;=3^Systemic Sclerosis w/ Lung Involvement
- ;;^UTILITY(U,$J,358.3,32091,1,4,0)
- ;;=4^M34.81
- ;;^UTILITY(U,$J,358.3,32091,2)
- ;;=^5011781
- ;;^UTILITY(U,$J,358.3,32092,0)
- ;;=M34.82^^182^1981^277
- ;;^UTILITY(U,$J,358.3,32092,1,0)
+ ;;^UTILITY(U,$J,358.3,30940,1,3,0)
+ ;;=3^Narcissistic Personality Disorder
+ ;;^UTILITY(U,$J,358.3,30940,1,4,0)
+ ;;=4^F60.81
+ ;;^UTILITY(U,$J,358.3,30940,2)
+ ;;=^331919
+ ;;^UTILITY(U,$J,358.3,30941,0)
+ ;;=F60.6^^123^1548^2
+ ;;^UTILITY(U,$J,358.3,30941,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32092,1,3,0)
- ;;=3^Systemic Sclerosis w/ Myopathy
- ;;^UTILITY(U,$J,358.3,32092,1,4,0)
- ;;=4^M34.82
- ;;^UTILITY(U,$J,358.3,32092,2)
- ;;=^5011782
- ;;^UTILITY(U,$J,358.3,32093,0)
- ;;=M34.83^^182^1981^278
- ;;^UTILITY(U,$J,358.3,32093,1,0)
+ ;;^UTILITY(U,$J,358.3,30941,1,3,0)
+ ;;=3^Avoidant Personality Disorder
+ ;;^UTILITY(U,$J,358.3,30941,1,4,0)
+ ;;=4^F60.6
+ ;;^UTILITY(U,$J,358.3,30941,2)
+ ;;=^331920
+ ;;^UTILITY(U,$J,358.3,30942,0)
+ ;;=F60.3^^123^1548^3
+ ;;^UTILITY(U,$J,358.3,30942,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32093,1,3,0)
- ;;=3^Systemic Sclerosis w/ Polyneuropathy
- ;;^UTILITY(U,$J,358.3,32093,1,4,0)
- ;;=4^M34.83
- ;;^UTILITY(U,$J,358.3,32093,2)
- ;;=^5011783
- ;;^UTILITY(U,$J,358.3,32094,0)
- ;;=M34.89^^182^1981^275
- ;;^UTILITY(U,$J,358.3,32094,1,0)
+ ;;^UTILITY(U,$J,358.3,30942,1,3,0)
+ ;;=3^Borderline Personality Disorder
+ ;;^UTILITY(U,$J,358.3,30942,1,4,0)
+ ;;=4^F60.3
+ ;;^UTILITY(U,$J,358.3,30942,2)
+ ;;=^331921
+ ;;^UTILITY(U,$J,358.3,30943,0)
+ ;;=F60.89^^123^1548^9
+ ;;^UTILITY(U,$J,358.3,30943,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32094,1,3,0)
- ;;=3^Systemic Sclerosis NEC
- ;;^UTILITY(U,$J,358.3,32094,1,4,0)
- ;;=4^M34.89
- ;;^UTILITY(U,$J,358.3,32094,2)
- ;;=^5011784
- ;;^UTILITY(U,$J,358.3,32095,0)
- ;;=M34.9^^182^1981^279
- ;;^UTILITY(U,$J,358.3,32095,1,0)
+ ;;^UTILITY(U,$J,358.3,30943,1,3,0)
+ ;;=3^Personality Disorder NEC
+ ;;^UTILITY(U,$J,358.3,30943,1,4,0)
+ ;;=4^F60.89
+ ;;^UTILITY(U,$J,358.3,30943,2)
+ ;;=^5003638
+ ;;^UTILITY(U,$J,358.3,30944,0)
+ ;;=F60.9^^123^1548^10
+ ;;^UTILITY(U,$J,358.3,30944,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32095,1,3,0)
- ;;=3^Systemic Sclerosis,Unspec
- ;;^UTILITY(U,$J,358.3,32095,1,4,0)
- ;;=4^M34.9
- ;;^UTILITY(U,$J,358.3,32095,2)
- ;;=^5011785
- ;;^UTILITY(U,$J,358.3,32096,0)
- ;;=R21.^^182^1981^258
- ;;^UTILITY(U,$J,358.3,32096,1,0)
+ ;;^UTILITY(U,$J,358.3,30944,1,3,0)
+ ;;=3^Personality Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30944,1,4,0)
+ ;;=4^F60.9
+ ;;^UTILITY(U,$J,358.3,30944,2)
+ ;;=^5003639
+ ;;^UTILITY(U,$J,358.3,30945,0)
+ ;;=Z65.4^^123^1549^4
+ ;;^UTILITY(U,$J,358.3,30945,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32096,1,3,0)
- ;;=3^Rash/Nonspecific Skin Eruption
- ;;^UTILITY(U,$J,358.3,32096,1,4,0)
- ;;=4^R21.
- ;;^UTILITY(U,$J,358.3,32096,2)
- ;;=^5019283
- ;;^UTILITY(U,$J,358.3,32097,0)
- ;;=R23.3^^182^1981^270
- ;;^UTILITY(U,$J,358.3,32097,1,0)
+ ;;^UTILITY(U,$J,358.3,30945,1,3,0)
+ ;;=3^Victim of Crime,Terrorism or Torture
+ ;;^UTILITY(U,$J,358.3,30945,1,4,0)
+ ;;=4^Z65.4
+ ;;^UTILITY(U,$J,358.3,30945,2)
+ ;;=^5063183
+ ;;^UTILITY(U,$J,358.3,30946,0)
+ ;;=Z65.0^^123^1549^1
+ ;;^UTILITY(U,$J,358.3,30946,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32097,1,3,0)
- ;;=3^Spontaneous Ecchymoses
- ;;^UTILITY(U,$J,358.3,32097,1,4,0)
- ;;=4^R23.3
- ;;^UTILITY(U,$J,358.3,32097,2)
- ;;=^5019295
+ ;;^UTILITY(U,$J,358.3,30946,1,3,0)
+ ;;=3^Conviction in Civil/Criminal Proceedings w/o Imprisonment

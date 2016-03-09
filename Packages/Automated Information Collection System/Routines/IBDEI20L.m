@@ -1,122 +1,136 @@
-IBDEI20L ; ; 06-AUG-2015
+IBDEI20L ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35223,1,3,0)
- ;;=3^Nondisp fx of oblique shaft of right ulna, sequela
- ;;^UTILITY(U,$J,358.3,35223,1,4,0)
- ;;=4^S52.234S
- ;;^UTILITY(U,$J,358.3,35223,2)
- ;;=^5029474
- ;;^UTILITY(U,$J,358.3,35224,0)
- ;;=S52.265S^^183^2026^113
- ;;^UTILITY(U,$J,358.3,35224,1,0)
+ ;;^UTILITY(U,$J,358.3,34176,1,4,0)
+ ;;=4^A60.04
+ ;;^UTILITY(U,$J,358.3,34176,2)
+ ;;=^5000356
+ ;;^UTILITY(U,$J,358.3,34177,0)
+ ;;=A60.01^^131^1682^32
+ ;;^UTILITY(U,$J,358.3,34177,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35224,1,3,0)
- ;;=3^Nondisp fx of segmental shaft of ulna, left arm, sequela
- ;;^UTILITY(U,$J,358.3,35224,1,4,0)
- ;;=4^S52.265S
- ;;^UTILITY(U,$J,358.3,35224,2)
- ;;=^5029778
- ;;^UTILITY(U,$J,358.3,35225,0)
- ;;=S52.264S^^183^2026^114
- ;;^UTILITY(U,$J,358.3,35225,1,0)
+ ;;^UTILITY(U,$J,358.3,34177,1,3,0)
+ ;;=3^Herpesviral Infection of Penis
+ ;;^UTILITY(U,$J,358.3,34177,1,4,0)
+ ;;=4^A60.01
+ ;;^UTILITY(U,$J,358.3,34177,2)
+ ;;=^5000353
+ ;;^UTILITY(U,$J,358.3,34178,0)
+ ;;=B00.1^^131^1682^33
+ ;;^UTILITY(U,$J,358.3,34178,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35225,1,3,0)
- ;;=3^Nondisp fx of segmental shaft of ulna, right arm, sequela
- ;;^UTILITY(U,$J,358.3,35225,1,4,0)
- ;;=4^S52.264S
- ;;^UTILITY(U,$J,358.3,35225,2)
- ;;=^5029762
- ;;^UTILITY(U,$J,358.3,35226,0)
- ;;=S52.245S^^183^2026^117
- ;;^UTILITY(U,$J,358.3,35226,1,0)
+ ;;^UTILITY(U,$J,358.3,34178,1,3,0)
+ ;;=3^Herpesviral Vesicular Dermatitis
+ ;;^UTILITY(U,$J,358.3,34178,1,4,0)
+ ;;=4^B00.1
+ ;;^UTILITY(U,$J,358.3,34178,2)
+ ;;=^5000468
+ ;;^UTILITY(U,$J,358.3,34179,0)
+ ;;=B97.89^^131^1682^89
+ ;;^UTILITY(U,$J,358.3,34179,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35226,1,3,0)
- ;;=3^Nondisp fx of spiral shaft of ulna, left arm, sequela
- ;;^UTILITY(U,$J,358.3,35226,1,4,0)
- ;;=4^S52.245S
- ;;^UTILITY(U,$J,358.3,35226,2)
- ;;=^5029586
- ;;^UTILITY(U,$J,358.3,35227,0)
- ;;=S52.244S^^183^2026^118
- ;;^UTILITY(U,$J,358.3,35227,1,0)
+ ;;^UTILITY(U,$J,358.3,34179,1,3,0)
+ ;;=3^Viral Agent Cause of Disease
+ ;;^UTILITY(U,$J,358.3,34179,1,4,0)
+ ;;=4^B97.89
+ ;;^UTILITY(U,$J,358.3,34179,2)
+ ;;=^5000879
+ ;;^UTILITY(U,$J,358.3,34180,0)
+ ;;=B97.10^^131^1682^21
+ ;;^UTILITY(U,$J,358.3,34180,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35227,1,3,0)
- ;;=3^Nondisp fx of spiral shaft of ulna, right arm, sequela
- ;;^UTILITY(U,$J,358.3,35227,1,4,0)
- ;;=4^S52.244S
- ;;^UTILITY(U,$J,358.3,35227,2)
- ;;=^5029570
- ;;^UTILITY(U,$J,358.3,35228,0)
- ;;=S52.225S^^183^2026^120
- ;;^UTILITY(U,$J,358.3,35228,1,0)
+ ;;^UTILITY(U,$J,358.3,34180,1,3,0)
+ ;;=3^Enterovirus Cause of Disease
+ ;;^UTILITY(U,$J,358.3,34180,1,4,0)
+ ;;=4^B97.10
+ ;;^UTILITY(U,$J,358.3,34180,2)
+ ;;=^5000861
+ ;;^UTILITY(U,$J,358.3,34181,0)
+ ;;=B34.9^^131^1682^90
+ ;;^UTILITY(U,$J,358.3,34181,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35228,1,3,0)
- ;;=3^Nondisp fx of transverse shaft of left ulna, sequela
- ;;^UTILITY(U,$J,358.3,35228,1,4,0)
- ;;=4^S52.225S
- ;;^UTILITY(U,$J,358.3,35228,2)
- ;;=^5029394
- ;;^UTILITY(U,$J,358.3,35229,0)
- ;;=S52.224S^^183^2026^122
- ;;^UTILITY(U,$J,358.3,35229,1,0)
+ ;;^UTILITY(U,$J,358.3,34181,1,3,0)
+ ;;=3^Viral Infection,Unspec
+ ;;^UTILITY(U,$J,358.3,34181,1,4,0)
+ ;;=4^B34.9
+ ;;^UTILITY(U,$J,358.3,34181,2)
+ ;;=^5000603
+ ;;^UTILITY(U,$J,358.3,34182,0)
+ ;;=A69.20^^131^1682^50
+ ;;^UTILITY(U,$J,358.3,34182,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35229,1,3,0)
- ;;=3^Nondisp fx of transverse shaft of right ulna, sequela
- ;;^UTILITY(U,$J,358.3,35229,1,4,0)
- ;;=4^S52.224S
- ;;^UTILITY(U,$J,358.3,35229,2)
- ;;=^5029378
- ;;^UTILITY(U,$J,358.3,35230,0)
- ;;=M84.432S^^183^2026^130
- ;;^UTILITY(U,$J,358.3,35230,1,0)
+ ;;^UTILITY(U,$J,358.3,34182,1,3,0)
+ ;;=3^Lyme Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,34182,1,4,0)
+ ;;=4^A69.20
+ ;;^UTILITY(U,$J,358.3,34182,2)
+ ;;=^5000375
+ ;;^UTILITY(U,$J,358.3,34183,0)
+ ;;=A69.22^^131^1682^52
+ ;;^UTILITY(U,$J,358.3,34183,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35230,1,3,0)
- ;;=3^Pathological fracture, left ulna, sequela
- ;;^UTILITY(U,$J,358.3,35230,1,4,0)
- ;;=4^M84.432S
- ;;^UTILITY(U,$J,358.3,35230,2)
- ;;=^5013847
- ;;^UTILITY(U,$J,358.3,35231,0)
- ;;=M84.431S^^183^2026^132
- ;;^UTILITY(U,$J,358.3,35231,1,0)
+ ;;^UTILITY(U,$J,358.3,34183,1,3,0)
+ ;;=3^Neurologic Disorders d/t Lyme Disease
+ ;;^UTILITY(U,$J,358.3,34183,1,4,0)
+ ;;=4^A69.22
+ ;;^UTILITY(U,$J,358.3,34183,2)
+ ;;=^5000377
+ ;;^UTILITY(U,$J,358.3,34184,0)
+ ;;=A69.21^^131^1682^51
+ ;;^UTILITY(U,$J,358.3,34184,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35231,1,3,0)
- ;;=3^Pathological fracture, right ulna, sequela
- ;;^UTILITY(U,$J,358.3,35231,1,4,0)
- ;;=4^M84.431S
- ;;^UTILITY(U,$J,358.3,35231,2)
- ;;=^5013841
- ;;^UTILITY(U,$J,358.3,35232,0)
- ;;=S59.012S^^183^2026^133
- ;;^UTILITY(U,$J,358.3,35232,1,0)
+ ;;^UTILITY(U,$J,358.3,34184,1,3,0)
+ ;;=3^Meningitis d/t Lyme Disease
+ ;;^UTILITY(U,$J,358.3,34184,1,4,0)
+ ;;=4^A69.21
+ ;;^UTILITY(U,$J,358.3,34184,2)
+ ;;=^5000376
+ ;;^UTILITY(U,$J,358.3,34185,0)
+ ;;=A69.29^^131^1682^18
+ ;;^UTILITY(U,$J,358.3,34185,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35232,1,3,0)
- ;;=3^Sltr-haris Type I physl fx lower end of ulna, left arm, sqla
- ;;^UTILITY(U,$J,358.3,35232,1,4,0)
- ;;=4^S59.012S
- ;;^UTILITY(U,$J,358.3,35232,2)
- ;;=^5031984
- ;;^UTILITY(U,$J,358.3,35233,0)
- ;;=S59.011S^^183^2026^136
- ;;^UTILITY(U,$J,358.3,35233,1,0)
+ ;;^UTILITY(U,$J,358.3,34185,1,3,0)
+ ;;=3^Conditions d/t Lyme Disease
+ ;;^UTILITY(U,$J,358.3,34185,1,4,0)
+ ;;=4^A69.29
+ ;;^UTILITY(U,$J,358.3,34185,2)
+ ;;=^5000379
+ ;;^UTILITY(U,$J,358.3,34186,0)
+ ;;=A69.23^^131^1682^5
+ ;;^UTILITY(U,$J,358.3,34186,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35233,1,3,0)
- ;;=3^Sltr-haris Type I physl fx lower end ulna, right arm, sqla
- ;;^UTILITY(U,$J,358.3,35233,1,4,0)
- ;;=4^S59.011S
- ;;^UTILITY(U,$J,358.3,35233,2)
- ;;=^5031978
- ;;^UTILITY(U,$J,358.3,35234,0)
- ;;=S59.022S^^183^2026^141
- ;;^UTILITY(U,$J,358.3,35234,1,0)
+ ;;^UTILITY(U,$J,358.3,34186,1,3,0)
+ ;;=3^Arthritis d/t Lyme Disease
+ ;;^UTILITY(U,$J,358.3,34186,1,4,0)
+ ;;=4^A69.23
+ ;;^UTILITY(U,$J,358.3,34186,2)
+ ;;=^5000378
+ ;;^UTILITY(U,$J,358.3,34187,0)
+ ;;=A51.0^^131^1682^29
+ ;;^UTILITY(U,$J,358.3,34187,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35234,1,3,0)
- ;;=3^Sltr-haris Type II physl fx lower end ulna, left arm, sqla
- ;;^UTILITY(U,$J,358.3,35234,1,4,0)
- ;;=4^S59.022S
- ;;^UTILITY(U,$J,358.3,35234,2)
- ;;=^5032002
- ;;^UTILITY(U,$J,358.3,35235,0)
- ;;=S59.021S^^183^2026^142
+ ;;^UTILITY(U,$J,358.3,34187,1,3,0)
+ ;;=3^Genital Syphilis,Primary
+ ;;^UTILITY(U,$J,358.3,34187,1,4,0)
+ ;;=4^A51.0
+ ;;^UTILITY(U,$J,358.3,34187,2)
+ ;;=^5000272
+ ;;^UTILITY(U,$J,358.3,34188,0)
+ ;;=A52.3^^131^1682^54
+ ;;^UTILITY(U,$J,358.3,34188,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34188,1,3,0)
+ ;;=3^Neurosyphilis,Unspec
+ ;;^UTILITY(U,$J,358.3,34188,1,4,0)
+ ;;=4^A52.3
+ ;;^UTILITY(U,$J,358.3,34188,2)
+ ;;=^5000298
+ ;;^UTILITY(U,$J,358.3,34189,0)
+ ;;=A52.10^^131^1682^53
+ ;;^UTILITY(U,$J,358.3,34189,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34189,1,3,0)
+ ;;=3^Neurosyphilis Symptomatic,Unspec
+ ;;^UTILITY(U,$J,358.3,34189,1,4,0)
+ ;;=4^A52.10

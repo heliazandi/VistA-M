@@ -1,0 +1,130 @@
+IBDEI2BE ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,39267,0)
+ ;;=H21.232^^153^1921^27
+ ;;^UTILITY(U,$J,358.3,39267,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39267,1,3,0)
+ ;;=3^Degeneration of Iris,Left Eye
+ ;;^UTILITY(U,$J,358.3,39267,1,4,0)
+ ;;=4^H21.232
+ ;;^UTILITY(U,$J,358.3,39267,2)
+ ;;=^5005188
+ ;;^UTILITY(U,$J,358.3,39268,0)
+ ;;=H40.011^^153^1921^85
+ ;;^UTILITY(U,$J,358.3,39268,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39268,1,3,0)
+ ;;=3^Open-Angle w/ Borderline Findings,Low Risk,Right Eye
+ ;;^UTILITY(U,$J,358.3,39268,1,4,0)
+ ;;=4^H40.011
+ ;;^UTILITY(U,$J,358.3,39268,2)
+ ;;=^5005724
+ ;;^UTILITY(U,$J,358.3,39269,0)
+ ;;=H40.012^^153^1921^86
+ ;;^UTILITY(U,$J,358.3,39269,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39269,1,3,0)
+ ;;=3^Open-Angle w/ Borderline Findings,Low Risk,Left Eye
+ ;;^UTILITY(U,$J,358.3,39269,1,4,0)
+ ;;=4^H40.012
+ ;;^UTILITY(U,$J,358.3,39269,2)
+ ;;=^5005725
+ ;;^UTILITY(U,$J,358.3,39270,0)
+ ;;=H40.021^^153^1921^82
+ ;;^UTILITY(U,$J,358.3,39270,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39270,1,3,0)
+ ;;=3^Open-Angle w/ Borderline Findings,Hi Risk,Right Eye
+ ;;^UTILITY(U,$J,358.3,39270,1,4,0)
+ ;;=4^H40.021
+ ;;^UTILITY(U,$J,358.3,39270,2)
+ ;;=^5005728
+ ;;^UTILITY(U,$J,358.3,39271,0)
+ ;;=H40.022^^153^1921^83
+ ;;^UTILITY(U,$J,358.3,39271,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39271,1,3,0)
+ ;;=3^Open-Angle w/ Borderline Findings,Hi Risk,Left Eye
+ ;;^UTILITY(U,$J,358.3,39271,1,4,0)
+ ;;=4^H40.022
+ ;;^UTILITY(U,$J,358.3,39271,2)
+ ;;=^5005729
+ ;;^UTILITY(U,$J,358.3,39272,0)
+ ;;=H40.031^^153^1921^3
+ ;;^UTILITY(U,$J,358.3,39272,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39272,1,3,0)
+ ;;=3^Anatomical Narrow Angle,Right Eye
+ ;;^UTILITY(U,$J,358.3,39272,1,4,0)
+ ;;=4^H40.031
+ ;;^UTILITY(U,$J,358.3,39272,2)
+ ;;=^5005732
+ ;;^UTILITY(U,$J,358.3,39273,0)
+ ;;=H40.032^^153^1921^2
+ ;;^UTILITY(U,$J,358.3,39273,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39273,1,3,0)
+ ;;=3^Anatomical Narrow Angle,Left Eye
+ ;;^UTILITY(U,$J,358.3,39273,1,4,0)
+ ;;=4^H40.032
+ ;;^UTILITY(U,$J,358.3,39273,2)
+ ;;=^5005733
+ ;;^UTILITY(U,$J,358.3,39274,0)
+ ;;=H40.033^^153^1921^1
+ ;;^UTILITY(U,$J,358.3,39274,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39274,1,3,0)
+ ;;=3^Anatomical Narrow Angle,Bilateral
+ ;;^UTILITY(U,$J,358.3,39274,1,4,0)
+ ;;=4^H40.033
+ ;;^UTILITY(U,$J,358.3,39274,2)
+ ;;=^5005734
+ ;;^UTILITY(U,$J,358.3,39275,0)
+ ;;=H40.041^^153^1921^123
+ ;;^UTILITY(U,$J,358.3,39275,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39275,1,3,0)
+ ;;=3^Steroid Responder,Right Eye
+ ;;^UTILITY(U,$J,358.3,39275,1,4,0)
+ ;;=4^H40.041
+ ;;^UTILITY(U,$J,358.3,39275,2)
+ ;;=^5005736
+ ;;^UTILITY(U,$J,358.3,39276,0)
+ ;;=H40.042^^153^1921^122
+ ;;^UTILITY(U,$J,358.3,39276,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39276,1,3,0)
+ ;;=3^Steroid Responder,Left Eye
+ ;;^UTILITY(U,$J,358.3,39276,1,4,0)
+ ;;=4^H40.042
+ ;;^UTILITY(U,$J,358.3,39276,2)
+ ;;=^5005737
+ ;;^UTILITY(U,$J,358.3,39277,0)
+ ;;=H40.051^^153^1921^76
+ ;;^UTILITY(U,$J,358.3,39277,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39277,1,3,0)
+ ;;=3^Ocular Hypertension,Right Eye
+ ;;^UTILITY(U,$J,358.3,39277,1,4,0)
+ ;;=4^H40.051
+ ;;^UTILITY(U,$J,358.3,39277,2)
+ ;;=^5005740
+ ;;^UTILITY(U,$J,358.3,39278,0)
+ ;;=H40.052^^153^1921^75
+ ;;^UTILITY(U,$J,358.3,39278,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39278,1,3,0)
+ ;;=3^Ocular Hypertension,Left Eye
+ ;;^UTILITY(U,$J,358.3,39278,1,4,0)
+ ;;=4^H40.052
+ ;;^UTILITY(U,$J,358.3,39278,2)
+ ;;=^5005741
+ ;;^UTILITY(U,$J,358.3,39279,0)
+ ;;=H40.053^^153^1921^74
+ ;;^UTILITY(U,$J,358.3,39279,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39279,1,3,0)
+ ;;=3^Ocular Hypertension,Bilateral

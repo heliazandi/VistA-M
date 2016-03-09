@@ -1,0 +1,132 @@
+IBDEI2BB ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,39228,1,4,0)
+ ;;=4^H17.13
+ ;;^UTILITY(U,$J,358.3,39228,2)
+ ;;=^5004993
+ ;;^UTILITY(U,$J,358.3,39229,0)
+ ;;=H16.013^^153^1920^29
+ ;;^UTILITY(U,$J,358.3,39229,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39229,1,3,0)
+ ;;=3^Central Corneal Ulcer,Bilateral
+ ;;^UTILITY(U,$J,358.3,39229,1,4,0)
+ ;;=4^H16.013
+ ;;^UTILITY(U,$J,358.3,39229,2)
+ ;;=^5004872
+ ;;^UTILITY(U,$J,358.3,39230,0)
+ ;;=H11.123^^153^1920^32
+ ;;^UTILITY(U,$J,358.3,39230,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39230,1,3,0)
+ ;;=3^Conjunctival Concretions,Bilateral
+ ;;^UTILITY(U,$J,358.3,39230,1,4,0)
+ ;;=4^H11.123
+ ;;^UTILITY(U,$J,358.3,39230,2)
+ ;;=^5004751
+ ;;^UTILITY(U,$J,358.3,39231,0)
+ ;;=H11.443^^153^1920^35
+ ;;^UTILITY(U,$J,358.3,39231,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39231,1,3,0)
+ ;;=3^Conjunctival Cysts,Bilateral
+ ;;^UTILITY(U,$J,358.3,39231,1,4,0)
+ ;;=4^H11.443
+ ;;^UTILITY(U,$J,358.3,39231,2)
+ ;;=^5004799
+ ;;^UTILITY(U,$J,358.3,39232,0)
+ ;;=H11.33^^153^1920^38
+ ;;^UTILITY(U,$J,358.3,39232,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39232,1,3,0)
+ ;;=3^Conjunctival Hemorrhage,Bilateral
+ ;;^UTILITY(U,$J,358.3,39232,1,4,0)
+ ;;=4^H11.33
+ ;;^UTILITY(U,$J,358.3,39232,2)
+ ;;=^5004784
+ ;;^UTILITY(U,$J,358.3,39233,0)
+ ;;=H10.403^^153^1920^44
+ ;;^UTILITY(U,$J,358.3,39233,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39233,1,3,0)
+ ;;=3^Conjunctivitis,Bilateral,Chronic,Unspec
+ ;;^UTILITY(U,$J,358.3,39233,1,4,0)
+ ;;=4^H10.403
+ ;;^UTILITY(U,$J,358.3,39233,2)
+ ;;=^5004683
+ ;;^UTILITY(U,$J,358.3,39234,0)
+ ;;=H10.33^^153^1920^41
+ ;;^UTILITY(U,$J,358.3,39234,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39234,1,3,0)
+ ;;=3^Conjunctivitis,Acute,Bilateral,Unspec
+ ;;^UTILITY(U,$J,358.3,39234,1,4,0)
+ ;;=4^H10.33
+ ;;^UTILITY(U,$J,358.3,39234,2)
+ ;;=^5004680
+ ;;^UTILITY(U,$J,358.3,39235,0)
+ ;;=H18.003^^153^1920^50
+ ;;^UTILITY(U,$J,358.3,39235,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39235,1,3,0)
+ ;;=3^Corneal Desposit,Bilateral,Unspec
+ ;;^UTILITY(U,$J,358.3,39235,1,4,0)
+ ;;=4^H18.003
+ ;;^UTILITY(U,$J,358.3,39235,2)
+ ;;=^5005006
+ ;;^UTILITY(U,$J,358.3,39236,0)
+ ;;=H16.403^^153^1920^52
+ ;;^UTILITY(U,$J,358.3,39236,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39236,1,3,0)
+ ;;=3^Corneal Neovascularization,Bilateral,Unspec
+ ;;^UTILITY(U,$J,358.3,39236,1,4,0)
+ ;;=4^H16.403
+ ;;^UTILITY(U,$J,358.3,39236,2)
+ ;;=^5004967
+ ;;^UTILITY(U,$J,358.3,39237,0)
+ ;;=H15.103^^153^1920^62
+ ;;^UTILITY(U,$J,358.3,39237,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39237,1,3,0)
+ ;;=3^Episcleritis,Bilateral,Unspec
+ ;;^UTILITY(U,$J,358.3,39237,1,4,0)
+ ;;=4^H15.103
+ ;;^UTILITY(U,$J,358.3,39237,2)
+ ;;=^5004837
+ ;;^UTILITY(U,$J,358.3,39238,0)
+ ;;=H16.213^^153^1920^65
+ ;;^UTILITY(U,$J,358.3,39238,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39238,1,3,0)
+ ;;=3^Exposure Keratoconjunctivitis,Bilateral
+ ;;^UTILITY(U,$J,358.3,39238,1,4,0)
+ ;;=4^H16.213
+ ;;^UTILITY(U,$J,358.3,39238,2)
+ ;;=^5004922
+ ;;^UTILITY(U,$J,358.3,39239,0)
+ ;;=H16.123^^153^1920^73
+ ;;^UTILITY(U,$J,358.3,39239,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39239,1,3,0)
+ ;;=3^Filamentary Keratitis,Bilateral
+ ;;^UTILITY(U,$J,358.3,39239,1,4,0)
+ ;;=4^H16.123
+ ;;^UTILITY(U,$J,358.3,39239,2)
+ ;;=^5004907
+ ;;^UTILITY(U,$J,358.3,39240,0)
+ ;;=H10.413^^153^1920^77
+ ;;^UTILITY(U,$J,358.3,39240,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39240,1,3,0)
+ ;;=3^Giant Papillary Conjunctivitis,Bilateral,Chronic
+ ;;^UTILITY(U,$J,358.3,39240,1,4,0)
+ ;;=4^H10.413
+ ;;^UTILITY(U,$J,358.3,39240,2)
+ ;;=^5004686
+ ;;^UTILITY(U,$J,358.3,39241,0)
+ ;;=H21.03^^153^1920^83
+ ;;^UTILITY(U,$J,358.3,39241,1,0)
+ ;;=^358.31IA^4^2

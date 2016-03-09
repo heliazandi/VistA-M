@@ -1,140 +1,144 @@
-IBDEI01W ; ; 06-AUG-2015
+IBDEI01W ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,333,1,3,0)
- ;;=3^Hereditary deficiency of other clotting factors
- ;;^UTILITY(U,$J,358.3,333,1,4,0)
- ;;=4^D68.2
- ;;^UTILITY(U,$J,358.3,333,2)
- ;;=^5002356
- ;;^UTILITY(U,$J,358.3,334,0)
- ;;=D68.0^^2^15^26
- ;;^UTILITY(U,$J,358.3,334,1,0)
+ ;;^UTILITY(U,$J,358.3,396,1,4,0)
+ ;;=4^F52.21
+ ;;^UTILITY(U,$J,358.3,396,2)
+ ;;=^5003620
+ ;;^UTILITY(U,$J,358.3,397,0)
+ ;;=F52.31^^3^47^3
+ ;;^UTILITY(U,$J,358.3,397,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,334,1,3,0)
- ;;=3^Von Willebrand's disease
- ;;^UTILITY(U,$J,358.3,334,1,4,0)
- ;;=4^D68.0
- ;;^UTILITY(U,$J,358.3,334,2)
- ;;=^127267
- ;;^UTILITY(U,$J,358.3,335,0)
- ;;=D68.311^^2^15^2
- ;;^UTILITY(U,$J,358.3,335,1,0)
+ ;;^UTILITY(U,$J,358.3,397,1,3,0)
+ ;;=3^Female Orgasmic Disorder
+ ;;^UTILITY(U,$J,358.3,397,1,4,0)
+ ;;=4^F52.31
+ ;;^UTILITY(U,$J,358.3,397,2)
+ ;;=^331926
+ ;;^UTILITY(U,$J,358.3,398,0)
+ ;;=F52.22^^3^47^4
+ ;;^UTILITY(U,$J,358.3,398,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,335,1,3,0)
- ;;=3^Acquired hemophilia
- ;;^UTILITY(U,$J,358.3,335,1,4,0)
- ;;=4^D68.311
- ;;^UTILITY(U,$J,358.3,335,2)
- ;;=^340502
- ;;^UTILITY(U,$J,358.3,336,0)
- ;;=D68.312^^2^15^4
- ;;^UTILITY(U,$J,358.3,336,1,0)
+ ;;^UTILITY(U,$J,358.3,398,1,3,0)
+ ;;=3^Female Sexual Interest/Arousal Disorder
+ ;;^UTILITY(U,$J,358.3,398,1,4,0)
+ ;;=4^F52.22
+ ;;^UTILITY(U,$J,358.3,398,2)
+ ;;=^5003621
+ ;;^UTILITY(U,$J,358.3,399,0)
+ ;;=F52.6^^3^47^5
+ ;;^UTILITY(U,$J,358.3,399,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,336,1,3,0)
- ;;=3^Antiphospholipid antibody with hemorrhagic disorder
- ;;^UTILITY(U,$J,358.3,336,1,4,0)
- ;;=4^D68.312
- ;;^UTILITY(U,$J,358.3,336,2)
- ;;=^340503
- ;;^UTILITY(U,$J,358.3,337,0)
- ;;=D68.318^^2^15^13
- ;;^UTILITY(U,$J,358.3,337,1,0)
+ ;;^UTILITY(U,$J,358.3,399,1,3,0)
+ ;;=3^Genito-Pelvic Pain/Penetration Disorder
+ ;;^UTILITY(U,$J,358.3,399,1,4,0)
+ ;;=4^F52.6
+ ;;^UTILITY(U,$J,358.3,399,2)
+ ;;=^5003623
+ ;;^UTILITY(U,$J,358.3,400,0)
+ ;;=F52.0^^3^47^6
+ ;;^UTILITY(U,$J,358.3,400,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,337,1,3,0)
- ;;=3^Hemorrhagic disord d/t intrns circ anticoag,antib,inhib NEC
- ;;^UTILITY(U,$J,358.3,337,1,4,0)
- ;;=4^D68.318
- ;;^UTILITY(U,$J,358.3,337,2)
- ;;=^340504
- ;;^UTILITY(U,$J,358.3,338,0)
- ;;=D65.^^2^15^7
- ;;^UTILITY(U,$J,358.3,338,1,0)
+ ;;^UTILITY(U,$J,358.3,400,1,3,0)
+ ;;=3^Male Hypoactive Sexual Desire Disorder
+ ;;^UTILITY(U,$J,358.3,400,1,4,0)
+ ;;=4^F52.0
+ ;;^UTILITY(U,$J,358.3,400,2)
+ ;;=^5003618
+ ;;^UTILITY(U,$J,358.3,401,0)
+ ;;=F52.4^^3^47^7
+ ;;^UTILITY(U,$J,358.3,401,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,338,1,3,0)
- ;;=3^Disseminated intravascular coagulation
- ;;^UTILITY(U,$J,358.3,338,1,4,0)
- ;;=4^D65.
- ;;^UTILITY(U,$J,358.3,338,2)
- ;;=^5002352
- ;;^UTILITY(U,$J,358.3,339,0)
- ;;=D68.32^^2^15^12
- ;;^UTILITY(U,$J,358.3,339,1,0)
+ ;;^UTILITY(U,$J,358.3,401,1,3,0)
+ ;;=3^Premature (Early) Ejaculation
+ ;;^UTILITY(U,$J,358.3,401,1,4,0)
+ ;;=4^F52.4
+ ;;^UTILITY(U,$J,358.3,401,2)
+ ;;=^331928
+ ;;^UTILITY(U,$J,358.3,402,0)
+ ;;=F52.8^^3^47^9
+ ;;^UTILITY(U,$J,358.3,402,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,339,1,3,0)
- ;;=3^Hemorrhagic disord d/t extrinsic circulating anticoagulants
- ;;^UTILITY(U,$J,358.3,339,1,4,0)
- ;;=4^D68.32
- ;;^UTILITY(U,$J,358.3,339,2)
- ;;=^5002357
- ;;^UTILITY(U,$J,358.3,340,0)
- ;;=D68.4^^2^15^1
- ;;^UTILITY(U,$J,358.3,340,1,0)
+ ;;^UTILITY(U,$J,358.3,402,1,3,0)
+ ;;=3^Sexual Dysfuntion NEC
+ ;;^UTILITY(U,$J,358.3,402,1,4,0)
+ ;;=4^F52.8
+ ;;^UTILITY(U,$J,358.3,402,2)
+ ;;=^5003624
+ ;;^UTILITY(U,$J,358.3,403,0)
+ ;;=F52.9^^3^47^8
+ ;;^UTILITY(U,$J,358.3,403,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,340,1,3,0)
- ;;=3^Acquired coagulation factor deficiency
- ;;^UTILITY(U,$J,358.3,340,1,4,0)
- ;;=4^D68.4
- ;;^UTILITY(U,$J,358.3,340,2)
- ;;=^2235
- ;;^UTILITY(U,$J,358.3,341,0)
- ;;=D68.8^^2^15^5
- ;;^UTILITY(U,$J,358.3,341,1,0)
+ ;;^UTILITY(U,$J,358.3,403,1,3,0)
+ ;;=3^Sexual Dysfunction,Unspec
+ ;;^UTILITY(U,$J,358.3,403,1,4,0)
+ ;;=4^F52.9
+ ;;^UTILITY(U,$J,358.3,403,2)
+ ;;=^5003625
+ ;;^UTILITY(U,$J,358.3,404,0)
+ ;;=G47.09^^3^48^14
+ ;;^UTILITY(U,$J,358.3,404,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,341,1,3,0)
- ;;=3^Coagulation Defects NEC
- ;;^UTILITY(U,$J,358.3,341,1,4,0)
- ;;=4^D68.8
- ;;^UTILITY(U,$J,358.3,341,2)
- ;;=^5002363
- ;;^UTILITY(U,$J,358.3,342,0)
- ;;=D68.9^^2^15^6
- ;;^UTILITY(U,$J,358.3,342,1,0)
+ ;;^UTILITY(U,$J,358.3,404,1,3,0)
+ ;;=3^Insomnia,Other
+ ;;^UTILITY(U,$J,358.3,404,1,4,0)
+ ;;=4^G47.09
+ ;;^UTILITY(U,$J,358.3,404,2)
+ ;;=^5003970
+ ;;^UTILITY(U,$J,358.3,405,0)
+ ;;=G47.00^^3^48^15
+ ;;^UTILITY(U,$J,358.3,405,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,342,1,3,0)
- ;;=3^Coagulation Defects,Unspec
- ;;^UTILITY(U,$J,358.3,342,1,4,0)
- ;;=4^D68.9
- ;;^UTILITY(U,$J,358.3,342,2)
- ;;=^5002364
- ;;^UTILITY(U,$J,358.3,343,0)
- ;;=D69.1^^2^15^22
- ;;^UTILITY(U,$J,358.3,343,1,0)
+ ;;^UTILITY(U,$J,358.3,405,1,3,0)
+ ;;=3^Insomnia,Unspec
+ ;;^UTILITY(U,$J,358.3,405,1,4,0)
+ ;;=4^G47.00
+ ;;^UTILITY(U,$J,358.3,405,2)
+ ;;=^332924
+ ;;^UTILITY(U,$J,358.3,406,0)
+ ;;=G47.10^^3^48^12
+ ;;^UTILITY(U,$J,358.3,406,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,343,1,3,0)
- ;;=3^Qualitative platelet defects
- ;;^UTILITY(U,$J,358.3,343,1,4,0)
- ;;=4^D69.1
- ;;^UTILITY(U,$J,358.3,343,2)
- ;;=^101922
- ;;^UTILITY(U,$J,358.3,344,0)
- ;;=D47.3^^2^15^8
- ;;^UTILITY(U,$J,358.3,344,1,0)
+ ;;^UTILITY(U,$J,358.3,406,1,3,0)
+ ;;=3^Hypersomnolence Disorder/Unspec Hypersomnolence Disorder
+ ;;^UTILITY(U,$J,358.3,406,1,4,0)
+ ;;=4^G47.10
+ ;;^UTILITY(U,$J,358.3,406,2)
+ ;;=^332926
+ ;;^UTILITY(U,$J,358.3,407,0)
+ ;;=G47.419^^3^48^17
+ ;;^UTILITY(U,$J,358.3,407,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,344,1,3,0)
- ;;=3^Essential (hemorrhagic) thrombocythemia
- ;;^UTILITY(U,$J,358.3,344,1,4,0)
- ;;=4^D47.3
- ;;^UTILITY(U,$J,358.3,344,2)
- ;;=^5002258
- ;;^UTILITY(U,$J,358.3,345,0)
- ;;=D69.0^^2^15^3
- ;;^UTILITY(U,$J,358.3,345,1,0)
+ ;;^UTILITY(U,$J,358.3,407,1,3,0)
+ ;;=3^Narcolepsy w/o Cataplexy w/ Hypocretin Deficiency
+ ;;^UTILITY(U,$J,358.3,407,1,4,0)
+ ;;=4^G47.419
+ ;;^UTILITY(U,$J,358.3,407,2)
+ ;;=^5003982
+ ;;^UTILITY(U,$J,358.3,408,0)
+ ;;=G47.33^^3^48^21
+ ;;^UTILITY(U,$J,358.3,408,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,345,1,3,0)
- ;;=3^Allergic purpura
- ;;^UTILITY(U,$J,358.3,345,1,4,0)
- ;;=4^D69.0
- ;;^UTILITY(U,$J,358.3,345,2)
- ;;=^5002365
- ;;^UTILITY(U,$J,358.3,346,0)
- ;;=D69.2^^2^15^19
- ;;^UTILITY(U,$J,358.3,346,1,0)
+ ;;^UTILITY(U,$J,358.3,408,1,3,0)
+ ;;=3^Obstructive Sleep Apnea Hypopnea
+ ;;^UTILITY(U,$J,358.3,408,1,4,0)
+ ;;=4^G47.33
+ ;;^UTILITY(U,$J,358.3,408,2)
+ ;;=^332763
+ ;;^UTILITY(U,$J,358.3,409,0)
+ ;;=G47.31^^3^48^1
+ ;;^UTILITY(U,$J,358.3,409,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,346,1,3,0)
- ;;=3^Nonthrombocytopenic purpura NEC
- ;;^UTILITY(U,$J,358.3,346,1,4,0)
- ;;=4^D69.2
- ;;^UTILITY(U,$J,358.3,346,2)
- ;;=^5002366
+ ;;^UTILITY(U,$J,358.3,409,1,3,0)
+ ;;=3^Central Sleep Apnea
+ ;;^UTILITY(U,$J,358.3,409,1,4,0)
+ ;;=4^G47.31
+ ;;^UTILITY(U,$J,358.3,409,2)
+ ;;=^332761
+ ;;^UTILITY(U,$J,358.3,410,0)
+ ;;=G47.21^^3^48^5
+ ;;^UTILITY(U,$J,358.3,410,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,410,1,3,0)
+ ;;=3^Circadian Rhythm Sleep-Wake Disorder;Delayed Sleep Phase Type

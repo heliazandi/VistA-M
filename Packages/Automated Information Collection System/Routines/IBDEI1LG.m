@@ -1,134 +1,134 @@
-IBDEI1LG ; ; 06-AUG-2015
+IBDEI1LG ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,28291,1,4,0)
- ;;=4^V15.84
- ;;^UTILITY(U,$J,358.3,28291,1,5,0)
- ;;=5^Hx Of Asbestos Exposure
- ;;^UTILITY(U,$J,358.3,28291,2)
- ;;=^303406
- ;;^UTILITY(U,$J,358.3,28292,0)
- ;;=V15.85^^162^1794^47
- ;;^UTILITY(U,$J,358.3,28292,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28292,1,4,0)
- ;;=4^V15.85
- ;;^UTILITY(U,$J,358.3,28292,1,5,0)
- ;;=5^Hx Of Potentially Hazardous Body Fluids
- ;;^UTILITY(U,$J,358.3,28292,2)
- ;;=^303407
- ;;^UTILITY(U,$J,358.3,28293,0)
- ;;=V10.72^^162^1794^32
- ;;^UTILITY(U,$J,358.3,28293,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28293,1,4,0)
- ;;=4^V10.72
- ;;^UTILITY(U,$J,358.3,28293,1,5,0)
- ;;=5^Hx Of Hodgkin's Disease
- ;;^UTILITY(U,$J,358.3,28293,2)
- ;;=^295237
- ;;^UTILITY(U,$J,358.3,28294,0)
- ;;=V15.3^^162^1794^33
- ;;^UTILITY(U,$J,358.3,28294,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28294,1,4,0)
- ;;=4^V15.3
- ;;^UTILITY(U,$J,358.3,28294,1,5,0)
- ;;=5^Hx Of Irradiation
- ;;^UTILITY(U,$J,358.3,28294,2)
- ;;=^295285
- ;;^UTILITY(U,$J,358.3,28295,0)
- ;;=V10.61^^162^1794^36
- ;;^UTILITY(U,$J,358.3,28295,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28295,1,4,0)
- ;;=4^V10.61
- ;;^UTILITY(U,$J,358.3,28295,1,5,0)
- ;;=5^Hx Of Lymphoid Leukemia
- ;;^UTILITY(U,$J,358.3,28295,2)
- ;;=Hx of Lymphoid Leukemia^295232
- ;;^UTILITY(U,$J,358.3,28296,0)
- ;;=V12.03^^162^1794^38
- ;;^UTILITY(U,$J,358.3,28296,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28296,1,4,0)
- ;;=4^V12.03
- ;;^UTILITY(U,$J,358.3,28296,1,5,0)
- ;;=5^Hx Of Malaria
- ;;^UTILITY(U,$J,358.3,28296,2)
- ;;=Hx of Malaria^303395
- ;;^UTILITY(U,$J,358.3,28297,0)
- ;;=V10.82^^162^1794^39
- ;;^UTILITY(U,$J,358.3,28297,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28297,1,4,0)
- ;;=4^V10.82
- ;;^UTILITY(U,$J,358.3,28297,1,5,0)
- ;;=5^Hx Of Malignant Melanoma
- ;;^UTILITY(U,$J,358.3,28297,2)
- ;;=Hx of Malignant Melanoma^295240
- ;;^UTILITY(U,$J,358.3,28298,0)
- ;;=V10.62^^162^1794^42
- ;;^UTILITY(U,$J,358.3,28298,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28298,1,4,0)
- ;;=4^V10.62
- ;;^UTILITY(U,$J,358.3,28298,1,5,0)
- ;;=5^Hx Of Myeloid Leukemia
- ;;^UTILITY(U,$J,358.3,28298,2)
- ;;=Hx of Myeloid Leukemia^295233
- ;;^UTILITY(U,$J,358.3,28299,0)
- ;;=V10.63^^162^1794^40
- ;;^UTILITY(U,$J,358.3,28299,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28299,1,4,0)
- ;;=4^V10.63
- ;;^UTILITY(U,$J,358.3,28299,1,5,0)
- ;;=5^Hx Of Monocytic Leukemia
- ;;^UTILITY(U,$J,358.3,28299,2)
- ;;=Hx of Monocytic Leukemia^295234
- ;;^UTILITY(U,$J,358.3,28300,0)
- ;;=V11.2^^162^1794^30
- ;;^UTILITY(U,$J,358.3,28300,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28300,1,4,0)
- ;;=4^V11.2
- ;;^UTILITY(U,$J,358.3,28300,1,5,0)
- ;;=5^Hx Of Dysthymia
- ;;^UTILITY(U,$J,358.3,28300,2)
- ;;=Hx of Dysthymia^295251
- ;;^UTILITY(U,$J,358.3,28301,0)
- ;;=V15.81^^162^1794^60
- ;;^UTILITY(U,$J,358.3,28301,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28301,1,4,0)
- ;;=4^V15.81
- ;;^UTILITY(U,$J,358.3,28301,1,5,0)
- ;;=5^Noncompliance With Medical Treatment
- ;;^UTILITY(U,$J,358.3,28301,2)
- ;;=^295290
- ;;^UTILITY(U,$J,358.3,28302,0)
- ;;=V10.43^^162^1794^43
- ;;^UTILITY(U,$J,358.3,28302,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28302,1,4,0)
- ;;=4^V10.43
- ;;^UTILITY(U,$J,358.3,28302,1,5,0)
- ;;=5^Hx Of Ovarian Ca
- ;;^UTILITY(U,$J,358.3,28302,2)
- ;;=Hx of Ovarian CA^295221
- ;;^UTILITY(U,$J,358.3,28303,0)
- ;;=V12.71^^162^1794^45
- ;;^UTILITY(U,$J,358.3,28303,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28303,1,4,0)
- ;;=4^V12.71
- ;;^UTILITY(U,$J,358.3,28303,1,5,0)
- ;;=5^Hx Of Peptic Ulcer Disease
- ;;^UTILITY(U,$J,358.3,28303,2)
- ;;=^303400
- ;;^UTILITY(U,$J,358.3,28304,0)
- ;;=V10.46^^162^1794^48
- ;;^UTILITY(U,$J,358.3,28304,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,27020,1,4,0)
+ ;;=4^F44.4
+ ;;^UTILITY(U,$J,358.3,27020,2)
+ ;;=^5003579
+ ;;^UTILITY(U,$J,358.3,27021,0)
+ ;;=F44.6^^100^1304^3
+ ;;^UTILITY(U,$J,358.3,27021,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27021,1,3,0)
+ ;;=3^Conversion Disorder w/ Anesthesia or Sensory Loss
+ ;;^UTILITY(U,$J,358.3,27021,1,4,0)
+ ;;=4^F44.6
+ ;;^UTILITY(U,$J,358.3,27021,2)
+ ;;=^5003581
+ ;;^UTILITY(U,$J,358.3,27022,0)
+ ;;=F44.5^^100^1304^4
+ ;;^UTILITY(U,$J,358.3,27022,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27022,1,3,0)
+ ;;=3^Conversion Disorder w/ Attacks or Seizures
+ ;;^UTILITY(U,$J,358.3,27022,1,4,0)
+ ;;=4^F44.5
+ ;;^UTILITY(U,$J,358.3,27022,2)
+ ;;=^5003580
+ ;;^UTILITY(U,$J,358.3,27023,0)
+ ;;=F44.7^^100^1304^5
+ ;;^UTILITY(U,$J,358.3,27023,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27023,1,3,0)
+ ;;=3^Conversion Disorder w/ Mixed Symptoms
+ ;;^UTILITY(U,$J,358.3,27023,1,4,0)
+ ;;=4^F44.7
+ ;;^UTILITY(U,$J,358.3,27023,2)
+ ;;=^5003582
+ ;;^UTILITY(U,$J,358.3,27024,0)
+ ;;=F68.10^^100^1304^6
+ ;;^UTILITY(U,$J,358.3,27024,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27024,1,3,0)
+ ;;=3^Factitious Disorder
+ ;;^UTILITY(U,$J,358.3,27024,1,4,0)
+ ;;=4^F68.10
+ ;;^UTILITY(U,$J,358.3,27024,2)
+ ;;=^5003663
+ ;;^UTILITY(U,$J,358.3,27025,0)
+ ;;=F54.^^100^1304^12
+ ;;^UTILITY(U,$J,358.3,27025,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27025,1,3,0)
+ ;;=3^Psychological Factors Affecting Oth Med Conditions
+ ;;^UTILITY(U,$J,358.3,27025,1,4,0)
+ ;;=4^F54.
+ ;;^UTILITY(U,$J,358.3,27025,2)
+ ;;=^5003627
+ ;;^UTILITY(U,$J,358.3,27026,0)
+ ;;=F91.2^^100^1305^1
+ ;;^UTILITY(U,$J,358.3,27026,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27026,1,3,0)
+ ;;=3^Conduct Disorder,Adolescent-Onset Type
+ ;;^UTILITY(U,$J,358.3,27026,1,4,0)
+ ;;=4^F91.2
+ ;;^UTILITY(U,$J,358.3,27026,2)
+ ;;=^5003699
+ ;;^UTILITY(U,$J,358.3,27027,0)
+ ;;=F91.1^^100^1305^2
+ ;;^UTILITY(U,$J,358.3,27027,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27027,1,3,0)
+ ;;=3^Conduct Disorder,Childhood-Onset Type
+ ;;^UTILITY(U,$J,358.3,27027,1,4,0)
+ ;;=4^F91.1
+ ;;^UTILITY(U,$J,358.3,27027,2)
+ ;;=^5003698
+ ;;^UTILITY(U,$J,358.3,27028,0)
+ ;;=F91.9^^100^1305^3
+ ;;^UTILITY(U,$J,358.3,27028,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27028,1,3,0)
+ ;;=3^Conduct Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,27028,1,4,0)
+ ;;=4^F91.9
+ ;;^UTILITY(U,$J,358.3,27028,2)
+ ;;=^5003701
+ ;;^UTILITY(U,$J,358.3,27029,0)
+ ;;=F63.81^^100^1305^5
+ ;;^UTILITY(U,$J,358.3,27029,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27029,1,3,0)
+ ;;=3^Intermittent Explosive Disorder
+ ;;^UTILITY(U,$J,358.3,27029,1,4,0)
+ ;;=4^F63.81
+ ;;^UTILITY(U,$J,358.3,27029,2)
+ ;;=^5003644
+ ;;^UTILITY(U,$J,358.3,27030,0)
+ ;;=F63.2^^100^1305^6
+ ;;^UTILITY(U,$J,358.3,27030,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27030,1,3,0)
+ ;;=3^Kleptomania
+ ;;^UTILITY(U,$J,358.3,27030,1,4,0)
+ ;;=4^F63.2
+ ;;^UTILITY(U,$J,358.3,27030,2)
+ ;;=^5003642
+ ;;^UTILITY(U,$J,358.3,27031,0)
+ ;;=F91.3^^100^1305^7
+ ;;^UTILITY(U,$J,358.3,27031,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27031,1,3,0)
+ ;;=3^Oppositional Defiant Disorder
+ ;;^UTILITY(U,$J,358.3,27031,1,4,0)
+ ;;=4^F91.3
+ ;;^UTILITY(U,$J,358.3,27031,2)
+ ;;=^331955
+ ;;^UTILITY(U,$J,358.3,27032,0)
+ ;;=F91.8^^100^1305^4
+ ;;^UTILITY(U,$J,358.3,27032,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27032,1,3,0)
+ ;;=3^Disruptive,Impulse-Control,Conduct Disorder,Oth Specified
+ ;;^UTILITY(U,$J,358.3,27032,1,4,0)
+ ;;=4^F91.8
+ ;;^UTILITY(U,$J,358.3,27032,2)
+ ;;=^5003700
+ ;;^UTILITY(U,$J,358.3,27033,0)
+ ;;=F63.1^^100^1305^8
+ ;;^UTILITY(U,$J,358.3,27033,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27033,1,3,0)
+ ;;=3^Pyromania

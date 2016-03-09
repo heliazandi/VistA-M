@@ -1,130 +1,134 @@
-IBDEI02J ; ; 06-AUG-2015
+IBDEI02J ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,635,2)
- ;;=^5063438
- ;;^UTILITY(U,$J,358.3,636,0)
- ;;=Z85.818^^2^27^4
- ;;^UTILITY(U,$J,358.3,636,1,0)
+ ;;^UTILITY(U,$J,358.3,698,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,636,1,3,0)
- ;;=3^Personal history of malignant neoplasm of site of lip, oral cav, & pharynx
- ;;^UTILITY(U,$J,358.3,636,1,4,0)
- ;;=4^Z85.818
- ;;^UTILITY(U,$J,358.3,636,2)
- ;;=^5063439
- ;;^UTILITY(U,$J,358.3,637,0)
- ;;=Z85.01^^2^27^5
- ;;^UTILITY(U,$J,358.3,637,1,0)
+ ;;^UTILITY(U,$J,358.3,698,1,2,0)
+ ;;=2^NERVE BLK CERVICAL PLEXUS,INJ
+ ;;^UTILITY(U,$J,358.3,698,1,4,0)
+ ;;=4^64413
+ ;;^UTILITY(U,$J,358.3,699,0)
+ ;;=64402^^5^72^8^^^^1
+ ;;^UTILITY(U,$J,358.3,699,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,637,1,3,0)
- ;;=3^Personal history of malignant neoplasm of esophagus
- ;;^UTILITY(U,$J,358.3,637,1,4,0)
- ;;=4^Z85.01
- ;;^UTILITY(U,$J,358.3,637,2)
- ;;=^5063395
- ;;^UTILITY(U,$J,358.3,638,0)
- ;;=Z85.028^^2^27^6
- ;;^UTILITY(U,$J,358.3,638,1,0)
+ ;;^UTILITY(U,$J,358.3,699,1,2,0)
+ ;;=2^NERVE BLK FACIAL NERVE,INJ
+ ;;^UTILITY(U,$J,358.3,699,1,4,0)
+ ;;=4^64402
+ ;;^UTILITY(U,$J,358.3,700,0)
+ ;;=64447^^5^72^10^^^^1
+ ;;^UTILITY(U,$J,358.3,700,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,638,1,3,0)
- ;;=3^Personal history of malignant neoplasm of stomach NEC
- ;;^UTILITY(U,$J,358.3,638,1,4,0)
- ;;=4^Z85.028
- ;;^UTILITY(U,$J,358.3,638,2)
- ;;=^5063397
- ;;^UTILITY(U,$J,358.3,639,0)
- ;;=Z85.038^^2^27^7
- ;;^UTILITY(U,$J,358.3,639,1,0)
+ ;;^UTILITY(U,$J,358.3,700,1,2,0)
+ ;;=2^NERVE BLK FEMORAL NERVE,SNGL INJ
+ ;;^UTILITY(U,$J,358.3,700,1,4,0)
+ ;;=4^64447
+ ;;^UTILITY(U,$J,358.3,701,0)
+ ;;=64448^^5^72^9^^^^1
+ ;;^UTILITY(U,$J,358.3,701,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,639,1,3,0)
- ;;=3^Personal history of malignant neoplasm of large intestine
- ;;^UTILITY(U,$J,358.3,639,1,4,0)
- ;;=4^Z85.038
- ;;^UTILITY(U,$J,358.3,639,2)
- ;;=^5063399
- ;;^UTILITY(U,$J,358.3,640,0)
- ;;=Z85.048^^2^27^8
- ;;^UTILITY(U,$J,358.3,640,1,0)
+ ;;^UTILITY(U,$J,358.3,701,1,2,0)
+ ;;=2^NERVE BLK FEMORAL NERVE,CONT INFUSION
+ ;;^UTILITY(U,$J,358.3,701,1,4,0)
+ ;;=4^64448
+ ;;^UTILITY(U,$J,358.3,702,0)
+ ;;=64405^^5^72^11^^^^1
+ ;;^UTILITY(U,$J,358.3,702,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,640,1,3,0)
- ;;=3^Personal history of malignant neoplasm of rectum, rectosig junct, and anus
- ;;^UTILITY(U,$J,358.3,640,1,4,0)
- ;;=4^Z85.048
- ;;^UTILITY(U,$J,358.3,640,2)
- ;;=^5063401
- ;;^UTILITY(U,$J,358.3,641,0)
- ;;=Z85.05^^2^27^9
- ;;^UTILITY(U,$J,358.3,641,1,0)
+ ;;^UTILITY(U,$J,358.3,702,1,2,0)
+ ;;=2^NERVE BLK GREATER OCCIPITAL NERVE,INJ
+ ;;^UTILITY(U,$J,358.3,702,1,4,0)
+ ;;=4^64405
+ ;;^UTILITY(U,$J,358.3,703,0)
+ ;;=64425^^5^72^12^^^^1
+ ;;^UTILITY(U,$J,358.3,703,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,641,1,3,0)
- ;;=3^Personal history of malignant neoplasm of liver
- ;;^UTILITY(U,$J,358.3,641,1,4,0)
- ;;=4^Z85.05
- ;;^UTILITY(U,$J,358.3,641,2)
- ;;=^5063402
- ;;^UTILITY(U,$J,358.3,642,0)
- ;;=Z85.068^^2^27^10
- ;;^UTILITY(U,$J,358.3,642,1,0)
+ ;;^UTILITY(U,$J,358.3,703,1,2,0)
+ ;;=2^NERVE BLK ILIOINGUINAL/ILIOHYPOGASTRIC,INJ
+ ;;^UTILITY(U,$J,358.3,703,1,4,0)
+ ;;=4^64425
+ ;;^UTILITY(U,$J,358.3,704,0)
+ ;;=64450^^5^72^17^^^^1
+ ;;^UTILITY(U,$J,358.3,704,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,642,1,3,0)
- ;;=3^Personal history of malignant neoplasm of small intestine
- ;;^UTILITY(U,$J,358.3,642,1,4,0)
- ;;=4^Z85.068
- ;;^UTILITY(U,$J,358.3,642,2)
- ;;=^5063404
- ;;^UTILITY(U,$J,358.3,643,0)
- ;;=Z85.07^^2^27^11
- ;;^UTILITY(U,$J,358.3,643,1,0)
+ ;;^UTILITY(U,$J,358.3,704,1,2,0)
+ ;;=2^NERVE BLK PERIPH NERVE/BRANCH NEC
+ ;;^UTILITY(U,$J,358.3,704,1,4,0)
+ ;;=4^64450
+ ;;^UTILITY(U,$J,358.3,705,0)
+ ;;=64508^^5^72^5^^^^1
+ ;;^UTILITY(U,$J,358.3,705,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,643,1,3,0)
- ;;=3^Personal history of malignant neoplasm of pancreas
- ;;^UTILITY(U,$J,358.3,643,1,4,0)
- ;;=4^Z85.07
- ;;^UTILITY(U,$J,358.3,643,2)
- ;;=^5063405
- ;;^UTILITY(U,$J,358.3,644,0)
- ;;=Z85.09^^2^27^12
- ;;^UTILITY(U,$J,358.3,644,1,0)
+ ;;^UTILITY(U,$J,358.3,705,1,2,0)
+ ;;=2^NERVE BLK CAROTID SINUS,INJ
+ ;;^UTILITY(U,$J,358.3,705,1,4,0)
+ ;;=4^64508
+ ;;^UTILITY(U,$J,358.3,706,0)
+ ;;=64530^^5^72^6^^^^1
+ ;;^UTILITY(U,$J,358.3,706,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,644,1,3,0)
- ;;=3^Personal history of malignant neoplasm of digestive organs
- ;;^UTILITY(U,$J,358.3,644,1,4,0)
- ;;=4^Z85.09
- ;;^UTILITY(U,$J,358.3,644,2)
- ;;=^5063406
- ;;^UTILITY(U,$J,358.3,645,0)
- ;;=Z85.118^^2^27^13
- ;;^UTILITY(U,$J,358.3,645,1,0)
+ ;;^UTILITY(U,$J,358.3,706,1,2,0)
+ ;;=2^NERVE BLK CELIAC PLEXUS,INJ
+ ;;^UTILITY(U,$J,358.3,706,1,4,0)
+ ;;=4^64530
+ ;;^UTILITY(U,$J,358.3,707,0)
+ ;;=64520^^5^72^15^^^^1
+ ;;^UTILITY(U,$J,358.3,707,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,645,1,3,0)
- ;;=3^Personal history of malignant neoplasm of bronchus and lung
- ;;^UTILITY(U,$J,358.3,645,1,4,0)
- ;;=4^Z85.118
- ;;^UTILITY(U,$J,358.3,645,2)
- ;;=^5063408
- ;;^UTILITY(U,$J,358.3,646,0)
- ;;=Z85.12^^2^27^14
- ;;^UTILITY(U,$J,358.3,646,1,0)
+ ;;^UTILITY(U,$J,358.3,707,1,2,0)
+ ;;=2^NERVE BLK LUMBAR/THORACIC,INJ
+ ;;^UTILITY(U,$J,358.3,707,1,4,0)
+ ;;=4^64520
+ ;;^UTILITY(U,$J,358.3,708,0)
+ ;;=64505^^5^72^22^^^^1
+ ;;^UTILITY(U,$J,358.3,708,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,646,1,3,0)
- ;;=3^Personal history of malignant neoplasm of trachea
- ;;^UTILITY(U,$J,358.3,646,1,4,0)
- ;;=4^Z85.12
- ;;^UTILITY(U,$J,358.3,646,2)
- ;;=^5063409
- ;;^UTILITY(U,$J,358.3,647,0)
- ;;=Z85.21^^2^27^15
- ;;^UTILITY(U,$J,358.3,647,1,0)
+ ;;^UTILITY(U,$J,358.3,708,1,2,0)
+ ;;=2^NERVE BLK SPHEOPALATINE GANGLION
+ ;;^UTILITY(U,$J,358.3,708,1,4,0)
+ ;;=4^64505
+ ;;^UTILITY(U,$J,358.3,709,0)
+ ;;=64420^^5^72^13^^^^1
+ ;;^UTILITY(U,$J,358.3,709,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,647,1,3,0)
- ;;=3^Personal history of malignant neoplasm of larynx
- ;;^UTILITY(U,$J,358.3,647,1,4,0)
- ;;=4^Z85.21
- ;;^UTILITY(U,$J,358.3,647,2)
- ;;=^5063411
- ;;^UTILITY(U,$J,358.3,648,0)
- ;;=Z85.22^^2^27^16
- ;;^UTILITY(U,$J,358.3,648,1,0)
+ ;;^UTILITY(U,$J,358.3,709,1,2,0)
+ ;;=2^NERVE BLK INTERCOSTAL NERVE,SNGL INJ
+ ;;^UTILITY(U,$J,358.3,709,1,4,0)
+ ;;=4^64420
+ ;;^UTILITY(U,$J,358.3,710,0)
+ ;;=64421^^5^72^14^^^^1
+ ;;^UTILITY(U,$J,358.3,710,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,710,1,2,0)
+ ;;=2^NERVE BLK INTERCOSTAL,MULTI,REG BLK
+ ;;^UTILITY(U,$J,358.3,710,1,4,0)
+ ;;=4^64421
+ ;;^UTILITY(U,$J,358.3,711,0)
+ ;;=64435^^5^72^16^^^^1
+ ;;^UTILITY(U,$J,358.3,711,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,711,1,2,0)
+ ;;=2^NERVE BLK PARACERVICAL,INJ
+ ;;^UTILITY(U,$J,358.3,711,1,4,0)
+ ;;=4^64435
+ ;;^UTILITY(U,$J,358.3,712,0)
+ ;;=64410^^5^72^18^^^^1
+ ;;^UTILITY(U,$J,358.3,712,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,712,1,2,0)
+ ;;=2^NERVE BLK PHRENIC NERVE,INJ
+ ;;^UTILITY(U,$J,358.3,712,1,4,0)
+ ;;=4^64410
+ ;;^UTILITY(U,$J,358.3,713,0)
+ ;;=64430^^5^72^19^^^^1
+ ;;^UTILITY(U,$J,358.3,713,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,713,1,2,0)
+ ;;=2^NERVE BLK PUDENDAL NERVE,INJ
+ ;;^UTILITY(U,$J,358.3,713,1,4,0)
+ ;;=4^64430
+ ;;^UTILITY(U,$J,358.3,714,0)
+ ;;=64445^^5^72^21^^^^1
+ ;;^UTILITY(U,$J,358.3,714,1,0)
  ;;=^358.31IA^4^2

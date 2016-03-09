@@ -1,126 +1,120 @@
-IBDEI1PX ; ; 06-AUG-2015
+IBDEI1PX ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30421,1,0)
+ ;;^UTILITY(U,$J,358.3,29171,2)
+ ;;=^5016989
+ ;;^UTILITY(U,$J,358.3,29172,0)
+ ;;=O36.5130^^115^1455^134
+ ;;^UTILITY(U,$J,358.3,29172,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30421,1,3,0)
- ;;=3^Polyhydramnios, third trimester, not applicable or unsp
- ;;^UTILITY(U,$J,358.3,30421,1,4,0)
- ;;=4^O40.3XX0
- ;;^UTILITY(U,$J,358.3,30421,2)
- ;;=^5017201
- ;;^UTILITY(U,$J,358.3,30422,0)
- ;;=O40.3XX1^^178^1916^212
- ;;^UTILITY(U,$J,358.3,30422,1,0)
+ ;;^UTILITY(U,$J,358.3,29172,1,3,0)
+ ;;=3^Maternal care for known or susp placntl insuff, 3rd tri, unsp
+ ;;^UTILITY(U,$J,358.3,29172,1,4,0)
+ ;;=4^O36.5130
+ ;;^UTILITY(U,$J,358.3,29172,2)
+ ;;=^5016991
+ ;;^UTILITY(U,$J,358.3,29173,0)
+ ;;=O36.5131^^115^1455^135
+ ;;^UTILITY(U,$J,358.3,29173,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30422,1,3,0)
- ;;=3^Polyhydramnios, third trimester, fetus 1
- ;;^UTILITY(U,$J,358.3,30422,1,4,0)
- ;;=4^O40.3XX1
- ;;^UTILITY(U,$J,358.3,30422,2)
- ;;=^5017202
- ;;^UTILITY(U,$J,358.3,30423,0)
- ;;=O40.3XX2^^178^1916^213
- ;;^UTILITY(U,$J,358.3,30423,1,0)
+ ;;^UTILITY(U,$J,358.3,29173,1,3,0)
+ ;;=3^Maternal care for known or susp placntl insuff, 3rd tri, fts1
+ ;;^UTILITY(U,$J,358.3,29173,1,4,0)
+ ;;=4^O36.5131
+ ;;^UTILITY(U,$J,358.3,29173,2)
+ ;;=^5016992
+ ;;^UTILITY(U,$J,358.3,29174,0)
+ ;;=O36.5132^^115^1455^136
+ ;;^UTILITY(U,$J,358.3,29174,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30423,1,3,0)
- ;;=3^Polyhydramnios, third trimester, fetus 2
- ;;^UTILITY(U,$J,358.3,30423,1,4,0)
- ;;=4^O40.3XX2
- ;;^UTILITY(U,$J,358.3,30423,2)
- ;;=^5017203
- ;;^UTILITY(U,$J,358.3,30424,0)
- ;;=O40.3XX3^^178^1916^214
- ;;^UTILITY(U,$J,358.3,30424,1,0)
+ ;;^UTILITY(U,$J,358.3,29174,1,3,0)
+ ;;=3^Maternal care for known or susp placntl insuff, 3rd tri, fts2
+ ;;^UTILITY(U,$J,358.3,29174,1,4,0)
+ ;;=4^O36.5132
+ ;;^UTILITY(U,$J,358.3,29174,2)
+ ;;=^5016993
+ ;;^UTILITY(U,$J,358.3,29175,0)
+ ;;=O36.5133^^115^1455^137
+ ;;^UTILITY(U,$J,358.3,29175,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30424,1,3,0)
- ;;=3^Polyhydramnios, third trimester, fetus 3
- ;;^UTILITY(U,$J,358.3,30424,1,4,0)
- ;;=4^O40.3XX3
- ;;^UTILITY(U,$J,358.3,30424,2)
- ;;=^5017204
- ;;^UTILITY(U,$J,358.3,30425,0)
- ;;=O40.3XX4^^178^1916^215
- ;;^UTILITY(U,$J,358.3,30425,1,0)
+ ;;^UTILITY(U,$J,358.3,29175,1,3,0)
+ ;;=3^Maternal care for known or susp placntl insuff, 3rd tri, fts3
+ ;;^UTILITY(U,$J,358.3,29175,1,4,0)
+ ;;=4^O36.5133
+ ;;^UTILITY(U,$J,358.3,29175,2)
+ ;;=^5016994
+ ;;^UTILITY(U,$J,358.3,29176,0)
+ ;;=O36.5134^^115^1455^138
+ ;;^UTILITY(U,$J,358.3,29176,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30425,1,3,0)
- ;;=3^Polyhydramnios, third trimester, fetus 4
- ;;^UTILITY(U,$J,358.3,30425,1,4,0)
- ;;=4^O40.3XX4
- ;;^UTILITY(U,$J,358.3,30425,2)
- ;;=^5017205
- ;;^UTILITY(U,$J,358.3,30426,0)
- ;;=O40.3XX5^^178^1916^216
- ;;^UTILITY(U,$J,358.3,30426,1,0)
+ ;;^UTILITY(U,$J,358.3,29176,1,3,0)
+ ;;=3^Maternal care for known or susp placntl insuff, 3rd tri, fts4
+ ;;^UTILITY(U,$J,358.3,29176,1,4,0)
+ ;;=4^O36.5134
+ ;;^UTILITY(U,$J,358.3,29176,2)
+ ;;=^5016995
+ ;;^UTILITY(U,$J,358.3,29177,0)
+ ;;=O36.5135^^115^1455^139
+ ;;^UTILITY(U,$J,358.3,29177,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30426,1,3,0)
- ;;=3^Polyhydramnios, third trimester, fetus 5
- ;;^UTILITY(U,$J,358.3,30426,1,4,0)
- ;;=4^O40.3XX5
- ;;^UTILITY(U,$J,358.3,30426,2)
- ;;=^5017206
- ;;^UTILITY(U,$J,358.3,30427,0)
- ;;=O41.01X0^^178^1917^44
- ;;^UTILITY(U,$J,358.3,30427,1,0)
+ ;;^UTILITY(U,$J,358.3,29177,1,3,0)
+ ;;=3^Maternal care for known or susp placntl insuff, 3rd tri, fts5
+ ;;^UTILITY(U,$J,358.3,29177,1,4,0)
+ ;;=4^O36.5135
+ ;;^UTILITY(U,$J,358.3,29177,2)
+ ;;=^5016996
+ ;;^UTILITY(U,$J,358.3,29178,0)
+ ;;=O36.5910^^115^1455^164
+ ;;^UTILITY(U,$J,358.3,29178,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30427,1,3,0)
- ;;=3^Oligohydramnios, first trimester, not applicable or unsp
- ;;^UTILITY(U,$J,358.3,30427,1,4,0)
- ;;=4^O41.01X0
- ;;^UTILITY(U,$J,358.3,30427,2)
- ;;=^5017220
- ;;^UTILITY(U,$J,358.3,30428,0)
- ;;=O41.01X1^^178^1917^39
- ;;^UTILITY(U,$J,358.3,30428,1,0)
+ ;;^UTILITY(U,$J,358.3,29178,1,3,0)
+ ;;=3^Maternal care for oth or susp poor fetl grth, 1st tri, unsp
+ ;;^UTILITY(U,$J,358.3,29178,1,4,0)
+ ;;=4^O36.5910
+ ;;^UTILITY(U,$J,358.3,29178,2)
+ ;;=^5017003
+ ;;^UTILITY(U,$J,358.3,29179,0)
+ ;;=O36.5911^^115^1455^165
+ ;;^UTILITY(U,$J,358.3,29179,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30428,1,3,0)
- ;;=3^Oligohydramnios, first trimester, fetus 1
- ;;^UTILITY(U,$J,358.3,30428,1,4,0)
- ;;=4^O41.01X1
- ;;^UTILITY(U,$J,358.3,30428,2)
- ;;=^5017221
- ;;^UTILITY(U,$J,358.3,30429,0)
- ;;=O41.01X2^^178^1917^40
- ;;^UTILITY(U,$J,358.3,30429,1,0)
+ ;;^UTILITY(U,$J,358.3,29179,1,3,0)
+ ;;=3^Maternal care for oth or susp poor fetl grth, 1st tri, fts1
+ ;;^UTILITY(U,$J,358.3,29179,1,4,0)
+ ;;=4^O36.5911
+ ;;^UTILITY(U,$J,358.3,29179,2)
+ ;;=^5017004
+ ;;^UTILITY(U,$J,358.3,29180,0)
+ ;;=O36.5912^^115^1455^166
+ ;;^UTILITY(U,$J,358.3,29180,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30429,1,3,0)
- ;;=3^Oligohydramnios, first trimester, fetus 2
- ;;^UTILITY(U,$J,358.3,30429,1,4,0)
- ;;=4^O41.01X2
- ;;^UTILITY(U,$J,358.3,30429,2)
- ;;=^5017222
- ;;^UTILITY(U,$J,358.3,30430,0)
- ;;=O41.01X3^^178^1917^41
- ;;^UTILITY(U,$J,358.3,30430,1,0)
+ ;;^UTILITY(U,$J,358.3,29180,1,3,0)
+ ;;=3^Maternal care for oth or susp poor fetl grth, 1st tri, fts2
+ ;;^UTILITY(U,$J,358.3,29180,1,4,0)
+ ;;=4^O36.5912
+ ;;^UTILITY(U,$J,358.3,29180,2)
+ ;;=^5017005
+ ;;^UTILITY(U,$J,358.3,29181,0)
+ ;;=O36.5913^^115^1455^167
+ ;;^UTILITY(U,$J,358.3,29181,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30430,1,3,0)
- ;;=3^Oligohydramnios, first trimester, fetus 3
- ;;^UTILITY(U,$J,358.3,30430,1,4,0)
- ;;=4^O41.01X3
- ;;^UTILITY(U,$J,358.3,30430,2)
- ;;=^5017223
- ;;^UTILITY(U,$J,358.3,30431,0)
- ;;=O41.01X4^^178^1917^42
- ;;^UTILITY(U,$J,358.3,30431,1,0)
+ ;;^UTILITY(U,$J,358.3,29181,1,3,0)
+ ;;=3^Maternal care for oth or susp poor fetl grth, 1st tri, fts3
+ ;;^UTILITY(U,$J,358.3,29181,1,4,0)
+ ;;=4^O36.5913
+ ;;^UTILITY(U,$J,358.3,29181,2)
+ ;;=^5017006
+ ;;^UTILITY(U,$J,358.3,29182,0)
+ ;;=O36.5914^^115^1455^168
+ ;;^UTILITY(U,$J,358.3,29182,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30431,1,3,0)
- ;;=3^Oligohydramnios, first trimester, fetus 4
- ;;^UTILITY(U,$J,358.3,30431,1,4,0)
- ;;=4^O41.01X4
- ;;^UTILITY(U,$J,358.3,30431,2)
- ;;=^5017224
- ;;^UTILITY(U,$J,358.3,30432,0)
- ;;=O41.01X5^^178^1917^43
- ;;^UTILITY(U,$J,358.3,30432,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30432,1,3,0)
- ;;=3^Oligohydramnios, first trimester, fetus 5
- ;;^UTILITY(U,$J,358.3,30432,1,4,0)
- ;;=4^O41.01X5
- ;;^UTILITY(U,$J,358.3,30432,2)
- ;;=^5017225
- ;;^UTILITY(U,$J,358.3,30433,0)
- ;;=O41.02X0^^178^1917^50
- ;;^UTILITY(U,$J,358.3,30433,1,0)
+ ;;^UTILITY(U,$J,358.3,29182,1,3,0)
+ ;;=3^Maternal care for oth or susp poor fetl grth, 1st tri, fts4
+ ;;^UTILITY(U,$J,358.3,29182,1,4,0)
+ ;;=4^O36.5914
+ ;;^UTILITY(U,$J,358.3,29182,2)
+ ;;=^5017007
+ ;;^UTILITY(U,$J,358.3,29183,0)
+ ;;=O36.5915^^115^1455^169
+ ;;^UTILITY(U,$J,358.3,29183,1,0)
  ;;=^358.31IA^4^2

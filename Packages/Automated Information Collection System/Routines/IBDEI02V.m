@@ -1,130 +1,140 @@
-IBDEI02V ; ; 06-AUG-2015
+IBDEI02V ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,798,2)
- ;;=^5133686
- ;;^UTILITY(U,$J,358.3,799,0)
- ;;=L97.921^^3^32^56
- ;;^UTILITY(U,$J,358.3,799,1,0)
+ ;;^UTILITY(U,$J,358.3,882,1,4,0)
+ ;;=4^F02.81
+ ;;^UTILITY(U,$J,358.3,882,2)
+ ;;=^5003049
+ ;;^UTILITY(U,$J,358.3,883,0)
+ ;;=F32.9^^6^101^6
+ ;;^UTILITY(U,$J,358.3,883,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,799,1,3,0)
- ;;=3^Non-prs chr ulc unsp prt of l low leg limited to brkdwn skin
- ;;^UTILITY(U,$J,358.3,799,1,4,0)
- ;;=4^L97.921
- ;;^UTILITY(U,$J,358.3,799,2)
- ;;=^5133680
- ;;^UTILITY(U,$J,358.3,800,0)
- ;;=L97.919^^3^32^62
- ;;^UTILITY(U,$J,358.3,800,1,0)
+ ;;^UTILITY(U,$J,358.3,883,1,3,0)
+ ;;=3^Depressive Disorder,Major,Single Episode,Unspec
+ ;;^UTILITY(U,$J,358.3,883,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,883,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,884,0)
+ ;;=K57.30^^6^101^19
+ ;;^UTILITY(U,$J,358.3,884,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,800,1,3,0)
- ;;=3^Non-prs chr ulc unsp prt of r low leg w unsp severity
- ;;^UTILITY(U,$J,358.3,800,1,4,0)
- ;;=4^L97.919
- ;;^UTILITY(U,$J,358.3,800,2)
- ;;=^5133688
- ;;^UTILITY(U,$J,358.3,801,0)
- ;;=L97.913^^3^32^63
- ;;^UTILITY(U,$J,358.3,801,1,0)
+ ;;^UTILITY(U,$J,358.3,884,1,3,0)
+ ;;=3^Diverticulosis Lg Intest w/o Perforation/Abscess w/o Bleeding
+ ;;^UTILITY(U,$J,358.3,884,1,4,0)
+ ;;=4^K57.30
+ ;;^UTILITY(U,$J,358.3,884,2)
+ ;;=^5008723
+ ;;^UTILITY(U,$J,358.3,885,0)
+ ;;=R42.^^6^101^20
+ ;;^UTILITY(U,$J,358.3,885,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,801,1,3,0)
- ;;=3^Non-prs chr ulc unsp prt of r low leg w necros muscle
- ;;^UTILITY(U,$J,358.3,801,1,4,0)
- ;;=4^L97.913
- ;;^UTILITY(U,$J,358.3,801,2)
- ;;=^5133683
- ;;^UTILITY(U,$J,358.3,802,0)
- ;;=L97.914^^3^32^64
- ;;^UTILITY(U,$J,358.3,802,1,0)
+ ;;^UTILITY(U,$J,358.3,885,1,3,0)
+ ;;=3^Dizziness and Giddiness
+ ;;^UTILITY(U,$J,358.3,885,1,4,0)
+ ;;=4^R42.
+ ;;^UTILITY(U,$J,358.3,885,2)
+ ;;=^5019450
+ ;;^UTILITY(U,$J,358.3,886,0)
+ ;;=R06.00^^6^101^24
+ ;;^UTILITY(U,$J,358.3,886,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,802,1,3,0)
- ;;=3^Non-prs chr ulc unsp prt of r low leg w necrosis of bone
- ;;^UTILITY(U,$J,358.3,802,1,4,0)
- ;;=4^L97.914
- ;;^UTILITY(U,$J,358.3,802,2)
- ;;=^5133685
- ;;^UTILITY(U,$J,358.3,803,0)
- ;;=L97.912^^3^32^65
- ;;^UTILITY(U,$J,358.3,803,1,0)
+ ;;^UTILITY(U,$J,358.3,886,1,3,0)
+ ;;=3^Dyspnea,Unspec
+ ;;^UTILITY(U,$J,358.3,886,1,4,0)
+ ;;=4^R06.00
+ ;;^UTILITY(U,$J,358.3,886,2)
+ ;;=^5019180
+ ;;^UTILITY(U,$J,358.3,887,0)
+ ;;=R13.10^^6^101^23
+ ;;^UTILITY(U,$J,358.3,887,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,803,1,3,0)
- ;;=3^Non-prs chr ulc unsp prt of r low leg w fat layer exposed
- ;;^UTILITY(U,$J,358.3,803,1,4,0)
- ;;=4^L97.912
- ;;^UTILITY(U,$J,358.3,803,2)
- ;;=^5133681
- ;;^UTILITY(U,$J,358.3,804,0)
- ;;=L97.911^^3^32^61
- ;;^UTILITY(U,$J,358.3,804,1,0)
+ ;;^UTILITY(U,$J,358.3,887,1,3,0)
+ ;;=3^Dysphagia,Unspec
+ ;;^UTILITY(U,$J,358.3,887,1,4,0)
+ ;;=4^R13.10
+ ;;^UTILITY(U,$J,358.3,887,2)
+ ;;=^335307
+ ;;^UTILITY(U,$J,358.3,888,0)
+ ;;=R19.7^^6^101^18
+ ;;^UTILITY(U,$J,358.3,888,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,804,1,3,0)
- ;;=3^Non-prs chr ulc unsp prt of r low leg limited to brkdwn skin
- ;;^UTILITY(U,$J,358.3,804,1,4,0)
- ;;=4^L97.911
- ;;^UTILITY(U,$J,358.3,804,2)
- ;;=^5133679
- ;;^UTILITY(U,$J,358.3,805,0)
- ;;=L97.112^^3^32^102
- ;;^UTILITY(U,$J,358.3,805,1,0)
+ ;;^UTILITY(U,$J,358.3,888,1,3,0)
+ ;;=3^Diarrhea,Unspec
+ ;;^UTILITY(U,$J,358.3,888,1,4,0)
+ ;;=4^R19.7
+ ;;^UTILITY(U,$J,358.3,888,2)
+ ;;=^5019276
+ ;;^UTILITY(U,$J,358.3,889,0)
+ ;;=L30.9^^6^101^7
+ ;;^UTILITY(U,$J,358.3,889,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,805,1,3,0)
- ;;=3^Non-prs chr ulcer of right thigh w fat layer exposed
- ;;^UTILITY(U,$J,358.3,805,1,4,0)
- ;;=4^L97.112
- ;;^UTILITY(U,$J,358.3,805,2)
- ;;=^5009486
- ;;^UTILITY(U,$J,358.3,806,0)
- ;;=L97.111^^3^32^101
- ;;^UTILITY(U,$J,358.3,806,1,0)
+ ;;^UTILITY(U,$J,358.3,889,1,3,0)
+ ;;=3^Dermatitis,Unspec
+ ;;^UTILITY(U,$J,358.3,889,1,4,0)
+ ;;=4^L30.9
+ ;;^UTILITY(U,$J,358.3,889,2)
+ ;;=^5009159
+ ;;^UTILITY(U,$J,358.3,890,0)
+ ;;=F33.9^^6^101^5
+ ;;^UTILITY(U,$J,358.3,890,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,806,1,3,0)
- ;;=3^Non-prs chr ulcer of right thigh limited to brkdwn skin
- ;;^UTILITY(U,$J,358.3,806,1,4,0)
- ;;=4^L97.111
- ;;^UTILITY(U,$J,358.3,806,2)
- ;;=^5009485
- ;;^UTILITY(U,$J,358.3,807,0)
- ;;=L97.124^^3^32^83
- ;;^UTILITY(U,$J,358.3,807,1,0)
+ ;;^UTILITY(U,$J,358.3,890,1,3,0)
+ ;;=3^Depression Disorder,Major,Recurrent,Unspec
+ ;;^UTILITY(U,$J,358.3,890,1,4,0)
+ ;;=4^F33.9
+ ;;^UTILITY(U,$J,358.3,890,2)
+ ;;=^5003537
+ ;;^UTILITY(U,$J,358.3,891,0)
+ ;;=K44.9^^6^101^17
+ ;;^UTILITY(U,$J,358.3,891,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,807,1,3,0)
- ;;=3^Non-prs chr ulcer of left thigh w necrosis of bone
- ;;^UTILITY(U,$J,358.3,807,1,4,0)
- ;;=4^L97.124
- ;;^UTILITY(U,$J,358.3,807,2)
- ;;=^5009493
- ;;^UTILITY(U,$J,358.3,808,0)
- ;;=L97.129^^3^32^85
- ;;^UTILITY(U,$J,358.3,808,1,0)
+ ;;^UTILITY(U,$J,358.3,891,1,3,0)
+ ;;=3^Diaphragmatic Hernia w/o Obst/Gangr
+ ;;^UTILITY(U,$J,358.3,891,1,4,0)
+ ;;=4^K44.9
+ ;;^UTILITY(U,$J,358.3,891,2)
+ ;;=^5008617
+ ;;^UTILITY(U,$J,358.3,892,0)
+ ;;=E10.42^^6^101^10
+ ;;^UTILITY(U,$J,358.3,892,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,808,1,3,0)
- ;;=3^Non-prs chr ulcer of left thigh with unsp severity
- ;;^UTILITY(U,$J,358.3,808,1,4,0)
- ;;=4^L97.129
- ;;^UTILITY(U,$J,358.3,808,2)
- ;;=^5009494
- ;;^UTILITY(U,$J,358.3,809,0)
- ;;=L97.123^^3^32^84
- ;;^UTILITY(U,$J,358.3,809,1,0)
+ ;;^UTILITY(U,$J,358.3,892,1,3,0)
+ ;;=3^Diabetes Type 1 w/ Diabetic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,892,1,4,0)
+ ;;=4^E10.42
+ ;;^UTILITY(U,$J,358.3,892,2)
+ ;;=^5002606
+ ;;^UTILITY(U,$J,358.3,893,0)
+ ;;=E11.42^^6^101^13
+ ;;^UTILITY(U,$J,358.3,893,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,809,1,3,0)
- ;;=3^Non-prs chr ulcer of left thigh w necrosis of muscle
- ;;^UTILITY(U,$J,358.3,809,1,4,0)
- ;;=4^L97.123
- ;;^UTILITY(U,$J,358.3,809,2)
- ;;=^5009492
- ;;^UTILITY(U,$J,358.3,810,0)
- ;;=L97.113^^3^32^103
- ;;^UTILITY(U,$J,358.3,810,1,0)
+ ;;^UTILITY(U,$J,358.3,893,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Diabetic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,893,1,4,0)
+ ;;=4^E11.42
+ ;;^UTILITY(U,$J,358.3,893,2)
+ ;;=^5002646
+ ;;^UTILITY(U,$J,358.3,894,0)
+ ;;=E13.42^^6^101^9
+ ;;^UTILITY(U,$J,358.3,894,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,810,1,3,0)
- ;;=3^Non-prs chr ulcer of right thigh w necrosis of muscle
- ;;^UTILITY(U,$J,358.3,810,1,4,0)
- ;;=4^L97.113
- ;;^UTILITY(U,$J,358.3,810,2)
- ;;=^5009487
- ;;^UTILITY(U,$J,358.3,811,0)
- ;;=L97.114^^3^32^104
- ;;^UTILITY(U,$J,358.3,811,1,0)
+ ;;^UTILITY(U,$J,358.3,894,1,3,0)
+ ;;=3^Diabetes Other w/ Diabetic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,894,1,4,0)
+ ;;=4^E13.42
+ ;;^UTILITY(U,$J,358.3,894,2)
+ ;;=^5002686
+ ;;^UTILITY(U,$J,358.3,895,0)
+ ;;=E08.42^^6^101^16
+ ;;^UTILITY(U,$J,358.3,895,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,895,1,3,0)
+ ;;=3^Diabetes d/t Underlying Condition w/ Diabetic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,895,1,4,0)
+ ;;=4^E08.42
+ ;;^UTILITY(U,$J,358.3,895,2)
+ ;;=^5002524
+ ;;^UTILITY(U,$J,358.3,896,0)
+ ;;=E09.42^^6^101^8

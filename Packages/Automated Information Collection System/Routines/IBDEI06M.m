@@ -1,132 +1,140 @@
-IBDEI06M ; ; 06-AUG-2015
+IBDEI06M ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2574,2)
- ;;=^5002911
- ;;^UTILITY(U,$J,358.3,2575,0)
- ;;=E73.1^^6^78^13
- ;;^UTILITY(U,$J,358.3,2575,1,0)
+ ;;^UTILITY(U,$J,358.3,2771,2)
+ ;;=^5009145
+ ;;^UTILITY(U,$J,358.3,2772,0)
+ ;;=L27.2^^18^208^25
+ ;;^UTILITY(U,$J,358.3,2772,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2575,1,3,0)
- ;;=3^Secondary lactase deficiency
- ;;^UTILITY(U,$J,358.3,2575,1,4,0)
- ;;=4^E73.1
- ;;^UTILITY(U,$J,358.3,2575,2)
- ;;=^5002912
- ;;^UTILITY(U,$J,358.3,2576,0)
- ;;=E73.8^^6^78^11
- ;;^UTILITY(U,$J,358.3,2576,1,0)
+ ;;^UTILITY(U,$J,358.3,2772,1,3,0)
+ ;;=3^Dermatitis d/t Ingested Food
+ ;;^UTILITY(U,$J,358.3,2772,1,4,0)
+ ;;=4^L27.2
+ ;;^UTILITY(U,$J,358.3,2772,2)
+ ;;=^5009146
+ ;;^UTILITY(U,$J,358.3,2773,0)
+ ;;=L58.0^^18^208^26
+ ;;^UTILITY(U,$J,358.3,2773,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2576,1,3,0)
- ;;=3^Lactose intolerance NEC
- ;;^UTILITY(U,$J,358.3,2576,1,4,0)
- ;;=4^E73.8
- ;;^UTILITY(U,$J,358.3,2576,2)
- ;;=^5002913
- ;;^UTILITY(U,$J,358.3,2577,0)
- ;;=E73.9^^6^78^12
- ;;^UTILITY(U,$J,358.3,2577,1,0)
+ ;;^UTILITY(U,$J,358.3,2773,1,3,0)
+ ;;=3^Dermatitis d/t Radiation,Acute
+ ;;^UTILITY(U,$J,358.3,2773,1,4,0)
+ ;;=4^L58.0
+ ;;^UTILITY(U,$J,358.3,2773,2)
+ ;;=^5009228
+ ;;^UTILITY(U,$J,358.3,2774,0)
+ ;;=L58.1^^18^208^27
+ ;;^UTILITY(U,$J,358.3,2774,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2577,1,3,0)
- ;;=3^Lactose intolerance, unspecified
- ;;^UTILITY(U,$J,358.3,2577,1,4,0)
- ;;=4^E73.9
- ;;^UTILITY(U,$J,358.3,2577,2)
- ;;=^5002914
- ;;^UTILITY(U,$J,358.3,2578,0)
- ;;=K50.00^^6^78^4
- ;;^UTILITY(U,$J,358.3,2578,1,0)
+ ;;^UTILITY(U,$J,358.3,2774,1,3,0)
+ ;;=3^Dermatitis d/t Radiation,Chronic
+ ;;^UTILITY(U,$J,358.3,2774,1,4,0)
+ ;;=4^L58.1
+ ;;^UTILITY(U,$J,358.3,2774,2)
+ ;;=^5009229
+ ;;^UTILITY(U,$J,358.3,2775,0)
+ ;;=L58.9^^18^208^22
+ ;;^UTILITY(U,$J,358.3,2775,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2578,1,3,0)
- ;;=3^Crohn's disease of small intestine without complications
- ;;^UTILITY(U,$J,358.3,2578,1,4,0)
- ;;=4^K50.00
- ;;^UTILITY(U,$J,358.3,2578,2)
- ;;=^5008624
- ;;^UTILITY(U,$J,358.3,2579,0)
- ;;=K50.011^^6^78^5
- ;;^UTILITY(U,$J,358.3,2579,1,0)
+ ;;^UTILITY(U,$J,358.3,2775,1,3,0)
+ ;;=3^Dermatitis d/t  Radiation,Unspec
+ ;;^UTILITY(U,$J,358.3,2775,1,4,0)
+ ;;=4^L58.9
+ ;;^UTILITY(U,$J,358.3,2775,2)
+ ;;=^5009230
+ ;;^UTILITY(U,$J,358.3,2776,0)
+ ;;=L27.9^^18^208^28
+ ;;^UTILITY(U,$J,358.3,2776,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2579,1,3,0)
- ;;=3^Crohn's disease of small intestine with rectal bleeding
- ;;^UTILITY(U,$J,358.3,2579,1,4,0)
- ;;=4^K50.011
- ;;^UTILITY(U,$J,358.3,2579,2)
- ;;=^5008625
- ;;^UTILITY(U,$J,358.3,2580,0)
- ;;=K50.012^^6^78^3
- ;;^UTILITY(U,$J,358.3,2580,1,0)
+ ;;^UTILITY(U,$J,358.3,2776,1,3,0)
+ ;;=3^Dermatitis d/t Unspec Subs Taken Internally
+ ;;^UTILITY(U,$J,358.3,2776,1,4,0)
+ ;;=4^L27.9
+ ;;^UTILITY(U,$J,358.3,2776,2)
+ ;;=^271914
+ ;;^UTILITY(U,$J,358.3,2777,0)
+ ;;=L20.9^^18^208^30
+ ;;^UTILITY(U,$J,358.3,2777,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2580,1,3,0)
- ;;=3^Crohn's disease of small intestine w intestinal obstruction
- ;;^UTILITY(U,$J,358.3,2580,1,4,0)
- ;;=4^K50.012
- ;;^UTILITY(U,$J,358.3,2580,2)
- ;;=^5008626
- ;;^UTILITY(U,$J,358.3,2581,0)
- ;;=K50.013^^6^78^6
- ;;^UTILITY(U,$J,358.3,2581,1,0)
+ ;;^UTILITY(U,$J,358.3,2777,1,3,0)
+ ;;=3^Dermatitis,Atopic,Unspec
+ ;;^UTILITY(U,$J,358.3,2777,1,4,0)
+ ;;=4^L20.9
+ ;;^UTILITY(U,$J,358.3,2777,2)
+ ;;=^5009113
+ ;;^UTILITY(U,$J,358.3,2778,0)
+ ;;=L23.9^^18^208^29
+ ;;^UTILITY(U,$J,358.3,2778,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2581,1,3,0)
- ;;=3^Crohn's disease of small intestine with fistula
- ;;^UTILITY(U,$J,358.3,2581,1,4,0)
- ;;=4^K50.013
- ;;^UTILITY(U,$J,358.3,2581,2)
- ;;=^5008627
- ;;^UTILITY(U,$J,358.3,2582,0)
- ;;=K50.014^^6^78^7
- ;;^UTILITY(U,$J,358.3,2582,1,0)
+ ;;^UTILITY(U,$J,358.3,2778,1,3,0)
+ ;;=3^Dermatitis,Allergic Contact,Unspec Cause
+ ;;^UTILITY(U,$J,358.3,2778,1,4,0)
+ ;;=4^L23.9
+ ;;^UTILITY(U,$J,358.3,2778,2)
+ ;;=^5009125
+ ;;^UTILITY(U,$J,358.3,2779,0)
+ ;;=L24.9^^18^208^31
+ ;;^UTILITY(U,$J,358.3,2779,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2582,1,3,0)
- ;;=3^Crohn's disease of small intestine with abscess
- ;;^UTILITY(U,$J,358.3,2582,1,4,0)
- ;;=4^K50.014
- ;;^UTILITY(U,$J,358.3,2582,2)
- ;;=^5008628
- ;;^UTILITY(U,$J,358.3,2583,0)
- ;;=K50.018^^6^78^8
- ;;^UTILITY(U,$J,358.3,2583,1,0)
+ ;;^UTILITY(U,$J,358.3,2779,1,3,0)
+ ;;=3^Dermatitis,Irritant Contact,Unspec Cause
+ ;;^UTILITY(U,$J,358.3,2779,1,4,0)
+ ;;=4^L24.9
+ ;;^UTILITY(U,$J,358.3,2779,2)
+ ;;=^5009136
+ ;;^UTILITY(U,$J,358.3,2780,0)
+ ;;=L25.9^^18^208^34
+ ;;^UTILITY(U,$J,358.3,2780,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2583,1,3,0)
- ;;=3^Crohn's disease of small intestine with other complication
- ;;^UTILITY(U,$J,358.3,2583,1,4,0)
- ;;=4^K50.018
- ;;^UTILITY(U,$J,358.3,2583,2)
- ;;=^5008629
- ;;^UTILITY(U,$J,358.3,2584,0)
- ;;=K50.019^^6^78^9
- ;;^UTILITY(U,$J,358.3,2584,1,0)
+ ;;^UTILITY(U,$J,358.3,2780,1,3,0)
+ ;;=3^Dermatitis,Unspec Contact,Unspec Cause
+ ;;^UTILITY(U,$J,358.3,2780,1,4,0)
+ ;;=4^L25.9
+ ;;^UTILITY(U,$J,358.3,2780,2)
+ ;;=^5133647
+ ;;^UTILITY(U,$J,358.3,2781,0)
+ ;;=L21.9^^18^208^32
+ ;;^UTILITY(U,$J,358.3,2781,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2584,1,3,0)
- ;;=3^Crohn's disease of small intestine with unsp complications
- ;;^UTILITY(U,$J,358.3,2584,1,4,0)
- ;;=4^K50.019
- ;;^UTILITY(U,$J,358.3,2584,2)
- ;;=^5008630
- ;;^UTILITY(U,$J,358.3,2585,0)
- ;;=K56.5^^6^78^10
- ;;^UTILITY(U,$J,358.3,2585,1,0)
+ ;;^UTILITY(U,$J,358.3,2781,1,3,0)
+ ;;=3^Dermatitis,Seborrheic,Unspec
+ ;;^UTILITY(U,$J,358.3,2781,1,4,0)
+ ;;=4^L21.9
+ ;;^UTILITY(U,$J,358.3,2781,2)
+ ;;=^188703
+ ;;^UTILITY(U,$J,358.3,2782,0)
+ ;;=L30.9^^18^208^33
+ ;;^UTILITY(U,$J,358.3,2782,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2585,1,3,0)
- ;;=3^Intestinal adhesions w obst (postprocedural) (postinfection)
- ;;^UTILITY(U,$J,358.3,2585,1,4,0)
- ;;=4^K56.5
- ;;^UTILITY(U,$J,358.3,2585,2)
- ;;=^5008712
- ;;^UTILITY(U,$J,358.3,2586,0)
- ;;=K90.0^^6^78^1
- ;;^UTILITY(U,$J,358.3,2586,1,0)
+ ;;^UTILITY(U,$J,358.3,2782,1,3,0)
+ ;;=3^Dermatitis,Unspec
+ ;;^UTILITY(U,$J,358.3,2782,1,4,0)
+ ;;=4^L30.9
+ ;;^UTILITY(U,$J,358.3,2782,2)
+ ;;=^5009159
+ ;;^UTILITY(U,$J,358.3,2783,0)
+ ;;=R60.1^^18^208^35
+ ;;^UTILITY(U,$J,358.3,2783,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2586,1,3,0)
- ;;=3^Celiac disease
- ;;^UTILITY(U,$J,358.3,2586,1,4,0)
- ;;=4^K90.0
- ;;^UTILITY(U,$J,358.3,2586,2)
- ;;=^20828
- ;;^UTILITY(U,$J,358.3,2587,0)
- ;;=B96.81^^6^79^22
- ;;^UTILITY(U,$J,358.3,2587,1,0)
+ ;;^UTILITY(U,$J,358.3,2783,1,3,0)
+ ;;=3^Edema,Generalized
+ ;;^UTILITY(U,$J,358.3,2783,1,4,0)
+ ;;=4^R60.1
+ ;;^UTILITY(U,$J,358.3,2783,2)
+ ;;=^5019533
+ ;;^UTILITY(U,$J,358.3,2784,0)
+ ;;=R60.0^^18^208^36
+ ;;^UTILITY(U,$J,358.3,2784,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2587,1,3,0)
- ;;=3^Helicobacter pylori as the cause of diseases classd elswhr
+ ;;^UTILITY(U,$J,358.3,2784,1,3,0)
+ ;;=3^Edema,Localized
+ ;;^UTILITY(U,$J,358.3,2784,1,4,0)
+ ;;=4^R60.0
+ ;;^UTILITY(U,$J,358.3,2784,2)
+ ;;=^5019532
+ ;;^UTILITY(U,$J,358.3,2785,0)
+ ;;=R60.9^^18^208^37
+ ;;^UTILITY(U,$J,358.3,2785,1,0)
+ ;;=^358.31IA^4^2

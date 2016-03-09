@@ -1,120 +1,122 @@
-IBDEI1PD ; ; 06-AUG-2015
+IBDEI1PD ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30186,1,3,0)
- ;;=3^Cont preg aft spon abort of 1 fetus or more, 1st tri, fts5
- ;;^UTILITY(U,$J,358.3,30186,1,4,0)
- ;;=4^O31.11X5
- ;;^UTILITY(U,$J,358.3,30186,2)
- ;;=^5016542
- ;;^UTILITY(U,$J,358.3,30187,0)
- ;;=O31.12X5^^178^1915^39
- ;;^UTILITY(U,$J,358.3,30187,1,0)
+ ;;^UTILITY(U,$J,358.3,28937,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30187,1,3,0)
- ;;=3^Cont preg aft spon abort of 1 fetus or more, 2nd tri, fts5
- ;;^UTILITY(U,$J,358.3,30187,1,4,0)
- ;;=4^O31.12X5
- ;;^UTILITY(U,$J,358.3,30187,2)
- ;;=^5016549
- ;;^UTILITY(U,$J,358.3,30188,0)
- ;;=O31.13X5^^178^1915^40
- ;;^UTILITY(U,$J,358.3,30188,1,0)
+ ;;^UTILITY(U,$J,358.3,28937,1,3,0)
+ ;;=3^Twin pregnancy, unsp num plcnta & amnio sacs, second trimester
+ ;;^UTILITY(U,$J,358.3,28937,1,4,0)
+ ;;=4^O30.002
+ ;;^UTILITY(U,$J,358.3,28937,2)
+ ;;=^5016430
+ ;;^UTILITY(U,$J,358.3,28938,0)
+ ;;=O30.003^^115^1454^79
+ ;;^UTILITY(U,$J,358.3,28938,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30188,1,3,0)
- ;;=3^Cont preg aft spon abort of 1 fetus or more, 3rd tri, fts5
- ;;^UTILITY(U,$J,358.3,30188,1,4,0)
- ;;=4^O31.13X5
- ;;^UTILITY(U,$J,358.3,30188,2)
- ;;=^5016556
- ;;^UTILITY(U,$J,358.3,30189,0)
- ;;=O31.31X0^^178^1915^4
- ;;^UTILITY(U,$J,358.3,30189,1,0)
+ ;;^UTILITY(U,$J,358.3,28938,1,3,0)
+ ;;=3^Twin pregnancy, unsp num plcnta & amnio sacs, third trimester
+ ;;^UTILITY(U,$J,358.3,28938,1,4,0)
+ ;;=4^O30.003
+ ;;^UTILITY(U,$J,358.3,28938,2)
+ ;;=^5016431
+ ;;^UTILITY(U,$J,358.3,28939,0)
+ ;;=O30.011^^115^1454^71
+ ;;^UTILITY(U,$J,358.3,28939,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30189,1,3,0)
- ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,1st tri, unsp
- ;;^UTILITY(U,$J,358.3,30189,1,4,0)
- ;;=4^O31.31X0
- ;;^UTILITY(U,$J,358.3,30189,2)
- ;;=^5016593
- ;;^UTILITY(U,$J,358.3,30190,0)
- ;;=O31.32X0^^178^1915^5
- ;;^UTILITY(U,$J,358.3,30190,1,0)
+ ;;^UTILITY(U,$J,358.3,28939,1,3,0)
+ ;;=3^Twin pregnancy, monochorionic/monoamniotic, first trimester
+ ;;^UTILITY(U,$J,358.3,28939,1,4,0)
+ ;;=4^O30.011
+ ;;^UTILITY(U,$J,358.3,28939,2)
+ ;;=^5016432
+ ;;^UTILITY(U,$J,358.3,28940,0)
+ ;;=O30.012^^115^1454^72
+ ;;^UTILITY(U,$J,358.3,28940,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30190,1,3,0)
- ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,2nd tri, unsp
- ;;^UTILITY(U,$J,358.3,30190,1,4,0)
- ;;=4^O31.32X0
- ;;^UTILITY(U,$J,358.3,30190,2)
- ;;=^5016600
- ;;^UTILITY(U,$J,358.3,30191,0)
- ;;=O31.33X0^^178^1915^6
- ;;^UTILITY(U,$J,358.3,30191,1,0)
+ ;;^UTILITY(U,$J,358.3,28940,1,3,0)
+ ;;=3^Twin pregnancy, monochorionic/monoamniotic, second trimester
+ ;;^UTILITY(U,$J,358.3,28940,1,4,0)
+ ;;=4^O30.012
+ ;;^UTILITY(U,$J,358.3,28940,2)
+ ;;=^5016433
+ ;;^UTILITY(U,$J,358.3,28941,0)
+ ;;=O30.013^^115^1454^73
+ ;;^UTILITY(U,$J,358.3,28941,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30191,1,3,0)
- ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,3rd tri, unsp
- ;;^UTILITY(U,$J,358.3,30191,1,4,0)
- ;;=4^O31.33X0
- ;;^UTILITY(U,$J,358.3,30191,2)
- ;;=^5016607
- ;;^UTILITY(U,$J,358.3,30192,0)
- ;;=O31.31X1^^178^1915^7
- ;;^UTILITY(U,$J,358.3,30192,1,0)
+ ;;^UTILITY(U,$J,358.3,28941,1,3,0)
+ ;;=3^Twin pregnancy, monochorionic/monoamniotic, third trimester
+ ;;^UTILITY(U,$J,358.3,28941,1,4,0)
+ ;;=4^O30.013
+ ;;^UTILITY(U,$J,358.3,28941,2)
+ ;;=^5016434
+ ;;^UTILITY(U,$J,358.3,28942,0)
+ ;;=O30.021^^115^1454^1
+ ;;^UTILITY(U,$J,358.3,28942,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30192,1,3,0)
- ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,1st tri, fts1
- ;;^UTILITY(U,$J,358.3,30192,1,4,0)
- ;;=4^O31.31X1
- ;;^UTILITY(U,$J,358.3,30192,2)
- ;;=^5016594
- ;;^UTILITY(U,$J,358.3,30193,0)
- ;;=O31.32X1^^178^1915^8
- ;;^UTILITY(U,$J,358.3,30193,1,0)
+ ;;^UTILITY(U,$J,358.3,28942,1,3,0)
+ ;;=3^Conjoined twin pregnancy, first trimester
+ ;;^UTILITY(U,$J,358.3,28942,1,4,0)
+ ;;=4^O30.021
+ ;;^UTILITY(U,$J,358.3,28942,2)
+ ;;=^5016436
+ ;;^UTILITY(U,$J,358.3,28943,0)
+ ;;=O30.022^^115^1454^2
+ ;;^UTILITY(U,$J,358.3,28943,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30193,1,3,0)
- ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,2nd tri, fts1
- ;;^UTILITY(U,$J,358.3,30193,1,4,0)
- ;;=4^O31.32X1
- ;;^UTILITY(U,$J,358.3,30193,2)
- ;;=^5016601
- ;;^UTILITY(U,$J,358.3,30194,0)
- ;;=O31.33X1^^178^1915^9
- ;;^UTILITY(U,$J,358.3,30194,1,0)
+ ;;^UTILITY(U,$J,358.3,28943,1,3,0)
+ ;;=3^Conjoined twin pregnancy, second trimester
+ ;;^UTILITY(U,$J,358.3,28943,1,4,0)
+ ;;=4^O30.022
+ ;;^UTILITY(U,$J,358.3,28943,2)
+ ;;=^5016437
+ ;;^UTILITY(U,$J,358.3,28944,0)
+ ;;=O30.023^^115^1454^3
+ ;;^UTILITY(U,$J,358.3,28944,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30194,1,3,0)
- ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,3rd tri, fts1
- ;;^UTILITY(U,$J,358.3,30194,1,4,0)
- ;;=4^O31.33X1
- ;;^UTILITY(U,$J,358.3,30194,2)
- ;;=^5016608
- ;;^UTILITY(U,$J,358.3,30195,0)
- ;;=O31.31X2^^178^1915^10
- ;;^UTILITY(U,$J,358.3,30195,1,0)
+ ;;^UTILITY(U,$J,358.3,28944,1,3,0)
+ ;;=3^Conjoined twin pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,28944,1,4,0)
+ ;;=4^O30.023
+ ;;^UTILITY(U,$J,358.3,28944,2)
+ ;;=^5016438
+ ;;^UTILITY(U,$J,358.3,28945,0)
+ ;;=O30.031^^115^1454^68
+ ;;^UTILITY(U,$J,358.3,28945,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30195,1,3,0)
- ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,1st tri, fts2
- ;;^UTILITY(U,$J,358.3,30195,1,4,0)
- ;;=4^O31.31X2
- ;;^UTILITY(U,$J,358.3,30195,2)
- ;;=^5016595
- ;;^UTILITY(U,$J,358.3,30196,0)
- ;;=O31.32X2^^178^1915^11
- ;;^UTILITY(U,$J,358.3,30196,1,0)
+ ;;^UTILITY(U,$J,358.3,28945,1,3,0)
+ ;;=3^Twin pregnancy, monochorionic/diamniotic, first trimester
+ ;;^UTILITY(U,$J,358.3,28945,1,4,0)
+ ;;=4^O30.031
+ ;;^UTILITY(U,$J,358.3,28945,2)
+ ;;=^5016440
+ ;;^UTILITY(U,$J,358.3,28946,0)
+ ;;=O30.032^^115^1454^69
+ ;;^UTILITY(U,$J,358.3,28946,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30196,1,3,0)
- ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,2nd tri, fts2
- ;;^UTILITY(U,$J,358.3,30196,1,4,0)
- ;;=4^O31.32X2
- ;;^UTILITY(U,$J,358.3,30196,2)
- ;;=^5016602
- ;;^UTILITY(U,$J,358.3,30197,0)
- ;;=O31.33X2^^178^1915^12
- ;;^UTILITY(U,$J,358.3,30197,1,0)
+ ;;^UTILITY(U,$J,358.3,28946,1,3,0)
+ ;;=3^Twin pregnancy, monochorionic/diamniotic, second trimester
+ ;;^UTILITY(U,$J,358.3,28946,1,4,0)
+ ;;=4^O30.032
+ ;;^UTILITY(U,$J,358.3,28946,2)
+ ;;=^5016441
+ ;;^UTILITY(U,$J,358.3,28947,0)
+ ;;=O30.033^^115^1454^70
+ ;;^UTILITY(U,$J,358.3,28947,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30197,1,3,0)
- ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,3rd tri, fts2
- ;;^UTILITY(U,$J,358.3,30197,1,4,0)
- ;;=4^O31.33X2
- ;;^UTILITY(U,$J,358.3,30197,2)
- ;;=^5016609
+ ;;^UTILITY(U,$J,358.3,28947,1,3,0)
+ ;;=3^Twin pregnancy, monochorionic/diamniotic, third trimester
+ ;;^UTILITY(U,$J,358.3,28947,1,4,0)
+ ;;=4^O30.033
+ ;;^UTILITY(U,$J,358.3,28947,2)
+ ;;=^5016442
+ ;;^UTILITY(U,$J,358.3,28948,0)
+ ;;=O30.041^^115^1454^65
+ ;;^UTILITY(U,$J,358.3,28948,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28948,1,3,0)
+ ;;=3^Twin pregnancy, dichorionic/diamniotic, first trimester
+ ;;^UTILITY(U,$J,358.3,28948,1,4,0)
+ ;;=4^O30.041
+ ;;^UTILITY(U,$J,358.3,28948,2)
+ ;;=^5016444

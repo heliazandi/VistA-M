@@ -1,130 +1,132 @@
-IBDEI023 ; ; 06-AUG-2015
+IBDEI023 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,428,1,4,0)
- ;;=4^D58.2
- ;;^UTILITY(U,$J,358.3,428,2)
- ;;=^87629
- ;;^UTILITY(U,$J,358.3,429,0)
- ;;=C83.10^^2^21^45
- ;;^UTILITY(U,$J,358.3,429,1,0)
+ ;;^UTILITY(U,$J,358.3,486,1,4,0)
+ ;;=4^F12.122
+ ;;^UTILITY(U,$J,358.3,486,2)
+ ;;=^5003158
+ ;;^UTILITY(U,$J,358.3,487,0)
+ ;;=F12.222^^3^51^10
+ ;;^UTILITY(U,$J,358.3,487,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,429,1,3,0)
- ;;=3^Mantle cell lymphoma, unspecified site
- ;;^UTILITY(U,$J,358.3,429,1,4,0)
- ;;=4^C83.10
- ;;^UTILITY(U,$J,358.3,429,2)
- ;;=^5001561
- ;;^UTILITY(U,$J,358.3,430,0)
- ;;=C83.19^^2^21^44
- ;;^UTILITY(U,$J,358.3,430,1,0)
+ ;;^UTILITY(U,$J,358.3,487,1,3,0)
+ ;;=3^Cannabis Intoxication w/ Perceptual Disturbances w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,487,1,4,0)
+ ;;=4^F12.222
+ ;;^UTILITY(U,$J,358.3,487,2)
+ ;;=^5003170
+ ;;^UTILITY(U,$J,358.3,488,0)
+ ;;=F12.129^^3^51^14
+ ;;^UTILITY(U,$J,358.3,488,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,430,1,3,0)
- ;;=3^Mantle cell lymphoma, extranodal and solid organ sites
- ;;^UTILITY(U,$J,358.3,430,1,4,0)
- ;;=4^C83.19
- ;;^UTILITY(U,$J,358.3,430,2)
- ;;=^5001570
- ;;^UTILITY(U,$J,358.3,431,0)
- ;;=C83.50^^2^21^38
- ;;^UTILITY(U,$J,358.3,431,1,0)
+ ;;^UTILITY(U,$J,358.3,488,1,3,0)
+ ;;=3^Cannabis Intoxication,Unspec
+ ;;^UTILITY(U,$J,358.3,488,1,4,0)
+ ;;=4^F12.129
+ ;;^UTILITY(U,$J,358.3,488,2)
+ ;;=^5003159
+ ;;^UTILITY(U,$J,358.3,489,0)
+ ;;=F12.922^^3^51^11
+ ;;^UTILITY(U,$J,358.3,489,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,431,1,3,0)
- ;;=3^Lymphoblastic (diffuse) lymphoma, unspecified site
- ;;^UTILITY(U,$J,358.3,431,1,4,0)
- ;;=4^C83.50
- ;;^UTILITY(U,$J,358.3,431,2)
- ;;=^5001581
- ;;^UTILITY(U,$J,358.3,432,0)
- ;;=C83.59^^2^21^39
- ;;^UTILITY(U,$J,358.3,432,1,0)
+ ;;^UTILITY(U,$J,358.3,489,1,3,0)
+ ;;=3^Cannabis Intoxication w/ Perceptual Disturbances w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,489,1,4,0)
+ ;;=4^F12.922
+ ;;^UTILITY(U,$J,358.3,489,2)
+ ;;=^5003181
+ ;;^UTILITY(U,$J,358.3,490,0)
+ ;;=F12.980^^3^51^1
+ ;;^UTILITY(U,$J,358.3,490,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,432,1,3,0)
- ;;=3^Lymphoblastic lymphoma, extrnod and solid organ sites
- ;;^UTILITY(U,$J,358.3,432,1,4,0)
- ;;=4^C83.59
- ;;^UTILITY(U,$J,358.3,432,2)
- ;;=^5001590
- ;;^UTILITY(U,$J,358.3,433,0)
- ;;=C83.70^^2^21^12
- ;;^UTILITY(U,$J,358.3,433,1,0)
+ ;;^UTILITY(U,$J,358.3,490,1,3,0)
+ ;;=3^Cannabis Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,490,1,4,0)
+ ;;=4^F12.980
+ ;;^UTILITY(U,$J,358.3,490,2)
+ ;;=^5003186
+ ;;^UTILITY(U,$J,358.3,491,0)
+ ;;=F12.159^^3^51^2
+ ;;^UTILITY(U,$J,358.3,491,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,433,1,3,0)
- ;;=3^Burkitt lymphoma, unspecified site
- ;;^UTILITY(U,$J,358.3,433,1,4,0)
- ;;=4^C83.70
- ;;^UTILITY(U,$J,358.3,433,2)
- ;;=^5001591
- ;;^UTILITY(U,$J,358.3,434,0)
- ;;=C83.79^^2^21^11
- ;;^UTILITY(U,$J,358.3,434,1,0)
+ ;;^UTILITY(U,$J,358.3,491,1,3,0)
+ ;;=3^Cannabis Induced Psychotic Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,491,1,4,0)
+ ;;=4^F12.159
+ ;;^UTILITY(U,$J,358.3,491,2)
+ ;;=^5003162
+ ;;^UTILITY(U,$J,358.3,492,0)
+ ;;=F12.259^^3^51^3
+ ;;^UTILITY(U,$J,358.3,492,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,434,1,3,0)
- ;;=3^Burkitt lymphoma, extranodal and solid organ sites
- ;;^UTILITY(U,$J,358.3,434,1,4,0)
- ;;=4^C83.79
- ;;^UTILITY(U,$J,358.3,434,2)
- ;;=^5001600
- ;;^UTILITY(U,$J,358.3,435,0)
- ;;=C81.00^^2^21^54
- ;;^UTILITY(U,$J,358.3,435,1,0)
+ ;;^UTILITY(U,$J,358.3,492,1,3,0)
+ ;;=3^Cannabis Induced Psychotic Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,492,1,4,0)
+ ;;=4^F12.259
+ ;;^UTILITY(U,$J,358.3,492,2)
+ ;;=^5003174
+ ;;^UTILITY(U,$J,358.3,493,0)
+ ;;=F12.959^^3^51^4
+ ;;^UTILITY(U,$J,358.3,493,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,435,1,3,0)
- ;;=3^Nodular lymphocyte predominant Hodgkin lymphoma, unsp site
- ;;^UTILITY(U,$J,358.3,435,1,4,0)
- ;;=4^C81.00
- ;;^UTILITY(U,$J,358.3,435,2)
- ;;=^5001391
- ;;^UTILITY(U,$J,358.3,436,0)
- ;;=C83.39^^2^21^19
- ;;^UTILITY(U,$J,358.3,436,1,0)
+ ;;^UTILITY(U,$J,358.3,493,1,3,0)
+ ;;=3^Cannabis Induced Psychotic Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,493,1,4,0)
+ ;;=4^F12.959
+ ;;^UTILITY(U,$J,358.3,493,2)
+ ;;=^5003185
+ ;;^UTILITY(U,$J,358.3,494,0)
+ ;;=F12.988^^3^51^5
+ ;;^UTILITY(U,$J,358.3,494,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,436,1,3,0)
- ;;=3^Diffuse large B-cell lymphoma, extrnod and solid organ sites
- ;;^UTILITY(U,$J,358.3,436,1,4,0)
- ;;=4^C83.39
- ;;^UTILITY(U,$J,358.3,436,2)
- ;;=^5001580
- ;;^UTILITY(U,$J,358.3,437,0)
- ;;=C81.09^^2^21^55
- ;;^UTILITY(U,$J,358.3,437,1,0)
+ ;;^UTILITY(U,$J,358.3,494,1,3,0)
+ ;;=3^Cannabis Induced Sleep Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,494,1,4,0)
+ ;;=4^F12.988
+ ;;^UTILITY(U,$J,358.3,494,2)
+ ;;=^5003187
+ ;;^UTILITY(U,$J,358.3,495,0)
+ ;;=F12.929^^3^51^13
+ ;;^UTILITY(U,$J,358.3,495,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,437,1,3,0)
- ;;=3^Nodular lymphocyte predominant Hodgkin lymphoma, extrnod & solid org site
- ;;^UTILITY(U,$J,358.3,437,1,4,0)
- ;;=4^C81.09
- ;;^UTILITY(U,$J,358.3,437,2)
- ;;=^5001400
- ;;^UTILITY(U,$J,358.3,438,0)
- ;;=C81.10^^2^21^56
- ;;^UTILITY(U,$J,358.3,438,1,0)
+ ;;^UTILITY(U,$J,358.3,495,1,3,0)
+ ;;=3^Cannabis Intoxication w/o Perceptual Disturbances w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,495,1,4,0)
+ ;;=4^F12.929
+ ;;^UTILITY(U,$J,358.3,495,2)
+ ;;=^5003182
+ ;;^UTILITY(U,$J,358.3,496,0)
+ ;;=F12.99^^3^51^15
+ ;;^UTILITY(U,$J,358.3,496,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,438,1,3,0)
- ;;=3^Nodular sclerosis classical Hodgkin lymphoma, unsp site
- ;;^UTILITY(U,$J,358.3,438,1,4,0)
- ;;=4^C81.10
- ;;^UTILITY(U,$J,358.3,438,2)
- ;;=^5001401
- ;;^UTILITY(U,$J,358.3,439,0)
- ;;=C81.19^^2^21^57
- ;;^UTILITY(U,$J,358.3,439,1,0)
+ ;;^UTILITY(U,$J,358.3,496,1,3,0)
+ ;;=3^Cannabis Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,496,1,4,0)
+ ;;=4^F12.99
+ ;;^UTILITY(U,$J,358.3,496,2)
+ ;;=^5003188
+ ;;^UTILITY(U,$J,358.3,497,0)
+ ;;=F16.10^^3^52^17
+ ;;^UTILITY(U,$J,358.3,497,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,439,1,3,0)
- ;;=3^Nodular sclerosis classical Hodgkin lymphoma,extrnod and solid organ sites
- ;;^UTILITY(U,$J,358.3,439,1,4,0)
- ;;=4^C81.19
- ;;^UTILITY(U,$J,358.3,439,2)
- ;;=^5001410
- ;;^UTILITY(U,$J,358.3,440,0)
- ;;=C81.20^^2^21^47
- ;;^UTILITY(U,$J,358.3,440,1,0)
+ ;;^UTILITY(U,$J,358.3,497,1,3,0)
+ ;;=3^Phencyclidine Use Disorder,Mild
+ ;;^UTILITY(U,$J,358.3,497,1,4,0)
+ ;;=4^F16.10
+ ;;^UTILITY(U,$J,358.3,497,2)
+ ;;=^5003323
+ ;;^UTILITY(U,$J,358.3,498,0)
+ ;;=F16.20^^3^52^18
+ ;;^UTILITY(U,$J,358.3,498,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,440,1,3,0)
- ;;=3^Mixed cellularity classical Hodgkin lymphoma, unsp site
- ;;^UTILITY(U,$J,358.3,440,1,4,0)
- ;;=4^C81.20
- ;;^UTILITY(U,$J,358.3,440,2)
- ;;=^5001411
- ;;^UTILITY(U,$J,358.3,441,0)
- ;;=C81.29^^2^21^46
+ ;;^UTILITY(U,$J,358.3,498,1,3,0)
+ ;;=3^Phencyclidine Use Disorder,Moderate-Severe
+ ;;^UTILITY(U,$J,358.3,498,1,4,0)
+ ;;=4^F16.20
+ ;;^UTILITY(U,$J,358.3,498,2)
+ ;;=^5003336
+ ;;^UTILITY(U,$J,358.3,499,0)
+ ;;=F16.21^^3^52^19
+ ;;^UTILITY(U,$J,358.3,499,1,0)
+ ;;=^358.31IA^4^2

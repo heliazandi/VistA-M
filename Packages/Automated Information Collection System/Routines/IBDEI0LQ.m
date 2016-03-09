@@ -1,138 +1,126 @@
-IBDEI0LQ ; ; 06-AUG-2015
+IBDEI0LQ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10304,0)
- ;;=804.00^^44^562^37
- ;;^UTILITY(U,$J,358.3,10304,1,0)
+ ;;^UTILITY(U,$J,358.3,10131,1,4,0)
+ ;;=4^H34.812
+ ;;^UTILITY(U,$J,358.3,10131,2)
+ ;;=^5005569
+ ;;^UTILITY(U,$J,358.3,10132,0)
+ ;;=H34.811^^44^501^15
+ ;;^UTILITY(U,$J,358.3,10132,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10304,1,3,0)
- ;;=3^FX Skull/Face Mult w/o Intracranial Inj
- ;;^UTILITY(U,$J,358.3,10304,1,4,0)
- ;;=4^804.00
- ;;^UTILITY(U,$J,358.3,10304,2)
- ;;=^273780
- ;;^UTILITY(U,$J,358.3,10305,0)
- ;;=V10.84^^44^562^47
- ;;^UTILITY(U,$J,358.3,10305,1,0)
+ ;;^UTILITY(U,$J,358.3,10132,1,3,0)
+ ;;=3^Central Retinal Vein Occlusion,Right Eye
+ ;;^UTILITY(U,$J,358.3,10132,1,4,0)
+ ;;=4^H34.811
+ ;;^UTILITY(U,$J,358.3,10132,2)
+ ;;=^5005568
+ ;;^UTILITY(U,$J,358.3,10133,0)
+ ;;=E11.321^^44^501^66
+ ;;^UTILITY(U,$J,358.3,10133,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10305,1,3,0)
- ;;=3^Hx Eye CA,Personal
- ;;^UTILITY(U,$J,358.3,10305,1,4,0)
- ;;=4^V10.84
- ;;^UTILITY(U,$J,358.3,10305,2)
- ;;=^295242
- ;;^UTILITY(U,$J,358.3,10306,0)
- ;;=V16.9^^44^562^46
- ;;^UTILITY(U,$J,358.3,10306,1,0)
+ ;;^UTILITY(U,$J,358.3,10133,1,3,0)
+ ;;=3^Type 2 DM w/ Mild Nonprolif DM Retinopathy w/ Macular Edema
+ ;;^UTILITY(U,$J,358.3,10133,1,4,0)
+ ;;=4^E11.321
+ ;;^UTILITY(U,$J,358.3,10133,2)
+ ;;=^5002634
+ ;;^UTILITY(U,$J,358.3,10134,0)
+ ;;=E11.329^^44^501^67
+ ;;^UTILITY(U,$J,358.3,10134,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10306,1,3,0)
- ;;=3^Hx CA,Family
- ;;^UTILITY(U,$J,358.3,10306,1,4,0)
- ;;=4^V16.9
- ;;^UTILITY(U,$J,358.3,10306,2)
- ;;=^295301
- ;;^UTILITY(U,$J,358.3,10307,0)
- ;;=V19.0^^44^562^45
- ;;^UTILITY(U,$J,358.3,10307,1,0)
+ ;;^UTILITY(U,$J,358.3,10134,1,3,0)
+ ;;=3^Type 2 DM w/ Mild Nonprolif DM Retinopathy w/o Macular Edema
+ ;;^UTILITY(U,$J,358.3,10134,1,4,0)
+ ;;=4^E11.329
+ ;;^UTILITY(U,$J,358.3,10134,2)
+ ;;=^5002635
+ ;;^UTILITY(U,$J,358.3,10135,0)
+ ;;=E11.331^^44^501^68
+ ;;^UTILITY(U,$J,358.3,10135,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10307,1,3,0)
- ;;=3^Hx Blindness/Visual Loss,Family
- ;;^UTILITY(U,$J,358.3,10307,1,4,0)
- ;;=4^V19.0
- ;;^UTILITY(U,$J,358.3,10307,2)
- ;;=^295320
- ;;^UTILITY(U,$J,358.3,10308,0)
- ;;=V60.0^^44^562^55
- ;;^UTILITY(U,$J,358.3,10308,1,0)
+ ;;^UTILITY(U,$J,358.3,10135,1,3,0)
+ ;;=3^Type 2 DM w/ Mod Nonprolif DM Retinopathy w/ Macular Edema
+ ;;^UTILITY(U,$J,358.3,10135,1,4,0)
+ ;;=4^E11.331
+ ;;^UTILITY(U,$J,358.3,10135,2)
+ ;;=^5002636
+ ;;^UTILITY(U,$J,358.3,10136,0)
+ ;;=E11.339^^44^501^69
+ ;;^UTILITY(U,$J,358.3,10136,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10308,1,3,0)
- ;;=3^Lack of Housing
- ;;^UTILITY(U,$J,358.3,10308,1,4,0)
- ;;=4^V60.0
- ;;^UTILITY(U,$J,358.3,10308,2)
- ;;=^295539
- ;;^UTILITY(U,$J,358.3,10309,0)
- ;;=V65.5^^44^562^13
- ;;^UTILITY(U,$J,358.3,10309,1,0)
+ ;;^UTILITY(U,$J,358.3,10136,1,3,0)
+ ;;=3^Type 2 DM w/ Mod Nonprolif DM Retinopathy w/o Macular Edema
+ ;;^UTILITY(U,$J,358.3,10136,1,4,0)
+ ;;=4^E11.339
+ ;;^UTILITY(U,$J,358.3,10136,2)
+ ;;=^5002637
+ ;;^UTILITY(U,$J,358.3,10137,0)
+ ;;=E11.351^^44^501^70
+ ;;^UTILITY(U,$J,358.3,10137,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10309,1,3,0)
- ;;=3^Condition Not Found
- ;;^UTILITY(U,$J,358.3,10309,1,4,0)
- ;;=4^V65.5
- ;;^UTILITY(U,$J,358.3,10309,2)
- ;;=^295564
- ;;^UTILITY(U,$J,358.3,10310,0)
- ;;=V67.51^^44^562^12
- ;;^UTILITY(U,$J,358.3,10310,1,0)
+ ;;^UTILITY(U,$J,358.3,10137,1,3,0)
+ ;;=3^Type 2 DM w/ Prolif DM Retinopathy w/ Macular Edema
+ ;;^UTILITY(U,$J,358.3,10137,1,4,0)
+ ;;=4^E11.351
+ ;;^UTILITY(U,$J,358.3,10137,2)
+ ;;=^5002640
+ ;;^UTILITY(U,$J,358.3,10138,0)
+ ;;=E11.359^^44^501^71
+ ;;^UTILITY(U,$J,358.3,10138,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10310,1,3,0)
- ;;=3^Completed Trmt of High Risk Med
- ;;^UTILITY(U,$J,358.3,10310,1,4,0)
- ;;=4^V67.51
- ;;^UTILITY(U,$J,358.3,10310,2)
- ;;=^295577
- ;;^UTILITY(U,$J,358.3,10311,0)
- ;;=V87.39^^44^562^15
- ;;^UTILITY(U,$J,358.3,10311,1,0)
+ ;;^UTILITY(U,$J,358.3,10138,1,3,0)
+ ;;=3^Type 2 DM w/ Prolif DM Retinopathy w/o Macular Edema
+ ;;^UTILITY(U,$J,358.3,10138,1,4,0)
+ ;;=4^E11.359
+ ;;^UTILITY(U,$J,358.3,10138,2)
+ ;;=^5002641
+ ;;^UTILITY(U,$J,358.3,10139,0)
+ ;;=E11.341^^44^501^72
+ ;;^UTILITY(U,$J,358.3,10139,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10311,1,3,0)
- ;;=3^Cont/Exp Hazard Sub NEC
- ;;^UTILITY(U,$J,358.3,10311,1,4,0)
- ;;=4^V87.39
- ;;^UTILITY(U,$J,358.3,10311,2)
- ;;=^336815
- ;;^UTILITY(U,$J,358.3,10312,0)
- ;;=369.05^^44^562^76
- ;;^UTILITY(U,$J,358.3,10312,1,0)
+ ;;^UTILITY(U,$J,358.3,10139,1,3,0)
+ ;;=3^Type 2 DM w/ Severe Nonprolif DM Retinopathy w/ Macular Edema
+ ;;^UTILITY(U,$J,358.3,10139,1,4,0)
+ ;;=4^E11.341
+ ;;^UTILITY(U,$J,358.3,10139,2)
+ ;;=^5002638
+ ;;^UTILITY(U,$J,358.3,10140,0)
+ ;;=E11.349^^44^501^73
+ ;;^UTILITY(U,$J,358.3,10140,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10312,1,3,0)
- ;;=3^One Eye-Profound,Oth Eye-NOS
- ;;^UTILITY(U,$J,358.3,10312,1,4,0)
- ;;=4^369.05
- ;;^UTILITY(U,$J,358.3,10312,2)
- ;;=^268865
- ;;^UTILITY(U,$J,358.3,10313,0)
- ;;=365.11^^44^563^20
- ;;^UTILITY(U,$J,358.3,10313,1,0)
+ ;;^UTILITY(U,$J,358.3,10140,1,3,0)
+ ;;=3^Type 2 DM w/ Severe Nonprolif DM Retinopathy w/o Macular Edema
+ ;;^UTILITY(U,$J,358.3,10140,1,4,0)
+ ;;=4^E11.349
+ ;;^UTILITY(U,$J,358.3,10140,2)
+ ;;=^5002639
+ ;;^UTILITY(U,$J,358.3,10141,0)
+ ;;=E11.9^^44^501^74
+ ;;^UTILITY(U,$J,358.3,10141,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10313,1,3,0)
- ;;=3^Glaucoma,Open Angle
- ;;^UTILITY(U,$J,358.3,10313,1,4,0)
- ;;=4^365.11
- ;;^UTILITY(U,$J,358.3,10313,2)
- ;;=Open Angle Glaucoma^51203
- ;;^UTILITY(U,$J,358.3,10314,0)
- ;;=365.12^^44^563^16
- ;;^UTILITY(U,$J,358.3,10314,1,0)
+ ;;^UTILITY(U,$J,358.3,10141,1,3,0)
+ ;;=3^Type 2 DM w/o Complications
+ ;;^UTILITY(U,$J,358.3,10141,1,4,0)
+ ;;=4^E11.9
+ ;;^UTILITY(U,$J,358.3,10141,2)
+ ;;=^5002666
+ ;;^UTILITY(U,$J,358.3,10142,0)
+ ;;=H35.363^^44^501^18
+ ;;^UTILITY(U,$J,358.3,10142,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10314,1,3,0)
- ;;=3^Glaucoma,Low Tension
- ;;^UTILITY(U,$J,358.3,10314,1,4,0)
- ;;=4^365.12
- ;;^UTILITY(U,$J,358.3,10314,2)
- ;;=Low Tension Glaucoma^265223
- ;;^UTILITY(U,$J,358.3,10315,0)
- ;;=365.63^^44^563^19
- ;;^UTILITY(U,$J,358.3,10315,1,0)
+ ;;^UTILITY(U,$J,358.3,10142,1,3,0)
+ ;;=3^Drusen of Macular,Bilateral
+ ;;^UTILITY(U,$J,358.3,10142,1,4,0)
+ ;;=4^H35.363
+ ;;^UTILITY(U,$J,358.3,10142,2)
+ ;;=^5005660
+ ;;^UTILITY(U,$J,358.3,10143,0)
+ ;;=H35.362^^44^501^19
+ ;;^UTILITY(U,$J,358.3,10143,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10315,1,3,0)
- ;;=3^Glaucoma,Neovascular
- ;;^UTILITY(U,$J,358.3,10315,1,4,0)
- ;;=4^365.63
- ;;^UTILITY(U,$J,358.3,10315,2)
- ;;=Neovascular Glaucoma^268778
- ;;^UTILITY(U,$J,358.3,10316,0)
- ;;=365.10^^44^563^22
- ;;^UTILITY(U,$J,358.3,10316,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10316,1,3,0)
- ;;=3^Glaucoma,Open Angle Unspec
- ;;^UTILITY(U,$J,358.3,10316,1,4,0)
- ;;=4^365.10
- ;;^UTILITY(U,$J,358.3,10316,2)
- ;;=^51206
- ;;^UTILITY(U,$J,358.3,10317,0)
- ;;=365.13^^44^563^25
- ;;^UTILITY(U,$J,358.3,10317,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10143,1,3,0)
+ ;;=3^Drusen of Macular,Left Eye
+ ;;^UTILITY(U,$J,358.3,10143,1,4,0)
+ ;;=4^H35.362

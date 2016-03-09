@@ -1,138 +1,122 @@
-IBDEI199 ; ; 06-AUG-2015
+IBDEI199 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,22241,1,4,0)
- ;;=4^382.01
- ;;^UTILITY(U,$J,358.3,22241,1,5,0)
- ;;=5^Otitis Media W/Tympanic Membrane Rupture
- ;;^UTILITY(U,$J,358.3,22241,2)
- ;;=^269396
- ;;^UTILITY(U,$J,358.3,22242,0)
- ;;=381.10^^125^1390^29
- ;;^UTILITY(U,$J,358.3,22242,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22242,1,4,0)
- ;;=4^381.10
- ;;^UTILITY(U,$J,358.3,22242,1,5,0)
- ;;=5^Otitis Med, Serous Chronic
- ;;^UTILITY(U,$J,358.3,22242,2)
- ;;=Otitis Med,serous chroinic^269376
- ;;^UTILITY(U,$J,358.3,22243,0)
- ;;=379.91^^125^1390^32
- ;;^UTILITY(U,$J,358.3,22243,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22243,1,4,0)
- ;;=4^379.91
- ;;^UTILITY(U,$J,358.3,22243,1,5,0)
- ;;=5^Pain In Or Around Eye
- ;;^UTILITY(U,$J,358.3,22243,2)
- ;;=^89093
- ;;^UTILITY(U,$J,358.3,22244,0)
- ;;=462.^^125^1390^33
- ;;^UTILITY(U,$J,358.3,22244,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22244,1,4,0)
- ;;=4^462.
- ;;^UTILITY(U,$J,358.3,22244,1,5,0)
- ;;=5^Pharyngitis, Acute
- ;;^UTILITY(U,$J,358.3,22244,2)
- ;;=Pharyngitis, Acute^2653
- ;;^UTILITY(U,$J,358.3,22245,0)
- ;;=460.^^125^1390^21
- ;;^UTILITY(U,$J,358.3,22245,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22245,1,4,0)
- ;;=4^460.
- ;;^UTILITY(U,$J,358.3,22245,1,5,0)
- ;;=5^Nasopharyngitis, Acute
- ;;^UTILITY(U,$J,358.3,22245,2)
- ;;=^26543
- ;;^UTILITY(U,$J,358.3,22246,0)
- ;;=477.9^^125^1390^3
- ;;^UTILITY(U,$J,358.3,22246,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22246,1,4,0)
- ;;=4^477.9
- ;;^UTILITY(U,$J,358.3,22246,1,5,0)
- ;;=5^Allergic Rhinitis
- ;;^UTILITY(U,$J,358.3,22246,2)
- ;;=^4955
- ;;^UTILITY(U,$J,358.3,22247,0)
- ;;=473.9^^125^1390^37
- ;;^UTILITY(U,$J,358.3,22247,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22247,1,4,0)
- ;;=4^473.9
- ;;^UTILITY(U,$J,358.3,22247,1,5,0)
- ;;=5^Sinusitis, Chronic
- ;;^UTILITY(U,$J,358.3,22247,2)
- ;;=^123985
- ;;^UTILITY(U,$J,358.3,22248,0)
- ;;=461.1^^125^1390^38
- ;;^UTILITY(U,$J,358.3,22248,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22248,1,4,0)
- ;;=4^461.1
- ;;^UTILITY(U,$J,358.3,22248,1,5,0)
- ;;=5^Sinusitis, Frontal Acute
- ;;^UTILITY(U,$J,358.3,22248,2)
- ;;=^269856
- ;;^UTILITY(U,$J,358.3,22249,0)
- ;;=473.1^^125^1390^39
- ;;^UTILITY(U,$J,358.3,22249,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22249,1,4,0)
- ;;=4^473.1
- ;;^UTILITY(U,$J,358.3,22249,1,5,0)
- ;;=5^Sinusitis, Frontal Chronic
- ;;^UTILITY(U,$J,358.3,22249,2)
- ;;=^24380
- ;;^UTILITY(U,$J,358.3,22250,0)
- ;;=461.0^^125^1390^40
- ;;^UTILITY(U,$J,358.3,22250,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22250,1,4,0)
- ;;=4^461.0
- ;;^UTILITY(U,$J,358.3,22250,1,5,0)
- ;;=5^Sinusitis, Maxillary Acute
- ;;^UTILITY(U,$J,358.3,22250,2)
- ;;=^269853
- ;;^UTILITY(U,$J,358.3,22251,0)
- ;;=473.0^^125^1390^41
- ;;^UTILITY(U,$J,358.3,22251,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22251,1,4,0)
- ;;=4^473.0
- ;;^UTILITY(U,$J,358.3,22251,1,5,0)
- ;;=5^Sinusitis, Maxillary Chronic
- ;;^UTILITY(U,$J,358.3,22251,2)
- ;;=^24407
- ;;^UTILITY(U,$J,358.3,22252,0)
- ;;=388.31^^125^1390^43
- ;;^UTILITY(U,$J,358.3,22252,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22252,1,4,0)
- ;;=4^388.31
- ;;^UTILITY(U,$J,358.3,22252,1,5,0)
- ;;=5^Tinnitus, Subjective
- ;;^UTILITY(U,$J,358.3,22252,2)
- ;;=^269527
- ;;^UTILITY(U,$J,358.3,22253,0)
- ;;=463.^^125^1390^44
- ;;^UTILITY(U,$J,358.3,22253,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22253,1,4,0)
- ;;=4^463.
- ;;^UTILITY(U,$J,358.3,22253,1,5,0)
- ;;=5^Tonsillitis, Acute
- ;;^UTILITY(U,$J,358.3,22253,2)
- ;;=Tonsillitis, Acute^2695
- ;;^UTILITY(U,$J,358.3,22254,0)
- ;;=465.9^^125^1390^46
- ;;^UTILITY(U,$J,358.3,22254,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22254,1,4,0)
- ;;=4^465.9
- ;;^UTILITY(U,$J,358.3,22254,1,5,0)
- ;;=5^URI
+ ;;^UTILITY(U,$J,358.3,21327,2)
+ ;;=^5061661
+ ;;^UTILITY(U,$J,358.3,21328,0)
+ ;;=Y36.300D^^84^948^127
+ ;;^UTILITY(U,$J,358.3,21328,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21328,1,3,0)
+ ;;=3^War Op Inv Unspec Fire/Conflagr/Hot Subst,Milt,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21328,1,4,0)
+ ;;=4^Y36.300D
+ ;;^UTILITY(U,$J,358.3,21328,2)
+ ;;=^5061662
+ ;;^UTILITY(U,$J,358.3,21329,0)
+ ;;=Y36.410A^^84^948^121
+ ;;^UTILITY(U,$J,358.3,21329,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21329,1,3,0)
+ ;;=3^War Op Inv Rubber Bullets,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21329,1,4,0)
+ ;;=4^Y36.410A
+ ;;^UTILITY(U,$J,358.3,21329,2)
+ ;;=^5061691
+ ;;^UTILITY(U,$J,358.3,21330,0)
+ ;;=Y36.410D^^84^948^123
+ ;;^UTILITY(U,$J,358.3,21330,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21330,1,3,0)
+ ;;=3^War Op Inv Rubber Bullets,Milt,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21330,1,4,0)
+ ;;=4^Y36.410D
+ ;;^UTILITY(U,$J,358.3,21330,2)
+ ;;=^5061692
+ ;;^UTILITY(U,$J,358.3,21331,0)
+ ;;=Y36.6X0A^^84^948^113
+ ;;^UTILITY(U,$J,358.3,21331,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21331,1,3,0)
+ ;;=3^War Op Inv Biological Weapons,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21331,1,4,0)
+ ;;=4^Y36.6X0A
+ ;;^UTILITY(U,$J,358.3,21331,2)
+ ;;=^5061775
+ ;;^UTILITY(U,$J,358.3,21332,0)
+ ;;=Y36.6X0D^^84^948^115
+ ;;^UTILITY(U,$J,358.3,21332,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21332,1,3,0)
+ ;;=3^War Op Inv Biological Weapons,Milt,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21332,1,4,0)
+ ;;=4^Y36.6X0D
+ ;;^UTILITY(U,$J,358.3,21332,2)
+ ;;=^5061776
+ ;;^UTILITY(U,$J,358.3,21333,0)
+ ;;=Y36.7X0A^^84^948^128
+ ;;^UTILITY(U,$J,358.3,21333,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21333,1,3,0)
+ ;;=3^War Op w/ Chem Weapons/Unconvtl Warfare,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21333,1,4,0)
+ ;;=4^Y36.7X0A
+ ;;^UTILITY(U,$J,358.3,21333,2)
+ ;;=^5061781
+ ;;^UTILITY(U,$J,358.3,21334,0)
+ ;;=Y36.7X0D^^84^948^129
+ ;;^UTILITY(U,$J,358.3,21334,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21334,1,3,0)
+ ;;=3^War Op w/ Chem Weapons/Unconvtl Warfare,Milt,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21334,1,4,0)
+ ;;=4^Y36.7X0D
+ ;;^UTILITY(U,$J,358.3,21334,2)
+ ;;=^5061782
+ ;;^UTILITY(U,$J,358.3,21335,0)
+ ;;=Y36.810A^^84^948^22
+ ;;^UTILITY(U,$J,358.3,21335,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21335,1,3,0)
+ ;;=3^Explosn of Mine Placed During War Op but Expld Aft,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21335,1,4,0)
+ ;;=4^Y36.810A
+ ;;^UTILITY(U,$J,358.3,21335,2)
+ ;;=^5061787
+ ;;^UTILITY(U,$J,358.3,21336,0)
+ ;;=Y36.810D^^84^948^23
+ ;;^UTILITY(U,$J,358.3,21336,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21336,1,3,0)
+ ;;=3^Explosn of Mine Placed During War Op but Expld Aft,Milt,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21336,1,4,0)
+ ;;=4^Y36.810D
+ ;;^UTILITY(U,$J,358.3,21336,2)
+ ;;=^5061788
+ ;;^UTILITY(U,$J,358.3,21337,0)
+ ;;=Y36.820A^^84^948^19
+ ;;^UTILITY(U,$J,358.3,21337,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21337,1,3,0)
+ ;;=3^Explosn of Bomb Placed During War Op But Expld Aft,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21337,1,4,0)
+ ;;=4^Y36.820A
+ ;;^UTILITY(U,$J,358.3,21337,2)
+ ;;=^5061793
+ ;;^UTILITY(U,$J,358.3,21338,0)
+ ;;=Y36.820D^^84^948^20
+ ;;^UTILITY(U,$J,358.3,21338,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21338,1,3,0)
+ ;;=3^Explosn of Bomb Placed During War Op But Expld Aft,Milt,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21338,1,4,0)
+ ;;=4^Y36.820D
+ ;;^UTILITY(U,$J,358.3,21338,2)
+ ;;=^5061794
+ ;;^UTILITY(U,$J,358.3,21339,0)
+ ;;=Y37.200A^^84^948^91
+ ;;^UTILITY(U,$J,358.3,21339,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21339,1,3,0)
+ ;;=3^Miltary Op Inv Explosion/Fragments,Milt,Init Encntr

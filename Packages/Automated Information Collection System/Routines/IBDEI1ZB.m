@@ -1,120 +1,130 @@
-IBDEI1ZB ; ; 06-AUG-2015
+IBDEI1ZB ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34676,0)
- ;;=S62.660S^^183^2021^74
- ;;^UTILITY(U,$J,358.3,34676,1,0)
+ ;;^UTILITY(U,$J,358.3,33583,0)
+ ;;=H01.002^^131^1673^3
+ ;;^UTILITY(U,$J,358.3,33583,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34676,1,3,0)
- ;;=3^Nondisp fx of distal phalanx of right index finger, sequela
- ;;^UTILITY(U,$J,358.3,34676,1,4,0)
- ;;=4^S62.660S
- ;;^UTILITY(U,$J,358.3,34676,2)
- ;;=^5034808
- ;;^UTILITY(U,$J,358.3,34677,0)
- ;;=S62.666S^^183^2021^75
- ;;^UTILITY(U,$J,358.3,34677,1,0)
+ ;;^UTILITY(U,$J,358.3,33583,1,3,0)
+ ;;=3^Blepharitis Unspec,Right Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,33583,1,4,0)
+ ;;=4^H01.002
+ ;;^UTILITY(U,$J,358.3,33583,2)
+ ;;=^5004239
+ ;;^UTILITY(U,$J,358.3,33584,0)
+ ;;=H01.004^^131^1673^2
+ ;;^UTILITY(U,$J,358.3,33584,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34677,1,3,0)
- ;;=3^Nondisp fx of distal phalanx of right little finger, sequela
- ;;^UTILITY(U,$J,358.3,34677,1,4,0)
- ;;=4^S62.666S
- ;;^UTILITY(U,$J,358.3,34677,2)
- ;;=^5034850
- ;;^UTILITY(U,$J,358.3,34678,0)
- ;;=S62.662S^^183^2021^76
- ;;^UTILITY(U,$J,358.3,34678,1,0)
+ ;;^UTILITY(U,$J,358.3,33584,1,3,0)
+ ;;=3^Blepharitis Unspec,Left Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,33584,1,4,0)
+ ;;=4^H01.004
+ ;;^UTILITY(U,$J,358.3,33584,2)
+ ;;=^5004241
+ ;;^UTILITY(U,$J,358.3,33585,0)
+ ;;=H01.005^^131^1673^1
+ ;;^UTILITY(U,$J,358.3,33585,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34678,1,3,0)
- ;;=3^Nondisp fx of distal phalanx of right middle finger, sequela
- ;;^UTILITY(U,$J,358.3,34678,1,4,0)
- ;;=4^S62.662S
- ;;^UTILITY(U,$J,358.3,34678,2)
- ;;=^5034822
- ;;^UTILITY(U,$J,358.3,34679,0)
- ;;=S62.664S^^183^2021^77
- ;;^UTILITY(U,$J,358.3,34679,1,0)
+ ;;^UTILITY(U,$J,358.3,33585,1,3,0)
+ ;;=3^Blepharitis Unspec,Left Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,33585,1,4,0)
+ ;;=4^H01.005
+ ;;^UTILITY(U,$J,358.3,33585,2)
+ ;;=^5133380
+ ;;^UTILITY(U,$J,358.3,33586,0)
+ ;;=H01.001^^131^1673^4
+ ;;^UTILITY(U,$J,358.3,33586,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34679,1,3,0)
- ;;=3^Nondisp fx of distal phalanx of right ring finger, sequela
- ;;^UTILITY(U,$J,358.3,34679,1,4,0)
- ;;=4^S62.664S
- ;;^UTILITY(U,$J,358.3,34679,2)
- ;;=^5034836
- ;;^UTILITY(U,$J,358.3,34680,0)
- ;;=S62.651S^^183^2021^79
- ;;^UTILITY(U,$J,358.3,34680,1,0)
+ ;;^UTILITY(U,$J,358.3,33586,1,3,0)
+ ;;=3^Blepharitis Unspec,Right Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,33586,1,4,0)
+ ;;=4^H01.001
+ ;;^UTILITY(U,$J,358.3,33586,2)
+ ;;=^5004238
+ ;;^UTILITY(U,$J,358.3,33587,0)
+ ;;=H57.13^^131^1673^10
+ ;;^UTILITY(U,$J,358.3,33587,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34680,1,3,0)
- ;;=3^Nondisp fx of medial phalanx of left index finger, sequela
- ;;^UTILITY(U,$J,358.3,34680,1,4,0)
- ;;=4^S62.651S
- ;;^UTILITY(U,$J,358.3,34680,2)
- ;;=^5034745
- ;;^UTILITY(U,$J,358.3,34681,0)
- ;;=S62.657S^^183^2021^80
- ;;^UTILITY(U,$J,358.3,34681,1,0)
+ ;;^UTILITY(U,$J,358.3,33587,1,3,0)
+ ;;=3^Ocular Pain,Bilateral
+ ;;^UTILITY(U,$J,358.3,33587,1,4,0)
+ ;;=4^H57.13
+ ;;^UTILITY(U,$J,358.3,33587,2)
+ ;;=^5006384
+ ;;^UTILITY(U,$J,358.3,33588,0)
+ ;;=H57.12^^131^1673^11
+ ;;^UTILITY(U,$J,358.3,33588,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34681,1,3,0)
- ;;=3^Nondisp fx of medial phalanx of left little finger, sequela
- ;;^UTILITY(U,$J,358.3,34681,1,4,0)
- ;;=4^S62.657S
- ;;^UTILITY(U,$J,358.3,34681,2)
- ;;=^5034787
- ;;^UTILITY(U,$J,358.3,34682,0)
- ;;=S62.653S^^183^2021^81
- ;;^UTILITY(U,$J,358.3,34682,1,0)
+ ;;^UTILITY(U,$J,358.3,33588,1,3,0)
+ ;;=3^Ocular Pain,Left Eye
+ ;;^UTILITY(U,$J,358.3,33588,1,4,0)
+ ;;=4^H57.12
+ ;;^UTILITY(U,$J,358.3,33588,2)
+ ;;=^5006383
+ ;;^UTILITY(U,$J,358.3,33589,0)
+ ;;=H57.11^^131^1673^12
+ ;;^UTILITY(U,$J,358.3,33589,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34682,1,3,0)
- ;;=3^Nondisp fx of medial phalanx of left middle finger, sequela
- ;;^UTILITY(U,$J,358.3,34682,1,4,0)
- ;;=4^S62.653S
- ;;^UTILITY(U,$J,358.3,34682,2)
- ;;=^5034759
- ;;^UTILITY(U,$J,358.3,34683,0)
- ;;=S62.655S^^183^2021^82
- ;;^UTILITY(U,$J,358.3,34683,1,0)
+ ;;^UTILITY(U,$J,358.3,33589,1,3,0)
+ ;;=3^Ocular Pain,Right Eye
+ ;;^UTILITY(U,$J,358.3,33589,1,4,0)
+ ;;=4^H57.11
+ ;;^UTILITY(U,$J,358.3,33589,2)
+ ;;=^5006382
+ ;;^UTILITY(U,$J,358.3,33590,0)
+ ;;=S05.02XA^^131^1674^3
+ ;;^UTILITY(U,$J,358.3,33590,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34683,1,3,0)
- ;;=3^Nondisp fx of medial phalanx of left ring finger, sequela
- ;;^UTILITY(U,$J,358.3,34683,1,4,0)
- ;;=4^S62.655S
- ;;^UTILITY(U,$J,358.3,34683,2)
- ;;=^5034773
- ;;^UTILITY(U,$J,358.3,34684,0)
- ;;=S62.650S^^183^2021^83
- ;;^UTILITY(U,$J,358.3,34684,1,0)
+ ;;^UTILITY(U,$J,358.3,33590,1,3,0)
+ ;;=3^Inj Conjunctiva/Corneal Abrasion w/o FB,Left Eye,Init
+ ;;^UTILITY(U,$J,358.3,33590,1,4,0)
+ ;;=4^S05.02XA
+ ;;^UTILITY(U,$J,358.3,33590,2)
+ ;;=^5020582
+ ;;^UTILITY(U,$J,358.3,33591,0)
+ ;;=S05.01XA^^131^1674^4
+ ;;^UTILITY(U,$J,358.3,33591,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34684,1,3,0)
- ;;=3^Nondisp fx of medial phalanx of right index finger, sequela
- ;;^UTILITY(U,$J,358.3,34684,1,4,0)
- ;;=4^S62.650S
- ;;^UTILITY(U,$J,358.3,34684,2)
- ;;=^5034738
- ;;^UTILITY(U,$J,358.3,34685,0)
- ;;=S62.656S^^183^2021^84
- ;;^UTILITY(U,$J,358.3,34685,1,0)
+ ;;^UTILITY(U,$J,358.3,33591,1,3,0)
+ ;;=3^Inj Conjunctiva/Corneal Abrasion w/o FB,Right Eye,Init
+ ;;^UTILITY(U,$J,358.3,33591,1,4,0)
+ ;;=4^S05.01XA
+ ;;^UTILITY(U,$J,358.3,33591,2)
+ ;;=^5020579
+ ;;^UTILITY(U,$J,358.3,33592,0)
+ ;;=T15.02XA^^131^1674^1
+ ;;^UTILITY(U,$J,358.3,33592,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34685,1,3,0)
- ;;=3^Nondisp fx of medial phalanx of right little finger, sequela
- ;;^UTILITY(U,$J,358.3,34685,1,4,0)
- ;;=4^S62.656S
- ;;^UTILITY(U,$J,358.3,34685,2)
- ;;=^5034780
- ;;^UTILITY(U,$J,358.3,34686,0)
- ;;=S62.652S^^183^2021^85
- ;;^UTILITY(U,$J,358.3,34686,1,0)
+ ;;^UTILITY(U,$J,358.3,33592,1,3,0)
+ ;;=3^Foreign Body in Cornea,Left Eye,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33592,1,4,0)
+ ;;=4^T15.02XA
+ ;;^UTILITY(U,$J,358.3,33592,2)
+ ;;=^5046387
+ ;;^UTILITY(U,$J,358.3,33593,0)
+ ;;=T15.01XA^^131^1674^2
+ ;;^UTILITY(U,$J,358.3,33593,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34686,1,3,0)
- ;;=3^Nondisp fx of medial phalanx of right middle finger, sequela
- ;;^UTILITY(U,$J,358.3,34686,1,4,0)
- ;;=4^S62.652S
- ;;^UTILITY(U,$J,358.3,34686,2)
- ;;=^5034752
- ;;^UTILITY(U,$J,358.3,34687,0)
- ;;=S62.654S^^183^2021^86
- ;;^UTILITY(U,$J,358.3,34687,1,0)
+ ;;^UTILITY(U,$J,358.3,33593,1,3,0)
+ ;;=3^Foreign Body in Cornea,Right Eye,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33593,1,4,0)
+ ;;=4^T15.01XA
+ ;;^UTILITY(U,$J,358.3,33593,2)
+ ;;=^5046384
+ ;;^UTILITY(U,$J,358.3,33594,0)
+ ;;=S00.252A^^131^1674^5
+ ;;^UTILITY(U,$J,358.3,33594,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34687,1,3,0)
- ;;=3^Nondisp fx of medial phalanx of right ring finger, sequela
+ ;;^UTILITY(U,$J,358.3,33594,1,3,0)
+ ;;=3^Superficial FB of Left Eyelid/Periocular Area,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33594,1,4,0)
+ ;;=4^S00.252A
+ ;;^UTILITY(U,$J,358.3,33594,2)
+ ;;=^5019820
+ ;;^UTILITY(U,$J,358.3,33595,0)
+ ;;=S00.251A^^131^1674^6
+ ;;^UTILITY(U,$J,358.3,33595,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33595,1,3,0)
+ ;;=3^Superficial FB of Right Eyelid/Periocular Area,Init Encntr

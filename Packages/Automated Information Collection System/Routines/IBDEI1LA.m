@@ -1,136 +1,128 @@
-IBDEI1LA ; ; 06-AUG-2015
+IBDEI1LA ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,28210,0)
- ;;=707.15^^162^1793^67
- ;;^UTILITY(U,$J,358.3,28210,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28210,1,4,0)
- ;;=4^707.15
- ;;^UTILITY(U,$J,358.3,28210,1,5,0)
- ;;=5^Ulcer Of Foot, Non-Diabetic
- ;;^UTILITY(U,$J,358.3,28210,2)
- ;;=Ulcer of Foot, non-diabetic^322148
- ;;^UTILITY(U,$J,358.3,28211,0)
- ;;=707.14^^162^1793^68
- ;;^UTILITY(U,$J,358.3,28211,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28211,1,4,0)
- ;;=4^707.14
- ;;^UTILITY(U,$J,358.3,28211,1,5,0)
- ;;=5^Ulcer Of Heel/Midfoot, Non-Diabetic
- ;;^UTILITY(U,$J,358.3,28211,2)
- ;;=Ulcer of Heel/Midfoot, non-d-diabetic^322146
- ;;^UTILITY(U,$J,358.3,28212,0)
- ;;=707.10^^162^1793^70
- ;;^UTILITY(U,$J,358.3,28212,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28212,1,4,0)
- ;;=4^707.10
- ;;^UTILITY(U,$J,358.3,28212,1,5,0)
- ;;=5^Ulcer, Lower Ext, Non-Diabetic
- ;;^UTILITY(U,$J,358.3,28212,2)
- ;;=Ulcer, LE, non-diabetic^322142
- ;;^UTILITY(U,$J,358.3,28213,0)
- ;;=707.11^^162^1793^69
- ;;^UTILITY(U,$J,358.3,28213,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28213,1,4,0)
- ;;=4^707.11
- ;;^UTILITY(U,$J,358.3,28213,1,5,0)
- ;;=5^Ulcer Of Thigh, Non-Diabetic
- ;;^UTILITY(U,$J,358.3,28213,2)
- ;;=Ulcer of Thigh, non-diabetic^322143
- ;;^UTILITY(U,$J,358.3,28214,0)
- ;;=695.3^^162^1793^51
- ;;^UTILITY(U,$J,358.3,28214,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28214,1,4,0)
- ;;=4^695.3
- ;;^UTILITY(U,$J,358.3,28214,1,5,0)
- ;;=5^Rosacea
- ;;^UTILITY(U,$J,358.3,28214,2)
- ;;=^107114
- ;;^UTILITY(U,$J,358.3,28215,0)
- ;;=706.1^^162^1793^1
- ;;^UTILITY(U,$J,358.3,28215,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28215,1,4,0)
- ;;=4^706.1
- ;;^UTILITY(U,$J,358.3,28215,1,5,0)
- ;;=5^Acne Vulgaris
- ;;^UTILITY(U,$J,358.3,28215,2)
- ;;=^87239
- ;;^UTILITY(U,$J,358.3,28216,0)
- ;;=702.0^^162^1793^2
- ;;^UTILITY(U,$J,358.3,28216,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28216,1,4,0)
- ;;=4^702.0
- ;;^UTILITY(U,$J,358.3,28216,1,5,0)
- ;;=5^Actinic Keratosis
- ;;^UTILITY(U,$J,358.3,28216,2)
- ;;=^66900
- ;;^UTILITY(U,$J,358.3,28217,0)
- ;;=704.00^^162^1793^3
- ;;^UTILITY(U,$J,358.3,28217,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28217,1,4,0)
- ;;=4^704.00
- ;;^UTILITY(U,$J,358.3,28217,1,5,0)
- ;;=5^Alopecia NOS
- ;;^UTILITY(U,$J,358.3,28217,2)
- ;;=^5078
- ;;^UTILITY(U,$J,358.3,28218,0)
- ;;=680.9^^162^1793^5
- ;;^UTILITY(U,$J,358.3,28218,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28218,1,4,0)
- ;;=4^680.9
- ;;^UTILITY(U,$J,358.3,28218,1,5,0)
- ;;=5^Carbuncle/Furuncle
- ;;^UTILITY(U,$J,358.3,28218,2)
- ;;=^19191
- ;;^UTILITY(U,$J,358.3,28219,0)
- ;;=680.5^^162^1793^4
- ;;^UTILITY(U,$J,358.3,28219,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28219,1,4,0)
- ;;=4^680.5
- ;;^UTILITY(U,$J,358.3,28219,1,5,0)
- ;;=5^Carbuncle of Buttock
- ;;^UTILITY(U,$J,358.3,28219,2)
- ;;=^271878
- ;;^UTILITY(U,$J,358.3,28220,0)
- ;;=709.9^^162^1793^59
- ;;^UTILITY(U,$J,358.3,28220,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28220,1,4,0)
- ;;=4^709.9
- ;;^UTILITY(U,$J,358.3,28220,1,5,0)
- ;;=5^Skin Lesion, Unsp
- ;;^UTILITY(U,$J,358.3,28220,2)
- ;;=^111083
- ;;^UTILITY(U,$J,358.3,28221,0)
- ;;=078.11^^162^1793^15
- ;;^UTILITY(U,$J,358.3,28221,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28221,1,4,0)
- ;;=4^078.11
- ;;^UTILITY(U,$J,358.3,28221,1,5,0)
- ;;=5^Condyloma Acuminatum
- ;;^UTILITY(U,$J,358.3,28221,2)
- ;;=^295788
- ;;^UTILITY(U,$J,358.3,28222,0)
- ;;=700.^^162^1793^16
- ;;^UTILITY(U,$J,358.3,28222,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28222,1,4,0)
- ;;=4^700.
- ;;^UTILITY(U,$J,358.3,28222,1,5,0)
- ;;=5^Corns And Callosities
- ;;^UTILITY(U,$J,358.3,28222,2)
- ;;=^18351
- ;;^UTILITY(U,$J,358.3,28223,0)
- ;;=690.18^^162^1793^17
+ ;;^UTILITY(U,$J,358.3,26945,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26945,1,3,0)
+ ;;=3^Nicotine Use Disorder,Moderate-Severe
+ ;;^UTILITY(U,$J,358.3,26945,1,4,0)
+ ;;=4^F17.200
+ ;;^UTILITY(U,$J,358.3,26945,2)
+ ;;=^5003360
+ ;;^UTILITY(U,$J,358.3,26946,0)
+ ;;=F17.201^^100^1298^10
+ ;;^UTILITY(U,$J,358.3,26946,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26946,1,3,0)
+ ;;=3^Nicotine Use Disorder,Moderate-Severe In Remission
+ ;;^UTILITY(U,$J,358.3,26946,1,4,0)
+ ;;=4^F17.201
+ ;;^UTILITY(U,$J,358.3,26946,2)
+ ;;=^5003361
+ ;;^UTILITY(U,$J,358.3,26947,0)
+ ;;=F17.203^^100^1298^11
+ ;;^UTILITY(U,$J,358.3,26947,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26947,1,3,0)
+ ;;=3^Nicotine Withdrawal
+ ;;^UTILITY(U,$J,358.3,26947,1,4,0)
+ ;;=4^F17.203
+ ;;^UTILITY(U,$J,358.3,26947,2)
+ ;;=^5003362
+ ;;^UTILITY(U,$J,358.3,26948,0)
+ ;;=F17.210^^100^1298^4
+ ;;^UTILITY(U,$J,358.3,26948,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26948,1,3,0)
+ ;;=3^Nicotine Dependence,Cigarettes,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,26948,1,4,0)
+ ;;=4^F17.210
+ ;;^UTILITY(U,$J,358.3,26948,2)
+ ;;=^5003365
+ ;;^UTILITY(U,$J,358.3,26949,0)
+ ;;=F17.211^^100^1298^3
+ ;;^UTILITY(U,$J,358.3,26949,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26949,1,3,0)
+ ;;=3^Nicotine Dependence,Cigarettes,In Remission
+ ;;^UTILITY(U,$J,358.3,26949,1,4,0)
+ ;;=4^F17.211
+ ;;^UTILITY(U,$J,358.3,26949,2)
+ ;;=^5003366
+ ;;^UTILITY(U,$J,358.3,26950,0)
+ ;;=F17.220^^100^1298^2
+ ;;^UTILITY(U,$J,358.3,26950,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26950,1,3,0)
+ ;;=3^Nicotine Dependence,Chewing Tobacco,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,26950,1,4,0)
+ ;;=4^F17.220
+ ;;^UTILITY(U,$J,358.3,26950,2)
+ ;;=^5003370
+ ;;^UTILITY(U,$J,358.3,26951,0)
+ ;;=F17.221^^100^1298^1
+ ;;^UTILITY(U,$J,358.3,26951,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26951,1,3,0)
+ ;;=3^Nicotine Dependence,Chewing Tobacco,In Remission
+ ;;^UTILITY(U,$J,358.3,26951,1,4,0)
+ ;;=4^F17.221
+ ;;^UTILITY(U,$J,358.3,26951,2)
+ ;;=^5003371
+ ;;^UTILITY(U,$J,358.3,26952,0)
+ ;;=F17.290^^100^1298^5
+ ;;^UTILITY(U,$J,358.3,26952,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26952,1,3,0)
+ ;;=3^Nicotine Dependence,Oth Tobacco Product,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,26952,1,4,0)
+ ;;=4^F17.290
+ ;;^UTILITY(U,$J,358.3,26952,2)
+ ;;=^5003375
+ ;;^UTILITY(U,$J,358.3,26953,0)
+ ;;=F17.291^^100^1298^6
+ ;;^UTILITY(U,$J,358.3,26953,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26953,1,3,0)
+ ;;=3^Nicotine Dependence,Oth Tobacco Product,In Remission
+ ;;^UTILITY(U,$J,358.3,26953,1,4,0)
+ ;;=4^F17.291
+ ;;^UTILITY(U,$J,358.3,26953,2)
+ ;;=^5003376
+ ;;^UTILITY(U,$J,358.3,26954,0)
+ ;;=F17.208^^100^1298^7
+ ;;^UTILITY(U,$J,358.3,26954,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26954,1,3,0)
+ ;;=3^Nicotine Induced Sleep Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26954,1,4,0)
+ ;;=4^F17.208
+ ;;^UTILITY(U,$J,358.3,26954,2)
+ ;;=^5003363
+ ;;^UTILITY(U,$J,358.3,26955,0)
+ ;;=F17.209^^100^1298^8
+ ;;^UTILITY(U,$J,358.3,26955,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26955,1,3,0)
+ ;;=3^Nicotine Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,26955,1,4,0)
+ ;;=4^F17.209
+ ;;^UTILITY(U,$J,358.3,26955,2)
+ ;;=^5003364
+ ;;^UTILITY(U,$J,358.3,26956,0)
+ ;;=F14.10^^100^1299^1
+ ;;^UTILITY(U,$J,358.3,26956,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26956,1,3,0)
+ ;;=3^Cocaine Use Disorder,Mild
+ ;;^UTILITY(U,$J,358.3,26956,1,4,0)
+ ;;=4^F14.10
+ ;;^UTILITY(U,$J,358.3,26956,2)
+ ;;=^5003239
+ ;;^UTILITY(U,$J,358.3,26957,0)
+ ;;=F14.14^^100^1299^5
+ ;;^UTILITY(U,$J,358.3,26957,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26957,1,3,0)
+ ;;=3^Cocaine-Induced Depressive,Bipolar or Related Disorder w/ Mild Use Disorder

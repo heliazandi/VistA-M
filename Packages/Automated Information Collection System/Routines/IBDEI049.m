@@ -1,140 +1,126 @@
-IBDEI049 ; ; 06-AUG-2015
+IBDEI049 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1463,1,0)
+ ;;^UTILITY(U,$J,358.3,1566,1,4,0)
+ ;;=4^I25.709
+ ;;^UTILITY(U,$J,358.3,1566,2)
+ ;;=^5007120
+ ;;^UTILITY(U,$J,358.3,1567,0)
+ ;;=I25.711^^11^144^7
+ ;;^UTILITY(U,$J,358.3,1567,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1463,1,3,0)
- ;;=3^Abscess of lung without pneumonia
- ;;^UTILITY(U,$J,358.3,1463,1,4,0)
- ;;=4^J85.2
- ;;^UTILITY(U,$J,358.3,1463,2)
- ;;=^5008307
- ;;^UTILITY(U,$J,358.3,1464,0)
- ;;=J85.1^^3^42^1
- ;;^UTILITY(U,$J,358.3,1464,1,0)
+ ;;^UTILITY(U,$J,358.3,1567,1,3,0)
+ ;;=3^Athscl Autologous Vein CABG w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,1567,1,4,0)
+ ;;=4^I25.711
+ ;;^UTILITY(U,$J,358.3,1567,2)
+ ;;=^5007122
+ ;;^UTILITY(U,$J,358.3,1568,0)
+ ;;=I25.718^^11^144^8
+ ;;^UTILITY(U,$J,358.3,1568,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1464,1,3,0)
- ;;=3^Abscess of lung with pneumonia
- ;;^UTILITY(U,$J,358.3,1464,1,4,0)
- ;;=4^J85.1
- ;;^UTILITY(U,$J,358.3,1464,2)
- ;;=^5008306
- ;;^UTILITY(U,$J,358.3,1465,0)
- ;;=D86.9^^3^43^24
- ;;^UTILITY(U,$J,358.3,1465,1,0)
+ ;;^UTILITY(U,$J,358.3,1568,1,3,0)
+ ;;=3^Athscl Autologous Vein CABG w/ Oth Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1568,1,4,0)
+ ;;=4^I25.718
+ ;;^UTILITY(U,$J,358.3,1568,2)
+ ;;=^5007123
+ ;;^UTILITY(U,$J,358.3,1569,0)
+ ;;=I25.719^^11^144^9
+ ;;^UTILITY(U,$J,358.3,1569,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1465,1,3,0)
- ;;=3^Sarcoidosis, unspecified
- ;;^UTILITY(U,$J,358.3,1465,1,4,0)
- ;;=4^D86.9
- ;;^UTILITY(U,$J,358.3,1465,2)
- ;;=^5002454
- ;;^UTILITY(U,$J,358.3,1466,0)
- ;;=J61.^^3^43^16
- ;;^UTILITY(U,$J,358.3,1466,1,0)
+ ;;^UTILITY(U,$J,358.3,1569,1,3,0)
+ ;;=3^Athscl Autologous Vein CABG w/ Unspec Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1569,1,4,0)
+ ;;=4^I25.719
+ ;;^UTILITY(U,$J,358.3,1569,2)
+ ;;=^5007124
+ ;;^UTILITY(U,$J,358.3,1570,0)
+ ;;=I25.721^^11^144^3
+ ;;^UTILITY(U,$J,358.3,1570,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1466,1,3,0)
- ;;=3^Pneumoconiosis due to asbestos and other mineral fibers
- ;;^UTILITY(U,$J,358.3,1466,1,4,0)
- ;;=4^J61.
- ;;^UTILITY(U,$J,358.3,1466,2)
- ;;=^5008262
- ;;^UTILITY(U,$J,358.3,1467,0)
- ;;=J62.8^^3^43^17
- ;;^UTILITY(U,$J,358.3,1467,1,0)
+ ;;^UTILITY(U,$J,358.3,1570,1,3,0)
+ ;;=3^Athscl Autologous Artery CABG w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,1570,1,4,0)
+ ;;=4^I25.721
+ ;;^UTILITY(U,$J,358.3,1570,2)
+ ;;=^5007126
+ ;;^UTILITY(U,$J,358.3,1571,0)
+ ;;=I25.728^^11^144^4
+ ;;^UTILITY(U,$J,358.3,1571,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1467,1,3,0)
- ;;=3^Pneumoconiosis due to other dust containing silica
- ;;^UTILITY(U,$J,358.3,1467,1,4,0)
- ;;=4^J62.8
- ;;^UTILITY(U,$J,358.3,1467,2)
- ;;=^5008264
- ;;^UTILITY(U,$J,358.3,1468,0)
- ;;=J63.0^^3^43^3
- ;;^UTILITY(U,$J,358.3,1468,1,0)
+ ;;^UTILITY(U,$J,358.3,1571,1,3,0)
+ ;;=3^Athscl Autologous Artery CABG w/ Oth Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1571,1,4,0)
+ ;;=4^I25.728
+ ;;^UTILITY(U,$J,358.3,1571,2)
+ ;;=^5133560
+ ;;^UTILITY(U,$J,358.3,1572,0)
+ ;;=I25.729^^11^144^5
+ ;;^UTILITY(U,$J,358.3,1572,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1468,1,3,0)
- ;;=3^Aluminosis (of lung)
- ;;^UTILITY(U,$J,358.3,1468,1,4,0)
- ;;=4^J63.0
- ;;^UTILITY(U,$J,358.3,1468,2)
- ;;=^5008265
- ;;^UTILITY(U,$J,358.3,1469,0)
- ;;=J63.1^^3^43^4
- ;;^UTILITY(U,$J,358.3,1469,1,0)
+ ;;^UTILITY(U,$J,358.3,1572,1,3,0)
+ ;;=3^Athscl Autologous Artery CABG w/ Unspec Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1572,1,4,0)
+ ;;=4^I25.729
+ ;;^UTILITY(U,$J,358.3,1572,2)
+ ;;=^5133561
+ ;;^UTILITY(U,$J,358.3,1573,0)
+ ;;=I25.731^^11^144^25
+ ;;^UTILITY(U,$J,358.3,1573,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1469,1,3,0)
- ;;=3^Bauxite fibrosis (of lung)
- ;;^UTILITY(U,$J,358.3,1469,1,4,0)
- ;;=4^J63.1
- ;;^UTILITY(U,$J,358.3,1469,2)
- ;;=^5008266
- ;;^UTILITY(U,$J,358.3,1470,0)
- ;;=J63.2^^3^43^5
- ;;^UTILITY(U,$J,358.3,1470,1,0)
+ ;;^UTILITY(U,$J,358.3,1573,1,3,0)
+ ;;=3^Athscl Nonautologous Biological CABG w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,1573,1,4,0)
+ ;;=4^I25.731
+ ;;^UTILITY(U,$J,358.3,1573,2)
+ ;;=^5007128
+ ;;^UTILITY(U,$J,358.3,1574,0)
+ ;;=I25.738^^11^144^26
+ ;;^UTILITY(U,$J,358.3,1574,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1470,1,3,0)
- ;;=3^Berylliosis
- ;;^UTILITY(U,$J,358.3,1470,1,4,0)
- ;;=4^J63.2
- ;;^UTILITY(U,$J,358.3,1470,2)
- ;;=^13594
- ;;^UTILITY(U,$J,358.3,1471,0)
- ;;=J63.3^^3^43^9
- ;;^UTILITY(U,$J,358.3,1471,1,0)
+ ;;^UTILITY(U,$J,358.3,1574,1,3,0)
+ ;;=3^Athscl Nonautologous Biological CABG w/ Oth Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1574,1,4,0)
+ ;;=4^I25.738
+ ;;^UTILITY(U,$J,358.3,1574,2)
+ ;;=^5007129
+ ;;^UTILITY(U,$J,358.3,1575,0)
+ ;;=I25.739^^11^144^27
+ ;;^UTILITY(U,$J,358.3,1575,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1471,1,3,0)
- ;;=3^Graphite fibrosis (of lung)
- ;;^UTILITY(U,$J,358.3,1471,1,4,0)
- ;;=4^J63.3
- ;;^UTILITY(U,$J,358.3,1471,2)
- ;;=^5008267
- ;;^UTILITY(U,$J,358.3,1472,0)
- ;;=J63.4^^3^43^25
- ;;^UTILITY(U,$J,358.3,1472,1,0)
+ ;;^UTILITY(U,$J,358.3,1575,1,3,0)
+ ;;=3^Athscl Nonautologous Biological CABG w/ Unspec Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1575,1,4,0)
+ ;;=4^I25.739
+ ;;^UTILITY(U,$J,358.3,1575,2)
+ ;;=^5007130
+ ;;^UTILITY(U,$J,358.3,1576,0)
+ ;;=I25.751^^11^144^21
+ ;;^UTILITY(U,$J,358.3,1576,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1472,1,3,0)
- ;;=3^Siderosis
- ;;^UTILITY(U,$J,358.3,1472,1,4,0)
- ;;=4^J63.4
- ;;^UTILITY(U,$J,358.3,1472,2)
- ;;=^5008268
- ;;^UTILITY(U,$J,358.3,1473,0)
- ;;=J63.5^^3^43^26
- ;;^UTILITY(U,$J,358.3,1473,1,0)
+ ;;^UTILITY(U,$J,358.3,1576,1,3,0)
+ ;;=3^Athscl Native Cor Art of Transplanted Hrt w/ Ang Pctrs w/ Spasm
+ ;;^UTILITY(U,$J,358.3,1576,1,4,0)
+ ;;=4^I25.751
+ ;;^UTILITY(U,$J,358.3,1576,2)
+ ;;=^5007132
+ ;;^UTILITY(U,$J,358.3,1577,0)
+ ;;=I25.758^^11^144^22
+ ;;^UTILITY(U,$J,358.3,1577,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1473,1,3,0)
- ;;=3^Stannosis
- ;;^UTILITY(U,$J,358.3,1473,1,4,0)
- ;;=4^J63.5
- ;;^UTILITY(U,$J,358.3,1473,2)
- ;;=^5008269
- ;;^UTILITY(U,$J,358.3,1474,0)
- ;;=J63.6^^3^43^18
- ;;^UTILITY(U,$J,358.3,1474,1,0)
+ ;;^UTILITY(U,$J,358.3,1577,1,3,0)
+ ;;=3^Athscl Native Cor Art of Transplanted Hrt w/ Oth Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1577,1,4,0)
+ ;;=4^I25.758
+ ;;^UTILITY(U,$J,358.3,1577,2)
+ ;;=^5007133
+ ;;^UTILITY(U,$J,358.3,1578,0)
+ ;;=I25.759^^11^144^23
+ ;;^UTILITY(U,$J,358.3,1578,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1474,1,3,0)
- ;;=3^Pneumoconiosis due to other specified inorganic dusts
- ;;^UTILITY(U,$J,358.3,1474,1,4,0)
- ;;=4^J63.6
- ;;^UTILITY(U,$J,358.3,1474,2)
- ;;=^5008270
- ;;^UTILITY(U,$J,358.3,1475,0)
- ;;=J70.9^^3^43^22
- ;;^UTILITY(U,$J,358.3,1475,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1475,1,3,0)
- ;;=3^Respiratory conditions due to unspecified external agent
- ;;^UTILITY(U,$J,358.3,1475,1,4,0)
- ;;=4^J70.9
- ;;^UTILITY(U,$J,358.3,1475,2)
- ;;=^269985
- ;;^UTILITY(U,$J,358.3,1476,0)
- ;;=J84.10^^3^43^19
- ;;^UTILITY(U,$J,358.3,1476,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1476,1,3,0)
- ;;=3^Pulmonary fibrosis, unspecified
- ;;^UTILITY(U,$J,358.3,1476,1,4,0)
- ;;=4^J84.10
+ ;;^UTILITY(U,$J,358.3,1578,1,3,0)
+ ;;=3^Athscl Native Cor Art of Transplanted Hrt w/ Unspec Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,1578,1,4,0)
+ ;;=4^I25.759

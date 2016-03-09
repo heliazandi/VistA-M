@@ -1,138 +1,132 @@
-IBDEI0LJ ; ; 06-AUG-2015
+IBDEI0LJ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10209,1,0)
+ ;;^UTILITY(U,$J,358.3,10045,2)
+ ;;=^5005286
+ ;;^UTILITY(U,$J,358.3,10046,0)
+ ;;=H40.013^^44^498^26
+ ;;^UTILITY(U,$J,358.3,10046,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10209,1,3,0)
- ;;=3^Contusion of Eye
- ;;^UTILITY(U,$J,358.3,10209,1,4,0)
- ;;=4^921.0
- ;;^UTILITY(U,$J,358.3,10209,2)
- ;;=^15052
- ;;^UTILITY(U,$J,358.3,10210,0)
- ;;=379.91^^44^562^87
- ;;^UTILITY(U,$J,358.3,10210,1,0)
+ ;;^UTILITY(U,$J,358.3,10046,1,3,0)
+ ;;=3^Open Angle w/ Boderline Findings,Low Risk,Bilateral
+ ;;^UTILITY(U,$J,358.3,10046,1,4,0)
+ ;;=4^H40.013
+ ;;^UTILITY(U,$J,358.3,10046,2)
+ ;;=^5005726
+ ;;^UTILITY(U,$J,358.3,10047,0)
+ ;;=H40.012^^44^498^27
+ ;;^UTILITY(U,$J,358.3,10047,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10210,1,3,0)
- ;;=3^Pain in/around the Eye
- ;;^UTILITY(U,$J,358.3,10210,1,4,0)
- ;;=4^379.91
- ;;^UTILITY(U,$J,358.3,10210,2)
- ;;=Pain in or around eye^89093
- ;;^UTILITY(U,$J,358.3,10211,0)
- ;;=V58.69^^44^562^44
- ;;^UTILITY(U,$J,358.3,10211,1,0)
+ ;;^UTILITY(U,$J,358.3,10047,1,3,0)
+ ;;=3^Open Angle w/ Boderline Findings,Low Risk,Left Eye
+ ;;^UTILITY(U,$J,358.3,10047,1,4,0)
+ ;;=4^H40.012
+ ;;^UTILITY(U,$J,358.3,10047,2)
+ ;;=^5005725
+ ;;^UTILITY(U,$J,358.3,10048,0)
+ ;;=H40.011^^44^498^28
+ ;;^UTILITY(U,$J,358.3,10048,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10211,1,3,0)
- ;;=3^Hi-Risk Med,Long Term Current Use
- ;;^UTILITY(U,$J,358.3,10211,1,4,0)
- ;;=4^V58.69
- ;;^UTILITY(U,$J,358.3,10211,2)
- ;;=^303460
- ;;^UTILITY(U,$J,358.3,10212,0)
- ;;=871.4^^44^562^54
- ;;^UTILITY(U,$J,358.3,10212,1,0)
+ ;;^UTILITY(U,$J,358.3,10048,1,3,0)
+ ;;=3^Open Angle w/ Boderline Findings,Low Risk,Right Eye
+ ;;^UTILITY(U,$J,358.3,10048,1,4,0)
+ ;;=4^H40.011
+ ;;^UTILITY(U,$J,358.3,10048,2)
+ ;;=^5005724
+ ;;^UTILITY(U,$J,358.3,10049,0)
+ ;;=H54.0^^44^499^1
+ ;;^UTILITY(U,$J,358.3,10049,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10212,1,3,0)
- ;;=3^Laceration of Eyeball
- ;;^UTILITY(U,$J,358.3,10212,1,4,0)
- ;;=4^871.4
- ;;^UTILITY(U,$J,358.3,10212,2)
- ;;=Laceration of Eyeball^274889
- ;;^UTILITY(U,$J,358.3,10213,0)
- ;;=242.90^^44^562^108
- ;;^UTILITY(U,$J,358.3,10213,1,0)
+ ;;^UTILITY(U,$J,358.3,10049,1,3,0)
+ ;;=3^Blindness,Both Eyes
+ ;;^UTILITY(U,$J,358.3,10049,1,4,0)
+ ;;=4^H54.0
+ ;;^UTILITY(U,$J,358.3,10049,2)
+ ;;=^5006357
+ ;;^UTILITY(U,$J,358.3,10050,0)
+ ;;=H54.12^^44^499^2
+ ;;^UTILITY(U,$J,358.3,10050,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10213,1,3,0)
- ;;=3^Thyroid Eye Dis
- ;;^UTILITY(U,$J,358.3,10213,1,4,0)
- ;;=4^242.90
- ;;^UTILITY(U,$J,358.3,10213,2)
- ;;=Thyroid Eye Dis^267811^376.21
- ;;^UTILITY(U,$J,358.3,10214,0)
- ;;=135.^^44^562^101
- ;;^UTILITY(U,$J,358.3,10214,1,0)
+ ;;^UTILITY(U,$J,358.3,10050,1,3,0)
+ ;;=3^Blindness-Left Eye/Low Vision-Right Eye
+ ;;^UTILITY(U,$J,358.3,10050,1,4,0)
+ ;;=4^H54.12
+ ;;^UTILITY(U,$J,358.3,10050,2)
+ ;;=^5006360
+ ;;^UTILITY(U,$J,358.3,10051,0)
+ ;;=H54.11^^44^499^5
+ ;;^UTILITY(U,$J,358.3,10051,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10214,1,3,0)
- ;;=3^Sarcoidosis
- ;;^UTILITY(U,$J,358.3,10214,1,4,0)
- ;;=4^135.
- ;;^UTILITY(U,$J,358.3,10214,2)
- ;;=Sarcoidosis^107916
- ;;^UTILITY(U,$J,358.3,10215,0)
- ;;=446.5^^44^562^107
- ;;^UTILITY(U,$J,358.3,10215,1,0)
+ ;;^UTILITY(U,$J,358.3,10051,1,3,0)
+ ;;=3^Blindness-Right Eye/Low Vision-Left Eye
+ ;;^UTILITY(U,$J,358.3,10051,1,4,0)
+ ;;=4^H54.11
+ ;;^UTILITY(U,$J,358.3,10051,2)
+ ;;=^5006359
+ ;;^UTILITY(U,$J,358.3,10052,0)
+ ;;=H54.2^^44^499^8
+ ;;^UTILITY(U,$J,358.3,10052,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10215,1,3,0)
- ;;=3^Temporal Arteritis
- ;;^UTILITY(U,$J,358.3,10215,1,4,0)
- ;;=4^446.5
- ;;^UTILITY(U,$J,358.3,10215,2)
- ;;=Temporal Arteritis^117658
- ;;^UTILITY(U,$J,358.3,10216,0)
- ;;=401.9^^44^562^49
- ;;^UTILITY(U,$J,358.3,10216,1,0)
+ ;;^UTILITY(U,$J,358.3,10052,1,3,0)
+ ;;=3^Low Vision,Both Eyes
+ ;;^UTILITY(U,$J,358.3,10052,1,4,0)
+ ;;=4^H54.2
+ ;;^UTILITY(U,$J,358.3,10052,2)
+ ;;=^5006361
+ ;;^UTILITY(U,$J,358.3,10053,0)
+ ;;=H54.3^^44^499^9
+ ;;^UTILITY(U,$J,358.3,10053,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10216,1,3,0)
- ;;=3^Hypertension
- ;;^UTILITY(U,$J,358.3,10216,1,4,0)
- ;;=4^401.9
- ;;^UTILITY(U,$J,358.3,10216,2)
- ;;=Hypertension^186630
- ;;^UTILITY(U,$J,358.3,10217,0)
- ;;=V72.0^^44^562^32
- ;;^UTILITY(U,$J,358.3,10217,1,0)
+ ;;^UTILITY(U,$J,358.3,10053,1,3,0)
+ ;;=3^Unqualified Visual Loss,Both Eyes
+ ;;^UTILITY(U,$J,358.3,10053,1,4,0)
+ ;;=4^H54.3
+ ;;^UTILITY(U,$J,358.3,10053,2)
+ ;;=^268886
+ ;;^UTILITY(U,$J,358.3,10054,0)
+ ;;=H54.41^^44^499^6
+ ;;^UTILITY(U,$J,358.3,10054,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10217,1,3,0)
- ;;=3^Eye Exam
- ;;^UTILITY(U,$J,358.3,10217,1,4,0)
- ;;=4^V72.0
- ;;^UTILITY(U,$J,358.3,10217,2)
- ;;=Eye Exam^43432
- ;;^UTILITY(U,$J,358.3,10218,0)
- ;;=V41.0^^44^562^91
- ;;^UTILITY(U,$J,358.3,10218,1,0)
+ ;;^UTILITY(U,$J,358.3,10054,1,3,0)
+ ;;=3^Blindness-Right Eye/Normal Vision-Left Eye
+ ;;^UTILITY(U,$J,358.3,10054,1,4,0)
+ ;;=4^H54.41
+ ;;^UTILITY(U,$J,358.3,10054,2)
+ ;;=^5006363
+ ;;^UTILITY(U,$J,358.3,10055,0)
+ ;;=H54.42^^44^499^3
+ ;;^UTILITY(U,$J,358.3,10055,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10218,1,3,0)
- ;;=3^Problems with Sight
- ;;^UTILITY(U,$J,358.3,10218,1,4,0)
- ;;=4^V41.0
- ;;^UTILITY(U,$J,358.3,10218,2)
- ;;=^295427
- ;;^UTILITY(U,$J,358.3,10219,0)
- ;;=998.59^^44^562^89
- ;;^UTILITY(U,$J,358.3,10219,1,0)
+ ;;^UTILITY(U,$J,358.3,10055,1,3,0)
+ ;;=3^Blindness-Left Eye/Normal Vision-Right Eye
+ ;;^UTILITY(U,$J,358.3,10055,1,4,0)
+ ;;=4^H54.42
+ ;;^UTILITY(U,$J,358.3,10055,2)
+ ;;=^5133518
+ ;;^UTILITY(U,$J,358.3,10056,0)
+ ;;=H54.7^^44^499^10
+ ;;^UTILITY(U,$J,358.3,10056,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10219,1,3,0)
- ;;=3^Post Op Infection
- ;;^UTILITY(U,$J,358.3,10219,1,4,0)
- ;;=4^998.59
- ;;^UTILITY(U,$J,358.3,10219,2)
- ;;=Post Op Infection^97081
- ;;^UTILITY(U,$J,358.3,10220,0)
- ;;=042.^^44^562^1
- ;;^UTILITY(U,$J,358.3,10220,1,0)
+ ;;^UTILITY(U,$J,358.3,10056,1,3,0)
+ ;;=3^Visual Loss,Unspec
+ ;;^UTILITY(U,$J,358.3,10056,1,4,0)
+ ;;=4^H54.7
+ ;;^UTILITY(U,$J,358.3,10056,2)
+ ;;=^5006368
+ ;;^UTILITY(U,$J,358.3,10057,0)
+ ;;=H54.8^^44^499^7
+ ;;^UTILITY(U,$J,358.3,10057,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10220,1,3,0)
- ;;=3^AIDS,Unspec
- ;;^UTILITY(U,$J,358.3,10220,1,4,0)
- ;;=4^042.
- ;;^UTILITY(U,$J,358.3,10220,2)
- ;;=^266500
- ;;^UTILITY(U,$J,358.3,10221,0)
- ;;=053.29^^44^562^43
- ;;^UTILITY(U,$J,358.3,10221,1,0)
+ ;;^UTILITY(U,$J,358.3,10057,1,3,0)
+ ;;=3^Legal Blindness,as Defined in USA
+ ;;^UTILITY(U,$J,358.3,10057,1,4,0)
+ ;;=4^H54.8
+ ;;^UTILITY(U,$J,358.3,10057,2)
+ ;;=^5006369
+ ;;^UTILITY(U,$J,358.3,10058,0)
+ ;;=H54.10^^44^499^4
+ ;;^UTILITY(U,$J,358.3,10058,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10221,1,3,0)
- ;;=3^Herpes Zoster,Oth
- ;;^UTILITY(U,$J,358.3,10221,1,4,0)
- ;;=4^053.29
- ;;^UTILITY(U,$J,358.3,10221,2)
- ;;=^266555
- ;;^UTILITY(U,$J,358.3,10222,0)
- ;;=054.40^^44^562^42
- ;;^UTILITY(U,$J,358.3,10222,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10222,1,3,0)
- ;;=3^Herpes Simplex
+ ;;^UTILITY(U,$J,358.3,10058,1,3,0)
+ ;;=3^Blindness-One Eye/Low Vision-Other Eye,Unspec Eyes

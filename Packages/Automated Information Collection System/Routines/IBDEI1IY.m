@@ -1,140 +1,126 @@
-IBDEI1IY ; ; 06-AUG-2015
+IBDEI1IY ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,27067,2)
- ;;=^269954
- ;;^UTILITY(U,$J,358.3,27068,0)
- ;;=493.20^^160^1756^6
- ;;^UTILITY(U,$J,358.3,27068,1,0)
+ ;;^UTILITY(U,$J,358.3,25878,0)
+ ;;=F40.01^^98^1210^3
+ ;;^UTILITY(U,$J,358.3,25878,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27068,1,3,0)
- ;;=3^Chr Obs Asthma W/O Stat Asth/A
- ;;^UTILITY(U,$J,358.3,27068,1,4,0)
- ;;=4^493.20
- ;;^UTILITY(U,$J,358.3,27068,2)
- ;;=^269964
- ;;^UTILITY(U,$J,358.3,27069,0)
- ;;=491.20^^160^1756^14
- ;;^UTILITY(U,$J,358.3,27069,1,0)
+ ;;^UTILITY(U,$J,358.3,25878,1,3,0)
+ ;;=3^Agoraphobia w/ Panic Disorder
+ ;;^UTILITY(U,$J,358.3,25878,1,4,0)
+ ;;=4^F40.01
+ ;;^UTILITY(U,$J,358.3,25878,2)
+ ;;=^331911
+ ;;^UTILITY(U,$J,358.3,25879,0)
+ ;;=F40.298^^98^1210^16
+ ;;^UTILITY(U,$J,358.3,25879,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27069,1,3,0)
- ;;=3^Ob Ch Bronchitis W/O Exacerb
- ;;^UTILITY(U,$J,358.3,27069,1,4,0)
- ;;=4^491.20
- ;;^UTILITY(U,$J,358.3,27069,2)
- ;;=^269953
- ;;^UTILITY(U,$J,358.3,27070,0)
- ;;=492.8^^160^1756^10
- ;;^UTILITY(U,$J,358.3,27070,1,0)
+ ;;^UTILITY(U,$J,358.3,25879,1,3,0)
+ ;;=3^Phobia,Oth Specified
+ ;;^UTILITY(U,$J,358.3,25879,1,4,0)
+ ;;=4^F40.298
+ ;;^UTILITY(U,$J,358.3,25879,2)
+ ;;=^5003561
+ ;;^UTILITY(U,$J,358.3,25880,0)
+ ;;=F93.0^^98^1210^17
+ ;;^UTILITY(U,$J,358.3,25880,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27070,1,3,0)
- ;;=3^Emphysema Nec
- ;;^UTILITY(U,$J,358.3,27070,1,4,0)
- ;;=4^492.8
- ;;^UTILITY(U,$J,358.3,27070,2)
- ;;=^87569
- ;;^UTILITY(U,$J,358.3,27071,0)
- ;;=V17.3^^160^1756^12
- ;;^UTILITY(U,$J,358.3,27071,1,0)
+ ;;^UTILITY(U,$J,358.3,25880,1,3,0)
+ ;;=3^Separation Anxiety Disorder
+ ;;^UTILITY(U,$J,358.3,25880,1,4,0)
+ ;;=4^F93.0
+ ;;^UTILITY(U,$J,358.3,25880,2)
+ ;;=^5003702
+ ;;^UTILITY(U,$J,358.3,25881,0)
+ ;;=F41.8^^98^1210^7
+ ;;^UTILITY(U,$J,358.3,25881,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27071,1,3,0)
- ;;=3^Fam Hx-Ischem Heart Dis
- ;;^UTILITY(U,$J,358.3,27071,1,4,0)
- ;;=4^V17.3
- ;;^UTILITY(U,$J,358.3,27071,2)
- ;;=^295305
- ;;^UTILITY(U,$J,358.3,27072,0)
- ;;=410.92^^160^1756^1
- ;;^UTILITY(U,$J,358.3,27072,1,0)
+ ;;^UTILITY(U,$J,358.3,25881,1,3,0)
+ ;;=3^Anxiety Disorder,Oth Specified
+ ;;^UTILITY(U,$J,358.3,25881,1,4,0)
+ ;;=4^F41.8
+ ;;^UTILITY(U,$J,358.3,25881,2)
+ ;;=^5003566
+ ;;^UTILITY(U,$J,358.3,25882,0)
+ ;;=F06.33^^98^1211^1
+ ;;^UTILITY(U,$J,358.3,25882,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27072,1,3,0)
- ;;=3^Ami Nos, Subsequent
- ;;^UTILITY(U,$J,358.3,27072,1,4,0)
- ;;=4^410.92
- ;;^UTILITY(U,$J,358.3,27072,2)
- ;;=^269675
- ;;^UTILITY(U,$J,358.3,27073,0)
- ;;=412.^^160^1756^15
- ;;^UTILITY(U,$J,358.3,27073,1,0)
+ ;;^UTILITY(U,$J,358.3,25882,1,3,0)
+ ;;=3^Bipolar & Related Disorder d/t Medical Condition w/ Manic Features
+ ;;^UTILITY(U,$J,358.3,25882,1,4,0)
+ ;;=4^F06.33
+ ;;^UTILITY(U,$J,358.3,25882,2)
+ ;;=^5003059
+ ;;^UTILITY(U,$J,358.3,25883,0)
+ ;;=F06.34^^98^1211^2
+ ;;^UTILITY(U,$J,358.3,25883,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27073,1,3,0)
- ;;=3^Old Myocardial Infarct
- ;;^UTILITY(U,$J,358.3,27073,1,4,0)
- ;;=4^412.
- ;;^UTILITY(U,$J,358.3,27073,2)
- ;;=^259884
- ;;^UTILITY(U,$J,358.3,27074,0)
- ;;=V45.01^^160^1756^4
- ;;^UTILITY(U,$J,358.3,27074,1,0)
+ ;;^UTILITY(U,$J,358.3,25883,1,3,0)
+ ;;=3^Bipolar & Related Disorder d/t Medical Condition w/ Mixed Features
+ ;;^UTILITY(U,$J,358.3,25883,1,4,0)
+ ;;=4^F06.34
+ ;;^UTILITY(U,$J,358.3,25883,2)
+ ;;=^5003060
+ ;;^UTILITY(U,$J,358.3,25884,0)
+ ;;=F31.11^^98^1211^6
+ ;;^UTILITY(U,$J,358.3,25884,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27074,1,3,0)
- ;;=3^Cardiac Pacemaker In Situ
- ;;^UTILITY(U,$J,358.3,27074,1,4,0)
- ;;=4^V45.01
- ;;^UTILITY(U,$J,358.3,27074,2)
- ;;=^303419
- ;;^UTILITY(U,$J,358.3,27075,0)
- ;;=519.9^^160^1756^18
- ;;^UTILITY(U,$J,358.3,27075,1,0)
+ ;;^UTILITY(U,$J,358.3,25884,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,Mild
+ ;;^UTILITY(U,$J,358.3,25884,1,4,0)
+ ;;=4^F31.11
+ ;;^UTILITY(U,$J,358.3,25884,2)
+ ;;=^5003496
+ ;;^UTILITY(U,$J,358.3,25885,0)
+ ;;=F31.12^^98^1211^7
+ ;;^UTILITY(U,$J,358.3,25885,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27075,1,3,0)
- ;;=3^Resp System Disease Nos
- ;;^UTILITY(U,$J,358.3,27075,1,4,0)
- ;;=4^519.9
- ;;^UTILITY(U,$J,358.3,27075,2)
- ;;=^105137
- ;;^UTILITY(U,$J,358.3,27076,0)
- ;;=V17.49^^160^1756^11
- ;;^UTILITY(U,$J,358.3,27076,1,0)
+ ;;^UTILITY(U,$J,358.3,25885,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,Moderate
+ ;;^UTILITY(U,$J,358.3,25885,1,4,0)
+ ;;=4^F31.12
+ ;;^UTILITY(U,$J,358.3,25885,2)
+ ;;=^5003497
+ ;;^UTILITY(U,$J,358.3,25886,0)
+ ;;=F31.13^^98^1211^8
+ ;;^UTILITY(U,$J,358.3,25886,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27076,1,3,0)
- ;;=3^Fam Hx-Cardiovas Dis Nec
- ;;^UTILITY(U,$J,358.3,27076,1,4,0)
- ;;=4^V17.49
- ;;^UTILITY(U,$J,358.3,27076,2)
- ;;=^295306
- ;;^UTILITY(U,$J,358.3,27077,0)
- ;;=V45.82^^160^1756^16
- ;;^UTILITY(U,$J,358.3,27077,1,0)
+ ;;^UTILITY(U,$J,358.3,25886,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,Severe
+ ;;^UTILITY(U,$J,358.3,25886,1,4,0)
+ ;;=4^F31.13
+ ;;^UTILITY(U,$J,358.3,25886,2)
+ ;;=^5003498
+ ;;^UTILITY(U,$J,358.3,25887,0)
+ ;;=F31.2^^98^1211^9
+ ;;^UTILITY(U,$J,358.3,25887,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27077,1,3,0)
- ;;=3^PTCA Status
- ;;^UTILITY(U,$J,358.3,27077,1,4,0)
- ;;=4^V45.82
- ;;^UTILITY(U,$J,358.3,27077,2)
- ;;=^303425
- ;;^UTILITY(U,$J,358.3,27078,0)
- ;;=996.77^^160^1757^1
- ;;^UTILITY(U,$J,358.3,27078,1,0)
+ ;;^UTILITY(U,$J,358.3,25887,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,w/ Psychotic Features
+ ;;^UTILITY(U,$J,358.3,25887,1,4,0)
+ ;;=4^F31.2
+ ;;^UTILITY(U,$J,358.3,25887,2)
+ ;;=^5003499
+ ;;^UTILITY(U,$J,358.3,25888,0)
+ ;;=F31.73^^98^1211^10
+ ;;^UTILITY(U,$J,358.3,25888,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27078,1,3,0)
- ;;=3^Comp-Internal Joint Pros
- ;;^UTILITY(U,$J,358.3,27078,1,4,0)
- ;;=4^996.77
- ;;^UTILITY(U,$J,358.3,27078,2)
- ;;=^276300
- ;;^UTILITY(U,$J,358.3,27079,0)
- ;;=996.78^^160^1757^2
- ;;^UTILITY(U,$J,358.3,27079,1,0)
+ ;;^UTILITY(U,$J,358.3,25888,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,In Partial Remission
+ ;;^UTILITY(U,$J,358.3,25888,1,4,0)
+ ;;=4^F31.73
+ ;;^UTILITY(U,$J,358.3,25888,2)
+ ;;=^5003513
+ ;;^UTILITY(U,$J,358.3,25889,0)
+ ;;=F31.74^^98^1211^11
+ ;;^UTILITY(U,$J,358.3,25889,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27079,1,3,0)
- ;;=3^Comp-Oth Int Ortho Device
- ;;^UTILITY(U,$J,358.3,27079,1,4,0)
- ;;=4^996.78
- ;;^UTILITY(U,$J,358.3,27079,2)
- ;;=^276301
- ;;^UTILITY(U,$J,358.3,27080,0)
- ;;=905.3^^160^1758^1
- ;;^UTILITY(U,$J,358.3,27080,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27080,1,3,0)
- ;;=3^Late Eff Femoral Neck Fx
- ;;^UTILITY(U,$J,358.3,27080,1,4,0)
- ;;=4^905.3
- ;;^UTILITY(U,$J,358.3,27080,2)
- ;;=^275217
- ;;^UTILITY(U,$J,358.3,27081,0)
- ;;=905.4^^160^1758^4
- ;;^UTILITY(U,$J,358.3,27081,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25889,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,In Full Remission
+ ;;^UTILITY(U,$J,358.3,25889,1,4,0)
+ ;;=4^F31.74
+ ;;^UTILITY(U,$J,358.3,25889,2)
+ ;;=^5003514
+ ;;^UTILITY(U,$J,358.3,25890,0)
+ ;;=F31.30^^98^1211^12

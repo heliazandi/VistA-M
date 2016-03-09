@@ -1,126 +1,130 @@
-IBDEI209 ; ; 06-AUG-2015
+IBDEI209 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35080,0)
- ;;=S52.562S^^183^2026^1
- ;;^UTILITY(U,$J,358.3,35080,1,0)
+ ;;^UTILITY(U,$J,358.3,34021,1,4,0)
+ ;;=4^C80.1
+ ;;^UTILITY(U,$J,358.3,34021,2)
+ ;;=^5001389
+ ;;^UTILITY(U,$J,358.3,34022,0)
+ ;;=C80.0^^131^1680^164
+ ;;^UTILITY(U,$J,358.3,34022,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35080,1,3,0)
- ;;=3^Barton's fracture of left radius, sequela
- ;;^UTILITY(U,$J,358.3,35080,1,4,0)
- ;;=4^S52.562S
- ;;^UTILITY(U,$J,358.3,35080,2)
- ;;=^5030896
- ;;^UTILITY(U,$J,358.3,35081,0)
- ;;=S52.561S^^183^2026^2
- ;;^UTILITY(U,$J,358.3,35081,1,0)
+ ;;^UTILITY(U,$J,358.3,34022,1,3,0)
+ ;;=3^Malig Neop,Unspec Primary or Secondary
+ ;;^UTILITY(U,$J,358.3,34022,1,4,0)
+ ;;=4^C80.0
+ ;;^UTILITY(U,$J,358.3,34022,2)
+ ;;=^5001388
+ ;;^UTILITY(U,$J,358.3,34023,0)
+ ;;=Z85.818^^131^1681^92
+ ;;^UTILITY(U,$J,358.3,34023,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35081,1,3,0)
- ;;=3^Barton's fracture of right radius, sequela
- ;;^UTILITY(U,$J,358.3,35081,1,4,0)
- ;;=4^S52.561S
- ;;^UTILITY(U,$J,358.3,35081,2)
- ;;=^5030880
- ;;^UTILITY(U,$J,358.3,35082,0)
- ;;=S52.382S^^183^2026^3
- ;;^UTILITY(U,$J,358.3,35082,1,0)
+ ;;^UTILITY(U,$J,358.3,34023,1,3,0)
+ ;;=3^Personal Hx of Malig Neop of Lip,Oral Cavity & Pharynx
+ ;;^UTILITY(U,$J,358.3,34023,1,4,0)
+ ;;=4^Z85.818
+ ;;^UTILITY(U,$J,358.3,34023,2)
+ ;;=^5063439
+ ;;^UTILITY(U,$J,358.3,34024,0)
+ ;;=Z85.819^^131^1681^93
+ ;;^UTILITY(U,$J,358.3,34024,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35082,1,3,0)
- ;;=3^Bent bone of left radius, sequela
- ;;^UTILITY(U,$J,358.3,35082,1,4,0)
- ;;=4^S52.382S
- ;;^UTILITY(U,$J,358.3,35082,2)
- ;;=^5030526
- ;;^UTILITY(U,$J,358.3,35083,0)
- ;;=S52.381S^^183^2026^5
- ;;^UTILITY(U,$J,358.3,35083,1,0)
+ ;;^UTILITY(U,$J,358.3,34024,1,3,0)
+ ;;=3^Personal Hx of Malig Neop of Lip,Oral Cavity & Pharynx,Unspec
+ ;;^UTILITY(U,$J,358.3,34024,1,4,0)
+ ;;=4^Z85.819
+ ;;^UTILITY(U,$J,358.3,34024,2)
+ ;;=^5063440
+ ;;^UTILITY(U,$J,358.3,34025,0)
+ ;;=Z85.01^^131^1681^88
+ ;;^UTILITY(U,$J,358.3,34025,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35083,1,3,0)
- ;;=3^Bent bone of right radius, sequela
- ;;^UTILITY(U,$J,358.3,35083,1,4,0)
- ;;=4^S52.381S
- ;;^UTILITY(U,$J,358.3,35083,2)
- ;;=^5030510
- ;;^UTILITY(U,$J,358.3,35084,0)
- ;;=S52.532S^^183^2026^7
- ;;^UTILITY(U,$J,358.3,35084,1,0)
+ ;;^UTILITY(U,$J,358.3,34025,1,3,0)
+ ;;=3^Personal Hx of Malig Neop of Esophagus
+ ;;^UTILITY(U,$J,358.3,34025,1,4,0)
+ ;;=4^Z85.01
+ ;;^UTILITY(U,$J,358.3,34025,2)
+ ;;=^5063395
+ ;;^UTILITY(U,$J,358.3,34026,0)
+ ;;=Z85.028^^131^1681^99
+ ;;^UTILITY(U,$J,358.3,34026,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35084,1,3,0)
- ;;=3^Colles' fracture of left radius, sequela
- ;;^UTILITY(U,$J,358.3,35084,1,4,0)
- ;;=4^S52.532S
- ;;^UTILITY(U,$J,358.3,35084,2)
- ;;=^5030752
- ;;^UTILITY(U,$J,358.3,35085,0)
- ;;=S52.531S^^183^2026^8
- ;;^UTILITY(U,$J,358.3,35085,1,0)
+ ;;^UTILITY(U,$J,358.3,34026,1,3,0)
+ ;;=3^Personal Hx of Malig Neop of Stomach
+ ;;^UTILITY(U,$J,358.3,34026,1,4,0)
+ ;;=4^Z85.028
+ ;;^UTILITY(U,$J,358.3,34026,2)
+ ;;=^5063397
+ ;;^UTILITY(U,$J,358.3,34027,0)
+ ;;=Z85.038^^131^1681^90
+ ;;^UTILITY(U,$J,358.3,34027,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35085,1,3,0)
- ;;=3^Colles' fracture of right radius, sequela
- ;;^UTILITY(U,$J,358.3,35085,1,4,0)
- ;;=4^S52.531S
- ;;^UTILITY(U,$J,358.3,35085,2)
- ;;=^5030736
- ;;^UTILITY(U,$J,358.3,35086,0)
- ;;=S52.352S^^183^2026^13
- ;;^UTILITY(U,$J,358.3,35086,1,0)
+ ;;^UTILITY(U,$J,358.3,34027,1,3,0)
+ ;;=3^Personal Hx of Malig Neop of Large Intestine
+ ;;^UTILITY(U,$J,358.3,34027,1,4,0)
+ ;;=4^Z85.038
+ ;;^UTILITY(U,$J,358.3,34027,2)
+ ;;=^5063399
+ ;;^UTILITY(U,$J,358.3,34028,0)
+ ;;=Z85.048^^131^1681^97
+ ;;^UTILITY(U,$J,358.3,34028,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35086,1,3,0)
- ;;=3^Disp fx of comminuted shaft of radius, right arm, sequela 
- ;;^UTILITY(U,$J,358.3,35086,1,4,0)
- ;;=4^S52.352S
- ;;^UTILITY(U,$J,358.3,35086,2)
- ;;=^5030286
- ;;^UTILITY(U,$J,358.3,35087,0)
- ;;=S52.351S^^183^2026^15
- ;;^UTILITY(U,$J,358.3,35087,1,0)
+ ;;^UTILITY(U,$J,358.3,34028,1,3,0)
+ ;;=3^Personal Hx of Malig Neop of Rectum,Rectosig Junct & Anus
+ ;;^UTILITY(U,$J,358.3,34028,1,4,0)
+ ;;=4^Z85.048
+ ;;^UTILITY(U,$J,358.3,34028,2)
+ ;;=^5063401
+ ;;^UTILITY(U,$J,358.3,34029,0)
+ ;;=Z85.118^^131^1681^86
+ ;;^UTILITY(U,$J,358.3,34029,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35087,1,3,0)
- ;;=3^Disp fx of comminuted shaft of ulna, left arm, sequela 
- ;;^UTILITY(U,$J,358.3,35087,1,4,0)
- ;;=4^S52.351S
- ;;^UTILITY(U,$J,358.3,35087,2)
- ;;=^5030270
- ;;^UTILITY(U,$J,358.3,35088,0)
- ;;=S52.122S^^183^2026^22
- ;;^UTILITY(U,$J,358.3,35088,1,0)
+ ;;^UTILITY(U,$J,358.3,34029,1,3,0)
+ ;;=3^Personal Hx of Malig Neop of Bronchus & Lung
+ ;;^UTILITY(U,$J,358.3,34029,1,4,0)
+ ;;=4^Z85.118
+ ;;^UTILITY(U,$J,358.3,34029,2)
+ ;;=^5063408
+ ;;^UTILITY(U,$J,358.3,34030,0)
+ ;;=Z85.21^^131^1681^91
+ ;;^UTILITY(U,$J,358.3,34030,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35088,1,3,0)
- ;;=3^Disp fx of head of left radius, sequela      
- ;;^UTILITY(U,$J,358.3,35088,1,4,0)
- ;;=4^S52.122S
- ;;^UTILITY(U,$J,358.3,35088,2)
- ;;=^5029078
- ;;^UTILITY(U,$J,358.3,35089,0)
- ;;=S52.121S^^183^2026^23
- ;;^UTILITY(U,$J,358.3,35089,1,0)
+ ;;^UTILITY(U,$J,358.3,34030,1,3,0)
+ ;;=3^Personal Hx of Malig Neop of Larynx
+ ;;^UTILITY(U,$J,358.3,34030,1,4,0)
+ ;;=4^Z85.21
+ ;;^UTILITY(U,$J,358.3,34030,2)
+ ;;=^5063411
+ ;;^UTILITY(U,$J,358.3,34031,0)
+ ;;=Z85.3^^131^1681^85
+ ;;^UTILITY(U,$J,358.3,34031,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35089,1,3,0)
- ;;=3^Disp fx of head of right radius, sequela     
- ;;^UTILITY(U,$J,358.3,35089,1,4,0)
- ;;=4^S52.121S
- ;;^UTILITY(U,$J,358.3,35089,2)
- ;;=^5029062
- ;;^UTILITY(U,$J,358.3,35090,0)
- ;;=S52.132S^^183^2026^32
- ;;^UTILITY(U,$J,358.3,35090,1,0)
+ ;;^UTILITY(U,$J,358.3,34031,1,3,0)
+ ;;=3^Personal Hx of Malig Neop of Breast
+ ;;^UTILITY(U,$J,358.3,34031,1,4,0)
+ ;;=4^Z85.3
+ ;;^UTILITY(U,$J,358.3,34031,2)
+ ;;=^5063416
+ ;;^UTILITY(U,$J,358.3,34032,0)
+ ;;=Z85.41^^131^1681^87
+ ;;^UTILITY(U,$J,358.3,34032,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35090,1,3,0)
- ;;=3^Disp fx of neck of left radius, sequela      
- ;;^UTILITY(U,$J,358.3,35090,1,4,0)
- ;;=4^S52.132S
- ;;^UTILITY(U,$J,358.3,35090,2)
- ;;=^5029174
- ;;^UTILITY(U,$J,358.3,35091,0)
- ;;=S52.131S^^183^2026^33
- ;;^UTILITY(U,$J,358.3,35091,1,0)
+ ;;^UTILITY(U,$J,358.3,34032,1,3,0)
+ ;;=3^Personal Hx of Malig Neop of Cervix Uteri
+ ;;^UTILITY(U,$J,358.3,34032,1,4,0)
+ ;;=4^Z85.41
+ ;;^UTILITY(U,$J,358.3,34032,2)
+ ;;=^5063418
+ ;;^UTILITY(U,$J,358.3,34033,0)
+ ;;=Z85.43^^131^1681^95
+ ;;^UTILITY(U,$J,358.3,34033,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35091,1,3,0)
- ;;=3^Disp fx of neck of right radius, sequela     
- ;;^UTILITY(U,$J,358.3,35091,1,4,0)
- ;;=4^S52.131S
- ;;^UTILITY(U,$J,358.3,35091,2)
- ;;=^5029158
- ;;^UTILITY(U,$J,358.3,35092,0)
- ;;=S52.332S^^183^2026^34
+ ;;^UTILITY(U,$J,358.3,34033,1,3,0)
+ ;;=3^Personal Hx of Malig Neop of Ovary
+ ;;^UTILITY(U,$J,358.3,34033,1,4,0)
+ ;;=4^Z85.43
+ ;;^UTILITY(U,$J,358.3,34033,2)
+ ;;=^5063420
+ ;;^UTILITY(U,$J,358.3,34034,0)
+ ;;=Z85.46^^131^1681^96

@@ -1,128 +1,140 @@
-IBDEI1QR ; ; 06-AUG-2015
+IBDEI1QR ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30794,2)
- ;;=^5011606
- ;;^UTILITY(U,$J,358.3,30795,0)
- ;;=M25.521^^179^1928^26
- ;;^UTILITY(U,$J,358.3,30795,1,0)
+ ;;^UTILITY(U,$J,358.3,29548,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30795,1,3,0)
- ;;=3^Pain in right elbow
- ;;^UTILITY(U,$J,358.3,30795,1,4,0)
- ;;=4^M25.521
- ;;^UTILITY(U,$J,358.3,30795,2)
- ;;=^5011605
- ;;^UTILITY(U,$J,358.3,30796,0)
- ;;=M19.022^^179^1928^27
- ;;^UTILITY(U,$J,358.3,30796,1,0)
+ ;;^UTILITY(U,$J,358.3,29548,1,3,0)
+ ;;=3^Male Infertility,Unspec
+ ;;^UTILITY(U,$J,358.3,29548,1,4,0)
+ ;;=4^N46.9
+ ;;^UTILITY(U,$J,358.3,29548,2)
+ ;;=^5015724
+ ;;^UTILITY(U,$J,358.3,29549,0)
+ ;;=Z31.49^^115^1471^3
+ ;;^UTILITY(U,$J,358.3,29549,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30796,1,3,0)
- ;;=3^Primary osteoarthritis, left elbow
- ;;^UTILITY(U,$J,358.3,30796,1,4,0)
- ;;=4^M19.022
- ;;^UTILITY(U,$J,358.3,30796,2)
- ;;=^5010812
- ;;^UTILITY(U,$J,358.3,30797,0)
- ;;=M19.021^^179^1928^28
- ;;^UTILITY(U,$J,358.3,30797,1,0)
+ ;;^UTILITY(U,$J,358.3,29549,1,3,0)
+ ;;=3^Infertility Testing
+ ;;^UTILITY(U,$J,358.3,29549,1,4,0)
+ ;;=4^Z31.49
+ ;;^UTILITY(U,$J,358.3,29549,2)
+ ;;=^5062837
+ ;;^UTILITY(U,$J,358.3,29550,0)
+ ;;=N97.1^^115^1471^6
+ ;;^UTILITY(U,$J,358.3,29550,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30797,1,3,0)
- ;;=3^Primary osteoarthritis, right elbow
- ;;^UTILITY(U,$J,358.3,30797,1,4,0)
- ;;=4^M19.021
- ;;^UTILITY(U,$J,358.3,30797,2)
- ;;=^5010811
- ;;^UTILITY(U,$J,358.3,30798,0)
- ;;=M12.522^^179^1928^31
- ;;^UTILITY(U,$J,358.3,30798,1,0)
+ ;;^UTILITY(U,$J,358.3,29550,1,3,0)
+ ;;=3^Tubal Infertility
+ ;;^UTILITY(U,$J,358.3,29550,1,4,0)
+ ;;=4^N97.1
+ ;;^UTILITY(U,$J,358.3,29550,2)
+ ;;=^5015932
+ ;;^UTILITY(U,$J,358.3,29551,0)
+ ;;=N97.9^^115^1471^4
+ ;;^UTILITY(U,$J,358.3,29551,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30798,1,3,0)
- ;;=3^Traumatic arthropathy, left elbow
- ;;^UTILITY(U,$J,358.3,30798,1,4,0)
- ;;=4^M12.522
- ;;^UTILITY(U,$J,358.3,30798,2)
- ;;=^5010623
- ;;^UTILITY(U,$J,358.3,30799,0)
- ;;=M12.521^^179^1928^32
- ;;^UTILITY(U,$J,358.3,30799,1,0)
+ ;;^UTILITY(U,$J,358.3,29551,1,3,0)
+ ;;=3^Infertility,Unspec
+ ;;^UTILITY(U,$J,358.3,29551,1,4,0)
+ ;;=4^N97.9
+ ;;^UTILITY(U,$J,358.3,29551,2)
+ ;;=^5015935
+ ;;^UTILITY(U,$J,358.3,29552,0)
+ ;;=N97.2^^115^1471^7
+ ;;^UTILITY(U,$J,358.3,29552,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30799,1,3,0)
- ;;=3^Traumatic arthropathy, right elbow
- ;;^UTILITY(U,$J,358.3,30799,1,4,0)
- ;;=4^M12.521
- ;;^UTILITY(U,$J,358.3,30799,2)
- ;;=^5010622
- ;;^UTILITY(U,$J,358.3,30800,0)
- ;;=S42.402A^^179^1928^11
- ;;^UTILITY(U,$J,358.3,30800,1,0)
+ ;;^UTILITY(U,$J,358.3,29552,1,3,0)
+ ;;=3^Uterine Infertility
+ ;;^UTILITY(U,$J,358.3,29552,1,4,0)
+ ;;=4^N97.2
+ ;;^UTILITY(U,$J,358.3,29552,2)
+ ;;=^5015933
+ ;;^UTILITY(U,$J,358.3,29553,0)
+ ;;=N97.8^^115^1471^8
+ ;;^UTILITY(U,$J,358.3,29553,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30800,1,3,0)
- ;;=3^Fracture of lower end of left humerus, init for clos fx,Unspec
- ;;^UTILITY(U,$J,358.3,30800,1,4,0)
- ;;=4^S42.402A
- ;;^UTILITY(U,$J,358.3,30800,2)
- ;;=^5134713
- ;;^UTILITY(U,$J,358.3,30801,0)
- ;;=S42.401A^^179^1928^12
- ;;^UTILITY(U,$J,358.3,30801,1,0)
+ ;;^UTILITY(U,$J,358.3,29553,1,3,0)
+ ;;=3^Vaginal Infertility
+ ;;^UTILITY(U,$J,358.3,29553,1,4,0)
+ ;;=4^N97.8
+ ;;^UTILITY(U,$J,358.3,29553,2)
+ ;;=^5015934
+ ;;^UTILITY(U,$J,358.3,29554,0)
+ ;;=D21.9^^115^1472^1
+ ;;^UTILITY(U,$J,358.3,29554,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30801,1,3,0)
- ;;=3^Fracture of lower end of right humerus, init,Unspec
- ;;^UTILITY(U,$J,358.3,30801,1,4,0)
- ;;=4^S42.401A
- ;;^UTILITY(U,$J,358.3,30801,2)
- ;;=^5027294
- ;;^UTILITY(U,$J,358.3,30802,0)
- ;;=S53.402A^^179^1928^29
- ;;^UTILITY(U,$J,358.3,30802,1,0)
+ ;;^UTILITY(U,$J,358.3,29554,1,3,0)
+ ;;=3^Benign Neoplasm,Connective & Soft Tissue,Unspec
+ ;;^UTILITY(U,$J,358.3,29554,1,4,0)
+ ;;=4^D21.9
+ ;;^UTILITY(U,$J,358.3,29554,2)
+ ;;=^5002040
+ ;;^UTILITY(U,$J,358.3,29555,0)
+ ;;=L68.0^^115^1472^2
+ ;;^UTILITY(U,$J,358.3,29555,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30802,1,3,0)
- ;;=3^Sprain of left elbow, init encntr,Unspec
- ;;^UTILITY(U,$J,358.3,30802,1,4,0)
- ;;=4^S53.402A
- ;;^UTILITY(U,$J,358.3,30802,2)
- ;;=^5031364
- ;;^UTILITY(U,$J,358.3,30803,0)
- ;;=S53.401A^^179^1928^30
- ;;^UTILITY(U,$J,358.3,30803,1,0)
+ ;;^UTILITY(U,$J,358.3,29555,1,3,0)
+ ;;=3^Hirsutism
+ ;;^UTILITY(U,$J,358.3,29555,1,4,0)
+ ;;=4^L68.0
+ ;;^UTILITY(U,$J,358.3,29555,2)
+ ;;=^5009262
+ ;;^UTILITY(U,$J,358.3,29556,0)
+ ;;=E28.1^^115^1472^3
+ ;;^UTILITY(U,$J,358.3,29556,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30803,1,3,0)
- ;;=3^Sprain of right elbow, init encntr,Unspec
- ;;^UTILITY(U,$J,358.3,30803,1,4,0)
- ;;=4^S53.401A
- ;;^UTILITY(U,$J,358.3,30803,2)
- ;;=^5031361
- ;;^UTILITY(U,$J,358.3,30804,0)
- ;;=S70.12XA^^179^1929^1
- ;;^UTILITY(U,$J,358.3,30804,1,0)
+ ;;^UTILITY(U,$J,358.3,29556,1,3,0)
+ ;;=3^Hyperandrogenism
+ ;;^UTILITY(U,$J,358.3,29556,1,4,0)
+ ;;=4^E28.1
+ ;;^UTILITY(U,$J,358.3,29556,2)
+ ;;=^5002748
+ ;;^UTILITY(U,$J,358.3,29557,0)
+ ;;=E22.1^^115^1472^4
+ ;;^UTILITY(U,$J,358.3,29557,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30804,1,3,0)
- ;;=3^Contusion of left thigh, initial encounter
- ;;^UTILITY(U,$J,358.3,30804,1,4,0)
- ;;=4^S70.12XA
- ;;^UTILITY(U,$J,358.3,30804,2)
- ;;=^5036846
- ;;^UTILITY(U,$J,358.3,30805,0)
- ;;=S70.11XA^^179^1929^2
- ;;^UTILITY(U,$J,358.3,30805,1,0)
+ ;;^UTILITY(U,$J,358.3,29557,1,3,0)
+ ;;=3^Hyperprolactinemia
+ ;;^UTILITY(U,$J,358.3,29557,1,4,0)
+ ;;=4^E22.1
+ ;;^UTILITY(U,$J,358.3,29557,2)
+ ;;=^60265
+ ;;^UTILITY(U,$J,358.3,29558,0)
+ ;;=E05.90^^115^1472^5
+ ;;^UTILITY(U,$J,358.3,29558,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30805,1,3,0)
- ;;=3^Contusion of right thigh, initial encounter
- ;;^UTILITY(U,$J,358.3,30805,1,4,0)
- ;;=4^S70.11XA
- ;;^UTILITY(U,$J,358.3,30805,2)
- ;;=^5036843
- ;;^UTILITY(U,$J,358.3,30806,0)
- ;;=S72.352A^^179^1929^3
- ;;^UTILITY(U,$J,358.3,30806,1,0)
+ ;;^UTILITY(U,$J,358.3,29558,1,3,0)
+ ;;=3^Hyperthyroidism w/o Thyrotoxic Crisis/Storm
+ ;;^UTILITY(U,$J,358.3,29558,1,4,0)
+ ;;=4^E05.90
+ ;;^UTILITY(U,$J,358.3,29558,2)
+ ;;=^5002492
+ ;;^UTILITY(U,$J,358.3,29559,0)
+ ;;=E03.9^^115^1472^6
+ ;;^UTILITY(U,$J,358.3,29559,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30806,1,3,0)
- ;;=3^Displaced comminuted fracture of shaft of left femur, init
- ;;^UTILITY(U,$J,358.3,30806,1,4,0)
- ;;=4^S72.352A
- ;;^UTILITY(U,$J,358.3,30806,2)
- ;;=^5038448
- ;;^UTILITY(U,$J,358.3,30807,0)
- ;;=S72.351A^^179^1929^4
+ ;;^UTILITY(U,$J,358.3,29559,1,3,0)
+ ;;=3^Hypothyroidism,Unspec
+ ;;^UTILITY(U,$J,358.3,29559,1,4,0)
+ ;;=4^E03.9
+ ;;^UTILITY(U,$J,358.3,29559,2)
+ ;;=^5002476
+ ;;^UTILITY(U,$J,358.3,29560,0)
+ ;;=E04.0^^115^1472^7
+ ;;^UTILITY(U,$J,358.3,29560,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29560,1,3,0)
+ ;;=3^Nontoxic Diffuse Goiter
+ ;;^UTILITY(U,$J,358.3,29560,1,4,0)
+ ;;=4^E04.0
+ ;;^UTILITY(U,$J,358.3,29560,2)
+ ;;=^5002477
+ ;;^UTILITY(U,$J,358.3,29561,0)
+ ;;=E89.0^^115^1472^8
+ ;;^UTILITY(U,$J,358.3,29561,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29561,1,3,0)
+ ;;=3^Postprocedural Hypothyroidism
+ ;;^UTILITY(U,$J,358.3,29561,1,4,0)
+ ;;=4^E89.0

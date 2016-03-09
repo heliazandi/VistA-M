@@ -1,138 +1,120 @@
-IBDEI1L0 ; ; 06-AUG-2015
+IBDEI1L0 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,28073,1,4,0)
- ;;=4^202.41
- ;;^UTILITY(U,$J,358.3,28073,1,5,0)
- ;;=5^Hairy Cell Leukemia,Unspec Site
- ;;^UTILITY(U,$J,358.3,28073,2)
- ;;=^267472
- ;;^UTILITY(U,$J,358.3,28074,0)
- ;;=201.90^^162^1791^81
- ;;^UTILITY(U,$J,358.3,28074,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28074,1,4,0)
- ;;=4^201.90
- ;;^UTILITY(U,$J,358.3,28074,1,5,0)
- ;;=5^Hodgkin's Lymphoma, Unpsec Type & Site
- ;;^UTILITY(U,$J,358.3,28074,2)
- ;;=^267430
- ;;^UTILITY(U,$J,358.3,28075,0)
- ;;=785.6^^162^1791^87
- ;;^UTILITY(U,$J,358.3,28075,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28075,1,4,0)
- ;;=4^785.6
- ;;^UTILITY(U,$J,358.3,28075,1,5,0)
- ;;=5^Lymphadenopathy
- ;;^UTILITY(U,$J,358.3,28075,2)
- ;;=^72368
- ;;^UTILITY(U,$J,358.3,28076,0)
- ;;=200.20^^162^1791^90
- ;;^UTILITY(U,$J,358.3,28076,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28076,1,4,0)
- ;;=4^200.20
- ;;^UTILITY(U,$J,358.3,28076,1,5,0)
- ;;=5^Lymphoma,Burkitt's,Site Unspec
- ;;^UTILITY(U,$J,358.3,28076,2)
- ;;=^17529
- ;;^UTILITY(U,$J,358.3,28077,0)
- ;;=202.00^^162^1791^89
- ;;^UTILITY(U,$J,358.3,28077,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28077,1,4,0)
- ;;=4^202.00
- ;;^UTILITY(U,$J,358.3,28077,1,5,0)
- ;;=5^Lymphoma, Low-Grade, Site Unspec
- ;;^UTILITY(U,$J,358.3,28077,2)
- ;;=^72606
- ;;^UTILITY(U,$J,358.3,28078,0)
- ;;=200.10^^162^1791^88
- ;;^UTILITY(U,$J,358.3,28078,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28078,1,4,0)
- ;;=4^200.10
- ;;^UTILITY(U,$J,358.3,28078,1,5,0)
- ;;=5^Lymphoma, Int Or High Grade, Site Unspec
- ;;^UTILITY(U,$J,358.3,28078,2)
- ;;=^175886
- ;;^UTILITY(U,$J,358.3,28079,0)
- ;;=273.3^^162^1791^91
- ;;^UTILITY(U,$J,358.3,28079,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28079,1,4,0)
- ;;=4^273.3
- ;;^UTILITY(U,$J,358.3,28079,1,5,0)
- ;;=5^Macroglobulinemia
- ;;^UTILITY(U,$J,358.3,28079,2)
- ;;=^73013
- ;;^UTILITY(U,$J,358.3,28080,0)
- ;;=203.00^^162^1791^104
- ;;^UTILITY(U,$J,358.3,28080,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28080,1,4,0)
- ;;=4^203.00
- ;;^UTILITY(U,$J,358.3,28080,1,5,0)
- ;;=5^Multiple Myeloma w/o Rem
- ;;^UTILITY(U,$J,358.3,28080,2)
- ;;=^267514
- ;;^UTILITY(U,$J,358.3,28081,0)
- ;;=203.01^^162^1791^103
- ;;^UTILITY(U,$J,358.3,28081,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28081,1,4,0)
- ;;=4^203.01
- ;;^UTILITY(U,$J,358.3,28081,1,5,0)
- ;;=5^Multiple Myeloma In Remission
- ;;^UTILITY(U,$J,358.3,28081,2)
- ;;=^267515
- ;;^UTILITY(U,$J,358.3,28082,0)
- ;;=238.6^^162^1791^106
- ;;^UTILITY(U,$J,358.3,28082,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28082,1,4,0)
- ;;=4^238.6
- ;;^UTILITY(U,$J,358.3,28082,1,5,0)
- ;;=5^Plasmacytoma NOS
- ;;^UTILITY(U,$J,358.3,28082,2)
- ;;=^81973
- ;;^UTILITY(U,$J,358.3,28083,0)
- ;;=205.00^^162^1791^4
- ;;^UTILITY(U,$J,358.3,28083,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28083,1,4,0)
- ;;=4^205.00
- ;;^UTILITY(U,$J,358.3,28083,1,5,0)
- ;;=5^AML w/o Remission
- ;;^UTILITY(U,$J,358.3,28083,2)
- ;;=^267531
- ;;^UTILITY(U,$J,358.3,28084,0)
- ;;=205.01^^162^1791^6
- ;;^UTILITY(U,$J,358.3,28084,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28084,1,4,0)
- ;;=4^205.01
- ;;^UTILITY(U,$J,358.3,28084,1,5,0)
- ;;=5^AML, In Remission
- ;;^UTILITY(U,$J,358.3,28084,2)
- ;;=^267532
- ;;^UTILITY(U,$J,358.3,28085,0)
- ;;=205.10^^162^1791^49
- ;;^UTILITY(U,$J,358.3,28085,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28085,1,4,0)
- ;;=4^205.10
- ;;^UTILITY(U,$J,358.3,28085,1,5,0)
- ;;=5^CML w/o Remission
- ;;^UTILITY(U,$J,358.3,28085,2)
- ;;=^267533
- ;;^UTILITY(U,$J,358.3,28086,0)
- ;;=205.11^^162^1791^51
- ;;^UTILITY(U,$J,358.3,28086,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28086,1,4,0)
- ;;=4^205.11
- ;;^UTILITY(U,$J,358.3,28086,1,5,0)
- ;;=5^CML, In Remission
+ ;;^UTILITY(U,$J,358.3,26825,1,3,0)
+ ;;=3^Alcohol-Induced Depressive & Related Disorder w/ Moderate-Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26825,1,4,0)
+ ;;=4^F10.24
+ ;;^UTILITY(U,$J,358.3,26825,2)
+ ;;=^5003090
+ ;;^UTILITY(U,$J,358.3,26826,0)
+ ;;=F10.29^^100^1291^37
+ ;;^UTILITY(U,$J,358.3,26826,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26826,1,3,0)
+ ;;=3^Alcohol-Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,26826,1,4,0)
+ ;;=4^F10.29
+ ;;^UTILITY(U,$J,358.3,26826,2)
+ ;;=^5003100
+ ;;^UTILITY(U,$J,358.3,26827,0)
+ ;;=F10.180^^100^1291^1
+ ;;^UTILITY(U,$J,358.3,26827,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26827,1,3,0)
+ ;;=3^Alcohol Induced Anxiety Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26827,1,4,0)
+ ;;=4^F10.180
+ ;;^UTILITY(U,$J,358.3,26827,2)
+ ;;=^5003076
+ ;;^UTILITY(U,$J,358.3,26828,0)
+ ;;=F10.280^^100^1291^2
+ ;;^UTILITY(U,$J,358.3,26828,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26828,1,3,0)
+ ;;=3^Alcohol Induced Anxiety Disorder w/ Moderate/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26828,1,4,0)
+ ;;=4^F10.280
+ ;;^UTILITY(U,$J,358.3,26828,2)
+ ;;=^5003096
+ ;;^UTILITY(U,$J,358.3,26829,0)
+ ;;=F10.980^^100^1291^3
+ ;;^UTILITY(U,$J,358.3,26829,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26829,1,3,0)
+ ;;=3^Alcohol Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26829,1,4,0)
+ ;;=4^F10.980
+ ;;^UTILITY(U,$J,358.3,26829,2)
+ ;;=^5003110
+ ;;^UTILITY(U,$J,358.3,26830,0)
+ ;;=F10.94^^100^1291^4
+ ;;^UTILITY(U,$J,358.3,26830,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26830,1,3,0)
+ ;;=3^Alcohol Induced Depressive Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26830,1,4,0)
+ ;;=4^F10.94
+ ;;^UTILITY(U,$J,358.3,26830,2)
+ ;;=^5003104
+ ;;^UTILITY(U,$J,358.3,26831,0)
+ ;;=F10.26^^100^1291^7
+ ;;^UTILITY(U,$J,358.3,26831,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26831,1,3,0)
+ ;;=3^Alcohol Induced Neurocog Disorder,Amnestic Cofabul Type w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26831,1,4,0)
+ ;;=4^F10.26
+ ;;^UTILITY(U,$J,358.3,26831,2)
+ ;;=^5003094
+ ;;^UTILITY(U,$J,358.3,26832,0)
+ ;;=F10.96^^100^1291^8
+ ;;^UTILITY(U,$J,358.3,26832,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26832,1,3,0)
+ ;;=3^Alcohol Induced Neurocog Disorder,Amnestic Cofabul Type w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26832,1,4,0)
+ ;;=4^F10.96
+ ;;^UTILITY(U,$J,358.3,26832,2)
+ ;;=^5003108
+ ;;^UTILITY(U,$J,358.3,26833,0)
+ ;;=F10.27^^100^1291^9
+ ;;^UTILITY(U,$J,358.3,26833,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26833,1,3,0)
+ ;;=3^Alcohol Induced Neurocog Disorder,Nonamnestic Confabul Type,w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26833,1,4,0)
+ ;;=4^F10.27
+ ;;^UTILITY(U,$J,358.3,26833,2)
+ ;;=^5003095
+ ;;^UTILITY(U,$J,358.3,26834,0)
+ ;;=F10.97^^100^1291^10
+ ;;^UTILITY(U,$J,358.3,26834,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26834,1,3,0)
+ ;;=3^Alcohol Induced Neurocog Disorder,Nonamnestic Confabul Type w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26834,1,4,0)
+ ;;=4^F10.97
+ ;;^UTILITY(U,$J,358.3,26834,2)
+ ;;=^5003109
+ ;;^UTILITY(U,$J,358.3,26835,0)
+ ;;=F10.288^^100^1291^5
+ ;;^UTILITY(U,$J,358.3,26835,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26835,1,3,0)
+ ;;=3^Alcohol Induced Mild Neurocog Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26835,1,4,0)
+ ;;=4^F10.288
+ ;;^UTILITY(U,$J,358.3,26835,2)
+ ;;=^5003099
+ ;;^UTILITY(U,$J,358.3,26836,0)
+ ;;=F10.988^^100^1291^6
+ ;;^UTILITY(U,$J,358.3,26836,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26836,1,3,0)
+ ;;=3^Alcohol Induced Mild Neurocog Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26836,1,4,0)
+ ;;=4^F10.988
+ ;;^UTILITY(U,$J,358.3,26836,2)
+ ;;=^5003113

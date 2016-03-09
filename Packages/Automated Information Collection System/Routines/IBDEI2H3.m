@@ -1,0 +1,132 @@
+IBDEI2H3 ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,41935,1,3,0)
+ ;;=3^Neuropathy,Hereditary and Idiopathic Unspec
+ ;;^UTILITY(U,$J,358.3,41935,1,4,0)
+ ;;=4^G60.9
+ ;;^UTILITY(U,$J,358.3,41935,2)
+ ;;=^5004071
+ ;;^UTILITY(U,$J,358.3,41936,0)
+ ;;=I69.959^^159^2011^18
+ ;;^UTILITY(U,$J,358.3,41936,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41936,1,3,0)
+ ;;=3^Hemplg/Hemprs d/t Cerebvasc Diz Aff Unspec Side
+ ;;^UTILITY(U,$J,358.3,41936,1,4,0)
+ ;;=4^I69.959
+ ;;^UTILITY(U,$J,358.3,41936,2)
+ ;;=^5007563
+ ;;^UTILITY(U,$J,358.3,41937,0)
+ ;;=I69.359^^159^2011^19
+ ;;^UTILITY(U,$J,358.3,41937,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41937,1,3,0)
+ ;;=3^Hemplg/Hemprs d/t Cerebvasc Infrc Aff Unspec Side
+ ;;^UTILITY(U,$J,358.3,41937,1,4,0)
+ ;;=4^I69.359
+ ;;^UTILITY(U,$J,358.3,41937,2)
+ ;;=^5007508
+ ;;^UTILITY(U,$J,358.3,41938,0)
+ ;;=S14.109S^^159^2011^39
+ ;;^UTILITY(U,$J,358.3,41938,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41938,1,3,0)
+ ;;=3^Sequela of Unspec Injury to Cervical Spinal Cord
+ ;;^UTILITY(U,$J,358.3,41938,1,4,0)
+ ;;=4^S14.109S
+ ;;^UTILITY(U,$J,358.3,41938,2)
+ ;;=^5134243
+ ;;^UTILITY(U,$J,358.3,41939,0)
+ ;;=S34.109S^^159^2011^40
+ ;;^UTILITY(U,$J,358.3,41939,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41939,1,3,0)
+ ;;=3^Sequela of Unspec Injury to Lumbar Spinal Cord
+ ;;^UTILITY(U,$J,358.3,41939,1,4,0)
+ ;;=4^S34.109S
+ ;;^UTILITY(U,$J,358.3,41939,2)
+ ;;=^5134570
+ ;;^UTILITY(U,$J,358.3,41940,0)
+ ;;=S24.109S^^159^2011^41
+ ;;^UTILITY(U,$J,358.3,41940,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41940,1,3,0)
+ ;;=3^Sequela of Unspec Injury to Thoracic Spinal Cord
+ ;;^UTILITY(U,$J,358.3,41940,1,4,0)
+ ;;=4^S24.109S
+ ;;^UTILITY(U,$J,358.3,41940,2)
+ ;;=^5134384
+ ;;^UTILITY(U,$J,358.3,41941,0)
+ ;;=G89.0^^159^2012^1
+ ;;^UTILITY(U,$J,358.3,41941,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41941,1,3,0)
+ ;;=3^Central Pain Syndrome
+ ;;^UTILITY(U,$J,358.3,41941,1,4,0)
+ ;;=4^G89.0
+ ;;^UTILITY(U,$J,358.3,41941,2)
+ ;;=^334189
+ ;;^UTILITY(U,$J,358.3,41942,0)
+ ;;=G89.11^^159^2012^10
+ ;;^UTILITY(U,$J,358.3,41942,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41942,1,3,0)
+ ;;=3^Pain d/t Trauma,Acute
+ ;;^UTILITY(U,$J,358.3,41942,1,4,0)
+ ;;=4^G89.11
+ ;;^UTILITY(U,$J,358.3,41942,2)
+ ;;=^5004152
+ ;;^UTILITY(U,$J,358.3,41943,0)
+ ;;=G89.12^^159^2012^14
+ ;;^UTILITY(U,$J,358.3,41943,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41943,1,3,0)
+ ;;=3^Post-Thoracotomy Pain,Acute
+ ;;^UTILITY(U,$J,358.3,41943,1,4,0)
+ ;;=4^G89.12
+ ;;^UTILITY(U,$J,358.3,41943,2)
+ ;;=^5004153
+ ;;^UTILITY(U,$J,358.3,41944,0)
+ ;;=G89.18^^159^2012^16
+ ;;^UTILITY(U,$J,358.3,41944,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41944,1,3,0)
+ ;;=3^Postprocedural Pain,Oth Acute
+ ;;^UTILITY(U,$J,358.3,41944,1,4,0)
+ ;;=4^G89.18
+ ;;^UTILITY(U,$J,358.3,41944,2)
+ ;;=^5004154
+ ;;^UTILITY(U,$J,358.3,41945,0)
+ ;;=R52.^^159^2012^12
+ ;;^UTILITY(U,$J,358.3,41945,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41945,1,3,0)
+ ;;=3^Pain,Unspec
+ ;;^UTILITY(U,$J,358.3,41945,1,4,0)
+ ;;=4^R52.
+ ;;^UTILITY(U,$J,358.3,41945,2)
+ ;;=^5019514
+ ;;^UTILITY(U,$J,358.3,41946,0)
+ ;;=G89.21^^159^2012^11
+ ;;^UTILITY(U,$J,358.3,41946,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41946,1,3,0)
+ ;;=3^Pain d/t Trauma,Chronic
+ ;;^UTILITY(U,$J,358.3,41946,1,4,0)
+ ;;=4^G89.21
+ ;;^UTILITY(U,$J,358.3,41946,2)
+ ;;=^5004155
+ ;;^UTILITY(U,$J,358.3,41947,0)
+ ;;=G89.22^^159^2012^15
+ ;;^UTILITY(U,$J,358.3,41947,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41947,1,3,0)
+ ;;=3^Post-Thoracotomy Pain,Chronic
+ ;;^UTILITY(U,$J,358.3,41947,1,4,0)
+ ;;=4^G89.22
+ ;;^UTILITY(U,$J,358.3,41947,2)
+ ;;=^5004156
+ ;;^UTILITY(U,$J,358.3,41948,0)
+ ;;=G89.28^^159^2012^17

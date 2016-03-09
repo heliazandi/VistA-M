@@ -1,142 +1,142 @@
-IBDEI039 ; ; 06-AUG-2015
+IBDEI039 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,983,1,3,0)
- ;;=3^Paralysis of vocal cords and larynx, unspecified
- ;;^UTILITY(U,$J,358.3,983,1,4,0)
- ;;=4^J38.00
- ;;^UTILITY(U,$J,358.3,983,2)
- ;;=^5008219
- ;;^UTILITY(U,$J,358.3,984,0)
- ;;=J38.1^^3^35^111
- ;;^UTILITY(U,$J,358.3,984,1,0)
+ ;;^UTILITY(U,$J,358.3,1075,1,3,0)
+ ;;=3^Sebaceous Cyst
+ ;;^UTILITY(U,$J,358.3,1075,1,4,0)
+ ;;=4^L72.3
+ ;;^UTILITY(U,$J,358.3,1075,2)
+ ;;=^5009281
+ ;;^UTILITY(U,$J,358.3,1076,0)
+ ;;=M46.90^^6^111^15
+ ;;^UTILITY(U,$J,358.3,1076,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,984,1,3,0)
- ;;=3^Polyp of vocal cord and larynx
- ;;^UTILITY(U,$J,358.3,984,1,4,0)
- ;;=4^J38.1
- ;;^UTILITY(U,$J,358.3,984,2)
- ;;=^5008222
- ;;^UTILITY(U,$J,358.3,985,0)
- ;;=J38.6^^3^35^114
- ;;^UTILITY(U,$J,358.3,985,1,0)
+ ;;^UTILITY(U,$J,358.3,1076,1,3,0)
+ ;;=3^Spondylopathy Inflammatory,Site Unspec
+ ;;^UTILITY(U,$J,358.3,1076,1,4,0)
+ ;;=4^M46.90
+ ;;^UTILITY(U,$J,358.3,1076,2)
+ ;;=^5012030
+ ;;^UTILITY(U,$J,358.3,1077,0)
+ ;;=M47.819^^6^111^16
+ ;;^UTILITY(U,$J,358.3,1077,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,985,1,3,0)
- ;;=3^Stenosis of larynx
- ;;^UTILITY(U,$J,358.3,985,1,4,0)
- ;;=4^J38.6
- ;;^UTILITY(U,$J,358.3,985,2)
- ;;=^5008226
- ;;^UTILITY(U,$J,358.3,986,0)
- ;;=K04.7^^3^35^109
- ;;^UTILITY(U,$J,358.3,986,1,0)
+ ;;^UTILITY(U,$J,358.3,1077,1,3,0)
+ ;;=3^Spondylosis w/o Myelopathy/Radiculopathy,Site Unspec
+ ;;^UTILITY(U,$J,358.3,1077,1,4,0)
+ ;;=4^M47.819
+ ;;^UTILITY(U,$J,358.3,1077,2)
+ ;;=^5012076
+ ;;^UTILITY(U,$J,358.3,1078,0)
+ ;;=R55.^^6^111^20
+ ;;^UTILITY(U,$J,358.3,1078,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,986,1,3,0)
- ;;=3^Periapical abscess without sinus
- ;;^UTILITY(U,$J,358.3,986,1,4,0)
- ;;=4^K04.7
- ;;^UTILITY(U,$J,358.3,986,2)
- ;;=^91817
- ;;^UTILITY(U,$J,358.3,987,0)
- ;;=K05.00^^3^35^3
- ;;^UTILITY(U,$J,358.3,987,1,0)
+ ;;^UTILITY(U,$J,358.3,1078,1,3,0)
+ ;;=3^Syncope and Collapse
+ ;;^UTILITY(U,$J,358.3,1078,1,4,0)
+ ;;=4^R55.
+ ;;^UTILITY(U,$J,358.3,1078,2)
+ ;;=^116707
+ ;;^UTILITY(U,$J,358.3,1079,0)
+ ;;=G47.9^^6^111^12
+ ;;^UTILITY(U,$J,358.3,1079,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,987,1,3,0)
- ;;=3^Acute gingivitis, plaque induced
- ;;^UTILITY(U,$J,358.3,987,1,4,0)
- ;;=4^K05.00
- ;;^UTILITY(U,$J,358.3,987,2)
- ;;=^334192
- ;;^UTILITY(U,$J,358.3,988,0)
- ;;=K05.10^^3^35^42
- ;;^UTILITY(U,$J,358.3,988,1,0)
+ ;;^UTILITY(U,$J,358.3,1079,1,3,0)
+ ;;=3^Sleep Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,1079,1,4,0)
+ ;;=4^G47.9
+ ;;^UTILITY(U,$J,358.3,1079,2)
+ ;;=^5003990
+ ;;^UTILITY(U,$J,358.3,1080,0)
+ ;;=G47.30^^6^111^11
+ ;;^UTILITY(U,$J,358.3,1080,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,988,1,3,0)
- ;;=3^Chronic gingivitis, plaque induced
- ;;^UTILITY(U,$J,358.3,988,1,4,0)
- ;;=4^K05.10
- ;;^UTILITY(U,$J,358.3,988,2)
- ;;=^334193
- ;;^UTILITY(U,$J,358.3,989,0)
- ;;=K12.2^^3^35^35
- ;;^UTILITY(U,$J,358.3,989,1,0)
+ ;;^UTILITY(U,$J,358.3,1080,1,3,0)
+ ;;=3^Sleep Apnea,Unspec
+ ;;^UTILITY(U,$J,358.3,1080,1,4,0)
+ ;;=4^G47.30
+ ;;^UTILITY(U,$J,358.3,1080,2)
+ ;;=^5003977
+ ;;^UTILITY(U,$J,358.3,1081,0)
+ ;;=R06.02^^6^111^6
+ ;;^UTILITY(U,$J,358.3,1081,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,989,1,3,0)
- ;;=3^Cellulitis and abscess of mouth
- ;;^UTILITY(U,$J,358.3,989,1,4,0)
- ;;=4^K12.2
- ;;^UTILITY(U,$J,358.3,989,2)
- ;;=^5008485
- ;;^UTILITY(U,$J,358.3,990,0)
- ;;=K12.30^^3^35^101
- ;;^UTILITY(U,$J,358.3,990,1,0)
+ ;;^UTILITY(U,$J,358.3,1081,1,3,0)
+ ;;=3^Shortness of Breath
+ ;;^UTILITY(U,$J,358.3,1081,1,4,0)
+ ;;=4^R06.02
+ ;;^UTILITY(U,$J,358.3,1081,2)
+ ;;=^5019181
+ ;;^UTILITY(U,$J,358.3,1082,0)
+ ;;=B35.6^^6^112^3
+ ;;^UTILITY(U,$J,358.3,1082,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,990,1,3,0)
- ;;=3^Oral mucositis (ulcerative), unspecified
- ;;^UTILITY(U,$J,358.3,990,1,4,0)
- ;;=4^K12.30
- ;;^UTILITY(U,$J,358.3,990,2)
- ;;=^5008486
- ;;^UTILITY(U,$J,358.3,991,0)
- ;;=K12.0^^3^35^113
- ;;^UTILITY(U,$J,358.3,991,1,0)
+ ;;^UTILITY(U,$J,358.3,1082,1,3,0)
+ ;;=3^Tinea Cruris
+ ;;^UTILITY(U,$J,358.3,1082,1,4,0)
+ ;;=4^B35.6
+ ;;^UTILITY(U,$J,358.3,1082,2)
+ ;;=^119711
+ ;;^UTILITY(U,$J,358.3,1083,0)
+ ;;=E05.90^^6^112^2
+ ;;^UTILITY(U,$J,358.3,1083,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,991,1,3,0)
- ;;=3^Recurrent oral aphthae
- ;;^UTILITY(U,$J,358.3,991,1,4,0)
- ;;=4^K12.0
- ;;^UTILITY(U,$J,358.3,991,2)
- ;;=^5008483
- ;;^UTILITY(U,$J,358.3,992,0)
- ;;=K22.2^^3^35^70
- ;;^UTILITY(U,$J,358.3,992,1,0)
+ ;;^UTILITY(U,$J,358.3,1083,1,3,0)
+ ;;=3^Thyrotoxicosis w/o Thyrotoxic Crisis/Storm
+ ;;^UTILITY(U,$J,358.3,1083,1,4,0)
+ ;;=4^E05.90
+ ;;^UTILITY(U,$J,358.3,1083,2)
+ ;;=^5002492
+ ;;^UTILITY(U,$J,358.3,1084,0)
+ ;;=K42.9^^6^112^7
+ ;;^UTILITY(U,$J,358.3,1084,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,992,1,3,0)
- ;;=3^Esophageal obstruction
- ;;^UTILITY(U,$J,358.3,992,1,4,0)
- ;;=4^K22.2
- ;;^UTILITY(U,$J,358.3,992,2)
- ;;=^5008507
- ;;^UTILITY(U,$J,358.3,993,0)
- ;;=Q30.0^^3^35^39
- ;;^UTILITY(U,$J,358.3,993,1,0)
+ ;;^UTILITY(U,$J,358.3,1084,1,3,0)
+ ;;=3^Umbilical Hernia w/o Obst/Gangr
+ ;;^UTILITY(U,$J,358.3,1084,1,4,0)
+ ;;=4^K42.9
+ ;;^UTILITY(U,$J,358.3,1084,2)
+ ;;=^5008606
+ ;;^UTILITY(U,$J,358.3,1085,0)
+ ;;=R00.0^^6^112^1
+ ;;^UTILITY(U,$J,358.3,1085,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,993,1,3,0)
- ;;=3^Choanal atresia
- ;;^UTILITY(U,$J,358.3,993,1,4,0)
- ;;=4^Q30.0
- ;;^UTILITY(U,$J,358.3,993,2)
- ;;=^5018599
- ;;^UTILITY(U,$J,358.3,994,0)
- ;;=Q30.2^^3^35^71
- ;;^UTILITY(U,$J,358.3,994,1,0)
+ ;;^UTILITY(U,$J,358.3,1085,1,3,0)
+ ;;=3^Tachycardia,Unspec
+ ;;^UTILITY(U,$J,358.3,1085,1,4,0)
+ ;;=4^R00.0
+ ;;^UTILITY(U,$J,358.3,1085,2)
+ ;;=^5019163
+ ;;^UTILITY(U,$J,358.3,1086,0)
+ ;;=B35.3^^6^112^5
+ ;;^UTILITY(U,$J,358.3,1086,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,994,1,3,0)
- ;;=3^Fissured, notched and cleft nose
- ;;^UTILITY(U,$J,358.3,994,1,4,0)
- ;;=4^Q30.2
- ;;^UTILITY(U,$J,358.3,994,2)
- ;;=^5018601
- ;;^UTILITY(U,$J,358.3,995,0)
- ;;=Q30.1^^3^35^19
- ;;^UTILITY(U,$J,358.3,995,1,0)
+ ;;^UTILITY(U,$J,358.3,1086,1,3,0)
+ ;;=3^Tinea Pedis
+ ;;^UTILITY(U,$J,358.3,1086,1,4,0)
+ ;;=4^B35.3
+ ;;^UTILITY(U,$J,358.3,1086,2)
+ ;;=^119732
+ ;;^UTILITY(U,$J,358.3,1087,0)
+ ;;=J06.9^^6^112^8
+ ;;^UTILITY(U,$J,358.3,1087,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,995,1,3,0)
- ;;=3^Agenesis and underdevelopment of nose
- ;;^UTILITY(U,$J,358.3,995,1,4,0)
- ;;=4^Q30.1
- ;;^UTILITY(U,$J,358.3,995,2)
- ;;=^5018600
- ;;^UTILITY(U,$J,358.3,996,0)
- ;;=Q35.9^^3^35^51
- ;;^UTILITY(U,$J,358.3,996,1,0)
+ ;;^UTILITY(U,$J,358.3,1087,1,3,0)
+ ;;=3^Upper Respiratory Infection,Acute
+ ;;^UTILITY(U,$J,358.3,1087,1,4,0)
+ ;;=4^J06.9
+ ;;^UTILITY(U,$J,358.3,1087,2)
+ ;;=^5008143
+ ;;^UTILITY(U,$J,358.3,1088,0)
+ ;;=K08.8^^6^112^6
+ ;;^UTILITY(U,$J,358.3,1088,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,996,1,3,0)
- ;;=3^Cleft palate, unspecified
- ;;^UTILITY(U,$J,358.3,996,1,4,0)
- ;;=4^Q35.9
- ;;^UTILITY(U,$J,358.3,996,2)
- ;;=^5018634
- ;;^UTILITY(U,$J,358.3,997,0)
- ;;=R42.^^3^35^61
+ ;;^UTILITY(U,$J,358.3,1088,1,3,0)
+ ;;=3^Toothache
+ ;;^UTILITY(U,$J,358.3,1088,1,4,0)
+ ;;=4^K08.8
+ ;;^UTILITY(U,$J,358.3,1088,2)
+ ;;=^5008467
+ ;;^UTILITY(U,$J,358.3,1089,0)
+ ;;=N34.1^^6^112^9

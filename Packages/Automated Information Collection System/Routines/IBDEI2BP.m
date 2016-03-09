@@ -1,0 +1,132 @@
+IBDEI2BP ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,39400,2)
+ ;;=^5000498
+ ;;^UTILITY(U,$J,358.3,39401,0)
+ ;;=B00.59^^153^1922^9
+ ;;^UTILITY(U,$J,358.3,39401,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39401,1,3,0)
+ ;;=3^Herpes Viral Eye Disease NEC
+ ;;^UTILITY(U,$J,358.3,39401,1,4,0)
+ ;;=4^B00.59
+ ;;^UTILITY(U,$J,358.3,39401,2)
+ ;;=^5000476
+ ;;^UTILITY(U,$J,358.3,39402,0)
+ ;;=B25.9^^153^1922^8
+ ;;^UTILITY(U,$J,358.3,39402,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39402,1,3,0)
+ ;;=3^Cytomegaloviral Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,39402,1,4,0)
+ ;;=4^B25.9
+ ;;^UTILITY(U,$J,358.3,39402,2)
+ ;;=^5000560
+ ;;^UTILITY(U,$J,358.3,39403,0)
+ ;;=H32.^^153^1922^6
+ ;;^UTILITY(U,$J,358.3,39403,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39403,1,3,0)
+ ;;=3^Chorioretinal Disorders in Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,39403,1,4,0)
+ ;;=4^H32.
+ ;;^UTILITY(U,$J,358.3,39403,2)
+ ;;=^5005489
+ ;;^UTILITY(U,$J,358.3,39404,0)
+ ;;=B39.9^^153^1922^11
+ ;;^UTILITY(U,$J,358.3,39404,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39404,1,3,0)
+ ;;=3^Histoplasmosis,Unspec
+ ;;^UTILITY(U,$J,358.3,39404,1,4,0)
+ ;;=4^B39.9
+ ;;^UTILITY(U,$J,358.3,39404,2)
+ ;;=^5000638
+ ;;^UTILITY(U,$J,358.3,39405,0)
+ ;;=B83.0^^153^1922^25
+ ;;^UTILITY(U,$J,358.3,39405,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39405,1,3,0)
+ ;;=3^Visceral Larva Migrans
+ ;;^UTILITY(U,$J,358.3,39405,1,4,0)
+ ;;=4^B83.0
+ ;;^UTILITY(U,$J,358.3,39405,2)
+ ;;=^5000799
+ ;;^UTILITY(U,$J,358.3,39406,0)
+ ;;=B58.01^^153^1922^24
+ ;;^UTILITY(U,$J,358.3,39406,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39406,1,3,0)
+ ;;=3^Toxoplasma Chorioretinitis
+ ;;^UTILITY(U,$J,358.3,39406,1,4,0)
+ ;;=4^B58.01
+ ;;^UTILITY(U,$J,358.3,39406,2)
+ ;;=^5000724
+ ;;^UTILITY(U,$J,358.3,39407,0)
+ ;;=H44.001^^153^1922^22
+ ;;^UTILITY(U,$J,358.3,39407,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39407,1,3,0)
+ ;;=3^Purulent Endophthalmitis,Right Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,39407,1,4,0)
+ ;;=4^H44.001
+ ;;^UTILITY(U,$J,358.3,39407,2)
+ ;;=^5005963
+ ;;^UTILITY(U,$J,358.3,39408,0)
+ ;;=H44.002^^153^1922^21
+ ;;^UTILITY(U,$J,358.3,39408,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39408,1,3,0)
+ ;;=3^Purulent Endophthalmitis,Left Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,39408,1,4,0)
+ ;;=4^H44.002
+ ;;^UTILITY(U,$J,358.3,39408,2)
+ ;;=^5005964
+ ;;^UTILITY(U,$J,358.3,39409,0)
+ ;;=H44.003^^153^1922^20
+ ;;^UTILITY(U,$J,358.3,39409,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39409,1,3,0)
+ ;;=3^Purulent Endophthalmitis,Bilateral,Unspec
+ ;;^UTILITY(U,$J,358.3,39409,1,4,0)
+ ;;=4^H44.003
+ ;;^UTILITY(U,$J,358.3,39409,2)
+ ;;=^5005965
+ ;;^UTILITY(U,$J,358.3,39410,0)
+ ;;=H16.061^^153^1922^19
+ ;;^UTILITY(U,$J,358.3,39410,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39410,1,3,0)
+ ;;=3^Mycotic Corneal Ulcer,Right Eye
+ ;;^UTILITY(U,$J,358.3,39410,1,4,0)
+ ;;=4^H16.061
+ ;;^UTILITY(U,$J,358.3,39410,2)
+ ;;=^5004890
+ ;;^UTILITY(U,$J,358.3,39411,0)
+ ;;=H16.062^^153^1922^18
+ ;;^UTILITY(U,$J,358.3,39411,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39411,1,3,0)
+ ;;=3^Mycotic Corneal Ulcer,Left Eye
+ ;;^UTILITY(U,$J,358.3,39411,1,4,0)
+ ;;=4^H16.062
+ ;;^UTILITY(U,$J,358.3,39411,2)
+ ;;=^5004891
+ ;;^UTILITY(U,$J,358.3,39412,0)
+ ;;=H16.063^^153^1922^17
+ ;;^UTILITY(U,$J,358.3,39412,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39412,1,3,0)
+ ;;=3^Mycotic Corneal Ulcer,Bilateral
+ ;;^UTILITY(U,$J,358.3,39412,1,4,0)
+ ;;=4^H16.063
+ ;;^UTILITY(U,$J,358.3,39412,2)
+ ;;=^5004892
+ ;;^UTILITY(U,$J,358.3,39413,0)
+ ;;=H16.301^^153^1922^15
+ ;;^UTILITY(U,$J,358.3,39413,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39413,1,3,0)
+ ;;=3^Interstitial Keratitis,Right Eye,Unspec

@@ -1,140 +1,144 @@
-IBDEI01S ; ; 06-AUG-2015
+IBDEI01S ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,278,2)
- ;;=^5002300
- ;;^UTILITY(U,$J,358.3,279,0)
- ;;=D55.8^^2^12^12
- ;;^UTILITY(U,$J,358.3,279,1,0)
+ ;;^UTILITY(U,$J,358.3,341,1,4,0)
+ ;;=4^Z69.12
+ ;;^UTILITY(U,$J,358.3,341,2)
+ ;;=^5063233
+ ;;^UTILITY(U,$J,358.3,342,0)
+ ;;=Z69.11^^3^39^3
+ ;;^UTILITY(U,$J,358.3,342,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,279,1,3,0)
- ;;=3^Anemias due to enzyme disorders
- ;;^UTILITY(U,$J,358.3,279,1,4,0)
- ;;=4^D55.8
- ;;^UTILITY(U,$J,358.3,279,2)
- ;;=^5002303
- ;;^UTILITY(U,$J,358.3,280,0)
- ;;=D58.9^^2^12^25
- ;;^UTILITY(U,$J,358.3,280,1,0)
+ ;;^UTILITY(U,$J,358.3,342,1,3,0)
+ ;;=3^Mental Health Svcs for Victim of Spousal/Partner Abuse
+ ;;^UTILITY(U,$J,358.3,342,1,4,0)
+ ;;=4^Z69.11
+ ;;^UTILITY(U,$J,358.3,342,2)
+ ;;=^5063232
+ ;;^UTILITY(U,$J,358.3,343,0)
+ ;;=Z60.0^^3^40^2
+ ;;^UTILITY(U,$J,358.3,343,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,280,1,3,0)
- ;;=3^Hereditary hemolytic anemia, unspecified
- ;;^UTILITY(U,$J,358.3,280,1,4,0)
- ;;=4^D58.9
- ;;^UTILITY(U,$J,358.3,280,2)
- ;;=^5002322
- ;;^UTILITY(U,$J,358.3,281,0)
- ;;=D59.1^^2^12^15
- ;;^UTILITY(U,$J,358.3,281,1,0)
+ ;;^UTILITY(U,$J,358.3,343,1,3,0)
+ ;;=3^Phase of Life Problem
+ ;;^UTILITY(U,$J,358.3,343,1,4,0)
+ ;;=4^Z60.0
+ ;;^UTILITY(U,$J,358.3,343,2)
+ ;;=^5063139
+ ;;^UTILITY(U,$J,358.3,344,0)
+ ;;=Z60.2^^3^40^3
+ ;;^UTILITY(U,$J,358.3,344,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,281,1,3,0)
- ;;=3^Autoimmune hemolytic anemias NEC
- ;;^UTILITY(U,$J,358.3,281,1,4,0)
- ;;=4^D59.1
- ;;^UTILITY(U,$J,358.3,281,2)
- ;;=^5002324
- ;;^UTILITY(U,$J,358.3,282,0)
- ;;=D59.0^^2^12^17
- ;;^UTILITY(U,$J,358.3,282,1,0)
+ ;;^UTILITY(U,$J,358.3,344,1,3,0)
+ ;;=3^Problem Related to Living Alone
+ ;;^UTILITY(U,$J,358.3,344,1,4,0)
+ ;;=4^Z60.2
+ ;;^UTILITY(U,$J,358.3,344,2)
+ ;;=^5063140
+ ;;^UTILITY(U,$J,358.3,345,0)
+ ;;=Z60.3^^3^40^1
+ ;;^UTILITY(U,$J,358.3,345,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,282,1,3,0)
- ;;=3^Drug-induced autoimmune hemolytic anemia
- ;;^UTILITY(U,$J,358.3,282,1,4,0)
- ;;=4^D59.0
- ;;^UTILITY(U,$J,358.3,282,2)
- ;;=^5002323
- ;;^UTILITY(U,$J,358.3,283,0)
- ;;=D59.3^^2^12^23
- ;;^UTILITY(U,$J,358.3,283,1,0)
+ ;;^UTILITY(U,$J,358.3,345,1,3,0)
+ ;;=3^Acculturation Difficulty
+ ;;^UTILITY(U,$J,358.3,345,1,4,0)
+ ;;=4^Z60.3
+ ;;^UTILITY(U,$J,358.3,345,2)
+ ;;=^5063141
+ ;;^UTILITY(U,$J,358.3,346,0)
+ ;;=Z60.4^^3^40^5
+ ;;^UTILITY(U,$J,358.3,346,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,283,1,3,0)
- ;;=3^Hemolytic-uremic syndrome
- ;;^UTILITY(U,$J,358.3,283,1,4,0)
- ;;=4^D59.3
- ;;^UTILITY(U,$J,358.3,283,2)
- ;;=^55823
- ;;^UTILITY(U,$J,358.3,284,0)
- ;;=D59.4^^2^12^30
- ;;^UTILITY(U,$J,358.3,284,1,0)
+ ;;^UTILITY(U,$J,358.3,346,1,3,0)
+ ;;=3^Social Exclusion or Rejection
+ ;;^UTILITY(U,$J,358.3,346,1,4,0)
+ ;;=4^Z60.4
+ ;;^UTILITY(U,$J,358.3,346,2)
+ ;;=^5063142
+ ;;^UTILITY(U,$J,358.3,347,0)
+ ;;=Z60.5^^3^40^6
+ ;;^UTILITY(U,$J,358.3,347,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,284,1,3,0)
- ;;=3^Nonautoimmune hemolytic anemias NEC
- ;;^UTILITY(U,$J,358.3,284,1,4,0)
- ;;=4^D59.4
- ;;^UTILITY(U,$J,358.3,284,2)
- ;;=^5002326
- ;;^UTILITY(U,$J,358.3,285,0)
- ;;=D59.5^^2^12^34
- ;;^UTILITY(U,$J,358.3,285,1,0)
+ ;;^UTILITY(U,$J,358.3,347,1,3,0)
+ ;;=3^Target of (Perceived) Adverse Discrimination or Persecution
+ ;;^UTILITY(U,$J,358.3,347,1,4,0)
+ ;;=4^Z60.5
+ ;;^UTILITY(U,$J,358.3,347,2)
+ ;;=^5063143
+ ;;^UTILITY(U,$J,358.3,348,0)
+ ;;=Z60.9^^3^40^4
+ ;;^UTILITY(U,$J,358.3,348,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,285,1,3,0)
- ;;=3^Paroxysmal nocturnal hemoglobinuria [Marchiafava-Micheli]
- ;;^UTILITY(U,$J,358.3,285,1,4,0)
- ;;=4^D59.5
- ;;^UTILITY(U,$J,358.3,285,2)
- ;;=^5002327
- ;;^UTILITY(U,$J,358.3,286,0)
- ;;=D59.6^^2^12^22
- ;;^UTILITY(U,$J,358.3,286,1,0)
+ ;;^UTILITY(U,$J,358.3,348,1,3,0)
+ ;;=3^Problem Related to Social Environment,Unspec
+ ;;^UTILITY(U,$J,358.3,348,1,4,0)
+ ;;=4^Z60.9
+ ;;^UTILITY(U,$J,358.3,348,2)
+ ;;=^5063145
+ ;;^UTILITY(U,$J,358.3,349,0)
+ ;;=F65.4^^3^41^6
+ ;;^UTILITY(U,$J,358.3,349,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,286,1,3,0)
- ;;=3^Hemoglobinuria due to hemolysis from other external causes
- ;;^UTILITY(U,$J,358.3,286,1,4,0)
- ;;=4^D59.6
- ;;^UTILITY(U,$J,358.3,286,2)
- ;;=^5002328
- ;;^UTILITY(U,$J,358.3,287,0)
- ;;=D59.8^^2^12^2
- ;;^UTILITY(U,$J,358.3,287,1,0)
+ ;;^UTILITY(U,$J,358.3,349,1,3,0)
+ ;;=3^Pedophilia Disorder
+ ;;^UTILITY(U,$J,358.3,349,1,4,0)
+ ;;=4^F65.4
+ ;;^UTILITY(U,$J,358.3,349,2)
+ ;;=^5003655
+ ;;^UTILITY(U,$J,358.3,350,0)
+ ;;=F65.2^^3^41^1
+ ;;^UTILITY(U,$J,358.3,350,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,287,1,3,0)
- ;;=3^Acquired hemolytic anemias NEC
- ;;^UTILITY(U,$J,358.3,287,1,4,0)
- ;;=4^D59.8
- ;;^UTILITY(U,$J,358.3,287,2)
- ;;=^5002329
- ;;^UTILITY(U,$J,358.3,288,0)
- ;;=D59.9^^2^12^1
- ;;^UTILITY(U,$J,358.3,288,1,0)
+ ;;^UTILITY(U,$J,358.3,350,1,3,0)
+ ;;=3^Exhibitionistic Disorder
+ ;;^UTILITY(U,$J,358.3,350,1,4,0)
+ ;;=4^F65.2
+ ;;^UTILITY(U,$J,358.3,350,2)
+ ;;=^5003653
+ ;;^UTILITY(U,$J,358.3,351,0)
+ ;;=F65.3^^3^41^10
+ ;;^UTILITY(U,$J,358.3,351,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,288,1,3,0)
- ;;=3^Acquired hemolytic anemia, unspecified
- ;;^UTILITY(U,$J,358.3,288,1,4,0)
- ;;=4^D59.9
- ;;^UTILITY(U,$J,358.3,288,2)
- ;;=^5002330
- ;;^UTILITY(U,$J,358.3,289,0)
- ;;=D61.810^^2^12^13
- ;;^UTILITY(U,$J,358.3,289,1,0)
+ ;;^UTILITY(U,$J,358.3,351,1,3,0)
+ ;;=3^Voyeuristic Disorder
+ ;;^UTILITY(U,$J,358.3,351,1,4,0)
+ ;;=4^F65.3
+ ;;^UTILITY(U,$J,358.3,351,2)
+ ;;=^5003654
+ ;;^UTILITY(U,$J,358.3,352,0)
+ ;;=F65.81^^3^41^3
+ ;;^UTILITY(U,$J,358.3,352,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,289,1,3,0)
- ;;=3^Antineoplastic chemotherapy induced pancytopenia
- ;;^UTILITY(U,$J,358.3,289,1,4,0)
- ;;=4^D61.810
- ;;^UTILITY(U,$J,358.3,289,2)
- ;;=^5002339
- ;;^UTILITY(U,$J,358.3,290,0)
- ;;=D61.811^^2^12^19
- ;;^UTILITY(U,$J,358.3,290,1,0)
+ ;;^UTILITY(U,$J,358.3,352,1,3,0)
+ ;;=3^Frotteuristic Disorder
+ ;;^UTILITY(U,$J,358.3,352,1,4,0)
+ ;;=4^F65.81
+ ;;^UTILITY(U,$J,358.3,352,2)
+ ;;=^5003659
+ ;;^UTILITY(U,$J,358.3,353,0)
+ ;;=F65.51^^3^41^7
+ ;;^UTILITY(U,$J,358.3,353,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,290,1,3,0)
- ;;=3^Drug-induced pancytopenia NEC
- ;;^UTILITY(U,$J,358.3,290,1,4,0)
- ;;=4^D61.811
- ;;^UTILITY(U,$J,358.3,290,2)
- ;;=^5002340
- ;;^UTILITY(U,$J,358.3,291,0)
- ;;=D61.818^^2^12^33
- ;;^UTILITY(U,$J,358.3,291,1,0)
+ ;;^UTILITY(U,$J,358.3,353,1,3,0)
+ ;;=3^Sexual Masochism Disorder
+ ;;^UTILITY(U,$J,358.3,353,1,4,0)
+ ;;=4^F65.51
+ ;;^UTILITY(U,$J,358.3,353,2)
+ ;;=^5003657
+ ;;^UTILITY(U,$J,358.3,354,0)
+ ;;=F65.52^^3^41^8
+ ;;^UTILITY(U,$J,358.3,354,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,291,1,3,0)
- ;;=3^Pancytopenia NEC
- ;;^UTILITY(U,$J,358.3,291,1,4,0)
- ;;=4^D61.818
- ;;^UTILITY(U,$J,358.3,291,2)
- ;;=^340501
- ;;^UTILITY(U,$J,358.3,292,0)
- ;;=D61.82^^2^12^29
- ;;^UTILITY(U,$J,358.3,292,1,0)
+ ;;^UTILITY(U,$J,358.3,354,1,3,0)
+ ;;=3^Sexual Sadism Disorder
+ ;;^UTILITY(U,$J,358.3,354,1,4,0)
+ ;;=4^F65.52
+ ;;^UTILITY(U,$J,358.3,354,2)
+ ;;=^5003658
+ ;;^UTILITY(U,$J,358.3,355,0)
+ ;;=F65.0^^3^41^2
+ ;;^UTILITY(U,$J,358.3,355,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,355,1,3,0)
+ ;;=3^Fetishistic Disorder

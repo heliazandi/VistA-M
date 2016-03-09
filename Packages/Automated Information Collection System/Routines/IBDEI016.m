@@ -1,64 +1,136 @@
-IBDEI016 ; ; 06-AUG-2015
+IBDEI016 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQ(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.3,0,"GL")
- ;;=^IBE(358.3,
- ;;^DIC("B","IMP/EXP SELECTION",358.3)
- ;;=
- ;;^DIC(358.3,"%D",0)
- ;;=^^4^4^2940217^
- ;;^DIC(358.3,"%D",1,0)
- ;;= 
- ;;^DIC(358.3,"%D",2,0)
- ;;=This file is nearly identical to file #357.3. It is used by the
- ;;^DIC(358.3,"%D",3,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.3,"%D",4,0)
- ;;=that is being imported or exported.
- ;;^DD(358.3,0)
- ;;=FIELD^^3^15
- ;;^DD(358.3,0,"DDA")
- ;;=N
- ;;^DD(358.3,0,"DT")
- ;;=2961031
- ;;^DD(358.3,0,"ID",.03)
- ;;=S %I=Y,Y=$S('$D(^(0)):"",$D(^IBE(358.2,+$P(^(0),U,3),0))#2:$P(^(0),U,1),1:""),C=$P(^DD(358.2,.01,0),U,2) D Y^DIQ:Y]"" W "   ",Y,@("$E("_DIC_"%I,0),0)") S Y=%I K %I
- ;;^DD(358.3,0,"ID",.04)
- ;;=S %I=Y,Y=$S('$D(^(0)):"",$D(^IBE(358.4,+$P(^(0),U,4),0))#2:$P(^(0),U,1),1:""),C=$P(^DD(358.4,.01,0),U,2) D Y^DIQ:Y]"" W "   ",Y,@("$E("_DIC_"%I,0),0)") S Y=%I K %I
- ;;^DD(358.3,0,"IX","APO",358.3,.03)
- ;;=
- ;;^DD(358.3,0,"IX","APO1",358.3,.04)
- ;;=
- ;;^DD(358.3,0,"IX","APO2",358.3,.05)
- ;;=
- ;;^DD(358.3,0,"IX","B",358.3,.01)
- ;;=
- ;;^DD(358.3,0,"IX","C",358.3,.03)
- ;;=
- ;;^DD(358.3,0,"IX","D",358.3,.04)
- ;;=
- ;;^DD(358.3,0,"NM","IMP/EXP SELECTION")
- ;;=
- ;;^DD(358.3,0,"VRPK")
- ;;=IBD
- ;;^DD(358.3,.01,0)
- ;;=SELECTION ID^RF^^0;1^K:$L(X)>30!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.3,.01,1,0)
- ;;=^.1
- ;;^DD(358.3,.01,1,1,0)
- ;;=358.3^B
- ;;^DD(358.3,.01,1,1,1)
- ;;=S ^IBE(358.3,"B",$E(X,1,30),DA)=""
- ;;^DD(358.3,.01,1,1,2)
- ;;=K ^IBE(358.3,"B",$E(X,1,30),DA)
- ;;^DD(358.3,.01,3)
- ;;=Answer must be 3-30 characters in length.
- ;;^DD(358.3,.01,21,0)
- ;;=^^2^2^2930309^
- ;;^DD(358.3,.01,21,1,0)
- ;;= 
- ;;^DD(358.3,.01,21,2,0)
- ;;=The ID passed by the package.
- ;;^DD(358.3,.01,"DT")
- ;;=2921119
+ ;;^UTILITY(U,$J,358.3,33,1,3,0)
+ ;;=3^Neuropsych Tst Adm by Computer
+ ;;^UTILITY(U,$J,358.3,34,0)
+ ;;=96118^^1^4^4^^^^1
+ ;;^UTILITY(U,$J,358.3,34,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,34,1,2,0)
+ ;;=2^96118
+ ;;^UTILITY(U,$J,358.3,34,1,3,0)
+ ;;=3^Neuropsych Tst by Psych/Phys,Ea Hr
+ ;;^UTILITY(U,$J,358.3,35,0)
+ ;;=96119^^1^4^5^^^^1
+ ;;^UTILITY(U,$J,358.3,35,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,35,1,2,0)
+ ;;=2^96119
+ ;;^UTILITY(U,$J,358.3,35,1,3,0)
+ ;;=3^Neuropsych Tst,Tech,Ea Hr
+ ;;^UTILITY(U,$J,358.3,36,0)
+ ;;=90899^^1^4^9^^^^1
+ ;;^UTILITY(U,$J,358.3,36,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,36,1,2,0)
+ ;;=2^90899
+ ;;^UTILITY(U,$J,358.3,36,1,3,0)
+ ;;=3^Unlisted Psych Service 
+ ;;^UTILITY(U,$J,358.3,37,0)
+ ;;=96103^^1^4^6^^^^1
+ ;;^UTILITY(U,$J,358.3,37,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,37,1,2,0)
+ ;;=2^96103
+ ;;^UTILITY(U,$J,358.3,37,1,3,0)
+ ;;=3^Psych Tst Admin by Computer
+ ;;^UTILITY(U,$J,358.3,38,0)
+ ;;=96101^^1^4^7^^^^1
+ ;;^UTILITY(U,$J,358.3,38,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,38,1,2,0)
+ ;;=2^96101
+ ;;^UTILITY(U,$J,358.3,38,1,3,0)
+ ;;=3^Psych Tst by Psych/Phys,Ea Hr
+ ;;^UTILITY(U,$J,358.3,39,0)
+ ;;=96102^^1^4^8^^^^1
+ ;;^UTILITY(U,$J,358.3,39,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39,1,2,0)
+ ;;=2^96102
+ ;;^UTILITY(U,$J,358.3,39,1,3,0)
+ ;;=3^Psych Tst,Tech,Ea Hr
+ ;;^UTILITY(U,$J,358.3,40,0)
+ ;;=96127^^1^4^1^^^^1
+ ;;^UTILITY(U,$J,358.3,40,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,40,1,2,0)
+ ;;=2^96127
+ ;;^UTILITY(U,$J,358.3,40,1,3,0)
+ ;;=3^Brief Emotional/Behav Assess w/ Score & Document 
+ ;;^UTILITY(U,$J,358.3,41,0)
+ ;;=99406^^1^5^1^^^^1
+ ;;^UTILITY(U,$J,358.3,41,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,41,1,2,0)
+ ;;=2^99406
+ ;;^UTILITY(U,$J,358.3,41,1,3,0)
+ ;;=3^Smoking/Tob Cessation Counsel,Asymp PT, 3-10Min
+ ;;^UTILITY(U,$J,358.3,42,0)
+ ;;=99407^^1^5^2^^^^1
+ ;;^UTILITY(U,$J,358.3,42,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,42,1,2,0)
+ ;;=2^99407
+ ;;^UTILITY(U,$J,358.3,42,1,3,0)
+ ;;=3^Smoking/Tob Cessation Counsel,Asympt PT,>10Min
+ ;;^UTILITY(U,$J,358.3,43,0)
+ ;;=J2680^^1^6^1^^^^1
+ ;;^UTILITY(U,$J,358.3,43,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,43,1,2,0)
+ ;;=2^J2680
+ ;;^UTILITY(U,$J,358.3,43,1,3,0)
+ ;;=3^Fluphenazine Decanoate up to 25mg
+ ;;^UTILITY(U,$J,358.3,44,0)
+ ;;=J2426^^1^6^3^^^^1
+ ;;^UTILITY(U,$J,358.3,44,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,44,1,2,0)
+ ;;=2^J2426
+ ;;^UTILITY(U,$J,358.3,44,1,3,0)
+ ;;=3^Paliperidone Palmitate Extended Release 1mg
+ ;;^UTILITY(U,$J,358.3,45,0)
+ ;;=J1631^^1^6^2^^^^1
+ ;;^UTILITY(U,$J,358.3,45,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,45,1,2,0)
+ ;;=2^J1631
+ ;;^UTILITY(U,$J,358.3,45,1,3,0)
+ ;;=3^Haliperidol Decanoate per 50mg
+ ;;^UTILITY(U,$J,358.3,46,0)
+ ;;=J2794^^1^6^4^^^^1
+ ;;^UTILITY(U,$J,358.3,46,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,46,1,2,0)
+ ;;=2^J2794
+ ;;^UTILITY(U,$J,358.3,46,1,3,0)
+ ;;=3^Risperidone Long Acting 0.5mg
+ ;;^UTILITY(U,$J,358.3,47,0)
+ ;;=96372^^1^6^5^^^^1
+ ;;^UTILITY(U,$J,358.3,47,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,47,1,2,0)
+ ;;=2^96372
+ ;;^UTILITY(U,$J,358.3,47,1,3,0)
+ ;;=3^Ther/Proph/Diag Inj,SC/IM
+ ;;^UTILITY(U,$J,358.3,48,0)
+ ;;=99212^^2^7^1
+ ;;^UTILITY(U,$J,358.3,48,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,48,1,1,0)
+ ;;=1^PROBLEM FOCUSED HX OR EXAM;SF MDM
+ ;;^UTILITY(U,$J,358.3,48,1,2,0)
+ ;;=2^99212
+ ;;^UTILITY(U,$J,358.3,49,0)
+ ;;=99213^^2^7^2
+ ;;^UTILITY(U,$J,358.3,49,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,49,1,1,0)
+ ;;=1^EXPAND PROB FOCUS HX OR EXAM;LOW COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,49,1,2,0)
+ ;;=2^99213
+ ;;^UTILITY(U,$J,358.3,50,0)
+ ;;=99214^^2^7^3

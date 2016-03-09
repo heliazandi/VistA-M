@@ -1,142 +1,136 @@
-IBDEI06F ; ; 06-AUG-2015
+IBDEI06F ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2482,1,4,0)
- ;;=4^D12.5
- ;;^UTILITY(U,$J,358.3,2482,2)
- ;;=^5001968
- ;;^UTILITY(U,$J,358.3,2483,0)
- ;;=D12.4^^6^75^13
- ;;^UTILITY(U,$J,358.3,2483,1,0)
+ ;;^UTILITY(U,$J,358.3,2677,1,3,0)
+ ;;=3^Hemorrhoidal Skin Tags,Residual
+ ;;^UTILITY(U,$J,358.3,2677,1,4,0)
+ ;;=4^K64.4
+ ;;^UTILITY(U,$J,358.3,2677,2)
+ ;;=^269834
+ ;;^UTILITY(U,$J,358.3,2678,0)
+ ;;=K64.8^^18^206^37
+ ;;^UTILITY(U,$J,358.3,2678,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2483,1,3,0)
- ;;=3^Benign neoplasm of descending colon
- ;;^UTILITY(U,$J,358.3,2483,1,4,0)
- ;;=4^D12.4
- ;;^UTILITY(U,$J,358.3,2483,2)
- ;;=^5001967
- ;;^UTILITY(U,$J,358.3,2484,0)
- ;;=D12.2^^6^75^10
- ;;^UTILITY(U,$J,358.3,2484,1,0)
+ ;;^UTILITY(U,$J,358.3,2678,1,3,0)
+ ;;=3^Hemorrhoids,Other
+ ;;^UTILITY(U,$J,358.3,2678,1,4,0)
+ ;;=4^K64.8
+ ;;^UTILITY(U,$J,358.3,2678,2)
+ ;;=^5008774
+ ;;^UTILITY(U,$J,358.3,2679,0)
+ ;;=K64.5^^18^206^38
+ ;;^UTILITY(U,$J,358.3,2679,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2484,1,3,0)
- ;;=3^Benign neoplasm of ascending colon
- ;;^UTILITY(U,$J,358.3,2484,1,4,0)
- ;;=4^D12.2
- ;;^UTILITY(U,$J,358.3,2484,2)
- ;;=^5001965
- ;;^UTILITY(U,$J,358.3,2485,0)
- ;;=D12.3^^6^75^17
- ;;^UTILITY(U,$J,358.3,2485,1,0)
+ ;;^UTILITY(U,$J,358.3,2679,1,3,0)
+ ;;=3^Hemorrhoids,Perianal Venous Thrombosis
+ ;;^UTILITY(U,$J,358.3,2679,1,4,0)
+ ;;=4^K64.5
+ ;;^UTILITY(U,$J,358.3,2679,2)
+ ;;=^5008773
+ ;;^UTILITY(U,$J,358.3,2680,0)
+ ;;=K70.9^^18^206^46
+ ;;^UTILITY(U,$J,358.3,2680,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2485,1,3,0)
- ;;=3^Benign neoplasm of transverse colon
- ;;^UTILITY(U,$J,358.3,2485,1,4,0)
- ;;=4^D12.3
- ;;^UTILITY(U,$J,358.3,2485,2)
- ;;=^5001966
- ;;^UTILITY(U,$J,358.3,2486,0)
- ;;=K62.0^^6^75^4
- ;;^UTILITY(U,$J,358.3,2486,1,0)
+ ;;^UTILITY(U,$J,358.3,2680,1,3,0)
+ ;;=3^Hepatic Liver Disease,Alcoholic,Unspec
+ ;;^UTILITY(U,$J,358.3,2680,1,4,0)
+ ;;=4^K70.9
+ ;;^UTILITY(U,$J,358.3,2680,2)
+ ;;=^5008792
+ ;;^UTILITY(U,$J,358.3,2681,0)
+ ;;=K75.9^^18^206^47
+ ;;^UTILITY(U,$J,358.3,2681,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2486,1,3,0)
- ;;=3^Anal polyp
- ;;^UTILITY(U,$J,358.3,2486,1,4,0)
- ;;=4^K62.0
- ;;^UTILITY(U,$J,358.3,2486,2)
- ;;=^5008753
- ;;^UTILITY(U,$J,358.3,2487,0)
- ;;=K62.1^^6^75^47
- ;;^UTILITY(U,$J,358.3,2487,1,0)
+ ;;^UTILITY(U,$J,358.3,2681,1,3,0)
+ ;;=3^Hepatic Liver Disease,Inflammatory,Unspec
+ ;;^UTILITY(U,$J,358.3,2681,1,4,0)
+ ;;=4^K75.9
+ ;;^UTILITY(U,$J,358.3,2681,2)
+ ;;=^5008830
+ ;;^UTILITY(U,$J,358.3,2682,0)
+ ;;=K71.9^^18^206^48
+ ;;^UTILITY(U,$J,358.3,2682,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2487,1,3,0)
- ;;=3^Rectal polyp
- ;;^UTILITY(U,$J,358.3,2487,1,4,0)
- ;;=4^K62.1
- ;;^UTILITY(U,$J,358.3,2487,2)
- ;;=^104099
- ;;^UTILITY(U,$J,358.3,2488,0)
- ;;=K63.5^^6^75^45
- ;;^UTILITY(U,$J,358.3,2488,1,0)
+ ;;^UTILITY(U,$J,358.3,2682,1,3,0)
+ ;;=3^Hepatic Liver Disease,Toxic,Unspec
+ ;;^UTILITY(U,$J,358.3,2682,1,4,0)
+ ;;=4^K71.9
+ ;;^UTILITY(U,$J,358.3,2682,2)
+ ;;=^5008804
+ ;;^UTILITY(U,$J,358.3,2683,0)
+ ;;=K76.9^^18^206^49
+ ;;^UTILITY(U,$J,358.3,2683,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2488,1,3,0)
- ;;=3^Polyp of colon
- ;;^UTILITY(U,$J,358.3,2488,1,4,0)
- ;;=4^K63.5
- ;;^UTILITY(U,$J,358.3,2488,2)
- ;;=^5008765
- ;;^UTILITY(U,$J,358.3,2489,0)
- ;;=D12.6^^6^75^12
- ;;^UTILITY(U,$J,358.3,2489,1,0)
+ ;;^UTILITY(U,$J,358.3,2683,1,3,0)
+ ;;=3^Hepatic Liver Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,2683,1,4,0)
+ ;;=4^K76.9
+ ;;^UTILITY(U,$J,358.3,2683,2)
+ ;;=^5008836
+ ;;^UTILITY(U,$J,358.3,2684,0)
+ ;;=K74.60^^18^206^39
+ ;;^UTILITY(U,$J,358.3,2684,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2489,1,3,0)
- ;;=3^Benign neoplasm of colon, unspecified
- ;;^UTILITY(U,$J,358.3,2489,1,4,0)
- ;;=4^D12.6
- ;;^UTILITY(U,$J,358.3,2489,2)
- ;;=^5001969
- ;;^UTILITY(U,$J,358.3,2490,0)
- ;;=D12.1^^6^75^9
- ;;^UTILITY(U,$J,358.3,2490,1,0)
+ ;;^UTILITY(U,$J,358.3,2684,1,3,0)
+ ;;=3^Hepatic Cirrhosis,Unspec
+ ;;^UTILITY(U,$J,358.3,2684,1,4,0)
+ ;;=4^K74.60
+ ;;^UTILITY(U,$J,358.3,2684,2)
+ ;;=^5008822
+ ;;^UTILITY(U,$J,358.3,2685,0)
+ ;;=K72.01^^18^206^40
+ ;;^UTILITY(U,$J,358.3,2685,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2490,1,3,0)
- ;;=3^Benign neoplasm of appendix
- ;;^UTILITY(U,$J,358.3,2490,1,4,0)
- ;;=4^D12.1
- ;;^UTILITY(U,$J,358.3,2490,2)
- ;;=^5001964
- ;;^UTILITY(U,$J,358.3,2491,0)
- ;;=D12.0^^6^75^11
- ;;^UTILITY(U,$J,358.3,2491,1,0)
+ ;;^UTILITY(U,$J,358.3,2685,1,3,0)
+ ;;=3^Hepatic Failure,Acute/Subacute w/ Coma
+ ;;^UTILITY(U,$J,358.3,2685,1,4,0)
+ ;;=4^K72.01
+ ;;^UTILITY(U,$J,358.3,2685,2)
+ ;;=^5008806
+ ;;^UTILITY(U,$J,358.3,2686,0)
+ ;;=K72.00^^18^206^41
+ ;;^UTILITY(U,$J,358.3,2686,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2491,1,3,0)
- ;;=3^Benign neoplasm of cecum
- ;;^UTILITY(U,$J,358.3,2491,1,4,0)
- ;;=4^D12.0
- ;;^UTILITY(U,$J,358.3,2491,2)
- ;;=^5001963
- ;;^UTILITY(U,$J,358.3,2492,0)
- ;;=D12.7^^6^75^14
- ;;^UTILITY(U,$J,358.3,2492,1,0)
+ ;;^UTILITY(U,$J,358.3,2686,1,3,0)
+ ;;=3^Hepatic Failure,Acute/Subacute w/o Coma
+ ;;^UTILITY(U,$J,358.3,2686,1,4,0)
+ ;;=4^K72.00
+ ;;^UTILITY(U,$J,358.3,2686,2)
+ ;;=^5008805
+ ;;^UTILITY(U,$J,358.3,2687,0)
+ ;;=K72.11^^18^206^42
+ ;;^UTILITY(U,$J,358.3,2687,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2492,1,3,0)
- ;;=3^Benign neoplasm of rectosigmoid junction
- ;;^UTILITY(U,$J,358.3,2492,1,4,0)
- ;;=4^D12.7
- ;;^UTILITY(U,$J,358.3,2492,2)
- ;;=^5001970
- ;;^UTILITY(U,$J,358.3,2493,0)
- ;;=D12.8^^6^75^15
- ;;^UTILITY(U,$J,358.3,2493,1,0)
+ ;;^UTILITY(U,$J,358.3,2687,1,3,0)
+ ;;=3^Hepatic Failure,Chronic w/ Coma
+ ;;^UTILITY(U,$J,358.3,2687,1,4,0)
+ ;;=4^K72.11
+ ;;^UTILITY(U,$J,358.3,2687,2)
+ ;;=^5008808
+ ;;^UTILITY(U,$J,358.3,2688,0)
+ ;;=K72.10^^18^206^43
+ ;;^UTILITY(U,$J,358.3,2688,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2493,1,3,0)
- ;;=3^Benign neoplasm of rectum
- ;;^UTILITY(U,$J,358.3,2493,1,4,0)
- ;;=4^D12.8
- ;;^UTILITY(U,$J,358.3,2493,2)
- ;;=^5001971
- ;;^UTILITY(U,$J,358.3,2494,0)
- ;;=D12.9^^6^75^8
- ;;^UTILITY(U,$J,358.3,2494,1,0)
+ ;;^UTILITY(U,$J,358.3,2688,1,3,0)
+ ;;=3^Hepatic Failure,Chronic w/o Coma
+ ;;^UTILITY(U,$J,358.3,2688,1,4,0)
+ ;;=4^K72.10
+ ;;^UTILITY(U,$J,358.3,2688,2)
+ ;;=^5008807
+ ;;^UTILITY(U,$J,358.3,2689,0)
+ ;;=K72.91^^18^206^44
+ ;;^UTILITY(U,$J,358.3,2689,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2494,1,3,0)
- ;;=3^Benign neoplasm of anus and anal canal
- ;;^UTILITY(U,$J,358.3,2494,1,4,0)
- ;;=4^D12.9
- ;;^UTILITY(U,$J,358.3,2494,2)
- ;;=^5001972
- ;;^UTILITY(U,$J,358.3,2495,0)
- ;;=E83.110^^6^75^38
- ;;^UTILITY(U,$J,358.3,2495,1,0)
+ ;;^UTILITY(U,$J,358.3,2689,1,3,0)
+ ;;=3^Hepatic Failure,Unspec w/ Coma
+ ;;^UTILITY(U,$J,358.3,2689,1,4,0)
+ ;;=4^K72.91
+ ;;^UTILITY(U,$J,358.3,2689,2)
+ ;;=^5008810
+ ;;^UTILITY(U,$J,358.3,2690,0)
+ ;;=K72.90^^18^206^45
+ ;;^UTILITY(U,$J,358.3,2690,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2495,1,3,0)
- ;;=3^Hereditary hemochromatosis
- ;;^UTILITY(U,$J,358.3,2495,1,4,0)
- ;;=4^E83.110
- ;;^UTILITY(U,$J,358.3,2495,2)
- ;;=^339602
- ;;^UTILITY(U,$J,358.3,2496,0)
- ;;=E83.111^^6^75^35
- ;;^UTILITY(U,$J,358.3,2496,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2690,1,3,0)
+ ;;=3^Hepatic Failure,Unspec w/o Coma

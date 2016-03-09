@@ -1,138 +1,122 @@
-IBDEI1AD ; ; 06-AUG-2015
+IBDEI1AD ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,22783,0)
- ;;=V10.03^^125^1397^60
- ;;^UTILITY(U,$J,358.3,22783,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22783,1,4,0)
- ;;=4^V10.03
- ;;^UTILITY(U,$J,358.3,22783,1,5,0)
- ;;=5^H/O Esophageal Cancer
- ;;^UTILITY(U,$J,358.3,22783,2)
- ;;=^295205
- ;;^UTILITY(U,$J,358.3,22784,0)
- ;;=V10.60^^125^1397^62
- ;;^UTILITY(U,$J,358.3,22784,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22784,1,4,0)
- ;;=4^V10.60
- ;;^UTILITY(U,$J,358.3,22784,1,5,0)
- ;;=5^H/O Leukemia
- ;;^UTILITY(U,$J,358.3,22784,2)
- ;;=H/O Leukemia^295231
- ;;^UTILITY(U,$J,358.3,22785,0)
- ;;=V10.11^^125^1397^63
- ;;^UTILITY(U,$J,358.3,22785,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22785,1,4,0)
- ;;=4^V10.11
- ;;^UTILITY(U,$J,358.3,22785,1,5,0)
- ;;=5^H/O Lung Cancer
- ;;^UTILITY(U,$J,358.3,22785,2)
- ;;=H/O Lung Cancer^295211
- ;;^UTILITY(U,$J,358.3,22786,0)
- ;;=V10.79^^125^1397^64
- ;;^UTILITY(U,$J,358.3,22786,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22786,1,4,0)
- ;;=4^V10.79
- ;;^UTILITY(U,$J,358.3,22786,1,5,0)
- ;;=5^H/O Lymphoma
- ;;^UTILITY(U,$J,358.3,22786,2)
- ;;=H/O Lymphoma^295238
- ;;^UTILITY(U,$J,358.3,22787,0)
- ;;=V10.82^^125^1397^65
- ;;^UTILITY(U,$J,358.3,22787,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22787,1,4,0)
- ;;=4^V10.82
- ;;^UTILITY(U,$J,358.3,22787,1,5,0)
- ;;=5^H/O Malig Melanoma Of Skin
- ;;^UTILITY(U,$J,358.3,22787,2)
- ;;=^295240
- ;;^UTILITY(U,$J,358.3,22788,0)
- ;;=V10.02^^125^1397^68
- ;;^UTILITY(U,$J,358.3,22788,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22788,1,4,0)
- ;;=4^V10.02
- ;;^UTILITY(U,$J,358.3,22788,1,5,0)
- ;;=5^H/O Oral Cavity/Pharynx Cancer
- ;;^UTILITY(U,$J,358.3,22788,2)
- ;;=^295204
- ;;^UTILITY(U,$J,358.3,22789,0)
- ;;=V10.43^^125^1397^69
- ;;^UTILITY(U,$J,358.3,22789,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22789,1,4,0)
- ;;=4^V10.43
- ;;^UTILITY(U,$J,358.3,22789,1,5,0)
- ;;=5^H/O Ovarian Cancer
- ;;^UTILITY(U,$J,358.3,22789,2)
- ;;=^295221
- ;;^UTILITY(U,$J,358.3,22790,0)
- ;;=V10.46^^125^1397^70
- ;;^UTILITY(U,$J,358.3,22790,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22790,1,4,0)
- ;;=4^V10.46
- ;;^UTILITY(U,$J,358.3,22790,1,5,0)
- ;;=5^H/O Prostate Cancer
- ;;^UTILITY(U,$J,358.3,22790,2)
- ;;=^295224
- ;;^UTILITY(U,$J,358.3,22791,0)
- ;;=V10.06^^125^1397^71
- ;;^UTILITY(U,$J,358.3,22791,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22791,1,4,0)
- ;;=4^V10.06
- ;;^UTILITY(U,$J,358.3,22791,1,5,0)
- ;;=5^H/O Rectal/Anal Cancer
- ;;^UTILITY(U,$J,358.3,22791,2)
- ;;=^295208
- ;;^UTILITY(U,$J,358.3,22792,0)
- ;;=V10.52^^125^1397^72
- ;;^UTILITY(U,$J,358.3,22792,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22792,1,4,0)
- ;;=4^V10.52
- ;;^UTILITY(U,$J,358.3,22792,1,5,0)
- ;;=5^H/O Renal Cancer
- ;;^UTILITY(U,$J,358.3,22792,2)
- ;;=H/o Renal Cancer^295229
- ;;^UTILITY(U,$J,358.3,22793,0)
- ;;=V10.04^^125^1397^74
- ;;^UTILITY(U,$J,358.3,22793,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22793,1,4,0)
- ;;=4^V10.04
- ;;^UTILITY(U,$J,358.3,22793,1,5,0)
- ;;=5^H/O Stomach Cancer
- ;;^UTILITY(U,$J,358.3,22793,2)
- ;;=^295206
- ;;^UTILITY(U,$J,358.3,22794,0)
- ;;=V10.47^^125^1397^75
- ;;^UTILITY(U,$J,358.3,22794,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22794,1,4,0)
- ;;=4^V10.47
- ;;^UTILITY(U,$J,358.3,22794,1,5,0)
- ;;=5^H/O Testicular Cancer
- ;;^UTILITY(U,$J,358.3,22794,2)
- ;;=^295225
- ;;^UTILITY(U,$J,358.3,22795,0)
- ;;=V10.83^^125^1397^73
- ;;^UTILITY(U,$J,358.3,22795,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22795,1,4,0)
- ;;=4^V10.83
- ;;^UTILITY(U,$J,358.3,22795,1,5,0)
- ;;=5^H/O Skin Cancer
- ;;^UTILITY(U,$J,358.3,22795,2)
- ;;=H/O Skin Cancer^295241
- ;;^UTILITY(U,$J,358.3,22796,0)
- ;;=285.22^^125^1397^9
- ;;^UTILITY(U,$J,358.3,22796,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,21874,2)
+ ;;=^5009487
+ ;;^UTILITY(U,$J,358.3,21875,0)
+ ;;=L97.114^^87^970^229
+ ;;^UTILITY(U,$J,358.3,21875,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21875,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Thigh w/ Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,21875,1,4,0)
+ ;;=4^L97.114
+ ;;^UTILITY(U,$J,358.3,21875,2)
+ ;;=^5009488
+ ;;^UTILITY(U,$J,358.3,21876,0)
+ ;;=L97.119^^87^970^230
+ ;;^UTILITY(U,$J,358.3,21876,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21876,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Thigh w/ Unspec Severity
+ ;;^UTILITY(U,$J,358.3,21876,1,4,0)
+ ;;=4^L97.119
+ ;;^UTILITY(U,$J,358.3,21876,2)
+ ;;=^5009489
+ ;;^UTILITY(U,$J,358.3,21877,0)
+ ;;=L97.121^^87^970^196
+ ;;^UTILITY(U,$J,358.3,21877,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21877,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Thigh w/ Breakdown of Skin
+ ;;^UTILITY(U,$J,358.3,21877,1,4,0)
+ ;;=4^L97.121
+ ;;^UTILITY(U,$J,358.3,21877,2)
+ ;;=^5009490
+ ;;^UTILITY(U,$J,358.3,21878,0)
+ ;;=L97.122^^87^970^197
+ ;;^UTILITY(U,$J,358.3,21878,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21878,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Thigh w/ Fat Layer Exposed
+ ;;^UTILITY(U,$J,358.3,21878,1,4,0)
+ ;;=4^L97.122
+ ;;^UTILITY(U,$J,358.3,21878,2)
+ ;;=^5009491
+ ;;^UTILITY(U,$J,358.3,21879,0)
+ ;;=L97.123^^87^970^198
+ ;;^UTILITY(U,$J,358.3,21879,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21879,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Thigh w/ Necrosis of Muscle
+ ;;^UTILITY(U,$J,358.3,21879,1,4,0)
+ ;;=4^L97.123
+ ;;^UTILITY(U,$J,358.3,21879,2)
+ ;;=^5009492
+ ;;^UTILITY(U,$J,358.3,21880,0)
+ ;;=L97.124^^87^970^199
+ ;;^UTILITY(U,$J,358.3,21880,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21880,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Thigh w/ Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,21880,1,4,0)
+ ;;=4^L97.124
+ ;;^UTILITY(U,$J,358.3,21880,2)
+ ;;=^5009493
+ ;;^UTILITY(U,$J,358.3,21881,0)
+ ;;=L97.129^^87^970^200
+ ;;^UTILITY(U,$J,358.3,21881,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21881,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Thigh w/ Unspec Severity
+ ;;^UTILITY(U,$J,358.3,21881,1,4,0)
+ ;;=4^L97.129
+ ;;^UTILITY(U,$J,358.3,21881,2)
+ ;;=^5009494
+ ;;^UTILITY(U,$J,358.3,21882,0)
+ ;;=L97.211^^87^970^206
+ ;;^UTILITY(U,$J,358.3,21882,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21882,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Breakdown of Skin
+ ;;^UTILITY(U,$J,358.3,21882,1,4,0)
+ ;;=4^L97.211
+ ;;^UTILITY(U,$J,358.3,21882,2)
+ ;;=^5009500
+ ;;^UTILITY(U,$J,358.3,21883,0)
+ ;;=L97.212^^87^970^207
+ ;;^UTILITY(U,$J,358.3,21883,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21883,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Fat Layer Exposed
+ ;;^UTILITY(U,$J,358.3,21883,1,4,0)
+ ;;=4^L97.212
+ ;;^UTILITY(U,$J,358.3,21883,2)
+ ;;=^5009501
+ ;;^UTILITY(U,$J,358.3,21884,0)
+ ;;=L97.213^^87^970^208
+ ;;^UTILITY(U,$J,358.3,21884,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21884,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Necrosis of Muscle
+ ;;^UTILITY(U,$J,358.3,21884,1,4,0)
+ ;;=4^L97.213
+ ;;^UTILITY(U,$J,358.3,21884,2)
+ ;;=^5009502
+ ;;^UTILITY(U,$J,358.3,21885,0)
+ ;;=L97.214^^87^970^209
+ ;;^UTILITY(U,$J,358.3,21885,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21885,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,21885,1,4,0)
+ ;;=4^L97.214
+ ;;^UTILITY(U,$J,358.3,21885,2)
+ ;;=^5009503
+ ;;^UTILITY(U,$J,358.3,21886,0)
+ ;;=L97.219^^87^970^210
+ ;;^UTILITY(U,$J,358.3,21886,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21886,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Unspec Severity

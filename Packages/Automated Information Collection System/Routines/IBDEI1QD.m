@@ -1,128 +1,124 @@
-IBDEI1QD ; ; 06-AUG-2015
+IBDEI1QD ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30616,1,3,0)
- ;;=3^Pregnancy with inconclusive fetal viability, fetus 1
- ;;^UTILITY(U,$J,358.3,30616,1,4,0)
- ;;=4^O36.80X1
- ;;^UTILITY(U,$J,358.3,30616,2)
- ;;=^5017083
- ;;^UTILITY(U,$J,358.3,30617,0)
- ;;=O36.80X2^^178^1923^5
- ;;^UTILITY(U,$J,358.3,30617,1,0)
+ ;;^UTILITY(U,$J,358.3,29364,1,4,0)
+ ;;=4^O91.211
+ ;;^UTILITY(U,$J,358.3,29364,2)
+ ;;=^5017834
+ ;;^UTILITY(U,$J,358.3,29365,0)
+ ;;=O91.212^^115^1461^16
+ ;;^UTILITY(U,$J,358.3,29365,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30617,1,3,0)
- ;;=3^Pregnancy with inconclusive fetal viability, fetus 2
- ;;^UTILITY(U,$J,358.3,30617,1,4,0)
- ;;=4^O36.80X2
- ;;^UTILITY(U,$J,358.3,30617,2)
- ;;=^5017084
- ;;^UTILITY(U,$J,358.3,30618,0)
- ;;=O36.80X3^^178^1923^6
- ;;^UTILITY(U,$J,358.3,30618,1,0)
+ ;;^UTILITY(U,$J,358.3,29365,1,3,0)
+ ;;=3^Nonpurulent mastitis assoc w pregnancy, second trimester
+ ;;^UTILITY(U,$J,358.3,29365,1,4,0)
+ ;;=4^O91.212
+ ;;^UTILITY(U,$J,358.3,29365,2)
+ ;;=^5017835
+ ;;^UTILITY(U,$J,358.3,29366,0)
+ ;;=O91.213^^115^1461^18
+ ;;^UTILITY(U,$J,358.3,29366,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30618,1,3,0)
- ;;=3^Pregnancy with inconclusive fetal viability, fetus 3
- ;;^UTILITY(U,$J,358.3,30618,1,4,0)
- ;;=4^O36.80X3
- ;;^UTILITY(U,$J,358.3,30618,2)
- ;;=^5017085
- ;;^UTILITY(U,$J,358.3,30619,0)
- ;;=O36.80X4^^178^1923^7
- ;;^UTILITY(U,$J,358.3,30619,1,0)
+ ;;^UTILITY(U,$J,358.3,29366,1,3,0)
+ ;;=3^Nonpurulent mastitis associated w pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,29366,1,4,0)
+ ;;=4^O91.213
+ ;;^UTILITY(U,$J,358.3,29366,2)
+ ;;=^5017836
+ ;;^UTILITY(U,$J,358.3,29367,0)
+ ;;=O91.22^^115^1461^19
+ ;;^UTILITY(U,$J,358.3,29367,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30619,1,3,0)
- ;;=3^Pregnancy with inconclusive fetal viability, fetus 4
- ;;^UTILITY(U,$J,358.3,30619,1,4,0)
- ;;=4^O36.80X4
- ;;^UTILITY(U,$J,358.3,30619,2)
- ;;=^5017086
- ;;^UTILITY(U,$J,358.3,30620,0)
- ;;=O36.80X5^^178^1923^8
- ;;^UTILITY(U,$J,358.3,30620,1,0)
+ ;;^UTILITY(U,$J,358.3,29367,1,3,0)
+ ;;=3^Nonpurulent mastitis associated with the puerperium
+ ;;^UTILITY(U,$J,358.3,29367,1,4,0)
+ ;;=4^O91.22
+ ;;^UTILITY(U,$J,358.3,29367,2)
+ ;;=^5017838
+ ;;^UTILITY(U,$J,358.3,29368,0)
+ ;;=O92.011^^115^1461^21
+ ;;^UTILITY(U,$J,358.3,29368,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30620,1,3,0)
- ;;=3^Pregnancy with inconclusive fetal viability, fetus 5
- ;;^UTILITY(U,$J,358.3,30620,1,4,0)
- ;;=4^O36.80X5
- ;;^UTILITY(U,$J,358.3,30620,2)
- ;;=^5017087
- ;;^UTILITY(U,$J,358.3,30621,0)
- ;;=Z39.0^^178^1923^2
- ;;^UTILITY(U,$J,358.3,30621,1,0)
+ ;;^UTILITY(U,$J,358.3,29368,1,3,0)
+ ;;=3^Retracted nipple associated with pregnancy, first trimester
+ ;;^UTILITY(U,$J,358.3,29368,1,4,0)
+ ;;=4^O92.011
+ ;;^UTILITY(U,$J,358.3,29368,2)
+ ;;=^5017840
+ ;;^UTILITY(U,$J,358.3,29369,0)
+ ;;=O92.012^^115^1461^22
+ ;;^UTILITY(U,$J,358.3,29369,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30621,1,3,0)
- ;;=3^Care and exam of mother immediately after del
- ;;^UTILITY(U,$J,358.3,30621,1,4,0)
- ;;=4^Z39.0
- ;;^UTILITY(U,$J,358.3,30621,2)
- ;;=^5062904
- ;;^UTILITY(U,$J,358.3,30622,0)
- ;;=Z39.1^^178^1923^1
- ;;^UTILITY(U,$J,358.3,30622,1,0)
+ ;;^UTILITY(U,$J,358.3,29369,1,3,0)
+ ;;=3^Retracted nipple associated with pregnancy, second trimester
+ ;;^UTILITY(U,$J,358.3,29369,1,4,0)
+ ;;=4^O92.012
+ ;;^UTILITY(U,$J,358.3,29369,2)
+ ;;=^5017841
+ ;;^UTILITY(U,$J,358.3,29370,0)
+ ;;=O92.013^^115^1461^23
+ ;;^UTILITY(U,$J,358.3,29370,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30622,1,3,0)
- ;;=3^Care and exam of lactating mother
- ;;^UTILITY(U,$J,358.3,30622,1,4,0)
- ;;=4^Z39.1
- ;;^UTILITY(U,$J,358.3,30622,2)
- ;;=^5062905
- ;;^UTILITY(U,$J,358.3,30623,0)
- ;;=Z39.2^^178^1923^10
- ;;^UTILITY(U,$J,358.3,30623,1,0)
+ ;;^UTILITY(U,$J,358.3,29370,1,3,0)
+ ;;=3^Retracted nipple associated with pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,29370,1,4,0)
+ ;;=4^O92.013
+ ;;^UTILITY(U,$J,358.3,29370,2)
+ ;;=^5017842
+ ;;^UTILITY(U,$J,358.3,29371,0)
+ ;;=O92.03^^115^1461^20
+ ;;^UTILITY(U,$J,358.3,29371,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30623,1,3,0)
- ;;=3^Routine postpartum follow-up
- ;;^UTILITY(U,$J,358.3,30623,1,4,0)
- ;;=4^Z39.2
- ;;^UTILITY(U,$J,358.3,30623,2)
- ;;=^5062906
- ;;^UTILITY(U,$J,358.3,30624,0)
- ;;=A63.0^^178^1924^16
- ;;^UTILITY(U,$J,358.3,30624,1,0)
+ ;;^UTILITY(U,$J,358.3,29371,1,3,0)
+ ;;=3^Retracted nipple associated with lactation
+ ;;^UTILITY(U,$J,358.3,29371,1,4,0)
+ ;;=4^O92.03
+ ;;^UTILITY(U,$J,358.3,29371,2)
+ ;;=^5017845
+ ;;^UTILITY(U,$J,358.3,29372,0)
+ ;;=O92.111^^115^1461^7
+ ;;^UTILITY(U,$J,358.3,29372,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30624,1,3,0)
- ;;=3^Anogenital (venereal) warts
- ;;^UTILITY(U,$J,358.3,30624,1,4,0)
- ;;=4^A63.0
- ;;^UTILITY(U,$J,358.3,30624,2)
- ;;=^5000360
- ;;^UTILITY(U,$J,358.3,30625,0)
- ;;=A56.02^^178^1924^28
- ;;^UTILITY(U,$J,358.3,30625,1,0)
+ ;;^UTILITY(U,$J,358.3,29372,1,3,0)
+ ;;=3^Cracked nipple associated with pregnancy, first trimester
+ ;;^UTILITY(U,$J,358.3,29372,1,4,0)
+ ;;=4^O92.111
+ ;;^UTILITY(U,$J,358.3,29372,2)
+ ;;=^5017846
+ ;;^UTILITY(U,$J,358.3,29373,0)
+ ;;=O92.112^^115^1461^8
+ ;;^UTILITY(U,$J,358.3,29373,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30625,1,3,0)
- ;;=3^Chlamydial vulvovaginitis
- ;;^UTILITY(U,$J,358.3,30625,1,4,0)
- ;;=4^A56.02
- ;;^UTILITY(U,$J,358.3,30625,2)
- ;;=^5000340
- ;;^UTILITY(U,$J,358.3,30626,0)
- ;;=B37.3^^178^1924^22
- ;;^UTILITY(U,$J,358.3,30626,1,0)
+ ;;^UTILITY(U,$J,358.3,29373,1,3,0)
+ ;;=3^Cracked nipple associated with pregnancy, second trimester
+ ;;^UTILITY(U,$J,358.3,29373,1,4,0)
+ ;;=4^O92.112
+ ;;^UTILITY(U,$J,358.3,29373,2)
+ ;;=^5017847
+ ;;^UTILITY(U,$J,358.3,29374,0)
+ ;;=O92.113^^115^1461^9
+ ;;^UTILITY(U,$J,358.3,29374,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30626,1,3,0)
- ;;=3^Candidiasis of vulva and vagina
- ;;^UTILITY(U,$J,358.3,30626,1,4,0)
- ;;=4^B37.3
- ;;^UTILITY(U,$J,358.3,30626,2)
- ;;=^5000615
- ;;^UTILITY(U,$J,358.3,30627,0)
- ;;=A59.01^^178^1924^99
- ;;^UTILITY(U,$J,358.3,30627,1,0)
+ ;;^UTILITY(U,$J,358.3,29374,1,3,0)
+ ;;=3^Cracked nipple associated with pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,29374,1,4,0)
+ ;;=4^O92.113
+ ;;^UTILITY(U,$J,358.3,29374,2)
+ ;;=^5017848
+ ;;^UTILITY(U,$J,358.3,29375,0)
+ ;;=O92.13^^115^1461^6
+ ;;^UTILITY(U,$J,358.3,29375,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30627,1,3,0)
- ;;=3^Trichomonal vulvovaginitis
- ;;^UTILITY(U,$J,358.3,30627,1,4,0)
- ;;=4^A59.01
- ;;^UTILITY(U,$J,358.3,30627,2)
- ;;=^121763
- ;;^UTILITY(U,$J,358.3,30628,0)
- ;;=D21.9^^178^1924^20
- ;;^UTILITY(U,$J,358.3,30628,1,0)
+ ;;^UTILITY(U,$J,358.3,29375,1,3,0)
+ ;;=3^Cracked nipple associated with lactation
+ ;;^UTILITY(U,$J,358.3,29375,1,4,0)
+ ;;=4^O92.13
+ ;;^UTILITY(U,$J,358.3,29375,2)
+ ;;=^5017851
+ ;;^UTILITY(U,$J,358.3,29376,0)
+ ;;=O92.79^^115^1461^15
+ ;;^UTILITY(U,$J,358.3,29376,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30628,1,3,0)
- ;;=3^Benign neoplasm of connective and other soft tissue, unsp
- ;;^UTILITY(U,$J,358.3,30628,1,4,0)
- ;;=4^D21.9
+ ;;^UTILITY(U,$J,358.3,29376,1,3,0)
+ ;;=3^Lactation disorders NEC 

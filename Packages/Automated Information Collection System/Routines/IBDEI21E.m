@@ -1,122 +1,132 @@
-IBDEI21E ; ; 06-AUG-2015
+IBDEI21E ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35594,1,3,0)
- ;;=3^Diffuse large B-cell lymphoma, lymph nodes of multiple sites
- ;;^UTILITY(U,$J,358.3,35594,1,4,0)
- ;;=4^C83.38
- ;;^UTILITY(U,$J,358.3,35594,2)
- ;;=^5001579
- ;;^UTILITY(U,$J,358.3,35595,0)
- ;;=C83.58^^189^2057^29
- ;;^UTILITY(U,$J,358.3,35595,1,0)
+ ;;^UTILITY(U,$J,358.3,34551,1,3,0)
+ ;;=3^Neuropathy,Hereditary and Idiopathic Unspec
+ ;;^UTILITY(U,$J,358.3,34551,1,4,0)
+ ;;=4^G60.9
+ ;;^UTILITY(U,$J,358.3,34551,2)
+ ;;=^5004071
+ ;;^UTILITY(U,$J,358.3,34552,0)
+ ;;=I69.959^^131^1687^18
+ ;;^UTILITY(U,$J,358.3,34552,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35595,1,3,0)
- ;;=3^Lymphoblastic (diffuse) lymphoma, lymph nodes mult site
- ;;^UTILITY(U,$J,358.3,35595,1,4,0)
- ;;=4^C83.58
- ;;^UTILITY(U,$J,358.3,35595,2)
- ;;=^5001589
- ;;^UTILITY(U,$J,358.3,35596,0)
- ;;=C83.78^^189^2057^15
- ;;^UTILITY(U,$J,358.3,35596,1,0)
+ ;;^UTILITY(U,$J,358.3,34552,1,3,0)
+ ;;=3^Hemplg/Hemprs d/t Cerebvasc Diz Aff Unspec Side
+ ;;^UTILITY(U,$J,358.3,34552,1,4,0)
+ ;;=4^I69.959
+ ;;^UTILITY(U,$J,358.3,34552,2)
+ ;;=^5007563
+ ;;^UTILITY(U,$J,358.3,34553,0)
+ ;;=I69.359^^131^1687^19
+ ;;^UTILITY(U,$J,358.3,34553,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35596,1,3,0)
- ;;=3^Burkitt lymphoma, lymph nodes of multiple sites
- ;;^UTILITY(U,$J,358.3,35596,1,4,0)
- ;;=4^C83.78
- ;;^UTILITY(U,$J,358.3,35596,2)
- ;;=^5001599
- ;;^UTILITY(U,$J,358.3,35597,0)
- ;;=C83.18^^189^2057^35
- ;;^UTILITY(U,$J,358.3,35597,1,0)
+ ;;^UTILITY(U,$J,358.3,34553,1,3,0)
+ ;;=3^Hemplg/Hemprs d/t Cerebvasc Infrc Aff Unspec Side
+ ;;^UTILITY(U,$J,358.3,34553,1,4,0)
+ ;;=4^I69.359
+ ;;^UTILITY(U,$J,358.3,34553,2)
+ ;;=^5007508
+ ;;^UTILITY(U,$J,358.3,34554,0)
+ ;;=S14.109S^^131^1687^39
+ ;;^UTILITY(U,$J,358.3,34554,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35597,1,3,0)
- ;;=3^Mantle cell lymphoma, lymph nodes of multiple sites
- ;;^UTILITY(U,$J,358.3,35597,1,4,0)
- ;;=4^C83.18
- ;;^UTILITY(U,$J,358.3,35597,2)
- ;;=^5001569
- ;;^UTILITY(U,$J,358.3,35598,0)
- ;;=C83.38^^189^2057^23
- ;;^UTILITY(U,$J,358.3,35598,1,0)
+ ;;^UTILITY(U,$J,358.3,34554,1,3,0)
+ ;;=3^Sequela of Unspec Injury to Cervical Spinal Cord
+ ;;^UTILITY(U,$J,358.3,34554,1,4,0)
+ ;;=4^S14.109S
+ ;;^UTILITY(U,$J,358.3,34554,2)
+ ;;=^5134243
+ ;;^UTILITY(U,$J,358.3,34555,0)
+ ;;=S34.109S^^131^1687^40
+ ;;^UTILITY(U,$J,358.3,34555,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35598,1,3,0)
- ;;=3^Diffuse large B-cell lymphoma, lymph nodes of multiple sites
- ;;^UTILITY(U,$J,358.3,35598,1,4,0)
- ;;=4^C83.38
- ;;^UTILITY(U,$J,358.3,35598,2)
- ;;=^5001579
- ;;^UTILITY(U,$J,358.3,35599,0)
- ;;=C84.68^^189^2057^12
- ;;^UTILITY(U,$J,358.3,35599,1,0)
+ ;;^UTILITY(U,$J,358.3,34555,1,3,0)
+ ;;=3^Sequela of Unspec Injury to Lumbar Spinal Cord
+ ;;^UTILITY(U,$J,358.3,34555,1,4,0)
+ ;;=4^S34.109S
+ ;;^UTILITY(U,$J,358.3,34555,2)
+ ;;=^5134570
+ ;;^UTILITY(U,$J,358.3,34556,0)
+ ;;=S24.109S^^131^1687^41
+ ;;^UTILITY(U,$J,358.3,34556,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35599,1,3,0)
- ;;=3^Anaplastic large cell lymphoma, ALK-pos, nodes mult site
- ;;^UTILITY(U,$J,358.3,35599,1,4,0)
- ;;=4^C84.68
- ;;^UTILITY(U,$J,358.3,35599,2)
- ;;=^5001659
- ;;^UTILITY(U,$J,358.3,35600,0)
- ;;=C84.78^^189^2057^11
- ;;^UTILITY(U,$J,358.3,35600,1,0)
+ ;;^UTILITY(U,$J,358.3,34556,1,3,0)
+ ;;=3^Sequela of Unspec Injury to Thoracic Spinal Cord
+ ;;^UTILITY(U,$J,358.3,34556,1,4,0)
+ ;;=4^S24.109S
+ ;;^UTILITY(U,$J,358.3,34556,2)
+ ;;=^5134384
+ ;;^UTILITY(U,$J,358.3,34557,0)
+ ;;=G89.0^^131^1688^1
+ ;;^UTILITY(U,$J,358.3,34557,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35600,1,3,0)
- ;;=3^Anaplastic large cell lymphoma, ALK-neg, nodes mult site
- ;;^UTILITY(U,$J,358.3,35600,1,4,0)
- ;;=4^C84.78
- ;;^UTILITY(U,$J,358.3,35600,2)
- ;;=^5001669
- ;;^UTILITY(U,$J,358.3,35601,0)
- ;;=C81.08^^189^2057^43
- ;;^UTILITY(U,$J,358.3,35601,1,0)
+ ;;^UTILITY(U,$J,358.3,34557,1,3,0)
+ ;;=3^Central Pain Syndrome
+ ;;^UTILITY(U,$J,358.3,34557,1,4,0)
+ ;;=4^G89.0
+ ;;^UTILITY(U,$J,358.3,34557,2)
+ ;;=^334189
+ ;;^UTILITY(U,$J,358.3,34558,0)
+ ;;=G89.11^^131^1688^10
+ ;;^UTILITY(U,$J,358.3,34558,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35601,1,3,0)
- ;;=3^Nodular lymphocyte predom Hodgkin lymphoma, nodes mult site
- ;;^UTILITY(U,$J,358.3,35601,1,4,0)
- ;;=4^C81.08
- ;;^UTILITY(U,$J,358.3,35601,2)
- ;;=^5001399
- ;;^UTILITY(U,$J,358.3,35602,0)
- ;;=C81.48^^189^2057^28
- ;;^UTILITY(U,$J,358.3,35602,1,0)
+ ;;^UTILITY(U,$J,358.3,34558,1,3,0)
+ ;;=3^Pain d/t Trauma,Acute
+ ;;^UTILITY(U,$J,358.3,34558,1,4,0)
+ ;;=4^G89.11
+ ;;^UTILITY(U,$J,358.3,34558,2)
+ ;;=^5004152
+ ;;^UTILITY(U,$J,358.3,34559,0)
+ ;;=G89.12^^131^1688^14
+ ;;^UTILITY(U,$J,358.3,34559,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35602,1,3,0)
- ;;=3^Lymp-rich classical Hodgkin lymphoma, lymph nodes mult site
- ;;^UTILITY(U,$J,358.3,35602,1,4,0)
- ;;=4^C81.48
- ;;^UTILITY(U,$J,358.3,35602,2)
- ;;=^5001439
- ;;^UTILITY(U,$J,358.3,35603,0)
- ;;=C81.18^^189^2057^44
- ;;^UTILITY(U,$J,358.3,35603,1,0)
+ ;;^UTILITY(U,$J,358.3,34559,1,3,0)
+ ;;=3^Post-Thoracotomy Pain,Acute
+ ;;^UTILITY(U,$J,358.3,34559,1,4,0)
+ ;;=4^G89.12
+ ;;^UTILITY(U,$J,358.3,34559,2)
+ ;;=^5004153
+ ;;^UTILITY(U,$J,358.3,34560,0)
+ ;;=G89.18^^131^1688^16
+ ;;^UTILITY(U,$J,358.3,34560,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35603,1,3,0)
- ;;=3^Nodular sclerosis class Hodgkin lymphoma, nodes mult site
- ;;^UTILITY(U,$J,358.3,35603,1,4,0)
- ;;=4^C81.18
- ;;^UTILITY(U,$J,358.3,35603,2)
- ;;=^5001409
- ;;^UTILITY(U,$J,358.3,35604,0)
- ;;=C81.28^^189^2057^36
- ;;^UTILITY(U,$J,358.3,35604,1,0)
+ ;;^UTILITY(U,$J,358.3,34560,1,3,0)
+ ;;=3^Postprocedural Pain,Oth Acute
+ ;;^UTILITY(U,$J,358.3,34560,1,4,0)
+ ;;=4^G89.18
+ ;;^UTILITY(U,$J,358.3,34560,2)
+ ;;=^5004154
+ ;;^UTILITY(U,$J,358.3,34561,0)
+ ;;=R52.^^131^1688^12
+ ;;^UTILITY(U,$J,358.3,34561,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35604,1,3,0)
- ;;=3^Mixed cellular classical Hodgkin lymphoma, nodes mult site
- ;;^UTILITY(U,$J,358.3,35604,1,4,0)
- ;;=4^C81.28
- ;;^UTILITY(U,$J,358.3,35604,2)
- ;;=^5001419
- ;;^UTILITY(U,$J,358.3,35605,0)
- ;;=C81.38^^189^2057^30
- ;;^UTILITY(U,$J,358.3,35605,1,0)
+ ;;^UTILITY(U,$J,358.3,34561,1,3,0)
+ ;;=3^Pain,Unspec
+ ;;^UTILITY(U,$J,358.3,34561,1,4,0)
+ ;;=4^R52.
+ ;;^UTILITY(U,$J,358.3,34561,2)
+ ;;=^5019514
+ ;;^UTILITY(U,$J,358.3,34562,0)
+ ;;=G89.21^^131^1688^11
+ ;;^UTILITY(U,$J,358.3,34562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35605,1,3,0)
- ;;=3^Lymphocy depleted class Hodgkin lymphoma, nodes mult site
- ;;^UTILITY(U,$J,358.3,35605,1,4,0)
- ;;=4^C81.38
- ;;^UTILITY(U,$J,358.3,35605,2)
- ;;=^5001429
- ;;^UTILITY(U,$J,358.3,35606,0)
- ;;=C82.98^^189^2057^26
+ ;;^UTILITY(U,$J,358.3,34562,1,3,0)
+ ;;=3^Pain d/t Trauma,Chronic
+ ;;^UTILITY(U,$J,358.3,34562,1,4,0)
+ ;;=4^G89.21
+ ;;^UTILITY(U,$J,358.3,34562,2)
+ ;;=^5004155
+ ;;^UTILITY(U,$J,358.3,34563,0)
+ ;;=G89.22^^131^1688^15
+ ;;^UTILITY(U,$J,358.3,34563,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34563,1,3,0)
+ ;;=3^Post-Thoracotomy Pain,Chronic
+ ;;^UTILITY(U,$J,358.3,34563,1,4,0)
+ ;;=4^G89.22
+ ;;^UTILITY(U,$J,358.3,34563,2)
+ ;;=^5004156
+ ;;^UTILITY(U,$J,358.3,34564,0)
+ ;;=G89.28^^131^1688^17

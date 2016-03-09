@@ -1,136 +1,126 @@
-IBDEI0L9 ; ; 06-AUG-2015
+IBDEI0L9 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10074,0)
- ;;=377.21^^44^561^33
- ;;^UTILITY(U,$J,358.3,10074,1,0)
+ ;;^UTILITY(U,$J,358.3,9919,1,4,0)
+ ;;=4^H40.20X4
+ ;;^UTILITY(U,$J,358.3,9919,2)
+ ;;=^5005817
+ ;;^UTILITY(U,$J,358.3,9920,0)
+ ;;=H40.2211^^44^496^23
+ ;;^UTILITY(U,$J,358.3,9920,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10074,1,3,0)
- ;;=3^Drusen (ONH)
- ;;^UTILITY(U,$J,358.3,10074,1,4,0)
- ;;=4^377.21
- ;;^UTILITY(U,$J,358.3,10074,2)
- ;;=^269221
- ;;^UTILITY(U,$J,358.3,10075,0)
- ;;=377.10^^44^561^79
- ;;^UTILITY(U,$J,358.3,10075,1,0)
+ ;;^UTILITY(U,$J,358.3,9920,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Right Eye,Mild Stage
+ ;;^UTILITY(U,$J,358.3,9920,1,4,0)
+ ;;=4^H40.2211
+ ;;^UTILITY(U,$J,358.3,9920,2)
+ ;;=^5005823
+ ;;^UTILITY(U,$J,358.3,9921,0)
+ ;;=H40.2212^^44^496^24
+ ;;^UTILITY(U,$J,358.3,9921,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10075,1,3,0)
- ;;=3^Optic Atrophy
- ;;^UTILITY(U,$J,358.3,10075,1,4,0)
- ;;=4^377.10
- ;;^UTILITY(U,$J,358.3,10075,2)
- ;;=^85926
- ;;^UTILITY(U,$J,358.3,10076,0)
- ;;=377.30^^44^561^90
- ;;^UTILITY(U,$J,358.3,10076,1,0)
+ ;;^UTILITY(U,$J,358.3,9921,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Right Eye,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,9921,1,4,0)
+ ;;=4^H40.2212
+ ;;^UTILITY(U,$J,358.3,9921,2)
+ ;;=^5005824
+ ;;^UTILITY(U,$J,358.3,9922,0)
+ ;;=H40.2213^^44^496^25
+ ;;^UTILITY(U,$J,358.3,9922,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10076,1,3,0)
- ;;=3^Optic Neuritis,Unspec
- ;;^UTILITY(U,$J,358.3,10076,1,4,0)
- ;;=4^377.30
- ;;^UTILITY(U,$J,358.3,10076,2)
- ;;=^86002
- ;;^UTILITY(U,$J,358.3,10077,0)
- ;;=377.01^^44^561^96
- ;;^UTILITY(U,$J,358.3,10077,1,0)
+ ;;^UTILITY(U,$J,358.3,9922,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Right Eye,Severe Stage
+ ;;^UTILITY(U,$J,358.3,9922,1,4,0)
+ ;;=4^H40.2213
+ ;;^UTILITY(U,$J,358.3,9922,2)
+ ;;=^5005825
+ ;;^UTILITY(U,$J,358.3,9923,0)
+ ;;=H40.2214^^44^496^22
+ ;;^UTILITY(U,$J,358.3,9923,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10077,1,3,0)
- ;;=3^Papilledema
- ;;^UTILITY(U,$J,358.3,10077,1,4,0)
- ;;=4^377.01
- ;;^UTILITY(U,$J,358.3,10077,2)
- ;;=Papilledema Associated with Increased Intracranial Pressure^269212
- ;;^UTILITY(U,$J,358.3,10078,0)
- ;;=379.40^^44^561^107
- ;;^UTILITY(U,$J,358.3,10078,1,0)
+ ;;^UTILITY(U,$J,358.3,9923,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Right Eye,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,9923,1,4,0)
+ ;;=4^H40.2214
+ ;;^UTILITY(U,$J,358.3,9923,2)
+ ;;=^5005826
+ ;;^UTILITY(U,$J,358.3,9924,0)
+ ;;=H40.2221^^44^496^19
+ ;;^UTILITY(U,$J,358.3,9924,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10078,1,3,0)
- ;;=3^Pupil, Abnormal Function
- ;;^UTILITY(U,$J,358.3,10078,1,4,0)
- ;;=4^379.40
- ;;^UTILITY(U,$J,358.3,10078,2)
- ;;=Pupil, Abnormal Function^101288
- ;;^UTILITY(U,$J,358.3,10079,0)
- ;;=362.34^^44^561^6
- ;;^UTILITY(U,$J,358.3,10079,1,0)
+ ;;^UTILITY(U,$J,358.3,9924,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Left Eye,Mild Stage
+ ;;^UTILITY(U,$J,358.3,9924,1,4,0)
+ ;;=4^H40.2221
+ ;;^UTILITY(U,$J,358.3,9924,2)
+ ;;=^5005828
+ ;;^UTILITY(U,$J,358.3,9925,0)
+ ;;=H40.2222^^44^496^20
+ ;;^UTILITY(U,$J,358.3,9925,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10079,1,3,0)
- ;;=3^Amaurosis Fugax
- ;;^UTILITY(U,$J,358.3,10079,1,4,0)
- ;;=4^362.34
- ;;^UTILITY(U,$J,358.3,10079,2)
- ;;=Amaurosis Fugax^268622
- ;;^UTILITY(U,$J,358.3,10080,0)
- ;;=351.0^^44^561^12
- ;;^UTILITY(U,$J,358.3,10080,1,0)
+ ;;^UTILITY(U,$J,358.3,9925,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Left Eye,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,9925,1,4,0)
+ ;;=4^H40.2222
+ ;;^UTILITY(U,$J,358.3,9925,2)
+ ;;=^5005829
+ ;;^UTILITY(U,$J,358.3,9926,0)
+ ;;=H40.2223^^44^496^21
+ ;;^UTILITY(U,$J,358.3,9926,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10080,1,3,0)
- ;;=3^Bell's Palsy
- ;;^UTILITY(U,$J,358.3,10080,1,4,0)
- ;;=4^351.0
- ;;^UTILITY(U,$J,358.3,10080,2)
- ;;=Bell's Palsy^13238
- ;;^UTILITY(U,$J,358.3,10081,0)
- ;;=333.81^^44^561^13
- ;;^UTILITY(U,$J,358.3,10081,1,0)
+ ;;^UTILITY(U,$J,358.3,9926,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Left Eye,Severe Stage
+ ;;^UTILITY(U,$J,358.3,9926,1,4,0)
+ ;;=4^H40.2223
+ ;;^UTILITY(U,$J,358.3,9926,2)
+ ;;=^5133501
+ ;;^UTILITY(U,$J,358.3,9927,0)
+ ;;=H40.2224^^44^496^18
+ ;;^UTILITY(U,$J,358.3,9927,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10081,1,3,0)
- ;;=3^Blepharospasm
- ;;^UTILITY(U,$J,358.3,10081,1,4,0)
- ;;=4^333.81
- ;;^UTILITY(U,$J,358.3,10081,2)
- ;;=Blepharospasm^15293
- ;;^UTILITY(U,$J,358.3,10082,0)
- ;;=437.9^^44^561^21
- ;;^UTILITY(U,$J,358.3,10082,1,0)
+ ;;^UTILITY(U,$J,358.3,9927,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Left Eye,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,9927,1,4,0)
+ ;;=4^H40.2224
+ ;;^UTILITY(U,$J,358.3,9927,2)
+ ;;=^5005830
+ ;;^UTILITY(U,$J,358.3,9928,0)
+ ;;=H40.2231^^44^496^15
+ ;;^UTILITY(U,$J,358.3,9928,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10082,1,3,0)
- ;;=3^Cerebrovascular Dis
- ;;^UTILITY(U,$J,358.3,10082,1,4,0)
- ;;=4^437.9
- ;;^UTILITY(U,$J,358.3,10082,2)
- ;;=Cerebrovascular Dis^21803
- ;;^UTILITY(U,$J,358.3,10083,0)
- ;;=368.2^^44^561^29
- ;;^UTILITY(U,$J,358.3,10083,1,0)
+ ;;^UTILITY(U,$J,358.3,9928,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Bilateral,Mild Stage
+ ;;^UTILITY(U,$J,358.3,9928,1,4,0)
+ ;;=4^H40.2231
+ ;;^UTILITY(U,$J,358.3,9928,2)
+ ;;=^5005832
+ ;;^UTILITY(U,$J,358.3,9929,0)
+ ;;=H40.2232^^44^496^16
+ ;;^UTILITY(U,$J,358.3,9929,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10083,1,3,0)
- ;;=3^Diplopia
- ;;^UTILITY(U,$J,358.3,10083,1,4,0)
- ;;=4^368.2
- ;;^UTILITY(U,$J,358.3,10083,2)
- ;;=Diplopia^35208
- ;;^UTILITY(U,$J,358.3,10084,0)
- ;;=350.9^^44^561^38
- ;;^UTILITY(U,$J,358.3,10084,1,0)
+ ;;^UTILITY(U,$J,358.3,9929,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Bilateral,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,9929,1,4,0)
+ ;;=4^H40.2232
+ ;;^UTILITY(U,$J,358.3,9929,2)
+ ;;=^5005833
+ ;;^UTILITY(U,$J,358.3,9930,0)
+ ;;=H40.2233^^44^496^17
+ ;;^UTILITY(U,$J,358.3,9930,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10084,1,3,0)
- ;;=3^Fifth Nerve Paresis
- ;;^UTILITY(U,$J,358.3,10084,1,4,0)
- ;;=4^350.9
- ;;^UTILITY(U,$J,358.3,10084,2)
- ;;=Fifth Nerve Palsy^265329
- ;;^UTILITY(U,$J,358.3,10085,0)
- ;;=379.50^^44^561^72
- ;;^UTILITY(U,$J,358.3,10085,1,0)
+ ;;^UTILITY(U,$J,358.3,9930,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Bilateral,Severe Stage
+ ;;^UTILITY(U,$J,358.3,9930,1,4,0)
+ ;;=4^H40.2233
+ ;;^UTILITY(U,$J,358.3,9930,2)
+ ;;=^5005834
+ ;;^UTILITY(U,$J,358.3,9931,0)
+ ;;=H40.2234^^44^496^14
+ ;;^UTILITY(U,$J,358.3,9931,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10085,1,3,0)
- ;;=3^Nystagmus,Unspec
- ;;^UTILITY(U,$J,358.3,10085,1,4,0)
- ;;=4^379.50
- ;;^UTILITY(U,$J,358.3,10085,2)
- ;;=Nystagmus^84761
- ;;^UTILITY(U,$J,358.3,10086,0)
- ;;=802.6^^44^561^95
- ;;^UTILITY(U,$J,358.3,10086,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10086,1,3,0)
- ;;=3^Orbital Floor Fracture
- ;;^UTILITY(U,$J,358.3,10086,1,4,0)
- ;;=4^802.6
- ;;^UTILITY(U,$J,358.3,10086,2)
- ;;=Orbital Floor Fracture^273684
- ;;^UTILITY(U,$J,358.3,10087,0)
- ;;=192.0^^44^561^26
+ ;;^UTILITY(U,$J,358.3,9931,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Bilateral,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,9931,1,4,0)
+ ;;=4^H40.2234

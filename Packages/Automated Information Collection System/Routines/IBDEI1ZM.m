@@ -1,120 +1,142 @@
-IBDEI1ZM ; ; 06-AUG-2015
+IBDEI1ZM ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34807,0)
- ;;=S42.465S^^183^2023^78
- ;;^UTILITY(U,$J,358.3,34807,1,0)
+ ;;^UTILITY(U,$J,358.3,33723,2)
+ ;;=^5015689
+ ;;^UTILITY(U,$J,358.3,33724,0)
+ ;;=N40.1^^131^1676^29
+ ;;^UTILITY(U,$J,358.3,33724,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34807,1,3,0)
- ;;=3^Nondisp fx of medial condyle of left humerus, sequela
- ;;^UTILITY(U,$J,358.3,34807,1,4,0)
- ;;=4^S42.465S
- ;;^UTILITY(U,$J,358.3,34807,2)
- ;;=^5027566
- ;;^UTILITY(U,$J,358.3,34808,0)
- ;;=S42.464S^^183^2023^79
- ;;^UTILITY(U,$J,358.3,34808,1,0)
+ ;;^UTILITY(U,$J,358.3,33724,1,3,0)
+ ;;=3^Enlarged Prostate w/ Lower Urinary Tract Symptoms
+ ;;^UTILITY(U,$J,358.3,33724,1,4,0)
+ ;;=4^N40.1
+ ;;^UTILITY(U,$J,358.3,33724,2)
+ ;;=^5015690
+ ;;^UTILITY(U,$J,358.3,33725,0)
+ ;;=N41.0^^131^1676^82
+ ;;^UTILITY(U,$J,358.3,33725,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34808,1,3,0)
- ;;=3^Nondisp fx of medial condyle of right humerus, sequela
- ;;^UTILITY(U,$J,358.3,34808,1,4,0)
- ;;=4^S42.464S
- ;;^UTILITY(U,$J,358.3,34808,2)
- ;;=^5027559
- ;;^UTILITY(U,$J,358.3,34809,0)
- ;;=S42.335S^^183^2023^85
- ;;^UTILITY(U,$J,358.3,34809,1,0)
+ ;;^UTILITY(U,$J,358.3,33725,1,3,0)
+ ;;=3^Prostatitis,Acute
+ ;;^UTILITY(U,$J,358.3,33725,1,4,0)
+ ;;=4^N41.0
+ ;;^UTILITY(U,$J,358.3,33725,2)
+ ;;=^259106
+ ;;^UTILITY(U,$J,358.3,33726,0)
+ ;;=N45.1^^131^1676^31
+ ;;^UTILITY(U,$J,358.3,33726,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34809,1,3,0)
- ;;=3^Nondisp fx of oblique shaft of humerus, left arm, sequela 
- ;;^UTILITY(U,$J,358.3,34809,1,4,0)
- ;;=4^S42.335S
- ;;^UTILITY(U,$J,358.3,34809,2)
- ;;=^5027139
- ;;^UTILITY(U,$J,358.3,34810,0)
- ;;=S42.334S^^183^2023^86
- ;;^UTILITY(U,$J,358.3,34810,1,0)
+ ;;^UTILITY(U,$J,358.3,33726,1,3,0)
+ ;;=3^Epididymitis
+ ;;^UTILITY(U,$J,358.3,33726,1,4,0)
+ ;;=4^N45.1
+ ;;^UTILITY(U,$J,358.3,33726,2)
+ ;;=^41396
+ ;;^UTILITY(U,$J,358.3,33727,0)
+ ;;=N45.2^^131^1676^74
+ ;;^UTILITY(U,$J,358.3,33727,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34810,1,3,0)
- ;;=3^Nondisp fx of oblique shaft of humerus, right arm, sequela
- ;;^UTILITY(U,$J,358.3,34810,1,4,0)
- ;;=4^S42.334S
- ;;^UTILITY(U,$J,358.3,34810,2)
- ;;=^5027132
- ;;^UTILITY(U,$J,358.3,34811,0)
- ;;=S42.365S^^183^2023^87
- ;;^UTILITY(U,$J,358.3,34811,1,0)
+ ;;^UTILITY(U,$J,358.3,33727,1,3,0)
+ ;;=3^Orchitis
+ ;;^UTILITY(U,$J,358.3,33727,1,4,0)
+ ;;=4^N45.2
+ ;;^UTILITY(U,$J,358.3,33727,2)
+ ;;=^86174
+ ;;^UTILITY(U,$J,358.3,33728,0)
+ ;;=N45.3^^131^1676^32
+ ;;^UTILITY(U,$J,358.3,33728,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34811,1,3,0)
- ;;=3^Nondisp fx of segmental shaft of humerus, left arm, sequela
- ;;^UTILITY(U,$J,358.3,34811,1,4,0)
- ;;=4^S42.365S
- ;;^UTILITY(U,$J,358.3,34811,2)
- ;;=^5027265
- ;;^UTILITY(U,$J,358.3,34812,0)
- ;;=S42.364S^^183^2023^88
- ;;^UTILITY(U,$J,358.3,34812,1,0)
+ ;;^UTILITY(U,$J,358.3,33728,1,3,0)
+ ;;=3^Epididymo-orchitis
+ ;;^UTILITY(U,$J,358.3,33728,1,4,0)
+ ;;=4^N45.3
+ ;;^UTILITY(U,$J,358.3,33728,2)
+ ;;=^5015707
+ ;;^UTILITY(U,$J,358.3,33729,0)
+ ;;=N47.2^^131^1676^76
+ ;;^UTILITY(U,$J,358.3,33729,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34812,1,3,0)
- ;;=3^Nondisp fx of segmental shaft of humerus, right arm, sequela
- ;;^UTILITY(U,$J,358.3,34812,1,4,0)
- ;;=4^S42.364S
- ;;^UTILITY(U,$J,358.3,34812,2)
- ;;=^5027258
- ;;^UTILITY(U,$J,358.3,34813,0)
- ;;=S42.415S^^183^2023^91
- ;;^UTILITY(U,$J,358.3,34813,1,0)
+ ;;^UTILITY(U,$J,358.3,33729,1,3,0)
+ ;;=3^Paraphimosis
+ ;;^UTILITY(U,$J,358.3,33729,1,4,0)
+ ;;=4^N47.2
+ ;;^UTILITY(U,$J,358.3,33729,2)
+ ;;=^90023
+ ;;^UTILITY(U,$J,358.3,33730,0)
+ ;;=N47.1^^131^1676^78
+ ;;^UTILITY(U,$J,358.3,33730,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34813,1,3,0)
- ;;=3^Nondisp fx of simple suprcndl w/o intrcndl fx left humerus, sequela
- ;;^UTILITY(U,$J,358.3,34813,1,4,0)
- ;;=4^S42.415S
- ;;^UTILITY(U,$J,358.3,34813,2)
- ;;=^5027335
- ;;^UTILITY(U,$J,358.3,34814,0)
- ;;=S42.414S^^183^2023^92
- ;;^UTILITY(U,$J,358.3,34814,1,0)
+ ;;^UTILITY(U,$J,358.3,33730,1,3,0)
+ ;;=3^Phimosis
+ ;;^UTILITY(U,$J,358.3,33730,1,4,0)
+ ;;=4^N47.1
+ ;;^UTILITY(U,$J,358.3,33730,2)
+ ;;=^93340
+ ;;^UTILITY(U,$J,358.3,33731,0)
+ ;;=N47.3^^131^1676^24
+ ;;^UTILITY(U,$J,358.3,33731,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34814,1,3,0)
- ;;=3^Nondisp fx of simple suprcndl w/o intrcndl fx right humerus, sequela
- ;;^UTILITY(U,$J,358.3,34814,1,4,0)
- ;;=4^S42.414S
- ;;^UTILITY(U,$J,358.3,34814,2)
- ;;=^5027328
- ;;^UTILITY(U,$J,358.3,34815,0)
- ;;=S42.345S^^183^2023^93
- ;;^UTILITY(U,$J,358.3,34815,1,0)
+ ;;^UTILITY(U,$J,358.3,33731,1,3,0)
+ ;;=3^Deficient Foreskin
+ ;;^UTILITY(U,$J,358.3,33731,1,4,0)
+ ;;=4^N47.3
+ ;;^UTILITY(U,$J,358.3,33731,2)
+ ;;=^5015726
+ ;;^UTILITY(U,$J,358.3,33732,0)
+ ;;=N47.5^^131^1676^1
+ ;;^UTILITY(U,$J,358.3,33732,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34815,1,3,0)
- ;;=3^Nondisp fx of spiral shaft of humerus, left arm, sequela   
- ;;^UTILITY(U,$J,358.3,34815,1,4,0)
- ;;=4^S42.345S
- ;;^UTILITY(U,$J,358.3,34815,2)
- ;;=^5027181
- ;;^UTILITY(U,$J,358.3,34816,0)
- ;;=S42.344S^^183^2023^94
- ;;^UTILITY(U,$J,358.3,34816,1,0)
+ ;;^UTILITY(U,$J,358.3,33732,1,3,0)
+ ;;=3^Adhesions Prepuce & Glans Penis
+ ;;^UTILITY(U,$J,358.3,33732,1,4,0)
+ ;;=4^N47.5
+ ;;^UTILITY(U,$J,358.3,33732,2)
+ ;;=^5015728
+ ;;^UTILITY(U,$J,358.3,33733,0)
+ ;;=N47.4^^131^1676^19
+ ;;^UTILITY(U,$J,358.3,33733,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34816,1,3,0)
- ;;=3^Nondisp fx of spiral shaft of humerus, right arm, sequela  
- ;;^UTILITY(U,$J,358.3,34816,1,4,0)
- ;;=4^S42.344S
- ;;^UTILITY(U,$J,358.3,34816,2)
- ;;=^5027174
- ;;^UTILITY(U,$J,358.3,34817,0)
- ;;=S42.475S^^183^2023^97
- ;;^UTILITY(U,$J,358.3,34817,1,0)
+ ;;^UTILITY(U,$J,358.3,33733,1,3,0)
+ ;;=3^Cyst of Prepuce,Benign
+ ;;^UTILITY(U,$J,358.3,33733,1,4,0)
+ ;;=4^N47.4
+ ;;^UTILITY(U,$J,358.3,33733,2)
+ ;;=^5015727
+ ;;^UTILITY(U,$J,358.3,33734,0)
+ ;;=N47.8^^131^1676^25
+ ;;^UTILITY(U,$J,358.3,33734,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34817,1,3,0)
- ;;=3^Nondisp fx of transcondylar of left humerus, sequela 
- ;;^UTILITY(U,$J,358.3,34817,1,4,0)
- ;;=4^S42.475S
- ;;^UTILITY(U,$J,358.3,34817,2)
- ;;=^5027608
- ;;^UTILITY(U,$J,358.3,34818,0)
- ;;=S42.474S^^183^2023^98
- ;;^UTILITY(U,$J,358.3,34818,1,0)
+ ;;^UTILITY(U,$J,358.3,33734,1,3,0)
+ ;;=3^Disorders of Prepuce
+ ;;^UTILITY(U,$J,358.3,33734,1,4,0)
+ ;;=4^N47.8
+ ;;^UTILITY(U,$J,358.3,33734,2)
+ ;;=^5015730
+ ;;^UTILITY(U,$J,358.3,33735,0)
+ ;;=N47.7^^131^1676^58
+ ;;^UTILITY(U,$J,358.3,33735,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34818,1,3,0)
- ;;=3^Nondisp fx of transcondylar of right humerus, sequela 
+ ;;^UTILITY(U,$J,358.3,33735,1,3,0)
+ ;;=3^Inflammatory Diseases of Prepuce
+ ;;^UTILITY(U,$J,358.3,33735,1,4,0)
+ ;;=4^N47.7
+ ;;^UTILITY(U,$J,358.3,33735,2)
+ ;;=^5015729
+ ;;^UTILITY(U,$J,358.3,33736,0)
+ ;;=N47.6^^131^1676^3
+ ;;^UTILITY(U,$J,358.3,33736,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33736,1,3,0)
+ ;;=3^Balanoposthitis
+ ;;^UTILITY(U,$J,358.3,33736,1,4,0)
+ ;;=4^N47.6
+ ;;^UTILITY(U,$J,358.3,33736,2)
+ ;;=^12530
+ ;;^UTILITY(U,$J,358.3,33737,0)
+ ;;=N48.1^^131^1676^2
+ ;;^UTILITY(U,$J,358.3,33737,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33737,1,3,0)
+ ;;=3^Balanitis

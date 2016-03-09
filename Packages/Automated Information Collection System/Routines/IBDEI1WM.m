@@ -1,142 +1,120 @@
-IBDEI1WM ; ; 06-AUG-2015
+IBDEI1WM ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33485,0)
- ;;=R53.0^^182^2004^109
- ;;^UTILITY(U,$J,358.3,33485,1,0)
+ ;;^UTILITY(U,$J,358.3,32314,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33485,1,3,0)
- ;;=3^Malig Neop Related Fatigue
- ;;^UTILITY(U,$J,358.3,33485,1,4,0)
- ;;=4^R53.0
- ;;^UTILITY(U,$J,358.3,33485,2)
- ;;=^5019515
- ;;^UTILITY(U,$J,358.3,33486,0)
- ;;=R53.83^^182^2004^67
- ;;^UTILITY(U,$J,358.3,33486,1,0)
+ ;;^UTILITY(U,$J,358.3,32314,1,3,0)
+ ;;=3^Disp extrartic fx rt calcaneus, subs w/ nonunion, oth
+ ;;^UTILITY(U,$J,358.3,32314,1,4,0)
+ ;;=4^S92.051K
+ ;;^UTILITY(U,$J,358.3,32314,2)
+ ;;=^5044511
+ ;;^UTILITY(U,$J,358.3,32315,0)
+ ;;=S92.045K^^126^1609^360
+ ;;^UTILITY(U,$J,358.3,32315,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33486,1,3,0)
- ;;=3^Fatigue NEC
- ;;^UTILITY(U,$J,358.3,33486,1,4,0)
- ;;=4^R53.83
- ;;^UTILITY(U,$J,358.3,33486,2)
- ;;=^5019520
- ;;^UTILITY(U,$J,358.3,33487,0)
- ;;=R53.1^^182^2004^157
- ;;^UTILITY(U,$J,358.3,33487,1,0)
+ ;;^UTILITY(U,$J,358.3,32315,1,3,0)
+ ;;=3^Nondisp fx tuberosity lft calcaneus, subs w/ nonunion, oth
+ ;;^UTILITY(U,$J,358.3,32315,1,4,0)
+ ;;=4^S92.045K
+ ;;^UTILITY(U,$J,358.3,32315,2)
+ ;;=^5137564
+ ;;^UTILITY(U,$J,358.3,32316,0)
+ ;;=S92.044K^^126^1609^361
+ ;;^UTILITY(U,$J,358.3,32316,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33487,1,3,0)
- ;;=3^Weakness
- ;;^UTILITY(U,$J,358.3,33487,1,4,0)
- ;;=4^R53.1
- ;;^UTILITY(U,$J,358.3,33487,2)
- ;;=^5019516
- ;;^UTILITY(U,$J,358.3,33488,0)
- ;;=R53.81^^182^2004^108
- ;;^UTILITY(U,$J,358.3,33488,1,0)
+ ;;^UTILITY(U,$J,358.3,32316,1,3,0)
+ ;;=3^Nondisp fx tuberosity rt calcaneu, subs w/ nonunion, oth
+ ;;^UTILITY(U,$J,358.3,32316,1,4,0)
+ ;;=4^S92.044K
+ ;;^UTILITY(U,$J,358.3,32316,2)
+ ;;=^5044504
+ ;;^UTILITY(U,$J,358.3,32317,0)
+ ;;=S92.042K^^126^1609^134
+ ;;^UTILITY(U,$J,358.3,32317,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33488,1,3,0)
- ;;=3^Malaise NEC
- ;;^UTILITY(U,$J,358.3,33488,1,4,0)
- ;;=4^R53.81
- ;;^UTILITY(U,$J,358.3,33488,2)
- ;;=^5019518
- ;;^UTILITY(U,$J,358.3,33489,0)
- ;;=R53.82^^182^2004^47
- ;;^UTILITY(U,$J,358.3,33489,1,0)
+ ;;^UTILITY(U,$J,358.3,32317,1,3,0)
+ ;;=3^Disp fx tuberosity lft calcaneus, subs w/ nonunion, oth
+ ;;^UTILITY(U,$J,358.3,32317,1,4,0)
+ ;;=4^S92.042K
+ ;;^UTILITY(U,$J,358.3,32317,2)
+ ;;=^5137550
+ ;;^UTILITY(U,$J,358.3,32318,0)
+ ;;=S92.041K^^126^1609^135
+ ;;^UTILITY(U,$J,358.3,32318,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33489,1,3,0)
- ;;=3^Chronic Fatigue,Unspec
- ;;^UTILITY(U,$J,358.3,33489,1,4,0)
- ;;=4^R53.82
- ;;^UTILITY(U,$J,358.3,33489,2)
- ;;=^5019519
- ;;^UTILITY(U,$J,358.3,33490,0)
- ;;=R54.^^182^2004^31
- ;;^UTILITY(U,$J,358.3,33490,1,0)
+ ;;^UTILITY(U,$J,358.3,32318,1,3,0)
+ ;;=3^Disp fx tuberosity rt calcaneus, subs w/ nonunion, oth
+ ;;^UTILITY(U,$J,358.3,32318,1,4,0)
+ ;;=4^S92.041K
+ ;;^UTILITY(U,$J,358.3,32318,2)
+ ;;=^5044497
+ ;;^UTILITY(U,$J,358.3,32319,0)
+ ;;=M84.675K^^126^1609^404
+ ;;^UTILITY(U,$J,358.3,32319,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33490,1,3,0)
- ;;=3^Age-Related Physical Debility
- ;;^UTILITY(U,$J,358.3,33490,1,4,0)
- ;;=4^R54.
- ;;^UTILITY(U,$J,358.3,33490,2)
- ;;=^5019521
- ;;^UTILITY(U,$J,358.3,33491,0)
- ;;=R60.0^^182^2004^60
- ;;^UTILITY(U,$J,358.3,33491,1,0)
+ ;;^UTILITY(U,$J,358.3,32319,1,3,0)
+ ;;=3^Path fx lft ft, subs w/ nonunion, oth disease
+ ;;^UTILITY(U,$J,358.3,32319,1,4,0)
+ ;;=4^M84.675K
+ ;;^UTILITY(U,$J,358.3,32319,2)
+ ;;=^5134042
+ ;;^UTILITY(U,$J,358.3,32320,0)
+ ;;=M84.674K^^126^1609^417
+ ;;^UTILITY(U,$J,358.3,32320,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33491,1,3,0)
- ;;=3^Edema,Localized
- ;;^UTILITY(U,$J,358.3,33491,1,4,0)
- ;;=4^R60.0
- ;;^UTILITY(U,$J,358.3,33491,2)
- ;;=^5019532
- ;;^UTILITY(U,$J,358.3,33492,0)
- ;;=R60.1^^182^2004^59
- ;;^UTILITY(U,$J,358.3,33492,1,0)
+ ;;^UTILITY(U,$J,358.3,32320,1,3,0)
+ ;;=3^Path fx rt ft, subs w/ nonunion, oth disease
+ ;;^UTILITY(U,$J,358.3,32320,1,4,0)
+ ;;=4^M84.674K
+ ;;^UTILITY(U,$J,358.3,32320,2)
+ ;;=^5014301
+ ;;^UTILITY(U,$J,358.3,32321,0)
+ ;;=M84.68XK^^126^1609^420
+ ;;^UTILITY(U,$J,358.3,32321,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33492,1,3,0)
- ;;=3^Edema,Generalized
- ;;^UTILITY(U,$J,358.3,33492,1,4,0)
- ;;=4^R60.1
- ;;^UTILITY(U,$J,358.3,33492,2)
- ;;=^5019533
- ;;^UTILITY(U,$J,358.3,33493,0)
- ;;=R60.9^^182^2004^61
- ;;^UTILITY(U,$J,358.3,33493,1,0)
+ ;;^UTILITY(U,$J,358.3,32321,1,3,0)
+ ;;=3^Path fx subs w/ nonunion, oth disease, oth site
+ ;;^UTILITY(U,$J,358.3,32321,1,4,0)
+ ;;=4^M84.68XK
+ ;;^UTILITY(U,$J,358.3,32321,2)
+ ;;=^5134054
+ ;;^UTILITY(U,$J,358.3,32322,0)
+ ;;=S82.65XN^^126^1609^268
+ ;;^UTILITY(U,$J,358.3,32322,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33493,1,3,0)
- ;;=3^Edema,Unspec
- ;;^UTILITY(U,$J,358.3,33493,1,4,0)
- ;;=4^R60.9
- ;;^UTILITY(U,$J,358.3,33493,2)
- ;;=^5019534
- ;;^UTILITY(U,$J,358.3,33494,0)
- ;;=R61.^^182^2004^81
- ;;^UTILITY(U,$J,358.3,33494,1,0)
+ ;;^UTILITY(U,$J,358.3,32322,1,3,0)
+ ;;=3^Nondisp fx ltrl lmall lft fib, subs for opn fx type IIIA/B/C w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32322,1,4,0)
+ ;;=4^S82.65XN
+ ;;^UTILITY(U,$J,358.3,32322,2)
+ ;;=^5042386
+ ;;^UTILITY(U,$J,358.3,32323,0)
+ ;;=S82.65XM^^126^1609^269
+ ;;^UTILITY(U,$J,358.3,32323,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33494,1,3,0)
- ;;=3^Hyperhidrosis,Generalized
- ;;^UTILITY(U,$J,358.3,33494,1,4,0)
- ;;=4^R61.
- ;;^UTILITY(U,$J,358.3,33494,2)
- ;;=^331970
- ;;^UTILITY(U,$J,358.3,33495,0)
- ;;=R63.0^^182^2004^34
- ;;^UTILITY(U,$J,358.3,33495,1,0)
+ ;;^UTILITY(U,$J,358.3,32323,1,3,0)
+ ;;=3^Nondisp fx ltrl mall lft fib, subs for opn fx type I/II w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32323,1,4,0)
+ ;;=4^S82.65XM
+ ;;^UTILITY(U,$J,358.3,32323,2)
+ ;;=^5042385
+ ;;^UTILITY(U,$J,358.3,32324,0)
+ ;;=S82.65XK^^126^1609^270
+ ;;^UTILITY(U,$J,358.3,32324,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33495,1,3,0)
- ;;=3^Anorexia
- ;;^UTILITY(U,$J,358.3,33495,1,4,0)
- ;;=4^R63.0
- ;;^UTILITY(U,$J,358.3,33495,2)
- ;;=^7939
- ;;^UTILITY(U,$J,358.3,33496,0)
- ;;=R63.1^^182^2004^132
- ;;^UTILITY(U,$J,358.3,33496,1,0)
+ ;;^UTILITY(U,$J,358.3,32324,1,3,0)
+ ;;=3^Nondisp fx ltrl mall lft fib, subs for clos fx w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32324,1,4,0)
+ ;;=4^S82.65XK
+ ;;^UTILITY(U,$J,358.3,32324,2)
+ ;;=^5042384
+ ;;^UTILITY(U,$J,358.3,32325,0)
+ ;;=S82.64XN^^126^1609^272
+ ;;^UTILITY(U,$J,358.3,32325,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33496,1,3,0)
- ;;=3^Polydipsia
- ;;^UTILITY(U,$J,358.3,33496,1,4,0)
- ;;=4^R63.1
- ;;^UTILITY(U,$J,358.3,33496,2)
- ;;=^186699
- ;;^UTILITY(U,$J,358.3,33497,0)
- ;;=R63.2^^182^2004^133
- ;;^UTILITY(U,$J,358.3,33497,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33497,1,3,0)
- ;;=3^Polyphagia
- ;;^UTILITY(U,$J,358.3,33497,1,4,0)
- ;;=4^R63.2
- ;;^UTILITY(U,$J,358.3,33497,2)
- ;;=^5019540
- ;;^UTILITY(U,$J,358.3,33498,0)
- ;;=R63.3^^182^2004^68
- ;;^UTILITY(U,$J,358.3,33498,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33498,1,3,0)
- ;;=3^Feeding Difficulties
- ;;^UTILITY(U,$J,358.3,33498,1,4,0)
- ;;=4^R63.3
+ ;;^UTILITY(U,$J,358.3,32325,1,3,0)
+ ;;=3^Nondisp fx ltrl mall rt fib, subs for opn fx type IIIA/B/C w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32325,1,4,0)
+ ;;=4^S82.64XN

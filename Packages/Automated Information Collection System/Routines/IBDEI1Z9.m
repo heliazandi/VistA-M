@@ -1,122 +1,136 @@
-IBDEI1Z9 ; ; 06-AUG-2015
+IBDEI1Z9 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34652,1,4,0)
- ;;=4^S62.630S
- ;;^UTILITY(U,$J,358.3,34652,2)
- ;;=^5034598
- ;;^UTILITY(U,$J,358.3,34653,0)
- ;;=S62.636S^^183^2021^17
- ;;^UTILITY(U,$J,358.3,34653,1,0)
+ ;;^UTILITY(U,$J,358.3,33556,1,4,0)
+ ;;=4^E66.9
+ ;;^UTILITY(U,$J,358.3,33556,2)
+ ;;=^5002832
+ ;;^UTILITY(U,$J,358.3,33557,0)
+ ;;=E74.39^^131^1672^35
+ ;;^UTILITY(U,$J,358.3,33557,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34653,1,3,0)
- ;;=3^Disp fx of distal phalanx of right little finger, sequela
- ;;^UTILITY(U,$J,358.3,34653,1,4,0)
- ;;=4^S62.636S
- ;;^UTILITY(U,$J,358.3,34653,2)
- ;;=^5034640
- ;;^UTILITY(U,$J,358.3,34654,0)
- ;;=S62.632S^^183^2021^18
- ;;^UTILITY(U,$J,358.3,34654,1,0)
+ ;;^UTILITY(U,$J,358.3,33557,1,3,0)
+ ;;=3^Intestinal Carbohydrate Absorption Disorder NEC
+ ;;^UTILITY(U,$J,358.3,33557,1,4,0)
+ ;;=4^E74.39
+ ;;^UTILITY(U,$J,358.3,33557,2)
+ ;;=^5002928
+ ;;^UTILITY(U,$J,358.3,33558,0)
+ ;;=E83.30^^131^1672^46
+ ;;^UTILITY(U,$J,358.3,33558,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34654,1,3,0)
- ;;=3^Disp fx of distal phalanx of right middle finger, sequela
- ;;^UTILITY(U,$J,358.3,34654,1,4,0)
- ;;=4^S62.632S
- ;;^UTILITY(U,$J,358.3,34654,2)
- ;;=^5034612
- ;;^UTILITY(U,$J,358.3,34655,0)
- ;;=S62.634S^^183^2021^19
- ;;^UTILITY(U,$J,358.3,34655,1,0)
+ ;;^UTILITY(U,$J,358.3,33558,1,3,0)
+ ;;=3^Phosphorus Metabolism Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,33558,1,4,0)
+ ;;=4^E83.30
+ ;;^UTILITY(U,$J,358.3,33558,2)
+ ;;=^5002997
+ ;;^UTILITY(U,$J,358.3,33559,0)
+ ;;=E83.51^^131^1672^28
+ ;;^UTILITY(U,$J,358.3,33559,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34655,1,3,0)
- ;;=3^Disp fx of distal phalanx of right ring finger, sequela
- ;;^UTILITY(U,$J,358.3,34655,1,4,0)
- ;;=4^S62.634S
- ;;^UTILITY(U,$J,358.3,34655,2)
- ;;=^5034626
- ;;^UTILITY(U,$J,358.3,34656,0)
- ;;=S62.621S^^183^2021^21
- ;;^UTILITY(U,$J,358.3,34656,1,0)
+ ;;^UTILITY(U,$J,358.3,33559,1,3,0)
+ ;;=3^Hypocalcemia
+ ;;^UTILITY(U,$J,358.3,33559,1,4,0)
+ ;;=4^E83.51
+ ;;^UTILITY(U,$J,358.3,33559,2)
+ ;;=^60542
+ ;;^UTILITY(U,$J,358.3,33560,0)
+ ;;=E83.52^^131^1672^26
+ ;;^UTILITY(U,$J,358.3,33560,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34656,1,3,0)
- ;;=3^Disp fx of medial phalanx of left index finger, sequela
- ;;^UTILITY(U,$J,358.3,34656,1,4,0)
- ;;=4^S62.621S
- ;;^UTILITY(U,$J,358.3,34656,2)
- ;;=^5034535
- ;;^UTILITY(U,$J,358.3,34657,0)
- ;;=S62.627S^^183^2021^22
- ;;^UTILITY(U,$J,358.3,34657,1,0)
+ ;;^UTILITY(U,$J,358.3,33560,1,3,0)
+ ;;=3^Hypercalcemia
+ ;;^UTILITY(U,$J,358.3,33560,1,4,0)
+ ;;=4^E83.52
+ ;;^UTILITY(U,$J,358.3,33560,2)
+ ;;=^59932
+ ;;^UTILITY(U,$J,358.3,33561,0)
+ ;;=E87.5^^131^1672^27
+ ;;^UTILITY(U,$J,358.3,33561,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34657,1,3,0)
- ;;=3^Disp fx of medial phalanx of left little finger, sequela
- ;;^UTILITY(U,$J,358.3,34657,1,4,0)
- ;;=4^S62.627S
- ;;^UTILITY(U,$J,358.3,34657,2)
- ;;=^5034577
- ;;^UTILITY(U,$J,358.3,34658,0)
- ;;=S62.623S^^183^2021^23
- ;;^UTILITY(U,$J,358.3,34658,1,0)
+ ;;^UTILITY(U,$J,358.3,33561,1,3,0)
+ ;;=3^Hyperkalemia
+ ;;^UTILITY(U,$J,358.3,33561,1,4,0)
+ ;;=4^E87.5
+ ;;^UTILITY(U,$J,358.3,33561,2)
+ ;;=^60041
+ ;;^UTILITY(U,$J,358.3,33562,0)
+ ;;=E89.2^^131^1672^48
+ ;;^UTILITY(U,$J,358.3,33562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34658,1,3,0)
- ;;=3^Disp fx of medial phalanx of left middle finger, sequela
- ;;^UTILITY(U,$J,358.3,34658,1,4,0)
- ;;=4^S62.623S
- ;;^UTILITY(U,$J,358.3,34658,2)
- ;;=^5034549
- ;;^UTILITY(U,$J,358.3,34659,0)
- ;;=S62.625S^^183^2021^24
- ;;^UTILITY(U,$J,358.3,34659,1,0)
+ ;;^UTILITY(U,$J,358.3,33562,1,3,0)
+ ;;=3^PostProcedural Hypoparathyroidism
+ ;;^UTILITY(U,$J,358.3,33562,1,4,0)
+ ;;=4^E89.2
+ ;;^UTILITY(U,$J,358.3,33562,2)
+ ;;=^5003037
+ ;;^UTILITY(U,$J,358.3,33563,0)
+ ;;=E89.6^^131^1672^47
+ ;;^UTILITY(U,$J,358.3,33563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34659,1,3,0)
- ;;=3^Disp fx of medial phalanx of left ring finger, sequela
- ;;^UTILITY(U,$J,358.3,34659,1,4,0)
- ;;=4^S62.625S
- ;;^UTILITY(U,$J,358.3,34659,2)
- ;;=^5034563
- ;;^UTILITY(U,$J,358.3,34660,0)
- ;;=S62.620S^^183^2021^25
- ;;^UTILITY(U,$J,358.3,34660,1,0)
+ ;;^UTILITY(U,$J,358.3,33563,1,3,0)
+ ;;=3^PostProcedural Adrenocortical Hypofunction
+ ;;^UTILITY(U,$J,358.3,33563,1,4,0)
+ ;;=4^E89.6
+ ;;^UTILITY(U,$J,358.3,33563,2)
+ ;;=^5003042
+ ;;^UTILITY(U,$J,358.3,33564,0)
+ ;;=L68.0^^131^1672^25
+ ;;^UTILITY(U,$J,358.3,33564,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34660,1,3,0)
- ;;=3^Disp fx of medial phalanx of right index finger, sequela
- ;;^UTILITY(U,$J,358.3,34660,1,4,0)
- ;;=4^S62.620S
- ;;^UTILITY(U,$J,358.3,34660,2)
- ;;=^5034528
- ;;^UTILITY(U,$J,358.3,34661,0)
- ;;=S62.626S^^183^2021^26
- ;;^UTILITY(U,$J,358.3,34661,1,0)
+ ;;^UTILITY(U,$J,358.3,33564,1,3,0)
+ ;;=3^Hirsutism
+ ;;^UTILITY(U,$J,358.3,33564,1,4,0)
+ ;;=4^L68.0
+ ;;^UTILITY(U,$J,358.3,33564,2)
+ ;;=^5009262
+ ;;^UTILITY(U,$J,358.3,33565,0)
+ ;;=M80.00XA^^131^1672^2
+ ;;^UTILITY(U,$J,358.3,33565,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34661,1,3,0)
- ;;=3^Disp fx of medial phalanx of right little finger, sequela
- ;;^UTILITY(U,$J,358.3,34661,1,4,0)
- ;;=4^S62.626S
- ;;^UTILITY(U,$J,358.3,34661,2)
- ;;=^5034570
- ;;^UTILITY(U,$J,358.3,34662,0)
- ;;=S62.622S^^183^2021^27
- ;;^UTILITY(U,$J,358.3,34662,1,0)
+ ;;^UTILITY(U,$J,358.3,33565,1,3,0)
+ ;;=3^Age-Related Osteoporosis w/ Fx,Unspec Site,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33565,1,4,0)
+ ;;=4^M80.00XA
+ ;;^UTILITY(U,$J,358.3,33565,2)
+ ;;=^5013363
+ ;;^UTILITY(U,$J,358.3,33566,0)
+ ;;=M81.0^^131^1672^3
+ ;;^UTILITY(U,$J,358.3,33566,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34662,1,3,0)
- ;;=3^Disp fx of medial phalanx of right middle finger, sequela
- ;;^UTILITY(U,$J,358.3,34662,1,4,0)
- ;;=4^S62.622S
- ;;^UTILITY(U,$J,358.3,34662,2)
- ;;=^5034542
- ;;^UTILITY(U,$J,358.3,34663,0)
- ;;=S62.624S^^183^2021^28
- ;;^UTILITY(U,$J,358.3,34663,1,0)
+ ;;^UTILITY(U,$J,358.3,33566,1,3,0)
+ ;;=3^Age-Related Osteoporosis w/o Fx
+ ;;^UTILITY(U,$J,358.3,33566,1,4,0)
+ ;;=4^M81.0
+ ;;^UTILITY(U,$J,358.3,33566,2)
+ ;;=^5013555
+ ;;^UTILITY(U,$J,358.3,33567,0)
+ ;;=M85.80^^131^1672^44
+ ;;^UTILITY(U,$J,358.3,33567,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34663,1,3,0)
- ;;=3^Disp fx of medial phalanx of right ring finger, sequela
- ;;^UTILITY(U,$J,358.3,34663,1,4,0)
- ;;=4^S62.624S
- ;;^UTILITY(U,$J,358.3,34663,2)
- ;;=^5034556
- ;;^UTILITY(U,$J,358.3,34664,0)
- ;;=S62.611S^^183^2021^39
- ;;^UTILITY(U,$J,358.3,34664,1,0)
+ ;;^UTILITY(U,$J,358.3,33567,1,3,0)
+ ;;=3^Osteopenia,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33567,1,4,0)
+ ;;=4^M85.80
+ ;;^UTILITY(U,$J,358.3,33567,2)
+ ;;=^5014473
+ ;;^UTILITY(U,$J,358.3,33568,0)
+ ;;=N62.^^131^1672^24
+ ;;^UTILITY(U,$J,358.3,33568,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33568,1,3,0)
+ ;;=3^Gynecomastia
+ ;;^UTILITY(U,$J,358.3,33568,1,4,0)
+ ;;=4^N62.
+ ;;^UTILITY(U,$J,358.3,33568,2)
+ ;;=^5015790
+ ;;^UTILITY(U,$J,358.3,33569,0)
+ ;;=E10.43^^131^1672^6
+ ;;^UTILITY(U,$J,358.3,33569,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33569,1,3,0)
+ ;;=3^DM Type 1 w/ Diabetic Autonomic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,33569,1,4,0)
+ ;;=4^E10.43

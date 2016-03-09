@@ -1,138 +1,120 @@
-IBDEI196 ; ; 06-AUG-2015
+IBDEI196 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,22200,2)
- ;;=^269967
- ;;^UTILITY(U,$J,358.3,22201,0)
- ;;=491.21^^125^1389^10
- ;;^UTILITY(U,$J,358.3,22201,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22201,1,4,0)
- ;;=4^491.21
- ;;^UTILITY(U,$J,358.3,22201,1,5,0)
- ;;=5^COPD Exacerbation
- ;;^UTILITY(U,$J,358.3,22201,2)
- ;;=COPD Exacerbation^269954
- ;;^UTILITY(U,$J,358.3,22202,0)
- ;;=494.0^^125^1389^9
- ;;^UTILITY(U,$J,358.3,22202,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22202,1,4,0)
- ;;=4^494.0
- ;;^UTILITY(U,$J,358.3,22202,1,5,0)
- ;;=5^Bronchiectasis, chronic
- ;;^UTILITY(U,$J,358.3,22202,2)
- ;;=^321990
- ;;^UTILITY(U,$J,358.3,22203,0)
- ;;=494.1^^125^1389^8
- ;;^UTILITY(U,$J,358.3,22203,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22203,1,4,0)
- ;;=4^494.1
- ;;^UTILITY(U,$J,358.3,22203,1,5,0)
- ;;=5^Bronchiectasis with exacerb
- ;;^UTILITY(U,$J,358.3,22203,2)
- ;;=^321991
- ;;^UTILITY(U,$J,358.3,22204,0)
- ;;=496.^^125^1389^12
- ;;^UTILITY(U,$J,358.3,22204,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22204,1,4,0)
- ;;=4^496.
- ;;^UTILITY(U,$J,358.3,22204,1,5,0)
- ;;=5^COPD, General
- ;;^UTILITY(U,$J,358.3,22204,2)
- ;;=COPD, General^24355
- ;;^UTILITY(U,$J,358.3,22205,0)
- ;;=491.20^^125^1389^13
- ;;^UTILITY(U,$J,358.3,22205,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22205,1,4,0)
- ;;=4^491.20
- ;;^UTILITY(U,$J,358.3,22205,1,5,0)
- ;;=5^Chronic Asthmatic Bronchitis
- ;;^UTILITY(U,$J,358.3,22205,2)
- ;;=Chronic Asthmatic Bronchitis^269953
- ;;^UTILITY(U,$J,358.3,22206,0)
- ;;=491.9^^125^1389^14
- ;;^UTILITY(U,$J,358.3,22206,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22206,1,4,0)
- ;;=4^491.9
- ;;^UTILITY(U,$J,358.3,22206,1,5,0)
- ;;=5^Chronic Bronchitis
- ;;^UTILITY(U,$J,358.3,22206,2)
- ;;=^24359
- ;;^UTILITY(U,$J,358.3,22207,0)
- ;;=786.2^^125^1389^15
- ;;^UTILITY(U,$J,358.3,22207,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22207,1,4,0)
- ;;=4^786.2
- ;;^UTILITY(U,$J,358.3,22207,1,5,0)
- ;;=5^Cough
- ;;^UTILITY(U,$J,358.3,22207,2)
- ;;=Cough^28905
- ;;^UTILITY(U,$J,358.3,22208,0)
- ;;=786.09^^125^1389^16
- ;;^UTILITY(U,$J,358.3,22208,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22208,1,4,0)
- ;;=4^786.09
- ;;^UTILITY(U,$J,358.3,22208,1,5,0)
- ;;=5^Dyspnea
- ;;^UTILITY(U,$J,358.3,22208,2)
- ;;=Dyspnea^87547
- ;;^UTILITY(U,$J,358.3,22209,0)
- ;;=492.8^^125^1389^17
- ;;^UTILITY(U,$J,358.3,22209,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22209,1,4,0)
- ;;=4^492.8
- ;;^UTILITY(U,$J,358.3,22209,1,5,0)
- ;;=5^Emphysema
- ;;^UTILITY(U,$J,358.3,22209,2)
- ;;=Emphysema^87569
- ;;^UTILITY(U,$J,358.3,22210,0)
- ;;=487.1^^125^1389^24
- ;;^UTILITY(U,$J,358.3,22210,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22210,1,4,0)
- ;;=4^487.1
- ;;^UTILITY(U,$J,358.3,22210,1,5,0)
- ;;=5^Influenza with other Resp Manifest
- ;;^UTILITY(U,$J,358.3,22210,2)
- ;;=^63125
- ;;^UTILITY(U,$J,358.3,22211,0)
- ;;=487.0^^125^1389^23
- ;;^UTILITY(U,$J,358.3,22211,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22211,1,4,0)
- ;;=4^487.0
- ;;^UTILITY(U,$J,358.3,22211,1,5,0)
- ;;=5^Influenza w Pneumonia
- ;;^UTILITY(U,$J,358.3,22211,2)
- ;;=^269942
- ;;^UTILITY(U,$J,358.3,22212,0)
- ;;=515.^^125^1389^25
- ;;^UTILITY(U,$J,358.3,22212,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22212,1,4,0)
- ;;=4^515.
- ;;^UTILITY(U,$J,358.3,22212,1,5,0)
- ;;=5^Interstitial Lung disease
- ;;^UTILITY(U,$J,358.3,22212,2)
- ;;=^101072
- ;;^UTILITY(U,$J,358.3,22213,0)
- ;;=786.52^^125^1389^26
- ;;^UTILITY(U,$J,358.3,22213,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22213,1,4,0)
- ;;=4^786.52
- ;;^UTILITY(U,$J,358.3,22213,1,5,0)
- ;;=5^Painful resp, Pleurodynia
- ;;^UTILITY(U,$J,358.3,22213,2)
- ;;=^89126
- ;;^UTILITY(U,$J,358.3,22214,0)
- ;;=511.0^^125^1389^29
+ ;;^UTILITY(U,$J,358.3,21291,0)
+ ;;=W18.12XA^^84^948^61
+ ;;^UTILITY(U,$J,358.3,21291,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21291,1,3,0)
+ ;;=3^Fall from Toilet w/ Strike Against Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21291,1,4,0)
+ ;;=4^W18.12XA
+ ;;^UTILITY(U,$J,358.3,21291,2)
+ ;;=^5059804
+ ;;^UTILITY(U,$J,358.3,21292,0)
+ ;;=W18.12XD^^84^948^62
+ ;;^UTILITY(U,$J,358.3,21292,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21292,1,3,0)
+ ;;=3^Fall from Toilet w/ Strike Against Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21292,1,4,0)
+ ;;=4^W18.12XD
+ ;;^UTILITY(U,$J,358.3,21292,2)
+ ;;=^5137984
+ ;;^UTILITY(U,$J,358.3,21293,0)
+ ;;=W18.2XXA^^84^948^73
+ ;;^UTILITY(U,$J,358.3,21293,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21293,1,3,0)
+ ;;=3^Fall in Empty Shower/Bathtub,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21293,1,4,0)
+ ;;=4^W18.2XXA
+ ;;^UTILITY(U,$J,358.3,21293,2)
+ ;;=^5059806
+ ;;^UTILITY(U,$J,358.3,21294,0)
+ ;;=W18.2XXD^^84^948^74
+ ;;^UTILITY(U,$J,358.3,21294,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21294,1,3,0)
+ ;;=3^Fall in Empty Shower/Bathtub,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21294,1,4,0)
+ ;;=4^W18.2XXD
+ ;;^UTILITY(U,$J,358.3,21294,2)
+ ;;=^5059807
+ ;;^UTILITY(U,$J,358.3,21295,0)
+ ;;=W18.40XA^^84^948^105
+ ;;^UTILITY(U,$J,358.3,21295,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21295,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21295,1,4,0)
+ ;;=4^W18.40XA
+ ;;^UTILITY(U,$J,358.3,21295,2)
+ ;;=^5059818
+ ;;^UTILITY(U,$J,358.3,21296,0)
+ ;;=W18.40XD^^84^948^106
+ ;;^UTILITY(U,$J,358.3,21296,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21296,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21296,1,4,0)
+ ;;=4^W18.40XD
+ ;;^UTILITY(U,$J,358.3,21296,2)
+ ;;=^5059819
+ ;;^UTILITY(U,$J,358.3,21297,0)
+ ;;=W18.41XA^^84^948^107
+ ;;^UTILITY(U,$J,358.3,21297,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21297,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping on Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21297,1,4,0)
+ ;;=4^W18.41XA
+ ;;^UTILITY(U,$J,358.3,21297,2)
+ ;;=^5059821
+ ;;^UTILITY(U,$J,358.3,21298,0)
+ ;;=W18.41XD^^84^948^108
+ ;;^UTILITY(U,$J,358.3,21298,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21298,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping on Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21298,1,4,0)
+ ;;=4^W18.41XD
+ ;;^UTILITY(U,$J,358.3,21298,2)
+ ;;=^5059822
+ ;;^UTILITY(U,$J,358.3,21299,0)
+ ;;=W18.42XA^^84^948^109
+ ;;^UTILITY(U,$J,358.3,21299,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21299,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping into Hole,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21299,1,4,0)
+ ;;=4^W18.42XA
+ ;;^UTILITY(U,$J,358.3,21299,2)
+ ;;=^5059824
+ ;;^UTILITY(U,$J,358.3,21300,0)
+ ;;=W18.42XD^^84^948^110
+ ;;^UTILITY(U,$J,358.3,21300,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21300,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping into Hole,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21300,1,4,0)
+ ;;=4^W18.42XD
+ ;;^UTILITY(U,$J,358.3,21300,2)
+ ;;=^5059825
+ ;;^UTILITY(U,$J,358.3,21301,0)
+ ;;=W18.43XA^^84^948^103
+ ;;^UTILITY(U,$J,358.3,21301,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21301,1,3,0)
+ ;;=3^Slipping/Tripping w/o Fall d/t Step from One Level to Another,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21301,1,4,0)
+ ;;=4^W18.43XA
+ ;;^UTILITY(U,$J,358.3,21301,2)
+ ;;=^5059827
+ ;;^UTILITY(U,$J,358.3,21302,0)
+ ;;=W18.43XD^^84^948^104
+ ;;^UTILITY(U,$J,358.3,21302,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21302,1,3,0)
+ ;;=3^Slipping/Tripping w/o Fall d/t Step from One Level to Another,Subs Encntr

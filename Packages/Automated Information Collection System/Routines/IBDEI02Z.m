@@ -1,132 +1,146 @@
-IBDEI02Z ; ; 06-AUG-2015
+IBDEI02Z ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,849,0)
- ;;=L97.512^^3^32^112
- ;;^UTILITY(U,$J,358.3,849,1,0)
+ ;;^UTILITY(U,$J,358.3,938,1,3,0)
+ ;;=3^Hemiplegia Affecting Left Dominant Side
+ ;;^UTILITY(U,$J,358.3,938,1,4,0)
+ ;;=4^G81.92
+ ;;^UTILITY(U,$J,358.3,938,2)
+ ;;=^5004122
+ ;;^UTILITY(U,$J,358.3,939,0)
+ ;;=H91.91^^6^104^6
+ ;;^UTILITY(U,$J,358.3,939,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,849,1,3,0)
- ;;=3^Non-prs chr ulcer oth prt right foot w fat layer exposed
- ;;^UTILITY(U,$J,358.3,849,1,4,0)
- ;;=4^L97.512
- ;;^UTILITY(U,$J,358.3,849,2)
- ;;=^5009546
- ;;^UTILITY(U,$J,358.3,850,0)
- ;;=L97.511^^3^32^111
- ;;^UTILITY(U,$J,358.3,850,1,0)
+ ;;^UTILITY(U,$J,358.3,939,1,3,0)
+ ;;=3^Hearing Loss,Unspec,Right Ear
+ ;;^UTILITY(U,$J,358.3,939,1,4,0)
+ ;;=4^H91.91
+ ;;^UTILITY(U,$J,358.3,939,2)
+ ;;=^5133553
+ ;;^UTILITY(U,$J,358.3,940,0)
+ ;;=H91.92^^6^104^5
+ ;;^UTILITY(U,$J,358.3,940,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,850,1,3,0)
- ;;=3^Non-prs chr ulcer oth prt r foot limited to brkdwn skin
- ;;^UTILITY(U,$J,358.3,850,1,4,0)
- ;;=4^L97.511
- ;;^UTILITY(U,$J,358.3,850,2)
- ;;=^5009545
- ;;^UTILITY(U,$J,358.3,851,0)
- ;;=L97.513^^3^32^113
- ;;^UTILITY(U,$J,358.3,851,1,0)
+ ;;^UTILITY(U,$J,358.3,940,1,3,0)
+ ;;=3^Hearing Loss,Unspec,Left Ear
+ ;;^UTILITY(U,$J,358.3,940,1,4,0)
+ ;;=4^H91.92
+ ;;^UTILITY(U,$J,358.3,940,2)
+ ;;=^5133554
+ ;;^UTILITY(U,$J,358.3,941,0)
+ ;;=H91.93^^6^104^4
+ ;;^UTILITY(U,$J,358.3,941,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,851,1,3,0)
- ;;=3^Non-prs chr ulcer oth prt right foot w necros muscle
- ;;^UTILITY(U,$J,358.3,851,1,4,0)
- ;;=4^L97.513
- ;;^UTILITY(U,$J,358.3,851,2)
- ;;=^5009547
- ;;^UTILITY(U,$J,358.3,852,0)
- ;;=L97.514^^3^32^114
- ;;^UTILITY(U,$J,358.3,852,1,0)
+ ;;^UTILITY(U,$J,358.3,941,1,3,0)
+ ;;=3^Hearing Loss,Unspec,Bilateral
+ ;;^UTILITY(U,$J,358.3,941,1,4,0)
+ ;;=4^H91.93
+ ;;^UTILITY(U,$J,358.3,941,2)
+ ;;=^5006944
+ ;;^UTILITY(U,$J,358.3,942,0)
+ ;;=I10.^^6^104^2
+ ;;^UTILITY(U,$J,358.3,942,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,852,1,3,0)
- ;;=3^Non-prs chr ulcer oth prt right foot w necrosis of bone
- ;;^UTILITY(U,$J,358.3,852,1,4,0)
- ;;=4^L97.514
- ;;^UTILITY(U,$J,358.3,852,2)
- ;;=^5009548
- ;;^UTILITY(U,$J,358.3,853,0)
- ;;=L97.519^^3^32^115
- ;;^UTILITY(U,$J,358.3,853,1,0)
+ ;;^UTILITY(U,$J,358.3,942,1,3,0)
+ ;;=3^HTN,Essential
+ ;;^UTILITY(U,$J,358.3,942,1,4,0)
+ ;;=4^I10.
+ ;;^UTILITY(U,$J,358.3,942,2)
+ ;;=^5007062
+ ;;^UTILITY(U,$J,358.3,943,0)
+ ;;=K64.8^^6^104^14
+ ;;^UTILITY(U,$J,358.3,943,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,853,1,3,0)
- ;;=3^Non-prs chr ulcer oth prt right foot w unsp severity
- ;;^UTILITY(U,$J,358.3,853,1,4,0)
- ;;=4^L97.519
- ;;^UTILITY(U,$J,358.3,853,2)
- ;;=^5009549
- ;;^UTILITY(U,$J,358.3,854,0)
- ;;=L97.521^^3^32^106
- ;;^UTILITY(U,$J,358.3,854,1,0)
+ ;;^UTILITY(U,$J,358.3,943,1,3,0)
+ ;;=3^Hemorrhoids,Other
+ ;;^UTILITY(U,$J,358.3,943,1,4,0)
+ ;;=4^K64.8
+ ;;^UTILITY(U,$J,358.3,943,2)
+ ;;=^5008774
+ ;;^UTILITY(U,$J,358.3,944,0)
+ ;;=K64.4^^6^104^13
+ ;;^UTILITY(U,$J,358.3,944,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,854,1,3,0)
- ;;=3^Non-prs chr ulcer oth prt l foot limited to brkdwn skin
- ;;^UTILITY(U,$J,358.3,854,1,4,0)
- ;;=4^L97.521
- ;;^UTILITY(U,$J,358.3,854,2)
- ;;=^5009550
- ;;^UTILITY(U,$J,358.3,855,0)
- ;;=L89.90^^3^32^125
- ;;^UTILITY(U,$J,358.3,855,1,0)
+ ;;^UTILITY(U,$J,358.3,944,1,3,0)
+ ;;=3^Hemorrhoidal Skin Tags,Residual
+ ;;^UTILITY(U,$J,358.3,944,1,4,0)
+ ;;=4^K64.4
+ ;;^UTILITY(U,$J,358.3,944,2)
+ ;;=^269834
+ ;;^UTILITY(U,$J,358.3,945,0)
+ ;;=I95.9^^6^104^30
+ ;;^UTILITY(U,$J,358.3,945,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,855,1,3,0)
- ;;=3^Pressure ulcer of unspecified site, unspecified stage
- ;;^UTILITY(U,$J,358.3,855,1,4,0)
- ;;=4^L89.90
- ;;^UTILITY(U,$J,358.3,855,2)
- ;;=^5133666
- ;;^UTILITY(U,$J,358.3,856,0)
- ;;=L89.91^^3^32^121
- ;;^UTILITY(U,$J,358.3,856,1,0)
+ ;;^UTILITY(U,$J,358.3,945,1,3,0)
+ ;;=3^Hypotension,Unspec
+ ;;^UTILITY(U,$J,358.3,945,1,4,0)
+ ;;=4^I95.9
+ ;;^UTILITY(U,$J,358.3,945,2)
+ ;;=^5008080
+ ;;^UTILITY(U,$J,358.3,946,0)
+ ;;=K73.9^^6^104^19
+ ;;^UTILITY(U,$J,358.3,946,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,856,1,3,0)
- ;;=3^Pressure ulcer of unspecified site, stage 1
- ;;^UTILITY(U,$J,358.3,856,1,4,0)
- ;;=4^L89.91
- ;;^UTILITY(U,$J,358.3,856,2)
- ;;=^5133664
- ;;^UTILITY(U,$J,358.3,857,0)
- ;;=L89.92^^3^32^122
- ;;^UTILITY(U,$J,358.3,857,1,0)
+ ;;^UTILITY(U,$J,358.3,946,1,3,0)
+ ;;=3^Hepatitis,Chr Unspec
+ ;;^UTILITY(U,$J,358.3,946,1,4,0)
+ ;;=4^K73.9
+ ;;^UTILITY(U,$J,358.3,946,2)
+ ;;=^5008815
+ ;;^UTILITY(U,$J,358.3,947,0)
+ ;;=R31.9^^6^104^7
+ ;;^UTILITY(U,$J,358.3,947,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,857,1,3,0)
- ;;=3^Pressure ulcer of unspecified site, stage 2
- ;;^UTILITY(U,$J,358.3,857,1,4,0)
- ;;=4^L89.92
- ;;^UTILITY(U,$J,358.3,857,2)
- ;;=^5133667
- ;;^UTILITY(U,$J,358.3,858,0)
- ;;=L89.93^^3^32^123
- ;;^UTILITY(U,$J,358.3,858,1,0)
+ ;;^UTILITY(U,$J,358.3,947,1,3,0)
+ ;;=3^Hematuria,Unspec
+ ;;^UTILITY(U,$J,358.3,947,1,4,0)
+ ;;=4^R31.9
+ ;;^UTILITY(U,$J,358.3,947,2)
+ ;;=^5019328
+ ;;^UTILITY(U,$J,358.3,948,0)
+ ;;=N43.3^^6^104^20
+ ;;^UTILITY(U,$J,358.3,948,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,858,1,3,0)
- ;;=3^Pressure ulcer of unspecified site, stage 3
- ;;^UTILITY(U,$J,358.3,858,1,4,0)
- ;;=4^L89.93
- ;;^UTILITY(U,$J,358.3,858,2)
- ;;=^5133668
- ;;^UTILITY(U,$J,358.3,859,0)
- ;;=L89.94^^3^32^124
- ;;^UTILITY(U,$J,358.3,859,1,0)
+ ;;^UTILITY(U,$J,358.3,948,1,3,0)
+ ;;=3^Hydrocele,Unspec
+ ;;^UTILITY(U,$J,358.3,948,1,4,0)
+ ;;=4^N43.3
+ ;;^UTILITY(U,$J,358.3,948,2)
+ ;;=^5015700
+ ;;^UTILITY(U,$J,358.3,949,0)
+ ;;=R51.^^6^104^3
+ ;;^UTILITY(U,$J,358.3,949,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,859,1,3,0)
- ;;=3^Pressure ulcer of unspecified site, stage 4
- ;;^UTILITY(U,$J,358.3,859,1,4,0)
- ;;=4^L89.94
- ;;^UTILITY(U,$J,358.3,859,2)
- ;;=^5133669
- ;;^UTILITY(U,$J,358.3,860,0)
- ;;=L89.95^^3^32^126
- ;;^UTILITY(U,$J,358.3,860,1,0)
+ ;;^UTILITY(U,$J,358.3,949,1,3,0)
+ ;;=3^Headache
+ ;;^UTILITY(U,$J,358.3,949,1,4,0)
+ ;;=4^R51.
+ ;;^UTILITY(U,$J,358.3,949,2)
+ ;;=^5019513
+ ;;^UTILITY(U,$J,358.3,950,0)
+ ;;=Z22.52^^6^104^16
+ ;;^UTILITY(U,$J,358.3,950,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,860,1,3,0)
- ;;=3^Pressure ulcer of unspecified site, unstageable
- ;;^UTILITY(U,$J,358.3,860,1,4,0)
- ;;=4^L89.95
- ;;^UTILITY(U,$J,358.3,860,2)
- ;;=^5133660
- ;;^UTILITY(U,$J,358.3,861,0)
- ;;=L50.9^^3^32^149
- ;;^UTILITY(U,$J,358.3,861,1,0)
+ ;;^UTILITY(U,$J,358.3,950,1,3,0)
+ ;;=3^Hepatitis C Carrier
+ ;;^UTILITY(U,$J,358.3,950,1,4,0)
+ ;;=4^Z22.52
+ ;;^UTILITY(U,$J,358.3,950,2)
+ ;;=^5062790
+ ;;^UTILITY(U,$J,358.3,951,0)
+ ;;=Z21.^^6^104^1
+ ;;^UTILITY(U,$J,358.3,951,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,861,1,3,0)
- ;;=3^Urticaria, unspecified
- ;;^UTILITY(U,$J,358.3,861,1,4,0)
- ;;=4^L50.9
+ ;;^UTILITY(U,$J,358.3,951,1,3,0)
+ ;;=3^HIV Status,Asymptomatic
+ ;;^UTILITY(U,$J,358.3,951,1,4,0)
+ ;;=4^Z21.
+ ;;^UTILITY(U,$J,358.3,951,2)
+ ;;=^5062777
+ ;;^UTILITY(U,$J,358.3,952,0)
+ ;;=K62.5^^6^104^12
+ ;;^UTILITY(U,$J,358.3,952,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,952,1,3,0)
+ ;;=3^Hemorrhage Anus & Rectum

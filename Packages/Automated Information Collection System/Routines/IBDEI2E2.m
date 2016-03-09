@@ -1,0 +1,132 @@
+IBDEI2E2 ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,40531,1,3,0)
+ ;;=3^Abdominal Aortic Aneurysm w/o Rupture
+ ;;^UTILITY(U,$J,358.3,40531,1,4,0)
+ ;;=4^I71.4
+ ;;^UTILITY(U,$J,358.3,40531,2)
+ ;;=^5007789
+ ;;^UTILITY(U,$J,358.3,40532,0)
+ ;;=I73.9^^159^1991^19
+ ;;^UTILITY(U,$J,358.3,40532,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40532,1,3,0)
+ ;;=3^Peripheral Vascular Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,40532,1,4,0)
+ ;;=4^I73.9
+ ;;^UTILITY(U,$J,358.3,40532,2)
+ ;;=^184182
+ ;;^UTILITY(U,$J,358.3,40533,0)
+ ;;=I82.891^^159^1991^14
+ ;;^UTILITY(U,$J,358.3,40533,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40533,1,3,0)
+ ;;=3^Embolism/Thrombosis Oth Spec Veins,Chronic
+ ;;^UTILITY(U,$J,358.3,40533,1,4,0)
+ ;;=4^I82.891
+ ;;^UTILITY(U,$J,358.3,40533,2)
+ ;;=^5007939
+ ;;^UTILITY(U,$J,358.3,40534,0)
+ ;;=I82.890^^159^1991^13
+ ;;^UTILITY(U,$J,358.3,40534,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40534,1,3,0)
+ ;;=3^Embolism/Thrombosis Oth Spec Veins,Acute
+ ;;^UTILITY(U,$J,358.3,40534,1,4,0)
+ ;;=4^I82.890
+ ;;^UTILITY(U,$J,358.3,40534,2)
+ ;;=^5007938
+ ;;^UTILITY(U,$J,358.3,40535,0)
+ ;;=E78.0^^159^1992^12
+ ;;^UTILITY(U,$J,358.3,40535,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40535,1,3,0)
+ ;;=3^Pure Hypercholesterolemia
+ ;;^UTILITY(U,$J,358.3,40535,1,4,0)
+ ;;=4^E78.0
+ ;;^UTILITY(U,$J,358.3,40535,2)
+ ;;=^5002966
+ ;;^UTILITY(U,$J,358.3,40536,0)
+ ;;=E78.1^^159^1992^13
+ ;;^UTILITY(U,$J,358.3,40536,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40536,1,3,0)
+ ;;=3^Pure Hyperglyceridemia
+ ;;^UTILITY(U,$J,358.3,40536,1,4,0)
+ ;;=4^E78.1
+ ;;^UTILITY(U,$J,358.3,40536,2)
+ ;;=^101303
+ ;;^UTILITY(U,$J,358.3,40537,0)
+ ;;=E78.2^^159^1992^11
+ ;;^UTILITY(U,$J,358.3,40537,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40537,1,3,0)
+ ;;=3^Mixed Hyperlipidemia
+ ;;^UTILITY(U,$J,358.3,40537,1,4,0)
+ ;;=4^E78.2
+ ;;^UTILITY(U,$J,358.3,40537,2)
+ ;;=^78424
+ ;;^UTILITY(U,$J,358.3,40538,0)
+ ;;=I10.^^159^1992^3
+ ;;^UTILITY(U,$J,358.3,40538,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40538,1,3,0)
+ ;;=3^Essential Primary Hypertension
+ ;;^UTILITY(U,$J,358.3,40538,1,4,0)
+ ;;=4^I10.
+ ;;^UTILITY(U,$J,358.3,40538,2)
+ ;;=^5007062
+ ;;^UTILITY(U,$J,358.3,40539,0)
+ ;;=I11.9^^159^1992^10
+ ;;^UTILITY(U,$J,358.3,40539,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40539,1,3,0)
+ ;;=3^Hypertensive Heart Disease w/o Heart Failure
+ ;;^UTILITY(U,$J,358.3,40539,1,4,0)
+ ;;=4^I11.9
+ ;;^UTILITY(U,$J,358.3,40539,2)
+ ;;=^5007064
+ ;;^UTILITY(U,$J,358.3,40540,0)
+ ;;=I11.0^^159^1992^9
+ ;;^UTILITY(U,$J,358.3,40540,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40540,1,3,0)
+ ;;=3^Hypertensive Heart Disease w/ Heart Failure
+ ;;^UTILITY(U,$J,358.3,40540,1,4,0)
+ ;;=4^I11.0
+ ;;^UTILITY(U,$J,358.3,40540,2)
+ ;;=^5007063
+ ;;^UTILITY(U,$J,358.3,40541,0)
+ ;;=I12.0^^159^1992^8
+ ;;^UTILITY(U,$J,358.3,40541,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40541,1,3,0)
+ ;;=3^Hypertensive Chr Kidney Disease w/ ESRD
+ ;;^UTILITY(U,$J,358.3,40541,1,4,0)
+ ;;=4^I12.0
+ ;;^UTILITY(U,$J,358.3,40541,2)
+ ;;=^5007065
+ ;;^UTILITY(U,$J,358.3,40542,0)
+ ;;=I13.10^^159^1992^6
+ ;;^UTILITY(U,$J,358.3,40542,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40542,1,3,0)
+ ;;=3^HTN Hrt & Chr Kdny Dis w/o Hrt Fail w/ Stg 1-4 Chr Kdny
+ ;;^UTILITY(U,$J,358.3,40542,1,4,0)
+ ;;=4^I13.10
+ ;;^UTILITY(U,$J,358.3,40542,2)
+ ;;=^5007068
+ ;;^UTILITY(U,$J,358.3,40543,0)
+ ;;=I13.0^^159^1992^4
+ ;;^UTILITY(U,$J,358.3,40543,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40543,1,3,0)
+ ;;=3^HTN Hrt & Chr Kdny Dis w/ Hrt Fail w/ Stg 1-4 Chr Kdny
+ ;;^UTILITY(U,$J,358.3,40543,1,4,0)
+ ;;=4^I13.0
+ ;;^UTILITY(U,$J,358.3,40543,2)
+ ;;=^5007067
+ ;;^UTILITY(U,$J,358.3,40544,0)
+ ;;=I13.11^^159^1992^7

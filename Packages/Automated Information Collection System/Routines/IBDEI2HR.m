@@ -1,0 +1,128 @@
+IBDEI2HR ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,42249,0)
+ ;;=S83.402A^^159^2017^4
+ ;;^UTILITY(U,$J,358.3,42249,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,42249,1,3,0)
+ ;;=3^Sprain of Left Knee Collateral Ligament
+ ;;^UTILITY(U,$J,358.3,42249,1,4,0)
+ ;;=4^S83.402A
+ ;;^UTILITY(U,$J,358.3,42249,2)
+ ;;=^5043106
+ ;;^UTILITY(U,$J,358.3,42250,0)
+ ;;=S93.402A^^159^2017^2
+ ;;^UTILITY(U,$J,358.3,42250,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,42250,1,3,0)
+ ;;=3^Sprain of Left Ankle Ligament
+ ;;^UTILITY(U,$J,358.3,42250,1,4,0)
+ ;;=4^S93.402A
+ ;;^UTILITY(U,$J,358.3,42250,2)
+ ;;=^5045777
+ ;;^UTILITY(U,$J,358.3,42251,0)
+ ;;=S93.401A^^159^2017^13
+ ;;^UTILITY(U,$J,358.3,42251,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,42251,1,3,0)
+ ;;=3^Sprain of Right Ankle Ligament
+ ;;^UTILITY(U,$J,358.3,42251,1,4,0)
+ ;;=4^S93.401A
+ ;;^UTILITY(U,$J,358.3,42251,2)
+ ;;=^5045774
+ ;;^UTILITY(U,$J,358.3,42252,0)
+ ;;=S56.511A^^159^2017^39
+ ;;^UTILITY(U,$J,358.3,42252,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,42252,1,3,0)
+ ;;=3^Strain of Right Forearm Extn Musc/Fasc/Tend
+ ;;^UTILITY(U,$J,358.3,42252,1,4,0)
+ ;;=4^S56.511A
+ ;;^UTILITY(U,$J,358.3,42252,2)
+ ;;=^5031838
+ ;;^UTILITY(U,$J,358.3,42253,0)
+ ;;=S56.512A^^159^2017^19
+ ;;^UTILITY(U,$J,358.3,42253,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,42253,1,3,0)
+ ;;=3^Strain of Left Forearm Extn Musc/Fasc/Tend
+ ;;^UTILITY(U,$J,358.3,42253,1,4,0)
+ ;;=4^S56.512A
+ ;;^UTILITY(U,$J,358.3,42253,2)
+ ;;=^5031841
+ ;;^UTILITY(U,$J,358.3,42254,0)
+ ;;=S13.8XXA^^159^2017^10
+ ;;^UTILITY(U,$J,358.3,42254,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,42254,1,3,0)
+ ;;=3^Sprain of Neck Joints/Ligaments,Init Encntr
+ ;;^UTILITY(U,$J,358.3,42254,1,4,0)
+ ;;=4^S13.8XXA
+ ;;^UTILITY(U,$J,358.3,42254,2)
+ ;;=^5022034
+ ;;^UTILITY(U,$J,358.3,42255,0)
+ ;;=S16.1XXA^^159^2017^37
+ ;;^UTILITY(U,$J,358.3,42255,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,42255,1,3,0)
+ ;;=3^Strain of Neck Muscle/Fasc/Tendon,Init Encntr
+ ;;^UTILITY(U,$J,358.3,42255,1,4,0)
+ ;;=4^S16.1XXA
+ ;;^UTILITY(U,$J,358.3,42255,2)
+ ;;=^5022358
+ ;;^UTILITY(U,$J,358.3,42256,0)
+ ;;=S33.5XXA^^159^2017^8
+ ;;^UTILITY(U,$J,358.3,42256,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,42256,1,3,0)
+ ;;=3^Sprain of Lumbar Spine Ligaments,Init Encntr
+ ;;^UTILITY(U,$J,358.3,42256,1,4,0)
+ ;;=4^S33.5XXA
+ ;;^UTILITY(U,$J,358.3,42256,2)
+ ;;=^5025172
+ ;;^UTILITY(U,$J,358.3,42257,0)
+ ;;=F10.20^^159^2018^4
+ ;;^UTILITY(U,$J,358.3,42257,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,42257,1,3,0)
+ ;;=3^Alcohol Dependence,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,42257,1,4,0)
+ ;;=4^F10.20
+ ;;^UTILITY(U,$J,358.3,42257,2)
+ ;;=^5003081
+ ;;^UTILITY(U,$J,358.3,42258,0)
+ ;;=F11.29^^159^2018^46
+ ;;^UTILITY(U,$J,358.3,42258,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,42258,1,3,0)
+ ;;=3^Opioid Dependence w/ Unspec Opioid-Induced Disorder
+ ;;^UTILITY(U,$J,358.3,42258,1,4,0)
+ ;;=4^F11.29
+ ;;^UTILITY(U,$J,358.3,42258,2)
+ ;;=^5003141
+ ;;^UTILITY(U,$J,358.3,42259,0)
+ ;;=F11.288^^159^2018^45
+ ;;^UTILITY(U,$J,358.3,42259,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,42259,1,3,0)
+ ;;=3^Opioid Dependence w/ Other Opioid-Induced Disorder
+ ;;^UTILITY(U,$J,358.3,42259,1,4,0)
+ ;;=4^F11.288
+ ;;^UTILITY(U,$J,358.3,42259,2)
+ ;;=^5003140
+ ;;^UTILITY(U,$J,358.3,42260,0)
+ ;;=F11.282^^159^2018^44
+ ;;^UTILITY(U,$J,358.3,42260,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,42260,1,3,0)
+ ;;=3^Opioid Dependence w/ Opioid-Induced Sleep Disorder
+ ;;^UTILITY(U,$J,358.3,42260,1,4,0)
+ ;;=4^F11.282
+ ;;^UTILITY(U,$J,358.3,42260,2)
+ ;;=^5003139
+ ;;^UTILITY(U,$J,358.3,42261,0)
+ ;;=F11.281^^159^2018^43
+ ;;^UTILITY(U,$J,358.3,42261,1,0)
+ ;;=^358.31IA^4^2

@@ -1,138 +1,140 @@
-IBDEI01P ; ; 06-AUG-2015
+IBDEI01P ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,238,1,3,0)
- ;;=3^Adjust/Mgmt of Bone Conduction Device
- ;;^UTILITY(U,$J,358.3,238,1,4,0)
- ;;=4^Z45.320
- ;;^UTILITY(U,$J,358.3,238,2)
- ;;=^5063001
- ;;^UTILITY(U,$J,358.3,239,0)
- ;;=Z45.321^^1^11^2
- ;;^UTILITY(U,$J,358.3,239,1,0)
+ ;;^UTILITY(U,$J,358.3,300,0)
+ ;;=T50.905D^^3^34^3
+ ;;^UTILITY(U,$J,358.3,300,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,239,1,3,0)
- ;;=3^Adjust/Mgmt of Cochlear Device
- ;;^UTILITY(U,$J,358.3,239,1,4,0)
- ;;=4^Z45.321
- ;;^UTILITY(U,$J,358.3,239,2)
- ;;=^5063002
- ;;^UTILITY(U,$J,358.3,240,0)
- ;;=Z45.328^^1^11^3
- ;;^UTILITY(U,$J,358.3,240,1,0)
+ ;;^UTILITY(U,$J,358.3,300,1,3,0)
+ ;;=3^Adverse Effect of Unspec Medication,Subseq Encntr
+ ;;^UTILITY(U,$J,358.3,300,1,4,0)
+ ;;=4^T50.905D
+ ;;^UTILITY(U,$J,358.3,300,2)
+ ;;=^5052161
+ ;;^UTILITY(U,$J,358.3,301,0)
+ ;;=T50.905S^^3^34^2
+ ;;^UTILITY(U,$J,358.3,301,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,240,1,3,0)
- ;;=3^Adjust/Mgmt of Implanted Hearing Device
- ;;^UTILITY(U,$J,358.3,240,1,4,0)
- ;;=4^Z45.328
- ;;^UTILITY(U,$J,358.3,240,2)
- ;;=^5063003
- ;;^UTILITY(U,$J,358.3,241,0)
- ;;=Z02.71^^1^11^4
- ;;^UTILITY(U,$J,358.3,241,1,0)
+ ;;^UTILITY(U,$J,358.3,301,1,3,0)
+ ;;=3^Adverse Effect of Unspec Medication,Sequela
+ ;;^UTILITY(U,$J,358.3,301,1,4,0)
+ ;;=4^T50.905S
+ ;;^UTILITY(U,$J,358.3,301,2)
+ ;;=^5052162
+ ;;^UTILITY(U,$J,358.3,302,0)
+ ;;=F42.^^3^35^7
+ ;;^UTILITY(U,$J,358.3,302,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,241,1,3,0)
- ;;=3^Disability Determination Exam
- ;;^UTILITY(U,$J,358.3,241,1,4,0)
- ;;=4^Z02.71
- ;;^UTILITY(U,$J,358.3,241,2)
- ;;=^5062640
- ;;^UTILITY(U,$J,358.3,242,0)
- ;;=Z02.0^^1^11^7
- ;;^UTILITY(U,$J,358.3,242,1,0)
+ ;;^UTILITY(U,$J,358.3,302,1,3,0)
+ ;;=3^Obsessive-Compulsive Disorder
+ ;;^UTILITY(U,$J,358.3,302,1,4,0)
+ ;;=4^F42.
+ ;;^UTILITY(U,$J,358.3,302,2)
+ ;;=^5003568
+ ;;^UTILITY(U,$J,358.3,303,0)
+ ;;=F45.22^^3^35^1
+ ;;^UTILITY(U,$J,358.3,303,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,242,1,3,0)
- ;;=3^Exam for Admission to Educational Institution
- ;;^UTILITY(U,$J,358.3,242,1,4,0)
- ;;=4^Z02.0
- ;;^UTILITY(U,$J,358.3,242,2)
- ;;=^5062633
- ;;^UTILITY(U,$J,358.3,243,0)
- ;;=Z02.2^^1^11^8
- ;;^UTILITY(U,$J,358.3,243,1,0)
+ ;;^UTILITY(U,$J,358.3,303,1,3,0)
+ ;;=3^Body Dysmorphic Disorder
+ ;;^UTILITY(U,$J,358.3,303,1,4,0)
+ ;;=4^F45.22
+ ;;^UTILITY(U,$J,358.3,303,2)
+ ;;=^5003588
+ ;;^UTILITY(U,$J,358.3,304,0)
+ ;;=F63.3^^3^35^8
+ ;;^UTILITY(U,$J,358.3,304,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,243,1,3,0)
- ;;=3^Exam for Admission to Residential Institution
- ;;^UTILITY(U,$J,358.3,243,1,4,0)
- ;;=4^Z02.2
- ;;^UTILITY(U,$J,358.3,243,2)
- ;;=^5062635
- ;;^UTILITY(U,$J,358.3,244,0)
- ;;=Z02.4^^1^11^9
- ;;^UTILITY(U,$J,358.3,244,1,0)
+ ;;^UTILITY(U,$J,358.3,304,1,3,0)
+ ;;=3^Trichotillomania
+ ;;^UTILITY(U,$J,358.3,304,1,4,0)
+ ;;=4^F63.3
+ ;;^UTILITY(U,$J,358.3,304,2)
+ ;;=^5003643
+ ;;^UTILITY(U,$J,358.3,305,0)
+ ;;=L98.1^^3^35^2
+ ;;^UTILITY(U,$J,358.3,305,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,244,1,3,0)
- ;;=3^Exam for Driving License
- ;;^UTILITY(U,$J,358.3,244,1,4,0)
- ;;=4^Z02.4
- ;;^UTILITY(U,$J,358.3,244,2)
- ;;=^5062637
- ;;^UTILITY(U,$J,358.3,245,0)
- ;;=Z02.6^^1^11^11
- ;;^UTILITY(U,$J,358.3,245,1,0)
+ ;;^UTILITY(U,$J,358.3,305,1,3,0)
+ ;;=3^Excoriation (Skin-Picking) Disorder
+ ;;^UTILITY(U,$J,358.3,305,1,4,0)
+ ;;=4^L98.1
+ ;;^UTILITY(U,$J,358.3,305,2)
+ ;;=^186781
+ ;;^UTILITY(U,$J,358.3,306,0)
+ ;;=F68.10^^3^35^3
+ ;;^UTILITY(U,$J,358.3,306,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,245,1,3,0)
- ;;=3^Exam for Insurance Purposes
- ;;^UTILITY(U,$J,358.3,245,1,4,0)
- ;;=4^Z02.6
- ;;^UTILITY(U,$J,358.3,245,2)
- ;;=^5062639
- ;;^UTILITY(U,$J,358.3,246,0)
- ;;=Z02.5^^1^11^13
- ;;^UTILITY(U,$J,358.3,246,1,0)
+ ;;^UTILITY(U,$J,358.3,306,1,3,0)
+ ;;=3^Factitious Disorder
+ ;;^UTILITY(U,$J,358.3,306,1,4,0)
+ ;;=4^F68.10
+ ;;^UTILITY(U,$J,358.3,306,2)
+ ;;=^5003663
+ ;;^UTILITY(U,$J,358.3,307,0)
+ ;;=F63.9^^3^35^5
+ ;;^UTILITY(U,$J,358.3,307,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,246,1,3,0)
- ;;=3^Exam for Sport Participation
- ;;^UTILITY(U,$J,358.3,246,1,4,0)
- ;;=4^Z02.5
- ;;^UTILITY(U,$J,358.3,246,2)
- ;;=^5062638
- ;;^UTILITY(U,$J,358.3,247,0)
- ;;=Z02.3^^1^11^12
- ;;^UTILITY(U,$J,358.3,247,1,0)
+ ;;^UTILITY(U,$J,358.3,307,1,3,0)
+ ;;=3^Impulse Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,307,1,4,0)
+ ;;=4^F63.9
+ ;;^UTILITY(U,$J,358.3,307,2)
+ ;;=^5003646
+ ;;^UTILITY(U,$J,358.3,308,0)
+ ;;=F42.^^3^35^4
+ ;;^UTILITY(U,$J,358.3,308,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,247,1,3,0)
- ;;=3^Exam for Recruitment to Armed Forces
- ;;^UTILITY(U,$J,358.3,247,1,4,0)
- ;;=4^Z02.3
- ;;^UTILITY(U,$J,358.3,247,2)
- ;;=^5062636
- ;;^UTILITY(U,$J,358.3,248,0)
- ;;=Z01.118^^1^11^5
- ;;^UTILITY(U,$J,358.3,248,1,0)
+ ;;^UTILITY(U,$J,358.3,308,1,3,0)
+ ;;=3^Hoarding Disorder
+ ;;^UTILITY(U,$J,358.3,308,1,4,0)
+ ;;=4^F42.
+ ;;^UTILITY(U,$J,358.3,308,2)
+ ;;=^5003568
+ ;;^UTILITY(U,$J,358.3,309,0)
+ ;;=F06.8^^3^35^6
+ ;;^UTILITY(U,$J,358.3,309,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,248,1,3,0)
- ;;=3^Ears/Hearing Exam w/ Abnormal Findings
- ;;^UTILITY(U,$J,358.3,248,1,4,0)
- ;;=4^Z01.118
- ;;^UTILITY(U,$J,358.3,248,2)
- ;;=^5062616
- ;;^UTILITY(U,$J,358.3,249,0)
- ;;=Z01.10^^1^11^6
- ;;^UTILITY(U,$J,358.3,249,1,0)
+ ;;^UTILITY(U,$J,358.3,309,1,3,0)
+ ;;=3^Obsessive-Compulsive & Related Disorder d/t Another Med Condition
+ ;;^UTILITY(U,$J,358.3,309,1,4,0)
+ ;;=4^F06.8
+ ;;^UTILITY(U,$J,358.3,309,2)
+ ;;=^5003062
+ ;;^UTILITY(U,$J,358.3,310,0)
+ ;;=F06.2^^3^36^5
+ ;;^UTILITY(U,$J,358.3,310,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,249,1,3,0)
- ;;=3^Ears/Hearing Exam w/o Abnormal Findings
- ;;^UTILITY(U,$J,358.3,249,1,4,0)
- ;;=4^Z01.10
- ;;^UTILITY(U,$J,358.3,249,2)
- ;;=^5062614
- ;;^UTILITY(U,$J,358.3,250,0)
- ;;=Z46.1^^1^11^18
- ;;^UTILITY(U,$J,358.3,250,1,0)
+ ;;^UTILITY(U,$J,358.3,310,1,3,0)
+ ;;=3^Psychotic Disorder w/ Delusions d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,310,1,4,0)
+ ;;=4^F06.2
+ ;;^UTILITY(U,$J,358.3,310,2)
+ ;;=^5003055
+ ;;^UTILITY(U,$J,358.3,311,0)
+ ;;=F06.0^^3^36^6
+ ;;^UTILITY(U,$J,358.3,311,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,250,1,3,0)
- ;;=3^Fitting/Adjustment of Hearing Aid
- ;;^UTILITY(U,$J,358.3,250,1,4,0)
- ;;=4^Z46.1
- ;;^UTILITY(U,$J,358.3,250,2)
- ;;=^5063014
- ;;^UTILITY(U,$J,358.3,251,0)
- ;;=Z09.^^1^11^15
- ;;^UTILITY(U,$J,358.3,251,1,0)
+ ;;^UTILITY(U,$J,358.3,311,1,3,0)
+ ;;=3^Psychotic Disorder w/ Hallucinations d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,311,1,4,0)
+ ;;=4^F06.0
+ ;;^UTILITY(U,$J,358.3,311,2)
+ ;;=^5003053
+ ;;^UTILITY(U,$J,358.3,312,0)
+ ;;=F06.4^^3^36^1
+ ;;^UTILITY(U,$J,358.3,312,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,251,1,3,0)
- ;;=3^F/U Exam After Trtmt for Cond Oth Than Malig Neop
- ;;^UTILITY(U,$J,358.3,251,1,4,0)
- ;;=4^Z09.
+ ;;^UTILITY(U,$J,358.3,312,1,3,0)
+ ;;=3^Anxiety Disorder d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,312,1,4,0)
+ ;;=4^F06.4
+ ;;^UTILITY(U,$J,358.3,312,2)
+ ;;=^5003061
+ ;;^UTILITY(U,$J,358.3,313,0)
+ ;;=F06.1^^3^36^2
+ ;;^UTILITY(U,$J,358.3,313,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,313,1,3,0)
+ ;;=3^Catatonia Associated w/ Schizophrenia

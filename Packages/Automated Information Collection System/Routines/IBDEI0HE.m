@@ -1,144 +1,128 @@
-IBDEI0HE ; ; 06-AUG-2015
+IBDEI0HE ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8105,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8105,1,4,0)
- ;;=4^626.0
- ;;^UTILITY(U,$J,358.3,8105,1,5,0)
- ;;=5^Amenorrhea
- ;;^UTILITY(U,$J,358.3,8105,2)
- ;;=Amenorrhea^5871
- ;;^UTILITY(U,$J,358.3,8106,0)
- ;;=628.0^^35^481^6
- ;;^UTILITY(U,$J,358.3,8106,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8106,1,4,0)
- ;;=4^628.0
- ;;^UTILITY(U,$J,358.3,8106,1,5,0)
- ;;=5^Anovulatory cyclic bleeding
- ;;^UTILITY(U,$J,358.3,8106,2)
- ;;=^270583
- ;;^UTILITY(U,$J,358.3,8107,0)
- ;;=616.3^^35^481^7
- ;;^UTILITY(U,$J,358.3,8107,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8107,1,4,0)
- ;;=4^616.3
- ;;^UTILITY(U,$J,358.3,8107,1,5,0)
- ;;=5^Bartholin's abscess
- ;;^UTILITY(U,$J,358.3,8107,2)
- ;;=^12748
- ;;^UTILITY(U,$J,358.3,8108,0)
- ;;=610.0^^35^481^10
- ;;^UTILITY(U,$J,358.3,8108,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8108,1,4,0)
- ;;=4^610.0
- ;;^UTILITY(U,$J,358.3,8108,1,5,0)
- ;;=5^Breast, solitary cyst
- ;;^UTILITY(U,$J,358.3,8108,2)
- ;;=^112247
- ;;^UTILITY(U,$J,358.3,8109,0)
- ;;=610.1^^35^481^23
- ;;^UTILITY(U,$J,358.3,8109,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8109,1,4,0)
- ;;=4^610.1
- ;;^UTILITY(U,$J,358.3,8109,1,5,0)
- ;;=5^Fibrocystic breast disease
- ;;^UTILITY(U,$J,358.3,8109,2)
- ;;=^46167
- ;;^UTILITY(U,$J,358.3,8110,0)
- ;;=611.71^^35^481^8
- ;;^UTILITY(U,$J,358.3,8110,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8110,1,4,0)
- ;;=4^611.71
- ;;^UTILITY(U,$J,358.3,8110,1,5,0)
- ;;=5^Breast Pain
- ;;^UTILITY(U,$J,358.3,8110,2)
- ;;=Breast Pain^74467
- ;;^UTILITY(U,$J,358.3,8111,0)
- ;;=611.72^^35^481^9
- ;;^UTILITY(U,$J,358.3,8111,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8111,1,4,0)
- ;;=4^611.72
- ;;^UTILITY(U,$J,358.3,8111,1,5,0)
- ;;=5^Breast, lump/mass
- ;;^UTILITY(U,$J,358.3,8111,2)
- ;;=^72018
- ;;^UTILITY(U,$J,358.3,8112,0)
- ;;=616.0^^35^481^12
- ;;^UTILITY(U,$J,358.3,8112,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8112,1,4,0)
- ;;=4^616.0
- ;;^UTILITY(U,$J,358.3,8112,1,5,0)
- ;;=5^Cervicitis
- ;;^UTILITY(U,$J,358.3,8112,2)
- ;;=Cervicitis^21925
- ;;^UTILITY(U,$J,358.3,8113,0)
- ;;=078.11^^35^481^13
- ;;^UTILITY(U,$J,358.3,8113,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8113,1,4,0)
- ;;=4^078.11
- ;;^UTILITY(U,$J,358.3,8113,1,5,0)
- ;;=5^Condyloma Acuminatum
- ;;^UTILITY(U,$J,358.3,8113,2)
- ;;=^295788
- ;;^UTILITY(U,$J,358.3,8114,0)
- ;;=V25.09^^35^481^14
- ;;^UTILITY(U,$J,358.3,8114,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8114,1,4,0)
- ;;=4^V25.09
- ;;^UTILITY(U,$J,358.3,8114,1,5,0)
- ;;=5^Contraceptive counseling
- ;;^UTILITY(U,$J,358.3,8114,2)
- ;;=^87608
- ;;^UTILITY(U,$J,358.3,8115,0)
- ;;=V25.9^^35^481^15
- ;;^UTILITY(U,$J,358.3,8115,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8115,1,4,0)
- ;;=4^V25.9
- ;;^UTILITY(U,$J,358.3,8115,1,5,0)
- ;;=5^Contraceptive management
- ;;^UTILITY(U,$J,358.3,8115,2)
- ;;=^276356
- ;;^UTILITY(U,$J,358.3,8116,0)
- ;;=620.2^^35^481^37
- ;;^UTILITY(U,$J,358.3,8116,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8116,1,4,0)
- ;;=4^620.2
- ;;^UTILITY(U,$J,358.3,8116,1,5,0)
- ;;=5^Ovarian Cyst
- ;;^UTILITY(U,$J,358.3,8116,2)
- ;;=Ovarian Cyst^87319
- ;;^UTILITY(U,$J,358.3,8117,0)
- ;;=595.9^^35^481^16
- ;;^UTILITY(U,$J,358.3,8117,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8117,1,4,0)
- ;;=4^595.9
- ;;^UTILITY(U,$J,358.3,8117,1,5,0)
- ;;=5^Cystitis, Unspec
- ;;^UTILITY(U,$J,358.3,8117,2)
- ;;=Cystitis, Unspec^30304
- ;;^UTILITY(U,$J,358.3,8118,0)
- ;;=626.8^^35^481^17
- ;;^UTILITY(U,$J,358.3,8118,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8118,1,4,0)
- ;;=4^626.8
- ;;^UTILITY(U,$J,358.3,8118,1,5,0)
- ;;=5^Dysfunctional uterine bleeding
- ;;^UTILITY(U,$J,358.3,8118,2)
- ;;=^87521
- ;;^UTILITY(U,$J,358.3,8119,0)
- ;;=625.3^^35^481^18
+ ;;^UTILITY(U,$J,358.3,8050,2)
+ ;;=^5136471
+ ;;^UTILITY(U,$J,358.3,8051,0)
+ ;;=S72.92XA^^33^431^64
+ ;;^UTILITY(U,$J,358.3,8051,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8051,1,3,0)
+ ;;=3^Fx of left femur unspec, init encntr for closed fx
+ ;;^UTILITY(U,$J,358.3,8051,1,4,0)
+ ;;=4^S72.92XA
+ ;;^UTILITY(U,$J,358.3,8051,2)
+ ;;=^5136472
+ ;;^UTILITY(U,$J,358.3,8052,0)
+ ;;=S82.401A^^33^431^78
+ ;;^UTILITY(U,$J,358.3,8052,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8052,1,3,0)
+ ;;=3^Fx of right fibula shaft unspec, init for clos fx
+ ;;^UTILITY(U,$J,358.3,8052,1,4,0)
+ ;;=4^S82.401A
+ ;;^UTILITY(U,$J,358.3,8052,2)
+ ;;=^5041677
+ ;;^UTILITY(U,$J,358.3,8053,0)
+ ;;=S82.402A^^33^431^65
+ ;;^UTILITY(U,$J,358.3,8053,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8053,1,3,0)
+ ;;=3^Fx of left fibula shaft unspec, init for clos fx
+ ;;^UTILITY(U,$J,358.3,8053,1,4,0)
+ ;;=4^S82.402A
+ ;;^UTILITY(U,$J,358.3,8053,2)
+ ;;=^5041693
+ ;;^UTILITY(U,$J,358.3,8054,0)
+ ;;=S62.600A^^33^431^101
+ ;;^UTILITY(U,$J,358.3,8054,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8054,1,3,0)
+ ;;=3^Fx of unsp phalanx of right index finger, init
+ ;;^UTILITY(U,$J,358.3,8054,1,4,0)
+ ;;=4^S62.600A
+ ;;^UTILITY(U,$J,358.3,8054,2)
+ ;;=^5034382
+ ;;^UTILITY(U,$J,358.3,8055,0)
+ ;;=S62.601A^^33^431^96
+ ;;^UTILITY(U,$J,358.3,8055,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8055,1,3,0)
+ ;;=3^Fx of unsp phalanx of left index finger, init
+ ;;^UTILITY(U,$J,358.3,8055,1,4,0)
+ ;;=4^S62.601A
+ ;;^UTILITY(U,$J,358.3,8055,2)
+ ;;=^5034389
+ ;;^UTILITY(U,$J,358.3,8056,0)
+ ;;=S62.602A^^33^431^103
+ ;;^UTILITY(U,$J,358.3,8056,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8056,1,3,0)
+ ;;=3^Fx of unsp phalanx of right middle finger, init
+ ;;^UTILITY(U,$J,358.3,8056,1,4,0)
+ ;;=4^S62.602A
+ ;;^UTILITY(U,$J,358.3,8056,2)
+ ;;=^5034396
+ ;;^UTILITY(U,$J,358.3,8057,0)
+ ;;=S62.603A^^33^431^98
+ ;;^UTILITY(U,$J,358.3,8057,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8057,1,3,0)
+ ;;=3^Fx of unsp phalanx of left middle finger, init
+ ;;^UTILITY(U,$J,358.3,8057,1,4,0)
+ ;;=4^S62.603A
+ ;;^UTILITY(U,$J,358.3,8057,2)
+ ;;=^5034403
+ ;;^UTILITY(U,$J,358.3,8058,0)
+ ;;=S62.604A^^33^431^104
+ ;;^UTILITY(U,$J,358.3,8058,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8058,1,3,0)
+ ;;=3^Fx of unsp phalanx of right ring finger, init
+ ;;^UTILITY(U,$J,358.3,8058,1,4,0)
+ ;;=4^S62.604A
+ ;;^UTILITY(U,$J,358.3,8058,2)
+ ;;=^5034410
+ ;;^UTILITY(U,$J,358.3,8059,0)
+ ;;=S62.605A^^33^431^99
+ ;;^UTILITY(U,$J,358.3,8059,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8059,1,3,0)
+ ;;=3^Fx of unsp phalanx of left ring finger, init
+ ;;^UTILITY(U,$J,358.3,8059,1,4,0)
+ ;;=4^S62.605A
+ ;;^UTILITY(U,$J,358.3,8059,2)
+ ;;=^5034417
+ ;;^UTILITY(U,$J,358.3,8060,0)
+ ;;=S62.606A^^33^431^102
+ ;;^UTILITY(U,$J,358.3,8060,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8060,1,3,0)
+ ;;=3^Fx of unsp phalanx of right little finger, init
+ ;;^UTILITY(U,$J,358.3,8060,1,4,0)
+ ;;=4^S62.606A
+ ;;^UTILITY(U,$J,358.3,8060,2)
+ ;;=^5034424
+ ;;^UTILITY(U,$J,358.3,8061,0)
+ ;;=S62.607A^^33^431^97
+ ;;^UTILITY(U,$J,358.3,8061,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8061,1,3,0)
+ ;;=3^Fx of unsp phalanx of left little finger, init
+ ;;^UTILITY(U,$J,358.3,8061,1,4,0)
+ ;;=4^S62.607A
+ ;;^UTILITY(U,$J,358.3,8061,2)
+ ;;=^5034431
+ ;;^UTILITY(U,$J,358.3,8062,0)
+ ;;=S92.901A^^33^431^79
+ ;;^UTILITY(U,$J,358.3,8062,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8062,1,3,0)
+ ;;=3^Fx of right foot unspec, init encntr for closed fra
+ ;;^UTILITY(U,$J,358.3,8062,1,4,0)
+ ;;=4^S92.901A
+ ;;^UTILITY(U,$J,358.3,8062,2)
+ ;;=^5045578
+ ;;^UTILITY(U,$J,358.3,8063,0)
+ ;;=S92.902A^^33^431^66

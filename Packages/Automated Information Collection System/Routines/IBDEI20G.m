@@ -1,124 +1,134 @@
-IBDEI20G ; ; 06-AUG-2015
+IBDEI20G ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35163,1,4,0)
- ;;=4^S62.181S
- ;;^UTILITY(U,$J,358.3,35163,2)
- ;;=^5033513
- ;;^UTILITY(U,$J,358.3,35164,0)
- ;;=S62.112S^^183^2026^63
- ;;^UTILITY(U,$J,358.3,35164,1,0)
+ ;;^UTILITY(U,$J,358.3,34111,1,3,0)
+ ;;=3^Acquired Absence of Left Leg Below Knee
+ ;;^UTILITY(U,$J,358.3,34111,1,4,0)
+ ;;=4^Z89.512
+ ;;^UTILITY(U,$J,358.3,34111,2)
+ ;;=^5063567
+ ;;^UTILITY(U,$J,358.3,34112,0)
+ ;;=Z89.611^^131^1681^7
+ ;;^UTILITY(U,$J,358.3,34112,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35164,1,3,0)
- ;;=3^Disp fx of triquetrum bone, left wrist, sequela
- ;;^UTILITY(U,$J,358.3,35164,1,4,0)
- ;;=4^S62.112S
- ;;^UTILITY(U,$J,358.3,35164,2)
- ;;=^5033226
- ;;^UTILITY(U,$J,358.3,35165,0)
- ;;=S62.111S^^183^2026^64
- ;;^UTILITY(U,$J,358.3,35165,1,0)
+ ;;^UTILITY(U,$J,358.3,34112,1,3,0)
+ ;;=3^Acquired Absence of Right Leg Above Knee
+ ;;^UTILITY(U,$J,358.3,34112,1,4,0)
+ ;;=4^Z89.611
+ ;;^UTILITY(U,$J,358.3,34112,2)
+ ;;=^5063572
+ ;;^UTILITY(U,$J,358.3,34113,0)
+ ;;=Z89.612^^131^1681^4
+ ;;^UTILITY(U,$J,358.3,34113,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35165,1,3,0)
- ;;=3^Disp fx of triquetrum bone, right wrist, sequela
- ;;^UTILITY(U,$J,358.3,35165,1,4,0)
- ;;=4^S62.111S
- ;;^UTILITY(U,$J,358.3,35165,2)
- ;;=^5033219
- ;;^UTILITY(U,$J,358.3,35166,0)
- ;;=S62.145S^^183^2026^73
- ;;^UTILITY(U,$J,358.3,35166,1,0)
+ ;;^UTILITY(U,$J,358.3,34113,1,3,0)
+ ;;=3^Acquired Absence of Left Leg Above Knee
+ ;;^UTILITY(U,$J,358.3,34113,1,4,0)
+ ;;=4^Z89.612
+ ;;^UTILITY(U,$J,358.3,34113,2)
+ ;;=^5063573
+ ;;^UTILITY(U,$J,358.3,34114,0)
+ ;;=Z90.710^^131^1681^1
+ ;;^UTILITY(U,$J,358.3,34114,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35166,1,3,0)
- ;;=3^Nondisp fx of body of hamate bone, left wrist, sequela
- ;;^UTILITY(U,$J,358.3,35166,1,4,0)
- ;;=4^S62.145S
- ;;^UTILITY(U,$J,358.3,35166,2)
- ;;=^5033373
- ;;^UTILITY(U,$J,358.3,35167,0)
- ;;=S62.144S^^183^2026^74
- ;;^UTILITY(U,$J,358.3,35167,1,0)
+ ;;^UTILITY(U,$J,358.3,34114,1,3,0)
+ ;;=3^Acquired Absence of Cervix & Uterus
+ ;;^UTILITY(U,$J,358.3,34114,1,4,0)
+ ;;=4^Z90.710
+ ;;^UTILITY(U,$J,358.3,34114,2)
+ ;;=^5063591
+ ;;^UTILITY(U,$J,358.3,34115,0)
+ ;;=Z91.030^^131^1681^13
+ ;;^UTILITY(U,$J,358.3,34115,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35167,1,3,0)
- ;;=3^Nondisp fx of body of hamate bone, right wrist, sequela
- ;;^UTILITY(U,$J,358.3,35167,1,4,0)
- ;;=4^S62.144S
- ;;^UTILITY(U,$J,358.3,35167,2)
- ;;=^5033366
- ;;^UTILITY(U,$J,358.3,35168,0)
- ;;=S62.135S^^183^2026^75
- ;;^UTILITY(U,$J,358.3,35168,1,0)
+ ;;^UTILITY(U,$J,358.3,34115,1,3,0)
+ ;;=3^Bee Allergy
+ ;;^UTILITY(U,$J,358.3,34115,1,4,0)
+ ;;=4^Z91.030
+ ;;^UTILITY(U,$J,358.3,34115,2)
+ ;;=^5063605
+ ;;^UTILITY(U,$J,358.3,34116,0)
+ ;;=Z91.038^^131^1681^59
+ ;;^UTILITY(U,$J,358.3,34116,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35168,1,3,0)
- ;;=3^Nondisp fx of capitate bone, left wrist, sequela
- ;;^UTILITY(U,$J,358.3,35168,1,4,0)
- ;;=4^S62.135S
- ;;^UTILITY(U,$J,358.3,35168,2)
- ;;=^5033331
- ;;^UTILITY(U,$J,358.3,35169,0)
- ;;=S62.134S^^183^2026^76
- ;;^UTILITY(U,$J,358.3,35169,1,0)
+ ;;^UTILITY(U,$J,358.3,34116,1,3,0)
+ ;;=3^Insect Allergy NEC
+ ;;^UTILITY(U,$J,358.3,34116,1,4,0)
+ ;;=4^Z91.038
+ ;;^UTILITY(U,$J,358.3,34116,2)
+ ;;=^5063606
+ ;;^UTILITY(U,$J,358.3,34117,0)
+ ;;=Z91.041^^131^1681^139
+ ;;^UTILITY(U,$J,358.3,34117,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35169,1,3,0)
- ;;=3^Nondisp fx of capitate bone, right wrist, sequela
- ;;^UTILITY(U,$J,358.3,35169,1,4,0)
- ;;=4^S62.134S
- ;;^UTILITY(U,$J,358.3,35169,2)
- ;;=^5033324
- ;;^UTILITY(U,$J,358.3,35170,0)
- ;;=S62.015S^^183^2026^83
- ;;^UTILITY(U,$J,358.3,35170,1,0)
+ ;;^UTILITY(U,$J,358.3,34117,1,3,0)
+ ;;=3^Radiographic Dye Allergy
+ ;;^UTILITY(U,$J,358.3,34117,1,4,0)
+ ;;=4^Z91.041
+ ;;^UTILITY(U,$J,358.3,34117,2)
+ ;;=^5063608
+ ;;^UTILITY(U,$J,358.3,34118,0)
+ ;;=Z91.130^^131^1681^146
+ ;;^UTILITY(U,$J,358.3,34118,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35170,1,3,0)
- ;;=3^Nondisp fx of distal pole of navic bone of left wrist, sequela
- ;;^UTILITY(U,$J,358.3,35170,1,4,0)
- ;;=4^S62.015S
- ;;^UTILITY(U,$J,358.3,35170,2)
- ;;=^5033107
- ;;^UTILITY(U,$J,358.3,35171,0)
- ;;=S62.014S^^183^2026^84
- ;;^UTILITY(U,$J,358.3,35171,1,0)
+ ;;^UTILITY(U,$J,358.3,34118,1,3,0)
+ ;;=3^Underdose of Med Regiment d/t Age-Related Debility
+ ;;^UTILITY(U,$J,358.3,34118,1,4,0)
+ ;;=4^Z91.130
+ ;;^UTILITY(U,$J,358.3,34118,2)
+ ;;=^5063614
+ ;;^UTILITY(U,$J,358.3,34119,0)
+ ;;=Z91.138^^131^1681^147
+ ;;^UTILITY(U,$J,358.3,34119,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35171,1,3,0)
- ;;=3^Nondisp fx of distal pole of navic bone of right wrist, sequela
- ;;^UTILITY(U,$J,358.3,35171,1,4,0)
- ;;=4^S62.014S
- ;;^UTILITY(U,$J,358.3,35171,2)
- ;;=^5033100
- ;;^UTILITY(U,$J,358.3,35172,0)
- ;;=S62.155S^^183^2026^87
- ;;^UTILITY(U,$J,358.3,35172,1,0)
+ ;;^UTILITY(U,$J,358.3,34119,1,3,0)
+ ;;=3^Underdose of Med Regiment for Other Reason
+ ;;^UTILITY(U,$J,358.3,34119,1,4,0)
+ ;;=4^Z91.138
+ ;;^UTILITY(U,$J,358.3,34119,2)
+ ;;=^5063615
+ ;;^UTILITY(U,$J,358.3,34120,0)
+ ;;=Z91.14^^131^1681^71
+ ;;^UTILITY(U,$J,358.3,34120,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35172,1,3,0)
- ;;=3^Nondisp fx of hook process of hamate bone, left wrist, sequela
- ;;^UTILITY(U,$J,358.3,35172,1,4,0)
- ;;=4^S62.155S
- ;;^UTILITY(U,$J,358.3,35172,2)
- ;;=^5033415
- ;;^UTILITY(U,$J,358.3,35173,0)
- ;;=S62.154S^^183^2026^88
- ;;^UTILITY(U,$J,358.3,35173,1,0)
+ ;;^UTILITY(U,$J,358.3,34120,1,3,0)
+ ;;=3^Noncompliance w/ Medication Regimen
+ ;;^UTILITY(U,$J,358.3,34120,1,4,0)
+ ;;=4^Z91.14
+ ;;^UTILITY(U,$J,358.3,34120,2)
+ ;;=^5063616
+ ;;^UTILITY(U,$J,358.3,34121,0)
+ ;;=Z91.19^^131^1681^70
+ ;;^UTILITY(U,$J,358.3,34121,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35173,1,3,0)
- ;;=3^Nondisp fx of hook process of hamate bone, right wrist, sequela
- ;;^UTILITY(U,$J,358.3,35173,1,4,0)
- ;;=4^S62.154S
- ;;^UTILITY(U,$J,358.3,35173,2)
- ;;=^5033408
- ;;^UTILITY(U,$J,358.3,35174,0)
- ;;=S62.125S^^183^2026^91
- ;;^UTILITY(U,$J,358.3,35174,1,0)
+ ;;^UTILITY(U,$J,358.3,34121,1,3,0)
+ ;;=3^Noncompliance w/ Medical Treatment & Regimen
+ ;;^UTILITY(U,$J,358.3,34121,1,4,0)
+ ;;=4^Z91.19
+ ;;^UTILITY(U,$J,358.3,34121,2)
+ ;;=^5063618
+ ;;^UTILITY(U,$J,358.3,34122,0)
+ ;;=Z93.1^^131^1681^52
+ ;;^UTILITY(U,$J,358.3,34122,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35174,1,3,0)
- ;;=3^Nondisp fx of lunate, left wrist, sequela
- ;;^UTILITY(U,$J,358.3,35174,1,4,0)
- ;;=4^S62.125S
- ;;^UTILITY(U,$J,358.3,35174,2)
- ;;=^5033289
- ;;^UTILITY(U,$J,358.3,35175,0)
- ;;=S62.124S^^183^2026^92
- ;;^UTILITY(U,$J,358.3,35175,1,0)
+ ;;^UTILITY(U,$J,358.3,34122,1,3,0)
+ ;;=3^Gastrostomy Status
+ ;;^UTILITY(U,$J,358.3,34122,1,4,0)
+ ;;=4^Z93.1
+ ;;^UTILITY(U,$J,358.3,34122,2)
+ ;;=^5063643
+ ;;^UTILITY(U,$J,358.3,34123,0)
+ ;;=Z93.2^^131^1681^58
+ ;;^UTILITY(U,$J,358.3,34123,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35175,1,3,0)
- ;;=3^Nondisp fx of lunate, right wrist, sequela
+ ;;^UTILITY(U,$J,358.3,34123,1,3,0)
+ ;;=3^Ileostomy Status
+ ;;^UTILITY(U,$J,358.3,34123,1,4,0)
+ ;;=4^Z93.2
+ ;;^UTILITY(U,$J,358.3,34123,2)
+ ;;=^5063644
+ ;;^UTILITY(U,$J,358.3,34124,0)
+ ;;=Z93.3^^131^1681^15
+ ;;^UTILITY(U,$J,358.3,34124,1,0)
+ ;;=^358.31IA^4^2

@@ -1,142 +1,122 @@
-IBDEI0GV ; ; 06-AUG-2015
+IBDEI0GV ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7841,0)
- ;;=345.90^^35^477^104
- ;;^UTILITY(U,$J,358.3,7841,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7841,1,4,0)
- ;;=4^345.90
- ;;^UTILITY(U,$J,358.3,7841,1,5,0)
- ;;=5^Seizure Disorder
- ;;^UTILITY(U,$J,358.3,7841,2)
- ;;=^268477
- ;;^UTILITY(U,$J,358.3,7842,0)
- ;;=907.0^^35^477^73
- ;;^UTILITY(U,$J,358.3,7842,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7842,1,4,0)
- ;;=4^907.0
- ;;^UTILITY(U,$J,358.3,7842,1,5,0)
- ;;=5^Late Effect Intracranial Injury
- ;;^UTILITY(U,$J,358.3,7842,2)
- ;;=^68489
- ;;^UTILITY(U,$J,358.3,7843,0)
- ;;=339.00^^35^477^43
- ;;^UTILITY(U,$J,358.3,7843,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7843,1,4,0)
- ;;=4^339.00
- ;;^UTILITY(U,$J,358.3,7843,1,5,0)
- ;;=5^Headache,Cluster NOS
- ;;^UTILITY(U,$J,358.3,7843,2)
- ;;=^336741
- ;;^UTILITY(U,$J,358.3,7844,0)
- ;;=339.01^^35^477^42
- ;;^UTILITY(U,$J,358.3,7844,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7844,1,4,0)
- ;;=4^339.01
- ;;^UTILITY(U,$J,358.3,7844,1,5,0)
- ;;=5^Headache,Cluster Episodic
- ;;^UTILITY(U,$J,358.3,7844,2)
- ;;=^336545
- ;;^UTILITY(U,$J,358.3,7845,0)
- ;;=339.02^^35^477^41
- ;;^UTILITY(U,$J,358.3,7845,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7845,1,4,0)
- ;;=4^339.02
- ;;^UTILITY(U,$J,358.3,7845,1,5,0)
- ;;=5^Headache,Cluster Chronic
- ;;^UTILITY(U,$J,358.3,7845,2)
- ;;=^336546
- ;;^UTILITY(U,$J,358.3,7846,0)
- ;;=339.03^^35^477^65
- ;;^UTILITY(U,$J,358.3,7846,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7846,1,4,0)
- ;;=4^339.03
- ;;^UTILITY(U,$J,358.3,7846,1,5,0)
- ;;=5^Hemicrania,Paroxysmal,Episodic
- ;;^UTILITY(U,$J,358.3,7846,2)
- ;;=^336547
- ;;^UTILITY(U,$J,358.3,7847,0)
- ;;=339.04^^35^477^64
- ;;^UTILITY(U,$J,358.3,7847,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7847,1,4,0)
- ;;=4^339.04
- ;;^UTILITY(U,$J,358.3,7847,1,5,0)
- ;;=5^Hemicrania,Paroxysmal,Chr
- ;;^UTILITY(U,$J,358.3,7847,2)
- ;;=^336548
- ;;^UTILITY(U,$J,358.3,7848,0)
- ;;=339.05^^35^477^57
- ;;^UTILITY(U,$J,358.3,7848,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7848,1,4,0)
- ;;=4^339.05
- ;;^UTILITY(U,$J,358.3,7848,1,5,0)
- ;;=5^Headache,SUNCT
- ;;^UTILITY(U,$J,358.3,7848,2)
- ;;=^336549
- ;;^UTILITY(U,$J,358.3,7849,0)
- ;;=339.10^^35^477^62
- ;;^UTILITY(U,$J,358.3,7849,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7849,1,4,0)
- ;;=4^339.10
- ;;^UTILITY(U,$J,358.3,7849,1,5,0)
- ;;=5^Headache,Tension NOS
- ;;^UTILITY(U,$J,358.3,7849,2)
- ;;=^336742
- ;;^UTILITY(U,$J,358.3,7850,0)
- ;;=339.11^^35^477^61
- ;;^UTILITY(U,$J,358.3,7850,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7850,1,4,0)
- ;;=4^339.11
- ;;^UTILITY(U,$J,358.3,7850,1,5,0)
- ;;=5^Headache,Tension Episodic
- ;;^UTILITY(U,$J,358.3,7850,2)
- ;;=^336551
- ;;^UTILITY(U,$J,358.3,7851,0)
- ;;=339.12^^35^477^60
- ;;^UTILITY(U,$J,358.3,7851,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7851,1,4,0)
- ;;=4^339.12
- ;;^UTILITY(U,$J,358.3,7851,1,5,0)
- ;;=5^Headache,Tension Chr
- ;;^UTILITY(U,$J,358.3,7851,2)
- ;;=^336552
- ;;^UTILITY(U,$J,358.3,7852,0)
- ;;=339.20^^35^477^52
- ;;^UTILITY(U,$J,358.3,7852,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7852,1,4,0)
- ;;=4^339.20
- ;;^UTILITY(U,$J,358.3,7852,1,5,0)
- ;;=5^Headache,Post-Traumatic NOS
- ;;^UTILITY(U,$J,358.3,7852,2)
- ;;=^336743
- ;;^UTILITY(U,$J,358.3,7853,0)
- ;;=339.21^^35^477^50
- ;;^UTILITY(U,$J,358.3,7853,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7853,1,4,0)
- ;;=4^339.21
- ;;^UTILITY(U,$J,358.3,7853,1,5,0)
- ;;=5^Headache,Post-Traumatic Acute
- ;;^UTILITY(U,$J,358.3,7853,2)
- ;;=^336553
- ;;^UTILITY(U,$J,358.3,7854,0)
- ;;=339.22^^35^477^51
- ;;^UTILITY(U,$J,358.3,7854,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7854,1,4,0)
- ;;=4^339.22
- ;;^UTILITY(U,$J,358.3,7854,1,5,0)
- ;;=5^Headache,Post-Traumatic Chr
+ ;;^UTILITY(U,$J,358.3,7799,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7799,1,3,0)
+ ;;=3^Fall from Toilet w/ Strike Against Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,7799,1,4,0)
+ ;;=4^W18.12XA
+ ;;^UTILITY(U,$J,358.3,7799,2)
+ ;;=^5059804
+ ;;^UTILITY(U,$J,358.3,7800,0)
+ ;;=W18.12XD^^30^415^62
+ ;;^UTILITY(U,$J,358.3,7800,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7800,1,3,0)
+ ;;=3^Fall from Toilet w/ Strike Against Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,7800,1,4,0)
+ ;;=4^W18.12XD
+ ;;^UTILITY(U,$J,358.3,7800,2)
+ ;;=^5137984
+ ;;^UTILITY(U,$J,358.3,7801,0)
+ ;;=W18.2XXA^^30^415^73
+ ;;^UTILITY(U,$J,358.3,7801,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7801,1,3,0)
+ ;;=3^Fall in Empty Shower/Bathtub,Init Encntr
+ ;;^UTILITY(U,$J,358.3,7801,1,4,0)
+ ;;=4^W18.2XXA
+ ;;^UTILITY(U,$J,358.3,7801,2)
+ ;;=^5059806
+ ;;^UTILITY(U,$J,358.3,7802,0)
+ ;;=W18.2XXD^^30^415^74
+ ;;^UTILITY(U,$J,358.3,7802,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7802,1,3,0)
+ ;;=3^Fall in Empty Shower/Bathtub,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,7802,1,4,0)
+ ;;=4^W18.2XXD
+ ;;^UTILITY(U,$J,358.3,7802,2)
+ ;;=^5059807
+ ;;^UTILITY(U,$J,358.3,7803,0)
+ ;;=W18.40XA^^30^415^105
+ ;;^UTILITY(U,$J,358.3,7803,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7803,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling,Init Encntr
+ ;;^UTILITY(U,$J,358.3,7803,1,4,0)
+ ;;=4^W18.40XA
+ ;;^UTILITY(U,$J,358.3,7803,2)
+ ;;=^5059818
+ ;;^UTILITY(U,$J,358.3,7804,0)
+ ;;=W18.40XD^^30^415^106
+ ;;^UTILITY(U,$J,358.3,7804,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7804,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,7804,1,4,0)
+ ;;=4^W18.40XD
+ ;;^UTILITY(U,$J,358.3,7804,2)
+ ;;=^5059819
+ ;;^UTILITY(U,$J,358.3,7805,0)
+ ;;=W18.41XA^^30^415^107
+ ;;^UTILITY(U,$J,358.3,7805,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7805,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping on Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,7805,1,4,0)
+ ;;=4^W18.41XA
+ ;;^UTILITY(U,$J,358.3,7805,2)
+ ;;=^5059821
+ ;;^UTILITY(U,$J,358.3,7806,0)
+ ;;=W18.41XD^^30^415^108
+ ;;^UTILITY(U,$J,358.3,7806,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7806,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping on Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,7806,1,4,0)
+ ;;=4^W18.41XD
+ ;;^UTILITY(U,$J,358.3,7806,2)
+ ;;=^5059822
+ ;;^UTILITY(U,$J,358.3,7807,0)
+ ;;=W18.42XA^^30^415^109
+ ;;^UTILITY(U,$J,358.3,7807,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7807,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping into Hole,Init Encntr
+ ;;^UTILITY(U,$J,358.3,7807,1,4,0)
+ ;;=4^W18.42XA
+ ;;^UTILITY(U,$J,358.3,7807,2)
+ ;;=^5059824
+ ;;^UTILITY(U,$J,358.3,7808,0)
+ ;;=W18.42XD^^30^415^110
+ ;;^UTILITY(U,$J,358.3,7808,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7808,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping into Hole,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,7808,1,4,0)
+ ;;=4^W18.42XD
+ ;;^UTILITY(U,$J,358.3,7808,2)
+ ;;=^5059825
+ ;;^UTILITY(U,$J,358.3,7809,0)
+ ;;=W18.43XA^^30^415^103
+ ;;^UTILITY(U,$J,358.3,7809,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7809,1,3,0)
+ ;;=3^Slipping/Tripping w/o Fall d/t Step from One Level to Another,Init Encntr
+ ;;^UTILITY(U,$J,358.3,7809,1,4,0)
+ ;;=4^W18.43XA
+ ;;^UTILITY(U,$J,358.3,7809,2)
+ ;;=^5059827
+ ;;^UTILITY(U,$J,358.3,7810,0)
+ ;;=W18.43XD^^30^415^104
+ ;;^UTILITY(U,$J,358.3,7810,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7810,1,3,0)
+ ;;=3^Slipping/Tripping w/o Fall d/t Step from One Level to Another,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,7810,1,4,0)
+ ;;=4^W18.43XD
+ ;;^UTILITY(U,$J,358.3,7810,2)
+ ;;=^5059828

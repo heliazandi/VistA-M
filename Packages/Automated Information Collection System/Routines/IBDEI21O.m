@@ -1,64 +1,136 @@
-IBDEI21O ; ; 06-AUG-2015
+IBDEI21O ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQ(358.4)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.4,0,"GL")
- ;;=^IBE(358.4,
- ;;^DIC("B","IMP/EXP SELECTION GROUP",358.4)
- ;;=
- ;;^DIC(358.4,"%D",0)
- ;;=^^4^4^2940217^
- ;;^DIC(358.4,"%D",1,0)
- ;;= 
- ;;^DIC(358.4,"%D",2,0)
- ;;=This file is nearly identical to file #357.4. It is used by the
- ;;^DIC(358.4,"%D",3,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.4,"%D",4,0)
- ;;=that is being imported or exported.
- ;;^DD(358.4,0)
- ;;=FIELD^^.04^4
- ;;^DD(358.4,0,"DDA")
- ;;=N
- ;;^DD(358.4,0,"DT")
- ;;=2950717
- ;;^DD(358.4,0,"ID",.02)
- ;;=W "   ",$P(^(0),U,2)
- ;;^DD(358.4,0,"ID",.03)
- ;;=S %I=Y,Y=$S('$D(^(0)):"",$D(^IBE(358.2,+$P(^(0),U,3),0))#2:$P(^(0),U,1),1:""),C=$P(^DD(358.2,.01,0),U,2) D Y^DIQ:Y]"" W "   ",Y,@("$E("_DIC_"%I,0),0)") S Y=%I K %I
- ;;^DD(358.4,0,"IX","APO",358.4,.02)
- ;;=
- ;;^DD(358.4,0,"IX","APO1",358.4,.03)
- ;;=
- ;;^DD(358.4,0,"IX","B",358.4,.01)
- ;;=
- ;;^DD(358.4,0,"IX","D",358.4,.03)
- ;;=
- ;;^DD(358.4,0,"NM","IMP/EXP SELECTION GROUP")
- ;;=
- ;;^DD(358.4,0,"PT",358.3,.04)
- ;;=
- ;;^DD(358.4,0,"VRPK")
- ;;=IBD
- ;;^DD(358.4,.01,0)
- ;;=HEADER^RF^^0;1^K:$L(X)>40!($L(X)<1) X
- ;;^DD(358.4,.01,1,0)
- ;;=^.1
- ;;^DD(358.4,.01,1,1,0)
- ;;=358.4^B
- ;;^DD(358.4,.01,1,1,1)
- ;;=S ^IBE(358.4,"B",$E(X,1,30),DA)=""
- ;;^DD(358.4,.01,1,1,2)
- ;;=K ^IBE(358.4,"B",$E(X,1,30),DA)
- ;;^DD(358.4,.01,3)
- ;;=What text do you want to appear at the top of this group?
- ;;^DD(358.4,.01,21,0)
- ;;=^^2^2^2930604^^^^
- ;;^DD(358.4,.01,21,1,0)
- ;;= 
- ;;^DD(358.4,.01,21,2,0)
- ;;=The name given to a group of selections appearing on a selection list.
- ;;^DD(358.4,.01,"DEL",1,0)
- ;;=I '$G(IBLISTPR) W "...Selection Groups can only be deleted through the Encounter Form Utilities!"
- ;;^DD(358.4,.01,"DT")
- ;;=2930604
+ ;;^UTILITY(U,$J,358.3,34683,1,4,0)
+ ;;=4^K08.109
+ ;;^UTILITY(U,$J,358.3,34683,2)
+ ;;=^5008410
+ ;;^UTILITY(U,$J,358.3,34684,0)
+ ;;=K08.401^^131^1692^133
+ ;;^UTILITY(U,$J,358.3,34684,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34684,1,3,0)
+ ;;=3^Partial Loss of Teeth,Unspec,Class I
+ ;;^UTILITY(U,$J,358.3,34684,1,4,0)
+ ;;=4^K08.401
+ ;;^UTILITY(U,$J,358.3,34684,2)
+ ;;=^5008432
+ ;;^UTILITY(U,$J,358.3,34685,0)
+ ;;=K08.402^^131^1692^134
+ ;;^UTILITY(U,$J,358.3,34685,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34685,1,3,0)
+ ;;=3^Partial Loss of Teeth,Unspec,Class II
+ ;;^UTILITY(U,$J,358.3,34685,1,4,0)
+ ;;=4^K08.402
+ ;;^UTILITY(U,$J,358.3,34685,2)
+ ;;=^5008433
+ ;;^UTILITY(U,$J,358.3,34686,0)
+ ;;=K08.403^^131^1692^135
+ ;;^UTILITY(U,$J,358.3,34686,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34686,1,3,0)
+ ;;=3^Partial Loss of Teeth,Unspec,Class III
+ ;;^UTILITY(U,$J,358.3,34686,1,4,0)
+ ;;=4^K08.403
+ ;;^UTILITY(U,$J,358.3,34686,2)
+ ;;=^5008434
+ ;;^UTILITY(U,$J,358.3,34687,0)
+ ;;=K08.404^^131^1692^136
+ ;;^UTILITY(U,$J,358.3,34687,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34687,1,3,0)
+ ;;=3^Partial Loss of Teeth,Unspec,Class IV
+ ;;^UTILITY(U,$J,358.3,34687,1,4,0)
+ ;;=4^K08.404
+ ;;^UTILITY(U,$J,358.3,34687,2)
+ ;;=^5008435
+ ;;^UTILITY(U,$J,358.3,34688,0)
+ ;;=K08.409^^131^1692^137
+ ;;^UTILITY(U,$J,358.3,34688,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34688,1,3,0)
+ ;;=3^Partial Loss of Teeth,Unspec,Class Unspec
+ ;;^UTILITY(U,$J,358.3,34688,1,4,0)
+ ;;=4^K08.409
+ ;;^UTILITY(U,$J,358.3,34688,2)
+ ;;=^5008436
+ ;;^UTILITY(U,$J,358.3,34689,0)
+ ;;=N39.42^^131^1692^93
+ ;;^UTILITY(U,$J,358.3,34689,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34689,1,3,0)
+ ;;=3^Incontinence w/o Sensory Awareness
+ ;;^UTILITY(U,$J,358.3,34689,1,4,0)
+ ;;=4^N39.42
+ ;;^UTILITY(U,$J,358.3,34689,2)
+ ;;=^5015681
+ ;;^UTILITY(U,$J,358.3,34690,0)
+ ;;=N39.43^^131^1692^143
+ ;;^UTILITY(U,$J,358.3,34690,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34690,1,3,0)
+ ;;=3^Post-Void Dribbling
+ ;;^UTILITY(U,$J,358.3,34690,1,4,0)
+ ;;=4^N39.43
+ ;;^UTILITY(U,$J,358.3,34690,2)
+ ;;=^5015682
+ ;;^UTILITY(U,$J,358.3,34691,0)
+ ;;=N39.44^^131^1692^123
+ ;;^UTILITY(U,$J,358.3,34691,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34691,1,3,0)
+ ;;=3^Nocturnal Enuresis
+ ;;^UTILITY(U,$J,358.3,34691,1,4,0)
+ ;;=4^N39.44
+ ;;^UTILITY(U,$J,358.3,34691,2)
+ ;;=^5015683
+ ;;^UTILITY(U,$J,358.3,34692,0)
+ ;;=N39.46^^131^1692^119
+ ;;^UTILITY(U,$J,358.3,34692,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34692,1,3,0)
+ ;;=3^Mixed Incontinence
+ ;;^UTILITY(U,$J,358.3,34692,1,4,0)
+ ;;=4^N39.46
+ ;;^UTILITY(U,$J,358.3,34692,2)
+ ;;=^5015685
+ ;;^UTILITY(U,$J,358.3,34693,0)
+ ;;=R06.01^^131^1692^127
+ ;;^UTILITY(U,$J,358.3,34693,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34693,1,3,0)
+ ;;=3^Orthopnea
+ ;;^UTILITY(U,$J,358.3,34693,1,4,0)
+ ;;=4^R06.01
+ ;;^UTILITY(U,$J,358.3,34693,2)
+ ;;=^186737
+ ;;^UTILITY(U,$J,358.3,34694,0)
+ ;;=R06.4^^131^1692^86
+ ;;^UTILITY(U,$J,358.3,34694,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34694,1,3,0)
+ ;;=3^Hyperventilation
+ ;;^UTILITY(U,$J,358.3,34694,1,4,0)
+ ;;=4^R06.4
+ ;;^UTILITY(U,$J,358.3,34694,2)
+ ;;=^5019186
+ ;;^UTILITY(U,$J,358.3,34695,0)
+ ;;=R06.6^^131^1692^82
+ ;;^UTILITY(U,$J,358.3,34695,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34695,1,3,0)
+ ;;=3^Hiccough
+ ;;^UTILITY(U,$J,358.3,34695,1,4,0)
+ ;;=4^R06.6
+ ;;^UTILITY(U,$J,358.3,34695,2)
+ ;;=^5019188
+ ;;^UTILITY(U,$J,358.3,34696,0)
+ ;;=R07.0^^131^1692^149
+ ;;^UTILITY(U,$J,358.3,34696,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34696,1,3,0)
+ ;;=3^Sore Throat
+ ;;^UTILITY(U,$J,358.3,34696,1,4,0)
+ ;;=4^R07.0

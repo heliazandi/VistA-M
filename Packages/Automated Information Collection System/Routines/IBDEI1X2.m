@@ -1,134 +1,134 @@
-IBDEI1X2 ; ; 06-AUG-2015
+IBDEI1X2 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33687,1,0)
+ ;;^UTILITY(U,$J,358.3,32514,0)
+ ;;=I87.001^^126^1617^11
+ ;;^UTILITY(U,$J,358.3,32514,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33687,1,3,0)
- ;;=3^Oligomenorrhea,Secondary
- ;;^UTILITY(U,$J,358.3,33687,1,4,0)
- ;;=4^N91.4
- ;;^UTILITY(U,$J,358.3,33687,2)
- ;;=^5015906
- ;;^UTILITY(U,$J,358.3,33688,0)
- ;;=N91.5^^182^2008^38
- ;;^UTILITY(U,$J,358.3,33688,1,0)
+ ;;^UTILITY(U,$J,358.3,32514,1,3,0)
+ ;;=3^Postrhomb syndr w/o compl of rt lwr extrem
+ ;;^UTILITY(U,$J,358.3,32514,1,4,0)
+ ;;=4^I87.001
+ ;;^UTILITY(U,$J,358.3,32514,2)
+ ;;=^5008027
+ ;;^UTILITY(U,$J,358.3,32515,0)
+ ;;=I80.01^^126^1617^8
+ ;;^UTILITY(U,$J,358.3,32515,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33688,1,3,0)
- ;;=3^Oligomenorrhea,Unspec
- ;;^UTILITY(U,$J,358.3,33688,1,4,0)
- ;;=4^N91.5
- ;;^UTILITY(U,$J,358.3,33688,2)
- ;;=^5015907
- ;;^UTILITY(U,$J,358.3,33689,0)
- ;;=N92.0^^182^2008^20
- ;;^UTILITY(U,$J,358.3,33689,1,0)
+ ;;^UTILITY(U,$J,358.3,32515,1,3,0)
+ ;;=3^Phlebitis & Thromboph,Right Lower Sprfcl Vessels
+ ;;^UTILITY(U,$J,358.3,32515,1,4,0)
+ ;;=4^I80.01
+ ;;^UTILITY(U,$J,358.3,32515,2)
+ ;;=^5007821
+ ;;^UTILITY(U,$J,358.3,32516,0)
+ ;;=I80.02^^126^1617^6
+ ;;^UTILITY(U,$J,358.3,32516,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33689,1,3,0)
- ;;=3^Excessive/Frequent Menstruation w/ Regular Cycle
- ;;^UTILITY(U,$J,358.3,33689,1,4,0)
- ;;=4^N92.0
- ;;^UTILITY(U,$J,358.3,33689,2)
- ;;=^5015908
- ;;^UTILITY(U,$J,358.3,33690,0)
- ;;=N92.6^^182^2008^28
- ;;^UTILITY(U,$J,358.3,33690,1,0)
+ ;;^UTILITY(U,$J,358.3,32516,1,3,0)
+ ;;=3^Phlebitis & Thromboph,Left Lower Sprfcl Vessels
+ ;;^UTILITY(U,$J,358.3,32516,1,4,0)
+ ;;=4^I80.02
+ ;;^UTILITY(U,$J,358.3,32516,2)
+ ;;=^5007822
+ ;;^UTILITY(U,$J,358.3,32517,0)
+ ;;=I80.03^^126^1617^4
+ ;;^UTILITY(U,$J,358.3,32517,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33690,1,3,0)
- ;;=3^Irregular Menstruation,Unspec
- ;;^UTILITY(U,$J,358.3,33690,1,4,0)
- ;;=4^N92.6
- ;;^UTILITY(U,$J,358.3,33690,2)
- ;;=^5015913
- ;;^UTILITY(U,$J,358.3,33691,0)
- ;;=N92.5^^182^2008^27
- ;;^UTILITY(U,$J,358.3,33691,1,0)
+ ;;^UTILITY(U,$J,358.3,32517,1,3,0)
+ ;;=3^Phlebitis & Thromboph,Bilateral Lower Sprfcl Vessels
+ ;;^UTILITY(U,$J,358.3,32517,1,4,0)
+ ;;=4^I80.03
+ ;;^UTILITY(U,$J,358.3,32517,2)
+ ;;=^5007823
+ ;;^UTILITY(U,$J,358.3,32518,0)
+ ;;=I80.11^^126^1617^7
+ ;;^UTILITY(U,$J,358.3,32518,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33691,1,3,0)
- ;;=3^Irregular Menstruation,Other Spec
- ;;^UTILITY(U,$J,358.3,33691,1,4,0)
- ;;=4^N92.5
- ;;^UTILITY(U,$J,358.3,33691,2)
- ;;=^5015912
- ;;^UTILITY(U,$J,358.3,33692,0)
- ;;=N92.3^^182^2008^41
- ;;^UTILITY(U,$J,358.3,33692,1,0)
+ ;;^UTILITY(U,$J,358.3,32518,1,3,0)
+ ;;=3^Phlebitis & Thromboph,Right Femoral Vein
+ ;;^UTILITY(U,$J,358.3,32518,1,4,0)
+ ;;=4^I80.11
+ ;;^UTILITY(U,$J,358.3,32518,2)
+ ;;=^5007825
+ ;;^UTILITY(U,$J,358.3,32519,0)
+ ;;=I80.12^^126^1617^5
+ ;;^UTILITY(U,$J,358.3,32519,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33692,1,3,0)
- ;;=3^Ovulation Bleeding
- ;;^UTILITY(U,$J,358.3,33692,1,4,0)
- ;;=4^N92.3
- ;;^UTILITY(U,$J,358.3,33692,2)
- ;;=^270570
- ;;^UTILITY(U,$J,358.3,33693,0)
- ;;=N89.7^^182^2008^23
- ;;^UTILITY(U,$J,358.3,33693,1,0)
+ ;;^UTILITY(U,$J,358.3,32519,1,3,0)
+ ;;=3^Phlebitis & Thromboph,Left Femoral Vein
+ ;;^UTILITY(U,$J,358.3,32519,1,4,0)
+ ;;=4^I80.12
+ ;;^UTILITY(U,$J,358.3,32519,2)
+ ;;=^5007826
+ ;;^UTILITY(U,$J,358.3,32520,0)
+ ;;=I80.13^^126^1617^3
+ ;;^UTILITY(U,$J,358.3,32520,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33693,1,3,0)
- ;;=3^Hematocolpos
- ;;^UTILITY(U,$J,358.3,33693,1,4,0)
- ;;=4^N89.7
- ;;^UTILITY(U,$J,358.3,33693,2)
- ;;=^5015889
- ;;^UTILITY(U,$J,358.3,33694,0)
- ;;=N93.8^^182^2008^2
- ;;^UTILITY(U,$J,358.3,33694,1,0)
+ ;;^UTILITY(U,$J,358.3,32520,1,3,0)
+ ;;=3^Phlebitis & Thromboph,Bilateral Femora Vein
+ ;;^UTILITY(U,$J,358.3,32520,1,4,0)
+ ;;=4^I80.13
+ ;;^UTILITY(U,$J,358.3,32520,2)
+ ;;=^5007827
+ ;;^UTILITY(U,$J,358.3,32521,0)
+ ;;=L98.0^^126^1617^21
+ ;;^UTILITY(U,$J,358.3,32521,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33694,1,3,0)
- ;;=3^Abnormal Uterine/Vaginal Bleeding,Other Spec
- ;;^UTILITY(U,$J,358.3,33694,1,4,0)
- ;;=4^N93.8
- ;;^UTILITY(U,$J,358.3,33694,2)
- ;;=^5015915
- ;;^UTILITY(U,$J,358.3,33695,0)
- ;;=N93.9^^182^2008^3
- ;;^UTILITY(U,$J,358.3,33695,1,0)
+ ;;^UTILITY(U,$J,358.3,32521,1,3,0)
+ ;;=3^Pyogenic granuloma
+ ;;^UTILITY(U,$J,358.3,32521,1,4,0)
+ ;;=4^L98.0
+ ;;^UTILITY(U,$J,358.3,32521,2)
+ ;;=^5009574
+ ;;^UTILITY(U,$J,358.3,32522,0)
+ ;;=L40.0^^126^1617^16
+ ;;^UTILITY(U,$J,358.3,32522,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33695,1,3,0)
- ;;=3^Abnormal Uterine/Vaginal Bleeding,Unspec
- ;;^UTILITY(U,$J,358.3,33695,1,4,0)
- ;;=4^N93.9
- ;;^UTILITY(U,$J,358.3,33695,2)
- ;;=^5015916
- ;;^UTILITY(U,$J,358.3,33696,0)
- ;;=N92.4^^182^2008^19
- ;;^UTILITY(U,$J,358.3,33696,1,0)
+ ;;^UTILITY(U,$J,358.3,32522,1,3,0)
+ ;;=3^Psoriasis vulgaris
+ ;;^UTILITY(U,$J,358.3,32522,1,4,0)
+ ;;=4^L40.0
+ ;;^UTILITY(U,$J,358.3,32522,2)
+ ;;=^5009160
+ ;;^UTILITY(U,$J,358.3,32523,0)
+ ;;=L40.1^^126^1617^19
+ ;;^UTILITY(U,$J,358.3,32523,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33696,1,3,0)
- ;;=3^Excessive Bleeding in Premenopausal Period
- ;;^UTILITY(U,$J,358.3,33696,1,4,0)
- ;;=4^N92.4
- ;;^UTILITY(U,$J,358.3,33696,2)
- ;;=^5015911
- ;;^UTILITY(U,$J,358.3,33697,0)
- ;;=N95.0^^182^2008^46
- ;;^UTILITY(U,$J,358.3,33697,1,0)
+ ;;^UTILITY(U,$J,358.3,32523,1,3,0)
+ ;;=3^Pustular Psoriasis,Generalized
+ ;;^UTILITY(U,$J,358.3,32523,1,4,0)
+ ;;=4^L40.1
+ ;;^UTILITY(U,$J,358.3,32523,2)
+ ;;=^5009161
+ ;;^UTILITY(U,$J,358.3,32524,0)
+ ;;=L40.9^^126^1617^17
+ ;;^UTILITY(U,$J,358.3,32524,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33697,1,3,0)
- ;;=3^Postmenopausal Bleeding
- ;;^UTILITY(U,$J,358.3,33697,1,4,0)
- ;;=4^N95.0
- ;;^UTILITY(U,$J,358.3,33697,2)
- ;;=^97040
- ;;^UTILITY(U,$J,358.3,33698,0)
- ;;=N95.1^^182^2008^33
- ;;^UTILITY(U,$J,358.3,33698,1,0)
+ ;;^UTILITY(U,$J,358.3,32524,1,3,0)
+ ;;=3^Psoriasis, unspec
+ ;;^UTILITY(U,$J,358.3,32524,1,4,0)
+ ;;=4^L40.9
+ ;;^UTILITY(U,$J,358.3,32524,2)
+ ;;=^5009171
+ ;;^UTILITY(U,$J,358.3,32525,0)
+ ;;=L40.3^^126^1617^20
+ ;;^UTILITY(U,$J,358.3,32525,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33698,1,3,0)
- ;;=3^Menopausal/Female Climacteric States
- ;;^UTILITY(U,$J,358.3,33698,1,4,0)
- ;;=4^N95.1
- ;;^UTILITY(U,$J,358.3,33698,2)
- ;;=^5015927
- ;;^UTILITY(U,$J,358.3,33699,0)
- ;;=N97.0^^182^2008^21
- ;;^UTILITY(U,$J,358.3,33699,1,0)
+ ;;^UTILITY(U,$J,358.3,32525,1,3,0)
+ ;;=3^Pustulosis palmaris et plantaris
+ ;;^UTILITY(U,$J,358.3,32525,1,4,0)
+ ;;=4^L40.3
+ ;;^UTILITY(U,$J,358.3,32525,2)
+ ;;=^5009163
+ ;;^UTILITY(U,$J,358.3,32526,0)
+ ;;=L40.8^^126^1617^15
+ ;;^UTILITY(U,$J,358.3,32526,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33699,1,3,0)
- ;;=3^Female Infertility Associated w/ Anovulation
- ;;^UTILITY(U,$J,358.3,33699,1,4,0)
- ;;=4^N97.0
- ;;^UTILITY(U,$J,358.3,33699,2)
- ;;=^5015931
- ;;^UTILITY(U,$J,358.3,33700,0)
- ;;=N97.9^^182^2008^22
+ ;;^UTILITY(U,$J,358.3,32526,1,3,0)
+ ;;=3^Psoriasis NEC
+ ;;^UTILITY(U,$J,358.3,32526,1,4,0)
+ ;;=4^L40.8
+ ;;^UTILITY(U,$J,358.3,32526,2)
+ ;;=^271917

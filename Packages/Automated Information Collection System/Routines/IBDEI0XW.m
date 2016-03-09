@@ -1,130 +1,134 @@
-IBDEI0XW ; ; 06-AUG-2015
+IBDEI0XW ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16503,1,3,0)
- ;;=3^511.89
- ;;^UTILITY(U,$J,358.3,16503,1,4,0)
- ;;=4^Effusion NEC Exc TB
- ;;^UTILITY(U,$J,358.3,16503,2)
- ;;=^336604
- ;;^UTILITY(U,$J,358.3,16504,0)
- ;;=039.1^^84^987^30
- ;;^UTILITY(U,$J,358.3,16504,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16504,1,3,0)
- ;;=3^039.1
- ;;^UTILITY(U,$J,358.3,16504,1,4,0)
- ;;=4^Nocardiosis, Pulmonary
- ;;^UTILITY(U,$J,358.3,16504,2)
- ;;=Nocardiosis, Pulmonary^266495
- ;;^UTILITY(U,$J,358.3,16505,0)
- ;;=466.0^^84^987^7
- ;;^UTILITY(U,$J,358.3,16505,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16505,1,3,0)
- ;;=3^466.0
- ;;^UTILITY(U,$J,358.3,16505,1,4,0)
- ;;=4^Bronchitis,Acute
- ;;^UTILITY(U,$J,358.3,16505,2)
- ;;=Acute Bronchitis^259084
- ;;^UTILITY(U,$J,358.3,16506,0)
- ;;=518.6^^84^987^2
- ;;^UTILITY(U,$J,358.3,16506,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16506,1,3,0)
- ;;=3^518.6
- ;;^UTILITY(U,$J,358.3,16506,1,4,0)
- ;;=4^Allergic Bronchopulm Aspergillosis
- ;;^UTILITY(U,$J,358.3,16506,2)
- ;;=Allergic Bronchopulm Aspergillosis^10945
- ;;^UTILITY(U,$J,358.3,16507,0)
- ;;=486.^^84^987^58
- ;;^UTILITY(U,$J,358.3,16507,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16507,1,3,0)
- ;;=3^486.
- ;;^UTILITY(U,$J,358.3,16507,1,4,0)
- ;;=4^Pneumonia,Organism Unspec
- ;;^UTILITY(U,$J,358.3,16507,2)
- ;;=Atypical Pneumonia^95632
- ;;^UTILITY(U,$J,358.3,16508,0)
- ;;=482.9^^84^987^5
- ;;^UTILITY(U,$J,358.3,16508,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16508,1,3,0)
- ;;=3^482.9
- ;;^UTILITY(U,$J,358.3,16508,1,4,0)
- ;;=4^Bacterial Pneumonia,Unspec
- ;;^UTILITY(U,$J,358.3,16508,2)
- ;;=Bacterial Pneumonia^12347
- ;;^UTILITY(U,$J,358.3,16509,0)
- ;;=466.19^^84^987^1
- ;;^UTILITY(U,$J,358.3,16509,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16509,1,3,0)
- ;;=3^466.19
- ;;^UTILITY(U,$J,358.3,16509,1,4,0)
- ;;=4^Acute Bronchiolitis
- ;;^UTILITY(U,$J,358.3,16509,2)
- ;;=Acute Bronchiolitis^304310
- ;;^UTILITY(U,$J,358.3,16510,0)
- ;;=491.21^^84^987^11
- ;;^UTILITY(U,$J,358.3,16510,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16510,1,3,0)
- ;;=3^491.21
- ;;^UTILITY(U,$J,358.3,16510,1,4,0)
- ;;=4^COPD w/ Chr Bronchitis,Acute Exacerbation
- ;;^UTILITY(U,$J,358.3,16510,2)
- ;;=COPD with Chronic Bronchitis, Acute exacerbation^269954
- ;;^UTILITY(U,$J,358.3,16511,0)
- ;;=491.20^^84^987^12
- ;;^UTILITY(U,$J,358.3,16511,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16511,1,3,0)
- ;;=3^491.20
- ;;^UTILITY(U,$J,358.3,16511,1,4,0)
- ;;=4^COPD w/ Chr Bronchitis,Stable
- ;;^UTILITY(U,$J,358.3,16511,2)
- ;;=COPD with Chronic Bronchitis, Stable^269953
- ;;^UTILITY(U,$J,358.3,16512,0)
- ;;=116.0^^84^987^15
- ;;^UTILITY(U,$J,358.3,16512,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16512,1,3,0)
- ;;=3^116.0
- ;;^UTILITY(U,$J,358.3,16512,1,4,0)
- ;;=4^Fungus, Blastomycosis
- ;;^UTILITY(U,$J,358.3,16512,2)
- ;;=Blastomycosis^15213
- ;;^UTILITY(U,$J,358.3,16513,0)
- ;;=117.5^^84^987^17
- ;;^UTILITY(U,$J,358.3,16513,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16513,1,3,0)
- ;;=3^117.5
- ;;^UTILITY(U,$J,358.3,16513,1,4,0)
- ;;=4^Fungus, Cryptococcosis
- ;;^UTILITY(U,$J,358.3,16513,2)
- ;;=Cryptococcosis^29608
- ;;^UTILITY(U,$J,358.3,16514,0)
- ;;=117.3^^84^987^14
- ;;^UTILITY(U,$J,358.3,16514,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16514,1,3,0)
- ;;=3^117.3
- ;;^UTILITY(U,$J,358.3,16514,1,4,0)
- ;;=4^Fungus, Aspergillosis
- ;;^UTILITY(U,$J,358.3,16514,2)
- ;;=Aspergillosis^10935
- ;;^UTILITY(U,$J,358.3,16515,0)
- ;;=115.95^^84^987^18
- ;;^UTILITY(U,$J,358.3,16515,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16515,1,3,0)
- ;;=3^115.95
- ;;^UTILITY(U,$J,358.3,16515,1,4,0)
- ;;=4^Fungus, Histoplasmosis Pneumonia
- ;;^UTILITY(U,$J,358.3,16515,2)
- ;;=Histoplasmosis Pneumonia^266908
+ ;;^UTILITY(U,$J,358.3,15891,1,3,0)
+ ;;=3^Bone Biopsy, Trocar/Needle
+ ;;^UTILITY(U,$J,358.3,15892,0)
+ ;;=62270^^59^706^9^^^^1
+ ;;^UTILITY(U,$J,358.3,15892,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15892,1,1,0)
+ ;;=1^62270
+ ;;^UTILITY(U,$J,358.3,15892,1,3,0)
+ ;;=3^Lumbar Puncture
+ ;;^UTILITY(U,$J,358.3,15893,0)
+ ;;=45300^^59^706^11^^^^1
+ ;;^UTILITY(U,$J,358.3,15893,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15893,1,1,0)
+ ;;=1^45300
+ ;;^UTILITY(U,$J,358.3,15893,1,3,0)
+ ;;=3^Proctosigmoidoscopy
+ ;;^UTILITY(U,$J,358.3,15894,0)
+ ;;=31575^^59^706^8^^^^1
+ ;;^UTILITY(U,$J,358.3,15894,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15894,1,1,0)
+ ;;=1^31575
+ ;;^UTILITY(U,$J,358.3,15894,1,3,0)
+ ;;=3^Laryngoscopy,flex fibroptic,diag
+ ;;^UTILITY(U,$J,358.3,15895,0)
+ ;;=38220^^59^706^3^^^^1
+ ;;^UTILITY(U,$J,358.3,15895,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15895,1,1,0)
+ ;;=1^38220
+ ;;^UTILITY(U,$J,358.3,15895,1,3,0)
+ ;;=3^Bone Marrow Aspiration
+ ;;^UTILITY(U,$J,358.3,15896,0)
+ ;;=38221^^59^706^4^^^^1
+ ;;^UTILITY(U,$J,358.3,15896,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15896,1,1,0)
+ ;;=1^38221
+ ;;^UTILITY(U,$J,358.3,15896,1,3,0)
+ ;;=3^Bone Marrow Biopsy, Needle/Trocar
+ ;;^UTILITY(U,$J,358.3,15897,0)
+ ;;=36589^^59^706^5^^^^1
+ ;;^UTILITY(U,$J,358.3,15897,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15897,1,1,0)
+ ;;=1^36589
+ ;;^UTILITY(U,$J,358.3,15897,1,3,0)
+ ;;=3^Hickman Cath Removal
+ ;;^UTILITY(U,$J,358.3,15898,0)
+ ;;=49082^^59^706^10^^^^1
+ ;;^UTILITY(U,$J,358.3,15898,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15898,1,1,0)
+ ;;=1^49082
+ ;;^UTILITY(U,$J,358.3,15898,1,3,0)
+ ;;=3^Paracentesis (Abdominal)
+ ;;^UTILITY(U,$J,358.3,15899,0)
+ ;;=32554^^59^706^12^^^^1
+ ;;^UTILITY(U,$J,358.3,15899,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15899,1,1,0)
+ ;;=1^32554
+ ;;^UTILITY(U,$J,358.3,15899,1,3,0)
+ ;;=3^Thoracentesis
+ ;;^UTILITY(U,$J,358.3,15900,0)
+ ;;=31505^^59^706^6^^^^1
+ ;;^UTILITY(U,$J,358.3,15900,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15900,1,1,0)
+ ;;=1^31505
+ ;;^UTILITY(U,$J,358.3,15900,1,3,0)
+ ;;=3^Indirect Laryngoscopy
+ ;;^UTILITY(U,$J,358.3,15901,0)
+ ;;=31510^^59^706^7^^^^1
+ ;;^UTILITY(U,$J,358.3,15901,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15901,1,1,0)
+ ;;=1^31510
+ ;;^UTILITY(U,$J,358.3,15901,1,3,0)
+ ;;=3^Indirect Laryngoscopy w/Biopsy
+ ;;^UTILITY(U,$J,358.3,15902,0)
+ ;;=36430^^59^706^1^^^^1
+ ;;^UTILITY(U,$J,358.3,15902,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15902,1,1,0)
+ ;;=1^36430
+ ;;^UTILITY(U,$J,358.3,15902,1,3,0)
+ ;;=3^Blood Transfusion
+ ;;^UTILITY(U,$J,358.3,15903,0)
+ ;;=90732^^59^707^2^^^^1
+ ;;^UTILITY(U,$J,358.3,15903,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15903,1,1,0)
+ ;;=1^90732
+ ;;^UTILITY(U,$J,358.3,15903,1,3,0)
+ ;;=3^Pneumococcal Vaccine
+ ;;^UTILITY(U,$J,358.3,15904,0)
+ ;;=90658^^59^707^1^^^^1
+ ;;^UTILITY(U,$J,358.3,15904,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15904,1,1,0)
+ ;;=1^90658
+ ;;^UTILITY(U,$J,358.3,15904,1,3,0)
+ ;;=3^Flu Vaccine IM (Flulaval)
+ ;;^UTILITY(U,$J,358.3,15905,0)
+ ;;=99195^^59^708^21^^^^1
+ ;;^UTILITY(U,$J,358.3,15905,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15905,1,1,0)
+ ;;=1^99195
+ ;;^UTILITY(U,$J,358.3,15905,1,3,0)
+ ;;=3^Phlebotomy
+ ;;^UTILITY(U,$J,358.3,15906,0)
+ ;;=96450^^59^708^17^^^^1
+ ;;^UTILITY(U,$J,358.3,15906,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15906,1,1,0)
+ ;;=1^96450
+ ;;^UTILITY(U,$J,358.3,15906,1,3,0)
+ ;;=3^Chemotherapy, Into CNS
+ ;;^UTILITY(U,$J,358.3,15907,0)
+ ;;=96420^^59^708^9^^^^1
+ ;;^UTILITY(U,$J,358.3,15907,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,15907,1,1,0)
+ ;;=1^96420
+ ;;^UTILITY(U,$J,358.3,15907,1,3,0)
+ ;;=3^Chemo, IA push

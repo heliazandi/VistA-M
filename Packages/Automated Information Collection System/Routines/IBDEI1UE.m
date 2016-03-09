@@ -1,132 +1,122 @@
-IBDEI1UE ; ; 06-AUG-2015
+IBDEI1UE ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32445,2)
- ;;=^5008527
- ;;^UTILITY(U,$J,358.3,32446,0)
- ;;=K27.9^^182^1987^66
- ;;^UTILITY(U,$J,358.3,32446,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32446,1,3,0)
- ;;=3^Peptic Ulcer w/o Hemorrhage/Perforation,Unspec
- ;;^UTILITY(U,$J,358.3,32446,1,4,0)
- ;;=4^K27.9
- ;;^UTILITY(U,$J,358.3,32446,2)
- ;;=^5008536
- ;;^UTILITY(U,$J,358.3,32447,0)
- ;;=K29.70^^182^1987^46
- ;;^UTILITY(U,$J,358.3,32447,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32447,1,3,0)
- ;;=3^Gastritis w/o Bleeding,Unspec
- ;;^UTILITY(U,$J,358.3,32447,1,4,0)
- ;;=4^K29.70
- ;;^UTILITY(U,$J,358.3,32447,2)
- ;;=^5008552
- ;;^UTILITY(U,$J,358.3,32448,0)
- ;;=K29.90^^182^1987^47
- ;;^UTILITY(U,$J,358.3,32448,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32448,1,3,0)
- ;;=3^Gastroduodenitis w/o Bleeding,Unspec
- ;;^UTILITY(U,$J,358.3,32448,1,4,0)
- ;;=4^K29.90
- ;;^UTILITY(U,$J,358.3,32448,2)
- ;;=^5008556
- ;;^UTILITY(U,$J,358.3,32449,0)
- ;;=K30.^^182^1987^42
- ;;^UTILITY(U,$J,358.3,32449,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32449,1,3,0)
- ;;=3^Dyspepsia,Functional
- ;;^UTILITY(U,$J,358.3,32449,1,4,0)
- ;;=4^K30.
- ;;^UTILITY(U,$J,358.3,32449,2)
- ;;=^5008558
- ;;^UTILITY(U,$J,358.3,32450,0)
- ;;=K31.89^^182^1987^31
- ;;^UTILITY(U,$J,358.3,32450,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32450,1,3,0)
- ;;=3^Diseases of Stomach & Duodenum,Other
- ;;^UTILITY(U,$J,358.3,32450,1,4,0)
- ;;=4^K31.89
- ;;^UTILITY(U,$J,358.3,32450,2)
- ;;=^5008569
- ;;^UTILITY(U,$J,358.3,32451,0)
- ;;=K31.9^^182^1987^30
- ;;^UTILITY(U,$J,358.3,32451,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32451,1,3,0)
- ;;=3^Disease of Stomach & Duodenum,Unspec
- ;;^UTILITY(U,$J,358.3,32451,1,4,0)
- ;;=4^K31.9
- ;;^UTILITY(U,$J,358.3,32451,2)
- ;;=^5008570
- ;;^UTILITY(U,$J,358.3,32452,0)
- ;;=K40.90^^182^1987^63
- ;;^UTILITY(U,$J,358.3,32452,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32452,1,3,0)
- ;;=3^Inguinal Hernia,Unilat w/o Obst or Gangrene
- ;;^UTILITY(U,$J,358.3,32452,1,4,0)
- ;;=4^K40.90
- ;;^UTILITY(U,$J,358.3,32452,2)
- ;;=^5008591
- ;;^UTILITY(U,$J,358.3,32453,0)
- ;;=K40.20^^182^1987^62
- ;;^UTILITY(U,$J,358.3,32453,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32453,1,3,0)
- ;;=3^Inguinal Hernia,Bilat w/o Obst or Gangrene
- ;;^UTILITY(U,$J,358.3,32453,1,4,0)
- ;;=4^K40.20
- ;;^UTILITY(U,$J,358.3,32453,2)
- ;;=^5008585
- ;;^UTILITY(U,$J,358.3,32454,0)
- ;;=K44.9^^182^1987^28
- ;;^UTILITY(U,$J,358.3,32454,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32454,1,3,0)
- ;;=3^Diaphragmatic Hernia w/o Obst or Gangrene
- ;;^UTILITY(U,$J,358.3,32454,1,4,0)
- ;;=4^K44.9
- ;;^UTILITY(U,$J,358.3,32454,2)
- ;;=^5008617
- ;;^UTILITY(U,$J,358.3,32455,0)
- ;;=K46.9^^182^1987^1
- ;;^UTILITY(U,$J,358.3,32455,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32455,1,3,0)
- ;;=3^Abdominal Hernia w/o Obst or Gangrene,Unspec
- ;;^UTILITY(U,$J,358.3,32455,1,4,0)
- ;;=4^K46.9
- ;;^UTILITY(U,$J,358.3,32455,2)
- ;;=^5008623
- ;;^UTILITY(U,$J,358.3,32456,0)
- ;;=K50.90^^182^1987^26
- ;;^UTILITY(U,$J,358.3,32456,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32456,1,3,0)
- ;;=3^Crohn's Disease w/o Complications,Unspec
- ;;^UTILITY(U,$J,358.3,32456,1,4,0)
- ;;=4^K50.90
- ;;^UTILITY(U,$J,358.3,32456,2)
- ;;=^5008645
- ;;^UTILITY(U,$J,358.3,32457,0)
- ;;=K50.911^^182^1987^24
- ;;^UTILITY(U,$J,358.3,32457,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32457,1,3,0)
- ;;=3^Crohn's Disease w/ Rectal Bleeding,Unspec
- ;;^UTILITY(U,$J,358.3,32457,1,4,0)
- ;;=4^K50.911
- ;;^UTILITY(U,$J,358.3,32457,2)
- ;;=^5008646
- ;;^UTILITY(U,$J,358.3,32458,0)
- ;;=K50.912^^182^1987^22
- ;;^UTILITY(U,$J,358.3,32458,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32458,1,3,0)
- ;;=3^Crohn's Disease w/ Intestinal Obstruction,Unspec
+ ;;^UTILITY(U,$J,358.3,31287,0)
+ ;;=11011^^125^1579^3
+ ;;^UTILITY(U,$J,358.3,31287,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31287,1,2,0)
+ ;;=2^Debr Rmvl Foreign Material;Skin,Subq Tissue,Muscle
+ ;;^UTILITY(U,$J,358.3,31287,1,3,0)
+ ;;=3^11011
+ ;;^UTILITY(U,$J,358.3,31288,0)
+ ;;=11042^^125^1579^8
+ ;;^UTILITY(U,$J,358.3,31288,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31288,1,2,0)
+ ;;=2^Debridement; Skin & Subcutaneous Tissue
+ ;;^UTILITY(U,$J,358.3,31288,1,3,0)
+ ;;=3^11042
+ ;;^UTILITY(U,$J,358.3,31289,0)
+ ;;=11043^^125^1579^9
+ ;;^UTILITY(U,$J,358.3,31289,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31289,1,2,0)
+ ;;=2^Debridement; Skin, Subcutaneous Tissue & Muscle 
+ ;;^UTILITY(U,$J,358.3,31289,1,3,0)
+ ;;=3^11043
+ ;;^UTILITY(U,$J,358.3,31290,0)
+ ;;=11044^^125^1579^10
+ ;;^UTILITY(U,$J,358.3,31290,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31290,1,2,0)
+ ;;=2^Debridement; Skin, Subcutaneous Tissue, Muscle & Bone
+ ;;^UTILITY(U,$J,358.3,31290,1,3,0)
+ ;;=3^11044
+ ;;^UTILITY(U,$J,358.3,31291,0)
+ ;;=11012^^125^1579^1^^^^1
+ ;;^UTILITY(U,$J,358.3,31291,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31291,1,2,0)
+ ;;=2^Debr Rmvl Foreign Material;Muscle,Bone
+ ;;^UTILITY(U,$J,358.3,31291,1,3,0)
+ ;;=3^11012
+ ;;^UTILITY(U,$J,358.3,31292,0)
+ ;;=11001^^125^1579^5^^^^1
+ ;;^UTILITY(U,$J,358.3,31292,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31292,1,2,0)
+ ;;=2^Debr of extensive eczematous;ea addl 10%
+ ;;^UTILITY(U,$J,358.3,31292,1,3,0)
+ ;;=3^11001
+ ;;^UTILITY(U,$J,358.3,31293,0)
+ ;;=97597^^125^1579^13^^^^1
+ ;;^UTILITY(U,$J,358.3,31293,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31293,1,2,0)
+ ;;=2^Rmvl Devital Tiss <= 20 Sq cm
+ ;;^UTILITY(U,$J,358.3,31293,1,3,0)
+ ;;=3^97597
+ ;;^UTILITY(U,$J,358.3,31294,0)
+ ;;=97602^^125^1579^12^^^^1
+ ;;^UTILITY(U,$J,358.3,31294,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31294,1,2,0)
+ ;;=2^Non-Selective Debridement
+ ;;^UTILITY(U,$J,358.3,31294,1,3,0)
+ ;;=3^97602
+ ;;^UTILITY(U,$J,358.3,31295,0)
+ ;;=97610^^125^1579^11^^^^1
+ ;;^UTILITY(U,$J,358.3,31295,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31295,1,2,0)
+ ;;=2^Low Freq Non-Thermal US,Wound Assess
+ ;;^UTILITY(U,$J,358.3,31295,1,3,0)
+ ;;=3^97610
+ ;;^UTILITY(U,$J,358.3,31296,0)
+ ;;=97598^^125^1579^14^^^^1
+ ;;^UTILITY(U,$J,358.3,31296,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31296,1,2,0)
+ ;;=2^Rmvl Devital Tiss,Ea Addl 20 sq cm
+ ;;^UTILITY(U,$J,358.3,31296,1,3,0)
+ ;;=3^97598
+ ;;^UTILITY(U,$J,358.3,31297,0)
+ ;;=11721^^125^1579^7^^^^1
+ ;;^UTILITY(U,$J,358.3,31297,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31297,1,2,0)
+ ;;=2^Debride Nails any method,6 or more
+ ;;^UTILITY(U,$J,358.3,31297,1,3,0)
+ ;;=3^11721
+ ;;^UTILITY(U,$J,358.3,31298,0)
+ ;;=11720^^125^1579^6^^^^1
+ ;;^UTILITY(U,$J,358.3,31298,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31298,1,2,0)
+ ;;=2^Debride Nails any method,1-5
+ ;;^UTILITY(U,$J,358.3,31298,1,3,0)
+ ;;=3^11720
+ ;;^UTILITY(U,$J,358.3,31299,0)
+ ;;=11300^^125^1580^5
+ ;;^UTILITY(U,$J,358.3,31299,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31299,1,2,0)
+ ;;=2^Shaving of Epidermal Lesion,Single-Trunk,Arms,Legs;0.5cm or less
+ ;;^UTILITY(U,$J,358.3,31299,1,3,0)
+ ;;=3^11300
+ ;;^UTILITY(U,$J,358.3,31300,0)
+ ;;=11301^^125^1580^6
+ ;;^UTILITY(U,$J,358.3,31300,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31300,1,2,0)
+ ;;=2^Shaving of Epidermal Lesion,Single-Trunk,Arms,Legs;0.6cm-1.0cm
+ ;;^UTILITY(U,$J,358.3,31300,1,3,0)
+ ;;=3^11301
+ ;;^UTILITY(U,$J,358.3,31301,0)
+ ;;=11302^^125^1580^7
+ ;;^UTILITY(U,$J,358.3,31301,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31301,1,2,0)
+ ;;=2^Shaving of Epidermal Lesion,Single-Trunk,Arms,Legs;1.1cm-2.0cm

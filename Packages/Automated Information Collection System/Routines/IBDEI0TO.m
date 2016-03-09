@@ -1,112 +1,132 @@
-IBDEI0TO ; ; 06-AUG-2015
+IBDEI0TO ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14368,1,3,0)
- ;;=3^28111
- ;;^UTILITY(U,$J,358.3,14369,0)
- ;;=28112^^75^886^29^^^^1
- ;;^UTILITY(U,$J,358.3,14369,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14369,1,2,0)
- ;;=2^Ostectomy, complete excision; other metatarsal head (2nd, 3rd, 4th)
- ;;^UTILITY(U,$J,358.3,14369,1,3,0)
- ;;=3^28112
- ;;^UTILITY(U,$J,358.3,14370,0)
- ;;=28113^^75^886^27^^^^1
- ;;^UTILITY(U,$J,358.3,14370,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14370,1,2,0)
- ;;=2^Ostectomy, complete excision; 5th metatarsal head
- ;;^UTILITY(U,$J,358.3,14370,1,3,0)
- ;;=3^28113
- ;;^UTILITY(U,$J,358.3,14371,0)
- ;;=28114^^75^886^28^^^^1
- ;;^UTILITY(U,$J,358.3,14371,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14371,1,2,0)
- ;;=2^Ostectomy, complete excision; all metatarsal heads, with partial proximal phalangectomy, excluding first metatarsal 
- ;;^UTILITY(U,$J,358.3,14371,1,3,0)
- ;;=3^28114
- ;;^UTILITY(U,$J,358.3,14372,0)
- ;;=28140^^75^886^24^^^^1
- ;;^UTILITY(U,$J,358.3,14372,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14372,1,2,0)
- ;;=2^Metatarsectomy
- ;;^UTILITY(U,$J,358.3,14372,1,3,0)
- ;;=3^28140
- ;;^UTILITY(U,$J,358.3,14373,0)
- ;;=28119^^75^886^25^^^^1
- ;;^UTILITY(U,$J,358.3,14373,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14373,1,2,0)
- ;;=2^Ostectomy, calcaneus; for spur, with or without plantar fascial release
- ;;^UTILITY(U,$J,358.3,14373,1,3,0)
- ;;=3^28119
- ;;^UTILITY(U,$J,358.3,14374,0)
- ;;=28120^^75^886^32^^^^1
- ;;^UTILITY(U,$J,358.3,14374,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14374,1,2,0)
- ;;=2^Partial excision bone; talus or calcaneus
- ;;^UTILITY(U,$J,358.3,14374,1,3,0)
- ;;=3^28120
- ;;^UTILITY(U,$J,358.3,14375,0)
- ;;=28122^^75^886^33^^^^1
- ;;^UTILITY(U,$J,358.3,14375,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14375,1,2,0)
- ;;=2^Partial excision bone; tarsal or metatarsal bone, except talus or calcaneus
- ;;^UTILITY(U,$J,358.3,14375,1,3,0)
- ;;=3^28122
- ;;^UTILITY(U,$J,358.3,14376,0)
- ;;=28124^^75^886^31^^^^1
- ;;^UTILITY(U,$J,358.3,14376,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14376,1,2,0)
- ;;=2^Partial excision bone; phalanx of toe
- ;;^UTILITY(U,$J,358.3,14376,1,3,0)
- ;;=3^28124
- ;;^UTILITY(U,$J,358.3,14377,0)
- ;;=28153^^75^886^34^^^^1
- ;;^UTILITY(U,$J,358.3,14377,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14377,1,2,0)
- ;;=2^Resection, condyle(s), distal end of phalanx, each toe
- ;;^UTILITY(U,$J,358.3,14377,1,3,0)
- ;;=3^28153
- ;;^UTILITY(U,$J,358.3,14378,0)
- ;;=28160^^75^886^23^^^^1
- ;;^UTILITY(U,$J,358.3,14378,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14378,1,2,0)
- ;;=2^Hemiphalangectomy or interphalangeal joint excision, toe, proximal end of phalanx, each
- ;;^UTILITY(U,$J,358.3,14378,1,3,0)
- ;;=3^28160
- ;;^UTILITY(U,$J,358.3,14379,0)
- ;;=64774^^75^886^8^^^^1
- ;;^UTILITY(U,$J,358.3,14379,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14379,1,2,0)
- ;;=2^Excision of neuroma; cutaneous nerve, surgically identifiable
- ;;^UTILITY(U,$J,358.3,14379,1,3,0)
- ;;=3^64774
- ;;^UTILITY(U,$J,358.3,14380,0)
- ;;=64776^^75^886^9^^^^1
- ;;^UTILITY(U,$J,358.3,14380,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14380,1,2,0)
- ;;=2^Excision of neuroma; digital nerve, one or both, same digit
- ;;^UTILITY(U,$J,358.3,14380,1,3,0)
- ;;=3^64776
- ;;^UTILITY(U,$J,358.3,14381,0)
- ;;=64778^^75^886^10^^^^1
- ;;^UTILITY(U,$J,358.3,14381,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14381,1,2,0)
- ;;=2^Excision of neuroma; digital nerve, each additional digit (list separately in addition to code for primary procedure)
- ;;^UTILITY(U,$J,358.3,14381,1,3,0)
- ;;=3^64778
- ;;^UTILITY(U,$J,358.3,14382,0)
- ;;=64782^^75^886^11^^^^1
+ ;;^UTILITY(U,$J,358.3,13914,2)
+ ;;=^5010798
+ ;;^UTILITY(U,$J,358.3,13915,0)
+ ;;=M19.011^^53^599^135
+ ;;^UTILITY(U,$J,358.3,13915,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13915,1,3,0)
+ ;;=3^Primary Osteoarthritis of Right Shoulder
+ ;;^UTILITY(U,$J,358.3,13915,1,4,0)
+ ;;=4^M19.011
+ ;;^UTILITY(U,$J,358.3,13915,2)
+ ;;=^5010808
+ ;;^UTILITY(U,$J,358.3,13916,0)
+ ;;=M19.012^^53^599^129
+ ;;^UTILITY(U,$J,358.3,13916,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13916,1,3,0)
+ ;;=3^Primary Osteoarthritis of Left Shoulder
+ ;;^UTILITY(U,$J,358.3,13916,1,4,0)
+ ;;=4^M19.012
+ ;;^UTILITY(U,$J,358.3,13916,2)
+ ;;=^5010809
+ ;;^UTILITY(U,$J,358.3,13917,0)
+ ;;=M19.031^^53^599^136
+ ;;^UTILITY(U,$J,358.3,13917,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13917,1,3,0)
+ ;;=3^Primary Osteoarthritis of Right Wrist
+ ;;^UTILITY(U,$J,358.3,13917,1,4,0)
+ ;;=4^M19.031
+ ;;^UTILITY(U,$J,358.3,13917,2)
+ ;;=^5010814
+ ;;^UTILITY(U,$J,358.3,13918,0)
+ ;;=M19.032^^53^599^130
+ ;;^UTILITY(U,$J,358.3,13918,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13918,1,3,0)
+ ;;=3^Primary Osteoarthritis of Left Wrist
+ ;;^UTILITY(U,$J,358.3,13918,1,4,0)
+ ;;=4^M19.032
+ ;;^UTILITY(U,$J,358.3,13918,2)
+ ;;=^5010815
+ ;;^UTILITY(U,$J,358.3,13919,0)
+ ;;=M19.041^^53^599^131
+ ;;^UTILITY(U,$J,358.3,13919,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13919,1,3,0)
+ ;;=3^Primary Osteoarthritis of Right Hand
+ ;;^UTILITY(U,$J,358.3,13919,1,4,0)
+ ;;=4^M19.041
+ ;;^UTILITY(U,$J,358.3,13919,2)
+ ;;=^5010817
+ ;;^UTILITY(U,$J,358.3,13920,0)
+ ;;=M19.042^^53^599^125
+ ;;^UTILITY(U,$J,358.3,13920,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13920,1,3,0)
+ ;;=3^Primary Osteoarthritis of Left Hand
+ ;;^UTILITY(U,$J,358.3,13920,1,4,0)
+ ;;=4^M19.042
+ ;;^UTILITY(U,$J,358.3,13920,2)
+ ;;=^5010818
+ ;;^UTILITY(U,$J,358.3,13921,0)
+ ;;=M19.90^^53^599^68
+ ;;^UTILITY(U,$J,358.3,13921,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13921,1,3,0)
+ ;;=3^Osteoarthritis,Unspec
+ ;;^UTILITY(U,$J,358.3,13921,1,4,0)
+ ;;=4^M19.90
+ ;;^UTILITY(U,$J,358.3,13921,2)
+ ;;=^5010853
+ ;;^UTILITY(U,$J,358.3,13922,0)
+ ;;=M25.40^^53^599^37
+ ;;^UTILITY(U,$J,358.3,13922,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13922,1,3,0)
+ ;;=3^Effusion,Unspec
+ ;;^UTILITY(U,$J,358.3,13922,1,4,0)
+ ;;=4^M25.40
+ ;;^UTILITY(U,$J,358.3,13922,2)
+ ;;=^5011575
+ ;;^UTILITY(U,$J,358.3,13923,0)
+ ;;=M45.0^^53^599^6
+ ;;^UTILITY(U,$J,358.3,13923,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13923,1,3,0)
+ ;;=3^Ankylosing Spondylitis of Spine,Mult Sites
+ ;;^UTILITY(U,$J,358.3,13923,1,4,0)
+ ;;=4^M45.0
+ ;;^UTILITY(U,$J,358.3,13923,2)
+ ;;=^5011960
+ ;;^UTILITY(U,$J,358.3,13924,0)
+ ;;=M45.2^^53^599^3
+ ;;^UTILITY(U,$J,358.3,13924,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13924,1,3,0)
+ ;;=3^Ankylosing Spondylitis of Cervical Region
+ ;;^UTILITY(U,$J,358.3,13924,1,4,0)
+ ;;=4^M45.2
+ ;;^UTILITY(U,$J,358.3,13924,2)
+ ;;=^5011962
+ ;;^UTILITY(U,$J,358.3,13925,0)
+ ;;=M45.4^^53^599^7
+ ;;^UTILITY(U,$J,358.3,13925,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13925,1,3,0)
+ ;;=3^Ankylosing Spondylitis of Thoracic Region
+ ;;^UTILITY(U,$J,358.3,13925,1,4,0)
+ ;;=4^M45.4
+ ;;^UTILITY(U,$J,358.3,13925,2)
+ ;;=^5011964
+ ;;^UTILITY(U,$J,358.3,13926,0)
+ ;;=M45.7^^53^599^4
+ ;;^UTILITY(U,$J,358.3,13926,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13926,1,3,0)
+ ;;=3^Ankylosing Spondylitis of Lumbosacral Region
+ ;;^UTILITY(U,$J,358.3,13926,1,4,0)
+ ;;=4^M45.7
+ ;;^UTILITY(U,$J,358.3,13926,2)
+ ;;=^5011967
+ ;;^UTILITY(U,$J,358.3,13927,0)
+ ;;=M45.8^^53^599^5
+ ;;^UTILITY(U,$J,358.3,13927,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13927,1,3,0)
+ ;;=3^Ankylosing Spondylitis of Sacral/Sacrococcygeal Region

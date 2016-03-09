@@ -1,126 +1,136 @@
-IBDEI21A ; ; 06-AUG-2015
+IBDEI21A ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35543,1,4,0)
- ;;=4^C34.12
- ;;^UTILITY(U,$J,358.3,35543,2)
- ;;=^5000962
- ;;^UTILITY(U,$J,358.3,35544,0)
- ;;=C34.2^^188^2050^5
- ;;^UTILITY(U,$J,358.3,35544,1,0)
+ ;;^UTILITY(U,$J,358.3,34500,0)
+ ;;=M85.822^^131^1686^86
+ ;;^UTILITY(U,$J,358.3,34500,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35544,1,3,0)
- ;;=3^Malignant neoplasm of middle lobe, bronchus or lung
- ;;^UTILITY(U,$J,358.3,35544,1,4,0)
- ;;=4^C34.2
- ;;^UTILITY(U,$J,358.3,35544,2)
- ;;=^267137
- ;;^UTILITY(U,$J,358.3,35545,0)
- ;;=C34.31^^188^2050^3
- ;;^UTILITY(U,$J,358.3,35545,1,0)
+ ;;^UTILITY(U,$J,358.3,34500,1,3,0)
+ ;;=3^Osteopenia,Left Upper Arm
+ ;;^UTILITY(U,$J,358.3,34500,1,4,0)
+ ;;=4^M85.822
+ ;;^UTILITY(U,$J,358.3,34500,2)
+ ;;=^5014478
+ ;;^UTILITY(U,$J,358.3,34501,0)
+ ;;=M85.89^^131^1686^87
+ ;;^UTILITY(U,$J,358.3,34501,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35545,1,3,0)
- ;;=3^Malignant neoplasm of lower lobe, right bronchus or lung
- ;;^UTILITY(U,$J,358.3,35545,1,4,0)
- ;;=4^C34.31
- ;;^UTILITY(U,$J,358.3,35545,2)
- ;;=^5133321
- ;;^UTILITY(U,$J,358.3,35546,0)
- ;;=C34.32^^188^2050^2
- ;;^UTILITY(U,$J,358.3,35546,1,0)
+ ;;^UTILITY(U,$J,358.3,34501,1,3,0)
+ ;;=3^Osteopenia,Multiple Sites
+ ;;^UTILITY(U,$J,358.3,34501,1,4,0)
+ ;;=4^M85.89
+ ;;^UTILITY(U,$J,358.3,34501,2)
+ ;;=^5014495
+ ;;^UTILITY(U,$J,358.3,34502,0)
+ ;;=M85.88^^131^1686^88
+ ;;^UTILITY(U,$J,358.3,34502,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35546,1,3,0)
- ;;=3^Malignant neoplasm of lower lobe, left bronchus or lung
- ;;^UTILITY(U,$J,358.3,35546,1,4,0)
- ;;=4^C34.32
- ;;^UTILITY(U,$J,358.3,35546,2)
- ;;=^5133322
- ;;^UTILITY(U,$J,358.3,35547,0)
- ;;=C34.81^^188^2050^7
- ;;^UTILITY(U,$J,358.3,35547,1,0)
+ ;;^UTILITY(U,$J,358.3,34502,1,3,0)
+ ;;=3^Osteopenia,Other Site
+ ;;^UTILITY(U,$J,358.3,34502,1,4,0)
+ ;;=4^M85.88
+ ;;^UTILITY(U,$J,358.3,34502,2)
+ ;;=^5134059
+ ;;^UTILITY(U,$J,358.3,34503,0)
+ ;;=M85.871^^131^1686^89
+ ;;^UTILITY(U,$J,358.3,34503,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35547,1,3,0)
- ;;=3^Malignant neoplasm of ovrlp sites of right bronchus and lung
- ;;^UTILITY(U,$J,358.3,35547,1,4,0)
- ;;=4^C34.81
- ;;^UTILITY(U,$J,358.3,35547,2)
- ;;=^5000964
- ;;^UTILITY(U,$J,358.3,35548,0)
- ;;=C34.82^^188^2050^6
- ;;^UTILITY(U,$J,358.3,35548,1,0)
+ ;;^UTILITY(U,$J,358.3,34503,1,3,0)
+ ;;=3^Osteopenia,Right Foot & Ankle
+ ;;^UTILITY(U,$J,358.3,34503,1,4,0)
+ ;;=4^M85.871
+ ;;^UTILITY(U,$J,358.3,34503,2)
+ ;;=^5014492
+ ;;^UTILITY(U,$J,358.3,34504,0)
+ ;;=M85.831^^131^1686^90
+ ;;^UTILITY(U,$J,358.3,34504,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35548,1,3,0)
- ;;=3^Malignant neoplasm of ovrlp sites of left bronchus and lung
- ;;^UTILITY(U,$J,358.3,35548,1,4,0)
- ;;=4^C34.82
- ;;^UTILITY(U,$J,358.3,35548,2)
- ;;=^5000965
- ;;^UTILITY(U,$J,358.3,35549,0)
- ;;=C34.91^^188^2050^10
- ;;^UTILITY(U,$J,358.3,35549,1,0)
+ ;;^UTILITY(U,$J,358.3,34504,1,3,0)
+ ;;=3^Osteopenia,Right Forearm
+ ;;^UTILITY(U,$J,358.3,34504,1,4,0)
+ ;;=4^M85.831
+ ;;^UTILITY(U,$J,358.3,34504,2)
+ ;;=^5014480
+ ;;^UTILITY(U,$J,358.3,34505,0)
+ ;;=M85.841^^131^1686^91
+ ;;^UTILITY(U,$J,358.3,34505,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35549,1,3,0)
- ;;=3^Malignant neoplasm of unsp part of right bronchus or lung
- ;;^UTILITY(U,$J,358.3,35549,1,4,0)
- ;;=4^C34.91
- ;;^UTILITY(U,$J,358.3,35549,2)
- ;;=^5000967
- ;;^UTILITY(U,$J,358.3,35550,0)
- ;;=C34.92^^188^2050^9
- ;;^UTILITY(U,$J,358.3,35550,1,0)
+ ;;^UTILITY(U,$J,358.3,34505,1,3,0)
+ ;;=3^Osteopenia,Right Hand
+ ;;^UTILITY(U,$J,358.3,34505,1,4,0)
+ ;;=4^M85.841
+ ;;^UTILITY(U,$J,358.3,34505,2)
+ ;;=^5014483
+ ;;^UTILITY(U,$J,358.3,34506,0)
+ ;;=M85.861^^131^1686^92
+ ;;^UTILITY(U,$J,358.3,34506,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35550,1,3,0)
- ;;=3^Malignant neoplasm of unsp part of left bronchus or lung
- ;;^UTILITY(U,$J,358.3,35550,1,4,0)
- ;;=4^C34.92
- ;;^UTILITY(U,$J,358.3,35550,2)
- ;;=^5000968
- ;;^UTILITY(U,$J,358.3,35551,0)
- ;;=C77.1^^188^2050^16
- ;;^UTILITY(U,$J,358.3,35551,1,0)
+ ;;^UTILITY(U,$J,358.3,34506,1,3,0)
+ ;;=3^Osteopenia,Right Lower Leg
+ ;;^UTILITY(U,$J,358.3,34506,1,4,0)
+ ;;=4^M85.861
+ ;;^UTILITY(U,$J,358.3,34506,2)
+ ;;=^5014489
+ ;;^UTILITY(U,$J,358.3,34507,0)
+ ;;=M85.811^^131^1686^93
+ ;;^UTILITY(U,$J,358.3,34507,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35551,1,3,0)
- ;;=3^Secondary malignant neoplasm of intrathorac nodes
- ;;^UTILITY(U,$J,358.3,35551,1,4,0)
- ;;=4^C77.1
- ;;^UTILITY(U,$J,358.3,35551,2)
- ;;=^267315
- ;;^UTILITY(U,$J,358.3,35552,0)
- ;;=C78.01^^188^2050^21
- ;;^UTILITY(U,$J,358.3,35552,1,0)
+ ;;^UTILITY(U,$J,358.3,34507,1,3,0)
+ ;;=3^Osteopenia,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,34507,1,4,0)
+ ;;=4^M85.811
+ ;;^UTILITY(U,$J,358.3,34507,2)
+ ;;=^5014474
+ ;;^UTILITY(U,$J,358.3,34508,0)
+ ;;=M85.851^^131^1686^94
+ ;;^UTILITY(U,$J,358.3,34508,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35552,1,3,0)
- ;;=3^Secondary malignant neoplasm of right lung
- ;;^UTILITY(U,$J,358.3,35552,1,4,0)
- ;;=4^C78.01
- ;;^UTILITY(U,$J,358.3,35552,2)
- ;;=^5001335
- ;;^UTILITY(U,$J,358.3,35553,0)
- ;;=C78.02^^188^2050^17
- ;;^UTILITY(U,$J,358.3,35553,1,0)
+ ;;^UTILITY(U,$J,358.3,34508,1,3,0)
+ ;;=3^Osteopenia,Right Thigh
+ ;;^UTILITY(U,$J,358.3,34508,1,4,0)
+ ;;=4^M85.851
+ ;;^UTILITY(U,$J,358.3,34508,2)
+ ;;=^5014486
+ ;;^UTILITY(U,$J,358.3,34509,0)
+ ;;=M85.821^^131^1686^95
+ ;;^UTILITY(U,$J,358.3,34509,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35553,1,3,0)
- ;;=3^Secondary malignant neoplasm of left lung
- ;;^UTILITY(U,$J,358.3,35553,1,4,0)
- ;;=4^C78.02
- ;;^UTILITY(U,$J,358.3,35553,2)
- ;;=^5001336
- ;;^UTILITY(U,$J,358.3,35554,0)
- ;;=C78.1^^188^2050^18
- ;;^UTILITY(U,$J,358.3,35554,1,0)
+ ;;^UTILITY(U,$J,358.3,34509,1,3,0)
+ ;;=3^Osteopenia,Right Upper Arm
+ ;;^UTILITY(U,$J,358.3,34509,1,4,0)
+ ;;=4^M85.821
+ ;;^UTILITY(U,$J,358.3,34509,2)
+ ;;=^5014477
+ ;;^UTILITY(U,$J,358.3,34510,0)
+ ;;=M85.80^^131^1686^96
+ ;;^UTILITY(U,$J,358.3,34510,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35554,1,3,0)
- ;;=3^Secondary malignant neoplasm of mediastinum
- ;;^UTILITY(U,$J,358.3,35554,1,4,0)
- ;;=4^C78.1
- ;;^UTILITY(U,$J,358.3,35554,2)
- ;;=^267323
- ;;^UTILITY(U,$J,358.3,35555,0)
- ;;=C78.2^^188^2050^20
- ;;^UTILITY(U,$J,358.3,35555,1,0)
+ ;;^UTILITY(U,$J,358.3,34510,1,3,0)
+ ;;=3^Osteopenia,Unspec Site
+ ;;^UTILITY(U,$J,358.3,34510,1,4,0)
+ ;;=4^M85.80
+ ;;^UTILITY(U,$J,358.3,34510,2)
+ ;;=^5014473
+ ;;^UTILITY(U,$J,358.3,34511,0)
+ ;;=B02.0^^131^1687^46
+ ;;^UTILITY(U,$J,358.3,34511,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35555,1,3,0)
- ;;=3^Secondary malignant neoplasm of pleura
- ;;^UTILITY(U,$J,358.3,35555,1,4,0)
- ;;=4^C78.2
+ ;;^UTILITY(U,$J,358.3,34511,1,3,0)
+ ;;=3^Zoster Encephalitis
+ ;;^UTILITY(U,$J,358.3,34511,1,4,0)
+ ;;=4^B02.0
+ ;;^UTILITY(U,$J,358.3,34511,2)
+ ;;=^5000488
+ ;;^UTILITY(U,$J,358.3,34512,0)
+ ;;=B02.29^^131^1687^36
+ ;;^UTILITY(U,$J,358.3,34512,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34512,1,3,0)
+ ;;=3^Postherpetic Nervous System Involvement,Other
+ ;;^UTILITY(U,$J,358.3,34512,1,4,0)
+ ;;=4^B02.29
+ ;;^UTILITY(U,$J,358.3,34512,2)
+ ;;=^5000492
+ ;;^UTILITY(U,$J,358.3,34513,0)
+ ;;=F03.90^^131^1687^10

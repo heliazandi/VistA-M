@@ -1,138 +1,130 @@
-IBDEI0WV ; ; 06-AUG-2015
+IBDEI0WV ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15977,1,4,0)
- ;;=4^278.00
- ;;^UTILITY(U,$J,358.3,15977,1,5,0)
- ;;=5^Obesity
- ;;^UTILITY(U,$J,358.3,15977,2)
- ;;=Obesity^84823
- ;;^UTILITY(U,$J,358.3,15978,0)
- ;;=278.01^^81^951^118
- ;;^UTILITY(U,$J,358.3,15978,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15978,1,4,0)
- ;;=4^278.01
- ;;^UTILITY(U,$J,358.3,15978,1,5,0)
- ;;=5^Obesity, Morbid
- ;;^UTILITY(U,$J,358.3,15978,2)
- ;;=Obesity, Morbid^84844
- ;;^UTILITY(U,$J,358.3,15979,0)
- ;;=783.5^^81^951^127
- ;;^UTILITY(U,$J,358.3,15979,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15979,1,4,0)
- ;;=4^783.5
- ;;^UTILITY(U,$J,358.3,15979,1,5,0)
- ;;=5^Polydipsia
- ;;^UTILITY(U,$J,358.3,15979,2)
- ;;=Polydipsia^186699
- ;;^UTILITY(U,$J,358.3,15980,0)
- ;;=783.6^^81^951^128
- ;;^UTILITY(U,$J,358.3,15980,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15980,1,4,0)
- ;;=4^783.6
- ;;^UTILITY(U,$J,358.3,15980,1,5,0)
- ;;=5^Polyphagia
- ;;^UTILITY(U,$J,358.3,15980,2)
- ;;=Polyphagia^60236
- ;;^UTILITY(U,$J,358.3,15981,0)
- ;;=780.2^^81^951^144
- ;;^UTILITY(U,$J,358.3,15981,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15981,1,4,0)
- ;;=4^780.2
- ;;^UTILITY(U,$J,358.3,15981,1,5,0)
- ;;=5^Syncope and Collapse
- ;;^UTILITY(U,$J,358.3,15981,2)
- ;;=^116707
- ;;^UTILITY(U,$J,358.3,15982,0)
- ;;=783.1^^81^951^156
- ;;^UTILITY(U,$J,358.3,15982,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15982,1,4,0)
- ;;=4^783.1
- ;;^UTILITY(U,$J,358.3,15982,1,5,0)
- ;;=5^Weight gain, abnormal
- ;;^UTILITY(U,$J,358.3,15982,2)
- ;;=^998
- ;;^UTILITY(U,$J,358.3,15983,0)
- ;;=783.21^^81^951^157
- ;;^UTILITY(U,$J,358.3,15983,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15983,1,4,0)
- ;;=4^783.21
- ;;^UTILITY(U,$J,358.3,15983,1,5,0)
- ;;=5^Weight loss, abnormal
- ;;^UTILITY(U,$J,358.3,15983,2)
- ;;=^322005
- ;;^UTILITY(U,$J,358.3,15984,0)
- ;;=796.2^^81^951^32
- ;;^UTILITY(U,$J,358.3,15984,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15984,1,4,0)
- ;;=4^796.2
- ;;^UTILITY(U,$J,358.3,15984,1,5,0)
- ;;=5^Blood Pressure Elevated, w/o HTN
- ;;^UTILITY(U,$J,358.3,15984,2)
- ;;=^273464
- ;;^UTILITY(U,$J,358.3,15985,0)
- ;;=790.92^^81^951^9
- ;;^UTILITY(U,$J,358.3,15985,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15985,1,4,0)
- ;;=4^790.92
- ;;^UTILITY(U,$J,358.3,15985,1,5,0)
- ;;=5^Abnorm Coagulation Profile
- ;;^UTILITY(U,$J,358.3,15985,2)
- ;;=Abnorm Coagulation Profile^295771
- ;;^UTILITY(U,$J,358.3,15986,0)
- ;;=794.31^^81^951^10
- ;;^UTILITY(U,$J,358.3,15986,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15986,1,4,0)
- ;;=4^794.31
- ;;^UTILITY(U,$J,358.3,15986,1,5,0)
- ;;=5^Abnormal EKG
- ;;^UTILITY(U,$J,358.3,15986,2)
- ;;=Abnormal EKG^83844
- ;;^UTILITY(U,$J,358.3,15987,0)
- ;;=790.1^^81^951^67
- ;;^UTILITY(U,$J,358.3,15987,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15987,1,4,0)
- ;;=4^790.1
- ;;^UTILITY(U,$J,358.3,15987,1,5,0)
- ;;=5^Elevated Sedimentation Rate
- ;;^UTILITY(U,$J,358.3,15987,2)
- ;;=Elevated Sedimentation Rate^39339
- ;;^UTILITY(U,$J,358.3,15988,0)
- ;;=790.93^^81^951^66
- ;;^UTILITY(U,$J,358.3,15988,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15988,1,4,0)
- ;;=4^790.93
- ;;^UTILITY(U,$J,358.3,15988,1,5,0)
- ;;=5^Elevated PSA
- ;;^UTILITY(U,$J,358.3,15988,2)
- ;;=Elevated PSA^295772
- ;;^UTILITY(U,$J,358.3,15989,0)
- ;;=791.0^^81^951^132
- ;;^UTILITY(U,$J,358.3,15989,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15989,1,4,0)
- ;;=4^791.0
- ;;^UTILITY(U,$J,358.3,15989,1,5,0)
- ;;=5^Proteinuria
- ;;^UTILITY(U,$J,358.3,15989,2)
- ;;=Proteinuria^99873
- ;;^UTILITY(U,$J,358.3,15990,0)
- ;;=791.9^^81^951^14
- ;;^UTILITY(U,$J,358.3,15990,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15990,1,4,0)
- ;;=4^791.9
- ;;^UTILITY(U,$J,358.3,15990,1,5,0)
- ;;=5^Abnormal UA
+ ;;^UTILITY(U,$J,358.3,15421,0)
+ ;;=G23.1^^58^662^34
+ ;;^UTILITY(U,$J,358.3,15421,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15421,1,3,0)
+ ;;=3^Progressive Supranuclear Ophthalmoplegia Palsy
+ ;;^UTILITY(U,$J,358.3,15421,1,4,0)
+ ;;=4^G23.1
+ ;;^UTILITY(U,$J,358.3,15421,2)
+ ;;=^5003780
+ ;;^UTILITY(U,$J,358.3,15422,0)
+ ;;=F03.91^^58^662^15
+ ;;^UTILITY(U,$J,358.3,15422,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15422,1,3,0)
+ ;;=3^Dementia w/ Behavioral Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,15422,1,4,0)
+ ;;=4^F03.91
+ ;;^UTILITY(U,$J,358.3,15422,2)
+ ;;=^5133350
+ ;;^UTILITY(U,$J,358.3,15423,0)
+ ;;=F03.90^^58^662^17
+ ;;^UTILITY(U,$J,358.3,15423,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15423,1,3,0)
+ ;;=3^Dementia w/o Behavioral Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,15423,1,4,0)
+ ;;=4^F03.90
+ ;;^UTILITY(U,$J,358.3,15423,2)
+ ;;=^5003050
+ ;;^UTILITY(U,$J,358.3,15424,0)
+ ;;=F06.30^^58^663^2
+ ;;^UTILITY(U,$J,358.3,15424,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15424,1,3,0)
+ ;;=3^Depressive Disorder d/t Another Medical Condition,Unspec
+ ;;^UTILITY(U,$J,358.3,15424,1,4,0)
+ ;;=4^F06.30
+ ;;^UTILITY(U,$J,358.3,15424,2)
+ ;;=^5003056
+ ;;^UTILITY(U,$J,358.3,15425,0)
+ ;;=F06.31^^58^663^3
+ ;;^UTILITY(U,$J,358.3,15425,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15425,1,3,0)
+ ;;=3^Depressive Disorder d/t Another Medical Condition w/ Depressive Features
+ ;;^UTILITY(U,$J,358.3,15425,1,4,0)
+ ;;=4^F06.31
+ ;;^UTILITY(U,$J,358.3,15425,2)
+ ;;=^5003057
+ ;;^UTILITY(U,$J,358.3,15426,0)
+ ;;=F06.32^^58^663^4
+ ;;^UTILITY(U,$J,358.3,15426,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15426,1,3,0)
+ ;;=3^Depressive Disorder d/t Another Medical Condition w/ Major Depressive-Like Episode
+ ;;^UTILITY(U,$J,358.3,15426,1,4,0)
+ ;;=4^F06.32
+ ;;^UTILITY(U,$J,358.3,15426,2)
+ ;;=^5003058
+ ;;^UTILITY(U,$J,358.3,15427,0)
+ ;;=F32.9^^58^663^20
+ ;;^UTILITY(U,$J,358.3,15427,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15427,1,3,0)
+ ;;=3^MDD,Single Episode,Unspec
+ ;;^UTILITY(U,$J,358.3,15427,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,15427,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,15428,0)
+ ;;=F32.0^^58^663^17
+ ;;^UTILITY(U,$J,358.3,15428,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15428,1,3,0)
+ ;;=3^MDD,Single Episode,Mild
+ ;;^UTILITY(U,$J,358.3,15428,1,4,0)
+ ;;=4^F32.0
+ ;;^UTILITY(U,$J,358.3,15428,2)
+ ;;=^5003521
+ ;;^UTILITY(U,$J,358.3,15429,0)
+ ;;=F32.1^^58^663^18
+ ;;^UTILITY(U,$J,358.3,15429,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15429,1,3,0)
+ ;;=3^MDD,Single Episode,Moderate
+ ;;^UTILITY(U,$J,358.3,15429,1,4,0)
+ ;;=4^F32.1
+ ;;^UTILITY(U,$J,358.3,15429,2)
+ ;;=^5003522
+ ;;^UTILITY(U,$J,358.3,15430,0)
+ ;;=F32.2^^58^663^19
+ ;;^UTILITY(U,$J,358.3,15430,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15430,1,3,0)
+ ;;=3^MDD,Single Episode,Severe
+ ;;^UTILITY(U,$J,358.3,15430,1,4,0)
+ ;;=4^F32.2
+ ;;^UTILITY(U,$J,358.3,15430,2)
+ ;;=^5003523
+ ;;^UTILITY(U,$J,358.3,15431,0)
+ ;;=F32.3^^58^663^14
+ ;;^UTILITY(U,$J,358.3,15431,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15431,1,3,0)
+ ;;=3^MDD,Single Episode w Psychotic Features
+ ;;^UTILITY(U,$J,358.3,15431,1,4,0)
+ ;;=4^F32.3
+ ;;^UTILITY(U,$J,358.3,15431,2)
+ ;;=^5003524
+ ;;^UTILITY(U,$J,358.3,15432,0)
+ ;;=F32.4^^58^663^16
+ ;;^UTILITY(U,$J,358.3,15432,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15432,1,3,0)
+ ;;=3^MDD,Single Episode,In Partial Remission
+ ;;^UTILITY(U,$J,358.3,15432,1,4,0)
+ ;;=4^F32.4
+ ;;^UTILITY(U,$J,358.3,15432,2)
+ ;;=^5003525
+ ;;^UTILITY(U,$J,358.3,15433,0)
+ ;;=F32.5^^58^663^15
+ ;;^UTILITY(U,$J,358.3,15433,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15433,1,3,0)
+ ;;=3^MDD,Single Episode,In Full Remission

@@ -1,130 +1,130 @@
-IBDEI054 ; ; 06-AUG-2015
+IBDEI054 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1870,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1870,1,3,0)
- ;;=3^Drug/chem induced diabetes mellitus with foot ulcer
- ;;^UTILITY(U,$J,358.3,1870,1,4,0)
- ;;=4^E09.621
- ;;^UTILITY(U,$J,358.3,1870,2)
- ;;=^5002576
- ;;^UTILITY(U,$J,358.3,1871,0)
- ;;=E09.628^^3^56^53
- ;;^UTILITY(U,$J,358.3,1871,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1871,1,3,0)
- ;;=3^Drug/chem diabetes w oth skin complications
- ;;^UTILITY(U,$J,358.3,1871,1,4,0)
- ;;=4^E09.628
- ;;^UTILITY(U,$J,358.3,1871,2)
- ;;=^5002578
- ;;^UTILITY(U,$J,358.3,1872,0)
- ;;=E09.630^^3^56^54
- ;;^UTILITY(U,$J,358.3,1872,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1872,1,3,0)
- ;;=3^Drug/chem diabetes w periodontal disease
- ;;^UTILITY(U,$J,358.3,1872,1,4,0)
- ;;=4^E09.630
- ;;^UTILITY(U,$J,358.3,1872,2)
- ;;=^5002579
- ;;^UTILITY(U,$J,358.3,1873,0)
- ;;=E09.638^^3^56^52
- ;;^UTILITY(U,$J,358.3,1873,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1873,1,3,0)
- ;;=3^Drug/chem diabetes w oth oral complications
- ;;^UTILITY(U,$J,358.3,1873,1,4,0)
- ;;=4^E09.638
- ;;^UTILITY(U,$J,358.3,1873,2)
- ;;=^5002580
- ;;^UTILITY(U,$J,358.3,1874,0)
- ;;=E09.65^^3^56^59
- ;;^UTILITY(U,$J,358.3,1874,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1874,1,3,0)
- ;;=3^Drug/chem induced diabetes mellitus w hyperglycemia
- ;;^UTILITY(U,$J,358.3,1874,1,4,0)
- ;;=4^E09.65
- ;;^UTILITY(U,$J,358.3,1874,2)
- ;;=^5002583
- ;;^UTILITY(U,$J,358.3,1875,0)
- ;;=E09.69^^3^56^49
- ;;^UTILITY(U,$J,358.3,1875,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1875,1,3,0)
- ;;=3^Drug/chem diabetes w oth complication
- ;;^UTILITY(U,$J,358.3,1875,1,4,0)
- ;;=4^E09.69
- ;;^UTILITY(U,$J,358.3,1875,2)
- ;;=^5002584
- ;;^UTILITY(U,$J,358.3,1876,0)
- ;;=E09.649^^3^56^39
- ;;^UTILITY(U,$J,358.3,1876,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1876,1,3,0)
- ;;=3^Drug/chem diabetes w hypoglycemia w/o coma
- ;;^UTILITY(U,$J,358.3,1876,1,4,0)
- ;;=4^E09.649
- ;;^UTILITY(U,$J,358.3,1876,2)
- ;;=^5002582
- ;;^UTILITY(U,$J,358.3,1877,0)
- ;;=E08.8^^3^56^30
- ;;^UTILITY(U,$J,358.3,1877,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1877,1,3,0)
- ;;=3^Diabetes due to underlying condition w unsp complications
- ;;^UTILITY(U,$J,358.3,1877,1,4,0)
- ;;=4^E08.8
- ;;^UTILITY(U,$J,358.3,1877,2)
- ;;=^5002543
- ;;^UTILITY(U,$J,358.3,1878,0)
- ;;=E09.8^^3^56^55
- ;;^UTILITY(U,$J,358.3,1878,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1878,1,3,0)
- ;;=3^Drug/chem diabetes w unsp complications
- ;;^UTILITY(U,$J,358.3,1878,1,4,0)
- ;;=4^E09.8
- ;;^UTILITY(U,$J,358.3,1878,2)
- ;;=^5002585
- ;;^UTILITY(U,$J,358.3,1879,0)
- ;;=E88.01^^3^57^13
- ;;^UTILITY(U,$J,358.3,1879,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1879,1,3,0)
- ;;=3^Alpha-1-antitrypsin deficiency
- ;;^UTILITY(U,$J,358.3,1879,1,4,0)
- ;;=4^E88.01
- ;;^UTILITY(U,$J,358.3,1879,2)
- ;;=^331442
- ;;^UTILITY(U,$J,358.3,1880,0)
- ;;=E71.310^^3^57^70
- ;;^UTILITY(U,$J,358.3,1880,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1880,1,3,0)
- ;;=3^Long chain/very long chain acyl CoA dehydrogenase deficiency
- ;;^UTILITY(U,$J,358.3,1880,1,4,0)
- ;;=4^E71.310
- ;;^UTILITY(U,$J,358.3,1880,2)
- ;;=^5002870
- ;;^UTILITY(U,$J,358.3,1881,0)
- ;;=E71.311^^3^57^76
- ;;^UTILITY(U,$J,358.3,1881,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1881,1,3,0)
- ;;=3^Medium chain acyl CoA dehydrogenase deficiency
- ;;^UTILITY(U,$J,358.3,1881,1,4,0)
- ;;=4^E71.311
- ;;^UTILITY(U,$J,358.3,1881,2)
- ;;=^5002871
- ;;^UTILITY(U,$J,358.3,1882,0)
- ;;=E71.312^^3^57^99
- ;;^UTILITY(U,$J,358.3,1882,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1882,1,3,0)
- ;;=3^Short chain acyl CoA dehydrogenase deficiency
- ;;^UTILITY(U,$J,358.3,1882,1,4,0)
- ;;=4^E71.312
+ ;;^UTILITY(U,$J,358.3,1996,1,2,0)
+ ;;=2^36246
+ ;;^UTILITY(U,$J,358.3,1996,1,3,0)
+ ;;=3^Select Cath 2nd Order Abd/Pelv/LE Artery
+ ;;^UTILITY(U,$J,358.3,1997,0)
+ ;;=36247^^12^163^40^^^^1
+ ;;^UTILITY(U,$J,358.3,1997,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1997,1,2,0)
+ ;;=2^36247
+ ;;^UTILITY(U,$J,358.3,1997,1,3,0)
+ ;;=3^Select Cath 3rd Order Abd/Pelv/LE Artery
+ ;;^UTILITY(U,$J,358.3,1998,0)
+ ;;=75962^^12^163^52^^^^1
+ ;;^UTILITY(U,$J,358.3,1998,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1998,1,2,0)
+ ;;=2^75962
+ ;;^UTILITY(U,$J,358.3,1998,1,3,0)
+ ;;=3^Tranlum Ball Angio,Periph Art,Rad S&I
+ ;;^UTILITY(U,$J,358.3,1999,0)
+ ;;=75964^^12^163^54^^^^1
+ ;;^UTILITY(U,$J,358.3,1999,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1999,1,2,0)
+ ;;=2^75964
+ ;;^UTILITY(U,$J,358.3,1999,1,3,0)
+ ;;=3^Tranlum Ball Angio,Venous Art,Rad S&I,Ea Addl Artery
+ ;;^UTILITY(U,$J,358.3,2000,0)
+ ;;=75791^^12^163^9^^^^1
+ ;;^UTILITY(U,$J,358.3,2000,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2000,1,2,0)
+ ;;=2^75791
+ ;;^UTILITY(U,$J,358.3,2000,1,3,0)
+ ;;=3^Arteriovenous Shunt
+ ;;^UTILITY(U,$J,358.3,2001,0)
+ ;;=37220^^12^163^20^^^^1
+ ;;^UTILITY(U,$J,358.3,2001,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2001,1,2,0)
+ ;;=2^37220
+ ;;^UTILITY(U,$J,358.3,2001,1,3,0)
+ ;;=3^Iliac Revasc,Unilat,1st Vessel
+ ;;^UTILITY(U,$J,358.3,2002,0)
+ ;;=37221^^12^163^18^^^^1
+ ;;^UTILITY(U,$J,358.3,2002,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2002,1,2,0)
+ ;;=2^37221
+ ;;^UTILITY(U,$J,358.3,2002,1,3,0)
+ ;;=3^Iliac Revasc w/ Stent
+ ;;^UTILITY(U,$J,358.3,2003,0)
+ ;;=37222^^12^163^21^^^^1
+ ;;^UTILITY(U,$J,358.3,2003,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2003,1,2,0)
+ ;;=2^37222
+ ;;^UTILITY(U,$J,358.3,2003,1,3,0)
+ ;;=3^Iliac Revasc,ea add Vessel
+ ;;^UTILITY(U,$J,358.3,2004,0)
+ ;;=37223^^12^163^19^^^^1
+ ;;^UTILITY(U,$J,358.3,2004,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2004,1,2,0)
+ ;;=2^37223
+ ;;^UTILITY(U,$J,358.3,2004,1,3,0)
+ ;;=3^Iliac Revasc w/ Stent,Add-on
+ ;;^UTILITY(U,$J,358.3,2005,0)
+ ;;=37224^^12^163^15^^^^1
+ ;;^UTILITY(U,$J,358.3,2005,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2005,1,2,0)
+ ;;=2^37224
+ ;;^UTILITY(U,$J,358.3,2005,1,3,0)
+ ;;=3^Fem/Popl Revas w/ TLA 1st Vessel
+ ;;^UTILITY(U,$J,358.3,2006,0)
+ ;;=37225^^12^163^14^^^^1
+ ;;^UTILITY(U,$J,358.3,2006,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2006,1,2,0)
+ ;;=2^37225
+ ;;^UTILITY(U,$J,358.3,2006,1,3,0)
+ ;;=3^Fem/Popl Revas w/ Ather
+ ;;^UTILITY(U,$J,358.3,2007,0)
+ ;;=37226^^12^163^16^^^^1
+ ;;^UTILITY(U,$J,358.3,2007,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2007,1,2,0)
+ ;;=2^37226
+ ;;^UTILITY(U,$J,358.3,2007,1,3,0)
+ ;;=3^Fem/Popl Revasc w/ Stent
+ ;;^UTILITY(U,$J,358.3,2008,0)
+ ;;=37227^^12^163^17^^^^1
+ ;;^UTILITY(U,$J,358.3,2008,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2008,1,2,0)
+ ;;=2^37227
+ ;;^UTILITY(U,$J,358.3,2008,1,3,0)
+ ;;=3^Fem/Popl Revasc w/ Stent & Ather
+ ;;^UTILITY(U,$J,358.3,2009,0)
+ ;;=37228^^12^163^50^^^^1
+ ;;^UTILITY(U,$J,358.3,2009,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2009,1,2,0)
+ ;;=2^37228
+ ;;^UTILITY(U,$J,358.3,2009,1,3,0)
+ ;;=3^TIB/Per Revasc w/ TLA,1st Vessel
+ ;;^UTILITY(U,$J,358.3,2010,0)
+ ;;=37229^^12^163^45^^^^1
+ ;;^UTILITY(U,$J,358.3,2010,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2010,1,2,0)
+ ;;=2^37229
+ ;;^UTILITY(U,$J,358.3,2010,1,3,0)
+ ;;=3^TIB/Per Revasc w/ Ather
+ ;;^UTILITY(U,$J,358.3,2011,0)
+ ;;=37230^^12^163^47^^^^1
+ ;;^UTILITY(U,$J,358.3,2011,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2011,1,2,0)
+ ;;=2^37230
+ ;;^UTILITY(U,$J,358.3,2011,1,3,0)
+ ;;=3^TIB/Per Revasc w/ Stent
+ ;;^UTILITY(U,$J,358.3,2012,0)
+ ;;=37231^^12^163^44^^^^1

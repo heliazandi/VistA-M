@@ -1,140 +1,126 @@
-IBDEI0HL ; ; 06-AUG-2015
+IBDEI0HL ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8202,2)
- ;;=^267165
- ;;^UTILITY(U,$J,358.3,8203,0)
- ;;=186.9^^35^482^52
- ;;^UTILITY(U,$J,358.3,8203,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8203,1,4,0)
- ;;=4^186.9
- ;;^UTILITY(U,$J,358.3,8203,1,5,0)
- ;;=5^Ca Testicular
- ;;^UTILITY(U,$J,358.3,8203,2)
- ;;=^267242
- ;;^UTILITY(U,$J,358.3,8204,0)
- ;;=198.7^^35^482^7
- ;;^UTILITY(U,$J,358.3,8204,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8204,1,4,0)
- ;;=4^198.7
- ;;^UTILITY(U,$J,358.3,8204,1,5,0)
- ;;=5^Adrenal Metastasis
- ;;^UTILITY(U,$J,358.3,8204,2)
- ;;=^267337
- ;;^UTILITY(U,$J,358.3,8205,0)
- ;;=198.5^^35^482^95
- ;;^UTILITY(U,$J,358.3,8205,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8205,1,4,0)
- ;;=4^198.5
- ;;^UTILITY(U,$J,358.3,8205,1,5,0)
- ;;=5^Mets to Bone or Bone Marrow
- ;;^UTILITY(U,$J,358.3,8205,2)
- ;;=^267336
- ;;^UTILITY(U,$J,358.3,8206,0)
- ;;=198.3^^35^482^96
- ;;^UTILITY(U,$J,358.3,8206,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8206,1,4,0)
- ;;=4^198.3
- ;;^UTILITY(U,$J,358.3,8206,1,5,0)
- ;;=5^Mets to Brain
- ;;^UTILITY(U,$J,358.3,8206,2)
- ;;=Brain Metatastasis^267334
- ;;^UTILITY(U,$J,358.3,8207,0)
- ;;=197.7^^35^482^39
- ;;^UTILITY(U,$J,358.3,8207,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8207,1,4,0)
- ;;=4^197.7
- ;;^UTILITY(U,$J,358.3,8207,1,5,0)
- ;;=5^Ca Liver, Secondary
- ;;^UTILITY(U,$J,358.3,8207,2)
- ;;=CA Liver, Secondary^267328
- ;;^UTILITY(U,$J,358.3,8208,0)
- ;;=197.0^^35^482^97
- ;;^UTILITY(U,$J,358.3,8208,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8208,1,4,0)
- ;;=4^197.0
- ;;^UTILITY(U,$J,358.3,8208,1,5,0)
- ;;=5^Mets to Lung
- ;;^UTILITY(U,$J,358.3,8208,2)
- ;;=Mets to Lung^267322
- ;;^UTILITY(U,$J,358.3,8209,0)
- ;;=196.2^^35^482^98
- ;;^UTILITY(U,$J,358.3,8209,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8209,1,4,0)
- ;;=4^196.2
- ;;^UTILITY(U,$J,358.3,8209,1,5,0)
- ;;=5^Mets to Lymph Nodes,Abdominal
- ;;^UTILITY(U,$J,358.3,8209,2)
- ;;=^267316
- ;;^UTILITY(U,$J,358.3,8210,0)
- ;;=196.3^^35^482^99
- ;;^UTILITY(U,$J,358.3,8210,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8210,1,4,0)
- ;;=4^196.3
- ;;^UTILITY(U,$J,358.3,8210,1,5,0)
- ;;=5^Mets to Lymph Nodes,Axillary Or Brachial
- ;;^UTILITY(U,$J,358.3,8210,2)
- ;;=^267317
- ;;^UTILITY(U,$J,358.3,8211,0)
- ;;=196.0^^35^482^100
- ;;^UTILITY(U,$J,358.3,8211,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8211,1,4,0)
- ;;=4^196.0
- ;;^UTILITY(U,$J,358.3,8211,1,5,0)
- ;;=5^Mets to Lymph Nodes,Cervical
- ;;^UTILITY(U,$J,358.3,8211,2)
- ;;=Lymph Nodes^267314
- ;;^UTILITY(U,$J,358.3,8212,0)
- ;;=196.1^^35^482^101
- ;;^UTILITY(U,$J,358.3,8212,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8212,1,4,0)
- ;;=4^196.1
- ;;^UTILITY(U,$J,358.3,8212,1,5,0)
- ;;=5^Mets to Lymph Nodes,Mediastinal 
- ;;^UTILITY(U,$J,358.3,8212,2)
- ;;=Lymph Nodes^267315
- ;;^UTILITY(U,$J,358.3,8213,0)
- ;;=196.8^^35^482^102
- ;;^UTILITY(U,$J,358.3,8213,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8213,1,4,0)
- ;;=4^196.8
- ;;^UTILITY(U,$J,358.3,8213,1,5,0)
- ;;=5^Mets to Lymph Nodes,Multiple Sites
- ;;^UTILITY(U,$J,358.3,8213,2)
- ;;=^267320
- ;;^UTILITY(U,$J,358.3,8214,0)
- ;;=V10.51^^35^482^56
- ;;^UTILITY(U,$J,358.3,8214,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8214,1,4,0)
- ;;=4^V10.51
- ;;^UTILITY(U,$J,358.3,8214,1,5,0)
- ;;=5^H/O Bladder Cancer
- ;;^UTILITY(U,$J,358.3,8214,2)
- ;;=^295228
- ;;^UTILITY(U,$J,358.3,8215,0)
- ;;=V10.3^^35^482^57
- ;;^UTILITY(U,$J,358.3,8215,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8215,1,4,0)
- ;;=4^V10.3
- ;;^UTILITY(U,$J,358.3,8215,1,5,0)
- ;;=5^H/O Breast Cancer
- ;;^UTILITY(U,$J,358.3,8215,2)
- ;;=^295217
- ;;^UTILITY(U,$J,358.3,8216,0)
- ;;=V10.41^^35^482^58
- ;;^UTILITY(U,$J,358.3,8216,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,8136,1,4,0)
+ ;;=4^S86.891A
+ ;;^UTILITY(U,$J,358.3,8136,2)
+ ;;=^5137173
+ ;;^UTILITY(U,$J,358.3,8137,0)
+ ;;=S86.892A^^33^431^137
+ ;;^UTILITY(U,$J,358.3,8137,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8137,1,3,0)
+ ;;=3^Musc/Tend Left Lower Leg Level Inj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,8137,1,4,0)
+ ;;=4^S86.892A
+ ;;^UTILITY(U,$J,358.3,8137,2)
+ ;;=^5137174
+ ;;^UTILITY(U,$J,358.3,8138,0)
+ ;;=S43.51XA^^33^431^221
+ ;;^UTILITY(U,$J,358.3,8138,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8138,1,3,0)
+ ;;=3^Sprain of right acromioclavicular joint, initial encounter
+ ;;^UTILITY(U,$J,358.3,8138,1,4,0)
+ ;;=4^S43.51XA
+ ;;^UTILITY(U,$J,358.3,8138,2)
+ ;;=^5027903
+ ;;^UTILITY(U,$J,358.3,8139,0)
+ ;;=S43.52XA^^33^431^202
+ ;;^UTILITY(U,$J,358.3,8139,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8139,1,3,0)
+ ;;=3^Sprain of left acromioclavicular joint, initial encounter
+ ;;^UTILITY(U,$J,358.3,8139,1,4,0)
+ ;;=4^S43.52XA
+ ;;^UTILITY(U,$J,358.3,8139,2)
+ ;;=^5027906
+ ;;^UTILITY(U,$J,358.3,8140,0)
+ ;;=S93.401A^^33^431^240
+ ;;^UTILITY(U,$J,358.3,8140,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8140,1,3,0)
+ ;;=3^Sprain of unspecified ligament of right ankle, init encntr
+ ;;^UTILITY(U,$J,358.3,8140,1,4,0)
+ ;;=4^S93.401A
+ ;;^UTILITY(U,$J,358.3,8140,2)
+ ;;=^5045774
+ ;;^UTILITY(U,$J,358.3,8141,0)
+ ;;=S93.402A^^33^431^239
+ ;;^UTILITY(U,$J,358.3,8141,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8141,1,3,0)
+ ;;=3^Sprain of unspecified ligament of left ankle, init encntr
+ ;;^UTILITY(U,$J,358.3,8141,1,4,0)
+ ;;=4^S93.402A
+ ;;^UTILITY(U,$J,358.3,8141,2)
+ ;;=^5045777
+ ;;^UTILITY(U,$J,358.3,8142,0)
+ ;;=S53.401A^^33^431^222
+ ;;^UTILITY(U,$J,358.3,8142,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8142,1,3,0)
+ ;;=3^Sprain of right elbow unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8142,1,4,0)
+ ;;=4^S53.401A
+ ;;^UTILITY(U,$J,358.3,8142,2)
+ ;;=^5031361
+ ;;^UTILITY(U,$J,358.3,8143,0)
+ ;;=S53.402A^^33^431^203
+ ;;^UTILITY(U,$J,358.3,8143,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8143,1,3,0)
+ ;;=3^Sprain of left elbow unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8143,1,4,0)
+ ;;=4^S53.402A
+ ;;^UTILITY(U,$J,358.3,8143,2)
+ ;;=^5031364
+ ;;^UTILITY(U,$J,358.3,8144,0)
+ ;;=S63.610A^^33^431^225
+ ;;^UTILITY(U,$J,358.3,8144,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8144,1,3,0)
+ ;;=3^Sprain of right index finger unspec, initial encou
+ ;;^UTILITY(U,$J,358.3,8144,1,4,0)
+ ;;=4^S63.610A
+ ;;^UTILITY(U,$J,358.3,8144,2)
+ ;;=^5035622
+ ;;^UTILITY(U,$J,358.3,8145,0)
+ ;;=S63.611A^^33^431^206
+ ;;^UTILITY(U,$J,358.3,8145,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8145,1,3,0)
+ ;;=3^Sprain of left index finger unspec, initial encoun
+ ;;^UTILITY(U,$J,358.3,8145,1,4,0)
+ ;;=4^S63.611A
+ ;;^UTILITY(U,$J,358.3,8145,2)
+ ;;=^5035625
+ ;;^UTILITY(U,$J,358.3,8146,0)
+ ;;=S63.612A^^33^431^228
+ ;;^UTILITY(U,$J,358.3,8146,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8146,1,3,0)
+ ;;=3^Sprain of right middle finger unspec, initial enco
+ ;;^UTILITY(U,$J,358.3,8146,1,4,0)
+ ;;=4^S63.612A
+ ;;^UTILITY(U,$J,358.3,8146,2)
+ ;;=^5035628
+ ;;^UTILITY(U,$J,358.3,8147,0)
+ ;;=S63.613A^^33^431^209
+ ;;^UTILITY(U,$J,358.3,8147,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8147,1,3,0)
+ ;;=3^Sprain of left middle finger unspec, initial encou
+ ;;^UTILITY(U,$J,358.3,8147,1,4,0)
+ ;;=4^S63.613A
+ ;;^UTILITY(U,$J,358.3,8147,2)
+ ;;=^5035631
+ ;;^UTILITY(U,$J,358.3,8148,0)
+ ;;=S63.614A^^33^431^229
+ ;;^UTILITY(U,$J,358.3,8148,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8148,1,3,0)
+ ;;=3^Sprain of right ring finger unspec, initial encoun
+ ;;^UTILITY(U,$J,358.3,8148,1,4,0)
+ ;;=4^S63.614A

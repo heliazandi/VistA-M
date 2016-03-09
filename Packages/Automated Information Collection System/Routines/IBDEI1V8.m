@@ -1,130 +1,126 @@
-IBDEI1V8 ; ; 06-AUG-2015
+IBDEI1V8 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32831,2)
- ;;=^5063430
- ;;^UTILITY(U,$J,358.3,32832,0)
- ;;=Z85.6^^182^1993^66
- ;;^UTILITY(U,$J,358.3,32832,1,0)
+ ;;^UTILITY(U,$J,358.3,31699,2)
+ ;;=^5007635
+ ;;^UTILITY(U,$J,358.3,31700,0)
+ ;;=I70.344^^126^1604^57
+ ;;^UTILITY(U,$J,358.3,31700,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32832,1,3,0)
- ;;=3^Personal Hx of Leukemia
- ;;^UTILITY(U,$J,358.3,32832,1,4,0)
- ;;=4^Z85.6
- ;;^UTILITY(U,$J,358.3,32832,2)
- ;;=^5063434
- ;;^UTILITY(U,$J,358.3,32833,0)
- ;;=Z85.72^^182^1993^91
- ;;^UTILITY(U,$J,358.3,32833,1,0)
+ ;;^UTILITY(U,$J,358.3,31700,1,3,0)
+ ;;=3^Athscl Bypass,Left Leg w/ Heel/Midfoot Ulcer
+ ;;^UTILITY(U,$J,358.3,31700,1,4,0)
+ ;;=4^I70.344
+ ;;^UTILITY(U,$J,358.3,31700,2)
+ ;;=^5007636
+ ;;^UTILITY(U,$J,358.3,31701,0)
+ ;;=I70.334^^126^1604^59
+ ;;^UTILITY(U,$J,358.3,31701,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32833,1,3,0)
- ;;=3^Personal Hx of Non-Hodgkin Lymphomas
- ;;^UTILITY(U,$J,358.3,32833,1,4,0)
- ;;=4^Z85.72
- ;;^UTILITY(U,$J,358.3,32833,2)
- ;;=^5063436
- ;;^UTILITY(U,$J,358.3,32834,0)
- ;;=Z85.79^^182^1993^79
- ;;^UTILITY(U,$J,358.3,32834,1,0)
+ ;;^UTILITY(U,$J,358.3,31701,1,3,0)
+ ;;=3^Athscl Bypass,Right Leg w/ Heel/Midfoot Ulcer
+ ;;^UTILITY(U,$J,358.3,31701,1,4,0)
+ ;;=4^I70.334
+ ;;^UTILITY(U,$J,358.3,31701,2)
+ ;;=^5007629
+ ;;^UTILITY(U,$J,358.3,31702,0)
+ ;;=I70.333^^126^1604^58
+ ;;^UTILITY(U,$J,358.3,31702,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32834,1,3,0)
- ;;=3^Personal Hx of Malig Neop of Lymphoid,Hematpoetc & Rel Tissue
- ;;^UTILITY(U,$J,358.3,32834,1,4,0)
- ;;=4^Z85.79
- ;;^UTILITY(U,$J,358.3,32834,2)
- ;;=^5063437
- ;;^UTILITY(U,$J,358.3,32835,0)
- ;;=Z85.820^^182^1993^68
- ;;^UTILITY(U,$J,358.3,32835,1,0)
+ ;;^UTILITY(U,$J,358.3,31702,1,3,0)
+ ;;=3^Athscl Bypass,Right Leg w/ Ankle Ulcer
+ ;;^UTILITY(U,$J,358.3,31702,1,4,0)
+ ;;=4^I70.333
+ ;;^UTILITY(U,$J,358.3,31702,2)
+ ;;=^5007628
+ ;;^UTILITY(U,$J,358.3,31703,0)
+ ;;=I70.242^^126^1604^65
+ ;;^UTILITY(U,$J,358.3,31703,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32835,1,3,0)
- ;;=3^Personal Hx of Malig Melanoma of Skin
- ;;^UTILITY(U,$J,358.3,32835,1,4,0)
- ;;=4^Z85.820
- ;;^UTILITY(U,$J,358.3,32835,2)
- ;;=^5063441
- ;;^UTILITY(U,$J,358.3,32836,0)
- ;;=Z85.828^^182^1993^83
- ;;^UTILITY(U,$J,358.3,32836,1,0)
+ ;;^UTILITY(U,$J,358.3,31703,1,3,0)
+ ;;=3^Athscl Native Arteries,Left Leg w/ Calf Ulcer
+ ;;^UTILITY(U,$J,358.3,31703,1,4,0)
+ ;;=4^I70.242
+ ;;^UTILITY(U,$J,358.3,31703,2)
+ ;;=^5007596
+ ;;^UTILITY(U,$J,358.3,31704,0)
+ ;;=I70.232^^126^1604^69
+ ;;^UTILITY(U,$J,358.3,31704,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32836,1,3,0)
- ;;=3^Personal Hx of Malig Neop of Skin
- ;;^UTILITY(U,$J,358.3,32836,1,4,0)
- ;;=4^Z85.828
- ;;^UTILITY(U,$J,358.3,32836,2)
- ;;=^5063443
- ;;^UTILITY(U,$J,358.3,32837,0)
- ;;=Z85.71^^182^1993^63
- ;;^UTILITY(U,$J,358.3,32837,1,0)
+ ;;^UTILITY(U,$J,358.3,31704,1,3,0)
+ ;;=3^Athscl Native Arteries,Right Leg w/ Calf Ulcer
+ ;;^UTILITY(U,$J,358.3,31704,1,4,0)
+ ;;=4^I70.232
+ ;;^UTILITY(U,$J,358.3,31704,2)
+ ;;=^5007589
+ ;;^UTILITY(U,$J,358.3,31705,0)
+ ;;=I70.245^^126^1604^66
+ ;;^UTILITY(U,$J,358.3,31705,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32837,1,3,0)
- ;;=3^Personal Hx of Hodgkin Lymphoma
- ;;^UTILITY(U,$J,358.3,32837,1,4,0)
- ;;=4^Z85.71
- ;;^UTILITY(U,$J,358.3,32837,2)
- ;;=^5063435
- ;;^UTILITY(U,$J,358.3,32838,0)
- ;;=Z65.8^^182^1993^121
- ;;^UTILITY(U,$J,358.3,32838,1,0)
+ ;;^UTILITY(U,$J,358.3,31705,1,3,0)
+ ;;=3^Athscl Native Arteries,Left Leg w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,31705,1,4,0)
+ ;;=4^I70.245
+ ;;^UTILITY(U,$J,358.3,31705,2)
+ ;;=^5007599
+ ;;^UTILITY(U,$J,358.3,31706,0)
+ ;;=I70.244^^126^1604^67
+ ;;^UTILITY(U,$J,358.3,31706,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32838,1,3,0)
- ;;=3^Psychosocial Circumstance Related Problems
- ;;^UTILITY(U,$J,358.3,32838,1,4,0)
- ;;=4^Z65.8
- ;;^UTILITY(U,$J,358.3,32838,2)
- ;;=^5063185
- ;;^UTILITY(U,$J,358.3,32839,0)
- ;;=Z86.11^^182^1993^102
- ;;^UTILITY(U,$J,358.3,32839,1,0)
+ ;;^UTILITY(U,$J,358.3,31706,1,3,0)
+ ;;=3^Athscl Native Arteries,Left Leg w/ Heel/Midfoot Ulcer
+ ;;^UTILITY(U,$J,358.3,31706,1,4,0)
+ ;;=4^I70.244
+ ;;^UTILITY(U,$J,358.3,31706,2)
+ ;;=^5007598
+ ;;^UTILITY(U,$J,358.3,31707,0)
+ ;;=I70.243^^126^1604^64
+ ;;^UTILITY(U,$J,358.3,31707,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32839,1,3,0)
- ;;=3^Personal Hx of Tuberculosis
- ;;^UTILITY(U,$J,358.3,32839,1,4,0)
- ;;=4^Z86.11
- ;;^UTILITY(U,$J,358.3,32839,2)
- ;;=^5063461
- ;;^UTILITY(U,$J,358.3,32840,0)
- ;;=Z86.13^^182^1993^67
- ;;^UTILITY(U,$J,358.3,32840,1,0)
+ ;;^UTILITY(U,$J,358.3,31707,1,3,0)
+ ;;=3^Athscl Native Arteries,Left Leg w/ Ankle Ulcer
+ ;;^UTILITY(U,$J,358.3,31707,1,4,0)
+ ;;=4^I70.243
+ ;;^UTILITY(U,$J,358.3,31707,2)
+ ;;=^5007597
+ ;;^UTILITY(U,$J,358.3,31708,0)
+ ;;=I70.233^^126^1604^68
+ ;;^UTILITY(U,$J,358.3,31708,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32840,1,3,0)
- ;;=3^Personal Hx of Malaria
- ;;^UTILITY(U,$J,358.3,32840,1,4,0)
- ;;=4^Z86.13
- ;;^UTILITY(U,$J,358.3,32840,2)
- ;;=^5063463
- ;;^UTILITY(U,$J,358.3,32841,0)
- ;;=Z86.73^^182^1993^98
- ;;^UTILITY(U,$J,358.3,32841,1,0)
+ ;;^UTILITY(U,$J,358.3,31708,1,3,0)
+ ;;=3^Athscl Native Arteries,Right Leg w/ Ankle Ulcer
+ ;;^UTILITY(U,$J,358.3,31708,1,4,0)
+ ;;=4^I70.233
+ ;;^UTILITY(U,$J,358.3,31708,2)
+ ;;=^5007590
+ ;;^UTILITY(U,$J,358.3,31709,0)
+ ;;=I70.235^^126^1604^70
+ ;;^UTILITY(U,$J,358.3,31709,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32841,1,3,0)
- ;;=3^Personal Hx of TIA & Cereb Infrc w/o Residual Deficits
- ;;^UTILITY(U,$J,358.3,32841,1,4,0)
- ;;=4^Z86.73
- ;;^UTILITY(U,$J,358.3,32841,2)
- ;;=^5063477
- ;;^UTILITY(U,$J,358.3,32842,0)
- ;;=Z86.79^^182^1993^60
- ;;^UTILITY(U,$J,358.3,32842,1,0)
+ ;;^UTILITY(U,$J,358.3,31709,1,3,0)
+ ;;=3^Athscl Native Arteries,Right Leg w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,31709,1,4,0)
+ ;;=4^I70.235
+ ;;^UTILITY(U,$J,358.3,31709,2)
+ ;;=^5007592
+ ;;^UTILITY(U,$J,358.3,31710,0)
+ ;;=I70.234^^126^1604^71
+ ;;^UTILITY(U,$J,358.3,31710,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32842,1,3,0)
- ;;=3^Personal Hx of Circulatory System Diseases
- ;;^UTILITY(U,$J,358.3,32842,1,4,0)
- ;;=4^Z86.79
- ;;^UTILITY(U,$J,358.3,32842,2)
- ;;=^5063479
- ;;^UTILITY(U,$J,358.3,32843,0)
- ;;=Z87.39^^182^1993^88
- ;;^UTILITY(U,$J,358.3,32843,1,0)
+ ;;^UTILITY(U,$J,358.3,31710,1,3,0)
+ ;;=3^Athscl Native Arteries,Right Leg w/ Heel/Midfoot Ulcer
+ ;;^UTILITY(U,$J,358.3,31710,1,4,0)
+ ;;=4^I70.234
+ ;;^UTILITY(U,$J,358.3,31710,2)
+ ;;=^5007591
+ ;;^UTILITY(U,$J,358.3,31711,0)
+ ;;=I70.543^^126^1604^72
+ ;;^UTILITY(U,$J,358.3,31711,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32843,1,3,0)
- ;;=3^Personal Hx of Musculoskeletal & Connective Tissue Diseases
- ;;^UTILITY(U,$J,358.3,32843,1,4,0)
- ;;=4^Z87.39
- ;;^UTILITY(U,$J,358.3,32843,2)
- ;;=^5063488
- ;;^UTILITY(U,$J,358.3,32844,0)
- ;;=Z91.040^^182^1993^65
- ;;^UTILITY(U,$J,358.3,32844,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31711,1,3,0)
+ ;;=3^Athscl Nonaut Bio Bypass,Left Leg w/ Ankle Ulcer
+ ;;^UTILITY(U,$J,358.3,31711,1,4,0)
+ ;;=4^I70.543
+ ;;^UTILITY(U,$J,358.3,31711,2)
+ ;;=^5007711

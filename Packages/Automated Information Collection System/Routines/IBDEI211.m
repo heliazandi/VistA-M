@@ -1,136 +1,126 @@
-IBDEI211 ; ; 06-AUG-2015
+IBDEI211 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35427,0)
- ;;=E66.9^^187^2043^19
- ;;^UTILITY(U,$J,358.3,35427,1,0)
+ ;;^UTILITY(U,$J,358.3,34384,1,3,0)
+ ;;=3^Ankylosing Spondylitis of Cervical Region
+ ;;^UTILITY(U,$J,358.3,34384,1,4,0)
+ ;;=4^M45.2
+ ;;^UTILITY(U,$J,358.3,34384,2)
+ ;;=^5011962
+ ;;^UTILITY(U,$J,358.3,34385,0)
+ ;;=M45.4^^131^1686^7
+ ;;^UTILITY(U,$J,358.3,34385,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35427,1,3,0)
- ;;=3^Obesity, unspecified
- ;;^UTILITY(U,$J,358.3,35427,1,4,0)
- ;;=4^E66.9
- ;;^UTILITY(U,$J,358.3,35427,2)
- ;;=^5002832
- ;;^UTILITY(U,$J,358.3,35428,0)
- ;;=E66.01^^187^2043^16
- ;;^UTILITY(U,$J,358.3,35428,1,0)
+ ;;^UTILITY(U,$J,358.3,34385,1,3,0)
+ ;;=3^Ankylosing Spondylitis of Thoracic Region
+ ;;^UTILITY(U,$J,358.3,34385,1,4,0)
+ ;;=4^M45.4
+ ;;^UTILITY(U,$J,358.3,34385,2)
+ ;;=^5011964
+ ;;^UTILITY(U,$J,358.3,34386,0)
+ ;;=M45.7^^131^1686^4
+ ;;^UTILITY(U,$J,358.3,34386,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35428,1,3,0)
- ;;=3^Morbid (severe) obesity due to excess calories
- ;;^UTILITY(U,$J,358.3,35428,1,4,0)
- ;;=4^E66.01
- ;;^UTILITY(U,$J,358.3,35428,2)
- ;;=^5002826
- ;;^UTILITY(U,$J,358.3,35429,0)
- ;;=R53.82^^187^2043^5
- ;;^UTILITY(U,$J,358.3,35429,1,0)
+ ;;^UTILITY(U,$J,358.3,34386,1,3,0)
+ ;;=3^Ankylosing Spondylitis of Lumbosacral Region
+ ;;^UTILITY(U,$J,358.3,34386,1,4,0)
+ ;;=4^M45.7
+ ;;^UTILITY(U,$J,358.3,34386,2)
+ ;;=^5011967
+ ;;^UTILITY(U,$J,358.3,34387,0)
+ ;;=M45.8^^131^1686^5
+ ;;^UTILITY(U,$J,358.3,34387,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35429,1,3,0)
- ;;=3^Chronic fatigue, unspecified
- ;;^UTILITY(U,$J,358.3,35429,1,4,0)
- ;;=4^R53.82
- ;;^UTILITY(U,$J,358.3,35429,2)
- ;;=^5019519
- ;;^UTILITY(U,$J,358.3,35430,0)
- ;;=R42.^^187^2043^9
- ;;^UTILITY(U,$J,358.3,35430,1,0)
+ ;;^UTILITY(U,$J,358.3,34387,1,3,0)
+ ;;=3^Ankylosing Spondylitis of Sacral/Sacrococcygeal Region
+ ;;^UTILITY(U,$J,358.3,34387,1,4,0)
+ ;;=4^M45.8
+ ;;^UTILITY(U,$J,358.3,34387,2)
+ ;;=^5011968
+ ;;^UTILITY(U,$J,358.3,34388,0)
+ ;;=M47.22^^131^1686^172
+ ;;^UTILITY(U,$J,358.3,34388,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35430,1,3,0)
- ;;=3^Dizziness and giddiness
- ;;^UTILITY(U,$J,358.3,35430,1,4,0)
- ;;=4^R42.
- ;;^UTILITY(U,$J,358.3,35430,2)
- ;;=^5019450
- ;;^UTILITY(U,$J,358.3,35431,0)
- ;;=F51.02^^187^2043^3
- ;;^UTILITY(U,$J,358.3,35431,1,0)
+ ;;^UTILITY(U,$J,358.3,34388,1,3,0)
+ ;;=3^Sponylosis w/ Radiculopathy,Cervical Region NEC
+ ;;^UTILITY(U,$J,358.3,34388,1,4,0)
+ ;;=4^M47.22
+ ;;^UTILITY(U,$J,358.3,34388,2)
+ ;;=^5012061
+ ;;^UTILITY(U,$J,358.3,34389,0)
+ ;;=M47.24^^131^1686^174
+ ;;^UTILITY(U,$J,358.3,34389,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35431,1,3,0)
- ;;=3^Adjustment insomnia
- ;;^UTILITY(U,$J,358.3,35431,1,4,0)
- ;;=4^F51.02
- ;;^UTILITY(U,$J,358.3,35431,2)
- ;;=^5003604
- ;;^UTILITY(U,$J,358.3,35432,0)
- ;;=R53.81^^187^2043^15
- ;;^UTILITY(U,$J,358.3,35432,1,0)
+ ;;^UTILITY(U,$J,358.3,34389,1,3,0)
+ ;;=3^Sponylosis w/ Radiculopathy,Thoracic Region NEC
+ ;;^UTILITY(U,$J,358.3,34389,1,4,0)
+ ;;=4^M47.24
+ ;;^UTILITY(U,$J,358.3,34389,2)
+ ;;=^5012063
+ ;;^UTILITY(U,$J,358.3,34390,0)
+ ;;=M47.27^^131^1686^173
+ ;;^UTILITY(U,$J,358.3,34390,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35432,1,3,0)
- ;;=3^Malaise NEC
- ;;^UTILITY(U,$J,358.3,35432,1,4,0)
- ;;=4^R53.81
- ;;^UTILITY(U,$J,358.3,35432,2)
- ;;=^5019518
- ;;^UTILITY(U,$J,358.3,35433,0)
- ;;=R25.2^^187^2043^6
- ;;^UTILITY(U,$J,358.3,35433,1,0)
+ ;;^UTILITY(U,$J,358.3,34390,1,3,0)
+ ;;=3^Sponylosis w/ Radiculopathy,Lumbosacral Region NEC
+ ;;^UTILITY(U,$J,358.3,34390,1,4,0)
+ ;;=4^M47.27
+ ;;^UTILITY(U,$J,358.3,34390,2)
+ ;;=^5012066
+ ;;^UTILITY(U,$J,358.3,34391,0)
+ ;;=M47.812^^131^1686^169
+ ;;^UTILITY(U,$J,358.3,34391,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35433,1,3,0)
- ;;=3^Cramp and spasm
- ;;^UTILITY(U,$J,358.3,35433,1,4,0)
- ;;=4^R25.2
- ;;^UTILITY(U,$J,358.3,35433,2)
- ;;=^5019301
- ;;^UTILITY(U,$J,358.3,35434,0)
- ;;=F10.10^^187^2043^4
- ;;^UTILITY(U,$J,358.3,35434,1,0)
+ ;;^UTILITY(U,$J,358.3,34391,1,3,0)
+ ;;=3^Spondylosis w/o Myelopathy/Radiculopathy,Cervical Region
+ ;;^UTILITY(U,$J,358.3,34391,1,4,0)
+ ;;=4^M47.812
+ ;;^UTILITY(U,$J,358.3,34391,2)
+ ;;=^5012069
+ ;;^UTILITY(U,$J,358.3,34392,0)
+ ;;=M47.814^^131^1686^170
+ ;;^UTILITY(U,$J,358.3,34392,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35434,1,3,0)
- ;;=3^Alcohol abuse, uncomplicated
- ;;^UTILITY(U,$J,358.3,35434,1,4,0)
- ;;=4^F10.10
- ;;^UTILITY(U,$J,358.3,35434,2)
- ;;=^5003068
- ;;^UTILITY(U,$J,358.3,35435,0)
- ;;=F32.9^^187^2043^14
- ;;^UTILITY(U,$J,358.3,35435,1,0)
+ ;;^UTILITY(U,$J,358.3,34392,1,3,0)
+ ;;=3^Spondylosis w/o Myelopathy/Radiculopathy,Thoracic Region
+ ;;^UTILITY(U,$J,358.3,34392,1,4,0)
+ ;;=4^M47.814
+ ;;^UTILITY(U,$J,358.3,34392,2)
+ ;;=^5012071
+ ;;^UTILITY(U,$J,358.3,34393,0)
+ ;;=M47.817^^131^1686^171
+ ;;^UTILITY(U,$J,358.3,34393,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35435,1,3,0)
- ;;=3^Major depressive disorder, single episode, unspecified
- ;;^UTILITY(U,$J,358.3,35435,1,4,0)
- ;;=4^F32.9
- ;;^UTILITY(U,$J,358.3,35435,2)
- ;;=^5003528
- ;;^UTILITY(U,$J,358.3,35436,0)
- ;;=R26.2^^187^2043^8
- ;;^UTILITY(U,$J,358.3,35436,1,0)
+ ;;^UTILITY(U,$J,358.3,34393,1,3,0)
+ ;;=3^Spondylosis w/o Myelopathy/Radiculopathy,Lumbosacral Region
+ ;;^UTILITY(U,$J,358.3,34393,1,4,0)
+ ;;=4^M47.817
+ ;;^UTILITY(U,$J,358.3,34393,2)
+ ;;=^5012074
+ ;;^UTILITY(U,$J,358.3,34394,0)
+ ;;=M48.50XA^^131^1686^21
+ ;;^UTILITY(U,$J,358.3,34394,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35436,1,3,0)
- ;;=3^Difficulty in walking, not elsewhere classified
- ;;^UTILITY(U,$J,358.3,35436,1,4,0)
- ;;=4^R26.2
- ;;^UTILITY(U,$J,358.3,35436,2)
- ;;=^5019306
- ;;^UTILITY(U,$J,358.3,35437,0)
- ;;=R43.9^^187^2043^21
- ;;^UTILITY(U,$J,358.3,35437,1,0)
+ ;;^UTILITY(U,$J,358.3,34394,1,3,0)
+ ;;=3^Collapsed Vertebra NEC,Site Unspec,Init Encntr
+ ;;^UTILITY(U,$J,358.3,34394,1,4,0)
+ ;;=4^M48.50XA
+ ;;^UTILITY(U,$J,358.3,34394,2)
+ ;;=^5012159
+ ;;^UTILITY(U,$J,358.3,34395,0)
+ ;;=M48.50XD^^131^1686^22
+ ;;^UTILITY(U,$J,358.3,34395,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35437,1,3,0)
- ;;=3^Smell/Taste Disturbances,Unspec
- ;;^UTILITY(U,$J,358.3,35437,1,4,0)
- ;;=4^R43.9
- ;;^UTILITY(U,$J,358.3,35437,2)
- ;;=^5019454
- ;;^UTILITY(U,$J,358.3,35438,0)
- ;;=H91.91^^187^2043^12
- ;;^UTILITY(U,$J,358.3,35438,1,0)
+ ;;^UTILITY(U,$J,358.3,34395,1,3,0)
+ ;;=3^Collapsed Vertebra NEC,Site Unspec,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,34395,1,4,0)
+ ;;=4^M48.50XD
+ ;;^UTILITY(U,$J,358.3,34395,2)
+ ;;=^5012160
+ ;;^UTILITY(U,$J,358.3,34396,0)
+ ;;=M48.52XA^^131^1686^23
+ ;;^UTILITY(U,$J,358.3,34396,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35438,1,3,0)
- ;;=3^Hearing loss,right ear,Unspec
- ;;^UTILITY(U,$J,358.3,35438,1,4,0)
- ;;=4^H91.91
- ;;^UTILITY(U,$J,358.3,35438,2)
- ;;=^5133553
- ;;^UTILITY(U,$J,358.3,35439,0)
- ;;=H91.92^^187^2043^11
- ;;^UTILITY(U,$J,358.3,35439,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35439,1,3,0)
- ;;=3^Hearing loss,left ear,Unspec
- ;;^UTILITY(U,$J,358.3,35439,1,4,0)
- ;;=4^H91.92
- ;;^UTILITY(U,$J,358.3,35439,2)
- ;;=^5133554
- ;;^UTILITY(U,$J,358.3,35440,0)
- ;;=H91.93^^187^2043^10
+ ;;^UTILITY(U,$J,358.3,34396,1,3,0)
+ ;;=3^Collapsed Vertebra,Cervical Region,Init Encntr

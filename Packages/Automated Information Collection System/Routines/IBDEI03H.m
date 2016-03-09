@@ -1,138 +1,128 @@
-IBDEI03H ; ; 06-AUG-2015
+IBDEI03H ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1091,1,0)
+ ;;^UTILITY(U,$J,358.3,1196,1,3,0)
+ ;;=3^Caloric Vestibular Test, W/O Recording
+ ;;^UTILITY(U,$J,358.3,1197,0)
+ ;;=92534^^7^122^4^^^^1
+ ;;^UTILITY(U,$J,358.3,1197,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1197,1,2,0)
+ ;;=2^92534
+ ;;^UTILITY(U,$J,358.3,1197,1,3,0)
+ ;;=3^Opokinetic Nystagmus Test, W/O Recording
+ ;;^UTILITY(U,$J,358.3,1198,0)
+ ;;=92626^^7^123^3^^^^1
+ ;;^UTILITY(U,$J,358.3,1198,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1198,1,2,0)
+ ;;=2^92626
+ ;;^UTILITY(U,$J,358.3,1198,1,3,0)
+ ;;=3^Eval of Auditory Rehab Status,1st Hr
+ ;;^UTILITY(U,$J,358.3,1199,0)
+ ;;=92627^^7^123^4^^^^1
+ ;;^UTILITY(U,$J,358.3,1199,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1199,1,2,0)
+ ;;=2^92627
+ ;;^UTILITY(U,$J,358.3,1199,1,3,0)
+ ;;=3^Eval of Auditory Rehab Status,Ea Addl 15min
+ ;;^UTILITY(U,$J,358.3,1200,0)
+ ;;=92630^^7^123^1^^^^1
+ ;;^UTILITY(U,$J,358.3,1200,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1200,1,2,0)
+ ;;=2^92630
+ ;;^UTILITY(U,$J,358.3,1200,1,3,0)
+ ;;=3^Auditory Rehab;Prelingual Hearing Loss
+ ;;^UTILITY(U,$J,358.3,1201,0)
+ ;;=92633^^7^123^2^^^^1
+ ;;^UTILITY(U,$J,358.3,1201,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1201,1,2,0)
+ ;;=2^92633
+ ;;^UTILITY(U,$J,358.3,1201,1,3,0)
+ ;;=3^Auditory Rehab;Postlingual Hearing Loss
+ ;;^UTILITY(U,$J,358.3,1202,0)
+ ;;=92625^^7^123^5^^^^1
+ ;;^UTILITY(U,$J,358.3,1202,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1202,1,2,0)
+ ;;=2^92625
+ ;;^UTILITY(U,$J,358.3,1202,1,3,0)
+ ;;=3^Tinnitus Assessment
+ ;;^UTILITY(U,$J,358.3,1203,0)
+ ;;=99366^^7^124^1^^^^1
+ ;;^UTILITY(U,$J,358.3,1203,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1203,1,2,0)
+ ;;=2^99366
+ ;;^UTILITY(U,$J,358.3,1203,1,3,0)
+ ;;=3^Team Conf w/ Pt by HC Pro,30 Min
+ ;;^UTILITY(U,$J,358.3,1204,0)
+ ;;=99368^^7^124^2^^^^1
+ ;;^UTILITY(U,$J,358.3,1204,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1204,1,2,0)
+ ;;=2^99368
+ ;;^UTILITY(U,$J,358.3,1204,1,3,0)
+ ;;=3^Team Conf w/o Pt by HC Pro,30 Min
+ ;;^UTILITY(U,$J,358.3,1205,0)
+ ;;=99415^^7^125^1^^^^1
+ ;;^UTILITY(U,$J,358.3,1205,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1205,1,2,0)
+ ;;=2^99415
+ ;;^UTILITY(U,$J,358.3,1205,1,3,0)
+ ;;=3^Prolonged Clin Staff Svc;1st hr
+ ;;^UTILITY(U,$J,358.3,1206,0)
+ ;;=99416^^7^125^2^^^^1
+ ;;^UTILITY(U,$J,358.3,1206,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1206,1,2,0)
+ ;;=2^99416
+ ;;^UTILITY(U,$J,358.3,1206,1,3,0)
+ ;;=3^Prolonged Clin Staff Svc;Ea Addl 30min
+ ;;^UTILITY(U,$J,358.3,1207,0)
+ ;;=S04.61XA^^8^126^4
+ ;;^UTILITY(U,$J,358.3,1207,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1091,1,3,0)
- ;;=3^Chronic hepatitis, unspecified
- ;;^UTILITY(U,$J,358.3,1091,1,4,0)
- ;;=4^K73.9
- ;;^UTILITY(U,$J,358.3,1091,2)
- ;;=^5008815
- ;;^UTILITY(U,$J,358.3,1092,0)
- ;;=K73.0^^3^37^25
- ;;^UTILITY(U,$J,358.3,1092,1,0)
+ ;;^UTILITY(U,$J,358.3,1207,1,3,0)
+ ;;=3^Injury of acoustic nerve, right side, initial encounter
+ ;;^UTILITY(U,$J,358.3,1207,1,4,0)
+ ;;=4^S04.61XA
+ ;;^UTILITY(U,$J,358.3,1207,2)
+ ;;=^5020540
+ ;;^UTILITY(U,$J,358.3,1208,0)
+ ;;=S04.61XD^^8^126^5
+ ;;^UTILITY(U,$J,358.3,1208,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1092,1,3,0)
- ;;=3^Chronic persistent hepatitis, not elsewhere classified
- ;;^UTILITY(U,$J,358.3,1092,1,4,0)
- ;;=4^K73.0
- ;;^UTILITY(U,$J,358.3,1092,2)
- ;;=^5008811
- ;;^UTILITY(U,$J,358.3,1093,0)
- ;;=K74.60^^3^37^30
- ;;^UTILITY(U,$J,358.3,1093,1,0)
+ ;;^UTILITY(U,$J,358.3,1208,1,3,0)
+ ;;=3^Injury of acoustic nerve, right side, subsequent encounter
+ ;;^UTILITY(U,$J,358.3,1208,1,4,0)
+ ;;=4^S04.61XD
+ ;;^UTILITY(U,$J,358.3,1208,2)
+ ;;=^5020541
+ ;;^UTILITY(U,$J,358.3,1209,0)
+ ;;=S04.61XS^^8^126^6
+ ;;^UTILITY(U,$J,358.3,1209,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1093,1,3,0)
- ;;=3^Cirrhosis of Liver,Unspec
- ;;^UTILITY(U,$J,358.3,1093,1,4,0)
- ;;=4^K74.60
- ;;^UTILITY(U,$J,358.3,1093,2)
- ;;=^5008822
- ;;^UTILITY(U,$J,358.3,1094,0)
- ;;=K74.0^^3^37^61
- ;;^UTILITY(U,$J,358.3,1094,1,0)
+ ;;^UTILITY(U,$J,358.3,1209,1,3,0)
+ ;;=3^Injury of acoustic nerve, right side, sequela
+ ;;^UTILITY(U,$J,358.3,1209,1,4,0)
+ ;;=4^S04.61XS
+ ;;^UTILITY(U,$J,358.3,1209,2)
+ ;;=^5020542
+ ;;^UTILITY(U,$J,358.3,1210,0)
+ ;;=S04.62XA^^8^126^1
+ ;;^UTILITY(U,$J,358.3,1210,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1094,1,3,0)
- ;;=3^Hepatic fibrosis
- ;;^UTILITY(U,$J,358.3,1094,1,4,0)
- ;;=4^K74.0
- ;;^UTILITY(U,$J,358.3,1094,2)
- ;;=^5008816
- ;;^UTILITY(U,$J,358.3,1095,0)
- ;;=K76.0^^3^37^48
- ;;^UTILITY(U,$J,358.3,1095,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1095,1,3,0)
- ;;=3^Fatty (change of) liver, not elsewhere classified
- ;;^UTILITY(U,$J,358.3,1095,1,4,0)
- ;;=4^K76.0
- ;;^UTILITY(U,$J,358.3,1095,2)
- ;;=^5008831
- ;;^UTILITY(U,$J,358.3,1096,0)
- ;;=K75.9^^3^37^64
- ;;^UTILITY(U,$J,358.3,1096,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1096,1,3,0)
- ;;=3^Inflammatory liver disease, unspecified
- ;;^UTILITY(U,$J,358.3,1096,1,4,0)
- ;;=4^K75.9
- ;;^UTILITY(U,$J,358.3,1096,2)
- ;;=^5008830
- ;;^UTILITY(U,$J,358.3,1097,0)
- ;;=K71.6^^3^37^95
- ;;^UTILITY(U,$J,358.3,1097,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1097,1,3,0)
- ;;=3^Toxic liver disease with hepatitis, not elsewhere classified
- ;;^UTILITY(U,$J,358.3,1097,1,4,0)
- ;;=4^K71.6
- ;;^UTILITY(U,$J,358.3,1097,2)
- ;;=^5008801
- ;;^UTILITY(U,$J,358.3,1098,0)
- ;;=K80.20^^3^37^16
- ;;^UTILITY(U,$J,358.3,1098,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1098,1,3,0)
- ;;=3^Calculus of gallbladder w/o cholecystitis w/o obstruction
- ;;^UTILITY(U,$J,358.3,1098,1,4,0)
- ;;=4^K80.20
- ;;^UTILITY(U,$J,358.3,1098,2)
- ;;=^5008846
- ;;^UTILITY(U,$J,358.3,1099,0)
- ;;=K81.9^^3^37^20
- ;;^UTILITY(U,$J,358.3,1099,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1099,1,3,0)
- ;;=3^Cholecystitis, unspecified
- ;;^UTILITY(U,$J,358.3,1099,1,4,0)
- ;;=4^K81.9
- ;;^UTILITY(U,$J,358.3,1099,2)
- ;;=^87388
- ;;^UTILITY(U,$J,358.3,1100,0)
- ;;=K85.9^^3^37^5
- ;;^UTILITY(U,$J,358.3,1100,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1100,1,3,0)
- ;;=3^Acute pancreatitis, unspecified
- ;;^UTILITY(U,$J,358.3,1100,1,4,0)
- ;;=4^K85.9
- ;;^UTILITY(U,$J,358.3,1100,2)
- ;;=^5008887
- ;;^UTILITY(U,$J,358.3,1101,0)
- ;;=K86.1^^3^37^24
- ;;^UTILITY(U,$J,358.3,1101,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1101,1,3,0)
- ;;=3^Chronic pancreatitis NEC
- ;;^UTILITY(U,$J,358.3,1101,1,4,0)
- ;;=4^K86.1
- ;;^UTILITY(U,$J,358.3,1101,2)
- ;;=^5008889
- ;;^UTILITY(U,$J,358.3,1102,0)
- ;;=K86.3^^3^37^86
- ;;^UTILITY(U,$J,358.3,1102,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1102,1,3,0)
- ;;=3^Pseudocyst of pancreas
- ;;^UTILITY(U,$J,358.3,1102,1,4,0)
- ;;=4^K86.3
- ;;^UTILITY(U,$J,358.3,1102,2)
- ;;=^5008891
- ;;^UTILITY(U,$J,358.3,1103,0)
- ;;=K92.1^^3^37^74
- ;;^UTILITY(U,$J,358.3,1103,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1103,1,3,0)
- ;;=3^Melena
- ;;^UTILITY(U,$J,358.3,1103,1,4,0)
- ;;=4^K92.1
- ;;^UTILITY(U,$J,358.3,1103,2)
- ;;=^5008914
- ;;^UTILITY(U,$J,358.3,1104,0)
- ;;=K92.2^^3^37^56
- ;;^UTILITY(U,$J,358.3,1104,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1104,1,3,0)
- ;;=3^Gastrointestinal hemorrhage, unspecified
+ ;;^UTILITY(U,$J,358.3,1210,1,3,0)
+ ;;=3^Injury of acoustic nerve, left side, initial encounter
+ ;;^UTILITY(U,$J,358.3,1210,1,4,0)
+ ;;=4^S04.62XA
+ ;;^UTILITY(U,$J,358.3,1210,2)
+ ;;=^5020543
+ ;;^UTILITY(U,$J,358.3,1211,0)
+ ;;=S04.62XD^^8^126^3

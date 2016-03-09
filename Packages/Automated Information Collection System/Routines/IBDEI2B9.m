@@ -1,0 +1,132 @@
+IBDEI2B9 ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,39203,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39203,1,3,0)
+ ;;=3^Scleritis,Right Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,39203,1,4,0)
+ ;;=4^H15.001
+ ;;^UTILITY(U,$J,358.3,39203,2)
+ ;;=^5004810
+ ;;^UTILITY(U,$J,358.3,39204,0)
+ ;;=H15.002^^153^1920^151
+ ;;^UTILITY(U,$J,358.3,39204,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39204,1,3,0)
+ ;;=3^Scleritis,Left Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,39204,1,4,0)
+ ;;=4^H15.002
+ ;;^UTILITY(U,$J,358.3,39204,2)
+ ;;=^5004811
+ ;;^UTILITY(U,$J,358.3,39205,0)
+ ;;=H57.00^^153^1920^5
+ ;;^UTILITY(U,$J,358.3,39205,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39205,1,3,0)
+ ;;=3^Anomaly of Pupillary Function,Unspec
+ ;;^UTILITY(U,$J,358.3,39205,1,4,0)
+ ;;=4^H57.00
+ ;;^UTILITY(U,$J,358.3,39205,2)
+ ;;=^5006375
+ ;;^UTILITY(U,$J,358.3,39206,0)
+ ;;=H57.9^^153^1920^68
+ ;;^UTILITY(U,$J,358.3,39206,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39206,1,3,0)
+ ;;=3^Eye and Adnexa Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,39206,1,4,0)
+ ;;=4^H57.9
+ ;;^UTILITY(U,$J,358.3,39206,2)
+ ;;=^269333
+ ;;^UTILITY(U,$J,358.3,39207,0)
+ ;;=L10.9^^153^1920^126
+ ;;^UTILITY(U,$J,358.3,39207,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39207,1,3,0)
+ ;;=3^Pemphigus,Unspec
+ ;;^UTILITY(U,$J,358.3,39207,1,4,0)
+ ;;=4^L10.9
+ ;;^UTILITY(U,$J,358.3,39207,2)
+ ;;=^5009090
+ ;;^UTILITY(U,$J,358.3,39208,0)
+ ;;=L10.81^^153^1920^124
+ ;;^UTILITY(U,$J,358.3,39208,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39208,1,3,0)
+ ;;=3^Paraneoplastic Pemphigus
+ ;;^UTILITY(U,$J,358.3,39208,1,4,0)
+ ;;=4^L10.81
+ ;;^UTILITY(U,$J,358.3,39208,2)
+ ;;=^5009088
+ ;;^UTILITY(U,$J,358.3,39209,0)
+ ;;=L10.5^^153^1920^60
+ ;;^UTILITY(U,$J,358.3,39209,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39209,1,3,0)
+ ;;=3^Drug-Induced Pemphigus
+ ;;^UTILITY(U,$J,358.3,39209,1,4,0)
+ ;;=4^L10.5
+ ;;^UTILITY(U,$J,358.3,39209,2)
+ ;;=^5009087
+ ;;^UTILITY(U,$J,358.3,39210,0)
+ ;;=L12.9^^153^1920^125
+ ;;^UTILITY(U,$J,358.3,39210,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39210,1,3,0)
+ ;;=3^Pemphigoid,Unspec
+ ;;^UTILITY(U,$J,358.3,39210,1,4,0)
+ ;;=4^L12.9
+ ;;^UTILITY(U,$J,358.3,39210,2)
+ ;;=^5009102
+ ;;^UTILITY(U,$J,358.3,39211,0)
+ ;;=M35.01^^153^1920^153
+ ;;^UTILITY(U,$J,358.3,39211,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39211,1,3,0)
+ ;;=3^Sicca Syndrome w/ Keratoconjunctivitis
+ ;;^UTILITY(U,$J,358.3,39211,1,4,0)
+ ;;=4^M35.01
+ ;;^UTILITY(U,$J,358.3,39211,2)
+ ;;=^5011787
+ ;;^UTILITY(U,$J,358.3,39212,0)
+ ;;=S05.01XA^^153^1920^89
+ ;;^UTILITY(U,$J,358.3,39212,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39212,1,3,0)
+ ;;=3^Injury of Conjunctiva/Corneal Abrasion w/o FB,Right Eye,Init Encntr
+ ;;^UTILITY(U,$J,358.3,39212,1,4,0)
+ ;;=4^S05.01XA
+ ;;^UTILITY(U,$J,358.3,39212,2)
+ ;;=^5020579
+ ;;^UTILITY(U,$J,358.3,39213,0)
+ ;;=S05.02XA^^153^1920^90
+ ;;^UTILITY(U,$J,358.3,39213,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39213,1,3,0)
+ ;;=3^Injury of Conjunctiva/Corneal Abrasion w/o FB,Left Eye,Init Encntr
+ ;;^UTILITY(U,$J,358.3,39213,1,4,0)
+ ;;=4^S05.02XA
+ ;;^UTILITY(U,$J,358.3,39213,2)
+ ;;=^5020582
+ ;;^UTILITY(U,$J,358.3,39214,0)
+ ;;=T15.02XA^^153^1920^69
+ ;;^UTILITY(U,$J,358.3,39214,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39214,1,3,0)
+ ;;=3^FB in Cornea,Left Eye,Init Encntr
+ ;;^UTILITY(U,$J,358.3,39214,1,4,0)
+ ;;=4^T15.02XA
+ ;;^UTILITY(U,$J,358.3,39214,2)
+ ;;=^5046387
+ ;;^UTILITY(U,$J,358.3,39215,0)
+ ;;=T15.01XA^^153^1920^70
+ ;;^UTILITY(U,$J,358.3,39215,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39215,1,3,0)
+ ;;=3^FB in Cornea,Right Eye,Init Encntr
+ ;;^UTILITY(U,$J,358.3,39215,1,4,0)
+ ;;=4^T15.01XA
+ ;;^UTILITY(U,$J,358.3,39215,2)
+ ;;=^5046384

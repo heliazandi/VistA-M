@@ -1,130 +1,134 @@
-IBDEI1VQ ; ; 06-AUG-2015
+IBDEI1VQ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33065,1,3,0)
- ;;=3^Dementia in Oth Diseases Classd Elswhr w/o Behavrl Disturb
- ;;^UTILITY(U,$J,358.3,33065,1,4,0)
- ;;=4^F02.80
- ;;^UTILITY(U,$J,358.3,33065,2)
- ;;=^5003048
- ;;^UTILITY(U,$J,358.3,33066,0)
- ;;=F02.81^^182^1996^10
- ;;^UTILITY(U,$J,358.3,33066,1,0)
+ ;;^UTILITY(U,$J,358.3,31924,1,3,0)
+ ;;=3^DM Type 2 w/ Diab Amyotrophy
+ ;;^UTILITY(U,$J,358.3,31924,1,4,0)
+ ;;=4^E11.44
+ ;;^UTILITY(U,$J,358.3,31924,2)
+ ;;=^5002648
+ ;;^UTILITY(U,$J,358.3,31925,0)
+ ;;=E11.49^^126^1607^26
+ ;;^UTILITY(U,$J,358.3,31925,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33066,1,3,0)
- ;;=3^Dementia in Oth Diseases Classd Elswhr w/ Behavrl Disturb
- ;;^UTILITY(U,$J,358.3,33066,1,4,0)
- ;;=4^F02.81
- ;;^UTILITY(U,$J,358.3,33066,2)
- ;;=^5003049
- ;;^UTILITY(U,$J,358.3,33067,0)
- ;;=F20.3^^182^1996^26
- ;;^UTILITY(U,$J,358.3,33067,1,0)
+ ;;^UTILITY(U,$J,358.3,31925,1,3,0)
+ ;;=3^DM Type 2 w/ Diab Neurolog Compl NEC
+ ;;^UTILITY(U,$J,358.3,31925,1,4,0)
+ ;;=4^E11.49
+ ;;^UTILITY(U,$J,358.3,31925,2)
+ ;;=^5002649
+ ;;^UTILITY(U,$J,358.3,31926,0)
+ ;;=E10.40^^126^1607^11
+ ;;^UTILITY(U,$J,358.3,31926,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33067,1,3,0)
- ;;=3^Undifferentiated Schizophrenia
- ;;^UTILITY(U,$J,358.3,33067,1,4,0)
- ;;=4^F20.3
- ;;^UTILITY(U,$J,358.3,33067,2)
- ;;=^5003472
- ;;^UTILITY(U,$J,358.3,33068,0)
- ;;=F20.9^^182^1996^23
- ;;^UTILITY(U,$J,358.3,33068,1,0)
+ ;;^UTILITY(U,$J,358.3,31926,1,3,0)
+ ;;=3^DM Type 1 w/ Diab Neuropathy,Unspec
+ ;;^UTILITY(U,$J,358.3,31926,1,4,0)
+ ;;=4^E10.40
+ ;;^UTILITY(U,$J,358.3,31926,2)
+ ;;=^5002604
+ ;;^UTILITY(U,$J,358.3,31927,0)
+ ;;=E10.41^^126^1607^8
+ ;;^UTILITY(U,$J,358.3,31927,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33068,1,3,0)
- ;;=3^Schizophrenia,Unspec
- ;;^UTILITY(U,$J,358.3,33068,1,4,0)
- ;;=4^F20.9
- ;;^UTILITY(U,$J,358.3,33068,2)
- ;;=^5003476
- ;;^UTILITY(U,$J,358.3,33069,0)
- ;;=F31.9^^182^1996^6
- ;;^UTILITY(U,$J,358.3,33069,1,0)
+ ;;^UTILITY(U,$J,358.3,31927,1,3,0)
+ ;;=3^DM Type 1 w/ Diab Mononeuropathy
+ ;;^UTILITY(U,$J,358.3,31927,1,4,0)
+ ;;=4^E10.41
+ ;;^UTILITY(U,$J,358.3,31927,2)
+ ;;=^5002605
+ ;;^UTILITY(U,$J,358.3,31928,0)
+ ;;=E10.42^^126^1607^14
+ ;;^UTILITY(U,$J,358.3,31928,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33069,1,3,0)
- ;;=3^Bipolar Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,33069,1,4,0)
- ;;=4^F31.9
- ;;^UTILITY(U,$J,358.3,33069,2)
- ;;=^331892
- ;;^UTILITY(U,$J,358.3,33070,0)
- ;;=F31.72^^182^1996^7
- ;;^UTILITY(U,$J,358.3,33070,1,0)
+ ;;^UTILITY(U,$J,358.3,31928,1,3,0)
+ ;;=3^DM Type 1 w/ Diab Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,31928,1,4,0)
+ ;;=4^E10.42
+ ;;^UTILITY(U,$J,358.3,31928,2)
+ ;;=^5002606
+ ;;^UTILITY(U,$J,358.3,31929,0)
+ ;;=E10.43^^126^1607^6
+ ;;^UTILITY(U,$J,358.3,31929,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33070,1,3,0)
- ;;=3^Bipolr Disorder,Full Remis,Most Recent Episode Hypomanic
- ;;^UTILITY(U,$J,358.3,33070,1,4,0)
- ;;=4^F31.72
- ;;^UTILITY(U,$J,358.3,33070,2)
- ;;=^5003512
- ;;^UTILITY(U,$J,358.3,33071,0)
- ;;=F31.71^^182^1996^5
- ;;^UTILITY(U,$J,358.3,33071,1,0)
+ ;;^UTILITY(U,$J,358.3,31929,1,3,0)
+ ;;=3^DM Type 1 w/ Diab Autonomic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,31929,1,4,0)
+ ;;=4^E10.43
+ ;;^UTILITY(U,$J,358.3,31929,2)
+ ;;=^5002607
+ ;;^UTILITY(U,$J,358.3,31930,0)
+ ;;=E10.44^^126^1607^4
+ ;;^UTILITY(U,$J,358.3,31930,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33071,1,3,0)
- ;;=3^Bipolar Disorder,Part Remis,Most Recent Episode Hypomanic
- ;;^UTILITY(U,$J,358.3,33071,1,4,0)
- ;;=4^F31.71
- ;;^UTILITY(U,$J,358.3,33071,2)
- ;;=^5003511
- ;;^UTILITY(U,$J,358.3,33072,0)
- ;;=F31.70^^182^1996^4
- ;;^UTILITY(U,$J,358.3,33072,1,0)
+ ;;^UTILITY(U,$J,358.3,31930,1,3,0)
+ ;;=3^DM Type 1 w/ Diab Amyotrophy
+ ;;^UTILITY(U,$J,358.3,31930,1,4,0)
+ ;;=4^E10.44
+ ;;^UTILITY(U,$J,358.3,31930,2)
+ ;;=^5002608
+ ;;^UTILITY(U,$J,358.3,31931,0)
+ ;;=E10.49^^126^1607^9
+ ;;^UTILITY(U,$J,358.3,31931,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33072,1,3,0)
- ;;=3^Bipolar Disorder,In Remis,Most Recent Episode Unspec
- ;;^UTILITY(U,$J,358.3,33072,1,4,0)
- ;;=4^F31.70
- ;;^UTILITY(U,$J,358.3,33072,2)
- ;;=^5003510
- ;;^UTILITY(U,$J,358.3,33073,0)
- ;;=F29.^^182^1996^21
- ;;^UTILITY(U,$J,358.3,33073,1,0)
+ ;;^UTILITY(U,$J,358.3,31931,1,3,0)
+ ;;=3^DM Type 1 w/ Diab Neurologic Compl NEC
+ ;;^UTILITY(U,$J,358.3,31931,1,4,0)
+ ;;=4^E10.49
+ ;;^UTILITY(U,$J,358.3,31931,2)
+ ;;=^5002609
+ ;;^UTILITY(U,$J,358.3,31932,0)
+ ;;=E11.621^^126^1607^32
+ ;;^UTILITY(U,$J,358.3,31932,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33073,1,3,0)
- ;;=3^Psychosis not d/t Substance/Known Physiol Cond,Unspec
- ;;^UTILITY(U,$J,358.3,33073,1,4,0)
- ;;=4^F29.
- ;;^UTILITY(U,$J,358.3,33073,2)
- ;;=^5003484
- ;;^UTILITY(U,$J,358.3,33074,0)
- ;;=F28.^^182^1996^22
- ;;^UTILITY(U,$J,358.3,33074,1,0)
+ ;;^UTILITY(U,$J,358.3,31932,1,3,0)
+ ;;=3^DM Type 2 w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,31932,1,4,0)
+ ;;=4^E11.621
+ ;;^UTILITY(U,$J,358.3,31932,2)
+ ;;=^5002656
+ ;;^UTILITY(U,$J,358.3,31933,0)
+ ;;=M76.891^^126^1608^12
+ ;;^UTILITY(U,$J,358.3,31933,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33074,1,3,0)
- ;;=3^Psychosis not d/t Substance/Known Physiol Cond,Oth
- ;;^UTILITY(U,$J,358.3,33074,1,4,0)
- ;;=4^F28.
- ;;^UTILITY(U,$J,358.3,33074,2)
- ;;=^5003483
- ;;^UTILITY(U,$J,358.3,33075,0)
- ;;=F41.9^^182^1996^3
- ;;^UTILITY(U,$J,358.3,33075,1,0)
+ ;;^UTILITY(U,$J,358.3,31933,1,3,0)
+ ;;=3^Enthesopath of rt lwr limb, exlud ft, oth
+ ;;^UTILITY(U,$J,358.3,31933,1,4,0)
+ ;;=4^M76.891
+ ;;^UTILITY(U,$J,358.3,31933,2)
+ ;;=^5013296
+ ;;^UTILITY(U,$J,358.3,31934,0)
+ ;;=M76.892^^126^1608^11
+ ;;^UTILITY(U,$J,358.3,31934,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33075,1,3,0)
- ;;=3^Anxiety Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,33075,1,4,0)
- ;;=4^F41.9
- ;;^UTILITY(U,$J,358.3,33075,2)
- ;;=^5003567
- ;;^UTILITY(U,$J,358.3,33076,0)
- ;;=F42.^^182^1996^15
- ;;^UTILITY(U,$J,358.3,33076,1,0)
+ ;;^UTILITY(U,$J,358.3,31934,1,3,0)
+ ;;=3^Enthesopath of lft lwr limb, exluc ft, oth
+ ;;^UTILITY(U,$J,358.3,31934,1,4,0)
+ ;;=4^M76.892
+ ;;^UTILITY(U,$J,358.3,31934,2)
+ ;;=^5013297
+ ;;^UTILITY(U,$J,358.3,31935,0)
+ ;;=M77.52^^126^1608^13
+ ;;^UTILITY(U,$J,358.3,31935,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33076,1,3,0)
- ;;=3^Obsessive-Compulsive Disorder
- ;;^UTILITY(U,$J,358.3,33076,1,4,0)
- ;;=4^F42.
- ;;^UTILITY(U,$J,358.3,33076,2)
- ;;=^5003568
- ;;^UTILITY(U,$J,358.3,33077,0)
- ;;=F45.0^^182^1996^24
- ;;^UTILITY(U,$J,358.3,33077,1,0)
+ ;;^UTILITY(U,$J,358.3,31935,1,3,0)
+ ;;=3^Enthesopathy of lft ft, oth
+ ;;^UTILITY(U,$J,358.3,31935,1,4,0)
+ ;;=4^M77.52
+ ;;^UTILITY(U,$J,358.3,31935,2)
+ ;;=^5013317
+ ;;^UTILITY(U,$J,358.3,31936,0)
+ ;;=M77.51^^126^1608^14
+ ;;^UTILITY(U,$J,358.3,31936,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33077,1,3,0)
- ;;=3^Somatization Disorder
- ;;^UTILITY(U,$J,358.3,33077,1,4,0)
- ;;=4^F45.0
- ;;^UTILITY(U,$J,358.3,33077,2)
- ;;=^112280
+ ;;^UTILITY(U,$J,358.3,31936,1,3,0)
+ ;;=3^Enthesopathy of rt ft, oth
+ ;;^UTILITY(U,$J,358.3,31936,1,4,0)
+ ;;=4^M77.51
+ ;;^UTILITY(U,$J,358.3,31936,2)
+ ;;=^5013316
+ ;;^UTILITY(U,$J,358.3,31937,0)
+ ;;=L72.0^^126^1608^15
+ ;;^UTILITY(U,$J,358.3,31937,1,0)
+ ;;=^358.31IA^4^2

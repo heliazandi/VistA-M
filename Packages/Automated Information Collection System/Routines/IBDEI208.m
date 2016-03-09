@@ -1,128 +1,134 @@
-IBDEI208 ; ; 06-AUG-2015
+IBDEI208 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35067,1,4,0)
- ;;=4^S32.120S
- ;;^UTILITY(U,$J,358.3,35067,2)
- ;;=^5024556
- ;;^UTILITY(U,$J,358.3,35068,0)
- ;;=S32.130S^^183^2025^26
- ;;^UTILITY(U,$J,358.3,35068,1,0)
+ ;;^UTILITY(U,$J,358.3,34008,1,4,0)
+ ;;=4^D68.0
+ ;;^UTILITY(U,$J,358.3,34008,2)
+ ;;=^127267
+ ;;^UTILITY(U,$J,358.3,34009,0)
+ ;;=C88.0^^131^1680^195
+ ;;^UTILITY(U,$J,358.3,34009,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35068,1,3,0)
- ;;=3^Nondisp Zone III fracture of sacrum, sequela
- ;;^UTILITY(U,$J,358.3,35068,1,4,0)
- ;;=4^S32.130S
- ;;^UTILITY(U,$J,358.3,35068,2)
- ;;=^5024580
- ;;^UTILITY(U,$J,358.3,35069,0)
- ;;=S32.112S^^183^2025^30
- ;;^UTILITY(U,$J,358.3,35069,1,0)
+ ;;^UTILITY(U,$J,358.3,34009,1,3,0)
+ ;;=3^Waldenstrom Macroglobulinemia
+ ;;^UTILITY(U,$J,358.3,34009,1,4,0)
+ ;;=4^C88.0
+ ;;^UTILITY(U,$J,358.3,34009,2)
+ ;;=^5001748
+ ;;^UTILITY(U,$J,358.3,34010,0)
+ ;;=C91.02^^131^1680^3
+ ;;^UTILITY(U,$J,358.3,34010,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35069,1,3,0)
- ;;=3^Severely displaced Zone I fracture of sacrum, sequela
- ;;^UTILITY(U,$J,358.3,35069,1,4,0)
- ;;=4^S32.112S
- ;;^UTILITY(U,$J,358.3,35069,2)
- ;;=^5024544
- ;;^UTILITY(U,$J,358.3,35070,0)
- ;;=S32.122S^^183^2025^31
- ;;^UTILITY(U,$J,358.3,35070,1,0)
+ ;;^UTILITY(U,$J,358.3,34010,1,3,0)
+ ;;=3^Acute Lymphoblastic Leukemia,In Relapse
+ ;;^UTILITY(U,$J,358.3,34010,1,4,0)
+ ;;=4^C91.02
+ ;;^UTILITY(U,$J,358.3,34010,2)
+ ;;=^5001764
+ ;;^UTILITY(U,$J,358.3,34011,0)
+ ;;=C92.02^^131^1680^6
+ ;;^UTILITY(U,$J,358.3,34011,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35070,1,3,0)
- ;;=3^Severely displaced Zone II fracture of sacrum, sequela
- ;;^UTILITY(U,$J,358.3,35070,1,4,0)
- ;;=4^S32.122S
- ;;^UTILITY(U,$J,358.3,35070,2)
- ;;=^5024568
- ;;^UTILITY(U,$J,358.3,35071,0)
- ;;=S32.132S^^183^2025^32
- ;;^UTILITY(U,$J,358.3,35071,1,0)
+ ;;^UTILITY(U,$J,358.3,34011,1,3,0)
+ ;;=3^Acute Myeloblastic Leukemia,In Relapse
+ ;;^UTILITY(U,$J,358.3,34011,1,4,0)
+ ;;=4^C92.02
+ ;;^UTILITY(U,$J,358.3,34011,2)
+ ;;=^5001791
+ ;;^UTILITY(U,$J,358.3,34012,0)
+ ;;=D09.3^^131^1680^45
+ ;;^UTILITY(U,$J,358.3,34012,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35071,1,3,0)
- ;;=3^Severely displaced Zone III fracture of sacrum, sequela
- ;;^UTILITY(U,$J,358.3,35071,1,4,0)
- ;;=4^S32.132S
- ;;^UTILITY(U,$J,358.3,35071,2)
- ;;=^5024592
- ;;^UTILITY(U,$J,358.3,35072,0)
- ;;=S32.14XS^^183^2025^47
- ;;^UTILITY(U,$J,358.3,35072,1,0)
+ ;;^UTILITY(U,$J,358.3,34012,1,3,0)
+ ;;=3^Carcinoma in Situ of Thyroid/Oth Endocrine Glands
+ ;;^UTILITY(U,$J,358.3,34012,1,4,0)
+ ;;=4^D09.3
+ ;;^UTILITY(U,$J,358.3,34012,2)
+ ;;=^5001955
+ ;;^UTILITY(U,$J,358.3,34013,0)
+ ;;=C22.0^^131^1680^86
+ ;;^UTILITY(U,$J,358.3,34013,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35072,1,3,0)
- ;;=3^Type 1 fracture of sacrum, sequela
- ;;^UTILITY(U,$J,358.3,35072,1,4,0)
- ;;=4^S32.14XS
- ;;^UTILITY(U,$J,358.3,35072,2)
- ;;=^5024604
- ;;^UTILITY(U,$J,358.3,35073,0)
- ;;=S32.15XS^^183^2025^48
- ;;^UTILITY(U,$J,358.3,35073,1,0)
+ ;;^UTILITY(U,$J,358.3,34013,1,3,0)
+ ;;=3^Hepatocellular Carcinoma
+ ;;^UTILITY(U,$J,358.3,34013,1,4,0)
+ ;;=4^C22.0
+ ;;^UTILITY(U,$J,358.3,34013,2)
+ ;;=^5000933
+ ;;^UTILITY(U,$J,358.3,34014,0)
+ ;;=C24.9^^131^1680^110
+ ;;^UTILITY(U,$J,358.3,34014,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35073,1,3,0)
- ;;=3^Type 2 fracture of sacrum, sequela
- ;;^UTILITY(U,$J,358.3,35073,1,4,0)
- ;;=4^S32.15XS
- ;;^UTILITY(U,$J,358.3,35073,2)
- ;;=^5024610
- ;;^UTILITY(U,$J,358.3,35074,0)
- ;;=S32.16XS^^183^2025^49
- ;;^UTILITY(U,$J,358.3,35074,1,0)
+ ;;^UTILITY(U,$J,358.3,34014,1,3,0)
+ ;;=3^Malig Neop Biliary Tract,Unspec
+ ;;^UTILITY(U,$J,358.3,34014,1,4,0)
+ ;;=4^C24.9
+ ;;^UTILITY(U,$J,358.3,34014,2)
+ ;;=^5000942
+ ;;^UTILITY(U,$J,358.3,34015,0)
+ ;;=C50.922^^131^1680^134
+ ;;^UTILITY(U,$J,358.3,34015,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35074,1,3,0)
- ;;=3^Type 3 fracture of sacrum, sequela
- ;;^UTILITY(U,$J,358.3,35074,1,4,0)
- ;;=4^S32.16XS
- ;;^UTILITY(U,$J,358.3,35074,2)
- ;;=^5024616
- ;;^UTILITY(U,$J,358.3,35075,0)
- ;;=S32.17XS^^183^2025^56
- ;;^UTILITY(U,$J,358.3,35075,1,0)
+ ;;^UTILITY(U,$J,358.3,34015,1,3,0)
+ ;;=3^Malig Neop Left Male Breast,Unspec Site
+ ;;^UTILITY(U,$J,358.3,34015,1,4,0)
+ ;;=4^C50.922
+ ;;^UTILITY(U,$J,358.3,34015,2)
+ ;;=^5133340
+ ;;^UTILITY(U,$J,358.3,34016,0)
+ ;;=C34.91^^131^1680^152
+ ;;^UTILITY(U,$J,358.3,34016,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35075,1,3,0)
- ;;=3^Type 4 fracture of sacrum, sequela
- ;;^UTILITY(U,$J,358.3,35075,1,4,0)
- ;;=4^S32.17XS
- ;;^UTILITY(U,$J,358.3,35075,2)
- ;;=^5024622
- ;;^UTILITY(U,$J,358.3,35076,0)
- ;;=S32.2XXS^^183^2025^19
- ;;^UTILITY(U,$J,358.3,35076,1,0)
+ ;;^UTILITY(U,$J,358.3,34016,1,3,0)
+ ;;=3^Malig Neop Right Bronchus/Lung,Unspec Part
+ ;;^UTILITY(U,$J,358.3,34016,1,4,0)
+ ;;=4^C34.91
+ ;;^UTILITY(U,$J,358.3,34016,2)
+ ;;=^5000967
+ ;;^UTILITY(U,$J,358.3,34017,0)
+ ;;=C50.921^^131^1680^156
+ ;;^UTILITY(U,$J,358.3,34017,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35076,1,3,0)
- ;;=3^Fracture of coccyx, sequela
- ;;^UTILITY(U,$J,358.3,35076,1,4,0)
- ;;=4^S32.2XXS
- ;;^UTILITY(U,$J,358.3,35076,2)
- ;;=^5024634
- ;;^UTILITY(U,$J,358.3,35077,0)
- ;;=S12.110S^^183^2025^1
- ;;^UTILITY(U,$J,358.3,35077,1,0)
+ ;;^UTILITY(U,$J,358.3,34017,1,3,0)
+ ;;=3^Malig Neop Right Male Breast,Unspec Site
+ ;;^UTILITY(U,$J,358.3,34017,1,4,0)
+ ;;=4^C50.921
+ ;;^UTILITY(U,$J,358.3,34017,2)
+ ;;=^5001198
+ ;;^UTILITY(U,$J,358.3,34018,0)
+ ;;=C90.02^^131^1680^167
+ ;;^UTILITY(U,$J,358.3,34018,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35077,1,3,0)
- ;;=3^Anterior displaced Type II dens fracture, sequela
- ;;^UTILITY(U,$J,358.3,35077,1,4,0)
- ;;=4^S12.110S
- ;;^UTILITY(U,$J,358.3,35077,2)
- ;;=^5021622
- ;;^UTILITY(U,$J,358.3,35078,0)
- ;;=S12.112S^^183^2025^23
- ;;^UTILITY(U,$J,358.3,35078,1,0)
+ ;;^UTILITY(U,$J,358.3,34018,1,3,0)
+ ;;=3^Multiple Myeloma,In Relapse
+ ;;^UTILITY(U,$J,358.3,34018,1,4,0)
+ ;;=4^C90.02
+ ;;^UTILITY(U,$J,358.3,34018,2)
+ ;;=^5001753
+ ;;^UTILITY(U,$J,358.3,34019,0)
+ ;;=D51.9^^131^1680^25
+ ;;^UTILITY(U,$J,358.3,34019,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35078,1,3,0)
- ;;=3^Nondisp Type II dens fracture, sequela
- ;;^UTILITY(U,$J,358.3,35078,1,4,0)
- ;;=4^S12.112S
- ;;^UTILITY(U,$J,358.3,35078,2)
- ;;=^5021634
- ;;^UTILITY(U,$J,358.3,35079,0)
- ;;=S12.111S^^183^2025^29
- ;;^UTILITY(U,$J,358.3,35079,1,0)
+ ;;^UTILITY(U,$J,358.3,34019,1,3,0)
+ ;;=3^Anemia in Vitamin B12 Deficiency
+ ;;^UTILITY(U,$J,358.3,34019,1,4,0)
+ ;;=4^D51.9
+ ;;^UTILITY(U,$J,358.3,34019,2)
+ ;;=^5002289
+ ;;^UTILITY(U,$J,358.3,34020,0)
+ ;;=C79.51^^131^1680^30
+ ;;^UTILITY(U,$J,358.3,34020,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35079,1,3,0)
- ;;=3^Posterior displaced Type II dens fracture, sequela
- ;;^UTILITY(U,$J,358.3,35079,1,4,0)
- ;;=4^S12.111S
- ;;^UTILITY(U,$J,358.3,35079,2)
- ;;=^5021628
+ ;;^UTILITY(U,$J,358.3,34020,1,3,0)
+ ;;=3^Bone Mets
+ ;;^UTILITY(U,$J,358.3,34020,1,4,0)
+ ;;=4^C79.51
+ ;;^UTILITY(U,$J,358.3,34020,2)
+ ;;=^5001350
+ ;;^UTILITY(U,$J,358.3,34021,0)
+ ;;=C80.1^^131^1680^163
+ ;;^UTILITY(U,$J,358.3,34021,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34021,1,3,0)
+ ;;=3^Malig Neop,Primary,Unspec Site

@@ -1,144 +1,132 @@
-IBDEI0FK ; ; 06-AUG-2015
+IBDEI0FK ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7153,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7153,1,4,0)
- ;;=4^486.
- ;;^UTILITY(U,$J,358.3,7153,1,5,0)
- ;;=5^Pneumonia,Organism NOS
- ;;^UTILITY(U,$J,358.3,7153,2)
- ;;=^95632
- ;;^UTILITY(U,$J,358.3,7154,0)
- ;;=482.9^^31^431^1
- ;;^UTILITY(U,$J,358.3,7154,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7154,1,4,0)
- ;;=4^482.9
- ;;^UTILITY(U,$J,358.3,7154,1,5,0)
- ;;=5^Bacterial Pnemonia NOS
- ;;^UTILITY(U,$J,358.3,7154,2)
- ;;=^12347
- ;;^UTILITY(U,$J,358.3,7155,0)
- ;;=482.42^^31^431^6
- ;;^UTILITY(U,$J,358.3,7155,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7155,1,4,0)
- ;;=4^482.42
- ;;^UTILITY(U,$J,358.3,7155,1,5,0)
- ;;=5^Meth Res Pneum D/T Staph
- ;;^UTILITY(U,$J,358.3,7155,2)
- ;;=^336602
- ;;^UTILITY(U,$J,358.3,7156,0)
- ;;=482.41^^31^431^9
- ;;^UTILITY(U,$J,358.3,7156,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7156,1,4,0)
- ;;=4^482.41
- ;;^UTILITY(U,$J,358.3,7156,1,5,0)
- ;;=5^Pneumonia D/T Staph Aureus
- ;;^UTILITY(U,$J,358.3,7156,2)
- ;;=^336833
- ;;^UTILITY(U,$J,358.3,7157,0)
- ;;=481.^^31^431^8
- ;;^UTILITY(U,$J,358.3,7157,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7157,1,4,0)
- ;;=4^481.
- ;;^UTILITY(U,$J,358.3,7157,1,5,0)
- ;;=5^Pneumococcal/S. Pneumo
- ;;^UTILITY(U,$J,358.3,7157,2)
- ;;=^95612
- ;;^UTILITY(U,$J,358.3,7158,0)
- ;;=482.30^^31^431^13
- ;;^UTILITY(U,$J,358.3,7158,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7158,1,4,0)
- ;;=4^482.30
- ;;^UTILITY(U,$J,358.3,7158,1,5,0)
- ;;=5^Streptococcal Pneumonia
- ;;^UTILITY(U,$J,358.3,7158,2)
- ;;=^294065
- ;;^UTILITY(U,$J,358.3,7159,0)
- ;;=480.9^^31^431^15
- ;;^UTILITY(U,$J,358.3,7159,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7159,1,4,0)
- ;;=4^480.9
- ;;^UTILITY(U,$J,358.3,7159,1,5,0)
- ;;=5^Viral Pneumonia NOS
- ;;^UTILITY(U,$J,358.3,7159,2)
- ;;=^95657
- ;;^UTILITY(U,$J,358.3,7160,0)
- ;;=488.81^^31^431^5
- ;;^UTILITY(U,$J,358.3,7160,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7160,1,4,0)
- ;;=4^488.81
- ;;^UTILITY(U,$J,358.3,7160,1,5,0)
- ;;=5^Flu D/T NVL A Virus w/Pneu
- ;;^UTILITY(U,$J,358.3,7160,2)
- ;;=^340524
- ;;^UTILITY(U,$J,358.3,7161,0)
- ;;=488.82^^31^431^4
- ;;^UTILITY(U,$J,358.3,7161,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7161,1,4,0)
- ;;=4^488.82
- ;;^UTILITY(U,$J,358.3,7161,1,5,0)
- ;;=5^Flu D/T NVL A Virus w/Oth Resp
- ;;^UTILITY(U,$J,358.3,7161,2)
- ;;=^340525
- ;;^UTILITY(U,$J,358.3,7162,0)
- ;;=488.89^^31^431^3
- ;;^UTILITY(U,$J,358.3,7162,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7162,1,4,0)
- ;;=4^488.89
- ;;^UTILITY(U,$J,358.3,7162,1,5,0)
- ;;=5^Flu D/T NVL A Virus w/Oth Manif
- ;;^UTILITY(U,$J,358.3,7162,2)
- ;;=^340526
- ;;^UTILITY(U,$J,358.3,7163,0)
- ;;=512.81^^31^431^11
- ;;^UTILITY(U,$J,358.3,7163,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7163,1,4,0)
- ;;=4^512.81
- ;;^UTILITY(U,$J,358.3,7163,1,5,0)
- ;;=5^Prim Spont Pneumothorax
- ;;^UTILITY(U,$J,358.3,7163,2)
- ;;=^340529
- ;;^UTILITY(U,$J,358.3,7164,0)
- ;;=512.82^^31^431^12
- ;;^UTILITY(U,$J,358.3,7164,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7164,1,4,0)
- ;;=4^512.82
- ;;^UTILITY(U,$J,358.3,7164,1,5,0)
- ;;=5^Sec Spont Pneumothorax
- ;;^UTILITY(U,$J,358.3,7164,2)
- ;;=^340530
- ;;^UTILITY(U,$J,358.3,7165,0)
- ;;=512.83^^31^431^2
- ;;^UTILITY(U,$J,358.3,7165,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7165,1,4,0)
- ;;=4^512.83
- ;;^UTILITY(U,$J,358.3,7165,1,5,0)
- ;;=5^Chronic Pneumothorax
- ;;^UTILITY(U,$J,358.3,7165,2)
- ;;=^340531
- ;;^UTILITY(U,$J,358.3,7166,0)
- ;;=512.89^^31^431^7
- ;;^UTILITY(U,$J,358.3,7166,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7166,1,4,0)
- ;;=4^512.89
- ;;^UTILITY(U,$J,358.3,7166,1,5,0)
- ;;=5^Other Pneumothorax
- ;;^UTILITY(U,$J,358.3,7166,2)
- ;;=^340533
- ;;^UTILITY(U,$J,358.3,7167,0)
- ;;=997.31^^31^431^14
+ ;;^UTILITY(U,$J,358.3,7180,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7180,1,3,0)
+ ;;=3^Restless Legs Syndrome
+ ;;^UTILITY(U,$J,358.3,7180,1,4,0)
+ ;;=4^G25.81
+ ;;^UTILITY(U,$J,358.3,7180,2)
+ ;;=^5003801
+ ;;^UTILITY(U,$J,358.3,7181,0)
+ ;;=G35.^^30^403^31
+ ;;^UTILITY(U,$J,358.3,7181,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7181,1,3,0)
+ ;;=3^Multiple Sclerosis
+ ;;^UTILITY(U,$J,358.3,7181,1,4,0)
+ ;;=4^G35.
+ ;;^UTILITY(U,$J,358.3,7181,2)
+ ;;=^79761
+ ;;^UTILITY(U,$J,358.3,7182,0)
+ ;;=G40.901^^30^403^15
+ ;;^UTILITY(U,$J,358.3,7182,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7182,1,3,0)
+ ;;=3^Epilepsy,Not Intractable w/ Status Epilepticus,Unspec
+ ;;^UTILITY(U,$J,358.3,7182,1,4,0)
+ ;;=4^G40.901
+ ;;^UTILITY(U,$J,358.3,7182,2)
+ ;;=^5003864
+ ;;^UTILITY(U,$J,358.3,7183,0)
+ ;;=G40.909^^30^403^16
+ ;;^UTILITY(U,$J,358.3,7183,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7183,1,3,0)
+ ;;=3^Epilepsy,Not Intractable w/o Status Epilepticus,Unspec
+ ;;^UTILITY(U,$J,358.3,7183,1,4,0)
+ ;;=4^G40.909
+ ;;^UTILITY(U,$J,358.3,7183,2)
+ ;;=^5003865
+ ;;^UTILITY(U,$J,358.3,7184,0)
+ ;;=G43.809^^30^403^28
+ ;;^UTILITY(U,$J,358.3,7184,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7184,1,3,0)
+ ;;=3^Migraine,Not Intractable w/o Status Migrainosus,Other
+ ;;^UTILITY(U,$J,358.3,7184,1,4,0)
+ ;;=4^G43.809
+ ;;^UTILITY(U,$J,358.3,7184,2)
+ ;;=^5003901
+ ;;^UTILITY(U,$J,358.3,7185,0)
+ ;;=G43.B0^^30^403^30
+ ;;^UTILITY(U,$J,358.3,7185,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7185,1,3,0)
+ ;;=3^Migraine,Ophthalmoplegic Not Intractable
+ ;;^UTILITY(U,$J,358.3,7185,1,4,0)
+ ;;=4^G43.B0
+ ;;^UTILITY(U,$J,358.3,7185,2)
+ ;;=^5003914
+ ;;^UTILITY(U,$J,358.3,7186,0)
+ ;;=G43.C0^^30^403^19
+ ;;^UTILITY(U,$J,358.3,7186,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7186,1,3,0)
+ ;;=3^Headache Syndromes,Periodic Not Intractable
+ ;;^UTILITY(U,$J,358.3,7186,1,4,0)
+ ;;=4^G43.C0
+ ;;^UTILITY(U,$J,358.3,7186,2)
+ ;;=^5003916
+ ;;^UTILITY(U,$J,358.3,7187,0)
+ ;;=G43.A0^^30^403^10
+ ;;^UTILITY(U,$J,358.3,7187,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7187,1,3,0)
+ ;;=3^Cyclical Vomiting Not Intractable
+ ;;^UTILITY(U,$J,358.3,7187,1,4,0)
+ ;;=4^G43.A0
+ ;;^UTILITY(U,$J,358.3,7187,2)
+ ;;=^5003912
+ ;;^UTILITY(U,$J,358.3,7188,0)
+ ;;=G43.C1^^30^403^18
+ ;;^UTILITY(U,$J,358.3,7188,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7188,1,3,0)
+ ;;=3^Headache Syndromes,Periodic Intractable
+ ;;^UTILITY(U,$J,358.3,7188,1,4,0)
+ ;;=4^G43.C1
+ ;;^UTILITY(U,$J,358.3,7188,2)
+ ;;=^5003917
+ ;;^UTILITY(U,$J,358.3,7189,0)
+ ;;=G43.B1^^30^403^29
+ ;;^UTILITY(U,$J,358.3,7189,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7189,1,3,0)
+ ;;=3^Migraine,Ophthalmoplegic Intractable
+ ;;^UTILITY(U,$J,358.3,7189,1,4,0)
+ ;;=4^G43.B1
+ ;;^UTILITY(U,$J,358.3,7189,2)
+ ;;=^5003915
+ ;;^UTILITY(U,$J,358.3,7190,0)
+ ;;=G43.A1^^30^403^9
+ ;;^UTILITY(U,$J,358.3,7190,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7190,1,3,0)
+ ;;=3^Cyclical Vomiting Intractable
+ ;;^UTILITY(U,$J,358.3,7190,1,4,0)
+ ;;=4^G43.A1
+ ;;^UTILITY(U,$J,358.3,7190,2)
+ ;;=^5003913
+ ;;^UTILITY(U,$J,358.3,7191,0)
+ ;;=G43.819^^30^403^25
+ ;;^UTILITY(U,$J,358.3,7191,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7191,1,3,0)
+ ;;=3^Migraine Intractable w/o Status Migrainosus,Other
+ ;;^UTILITY(U,$J,358.3,7191,1,4,0)
+ ;;=4^G43.819
+ ;;^UTILITY(U,$J,358.3,7191,2)
+ ;;=^5003903
+ ;;^UTILITY(U,$J,358.3,7192,0)
+ ;;=G43.909^^30^403^27
+ ;;^UTILITY(U,$J,358.3,7192,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7192,1,3,0)
+ ;;=3^Migraine Not Intractable w/o Status Migrainosus,Unspec
+ ;;^UTILITY(U,$J,358.3,7192,1,4,0)
+ ;;=4^G43.909
+ ;;^UTILITY(U,$J,358.3,7192,2)
+ ;;=^5003909

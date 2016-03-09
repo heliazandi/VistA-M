@@ -1,130 +1,132 @@
-IBDEI1NZ ; ; 06-AUG-2015
+IBDEI1NZ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,29556,1,3,0)
- ;;=3^Mononeuropathy of left lower limb,Unspec
- ;;^UTILITY(U,$J,358.3,29556,1,4,0)
- ;;=4^G57.92
- ;;^UTILITY(U,$J,358.3,29556,2)
- ;;=^5133370
- ;;^UTILITY(U,$J,358.3,29557,0)
- ;;=G58.0^^176^1888^6
- ;;^UTILITY(U,$J,358.3,29557,1,0)
+ ;;^UTILITY(U,$J,358.3,28274,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29557,1,3,0)
- ;;=3^Intercostal neuropathy
- ;;^UTILITY(U,$J,358.3,29557,1,4,0)
- ;;=4^G58.0
- ;;^UTILITY(U,$J,358.3,29557,2)
- ;;=^5004062
- ;;^UTILITY(U,$J,358.3,29558,0)
- ;;=G83.4^^176^1888^4
- ;;^UTILITY(U,$J,358.3,29558,1,0)
+ ;;^UTILITY(U,$J,358.3,28274,1,3,0)
+ ;;=3^Pressure Ulcer Right Heel,Stage 1
+ ;;^UTILITY(U,$J,358.3,28274,1,4,0)
+ ;;=4^L89.611
+ ;;^UTILITY(U,$J,358.3,28274,2)
+ ;;=^5009431
+ ;;^UTILITY(U,$J,358.3,28275,0)
+ ;;=L89.612^^112^1416^80
+ ;;^UTILITY(U,$J,358.3,28275,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29558,1,3,0)
- ;;=3^Cauda equina syndrome
- ;;^UTILITY(U,$J,358.3,29558,1,4,0)
- ;;=4^G83.4
- ;;^UTILITY(U,$J,358.3,29558,2)
- ;;=^265172
- ;;^UTILITY(U,$J,358.3,29559,0)
- ;;=G90.50^^176^1889^5
- ;;^UTILITY(U,$J,358.3,29559,1,0)
+ ;;^UTILITY(U,$J,358.3,28275,1,3,0)
+ ;;=3^Pressure Ulcer Right Heel,Stage 2
+ ;;^UTILITY(U,$J,358.3,28275,1,4,0)
+ ;;=4^L89.612
+ ;;^UTILITY(U,$J,358.3,28275,2)
+ ;;=^5009432
+ ;;^UTILITY(U,$J,358.3,28276,0)
+ ;;=L89.613^^112^1416^81
+ ;;^UTILITY(U,$J,358.3,28276,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29559,1,3,0)
- ;;=3^Complex regional pain syndrome I, unspecified
- ;;^UTILITY(U,$J,358.3,29559,1,4,0)
- ;;=4^G90.50
- ;;^UTILITY(U,$J,358.3,29559,2)
- ;;=^5004163
- ;;^UTILITY(U,$J,358.3,29560,0)
- ;;=G57.71^^176^1889^3
- ;;^UTILITY(U,$J,358.3,29560,1,0)
+ ;;^UTILITY(U,$J,358.3,28276,1,3,0)
+ ;;=3^Pressure Ulcer Right Heel,Stage 3
+ ;;^UTILITY(U,$J,358.3,28276,1,4,0)
+ ;;=4^L89.613
+ ;;^UTILITY(U,$J,358.3,28276,2)
+ ;;=^5009433
+ ;;^UTILITY(U,$J,358.3,28277,0)
+ ;;=L89.614^^112^1416^82
+ ;;^UTILITY(U,$J,358.3,28277,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29560,1,3,0)
- ;;=3^Causalgia of right lower limb
- ;;^UTILITY(U,$J,358.3,29560,1,4,0)
- ;;=4^G57.71
- ;;^UTILITY(U,$J,358.3,29560,2)
- ;;=^5133365
- ;;^UTILITY(U,$J,358.3,29561,0)
- ;;=G57.72^^176^1889^1
- ;;^UTILITY(U,$J,358.3,29561,1,0)
+ ;;^UTILITY(U,$J,358.3,28277,1,3,0)
+ ;;=3^Pressure Ulcer Right Heel,Stage 4
+ ;;^UTILITY(U,$J,358.3,28277,1,4,0)
+ ;;=4^L89.614
+ ;;^UTILITY(U,$J,358.3,28277,2)
+ ;;=^5009434
+ ;;^UTILITY(U,$J,358.3,28278,0)
+ ;;=L89.619^^112^1416^83
+ ;;^UTILITY(U,$J,358.3,28278,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29561,1,3,0)
- ;;=3^Causalgia of left lower limb
- ;;^UTILITY(U,$J,358.3,29561,1,4,0)
- ;;=4^G57.72
- ;;^UTILITY(U,$J,358.3,29561,2)
- ;;=^5133366
- ;;^UTILITY(U,$J,358.3,29562,0)
- ;;=G56.41^^176^1889^4
- ;;^UTILITY(U,$J,358.3,29562,1,0)
+ ;;^UTILITY(U,$J,358.3,28278,1,3,0)
+ ;;=3^Pressure Ulcer Right Heel,Stage Unspec
+ ;;^UTILITY(U,$J,358.3,28278,1,4,0)
+ ;;=4^L89.619
+ ;;^UTILITY(U,$J,358.3,28278,2)
+ ;;=^5133676
+ ;;^UTILITY(U,$J,358.3,28279,0)
+ ;;=L89.620^^112^1416^36
+ ;;^UTILITY(U,$J,358.3,28279,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29562,1,3,0)
- ;;=3^Causalgia of right upper limb
- ;;^UTILITY(U,$J,358.3,29562,1,4,0)
- ;;=4^G56.41
- ;;^UTILITY(U,$J,358.3,29562,2)
- ;;=^5004030
- ;;^UTILITY(U,$J,358.3,29563,0)
- ;;=G56.42^^176^1889^2
- ;;^UTILITY(U,$J,358.3,29563,1,0)
+ ;;^UTILITY(U,$J,358.3,28279,1,3,0)
+ ;;=3^Pressure Ulcer Left Heel,Unstageable
+ ;;^UTILITY(U,$J,358.3,28279,1,4,0)
+ ;;=4^L89.620
+ ;;^UTILITY(U,$J,358.3,28279,2)
+ ;;=^5009435
+ ;;^UTILITY(U,$J,358.3,28280,0)
+ ;;=L89.621^^112^1416^31
+ ;;^UTILITY(U,$J,358.3,28280,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29563,1,3,0)
- ;;=3^Causalgia of left upper limb
- ;;^UTILITY(U,$J,358.3,29563,1,4,0)
- ;;=4^G56.42
- ;;^UTILITY(U,$J,358.3,29563,2)
- ;;=^5004031
- ;;^UTILITY(U,$J,358.3,29564,0)
- ;;=G40.909^^176^1890^5
- ;;^UTILITY(U,$J,358.3,29564,1,0)
+ ;;^UTILITY(U,$J,358.3,28280,1,3,0)
+ ;;=3^Pressure Ulcer Left Heel,Stage 1
+ ;;^UTILITY(U,$J,358.3,28280,1,4,0)
+ ;;=4^L89.621
+ ;;^UTILITY(U,$J,358.3,28280,2)
+ ;;=^5009436
+ ;;^UTILITY(U,$J,358.3,28281,0)
+ ;;=L89.622^^112^1416^32
+ ;;^UTILITY(U,$J,358.3,28281,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29564,1,3,0)
- ;;=3^Epilepsy, unsp, not intractable, without status epilepticus
- ;;^UTILITY(U,$J,358.3,29564,1,4,0)
- ;;=4^G40.909
- ;;^UTILITY(U,$J,358.3,29564,2)
- ;;=^5003865
- ;;^UTILITY(U,$J,358.3,29565,0)
- ;;=G97.31^^176^1890^6
- ;;^UTILITY(U,$J,358.3,29565,1,0)
+ ;;^UTILITY(U,$J,358.3,28281,1,3,0)
+ ;;=3^Pressure Ulcer Left Heel,Stage 2
+ ;;^UTILITY(U,$J,358.3,28281,1,4,0)
+ ;;=4^L89.622
+ ;;^UTILITY(U,$J,358.3,28281,2)
+ ;;=^5009437
+ ;;^UTILITY(U,$J,358.3,28282,0)
+ ;;=L89.623^^112^1416^33
+ ;;^UTILITY(U,$J,358.3,28282,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29565,1,3,0)
- ;;=3^Intraop hemor/hemtom of a nervous sys org comp nrv sys proc
- ;;^UTILITY(U,$J,358.3,29565,1,4,0)
- ;;=4^G97.31
- ;;^UTILITY(U,$J,358.3,29565,2)
- ;;=^5004204
- ;;^UTILITY(U,$J,358.3,29566,0)
- ;;=G97.32^^176^1890^7
- ;;^UTILITY(U,$J,358.3,29566,1,0)
+ ;;^UTILITY(U,$J,358.3,28282,1,3,0)
+ ;;=3^Pressure Ulcer Left Heel,Stage 3
+ ;;^UTILITY(U,$J,358.3,28282,1,4,0)
+ ;;=4^L89.623
+ ;;^UTILITY(U,$J,358.3,28282,2)
+ ;;=^5009438
+ ;;^UTILITY(U,$J,358.3,28283,0)
+ ;;=L89.624^^112^1416^34
+ ;;^UTILITY(U,$J,358.3,28283,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29566,1,3,0)
- ;;=3^Intraop hemor/hemtom of a nervous sys org comp oth procedure
- ;;^UTILITY(U,$J,358.3,29566,1,4,0)
- ;;=4^G97.32
- ;;^UTILITY(U,$J,358.3,29566,2)
- ;;=^5004205
- ;;^UTILITY(U,$J,358.3,29567,0)
- ;;=G97.41^^176^1890^1
- ;;^UTILITY(U,$J,358.3,29567,1,0)
+ ;;^UTILITY(U,$J,358.3,28283,1,3,0)
+ ;;=3^Pressure Ulcer Left Heel,Stage 4
+ ;;^UTILITY(U,$J,358.3,28283,1,4,0)
+ ;;=4^L89.624
+ ;;^UTILITY(U,$J,358.3,28283,2)
+ ;;=^5009439
+ ;;^UTILITY(U,$J,358.3,28284,0)
+ ;;=L89.629^^112^1416^35
+ ;;^UTILITY(U,$J,358.3,28284,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29567,1,3,0)
- ;;=3^Acc pnctr/lac of dura during a procedure
- ;;^UTILITY(U,$J,358.3,29567,1,4,0)
- ;;=4^G97.41
- ;;^UTILITY(U,$J,358.3,29567,2)
- ;;=^5004206
- ;;^UTILITY(U,$J,358.3,29568,0)
- ;;=G97.48^^176^1890^2
- ;;^UTILITY(U,$J,358.3,29568,1,0)
+ ;;^UTILITY(U,$J,358.3,28284,1,3,0)
+ ;;=3^Pressure Ulcer Left Heel,Stage Unspec
+ ;;^UTILITY(U,$J,358.3,28284,1,4,0)
+ ;;=4^L89.629
+ ;;^UTILITY(U,$J,358.3,28284,2)
+ ;;=^5133677
+ ;;^UTILITY(U,$J,358.3,28285,0)
+ ;;=L89.810^^112^1416^12
+ ;;^UTILITY(U,$J,358.3,28285,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29568,1,3,0)
- ;;=3^Acc pnctr/lac of nervous sys org during a nervous sys proc
- ;;^UTILITY(U,$J,358.3,29568,1,4,0)
- ;;=4^G97.48
- ;;^UTILITY(U,$J,358.3,29568,2)
- ;;=^5004207
+ ;;^UTILITY(U,$J,358.3,28285,1,3,0)
+ ;;=3^Pressure Ulcer Head,Unstageable
+ ;;^UTILITY(U,$J,358.3,28285,1,4,0)
+ ;;=4^L89.810
+ ;;^UTILITY(U,$J,358.3,28285,2)
+ ;;=^5009440
+ ;;^UTILITY(U,$J,358.3,28286,0)
+ ;;=L89.811^^112^1416^7
+ ;;^UTILITY(U,$J,358.3,28286,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28286,1,3,0)
+ ;;=3^Pressure Ulcer Head,Stage 1
+ ;;^UTILITY(U,$J,358.3,28286,1,4,0)
+ ;;=4^L89.811
+ ;;^UTILITY(U,$J,358.3,28286,2)
+ ;;=^5009441

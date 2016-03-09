@@ -1,142 +1,140 @@
-IBDEI04I ; ; 06-AUG-2015
+IBDEI04I ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1582,2)
- ;;=^5013304
- ;;^UTILITY(U,$J,358.3,1583,0)
- ;;=M77.12^^3^45^44
- ;;^UTILITY(U,$J,358.3,1583,1,0)
+ ;;^UTILITY(U,$J,358.3,1684,1,3,0)
+ ;;=3^Long Term Current Use of Anticoagulants
+ ;;^UTILITY(U,$J,358.3,1684,1,4,0)
+ ;;=4^Z79.01
+ ;;^UTILITY(U,$J,358.3,1684,2)
+ ;;=^5063330
+ ;;^UTILITY(U,$J,358.3,1685,0)
+ ;;=I10.^^11^149^3
+ ;;^UTILITY(U,$J,358.3,1685,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1583,1,3,0)
- ;;=3^Lateral epicondylitis, left elbow
- ;;^UTILITY(U,$J,358.3,1583,1,4,0)
- ;;=4^M77.12
- ;;^UTILITY(U,$J,358.3,1583,2)
- ;;=^5013305
- ;;^UTILITY(U,$J,358.3,1584,0)
- ;;=M70.21^^3^45^52
- ;;^UTILITY(U,$J,358.3,1584,1,0)
+ ;;^UTILITY(U,$J,358.3,1685,1,3,0)
+ ;;=3^Hypertension,Essential
+ ;;^UTILITY(U,$J,358.3,1685,1,4,0)
+ ;;=4^I10.
+ ;;^UTILITY(U,$J,358.3,1685,2)
+ ;;=^5007062
+ ;;^UTILITY(U,$J,358.3,1686,0)
+ ;;=I11.0^^11^149^6
+ ;;^UTILITY(U,$J,358.3,1686,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1584,1,3,0)
- ;;=3^Olecranon bursitis, right elbow
- ;;^UTILITY(U,$J,358.3,1584,1,4,0)
- ;;=4^M70.21
- ;;^UTILITY(U,$J,358.3,1584,2)
- ;;=^5013047
- ;;^UTILITY(U,$J,358.3,1585,0)
- ;;=M70.22^^3^45^51
- ;;^UTILITY(U,$J,358.3,1585,1,0)
+ ;;^UTILITY(U,$J,358.3,1686,1,3,0)
+ ;;=3^Hypertensive Heart Disease w/ Heart Failure
+ ;;^UTILITY(U,$J,358.3,1686,1,4,0)
+ ;;=4^I11.0
+ ;;^UTILITY(U,$J,358.3,1686,2)
+ ;;=^5007063
+ ;;^UTILITY(U,$J,358.3,1687,0)
+ ;;=I11.9^^11^149^7
+ ;;^UTILITY(U,$J,358.3,1687,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1585,1,3,0)
- ;;=3^Olecranon bursitis, left elbow
- ;;^UTILITY(U,$J,358.3,1585,1,4,0)
- ;;=4^M70.22
- ;;^UTILITY(U,$J,358.3,1585,2)
- ;;=^5013048
- ;;^UTILITY(U,$J,358.3,1586,0)
- ;;=M77.9^^3^45^27
- ;;^UTILITY(U,$J,358.3,1586,1,0)
+ ;;^UTILITY(U,$J,358.3,1687,1,3,0)
+ ;;=3^Hypertensive Heart Disease w/o Heart Failure
+ ;;^UTILITY(U,$J,358.3,1687,1,4,0)
+ ;;=4^I11.9
+ ;;^UTILITY(U,$J,358.3,1687,2)
+ ;;=^5007064
+ ;;^UTILITY(U,$J,358.3,1688,0)
+ ;;=I15.8^^11^149^5
+ ;;^UTILITY(U,$J,358.3,1688,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1586,1,3,0)
- ;;=3^Enthesopathy, unspecified
- ;;^UTILITY(U,$J,358.3,1586,1,4,0)
- ;;=4^M77.9
- ;;^UTILITY(U,$J,358.3,1586,2)
- ;;=^5013319
- ;;^UTILITY(U,$J,358.3,1587,0)
- ;;=M72.0^^3^45^71
- ;;^UTILITY(U,$J,358.3,1587,1,0)
+ ;;^UTILITY(U,$J,358.3,1688,1,3,0)
+ ;;=3^Hypertension,Secondary
+ ;;^UTILITY(U,$J,358.3,1688,1,4,0)
+ ;;=4^I15.8
+ ;;^UTILITY(U,$J,358.3,1688,2)
+ ;;=^5007074
+ ;;^UTILITY(U,$J,358.3,1689,0)
+ ;;=I15.0^^11^149^4
+ ;;^UTILITY(U,$J,358.3,1689,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1587,1,3,0)
- ;;=3^Palmar fascial fibromatosis [Dupuytren]
- ;;^UTILITY(U,$J,358.3,1587,1,4,0)
- ;;=4^M72.0
- ;;^UTILITY(U,$J,358.3,1587,2)
- ;;=^5013233
- ;;^UTILITY(U,$J,358.3,1588,0)
- ;;=M72.2^^3^45^72
- ;;^UTILITY(U,$J,358.3,1588,1,0)
+ ;;^UTILITY(U,$J,358.3,1689,1,3,0)
+ ;;=3^Hypertension,Renovascular
+ ;;^UTILITY(U,$J,358.3,1689,1,4,0)
+ ;;=4^I15.0
+ ;;^UTILITY(U,$J,358.3,1689,2)
+ ;;=^5007071
+ ;;^UTILITY(U,$J,358.3,1690,0)
+ ;;=I70.1^^11^149^1
+ ;;^UTILITY(U,$J,358.3,1690,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1588,1,3,0)
- ;;=3^Plantar fascial fibromatosis
- ;;^UTILITY(U,$J,358.3,1588,1,4,0)
- ;;=4^M72.2
- ;;^UTILITY(U,$J,358.3,1588,2)
- ;;=^272598
- ;;^UTILITY(U,$J,358.3,1589,0)
- ;;=M62.40^^3^45^20
- ;;^UTILITY(U,$J,358.3,1589,1,0)
+ ;;^UTILITY(U,$J,358.3,1690,1,3,0)
+ ;;=3^Atherosclerosis of Renal Artery
+ ;;^UTILITY(U,$J,358.3,1690,1,4,0)
+ ;;=4^I70.1
+ ;;^UTILITY(U,$J,358.3,1690,2)
+ ;;=^269760
+ ;;^UTILITY(U,$J,358.3,1691,0)
+ ;;=R03.0^^11^149^2
+ ;;^UTILITY(U,$J,358.3,1691,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1589,1,3,0)
- ;;=3^Contracture of muscle, unspecified site
- ;;^UTILITY(U,$J,358.3,1589,1,4,0)
- ;;=4^M62.40
- ;;^UTILITY(U,$J,358.3,1589,2)
- ;;=^5012631
- ;;^UTILITY(U,$J,358.3,1590,0)
- ;;=M62.81^^3^45^49
- ;;^UTILITY(U,$J,358.3,1590,1,0)
+ ;;^UTILITY(U,$J,358.3,1691,1,3,0)
+ ;;=3^Elevated B/P Reading w/o HTN Diagnosis
+ ;;^UTILITY(U,$J,358.3,1691,1,4,0)
+ ;;=4^R03.0
+ ;;^UTILITY(U,$J,358.3,1691,2)
+ ;;=^5019171
+ ;;^UTILITY(U,$J,358.3,1692,0)
+ ;;=I95.1^^11^149^10
+ ;;^UTILITY(U,$J,358.3,1692,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1590,1,3,0)
- ;;=3^Muscle weakness (generalized)
- ;;^UTILITY(U,$J,358.3,1590,1,4,0)
- ;;=4^M62.81
- ;;^UTILITY(U,$J,358.3,1590,2)
- ;;=^332922
- ;;^UTILITY(U,$J,358.3,1591,0)
- ;;=M79.7^^3^45^28
- ;;^UTILITY(U,$J,358.3,1591,1,0)
+ ;;^UTILITY(U,$J,358.3,1692,1,3,0)
+ ;;=3^Orthostatic Hypotension
+ ;;^UTILITY(U,$J,358.3,1692,1,4,0)
+ ;;=4^I95.1
+ ;;^UTILITY(U,$J,358.3,1692,2)
+ ;;=^60741
+ ;;^UTILITY(U,$J,358.3,1693,0)
+ ;;=I95.2^^11^149^8
+ ;;^UTILITY(U,$J,358.3,1693,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1591,1,3,0)
- ;;=3^Fibromyalgia
- ;;^UTILITY(U,$J,358.3,1591,1,4,0)
- ;;=4^M79.7
- ;;^UTILITY(U,$J,358.3,1591,2)
- ;;=^46261
- ;;^UTILITY(U,$J,358.3,1592,0)
- ;;=M79.2^^3^45^50
- ;;^UTILITY(U,$J,358.3,1592,1,0)
+ ;;^UTILITY(U,$J,358.3,1693,1,3,0)
+ ;;=3^Hypotension d/t Drugs
+ ;;^UTILITY(U,$J,358.3,1693,1,4,0)
+ ;;=4^I95.2
+ ;;^UTILITY(U,$J,358.3,1693,2)
+ ;;=^5008077
+ ;;^UTILITY(U,$J,358.3,1694,0)
+ ;;=I95.81^^11^149^11
+ ;;^UTILITY(U,$J,358.3,1694,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1592,1,3,0)
- ;;=3^Neuralgia and neuritis, unspecified
- ;;^UTILITY(U,$J,358.3,1592,1,4,0)
- ;;=4^M79.2
- ;;^UTILITY(U,$J,358.3,1592,2)
- ;;=^5013322
- ;;^UTILITY(U,$J,358.3,1593,0)
- ;;=M54.10^^3^45^83
- ;;^UTILITY(U,$J,358.3,1593,1,0)
+ ;;^UTILITY(U,$J,358.3,1694,1,3,0)
+ ;;=3^Postprocedural Hypotension
+ ;;^UTILITY(U,$J,358.3,1694,1,4,0)
+ ;;=4^I95.81
+ ;;^UTILITY(U,$J,358.3,1694,2)
+ ;;=^5008078
+ ;;^UTILITY(U,$J,358.3,1695,0)
+ ;;=I95.9^^11^149^9
+ ;;^UTILITY(U,$J,358.3,1695,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1593,1,3,0)
- ;;=3^Radiculopathy, site unspecified
- ;;^UTILITY(U,$J,358.3,1593,1,4,0)
- ;;=4^M54.10
- ;;^UTILITY(U,$J,358.3,1593,2)
- ;;=^5012295
- ;;^UTILITY(U,$J,358.3,1594,0)
- ;;=M79.601^^3^45^64
- ;;^UTILITY(U,$J,358.3,1594,1,0)
+ ;;^UTILITY(U,$J,358.3,1695,1,3,0)
+ ;;=3^Hypotension,Unspec
+ ;;^UTILITY(U,$J,358.3,1695,1,4,0)
+ ;;=4^I95.9
+ ;;^UTILITY(U,$J,358.3,1695,2)
+ ;;=^5008080
+ ;;^UTILITY(U,$J,358.3,1696,0)
+ ;;=B25.9^^11^150^5
+ ;;^UTILITY(U,$J,358.3,1696,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1594,1,3,0)
- ;;=3^Pain in right arm
- ;;^UTILITY(U,$J,358.3,1594,1,4,0)
- ;;=4^M79.601
- ;;^UTILITY(U,$J,358.3,1594,2)
- ;;=^5013325
- ;;^UTILITY(U,$J,358.3,1595,0)
- ;;=M79.602^^3^45^58
- ;;^UTILITY(U,$J,358.3,1595,1,0)
+ ;;^UTILITY(U,$J,358.3,1696,1,3,0)
+ ;;=3^CMV Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,1696,1,4,0)
+ ;;=4^B25.9
+ ;;^UTILITY(U,$J,358.3,1696,2)
+ ;;=^5000560
+ ;;^UTILITY(U,$J,358.3,1697,0)
+ ;;=I30.1^^11^150^7
+ ;;^UTILITY(U,$J,358.3,1697,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1595,1,3,0)
- ;;=3^Pain in left arm
- ;;^UTILITY(U,$J,358.3,1595,1,4,0)
- ;;=4^M79.602
- ;;^UTILITY(U,$J,358.3,1595,2)
- ;;=^5013326
- ;;^UTILITY(U,$J,358.3,1596,0)
- ;;=R25.2^^3^45^22
- ;;^UTILITY(U,$J,358.3,1596,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1596,1,3,0)
- ;;=3^Cramp and spasm
+ ;;^UTILITY(U,$J,358.3,1697,1,3,0)
+ ;;=3^Infective Pericarditis
+ ;;^UTILITY(U,$J,358.3,1697,1,4,0)
+ ;;=4^I30.1
+ ;;^UTILITY(U,$J,358.3,1697,2)
+ ;;=^5007158

@@ -1,0 +1,130 @@
+IBDEI265 ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,36790,1,4,0)
+ ;;=4^M06.351
+ ;;^UTILITY(U,$J,358.3,36790,2)
+ ;;=^5010109
+ ;;^UTILITY(U,$J,358.3,36791,0)
+ ;;=M06.361^^137^1769^135
+ ;;^UTILITY(U,$J,358.3,36791,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36791,1,3,0)
+ ;;=3^Rheumatoid Nodule Right Knee
+ ;;^UTILITY(U,$J,358.3,36791,1,4,0)
+ ;;=4^M06.361
+ ;;^UTILITY(U,$J,358.3,36791,2)
+ ;;=^5010112
+ ;;^UTILITY(U,$J,358.3,36792,0)
+ ;;=M06.311^^137^1769^136
+ ;;^UTILITY(U,$J,358.3,36792,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36792,1,3,0)
+ ;;=3^Rheumatoid Nodule Right Shoulder
+ ;;^UTILITY(U,$J,358.3,36792,1,4,0)
+ ;;=4^M06.311
+ ;;^UTILITY(U,$J,358.3,36792,2)
+ ;;=^5010097
+ ;;^UTILITY(U,$J,358.3,36793,0)
+ ;;=M06.331^^137^1769^137
+ ;;^UTILITY(U,$J,358.3,36793,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36793,1,3,0)
+ ;;=3^Rheumatoid Nodule Right Wrist
+ ;;^UTILITY(U,$J,358.3,36793,1,4,0)
+ ;;=4^M06.331
+ ;;^UTILITY(U,$J,358.3,36793,2)
+ ;;=^5010103
+ ;;^UTILITY(U,$J,358.3,36794,0)
+ ;;=M06.30^^137^1769^138
+ ;;^UTILITY(U,$J,358.3,36794,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36794,1,3,0)
+ ;;=3^Rheumatoid Nodule Unspec Site
+ ;;^UTILITY(U,$J,358.3,36794,1,4,0)
+ ;;=4^M06.30
+ ;;^UTILITY(U,$J,358.3,36794,2)
+ ;;=^5010096
+ ;;^UTILITY(U,$J,358.3,36795,0)
+ ;;=M06.38^^137^1769^139
+ ;;^UTILITY(U,$J,358.3,36795,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36795,1,3,0)
+ ;;=3^Rheumatoid Nodule Vertebrae
+ ;;^UTILITY(U,$J,358.3,36795,1,4,0)
+ ;;=4^M06.38
+ ;;^UTILITY(U,$J,358.3,36795,2)
+ ;;=^5010118
+ ;;^UTILITY(U,$J,358.3,36796,0)
+ ;;=M05.572^^137^1769^74
+ ;;^UTILITY(U,$J,358.3,36796,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36796,1,3,0)
+ ;;=3^Rheum Polyneuropathy w/ Rheum Arth Left Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,36796,1,4,0)
+ ;;=4^M05.572
+ ;;^UTILITY(U,$J,358.3,36796,2)
+ ;;=^5009974
+ ;;^UTILITY(U,$J,358.3,36797,0)
+ ;;=M05.522^^137^1769^75
+ ;;^UTILITY(U,$J,358.3,36797,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36797,1,3,0)
+ ;;=3^Rheum Polyneuropathy w/ Rheum Arth Left Elbow
+ ;;^UTILITY(U,$J,358.3,36797,1,4,0)
+ ;;=4^M05.522
+ ;;^UTILITY(U,$J,358.3,36797,2)
+ ;;=^5009959
+ ;;^UTILITY(U,$J,358.3,36798,0)
+ ;;=M05.542^^137^1769^76
+ ;;^UTILITY(U,$J,358.3,36798,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36798,1,3,0)
+ ;;=3^Rheum Polyneuropathy w/ Rheum Arth Left Hand
+ ;;^UTILITY(U,$J,358.3,36798,1,4,0)
+ ;;=4^M05.542
+ ;;^UTILITY(U,$J,358.3,36798,2)
+ ;;=^5009965
+ ;;^UTILITY(U,$J,358.3,36799,0)
+ ;;=M05.552^^137^1769^77
+ ;;^UTILITY(U,$J,358.3,36799,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36799,1,3,0)
+ ;;=3^Rheum Polyneuropathy w/ Rheum Arth Left Hip
+ ;;^UTILITY(U,$J,358.3,36799,1,4,0)
+ ;;=4^M05.552
+ ;;^UTILITY(U,$J,358.3,36799,2)
+ ;;=^5009968
+ ;;^UTILITY(U,$J,358.3,36800,0)
+ ;;=M05.562^^137^1769^78
+ ;;^UTILITY(U,$J,358.3,36800,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36800,1,3,0)
+ ;;=3^Rheum Polyneuropathy w/ Rheum Arth Left Knee
+ ;;^UTILITY(U,$J,358.3,36800,1,4,0)
+ ;;=4^M05.562
+ ;;^UTILITY(U,$J,358.3,36800,2)
+ ;;=^5009971
+ ;;^UTILITY(U,$J,358.3,36801,0)
+ ;;=M05.512^^137^1769^79
+ ;;^UTILITY(U,$J,358.3,36801,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36801,1,3,0)
+ ;;=3^Rheum Polyneuropathy w/ Rheum Arth Left Shoulder
+ ;;^UTILITY(U,$J,358.3,36801,1,4,0)
+ ;;=4^M05.512
+ ;;^UTILITY(U,$J,358.3,36801,2)
+ ;;=^5009956
+ ;;^UTILITY(U,$J,358.3,36802,0)
+ ;;=M05.532^^137^1769^80
+ ;;^UTILITY(U,$J,358.3,36802,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36802,1,3,0)
+ ;;=3^Rheum Polyneuropathy w/ Rheum Arth Left Wrist
+ ;;^UTILITY(U,$J,358.3,36802,1,4,0)
+ ;;=4^M05.532
+ ;;^UTILITY(U,$J,358.3,36802,2)
+ ;;=^5009962
+ ;;^UTILITY(U,$J,358.3,36803,0)
+ ;;=M05.59^^137^1769^81

@@ -1,134 +1,132 @@
-IBDEI1AY ; ; 06-AUG-2015
+IBDEI1AY ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,23068,2)
- ;;=Hx of Ovarian CA^295221
- ;;^UTILITY(U,$J,358.3,23069,0)
- ;;=V12.71^^125^1400^45
- ;;^UTILITY(U,$J,358.3,23069,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23069,1,4,0)
- ;;=4^V12.71
- ;;^UTILITY(U,$J,358.3,23069,1,5,0)
- ;;=5^Hx of Peptic Ulcer Disease
- ;;^UTILITY(U,$J,358.3,23069,2)
- ;;=^303400
- ;;^UTILITY(U,$J,358.3,23070,0)
- ;;=V10.46^^125^1400^48
- ;;^UTILITY(U,$J,358.3,23070,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23070,1,4,0)
- ;;=4^V10.46
- ;;^UTILITY(U,$J,358.3,23070,1,5,0)
- ;;=5^Hx of Prostate Cancer
- ;;^UTILITY(U,$J,358.3,23070,2)
- ;;=Hx of Prostate Cancer^295224
- ;;^UTILITY(U,$J,358.3,23071,0)
- ;;=V11.0^^125^1400^50
- ;;^UTILITY(U,$J,358.3,23071,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23071,1,4,0)
- ;;=4^V11.0
- ;;^UTILITY(U,$J,358.3,23071,1,5,0)
- ;;=5^Hx of Schizophrenia
- ;;^UTILITY(U,$J,358.3,23071,2)
- ;;=Hx of Schizophrenia^295249
- ;;^UTILITY(U,$J,358.3,23072,0)
- ;;=V10.83^^125^1400^51
- ;;^UTILITY(U,$J,358.3,23072,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23072,1,4,0)
- ;;=4^V10.83
- ;;^UTILITY(U,$J,358.3,23072,1,5,0)
- ;;=5^Hx of Skin Cancer (Non-Melanoma)
- ;;^UTILITY(U,$J,358.3,23072,2)
- ;;=^295241
- ;;^UTILITY(U,$J,358.3,23073,0)
- ;;=V15.1^^125^1400^53
- ;;^UTILITY(U,$J,358.3,23073,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23073,1,4,0)
- ;;=4^V15.1
- ;;^UTILITY(U,$J,358.3,23073,1,5,0)
- ;;=5^Hx of Surgery To Heart And Great Vessels
- ;;^UTILITY(U,$J,358.3,23073,2)
- ;;=^295283
- ;;^UTILITY(U,$J,358.3,23074,0)
- ;;=V15.82^^125^1400^57
- ;;^UTILITY(U,$J,358.3,23074,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23074,1,4,0)
- ;;=4^V15.82
- ;;^UTILITY(U,$J,358.3,23074,1,5,0)
- ;;=5^Hx of Tobacco Use (not current)
- ;;^UTILITY(U,$J,358.3,23074,2)
- ;;=Hx of Tobacco Use (not current)^303405
- ;;^UTILITY(U,$J,358.3,23075,0)
- ;;=V12.01^^125^1400^54
- ;;^UTILITY(U,$J,358.3,23075,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23075,1,4,0)
- ;;=4^V12.01
- ;;^UTILITY(U,$J,358.3,23075,1,5,0)
- ;;=5^Hx of TB
- ;;^UTILITY(U,$J,358.3,23075,2)
- ;;=Hx of TB^303393
- ;;^UTILITY(U,$J,358.3,23076,0)
- ;;=V13.01^^125^1400^36
- ;;^UTILITY(U,$J,358.3,23076,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23076,1,4,0)
- ;;=4^V13.01
- ;;^UTILITY(U,$J,358.3,23076,1,5,0)
- ;;=5^Hx of Kidney Stones
- ;;^UTILITY(U,$J,358.3,23076,2)
- ;;=Hx of Kidney Stones^303403
- ;;^UTILITY(U,$J,358.3,23077,0)
- ;;=V12.51^^125^1400^59
- ;;^UTILITY(U,$J,358.3,23077,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23077,1,4,0)
- ;;=4^V12.51
- ;;^UTILITY(U,$J,358.3,23077,1,5,0)
- ;;=5^Hx of Venous Thrombosis And Embolism
- ;;^UTILITY(U,$J,358.3,23077,2)
- ;;=^303397
- ;;^UTILITY(U,$J,358.3,23078,0)
- ;;=V17.89^^125^1400^18
- ;;^UTILITY(U,$J,358.3,23078,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23078,1,4,0)
- ;;=4^V17.89
- ;;^UTILITY(U,$J,358.3,23078,1,5,0)
- ;;=5^Family h/o Musculosk Disease
- ;;^UTILITY(U,$J,358.3,23078,2)
- ;;=^332861
- ;;^UTILITY(U,$J,358.3,23079,0)
- ;;=V12.54^^125^1400^56
- ;;^UTILITY(U,$J,358.3,23079,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23079,1,4,0)
- ;;=4^V12.54
- ;;^UTILITY(U,$J,358.3,23079,1,5,0)
- ;;=5^Hx of TIA
- ;;^UTILITY(U,$J,358.3,23079,2)
- ;;=^335309
- ;;^UTILITY(U,$J,358.3,23080,0)
- ;;=V12.54^^125^1400^52
- ;;^UTILITY(U,$J,358.3,23080,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23080,1,4,0)
- ;;=4^V12.54
- ;;^UTILITY(U,$J,358.3,23080,1,5,0)
- ;;=5^Hx of Stroke w/o Residual
- ;;^UTILITY(U,$J,358.3,23080,2)
- ;;=^335309
- ;;^UTILITY(U,$J,358.3,23081,0)
- ;;=V15.88^^125^1400^33
- ;;^UTILITY(U,$J,358.3,23081,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23081,1,4,0)
- ;;=4^V15.88
- ;;^UTILITY(U,$J,358.3,23081,1,5,0)
- ;;=5^Hx of Fall(s)
+ ;;^UTILITY(U,$J,358.3,22141,2)
+ ;;=^5008737
+ ;;^UTILITY(U,$J,358.3,22142,0)
+ ;;=K57.80^^87^976^35
+ ;;^UTILITY(U,$J,358.3,22142,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22142,1,3,0)
+ ;;=3^Diverticulitis of Intestine,Unspec w/ Perforation/Abscess w/o Bleeding
+ ;;^UTILITY(U,$J,358.3,22142,1,4,0)
+ ;;=4^K57.80
+ ;;^UTILITY(U,$J,358.3,22142,2)
+ ;;=^5008733
+ ;;^UTILITY(U,$J,358.3,22143,0)
+ ;;=K57.52^^87^976^40
+ ;;^UTILITY(U,$J,358.3,22143,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22143,1,3,0)
+ ;;=3^Diverticulitis of Sm & Lg Intestine w/o Perforation/Abscess w/o Bleeding
+ ;;^UTILITY(U,$J,358.3,22143,1,4,0)
+ ;;=4^K57.52
+ ;;^UTILITY(U,$J,358.3,22143,2)
+ ;;=^5008731
+ ;;^UTILITY(U,$J,358.3,22144,0)
+ ;;=K57.40^^87^976^39
+ ;;^UTILITY(U,$J,358.3,22144,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22144,1,3,0)
+ ;;=3^Diverticulitis of Sm & Lg Intestine w/ Perforation/Abscess w/o Bleeding
+ ;;^UTILITY(U,$J,358.3,22144,1,4,0)
+ ;;=4^K57.40
+ ;;^UTILITY(U,$J,358.3,22144,2)
+ ;;=^5008727
+ ;;^UTILITY(U,$J,358.3,22145,0)
+ ;;=K57.32^^87^976^38
+ ;;^UTILITY(U,$J,358.3,22145,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22145,1,3,0)
+ ;;=3^Diverticulitis of Lg Intestine w/o Perforation/Abscess w/o Bleeding
+ ;;^UTILITY(U,$J,358.3,22145,1,4,0)
+ ;;=4^K57.32
+ ;;^UTILITY(U,$J,358.3,22145,2)
+ ;;=^5008725
+ ;;^UTILITY(U,$J,358.3,22146,0)
+ ;;=K59.00^^87^976^20
+ ;;^UTILITY(U,$J,358.3,22146,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22146,1,3,0)
+ ;;=3^Constipation,Unspec
+ ;;^UTILITY(U,$J,358.3,22146,1,4,0)
+ ;;=4^K59.00
+ ;;^UTILITY(U,$J,358.3,22146,2)
+ ;;=^323537
+ ;;^UTILITY(U,$J,358.3,22147,0)
+ ;;=K58.9^^87^976^70
+ ;;^UTILITY(U,$J,358.3,22147,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22147,1,3,0)
+ ;;=3^Irritable Bowel Syndrome w/o Diarrhea
+ ;;^UTILITY(U,$J,358.3,22147,1,4,0)
+ ;;=4^K58.9
+ ;;^UTILITY(U,$J,358.3,22147,2)
+ ;;=^5008740
+ ;;^UTILITY(U,$J,358.3,22148,0)
+ ;;=K58.0^^87^976^69
+ ;;^UTILITY(U,$J,358.3,22148,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22148,1,3,0)
+ ;;=3^Irritable Bowel Syndrome w/ Diarrhea
+ ;;^UTILITY(U,$J,358.3,22148,1,4,0)
+ ;;=4^K58.0
+ ;;^UTILITY(U,$J,358.3,22148,2)
+ ;;=^5008739
+ ;;^UTILITY(U,$J,358.3,22149,0)
+ ;;=K59.1^^87^976^32
+ ;;^UTILITY(U,$J,358.3,22149,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22149,1,3,0)
+ ;;=3^Diarrhea,Functional
+ ;;^UTILITY(U,$J,358.3,22149,1,4,0)
+ ;;=4^K59.1
+ ;;^UTILITY(U,$J,358.3,22149,2)
+ ;;=^270281
+ ;;^UTILITY(U,$J,358.3,22150,0)
+ ;;=K61.4^^87^976^4
+ ;;^UTILITY(U,$J,358.3,22150,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22150,1,3,0)
+ ;;=3^Abscess,Intrasphincteric
+ ;;^UTILITY(U,$J,358.3,22150,1,4,0)
+ ;;=4^K61.4
+ ;;^UTILITY(U,$J,358.3,22150,2)
+ ;;=^5008752
+ ;;^UTILITY(U,$J,358.3,22151,0)
+ ;;=K61.0^^87^976^2
+ ;;^UTILITY(U,$J,358.3,22151,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22151,1,3,0)
+ ;;=3^Abscess,Anal
+ ;;^UTILITY(U,$J,358.3,22151,1,4,0)
+ ;;=4^K61.0
+ ;;^UTILITY(U,$J,358.3,22151,2)
+ ;;=^5008749
+ ;;^UTILITY(U,$J,358.3,22152,0)
+ ;;=K61.1^^87^976^6
+ ;;^UTILITY(U,$J,358.3,22152,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22152,1,3,0)
+ ;;=3^Abscess,Rectal
+ ;;^UTILITY(U,$J,358.3,22152,1,4,0)
+ ;;=4^K61.1
+ ;;^UTILITY(U,$J,358.3,22152,2)
+ ;;=^259588
+ ;;^UTILITY(U,$J,358.3,22153,0)
+ ;;=K61.2^^87^976^3
+ ;;^UTILITY(U,$J,358.3,22153,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22153,1,3,0)
+ ;;=3^Abscess,Anorectal
+ ;;^UTILITY(U,$J,358.3,22153,1,4,0)
+ ;;=4^K61.2
+ ;;^UTILITY(U,$J,358.3,22153,2)
+ ;;=^5008750
+ ;;^UTILITY(U,$J,358.3,22154,0)
+ ;;=K61.3^^87^976^5
+ ;;^UTILITY(U,$J,358.3,22154,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22154,1,3,0)
+ ;;=3^Abscess,Ischiorectal

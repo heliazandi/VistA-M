@@ -1,128 +1,136 @@
-IBDEI05K ; ; 06-AUG-2015
+IBDEI05K ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2082,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2082,1,3,0)
- ;;=3^Contusion of left knee, initial encounter
- ;;^UTILITY(U,$J,358.3,2082,1,4,0)
- ;;=4^S80.02XA
- ;;^UTILITY(U,$J,358.3,2082,2)
- ;;=^5039894
- ;;^UTILITY(U,$J,358.3,2083,0)
- ;;=S80.11XA^^4^62^55
- ;;^UTILITY(U,$J,358.3,2083,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2083,1,3,0)
- ;;=3^Contusion of right lower leg, initial encounter
- ;;^UTILITY(U,$J,358.3,2083,1,4,0)
- ;;=4^S80.11XA
- ;;^UTILITY(U,$J,358.3,2083,2)
- ;;=^5039900
- ;;^UTILITY(U,$J,358.3,2084,0)
- ;;=S80.12XA^^4^62^51
- ;;^UTILITY(U,$J,358.3,2084,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2084,1,3,0)
- ;;=3^Contusion of left lower leg, initial encounter
- ;;^UTILITY(U,$J,358.3,2084,1,4,0)
- ;;=4^S80.12XA
- ;;^UTILITY(U,$J,358.3,2084,2)
- ;;=^5039903
- ;;^UTILITY(U,$J,358.3,2085,0)
- ;;=T75.4XXA^^4^62^58
- ;;^UTILITY(U,$J,358.3,2085,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2085,1,3,0)
- ;;=3^Electrocution, initial encounter
- ;;^UTILITY(U,$J,358.3,2085,1,4,0)
- ;;=4^T75.4XXA
- ;;^UTILITY(U,$J,358.3,2085,2)
- ;;=^5054203
- ;;^UTILITY(U,$J,358.3,2086,0)
- ;;=T15.91XA^^4^62^61
- ;;^UTILITY(U,$J,358.3,2086,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2086,1,3,0)
- ;;=3^FB on Right External Eye,Part Unspec,Init Encntr
- ;;^UTILITY(U,$J,358.3,2086,1,4,0)
- ;;=4^T15.91XA
- ;;^UTILITY(U,$J,358.3,2086,2)
- ;;=^5046411
- ;;^UTILITY(U,$J,358.3,2087,0)
- ;;=T15.92XA^^4^62^60
- ;;^UTILITY(U,$J,358.3,2087,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2087,1,3,0)
- ;;=3^FB on Left External Eye,Part Unspec,Init Encntr
- ;;^UTILITY(U,$J,358.3,2087,1,4,0)
- ;;=4^T15.92XA
- ;;^UTILITY(U,$J,358.3,2087,2)
- ;;=^5046414
- ;;^UTILITY(U,$J,358.3,2088,0)
- ;;=S82.891A^^4^62^63
- ;;^UTILITY(U,$J,358.3,2088,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2088,1,3,0)
- ;;=3^Fx of Right Lower Leg NEC,Init for Clos Fx
- ;;^UTILITY(U,$J,358.3,2088,1,4,0)
- ;;=4^S82.891A
- ;;^UTILITY(U,$J,358.3,2088,2)
- ;;=^5042863
- ;;^UTILITY(U,$J,358.3,2089,0)
- ;;=S82.892A^^4^62^62
- ;;^UTILITY(U,$J,358.3,2089,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2089,1,3,0)
- ;;=3^Fx of Left Lower Leg NEC,Init for Clos Fx
- ;;^UTILITY(U,$J,358.3,2089,1,4,0)
- ;;=4^S82.892A
- ;;^UTILITY(U,$J,358.3,2089,2)
- ;;=^5136944
- ;;^UTILITY(U,$J,358.3,2090,0)
- ;;=S62.101A^^4^62^89
- ;;^UTILITY(U,$J,358.3,2090,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2090,1,3,0)
- ;;=3^Fx of unsp carpal bone, right wrist, init for clos fx
- ;;^UTILITY(U,$J,358.3,2090,1,4,0)
- ;;=4^S62.101A
- ;;^UTILITY(U,$J,358.3,2090,2)
- ;;=^5033199
- ;;^UTILITY(U,$J,358.3,2091,0)
- ;;=S62.102A^^4^62^88
- ;;^UTILITY(U,$J,358.3,2091,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2091,1,3,0)
- ;;=3^Fx of unsp carpal bone, left wrist, init for clos fx
- ;;^UTILITY(U,$J,358.3,2091,1,4,0)
- ;;=4^S62.102A
- ;;^UTILITY(U,$J,358.3,2091,2)
- ;;=^5033206
- ;;^UTILITY(U,$J,358.3,2092,0)
- ;;=S42.001A^^4^62^93
- ;;^UTILITY(U,$J,358.3,2092,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2092,1,3,0)
- ;;=3^Fx of unsp part of right clavicle, init for clos fx
- ;;^UTILITY(U,$J,358.3,2092,1,4,0)
- ;;=4^S42.001A
- ;;^UTILITY(U,$J,358.3,2092,2)
- ;;=^5026369
- ;;^UTILITY(U,$J,358.3,2093,0)
- ;;=S42.002A^^4^62^92
- ;;^UTILITY(U,$J,358.3,2093,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2093,1,3,0)
- ;;=3^Fx of unsp part of left clavicle, init for clos fx
- ;;^UTILITY(U,$J,358.3,2093,1,4,0)
- ;;=4^S42.002A
- ;;^UTILITY(U,$J,358.3,2093,2)
- ;;=^5026376
- ;;^UTILITY(U,$J,358.3,2094,0)
- ;;=S42.401A^^4^62^82
- ;;^UTILITY(U,$J,358.3,2094,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2094,1,3,0)
- ;;=3^Fx of right lower end of humerus unspec, init
+ ;;^UTILITY(U,$J,358.3,2251,0)
+ ;;=93799^^12^175^17^^^^1
+ ;;^UTILITY(U,$J,358.3,2251,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2251,1,2,0)
+ ;;=2^93799
+ ;;^UTILITY(U,$J,358.3,2251,1,3,0)
+ ;;=3^Unlisted Cardiovascular Procedure
+ ;;^UTILITY(U,$J,358.3,2252,0)
+ ;;=93015^^12^176^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2252,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2252,1,2,0)
+ ;;=2^93015
+ ;;^UTILITY(U,$J,358.3,2252,1,3,0)
+ ;;=3^Cardiovascular Stress Test
+ ;;^UTILITY(U,$J,358.3,2253,0)
+ ;;=93016^^12^176^5^^^^1
+ ;;^UTILITY(U,$J,358.3,2253,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2253,1,2,0)
+ ;;=2^93016
+ ;;^UTILITY(U,$J,358.3,2253,1,3,0)
+ ;;=3^Stress Test, Phy Super Only No Report
+ ;;^UTILITY(U,$J,358.3,2254,0)
+ ;;=93017^^12^176^6^^^^1
+ ;;^UTILITY(U,$J,358.3,2254,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2254,1,2,0)
+ ;;=2^93017
+ ;;^UTILITY(U,$J,358.3,2254,1,3,0)
+ ;;=3^Stress Test, Tracing Only
+ ;;^UTILITY(U,$J,358.3,2255,0)
+ ;;=93018^^12^176^4^^^^1
+ ;;^UTILITY(U,$J,358.3,2255,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2255,1,2,0)
+ ;;=2^93018
+ ;;^UTILITY(U,$J,358.3,2255,1,3,0)
+ ;;=3^Stress Test, Interr & Report Only
+ ;;^UTILITY(U,$J,358.3,2256,0)
+ ;;=78451^^12^176^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2256,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2256,1,2,0)
+ ;;=2^78451
+ ;;^UTILITY(U,$J,358.3,2256,1,3,0)
+ ;;=3^SPECT,Single Study
+ ;;^UTILITY(U,$J,358.3,2257,0)
+ ;;=93350^^12^176^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2257,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2257,1,2,0)
+ ;;=2^93350
+ ;;^UTILITY(U,$J,358.3,2257,1,3,0)
+ ;;=3^Stress TTE Only
+ ;;^UTILITY(U,$J,358.3,2258,0)
+ ;;=99401^^12^177^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2258,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2258,1,2,0)
+ ;;=2^99401
+ ;;^UTILITY(U,$J,358.3,2258,1,3,0)
+ ;;=3^Preventive Counseling,15 min
+ ;;^UTILITY(U,$J,358.3,2259,0)
+ ;;=99402^^12^177^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2259,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2259,1,2,0)
+ ;;=2^99402
+ ;;^UTILITY(U,$J,358.3,2259,1,3,0)
+ ;;=3^Preventive Counseling,30 min
+ ;;^UTILITY(U,$J,358.3,2260,0)
+ ;;=99403^^12^177^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2260,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2260,1,2,0)
+ ;;=2^99403
+ ;;^UTILITY(U,$J,358.3,2260,1,3,0)
+ ;;=3^Preventive Counseling,45 min
+ ;;^UTILITY(U,$J,358.3,2261,0)
+ ;;=99404^^12^177^4^^^^1
+ ;;^UTILITY(U,$J,358.3,2261,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2261,1,2,0)
+ ;;=2^99404
+ ;;^UTILITY(U,$J,358.3,2261,1,3,0)
+ ;;=3^Preventive Counseling,60 min
+ ;;^UTILITY(U,$J,358.3,2262,0)
+ ;;=99201^^13^178^1
+ ;;^UTILITY(U,$J,358.3,2262,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2262,1,1,0)
+ ;;=1^Problem Focus
+ ;;^UTILITY(U,$J,358.3,2262,1,2,0)
+ ;;=2^99201
+ ;;^UTILITY(U,$J,358.3,2263,0)
+ ;;=99202^^13^178^2
+ ;;^UTILITY(U,$J,358.3,2263,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2263,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,2263,1,2,0)
+ ;;=2^99202
+ ;;^UTILITY(U,$J,358.3,2264,0)
+ ;;=99203^^13^178^3
+ ;;^UTILITY(U,$J,358.3,2264,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2264,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,2264,1,2,0)
+ ;;=2^99203
+ ;;^UTILITY(U,$J,358.3,2265,0)
+ ;;=99204^^13^178^4
+ ;;^UTILITY(U,$J,358.3,2265,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2265,1,1,0)
+ ;;=1^Comprehensive, Moderate
+ ;;^UTILITY(U,$J,358.3,2265,1,2,0)
+ ;;=2^99204
+ ;;^UTILITY(U,$J,358.3,2266,0)
+ ;;=99205^^13^178^5
+ ;;^UTILITY(U,$J,358.3,2266,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,2266,1,1,0)
+ ;;=1^Comprehensive,High
+ ;;^UTILITY(U,$J,358.3,2266,1,2,0)
+ ;;=2^99205
+ ;;^UTILITY(U,$J,358.3,2267,0)
+ ;;=99212^^13^179^2
+ ;;^UTILITY(U,$J,358.3,2267,1,0)
+ ;;=^358.31IA^2^2

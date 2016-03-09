@@ -1,142 +1,132 @@
-IBDEI093 ; ; 06-AUG-2015
+IBDEI093 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3795,1,3,0)
- ;;=3^386.2
- ;;^UTILITY(U,$J,358.3,3795,1,4,0)
- ;;=4^Vertigo, Central
- ;;^UTILITY(U,$J,358.3,3795,2)
- ;;=^269484
- ;;^UTILITY(U,$J,358.3,3796,0)
- ;;=386.11^^12^168^96
- ;;^UTILITY(U,$J,358.3,3796,1,0)
+ ;;^UTILITY(U,$J,358.3,3968,1,4,0)
+ ;;=4^Z60.2
+ ;;^UTILITY(U,$J,358.3,3968,2)
+ ;;=^5063140
+ ;;^UTILITY(U,$J,358.3,3969,0)
+ ;;=Z59.3^^18^224^144
+ ;;^UTILITY(U,$J,358.3,3969,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3796,1,3,0)
- ;;=3^386.11
- ;;^UTILITY(U,$J,358.3,3796,1,4,0)
- ;;=4^Vertigo, BPPV
- ;;^UTILITY(U,$J,358.3,3796,2)
- ;;=^269480
- ;;^UTILITY(U,$J,358.3,3797,0)
- ;;=388.40^^12^168^24
- ;;^UTILITY(U,$J,358.3,3797,1,0)
+ ;;^UTILITY(U,$J,358.3,3969,1,3,0)
+ ;;=3^Problems Related to Living in Residential Institution
+ ;;^UTILITY(U,$J,358.3,3969,1,4,0)
+ ;;=4^Z59.3
+ ;;^UTILITY(U,$J,358.3,3969,2)
+ ;;=^5063132
+ ;;^UTILITY(U,$J,358.3,3970,0)
+ ;;=Z59.6^^18^224^145
+ ;;^UTILITY(U,$J,358.3,3970,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3797,1,3,0)
- ;;=3^388.40
- ;;^UTILITY(U,$J,358.3,3797,1,4,0)
- ;;=4^Auditory Perception, Abnormal NOS
- ;;^UTILITY(U,$J,358.3,3797,2)
- ;;=^269531
- ;;^UTILITY(U,$J,358.3,3798,0)
- ;;=386.10^^12^168^99
- ;;^UTILITY(U,$J,358.3,3798,1,0)
+ ;;^UTILITY(U,$J,358.3,3970,1,3,0)
+ ;;=3^Problems Related to Low Income
+ ;;^UTILITY(U,$J,358.3,3970,1,4,0)
+ ;;=4^Z59.6
+ ;;^UTILITY(U,$J,358.3,3970,2)
+ ;;=^5063135
+ ;;^UTILITY(U,$J,358.3,3971,0)
+ ;;=Z75.9^^18^224^146
+ ;;^UTILITY(U,$J,358.3,3971,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3798,1,3,0)
- ;;=3^386.10
- ;;^UTILITY(U,$J,358.3,3798,1,4,0)
- ;;=4^Vertigo, Peripheral Nos
- ;;^UTILITY(U,$J,358.3,3798,2)
- ;;=^269478
- ;;^UTILITY(U,$J,358.3,3799,0)
- ;;=386.01^^12^168^19
- ;;^UTILITY(U,$J,358.3,3799,1,0)
+ ;;^UTILITY(U,$J,358.3,3971,1,3,0)
+ ;;=3^Problems Related to Med Facilities/Health Care
+ ;;^UTILITY(U,$J,358.3,3971,1,4,0)
+ ;;=4^Z75.9
+ ;;^UTILITY(U,$J,358.3,3971,2)
+ ;;=^5063296
+ ;;^UTILITY(U,$J,358.3,3972,0)
+ ;;=Z75.0^^18^224^147
+ ;;^UTILITY(U,$J,358.3,3972,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3799,1,3,0)
- ;;=3^386.01
- ;;^UTILITY(U,$J,358.3,3799,1,4,0)
- ;;=4^Actv Menieres, Cochleuest
- ;;^UTILITY(U,$J,358.3,3799,2)
- ;;=^269469
- ;;^UTILITY(U,$J,358.3,3800,0)
- ;;=386.02^^12^168^18
- ;;^UTILITY(U,$J,358.3,3800,1,0)
+ ;;^UTILITY(U,$J,358.3,3972,1,3,0)
+ ;;=3^Problems Related to Med Services not Available in Home
+ ;;^UTILITY(U,$J,358.3,3972,1,4,0)
+ ;;=4^Z75.0
+ ;;^UTILITY(U,$J,358.3,3972,2)
+ ;;=^5063289
+ ;;^UTILITY(U,$J,358.3,3973,0)
+ ;;=Z74.2^^18^224^149
+ ;;^UTILITY(U,$J,358.3,3973,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3800,1,3,0)
- ;;=3^386.02
- ;;^UTILITY(U,$J,358.3,3800,1,4,0)
- ;;=4^Actv Menieres, Cochlear
- ;;^UTILITY(U,$J,358.3,3800,2)
- ;;=^269471
- ;;^UTILITY(U,$J,358.3,3801,0)
- ;;=386.03^^12^168^20
- ;;^UTILITY(U,$J,358.3,3801,1,0)
+ ;;^UTILITY(U,$J,358.3,3973,1,3,0)
+ ;;=3^Problems Related to Need for Assistance at Home
+ ;;^UTILITY(U,$J,358.3,3973,1,4,0)
+ ;;=4^Z74.2
+ ;;^UTILITY(U,$J,358.3,3973,2)
+ ;;=^5063285
+ ;;^UTILITY(U,$J,358.3,3974,0)
+ ;;=Z74.1^^18^224^150
+ ;;^UTILITY(U,$J,358.3,3974,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3801,1,3,0)
- ;;=3^386.03
- ;;^UTILITY(U,$J,358.3,3801,1,4,0)
- ;;=4^Actv Menieres, Vestibular
- ;;^UTILITY(U,$J,358.3,3801,2)
- ;;=^269473
- ;;^UTILITY(U,$J,358.3,3802,0)
- ;;=386.12^^12^168^100
- ;;^UTILITY(U,$J,358.3,3802,1,0)
+ ;;^UTILITY(U,$J,358.3,3974,1,3,0)
+ ;;=3^Problems Related to Need for Assistance w/ Personal Care
+ ;;^UTILITY(U,$J,358.3,3974,1,4,0)
+ ;;=4^Z74.1
+ ;;^UTILITY(U,$J,358.3,3974,2)
+ ;;=^5063284
+ ;;^UTILITY(U,$J,358.3,3975,0)
+ ;;=Z74.3^^18^224^151
+ ;;^UTILITY(U,$J,358.3,3975,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3802,1,3,0)
- ;;=3^386.12
- ;;^UTILITY(U,$J,358.3,3802,1,4,0)
- ;;=4^Vestibular Neuronitis
- ;;^UTILITY(U,$J,358.3,3802,2)
- ;;=^126186
- ;;^UTILITY(U,$J,358.3,3803,0)
- ;;=388.41^^12^168^46
- ;;^UTILITY(U,$J,358.3,3803,1,0)
+ ;;^UTILITY(U,$J,358.3,3975,1,3,0)
+ ;;=3^Problems Related to Need for Continuous Supervision
+ ;;^UTILITY(U,$J,358.3,3975,1,4,0)
+ ;;=4^Z74.3
+ ;;^UTILITY(U,$J,358.3,3975,2)
+ ;;=^5063286
+ ;;^UTILITY(U,$J,358.3,3976,0)
+ ;;=Z75.1^^18^224^126
+ ;;^UTILITY(U,$J,358.3,3976,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3803,1,3,0)
- ;;=3^388.41
- ;;^UTILITY(U,$J,358.3,3803,1,4,0)
- ;;=4^Diplacusis
- ;;^UTILITY(U,$J,358.3,3803,2)
- ;;=^265456
- ;;^UTILITY(U,$J,358.3,3804,0)
- ;;=388.45^^12^168^17
- ;;^UTILITY(U,$J,358.3,3804,1,0)
+ ;;^UTILITY(U,$J,358.3,3976,1,3,0)
+ ;;=3^Problems Related to Awaiting Facility Admission
+ ;;^UTILITY(U,$J,358.3,3976,1,4,0)
+ ;;=4^Z75.1
+ ;;^UTILITY(U,$J,358.3,3976,2)
+ ;;=^5063290
+ ;;^UTILITY(U,$J,358.3,3977,0)
+ ;;=Z63.9^^18^224^152
+ ;;^UTILITY(U,$J,358.3,3977,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3804,1,3,0)
- ;;=3^388.45
- ;;^UTILITY(U,$J,358.3,3804,1,4,0)
- ;;=4^Acq Auditory Process Disorder
- ;;^UTILITY(U,$J,358.3,3804,2)
- ;;=^335255
- ;;^UTILITY(U,$J,358.3,3805,0)
- ;;=386.41^^12^168^85
- ;;^UTILITY(U,$J,358.3,3805,1,0)
+ ;;^UTILITY(U,$J,358.3,3977,1,3,0)
+ ;;=3^Problems Related to Primary Support Group
+ ;;^UTILITY(U,$J,358.3,3977,1,4,0)
+ ;;=4^Z63.9
+ ;;^UTILITY(U,$J,358.3,3977,2)
+ ;;=^5063175
+ ;;^UTILITY(U,$J,358.3,3978,0)
+ ;;=Z74.09^^18^224^154
+ ;;^UTILITY(U,$J,358.3,3978,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3805,1,3,0)
- ;;=3^386.41
- ;;^UTILITY(U,$J,358.3,3805,1,4,0)
- ;;=4^Round Window Fistula
- ;;^UTILITY(U,$J,358.3,3805,2)
- ;;=^269497
- ;;^UTILITY(U,$J,358.3,3806,0)
- ;;=380.01^^12^168^10
- ;;^UTILITY(U,$J,358.3,3806,1,0)
+ ;;^UTILITY(U,$J,358.3,3978,1,3,0)
+ ;;=3^Problems Related to Reduced Mobility
+ ;;^UTILITY(U,$J,358.3,3978,1,4,0)
+ ;;=4^Z74.09
+ ;;^UTILITY(U,$J,358.3,3978,2)
+ ;;=^5063283
+ ;;^UTILITY(U,$J,358.3,3979,0)
+ ;;=Z60.9^^18^224^156
+ ;;^UTILITY(U,$J,358.3,3979,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3806,1,3,0)
- ;;=3^380.01
- ;;^UTILITY(U,$J,358.3,3806,1,4,0)
- ;;=4^AC Perichrondritis of Pinna
- ;;^UTILITY(U,$J,358.3,3806,2)
- ;;=^269339
- ;;^UTILITY(U,$J,358.3,3807,0)
- ;;=380.02^^12^168^40
- ;;^UTILITY(U,$J,358.3,3807,1,0)
+ ;;^UTILITY(U,$J,358.3,3979,1,3,0)
+ ;;=3^Problems Related to Social Environment
+ ;;^UTILITY(U,$J,358.3,3979,1,4,0)
+ ;;=4^Z60.9
+ ;;^UTILITY(U,$J,358.3,3979,2)
+ ;;=^5063145
+ ;;^UTILITY(U,$J,358.3,3980,0)
+ ;;=Z60.4^^18^224^157
+ ;;^UTILITY(U,$J,358.3,3980,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3807,1,3,0)
- ;;=3^380.02
- ;;^UTILITY(U,$J,358.3,3807,1,4,0)
- ;;=4^Chr Perichondritis of Pinna
- ;;^UTILITY(U,$J,358.3,3807,2)
- ;;=^269340
- ;;^UTILITY(U,$J,358.3,3808,0)
- ;;=380.03^^12^168^44
- ;;^UTILITY(U,$J,358.3,3808,1,0)
+ ;;^UTILITY(U,$J,358.3,3980,1,3,0)
+ ;;=3^Problems Related to Social Exclusion/Rejection
+ ;;^UTILITY(U,$J,358.3,3980,1,4,0)
+ ;;=4^Z60.4
+ ;;^UTILITY(U,$J,358.3,3980,2)
+ ;;=^5063142
+ ;;^UTILITY(U,$J,358.3,3981,0)
+ ;;=Z60.5^^18^224^125
+ ;;^UTILITY(U,$J,358.3,3981,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3808,1,3,0)
- ;;=3^380.03
- ;;^UTILITY(U,$J,358.3,3808,1,4,0)
- ;;=4^Chrondritis of Pinna
- ;;^UTILITY(U,$J,358.3,3808,2)
- ;;=^331450
- ;;^UTILITY(U,$J,358.3,3809,0)
- ;;=381.01^^12^168^12

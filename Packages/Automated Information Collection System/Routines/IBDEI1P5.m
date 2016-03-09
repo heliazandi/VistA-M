@@ -1,130 +1,126 @@
-IBDEI1P5 ; ; 06-AUG-2015
+IBDEI1P5 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30090,1,4,0)
- ;;=4^O99.285
- ;;^UTILITY(U,$J,358.3,30090,2)
- ;;=^5017939
- ;;^UTILITY(U,$J,358.3,30091,0)
- ;;=O99.011^^178^1913^3
- ;;^UTILITY(U,$J,358.3,30091,1,0)
+ ;;^UTILITY(U,$J,358.3,28840,1,3,0)
+ ;;=3^Papyraceous fetus, first trimester, fetus 4
+ ;;^UTILITY(U,$J,358.3,28840,1,4,0)
+ ;;=4^O31.01X4
+ ;;^UTILITY(U,$J,358.3,28840,2)
+ ;;=^5016513
+ ;;^UTILITY(U,$J,358.3,28841,0)
+ ;;=O31.01X5^^115^1452^43
+ ;;^UTILITY(U,$J,358.3,28841,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30091,1,3,0)
- ;;=3^Anemia complicating pregnancy, first trimester
- ;;^UTILITY(U,$J,358.3,30091,1,4,0)
- ;;=4^O99.011
- ;;^UTILITY(U,$J,358.3,30091,2)
- ;;=^5017916
- ;;^UTILITY(U,$J,358.3,30092,0)
- ;;=O99.012^^178^1913^4
- ;;^UTILITY(U,$J,358.3,30092,1,0)
+ ;;^UTILITY(U,$J,358.3,28841,1,3,0)
+ ;;=3^Papyraceous fetus, first trimester, fetus 5
+ ;;^UTILITY(U,$J,358.3,28841,1,4,0)
+ ;;=4^O31.01X5
+ ;;^UTILITY(U,$J,358.3,28841,2)
+ ;;=^5016514
+ ;;^UTILITY(U,$J,358.3,28842,0)
+ ;;=O12.01^^115^1452^26
+ ;;^UTILITY(U,$J,358.3,28842,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30092,1,3,0)
- ;;=3^Anemia complicating pregnancy, second trimester
- ;;^UTILITY(U,$J,358.3,30092,1,4,0)
- ;;=4^O99.012
- ;;^UTILITY(U,$J,358.3,30092,2)
- ;;=^5017917
- ;;^UTILITY(U,$J,358.3,30093,0)
- ;;=O99.013^^178^1913^5
- ;;^UTILITY(U,$J,358.3,30093,1,0)
+ ;;^UTILITY(U,$J,358.3,28842,1,3,0)
+ ;;=3^Gestational edema, first trimester
+ ;;^UTILITY(U,$J,358.3,28842,1,4,0)
+ ;;=4^O12.01
+ ;;^UTILITY(U,$J,358.3,28842,2)
+ ;;=^5016147
+ ;;^UTILITY(U,$J,358.3,28843,0)
+ ;;=O12.02^^115^1452^27
+ ;;^UTILITY(U,$J,358.3,28843,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30093,1,3,0)
- ;;=3^Anemia complicating pregnancy, third trimester
- ;;^UTILITY(U,$J,358.3,30093,1,4,0)
- ;;=4^O99.013
- ;;^UTILITY(U,$J,358.3,30093,2)
- ;;=^5017918
- ;;^UTILITY(U,$J,358.3,30094,0)
- ;;=O99.03^^178^1913^6
- ;;^UTILITY(U,$J,358.3,30094,1,0)
+ ;;^UTILITY(U,$J,358.3,28843,1,3,0)
+ ;;=3^Gestational edema, second trimester
+ ;;^UTILITY(U,$J,358.3,28843,1,4,0)
+ ;;=4^O12.02
+ ;;^UTILITY(U,$J,358.3,28843,2)
+ ;;=^5016148
+ ;;^UTILITY(U,$J,358.3,28844,0)
+ ;;=O12.03^^115^1452^28
+ ;;^UTILITY(U,$J,358.3,28844,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30094,1,3,0)
- ;;=3^Anemia complicating the puerperium
- ;;^UTILITY(U,$J,358.3,30094,1,4,0)
- ;;=4^O99.03
- ;;^UTILITY(U,$J,358.3,30094,2)
- ;;=^5017921
- ;;^UTILITY(U,$J,358.3,30095,0)
- ;;=O99.321^^178^1913^12
- ;;^UTILITY(U,$J,358.3,30095,1,0)
+ ;;^UTILITY(U,$J,358.3,28844,1,3,0)
+ ;;=3^Gestational edema, third trimester
+ ;;^UTILITY(U,$J,358.3,28844,1,4,0)
+ ;;=4^O12.03
+ ;;^UTILITY(U,$J,358.3,28844,2)
+ ;;=^5016149
+ ;;^UTILITY(U,$J,358.3,28845,0)
+ ;;=O12.21^^115^1452^23
+ ;;^UTILITY(U,$J,358.3,28845,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30095,1,3,0)
- ;;=3^Drug use complicating pregnancy, first trimester
- ;;^UTILITY(U,$J,358.3,30095,1,4,0)
- ;;=4^O99.321
- ;;^UTILITY(U,$J,358.3,30095,2)
- ;;=^5017947
- ;;^UTILITY(U,$J,358.3,30096,0)
- ;;=O99.322^^178^1913^13
- ;;^UTILITY(U,$J,358.3,30096,1,0)
+ ;;^UTILITY(U,$J,358.3,28845,1,3,0)
+ ;;=3^Gestational edema with proteinuria, first trimester
+ ;;^UTILITY(U,$J,358.3,28845,1,4,0)
+ ;;=4^O12.21
+ ;;^UTILITY(U,$J,358.3,28845,2)
+ ;;=^5016155
+ ;;^UTILITY(U,$J,358.3,28846,0)
+ ;;=O12.22^^115^1452^24
+ ;;^UTILITY(U,$J,358.3,28846,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30096,1,3,0)
- ;;=3^Drug use complicating pregnancy, second trimester
- ;;^UTILITY(U,$J,358.3,30096,1,4,0)
- ;;=4^O99.322
- ;;^UTILITY(U,$J,358.3,30096,2)
- ;;=^5017948
- ;;^UTILITY(U,$J,358.3,30097,0)
- ;;=O99.323^^178^1913^14
- ;;^UTILITY(U,$J,358.3,30097,1,0)
+ ;;^UTILITY(U,$J,358.3,28846,1,3,0)
+ ;;=3^Gestational edema with proteinuria, second trimester
+ ;;^UTILITY(U,$J,358.3,28846,1,4,0)
+ ;;=4^O12.22
+ ;;^UTILITY(U,$J,358.3,28846,2)
+ ;;=^5016156
+ ;;^UTILITY(U,$J,358.3,28847,0)
+ ;;=O12.23^^115^1452^25
+ ;;^UTILITY(U,$J,358.3,28847,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30097,1,3,0)
- ;;=3^Drug use complicating pregnancy, third trimester
- ;;^UTILITY(U,$J,358.3,30097,1,4,0)
- ;;=4^O99.323
- ;;^UTILITY(U,$J,358.3,30097,2)
- ;;=^5017949
- ;;^UTILITY(U,$J,358.3,30098,0)
- ;;=O99.325^^178^1913^15
- ;;^UTILITY(U,$J,358.3,30098,1,0)
+ ;;^UTILITY(U,$J,358.3,28847,1,3,0)
+ ;;=3^Gestational edema with proteinuria, third trimester
+ ;;^UTILITY(U,$J,358.3,28847,1,4,0)
+ ;;=4^O12.23
+ ;;^UTILITY(U,$J,358.3,28847,2)
+ ;;=^5016157
+ ;;^UTILITY(U,$J,358.3,28848,0)
+ ;;=O26.01^^115^1452^20
+ ;;^UTILITY(U,$J,358.3,28848,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30098,1,3,0)
- ;;=3^Drug use complicating the puerperium
- ;;^UTILITY(U,$J,358.3,30098,1,4,0)
- ;;=4^O99.325
- ;;^UTILITY(U,$J,358.3,30098,2)
- ;;=^5017951
- ;;^UTILITY(U,$J,358.3,30099,0)
- ;;=O90.6^^178^1913^57
- ;;^UTILITY(U,$J,358.3,30099,1,0)
+ ;;^UTILITY(U,$J,358.3,28848,1,3,0)
+ ;;=3^Excessive weight gain in pregnancy, first trimester
+ ;;^UTILITY(U,$J,358.3,28848,1,4,0)
+ ;;=4^O26.01
+ ;;^UTILITY(U,$J,358.3,28848,2)
+ ;;=^5016298
+ ;;^UTILITY(U,$J,358.3,28849,0)
+ ;;=O26.02^^115^1452^21
+ ;;^UTILITY(U,$J,358.3,28849,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30099,1,3,0)
- ;;=3^Postpartum mood disturbance
- ;;^UTILITY(U,$J,358.3,30099,1,4,0)
- ;;=4^O90.6
- ;;^UTILITY(U,$J,358.3,30099,2)
- ;;=^5017818
- ;;^UTILITY(U,$J,358.3,30100,0)
- ;;=F53.^^178^1913^79
- ;;^UTILITY(U,$J,358.3,30100,1,0)
+ ;;^UTILITY(U,$J,358.3,28849,1,3,0)
+ ;;=3^Excessive weight gain in pregnancy, second trimester
+ ;;^UTILITY(U,$J,358.3,28849,1,4,0)
+ ;;=4^O26.02
+ ;;^UTILITY(U,$J,358.3,28849,2)
+ ;;=^5016299
+ ;;^UTILITY(U,$J,358.3,28850,0)
+ ;;=O26.03^^115^1452^22
+ ;;^UTILITY(U,$J,358.3,28850,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30100,1,3,0)
- ;;=3^Puerperal psychosis
- ;;^UTILITY(U,$J,358.3,30100,1,4,0)
- ;;=4^F53.
- ;;^UTILITY(U,$J,358.3,30100,2)
- ;;=^5003626
- ;;^UTILITY(U,$J,358.3,30101,0)
- ;;=O99.411^^178^1913^8
- ;;^UTILITY(U,$J,358.3,30101,1,0)
+ ;;^UTILITY(U,$J,358.3,28850,1,3,0)
+ ;;=3^Excessive weight gain in pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,28850,1,4,0)
+ ;;=4^O26.03
+ ;;^UTILITY(U,$J,358.3,28850,2)
+ ;;=^5016300
+ ;;^UTILITY(U,$J,358.3,28851,0)
+ ;;=O26.831^^115^1452^72
+ ;;^UTILITY(U,$J,358.3,28851,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30101,1,3,0)
- ;;=3^Diseases of the circ sys comp pregnancy, first trimester
- ;;^UTILITY(U,$J,358.3,30101,1,4,0)
- ;;=4^O99.411
- ;;^UTILITY(U,$J,358.3,30101,2)
- ;;=^5017970
- ;;^UTILITY(U,$J,358.3,30102,0)
- ;;=O99.412^^178^1913^9
- ;;^UTILITY(U,$J,358.3,30102,1,0)
+ ;;^UTILITY(U,$J,358.3,28851,1,3,0)
+ ;;=3^Pregnancy related renal disease, first trimester
+ ;;^UTILITY(U,$J,358.3,28851,1,4,0)
+ ;;=4^O26.831
+ ;;^UTILITY(U,$J,358.3,28851,2)
+ ;;=^5016341
+ ;;^UTILITY(U,$J,358.3,28852,0)
+ ;;=O26.832^^115^1452^73
+ ;;^UTILITY(U,$J,358.3,28852,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30102,1,3,0)
- ;;=3^Diseases of the circ sys comp pregnancy, second trimester
- ;;^UTILITY(U,$J,358.3,30102,1,4,0)
- ;;=4^O99.412
- ;;^UTILITY(U,$J,358.3,30102,2)
- ;;=^5017971
- ;;^UTILITY(U,$J,358.3,30103,0)
- ;;=O99.413^^178^1913^10
+ ;;^UTILITY(U,$J,358.3,28852,1,3,0)
+ ;;=3^Pregnancy related renal disease, second trimester

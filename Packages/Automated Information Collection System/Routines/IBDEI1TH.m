@@ -1,124 +1,132 @@
-IBDEI1TH ; ; 06-AUG-2015
+IBDEI1TH ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32022,2)
- ;;=^5007630
- ;;^UTILITY(U,$J,358.3,32023,0)
- ;;=I70.341^^182^1981^49
- ;;^UTILITY(U,$J,358.3,32023,1,0)
+ ;;^UTILITY(U,$J,358.3,30868,1,3,0)
+ ;;=3^Antidepressant Discontinuation Syndrome,Subseq Encntr
+ ;;^UTILITY(U,$J,358.3,30868,1,4,0)
+ ;;=4^T43.205D
+ ;;^UTILITY(U,$J,358.3,30868,2)
+ ;;=^5050541
+ ;;^UTILITY(U,$J,358.3,30869,0)
+ ;;=T43.205S^^123^1540^6
+ ;;^UTILITY(U,$J,358.3,30869,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32023,1,3,0)
- ;;=3^Athscl Bypass of Left Leg w/ Ulcer of Thigh
- ;;^UTILITY(U,$J,358.3,32023,1,4,0)
- ;;=4^I70.341
- ;;^UTILITY(U,$J,358.3,32023,2)
- ;;=^5007633
- ;;^UTILITY(U,$J,358.3,32024,0)
- ;;=I70.342^^182^1981^46
- ;;^UTILITY(U,$J,358.3,32024,1,0)
+ ;;^UTILITY(U,$J,358.3,30869,1,3,0)
+ ;;=3^Antidepressant Discontinuation Syndrome,Sequela
+ ;;^UTILITY(U,$J,358.3,30869,1,4,0)
+ ;;=4^T43.205S
+ ;;^UTILITY(U,$J,358.3,30869,2)
+ ;;=^5050542
+ ;;^UTILITY(U,$J,358.3,30870,0)
+ ;;=G25.71^^123^1540^7
+ ;;^UTILITY(U,$J,358.3,30870,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32024,1,3,0)
- ;;=3^Athscl Bypass of Left Leg w/ Ulcer of Calf
- ;;^UTILITY(U,$J,358.3,32024,1,4,0)
- ;;=4^I70.342
- ;;^UTILITY(U,$J,358.3,32024,2)
- ;;=^5007634
- ;;^UTILITY(U,$J,358.3,32025,0)
- ;;=I70.343^^182^1981^45
- ;;^UTILITY(U,$J,358.3,32025,1,0)
+ ;;^UTILITY(U,$J,358.3,30870,1,3,0)
+ ;;=3^Medication-Induced Acute Akathisia
+ ;;^UTILITY(U,$J,358.3,30870,1,4,0)
+ ;;=4^G25.71
+ ;;^UTILITY(U,$J,358.3,30870,2)
+ ;;=^5003799
+ ;;^UTILITY(U,$J,358.3,30871,0)
+ ;;=G24.02^^123^1540^9
+ ;;^UTILITY(U,$J,358.3,30871,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32025,1,3,0)
- ;;=3^Athscl Bypass of Left Leg w/ Ulcer of Ankle
- ;;^UTILITY(U,$J,358.3,32025,1,4,0)
- ;;=4^I70.343
- ;;^UTILITY(U,$J,358.3,32025,2)
- ;;=^5007635
- ;;^UTILITY(U,$J,358.3,32026,0)
- ;;=I70.344^^182^1981^47
- ;;^UTILITY(U,$J,358.3,32026,1,0)
+ ;;^UTILITY(U,$J,358.3,30871,1,3,0)
+ ;;=3^Medication-Induced Acute Dystonia
+ ;;^UTILITY(U,$J,358.3,30871,1,4,0)
+ ;;=4^G24.02
+ ;;^UTILITY(U,$J,358.3,30871,2)
+ ;;=^5003785
+ ;;^UTILITY(U,$J,358.3,30872,0)
+ ;;=G21.0^^123^1540^13
+ ;;^UTILITY(U,$J,358.3,30872,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32026,1,3,0)
- ;;=3^Athscl Bypass of Left Leg w/ Ulcer of Heel/Midfoot
- ;;^UTILITY(U,$J,358.3,32026,1,4,0)
- ;;=4^I70.344
- ;;^UTILITY(U,$J,358.3,32026,2)
- ;;=^5007636
- ;;^UTILITY(U,$J,358.3,32027,0)
- ;;=I70.345^^182^1981^48
- ;;^UTILITY(U,$J,358.3,32027,1,0)
+ ;;^UTILITY(U,$J,358.3,30872,1,3,0)
+ ;;=3^Neuroleptic Malignant Syndrome
+ ;;^UTILITY(U,$J,358.3,30872,1,4,0)
+ ;;=4^G21.0
+ ;;^UTILITY(U,$J,358.3,30872,2)
+ ;;=^5003771
+ ;;^UTILITY(U,$J,358.3,30873,0)
+ ;;=T50.905A^^123^1540^1
+ ;;^UTILITY(U,$J,358.3,30873,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32027,1,3,0)
- ;;=3^Athscl Bypass of Left Leg w/ Ulcer of Oth Part of Foot
- ;;^UTILITY(U,$J,358.3,32027,1,4,0)
- ;;=4^I70.345
- ;;^UTILITY(U,$J,358.3,32027,2)
- ;;=^5007637
- ;;^UTILITY(U,$J,358.3,32028,0)
- ;;=I70.431^^182^1981^40
- ;;^UTILITY(U,$J,358.3,32028,1,0)
+ ;;^UTILITY(U,$J,358.3,30873,1,3,0)
+ ;;=3^Adverse Effect of Unspec Medication,Init Encntr
+ ;;^UTILITY(U,$J,358.3,30873,1,4,0)
+ ;;=4^T50.905A
+ ;;^UTILITY(U,$J,358.3,30873,2)
+ ;;=^5052160
+ ;;^UTILITY(U,$J,358.3,30874,0)
+ ;;=T50.905D^^123^1540^3
+ ;;^UTILITY(U,$J,358.3,30874,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32028,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Right Leg w/ Ulcer of Thigh
- ;;^UTILITY(U,$J,358.3,32028,1,4,0)
- ;;=4^I70.431
- ;;^UTILITY(U,$J,358.3,32028,2)
- ;;=^5007664
- ;;^UTILITY(U,$J,358.3,32029,0)
- ;;=I70.432^^182^1981^41
- ;;^UTILITY(U,$J,358.3,32029,1,0)
+ ;;^UTILITY(U,$J,358.3,30874,1,3,0)
+ ;;=3^Adverse Effect of Unspec Medication,Subseq Encntr
+ ;;^UTILITY(U,$J,358.3,30874,1,4,0)
+ ;;=4^T50.905D
+ ;;^UTILITY(U,$J,358.3,30874,2)
+ ;;=^5052161
+ ;;^UTILITY(U,$J,358.3,30875,0)
+ ;;=T50.905S^^123^1540^2
+ ;;^UTILITY(U,$J,358.3,30875,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32029,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Right Leg w/ Ulcer of Calf
- ;;^UTILITY(U,$J,358.3,32029,1,4,0)
- ;;=4^I70.432
- ;;^UTILITY(U,$J,358.3,32029,2)
- ;;=^5007665
- ;;^UTILITY(U,$J,358.3,32030,0)
- ;;=I70.433^^182^1981^42
- ;;^UTILITY(U,$J,358.3,32030,1,0)
+ ;;^UTILITY(U,$J,358.3,30875,1,3,0)
+ ;;=3^Adverse Effect of Unspec Medication,Sequela
+ ;;^UTILITY(U,$J,358.3,30875,1,4,0)
+ ;;=4^T50.905S
+ ;;^UTILITY(U,$J,358.3,30875,2)
+ ;;=^5052162
+ ;;^UTILITY(U,$J,358.3,30876,0)
+ ;;=F42.^^123^1541^7
+ ;;^UTILITY(U,$J,358.3,30876,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32030,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Right Leg w/ Ulcer of Ankle
- ;;^UTILITY(U,$J,358.3,32030,1,4,0)
- ;;=4^I70.433
- ;;^UTILITY(U,$J,358.3,32030,2)
- ;;=^5007666
- ;;^UTILITY(U,$J,358.3,32031,0)
- ;;=I70.434^^182^1981^43
- ;;^UTILITY(U,$J,358.3,32031,1,0)
+ ;;^UTILITY(U,$J,358.3,30876,1,3,0)
+ ;;=3^Obsessive-Compulsive Disorder
+ ;;^UTILITY(U,$J,358.3,30876,1,4,0)
+ ;;=4^F42.
+ ;;^UTILITY(U,$J,358.3,30876,2)
+ ;;=^5003568
+ ;;^UTILITY(U,$J,358.3,30877,0)
+ ;;=F45.22^^123^1541^1
+ ;;^UTILITY(U,$J,358.3,30877,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32031,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Right Leg w/ Ulcer of Heel/Midfoot
- ;;^UTILITY(U,$J,358.3,32031,1,4,0)
- ;;=4^I70.434
- ;;^UTILITY(U,$J,358.3,32031,2)
- ;;=^5007667
- ;;^UTILITY(U,$J,358.3,32032,0)
- ;;=I70.435^^182^1981^44
- ;;^UTILITY(U,$J,358.3,32032,1,0)
+ ;;^UTILITY(U,$J,358.3,30877,1,3,0)
+ ;;=3^Body Dysmorphic Disorder
+ ;;^UTILITY(U,$J,358.3,30877,1,4,0)
+ ;;=4^F45.22
+ ;;^UTILITY(U,$J,358.3,30877,2)
+ ;;=^5003588
+ ;;^UTILITY(U,$J,358.3,30878,0)
+ ;;=F63.3^^123^1541^8
+ ;;^UTILITY(U,$J,358.3,30878,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32032,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Right Leg w/ Ulcer of Oth Part of Foot
- ;;^UTILITY(U,$J,358.3,32032,1,4,0)
- ;;=4^I70.435
- ;;^UTILITY(U,$J,358.3,32032,2)
- ;;=^5007668
- ;;^UTILITY(U,$J,358.3,32033,0)
- ;;=I70.441^^182^1981^35
- ;;^UTILITY(U,$J,358.3,32033,1,0)
+ ;;^UTILITY(U,$J,358.3,30878,1,3,0)
+ ;;=3^Trichotillomania
+ ;;^UTILITY(U,$J,358.3,30878,1,4,0)
+ ;;=4^F63.3
+ ;;^UTILITY(U,$J,358.3,30878,2)
+ ;;=^5003643
+ ;;^UTILITY(U,$J,358.3,30879,0)
+ ;;=L98.1^^123^1541^2
+ ;;^UTILITY(U,$J,358.3,30879,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32033,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Left Leg w/ Ulcer of Thigh
- ;;^UTILITY(U,$J,358.3,32033,1,4,0)
- ;;=4^I70.441
- ;;^UTILITY(U,$J,358.3,32033,2)
- ;;=^5007671
- ;;^UTILITY(U,$J,358.3,32034,0)
- ;;=I70.442^^182^1981^36
- ;;^UTILITY(U,$J,358.3,32034,1,0)
+ ;;^UTILITY(U,$J,358.3,30879,1,3,0)
+ ;;=3^Excoriation (Skin-Picking) Disorder
+ ;;^UTILITY(U,$J,358.3,30879,1,4,0)
+ ;;=4^L98.1
+ ;;^UTILITY(U,$J,358.3,30879,2)
+ ;;=^186781
+ ;;^UTILITY(U,$J,358.3,30880,0)
+ ;;=F68.10^^123^1541^3
+ ;;^UTILITY(U,$J,358.3,30880,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32034,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Left Leg w/ Ulcer of Calf
- ;;^UTILITY(U,$J,358.3,32034,1,4,0)
- ;;=4^I70.442
+ ;;^UTILITY(U,$J,358.3,30880,1,3,0)
+ ;;=3^Factitious Disorder
+ ;;^UTILITY(U,$J,358.3,30880,1,4,0)
+ ;;=4^F68.10
+ ;;^UTILITY(U,$J,358.3,30880,2)
+ ;;=^5003663
+ ;;^UTILITY(U,$J,358.3,30881,0)
+ ;;=F63.9^^123^1541^5

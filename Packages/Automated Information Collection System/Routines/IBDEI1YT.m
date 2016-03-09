@@ -1,124 +1,136 @@
-IBDEI1YT ; ; 06-AUG-2015
+IBDEI1YT ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34459,1,3,0)
- ;;=3^Nondisp comminuted fx of right patella, sequela
- ;;^UTILITY(U,$J,358.3,34459,1,4,0)
- ;;=4^S82.044S
- ;;^UTILITY(U,$J,358.3,34459,2)
- ;;=^5040492
- ;;^UTILITY(U,$J,358.3,34460,0)
- ;;=S82.045S^^183^2019^53
- ;;^UTILITY(U,$J,358.3,34460,1,0)
+ ;;^UTILITY(U,$J,358.3,33355,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34460,1,3,0)
- ;;=3^Nondisp comminuted fx of left patella, sequela
- ;;^UTILITY(U,$J,358.3,34460,1,4,0)
- ;;=4^S82.045S
- ;;^UTILITY(U,$J,358.3,34460,2)
- ;;=^5040508
- ;;^UTILITY(U,$J,358.3,34461,0)
- ;;=S72.045S^^183^2019^51
- ;;^UTILITY(U,$J,358.3,34461,1,0)
+ ;;^UTILITY(U,$J,358.3,33355,1,3,0)
+ ;;=3^Acne Keloid
+ ;;^UTILITY(U,$J,358.3,33355,1,4,0)
+ ;;=4^L73.0
+ ;;^UTILITY(U,$J,358.3,33355,2)
+ ;;=^2149
+ ;;^UTILITY(U,$J,358.3,33356,0)
+ ;;=L73.2^^131^1669^159
+ ;;^UTILITY(U,$J,358.3,33356,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34461,1,3,0)
- ;;=3^Nondisp base of neck fx of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34461,1,4,0)
- ;;=4^S72.045S
- ;;^UTILITY(U,$J,358.3,34461,2)
- ;;=^5037392
- ;;^UTILITY(U,$J,358.3,34462,0)
- ;;=S72.345S^^183^2019^82
- ;;^UTILITY(U,$J,358.3,34462,1,0)
+ ;;^UTILITY(U,$J,358.3,33356,1,3,0)
+ ;;=3^Hidradenitis Suppurativa
+ ;;^UTILITY(U,$J,358.3,33356,1,4,0)
+ ;;=4^L73.2
+ ;;^UTILITY(U,$J,358.3,33356,2)
+ ;;=^278979
+ ;;^UTILITY(U,$J,358.3,33357,0)
+ ;;=L73.9^^131^1669^153
+ ;;^UTILITY(U,$J,358.3,33357,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34462,1,3,0)
- ;;=3^Nondisp spiral fx shaft of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34462,1,4,0)
- ;;=4^S72.345S
- ;;^UTILITY(U,$J,358.3,34462,2)
- ;;=^5038415
- ;;^UTILITY(U,$J,358.3,34463,0)
- ;;=S92.422S^^183^2020^25
- ;;^UTILITY(U,$J,358.3,34463,1,0)
+ ;;^UTILITY(U,$J,358.3,33357,1,3,0)
+ ;;=3^Follicular Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,33357,1,4,0)
+ ;;=4^L73.9
+ ;;^UTILITY(U,$J,358.3,33357,2)
+ ;;=^5009286
+ ;;^UTILITY(U,$J,358.3,33358,0)
+ ;;=L82.0^^131^1669^160
+ ;;^UTILITY(U,$J,358.3,33358,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34463,1,3,0)
- ;;=3^Disp distal phalanx fx of left great toe,sequela
- ;;^UTILITY(U,$J,358.3,34463,1,4,0)
- ;;=4^S92.422S
- ;;^UTILITY(U,$J,358.3,34463,2)
- ;;=^5045353
- ;;^UTILITY(U,$J,358.3,34464,0)
- ;;=S92.532S^^183^2020^26
- ;;^UTILITY(U,$J,358.3,34464,1,0)
+ ;;^UTILITY(U,$J,358.3,33358,1,3,0)
+ ;;=3^Inflamed Seborrheic Keratosis
+ ;;^UTILITY(U,$J,358.3,33358,1,4,0)
+ ;;=4^L82.0
+ ;;^UTILITY(U,$J,358.3,33358,2)
+ ;;=^303311
+ ;;^UTILITY(U,$J,358.3,33359,0)
+ ;;=L82.1^^131^1669^264
+ ;;^UTILITY(U,$J,358.3,33359,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34464,1,3,0)
- ;;=3^Disp distal phalanx fx of left lesser toe,sequela
- ;;^UTILITY(U,$J,358.3,34464,1,4,0)
- ;;=4^S92.532S
- ;;^UTILITY(U,$J,358.3,34464,2)
- ;;=^5045528
- ;;^UTILITY(U,$J,358.3,34465,0)
- ;;=S92.421S^^183^2020^27
- ;;^UTILITY(U,$J,358.3,34465,1,0)
+ ;;^UTILITY(U,$J,358.3,33359,1,3,0)
+ ;;=3^Seborrheic Keratosis NEC
+ ;;^UTILITY(U,$J,358.3,33359,1,4,0)
+ ;;=4^L82.1
+ ;;^UTILITY(U,$J,358.3,33359,2)
+ ;;=^303312
+ ;;^UTILITY(U,$J,358.3,33360,0)
+ ;;=L84.^^131^1669^116
+ ;;^UTILITY(U,$J,358.3,33360,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34465,1,3,0)
- ;;=3^Disp distal phalanx fx of right great toe,sequela
- ;;^UTILITY(U,$J,358.3,34465,1,4,0)
- ;;=4^S92.421S
- ;;^UTILITY(U,$J,358.3,34465,2)
- ;;=^5045346
- ;;^UTILITY(U,$J,358.3,34466,0)
- ;;=S92.531S^^183^2020^28
- ;;^UTILITY(U,$J,358.3,34466,1,0)
+ ;;^UTILITY(U,$J,358.3,33360,1,3,0)
+ ;;=3^Corns and Callosities
+ ;;^UTILITY(U,$J,358.3,33360,1,4,0)
+ ;;=4^L84.
+ ;;^UTILITY(U,$J,358.3,33360,2)
+ ;;=^271920
+ ;;^UTILITY(U,$J,358.3,33361,0)
+ ;;=L85.0^^131^1669^8
+ ;;^UTILITY(U,$J,358.3,33361,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34466,1,3,0)
- ;;=3^Disp distal phalanx fx of right lesser toe,sequela
- ;;^UTILITY(U,$J,358.3,34466,1,4,0)
- ;;=4^S92.531S
- ;;^UTILITY(U,$J,358.3,34466,2)
- ;;=^5045521
- ;;^UTILITY(U,$J,358.3,34467,0)
- ;;=S92.522S^^183^2020^40
- ;;^UTILITY(U,$J,358.3,34467,1,0)
+ ;;^UTILITY(U,$J,358.3,33361,1,3,0)
+ ;;=3^Acquired Ichthyosis
+ ;;^UTILITY(U,$J,358.3,33361,1,4,0)
+ ;;=4^L85.0
+ ;;^UTILITY(U,$J,358.3,33361,2)
+ ;;=^5009320
+ ;;^UTILITY(U,$J,358.3,33362,0)
+ ;;=L85.1^^131^1669^10
+ ;;^UTILITY(U,$J,358.3,33362,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34467,1,3,0)
- ;;=3^Disp medial cuneiform fx of left lesser toe(s),sequela
- ;;^UTILITY(U,$J,358.3,34467,1,4,0)
- ;;=4^S92.522S
- ;;^UTILITY(U,$J,358.3,34467,2)
- ;;=^5045486
- ;;^UTILITY(U,$J,358.3,34468,0)
- ;;=S92.521S^^183^2020^43
- ;;^UTILITY(U,$J,358.3,34468,1,0)
+ ;;^UTILITY(U,$J,358.3,33362,1,3,0)
+ ;;=3^Acquired Keratosis Palmaris et Plantaris
+ ;;^UTILITY(U,$J,358.3,33362,1,4,0)
+ ;;=4^L85.1
+ ;;^UTILITY(U,$J,358.3,33362,2)
+ ;;=^5009321
+ ;;^UTILITY(U,$J,358.3,33363,0)
+ ;;=L85.2^^131^1669^166
+ ;;^UTILITY(U,$J,358.3,33363,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34468,1,3,0)
- ;;=3^Disp medial phalanx fx of right lesser toe(s), sequela
- ;;^UTILITY(U,$J,358.3,34468,1,4,0)
- ;;=4^S92.521S
- ;;^UTILITY(U,$J,358.3,34468,2)
- ;;=^5045479
- ;;^UTILITY(U,$J,358.3,34469,0)
- ;;=S92.412S^^183^2020^50
- ;;^UTILITY(U,$J,358.3,34469,1,0)
+ ;;^UTILITY(U,$J,358.3,33363,1,3,0)
+ ;;=3^Keratosis Punctata
+ ;;^UTILITY(U,$J,358.3,33363,1,4,0)
+ ;;=4^L85.2
+ ;;^UTILITY(U,$J,358.3,33363,2)
+ ;;=^5009322
+ ;;^UTILITY(U,$J,358.3,33364,0)
+ ;;=L85.3^^131^1669^289
+ ;;^UTILITY(U,$J,358.3,33364,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34469,1,3,0)
- ;;=3^Disp proximal phalanx fx of left great toe, sequela
- ;;^UTILITY(U,$J,358.3,34469,1,4,0)
- ;;=4^S92.412S
- ;;^UTILITY(U,$J,358.3,34469,2)
- ;;=^5045311
- ;;^UTILITY(U,$J,358.3,34470,0)
- ;;=S92.512S^^183^2020^51
- ;;^UTILITY(U,$J,358.3,34470,1,0)
+ ;;^UTILITY(U,$J,358.3,33364,1,3,0)
+ ;;=3^Xerosis Cutis
+ ;;^UTILITY(U,$J,358.3,33364,1,4,0)
+ ;;=4^L85.3
+ ;;^UTILITY(U,$J,358.3,33364,2)
+ ;;=^5009323
+ ;;^UTILITY(U,$J,358.3,33365,0)
+ ;;=L86.^^131^1669^164
+ ;;^UTILITY(U,$J,358.3,33365,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34470,1,3,0)
- ;;=3^Disp proximal phalanx fx of left lesser toe(s), sequela
- ;;^UTILITY(U,$J,358.3,34470,1,4,0)
- ;;=4^S92.512S
- ;;^UTILITY(U,$J,358.3,34470,2)
- ;;=s92411s^5045444
- ;;^UTILITY(U,$J,358.3,34471,0)
- ;;=S92.411S^^183^2020^52
- ;;^UTILITY(U,$J,358.3,34471,1,0)
+ ;;^UTILITY(U,$J,358.3,33365,1,3,0)
+ ;;=3^Keratoderma in Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,33365,1,4,0)
+ ;;=4^L86.
+ ;;^UTILITY(U,$J,358.3,33365,2)
+ ;;=^5009326
+ ;;^UTILITY(U,$J,358.3,33366,0)
+ ;;=L87.0^^131^1669^165
+ ;;^UTILITY(U,$J,358.3,33366,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33366,1,3,0)
+ ;;=3^Keratosis Follicularis et Parafollicularis in Cutem Penetrans
+ ;;^UTILITY(U,$J,358.3,33366,1,4,0)
+ ;;=4^L87.0
+ ;;^UTILITY(U,$J,358.3,33366,2)
+ ;;=^5009327
+ ;;^UTILITY(U,$J,358.3,33367,0)
+ ;;=L87.2^^131^1669^141
+ ;;^UTILITY(U,$J,358.3,33367,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33367,1,3,0)
+ ;;=3^Elastosis Perforans Serpiginosa
+ ;;^UTILITY(U,$J,358.3,33367,1,4,0)
+ ;;=4^L87.2
+ ;;^UTILITY(U,$J,358.3,33367,2)
+ ;;=^5009329
+ ;;^UTILITY(U,$J,358.3,33368,0)
+ ;;=L89.300^^131^1669^242
+ ;;^UTILITY(U,$J,358.3,33368,1,0)
  ;;=^358.31IA^4^2

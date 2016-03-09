@@ -1,124 +1,130 @@
-IBDEI1ZJ ; ; 06-AUG-2015
+IBDEI1ZJ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34771,1,4,0)
- ;;=4^S42.452S
- ;;^UTILITY(U,$J,358.3,34771,2)
- ;;=^5027503
- ;;^UTILITY(U,$J,358.3,34772,0)
- ;;=S42.451S^^183^2023^25
- ;;^UTILITY(U,$J,358.3,34772,1,0)
+ ;;^UTILITY(U,$J,358.3,33685,0)
+ ;;=A59.03^^131^1676^96
+ ;;^UTILITY(U,$J,358.3,33685,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34772,1,3,0)
- ;;=3^Disp fx of lateral condyle of right humerus, sequela
- ;;^UTILITY(U,$J,358.3,34772,1,4,0)
- ;;=4^S42.451S
- ;;^UTILITY(U,$J,358.3,34772,2)
- ;;=^5027496
- ;;^UTILITY(U,$J,358.3,34773,0)
- ;;=S42.262S^^183^2023^30
- ;;^UTILITY(U,$J,358.3,34773,1,0)
+ ;;^UTILITY(U,$J,358.3,33685,1,3,0)
+ ;;=3^Trichomonal Cystitis & Urethritis
+ ;;^UTILITY(U,$J,358.3,33685,1,4,0)
+ ;;=4^A59.03
+ ;;^UTILITY(U,$J,358.3,33685,2)
+ ;;=^5000349
+ ;;^UTILITY(U,$J,358.3,33686,0)
+ ;;=E87.6^^131^1676^57
+ ;;^UTILITY(U,$J,358.3,33686,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34773,1,3,0)
- ;;=3^Disp fx of lesser tuberosity of left humerus, sequela
- ;;^UTILITY(U,$J,358.3,34773,1,4,0)
- ;;=4^S42.262S
- ;;^UTILITY(U,$J,358.3,34773,2)
- ;;=^5026942
- ;;^UTILITY(U,$J,358.3,34774,0)
- ;;=S42.261S^^183^2023^31
- ;;^UTILITY(U,$J,358.3,34774,1,0)
+ ;;^UTILITY(U,$J,358.3,33686,1,3,0)
+ ;;=3^Hypokalemia
+ ;;^UTILITY(U,$J,358.3,33686,1,4,0)
+ ;;=4^E87.6
+ ;;^UTILITY(U,$J,358.3,33686,2)
+ ;;=^60610
+ ;;^UTILITY(U,$J,358.3,33687,0)
+ ;;=F52.0^^131^1676^56
+ ;;^UTILITY(U,$J,358.3,33687,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34774,1,3,0)
- ;;=3^Disp fx of lesser tuberosity of right humerus, sequela
- ;;^UTILITY(U,$J,358.3,34774,1,4,0)
- ;;=4^S42.261S
- ;;^UTILITY(U,$J,358.3,34774,2)
- ;;=^5026935
- ;;^UTILITY(U,$J,358.3,34775,0)
- ;;=S42.462S^^183^2023^32
- ;;^UTILITY(U,$J,358.3,34775,1,0)
+ ;;^UTILITY(U,$J,358.3,33687,1,3,0)
+ ;;=3^Hypoactive Sexual Desire Disorder
+ ;;^UTILITY(U,$J,358.3,33687,1,4,0)
+ ;;=4^F52.0
+ ;;^UTILITY(U,$J,358.3,33687,2)
+ ;;=^5003618
+ ;;^UTILITY(U,$J,358.3,33688,0)
+ ;;=F52.22^^131^1676^93
+ ;;^UTILITY(U,$J,358.3,33688,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34775,1,3,0)
- ;;=3^Disp fx of medial condyle of left humerus, sequela
- ;;^UTILITY(U,$J,358.3,34775,1,4,0)
- ;;=4^S42.462S
- ;;^UTILITY(U,$J,358.3,34775,2)
- ;;=^5027545
- ;;^UTILITY(U,$J,358.3,34776,0)
- ;;=S42.461S^^183^2023^33
- ;;^UTILITY(U,$J,358.3,34776,1,0)
+ ;;^UTILITY(U,$J,358.3,33688,1,3,0)
+ ;;=3^Sexual Arousal Disorder,Female
+ ;;^UTILITY(U,$J,358.3,33688,1,4,0)
+ ;;=4^F52.22
+ ;;^UTILITY(U,$J,358.3,33688,2)
+ ;;=^5003621
+ ;;^UTILITY(U,$J,358.3,33689,0)
+ ;;=F52.8^^131^1676^94
+ ;;^UTILITY(U,$J,358.3,33689,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34776,1,3,0)
- ;;=3^Disp fx of medial condyle of right humerus, sequela
- ;;^UTILITY(U,$J,358.3,34776,1,4,0)
- ;;=4^S42.461S
- ;;^UTILITY(U,$J,358.3,34776,2)
- ;;=^5027538
- ;;^UTILITY(U,$J,358.3,34777,0)
- ;;=S42.332S^^183^2023^38
- ;;^UTILITY(U,$J,358.3,34777,1,0)
+ ;;^UTILITY(U,$J,358.3,33689,1,3,0)
+ ;;=3^Sexual Dysfnct Not d/t Substance/Known Physiological Cond
+ ;;^UTILITY(U,$J,358.3,33689,1,4,0)
+ ;;=4^F52.8
+ ;;^UTILITY(U,$J,358.3,33689,2)
+ ;;=^5003624
+ ;;^UTILITY(U,$J,358.3,33690,0)
+ ;;=F52.21^^131^1676^33
+ ;;^UTILITY(U,$J,358.3,33690,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34777,1,3,0)
- ;;=3^Disp fx of oblique shaft of humerus, left arm, sequela  
- ;;^UTILITY(U,$J,358.3,34777,1,4,0)
- ;;=4^S42.332S
- ;;^UTILITY(U,$J,358.3,34777,2)
- ;;=^5027118
- ;;^UTILITY(U,$J,358.3,34778,0)
- ;;=S42.331S^^183^2023^40
- ;;^UTILITY(U,$J,358.3,34778,1,0)
+ ;;^UTILITY(U,$J,358.3,33690,1,3,0)
+ ;;=3^Erectile Disorder,Male (Psychogenic)
+ ;;^UTILITY(U,$J,358.3,33690,1,4,0)
+ ;;=4^F52.21
+ ;;^UTILITY(U,$J,358.3,33690,2)
+ ;;=^5003620
+ ;;^UTILITY(U,$J,358.3,33691,0)
+ ;;=I12.9^^131^1676^55
+ ;;^UTILITY(U,$J,358.3,33691,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34778,1,3,0)
- ;;=3^Disp fx of oblique shaft of humerus, right arm, sequela 
- ;;^UTILITY(U,$J,358.3,34778,1,4,0)
- ;;=4^S42.331S
- ;;^UTILITY(U,$J,358.3,34778,2)
- ;;=^5027111
- ;;^UTILITY(U,$J,358.3,34779,0)
- ;;=S42.362S^^183^2023^41
- ;;^UTILITY(U,$J,358.3,34779,1,0)
+ ;;^UTILITY(U,$J,358.3,33691,1,3,0)
+ ;;=3^Hypertensive Kidney Disease Chronic w/ Stg 1-4
+ ;;^UTILITY(U,$J,358.3,33691,1,4,0)
+ ;;=4^I12.9
+ ;;^UTILITY(U,$J,358.3,33691,2)
+ ;;=^5007066
+ ;;^UTILITY(U,$J,358.3,33692,0)
+ ;;=N04.9^^131^1676^69
+ ;;^UTILITY(U,$J,358.3,33692,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34779,1,3,0)
- ;;=3^Disp fx of segmental shaft of humerus, left arm, sequela
- ;;^UTILITY(U,$J,358.3,34779,1,4,0)
- ;;=4^S42.362S
- ;;^UTILITY(U,$J,358.3,34779,2)
- ;;=^5027244
- ;;^UTILITY(U,$J,358.3,34780,0)
- ;;=S42.361S^^183^2023^42
- ;;^UTILITY(U,$J,358.3,34780,1,0)
+ ;;^UTILITY(U,$J,358.3,33692,1,3,0)
+ ;;=3^Nephrotic Syndrome w/ Unspec Morphologic Changes
+ ;;^UTILITY(U,$J,358.3,33692,1,4,0)
+ ;;=4^N04.9
+ ;;^UTILITY(U,$J,358.3,33692,2)
+ ;;=^5015540
+ ;;^UTILITY(U,$J,358.3,33693,0)
+ ;;=N02.9^^131^1676^50
+ ;;^UTILITY(U,$J,358.3,33693,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34780,1,3,0)
- ;;=3^Disp fx of segmental shaft of humerus, right arm, sequela 
- ;;^UTILITY(U,$J,358.3,34780,1,4,0)
- ;;=4^S42.361S
- ;;^UTILITY(U,$J,358.3,34780,2)
- ;;=^5027237
- ;;^UTILITY(U,$J,358.3,34781,0)
- ;;=S42.412S^^183^2023^45
- ;;^UTILITY(U,$J,358.3,34781,1,0)
+ ;;^UTILITY(U,$J,358.3,33693,1,3,0)
+ ;;=3^Hematuria w/ Unspec Morphologic Changes,Recurrent & Persistent
+ ;;^UTILITY(U,$J,358.3,33693,1,4,0)
+ ;;=4^N02.9
+ ;;^UTILITY(U,$J,358.3,33693,2)
+ ;;=^5015520
+ ;;^UTILITY(U,$J,358.3,33694,0)
+ ;;=N06.9^^131^1676^86
+ ;;^UTILITY(U,$J,358.3,33694,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34781,1,3,0)
- ;;=3^Disp fx of simple suprcndl w/o intrcndl fx l humerus, sequela
- ;;^UTILITY(U,$J,358.3,34781,1,4,0)
- ;;=4^S42.412S
- ;;^UTILITY(U,$J,358.3,34781,2)
- ;;=^5027314
- ;;^UTILITY(U,$J,358.3,34782,0)
- ;;=S42.411S^^183^2023^46
- ;;^UTILITY(U,$J,358.3,34782,1,0)
+ ;;^UTILITY(U,$J,358.3,33694,1,3,0)
+ ;;=3^Proteinuria Isolated w/ Unspec Morphologic Lesion
+ ;;^UTILITY(U,$J,358.3,33694,1,4,0)
+ ;;=4^N06.9
+ ;;^UTILITY(U,$J,358.3,33694,2)
+ ;;=^5015558
+ ;;^UTILITY(U,$J,358.3,33695,0)
+ ;;=N05.9^^131^1676^66
+ ;;^UTILITY(U,$J,358.3,33695,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34782,1,3,0)
- ;;=3^Disp fx of simple suprcndl w/o intrcndl fx r humerus, sequela
- ;;^UTILITY(U,$J,358.3,34782,1,4,0)
- ;;=4^S42.411S
- ;;^UTILITY(U,$J,358.3,34782,2)
- ;;=^5027307
- ;;^UTILITY(U,$J,358.3,34783,0)
- ;;=S42.342S^^183^2023^47
- ;;^UTILITY(U,$J,358.3,34783,1,0)
+ ;;^UTILITY(U,$J,358.3,33695,1,3,0)
+ ;;=3^Nephritic Syndrome w/ Unspec Morphologic Changes
+ ;;^UTILITY(U,$J,358.3,33695,1,4,0)
+ ;;=4^N05.9
+ ;;^UTILITY(U,$J,358.3,33695,2)
+ ;;=^5134086
+ ;;^UTILITY(U,$J,358.3,33696,0)
+ ;;=N07.9^^131^1676^68
+ ;;^UTILITY(U,$J,358.3,33696,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34783,1,3,0)
- ;;=3^Disp fx of spiral shaft of humerus, left arm, sequela 
+ ;;^UTILITY(U,$J,358.3,33696,1,3,0)
+ ;;=3^Nephropathy Hereditary w/ Unspec Morphologic Lesions
+ ;;^UTILITY(U,$J,358.3,33696,1,4,0)
+ ;;=4^N07.9
+ ;;^UTILITY(U,$J,358.3,33696,2)
+ ;;=^5015568
+ ;;^UTILITY(U,$J,358.3,33697,0)
+ ;;=N15.9^^131^1676^92
+ ;;^UTILITY(U,$J,358.3,33697,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33697,1,3,0)
+ ;;=3^Renal Tubulo-Interstitial Disease,Unspec

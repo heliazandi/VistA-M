@@ -1,120 +1,124 @@
-IBDEI1Y0 ; ; 06-AUG-2015
+IBDEI1Y0 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34109,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34109,1,3,0)
- ;;=3^Rheu arthrit w rheu factor of left ank/ft w/o org/sys involv
- ;;^UTILITY(U,$J,358.3,34109,1,4,0)
- ;;=4^M05.772
- ;;^UTILITY(U,$J,358.3,34109,2)
- ;;=^5010020
- ;;^UTILITY(U,$J,358.3,34110,0)
- ;;=M05.742^^183^2016^69
- ;;^UTILITY(U,$J,358.3,34110,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34110,1,3,0)
- ;;=3^Rheu arthrit w rheu factor of left hand w/o org/sys involv
- ;;^UTILITY(U,$J,358.3,34110,1,4,0)
- ;;=4^M05.742
- ;;^UTILITY(U,$J,358.3,34110,2)
- ;;=^5010011
- ;;^UTILITY(U,$J,358.3,34111,0)
- ;;=M05.762^^183^2016^70
- ;;^UTILITY(U,$J,358.3,34111,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34111,1,3,0)
- ;;=3^Rheu arthrit w rheu factor of left knee w/o org/sys involv
- ;;^UTILITY(U,$J,358.3,34111,1,4,0)
- ;;=4^M05.762
- ;;^UTILITY(U,$J,358.3,34111,2)
- ;;=^5010017
- ;;^UTILITY(U,$J,358.3,34112,0)
- ;;=M05.712^^183^2016^71
- ;;^UTILITY(U,$J,358.3,34112,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34112,1,3,0)
- ;;=3^Rheu arthrit w rheu factor of left shoulder w/o org/sys involv
- ;;^UTILITY(U,$J,358.3,34112,1,4,0)
- ;;=4^M05.712
- ;;^UTILITY(U,$J,358.3,34112,2)
- ;;=^5010002
- ;;^UTILITY(U,$J,358.3,34113,0)
- ;;=M05.732^^183^2016^72
- ;;^UTILITY(U,$J,358.3,34113,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34113,1,3,0)
- ;;=3^Rheu arthrit w rheu factor of left wrist w/o org/sys involv
- ;;^UTILITY(U,$J,358.3,34113,1,4,0)
- ;;=4^M05.732
- ;;^UTILITY(U,$J,358.3,34113,2)
- ;;=^5010008
- ;;^UTILITY(U,$J,358.3,34114,0)
- ;;=M05.771^^183^2016^73
- ;;^UTILITY(U,$J,358.3,34114,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34114,1,3,0)
- ;;=3^Rheu arthrit w rheu factor of right ank/ft w/o org/sys involv
- ;;^UTILITY(U,$J,358.3,34114,1,4,0)
- ;;=4^M05.771
- ;;^UTILITY(U,$J,358.3,34114,2)
- ;;=^5010019
- ;;^UTILITY(U,$J,358.3,34115,0)
- ;;=M05.721^^183^2016^74
- ;;^UTILITY(U,$J,358.3,34115,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34115,1,3,0)
- ;;=3^Rheu arthrit w rheu factor of right elbow w/o org/sys involv
- ;;^UTILITY(U,$J,358.3,34115,1,4,0)
- ;;=4^M05.721
- ;;^UTILITY(U,$J,358.3,34115,2)
- ;;=^5010004
- ;;^UTILITY(U,$J,358.3,34116,0)
- ;;=M05.741^^183^2016^75
- ;;^UTILITY(U,$J,358.3,34116,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34116,1,3,0)
- ;;=3^Rheu arthrit w rheu factor of right hand w/o org/sys involv
- ;;^UTILITY(U,$J,358.3,34116,1,4,0)
- ;;=4^M05.741
- ;;^UTILITY(U,$J,358.3,34116,2)
- ;;=^5010010
- ;;^UTILITY(U,$J,358.3,34117,0)
- ;;=M05.751^^183^2016^76
- ;;^UTILITY(U,$J,358.3,34117,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34117,1,3,0)
- ;;=3^Rheu arthrit w rheu factor of right hip w/o org/sys involv
- ;;^UTILITY(U,$J,358.3,34117,1,4,0)
- ;;=4^M05.751
- ;;^UTILITY(U,$J,358.3,34117,2)
- ;;=^5010013
- ;;^UTILITY(U,$J,358.3,34118,0)
- ;;=M05.761^^183^2016^77
- ;;^UTILITY(U,$J,358.3,34118,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34118,1,3,0)
- ;;=3^Rheu arthrit w rheu factor of right knee w/o org/sys involv
- ;;^UTILITY(U,$J,358.3,34118,1,4,0)
- ;;=4^M05.761
- ;;^UTILITY(U,$J,358.3,34118,2)
- ;;=^5010016
- ;;^UTILITY(U,$J,358.3,34119,0)
- ;;=M05.711^^183^2016^78
- ;;^UTILITY(U,$J,358.3,34119,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34119,1,3,0)
- ;;=3^Rheu arthrit w rheu factor of right shoulder w/o org/sys involv
- ;;^UTILITY(U,$J,358.3,34119,1,4,0)
- ;;=4^M05.711
- ;;^UTILITY(U,$J,358.3,34119,2)
- ;;=^5010001
- ;;^UTILITY(U,$J,358.3,34120,0)
- ;;=M05.731^^183^2016^79
- ;;^UTILITY(U,$J,358.3,34120,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34120,1,3,0)
- ;;=3^Rheu arthrit w rheu factor of right wrist w/o org/sys involv
- ;;^UTILITY(U,$J,358.3,34120,1,4,0)
- ;;=4^M05.731
+ ;;^UTILITY(U,$J,358.3,32966,1,2,0)
+ ;;=2^12002
+ ;;^UTILITY(U,$J,358.3,32966,1,3,0)
+ ;;=3^Suture Simple Wound,Trunk/Ext 2.6-7.5 cm
+ ;;^UTILITY(U,$J,358.3,32967,0)
+ ;;=11042^^130^1650^12^^^^1
+ ;;^UTILITY(U,$J,358.3,32967,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32967,1,2,0)
+ ;;=2^11042
+ ;;^UTILITY(U,$J,358.3,32967,1,3,0)
+ ;;=3^Debridement, Skin & Subcu. Tissue,1st 20sq cm
+ ;;^UTILITY(U,$J,358.3,32968,0)
+ ;;=20550^^130^1650^21^^^^1
+ ;;^UTILITY(U,$J,358.3,32968,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32968,1,2,0)
+ ;;=2^20550
+ ;;^UTILITY(U,$J,358.3,32968,1,3,0)
+ ;;=3^Injection, Tendon Sheath, Ligament, Ganglion Cyst
+ ;;^UTILITY(U,$J,358.3,32969,0)
+ ;;=20551^^130^1650^20^^^^1
+ ;;^UTILITY(U,$J,358.3,32969,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32969,1,2,0)
+ ;;=2^20551
+ ;;^UTILITY(U,$J,358.3,32969,1,3,0)
+ ;;=3^Injection, Tendon Origin/Insertion
+ ;;^UTILITY(U,$J,358.3,32970,0)
+ ;;=20552^^130^1650^22^^^^1
+ ;;^UTILITY(U,$J,358.3,32970,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32970,1,2,0)
+ ;;=2^20552
+ ;;^UTILITY(U,$J,358.3,32970,1,3,0)
+ ;;=3^Injection, Trigger Point, 1 or 2 Muscle groups
+ ;;^UTILITY(U,$J,358.3,32971,0)
+ ;;=20600^^130^1650^6^^^^1
+ ;;^UTILITY(U,$J,358.3,32971,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32971,1,2,0)
+ ;;=2^20600
+ ;;^UTILITY(U,$J,358.3,32971,1,3,0)
+ ;;=3^Arthrocentesis,Small Jt w/o US Guidance
+ ;;^UTILITY(U,$J,358.3,32972,0)
+ ;;=20605^^130^1650^2^^^^1
+ ;;^UTILITY(U,$J,358.3,32972,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32972,1,2,0)
+ ;;=2^20605
+ ;;^UTILITY(U,$J,358.3,32972,1,3,0)
+ ;;=3^Arthrocentesis,Intermediate Jt w/o US Guidance
+ ;;^UTILITY(U,$J,358.3,32973,0)
+ ;;=20610^^130^1650^4^^^^1
+ ;;^UTILITY(U,$J,358.3,32973,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32973,1,2,0)
+ ;;=2^20610
+ ;;^UTILITY(U,$J,358.3,32973,1,3,0)
+ ;;=3^Arthrocentesis,Major Jt w/o US Guidance
+ ;;^UTILITY(U,$J,358.3,32974,0)
+ ;;=92950^^130^1650^9^^^^1
+ ;;^UTILITY(U,$J,358.3,32974,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32974,1,2,0)
+ ;;=2^92950
+ ;;^UTILITY(U,$J,358.3,32974,1,3,0)
+ ;;=3^CPR
+ ;;^UTILITY(U,$J,358.3,32975,0)
+ ;;=11055^^130^1650^35^^^^1
+ ;;^UTILITY(U,$J,358.3,32975,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32975,1,2,0)
+ ;;=2^11055
+ ;;^UTILITY(U,$J,358.3,32975,1,3,0)
+ ;;=3^Trim Corn/Callous, One
+ ;;^UTILITY(U,$J,358.3,32976,0)
+ ;;=11056^^130^1650^33^^^^1
+ ;;^UTILITY(U,$J,358.3,32976,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32976,1,2,0)
+ ;;=2^11056
+ ;;^UTILITY(U,$J,358.3,32976,1,3,0)
+ ;;=3^Trim Corn/Callous, 2 to 4
+ ;;^UTILITY(U,$J,358.3,32977,0)
+ ;;=11057^^130^1650^34^^^^1
+ ;;^UTILITY(U,$J,358.3,32977,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32977,1,2,0)
+ ;;=2^11057
+ ;;^UTILITY(U,$J,358.3,32977,1,3,0)
+ ;;=3^Trim Corn/Callous, 5 or more
+ ;;^UTILITY(U,$J,358.3,32978,0)
+ ;;=12011^^130^1650^29^^^^1
+ ;;^UTILITY(U,$J,358.3,32978,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32978,1,2,0)
+ ;;=2^12011
+ ;;^UTILITY(U,$J,358.3,32978,1,3,0)
+ ;;=3^Suture Simple Wound,Face,2.5 cm or <
+ ;;^UTILITY(U,$J,358.3,32979,0)
+ ;;=97597^^130^1650^10^^^^1
+ ;;^UTILITY(U,$J,358.3,32979,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32979,1,2,0)
+ ;;=2^97597
+ ;;^UTILITY(U,$J,358.3,32979,1,3,0)
+ ;;=3^Debridement open wnd 1st 20sq cm
+ ;;^UTILITY(U,$J,358.3,32980,0)
+ ;;=97598^^130^1650^11^^^^1
+ ;;^UTILITY(U,$J,358.3,32980,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,32980,1,2,0)
+ ;;=2^97598
+ ;;^UTILITY(U,$J,358.3,32980,1,3,0)
+ ;;=3^Debridement open wnd ea addl 20sq cm
+ ;;^UTILITY(U,$J,358.3,32981,0)
+ ;;=11200^^130^1650^26^^^^1
+ ;;^UTILITY(U,$J,358.3,32981,1,0)
+ ;;=^358.31IA^3^2

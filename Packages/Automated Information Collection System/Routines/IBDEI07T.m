@@ -1,142 +1,138 @@
-IBDEI07T ; ; 06-AUG-2015
+IBDEI07T ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3156,1,4,0)
- ;;=4^R41.83
- ;;^UTILITY(U,$J,358.3,3156,2)
- ;;=^5019442
- ;;^UTILITY(U,$J,358.3,3157,0)
- ;;=F90.0^^8^100^3
- ;;^UTILITY(U,$J,358.3,3157,1,0)
+ ;;^UTILITY(U,$J,358.3,3352,2)
+ ;;=^5012096
+ ;;^UTILITY(U,$J,358.3,3353,0)
+ ;;=M45.9^^18^219^7
+ ;;^UTILITY(U,$J,358.3,3353,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3157,1,3,0)
- ;;=3^ADHD,Inattentive Type
- ;;^UTILITY(U,$J,358.3,3157,1,4,0)
- ;;=4^F90.0
- ;;^UTILITY(U,$J,358.3,3157,2)
- ;;=^5003692
- ;;^UTILITY(U,$J,358.3,3158,0)
- ;;=F90.2^^8^100^1
- ;;^UTILITY(U,$J,358.3,3158,1,0)
+ ;;^UTILITY(U,$J,358.3,3353,1,3,0)
+ ;;=3^Ankylosing Spondylitis,Spine,Unspec Site
+ ;;^UTILITY(U,$J,358.3,3353,1,4,0)
+ ;;=4^M45.9
+ ;;^UTILITY(U,$J,358.3,3353,2)
+ ;;=^5011969
+ ;;^UTILITY(U,$J,358.3,3354,0)
+ ;;=M13.0^^18^219^11
+ ;;^UTILITY(U,$J,358.3,3354,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3158,1,3,0)
- ;;=3^ADHD,Combined Type
- ;;^UTILITY(U,$J,358.3,3158,1,4,0)
- ;;=4^F90.2
- ;;^UTILITY(U,$J,358.3,3158,2)
- ;;=^5003694
- ;;^UTILITY(U,$J,358.3,3159,0)
- ;;=F90.1^^8^100^2
- ;;^UTILITY(U,$J,358.3,3159,1,0)
+ ;;^UTILITY(U,$J,358.3,3354,1,3,0)
+ ;;=3^Arthritis,Polyarthritis,Unspec
+ ;;^UTILITY(U,$J,358.3,3354,1,4,0)
+ ;;=4^M13.0
+ ;;^UTILITY(U,$J,358.3,3354,2)
+ ;;=^5010667
+ ;;^UTILITY(U,$J,358.3,3355,0)
+ ;;=M15.9^^18^219^12
+ ;;^UTILITY(U,$J,358.3,3355,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3159,1,3,0)
- ;;=3^ADHD,Hyperactive/Impulsive Type
- ;;^UTILITY(U,$J,358.3,3159,1,4,0)
- ;;=4^F90.1
- ;;^UTILITY(U,$J,358.3,3159,2)
- ;;=^5003693
- ;;^UTILITY(U,$J,358.3,3160,0)
- ;;=Z70.9^^8^101^2
- ;;^UTILITY(U,$J,358.3,3160,1,0)
+ ;;^UTILITY(U,$J,358.3,3355,1,3,0)
+ ;;=3^Arthritis,Polyosteoarthritis,Unspec
+ ;;^UTILITY(U,$J,358.3,3355,1,4,0)
+ ;;=4^M15.9
+ ;;^UTILITY(U,$J,358.3,3355,2)
+ ;;=^5010768
+ ;;^UTILITY(U,$J,358.3,3356,0)
+ ;;=M15.4^^18^219^8
+ ;;^UTILITY(U,$J,358.3,3356,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3160,1,3,0)
- ;;=3^Sex Counseling
- ;;^UTILITY(U,$J,358.3,3160,1,4,0)
- ;;=4^Z70.9
- ;;^UTILITY(U,$J,358.3,3160,2)
- ;;=^5063241
- ;;^UTILITY(U,$J,358.3,3161,0)
- ;;=Z71.9^^8^101^1
- ;;^UTILITY(U,$J,358.3,3161,1,0)
+ ;;^UTILITY(U,$J,358.3,3356,1,3,0)
+ ;;=3^Arthritis (Osteo),Erosive
+ ;;^UTILITY(U,$J,358.3,3356,1,4,0)
+ ;;=4^M15.4
+ ;;^UTILITY(U,$J,358.3,3356,2)
+ ;;=^5010766
+ ;;^UTILITY(U,$J,358.3,3357,0)
+ ;;=M15.0^^18^219^9
+ ;;^UTILITY(U,$J,358.3,3357,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3161,1,3,0)
- ;;=3^Counseling/Consultation NEC
- ;;^UTILITY(U,$J,358.3,3161,1,4,0)
- ;;=4^Z71.9
- ;;^UTILITY(U,$J,358.3,3161,2)
- ;;=^5063254
- ;;^UTILITY(U,$J,358.3,3162,0)
- ;;=Z60.0^^8^102^2
- ;;^UTILITY(U,$J,358.3,3162,1,0)
+ ;;^UTILITY(U,$J,358.3,3357,1,3,0)
+ ;;=3^Arthritis (Osteo),Primary Generalized
+ ;;^UTILITY(U,$J,358.3,3357,1,4,0)
+ ;;=4^M15.0
+ ;;^UTILITY(U,$J,358.3,3357,2)
+ ;;=^5010762
+ ;;^UTILITY(U,$J,358.3,3358,0)
+ ;;=M13.10^^18^219^10
+ ;;^UTILITY(U,$J,358.3,3358,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3162,1,3,0)
- ;;=3^Phase of Life Problem
- ;;^UTILITY(U,$J,358.3,3162,1,4,0)
- ;;=4^Z60.0
- ;;^UTILITY(U,$J,358.3,3162,2)
- ;;=^5063139
- ;;^UTILITY(U,$J,358.3,3163,0)
- ;;=Z60.2^^8^102^3
- ;;^UTILITY(U,$J,358.3,3163,1,0)
+ ;;^UTILITY(U,$J,358.3,3358,1,3,0)
+ ;;=3^Arthritis,Monoarthritis,Unspec Site NEC
+ ;;^UTILITY(U,$J,358.3,3358,1,4,0)
+ ;;=4^M13.10
+ ;;^UTILITY(U,$J,358.3,3358,2)
+ ;;=^5010668
+ ;;^UTILITY(U,$J,358.3,3359,0)
+ ;;=M15.3^^18^219^13
+ ;;^UTILITY(U,$J,358.3,3359,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3163,1,3,0)
- ;;=3^Problem Related to Living Alone
- ;;^UTILITY(U,$J,358.3,3163,1,4,0)
- ;;=4^Z60.2
- ;;^UTILITY(U,$J,358.3,3163,2)
- ;;=^5063140
- ;;^UTILITY(U,$J,358.3,3164,0)
- ;;=Z60.3^^8^102^1
- ;;^UTILITY(U,$J,358.3,3164,1,0)
+ ;;^UTILITY(U,$J,358.3,3359,1,3,0)
+ ;;=3^Arthritis,Secondary Multiple
+ ;;^UTILITY(U,$J,358.3,3359,1,4,0)
+ ;;=4^M15.3
+ ;;^UTILITY(U,$J,358.3,3359,2)
+ ;;=^5010765
+ ;;^UTILITY(U,$J,358.3,3360,0)
+ ;;=M11.9^^18^219^14
+ ;;^UTILITY(U,$J,358.3,3360,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3164,1,3,0)
- ;;=3^Acculturation Difficulty
- ;;^UTILITY(U,$J,358.3,3164,1,4,0)
- ;;=4^Z60.3
- ;;^UTILITY(U,$J,358.3,3164,2)
- ;;=^5063141
- ;;^UTILITY(U,$J,358.3,3165,0)
- ;;=Z60.4^^8^102^5
- ;;^UTILITY(U,$J,358.3,3165,1,0)
+ ;;^UTILITY(U,$J,358.3,3360,1,3,0)
+ ;;=3^Arthropathy,Crystal,Unspec
+ ;;^UTILITY(U,$J,358.3,3360,1,4,0)
+ ;;=4^M11.9
+ ;;^UTILITY(U,$J,358.3,3360,2)
+ ;;=^5010497
+ ;;^UTILITY(U,$J,358.3,3361,0)
+ ;;=M12.9^^18^219^15
+ ;;^UTILITY(U,$J,358.3,3361,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3165,1,3,0)
- ;;=3^Social Exclusion or Rejection
- ;;^UTILITY(U,$J,358.3,3165,1,4,0)
- ;;=4^Z60.4
- ;;^UTILITY(U,$J,358.3,3165,2)
- ;;=^5063142
- ;;^UTILITY(U,$J,358.3,3166,0)
- ;;=Z60.5^^8^102^6
- ;;^UTILITY(U,$J,358.3,3166,1,0)
+ ;;^UTILITY(U,$J,358.3,3361,1,3,0)
+ ;;=3^Arthropathy,Unspec
+ ;;^UTILITY(U,$J,358.3,3361,1,4,0)
+ ;;=4^M12.9
+ ;;^UTILITY(U,$J,358.3,3361,2)
+ ;;=^5010666
+ ;;^UTILITY(U,$J,358.3,3362,0)
+ ;;=Z97.10^^18^219^16
+ ;;^UTILITY(U,$J,358.3,3362,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3166,1,3,0)
- ;;=3^Target of (Perceived) Adverse Discrimination or Persecution
- ;;^UTILITY(U,$J,358.3,3166,1,4,0)
- ;;=4^Z60.5
- ;;^UTILITY(U,$J,358.3,3166,2)
- ;;=^5063143
- ;;^UTILITY(U,$J,358.3,3167,0)
- ;;=Z60.9^^8^102^4
- ;;^UTILITY(U,$J,358.3,3167,1,0)
+ ;;^UTILITY(U,$J,358.3,3362,1,3,0)
+ ;;=3^Artificial Limb,Unspec
+ ;;^UTILITY(U,$J,358.3,3362,1,4,0)
+ ;;=4^Z97.10
+ ;;^UTILITY(U,$J,358.3,3362,2)
+ ;;=^5063721
+ ;;^UTILITY(U,$J,358.3,3363,0)
+ ;;=M99.9^^18^219^17
+ ;;^UTILITY(U,$J,358.3,3363,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3167,1,3,0)
- ;;=3^Problem Related to Social Environment,Unspec
- ;;^UTILITY(U,$J,358.3,3167,1,4,0)
- ;;=4^Z60.9
- ;;^UTILITY(U,$J,358.3,3167,2)
- ;;=^5063145
- ;;^UTILITY(U,$J,358.3,3168,0)
- ;;=F65.4^^8^103^6
- ;;^UTILITY(U,$J,358.3,3168,1,0)
+ ;;^UTILITY(U,$J,358.3,3363,1,3,0)
+ ;;=3^Biomechanical Lesion,Unspec
+ ;;^UTILITY(U,$J,358.3,3363,1,4,0)
+ ;;=4^M99.9
+ ;;^UTILITY(U,$J,358.3,3363,2)
+ ;;=^5015490
+ ;;^UTILITY(U,$J,358.3,3364,0)
+ ;;=M85.9^^18^219^27
+ ;;^UTILITY(U,$J,358.3,3364,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3168,1,3,0)
- ;;=3^Pedophilia Disorder
- ;;^UTILITY(U,$J,358.3,3168,1,4,0)
- ;;=4^F65.4
- ;;^UTILITY(U,$J,358.3,3168,2)
- ;;=^5003655
- ;;^UTILITY(U,$J,358.3,3169,0)
- ;;=F65.2^^8^103^1
- ;;^UTILITY(U,$J,358.3,3169,1,0)
+ ;;^UTILITY(U,$J,358.3,3364,1,3,0)
+ ;;=3^Done Density/Structure Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,3364,1,4,0)
+ ;;=4^M85.9
+ ;;^UTILITY(U,$J,358.3,3364,2)
+ ;;=^5014496
+ ;;^UTILITY(U,$J,358.3,3365,0)
+ ;;=M89.20^^18^219^18
+ ;;^UTILITY(U,$J,358.3,3365,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3169,1,3,0)
- ;;=3^Exhibitionistic Disorder
- ;;^UTILITY(U,$J,358.3,3169,1,4,0)
- ;;=4^F65.2
- ;;^UTILITY(U,$J,358.3,3169,2)
- ;;=^5003653
- ;;^UTILITY(U,$J,358.3,3170,0)
- ;;=F65.3^^8^103^10
- ;;^UTILITY(U,$J,358.3,3170,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3365,1,3,0)
+ ;;=3^Bone Development/Growth Disorder,Unspec Site
+ ;;^UTILITY(U,$J,358.3,3365,1,4,0)
+ ;;=4^M89.20
+ ;;^UTILITY(U,$J,358.3,3365,2)
+ ;;=^5014959
+ ;;^UTILITY(U,$J,358.3,3366,0)
+ ;;=M89.9^^18^219^19

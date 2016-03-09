@@ -1,132 +1,136 @@
-IBDEI1XR ; ; 06-AUG-2015
+IBDEI1XR ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33995,2)
- ;;=^5007111
- ;;^UTILITY(U,$J,358.3,33996,0)
- ;;=I25.110^^183^2014^10
- ;;^UTILITY(U,$J,358.3,33996,1,0)
+ ;;^UTILITY(U,$J,358.3,32834,1,3,0)
+ ;;=3^Family Hx of Glaucoma
+ ;;^UTILITY(U,$J,358.3,32834,1,4,0)
+ ;;=4^Z83.511
+ ;;^UTILITY(U,$J,358.3,32834,2)
+ ;;=^5063382
+ ;;^UTILITY(U,$J,358.3,32835,0)
+ ;;=Z83.518^^128^1636^12
+ ;;^UTILITY(U,$J,358.3,32835,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33996,1,3,0)
- ;;=3^Athscl hrt disease of native cor art w unstable ang pctrs
- ;;^UTILITY(U,$J,358.3,33996,1,4,0)
- ;;=4^I25.110
- ;;^UTILITY(U,$J,358.3,33996,2)
- ;;=^5007108
- ;;^UTILITY(U,$J,358.3,33997,0)
- ;;=I25.10^^183^2014^11
- ;;^UTILITY(U,$J,358.3,33997,1,0)
+ ;;^UTILITY(U,$J,358.3,32835,1,3,0)
+ ;;=3^Family Hx of Eye Disorder
+ ;;^UTILITY(U,$J,358.3,32835,1,4,0)
+ ;;=4^Z83.518
+ ;;^UTILITY(U,$J,358.3,32835,2)
+ ;;=^5063383
+ ;;^UTILITY(U,$J,358.3,32836,0)
+ ;;=Z83.52^^128^1636^9
+ ;;^UTILITY(U,$J,358.3,32836,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33997,1,3,0)
- ;;=3^Athscl hrt disease of native cor art w/o ang pctrs
- ;;^UTILITY(U,$J,358.3,33997,1,4,0)
- ;;=4^I25.10
- ;;^UTILITY(U,$J,358.3,33997,2)
- ;;=^5007107
- ;;^UTILITY(U,$J,358.3,33998,0)
- ;;=I48.0^^183^2014^28
- ;;^UTILITY(U,$J,358.3,33998,1,0)
+ ;;^UTILITY(U,$J,358.3,32836,1,3,0)
+ ;;=3^Family Hx of Ear Disorder
+ ;;^UTILITY(U,$J,358.3,32836,1,4,0)
+ ;;=4^Z83.52
+ ;;^UTILITY(U,$J,358.3,32836,2)
+ ;;=^5063384
+ ;;^UTILITY(U,$J,358.3,32837,0)
+ ;;=Z83.71^^128^1636^4
+ ;;^UTILITY(U,$J,358.3,32837,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33998,1,3,0)
- ;;=3^Paroxysmal atrial fibrillation
- ;;^UTILITY(U,$J,358.3,33998,1,4,0)
- ;;=4^I48.0
- ;;^UTILITY(U,$J,358.3,33998,2)
- ;;=^90473
- ;;^UTILITY(U,$J,358.3,33999,0)
- ;;=I42.9^^183^2014^13
- ;;^UTILITY(U,$J,358.3,33999,1,0)
+ ;;^UTILITY(U,$J,358.3,32837,1,3,0)
+ ;;=3^Family Hx of Colonic Polyps
+ ;;^UTILITY(U,$J,358.3,32837,1,4,0)
+ ;;=4^Z83.71
+ ;;^UTILITY(U,$J,358.3,32837,2)
+ ;;=^5063386
+ ;;^UTILITY(U,$J,358.3,32838,0)
+ ;;=Z83.79^^128^1636^8
+ ;;^UTILITY(U,$J,358.3,32838,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33999,1,3,0)
- ;;=3^Cardiomyopathy, unspecified
- ;;^UTILITY(U,$J,358.3,33999,1,4,0)
- ;;=4^I42.9
- ;;^UTILITY(U,$J,358.3,33999,2)
- ;;=^5007200
- ;;^UTILITY(U,$J,358.3,34000,0)
- ;;=I50.42^^183^2014^14
- ;;^UTILITY(U,$J,358.3,34000,1,0)
+ ;;^UTILITY(U,$J,358.3,32838,1,3,0)
+ ;;=3^Family Hx of Digestive System Diseases
+ ;;^UTILITY(U,$J,358.3,32838,1,4,0)
+ ;;=4^Z83.79
+ ;;^UTILITY(U,$J,358.3,32838,2)
+ ;;=^5063387
+ ;;^UTILITY(U,$J,358.3,32839,0)
+ ;;=Z79.1^^128^1637^3
+ ;;^UTILITY(U,$J,358.3,32839,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34000,1,3,0)
- ;;=3^Chronic combined systolic and diastolic hrt fail
- ;;^UTILITY(U,$J,358.3,34000,1,4,0)
- ;;=4^I50.42
- ;;^UTILITY(U,$J,358.3,34000,2)
- ;;=^5007249
- ;;^UTILITY(U,$J,358.3,34001,0)
- ;;=I50.32^^183^2014^15
- ;;^UTILITY(U,$J,358.3,34001,1,0)
+ ;;^UTILITY(U,$J,358.3,32839,1,3,0)
+ ;;=3^Long Term Current Use of NSAID
+ ;;^UTILITY(U,$J,358.3,32839,1,4,0)
+ ;;=4^Z79.1
+ ;;^UTILITY(U,$J,358.3,32839,2)
+ ;;=^5063332
+ ;;^UTILITY(U,$J,358.3,32840,0)
+ ;;=Z79.52^^128^1637^5
+ ;;^UTILITY(U,$J,358.3,32840,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34001,1,3,0)
- ;;=3^Chronic diastolic (congestive) heart failure
- ;;^UTILITY(U,$J,358.3,34001,1,4,0)
- ;;=4^I50.32
- ;;^UTILITY(U,$J,358.3,34001,2)
- ;;=^5007245
- ;;^UTILITY(U,$J,358.3,34002,0)
- ;;=J44.1^^183^2014^16
- ;;^UTILITY(U,$J,358.3,34002,1,0)
+ ;;^UTILITY(U,$J,358.3,32840,1,3,0)
+ ;;=3^Long Term Current Use of Systemic Steroids
+ ;;^UTILITY(U,$J,358.3,32840,1,4,0)
+ ;;=4^Z79.52
+ ;;^UTILITY(U,$J,358.3,32840,2)
+ ;;=^5063336
+ ;;^UTILITY(U,$J,358.3,32841,0)
+ ;;=Z79.82^^128^1637^2
+ ;;^UTILITY(U,$J,358.3,32841,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34002,1,3,0)
- ;;=3^Chronic obstructive pulmonary disease w (acute) exacerbation
- ;;^UTILITY(U,$J,358.3,34002,1,4,0)
- ;;=4^J44.1
- ;;^UTILITY(U,$J,358.3,34002,2)
- ;;=^5008240
- ;;^UTILITY(U,$J,358.3,34003,0)
- ;;=J44.9^^183^2014^17
- ;;^UTILITY(U,$J,358.3,34003,1,0)
+ ;;^UTILITY(U,$J,358.3,32841,1,3,0)
+ ;;=3^Long Term Current Use of Aspirin
+ ;;^UTILITY(U,$J,358.3,32841,1,4,0)
+ ;;=4^Z79.82
+ ;;^UTILITY(U,$J,358.3,32841,2)
+ ;;=^5063340
+ ;;^UTILITY(U,$J,358.3,32842,0)
+ ;;=Z79.810^^128^1637^4
+ ;;^UTILITY(U,$J,358.3,32842,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34003,1,3,0)
- ;;=3^Chronic obstructive pulmonary disease, unspecified
- ;;^UTILITY(U,$J,358.3,34003,1,4,0)
- ;;=4^J44.9
- ;;^UTILITY(U,$J,358.3,34003,2)
- ;;=^5008241
- ;;^UTILITY(U,$J,358.3,34004,0)
- ;;=I50.22^^183^2014^18
- ;;^UTILITY(U,$J,358.3,34004,1,0)
+ ;;^UTILITY(U,$J,358.3,32842,1,3,0)
+ ;;=3^Long Term Current Use of SERMs
+ ;;^UTILITY(U,$J,358.3,32842,1,4,0)
+ ;;=4^Z79.810
+ ;;^UTILITY(U,$J,358.3,32842,2)
+ ;;=^5063337
+ ;;^UTILITY(U,$J,358.3,32843,0)
+ ;;=Z79.811^^128^1637^1
+ ;;^UTILITY(U,$J,358.3,32843,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34004,1,3,0)
- ;;=3^Chronic systolic (congestive) heart failure
- ;;^UTILITY(U,$J,358.3,34004,1,4,0)
- ;;=4^I50.22
- ;;^UTILITY(U,$J,358.3,34004,2)
- ;;=^5007241
- ;;^UTILITY(U,$J,358.3,34005,0)
- ;;=Z98.61^^183^2014^20
- ;;^UTILITY(U,$J,358.3,34005,1,0)
+ ;;^UTILITY(U,$J,358.3,32843,1,3,0)
+ ;;=3^Long Term Current Use of Aromatase Inhibitors
+ ;;^UTILITY(U,$J,358.3,32843,1,4,0)
+ ;;=4^Z79.811
+ ;;^UTILITY(U,$J,358.3,32843,2)
+ ;;=^5063338
+ ;;^UTILITY(U,$J,358.3,32844,0)
+ ;;=E78.5^^128^1638^5
+ ;;^UTILITY(U,$J,358.3,32844,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34005,1,3,0)
- ;;=3^Coronary angioplasty status
- ;;^UTILITY(U,$J,358.3,34005,1,4,0)
- ;;=4^Z98.61
- ;;^UTILITY(U,$J,358.3,34005,2)
- ;;=^5063742
- ;;^UTILITY(U,$J,358.3,34006,0)
- ;;=I42.0^^183^2014^22
- ;;^UTILITY(U,$J,358.3,34006,1,0)
+ ;;^UTILITY(U,$J,358.3,32844,1,3,0)
+ ;;=3^Hyperlipidemia,Unspec
+ ;;^UTILITY(U,$J,358.3,32844,1,4,0)
+ ;;=4^E78.5
+ ;;^UTILITY(U,$J,358.3,32844,2)
+ ;;=^5002969
+ ;;^UTILITY(U,$J,358.3,32845,0)
+ ;;=E66.9^^128^1638^8
+ ;;^UTILITY(U,$J,358.3,32845,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34006,1,3,0)
- ;;=3^Dilated cardiomyopathy
- ;;^UTILITY(U,$J,358.3,34006,1,4,0)
- ;;=4^I42.0
- ;;^UTILITY(U,$J,358.3,34006,2)
- ;;=^5007194
- ;;^UTILITY(U,$J,358.3,34007,0)
- ;;=J43.9^^183^2014^23
- ;;^UTILITY(U,$J,358.3,34007,1,0)
+ ;;^UTILITY(U,$J,358.3,32845,1,3,0)
+ ;;=3^Obesity,Unspec
+ ;;^UTILITY(U,$J,358.3,32845,1,4,0)
+ ;;=4^E66.9
+ ;;^UTILITY(U,$J,358.3,32845,2)
+ ;;=^5002832
+ ;;^UTILITY(U,$J,358.3,32846,0)
+ ;;=E66.01^^128^1638^7
+ ;;^UTILITY(U,$J,358.3,32846,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34007,1,3,0)
- ;;=3^Emphysema, unspecified
- ;;^UTILITY(U,$J,358.3,34007,1,4,0)
- ;;=4^J43.9
- ;;^UTILITY(U,$J,358.3,34007,2)
- ;;=^5008238
- ;;^UTILITY(U,$J,358.3,34008,0)
- ;;=Z82.49^^183^2014^24
- ;;^UTILITY(U,$J,358.3,34008,1,0)
+ ;;^UTILITY(U,$J,358.3,32846,1,3,0)
+ ;;=3^Morbid Obesity
+ ;;^UTILITY(U,$J,358.3,32846,1,4,0)
+ ;;=4^E66.01
+ ;;^UTILITY(U,$J,358.3,32846,2)
+ ;;=^5002826
+ ;;^UTILITY(U,$J,358.3,32847,0)
+ ;;=E66.3^^128^1638^10
+ ;;^UTILITY(U,$J,358.3,32847,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34008,1,3,0)
- ;;=3^Family hx of ischem heart dis and oth dis of the circ sys
+ ;;^UTILITY(U,$J,358.3,32847,1,3,0)
+ ;;=3^Overweight

@@ -1,124 +1,134 @@
-IBDEI1XK ; ; 06-AUG-2015
+IBDEI1XK ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33911,1,4,0)
- ;;=4^I69.820
- ;;^UTILITY(U,$J,358.3,33911,2)
- ;;=^5007522
- ;;^UTILITY(U,$J,358.3,33912,0)
- ;;=I69.220^^183^2013^6
- ;;^UTILITY(U,$J,358.3,33912,1,0)
+ ;;^UTILITY(U,$J,358.3,32743,2)
+ ;;=^5063206
+ ;;^UTILITY(U,$J,358.3,32744,0)
+ ;;=Z68.28^^128^1633^10
+ ;;^UTILITY(U,$J,358.3,32744,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33912,1,3,0)
- ;;=3^Aphasia following other nontraumatic intracranial hemorrhage
- ;;^UTILITY(U,$J,358.3,33912,1,4,0)
- ;;=4^I69.220
- ;;^UTILITY(U,$J,358.3,33912,2)
- ;;=^5007459
- ;;^UTILITY(U,$J,358.3,33913,0)
- ;;=I69.290^^183^2013^11
- ;;^UTILITY(U,$J,358.3,33913,1,0)
+ ;;^UTILITY(U,$J,358.3,32744,1,3,0)
+ ;;=3^Body Mass Index (BMI) 28.0-28.9
+ ;;^UTILITY(U,$J,358.3,32744,1,4,0)
+ ;;=4^Z68.28
+ ;;^UTILITY(U,$J,358.3,32744,2)
+ ;;=^5063207
+ ;;^UTILITY(U,$J,358.3,32745,0)
+ ;;=Z68.29^^128^1633^11
+ ;;^UTILITY(U,$J,358.3,32745,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33913,1,3,0)
- ;;=3^Apraxia following other nontraumatic intracranial hemorrhage
- ;;^UTILITY(U,$J,358.3,33913,1,4,0)
- ;;=4^I69.290
- ;;^UTILITY(U,$J,358.3,33913,2)
- ;;=^5007484
- ;;^UTILITY(U,$J,358.3,33914,0)
- ;;=I69.390^^183^2013^7
- ;;^UTILITY(U,$J,358.3,33914,1,0)
+ ;;^UTILITY(U,$J,358.3,32745,1,3,0)
+ ;;=3^Body Mass Index (BMI) 29.0-29.9
+ ;;^UTILITY(U,$J,358.3,32745,1,4,0)
+ ;;=4^Z68.29
+ ;;^UTILITY(U,$J,358.3,32745,2)
+ ;;=^5063208
+ ;;^UTILITY(U,$J,358.3,32746,0)
+ ;;=Z68.30^^128^1633^12
+ ;;^UTILITY(U,$J,358.3,32746,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33914,1,3,0)
- ;;=3^Apraxia following cerebral infarction
- ;;^UTILITY(U,$J,358.3,33914,1,4,0)
- ;;=4^I69.390
- ;;^UTILITY(U,$J,358.3,33914,2)
- ;;=^5007515
- ;;^UTILITY(U,$J,358.3,33915,0)
- ;;=I69.190^^183^2013^8
- ;;^UTILITY(U,$J,358.3,33915,1,0)
+ ;;^UTILITY(U,$J,358.3,32746,1,3,0)
+ ;;=3^Body Mass Index (BMI) 30.0-30.9
+ ;;^UTILITY(U,$J,358.3,32746,1,4,0)
+ ;;=4^Z68.30
+ ;;^UTILITY(U,$J,358.3,32746,2)
+ ;;=^5063209
+ ;;^UTILITY(U,$J,358.3,32747,0)
+ ;;=Z68.31^^128^1633^13
+ ;;^UTILITY(U,$J,358.3,32747,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33915,1,3,0)
- ;;=3^Apraxia following nontraumatic intracerebral hemorrhage
- ;;^UTILITY(U,$J,358.3,33915,1,4,0)
- ;;=4^I69.190
- ;;^UTILITY(U,$J,358.3,33915,2)
- ;;=^5007452
- ;;^UTILITY(U,$J,358.3,33916,0)
- ;;=I69.090^^183^2013^9
- ;;^UTILITY(U,$J,358.3,33916,1,0)
+ ;;^UTILITY(U,$J,358.3,32747,1,3,0)
+ ;;=3^Body Mass Index (BMI) 31.0-31.9
+ ;;^UTILITY(U,$J,358.3,32747,1,4,0)
+ ;;=4^Z68.31
+ ;;^UTILITY(U,$J,358.3,32747,2)
+ ;;=^5063210
+ ;;^UTILITY(U,$J,358.3,32748,0)
+ ;;=Z68.32^^128^1633^14
+ ;;^UTILITY(U,$J,358.3,32748,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33916,1,3,0)
- ;;=3^Apraxia following nontraumatic subarachnoid hemorrhage
- ;;^UTILITY(U,$J,358.3,33916,1,4,0)
- ;;=4^I69.090
- ;;^UTILITY(U,$J,358.3,33916,2)
- ;;=^5007420
- ;;^UTILITY(U,$J,358.3,33917,0)
- ;;=I69.890^^183^2013^10
- ;;^UTILITY(U,$J,358.3,33917,1,0)
+ ;;^UTILITY(U,$J,358.3,32748,1,3,0)
+ ;;=3^Body Mass Index (BMI) 32.0-32.9
+ ;;^UTILITY(U,$J,358.3,32748,1,4,0)
+ ;;=4^Z68.32
+ ;;^UTILITY(U,$J,358.3,32748,2)
+ ;;=^5063211
+ ;;^UTILITY(U,$J,358.3,32749,0)
+ ;;=Z68.33^^128^1633^15
+ ;;^UTILITY(U,$J,358.3,32749,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33917,1,3,0)
- ;;=3^Apraxia following other cerebrovascular disease
- ;;^UTILITY(U,$J,358.3,33917,1,4,0)
- ;;=4^I69.890
- ;;^UTILITY(U,$J,358.3,33917,2)
- ;;=^5007546
- ;;^UTILITY(U,$J,358.3,33918,0)
- ;;=I69.393^^183^2013^12
- ;;^UTILITY(U,$J,358.3,33918,1,0)
+ ;;^UTILITY(U,$J,358.3,32749,1,3,0)
+ ;;=3^Body Mass Index (BMI) 33.0-33.9
+ ;;^UTILITY(U,$J,358.3,32749,1,4,0)
+ ;;=4^Z68.33
+ ;;^UTILITY(U,$J,358.3,32749,2)
+ ;;=^5063212
+ ;;^UTILITY(U,$J,358.3,32750,0)
+ ;;=Z68.34^^128^1633^16
+ ;;^UTILITY(U,$J,358.3,32750,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33918,1,3,0)
- ;;=3^Ataxia following cerebral infarction
- ;;^UTILITY(U,$J,358.3,33918,1,4,0)
- ;;=4^I69.393
- ;;^UTILITY(U,$J,358.3,33918,2)
- ;;=^5007518
- ;;^UTILITY(U,$J,358.3,33919,0)
- ;;=I69.193^^183^2013^13
- ;;^UTILITY(U,$J,358.3,33919,1,0)
+ ;;^UTILITY(U,$J,358.3,32750,1,3,0)
+ ;;=3^Body Mass Index (BMI) 34.0-34.9
+ ;;^UTILITY(U,$J,358.3,32750,1,4,0)
+ ;;=4^Z68.34
+ ;;^UTILITY(U,$J,358.3,32750,2)
+ ;;=^5063213
+ ;;^UTILITY(U,$J,358.3,32751,0)
+ ;;=Z68.35^^128^1633^17
+ ;;^UTILITY(U,$J,358.3,32751,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33919,1,3,0)
- ;;=3^Ataxia following nontraumatic intracerebral hemorrhage
- ;;^UTILITY(U,$J,358.3,33919,1,4,0)
- ;;=4^I69.193
- ;;^UTILITY(U,$J,358.3,33919,2)
- ;;=^5007455
- ;;^UTILITY(U,$J,358.3,33920,0)
- ;;=I69.293^^183^2013^16
- ;;^UTILITY(U,$J,358.3,33920,1,0)
+ ;;^UTILITY(U,$J,358.3,32751,1,3,0)
+ ;;=3^Body Mass Index (BMI) 35.0-35.9
+ ;;^UTILITY(U,$J,358.3,32751,1,4,0)
+ ;;=4^Z68.35
+ ;;^UTILITY(U,$J,358.3,32751,2)
+ ;;=^5063214
+ ;;^UTILITY(U,$J,358.3,32752,0)
+ ;;=Z68.36^^128^1633^18
+ ;;^UTILITY(U,$J,358.3,32752,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33920,1,3,0)
- ;;=3^Ataxia following other nontraumatic intracranial hemorrhage
- ;;^UTILITY(U,$J,358.3,33920,1,4,0)
- ;;=4^I69.293
- ;;^UTILITY(U,$J,358.3,33920,2)
- ;;=^5007487
- ;;^UTILITY(U,$J,358.3,33921,0)
- ;;=I69.093^^183^2013^14
- ;;^UTILITY(U,$J,358.3,33921,1,0)
+ ;;^UTILITY(U,$J,358.3,32752,1,3,0)
+ ;;=3^Body Mass Index (BMI) 36.0-36.9
+ ;;^UTILITY(U,$J,358.3,32752,1,4,0)
+ ;;=4^Z68.36
+ ;;^UTILITY(U,$J,358.3,32752,2)
+ ;;=^5063215
+ ;;^UTILITY(U,$J,358.3,32753,0)
+ ;;=Z68.37^^128^1633^19
+ ;;^UTILITY(U,$J,358.3,32753,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33921,1,3,0)
- ;;=3^Ataxia following nontraumatic subarachnoid hemorrhage
- ;;^UTILITY(U,$J,358.3,33921,1,4,0)
- ;;=4^I69.093
- ;;^UTILITY(U,$J,358.3,33921,2)
- ;;=^5007423
- ;;^UTILITY(U,$J,358.3,33922,0)
- ;;=I69.893^^183^2013^15
- ;;^UTILITY(U,$J,358.3,33922,1,0)
+ ;;^UTILITY(U,$J,358.3,32753,1,3,0)
+ ;;=3^Body Mass Index (BMI) 37.0-37.9
+ ;;^UTILITY(U,$J,358.3,32753,1,4,0)
+ ;;=4^Z68.37
+ ;;^UTILITY(U,$J,358.3,32753,2)
+ ;;=^5063216
+ ;;^UTILITY(U,$J,358.3,32754,0)
+ ;;=Z68.38^^128^1633^20
+ ;;^UTILITY(U,$J,358.3,32754,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33922,1,3,0)
- ;;=3^Ataxia following other cerebrovascular disease
- ;;^UTILITY(U,$J,358.3,33922,1,4,0)
- ;;=4^I69.893
- ;;^UTILITY(U,$J,358.3,33922,2)
- ;;=^5007549
- ;;^UTILITY(U,$J,358.3,33923,0)
- ;;=I69.31^^183^2013^17
- ;;^UTILITY(U,$J,358.3,33923,1,0)
+ ;;^UTILITY(U,$J,358.3,32754,1,3,0)
+ ;;=3^Body Mass Index (BMI) 38.0-38.9
+ ;;^UTILITY(U,$J,358.3,32754,1,4,0)
+ ;;=4^Z68.38
+ ;;^UTILITY(U,$J,358.3,32754,2)
+ ;;=^5063217
+ ;;^UTILITY(U,$J,358.3,32755,0)
+ ;;=Z68.39^^128^1633^21
+ ;;^UTILITY(U,$J,358.3,32755,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33923,1,3,0)
- ;;=3^Cognitive deficits following cerebral infarction
+ ;;^UTILITY(U,$J,358.3,32755,1,3,0)
+ ;;=3^Body Mass Index (BMI) 39.0-39.9
+ ;;^UTILITY(U,$J,358.3,32755,1,4,0)
+ ;;=4^Z68.39
+ ;;^UTILITY(U,$J,358.3,32755,2)
+ ;;=^5063218
+ ;;^UTILITY(U,$J,358.3,32756,0)
+ ;;=Z68.41^^128^1633^22
+ ;;^UTILITY(U,$J,358.3,32756,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32756,1,3,0)
+ ;;=3^Body Mass Index (BMI) 40.0-44.9
+ ;;^UTILITY(U,$J,358.3,32756,1,4,0)
+ ;;=4^Z68.41

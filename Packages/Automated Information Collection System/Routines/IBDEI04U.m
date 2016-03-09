@@ -1,128 +1,126 @@
-IBDEI04U ; ; 06-AUG-2015
+IBDEI04U ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1742,1,0)
+ ;;^UTILITY(U,$J,358.3,1839,1,4,0)
+ ;;=4^I08.8
+ ;;^UTILITY(U,$J,358.3,1839,2)
+ ;;=^5007056
+ ;;^UTILITY(U,$J,358.3,1840,0)
+ ;;=T82.9XXA^^11^158^2
+ ;;^UTILITY(U,$J,358.3,1840,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1742,1,3,0)
- ;;=3^Personal history of malignant neoplasm of small intestine
- ;;^UTILITY(U,$J,358.3,1742,1,4,0)
- ;;=4^Z85.068
- ;;^UTILITY(U,$J,358.3,1742,2)
- ;;=^5063404
- ;;^UTILITY(U,$J,358.3,1743,0)
- ;;=Z85.07^^3^51^10
- ;;^UTILITY(U,$J,358.3,1743,1,0)
+ ;;^UTILITY(U,$J,358.3,1840,1,3,0)
+ ;;=3^Complication of Cardiac/Vascular Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1840,1,4,0)
+ ;;=4^T82.9XXA
+ ;;^UTILITY(U,$J,358.3,1840,2)
+ ;;=^5054956
+ ;;^UTILITY(U,$J,358.3,1841,0)
+ ;;=T82.857A^^11^158^9
+ ;;^UTILITY(U,$J,358.3,1841,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1743,1,3,0)
- ;;=3^Personal history of malignant neoplasm of pancreas
- ;;^UTILITY(U,$J,358.3,1743,1,4,0)
- ;;=4^Z85.07
- ;;^UTILITY(U,$J,358.3,1743,2)
- ;;=^5063405
- ;;^UTILITY(U,$J,358.3,1744,0)
- ;;=Z85.09^^3^51^11
- ;;^UTILITY(U,$J,358.3,1744,1,0)
+ ;;^UTILITY(U,$J,358.3,1841,1,3,0)
+ ;;=3^Stenosis of Cardiac Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1841,1,4,0)
+ ;;=4^T82.857A
+ ;;^UTILITY(U,$J,358.3,1841,2)
+ ;;=^5054938
+ ;;^UTILITY(U,$J,358.3,1842,0)
+ ;;=T82.867A^^11^158^10
+ ;;^UTILITY(U,$J,358.3,1842,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1744,1,3,0)
- ;;=3^Personal history of malignant neoplasm of digestive organs
- ;;^UTILITY(U,$J,358.3,1744,1,4,0)
- ;;=4^Z85.09
- ;;^UTILITY(U,$J,358.3,1744,2)
- ;;=^5063406
- ;;^UTILITY(U,$J,358.3,1745,0)
- ;;=Z85.12^^3^51^12
- ;;^UTILITY(U,$J,358.3,1745,1,0)
+ ;;^UTILITY(U,$J,358.3,1842,1,3,0)
+ ;;=3^Thrombosis of Cardiac Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1842,1,4,0)
+ ;;=4^T82.867A
+ ;;^UTILITY(U,$J,358.3,1842,2)
+ ;;=^5054944
+ ;;^UTILITY(U,$J,358.3,1843,0)
+ ;;=T82.897A^^11^158^3
+ ;;^UTILITY(U,$J,358.3,1843,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1745,1,3,0)
- ;;=3^Personal history of malignant neoplasm of trachea
- ;;^UTILITY(U,$J,358.3,1745,1,4,0)
- ;;=4^Z85.12
- ;;^UTILITY(U,$J,358.3,1745,2)
- ;;=^5063409
- ;;^UTILITY(U,$J,358.3,1746,0)
- ;;=Z85.22^^3^51^13
- ;;^UTILITY(U,$J,358.3,1746,1,0)
+ ;;^UTILITY(U,$J,358.3,1843,1,3,0)
+ ;;=3^Complications of Cardiac Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1843,1,4,0)
+ ;;=4^T82.897A
+ ;;^UTILITY(U,$J,358.3,1843,2)
+ ;;=^5054950
+ ;;^UTILITY(U,$J,358.3,1844,0)
+ ;;=T82.817A^^11^158^4
+ ;;^UTILITY(U,$J,358.3,1844,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1746,1,3,0)
- ;;=3^Personal history of malignant neoplasm of nasl cav,med ear,acces sinus
- ;;^UTILITY(U,$J,358.3,1746,1,4,0)
- ;;=4^Z85.22
- ;;^UTILITY(U,$J,358.3,1746,2)
- ;;=^5063412
- ;;^UTILITY(U,$J,358.3,1747,0)
- ;;=Z85.41^^3^51^14
- ;;^UTILITY(U,$J,358.3,1747,1,0)
+ ;;^UTILITY(U,$J,358.3,1844,1,3,0)
+ ;;=3^Ebolism of Cardiac Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1844,1,4,0)
+ ;;=4^T82.817A
+ ;;^UTILITY(U,$J,358.3,1844,2)
+ ;;=^5054914
+ ;;^UTILITY(U,$J,358.3,1845,0)
+ ;;=T82.827A^^11^158^5
+ ;;^UTILITY(U,$J,358.3,1845,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1747,1,3,0)
- ;;=3^Personal history of malignant neoplasm of cervix uteri
- ;;^UTILITY(U,$J,358.3,1747,1,4,0)
- ;;=4^Z85.41
- ;;^UTILITY(U,$J,358.3,1747,2)
- ;;=^5063418
- ;;^UTILITY(U,$J,358.3,1748,0)
- ;;=Z85.42^^3^51^15
- ;;^UTILITY(U,$J,358.3,1748,1,0)
+ ;;^UTILITY(U,$J,358.3,1845,1,3,0)
+ ;;=3^Fibrosis of Cardiac Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1845,1,4,0)
+ ;;=4^T82.827A
+ ;;^UTILITY(U,$J,358.3,1845,2)
+ ;;=^5054920
+ ;;^UTILITY(U,$J,358.3,1846,0)
+ ;;=T82.837A^^11^158^6
+ ;;^UTILITY(U,$J,358.3,1846,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1748,1,3,0)
- ;;=3^Personal history of malignant neoplasm of oth prt uterus
- ;;^UTILITY(U,$J,358.3,1748,1,4,0)
- ;;=4^Z85.42
- ;;^UTILITY(U,$J,358.3,1748,2)
- ;;=^5063419
- ;;^UTILITY(U,$J,358.3,1749,0)
- ;;=Z85.48^^3^51^16
- ;;^UTILITY(U,$J,358.3,1749,1,0)
+ ;;^UTILITY(U,$J,358.3,1846,1,3,0)
+ ;;=3^Hemorrhage of Cardiac Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1846,1,4,0)
+ ;;=4^T82.837A
+ ;;^UTILITY(U,$J,358.3,1846,2)
+ ;;=^5054926
+ ;;^UTILITY(U,$J,358.3,1847,0)
+ ;;=T82.847A^^11^158^7
+ ;;^UTILITY(U,$J,358.3,1847,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1749,1,3,0)
- ;;=3^Personal history of malignant neoplasm of epididymis
- ;;^UTILITY(U,$J,358.3,1749,1,4,0)
- ;;=4^Z85.48
- ;;^UTILITY(U,$J,358.3,1749,2)
- ;;=^5063425
- ;;^UTILITY(U,$J,358.3,1750,0)
- ;;=Z85.54^^3^51^17
- ;;^UTILITY(U,$J,358.3,1750,1,0)
+ ;;^UTILITY(U,$J,358.3,1847,1,3,0)
+ ;;=3^Pain from Cardiac Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1847,1,4,0)
+ ;;=4^T82.847A
+ ;;^UTILITY(U,$J,358.3,1847,2)
+ ;;=^5054932
+ ;;^UTILITY(U,$J,358.3,1848,0)
+ ;;=Z45.09^^11^158^1
+ ;;^UTILITY(U,$J,358.3,1848,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1750,1,3,0)
- ;;=3^Personal history of malignant neoplasm of ureter
- ;;^UTILITY(U,$J,358.3,1750,1,4,0)
- ;;=4^Z85.54
- ;;^UTILITY(U,$J,358.3,1750,2)
- ;;=^5063432
- ;;^UTILITY(U,$J,358.3,1751,0)
- ;;=Z85.59^^3^51^18
- ;;^UTILITY(U,$J,358.3,1751,1,0)
+ ;;^UTILITY(U,$J,358.3,1848,1,3,0)
+ ;;=3^Adjustment/Management of Cardiac Device
+ ;;^UTILITY(U,$J,358.3,1848,1,4,0)
+ ;;=4^Z45.09
+ ;;^UTILITY(U,$J,358.3,1848,2)
+ ;;=^5062997
+ ;;^UTILITY(U,$J,358.3,1849,0)
+ ;;=Z01.810^^11^158^8
+ ;;^UTILITY(U,$J,358.3,1849,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1751,1,3,0)
- ;;=3^Personal history of malignant neoplasm of urinary tract organ
- ;;^UTILITY(U,$J,358.3,1751,1,4,0)
- ;;=4^Z85.59
- ;;^UTILITY(U,$J,358.3,1751,2)
- ;;=^5063433
- ;;^UTILITY(U,$J,358.3,1752,0)
- ;;=Z85.6^^3^51^6
- ;;^UTILITY(U,$J,358.3,1752,1,0)
+ ;;^UTILITY(U,$J,358.3,1849,1,3,0)
+ ;;=3^Preporcedural Cardiovascular Examination
+ ;;^UTILITY(U,$J,358.3,1849,1,4,0)
+ ;;=4^Z01.810
+ ;;^UTILITY(U,$J,358.3,1849,2)
+ ;;=^5062625
+ ;;^UTILITY(U,$J,358.3,1850,0)
+ ;;=G90.01^^11^159^1
+ ;;^UTILITY(U,$J,358.3,1850,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1752,1,3,0)
- ;;=3^Personal history of leukemia
- ;;^UTILITY(U,$J,358.3,1752,1,4,0)
- ;;=4^Z85.6
- ;;^UTILITY(U,$J,358.3,1752,2)
- ;;=^5063434
- ;;^UTILITY(U,$J,358.3,1753,0)
- ;;=Z85.79^^3^51^19
- ;;^UTILITY(U,$J,358.3,1753,1,0)
+ ;;^UTILITY(U,$J,358.3,1850,1,3,0)
+ ;;=3^Carotid Sinus Syncope
+ ;;^UTILITY(U,$J,358.3,1850,1,4,0)
+ ;;=4^G90.01
+ ;;^UTILITY(U,$J,358.3,1850,2)
+ ;;=^5004160
+ ;;^UTILITY(U,$J,358.3,1851,0)
+ ;;=R55.^^11^159^2
+ ;;^UTILITY(U,$J,358.3,1851,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1753,1,3,0)
- ;;=3^Personal history of malignant neoplasm of lymphoid,hematpoetc & rel tiss
- ;;^UTILITY(U,$J,358.3,1753,1,4,0)
- ;;=4^Z85.79
- ;;^UTILITY(U,$J,358.3,1753,2)
- ;;=^5063437
- ;;^UTILITY(U,$J,358.3,1754,0)
- ;;=Z85.71^^3^51^2
- ;;^UTILITY(U,$J,358.3,1754,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1754,1,3,0)
- ;;=3^Personal history of Hodgkin lymphoma
+ ;;^UTILITY(U,$J,358.3,1851,1,3,0)
+ ;;=3^Syncope and Collapse
+ ;;^UTILITY(U,$J,358.3,1851,1,4,0)
+ ;;=4^R55.

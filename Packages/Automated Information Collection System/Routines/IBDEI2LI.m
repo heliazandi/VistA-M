@@ -1,0 +1,132 @@
+IBDEI2LI ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,44061,0)
+ ;;=Z91.410^^170^2118^25
+ ;;^UTILITY(U,$J,358.3,44061,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44061,1,3,0)
+ ;;=3^Personal Hx of Adult Physical & Sexual Abuse
+ ;;^UTILITY(U,$J,358.3,44061,1,4,0)
+ ;;=4^Z91.410
+ ;;^UTILITY(U,$J,358.3,44061,2)
+ ;;=^5063619
+ ;;^UTILITY(U,$J,358.3,44062,0)
+ ;;=Z11.4^^170^2118^17
+ ;;^UTILITY(U,$J,358.3,44062,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44062,1,3,0)
+ ;;=3^HIV Screen
+ ;;^UTILITY(U,$J,358.3,44062,1,4,0)
+ ;;=4^Z11.4
+ ;;^UTILITY(U,$J,358.3,44062,2)
+ ;;=^5062673
+ ;;^UTILITY(U,$J,358.3,44063,0)
+ ;;=Z48.816^^170^2118^1
+ ;;^UTILITY(U,$J,358.3,44063,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44063,1,3,0)
+ ;;=3^Aftercare Following GU System Surgery
+ ;;^UTILITY(U,$J,358.3,44063,1,4,0)
+ ;;=4^Z48.816
+ ;;^UTILITY(U,$J,358.3,44063,2)
+ ;;=^5063053
+ ;;^UTILITY(U,$J,358.3,44064,0)
+ ;;=Z11.3^^170^2118^35
+ ;;^UTILITY(U,$J,358.3,44064,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44064,1,3,0)
+ ;;=3^Screen,Infection/Parasite
+ ;;^UTILITY(U,$J,358.3,44064,1,4,0)
+ ;;=4^Z11.3
+ ;;^UTILITY(U,$J,358.3,44064,2)
+ ;;=^5062672
+ ;;^UTILITY(U,$J,358.3,44065,0)
+ ;;=Z30.011^^170^2118^27
+ ;;^UTILITY(U,$J,358.3,44065,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44065,1,3,0)
+ ;;=3^Prescription for Contraceptive Pills,Initial
+ ;;^UTILITY(U,$J,358.3,44065,1,4,0)
+ ;;=4^Z30.011
+ ;;^UTILITY(U,$J,358.3,44065,2)
+ ;;=^5062810
+ ;;^UTILITY(U,$J,358.3,44066,0)
+ ;;=Z30.012^^170^2118^26
+ ;;^UTILITY(U,$J,358.3,44066,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44066,1,3,0)
+ ;;=3^Prescription for Contraceptive Pills,Emergency
+ ;;^UTILITY(U,$J,358.3,44066,1,4,0)
+ ;;=4^Z30.012
+ ;;^UTILITY(U,$J,358.3,44066,2)
+ ;;=^5062811
+ ;;^UTILITY(U,$J,358.3,44067,0)
+ ;;=Z30.013^^170^2118^28
+ ;;^UTILITY(U,$J,358.3,44067,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44067,1,3,0)
+ ;;=3^Prescription for Contraceptive Pills,Injection
+ ;;^UTILITY(U,$J,358.3,44067,1,4,0)
+ ;;=4^Z30.013
+ ;;^UTILITY(U,$J,358.3,44067,2)
+ ;;=^5062812
+ ;;^UTILITY(U,$J,358.3,44068,0)
+ ;;=Z30.014^^170^2118^31
+ ;;^UTILITY(U,$J,358.3,44068,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44068,1,3,0)
+ ;;=3^Prescription for IUD
+ ;;^UTILITY(U,$J,358.3,44068,1,4,0)
+ ;;=4^Z30.014
+ ;;^UTILITY(U,$J,358.3,44068,2)
+ ;;=^5062813
+ ;;^UTILITY(U,$J,358.3,44069,0)
+ ;;=Z30.018^^170^2118^29
+ ;;^UTILITY(U,$J,358.3,44069,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44069,1,3,0)
+ ;;=3^Prescription for Contraceptive Pills,Other
+ ;;^UTILITY(U,$J,358.3,44069,1,4,0)
+ ;;=4^Z30.018
+ ;;^UTILITY(U,$J,358.3,44069,2)
+ ;;=^5062814
+ ;;^UTILITY(U,$J,358.3,44070,0)
+ ;;=Z30.019^^170^2118^30
+ ;;^UTILITY(U,$J,358.3,44070,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44070,1,3,0)
+ ;;=3^Prescription for Contraceptives,Initial,Unspec
+ ;;^UTILITY(U,$J,358.3,44070,1,4,0)
+ ;;=4^Z30.019
+ ;;^UTILITY(U,$J,358.3,44070,2)
+ ;;=^5062815
+ ;;^UTILITY(U,$J,358.3,44071,0)
+ ;;=Z30.2^^170^2118^37
+ ;;^UTILITY(U,$J,358.3,44071,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44071,1,3,0)
+ ;;=3^Sterilization
+ ;;^UTILITY(U,$J,358.3,44071,1,4,0)
+ ;;=4^Z30.2
+ ;;^UTILITY(U,$J,358.3,44071,2)
+ ;;=^5062818
+ ;;^UTILITY(U,$J,358.3,44072,0)
+ ;;=Z30.40^^170^2118^13
+ ;;^UTILITY(U,$J,358.3,44072,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44072,1,3,0)
+ ;;=3^Contraceptive Surveillance,Unspec
+ ;;^UTILITY(U,$J,358.3,44072,1,4,0)
+ ;;=4^Z30.40
+ ;;^UTILITY(U,$J,358.3,44072,2)
+ ;;=^5062819
+ ;;^UTILITY(U,$J,358.3,44073,0)
+ ;;=Z30.41^^170^2118^11
+ ;;^UTILITY(U,$J,358.3,44073,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44073,1,3,0)
+ ;;=3^Contraceptive Pill Surveillance
+ ;;^UTILITY(U,$J,358.3,44073,1,4,0)
+ ;;=4^Z30.41

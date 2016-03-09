@@ -1,122 +1,134 @@
-IBDEI200 ; ; 06-AUG-2015
+IBDEI200 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34973,1,0)
+ ;;^UTILITY(U,$J,358.3,33905,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34973,1,3,0)
- ;;=3^Nondisp fx of segmental shaft of left fibula, sequela  
- ;;^UTILITY(U,$J,358.3,34973,1,4,0)
- ;;=4^S82.465S
- ;;^UTILITY(U,$J,358.3,34973,2)
- ;;=^5042177
- ;;^UTILITY(U,$J,358.3,34974,0)
- ;;=S82.464S^^183^2024^66
- ;;^UTILITY(U,$J,358.3,34974,1,0)
+ ;;^UTILITY(U,$J,358.3,33905,1,3,0)
+ ;;=3^Liver Cell Carcinoma
+ ;;^UTILITY(U,$J,358.3,33905,1,4,0)
+ ;;=4^C22.0
+ ;;^UTILITY(U,$J,358.3,33905,2)
+ ;;=^5000933
+ ;;^UTILITY(U,$J,358.3,33906,0)
+ ;;=D05.02^^131^1680^98
+ ;;^UTILITY(U,$J,358.3,33906,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34974,1,3,0)
- ;;=3^Nondisp fx of segmental shaft of right fibula, sequela  
- ;;^UTILITY(U,$J,358.3,34974,1,4,0)
- ;;=4^S82.464S
- ;;^UTILITY(U,$J,358.3,34974,2)
- ;;=^5042161
- ;;^UTILITY(U,$J,358.3,34975,0)
- ;;=S82.445S^^183^2024^67
- ;;^UTILITY(U,$J,358.3,34975,1,0)
+ ;;^UTILITY(U,$J,358.3,33906,1,3,0)
+ ;;=3^Lobular Carcinoma in Situ,Left Breast
+ ;;^UTILITY(U,$J,358.3,33906,1,4,0)
+ ;;=4^D05.02
+ ;;^UTILITY(U,$J,358.3,33906,2)
+ ;;=^5001928
+ ;;^UTILITY(U,$J,358.3,33907,0)
+ ;;=D05.01^^131^1680^99
+ ;;^UTILITY(U,$J,358.3,33907,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34975,1,3,0)
- ;;=3^Nondisp fx of spiral shaft of left fibula, sequela 
- ;;^UTILITY(U,$J,358.3,34975,1,4,0)
- ;;=4^S82.445S
- ;;^UTILITY(U,$J,358.3,34975,2)
- ;;=^5041985
- ;;^UTILITY(U,$J,358.3,34976,0)
- ;;=S82.444S^^183^2024^69
- ;;^UTILITY(U,$J,358.3,34976,1,0)
+ ;;^UTILITY(U,$J,358.3,33907,1,3,0)
+ ;;=3^Lobular Carcinoma in Situ,Right Breast
+ ;;^UTILITY(U,$J,358.3,33907,1,4,0)
+ ;;=4^D05.01
+ ;;^UTILITY(U,$J,358.3,33907,2)
+ ;;=^5001927
+ ;;^UTILITY(U,$J,358.3,33908,0)
+ ;;=D05.00^^131^1680^100
+ ;;^UTILITY(U,$J,358.3,33908,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34976,1,3,0)
- ;;=3^Nondisp fx of spiral shaft of right fibula, sequela 
- ;;^UTILITY(U,$J,358.3,34976,1,4,0)
- ;;=4^S82.444S
- ;;^UTILITY(U,$J,358.3,34976,2)
- ;;=^5041969
- ;;^UTILITY(U,$J,358.3,34977,0)
- ;;=S82.425S^^183^2024^72
- ;;^UTILITY(U,$J,358.3,34977,1,0)
+ ;;^UTILITY(U,$J,358.3,33908,1,3,0)
+ ;;=3^Lobular Carcinoma in Situ,Unspec Breast
+ ;;^UTILITY(U,$J,358.3,33908,1,4,0)
+ ;;=4^D05.00
+ ;;^UTILITY(U,$J,358.3,33908,2)
+ ;;=^5001926
+ ;;^UTILITY(U,$J,358.3,33909,0)
+ ;;=R59.0^^131^1680^61
+ ;;^UTILITY(U,$J,358.3,33909,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34977,1,3,0)
- ;;=3^Nondisp fx of transverse shaft of left fibula, sequela  
- ;;^UTILITY(U,$J,358.3,34977,1,4,0)
- ;;=4^S82.425S
- ;;^UTILITY(U,$J,358.3,34977,2)
- ;;=^5041793
- ;;^UTILITY(U,$J,358.3,34978,0)
- ;;=S82.424S^^183^2024^74
- ;;^UTILITY(U,$J,358.3,34978,1,0)
+ ;;^UTILITY(U,$J,358.3,33909,1,3,0)
+ ;;=3^Enlarged Lymph Nodes,Localized
+ ;;^UTILITY(U,$J,358.3,33909,1,4,0)
+ ;;=4^R59.0
+ ;;^UTILITY(U,$J,358.3,33909,2)
+ ;;=^5019529
+ ;;^UTILITY(U,$J,358.3,33910,0)
+ ;;=C83.59^^131^1680^101
+ ;;^UTILITY(U,$J,358.3,33910,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34978,1,3,0)
- ;;=3^Nondisp fx of transverse shaft of right fibula, sequela  
- ;;^UTILITY(U,$J,358.3,34978,1,4,0)
- ;;=4^S82.424S
- ;;^UTILITY(U,$J,358.3,34978,2)
- ;;=^5041777
- ;;^UTILITY(U,$J,358.3,34979,0)
- ;;=M84.464S^^183^2024^75
- ;;^UTILITY(U,$J,358.3,34979,1,0)
+ ;;^UTILITY(U,$J,358.3,33910,1,3,0)
+ ;;=3^Lymphoblastic Lymphoma,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,33910,1,4,0)
+ ;;=4^C83.59
+ ;;^UTILITY(U,$J,358.3,33910,2)
+ ;;=^5001590
+ ;;^UTILITY(U,$J,358.3,33911,0)
+ ;;=C83.50^^131^1680^102
+ ;;^UTILITY(U,$J,358.3,33911,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34979,1,3,0)
- ;;=3^Pathological fracture, left fibula, sequela
- ;;^UTILITY(U,$J,358.3,34979,1,4,0)
- ;;=4^M84.464S
- ;;^UTILITY(U,$J,358.3,34979,2)
- ;;=^5013955
- ;;^UTILITY(U,$J,358.3,34980,0)
- ;;=M84.463S^^183^2024^77
- ;;^UTILITY(U,$J,358.3,34980,1,0)
+ ;;^UTILITY(U,$J,358.3,33911,1,3,0)
+ ;;=3^Lymphoblastic Lymphoma,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33911,1,4,0)
+ ;;=4^C83.50
+ ;;^UTILITY(U,$J,358.3,33911,2)
+ ;;=^5001581
+ ;;^UTILITY(U,$J,358.3,33912,0)
+ ;;=C43.9^^131^1680^104
+ ;;^UTILITY(U,$J,358.3,33912,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34980,1,3,0)
- ;;=3^Pathological fracture, right fibula, sequela
- ;;^UTILITY(U,$J,358.3,34980,1,4,0)
- ;;=4^M84.463S
- ;;^UTILITY(U,$J,358.3,34980,2)
- ;;=^5013949
- ;;^UTILITY(U,$J,358.3,34981,0)
- ;;=S89.312S^^183^2024^81
- ;;^UTILITY(U,$J,358.3,34981,1,0)
+ ;;^UTILITY(U,$J,358.3,33912,1,3,0)
+ ;;=3^Malig Melanoma of Skin,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33912,1,4,0)
+ ;;=4^C43.9
+ ;;^UTILITY(U,$J,358.3,33912,2)
+ ;;=^5001015
+ ;;^UTILITY(U,$J,358.3,33913,0)
+ ;;=C31.9^^131^1680^105
+ ;;^UTILITY(U,$J,358.3,33913,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34981,1,3,0)
- ;;=3^Sltr-haris Type I physeal fx lower end of l fibula, sequela
- ;;^UTILITY(U,$J,358.3,34981,1,4,0)
- ;;=4^S89.312S
- ;;^UTILITY(U,$J,358.3,34981,2)
- ;;=^5137372
- ;;^UTILITY(U,$J,358.3,34982,0)
- ;;=S89.311S^^183^2024^82
- ;;^UTILITY(U,$J,358.3,34982,1,0)
+ ;;^UTILITY(U,$J,358.3,33913,1,3,0)
+ ;;=3^Malig Neop Accessory Sinus,Unspec
+ ;;^UTILITY(U,$J,358.3,33913,1,4,0)
+ ;;=4^C31.9
+ ;;^UTILITY(U,$J,358.3,33913,2)
+ ;;=^5000953
+ ;;^UTILITY(U,$J,358.3,33914,0)
+ ;;=C24.1^^131^1680^107
+ ;;^UTILITY(U,$J,358.3,33914,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34982,1,3,0)
- ;;=3^Sltr-haris Type I physeal fx lower end of r fibula, sequela
- ;;^UTILITY(U,$J,358.3,34982,1,4,0)
- ;;=4^S89.311S
- ;;^UTILITY(U,$J,358.3,34982,2)
- ;;=^5043822
- ;;^UTILITY(U,$J,358.3,34983,0)
- ;;=S89.212S^^183^2024^85
- ;;^UTILITY(U,$J,358.3,34983,1,0)
+ ;;^UTILITY(U,$J,358.3,33914,1,3,0)
+ ;;=3^Malig Neop Ampulla of Vater
+ ;;^UTILITY(U,$J,358.3,33914,1,4,0)
+ ;;=4^C24.1
+ ;;^UTILITY(U,$J,358.3,33914,2)
+ ;;=^267100
+ ;;^UTILITY(U,$J,358.3,33915,0)
+ ;;=C21.0^^131^1680^108
+ ;;^UTILITY(U,$J,358.3,33915,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34983,1,3,0)
- ;;=3^Sltr-haris Type I physeal fx upper end of l fibula, sequela
- ;;^UTILITY(U,$J,358.3,34983,1,4,0)
- ;;=4^S89.212S
- ;;^UTILITY(U,$J,358.3,34983,2)
- ;;=^5043780
- ;;^UTILITY(U,$J,358.3,34984,0)
- ;;=S89.211S^^183^2024^86
- ;;^UTILITY(U,$J,358.3,34984,1,0)
+ ;;^UTILITY(U,$J,358.3,33915,1,3,0)
+ ;;=3^Malig Neop Anus,Unspec
+ ;;^UTILITY(U,$J,358.3,33915,1,4,0)
+ ;;=4^C21.0
+ ;;^UTILITY(U,$J,358.3,33915,2)
+ ;;=^5000930
+ ;;^UTILITY(U,$J,358.3,33916,0)
+ ;;=C67.9^^131^1680^111
+ ;;^UTILITY(U,$J,358.3,33916,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34984,1,3,0)
- ;;=3^Sltr-haris Type I physeal fx upper end of r fibula, sequela
- ;;^UTILITY(U,$J,358.3,34984,1,4,0)
- ;;=4^S89.211S
- ;;^UTILITY(U,$J,358.3,34984,2)
- ;;=^5043774
+ ;;^UTILITY(U,$J,358.3,33916,1,3,0)
+ ;;=3^Malig Neop Bladder,Unspec
+ ;;^UTILITY(U,$J,358.3,33916,1,4,0)
+ ;;=4^C67.9
+ ;;^UTILITY(U,$J,358.3,33916,2)
+ ;;=^5001263
+ ;;^UTILITY(U,$J,358.3,33917,0)
+ ;;=C71.9^^131^1680^115
+ ;;^UTILITY(U,$J,358.3,33917,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33917,1,3,0)
+ ;;=3^Malig Neop Brain,Unspec
+ ;;^UTILITY(U,$J,358.3,33917,1,4,0)
+ ;;=4^C71.9
+ ;;^UTILITY(U,$J,358.3,33917,2)
+ ;;=^5001297
+ ;;^UTILITY(U,$J,358.3,33918,0)
+ ;;=C18.9^^131^1680^117

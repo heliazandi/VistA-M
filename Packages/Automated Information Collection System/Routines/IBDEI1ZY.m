@@ -1,124 +1,130 @@
-IBDEI1ZY ; ; 06-AUG-2015
+IBDEI1ZY ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34949,1,3,0)
- ;;=3^Stress fracture, left tibia, sequela
- ;;^UTILITY(U,$J,358.3,34949,1,4,0)
- ;;=4^M84.362S
- ;;^UTILITY(U,$J,358.3,34949,2)
- ;;=^5013715
- ;;^UTILITY(U,$J,358.3,34950,0)
- ;;=M84.361S^^183^2024^106
- ;;^UTILITY(U,$J,358.3,34950,1,0)
+ ;;^UTILITY(U,$J,358.3,33879,2)
+ ;;=^5001481
+ ;;^UTILITY(U,$J,358.3,33880,0)
+ ;;=C82.39^^131^1680^70
+ ;;^UTILITY(U,$J,358.3,33880,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34950,1,3,0)
- ;;=3^Stress fracture, right tibia, sequela
- ;;^UTILITY(U,$J,358.3,34950,1,4,0)
- ;;=4^M84.361S
- ;;^UTILITY(U,$J,358.3,34950,2)
- ;;=^5013709
- ;;^UTILITY(U,$J,358.3,34951,0)
- ;;=S82.311S^^183^2024^110
- ;;^UTILITY(U,$J,358.3,34951,1,0)
+ ;;^UTILITY(U,$J,358.3,33880,1,3,0)
+ ;;=3^Follicular Lymphoma Grade IIIa,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,33880,1,4,0)
+ ;;=4^C82.39
+ ;;^UTILITY(U,$J,358.3,33880,2)
+ ;;=^5001500
+ ;;^UTILITY(U,$J,358.3,33881,0)
+ ;;=C82.30^^131^1680^71
+ ;;^UTILITY(U,$J,358.3,33881,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34951,1,3,0)
- ;;=3^Torus fracture of lower end of right tibia, sequela
- ;;^UTILITY(U,$J,358.3,34951,1,4,0)
- ;;=4^S82.311S
- ;;^UTILITY(U,$J,358.3,34951,2)
- ;;=^5041671
- ;;^UTILITY(U,$J,358.3,34952,0)
- ;;=S82.162S^^183^2024^112
- ;;^UTILITY(U,$J,358.3,34952,1,0)
+ ;;^UTILITY(U,$J,358.3,33881,1,3,0)
+ ;;=3^Follicular Lymphoma Grade IIIa,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33881,1,4,0)
+ ;;=4^C82.30
+ ;;^UTILITY(U,$J,358.3,33881,2)
+ ;;=^5001491
+ ;;^UTILITY(U,$J,358.3,33882,0)
+ ;;=C82.49^^131^1680^72
+ ;;^UTILITY(U,$J,358.3,33882,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34952,1,3,0)
- ;;=3^Torus fracture of upper end of left tibia, sequela
- ;;^UTILITY(U,$J,358.3,34952,1,4,0)
- ;;=4^S82.162S
- ;;^UTILITY(U,$J,358.3,34952,2)
- ;;=^5041074
- ;;^UTILITY(U,$J,358.3,34953,0)
- ;;=S82.312S^^183^2024^108
- ;;^UTILITY(U,$J,358.3,34953,1,0)
+ ;;^UTILITY(U,$J,358.3,33882,1,3,0)
+ ;;=3^Follicular Lymphoma Grade IIIb,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,33882,1,4,0)
+ ;;=4^C82.49
+ ;;^UTILITY(U,$J,358.3,33882,2)
+ ;;=^5001510
+ ;;^UTILITY(U,$J,358.3,33883,0)
+ ;;=C82.40^^131^1680^73
+ ;;^UTILITY(U,$J,358.3,33883,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34953,1,3,0)
- ;;=3^Torus fracture of lower end of left tibia, sequela
- ;;^UTILITY(U,$J,358.3,34953,1,4,0)
- ;;=4^S82.312S
- ;;^UTILITY(U,$J,358.3,34953,2)
- ;;=^5136891
- ;;^UTILITY(U,$J,358.3,34954,0)
- ;;=S82.161S^^183^2024^114
- ;;^UTILITY(U,$J,358.3,34954,1,0)
+ ;;^UTILITY(U,$J,358.3,33883,1,3,0)
+ ;;=3^Follicular Lymphoma Grade IIIb,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33883,1,4,0)
+ ;;=4^C82.40
+ ;;^UTILITY(U,$J,358.3,33883,2)
+ ;;=^5001501
+ ;;^UTILITY(U,$J,358.3,33884,0)
+ ;;=C82.99^^131^1680^74
+ ;;^UTILITY(U,$J,358.3,33884,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34954,1,3,0)
- ;;=3^Torus fracture of upper end of right tibia, sequela
- ;;^UTILITY(U,$J,358.3,34954,1,4,0)
- ;;=4^S82.161S
- ;;^UTILITY(U,$J,358.3,34954,2)
- ;;=^5041068
- ;;^UTILITY(U,$J,358.3,34955,0)
- ;;=S82.452S^^183^2024^3
- ;;^UTILITY(U,$J,358.3,34955,1,0)
+ ;;^UTILITY(U,$J,358.3,33884,1,3,0)
+ ;;=3^Follicular Lymphoma Unspec,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,33884,1,4,0)
+ ;;=4^C82.99
+ ;;^UTILITY(U,$J,358.3,33884,2)
+ ;;=^5001550
+ ;;^UTILITY(U,$J,358.3,33885,0)
+ ;;=C82.90^^131^1680^75
+ ;;^UTILITY(U,$J,358.3,33885,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34955,1,3,0)
- ;;=3^Disp fx of comminuted shaft of left fibula, sequela   
- ;;^UTILITY(U,$J,358.3,34955,1,4,0)
- ;;=4^S82.452S
- ;;^UTILITY(U,$J,358.3,34955,2)
- ;;=^5042033
- ;;^UTILITY(U,$J,358.3,34956,0)
- ;;=S82.451S^^183^2024^5
- ;;^UTILITY(U,$J,358.3,34956,1,0)
+ ;;^UTILITY(U,$J,358.3,33885,1,3,0)
+ ;;=3^Follicular Lymphoma Unspec,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33885,1,4,0)
+ ;;=4^C82.90
+ ;;^UTILITY(U,$J,358.3,33885,2)
+ ;;=^5001541
+ ;;^UTILITY(U,$J,358.3,33886,0)
+ ;;=R59.1^^131^1680^60
+ ;;^UTILITY(U,$J,358.3,33886,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34956,1,3,0)
- ;;=3^Disp fx of comminuted shaft of right fibula, sequela 
- ;;^UTILITY(U,$J,358.3,34956,1,4,0)
- ;;=4^S82.451S
- ;;^UTILITY(U,$J,358.3,34956,2)
- ;;=^5042017
- ;;^UTILITY(U,$J,358.3,34957,0)
- ;;=S82.62XS^^183^2024^9
- ;;^UTILITY(U,$J,358.3,34957,1,0)
+ ;;^UTILITY(U,$J,358.3,33886,1,3,0)
+ ;;=3^Enlarged Lymph Nodes,Generalized
+ ;;^UTILITY(U,$J,358.3,33886,1,4,0)
+ ;;=4^R59.1
+ ;;^UTILITY(U,$J,358.3,33886,2)
+ ;;=^5019530
+ ;;^UTILITY(U,$J,358.3,33887,0)
+ ;;=C91.40^^131^1680^79
+ ;;^UTILITY(U,$J,358.3,33887,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34957,1,3,0)
- ;;=3^Disp fx of lateral malleolus of left fibula, sequela
- ;;^UTILITY(U,$J,358.3,34957,1,4,0)
- ;;=4^S82.62XS
- ;;^UTILITY(U,$J,358.3,34957,2)
- ;;=^5042342
- ;;^UTILITY(U,$J,358.3,34958,0)
- ;;=S82.61XS^^183^2024^10
- ;;^UTILITY(U,$J,358.3,34958,1,0)
+ ;;^UTILITY(U,$J,358.3,33887,1,3,0)
+ ;;=3^Hairy Cell Leukemia,Not in Remission
+ ;;^UTILITY(U,$J,358.3,33887,1,4,0)
+ ;;=4^C91.40
+ ;;^UTILITY(U,$J,358.3,33887,2)
+ ;;=^5001771
+ ;;^UTILITY(U,$J,358.3,33888,0)
+ ;;=C91.42^^131^1680^77
+ ;;^UTILITY(U,$J,358.3,33888,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34958,1,3,0)
- ;;=3^Disp fx of lateral malleolus of right fibula, sequela
- ;;^UTILITY(U,$J,358.3,34958,1,4,0)
- ;;=4^S82.61XS
- ;;^UTILITY(U,$J,358.3,34958,2)
- ;;=^5042326
- ;;^UTILITY(U,$J,358.3,34959,0)
- ;;=S82.432S^^183^2024^17
- ;;^UTILITY(U,$J,358.3,34959,1,0)
+ ;;^UTILITY(U,$J,358.3,33888,1,3,0)
+ ;;=3^Hairy Cell Leukemia,In Relapse
+ ;;^UTILITY(U,$J,358.3,33888,1,4,0)
+ ;;=4^C91.42
+ ;;^UTILITY(U,$J,358.3,33888,2)
+ ;;=^5001773
+ ;;^UTILITY(U,$J,358.3,33889,0)
+ ;;=C91.41^^131^1680^78
+ ;;^UTILITY(U,$J,358.3,33889,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34959,1,3,0)
- ;;=3^Disp fx of oblique shaft of left fibula, sequela
- ;;^UTILITY(U,$J,358.3,34959,1,4,0)
- ;;=4^S82.432S
- ;;^UTILITY(U,$J,358.3,34959,2)
- ;;=^5041841
- ;;^UTILITY(U,$J,358.3,34960,0)
- ;;=S82.431S^^183^2024^19
- ;;^UTILITY(U,$J,358.3,34960,1,0)
+ ;;^UTILITY(U,$J,358.3,33889,1,3,0)
+ ;;=3^Hairy Cell Leukemia,In Remission
+ ;;^UTILITY(U,$J,358.3,33889,1,4,0)
+ ;;=4^C91.41
+ ;;^UTILITY(U,$J,358.3,33889,2)
+ ;;=^5001772
+ ;;^UTILITY(U,$J,358.3,33890,0)
+ ;;=D57.01^^131^1680^80
+ ;;^UTILITY(U,$J,358.3,33890,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34960,1,3,0)
- ;;=3^Disp fx of oblique shaft of right fibula, sequela  
- ;;^UTILITY(U,$J,358.3,34960,1,4,0)
- ;;=4^S82.431S
- ;;^UTILITY(U,$J,358.3,34960,2)
- ;;=^5041825
- ;;^UTILITY(U,$J,358.3,34961,0)
- ;;=S82.462S^^183^2024^25
- ;;^UTILITY(U,$J,358.3,34961,1,0)
+ ;;^UTILITY(U,$J,358.3,33890,1,3,0)
+ ;;=3^Hb-SS Disease w/ Acute Chest Syndrome
+ ;;^UTILITY(U,$J,358.3,33890,1,4,0)
+ ;;=4^D57.01
+ ;;^UTILITY(U,$J,358.3,33890,2)
+ ;;=^5002307
+ ;;^UTILITY(U,$J,358.3,33891,0)
+ ;;=D57.00^^131^1680^81
+ ;;^UTILITY(U,$J,358.3,33891,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33891,1,3,0)
+ ;;=3^Hb-SS Disease w/ Crisis,Unspec
+ ;;^UTILITY(U,$J,358.3,33891,1,4,0)
+ ;;=4^D57.00
+ ;;^UTILITY(U,$J,358.3,33891,2)
+ ;;=^5002306
+ ;;^UTILITY(U,$J,358.3,33892,0)
+ ;;=D57.02^^131^1680^82
+ ;;^UTILITY(U,$J,358.3,33892,1,0)
  ;;=^358.31IA^4^2

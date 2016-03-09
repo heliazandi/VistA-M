@@ -1,140 +1,136 @@
-IBDEI04Q ; ; 06-AUG-2015
+IBDEI04Q ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1687,1,4,0)
- ;;=4^R26.9
- ;;^UTILITY(U,$J,358.3,1687,2)
- ;;=^5019309
- ;;^UTILITY(U,$J,358.3,1688,0)
- ;;=R26.0^^3^46^11
- ;;^UTILITY(U,$J,358.3,1688,1,0)
+ ;;^UTILITY(U,$J,358.3,1786,1,4,0)
+ ;;=4^I70.513
+ ;;^UTILITY(U,$J,358.3,1786,2)
+ ;;=^5007694
+ ;;^UTILITY(U,$J,358.3,1787,0)
+ ;;=I70.8^^11^156^15
+ ;;^UTILITY(U,$J,358.3,1787,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1688,1,3,0)
- ;;=3^Ataxic gait
- ;;^UTILITY(U,$J,358.3,1688,1,4,0)
- ;;=4^R26.0
- ;;^UTILITY(U,$J,358.3,1688,2)
- ;;=^5019304
- ;;^UTILITY(U,$J,358.3,1689,0)
- ;;=R26.1^^3^46^49
- ;;^UTILITY(U,$J,358.3,1689,1,0)
+ ;;^UTILITY(U,$J,358.3,1787,1,3,0)
+ ;;=3^Atherosclerosis of Oth Arteries
+ ;;^UTILITY(U,$J,358.3,1787,1,4,0)
+ ;;=4^I70.8
+ ;;^UTILITY(U,$J,358.3,1787,2)
+ ;;=^5007783
+ ;;^UTILITY(U,$J,358.3,1788,0)
+ ;;=I71.00^^11^156^62
+ ;;^UTILITY(U,$J,358.3,1788,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1689,1,3,0)
- ;;=3^Paralytic gait
- ;;^UTILITY(U,$J,358.3,1689,1,4,0)
- ;;=4^R26.1
- ;;^UTILITY(U,$J,358.3,1689,2)
- ;;=^5019305
- ;;^UTILITY(U,$J,358.3,1690,0)
- ;;=R20.8^^3^46^59
- ;;^UTILITY(U,$J,358.3,1690,1,0)
+ ;;^UTILITY(U,$J,358.3,1788,1,3,0)
+ ;;=3^Dissection of Aorta,Unspec Site
+ ;;^UTILITY(U,$J,358.3,1788,1,4,0)
+ ;;=4^I71.00
+ ;;^UTILITY(U,$J,358.3,1788,2)
+ ;;=^35660
+ ;;^UTILITY(U,$J,358.3,1789,0)
+ ;;=I71.01^^11^156^63
+ ;;^UTILITY(U,$J,358.3,1789,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1690,1,3,0)
- ;;=3^Skin Sensation Disturbances NEC
- ;;^UTILITY(U,$J,358.3,1690,1,4,0)
- ;;=4^R20.8
- ;;^UTILITY(U,$J,358.3,1690,2)
- ;;=^5019281
- ;;^UTILITY(U,$J,358.3,1691,0)
- ;;=R20.0^^3^46^8
- ;;^UTILITY(U,$J,358.3,1691,1,0)
+ ;;^UTILITY(U,$J,358.3,1789,1,3,0)
+ ;;=3^Dissection of Thoracic Aorta
+ ;;^UTILITY(U,$J,358.3,1789,1,4,0)
+ ;;=4^I71.01
+ ;;^UTILITY(U,$J,358.3,1789,2)
+ ;;=^303289
+ ;;^UTILITY(U,$J,358.3,1790,0)
+ ;;=I71.02^^11^156^61
+ ;;^UTILITY(U,$J,358.3,1790,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1691,1,3,0)
- ;;=3^Anesthesia of skin
- ;;^UTILITY(U,$J,358.3,1691,1,4,0)
- ;;=4^R20.0
- ;;^UTILITY(U,$J,358.3,1691,2)
- ;;=^5019278
- ;;^UTILITY(U,$J,358.3,1692,0)
- ;;=R20.1^^3^46^38
- ;;^UTILITY(U,$J,358.3,1692,1,0)
+ ;;^UTILITY(U,$J,358.3,1790,1,3,0)
+ ;;=3^Dissection of Abdominal Aorta
+ ;;^UTILITY(U,$J,358.3,1790,1,4,0)
+ ;;=4^I71.02
+ ;;^UTILITY(U,$J,358.3,1790,2)
+ ;;=^303290
+ ;;^UTILITY(U,$J,358.3,1791,0)
+ ;;=I71.03^^11^156^64
+ ;;^UTILITY(U,$J,358.3,1791,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1692,1,3,0)
- ;;=3^Hypoesthesia of skin
- ;;^UTILITY(U,$J,358.3,1692,1,4,0)
- ;;=4^R20.1
- ;;^UTILITY(U,$J,358.3,1692,2)
- ;;=^5019279
- ;;^UTILITY(U,$J,358.3,1693,0)
- ;;=R20.2^^3^46^51
- ;;^UTILITY(U,$J,358.3,1693,1,0)
+ ;;^UTILITY(U,$J,358.3,1791,1,3,0)
+ ;;=3^Dissection of Thoracoabdominal Aorta
+ ;;^UTILITY(U,$J,358.3,1791,1,4,0)
+ ;;=4^I71.03
+ ;;^UTILITY(U,$J,358.3,1791,2)
+ ;;=^303291
+ ;;^UTILITY(U,$J,358.3,1792,0)
+ ;;=I71.1^^11^156^87
+ ;;^UTILITY(U,$J,358.3,1792,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1693,1,3,0)
- ;;=3^Paresthesia of skin
- ;;^UTILITY(U,$J,358.3,1693,1,4,0)
- ;;=4^R20.2
- ;;^UTILITY(U,$J,358.3,1693,2)
- ;;=^5019280
- ;;^UTILITY(U,$J,358.3,1694,0)
- ;;=R51.^^3^46^32
- ;;^UTILITY(U,$J,358.3,1694,1,0)
+ ;;^UTILITY(U,$J,358.3,1792,1,3,0)
+ ;;=3^Thoracic Aortic Aneurysm w/ Rupture
+ ;;^UTILITY(U,$J,358.3,1792,1,4,0)
+ ;;=4^I71.1
+ ;;^UTILITY(U,$J,358.3,1792,2)
+ ;;=^5007786
+ ;;^UTILITY(U,$J,358.3,1793,0)
+ ;;=I71.2^^11^156^88
+ ;;^UTILITY(U,$J,358.3,1793,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1694,1,3,0)
- ;;=3^Headache
- ;;^UTILITY(U,$J,358.3,1694,1,4,0)
- ;;=4^R51.
- ;;^UTILITY(U,$J,358.3,1694,2)
- ;;=^5019513
- ;;^UTILITY(U,$J,358.3,1695,0)
- ;;=Z86.79^^3^46^55
- ;;^UTILITY(U,$J,358.3,1695,1,0)
+ ;;^UTILITY(U,$J,358.3,1793,1,3,0)
+ ;;=3^Thoracic Aortic Aneurysm w/o Rupture
+ ;;^UTILITY(U,$J,358.3,1793,1,4,0)
+ ;;=4^I71.2
+ ;;^UTILITY(U,$J,358.3,1793,2)
+ ;;=^5007787
+ ;;^UTILITY(U,$J,358.3,1794,0)
+ ;;=I71.3^^11^156^1
+ ;;^UTILITY(U,$J,358.3,1794,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1695,1,3,0)
- ;;=3^Personal history of other diseases of the circulatory system
- ;;^UTILITY(U,$J,358.3,1695,1,4,0)
- ;;=4^Z86.79
- ;;^UTILITY(U,$J,358.3,1695,2)
- ;;=^5063479
- ;;^UTILITY(U,$J,358.3,1696,0)
- ;;=J20.9^^3^47^2
- ;;^UTILITY(U,$J,358.3,1696,1,0)
+ ;;^UTILITY(U,$J,358.3,1794,1,3,0)
+ ;;=3^Abdominal Aortic Aneurysm w/ Rupture
+ ;;^UTILITY(U,$J,358.3,1794,1,4,0)
+ ;;=4^I71.3
+ ;;^UTILITY(U,$J,358.3,1794,2)
+ ;;=^5007788
+ ;;^UTILITY(U,$J,358.3,1795,0)
+ ;;=I71.4^^11^156^2
+ ;;^UTILITY(U,$J,358.3,1795,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1696,1,3,0)
- ;;=3^Acute bronchitis, unspecified
- ;;^UTILITY(U,$J,358.3,1696,1,4,0)
- ;;=4^J20.9
- ;;^UTILITY(U,$J,358.3,1696,2)
- ;;=^5008195
- ;;^UTILITY(U,$J,358.3,1697,0)
- ;;=J21.8^^3^47^1
- ;;^UTILITY(U,$J,358.3,1697,1,0)
+ ;;^UTILITY(U,$J,358.3,1795,1,3,0)
+ ;;=3^Abdominal Aortic Aneurysm w/o Rupture
+ ;;^UTILITY(U,$J,358.3,1795,1,4,0)
+ ;;=4^I71.4
+ ;;^UTILITY(U,$J,358.3,1795,2)
+ ;;=^5007789
+ ;;^UTILITY(U,$J,358.3,1796,0)
+ ;;=I71.8^^11^156^9
+ ;;^UTILITY(U,$J,358.3,1796,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1697,1,3,0)
- ;;=3^Acute bronchiolitis due to other specified organisms
- ;;^UTILITY(U,$J,358.3,1697,1,4,0)
- ;;=4^J21.8
- ;;^UTILITY(U,$J,358.3,1697,2)
- ;;=^5008198
- ;;^UTILITY(U,$J,358.3,1698,0)
- ;;=J44.9^^3^47^11
- ;;^UTILITY(U,$J,358.3,1698,1,0)
+ ;;^UTILITY(U,$J,358.3,1796,1,3,0)
+ ;;=3^Aortic Aneurysm of Unspec Site w/ Rupture
+ ;;^UTILITY(U,$J,358.3,1796,1,4,0)
+ ;;=4^I71.8
+ ;;^UTILITY(U,$J,358.3,1796,2)
+ ;;=^9279
+ ;;^UTILITY(U,$J,358.3,1797,0)
+ ;;=I71.5^^11^156^89
+ ;;^UTILITY(U,$J,358.3,1797,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1698,1,3,0)
- ;;=3^Chronic obstructive pulmonary disease, unspecified
- ;;^UTILITY(U,$J,358.3,1698,1,4,0)
- ;;=4^J44.9
- ;;^UTILITY(U,$J,358.3,1698,2)
- ;;=^5008241
- ;;^UTILITY(U,$J,358.3,1699,0)
- ;;=J44.1^^3^47^10
- ;;^UTILITY(U,$J,358.3,1699,1,0)
+ ;;^UTILITY(U,$J,358.3,1797,1,3,0)
+ ;;=3^Thoracoabdominal Aortic Aneurysm w/ Rupture
+ ;;^UTILITY(U,$J,358.3,1797,1,4,0)
+ ;;=4^I71.5
+ ;;^UTILITY(U,$J,358.3,1797,2)
+ ;;=^5007790
+ ;;^UTILITY(U,$J,358.3,1798,0)
+ ;;=I71.6^^11^156^90
+ ;;^UTILITY(U,$J,358.3,1798,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1699,1,3,0)
- ;;=3^Chronic obstructive pulmonary disease w (acute) exacerbation
- ;;^UTILITY(U,$J,358.3,1699,1,4,0)
- ;;=4^J44.1
- ;;^UTILITY(U,$J,358.3,1699,2)
- ;;=^5008240
- ;;^UTILITY(U,$J,358.3,1700,0)
- ;;=J42.^^3^47^8
- ;;^UTILITY(U,$J,358.3,1700,1,0)
+ ;;^UTILITY(U,$J,358.3,1798,1,3,0)
+ ;;=3^Thoracoabdominal Aortic Aneurysm w/o Rupture
+ ;;^UTILITY(U,$J,358.3,1798,1,4,0)
+ ;;=4^I71.6
+ ;;^UTILITY(U,$J,358.3,1798,2)
+ ;;=^5007791
+ ;;^UTILITY(U,$J,358.3,1799,0)
+ ;;=I72.1^^11^156^8
+ ;;^UTILITY(U,$J,358.3,1799,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1700,1,3,0)
- ;;=3^Chronic Bronchitis,Unspec
- ;;^UTILITY(U,$J,358.3,1700,1,4,0)
- ;;=4^J42.
- ;;^UTILITY(U,$J,358.3,1700,2)
- ;;=^5008234
- ;;^UTILITY(U,$J,358.3,1701,0)
- ;;=J43.9^^3^47^13
+ ;;^UTILITY(U,$J,358.3,1799,1,3,0)
+ ;;=3^Aneurysm of Upper Extremity Artery
+ ;;^UTILITY(U,$J,358.3,1799,1,4,0)
+ ;;=4^I72.1

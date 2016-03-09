@@ -1,136 +1,124 @@
-IBDEI1GW ; ; 06-AUG-2015
+IBDEI1GW ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,26032,1,2,0)
- ;;=2^295.92
- ;;^UTILITY(U,$J,358.3,26032,1,5,0)
- ;;=5^Schizophrenia, NOS, Chronic
- ;;^UTILITY(U,$J,358.3,26032,2)
- ;;=Schizophrenia, NOS, Chronic^268093
- ;;^UTILITY(U,$J,358.3,26033,0)
- ;;=295.94^^150^1652^15
- ;;^UTILITY(U,$J,358.3,26033,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26033,1,2,0)
- ;;=2^295.94
- ;;^UTILITY(U,$J,358.3,26033,1,5,0)
- ;;=5^Schizophrenia, NOS, Chronic w/Exacerbation
- ;;^UTILITY(U,$J,358.3,26033,2)
- ;;=^268095
- ;;^UTILITY(U,$J,358.3,26034,0)
- ;;=295.00^^150^1652^19
- ;;^UTILITY(U,$J,358.3,26034,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26034,1,2,0)
- ;;=2^295.00
- ;;^UTILITY(U,$J,358.3,26034,1,5,0)
- ;;=5^Simple Schizophrenia NOS
- ;;^UTILITY(U,$J,358.3,26034,2)
- ;;=^265175
- ;;^UTILITY(U,$J,358.3,26035,0)
- ;;=295.10^^150^1652^1
- ;;^UTILITY(U,$J,358.3,26035,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26035,1,2,0)
- ;;=2^295.10
- ;;^UTILITY(U,$J,358.3,26035,1,5,0)
- ;;=5^Disorganized Schizophrenia NOS
- ;;^UTILITY(U,$J,358.3,26035,2)
- ;;=^108319
- ;;^UTILITY(U,$J,358.3,26036,0)
- ;;=295.30^^150^1652^7
- ;;^UTILITY(U,$J,358.3,26036,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26036,1,2,0)
- ;;=2^295.30
- ;;^UTILITY(U,$J,358.3,26036,1,5,0)
- ;;=5^Paranoid Schizophrenia NOS
- ;;^UTILITY(U,$J,358.3,26036,2)
- ;;=^108330
- ;;^UTILITY(U,$J,358.3,26037,0)
- ;;=295.40^^150^1652^16
- ;;^UTILITY(U,$J,358.3,26037,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26037,1,2,0)
- ;;=2^295.40
- ;;^UTILITY(U,$J,358.3,26037,1,5,0)
- ;;=5^Schizophreniform Disorder NOS
- ;;^UTILITY(U,$J,358.3,26037,2)
- ;;=^331845
- ;;^UTILITY(U,$J,358.3,26038,0)
- ;;=295.50^^150^1652^4
- ;;^UTILITY(U,$J,358.3,26038,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26038,1,2,0)
- ;;=2^295.50
- ;;^UTILITY(U,$J,358.3,26038,1,5,0)
- ;;=5^Latent Schizophrenia NOS
- ;;^UTILITY(U,$J,358.3,26038,2)
- ;;=^68517
- ;;^UTILITY(U,$J,358.3,26039,0)
- ;;=295.60^^150^1652^22
- ;;^UTILITY(U,$J,358.3,26039,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26039,1,2,0)
- ;;=2^295.60
- ;;^UTILITY(U,$J,358.3,26039,1,5,0)
- ;;=5^Undifferentiated Schizophrenia NOS
- ;;^UTILITY(U,$J,358.3,26039,2)
- ;;=^331851
- ;;^UTILITY(U,$J,358.3,26040,0)
- ;;=295.70^^150^1652^10
- ;;^UTILITY(U,$J,358.3,26040,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26040,1,2,0)
- ;;=2^295.70
- ;;^UTILITY(U,$J,358.3,26040,1,5,0)
- ;;=5^Schizoaffective Disorder NOS
- ;;^UTILITY(U,$J,358.3,26040,2)
- ;;=^331857
- ;;^UTILITY(U,$J,358.3,26041,0)
- ;;=295.90^^150^1652^13
- ;;^UTILITY(U,$J,358.3,26041,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26041,1,2,0)
- ;;=2^295.90
- ;;^UTILITY(U,$J,358.3,26041,1,5,0)
- ;;=5^Schizophrenia NOS,Unspec
- ;;^UTILITY(U,$J,358.3,26041,2)
- ;;=^108287
- ;;^UTILITY(U,$J,358.3,26042,0)
- ;;=300.11^^150^1653^1
- ;;^UTILITY(U,$J,358.3,26042,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26042,1,2,0)
- ;;=2^300.11
- ;;^UTILITY(U,$J,358.3,26042,1,5,0)
- ;;=5^Conversion Disorder
- ;;^UTILITY(U,$J,358.3,26042,2)
- ;;=^28139
- ;;^UTILITY(U,$J,358.3,26043,0)
- ;;=300.7^^150^1653^2
- ;;^UTILITY(U,$J,358.3,26043,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26043,1,2,0)
- ;;=2^300.7
- ;;^UTILITY(U,$J,358.3,26043,1,5,0)
- ;;=5^Hyponchondriasis
- ;;^UTILITY(U,$J,358.3,26043,2)
- ;;=^60556
- ;;^UTILITY(U,$J,358.3,26044,0)
- ;;=300.81^^150^1653^3
- ;;^UTILITY(U,$J,358.3,26044,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26044,1,2,0)
- ;;=2^300.81
- ;;^UTILITY(U,$J,358.3,26044,1,5,0)
- ;;=5^Somatization Disorder
- ;;^UTILITY(U,$J,358.3,26044,2)
- ;;=^112280
- ;;^UTILITY(U,$J,358.3,26045,0)
- ;;=307.1^^150^1654^1
- ;;^UTILITY(U,$J,358.3,26045,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26045,1,2,0)
- ;;=2^307.1
+ ;;^UTILITY(U,$J,358.3,24921,1,4,0)
+ ;;=4^F16.983
+ ;;^UTILITY(U,$J,358.3,24921,2)
+ ;;=^5003358
+ ;;^UTILITY(U,$J,358.3,24922,0)
+ ;;=F16.121^^93^1119^10
+ ;;^UTILITY(U,$J,358.3,24922,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24922,1,3,0)
+ ;;=3^Hallucinogen Intoxication Delirium w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,24922,1,4,0)
+ ;;=4^F16.121
+ ;;^UTILITY(U,$J,358.3,24922,2)
+ ;;=^5003325
+ ;;^UTILITY(U,$J,358.3,24923,0)
+ ;;=F16.221^^93^1119^11
+ ;;^UTILITY(U,$J,358.3,24923,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24923,1,3,0)
+ ;;=3^Hallucinogen Intoxication Delirium w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24923,1,4,0)
+ ;;=4^F16.221
+ ;;^UTILITY(U,$J,358.3,24923,2)
+ ;;=^5003339
+ ;;^UTILITY(U,$J,358.3,24924,0)
+ ;;=F16.921^^93^1119^12
+ ;;^UTILITY(U,$J,358.3,24924,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24924,1,3,0)
+ ;;=3^Hallucinogen Intoxication Delirium w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24924,1,4,0)
+ ;;=4^F16.921
+ ;;^UTILITY(U,$J,358.3,24924,2)
+ ;;=^5003351
+ ;;^UTILITY(U,$J,358.3,24925,0)
+ ;;=F16.129^^93^1119^13
+ ;;^UTILITY(U,$J,358.3,24925,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24925,1,3,0)
+ ;;=3^Hallucinogen Intoxication w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,24925,1,4,0)
+ ;;=4^F16.129
+ ;;^UTILITY(U,$J,358.3,24925,2)
+ ;;=^5003327
+ ;;^UTILITY(U,$J,358.3,24926,0)
+ ;;=F16.229^^93^1119^14
+ ;;^UTILITY(U,$J,358.3,24926,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24926,1,3,0)
+ ;;=3^Hallucinogen Intoxication w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24926,1,4,0)
+ ;;=4^F16.229
+ ;;^UTILITY(U,$J,358.3,24926,2)
+ ;;=^5003340
+ ;;^UTILITY(U,$J,358.3,24927,0)
+ ;;=F16.929^^93^1119^15
+ ;;^UTILITY(U,$J,358.3,24927,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24927,1,3,0)
+ ;;=3^Hallucinogen Intoxication w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24927,1,4,0)
+ ;;=4^F16.929
+ ;;^UTILITY(U,$J,358.3,24927,2)
+ ;;=^5003352
+ ;;^UTILITY(U,$J,358.3,24928,0)
+ ;;=F16.180^^93^1119^1
+ ;;^UTILITY(U,$J,358.3,24928,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24928,1,3,0)
+ ;;=3^Hallucinogen Induced Anxiety Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,24928,1,4,0)
+ ;;=4^F16.180
+ ;;^UTILITY(U,$J,358.3,24928,2)
+ ;;=^5003332
+ ;;^UTILITY(U,$J,358.3,24929,0)
+ ;;=F16.280^^93^1119^2
+ ;;^UTILITY(U,$J,358.3,24929,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24929,1,3,0)
+ ;;=3^Hallucinogen Induced Anxiety Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24929,1,4,0)
+ ;;=4^F16.280
+ ;;^UTILITY(U,$J,358.3,24929,2)
+ ;;=^5003345
+ ;;^UTILITY(U,$J,358.3,24930,0)
+ ;;=F16.980^^93^1119^3
+ ;;^UTILITY(U,$J,358.3,24930,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24930,1,3,0)
+ ;;=3^Hallucinogen Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24930,1,4,0)
+ ;;=4^F16.980
+ ;;^UTILITY(U,$J,358.3,24930,2)
+ ;;=^5003357
+ ;;^UTILITY(U,$J,358.3,24931,0)
+ ;;=F16.14^^93^1119^4
+ ;;^UTILITY(U,$J,358.3,24931,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24931,1,3,0)
+ ;;=3^Hallucinogen Induced Bipolar Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,24931,1,4,0)
+ ;;=4^F16.14
+ ;;^UTILITY(U,$J,358.3,24931,2)
+ ;;=^5003328
+ ;;^UTILITY(U,$J,358.3,24932,0)
+ ;;=F16.24^^93^1119^5
+ ;;^UTILITY(U,$J,358.3,24932,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24932,1,3,0)
+ ;;=3^Hallucinogen Induced Bipolar Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24932,1,4,0)
+ ;;=4^F16.24
+ ;;^UTILITY(U,$J,358.3,24932,2)
+ ;;=^5003341
+ ;;^UTILITY(U,$J,358.3,24933,0)
+ ;;=F16.94^^93^1119^6
+ ;;^UTILITY(U,$J,358.3,24933,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24933,1,3,0)
+ ;;=3^Hallucinogen Induced Bipolar Disorder w/o Use Disorder

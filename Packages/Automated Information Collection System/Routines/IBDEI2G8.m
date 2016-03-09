@@ -1,0 +1,134 @@
+IBDEI2G8 ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,41534,1,4,0)
+ ;;=4^Z99.81
+ ;;^UTILITY(U,$J,358.3,41534,2)
+ ;;=^5063760
+ ;;^UTILITY(U,$J,358.3,41535,0)
+ ;;=Z90.79^^159^2005^2
+ ;;^UTILITY(U,$J,358.3,41535,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41535,1,3,0)
+ ;;=3^Acquired Absence of Genital Organs NEC
+ ;;^UTILITY(U,$J,358.3,41535,1,4,0)
+ ;;=4^Z90.79
+ ;;^UTILITY(U,$J,358.3,41535,2)
+ ;;=^5063596
+ ;;^UTILITY(U,$J,358.3,41536,0)
+ ;;=Z90.5^^159^2005^3
+ ;;^UTILITY(U,$J,358.3,41536,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41536,1,3,0)
+ ;;=3^Acquired Absence of Kidney
+ ;;^UTILITY(U,$J,358.3,41536,1,4,0)
+ ;;=4^Z90.5
+ ;;^UTILITY(U,$J,358.3,41536,2)
+ ;;=^5063590
+ ;;^UTILITY(U,$J,358.3,41537,0)
+ ;;=Z90.2^^159^2005^6
+ ;;^UTILITY(U,$J,358.3,41537,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41537,1,3,0)
+ ;;=3^Acquired Absence of Lung (part of)
+ ;;^UTILITY(U,$J,358.3,41537,1,4,0)
+ ;;=4^Z90.2
+ ;;^UTILITY(U,$J,358.3,41537,2)
+ ;;=^5063585
+ ;;^UTILITY(U,$J,358.3,41538,0)
+ ;;=Z98.1^^159^2005^10
+ ;;^UTILITY(U,$J,358.3,41538,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41538,1,3,0)
+ ;;=3^Arthrodesis Status
+ ;;^UTILITY(U,$J,358.3,41538,1,4,0)
+ ;;=4^Z98.1
+ ;;^UTILITY(U,$J,358.3,41538,2)
+ ;;=^5063734
+ ;;^UTILITY(U,$J,358.3,41539,0)
+ ;;=Z94.7^^159^2005^16
+ ;;^UTILITY(U,$J,358.3,41539,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41539,1,3,0)
+ ;;=3^Corneal Transplant Status
+ ;;^UTILITY(U,$J,358.3,41539,1,4,0)
+ ;;=4^Z94.7
+ ;;^UTILITY(U,$J,358.3,41539,2)
+ ;;=^5063661
+ ;;^UTILITY(U,$J,358.3,41540,0)
+ ;;=Z83.511^^159^2005^30
+ ;;^UTILITY(U,$J,358.3,41540,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41540,1,3,0)
+ ;;=3^Family Hx of Glaucoma
+ ;;^UTILITY(U,$J,358.3,41540,1,4,0)
+ ;;=4^Z83.511
+ ;;^UTILITY(U,$J,358.3,41540,2)
+ ;;=^5063382
+ ;;^UTILITY(U,$J,358.3,41541,0)
+ ;;=Z80.52^^159^2005^33
+ ;;^UTILITY(U,$J,358.3,41541,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41541,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Baldder
+ ;;^UTILITY(U,$J,358.3,41541,1,4,0)
+ ;;=4^Z80.52
+ ;;^UTILITY(U,$J,358.3,41541,2)
+ ;;=^5063352
+ ;;^UTILITY(U,$J,358.3,41542,0)
+ ;;=Z80.51^^159^2005^36
+ ;;^UTILITY(U,$J,358.3,41542,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41542,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Kidney
+ ;;^UTILITY(U,$J,358.3,41542,1,4,0)
+ ;;=4^Z80.51
+ ;;^UTILITY(U,$J,358.3,41542,2)
+ ;;=^321159
+ ;;^UTILITY(U,$J,358.3,41543,0)
+ ;;=Z83.41^^159^2005^43
+ ;;^UTILITY(U,$J,358.3,41543,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41543,1,3,0)
+ ;;=3^Family Hx of Mult Endocrine Neoplasia Syndrome
+ ;;^UTILITY(U,$J,358.3,41543,1,4,0)
+ ;;=4^Z83.41
+ ;;^UTILITY(U,$J,358.3,41543,2)
+ ;;=^5063380
+ ;;^UTILITY(U,$J,358.3,41544,0)
+ ;;=Z81.8^^159^2005^50
+ ;;^UTILITY(U,$J,358.3,41544,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41544,1,3,0)
+ ;;=3^Family Hx of Substance Abuse/Dependence,Psychoactive
+ ;;^UTILITY(U,$J,358.3,41544,1,4,0)
+ ;;=4^Z81.8
+ ;;^UTILITY(U,$J,358.3,41544,2)
+ ;;=^5063363
+ ;;^UTILITY(U,$J,358.3,41545,0)
+ ;;=Z81.4^^159^2005^51
+ ;;^UTILITY(U,$J,358.3,41545,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41545,1,3,0)
+ ;;=3^Family Hx of Substance Abuse/Dependence NEC
+ ;;^UTILITY(U,$J,358.3,41545,1,4,0)
+ ;;=4^Z81.4
+ ;;^UTILITY(U,$J,358.3,41545,2)
+ ;;=^5063362
+ ;;^UTILITY(U,$J,358.3,41546,0)
+ ;;=Z98.0^^159^2005^62
+ ;;^UTILITY(U,$J,358.3,41546,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41546,1,3,0)
+ ;;=3^Intestinal Bypass/Anastomosis Status
+ ;;^UTILITY(U,$J,358.3,41546,1,4,0)
+ ;;=4^Z98.0
+ ;;^UTILITY(U,$J,358.3,41546,2)
+ ;;=^5063733
+ ;;^UTILITY(U,$J,358.3,41547,0)
+ ;;=Z91.128^^159^2005^61
+ ;;^UTILITY(U,$J,358.3,41547,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41547,1,3,0)
+ ;;=3^Intentional Underdose of Meds d/t Other Reasons

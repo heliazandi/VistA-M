@@ -1,124 +1,136 @@
-IBDEI10F ; ; 06-AUG-2015
+IBDEI10F ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,17786,1,5,0)
- ;;=5^Antisocial Personality Dis
- ;;^UTILITY(U,$J,358.3,17786,2)
- ;;=Antisocial Personality Dis^9066
- ;;^UTILITY(U,$J,358.3,17787,0)
- ;;=301.82^^94^1133^2
- ;;^UTILITY(U,$J,358.3,17787,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17787,1,2,0)
- ;;=2^301.82
- ;;^UTILITY(U,$J,358.3,17787,1,5,0)
- ;;=5^Avoidant Personality Disorder
- ;;^UTILITY(U,$J,358.3,17787,2)
- ;;=Avoidant Personality Disorder^265347
- ;;^UTILITY(U,$J,358.3,17788,0)
- ;;=301.83^^94^1133^3
- ;;^UTILITY(U,$J,358.3,17788,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17788,1,2,0)
- ;;=2^301.83
- ;;^UTILITY(U,$J,358.3,17788,1,5,0)
- ;;=5^Borderline Personality Disorder
- ;;^UTILITY(U,$J,358.3,17788,2)
- ;;=Borderline Personality Disorder^16372
- ;;^UTILITY(U,$J,358.3,17789,0)
- ;;=301.6^^94^1133^6
- ;;^UTILITY(U,$J,358.3,17789,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17789,1,2,0)
- ;;=2^301.6
- ;;^UTILITY(U,$J,358.3,17789,1,5,0)
- ;;=5^Dependent Personality Disorder
- ;;^UTILITY(U,$J,358.3,17789,2)
- ;;=Dependent Personality Disorder^32860
- ;;^UTILITY(U,$J,358.3,17790,0)
- ;;=301.50^^94^1133^8
- ;;^UTILITY(U,$J,358.3,17790,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17790,1,2,0)
- ;;=2^301.50
- ;;^UTILITY(U,$J,358.3,17790,1,5,0)
- ;;=5^Histrionic Personality Disorder
- ;;^UTILITY(U,$J,358.3,17790,2)
- ;;=Histrionic Personality Disorder^57763
- ;;^UTILITY(U,$J,358.3,17791,0)
- ;;=301.81^^94^1133^11
- ;;^UTILITY(U,$J,358.3,17791,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17791,1,2,0)
- ;;=2^301.81
- ;;^UTILITY(U,$J,358.3,17791,1,5,0)
- ;;=5^Narcissistic Personality Disorder
- ;;^UTILITY(U,$J,358.3,17791,2)
- ;;=Narcissistic Personality Disorder^265353
- ;;^UTILITY(U,$J,358.3,17792,0)
- ;;=301.0^^94^1133^12
- ;;^UTILITY(U,$J,358.3,17792,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17792,1,2,0)
- ;;=2^301.0
- ;;^UTILITY(U,$J,358.3,17792,1,5,0)
- ;;=5^Paranoid Personality Disorder
- ;;^UTILITY(U,$J,358.3,17792,2)
- ;;=Paranoid Personality Disorder^89982
- ;;^UTILITY(U,$J,358.3,17793,0)
- ;;=301.9^^94^1133^16
- ;;^UTILITY(U,$J,358.3,17793,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17793,1,2,0)
- ;;=2^301.9
- ;;^UTILITY(U,$J,358.3,17793,1,5,0)
- ;;=5^Unspecified Personality Disorder
- ;;^UTILITY(U,$J,358.3,17793,2)
- ;;=Unspecified Personality Disorder^92451
- ;;^UTILITY(U,$J,358.3,17794,0)
- ;;=301.20^^94^1133^14
- ;;^UTILITY(U,$J,358.3,17794,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17794,1,2,0)
- ;;=2^301.20
- ;;^UTILITY(U,$J,358.3,17794,1,5,0)
- ;;=5^Schizoid Personality Disorder
- ;;^UTILITY(U,$J,358.3,17794,2)
- ;;=^108271
- ;;^UTILITY(U,$J,358.3,17795,0)
- ;;=301.22^^94^1133^15
- ;;^UTILITY(U,$J,358.3,17795,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17795,1,2,0)
- ;;=2^301.22
- ;;^UTILITY(U,$J,358.3,17795,1,5,0)
- ;;=5^Schizotypal Personality Disorder
- ;;^UTILITY(U,$J,358.3,17795,2)
- ;;=Schizotypal Personality Disorder^108367
- ;;^UTILITY(U,$J,358.3,17796,0)
- ;;=301.4^^94^1133^4
- ;;^UTILITY(U,$J,358.3,17796,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17796,1,2,0)
- ;;=2^301.4
- ;;^UTILITY(U,$J,358.3,17796,1,5,0)
- ;;=5^Compulsive Personality Disorder
- ;;^UTILITY(U,$J,358.3,17796,2)
- ;;=Compulsive Personality Disorder^27122
- ;;^UTILITY(U,$J,358.3,17797,0)
- ;;=301.84^^94^1133^13
- ;;^UTILITY(U,$J,358.3,17797,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17797,1,2,0)
- ;;=2^301.84
- ;;^UTILITY(U,$J,358.3,17797,1,5,0)
- ;;=5^Passive-Aggressive Personality Dis
- ;;^UTILITY(U,$J,358.3,17797,2)
- ;;=Passive-Aggressive Personality Dis^90602
- ;;^UTILITY(U,$J,358.3,17798,0)
- ;;=301.11^^94^1133^9
- ;;^UTILITY(U,$J,358.3,17798,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,17798,1,2,0)
- ;;=2^301.11
+ ;;^UTILITY(U,$J,358.3,17128,1,4,0)
+ ;;=4^E10.621
+ ;;^UTILITY(U,$J,358.3,17128,2)
+ ;;=^5002616
+ ;;^UTILITY(U,$J,358.3,17129,0)
+ ;;=E10.649^^70^811^5
+ ;;^UTILITY(U,$J,358.3,17129,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17129,1,3,0)
+ ;;=3^Type 1 DM w/ Hypoglycemia w/o Coma
+ ;;^UTILITY(U,$J,358.3,17129,1,4,0)
+ ;;=4^E10.649
+ ;;^UTILITY(U,$J,358.3,17129,2)
+ ;;=^5002622
+ ;;^UTILITY(U,$J,358.3,17130,0)
+ ;;=E11.621^^70^811^8
+ ;;^UTILITY(U,$J,358.3,17130,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17130,1,3,0)
+ ;;=3^Type 2 DM w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,17130,1,4,0)
+ ;;=4^E11.621
+ ;;^UTILITY(U,$J,358.3,17130,2)
+ ;;=^5002656
+ ;;^UTILITY(U,$J,358.3,17131,0)
+ ;;=E11.649^^70^811^10
+ ;;^UTILITY(U,$J,358.3,17131,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17131,1,3,0)
+ ;;=3^Type 2 DM w/ Hypoglycemia w/o Coma
+ ;;^UTILITY(U,$J,358.3,17131,1,4,0)
+ ;;=4^E11.649
+ ;;^UTILITY(U,$J,358.3,17131,2)
+ ;;=^5002662
+ ;;^UTILITY(U,$J,358.3,17132,0)
+ ;;=99211^^71^812^2
+ ;;^UTILITY(U,$J,358.3,17132,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,17132,1,1,0)
+ ;;=1^OFFICE VISIT
+ ;;^UTILITY(U,$J,358.3,17132,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,17133,0)
+ ;;=99211^^71^813^1
+ ;;^UTILITY(U,$J,358.3,17133,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,17133,1,1,0)
+ ;;=1^F-T-F INTERVENTION
+ ;;^UTILITY(U,$J,358.3,17133,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,17134,0)
+ ;;=99211^^71^814^1
+ ;;^UTILITY(U,$J,358.3,17134,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,17134,1,1,0)
+ ;;=1^CCHT VIDEO VISIT
+ ;;^UTILITY(U,$J,358.3,17134,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,17134,3,0)
+ ;;=^358.33^1^1
+ ;;^UTILITY(U,$J,358.3,17134,3,1,0)
+ ;;=GT
+ ;;^UTILITY(U,$J,358.3,17135,0)
+ ;;=99078^^72^815^3^^^^1
+ ;;^UTILITY(U,$J,358.3,17135,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17135,1,2,0)
+ ;;=2^99078
+ ;;^UTILITY(U,$J,358.3,17135,1,3,0)
+ ;;=3^GROUP HEALTH EDUCATION
+ ;;^UTILITY(U,$J,358.3,17136,0)
+ ;;=94760^^72^815^7^^^^1
+ ;;^UTILITY(U,$J,358.3,17136,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17136,1,2,0)
+ ;;=2^94760
+ ;;^UTILITY(U,$J,358.3,17136,1,3,0)
+ ;;=3^PULSE OXIMETRY
+ ;;^UTILITY(U,$J,358.3,17137,0)
+ ;;=99080^^72^815^9^^^^1
+ ;;^UTILITY(U,$J,358.3,17137,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17137,1,2,0)
+ ;;=2^99080
+ ;;^UTILITY(U,$J,358.3,17137,1,3,0)
+ ;;=3^SPECIAL REPORTS OR FORMS
+ ;;^UTILITY(U,$J,358.3,17138,0)
+ ;;=97535^^72^815^8^^^^1
+ ;;^UTILITY(U,$J,358.3,17138,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17138,1,2,0)
+ ;;=2^97535
+ ;;^UTILITY(U,$J,358.3,17138,1,3,0)
+ ;;=3^SELF CARE MNGMENT TRAINING
+ ;;^UTILITY(U,$J,358.3,17139,0)
+ ;;=99366^^72^815^10^^^^1
+ ;;^UTILITY(U,$J,358.3,17139,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17139,1,2,0)
+ ;;=2^99366
+ ;;^UTILITY(U,$J,358.3,17139,1,3,0)
+ ;;=3^TEAM CONF W/PAT BY HC PRO
+ ;;^UTILITY(U,$J,358.3,17140,0)
+ ;;=99499^^72^815^11^^^^1
+ ;;^UTILITY(U,$J,358.3,17140,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17140,1,2,0)
+ ;;=2^99499
+ ;;^UTILITY(U,$J,358.3,17140,1,3,0)
+ ;;=3^UNLISTED E&M SERVICE
+ ;;^UTILITY(U,$J,358.3,17141,0)
+ ;;=G0108^^72^815^2^^^^1
+ ;;^UTILITY(U,$J,358.3,17141,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17141,1,2,0)
+ ;;=2^G0108
+ ;;^UTILITY(U,$J,358.3,17141,1,3,0)
+ ;;=3^DM MGMT TRN PER INDIV PER 30MIN
+ ;;^UTILITY(U,$J,358.3,17142,0)
+ ;;=G0109^^72^815^1^^^^1
+ ;;^UTILITY(U,$J,358.3,17142,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17142,1,2,0)
+ ;;=2^G0109
+ ;;^UTILITY(U,$J,358.3,17142,1,3,0)
+ ;;=3^DM MGMT TRN GRP PER 30MIN
+ ;;^UTILITY(U,$J,358.3,17143,0)
+ ;;=A9279^^72^815^5^^^^1
+ ;;^UTILITY(U,$J,358.3,17143,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17143,1,2,0)
+ ;;=2^A9279

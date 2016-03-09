@@ -1,126 +1,138 @@
-IBDEI1RM ; ; 06-AUG-2015
+IBDEI1RM ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31181,0)
- ;;=S02.19XS^^180^1947^10
- ;;^UTILITY(U,$J,358.3,31181,1,0)
+ ;;^UTILITY(U,$J,358.3,30005,1,4,0)
+ ;;=4^D61.9
+ ;;^UTILITY(U,$J,358.3,30005,2)
+ ;;=^5002342
+ ;;^UTILITY(U,$J,358.3,30006,0)
+ ;;=D62.^^118^1493^3
+ ;;^UTILITY(U,$J,358.3,30006,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31181,1,3,0)
- ;;=3^Fracture of base of skull NEC sequela
- ;;^UTILITY(U,$J,358.3,31181,1,4,0)
- ;;=4^S02.19XS
- ;;^UTILITY(U,$J,358.3,31181,2)
- ;;=^5020305
- ;;^UTILITY(U,$J,358.3,31182,0)
- ;;=S02.118S^^180^1947^18
- ;;^UTILITY(U,$J,358.3,31182,1,0)
+ ;;^UTILITY(U,$J,358.3,30006,1,3,0)
+ ;;=3^Acute posthemorrhagic anemia
+ ;;^UTILITY(U,$J,358.3,30006,1,4,0)
+ ;;=4^D62.
+ ;;^UTILITY(U,$J,358.3,30006,2)
+ ;;=^267986
+ ;;^UTILITY(U,$J,358.3,30007,0)
+ ;;=D63.1^^118^1493^7
+ ;;^UTILITY(U,$J,358.3,30007,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31182,1,3,0)
- ;;=3^Fracture of occiput NEC, sequela
- ;;^UTILITY(U,$J,358.3,31182,1,4,0)
- ;;=4^S02.118S
- ;;^UTILITY(U,$J,358.3,31182,2)
- ;;=^5020293
- ;;^UTILITY(U,$J,358.3,31183,0)
- ;;=S58.922S^^180^1947^46
- ;;^UTILITY(U,$J,358.3,31183,1,0)
+ ;;^UTILITY(U,$J,358.3,30007,1,3,0)
+ ;;=3^Anemia in chronic kidney disease
+ ;;^UTILITY(U,$J,358.3,30007,1,4,0)
+ ;;=4^D63.1
+ ;;^UTILITY(U,$J,358.3,30007,2)
+ ;;=^332908
+ ;;^UTILITY(U,$J,358.3,30008,0)
+ ;;=D63.0^^118^1493^8
+ ;;^UTILITY(U,$J,358.3,30008,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31183,1,3,0)
- ;;=3^Partial traumatic amp of l forearm, level unsp, sequela
- ;;^UTILITY(U,$J,358.3,31183,1,4,0)
- ;;=4^S58.922S
- ;;^UTILITY(U,$J,358.3,31183,2)
- ;;=^5031957
- ;;^UTILITY(U,$J,358.3,31184,0)
- ;;=T65.91XS^^180^1947^47
- ;;^UTILITY(U,$J,358.3,31184,1,0)
+ ;;^UTILITY(U,$J,358.3,30008,1,3,0)
+ ;;=3^Anemia in neoplastic disease
+ ;;^UTILITY(U,$J,358.3,30008,1,4,0)
+ ;;=4^D63.0
+ ;;^UTILITY(U,$J,358.3,30008,2)
+ ;;=^321978
+ ;;^UTILITY(U,$J,358.3,30009,0)
+ ;;=D63.8^^118^1493^9
+ ;;^UTILITY(U,$J,358.3,30009,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31184,1,3,0)
- ;;=3^Toxic effect of unsp substance, accidental, sequela
- ;;^UTILITY(U,$J,358.3,31184,1,4,0)
- ;;=4^T65.91XS
- ;;^UTILITY(U,$J,358.3,31184,2)
- ;;=^5053908
- ;;^UTILITY(U,$J,358.3,31185,0)
- ;;=T65.93XS^^180^1947^49
- ;;^UTILITY(U,$J,358.3,31185,1,0)
+ ;;^UTILITY(U,$J,358.3,30009,1,3,0)
+ ;;=3^Anemia in other chronic diseases classified elsewhere
+ ;;^UTILITY(U,$J,358.3,30009,1,4,0)
+ ;;=4^D63.8
+ ;;^UTILITY(U,$J,358.3,30009,2)
+ ;;=^5002343
+ ;;^UTILITY(U,$J,358.3,30010,0)
+ ;;=D64.81^^118^1493^4
+ ;;^UTILITY(U,$J,358.3,30010,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31185,1,3,0)
- ;;=3^Toxic effect of unspecified substance, assault, sequela
- ;;^UTILITY(U,$J,358.3,31185,1,4,0)
- ;;=4^T65.93XS
- ;;^UTILITY(U,$J,358.3,31185,2)
- ;;=^5053914
- ;;^UTILITY(U,$J,358.3,31186,0)
- ;;=T65.92XS^^180^1947^48
- ;;^UTILITY(U,$J,358.3,31186,1,0)
+ ;;^UTILITY(U,$J,358.3,30010,1,3,0)
+ ;;=3^Anemia due to antineoplastic chemotherapy
+ ;;^UTILITY(U,$J,358.3,30010,1,4,0)
+ ;;=4^D64.81
+ ;;^UTILITY(U,$J,358.3,30010,2)
+ ;;=^5002349
+ ;;^UTILITY(U,$J,358.3,30011,0)
+ ;;=D64.89^^118^1493^11
+ ;;^UTILITY(U,$J,358.3,30011,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31186,1,3,0)
- ;;=3^Toxic effect of unsp substance, self-harm, sequela
- ;;^UTILITY(U,$J,358.3,31186,1,4,0)
- ;;=4^T65.92XS
- ;;^UTILITY(U,$J,358.3,31186,2)
- ;;=^5053911
- ;;^UTILITY(U,$J,358.3,31187,0)
- ;;=T65.94XS^^180^1947^50
- ;;^UTILITY(U,$J,358.3,31187,1,0)
+ ;;^UTILITY(U,$J,358.3,30011,1,3,0)
+ ;;=3^Anemias NEC
+ ;;^UTILITY(U,$J,358.3,30011,1,4,0)
+ ;;=4^D64.89
+ ;;^UTILITY(U,$J,358.3,30011,2)
+ ;;=^5002350
+ ;;^UTILITY(U,$J,358.3,30012,0)
+ ;;=D64.9^^118^1493^10
+ ;;^UTILITY(U,$J,358.3,30012,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31187,1,3,0)
- ;;=3^Toxic effect of unspecified substance, undetermined, sequela
- ;;^UTILITY(U,$J,358.3,31187,1,4,0)
- ;;=4^T65.94XS
- ;;^UTILITY(U,$J,358.3,31187,2)
- ;;=^5053917
- ;;^UTILITY(U,$J,358.3,31188,0)
- ;;=S02.110S^^180^1947^51
- ;;^UTILITY(U,$J,358.3,31188,1,0)
+ ;;^UTILITY(U,$J,358.3,30012,1,3,0)
+ ;;=3^Anemia, unspecified
+ ;;^UTILITY(U,$J,358.3,30012,1,4,0)
+ ;;=4^D64.9
+ ;;^UTILITY(U,$J,358.3,30012,2)
+ ;;=^5002351
+ ;;^UTILITY(U,$J,358.3,30013,0)
+ ;;=D58.2^^118^1493^23
+ ;;^UTILITY(U,$J,358.3,30013,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31188,1,3,0)
- ;;=3^Type I occipital condyle fracture, sequela
- ;;^UTILITY(U,$J,358.3,31188,1,4,0)
- ;;=4^S02.110S
- ;;^UTILITY(U,$J,358.3,31188,2)
- ;;=^5020269
- ;;^UTILITY(U,$J,358.3,31189,0)
- ;;=S02.111S^^180^1947^52
- ;;^UTILITY(U,$J,358.3,31189,1,0)
+ ;;^UTILITY(U,$J,358.3,30013,1,3,0)
+ ;;=3^Hemoglobinopathies NEC
+ ;;^UTILITY(U,$J,358.3,30013,1,4,0)
+ ;;=4^D58.2
+ ;;^UTILITY(U,$J,358.3,30013,2)
+ ;;=^87629
+ ;;^UTILITY(U,$J,358.3,30014,0)
+ ;;=D58.8^^118^1493^28
+ ;;^UTILITY(U,$J,358.3,30014,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31189,1,3,0)
- ;;=3^Type II occipital condyle fracture, sequela
- ;;^UTILITY(U,$J,358.3,31189,1,4,0)
- ;;=4^S02.111S
- ;;^UTILITY(U,$J,358.3,31189,2)
- ;;=^5020275
- ;;^UTILITY(U,$J,358.3,31190,0)
- ;;=S02.112S^^180^1947^53
- ;;^UTILITY(U,$J,358.3,31190,1,0)
+ ;;^UTILITY(U,$J,358.3,30014,1,3,0)
+ ;;=3^Hereditary hemolytic anemias,oth specified
+ ;;^UTILITY(U,$J,358.3,30014,1,4,0)
+ ;;=4^D58.8
+ ;;^UTILITY(U,$J,358.3,30014,2)
+ ;;=^267984
+ ;;^UTILITY(U,$J,358.3,30015,0)
+ ;;=D59.2^^118^1493^19
+ ;;^UTILITY(U,$J,358.3,30015,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31190,1,3,0)
- ;;=3^Type III occipital condyle fracture, sequela
- ;;^UTILITY(U,$J,358.3,31190,1,4,0)
- ;;=4^S02.112S
- ;;^UTILITY(U,$J,358.3,31190,2)
- ;;=^5020281
- ;;^UTILITY(U,$J,358.3,31191,0)
- ;;=S02.10XS^^180^1947^11
- ;;^UTILITY(U,$J,358.3,31191,1,0)
+ ;;^UTILITY(U,$J,358.3,30015,1,3,0)
+ ;;=3^Drug-induced nonautoimmune hemolytic anemia
+ ;;^UTILITY(U,$J,358.3,30015,1,4,0)
+ ;;=4^D59.2
+ ;;^UTILITY(U,$J,358.3,30015,2)
+ ;;=^5002325
+ ;;^UTILITY(U,$J,358.3,30016,0)
+ ;;=Z93.0^^118^1494^9
+ ;;^UTILITY(U,$J,358.3,30016,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31191,1,3,0)
- ;;=3^Fracture of base of skull, sequela
- ;;^UTILITY(U,$J,358.3,31191,1,4,0)
- ;;=4^S02.10XS
- ;;^UTILITY(U,$J,358.3,31191,2)
- ;;=^5020263
- ;;^UTILITY(U,$J,358.3,31192,0)
- ;;=S02.92XS^^180^1947^14
- ;;^UTILITY(U,$J,358.3,31192,1,0)
+ ;;^UTILITY(U,$J,358.3,30016,1,3,0)
+ ;;=3^Tracheostomy status
+ ;;^UTILITY(U,$J,358.3,30016,1,4,0)
+ ;;=4^Z93.0
+ ;;^UTILITY(U,$J,358.3,30016,2)
+ ;;=^5063642
+ ;;^UTILITY(U,$J,358.3,30017,0)
+ ;;=Z93.1^^118^1494^7
+ ;;^UTILITY(U,$J,358.3,30017,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31192,1,3,0)
- ;;=3^Fracture of facial bones, sequela
- ;;^UTILITY(U,$J,358.3,31192,1,4,0)
- ;;=4^S02.92XS
- ;;^UTILITY(U,$J,358.3,31192,2)
- ;;=^5020443
- ;;^UTILITY(U,$J,358.3,31193,0)
- ;;=S02.119S^^180^1947^19
+ ;;^UTILITY(U,$J,358.3,30017,1,3,0)
+ ;;=3^Gastrostomy status
+ ;;^UTILITY(U,$J,358.3,30017,1,4,0)
+ ;;=4^Z93.1
+ ;;^UTILITY(U,$J,358.3,30017,2)
+ ;;=^5063643
+ ;;^UTILITY(U,$J,358.3,30018,0)
+ ;;=Z93.2^^118^1494^8
+ ;;^UTILITY(U,$J,358.3,30018,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30018,1,3,0)
+ ;;=3^Ileostomy status
+ ;;^UTILITY(U,$J,358.3,30018,1,4,0)
+ ;;=4^Z93.2
+ ;;^UTILITY(U,$J,358.3,30018,2)
+ ;;=^5063644

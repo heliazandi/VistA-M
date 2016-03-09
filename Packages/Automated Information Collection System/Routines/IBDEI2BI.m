@@ -1,0 +1,126 @@
+IBDEI2BI ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,39316,1,4,0)
+ ;;=4^H40.1333
+ ;;^UTILITY(U,$J,358.3,39316,2)
+ ;;=^5005787
+ ;;^UTILITY(U,$J,358.3,39317,0)
+ ;;=H40.1334^^153^1921^87
+ ;;^UTILITY(U,$J,358.3,39317,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39317,1,3,0)
+ ;;=3^Pigmentary Glaucoma,Bilateral,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,39317,1,4,0)
+ ;;=4^H40.1334
+ ;;^UTILITY(U,$J,358.3,39317,2)
+ ;;=^5005788
+ ;;^UTILITY(U,$J,358.3,39318,0)
+ ;;=H40.151^^153^1921^118
+ ;;^UTILITY(U,$J,358.3,39318,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39318,1,3,0)
+ ;;=3^Residual Stage Open-Angle Glaucoma,Right Eye
+ ;;^UTILITY(U,$J,358.3,39318,1,4,0)
+ ;;=4^H40.151
+ ;;^UTILITY(U,$J,358.3,39318,2)
+ ;;=^5138037
+ ;;^UTILITY(U,$J,358.3,39319,0)
+ ;;=H40.152^^153^1921^117
+ ;;^UTILITY(U,$J,358.3,39319,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39319,1,3,0)
+ ;;=3^Residual Stage Open-Angle Glaucoma,Left Eye
+ ;;^UTILITY(U,$J,358.3,39319,1,4,0)
+ ;;=4^H40.152
+ ;;^UTILITY(U,$J,358.3,39319,2)
+ ;;=^5138038
+ ;;^UTILITY(U,$J,358.3,39320,0)
+ ;;=H40.153^^153^1921^116
+ ;;^UTILITY(U,$J,358.3,39320,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39320,1,3,0)
+ ;;=3^Residual Stage Open-Angle Glaucoma,Bilateral
+ ;;^UTILITY(U,$J,358.3,39320,1,4,0)
+ ;;=4^H40.153
+ ;;^UTILITY(U,$J,358.3,39320,2)
+ ;;=^5138039
+ ;;^UTILITY(U,$J,358.3,39321,0)
+ ;;=H40.20X1^^153^1921^103
+ ;;^UTILITY(U,$J,358.3,39321,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39321,1,3,0)
+ ;;=3^Primary Angle-Closure Glaucoma,Mild Stage
+ ;;^UTILITY(U,$J,358.3,39321,1,4,0)
+ ;;=4^H40.20X1
+ ;;^UTILITY(U,$J,358.3,39321,2)
+ ;;=^5005814
+ ;;^UTILITY(U,$J,358.3,39322,0)
+ ;;=H40.20X2^^153^1921^104
+ ;;^UTILITY(U,$J,358.3,39322,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39322,1,3,0)
+ ;;=3^Primary Angle-Closure Glaucoma,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,39322,1,4,0)
+ ;;=4^H40.20X2
+ ;;^UTILITY(U,$J,358.3,39322,2)
+ ;;=^5005815
+ ;;^UTILITY(U,$J,358.3,39323,0)
+ ;;=H40.20X3^^153^1921^105
+ ;;^UTILITY(U,$J,358.3,39323,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39323,1,3,0)
+ ;;=3^Primary Angle-Closure Glaucoma,Severe Stage
+ ;;^UTILITY(U,$J,358.3,39323,1,4,0)
+ ;;=4^H40.20X3
+ ;;^UTILITY(U,$J,358.3,39323,2)
+ ;;=^5005816
+ ;;^UTILITY(U,$J,358.3,39324,0)
+ ;;=H40.20X4^^153^1921^102
+ ;;^UTILITY(U,$J,358.3,39324,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39324,1,3,0)
+ ;;=3^Primary Angle-Closure Glaucoma,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,39324,1,4,0)
+ ;;=4^H40.20X4
+ ;;^UTILITY(U,$J,358.3,39324,2)
+ ;;=^5005817
+ ;;^UTILITY(U,$J,358.3,39325,0)
+ ;;=H40.2211^^153^1921^23
+ ;;^UTILITY(U,$J,358.3,39325,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39325,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Right Eye,Mild Stage
+ ;;^UTILITY(U,$J,358.3,39325,1,4,0)
+ ;;=4^H40.2211
+ ;;^UTILITY(U,$J,358.3,39325,2)
+ ;;=^5005823
+ ;;^UTILITY(U,$J,358.3,39326,0)
+ ;;=H40.2212^^153^1921^24
+ ;;^UTILITY(U,$J,358.3,39326,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39326,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Right Eye,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,39326,1,4,0)
+ ;;=4^H40.2212
+ ;;^UTILITY(U,$J,358.3,39326,2)
+ ;;=^5005824
+ ;;^UTILITY(U,$J,358.3,39327,0)
+ ;;=H40.2213^^153^1921^25
+ ;;^UTILITY(U,$J,358.3,39327,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39327,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Right Eye,Severe Stage
+ ;;^UTILITY(U,$J,358.3,39327,1,4,0)
+ ;;=4^H40.2213
+ ;;^UTILITY(U,$J,358.3,39327,2)
+ ;;=^5005825
+ ;;^UTILITY(U,$J,358.3,39328,0)
+ ;;=H40.2214^^153^1921^22
+ ;;^UTILITY(U,$J,358.3,39328,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39328,1,3,0)
+ ;;=3^Chr Angle-Closure Glaucoma,Right Eye,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,39328,1,4,0)
+ ;;=4^H40.2214

@@ -1,132 +1,138 @@
-IBDEI0P1 ; ; 06-AUG-2015
+IBDEI0P1 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,11951,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11951,1,2,0)
- ;;=2^250.60
- ;;^UTILITY(U,$J,358.3,11951,1,3,0)
- ;;=3^Diabetes W/Neuropathy
- ;;^UTILITY(U,$J,358.3,11951,2)
- ;;=Diabetes w/Neuropathy^267841^357.2
- ;;^UTILITY(U,$J,358.3,11952,0)
- ;;=337.9^^58^702^1
- ;;^UTILITY(U,$J,358.3,11952,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11952,1,2,0)
- ;;=2^337.9
- ;;^UTILITY(U,$J,358.3,11952,1,3,0)
- ;;=3^Autonomic Neuropathy
- ;;^UTILITY(U,$J,358.3,11952,2)
- ;;=Autonomic Neuropathy^11827
- ;;^UTILITY(U,$J,358.3,11953,0)
- ;;=355.8^^58^702^6
- ;;^UTILITY(U,$J,358.3,11953,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11953,1,2,0)
- ;;=2^355.8
- ;;^UTILITY(U,$J,358.3,11953,1,3,0)
- ;;=3^Compression Neuropathy,Leg
- ;;^UTILITY(U,$J,358.3,11953,2)
- ;;=Compression Neuropathy, Leg^268511
- ;;^UTILITY(U,$J,358.3,11954,0)
- ;;=354.0^^58^702^3
- ;;^UTILITY(U,$J,358.3,11954,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11954,1,2,0)
- ;;=2^354.0
- ;;^UTILITY(U,$J,358.3,11954,1,3,0)
- ;;=3^Carpal Tunnel
- ;;^UTILITY(U,$J,358.3,11954,2)
- ;;=Carpal Tunnel^19944
- ;;^UTILITY(U,$J,358.3,11955,0)
- ;;=351.0^^58^702^2
- ;;^UTILITY(U,$J,358.3,11955,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11955,1,2,0)
- ;;=2^351.0
- ;;^UTILITY(U,$J,358.3,11955,1,3,0)
- ;;=3^Bell's Palsy
- ;;^UTILITY(U,$J,358.3,11955,2)
- ;;=Bell's Palsy^13238
- ;;^UTILITY(U,$J,358.3,11956,0)
- ;;=354.9^^58^702^5
- ;;^UTILITY(U,$J,358.3,11956,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11956,1,2,0)
- ;;=2^354.9
- ;;^UTILITY(U,$J,358.3,11956,1,3,0)
- ;;=3^Compression Neuropathy,Arm
- ;;^UTILITY(U,$J,358.3,11956,2)
- ;;=Compression Neuropathy, Arm^268509
- ;;^UTILITY(U,$J,358.3,11957,0)
- ;;=356.8^^58^702^10
- ;;^UTILITY(U,$J,358.3,11957,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11957,1,2,0)
- ;;=2^356.8
- ;;^UTILITY(U,$J,358.3,11957,1,3,0)
- ;;=3^Peripheral Neuropathy
- ;;^UTILITY(U,$J,358.3,11957,2)
- ;;=Peripheral Neuropathy^268525
- ;;^UTILITY(U,$J,358.3,11958,0)
- ;;=357.0^^58^702^8
- ;;^UTILITY(U,$J,358.3,11958,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11958,1,2,0)
- ;;=2^357.0
- ;;^UTILITY(U,$J,358.3,11958,1,3,0)
- ;;=3^Guillain Barre Syndrome
- ;;^UTILITY(U,$J,358.3,11958,2)
- ;;=Guillain Barre Synd^2622
- ;;^UTILITY(U,$J,358.3,11959,0)
- ;;=357.89^^58^702^9
- ;;^UTILITY(U,$J,358.3,11959,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11959,1,2,0)
- ;;=2^357.89
- ;;^UTILITY(U,$J,358.3,11959,1,3,0)
- ;;=3^Inflam & Toxic Neuropathy
- ;;^UTILITY(U,$J,358.3,11959,2)
- ;;=^328483
- ;;^UTILITY(U,$J,358.3,11960,0)
- ;;=357.81^^58^702^4
- ;;^UTILITY(U,$J,358.3,11960,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11960,1,2,0)
- ;;=2^357.81
- ;;^UTILITY(U,$J,358.3,11960,1,3,0)
- ;;=3^Chr Inflam Demyelin Polyneuropathy
- ;;^UTILITY(U,$J,358.3,11960,2)
- ;;=^328480
- ;;^UTILITY(U,$J,358.3,11961,0)
- ;;=291.2^^58^703^2
- ;;^UTILITY(U,$J,358.3,11961,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11961,1,2,0)
- ;;=2^291.2
- ;;^UTILITY(U,$J,358.3,11961,1,3,0)
- ;;=3^Encephalopathy,Alcoholic
- ;;^UTILITY(U,$J,358.3,11961,2)
- ;;=Alcoholic Encephalopathy^268015
- ;;^UTILITY(U,$J,358.3,11962,0)
- ;;=349.89^^58^703^1
- ;;^UTILITY(U,$J,358.3,11962,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11962,1,2,0)
- ;;=2^349.89
- ;;^UTILITY(U,$J,358.3,11962,1,3,0)
- ;;=3^Encephalopathy NEC
- ;;^UTILITY(U,$J,358.3,11962,2)
- ;;=Other Encephalopathy^88015
- ;;^UTILITY(U,$J,358.3,11963,0)
- ;;=349.82^^58^703^4
- ;;^UTILITY(U,$J,358.3,11963,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,11963,1,2,0)
- ;;=2^349.82
- ;;^UTILITY(U,$J,358.3,11963,1,3,0)
- ;;=3^Encephalopathy,Toxic
- ;;^UTILITY(U,$J,358.3,11963,2)
- ;;=Toxic Encephalopathy^259061
+ ;;^UTILITY(U,$J,358.3,11696,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11696,1,3,0)
+ ;;=3^Vertebro-Basilar Artery Syndrome
+ ;;^UTILITY(U,$J,358.3,11696,1,4,0)
+ ;;=4^G45.0
+ ;;^UTILITY(U,$J,358.3,11696,2)
+ ;;=^5003955
+ ;;^UTILITY(U,$J,358.3,11697,0)
+ ;;=R26.2^^47^534^127
+ ;;^UTILITY(U,$J,358.3,11697,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11697,1,3,0)
+ ;;=3^Walking,Difficulty NEC
+ ;;^UTILITY(U,$J,358.3,11697,1,4,0)
+ ;;=4^R26.2
+ ;;^UTILITY(U,$J,358.3,11697,2)
+ ;;=^5019306
+ ;;^UTILITY(U,$J,358.3,11698,0)
+ ;;=R53.1^^47^534^128
+ ;;^UTILITY(U,$J,358.3,11698,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11698,1,3,0)
+ ;;=3^Weakness
+ ;;^UTILITY(U,$J,358.3,11698,1,4,0)
+ ;;=4^R53.1
+ ;;^UTILITY(U,$J,358.3,11698,2)
+ ;;=^5019516
+ ;;^UTILITY(U,$J,358.3,11699,0)
+ ;;=R29.810^^47^534^129
+ ;;^UTILITY(U,$J,358.3,11699,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11699,1,3,0)
+ ;;=3^Weakness,Facial
+ ;;^UTILITY(U,$J,358.3,11699,1,4,0)
+ ;;=4^R29.810
+ ;;^UTILITY(U,$J,358.3,11699,2)
+ ;;=^329954
+ ;;^UTILITY(U,$J,358.3,11700,0)
+ ;;=R10.817^^47^535^1
+ ;;^UTILITY(U,$J,358.3,11700,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11700,1,3,0)
+ ;;=3^Abdominal Tenderness,Generalized
+ ;;^UTILITY(U,$J,358.3,11700,1,4,0)
+ ;;=4^R10.817
+ ;;^UTILITY(U,$J,358.3,11700,2)
+ ;;=^5019219
+ ;;^UTILITY(U,$J,358.3,11701,0)
+ ;;=R10.827^^47^535^2
+ ;;^UTILITY(U,$J,358.3,11701,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11701,1,3,0)
+ ;;=3^Abdominal Tenderness,Rebound,Generalized
+ ;;^UTILITY(U,$J,358.3,11701,1,4,0)
+ ;;=4^R10.827
+ ;;^UTILITY(U,$J,358.3,11701,2)
+ ;;=^5019226
+ ;;^UTILITY(U,$J,358.3,11702,0)
+ ;;=R10.829^^47^535^3
+ ;;^UTILITY(U,$J,358.3,11702,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11702,1,3,0)
+ ;;=3^Abdominal Tenderness,Rebound,Unspec Site
+ ;;^UTILITY(U,$J,358.3,11702,1,4,0)
+ ;;=4^R10.829
+ ;;^UTILITY(U,$J,358.3,11702,2)
+ ;;=^5019227
+ ;;^UTILITY(U,$J,358.3,11703,0)
+ ;;=R10.819^^47^535^4
+ ;;^UTILITY(U,$J,358.3,11703,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11703,1,3,0)
+ ;;=3^Abdominal Tenderness,Unspec Site
+ ;;^UTILITY(U,$J,358.3,11703,1,4,0)
+ ;;=4^R10.819
+ ;;^UTILITY(U,$J,358.3,11703,2)
+ ;;=^5019220
+ ;;^UTILITY(U,$J,358.3,11704,0)
+ ;;=G89.0^^47^535^6
+ ;;^UTILITY(U,$J,358.3,11704,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11704,1,3,0)
+ ;;=3^Pain Syndrome,Central
+ ;;^UTILITY(U,$J,358.3,11704,1,4,0)
+ ;;=4^G89.0
+ ;;^UTILITY(U,$J,358.3,11704,2)
+ ;;=^334189
+ ;;^UTILITY(U,$J,358.3,11705,0)
+ ;;=G89.4^^47^535^7
+ ;;^UTILITY(U,$J,358.3,11705,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11705,1,3,0)
+ ;;=3^Pain Syndrome,Chronic
+ ;;^UTILITY(U,$J,358.3,11705,1,4,0)
+ ;;=4^G89.4
+ ;;^UTILITY(U,$J,358.3,11705,2)
+ ;;=^334079
+ ;;^UTILITY(U,$J,358.3,11706,0)
+ ;;=R10.0^^47^535^8
+ ;;^UTILITY(U,$J,358.3,11706,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11706,1,3,0)
+ ;;=3^Pain,Abdomen,Acute
+ ;;^UTILITY(U,$J,358.3,11706,1,4,0)
+ ;;=4^R10.0
+ ;;^UTILITY(U,$J,358.3,11706,2)
+ ;;=^885
+ ;;^UTILITY(U,$J,358.3,11707,0)
+ ;;=R14.1^^47^535^9
+ ;;^UTILITY(U,$J,358.3,11707,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11707,1,3,0)
+ ;;=3^Pain,Abdominal d/t Gas
+ ;;^UTILITY(U,$J,358.3,11707,1,4,0)
+ ;;=4^R14.1
+ ;;^UTILITY(U,$J,358.3,11707,2)
+ ;;=^5019241
+ ;;^UTILITY(U,$J,358.3,11708,0)
+ ;;=R10.84^^47^535^14
+ ;;^UTILITY(U,$J,358.3,11708,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11708,1,3,0)
+ ;;=3^Pain,AbdominalGeneralized
+ ;;^UTILITY(U,$J,358.3,11708,1,4,0)
+ ;;=4^R10.84
+ ;;^UTILITY(U,$J,358.3,11708,2)
+ ;;=^5019229
+ ;;^UTILITY(U,$J,358.3,11709,0)
+ ;;=R10.32^^47^535^10
+ ;;^UTILITY(U,$J,358.3,11709,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11709,1,3,0)
+ ;;=3^Pain,Abdominal,Lower Left Quadrant

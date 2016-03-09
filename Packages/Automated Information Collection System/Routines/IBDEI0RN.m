@@ -1,126 +1,122 @@
-IBDEI0RN ; ; 06-AUG-2015
+IBDEI0RN ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,13338,1,2,0)
- ;;=2^Chemodenervation Neck Muscle,Unil
- ;;^UTILITY(U,$J,358.3,13338,1,4,0)
- ;;=4^64616
- ;;^UTILITY(U,$J,358.3,13339,0)
- ;;=64617^^68^792^9^^^^1
- ;;^UTILITY(U,$J,358.3,13339,1,0)
+ ;;^UTILITY(U,$J,358.3,12966,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Foot w/ Unspec Severity
+ ;;^UTILITY(U,$J,358.3,12966,1,4,0)
+ ;;=4^L97.519
+ ;;^UTILITY(U,$J,358.3,12966,2)
+ ;;=^5009549
+ ;;^UTILITY(U,$J,358.3,12967,0)
+ ;;=L97.521^^53^582^181
+ ;;^UTILITY(U,$J,358.3,12967,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13339,1,2,0)
- ;;=2^Chemodenervation Larynx,Unil
- ;;^UTILITY(U,$J,358.3,13339,1,4,0)
- ;;=4^64617
- ;;^UTILITY(U,$J,358.3,13340,0)
- ;;=64632^^68^792^14^^^^1
- ;;^UTILITY(U,$J,358.3,13340,1,0)
+ ;;^UTILITY(U,$J,358.3,12967,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Foot w/ Breakdown of Skin
+ ;;^UTILITY(U,$J,358.3,12967,1,4,0)
+ ;;=4^L97.521
+ ;;^UTILITY(U,$J,358.3,12967,2)
+ ;;=^5009550
+ ;;^UTILITY(U,$J,358.3,12968,0)
+ ;;=L97.522^^53^582^182
+ ;;^UTILITY(U,$J,358.3,12968,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13340,1,2,0)
- ;;=2^Destr Common Digital Nerve
- ;;^UTILITY(U,$J,358.3,13340,1,4,0)
- ;;=4^64632
- ;;^UTILITY(U,$J,358.3,13341,0)
- ;;=64642^^68^792^5^^^^1
- ;;^UTILITY(U,$J,358.3,13341,1,0)
+ ;;^UTILITY(U,$J,358.3,12968,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Foot w/ Fat Layer Exposed
+ ;;^UTILITY(U,$J,358.3,12968,1,4,0)
+ ;;=4^L97.522
+ ;;^UTILITY(U,$J,358.3,12968,2)
+ ;;=^5009551
+ ;;^UTILITY(U,$J,358.3,12969,0)
+ ;;=L97.523^^53^582^183
+ ;;^UTILITY(U,$J,358.3,12969,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13341,1,2,0)
- ;;=2^Chemodenervation 1 Ext,1-4 Muscles
- ;;^UTILITY(U,$J,358.3,13341,1,4,0)
- ;;=4^64642
- ;;^UTILITY(U,$J,358.3,13342,0)
- ;;=64643^^68^792^6^^^^1
- ;;^UTILITY(U,$J,358.3,13342,1,0)
+ ;;^UTILITY(U,$J,358.3,12969,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Foot w/ Necrosis of Muscle
+ ;;^UTILITY(U,$J,358.3,12969,1,4,0)
+ ;;=4^L97.523
+ ;;^UTILITY(U,$J,358.3,12969,2)
+ ;;=^5009552
+ ;;^UTILITY(U,$J,358.3,12970,0)
+ ;;=L97.524^^53^582^184
+ ;;^UTILITY(U,$J,358.3,12970,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13342,1,2,0)
- ;;=2^Chemodenervation Ea Addl Ext,1-4 Muscles
- ;;^UTILITY(U,$J,358.3,13342,1,4,0)
- ;;=4^64643
- ;;^UTILITY(U,$J,358.3,13343,0)
- ;;=64644^^68^792^7^^^^1
- ;;^UTILITY(U,$J,358.3,13343,1,0)
+ ;;^UTILITY(U,$J,358.3,12970,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Foot w/ Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,12970,1,4,0)
+ ;;=4^L97.524
+ ;;^UTILITY(U,$J,358.3,12970,2)
+ ;;=^5009553
+ ;;^UTILITY(U,$J,358.3,12971,0)
+ ;;=L97.529^^53^582^185
+ ;;^UTILITY(U,$J,358.3,12971,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13343,1,2,0)
- ;;=2^Chemodenervation 1 Ext,5 or > Muscles
- ;;^UTILITY(U,$J,358.3,13343,1,4,0)
- ;;=4^64644
- ;;^UTILITY(U,$J,358.3,13344,0)
- ;;=64645^^68^792^8^^^^1
- ;;^UTILITY(U,$J,358.3,13344,1,0)
+ ;;^UTILITY(U,$J,358.3,12971,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Foot w/ Unspec Severity
+ ;;^UTILITY(U,$J,358.3,12971,1,4,0)
+ ;;=4^L97.529
+ ;;^UTILITY(U,$J,358.3,12971,2)
+ ;;=^5009554
+ ;;^UTILITY(U,$J,358.3,12972,0)
+ ;;=L97.911^^53^582^221
+ ;;^UTILITY(U,$J,358.3,12972,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13344,1,2,0)
- ;;=2^Chemodenerv Ea Addl Ext,5 or > Muscles
- ;;^UTILITY(U,$J,358.3,13344,1,4,0)
- ;;=4^64645
- ;;^UTILITY(U,$J,358.3,13345,0)
- ;;=64646^^68^792^11^^^^1
- ;;^UTILITY(U,$J,358.3,13345,1,0)
+ ;;^UTILITY(U,$J,358.3,12972,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Breakdown of Skin
+ ;;^UTILITY(U,$J,358.3,12972,1,4,0)
+ ;;=4^L97.911
+ ;;^UTILITY(U,$J,358.3,12972,2)
+ ;;=^5133679
+ ;;^UTILITY(U,$J,358.3,12973,0)
+ ;;=L97.912^^53^582^222
+ ;;^UTILITY(U,$J,358.3,12973,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13345,1,2,0)
- ;;=2^Chemodenervation Trunk Muscles,1-5
- ;;^UTILITY(U,$J,358.3,13345,1,4,0)
- ;;=4^64646
- ;;^UTILITY(U,$J,358.3,13346,0)
- ;;=64647^^68^792^12^^^^1
- ;;^UTILITY(U,$J,358.3,13346,1,0)
+ ;;^UTILITY(U,$J,358.3,12973,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Fat Layer Exposed
+ ;;^UTILITY(U,$J,358.3,12973,1,4,0)
+ ;;=4^L97.912
+ ;;^UTILITY(U,$J,358.3,12973,2)
+ ;;=^5133681
+ ;;^UTILITY(U,$J,358.3,12974,0)
+ ;;=L97.913^^53^582^223
+ ;;^UTILITY(U,$J,358.3,12974,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13346,1,2,0)
- ;;=2^Chemodenervation Trunk Muscles 6 or >
- ;;^UTILITY(U,$J,358.3,13346,1,4,0)
- ;;=4^64647
- ;;^UTILITY(U,$J,358.3,13347,0)
- ;;=64550^^68^793^6^^^^1
- ;;^UTILITY(U,$J,358.3,13347,1,0)
+ ;;^UTILITY(U,$J,358.3,12974,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Necrosis of Muscle
+ ;;^UTILITY(U,$J,358.3,12974,1,4,0)
+ ;;=4^L97.913
+ ;;^UTILITY(U,$J,358.3,12974,2)
+ ;;=^5133683
+ ;;^UTILITY(U,$J,358.3,12975,0)
+ ;;=L97.914^^53^582^224
+ ;;^UTILITY(U,$J,358.3,12975,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13347,1,2,0)
- ;;=2^TENS Device Training & Issue
- ;;^UTILITY(U,$J,358.3,13347,1,4,0)
- ;;=4^64550
- ;;^UTILITY(U,$J,358.3,13348,0)
- ;;=64553^^68^793^2^^^^1
- ;;^UTILITY(U,$J,358.3,13348,1,0)
+ ;;^UTILITY(U,$J,358.3,12975,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,12975,1,4,0)
+ ;;=4^L97.914
+ ;;^UTILITY(U,$J,358.3,12975,2)
+ ;;=^5133685
+ ;;^UTILITY(U,$J,358.3,12976,0)
+ ;;=L97.919^^53^582^225
+ ;;^UTILITY(U,$J,358.3,12976,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13348,1,2,0)
- ;;=2^Percut Neuroelectrodes,Cranial Nerve
- ;;^UTILITY(U,$J,358.3,13348,1,4,0)
- ;;=4^64553
- ;;^UTILITY(U,$J,358.3,13349,0)
- ;;=64555^^68^793^3^^^^1
- ;;^UTILITY(U,$J,358.3,13349,1,0)
+ ;;^UTILITY(U,$J,358.3,12976,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Unspec Severity
+ ;;^UTILITY(U,$J,358.3,12976,1,4,0)
+ ;;=4^L97.919
+ ;;^UTILITY(U,$J,358.3,12976,2)
+ ;;=^5133688
+ ;;^UTILITY(U,$J,358.3,12977,0)
+ ;;=L97.921^^53^582^191
+ ;;^UTILITY(U,$J,358.3,12977,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13349,1,2,0)
- ;;=2^Percut Neuroelectrodes,Peripheral Nerve
- ;;^UTILITY(U,$J,358.3,13349,1,4,0)
- ;;=4^64555
- ;;^UTILITY(U,$J,358.3,13350,0)
- ;;=64561^^68^793^4^^^^1
- ;;^UTILITY(U,$J,358.3,13350,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13350,1,2,0)
- ;;=2^Percut Neuroelectrodes,Sacral Nerve
- ;;^UTILITY(U,$J,358.3,13350,1,4,0)
- ;;=4^64561
- ;;^UTILITY(U,$J,358.3,13351,0)
- ;;=64575^^68^793^1^^^^1
- ;;^UTILITY(U,$J,358.3,13351,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13351,1,2,0)
- ;;=2^Implant Neuroelectrodes
- ;;^UTILITY(U,$J,358.3,13351,1,4,0)
- ;;=4^64575
- ;;^UTILITY(U,$J,358.3,13352,0)
- ;;=64585^^68^793^5^^^^1
- ;;^UTILITY(U,$J,358.3,13352,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13352,1,2,0)
- ;;=2^Revise/Remove Neuroelectrode
- ;;^UTILITY(U,$J,358.3,13352,1,4,0)
- ;;=4^64585
- ;;^UTILITY(U,$J,358.3,13353,0)
- ;;=20552^^68^794^8^^^^1
- ;;^UTILITY(U,$J,358.3,13353,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13353,1,2,0)
- ;;=2^Trigger Point,1-2 Muscles
+ ;;^UTILITY(U,$J,358.3,12977,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Lower Leg w/ Breakdown of Skin
+ ;;^UTILITY(U,$J,358.3,12977,1,4,0)
+ ;;=4^L97.921
+ ;;^UTILITY(U,$J,358.3,12977,2)
+ ;;=^5133680
+ ;;^UTILITY(U,$J,358.3,12978,0)
+ ;;=L97.922^^53^582^192

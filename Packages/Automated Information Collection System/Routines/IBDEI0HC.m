@@ -1,144 +1,128 @@
-IBDEI0HC ; ; 06-AUG-2015
+IBDEI0HC ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8077,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8077,1,4,0)
- ;;=4^788.43
- ;;^UTILITY(U,$J,358.3,8077,1,5,0)
- ;;=5^Nocturia
- ;;^UTILITY(U,$J,358.3,8077,2)
- ;;=^84740
- ;;^UTILITY(U,$J,358.3,8078,0)
- ;;=605.^^35^480^42
- ;;^UTILITY(U,$J,358.3,8078,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8078,1,4,0)
- ;;=4^605.
- ;;^UTILITY(U,$J,358.3,8078,1,5,0)
- ;;=5^Phimosis
- ;;^UTILITY(U,$J,358.3,8078,2)
- ;;=^104159
- ;;^UTILITY(U,$J,358.3,8079,0)
- ;;=601.0^^35^480^44
- ;;^UTILITY(U,$J,358.3,8079,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8079,1,4,0)
- ;;=4^601.0
- ;;^UTILITY(U,$J,358.3,8079,1,5,0)
- ;;=5^Prostatitis, Acute
- ;;^UTILITY(U,$J,358.3,8079,2)
- ;;=^259106
- ;;^UTILITY(U,$J,358.3,8080,0)
- ;;=590.10^^35^480^46
- ;;^UTILITY(U,$J,358.3,8080,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8080,1,4,0)
- ;;=4^590.10
- ;;^UTILITY(U,$J,358.3,8080,1,5,0)
- ;;=5^Pyelonephritis, Acute
- ;;^UTILITY(U,$J,358.3,8080,2)
- ;;=^270369
- ;;^UTILITY(U,$J,358.3,8081,0)
- ;;=590.00^^35^480^47
- ;;^UTILITY(U,$J,358.3,8081,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8081,1,4,0)
- ;;=4^590.00
- ;;^UTILITY(U,$J,358.3,8081,1,5,0)
- ;;=5^Pyelonephritis, Chronic
- ;;^UTILITY(U,$J,358.3,8081,2)
- ;;=^270367
- ;;^UTILITY(U,$J,358.3,8082,0)
- ;;=788.7^^35^480^54
- ;;^UTILITY(U,$J,358.3,8082,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8082,1,4,0)
- ;;=4^788.7
- ;;^UTILITY(U,$J,358.3,8082,1,5,0)
- ;;=5^Urethral Discharge
- ;;^UTILITY(U,$J,358.3,8082,2)
- ;;=^265872
- ;;^UTILITY(U,$J,358.3,8083,0)
- ;;=131.02^^35^480^57
- ;;^UTILITY(U,$J,358.3,8083,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8083,1,4,0)
- ;;=4^131.02
- ;;^UTILITY(U,$J,358.3,8083,1,5,0)
- ;;=5^Urethritis, Trichomonal
- ;;^UTILITY(U,$J,358.3,8083,2)
- ;;=^266955
- ;;^UTILITY(U,$J,358.3,8084,0)
- ;;=597.80^^35^480^55
- ;;^UTILITY(U,$J,358.3,8084,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8084,1,4,0)
- ;;=4^597.80
- ;;^UTILITY(U,$J,358.3,8084,1,5,0)
- ;;=5^Urethritis NOS
- ;;^UTILITY(U,$J,358.3,8084,2)
- ;;=Urethritis, NOS^124214
- ;;^UTILITY(U,$J,358.3,8085,0)
- ;;=788.41^^35^480^58
- ;;^UTILITY(U,$J,358.3,8085,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8085,1,4,0)
- ;;=4^788.41
- ;;^UTILITY(U,$J,358.3,8085,1,5,0)
- ;;=5^Urinary Frequency
- ;;^UTILITY(U,$J,358.3,8085,2)
- ;;=^124396
- ;;^UTILITY(U,$J,358.3,8086,0)
- ;;=788.31^^35^480^62
- ;;^UTILITY(U,$J,358.3,8086,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8086,1,4,0)
- ;;=4^788.31
- ;;^UTILITY(U,$J,358.3,8086,1,5,0)
- ;;=5^Urinary Incontinence,Urge
- ;;^UTILITY(U,$J,358.3,8086,2)
- ;;=^260046
- ;;^UTILITY(U,$J,358.3,8087,0)
- ;;=788.20^^35^480^63
- ;;^UTILITY(U,$J,358.3,8087,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8087,1,4,0)
- ;;=4^788.20
- ;;^UTILITY(U,$J,358.3,8087,1,5,0)
- ;;=5^Urinary Retention
- ;;^UTILITY(U,$J,358.3,8087,2)
- ;;=^295812
- ;;^UTILITY(U,$J,358.3,8088,0)
- ;;=112.2^^35^480^66
- ;;^UTILITY(U,$J,358.3,8088,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8088,1,4,0)
- ;;=4^112.2
- ;;^UTILITY(U,$J,358.3,8088,1,5,0)
- ;;=5^Urogenital Candidiasis
- ;;^UTILITY(U,$J,358.3,8088,2)
- ;;=^266866
- ;;^UTILITY(U,$J,358.3,8089,0)
- ;;=600.01^^35^480^5
- ;;^UTILITY(U,$J,358.3,8089,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8089,1,4,0)
- ;;=4^600.01
- ;;^UTILITY(U,$J,358.3,8089,1,5,0)
- ;;=5^BPH with Obstruction
- ;;^UTILITY(U,$J,358.3,8089,2)
- ;;=^329933
- ;;^UTILITY(U,$J,358.3,8090,0)
- ;;=600.10^^35^480^40
- ;;^UTILITY(U,$J,358.3,8090,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8090,1,4,0)
- ;;=4^600.10
- ;;^UTILITY(U,$J,358.3,8090,1,5,0)
- ;;=5^Nod Prostate W/O UR Obst
- ;;^UTILITY(U,$J,358.3,8090,2)
- ;;=^329934
- ;;^UTILITY(U,$J,358.3,8091,0)
- ;;=585.9^^35^480^8
+ ;;^UTILITY(U,$J,358.3,8026,0)
+ ;;=T23.302A^^33^431^40
+ ;;^UTILITY(U,$J,358.3,8026,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8026,1,3,0)
+ ;;=3^Burn third degree of left hand, unsp site, init encntr
+ ;;^UTILITY(U,$J,358.3,8026,1,4,0)
+ ;;=4^T23.302A
+ ;;^UTILITY(U,$J,358.3,8026,2)
+ ;;=^5047815
+ ;;^UTILITY(U,$J,358.3,8027,0)
+ ;;=T79.A11A^^33^431^248
+ ;;^UTILITY(U,$J,358.3,8027,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8027,1,3,0)
+ ;;=3^Traumatic compartment syndrome of right upper extrem, init
+ ;;^UTILITY(U,$J,358.3,8027,1,4,0)
+ ;;=4^T79.A11A
+ ;;^UTILITY(U,$J,358.3,8027,2)
+ ;;=^5054326
+ ;;^UTILITY(U,$J,358.3,8028,0)
+ ;;=T79.A12A^^33^431^247
+ ;;^UTILITY(U,$J,358.3,8028,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8028,1,3,0)
+ ;;=3^Traumatic compartment syndrome of left upper extremity, init
+ ;;^UTILITY(U,$J,358.3,8028,1,4,0)
+ ;;=4^T79.A12A
+ ;;^UTILITY(U,$J,358.3,8028,2)
+ ;;=^5054329
+ ;;^UTILITY(U,$J,358.3,8029,0)
+ ;;=S06.0X9A^^33^431^44
+ ;;^UTILITY(U,$J,358.3,8029,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8029,1,3,0)
+ ;;=3^Concussion w loss of consciousness of unsp duration, init
+ ;;^UTILITY(U,$J,358.3,8029,1,4,0)
+ ;;=4^S06.0X9A
+ ;;^UTILITY(U,$J,358.3,8029,2)
+ ;;=^5020693
+ ;;^UTILITY(U,$J,358.3,8030,0)
+ ;;=S60.152A^^33^431^50
+ ;;^UTILITY(U,$J,358.3,8030,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8030,1,3,0)
+ ;;=3^Contusion of left little finger w damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8030,1,4,0)
+ ;;=4^S60.152A
+ ;;^UTILITY(U,$J,358.3,8030,2)
+ ;;=^5135669
+ ;;^UTILITY(U,$J,358.3,8031,0)
+ ;;=S50.11XA^^33^431^52
+ ;;^UTILITY(U,$J,358.3,8031,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8031,1,3,0)
+ ;;=3^Contusion of right forearm, initial encounter
+ ;;^UTILITY(U,$J,358.3,8031,1,4,0)
+ ;;=4^S50.11XA
+ ;;^UTILITY(U,$J,358.3,8031,2)
+ ;;=^5028494
+ ;;^UTILITY(U,$J,358.3,8032,0)
+ ;;=S50.12XA^^33^431^47
+ ;;^UTILITY(U,$J,358.3,8032,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8032,1,3,0)
+ ;;=3^Contusion of left forearm, initial encounter
+ ;;^UTILITY(U,$J,358.3,8032,1,4,0)
+ ;;=4^S50.12XA
+ ;;^UTILITY(U,$J,358.3,8032,2)
+ ;;=^5028497
+ ;;^UTILITY(U,$J,358.3,8033,0)
+ ;;=S60.221A^^33^431^53
+ ;;^UTILITY(U,$J,358.3,8033,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8033,1,3,0)
+ ;;=3^Contusion of right hand, initial encounter
+ ;;^UTILITY(U,$J,358.3,8033,1,4,0)
+ ;;=4^S60.221A
+ ;;^UTILITY(U,$J,358.3,8033,2)
+ ;;=^5032276
+ ;;^UTILITY(U,$J,358.3,8034,0)
+ ;;=S60.222A^^33^431^48
+ ;;^UTILITY(U,$J,358.3,8034,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8034,1,3,0)
+ ;;=3^Contusion of left hand, initial encounter
+ ;;^UTILITY(U,$J,358.3,8034,1,4,0)
+ ;;=4^S60.222A
+ ;;^UTILITY(U,$J,358.3,8034,2)
+ ;;=^5032279
+ ;;^UTILITY(U,$J,358.3,8035,0)
+ ;;=S80.01XA^^33^431^54
+ ;;^UTILITY(U,$J,358.3,8035,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8035,1,3,0)
+ ;;=3^Contusion of right knee, initial encounter
+ ;;^UTILITY(U,$J,358.3,8035,1,4,0)
+ ;;=4^S80.01XA
+ ;;^UTILITY(U,$J,358.3,8035,2)
+ ;;=^5039891
+ ;;^UTILITY(U,$J,358.3,8036,0)
+ ;;=S80.02XA^^33^431^49
+ ;;^UTILITY(U,$J,358.3,8036,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8036,1,3,0)
+ ;;=3^Contusion of left knee, initial encounter
+ ;;^UTILITY(U,$J,358.3,8036,1,4,0)
+ ;;=4^S80.02XA
+ ;;^UTILITY(U,$J,358.3,8036,2)
+ ;;=^5039894
+ ;;^UTILITY(U,$J,358.3,8037,0)
+ ;;=S80.11XA^^33^431^55
+ ;;^UTILITY(U,$J,358.3,8037,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8037,1,3,0)
+ ;;=3^Contusion of right lower leg, initial encounter
+ ;;^UTILITY(U,$J,358.3,8037,1,4,0)
+ ;;=4^S80.11XA
+ ;;^UTILITY(U,$J,358.3,8037,2)
+ ;;=^5039900
+ ;;^UTILITY(U,$J,358.3,8038,0)
+ ;;=S80.12XA^^33^431^51
+ ;;^UTILITY(U,$J,358.3,8038,1,0)
+ ;;=^358.31IA^4^2

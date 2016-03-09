@@ -1,136 +1,126 @@
-IBDEI12K ; ; 06-AUG-2015
+IBDEI12K ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18871,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18871,1,4,0)
- ;;=4^242.91
- ;;^UTILITY(U,$J,358.3,18871,1,5,0)
- ;;=5^Hyperthyroidism w/o Goit w/ Storm
- ;;^UTILITY(U,$J,358.3,18871,2)
- ;;=^267812
- ;;^UTILITY(U,$J,358.3,18872,0)
- ;;=244.0^^105^1223^36
- ;;^UTILITY(U,$J,358.3,18872,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18872,1,4,0)
- ;;=4^244.0
- ;;^UTILITY(U,$J,358.3,18872,1,5,0)
- ;;=5^Hypothyroid, Postsurgical
- ;;^UTILITY(U,$J,358.3,18872,2)
- ;;=^267814
- ;;^UTILITY(U,$J,358.3,18873,0)
- ;;=244.2^^105^1223^35
- ;;^UTILITY(U,$J,358.3,18873,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18873,1,4,0)
- ;;=4^244.2
- ;;^UTILITY(U,$J,358.3,18873,1,5,0)
- ;;=5^Hypothyroid d/t Iodine Rx
- ;;^UTILITY(U,$J,358.3,18873,2)
- ;;=^267817
- ;;^UTILITY(U,$J,358.3,18874,0)
- ;;=244.9^^105^1223^37
- ;;^UTILITY(U,$J,358.3,18874,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18874,1,4,0)
- ;;=4^244.9
- ;;^UTILITY(U,$J,358.3,18874,1,5,0)
- ;;=5^Hypothyroid, Unspec Cause
- ;;^UTILITY(U,$J,358.3,18874,2)
- ;;=^123752
- ;;^UTILITY(U,$J,358.3,18875,0)
- ;;=245.0^^105^1223^51
- ;;^UTILITY(U,$J,358.3,18875,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18875,1,4,0)
- ;;=4^245.0
- ;;^UTILITY(U,$J,358.3,18875,1,5,0)
- ;;=5^Thyroiditis, Acute
- ;;^UTILITY(U,$J,358.3,18875,2)
- ;;=^2692
- ;;^UTILITY(U,$J,358.3,18876,0)
- ;;=245.1^^105^1223^52
- ;;^UTILITY(U,$J,358.3,18876,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18876,1,4,0)
- ;;=4^245.1
- ;;^UTILITY(U,$J,358.3,18876,1,5,0)
- ;;=5^Thyroiditis, Subacute
- ;;^UTILITY(U,$J,358.3,18876,2)
- ;;=^119376
- ;;^UTILITY(U,$J,358.3,18877,0)
- ;;=733.01^^105^1223^45
- ;;^UTILITY(U,$J,358.3,18877,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18877,1,4,0)
- ;;=4^733.01
- ;;^UTILITY(U,$J,358.3,18877,1,5,0)
- ;;=5^Osteoporosis, Senile
- ;;^UTILITY(U,$J,358.3,18877,2)
- ;;=Osteoporosis, Senile^87188
- ;;^UTILITY(U,$J,358.3,18878,0)
- ;;=733.02^^105^1223^44
- ;;^UTILITY(U,$J,358.3,18878,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18878,1,4,0)
- ;;=4^733.02
- ;;^UTILITY(U,$J,358.3,18878,1,5,0)
- ;;=5^Osteoporosis, Idiopathic
- ;;^UTILITY(U,$J,358.3,18878,2)
- ;;=Osteoporosis, Idiopathic^272692
- ;;^UTILITY(U,$J,358.3,18879,0)
- ;;=268.2^^105^1223^41
- ;;^UTILITY(U,$J,358.3,18879,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18879,1,4,0)
- ;;=4^268.2
- ;;^UTILITY(U,$J,358.3,18879,1,5,0)
- ;;=5^Osteomalacia
- ;;^UTILITY(U,$J,358.3,18879,2)
- ;;=Osteomalacia^87103
- ;;^UTILITY(U,$J,358.3,18880,0)
- ;;=733.90^^105^1223^42
- ;;^UTILITY(U,$J,358.3,18880,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18880,1,4,0)
- ;;=4^733.90
- ;;^UTILITY(U,$J,358.3,18880,1,5,0)
- ;;=5^Osteopenia
- ;;^UTILITY(U,$J,358.3,18880,2)
- ;;=Osteopenia^35593
- ;;^UTILITY(U,$J,358.3,18881,0)
- ;;=275.49^^105^1223^46
- ;;^UTILITY(U,$J,358.3,18881,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18881,1,4,0)
- ;;=4^275.49
- ;;^UTILITY(U,$J,358.3,18881,1,5,0)
- ;;=5^Pseudohypoparathyroidism
- ;;^UTILITY(U,$J,358.3,18881,2)
- ;;=Pseudohypparathyroidism^317904
- ;;^UTILITY(U,$J,358.3,18882,0)
- ;;=266.2^^105^1223^53
- ;;^UTILITY(U,$J,358.3,18882,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18882,1,4,0)
- ;;=4^266.2
- ;;^UTILITY(U,$J,358.3,18882,1,5,0)
- ;;=5^Vitamin B12 Deficiency
- ;;^UTILITY(U,$J,358.3,18882,2)
- ;;=Vitamin B12 Deficiency^87347
- ;;^UTILITY(U,$J,358.3,18883,0)
- ;;=268.9^^105^1223^55
- ;;^UTILITY(U,$J,358.3,18883,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,18883,1,4,0)
- ;;=4^268.9
- ;;^UTILITY(U,$J,358.3,18883,1,5,0)
- ;;=5^Vitamin D Deficiency
- ;;^UTILITY(U,$J,358.3,18883,2)
- ;;=Vitamin D Deficiency^126968
- ;;^UTILITY(U,$J,358.3,18884,0)
- ;;=266.1^^105^1223^54
- ;;^UTILITY(U,$J,358.3,18884,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,18180,1,3,0)
+ ;;=3^Athscl Native Arteries of Left Leg w/ Intrmt Claud
+ ;;^UTILITY(U,$J,358.3,18180,1,4,0)
+ ;;=4^I70.212
+ ;;^UTILITY(U,$J,358.3,18180,2)
+ ;;=^5007579
+ ;;^UTILITY(U,$J,358.3,18181,0)
+ ;;=I70.211^^79^874^25
+ ;;^UTILITY(U,$J,358.3,18181,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18181,1,3,0)
+ ;;=3^Athscl Native Arteries of Right Leg w/ Intrmt Claud
+ ;;^UTILITY(U,$J,358.3,18181,1,4,0)
+ ;;=4^I70.211
+ ;;^UTILITY(U,$J,358.3,18181,2)
+ ;;=^5007578
+ ;;^UTILITY(U,$J,358.3,18182,0)
+ ;;=I70.223^^79^874^13
+ ;;^UTILITY(U,$J,358.3,18182,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18182,1,3,0)
+ ;;=3^Athscl Native Arteries of Bilateral Legs w/ Rest Pain
+ ;;^UTILITY(U,$J,358.3,18182,1,4,0)
+ ;;=4^I70.223
+ ;;^UTILITY(U,$J,358.3,18182,2)
+ ;;=^5007585
+ ;;^UTILITY(U,$J,358.3,18183,0)
+ ;;=I70.222^^79^874^22
+ ;;^UTILITY(U,$J,358.3,18183,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18183,1,3,0)
+ ;;=3^Athscl Native Arteries of Left Leg w/ Rest Pain
+ ;;^UTILITY(U,$J,358.3,18183,1,4,0)
+ ;;=4^I70.222
+ ;;^UTILITY(U,$J,358.3,18183,2)
+ ;;=^5007584
+ ;;^UTILITY(U,$J,358.3,18184,0)
+ ;;=I70.221^^79^874^26
+ ;;^UTILITY(U,$J,358.3,18184,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18184,1,3,0)
+ ;;=3^Athscl Native Arteries of Right Leg w/ Rest Pain
+ ;;^UTILITY(U,$J,358.3,18184,1,4,0)
+ ;;=4^I70.221
+ ;;^UTILITY(U,$J,358.3,18184,2)
+ ;;=^5007583
+ ;;^UTILITY(U,$J,358.3,18185,0)
+ ;;=I70.243^^79^874^15
+ ;;^UTILITY(U,$J,358.3,18185,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18185,1,3,0)
+ ;;=3^Athscl Native Arteries of Left Leg w/ Ankle Ulcer
+ ;;^UTILITY(U,$J,358.3,18185,1,4,0)
+ ;;=4^I70.243
+ ;;^UTILITY(U,$J,358.3,18185,2)
+ ;;=^5007597
+ ;;^UTILITY(U,$J,358.3,18186,0)
+ ;;=I70.242^^79^874^16
+ ;;^UTILITY(U,$J,358.3,18186,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18186,1,3,0)
+ ;;=3^Athscl Native Arteries of Left Leg w/ Calf Ulcer
+ ;;^UTILITY(U,$J,358.3,18186,1,4,0)
+ ;;=4^I70.242
+ ;;^UTILITY(U,$J,358.3,18186,2)
+ ;;=^5007596
+ ;;^UTILITY(U,$J,358.3,18187,0)
+ ;;=I70.245^^79^874^17
+ ;;^UTILITY(U,$J,358.3,18187,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18187,1,3,0)
+ ;;=3^Athscl Native Arteries of Left Leg w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,18187,1,4,0)
+ ;;=4^I70.245
+ ;;^UTILITY(U,$J,358.3,18187,2)
+ ;;=^5007599
+ ;;^UTILITY(U,$J,358.3,18188,0)
+ ;;=I70.248^^79^874^21
+ ;;^UTILITY(U,$J,358.3,18188,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18188,1,3,0)
+ ;;=3^Athscl Native Arteries of Left Leg w/ Lower Leg Ulcer
+ ;;^UTILITY(U,$J,358.3,18188,1,4,0)
+ ;;=4^I70.248
+ ;;^UTILITY(U,$J,358.3,18188,2)
+ ;;=^5007600
+ ;;^UTILITY(U,$J,358.3,18189,0)
+ ;;=I70.241^^79^874^23
+ ;;^UTILITY(U,$J,358.3,18189,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18189,1,3,0)
+ ;;=3^Athscl Native Arteries of Left Leg w/ Thigh Ulcer
+ ;;^UTILITY(U,$J,358.3,18189,1,4,0)
+ ;;=4^I70.241
+ ;;^UTILITY(U,$J,358.3,18189,2)
+ ;;=^5007595
+ ;;^UTILITY(U,$J,358.3,18190,0)
+ ;;=I70.244^^79^874^19
+ ;;^UTILITY(U,$J,358.3,18190,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18190,1,3,0)
+ ;;=3^Athscl Native Arteries of Left Leg w/ Heel/Midfoot Ulcer
+ ;;^UTILITY(U,$J,358.3,18190,1,4,0)
+ ;;=4^I70.244
+ ;;^UTILITY(U,$J,358.3,18190,2)
+ ;;=^5007598
+ ;;^UTILITY(U,$J,358.3,18191,0)
+ ;;=I70.25^^79^874^14
+ ;;^UTILITY(U,$J,358.3,18191,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18191,1,3,0)
+ ;;=3^Athscl Native Arteries of Extremities w/ Ulceration
+ ;;^UTILITY(U,$J,358.3,18191,1,4,0)
+ ;;=4^I70.25
+ ;;^UTILITY(U,$J,358.3,18191,2)
+ ;;=^5007602
+ ;;^UTILITY(U,$J,358.3,18192,0)
+ ;;=I70.233^^79^874^27
+ ;;^UTILITY(U,$J,358.3,18192,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18192,1,3,0)
+ ;;=3^Athscl Native Arteries of Right Leg w/ Ankle Ulcer

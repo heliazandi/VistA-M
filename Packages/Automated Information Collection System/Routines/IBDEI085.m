@@ -1,134 +1,138 @@
-IBDEI085 ; ; 06-AUG-2015
+IBDEI085 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3312,1,0)
+ ;;^UTILITY(U,$J,358.3,3513,0)
+ ;;=G12.21^^18^220^4
+ ;;^UTILITY(U,$J,358.3,3513,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3312,1,3,0)
- ;;=3^Adjustment Disorder w/ Mixed Disturbance Emotions & Conduct
- ;;^UTILITY(U,$J,358.3,3312,1,4,0)
- ;;=4^F43.25
- ;;^UTILITY(U,$J,358.3,3312,2)
- ;;=^331952
- ;;^UTILITY(U,$J,358.3,3313,0)
- ;;=F43.10^^8^121^8
- ;;^UTILITY(U,$J,358.3,3313,1,0)
+ ;;^UTILITY(U,$J,358.3,3513,1,3,0)
+ ;;=3^Amyotrophic Lateral Sclerosis
+ ;;^UTILITY(U,$J,358.3,3513,1,4,0)
+ ;;=4^G12.21
+ ;;^UTILITY(U,$J,358.3,3513,2)
+ ;;=^6639
+ ;;^UTILITY(U,$J,358.3,3514,0)
+ ;;=R47.01^^18^220^5
+ ;;^UTILITY(U,$J,358.3,3514,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3313,1,3,0)
- ;;=3^PTSD
- ;;^UTILITY(U,$J,358.3,3313,1,4,0)
- ;;=4^F43.10
- ;;^UTILITY(U,$J,358.3,3313,2)
- ;;=^5003570
- ;;^UTILITY(U,$J,358.3,3314,0)
- ;;=F43.8^^8^121^9
- ;;^UTILITY(U,$J,358.3,3314,1,0)
+ ;;^UTILITY(U,$J,358.3,3514,1,3,0)
+ ;;=3^Aphasia
+ ;;^UTILITY(U,$J,358.3,3514,1,4,0)
+ ;;=4^R47.01
+ ;;^UTILITY(U,$J,358.3,3514,2)
+ ;;=^5019488
+ ;;^UTILITY(U,$J,358.3,3515,0)
+ ;;=G11.9^^18^220^6
+ ;;^UTILITY(U,$J,358.3,3515,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3314,1,3,0)
- ;;=3^Trauma/Stressor-Related Disorder NEC
- ;;^UTILITY(U,$J,358.3,3314,1,4,0)
- ;;=4^F43.8
- ;;^UTILITY(U,$J,358.3,3314,2)
- ;;=^5003575
- ;;^UTILITY(U,$J,358.3,3315,0)
- ;;=F43.20^^8^121^7
- ;;^UTILITY(U,$J,358.3,3315,1,0)
+ ;;^UTILITY(U,$J,358.3,3515,1,3,0)
+ ;;=3^Ataxia,Hereditary,Unspec
+ ;;^UTILITY(U,$J,358.3,3515,1,4,0)
+ ;;=4^G11.9
+ ;;^UTILITY(U,$J,358.3,3515,2)
+ ;;=^5003758
+ ;;^UTILITY(U,$J,358.3,3516,0)
+ ;;=G90.4^^18^220^7
+ ;;^UTILITY(U,$J,358.3,3516,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3315,1,3,0)
- ;;=3^Adjustment Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,3315,1,4,0)
- ;;=4^F43.20
- ;;^UTILITY(U,$J,358.3,3315,2)
- ;;=^5003573
- ;;^UTILITY(U,$J,358.3,3316,0)
- ;;=F43.9^^8^121^10
- ;;^UTILITY(U,$J,358.3,3316,1,0)
+ ;;^UTILITY(U,$J,358.3,3516,1,3,0)
+ ;;=3^Autonomic Dysreflexia
+ ;;^UTILITY(U,$J,358.3,3516,1,4,0)
+ ;;=4^G90.4
+ ;;^UTILITY(U,$J,358.3,3516,2)
+ ;;=^321175
+ ;;^UTILITY(U,$J,358.3,3517,0)
+ ;;=G90.9^^18^220^8
+ ;;^UTILITY(U,$J,358.3,3517,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3316,1,3,0)
- ;;=3^Trauma/Stressor-Related Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,3316,1,4,0)
- ;;=4^F43.9
- ;;^UTILITY(U,$J,358.3,3316,2)
- ;;=^5003576
- ;;^UTILITY(U,$J,358.3,3317,0)
- ;;=F18.10^^8^122^1
- ;;^UTILITY(U,$J,358.3,3317,1,0)
+ ;;^UTILITY(U,$J,358.3,3517,1,3,0)
+ ;;=3^Autonomic Nervous System Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,3517,1,4,0)
+ ;;=4^G90.9
+ ;;^UTILITY(U,$J,358.3,3517,2)
+ ;;=^5004173
+ ;;^UTILITY(U,$J,358.3,3518,0)
+ ;;=G93.9^^18^220^9
+ ;;^UTILITY(U,$J,358.3,3518,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3317,1,3,0)
- ;;=3^Inhalant Use Disorder,Mild
- ;;^UTILITY(U,$J,358.3,3317,1,4,0)
- ;;=4^F18.10
- ;;^UTILITY(U,$J,358.3,3317,2)
- ;;=^5003380
- ;;^UTILITY(U,$J,358.3,3318,0)
- ;;=F18.20^^8^122^2
- ;;^UTILITY(U,$J,358.3,3318,1,0)
+ ;;^UTILITY(U,$J,358.3,3518,1,3,0)
+ ;;=3^Brain Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,3518,1,4,0)
+ ;;=4^G93.9
+ ;;^UTILITY(U,$J,358.3,3518,2)
+ ;;=^5004186
+ ;;^UTILITY(U,$J,358.3,3519,0)
+ ;;=G45.1^^18^220^10
+ ;;^UTILITY(U,$J,358.3,3519,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3318,1,3,0)
- ;;=3^Inhalant Use Disorder,Moderate-Severe
- ;;^UTILITY(U,$J,358.3,3318,1,4,0)
- ;;=4^F18.20
- ;;^UTILITY(U,$J,358.3,3318,2)
- ;;=^5003392
- ;;^UTILITY(U,$J,358.3,3319,0)
- ;;=F18.21^^8^122^3
- ;;^UTILITY(U,$J,358.3,3319,1,0)
+ ;;^UTILITY(U,$J,358.3,3519,1,3,0)
+ ;;=3^Carotid Artery Syndrome
+ ;;^UTILITY(U,$J,358.3,3519,1,4,0)
+ ;;=4^G45.1
+ ;;^UTILITY(U,$J,358.3,3519,2)
+ ;;=^5003956
+ ;;^UTILITY(U,$J,358.3,3520,0)
+ ;;=G90.01^^18^220^11
+ ;;^UTILITY(U,$J,358.3,3520,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3319,1,3,0)
- ;;=3^Inhalant Use Disorder,Moderate-Severe,In Remission
- ;;^UTILITY(U,$J,358.3,3319,1,4,0)
- ;;=4^F18.21
- ;;^UTILITY(U,$J,358.3,3319,2)
- ;;=^5003393
- ;;^UTILITY(U,$J,358.3,3320,0)
- ;;=F18.14^^8^122^4
- ;;^UTILITY(U,$J,358.3,3320,1,0)
+ ;;^UTILITY(U,$J,358.3,3520,1,3,0)
+ ;;=3^Carotid Sinus Syncope
+ ;;^UTILITY(U,$J,358.3,3520,1,4,0)
+ ;;=4^G90.01
+ ;;^UTILITY(U,$J,358.3,3520,2)
+ ;;=^5004160
+ ;;^UTILITY(U,$J,358.3,3521,0)
+ ;;=G37.9^^18^220^12
+ ;;^UTILITY(U,$J,358.3,3521,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3320,1,3,0)
- ;;=3^Inhalant-Induced Depressive Disorder w/ Mild Use Disorder
- ;;^UTILITY(U,$J,358.3,3320,1,4,0)
- ;;=4^F18.14
- ;;^UTILITY(U,$J,358.3,3320,2)
- ;;=^5003384
- ;;^UTILITY(U,$J,358.3,3321,0)
- ;;=F18.24^^8^122^5
- ;;^UTILITY(U,$J,358.3,3321,1,0)
+ ;;^UTILITY(U,$J,358.3,3521,1,3,0)
+ ;;=3^Central Nervous System Demyelinating Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,3521,1,4,0)
+ ;;=4^G37.9
+ ;;^UTILITY(U,$J,358.3,3521,2)
+ ;;=^5003828
+ ;;^UTILITY(U,$J,358.3,3522,0)
+ ;;=G96.9^^18^220^13
+ ;;^UTILITY(U,$J,358.3,3522,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3321,1,3,0)
- ;;=3^Inhalant-Induced Depressive Disorder w/ Moderate to Severe Use Disorder
- ;;^UTILITY(U,$J,358.3,3321,1,4,0)
- ;;=4^F18.24
- ;;^UTILITY(U,$J,358.3,3321,2)
- ;;=^5003397
- ;;^UTILITY(U,$J,358.3,3322,0)
- ;;=H0001^^9^123^1^^^^1
- ;;^UTILITY(U,$J,358.3,3322,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3322,1,2,0)
- ;;=2^H0001
- ;;^UTILITY(U,$J,358.3,3322,1,3,0)
- ;;=3^Addictions Assessment
- ;;^UTILITY(U,$J,358.3,3323,0)
- ;;=H0002^^9^123^11^^^^1
- ;;^UTILITY(U,$J,358.3,3323,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3323,1,2,0)
- ;;=2^H0002
- ;;^UTILITY(U,$J,358.3,3323,1,3,0)
- ;;=3^Screen for Addictions Admit Eligibility
- ;;^UTILITY(U,$J,358.3,3324,0)
- ;;=H0004^^9^123^7
- ;;^UTILITY(U,$J,358.3,3324,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3324,1,2,0)
- ;;=2^H0004
- ;;^UTILITY(U,$J,358.3,3324,1,3,0)
- ;;=3^Individual Counseling & Therapy,per 15 Min
- ;;^UTILITY(U,$J,358.3,3325,0)
- ;;=H0005^^9^123^2^^^^1
- ;;^UTILITY(U,$J,358.3,3325,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3325,1,2,0)
- ;;=2^H0005
- ;;^UTILITY(U,$J,358.3,3325,1,3,0)
- ;;=3^Addictions Group Counseling by Clinician
+ ;;^UTILITY(U,$J,358.3,3522,1,3,0)
+ ;;=3^Central Nervous System Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,3522,1,4,0)
+ ;;=4^G96.9
+ ;;^UTILITY(U,$J,358.3,3522,2)
+ ;;=^5004200
+ ;;^UTILITY(U,$J,358.3,3523,0)
+ ;;=I63.50^^18^220^14
+ ;;^UTILITY(U,$J,358.3,3523,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3523,1,3,0)
+ ;;=3^Cereb infrc due to unsp occls or stenos of unsp cereb artery
+ ;;^UTILITY(U,$J,358.3,3523,1,4,0)
+ ;;=4^I63.50
+ ;;^UTILITY(U,$J,358.3,3523,2)
+ ;;=^5007343
+ ;;^UTILITY(U,$J,358.3,3524,0)
+ ;;=I67.89^^18^220^36
+ ;;^UTILITY(U,$J,358.3,3524,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3524,1,3,0)
+ ;;=3^Cerebrovascular Disease,Other
+ ;;^UTILITY(U,$J,358.3,3524,1,4,0)
+ ;;=4^I67.89
+ ;;^UTILITY(U,$J,358.3,3524,2)
+ ;;=^5007388
+ ;;^UTILITY(U,$J,358.3,3525,0)
+ ;;=I69.920^^18^220^15
+ ;;^UTILITY(U,$J,358.3,3525,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3525,1,3,0)
+ ;;=3^Cerebrovascular Disease,Aphasia,Unspec
+ ;;^UTILITY(U,$J,358.3,3525,1,4,0)
+ ;;=4^I69.920
+ ;;^UTILITY(U,$J,358.3,3525,2)
+ ;;=^5007553
+ ;;^UTILITY(U,$J,358.3,3526,0)
+ ;;=I69.990^^18^220^16
+ ;;^UTILITY(U,$J,358.3,3526,1,0)
+ ;;=^358.31IA^4^2

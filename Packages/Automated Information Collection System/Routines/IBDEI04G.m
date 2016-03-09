@@ -1,132 +1,144 @@
-IBDEI04G ; ; 06-AUG-2015
+IBDEI04G ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1556,1,4,0)
- ;;=4^M25.562
- ;;^UTILITY(U,$J,358.3,1556,2)
- ;;=^5011615
- ;;^UTILITY(U,$J,358.3,1557,0)
- ;;=M25.571^^3^45^57
- ;;^UTILITY(U,$J,358.3,1557,1,0)
+ ;;^UTILITY(U,$J,358.3,1656,2)
+ ;;=^5004171
+ ;;^UTILITY(U,$J,358.3,1657,0)
+ ;;=I31.2^^11^147^13
+ ;;^UTILITY(U,$J,358.3,1657,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1557,1,3,0)
- ;;=3^Pain in Right Ankle/Joints of Right Foot
- ;;^UTILITY(U,$J,358.3,1557,1,4,0)
- ;;=4^M25.571
- ;;^UTILITY(U,$J,358.3,1557,2)
- ;;=^5011617
- ;;^UTILITY(U,$J,358.3,1558,0)
- ;;=M25.572^^3^45^56
- ;;^UTILITY(U,$J,358.3,1558,1,0)
+ ;;^UTILITY(U,$J,358.3,1657,1,3,0)
+ ;;=3^Hemopericardium NEC
+ ;;^UTILITY(U,$J,358.3,1657,1,4,0)
+ ;;=4^I31.2
+ ;;^UTILITY(U,$J,358.3,1657,2)
+ ;;=^5007163
+ ;;^UTILITY(U,$J,358.3,1658,0)
+ ;;=R60.9^^11^147^11
+ ;;^UTILITY(U,$J,358.3,1658,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1558,1,3,0)
- ;;=3^Pain in Left Ankle/Joints of Left Foot
- ;;^UTILITY(U,$J,358.3,1558,1,4,0)
- ;;=4^M25.572
- ;;^UTILITY(U,$J,358.3,1558,2)
- ;;=^5011618
- ;;^UTILITY(U,$J,358.3,1559,0)
- ;;=M25.50^^3^45^70
- ;;^UTILITY(U,$J,358.3,1559,1,0)
+ ;;^UTILITY(U,$J,358.3,1658,1,3,0)
+ ;;=3^Edema,Unspec
+ ;;^UTILITY(U,$J,358.3,1658,1,4,0)
+ ;;=4^R60.9
+ ;;^UTILITY(U,$J,358.3,1658,2)
+ ;;=^5019534
+ ;;^UTILITY(U,$J,358.3,1659,0)
+ ;;=R00.0^^11^147^24
+ ;;^UTILITY(U,$J,358.3,1659,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1559,1,3,0)
- ;;=3^Pain in unspecified joint
- ;;^UTILITY(U,$J,358.3,1559,1,4,0)
- ;;=4^M25.50
- ;;^UTILITY(U,$J,358.3,1559,2)
- ;;=^5011601
- ;;^UTILITY(U,$J,358.3,1560,0)
- ;;=R26.2^^3^45^23
- ;;^UTILITY(U,$J,358.3,1560,1,0)
+ ;;^UTILITY(U,$J,358.3,1659,1,3,0)
+ ;;=3^Tachycardia,Unspec
+ ;;^UTILITY(U,$J,358.3,1659,1,4,0)
+ ;;=4^R00.0
+ ;;^UTILITY(U,$J,358.3,1659,2)
+ ;;=^5019163
+ ;;^UTILITY(U,$J,358.3,1660,0)
+ ;;=R00.2^^11^147^19
+ ;;^UTILITY(U,$J,358.3,1660,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1560,1,3,0)
- ;;=3^Difficulty in walking, not elsewhere classified
- ;;^UTILITY(U,$J,358.3,1560,1,4,0)
- ;;=4^R26.2
- ;;^UTILITY(U,$J,358.3,1560,2)
- ;;=^5019306
- ;;^UTILITY(U,$J,358.3,1561,0)
- ;;=M45.9^^3^45^7
- ;;^UTILITY(U,$J,358.3,1561,1,0)
+ ;;^UTILITY(U,$J,358.3,1660,1,3,0)
+ ;;=3^Palpitations
+ ;;^UTILITY(U,$J,358.3,1660,1,4,0)
+ ;;=4^R00.2
+ ;;^UTILITY(U,$J,358.3,1660,2)
+ ;;=^5019165
+ ;;^UTILITY(U,$J,358.3,1661,0)
+ ;;=R01.1^^11^147^6
+ ;;^UTILITY(U,$J,358.3,1661,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1561,1,3,0)
- ;;=3^Ankylosing spondylitis of unspecified sites in spine
- ;;^UTILITY(U,$J,358.3,1561,1,4,0)
- ;;=4^M45.9
- ;;^UTILITY(U,$J,358.3,1561,2)
- ;;=^5011969
- ;;^UTILITY(U,$J,358.3,1562,0)
- ;;=M46.1^^3^45^90
- ;;^UTILITY(U,$J,358.3,1562,1,0)
+ ;;^UTILITY(U,$J,358.3,1661,1,3,0)
+ ;;=3^Cardiac Murmur,Unspec
+ ;;^UTILITY(U,$J,358.3,1661,1,4,0)
+ ;;=4^R01.1
+ ;;^UTILITY(U,$J,358.3,1661,2)
+ ;;=^5019169
+ ;;^UTILITY(U,$J,358.3,1662,0)
+ ;;=R01.0^^11^147^5
+ ;;^UTILITY(U,$J,358.3,1662,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1562,1,3,0)
- ;;=3^Sacroiliitis, not elsewhere classified
- ;;^UTILITY(U,$J,358.3,1562,1,4,0)
- ;;=4^M46.1
- ;;^UTILITY(U,$J,358.3,1562,2)
- ;;=^5011980
- ;;^UTILITY(U,$J,358.3,1563,0)
- ;;=M47.812^^3^45^96
- ;;^UTILITY(U,$J,358.3,1563,1,0)
+ ;;^UTILITY(U,$J,358.3,1662,1,3,0)
+ ;;=3^Benign/Innocent Cardiac Murmurs
+ ;;^UTILITY(U,$J,358.3,1662,1,4,0)
+ ;;=4^R01.0
+ ;;^UTILITY(U,$J,358.3,1662,2)
+ ;;=^5019168
+ ;;^UTILITY(U,$J,358.3,1663,0)
+ ;;=R57.0^^11^147^7
+ ;;^UTILITY(U,$J,358.3,1663,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1563,1,3,0)
- ;;=3^Spondylosis w/o myelopathy/radiculopathy, cervical region
- ;;^UTILITY(U,$J,358.3,1563,1,4,0)
- ;;=4^M47.812
- ;;^UTILITY(U,$J,358.3,1563,2)
- ;;=^5012069
- ;;^UTILITY(U,$J,358.3,1564,0)
- ;;=M47.814^^3^45^97
- ;;^UTILITY(U,$J,358.3,1564,1,0)
+ ;;^UTILITY(U,$J,358.3,1663,1,3,0)
+ ;;=3^Cardiogenic Shock
+ ;;^UTILITY(U,$J,358.3,1663,1,4,0)
+ ;;=4^R57.0
+ ;;^UTILITY(U,$J,358.3,1663,2)
+ ;;=^5019525
+ ;;^UTILITY(U,$J,358.3,1664,0)
+ ;;=R06.01^^11^147^18
+ ;;^UTILITY(U,$J,358.3,1664,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1564,1,3,0)
- ;;=3^Spondylosis w/o myelopathy/radiculopathy, thoracic region
- ;;^UTILITY(U,$J,358.3,1564,1,4,0)
- ;;=4^M47.814
- ;;^UTILITY(U,$J,358.3,1564,2)
- ;;=^5012071
- ;;^UTILITY(U,$J,358.3,1565,0)
- ;;=M47.817^^3^45^98
- ;;^UTILITY(U,$J,358.3,1565,1,0)
+ ;;^UTILITY(U,$J,358.3,1664,1,3,0)
+ ;;=3^Orthopnea
+ ;;^UTILITY(U,$J,358.3,1664,1,4,0)
+ ;;=4^R06.01
+ ;;^UTILITY(U,$J,358.3,1664,2)
+ ;;=^186737
+ ;;^UTILITY(U,$J,358.3,1665,0)
+ ;;=R06.81^^11^147^3
+ ;;^UTILITY(U,$J,358.3,1665,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1565,1,3,0)
- ;;=3^Spondylosis w/o myelopathy/radiculopathy, lumbosacr region
- ;;^UTILITY(U,$J,358.3,1565,1,4,0)
- ;;=4^M47.817
- ;;^UTILITY(U,$J,358.3,1565,2)
- ;;=^5012074
- ;;^UTILITY(U,$J,358.3,1566,0)
- ;;=M47.819^^3^45^99
- ;;^UTILITY(U,$J,358.3,1566,1,0)
+ ;;^UTILITY(U,$J,358.3,1665,1,3,0)
+ ;;=3^Apnea NEC
+ ;;^UTILITY(U,$J,358.3,1665,1,4,0)
+ ;;=4^R06.81
+ ;;^UTILITY(U,$J,358.3,1665,2)
+ ;;=^5019190
+ ;;^UTILITY(U,$J,358.3,1666,0)
+ ;;=R06.02^^11^147^22
+ ;;^UTILITY(U,$J,358.3,1666,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1566,1,3,0)
- ;;=3^Spondylosis w/o myelopathy/radiculopathy, site unsp
- ;;^UTILITY(U,$J,358.3,1566,1,4,0)
- ;;=4^M47.819
- ;;^UTILITY(U,$J,358.3,1566,2)
- ;;=^5012076
- ;;^UTILITY(U,$J,358.3,1567,0)
- ;;=M51.34^^3^45^43
- ;;^UTILITY(U,$J,358.3,1567,1,0)
+ ;;^UTILITY(U,$J,358.3,1666,1,3,0)
+ ;;=3^Shortness of Breath
+ ;;^UTILITY(U,$J,358.3,1666,1,4,0)
+ ;;=4^R06.02
+ ;;^UTILITY(U,$J,358.3,1666,2)
+ ;;=^5019181
+ ;;^UTILITY(U,$J,358.3,1667,0)
+ ;;=R06.82^^11^147^25
+ ;;^UTILITY(U,$J,358.3,1667,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1567,1,3,0)
- ;;=3^Intervertebral disc degeneration, thoracic region NEC
- ;;^UTILITY(U,$J,358.3,1567,1,4,0)
- ;;=4^M51.34
- ;;^UTILITY(U,$J,358.3,1567,2)
- ;;=^5012251
- ;;^UTILITY(U,$J,358.3,1568,0)
- ;;=M51.36^^3^45^42
- ;;^UTILITY(U,$J,358.3,1568,1,0)
+ ;;^UTILITY(U,$J,358.3,1667,1,3,0)
+ ;;=3^Tachypnea NEC
+ ;;^UTILITY(U,$J,358.3,1667,1,4,0)
+ ;;=4^R06.82
+ ;;^UTILITY(U,$J,358.3,1667,2)
+ ;;=^5019191
+ ;;^UTILITY(U,$J,358.3,1668,0)
+ ;;=R94.30^^11^147^1
+ ;;^UTILITY(U,$J,358.3,1668,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1568,1,3,0)
- ;;=3^Intervertebral disc degeneration, lumbar region NEC
- ;;^UTILITY(U,$J,358.3,1568,1,4,0)
- ;;=4^M51.36
- ;;^UTILITY(U,$J,358.3,1568,2)
- ;;=^5012253
- ;;^UTILITY(U,$J,358.3,1569,0)
- ;;=M54.2^^3^45^16
- ;;^UTILITY(U,$J,358.3,1569,1,0)
+ ;;^UTILITY(U,$J,358.3,1668,1,3,0)
+ ;;=3^Abnormal Cardiovascular Function Study,Unspec
+ ;;^UTILITY(U,$J,358.3,1668,1,4,0)
+ ;;=4^R94.30
+ ;;^UTILITY(U,$J,358.3,1668,2)
+ ;;=^5019738
+ ;;^UTILITY(U,$J,358.3,1669,0)
+ ;;=R94.31^^11^147^2
+ ;;^UTILITY(U,$J,358.3,1669,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1669,1,3,0)
+ ;;=3^Abnormal Electrocardiogram
+ ;;^UTILITY(U,$J,358.3,1669,1,4,0)
+ ;;=4^R94.31
+ ;;^UTILITY(U,$J,358.3,1669,2)
+ ;;=^5019739
+ ;;^UTILITY(U,$J,358.3,1670,0)
+ ;;=G90.9^^11^147^4
+ ;;^UTILITY(U,$J,358.3,1670,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1670,1,3,0)
+ ;;=3^Autonomic Nervous System Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,1670,1,4,0)
+ ;;=4^G90.9

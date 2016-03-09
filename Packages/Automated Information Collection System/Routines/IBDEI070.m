@@ -1,138 +1,140 @@
-IBDEI070 ; ; 06-AUG-2015
+IBDEI070 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2766,1,0)
+ ;;^UTILITY(U,$J,358.3,2962,1,4,0)
+ ;;=4^Z95.820
+ ;;^UTILITY(U,$J,358.3,2962,2)
+ ;;=^5063678
+ ;;^UTILITY(U,$J,358.3,2963,0)
+ ;;=Z95.828^^18^210^67
+ ;;^UTILITY(U,$J,358.3,2963,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2766,1,3,0)
- ;;=3^Mycobacteria, Atypical, Pulmonary
- ;;^UTILITY(U,$J,358.3,2766,1,4,0)
- ;;=4^A31.0
- ;;^UTILITY(U,$J,358.3,2766,2)
- ;;=^5000149
- ;;^UTILITY(U,$J,358.3,2767,0)
- ;;=A15.9^^7^83^148
- ;;^UTILITY(U,$J,358.3,2767,1,0)
+ ;;^UTILITY(U,$J,358.3,2963,1,3,0)
+ ;;=3^Presence of Vascular Implants & Grafts,Other
+ ;;^UTILITY(U,$J,358.3,2963,1,4,0)
+ ;;=4^Z95.828
+ ;;^UTILITY(U,$J,358.3,2963,2)
+ ;;=^5063679
+ ;;^UTILITY(U,$J,358.3,2964,0)
+ ;;=Z95.2^^18^210^66
+ ;;^UTILITY(U,$J,358.3,2964,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2767,1,3,0)
- ;;=3^Mycobacterium, Tuberculosis active disease
- ;;^UTILITY(U,$J,358.3,2767,1,4,0)
- ;;=4^A15.9
- ;;^UTILITY(U,$J,358.3,2767,2)
- ;;=^5000066
- ;;^UTILITY(U,$J,358.3,2768,0)
- ;;=A31.2^^7^83^63
- ;;^UTILITY(U,$J,358.3,2768,1,0)
+ ;;^UTILITY(U,$J,358.3,2964,1,3,0)
+ ;;=3^Presence of Prostetic Heart Valve
+ ;;^UTILITY(U,$J,358.3,2964,1,4,0)
+ ;;=4^Z95.2
+ ;;^UTILITY(U,$J,358.3,2964,2)
+ ;;=^5063670
+ ;;^UTILITY(U,$J,358.3,2965,0)
+ ;;=Z95.3^^18^210^68
+ ;;^UTILITY(U,$J,358.3,2965,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2768,1,3,0)
- ;;=3^Disseminated mycobacterium avian-intracellulare complex(DMAC)
- ;;^UTILITY(U,$J,358.3,2768,1,4,0)
- ;;=4^A31.2
- ;;^UTILITY(U,$J,358.3,2768,2)
- ;;=^5000151
- ;;^UTILITY(U,$J,358.3,2769,0)
- ;;=A31.8^^7^83^147
- ;;^UTILITY(U,$J,358.3,2769,1,0)
+ ;;^UTILITY(U,$J,358.3,2965,1,3,0)
+ ;;=3^Presence of Xenogenic Heart Valve
+ ;;^UTILITY(U,$J,358.3,2965,1,4,0)
+ ;;=4^Z95.3
+ ;;^UTILITY(U,$J,358.3,2965,2)
+ ;;=^5063671
+ ;;^UTILITY(U,$J,358.3,2966,0)
+ ;;=I27.9^^18^210^69
+ ;;^UTILITY(U,$J,358.3,2966,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2769,1,3,0)
- ;;=3^Mycobacterium, Non-Tuberculosis NEC
- ;;^UTILITY(U,$J,358.3,2769,1,4,0)
- ;;=4^A31.8
- ;;^UTILITY(U,$J,358.3,2769,2)
- ;;=^5000152
- ;;^UTILITY(U,$J,358.3,2770,0)
- ;;=J00.^^7^83^13
- ;;^UTILITY(U,$J,358.3,2770,1,0)
+ ;;^UTILITY(U,$J,358.3,2966,1,3,0)
+ ;;=3^Pulmonary Heart Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,2966,1,4,0)
+ ;;=4^I27.9
+ ;;^UTILITY(U,$J,358.3,2966,2)
+ ;;=^5007154
+ ;;^UTILITY(U,$J,358.3,2967,0)
+ ;;=I27.0^^18^210^70
+ ;;^UTILITY(U,$J,358.3,2967,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2770,1,3,0)
- ;;=3^Acute nasopharyngitis [common cold]
- ;;^UTILITY(U,$J,358.3,2770,1,4,0)
- ;;=4^J00.
- ;;^UTILITY(U,$J,358.3,2770,2)
- ;;=^5008115
- ;;^UTILITY(U,$J,358.3,2771,0)
- ;;=R11.2^^7^83^149
- ;;^UTILITY(U,$J,358.3,2771,1,0)
+ ;;^UTILITY(U,$J,358.3,2967,1,3,0)
+ ;;=3^Pulmonary Hypertension,Primary
+ ;;^UTILITY(U,$J,358.3,2967,1,4,0)
+ ;;=4^I27.0
+ ;;^UTILITY(U,$J,358.3,2967,2)
+ ;;=^265310
+ ;;^UTILITY(U,$J,358.3,2968,0)
+ ;;=I73.00^^18^210^71
+ ;;^UTILITY(U,$J,358.3,2968,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2771,1,3,0)
- ;;=3^Nausea with vomiting, unspecified
- ;;^UTILITY(U,$J,358.3,2771,1,4,0)
- ;;=4^R11.2
- ;;^UTILITY(U,$J,358.3,2771,2)
- ;;=^5019237
- ;;^UTILITY(U,$J,358.3,2772,0)
- ;;=D70.9^^7^83^150
- ;;^UTILITY(U,$J,358.3,2772,1,0)
+ ;;^UTILITY(U,$J,358.3,2968,1,3,0)
+ ;;=3^Raynaud's Syndrome w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,2968,1,4,0)
+ ;;=4^I73.00
+ ;;^UTILITY(U,$J,358.3,2968,2)
+ ;;=^5007796
+ ;;^UTILITY(U,$J,358.3,2969,0)
+ ;;=R57.0^^18^210^72
+ ;;^UTILITY(U,$J,358.3,2969,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2772,1,3,0)
- ;;=3^Neutropenia, unspecified
- ;;^UTILITY(U,$J,358.3,2772,1,4,0)
- ;;=4^D70.9
- ;;^UTILITY(U,$J,358.3,2772,2)
- ;;=^334186
- ;;^UTILITY(U,$J,358.3,2773,0)
- ;;=M86.10^^7^83^152
- ;;^UTILITY(U,$J,358.3,2773,1,0)
+ ;;^UTILITY(U,$J,358.3,2969,1,3,0)
+ ;;=3^Shock,Cardiogenic
+ ;;^UTILITY(U,$J,358.3,2969,1,4,0)
+ ;;=4^R57.0
+ ;;^UTILITY(U,$J,358.3,2969,2)
+ ;;=^5019525
+ ;;^UTILITY(U,$J,358.3,2970,0)
+ ;;=R57.1^^18^210^73
+ ;;^UTILITY(U,$J,358.3,2970,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2773,1,3,0)
- ;;=3^Osteomyelitis, acute - NOS
- ;;^UTILITY(U,$J,358.3,2773,1,4,0)
- ;;=4^M86.10
- ;;^UTILITY(U,$J,358.3,2773,2)
- ;;=^5014521
- ;;^UTILITY(U,$J,358.3,2774,0)
- ;;=M86.60^^7^83^153
- ;;^UTILITY(U,$J,358.3,2774,1,0)
+ ;;^UTILITY(U,$J,358.3,2970,1,3,0)
+ ;;=3^Shock,Hypovolemic
+ ;;^UTILITY(U,$J,358.3,2970,1,4,0)
+ ;;=4^R57.1
+ ;;^UTILITY(U,$J,358.3,2970,2)
+ ;;=^60845
+ ;;^UTILITY(U,$J,358.3,2971,0)
+ ;;=R57.9^^18^210^74
+ ;;^UTILITY(U,$J,358.3,2971,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2774,1,3,0)
- ;;=3^Osteomyelitis, chronic - NOS
- ;;^UTILITY(U,$J,358.3,2774,1,4,0)
- ;;=4^M86.60
- ;;^UTILITY(U,$J,358.3,2774,2)
- ;;=^5014630
- ;;^UTILITY(U,$J,358.3,2775,0)
- ;;=H60.501^^7^83^156
- ;;^UTILITY(U,$J,358.3,2775,1,0)
+ ;;^UTILITY(U,$J,358.3,2971,1,3,0)
+ ;;=3^Shock,Unspec
+ ;;^UTILITY(U,$J,358.3,2971,1,4,0)
+ ;;=4^R57.9
+ ;;^UTILITY(U,$J,358.3,2971,2)
+ ;;=^5019527
+ ;;^UTILITY(U,$J,358.3,2972,0)
+ ;;=R55.^^18^210^75
+ ;;^UTILITY(U,$J,358.3,2972,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2775,1,3,0)
- ;;=3^Otitis, externa, right ear
- ;;^UTILITY(U,$J,358.3,2775,1,4,0)
- ;;=4^H60.501
- ;;^UTILITY(U,$J,358.3,2775,2)
- ;;=^5006467
- ;;^UTILITY(U,$J,358.3,2776,0)
- ;;=H60.502^^7^83^155
- ;;^UTILITY(U,$J,358.3,2776,1,0)
+ ;;^UTILITY(U,$J,358.3,2972,1,3,0)
+ ;;=3^Syncope and Collapse
+ ;;^UTILITY(U,$J,358.3,2972,1,4,0)
+ ;;=4^R55.
+ ;;^UTILITY(U,$J,358.3,2972,2)
+ ;;=^116707
+ ;;^UTILITY(U,$J,358.3,2973,0)
+ ;;=I78.0^^18^210^76
+ ;;^UTILITY(U,$J,358.3,2973,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2776,1,3,0)
- ;;=3^Otitis, externa, left ear
- ;;^UTILITY(U,$J,358.3,2776,1,4,0)
- ;;=4^H60.502
- ;;^UTILITY(U,$J,358.3,2776,2)
- ;;=^5006468
- ;;^UTILITY(U,$J,358.3,2777,0)
- ;;=H60.503^^7^83^154
- ;;^UTILITY(U,$J,358.3,2777,1,0)
+ ;;^UTILITY(U,$J,358.3,2973,1,3,0)
+ ;;=3^Telangiectasia,Hereditary Hemorrhagic
+ ;;^UTILITY(U,$J,358.3,2973,1,4,0)
+ ;;=4^I78.0
+ ;;^UTILITY(U,$J,358.3,2973,2)
+ ;;=^117566
+ ;;^UTILITY(U,$J,358.3,2974,0)
+ ;;=I73.1^^18^210^20
+ ;;^UTILITY(U,$J,358.3,2974,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2777,1,3,0)
- ;;=3^Otitis, externa, bilateral
- ;;^UTILITY(U,$J,358.3,2777,1,4,0)
- ;;=4^H60.503
- ;;^UTILITY(U,$J,358.3,2777,2)
- ;;=^5006469
- ;;^UTILITY(U,$J,358.3,2778,0)
- ;;=H66.91^^7^83^159
- ;;^UTILITY(U,$J,358.3,2778,1,0)
+ ;;^UTILITY(U,$J,358.3,2974,1,3,0)
+ ;;=3^Buerger's Disease
+ ;;^UTILITY(U,$J,358.3,2974,1,4,0)
+ ;;=4^I73.1
+ ;;^UTILITY(U,$J,358.3,2974,2)
+ ;;=^5007798
+ ;;^UTILITY(U,$J,358.3,2975,0)
+ ;;=G45.9^^18^210^77
+ ;;^UTILITY(U,$J,358.3,2975,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2778,1,3,0)
- ;;=3^Otitis, media, right ear
- ;;^UTILITY(U,$J,358.3,2778,1,4,0)
- ;;=4^H66.91
- ;;^UTILITY(U,$J,358.3,2778,2)
- ;;=^5006640
- ;;^UTILITY(U,$J,358.3,2779,0)
- ;;=H66.92^^7^83^158
- ;;^UTILITY(U,$J,358.3,2779,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2779,1,3,0)
- ;;=3^Otitis, media, left ear
+ ;;^UTILITY(U,$J,358.3,2975,1,3,0)
+ ;;=3^Transient Cerebral Ischemic Attack,Unspec
+ ;;^UTILITY(U,$J,358.3,2975,1,4,0)
+ ;;=4^G45.9
+ ;;^UTILITY(U,$J,358.3,2975,2)
+ ;;=^5003959
+ ;;^UTILITY(U,$J,358.3,2976,0)
+ ;;=G45.8^^18^210^78

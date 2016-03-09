@@ -1,136 +1,124 @@
-IBDEI1JS ; ; 06-AUG-2015
+IBDEI1JS ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,27477,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27477,1,4,0)
- ;;=4^252.1
- ;;^UTILITY(U,$J,358.3,27477,1,5,0)
- ;;=5^Hypoparathyroidism
- ;;^UTILITY(U,$J,358.3,27477,2)
- ;;=^60635
- ;;^UTILITY(U,$J,358.3,27478,0)
- ;;=242.90^^162^1782^26
- ;;^UTILITY(U,$J,358.3,27478,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27478,1,4,0)
- ;;=4^242.90
- ;;^UTILITY(U,$J,358.3,27478,1,5,0)
- ;;=5^Hyperthyroid w/o Goiter Or Strm
- ;;^UTILITY(U,$J,358.3,27478,2)
- ;;=^267811
- ;;^UTILITY(U,$J,358.3,27479,0)
- ;;=242.91^^162^1782^37
- ;;^UTILITY(U,$J,358.3,27479,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27479,1,4,0)
- ;;=4^242.91
- ;;^UTILITY(U,$J,358.3,27479,1,5,0)
- ;;=5^Hyprthy w/o Goit w/ Strm
- ;;^UTILITY(U,$J,358.3,27479,2)
- ;;=^267812
- ;;^UTILITY(U,$J,358.3,27480,0)
- ;;=244.0^^162^1782^35
- ;;^UTILITY(U,$J,358.3,27480,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27480,1,4,0)
- ;;=4^244.0
- ;;^UTILITY(U,$J,358.3,27480,1,5,0)
- ;;=5^Hypothyroid, Postsurgical
- ;;^UTILITY(U,$J,358.3,27480,2)
- ;;=^267814
- ;;^UTILITY(U,$J,358.3,27481,0)
- ;;=244.2^^162^1782^34
- ;;^UTILITY(U,$J,358.3,27481,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27481,1,4,0)
- ;;=4^244.2
- ;;^UTILITY(U,$J,358.3,27481,1,5,0)
- ;;=5^Hypothyroid d/t Iodine Rx
- ;;^UTILITY(U,$J,358.3,27481,2)
- ;;=^267817
- ;;^UTILITY(U,$J,358.3,27482,0)
- ;;=244.9^^162^1782^36
- ;;^UTILITY(U,$J,358.3,27482,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27482,1,4,0)
- ;;=4^244.9
- ;;^UTILITY(U,$J,358.3,27482,1,5,0)
- ;;=5^Hypothyroid, Unspec Cause
- ;;^UTILITY(U,$J,358.3,27482,2)
- ;;=^123752
- ;;^UTILITY(U,$J,358.3,27483,0)
- ;;=245.0^^162^1782^51
- ;;^UTILITY(U,$J,358.3,27483,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27483,1,4,0)
- ;;=4^245.0
- ;;^UTILITY(U,$J,358.3,27483,1,5,0)
- ;;=5^Thyroiditis, Acute
- ;;^UTILITY(U,$J,358.3,27483,2)
- ;;=^2692
- ;;^UTILITY(U,$J,358.3,27484,0)
- ;;=245.1^^162^1782^52
- ;;^UTILITY(U,$J,358.3,27484,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27484,1,4,0)
- ;;=4^245.1
- ;;^UTILITY(U,$J,358.3,27484,1,5,0)
- ;;=5^Thyroiditis, Subacute
- ;;^UTILITY(U,$J,358.3,27484,2)
- ;;=^119376
- ;;^UTILITY(U,$J,358.3,27485,0)
- ;;=733.01^^162^1782^45
- ;;^UTILITY(U,$J,358.3,27485,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27485,1,4,0)
- ;;=4^733.01
- ;;^UTILITY(U,$J,358.3,27485,1,5,0)
- ;;=5^Osteoporosis, Senile
- ;;^UTILITY(U,$J,358.3,27485,2)
- ;;=Osteoporosis, Senile^87188
- ;;^UTILITY(U,$J,358.3,27486,0)
- ;;=733.02^^162^1782^44
- ;;^UTILITY(U,$J,358.3,27486,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27486,1,4,0)
- ;;=4^733.02
- ;;^UTILITY(U,$J,358.3,27486,1,5,0)
- ;;=5^Osteoporosis, Idiopathic
- ;;^UTILITY(U,$J,358.3,27486,2)
- ;;=Osteoporosis, Idiopathic^272692
- ;;^UTILITY(U,$J,358.3,27487,0)
- ;;=268.2^^162^1782^41
- ;;^UTILITY(U,$J,358.3,27487,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27487,1,4,0)
- ;;=4^268.2
- ;;^UTILITY(U,$J,358.3,27487,1,5,0)
- ;;=5^Osteomalacia
- ;;^UTILITY(U,$J,358.3,27487,2)
- ;;=Osteomalacia^87103
- ;;^UTILITY(U,$J,358.3,27488,0)
- ;;=733.90^^162^1782^42
- ;;^UTILITY(U,$J,358.3,27488,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27488,1,4,0)
- ;;=4^733.90
- ;;^UTILITY(U,$J,358.3,27488,1,5,0)
- ;;=5^Osteopenia
- ;;^UTILITY(U,$J,358.3,27488,2)
- ;;=Osteopenia^35593
- ;;^UTILITY(U,$J,358.3,27489,0)
- ;;=275.49^^162^1782^46
- ;;^UTILITY(U,$J,358.3,27489,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27489,1,4,0)
- ;;=4^275.49
- ;;^UTILITY(U,$J,358.3,27489,1,5,0)
- ;;=5^Pseudohypoparathyroidism
- ;;^UTILITY(U,$J,358.3,27489,2)
- ;;=Pseudohypparathyroidism^317904
- ;;^UTILITY(U,$J,358.3,27490,0)
- ;;=266.2^^162^1782^53
- ;;^UTILITY(U,$J,358.3,27490,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,26256,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26256,1,3,0)
+ ;;=3^Opioid Induced Delirium
+ ;;^UTILITY(U,$J,358.3,26256,1,4,0)
+ ;;=4^F11.921
+ ;;^UTILITY(U,$J,358.3,26256,2)
+ ;;=^5003144
+ ;;^UTILITY(U,$J,358.3,26257,0)
+ ;;=F11.94^^98^1239^7
+ ;;^UTILITY(U,$J,358.3,26257,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26257,1,3,0)
+ ;;=3^Opioid Induced Depressive Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26257,1,4,0)
+ ;;=4^F11.94
+ ;;^UTILITY(U,$J,358.3,26257,2)
+ ;;=^5003148
+ ;;^UTILITY(U,$J,358.3,26258,0)
+ ;;=F11.181^^98^1239^8
+ ;;^UTILITY(U,$J,358.3,26258,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26258,1,3,0)
+ ;;=3^Opioid Induced Sexual Dysfunction w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26258,1,4,0)
+ ;;=4^F11.181
+ ;;^UTILITY(U,$J,358.3,26258,2)
+ ;;=^5003123
+ ;;^UTILITY(U,$J,358.3,26259,0)
+ ;;=F11.281^^98^1239^9
+ ;;^UTILITY(U,$J,358.3,26259,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26259,1,3,0)
+ ;;=3^Opioid Induced Sexual Dysfunction w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26259,1,4,0)
+ ;;=4^F11.281
+ ;;^UTILITY(U,$J,358.3,26259,2)
+ ;;=^5003138
+ ;;^UTILITY(U,$J,358.3,26260,0)
+ ;;=F11.981^^98^1239^10
+ ;;^UTILITY(U,$J,358.3,26260,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26260,1,3,0)
+ ;;=3^Opioid Induced Sexual Dysfunction w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26260,1,4,0)
+ ;;=4^F11.981
+ ;;^UTILITY(U,$J,358.3,26260,2)
+ ;;=^5003152
+ ;;^UTILITY(U,$J,358.3,26261,0)
+ ;;=F11.282^^98^1239^11
+ ;;^UTILITY(U,$J,358.3,26261,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26261,1,3,0)
+ ;;=3^Opioid Induced Sleep Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26261,1,4,0)
+ ;;=4^F11.282
+ ;;^UTILITY(U,$J,358.3,26261,2)
+ ;;=^5003139
+ ;;^UTILITY(U,$J,358.3,26262,0)
+ ;;=F11.982^^98^1239^12
+ ;;^UTILITY(U,$J,358.3,26262,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26262,1,3,0)
+ ;;=3^Opioid Induced Sleep Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26262,1,4,0)
+ ;;=4^F11.982
+ ;;^UTILITY(U,$J,358.3,26262,2)
+ ;;=^5003153
+ ;;^UTILITY(U,$J,358.3,26263,0)
+ ;;=F11.121^^98^1239^13
+ ;;^UTILITY(U,$J,358.3,26263,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26263,1,3,0)
+ ;;=3^Opioid Intoxication Delirium w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26263,1,4,0)
+ ;;=4^F11.121
+ ;;^UTILITY(U,$J,358.3,26263,2)
+ ;;=^5003116
+ ;;^UTILITY(U,$J,358.3,26264,0)
+ ;;=F11.221^^98^1239^14
+ ;;^UTILITY(U,$J,358.3,26264,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26264,1,3,0)
+ ;;=3^Opioid Intoxication Delirium w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26264,1,4,0)
+ ;;=4^F11.221
+ ;;^UTILITY(U,$J,358.3,26264,2)
+ ;;=^5003130
+ ;;^UTILITY(U,$J,358.3,26265,0)
+ ;;=F11.921^^98^1239^15
+ ;;^UTILITY(U,$J,358.3,26265,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26265,1,3,0)
+ ;;=3^Opioid Intoxication Delirium w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26265,1,4,0)
+ ;;=4^F11.921
+ ;;^UTILITY(U,$J,358.3,26265,2)
+ ;;=^5003144
+ ;;^UTILITY(U,$J,358.3,26266,0)
+ ;;=F11.229^^98^1239^20
+ ;;^UTILITY(U,$J,358.3,26266,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26266,1,3,0)
+ ;;=3^Opioid Intoxication w/o Perceptual Disturbance w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26266,1,4,0)
+ ;;=4^F11.229
+ ;;^UTILITY(U,$J,358.3,26266,2)
+ ;;=^5003132
+ ;;^UTILITY(U,$J,358.3,26267,0)
+ ;;=F11.929^^98^1239^21
+ ;;^UTILITY(U,$J,358.3,26267,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26267,1,3,0)
+ ;;=3^Opioid Intoxication w/o Perceptual Disturbance w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26267,1,4,0)
+ ;;=4^F11.929
+ ;;^UTILITY(U,$J,358.3,26267,2)
+ ;;=^5003146
+ ;;^UTILITY(U,$J,358.3,26268,0)
+ ;;=F11.122^^98^1239^16

@@ -1,124 +1,134 @@
-IBDEI20U ; ; 06-AUG-2015
+IBDEI20U ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35338,0)
- ;;=I69.090^^186^2033^9
- ;;^UTILITY(U,$J,358.3,35338,1,0)
+ ;;^UTILITY(U,$J,358.3,34293,1,4,0)
+ ;;=4^K71.7
+ ;;^UTILITY(U,$J,358.3,34293,2)
+ ;;=^5008802
+ ;;^UTILITY(U,$J,358.3,34294,0)
+ ;;=K71.8^^131^1683^33
+ ;;^UTILITY(U,$J,358.3,34294,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35338,1,3,0)
- ;;=3^Apraxia following nontraumatic subarachnoid hemorrhage
- ;;^UTILITY(U,$J,358.3,35338,1,4,0)
- ;;=4^I69.090
- ;;^UTILITY(U,$J,358.3,35338,2)
- ;;=^5007420
- ;;^UTILITY(U,$J,358.3,35339,0)
- ;;=I69.890^^186^2033^10
- ;;^UTILITY(U,$J,358.3,35339,1,0)
+ ;;^UTILITY(U,$J,358.3,34294,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Oth Disorders of Liver
+ ;;^UTILITY(U,$J,358.3,34294,1,4,0)
+ ;;=4^K71.8
+ ;;^UTILITY(U,$J,358.3,34294,2)
+ ;;=^5008803
+ ;;^UTILITY(U,$J,358.3,34295,0)
+ ;;=K71.9^^131^1683^34
+ ;;^UTILITY(U,$J,358.3,34295,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35339,1,3,0)
- ;;=3^Apraxia following other cerebrovascular disease
- ;;^UTILITY(U,$J,358.3,35339,1,4,0)
- ;;=4^I69.890
- ;;^UTILITY(U,$J,358.3,35339,2)
- ;;=^5007546
- ;;^UTILITY(U,$J,358.3,35340,0)
- ;;=I69.290^^186^2033^11
- ;;^UTILITY(U,$J,358.3,35340,1,0)
+ ;;^UTILITY(U,$J,358.3,34295,1,3,0)
+ ;;=3^Toxic Liver Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,34295,1,4,0)
+ ;;=4^K71.9
+ ;;^UTILITY(U,$J,358.3,34295,2)
+ ;;=^5008804
+ ;;^UTILITY(U,$J,358.3,34296,0)
+ ;;=K75.2^^131^1683^20
+ ;;^UTILITY(U,$J,358.3,34296,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35340,1,3,0)
- ;;=3^Apraxia following other nontraumatic intracranial hemorrhage
- ;;^UTILITY(U,$J,358.3,35340,1,4,0)
- ;;=4^I69.290
- ;;^UTILITY(U,$J,358.3,35340,2)
- ;;=^5007484
- ;;^UTILITY(U,$J,358.3,35341,0)
- ;;=I69.990^^186^2033^12
- ;;^UTILITY(U,$J,358.3,35341,1,0)
+ ;;^UTILITY(U,$J,358.3,34296,1,3,0)
+ ;;=3^Nonspecific Reactive Hepatitis
+ ;;^UTILITY(U,$J,358.3,34296,1,4,0)
+ ;;=4^K75.2
+ ;;^UTILITY(U,$J,358.3,34296,2)
+ ;;=^5008826
+ ;;^UTILITY(U,$J,358.3,34297,0)
+ ;;=K75.3^^131^1683^13
+ ;;^UTILITY(U,$J,358.3,34297,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35341,1,3,0)
- ;;=3^Apraxia following unspecified cerebrovascular disease
- ;;^UTILITY(U,$J,358.3,35341,1,4,0)
- ;;=4^I69.990
- ;;^UTILITY(U,$J,358.3,35341,2)
- ;;=^5007568
- ;;^UTILITY(U,$J,358.3,35342,0)
- ;;=I69.91^^186^2033^13
- ;;^UTILITY(U,$J,358.3,35342,1,0)
+ ;;^UTILITY(U,$J,358.3,34297,1,3,0)
+ ;;=3^Granulomatous Hepatitis NEC
+ ;;^UTILITY(U,$J,358.3,34297,1,4,0)
+ ;;=4^K75.3
+ ;;^UTILITY(U,$J,358.3,34297,2)
+ ;;=^5008827
+ ;;^UTILITY(U,$J,358.3,34298,0)
+ ;;=K76.6^^131^1683^22
+ ;;^UTILITY(U,$J,358.3,34298,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35342,1,3,0)
- ;;=3^Cognitive deficits following unsp cerebrovascular disease
- ;;^UTILITY(U,$J,358.3,35342,1,4,0)
- ;;=4^I69.91
- ;;^UTILITY(U,$J,358.3,35342,2)
- ;;=^5007552
- ;;^UTILITY(U,$J,358.3,35343,0)
- ;;=I69.322^^186^2033^14
- ;;^UTILITY(U,$J,358.3,35343,1,0)
+ ;;^UTILITY(U,$J,358.3,34298,1,3,0)
+ ;;=3^Portal Hypertension
+ ;;^UTILITY(U,$J,358.3,34298,1,4,0)
+ ;;=4^K76.6
+ ;;^UTILITY(U,$J,358.3,34298,2)
+ ;;=^5008834
+ ;;^UTILITY(U,$J,358.3,34299,0)
+ ;;=F20.3^^131^1684^25
+ ;;^UTILITY(U,$J,358.3,34299,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35343,1,3,0)
- ;;=3^Dysarthria following cerebral infarction
- ;;^UTILITY(U,$J,358.3,35343,1,4,0)
- ;;=4^I69.322
- ;;^UTILITY(U,$J,358.3,35343,2)
- ;;=^5007493
- ;;^UTILITY(U,$J,358.3,35344,0)
- ;;=I69.122^^186^2033^15
- ;;^UTILITY(U,$J,358.3,35344,1,0)
+ ;;^UTILITY(U,$J,358.3,34299,1,3,0)
+ ;;=3^Undifferentiated/Atypical Schizophrenia
+ ;;^UTILITY(U,$J,358.3,34299,1,4,0)
+ ;;=4^F20.3
+ ;;^UTILITY(U,$J,358.3,34299,2)
+ ;;=^5003472
+ ;;^UTILITY(U,$J,358.3,34300,0)
+ ;;=F20.9^^131^1684^21
+ ;;^UTILITY(U,$J,358.3,34300,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35344,1,3,0)
- ;;=3^Dysarthria following nontraumatic intracerebral hemorrhage
- ;;^UTILITY(U,$J,358.3,35344,1,4,0)
- ;;=4^I69.122
- ;;^UTILITY(U,$J,358.3,35344,2)
- ;;=^5007429
- ;;^UTILITY(U,$J,358.3,35345,0)
- ;;=I69.222^^186^2033^17
- ;;^UTILITY(U,$J,358.3,35345,1,0)
+ ;;^UTILITY(U,$J,358.3,34300,1,3,0)
+ ;;=3^Schizophrenia,Unspec
+ ;;^UTILITY(U,$J,358.3,34300,1,4,0)
+ ;;=4^F20.9
+ ;;^UTILITY(U,$J,358.3,34300,2)
+ ;;=^5003476
+ ;;^UTILITY(U,$J,358.3,34301,0)
+ ;;=F31.9^^131^1684^6
+ ;;^UTILITY(U,$J,358.3,34301,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35345,1,3,0)
- ;;=3^Dysarthria following oth nontraumatic intcrn hemorrhage
- ;;^UTILITY(U,$J,358.3,35345,1,4,0)
- ;;=4^I69.222
- ;;^UTILITY(U,$J,358.3,35345,2)
- ;;=^5007461
- ;;^UTILITY(U,$J,358.3,35346,0)
- ;;=I69.022^^186^2033^16
- ;;^UTILITY(U,$J,358.3,35346,1,0)
+ ;;^UTILITY(U,$J,358.3,34301,1,3,0)
+ ;;=3^Bipolar Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,34301,1,4,0)
+ ;;=4^F31.9
+ ;;^UTILITY(U,$J,358.3,34301,2)
+ ;;=^331892
+ ;;^UTILITY(U,$J,358.3,34302,0)
+ ;;=F31.72^^131^1684^7
+ ;;^UTILITY(U,$J,358.3,34302,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35346,1,3,0)
- ;;=3^Dysarthria following nontraumatic subarachnoid hemorrhage
- ;;^UTILITY(U,$J,358.3,35346,1,4,0)
- ;;=4^I69.022
- ;;^UTILITY(U,$J,358.3,35346,2)
- ;;=^5007397
- ;;^UTILITY(U,$J,358.3,35347,0)
- ;;=I69.822^^186^2033^18
- ;;^UTILITY(U,$J,358.3,35347,1,0)
+ ;;^UTILITY(U,$J,358.3,34302,1,3,0)
+ ;;=3^Bipolr Disorder,Full Remis,Most Recent Episode Hypomanic
+ ;;^UTILITY(U,$J,358.3,34302,1,4,0)
+ ;;=4^F31.72
+ ;;^UTILITY(U,$J,358.3,34302,2)
+ ;;=^5003512
+ ;;^UTILITY(U,$J,358.3,34303,0)
+ ;;=F31.71^^131^1684^5
+ ;;^UTILITY(U,$J,358.3,34303,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35347,1,3,0)
- ;;=3^Dysarthria following other cerebrovascular disease
- ;;^UTILITY(U,$J,358.3,35347,1,4,0)
- ;;=4^I69.822
- ;;^UTILITY(U,$J,358.3,35347,2)
- ;;=^5007524
- ;;^UTILITY(U,$J,358.3,35348,0)
- ;;=I69.922^^186^2033^19
- ;;^UTILITY(U,$J,358.3,35348,1,0)
+ ;;^UTILITY(U,$J,358.3,34303,1,3,0)
+ ;;=3^Bipolar Disorder,Part Remis,Most Recent Episode Hypomanic
+ ;;^UTILITY(U,$J,358.3,34303,1,4,0)
+ ;;=4^F31.71
+ ;;^UTILITY(U,$J,358.3,34303,2)
+ ;;=^5003511
+ ;;^UTILITY(U,$J,358.3,34304,0)
+ ;;=F31.70^^131^1684^4
+ ;;^UTILITY(U,$J,358.3,34304,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35348,1,3,0)
- ;;=3^Dysarthria following unspecified cerebrovascular disease
- ;;^UTILITY(U,$J,358.3,35348,1,4,0)
- ;;=4^I69.922
- ;;^UTILITY(U,$J,358.3,35348,2)
- ;;=^5007555
- ;;^UTILITY(U,$J,358.3,35349,0)
- ;;=I69.391^^186^2033^20
- ;;^UTILITY(U,$J,358.3,35349,1,0)
+ ;;^UTILITY(U,$J,358.3,34304,1,3,0)
+ ;;=3^Bipolar Disorder,In Remis,Most Recent Episode Unspec
+ ;;^UTILITY(U,$J,358.3,34304,1,4,0)
+ ;;=4^F31.70
+ ;;^UTILITY(U,$J,358.3,34304,2)
+ ;;=^5003510
+ ;;^UTILITY(U,$J,358.3,34305,0)
+ ;;=F29.^^131^1684^19
+ ;;^UTILITY(U,$J,358.3,34305,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35349,1,3,0)
- ;;=3^Dysphagia following cerebral infarction
- ;;^UTILITY(U,$J,358.3,35349,1,4,0)
- ;;=4^I69.391
- ;;^UTILITY(U,$J,358.3,35349,2)
- ;;=^5007516
+ ;;^UTILITY(U,$J,358.3,34305,1,3,0)
+ ;;=3^Psychosis not d/t Substance/Known Physiol Cond,Unspec
+ ;;^UTILITY(U,$J,358.3,34305,1,4,0)
+ ;;=4^F29.
+ ;;^UTILITY(U,$J,358.3,34305,2)
+ ;;=^5003484
+ ;;^UTILITY(U,$J,358.3,34306,0)
+ ;;=F28.^^131^1684^20
+ ;;^UTILITY(U,$J,358.3,34306,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34306,1,3,0)
+ ;;=3^Psychosis not d/t Substance/Known Physiol Cond NEC

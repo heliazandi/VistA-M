@@ -1,130 +1,138 @@
-IBDEI1RQ ; ; 06-AUG-2015
+IBDEI1RQ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31230,1,0)
+ ;;^UTILITY(U,$J,358.3,30057,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31230,1,3,0)
- ;;=3^Acquired absence of right foot
- ;;^UTILITY(U,$J,358.3,31230,1,4,0)
- ;;=4^Z89.431
- ;;^UTILITY(U,$J,358.3,31230,2)
- ;;=^5063560
- ;;^UTILITY(U,$J,358.3,31231,0)
- ;;=Z89.411^^180^1949^20
- ;;^UTILITY(U,$J,358.3,31231,1,0)
+ ;;^UTILITY(U,$J,358.3,30057,1,3,0)
+ ;;=3^Coagulation Defects,Unspec
+ ;;^UTILITY(U,$J,358.3,30057,1,4,0)
+ ;;=4^D68.9
+ ;;^UTILITY(U,$J,358.3,30057,2)
+ ;;=^5002364
+ ;;^UTILITY(U,$J,358.3,30058,0)
+ ;;=D69.1^^118^1496^22
+ ;;^UTILITY(U,$J,358.3,30058,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31231,1,3,0)
- ;;=3^Acquired absence of right great toe
- ;;^UTILITY(U,$J,358.3,31231,1,4,0)
- ;;=4^Z89.411
- ;;^UTILITY(U,$J,358.3,31231,2)
- ;;=^5063554
- ;;^UTILITY(U,$J,358.3,31232,0)
- ;;=Z89.111^^180^1949^21
- ;;^UTILITY(U,$J,358.3,31232,1,0)
+ ;;^UTILITY(U,$J,358.3,30058,1,3,0)
+ ;;=3^Qualitative platelet defects
+ ;;^UTILITY(U,$J,358.3,30058,1,4,0)
+ ;;=4^D69.1
+ ;;^UTILITY(U,$J,358.3,30058,2)
+ ;;=^101922
+ ;;^UTILITY(U,$J,358.3,30059,0)
+ ;;=D47.3^^118^1496^8
+ ;;^UTILITY(U,$J,358.3,30059,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31232,1,3,0)
- ;;=3^Acquired absence of right hand
- ;;^UTILITY(U,$J,358.3,31232,1,4,0)
- ;;=4^Z89.111
- ;;^UTILITY(U,$J,358.3,31232,2)
- ;;=^5063537
- ;;^UTILITY(U,$J,358.3,31233,0)
- ;;=Z89.621^^180^1949^22
- ;;^UTILITY(U,$J,358.3,31233,1,0)
+ ;;^UTILITY(U,$J,358.3,30059,1,3,0)
+ ;;=3^Essential (hemorrhagic) thrombocythemia
+ ;;^UTILITY(U,$J,358.3,30059,1,4,0)
+ ;;=4^D47.3
+ ;;^UTILITY(U,$J,358.3,30059,2)
+ ;;=^5002258
+ ;;^UTILITY(U,$J,358.3,30060,0)
+ ;;=D69.0^^118^1496^3
+ ;;^UTILITY(U,$J,358.3,30060,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31233,1,3,0)
- ;;=3^Acquired absence of right hip joint
- ;;^UTILITY(U,$J,358.3,31233,1,4,0)
- ;;=4^Z89.621
- ;;^UTILITY(U,$J,358.3,31233,2)
- ;;=^5063575
- ;;^UTILITY(U,$J,358.3,31234,0)
- ;;=Z89.611^^180^1949^23
- ;;^UTILITY(U,$J,358.3,31234,1,0)
+ ;;^UTILITY(U,$J,358.3,30060,1,3,0)
+ ;;=3^Allergic purpura
+ ;;^UTILITY(U,$J,358.3,30060,1,4,0)
+ ;;=4^D69.0
+ ;;^UTILITY(U,$J,358.3,30060,2)
+ ;;=^5002365
+ ;;^UTILITY(U,$J,358.3,30061,0)
+ ;;=D69.2^^118^1496^19
+ ;;^UTILITY(U,$J,358.3,30061,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31234,1,3,0)
- ;;=3^Acquired absence of right leg above knee
- ;;^UTILITY(U,$J,358.3,31234,1,4,0)
- ;;=4^Z89.611
- ;;^UTILITY(U,$J,358.3,31234,2)
- ;;=^5063572
- ;;^UTILITY(U,$J,358.3,31235,0)
- ;;=Z89.511^^180^1949^24
- ;;^UTILITY(U,$J,358.3,31235,1,0)
+ ;;^UTILITY(U,$J,358.3,30061,1,3,0)
+ ;;=3^Nonthrombocytopenic purpura NEC
+ ;;^UTILITY(U,$J,358.3,30061,1,4,0)
+ ;;=4^D69.2
+ ;;^UTILITY(U,$J,358.3,30061,2)
+ ;;=^5002366
+ ;;^UTILITY(U,$J,358.3,30062,0)
+ ;;=D69.3^^118^1496^18
+ ;;^UTILITY(U,$J,358.3,30062,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31235,1,3,0)
- ;;=3^Acquired absence of right leg below knee
- ;;^UTILITY(U,$J,358.3,31235,1,4,0)
- ;;=4^Z89.511
- ;;^UTILITY(U,$J,358.3,31235,2)
- ;;=^5063566
- ;;^UTILITY(U,$J,358.3,31236,0)
- ;;=Z89.231^^180^1949^25
- ;;^UTILITY(U,$J,358.3,31236,1,0)
+ ;;^UTILITY(U,$J,358.3,30062,1,3,0)
+ ;;=3^Immune thrombocytopenic purpura
+ ;;^UTILITY(U,$J,358.3,30062,1,4,0)
+ ;;=4^D69.3
+ ;;^UTILITY(U,$J,358.3,30062,2)
+ ;;=^332746
+ ;;^UTILITY(U,$J,358.3,30063,0)
+ ;;=D69.41^^118^1496^9
+ ;;^UTILITY(U,$J,358.3,30063,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31236,1,3,0)
- ;;=3^Acquired absence of right shoulder
- ;;^UTILITY(U,$J,358.3,31236,1,4,0)
- ;;=4^Z89.231
- ;;^UTILITY(U,$J,358.3,31236,2)
- ;;=^5063551
- ;;^UTILITY(U,$J,358.3,31237,0)
- ;;=Z89.011^^180^1949^26
- ;;^UTILITY(U,$J,358.3,31237,1,0)
+ ;;^UTILITY(U,$J,358.3,30063,1,3,0)
+ ;;=3^Evans syndrome
+ ;;^UTILITY(U,$J,358.3,30063,1,4,0)
+ ;;=4^D69.41
+ ;;^UTILITY(U,$J,358.3,30063,2)
+ ;;=^332747
+ ;;^UTILITY(U,$J,358.3,30064,0)
+ ;;=D69.51^^118^1496^21
+ ;;^UTILITY(U,$J,358.3,30064,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31237,1,3,0)
- ;;=3^Acquired absence of right thumb
- ;;^UTILITY(U,$J,358.3,31237,1,4,0)
- ;;=4^Z89.011
- ;;^UTILITY(U,$J,358.3,31237,2)
- ;;=^5063531
- ;;^UTILITY(U,$J,358.3,31238,0)
- ;;=Z89.221^^180^1949^27
- ;;^UTILITY(U,$J,358.3,31238,1,0)
+ ;;^UTILITY(U,$J,358.3,30064,1,3,0)
+ ;;=3^Posttransfusion purpura
+ ;;^UTILITY(U,$J,358.3,30064,1,4,0)
+ ;;=4^D69.51
+ ;;^UTILITY(U,$J,358.3,30064,2)
+ ;;=^5002368
+ ;;^UTILITY(U,$J,358.3,30065,0)
+ ;;=D69.59^^118^1496^23
+ ;;^UTILITY(U,$J,358.3,30065,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31238,1,3,0)
- ;;=3^Acquired absence of right upper limb above elbow
- ;;^UTILITY(U,$J,358.3,31238,1,4,0)
- ;;=4^Z89.221
- ;;^UTILITY(U,$J,358.3,31238,2)
- ;;=^5063548
- ;;^UTILITY(U,$J,358.3,31239,0)
- ;;=Z89.211^^180^1949^28
- ;;^UTILITY(U,$J,358.3,31239,1,0)
+ ;;^UTILITY(U,$J,358.3,30065,1,3,0)
+ ;;=3^Secondary thrombocytopenia NEC
+ ;;^UTILITY(U,$J,358.3,30065,1,4,0)
+ ;;=4^D69.59
+ ;;^UTILITY(U,$J,358.3,30065,2)
+ ;;=^5002369
+ ;;^UTILITY(U,$J,358.3,30066,0)
+ ;;=D69.8^^118^1496^10
+ ;;^UTILITY(U,$J,358.3,30066,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31239,1,3,0)
- ;;=3^Acquired absence of right upper limb below elbow
- ;;^UTILITY(U,$J,358.3,31239,1,4,0)
- ;;=4^Z89.211
- ;;^UTILITY(U,$J,358.3,31239,2)
- ;;=^5063545
- ;;^UTILITY(U,$J,358.3,31240,0)
- ;;=Z89.201^^180^1949^29
- ;;^UTILITY(U,$J,358.3,31240,1,0)
+ ;;^UTILITY(U,$J,358.3,30066,1,3,0)
+ ;;=3^Hemorrhagic Conditions NEC
+ ;;^UTILITY(U,$J,358.3,30066,1,4,0)
+ ;;=4^D69.8
+ ;;^UTILITY(U,$J,358.3,30066,2)
+ ;;=^88074
+ ;;^UTILITY(U,$J,358.3,30067,0)
+ ;;=D69.6^^118^1496^24
+ ;;^UTILITY(U,$J,358.3,30067,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31240,1,3,0)
- ;;=3^Acquired absence of right upper limb, unspecified level
- ;;^UTILITY(U,$J,358.3,31240,1,4,0)
- ;;=4^Z89.201
- ;;^UTILITY(U,$J,358.3,31240,2)
- ;;=^5063543
- ;;^UTILITY(U,$J,358.3,31241,0)
- ;;=Z89.121^^180^1949^30
- ;;^UTILITY(U,$J,358.3,31241,1,0)
+ ;;^UTILITY(U,$J,358.3,30067,1,3,0)
+ ;;=3^Thrombocytopenia, unspecified
+ ;;^UTILITY(U,$J,358.3,30067,1,4,0)
+ ;;=4^D69.6
+ ;;^UTILITY(U,$J,358.3,30067,2)
+ ;;=^5002370
+ ;;^UTILITY(U,$J,358.3,30068,0)
+ ;;=M31.1^^118^1496^25
+ ;;^UTILITY(U,$J,358.3,30068,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31241,1,3,0)
- ;;=3^Acquired absence of right wrist
- ;;^UTILITY(U,$J,358.3,31241,1,4,0)
- ;;=4^Z89.121
- ;;^UTILITY(U,$J,358.3,31241,2)
- ;;=^5063540
- ;;^UTILITY(U,$J,358.3,31242,0)
- ;;=H61.23^^180^1950^1
- ;;^UTILITY(U,$J,358.3,31242,1,0)
+ ;;^UTILITY(U,$J,358.3,30068,1,3,0)
+ ;;=3^Thrombotic microangiopathy
+ ;;^UTILITY(U,$J,358.3,30068,1,4,0)
+ ;;=4^M31.1
+ ;;^UTILITY(U,$J,358.3,30068,2)
+ ;;=^119061
+ ;;^UTILITY(U,$J,358.3,30069,0)
+ ;;=D69.9^^118^1496^11
+ ;;^UTILITY(U,$J,358.3,30069,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31242,1,3,0)
- ;;=3^Impacted cerumen, bilateral
- ;;^UTILITY(U,$J,358.3,31242,1,4,0)
- ;;=4^H61.23
+ ;;^UTILITY(U,$J,358.3,30069,1,3,0)
+ ;;=3^Hemorrhagic condition, unspecified
+ ;;^UTILITY(U,$J,358.3,30069,1,4,0)
+ ;;=4^D69.9
+ ;;^UTILITY(U,$J,358.3,30069,2)
+ ;;=^5002371
+ ;;^UTILITY(U,$J,358.3,30070,0)
+ ;;=I80.9^^118^1496^20
+ ;;^UTILITY(U,$J,358.3,30070,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30070,1,3,0)
+ ;;=3^Phlebitis and thrombophlebitis of unspecified site

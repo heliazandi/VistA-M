@@ -1,124 +1,124 @@
-IBDEI1P7 ; ; 06-AUG-2015
+IBDEI1P7 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30115,1,3,0)
- ;;=3^Obesity complicating the puerperium
- ;;^UTILITY(U,$J,358.3,30115,1,4,0)
- ;;=4^O99.215
- ;;^UTILITY(U,$J,358.3,30115,2)
- ;;=^5017933
- ;;^UTILITY(U,$J,358.3,30116,0)
- ;;=O99.841^^178^1914^2
- ;;^UTILITY(U,$J,358.3,30116,1,0)
+ ;;^UTILITY(U,$J,358.3,28864,2)
+ ;;=^5017761
+ ;;^UTILITY(U,$J,358.3,28865,0)
+ ;;=O26.611^^115^1452^35
+ ;;^UTILITY(U,$J,358.3,28865,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30116,1,3,0)
- ;;=3^Bariatric surgery status comp pregnancy, first trimester
- ;;^UTILITY(U,$J,358.3,30116,1,4,0)
- ;;=4^O99.841
- ;;^UTILITY(U,$J,358.3,30116,2)
- ;;=^5018004
- ;;^UTILITY(U,$J,358.3,30117,0)
- ;;=O99.842^^178^1914^3
- ;;^UTILITY(U,$J,358.3,30117,1,0)
+ ;;^UTILITY(U,$J,358.3,28865,1,3,0)
+ ;;=3^Liver and biliary tract disord in pregnancy, first trimester
+ ;;^UTILITY(U,$J,358.3,28865,1,4,0)
+ ;;=4^O26.611
+ ;;^UTILITY(U,$J,358.3,28865,2)
+ ;;=^5016321
+ ;;^UTILITY(U,$J,358.3,28866,0)
+ ;;=O26.612^^115^1452^36
+ ;;^UTILITY(U,$J,358.3,28866,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30117,1,3,0)
- ;;=3^Bariatric surgery status comp pregnancy, second trimester
- ;;^UTILITY(U,$J,358.3,30117,1,4,0)
- ;;=4^O99.842
- ;;^UTILITY(U,$J,358.3,30117,2)
- ;;=^5018005
- ;;^UTILITY(U,$J,358.3,30118,0)
- ;;=O99.843^^178^1914^4
- ;;^UTILITY(U,$J,358.3,30118,1,0)
+ ;;^UTILITY(U,$J,358.3,28866,1,3,0)
+ ;;=3^Liver and biliary tract disord in pregnancy, second trimester
+ ;;^UTILITY(U,$J,358.3,28866,1,4,0)
+ ;;=4^O26.612
+ ;;^UTILITY(U,$J,358.3,28866,2)
+ ;;=^5016322
+ ;;^UTILITY(U,$J,358.3,28867,0)
+ ;;=O26.613^^115^1452^37
+ ;;^UTILITY(U,$J,358.3,28867,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30118,1,3,0)
- ;;=3^Bariatric surgery status comp pregnancy, third trimester
- ;;^UTILITY(U,$J,358.3,30118,1,4,0)
- ;;=4^O99.843
- ;;^UTILITY(U,$J,358.3,30118,2)
- ;;=^5018006
- ;;^UTILITY(U,$J,358.3,30119,0)
- ;;=O99.845^^178^1914^5
- ;;^UTILITY(U,$J,358.3,30119,1,0)
+ ;;^UTILITY(U,$J,358.3,28867,1,3,0)
+ ;;=3^Liver and biliary tract disord in pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,28867,1,4,0)
+ ;;=4^O26.613
+ ;;^UTILITY(U,$J,358.3,28867,2)
+ ;;=^5016323
+ ;;^UTILITY(U,$J,358.3,28868,0)
+ ;;=O98.111^^115^1452^80
+ ;;^UTILITY(U,$J,358.3,28868,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30119,1,3,0)
- ;;=3^Bariatric surgery status complicating the puerperium
- ;;^UTILITY(U,$J,358.3,30119,1,4,0)
- ;;=4^O99.845
- ;;^UTILITY(U,$J,358.3,30119,2)
- ;;=^5018008
- ;;^UTILITY(U,$J,358.3,30120,0)
- ;;=O99.351^^178^1914^10
- ;;^UTILITY(U,$J,358.3,30120,1,0)
+ ;;^UTILITY(U,$J,358.3,28868,1,3,0)
+ ;;=3^Syphilis complicating pregnancy, first trimester
+ ;;^UTILITY(U,$J,358.3,28868,1,4,0)
+ ;;=4^O98.111
+ ;;^UTILITY(U,$J,358.3,28868,2)
+ ;;=^5017863
+ ;;^UTILITY(U,$J,358.3,28869,0)
+ ;;=O98.112^^115^1452^81
+ ;;^UTILITY(U,$J,358.3,28869,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30120,1,3,0)
- ;;=3^Diseases of the nervous sys comp pregnancy, first trimester
- ;;^UTILITY(U,$J,358.3,30120,1,4,0)
- ;;=4^O99.351
- ;;^UTILITY(U,$J,358.3,30120,2)
- ;;=^5017965
- ;;^UTILITY(U,$J,358.3,30121,0)
- ;;=O99.352^^178^1914^11
- ;;^UTILITY(U,$J,358.3,30121,1,0)
+ ;;^UTILITY(U,$J,358.3,28869,1,3,0)
+ ;;=3^Syphilis complicating pregnancy, second trimester
+ ;;^UTILITY(U,$J,358.3,28869,1,4,0)
+ ;;=4^O98.112
+ ;;^UTILITY(U,$J,358.3,28869,2)
+ ;;=^5017864
+ ;;^UTILITY(U,$J,358.3,28870,0)
+ ;;=O98.113^^115^1452^82
+ ;;^UTILITY(U,$J,358.3,28870,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30121,1,3,0)
- ;;=3^Diseases of the nervous sys comp pregnancy, second trimester
- ;;^UTILITY(U,$J,358.3,30121,1,4,0)
- ;;=4^O99.352
- ;;^UTILITY(U,$J,358.3,30121,2)
- ;;=^5017966
- ;;^UTILITY(U,$J,358.3,30122,0)
- ;;=O99.353^^178^1914^12
- ;;^UTILITY(U,$J,358.3,30122,1,0)
+ ;;^UTILITY(U,$J,358.3,28870,1,3,0)
+ ;;=3^Syphilis complicating pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,28870,1,4,0)
+ ;;=4^O98.113
+ ;;^UTILITY(U,$J,358.3,28870,2)
+ ;;=^5017865
+ ;;^UTILITY(U,$J,358.3,28871,0)
+ ;;=O98.13^^115^1452^83
+ ;;^UTILITY(U,$J,358.3,28871,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30122,1,3,0)
- ;;=3^Diseases of the nervous sys comp pregnancy, third trimester
- ;;^UTILITY(U,$J,358.3,30122,1,4,0)
- ;;=4^O99.353
- ;;^UTILITY(U,$J,358.3,30122,2)
- ;;=^5017967
- ;;^UTILITY(U,$J,358.3,30123,0)
- ;;=O26.851^^178^1914^24
- ;;^UTILITY(U,$J,358.3,30123,1,0)
+ ;;^UTILITY(U,$J,358.3,28871,1,3,0)
+ ;;=3^Syphilis complicating the puerperium
+ ;;^UTILITY(U,$J,358.3,28871,1,4,0)
+ ;;=4^O98.13
+ ;;^UTILITY(U,$J,358.3,28871,2)
+ ;;=^5017868
+ ;;^UTILITY(U,$J,358.3,28872,0)
+ ;;=O98.211^^115^1452^29
+ ;;^UTILITY(U,$J,358.3,28872,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30123,1,3,0)
- ;;=3^Spotting complicating pregnancy, first trimester
- ;;^UTILITY(U,$J,358.3,30123,1,4,0)
- ;;=4^O26.851
- ;;^UTILITY(U,$J,358.3,30123,2)
- ;;=^5016349
- ;;^UTILITY(U,$J,358.3,30124,0)
- ;;=O26.852^^178^1914^25
- ;;^UTILITY(U,$J,358.3,30124,1,0)
+ ;;^UTILITY(U,$J,358.3,28872,1,3,0)
+ ;;=3^Gonorrhea complicating pregnancy, first trimester
+ ;;^UTILITY(U,$J,358.3,28872,1,4,0)
+ ;;=4^O98.211
+ ;;^UTILITY(U,$J,358.3,28872,2)
+ ;;=^5017869
+ ;;^UTILITY(U,$J,358.3,28873,0)
+ ;;=O98.212^^115^1452^30
+ ;;^UTILITY(U,$J,358.3,28873,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30124,1,3,0)
- ;;=3^Spotting complicating pregnancy, second trimester
- ;;^UTILITY(U,$J,358.3,30124,1,4,0)
- ;;=4^O26.852
- ;;^UTILITY(U,$J,358.3,30124,2)
- ;;=^5016350
- ;;^UTILITY(U,$J,358.3,30125,0)
- ;;=O26.853^^178^1914^26
- ;;^UTILITY(U,$J,358.3,30125,1,0)
+ ;;^UTILITY(U,$J,358.3,28873,1,3,0)
+ ;;=3^Gonorrhea complicating pregnancy, second trimester
+ ;;^UTILITY(U,$J,358.3,28873,1,4,0)
+ ;;=4^O98.212
+ ;;^UTILITY(U,$J,358.3,28873,2)
+ ;;=^5017870
+ ;;^UTILITY(U,$J,358.3,28874,0)
+ ;;=O98.213^^115^1452^31
+ ;;^UTILITY(U,$J,358.3,28874,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30125,1,3,0)
- ;;=3^Spotting complicating pregnancy, third trimester
- ;;^UTILITY(U,$J,358.3,30125,1,4,0)
- ;;=4^O26.853
- ;;^UTILITY(U,$J,358.3,30125,2)
- ;;=^5016351
- ;;^UTILITY(U,$J,358.3,30126,0)
- ;;=O26.841^^178^1914^28
- ;;^UTILITY(U,$J,358.3,30126,1,0)
+ ;;^UTILITY(U,$J,358.3,28874,1,3,0)
+ ;;=3^Gonorrhea complicating pregnancy, third trimester
+ ;;^UTILITY(U,$J,358.3,28874,1,4,0)
+ ;;=4^O98.213
+ ;;^UTILITY(U,$J,358.3,28874,2)
+ ;;=^5017871
+ ;;^UTILITY(U,$J,358.3,28875,0)
+ ;;=O98.23^^115^1452^32
+ ;;^UTILITY(U,$J,358.3,28875,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30126,1,3,0)
- ;;=3^Uterine size-date discrepancy, first trimester
- ;;^UTILITY(U,$J,358.3,30126,1,4,0)
- ;;=4^O26.841
- ;;^UTILITY(U,$J,358.3,30126,2)
- ;;=^5016345
- ;;^UTILITY(U,$J,358.3,30127,0)
- ;;=O26.842^^178^1914^29
- ;;^UTILITY(U,$J,358.3,30127,1,0)
+ ;;^UTILITY(U,$J,358.3,28875,1,3,0)
+ ;;=3^Gonorrhea complicating the puerperium
+ ;;^UTILITY(U,$J,358.3,28875,1,4,0)
+ ;;=4^O98.23
+ ;;^UTILITY(U,$J,358.3,28875,2)
+ ;;=^5017874
+ ;;^UTILITY(U,$J,358.3,28876,0)
+ ;;=O98.011^^115^1452^84
+ ;;^UTILITY(U,$J,358.3,28876,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28876,1,3,0)
+ ;;=3^Tuberculosis complicating pregnancy, first trimester
+ ;;^UTILITY(U,$J,358.3,28876,1,4,0)
+ ;;=4^O98.011

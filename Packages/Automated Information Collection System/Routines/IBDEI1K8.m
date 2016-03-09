@@ -1,130 +1,124 @@
-IBDEI1K8 ; ; 06-AUG-2015
+IBDEI1K8 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,27694,1,4,0)
- ;;=4^438.20
- ;;^UTILITY(U,$J,358.3,27694,1,5,0)
- ;;=5^CVA w/ Hemiplegia (Late Effect)
- ;;^UTILITY(U,$J,358.3,27694,2)
- ;;=CVA w/Hemiplegia^317910
- ;;^UTILITY(U,$J,358.3,27695,0)
- ;;=438.12^^162^1786^5
- ;;^UTILITY(U,$J,358.3,27695,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27695,1,4,0)
- ;;=4^438.12
- ;;^UTILITY(U,$J,358.3,27695,1,5,0)
- ;;=5^CVA w/ Dysphasia (Late Effect)
- ;;^UTILITY(U,$J,358.3,27695,2)
- ;;=Stroke w/Dysphasia^317908
- ;;^UTILITY(U,$J,358.3,27696,0)
- ;;=356.8^^162^1786^51
- ;;^UTILITY(U,$J,358.3,27696,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27696,1,4,0)
- ;;=4^356.8
- ;;^UTILITY(U,$J,358.3,27696,1,5,0)
- ;;=5^Peripheral Neuropathy, Idiopathic
- ;;^UTILITY(U,$J,358.3,27696,2)
- ;;=Peripheral Neuropathy, Idio^268525
- ;;^UTILITY(U,$J,358.3,27697,0)
- ;;=337.20^^162^1786^58
- ;;^UTILITY(U,$J,358.3,27697,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27697,1,4,0)
- ;;=4^337.20
- ;;^UTILITY(U,$J,358.3,27697,1,5,0)
- ;;=5^Reflexive Sympathetic Dystrophy
- ;;^UTILITY(U,$J,358.3,27697,2)
- ;;=Reflexive Sympathetic Dystrophy^295799
- ;;^UTILITY(U,$J,358.3,27698,0)
- ;;=294.8^^162^1786^19
- ;;^UTILITY(U,$J,358.3,27698,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27698,1,4,0)
- ;;=4^294.8
- ;;^UTILITY(U,$J,358.3,27698,1,5,0)
- ;;=5^Dementia, Other
- ;;^UTILITY(U,$J,358.3,27698,2)
- ;;=^268044
- ;;^UTILITY(U,$J,358.3,27699,0)
- ;;=438.6^^162^1786^4
- ;;^UTILITY(U,$J,358.3,27699,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27699,1,4,0)
- ;;=4^438.6
- ;;^UTILITY(U,$J,358.3,27699,1,5,0)
- ;;=5^CVA w/ Dysesthesia (Late Effect)
- ;;^UTILITY(U,$J,358.3,27699,2)
- ;;=CVA w/Dysesthesia (late effect)^328503
- ;;^UTILITY(U,$J,358.3,27700,0)
- ;;=438.7^^162^1786^7
- ;;^UTILITY(U,$J,358.3,27700,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27700,1,4,0)
- ;;=4^438.7
- ;;^UTILITY(U,$J,358.3,27700,1,5,0)
- ;;=5^CVA w/ Vision Changes (Late Effect)
- ;;^UTILITY(U,$J,358.3,27700,2)
- ;;=CVA w/Vision Changes (late effect)^328504
- ;;^UTILITY(U,$J,358.3,27701,0)
- ;;=438.84^^162^1786^3
- ;;^UTILITY(U,$J,358.3,27701,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27701,1,4,0)
- ;;=4^438.84
- ;;^UTILITY(U,$J,358.3,27701,1,5,0)
- ;;=5^CVA w/ Ataxia (Late Effect)
- ;;^UTILITY(U,$J,358.3,27701,2)
- ;;=CVA w/Ataxia (late effect)^328507
- ;;^UTILITY(U,$J,358.3,27702,0)
- ;;=434.91^^162^1786^8
- ;;^UTILITY(U,$J,358.3,27702,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27702,1,4,0)
- ;;=4^434.91
- ;;^UTILITY(U,$J,358.3,27702,1,5,0)
- ;;=5^CVA,Acute Onset
- ;;^UTILITY(U,$J,358.3,27702,2)
- ;;=^295738
- ;;^UTILITY(U,$J,358.3,27703,0)
- ;;=V12.54^^162^1786^22
- ;;^UTILITY(U,$J,358.3,27703,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27703,1,4,0)
- ;;=4^V12.54
- ;;^UTILITY(U,$J,358.3,27703,1,5,0)
- ;;=5^HX Stroke w/o Residuals
- ;;^UTILITY(U,$J,358.3,27703,2)
- ;;=^335309
- ;;^UTILITY(U,$J,358.3,27704,0)
- ;;=333.94^^162^1786^59
- ;;^UTILITY(U,$J,358.3,27704,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27704,1,4,0)
- ;;=4^333.94
- ;;^UTILITY(U,$J,358.3,27704,1,5,0)
- ;;=5^Restless Leg Syndrome
- ;;^UTILITY(U,$J,358.3,27704,2)
- ;;=^105368
- ;;^UTILITY(U,$J,358.3,27705,0)
- ;;=345.90^^162^1786^62
- ;;^UTILITY(U,$J,358.3,27705,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27705,1,4,0)
- ;;=4^345.90
- ;;^UTILITY(U,$J,358.3,27705,1,5,0)
- ;;=5^Seizure Disorder NOS
- ;;^UTILITY(U,$J,358.3,27705,2)
- ;;=^268477
- ;;^UTILITY(U,$J,358.3,27706,0)
- ;;=339.00^^162^1786^10
- ;;^UTILITY(U,$J,358.3,27706,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27706,1,4,0)
- ;;=4^339.00
- ;;^UTILITY(U,$J,358.3,27706,1,5,0)
- ;;=5^Cluster Headache NOS
- ;;^UTILITY(U,$J,358.3,27706,2)
- ;;=^336741
+ ;;^UTILITY(U,$J,358.3,26466,1,3,0)
+ ;;=3^Non-phys Team Conf w/o Pt &/or Family,30+ min
+ ;;^UTILITY(U,$J,358.3,26467,0)
+ ;;=99366^^99^1259^1^^^^1
+ ;;^UTILITY(U,$J,358.3,26467,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26467,1,2,0)
+ ;;=2^99366
+ ;;^UTILITY(U,$J,358.3,26467,1,3,0)
+ ;;=3^Non-phys Team Conf w/ Pt &/or Family,30+ min
+ ;;^UTILITY(U,$J,358.3,26468,0)
+ ;;=90785^^99^1260^1^^^^1
+ ;;^UTILITY(U,$J,358.3,26468,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26468,1,2,0)
+ ;;=2^90785
+ ;;^UTILITY(U,$J,358.3,26468,1,3,0)
+ ;;=3^Interactive Complexity
+ ;;^UTILITY(U,$J,358.3,26469,0)
+ ;;=H0001^^99^1261^1^^^^1
+ ;;^UTILITY(U,$J,358.3,26469,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26469,1,2,0)
+ ;;=2^H0001
+ ;;^UTILITY(U,$J,358.3,26469,1,3,0)
+ ;;=3^Addictions Assessment,Alcohol/Drug
+ ;;^UTILITY(U,$J,358.3,26470,0)
+ ;;=H0002^^99^1261^11^^^^1
+ ;;^UTILITY(U,$J,358.3,26470,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26470,1,2,0)
+ ;;=2^H0002
+ ;;^UTILITY(U,$J,358.3,26470,1,3,0)
+ ;;=3^Screen for Addictions Admission Eligibility
+ ;;^UTILITY(U,$J,358.3,26471,0)
+ ;;=H0003^^99^1261^6^^^^1
+ ;;^UTILITY(U,$J,358.3,26471,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26471,1,2,0)
+ ;;=2^H0003
+ ;;^UTILITY(U,$J,358.3,26471,1,3,0)
+ ;;=3^Alcohol/Drug Screen;lab analysis
+ ;;^UTILITY(U,$J,358.3,26472,0)
+ ;;=H0004^^99^1261^9^^^^1
+ ;;^UTILITY(U,$J,358.3,26472,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26472,1,2,0)
+ ;;=2^H0004
+ ;;^UTILITY(U,$J,358.3,26472,1,3,0)
+ ;;=3^Individual Counseling & Therapy,per 15 min
+ ;;^UTILITY(U,$J,358.3,26473,0)
+ ;;=H0005^^99^1261^2^^^^1
+ ;;^UTILITY(U,$J,358.3,26473,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26473,1,2,0)
+ ;;=2^H0005
+ ;;^UTILITY(U,$J,358.3,26473,1,3,0)
+ ;;=3^Addictions Group Counseling by Clinician
+ ;;^UTILITY(U,$J,358.3,26474,0)
+ ;;=H0006^^99^1261^5^^^^1
+ ;;^UTILITY(U,$J,358.3,26474,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26474,1,2,0)
+ ;;=2^H0006
+ ;;^UTILITY(U,$J,358.3,26474,1,3,0)
+ ;;=3^Alcohol/Drug Case Management
+ ;;^UTILITY(U,$J,358.3,26475,0)
+ ;;=H0020^^99^1261^10^^^^1
+ ;;^UTILITY(U,$J,358.3,26475,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26475,1,2,0)
+ ;;=2^H0020
+ ;;^UTILITY(U,$J,358.3,26475,1,3,0)
+ ;;=3^Methadone Admin &/or Svc by Licensed Program
+ ;;^UTILITY(U,$J,358.3,26476,0)
+ ;;=H0025^^99^1261^3^^^^1
+ ;;^UTILITY(U,$J,358.3,26476,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26476,1,2,0)
+ ;;=2^H0025
+ ;;^UTILITY(U,$J,358.3,26476,1,3,0)
+ ;;=3^Addictions Health Prevention Education Service
+ ;;^UTILITY(U,$J,358.3,26477,0)
+ ;;=H0030^^99^1261^4^^^^1
+ ;;^UTILITY(U,$J,358.3,26477,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26477,1,2,0)
+ ;;=2^H0030
+ ;;^UTILITY(U,$J,358.3,26477,1,3,0)
+ ;;=3^Addictions Hotline Services
+ ;;^UTILITY(U,$J,358.3,26478,0)
+ ;;=H0007^^99^1261^8^^^^1
+ ;;^UTILITY(U,$J,358.3,26478,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26478,1,2,0)
+ ;;=2^H0007
+ ;;^UTILITY(U,$J,358.3,26478,1,3,0)
+ ;;=3^Alcohol/Drug Svcs,Crisis Intervention
+ ;;^UTILITY(U,$J,358.3,26479,0)
+ ;;=H0014^^99^1261^7^^^^1
+ ;;^UTILITY(U,$J,358.3,26479,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26479,1,2,0)
+ ;;=2^H0014
+ ;;^UTILITY(U,$J,358.3,26479,1,3,0)
+ ;;=3^Alcohol/Drug Svcs,Ambulatory Detox
+ ;;^UTILITY(U,$J,358.3,26480,0)
+ ;;=90791^^99^1262^1^^^^1
+ ;;^UTILITY(U,$J,358.3,26480,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26480,1,2,0)
+ ;;=2^90791
+ ;;^UTILITY(U,$J,358.3,26480,1,3,0)
+ ;;=3^Psychiatric Diagnostic Evaluation
+ ;;^UTILITY(U,$J,358.3,26481,0)
+ ;;=99354^^99^1263^1^^^^1
+ ;;^UTILITY(U,$J,358.3,26481,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,26481,1,2,0)
+ ;;=2^99354

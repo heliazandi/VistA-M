@@ -1,138 +1,142 @@
-IBDEI06J ; ; 06-AUG-2015
+IBDEI06J ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2534,1,0)
+ ;;^UTILITY(U,$J,358.3,2730,1,4,0)
+ ;;=4^D57.40
+ ;;^UTILITY(U,$J,358.3,2730,2)
+ ;;=^329908
+ ;;^UTILITY(U,$J,358.3,2731,0)
+ ;;=D56.9^^18^207^17
+ ;;^UTILITY(U,$J,358.3,2731,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2534,1,3,0)
- ;;=3^Primary biliary cirrhosis
- ;;^UTILITY(U,$J,358.3,2534,1,4,0)
- ;;=4^K74.3
- ;;^UTILITY(U,$J,358.3,2534,2)
- ;;=^5008819
- ;;^UTILITY(U,$J,358.3,2535,0)
- ;;=K74.4^^6^75^48
- ;;^UTILITY(U,$J,358.3,2535,1,0)
+ ;;^UTILITY(U,$J,358.3,2731,1,3,0)
+ ;;=3^Anemia,Thalassemia,Unspec
+ ;;^UTILITY(U,$J,358.3,2731,1,4,0)
+ ;;=4^D56.9
+ ;;^UTILITY(U,$J,358.3,2731,2)
+ ;;=^340606
+ ;;^UTILITY(U,$J,358.3,2732,0)
+ ;;=D64.9^^18^207^18
+ ;;^UTILITY(U,$J,358.3,2732,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2535,1,3,0)
- ;;=3^Secondary biliary cirrhosis
- ;;^UTILITY(U,$J,358.3,2535,1,4,0)
- ;;=4^K74.4
- ;;^UTILITY(U,$J,358.3,2535,2)
- ;;=^5008820
- ;;^UTILITY(U,$J,358.3,2536,0)
- ;;=K92.1^^6^75^43
- ;;^UTILITY(U,$J,358.3,2536,1,0)
+ ;;^UTILITY(U,$J,358.3,2732,1,3,0)
+ ;;=3^Anemia,Unspec
+ ;;^UTILITY(U,$J,358.3,2732,1,4,0)
+ ;;=4^D64.9
+ ;;^UTILITY(U,$J,358.3,2732,2)
+ ;;=^5002351
+ ;;^UTILITY(U,$J,358.3,2733,0)
+ ;;=D51.9^^18^207^19
+ ;;^UTILITY(U,$J,358.3,2733,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2536,1,3,0)
- ;;=3^Melena
- ;;^UTILITY(U,$J,358.3,2536,1,4,0)
- ;;=4^K92.1
- ;;^UTILITY(U,$J,358.3,2536,2)
- ;;=^5008914
- ;;^UTILITY(U,$J,358.3,2537,0)
- ;;=K92.2^^6^75^34
- ;;^UTILITY(U,$J,358.3,2537,1,0)
+ ;;^UTILITY(U,$J,358.3,2733,1,3,0)
+ ;;=3^Anemia,Vitamin B12 Deficiency,Unspec
+ ;;^UTILITY(U,$J,358.3,2733,1,4,0)
+ ;;=4^D51.9
+ ;;^UTILITY(U,$J,358.3,2733,2)
+ ;;=^5002289
+ ;;^UTILITY(U,$J,358.3,2734,0)
+ ;;=R78.81^^18^207^20
+ ;;^UTILITY(U,$J,358.3,2734,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2537,1,3,0)
- ;;=3^Gastrointestinal hemorrhage, unspecified
- ;;^UTILITY(U,$J,358.3,2537,1,4,0)
- ;;=4^K92.2
- ;;^UTILITY(U,$J,358.3,2537,2)
- ;;=^5008915
- ;;^UTILITY(U,$J,358.3,2538,0)
- ;;=K90.1^^6^75^49
- ;;^UTILITY(U,$J,358.3,2538,1,0)
+ ;;^UTILITY(U,$J,358.3,2734,1,3,0)
+ ;;=3^Bacteremia
+ ;;^UTILITY(U,$J,358.3,2734,1,4,0)
+ ;;=4^R78.81
+ ;;^UTILITY(U,$J,358.3,2734,2)
+ ;;=^12280
+ ;;^UTILITY(U,$J,358.3,2735,0)
+ ;;=R79.9^^18^207^21
+ ;;^UTILITY(U,$J,358.3,2735,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2538,1,3,0)
- ;;=3^Tropical sprue
- ;;^UTILITY(U,$J,358.3,2538,1,4,0)
- ;;=4^K90.1
- ;;^UTILITY(U,$J,358.3,2538,2)
- ;;=^5008894
- ;;^UTILITY(U,$J,358.3,2539,0)
- ;;=K90.9^^6^75^39
- ;;^UTILITY(U,$J,358.3,2539,1,0)
+ ;;^UTILITY(U,$J,358.3,2735,1,3,0)
+ ;;=3^Blood Chemistry,Abnormal Finding,Unspec
+ ;;^UTILITY(U,$J,358.3,2735,1,4,0)
+ ;;=4^R79.9
+ ;;^UTILITY(U,$J,358.3,2735,2)
+ ;;=^5019594
+ ;;^UTILITY(U,$J,358.3,2736,0)
+ ;;=R79.81^^18^207^22
+ ;;^UTILITY(U,$J,358.3,2736,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2539,1,3,0)
- ;;=3^Intestinal malabsorption, unspecified
- ;;^UTILITY(U,$J,358.3,2539,1,4,0)
- ;;=4^K90.9
- ;;^UTILITY(U,$J,358.3,2539,2)
- ;;=^5008899
- ;;^UTILITY(U,$J,358.3,2540,0)
- ;;=K52.2^^6^75^2
- ;;^UTILITY(U,$J,358.3,2540,1,0)
+ ;;^UTILITY(U,$J,358.3,2736,1,3,0)
+ ;;=3^Blood-Gas Level,Abnormal
+ ;;^UTILITY(U,$J,358.3,2736,1,4,0)
+ ;;=4^R79.81
+ ;;^UTILITY(U,$J,358.3,2736,2)
+ ;;=^5019592
+ ;;^UTILITY(U,$J,358.3,2737,0)
+ ;;=R79.1^^18^207^23
+ ;;^UTILITY(U,$J,358.3,2737,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2540,1,3,0)
- ;;=3^Allergic and dietetic gastroenteritis and colitis
- ;;^UTILITY(U,$J,358.3,2540,1,4,0)
- ;;=4^K52.2
- ;;^UTILITY(U,$J,358.3,2540,2)
- ;;=^5008701
- ;;^UTILITY(U,$J,358.3,2541,0)
- ;;=K52.89^^6^75^44
- ;;^UTILITY(U,$J,358.3,2541,1,0)
+ ;;^UTILITY(U,$J,358.3,2737,1,3,0)
+ ;;=3^Coagulation Profile,Abnormal
+ ;;^UTILITY(U,$J,358.3,2737,1,4,0)
+ ;;=4^R79.1
+ ;;^UTILITY(U,$J,358.3,2737,2)
+ ;;=^5019591
+ ;;^UTILITY(U,$J,358.3,2738,0)
+ ;;=R79.82^^18^207^24
+ ;;^UTILITY(U,$J,358.3,2738,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2541,1,3,0)
- ;;=3^Noninfective gastroenteritis and colitis NEC
- ;;^UTILITY(U,$J,358.3,2541,1,4,0)
- ;;=4^K52.89
- ;;^UTILITY(U,$J,358.3,2541,2)
- ;;=^5008703
- ;;^UTILITY(U,$J,358.3,2542,0)
- ;;=K64.9^^6^75^37
- ;;^UTILITY(U,$J,358.3,2542,1,0)
+ ;;^UTILITY(U,$J,358.3,2738,1,3,0)
+ ;;=3^C-Reactive Protein,Elevated
+ ;;^UTILITY(U,$J,358.3,2738,1,4,0)
+ ;;=4^R79.82
+ ;;^UTILITY(U,$J,358.3,2738,2)
+ ;;=^331570
+ ;;^UTILITY(U,$J,358.3,2739,0)
+ ;;=D75.9^^18^207^25
+ ;;^UTILITY(U,$J,358.3,2739,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2542,1,3,0)
- ;;=3^Hemorrhoids,Unspec
- ;;^UTILITY(U,$J,358.3,2542,1,4,0)
- ;;=4^K64.9
- ;;^UTILITY(U,$J,358.3,2542,2)
- ;;=^5008775
- ;;^UTILITY(U,$J,358.3,2543,0)
- ;;=B18.1^^6^76^10
- ;;^UTILITY(U,$J,358.3,2543,1,0)
+ ;;^UTILITY(U,$J,358.3,2739,1,3,0)
+ ;;=3^Blood/Blood-Forming Organ Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,2739,1,4,0)
+ ;;=4^D75.9
+ ;;^UTILITY(U,$J,358.3,2739,2)
+ ;;=^5002393
+ ;;^UTILITY(U,$J,358.3,2740,0)
+ ;;=R97.1^^18^207^26
+ ;;^UTILITY(U,$J,358.3,2740,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2543,1,3,0)
- ;;=3^Chronic viral hepatitis B without delta-agent
- ;;^UTILITY(U,$J,358.3,2543,1,4,0)
- ;;=4^B18.1
- ;;^UTILITY(U,$J,358.3,2543,2)
- ;;=^5000547
- ;;^UTILITY(U,$J,358.3,2544,0)
- ;;=B18.2^^6^76^11
- ;;^UTILITY(U,$J,358.3,2544,1,0)
+ ;;^UTILITY(U,$J,358.3,2740,1,3,0)
+ ;;=3^Elevated Cancer Antigen 125
+ ;;^UTILITY(U,$J,358.3,2740,1,4,0)
+ ;;=4^R97.1
+ ;;^UTILITY(U,$J,358.3,2740,2)
+ ;;=^5019747
+ ;;^UTILITY(U,$J,358.3,2741,0)
+ ;;=R97.0^^18^207^27
+ ;;^UTILITY(U,$J,358.3,2741,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2544,1,3,0)
- ;;=3^Chronic viral hepatitis C
- ;;^UTILITY(U,$J,358.3,2544,1,4,0)
- ;;=4^B18.2
- ;;^UTILITY(U,$J,358.3,2544,2)
- ;;=^5000548
- ;;^UTILITY(U,$J,358.3,2545,0)
- ;;=K73.9^^6^76^9
- ;;^UTILITY(U,$J,358.3,2545,1,0)
+ ;;^UTILITY(U,$J,358.3,2741,1,3,0)
+ ;;=3^Elevated Carcinoembryonic Antigen
+ ;;^UTILITY(U,$J,358.3,2741,1,4,0)
+ ;;=4^R97.0
+ ;;^UTILITY(U,$J,358.3,2741,2)
+ ;;=^5019746
+ ;;^UTILITY(U,$J,358.3,2742,0)
+ ;;=R74.0^^18^207^28
+ ;;^UTILITY(U,$J,358.3,2742,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2545,1,3,0)
- ;;=3^Chronic hepatitis, unspecified
- ;;^UTILITY(U,$J,358.3,2545,1,4,0)
- ;;=4^K73.9
- ;;^UTILITY(U,$J,358.3,2545,2)
- ;;=^5008815
- ;;^UTILITY(U,$J,358.3,2546,0)
- ;;=K76.0^^6^76^14
- ;;^UTILITY(U,$J,358.3,2546,1,0)
+ ;;^UTILITY(U,$J,358.3,2742,1,3,0)
+ ;;=3^Elevated Liver Function Test
+ ;;^UTILITY(U,$J,358.3,2742,1,4,0)
+ ;;=4^R74.0
+ ;;^UTILITY(U,$J,358.3,2742,2)
+ ;;=^5019565
+ ;;^UTILITY(U,$J,358.3,2743,0)
+ ;;=R97.2^^18^207^29
+ ;;^UTILITY(U,$J,358.3,2743,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2546,1,3,0)
- ;;=3^Fatty (change of) liver, not elsewhere classified
- ;;^UTILITY(U,$J,358.3,2546,1,4,0)
- ;;=4^K76.0
- ;;^UTILITY(U,$J,358.3,2546,2)
- ;;=^5008831
- ;;^UTILITY(U,$J,358.3,2547,0)
- ;;=K75.81^^6^76^19
- ;;^UTILITY(U,$J,358.3,2547,1,0)
+ ;;^UTILITY(U,$J,358.3,2743,1,3,0)
+ ;;=3^Elevated PSA
+ ;;^UTILITY(U,$J,358.3,2743,1,4,0)
+ ;;=4^R97.2
+ ;;^UTILITY(U,$J,358.3,2743,2)
+ ;;=^5019748
+ ;;^UTILITY(U,$J,358.3,2744,0)
+ ;;=D72.1^^18^207^30
+ ;;^UTILITY(U,$J,358.3,2744,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2547,1,3,0)
- ;;=3^Nonalcoholic steatohepatitis (NASH)

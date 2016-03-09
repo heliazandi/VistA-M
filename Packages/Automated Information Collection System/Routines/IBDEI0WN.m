@@ -1,140 +1,124 @@
-IBDEI0WN ; ; 06-AUG-2015
+IBDEI0WN ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15869,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15869,1,4,0)
- ;;=4^V18.0
- ;;^UTILITY(U,$J,358.3,15869,1,5,0)
- ;;=5^Family h/o Diabetes Mellitus
- ;;^UTILITY(U,$J,358.3,15869,2)
- ;;=^295311
- ;;^UTILITY(U,$J,358.3,15870,0)
- ;;=V16.0^^81^949^7
- ;;^UTILITY(U,$J,358.3,15870,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15870,1,4,0)
- ;;=4^V16.0
- ;;^UTILITY(U,$J,358.3,15870,1,5,0)
- ;;=5^Family h/o Cancer of GI Tract
- ;;^UTILITY(U,$J,358.3,15870,2)
- ;;=^295292
- ;;^UTILITY(U,$J,358.3,15871,0)
- ;;=V16.1^^81^949^8
- ;;^UTILITY(U,$J,358.3,15871,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15871,1,4,0)
- ;;=4^V16.1
- ;;^UTILITY(U,$J,358.3,15871,1,5,0)
- ;;=5^Family h/o Cancer of Lung
- ;;^UTILITY(U,$J,358.3,15871,2)
- ;;=^295293
- ;;^UTILITY(U,$J,358.3,15872,0)
- ;;=V19.6^^81^949^1
- ;;^UTILITY(U,$J,358.3,15872,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15872,1,4,0)
- ;;=4^V19.6
- ;;^UTILITY(U,$J,358.3,15872,1,5,0)
- ;;=5^Family h/o Allergic Disorder
- ;;^UTILITY(U,$J,358.3,15872,2)
- ;;=^295326
- ;;^UTILITY(U,$J,358.3,15873,0)
- ;;=V18.2^^81^949^2
- ;;^UTILITY(U,$J,358.3,15873,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15873,1,4,0)
- ;;=4^V18.2
- ;;^UTILITY(U,$J,358.3,15873,1,5,0)
- ;;=5^Family h/o Anemia
- ;;^UTILITY(U,$J,358.3,15873,2)
- ;;=^295313
- ;;^UTILITY(U,$J,358.3,15874,0)
- ;;=V17.5^^81^949^4
- ;;^UTILITY(U,$J,358.3,15874,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15874,1,4,0)
- ;;=4^V17.5
- ;;^UTILITY(U,$J,358.3,15874,1,5,0)
- ;;=5^Family h/o Asthma
- ;;^UTILITY(U,$J,358.3,15874,2)
- ;;=^295307
- ;;^UTILITY(U,$J,358.3,15875,0)
- ;;=V17.7^^81^949^3
- ;;^UTILITY(U,$J,358.3,15875,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15875,1,4,0)
- ;;=4^V17.7
- ;;^UTILITY(U,$J,358.3,15875,1,5,0)
- ;;=5^Family h/o Arthritis
- ;;^UTILITY(U,$J,358.3,15875,2)
- ;;=^295309
- ;;^UTILITY(U,$J,358.3,15876,0)
- ;;=V19.0^^81^949^5
- ;;^UTILITY(U,$J,358.3,15876,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15876,1,4,0)
- ;;=4^V19.0
- ;;^UTILITY(U,$J,358.3,15876,1,5,0)
- ;;=5^Family h/o Blindness
- ;;^UTILITY(U,$J,358.3,15876,2)
- ;;=^295320
- ;;^UTILITY(U,$J,358.3,15877,0)
- ;;=V16.3^^81^949^6
- ;;^UTILITY(U,$J,358.3,15877,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15877,1,4,0)
- ;;=4^V16.3
- ;;^UTILITY(U,$J,358.3,15877,1,5,0)
- ;;=5^Family h/o Cancer of Breast
- ;;^UTILITY(U,$J,358.3,15877,2)
- ;;=^295295
- ;;^UTILITY(U,$J,358.3,15878,0)
- ;;=V16.41^^81^949^9
- ;;^UTILITY(U,$J,358.3,15878,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15878,1,4,0)
- ;;=4^V16.41
- ;;^UTILITY(U,$J,358.3,15878,1,5,0)
- ;;=5^Family h/o Cancer of Ovary
- ;;^UTILITY(U,$J,358.3,15878,2)
- ;;=^317951
- ;;^UTILITY(U,$J,358.3,15879,0)
- ;;=V16.42^^81^949^10
- ;;^UTILITY(U,$J,358.3,15879,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15879,1,4,0)
- ;;=4^V16.42
- ;;^UTILITY(U,$J,358.3,15879,1,5,0)
- ;;=5^Family h/o Cancer of Prostate
- ;;^UTILITY(U,$J,358.3,15879,2)
- ;;=^317952
- ;;^UTILITY(U,$J,358.3,15880,0)
- ;;=V16.43^^81^949^11
- ;;^UTILITY(U,$J,358.3,15880,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15880,1,4,0)
- ;;=4^V16.43
- ;;^UTILITY(U,$J,358.3,15880,1,5,0)
- ;;=5^Family h/o Cancer of Testis
- ;;^UTILITY(U,$J,358.3,15880,2)
- ;;=^317953
- ;;^UTILITY(U,$J,358.3,15881,0)
- ;;=V19.5^^81^949^13
- ;;^UTILITY(U,$J,358.3,15881,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15881,1,4,0)
- ;;=4^V19.5
- ;;^UTILITY(U,$J,358.3,15881,1,5,0)
- ;;=5^Family h/o Congenital Anomalies
- ;;^UTILITY(U,$J,358.3,15881,2)
- ;;=^295325
- ;;^UTILITY(U,$J,358.3,15882,0)
- ;;=V19.2^^81^949^14
- ;;^UTILITY(U,$J,358.3,15882,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15882,1,4,0)
- ;;=4^V19.2
- ;;^UTILITY(U,$J,358.3,15882,1,5,0)
- ;;=5^Family h/o Deafness Or Hearing Loss
+ ;;^UTILITY(U,$J,358.3,15321,1,4,0)
+ ;;=4^T74.01XD
+ ;;^UTILITY(U,$J,358.3,15321,2)
+ ;;=^5054141
+ ;;^UTILITY(U,$J,358.3,15322,0)
+ ;;=T76.01XA^^58^658^3
+ ;;^UTILITY(U,$J,358.3,15322,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15322,1,3,0)
+ ;;=3^Adult Neglect,Suspected,Initial Encounter  
+ ;;^UTILITY(U,$J,358.3,15322,1,4,0)
+ ;;=4^T76.01XA
+ ;;^UTILITY(U,$J,358.3,15322,2)
+ ;;=^5054215
+ ;;^UTILITY(U,$J,358.3,15323,0)
+ ;;=T76.01XD^^58^658^4
+ ;;^UTILITY(U,$J,358.3,15323,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15323,1,3,0)
+ ;;=3^Adult Neglect,Suspected,Subsequent Encounter  
+ ;;^UTILITY(U,$J,358.3,15323,1,4,0)
+ ;;=4^T76.01XD
+ ;;^UTILITY(U,$J,358.3,15323,2)
+ ;;=^5054216
+ ;;^UTILITY(U,$J,358.3,15324,0)
+ ;;=Z91.412^^58^658^31
+ ;;^UTILITY(U,$J,358.3,15324,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15324,1,3,0)
+ ;;=3^Personal Hx of Spouse or Partner Neglect
+ ;;^UTILITY(U,$J,358.3,15324,1,4,0)
+ ;;=4^Z91.412
+ ;;^UTILITY(U,$J,358.3,15324,2)
+ ;;=^5063621
+ ;;^UTILITY(U,$J,358.3,15325,0)
+ ;;=T74.31XA^^58^658^9
+ ;;^UTILITY(U,$J,358.3,15325,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15325,1,3,0)
+ ;;=3^Adult Psychological Abuse,Confirmed,Initial Encounter  
+ ;;^UTILITY(U,$J,358.3,15325,1,4,0)
+ ;;=4^T74.31XA
+ ;;^UTILITY(U,$J,358.3,15325,2)
+ ;;=^5054158
+ ;;^UTILITY(U,$J,358.3,15326,0)
+ ;;=T74.31XD^^58^658^10
+ ;;^UTILITY(U,$J,358.3,15326,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15326,1,3,0)
+ ;;=3^Adult Psychological Abuse,Confirmed,Subsequent Encounter 
+ ;;^UTILITY(U,$J,358.3,15326,1,4,0)
+ ;;=4^T74.31XD
+ ;;^UTILITY(U,$J,358.3,15326,2)
+ ;;=^5054159
+ ;;^UTILITY(U,$J,358.3,15327,0)
+ ;;=T76.31XA^^58^658^11
+ ;;^UTILITY(U,$J,358.3,15327,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15327,1,3,0)
+ ;;=3^Adult Psychological Abuse,Suspected,Initial Encounter 
+ ;;^UTILITY(U,$J,358.3,15327,1,4,0)
+ ;;=4^T76.31XA
+ ;;^UTILITY(U,$J,358.3,15327,2)
+ ;;=^5054233
+ ;;^UTILITY(U,$J,358.3,15328,0)
+ ;;=T76.31XD^^58^658^12
+ ;;^UTILITY(U,$J,358.3,15328,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15328,1,3,0)
+ ;;=3^Adult Psychological Abuse,Suspected,Subsequent Encounter 
+ ;;^UTILITY(U,$J,358.3,15328,1,4,0)
+ ;;=4^T76.31XD
+ ;;^UTILITY(U,$J,358.3,15328,2)
+ ;;=^5054234
+ ;;^UTILITY(U,$J,358.3,15329,0)
+ ;;=Z91.411^^58^658^30
+ ;;^UTILITY(U,$J,358.3,15329,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15329,1,3,0)
+ ;;=3^Personal Hx of Spouse or Parnter Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,15329,1,4,0)
+ ;;=4^Z91.411
+ ;;^UTILITY(U,$J,358.3,15329,2)
+ ;;=^5063620
+ ;;^UTILITY(U,$J,358.3,15330,0)
+ ;;=Z69.021^^58^658^17
+ ;;^UTILITY(U,$J,358.3,15330,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15330,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonparental Child Abuse
+ ;;^UTILITY(U,$J,358.3,15330,1,4,0)
+ ;;=4^Z69.021
+ ;;^UTILITY(U,$J,358.3,15330,2)
+ ;;=^5063231
+ ;;^UTILITY(U,$J,358.3,15331,0)
+ ;;=Z69.021^^58^658^18
+ ;;^UTILITY(U,$J,358.3,15331,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15331,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonparental Child Neglect
+ ;;^UTILITY(U,$J,358.3,15331,1,4,0)
+ ;;=4^Z69.021
+ ;;^UTILITY(U,$J,358.3,15331,2)
+ ;;=^5063231
+ ;;^UTILITY(U,$J,358.3,15332,0)
+ ;;=Z69.021^^58^658^19
+ ;;^UTILITY(U,$J,358.3,15332,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15332,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonparental Child Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,15332,1,4,0)
+ ;;=4^Z69.021
+ ;;^UTILITY(U,$J,358.3,15332,2)
+ ;;=^5063231
+ ;;^UTILITY(U,$J,358.3,15333,0)
+ ;;=Z69.021^^58^658^20
+ ;;^UTILITY(U,$J,358.3,15333,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15333,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonparental Child Sexual Abuse

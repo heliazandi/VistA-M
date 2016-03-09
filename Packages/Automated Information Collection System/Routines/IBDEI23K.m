@@ -1,0 +1,134 @@
+IBDEI23K ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,35570,0)
+ ;;=H60.92^^134^1724^15
+ ;;^UTILITY(U,$J,358.3,35570,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35570,1,3,0)
+ ;;=3^Otitis Externa Left Ear,Unspec
+ ;;^UTILITY(U,$J,358.3,35570,1,4,0)
+ ;;=4^H60.92
+ ;;^UTILITY(U,$J,358.3,35570,2)
+ ;;=^5133525
+ ;;^UTILITY(U,$J,358.3,35571,0)
+ ;;=H60.91^^134^1724^16
+ ;;^UTILITY(U,$J,358.3,35571,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35571,1,3,0)
+ ;;=3^Otitis Externa Right Ear,Unspec
+ ;;^UTILITY(U,$J,358.3,35571,1,4,0)
+ ;;=4^H60.91
+ ;;^UTILITY(U,$J,358.3,35571,2)
+ ;;=^5133524
+ ;;^UTILITY(U,$J,358.3,35572,0)
+ ;;=J30.9^^134^1724^4
+ ;;^UTILITY(U,$J,358.3,35572,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35572,1,3,0)
+ ;;=3^Allergic Rhinitis,Unspec
+ ;;^UTILITY(U,$J,358.3,35572,1,4,0)
+ ;;=4^J30.9
+ ;;^UTILITY(U,$J,358.3,35572,2)
+ ;;=^5008205
+ ;;^UTILITY(U,$J,358.3,35573,0)
+ ;;=J38.00^^134^1724^20
+ ;;^UTILITY(U,$J,358.3,35573,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35573,1,3,0)
+ ;;=3^Paralysis of Vocal Cords/Larynx,Unspec
+ ;;^UTILITY(U,$J,358.3,35573,1,4,0)
+ ;;=4^J38.00
+ ;;^UTILITY(U,$J,358.3,35573,2)
+ ;;=^5008219
+ ;;^UTILITY(U,$J,358.3,35574,0)
+ ;;=K92.2^^134^1725^2
+ ;;^UTILITY(U,$J,358.3,35574,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35574,1,3,0)
+ ;;=3^Gastrointestinal Hemorrhage,Unspec
+ ;;^UTILITY(U,$J,358.3,35574,1,4,0)
+ ;;=4^K92.2
+ ;;^UTILITY(U,$J,358.3,35574,2)
+ ;;=^5008915
+ ;;^UTILITY(U,$J,358.3,35575,0)
+ ;;=K27.9^^134^1725^3
+ ;;^UTILITY(U,$J,358.3,35575,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35575,1,3,0)
+ ;;=3^Peptic Ulcer w/o Hemorrhage/Perforation,Unspec Site
+ ;;^UTILITY(U,$J,358.3,35575,1,4,0)
+ ;;=4^K27.9
+ ;;^UTILITY(U,$J,358.3,35575,2)
+ ;;=^5008536
+ ;;^UTILITY(U,$J,358.3,35576,0)
+ ;;=K46.9^^134^1725^1
+ ;;^UTILITY(U,$J,358.3,35576,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35576,1,3,0)
+ ;;=3^Abdominal Hernia w/o Obstruction/Gangrene,Unspec
+ ;;^UTILITY(U,$J,358.3,35576,1,4,0)
+ ;;=4^K46.9
+ ;;^UTILITY(U,$J,358.3,35576,2)
+ ;;=^5008623
+ ;;^UTILITY(U,$J,358.3,35577,0)
+ ;;=N14.0^^134^1726^1
+ ;;^UTILITY(U,$J,358.3,35577,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35577,1,3,0)
+ ;;=3^Analgesic Nephropathy
+ ;;^UTILITY(U,$J,358.3,35577,1,4,0)
+ ;;=4^N14.0
+ ;;^UTILITY(U,$J,358.3,35577,2)
+ ;;=^5015590
+ ;;^UTILITY(U,$J,358.3,35578,0)
+ ;;=N15.0^^134^1726^2
+ ;;^UTILITY(U,$J,358.3,35578,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35578,1,3,0)
+ ;;=3^Balkan Nephropathy
+ ;;^UTILITY(U,$J,358.3,35578,1,4,0)
+ ;;=4^N15.0
+ ;;^UTILITY(U,$J,358.3,35578,2)
+ ;;=^12543
+ ;;^UTILITY(U,$J,358.3,35579,0)
+ ;;=N18.9^^134^1726^3
+ ;;^UTILITY(U,$J,358.3,35579,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35579,1,3,0)
+ ;;=3^Chr Kidney Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,35579,1,4,0)
+ ;;=4^N18.9
+ ;;^UTILITY(U,$J,358.3,35579,2)
+ ;;=^332812
+ ;;^UTILITY(U,$J,358.3,35580,0)
+ ;;=N28.9^^134^1726^17
+ ;;^UTILITY(U,$J,358.3,35580,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35580,1,3,0)
+ ;;=3^Kidney/Ureter Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,35580,1,4,0)
+ ;;=4^N28.9
+ ;;^UTILITY(U,$J,358.3,35580,2)
+ ;;=^5015630
+ ;;^UTILITY(U,$J,358.3,35581,0)
+ ;;=N40.0^^134^1726^4
+ ;;^UTILITY(U,$J,358.3,35581,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35581,1,3,0)
+ ;;=3^Enlarged Prostate w/o Lower Urinary Tract Symptoms
+ ;;^UTILITY(U,$J,358.3,35581,1,4,0)
+ ;;=4^N40.0
+ ;;^UTILITY(U,$J,358.3,35581,2)
+ ;;=^5015689
+ ;;^UTILITY(U,$J,358.3,35582,0)
+ ;;=N07.6^^134^1726^5
+ ;;^UTILITY(U,$J,358.3,35582,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35582,1,3,0)
+ ;;=3^Hereditary Nephropathy w/ Dense Deposit Disease NEC
+ ;;^UTILITY(U,$J,358.3,35582,1,4,0)
+ ;;=4^N07.6
+ ;;^UTILITY(U,$J,358.3,35582,2)
+ ;;=^5015565

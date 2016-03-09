@@ -1,138 +1,128 @@
-IBDEI0VC ; ; 06-AUG-2015
+IBDEI0VC ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15226,1,4,0)
- ;;=4^310.9
- ;;^UTILITY(U,$J,358.3,15226,1,5,0)
- ;;=5^Organic Brain Syndrome
- ;;^UTILITY(U,$J,358.3,15226,2)
- ;;=^123952
- ;;^UTILITY(U,$J,358.3,15227,0)
- ;;=332.0^^81^941^88
- ;;^UTILITY(U,$J,358.3,15227,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15227,1,4,0)
- ;;=4^332.0
- ;;^UTILITY(U,$J,358.3,15227,1,5,0)
- ;;=5^Parkinson's Disease
- ;;^UTILITY(U,$J,358.3,15227,2)
- ;;=Parkinson's Disease^304847
- ;;^UTILITY(U,$J,358.3,15228,0)
- ;;=250.60^^81^941^89
- ;;^UTILITY(U,$J,358.3,15228,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15228,1,4,0)
- ;;=4^250.60
- ;;^UTILITY(U,$J,358.3,15228,1,5,0)
- ;;=5^Peripheral Neuropathy, Diabetic
- ;;^UTILITY(U,$J,358.3,15228,2)
- ;;=^267841^357.2
- ;;^UTILITY(U,$J,358.3,15229,0)
- ;;=356.9^^81^941^91
- ;;^UTILITY(U,$J,358.3,15229,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15229,1,4,0)
- ;;=4^356.9
- ;;^UTILITY(U,$J,358.3,15229,1,5,0)
- ;;=5^Peripheral Neuropathy, Unsp
- ;;^UTILITY(U,$J,358.3,15229,2)
- ;;=^123931
- ;;^UTILITY(U,$J,358.3,15230,0)
- ;;=780.2^^81^941^106
- ;;^UTILITY(U,$J,358.3,15230,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15230,1,4,0)
- ;;=4^780.2
- ;;^UTILITY(U,$J,358.3,15230,1,5,0)
- ;;=5^Syncope Or Presyncope
- ;;^UTILITY(U,$J,358.3,15230,2)
- ;;=^116707
- ;;^UTILITY(U,$J,358.3,15231,0)
- ;;=724.3^^81^941^102
- ;;^UTILITY(U,$J,358.3,15231,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15231,1,4,0)
- ;;=4^724.3
- ;;^UTILITY(U,$J,358.3,15231,1,5,0)
- ;;=5^Sciatica
- ;;^UTILITY(U,$J,358.3,15231,2)
- ;;=^108484
- ;;^UTILITY(U,$J,358.3,15232,0)
- ;;=780.39^^81^941^103
- ;;^UTILITY(U,$J,358.3,15232,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15232,1,4,0)
- ;;=4^780.39
- ;;^UTILITY(U,$J,358.3,15232,1,5,0)
- ;;=5^Seizure
- ;;^UTILITY(U,$J,358.3,15232,2)
- ;;=^28162
- ;;^UTILITY(U,$J,358.3,15233,0)
- ;;=782.0^^81^941^87
- ;;^UTILITY(U,$J,358.3,15233,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15233,1,4,0)
- ;;=4^782.0
- ;;^UTILITY(U,$J,358.3,15233,1,5,0)
- ;;=5^Parasthesia
- ;;^UTILITY(U,$J,358.3,15233,2)
- ;;=Parasthesia^35757
- ;;^UTILITY(U,$J,358.3,15234,0)
- ;;=435.9^^81^941^107
- ;;^UTILITY(U,$J,358.3,15234,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15234,1,4,0)
- ;;=4^435.9
- ;;^UTILITY(U,$J,358.3,15234,1,5,0)
- ;;=5^Transient Ischemic Attack
- ;;^UTILITY(U,$J,358.3,15234,2)
- ;;=^21635
- ;;^UTILITY(U,$J,358.3,15235,0)
- ;;=354.2^^81^941^109
- ;;^UTILITY(U,$J,358.3,15235,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15235,1,4,0)
- ;;=4^354.2
- ;;^UTILITY(U,$J,358.3,15235,1,5,0)
- ;;=5^Ulnar Nerve Entrapment
- ;;^UTILITY(U,$J,358.3,15235,2)
- ;;=^268506
- ;;^UTILITY(U,$J,358.3,15236,0)
- ;;=729.1^^81^941^35
- ;;^UTILITY(U,$J,358.3,15236,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15236,1,4,0)
- ;;=4^729.1
- ;;^UTILITY(U,$J,358.3,15236,1,5,0)
- ;;=5^Fibromyalgia
- ;;^UTILITY(U,$J,358.3,15236,2)
- ;;=Fibromyalgia^80160
- ;;^UTILITY(U,$J,358.3,15237,0)
- ;;=438.20^^81^941^11
- ;;^UTILITY(U,$J,358.3,15237,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15237,1,4,0)
- ;;=4^438.20
- ;;^UTILITY(U,$J,358.3,15237,1,5,0)
- ;;=5^CVA w/Hemiplegia (late effect)
- ;;^UTILITY(U,$J,358.3,15237,2)
- ;;=CVA w/Hemiplegia^317910
- ;;^UTILITY(U,$J,358.3,15238,0)
- ;;=438.12^^81^941^8
- ;;^UTILITY(U,$J,358.3,15238,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15238,1,4,0)
- ;;=4^438.12
- ;;^UTILITY(U,$J,358.3,15238,1,5,0)
- ;;=5^CVA w/Dysphasia (late effect)
- ;;^UTILITY(U,$J,358.3,15238,2)
- ;;=Stroke w/Dysphasia^317908
- ;;^UTILITY(U,$J,358.3,15239,0)
- ;;=356.8^^81^941^90
- ;;^UTILITY(U,$J,358.3,15239,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,15239,1,4,0)
- ;;=4^356.8
- ;;^UTILITY(U,$J,358.3,15239,1,5,0)
- ;;=5^Peripheral Neuropathy, Idiopathic
+ ;;^UTILITY(U,$J,358.3,14689,1,3,0)
+ ;;=3^Exp to Sunlight,Init Encntr
+ ;;^UTILITY(U,$J,358.3,14689,1,4,0)
+ ;;=4^X32.XXXA
+ ;;^UTILITY(U,$J,358.3,14689,2)
+ ;;=^5060847
+ ;;^UTILITY(U,$J,358.3,14690,0)
+ ;;=X32.XXXD^^53^612^16
+ ;;^UTILITY(U,$J,358.3,14690,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14690,1,3,0)
+ ;;=3^Exp to Sunlight,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,14690,1,4,0)
+ ;;=4^X32.XXXD
+ ;;^UTILITY(U,$J,358.3,14690,2)
+ ;;=^5060848
+ ;;^UTILITY(U,$J,358.3,14691,0)
+ ;;=Y04.0XXA^^53^612^7
+ ;;^UTILITY(U,$J,358.3,14691,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14691,1,3,0)
+ ;;=3^Assault by Unarmed Fight,Init Encntr
+ ;;^UTILITY(U,$J,358.3,14691,1,4,0)
+ ;;=4^Y04.0XXA
+ ;;^UTILITY(U,$J,358.3,14691,2)
+ ;;=^5061165
+ ;;^UTILITY(U,$J,358.3,14692,0)
+ ;;=Y04.0XXD^^53^612^8
+ ;;^UTILITY(U,$J,358.3,14692,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14692,1,3,0)
+ ;;=3^Assault by Unarmed Fight,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,14692,1,4,0)
+ ;;=4^Y04.0XXD
+ ;;^UTILITY(U,$J,358.3,14692,2)
+ ;;=^5061166
+ ;;^UTILITY(U,$J,358.3,14693,0)
+ ;;=Y04.1XXA^^53^612^1
+ ;;^UTILITY(U,$J,358.3,14693,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14693,1,3,0)
+ ;;=3^Assault by Human Bite,Init Encntr
+ ;;^UTILITY(U,$J,358.3,14693,1,4,0)
+ ;;=4^Y04.1XXA
+ ;;^UTILITY(U,$J,358.3,14693,2)
+ ;;=^5061168
+ ;;^UTILITY(U,$J,358.3,14694,0)
+ ;;=Y04.1XXD^^53^612^2
+ ;;^UTILITY(U,$J,358.3,14694,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14694,1,3,0)
+ ;;=3^Assault by Human Bite,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,14694,1,4,0)
+ ;;=4^Y04.1XXD
+ ;;^UTILITY(U,$J,358.3,14694,2)
+ ;;=^5061169
+ ;;^UTILITY(U,$J,358.3,14695,0)
+ ;;=Y04.2XXA^^53^612^5
+ ;;^UTILITY(U,$J,358.3,14695,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14695,1,3,0)
+ ;;=3^Assault by Strike/Bumped by Another Person,Init Encntr
+ ;;^UTILITY(U,$J,358.3,14695,1,4,0)
+ ;;=4^Y04.2XXA
+ ;;^UTILITY(U,$J,358.3,14695,2)
+ ;;=^5061171
+ ;;^UTILITY(U,$J,358.3,14696,0)
+ ;;=Y04.8XXA^^53^612^3
+ ;;^UTILITY(U,$J,358.3,14696,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14696,1,3,0)
+ ;;=3^Assault by Oth Bodily Force,Init Encntr
+ ;;^UTILITY(U,$J,358.3,14696,1,4,0)
+ ;;=4^Y04.8XXA
+ ;;^UTILITY(U,$J,358.3,14696,2)
+ ;;=^5061174
+ ;;^UTILITY(U,$J,358.3,14697,0)
+ ;;=Y04.2XXD^^53^612^6
+ ;;^UTILITY(U,$J,358.3,14697,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14697,1,3,0)
+ ;;=3^Assault by Strike/Bumped by Another Person,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,14697,1,4,0)
+ ;;=4^Y04.2XXD
+ ;;^UTILITY(U,$J,358.3,14697,2)
+ ;;=^5061172
+ ;;^UTILITY(U,$J,358.3,14698,0)
+ ;;=Y04.8XXD^^53^612^4
+ ;;^UTILITY(U,$J,358.3,14698,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14698,1,3,0)
+ ;;=3^Assault by Oth Bodily Force,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,14698,1,4,0)
+ ;;=4^Y04.8XXD
+ ;;^UTILITY(U,$J,358.3,14698,2)
+ ;;=^5061175
+ ;;^UTILITY(U,$J,358.3,14699,0)
+ ;;=Y36.200A^^53^612^124
+ ;;^UTILITY(U,$J,358.3,14699,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14699,1,3,0)
+ ;;=3^War Op Inv Unspec Explosion/Fragments,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,14699,1,4,0)
+ ;;=4^Y36.200A
+ ;;^UTILITY(U,$J,358.3,14699,2)
+ ;;=^5061607
+ ;;^UTILITY(U,$J,358.3,14700,0)
+ ;;=Y36.200D^^53^612^125
+ ;;^UTILITY(U,$J,358.3,14700,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14700,1,3,0)
+ ;;=3^War Op Inv Unspec Explosion/Fragments,Milt,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,14700,1,4,0)
+ ;;=4^Y36.200D
+ ;;^UTILITY(U,$J,358.3,14700,2)
+ ;;=^5061608
+ ;;^UTILITY(U,$J,358.3,14701,0)
+ ;;=Y36.300A^^53^612^126
+ ;;^UTILITY(U,$J,358.3,14701,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14701,1,3,0)
+ ;;=3^War Op Inv Unspec Fire/Conflagr/Hot Subst,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,14701,1,4,0)
+ ;;=4^Y36.300A

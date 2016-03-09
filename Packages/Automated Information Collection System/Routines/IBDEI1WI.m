@@ -1,138 +1,126 @@
-IBDEI1WI ; ; 06-AUG-2015
+IBDEI1WI ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33431,1,0)
+ ;;^UTILITY(U,$J,358.3,32266,0)
+ ;;=S92.135K^^126^1609^356
+ ;;^UTILITY(U,$J,358.3,32266,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33431,1,3,0)
- ;;=3^Full Incontinence of Feces
- ;;^UTILITY(U,$J,358.3,33431,1,4,0)
- ;;=4^R15.9
- ;;^UTILITY(U,$J,358.3,33431,2)
- ;;=^5019247
- ;;^UTILITY(U,$J,358.3,33432,0)
- ;;=R17.^^182^2004^93
- ;;^UTILITY(U,$J,358.3,33432,1,0)
+ ;;^UTILITY(U,$J,358.3,32266,1,3,0)
+ ;;=3^Nondisp fx post pro lft talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32266,1,4,0)
+ ;;=4^S92.135K
+ ;;^UTILITY(U,$J,358.3,32266,2)
+ ;;=^5044721
+ ;;^UTILITY(U,$J,358.3,32267,0)
+ ;;=S92.134K^^126^1609^357
+ ;;^UTILITY(U,$J,358.3,32267,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33432,1,3,0)
- ;;=3^Jaundice,Unspec
- ;;^UTILITY(U,$J,358.3,33432,1,4,0)
- ;;=4^R17.
- ;;^UTILITY(U,$J,358.3,33432,2)
- ;;=^5019251
- ;;^UTILITY(U,$J,358.3,33433,0)
- ;;=R19.30^^182^2004^2
- ;;^UTILITY(U,$J,358.3,33433,1,0)
+ ;;^UTILITY(U,$J,358.3,32267,1,3,0)
+ ;;=3^Nondisp fx post pro rt talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32267,1,4,0)
+ ;;=4^S92.134K
+ ;;^UTILITY(U,$J,358.3,32267,2)
+ ;;=^5044714
+ ;;^UTILITY(U,$J,358.3,32268,0)
+ ;;=S92.132K^^126^1609^130
+ ;;^UTILITY(U,$J,358.3,32268,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33433,1,3,0)
- ;;=3^Abdominal Rigidity,Unspec Site
- ;;^UTILITY(U,$J,358.3,33433,1,4,0)
- ;;=4^R19.30
- ;;^UTILITY(U,$J,358.3,33433,2)
- ;;=^5019266
- ;;^UTILITY(U,$J,358.3,33434,0)
- ;;=R19.4^^182^2004^43
- ;;^UTILITY(U,$J,358.3,33434,1,0)
+ ;;^UTILITY(U,$J,358.3,32268,1,3,0)
+ ;;=3^Disp fx post pro lft talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32268,1,4,0)
+ ;;=4^S92.132K
+ ;;^UTILITY(U,$J,358.3,32268,2)
+ ;;=^5044700
+ ;;^UTILITY(U,$J,358.3,32269,0)
+ ;;=S92.131K^^126^1609^131
+ ;;^UTILITY(U,$J,358.3,32269,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33434,1,3,0)
- ;;=3^Bowel Habit Changes
- ;;^UTILITY(U,$J,358.3,33434,1,4,0)
- ;;=4^R19.4
- ;;^UTILITY(U,$J,358.3,33434,2)
- ;;=^5019273
- ;;^UTILITY(U,$J,358.3,33435,0)
- ;;=R19.8^^182^2004^56
- ;;^UTILITY(U,$J,358.3,33435,1,0)
+ ;;^UTILITY(U,$J,358.3,32269,1,3,0)
+ ;;=3^Disp fx post pro rt talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32269,1,4,0)
+ ;;=4^S92.131K
+ ;;^UTILITY(U,$J,358.3,32269,2)
+ ;;=^5044693
+ ;;^UTILITY(U,$J,358.3,32270,0)
+ ;;=S92.125K^^126^1609^256
+ ;;^UTILITY(U,$J,358.3,32270,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33435,1,3,0)
- ;;=3^Digestive System/Abdomen Symptoms NEC
- ;;^UTILITY(U,$J,358.3,33435,1,4,0)
- ;;=4^R19.8
- ;;^UTILITY(U,$J,358.3,33435,2)
- ;;=^5019277
- ;;^UTILITY(U,$J,358.3,33436,0)
- ;;=R20.0^^182^2004^33
- ;;^UTILITY(U,$J,358.3,33436,1,0)
+ ;;^UTILITY(U,$J,358.3,32270,1,3,0)
+ ;;=3^Nondisp fx body lft talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32270,1,4,0)
+ ;;=4^S92.125K
+ ;;^UTILITY(U,$J,358.3,32270,2)
+ ;;=^5044679
+ ;;^UTILITY(U,$J,358.3,32271,0)
+ ;;=S92.124K^^126^1609^258
+ ;;^UTILITY(U,$J,358.3,32271,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33436,1,3,0)
- ;;=3^Anesthesia of Skin
- ;;^UTILITY(U,$J,358.3,33436,1,4,0)
- ;;=4^R20.0
- ;;^UTILITY(U,$J,358.3,33436,2)
- ;;=^5019278
- ;;^UTILITY(U,$J,358.3,33437,0)
- ;;=R20.1^^182^2004^83
- ;;^UTILITY(U,$J,358.3,33437,1,0)
+ ;;^UTILITY(U,$J,358.3,32271,1,3,0)
+ ;;=3^Nondisp fx body rt talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32271,1,4,0)
+ ;;=4^S92.124K
+ ;;^UTILITY(U,$J,358.3,32271,2)
+ ;;=^5044672
+ ;;^UTILITY(U,$J,358.3,32272,0)
+ ;;=S92.122K^^126^1609^31
+ ;;^UTILITY(U,$J,358.3,32272,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33437,1,3,0)
- ;;=3^Hypoesthesia of Skin
- ;;^UTILITY(U,$J,358.3,33437,1,4,0)
- ;;=4^R20.1
- ;;^UTILITY(U,$J,358.3,33437,2)
- ;;=^5019279
- ;;^UTILITY(U,$J,358.3,33438,0)
- ;;=R20.2^^182^2004^125
- ;;^UTILITY(U,$J,358.3,33438,1,0)
+ ;;^UTILITY(U,$J,358.3,32272,1,3,0)
+ ;;=3^Disp fx body lft talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32272,1,4,0)
+ ;;=4^S92.122K
+ ;;^UTILITY(U,$J,358.3,32272,2)
+ ;;=^5044658
+ ;;^UTILITY(U,$J,358.3,32273,0)
+ ;;=S92.121K^^126^1609^33
+ ;;^UTILITY(U,$J,358.3,32273,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33438,1,3,0)
- ;;=3^Paresthesia of Skin
- ;;^UTILITY(U,$J,358.3,33438,1,4,0)
- ;;=4^R20.2
- ;;^UTILITY(U,$J,358.3,33438,2)
- ;;=^5019280
- ;;^UTILITY(U,$J,358.3,33439,0)
- ;;=R20.3^^182^2004^79
- ;;^UTILITY(U,$J,358.3,33439,1,0)
+ ;;^UTILITY(U,$J,358.3,32273,1,3,0)
+ ;;=3^Disp fx body rt talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32273,1,4,0)
+ ;;=4^S92.121K
+ ;;^UTILITY(U,$J,358.3,32273,2)
+ ;;=^5044651
+ ;;^UTILITY(U,$J,358.3,32274,0)
+ ;;=S92.002K^^126^1609^191
+ ;;^UTILITY(U,$J,358.3,32274,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33439,1,3,0)
- ;;=3^Hyperesthesia
- ;;^UTILITY(U,$J,358.3,33439,1,4,0)
- ;;=4^R20.3
- ;;^UTILITY(U,$J,358.3,33439,2)
- ;;=^60011
- ;;^UTILITY(U,$J,358.3,33440,0)
- ;;=R21.^^182^2004^139
- ;;^UTILITY(U,$J,358.3,33440,1,0)
+ ;;^UTILITY(U,$J,358.3,32274,1,3,0)
+ ;;=3^Fx of lft calcaneus, subs w/ nonunion, unspec
+ ;;^UTILITY(U,$J,358.3,32274,1,4,0)
+ ;;=4^S92.002K
+ ;;^UTILITY(U,$J,358.3,32274,2)
+ ;;=^5044364
+ ;;^UTILITY(U,$J,358.3,32275,0)
+ ;;=S92.001K^^126^1609^208
+ ;;^UTILITY(U,$J,358.3,32275,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33440,1,3,0)
- ;;=3^Rash
- ;;^UTILITY(U,$J,358.3,33440,1,4,0)
- ;;=4^R21.
- ;;^UTILITY(U,$J,358.3,33440,2)
- ;;=^5019283
- ;;^UTILITY(U,$J,358.3,33441,0)
- ;;=R22.0^^182^2004^99
- ;;^UTILITY(U,$J,358.3,33441,1,0)
+ ;;^UTILITY(U,$J,358.3,32275,1,3,0)
+ ;;=3^Fx of rt calcaneus, subs w/ nonunion, unspec
+ ;;^UTILITY(U,$J,358.3,32275,1,4,0)
+ ;;=4^S92.001K
+ ;;^UTILITY(U,$J,358.3,32275,2)
+ ;;=^5044357
+ ;;^UTILITY(U,$J,358.3,32276,0)
+ ;;=S92.102K^^126^1609^201
+ ;;^UTILITY(U,$J,358.3,32276,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33441,1,3,0)
- ;;=3^Localized Swelling/Mass/Lump,Head
- ;;^UTILITY(U,$J,358.3,33441,1,4,0)
- ;;=4^R22.0
- ;;^UTILITY(U,$J,358.3,33441,2)
- ;;=^5019284
- ;;^UTILITY(U,$J,358.3,33442,0)
- ;;=R22.1^^182^2004^102
- ;;^UTILITY(U,$J,358.3,33442,1,0)
+ ;;^UTILITY(U,$J,358.3,32276,1,3,0)
+ ;;=3^Fx of lft talus, subs w/ nonunion, unspec
+ ;;^UTILITY(U,$J,358.3,32276,1,4,0)
+ ;;=4^S92.102K
+ ;;^UTILITY(U,$J,358.3,32276,2)
+ ;;=^5044602
+ ;;^UTILITY(U,$J,358.3,32277,0)
+ ;;=S92.101K^^126^1609^218
+ ;;^UTILITY(U,$J,358.3,32277,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33442,1,3,0)
- ;;=3^Localized Swelling/Mass/Lump,Neck
- ;;^UTILITY(U,$J,358.3,33442,1,4,0)
- ;;=4^R22.1
- ;;^UTILITY(U,$J,358.3,33442,2)
- ;;=^5019285
- ;;^UTILITY(U,$J,358.3,33443,0)
- ;;=R22.2^^182^2004^105
- ;;^UTILITY(U,$J,358.3,33443,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33443,1,3,0)
- ;;=3^Localized Swelling/Mass/Lump,Trunk
- ;;^UTILITY(U,$J,358.3,33443,1,4,0)
- ;;=4^R22.2
- ;;^UTILITY(U,$J,358.3,33443,2)
- ;;=^5019286
- ;;^UTILITY(U,$J,358.3,33444,0)
- ;;=R22.31^^182^2004^104
- ;;^UTILITY(U,$J,358.3,33444,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33444,1,3,0)
- ;;=3^Localized Swelling/Mass/Lump,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,32277,1,3,0)
+ ;;=3^Fx of rt talus, subs w/ nonunion, unspec
+ ;;^UTILITY(U,$J,358.3,32277,1,4,0)
+ ;;=4^S92.101K
+ ;;^UTILITY(U,$J,358.3,32277,2)
+ ;;=^5044595
+ ;;^UTILITY(U,$J,358.3,32278,0)
+ ;;=S92.065K^^126^1609^362

@@ -1,122 +1,130 @@
-IBDEI1Z6 ; ; 06-AUG-2015
+IBDEI1Z6 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34616,2)
- ;;=^5034080
- ;;^UTILITY(U,$J,358.3,34617,0)
- ;;=S62.344S^^183^2021^66
- ;;^UTILITY(U,$J,358.3,34617,1,0)
+ ;;^UTILITY(U,$J,358.3,33517,1,4,0)
+ ;;=4^I69.928
+ ;;^UTILITY(U,$J,358.3,33517,2)
+ ;;=^5007557
+ ;;^UTILITY(U,$J,358.3,33518,0)
+ ;;=I69.328^^131^1671^23
+ ;;^UTILITY(U,$J,358.3,33518,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34617,1,3,0)
- ;;=3^Nondisp fx of base of 4th MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34617,1,4,0)
- ;;=4^S62.344S
- ;;^UTILITY(U,$J,358.3,34617,2)
- ;;=^5034073
- ;;^UTILITY(U,$J,358.3,34618,0)
- ;;=S62.340S^^183^2021^61
- ;;^UTILITY(U,$J,358.3,34618,1,0)
+ ;;^UTILITY(U,$J,358.3,33518,1,3,0)
+ ;;=3^Speech/Lang Deficit Following Cerebvasc Infarc
+ ;;^UTILITY(U,$J,358.3,33518,1,4,0)
+ ;;=4^I69.328
+ ;;^UTILITY(U,$J,358.3,33518,2)
+ ;;=^5007495
+ ;;^UTILITY(U,$J,358.3,33519,0)
+ ;;=E04.0^^131^1672^39
+ ;;^UTILITY(U,$J,358.3,33519,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34618,1,3,0)
- ;;=3^Nondisp fx of base of 2nd MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34618,1,4,0)
- ;;=4^S62.340S
- ;;^UTILITY(U,$J,358.3,34618,2)
- ;;=^5034045
- ;;^UTILITY(U,$J,358.3,34619,0)
- ;;=S62.341S^^183^2021^62
- ;;^UTILITY(U,$J,358.3,34619,1,0)
+ ;;^UTILITY(U,$J,358.3,33519,1,3,0)
+ ;;=3^Nontoxic Diffuse Goiter
+ ;;^UTILITY(U,$J,358.3,33519,1,4,0)
+ ;;=4^E04.0
+ ;;^UTILITY(U,$J,358.3,33519,2)
+ ;;=^5002477
+ ;;^UTILITY(U,$J,358.3,33520,0)
+ ;;=E04.1^^131^1672^41
+ ;;^UTILITY(U,$J,358.3,33520,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34619,1,3,0)
- ;;=3^Nondisp fx of base of 2nd MC bone. left hand, sequela
- ;;^UTILITY(U,$J,358.3,34619,1,4,0)
- ;;=4^S62.341S
- ;;^UTILITY(U,$J,358.3,34619,2)
- ;;=^5034052
- ;;^UTILITY(U,$J,358.3,34620,0)
- ;;=S62.343S^^183^2021^63
- ;;^UTILITY(U,$J,358.3,34620,1,0)
+ ;;^UTILITY(U,$J,358.3,33520,1,3,0)
+ ;;=3^Nontoxic Single Thyroid Nodule
+ ;;^UTILITY(U,$J,358.3,33520,1,4,0)
+ ;;=4^E04.1
+ ;;^UTILITY(U,$J,358.3,33520,2)
+ ;;=^5002478
+ ;;^UTILITY(U,$J,358.3,33521,0)
+ ;;=E04.2^^131^1672^40
+ ;;^UTILITY(U,$J,358.3,33521,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34620,1,3,0)
- ;;=3^Nondisp fx of base of 3rd MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34620,1,4,0)
- ;;=4^S62.343S
- ;;^UTILITY(U,$J,358.3,34620,2)
- ;;=^5034066
- ;;^UTILITY(U,$J,358.3,34621,0)
- ;;=S62.342S^^183^2021^64
- ;;^UTILITY(U,$J,358.3,34621,1,0)
+ ;;^UTILITY(U,$J,358.3,33521,1,3,0)
+ ;;=3^Nontoxic Multinodular Goiter
+ ;;^UTILITY(U,$J,358.3,33521,1,4,0)
+ ;;=4^E04.2
+ ;;^UTILITY(U,$J,358.3,33521,2)
+ ;;=^267790
+ ;;^UTILITY(U,$J,358.3,33522,0)
+ ;;=E01.1^^131^1672^36
+ ;;^UTILITY(U,$J,358.3,33522,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34621,1,3,0)
- ;;=3^Nondisp fx of base of 3rd MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34621,1,4,0)
- ;;=4^S62.342S
- ;;^UTILITY(U,$J,358.3,34621,2)
- ;;=^5034059
- ;;^UTILITY(U,$J,358.3,34622,0)
- ;;=S62.367S^^183^2021^95
- ;;^UTILITY(U,$J,358.3,34622,1,0)
+ ;;^UTILITY(U,$J,358.3,33522,1,3,0)
+ ;;=3^Iodine-Deficiency Related Multinodular (Endemic) Goiter
+ ;;^UTILITY(U,$J,358.3,33522,1,4,0)
+ ;;=4^E01.1
+ ;;^UTILITY(U,$J,358.3,33522,2)
+ ;;=^5002465
+ ;;^UTILITY(U,$J,358.3,33523,0)
+ ;;=E05.00^^131^1672^56
+ ;;^UTILITY(U,$J,358.3,33523,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34622,1,3,0)
- ;;=3^Nondisp fx of neck of 5th MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34622,1,4,0)
- ;;=4^S62.367S
- ;;^UTILITY(U,$J,358.3,34622,2)
- ;;=^5034234
- ;;^UTILITY(U,$J,358.3,34623,0)
- ;;=S62.366S^^183^2021^96
- ;;^UTILITY(U,$J,358.3,34623,1,0)
+ ;;^UTILITY(U,$J,358.3,33523,1,3,0)
+ ;;=3^Thyrotoxicosis w/ Diffuse Goiter w/o Thyrotoxic Crisis
+ ;;^UTILITY(U,$J,358.3,33523,1,4,0)
+ ;;=4^E05.00
+ ;;^UTILITY(U,$J,358.3,33523,2)
+ ;;=^5002481
+ ;;^UTILITY(U,$J,358.3,33524,0)
+ ;;=E05.01^^131^1672^55
+ ;;^UTILITY(U,$J,358.3,33524,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34623,1,3,0)
- ;;=3^Nondisp fx of neck of 5th MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34623,1,4,0)
- ;;=4^S62.366S
- ;;^UTILITY(U,$J,358.3,34623,2)
- ;;=^5034227
- ;;^UTILITY(U,$J,358.3,34624,0)
- ;;=S62.255S^^183^2021^87
- ;;^UTILITY(U,$J,358.3,34624,1,0)
+ ;;^UTILITY(U,$J,358.3,33524,1,3,0)
+ ;;=3^Thyrotoxicosis w/ Diffuse Goiter w/ Thyrotoxic Crisis/Storm
+ ;;^UTILITY(U,$J,358.3,33524,1,4,0)
+ ;;=4^E05.01
+ ;;^UTILITY(U,$J,358.3,33524,2)
+ ;;=^5002482
+ ;;^UTILITY(U,$J,358.3,33525,0)
+ ;;=E05.90^^131^1672^58
+ ;;^UTILITY(U,$J,358.3,33525,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34624,1,3,0)
- ;;=3^Nondisp fx of neck of 1st MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34624,1,4,0)
- ;;=4^S62.255S
- ;;^UTILITY(U,$J,358.3,34624,2)
- ;;=^5033744
- ;;^UTILITY(U,$J,358.3,34625,0)
- ;;=S62.254S^^183^2021^88
- ;;^UTILITY(U,$J,358.3,34625,1,0)
+ ;;^UTILITY(U,$J,358.3,33525,1,3,0)
+ ;;=3^Thyrotoxicosis,Unspec w/o Thyrotoxic Crisis/Storm
+ ;;^UTILITY(U,$J,358.3,33525,1,4,0)
+ ;;=4^E05.90
+ ;;^UTILITY(U,$J,358.3,33525,2)
+ ;;=^5002492
+ ;;^UTILITY(U,$J,358.3,33526,0)
+ ;;=E05.91^^131^1672^57
+ ;;^UTILITY(U,$J,358.3,33526,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34625,1,3,0)
- ;;=3^Nondisp fx of neck of 1st MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34625,1,4,0)
- ;;=4^S62.254S
- ;;^UTILITY(U,$J,358.3,34625,2)
- ;;=^5033737
- ;;^UTILITY(U,$J,358.3,34626,0)
- ;;=S62.365S^^183^2021^93
- ;;^UTILITY(U,$J,358.3,34626,1,0)
+ ;;^UTILITY(U,$J,358.3,33526,1,3,0)
+ ;;=3^Thyrotoxicosis,Unspec w/ Thyrotoxic Crisis/Storm
+ ;;^UTILITY(U,$J,358.3,33526,1,4,0)
+ ;;=4^E05.91
+ ;;^UTILITY(U,$J,358.3,33526,2)
+ ;;=^5002493
+ ;;^UTILITY(U,$J,358.3,33527,0)
+ ;;=E89.0^^131^1672^50
+ ;;^UTILITY(U,$J,358.3,33527,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34626,1,3,0)
- ;;=3^Nondisp fx of neck of 4th MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34626,1,4,0)
- ;;=4^S62.365S
- ;;^UTILITY(U,$J,358.3,34626,2)
- ;;=^5034220
- ;;^UTILITY(U,$J,358.3,34627,0)
- ;;=S62.364S^^183^2021^94
- ;;^UTILITY(U,$J,358.3,34627,1,0)
+ ;;^UTILITY(U,$J,358.3,33527,1,3,0)
+ ;;=3^Postprocedural Hypothyroidism
+ ;;^UTILITY(U,$J,358.3,33527,1,4,0)
+ ;;=4^E89.0
+ ;;^UTILITY(U,$J,358.3,33527,2)
+ ;;=^5003035
+ ;;^UTILITY(U,$J,358.3,33528,0)
+ ;;=E03.2^^131^1672^32
+ ;;^UTILITY(U,$J,358.3,33528,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34627,1,3,0)
- ;;=3^Nondisp fx of neck of 4th MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34627,1,4,0)
- ;;=4^S62.364S
- ;;^UTILITY(U,$J,358.3,34627,2)
- ;;=^5034213
- ;;^UTILITY(U,$J,358.3,34628,0)
- ;;=S62.361S^^183^2021^89
- ;;^UTILITY(U,$J,358.3,34628,1,0)
+ ;;^UTILITY(U,$J,358.3,33528,1,3,0)
+ ;;=3^Hypothyroidism d/t Meds/Oth Exogenous Substances
+ ;;^UTILITY(U,$J,358.3,33528,1,4,0)
+ ;;=4^E03.2
+ ;;^UTILITY(U,$J,358.3,33528,2)
+ ;;=^5002471
+ ;;^UTILITY(U,$J,358.3,33529,0)
+ ;;=E03.9^^131^1672^33
+ ;;^UTILITY(U,$J,358.3,33529,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34628,1,3,0)
- ;;=3^Nondisp fx of neck of 2nd MC bone, left hand, sequela
+ ;;^UTILITY(U,$J,358.3,33529,1,3,0)
+ ;;=3^Hypothyroidism,Unspec
+ ;;^UTILITY(U,$J,358.3,33529,1,4,0)
+ ;;=4^E03.9
+ ;;^UTILITY(U,$J,358.3,33529,2)
+ ;;=^5002476
+ ;;^UTILITY(U,$J,358.3,33530,0)
+ ;;=E06.0^^131^1672^53

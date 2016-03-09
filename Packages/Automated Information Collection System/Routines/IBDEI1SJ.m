@@ -1,126 +1,134 @@
-IBDEI1SJ ; ; 06-AUG-2015
+IBDEI1SJ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31594,2)
- ;;=^5010067
- ;;^UTILITY(U,$J,358.3,31595,0)
- ;;=M06.022^^180^1962^48
- ;;^UTILITY(U,$J,358.3,31595,1,0)
+ ;;^UTILITY(U,$J,358.3,30417,1,4,0)
+ ;;=4^Z85.841
+ ;;^UTILITY(U,$J,358.3,30417,2)
+ ;;=^5063447
+ ;;^UTILITY(U,$J,358.3,30418,0)
+ ;;=Z85.848^^118^1508^34
+ ;;^UTILITY(U,$J,358.3,30418,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31595,1,3,0)
- ;;=3^Rheum arthritis w/o rheumatoid factor, left elbow
- ;;^UTILITY(U,$J,358.3,31595,1,4,0)
- ;;=4^M06.022
- ;;^UTILITY(U,$J,358.3,31595,2)
- ;;=^5010052
- ;;^UTILITY(U,$J,358.3,31596,0)
- ;;=M06.042^^180^1962^49
- ;;^UTILITY(U,$J,358.3,31596,1,0)
+ ;;^UTILITY(U,$J,358.3,30418,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of prt nervous tissue
+ ;;^UTILITY(U,$J,358.3,30418,1,4,0)
+ ;;=4^Z85.848
+ ;;^UTILITY(U,$J,358.3,30418,2)
+ ;;=^5063448
+ ;;^UTILITY(U,$J,358.3,30419,0)
+ ;;=Z85.850^^118^1508^35
+ ;;^UTILITY(U,$J,358.3,30419,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31596,1,3,0)
- ;;=3^Rheum arthritis w/o rheumatoid factor, left hand
- ;;^UTILITY(U,$J,358.3,31596,1,4,0)
- ;;=4^M06.042
- ;;^UTILITY(U,$J,358.3,31596,2)
- ;;=^5010058
- ;;^UTILITY(U,$J,358.3,31597,0)
- ;;=M06.052^^180^1962^50
- ;;^UTILITY(U,$J,358.3,31597,1,0)
+ ;;^UTILITY(U,$J,358.3,30419,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of thyroid
+ ;;^UTILITY(U,$J,358.3,30419,1,4,0)
+ ;;=4^Z85.850
+ ;;^UTILITY(U,$J,358.3,30419,2)
+ ;;=^5063449
+ ;;^UTILITY(U,$J,358.3,30420,0)
+ ;;=Z85.858^^118^1508^36
+ ;;^UTILITY(U,$J,358.3,30420,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31597,1,3,0)
- ;;=3^Rheum arthritis w/o rheumatoid factor, left hip
- ;;^UTILITY(U,$J,358.3,31597,1,4,0)
- ;;=4^M06.052
- ;;^UTILITY(U,$J,358.3,31597,2)
- ;;=^5010061
- ;;^UTILITY(U,$J,358.3,31598,0)
- ;;=M06.062^^180^1962^51
- ;;^UTILITY(U,$J,358.3,31598,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31598,1,3,0)
- ;;=3^Rheum arthritis w/o rheumatoid factor, left knee
- ;;^UTILITY(U,$J,358.3,31598,1,4,0)
- ;;=4^M06.062
- ;;^UTILITY(U,$J,358.3,31598,2)
- ;;=^5010064
- ;;^UTILITY(U,$J,358.3,31599,0)
- ;;=M06.012^^180^1962^52
- ;;^UTILITY(U,$J,358.3,31599,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31599,1,3,0)
- ;;=3^Rheum arthritis w/o rheumatoid factor, left shoulder
- ;;^UTILITY(U,$J,358.3,31599,1,4,0)
- ;;=4^M06.012
- ;;^UTILITY(U,$J,358.3,31599,2)
- ;;=^5010049
- ;;^UTILITY(U,$J,358.3,31600,0)
- ;;=M06.032^^180^1962^53
- ;;^UTILITY(U,$J,358.3,31600,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31600,1,3,0)
- ;;=3^Rheum arthritis w/o rheumatoid factor, left wrist
- ;;^UTILITY(U,$J,358.3,31600,1,4,0)
- ;;=4^M06.032
- ;;^UTILITY(U,$J,358.3,31600,2)
- ;;=^5010055
- ;;^UTILITY(U,$J,358.3,31601,0)
- ;;=M06.09^^180^1962^54
- ;;^UTILITY(U,$J,358.3,31601,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31601,1,3,0)
- ;;=3^Rheum arthritis w/o rheumatoid factor, multiple sites
- ;;^UTILITY(U,$J,358.3,31601,1,4,0)
- ;;=4^M06.09
- ;;^UTILITY(U,$J,358.3,31601,2)
- ;;=^5010070
- ;;^UTILITY(U,$J,358.3,31602,0)
- ;;=M06.071^^180^1962^55
- ;;^UTILITY(U,$J,358.3,31602,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31602,1,3,0)
- ;;=3^Rheum arthritis w/o rheumatoid factor, right ank/ft
- ;;^UTILITY(U,$J,358.3,31602,1,4,0)
- ;;=4^M06.071
- ;;^UTILITY(U,$J,358.3,31602,2)
- ;;=^5010066
- ;;^UTILITY(U,$J,358.3,31603,0)
- ;;=M06.021^^180^1962^56
- ;;^UTILITY(U,$J,358.3,31603,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31603,1,3,0)
- ;;=3^Rheum arthritis w/o rheumatoid factor, right elbow
- ;;^UTILITY(U,$J,358.3,31603,1,4,0)
- ;;=4^M06.021
- ;;^UTILITY(U,$J,358.3,31603,2)
- ;;=^5010051
- ;;^UTILITY(U,$J,358.3,31604,0)
- ;;=M06.041^^180^1962^57
- ;;^UTILITY(U,$J,358.3,31604,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31604,1,3,0)
- ;;=3^Rheum arthritis w/o rheumatoid factor, right hand
- ;;^UTILITY(U,$J,358.3,31604,1,4,0)
- ;;=4^M06.041
- ;;^UTILITY(U,$J,358.3,31604,2)
- ;;=^5010057
- ;;^UTILITY(U,$J,358.3,31605,0)
- ;;=M06.051^^180^1962^58
- ;;^UTILITY(U,$J,358.3,31605,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31605,1,3,0)
- ;;=3^Rheum arthritis w/o rheumatoid factor, right hip
- ;;^UTILITY(U,$J,358.3,31605,1,4,0)
- ;;=4^M06.051
- ;;^UTILITY(U,$J,358.3,31605,2)
- ;;=^5010060
- ;;^UTILITY(U,$J,358.3,31606,0)
- ;;=M06.061^^180^1962^59
- ;;^UTILITY(U,$J,358.3,31606,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31606,1,3,0)
- ;;=3^Rheum arthritis w/o rheumatoid factor, right knee
- ;;^UTILITY(U,$J,358.3,31606,1,4,0)
- ;;=4^M06.061
- ;;^UTILITY(U,$J,358.3,31606,2)
- ;;=^5010063
+ ;;^UTILITY(U,$J,358.3,30420,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of endocrine glands
+ ;;^UTILITY(U,$J,358.3,30420,1,4,0)
+ ;;=4^Z85.858
+ ;;^UTILITY(U,$J,358.3,30420,2)
+ ;;=^5063450
+ ;;^UTILITY(U,$J,358.3,30421,0)
+ ;;=99212^^119^1509^2
+ ;;^UTILITY(U,$J,358.3,30421,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,30421,1,1,0)
+ ;;=1^Problem Focused
+ ;;^UTILITY(U,$J,358.3,30421,1,2,0)
+ ;;=2^99212
+ ;;^UTILITY(U,$J,358.3,30422,0)
+ ;;=99213^^119^1509^3
+ ;;^UTILITY(U,$J,358.3,30422,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,30422,1,1,0)
+ ;;=1^Exp Prob Focused
+ ;;^UTILITY(U,$J,358.3,30422,1,2,0)
+ ;;=2^99213
+ ;;^UTILITY(U,$J,358.3,30423,0)
+ ;;=99211^^119^1509^1
+ ;;^UTILITY(U,$J,358.3,30423,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,30423,1,1,0)
+ ;;=1^RN/LPN Visit Only
+ ;;^UTILITY(U,$J,358.3,30423,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,30424,0)
+ ;;=99214^^119^1509^4
+ ;;^UTILITY(U,$J,358.3,30424,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,30424,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,30424,1,2,0)
+ ;;=2^99214
+ ;;^UTILITY(U,$J,358.3,30425,0)
+ ;;=99215^^119^1509^5
+ ;;^UTILITY(U,$J,358.3,30425,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,30425,1,1,0)
+ ;;=1^Comprehensive
+ ;;^UTILITY(U,$J,358.3,30425,1,2,0)
+ ;;=2^99215
+ ;;^UTILITY(U,$J,358.3,30426,0)
+ ;;=99024^^119^1509^6
+ ;;^UTILITY(U,$J,358.3,30426,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,30426,1,1,0)
+ ;;=1^Post-Op Follow-up Visit
+ ;;^UTILITY(U,$J,358.3,30426,1,2,0)
+ ;;=2^99024
+ ;;^UTILITY(U,$J,358.3,30427,0)
+ ;;=99242^^119^1510^2
+ ;;^UTILITY(U,$J,358.3,30427,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,30427,1,1,0)
+ ;;=1^Expanded Problem Focused
+ ;;^UTILITY(U,$J,358.3,30427,1,2,0)
+ ;;=2^99242
+ ;;^UTILITY(U,$J,358.3,30428,0)
+ ;;=99243^^119^1510^3
+ ;;^UTILITY(U,$J,358.3,30428,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,30428,1,1,0)
+ ;;=1^Detailed Visit
+ ;;^UTILITY(U,$J,358.3,30428,1,2,0)
+ ;;=2^99243
+ ;;^UTILITY(U,$J,358.3,30429,0)
+ ;;=99241^^119^1510^1
+ ;;^UTILITY(U,$J,358.3,30429,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,30429,1,1,0)
+ ;;=1^Problem Focused
+ ;;^UTILITY(U,$J,358.3,30429,1,2,0)
+ ;;=2^99241
+ ;;^UTILITY(U,$J,358.3,30430,0)
+ ;;=99244^^119^1510^4
+ ;;^UTILITY(U,$J,358.3,30430,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,30430,1,1,0)
+ ;;=1^Comprehensive,Mod Cmplx
+ ;;^UTILITY(U,$J,358.3,30430,1,2,0)
+ ;;=2^99244
+ ;;^UTILITY(U,$J,358.3,30431,0)
+ ;;=99245^^119^1510^5
+ ;;^UTILITY(U,$J,358.3,30431,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,30431,1,1,0)
+ ;;=1^Comprehensive,High Cmplx
+ ;;^UTILITY(U,$J,358.3,30431,1,2,0)
+ ;;=2^99245
+ ;;^UTILITY(U,$J,358.3,30432,0)
+ ;;=99201^^119^1511^1
+ ;;^UTILITY(U,$J,358.3,30432,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,30432,1,1,0)
+ ;;=1^Problem Focused
+ ;;^UTILITY(U,$J,358.3,30432,1,2,0)
+ ;;=2^99201

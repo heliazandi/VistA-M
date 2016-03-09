@@ -1,140 +1,122 @@
-IBDEI152 ; ; 06-AUG-2015
+IBDEI152 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,20092,1,4,0)
- ;;=4^V73.89
- ;;^UTILITY(U,$J,358.3,20092,1,5,0)
- ;;=5^Hepatitis C Screening
- ;;^UTILITY(U,$J,358.3,20092,2)
- ;;=^295833
- ;;^UTILITY(U,$J,358.3,20093,0)
- ;;=V81.1^^105^1242^9
- ;;^UTILITY(U,$J,358.3,20093,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20093,1,4,0)
- ;;=4^V81.1
- ;;^UTILITY(U,$J,358.3,20093,1,5,0)
- ;;=5^Hypertension Screening
- ;;^UTILITY(U,$J,358.3,20093,2)
- ;;=^295688
- ;;^UTILITY(U,$J,358.3,20094,0)
- ;;=V65.3^^105^1242^10
- ;;^UTILITY(U,$J,358.3,20094,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20094,1,4,0)
- ;;=4^V65.3
- ;;^UTILITY(U,$J,358.3,20094,1,5,0)
- ;;=5^Nutrition Counseling
- ;;^UTILITY(U,$J,358.3,20094,2)
- ;;=^295563
- ;;^UTILITY(U,$J,358.3,20095,0)
- ;;=V76.41^^105^1242^13
- ;;^UTILITY(U,$J,358.3,20095,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20095,1,4,0)
- ;;=4^V76.41
- ;;^UTILITY(U,$J,358.3,20095,1,5,0)
- ;;=5^Rectal Exam
- ;;^UTILITY(U,$J,358.3,20095,2)
- ;;=^295655
- ;;^UTILITY(U,$J,358.3,20096,0)
- ;;=V65.43^^105^1242^15
- ;;^UTILITY(U,$J,358.3,20096,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20096,1,4,0)
- ;;=4^V65.43
- ;;^UTILITY(U,$J,358.3,20096,1,5,0)
- ;;=5^Safety Counseling
- ;;^UTILITY(U,$J,358.3,20096,2)
- ;;=^303468
- ;;^UTILITY(U,$J,358.3,20097,0)
- ;;=V77.8^^105^1242^19
- ;;^UTILITY(U,$J,358.3,20097,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20097,1,4,0)
- ;;=4^V77.8
- ;;^UTILITY(U,$J,358.3,20097,1,5,0)
- ;;=5^Weight Screen
- ;;^UTILITY(U,$J,358.3,20097,2)
- ;;=^295669
- ;;^UTILITY(U,$J,358.3,20098,0)
- ;;=V65.40^^105^1242^11
- ;;^UTILITY(U,$J,358.3,20098,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20098,1,4,0)
- ;;=4^V65.40
- ;;^UTILITY(U,$J,358.3,20098,1,5,0)
- ;;=5^Preventive Counseling, Unspec
- ;;^UTILITY(U,$J,358.3,20098,2)
- ;;=^87449
- ;;^UTILITY(U,$J,358.3,20099,0)
- ;;=V76.44^^105^1242^12
- ;;^UTILITY(U,$J,358.3,20099,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20099,1,4,0)
- ;;=4^V76.44
- ;;^UTILITY(U,$J,358.3,20099,1,5,0)
- ;;=5^Prostate CA Screen (DRE/PSA)
- ;;^UTILITY(U,$J,358.3,20099,2)
- ;;=^321548
- ;;^UTILITY(U,$J,358.3,20100,0)
- ;;=V70.0^^105^1242^14
- ;;^UTILITY(U,$J,358.3,20100,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20100,1,4,0)
- ;;=4^V70.0
- ;;^UTILITY(U,$J,358.3,20100,1,5,0)
- ;;=5^Rountine Med Exam
- ;;^UTILITY(U,$J,358.3,20100,2)
- ;;=^295590
- ;;^UTILITY(U,$J,358.3,20101,0)
- ;;=V73.89^^105^1242^16
- ;;^UTILITY(U,$J,358.3,20101,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20101,1,4,0)
- ;;=4^V73.89
- ;;^UTILITY(U,$J,358.3,20101,1,5,0)
- ;;=5^Screening for HIV
- ;;^UTILITY(U,$J,358.3,20101,2)
- ;;=^295833
- ;;^UTILITY(U,$J,358.3,20102,0)
- ;;=V74.5^^105^1242^18
- ;;^UTILITY(U,$J,358.3,20102,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20102,1,4,0)
- ;;=4^V74.5
- ;;^UTILITY(U,$J,358.3,20102,1,5,0)
- ;;=5^Screening for STD's
- ;;^UTILITY(U,$J,358.3,20102,2)
- ;;=^295637
- ;;^UTILITY(U,$J,358.3,20103,0)
- ;;=V77.91^^105^1242^17
- ;;^UTILITY(U,$J,358.3,20103,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20103,1,4,0)
- ;;=4^V77.91
- ;;^UTILITY(U,$J,358.3,20103,1,5,0)
- ;;=5^Screening for High Cholesterol
- ;;^UTILITY(U,$J,358.3,20103,2)
- ;;=^322093
- ;;^UTILITY(U,$J,358.3,20104,0)
- ;;=V87.39^^105^1243^1
- ;;^UTILITY(U,$J,358.3,20104,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20104,1,4,0)
- ;;=4^V87.39
- ;;^UTILITY(U,$J,358.3,20104,1,5,0)
- ;;=5^Cont/Exp Hazard Sub NEC
- ;;^UTILITY(U,$J,358.3,20104,2)
- ;;=^336815
- ;;^UTILITY(U,$J,358.3,20105,0)
- ;;=E819.0^^105^1244^19
- ;;^UTILITY(U,$J,358.3,20105,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20105,1,4,0)
- ;;=4^E819.0
- ;;^UTILITY(U,$J,358.3,20105,1,5,0)
- ;;=5^Traffic Accident,Driver
- ;;^UTILITY(U,$J,358.3,20105,2)
- ;;=^294215
+ ;;^UTILITY(U,$J,358.3,19373,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19373,1,3,0)
+ ;;=3^Athscl Nonaut Bio Bypass of Right Leg w/ Ulcer of Oth Part of Foot
+ ;;^UTILITY(U,$J,358.3,19373,1,4,0)
+ ;;=4^I70.535
+ ;;^UTILITY(U,$J,358.3,19373,2)
+ ;;=^5007706
+ ;;^UTILITY(U,$J,358.3,19374,0)
+ ;;=I70.541^^84^918^55
+ ;;^UTILITY(U,$J,358.3,19374,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19374,1,3,0)
+ ;;=3^Athscl Nonaut Bio Bypass of Left Leg w/ Ulcer of Thigh
+ ;;^UTILITY(U,$J,358.3,19374,1,4,0)
+ ;;=4^I70.541
+ ;;^UTILITY(U,$J,358.3,19374,2)
+ ;;=^5007709
+ ;;^UTILITY(U,$J,358.3,19375,0)
+ ;;=I70.542^^84^918^56
+ ;;^UTILITY(U,$J,358.3,19375,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19375,1,3,0)
+ ;;=3^Athscl Nonaut Bio Bypass of Left Leg w/ Ulcer of Calf
+ ;;^UTILITY(U,$J,358.3,19375,1,4,0)
+ ;;=4^I70.542
+ ;;^UTILITY(U,$J,358.3,19375,2)
+ ;;=^5007710
+ ;;^UTILITY(U,$J,358.3,19376,0)
+ ;;=I70.543^^84^918^57
+ ;;^UTILITY(U,$J,358.3,19376,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19376,1,3,0)
+ ;;=3^Athscl Nonaut Bio Bypass of Left Leg w/ Ulcer of Ankle
+ ;;^UTILITY(U,$J,358.3,19376,1,4,0)
+ ;;=4^I70.543
+ ;;^UTILITY(U,$J,358.3,19376,2)
+ ;;=^5007711
+ ;;^UTILITY(U,$J,358.3,19377,0)
+ ;;=I70.544^^84^918^58
+ ;;^UTILITY(U,$J,358.3,19377,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19377,1,3,0)
+ ;;=3^Athscl Nonaut Bio Bypass of Left Leg w/ Ulcer of Heel/Midfoot
+ ;;^UTILITY(U,$J,358.3,19377,1,4,0)
+ ;;=4^I70.544
+ ;;^UTILITY(U,$J,358.3,19377,2)
+ ;;=^5007712
+ ;;^UTILITY(U,$J,358.3,19378,0)
+ ;;=I70.545^^84^918^59
+ ;;^UTILITY(U,$J,358.3,19378,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19378,1,3,0)
+ ;;=3^Athscl Nonaut Bio Bypass of Left Leg w/ Ulcer of Oth Part of Foot
+ ;;^UTILITY(U,$J,358.3,19378,1,4,0)
+ ;;=4^I70.545
+ ;;^UTILITY(U,$J,358.3,19378,2)
+ ;;=^5007713
+ ;;^UTILITY(U,$J,358.3,19379,0)
+ ;;=I70.631^^84^918^70
+ ;;^UTILITY(U,$J,358.3,19379,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19379,1,3,0)
+ ;;=3^Athscl Nonbiol Bypass of Right Leg w/ Ulcer of Thigh
+ ;;^UTILITY(U,$J,358.3,19379,1,4,0)
+ ;;=4^I70.631
+ ;;^UTILITY(U,$J,358.3,19379,2)
+ ;;=^5007740
+ ;;^UTILITY(U,$J,358.3,19380,0)
+ ;;=I70.632^^84^918^71
+ ;;^UTILITY(U,$J,358.3,19380,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19380,1,3,0)
+ ;;=3^Athscl Nonbiol Bypass of Right Leg w/ Ulcer of Calf
+ ;;^UTILITY(U,$J,358.3,19380,1,4,0)
+ ;;=4^I70.632
+ ;;^UTILITY(U,$J,358.3,19380,2)
+ ;;=^5007741
+ ;;^UTILITY(U,$J,358.3,19381,0)
+ ;;=I70.633^^84^918^72
+ ;;^UTILITY(U,$J,358.3,19381,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19381,1,3,0)
+ ;;=3^Athscl Nonbiol Bypass of Right Leg w/ Ulcer of Ankle
+ ;;^UTILITY(U,$J,358.3,19381,1,4,0)
+ ;;=4^I70.633
+ ;;^UTILITY(U,$J,358.3,19381,2)
+ ;;=^5007742
+ ;;^UTILITY(U,$J,358.3,19382,0)
+ ;;=I70.634^^84^918^73
+ ;;^UTILITY(U,$J,358.3,19382,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19382,1,3,0)
+ ;;=3^Athscl Nonbiol Bypass of Right Leg w/ Ulcer of Heel/Midfoot
+ ;;^UTILITY(U,$J,358.3,19382,1,4,0)
+ ;;=4^I70.634
+ ;;^UTILITY(U,$J,358.3,19382,2)
+ ;;=^5007743
+ ;;^UTILITY(U,$J,358.3,19383,0)
+ ;;=I70.635^^84^918^74
+ ;;^UTILITY(U,$J,358.3,19383,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19383,1,3,0)
+ ;;=3^Athscl Nonbiol Bypass of Right Leg w/ Ulcer of Oth Part of Foot
+ ;;^UTILITY(U,$J,358.3,19383,1,4,0)
+ ;;=4^I70.635
+ ;;^UTILITY(U,$J,358.3,19383,2)
+ ;;=^5007744
+ ;;^UTILITY(U,$J,358.3,19384,0)
+ ;;=I70.641^^84^918^65
+ ;;^UTILITY(U,$J,358.3,19384,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19384,1,3,0)
+ ;;=3^Athscl Nonbiol Bypass of Left Leg w/ Ulcer of Thigh
+ ;;^UTILITY(U,$J,358.3,19384,1,4,0)
+ ;;=4^I70.641
+ ;;^UTILITY(U,$J,358.3,19384,2)
+ ;;=^5007747

@@ -1,138 +1,122 @@
-IBDEI1WA ; ; 06-AUG-2015
+IBDEI1WA ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33324,1,4,0)
- ;;=4^D86.1
- ;;^UTILITY(U,$J,358.3,33324,2)
- ;;=^5002443
- ;;^UTILITY(U,$J,358.3,33325,0)
- ;;=D86.2^^182^2002^46
- ;;^UTILITY(U,$J,358.3,33325,1,0)
+ ;;^UTILITY(U,$J,358.3,32171,2)
+ ;;=^5045071
+ ;;^UTILITY(U,$J,358.3,32172,0)
+ ;;=S92.311K^^126^1609^62
+ ;;^UTILITY(U,$J,358.3,32172,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33325,1,3,0)
- ;;=3^Sarcoidosis of Lung w/ Sarcoidosis of Lymph Nodes
- ;;^UTILITY(U,$J,358.3,33325,1,4,0)
- ;;=4^D86.2
- ;;^UTILITY(U,$J,358.3,33325,2)
- ;;=^5002444
- ;;^UTILITY(U,$J,358.3,33326,0)
- ;;=D86.89^^182^2002^48
- ;;^UTILITY(U,$J,358.3,33326,1,0)
+ ;;^UTILITY(U,$J,358.3,32172,1,3,0)
+ ;;=3^Disp fx of 1st metrsl bone, rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32172,1,4,0)
+ ;;=4^S92.311K
+ ;;^UTILITY(U,$J,358.3,32172,2)
+ ;;=^5045064
+ ;;^UTILITY(U,$J,358.3,32173,0)
+ ;;=S92.302K^^126^1609^206
+ ;;^UTILITY(U,$J,358.3,32173,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33326,1,3,0)
- ;;=3^Sarcoidosis of Other Sites
- ;;^UTILITY(U,$J,358.3,33326,1,4,0)
- ;;=4^D86.89
- ;;^UTILITY(U,$J,358.3,33326,2)
- ;;=^5002453
- ;;^UTILITY(U,$J,358.3,33327,0)
- ;;=D86.9^^182^2002^51
- ;;^UTILITY(U,$J,358.3,33327,1,0)
+ ;;^UTILITY(U,$J,358.3,32173,1,3,0)
+ ;;=3^Fx of metrsl bone(s), lft ft, subs w/ nonunion, unspec
+ ;;^UTILITY(U,$J,358.3,32173,1,4,0)
+ ;;=4^S92.302K
+ ;;^UTILITY(U,$J,358.3,32173,2)
+ ;;=^5045057
+ ;;^UTILITY(U,$J,358.3,32174,0)
+ ;;=S92.301K^^126^1609^207
+ ;;^UTILITY(U,$J,358.3,32174,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33327,1,3,0)
- ;;=3^Sarcoidosis,Unspec
- ;;^UTILITY(U,$J,358.3,33327,1,4,0)
- ;;=4^D86.9
- ;;^UTILITY(U,$J,358.3,33327,2)
- ;;=^5002454
- ;;^UTILITY(U,$J,358.3,33328,0)
- ;;=D86.86^^182^2002^39
- ;;^UTILITY(U,$J,358.3,33328,1,0)
+ ;;^UTILITY(U,$J,358.3,32174,1,3,0)
+ ;;=3^Fx of metrsl bone(s), rt ft, subs w/ nonunion, unspec
+ ;;^UTILITY(U,$J,358.3,32174,1,4,0)
+ ;;=4^S92.301K
+ ;;^UTILITY(U,$J,358.3,32174,2)
+ ;;=^5045050
+ ;;^UTILITY(U,$J,358.3,32175,0)
+ ;;=S92.255K^^126^1609^336
+ ;;^UTILITY(U,$J,358.3,32175,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33328,1,3,0)
- ;;=3^Sarcoid Arthropathy
- ;;^UTILITY(U,$J,358.3,33328,1,4,0)
- ;;=4^D86.86
- ;;^UTILITY(U,$J,358.3,33328,2)
- ;;=^5002451
- ;;^UTILITY(U,$J,358.3,33329,0)
- ;;=D86.87^^182^2002^43
- ;;^UTILITY(U,$J,358.3,33329,1,0)
+ ;;^UTILITY(U,$J,358.3,32175,1,3,0)
+ ;;=3^Nondisp fx of navclr lft ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32175,1,4,0)
+ ;;=4^S92.255K
+ ;;^UTILITY(U,$J,358.3,32175,2)
+ ;;=^5045036
+ ;;^UTILITY(U,$J,358.3,32176,0)
+ ;;=S92.254K^^126^1609^337
+ ;;^UTILITY(U,$J,358.3,32176,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33329,1,3,0)
- ;;=3^Sarcoid Myositis
- ;;^UTILITY(U,$J,358.3,33329,1,4,0)
- ;;=4^D86.87
- ;;^UTILITY(U,$J,358.3,33329,2)
- ;;=^5002452
- ;;^UTILITY(U,$J,358.3,33330,0)
- ;;=D86.3^^182^2002^49
- ;;^UTILITY(U,$J,358.3,33330,1,0)
+ ;;^UTILITY(U,$J,358.3,32176,1,3,0)
+ ;;=3^Nondisp fx of navclr rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32176,1,4,0)
+ ;;=4^S92.254K
+ ;;^UTILITY(U,$J,358.3,32176,2)
+ ;;=^5045029
+ ;;^UTILITY(U,$J,358.3,32177,0)
+ ;;=S92.144K^^126^1609^248
+ ;;^UTILITY(U,$J,358.3,32177,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33330,1,3,0)
- ;;=3^Sarcoidosis of Skin
- ;;^UTILITY(U,$J,358.3,33330,1,4,0)
- ;;=4^D86.3
- ;;^UTILITY(U,$J,358.3,33330,2)
- ;;=^5002445
- ;;^UTILITY(U,$J,358.3,33331,0)
- ;;=D86.81^^182^2002^41
- ;;^UTILITY(U,$J,358.3,33331,1,0)
+ ;;^UTILITY(U,$J,358.3,32177,1,3,0)
+ ;;=3^Nondisp dome fx of rt talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32177,1,4,0)
+ ;;=4^S92.144K
+ ;;^UTILITY(U,$J,358.3,32177,2)
+ ;;=^5044756
+ ;;^UTILITY(U,$J,358.3,32178,0)
+ ;;=S92.524K^^126^1609^333
+ ;;^UTILITY(U,$J,358.3,32178,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33331,1,3,0)
- ;;=3^Sarcoid Meningitis
- ;;^UTILITY(U,$J,358.3,33331,1,4,0)
- ;;=4^D86.81
- ;;^UTILITY(U,$J,358.3,33331,2)
- ;;=^5002446
- ;;^UTILITY(U,$J,358.3,33332,0)
- ;;=D86.82^^182^2002^50
- ;;^UTILITY(U,$J,358.3,33332,1,0)
+ ;;^UTILITY(U,$J,358.3,32178,1,3,0)
+ ;;=3^Nondisp fx of med phalanx of rt lsr toe(s), subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32178,1,4,0)
+ ;;=4^S92.524K
+ ;;^UTILITY(U,$J,358.3,32178,2)
+ ;;=^5045498
+ ;;^UTILITY(U,$J,358.3,32179,0)
+ ;;=S92.145K^^126^1609^246
+ ;;^UTILITY(U,$J,358.3,32179,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33332,1,3,0)
- ;;=3^Sarcoidosis,Multiple Cranial Nerve Palsies
- ;;^UTILITY(U,$J,358.3,33332,1,4,0)
- ;;=4^D86.82
- ;;^UTILITY(U,$J,358.3,33332,2)
- ;;=^5002447
- ;;^UTILITY(U,$J,358.3,33333,0)
- ;;=D86.84^^182^2002^44
- ;;^UTILITY(U,$J,358.3,33333,1,0)
+ ;;^UTILITY(U,$J,358.3,32179,1,3,0)
+ ;;=3^Nondisp dome fx of lft talus, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32179,1,4,0)
+ ;;=4^S92.145K
+ ;;^UTILITY(U,$J,358.3,32179,2)
+ ;;=^5044763
+ ;;^UTILITY(U,$J,358.3,32180,0)
+ ;;=S92.522K^^126^1609^107
+ ;;^UTILITY(U,$J,358.3,32180,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33333,1,3,0)
- ;;=3^Sarcoid Pyelonephritis
- ;;^UTILITY(U,$J,358.3,33333,1,4,0)
- ;;=4^D86.84
- ;;^UTILITY(U,$J,358.3,33333,2)
- ;;=^5002449
- ;;^UTILITY(U,$J,358.3,33334,0)
- ;;=D86.85^^182^2002^42
- ;;^UTILITY(U,$J,358.3,33334,1,0)
+ ;;^UTILITY(U,$J,358.3,32180,1,3,0)
+ ;;=3^Disp fx of med phalanx of lft lsr toe(s), subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32180,1,4,0)
+ ;;=4^S92.522K
+ ;;^UTILITY(U,$J,358.3,32180,2)
+ ;;=^5045484
+ ;;^UTILITY(U,$J,358.3,32181,0)
+ ;;=S92.521K^^126^1609^109
+ ;;^UTILITY(U,$J,358.3,32181,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33334,1,3,0)
- ;;=3^Sarcoid Myocarditis
- ;;^UTILITY(U,$J,358.3,33334,1,4,0)
- ;;=4^D86.85
- ;;^UTILITY(U,$J,358.3,33334,2)
- ;;=^5002450
- ;;^UTILITY(U,$J,358.3,33335,0)
- ;;=D86.83^^182^2002^40
- ;;^UTILITY(U,$J,358.3,33335,1,0)
+ ;;^UTILITY(U,$J,358.3,32181,1,3,0)
+ ;;=3^Disp fx of med phalanx of rt lsr toe(s), subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32181,1,4,0)
+ ;;=4^S92.521K
+ ;;^UTILITY(U,$J,358.3,32181,2)
+ ;;=^5045477
+ ;;^UTILITY(U,$J,358.3,32182,0)
+ ;;=S92.515K^^126^1609^346
+ ;;^UTILITY(U,$J,358.3,32182,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33335,1,3,0)
- ;;=3^Sarcoid Iridocyclitis
- ;;^UTILITY(U,$J,358.3,33335,1,4,0)
- ;;=4^D86.83
- ;;^UTILITY(U,$J,358.3,33335,2)
- ;;=^5002448
- ;;^UTILITY(U,$J,358.3,33336,0)
- ;;=D84.1^^182^2002^17
- ;;^UTILITY(U,$J,358.3,33336,1,0)
+ ;;^UTILITY(U,$J,358.3,32182,1,3,0)
+ ;;=3^Nondisp fx of prox phalanx of lft lsr toe, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32182,1,4,0)
+ ;;=4^S92.515K
+ ;;^UTILITY(U,$J,358.3,32182,2)
+ ;;=^5045463
+ ;;^UTILITY(U,$J,358.3,32183,0)
+ ;;=S92.514K^^126^1609^350
+ ;;^UTILITY(U,$J,358.3,32183,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33336,1,3,0)
- ;;=3^Defects in Complement System
- ;;^UTILITY(U,$J,358.3,33336,1,4,0)
- ;;=4^D84.1
- ;;^UTILITY(U,$J,358.3,33336,2)
- ;;=^5002439
- ;;^UTILITY(U,$J,358.3,33337,0)
- ;;=D81.810^^182^2002^7
- ;;^UTILITY(U,$J,358.3,33337,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33337,1,3,0)
- ;;=3^Biotinidase Deficiency
- ;;^UTILITY(U,$J,358.3,33337,1,4,0)
- ;;=4^D81.810
- ;;^UTILITY(U,$J,358.3,33337,2)
- ;;=^5002422
+ ;;^UTILITY(U,$J,358.3,32183,1,3,0)
+ ;;=3^Nondisp fx of prox phalanx of rt lsr toe(s), subs w/ nonunion

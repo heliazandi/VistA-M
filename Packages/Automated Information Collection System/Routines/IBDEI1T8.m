@@ -1,138 +1,126 @@
-IBDEI1T8 ; ; 06-AUG-2015
+IBDEI1T8 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31906,1,3,0)
- ;;=3^Nicotine Dependence,Chewing Tobacco
- ;;^UTILITY(U,$J,358.3,31906,1,4,0)
- ;;=4^F17.229
- ;;^UTILITY(U,$J,358.3,31906,2)
- ;;=^5003374
- ;;^UTILITY(U,$J,358.3,31907,0)
- ;;=F19.10^^182^1976^51
- ;;^UTILITY(U,$J,358.3,31907,1,0)
+ ;;^UTILITY(U,$J,358.3,30753,1,4,0)
+ ;;=4^F10.231
+ ;;^UTILITY(U,$J,358.3,30753,2)
+ ;;=^5003087
+ ;;^UTILITY(U,$J,358.3,30754,0)
+ ;;=F10.121^^123^1532^6
+ ;;^UTILITY(U,$J,358.3,30754,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31907,1,3,0)
- ;;=3^Substance Abuse,Unspec
- ;;^UTILITY(U,$J,358.3,31907,1,4,0)
- ;;=4^F19.10
- ;;^UTILITY(U,$J,358.3,31907,2)
- ;;=^5003416
- ;;^UTILITY(U,$J,358.3,31908,0)
- ;;=F15.10^^182^1976^50
- ;;^UTILITY(U,$J,358.3,31908,1,0)
+ ;;^UTILITY(U,$J,358.3,30754,1,3,0)
+ ;;=3^Mild Alcohol Use Disorder w/ Intoxication Delirium
+ ;;^UTILITY(U,$J,358.3,30754,1,4,0)
+ ;;=4^F10.121
+ ;;^UTILITY(U,$J,358.3,30754,2)
+ ;;=^5003070
+ ;;^UTILITY(U,$J,358.3,30755,0)
+ ;;=F10.221^^123^1532^7
+ ;;^UTILITY(U,$J,358.3,30755,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31908,1,3,0)
- ;;=3^Stimulant Abuse,Unspec
- ;;^UTILITY(U,$J,358.3,31908,1,4,0)
- ;;=4^F15.10
- ;;^UTILITY(U,$J,358.3,31908,2)
- ;;=^5003282
- ;;^UTILITY(U,$J,358.3,31909,0)
- ;;=F43.21^^182^1976^2
- ;;^UTILITY(U,$J,358.3,31909,1,0)
+ ;;^UTILITY(U,$J,358.3,30755,1,3,0)
+ ;;=3^Moderate/Severe Alcohol Use Disorder w/ Intoxication Delirium
+ ;;^UTILITY(U,$J,358.3,30755,1,4,0)
+ ;;=4^F10.221
+ ;;^UTILITY(U,$J,358.3,30755,2)
+ ;;=^5003084
+ ;;^UTILITY(U,$J,358.3,30756,0)
+ ;;=F10.921^^123^1532^1
+ ;;^UTILITY(U,$J,358.3,30756,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31909,1,3,0)
- ;;=3^Adjustment d/o w/ Depressed Mood
- ;;^UTILITY(U,$J,358.3,31909,1,4,0)
- ;;=4^F43.21
- ;;^UTILITY(U,$J,358.3,31909,2)
- ;;=^331948
- ;;^UTILITY(U,$J,358.3,31910,0)
- ;;=G43.909^^182^1976^37
- ;;^UTILITY(U,$J,358.3,31910,1,0)
+ ;;^UTILITY(U,$J,358.3,30756,1,3,0)
+ ;;=3^Alcohol Intoxication Delirium w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,30756,1,4,0)
+ ;;=4^F10.921
+ ;;^UTILITY(U,$J,358.3,30756,2)
+ ;;=^5003102
+ ;;^UTILITY(U,$J,358.3,30757,0)
+ ;;=F05.^^123^1532^4
+ ;;^UTILITY(U,$J,358.3,30757,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31910,1,3,0)
- ;;=3^Migraine,Unspec
- ;;^UTILITY(U,$J,358.3,31910,1,4,0)
- ;;=4^G43.909
- ;;^UTILITY(U,$J,358.3,31910,2)
- ;;=^5003909
- ;;^UTILITY(U,$J,358.3,31911,0)
- ;;=H91.90^^182^1976^25
- ;;^UTILITY(U,$J,358.3,31911,1,0)
+ ;;^UTILITY(U,$J,358.3,30757,1,3,0)
+ ;;=3^Delirium d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,30757,1,4,0)
+ ;;=4^F05.
+ ;;^UTILITY(U,$J,358.3,30757,2)
+ ;;=^5003052
+ ;;^UTILITY(U,$J,358.3,30758,0)
+ ;;=F05.^^123^1532^5
+ ;;^UTILITY(U,$J,358.3,30758,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31911,1,3,0)
- ;;=3^Hearing Loss,Unspecified Ear
- ;;^UTILITY(U,$J,358.3,31911,1,4,0)
- ;;=4^H91.90
- ;;^UTILITY(U,$J,358.3,31911,2)
- ;;=^5006943
- ;;^UTILITY(U,$J,358.3,31912,0)
- ;;=H91.91^^182^1976^24
- ;;^UTILITY(U,$J,358.3,31912,1,0)
+ ;;^UTILITY(U,$J,358.3,30758,1,3,0)
+ ;;=3^Delirium d/t Multiple Etiologies
+ ;;^UTILITY(U,$J,358.3,30758,1,4,0)
+ ;;=4^F05.
+ ;;^UTILITY(U,$J,358.3,30758,2)
+ ;;=^5003052
+ ;;^UTILITY(U,$J,358.3,30759,0)
+ ;;=A81.00^^123^1533^9
+ ;;^UTILITY(U,$J,358.3,30759,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31912,1,3,0)
- ;;=3^Hearing Loss,Right Ear
- ;;^UTILITY(U,$J,358.3,31912,1,4,0)
- ;;=4^H91.91
- ;;^UTILITY(U,$J,358.3,31912,2)
- ;;=^5133553
- ;;^UTILITY(U,$J,358.3,31913,0)
- ;;=H91.92^^182^1976^23
- ;;^UTILITY(U,$J,358.3,31913,1,0)
+ ;;^UTILITY(U,$J,358.3,30759,1,3,0)
+ ;;=3^Creutzfeldt-Jakob Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,30759,1,4,0)
+ ;;=4^A81.00
+ ;;^UTILITY(U,$J,358.3,30759,2)
+ ;;=^5000409
+ ;;^UTILITY(U,$J,358.3,30760,0)
+ ;;=A81.01^^123^1533^38
+ ;;^UTILITY(U,$J,358.3,30760,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31913,1,3,0)
- ;;=3^Hearing Loss,Left Ear
- ;;^UTILITY(U,$J,358.3,31913,1,4,0)
- ;;=4^H91.92
- ;;^UTILITY(U,$J,358.3,31913,2)
- ;;=^5133554
- ;;^UTILITY(U,$J,358.3,31914,0)
- ;;=H91.93^^182^1976^22
- ;;^UTILITY(U,$J,358.3,31914,1,0)
+ ;;^UTILITY(U,$J,358.3,30760,1,3,0)
+ ;;=3^Variant Creutzfeldt-Jakob Disease
+ ;;^UTILITY(U,$J,358.3,30760,1,4,0)
+ ;;=4^A81.01
+ ;;^UTILITY(U,$J,358.3,30760,2)
+ ;;=^336701
+ ;;^UTILITY(U,$J,358.3,30761,0)
+ ;;=A81.09^^123^1533^8
+ ;;^UTILITY(U,$J,358.3,30761,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31914,1,3,0)
- ;;=3^Hearing Loss,Bilateral
- ;;^UTILITY(U,$J,358.3,31914,1,4,0)
- ;;=4^H91.93
- ;;^UTILITY(U,$J,358.3,31914,2)
- ;;=^5006944
- ;;^UTILITY(U,$J,358.3,31915,0)
- ;;=I10.^^182^1976^29
- ;;^UTILITY(U,$J,358.3,31915,1,0)
+ ;;^UTILITY(U,$J,358.3,30761,1,3,0)
+ ;;=3^Creutzfeldt-Jakob Disease,Other
+ ;;^UTILITY(U,$J,358.3,30761,1,4,0)
+ ;;=4^A81.09
+ ;;^UTILITY(U,$J,358.3,30761,2)
+ ;;=^5000410
+ ;;^UTILITY(U,$J,358.3,30762,0)
+ ;;=A81.2^^123^1533^33
+ ;;^UTILITY(U,$J,358.3,30762,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31915,1,3,0)
- ;;=3^Hypertension
- ;;^UTILITY(U,$J,358.3,31915,1,4,0)
- ;;=4^I10.
- ;;^UTILITY(U,$J,358.3,31915,2)
- ;;=^5007062
- ;;^UTILITY(U,$J,358.3,31916,0)
- ;;=I50.9^^182^1976^14
- ;;^UTILITY(U,$J,358.3,31916,1,0)
+ ;;^UTILITY(U,$J,358.3,30762,1,3,0)
+ ;;=3^Progressive Multifocal Leukoencephalopathy
+ ;;^UTILITY(U,$J,358.3,30762,1,4,0)
+ ;;=4^A81.2
+ ;;^UTILITY(U,$J,358.3,30762,2)
+ ;;=^5000411
+ ;;^UTILITY(U,$J,358.3,30763,0)
+ ;;=F01.50^^123^1533^31
+ ;;^UTILITY(U,$J,358.3,30763,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31916,1,3,0)
- ;;=3^Congestive Heart Failure,Unspec
- ;;^UTILITY(U,$J,358.3,31916,1,4,0)
- ;;=4^I50.9
- ;;^UTILITY(U,$J,358.3,31916,2)
- ;;=^5007251
- ;;^UTILITY(U,$J,358.3,31917,0)
- ;;=I67.89^^182^1976^13
- ;;^UTILITY(U,$J,358.3,31917,1,0)
+ ;;^UTILITY(U,$J,358.3,30763,1,3,0)
+ ;;=3^Probable Major Vascular Neurocognitive Disorder w/o Behavioral Disturbance
+ ;;^UTILITY(U,$J,358.3,30763,1,4,0)
+ ;;=4^F01.50
+ ;;^UTILITY(U,$J,358.3,30763,2)
+ ;;=^5003046
+ ;;^UTILITY(U,$J,358.3,30764,0)
+ ;;=F01.51^^123^1533^32
+ ;;^UTILITY(U,$J,358.3,30764,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31917,1,3,0)
- ;;=3^Cerebrovascular Disease,Oth
- ;;^UTILITY(U,$J,358.3,31917,1,4,0)
- ;;=4^I67.89
- ;;^UTILITY(U,$J,358.3,31917,2)
- ;;=^5007388
- ;;^UTILITY(U,$J,358.3,31918,0)
- ;;=J32.8^^182^1976^47
- ;;^UTILITY(U,$J,358.3,31918,1,0)
+ ;;^UTILITY(U,$J,358.3,30764,1,3,0)
+ ;;=3^Probable Major Vascular Neurocognitive Disorder w/ Behavioral Disturbance
+ ;;^UTILITY(U,$J,358.3,30764,1,4,0)
+ ;;=4^F01.51
+ ;;^UTILITY(U,$J,358.3,30764,2)
+ ;;=^5003047
+ ;;^UTILITY(U,$J,358.3,30765,0)
+ ;;=F10.27^^123^1533^1
+ ;;^UTILITY(U,$J,358.3,30765,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31918,1,3,0)
- ;;=3^Sinusitis,Chr,Oth
- ;;^UTILITY(U,$J,358.3,31918,1,4,0)
- ;;=4^J32.8
- ;;^UTILITY(U,$J,358.3,31918,2)
- ;;=^269890
- ;;^UTILITY(U,$J,358.3,31919,0)
- ;;=J32.4^^182^1976^46
- ;;^UTILITY(U,$J,358.3,31919,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31919,1,3,0)
- ;;=3^Pansinusitis,Chr
- ;;^UTILITY(U,$J,358.3,31919,1,4,0)
- ;;=4^J32.4
+ ;;^UTILITY(U,$J,358.3,30765,1,3,0)
+ ;;=3^Alcohol-Induced Major Neurocognitive Disorder,Nonamnestic Confabulatory Type
+ ;;^UTILITY(U,$J,358.3,30765,1,4,0)
+ ;;=4^F10.27

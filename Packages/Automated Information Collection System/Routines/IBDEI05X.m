@@ -1,126 +1,134 @@
-IBDEI05X ; ; 06-AUG-2015
+IBDEI05X ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2242,1,3,0)
- ;;=3^Open wnd of left mid finger w/o damage to nail unspec, ini
- ;;^UTILITY(U,$J,358.3,2242,1,4,0)
- ;;=4^S61.203A
- ;;^UTILITY(U,$J,358.3,2242,2)
- ;;=^5032750
- ;;^UTILITY(U,$J,358.3,2243,0)
- ;;=S61.204A^^4^62^173
- ;;^UTILITY(U,$J,358.3,2243,1,0)
+ ;;^UTILITY(U,$J,358.3,2435,1,3,0)
+ ;;=3^Abdominal migraine, not intractable
+ ;;^UTILITY(U,$J,358.3,2435,1,4,0)
+ ;;=4^G43.D0
+ ;;^UTILITY(U,$J,358.3,2435,2)
+ ;;=^5003918
+ ;;^UTILITY(U,$J,358.3,2436,0)
+ ;;=G43.809^^15^187^9
+ ;;^UTILITY(U,$J,358.3,2436,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2243,1,3,0)
- ;;=3^Open wnd of right rng fngr w/o damage to nail unspec, init
- ;;^UTILITY(U,$J,358.3,2243,1,4,0)
- ;;=4^S61.204A
- ;;^UTILITY(U,$J,358.3,2243,2)
- ;;=^5032753
- ;;^UTILITY(U,$J,358.3,2244,0)
- ;;=S61.205A^^4^62^163
- ;;^UTILITY(U,$J,358.3,2244,1,0)
+ ;;^UTILITY(U,$J,358.3,2436,1,3,0)
+ ;;=3^Migraine, not intractable, w/o status migrainosis, other
+ ;;^UTILITY(U,$J,358.3,2436,1,4,0)
+ ;;=4^G43.809
+ ;;^UTILITY(U,$J,358.3,2436,2)
+ ;;=^5003901
+ ;;^UTILITY(U,$J,358.3,2437,0)
+ ;;=G43.B0^^15^187^11
+ ;;^UTILITY(U,$J,358.3,2437,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2244,1,3,0)
- ;;=3^Open wnd of left ring finger w/o damage to nail unspec,
- ;;^UTILITY(U,$J,358.3,2244,1,4,0)
- ;;=4^S61.205A
- ;;^UTILITY(U,$J,358.3,2244,2)
- ;;=^5032756
- ;;^UTILITY(U,$J,358.3,2245,0)
- ;;=S61.206A^^4^62^170
- ;;^UTILITY(U,$J,358.3,2245,1,0)
+ ;;^UTILITY(U,$J,358.3,2437,1,3,0)
+ ;;=3^Ophthalmoplegic migraine, not intractable
+ ;;^UTILITY(U,$J,358.3,2437,1,4,0)
+ ;;=4^G43.B0
+ ;;^UTILITY(U,$J,358.3,2437,2)
+ ;;=^5003914
+ ;;^UTILITY(U,$J,358.3,2438,0)
+ ;;=G35.^^15^187^10
+ ;;^UTILITY(U,$J,358.3,2438,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2245,1,3,0)
- ;;=3^Open wnd of right little finger w/o damage to nail unspec,
- ;;^UTILITY(U,$J,358.3,2245,1,4,0)
- ;;=4^S61.206A
- ;;^UTILITY(U,$J,358.3,2245,2)
- ;;=^5032759
- ;;^UTILITY(U,$J,358.3,2246,0)
- ;;=S61.207A^^4^62^160
- ;;^UTILITY(U,$J,358.3,2246,1,0)
+ ;;^UTILITY(U,$J,358.3,2438,1,3,0)
+ ;;=3^Multiple sclerosis
+ ;;^UTILITY(U,$J,358.3,2438,1,4,0)
+ ;;=4^G35.
+ ;;^UTILITY(U,$J,358.3,2438,2)
+ ;;=^79761
+ ;;^UTILITY(U,$J,358.3,2439,0)
+ ;;=G43.C0^^15^187^12
+ ;;^UTILITY(U,$J,358.3,2439,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2246,1,3,0)
- ;;=3^Open wnd of left little finger w/o damage to nail unspec,init enctr
- ;;^UTILITY(U,$J,358.3,2246,1,4,0)
- ;;=4^S61.207A
- ;;^UTILITY(U,$J,358.3,2246,2)
- ;;=^5032762
- ;;^UTILITY(U,$J,358.3,2247,0)
- ;;=S91.301A^^4^62^166
- ;;^UTILITY(U,$J,358.3,2247,1,0)
+ ;;^UTILITY(U,$J,358.3,2439,1,3,0)
+ ;;=3^Periodic headache syndromes in chld/adlt, not intractable
+ ;;^UTILITY(U,$J,358.3,2439,1,4,0)
+ ;;=4^G43.C0
+ ;;^UTILITY(U,$J,358.3,2439,2)
+ ;;=^5003916
+ ;;^UTILITY(U,$J,358.3,2440,0)
+ ;;=G44.201^^15^187^13
+ ;;^UTILITY(U,$J,358.3,2440,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2247,1,3,0)
- ;;=3^Open wnd of right foot unspec, initial encounter
- ;;^UTILITY(U,$J,358.3,2247,1,4,0)
- ;;=4^S91.301A
- ;;^UTILITY(U,$J,358.3,2247,2)
- ;;=^5044314
- ;;^UTILITY(U,$J,358.3,2248,0)
- ;;=S91.302A^^4^62^156
- ;;^UTILITY(U,$J,358.3,2248,1,0)
+ ;;^UTILITY(U,$J,358.3,2440,1,3,0)
+ ;;=3^Tension-type headache, unspecified, intractable
+ ;;^UTILITY(U,$J,358.3,2440,1,4,0)
+ ;;=4^G44.201
+ ;;^UTILITY(U,$J,358.3,2440,2)
+ ;;=^5003935
+ ;;^UTILITY(U,$J,358.3,2441,0)
+ ;;=G44.209^^15^187^14
+ ;;^UTILITY(U,$J,358.3,2441,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2248,1,3,0)
- ;;=3^Open wnd of left foot unspec, initial encounter
- ;;^UTILITY(U,$J,358.3,2248,1,4,0)
- ;;=4^S91.302A
- ;;^UTILITY(U,$J,358.3,2248,2)
- ;;=^5044317
- ;;^UTILITY(U,$J,358.3,2249,0)
- ;;=S51.801A^^4^62^167
- ;;^UTILITY(U,$J,358.3,2249,1,0)
+ ;;^UTILITY(U,$J,358.3,2441,1,3,0)
+ ;;=3^Tension-type headache, unspecified, not intractable
+ ;;^UTILITY(U,$J,358.3,2441,1,4,0)
+ ;;=4^G44.209
+ ;;^UTILITY(U,$J,358.3,2441,2)
+ ;;=^5003936
+ ;;^UTILITY(U,$J,358.3,2442,0)
+ ;;=R51.^^15^187^6
+ ;;^UTILITY(U,$J,358.3,2442,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2249,1,3,0)
- ;;=3^Open wnd of right forearm unspec, initial encoun
- ;;^UTILITY(U,$J,358.3,2249,1,4,0)
- ;;=4^S51.801A
- ;;^UTILITY(U,$J,358.3,2249,2)
- ;;=^5028659
- ;;^UTILITY(U,$J,358.3,2250,0)
- ;;=S51.802A^^4^62^157
- ;;^UTILITY(U,$J,358.3,2250,1,0)
+ ;;^UTILITY(U,$J,358.3,2442,1,3,0)
+ ;;=3^Headache
+ ;;^UTILITY(U,$J,358.3,2442,1,4,0)
+ ;;=4^R51.
+ ;;^UTILITY(U,$J,358.3,2442,2)
+ ;;=^5019513
+ ;;^UTILITY(U,$J,358.3,2443,0)
+ ;;=M99.81^^15^188^1
+ ;;^UTILITY(U,$J,358.3,2443,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2250,1,3,0)
- ;;=3^Open wnd of left forearm unspec, initial encount
- ;;^UTILITY(U,$J,358.3,2250,1,4,0)
- ;;=4^S51.802A
- ;;^UTILITY(U,$J,358.3,2250,2)
- ;;=^5028662
- ;;^UTILITY(U,$J,358.3,2251,0)
- ;;=S61.401A^^4^62^168
- ;;^UTILITY(U,$J,358.3,2251,1,0)
+ ;;^UTILITY(U,$J,358.3,2443,1,3,0)
+ ;;=3^Biomechanical lesions of cervial region, other
+ ;;^UTILITY(U,$J,358.3,2443,1,4,0)
+ ;;=4^M99.81
+ ;;^UTILITY(U,$J,358.3,2443,2)
+ ;;=^5015481
+ ;;^UTILITY(U,$J,358.3,2444,0)
+ ;;=M99.80^^15^188^2
+ ;;^UTILITY(U,$J,358.3,2444,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2251,1,3,0)
- ;;=3^Open wnd of right hand unspec, initial encounter
- ;;^UTILITY(U,$J,358.3,2251,1,4,0)
- ;;=4^S61.401A
- ;;^UTILITY(U,$J,358.3,2251,2)
- ;;=^5032981
- ;;^UTILITY(U,$J,358.3,2252,0)
- ;;=S61.402A^^4^62^158
- ;;^UTILITY(U,$J,358.3,2252,1,0)
+ ;;^UTILITY(U,$J,358.3,2444,1,3,0)
+ ;;=3^Biomechanical lesions of head region, other
+ ;;^UTILITY(U,$J,358.3,2444,1,4,0)
+ ;;=4^M99.80
+ ;;^UTILITY(U,$J,358.3,2444,2)
+ ;;=^5015480
+ ;;^UTILITY(U,$J,358.3,2445,0)
+ ;;=M50.30^^15^188^3
+ ;;^UTILITY(U,$J,358.3,2445,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2252,1,3,0)
- ;;=3^Open wnd of left hand unspec, initial encounter
- ;;^UTILITY(U,$J,358.3,2252,1,4,0)
- ;;=4^S61.402A
- ;;^UTILITY(U,$J,358.3,2252,2)
- ;;=^5032984
- ;;^UTILITY(U,$J,358.3,2253,0)
- ;;=S81.801A^^4^62^171
- ;;^UTILITY(U,$J,358.3,2253,1,0)
+ ;;^UTILITY(U,$J,358.3,2445,1,3,0)
+ ;;=3^Cervical disc degeneration, unspec cervical region
+ ;;^UTILITY(U,$J,358.3,2445,1,4,0)
+ ;;=4^M50.30
+ ;;^UTILITY(U,$J,358.3,2445,2)
+ ;;=^5012227
+ ;;^UTILITY(U,$J,358.3,2446,0)
+ ;;=G54.2^^15^188^7
+ ;;^UTILITY(U,$J,358.3,2446,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2253,1,3,0)
- ;;=3^Open wnd of right lower leg unspec, initial encoun
- ;;^UTILITY(U,$J,358.3,2253,1,4,0)
- ;;=4^S81.801A
- ;;^UTILITY(U,$J,358.3,2253,2)
- ;;=^5040065
- ;;^UTILITY(U,$J,358.3,2254,0)
- ;;=S81.802A^^4^62^161
- ;;^UTILITY(U,$J,358.3,2254,1,0)
+ ;;^UTILITY(U,$J,358.3,2446,1,3,0)
+ ;;=3^Cervical root disorders NEC
+ ;;^UTILITY(U,$J,358.3,2446,1,4,0)
+ ;;=4^G54.2
+ ;;^UTILITY(U,$J,358.3,2446,2)
+ ;;=^5004009
+ ;;^UTILITY(U,$J,358.3,2447,0)
+ ;;=M54.2^^15^188^8
+ ;;^UTILITY(U,$J,358.3,2447,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2254,1,3,0)
- ;;=3^Open wnd of left lower leg unspec, initial encount
+ ;;^UTILITY(U,$J,358.3,2447,1,3,0)
+ ;;=3^Cervicalgia
+ ;;^UTILITY(U,$J,358.3,2447,1,4,0)
+ ;;=4^M54.2
+ ;;^UTILITY(U,$J,358.3,2447,2)
+ ;;=^5012304
+ ;;^UTILITY(U,$J,358.3,2448,0)
+ ;;=M53.0^^15^188^9
+ ;;^UTILITY(U,$J,358.3,2448,1,0)
+ ;;=^358.31IA^4^2

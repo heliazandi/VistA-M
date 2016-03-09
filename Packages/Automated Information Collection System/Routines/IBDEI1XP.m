@@ -1,126 +1,134 @@
-IBDEI1XP ; ; 06-AUG-2015
+IBDEI1XP ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33971,1,4,0)
- ;;=4^I69.044
- ;;^UTILITY(U,$J,358.3,33971,2)
- ;;=^5007407
- ;;^UTILITY(U,$J,358.3,33972,0)
- ;;=I69.841^^183^2013^72
- ;;^UTILITY(U,$J,358.3,33972,1,0)
+ ;;^UTILITY(U,$J,358.3,32808,1,4,0)
+ ;;=4^Z82.49
+ ;;^UTILITY(U,$J,358.3,32808,2)
+ ;;=^5063369
+ ;;^UTILITY(U,$J,358.3,32809,0)
+ ;;=Z82.5^^128^1636^2
+ ;;^UTILITY(U,$J,358.3,32809,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33972,1,3,0)
- ;;=3^Monoplg low lmb fol oth cerebvasc disease aff right dom side
- ;;^UTILITY(U,$J,358.3,33972,1,4,0)
- ;;=4^I69.841
- ;;^UTILITY(U,$J,358.3,33972,2)
- ;;=^5007532
- ;;^UTILITY(U,$J,358.3,33973,0)
- ;;=I69.842^^183^2013^73
- ;;^UTILITY(U,$J,358.3,33973,1,0)
+ ;;^UTILITY(U,$J,358.3,32809,1,3,0)
+ ;;=3^Family Hx of Asthma
+ ;;^UTILITY(U,$J,358.3,32809,1,4,0)
+ ;;=4^Z82.5
+ ;;^UTILITY(U,$J,358.3,32809,2)
+ ;;=^5063370
+ ;;^UTILITY(U,$J,358.3,32810,0)
+ ;;=Z82.61^^128^1636^1
+ ;;^UTILITY(U,$J,358.3,32810,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33973,1,3,0)
- ;;=3^Monoplg low lmb fol oth cerebvasc disease aff left dom side
- ;;^UTILITY(U,$J,358.3,33973,1,4,0)
- ;;=4^I69.842
- ;;^UTILITY(U,$J,358.3,33973,2)
- ;;=^5133577
- ;;^UTILITY(U,$J,358.3,33974,0)
- ;;=I69.843^^183^2013^70
- ;;^UTILITY(U,$J,358.3,33974,1,0)
+ ;;^UTILITY(U,$J,358.3,32810,1,3,0)
+ ;;=3^Family Hx of Arthritis
+ ;;^UTILITY(U,$J,358.3,32810,1,4,0)
+ ;;=4^Z82.61
+ ;;^UTILITY(U,$J,358.3,32810,2)
+ ;;=^5063371
+ ;;^UTILITY(U,$J,358.3,32811,0)
+ ;;=Z82.69^^128^1636^36
+ ;;^UTILITY(U,$J,358.3,32811,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33974,1,3,0)
- ;;=3^Monoplg low lmb fol oth cerebvasc dis aff right nondom side
- ;;^UTILITY(U,$J,358.3,33974,1,4,0)
- ;;=4^I69.843
- ;;^UTILITY(U,$J,358.3,33974,2)
- ;;=^5007533
- ;;^UTILITY(U,$J,358.3,33975,0)
- ;;=I69.844^^183^2013^71
- ;;^UTILITY(U,$J,358.3,33975,1,0)
+ ;;^UTILITY(U,$J,358.3,32811,1,3,0)
+ ;;=3^Family Hx of Musculoskeletal System Diseases
+ ;;^UTILITY(U,$J,358.3,32811,1,4,0)
+ ;;=4^Z82.69
+ ;;^UTILITY(U,$J,358.3,32811,2)
+ ;;=^5063373
+ ;;^UTILITY(U,$J,358.3,32812,0)
+ ;;=Z83.3^^128^1636^7
+ ;;^UTILITY(U,$J,358.3,32812,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33975,1,3,0)
- ;;=3^Monoplg low lmb fol oth cerebvasc dis aff left nondom side
- ;;^UTILITY(U,$J,358.3,33975,1,4,0)
- ;;=4^I69.844
- ;;^UTILITY(U,$J,358.3,33975,2)
- ;;=^5133578
- ;;^UTILITY(U,$J,358.3,33976,0)
- ;;=I69.241^^183^2013^74
- ;;^UTILITY(U,$J,358.3,33976,1,0)
+ ;;^UTILITY(U,$J,358.3,32812,1,3,0)
+ ;;=3^Family Hx of Diabetes Mellitus
+ ;;^UTILITY(U,$J,358.3,32812,1,4,0)
+ ;;=4^Z83.3
+ ;;^UTILITY(U,$J,358.3,32812,2)
+ ;;=^5063379
+ ;;^UTILITY(U,$J,358.3,32813,0)
+ ;;=Z82.71^^128^1636^38
+ ;;^UTILITY(U,$J,358.3,32813,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33976,1,3,0)
- ;;=3^Monoplg low lmb fol oth ntrm intcrn hemor aff right dom side
- ;;^UTILITY(U,$J,358.3,33976,1,4,0)
- ;;=4^I69.241
- ;;^UTILITY(U,$J,358.3,33976,2)
- ;;=^5007469
- ;;^UTILITY(U,$J,358.3,33977,0)
- ;;=I69.242^^183^2013^75
- ;;^UTILITY(U,$J,358.3,33977,1,0)
+ ;;^UTILITY(U,$J,358.3,32813,1,3,0)
+ ;;=3^Family Hx of Polycystic Kidney
+ ;;^UTILITY(U,$J,358.3,32813,1,4,0)
+ ;;=4^Z82.71
+ ;;^UTILITY(U,$J,358.3,32813,2)
+ ;;=^321531
+ ;;^UTILITY(U,$J,358.3,32814,0)
+ ;;=Z82.2^^128^1636^6
+ ;;^UTILITY(U,$J,358.3,32814,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33977,1,3,0)
- ;;=3^Monoplg low lmb fol oth ntrm intcrn hemor aff left dom side
- ;;^UTILITY(U,$J,358.3,33977,1,4,0)
- ;;=4^I69.242
- ;;^UTILITY(U,$J,358.3,33977,2)
- ;;=^5133574
- ;;^UTILITY(U,$J,358.3,33978,0)
- ;;=I69.243^^183^2013^76
- ;;^UTILITY(U,$J,358.3,33978,1,0)
+ ;;^UTILITY(U,$J,358.3,32814,1,3,0)
+ ;;=3^Family Hx of Deafness & Hearing Loss
+ ;;^UTILITY(U,$J,358.3,32814,1,4,0)
+ ;;=4^Z82.2
+ ;;^UTILITY(U,$J,358.3,32814,2)
+ ;;=^5063366
+ ;;^UTILITY(U,$J,358.3,32815,0)
+ ;;=Z84.0^^128^1636^40
+ ;;^UTILITY(U,$J,358.3,32815,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33978,1,3,0)
- ;;=3^Monoplg low lmb fol oth ntrm intcrn hemor aff r nondom side
- ;;^UTILITY(U,$J,358.3,33978,1,4,0)
- ;;=4^I69.243
- ;;^UTILITY(U,$J,358.3,33978,2)
- ;;=^5007470
- ;;^UTILITY(U,$J,358.3,33979,0)
- ;;=I69.244^^183^2013^77
- ;;^UTILITY(U,$J,358.3,33979,1,0)
+ ;;^UTILITY(U,$J,358.3,32815,1,3,0)
+ ;;=3^Family Hx of Skin & Subcutaneous Tissue Diseases
+ ;;^UTILITY(U,$J,358.3,32815,1,4,0)
+ ;;=4^Z84.0
+ ;;^UTILITY(U,$J,358.3,32815,2)
+ ;;=^5063388
+ ;;^UTILITY(U,$J,358.3,32816,0)
+ ;;=Z82.79^^128^1636^5
+ ;;^UTILITY(U,$J,358.3,32816,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33979,1,3,0)
- ;;=3^Monoplg low lmb fol oth ntrm intcrn hemor aff l nondom side
- ;;^UTILITY(U,$J,358.3,33979,1,4,0)
- ;;=4^I69.244
- ;;^UTILITY(U,$J,358.3,33979,2)
- ;;=^5007471
- ;;^UTILITY(U,$J,358.3,33980,0)
- ;;=G35.^^183^2013^78
- ;;^UTILITY(U,$J,358.3,33980,1,0)
+ ;;^UTILITY(U,$J,358.3,32816,1,3,0)
+ ;;=3^Family Hx of Congenital Malformations
+ ;;^UTILITY(U,$J,358.3,32816,1,4,0)
+ ;;=4^Z82.79
+ ;;^UTILITY(U,$J,358.3,32816,2)
+ ;;=^5063374
+ ;;^UTILITY(U,$J,358.3,32817,0)
+ ;;=Z80.49^^128^1636^24
+ ;;^UTILITY(U,$J,358.3,32817,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33980,1,3,0)
- ;;=3^Multiple sclerosis
- ;;^UTILITY(U,$J,358.3,33980,1,4,0)
- ;;=4^G35.
- ;;^UTILITY(U,$J,358.3,33980,2)
- ;;=^79761
- ;;^UTILITY(U,$J,358.3,33981,0)
- ;;=G20.^^183^2013^79
- ;;^UTILITY(U,$J,358.3,33981,1,0)
+ ;;^UTILITY(U,$J,358.3,32817,1,3,0)
+ ;;=3^Family Hx of Malig Neop Genital Organs
+ ;;^UTILITY(U,$J,358.3,32817,1,4,0)
+ ;;=4^Z80.49
+ ;;^UTILITY(U,$J,358.3,32817,2)
+ ;;=^5063351
+ ;;^UTILITY(U,$J,358.3,32818,0)
+ ;;=Z80.51^^128^1636^25
+ ;;^UTILITY(U,$J,358.3,32818,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33981,1,3,0)
- ;;=3^Parkinson's disease
- ;;^UTILITY(U,$J,358.3,33981,1,4,0)
- ;;=4^G20.
- ;;^UTILITY(U,$J,358.3,33981,2)
- ;;=^5003770
- ;;^UTILITY(U,$J,358.3,33982,0)
- ;;=G21.4^^183^2013^80
- ;;^UTILITY(U,$J,358.3,33982,1,0)
+ ;;^UTILITY(U,$J,358.3,32818,1,3,0)
+ ;;=3^Family Hx of Malig Neop Kidney
+ ;;^UTILITY(U,$J,358.3,32818,1,4,0)
+ ;;=4^Z80.51
+ ;;^UTILITY(U,$J,358.3,32818,2)
+ ;;=^321159
+ ;;^UTILITY(U,$J,358.3,32819,0)
+ ;;=Z80.52^^128^1636^21
+ ;;^UTILITY(U,$J,358.3,32819,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33982,1,3,0)
- ;;=3^Vascular parkinsonism
- ;;^UTILITY(U,$J,358.3,33982,1,4,0)
- ;;=4^G21.4
- ;;^UTILITY(U,$J,358.3,33982,2)
- ;;=^5003776
- ;;^UTILITY(U,$J,358.3,33983,0)
- ;;=I69.051^^183^2013^48
- ;;^UTILITY(U,$J,358.3,33983,1,0)
+ ;;^UTILITY(U,$J,358.3,32819,1,3,0)
+ ;;=3^Family Hx of Malig Neop Bladder
+ ;;^UTILITY(U,$J,358.3,32819,1,4,0)
+ ;;=4^Z80.52
+ ;;^UTILITY(U,$J,358.3,32819,2)
+ ;;=^5063352
+ ;;^UTILITY(U,$J,358.3,32820,0)
+ ;;=Z80.59^^128^1636^31
+ ;;^UTILITY(U,$J,358.3,32820,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33983,1,3,0)
- ;;=3^Hemiplga fol ntrm subarach hemor aff right dominant side
- ;;^UTILITY(U,$J,358.3,33983,1,4,0)
- ;;=4^I69.051
+ ;;^UTILITY(U,$J,358.3,32820,1,3,0)
+ ;;=3^Family Hx of Malig Neop Urinary Tract Organ
+ ;;^UTILITY(U,$J,358.3,32820,1,4,0)
+ ;;=4^Z80.59
+ ;;^UTILITY(U,$J,358.3,32820,2)
+ ;;=^5063353
+ ;;^UTILITY(U,$J,358.3,32821,0)
+ ;;=Z80.7^^128^1636^26
+ ;;^UTILITY(U,$J,358.3,32821,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32821,1,3,0)
+ ;;=3^Family Hx of Malig Neop Lymphoid,Hematopoietic & Related Tissues

@@ -1,124 +1,130 @@
-IBDEI1R5 ; ; 06-AUG-2015
+IBDEI1R5 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30970,2)
- ;;=^5014680
- ;;^UTILITY(U,$J,358.3,30971,0)
- ;;=M76.32^^179^1937^14
- ;;^UTILITY(U,$J,358.3,30971,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30971,1,3,0)
- ;;=3^Iliotibial band syndrome, left leg
- ;;^UTILITY(U,$J,358.3,30971,1,4,0)
- ;;=4^M76.32
- ;;^UTILITY(U,$J,358.3,30971,2)
- ;;=^5013277
- ;;^UTILITY(U,$J,358.3,30972,0)
- ;;=M76.31^^179^1937^15
- ;;^UTILITY(U,$J,358.3,30972,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30972,1,3,0)
- ;;=3^Iliotibial band syndrome, right leg
- ;;^UTILITY(U,$J,358.3,30972,1,4,0)
- ;;=4^M76.31
- ;;^UTILITY(U,$J,358.3,30972,2)
- ;;=^5013276
- ;;^UTILITY(U,$J,358.3,30973,0)
- ;;=S72.145A^^179^1937^16
- ;;^UTILITY(U,$J,358.3,30973,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30973,1,3,0)
- ;;=3^Nondisplaced intertrochanteric fracture of left femur, init
- ;;^UTILITY(U,$J,358.3,30973,1,4,0)
- ;;=4^S72.145A
- ;;^UTILITY(U,$J,358.3,30973,2)
- ;;=^5037979
- ;;^UTILITY(U,$J,358.3,30974,0)
- ;;=S72.144A^^179^1937^17
- ;;^UTILITY(U,$J,358.3,30974,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30974,1,3,0)
- ;;=3^Nondisplaced intertrochanteric fracture of right femur, init
- ;;^UTILITY(U,$J,358.3,30974,1,4,0)
- ;;=4^S72.144A
- ;;^UTILITY(U,$J,358.3,30974,2)
- ;;=^5037963
- ;;^UTILITY(U,$J,358.3,30975,0)
- ;;=S72.142A^^179^1937^18
- ;;^UTILITY(U,$J,358.3,30975,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30975,1,3,0)
- ;;=3^Displaced intertrochanteric fracture of left femur, init
- ;;^UTILITY(U,$J,358.3,30975,1,4,0)
- ;;=4^S72.142A
- ;;^UTILITY(U,$J,358.3,30975,2)
- ;;=^5037931
- ;;^UTILITY(U,$J,358.3,30976,0)
- ;;=S72.141A^^179^1937^19
- ;;^UTILITY(U,$J,358.3,30976,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30976,1,3,0)
- ;;=3^Displaced intertrochanteric fracture of right femur, init
- ;;^UTILITY(U,$J,358.3,30976,1,4,0)
- ;;=4^S72.141A
- ;;^UTILITY(U,$J,358.3,30976,2)
- ;;=^5037915
- ;;^UTILITY(U,$J,358.3,30977,0)
- ;;=S72.143A^^179^1937^20
- ;;^UTILITY(U,$J,358.3,30977,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30977,1,3,0)
- ;;=3^Displaced intertrochanteric fracture of unsp femur, init
- ;;^UTILITY(U,$J,358.3,30977,1,4,0)
- ;;=4^S72.143A
- ;;^UTILITY(U,$J,358.3,30977,2)
- ;;=^5037947
- ;;^UTILITY(U,$J,358.3,30978,0)
- ;;=S72.22XA^^179^1937^21
- ;;^UTILITY(U,$J,358.3,30978,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30978,1,3,0)
- ;;=3^Displaced subtrochanteric fracture of left femur, init
- ;;^UTILITY(U,$J,358.3,30978,1,4,0)
- ;;=4^S72.22XA
- ;;^UTILITY(U,$J,358.3,30978,2)
- ;;=^5038027
- ;;^UTILITY(U,$J,358.3,30979,0)
- ;;=S72.21XA^^179^1937^22
- ;;^UTILITY(U,$J,358.3,30979,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30979,1,3,0)
- ;;=3^Displaced subtrochanteric fracture of right femur, init
- ;;^UTILITY(U,$J,358.3,30979,1,4,0)
- ;;=4^S72.21XA
- ;;^UTILITY(U,$J,358.3,30979,2)
- ;;=^5038011
- ;;^UTILITY(U,$J,358.3,30980,0)
- ;;=S72.002A^^179^1937^23
- ;;^UTILITY(U,$J,358.3,30980,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30980,1,3,0)
- ;;=3^Fracture of unsp part of neck of left femur, init
- ;;^UTILITY(U,$J,358.3,30980,1,4,0)
- ;;=4^S72.002A
- ;;^UTILITY(U,$J,358.3,30980,2)
- ;;=^5037063
- ;;^UTILITY(U,$J,358.3,30981,0)
- ;;=S72.001A^^179^1937^24
- ;;^UTILITY(U,$J,358.3,30981,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30981,1,3,0)
- ;;=3^Fracture of unsp part of neck of right femur, init
- ;;^UTILITY(U,$J,358.3,30981,1,4,0)
- ;;=4^S72.001A
- ;;^UTILITY(U,$J,358.3,30981,2)
- ;;=^5037047
- ;;^UTILITY(U,$J,358.3,30982,0)
- ;;=M87.052^^179^1937^25
- ;;^UTILITY(U,$J,358.3,30982,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30982,1,3,0)
- ;;=3^Idiopathic aseptic necrosis of left femur
- ;;^UTILITY(U,$J,358.3,30982,1,4,0)
- ;;=4^M87.052
+ ;;^UTILITY(U,$J,358.3,29742,1,1,0)
+ ;;=1^36430
+ ;;^UTILITY(U,$J,358.3,29742,1,3,0)
+ ;;=3^Blood Transfusion Service
+ ;;^UTILITY(U,$J,358.3,29743,0)
+ ;;=96373^^116^1482^47^^^^1
+ ;;^UTILITY(U,$J,358.3,29743,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29743,1,1,0)
+ ;;=1^96373
+ ;;^UTILITY(U,$J,358.3,29743,1,3,0)
+ ;;=3^Ther/Proph/Diag Inj,IA
+ ;;^UTILITY(U,$J,358.3,29744,0)
+ ;;=96379^^116^1482^46^^^^1
+ ;;^UTILITY(U,$J,358.3,29744,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29744,1,1,0)
+ ;;=1^96379
+ ;;^UTILITY(U,$J,358.3,29744,1,3,0)
+ ;;=3^Ther/Prop/Diag Inj/Inf Proc
+ ;;^UTILITY(U,$J,358.3,29745,0)
+ ;;=36000^^116^1482^31^^^^1
+ ;;^UTILITY(U,$J,358.3,29745,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29745,1,1,0)
+ ;;=1^36000
+ ;;^UTILITY(U,$J,358.3,29745,1,3,0)
+ ;;=3^Place Needle in Vein
+ ;;^UTILITY(U,$J,358.3,29746,0)
+ ;;=86950^^116^1482^29^^^^1
+ ;;^UTILITY(U,$J,358.3,29746,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29746,1,1,0)
+ ;;=1^86950
+ ;;^UTILITY(U,$J,358.3,29746,1,3,0)
+ ;;=3^Leukacyte Transfusion
+ ;;^UTILITY(U,$J,358.3,29747,0)
+ ;;=90283^^116^1482^25^^^^1
+ ;;^UTILITY(U,$J,358.3,29747,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29747,1,1,0)
+ ;;=1^90283
+ ;;^UTILITY(U,$J,358.3,29747,1,3,0)
+ ;;=3^Human IG IV
+ ;;^UTILITY(U,$J,358.3,29748,0)
+ ;;=96369^^116^1482^38^^^^1
+ ;;^UTILITY(U,$J,358.3,29748,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29748,1,1,0)
+ ;;=1^96369
+ ;;^UTILITY(U,$J,358.3,29748,1,3,0)
+ ;;=3^SC Ther Infusion Up to 1 hr
+ ;;^UTILITY(U,$J,358.3,29749,0)
+ ;;=96370^^116^1482^36^^^^1
+ ;;^UTILITY(U,$J,358.3,29749,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29749,1,1,0)
+ ;;=1^96370
+ ;;^UTILITY(U,$J,358.3,29749,1,3,0)
+ ;;=3^SC Ther Infusion Addl Hr
+ ;;^UTILITY(U,$J,358.3,29750,0)
+ ;;=96371^^116^1482^37^^^^1
+ ;;^UTILITY(U,$J,358.3,29750,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29750,1,1,0)
+ ;;=1^96371
+ ;;^UTILITY(U,$J,358.3,29750,1,3,0)
+ ;;=3^SC Ther Infusion Reset Pump
+ ;;^UTILITY(U,$J,358.3,29751,0)
+ ;;=96406^^116^1482^6^^^^1
+ ;;^UTILITY(U,$J,358.3,29751,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29751,1,1,0)
+ ;;=1^96406
+ ;;^UTILITY(U,$J,358.3,29751,1,3,0)
+ ;;=3^Chemo Admin,Intralesional > 7
+ ;;^UTILITY(U,$J,358.3,29752,0)
+ ;;=96521^^116^1482^33^^^^1
+ ;;^UTILITY(U,$J,358.3,29752,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29752,1,1,0)
+ ;;=1^96521
+ ;;^UTILITY(U,$J,358.3,29752,1,3,0)
+ ;;=3^Refill/Maint Portable Pump
+ ;;^UTILITY(U,$J,358.3,29753,0)
+ ;;=96523^^116^1482^28^^^^1
+ ;;^UTILITY(U,$J,358.3,29753,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29753,1,1,0)
+ ;;=1^96523
+ ;;^UTILITY(U,$J,358.3,29753,1,3,0)
+ ;;=3^Irrig Drug Delivery Device
+ ;;^UTILITY(U,$J,358.3,29754,0)
+ ;;=36589^^116^1482^24^^^^1
+ ;;^UTILITY(U,$J,358.3,29754,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29754,1,1,0)
+ ;;=1^36589
+ ;;^UTILITY(U,$J,358.3,29754,1,3,0)
+ ;;=3^Hickman Cath Removal
+ ;;^UTILITY(U,$J,358.3,29755,0)
+ ;;=36590^^116^1482^34^^^^1
+ ;;^UTILITY(U,$J,358.3,29755,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29755,1,1,0)
+ ;;=1^36590
+ ;;^UTILITY(U,$J,358.3,29755,1,3,0)
+ ;;=3^Removal Tunneled CV Cath
+ ;;^UTILITY(U,$J,358.3,29756,0)
+ ;;=36592^^116^1482^2^^^^1
+ ;;^UTILITY(U,$J,358.3,29756,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29756,1,1,0)
+ ;;=1^36592
+ ;;^UTILITY(U,$J,358.3,29756,1,3,0)
+ ;;=3^Blood Draw from PICC,Hickman
+ ;;^UTILITY(U,$J,358.3,29757,0)
+ ;;=36591^^116^1482^3^^^^1
+ ;;^UTILITY(U,$J,358.3,29757,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29757,1,1,0)
+ ;;=1^36591
+ ;;^UTILITY(U,$J,358.3,29757,1,3,0)
+ ;;=3^Blood Draw from Portacath
+ ;;^UTILITY(U,$J,358.3,29758,0)
+ ;;=36593^^116^1482^23^^^^1

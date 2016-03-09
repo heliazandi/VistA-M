@@ -1,134 +1,126 @@
-IBDEI1W4 ; ; 06-AUG-2015
+IBDEI1W4 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33246,1,0)
+ ;;^UTILITY(U,$J,358.3,32099,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33246,1,3,0)
- ;;=3^Pain in Left Leg
- ;;^UTILITY(U,$J,358.3,33246,1,4,0)
- ;;=4^M79.605
- ;;^UTILITY(U,$J,358.3,33246,2)
- ;;=^5013329
- ;;^UTILITY(U,$J,358.3,33247,0)
- ;;=M79.641^^182^1998^85
- ;;^UTILITY(U,$J,358.3,33247,1,0)
+ ;;^UTILITY(U,$J,358.3,32099,1,3,0)
+ ;;=3^Fx of rt lsr toe(s), oth, init
+ ;;^UTILITY(U,$J,358.3,32099,1,4,0)
+ ;;=4^S92.591A
+ ;;^UTILITY(U,$J,358.3,32099,2)
+ ;;=^5045557
+ ;;^UTILITY(U,$J,358.3,32100,0)
+ ;;=S92.535A^^126^1609^314
+ ;;^UTILITY(U,$J,358.3,32100,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33247,1,3,0)
- ;;=3^Pain in Right Hand
- ;;^UTILITY(U,$J,358.3,33247,1,4,0)
- ;;=4^M79.641
- ;;^UTILITY(U,$J,358.3,33247,2)
- ;;=^5013338
- ;;^UTILITY(U,$J,358.3,33248,0)
- ;;=M79.642^^182^1998^75
- ;;^UTILITY(U,$J,358.3,33248,1,0)
+ ;;^UTILITY(U,$J,358.3,32100,1,3,0)
+ ;;=3^Nondisp fx of dist phalanx of lft lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,32100,1,4,0)
+ ;;=4^S92.535A
+ ;;^UTILITY(U,$J,358.3,32100,2)
+ ;;=^5045543
+ ;;^UTILITY(U,$J,358.3,32101,0)
+ ;;=S92.534A^^126^1609^316
+ ;;^UTILITY(U,$J,358.3,32101,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33248,1,3,0)
- ;;=3^Pain in Left Hand
- ;;^UTILITY(U,$J,358.3,33248,1,4,0)
- ;;=4^M79.642
- ;;^UTILITY(U,$J,358.3,33248,2)
- ;;=^5013339
- ;;^UTILITY(U,$J,358.3,33249,0)
- ;;=M79.671^^182^1998^84
- ;;^UTILITY(U,$J,358.3,33249,1,0)
+ ;;^UTILITY(U,$J,358.3,32101,1,3,0)
+ ;;=3^Nondisp fx of dist phalanx of rt lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,32101,1,4,0)
+ ;;=4^S92.534A
+ ;;^UTILITY(U,$J,358.3,32101,2)
+ ;;=^5045536
+ ;;^UTILITY(U,$J,358.3,32102,0)
+ ;;=S92.532A^^126^1609^87
+ ;;^UTILITY(U,$J,358.3,32102,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33249,1,3,0)
- ;;=3^Pain in Right Foot
- ;;^UTILITY(U,$J,358.3,33249,1,4,0)
- ;;=4^M79.671
- ;;^UTILITY(U,$J,358.3,33249,2)
- ;;=^5013350
- ;;^UTILITY(U,$J,358.3,33250,0)
- ;;=M79.672^^182^1998^74
- ;;^UTILITY(U,$J,358.3,33250,1,0)
+ ;;^UTILITY(U,$J,358.3,32102,1,3,0)
+ ;;=3^Disp fx of dist phalanc of lft lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,32102,1,4,0)
+ ;;=4^S92.532A
+ ;;^UTILITY(U,$J,358.3,32102,2)
+ ;;=^5045522
+ ;;^UTILITY(U,$J,358.3,32103,0)
+ ;;=S92.525A^^126^1609^330
+ ;;^UTILITY(U,$J,358.3,32103,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33250,1,3,0)
- ;;=3^Pain in Left Foot
- ;;^UTILITY(U,$J,358.3,33250,1,4,0)
- ;;=4^M79.672
- ;;^UTILITY(U,$J,358.3,33250,2)
- ;;=^5013351
- ;;^UTILITY(U,$J,358.3,33251,0)
- ;;=B02.0^^182^1999^41
- ;;^UTILITY(U,$J,358.3,33251,1,0)
+ ;;^UTILITY(U,$J,358.3,32103,1,3,0)
+ ;;=3^Nondisp fx of med phalanx of lft lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,32103,1,4,0)
+ ;;=4^S92.525A
+ ;;^UTILITY(U,$J,358.3,32103,2)
+ ;;=^5045501
+ ;;^UTILITY(U,$J,358.3,32104,0)
+ ;;=S92.531A^^126^1609^92
+ ;;^UTILITY(U,$J,358.3,32104,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33251,1,3,0)
- ;;=3^Zoster Encephalitis
- ;;^UTILITY(U,$J,358.3,33251,1,4,0)
- ;;=4^B02.0
- ;;^UTILITY(U,$J,358.3,33251,2)
- ;;=^5000488
- ;;^UTILITY(U,$J,358.3,33252,0)
- ;;=B02.29^^182^1999^34
- ;;^UTILITY(U,$J,358.3,33252,1,0)
+ ;;^UTILITY(U,$J,358.3,32104,1,3,0)
+ ;;=3^Disp fx of dist phalanx of rt lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,32104,1,4,0)
+ ;;=4^S92.531A
+ ;;^UTILITY(U,$J,358.3,32104,2)
+ ;;=^5045515
+ ;;^UTILITY(U,$J,358.3,32105,0)
+ ;;=S92.524A^^126^1609^332
+ ;;^UTILITY(U,$J,358.3,32105,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33252,1,3,0)
- ;;=3^Postherpetic Nervous System Involvement,Other
- ;;^UTILITY(U,$J,358.3,33252,1,4,0)
- ;;=4^B02.29
- ;;^UTILITY(U,$J,358.3,33252,2)
- ;;=^5000492
- ;;^UTILITY(U,$J,358.3,33253,0)
- ;;=F03.90^^182^1999^10
- ;;^UTILITY(U,$J,358.3,33253,1,0)
+ ;;^UTILITY(U,$J,358.3,32105,1,3,0)
+ ;;=3^Nondisp fx of med phalanx of rt lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,32105,1,4,0)
+ ;;=4^S92.524A
+ ;;^UTILITY(U,$J,358.3,32105,2)
+ ;;=^5045494
+ ;;^UTILITY(U,$J,358.3,32106,0)
+ ;;=S92.522A^^126^1609^106
+ ;;^UTILITY(U,$J,358.3,32106,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33253,1,3,0)
- ;;=3^Dementia w/o Behavioral Disturbance,Unspec
- ;;^UTILITY(U,$J,358.3,33253,1,4,0)
- ;;=4^F03.90
- ;;^UTILITY(U,$J,358.3,33253,2)
- ;;=^5003050
- ;;^UTILITY(U,$J,358.3,33254,0)
- ;;=F03.91^^182^1999^9
- ;;^UTILITY(U,$J,358.3,33254,1,0)
+ ;;^UTILITY(U,$J,358.3,32106,1,3,0)
+ ;;=3^Disp fx of med phalanx of lft lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,32106,1,4,0)
+ ;;=4^S92.522A
+ ;;^UTILITY(U,$J,358.3,32106,2)
+ ;;=^5045480
+ ;;^UTILITY(U,$J,358.3,32107,0)
+ ;;=S92.521A^^126^1609^108
+ ;;^UTILITY(U,$J,358.3,32107,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33254,1,3,0)
- ;;=3^Dementia w/ Behavioral Disturbance,Unspec
- ;;^UTILITY(U,$J,358.3,33254,1,4,0)
- ;;=4^F03.91
- ;;^UTILITY(U,$J,358.3,33254,2)
- ;;=^5133350
- ;;^UTILITY(U,$J,358.3,33255,0)
- ;;=F01.50^^182^1999^12
- ;;^UTILITY(U,$J,358.3,33255,1,0)
+ ;;^UTILITY(U,$J,358.3,32107,1,3,0)
+ ;;=3^Disp fx of med phalanx of rt lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,32107,1,4,0)
+ ;;=4^S92.521A
+ ;;^UTILITY(U,$J,358.3,32107,2)
+ ;;=^5045473
+ ;;^UTILITY(U,$J,358.3,32108,0)
+ ;;=S92.515A^^126^1609^345
+ ;;^UTILITY(U,$J,358.3,32108,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33255,1,3,0)
- ;;=3^Dementia,Vascular w/o Behavioral Disturbance
- ;;^UTILITY(U,$J,358.3,33255,1,4,0)
- ;;=4^F01.50
- ;;^UTILITY(U,$J,358.3,33255,2)
- ;;=^5003046
- ;;^UTILITY(U,$J,358.3,33256,0)
- ;;=F10.27^^182^1999^11
- ;;^UTILITY(U,$J,358.3,33256,1,0)
+ ;;^UTILITY(U,$J,358.3,32108,1,3,0)
+ ;;=3^Nondisp fx of prox phalanx of lft lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,32108,1,4,0)
+ ;;=4^S92.515A
+ ;;^UTILITY(U,$J,358.3,32108,2)
+ ;;=^5045459
+ ;;^UTILITY(U,$J,358.3,32109,0)
+ ;;=S92.514A^^126^1609^349
+ ;;^UTILITY(U,$J,358.3,32109,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33256,1,3,0)
- ;;=3^Dementia,Alcohol Dependence w/ Alcohol-Induced
- ;;^UTILITY(U,$J,358.3,33256,1,4,0)
- ;;=4^F10.27
- ;;^UTILITY(U,$J,358.3,33256,2)
- ;;=^5003095
- ;;^UTILITY(U,$J,358.3,33257,0)
- ;;=F06.1^^182^1999^6
- ;;^UTILITY(U,$J,358.3,33257,1,0)
+ ;;^UTILITY(U,$J,358.3,32109,1,3,0)
+ ;;=3^Nondisp fx of prox phalanx of rt lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,32109,1,4,0)
+ ;;=4^S92.514A
+ ;;^UTILITY(U,$J,358.3,32109,2)
+ ;;=^5045452
+ ;;^UTILITY(U,$J,358.3,32110,0)
+ ;;=S92.512A^^126^1609^120
+ ;;^UTILITY(U,$J,358.3,32110,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33257,1,3,0)
- ;;=3^Catatonic Disorder d/t Known Physiological Condition
- ;;^UTILITY(U,$J,358.3,33257,1,4,0)
- ;;=4^F06.1
- ;;^UTILITY(U,$J,358.3,33257,2)
- ;;=^5003054
- ;;^UTILITY(U,$J,358.3,33258,0)
- ;;=F06.8^^182^1999^19
- ;;^UTILITY(U,$J,358.3,33258,1,0)
+ ;;^UTILITY(U,$J,358.3,32110,1,3,0)
+ ;;=3^Disp fx of prox phalanx of lft lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,32110,1,4,0)
+ ;;=4^S92.512A
+ ;;^UTILITY(U,$J,358.3,32110,2)
+ ;;=^5045438
+ ;;^UTILITY(U,$J,358.3,32111,0)
+ ;;=S92.511A^^126^1609^123
+ ;;^UTILITY(U,$J,358.3,32111,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33258,1,3,0)
- ;;=3^Mental Disorders d/t Known Physiological Condition,Other
- ;;^UTILITY(U,$J,358.3,33258,1,4,0)
- ;;=4^F06.8
- ;;^UTILITY(U,$J,358.3,33258,2)
- ;;=^5003062
- ;;^UTILITY(U,$J,358.3,33259,0)
- ;;=F06.0^^182^1999^35

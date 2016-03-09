@@ -1,134 +1,132 @@
-IBDEI0T0 ; ; 06-AUG-2015
+IBDEI0T0 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14041,2)
- ;;=^87342
- ;;^UTILITY(U,$J,358.3,14042,0)
- ;;=782.3^^74^853^3
- ;;^UTILITY(U,$J,358.3,14042,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14042,1,3,0)
- ;;=3^782.3
- ;;^UTILITY(U,$J,358.3,14042,1,5,0)
- ;;=5^Edema (any site)
- ;;^UTILITY(U,$J,358.3,14042,2)
- ;;=^38340
- ;;^UTILITY(U,$J,358.3,14043,0)
- ;;=726.70^^74^853^4
- ;;^UTILITY(U,$J,358.3,14043,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14043,1,3,0)
- ;;=3^726.70
- ;;^UTILITY(U,$J,358.3,14043,1,5,0)
- ;;=5^Enthesopathy of ankle & tarsus, unspecified
- ;;^UTILITY(U,$J,358.3,14043,2)
- ;;=^272548
- ;;^UTILITY(U,$J,358.3,14044,0)
- ;;=736.72^^74^853^5
- ;;^UTILITY(U,$J,358.3,14044,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14044,1,3,0)
- ;;=3^736.72
- ;;^UTILITY(U,$J,358.3,14044,1,5,0)
- ;;=5^Equinus deformity of foot, acquired
- ;;^UTILITY(U,$J,358.3,14044,2)
- ;;=^272744
- ;;^UTILITY(U,$J,358.3,14045,0)
- ;;=726.91^^74^853^6
- ;;^UTILITY(U,$J,358.3,14045,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14045,1,3,0)
- ;;=3^726.91
- ;;^UTILITY(U,$J,358.3,14045,1,5,0)
- ;;=5^Exostosis of unspecified site
- ;;^UTILITY(U,$J,358.3,14045,2)
- ;;=^43688
- ;;^UTILITY(U,$J,358.3,14046,0)
- ;;=728.71^^74^854^1
- ;;^UTILITY(U,$J,358.3,14046,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14046,1,3,0)
- ;;=3^728.71
- ;;^UTILITY(U,$J,358.3,14046,1,5,0)
- ;;=5^Fascite, Plantar
- ;;^UTILITY(U,$J,358.3,14046,2)
- ;;=^272598
- ;;^UTILITY(U,$J,358.3,14047,0)
- ;;=729.1^^74^854^2
- ;;^UTILITY(U,$J,358.3,14047,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14047,1,3,0)
- ;;=3^729.1
- ;;^UTILITY(U,$J,358.3,14047,1,5,0)
- ;;=5^Fibromyalgia
- ;;^UTILITY(U,$J,358.3,14047,2)
- ;;=^80160
- ;;^UTILITY(U,$J,358.3,14048,0)
- ;;=709.8^^74^854^3
- ;;^UTILITY(U,$J,358.3,14048,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14048,1,3,0)
- ;;=3^709.8
- ;;^UTILITY(U,$J,358.3,14048,1,5,0)
- ;;=5^Fissured skin
- ;;^UTILITY(U,$J,358.3,14048,2)
- ;;=^88026
- ;;^UTILITY(U,$J,358.3,14049,0)
- ;;=V53.7^^74^854^4
- ;;^UTILITY(U,$J,358.3,14049,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14049,1,3,0)
- ;;=3^V53.7
- ;;^UTILITY(U,$J,358.3,14049,1,5,0)
- ;;=5^Fitting of Orthotic
- ;;^UTILITY(U,$J,358.3,14049,2)
- ;;=^295510
- ;;^UTILITY(U,$J,358.3,14050,0)
- ;;=709.4^^74^854^5
- ;;^UTILITY(U,$J,358.3,14050,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14050,1,3,0)
- ;;=3^709.4
- ;;^UTILITY(U,$J,358.3,14050,1,5,0)
- ;;=5^Foreign body granuloma of skin and subcutaneous tissue (old) 
- ;;^UTILITY(U,$J,358.3,14050,2)
- ;;=^271943
- ;;^UTILITY(U,$J,358.3,14051,0)
- ;;=917.6^^74^854^6
- ;;^UTILITY(U,$J,358.3,14051,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14051,1,3,0)
- ;;=3^917.6
- ;;^UTILITY(U,$J,358.3,14051,1,5,0)
- ;;=5^Foreign body, superficial injury (splinter) of foot & toe(s)without major open wound & without mention of infection  
- ;;^UTILITY(U,$J,358.3,14051,2)
- ;;=^275347
- ;;^UTILITY(U,$J,358.3,14052,0)
- ;;=892.1^^74^854^7
- ;;^UTILITY(U,$J,358.3,14052,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14052,1,3,0)
- ;;=3^892.1
- ;;^UTILITY(U,$J,358.3,14052,1,5,0)
- ;;=5^Foreign body, open wound of foot except toe(s); complicated
- ;;^UTILITY(U,$J,358.3,14052,2)
- ;;=^275092
- ;;^UTILITY(U,$J,358.3,14053,0)
- ;;=893.1^^74^854^8
- ;;^UTILITY(U,$J,358.3,14053,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14053,1,3,0)
- ;;=3^893.1
- ;;^UTILITY(U,$J,358.3,14053,1,5,0)
- ;;=5^Foreign body, open wound of toe; complicated
- ;;^UTILITY(U,$J,358.3,14053,2)
- ;;=^275096
- ;;^UTILITY(U,$J,358.3,14054,0)
- ;;=916.6^^74^854^9
- ;;^UTILITY(U,$J,358.3,14054,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14054,1,3,0)
- ;;=3^916.6
- ;;^UTILITY(U,$J,358.3,14054,1,5,0)
- ;;=5^Foreign body, superficial injury (splinter) of hip, thigh, leg, and ankle w/o major open wound & w/o mention of infection
+ ;;^UTILITY(U,$J,358.3,13602,0)
+ ;;=Z77.112^^53^594^142
+ ;;^UTILITY(U,$J,358.3,13602,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13602,1,3,0)
+ ;;=3^Soil Pollution Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,13602,1,4,0)
+ ;;=4^Z77.112
+ ;;^UTILITY(U,$J,358.3,13602,2)
+ ;;=^5063316
+ ;;^UTILITY(U,$J,358.3,13603,0)
+ ;;=Z77.111^^53^594^148
+ ;;^UTILITY(U,$J,358.3,13603,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13603,1,3,0)
+ ;;=3^Water Pollution Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,13603,1,4,0)
+ ;;=4^Z77.111
+ ;;^UTILITY(U,$J,358.3,13603,2)
+ ;;=^5063315
+ ;;^UTILITY(U,$J,358.3,13604,0)
+ ;;=Z77.128^^53^594^119
+ ;;^UTILITY(U,$J,358.3,13604,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13604,1,3,0)
+ ;;=3^Physical Environment Hazards Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,13604,1,4,0)
+ ;;=4^Z77.128
+ ;;^UTILITY(U,$J,358.3,13604,2)
+ ;;=^5063322
+ ;;^UTILITY(U,$J,358.3,13605,0)
+ ;;=Z77.123^^53^594^140
+ ;;^UTILITY(U,$J,358.3,13605,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13605,1,3,0)
+ ;;=3^Radon/Radiation Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,13605,1,4,0)
+ ;;=4^Z77.123
+ ;;^UTILITY(U,$J,358.3,13605,2)
+ ;;=^5063321
+ ;;^UTILITY(U,$J,358.3,13606,0)
+ ;;=Z77.122^^53^594^68
+ ;;^UTILITY(U,$J,358.3,13606,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13606,1,3,0)
+ ;;=3^Noise Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,13606,1,4,0)
+ ;;=4^Z77.122
+ ;;^UTILITY(U,$J,358.3,13606,2)
+ ;;=^5063320
+ ;;^UTILITY(U,$J,358.3,13607,0)
+ ;;=Z77.118^^53^594^19
+ ;;^UTILITY(U,$J,358.3,13607,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13607,1,3,0)
+ ;;=3^Environmental Pollution Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,13607,1,4,0)
+ ;;=4^Z77.118
+ ;;^UTILITY(U,$J,358.3,13607,2)
+ ;;=^5063317
+ ;;^UTILITY(U,$J,358.3,13608,0)
+ ;;=Z77.9^^53^594^54
+ ;;^UTILITY(U,$J,358.3,13608,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13608,1,3,0)
+ ;;=3^Health Hazard Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,13608,1,4,0)
+ ;;=4^Z77.9
+ ;;^UTILITY(U,$J,358.3,13608,2)
+ ;;=^5063326
+ ;;^UTILITY(U,$J,358.3,13609,0)
+ ;;=Z77.22^^53^594^18
+ ;;^UTILITY(U,$J,358.3,13609,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13609,1,3,0)
+ ;;=3^Environmental Exposure Tobacco Smoke/Second-Hand Smoke
+ ;;^UTILITY(U,$J,358.3,13609,1,4,0)
+ ;;=4^Z77.22
+ ;;^UTILITY(U,$J,358.3,13609,2)
+ ;;=^5063324
+ ;;^UTILITY(U,$J,358.3,13610,0)
+ ;;=Z80.0^^53^594^35
+ ;;^UTILITY(U,$J,358.3,13610,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13610,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Digestive Organs
+ ;;^UTILITY(U,$J,358.3,13610,1,4,0)
+ ;;=4^Z80.0
+ ;;^UTILITY(U,$J,358.3,13610,2)
+ ;;=^5063344
+ ;;^UTILITY(U,$J,358.3,13611,0)
+ ;;=Z80.1^^53^594^41
+ ;;^UTILITY(U,$J,358.3,13611,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13611,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Trachea,Bronc & Lung
+ ;;^UTILITY(U,$J,358.3,13611,1,4,0)
+ ;;=4^Z80.1
+ ;;^UTILITY(U,$J,358.3,13611,2)
+ ;;=^5063345
+ ;;^UTILITY(U,$J,358.3,13612,0)
+ ;;=Z80.3^^53^594^34
+ ;;^UTILITY(U,$J,358.3,13612,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13612,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Breast
+ ;;^UTILITY(U,$J,358.3,13612,1,4,0)
+ ;;=4^Z80.3
+ ;;^UTILITY(U,$J,358.3,13612,2)
+ ;;=^5063347
+ ;;^UTILITY(U,$J,358.3,13613,0)
+ ;;=Z80.41^^53^594^38
+ ;;^UTILITY(U,$J,358.3,13613,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13613,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Ovary
+ ;;^UTILITY(U,$J,358.3,13613,1,4,0)
+ ;;=4^Z80.41
+ ;;^UTILITY(U,$J,358.3,13613,2)
+ ;;=^5063348
+ ;;^UTILITY(U,$J,358.3,13614,0)
+ ;;=Z80.42^^53^594^39
+ ;;^UTILITY(U,$J,358.3,13614,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13614,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Prostate
+ ;;^UTILITY(U,$J,358.3,13614,1,4,0)
+ ;;=4^Z80.42

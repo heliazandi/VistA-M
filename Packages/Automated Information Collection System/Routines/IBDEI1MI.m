@@ -1,134 +1,124 @@
-IBDEI1MI ; ; 06-AUG-2015
+IBDEI1MI ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,28816,1,1,0)
- ;;=1^77321
- ;;^UTILITY(U,$J,358.3,28816,1,3,0)
- ;;=3^Special Port Planparticles Hemi/Tot
- ;;^UTILITY(U,$J,358.3,28817,0)
- ;;=77306^^165^1834^1^^^^1
- ;;^UTILITY(U,$J,358.3,28817,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,28817,1,1,0)
- ;;=1^77306
- ;;^UTILITY(U,$J,358.3,28817,1,3,0)
- ;;=3^Isodose Plan-Simple
- ;;^UTILITY(U,$J,358.3,28818,0)
- ;;=77307^^165^1834^2^^^^1
- ;;^UTILITY(U,$J,358.3,28818,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,28818,1,1,0)
- ;;=1^77307
- ;;^UTILITY(U,$J,358.3,28818,1,3,0)
- ;;=3^Isodose Plan-Complex
- ;;^UTILITY(U,$J,358.3,28819,0)
- ;;=77295^^165^1834^3^^^^1
- ;;^UTILITY(U,$J,358.3,28819,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,28819,1,1,0)
- ;;=1^77295
- ;;^UTILITY(U,$J,358.3,28819,1,3,0)
- ;;=3^Simulation 3-D
- ;;^UTILITY(U,$J,358.3,28820,0)
- ;;=77427^^165^1835^4^^^^1
- ;;^UTILITY(U,$J,358.3,28820,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,28820,1,1,0)
- ;;=1^77427
- ;;^UTILITY(U,$J,358.3,28820,1,3,0)
- ;;=3^Weekly Tx Management
- ;;^UTILITY(U,$J,358.3,28821,0)
- ;;=77431^^165^1835^1^^^^1
- ;;^UTILITY(U,$J,358.3,28821,1,0)
- ;;=^358.31IA^4^3
- ;;^UTILITY(U,$J,358.3,28821,1,1,0)
- ;;=1^77431
- ;;^UTILITY(U,$J,358.3,28821,1,3,0)
- ;;=3^RT Manage/1-2 fx only
- ;;^UTILITY(U,$J,358.3,28821,1,4,0)
- ;;=4
- ;;^UTILITY(U,$J,358.3,28822,0)
- ;;=77432^^165^1835^3^^^^1
- ;;^UTILITY(U,$J,358.3,28822,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,28822,1,1,0)
- ;;=1^77432
- ;;^UTILITY(U,$J,358.3,28822,1,3,0)
- ;;=3^Stereotactic RT Tx/Complete Tx
- ;;^UTILITY(U,$J,358.3,28823,0)
- ;;=77435^^165^1835^2^^^^1
- ;;^UTILITY(U,$J,358.3,28823,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,28823,1,1,0)
- ;;=1^77435
- ;;^UTILITY(U,$J,358.3,28823,1,3,0)
- ;;=3^SBRT Management
- ;;^UTILITY(U,$J,358.3,28824,0)
- ;;=77370^^165^1836^2^^^^1
- ;;^UTILITY(U,$J,358.3,28824,1,0)
- ;;=^358.31IA^4^3
- ;;^UTILITY(U,$J,358.3,28824,1,1,0)
- ;;=1^77370
- ;;^UTILITY(U,$J,358.3,28824,1,3,0)
- ;;=3^Special Physics Consult  
- ;;^UTILITY(U,$J,358.3,28824,1,4,0)
- ;;=4
- ;;^UTILITY(U,$J,358.3,28825,0)
- ;;=77470^^165^1836^3^^^^1
- ;;^UTILITY(U,$J,358.3,28825,1,0)
- ;;=^358.31IA^4^3
- ;;^UTILITY(U,$J,358.3,28825,1,1,0)
- ;;=1^77470
- ;;^UTILITY(U,$J,358.3,28825,1,3,0)
- ;;=3^Special Treatment Procedure 
- ;;^UTILITY(U,$J,358.3,28825,1,4,0)
- ;;=4
- ;;^UTILITY(U,$J,358.3,28826,0)
- ;;=77469^^165^1836^1^^^^1
- ;;^UTILITY(U,$J,358.3,28826,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,28826,1,1,0)
- ;;=1^77469
- ;;^UTILITY(U,$J,358.3,28826,1,3,0)
- ;;=3^Intra-op Radiation Tx Mgmt
- ;;^UTILITY(U,$J,358.3,28827,0)
- ;;=77301^^165^1837^1^^^^1
- ;;^UTILITY(U,$J,358.3,28827,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,28827,1,1,0)
- ;;=1^77301
- ;;^UTILITY(U,$J,358.3,28827,1,3,0)
- ;;=3^IMRT Dose Plan
- ;;^UTILITY(U,$J,358.3,28828,0)
- ;;=77417^^165^1838^4^^^^1
- ;;^UTILITY(U,$J,358.3,28828,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,28828,1,1,0)
- ;;=1^77417
- ;;^UTILITY(U,$J,358.3,28828,1,3,0)
- ;;=3^Radiology Port Films
- ;;^UTILITY(U,$J,358.3,28829,0)
- ;;=77014^^165^1838^1^^^^1
- ;;^UTILITY(U,$J,358.3,28829,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,28829,1,1,0)
- ;;=1^77014
- ;;^UTILITY(U,$J,358.3,28829,1,3,0)
- ;;=3^CT Scan for Therapy Guide
- ;;^UTILITY(U,$J,358.3,28830,0)
- ;;=77407^^165^1838^7^^^^1
- ;;^UTILITY(U,$J,358.3,28830,1,0)
- ;;=^358.31IA^4^3
- ;;^UTILITY(U,$J,358.3,28830,1,1,0)
- ;;=1^77407
- ;;^UTILITY(U,$J,358.3,28830,1,3,0)
- ;;=3^Intermediate Tx;>1 MeV
- ;;^UTILITY(U,$J,358.3,28830,1,4,0)
- ;;=4
- ;;^UTILITY(U,$J,358.3,28831,0)
- ;;=77402^^165^1838^6^^^^1
- ;;^UTILITY(U,$J,358.3,28831,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,28831,1,1,0)
- ;;=1^77402
+ ;;^UTILITY(U,$J,358.3,27537,1,4,0)
+ ;;=4^N06.0
+ ;;^UTILITY(U,$J,358.3,27537,2)
+ ;;=^5015549
+ ;;^UTILITY(U,$J,358.3,27538,0)
+ ;;=N06.1^^106^1363^39
+ ;;^UTILITY(U,$J,358.3,27538,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27538,1,3,0)
+ ;;=3^Isolated proteinuria w/ focal & segmental glomerular lesions
+ ;;^UTILITY(U,$J,358.3,27538,1,4,0)
+ ;;=4^N06.1
+ ;;^UTILITY(U,$J,358.3,27538,2)
+ ;;=^5015550
+ ;;^UTILITY(U,$J,358.3,27539,0)
+ ;;=N06.2^^106^1363^36
+ ;;^UTILITY(U,$J,358.3,27539,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27539,1,3,0)
+ ;;=3^Isolated proteinuria w/ diffuse membranous glomerulonephritis
+ ;;^UTILITY(U,$J,358.3,27539,1,4,0)
+ ;;=4^N06.2
+ ;;^UTILITY(U,$J,358.3,27539,2)
+ ;;=^5015551
+ ;;^UTILITY(U,$J,358.3,27540,0)
+ ;;=N06.3^^106^1363^37
+ ;;^UTILITY(U,$J,358.3,27540,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27540,1,3,0)
+ ;;=3^Isolated proteinuria w/ diffuse mesangial prolif glomrlneph
+ ;;^UTILITY(U,$J,358.3,27540,1,4,0)
+ ;;=4^N06.3
+ ;;^UTILITY(U,$J,358.3,27540,2)
+ ;;=^5015552
+ ;;^UTILITY(U,$J,358.3,27541,0)
+ ;;=N06.4^^106^1363^35
+ ;;^UTILITY(U,$J,358.3,27541,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27541,1,3,0)
+ ;;=3^Isolated proteinuria w/ diffuse endocaplry prolif glomrlneph
+ ;;^UTILITY(U,$J,358.3,27541,1,4,0)
+ ;;=4^N06.4
+ ;;^UTILITY(U,$J,358.3,27541,2)
+ ;;=^5015553
+ ;;^UTILITY(U,$J,358.3,27542,0)
+ ;;=N06.5^^106^1363^38
+ ;;^UTILITY(U,$J,358.3,27542,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27542,1,3,0)
+ ;;=3^Isolated proteinuria w/ diffuse mesangiocapillary glomrlneph
+ ;;^UTILITY(U,$J,358.3,27542,1,4,0)
+ ;;=4^N06.5
+ ;;^UTILITY(U,$J,358.3,27542,2)
+ ;;=^5015554
+ ;;^UTILITY(U,$J,358.3,27543,0)
+ ;;=N06.6^^106^1363^33
+ ;;^UTILITY(U,$J,358.3,27543,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27543,1,3,0)
+ ;;=3^Isolated proteinuria w/ dense deposit disease
+ ;;^UTILITY(U,$J,358.3,27543,1,4,0)
+ ;;=4^N06.6
+ ;;^UTILITY(U,$J,358.3,27543,2)
+ ;;=^5015555
+ ;;^UTILITY(U,$J,358.3,27544,0)
+ ;;=N06.7^^106^1363^34
+ ;;^UTILITY(U,$J,358.3,27544,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27544,1,3,0)
+ ;;=3^Isolated proteinuria w/ diffuse crescentic glomerulonephritis
+ ;;^UTILITY(U,$J,358.3,27544,1,4,0)
+ ;;=4^N06.7
+ ;;^UTILITY(U,$J,358.3,27544,2)
+ ;;=^5015556
+ ;;^UTILITY(U,$J,358.3,27545,0)
+ ;;=N06.8^^106^1363^41
+ ;;^UTILITY(U,$J,358.3,27545,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27545,1,3,0)
+ ;;=3^Isolated proteinuria w/ other morphologic lesion
+ ;;^UTILITY(U,$J,358.3,27545,1,4,0)
+ ;;=4^N06.8
+ ;;^UTILITY(U,$J,358.3,27545,2)
+ ;;=^5015557
+ ;;^UTILITY(U,$J,358.3,27546,0)
+ ;;=N06.9^^106^1363^42
+ ;;^UTILITY(U,$J,358.3,27546,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27546,1,3,0)
+ ;;=3^Isolated proteinuria w/ unspecified morphologic lesion
+ ;;^UTILITY(U,$J,358.3,27546,1,4,0)
+ ;;=4^N06.9
+ ;;^UTILITY(U,$J,358.3,27546,2)
+ ;;=^5015558
+ ;;^UTILITY(U,$J,358.3,27547,0)
+ ;;=N07.0^^106^1363^30
+ ;;^UTILITY(U,$J,358.3,27547,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27547,1,3,0)
+ ;;=3^Hereditary nephropathy, NEC w/ minor glomerular abnormality
+ ;;^UTILITY(U,$J,358.3,27547,1,4,0)
+ ;;=4^N07.0
+ ;;^UTILITY(U,$J,358.3,27547,2)
+ ;;=^5015559
+ ;;^UTILITY(U,$J,358.3,27548,0)
+ ;;=N07.1^^106^1363^29
+ ;;^UTILITY(U,$J,358.3,27548,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27548,1,3,0)
+ ;;=3^Hereditary nephropathy, NEC w/ focal & seg glomerular lesions
+ ;;^UTILITY(U,$J,358.3,27548,1,4,0)
+ ;;=4^N07.1
+ ;;^UTILITY(U,$J,358.3,27548,2)
+ ;;=^5015560
+ ;;^UTILITY(U,$J,358.3,27549,0)
+ ;;=N07.2^^106^1363^24
+ ;;^UTILITY(U,$J,358.3,27549,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27549,1,3,0)
+ ;;=3^Hereditary nephropathy, NEC w/ diffuse membranous glomrlneph

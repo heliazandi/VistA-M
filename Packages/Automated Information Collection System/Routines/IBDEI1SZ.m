@@ -1,124 +1,136 @@
-IBDEI1SZ ; ; 06-AUG-2015
+IBDEI1SZ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31792,1,4,0)
- ;;=4^S06.4X9A
- ;;^UTILITY(U,$J,358.3,31792,2)
- ;;=^5021053
- ;;^UTILITY(U,$J,358.3,31793,0)
- ;;=S06.4X0D^^181^1968^32
- ;;^UTILITY(U,$J,358.3,31793,1,0)
+ ;;^UTILITY(U,$J,358.3,30641,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31793,1,3,0)
- ;;=3^Epidural hemorrhage w/o LOC, subs encntr
- ;;^UTILITY(U,$J,358.3,31793,1,4,0)
- ;;=4^S06.4X0D
- ;;^UTILITY(U,$J,358.3,31793,2)
- ;;=^5021027
- ;;^UTILITY(U,$J,358.3,31794,0)
- ;;=S06.5X0A^^181^1968^53
- ;;^UTILITY(U,$J,358.3,31794,1,0)
+ ;;^UTILITY(U,$J,358.3,30641,1,3,0)
+ ;;=3^Hodgkin Lymphoma,Unspec
+ ;;^UTILITY(U,$J,358.3,30641,1,4,0)
+ ;;=4^C81.90
+ ;;^UTILITY(U,$J,358.3,30641,2)
+ ;;=^5001451
+ ;;^UTILITY(U,$J,358.3,30642,0)
+ ;;=C81.99^^121^1524^2
+ ;;^UTILITY(U,$J,358.3,30642,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31794,1,3,0)
- ;;=3^Traum subdr hem w/o LOC, init
- ;;^UTILITY(U,$J,358.3,31794,1,4,0)
- ;;=4^S06.5X0A
- ;;^UTILITY(U,$J,358.3,31794,2)
- ;;=^5021056
- ;;^UTILITY(U,$J,358.3,31795,0)
- ;;=S06.5X1A^^181^1968^46
- ;;^UTILITY(U,$J,358.3,31795,1,0)
+ ;;^UTILITY(U,$J,358.3,30642,1,3,0)
+ ;;=3^Hodgkin Lymphoma,Extranodal & Solid Organ Sites,Unspec
+ ;;^UTILITY(U,$J,358.3,30642,1,4,0)
+ ;;=4^C81.99
+ ;;^UTILITY(U,$J,358.3,30642,2)
+ ;;=^5001460
+ ;;^UTILITY(U,$J,358.3,30643,0)
+ ;;=E86.1^^121^1525^13
+ ;;^UTILITY(U,$J,358.3,30643,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31795,1,3,0)
- ;;=3^Traum subdr hem w LOC of 30 minutes or less, init
- ;;^UTILITY(U,$J,358.3,31795,1,4,0)
- ;;=4^S06.5X1A
- ;;^UTILITY(U,$J,358.3,31795,2)
- ;;=^5021059
- ;;^UTILITY(U,$J,358.3,31796,0)
- ;;=S06.5X2A^^181^1968^47
- ;;^UTILITY(U,$J,358.3,31796,1,0)
+ ;;^UTILITY(U,$J,358.3,30643,1,3,0)
+ ;;=3^Hypovolemia
+ ;;^UTILITY(U,$J,358.3,30643,1,4,0)
+ ;;=4^E86.1
+ ;;^UTILITY(U,$J,358.3,30643,2)
+ ;;=^332744
+ ;;^UTILITY(U,$J,358.3,30644,0)
+ ;;=E85.9^^121^1525^2
+ ;;^UTILITY(U,$J,358.3,30644,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31796,1,3,0)
- ;;=3^Traum subdr hem w LOC of 31-59 min, init
- ;;^UTILITY(U,$J,358.3,31796,1,4,0)
- ;;=4^S06.5X2A
- ;;^UTILITY(U,$J,358.3,31796,2)
- ;;=^5021062
- ;;^UTILITY(U,$J,358.3,31797,0)
- ;;=S06.5X3A^^181^1968^45
- ;;^UTILITY(U,$J,358.3,31797,1,0)
+ ;;^UTILITY(U,$J,358.3,30644,1,3,0)
+ ;;=3^Amyloidosis,Unspec
+ ;;^UTILITY(U,$J,358.3,30644,1,4,0)
+ ;;=4^E85.9
+ ;;^UTILITY(U,$J,358.3,30644,2)
+ ;;=^334185
+ ;;^UTILITY(U,$J,358.3,30645,0)
+ ;;=J34.9^^121^1525^14
+ ;;^UTILITY(U,$J,358.3,30645,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31797,1,3,0)
- ;;=3^Traum subdr hem w LOC of 1-5 hrs 59 min, init
- ;;^UTILITY(U,$J,358.3,31797,1,4,0)
- ;;=4^S06.5X3A
- ;;^UTILITY(U,$J,358.3,31797,2)
- ;;=^5021065
- ;;^UTILITY(U,$J,358.3,31798,0)
- ;;=S06.5X4A^^181^1968^48
- ;;^UTILITY(U,$J,358.3,31798,1,0)
+ ;;^UTILITY(U,$J,358.3,30645,1,3,0)
+ ;;=3^Nose & Nasal Sinuses Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30645,1,4,0)
+ ;;=4^J34.9
+ ;;^UTILITY(U,$J,358.3,30645,2)
+ ;;=^5008212
+ ;;^UTILITY(U,$J,358.3,30646,0)
+ ;;=Q21.1^^121^1525^6
+ ;;^UTILITY(U,$J,358.3,30646,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31798,1,3,0)
- ;;=3^Traum subdr hem w LOC of 6 hours to 24 hours, init
- ;;^UTILITY(U,$J,358.3,31798,1,4,0)
- ;;=4^S06.5X4A
- ;;^UTILITY(U,$J,358.3,31798,2)
- ;;=^5021068
- ;;^UTILITY(U,$J,358.3,31799,0)
- ;;=S06.5X5A^^181^1968^43
- ;;^UTILITY(U,$J,358.3,31799,1,0)
+ ;;^UTILITY(U,$J,358.3,30646,1,3,0)
+ ;;=3^Atrial Septal Defect
+ ;;^UTILITY(U,$J,358.3,30646,1,4,0)
+ ;;=4^Q21.1
+ ;;^UTILITY(U,$J,358.3,30646,2)
+ ;;=^186788
+ ;;^UTILITY(U,$J,358.3,30647,0)
+ ;;=R56.9^^121^1525^8
+ ;;^UTILITY(U,$J,358.3,30647,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31799,1,3,0)
- ;;=3^Traum subdr hem w LOC >24 hr w ret consc lev, init
- ;;^UTILITY(U,$J,358.3,31799,1,4,0)
- ;;=4^S06.5X5A
- ;;^UTILITY(U,$J,358.3,31799,2)
- ;;=^5021071
- ;;^UTILITY(U,$J,358.3,31800,0)
- ;;=S06.5X6A^^181^1968^44
- ;;^UTILITY(U,$J,358.3,31800,1,0)
+ ;;^UTILITY(U,$J,358.3,30647,1,3,0)
+ ;;=3^Convulsions,Unspec
+ ;;^UTILITY(U,$J,358.3,30647,1,4,0)
+ ;;=4^R56.9
+ ;;^UTILITY(U,$J,358.3,30647,2)
+ ;;=^5019524
+ ;;^UTILITY(U,$J,358.3,30648,0)
+ ;;=R57.0^^121^1525^7
+ ;;^UTILITY(U,$J,358.3,30648,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31800,1,3,0)
- ;;=3^Traum subdr hem w LOC >24 hr w/o ret consc w surv, init
- ;;^UTILITY(U,$J,358.3,31800,1,4,0)
- ;;=4^S06.5X6A
- ;;^UTILITY(U,$J,358.3,31800,2)
- ;;=^5021074
- ;;^UTILITY(U,$J,358.3,31801,0)
- ;;=S06.5X7A^^181^1968^50
- ;;^UTILITY(U,$J,358.3,31801,1,0)
+ ;;^UTILITY(U,$J,358.3,30648,1,3,0)
+ ;;=3^Cardiogenic Shock
+ ;;^UTILITY(U,$J,358.3,30648,1,4,0)
+ ;;=4^R57.0
+ ;;^UTILITY(U,$J,358.3,30648,2)
+ ;;=^5019525
+ ;;^UTILITY(U,$J,358.3,30649,0)
+ ;;=T79.4XXA^^121^1525^17
+ ;;^UTILITY(U,$J,358.3,30649,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31801,1,3,0)
- ;;=3^Traum subdr hem w LOC w dth d/t brain inj bef reg consc,init
- ;;^UTILITY(U,$J,358.3,31801,1,4,0)
- ;;=4^S06.5X7A
- ;;^UTILITY(U,$J,358.3,31801,2)
- ;;=^5021077
- ;;^UTILITY(U,$J,358.3,31802,0)
- ;;=S06.5X8A^^181^1968^51
- ;;^UTILITY(U,$J,358.3,31802,1,0)
+ ;;^UTILITY(U,$J,358.3,30649,1,3,0)
+ ;;=3^Traumatic Shock,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30649,1,4,0)
+ ;;=4^T79.4XXA
+ ;;^UTILITY(U,$J,358.3,30649,2)
+ ;;=^5054305
+ ;;^UTILITY(U,$J,358.3,30650,0)
+ ;;=T78.2XXA^^121^1525^4
+ ;;^UTILITY(U,$J,358.3,30650,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31802,1,3,0)
- ;;=3^Traum subdr hem w LOC w dth d/t oth cause bef reg consc,init
- ;;^UTILITY(U,$J,358.3,31802,1,4,0)
- ;;=4^S06.5X8A
- ;;^UTILITY(U,$J,358.3,31802,2)
- ;;=^5021080
- ;;^UTILITY(U,$J,358.3,31803,0)
- ;;=S06.5X0S^^181^1968^54
- ;;^UTILITY(U,$J,358.3,31803,1,0)
+ ;;^UTILITY(U,$J,358.3,30650,1,3,0)
+ ;;=3^Anaphylactic Shock,Unspec,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30650,1,4,0)
+ ;;=4^T78.2XXA
+ ;;^UTILITY(U,$J,358.3,30650,2)
+ ;;=^5054278
+ ;;^UTILITY(U,$J,358.3,30651,0)
+ ;;=T50.905A^^121^1525^1
+ ;;^UTILITY(U,$J,358.3,30651,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31803,1,3,0)
- ;;=3^Traum subdr hem w/o LOC, sequela
- ;;^UTILITY(U,$J,358.3,31803,1,4,0)
- ;;=4^S06.5X0S
- ;;^UTILITY(U,$J,358.3,31803,2)
- ;;=^5021058
- ;;^UTILITY(U,$J,358.3,31804,0)
- ;;=S06.5X8S^^181^1968^52
- ;;^UTILITY(U,$J,358.3,31804,1,0)
+ ;;^UTILITY(U,$J,358.3,30651,1,3,0)
+ ;;=3^Adverse Effect Drug/Meds/Biol Substance,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30651,1,4,0)
+ ;;=4^T50.905A
+ ;;^UTILITY(U,$J,358.3,30651,2)
+ ;;=^5052160
+ ;;^UTILITY(U,$J,358.3,30652,0)
+ ;;=T88.4XXA^^121^1525^10
+ ;;^UTILITY(U,$J,358.3,30652,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31804,1,3,0)
- ;;=3^Traum subdr hem w LOC w dth d/t oth cause bef reg consc,sqla
+ ;;^UTILITY(U,$J,358.3,30652,1,3,0)
+ ;;=3^Failed/Difficult Intubation,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30652,1,4,0)
+ ;;=4^T88.4XXA
+ ;;^UTILITY(U,$J,358.3,30652,2)
+ ;;=^5055796
+ ;;^UTILITY(U,$J,358.3,30653,0)
+ ;;=T88.59XA^^121^1525^5
+ ;;^UTILITY(U,$J,358.3,30653,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30653,1,3,0)
+ ;;=3^Anesthesia Complications,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30653,1,4,0)
+ ;;=4^T88.59XA
+ ;;^UTILITY(U,$J,358.3,30653,2)
+ ;;=^5055805
+ ;;^UTILITY(U,$J,358.3,30654,0)
+ ;;=T88.6XXA^^121^1525^3
+ ;;^UTILITY(U,$J,358.3,30654,1,0)
+ ;;=^358.31IA^4^2

@@ -1,140 +1,130 @@
-IBDEI0PU ; ; 06-AUG-2015
+IBDEI0PU ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,12377,0)
- ;;=V25.42^^62^738^51
- ;;^UTILITY(U,$J,358.3,12377,1,0)
+ ;;^UTILITY(U,$J,358.3,12078,1,4,0)
+ ;;=4^W10.1XXD
+ ;;^UTILITY(U,$J,358.3,12078,2)
+ ;;=^5059584
+ ;;^UTILITY(U,$J,358.3,12079,0)
+ ;;=W06.XXXD^^47^540^9
+ ;;^UTILITY(U,$J,358.3,12079,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12377,1,3,0)
- ;;=3^V25.42
- ;;^UTILITY(U,$J,358.3,12377,1,4,0)
- ;;=4^IUD Surveillance
- ;;^UTILITY(U,$J,358.3,12377,2)
- ;;=^295350
- ;;^UTILITY(U,$J,358.3,12378,0)
- ;;=V25.43^^62^738^52
- ;;^UTILITY(U,$J,358.3,12378,1,0)
+ ;;^UTILITY(U,$J,358.3,12079,1,3,0)
+ ;;=3^Fall from Bed,Subsequent
+ ;;^UTILITY(U,$J,358.3,12079,1,4,0)
+ ;;=4^W06.XXXD
+ ;;^UTILITY(U,$J,358.3,12079,2)
+ ;;=^5059560
+ ;;^UTILITY(U,$J,358.3,12080,0)
+ ;;=W07.XXXD^^47^540^10
+ ;;^UTILITY(U,$J,358.3,12080,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12378,1,3,0)
- ;;=3^V25.43
- ;;^UTILITY(U,$J,358.3,12378,1,4,0)
- ;;=4^Implant Contraceptive
- ;;^UTILITY(U,$J,358.3,12378,2)
- ;;=^295351
- ;;^UTILITY(U,$J,358.3,12379,0)
- ;;=V25.5^^62^738^89
- ;;^UTILITY(U,$J,358.3,12379,1,0)
+ ;;^UTILITY(U,$J,358.3,12080,1,3,0)
+ ;;=3^Fall from Chair,Subsequent
+ ;;^UTILITY(U,$J,358.3,12080,1,4,0)
+ ;;=4^W07.XXXD
+ ;;^UTILITY(U,$J,358.3,12080,2)
+ ;;=^5059563
+ ;;^UTILITY(U,$J,358.3,12081,0)
+ ;;=W05.2XXD^^47^540^15
+ ;;^UTILITY(U,$J,358.3,12081,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12379,1,3,0)
- ;;=3^V25.5
- ;;^UTILITY(U,$J,358.3,12379,1,4,0)
- ;;=4^Subdermal Contraceptive
- ;;^UTILITY(U,$J,358.3,12379,2)
- ;;=^295352
- ;;^UTILITY(U,$J,358.3,12380,0)
- ;;=V26.51^^62^738^91
- ;;^UTILITY(U,$J,358.3,12380,1,0)
+ ;;^UTILITY(U,$J,358.3,12081,1,3,0)
+ ;;=3^Fall from Non-Moving Motorized Scooter,Subsequent
+ ;;^UTILITY(U,$J,358.3,12081,1,4,0)
+ ;;=4^W05.2XXD
+ ;;^UTILITY(U,$J,358.3,12081,2)
+ ;;=^5059557
+ ;;^UTILITY(U,$J,358.3,12082,0)
+ ;;=W05.1XXD^^47^540^16
+ ;;^UTILITY(U,$J,358.3,12082,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12380,1,3,0)
- ;;=3^V26.51
- ;;^UTILITY(U,$J,358.3,12380,1,4,0)
- ;;=4^Tubal Ligation Status
- ;;^UTILITY(U,$J,358.3,12380,2)
- ;;=^321178
- ;;^UTILITY(U,$J,358.3,12381,0)
- ;;=614.0^^62^738^9
- ;;^UTILITY(U,$J,358.3,12381,1,0)
+ ;;^UTILITY(U,$J,358.3,12082,1,3,0)
+ ;;=3^Fall from Non-Moving Nonmotorized Scooter,Subsequent
+ ;;^UTILITY(U,$J,358.3,12082,1,4,0)
+ ;;=4^W05.1XXD
+ ;;^UTILITY(U,$J,358.3,12082,2)
+ ;;=^5059554
+ ;;^UTILITY(U,$J,358.3,12083,0)
+ ;;=W05.0XXD^^47^540^17
+ ;;^UTILITY(U,$J,358.3,12083,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12381,1,3,0)
- ;;=3^614.0
- ;;^UTILITY(U,$J,358.3,12381,1,4,0)
- ;;=4^Acute Salpingitis and Oophoritis
- ;;^UTILITY(U,$J,358.3,12381,2)
- ;;=^270465
- ;;^UTILITY(U,$J,358.3,12382,0)
- ;;=614.1^^62^738^22
- ;;^UTILITY(U,$J,358.3,12382,1,0)
+ ;;^UTILITY(U,$J,358.3,12083,1,3,0)
+ ;;=3^Fall from Non-Moving Wheelchair,Subsequent
+ ;;^UTILITY(U,$J,358.3,12083,1,4,0)
+ ;;=4^W05.0XXD
+ ;;^UTILITY(U,$J,358.3,12083,2)
+ ;;=^5059551
+ ;;^UTILITY(U,$J,358.3,12084,0)
+ ;;=W18.12XD^^47^540^21
+ ;;^UTILITY(U,$J,358.3,12084,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12382,1,3,0)
- ;;=3^614.1
- ;;^UTILITY(U,$J,358.3,12382,1,4,0)
- ;;=4^Chr Salpingitis and Oophoritis
- ;;^UTILITY(U,$J,358.3,12382,2)
- ;;=^270466
- ;;^UTILITY(U,$J,358.3,12383,0)
- ;;=616.2^^62^738^28
- ;;^UTILITY(U,$J,358.3,12383,1,0)
+ ;;^UTILITY(U,$J,358.3,12084,1,3,0)
+ ;;=3^Fall from Toilet w/ Strike Against Object,Subsequent
+ ;;^UTILITY(U,$J,358.3,12084,1,4,0)
+ ;;=4^W18.12XD
+ ;;^UTILITY(U,$J,358.3,12084,2)
+ ;;=^5137984
+ ;;^UTILITY(U,$J,358.3,12085,0)
+ ;;=W18.11XD^^47^540^22
+ ;;^UTILITY(U,$J,358.3,12085,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12383,1,3,0)
- ;;=3^616.2
- ;;^UTILITY(U,$J,358.3,12383,1,4,0)
- ;;=4^Cyst of Bartholin Gland
- ;;^UTILITY(U,$J,358.3,12383,2)
- ;;=^12754
- ;;^UTILITY(U,$J,358.3,12384,0)
- ;;=616.3^^62^738^5
- ;;^UTILITY(U,$J,358.3,12384,1,0)
+ ;;^UTILITY(U,$J,358.3,12085,1,3,0)
+ ;;=3^Fall from Toilet,Subsequent
+ ;;^UTILITY(U,$J,358.3,12085,1,4,0)
+ ;;=4^W18.11XD
+ ;;^UTILITY(U,$J,358.3,12085,2)
+ ;;=^5059802
+ ;;^UTILITY(U,$J,358.3,12086,0)
+ ;;=W08.XXXD^^47^540^12
+ ;;^UTILITY(U,$J,358.3,12086,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12384,1,3,0)
- ;;=3^616.3
- ;;^UTILITY(U,$J,358.3,12384,1,4,0)
- ;;=4^Abscess of Bartholin Gland
- ;;^UTILITY(U,$J,358.3,12384,2)
- ;;=^12748
- ;;^UTILITY(U,$J,358.3,12385,0)
- ;;=616.4^^62^738^6
- ;;^UTILITY(U,$J,358.3,12385,1,0)
+ ;;^UTILITY(U,$J,358.3,12086,1,3,0)
+ ;;=3^Fall from Furniture,Subsequent
+ ;;^UTILITY(U,$J,358.3,12086,1,4,0)
+ ;;=4^W08.XXXD
+ ;;^UTILITY(U,$J,358.3,12086,2)
+ ;;=^5059566
+ ;;^UTILITY(U,$J,358.3,12087,0)
+ ;;=W18.2XXD^^47^540^23
+ ;;^UTILITY(U,$J,358.3,12087,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12385,1,3,0)
- ;;=3^616.4
- ;;^UTILITY(U,$J,358.3,12385,1,4,0)
- ;;=4^Abscess of Vulva
- ;;^UTILITY(U,$J,358.3,12385,2)
- ;;=^270476
- ;;^UTILITY(U,$J,358.3,12386,0)
- ;;=617.0^^62^738^40
- ;;^UTILITY(U,$J,358.3,12386,1,0)
+ ;;^UTILITY(U,$J,358.3,12087,1,3,0)
+ ;;=3^Fall in Shower/Bathtub,Subsequent
+ ;;^UTILITY(U,$J,358.3,12087,1,4,0)
+ ;;=4^W18.2XXD
+ ;;^UTILITY(U,$J,358.3,12087,2)
+ ;;=^5059807
+ ;;^UTILITY(U,$J,358.3,12088,0)
+ ;;=W11.XXXD^^47^540^14
+ ;;^UTILITY(U,$J,358.3,12088,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12386,1,3,0)
- ;;=3^617.0
- ;;^UTILITY(U,$J,358.3,12386,1,4,0)
- ;;=4^Endometriosis of Uterus
- ;;^UTILITY(U,$J,358.3,12386,2)
- ;;=^270482
- ;;^UTILITY(U,$J,358.3,12387,0)
- ;;=617.2^^62^738^39
- ;;^UTILITY(U,$J,358.3,12387,1,0)
+ ;;^UTILITY(U,$J,358.3,12088,1,3,0)
+ ;;=3^Fall from Ladder,Subsequent
+ ;;^UTILITY(U,$J,358.3,12088,1,4,0)
+ ;;=4^W11.XXXD
+ ;;^UTILITY(U,$J,358.3,12088,2)
+ ;;=^5059596
+ ;;^UTILITY(U,$J,358.3,12089,0)
+ ;;=W01.10XD^^47^540^2
+ ;;^UTILITY(U,$J,358.3,12089,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12387,1,3,0)
- ;;=3^617.2
- ;;^UTILITY(U,$J,358.3,12387,1,4,0)
- ;;=4^Endometriosis of Fallopian Tube
- ;;^UTILITY(U,$J,358.3,12387,2)
- ;;=^40475
- ;;^UTILITY(U,$J,358.3,12388,0)
- ;;=620.0^^62^738^47
- ;;^UTILITY(U,$J,358.3,12388,1,0)
+ ;;^UTILITY(U,$J,358.3,12089,1,3,0)
+ ;;=3^Fall Same Level w/ Strike Against Object,Subsequent
+ ;;^UTILITY(U,$J,358.3,12089,1,4,0)
+ ;;=4^W01.10XD
+ ;;^UTILITY(U,$J,358.3,12089,2)
+ ;;=^5059526
+ ;;^UTILITY(U,$J,358.3,12090,0)
+ ;;=W01.0XXD^^47^540^3
+ ;;^UTILITY(U,$J,358.3,12090,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12388,1,3,0)
- ;;=3^620.0
- ;;^UTILITY(U,$J,358.3,12388,1,4,0)
- ;;=4^Follicular cyst of ovary
- ;;^UTILITY(U,$J,358.3,12388,2)
- ;;=^47322
- ;;^UTILITY(U,$J,358.3,12389,0)
- ;;=620.1^^62^738^27
- ;;^UTILITY(U,$J,358.3,12389,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12389,1,3,0)
- ;;=3^620.1
- ;;^UTILITY(U,$J,358.3,12389,1,4,0)
- ;;=4^Corpus luteum cyst or hematoma
- ;;^UTILITY(U,$J,358.3,12389,2)
- ;;=^270508
- ;;^UTILITY(U,$J,358.3,12390,0)
- ;;=620.8^^62^738^62
- ;;^UTILITY(U,$J,358.3,12390,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12390,1,3,0)
- ;;=3^620.8
+ ;;^UTILITY(U,$J,358.3,12090,1,3,0)
+ ;;=3^Fall Same Level w/o Strike Against Object,Subsequent
+ ;;^UTILITY(U,$J,358.3,12090,1,4,0)
+ ;;=4^W01.0XXD
+ ;;^UTILITY(U,$J,358.3,12090,2)
+ ;;=^5059523
+ ;;^UTILITY(U,$J,358.3,12091,0)
+ ;;=W18.30XD^^47^540^4

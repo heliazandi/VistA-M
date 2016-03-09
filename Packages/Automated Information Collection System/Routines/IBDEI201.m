@@ -1,122 +1,136 @@
-IBDEI201 ; ; 06-AUG-2015
+IBDEI201 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34985,0)
- ;;=S89.322S^^183^2024^89
- ;;^UTILITY(U,$J,358.3,34985,1,0)
+ ;;^UTILITY(U,$J,358.3,33918,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34985,1,3,0)
- ;;=3^Sltr-haris Type II physeal fx lower end of l fibula, sequela
- ;;^UTILITY(U,$J,358.3,34985,1,4,0)
- ;;=4^S89.322S
- ;;^UTILITY(U,$J,358.3,34985,2)
- ;;=^5137378
- ;;^UTILITY(U,$J,358.3,34986,0)
- ;;=S89.221S^^183^2024^93
- ;;^UTILITY(U,$J,358.3,34986,1,0)
+ ;;^UTILITY(U,$J,358.3,33918,1,3,0)
+ ;;=3^Malig Neop Colon,Unspec
+ ;;^UTILITY(U,$J,358.3,33918,1,4,0)
+ ;;=4^C18.9
+ ;;^UTILITY(U,$J,358.3,33918,2)
+ ;;=^5000929
+ ;;^UTILITY(U,$J,358.3,33919,0)
+ ;;=C49.9^^131^1680^118
+ ;;^UTILITY(U,$J,358.3,33919,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34986,1,3,0)
- ;;=3^Sltr-haris Type II physeal fx upper end of r fibula, sequela
- ;;^UTILITY(U,$J,358.3,34986,1,4,0)
- ;;=4^S89.221S
- ;;^UTILITY(U,$J,358.3,34986,2)
- ;;=^5043792
- ;;^UTILITY(U,$J,358.3,34987,0)
- ;;=S89.321S^^183^2024^90
- ;;^UTILITY(U,$J,358.3,34987,1,0)
+ ;;^UTILITY(U,$J,358.3,33919,1,3,0)
+ ;;=3^Malig Neop Connective/Soft Tissue,Unspec
+ ;;^UTILITY(U,$J,358.3,33919,1,4,0)
+ ;;=4^C49.9
+ ;;^UTILITY(U,$J,358.3,33919,2)
+ ;;=^5001136
+ ;;^UTILITY(U,$J,358.3,33920,0)
+ ;;=C62.12^^131^1680^119
+ ;;^UTILITY(U,$J,358.3,33920,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34987,1,3,0)
- ;;=3^Sltr-haris Type II physeal fx lower end of r fibula, sequela
- ;;^UTILITY(U,$J,358.3,34987,1,4,0)
- ;;=4^S89.321S
- ;;^UTILITY(U,$J,358.3,34987,2)
- ;;=^5043834
- ;;^UTILITY(U,$J,358.3,34988,0)
- ;;=S89.222S^^183^2024^94
- ;;^UTILITY(U,$J,358.3,34988,1,0)
+ ;;^UTILITY(U,$J,358.3,33920,1,3,0)
+ ;;=3^Malig Neop Descended Left Testis
+ ;;^UTILITY(U,$J,358.3,33920,1,4,0)
+ ;;=4^C62.12
+ ;;^UTILITY(U,$J,358.3,33920,2)
+ ;;=^5001235
+ ;;^UTILITY(U,$J,358.3,33921,0)
+ ;;=C62.11^^131^1680^120
+ ;;^UTILITY(U,$J,358.3,33921,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34988,1,3,0)
- ;;=3^Sltr-haris Type II physeal fx upper end of l fibula, sequela
- ;;^UTILITY(U,$J,358.3,34988,1,4,0)
- ;;=4^S89.222S
- ;;^UTILITY(U,$J,358.3,34988,2)
- ;;=^5043798
- ;;^UTILITY(U,$J,358.3,34989,0)
- ;;=M84.364S^^183^2024^103
- ;;^UTILITY(U,$J,358.3,34989,1,0)
+ ;;^UTILITY(U,$J,358.3,33921,1,3,0)
+ ;;=3^Malig Neop Descended Right Testis
+ ;;^UTILITY(U,$J,358.3,33921,1,4,0)
+ ;;=4^C62.11
+ ;;^UTILITY(U,$J,358.3,33921,2)
+ ;;=^5001234
+ ;;^UTILITY(U,$J,358.3,33922,0)
+ ;;=C15.9^^131^1680^121
+ ;;^UTILITY(U,$J,358.3,33922,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34989,1,3,0)
- ;;=3^Stress fracture, left fibula, sequela
- ;;^UTILITY(U,$J,358.3,34989,1,4,0)
- ;;=4^M84.364S
- ;;^UTILITY(U,$J,358.3,34989,2)
- ;;=^5013727
- ;;^UTILITY(U,$J,358.3,34990,0)
- ;;=M84.363S^^183^2024^105
- ;;^UTILITY(U,$J,358.3,34990,1,0)
+ ;;^UTILITY(U,$J,358.3,33922,1,3,0)
+ ;;=3^Malig Neop Esophagus,Unspec
+ ;;^UTILITY(U,$J,358.3,33922,1,4,0)
+ ;;=4^C15.9
+ ;;^UTILITY(U,$J,358.3,33922,2)
+ ;;=^5000919
+ ;;^UTILITY(U,$J,358.3,33923,0)
+ ;;=C24.0^^131^1680^122
+ ;;^UTILITY(U,$J,358.3,33923,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34990,1,3,0)
- ;;=3^Stress fracture, right fibula, sequela
- ;;^UTILITY(U,$J,358.3,34990,1,4,0)
- ;;=4^M84.363S
- ;;^UTILITY(U,$J,358.3,34990,2)
- ;;=^5013721
- ;;^UTILITY(U,$J,358.3,34991,0)
- ;;=S82.822S^^183^2024^107
- ;;^UTILITY(U,$J,358.3,34991,1,0)
+ ;;^UTILITY(U,$J,358.3,33923,1,3,0)
+ ;;=3^Malig Neop Extrahepatic Bile Duct
+ ;;^UTILITY(U,$J,358.3,33923,1,4,0)
+ ;;=4^C24.0
+ ;;^UTILITY(U,$J,358.3,33923,2)
+ ;;=^5000940
+ ;;^UTILITY(U,$J,358.3,33924,0)
+ ;;=C23.^^131^1680^124
+ ;;^UTILITY(U,$J,358.3,33924,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34991,1,3,0)
- ;;=3^Torus fracture of lower end of left fibula, sequela
- ;;^UTILITY(U,$J,358.3,34991,1,4,0)
- ;;=4^S82.822S
- ;;^UTILITY(U,$J,358.3,34991,2)
- ;;=^5136943
- ;;^UTILITY(U,$J,358.3,34992,0)
- ;;=S82.821S^^183^2024^109
- ;;^UTILITY(U,$J,358.3,34992,1,0)
+ ;;^UTILITY(U,$J,358.3,33924,1,3,0)
+ ;;=3^Malig Neop Gallbladder
+ ;;^UTILITY(U,$J,358.3,33924,1,4,0)
+ ;;=4^C23.
+ ;;^UTILITY(U,$J,358.3,33924,2)
+ ;;=^267098
+ ;;^UTILITY(U,$J,358.3,33925,0)
+ ;;=C32.9^^131^1680^128
+ ;;^UTILITY(U,$J,358.3,33925,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34992,1,3,0)
- ;;=3^Torus fracture of lower end of right fibula, sequela
- ;;^UTILITY(U,$J,358.3,34992,1,4,0)
- ;;=4^S82.821S
- ;;^UTILITY(U,$J,358.3,34992,2)
- ;;=^5042430
- ;;^UTILITY(U,$J,358.3,34993,0)
- ;;=S82.812S^^183^2024^111
- ;;^UTILITY(U,$J,358.3,34993,1,0)
+ ;;^UTILITY(U,$J,358.3,33925,1,3,0)
+ ;;=3^Malig Neop Larynx,Unspec
+ ;;^UTILITY(U,$J,358.3,33925,1,4,0)
+ ;;=4^C32.9
+ ;;^UTILITY(U,$J,358.3,33925,2)
+ ;;=^5000956
+ ;;^UTILITY(U,$J,358.3,33926,0)
+ ;;=C64.2^^131^1680^132
+ ;;^UTILITY(U,$J,358.3,33926,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34993,1,3,0)
- ;;=3^Torus fracture of upper end of left fibula, sequela
- ;;^UTILITY(U,$J,358.3,34993,1,4,0)
- ;;=4^S82.812S
- ;;^UTILITY(U,$J,358.3,34993,2)
- ;;=^5042418
- ;;^UTILITY(U,$J,358.3,34994,0)
- ;;=S82.811S^^183^2024^113
- ;;^UTILITY(U,$J,358.3,34994,1,0)
+ ;;^UTILITY(U,$J,358.3,33926,1,3,0)
+ ;;=3^Malig Neop Left Kidney,Except Renal Pelvis
+ ;;^UTILITY(U,$J,358.3,33926,1,4,0)
+ ;;=4^C64.2
+ ;;^UTILITY(U,$J,358.3,33926,2)
+ ;;=^5001249
+ ;;^UTILITY(U,$J,358.3,33927,0)
+ ;;=C65.2^^131^1680^135
+ ;;^UTILITY(U,$J,358.3,33927,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34994,1,3,0)
- ;;=3^Torus fracture of upper end of right fibula, sequela
- ;;^UTILITY(U,$J,358.3,34994,1,4,0)
- ;;=4^S82.811S
- ;;^UTILITY(U,$J,358.3,34994,2)
- ;;=^5042412
- ;;^UTILITY(U,$J,358.3,34995,0)
- ;;=S82.865S^^183^2024^37
- ;;^UTILITY(U,$J,358.3,34995,1,0)
+ ;;^UTILITY(U,$J,358.3,33927,1,3,0)
+ ;;=3^Malig Neop Left Renal Pelvis
+ ;;^UTILITY(U,$J,358.3,33927,1,4,0)
+ ;;=4^C65.2
+ ;;^UTILITY(U,$J,358.3,33927,2)
+ ;;=^5001252
+ ;;^UTILITY(U,$J,358.3,33928,0)
+ ;;=C62.92^^131^1680^136
+ ;;^UTILITY(U,$J,358.3,33928,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34995,1,3,0)
- ;;=3^Nondisp Maisonneuve's fx of left leg, sequela   
- ;;^UTILITY(U,$J,358.3,34995,1,4,0)
- ;;=4^S82.865S
- ;;^UTILITY(U,$J,358.3,34995,2)
- ;;=^5042750
- ;;^UTILITY(U,$J,358.3,34996,0)
- ;;=S82.864S^^183^2024^38
- ;;^UTILITY(U,$J,358.3,34996,1,0)
+ ;;^UTILITY(U,$J,358.3,33928,1,3,0)
+ ;;=3^Malig Neop Left Testis,Unspec
+ ;;^UTILITY(U,$J,358.3,33928,1,4,0)
+ ;;=4^C62.92
+ ;;^UTILITY(U,$J,358.3,33928,2)
+ ;;=^5001238
+ ;;^UTILITY(U,$J,358.3,33929,0)
+ ;;=C22.8^^131^1680^137
+ ;;^UTILITY(U,$J,358.3,33929,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34996,1,3,0)
- ;;=3^Nondisp Maisonneuve's fx of right leg, sequela   
- ;;^UTILITY(U,$J,358.3,34996,1,4,0)
- ;;=4^S82.864S
+ ;;^UTILITY(U,$J,358.3,33929,1,3,0)
+ ;;=3^Malig Neop Liver,Primary
+ ;;^UTILITY(U,$J,358.3,33929,1,4,0)
+ ;;=4^C22.8
+ ;;^UTILITY(U,$J,358.3,33929,2)
+ ;;=^5000939
+ ;;^UTILITY(U,$J,358.3,33930,0)
+ ;;=C06.9^^131^1680^140
+ ;;^UTILITY(U,$J,358.3,33930,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33930,1,3,0)
+ ;;=3^Malig Neop Mouth,Unspec
+ ;;^UTILITY(U,$J,358.3,33930,1,4,0)
+ ;;=4^C06.9
+ ;;^UTILITY(U,$J,358.3,33930,2)
+ ;;=^5000901
+ ;;^UTILITY(U,$J,358.3,33931,0)
+ ;;=C11.9^^131^1680^141
+ ;;^UTILITY(U,$J,358.3,33931,1,0)
+ ;;=^358.31IA^4^2

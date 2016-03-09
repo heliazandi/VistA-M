@@ -1,124 +1,138 @@
-IBDEI1Z4 ; ; 06-AUG-2015
+IBDEI1Z4 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34592,2)
- ;;=^5034024
- ;;^UTILITY(U,$J,358.3,34593,0)
- ;;=S62.336S^^183^2021^38
- ;;^UTILITY(U,$J,358.3,34593,1,0)
+ ;;^UTILITY(U,$J,358.3,33490,2)
+ ;;=^5006865
+ ;;^UTILITY(U,$J,358.3,33491,0)
+ ;;=H81.13^^131^1670^8
+ ;;^UTILITY(U,$J,358.3,33491,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34593,1,3,0)
- ;;=3^Disp fx of neck of 5th MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34593,1,4,0)
- ;;=4^S62.336S
- ;;^UTILITY(U,$J,358.3,34593,2)
- ;;=^5034017
- ;;^UTILITY(U,$J,358.3,34594,0)
- ;;=S62.252S^^183^2021^29
- ;;^UTILITY(U,$J,358.3,34594,1,0)
+ ;;^UTILITY(U,$J,358.3,33491,1,3,0)
+ ;;=3^Benign Paroxysmal Vertigo,Bilateral
+ ;;^UTILITY(U,$J,358.3,33491,1,4,0)
+ ;;=4^H81.13
+ ;;^UTILITY(U,$J,358.3,33491,2)
+ ;;=^5006867
+ ;;^UTILITY(U,$J,358.3,33492,0)
+ ;;=H81.10^^131^1670^11
+ ;;^UTILITY(U,$J,358.3,33492,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34594,1,3,0)
- ;;=3^Disp fx of neck of 1st MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34594,1,4,0)
- ;;=4^S62.252S
- ;;^UTILITY(U,$J,358.3,34594,2)
- ;;=^5033723
- ;;^UTILITY(U,$J,358.3,34595,0)
- ;;=S62.251S^^183^2021^30
- ;;^UTILITY(U,$J,358.3,34595,1,0)
+ ;;^UTILITY(U,$J,358.3,33492,1,3,0)
+ ;;=3^Benign Paroxysmal Vertigo,Unspec Ear
+ ;;^UTILITY(U,$J,358.3,33492,1,4,0)
+ ;;=4^H81.10
+ ;;^UTILITY(U,$J,358.3,33492,2)
+ ;;=^5006864
+ ;;^UTILITY(U,$J,358.3,33493,0)
+ ;;=B37.84^^131^1670^12
+ ;;^UTILITY(U,$J,358.3,33493,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34595,1,3,0)
- ;;=3^Disp fx of neck of 1st MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34595,1,4,0)
- ;;=4^S62.251S
- ;;^UTILITY(U,$J,358.3,34595,2)
- ;;=^5033716
- ;;^UTILITY(U,$J,358.3,34596,0)
- ;;=S62.335S^^183^2021^35
- ;;^UTILITY(U,$J,358.3,34596,1,0)
+ ;;^UTILITY(U,$J,358.3,33493,1,3,0)
+ ;;=3^Candidal Otitis Externa
+ ;;^UTILITY(U,$J,358.3,33493,1,4,0)
+ ;;=4^B37.84
+ ;;^UTILITY(U,$J,358.3,33493,2)
+ ;;=^266875
+ ;;^UTILITY(U,$J,358.3,33494,0)
+ ;;=H60.313^^131^1670^18
+ ;;^UTILITY(U,$J,358.3,33494,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34596,1,3,0)
- ;;=3^Disp fx of neck of 4th MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34596,1,4,0)
- ;;=4^S62.335S
- ;;^UTILITY(U,$J,358.3,34596,2)
- ;;=^5034010
- ;;^UTILITY(U,$J,358.3,34597,0)
- ;;=S62.334S^^183^2021^36
- ;;^UTILITY(U,$J,358.3,34597,1,0)
+ ;;^UTILITY(U,$J,358.3,33494,1,3,0)
+ ;;=3^Diffuse Otitis Externa,Bilateral
+ ;;^UTILITY(U,$J,358.3,33494,1,4,0)
+ ;;=4^H60.313
+ ;;^UTILITY(U,$J,358.3,33494,2)
+ ;;=^5006449
+ ;;^UTILITY(U,$J,358.3,33495,0)
+ ;;=B37.0^^131^1671^13
+ ;;^UTILITY(U,$J,358.3,33495,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34597,1,3,0)
- ;;=3^Disp fx of neck of 4th MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34597,1,4,0)
- ;;=4^S62.334S
- ;;^UTILITY(U,$J,358.3,34597,2)
- ;;=^5034003
- ;;^UTILITY(U,$J,358.3,34598,0)
- ;;=S62.331S^^183^2021^31
- ;;^UTILITY(U,$J,358.3,34598,1,0)
+ ;;^UTILITY(U,$J,358.3,33495,1,3,0)
+ ;;=3^Candidal Stomatitis
+ ;;^UTILITY(U,$J,358.3,33495,1,4,0)
+ ;;=4^B37.0
+ ;;^UTILITY(U,$J,358.3,33495,2)
+ ;;=^5000612
+ ;;^UTILITY(U,$J,358.3,33496,0)
+ ;;=B37.83^^131^1671^12
+ ;;^UTILITY(U,$J,358.3,33496,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34598,1,3,0)
- ;;=3^Disp fx of neck of 2nd MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34598,1,4,0)
- ;;=4^S62.331S
- ;;^UTILITY(U,$J,358.3,34598,2)
- ;;=^5033982
- ;;^UTILITY(U,$J,358.3,34599,0)
- ;;=S62.330S^^183^2021^32
- ;;^UTILITY(U,$J,358.3,34599,1,0)
+ ;;^UTILITY(U,$J,358.3,33496,1,3,0)
+ ;;=3^Candidal Cheilitis
+ ;;^UTILITY(U,$J,358.3,33496,1,4,0)
+ ;;=4^B37.83
+ ;;^UTILITY(U,$J,358.3,33496,2)
+ ;;=^5000622
+ ;;^UTILITY(U,$J,358.3,33497,0)
+ ;;=J00.^^131^1671^6
+ ;;^UTILITY(U,$J,358.3,33497,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34599,1,3,0)
- ;;=3^Disp fx of neck of 2nd MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34599,1,4,0)
- ;;=4^S62.330S
- ;;^UTILITY(U,$J,358.3,34599,2)
- ;;=^5033975
- ;;^UTILITY(U,$J,358.3,34600,0)
- ;;=S62.333S^^183^2021^33
- ;;^UTILITY(U,$J,358.3,34600,1,0)
+ ;;^UTILITY(U,$J,358.3,33497,1,3,0)
+ ;;=3^Acute Nasopharyngitis 
+ ;;^UTILITY(U,$J,358.3,33497,1,4,0)
+ ;;=4^J00.
+ ;;^UTILITY(U,$J,358.3,33497,2)
+ ;;=^5008115
+ ;;^UTILITY(U,$J,358.3,33498,0)
+ ;;=J01.00^^131^1671^5
+ ;;^UTILITY(U,$J,358.3,33498,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34600,1,3,0)
- ;;=3^Disp fx of neck of 3rd MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34600,1,4,0)
- ;;=4^S62.333S
- ;;^UTILITY(U,$J,358.3,34600,2)
- ;;=^5033996
- ;;^UTILITY(U,$J,358.3,34601,0)
- ;;=S62.332S^^183^2021^34
- ;;^UTILITY(U,$J,358.3,34601,1,0)
+ ;;^UTILITY(U,$J,358.3,33498,1,3,0)
+ ;;=3^Acute Maxillary Sinusitis,Unspec
+ ;;^UTILITY(U,$J,358.3,33498,1,4,0)
+ ;;=4^J01.00
+ ;;^UTILITY(U,$J,358.3,33498,2)
+ ;;=^5008116
+ ;;^UTILITY(U,$J,358.3,33499,0)
+ ;;=J01.10^^131^1671^1
+ ;;^UTILITY(U,$J,358.3,33499,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34601,1,3,0)
- ;;=3^Disp fx of neck of 3rd MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34601,1,4,0)
- ;;=4^S62.332S
- ;;^UTILITY(U,$J,358.3,34601,2)
- ;;=^5033989
- ;;^UTILITY(U,$J,358.3,34602,0)
- ;;=S62.327S^^183^2021^57
- ;;^UTILITY(U,$J,358.3,34602,1,0)
+ ;;^UTILITY(U,$J,358.3,33499,1,3,0)
+ ;;=3^Acute Frontal Sinusitis,Unspec
+ ;;^UTILITY(U,$J,358.3,33499,1,4,0)
+ ;;=4^J01.10
+ ;;^UTILITY(U,$J,358.3,33499,2)
+ ;;=^5008118
+ ;;^UTILITY(U,$J,358.3,33500,0)
+ ;;=J02.9^^131^1671^7
+ ;;^UTILITY(U,$J,358.3,33500,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34602,1,3,0)
- ;;=3^Disp fx of shaft of 5th MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34602,1,4,0)
- ;;=4^S62.327S
- ;;^UTILITY(U,$J,358.3,34602,2)
- ;;=^5033954
- ;;^UTILITY(U,$J,358.3,34603,0)
- ;;=S62.326S^^183^2021^58
- ;;^UTILITY(U,$J,358.3,34603,1,0)
+ ;;^UTILITY(U,$J,358.3,33500,1,3,0)
+ ;;=3^Acute Pharyngitis,Unspec
+ ;;^UTILITY(U,$J,358.3,33500,1,4,0)
+ ;;=4^J02.9
+ ;;^UTILITY(U,$J,358.3,33500,2)
+ ;;=^5008130
+ ;;^UTILITY(U,$J,358.3,33501,0)
+ ;;=J03.91^^131^1671^8
+ ;;^UTILITY(U,$J,358.3,33501,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34603,1,3,0)
- ;;=3^Disp fx of shaft of 5th MC bone, right hand, sequela
- ;;^UTILITY(U,$J,358.3,34603,1,4,0)
- ;;=4^S62.326S
- ;;^UTILITY(U,$J,358.3,34603,2)
- ;;=^5033947
- ;;^UTILITY(U,$J,358.3,34604,0)
- ;;=S62.242S^^183^2021^49
- ;;^UTILITY(U,$J,358.3,34604,1,0)
+ ;;^UTILITY(U,$J,358.3,33501,1,3,0)
+ ;;=3^Acute Recurrent Tonsillitis,Unspec
+ ;;^UTILITY(U,$J,358.3,33501,1,4,0)
+ ;;=4^J03.91
+ ;;^UTILITY(U,$J,358.3,33501,2)
+ ;;=^5008136
+ ;;^UTILITY(U,$J,358.3,33502,0)
+ ;;=J04.0^^131^1671^3
+ ;;^UTILITY(U,$J,358.3,33502,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34604,1,3,0)
- ;;=3^Disp fx of shaft of 1st MC bone, left hand, sequela
- ;;^UTILITY(U,$J,358.3,34604,1,4,0)
- ;;=4^S62.242S
+ ;;^UTILITY(U,$J,358.3,33502,1,3,0)
+ ;;=3^Acute Laryngitis
+ ;;^UTILITY(U,$J,358.3,33502,1,4,0)
+ ;;=4^J04.0
+ ;;^UTILITY(U,$J,358.3,33502,2)
+ ;;=^5008137
+ ;;^UTILITY(U,$J,358.3,33503,0)
+ ;;=J06.0^^131^1671^4
+ ;;^UTILITY(U,$J,358.3,33503,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33503,1,3,0)
+ ;;=3^Acute Laryngopharyngitis
+ ;;^UTILITY(U,$J,358.3,33503,1,4,0)
+ ;;=4^J06.0
+ ;;^UTILITY(U,$J,358.3,33503,2)
+ ;;=^269876
+ ;;^UTILITY(U,$J,358.3,33504,0)
+ ;;=J06.9^^131^1671^9

@@ -1,0 +1,130 @@
+IBDEI2K6 ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,43413,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43413,1,3,0)
+ ;;=3^Cereb Infarc d/t Lt Carotid Artery Occl/Sten
+ ;;^UTILITY(U,$J,358.3,43413,1,4,0)
+ ;;=4^I63.232
+ ;;^UTILITY(U,$J,358.3,43413,2)
+ ;;=^5007317
+ ;;^UTILITY(U,$J,358.3,43414,0)
+ ;;=I63.9^^167^2078^73
+ ;;^UTILITY(U,$J,358.3,43414,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43414,1,3,0)
+ ;;=3^Cerebral Infarction,Unspec
+ ;;^UTILITY(U,$J,358.3,43414,1,4,0)
+ ;;=4^I63.9
+ ;;^UTILITY(U,$J,358.3,43414,2)
+ ;;=^5007355
+ ;;^UTILITY(U,$J,358.3,43415,0)
+ ;;=I70.211^^167^2078^57
+ ;;^UTILITY(U,$J,358.3,43415,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43415,1,3,0)
+ ;;=3^Athscl of Rt Leg w/ Intrmt Claud
+ ;;^UTILITY(U,$J,358.3,43415,1,4,0)
+ ;;=4^I70.211
+ ;;^UTILITY(U,$J,358.3,43415,2)
+ ;;=^5007578
+ ;;^UTILITY(U,$J,358.3,43416,0)
+ ;;=I70.212^^167^2078^50
+ ;;^UTILITY(U,$J,358.3,43416,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43416,1,3,0)
+ ;;=3^Athscl of Lt Leg w/ Intrmt Claud
+ ;;^UTILITY(U,$J,358.3,43416,1,4,0)
+ ;;=4^I70.212
+ ;;^UTILITY(U,$J,358.3,43416,2)
+ ;;=^5007579
+ ;;^UTILITY(U,$J,358.3,43417,0)
+ ;;=I70.213^^167^2078^47
+ ;;^UTILITY(U,$J,358.3,43417,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43417,1,3,0)
+ ;;=3^Athscl Bilateral Legs w/ Intrmt Claud
+ ;;^UTILITY(U,$J,358.3,43417,1,4,0)
+ ;;=4^I70.213
+ ;;^UTILITY(U,$J,358.3,43417,2)
+ ;;=^5007580
+ ;;^UTILITY(U,$J,358.3,43418,0)
+ ;;=I70.221^^167^2078^58
+ ;;^UTILITY(U,$J,358.3,43418,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43418,1,3,0)
+ ;;=3^Athscl of Rt Leg w/ Rest Pain
+ ;;^UTILITY(U,$J,358.3,43418,1,4,0)
+ ;;=4^I70.221
+ ;;^UTILITY(U,$J,358.3,43418,2)
+ ;;=^5007583
+ ;;^UTILITY(U,$J,358.3,43419,0)
+ ;;=I70.232^^167^2078^60
+ ;;^UTILITY(U,$J,358.3,43419,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43419,1,3,0)
+ ;;=3^Athscl of Rt Leg w/ Ulceration of Calf
+ ;;^UTILITY(U,$J,358.3,43419,1,4,0)
+ ;;=4^I70.232
+ ;;^UTILITY(U,$J,358.3,43419,2)
+ ;;=^5007589
+ ;;^UTILITY(U,$J,358.3,43420,0)
+ ;;=I70.233^^167^2078^59
+ ;;^UTILITY(U,$J,358.3,43420,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43420,1,3,0)
+ ;;=3^Athscl of Rt Leg w/ Ulceration of Ankle
+ ;;^UTILITY(U,$J,358.3,43420,1,4,0)
+ ;;=4^I70.233
+ ;;^UTILITY(U,$J,358.3,43420,2)
+ ;;=^5007590
+ ;;^UTILITY(U,$J,358.3,43421,0)
+ ;;=I70.234^^167^2078^61
+ ;;^UTILITY(U,$J,358.3,43421,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43421,1,3,0)
+ ;;=3^Athscl of Rt Leg w/ Ulceration of Heel & Midfoot
+ ;;^UTILITY(U,$J,358.3,43421,1,4,0)
+ ;;=4^I70.234
+ ;;^UTILITY(U,$J,358.3,43421,2)
+ ;;=^5007591
+ ;;^UTILITY(U,$J,358.3,43422,0)
+ ;;=I70.235^^167^2078^62
+ ;;^UTILITY(U,$J,358.3,43422,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43422,1,3,0)
+ ;;=3^Athscl of Rt Leg w/ Ulceration of Oth Part of Foot
+ ;;^UTILITY(U,$J,358.3,43422,1,4,0)
+ ;;=4^I70.235
+ ;;^UTILITY(U,$J,358.3,43422,2)
+ ;;=^5007592
+ ;;^UTILITY(U,$J,358.3,43423,0)
+ ;;=I70.261^^167^2078^56
+ ;;^UTILITY(U,$J,358.3,43423,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43423,1,3,0)
+ ;;=3^Athscl of Rt Leg w/ Gangrene
+ ;;^UTILITY(U,$J,358.3,43423,1,4,0)
+ ;;=4^I70.261
+ ;;^UTILITY(U,$J,358.3,43423,2)
+ ;;=^5007603
+ ;;^UTILITY(U,$J,358.3,43424,0)
+ ;;=I70.241^^167^2078^55
+ ;;^UTILITY(U,$J,358.3,43424,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43424,1,3,0)
+ ;;=3^Athscl of Lt Leg w/ Ulceration of Thigh
+ ;;^UTILITY(U,$J,358.3,43424,1,4,0)
+ ;;=4^I70.241
+ ;;^UTILITY(U,$J,358.3,43424,2)
+ ;;=^5007595
+ ;;^UTILITY(U,$J,358.3,43425,0)
+ ;;=I70.242^^167^2078^52
+ ;;^UTILITY(U,$J,358.3,43425,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43425,1,3,0)
+ ;;=3^Athscl of Lt Leg w/ Ulceration of Calf
+ ;;^UTILITY(U,$J,358.3,43425,1,4,0)
+ ;;=4^I70.242

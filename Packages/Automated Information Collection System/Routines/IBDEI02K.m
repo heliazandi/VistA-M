@@ -1,128 +1,134 @@
-IBDEI02K ; ; 06-AUG-2015
+IBDEI02K ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,648,1,3,0)
- ;;=3^Personal history of malignant neoplasm of nasl cav, mid ear, & acces sinus
- ;;^UTILITY(U,$J,358.3,648,1,4,0)
- ;;=4^Z85.22
- ;;^UTILITY(U,$J,358.3,648,2)
- ;;=^5063412
- ;;^UTILITY(U,$J,358.3,649,0)
- ;;=Z85.238^^2^27^17
- ;;^UTILITY(U,$J,358.3,649,1,0)
+ ;;^UTILITY(U,$J,358.3,714,1,2,0)
+ ;;=2^NERVE BLK SCIATIC NERVE,SNGL INJ
+ ;;^UTILITY(U,$J,358.3,714,1,4,0)
+ ;;=4^64445
+ ;;^UTILITY(U,$J,358.3,715,0)
+ ;;=64446^^5^72^20^^^^1
+ ;;^UTILITY(U,$J,358.3,715,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,649,1,3,0)
- ;;=3^Personal history of malignant neoplasm of thymus NEC
- ;;^UTILITY(U,$J,358.3,649,1,4,0)
- ;;=4^Z85.238
- ;;^UTILITY(U,$J,358.3,649,2)
- ;;=^5063414
- ;;^UTILITY(U,$J,358.3,650,0)
- ;;=Z85.29^^2^27^18
- ;;^UTILITY(U,$J,358.3,650,1,0)
+ ;;^UTILITY(U,$J,358.3,715,1,2,0)
+ ;;=2^NERVE BLK SCIATIC NERVE,CONT INFUSION
+ ;;^UTILITY(U,$J,358.3,715,1,4,0)
+ ;;=4^64446
+ ;;^UTILITY(U,$J,358.3,716,0)
+ ;;=64418^^5^72^23^^^^1
+ ;;^UTILITY(U,$J,358.3,716,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,650,1,3,0)
- ;;=3^Personal history of malignant neoplasm of resp and intrathorac organs
- ;;^UTILITY(U,$J,358.3,650,1,4,0)
- ;;=4^Z85.29
- ;;^UTILITY(U,$J,358.3,650,2)
- ;;=^5063415
- ;;^UTILITY(U,$J,358.3,651,0)
- ;;=Z85.3^^2^27^19
- ;;^UTILITY(U,$J,358.3,651,1,0)
+ ;;^UTILITY(U,$J,358.3,716,1,2,0)
+ ;;=2^NERVE BLK SUPRASCAPULAR NERVE
+ ;;^UTILITY(U,$J,358.3,716,1,4,0)
+ ;;=4^64418
+ ;;^UTILITY(U,$J,358.3,717,0)
+ ;;=64400^^5^72^24^^^^1
+ ;;^UTILITY(U,$J,358.3,717,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,651,1,3,0)
- ;;=3^Personal history of malignant neoplasm of breast
- ;;^UTILITY(U,$J,358.3,651,1,4,0)
- ;;=4^Z85.3
- ;;^UTILITY(U,$J,358.3,651,2)
- ;;=^5063416
- ;;^UTILITY(U,$J,358.3,652,0)
- ;;=Z85.41^^2^27^20
- ;;^UTILITY(U,$J,358.3,652,1,0)
+ ;;^UTILITY(U,$J,358.3,717,1,2,0)
+ ;;=2^NERVE BLK TRIGEMINAL,ANY DIVIS/BRANCH
+ ;;^UTILITY(U,$J,358.3,717,1,4,0)
+ ;;=4^64400
+ ;;^UTILITY(U,$J,358.3,718,0)
+ ;;=64408^^5^72^25^^^^1
+ ;;^UTILITY(U,$J,358.3,718,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,652,1,3,0)
- ;;=3^Personal history of malignant neoplasm of cervix uteri
- ;;^UTILITY(U,$J,358.3,652,1,4,0)
- ;;=4^Z85.41
- ;;^UTILITY(U,$J,358.3,652,2)
- ;;=^5063418
- ;;^UTILITY(U,$J,358.3,653,0)
- ;;=Z85.43^^2^27^21
- ;;^UTILITY(U,$J,358.3,653,1,0)
+ ;;^UTILITY(U,$J,358.3,718,1,2,0)
+ ;;=2^NERVE BLK VAGUS NERVE,INJ
+ ;;^UTILITY(U,$J,358.3,718,1,4,0)
+ ;;=4^64408
+ ;;^UTILITY(U,$J,358.3,719,0)
+ ;;=64417^^5^72^2^^^^1
+ ;;^UTILITY(U,$J,358.3,719,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,653,1,3,0)
- ;;=3^Personal history of malignant neoplasm of ovary
- ;;^UTILITY(U,$J,358.3,653,1,4,0)
- ;;=4^Z85.43
- ;;^UTILITY(U,$J,358.3,653,2)
- ;;=^5063420
- ;;^UTILITY(U,$J,358.3,654,0)
- ;;=Z85.44^^2^27^22
- ;;^UTILITY(U,$J,358.3,654,1,0)
+ ;;^UTILITY(U,$J,358.3,719,1,2,0)
+ ;;=2^NERVE BLK AXILLARY NERVE
+ ;;^UTILITY(U,$J,358.3,719,1,4,0)
+ ;;=4^64417
+ ;;^UTILITY(U,$J,358.3,720,0)
+ ;;=01991^^5^72^1^^^^1
+ ;;^UTILITY(U,$J,358.3,720,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,654,1,3,0)
- ;;=3^Personal history of malignant neoplasm of female genital organs
- ;;^UTILITY(U,$J,358.3,654,1,4,0)
- ;;=4^Z85.44
- ;;^UTILITY(U,$J,358.3,654,2)
- ;;=^5063421
- ;;^UTILITY(U,$J,358.3,655,0)
- ;;=Z85.46^^2^27^23
- ;;^UTILITY(U,$J,358.3,655,1,0)
+ ;;^UTILITY(U,$J,358.3,720,1,2,0)
+ ;;=2^ANESTH NERVE BLOCK/INJ DONE BY DIFF MD
+ ;;^UTILITY(U,$J,358.3,720,1,4,0)
+ ;;=4^01991
+ ;;^UTILITY(U,$J,358.3,721,0)
+ ;;=93503^^5^73^2^^^^1
+ ;;^UTILITY(U,$J,358.3,721,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,655,1,3,0)
- ;;=3^Personal history of malignant neoplasm of prostate
- ;;^UTILITY(U,$J,358.3,655,1,4,0)
- ;;=4^Z85.46
- ;;^UTILITY(U,$J,358.3,655,2)
- ;;=^5063423
- ;;^UTILITY(U,$J,358.3,656,0)
- ;;=Z85.47^^2^27^24
- ;;^UTILITY(U,$J,358.3,656,1,0)
+ ;;^UTILITY(U,$J,358.3,721,1,2,0)
+ ;;=2^INSERT SWAN GANZ CATH
+ ;;^UTILITY(U,$J,358.3,721,1,4,0)
+ ;;=4^93503
+ ;;^UTILITY(U,$J,358.3,722,0)
+ ;;=01920^^5^73^1^^^^1
+ ;;^UTILITY(U,$J,358.3,722,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,656,1,3,0)
- ;;=3^Personal history of malignant neoplasm of testis
- ;;^UTILITY(U,$J,358.3,656,1,4,0)
- ;;=4^Z85.47
- ;;^UTILITY(U,$J,358.3,656,2)
- ;;=^5063424
- ;;^UTILITY(U,$J,358.3,657,0)
- ;;=Z85.49^^2^27^25
- ;;^UTILITY(U,$J,358.3,657,1,0)
+ ;;^UTILITY(U,$J,358.3,722,1,2,0)
+ ;;=2^ANESTH CARDIAC CATH/ANGIO/VENTRICULOGR
+ ;;^UTILITY(U,$J,358.3,722,1,4,0)
+ ;;=4^01920
+ ;;^UTILITY(U,$J,358.3,723,0)
+ ;;=36556^^5^74^1^^^^1
+ ;;^UTILITY(U,$J,358.3,723,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,657,1,3,0)
- ;;=3^Personal history of malignant neoplasm of male genital organs
- ;;^UTILITY(U,$J,358.3,657,1,4,0)
- ;;=4^Z85.49
- ;;^UTILITY(U,$J,358.3,657,2)
- ;;=^5063426
- ;;^UTILITY(U,$J,358.3,658,0)
- ;;=Z85.51^^2^27^26
- ;;^UTILITY(U,$J,358.3,658,1,0)
+ ;;^UTILITY(U,$J,358.3,723,1,2,0)
+ ;;=2^INSERT CENTRAL VENOUS CATHETER
+ ;;^UTILITY(U,$J,358.3,723,1,4,0)
+ ;;=4^36556
+ ;;^UTILITY(U,$J,358.3,724,0)
+ ;;=62273^^5^75^1^^^^1
+ ;;^UTILITY(U,$J,358.3,724,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,658,1,3,0)
- ;;=3^Personal history of malignant neoplasm of bladder
- ;;^UTILITY(U,$J,358.3,658,1,4,0)
- ;;=4^Z85.51
- ;;^UTILITY(U,$J,358.3,658,2)
- ;;=^5063428
- ;;^UTILITY(U,$J,358.3,659,0)
- ;;=Z85.528^^2^27^27
- ;;^UTILITY(U,$J,358.3,659,1,0)
+ ;;^UTILITY(U,$J,358.3,724,1,2,0)
+ ;;=2^INJ,EPIDURAL OF BLOOD/CLOT PATCH
+ ;;^UTILITY(U,$J,358.3,724,1,4,0)
+ ;;=4^62273
+ ;;^UTILITY(U,$J,358.3,725,0)
+ ;;=62319^^5^75^3^^^^1
+ ;;^UTILITY(U,$J,358.3,725,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,659,1,3,0)
- ;;=3^Personal history of malignant neoplasm of kidney NEC
- ;;^UTILITY(U,$J,358.3,659,1,4,0)
- ;;=4^Z85.528
- ;;^UTILITY(U,$J,358.3,659,2)
- ;;=^5063430
- ;;^UTILITY(U,$J,358.3,660,0)
- ;;=Z85.79^^2^27^28
- ;;^UTILITY(U,$J,358.3,660,1,0)
+ ;;^UTILITY(U,$J,358.3,725,1,2,0)
+ ;;=2^INJECT SPINE W/CATH L/S (CD)
+ ;;^UTILITY(U,$J,358.3,725,1,4,0)
+ ;;=4^62319
+ ;;^UTILITY(U,$J,358.3,726,0)
+ ;;=62318^^5^75^2^^^^1
+ ;;^UTILITY(U,$J,358.3,726,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,660,1,3,0)
- ;;=3^Personal history of malignant neoplasm of lymphoid, hematpoetc & rel tiss
- ;;^UTILITY(U,$J,358.3,660,1,4,0)
- ;;=4^Z85.79
+ ;;^UTILITY(U,$J,358.3,726,1,2,0)
+ ;;=2^INJECT SPINE W/CATH C/T
+ ;;^UTILITY(U,$J,358.3,726,1,4,0)
+ ;;=4^62318
+ ;;^UTILITY(U,$J,358.3,727,0)
+ ;;=01850^^5^76^1^^^^1
+ ;;^UTILITY(U,$J,358.3,727,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,727,1,2,0)
+ ;;=2^ANESTH VENOOUS PROC FOREARM/WRIST/HAND
+ ;;^UTILITY(U,$J,358.3,727,1,4,0)
+ ;;=4^01850
+ ;;^UTILITY(U,$J,358.3,728,0)
+ ;;=00104^^5^77^1^^^^1
+ ;;^UTILITY(U,$J,358.3,728,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,728,1,2,0)
+ ;;=2^ECT,ANESTHESIA
+ ;;^UTILITY(U,$J,358.3,728,1,4,0)
+ ;;=4^00104
+ ;;^UTILITY(U,$J,358.3,729,0)
+ ;;=00534^^5^78^1^^^^1
+ ;;^UTILITY(U,$J,358.3,729,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,729,1,2,0)
+ ;;=2^AICD INSERT/REPLACE,ANESTH
+ ;;^UTILITY(U,$J,358.3,729,1,4,0)
+ ;;=4^00534
+ ;;^UTILITY(U,$J,358.3,730,0)
+ ;;=00560^^5^78^2^^^^1
+ ;;^UTILITY(U,$J,358.3,730,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,730,1,2,0)
+ ;;=2^AORTIC ANGIOGRAPHY,ANESTH

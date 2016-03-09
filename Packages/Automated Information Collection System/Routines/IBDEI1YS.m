@@ -1,124 +1,140 @@
-IBDEI1YS ; ; 06-AUG-2015
+IBDEI1YS ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34447,1,3,0)
- ;;=3^Nondisp osteochondral fx of right patella, sequela
- ;;^UTILITY(U,$J,358.3,34447,1,4,0)
- ;;=4^S82.014S
- ;;^UTILITY(U,$J,358.3,34447,2)
- ;;=^5040204
- ;;^UTILITY(U,$J,358.3,34448,0)
- ;;=S82.015S^^183^2019^77
- ;;^UTILITY(U,$J,358.3,34448,1,0)
+ ;;^UTILITY(U,$J,358.3,33341,1,4,0)
+ ;;=4^L70.1
+ ;;^UTILITY(U,$J,358.3,33341,2)
+ ;;=^5009269
+ ;;^UTILITY(U,$J,358.3,33342,0)
+ ;;=L70.3^^131^1669^5
+ ;;^UTILITY(U,$J,358.3,33342,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34448,1,3,0)
- ;;=3^Nondisp osteochondral fx of left patella, sequela
- ;;^UTILITY(U,$J,358.3,34448,1,4,0)
- ;;=4^S82.015S
- ;;^UTILITY(U,$J,358.3,34448,2)
- ;;=^5040220
- ;;^UTILITY(U,$J,358.3,34449,0)
- ;;=S82.021S^^183^2019^22
- ;;^UTILITY(U,$J,358.3,34449,1,0)
+ ;;^UTILITY(U,$J,358.3,33342,1,3,0)
+ ;;=3^Acne Tropica
+ ;;^UTILITY(U,$J,358.3,33342,1,4,0)
+ ;;=4^L70.3
+ ;;^UTILITY(U,$J,358.3,33342,2)
+ ;;=^5009270
+ ;;^UTILITY(U,$J,358.3,33343,0)
+ ;;=L70.5^^131^1669^2
+ ;;^UTILITY(U,$J,358.3,33343,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34449,1,3,0)
- ;;=3^Displaced longitudinal fx of right patella, sequela
- ;;^UTILITY(U,$J,358.3,34449,1,4,0)
- ;;=4^S82.021S
- ;;^UTILITY(U,$J,358.3,34449,2)
- ;;=^5040252
- ;;^UTILITY(U,$J,358.3,34450,0)
- ;;=S82.022S^^183^2019^21
- ;;^UTILITY(U,$J,358.3,34450,1,0)
+ ;;^UTILITY(U,$J,358.3,33343,1,3,0)
+ ;;=3^Acne Excoriee des Jeunes Filles
+ ;;^UTILITY(U,$J,358.3,33343,1,4,0)
+ ;;=4^L70.5
+ ;;^UTILITY(U,$J,358.3,33343,2)
+ ;;=^5009272
+ ;;^UTILITY(U,$J,358.3,33344,0)
+ ;;=L70.8^^131^1669^4
+ ;;^UTILITY(U,$J,358.3,33344,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34450,1,3,0)
- ;;=3^Displaced longitudinal fx of left patella, sequela
- ;;^UTILITY(U,$J,358.3,34450,1,4,0)
- ;;=4^S82.022S
- ;;^UTILITY(U,$J,358.3,34450,2)
- ;;=^5040268
- ;;^UTILITY(U,$J,358.3,34451,0)
- ;;=S82.024S^^183^2019^68
- ;;^UTILITY(U,$J,358.3,34451,1,0)
+ ;;^UTILITY(U,$J,358.3,33344,1,3,0)
+ ;;=3^Acne NEC
+ ;;^UTILITY(U,$J,358.3,33344,1,4,0)
+ ;;=4^L70.8
+ ;;^UTILITY(U,$J,358.3,33344,2)
+ ;;=^87239
+ ;;^UTILITY(U,$J,358.3,33345,0)
+ ;;=L70.9^^131^1669^7
+ ;;^UTILITY(U,$J,358.3,33345,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34451,1,3,0)
- ;;=3^Nondisp longitudinal fx of right patella, sequela
- ;;^UTILITY(U,$J,358.3,34451,1,4,0)
- ;;=4^S82.024S
- ;;^UTILITY(U,$J,358.3,34451,2)
- ;;=^5040300
- ;;^UTILITY(U,$J,358.3,34452,0)
- ;;=S82.025S^^183^2019^67
- ;;^UTILITY(U,$J,358.3,34452,1,0)
+ ;;^UTILITY(U,$J,358.3,33345,1,3,0)
+ ;;=3^Acne,Unspec
+ ;;^UTILITY(U,$J,358.3,33345,1,4,0)
+ ;;=4^L70.9
+ ;;^UTILITY(U,$J,358.3,33345,2)
+ ;;=^5009273
+ ;;^UTILITY(U,$J,358.3,33346,0)
+ ;;=L71.0^^131^1669^235
+ ;;^UTILITY(U,$J,358.3,33346,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34452,1,3,0)
- ;;=3^Nondisp longitudinal fx of left patella, sequela
- ;;^UTILITY(U,$J,358.3,34452,1,4,0)
- ;;=4^S82.025S
- ;;^UTILITY(U,$J,358.3,34452,2)
- ;;=^5040316
- ;;^UTILITY(U,$J,358.3,34453,0)
- ;;=S82.031S^^183^2019^44
- ;;^UTILITY(U,$J,358.3,34453,1,0)
+ ;;^UTILITY(U,$J,358.3,33346,1,3,0)
+ ;;=3^Perioral Dermatitis
+ ;;^UTILITY(U,$J,358.3,33346,1,4,0)
+ ;;=4^L71.0
+ ;;^UTILITY(U,$J,358.3,33346,2)
+ ;;=^5009274
+ ;;^UTILITY(U,$J,358.3,33347,0)
+ ;;=L71.1^^131^1669^259
+ ;;^UTILITY(U,$J,358.3,33347,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34453,1,3,0)
- ;;=3^Displaced transverse fx of right patella, sequela
- ;;^UTILITY(U,$J,358.3,34453,1,4,0)
- ;;=4^S82.031S
- ;;^UTILITY(U,$J,358.3,34453,2)
- ;;=^5040348
- ;;^UTILITY(U,$J,358.3,34454,0)
- ;;=S82.032S^^183^2019^43
- ;;^UTILITY(U,$J,358.3,34454,1,0)
+ ;;^UTILITY(U,$J,358.3,33347,1,3,0)
+ ;;=3^Rhinophyma
+ ;;^UTILITY(U,$J,358.3,33347,1,4,0)
+ ;;=4^L71.1
+ ;;^UTILITY(U,$J,358.3,33347,2)
+ ;;=^106083
+ ;;^UTILITY(U,$J,358.3,33348,0)
+ ;;=L71.8^^131^1669^260
+ ;;^UTILITY(U,$J,358.3,33348,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34454,1,3,0)
- ;;=3^Displaced transverse fx of left patella, sequela
- ;;^UTILITY(U,$J,358.3,34454,1,4,0)
- ;;=4^S82.032S
- ;;^UTILITY(U,$J,358.3,34454,2)
- ;;=^5040364
- ;;^UTILITY(U,$J,358.3,34455,0)
- ;;=S82.034S^^183^2019^91
- ;;^UTILITY(U,$J,358.3,34455,1,0)
+ ;;^UTILITY(U,$J,358.3,33348,1,3,0)
+ ;;=3^Rosacea NEC
+ ;;^UTILITY(U,$J,358.3,33348,1,4,0)
+ ;;=4^L71.8
+ ;;^UTILITY(U,$J,358.3,33348,2)
+ ;;=^5009275
+ ;;^UTILITY(U,$J,358.3,33349,0)
+ ;;=L71.9^^131^1669^261
+ ;;^UTILITY(U,$J,358.3,33349,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34455,1,3,0)
- ;;=3^Nondisp transverse fx of right patella, sequela
- ;;^UTILITY(U,$J,358.3,34455,1,4,0)
- ;;=4^S82.034S
- ;;^UTILITY(U,$J,358.3,34455,2)
- ;;=^5040396
- ;;^UTILITY(U,$J,358.3,34456,0)
- ;;=S82.035S^^183^2019^90
- ;;^UTILITY(U,$J,358.3,34456,1,0)
+ ;;^UTILITY(U,$J,358.3,33349,1,3,0)
+ ;;=3^Rosacea,Unspec
+ ;;^UTILITY(U,$J,358.3,33349,1,4,0)
+ ;;=4^L71.9
+ ;;^UTILITY(U,$J,358.3,33349,2)
+ ;;=^5009276
+ ;;^UTILITY(U,$J,358.3,33350,0)
+ ;;=L72.0^^131^1669^142
+ ;;^UTILITY(U,$J,358.3,33350,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34456,1,3,0)
- ;;=3^Nondisp transverse fx of left patella, sequela
- ;;^UTILITY(U,$J,358.3,34456,1,4,0)
- ;;=4^S82.035S
- ;;^UTILITY(U,$J,358.3,34456,2)
- ;;=^5040412
- ;;^UTILITY(U,$J,358.3,34457,0)
- ;;=S82.041S^^183^2019^8
- ;;^UTILITY(U,$J,358.3,34457,1,0)
+ ;;^UTILITY(U,$J,358.3,33350,1,3,0)
+ ;;=3^Epidermal Cyst
+ ;;^UTILITY(U,$J,358.3,33350,1,4,0)
+ ;;=4^L72.0
+ ;;^UTILITY(U,$J,358.3,33350,2)
+ ;;=^5009277
+ ;;^UTILITY(U,$J,358.3,33351,0)
+ ;;=L72.12^^131^1669^285
+ ;;^UTILITY(U,$J,358.3,33351,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34457,1,3,0)
- ;;=3^Displaced comminuted fx of right patella, sequela
- ;;^UTILITY(U,$J,358.3,34457,1,4,0)
- ;;=4^S82.041S
- ;;^UTILITY(U,$J,358.3,34457,2)
- ;;=^5040444
- ;;^UTILITY(U,$J,358.3,34458,0)
- ;;=S82.042S^^183^2019^7
- ;;^UTILITY(U,$J,358.3,34458,1,0)
+ ;;^UTILITY(U,$J,358.3,33351,1,3,0)
+ ;;=3^Trichodermal Cyst
+ ;;^UTILITY(U,$J,358.3,33351,1,4,0)
+ ;;=4^L72.12
+ ;;^UTILITY(U,$J,358.3,33351,2)
+ ;;=^5009279
+ ;;^UTILITY(U,$J,358.3,33352,0)
+ ;;=L72.2^^131^1669^270
+ ;;^UTILITY(U,$J,358.3,33352,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34458,1,3,0)
- ;;=3^Displaced comminuted fx of left patella, sequela
- ;;^UTILITY(U,$J,358.3,34458,1,4,0)
- ;;=4^S82.042S
- ;;^UTILITY(U,$J,358.3,34458,2)
- ;;=^5040460
- ;;^UTILITY(U,$J,358.3,34459,0)
- ;;=S82.044S^^183^2019^54
- ;;^UTILITY(U,$J,358.3,34459,1,0)
+ ;;^UTILITY(U,$J,358.3,33352,1,3,0)
+ ;;=3^Steatocystoma Multiplex
+ ;;^UTILITY(U,$J,358.3,33352,1,4,0)
+ ;;=4^L72.2
+ ;;^UTILITY(U,$J,358.3,33352,2)
+ ;;=^5009280
+ ;;^UTILITY(U,$J,358.3,33353,0)
+ ;;=L72.8^^131^1669^151
+ ;;^UTILITY(U,$J,358.3,33353,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33353,1,3,0)
+ ;;=3^Follicular Cysts of Skin/Subcutaneous Tissue NEC
+ ;;^UTILITY(U,$J,358.3,33353,1,4,0)
+ ;;=4^L72.8
+ ;;^UTILITY(U,$J,358.3,33353,2)
+ ;;=^5009282
+ ;;^UTILITY(U,$J,358.3,33354,0)
+ ;;=L72.9^^131^1669^152
+ ;;^UTILITY(U,$J,358.3,33354,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33354,1,3,0)
+ ;;=3^Follicular Cysts of Skin/Subcutaneous Tissue,Unspec
+ ;;^UTILITY(U,$J,358.3,33354,1,4,0)
+ ;;=4^L72.9
+ ;;^UTILITY(U,$J,358.3,33354,2)
+ ;;=^5009283
+ ;;^UTILITY(U,$J,358.3,33355,0)
+ ;;=L73.0^^131^1669^3

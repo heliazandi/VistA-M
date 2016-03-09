@@ -1,124 +1,132 @@
-IBDEI207 ; ; 06-AUG-2015
+IBDEI207 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35055,1,4,0)
- ;;=4^S32.021S
- ;;^UTILITY(U,$J,358.3,35055,2)
- ;;=^5024412
- ;;^UTILITY(U,$J,358.3,35056,0)
- ;;=S22.021S^^183^2025^44
- ;;^UTILITY(U,$J,358.3,35056,1,0)
+ ;;^UTILITY(U,$J,358.3,33995,2)
+ ;;=^5002309
+ ;;^UTILITY(U,$J,358.3,33996,0)
+ ;;=D75.1^^131^1680^180
+ ;;^UTILITY(U,$J,358.3,33996,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35056,1,3,0)
- ;;=3^Stable burst fracture of second thoracic vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35056,1,4,0)
- ;;=4^S22.021S
- ;;^UTILITY(U,$J,358.3,35056,2)
- ;;=^5022876
- ;;^UTILITY(U,$J,358.3,35057,0)
- ;;=S22.081S^^183^2025^33
- ;;^UTILITY(U,$J,358.3,35057,1,0)
+ ;;^UTILITY(U,$J,358.3,33996,1,3,0)
+ ;;=3^Polycythemia,Secondary
+ ;;^UTILITY(U,$J,358.3,33996,1,4,0)
+ ;;=4^D75.1
+ ;;^UTILITY(U,$J,358.3,33996,2)
+ ;;=^186856
+ ;;^UTILITY(U,$J,358.3,33997,0)
+ ;;=C90.30^^131^1680^183
+ ;;^UTILITY(U,$J,358.3,33997,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35057,1,3,0)
- ;;=3^Stable burst fracture of T11-T12 vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35057,1,4,0)
- ;;=4^S22.081S
- ;;^UTILITY(U,$J,358.3,35057,2)
- ;;=^5023056
- ;;^UTILITY(U,$J,358.3,35058,0)
- ;;=S22.051S^^183^2025^34
- ;;^UTILITY(U,$J,358.3,35058,1,0)
+ ;;^UTILITY(U,$J,358.3,33997,1,3,0)
+ ;;=3^Solitary Plasmacytoma,Not in Remission
+ ;;^UTILITY(U,$J,358.3,33997,1,4,0)
+ ;;=4^C90.30
+ ;;^UTILITY(U,$J,358.3,33997,2)
+ ;;=^5001759
+ ;;^UTILITY(U,$J,358.3,33998,0)
+ ;;=D56.3^^131^1680^184
+ ;;^UTILITY(U,$J,358.3,33998,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35058,1,3,0)
- ;;=3^Stable burst fracture of T5-T6 vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35058,1,4,0)
- ;;=4^S22.051S
- ;;^UTILITY(U,$J,358.3,35058,2)
- ;;=^5022966
- ;;^UTILITY(U,$J,358.3,35059,0)
- ;;=S22.061S^^183^2025^35
- ;;^UTILITY(U,$J,358.3,35059,1,0)
+ ;;^UTILITY(U,$J,358.3,33998,1,3,0)
+ ;;=3^Thalassemia Minor
+ ;;^UTILITY(U,$J,358.3,33998,1,4,0)
+ ;;=4^D56.3
+ ;;^UTILITY(U,$J,358.3,33998,2)
+ ;;=^340497
+ ;;^UTILITY(U,$J,358.3,33999,0)
+ ;;=D56.9^^131^1680^185
+ ;;^UTILITY(U,$J,358.3,33999,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35059,1,3,0)
- ;;=3^Stable burst fracture of T7-T8 vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35059,1,4,0)
- ;;=4^S22.061S
- ;;^UTILITY(U,$J,358.3,35059,2)
- ;;=^5022996
- ;;^UTILITY(U,$J,358.3,35060,0)
- ;;=S22.071S^^183^2025^36
- ;;^UTILITY(U,$J,358.3,35060,1,0)
+ ;;^UTILITY(U,$J,358.3,33999,1,3,0)
+ ;;=3^Thalassemia,Unspec
+ ;;^UTILITY(U,$J,358.3,33999,1,4,0)
+ ;;=4^D56.9
+ ;;^UTILITY(U,$J,358.3,33999,2)
+ ;;=^340606
+ ;;^UTILITY(U,$J,358.3,34000,0)
+ ;;=M31.1^^131^1680^187
+ ;;^UTILITY(U,$J,358.3,34000,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35060,1,3,0)
- ;;=3^Stable burst fracture of T9-T10 vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35060,1,4,0)
- ;;=4^S22.071S
- ;;^UTILITY(U,$J,358.3,35060,2)
- ;;=^5023026
- ;;^UTILITY(U,$J,358.3,35061,0)
- ;;=S32.031S^^183^2025^45
- ;;^UTILITY(U,$J,358.3,35061,1,0)
+ ;;^UTILITY(U,$J,358.3,34000,1,3,0)
+ ;;=3^Thrombotic Microangiopathy
+ ;;^UTILITY(U,$J,358.3,34000,1,4,0)
+ ;;=4^M31.1
+ ;;^UTILITY(U,$J,358.3,34000,2)
+ ;;=^119061
+ ;;^UTILITY(U,$J,358.3,34001,0)
+ ;;=D51.2^^131^1680^188
+ ;;^UTILITY(U,$J,358.3,34001,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35061,1,3,0)
- ;;=3^Stable burst fracture of third lumbar vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35061,1,4,0)
- ;;=4^S32.031S
- ;;^UTILITY(U,$J,358.3,35061,2)
- ;;=^5024442
- ;;^UTILITY(U,$J,358.3,35062,0)
- ;;=S22.031S^^183^2025^46
- ;;^UTILITY(U,$J,358.3,35062,1,0)
+ ;;^UTILITY(U,$J,358.3,34001,1,3,0)
+ ;;=3^Transcobalamin II Deficiency
+ ;;^UTILITY(U,$J,358.3,34001,1,4,0)
+ ;;=4^D51.2
+ ;;^UTILITY(U,$J,358.3,34001,2)
+ ;;=^5002286
+ ;;^UTILITY(U,$J,358.3,34002,0)
+ ;;=D05.92^^131^1680^35
+ ;;^UTILITY(U,$J,358.3,34002,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35062,1,3,0)
- ;;=3^Stable burst fracture of third thoracic vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35062,1,4,0)
- ;;=4^S22.031S
- ;;^UTILITY(U,$J,358.3,35062,2)
- ;;=^5022906
- ;;^UTILITY(U,$J,358.3,35063,0)
- ;;=S32.111S^^183^2025^20
- ;;^UTILITY(U,$J,358.3,35063,1,0)
+ ;;^UTILITY(U,$J,358.3,34002,1,3,0)
+ ;;=3^Carcinoma in Situ Left Breast,Unspec Type
+ ;;^UTILITY(U,$J,358.3,34002,1,4,0)
+ ;;=4^D05.92
+ ;;^UTILITY(U,$J,358.3,34002,2)
+ ;;=^5001937
+ ;;^UTILITY(U,$J,358.3,34003,0)
+ ;;=D05.91^^131^1680^37
+ ;;^UTILITY(U,$J,358.3,34003,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35063,1,3,0)
- ;;=3^Minimally displaced Zone I fracture of sacrum, sequela
- ;;^UTILITY(U,$J,358.3,35063,1,4,0)
- ;;=4^S32.111S
- ;;^UTILITY(U,$J,358.3,35063,2)
- ;;=^5024538
- ;;^UTILITY(U,$J,358.3,35064,0)
- ;;=S32.121S^^183^2025^21
- ;;^UTILITY(U,$J,358.3,35064,1,0)
+ ;;^UTILITY(U,$J,358.3,34003,1,3,0)
+ ;;=3^Carcinoma in Situ Right Breast,Unspec Type
+ ;;^UTILITY(U,$J,358.3,34003,1,4,0)
+ ;;=4^D05.91
+ ;;^UTILITY(U,$J,358.3,34003,2)
+ ;;=^5001936
+ ;;^UTILITY(U,$J,358.3,34004,0)
+ ;;=D05.90^^131^1680^33
+ ;;^UTILITY(U,$J,358.3,34004,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35064,1,3,0)
- ;;=3^Minimally displaced Zone II fracture of sacrum, sequela
- ;;^UTILITY(U,$J,358.3,35064,1,4,0)
- ;;=4^S32.121S
- ;;^UTILITY(U,$J,358.3,35064,2)
- ;;=^5024562
- ;;^UTILITY(U,$J,358.3,35065,0)
- ;;=S32.131S^^183^2025^22
- ;;^UTILITY(U,$J,358.3,35065,1,0)
+ ;;^UTILITY(U,$J,358.3,34004,1,3,0)
+ ;;=3^Carcinoma in Situ Breast Unspec,Unspec Type
+ ;;^UTILITY(U,$J,358.3,34004,1,4,0)
+ ;;=4^D05.90
+ ;;^UTILITY(U,$J,358.3,34004,2)
+ ;;=^5001935
+ ;;^UTILITY(U,$J,358.3,34005,0)
+ ;;=D51.0^^131^1680^189
+ ;;^UTILITY(U,$J,358.3,34005,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35065,1,3,0)
- ;;=3^Minimally displaced Zone III fracture of sacrum, sequela
- ;;^UTILITY(U,$J,358.3,35065,1,4,0)
- ;;=4^S32.131S
- ;;^UTILITY(U,$J,358.3,35065,2)
- ;;=^5024586
- ;;^UTILITY(U,$J,358.3,35066,0)
- ;;=S32.110S^^183^2025^24
- ;;^UTILITY(U,$J,358.3,35066,1,0)
+ ;;^UTILITY(U,$J,358.3,34005,1,3,0)
+ ;;=3^Vitamin B12 Deficiency Anemia d/t Intrinsic Factor Deficiency
+ ;;^UTILITY(U,$J,358.3,34005,1,4,0)
+ ;;=4^D51.0
+ ;;^UTILITY(U,$J,358.3,34005,2)
+ ;;=^5002284
+ ;;^UTILITY(U,$J,358.3,34006,0)
+ ;;=D51.1^^131^1680^190
+ ;;^UTILITY(U,$J,358.3,34006,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35066,1,3,0)
- ;;=3^Nondisp Zone I fracture of sacrum, sequela
- ;;^UTILITY(U,$J,358.3,35066,1,4,0)
- ;;=4^S32.110S
- ;;^UTILITY(U,$J,358.3,35066,2)
- ;;=^5024532
- ;;^UTILITY(U,$J,358.3,35067,0)
- ;;=S32.120S^^183^2025^25
- ;;^UTILITY(U,$J,358.3,35067,1,0)
+ ;;^UTILITY(U,$J,358.3,34006,1,3,0)
+ ;;=3^Vitamin B12 Deficiency Anemia d/t Selective Vit B12 Malabsorp w/ Proteinuria
+ ;;^UTILITY(U,$J,358.3,34006,1,4,0)
+ ;;=4^D51.1
+ ;;^UTILITY(U,$J,358.3,34006,2)
+ ;;=^5002285
+ ;;^UTILITY(U,$J,358.3,34007,0)
+ ;;=D51.9^^131^1680^192
+ ;;^UTILITY(U,$J,358.3,34007,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35067,1,3,0)
- ;;=3^Nondisp Zone II fracture of sacrum, sequela
+ ;;^UTILITY(U,$J,358.3,34007,1,3,0)
+ ;;=3^Vitamin B12 Deficiency Anemia,Unspec
+ ;;^UTILITY(U,$J,358.3,34007,1,4,0)
+ ;;=4^D51.9
+ ;;^UTILITY(U,$J,358.3,34007,2)
+ ;;=^5002289
+ ;;^UTILITY(U,$J,358.3,34008,0)
+ ;;=D68.0^^131^1680^194
+ ;;^UTILITY(U,$J,358.3,34008,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34008,1,3,0)
+ ;;=3^Von Willebrand's Disease

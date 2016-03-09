@@ -1,124 +1,132 @@
-IBDEI1C1 ; ; 06-AUG-2015
+IBDEI1C1 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,23604,1,5,0)
- ;;=5^Borderline Personality Disorder
- ;;^UTILITY(U,$J,358.3,23604,2)
- ;;=Borderline Personality Disorder^16372
- ;;^UTILITY(U,$J,358.3,23605,0)
- ;;=301.6^^127^1427^6
- ;;^UTILITY(U,$J,358.3,23605,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23605,1,2,0)
- ;;=2^301.6
- ;;^UTILITY(U,$J,358.3,23605,1,5,0)
- ;;=5^Dependent Personality Disorder
- ;;^UTILITY(U,$J,358.3,23605,2)
- ;;=Dependent Personality Disorder^32860
- ;;^UTILITY(U,$J,358.3,23606,0)
- ;;=301.50^^127^1427^8
- ;;^UTILITY(U,$J,358.3,23606,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23606,1,2,0)
- ;;=2^301.50
- ;;^UTILITY(U,$J,358.3,23606,1,5,0)
- ;;=5^Histrionic Personality Disorder
- ;;^UTILITY(U,$J,358.3,23606,2)
- ;;=Histrionic Personality Disorder^57763
- ;;^UTILITY(U,$J,358.3,23607,0)
- ;;=301.81^^127^1427^11
- ;;^UTILITY(U,$J,358.3,23607,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23607,1,2,0)
- ;;=2^301.81
- ;;^UTILITY(U,$J,358.3,23607,1,5,0)
- ;;=5^Narcissistic Personality Disorder
- ;;^UTILITY(U,$J,358.3,23607,2)
- ;;=Narcissistic Personality Disorder^265353
- ;;^UTILITY(U,$J,358.3,23608,0)
- ;;=301.0^^127^1427^12
- ;;^UTILITY(U,$J,358.3,23608,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23608,1,2,0)
- ;;=2^301.0
- ;;^UTILITY(U,$J,358.3,23608,1,5,0)
- ;;=5^Paranoid Personality Disorder
- ;;^UTILITY(U,$J,358.3,23608,2)
- ;;=Paranoid Personality Disorder^89982
- ;;^UTILITY(U,$J,358.3,23609,0)
- ;;=301.9^^127^1427^16
- ;;^UTILITY(U,$J,358.3,23609,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23609,1,2,0)
- ;;=2^301.9
- ;;^UTILITY(U,$J,358.3,23609,1,5,0)
- ;;=5^Unspecified Personality Disorder
- ;;^UTILITY(U,$J,358.3,23609,2)
- ;;=Unspecified Personality Disorder^92451
- ;;^UTILITY(U,$J,358.3,23610,0)
- ;;=301.20^^127^1427^14
- ;;^UTILITY(U,$J,358.3,23610,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23610,1,2,0)
- ;;=2^301.20
- ;;^UTILITY(U,$J,358.3,23610,1,5,0)
- ;;=5^Schizoid Personality Disorder
- ;;^UTILITY(U,$J,358.3,23610,2)
- ;;=^108271
- ;;^UTILITY(U,$J,358.3,23611,0)
- ;;=301.22^^127^1427^15
- ;;^UTILITY(U,$J,358.3,23611,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23611,1,2,0)
- ;;=2^301.22
- ;;^UTILITY(U,$J,358.3,23611,1,5,0)
- ;;=5^Schizotypal Personality Disorder
- ;;^UTILITY(U,$J,358.3,23611,2)
- ;;=Schizotypal Personality Disorder^108367
- ;;^UTILITY(U,$J,358.3,23612,0)
- ;;=301.4^^127^1427^4
- ;;^UTILITY(U,$J,358.3,23612,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23612,1,2,0)
- ;;=2^301.4
- ;;^UTILITY(U,$J,358.3,23612,1,5,0)
- ;;=5^Compulsive Personality Disorder
- ;;^UTILITY(U,$J,358.3,23612,2)
- ;;=Compulsive Personality Disorder^27122
- ;;^UTILITY(U,$J,358.3,23613,0)
- ;;=301.84^^127^1427^13
- ;;^UTILITY(U,$J,358.3,23613,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23613,1,2,0)
- ;;=2^301.84
- ;;^UTILITY(U,$J,358.3,23613,1,5,0)
- ;;=5^Passive-Aggressive Personality Dis
- ;;^UTILITY(U,$J,358.3,23613,2)
- ;;=Passive-Aggressive Personality Dis^90602
- ;;^UTILITY(U,$J,358.3,23614,0)
- ;;=301.11^^127^1427^9
- ;;^UTILITY(U,$J,358.3,23614,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23614,1,2,0)
- ;;=2^301.11
- ;;^UTILITY(U,$J,358.3,23614,1,5,0)
- ;;=5^Hypomanic Personality D/O,Chr
- ;;^UTILITY(U,$J,358.3,23614,2)
- ;;=^268171
- ;;^UTILITY(U,$J,358.3,23615,0)
- ;;=301.12^^127^1427^7
- ;;^UTILITY(U,$J,358.3,23615,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23615,1,2,0)
- ;;=2^301.12
- ;;^UTILITY(U,$J,358.3,23615,1,5,0)
- ;;=5^Depressive Personality D/O,Chr
- ;;^UTILITY(U,$J,358.3,23615,2)
- ;;=^268173
- ;;^UTILITY(U,$J,358.3,23616,0)
- ;;=301.13^^127^1427^5
- ;;^UTILITY(U,$J,358.3,23616,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,23616,1,2,0)
- ;;=2^301.13
+ ;;^UTILITY(U,$J,358.3,22649,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22649,1,3,0)
+ ;;=3^Family Hx of Mult Endocrine Neoplasia Syndrome
+ ;;^UTILITY(U,$J,358.3,22649,1,4,0)
+ ;;=4^Z83.41
+ ;;^UTILITY(U,$J,358.3,22649,2)
+ ;;=^5063380
+ ;;^UTILITY(U,$J,358.3,22650,0)
+ ;;=Z81.8^^87^982^50
+ ;;^UTILITY(U,$J,358.3,22650,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22650,1,3,0)
+ ;;=3^Family Hx of Substance Abuse/Dependence,Psychoactive
+ ;;^UTILITY(U,$J,358.3,22650,1,4,0)
+ ;;=4^Z81.8
+ ;;^UTILITY(U,$J,358.3,22650,2)
+ ;;=^5063363
+ ;;^UTILITY(U,$J,358.3,22651,0)
+ ;;=Z81.4^^87^982^51
+ ;;^UTILITY(U,$J,358.3,22651,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22651,1,3,0)
+ ;;=3^Family Hx of Substance Abuse/Dependence NEC
+ ;;^UTILITY(U,$J,358.3,22651,1,4,0)
+ ;;=4^Z81.4
+ ;;^UTILITY(U,$J,358.3,22651,2)
+ ;;=^5063362
+ ;;^UTILITY(U,$J,358.3,22652,0)
+ ;;=Z98.0^^87^982^62
+ ;;^UTILITY(U,$J,358.3,22652,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22652,1,3,0)
+ ;;=3^Intestinal Bypass/Anastomosis Status
+ ;;^UTILITY(U,$J,358.3,22652,1,4,0)
+ ;;=4^Z98.0
+ ;;^UTILITY(U,$J,358.3,22652,2)
+ ;;=^5063733
+ ;;^UTILITY(U,$J,358.3,22653,0)
+ ;;=Z91.128^^87^982^61
+ ;;^UTILITY(U,$J,358.3,22653,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22653,1,3,0)
+ ;;=3^Intentional Underdose of Meds d/t Other Reasons
+ ;;^UTILITY(U,$J,358.3,22653,1,4,0)
+ ;;=4^Z91.128
+ ;;^UTILITY(U,$J,358.3,22653,2)
+ ;;=^5063613
+ ;;^UTILITY(U,$J,358.3,22654,0)
+ ;;=Z77.120^^87^982^67
+ ;;^UTILITY(U,$J,358.3,22654,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22654,1,3,0)
+ ;;=3^Mold (Toxic) Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,22654,1,4,0)
+ ;;=4^Z77.120
+ ;;^UTILITY(U,$J,358.3,22654,2)
+ ;;=^5063318
+ ;;^UTILITY(U,$J,358.3,22655,0)
+ ;;=Z86.74^^87^982^110
+ ;;^UTILITY(U,$J,358.3,22655,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22655,1,3,0)
+ ;;=3^Personal Hx of Sudden Cardiac Arrest 
+ ;;^UTILITY(U,$J,358.3,22655,1,4,0)
+ ;;=4^Z86.74
+ ;;^UTILITY(U,$J,358.3,22655,2)
+ ;;=^5063478
+ ;;^UTILITY(U,$J,358.3,22656,0)
+ ;;=Z86.718^^87^982^117
+ ;;^UTILITY(U,$J,358.3,22656,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22656,1,3,0)
+ ;;=3^Personal Hx of Venous Thrombosis/Embolism (DVT)
+ ;;^UTILITY(U,$J,358.3,22656,1,4,0)
+ ;;=4^Z86.718
+ ;;^UTILITY(U,$J,358.3,22656,2)
+ ;;=^5063475
+ ;;^UTILITY(U,$J,358.3,22657,0)
+ ;;=Z96.1^^87^982^127
+ ;;^UTILITY(U,$J,358.3,22657,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22657,1,3,0)
+ ;;=3^Presence of Intraocular Lens
+ ;;^UTILITY(U,$J,358.3,22657,1,4,0)
+ ;;=4^Z96.1
+ ;;^UTILITY(U,$J,358.3,22657,2)
+ ;;=^5063682
+ ;;^UTILITY(U,$J,358.3,22658,0)
+ ;;=Z96.612^^87^982^132
+ ;;^UTILITY(U,$J,358.3,22658,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22658,1,3,0)
+ ;;=3^Presence of Left Artificial Shoulder Joint
+ ;;^UTILITY(U,$J,358.3,22658,1,4,0)
+ ;;=4^Z96.612
+ ;;^UTILITY(U,$J,358.3,22658,2)
+ ;;=^5063693
+ ;;^UTILITY(U,$J,358.3,22659,0)
+ ;;=Z96.611^^87^982^137
+ ;;^UTILITY(U,$J,358.3,22659,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22659,1,3,0)
+ ;;=3^Presence of Right Artificial Shoulder Joint
+ ;;^UTILITY(U,$J,358.3,22659,1,4,0)
+ ;;=4^Z96.611
+ ;;^UTILITY(U,$J,358.3,22659,2)
+ ;;=^5063692
+ ;;^UTILITY(U,$J,358.3,22660,0)
+ ;;=Z93.0^^87^982^145
+ ;;^UTILITY(U,$J,358.3,22660,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22660,1,3,0)
+ ;;=3^Tracheostomy Status
+ ;;^UTILITY(U,$J,358.3,22660,1,4,0)
+ ;;=4^Z93.0
+ ;;^UTILITY(U,$J,358.3,22660,2)
+ ;;=^5063642
+ ;;^UTILITY(U,$J,358.3,22661,0)
+ ;;=Z99.3^^87^982^149
+ ;;^UTILITY(U,$J,358.3,22661,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22661,1,3,0)
+ ;;=3^Wheelchair Dependence
+ ;;^UTILITY(U,$J,358.3,22661,1,4,0)
+ ;;=4^Z99.3
+ ;;^UTILITY(U,$J,358.3,22661,2)
+ ;;=^5063759

@@ -1,130 +1,136 @@
-IBDEI04V ; ; 06-AUG-2015
+IBDEI04V ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1754,1,4,0)
- ;;=4^Z85.71
- ;;^UTILITY(U,$J,358.3,1754,2)
- ;;=^5063435
- ;;^UTILITY(U,$J,358.3,1755,0)
- ;;=Z85.830^^3^51^20
- ;;^UTILITY(U,$J,358.3,1755,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1755,1,3,0)
- ;;=3^Personal history of malignant neoplasm of bone
- ;;^UTILITY(U,$J,358.3,1755,1,4,0)
- ;;=4^Z85.830
- ;;^UTILITY(U,$J,358.3,1755,2)
- ;;=^5063444
- ;;^UTILITY(U,$J,358.3,1756,0)
- ;;=Z85.828^^3^51^21
- ;;^UTILITY(U,$J,358.3,1756,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1756,1,3,0)
- ;;=3^Personal history of malignant neoplasm of skin NEC
- ;;^UTILITY(U,$J,358.3,1756,1,4,0)
- ;;=4^Z85.828
- ;;^UTILITY(U,$J,358.3,1756,2)
- ;;=^5063443
- ;;^UTILITY(U,$J,358.3,1757,0)
- ;;=Z85.841^^3^51^22
- ;;^UTILITY(U,$J,358.3,1757,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1757,1,3,0)
- ;;=3^Personal history of malignant neoplasm of brain
- ;;^UTILITY(U,$J,358.3,1757,1,4,0)
- ;;=4^Z85.841
- ;;^UTILITY(U,$J,358.3,1757,2)
- ;;=^5063447
- ;;^UTILITY(U,$J,358.3,1758,0)
- ;;=Z85.848^^3^51^23
- ;;^UTILITY(U,$J,358.3,1758,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1758,1,3,0)
- ;;=3^Personal history of malignant neoplasm of prt nervous tissue
- ;;^UTILITY(U,$J,358.3,1758,1,4,0)
- ;;=4^Z85.848
- ;;^UTILITY(U,$J,358.3,1758,2)
- ;;=^5063448
- ;;^UTILITY(U,$J,358.3,1759,0)
- ;;=Z85.850^^3^51^24
- ;;^UTILITY(U,$J,358.3,1759,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1759,1,3,0)
- ;;=3^Personal history of malignant neoplasm of thyroid
- ;;^UTILITY(U,$J,358.3,1759,1,4,0)
- ;;=4^Z85.850
- ;;^UTILITY(U,$J,358.3,1759,2)
- ;;=^5063449
- ;;^UTILITY(U,$J,358.3,1760,0)
- ;;=Z85.858^^3^51^25
- ;;^UTILITY(U,$J,358.3,1760,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1760,1,3,0)
- ;;=3^Personal history of malignant neoplasm of endocrine glands
- ;;^UTILITY(U,$J,358.3,1760,1,4,0)
- ;;=4^Z85.858
- ;;^UTILITY(U,$J,358.3,1760,2)
- ;;=^5063450
- ;;^UTILITY(U,$J,358.3,1761,0)
- ;;=Z86.61^^3^51^5
- ;;^UTILITY(U,$J,358.3,1761,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1761,1,3,0)
- ;;=3^Personal history of infections of the central nervous system
- ;;^UTILITY(U,$J,358.3,1761,1,4,0)
- ;;=4^Z86.61
- ;;^UTILITY(U,$J,358.3,1761,2)
- ;;=^5063472
- ;;^UTILITY(U,$J,358.3,1762,0)
- ;;=Z87.09^^3^51^4
- ;;^UTILITY(U,$J,358.3,1762,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1762,1,3,0)
- ;;=3^Personal history of diseases of the respiratory system NEC
- ;;^UTILITY(U,$J,358.3,1762,1,4,0)
- ;;=4^Z87.09
- ;;^UTILITY(U,$J,358.3,1762,2)
- ;;=^5063481
- ;;^UTILITY(U,$J,358.3,1763,0)
- ;;=Z87.01^^3^51^27
- ;;^UTILITY(U,$J,358.3,1763,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1763,1,3,0)
- ;;=3^Personal history of pneumonia (recurrent)
- ;;^UTILITY(U,$J,358.3,1763,1,4,0)
- ;;=4^Z87.01
- ;;^UTILITY(U,$J,358.3,1763,2)
- ;;=^5063480
- ;;^UTILITY(U,$J,358.3,1764,0)
- ;;=Z86.010^^3^51^3
- ;;^UTILITY(U,$J,358.3,1764,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1764,1,3,0)
- ;;=3^Personal history of colonic polyps
- ;;^UTILITY(U,$J,358.3,1764,1,4,0)
- ;;=4^Z86.010
- ;;^UTILITY(U,$J,358.3,1764,2)
- ;;=^5063456
- ;;^UTILITY(U,$J,358.3,1765,0)
- ;;=Z87.440^^3^51^28
- ;;^UTILITY(U,$J,358.3,1765,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1765,1,3,0)
- ;;=3^Personal history of urinary (tract) infections
- ;;^UTILITY(U,$J,358.3,1765,1,4,0)
- ;;=4^Z87.440
- ;;^UTILITY(U,$J,358.3,1765,2)
- ;;=^5063495
- ;;^UTILITY(U,$J,358.3,1766,0)
- ;;=Z87.441^^3^51^26
- ;;^UTILITY(U,$J,358.3,1766,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1766,1,3,0)
- ;;=3^Personal history of nephrotic syndrome
- ;;^UTILITY(U,$J,358.3,1766,1,4,0)
- ;;=4^Z87.441
- ;;^UTILITY(U,$J,358.3,1766,2)
- ;;=^5063496
- ;;^UTILITY(U,$J,358.3,1767,0)
- ;;=Z91.81^^3^51^1
+ ;;^UTILITY(U,$J,358.3,1851,2)
+ ;;=^116707
+ ;;^UTILITY(U,$J,358.3,1852,0)
+ ;;=33206^^12^160^36^^^^1
+ ;;^UTILITY(U,$J,358.3,1852,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1852,1,2,0)
+ ;;=2^33206
+ ;;^UTILITY(U,$J,358.3,1852,1,3,0)
+ ;;=3^Pace Implant, Atrial
+ ;;^UTILITY(U,$J,358.3,1853,0)
+ ;;=33207^^12^160^38^^^^1
+ ;;^UTILITY(U,$J,358.3,1853,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1853,1,2,0)
+ ;;=2^33207
+ ;;^UTILITY(U,$J,358.3,1853,1,3,0)
+ ;;=3^Pace Implant, Vvi
+ ;;^UTILITY(U,$J,358.3,1854,0)
+ ;;=33208^^12^160^37^^^^1
+ ;;^UTILITY(U,$J,358.3,1854,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1854,1,2,0)
+ ;;=2^33208
+ ;;^UTILITY(U,$J,358.3,1854,1,3,0)
+ ;;=3^Pace Implant, Ddd
+ ;;^UTILITY(U,$J,358.3,1855,0)
+ ;;=33210^^12^160^63^^^^1
+ ;;^UTILITY(U,$J,358.3,1855,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1855,1,2,0)
+ ;;=2^33210
+ ;;^UTILITY(U,$J,358.3,1855,1,3,0)
+ ;;=3^Temp Pacer (Single)
+ ;;^UTILITY(U,$J,358.3,1856,0)
+ ;;=33211^^12^160^62^^^^1
+ ;;^UTILITY(U,$J,358.3,1856,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1856,1,2,0)
+ ;;=2^33211
+ ;;^UTILITY(U,$J,358.3,1856,1,3,0)
+ ;;=3^Temp Pacer (Dual)
+ ;;^UTILITY(U,$J,358.3,1857,0)
+ ;;=33212^^12^160^21^^^^1
+ ;;^UTILITY(U,$J,358.3,1857,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1857,1,2,0)
+ ;;=2^33212
+ ;;^UTILITY(U,$J,358.3,1857,1,3,0)
+ ;;=3^Insert Pacer, Pulse Gen (Sgl)
+ ;;^UTILITY(U,$J,358.3,1858,0)
+ ;;=33213^^12^160^20^^^^1
+ ;;^UTILITY(U,$J,358.3,1858,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1858,1,2,0)
+ ;;=2^33213
+ ;;^UTILITY(U,$J,358.3,1858,1,3,0)
+ ;;=3^Insert Pacer, Pulse Gen (Dual)
+ ;;^UTILITY(U,$J,358.3,1859,0)
+ ;;=33216^^12^160^23^^^^1
+ ;;^UTILITY(U,$J,358.3,1859,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1859,1,2,0)
+ ;;=2^33216
+ ;;^UTILITY(U,$J,358.3,1859,1,3,0)
+ ;;=3^Insert/Reposit Transv Elec (Sgl)
+ ;;^UTILITY(U,$J,358.3,1860,0)
+ ;;=33217^^12^160^24^^^^1
+ ;;^UTILITY(U,$J,358.3,1860,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1860,1,2,0)
+ ;;=2^33217
+ ;;^UTILITY(U,$J,358.3,1860,1,3,0)
+ ;;=3^Insert/Reposit Transv Elec(Dual)
+ ;;^UTILITY(U,$J,358.3,1861,0)
+ ;;=33218^^12^160^56^^^^1
+ ;;^UTILITY(U,$J,358.3,1861,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1861,1,2,0)
+ ;;=2^33218
+ ;;^UTILITY(U,$J,358.3,1861,1,3,0)
+ ;;=3^Repair Transv Elec (Single)
+ ;;^UTILITY(U,$J,358.3,1862,0)
+ ;;=33220^^12^160^55^^^^1
+ ;;^UTILITY(U,$J,358.3,1862,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1862,1,2,0)
+ ;;=2^33220
+ ;;^UTILITY(U,$J,358.3,1862,1,3,0)
+ ;;=3^Repair Transv Elec (Dual)
+ ;;^UTILITY(U,$J,358.3,1863,0)
+ ;;=33222^^12^160^58^^^^1
+ ;;^UTILITY(U,$J,358.3,1863,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1863,1,2,0)
+ ;;=2^33222
+ ;;^UTILITY(U,$J,358.3,1863,1,3,0)
+ ;;=3^Revis Or Reloc Skin Pckt
+ ;;^UTILITY(U,$J,358.3,1864,0)
+ ;;=33233^^12^160^51^^^^1
+ ;;^UTILITY(U,$J,358.3,1864,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1864,1,2,0)
+ ;;=2^33233
+ ;;^UTILITY(U,$J,358.3,1864,1,3,0)
+ ;;=3^Remove Pace Pulse Gen
+ ;;^UTILITY(U,$J,358.3,1865,0)
+ ;;=92960^^12^160^5^^^^1
+ ;;^UTILITY(U,$J,358.3,1865,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1865,1,2,0)
+ ;;=2^92960
+ ;;^UTILITY(U,$J,358.3,1865,1,3,0)
+ ;;=3^Cardioversion
+ ;;^UTILITY(U,$J,358.3,1866,0)
+ ;;=93650^^12^160^2^^^^1
+ ;;^UTILITY(U,$J,358.3,1866,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1866,1,2,0)
+ ;;=2^93650
+ ;;^UTILITY(U,$J,358.3,1866,1,3,0)
+ ;;=3^Abalation, Av Node
+ ;;^UTILITY(U,$J,358.3,1867,0)
+ ;;=93740^^12^160^61^^^^1
+ ;;^UTILITY(U,$J,358.3,1867,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1867,1,2,0)
+ ;;=2^93740
+ ;;^UTILITY(U,$J,358.3,1867,1,3,0)
+ ;;=3^Temp Gradient Studies
+ ;;^UTILITY(U,$J,358.3,1868,0)
+ ;;=33234^^12^160^43^^^^1

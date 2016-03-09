@@ -1,0 +1,130 @@
+IBDEI24M ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,36059,1,4,0)
+ ;;=4^K52.2
+ ;;^UTILITY(U,$J,358.3,36059,2)
+ ;;=^5008701
+ ;;^UTILITY(U,$J,358.3,36060,0)
+ ;;=R63.0^^134^1742^6
+ ;;^UTILITY(U,$J,358.3,36060,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36060,1,3,0)
+ ;;=3^Anorexia
+ ;;^UTILITY(U,$J,358.3,36060,1,4,0)
+ ;;=4^R63.0
+ ;;^UTILITY(U,$J,358.3,36060,2)
+ ;;=^7939
+ ;;^UTILITY(U,$J,358.3,36061,0)
+ ;;=R09.01^^134^1742^7
+ ;;^UTILITY(U,$J,358.3,36061,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36061,1,3,0)
+ ;;=3^Asphyxia
+ ;;^UTILITY(U,$J,358.3,36061,1,4,0)
+ ;;=4^R09.01
+ ;;^UTILITY(U,$J,358.3,36061,2)
+ ;;=^11005
+ ;;^UTILITY(U,$J,358.3,36062,0)
+ ;;=R07.9^^134^1742^12
+ ;;^UTILITY(U,$J,358.3,36062,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36062,1,3,0)
+ ;;=3^Chest Pain,Unspec
+ ;;^UTILITY(U,$J,358.3,36062,1,4,0)
+ ;;=4^R07.9
+ ;;^UTILITY(U,$J,358.3,36062,2)
+ ;;=^5019201
+ ;;^UTILITY(U,$J,358.3,36063,0)
+ ;;=M48.52XA^^134^1742^13
+ ;;^UTILITY(U,$J,358.3,36063,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36063,1,3,0)
+ ;;=3^Collapsed Vertebra,Cervical Region,Init Encntr
+ ;;^UTILITY(U,$J,358.3,36063,1,4,0)
+ ;;=4^M48.52XA
+ ;;^UTILITY(U,$J,358.3,36063,2)
+ ;;=^5012167
+ ;;^UTILITY(U,$J,358.3,36064,0)
+ ;;=M48.53XA^^134^1742^14
+ ;;^UTILITY(U,$J,358.3,36064,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36064,1,3,0)
+ ;;=3^Collapsed Vertebra,Cervicothoracic Region,Init Encntr
+ ;;^UTILITY(U,$J,358.3,36064,1,4,0)
+ ;;=4^M48.53XA
+ ;;^UTILITY(U,$J,358.3,36064,2)
+ ;;=^5012171
+ ;;^UTILITY(U,$J,358.3,36065,0)
+ ;;=M48.56XA^^134^1742^15
+ ;;^UTILITY(U,$J,358.3,36065,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36065,1,3,0)
+ ;;=3^Collapsed Vertebra,Lumbar Region,Init Encntr
+ ;;^UTILITY(U,$J,358.3,36065,1,4,0)
+ ;;=4^M48.56XA
+ ;;^UTILITY(U,$J,358.3,36065,2)
+ ;;=^5012183
+ ;;^UTILITY(U,$J,358.3,36066,0)
+ ;;=M48.57XA^^134^1742^16
+ ;;^UTILITY(U,$J,358.3,36066,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36066,1,3,0)
+ ;;=3^Collapsed Vertebra,Lumbosacral Region,Init Encntr
+ ;;^UTILITY(U,$J,358.3,36066,1,4,0)
+ ;;=4^M48.57XA
+ ;;^UTILITY(U,$J,358.3,36066,2)
+ ;;=^5012187
+ ;;^UTILITY(U,$J,358.3,36067,0)
+ ;;=M48.51XA^^134^1742^17
+ ;;^UTILITY(U,$J,358.3,36067,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36067,1,3,0)
+ ;;=3^Collapsed Vertebra,Occipito/Atlanto/Axial Region,Init Encntr
+ ;;^UTILITY(U,$J,358.3,36067,1,4,0)
+ ;;=4^M48.51XA
+ ;;^UTILITY(U,$J,358.3,36067,2)
+ ;;=^5012163
+ ;;^UTILITY(U,$J,358.3,36068,0)
+ ;;=M48.58XA^^134^1742^18
+ ;;^UTILITY(U,$J,358.3,36068,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36068,1,3,0)
+ ;;=3^Collapsed Vertebra,Sacral/Sacrococcygeal Region,Init Encntr
+ ;;^UTILITY(U,$J,358.3,36068,1,4,0)
+ ;;=4^M48.58XA
+ ;;^UTILITY(U,$J,358.3,36068,2)
+ ;;=^5012191
+ ;;^UTILITY(U,$J,358.3,36069,0)
+ ;;=M48.50XA^^134^1742^21
+ ;;^UTILITY(U,$J,358.3,36069,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36069,1,3,0)
+ ;;=3^Collapsed Vertebra,Unspec Site,Init Encntr
+ ;;^UTILITY(U,$J,358.3,36069,1,4,0)
+ ;;=4^M48.50XA
+ ;;^UTILITY(U,$J,358.3,36069,2)
+ ;;=^5012159
+ ;;^UTILITY(U,$J,358.3,36070,0)
+ ;;=M48.54XA^^134^1742^19
+ ;;^UTILITY(U,$J,358.3,36070,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36070,1,3,0)
+ ;;=3^Collapsed Vertebra,Thoracic Region,Init Encntr
+ ;;^UTILITY(U,$J,358.3,36070,1,4,0)
+ ;;=4^M48.54XA
+ ;;^UTILITY(U,$J,358.3,36070,2)
+ ;;=^5012175
+ ;;^UTILITY(U,$J,358.3,36071,0)
+ ;;=M48.55XA^^134^1742^20
+ ;;^UTILITY(U,$J,358.3,36071,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36071,1,3,0)
+ ;;=3^Collapsed Vertebra,Thoracolumbar Region,Init Encntr
+ ;;^UTILITY(U,$J,358.3,36071,1,4,0)
+ ;;=4^M48.55XA
+ ;;^UTILITY(U,$J,358.3,36071,2)
+ ;;=^5012179
+ ;;^UTILITY(U,$J,358.3,36072,0)
+ ;;=K59.00^^134^1742^22

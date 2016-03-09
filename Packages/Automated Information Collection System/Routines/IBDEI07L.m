@@ -1,128 +1,140 @@
-IBDEI07L ; ; 06-AUG-2015
+IBDEI07L ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3051,1,3,0)
- ;;=3^Delirium d/t Another Medical Condition
- ;;^UTILITY(U,$J,358.3,3051,1,4,0)
- ;;=4^F05.
- ;;^UTILITY(U,$J,358.3,3051,2)
- ;;=^5003052
- ;;^UTILITY(U,$J,358.3,3052,0)
- ;;=F05.^^8^88^5
- ;;^UTILITY(U,$J,358.3,3052,1,0)
+ ;;^UTILITY(U,$J,358.3,3245,1,3,0)
+ ;;=3^Salpingitis & Oophoritis,Unspec
+ ;;^UTILITY(U,$J,358.3,3245,1,4,0)
+ ;;=4^N70.93
+ ;;^UTILITY(U,$J,358.3,3245,2)
+ ;;=^5015808
+ ;;^UTILITY(U,$J,358.3,3246,0)
+ ;;=R39.16^^18^216^77
+ ;;^UTILITY(U,$J,358.3,3246,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3052,1,3,0)
- ;;=3^Delirium d/t Multiple Etiologies
- ;;^UTILITY(U,$J,358.3,3052,1,4,0)
- ;;=4^F05.
- ;;^UTILITY(U,$J,358.3,3052,2)
- ;;=^5003052
- ;;^UTILITY(U,$J,358.3,3053,0)
- ;;=A81.00^^8^89^5
- ;;^UTILITY(U,$J,358.3,3053,1,0)
+ ;;^UTILITY(U,$J,358.3,3246,1,3,0)
+ ;;=3^Straining to Void
+ ;;^UTILITY(U,$J,358.3,3246,1,4,0)
+ ;;=4^R39.16
+ ;;^UTILITY(U,$J,358.3,3246,2)
+ ;;=^5019346
+ ;;^UTILITY(U,$J,358.3,3247,0)
+ ;;=N53.9^^18^216^74
+ ;;^UTILITY(U,$J,358.3,3247,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3053,1,3,0)
- ;;=3^Creutzfeldt-Jakob Disease,Unspec
- ;;^UTILITY(U,$J,358.3,3053,1,4,0)
- ;;=4^A81.00
- ;;^UTILITY(U,$J,358.3,3053,2)
- ;;=^5000409
- ;;^UTILITY(U,$J,358.3,3054,0)
- ;;=A81.01^^8^89^23
- ;;^UTILITY(U,$J,358.3,3054,1,0)
+ ;;^UTILITY(U,$J,358.3,3247,1,3,0)
+ ;;=3^Sexual Dysfunction,Male,Unspec
+ ;;^UTILITY(U,$J,358.3,3247,1,4,0)
+ ;;=4^N53.9
+ ;;^UTILITY(U,$J,358.3,3247,2)
+ ;;=^5015769
+ ;;^UTILITY(U,$J,358.3,3248,0)
+ ;;=R37.^^18^216^75
+ ;;^UTILITY(U,$J,358.3,3248,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3054,1,3,0)
- ;;=3^Variant Creutzfeldt-Jakob Disease
- ;;^UTILITY(U,$J,358.3,3054,1,4,0)
- ;;=4^A81.01
- ;;^UTILITY(U,$J,358.3,3054,2)
- ;;=^336701
- ;;^UTILITY(U,$J,358.3,3055,0)
- ;;=A81.09^^8^89^4
- ;;^UTILITY(U,$J,358.3,3055,1,0)
+ ;;^UTILITY(U,$J,358.3,3248,1,3,0)
+ ;;=3^Sexual Dysfunction,Unspec
+ ;;^UTILITY(U,$J,358.3,3248,1,4,0)
+ ;;=4^R37.
+ ;;^UTILITY(U,$J,358.3,3248,2)
+ ;;=^5019339
+ ;;^UTILITY(U,$J,358.3,3249,0)
+ ;;=N43.40^^18^216^76
+ ;;^UTILITY(U,$J,358.3,3249,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3055,1,3,0)
- ;;=3^Creutzfeldt-Jakob Disease,Other
- ;;^UTILITY(U,$J,358.3,3055,1,4,0)
- ;;=4^A81.09
- ;;^UTILITY(U,$J,358.3,3055,2)
- ;;=^5000410
- ;;^UTILITY(U,$J,358.3,3056,0)
- ;;=A81.2^^8^89^20
- ;;^UTILITY(U,$J,358.3,3056,1,0)
+ ;;^UTILITY(U,$J,358.3,3249,1,3,0)
+ ;;=3^Spermatocele of Epididymis,Unspec
+ ;;^UTILITY(U,$J,358.3,3249,1,4,0)
+ ;;=4^N43.40
+ ;;^UTILITY(U,$J,358.3,3249,2)
+ ;;=^5015701
+ ;;^UTILITY(U,$J,358.3,3250,0)
+ ;;=N44.8^^18^216^78
+ ;;^UTILITY(U,$J,358.3,3250,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3056,1,3,0)
- ;;=3^Progressive Multifocal Leukoencephalopathy
- ;;^UTILITY(U,$J,358.3,3056,1,4,0)
- ;;=4^A81.2
- ;;^UTILITY(U,$J,358.3,3056,2)
- ;;=^5000411
- ;;^UTILITY(U,$J,358.3,3057,0)
- ;;=F03.90^^8^89^12
- ;;^UTILITY(U,$J,358.3,3057,1,0)
+ ;;^UTILITY(U,$J,358.3,3250,1,3,0)
+ ;;=3^Testis Noninflammatory Disorder,Other
+ ;;^UTILITY(U,$J,358.3,3250,1,4,0)
+ ;;=4^N44.8
+ ;;^UTILITY(U,$J,358.3,3250,2)
+ ;;=^5015706
+ ;;^UTILITY(U,$J,358.3,3251,0)
+ ;;=N44.00^^18^216^79
+ ;;^UTILITY(U,$J,358.3,3251,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3057,1,3,0)
- ;;=3^Dementia w/o Behavioral Disturbance,Unspec
- ;;^UTILITY(U,$J,358.3,3057,1,4,0)
- ;;=4^F03.90
- ;;^UTILITY(U,$J,358.3,3057,2)
- ;;=^5003050
- ;;^UTILITY(U,$J,358.3,3058,0)
- ;;=F01.50^^8^89^18
- ;;^UTILITY(U,$J,358.3,3058,1,0)
+ ;;^UTILITY(U,$J,358.3,3251,1,3,0)
+ ;;=3^Torsion of Testis,Unspec
+ ;;^UTILITY(U,$J,358.3,3251,1,4,0)
+ ;;=4^N44.00
+ ;;^UTILITY(U,$J,358.3,3251,2)
+ ;;=^334199
+ ;;^UTILITY(U,$J,358.3,3252,0)
+ ;;=R36.9^^18^216^82
+ ;;^UTILITY(U,$J,358.3,3252,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3058,1,3,0)
- ;;=3^Probable Major Vascular Neurocognitive Disorder w/o Behavioral Disturbance
- ;;^UTILITY(U,$J,358.3,3058,1,4,0)
- ;;=4^F01.50
- ;;^UTILITY(U,$J,358.3,3058,2)
- ;;=^5003046
- ;;^UTILITY(U,$J,358.3,3059,0)
- ;;=F01.51^^8^89^19
- ;;^UTILITY(U,$J,358.3,3059,1,0)
+ ;;^UTILITY(U,$J,358.3,3252,1,3,0)
+ ;;=3^Urethral Discharge,Unspec
+ ;;^UTILITY(U,$J,358.3,3252,1,4,0)
+ ;;=4^R36.9
+ ;;^UTILITY(U,$J,358.3,3252,2)
+ ;;=^5019338
+ ;;^UTILITY(U,$J,358.3,3253,0)
+ ;;=N36.9^^18^216^83
+ ;;^UTILITY(U,$J,358.3,3253,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3059,1,3,0)
- ;;=3^Probable Major Vascular Neurocognitive Disorder w/ Behavioral Disturbance
- ;;^UTILITY(U,$J,358.3,3059,1,4,0)
- ;;=4^F01.51
- ;;^UTILITY(U,$J,358.3,3059,2)
- ;;=^5003047
- ;;^UTILITY(U,$J,358.3,3060,0)
- ;;=F10.27^^8^89^1
- ;;^UTILITY(U,$J,358.3,3060,1,0)
+ ;;^UTILITY(U,$J,358.3,3253,1,3,0)
+ ;;=3^Urethral Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,3253,1,4,0)
+ ;;=4^N36.9
+ ;;^UTILITY(U,$J,358.3,3253,2)
+ ;;=^5015677
+ ;;^UTILITY(U,$J,358.3,3254,0)
+ ;;=N35.9^^18^216^84
+ ;;^UTILITY(U,$J,358.3,3254,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3060,1,3,0)
- ;;=3^Alcohol-Induced Major Neurocognitive Disorder,Nonamnestic Confabulatory Type
- ;;^UTILITY(U,$J,358.3,3060,1,4,0)
- ;;=4^F10.27
- ;;^UTILITY(U,$J,358.3,3060,2)
- ;;=^5003095
- ;;^UTILITY(U,$J,358.3,3061,0)
- ;;=F19.97^^8^89^22
- ;;^UTILITY(U,$J,358.3,3061,1,0)
+ ;;^UTILITY(U,$J,358.3,3254,1,3,0)
+ ;;=3^Urethral Stricture,Unspec
+ ;;^UTILITY(U,$J,358.3,3254,1,4,0)
+ ;;=4^N35.9
+ ;;^UTILITY(U,$J,358.3,3254,2)
+ ;;=^5015671
+ ;;^UTILITY(U,$J,358.3,3255,0)
+ ;;=N34.1^^18^216^86
+ ;;^UTILITY(U,$J,358.3,3255,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3061,1,3,0)
- ;;=3^Substance-Induced Major Neurocognitive Disorder NEC
- ;;^UTILITY(U,$J,358.3,3061,1,4,0)
- ;;=4^F19.97
- ;;^UTILITY(U,$J,358.3,3061,2)
- ;;=^5003465
- ;;^UTILITY(U,$J,358.3,3062,0)
- ;;=F02.80^^8^89^9
- ;;^UTILITY(U,$J,358.3,3062,1,0)
+ ;;^UTILITY(U,$J,358.3,3255,1,3,0)
+ ;;=3^Urethritis,Nonspecific
+ ;;^UTILITY(U,$J,358.3,3255,1,4,0)
+ ;;=4^N34.1
+ ;;^UTILITY(U,$J,358.3,3255,2)
+ ;;=^5015655
+ ;;^UTILITY(U,$J,358.3,3256,0)
+ ;;=N34.3^^18^216^85
+ ;;^UTILITY(U,$J,358.3,3256,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3062,1,3,0)
- ;;=3^Dementia in Other Diseases Classified Elsewhere w/o Behavorial Disturbance
- ;;^UTILITY(U,$J,358.3,3062,1,4,0)
- ;;=4^F02.80
- ;;^UTILITY(U,$J,358.3,3062,2)
- ;;=^5003048
- ;;^UTILITY(U,$J,358.3,3063,0)
- ;;=F02.81^^8^89^10
- ;;^UTILITY(U,$J,358.3,3063,1,0)
+ ;;^UTILITY(U,$J,358.3,3256,1,3,0)
+ ;;=3^Urethral Syndrome,Unspec
+ ;;^UTILITY(U,$J,358.3,3256,1,4,0)
+ ;;=4^N34.3
+ ;;^UTILITY(U,$J,358.3,3256,2)
+ ;;=^5015656
+ ;;^UTILITY(U,$J,358.3,3257,0)
+ ;;=Z87.442^^18^216^58
+ ;;^UTILITY(U,$J,358.3,3257,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3063,1,3,0)
- ;;=3^Dementia in Other Diseases Classified Elsewhere w/ Behavioral Disturbance
- ;;^UTILITY(U,$J,358.3,3063,1,4,0)
- ;;=4^F02.81
+ ;;^UTILITY(U,$J,358.3,3257,1,3,0)
+ ;;=3^Personal Hx of Urinary Calculi
+ ;;^UTILITY(U,$J,358.3,3257,1,4,0)
+ ;;=4^Z87.442
+ ;;^UTILITY(U,$J,358.3,3257,2)
+ ;;=^5063497
+ ;;^UTILITY(U,$J,358.3,3258,0)
+ ;;=R35.0^^18^216^88
+ ;;^UTILITY(U,$J,358.3,3258,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3258,1,3,0)
+ ;;=3^Urinary Frequency
+ ;;^UTILITY(U,$J,358.3,3258,1,4,0)
+ ;;=4^R35.0
+ ;;^UTILITY(U,$J,358.3,3258,2)
+ ;;=^5019334

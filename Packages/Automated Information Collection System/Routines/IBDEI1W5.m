@@ -1,134 +1,128 @@
-IBDEI1W5 ; ; 06-AUG-2015
+IBDEI1W5 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33259,1,0)
+ ;;^UTILITY(U,$J,358.3,32111,1,3,0)
+ ;;=3^Disp fx of prox phalanx of rt lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,32111,1,4,0)
+ ;;=4^S92.511A
+ ;;^UTILITY(U,$J,358.3,32111,2)
+ ;;=^5045431
+ ;;^UTILITY(U,$J,358.3,32112,0)
+ ;;=S92.491A^^126^1609^212
+ ;;^UTILITY(U,$J,358.3,32112,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33259,1,3,0)
- ;;=3^Psychotic Disorder w/ Hallucin d/t Known Physiol Condition
- ;;^UTILITY(U,$J,358.3,33259,1,4,0)
- ;;=4^F06.0
- ;;^UTILITY(U,$J,358.3,33259,2)
- ;;=^5003053
- ;;^UTILITY(U,$J,358.3,33260,0)
- ;;=G44.209^^182^1999^37
- ;;^UTILITY(U,$J,358.3,33260,1,0)
+ ;;^UTILITY(U,$J,358.3,32112,1,3,0)
+ ;;=3^Fx of rt grt toe, oth, init
+ ;;^UTILITY(U,$J,358.3,32112,1,4,0)
+ ;;=4^S92.491A
+ ;;^UTILITY(U,$J,358.3,32112,2)
+ ;;=^5045382
+ ;;^UTILITY(U,$J,358.3,32113,0)
+ ;;=S92.425A^^126^1609^313
+ ;;^UTILITY(U,$J,358.3,32113,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33260,1,3,0)
- ;;=3^Tension-Type Headache,Not Intractable,Unspec
- ;;^UTILITY(U,$J,358.3,33260,1,4,0)
- ;;=4^G44.209
- ;;^UTILITY(U,$J,358.3,33260,2)
- ;;=^5003936
- ;;^UTILITY(U,$J,358.3,33261,0)
- ;;=F09.^^182^1999^18
- ;;^UTILITY(U,$J,358.3,33261,1,0)
+ ;;^UTILITY(U,$J,358.3,32113,1,3,0)
+ ;;=3^Nondisp fx of dist phalanx of lft grt toe, init
+ ;;^UTILITY(U,$J,358.3,32113,1,4,0)
+ ;;=4^S92.425A
+ ;;^UTILITY(U,$J,358.3,32113,2)
+ ;;=^5045368
+ ;;^UTILITY(U,$J,358.3,32114,0)
+ ;;=S92.424A^^126^1609^315
+ ;;^UTILITY(U,$J,358.3,32114,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33261,1,3,0)
- ;;=3^Menatl Disorder d/t Known Physiological Condition,Unspec
- ;;^UTILITY(U,$J,358.3,33261,1,4,0)
- ;;=4^F09.
- ;;^UTILITY(U,$J,358.3,33261,2)
- ;;=^5003067
- ;;^UTILITY(U,$J,358.3,33262,0)
- ;;=F07.9^^182^1999^33
- ;;^UTILITY(U,$J,358.3,33262,1,0)
+ ;;^UTILITY(U,$J,358.3,32114,1,3,0)
+ ;;=3^Nondisp fx of dist phalanx of rt grt toe, init
+ ;;^UTILITY(U,$J,358.3,32114,1,4,0)
+ ;;=4^S92.424A
+ ;;^UTILITY(U,$J,358.3,32114,2)
+ ;;=^5045361
+ ;;^UTILITY(U,$J,358.3,32115,0)
+ ;;=S92.505A^^126^1609^323
+ ;;^UTILITY(U,$J,358.3,32115,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33262,1,3,0)
- ;;=3^Personality & Behavrl Disorder d/t Known Physiol Cond,Unspec
- ;;^UTILITY(U,$J,358.3,33262,1,4,0)
- ;;=4^F07.9
- ;;^UTILITY(U,$J,358.3,33262,2)
- ;;=^5003066
- ;;^UTILITY(U,$J,358.3,33263,0)
- ;;=G30.0^^182^1999^1
- ;;^UTILITY(U,$J,358.3,33263,1,0)
+ ;;^UTILITY(U,$J,358.3,32115,1,3,0)
+ ;;=3^Nondisp fx of lft lsr toe(s), unspec, init
+ ;;^UTILITY(U,$J,358.3,32115,1,4,0)
+ ;;=4^S92.505A
+ ;;^UTILITY(U,$J,358.3,32115,2)
+ ;;=^5045424
+ ;;^UTILITY(U,$J,358.3,32116,0)
+ ;;=S92.504A^^126^1609^353
+ ;;^UTILITY(U,$J,358.3,32116,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33263,1,3,0)
- ;;=3^Alzheimer's Disease w/ Early Onset
- ;;^UTILITY(U,$J,358.3,33263,1,4,0)
- ;;=4^G30.0
- ;;^UTILITY(U,$J,358.3,33263,2)
- ;;=^5003805
- ;;^UTILITY(U,$J,358.3,33264,0)
- ;;=G30.8^^182^1999^3
- ;;^UTILITY(U,$J,358.3,33264,1,0)
+ ;;^UTILITY(U,$J,358.3,32116,1,3,0)
+ ;;=3^Nondisp fx of rt lsr toe(s), unspec, init
+ ;;^UTILITY(U,$J,358.3,32116,1,4,0)
+ ;;=4^S92.504A
+ ;;^UTILITY(U,$J,358.3,32116,2)
+ ;;=^5045417
+ ;;^UTILITY(U,$J,358.3,32117,0)
+ ;;=S92.502A^^126^1609^98
+ ;;^UTILITY(U,$J,358.3,32117,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33264,1,3,0)
- ;;=3^Alzheimer's Disease,Other
- ;;^UTILITY(U,$J,358.3,33264,1,4,0)
- ;;=4^G30.8
- ;;^UTILITY(U,$J,358.3,33264,2)
- ;;=^5003807
- ;;^UTILITY(U,$J,358.3,33265,0)
- ;;=G30.1^^182^1999^2
- ;;^UTILITY(U,$J,358.3,33265,1,0)
+ ;;^UTILITY(U,$J,358.3,32117,1,3,0)
+ ;;=3^Disp fx of lft lsr toe(s), unspec, init
+ ;;^UTILITY(U,$J,358.3,32117,1,4,0)
+ ;;=4^S92.502A
+ ;;^UTILITY(U,$J,358.3,32117,2)
+ ;;=^5045410
+ ;;^UTILITY(U,$J,358.3,32118,0)
+ ;;=S92.501A^^126^1609^127
+ ;;^UTILITY(U,$J,358.3,32118,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33265,1,3,0)
- ;;=3^Alzheimer's Disease w/ Late Onset
- ;;^UTILITY(U,$J,358.3,33265,1,4,0)
- ;;=4^G30.1
- ;;^UTILITY(U,$J,358.3,33265,2)
- ;;=^5003806
- ;;^UTILITY(U,$J,358.3,33266,0)
- ;;=G30.9^^182^1999^4
- ;;^UTILITY(U,$J,358.3,33266,1,0)
+ ;;^UTILITY(U,$J,358.3,32118,1,3,0)
+ ;;=3^Disp fx of rt lsr toe(s), unspec, init
+ ;;^UTILITY(U,$J,358.3,32118,1,4,0)
+ ;;=4^S92.501A
+ ;;^UTILITY(U,$J,358.3,32118,2)
+ ;;=^5045403
+ ;;^UTILITY(U,$J,358.3,32119,0)
+ ;;=S92.492A^^126^1609^195
+ ;;^UTILITY(U,$J,358.3,32119,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33266,1,3,0)
- ;;=3^Alzheimer's Disease,Unspec
- ;;^UTILITY(U,$J,358.3,33266,1,4,0)
- ;;=4^G30.9
- ;;^UTILITY(U,$J,358.3,33266,2)
- ;;=^5003808
- ;;^UTILITY(U,$J,358.3,33267,0)
- ;;=G21.4^^182^1999^40
- ;;^UTILITY(U,$J,358.3,33267,1,0)
+ ;;^UTILITY(U,$J,358.3,32119,1,3,0)
+ ;;=3^Fx of lft grt toe, oth, init
+ ;;^UTILITY(U,$J,358.3,32119,1,4,0)
+ ;;=4^S92.492A
+ ;;^UTILITY(U,$J,358.3,32119,2)
+ ;;=^5045389
+ ;;^UTILITY(U,$J,358.3,32120,0)
+ ;;=T33.822S^^126^1609^1
+ ;;^UTILITY(U,$J,358.3,32120,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33267,1,3,0)
- ;;=3^Vascular Parkinsonism
- ;;^UTILITY(U,$J,358.3,33267,1,4,0)
- ;;=4^G21.4
- ;;^UTILITY(U,$J,358.3,33267,2)
- ;;=^5003776
- ;;^UTILITY(U,$J,358.3,33268,0)
- ;;=G20.^^182^1999^32
- ;;^UTILITY(U,$J,358.3,33268,1,0)
+ ;;^UTILITY(U,$J,358.3,32120,1,3,0)
+ ;;=3
+ ;;^UTILITY(U,$J,358.3,32120,1,4,0)
+ ;;=4^T33.822S
+ ;;^UTILITY(U,$J,358.3,32120,2)
+ ;;=Superficial Frostbite of lft ft, sequela^5049126
+ ;;^UTILITY(U,$J,358.3,32121,0)
+ ;;=S92.911A^^126^1609^221
+ ;;^UTILITY(U,$J,358.3,32121,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33268,1,3,0)
- ;;=3^Parkinson's Disease
- ;;^UTILITY(U,$J,358.3,33268,1,4,0)
- ;;=4^G20.
- ;;^UTILITY(U,$J,358.3,33268,2)
- ;;=^5003770
- ;;^UTILITY(U,$J,358.3,33269,0)
- ;;=G25.0^^182^1999^15
- ;;^UTILITY(U,$J,358.3,33269,1,0)
+ ;;^UTILITY(U,$J,358.3,32121,1,3,0)
+ ;;=3^Fx of rt toe(s), unspec, init
+ ;;^UTILITY(U,$J,358.3,32121,1,4,0)
+ ;;=4^S92.911A
+ ;;^UTILITY(U,$J,358.3,32121,2)
+ ;;=^5045592
+ ;;^UTILITY(U,$J,358.3,32122,0)
+ ;;=T34.821S^^126^1609^187
+ ;;^UTILITY(U,$J,358.3,32122,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33269,1,3,0)
- ;;=3^Essential Tremor
- ;;^UTILITY(U,$J,358.3,33269,1,4,0)
- ;;=4^G25.0
- ;;^UTILITY(U,$J,358.3,33269,2)
- ;;=^5003791
- ;;^UTILITY(U,$J,358.3,33270,0)
- ;;=G25.2^^182^1999^39
- ;;^UTILITY(U,$J,358.3,33270,1,0)
+ ;;^UTILITY(U,$J,358.3,32122,1,3,0)
+ ;;=3^Frostbite w/ tissue necrosis of rt ft, sequela
+ ;;^UTILITY(U,$J,358.3,32122,1,4,0)
+ ;;=4^T34.821S
+ ;;^UTILITY(U,$J,358.3,32122,2)
+ ;;=^5049234
+ ;;^UTILITY(U,$J,358.3,32123,0)
+ ;;=T34.822S^^126^1609^182
+ ;;^UTILITY(U,$J,358.3,32123,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33270,1,3,0)
- ;;=3^Tremor,Other Spec Forms
- ;;^UTILITY(U,$J,358.3,33270,1,4,0)
- ;;=4^G25.2
- ;;^UTILITY(U,$J,358.3,33270,2)
- ;;=^5003793
- ;;^UTILITY(U,$J,358.3,33271,0)
- ;;=G25.1^^182^1999^38
- ;;^UTILITY(U,$J,358.3,33271,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33271,1,3,0)
- ;;=3^Tremor,Drug-Induced
- ;;^UTILITY(U,$J,358.3,33271,1,4,0)
- ;;=4^G25.1
- ;;^UTILITY(U,$J,358.3,33271,2)
- ;;=^5003792
- ;;^UTILITY(U,$J,358.3,33272,0)
- ;;=G25.81^^182^1999^36
+ ;;^UTILITY(U,$J,358.3,32123,1,3,0)
+ ;;=3^Frostbite w/ tissue necrosis of lft ft, seqeula
+ ;;^UTILITY(U,$J,358.3,32123,1,4,0)
+ ;;=4^T34.822S

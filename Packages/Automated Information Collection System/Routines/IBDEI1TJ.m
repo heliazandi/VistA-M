@@ -1,124 +1,136 @@
-IBDEI1TJ ; ; 06-AUG-2015
+IBDEI1TJ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32046,1,4,0)
- ;;=4^I70.544
- ;;^UTILITY(U,$J,358.3,32046,2)
- ;;=^5007712
- ;;^UTILITY(U,$J,358.3,32047,0)
- ;;=I70.545^^182^1981^59
- ;;^UTILITY(U,$J,358.3,32047,1,0)
+ ;;^UTILITY(U,$J,358.3,30893,2)
+ ;;=^5063626
+ ;;^UTILITY(U,$J,358.3,30894,0)
+ ;;=Z91.89^^123^1543^14
+ ;;^UTILITY(U,$J,358.3,30894,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32047,1,3,0)
- ;;=3^Athscl Nonaut Bio Bypass of Left Leg w/ Ulcer of Oth Part of Foot
- ;;^UTILITY(U,$J,358.3,32047,1,4,0)
- ;;=4^I70.545
- ;;^UTILITY(U,$J,358.3,32047,2)
- ;;=^5007713
- ;;^UTILITY(U,$J,358.3,32048,0)
- ;;=I70.631^^182^1981^70
- ;;^UTILITY(U,$J,358.3,32048,1,0)
+ ;;^UTILITY(U,$J,358.3,30894,1,3,0)
+ ;;=3^Personal Risk Factors
+ ;;^UTILITY(U,$J,358.3,30894,1,4,0)
+ ;;=4^Z91.89
+ ;;^UTILITY(U,$J,358.3,30894,2)
+ ;;=^5063628
+ ;;^UTILITY(U,$J,358.3,30895,0)
+ ;;=Z72.9^^123^1543^15
+ ;;^UTILITY(U,$J,358.3,30895,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32048,1,3,0)
- ;;=3^Athscl Nonbiol Bypass of Right Leg w/ Ulcer of Thigh
- ;;^UTILITY(U,$J,358.3,32048,1,4,0)
- ;;=4^I70.631
- ;;^UTILITY(U,$J,358.3,32048,2)
- ;;=^5007740
- ;;^UTILITY(U,$J,358.3,32049,0)
- ;;=I70.632^^182^1981^71
- ;;^UTILITY(U,$J,358.3,32049,1,0)
+ ;;^UTILITY(U,$J,358.3,30895,1,3,0)
+ ;;=3^Problem Related to Lifestyle
+ ;;^UTILITY(U,$J,358.3,30895,1,4,0)
+ ;;=4^Z72.9
+ ;;^UTILITY(U,$J,358.3,30895,2)
+ ;;=^5063267
+ ;;^UTILITY(U,$J,358.3,30896,0)
+ ;;=Z72.811^^123^1543^1
+ ;;^UTILITY(U,$J,358.3,30896,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32049,1,3,0)
- ;;=3^Athscl Nonbiol Bypass of Right Leg w/ Ulcer of Calf
- ;;^UTILITY(U,$J,358.3,32049,1,4,0)
- ;;=4^I70.632
- ;;^UTILITY(U,$J,358.3,32049,2)
- ;;=^5007741
- ;;^UTILITY(U,$J,358.3,32050,0)
- ;;=I70.633^^182^1981^72
- ;;^UTILITY(U,$J,358.3,32050,1,0)
+ ;;^UTILITY(U,$J,358.3,30896,1,3,0)
+ ;;=3^Adult Antisocial Behavior
+ ;;^UTILITY(U,$J,358.3,30896,1,4,0)
+ ;;=4^Z72.811
+ ;;^UTILITY(U,$J,358.3,30896,2)
+ ;;=^5063263
+ ;;^UTILITY(U,$J,358.3,30897,0)
+ ;;=Z91.19^^123^1543^5
+ ;;^UTILITY(U,$J,358.3,30897,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32050,1,3,0)
- ;;=3^Athscl Nonbiol Bypass of Right Leg w/ Ulcer of Ankle
- ;;^UTILITY(U,$J,358.3,32050,1,4,0)
- ;;=4^I70.633
- ;;^UTILITY(U,$J,358.3,32050,2)
- ;;=^5007742
- ;;^UTILITY(U,$J,358.3,32051,0)
- ;;=I70.634^^182^1981^73
- ;;^UTILITY(U,$J,358.3,32051,1,0)
+ ;;^UTILITY(U,$J,358.3,30897,1,3,0)
+ ;;=3^Nonadherence to Medical Treatment
+ ;;^UTILITY(U,$J,358.3,30897,1,4,0)
+ ;;=4^Z91.19
+ ;;^UTILITY(U,$J,358.3,30897,2)
+ ;;=^5063618
+ ;;^UTILITY(U,$J,358.3,30898,0)
+ ;;=E66.9^^123^1543^6
+ ;;^UTILITY(U,$J,358.3,30898,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32051,1,3,0)
- ;;=3^Athscl Nonbiol Bypass of Right Leg w/ Ulcer of Heel/Midfoot
- ;;^UTILITY(U,$J,358.3,32051,1,4,0)
- ;;=4^I70.634
- ;;^UTILITY(U,$J,358.3,32051,2)
- ;;=^5007743
- ;;^UTILITY(U,$J,358.3,32052,0)
- ;;=I70.635^^182^1981^74
- ;;^UTILITY(U,$J,358.3,32052,1,0)
+ ;;^UTILITY(U,$J,358.3,30898,1,3,0)
+ ;;=3^Obesity
+ ;;^UTILITY(U,$J,358.3,30898,1,4,0)
+ ;;=4^E66.9
+ ;;^UTILITY(U,$J,358.3,30898,2)
+ ;;=^5002832
+ ;;^UTILITY(U,$J,358.3,30899,0)
+ ;;=Z76.5^^123^1543^3
+ ;;^UTILITY(U,$J,358.3,30899,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32052,1,3,0)
- ;;=3^Athscl Nonbiol Bypass of Right Leg w/ Ulcer of Oth Part of Foot
- ;;^UTILITY(U,$J,358.3,32052,1,4,0)
- ;;=4^I70.635
- ;;^UTILITY(U,$J,358.3,32052,2)
- ;;=^5007744
- ;;^UTILITY(U,$J,358.3,32053,0)
- ;;=I70.641^^182^1981^65
- ;;^UTILITY(U,$J,358.3,32053,1,0)
+ ;;^UTILITY(U,$J,358.3,30899,1,3,0)
+ ;;=3^Malingering
+ ;;^UTILITY(U,$J,358.3,30899,1,4,0)
+ ;;=4^Z76.5
+ ;;^UTILITY(U,$J,358.3,30899,2)
+ ;;=^5063302
+ ;;^UTILITY(U,$J,358.3,30900,0)
+ ;;=R41.83^^123^1543^2
+ ;;^UTILITY(U,$J,358.3,30900,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32053,1,3,0)
- ;;=3^Athscl Nonbiol Bypass of Left Leg w/ Ulcer of Thigh
- ;;^UTILITY(U,$J,358.3,32053,1,4,0)
- ;;=4^I70.641
- ;;^UTILITY(U,$J,358.3,32053,2)
- ;;=^5007747
- ;;^UTILITY(U,$J,358.3,32054,0)
- ;;=I70.642^^182^1981^66
- ;;^UTILITY(U,$J,358.3,32054,1,0)
+ ;;^UTILITY(U,$J,358.3,30900,1,3,0)
+ ;;=3^Borderline Intellectual Functioning
+ ;;^UTILITY(U,$J,358.3,30900,1,4,0)
+ ;;=4^R41.83
+ ;;^UTILITY(U,$J,358.3,30900,2)
+ ;;=^5019442
+ ;;^UTILITY(U,$J,358.3,30901,0)
+ ;;=Z56.82^^123^1543^4
+ ;;^UTILITY(U,$J,358.3,30901,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32054,1,3,0)
- ;;=3^Athscl Nonbiol Bypass of Left Leg w/ Ulcer of Calf
- ;;^UTILITY(U,$J,358.3,32054,1,4,0)
- ;;=4^I70.642
- ;;^UTILITY(U,$J,358.3,32054,2)
- ;;=^5007748
- ;;^UTILITY(U,$J,358.3,32055,0)
- ;;=I70.643^^182^1981^67
- ;;^UTILITY(U,$J,358.3,32055,1,0)
+ ;;^UTILITY(U,$J,358.3,30901,1,3,0)
+ ;;=3^Military Deployment Status,Current
+ ;;^UTILITY(U,$J,358.3,30901,1,4,0)
+ ;;=4^Z56.82
+ ;;^UTILITY(U,$J,358.3,30901,2)
+ ;;=^5063115
+ ;;^UTILITY(U,$J,358.3,30902,0)
+ ;;=E66.3^^123^1543^7
+ ;;^UTILITY(U,$J,358.3,30902,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32055,1,3,0)
- ;;=3^Athscl Nonbiol Bypass of Left Leg w/ Ulcer of Ankle
- ;;^UTILITY(U,$J,358.3,32055,1,4,0)
- ;;=4^I70.643
- ;;^UTILITY(U,$J,358.3,32055,2)
- ;;=^5007749
- ;;^UTILITY(U,$J,358.3,32056,0)
- ;;=I70.644^^182^1981^68
- ;;^UTILITY(U,$J,358.3,32056,1,0)
+ ;;^UTILITY(U,$J,358.3,30902,1,3,0)
+ ;;=3^Overweight
+ ;;^UTILITY(U,$J,358.3,30902,1,4,0)
+ ;;=4^E66.3
+ ;;^UTILITY(U,$J,358.3,30902,2)
+ ;;=^5002830
+ ;;^UTILITY(U,$J,358.3,30903,0)
+ ;;=Z62.811^^123^1543^10
+ ;;^UTILITY(U,$J,358.3,30903,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32056,1,3,0)
- ;;=3^Athscl Nonbiol Bypass of Left Leg w/ Ulcer of Heel/Midfoot
- ;;^UTILITY(U,$J,358.3,32056,1,4,0)
- ;;=4^I70.644
- ;;^UTILITY(U,$J,358.3,32056,2)
- ;;=^5007750
- ;;^UTILITY(U,$J,358.3,32057,0)
- ;;=I70.645^^182^1981^69
- ;;^UTILITY(U,$J,358.3,32057,1,0)
+ ;;^UTILITY(U,$J,358.3,30903,1,3,0)
+ ;;=3^Personal Hx of Childhood Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,30903,1,4,0)
+ ;;=4^Z62.811
+ ;;^UTILITY(U,$J,358.3,30903,2)
+ ;;=^5063154
+ ;;^UTILITY(U,$J,358.3,30904,0)
+ ;;=Z62.812^^123^1543^8
+ ;;^UTILITY(U,$J,358.3,30904,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32057,1,3,0)
- ;;=3^Athscl Nonbiol Bypass of Left Leg w/ Ulcer of Oth Part of Foot
- ;;^UTILITY(U,$J,358.3,32057,1,4,0)
- ;;=4^I70.645
- ;;^UTILITY(U,$J,358.3,32057,2)
- ;;=^5007751
- ;;^UTILITY(U,$J,358.3,32058,0)
- ;;=K12.0^^182^1981^259
- ;;^UTILITY(U,$J,358.3,32058,1,0)
+ ;;^UTILITY(U,$J,358.3,30904,1,3,0)
+ ;;=3^Personal Hx of Childhood Neglect
+ ;;^UTILITY(U,$J,358.3,30904,1,4,0)
+ ;;=4^Z62.812
+ ;;^UTILITY(U,$J,358.3,30904,2)
+ ;;=^5063155
+ ;;^UTILITY(U,$J,358.3,30905,0)
+ ;;=Z62.810^^123^1543^9
+ ;;^UTILITY(U,$J,358.3,30905,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32058,1,3,0)
- ;;=3^Recurrent Oral Aphthae
+ ;;^UTILITY(U,$J,358.3,30905,1,3,0)
+ ;;=3^Personal Hx of Childhood Physical/Sexual Abuse
+ ;;^UTILITY(U,$J,358.3,30905,1,4,0)
+ ;;=4^Z62.810
+ ;;^UTILITY(U,$J,358.3,30905,2)
+ ;;=^5063153
+ ;;^UTILITY(U,$J,358.3,30906,0)
+ ;;=Z91.83^^123^1543^16
+ ;;^UTILITY(U,$J,358.3,30906,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30906,1,3,0)
+ ;;=3^Wandering Associated w/ a Mental Disorder
+ ;;^UTILITY(U,$J,358.3,30906,1,4,0)
+ ;;=4^Z91.83
+ ;;^UTILITY(U,$J,358.3,30906,2)
+ ;;=^5063627

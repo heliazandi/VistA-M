@@ -1,130 +1,126 @@
-IBDEI1GY ; ; 06-AUG-2015
+IBDEI1GY ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,26059,1,2,0)
- ;;=2^90834
- ;;^UTILITY(U,$J,358.3,26059,1,3,0)
- ;;=3^Psychotherapy 38-52 min
- ;;^UTILITY(U,$J,358.3,26060,0)
- ;;=90837^^151^1658^3^^^^1
- ;;^UTILITY(U,$J,358.3,26060,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26060,1,2,0)
- ;;=2^90837
- ;;^UTILITY(U,$J,358.3,26060,1,3,0)
- ;;=3^Psychotherapy 53-89 min
- ;;^UTILITY(U,$J,358.3,26061,0)
- ;;=90853^^151^1658^4^^^^1
- ;;^UTILITY(U,$J,358.3,26061,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26061,1,2,0)
- ;;=2^90853
- ;;^UTILITY(U,$J,358.3,26061,1,3,0)
- ;;=3^Group Psychotherapy
- ;;^UTILITY(U,$J,358.3,26062,0)
- ;;=90846^^151^1658^5^^^^1
- ;;^UTILITY(U,$J,358.3,26062,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26062,1,2,0)
- ;;=2^90846
- ;;^UTILITY(U,$J,358.3,26062,1,3,0)
- ;;=3^Family Psychotherapy w/o Pt
- ;;^UTILITY(U,$J,358.3,26063,0)
- ;;=90847^^151^1658^6^^^^1
- ;;^UTILITY(U,$J,358.3,26063,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26063,1,2,0)
- ;;=2^90847
- ;;^UTILITY(U,$J,358.3,26063,1,3,0)
- ;;=3^Family Psychotherapy w/ Pt
- ;;^UTILITY(U,$J,358.3,26064,0)
- ;;=90875^^151^1658^7^^^^1
- ;;^UTILITY(U,$J,358.3,26064,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26064,1,2,0)
- ;;=2^90875
- ;;^UTILITY(U,$J,358.3,26064,1,3,0)
- ;;=3^With Biofeedback 20-30 min
- ;;^UTILITY(U,$J,358.3,26065,0)
- ;;=90876^^151^1658^8^^^^1
- ;;^UTILITY(U,$J,358.3,26065,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26065,1,2,0)
- ;;=2^90876
- ;;^UTILITY(U,$J,358.3,26065,1,3,0)
- ;;=3^With Biofeedback 45-50 min
- ;;^UTILITY(U,$J,358.3,26066,0)
- ;;=90839^^151^1659^1^^^^1
- ;;^UTILITY(U,$J,358.3,26066,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26066,1,2,0)
- ;;=2^90839
- ;;^UTILITY(U,$J,358.3,26066,1,3,0)
- ;;=3^PsychTx Crisis Init,30-74 Min
- ;;^UTILITY(U,$J,358.3,26067,0)
- ;;=90840^^151^1659^2^^^^1
- ;;^UTILITY(U,$J,358.3,26067,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26067,1,2,0)
- ;;=2^90840
- ;;^UTILITY(U,$J,358.3,26067,1,3,0)
- ;;=3^PsychTx Crisis;Ea Addl 30 min
- ;;^UTILITY(U,$J,358.3,26068,0)
- ;;=97545^^151^1660^30^^^^1
- ;;^UTILITY(U,$J,358.3,26068,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26068,1,2,0)
- ;;=2^97545
- ;;^UTILITY(U,$J,358.3,26068,1,3,0)
- ;;=3^Work Therapy, Init 2 hrs
- ;;^UTILITY(U,$J,358.3,26069,0)
- ;;=97546^^151^1660^29^^^^1
- ;;^UTILITY(U,$J,358.3,26069,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26069,1,2,0)
- ;;=2^97546
- ;;^UTILITY(U,$J,358.3,26069,1,3,0)
- ;;=3^Work Ther, addl hrs after 2
- ;;^UTILITY(U,$J,358.3,26070,0)
- ;;=97537^^151^1660^4^^^^1
- ;;^UTILITY(U,$J,358.3,26070,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26070,1,2,0)
- ;;=2^97537
- ;;^UTILITY(U,$J,358.3,26070,1,3,0)
- ;;=3^Community/Work Reintegration per 15 min
- ;;^UTILITY(U,$J,358.3,26071,0)
- ;;=97532^^151^1660^3^^^^1
- ;;^UTILITY(U,$J,358.3,26071,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26071,1,2,0)
- ;;=2^97532
- ;;^UTILITY(U,$J,358.3,26071,1,3,0)
- ;;=3^Cognitive Sk Dev (PhD/OT)per 15min
- ;;^UTILITY(U,$J,358.3,26072,0)
- ;;=97533^^151^1660^23^^^^1
- ;;^UTILITY(U,$J,358.3,26072,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26072,1,2,0)
- ;;=2^97533
- ;;^UTILITY(U,$J,358.3,26072,1,3,0)
- ;;=3^Sensory Integrat per 15 min
- ;;^UTILITY(U,$J,358.3,26073,0)
- ;;=97535^^151^1660^1^^^^1
- ;;^UTILITY(U,$J,358.3,26073,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26073,1,2,0)
- ;;=2^97535
- ;;^UTILITY(U,$J,358.3,26073,1,3,0)
- ;;=3^ADL Train per 15 min
- ;;^UTILITY(U,$J,358.3,26074,0)
- ;;=H0004^^151^1660^25^^^^1
- ;;^UTILITY(U,$J,358.3,26074,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,26074,1,2,0)
- ;;=2^H0004
- ;;^UTILITY(U,$J,358.3,26074,1,3,0)
- ;;=3^Subs Abuse Ind Counseling,per 15 min
- ;;^UTILITY(U,$J,358.3,26075,0)
- ;;=H0046^^151^1660^14^^^^1
+ ;;^UTILITY(U,$J,358.3,24945,2)
+ ;;=^5003134
+ ;;^UTILITY(U,$J,358.3,24946,0)
+ ;;=F11.29^^93^1120^2
+ ;;^UTILITY(U,$J,358.3,24946,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24946,1,3,0)
+ ;;=3^Opioid Dependence w/ Unspec Opioid-Induced Disorder
+ ;;^UTILITY(U,$J,358.3,24946,1,4,0)
+ ;;=4^F11.29
+ ;;^UTILITY(U,$J,358.3,24946,2)
+ ;;=^5003141
+ ;;^UTILITY(U,$J,358.3,24947,0)
+ ;;=F11.220^^93^1120^1
+ ;;^UTILITY(U,$J,358.3,24947,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24947,1,3,0)
+ ;;=3^Opioid Dependence w/ Intoxication,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,24947,1,4,0)
+ ;;=4^F11.220
+ ;;^UTILITY(U,$J,358.3,24947,2)
+ ;;=^5003129
+ ;;^UTILITY(U,$J,358.3,24948,0)
+ ;;=F11.188^^93^1120^3
+ ;;^UTILITY(U,$J,358.3,24948,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24948,1,3,0)
+ ;;=3^Opioid Induced Anxiety Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,24948,1,4,0)
+ ;;=4^F11.188
+ ;;^UTILITY(U,$J,358.3,24948,2)
+ ;;=^5003125
+ ;;^UTILITY(U,$J,358.3,24949,0)
+ ;;=F11.288^^93^1120^4
+ ;;^UTILITY(U,$J,358.3,24949,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24949,1,3,0)
+ ;;=3^Opioid Induced Anxiety Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24949,1,4,0)
+ ;;=4^F11.288
+ ;;^UTILITY(U,$J,358.3,24949,2)
+ ;;=^5003140
+ ;;^UTILITY(U,$J,358.3,24950,0)
+ ;;=F11.988^^93^1120^5
+ ;;^UTILITY(U,$J,358.3,24950,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24950,1,3,0)
+ ;;=3^Opioid Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24950,1,4,0)
+ ;;=4^F11.988
+ ;;^UTILITY(U,$J,358.3,24950,2)
+ ;;=^5003154
+ ;;^UTILITY(U,$J,358.3,24951,0)
+ ;;=F11.921^^93^1120^6
+ ;;^UTILITY(U,$J,358.3,24951,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24951,1,3,0)
+ ;;=3^Opioid Induced Delirium
+ ;;^UTILITY(U,$J,358.3,24951,1,4,0)
+ ;;=4^F11.921
+ ;;^UTILITY(U,$J,358.3,24951,2)
+ ;;=^5003144
+ ;;^UTILITY(U,$J,358.3,24952,0)
+ ;;=F11.94^^93^1120^7
+ ;;^UTILITY(U,$J,358.3,24952,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24952,1,3,0)
+ ;;=3^Opioid Induced Depressive Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24952,1,4,0)
+ ;;=4^F11.94
+ ;;^UTILITY(U,$J,358.3,24952,2)
+ ;;=^5003148
+ ;;^UTILITY(U,$J,358.3,24953,0)
+ ;;=F11.181^^93^1120^8
+ ;;^UTILITY(U,$J,358.3,24953,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24953,1,3,0)
+ ;;=3^Opioid Induced Sexual Dysfunction w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,24953,1,4,0)
+ ;;=4^F11.181
+ ;;^UTILITY(U,$J,358.3,24953,2)
+ ;;=^5003123
+ ;;^UTILITY(U,$J,358.3,24954,0)
+ ;;=F11.281^^93^1120^9
+ ;;^UTILITY(U,$J,358.3,24954,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24954,1,3,0)
+ ;;=3^Opioid Induced Sexual Dysfunction w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24954,1,4,0)
+ ;;=4^F11.281
+ ;;^UTILITY(U,$J,358.3,24954,2)
+ ;;=^5003138
+ ;;^UTILITY(U,$J,358.3,24955,0)
+ ;;=F11.981^^93^1120^10
+ ;;^UTILITY(U,$J,358.3,24955,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24955,1,3,0)
+ ;;=3^Opioid Induced Sexual Dysfunction w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24955,1,4,0)
+ ;;=4^F11.981
+ ;;^UTILITY(U,$J,358.3,24955,2)
+ ;;=^5003152
+ ;;^UTILITY(U,$J,358.3,24956,0)
+ ;;=F11.282^^93^1120^11
+ ;;^UTILITY(U,$J,358.3,24956,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24956,1,3,0)
+ ;;=3^Opioid Induced Sleep Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,24956,1,4,0)
+ ;;=4^F11.282
+ ;;^UTILITY(U,$J,358.3,24956,2)
+ ;;=^5003139
+ ;;^UTILITY(U,$J,358.3,24957,0)
+ ;;=F11.982^^93^1120^12
+ ;;^UTILITY(U,$J,358.3,24957,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24957,1,3,0)
+ ;;=3^Opioid Induced Sleep Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,24957,1,4,0)
+ ;;=4^F11.982
+ ;;^UTILITY(U,$J,358.3,24957,2)
+ ;;=^5003153

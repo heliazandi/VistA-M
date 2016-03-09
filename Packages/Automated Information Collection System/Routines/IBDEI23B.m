@@ -1,46 +1,132 @@
-IBDEI23B ; ; 06-AUG-2015
+IBDEI23B ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQ(358.94)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.94,0,"GL")
- ;;=^IBE(358.94,
- ;;^DIC("B","IMP/EXP HAND PRINT FIELD",358.94)
- ;;=
- ;;^DIC(358.94,"%D",0)
- ;;=^^1^1^2950927^^
- ;;^DIC(358.94,"%D",1,0)
- ;;=Used by the Import/Export utility as a workspace.
- ;;^DD(358.94,0)
- ;;=FIELD^^.1^8
- ;;^DD(358.94,0,"DT")
- ;;=2950728
- ;;^DD(358.94,0,"IX","B",358.94,.01)
- ;;=
- ;;^DD(358.94,0,"IX","C",358.94,.08)
- ;;=
- ;;^DD(358.94,0,"NM","IMP/EXP HAND PRINT FIELD")
- ;;=
- ;;^DD(358.94,0,"VRPK")
- ;;=AUTOMATED INFO COLLECTION SYS
- ;;^DD(358.94,.01,0)
- ;;=NAME^RF^^0;1^K:$L(X)>30!(X?.N)!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.94,.01,1,0)
- ;;=^.1
- ;;^DD(358.94,.01,1,1,0)
- ;;=358.94^B
- ;;^DD(358.94,.01,1,1,1)
- ;;=S ^IBE(358.94,"B",$E(X,1,30),DA)=""
- ;;^DD(358.94,.01,1,1,2)
- ;;=K ^IBE(358.94,"B",$E(X,1,30),DA)
- ;;^DD(358.94,.01,3)
- ;;=NAME MUST BE 3-30 CHARACTERS, NOT NUMERIC OR STARTING WITH PUNCTUATION
- ;;^DD(358.94,.01,21,0)
- ;;=^^3^3^2950725^
- ;;^DD(358.94,.01,21,1,0)
- ;;= 
- ;;^DD(358.94,.01,21,2,0)
- ;;= 
- ;;^DD(358.94,.01,21,3,0)
- ;;=The name of the field. 
- ;;^DD(358.94,.01,"DT")
- ;;=2930518
+ ;;^UTILITY(U,$J,358.3,35455,1,4,0)
+ ;;=4^D19.0
+ ;;^UTILITY(U,$J,358.3,35455,2)
+ ;;=^5002023
+ ;;^UTILITY(U,$J,358.3,35456,0)
+ ;;=D14.31^^134^1721^4
+ ;;^UTILITY(U,$J,358.3,35456,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35456,1,3,0)
+ ;;=3^Benign Neop Right Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35456,1,4,0)
+ ;;=4^D14.31
+ ;;^UTILITY(U,$J,358.3,35456,2)
+ ;;=^5001983
+ ;;^UTILITY(U,$J,358.3,35457,0)
+ ;;=D02.22^^134^1721^5
+ ;;^UTILITY(U,$J,358.3,35457,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35457,1,3,0)
+ ;;=3^Carcinoma in Situ Left Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35457,1,4,0)
+ ;;=4^D02.22
+ ;;^UTILITY(U,$J,358.3,35457,2)
+ ;;=^5001885
+ ;;^UTILITY(U,$J,358.3,35458,0)
+ ;;=D02.21^^134^1721^6
+ ;;^UTILITY(U,$J,358.3,35458,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35458,1,3,0)
+ ;;=3^Carcinoma in Situ Right Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35458,1,4,0)
+ ;;=4^D02.21
+ ;;^UTILITY(U,$J,358.3,35458,2)
+ ;;=^5001884
+ ;;^UTILITY(U,$J,358.3,35459,0)
+ ;;=R22.2^^134^1721^7
+ ;;^UTILITY(U,$J,358.3,35459,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35459,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Trunk
+ ;;^UTILITY(U,$J,358.3,35459,1,4,0)
+ ;;=4^R22.2
+ ;;^UTILITY(U,$J,358.3,35459,2)
+ ;;=^5019286
+ ;;^UTILITY(U,$J,358.3,35460,0)
+ ;;=C7A.090^^134^1721^8
+ ;;^UTILITY(U,$J,358.3,35460,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35460,1,3,0)
+ ;;=3^Malig Carcinoid Tumor Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35460,1,4,0)
+ ;;=4^C7A.090
+ ;;^UTILITY(U,$J,358.3,35460,2)
+ ;;=^5001371
+ ;;^UTILITY(U,$J,358.3,35461,0)
+ ;;=C34.02^^134^1721^11
+ ;;^UTILITY(U,$J,358.3,35461,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35461,1,3,0)
+ ;;=3^Malig Neop Left Main Bronchus
+ ;;^UTILITY(U,$J,358.3,35461,1,4,0)
+ ;;=4^C34.02
+ ;;^UTILITY(U,$J,358.3,35461,2)
+ ;;=^5000959
+ ;;^UTILITY(U,$J,358.3,35462,0)
+ ;;=C34.32^^134^1721^10
+ ;;^UTILITY(U,$J,358.3,35462,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35462,1,3,0)
+ ;;=3^Malig Neop Left Lower Lobe Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35462,1,4,0)
+ ;;=4^C34.32
+ ;;^UTILITY(U,$J,358.3,35462,2)
+ ;;=^5133322
+ ;;^UTILITY(U,$J,358.3,35463,0)
+ ;;=C34.31^^134^1721^19
+ ;;^UTILITY(U,$J,358.3,35463,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35463,1,3,0)
+ ;;=3^Malig Neop Right Lower Lobe Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35463,1,4,0)
+ ;;=4^C34.31
+ ;;^UTILITY(U,$J,358.3,35463,2)
+ ;;=^5133321
+ ;;^UTILITY(U,$J,358.3,35464,0)
+ ;;=C39.9^^134^1721^13
+ ;;^UTILITY(U,$J,358.3,35464,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35464,1,3,0)
+ ;;=3^Malig Neop Lower Respiratory Tract,Unspec Part
+ ;;^UTILITY(U,$J,358.3,35464,1,4,0)
+ ;;=4^C39.9
+ ;;^UTILITY(U,$J,358.3,35464,2)
+ ;;=^5000972
+ ;;^UTILITY(U,$J,358.3,35465,0)
+ ;;=C34.2^^134^1721^14
+ ;;^UTILITY(U,$J,358.3,35465,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35465,1,3,0)
+ ;;=3^Malig Neop Middle Lobe Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35465,1,4,0)
+ ;;=4^C34.2
+ ;;^UTILITY(U,$J,358.3,35465,2)
+ ;;=^267137
+ ;;^UTILITY(U,$J,358.3,35466,0)
+ ;;=C34.82^^134^1721^15
+ ;;^UTILITY(U,$J,358.3,35466,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35466,1,3,0)
+ ;;=3^Malig Neop Ovrlp Sites Left Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35466,1,4,0)
+ ;;=4^C34.82
+ ;;^UTILITY(U,$J,358.3,35466,2)
+ ;;=^5000965
+ ;;^UTILITY(U,$J,358.3,35467,0)
+ ;;=C34.81^^134^1721^16
+ ;;^UTILITY(U,$J,358.3,35467,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35467,1,3,0)
+ ;;=3^Malig Neop Ovrlp Sites Right Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,35467,1,4,0)
+ ;;=4^C34.81
+ ;;^UTILITY(U,$J,358.3,35467,2)
+ ;;=^5000964
+ ;;^UTILITY(U,$J,358.3,35468,0)
+ ;;=C38.4^^134^1721^17
+ ;;^UTILITY(U,$J,358.3,35468,1,0)
+ ;;=^358.31IA^4^2

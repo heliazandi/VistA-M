@@ -1,138 +1,126 @@
-IBDEI1L7 ; ; 06-AUG-2015
+IBDEI1L7 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,28169,1,4,0)
- ;;=4^682.2
- ;;^UTILITY(U,$J,358.3,28169,1,5,0)
- ;;=5^Cellulitis Of Trunk
- ;;^UTILITY(U,$J,358.3,28169,2)
- ;;=^271890
- ;;^UTILITY(U,$J,358.3,28170,0)
- ;;=070.1^^162^1792^25
- ;;^UTILITY(U,$J,358.3,28170,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28170,1,4,0)
- ;;=4^070.1
- ;;^UTILITY(U,$J,358.3,28170,1,5,0)
- ;;=5^Hepatitis A 
- ;;^UTILITY(U,$J,358.3,28170,2)
- ;;=^126486
- ;;^UTILITY(U,$J,358.3,28171,0)
- ;;=070.30^^162^1792^28
- ;;^UTILITY(U,$J,358.3,28171,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28171,1,4,0)
- ;;=4^070.30
- ;;^UTILITY(U,$J,358.3,28171,1,5,0)
- ;;=5^Hepatitis B, Acute
- ;;^UTILITY(U,$J,358.3,28171,2)
- ;;=^266626
- ;;^UTILITY(U,$J,358.3,28172,0)
- ;;=070.32^^162^1792^29
- ;;^UTILITY(U,$J,358.3,28172,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28172,1,4,0)
- ;;=4^070.32
- ;;^UTILITY(U,$J,358.3,28172,1,5,0)
- ;;=5^Hepatitis B, Chronic
- ;;^UTILITY(U,$J,358.3,28172,2)
- ;;=^303249
- ;;^UTILITY(U,$J,358.3,28173,0)
- ;;=070.51^^162^1792^31
- ;;^UTILITY(U,$J,358.3,28173,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28173,1,4,0)
- ;;=4^070.51
- ;;^UTILITY(U,$J,358.3,28173,1,5,0)
- ;;=5^Hepatitis C, Acute
- ;;^UTILITY(U,$J,358.3,28173,2)
- ;;=^266632
- ;;^UTILITY(U,$J,358.3,28174,0)
- ;;=070.54^^162^1792^32
- ;;^UTILITY(U,$J,358.3,28174,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28174,1,4,0)
- ;;=4^070.54
- ;;^UTILITY(U,$J,358.3,28174,1,5,0)
- ;;=5^Hepatitis C, Chronic
- ;;^UTILITY(U,$J,358.3,28174,2)
- ;;=^303252
- ;;^UTILITY(U,$J,358.3,28175,0)
- ;;=571.41^^162^1792^34
- ;;^UTILITY(U,$J,358.3,28175,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28175,1,4,0)
- ;;=4^571.41
- ;;^UTILITY(U,$J,358.3,28175,1,5,0)
- ;;=5^Hepatitis, Chronic Persist
- ;;^UTILITY(U,$J,358.3,28175,2)
- ;;=^259093
- ;;^UTILITY(U,$J,358.3,28176,0)
- ;;=571.1^^162^1792^35
- ;;^UTILITY(U,$J,358.3,28176,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28176,1,4,0)
- ;;=4^571.1
- ;;^UTILITY(U,$J,358.3,28176,1,5,0)
- ;;=5^Hepatitis, Etoh Acute
- ;;^UTILITY(U,$J,358.3,28176,2)
- ;;=^2597
- ;;^UTILITY(U,$J,358.3,28177,0)
- ;;=070.59^^162^1792^36
- ;;^UTILITY(U,$J,358.3,28177,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28177,1,4,0)
- ;;=4^070.59
- ;;^UTILITY(U,$J,358.3,28177,1,5,0)
- ;;=5^Hepatitis, Other Viral
- ;;^UTILITY(U,$J,358.3,28177,2)
- ;;=Hepatitis, Other Viral^266631
- ;;^UTILITY(U,$J,358.3,28178,0)
- ;;=V08.^^162^1792^23
- ;;^UTILITY(U,$J,358.3,28178,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28178,1,4,0)
- ;;=4^V08.
- ;;^UTILITY(U,$J,358.3,28178,1,5,0)
- ;;=5^HIV + Status (Asymptomatic)
- ;;^UTILITY(U,$J,358.3,28178,2)
- ;;=HIV + Status (Asymptomatic)^303392
- ;;^UTILITY(U,$J,358.3,28179,0)
- ;;=042.^^162^1792^24
- ;;^UTILITY(U,$J,358.3,28179,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28179,1,4,0)
- ;;=4^042.
- ;;^UTILITY(U,$J,358.3,28179,1,5,0)
- ;;=5^HIV Disease (Symptomatic)
- ;;^UTILITY(U,$J,358.3,28179,2)
- ;;=HIV Disease (symptomatic)^266500
- ;;^UTILITY(U,$J,358.3,28180,0)
- ;;=464.00^^162^1792^44
- ;;^UTILITY(U,$J,358.3,28180,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28180,1,4,0)
- ;;=4^464.00
- ;;^UTILITY(U,$J,358.3,28180,1,5,0)
- ;;=5^Laryngitis,Acute
- ;;^UTILITY(U,$J,358.3,28180,2)
- ;;=Acute Laryngitis^323469
- ;;^UTILITY(U,$J,358.3,28181,0)
- ;;=790.6^^162^1792^1
- ;;^UTILITY(U,$J,358.3,28181,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28181,1,4,0)
- ;;=4^790.6
- ;;^UTILITY(U,$J,358.3,28181,1,5,0)
- ;;=5^Abnormal LFT's
- ;;^UTILITY(U,$J,358.3,28181,2)
- ;;=^87228
- ;;^UTILITY(U,$J,358.3,28182,0)
- ;;=780.60^^162^1792^19
- ;;^UTILITY(U,$J,358.3,28182,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,28182,1,4,0)
- ;;=4^780.60
- ;;^UTILITY(U,$J,358.3,28182,1,5,0)
- ;;=5^Fever
+ ;;^UTILITY(U,$J,358.3,26909,1,3,0)
+ ;;=3^Opioid Dependence w/ Unspec Opioid-Induced Disorder
+ ;;^UTILITY(U,$J,358.3,26909,1,4,0)
+ ;;=4^F11.29
+ ;;^UTILITY(U,$J,358.3,26909,2)
+ ;;=^5003141
+ ;;^UTILITY(U,$J,358.3,26910,0)
+ ;;=F11.220^^100^1295^1
+ ;;^UTILITY(U,$J,358.3,26910,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26910,1,3,0)
+ ;;=3^Opioid Dependence w/ Intoxication,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,26910,1,4,0)
+ ;;=4^F11.220
+ ;;^UTILITY(U,$J,358.3,26910,2)
+ ;;=^5003129
+ ;;^UTILITY(U,$J,358.3,26911,0)
+ ;;=F11.188^^100^1295^3
+ ;;^UTILITY(U,$J,358.3,26911,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26911,1,3,0)
+ ;;=3^Opioid Induced Anxiety Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26911,1,4,0)
+ ;;=4^F11.188
+ ;;^UTILITY(U,$J,358.3,26911,2)
+ ;;=^5003125
+ ;;^UTILITY(U,$J,358.3,26912,0)
+ ;;=F11.288^^100^1295^4
+ ;;^UTILITY(U,$J,358.3,26912,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26912,1,3,0)
+ ;;=3^Opioid Induced Anxiety Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26912,1,4,0)
+ ;;=4^F11.288
+ ;;^UTILITY(U,$J,358.3,26912,2)
+ ;;=^5003140
+ ;;^UTILITY(U,$J,358.3,26913,0)
+ ;;=F11.988^^100^1295^5
+ ;;^UTILITY(U,$J,358.3,26913,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26913,1,3,0)
+ ;;=3^Opioid Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26913,1,4,0)
+ ;;=4^F11.988
+ ;;^UTILITY(U,$J,358.3,26913,2)
+ ;;=^5003154
+ ;;^UTILITY(U,$J,358.3,26914,0)
+ ;;=F11.921^^100^1295^6
+ ;;^UTILITY(U,$J,358.3,26914,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26914,1,3,0)
+ ;;=3^Opioid Induced Delirium
+ ;;^UTILITY(U,$J,358.3,26914,1,4,0)
+ ;;=4^F11.921
+ ;;^UTILITY(U,$J,358.3,26914,2)
+ ;;=^5003144
+ ;;^UTILITY(U,$J,358.3,26915,0)
+ ;;=F11.94^^100^1295^7
+ ;;^UTILITY(U,$J,358.3,26915,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26915,1,3,0)
+ ;;=3^Opioid Induced Depressive Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26915,1,4,0)
+ ;;=4^F11.94
+ ;;^UTILITY(U,$J,358.3,26915,2)
+ ;;=^5003148
+ ;;^UTILITY(U,$J,358.3,26916,0)
+ ;;=F11.181^^100^1295^8
+ ;;^UTILITY(U,$J,358.3,26916,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26916,1,3,0)
+ ;;=3^Opioid Induced Sexual Dysfunction w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26916,1,4,0)
+ ;;=4^F11.181
+ ;;^UTILITY(U,$J,358.3,26916,2)
+ ;;=^5003123
+ ;;^UTILITY(U,$J,358.3,26917,0)
+ ;;=F11.281^^100^1295^9
+ ;;^UTILITY(U,$J,358.3,26917,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26917,1,3,0)
+ ;;=3^Opioid Induced Sexual Dysfunction w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26917,1,4,0)
+ ;;=4^F11.281
+ ;;^UTILITY(U,$J,358.3,26917,2)
+ ;;=^5003138
+ ;;^UTILITY(U,$J,358.3,26918,0)
+ ;;=F11.981^^100^1295^10
+ ;;^UTILITY(U,$J,358.3,26918,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26918,1,3,0)
+ ;;=3^Opioid Induced Sexual Dysfunction w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26918,1,4,0)
+ ;;=4^F11.981
+ ;;^UTILITY(U,$J,358.3,26918,2)
+ ;;=^5003152
+ ;;^UTILITY(U,$J,358.3,26919,0)
+ ;;=F11.282^^100^1295^11
+ ;;^UTILITY(U,$J,358.3,26919,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26919,1,3,0)
+ ;;=3^Opioid Induced Sleep Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26919,1,4,0)
+ ;;=4^F11.282
+ ;;^UTILITY(U,$J,358.3,26919,2)
+ ;;=^5003139
+ ;;^UTILITY(U,$J,358.3,26920,0)
+ ;;=F11.982^^100^1295^12
+ ;;^UTILITY(U,$J,358.3,26920,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26920,1,3,0)
+ ;;=3^Opioid Induced Sleep Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26920,1,4,0)
+ ;;=4^F11.982
+ ;;^UTILITY(U,$J,358.3,26920,2)
+ ;;=^5003153
+ ;;^UTILITY(U,$J,358.3,26921,0)
+ ;;=F11.121^^100^1295^13
+ ;;^UTILITY(U,$J,358.3,26921,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26921,1,3,0)
+ ;;=3^Opioid Intoxication Delirium w/ Mild Use Disorder

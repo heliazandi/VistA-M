@@ -1,0 +1,130 @@
+IBDEI2LH ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,44048,1,3,0)
+ ;;=3^Non-Prs Chr Ulc,Rt Low Leg w/ Necrosis of Muscle
+ ;;^UTILITY(U,$J,358.3,44048,1,4,0)
+ ;;=4^L97.913
+ ;;^UTILITY(U,$J,358.3,44048,2)
+ ;;=^5133683
+ ;;^UTILITY(U,$J,358.3,44049,0)
+ ;;=L97.914^^170^2116^14
+ ;;^UTILITY(U,$J,358.3,44049,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44049,1,3,0)
+ ;;=3^Non-Prs Chr Ulc,Rt Low Leg w/ Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,44049,1,4,0)
+ ;;=4^L97.914
+ ;;^UTILITY(U,$J,358.3,44049,2)
+ ;;=^5133685
+ ;;^UTILITY(U,$J,358.3,44050,0)
+ ;;=L97.919^^170^2116^15
+ ;;^UTILITY(U,$J,358.3,44050,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44050,1,3,0)
+ ;;=3^Non-Prs Chr Ulc,Rt Low Leg w/ Unspec Severity
+ ;;^UTILITY(U,$J,358.3,44050,1,4,0)
+ ;;=4^L97.919
+ ;;^UTILITY(U,$J,358.3,44050,2)
+ ;;=^5133688
+ ;;^UTILITY(U,$J,358.3,44051,0)
+ ;;=L97.922^^170^2116^7
+ ;;^UTILITY(U,$J,358.3,44051,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44051,1,3,0)
+ ;;=3^Non-Prs Chr Ulc,Lt Low Leg w/ Fat Layer Exposed
+ ;;^UTILITY(U,$J,358.3,44051,1,4,0)
+ ;;=4^L97.922
+ ;;^UTILITY(U,$J,358.3,44051,2)
+ ;;=^5133682
+ ;;^UTILITY(U,$J,358.3,44052,0)
+ ;;=L97.921^^170^2116^11
+ ;;^UTILITY(U,$J,358.3,44052,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44052,1,3,0)
+ ;;=3^Non-Prs Chr Ulc,Lt Low Leg,Limited to Brkdwn Skin
+ ;;^UTILITY(U,$J,358.3,44052,1,4,0)
+ ;;=4^L97.921
+ ;;^UTILITY(U,$J,358.3,44052,2)
+ ;;=^5133680
+ ;;^UTILITY(U,$J,358.3,44053,0)
+ ;;=L97.923^^170^2116^8
+ ;;^UTILITY(U,$J,358.3,44053,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44053,1,3,0)
+ ;;=3^Non-Prs Chr Ulc,Lt Low Leg w/ Necrosis of Muscle
+ ;;^UTILITY(U,$J,358.3,44053,1,4,0)
+ ;;=4^L97.923
+ ;;^UTILITY(U,$J,358.3,44053,2)
+ ;;=^5133684
+ ;;^UTILITY(U,$J,358.3,44054,0)
+ ;;=L97.924^^170^2116^9
+ ;;^UTILITY(U,$J,358.3,44054,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44054,1,3,0)
+ ;;=3^Non-Prs Chr Ulc,Lt Low Leg w/ Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,44054,1,4,0)
+ ;;=4^L97.924
+ ;;^UTILITY(U,$J,358.3,44054,2)
+ ;;=^5133686
+ ;;^UTILITY(U,$J,358.3,44055,0)
+ ;;=L97.929^^170^2116^10
+ ;;^UTILITY(U,$J,358.3,44055,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44055,1,3,0)
+ ;;=3^Non-Prs Chr Ulc,Lt Low Leg w/ Unspec Severity
+ ;;^UTILITY(U,$J,358.3,44055,1,4,0)
+ ;;=4^L97.929
+ ;;^UTILITY(U,$J,358.3,44055,2)
+ ;;=^5133689
+ ;;^UTILITY(U,$J,358.3,44056,0)
+ ;;=R21.^^170^2116^21
+ ;;^UTILITY(U,$J,358.3,44056,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44056,1,3,0)
+ ;;=3^Rash/Nonspecific Skin Eruption
+ ;;^UTILITY(U,$J,358.3,44056,1,4,0)
+ ;;=4^R21.
+ ;;^UTILITY(U,$J,358.3,44056,2)
+ ;;=^5019283
+ ;;^UTILITY(U,$J,358.3,44057,0)
+ ;;=Z23.^^170^2117^1
+ ;;^UTILITY(U,$J,358.3,44057,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44057,1,3,0)
+ ;;=3^Immunization Encounter
+ ;;^UTILITY(U,$J,358.3,44057,1,4,0)
+ ;;=4^Z23.
+ ;;^UTILITY(U,$J,358.3,44057,2)
+ ;;=^5062795
+ ;;^UTILITY(U,$J,358.3,44058,0)
+ ;;=Z48.00^^170^2118^6
+ ;;^UTILITY(U,$J,358.3,44058,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44058,1,3,0)
+ ;;=3^Change/Removal Nonsurg Wound Dressing
+ ;;^UTILITY(U,$J,358.3,44058,1,4,0)
+ ;;=4^Z48.00
+ ;;^UTILITY(U,$J,358.3,44058,2)
+ ;;=^5063033
+ ;;^UTILITY(U,$J,358.3,44059,0)
+ ;;=Z48.01^^170^2118^7
+ ;;^UTILITY(U,$J,358.3,44059,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44059,1,3,0)
+ ;;=3^Change/Removal Surgical Wound Dressing
+ ;;^UTILITY(U,$J,358.3,44059,1,4,0)
+ ;;=4^Z48.01
+ ;;^UTILITY(U,$J,358.3,44059,2)
+ ;;=^5063034
+ ;;^UTILITY(U,$J,358.3,44060,0)
+ ;;=Z09.^^170^2118^14
+ ;;^UTILITY(U,$J,358.3,44060,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44060,1,3,0)
+ ;;=3^F/U Exam After Treatment
+ ;;^UTILITY(U,$J,358.3,44060,1,4,0)
+ ;;=4^Z09.
+ ;;^UTILITY(U,$J,358.3,44060,2)
+ ;;=^5062668

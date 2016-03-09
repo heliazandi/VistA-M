@@ -1,138 +1,134 @@
-IBDEI0Y5 ; ; 06-AUG-2015
+IBDEI0Y5 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16627,2)
- ;;=Aseptic Necrosis of Bone^276833
- ;;^UTILITY(U,$J,358.3,16628,0)
- ;;=737.34^^84^996^2
- ;;^UTILITY(U,$J,358.3,16628,1,0)
+ ;;^UTILITY(U,$J,358.3,16031,1,4,0)
+ ;;=4^D51.0
+ ;;^UTILITY(U,$J,358.3,16031,2)
+ ;;=^5002284
+ ;;^UTILITY(U,$J,358.3,16032,0)
+ ;;=D57.1^^61^716^29
+ ;;^UTILITY(U,$J,358.3,16032,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16628,1,3,0)
- ;;=3^737.34
- ;;^UTILITY(U,$J,358.3,16628,1,4,0)
- ;;=4^Kyphoscoliosis, Thorax
- ;;^UTILITY(U,$J,358.3,16628,2)
- ;;=Kyphoscoliosis, Thorax^272762
- ;;^UTILITY(U,$J,358.3,16629,0)
- ;;=733.00^^84^996^4
- ;;^UTILITY(U,$J,358.3,16629,1,0)
+ ;;^UTILITY(U,$J,358.3,16032,1,3,0)
+ ;;=3^Sickle-Cell Disease w/o Crisis
+ ;;^UTILITY(U,$J,358.3,16032,1,4,0)
+ ;;=4^D57.1
+ ;;^UTILITY(U,$J,358.3,16032,2)
+ ;;=^5002309
+ ;;^UTILITY(U,$J,358.3,16033,0)
+ ;;=D64.0^^61^716^22
+ ;;^UTILITY(U,$J,358.3,16033,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16629,1,3,0)
- ;;=3^733.00
- ;;^UTILITY(U,$J,358.3,16629,1,4,0)
- ;;=4^Osteoporosis
- ;;^UTILITY(U,$J,358.3,16629,2)
- ;;=Osteoporosis^87159
- ;;^UTILITY(U,$J,358.3,16630,0)
- ;;=733.90^^84^996^3
- ;;^UTILITY(U,$J,358.3,16630,1,0)
+ ;;^UTILITY(U,$J,358.3,16033,1,3,0)
+ ;;=3^Anemia,Sideroblastic,Hereditary
+ ;;^UTILITY(U,$J,358.3,16033,1,4,0)
+ ;;=4^D64.0
+ ;;^UTILITY(U,$J,358.3,16033,2)
+ ;;=^5002344
+ ;;^UTILITY(U,$J,358.3,16034,0)
+ ;;=D64.1^^61^716^23
+ ;;^UTILITY(U,$J,358.3,16034,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16630,1,3,0)
- ;;=3^733.90
- ;;^UTILITY(U,$J,358.3,16630,1,4,0)
- ;;=4^Osteopenia
- ;;^UTILITY(U,$J,358.3,16630,2)
- ;;=Osteopenia^35593
- ;;^UTILITY(U,$J,358.3,16631,0)
- ;;=807.00^^84^996^5
- ;;^UTILITY(U,$J,358.3,16631,1,0)
+ ;;^UTILITY(U,$J,358.3,16034,1,3,0)
+ ;;=3^Anemia,Sideroblastic,Secondary d/t Disease
+ ;;^UTILITY(U,$J,358.3,16034,1,4,0)
+ ;;=4^D64.1
+ ;;^UTILITY(U,$J,358.3,16034,2)
+ ;;=^5002345
+ ;;^UTILITY(U,$J,358.3,16035,0)
+ ;;=D64.2^^61^716^24
+ ;;^UTILITY(U,$J,358.3,16035,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16631,1,3,0)
- ;;=3^807.00
- ;;^UTILITY(U,$J,358.3,16631,1,4,0)
- ;;=4^Rib Fracture
- ;;^UTILITY(U,$J,358.3,16631,2)
- ;;=Rib Fracture^25317
- ;;^UTILITY(U,$J,358.3,16632,0)
- ;;=733.13^^84^996^6
- ;;^UTILITY(U,$J,358.3,16632,1,0)
+ ;;^UTILITY(U,$J,358.3,16035,1,3,0)
+ ;;=3^Anemia,Sideroblastic,Secondary d/t Drugs/Toxins
+ ;;^UTILITY(U,$J,358.3,16035,1,4,0)
+ ;;=4^D64.2
+ ;;^UTILITY(U,$J,358.3,16035,2)
+ ;;=^5002346
+ ;;^UTILITY(U,$J,358.3,16036,0)
+ ;;=D64.9^^61^716^25
+ ;;^UTILITY(U,$J,358.3,16036,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16632,1,3,0)
- ;;=3^733.13
- ;;^UTILITY(U,$J,358.3,16632,1,4,0)
- ;;=4^Vertebral Compression Fracture
- ;;^UTILITY(U,$J,358.3,16632,2)
- ;;=^295754
- ;;^UTILITY(U,$J,358.3,16633,0)
- ;;=338.12^^84^997^1
- ;;^UTILITY(U,$J,358.3,16633,1,0)
+ ;;^UTILITY(U,$J,358.3,16036,1,3,0)
+ ;;=3^Anemia,Unspec
+ ;;^UTILITY(U,$J,358.3,16036,1,4,0)
+ ;;=4^D64.9
+ ;;^UTILITY(U,$J,358.3,16036,2)
+ ;;=^5002351
+ ;;^UTILITY(U,$J,358.3,16037,0)
+ ;;=C50.912^^61^717^11
+ ;;^UTILITY(U,$J,358.3,16037,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16633,1,3,0)
- ;;=3^338.12
- ;;^UTILITY(U,$J,358.3,16633,1,4,0)
- ;;=4^Acute Post-Thoracotomy Pain
- ;;^UTILITY(U,$J,358.3,16633,2)
- ;;=^334071
- ;;^UTILITY(U,$J,358.3,16634,0)
- ;;=338.18^^84^997^4
- ;;^UTILITY(U,$J,358.3,16634,1,0)
+ ;;^UTILITY(U,$J,358.3,16037,1,3,0)
+ ;;=3^Malig Neop Breast,Left,Unspec Site
+ ;;^UTILITY(U,$J,358.3,16037,1,4,0)
+ ;;=4^C50.912
+ ;;^UTILITY(U,$J,358.3,16037,2)
+ ;;=^5001196
+ ;;^UTILITY(U,$J,358.3,16038,0)
+ ;;=C50.911^^61^717^12
+ ;;^UTILITY(U,$J,358.3,16038,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16634,1,3,0)
- ;;=3^338.18
- ;;^UTILITY(U,$J,358.3,16634,1,4,0)
- ;;=4^Post-Op Pain,Acute NEC
- ;;^UTILITY(U,$J,358.3,16634,2)
- ;;=^334072
- ;;^UTILITY(U,$J,358.3,16635,0)
- ;;=338.22^^84^997^2
- ;;^UTILITY(U,$J,358.3,16635,1,0)
+ ;;^UTILITY(U,$J,358.3,16038,1,3,0)
+ ;;=3^Malig Neop Breast,Right,Unspec Site
+ ;;^UTILITY(U,$J,358.3,16038,1,4,0)
+ ;;=4^C50.911
+ ;;^UTILITY(U,$J,358.3,16038,2)
+ ;;=^5001195
+ ;;^UTILITY(U,$J,358.3,16039,0)
+ ;;=D05.01^^61^717^10
+ ;;^UTILITY(U,$J,358.3,16039,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16635,1,3,0)
- ;;=3^338.22
- ;;^UTILITY(U,$J,358.3,16635,1,4,0)
- ;;=4^Chronic Post-Thoractomy Pain
- ;;^UTILITY(U,$J,358.3,16635,2)
- ;;=^334075
- ;;^UTILITY(U,$J,358.3,16636,0)
- ;;=338.28^^84^997^5
- ;;^UTILITY(U,$J,358.3,16636,1,0)
+ ;;^UTILITY(U,$J,358.3,16039,1,3,0)
+ ;;=3^Lobular Carcinoma in Situ,Right Breast
+ ;;^UTILITY(U,$J,358.3,16039,1,4,0)
+ ;;=4^D05.01
+ ;;^UTILITY(U,$J,358.3,16039,2)
+ ;;=^5001927
+ ;;^UTILITY(U,$J,358.3,16040,0)
+ ;;=D05.02^^61^717^9
+ ;;^UTILITY(U,$J,358.3,16040,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16636,1,3,0)
- ;;=3^338.28
- ;;^UTILITY(U,$J,358.3,16636,1,4,0)
- ;;=4^Post-Op Pain,Chronic NEC
- ;;^UTILITY(U,$J,358.3,16636,2)
- ;;=^334076
- ;;^UTILITY(U,$J,358.3,16637,0)
- ;;=338.3^^84^997^3
- ;;^UTILITY(U,$J,358.3,16637,1,0)
+ ;;^UTILITY(U,$J,358.3,16040,1,3,0)
+ ;;=3^Lobular Carcinoma in Situ,Left Breast
+ ;;^UTILITY(U,$J,358.3,16040,1,4,0)
+ ;;=4^D05.02
+ ;;^UTILITY(U,$J,358.3,16040,2)
+ ;;=^5001928
+ ;;^UTILITY(U,$J,358.3,16041,0)
+ ;;=D05.92^^61^717^5
+ ;;^UTILITY(U,$J,358.3,16041,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16637,1,3,0)
- ;;=3^338.3
- ;;^UTILITY(U,$J,358.3,16637,1,4,0)
- ;;=4^Neoplasm Related Pain
- ;;^UTILITY(U,$J,358.3,16637,2)
- ;;=^334078
- ;;^UTILITY(U,$J,358.3,16638,0)
- ;;=V58.32^^84^998^1
- ;;^UTILITY(U,$J,358.3,16638,1,0)
+ ;;^UTILITY(U,$J,358.3,16041,1,3,0)
+ ;;=3^Carcinoma in Situ,Left Breast,Unspec Type
+ ;;^UTILITY(U,$J,358.3,16041,1,4,0)
+ ;;=4^D05.92
+ ;;^UTILITY(U,$J,358.3,16041,2)
+ ;;=^5001937
+ ;;^UTILITY(U,$J,358.3,16042,0)
+ ;;=D05.91^^61^717^6
+ ;;^UTILITY(U,$J,358.3,16042,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16638,1,3,0)
- ;;=3^V58.32
- ;;^UTILITY(U,$J,358.3,16638,1,4,0)
- ;;=4^Removal of Sutures
- ;;^UTILITY(U,$J,358.3,16638,2)
- ;;=^334217
- ;;^UTILITY(U,$J,358.3,16639,0)
- ;;=V58.31^^84^998^2
- ;;^UTILITY(U,$J,358.3,16639,1,0)
+ ;;^UTILITY(U,$J,358.3,16042,1,3,0)
+ ;;=3^Carcinoma in Situ,Right Breast,Unspec Type
+ ;;^UTILITY(U,$J,358.3,16042,1,4,0)
+ ;;=4^D05.91
+ ;;^UTILITY(U,$J,358.3,16042,2)
+ ;;=^5001936
+ ;;^UTILITY(U,$J,358.3,16043,0)
+ ;;=D05.11^^61^717^8
+ ;;^UTILITY(U,$J,358.3,16043,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16639,1,3,0)
- ;;=3^V58.31
- ;;^UTILITY(U,$J,358.3,16639,1,4,0)
- ;;=4^Removal/Change Surgical Dressing
- ;;^UTILITY(U,$J,358.3,16639,2)
- ;;=^334216
- ;;^UTILITY(U,$J,358.3,16640,0)
- ;;=997.31^^84^999^3
- ;;^UTILITY(U,$J,358.3,16640,1,0)
+ ;;^UTILITY(U,$J,358.3,16043,1,3,0)
+ ;;=3^Intraductal Carcinoma in Situ,Right Breast
+ ;;^UTILITY(U,$J,358.3,16043,1,4,0)
+ ;;=4^D05.11
+ ;;^UTILITY(U,$J,358.3,16043,2)
+ ;;=^5001930
+ ;;^UTILITY(U,$J,358.3,16044,0)
+ ;;=D05.12^^61^717^7
+ ;;^UTILITY(U,$J,358.3,16044,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16640,1,3,0)
- ;;=3^997.31
- ;;^UTILITY(U,$J,358.3,16640,1,4,0)
- ;;=4^Ventilator Assoc Pneumonia
- ;;^UTILITY(U,$J,358.3,16640,2)
- ;;=^336692
- ;;^UTILITY(U,$J,358.3,16641,0)
- ;;=997.32^^84^999^1
+ ;;^UTILITY(U,$J,358.3,16044,1,3,0)
+ ;;=3^Intraductal Carcinoma in Situ,Left Breast

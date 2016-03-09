@@ -1,128 +1,136 @@
-IBDEI218 ; ; 06-AUG-2015
+IBDEI218 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35518,1,0)
+ ;;^UTILITY(U,$J,358.3,34474,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35518,1,3,0)
- ;;=3^Disruption of external operation (surgical) wound, NEC, init
- ;;^UTILITY(U,$J,358.3,35518,1,4,0)
- ;;=4^T81.31XA
- ;;^UTILITY(U,$J,358.3,35518,2)
- ;;=^5054470
- ;;^UTILITY(U,$J,358.3,35519,0)
- ;;=T81.4XXA^^188^2047^4
- ;;^UTILITY(U,$J,358.3,35519,1,0)
+ ;;^UTILITY(U,$J,358.3,34474,1,3,0)
+ ;;=3^Pain in Right Ankle
+ ;;^UTILITY(U,$J,358.3,34474,1,4,0)
+ ;;=4^M25.571
+ ;;^UTILITY(U,$J,358.3,34474,2)
+ ;;=^5011617
+ ;;^UTILITY(U,$J,358.3,34475,0)
+ ;;=M25.572^^131^1686^97
+ ;;^UTILITY(U,$J,358.3,34475,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35519,1,3,0)
- ;;=3^Infection following a procedure, initial encounter
- ;;^UTILITY(U,$J,358.3,35519,1,4,0)
- ;;=4^T81.4XXA
- ;;^UTILITY(U,$J,358.3,35519,2)
- ;;=^5054479
- ;;^UTILITY(U,$J,358.3,35520,0)
- ;;=T81.89XA^^188^2047^1
- ;;^UTILITY(U,$J,358.3,35520,1,0)
+ ;;^UTILITY(U,$J,358.3,34475,1,3,0)
+ ;;=3^Pain in Left Ankle
+ ;;^UTILITY(U,$J,358.3,34475,1,4,0)
+ ;;=4^M25.572
+ ;;^UTILITY(U,$J,358.3,34475,2)
+ ;;=^5011618
+ ;;^UTILITY(U,$J,358.3,34476,0)
+ ;;=M79.601^^131^1686^108
+ ;;^UTILITY(U,$J,358.3,34476,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35520,1,3,0)
- ;;=3^Complications of procedures, NEC, init
- ;;^UTILITY(U,$J,358.3,35520,1,4,0)
- ;;=4^T81.89XA
- ;;^UTILITY(U,$J,358.3,35520,2)
- ;;=^5054662
- ;;^UTILITY(U,$J,358.3,35521,0)
- ;;=I25.10^^188^2048^1
- ;;^UTILITY(U,$J,358.3,35521,1,0)
+ ;;^UTILITY(U,$J,358.3,34476,1,3,0)
+ ;;=3^Pain in Right Arm
+ ;;^UTILITY(U,$J,358.3,34476,1,4,0)
+ ;;=4^M79.601
+ ;;^UTILITY(U,$J,358.3,34476,2)
+ ;;=^5013325
+ ;;^UTILITY(U,$J,358.3,34477,0)
+ ;;=M79.602^^131^1686^98
+ ;;^UTILITY(U,$J,358.3,34477,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35521,1,3,0)
- ;;=3^Athscl heart disease of native coronary artery w/o ang pctrs
- ;;^UTILITY(U,$J,358.3,35521,1,4,0)
- ;;=4^I25.10
- ;;^UTILITY(U,$J,358.3,35521,2)
- ;;=^5007107
- ;;^UTILITY(U,$J,358.3,35522,0)
- ;;=I50.9^^188^2048^3
- ;;^UTILITY(U,$J,358.3,35522,1,0)
+ ;;^UTILITY(U,$J,358.3,34477,1,3,0)
+ ;;=3^Pain in Left Arm
+ ;;^UTILITY(U,$J,358.3,34477,1,4,0)
+ ;;=4^M79.602
+ ;;^UTILITY(U,$J,358.3,34477,2)
+ ;;=^5013326
+ ;;^UTILITY(U,$J,358.3,34478,0)
+ ;;=M79.604^^131^1686^114
+ ;;^UTILITY(U,$J,358.3,34478,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35522,1,3,0)
- ;;=3^Heart failure, unspecified
- ;;^UTILITY(U,$J,358.3,35522,1,4,0)
- ;;=4^I50.9
- ;;^UTILITY(U,$J,358.3,35522,2)
- ;;=^5007251
- ;;^UTILITY(U,$J,358.3,35523,0)
- ;;=I65.21^^188^2048^7
- ;;^UTILITY(U,$J,358.3,35523,1,0)
+ ;;^UTILITY(U,$J,358.3,34478,1,3,0)
+ ;;=3^Pain in Right Leg
+ ;;^UTILITY(U,$J,358.3,34478,1,4,0)
+ ;;=4^M79.604
+ ;;^UTILITY(U,$J,358.3,34478,2)
+ ;;=^5013328
+ ;;^UTILITY(U,$J,358.3,34479,0)
+ ;;=M79.605^^131^1686^104
+ ;;^UTILITY(U,$J,358.3,34479,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35523,1,3,0)
- ;;=3^Occlusion and stenosis of right carotid artery
- ;;^UTILITY(U,$J,358.3,35523,1,4,0)
- ;;=4^I65.21
- ;;^UTILITY(U,$J,358.3,35523,2)
- ;;=^5007360
- ;;^UTILITY(U,$J,358.3,35524,0)
- ;;=I65.22^^188^2048^5
- ;;^UTILITY(U,$J,358.3,35524,1,0)
+ ;;^UTILITY(U,$J,358.3,34479,1,3,0)
+ ;;=3^Pain in Left Leg
+ ;;^UTILITY(U,$J,358.3,34479,1,4,0)
+ ;;=4^M79.605
+ ;;^UTILITY(U,$J,358.3,34479,2)
+ ;;=^5013329
+ ;;^UTILITY(U,$J,358.3,34480,0)
+ ;;=M79.641^^131^1686^111
+ ;;^UTILITY(U,$J,358.3,34480,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35524,1,3,0)
- ;;=3^Occlusion and stenosis of left carotid artery
- ;;^UTILITY(U,$J,358.3,35524,1,4,0)
- ;;=4^I65.22
- ;;^UTILITY(U,$J,358.3,35524,2)
- ;;=^5007361
- ;;^UTILITY(U,$J,358.3,35525,0)
- ;;=I70.219^^188^2048^2
- ;;^UTILITY(U,$J,358.3,35525,1,0)
+ ;;^UTILITY(U,$J,358.3,34480,1,3,0)
+ ;;=3^Pain in Right Hand
+ ;;^UTILITY(U,$J,358.3,34480,1,4,0)
+ ;;=4^M79.641
+ ;;^UTILITY(U,$J,358.3,34480,2)
+ ;;=^5013338
+ ;;^UTILITY(U,$J,358.3,34481,0)
+ ;;=M79.642^^131^1686^101
+ ;;^UTILITY(U,$J,358.3,34481,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35525,1,3,0)
- ;;=3^Athscl native arteries of extrm w intrmt claud, unsp extrm
- ;;^UTILITY(U,$J,358.3,35525,1,4,0)
- ;;=4^I70.219
- ;;^UTILITY(U,$J,358.3,35525,2)
- ;;=^5007582
- ;;^UTILITY(U,$J,358.3,35526,0)
- ;;=I73.9^^188^2048^8
- ;;^UTILITY(U,$J,358.3,35526,1,0)
+ ;;^UTILITY(U,$J,358.3,34481,1,3,0)
+ ;;=3^Pain in Left Hand
+ ;;^UTILITY(U,$J,358.3,34481,1,4,0)
+ ;;=4^M79.642
+ ;;^UTILITY(U,$J,358.3,34481,2)
+ ;;=^5013339
+ ;;^UTILITY(U,$J,358.3,34482,0)
+ ;;=M79.671^^131^1686^110
+ ;;^UTILITY(U,$J,358.3,34482,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35526,1,3,0)
- ;;=3^Peripheral vascular disease, unspecified
- ;;^UTILITY(U,$J,358.3,35526,1,4,0)
- ;;=4^I73.9
- ;;^UTILITY(U,$J,358.3,35526,2)
- ;;=^184182
- ;;^UTILITY(U,$J,358.3,35527,0)
- ;;=I65.23^^188^2048^4
- ;;^UTILITY(U,$J,358.3,35527,1,0)
+ ;;^UTILITY(U,$J,358.3,34482,1,3,0)
+ ;;=3^Pain in Right Foot
+ ;;^UTILITY(U,$J,358.3,34482,1,4,0)
+ ;;=4^M79.671
+ ;;^UTILITY(U,$J,358.3,34482,2)
+ ;;=^5013350
+ ;;^UTILITY(U,$J,358.3,34483,0)
+ ;;=M79.672^^131^1686^100
+ ;;^UTILITY(U,$J,358.3,34483,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35527,1,3,0)
- ;;=3^Occlusion and stenosis of bilateral carotid arteries
- ;;^UTILITY(U,$J,358.3,35527,1,4,0)
- ;;=4^I65.23
- ;;^UTILITY(U,$J,358.3,35527,2)
- ;;=^5007362
- ;;^UTILITY(U,$J,358.3,35528,0)
- ;;=I65.8^^188^2048^6
- ;;^UTILITY(U,$J,358.3,35528,1,0)
+ ;;^UTILITY(U,$J,358.3,34483,1,3,0)
+ ;;=3^Pain in Left Foot
+ ;;^UTILITY(U,$J,358.3,34483,1,4,0)
+ ;;=4^M79.672
+ ;;^UTILITY(U,$J,358.3,34483,2)
+ ;;=^5013351
+ ;;^UTILITY(U,$J,358.3,34484,0)
+ ;;=M54.9^^131^1686^8
+ ;;^UTILITY(U,$J,358.3,34484,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35528,1,3,0)
- ;;=3^Occlusion and stenosis of other precerebral arteries
- ;;^UTILITY(U,$J,358.3,35528,1,4,0)
- ;;=4^I65.8
- ;;^UTILITY(U,$J,358.3,35528,2)
- ;;=^5007364
- ;;^UTILITY(U,$J,358.3,35529,0)
- ;;=Z13.6^^188^2048^9
- ;;^UTILITY(U,$J,358.3,35529,1,0)
+ ;;^UTILITY(U,$J,358.3,34484,1,3,0)
+ ;;=3^Backache/Dorsalgia
+ ;;^UTILITY(U,$J,358.3,34484,1,4,0)
+ ;;=4^M54.9
+ ;;^UTILITY(U,$J,358.3,34484,2)
+ ;;=^5012314
+ ;;^UTILITY(U,$J,358.3,34485,0)
+ ;;=M48.52XG^^131^1686^19
+ ;;^UTILITY(U,$J,358.3,34485,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35529,1,3,0)
- ;;=3^Screening for cardiovascular disorders
- ;;^UTILITY(U,$J,358.3,35529,1,4,0)
- ;;=4^Z13.6
- ;;^UTILITY(U,$J,358.3,35529,2)
- ;;=^5062707
- ;;^UTILITY(U,$J,358.3,35530,0)
- ;;=I26.99^^188^2049^9
- ;;^UTILITY(U,$J,358.3,35530,1,0)
+ ;;^UTILITY(U,$J,358.3,34485,1,3,0)
+ ;;=3^Collapsed Vertabra,Cervical Region,Subs Encntr,Del Healing
+ ;;^UTILITY(U,$J,358.3,34485,1,4,0)
+ ;;=4^M48.52XG
+ ;;^UTILITY(U,$J,358.3,34485,2)
+ ;;=^5012169
+ ;;^UTILITY(U,$J,358.3,34486,0)
+ ;;=M48.52XS^^131^1686^20
+ ;;^UTILITY(U,$J,358.3,34486,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35530,1,3,0)
- ;;=3^Pulmonary embolism w/o acute cor pulmonale NEC
+ ;;^UTILITY(U,$J,358.3,34486,1,3,0)
+ ;;=3^Collapsed Vertabra,Cervical Region,Subs Encntr,Sequela
+ ;;^UTILITY(U,$J,358.3,34486,1,4,0)
+ ;;=4^M48.52XS
+ ;;^UTILITY(U,$J,358.3,34486,2)
+ ;;=^5012170
+ ;;^UTILITY(U,$J,358.3,34487,0)
+ ;;=M48.57XG^^131^1686^27
+ ;;^UTILITY(U,$J,358.3,34487,1,0)
+ ;;=^358.31IA^4^2

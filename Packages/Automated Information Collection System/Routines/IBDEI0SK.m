@@ -1,124 +1,130 @@
-IBDEI0SK ; ; 06-AUG-2015
+IBDEI0SK ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,13814,0)
- ;;=12020^^72^826^8^^^^1
- ;;^UTILITY(U,$J,358.3,13814,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13814,1,2,0)
- ;;=2^12020
- ;;^UTILITY(U,$J,358.3,13814,1,3,0)
- ;;=3^TX, superficial wound dihiscence simple cl
- ;;^UTILITY(U,$J,358.3,13815,0)
- ;;=12021^^72^826^9^^^^1
- ;;^UTILITY(U,$J,358.3,13815,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13815,1,2,0)
- ;;=2^12021
- ;;^UTILITY(U,$J,358.3,13815,1,3,0)
- ;;=3^TX, superficial wound dihiscenc w/ packing
- ;;^UTILITY(U,$J,358.3,13816,0)
- ;;=12041^^72^827^1^^^^1
- ;;^UTILITY(U,$J,358.3,13816,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13816,1,2,0)
- ;;=2^12041
- ;;^UTILITY(U,$J,358.3,13816,1,3,0)
- ;;=3^Interm Repair Nk/Hd/Ft; 2.5 cm or less
- ;;^UTILITY(U,$J,358.3,13817,0)
- ;;=12042^^72^827^2^^^^1
- ;;^UTILITY(U,$J,358.3,13817,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13817,1,2,0)
- ;;=2^12042
- ;;^UTILITY(U,$J,358.3,13817,1,3,0)
- ;;=3^Interm Repair Nk/Hd/Ft; 2.6 cm to 7.5 cm
- ;;^UTILITY(U,$J,358.3,13818,0)
- ;;=12044^^72^827^3^^^^1
- ;;^UTILITY(U,$J,358.3,13818,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13818,1,2,0)
- ;;=2^12044
- ;;^UTILITY(U,$J,358.3,13818,1,3,0)
- ;;=3^Interm Repair Nk/Hd/Ft; 7.6 cm to 12.5 cm
- ;;^UTILITY(U,$J,358.3,13819,0)
- ;;=12045^^72^827^4^^^^1
- ;;^UTILITY(U,$J,358.3,13819,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13819,1,2,0)
- ;;=2^12045
- ;;^UTILITY(U,$J,358.3,13819,1,3,0)
- ;;=3^Interm Repair Nk/Hd/Ft; 12.6 cm to 20 cm
- ;;^UTILITY(U,$J,358.3,13820,0)
- ;;=12046^^72^827^5^^^^1
- ;;^UTILITY(U,$J,358.3,13820,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13820,1,2,0)
- ;;=2^12046
- ;;^UTILITY(U,$J,358.3,13820,1,3,0)
- ;;=3^Interm Repair Nk/Hd/Ft; 20.1 cm to 30 cm
- ;;^UTILITY(U,$J,358.3,13821,0)
- ;;=12047^^72^827^6^^^^1
- ;;^UTILITY(U,$J,358.3,13821,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13821,1,2,0)
- ;;=2^12047
- ;;^UTILITY(U,$J,358.3,13821,1,3,0)
- ;;=3^Interm Repair Nk/Hd/Ft; over 30 cm
- ;;^UTILITY(U,$J,358.3,13822,0)
- ;;=12051^^72^828^1^^^^1
- ;;^UTILITY(U,$J,358.3,13822,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13822,1,2,0)
- ;;=2^12051
- ;;^UTILITY(U,$J,358.3,13822,1,3,0)
- ;;=3^Interm Repair Face; 2.5 cm or less
- ;;^UTILITY(U,$J,358.3,13823,0)
- ;;=12052^^72^828^2^^^^1
- ;;^UTILITY(U,$J,358.3,13823,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13823,1,2,0)
- ;;=2^12052
- ;;^UTILITY(U,$J,358.3,13823,1,3,0)
- ;;=3^Interm Repair Face; 2.6 cm to 5.0 cm
- ;;^UTILITY(U,$J,358.3,13824,0)
- ;;=12053^^72^828^3^^^^1
- ;;^UTILITY(U,$J,358.3,13824,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13824,1,2,0)
- ;;=2^12053
- ;;^UTILITY(U,$J,358.3,13824,1,3,0)
- ;;=3^Interm Repair Face; 5.1 cm to 7.5 cm
- ;;^UTILITY(U,$J,358.3,13825,0)
- ;;=12054^^72^828^4^^^^1
- ;;^UTILITY(U,$J,358.3,13825,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13825,1,2,0)
- ;;=2^12054
- ;;^UTILITY(U,$J,358.3,13825,1,3,0)
- ;;=3^Interm Repair Face; 7.6 cm to 12.5 cm
- ;;^UTILITY(U,$J,358.3,13826,0)
- ;;=12055^^72^828^5^^^^1
- ;;^UTILITY(U,$J,358.3,13826,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13826,1,2,0)
- ;;=2^12055
- ;;^UTILITY(U,$J,358.3,13826,1,3,0)
- ;;=3^Interm Repair Face; 12.6 cm to 20 cm
- ;;^UTILITY(U,$J,358.3,13827,0)
- ;;=12056^^72^828^6^^^^1
- ;;^UTILITY(U,$J,358.3,13827,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13827,1,2,0)
- ;;=2^12056
- ;;^UTILITY(U,$J,358.3,13827,1,3,0)
- ;;=3^Interm Repair Face; 20.1 cm to 30 cm
- ;;^UTILITY(U,$J,358.3,13828,0)
- ;;=12057^^72^828^7^^^^1
- ;;^UTILITY(U,$J,358.3,13828,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13828,1,2,0)
- ;;=2^12057
- ;;^UTILITY(U,$J,358.3,13828,1,3,0)
- ;;=3^Interm Repair Face; over 30 cm
+ ;;^UTILITY(U,$J,358.3,13396,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13396,1,3,0)
+ ;;=3^Carcinoma in Situ of Cervix
+ ;;^UTILITY(U,$J,358.3,13396,1,4,0)
+ ;;=4^D06.9
+ ;;^UTILITY(U,$J,358.3,13396,2)
+ ;;=^5001941
+ ;;^UTILITY(U,$J,358.3,13397,0)
+ ;;=D06.0^^53^593^42
+ ;;^UTILITY(U,$J,358.3,13397,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13397,1,3,0)
+ ;;=3^Carcinoma in Situ of Endocervix
+ ;;^UTILITY(U,$J,358.3,13397,1,4,0)
+ ;;=4^D06.0
+ ;;^UTILITY(U,$J,358.3,13397,2)
+ ;;=^5001938
+ ;;^UTILITY(U,$J,358.3,13398,0)
+ ;;=D06.1^^53^593^43
+ ;;^UTILITY(U,$J,358.3,13398,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13398,1,3,0)
+ ;;=3^Carcinoma in Situ of Exocervix
+ ;;^UTILITY(U,$J,358.3,13398,1,4,0)
+ ;;=4^D06.1
+ ;;^UTILITY(U,$J,358.3,13398,2)
+ ;;=^5001939
+ ;;^UTILITY(U,$J,358.3,13399,0)
+ ;;=D06.7^^53^593^41
+ ;;^UTILITY(U,$J,358.3,13399,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13399,1,3,0)
+ ;;=3^Carcinoma in Situ of Cervix,Other Parts
+ ;;^UTILITY(U,$J,358.3,13399,1,4,0)
+ ;;=4^D06.7
+ ;;^UTILITY(U,$J,358.3,13399,2)
+ ;;=^5001940
+ ;;^UTILITY(U,$J,358.3,13400,0)
+ ;;=D04.9^^53^593^44
+ ;;^UTILITY(U,$J,358.3,13400,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13400,1,3,0)
+ ;;=3^Carcinoma in Situ of Skin
+ ;;^UTILITY(U,$J,358.3,13400,1,4,0)
+ ;;=4^D04.9
+ ;;^UTILITY(U,$J,358.3,13400,2)
+ ;;=^5001925
+ ;;^UTILITY(U,$J,358.3,13401,0)
+ ;;=C91.11^^53^593^47
+ ;;^UTILITY(U,$J,358.3,13401,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13401,1,3,0)
+ ;;=3^Chronic Lymphocytic Leukemia of B-Cell Type,In Remission
+ ;;^UTILITY(U,$J,358.3,13401,1,4,0)
+ ;;=4^C91.11
+ ;;^UTILITY(U,$J,358.3,13401,2)
+ ;;=^5001766
+ ;;^UTILITY(U,$J,358.3,13402,0)
+ ;;=C91.10^^53^593^48
+ ;;^UTILITY(U,$J,358.3,13402,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13402,1,3,0)
+ ;;=3^Chronic Lymphocytic Leukemia of B-Cell Type,Not in Remission
+ ;;^UTILITY(U,$J,358.3,13402,1,4,0)
+ ;;=4^C91.10
+ ;;^UTILITY(U,$J,358.3,13402,2)
+ ;;=^5001765
+ ;;^UTILITY(U,$J,358.3,13403,0)
+ ;;=C92.11^^53^593^49
+ ;;^UTILITY(U,$J,358.3,13403,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13403,1,3,0)
+ ;;=3^Chronic Myeloid Leukemia,BCR/ABL-Positive,In Remission
+ ;;^UTILITY(U,$J,358.3,13403,1,4,0)
+ ;;=4^C92.11
+ ;;^UTILITY(U,$J,358.3,13403,2)
+ ;;=^5001793
+ ;;^UTILITY(U,$J,358.3,13404,0)
+ ;;=C92.10^^53^593^50
+ ;;^UTILITY(U,$J,358.3,13404,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13404,1,3,0)
+ ;;=3^Chronic Myeloid Leukemia,BCR/ABL-Positive,Not in Remission
+ ;;^UTILITY(U,$J,358.3,13404,1,4,0)
+ ;;=4^C92.10
+ ;;^UTILITY(U,$J,358.3,13404,2)
+ ;;=^5001792
+ ;;^UTILITY(U,$J,358.3,13405,0)
+ ;;=D47.1^^53^593^51
+ ;;^UTILITY(U,$J,358.3,13405,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13405,1,3,0)
+ ;;=3^Chronic Myeloproliferative Disease
+ ;;^UTILITY(U,$J,358.3,13405,1,4,0)
+ ;;=4^D47.1
+ ;;^UTILITY(U,$J,358.3,13405,2)
+ ;;=^5002256
+ ;;^UTILITY(U,$J,358.3,13406,0)
+ ;;=C82.69^^53^593^52
+ ;;^UTILITY(U,$J,358.3,13406,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13406,1,3,0)
+ ;;=3^Cutaneous Follicle Center Lymphoma,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,13406,1,4,0)
+ ;;=4^C82.69
+ ;;^UTILITY(U,$J,358.3,13406,2)
+ ;;=^5001530
+ ;;^UTILITY(U,$J,358.3,13407,0)
+ ;;=C82.60^^53^593^53
+ ;;^UTILITY(U,$J,358.3,13407,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13407,1,3,0)
+ ;;=3^Cutaneous Follicle Center Lymphoma,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13407,1,4,0)
+ ;;=4^C82.60
+ ;;^UTILITY(U,$J,358.3,13407,2)
+ ;;=^5001521
+ ;;^UTILITY(U,$J,358.3,13408,0)
+ ;;=D56.2^^53^593^54
+ ;;^UTILITY(U,$J,358.3,13408,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13408,1,3,0)
+ ;;=3^Delta-Beta Thalassemia
+ ;;^UTILITY(U,$J,358.3,13408,1,4,0)
+ ;;=4^D56.2

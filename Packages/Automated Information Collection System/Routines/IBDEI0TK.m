@@ -1,108 +1,136 @@
-IBDEI0TK ; ; 06-AUG-2015
+IBDEI0TK ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14315,0)
- ;;=27698^^75^884^16^^^^1
- ;;^UTILITY(U,$J,358.3,14315,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14315,1,2,0)
- ;;=2^Repair, secondary, disrupted ligament ankle, collateral
- ;;^UTILITY(U,$J,358.3,14315,1,3,0)
- ;;=3^27698
- ;;^UTILITY(U,$J,358.3,14316,0)
- ;;=28200^^75^884^19^^^^1
- ;;^UTILITY(U,$J,358.3,14316,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14316,1,2,0)
- ;;=2^Repair, tendon, flexor, foot; primary or secondary, without free graft, each tendon
- ;;^UTILITY(U,$J,358.3,14316,1,3,0)
- ;;=3^28200
- ;;^UTILITY(U,$J,358.3,14317,0)
- ;;=28202^^75^884^20^^^^1
- ;;^UTILITY(U,$J,358.3,14317,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14317,1,2,0)
- ;;=2^Repair, tendon, flexor, foot; secondarywith free graft, each tendon (includes obtaining graft), 
- ;;^UTILITY(U,$J,358.3,14317,1,3,0)
- ;;=3^28202
- ;;^UTILITY(U,$J,358.3,14318,0)
- ;;=28210^^75^884^18^^^^1
- ;;^UTILITY(U,$J,358.3,14318,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14318,1,2,0)
- ;;=2^Repair, tendon, extensor, foot; secondary with free graft, each tendon (includes obtaining graft) 
- ;;^UTILITY(U,$J,358.3,14318,1,3,0)
- ;;=3^28210
- ;;^UTILITY(U,$J,358.3,14319,0)
- ;;=28208^^75^884^17^^^^1
- ;;^UTILITY(U,$J,358.3,14319,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14319,1,2,0)
- ;;=2^Repair, tendon, extensor, foot; primary or secondary, each tendon
- ;;^UTILITY(U,$J,358.3,14319,1,3,0)
- ;;=3^28208
- ;;^UTILITY(U,$J,358.3,14320,0)
- ;;=28230^^75^884^29^^^^1
- ;;^UTILITY(U,$J,358.3,14320,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14320,1,2,0)
- ;;=2^Tenotomy, open, tendon flexor; foot, single or multiple tendon(s)(separate procedure)
- ;;^UTILITY(U,$J,358.3,14320,1,3,0)
- ;;=3^28230
- ;;^UTILITY(U,$J,358.3,14321,0)
- ;;=28232^^75^884^30^^^^1
- ;;^UTILITY(U,$J,358.3,14321,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14321,1,2,0)
- ;;=2^Tenotomy, open, tendon flexor; toe, single tendon (separate procedure) 
- ;;^UTILITY(U,$J,358.3,14321,1,3,0)
- ;;=3^28232
- ;;^UTILITY(U,$J,358.3,14322,0)
- ;;=28234^^75^884^28^^^^1
- ;;^UTILITY(U,$J,358.3,14322,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14322,1,2,0)
- ;;=2^Tenotomy, open, extensor, foot or toe, each tendon
- ;;^UTILITY(U,$J,358.3,14322,1,3,0)
- ;;=3^28234
- ;;^UTILITY(U,$J,358.3,14323,0)
- ;;=28270^^75^884^4^^^^1
- ;;^UTILITY(U,$J,358.3,14323,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14323,1,2,0)
- ;;=2^Capsulotomy; metatarsophalangeal joint, with or without tenorrhaphy, each joint (separate procedure) 
- ;;^UTILITY(U,$J,358.3,14323,1,3,0)
- ;;=3^28270
- ;;^UTILITY(U,$J,358.3,14324,0)
- ;;=28272^^75^884^3^^^^1
- ;;^UTILITY(U,$J,358.3,14324,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14324,1,2,0)
- ;;=2^Capsulotomy; interphalangeal joint, each joint
- ;;^UTILITY(U,$J,358.3,14324,1,3,0)
- ;;=3^28272
- ;;^UTILITY(U,$J,358.3,14325,0)
- ;;=28285^^75^884^6^^^^1
- ;;^UTILITY(U,$J,358.3,14325,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14325,1,2,0)
- ;;=2^Correction, hammertoe
- ;;^UTILITY(U,$J,358.3,14325,1,3,0)
- ;;=3^28285
- ;;^UTILITY(U,$J,358.3,14326,0)
- ;;=28288^^75^884^9^^^^1
- ;;^UTILITY(U,$J,358.3,14326,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14326,1,2,0)
- ;;=2^Ostectomy, partial, exostectomy or condylectomy, metatarsal head, each metatarsal head
- ;;^UTILITY(U,$J,358.3,14326,1,3,0)
- ;;=3^28288
- ;;^UTILITY(U,$J,358.3,14327,0)
- ;;=28290^^75^884^5^^^^1
- ;;^UTILITY(U,$J,358.3,14327,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14327,1,2,0)
- ;;=2^Correction, hallux valgus, with or without sesamoidectomy; simple exostectomy
- ;;^UTILITY(U,$J,358.3,14327,1,3,0)
- ;;=3^28290
+ ;;^UTILITY(U,$J,358.3,13863,1,3,0)
+ ;;=3^Social Phobia,Generalized
+ ;;^UTILITY(U,$J,358.3,13863,1,4,0)
+ ;;=4^F40.11
+ ;;^UTILITY(U,$J,358.3,13863,2)
+ ;;=^5003545
+ ;;^UTILITY(U,$J,358.3,13864,0)
+ ;;=R56.00^^53^598^6
+ ;;^UTILITY(U,$J,358.3,13864,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13864,1,3,0)
+ ;;=3^Simple Febrile Convulsions
+ ;;^UTILITY(U,$J,358.3,13864,1,4,0)
+ ;;=4^R56.00
+ ;;^UTILITY(U,$J,358.3,13864,2)
+ ;;=^5019522
+ ;;^UTILITY(U,$J,358.3,13865,0)
+ ;;=R56.9^^53^598^4
+ ;;^UTILITY(U,$J,358.3,13865,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13865,1,3,0)
+ ;;=3^Convulsions,Unspec
+ ;;^UTILITY(U,$J,358.3,13865,1,4,0)
+ ;;=4^R56.9
+ ;;^UTILITY(U,$J,358.3,13865,2)
+ ;;=^5019524
+ ;;^UTILITY(U,$J,358.3,13866,0)
+ ;;=R25.0^^53^598^1
+ ;;^UTILITY(U,$J,358.3,13866,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13866,1,3,0)
+ ;;=3^Abnormal Head Movements
+ ;;^UTILITY(U,$J,358.3,13866,1,4,0)
+ ;;=4^R25.0
+ ;;^UTILITY(U,$J,358.3,13866,2)
+ ;;=^5019299
+ ;;^UTILITY(U,$J,358.3,13867,0)
+ ;;=R25.1^^53^598^7
+ ;;^UTILITY(U,$J,358.3,13867,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13867,1,3,0)
+ ;;=3^Tremor,Unspec
+ ;;^UTILITY(U,$J,358.3,13867,1,4,0)
+ ;;=4^R25.1
+ ;;^UTILITY(U,$J,358.3,13867,2)
+ ;;=^5019300
+ ;;^UTILITY(U,$J,358.3,13868,0)
+ ;;=R25.9^^53^598^3
+ ;;^UTILITY(U,$J,358.3,13868,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13868,1,3,0)
+ ;;=3^Abnormal Involuntary Movements,Unspec
+ ;;^UTILITY(U,$J,358.3,13868,1,4,0)
+ ;;=4^R25.9
+ ;;^UTILITY(U,$J,358.3,13868,2)
+ ;;=^5019303
+ ;;^UTILITY(U,$J,358.3,13869,0)
+ ;;=R25.3^^53^598^5
+ ;;^UTILITY(U,$J,358.3,13869,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13869,1,3,0)
+ ;;=3^Fasciculation/Twitching
+ ;;^UTILITY(U,$J,358.3,13869,1,4,0)
+ ;;=4^R25.3
+ ;;^UTILITY(U,$J,358.3,13869,2)
+ ;;=^44985
+ ;;^UTILITY(U,$J,358.3,13870,0)
+ ;;=R25.8^^53^598^2
+ ;;^UTILITY(U,$J,358.3,13870,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13870,1,3,0)
+ ;;=3^Abnormal Involuntary Movements,Other
+ ;;^UTILITY(U,$J,358.3,13870,1,4,0)
+ ;;=4^R25.8
+ ;;^UTILITY(U,$J,358.3,13870,2)
+ ;;=^5019302
+ ;;^UTILITY(U,$J,358.3,13871,0)
+ ;;=M02.30^^53^599^141
+ ;;^UTILITY(U,$J,358.3,13871,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13871,1,3,0)
+ ;;=3^Reiter's Disease,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13871,1,4,0)
+ ;;=4^M02.30
+ ;;^UTILITY(U,$J,358.3,13871,2)
+ ;;=^5009790
+ ;;^UTILITY(U,$J,358.3,13872,0)
+ ;;=M10.9^^53^599^40
+ ;;^UTILITY(U,$J,358.3,13872,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13872,1,3,0)
+ ;;=3^Gout,Unspec
+ ;;^UTILITY(U,$J,358.3,13872,1,4,0)
+ ;;=4^M10.9
+ ;;^UTILITY(U,$J,358.3,13872,2)
+ ;;=^5010404
+ ;;^UTILITY(U,$J,358.3,13873,0)
+ ;;=G90.59^^53^599^34
+ ;;^UTILITY(U,$J,358.3,13873,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13873,1,3,0)
+ ;;=3^Complex Regional Pain Syndrome I,Unspec
+ ;;^UTILITY(U,$J,358.3,13873,1,4,0)
+ ;;=4^G90.59
+ ;;^UTILITY(U,$J,358.3,13873,2)
+ ;;=^5004171
+ ;;^UTILITY(U,$J,358.3,13874,0)
+ ;;=G56.01^^53^599^12
+ ;;^UTILITY(U,$J,358.3,13874,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13874,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,13874,1,4,0)
+ ;;=4^G56.01
+ ;;^UTILITY(U,$J,358.3,13874,2)
+ ;;=^5004018
+ ;;^UTILITY(U,$J,358.3,13875,0)
+ ;;=G56.02^^53^599^11
+ ;;^UTILITY(U,$J,358.3,13875,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13875,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,13875,1,4,0)
+ ;;=4^G56.02
+ ;;^UTILITY(U,$J,358.3,13875,2)
+ ;;=^5004019
+ ;;^UTILITY(U,$J,358.3,13876,0)
+ ;;=G56.21^^53^599^56
+ ;;^UTILITY(U,$J,358.3,13876,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13876,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Right Upper Limb

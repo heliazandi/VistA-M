@@ -1,124 +1,122 @@
-IBDEI1PJ ; ; 06-AUG-2015
+IBDEI1PJ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30256,2)
- ;;=^5016820
- ;;^UTILITY(U,$J,358.3,30257,0)
- ;;=O35.6XX4^^178^1916^84
- ;;^UTILITY(U,$J,358.3,30257,1,0)
+ ;;^UTILITY(U,$J,358.3,29007,1,3,0)
+ ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,2nd tri, fts4
+ ;;^UTILITY(U,$J,358.3,29007,1,4,0)
+ ;;=4^O31.32X4
+ ;;^UTILITY(U,$J,358.3,29007,2)
+ ;;=^5016604
+ ;;^UTILITY(U,$J,358.3,29008,0)
+ ;;=O31.33X4^^115^1454^18
+ ;;^UTILITY(U,$J,358.3,29008,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30257,1,3,0)
- ;;=3^Maternal care for damage to fetus by radiation, fetus 4
- ;;^UTILITY(U,$J,358.3,30257,1,4,0)
- ;;=4^O35.6XX4
- ;;^UTILITY(U,$J,358.3,30257,2)
- ;;=^5016821
- ;;^UTILITY(U,$J,358.3,30258,0)
- ;;=O35.6XX5^^178^1916^85
- ;;^UTILITY(U,$J,358.3,30258,1,0)
+ ;;^UTILITY(U,$J,358.3,29008,1,3,0)
+ ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,3rd tri, fts4
+ ;;^UTILITY(U,$J,358.3,29008,1,4,0)
+ ;;=4^O31.33X4
+ ;;^UTILITY(U,$J,358.3,29008,2)
+ ;;=^5016611
+ ;;^UTILITY(U,$J,358.3,29009,0)
+ ;;=O31.31X5^^115^1454^19
+ ;;^UTILITY(U,$J,358.3,29009,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30258,1,3,0)
- ;;=3^Maternal care for damage to fetus by radiation, fetus 5
- ;;^UTILITY(U,$J,358.3,30258,1,4,0)
- ;;=4^O35.6XX5
- ;;^UTILITY(U,$J,358.3,30258,2)
- ;;=^5016822
- ;;^UTILITY(U,$J,358.3,30259,0)
- ;;=O36.8120^^178^1916^1
- ;;^UTILITY(U,$J,358.3,30259,1,0)
+ ;;^UTILITY(U,$J,358.3,29009,1,3,0)
+ ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,1st tri, fts5
+ ;;^UTILITY(U,$J,358.3,29009,1,4,0)
+ ;;=4^O31.31X5
+ ;;^UTILITY(U,$J,358.3,29009,2)
+ ;;=^5016598
+ ;;^UTILITY(U,$J,358.3,29010,0)
+ ;;=O31.32X5^^115^1454^20
+ ;;^UTILITY(U,$J,358.3,29010,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30259,1,3,0)
- ;;=3^Decreased fetal movements, second trimester, unsp
- ;;^UTILITY(U,$J,358.3,30259,1,4,0)
- ;;=4^O36.8120
- ;;^UTILITY(U,$J,358.3,30259,2)
- ;;=^5017089
- ;;^UTILITY(U,$J,358.3,30260,0)
- ;;=O36.8130^^178^1916^7
- ;;^UTILITY(U,$J,358.3,30260,1,0)
+ ;;^UTILITY(U,$J,358.3,29010,1,3,0)
+ ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,2nd tri, fts5
+ ;;^UTILITY(U,$J,358.3,29010,1,4,0)
+ ;;=4^O31.32X5
+ ;;^UTILITY(U,$J,358.3,29010,2)
+ ;;=^5016605
+ ;;^UTILITY(U,$J,358.3,29011,0)
+ ;;=O31.33X5^^115^1454^21
+ ;;^UTILITY(U,$J,358.3,29011,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30260,1,3,0)
- ;;=3^Decreased fetal movements, third trimester, unsp
- ;;^UTILITY(U,$J,358.3,30260,1,4,0)
- ;;=4^O36.8130
- ;;^UTILITY(U,$J,358.3,30260,2)
- ;;=^5017096
- ;;^UTILITY(U,$J,358.3,30261,0)
- ;;=O36.8121^^178^1916^2
- ;;^UTILITY(U,$J,358.3,30261,1,0)
+ ;;^UTILITY(U,$J,358.3,29011,1,3,0)
+ ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more,3rd tri, fts5
+ ;;^UTILITY(U,$J,358.3,29011,1,4,0)
+ ;;=4^O31.33X5
+ ;;^UTILITY(U,$J,358.3,29011,2)
+ ;;=^5016612
+ ;;^UTILITY(U,$J,358.3,29012,0)
+ ;;=O31.31X9^^115^1454^22
+ ;;^UTILITY(U,$J,358.3,29012,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30261,1,3,0)
- ;;=3^Decreased fetal movements, second trimester, fetus 1
- ;;^UTILITY(U,$J,358.3,30261,1,4,0)
- ;;=4^O36.8121
- ;;^UTILITY(U,$J,358.3,30261,2)
- ;;=^5017090
- ;;^UTILITY(U,$J,358.3,30262,0)
- ;;=O36.8131^^178^1916^8
- ;;^UTILITY(U,$J,358.3,30262,1,0)
+ ;;^UTILITY(U,$J,358.3,29012,1,3,0)
+ ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more, 1st tri, oth
+ ;;^UTILITY(U,$J,358.3,29012,1,4,0)
+ ;;=4^O31.31X9
+ ;;^UTILITY(U,$J,358.3,29012,2)
+ ;;=^5016599
+ ;;^UTILITY(U,$J,358.3,29013,0)
+ ;;=O31.32X9^^115^1454^23
+ ;;^UTILITY(U,$J,358.3,29013,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30262,1,3,0)
- ;;=3^Decreased fetal movements, third trimester, fetus 1
- ;;^UTILITY(U,$J,358.3,30262,1,4,0)
- ;;=4^O36.8131
- ;;^UTILITY(U,$J,358.3,30262,2)
- ;;=^5017097
- ;;^UTILITY(U,$J,358.3,30263,0)
- ;;=O36.8122^^178^1916^3
- ;;^UTILITY(U,$J,358.3,30263,1,0)
+ ;;^UTILITY(U,$J,358.3,29013,1,3,0)
+ ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more, 2nd tri, oth
+ ;;^UTILITY(U,$J,358.3,29013,1,4,0)
+ ;;=4^O31.32X9
+ ;;^UTILITY(U,$J,358.3,29013,2)
+ ;;=^5016606
+ ;;^UTILITY(U,$J,358.3,29014,0)
+ ;;=O31.33X9^^115^1454^24
+ ;;^UTILITY(U,$J,358.3,29014,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30263,1,3,0)
- ;;=3^Decreased fetal movements, second trimester, fetus 2
- ;;^UTILITY(U,$J,358.3,30263,1,4,0)
- ;;=4^O36.8122
- ;;^UTILITY(U,$J,358.3,30263,2)
- ;;=^5017091
- ;;^UTILITY(U,$J,358.3,30264,0)
- ;;=O36.8132^^178^1916^9
- ;;^UTILITY(U,$J,358.3,30264,1,0)
+ ;;^UTILITY(U,$J,358.3,29014,1,3,0)
+ ;;=3^Cont preg aft elctv fetl rdct of 1 fts or more, 3rd tri, oth
+ ;;^UTILITY(U,$J,358.3,29014,1,4,0)
+ ;;=4^O31.33X9
+ ;;^UTILITY(U,$J,358.3,29014,2)
+ ;;=^5016613
+ ;;^UTILITY(U,$J,358.3,29015,0)
+ ;;=O35.0XX0^^115^1455^37
+ ;;^UTILITY(U,$J,358.3,29015,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30264,1,3,0)
- ;;=3^Decreased fetal movements, third trimester, fetus 2
- ;;^UTILITY(U,$J,358.3,30264,1,4,0)
- ;;=4^O36.8132
- ;;^UTILITY(U,$J,358.3,30264,2)
- ;;=^5017098
- ;;^UTILITY(U,$J,358.3,30265,0)
- ;;=O36.8123^^178^1916^4
- ;;^UTILITY(U,$J,358.3,30265,1,0)
+ ;;^UTILITY(U,$J,358.3,29015,1,3,0)
+ ;;=3^Maternal care for CNS malform in fetus, unsp
+ ;;^UTILITY(U,$J,358.3,29015,1,4,0)
+ ;;=4^O35.0XX0
+ ;;^UTILITY(U,$J,358.3,29015,2)
+ ;;=^5016775
+ ;;^UTILITY(U,$J,358.3,29016,0)
+ ;;=O35.0XX1^^115^1455^38
+ ;;^UTILITY(U,$J,358.3,29016,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30265,1,3,0)
- ;;=3^Decreased fetal movements, second trimester, fetus 3
- ;;^UTILITY(U,$J,358.3,30265,1,4,0)
- ;;=4^O36.8123
- ;;^UTILITY(U,$J,358.3,30265,2)
- ;;=^5017092
- ;;^UTILITY(U,$J,358.3,30266,0)
- ;;=O36.8133^^178^1916^10
- ;;^UTILITY(U,$J,358.3,30266,1,0)
+ ;;^UTILITY(U,$J,358.3,29016,1,3,0)
+ ;;=3^Maternal care for CNS malform in fetus, fetus 1
+ ;;^UTILITY(U,$J,358.3,29016,1,4,0)
+ ;;=4^O35.0XX1
+ ;;^UTILITY(U,$J,358.3,29016,2)
+ ;;=^5016776
+ ;;^UTILITY(U,$J,358.3,29017,0)
+ ;;=O35.0XX2^^115^1455^39
+ ;;^UTILITY(U,$J,358.3,29017,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30266,1,3,0)
- ;;=3^Decreased fetal movements, third trimester, fetus 3
- ;;^UTILITY(U,$J,358.3,30266,1,4,0)
- ;;=4^O36.8133
- ;;^UTILITY(U,$J,358.3,30266,2)
- ;;=^5017099
- ;;^UTILITY(U,$J,358.3,30267,0)
- ;;=O36.8124^^178^1916^5
- ;;^UTILITY(U,$J,358.3,30267,1,0)
+ ;;^UTILITY(U,$J,358.3,29017,1,3,0)
+ ;;=3^Maternal care for CNS malform in fetus, fetus 2
+ ;;^UTILITY(U,$J,358.3,29017,1,4,0)
+ ;;=4^O35.0XX2
+ ;;^UTILITY(U,$J,358.3,29017,2)
+ ;;=^5016777
+ ;;^UTILITY(U,$J,358.3,29018,0)
+ ;;=O35.0XX3^^115^1455^40
+ ;;^UTILITY(U,$J,358.3,29018,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30267,1,3,0)
- ;;=3^Decreased fetal movements, second trimester, fetus 4
- ;;^UTILITY(U,$J,358.3,30267,1,4,0)
- ;;=4^O36.8124
- ;;^UTILITY(U,$J,358.3,30267,2)
- ;;=^5017093
- ;;^UTILITY(U,$J,358.3,30268,0)
- ;;=O36.8134^^178^1916^11
- ;;^UTILITY(U,$J,358.3,30268,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30268,1,3,0)
- ;;=3^Decreased fetal movements, third trimester, fetus 4
- ;;^UTILITY(U,$J,358.3,30268,1,4,0)
- ;;=4^O36.8134
+ ;;^UTILITY(U,$J,358.3,29018,1,3,0)
+ ;;=3^Maternal care for CNS malform in fetus, fetus 3
+ ;;^UTILITY(U,$J,358.3,29018,1,4,0)
+ ;;=4^O35.0XX3
+ ;;^UTILITY(U,$J,358.3,29018,2)
+ ;;=^5016778
+ ;;^UTILITY(U,$J,358.3,29019,0)
+ ;;=O35.0XX4^^115^1455^41

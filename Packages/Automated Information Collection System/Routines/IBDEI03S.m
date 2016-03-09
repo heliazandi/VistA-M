@@ -1,132 +1,136 @@
-IBDEI03S ; ; 06-AUG-2015
+IBDEI03S ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1239,1,0)
+ ;;^UTILITY(U,$J,358.3,1343,1,3,0)
+ ;;=3^Noise effects on right inner ear
+ ;;^UTILITY(U,$J,358.3,1343,1,4,0)
+ ;;=4^H83.3X1
+ ;;^UTILITY(U,$J,358.3,1343,2)
+ ;;=^5006906
+ ;;^UTILITY(U,$J,358.3,1344,0)
+ ;;=H83.3X2^^8^133^2
+ ;;^UTILITY(U,$J,358.3,1344,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1239,1,3,0)
- ;;=3^Malignant neoplasm of unsp site of left female breast
- ;;^UTILITY(U,$J,358.3,1239,1,4,0)
- ;;=4^C50.912
- ;;^UTILITY(U,$J,358.3,1239,2)
- ;;=^5001196
- ;;^UTILITY(U,$J,358.3,1240,0)
- ;;=C46.9^^3^39^43
- ;;^UTILITY(U,$J,358.3,1240,1,0)
+ ;;^UTILITY(U,$J,358.3,1344,1,3,0)
+ ;;=3^Noise effects on left inner ear
+ ;;^UTILITY(U,$J,358.3,1344,1,4,0)
+ ;;=4^H83.3X2
+ ;;^UTILITY(U,$J,358.3,1344,2)
+ ;;=^5006907
+ ;;^UTILITY(U,$J,358.3,1345,0)
+ ;;=H83.3X3^^8^133^1
+ ;;^UTILITY(U,$J,358.3,1345,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1240,1,3,0)
- ;;=3^Kaposi's sarcoma, unspecified
- ;;^UTILITY(U,$J,358.3,1240,1,4,0)
- ;;=4^C46.9
- ;;^UTILITY(U,$J,358.3,1240,2)
- ;;=^5001108
- ;;^UTILITY(U,$J,358.3,1241,0)
- ;;=C61.^^3^39^72
- ;;^UTILITY(U,$J,358.3,1241,1,0)
+ ;;^UTILITY(U,$J,358.3,1345,1,3,0)
+ ;;=3^Noise effects on bilateral inner ear
+ ;;^UTILITY(U,$J,358.3,1345,1,4,0)
+ ;;=4^H83.3X3
+ ;;^UTILITY(U,$J,358.3,1345,2)
+ ;;=^5006908
+ ;;^UTILITY(U,$J,358.3,1346,0)
+ ;;=H55.01^^8^134^1
+ ;;^UTILITY(U,$J,358.3,1346,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1241,1,3,0)
- ;;=3^Malignant neoplasm of prostate
- ;;^UTILITY(U,$J,358.3,1241,1,4,0)
- ;;=4^C61.
- ;;^UTILITY(U,$J,358.3,1241,2)
- ;;=^267239
- ;;^UTILITY(U,$J,358.3,1242,0)
- ;;=C62.11^^3^39^57
- ;;^UTILITY(U,$J,358.3,1242,1,0)
+ ;;^UTILITY(U,$J,358.3,1346,1,3,0)
+ ;;=3^Congenital nystagmus
+ ;;^UTILITY(U,$J,358.3,1346,1,4,0)
+ ;;=4^H55.01
+ ;;^UTILITY(U,$J,358.3,1346,2)
+ ;;=^5006371
+ ;;^UTILITY(U,$J,358.3,1347,0)
+ ;;=H55.04^^8^134^2
+ ;;^UTILITY(U,$J,358.3,1347,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1242,1,3,0)
- ;;=3^Malignant neoplasm of descended right testis
- ;;^UTILITY(U,$J,358.3,1242,1,4,0)
- ;;=4^C62.11
- ;;^UTILITY(U,$J,358.3,1242,2)
- ;;=^5001234
- ;;^UTILITY(U,$J,358.3,1243,0)
- ;;=C62.12^^3^39^56
- ;;^UTILITY(U,$J,358.3,1243,1,0)
+ ;;^UTILITY(U,$J,358.3,1347,1,3,0)
+ ;;=3^Dissociated nystagmus
+ ;;^UTILITY(U,$J,358.3,1347,1,4,0)
+ ;;=4^H55.04
+ ;;^UTILITY(U,$J,358.3,1347,2)
+ ;;=^269325
+ ;;^UTILITY(U,$J,358.3,1348,0)
+ ;;=H55.02^^8^134^3
+ ;;^UTILITY(U,$J,358.3,1348,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1243,1,3,0)
- ;;=3^Malignant neoplasm of descended left testis
- ;;^UTILITY(U,$J,358.3,1243,1,4,0)
- ;;=4^C62.12
- ;;^UTILITY(U,$J,358.3,1243,2)
- ;;=^5001235
- ;;^UTILITY(U,$J,358.3,1244,0)
- ;;=C62.91^^3^39^76
- ;;^UTILITY(U,$J,358.3,1244,1,0)
+ ;;^UTILITY(U,$J,358.3,1348,1,3,0)
+ ;;=3^Latent nystagmus
+ ;;^UTILITY(U,$J,358.3,1348,1,4,0)
+ ;;=4^H55.02
+ ;;^UTILITY(U,$J,358.3,1348,2)
+ ;;=^5006372
+ ;;^UTILITY(U,$J,358.3,1349,0)
+ ;;=H55.09^^8^134^4
+ ;;^UTILITY(U,$J,358.3,1349,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1244,1,3,0)
- ;;=3^Malignant neoplasm of right testis, unsp descended or undescended
- ;;^UTILITY(U,$J,358.3,1244,1,4,0)
- ;;=4^C62.91
- ;;^UTILITY(U,$J,358.3,1244,2)
- ;;=^5001237
- ;;^UTILITY(U,$J,358.3,1245,0)
- ;;=C62.92^^3^39^65
- ;;^UTILITY(U,$J,358.3,1245,1,0)
+ ;;^UTILITY(U,$J,358.3,1349,1,3,0)
+ ;;=3^Nystagmus NEC
+ ;;^UTILITY(U,$J,358.3,1349,1,4,0)
+ ;;=4^H55.09
+ ;;^UTILITY(U,$J,358.3,1349,2)
+ ;;=^87599
+ ;;^UTILITY(U,$J,358.3,1350,0)
+ ;;=H55.81^^8^134^5
+ ;;^UTILITY(U,$J,358.3,1350,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1245,1,3,0)
- ;;=3^Malignant neoplasm of left testis, unsp descended or undescended
- ;;^UTILITY(U,$J,358.3,1245,1,4,0)
- ;;=4^C62.92
- ;;^UTILITY(U,$J,358.3,1245,2)
- ;;=^5001238
- ;;^UTILITY(U,$J,358.3,1246,0)
- ;;=C67.9^^3^39^52
- ;;^UTILITY(U,$J,358.3,1246,1,0)
+ ;;^UTILITY(U,$J,358.3,1350,1,3,0)
+ ;;=3^Saccadic eye movements
+ ;;^UTILITY(U,$J,358.3,1350,1,4,0)
+ ;;=4^H55.81
+ ;;^UTILITY(U,$J,358.3,1350,2)
+ ;;=^5006373
+ ;;^UTILITY(U,$J,358.3,1351,0)
+ ;;=H55.03^^8^134^6
+ ;;^UTILITY(U,$J,358.3,1351,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1246,1,3,0)
- ;;=3^Malignant neoplasm of bladder, unspecified
- ;;^UTILITY(U,$J,358.3,1246,1,4,0)
- ;;=4^C67.9
- ;;^UTILITY(U,$J,358.3,1246,2)
- ;;=^5001263
- ;;^UTILITY(U,$J,358.3,1247,0)
- ;;=C64.2^^3^39^63
- ;;^UTILITY(U,$J,358.3,1247,1,0)
+ ;;^UTILITY(U,$J,358.3,1351,1,3,0)
+ ;;=3^Visual deprivation nystagmus
+ ;;^UTILITY(U,$J,358.3,1351,1,4,0)
+ ;;=4^H55.03
+ ;;^UTILITY(U,$J,358.3,1351,2)
+ ;;=^269322
+ ;;^UTILITY(U,$J,358.3,1352,0)
+ ;;=T36.5X5A^^8^135^1
+ ;;^UTILITY(U,$J,358.3,1352,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1247,1,3,0)
- ;;=3^Malignant neoplasm of left kidney, except renal pelvis
- ;;^UTILITY(U,$J,358.3,1247,1,4,0)
- ;;=4^C64.2
- ;;^UTILITY(U,$J,358.3,1247,2)
- ;;=^5001249
- ;;^UTILITY(U,$J,358.3,1248,0)
- ;;=C64.1^^3^39^74
- ;;^UTILITY(U,$J,358.3,1248,1,0)
+ ;;^UTILITY(U,$J,358.3,1352,1,3,0)
+ ;;=3^Adverse effect of aminoglycosides, initial encounter
+ ;;^UTILITY(U,$J,358.3,1352,1,4,0)
+ ;;=4^T36.5X5A
+ ;;^UTILITY(U,$J,358.3,1352,2)
+ ;;=^5049358
+ ;;^UTILITY(U,$J,358.3,1353,0)
+ ;;=T36.5X5S^^8^135^2
+ ;;^UTILITY(U,$J,358.3,1353,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1248,1,3,0)
- ;;=3^Malignant neoplasm of right kidney, except renal pelvis
- ;;^UTILITY(U,$J,358.3,1248,1,4,0)
- ;;=4^C64.1
- ;;^UTILITY(U,$J,358.3,1248,2)
- ;;=^5001248
- ;;^UTILITY(U,$J,358.3,1249,0)
- ;;=C65.1^^3^39^75
- ;;^UTILITY(U,$J,358.3,1249,1,0)
+ ;;^UTILITY(U,$J,358.3,1353,1,3,0)
+ ;;=3^Adverse effect of aminoglycosides, sequela
+ ;;^UTILITY(U,$J,358.3,1353,1,4,0)
+ ;;=4^T36.5X5S
+ ;;^UTILITY(U,$J,358.3,1353,2)
+ ;;=^5049360
+ ;;^UTILITY(U,$J,358.3,1354,0)
+ ;;=T36.5X5D^^8^135^3
+ ;;^UTILITY(U,$J,358.3,1354,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1249,1,3,0)
- ;;=3^Malignant neoplasm of right renal pelvis
- ;;^UTILITY(U,$J,358.3,1249,1,4,0)
- ;;=4^C65.1
- ;;^UTILITY(U,$J,358.3,1249,2)
- ;;=^5001251
- ;;^UTILITY(U,$J,358.3,1250,0)
- ;;=C65.2^^3^39^64
- ;;^UTILITY(U,$J,358.3,1250,1,0)
+ ;;^UTILITY(U,$J,358.3,1354,1,3,0)
+ ;;=3^Adverse effect of aminoglycosides, subsequent encounter
+ ;;^UTILITY(U,$J,358.3,1354,1,4,0)
+ ;;=4^T36.5X5D
+ ;;^UTILITY(U,$J,358.3,1354,2)
+ ;;=^5049359
+ ;;^UTILITY(U,$J,358.3,1355,0)
+ ;;=T45.1X5A^^8^135^5
+ ;;^UTILITY(U,$J,358.3,1355,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1250,1,3,0)
- ;;=3^Malignant neoplasm of left renal pelvis
- ;;^UTILITY(U,$J,358.3,1250,1,4,0)
- ;;=4^C65.2
- ;;^UTILITY(U,$J,358.3,1250,2)
- ;;=^5001252
- ;;^UTILITY(U,$J,358.3,1251,0)
- ;;=C71.9^^3^39^53
- ;;^UTILITY(U,$J,358.3,1251,1,0)
+ ;;^UTILITY(U,$J,358.3,1355,1,3,0)
+ ;;=3^Adverse effect of antineoplastic and immunosup drugs, init
+ ;;^UTILITY(U,$J,358.3,1355,1,4,0)
+ ;;=4^T45.1X5A
+ ;;^UTILITY(U,$J,358.3,1355,2)
+ ;;=^5051026
+ ;;^UTILITY(U,$J,358.3,1356,0)
+ ;;=T45.1X5D^^8^135^6
+ ;;^UTILITY(U,$J,358.3,1356,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1251,1,3,0)
- ;;=3^Malignant neoplasm of brain, unspecified
- ;;^UTILITY(U,$J,358.3,1251,1,4,0)
- ;;=4^C71.9
- ;;^UTILITY(U,$J,358.3,1251,2)
- ;;=^5001297
+ ;;^UTILITY(U,$J,358.3,1356,1,3,0)
+ ;;=3^Adverse effect of antineoplastic and immunosup drugs, subs

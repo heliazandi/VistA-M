@@ -1,134 +1,134 @@
-IBDEI0SV ; ; 06-AUG-2015
+IBDEI0SV ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,13976,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13976,1,3,0)
- ;;=3^782.0
- ;;^UTILITY(U,$J,358.3,13976,1,5,0)
- ;;=5^Burning skin sensation
- ;;^UTILITY(U,$J,358.3,13976,2)
- ;;=^35757
- ;;^UTILITY(U,$J,358.3,13977,0)
- ;;=726.79^^74^850^28
- ;;^UTILITY(U,$J,358.3,13977,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13977,1,3,0)
- ;;=3^726.79
- ;;^UTILITY(U,$J,358.3,13977,1,5,0)
- ;;=5^Bursitis-foot/toe/ankle/calcaneal
- ;;^UTILITY(U,$J,358.3,13977,2)
- ;;=^272555
- ;;^UTILITY(U,$J,358.3,13978,0)
- ;;=266.2^^74^850^1
- ;;^UTILITY(U,$J,358.3,13978,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13978,1,3,0)
- ;;=3^266.2
- ;;^UTILITY(U,$J,358.3,13978,1,5,0)
- ;;=5^B12 Deficiency
- ;;^UTILITY(U,$J,358.3,13978,2)
- ;;=^87347
- ;;^UTILITY(U,$J,358.3,13979,0)
- ;;=754.62^^74^851^1
- ;;^UTILITY(U,$J,358.3,13979,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13979,1,3,0)
- ;;=3^754.62
- ;;^UTILITY(U,$J,358.3,13979,1,5,0)
- ;;=5^Calcaneovalgus, talipes
- ;;^UTILITY(U,$J,358.3,13979,2)
- ;;=^265474
- ;;^UTILITY(U,$J,358.3,13980,0)
- ;;=736.76^^74^851^2
- ;;^UTILITY(U,$J,358.3,13980,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13980,1,3,0)
- ;;=3^736.76
- ;;^UTILITY(U,$J,358.3,13980,1,5,0)
- ;;=5^Calcaneovalgus, talipes, acquired
- ;;^UTILITY(U,$J,358.3,13980,2)
- ;;=^272748
- ;;^UTILITY(U,$J,358.3,13981,0)
- ;;=754.59^^74^851^3
- ;;^UTILITY(U,$J,358.3,13981,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13981,1,3,0)
- ;;=3^754.59
- ;;^UTILITY(U,$J,358.3,13981,1,5,0)
- ;;=5^Calcaneovarus, talipes
- ;;^UTILITY(U,$J,358.3,13981,2)
- ;;=^273008
- ;;^UTILITY(U,$J,358.3,13982,0)
- ;;=V64.2^^74^851^6
- ;;^UTILITY(U,$J,358.3,13982,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13982,1,3,0)
- ;;=3^V64.2
- ;;^UTILITY(U,$J,358.3,13982,1,5,0)
- ;;=5^Cancelled surgical or other procedures because of patient decision 
- ;;^UTILITY(U,$J,358.3,13982,2)
- ;;=^295559
- ;;^UTILITY(U,$J,358.3,13983,0)
- ;;=V64.1^^74^851^5
- ;;^UTILITY(U,$J,358.3,13983,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13983,1,3,0)
- ;;=3^V64.1
- ;;^UTILITY(U,$J,358.3,13983,1,5,0)
- ;;=5^Cancelled surgical or other procedure because of contraindication
- ;;^UTILITY(U,$J,358.3,13983,2)
- ;;=^295558
- ;;^UTILITY(U,$J,358.3,13984,0)
- ;;=V64.3^^74^851^4
- ;;^UTILITY(U,$J,358.3,13984,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13984,1,3,0)
- ;;=3^V64.3
- ;;^UTILITY(U,$J,358.3,13984,1,5,0)
- ;;=5^Cancelled procedure because of other reasons
- ;;^UTILITY(U,$J,358.3,13984,2)
- ;;=^295560
- ;;^UTILITY(U,$J,358.3,13985,0)
- ;;=726.79^^74^851^7
- ;;^UTILITY(U,$J,358.3,13985,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13985,1,3,0)
- ;;=3^726.79
- ;;^UTILITY(U,$J,358.3,13985,1,5,0)
- ;;=5^Capsulitis of ankle/toe/foot
- ;;^UTILITY(U,$J,358.3,13985,2)
- ;;=^272555
- ;;^UTILITY(U,$J,358.3,13986,0)
- ;;=736.75^^74^851^8
- ;;^UTILITY(U,$J,358.3,13986,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13986,1,3,0)
- ;;=3^736.75
- ;;^UTILITY(U,$J,358.3,13986,1,5,0)
- ;;=5^Cavovarus deformity of foot/ankle acquired
- ;;^UTILITY(U,$J,358.3,13986,2)
- ;;=^272747
- ;;^UTILITY(U,$J,358.3,13987,0)
- ;;=681.10^^74^851^11
- ;;^UTILITY(U,$J,358.3,13987,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13987,1,3,0)
- ;;=3^681.10
- ;;^UTILITY(U,$J,358.3,13987,1,5,0)
- ;;=5^Cellulitis and abscess, toe, acquired
- ;;^UTILITY(U,$J,358.3,13987,2)
- ;;=^271885
- ;;^UTILITY(U,$J,358.3,13988,0)
- ;;=682.7^^74^851^9
- ;;^UTILITY(U,$J,358.3,13988,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,13988,1,3,0)
- ;;=3^682.7
- ;;^UTILITY(U,$J,358.3,13988,1,5,0)
- ;;=5^Cellulitis and abscess, foot, except toes
- ;;^UTILITY(U,$J,358.3,13988,2)
- ;;=^271895
- ;;^UTILITY(U,$J,358.3,13989,0)
- ;;=682.6^^74^851^10
+ ;;^UTILITY(U,$J,358.3,13537,1,4,0)
+ ;;=4^C90.30
+ ;;^UTILITY(U,$J,358.3,13537,2)
+ ;;=^5001759
+ ;;^UTILITY(U,$J,358.3,13538,0)
+ ;;=D56.3^^53^593^184
+ ;;^UTILITY(U,$J,358.3,13538,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13538,1,3,0)
+ ;;=3^Thalassemia Minor
+ ;;^UTILITY(U,$J,358.3,13538,1,4,0)
+ ;;=4^D56.3
+ ;;^UTILITY(U,$J,358.3,13538,2)
+ ;;=^340497
+ ;;^UTILITY(U,$J,358.3,13539,0)
+ ;;=D56.9^^53^593^185
+ ;;^UTILITY(U,$J,358.3,13539,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13539,1,3,0)
+ ;;=3^Thalassemia,Unspec
+ ;;^UTILITY(U,$J,358.3,13539,1,4,0)
+ ;;=4^D56.9
+ ;;^UTILITY(U,$J,358.3,13539,2)
+ ;;=^340606
+ ;;^UTILITY(U,$J,358.3,13540,0)
+ ;;=M31.1^^53^593^187
+ ;;^UTILITY(U,$J,358.3,13540,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13540,1,3,0)
+ ;;=3^Thrombotic Microangiopathy
+ ;;^UTILITY(U,$J,358.3,13540,1,4,0)
+ ;;=4^M31.1
+ ;;^UTILITY(U,$J,358.3,13540,2)
+ ;;=^119061
+ ;;^UTILITY(U,$J,358.3,13541,0)
+ ;;=D51.2^^53^593^188
+ ;;^UTILITY(U,$J,358.3,13541,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13541,1,3,0)
+ ;;=3^Transcobalamin II Deficiency
+ ;;^UTILITY(U,$J,358.3,13541,1,4,0)
+ ;;=4^D51.2
+ ;;^UTILITY(U,$J,358.3,13541,2)
+ ;;=^5002286
+ ;;^UTILITY(U,$J,358.3,13542,0)
+ ;;=D05.92^^53^593^35
+ ;;^UTILITY(U,$J,358.3,13542,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13542,1,3,0)
+ ;;=3^Carcinoma in Situ Left Breast,Unspec Type
+ ;;^UTILITY(U,$J,358.3,13542,1,4,0)
+ ;;=4^D05.92
+ ;;^UTILITY(U,$J,358.3,13542,2)
+ ;;=^5001937
+ ;;^UTILITY(U,$J,358.3,13543,0)
+ ;;=D05.91^^53^593^37
+ ;;^UTILITY(U,$J,358.3,13543,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13543,1,3,0)
+ ;;=3^Carcinoma in Situ Right Breast,Unspec Type
+ ;;^UTILITY(U,$J,358.3,13543,1,4,0)
+ ;;=4^D05.91
+ ;;^UTILITY(U,$J,358.3,13543,2)
+ ;;=^5001936
+ ;;^UTILITY(U,$J,358.3,13544,0)
+ ;;=D05.90^^53^593^33
+ ;;^UTILITY(U,$J,358.3,13544,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13544,1,3,0)
+ ;;=3^Carcinoma in Situ Breast Unspec,Unspec Type
+ ;;^UTILITY(U,$J,358.3,13544,1,4,0)
+ ;;=4^D05.90
+ ;;^UTILITY(U,$J,358.3,13544,2)
+ ;;=^5001935
+ ;;^UTILITY(U,$J,358.3,13545,0)
+ ;;=D51.0^^53^593^189
+ ;;^UTILITY(U,$J,358.3,13545,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13545,1,3,0)
+ ;;=3^Vitamin B12 Deficiency Anemia d/t Intrinsic Factor Deficiency
+ ;;^UTILITY(U,$J,358.3,13545,1,4,0)
+ ;;=4^D51.0
+ ;;^UTILITY(U,$J,358.3,13545,2)
+ ;;=^5002284
+ ;;^UTILITY(U,$J,358.3,13546,0)
+ ;;=D51.1^^53^593^190
+ ;;^UTILITY(U,$J,358.3,13546,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13546,1,3,0)
+ ;;=3^Vitamin B12 Deficiency Anemia d/t Selective Vit B12 Malabsorp w/ Proteinuria
+ ;;^UTILITY(U,$J,358.3,13546,1,4,0)
+ ;;=4^D51.1
+ ;;^UTILITY(U,$J,358.3,13546,2)
+ ;;=^5002285
+ ;;^UTILITY(U,$J,358.3,13547,0)
+ ;;=D51.9^^53^593^192
+ ;;^UTILITY(U,$J,358.3,13547,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13547,1,3,0)
+ ;;=3^Vitamin B12 Deficiency Anemia,Unspec
+ ;;^UTILITY(U,$J,358.3,13547,1,4,0)
+ ;;=4^D51.9
+ ;;^UTILITY(U,$J,358.3,13547,2)
+ ;;=^5002289
+ ;;^UTILITY(U,$J,358.3,13548,0)
+ ;;=D68.0^^53^593^194
+ ;;^UTILITY(U,$J,358.3,13548,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13548,1,3,0)
+ ;;=3^Von Willebrand's Disease
+ ;;^UTILITY(U,$J,358.3,13548,1,4,0)
+ ;;=4^D68.0
+ ;;^UTILITY(U,$J,358.3,13548,2)
+ ;;=^127267
+ ;;^UTILITY(U,$J,358.3,13549,0)
+ ;;=C88.0^^53^593^195
+ ;;^UTILITY(U,$J,358.3,13549,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13549,1,3,0)
+ ;;=3^Waldenstrom Macroglobulinemia
+ ;;^UTILITY(U,$J,358.3,13549,1,4,0)
+ ;;=4^C88.0
+ ;;^UTILITY(U,$J,358.3,13549,2)
+ ;;=^5001748
+ ;;^UTILITY(U,$J,358.3,13550,0)
+ ;;=C91.02^^53^593^3
+ ;;^UTILITY(U,$J,358.3,13550,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13550,1,3,0)
+ ;;=3^Acute Lymphoblastic Leukemia,In Relapse

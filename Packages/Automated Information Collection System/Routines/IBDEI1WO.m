@@ -1,128 +1,120 @@
-IBDEI1WO ; ; 06-AUG-2015
+IBDEI1WO ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33512,1,0)
+ ;;^UTILITY(U,$J,358.3,32337,1,4,0)
+ ;;=4^S82.55XN
+ ;;^UTILITY(U,$J,358.3,32337,2)
+ ;;=^5042290
+ ;;^UTILITY(U,$J,358.3,32338,0)
+ ;;=S82.55XM^^126^1609^278
+ ;;^UTILITY(U,$J,358.3,32338,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33512,1,3,0)
- ;;=3^Abnormal Urine Cytology/Histology Findings
- ;;^UTILITY(U,$J,358.3,33512,1,4,0)
- ;;=4^R82.8
- ;;^UTILITY(U,$J,358.3,33512,2)
- ;;=^5019608
- ;;^UTILITY(U,$J,358.3,33513,0)
- ;;=R82.90^^182^2004^23
- ;;^UTILITY(U,$J,358.3,33513,1,0)
+ ;;^UTILITY(U,$J,358.3,32338,1,3,0)
+ ;;=3^Nondisp fx med mall lft tib, subs for opn fx type I/II w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32338,1,4,0)
+ ;;=4^S82.55XM
+ ;;^UTILITY(U,$J,358.3,32338,2)
+ ;;=^5042289
+ ;;^UTILITY(U,$J,358.3,32339,0)
+ ;;=S82.55XK^^126^1609^276
+ ;;^UTILITY(U,$J,358.3,32339,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33513,1,3,0)
- ;;=3^Abnormal Urine Findings,Unspec
- ;;^UTILITY(U,$J,358.3,33513,1,4,0)
- ;;=4^R82.90
- ;;^UTILITY(U,$J,358.3,33513,2)
- ;;=^5019609
- ;;^UTILITY(U,$J,358.3,33514,0)
- ;;=R82.91^^182^2004^46
- ;;^UTILITY(U,$J,358.3,33514,1,0)
+ ;;^UTILITY(U,$J,358.3,32339,1,3,0)
+ ;;=3^Nondisp fx med mall lft tib, subs for clo fx w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32339,1,4,0)
+ ;;=4^S82.55XK
+ ;;^UTILITY(U,$J,358.3,32339,2)
+ ;;=^5042288
+ ;;^UTILITY(U,$J,358.3,32340,0)
+ ;;=S82.54XN^^126^1609^280
+ ;;^UTILITY(U,$J,358.3,32340,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33514,1,3,0)
- ;;=3^Chromoabnormalities of Urine NEC
- ;;^UTILITY(U,$J,358.3,33514,1,4,0)
- ;;=4^R82.91
- ;;^UTILITY(U,$J,358.3,33514,2)
- ;;=^5019610
- ;;^UTILITY(U,$J,358.3,33515,0)
- ;;=R82.99^^182^2004^22
- ;;^UTILITY(U,$J,358.3,33515,1,0)
+ ;;^UTILITY(U,$J,358.3,32340,1,3,0)
+ ;;=3^Nondisp fx med mall rt tib, subs for opn fx type IIIA/B/C w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32340,1,4,0)
+ ;;=4^S82.54XN
+ ;;^UTILITY(U,$J,358.3,32340,2)
+ ;;=^5042274
+ ;;^UTILITY(U,$J,358.3,32341,0)
+ ;;=S82.54XM^^126^1609^281
+ ;;^UTILITY(U,$J,358.3,32341,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33515,1,3,0)
- ;;=3^Abnormal Urine Findings NEC
- ;;^UTILITY(U,$J,358.3,33515,1,4,0)
- ;;=4^R82.99
- ;;^UTILITY(U,$J,358.3,33515,2)
- ;;=^5019611
- ;;^UTILITY(U,$J,358.3,33516,0)
- ;;=R89.9^^182^2004^17
- ;;^UTILITY(U,$J,358.3,33516,1,0)
+ ;;^UTILITY(U,$J,358.3,32341,1,3,0)
+ ;;=3^Nondisp fx med mall rt tib, subs for opn fx type I/II w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32341,1,4,0)
+ ;;=4^S82.54XM
+ ;;^UTILITY(U,$J,358.3,32341,2)
+ ;;=^5042273
+ ;;^UTILITY(U,$J,358.3,32342,0)
+ ;;=S82.54XK^^126^1609^279
+ ;;^UTILITY(U,$J,358.3,32342,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33516,1,3,0)
- ;;=3^Abnormal Organ/Tissue Specimen Findings,Unspec
- ;;^UTILITY(U,$J,358.3,33516,1,4,0)
- ;;=4^R89.9
- ;;^UTILITY(U,$J,358.3,33516,2)
- ;;=^5019702
- ;;^UTILITY(U,$J,358.3,33517,0)
- ;;=R90.0^^182^2004^92
- ;;^UTILITY(U,$J,358.3,33517,1,0)
+ ;;^UTILITY(U,$J,358.3,32342,1,3,0)
+ ;;=3^Nondisp fx med mall rt tib, subs for clos fx w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32342,1,4,0)
+ ;;=4^S82.54XK
+ ;;^UTILITY(U,$J,358.3,32342,2)
+ ;;=^5042272
+ ;;^UTILITY(U,$J,358.3,32343,0)
+ ;;=S82.52XN^^126^1609^50
+ ;;^UTILITY(U,$J,358.3,32343,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33517,1,3,0)
- ;;=3^Intracranial Space-Occupying Lesion Dx Imaging of Central Nervous System
- ;;^UTILITY(U,$J,358.3,33517,1,4,0)
- ;;=4^R90.0
- ;;^UTILITY(U,$J,358.3,33517,2)
- ;;=^5019703
- ;;^UTILITY(U,$J,358.3,33518,0)
- ;;=R90.89^^182^2004^12
- ;;^UTILITY(U,$J,358.3,33518,1,0)
+ ;;^UTILITY(U,$J,358.3,32343,1,3,0)
+ ;;=3^Disp fx med mal lft tib, subs for opn fx type I/II w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32343,1,4,0)
+ ;;=4^S82.52XN
+ ;;^UTILITY(U,$J,358.3,32343,2)
+ ;;=^5042242
+ ;;^UTILITY(U,$J,358.3,32344,0)
+ ;;=S82.52XM^^126^1609^54
+ ;;^UTILITY(U,$J,358.3,32344,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33518,1,3,0)
- ;;=3^Abnormal Findings on Dx Imaging of Central Nervous System NEC
- ;;^UTILITY(U,$J,358.3,33518,1,4,0)
- ;;=4^R90.89
- ;;^UTILITY(U,$J,358.3,33518,2)
- ;;=^5019706
- ;;^UTILITY(U,$J,358.3,33519,0)
- ;;=R91.1^^182^2004^142
- ;;^UTILITY(U,$J,358.3,33519,1,0)
+ ;;^UTILITY(U,$J,358.3,32344,1,3,0)
+ ;;=3^Disp fx med mallft tib, subs for opn fx type I/II w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32344,1,4,0)
+ ;;=4^S82.52XM
+ ;;^UTILITY(U,$J,358.3,32344,2)
+ ;;=^5042241
+ ;;^UTILITY(U,$J,358.3,32345,0)
+ ;;=S82.52XK^^126^1609^51
+ ;;^UTILITY(U,$J,358.3,32345,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33519,1,3,0)
- ;;=3^Solitary Pulmonary Nodule
- ;;^UTILITY(U,$J,358.3,33519,1,4,0)
- ;;=4^R91.1
- ;;^UTILITY(U,$J,358.3,33519,2)
- ;;=^5019707
- ;;^UTILITY(U,$J,358.3,33520,0)
- ;;=R91.8^^182^2004^16
- ;;^UTILITY(U,$J,358.3,33520,1,0)
+ ;;^UTILITY(U,$J,358.3,32345,1,3,0)
+ ;;=3^Disp fx med mall lft tib, subs for clos fx w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32345,1,4,0)
+ ;;=4^S82.52XK
+ ;;^UTILITY(U,$J,358.3,32345,2)
+ ;;=^5042240
+ ;;^UTILITY(U,$J,358.3,32346,0)
+ ;;=S82.51XN^^126^1609^52
+ ;;^UTILITY(U,$J,358.3,32346,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33520,1,3,0)
- ;;=3^Abnormal Nonspecific Lung Field Finding NEC
- ;;^UTILITY(U,$J,358.3,33520,1,4,0)
- ;;=4^R91.8
- ;;^UTILITY(U,$J,358.3,33520,2)
- ;;=^5019708
- ;;^UTILITY(U,$J,358.3,33521,0)
- ;;=R92.0^^182^2004^111
- ;;^UTILITY(U,$J,358.3,33521,1,0)
+ ;;^UTILITY(U,$J,358.3,32346,1,3,0)
+ ;;=3^Disp fx med mall rt tib, subs for opn fx type IIIA/B/C w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32346,1,4,0)
+ ;;=4^S82.51XN
+ ;;^UTILITY(U,$J,358.3,32346,2)
+ ;;=^5042226
+ ;;^UTILITY(U,$J,358.3,32347,0)
+ ;;=S82.51XM^^126^1609^53
+ ;;^UTILITY(U,$J,358.3,32347,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33521,1,3,0)
- ;;=3^Mammographic Microcalcification on Dx Image of Breast
- ;;^UTILITY(U,$J,358.3,33521,1,4,0)
- ;;=4^R92.0
- ;;^UTILITY(U,$J,358.3,33521,2)
- ;;=^5019709
- ;;^UTILITY(U,$J,358.3,33522,0)
- ;;=R92.1^^182^2004^110
- ;;^UTILITY(U,$J,358.3,33522,1,0)
+ ;;^UTILITY(U,$J,358.3,32347,1,3,0)
+ ;;=3^Disp fx med mall rt tib, subs for opn fx type I/II w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32347,1,4,0)
+ ;;=4^S82.51XM
+ ;;^UTILITY(U,$J,358.3,32347,2)
+ ;;=^5042225
+ ;;^UTILITY(U,$J,358.3,32348,0)
+ ;;=S82.51XK^^126^1609^103
+ ;;^UTILITY(U,$J,358.3,32348,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33522,1,3,0)
- ;;=3^Mammographic Calcification on Dx Image of Breast
- ;;^UTILITY(U,$J,358.3,33522,1,4,0)
- ;;=4^R92.1
- ;;^UTILITY(U,$J,358.3,33522,2)
- ;;=^5019710
- ;;^UTILITY(U,$J,358.3,33523,0)
- ;;=R92.2^^182^2004^86
- ;;^UTILITY(U,$J,358.3,33523,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33523,1,3,0)
- ;;=3^Inconclusive Mammogram
- ;;^UTILITY(U,$J,358.3,33523,1,4,0)
- ;;=4^R92.2
- ;;^UTILITY(U,$J,358.3,33523,2)
- ;;=^5019711
- ;;^UTILITY(U,$J,358.3,33524,0)
- ;;=R93.0^^182^2004^10
- ;;^UTILITY(U,$J,358.3,33524,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33524,1,3,0)
- ;;=3^Abnormal Finding on Dx Image of Skull/Head NEC
+ ;;^UTILITY(U,$J,358.3,32348,1,3,0)
+ ;;=3^Disp fx of med mall rt tib, subs for clos fx w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32348,1,4,0)
+ ;;=4^S82.51XK
+ ;;^UTILITY(U,$J,358.3,32348,2)
+ ;;=^5042224
+ ;;^UTILITY(U,$J,358.3,32349,0)
+ ;;=M84.378K^^126^1609^422

@@ -1,142 +1,132 @@
-IBDEI094 ; ; 06-AUG-2015
+IBDEI094 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3809,1,0)
+ ;;^UTILITY(U,$J,358.3,3981,1,3,0)
+ ;;=3^Problems Related to Adverse Discrimination/Persecution
+ ;;^UTILITY(U,$J,358.3,3981,1,4,0)
+ ;;=4^Z60.5
+ ;;^UTILITY(U,$J,358.3,3981,2)
+ ;;=^5063143
+ ;;^UTILITY(U,$J,358.3,3982,0)
+ ;;=Z75.3^^18^224^158
+ ;;^UTILITY(U,$J,358.3,3982,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3809,1,3,0)
- ;;=3^381.01
- ;;^UTILITY(U,$J,358.3,3809,1,4,0)
- ;;=4^AC Serous Otitis Media
- ;;^UTILITY(U,$J,358.3,3809,2)
- ;;=^269369
- ;;^UTILITY(U,$J,358.3,3810,0)
- ;;=381.02^^12^168^8
- ;;^UTILITY(U,$J,358.3,3810,1,0)
+ ;;^UTILITY(U,$J,358.3,3982,1,3,0)
+ ;;=3^Problems Related to Unavailability/Inaccessibility of Health-Care Facilities
+ ;;^UTILITY(U,$J,358.3,3982,1,4,0)
+ ;;=4^Z75.3
+ ;;^UTILITY(U,$J,358.3,3982,2)
+ ;;=^5063292
+ ;;^UTILITY(U,$J,358.3,3983,0)
+ ;;=Z75.4^^18^224^159
+ ;;^UTILITY(U,$J,358.3,3983,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3810,1,3,0)
- ;;=3^381.02
- ;;^UTILITY(U,$J,358.3,3810,1,4,0)
- ;;=4^AC Mucoid Otitis Media
- ;;^UTILITY(U,$J,358.3,3810,2)
- ;;=^269370
- ;;^UTILITY(U,$J,358.3,3811,0)
- ;;=381.04^^12^168^3
- ;;^UTILITY(U,$J,358.3,3811,1,0)
+ ;;^UTILITY(U,$J,358.3,3983,1,3,0)
+ ;;=3^Problems Related to Unavailability/Inaccessibility of Helping Agencies
+ ;;^UTILITY(U,$J,358.3,3983,1,4,0)
+ ;;=4^Z75.4
+ ;;^UTILITY(U,$J,358.3,3983,2)
+ ;;=^5063293
+ ;;^UTILITY(U,$J,358.3,3984,0)
+ ;;=Z65.9^^18^224^153
+ ;;^UTILITY(U,$J,358.3,3984,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3811,1,3,0)
- ;;=3^381.04
- ;;^UTILITY(U,$J,358.3,3811,1,4,0)
- ;;=4^AC Allergic Serous OM
- ;;^UTILITY(U,$J,358.3,3811,2)
- ;;=^269372
- ;;^UTILITY(U,$J,358.3,3812,0)
- ;;=381.05^^12^168^1
- ;;^UTILITY(U,$J,358.3,3812,1,0)
+ ;;^UTILITY(U,$J,358.3,3984,1,3,0)
+ ;;=3^Problems Related to Psychosocial Circumstances
+ ;;^UTILITY(U,$J,358.3,3984,1,4,0)
+ ;;=4^Z65.9
+ ;;^UTILITY(U,$J,358.3,3984,2)
+ ;;=^5063186
+ ;;^UTILITY(U,$J,358.3,3985,0)
+ ;;=Z75.2^^18^224^160
+ ;;^UTILITY(U,$J,358.3,3985,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3812,1,3,0)
- ;;=3^381.05
- ;;^UTILITY(U,$J,358.3,3812,1,4,0)
- ;;=4^AC Allergic Mucoid OM
- ;;^UTILITY(U,$J,358.3,3812,2)
- ;;=^269373
- ;;^UTILITY(U,$J,358.3,3813,0)
- ;;=381.06^^12^168^2
- ;;^UTILITY(U,$J,358.3,3813,1,0)
+ ;;^UTILITY(U,$J,358.3,3985,1,3,0)
+ ;;=3^Problems Related to Waiting Period for Investigation/Treatment
+ ;;^UTILITY(U,$J,358.3,3985,1,4,0)
+ ;;=4^Z75.2
+ ;;^UTILITY(U,$J,358.3,3985,2)
+ ;;=^5063291
+ ;;^UTILITY(U,$J,358.3,3986,0)
+ ;;=Z75.5^^18^224^161
+ ;;^UTILITY(U,$J,358.3,3986,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3813,1,3,0)
- ;;=3^381.06
- ;;^UTILITY(U,$J,358.3,3813,1,4,0)
- ;;=4^AC Allergic Sanguinous OM
- ;;^UTILITY(U,$J,358.3,3813,2)
- ;;=^269374
- ;;^UTILITY(U,$J,358.3,3814,0)
- ;;=381.20^^12^168^37
- ;;^UTILITY(U,$J,358.3,3814,1,0)
+ ;;^UTILITY(U,$J,358.3,3986,1,3,0)
+ ;;=3^Respite/Holiday Relief Care
+ ;;^UTILITY(U,$J,358.3,3986,1,4,0)
+ ;;=4^Z75.5
+ ;;^UTILITY(U,$J,358.3,3986,2)
+ ;;=^5063294
+ ;;^UTILITY(U,$J,358.3,3987,0)
+ ;;=R68.89^^18^224^165
+ ;;^UTILITY(U,$J,358.3,3987,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3814,1,3,0)
- ;;=3^381.20
- ;;^UTILITY(U,$J,358.3,3814,1,4,0)
- ;;=4^Chr Mucoid OM, Simple/Unspec
- ;;^UTILITY(U,$J,358.3,3814,2)
- ;;=^269379
- ;;^UTILITY(U,$J,358.3,3815,0)
- ;;=381.29^^12^168^36
- ;;^UTILITY(U,$J,358.3,3815,1,0)
+ ;;^UTILITY(U,$J,358.3,3987,1,3,0)
+ ;;=3^Symptoms/Signs,General,Other
+ ;;^UTILITY(U,$J,358.3,3987,1,4,0)
+ ;;=4^R68.89
+ ;;^UTILITY(U,$J,358.3,3987,2)
+ ;;=^5019557
+ ;;^UTILITY(U,$J,358.3,3988,0)
+ ;;=Z72.0^^18^224^168
+ ;;^UTILITY(U,$J,358.3,3988,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3815,1,3,0)
- ;;=3^381.29
- ;;^UTILITY(U,$J,358.3,3815,1,4,0)
- ;;=4^Chr Mucoid OM, Other
- ;;^UTILITY(U,$J,358.3,3815,2)
- ;;=^269380
- ;;^UTILITY(U,$J,358.3,3816,0)
- ;;=381.3^^12^168^38
- ;;^UTILITY(U,$J,358.3,3816,1,0)
+ ;;^UTILITY(U,$J,358.3,3988,1,3,0)
+ ;;=3^Tobacco Use
+ ;;^UTILITY(U,$J,358.3,3988,1,4,0)
+ ;;=4^Z72.0
+ ;;^UTILITY(U,$J,358.3,3988,2)
+ ;;=^5063255
+ ;;^UTILITY(U,$J,358.3,3989,0)
+ ;;=Z94.9^^18^224^169
+ ;;^UTILITY(U,$J,358.3,3989,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3816,1,3,0)
- ;;=3^381.3
- ;;^UTILITY(U,$J,358.3,3816,1,4,0)
- ;;=4^Chr Oth/Unspec Nonsupp OM
- ;;^UTILITY(U,$J,358.3,3816,2)
- ;;=^269381
- ;;^UTILITY(U,$J,358.3,3817,0)
- ;;=381.4^^12^168^64
- ;;^UTILITY(U,$J,358.3,3817,1,0)
+ ;;^UTILITY(U,$J,358.3,3989,1,3,0)
+ ;;=3^Transplanted Organ/Tissue Status,Unspec
+ ;;^UTILITY(U,$J,358.3,3989,1,4,0)
+ ;;=4^Z94.9
+ ;;^UTILITY(U,$J,358.3,3989,2)
+ ;;=^5063667
+ ;;^UTILITY(U,$J,358.3,3990,0)
+ ;;=R76.11^^18^224^166
+ ;;^UTILITY(U,$J,358.3,3990,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3817,1,3,0)
- ;;=3^381.4
- ;;^UTILITY(U,$J,358.3,3817,1,4,0)
- ;;=4^Nonsupp OM,NOS Ac or Chr
- ;;^UTILITY(U,$J,358.3,3817,2)
- ;;=^88278
- ;;^UTILITY(U,$J,358.3,3818,0)
- ;;=382.00^^12^168^15
- ;;^UTILITY(U,$J,358.3,3818,1,0)
+ ;;^UTILITY(U,$J,358.3,3990,1,3,0)
+ ;;=3^TB Skin Test,Nonspecific Reaction w/o Active Tuberculosis
+ ;;^UTILITY(U,$J,358.3,3990,1,4,0)
+ ;;=4^R76.11
+ ;;^UTILITY(U,$J,358.3,3990,2)
+ ;;=^5019570
+ ;;^UTILITY(U,$J,358.3,3991,0)
+ ;;=W10.9XXS^^18^225^18
+ ;;^UTILITY(U,$J,358.3,3991,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3818,1,3,0)
- ;;=3^382.00
- ;;^UTILITY(U,$J,358.3,3818,1,4,0)
- ;;=4^AC Supp OM w/o Spont Rupture
- ;;^UTILITY(U,$J,358.3,3818,2)
- ;;=^269395
- ;;^UTILITY(U,$J,358.3,3819,0)
- ;;=382.01^^12^168^14
- ;;^UTILITY(U,$J,358.3,3819,1,0)
+ ;;^UTILITY(U,$J,358.3,3991,1,3,0)
+ ;;=3^Fall from Stairs/Steps,Sequela
+ ;;^UTILITY(U,$J,358.3,3991,1,4,0)
+ ;;=4^W10.9XXS
+ ;;^UTILITY(U,$J,358.3,3991,2)
+ ;;=^5059594
+ ;;^UTILITY(U,$J,358.3,3992,0)
+ ;;=W10.0XXS^^18^225^9
+ ;;^UTILITY(U,$J,358.3,3992,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3819,1,3,0)
- ;;=3^382.01
- ;;^UTILITY(U,$J,358.3,3819,1,4,0)
- ;;=4^AC Supp OM w/Spont Rupt Drum
- ;;^UTILITY(U,$J,358.3,3819,2)
- ;;=^269396
- ;;^UTILITY(U,$J,358.3,3820,0)
- ;;=382.02^^12^168^13
- ;;^UTILITY(U,$J,358.3,3820,1,0)
+ ;;^UTILITY(U,$J,358.3,3992,1,3,0)
+ ;;=3^Fall from Escalator,Sequela
+ ;;^UTILITY(U,$J,358.3,3992,1,4,0)
+ ;;=4^W10.0XXS
+ ;;^UTILITY(U,$J,358.3,3992,2)
+ ;;=^5059582
+ ;;^UTILITY(U,$J,358.3,3993,0)
+ ;;=W10.2XXS^^18^225^11
+ ;;^UTILITY(U,$J,358.3,3993,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3820,1,3,0)
- ;;=3^382.02
- ;;^UTILITY(U,$J,358.3,3820,1,4,0)
- ;;=4^AC Supp OM in Oth Diseases
- ;;^UTILITY(U,$J,358.3,3820,2)
- ;;=^269397
- ;;^UTILITY(U,$J,358.3,3821,0)
- ;;=382.1^^12^168^43
- ;;^UTILITY(U,$J,358.3,3821,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3821,1,3,0)
- ;;=3^382.1
- ;;^UTILITY(U,$J,358.3,3821,1,4,0)
- ;;=4^Chr Tubotympanic Supp OM
- ;;^UTILITY(U,$J,358.3,3821,2)
- ;;=^269398
- ;;^UTILITY(U,$J,358.3,3822,0)
- ;;=382.2^^12^168^32
- ;;^UTILITY(U,$J,358.3,3822,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3822,1,3,0)
- ;;=3^382.2
- ;;^UTILITY(U,$J,358.3,3822,1,4,0)
- ;;=4^Chr Attrcoantral Supp OM
- ;;^UTILITY(U,$J,358.3,3822,2)
- ;;=^269399
+ ;;^UTILITY(U,$J,358.3,3993,1,3,0)
+ ;;=3^Fall from Incline,Sequela
+ ;;^UTILITY(U,$J,358.3,3993,1,4,0)
+ ;;=4^W10.2XXS
+ ;;^UTILITY(U,$J,358.3,3993,2)
+ ;;=^5059588
+ ;;^UTILITY(U,$J,358.3,3994,0)
+ ;;=W10.1XXS^^18^225^17

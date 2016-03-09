@@ -1,136 +1,134 @@
-IBDEI0UT ; ; 06-AUG-2015
+IBDEI0UT ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14967,0)
- ;;=428.42^^81^936^52
- ;;^UTILITY(U,$J,358.3,14967,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14967,1,4,0)
- ;;=4^428.42
- ;;^UTILITY(U,$J,358.3,14967,1,5,0)
- ;;=5^Heart Failure,Systolic&Diastolic,Chronic
- ;;^UTILITY(U,$J,358.3,14967,2)
- ;;=^328501
- ;;^UTILITY(U,$J,358.3,14968,0)
- ;;=428.43^^81^936^51
- ;;^UTILITY(U,$J,358.3,14968,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14968,1,4,0)
- ;;=4^428.43
- ;;^UTILITY(U,$J,358.3,14968,1,5,0)
- ;;=5^Heart Failure,Systolic&Diastolic
- ;;^UTILITY(U,$J,358.3,14968,2)
- ;;=^328502
- ;;^UTILITY(U,$J,358.3,14969,0)
- ;;=396.3^^81^936^10
- ;;^UTILITY(U,$J,358.3,14969,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14969,1,4,0)
- ;;=4^396.3
- ;;^UTILITY(U,$J,358.3,14969,1,5,0)
- ;;=5^Aortic and Mitral Insufficiency
- ;;^UTILITY(U,$J,358.3,14969,2)
- ;;=Aortic and Mitral Insufficiency^269583
- ;;^UTILITY(U,$J,358.3,14970,0)
- ;;=429.9^^81^936^28
- ;;^UTILITY(U,$J,358.3,14970,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14970,1,4,0)
- ;;=4^429.9
- ;;^UTILITY(U,$J,358.3,14970,1,5,0)
- ;;=5^Diastolic Dysfunction
- ;;^UTILITY(U,$J,358.3,14970,2)
- ;;=^54741
- ;;^UTILITY(U,$J,358.3,14971,0)
- ;;=453.79^^81^936^27
- ;;^UTILITY(U,$J,358.3,14971,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14971,1,4,0)
- ;;=4^453.79
- ;;^UTILITY(U,$J,358.3,14971,1,5,0)
- ;;=5^Chr Venous Emblsm Oth Spec Veins
- ;;^UTILITY(U,$J,358.3,14971,2)
- ;;=^338251
- ;;^UTILITY(U,$J,358.3,14972,0)
- ;;=453.89^^81^936^1
- ;;^UTILITY(U,$J,358.3,14972,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14972,1,4,0)
- ;;=4^453.89
- ;;^UTILITY(U,$J,358.3,14972,1,5,0)
- ;;=5^AC Venous Emblsm Oth Spec Veins
- ;;^UTILITY(U,$J,358.3,14972,2)
- ;;=^338259
- ;;^UTILITY(U,$J,358.3,14973,0)
- ;;=454.2^^81^936^85
- ;;^UTILITY(U,$J,358.3,14973,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14973,1,4,0)
- ;;=4^454.2
- ;;^UTILITY(U,$J,358.3,14973,1,5,0)
- ;;=5^Varicose Veins w/Ulcer&Inflam
- ;;^UTILITY(U,$J,358.3,14973,2)
- ;;=^269821
- ;;^UTILITY(U,$J,358.3,14974,0)
- ;;=397.1^^81^936^74
- ;;^UTILITY(U,$J,358.3,14974,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14974,1,4,0)
- ;;=4^397.1
- ;;^UTILITY(U,$J,358.3,14974,1,5,0)
- ;;=5^Rheumatic Disease Pulmonary Valve
- ;;^UTILITY(U,$J,358.3,14974,2)
- ;;=^269587
- ;;^UTILITY(U,$J,358.3,14975,0)
- ;;=397.0^^81^936^75
- ;;^UTILITY(U,$J,358.3,14975,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14975,1,4,0)
- ;;=4^397.0
- ;;^UTILITY(U,$J,358.3,14975,1,5,0)
- ;;=5^Rheumatic Disease Tricuspid Valve
- ;;^UTILITY(U,$J,358.3,14975,2)
- ;;=^35528
- ;;^UTILITY(U,$J,358.3,14976,0)
- ;;=414.3^^81^936^17
- ;;^UTILITY(U,$J,358.3,14976,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14976,1,4,0)
- ;;=4^414.3
- ;;^UTILITY(U,$J,358.3,14976,1,5,0)
- ;;=5^CAD d/t Lipid Rich Plaque
- ;;^UTILITY(U,$J,358.3,14976,2)
- ;;=^336601
- ;;^UTILITY(U,$J,358.3,14977,0)
- ;;=414.4^^81^936^16
- ;;^UTILITY(U,$J,358.3,14977,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14977,1,4,0)
- ;;=4^414.4
- ;;^UTILITY(U,$J,358.3,14977,1,5,0)
- ;;=5^CAD d/t Calc Coronary Lesion
- ;;^UTILITY(U,$J,358.3,14977,2)
- ;;=^340518
- ;;^UTILITY(U,$J,358.3,14978,0)
- ;;=425.11^^81^936^60
- ;;^UTILITY(U,$J,358.3,14978,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14978,1,4,0)
- ;;=4^425.11
- ;;^UTILITY(U,$J,358.3,14978,1,5,0)
- ;;=5^Hypertrophic Subaortic Stenosis
- ;;^UTILITY(U,$J,358.3,14978,2)
- ;;=^340520
- ;;^UTILITY(U,$J,358.3,14979,0)
- ;;=425.18^^81^936^59
- ;;^UTILITY(U,$J,358.3,14979,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14979,1,4,0)
- ;;=4^425.18
- ;;^UTILITY(U,$J,358.3,14979,1,5,0)
- ;;=5^Hypertrophic Cardiomyopathy
- ;;^UTILITY(U,$J,358.3,14979,2)
- ;;=^340521
- ;;^UTILITY(U,$J,358.3,14980,0)
- ;;=V12.55^^81^936^54
+ ;;^UTILITY(U,$J,358.3,14448,1,4,0)
+ ;;=4^F17.290
+ ;;^UTILITY(U,$J,358.3,14448,2)
+ ;;=^5003375
+ ;;^UTILITY(U,$J,358.3,14449,0)
+ ;;=F17.221^^53^607^24
+ ;;^UTILITY(U,$J,358.3,14449,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14449,1,3,0)
+ ;;=3^Nicotine Dependence Chewing Tobacco,In Remission
+ ;;^UTILITY(U,$J,358.3,14449,1,4,0)
+ ;;=4^F17.221
+ ;;^UTILITY(U,$J,358.3,14449,2)
+ ;;=^5003371
+ ;;^UTILITY(U,$J,358.3,14450,0)
+ ;;=F17.220^^53^607^25
+ ;;^UTILITY(U,$J,358.3,14450,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14450,1,3,0)
+ ;;=3^Nicotine Dependence Chewing Tobacco,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,14450,1,4,0)
+ ;;=4^F17.220
+ ;;^UTILITY(U,$J,358.3,14450,2)
+ ;;=^5003370
+ ;;^UTILITY(U,$J,358.3,14451,0)
+ ;;=F17.211^^53^607^26
+ ;;^UTILITY(U,$J,358.3,14451,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14451,1,3,0)
+ ;;=3^Nicotine Dependence Cigarettes,In Remission
+ ;;^UTILITY(U,$J,358.3,14451,1,4,0)
+ ;;=4^F17.211
+ ;;^UTILITY(U,$J,358.3,14451,2)
+ ;;=^5003366
+ ;;^UTILITY(U,$J,358.3,14452,0)
+ ;;=F17.200^^53^607^31
+ ;;^UTILITY(U,$J,358.3,14452,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14452,1,3,0)
+ ;;=3^Nicotine Dependence,Unspec,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,14452,1,4,0)
+ ;;=4^F17.200
+ ;;^UTILITY(U,$J,358.3,14452,2)
+ ;;=^5003360
+ ;;^UTILITY(U,$J,358.3,14453,0)
+ ;;=F11.120^^53^607^32
+ ;;^UTILITY(U,$J,358.3,14453,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14453,1,3,0)
+ ;;=3^Opioid Abuse w/ Intoxication,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,14453,1,4,0)
+ ;;=4^F11.120
+ ;;^UTILITY(U,$J,358.3,14453,2)
+ ;;=^5003115
+ ;;^UTILITY(U,$J,358.3,14454,0)
+ ;;=F11.10^^53^607^34
+ ;;^UTILITY(U,$J,358.3,14454,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14454,1,3,0)
+ ;;=3^Opioid Abuse,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,14454,1,4,0)
+ ;;=4^F11.10
+ ;;^UTILITY(U,$J,358.3,14454,2)
+ ;;=^5003114
+ ;;^UTILITY(U,$J,358.3,14455,0)
+ ;;=F11.129^^53^607^33
+ ;;^UTILITY(U,$J,358.3,14455,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14455,1,3,0)
+ ;;=3^Opioid Abuse w/ Intoxication,Unspec
+ ;;^UTILITY(U,$J,358.3,14455,1,4,0)
+ ;;=4^F11.129
+ ;;^UTILITY(U,$J,358.3,14455,2)
+ ;;=^5003118
+ ;;^UTILITY(U,$J,358.3,14456,0)
+ ;;=F10.21^^53^607^3
+ ;;^UTILITY(U,$J,358.3,14456,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14456,1,3,0)
+ ;;=3^Alcohol Dependence,In Remission
+ ;;^UTILITY(U,$J,358.3,14456,1,4,0)
+ ;;=4^F10.21
+ ;;^UTILITY(U,$J,358.3,14456,2)
+ ;;=^5003082
+ ;;^UTILITY(U,$J,358.3,14457,0)
+ ;;=F12.10^^53^607^5
+ ;;^UTILITY(U,$J,358.3,14457,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14457,1,3,0)
+ ;;=3^Cannabis Abuse,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,14457,1,4,0)
+ ;;=4^F12.10
+ ;;^UTILITY(U,$J,358.3,14457,2)
+ ;;=^5003155
+ ;;^UTILITY(U,$J,358.3,14458,0)
+ ;;=F12.20^^53^607^7
+ ;;^UTILITY(U,$J,358.3,14458,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14458,1,3,0)
+ ;;=3^Cannabis Dependence,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,14458,1,4,0)
+ ;;=4^F12.20
+ ;;^UTILITY(U,$J,358.3,14458,2)
+ ;;=^5003166
+ ;;^UTILITY(U,$J,358.3,14459,0)
+ ;;=F12.21^^53^607^6
+ ;;^UTILITY(U,$J,358.3,14459,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14459,1,3,0)
+ ;;=3^Cannabis Dependence,In Remission
+ ;;^UTILITY(U,$J,358.3,14459,1,4,0)
+ ;;=4^F12.21
+ ;;^UTILITY(U,$J,358.3,14459,2)
+ ;;=^5003167
+ ;;^UTILITY(U,$J,358.3,14460,0)
+ ;;=F12.90^^53^607^8
+ ;;^UTILITY(U,$J,358.3,14460,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14460,1,3,0)
+ ;;=3^Cannabis Use,Unspec,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,14460,1,4,0)
+ ;;=4^F12.90
+ ;;^UTILITY(U,$J,358.3,14460,2)
+ ;;=^5003178
+ ;;^UTILITY(U,$J,358.3,14461,0)
+ ;;=I83.019^^53^608^3
+ ;;^UTILITY(U,$J,358.3,14461,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14461,1,3,0)
+ ;;=3^Varicose Veins Right Lower Extrem w/ Ulcer,Unspec

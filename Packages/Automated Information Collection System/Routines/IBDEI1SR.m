@@ -1,134 +1,130 @@
-IBDEI1SR ; ; 06-AUG-2015
+IBDEI1SR ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31693,0)
- ;;=S15.001A^^180^1962^3
- ;;^UTILITY(U,$J,358.3,31693,1,0)
+ ;;^UTILITY(U,$J,358.3,30538,0)
+ ;;=I65.21^^121^1519^14
+ ;;^UTILITY(U,$J,358.3,30538,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31693,1,3,0)
- ;;=3^Injury of right carotid artery, init encntr
- ;;^UTILITY(U,$J,358.3,31693,1,4,0)
- ;;=4^S15.001A
- ;;^UTILITY(U,$J,358.3,31693,2)
- ;;=^5022220
- ;;^UTILITY(U,$J,358.3,31694,0)
- ;;=M23.92^^180^1962^4
- ;;^UTILITY(U,$J,358.3,31694,1,0)
+ ;;^UTILITY(U,$J,358.3,30538,1,3,0)
+ ;;=3^Occlusion & Stenosis Right Carotid Artery
+ ;;^UTILITY(U,$J,358.3,30538,1,4,0)
+ ;;=4^I65.21
+ ;;^UTILITY(U,$J,358.3,30538,2)
+ ;;=^5007360
+ ;;^UTILITY(U,$J,358.3,30539,0)
+ ;;=I65.22^^121^1519^13
+ ;;^UTILITY(U,$J,358.3,30539,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31694,1,3,0)
- ;;=3^Internal derangement of left knee
- ;;^UTILITY(U,$J,358.3,31694,1,4,0)
- ;;=4^M23.92
- ;;^UTILITY(U,$J,358.3,31694,2)
- ;;=^5133807
- ;;^UTILITY(U,$J,358.3,31695,0)
- ;;=M23.91^^180^1962^5
- ;;^UTILITY(U,$J,358.3,31695,1,0)
+ ;;^UTILITY(U,$J,358.3,30539,1,3,0)
+ ;;=3^Occlusion & Stenosis Left Carotid Artery
+ ;;^UTILITY(U,$J,358.3,30539,1,4,0)
+ ;;=4^I65.22
+ ;;^UTILITY(U,$J,358.3,30539,2)
+ ;;=^5007361
+ ;;^UTILITY(U,$J,358.3,30540,0)
+ ;;=I65.23^^121^1519^12
+ ;;^UTILITY(U,$J,358.3,30540,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31695,1,3,0)
- ;;=3^Internal derangement of right knee
- ;;^UTILITY(U,$J,358.3,31695,1,4,0)
- ;;=4^M23.91
- ;;^UTILITY(U,$J,358.3,31695,2)
- ;;=^5133806
- ;;^UTILITY(U,$J,358.3,31696,0)
- ;;=M75.102^^180^1962^126
- ;;^UTILITY(U,$J,358.3,31696,1,0)
+ ;;^UTILITY(U,$J,358.3,30540,1,3,0)
+ ;;=3^Occlusion & Stenosis Bilateral Carotid Arteries
+ ;;^UTILITY(U,$J,358.3,30540,1,4,0)
+ ;;=4^I65.23
+ ;;^UTILITY(U,$J,358.3,30540,2)
+ ;;=^5007362
+ ;;^UTILITY(U,$J,358.3,30541,0)
+ ;;=I63.131^^121^1519^9
+ ;;^UTILITY(U,$J,358.3,30541,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31696,1,3,0)
- ;;=3^Rotatr-cuff tear/ruptr of left shoulder, not trauma
- ;;^UTILITY(U,$J,358.3,31696,1,4,0)
- ;;=4^M75.102
- ;;^UTILITY(U,$J,358.3,31696,2)
- ;;=^5013243
- ;;^UTILITY(U,$J,358.3,31697,0)
- ;;=M75.101^^180^1962^127
- ;;^UTILITY(U,$J,358.3,31697,1,0)
+ ;;^UTILITY(U,$J,358.3,30541,1,3,0)
+ ;;=3^Cerebral Infarction d/t Embolism Right Carotid Artery
+ ;;^UTILITY(U,$J,358.3,30541,1,4,0)
+ ;;=4^I63.131
+ ;;^UTILITY(U,$J,358.3,30541,2)
+ ;;=^5007308
+ ;;^UTILITY(U,$J,358.3,30542,0)
+ ;;=I63.132^^121^1519^8
+ ;;^UTILITY(U,$J,358.3,30542,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31697,1,3,0)
- ;;=3^Rotatr-cuff tear/ruptr of right shoulder, not trauma
- ;;^UTILITY(U,$J,358.3,31697,1,4,0)
- ;;=4^M75.101
- ;;^UTILITY(U,$J,358.3,31697,2)
- ;;=^5013242
- ;;^UTILITY(U,$J,358.3,31698,0)
- ;;=R32.^^180^1962^146
- ;;^UTILITY(U,$J,358.3,31698,1,0)
+ ;;^UTILITY(U,$J,358.3,30542,1,3,0)
+ ;;=3^Cerebral Infarction d/t Embolism Left Carotid Artery
+ ;;^UTILITY(U,$J,358.3,30542,1,4,0)
+ ;;=4^I63.132
+ ;;^UTILITY(U,$J,358.3,30542,2)
+ ;;=^5007309
+ ;;^UTILITY(U,$J,358.3,30543,0)
+ ;;=I63.231^^121^1519^7
+ ;;^UTILITY(U,$J,358.3,30543,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31698,1,3,0)
- ;;=3^Urinary incontinence,Unspec
- ;;^UTILITY(U,$J,358.3,31698,1,4,0)
- ;;=4^R32.
- ;;^UTILITY(U,$J,358.3,31698,2)
- ;;=^5019329
- ;;^UTILITY(U,$J,358.3,31699,0)
- ;;=R53.1^^180^1962^147
- ;;^UTILITY(U,$J,358.3,31699,1,0)
+ ;;^UTILITY(U,$J,358.3,30543,1,3,0)
+ ;;=3^Cereb Infrc d/t Unspec Occls/Stenosis Right Carotid Artery
+ ;;^UTILITY(U,$J,358.3,30543,1,4,0)
+ ;;=4^I63.231
+ ;;^UTILITY(U,$J,358.3,30543,2)
+ ;;=^5007316
+ ;;^UTILITY(U,$J,358.3,30544,0)
+ ;;=I63.232^^121^1519^6
+ ;;^UTILITY(U,$J,358.3,30544,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31699,1,3,0)
- ;;=3^Weakness
- ;;^UTILITY(U,$J,358.3,31699,1,4,0)
- ;;=4^R53.1
- ;;^UTILITY(U,$J,358.3,31699,2)
- ;;=^5019516
- ;;^UTILITY(U,$J,358.3,31700,0)
- ;;=F31.81^^180^1963^8
- ;;^UTILITY(U,$J,358.3,31700,1,0)
+ ;;^UTILITY(U,$J,358.3,30544,1,3,0)
+ ;;=3^Cereb Infrc d/t Unspec Occls/Stenosis Left Carotid Artery
+ ;;^UTILITY(U,$J,358.3,30544,1,4,0)
+ ;;=4^I63.232
+ ;;^UTILITY(U,$J,358.3,30544,2)
+ ;;=^5007317
+ ;;^UTILITY(U,$J,358.3,30545,0)
+ ;;=K63.9^^121^1520^4
+ ;;^UTILITY(U,$J,358.3,30545,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31700,1,3,0)
- ;;=3^Bipolar II disorder
- ;;^UTILITY(U,$J,358.3,31700,1,4,0)
- ;;=4^F31.81
- ;;^UTILITY(U,$J,358.3,31700,2)
- ;;=^5003519
- ;;^UTILITY(U,$J,358.3,31701,0)
- ;;=F41.9^^180^1963^7
- ;;^UTILITY(U,$J,358.3,31701,1,0)
+ ;;^UTILITY(U,$J,358.3,30545,1,3,0)
+ ;;=3^Intestinal Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,30545,1,4,0)
+ ;;=4^K63.9
+ ;;^UTILITY(U,$J,358.3,30545,2)
+ ;;=^5008768
+ ;;^UTILITY(U,$J,358.3,30546,0)
+ ;;=K76.6^^121^1520^7
+ ;;^UTILITY(U,$J,358.3,30546,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31701,1,3,0)
- ;;=3^Anxiety disorder, unspecified
- ;;^UTILITY(U,$J,358.3,31701,1,4,0)
- ;;=4^F41.9
- ;;^UTILITY(U,$J,358.3,31701,2)
- ;;=^5003567
- ;;^UTILITY(U,$J,358.3,31702,0)
- ;;=F34.1^^180^1963^10
- ;;^UTILITY(U,$J,358.3,31702,1,0)
+ ;;^UTILITY(U,$J,358.3,30546,1,3,0)
+ ;;=3^Portal Hypertension
+ ;;^UTILITY(U,$J,358.3,30546,1,4,0)
+ ;;=4^K76.6
+ ;;^UTILITY(U,$J,358.3,30546,2)
+ ;;=^5008834
+ ;;^UTILITY(U,$J,358.3,30547,0)
+ ;;=K76.9^^121^1520^5
+ ;;^UTILITY(U,$J,358.3,30547,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31702,1,3,0)
- ;;=3^Dysthymic disorder
- ;;^UTILITY(U,$J,358.3,31702,1,4,0)
- ;;=4^F34.1
- ;;^UTILITY(U,$J,358.3,31702,2)
- ;;=^331913
- ;;^UTILITY(U,$J,358.3,31703,0)
- ;;=F60.4^^180^1963^11
- ;;^UTILITY(U,$J,358.3,31703,1,0)
+ ;;^UTILITY(U,$J,358.3,30547,1,3,0)
+ ;;=3^Liver Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,30547,1,4,0)
+ ;;=4^K76.9
+ ;;^UTILITY(U,$J,358.3,30547,2)
+ ;;=^5008836
+ ;;^UTILITY(U,$J,358.3,30548,0)
+ ;;=K80.20^^121^1520^2
+ ;;^UTILITY(U,$J,358.3,30548,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31703,1,3,0)
- ;;=3^Histrionic personality disorder
- ;;^UTILITY(U,$J,358.3,31703,1,4,0)
- ;;=4^F60.4
- ;;^UTILITY(U,$J,358.3,31703,2)
- ;;=^5003636
- ;;^UTILITY(U,$J,358.3,31704,0)
- ;;=F60.7^^180^1963^9
- ;;^UTILITY(U,$J,358.3,31704,1,0)
+ ;;^UTILITY(U,$J,358.3,30548,1,3,0)
+ ;;=3^Calculus of Gallbladder w/o  Cholecystitis w/o Obstruction
+ ;;^UTILITY(U,$J,358.3,30548,1,4,0)
+ ;;=4^K80.20
+ ;;^UTILITY(U,$J,358.3,30548,2)
+ ;;=^5008846
+ ;;^UTILITY(U,$J,358.3,30549,0)
+ ;;=K83.0^^121^1520^3
+ ;;^UTILITY(U,$J,358.3,30549,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31704,1,3,0)
- ;;=3^Dependent personality disorder
- ;;^UTILITY(U,$J,358.3,31704,1,4,0)
- ;;=4^F60.7
- ;;^UTILITY(U,$J,358.3,31704,2)
- ;;=^5003637
- ;;^UTILITY(U,$J,358.3,31705,0)
- ;;=F43.21^^180^1963^3
- ;;^UTILITY(U,$J,358.3,31705,1,0)
+ ;;^UTILITY(U,$J,358.3,30549,1,3,0)
+ ;;=3^Cholangitis
+ ;;^UTILITY(U,$J,358.3,30549,1,4,0)
+ ;;=4^K83.0
+ ;;^UTILITY(U,$J,358.3,30549,2)
+ ;;=^23291
+ ;;^UTILITY(U,$J,358.3,30550,0)
+ ;;=K83.9^^121^1520^1
+ ;;^UTILITY(U,$J,358.3,30550,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31705,1,3,0)
- ;;=3^Adjustment disorder with depressed mood
- ;;^UTILITY(U,$J,358.3,31705,1,4,0)
- ;;=4^F43.21
- ;;^UTILITY(U,$J,358.3,31705,2)
- ;;=^331948
+ ;;^UTILITY(U,$J,358.3,30550,1,3,0)
+ ;;=3^Biliary Tract Disease,Unspec

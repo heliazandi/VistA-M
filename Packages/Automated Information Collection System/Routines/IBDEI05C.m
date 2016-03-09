@@ -1,142 +1,130 @@
-IBDEI05C ; ; 06-AUG-2015
+IBDEI05C ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1980,1,3,0)
- ;;=3^Anuria and oliguria
- ;;^UTILITY(U,$J,358.3,1980,1,4,0)
- ;;=4^R34.
- ;;^UTILITY(U,$J,358.3,1980,2)
- ;;=^5019333
- ;;^UTILITY(U,$J,358.3,1981,0)
- ;;=R39.12^^3^57^93
- ;;^UTILITY(U,$J,358.3,1981,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1981,1,3,0)
- ;;=3^Poor urinary stream
- ;;^UTILITY(U,$J,358.3,1981,1,4,0)
- ;;=4^R39.12
- ;;^UTILITY(U,$J,358.3,1981,2)
- ;;=^5019342
- ;;^UTILITY(U,$J,358.3,1982,0)
- ;;=R19.30^^3^57^2
- ;;^UTILITY(U,$J,358.3,1982,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1982,1,3,0)
- ;;=3^Abdominal rigidity, unspecified site
- ;;^UTILITY(U,$J,358.3,1982,1,4,0)
- ;;=4^R19.30
- ;;^UTILITY(U,$J,358.3,1982,2)
- ;;=^5019266
- ;;^UTILITY(U,$J,358.3,1983,0)
- ;;=R73.02^^3^57^58
- ;;^UTILITY(U,$J,358.3,1983,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1983,1,3,0)
- ;;=3^Impaired glucose tolerance (oral)
- ;;^UTILITY(U,$J,358.3,1983,1,4,0)
- ;;=4^R73.02
- ;;^UTILITY(U,$J,358.3,1983,2)
- ;;=^5019562
- ;;^UTILITY(U,$J,358.3,1984,0)
- ;;=R73.09^^3^57^4
- ;;^UTILITY(U,$J,358.3,1984,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1984,1,3,0)
- ;;=3^Abnormal Glucose NEC
- ;;^UTILITY(U,$J,358.3,1984,1,4,0)
- ;;=4^R73.09
- ;;^UTILITY(U,$J,358.3,1984,2)
- ;;=^5019563
- ;;^UTILITY(U,$J,358.3,1985,0)
- ;;=R79.1^^3^57^3
- ;;^UTILITY(U,$J,358.3,1985,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1985,1,3,0)
- ;;=3^Abnormal Coagulation Profile
- ;;^UTILITY(U,$J,358.3,1985,1,4,0)
- ;;=4^R79.1
- ;;^UTILITY(U,$J,358.3,1985,2)
- ;;=^5019591
- ;;^UTILITY(U,$J,358.3,1986,0)
- ;;=R93.8^^3^57^6
- ;;^UTILITY(U,$J,358.3,1986,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1986,1,3,0)
- ;;=3^Abnormal findings on diagnostic imaging of body structures
- ;;^UTILITY(U,$J,358.3,1986,1,4,0)
- ;;=4^R93.8
- ;;^UTILITY(U,$J,358.3,1986,2)
- ;;=^5019721
- ;;^UTILITY(U,$J,358.3,1987,0)
- ;;=R94.31^^3^57^5
- ;;^UTILITY(U,$J,358.3,1987,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1987,1,3,0)
- ;;=3^Abnormal electrocardiogram [ECG] [EKG]
- ;;^UTILITY(U,$J,358.3,1987,1,4,0)
- ;;=4^R94.31
- ;;^UTILITY(U,$J,358.3,1987,2)
- ;;=^5019739
- ;;^UTILITY(U,$J,358.3,1988,0)
- ;;=R03.0^^3^57^36
- ;;^UTILITY(U,$J,358.3,1988,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1988,1,3,0)
- ;;=3^Elevated blood-pressure reading, w/o diagnosis of htn
- ;;^UTILITY(U,$J,358.3,1988,1,4,0)
- ;;=4^R03.0
- ;;^UTILITY(U,$J,358.3,1988,2)
- ;;=^5019171
- ;;^UTILITY(U,$J,358.3,1989,0)
- ;;=R41.81^^3^57^12
- ;;^UTILITY(U,$J,358.3,1989,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1989,1,3,0)
- ;;=3^Age-related cognitive decline
- ;;^UTILITY(U,$J,358.3,1989,1,4,0)
- ;;=4^R41.81
- ;;^UTILITY(U,$J,358.3,1989,2)
- ;;=^5019440
- ;;^UTILITY(U,$J,358.3,1990,0)
- ;;=R09.01^^3^57^18
- ;;^UTILITY(U,$J,358.3,1990,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1990,1,3,0)
- ;;=3^Asphyxia
- ;;^UTILITY(U,$J,358.3,1990,1,4,0)
- ;;=4^R09.01
- ;;^UTILITY(U,$J,358.3,1990,2)
- ;;=^11005
- ;;^UTILITY(U,$J,358.3,1991,0)
- ;;=R45.0^^3^57^83
- ;;^UTILITY(U,$J,358.3,1991,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1991,1,3,0)
- ;;=3^Nervousness
- ;;^UTILITY(U,$J,358.3,1991,1,4,0)
- ;;=4^R45.0
- ;;^UTILITY(U,$J,358.3,1991,2)
- ;;=^5019461
- ;;^UTILITY(U,$J,358.3,1992,0)
- ;;=R64.^^3^57^21
- ;;^UTILITY(U,$J,358.3,1992,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1992,1,3,0)
- ;;=3^Cachexia
- ;;^UTILITY(U,$J,358.3,1992,1,4,0)
- ;;=4^R64.
- ;;^UTILITY(U,$J,358.3,1992,2)
- ;;=^17920
- ;;^UTILITY(U,$J,358.3,1993,0)
- ;;=G47.30^^3^58^1
- ;;^UTILITY(U,$J,358.3,1993,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1993,1,3,0)
- ;;=3^Sleep apnea, unspecified
- ;;^UTILITY(U,$J,358.3,1993,1,4,0)
- ;;=4^G47.30
- ;;^UTILITY(U,$J,358.3,1993,2)
- ;;=^5003977
- ;;^UTILITY(U,$J,358.3,1994,0)
- ;;=G47.9^^3^58^2
+ ;;^UTILITY(U,$J,358.3,2122,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2122,1,2,0)
+ ;;=2^37234
+ ;;^UTILITY(U,$J,358.3,2122,1,3,0)
+ ;;=3^Tib/Per Revasc w/ Stent,Add-On
+ ;;^UTILITY(U,$J,358.3,2123,0)
+ ;;=37235^^12^167^48^^^^1
+ ;;^UTILITY(U,$J,358.3,2123,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2123,1,2,0)
+ ;;=2^37235
+ ;;^UTILITY(U,$J,358.3,2123,1,3,0)
+ ;;=3^Tib/Per Revasc w/ Stent & Ather,Add-On
+ ;;^UTILITY(U,$J,358.3,2124,0)
+ ;;=37215^^12^167^53^^^^1
+ ;;^UTILITY(U,$J,358.3,2124,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2124,1,2,0)
+ ;;=2^37215
+ ;;^UTILITY(U,$J,358.3,2124,1,3,0)
+ ;;=3^Transcath Stent CCA w/ EPS
+ ;;^UTILITY(U,$J,358.3,2125,0)
+ ;;=37216^^12^167^54^^^^1
+ ;;^UTILITY(U,$J,358.3,2125,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2125,1,2,0)
+ ;;=2^37216
+ ;;^UTILITY(U,$J,358.3,2125,1,3,0)
+ ;;=3^Transcath Stent CCA w/o EPS
+ ;;^UTILITY(U,$J,358.3,2126,0)
+ ;;=37188^^12^167^55^^^^1
+ ;;^UTILITY(U,$J,358.3,2126,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2126,1,2,0)
+ ;;=2^37188
+ ;;^UTILITY(U,$J,358.3,2126,1,3,0)
+ ;;=3^Venous Mech Thrombectomy,Add-On
+ ;;^UTILITY(U,$J,358.3,2127,0)
+ ;;=93561^^12^168^15^^^^1
+ ;;^UTILITY(U,$J,358.3,2127,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2127,1,2,0)
+ ;;=2^93561
+ ;;^UTILITY(U,$J,358.3,2127,1,3,0)
+ ;;=3^Thermal Dilution Study W/Cardiac Output
+ ;;^UTILITY(U,$J,358.3,2128,0)
+ ;;=93571^^12^168^10^^^^1
+ ;;^UTILITY(U,$J,358.3,2128,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2128,1,2,0)
+ ;;=2^93571
+ ;;^UTILITY(U,$J,358.3,2128,1,3,0)
+ ;;=3^Intravascular Dopplar Add-On, First Vessel
+ ;;^UTILITY(U,$J,358.3,2129,0)
+ ;;=93572^^12^168^11^^^^1
+ ;;^UTILITY(U,$J,358.3,2129,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2129,1,2,0)
+ ;;=2^93572
+ ;;^UTILITY(U,$J,358.3,2129,1,3,0)
+ ;;=3^Intravascular Dopplar, Each Addl Vessel
+ ;;^UTILITY(U,$J,358.3,2130,0)
+ ;;=93740^^12^168^14^^^^1
+ ;;^UTILITY(U,$J,358.3,2130,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2130,1,2,0)
+ ;;=2^93740
+ ;;^UTILITY(U,$J,358.3,2130,1,3,0)
+ ;;=3^Temperature Gradient Studies
+ ;;^UTILITY(U,$J,358.3,2131,0)
+ ;;=93784^^12^168^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2131,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2131,1,2,0)
+ ;;=2^93784
+ ;;^UTILITY(U,$J,358.3,2131,1,3,0)
+ ;;=3^Amb BP Monitor 24+ hrs,Int&Rpt
+ ;;^UTILITY(U,$J,358.3,2132,0)
+ ;;=93786^^12^168^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2132,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2132,1,2,0)
+ ;;=2^93786
+ ;;^UTILITY(U,$J,358.3,2132,1,3,0)
+ ;;=3^Amb BP Monitor 24+ hrs,Record Only
+ ;;^UTILITY(U,$J,358.3,2133,0)
+ ;;=93788^^12^168^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2133,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2133,1,2,0)
+ ;;=2^93788
+ ;;^UTILITY(U,$J,358.3,2133,1,3,0)
+ ;;=3^Amb BP Analysis & Rpt
+ ;;^UTILITY(U,$J,358.3,2134,0)
+ ;;=93790^^12^168^4^^^^1
+ ;;^UTILITY(U,$J,358.3,2134,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2134,1,2,0)
+ ;;=2^93790
+ ;;^UTILITY(U,$J,358.3,2134,1,3,0)
+ ;;=3^Amb BP Review w/ Int&Rpt
+ ;;^UTILITY(U,$J,358.3,2135,0)
+ ;;=34800^^12^169^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2135,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2135,1,2,0)
+ ;;=2^34800
+ ;;^UTILITY(U,$J,358.3,2135,1,3,0)
+ ;;=3^Endovasc Abd Repair,Infrarenal AAA w/Tube
+ ;;^UTILITY(U,$J,358.3,2136,0)
+ ;;=34802^^12^169^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2136,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2136,1,2,0)
+ ;;=2^34802
+ ;;^UTILITY(U,$J,358.3,2136,1,3,0)
+ ;;=3^Endovasc Abd Repr,Infrarenal AAA w/Bifurc,1 Dock Limb
+ ;;^UTILITY(U,$J,358.3,2137,0)
+ ;;=34803^^12^169^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2137,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2137,1,2,0)
+ ;;=2^34803
+ ;;^UTILITY(U,$J,358.3,2137,1,3,0)
+ ;;=3^Endovasc Abd Repr,Infrarenal AAA w/Bifurc,2 Dock Limbs

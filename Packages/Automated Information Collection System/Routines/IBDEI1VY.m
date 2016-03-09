@@ -1,134 +1,130 @@
-IBDEI1VY ; ; 06-AUG-2015
+IBDEI1VY ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33167,2)
- ;;=^5012187
- ;;^UTILITY(U,$J,358.3,33168,0)
- ;;=M48.57XD^^182^1998^23
- ;;^UTILITY(U,$J,358.3,33168,1,0)
+ ;;^UTILITY(U,$J,358.3,32025,0)
+ ;;=S92.152A^^126^1609^7
+ ;;^UTILITY(U,$J,358.3,32025,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33168,1,3,0)
- ;;=3^Collapsed Vertebra,Lumbosacral Region,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33168,1,4,0)
- ;;=4^M48.57XD
- ;;^UTILITY(U,$J,358.3,33168,2)
- ;;=^5012188
- ;;^UTILITY(U,$J,358.3,33169,0)
- ;;=M50.30^^182^1998^12
- ;;^UTILITY(U,$J,358.3,33169,1,0)
+ ;;^UTILITY(U,$J,358.3,32025,1,3,0)
+ ;;=3^Disp avulsion fx (chip) of lft talus, init
+ ;;^UTILITY(U,$J,358.3,32025,1,4,0)
+ ;;=4^S92.152A
+ ;;^UTILITY(U,$J,358.3,32025,2)
+ ;;=^5044780
+ ;;^UTILITY(U,$J,358.3,32026,0)
+ ;;=S92.135A^^126^1609^341
+ ;;^UTILITY(U,$J,358.3,32026,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33169,1,3,0)
- ;;=3^Cervical Disc Degeneration NEC
- ;;^UTILITY(U,$J,358.3,33169,1,4,0)
- ;;=4^M50.30
- ;;^UTILITY(U,$J,358.3,33169,2)
- ;;=^5012227
- ;;^UTILITY(U,$J,358.3,33170,0)
- ;;=M51.14^^182^1998^44
- ;;^UTILITY(U,$J,358.3,33170,1,0)
+ ;;^UTILITY(U,$J,358.3,32026,1,3,0)
+ ;;=3^Nondisp fx of posterior process of lft talus, init
+ ;;^UTILITY(U,$J,358.3,32026,1,4,0)
+ ;;=4^S92.135A
+ ;;^UTILITY(U,$J,358.3,32026,2)
+ ;;=^5044717
+ ;;^UTILITY(U,$J,358.3,32027,0)
+ ;;=S92.151A^^126^1609^8
+ ;;^UTILITY(U,$J,358.3,32027,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33170,1,3,0)
- ;;=3^Intvrt Disc Disorder w/ Radiculopathy,Thoracic Region
- ;;^UTILITY(U,$J,358.3,33170,1,4,0)
- ;;=4^M51.14
- ;;^UTILITY(U,$J,358.3,33170,2)
- ;;=^5012243
- ;;^UTILITY(U,$J,358.3,33171,0)
- ;;=M51.17^^182^1998^43
- ;;^UTILITY(U,$J,358.3,33171,1,0)
+ ;;^UTILITY(U,$J,358.3,32027,1,3,0)
+ ;;=3^Disp avulsion fx (chip) of rt talus, init
+ ;;^UTILITY(U,$J,358.3,32027,1,4,0)
+ ;;=4^S92.151A
+ ;;^UTILITY(U,$J,358.3,32027,2)
+ ;;=^5044773
+ ;;^UTILITY(U,$J,358.3,32028,0)
+ ;;=S92.145A^^126^1609^245
+ ;;^UTILITY(U,$J,358.3,32028,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33171,1,3,0)
- ;;=3^Intvrt Disc Disorder w/ Radiculopathy,Lumbosacral Region
- ;;^UTILITY(U,$J,358.3,33171,1,4,0)
- ;;=4^M51.17
- ;;^UTILITY(U,$J,358.3,33171,2)
- ;;=^5012246
- ;;^UTILITY(U,$J,358.3,33172,0)
- ;;=M51.34^^182^1998^42
- ;;^UTILITY(U,$J,358.3,33172,1,0)
+ ;;^UTILITY(U,$J,358.3,32028,1,3,0)
+ ;;=3^Nondisp dome fx of lft talus, init
+ ;;^UTILITY(U,$J,358.3,32028,1,4,0)
+ ;;=4^S92.145A
+ ;;^UTILITY(U,$J,358.3,32028,2)
+ ;;=^5044759
+ ;;^UTILITY(U,$J,358.3,32029,0)
+ ;;=S92.144A^^126^1609^247
+ ;;^UTILITY(U,$J,358.3,32029,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33172,1,3,0)
- ;;=3^Intvrt Disc Degeneration,Thoracic Region
- ;;^UTILITY(U,$J,358.3,33172,1,4,0)
- ;;=4^M51.34
- ;;^UTILITY(U,$J,358.3,33172,2)
- ;;=^5012251
- ;;^UTILITY(U,$J,358.3,33173,0)
- ;;=M51.37^^182^1998^41
- ;;^UTILITY(U,$J,358.3,33173,1,0)
+ ;;^UTILITY(U,$J,358.3,32029,1,3,0)
+ ;;=3^Nondisp dome fx of rt talus, init
+ ;;^UTILITY(U,$J,358.3,32029,1,4,0)
+ ;;=4^S92.144A
+ ;;^UTILITY(U,$J,358.3,32029,2)
+ ;;=^5044752
+ ;;^UTILITY(U,$J,358.3,32030,0)
+ ;;=S92.142A^^126^1609^21
+ ;;^UTILITY(U,$J,358.3,32030,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33173,1,3,0)
- ;;=3^Intvrt Disc Degeneration,Lumbosacral Region
- ;;^UTILITY(U,$J,358.3,33173,1,4,0)
- ;;=4^M51.37
- ;;^UTILITY(U,$J,358.3,33173,2)
- ;;=^5012254
- ;;^UTILITY(U,$J,358.3,33174,0)
- ;;=M54.14^^182^1998^113
- ;;^UTILITY(U,$J,358.3,33174,1,0)
+ ;;^UTILITY(U,$J,358.3,32030,1,3,0)
+ ;;=3^Disp dome fx of lft talus, init
+ ;;^UTILITY(U,$J,358.3,32030,1,4,0)
+ ;;=4^S92.142A
+ ;;^UTILITY(U,$J,358.3,32030,2)
+ ;;=^5044738
+ ;;^UTILITY(U,$J,358.3,32031,0)
+ ;;=S92.141A^^126^1609^22
+ ;;^UTILITY(U,$J,358.3,32031,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33174,1,3,0)
- ;;=3^Radiculopathy,Thoracic Region
- ;;^UTILITY(U,$J,358.3,33174,1,4,0)
- ;;=4^M54.14
- ;;^UTILITY(U,$J,358.3,33174,2)
- ;;=^5012299
- ;;^UTILITY(U,$J,358.3,33175,0)
- ;;=M54.17^^182^1998^112
- ;;^UTILITY(U,$J,358.3,33175,1,0)
+ ;;^UTILITY(U,$J,358.3,32031,1,3,0)
+ ;;=3^Disp dome fx of rt talus, init
+ ;;^UTILITY(U,$J,358.3,32031,1,4,0)
+ ;;=4^S92.141A
+ ;;^UTILITY(U,$J,358.3,32031,2)
+ ;;=^5044731
+ ;;^UTILITY(U,$J,358.3,32032,0)
+ ;;=S92.101A^^126^1609^219
+ ;;^UTILITY(U,$J,358.3,32032,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33175,1,3,0)
- ;;=3^Radiculopathy,Lumbosacral Region
- ;;^UTILITY(U,$J,358.3,33175,1,4,0)
- ;;=4^M54.17
- ;;^UTILITY(U,$J,358.3,33175,2)
- ;;=^5012302
- ;;^UTILITY(U,$J,358.3,33176,0)
- ;;=M54.2^^182^1998^13
- ;;^UTILITY(U,$J,358.3,33176,1,0)
+ ;;^UTILITY(U,$J,358.3,32032,1,3,0)
+ ;;=3^Fx of rt talus, unspec, init
+ ;;^UTILITY(U,$J,358.3,32032,1,4,0)
+ ;;=4^S92.101A
+ ;;^UTILITY(U,$J,358.3,32032,2)
+ ;;=^5044591
+ ;;^UTILITY(U,$J,358.3,32033,0)
+ ;;=S92.111A^^126^1609^115
+ ;;^UTILITY(U,$J,358.3,32033,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33176,1,3,0)
- ;;=3^Cervicalgia
- ;;^UTILITY(U,$J,358.3,33176,1,4,0)
- ;;=4^M54.2
- ;;^UTILITY(U,$J,358.3,33176,2)
- ;;=^5012304
- ;;^UTILITY(U,$J,358.3,33177,0)
- ;;=M54.31^^182^1998^136
- ;;^UTILITY(U,$J,358.3,33177,1,0)
+ ;;^UTILITY(U,$J,358.3,32033,1,3,0)
+ ;;=3^Disp fx of neck of rt talus, init
+ ;;^UTILITY(U,$J,358.3,32033,1,4,0)
+ ;;=4^S92.111A
+ ;;^UTILITY(U,$J,358.3,32033,2)
+ ;;=^5044605
+ ;;^UTILITY(U,$J,358.3,32034,0)
+ ;;=S92.102A^^126^1609^202
+ ;;^UTILITY(U,$J,358.3,32034,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33177,1,3,0)
- ;;=3^Sciatica,Right Side
- ;;^UTILITY(U,$J,358.3,33177,1,4,0)
- ;;=4^M54.31
- ;;^UTILITY(U,$J,358.3,33177,2)
- ;;=^5012306
- ;;^UTILITY(U,$J,358.3,33178,0)
- ;;=M54.32^^182^1998^135
- ;;^UTILITY(U,$J,358.3,33178,1,0)
+ ;;^UTILITY(U,$J,358.3,32034,1,3,0)
+ ;;=3^Fx of lft talus, unspec, init
+ ;;^UTILITY(U,$J,358.3,32034,1,4,0)
+ ;;=4^S92.102A
+ ;;^UTILITY(U,$J,358.3,32034,2)
+ ;;=^5044598
+ ;;^UTILITY(U,$J,358.3,32035,0)
+ ;;=S92.134A^^126^1609^342
+ ;;^UTILITY(U,$J,358.3,32035,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33178,1,3,0)
- ;;=3^Sciatica,Left Side
- ;;^UTILITY(U,$J,358.3,33178,1,4,0)
- ;;=4^M54.32
- ;;^UTILITY(U,$J,358.3,33178,2)
- ;;=^5012307
- ;;^UTILITY(U,$J,358.3,33179,0)
- ;;=M54.5^^182^1998^49
- ;;^UTILITY(U,$J,358.3,33179,1,0)
+ ;;^UTILITY(U,$J,358.3,32035,1,3,0)
+ ;;=3^Nondisp fx of posterior process of rt talus, init
+ ;;^UTILITY(U,$J,358.3,32035,1,4,0)
+ ;;=4^S92.134A
+ ;;^UTILITY(U,$J,358.3,32035,2)
+ ;;=^5044710
+ ;;^UTILITY(U,$J,358.3,32036,0)
+ ;;=S92.132A^^126^1609^116
+ ;;^UTILITY(U,$J,358.3,32036,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33179,1,3,0)
- ;;=3^Low Back Pain
- ;;^UTILITY(U,$J,358.3,33179,1,4,0)
- ;;=4^M54.5
- ;;^UTILITY(U,$J,358.3,33179,2)
- ;;=^5012311
- ;;^UTILITY(U,$J,358.3,33180,0)
- ;;=M60.9^^182^1998^53
- ;;^UTILITY(U,$J,358.3,33180,1,0)
+ ;;^UTILITY(U,$J,358.3,32036,1,3,0)
+ ;;=3^Disp fx of posterior process of lft talus, init
+ ;;^UTILITY(U,$J,358.3,32036,1,4,0)
+ ;;=4^S92.132A
+ ;;^UTILITY(U,$J,358.3,32036,2)
+ ;;=^5044696
+ ;;^UTILITY(U,$J,358.3,32037,0)
+ ;;=S92.131A^^126^1609^117
+ ;;^UTILITY(U,$J,358.3,32037,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33180,1,3,0)
- ;;=3^Myositis,Unspec
- ;;^UTILITY(U,$J,358.3,33180,1,4,0)
- ;;=4^M60.9
+ ;;^UTILITY(U,$J,358.3,32037,1,3,0)
+ ;;=3^Disp fx of posterior process of rt talus, init

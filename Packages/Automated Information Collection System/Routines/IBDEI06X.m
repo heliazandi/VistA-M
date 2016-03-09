@@ -1,142 +1,136 @@
-IBDEI06X ; ; 06-AUG-2015
+IBDEI06X ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2724,1,3,0)
- ;;=3^Gastritis w/o bleeding,Unspec
- ;;^UTILITY(U,$J,358.3,2724,1,4,0)
- ;;=4^K29.70
- ;;^UTILITY(U,$J,358.3,2724,2)
- ;;=^5008552
- ;;^UTILITY(U,$J,358.3,2725,0)
- ;;=K52.9^^7^83^87
- ;;^UTILITY(U,$J,358.3,2725,1,0)
+ ;;^UTILITY(U,$J,358.3,2922,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2725,1,3,0)
- ;;=3^Gastroenteritis and colitis, unspecified
- ;;^UTILITY(U,$J,358.3,2725,1,4,0)
- ;;=4^K52.9
- ;;^UTILITY(U,$J,358.3,2725,2)
- ;;=^5008704
- ;;^UTILITY(U,$J,358.3,2726,0)
- ;;=A60.00^^7^83^89
- ;;^UTILITY(U,$J,358.3,2726,1,0)
+ ;;^UTILITY(U,$J,358.3,2922,1,3,0)
+ ;;=3^Cardiomyopathy,Other Hypertrophic
+ ;;^UTILITY(U,$J,358.3,2922,1,4,0)
+ ;;=4^I42.2
+ ;;^UTILITY(U,$J,358.3,2922,2)
+ ;;=^340521
+ ;;^UTILITY(U,$J,358.3,2923,0)
+ ;;=Z13.6^^18^210^26
+ ;;^UTILITY(U,$J,358.3,2923,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2726,1,3,0)
- ;;=3^General Herpes, unsp
- ;;^UTILITY(U,$J,358.3,2726,1,4,0)
- ;;=4^A60.00
- ;;^UTILITY(U,$J,358.3,2726,2)
- ;;=^5000352
- ;;^UTILITY(U,$J,358.3,2727,0)
- ;;=A07.1^^7^83^90
- ;;^UTILITY(U,$J,358.3,2727,1,0)
+ ;;^UTILITY(U,$J,358.3,2923,1,3,0)
+ ;;=3^Cardiovascular Disorder Screening
+ ;;^UTILITY(U,$J,358.3,2923,1,4,0)
+ ;;=4^Z13.6
+ ;;^UTILITY(U,$J,358.3,2923,2)
+ ;;=^5062707
+ ;;^UTILITY(U,$J,358.3,2924,0)
+ ;;=G45.1^^18^210^27
+ ;;^UTILITY(U,$J,358.3,2924,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2727,1,3,0)
- ;;=3^Giardiasis
- ;;^UTILITY(U,$J,358.3,2727,1,4,0)
- ;;=4^A07.1
- ;;^UTILITY(U,$J,358.3,2727,2)
- ;;=^5000049
- ;;^UTILITY(U,$J,358.3,2728,0)
- ;;=B15.9^^7^83^95
- ;;^UTILITY(U,$J,358.3,2728,1,0)
+ ;;^UTILITY(U,$J,358.3,2924,1,3,0)
+ ;;=3^Carotid Artery Syndrome
+ ;;^UTILITY(U,$J,358.3,2924,1,4,0)
+ ;;=4^G45.1
+ ;;^UTILITY(U,$J,358.3,2924,2)
+ ;;=^5003956
+ ;;^UTILITY(U,$J,358.3,2925,0)
+ ;;=I65.29^^18^210^28
+ ;;^UTILITY(U,$J,358.3,2925,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2728,1,3,0)
- ;;=3^Hepatitis A w/o Hepatic Coma
- ;;^UTILITY(U,$J,358.3,2728,1,4,0)
- ;;=4^B15.9
- ;;^UTILITY(U,$J,358.3,2728,2)
- ;;=^5000536
- ;;^UTILITY(U,$J,358.3,2729,0)
- ;;=B19.10^^7^83^96
- ;;^UTILITY(U,$J,358.3,2729,1,0)
+ ;;^UTILITY(U,$J,358.3,2925,1,3,0)
+ ;;=3^Carotid Artery,Occlusion & Stenosis,Unspec
+ ;;^UTILITY(U,$J,358.3,2925,1,4,0)
+ ;;=4^I65.29
+ ;;^UTILITY(U,$J,358.3,2925,2)
+ ;;=^5007363
+ ;;^UTILITY(U,$J,358.3,2926,0)
+ ;;=R09.89^^18^210^29
+ ;;^UTILITY(U,$J,358.3,2926,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2729,1,3,0)
- ;;=3^Hepatitis B w/o Hepatic Coma
- ;;^UTILITY(U,$J,358.3,2729,1,4,0)
- ;;=4^B19.10
- ;;^UTILITY(U,$J,358.3,2729,2)
- ;;=^5000552
- ;;^UTILITY(U,$J,358.3,2730,0)
- ;;=B19.20^^7^83^99
- ;;^UTILITY(U,$J,358.3,2730,1,0)
+ ;;^UTILITY(U,$J,358.3,2926,1,3,0)
+ ;;=3^Carotid Bruit
+ ;;^UTILITY(U,$J,358.3,2926,1,4,0)
+ ;;=4^R09.89
+ ;;^UTILITY(U,$J,358.3,2926,2)
+ ;;=^5019204
+ ;;^UTILITY(U,$J,358.3,2927,0)
+ ;;=I63.239^^18^210^30
+ ;;^UTILITY(U,$J,358.3,2927,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2730,1,3,0)
- ;;=3^Hepatitis C w/o Hepatic Coma
- ;;^UTILITY(U,$J,358.3,2730,1,4,0)
- ;;=4^B19.20
- ;;^UTILITY(U,$J,358.3,2730,2)
- ;;=^331436
- ;;^UTILITY(U,$J,358.3,2731,0)
- ;;=B19.9^^7^83^103
- ;;^UTILITY(U,$J,358.3,2731,1,0)
+ ;;^UTILITY(U,$J,358.3,2927,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occlusion/Stenosis Carotid Arteries
+ ;;^UTILITY(U,$J,358.3,2927,1,4,0)
+ ;;=4^I63.239
+ ;;^UTILITY(U,$J,358.3,2927,2)
+ ;;=^5133567
+ ;;^UTILITY(U,$J,358.3,2928,0)
+ ;;=I63.20^^18^210^31
+ ;;^UTILITY(U,$J,358.3,2928,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2731,1,3,0)
- ;;=3^Hepatitis w/o Hepatic Coma,Unspec
- ;;^UTILITY(U,$J,358.3,2731,1,4,0)
- ;;=4^B19.9
- ;;^UTILITY(U,$J,358.3,2731,2)
- ;;=^5000554
- ;;^UTILITY(U,$J,358.3,2732,0)
- ;;=K75.89^^7^83^102
- ;;^UTILITY(U,$J,358.3,2732,1,0)
+ ;;^UTILITY(U,$J,358.3,2928,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occlusion/Stenosis Percerebral Arteries
+ ;;^UTILITY(U,$J,358.3,2928,1,4,0)
+ ;;=4^I63.20
+ ;;^UTILITY(U,$J,358.3,2928,2)
+ ;;=^5007312
+ ;;^UTILITY(U,$J,358.3,2929,0)
+ ;;=I51.9^^18^210^32
+ ;;^UTILITY(U,$J,358.3,2929,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2732,1,3,0)
- ;;=3^Hepatitis NEC
- ;;^UTILITY(U,$J,358.3,2732,1,4,0)
- ;;=4^K75.89
- ;;^UTILITY(U,$J,358.3,2732,2)
- ;;=^5008829
- ;;^UTILITY(U,$J,358.3,2733,0)
- ;;=B00.1^^7^83^105
- ;;^UTILITY(U,$J,358.3,2733,1,0)
+ ;;^UTILITY(U,$J,358.3,2929,1,3,0)
+ ;;=3^Heart Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,2929,1,4,0)
+ ;;=4^I51.9
+ ;;^UTILITY(U,$J,358.3,2929,2)
+ ;;=^5007258
+ ;;^UTILITY(U,$J,358.3,2930,0)
+ ;;=I50.9^^18^210^33
+ ;;^UTILITY(U,$J,358.3,2930,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2733,1,3,0)
- ;;=3^Herpes Simplex, Lip
- ;;^UTILITY(U,$J,358.3,2733,1,4,0)
- ;;=4^B00.1
- ;;^UTILITY(U,$J,358.3,2733,2)
- ;;=^5000468
- ;;^UTILITY(U,$J,358.3,2734,0)
- ;;=B00.2^^7^83^109
- ;;^UTILITY(U,$J,358.3,2734,1,0)
+ ;;^UTILITY(U,$J,358.3,2930,1,3,0)
+ ;;=3^Heart Failure,Unspec
+ ;;^UTILITY(U,$J,358.3,2930,1,4,0)
+ ;;=4^I50.9
+ ;;^UTILITY(U,$J,358.3,2930,2)
+ ;;=^5007251
+ ;;^UTILITY(U,$J,358.3,2931,0)
+ ;;=I62.1^^18^210^35
+ ;;^UTILITY(U,$J,358.3,2931,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2734,1,3,0)
- ;;=3^Herpesvirial gingivostomatitis and pharyngotonsillitis
- ;;^UTILITY(U,$J,358.3,2734,1,4,0)
- ;;=4^B00.2
- ;;^UTILITY(U,$J,358.3,2734,2)
- ;;=^5000469
- ;;^UTILITY(U,$J,358.3,2735,0)
- ;;=B02.9^^7^83^106
- ;;^UTILITY(U,$J,358.3,2735,1,0)
+ ;;^UTILITY(U,$J,358.3,2931,1,3,0)
+ ;;=3^Hemorrhage,Nontraumatic Extradural
+ ;;^UTILITY(U,$J,358.3,2931,1,4,0)
+ ;;=4^I62.1
+ ;;^UTILITY(U,$J,358.3,2931,2)
+ ;;=^269743
+ ;;^UTILITY(U,$J,358.3,2932,0)
+ ;;=I61.9^^18^210^36
+ ;;^UTILITY(U,$J,358.3,2932,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2735,1,3,0)
- ;;=3^Herpes Zoster NOS
- ;;^UTILITY(U,$J,358.3,2735,1,4,0)
- ;;=4^B02.9
- ;;^UTILITY(U,$J,358.3,2735,2)
- ;;=^5000501
- ;;^UTILITY(U,$J,358.3,2736,0)
- ;;=A60.01^^7^83^110
- ;;^UTILITY(U,$J,358.3,2736,1,0)
+ ;;^UTILITY(U,$J,358.3,2932,1,3,0)
+ ;;=3^Hemorrhage,Nontraumatic Intracerebral,Unspec
+ ;;^UTILITY(U,$J,358.3,2932,1,4,0)
+ ;;=4^I61.9
+ ;;^UTILITY(U,$J,358.3,2932,2)
+ ;;=^5007288
+ ;;^UTILITY(U,$J,358.3,2933,0)
+ ;;=I62.9^^18^210^37
+ ;;^UTILITY(U,$J,358.3,2933,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2736,1,3,0)
- ;;=3^Herpetic Infect of Penis
- ;;^UTILITY(U,$J,358.3,2736,1,4,0)
- ;;=4^A60.01
- ;;^UTILITY(U,$J,358.3,2736,2)
- ;;=^5000353
- ;;^UTILITY(U,$J,358.3,2737,0)
- ;;=A60.04^^7^83^111
- ;;^UTILITY(U,$J,358.3,2737,1,0)
+ ;;^UTILITY(U,$J,358.3,2933,1,3,0)
+ ;;=3^Hemorrhage,Nontraumatic Intracranial,Unspec
+ ;;^UTILITY(U,$J,358.3,2933,1,4,0)
+ ;;=4^I62.9
+ ;;^UTILITY(U,$J,358.3,2933,2)
+ ;;=^5007293
+ ;;^UTILITY(U,$J,358.3,2934,0)
+ ;;=I60.9^^18^210^38
+ ;;^UTILITY(U,$J,358.3,2934,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2737,1,3,0)
- ;;=3^Herpetic Vulvovaginitis
- ;;^UTILITY(U,$J,358.3,2737,1,4,0)
- ;;=4^A60.04
- ;;^UTILITY(U,$J,358.3,2737,2)
- ;;=^5000356
- ;;^UTILITY(U,$J,358.3,2738,0)
- ;;=B01.9^^7^83^108
+ ;;^UTILITY(U,$J,358.3,2934,1,3,0)
+ ;;=3^Hemorrhage,Nontraumatic Subarachnoid,Unspec
+ ;;^UTILITY(U,$J,358.3,2934,1,4,0)
+ ;;=4^I60.9
+ ;;^UTILITY(U,$J,358.3,2934,2)
+ ;;=^5007279
+ ;;^UTILITY(U,$J,358.3,2935,0)
+ ;;=I62.00^^18^210^39
+ ;;^UTILITY(U,$J,358.3,2935,1,0)
+ ;;=^358.31IA^4^2

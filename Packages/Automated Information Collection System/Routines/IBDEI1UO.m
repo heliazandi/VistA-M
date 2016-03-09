@@ -1,140 +1,112 @@
-IBDEI1UO ; ; 06-AUG-2015
+IBDEI1UO ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32574,1,3,0)
- ;;=3^Urinary Incontinence,Unspec
- ;;^UTILITY(U,$J,358.3,32574,1,4,0)
- ;;=4^R32.
- ;;^UTILITY(U,$J,358.3,32574,2)
- ;;=^5019329
- ;;^UTILITY(U,$J,358.3,32575,0)
- ;;=N39.41^^182^1988^97
- ;;^UTILITY(U,$J,358.3,32575,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32575,1,3,0)
- ;;=3^Urge Incontinence
- ;;^UTILITY(U,$J,358.3,32575,1,4,0)
- ;;=4^N39.41
- ;;^UTILITY(U,$J,358.3,32575,2)
- ;;=^5015680
- ;;^UTILITY(U,$J,358.3,32576,0)
- ;;=R35.0^^182^1988^62
- ;;^UTILITY(U,$J,358.3,32576,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32576,1,3,0)
- ;;=3^Micturition Frequency
- ;;^UTILITY(U,$J,358.3,32576,1,4,0)
- ;;=4^R35.0
- ;;^UTILITY(U,$J,358.3,32576,2)
- ;;=^5019334
- ;;^UTILITY(U,$J,358.3,32577,0)
- ;;=R35.1^^182^1988^72
- ;;^UTILITY(U,$J,358.3,32577,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32577,1,3,0)
- ;;=3^Nocturia
- ;;^UTILITY(U,$J,358.3,32577,1,4,0)
- ;;=4^R35.1
- ;;^UTILITY(U,$J,358.3,32577,2)
- ;;=^5019335
- ;;^UTILITY(U,$J,358.3,32578,0)
- ;;=R39.11^^182^1988^63
- ;;^UTILITY(U,$J,358.3,32578,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32578,1,3,0)
- ;;=3^Micturition Hesitancy
- ;;^UTILITY(U,$J,358.3,32578,1,4,0)
- ;;=4^R39.11
- ;;^UTILITY(U,$J,358.3,32578,2)
- ;;=^5019341
- ;;^UTILITY(U,$J,358.3,32579,0)
- ;;=R39.16^^182^1988^91
- ;;^UTILITY(U,$J,358.3,32579,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32579,1,3,0)
- ;;=3^Straining to Void
- ;;^UTILITY(U,$J,358.3,32579,1,4,0)
- ;;=4^R39.16
- ;;^UTILITY(U,$J,358.3,32579,2)
- ;;=^5019346
- ;;^UTILITY(U,$J,358.3,32580,0)
- ;;=R36.0^^182^1988^93
- ;;^UTILITY(U,$J,358.3,32580,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32580,1,3,0)
- ;;=3^Urethral Discharge w/o Blood
- ;;^UTILITY(U,$J,358.3,32580,1,4,0)
- ;;=4^R36.0
- ;;^UTILITY(U,$J,358.3,32580,2)
- ;;=^5019337
- ;;^UTILITY(U,$J,358.3,32581,0)
- ;;=R36.9^^182^1988^94
- ;;^UTILITY(U,$J,358.3,32581,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32581,1,3,0)
- ;;=3^Urethral Discharge,Unspec
- ;;^UTILITY(U,$J,358.3,32581,1,4,0)
- ;;=4^R36.9
- ;;^UTILITY(U,$J,358.3,32581,2)
- ;;=^5019338
- ;;^UTILITY(U,$J,358.3,32582,0)
- ;;=R97.2^^182^1988^25
- ;;^UTILITY(U,$J,358.3,32582,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32582,1,3,0)
- ;;=3^Elevated PSA
- ;;^UTILITY(U,$J,358.3,32582,1,4,0)
- ;;=4^R97.2
- ;;^UTILITY(U,$J,358.3,32582,2)
- ;;=^5019748
- ;;^UTILITY(U,$J,358.3,32583,0)
- ;;=R80.1^^182^1988^84
- ;;^UTILITY(U,$J,358.3,32583,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32583,1,3,0)
- ;;=3^Proteinuria Persistent,Unspec
- ;;^UTILITY(U,$J,358.3,32583,1,4,0)
- ;;=4^R80.1
- ;;^UTILITY(U,$J,358.3,32583,2)
- ;;=^5019596
- ;;^UTILITY(U,$J,358.3,32584,0)
- ;;=R80.0^^182^1988^82
- ;;^UTILITY(U,$J,358.3,32584,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32584,1,3,0)
- ;;=3^Proteinuria Isolated
- ;;^UTILITY(U,$J,358.3,32584,1,4,0)
- ;;=4^R80.0
- ;;^UTILITY(U,$J,358.3,32584,2)
- ;;=^5019595
- ;;^UTILITY(U,$J,358.3,32585,0)
- ;;=R80.8^^182^1988^85
- ;;^UTILITY(U,$J,358.3,32585,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32585,1,3,0)
- ;;=3^Proteinuria,Other
- ;;^UTILITY(U,$J,358.3,32585,1,4,0)
- ;;=4^R80.8
- ;;^UTILITY(U,$J,358.3,32585,2)
- ;;=^5019598
- ;;^UTILITY(U,$J,358.3,32586,0)
- ;;=R80.3^^182^1988^81
- ;;^UTILITY(U,$J,358.3,32586,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32586,1,3,0)
- ;;=3^Proteinuria Bence Jones
- ;;^UTILITY(U,$J,358.3,32586,1,4,0)
- ;;=4^R80.3
- ;;^UTILITY(U,$J,358.3,32586,2)
- ;;=^13272
- ;;^UTILITY(U,$J,358.3,32587,0)
- ;;=R80.9^^182^1988^86
- ;;^UTILITY(U,$J,358.3,32587,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32587,1,3,0)
- ;;=3^Proteinuria,Unspec
- ;;^UTILITY(U,$J,358.3,32587,1,4,0)
- ;;=4^R80.9
- ;;^UTILITY(U,$J,358.3,32587,2)
- ;;=^5019599
+ ;;^UTILITY(U,$J,358.3,31428,1,2,0)
+ ;;=2^Incision and Drainage below fascia, with/without tendon sheath involvement, foot; single bursal space 
+ ;;^UTILITY(U,$J,358.3,31428,1,3,0)
+ ;;=3^28002
+ ;;^UTILITY(U,$J,358.3,31429,0)
+ ;;=28003^^125^1592^3^^^^1
+ ;;^UTILITY(U,$J,358.3,31429,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31429,1,2,0)
+ ;;=2^Incision and Drainage below fascia, with/without tendon sheath involvement, foot; multiple areas 
+ ;;^UTILITY(U,$J,358.3,31429,1,3,0)
+ ;;=3^28003
+ ;;^UTILITY(U,$J,358.3,31430,0)
+ ;;=28008^^125^1592^4^^^^1
+ ;;^UTILITY(U,$J,358.3,31430,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31430,1,2,0)
+ ;;=2^Fasciotomy, foot and/or toe
+ ;;^UTILITY(U,$J,358.3,31430,1,3,0)
+ ;;=3^28008
+ ;;^UTILITY(U,$J,358.3,31431,0)
+ ;;=28010^^125^1592^5^^^^1
+ ;;^UTILITY(U,$J,358.3,31431,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31431,1,2,0)
+ ;;=2^Tenotomy, percutaneous, toe; single tendon
+ ;;^UTILITY(U,$J,358.3,31431,1,3,0)
+ ;;=3^28010
+ ;;^UTILITY(U,$J,358.3,31432,0)
+ ;;=28011^^125^1592^6^^^^1
+ ;;^UTILITY(U,$J,358.3,31432,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31432,1,2,0)
+ ;;=2^Tenotomy, percutaneous, toe; multiple tendons
+ ;;^UTILITY(U,$J,358.3,31432,1,3,0)
+ ;;=3^28011
+ ;;^UTILITY(U,$J,358.3,31433,0)
+ ;;=28020^^125^1592^7^^^^1
+ ;;^UTILITY(U,$J,358.3,31433,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31433,1,2,0)
+ ;;=2^Arthrotomy, including exploration, drainage, or removal of loose or foreign body; intertarsal or tarsometatarsal joint
+ ;;^UTILITY(U,$J,358.3,31433,1,3,0)
+ ;;=3^28020
+ ;;^UTILITY(U,$J,358.3,31434,0)
+ ;;=28022^^125^1592^8^^^^1
+ ;;^UTILITY(U,$J,358.3,31434,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31434,1,2,0)
+ ;;=2^Arthrotomy, including exploration, drainage, or removal of loose or foreign body; metatarsophalangeal joint 
+ ;;^UTILITY(U,$J,358.3,31434,1,3,0)
+ ;;=3^28022
+ ;;^UTILITY(U,$J,358.3,31435,0)
+ ;;=28024^^125^1592^9^^^^1
+ ;;^UTILITY(U,$J,358.3,31435,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31435,1,2,0)
+ ;;=2^Arthrotomy, including exploration, drainage, or removal of loose or foreign body; interphalangeal joint
+ ;;^UTILITY(U,$J,358.3,31435,1,3,0)
+ ;;=3^28024
+ ;;^UTILITY(U,$J,358.3,31436,0)
+ ;;=28035^^125^1592^11^^^^1
+ ;;^UTILITY(U,$J,358.3,31436,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31436,1,2,0)
+ ;;=2^Release, tarsal tunnel
+ ;;^UTILITY(U,$J,358.3,31436,1,3,0)
+ ;;=3^28035
+ ;;^UTILITY(U,$J,358.3,31437,0)
+ ;;=28055^^125^1592^10^^^^1
+ ;;^UTILITY(U,$J,358.3,31437,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31437,1,2,0)
+ ;;=2^Neurectomy, Foot
+ ;;^UTILITY(U,$J,358.3,31437,1,3,0)
+ ;;=3^28055
+ ;;^UTILITY(U,$J,358.3,31438,0)
+ ;;=28043^^125^1593^5^^^^1
+ ;;^UTILITY(U,$J,358.3,31438,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31438,1,2,0)
+ ;;=2^Excision Tumor-Foot,SQ Tissue >1.5cm
+ ;;^UTILITY(U,$J,358.3,31438,1,3,0)
+ ;;=3^28043
+ ;;^UTILITY(U,$J,358.3,31439,0)
+ ;;=28045^^125^1593^4^^^^1
+ ;;^UTILITY(U,$J,358.3,31439,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31439,1,2,0)
+ ;;=2^Excision Tumor-Foot,Deep Subfascial >1.5cm
+ ;;^UTILITY(U,$J,358.3,31439,1,3,0)
+ ;;=3^28045
+ ;;^UTILITY(U,$J,358.3,31440,0)
+ ;;=28050^^125^1593^2^^^^1
+ ;;^UTILITY(U,$J,358.3,31440,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31440,1,2,0)
+ ;;=2^Arthrotomy with biopsy; intertarsal or tarsometatarsal joint 
+ ;;^UTILITY(U,$J,358.3,31440,1,3,0)
+ ;;=3^28050
+ ;;^UTILITY(U,$J,358.3,31441,0)
+ ;;=28052^^125^1593^3^^^^1
+ ;;^UTILITY(U,$J,358.3,31441,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31441,1,2,0)
+ ;;=2^Arthrotomy with biopsy; metatarsophalangeal joint 
+ ;;^UTILITY(U,$J,358.3,31441,1,3,0)
+ ;;=3^28052

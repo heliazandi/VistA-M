@@ -1,138 +1,128 @@
-IBDEI055 ; ; 06-AUG-2015
+IBDEI055 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1882,2)
- ;;=^5002872
- ;;^UTILITY(U,$J,358.3,1883,0)
- ;;=E71.313^^3^57^48
- ;;^UTILITY(U,$J,358.3,1883,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1883,1,3,0)
- ;;=3^Glutaric aciduria type II
- ;;^UTILITY(U,$J,358.3,1883,1,4,0)
- ;;=4^E71.313
- ;;^UTILITY(U,$J,358.3,1883,2)
- ;;=^5002873
- ;;^UTILITY(U,$J,358.3,1884,0)
- ;;=E71.314^^3^57^82
- ;;^UTILITY(U,$J,358.3,1884,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1884,1,3,0)
- ;;=3^Muscle carnitine palmitoyltransferase deficiency
- ;;^UTILITY(U,$J,358.3,1884,1,4,0)
- ;;=4^E71.314
- ;;^UTILITY(U,$J,358.3,1884,2)
- ;;=^5002874
- ;;^UTILITY(U,$J,358.3,1885,0)
- ;;=E71.318^^3^57^39
- ;;^UTILITY(U,$J,358.3,1885,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1885,1,3,0)
- ;;=3^Fatty-Acid Oxidation Disorders NEC
- ;;^UTILITY(U,$J,358.3,1885,1,4,0)
- ;;=4^E71.318
- ;;^UTILITY(U,$J,358.3,1885,2)
- ;;=^5002875
- ;;^UTILITY(U,$J,358.3,1886,0)
- ;;=E71.50^^3^57^89
- ;;^UTILITY(U,$J,358.3,1886,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1886,1,3,0)
- ;;=3^Peroxisomal disorder, unspecified
- ;;^UTILITY(U,$J,358.3,1886,1,4,0)
- ;;=4^E71.50
- ;;^UTILITY(U,$J,358.3,1886,2)
- ;;=^5002880
- ;;^UTILITY(U,$J,358.3,1887,0)
- ;;=E71.510^^3^57^114
- ;;^UTILITY(U,$J,358.3,1887,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1887,1,3,0)
- ;;=3^Zellweger syndrome
- ;;^UTILITY(U,$J,358.3,1887,1,4,0)
- ;;=4^E71.510
- ;;^UTILITY(U,$J,358.3,1887,2)
- ;;=^128776
- ;;^UTILITY(U,$J,358.3,1888,0)
- ;;=E71.522^^3^57^11
- ;;^UTILITY(U,$J,358.3,1888,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1888,1,3,0)
- ;;=3^Adrenomyeloneuropathy
- ;;^UTILITY(U,$J,358.3,1888,1,4,0)
- ;;=4^E71.522
- ;;^UTILITY(U,$J,358.3,1888,2)
- ;;=^276921
- ;;^UTILITY(U,$J,358.3,1889,0)
- ;;=E71.529^^3^57^113
- ;;^UTILITY(U,$J,358.3,1889,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1889,1,3,0)
- ;;=3^X-linked adrenoleukodystrophy, unspecified type
- ;;^UTILITY(U,$J,358.3,1889,1,4,0)
- ;;=4^E71.529
- ;;^UTILITY(U,$J,358.3,1889,2)
- ;;=^5002886
- ;;^UTILITY(U,$J,358.3,1890,0)
- ;;=E71.548^^3^57^90
- ;;^UTILITY(U,$J,358.3,1890,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1890,1,3,0)
- ;;=3^Peroxisomal disorders NEC
- ;;^UTILITY(U,$J,358.3,1890,1,4,0)
- ;;=4^E71.548
- ;;^UTILITY(U,$J,358.3,1890,2)
- ;;=^5002891
- ;;^UTILITY(U,$J,358.3,1891,0)
- ;;=E88.40^^3^57^78
- ;;^UTILITY(U,$J,358.3,1891,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1891,1,3,0)
- ;;=3^Mitochondrial metabolism disorder, unspecified
- ;;^UTILITY(U,$J,358.3,1891,1,4,0)
- ;;=4^E88.40
- ;;^UTILITY(U,$J,358.3,1891,2)
- ;;=^5003030
- ;;^UTILITY(U,$J,358.3,1892,0)
- ;;=E88.41^^3^57^72
- ;;^UTILITY(U,$J,358.3,1892,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1892,1,3,0)
- ;;=3^MELAS syndrome
- ;;^UTILITY(U,$J,358.3,1892,1,4,0)
- ;;=4^E88.41
- ;;^UTILITY(U,$J,358.3,1892,2)
- ;;=^278244
- ;;^UTILITY(U,$J,358.3,1893,0)
- ;;=E88.42^^3^57^73
- ;;^UTILITY(U,$J,358.3,1893,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1893,1,3,0)
- ;;=3^MERRF syndrome
- ;;^UTILITY(U,$J,358.3,1893,1,4,0)
- ;;=4^E88.42
- ;;^UTILITY(U,$J,358.3,1893,2)
- ;;=^278246
- ;;^UTILITY(U,$J,358.3,1894,0)
- ;;=E88.49^^3^57^79
- ;;^UTILITY(U,$J,358.3,1894,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1894,1,3,0)
- ;;=3^Mitochondrial metabolism disorders NEC
- ;;^UTILITY(U,$J,358.3,1894,1,4,0)
- ;;=4^E88.49
- ;;^UTILITY(U,$J,358.3,1894,2)
- ;;=^5003031
- ;;^UTILITY(U,$J,358.3,1895,0)
- ;;=H49.819^^3^57^63
- ;;^UTILITY(U,$J,358.3,1895,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1895,1,3,0)
- ;;=3^Kearns-Sayre syndrome, unspecified eye
- ;;^UTILITY(U,$J,358.3,1895,1,4,0)
- ;;=4^H49.819
- ;;^UTILITY(U,$J,358.3,1895,2)
- ;;=^5006202
- ;;^UTILITY(U,$J,358.3,1896,0)
- ;;=E66.9^^3^57^85
+ ;;^UTILITY(U,$J,358.3,2012,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2012,1,2,0)
+ ;;=2^37231
+ ;;^UTILITY(U,$J,358.3,2012,1,3,0)
+ ;;=3^TIB/Per Revasc Stent & Ather
+ ;;^UTILITY(U,$J,358.3,2013,0)
+ ;;=37232^^12^163^51^^^^1
+ ;;^UTILITY(U,$J,358.3,2013,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2013,1,2,0)
+ ;;=2^37232
+ ;;^UTILITY(U,$J,358.3,2013,1,3,0)
+ ;;=3^TIB/Per Revasc,ea addl Vessel
+ ;;^UTILITY(U,$J,358.3,2014,0)
+ ;;=37233^^12^163^46^^^^1
+ ;;^UTILITY(U,$J,358.3,2014,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2014,1,2,0)
+ ;;=2^37233
+ ;;^UTILITY(U,$J,358.3,2014,1,3,0)
+ ;;=3^TIB/Per Revasc w/ Ather,ea addl Vessel
+ ;;^UTILITY(U,$J,358.3,2015,0)
+ ;;=37234^^12^163^48^^^^1
+ ;;^UTILITY(U,$J,358.3,2015,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2015,1,2,0)
+ ;;=2^37234
+ ;;^UTILITY(U,$J,358.3,2015,1,3,0)
+ ;;=3^TIB/Per Revasc w/ Stent,ea addl Vessel
+ ;;^UTILITY(U,$J,358.3,2016,0)
+ ;;=37235^^12^163^49^^^^1
+ ;;^UTILITY(U,$J,358.3,2016,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2016,1,2,0)
+ ;;=2^37235
+ ;;^UTILITY(U,$J,358.3,2016,1,3,0)
+ ;;=3^TIB/Per Revasc w/ Stnt&Ather,addl Vessel
+ ;;^UTILITY(U,$J,358.3,2017,0)
+ ;;=36251^^12^163^37^^^^1
+ ;;^UTILITY(U,$J,358.3,2017,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2017,1,2,0)
+ ;;=2^36251
+ ;;^UTILITY(U,$J,358.3,2017,1,3,0)
+ ;;=3^Select Cath 1st Main Ren&Access Art
+ ;;^UTILITY(U,$J,358.3,2018,0)
+ ;;=36252^^12^163^36^^^^1
+ ;;^UTILITY(U,$J,358.3,2018,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2018,1,2,0)
+ ;;=2^36252
+ ;;^UTILITY(U,$J,358.3,2018,1,3,0)
+ ;;=3^Select Cath 1st Main Ren&Acc Art,Bilat
+ ;;^UTILITY(U,$J,358.3,2019,0)
+ ;;=36254^^12^163^43^^^^1
+ ;;^UTILITY(U,$J,358.3,2019,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2019,1,2,0)
+ ;;=2^36254
+ ;;^UTILITY(U,$J,358.3,2019,1,3,0)
+ ;;=3^Superselect Cath Ren Art&Access Art
+ ;;^UTILITY(U,$J,358.3,2020,0)
+ ;;=37191^^12^163^22^^^^1
+ ;;^UTILITY(U,$J,358.3,2020,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2020,1,2,0)
+ ;;=2^37191
+ ;;^UTILITY(U,$J,358.3,2020,1,3,0)
+ ;;=3^Insert Intravas Vena Cava Filter,Endovas
+ ;;^UTILITY(U,$J,358.3,2021,0)
+ ;;=37619^^12^163^26^^^^1
+ ;;^UTILITY(U,$J,358.3,2021,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2021,1,2,0)
+ ;;=2^37619
+ ;;^UTILITY(U,$J,358.3,2021,1,3,0)
+ ;;=3^Open Inferior Vena Cava Filter Placement
+ ;;^UTILITY(U,$J,358.3,2022,0)
+ ;;=75635^^12^163^11^^^^1
+ ;;^UTILITY(U,$J,358.3,2022,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2022,1,2,0)
+ ;;=2^75635
+ ;;^UTILITY(U,$J,358.3,2022,1,3,0)
+ ;;=3^CT Angio Abd Art w/ Contrast
+ ;;^UTILITY(U,$J,358.3,2023,0)
+ ;;=75658^^12^163^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2023,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2023,1,2,0)
+ ;;=2^75658
+ ;;^UTILITY(U,$J,358.3,2023,1,3,0)
+ ;;=3^Angiography,Brachial,Retrograd,Rad S&I
+ ;;^UTILITY(U,$J,358.3,2024,0)
+ ;;=76506^^12^163^13^^^^1
+ ;;^UTILITY(U,$J,358.3,2024,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2024,1,2,0)
+ ;;=2^76506
+ ;;^UTILITY(U,$J,358.3,2024,1,3,0)
+ ;;=3^Echoencephalography,Real Time w/ Image Doc
+ ;;^UTILITY(U,$J,358.3,2025,0)
+ ;;=76000^^12^163^12^^^^1
+ ;;^UTILITY(U,$J,358.3,2025,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2025,1,2,0)
+ ;;=2^76000
+ ;;^UTILITY(U,$J,358.3,2025,1,3,0)
+ ;;=3^Cardiac Fluoro<1hr
+ ;;^UTILITY(U,$J,358.3,2026,0)
+ ;;=35472^^12^163^30^^^^1
+ ;;^UTILITY(U,$J,358.3,2026,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2026,1,2,0)
+ ;;=2^35472
+ ;;^UTILITY(U,$J,358.3,2026,1,3,0)
+ ;;=3^Perc Angioplasty,Aortic
+ ;;^UTILITY(U,$J,358.3,2027,0)
+ ;;=35476^^12^163^31^^^^1
+ ;;^UTILITY(U,$J,358.3,2027,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2027,1,2,0)
+ ;;=2^35476

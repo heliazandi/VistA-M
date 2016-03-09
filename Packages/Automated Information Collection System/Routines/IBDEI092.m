@@ -1,142 +1,132 @@
-IBDEI092 ; ; 06-AUG-2015
+IBDEI092 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3781,1,4,0)
- ;;=4^Atrophic Flaccid Tympan
- ;;^UTILITY(U,$J,358.3,3781,2)
- ;;=^269436
- ;;^UTILITY(U,$J,358.3,3782,0)
- ;;=384.82^^12^168^22
- ;;^UTILITY(U,$J,358.3,3782,1,0)
+ ;;^UTILITY(U,$J,358.3,3955,2)
+ ;;=^5063169
+ ;;^UTILITY(U,$J,358.3,3956,0)
+ ;;=Z55.9^^18^224^132
+ ;;^UTILITY(U,$J,358.3,3956,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3782,1,3,0)
- ;;=3^384.82
- ;;^UTILITY(U,$J,358.3,3782,1,4,0)
- ;;=4^Atrophic Nonflaccid Tymp
- ;;^UTILITY(U,$J,358.3,3782,2)
- ;;=^269437
- ;;^UTILITY(U,$J,358.3,3783,0)
- ;;=384.21^^12^168^26
- ;;^UTILITY(U,$J,358.3,3783,1,0)
+ ;;^UTILITY(U,$J,358.3,3956,1,3,0)
+ ;;=3^Problems Related to Education/Literacy,Unspec
+ ;;^UTILITY(U,$J,358.3,3956,1,4,0)
+ ;;=4^Z55.9
+ ;;^UTILITY(U,$J,358.3,3956,2)
+ ;;=^5063106
+ ;;^UTILITY(U,$J,358.3,3957,0)
+ ;;=Z56.9^^18^224^133
+ ;;^UTILITY(U,$J,358.3,3957,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3783,1,3,0)
- ;;=3^384.21
- ;;^UTILITY(U,$J,358.3,3783,1,4,0)
- ;;=4^Cent Perf Tympanic Memb
- ;;^UTILITY(U,$J,358.3,3783,2)
- ;;=^269430
- ;;^UTILITY(U,$J,358.3,3784,0)
- ;;=384.22^^12^168^23
- ;;^UTILITY(U,$J,358.3,3784,1,0)
+ ;;^UTILITY(U,$J,358.3,3957,1,3,0)
+ ;;=3^Problems Related to Employment,Unspec
+ ;;^UTILITY(U,$J,358.3,3957,1,4,0)
+ ;;=4^Z56.9
+ ;;^UTILITY(U,$J,358.3,3957,2)
+ ;;=^5063117
+ ;;^UTILITY(U,$J,358.3,3958,0)
+ ;;=Z65.5^^18^224^130
+ ;;^UTILITY(U,$J,358.3,3958,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3784,1,3,0)
- ;;=3^384.22
- ;;^UTILITY(U,$J,358.3,3784,1,4,0)
- ;;=4^Attic Perf Tympanic Memb
- ;;^UTILITY(U,$J,358.3,3784,2)
- ;;=^269431
- ;;^UTILITY(U,$J,358.3,3785,0)
- ;;=384.23^^12^168^61
- ;;^UTILITY(U,$J,358.3,3785,1,0)
+ ;;^UTILITY(U,$J,358.3,3958,1,3,0)
+ ;;=3^Problems Related to Disaster/War/Other Hostilities
+ ;;^UTILITY(U,$J,358.3,3958,1,4,0)
+ ;;=4^Z65.5
+ ;;^UTILITY(U,$J,358.3,3958,2)
+ ;;=^5063184
+ ;;^UTILITY(U,$J,358.3,3959,0)
+ ;;=Z59.5^^18^224^134
+ ;;^UTILITY(U,$J,358.3,3959,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3785,1,3,0)
- ;;=3^384.23
- ;;^UTILITY(U,$J,358.3,3785,1,4,0)
- ;;=4^Marginal Perf Tymp Nec
- ;;^UTILITY(U,$J,358.3,3785,2)
- ;;=^269432
- ;;^UTILITY(U,$J,358.3,3786,0)
- ;;=384.24^^12^168^63
- ;;^UTILITY(U,$J,358.3,3786,1,0)
+ ;;^UTILITY(U,$J,358.3,3959,1,3,0)
+ ;;=3^Problems Related to Extreme Poverty
+ ;;^UTILITY(U,$J,358.3,3959,1,4,0)
+ ;;=4^Z59.5
+ ;;^UTILITY(U,$J,358.3,3959,2)
+ ;;=^5063134
+ ;;^UTILITY(U,$J,358.3,3960,0)
+ ;;=Z59.0^^18^224^136
+ ;;^UTILITY(U,$J,358.3,3960,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3786,1,3,0)
- ;;=3^384.24
- ;;^UTILITY(U,$J,358.3,3786,1,4,0)
- ;;=4^Mult Perf Tympanic Memb
- ;;^UTILITY(U,$J,358.3,3786,2)
- ;;=^269433
- ;;^UTILITY(U,$J,358.3,3787,0)
- ;;=384.25^^12^168^90
- ;;^UTILITY(U,$J,358.3,3787,1,0)
+ ;;^UTILITY(U,$J,358.3,3960,1,3,0)
+ ;;=3^Problems Related to Homelessness
+ ;;^UTILITY(U,$J,358.3,3960,1,4,0)
+ ;;=4^Z59.0
+ ;;^UTILITY(U,$J,358.3,3960,2)
+ ;;=^5063129
+ ;;^UTILITY(U,$J,358.3,3961,0)
+ ;;=Z59.9^^18^224^137
+ ;;^UTILITY(U,$J,358.3,3961,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3787,1,3,0)
- ;;=3^384.25
- ;;^UTILITY(U,$J,358.3,3787,1,4,0)
- ;;=4^Total Perf Tympanic Memb
- ;;^UTILITY(U,$J,358.3,3787,2)
- ;;=^269434
- ;;^UTILITY(U,$J,358.3,3788,0)
- ;;=385.00^^12^168^93
- ;;^UTILITY(U,$J,358.3,3788,1,0)
+ ;;^UTILITY(U,$J,358.3,3961,1,3,0)
+ ;;=3^Problems Related to Housing/Economic Circumstances
+ ;;^UTILITY(U,$J,358.3,3961,1,4,0)
+ ;;=4^Z59.9
+ ;;^UTILITY(U,$J,358.3,3961,2)
+ ;;=^5063138
+ ;;^UTILITY(U,$J,358.3,3962,0)
+ ;;=Z59.1^^18^224^138
+ ;;^UTILITY(U,$J,358.3,3962,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3788,1,3,0)
- ;;=3^385.00
- ;;^UTILITY(U,$J,358.3,3788,1,4,0)
- ;;=4^Tympanosclerosis NOS
- ;;^UTILITY(U,$J,358.3,3788,2)
- ;;=^269439
- ;;^UTILITY(U,$J,358.3,3789,0)
- ;;=385.01^^12^168^91
- ;;^UTILITY(U,$J,358.3,3789,1,0)
+ ;;^UTILITY(U,$J,358.3,3962,1,3,0)
+ ;;=3^Problems Related to Inadequate Housing
+ ;;^UTILITY(U,$J,358.3,3962,1,4,0)
+ ;;=4^Z59.1
+ ;;^UTILITY(U,$J,358.3,3962,2)
+ ;;=^5063130
+ ;;^UTILITY(U,$J,358.3,3963,0)
+ ;;=Z59.7^^18^224^139
+ ;;^UTILITY(U,$J,358.3,3963,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3789,1,3,0)
- ;;=3^385.01
- ;;^UTILITY(U,$J,358.3,3789,1,4,0)
- ;;=4^Tympanoscl-Tympanic Memb
- ;;^UTILITY(U,$J,358.3,3789,2)
- ;;=^269440
- ;;^UTILITY(U,$J,358.3,3790,0)
- ;;=385.02^^12^168^94
- ;;^UTILITY(U,$J,358.3,3790,1,0)
+ ;;^UTILITY(U,$J,358.3,3963,1,3,0)
+ ;;=3^Problems Related to Insufficient Social Insurance/Welfare Support
+ ;;^UTILITY(U,$J,358.3,3963,1,4,0)
+ ;;=4^Z59.7
+ ;;^UTILITY(U,$J,358.3,3963,2)
+ ;;=^5063136
+ ;;^UTILITY(U,$J,358.3,3964,0)
+ ;;=Z59.4^^18^224^140
+ ;;^UTILITY(U,$J,358.3,3964,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3790,1,3,0)
- ;;=3^385.02
- ;;^UTILITY(U,$J,358.3,3790,1,4,0)
- ;;=4^Tympnoscler-Tymp/Ossicle
- ;;^UTILITY(U,$J,358.3,3790,2)
- ;;=^269441
- ;;^UTILITY(U,$J,358.3,3791,0)
- ;;=385.03^^12^168^92
- ;;^UTILITY(U,$J,358.3,3791,1,0)
+ ;;^UTILITY(U,$J,358.3,3964,1,3,0)
+ ;;=3^Problems Related to Lack of Food/Drinking Water
+ ;;^UTILITY(U,$J,358.3,3964,1,4,0)
+ ;;=4^Z59.4
+ ;;^UTILITY(U,$J,358.3,3964,2)
+ ;;=^5063133
+ ;;^UTILITY(U,$J,358.3,3965,0)
+ ;;=Z73.9^^18^224^141
+ ;;^UTILITY(U,$J,358.3,3965,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3791,1,3,0)
- ;;=3^385.03
- ;;^UTILITY(U,$J,358.3,3791,1,4,0)
- ;;=4^Tympanoscler-All Parts
- ;;^UTILITY(U,$J,358.3,3791,2)
- ;;=^269442
- ;;^UTILITY(U,$J,358.3,3792,0)
- ;;=385.09^^12^168^95
- ;;^UTILITY(U,$J,358.3,3792,1,0)
+ ;;^UTILITY(U,$J,358.3,3965,1,3,0)
+ ;;=3^Problems Related to Life Management Difficulty
+ ;;^UTILITY(U,$J,358.3,3965,1,4,0)
+ ;;=4^Z73.9
+ ;;^UTILITY(U,$J,358.3,3965,2)
+ ;;=^5063281
+ ;;^UTILITY(U,$J,358.3,3966,0)
+ ;;=Z72.9^^18^224^142
+ ;;^UTILITY(U,$J,358.3,3966,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3792,1,3,0)
- ;;=3^385.09
- ;;^UTILITY(U,$J,358.3,3792,1,4,0)
- ;;=4^Tympnsclr-Oth Site Comb
- ;;^UTILITY(U,$J,358.3,3792,2)
- ;;=^269443
- ;;^UTILITY(U,$J,358.3,3793,0)
- ;;=388.9^^12^168^47
- ;;^UTILITY(U,$J,358.3,3793,1,0)
+ ;;^UTILITY(U,$J,358.3,3966,1,3,0)
+ ;;=3^Problems Related to Lifestyle
+ ;;^UTILITY(U,$J,358.3,3966,1,4,0)
+ ;;=4^Z72.9
+ ;;^UTILITY(U,$J,358.3,3966,2)
+ ;;=^5063267
+ ;;^UTILITY(U,$J,358.3,3967,0)
+ ;;=Z73.6^^18^224^124
+ ;;^UTILITY(U,$J,358.3,3967,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3793,1,3,0)
- ;;=3^388.9
- ;;^UTILITY(U,$J,358.3,3793,1,4,0)
- ;;=4^Disorder Of Ear Nos
- ;;^UTILITY(U,$J,358.3,3793,2)
- ;;=^123831
- ;;^UTILITY(U,$J,358.3,3794,0)
- ;;=386.19^^12^168^98
- ;;^UTILITY(U,$J,358.3,3794,1,0)
+ ;;^UTILITY(U,$J,358.3,3967,1,3,0)
+ ;;=3^Problems Related to Activity Limitations d/t Disability
+ ;;^UTILITY(U,$J,358.3,3967,1,4,0)
+ ;;=4^Z73.6
+ ;;^UTILITY(U,$J,358.3,3967,2)
+ ;;=^5063274
+ ;;^UTILITY(U,$J,358.3,3968,0)
+ ;;=Z60.2^^18^224^143
+ ;;^UTILITY(U,$J,358.3,3968,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3794,1,3,0)
- ;;=3^386.19
- ;;^UTILITY(U,$J,358.3,3794,1,4,0)
- ;;=4^Vertigo, Otogenic
- ;;^UTILITY(U,$J,358.3,3794,2)
- ;;=^87791
- ;;^UTILITY(U,$J,358.3,3795,0)
- ;;=386.2^^12^168^97
- ;;^UTILITY(U,$J,358.3,3795,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3968,1,3,0)
+ ;;=3^Problems Related to Living Alone

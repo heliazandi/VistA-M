@@ -1,124 +1,132 @@
-IBDEI1RC ; ; 06-AUG-2015
+IBDEI1RC ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31057,1,4,0)
- ;;=4^M84.461A
- ;;^UTILITY(U,$J,358.3,31057,2)
- ;;=^5013932
- ;;^UTILITY(U,$J,358.3,31058,0)
- ;;=T79.A22A^^179^1939^24
- ;;^UTILITY(U,$J,358.3,31058,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31058,1,3,0)
- ;;=3^Traumatic compartment syndrome of left lower extremity, init
- ;;^UTILITY(U,$J,358.3,31058,1,4,0)
- ;;=4^T79.A22A
- ;;^UTILITY(U,$J,358.3,31058,2)
- ;;=^5137969
- ;;^UTILITY(U,$J,358.3,31059,0)
- ;;=T79.A21A^^179^1939^25
- ;;^UTILITY(U,$J,358.3,31059,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31059,1,3,0)
- ;;=3^Traumatic compartment syndrome of r low extrem, init
- ;;^UTILITY(U,$J,358.3,31059,1,4,0)
- ;;=4^T79.A21A
- ;;^UTILITY(U,$J,358.3,31059,2)
- ;;=^5054335
- ;;^UTILITY(U,$J,358.3,31060,0)
- ;;=S82.102A^^179^1939^7
- ;;^UTILITY(U,$J,358.3,31060,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31060,1,3,0)
- ;;=3^Fracture of upper end of left tibia, init for clos fx,Unspec
- ;;^UTILITY(U,$J,358.3,31060,1,4,0)
- ;;=4^S82.102A
- ;;^UTILITY(U,$J,358.3,31060,2)
- ;;=^5040562
- ;;^UTILITY(U,$J,358.3,31061,0)
- ;;=S82.101A^^179^1939^8
- ;;^UTILITY(U,$J,358.3,31061,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31061,1,3,0)
- ;;=3^Fracture of upper end of right tibia, init for clos fx,Unspec
- ;;^UTILITY(U,$J,358.3,31061,1,4,0)
- ;;=4^S82.101A
- ;;^UTILITY(U,$J,358.3,31061,2)
- ;;=^5040546
- ;;^UTILITY(U,$J,358.3,31062,0)
- ;;=M00.832^^179^1940^1
- ;;^UTILITY(U,$J,358.3,31062,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31062,1,3,0)
- ;;=3^Arthritis due to other bacteria, left wrist
- ;;^UTILITY(U,$J,358.3,31062,1,4,0)
- ;;=4^M00.832
- ;;^UTILITY(U,$J,358.3,31062,2)
- ;;=^5009677
- ;;^UTILITY(U,$J,358.3,31063,0)
- ;;=M00.831^^179^1940^2
- ;;^UTILITY(U,$J,358.3,31063,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31063,1,3,0)
- ;;=3^Arthritis due to other bacteria, right wrist
- ;;^UTILITY(U,$J,358.3,31063,1,4,0)
- ;;=4^M00.831
- ;;^UTILITY(U,$J,358.3,31063,2)
- ;;=^5009676
- ;;^UTILITY(U,$J,358.3,31064,0)
- ;;=G56.02^^179^1940^3
- ;;^UTILITY(U,$J,358.3,31064,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31064,1,3,0)
- ;;=3^Carpal tunnel syndrome, left upper limb
- ;;^UTILITY(U,$J,358.3,31064,1,4,0)
- ;;=4^G56.02
- ;;^UTILITY(U,$J,358.3,31064,2)
- ;;=^5004019
- ;;^UTILITY(U,$J,358.3,31065,0)
- ;;=G56.01^^179^1940^4
- ;;^UTILITY(U,$J,358.3,31065,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31065,1,3,0)
- ;;=3^Carpal tunnel syndrome, right upper limb
- ;;^UTILITY(U,$J,358.3,31065,1,4,0)
- ;;=4^G56.01
- ;;^UTILITY(U,$J,358.3,31065,2)
- ;;=^5004018
- ;;^UTILITY(U,$J,358.3,31066,0)
- ;;=S52.532A^^179^1940^5
- ;;^UTILITY(U,$J,358.3,31066,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31066,1,3,0)
- ;;=3^Colles' fracture of left radius, init for clos fx
- ;;^UTILITY(U,$J,358.3,31066,1,4,0)
- ;;=4^S52.532A
- ;;^UTILITY(U,$J,358.3,31066,2)
- ;;=^5030737
- ;;^UTILITY(U,$J,358.3,31067,0)
- ;;=S52.531A^^179^1940^6
- ;;^UTILITY(U,$J,358.3,31067,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31067,1,3,0)
- ;;=3^Colles' fracture of right radius, init for clos fx
- ;;^UTILITY(U,$J,358.3,31067,1,4,0)
- ;;=4^S52.531A
- ;;^UTILITY(U,$J,358.3,31067,2)
- ;;=^5030721
- ;;^UTILITY(U,$J,358.3,31068,0)
- ;;=S62.102A^^179^1940^9
- ;;^UTILITY(U,$J,358.3,31068,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31068,1,3,0)
- ;;=3^Fracture of unsp carpal bone, left wrist, init for clos fx
- ;;^UTILITY(U,$J,358.3,31068,1,4,0)
- ;;=4^S62.102A
- ;;^UTILITY(U,$J,358.3,31068,2)
- ;;=^5033206
- ;;^UTILITY(U,$J,358.3,31069,0)
- ;;=S62.101A^^179^1940^10
- ;;^UTILITY(U,$J,358.3,31069,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31069,1,3,0)
- ;;=3^Fracture of unsp carpal bone, right wrist, init for clos fx
+ ;;^UTILITY(U,$J,358.3,29853,1,1,0)
+ ;;=1^J9299
+ ;;^UTILITY(U,$J,358.3,29853,1,3,0)
+ ;;=3^Nivolumab Inj 1mg
+ ;;^UTILITY(U,$J,358.3,29854,0)
+ ;;=P9010^^116^1484^22^^^^1
+ ;;^UTILITY(U,$J,358.3,29854,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29854,1,1,0)
+ ;;=1^P9010
+ ;;^UTILITY(U,$J,358.3,29854,1,3,0)
+ ;;=3^Whole Blood,Ea Unit
+ ;;^UTILITY(U,$J,358.3,29855,0)
+ ;;=P9012^^116^1484^4^^^^1
+ ;;^UTILITY(U,$J,358.3,29855,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29855,1,1,0)
+ ;;=1^P9012
+ ;;^UTILITY(U,$J,358.3,29855,1,3,0)
+ ;;=3^Cryoprecipitate,Ea Unit
+ ;;^UTILITY(U,$J,358.3,29856,0)
+ ;;=P9016^^116^1484^18^^^^1
+ ;;^UTILITY(U,$J,358.3,29856,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29856,1,1,0)
+ ;;=1^P9016
+ ;;^UTILITY(U,$J,358.3,29856,1,3,0)
+ ;;=3^RBC Leukocytes Reduced
+ ;;^UTILITY(U,$J,358.3,29857,0)
+ ;;=P9017^^116^1484^6^^^^1
+ ;;^UTILITY(U,$J,358.3,29857,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29857,1,1,0)
+ ;;=1^P9017
+ ;;^UTILITY(U,$J,358.3,29857,1,3,0)
+ ;;=3^Plasma 1 Donor Frz w/in 8hrs
+ ;;^UTILITY(U,$J,358.3,29858,0)
+ ;;=P9019^^116^1484^10^^^^1
+ ;;^UTILITY(U,$J,358.3,29858,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29858,1,1,0)
+ ;;=1^P9019
+ ;;^UTILITY(U,$J,358.3,29858,1,3,0)
+ ;;=3^Platelets,Ea Unit
+ ;;^UTILITY(U,$J,358.3,29859,0)
+ ;;=P9021^^116^1484^20^^^^1
+ ;;^UTILITY(U,$J,358.3,29859,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29859,1,1,0)
+ ;;=1^P9021
+ ;;^UTILITY(U,$J,358.3,29859,1,3,0)
+ ;;=3^Red Blood Cells,Ea Unit
+ ;;^UTILITY(U,$J,358.3,29860,0)
+ ;;=P9022^^116^1484^21^^^^1
+ ;;^UTILITY(U,$J,358.3,29860,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29860,1,1,0)
+ ;;=1^P9022
+ ;;^UTILITY(U,$J,358.3,29860,1,3,0)
+ ;;=3^Washed Red Blood Cells,Ea Unit
+ ;;^UTILITY(U,$J,358.3,29861,0)
+ ;;=P9023^^116^1484^5^^^^1
+ ;;^UTILITY(U,$J,358.3,29861,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29861,1,1,0)
+ ;;=1^P9023
+ ;;^UTILITY(U,$J,358.3,29861,1,3,0)
+ ;;=3^Frozen Plasma,Pooled,SD
+ ;;^UTILITY(U,$J,358.3,29862,0)
+ ;;=P9034^^116^1484^12^^^^1
+ ;;^UTILITY(U,$J,358.3,29862,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29862,1,1,0)
+ ;;=1^P9034
+ ;;^UTILITY(U,$J,358.3,29862,1,3,0)
+ ;;=3^Platelets,Pheresis
+ ;;^UTILITY(U,$J,358.3,29863,0)
+ ;;=P9035^^116^1484^8^^^^1
+ ;;^UTILITY(U,$J,358.3,29863,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29863,1,1,0)
+ ;;=1^P9035
+ ;;^UTILITY(U,$J,358.3,29863,1,3,0)
+ ;;=3^Platelet Pheres Leuko Reduced
+ ;;^UTILITY(U,$J,358.3,29864,0)
+ ;;=P9036^^116^1484^9^^^^1
+ ;;^UTILITY(U,$J,358.3,29864,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29864,1,1,0)
+ ;;=1^P9036
+ ;;^UTILITY(U,$J,358.3,29864,1,3,0)
+ ;;=3^Platelet Pheres Leukoredu Irrad
+ ;;^UTILITY(U,$J,358.3,29865,0)
+ ;;=P9038^^116^1484^16^^^^1
+ ;;^UTILITY(U,$J,358.3,29865,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29865,1,1,0)
+ ;;=1^P9038
+ ;;^UTILITY(U,$J,358.3,29865,1,3,0)
+ ;;=3^RBC Irradiated
+ ;;^UTILITY(U,$J,358.3,29866,0)
+ ;;=P9039^^116^1484^15^^^^1
+ ;;^UTILITY(U,$J,358.3,29866,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29866,1,1,0)
+ ;;=1^P9039
+ ;;^UTILITY(U,$J,358.3,29866,1,3,0)
+ ;;=3^RBC Deglycerolized
+ ;;^UTILITY(U,$J,358.3,29867,0)
+ ;;=P9040^^116^1484^17^^^^1
+ ;;^UTILITY(U,$J,358.3,29867,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29867,1,1,0)
+ ;;=1^P9040
+ ;;^UTILITY(U,$J,358.3,29867,1,3,0)
+ ;;=3^RBC Leuko Reduced Irradiated
+ ;;^UTILITY(U,$J,358.3,29868,0)
+ ;;=P9044^^116^1484^3^^^^1
+ ;;^UTILITY(U,$J,358.3,29868,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,29868,1,1,0)
+ ;;=1^P9044
+ ;;^UTILITY(U,$J,358.3,29868,1,3,0)
+ ;;=3^Cryoprecip Reduced Plasma
+ ;;^UTILITY(U,$J,358.3,29869,0)
+ ;;=P9051^^116^1484^1^^^^1
+ ;;^UTILITY(U,$J,358.3,29869,1,0)
+ ;;=^358.31IA^3^2

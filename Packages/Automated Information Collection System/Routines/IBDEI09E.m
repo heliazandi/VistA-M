@@ -1,130 +1,124 @@
-IBDEI09E ; ; 06-AUG-2015
+IBDEI09E ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3951,1,0)
+ ;;^UTILITY(U,$J,358.3,4125,1,3,0)
+ ;;=3^Shaving Epidermm Arm/Leg > 2.0cm
+ ;;^UTILITY(U,$J,358.3,4126,0)
+ ;;=12001^^20^241^1^^^^1
+ ;;^UTILITY(U,$J,358.3,4126,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3951,1,2,0)
- ;;=2^92562
- ;;^UTILITY(U,$J,358.3,3951,1,3,0)
- ;;=3^Loudness Balance Test
- ;;^UTILITY(U,$J,358.3,3952,0)
- ;;=92588^^13^174^27^^^^1
- ;;^UTILITY(U,$J,358.3,3952,1,0)
+ ;;^UTILITY(U,$J,358.3,4126,1,2,0)
+ ;;=2^12001
+ ;;^UTILITY(U,$J,358.3,4126,1,3,0)
+ ;;=3^Simple repair Scalp/Nk/Trunk; 2.5 cm or less
+ ;;^UTILITY(U,$J,358.3,4127,0)
+ ;;=12002^^20^241^2^^^^1
+ ;;^UTILITY(U,$J,358.3,4127,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3952,1,2,0)
- ;;=2^92588
- ;;^UTILITY(U,$J,358.3,3952,1,3,0)
- ;;=3^Otoacoustic Emissions,Diagnostic
- ;;^UTILITY(U,$J,358.3,3953,0)
- ;;=92587^^13^174^28^^^^1
- ;;^UTILITY(U,$J,358.3,3953,1,0)
+ ;;^UTILITY(U,$J,358.3,4127,1,2,0)
+ ;;=2^12002
+ ;;^UTILITY(U,$J,358.3,4127,1,3,0)
+ ;;=3^Simple repair Scalp/Nk/Trunk; 2.6 cm to 7.5 cm
+ ;;^UTILITY(U,$J,358.3,4128,0)
+ ;;=12004^^20^241^3^^^^1
+ ;;^UTILITY(U,$J,358.3,4128,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3953,1,2,0)
- ;;=2^92587
- ;;^UTILITY(U,$J,358.3,3953,1,3,0)
- ;;=3^Otoacoustic Emissions,Limited
- ;;^UTILITY(U,$J,358.3,3954,0)
- ;;=92552^^13^174^29^^^^1
- ;;^UTILITY(U,$J,358.3,3954,1,0)
+ ;;^UTILITY(U,$J,358.3,4128,1,2,0)
+ ;;=2^12004
+ ;;^UTILITY(U,$J,358.3,4128,1,3,0)
+ ;;=3^Simple repair Scalp/Nk/Trunk; 7.6 cm to 12.5 cm
+ ;;^UTILITY(U,$J,358.3,4129,0)
+ ;;=12005^^20^241^4^^^^1
+ ;;^UTILITY(U,$J,358.3,4129,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3954,1,2,0)
- ;;=2^92552
- ;;^UTILITY(U,$J,358.3,3954,1,3,0)
- ;;=3^Pure Tone Audiometry, Air
- ;;^UTILITY(U,$J,358.3,3955,0)
- ;;=92553^^13^174^30^^^^1
- ;;^UTILITY(U,$J,358.3,3955,1,0)
+ ;;^UTILITY(U,$J,358.3,4129,1,2,0)
+ ;;=2^12005
+ ;;^UTILITY(U,$J,358.3,4129,1,3,0)
+ ;;=3^Simple repair Scalp/Nk/Trunk; 12.6 cm to 20 cm
+ ;;^UTILITY(U,$J,358.3,4130,0)
+ ;;=12006^^20^241^5^^^^1
+ ;;^UTILITY(U,$J,358.3,4130,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3955,1,2,0)
- ;;=2^92553
- ;;^UTILITY(U,$J,358.3,3955,1,3,0)
- ;;=3^Pure Tone Audiometry, Air & Bone
- ;;^UTILITY(U,$J,358.3,3956,0)
- ;;=92570^^13^174^1^^^^1
- ;;^UTILITY(U,$J,358.3,3956,1,0)
+ ;;^UTILITY(U,$J,358.3,4130,1,2,0)
+ ;;=2^12006
+ ;;^UTILITY(U,$J,358.3,4130,1,3,0)
+ ;;=3^Simple repair Scalp/Nk/Trunk; 20.1 cm to 30 cm
+ ;;^UTILITY(U,$J,358.3,4131,0)
+ ;;=12007^^20^241^6^^^^1
+ ;;^UTILITY(U,$J,358.3,4131,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3956,1,2,0)
- ;;=2^92570
- ;;^UTILITY(U,$J,358.3,3956,1,3,0)
- ;;=3^Acoustic Immittance Testing
- ;;^UTILITY(U,$J,358.3,3957,0)
- ;;=92558^^13^174^16^^^^1
- ;;^UTILITY(U,$J,358.3,3957,1,0)
+ ;;^UTILITY(U,$J,358.3,4131,1,2,0)
+ ;;=2^12007
+ ;;^UTILITY(U,$J,358.3,4131,1,3,0)
+ ;;=3^Simple repair Scalp/Nk/Trunk; over 30 cm
+ ;;^UTILITY(U,$J,358.3,4132,0)
+ ;;=12031^^20^242^1^^^^1
+ ;;^UTILITY(U,$J,358.3,4132,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3957,1,2,0)
- ;;=2^92558
- ;;^UTILITY(U,$J,358.3,3957,1,3,0)
- ;;=3^Evoked Otoacoustic Emmissions,Scrn,Auto
- ;;^UTILITY(U,$J,358.3,3958,0)
- ;;=92611^^13^174^26^^^^1
- ;;^UTILITY(U,$J,358.3,3958,1,0)
+ ;;^UTILITY(U,$J,358.3,4132,1,2,0)
+ ;;=2^12031
+ ;;^UTILITY(U,$J,358.3,4132,1,3,0)
+ ;;=3^Interm Repair Scalp/Trunk; 2.5 cm or less
+ ;;^UTILITY(U,$J,358.3,4133,0)
+ ;;=12032^^20^242^2^^^^1
+ ;;^UTILITY(U,$J,358.3,4133,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3958,1,2,0)
- ;;=2^92611
- ;;^UTILITY(U,$J,358.3,3958,1,3,0)
- ;;=3^Motion Fluoroscopic Eval Swallowing
- ;;^UTILITY(U,$J,358.3,3959,0)
- ;;=92612^^13^174^22^^^^1
- ;;^UTILITY(U,$J,358.3,3959,1,0)
+ ;;^UTILITY(U,$J,358.3,4133,1,2,0)
+ ;;=2^12032
+ ;;^UTILITY(U,$J,358.3,4133,1,3,0)
+ ;;=3^Interm Repair Scalp/Trunk; 2.6 cm to 7.5 cm
+ ;;^UTILITY(U,$J,358.3,4134,0)
+ ;;=12034^^20^242^3^^^^1
+ ;;^UTILITY(U,$J,358.3,4134,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3959,1,2,0)
- ;;=2^92612
- ;;^UTILITY(U,$J,358.3,3959,1,3,0)
- ;;=3^Flexible Fiberoptic Eval Swallowing
- ;;^UTILITY(U,$J,358.3,3960,0)
- ;;=92626^^13^174^14^^^^1
- ;;^UTILITY(U,$J,358.3,3960,1,0)
+ ;;^UTILITY(U,$J,358.3,4134,1,2,0)
+ ;;=2^12034
+ ;;^UTILITY(U,$J,358.3,4134,1,3,0)
+ ;;=3^Interm Repair Scalp/Trunk; 7.6 cm to 12.5 cm
+ ;;^UTILITY(U,$J,358.3,4135,0)
+ ;;=12035^^20^242^4^^^^1
+ ;;^UTILITY(U,$J,358.3,4135,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3960,1,2,0)
- ;;=2^92626
- ;;^UTILITY(U,$J,358.3,3960,1,3,0)
- ;;=3^Eval Aud Rehab Status,1st hr
- ;;^UTILITY(U,$J,358.3,3961,0)
- ;;=92627^^13^174^15^^^^1
- ;;^UTILITY(U,$J,358.3,3961,1,0)
+ ;;^UTILITY(U,$J,358.3,4135,1,2,0)
+ ;;=2^12035
+ ;;^UTILITY(U,$J,358.3,4135,1,3,0)
+ ;;=3^Interm Repair Scalp/Trunk; 12.6 cm to 20 cm
+ ;;^UTILITY(U,$J,358.3,4136,0)
+ ;;=12036^^20^242^5^^^^1
+ ;;^UTILITY(U,$J,358.3,4136,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3961,1,2,0)
- ;;=2^92627
- ;;^UTILITY(U,$J,358.3,3961,1,3,0)
- ;;=3^Eval Aud Rehab Status,Ea Addl 15min
- ;;^UTILITY(U,$J,358.3,3962,0)
- ;;=92613^^13^174^21^^^^1
- ;;^UTILITY(U,$J,358.3,3962,1,0)
+ ;;^UTILITY(U,$J,358.3,4136,1,2,0)
+ ;;=2^12036
+ ;;^UTILITY(U,$J,358.3,4136,1,3,0)
+ ;;=3^Interm Repair Scalp/Trunk; 20.1 cm to 30 cm
+ ;;^UTILITY(U,$J,358.3,4137,0)
+ ;;=12037^^20^242^6^^^^1
+ ;;^UTILITY(U,$J,358.3,4137,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3962,1,2,0)
- ;;=2^92613
- ;;^UTILITY(U,$J,358.3,3962,1,3,0)
- ;;=3^Flex Fib Eval Swallow,Interp/Rpt Only
- ;;^UTILITY(U,$J,358.3,3963,0)
- ;;=92614^^13^174^23^^^^1
- ;;^UTILITY(U,$J,358.3,3963,1,0)
+ ;;^UTILITY(U,$J,358.3,4137,1,2,0)
+ ;;=2^12037
+ ;;^UTILITY(U,$J,358.3,4137,1,3,0)
+ ;;=3^Interm Repair Scalp/Trunk; over 30 cm
+ ;;^UTILITY(U,$J,358.3,4138,0)
+ ;;=17270^^20^243^1^^^^1
+ ;;^UTILITY(U,$J,358.3,4138,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3963,1,2,0)
- ;;=2^92614
- ;;^UTILITY(U,$J,358.3,3963,1,3,0)
- ;;=3^Laryngoscopic Sensory Test,Video
- ;;^UTILITY(U,$J,358.3,3964,0)
- ;;=92615^^13^174^24^^^^1
- ;;^UTILITY(U,$J,358.3,3964,1,0)
+ ;;^UTILITY(U,$J,358.3,4138,1,2,0)
+ ;;=2^17270
+ ;;^UTILITY(U,$J,358.3,4138,1,3,0)
+ ;;=3^Dest Mal Lesion Sclp/NK/Ft/Hd/Gen,0.5cm or <
+ ;;^UTILITY(U,$J,358.3,4139,0)
+ ;;=17271^^20^243^2^^^^1
+ ;;^UTILITY(U,$J,358.3,4139,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3964,1,2,0)
- ;;=2^92615
- ;;^UTILITY(U,$J,358.3,3964,1,3,0)
- ;;=3^Laryngoscopic Sensory Tst,Interp&Rpt Only
- ;;^UTILITY(U,$J,358.3,3965,0)
- ;;=92560^^13^174^9^^^^1
- ;;^UTILITY(U,$J,358.3,3965,1,0)
+ ;;^UTILITY(U,$J,358.3,4139,1,2,0)
+ ;;=2^17271
+ ;;^UTILITY(U,$J,358.3,4139,1,3,0)
+ ;;=3^Dest Mal Lesion Sclp/NK/Ft/Hd/Gen,0.6-1.0cm
+ ;;^UTILITY(U,$J,358.3,4140,0)
+ ;;=17272^^20^243^3^^^^1
+ ;;^UTILITY(U,$J,358.3,4140,1,0)
  ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3965,1,2,0)
- ;;=2^92560
- ;;^UTILITY(U,$J,358.3,3965,1,3,0)
- ;;=3^Bekesy Audiometry,Screening
- ;;^UTILITY(U,$J,358.3,3966,0)
- ;;=92561^^13^174^8^^^^1
- ;;^UTILITY(U,$J,358.3,3966,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,3966,1,2,0)
- ;;=2^92561
- ;;^UTILITY(U,$J,358.3,3966,1,3,0)
- ;;=3^Bekesy Audiometry,Diagnostic
+ ;;^UTILITY(U,$J,358.3,4140,1,2,0)
+ ;;=2^17272

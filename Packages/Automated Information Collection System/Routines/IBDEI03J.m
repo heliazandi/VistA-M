@@ -1,132 +1,138 @@
-IBDEI03J ; ; 06-AUG-2015
+IBDEI03J ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1118,1,4,0)
- ;;=4^R16.0
- ;;^UTILITY(U,$J,358.3,1118,2)
- ;;=^5019248
- ;;^UTILITY(U,$J,358.3,1119,0)
- ;;=R16.1^^3^37^94
- ;;^UTILITY(U,$J,358.3,1119,1,0)
+ ;;^UTILITY(U,$J,358.3,1224,1,3,0)
+ ;;=3^Adjust/Mgmt of Implanted Nervous System Device
+ ;;^UTILITY(U,$J,358.3,1224,1,4,0)
+ ;;=4^Z45.49
+ ;;^UTILITY(U,$J,358.3,1224,2)
+ ;;=^5063006
+ ;;^UTILITY(U,$J,358.3,1225,0)
+ ;;=Z46.1^^8^127^17
+ ;;^UTILITY(U,$J,358.3,1225,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1119,1,3,0)
- ;;=3^Splenomegaly, not elsewhere classified
- ;;^UTILITY(U,$J,358.3,1119,1,4,0)
- ;;=4^R16.1
- ;;^UTILITY(U,$J,358.3,1119,2)
- ;;=^5019249
- ;;^UTILITY(U,$J,358.3,1120,0)
- ;;=R19.00^^3^37^65
- ;;^UTILITY(U,$J,358.3,1120,1,0)
+ ;;^UTILITY(U,$J,358.3,1225,1,3,0)
+ ;;=3^Fit/Adjust of Hearing Aid
+ ;;^UTILITY(U,$J,358.3,1225,1,4,0)
+ ;;=4^Z46.1
+ ;;^UTILITY(U,$J,358.3,1225,2)
+ ;;=^5063014
+ ;;^UTILITY(U,$J,358.3,1226,0)
+ ;;=Z46.2^^8^127^15
+ ;;^UTILITY(U,$J,358.3,1226,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1120,1,3,0)
- ;;=3^Intra-abd and pelvic swelling, mass and lump, unsp site
- ;;^UTILITY(U,$J,358.3,1120,1,4,0)
- ;;=4^R19.00
- ;;^UTILITY(U,$J,358.3,1120,2)
- ;;=^5019254
- ;;^UTILITY(U,$J,358.3,1121,0)
- ;;=R10.811^^3^37^91
- ;;^UTILITY(U,$J,358.3,1121,1,0)
+ ;;^UTILITY(U,$J,358.3,1226,1,3,0)
+ ;;=3^Fit/Adjust Device Rel to Nervous System/Special Senses
+ ;;^UTILITY(U,$J,358.3,1226,1,4,0)
+ ;;=4^Z46.2
+ ;;^UTILITY(U,$J,358.3,1226,2)
+ ;;=^5063015
+ ;;^UTILITY(U,$J,358.3,1227,0)
+ ;;=Z44.8^^8^127^16
+ ;;^UTILITY(U,$J,358.3,1227,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1121,1,3,0)
- ;;=3^Right upper quadrant abdominal tenderness
- ;;^UTILITY(U,$J,358.3,1121,1,4,0)
- ;;=4^R10.811
- ;;^UTILITY(U,$J,358.3,1121,2)
- ;;=^5019214
- ;;^UTILITY(U,$J,358.3,1122,0)
- ;;=R10.821^^3^37^93
- ;;^UTILITY(U,$J,358.3,1122,1,0)
+ ;;^UTILITY(U,$J,358.3,1227,1,3,0)
+ ;;=3^Fit/Adjust of External Prosthetic Devices
+ ;;^UTILITY(U,$J,358.3,1227,1,4,0)
+ ;;=4^Z44.8
+ ;;^UTILITY(U,$J,358.3,1227,2)
+ ;;=^5062992
+ ;;^UTILITY(U,$J,358.3,1228,0)
+ ;;=Z82.2^^8^127^13
+ ;;^UTILITY(U,$J,358.3,1228,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1122,1,3,0)
- ;;=3^Right upper quadrant rebound abdominal tenderness
- ;;^UTILITY(U,$J,358.3,1122,1,4,0)
- ;;=4^R10.821
- ;;^UTILITY(U,$J,358.3,1122,2)
- ;;=^5019221
- ;;^UTILITY(U,$J,358.3,1123,0)
- ;;=R10.812^^3^37^71
- ;;^UTILITY(U,$J,358.3,1123,1,0)
+ ;;^UTILITY(U,$J,358.3,1228,1,3,0)
+ ;;=3^Family history of deafness and hearing loss
+ ;;^UTILITY(U,$J,358.3,1228,1,4,0)
+ ;;=4^Z82.2
+ ;;^UTILITY(U,$J,358.3,1228,2)
+ ;;=^5063366
+ ;;^UTILITY(U,$J,358.3,1229,0)
+ ;;=Z83.52^^8^127^14
+ ;;^UTILITY(U,$J,358.3,1229,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1123,1,3,0)
- ;;=3^Left upper quadrant abdominal tenderness
- ;;^UTILITY(U,$J,358.3,1123,1,4,0)
- ;;=4^R10.812
- ;;^UTILITY(U,$J,358.3,1123,2)
- ;;=^5019215
- ;;^UTILITY(U,$J,358.3,1124,0)
- ;;=R10.822^^3^37^73
- ;;^UTILITY(U,$J,358.3,1124,1,0)
+ ;;^UTILITY(U,$J,358.3,1229,1,3,0)
+ ;;=3^Family history of ear disorders
+ ;;^UTILITY(U,$J,358.3,1229,1,4,0)
+ ;;=4^Z83.52
+ ;;^UTILITY(U,$J,358.3,1229,2)
+ ;;=^5063384
+ ;;^UTILITY(U,$J,358.3,1230,0)
+ ;;=H93.233^^8^127^18
+ ;;^UTILITY(U,$J,358.3,1230,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1124,1,3,0)
- ;;=3^Left upper quadrant rebound abdominal tenderness
- ;;^UTILITY(U,$J,358.3,1124,1,4,0)
- ;;=4^R10.822
- ;;^UTILITY(U,$J,358.3,1124,2)
- ;;=^5019222
- ;;^UTILITY(U,$J,358.3,1125,0)
- ;;=R10.813^^3^37^88
- ;;^UTILITY(U,$J,358.3,1125,1,0)
+ ;;^UTILITY(U,$J,358.3,1230,1,3,0)
+ ;;=3^Hyperacusis, bilateral
+ ;;^UTILITY(U,$J,358.3,1230,1,4,0)
+ ;;=4^H93.233
+ ;;^UTILITY(U,$J,358.3,1230,2)
+ ;;=^5006978
+ ;;^UTILITY(U,$J,358.3,1231,0)
+ ;;=H93.232^^8^127^19
+ ;;^UTILITY(U,$J,358.3,1231,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1125,1,3,0)
- ;;=3^Right lower quadrant abdominal tenderness
- ;;^UTILITY(U,$J,358.3,1125,1,4,0)
- ;;=4^R10.813
- ;;^UTILITY(U,$J,358.3,1125,2)
- ;;=^5019216
- ;;^UTILITY(U,$J,358.3,1126,0)
- ;;=R10.823^^3^37^90
- ;;^UTILITY(U,$J,358.3,1126,1,0)
+ ;;^UTILITY(U,$J,358.3,1231,1,3,0)
+ ;;=3^Hyperacusis, left ear
+ ;;^UTILITY(U,$J,358.3,1231,1,4,0)
+ ;;=4^H93.232
+ ;;^UTILITY(U,$J,358.3,1231,2)
+ ;;=^5006977
+ ;;^UTILITY(U,$J,358.3,1232,0)
+ ;;=H93.231^^8^127^20
+ ;;^UTILITY(U,$J,358.3,1232,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1126,1,3,0)
- ;;=3^Right lower quadrant rebound abdominal tenderness
- ;;^UTILITY(U,$J,358.3,1126,1,4,0)
- ;;=4^R10.823
- ;;^UTILITY(U,$J,358.3,1126,2)
- ;;=^5019223
- ;;^UTILITY(U,$J,358.3,1127,0)
- ;;=R10.814^^3^37^68
- ;;^UTILITY(U,$J,358.3,1127,1,0)
+ ;;^UTILITY(U,$J,358.3,1232,1,3,0)
+ ;;=3^Hyperacusis, right ear
+ ;;^UTILITY(U,$J,358.3,1232,1,4,0)
+ ;;=4^H93.231
+ ;;^UTILITY(U,$J,358.3,1232,2)
+ ;;=^5006976
+ ;;^UTILITY(U,$J,358.3,1233,0)
+ ;;=H92.03^^8^127^22
+ ;;^UTILITY(U,$J,358.3,1233,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1127,1,3,0)
- ;;=3^Left lower quadrant abdominal tenderness
- ;;^UTILITY(U,$J,358.3,1127,1,4,0)
- ;;=4^R10.814
- ;;^UTILITY(U,$J,358.3,1127,2)
- ;;=^5134173
- ;;^UTILITY(U,$J,358.3,1128,0)
- ;;=R10.824^^3^37^70
- ;;^UTILITY(U,$J,358.3,1128,1,0)
+ ;;^UTILITY(U,$J,358.3,1233,1,3,0)
+ ;;=3^Otalgia, bilateral
+ ;;^UTILITY(U,$J,358.3,1233,1,4,0)
+ ;;=4^H92.03
+ ;;^UTILITY(U,$J,358.3,1233,2)
+ ;;=^5006947
+ ;;^UTILITY(U,$J,358.3,1234,0)
+ ;;=H92.02^^8^127^23
+ ;;^UTILITY(U,$J,358.3,1234,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1128,1,3,0)
- ;;=3^Left lower quadrant rebound abdominal tenderness
- ;;^UTILITY(U,$J,358.3,1128,1,4,0)
- ;;=4^R10.824
- ;;^UTILITY(U,$J,358.3,1128,2)
- ;;=^5134174
- ;;^UTILITY(U,$J,358.3,1129,0)
- ;;=R10.815^^3^37^79
- ;;^UTILITY(U,$J,358.3,1129,1,0)
+ ;;^UTILITY(U,$J,358.3,1234,1,3,0)
+ ;;=3^Otalgia, left ear
+ ;;^UTILITY(U,$J,358.3,1234,1,4,0)
+ ;;=4^H92.02
+ ;;^UTILITY(U,$J,358.3,1234,2)
+ ;;=^5006946
+ ;;^UTILITY(U,$J,358.3,1235,0)
+ ;;=H92.01^^8^127^24
+ ;;^UTILITY(U,$J,358.3,1235,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1129,1,3,0)
- ;;=3^Periumbilic abdominal tenderness
- ;;^UTILITY(U,$J,358.3,1129,1,4,0)
- ;;=4^R10.815
- ;;^UTILITY(U,$J,358.3,1129,2)
- ;;=^5019217
- ;;^UTILITY(U,$J,358.3,1130,0)
- ;;=R10.825^^3^37^80
- ;;^UTILITY(U,$J,358.3,1130,1,0)
+ ;;^UTILITY(U,$J,358.3,1235,1,3,0)
+ ;;=3^Otalgia, right ear
+ ;;^UTILITY(U,$J,358.3,1235,1,4,0)
+ ;;=4^H92.01
+ ;;^UTILITY(U,$J,358.3,1235,2)
+ ;;=^5006945
+ ;;^UTILITY(U,$J,358.3,1236,0)
+ ;;=H93.293^^8^127^1
+ ;;^UTILITY(U,$J,358.3,1236,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1130,1,3,0)
- ;;=3^Periumbilic rebound abdominal tenderness
- ;;^UTILITY(U,$J,358.3,1130,1,4,0)
- ;;=4^R10.825
- ;;^UTILITY(U,$J,358.3,1130,2)
- ;;=^5019224
- ;;^UTILITY(U,$J,358.3,1131,0)
- ;;=R10.816^^3^37^41
- ;;^UTILITY(U,$J,358.3,1131,1,0)
+ ;;^UTILITY(U,$J,358.3,1236,1,3,0)
+ ;;=3^Abnormal auditory perceptions, bilateral NEC
+ ;;^UTILITY(U,$J,358.3,1236,1,4,0)
+ ;;=4^H93.293
+ ;;^UTILITY(U,$J,358.3,1236,2)
+ ;;=^5006987
+ ;;^UTILITY(U,$J,358.3,1237,0)
+ ;;=H93.292^^8^127^2
+ ;;^UTILITY(U,$J,358.3,1237,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1237,1,3,0)
+ ;;=3^Abnormal auditory perceptions, left ear NEC
+ ;;^UTILITY(U,$J,358.3,1237,1,4,0)
+ ;;=4^H93.292

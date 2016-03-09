@@ -1,136 +1,130 @@
-IBDEI167 ; ; 06-AUG-2015
+IBDEI167 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,20656,0)
- ;;=996.74^^109^1271^2
- ;;^UTILITY(U,$J,358.3,20656,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20656,1,4,0)
- ;;=4^Complications d/t Vascular Device/Graft
- ;;^UTILITY(U,$J,358.3,20656,1,5,0)
- ;;=5^996.74
- ;;^UTILITY(U,$J,358.3,20656,2)
- ;;=^276297
- ;;^UTILITY(U,$J,358.3,20657,0)
- ;;=V72.84^^109^1272^7
- ;;^UTILITY(U,$J,358.3,20657,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20657,1,4,0)
- ;;=4^Pre-Op Exam,Unspec
- ;;^UTILITY(U,$J,358.3,20657,1,5,0)
- ;;=5^V72.84
- ;;^UTILITY(U,$J,358.3,20657,2)
- ;;=^295830
- ;;^UTILITY(U,$J,358.3,20658,0)
- ;;=V67.00^^109^1272^2
- ;;^UTILITY(U,$J,358.3,20658,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20658,1,4,0)
- ;;=4^Follow-Up Exam,Unspec Surgery
- ;;^UTILITY(U,$J,358.3,20658,1,5,0)
- ;;=5^V67.00
- ;;^UTILITY(U,$J,358.3,20658,2)
- ;;=^322077
- ;;^UTILITY(U,$J,358.3,20659,0)
- ;;=V67.09^^109^1272^1
- ;;^UTILITY(U,$J,358.3,20659,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20659,1,4,0)
- ;;=4^Follow-Up Exam,Other Surgery
- ;;^UTILITY(U,$J,358.3,20659,1,5,0)
- ;;=5^V67.09
- ;;^UTILITY(U,$J,358.3,20659,2)
- ;;=^322080
- ;;^UTILITY(U,$J,358.3,20660,0)
- ;;=V12.54^^109^1272^4
- ;;^UTILITY(U,$J,358.3,20660,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20660,1,4,0)
- ;;=4^Hx TIA/Stroke w/o Residual
- ;;^UTILITY(U,$J,358.3,20660,1,5,0)
- ;;=5^V12.54
- ;;^UTILITY(U,$J,358.3,20660,2)
- ;;=^335309
- ;;^UTILITY(U,$J,358.3,20661,0)
- ;;=V12.59^^109^1272^3
- ;;^UTILITY(U,$J,358.3,20661,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20661,1,4,0)
- ;;=4^Hx Circ Sys Dis NEC
- ;;^UTILITY(U,$J,358.3,20661,1,5,0)
- ;;=5^V12.59
- ;;^UTILITY(U,$J,358.3,20661,2)
- ;;=^303399
- ;;^UTILITY(U,$J,358.3,20662,0)
- ;;=V12.52^^109^1272^5
- ;;^UTILITY(U,$J,358.3,20662,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20662,1,4,0)
- ;;=4^Hx Thrombophlebitis
- ;;^UTILITY(U,$J,358.3,20662,1,5,0)
- ;;=5^V12.52
- ;;^UTILITY(U,$J,358.3,20662,2)
- ;;=^303398
- ;;^UTILITY(U,$J,358.3,20663,0)
- ;;=V12.51^^109^1272^6
- ;;^UTILITY(U,$J,358.3,20663,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,20663,1,4,0)
- ;;=4^Hx Ven Throm & Embolism
- ;;^UTILITY(U,$J,358.3,20663,1,5,0)
- ;;=5^V12.51
- ;;^UTILITY(U,$J,358.3,20663,2)
- ;;=^303397
- ;;^UTILITY(U,$J,358.3,20664,0)
- ;;=11042^^110^1273^1^^^^1
- ;;^UTILITY(U,$J,358.3,20664,1,0)
+ ;;^UTILITY(U,$J,358.3,19904,0)
+ ;;=N52.34^^84^925^38
+ ;;^UTILITY(U,$J,358.3,19904,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20664,1,2,0)
- ;;=2^Debride Skin & Sq
- ;;^UTILITY(U,$J,358.3,20664,1,4,0)
- ;;=4^11042
- ;;^UTILITY(U,$J,358.3,20665,0)
- ;;=11043^^110^1273^2^^^^1
- ;;^UTILITY(U,$J,358.3,20665,1,0)
+ ;;^UTILITY(U,$J,358.3,19904,1,3,0)
+ ;;=3^Erectile Dysfunction Following Simple Prostatectomy
+ ;;^UTILITY(U,$J,358.3,19904,1,4,0)
+ ;;=4^N52.34
+ ;;^UTILITY(U,$J,358.3,19904,2)
+ ;;=^5015760
+ ;;^UTILITY(U,$J,358.3,19905,0)
+ ;;=N52.39^^84^925^40
+ ;;^UTILITY(U,$J,358.3,19905,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20665,1,2,0)
- ;;=2^Debride Skin,Sq,& Muscle
- ;;^UTILITY(U,$J,358.3,20665,1,4,0)
- ;;=4^11043
- ;;^UTILITY(U,$J,358.3,20666,0)
- ;;=97597^^110^1273^3^^^^1
- ;;^UTILITY(U,$J,358.3,20666,1,0)
+ ;;^UTILITY(U,$J,358.3,19905,1,3,0)
+ ;;=3^Erectile Dysfunction Post-Surgical
+ ;;^UTILITY(U,$J,358.3,19905,1,4,0)
+ ;;=4^N52.39
+ ;;^UTILITY(U,$J,358.3,19905,2)
+ ;;=^5015761
+ ;;^UTILITY(U,$J,358.3,19906,0)
+ ;;=N52.33^^84^925^39
+ ;;^UTILITY(U,$J,358.3,19906,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20666,1,2,0)
- ;;=2^Rmvl Devital Tiss up to 20sq cm
- ;;^UTILITY(U,$J,358.3,20666,1,4,0)
- ;;=4^97597
- ;;^UTILITY(U,$J,358.3,20667,0)
- ;;=97598^^110^1273^4^^^^1
- ;;^UTILITY(U,$J,358.3,20667,1,0)
+ ;;^UTILITY(U,$J,358.3,19906,1,3,0)
+ ;;=3^Erectile Dysfunction Following Urethral Surgery
+ ;;^UTILITY(U,$J,358.3,19906,1,4,0)
+ ;;=4^N52.33
+ ;;^UTILITY(U,$J,358.3,19906,2)
+ ;;=^5015759
+ ;;^UTILITY(U,$J,358.3,19907,0)
+ ;;=N52.32^^84^925^36
+ ;;^UTILITY(U,$J,358.3,19907,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20667,1,2,0)
- ;;=2^Rmvl Devitl Tis,ea addl 20sq cm
- ;;^UTILITY(U,$J,358.3,20667,1,4,0)
- ;;=4^97598
- ;;^UTILITY(U,$J,358.3,20668,0)
- ;;=10140^^110^1274^2
- ;;^UTILITY(U,$J,358.3,20668,1,0)
+ ;;^UTILITY(U,$J,358.3,19907,1,3,0)
+ ;;=3^Erectile Dysfunction Following Radical Cystectomy
+ ;;^UTILITY(U,$J,358.3,19907,1,4,0)
+ ;;=4^N52.32
+ ;;^UTILITY(U,$J,358.3,19907,2)
+ ;;=^5015758
+ ;;^UTILITY(U,$J,358.3,19908,0)
+ ;;=N52.31^^84^925^37
+ ;;^UTILITY(U,$J,358.3,19908,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20668,1,2,0)
- ;;=2^I&D Hematoma/Seroma,Skin
- ;;^UTILITY(U,$J,358.3,20668,1,4,0)
- ;;=4^10140
- ;;^UTILITY(U,$J,358.3,20669,0)
- ;;=10180^^110^1274^1^^^^1
- ;;^UTILITY(U,$J,358.3,20669,1,0)
+ ;;^UTILITY(U,$J,358.3,19908,1,3,0)
+ ;;=3^Erectile Dysfunction Following Radical Prostatectomy
+ ;;^UTILITY(U,$J,358.3,19908,1,4,0)
+ ;;=4^N52.31
+ ;;^UTILITY(U,$J,358.3,19908,2)
+ ;;=^5015757
+ ;;^UTILITY(U,$J,358.3,19909,0)
+ ;;=N52.2^^84^925^43
+ ;;^UTILITY(U,$J,358.3,19909,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20669,1,2,0)
- ;;=2^I&D Complex Postop Wound
- ;;^UTILITY(U,$J,358.3,20669,1,4,0)
- ;;=4^10180
- ;;^UTILITY(U,$J,358.3,20670,0)
- ;;=29580^^110^1275^1^^^^1
- ;;^UTILITY(U,$J,358.3,20670,1,0)
+ ;;^UTILITY(U,$J,358.3,19909,1,3,0)
+ ;;=3^Erectile Dysfunction,Drug-Induced
+ ;;^UTILITY(U,$J,358.3,19909,1,4,0)
+ ;;=4^N52.2
+ ;;^UTILITY(U,$J,358.3,19909,2)
+ ;;=^5015756
+ ;;^UTILITY(U,$J,358.3,19910,0)
+ ;;=N52.03^^84^925^34
+ ;;^UTILITY(U,$J,358.3,19910,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19910,1,3,0)
+ ;;=3^Erectile Dysfunction Comb Artrl Insuff & Corporo-Venous Occlusv
+ ;;^UTILITY(U,$J,358.3,19910,1,4,0)
+ ;;=4^N52.03
+ ;;^UTILITY(U,$J,358.3,19910,2)
+ ;;=^5015754
+ ;;^UTILITY(U,$J,358.3,19911,0)
+ ;;=N52.02^^84^925^35
+ ;;^UTILITY(U,$J,358.3,19911,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19911,1,3,0)
+ ;;=3^Erectile Dysfunction Corporo-Venous Occlusive
+ ;;^UTILITY(U,$J,358.3,19911,1,4,0)
+ ;;=4^N52.02
+ ;;^UTILITY(U,$J,358.3,19911,2)
+ ;;=^5015753
+ ;;^UTILITY(U,$J,358.3,19912,0)
+ ;;=N52.1^^84^925^42
+ ;;^UTILITY(U,$J,358.3,19912,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19912,1,3,0)
+ ;;=3^Erectile Dysfunction d/t Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,19912,1,4,0)
+ ;;=4^N52.1
+ ;;^UTILITY(U,$J,358.3,19912,2)
+ ;;=^5015755
+ ;;^UTILITY(U,$J,358.3,19913,0)
+ ;;=N52.01^^84^925^41
+ ;;^UTILITY(U,$J,358.3,19913,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19913,1,3,0)
+ ;;=3^Erectile Dysfunction d/t Arterial Insufficiency
+ ;;^UTILITY(U,$J,358.3,19913,1,4,0)
+ ;;=4^N52.01
+ ;;^UTILITY(U,$J,358.3,19913,2)
+ ;;=^5015752
+ ;;^UTILITY(U,$J,358.3,19914,0)
+ ;;=N95.2^^84^925^81
+ ;;^UTILITY(U,$J,358.3,19914,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19914,1,3,0)
+ ;;=3^Postmenopausal Atrophic Vaginitis
+ ;;^UTILITY(U,$J,358.3,19914,1,4,0)
+ ;;=4^N95.2
+ ;;^UTILITY(U,$J,358.3,19914,2)
+ ;;=^270577
+ ;;^UTILITY(U,$J,358.3,19915,0)
+ ;;=R30.9^^84^925^65
+ ;;^UTILITY(U,$J,358.3,19915,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19915,1,3,0)
+ ;;=3^Micturition Painful,Unspec
+ ;;^UTILITY(U,$J,358.3,19915,1,4,0)
+ ;;=4^R30.9
+ ;;^UTILITY(U,$J,358.3,19915,2)
+ ;;=^5019324
+ ;;^UTILITY(U,$J,358.3,19916,0)
+ ;;=R30.0^^84^925^26
+ ;;^UTILITY(U,$J,358.3,19916,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,19916,1,3,0)
+ ;;=3^Dysuria

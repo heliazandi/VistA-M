@@ -1,122 +1,136 @@
-IBDEI1ZQ ; ; 06-AUG-2015
+IBDEI1ZQ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34853,2)
- ;;=^5026718
- ;;^UTILITY(U,$J,358.3,34854,0)
- ;;=S42.151S^^183^2023^37
- ;;^UTILITY(U,$J,358.3,34854,1,0)
+ ;;^UTILITY(U,$J,358.3,33777,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34854,1,3,0)
- ;;=3^Disp fx of neck of scapula, right shoulder, sequela
- ;;^UTILITY(U,$J,358.3,34854,1,4,0)
- ;;=4^S42.151S
- ;;^UTILITY(U,$J,358.3,34854,2)
- ;;=^5026718
- ;;^UTILITY(U,$J,358.3,34855,0)
- ;;=S42.125S^^183^2023^57
- ;;^UTILITY(U,$J,358.3,34855,1,0)
+ ;;^UTILITY(U,$J,358.3,33777,1,3,0)
+ ;;=3^Overactive Bladder
+ ;;^UTILITY(U,$J,358.3,33777,1,4,0)
+ ;;=4^N32.81
+ ;;^UTILITY(U,$J,358.3,33777,2)
+ ;;=^5015652
+ ;;^UTILITY(U,$J,358.3,33778,0)
+ ;;=Q61.2^^131^1676^79
+ ;;^UTILITY(U,$J,358.3,33778,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34855,1,3,0)
- ;;=3^Nondisp fx of acromial process, left shoulder, sequela
- ;;^UTILITY(U,$J,358.3,34855,1,4,0)
- ;;=4^S42.125S
- ;;^UTILITY(U,$J,358.3,34855,2)
- ;;=^5026620
- ;;^UTILITY(U,$J,358.3,34856,0)
- ;;=S42.115S^^183^2023^58
- ;;^UTILITY(U,$J,358.3,34856,1,0)
+ ;;^UTILITY(U,$J,358.3,33778,1,3,0)
+ ;;=3^Polycystic Kidney,Adult Type
+ ;;^UTILITY(U,$J,358.3,33778,1,4,0)
+ ;;=4^Q61.2
+ ;;^UTILITY(U,$J,358.3,33778,2)
+ ;;=^5018796
+ ;;^UTILITY(U,$J,358.3,33779,0)
+ ;;=N41.1^^131^1676^83
+ ;;^UTILITY(U,$J,358.3,33779,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34856,1,3,0)
- ;;=3^Nondisp fx of body of scapula, left shoulder, sequela
- ;;^UTILITY(U,$J,358.3,34856,1,4,0)
- ;;=4^S42.115S
- ;;^UTILITY(U,$J,358.3,34856,2)
- ;;=^5026578
- ;;^UTILITY(U,$J,358.3,34857,0)
- ;;=S42.114S^^183^2023^59
- ;;^UTILITY(U,$J,358.3,34857,1,0)
+ ;;^UTILITY(U,$J,358.3,33779,1,3,0)
+ ;;=3^Prostatitis,Chronic
+ ;;^UTILITY(U,$J,358.3,33779,1,4,0)
+ ;;=4^N41.1
+ ;;^UTILITY(U,$J,358.3,33779,2)
+ ;;=^186931
+ ;;^UTILITY(U,$J,358.3,33780,0)
+ ;;=N11.9^^131^1676^91
+ ;;^UTILITY(U,$J,358.3,33780,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34857,1,3,0)
- ;;=3^Nondisp fx of body of scapula, right shoulder, sequela
- ;;^UTILITY(U,$J,358.3,34857,1,4,0)
- ;;=4^S42.114S
- ;;^UTILITY(U,$J,358.3,34857,2)
- ;;=^5026571
- ;;^UTILITY(U,$J,358.3,34858,0)
- ;;=S42.114S^^183^2023^60
- ;;^UTILITY(U,$J,358.3,34858,1,0)
+ ;;^UTILITY(U,$J,358.3,33780,1,3,0)
+ ;;=3^Pyelonephritis,Chronic,Unspec
+ ;;^UTILITY(U,$J,358.3,33780,1,4,0)
+ ;;=4^N11.9
+ ;;^UTILITY(U,$J,358.3,33780,2)
+ ;;=^5015574
+ ;;^UTILITY(U,$J,358.3,33781,0)
+ ;;=N20.9^^131^1676^102
+ ;;^UTILITY(U,$J,358.3,33781,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34858,1,3,0)
- ;;=3^Nondisp fx of body of scapula, right shoulder, sequela
- ;;^UTILITY(U,$J,358.3,34858,1,4,0)
- ;;=4^S42.114S
- ;;^UTILITY(U,$J,358.3,34858,2)
- ;;=^5026571
- ;;^UTILITY(U,$J,358.3,34859,0)
- ;;=S42.135S^^183^2023^65
- ;;^UTILITY(U,$J,358.3,34859,1,0)
+ ;;^UTILITY(U,$J,358.3,33781,1,3,0)
+ ;;=3^Urinary Calculus,Unspec
+ ;;^UTILITY(U,$J,358.3,33781,1,4,0)
+ ;;=4^N20.9
+ ;;^UTILITY(U,$J,358.3,33781,2)
+ ;;=^5015610
+ ;;^UTILITY(U,$J,358.3,33782,0)
+ ;;=R51.^^131^1677^2
+ ;;^UTILITY(U,$J,358.3,33782,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34859,1,3,0)
- ;;=3^Nondisp fx of coracoid process, left shoulder, sequela
- ;;^UTILITY(U,$J,358.3,34859,1,4,0)
- ;;=4^S42.135S
- ;;^UTILITY(U,$J,358.3,34859,2)
- ;;=^5026662
- ;;^UTILITY(U,$J,358.3,34860,0)
- ;;=S42.134S^^183^2023^66
- ;;^UTILITY(U,$J,358.3,34860,1,0)
+ ;;^UTILITY(U,$J,358.3,33782,1,3,0)
+ ;;=3^Headache
+ ;;^UTILITY(U,$J,358.3,33782,1,4,0)
+ ;;=4^R51.
+ ;;^UTILITY(U,$J,358.3,33782,2)
+ ;;=^5019513
+ ;;^UTILITY(U,$J,358.3,33783,0)
+ ;;=G44.1^^131^1677^9
+ ;;^UTILITY(U,$J,358.3,33783,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34860,1,3,0)
- ;;=3^Nondisp fx of coracoid process, right shoulder, sequela
- ;;^UTILITY(U,$J,358.3,34860,1,4,0)
- ;;=4^S42.134S
- ;;^UTILITY(U,$J,358.3,34860,2)
- ;;=^5026655
- ;;^UTILITY(U,$J,358.3,34861,0)
- ;;=S42.144S^^183^2023^67
- ;;^UTILITY(U,$J,358.3,34861,1,0)
+ ;;^UTILITY(U,$J,358.3,33783,1,3,0)
+ ;;=3^Vascular Headache NEC
+ ;;^UTILITY(U,$J,358.3,33783,1,4,0)
+ ;;=4^G44.1
+ ;;^UTILITY(U,$J,358.3,33783,2)
+ ;;=^5003934
+ ;;^UTILITY(U,$J,358.3,33784,0)
+ ;;=G43.909^^131^1677^5
+ ;;^UTILITY(U,$J,358.3,33784,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34861,1,3,0)
- ;;=3^Nondisp fx of glenoid cav of scapula, right shoulder, sequela
- ;;^UTILITY(U,$J,358.3,34861,1,4,0)
- ;;=4^S42.144S
- ;;^UTILITY(U,$J,358.3,34861,2)
- ;;=^5026697
- ;;^UTILITY(U,$J,358.3,34862,0)
- ;;=S42.155S^^183^2023^82
- ;;^UTILITY(U,$J,358.3,34862,1,0)
+ ;;^UTILITY(U,$J,358.3,33784,1,3,0)
+ ;;=3^Migraine,Unspec,Not Intractable
+ ;;^UTILITY(U,$J,358.3,33784,1,4,0)
+ ;;=4^G43.909
+ ;;^UTILITY(U,$J,358.3,33784,2)
+ ;;=^5003909
+ ;;^UTILITY(U,$J,358.3,33785,0)
+ ;;=G44.009^^131^1677^1
+ ;;^UTILITY(U,$J,358.3,33785,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34862,1,3,0)
- ;;=3^Nondisp fx of neck of scapula, left shoulder, sequela
- ;;^UTILITY(U,$J,358.3,34862,1,4,0)
- ;;=4^S42.155S
- ;;^UTILITY(U,$J,358.3,34862,2)
- ;;=^5026746
- ;;^UTILITY(U,$J,358.3,34863,0)
- ;;=S42.155S^^183^2023^83
- ;;^UTILITY(U,$J,358.3,34863,1,0)
+ ;;^UTILITY(U,$J,358.3,33785,1,3,0)
+ ;;=3^Cluster Headache,Unspec,Not Intractable
+ ;;^UTILITY(U,$J,358.3,33785,1,4,0)
+ ;;=4^G44.009
+ ;;^UTILITY(U,$J,358.3,33785,2)
+ ;;=^5003921
+ ;;^UTILITY(U,$J,358.3,33786,0)
+ ;;=G44.40^^131^1677^4
+ ;;^UTILITY(U,$J,358.3,33786,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34863,1,3,0)
- ;;=3^Nondisp fx of neck of scapula, left shoulder, sequela
- ;;^UTILITY(U,$J,358.3,34863,1,4,0)
- ;;=4^S42.155S
- ;;^UTILITY(U,$J,358.3,34863,2)
- ;;=^5026746
- ;;^UTILITY(U,$J,358.3,34864,0)
- ;;=S42.154S^^183^2023^84
- ;;^UTILITY(U,$J,358.3,34864,1,0)
+ ;;^UTILITY(U,$J,358.3,33786,1,3,0)
+ ;;=3^Medication Overuse Headache,Not Intractable
+ ;;^UTILITY(U,$J,358.3,33786,1,4,0)
+ ;;=4^G44.40
+ ;;^UTILITY(U,$J,358.3,33786,2)
+ ;;=^5003947
+ ;;^UTILITY(U,$J,358.3,33787,0)
+ ;;=G44.89^^131^1677^3
+ ;;^UTILITY(U,$J,358.3,33787,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34864,1,3,0)
- ;;=3^Nondisp fx of neck of scapula, right shoulder, sequela
- ;;^UTILITY(U,$J,358.3,34864,1,4,0)
- ;;=4^S42.154S
- ;;^UTILITY(U,$J,358.3,34864,2)
- ;;=^5026739
- ;;^UTILITY(U,$J,358.3,34865,0)
- ;;=M84.412S^^183^2023^102
- ;;^UTILITY(U,$J,358.3,34865,1,0)
+ ;;^UTILITY(U,$J,358.3,33787,1,3,0)
+ ;;=3^Headache Syndrome NEC
+ ;;^UTILITY(U,$J,358.3,33787,1,4,0)
+ ;;=4^G44.89
+ ;;^UTILITY(U,$J,358.3,33787,2)
+ ;;=^5003954
+ ;;^UTILITY(U,$J,358.3,33788,0)
+ ;;=G44.84^^131^1677^7
+ ;;^UTILITY(U,$J,358.3,33788,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34865,1,3,0)
- ;;=3^Pathological fracture, left shoulder, sequela
+ ;;^UTILITY(U,$J,358.3,33788,1,3,0)
+ ;;=3^Primary Exertional Headache
+ ;;^UTILITY(U,$J,358.3,33788,1,4,0)
+ ;;=4^G44.84
+ ;;^UTILITY(U,$J,358.3,33788,2)
+ ;;=^336563
+ ;;^UTILITY(U,$J,358.3,33789,0)
+ ;;=G44.301^^131^1677^6
+ ;;^UTILITY(U,$J,358.3,33789,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33789,1,3,0)
+ ;;=3^Post-Traumatic Headache,Unspec,Intractable
+ ;;^UTILITY(U,$J,358.3,33789,1,4,0)
+ ;;=4^G44.301
+ ;;^UTILITY(U,$J,358.3,33789,2)
+ ;;=^5003941
+ ;;^UTILITY(U,$J,358.3,33790,0)
+ ;;=G44.209^^131^1677^8
+ ;;^UTILITY(U,$J,358.3,33790,1,0)
+ ;;=^358.31IA^4^2

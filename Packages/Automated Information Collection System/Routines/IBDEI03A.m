@@ -1,148 +1,138 @@
-IBDEI03A ; ; 06-AUG-2015
+IBDEI03A ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,997,1,0)
+ ;;^UTILITY(U,$J,358.3,1089,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,997,1,3,0)
- ;;=3^Dizziness and giddiness
- ;;^UTILITY(U,$J,358.3,997,1,4,0)
- ;;=4^R42.
- ;;^UTILITY(U,$J,358.3,997,2)
- ;;=^5019450
- ;;^UTILITY(U,$J,358.3,998,0)
- ;;=R43.0^^3^35^22
- ;;^UTILITY(U,$J,358.3,998,1,0)
+ ;;^UTILITY(U,$J,358.3,1089,1,3,0)
+ ;;=3^Urethritis,Nonspec
+ ;;^UTILITY(U,$J,358.3,1089,1,4,0)
+ ;;=4^N34.1
+ ;;^UTILITY(U,$J,358.3,1089,2)
+ ;;=^5015655
+ ;;^UTILITY(U,$J,358.3,1090,0)
+ ;;=N39.0^^6^112^11
+ ;;^UTILITY(U,$J,358.3,1090,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,998,1,3,0)
- ;;=3^Anosmia
- ;;^UTILITY(U,$J,358.3,998,1,4,0)
- ;;=4^R43.0
- ;;^UTILITY(U,$J,358.3,998,2)
- ;;=^7949
- ;;^UTILITY(U,$J,358.3,999,0)
- ;;=R49.0^^3^35^67
- ;;^UTILITY(U,$J,358.3,999,1,0)
+ ;;^UTILITY(U,$J,358.3,1090,1,3,0)
+ ;;=3^Urinary Tract Infection
+ ;;^UTILITY(U,$J,358.3,1090,1,4,0)
+ ;;=4^N39.0
+ ;;^UTILITY(U,$J,358.3,1090,2)
+ ;;=^124436
+ ;;^UTILITY(U,$J,358.3,1091,0)
+ ;;=R33.9^^6^112^12
+ ;;^UTILITY(U,$J,358.3,1091,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,999,1,3,0)
- ;;=3^Dysphonia
- ;;^UTILITY(U,$J,358.3,999,1,4,0)
- ;;=4^R49.0
- ;;^UTILITY(U,$J,358.3,999,2)
- ;;=^5019501
- ;;^UTILITY(U,$J,358.3,1000,0)
- ;;=R04.0^^3^35^69
- ;;^UTILITY(U,$J,358.3,1000,1,0)
+ ;;^UTILITY(U,$J,358.3,1091,1,3,0)
+ ;;=3^Urine Retention,Unspec
+ ;;^UTILITY(U,$J,358.3,1091,1,4,0)
+ ;;=4^R33.9
+ ;;^UTILITY(U,$J,358.3,1091,2)
+ ;;=^5019332
+ ;;^UTILITY(U,$J,358.3,1092,0)
+ ;;=R32.^^6^112^10
+ ;;^UTILITY(U,$J,358.3,1092,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1000,1,3,0)
- ;;=3^Epistaxis
- ;;^UTILITY(U,$J,358.3,1000,1,4,0)
- ;;=4^R04.0
- ;;^UTILITY(U,$J,358.3,1000,2)
- ;;=^5019173
- ;;^UTILITY(U,$J,358.3,1001,0)
- ;;=R04.1^^3^35^79
- ;;^UTILITY(U,$J,358.3,1001,1,0)
+ ;;^UTILITY(U,$J,358.3,1092,1,3,0)
+ ;;=3^Urinary Incontinence,Unspec
+ ;;^UTILITY(U,$J,358.3,1092,1,4,0)
+ ;;=4^R32.
+ ;;^UTILITY(U,$J,358.3,1092,2)
+ ;;=^5019329
+ ;;^UTILITY(U,$J,358.3,1093,0)
+ ;;=B97.89^^6^113^7
+ ;;^UTILITY(U,$J,358.3,1093,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1001,1,3,0)
- ;;=3^Hemorrhage from throat
- ;;^UTILITY(U,$J,358.3,1001,1,4,0)
- ;;=4^R04.1
- ;;^UTILITY(U,$J,358.3,1001,2)
- ;;=^5019174
- ;;^UTILITY(U,$J,358.3,1002,0)
- ;;=R09.82^^3^35^112
- ;;^UTILITY(U,$J,358.3,1002,1,0)
+ ;;^UTILITY(U,$J,358.3,1093,1,3,0)
+ ;;=3^Viral Agents as the Cause of Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,1093,1,4,0)
+ ;;=4^B97.89
+ ;;^UTILITY(U,$J,358.3,1093,2)
+ ;;=^5000879
+ ;;^UTILITY(U,$J,358.3,1094,0)
+ ;;=H54.7^^6^113^8
+ ;;^UTILITY(U,$J,358.3,1094,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1002,1,3,0)
- ;;=3^Postnasal drip
- ;;^UTILITY(U,$J,358.3,1002,1,4,0)
- ;;=4^R09.82
- ;;^UTILITY(U,$J,358.3,1002,2)
- ;;=^97058
- ;;^UTILITY(U,$J,358.3,1003,0)
- ;;=R06.5^^3^35^94
- ;;^UTILITY(U,$J,358.3,1003,1,0)
+ ;;^UTILITY(U,$J,358.3,1094,1,3,0)
+ ;;=3^Visual Loss,Unspec
+ ;;^UTILITY(U,$J,358.3,1094,1,4,0)
+ ;;=4^H54.7
+ ;;^UTILITY(U,$J,358.3,1094,2)
+ ;;=^5006368
+ ;;^UTILITY(U,$J,358.3,1095,0)
+ ;;=I83.91^^6^113^5
+ ;;^UTILITY(U,$J,358.3,1095,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1003,1,3,0)
- ;;=3^Mouth breathing
- ;;^UTILITY(U,$J,358.3,1003,1,4,0)
- ;;=4^R06.5
- ;;^UTILITY(U,$J,358.3,1003,2)
- ;;=^5019187
- ;;^UTILITY(U,$J,358.3,1004,0)
- ;;=R19.6^^3^35^75
- ;;^UTILITY(U,$J,358.3,1004,1,0)
+ ;;^UTILITY(U,$J,358.3,1095,1,3,0)
+ ;;=3^Varicose Veins,Asymptomatic,Right Lower Extremity
+ ;;^UTILITY(U,$J,358.3,1095,1,4,0)
+ ;;=4^I83.91
+ ;;^UTILITY(U,$J,358.3,1095,2)
+ ;;=^5008020
+ ;;^UTILITY(U,$J,358.3,1096,0)
+ ;;=I83.92^^6^113^4
+ ;;^UTILITY(U,$J,358.3,1096,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1004,1,3,0)
- ;;=3^Halitosis
- ;;^UTILITY(U,$J,358.3,1004,1,4,0)
- ;;=4^R19.6
- ;;^UTILITY(U,$J,358.3,1004,2)
- ;;=^5019275
- ;;^UTILITY(U,$J,358.3,1005,0)
- ;;=R59.9^^3^35^68
- ;;^UTILITY(U,$J,358.3,1005,1,0)
+ ;;^UTILITY(U,$J,358.3,1096,1,3,0)
+ ;;=3^Varicose Veins,Asymptomatic,Left Lower Extremity
+ ;;^UTILITY(U,$J,358.3,1096,1,4,0)
+ ;;=4^I83.92
+ ;;^UTILITY(U,$J,358.3,1096,2)
+ ;;=^5008021
+ ;;^UTILITY(U,$J,358.3,1097,0)
+ ;;=I83.93^^6^113^3
+ ;;^UTILITY(U,$J,358.3,1097,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1005,1,3,0)
- ;;=3^Enlarged lymph nodes, unspecified
- ;;^UTILITY(U,$J,358.3,1005,1,4,0)
- ;;=4^R59.9
- ;;^UTILITY(U,$J,358.3,1005,2)
- ;;=^5019531
- ;;^UTILITY(U,$J,358.3,1006,0)
- ;;=R06.1^^3^35^116
- ;;^UTILITY(U,$J,358.3,1006,1,0)
+ ;;^UTILITY(U,$J,358.3,1097,1,3,0)
+ ;;=3^Varicose Veins,Asymptomatic,Bilateral Lower Extremities
+ ;;^UTILITY(U,$J,358.3,1097,1,4,0)
+ ;;=4^I83.93
+ ;;^UTILITY(U,$J,358.3,1097,2)
+ ;;=^5008022
+ ;;^UTILITY(U,$J,358.3,1098,0)
+ ;;=R53.1^^6^113^9
+ ;;^UTILITY(U,$J,358.3,1098,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1006,1,3,0)
- ;;=3^Stridor
- ;;^UTILITY(U,$J,358.3,1006,1,4,0)
- ;;=4^R06.1
- ;;^UTILITY(U,$J,358.3,1006,2)
- ;;=^5019183
- ;;^UTILITY(U,$J,358.3,1007,0)
- ;;=R13.10^^3^35^66
- ;;^UTILITY(U,$J,358.3,1007,1,0)
+ ;;^UTILITY(U,$J,358.3,1098,1,3,0)
+ ;;=3^Weakness
+ ;;^UTILITY(U,$J,358.3,1098,1,4,0)
+ ;;=4^R53.1
+ ;;^UTILITY(U,$J,358.3,1098,2)
+ ;;=^5019516
+ ;;^UTILITY(U,$J,358.3,1099,0)
+ ;;=R63.4^^6^113^10
+ ;;^UTILITY(U,$J,358.3,1099,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1007,1,3,0)
- ;;=3^Dysphagia, unspecified
- ;;^UTILITY(U,$J,358.3,1007,1,4,0)
- ;;=4^R13.10
- ;;^UTILITY(U,$J,358.3,1007,2)
- ;;=^335307
- ;;^UTILITY(U,$J,358.3,1008,0)
- ;;=R13.11^^3^35^62
- ;;^UTILITY(U,$J,358.3,1008,1,0)
+ ;;^UTILITY(U,$J,358.3,1099,1,3,0)
+ ;;=3^Weight Loss,Abnormal
+ ;;^UTILITY(U,$J,358.3,1099,1,4,0)
+ ;;=4^R63.4
+ ;;^UTILITY(U,$J,358.3,1099,2)
+ ;;=^5019542
+ ;;^UTILITY(U,$J,358.3,1100,0)
+ ;;=B02.9^^6^113^11
+ ;;^UTILITY(U,$J,358.3,1100,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1008,1,3,0)
- ;;=3^Dysphagia, oral phase
- ;;^UTILITY(U,$J,358.3,1008,1,4,0)
- ;;=4^R13.11
- ;;^UTILITY(U,$J,358.3,1008,2)
- ;;=^335276
- ;;^UTILITY(U,$J,358.3,1009,0)
- ;;=R13.12^^3^35^63
- ;;^UTILITY(U,$J,358.3,1009,1,0)
+ ;;^UTILITY(U,$J,358.3,1100,1,3,0)
+ ;;=3^Zoster w/o Complications
+ ;;^UTILITY(U,$J,358.3,1100,1,4,0)
+ ;;=4^B02.9
+ ;;^UTILITY(U,$J,358.3,1100,2)
+ ;;=^5000501
+ ;;^UTILITY(U,$J,358.3,1101,0)
+ ;;=I49.3^^6^113^6
+ ;;^UTILITY(U,$J,358.3,1101,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1009,1,3,0)
- ;;=3^Dysphagia, oropharyngeal phase
- ;;^UTILITY(U,$J,358.3,1009,1,4,0)
- ;;=4^R13.12
- ;;^UTILITY(U,$J,358.3,1009,2)
- ;;=^335277
- ;;^UTILITY(U,$J,358.3,1010,0)
- ;;=R13.13^^3^35^64
- ;;^UTILITY(U,$J,358.3,1010,1,0)
+ ;;^UTILITY(U,$J,358.3,1101,1,3,0)
+ ;;=3^Vetricular Premature Depolarization
+ ;;^UTILITY(U,$J,358.3,1101,1,4,0)
+ ;;=4^I49.3
+ ;;^UTILITY(U,$J,358.3,1101,2)
+ ;;=^5007233
+ ;;^UTILITY(U,$J,358.3,1102,0)
+ ;;=I83.019^^6^113^2
+ ;;^UTILITY(U,$J,358.3,1102,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1010,1,3,0)
- ;;=3^Dysphagia, pharyngeal phase
- ;;^UTILITY(U,$J,358.3,1010,1,4,0)
- ;;=4^R13.13
- ;;^UTILITY(U,$J,358.3,1010,2)
- ;;=^335278
- ;;^UTILITY(U,$J,358.3,1011,0)
- ;;=R13.14^^3^35^65
- ;;^UTILITY(U,$J,358.3,1011,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1011,1,3,0)
- ;;=3^Dysphagia, pharyngoesophageal phase
+ ;;^UTILITY(U,$J,358.3,1102,1,3,0)
+ ;;=3^Varicose Veins Right Lower Extrem w/ Ulcer Unspec Site

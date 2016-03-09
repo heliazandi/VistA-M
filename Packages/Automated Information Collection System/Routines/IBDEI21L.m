@@ -1,134 +1,132 @@
-IBDEI21L ; ; 06-AUG-2015
+IBDEI21L ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35683,1,3,0)
- ;;=3^Hypomagnesemia
- ;;^UTILITY(U,$J,358.3,35683,1,4,0)
- ;;=4^E83.42
- ;;^UTILITY(U,$J,358.3,35683,2)
- ;;=^5003003
- ;;^UTILITY(U,$J,358.3,35684,0)
- ;;=E83.41^^189^2060^23
- ;;^UTILITY(U,$J,358.3,35684,1,0)
+ ;;^UTILITY(U,$J,358.3,34644,1,3,0)
+ ;;=3^COPD w/ Acute Lower Respiratory Infection
+ ;;^UTILITY(U,$J,358.3,34644,1,4,0)
+ ;;=4^J44.0
+ ;;^UTILITY(U,$J,358.3,34644,2)
+ ;;=^5008239
+ ;;^UTILITY(U,$J,358.3,34645,0)
+ ;;=J94.1^^131^1690^23
+ ;;^UTILITY(U,$J,358.3,34645,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35684,1,3,0)
- ;;=3^Hypermagnesemia
- ;;^UTILITY(U,$J,358.3,35684,1,4,0)
- ;;=4^E83.41
- ;;^UTILITY(U,$J,358.3,35684,2)
- ;;=^5003002
- ;;^UTILITY(U,$J,358.3,35685,0)
- ;;=E83.40^^189^2060^16
- ;;^UTILITY(U,$J,358.3,35685,1,0)
+ ;;^UTILITY(U,$J,358.3,34645,1,3,0)
+ ;;=3^Fibrothorax
+ ;;^UTILITY(U,$J,358.3,34645,1,4,0)
+ ;;=4^J94.1
+ ;;^UTILITY(U,$J,358.3,34645,2)
+ ;;=^5008317
+ ;;^UTILITY(U,$J,358.3,34646,0)
+ ;;=G47.33^^131^1690^31
+ ;;^UTILITY(U,$J,358.3,34646,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35685,1,3,0)
- ;;=3^Disorders of magnesium metabolism, unspecified
- ;;^UTILITY(U,$J,358.3,35685,1,4,0)
- ;;=4^E83.40
- ;;^UTILITY(U,$J,358.3,35685,2)
- ;;=^5003001
- ;;^UTILITY(U,$J,358.3,35686,0)
- ;;=E83.49^^189^2060^28
- ;;^UTILITY(U,$J,358.3,35686,1,0)
+ ;;^UTILITY(U,$J,358.3,34646,1,3,0)
+ ;;=3^Obstructive Sleep Apnea
+ ;;^UTILITY(U,$J,358.3,34646,1,4,0)
+ ;;=4^G47.33
+ ;;^UTILITY(U,$J,358.3,34646,2)
+ ;;=^332763
+ ;;^UTILITY(U,$J,358.3,34647,0)
+ ;;=R91.1^^131^1690^55
+ ;;^UTILITY(U,$J,358.3,34647,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35686,1,3,0)
- ;;=3^Magnesium Metabolism Disorders NEC
- ;;^UTILITY(U,$J,358.3,35686,1,4,0)
- ;;=4^E83.49
- ;;^UTILITY(U,$J,358.3,35686,2)
- ;;=^5003004
- ;;^UTILITY(U,$J,358.3,35687,0)
- ;;=E46.^^189^2060^37
- ;;^UTILITY(U,$J,358.3,35687,1,0)
+ ;;^UTILITY(U,$J,358.3,34647,1,3,0)
+ ;;=3^Solitary Pulmonary Nodule
+ ;;^UTILITY(U,$J,358.3,34647,1,4,0)
+ ;;=4^R91.1
+ ;;^UTILITY(U,$J,358.3,34647,2)
+ ;;=^5019707
+ ;;^UTILITY(U,$J,358.3,34648,0)
+ ;;=T74.21XA^^131^1691^1
+ ;;^UTILITY(U,$J,358.3,34648,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35687,1,3,0)
- ;;=3^Protein-Calorie Malnutrition,Unspec
- ;;^UTILITY(U,$J,358.3,35687,1,4,0)
- ;;=4^E46.
- ;;^UTILITY(U,$J,358.3,35687,2)
- ;;=^5002790
- ;;^UTILITY(U,$J,358.3,35688,0)
- ;;=B37.0^^189^2060^11
- ;;^UTILITY(U,$J,358.3,35688,1,0)
+ ;;^UTILITY(U,$J,358.3,34648,1,3,0)
+ ;;=3^Adult Sexual Abuse,Confirmed,Init Encntr
+ ;;^UTILITY(U,$J,358.3,34648,1,4,0)
+ ;;=4^T74.21XA
+ ;;^UTILITY(U,$J,358.3,34648,2)
+ ;;=^5054152
+ ;;^UTILITY(U,$J,358.3,34649,0)
+ ;;=T76.21XA^^131^1691^4
+ ;;^UTILITY(U,$J,358.3,34649,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35688,1,3,0)
- ;;=3^Candidal stomatitis
- ;;^UTILITY(U,$J,358.3,35688,1,4,0)
- ;;=4^B37.0
- ;;^UTILITY(U,$J,358.3,35688,2)
- ;;=^5000612
- ;;^UTILITY(U,$J,358.3,35689,0)
- ;;=B37.83^^189^2060^10
- ;;^UTILITY(U,$J,358.3,35689,1,0)
+ ;;^UTILITY(U,$J,358.3,34649,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Init Encntr
+ ;;^UTILITY(U,$J,358.3,34649,1,4,0)
+ ;;=4^T76.21XA
+ ;;^UTILITY(U,$J,358.3,34649,2)
+ ;;=^5054227
+ ;;^UTILITY(U,$J,358.3,34650,0)
+ ;;=Y07.9^^131^1691^9
+ ;;^UTILITY(U,$J,358.3,34650,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35689,1,3,0)
- ;;=3^Candidal cheilitis
- ;;^UTILITY(U,$J,358.3,35689,1,4,0)
- ;;=4^B37.83
- ;;^UTILITY(U,$J,358.3,35689,2)
- ;;=^5000622
- ;;^UTILITY(U,$J,358.3,35690,0)
- ;;=A04.7^^189^2060^20
- ;;^UTILITY(U,$J,358.3,35690,1,0)
+ ;;^UTILITY(U,$J,358.3,34650,1,3,0)
+ ;;=3^Perpetrator of Maltreatment/Neglect,Unspec
+ ;;^UTILITY(U,$J,358.3,34650,1,4,0)
+ ;;=4^Y07.9
+ ;;^UTILITY(U,$J,358.3,34650,2)
+ ;;=^5061209
+ ;;^UTILITY(U,$J,358.3,34651,0)
+ ;;=T74.21XD^^131^1691^3
+ ;;^UTILITY(U,$J,358.3,34651,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35690,1,3,0)
- ;;=3^Enterocolitis due to Clostridium difficile
- ;;^UTILITY(U,$J,358.3,35690,1,4,0)
- ;;=4^A04.7
- ;;^UTILITY(U,$J,358.3,35690,2)
- ;;=^5000029
- ;;^UTILITY(U,$J,358.3,35691,0)
- ;;=R73.09^^189^2060^3
- ;;^UTILITY(U,$J,358.3,35691,1,0)
+ ;;^UTILITY(U,$J,358.3,34651,1,3,0)
+ ;;=3^Adult Sexual Abuse,Confirmed,Sub Encntr
+ ;;^UTILITY(U,$J,358.3,34651,1,4,0)
+ ;;=4^T74.21XD
+ ;;^UTILITY(U,$J,358.3,34651,2)
+ ;;=^5054153
+ ;;^UTILITY(U,$J,358.3,34652,0)
+ ;;=T74.21XS^^131^1691^2
+ ;;^UTILITY(U,$J,358.3,34652,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35691,1,3,0)
- ;;=3^Abnormal glucose NEC
- ;;^UTILITY(U,$J,358.3,35691,1,4,0)
- ;;=4^R73.09
- ;;^UTILITY(U,$J,358.3,35691,2)
- ;;=^5019563
- ;;^UTILITY(U,$J,358.3,35692,0)
- ;;=R80.9^^189^2060^38
- ;;^UTILITY(U,$J,358.3,35692,1,0)
+ ;;^UTILITY(U,$J,358.3,34652,1,3,0)
+ ;;=3^Adult Sexual Abuse,Confirmed,Sequela
+ ;;^UTILITY(U,$J,358.3,34652,1,4,0)
+ ;;=4^T74.21XS
+ ;;^UTILITY(U,$J,358.3,34652,2)
+ ;;=^5054154
+ ;;^UTILITY(U,$J,358.3,34653,0)
+ ;;=T76.21XD^^131^1691^6
+ ;;^UTILITY(U,$J,358.3,34653,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35692,1,3,0)
- ;;=3^Proteinuria, unspecified
- ;;^UTILITY(U,$J,358.3,35692,1,4,0)
- ;;=4^R80.9
- ;;^UTILITY(U,$J,358.3,35692,2)
- ;;=^5019599
- ;;^UTILITY(U,$J,358.3,35693,0)
- ;;=R94.5^^189^2060^4
- ;;^UTILITY(U,$J,358.3,35693,1,0)
+ ;;^UTILITY(U,$J,358.3,34653,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Sub Encntr
+ ;;^UTILITY(U,$J,358.3,34653,1,4,0)
+ ;;=4^T76.21XD
+ ;;^UTILITY(U,$J,358.3,34653,2)
+ ;;=^5054228
+ ;;^UTILITY(U,$J,358.3,34654,0)
+ ;;=T76.21XS^^131^1691^5
+ ;;^UTILITY(U,$J,358.3,34654,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35693,1,3,0)
- ;;=3^Abnormal results of liver function studies
- ;;^UTILITY(U,$J,358.3,35693,1,4,0)
- ;;=4^R94.5
- ;;^UTILITY(U,$J,358.3,35693,2)
- ;;=^5019742
- ;;^UTILITY(U,$J,358.3,35694,0)
- ;;=Z55.9^^189^2060^35
- ;;^UTILITY(U,$J,358.3,35694,1,0)
+ ;;^UTILITY(U,$J,358.3,34654,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Sequela
+ ;;^UTILITY(U,$J,358.3,34654,1,4,0)
+ ;;=4^T76.21XS
+ ;;^UTILITY(U,$J,358.3,34654,2)
+ ;;=^5054229
+ ;;^UTILITY(U,$J,358.3,34655,0)
+ ;;=Y07.53^^131^1691^7
+ ;;^UTILITY(U,$J,358.3,34655,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35694,1,3,0)
- ;;=3^Problems related to education and literacy, unspecified
- ;;^UTILITY(U,$J,358.3,35694,1,4,0)
- ;;=4^Z55.9
- ;;^UTILITY(U,$J,358.3,35694,2)
- ;;=^5063106
- ;;^UTILITY(U,$J,358.3,35695,0)
- ;;=T81.30XA^^189^2061^12
- ;;^UTILITY(U,$J,358.3,35695,1,0)
+ ;;^UTILITY(U,$J,358.3,34655,1,3,0)
+ ;;=3^Instructor,Perpetrator of MST
+ ;;^UTILITY(U,$J,358.3,34655,1,4,0)
+ ;;=4^Y07.53
+ ;;^UTILITY(U,$J,358.3,34655,2)
+ ;;=^5061207
+ ;;^UTILITY(U,$J,358.3,34656,0)
+ ;;=Y07.59^^131^1691^8
+ ;;^UTILITY(U,$J,358.3,34656,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35695,1,3,0)
- ;;=3^Disruption of wound, unspecified, initial encounter
- ;;^UTILITY(U,$J,358.3,35695,1,4,0)
- ;;=4^T81.30XA
- ;;^UTILITY(U,$J,358.3,35695,2)
- ;;=^5054467
- ;;^UTILITY(U,$J,358.3,35696,0)
- ;;=T81.30XD^^189^2061^14
- ;;^UTILITY(U,$J,358.3,35696,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34656,1,3,0)
+ ;;=3^Non-Family Member,Perpetrator of MST/Abuse NEC
+ ;;^UTILITY(U,$J,358.3,34656,1,4,0)
+ ;;=4^Y07.59
+ ;;^UTILITY(U,$J,358.3,34656,2)
+ ;;=^5061208
+ ;;^UTILITY(U,$J,358.3,34657,0)
+ ;;=E66.01^^131^1692^120

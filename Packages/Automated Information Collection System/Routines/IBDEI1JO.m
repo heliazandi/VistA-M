@@ -1,116 +1,122 @@
-IBDEI1JO ; ; 06-AUG-2015
+IBDEI1JO ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,27425,2)
- ;;=Heart Failure, Systolic^328594
- ;;^UTILITY(U,$J,358.3,27426,0)
- ;;=428.21^^162^1781^40
- ;;^UTILITY(U,$J,358.3,27426,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27426,1,4,0)
- ;;=4^428.21
- ;;^UTILITY(U,$J,358.3,27426,1,5,0)
- ;;=5^Heart Failure, Acute Systolic
- ;;^UTILITY(U,$J,358.3,27426,2)
- ;;=Heart Failure, Acute Systolic^328494
- ;;^UTILITY(U,$J,358.3,27427,0)
- ;;=428.22^^162^1781^42
- ;;^UTILITY(U,$J,358.3,27427,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27427,1,4,0)
- ;;=4^428.22
- ;;^UTILITY(U,$J,358.3,27427,1,5,0)
- ;;=5^Heart Failure, Chronic Systolic
- ;;^UTILITY(U,$J,358.3,27427,2)
- ;;=Heart Failure, Chronic Systolic^328495
- ;;^UTILITY(U,$J,358.3,27428,0)
- ;;=428.23^^162^1781^49
- ;;^UTILITY(U,$J,358.3,27428,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27428,1,4,0)
- ;;=4^428.23
- ;;^UTILITY(U,$J,358.3,27428,1,5,0)
- ;;=5^Heart Failure, Systolic, Acute On Chronic
- ;;^UTILITY(U,$J,358.3,27428,2)
- ;;=Heart Failure, Systolic, Acute on Chronic^328496
- ;;^UTILITY(U,$J,358.3,27429,0)
- ;;=428.30^^162^1781^43
- ;;^UTILITY(U,$J,358.3,27429,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27429,1,4,0)
- ;;=4^428.30
- ;;^UTILITY(U,$J,358.3,27429,1,5,0)
- ;;=5^Heart Failure, Diastolic
- ;;^UTILITY(U,$J,358.3,27429,2)
- ;;=Heart Failure, Diastolic^328595
- ;;^UTILITY(U,$J,358.3,27430,0)
- ;;=428.31^^162^1781^39
- ;;^UTILITY(U,$J,358.3,27430,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27430,1,4,0)
- ;;=4^428.31
- ;;^UTILITY(U,$J,358.3,27430,1,5,0)
- ;;=5^Heart Failure, Acute Diastolic
- ;;^UTILITY(U,$J,358.3,27430,2)
- ;;=Heart Failure, Acute Diastolic^328497
- ;;^UTILITY(U,$J,358.3,27431,0)
- ;;=428.32^^162^1781^41
- ;;^UTILITY(U,$J,358.3,27431,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27431,1,4,0)
- ;;=4^428.32
- ;;^UTILITY(U,$J,358.3,27431,1,5,0)
- ;;=5^Heart Failure, Chronic Diastolic
- ;;^UTILITY(U,$J,358.3,27431,2)
- ;;=Heart Failure, Chronic Diastolic^328498
- ;;^UTILITY(U,$J,358.3,27432,0)
- ;;=428.33^^162^1781^45
- ;;^UTILITY(U,$J,358.3,27432,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27432,1,4,0)
- ;;=4^428.33
- ;;^UTILITY(U,$J,358.3,27432,1,5,0)
- ;;=5^Heart Failure, Diastolic, Acute On Chronic
- ;;^UTILITY(U,$J,358.3,27432,2)
- ;;=Heart Failure, Diastolic, Acute on Chronic^328499
- ;;^UTILITY(U,$J,358.3,27433,0)
- ;;=428.40^^162^1781^44
- ;;^UTILITY(U,$J,358.3,27433,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27433,1,4,0)
- ;;=4^428.40
- ;;^UTILITY(U,$J,358.3,27433,1,5,0)
- ;;=5^Heart Failure, Diastolic& Systolic
- ;;^UTILITY(U,$J,358.3,27433,2)
- ;;=Heart Failure, Systolic and Diastolic^328596
- ;;^UTILITY(U,$J,358.3,27434,0)
- ;;=428.41^^162^1781^46
- ;;^UTILITY(U,$J,358.3,27434,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27434,1,4,0)
- ;;=4^428.41
- ;;^UTILITY(U,$J,358.3,27434,1,5,0)
- ;;=5^Heart Failure, Systolic & Diastolic, Acute
- ;;^UTILITY(U,$J,358.3,27434,2)
- ;;=Heart Failure, Systolic & Diastolic, Acute^328500
- ;;^UTILITY(U,$J,358.3,27435,0)
- ;;=428.42^^162^1781^48
- ;;^UTILITY(U,$J,358.3,27435,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27435,1,4,0)
- ;;=4^428.42
- ;;^UTILITY(U,$J,358.3,27435,1,5,0)
- ;;=5^Heart Failure, Systolic & Diastolic, Chronic
- ;;^UTILITY(U,$J,358.3,27435,2)
- ;;= Heart Failure, Systolic & Diastolic, Chronic^328501
- ;;^UTILITY(U,$J,358.3,27436,0)
- ;;=428.43^^162^1781^47
- ;;^UTILITY(U,$J,358.3,27436,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27436,1,4,0)
- ;;=4^428.43
- ;;^UTILITY(U,$J,358.3,27436,1,5,0)
- ;;=5^Heart Failure, Systolic & Diastolic, Acute On Chronic
- ;;^UTILITY(U,$J,358.3,27436,2)
- ;;= Heart Failure, Systolic & Diastolic, Acute on Chronic^328502
+ ;;^UTILITY(U,$J,358.3,26208,0)
+ ;;=F12.121^^98^1237^6
+ ;;^UTILITY(U,$J,358.3,26208,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26208,1,3,0)
+ ;;=3^Cannabis Intoxication Delium w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26208,1,4,0)
+ ;;=4^F12.121
+ ;;^UTILITY(U,$J,358.3,26208,2)
+ ;;=^5003157
+ ;;^UTILITY(U,$J,358.3,26209,0)
+ ;;=F12.221^^98^1237^7
+ ;;^UTILITY(U,$J,358.3,26209,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26209,1,3,0)
+ ;;=3^Cannabis Intoxication Delium w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26209,1,4,0)
+ ;;=4^F12.221
+ ;;^UTILITY(U,$J,358.3,26209,2)
+ ;;=^5003169
+ ;;^UTILITY(U,$J,358.3,26210,0)
+ ;;=F12.921^^98^1237^8
+ ;;^UTILITY(U,$J,358.3,26210,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26210,1,3,0)
+ ;;=3^Cannabis Intoxication Delium w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26210,1,4,0)
+ ;;=4^F12.921
+ ;;^UTILITY(U,$J,358.3,26210,2)
+ ;;=^5003180
+ ;;^UTILITY(U,$J,358.3,26211,0)
+ ;;=F12.229^^98^1237^12
+ ;;^UTILITY(U,$J,358.3,26211,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26211,1,3,0)
+ ;;=3^Cannabis Intoxication w/o Perceptual Disturbances w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26211,1,4,0)
+ ;;=4^F12.229
+ ;;^UTILITY(U,$J,358.3,26211,2)
+ ;;=^5003171
+ ;;^UTILITY(U,$J,358.3,26212,0)
+ ;;=F12.122^^98^1237^9
+ ;;^UTILITY(U,$J,358.3,26212,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26212,1,3,0)
+ ;;=3^Cannabis Intoxication w/ Perceptual Disturbances w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26212,1,4,0)
+ ;;=4^F12.122
+ ;;^UTILITY(U,$J,358.3,26212,2)
+ ;;=^5003158
+ ;;^UTILITY(U,$J,358.3,26213,0)
+ ;;=F12.222^^98^1237^10
+ ;;^UTILITY(U,$J,358.3,26213,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26213,1,3,0)
+ ;;=3^Cannabis Intoxication w/ Perceptual Disturbances w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26213,1,4,0)
+ ;;=4^F12.222
+ ;;^UTILITY(U,$J,358.3,26213,2)
+ ;;=^5003170
+ ;;^UTILITY(U,$J,358.3,26214,0)
+ ;;=F12.129^^98^1237^14
+ ;;^UTILITY(U,$J,358.3,26214,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26214,1,3,0)
+ ;;=3^Cannabis Intoxication,Unspec
+ ;;^UTILITY(U,$J,358.3,26214,1,4,0)
+ ;;=4^F12.129
+ ;;^UTILITY(U,$J,358.3,26214,2)
+ ;;=^5003159
+ ;;^UTILITY(U,$J,358.3,26215,0)
+ ;;=F12.922^^98^1237^11
+ ;;^UTILITY(U,$J,358.3,26215,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26215,1,3,0)
+ ;;=3^Cannabis Intoxication w/ Perceptual Disturbances w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26215,1,4,0)
+ ;;=4^F12.922
+ ;;^UTILITY(U,$J,358.3,26215,2)
+ ;;=^5003181
+ ;;^UTILITY(U,$J,358.3,26216,0)
+ ;;=F12.980^^98^1237^1
+ ;;^UTILITY(U,$J,358.3,26216,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26216,1,3,0)
+ ;;=3^Cannabis Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26216,1,4,0)
+ ;;=4^F12.980
+ ;;^UTILITY(U,$J,358.3,26216,2)
+ ;;=^5003186
+ ;;^UTILITY(U,$J,358.3,26217,0)
+ ;;=F12.159^^98^1237^2
+ ;;^UTILITY(U,$J,358.3,26217,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26217,1,3,0)
+ ;;=3^Cannabis Induced Psychotic Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26217,1,4,0)
+ ;;=4^F12.159
+ ;;^UTILITY(U,$J,358.3,26217,2)
+ ;;=^5003162
+ ;;^UTILITY(U,$J,358.3,26218,0)
+ ;;=F12.259^^98^1237^3
+ ;;^UTILITY(U,$J,358.3,26218,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26218,1,3,0)
+ ;;=3^Cannabis Induced Psychotic Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26218,1,4,0)
+ ;;=4^F12.259
+ ;;^UTILITY(U,$J,358.3,26218,2)
+ ;;=^5003174
+ ;;^UTILITY(U,$J,358.3,26219,0)
+ ;;=F12.959^^98^1237^4
+ ;;^UTILITY(U,$J,358.3,26219,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26219,1,3,0)
+ ;;=3^Cannabis Induced Psychotic Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26219,1,4,0)
+ ;;=4^F12.959

@@ -1,134 +1,132 @@
-IBDEI20X ; ; 06-AUG-2015
+IBDEI20X ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35376,1,3,0)
- ;;=3^Slurred speech
- ;;^UTILITY(U,$J,358.3,35376,1,4,0)
- ;;=4^R47.81
- ;;^UTILITY(U,$J,358.3,35376,2)
- ;;=^5019491
- ;;^UTILITY(U,$J,358.3,35377,0)
- ;;=R48.9^^186^2036^13
- ;;^UTILITY(U,$J,358.3,35377,1,0)
+ ;;^UTILITY(U,$J,358.3,34333,1,4,0)
+ ;;=4^G90.59
+ ;;^UTILITY(U,$J,358.3,34333,2)
+ ;;=^5004171
+ ;;^UTILITY(U,$J,358.3,34334,0)
+ ;;=G56.01^^131^1686^12
+ ;;^UTILITY(U,$J,358.3,34334,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35377,1,3,0)
- ;;=3^Symbolic Dysfunctions,Unspec
- ;;^UTILITY(U,$J,358.3,35377,1,4,0)
- ;;=4^R48.9
- ;;^UTILITY(U,$J,358.3,35377,2)
- ;;=^5019500
- ;;^UTILITY(U,$J,358.3,35378,0)
- ;;=Z90.02^^186^2037^1
- ;;^UTILITY(U,$J,358.3,35378,1,0)
+ ;;^UTILITY(U,$J,358.3,34334,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,34334,1,4,0)
+ ;;=4^G56.01
+ ;;^UTILITY(U,$J,358.3,34334,2)
+ ;;=^5004018
+ ;;^UTILITY(U,$J,358.3,34335,0)
+ ;;=G56.02^^131^1686^11
+ ;;^UTILITY(U,$J,358.3,34335,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35378,1,3,0)
- ;;=3^Acquired absence of larynx
- ;;^UTILITY(U,$J,358.3,35378,1,4,0)
- ;;=4^Z90.02
- ;;^UTILITY(U,$J,358.3,35378,2)
- ;;=^5063579
- ;;^UTILITY(U,$J,358.3,35379,0)
- ;;=Z90.09^^186^2037^2
- ;;^UTILITY(U,$J,358.3,35379,1,0)
+ ;;^UTILITY(U,$J,358.3,34335,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,34335,1,4,0)
+ ;;=4^G56.02
+ ;;^UTILITY(U,$J,358.3,34335,2)
+ ;;=^5004019
+ ;;^UTILITY(U,$J,358.3,34336,0)
+ ;;=G56.21^^131^1686^56
+ ;;^UTILITY(U,$J,358.3,34336,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35379,1,3,0)
- ;;=3^Acquired absence of other part of head and neck
- ;;^UTILITY(U,$J,358.3,35379,1,4,0)
- ;;=4^Z90.09
- ;;^UTILITY(U,$J,358.3,35379,2)
- ;;=^5063580
- ;;^UTILITY(U,$J,358.3,35380,0)
- ;;=Z45.328^^186^2037^3
- ;;^UTILITY(U,$J,358.3,35380,1,0)
+ ;;^UTILITY(U,$J,358.3,34336,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,34336,1,4,0)
+ ;;=4^G56.21
+ ;;^UTILITY(U,$J,358.3,34336,2)
+ ;;=^5004024
+ ;;^UTILITY(U,$J,358.3,34337,0)
+ ;;=G56.22^^131^1686^55
+ ;;^UTILITY(U,$J,358.3,34337,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35380,1,3,0)
- ;;=3^Adjust and management of implanted hear dev
- ;;^UTILITY(U,$J,358.3,35380,1,4,0)
- ;;=4^Z45.328
- ;;^UTILITY(U,$J,358.3,35380,2)
- ;;=^5063003
- ;;^UTILITY(U,$J,358.3,35381,0)
- ;;=Z45.49^^186^2037^4
- ;;^UTILITY(U,$J,358.3,35381,1,0)
+ ;;^UTILITY(U,$J,358.3,34337,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,34337,1,4,0)
+ ;;=4^G56.22
+ ;;^UTILITY(U,$J,358.3,34337,2)
+ ;;=^5004025
+ ;;^UTILITY(U,$J,358.3,34338,0)
+ ;;=M26.60^^131^1686^180
+ ;;^UTILITY(U,$J,358.3,34338,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35381,1,3,0)
- ;;=3^Adjust and mgmt of implanted nervous sys device
- ;;^UTILITY(U,$J,358.3,35381,1,4,0)
- ;;=4^Z45.49
- ;;^UTILITY(U,$J,358.3,35381,2)
- ;;=^5063006
- ;;^UTILITY(U,$J,358.3,35382,0)
- ;;=Z43.3^^186^2037^5
- ;;^UTILITY(U,$J,358.3,35382,1,0)
+ ;;^UTILITY(U,$J,358.3,34338,1,3,0)
+ ;;=3^Temporomandibular Joint Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,34338,1,4,0)
+ ;;=4^M26.60
+ ;;^UTILITY(U,$J,358.3,34338,2)
+ ;;=^5011714
+ ;;^UTILITY(U,$J,358.3,34339,0)
+ ;;=L40.52^^131^1686^137
+ ;;^UTILITY(U,$J,358.3,34339,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35382,1,3,0)
- ;;=3^Attention to colostomy
- ;;^UTILITY(U,$J,358.3,35382,1,4,0)
- ;;=4^Z43.3
- ;;^UTILITY(U,$J,358.3,35382,2)
- ;;=^5062961
- ;;^UTILITY(U,$J,358.3,35383,0)
- ;;=Z43.0^^186^2037^6
- ;;^UTILITY(U,$J,358.3,35383,1,0)
+ ;;^UTILITY(U,$J,358.3,34339,1,3,0)
+ ;;=3^Psoriatic Arthritis Mutilans
+ ;;^UTILITY(U,$J,358.3,34339,1,4,0)
+ ;;=4^L40.52
+ ;;^UTILITY(U,$J,358.3,34339,2)
+ ;;=^5009167
+ ;;^UTILITY(U,$J,358.3,34340,0)
+ ;;=L40.53^^131^1686^138
+ ;;^UTILITY(U,$J,358.3,34340,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35383,1,3,0)
- ;;=3^Attention to tracheostomy
- ;;^UTILITY(U,$J,358.3,35383,1,4,0)
- ;;=4^Z43.0
- ;;^UTILITY(U,$J,358.3,35383,2)
- ;;=^5062958
- ;;^UTILITY(U,$J,358.3,35384,0)
- ;;=Z02.71^^186^2037^7
- ;;^UTILITY(U,$J,358.3,35384,1,0)
+ ;;^UTILITY(U,$J,358.3,34340,1,3,0)
+ ;;=3^Psoriatic Spondylitis
+ ;;^UTILITY(U,$J,358.3,34340,1,4,0)
+ ;;=4^L40.53
+ ;;^UTILITY(U,$J,358.3,34340,2)
+ ;;=^5009168
+ ;;^UTILITY(U,$J,358.3,34341,0)
+ ;;=M32.9^^131^1686^179
+ ;;^UTILITY(U,$J,358.3,34341,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35384,1,3,0)
- ;;=3^Disability determination
- ;;^UTILITY(U,$J,358.3,35384,1,4,0)
- ;;=4^Z02.71
- ;;^UTILITY(U,$J,358.3,35384,2)
- ;;=^5062640
- ;;^UTILITY(U,$J,358.3,35385,0)
- ;;=Z04.8^^186^2037^8
- ;;^UTILITY(U,$J,358.3,35385,1,0)
+ ;;^UTILITY(U,$J,358.3,34341,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Unspec
+ ;;^UTILITY(U,$J,358.3,34341,1,4,0)
+ ;;=4^M32.9
+ ;;^UTILITY(U,$J,358.3,34341,2)
+ ;;=^5011761
+ ;;^UTILITY(U,$J,358.3,34342,0)
+ ;;=M32.0^^131^1686^175
+ ;;^UTILITY(U,$J,358.3,34342,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35385,1,3,0)
- ;;=3^Exam and observation for oth reasons
- ;;^UTILITY(U,$J,358.3,35385,1,4,0)
- ;;=4^Z04.8
- ;;^UTILITY(U,$J,358.3,35385,2)
- ;;=^5062665
- ;;^UTILITY(U,$J,358.3,35386,0)
- ;;=Z02.0^^186^2037^9
- ;;^UTILITY(U,$J,358.3,35386,1,0)
+ ;;^UTILITY(U,$J,358.3,34342,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Drug-Induced
+ ;;^UTILITY(U,$J,358.3,34342,1,4,0)
+ ;;=4^M32.0
+ ;;^UTILITY(U,$J,358.3,34342,2)
+ ;;=^5011752
+ ;;^UTILITY(U,$J,358.3,34343,0)
+ ;;=M32.13^^131^1686^177
+ ;;^UTILITY(U,$J,358.3,34343,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35386,1,3,0)
- ;;=3^Exam for admission to educational institution
- ;;^UTILITY(U,$J,358.3,35386,1,4,0)
- ;;=4^Z02.0
- ;;^UTILITY(U,$J,358.3,35386,2)
- ;;=^5062633
- ;;^UTILITY(U,$J,358.3,35387,0)
- ;;=Z02.2^^186^2037^10
- ;;^UTILITY(U,$J,358.3,35387,1,0)
+ ;;^UTILITY(U,$J,358.3,34343,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Lung Involvement
+ ;;^UTILITY(U,$J,358.3,34343,1,4,0)
+ ;;=4^M32.13
+ ;;^UTILITY(U,$J,358.3,34343,2)
+ ;;=^5011756
+ ;;^UTILITY(U,$J,358.3,34344,0)
+ ;;=M32.14^^131^1686^176
+ ;;^UTILITY(U,$J,358.3,34344,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35387,1,3,0)
- ;;=3^Exam for admission to residential institution
- ;;^UTILITY(U,$J,358.3,35387,1,4,0)
- ;;=4^Z02.2
- ;;^UTILITY(U,$J,358.3,35387,2)
- ;;=^5062635
- ;;^UTILITY(U,$J,358.3,35388,0)
- ;;=Z02.4^^186^2037^11
- ;;^UTILITY(U,$J,358.3,35388,1,0)
+ ;;^UTILITY(U,$J,358.3,34344,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Glomerular Disease
+ ;;^UTILITY(U,$J,358.3,34344,1,4,0)
+ ;;=4^M32.14
+ ;;^UTILITY(U,$J,358.3,34344,2)
+ ;;=^5011757
+ ;;^UTILITY(U,$J,358.3,34345,0)
+ ;;=M32.12^^131^1686^178
+ ;;^UTILITY(U,$J,358.3,34345,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35388,1,3,0)
- ;;=3^Exam for driving license
- ;;^UTILITY(U,$J,358.3,35388,1,4,0)
- ;;=4^Z02.4
- ;;^UTILITY(U,$J,358.3,35388,2)
- ;;=^5062637
- ;;^UTILITY(U,$J,358.3,35389,0)
- ;;=Z02.6^^186^2037^12
- ;;^UTILITY(U,$J,358.3,35389,1,0)
+ ;;^UTILITY(U,$J,358.3,34345,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Pericarditis
+ ;;^UTILITY(U,$J,358.3,34345,1,4,0)
+ ;;=4^M32.12
+ ;;^UTILITY(U,$J,358.3,34345,2)
+ ;;=^5011755
+ ;;^UTILITY(U,$J,358.3,34346,0)
+ ;;=M05.59^^131^1686^159
+ ;;^UTILITY(U,$J,358.3,34346,1,0)
  ;;=^358.31IA^4^2

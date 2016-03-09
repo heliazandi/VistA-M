@@ -1,0 +1,132 @@
+IBDEI2AI ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,38846,1,4,0)
+ ;;=4^C4A.52
+ ;;^UTILITY(U,$J,358.3,38846,2)
+ ;;=^5001149
+ ;;^UTILITY(U,$J,358.3,38847,0)
+ ;;=C4A.22^^151^1902^65
+ ;;^UTILITY(U,$J,358.3,38847,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38847,1,3,0)
+ ;;=3^Merkle Cell CA,Left Ear & Ext Auricular Canal
+ ;;^UTILITY(U,$J,358.3,38847,1,4,0)
+ ;;=4^C4A.22
+ ;;^UTILITY(U,$J,358.3,38847,2)
+ ;;=^5001143
+ ;;^UTILITY(U,$J,358.3,38848,0)
+ ;;=C4A.0^^151^1902^69
+ ;;^UTILITY(U,$J,358.3,38848,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38848,1,3,0)
+ ;;=3^Merkle Cell CA,Lip
+ ;;^UTILITY(U,$J,358.3,38848,1,4,0)
+ ;;=4^C4A.0
+ ;;^UTILITY(U,$J,358.3,38848,2)
+ ;;=^5001137
+ ;;^UTILITY(U,$J,358.3,38849,0)
+ ;;=C4A.21^^151^1902^74
+ ;;^UTILITY(U,$J,358.3,38849,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38849,1,3,0)
+ ;;=3^Merkle Cell CA,Right Ear & Ext Auricular Canal
+ ;;^UTILITY(U,$J,358.3,38849,1,4,0)
+ ;;=4^C4A.21
+ ;;^UTILITY(U,$J,358.3,38849,2)
+ ;;=^5001142
+ ;;^UTILITY(U,$J,358.3,38850,0)
+ ;;=C4A.12^^151^1902^66
+ ;;^UTILITY(U,$J,358.3,38850,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38850,1,3,0)
+ ;;=3^Merkle Cell CA,Left Eyelid,Incl Canthus
+ ;;^UTILITY(U,$J,358.3,38850,1,4,0)
+ ;;=4^C4A.12
+ ;;^UTILITY(U,$J,358.3,38850,2)
+ ;;=^5001140
+ ;;^UTILITY(U,$J,358.3,38851,0)
+ ;;=C4A.11^^151^1902^75
+ ;;^UTILITY(U,$J,358.3,38851,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38851,1,3,0)
+ ;;=3^Merkle Cell CA,Right Eyelid,Incl Canthus
+ ;;^UTILITY(U,$J,358.3,38851,1,4,0)
+ ;;=4^C4A.11
+ ;;^UTILITY(U,$J,358.3,38851,2)
+ ;;=^5001139
+ ;;^UTILITY(U,$J,358.3,38852,0)
+ ;;=C4A.72^^151^1902^67
+ ;;^UTILITY(U,$J,358.3,38852,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38852,1,3,0)
+ ;;=3^Merkle Cell CA,Left Lower Limb,Incl Hip
+ ;;^UTILITY(U,$J,358.3,38852,1,4,0)
+ ;;=4^C4A.72
+ ;;^UTILITY(U,$J,358.3,38852,2)
+ ;;=^5001156
+ ;;^UTILITY(U,$J,358.3,38853,0)
+ ;;=C4A.62^^151^1902^68
+ ;;^UTILITY(U,$J,358.3,38853,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38853,1,3,0)
+ ;;=3^Merkle Cell CA,Left Upper Limb,Incl Shoulder
+ ;;^UTILITY(U,$J,358.3,38853,1,4,0)
+ ;;=4^C4A.62
+ ;;^UTILITY(U,$J,358.3,38853,2)
+ ;;=^5001153
+ ;;^UTILITY(U,$J,358.3,38854,0)
+ ;;=C4A.71^^151^1902^76
+ ;;^UTILITY(U,$J,358.3,38854,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38854,1,3,0)
+ ;;=3^Merkle Cell CA,Right Lower Limb,Incl Hip
+ ;;^UTILITY(U,$J,358.3,38854,1,4,0)
+ ;;=4^C4A.71
+ ;;^UTILITY(U,$J,358.3,38854,2)
+ ;;=^5001155
+ ;;^UTILITY(U,$J,358.3,38855,0)
+ ;;=C4A.61^^151^1902^77
+ ;;^UTILITY(U,$J,358.3,38855,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38855,1,3,0)
+ ;;=3^Merkle Cell CA,Right Upper Limb,Incl Shoulder
+ ;;^UTILITY(U,$J,358.3,38855,1,4,0)
+ ;;=4^C4A.61
+ ;;^UTILITY(U,$J,358.3,38855,2)
+ ;;=^5001152
+ ;;^UTILITY(U,$J,358.3,38856,0)
+ ;;=C4A.31^^151^1902^70
+ ;;^UTILITY(U,$J,358.3,38856,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38856,1,3,0)
+ ;;=3^Merkle Cell CA,Nose
+ ;;^UTILITY(U,$J,358.3,38856,1,4,0)
+ ;;=4^C4A.31
+ ;;^UTILITY(U,$J,358.3,38856,2)
+ ;;=^5001145
+ ;;^UTILITY(U,$J,358.3,38857,0)
+ ;;=C4A.39^^151^1902^72
+ ;;^UTILITY(U,$J,358.3,38857,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38857,1,3,0)
+ ;;=3^Merkle Cell CA,Parts of Face,Other
+ ;;^UTILITY(U,$J,358.3,38857,1,4,0)
+ ;;=4^C4A.39
+ ;;^UTILITY(U,$J,358.3,38857,2)
+ ;;=^5001146
+ ;;^UTILITY(U,$J,358.3,38858,0)
+ ;;=C4A.59^^151^1902^73
+ ;;^UTILITY(U,$J,358.3,38858,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38858,1,3,0)
+ ;;=3^Merkle Cell CA,Parts of Trunk,Other
+ ;;^UTILITY(U,$J,358.3,38858,1,4,0)
+ ;;=4^C4A.59
+ ;;^UTILITY(U,$J,358.3,38858,2)
+ ;;=^5001150
+ ;;^UTILITY(U,$J,358.3,38859,0)
+ ;;=C4A.8^^151^1902^71
+ ;;^UTILITY(U,$J,358.3,38859,1,0)
+ ;;=^358.31IA^4^2

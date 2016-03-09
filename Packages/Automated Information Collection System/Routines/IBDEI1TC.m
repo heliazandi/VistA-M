@@ -1,128 +1,136 @@
-IBDEI1TC ; ; 06-AUG-2015
+IBDEI1TC ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31959,1,0)
+ ;;^UTILITY(U,$J,358.3,30802,1,4,0)
+ ;;=4^F32.1
+ ;;^UTILITY(U,$J,358.3,30802,2)
+ ;;=^5003522
+ ;;^UTILITY(U,$J,358.3,30803,0)
+ ;;=F32.2^^123^1534^19
+ ;;^UTILITY(U,$J,358.3,30803,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31959,1,3,0)
- ;;=3^Angina Pectoris w/ Documented Spasm
- ;;^UTILITY(U,$J,358.3,31959,1,4,0)
- ;;=4^I20.1
- ;;^UTILITY(U,$J,358.3,31959,2)
- ;;=^5007077
- ;;^UTILITY(U,$J,358.3,31960,0)
- ;;=I25.119^^182^1978^5
- ;;^UTILITY(U,$J,358.3,31960,1,0)
+ ;;^UTILITY(U,$J,358.3,30803,1,3,0)
+ ;;=3^MDD,Single Episode,Severe
+ ;;^UTILITY(U,$J,358.3,30803,1,4,0)
+ ;;=4^F32.2
+ ;;^UTILITY(U,$J,358.3,30803,2)
+ ;;=^5003523
+ ;;^UTILITY(U,$J,358.3,30804,0)
+ ;;=F32.3^^123^1534^14
+ ;;^UTILITY(U,$J,358.3,30804,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31960,1,3,0)
- ;;=3^Athscl HRT Dis of Native Cor Art w/ Ang Pctrs,Unspec
- ;;^UTILITY(U,$J,358.3,31960,1,4,0)
- ;;=4^I25.119
- ;;^UTILITY(U,$J,358.3,31960,2)
- ;;=^5007111
- ;;^UTILITY(U,$J,358.3,31961,0)
- ;;=I25.701^^182^1978^9
- ;;^UTILITY(U,$J,358.3,31961,1,0)
+ ;;^UTILITY(U,$J,358.3,30804,1,3,0)
+ ;;=3^MDD,Single Episode w Psychotic Features
+ ;;^UTILITY(U,$J,358.3,30804,1,4,0)
+ ;;=4^F32.3
+ ;;^UTILITY(U,$J,358.3,30804,2)
+ ;;=^5003524
+ ;;^UTILITY(U,$J,358.3,30805,0)
+ ;;=F32.4^^123^1534^16
+ ;;^UTILITY(U,$J,358.3,30805,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31961,1,3,0)
- ;;=3^Athscl of CABG,Unspec w/ Angina Pectoris w/ Documented Spasm
- ;;^UTILITY(U,$J,358.3,31961,1,4,0)
- ;;=4^I25.701
- ;;^UTILITY(U,$J,358.3,31961,2)
- ;;=^5007118
- ;;^UTILITY(U,$J,358.3,31962,0)
- ;;=I25.708^^182^1978^10
- ;;^UTILITY(U,$J,358.3,31962,1,0)
+ ;;^UTILITY(U,$J,358.3,30805,1,3,0)
+ ;;=3^MDD,Single Episode,In Partial Remission
+ ;;^UTILITY(U,$J,358.3,30805,1,4,0)
+ ;;=4^F32.4
+ ;;^UTILITY(U,$J,358.3,30805,2)
+ ;;=^5003525
+ ;;^UTILITY(U,$J,358.3,30806,0)
+ ;;=F32.5^^123^1534^15
+ ;;^UTILITY(U,$J,358.3,30806,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31962,1,3,0)
- ;;=3^Athscl of CABG,Unspec w/ Oth Angina Pectoris
- ;;^UTILITY(U,$J,358.3,31962,1,4,0)
- ;;=4^I25.708
- ;;^UTILITY(U,$J,358.3,31962,2)
- ;;=^5007119
- ;;^UTILITY(U,$J,358.3,31963,0)
- ;;=I20.9^^182^1978^3
- ;;^UTILITY(U,$J,358.3,31963,1,0)
+ ;;^UTILITY(U,$J,358.3,30806,1,3,0)
+ ;;=3^MDD,Single Episode,In Full Remission
+ ;;^UTILITY(U,$J,358.3,30806,1,4,0)
+ ;;=4^F32.5
+ ;;^UTILITY(U,$J,358.3,30806,2)
+ ;;=^5003526
+ ;;^UTILITY(U,$J,358.3,30807,0)
+ ;;=F33.9^^123^1534^13
+ ;;^UTILITY(U,$J,358.3,30807,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31963,1,3,0)
- ;;=3^Angina Pectoris,Unspec
- ;;^UTILITY(U,$J,358.3,31963,1,4,0)
- ;;=4^I20.9
- ;;^UTILITY(U,$J,358.3,31963,2)
- ;;=^5007079
- ;;^UTILITY(U,$J,358.3,31964,0)
- ;;=I25.729^^182^1978^4
- ;;^UTILITY(U,$J,358.3,31964,1,0)
+ ;;^UTILITY(U,$J,358.3,30807,1,3,0)
+ ;;=3^MDD,Recurrent,Unspec
+ ;;^UTILITY(U,$J,358.3,30807,1,4,0)
+ ;;=4^F33.9
+ ;;^UTILITY(U,$J,358.3,30807,2)
+ ;;=^5003537
+ ;;^UTILITY(U,$J,358.3,30808,0)
+ ;;=F33.0^^123^1534^10
+ ;;^UTILITY(U,$J,358.3,30808,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31964,1,3,0)
- ;;=3^Athscl Autologous Artery CABG w/ Unspec Angina Pectoris
- ;;^UTILITY(U,$J,358.3,31964,1,4,0)
- ;;=4^I25.729
- ;;^UTILITY(U,$J,358.3,31964,2)
- ;;=^5133561
- ;;^UTILITY(U,$J,358.3,31965,0)
- ;;=I25.709^^182^1978^11
- ;;^UTILITY(U,$J,358.3,31965,1,0)
+ ;;^UTILITY(U,$J,358.3,30808,1,3,0)
+ ;;=3^MDD,Recurrent,Mild
+ ;;^UTILITY(U,$J,358.3,30808,1,4,0)
+ ;;=4^F33.0
+ ;;^UTILITY(U,$J,358.3,30808,2)
+ ;;=^5003529
+ ;;^UTILITY(U,$J,358.3,30809,0)
+ ;;=F33.1^^123^1534^11
+ ;;^UTILITY(U,$J,358.3,30809,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31965,1,3,0)
- ;;=3^Athscl of CABG,Unspec w/ Unspec Angina Pectoris
- ;;^UTILITY(U,$J,358.3,31965,1,4,0)
- ;;=4^I25.709
- ;;^UTILITY(U,$J,358.3,31965,2)
- ;;=^5007120
- ;;^UTILITY(U,$J,358.3,31966,0)
- ;;=I25.10^^182^1978^6
- ;;^UTILITY(U,$J,358.3,31966,1,0)
+ ;;^UTILITY(U,$J,358.3,30809,1,3,0)
+ ;;=3^MDD,Recurrent,Moderate
+ ;;^UTILITY(U,$J,358.3,30809,1,4,0)
+ ;;=4^F33.1
+ ;;^UTILITY(U,$J,358.3,30809,2)
+ ;;=^5003530
+ ;;^UTILITY(U,$J,358.3,30810,0)
+ ;;=F33.2^^123^1534^12
+ ;;^UTILITY(U,$J,358.3,30810,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31966,1,3,0)
- ;;=3^Athscl HRT Dis of Native Cor Art w/o Ang Pctrs
- ;;^UTILITY(U,$J,358.3,31966,1,4,0)
- ;;=4^I25.10
- ;;^UTILITY(U,$J,358.3,31966,2)
- ;;=^5007107
- ;;^UTILITY(U,$J,358.3,31967,0)
- ;;=I25.810^^182^1978^8
- ;;^UTILITY(U,$J,358.3,31967,1,0)
+ ;;^UTILITY(U,$J,358.3,30810,1,3,0)
+ ;;=3^MDD,Recurrent,Severe
+ ;;^UTILITY(U,$J,358.3,30810,1,4,0)
+ ;;=4^F33.2
+ ;;^UTILITY(U,$J,358.3,30810,2)
+ ;;=^5003531
+ ;;^UTILITY(U,$J,358.3,30811,0)
+ ;;=F33.3^^123^1534^7
+ ;;^UTILITY(U,$J,358.3,30811,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31967,1,3,0)
- ;;=3^Athscl of CABG w/o Angina Pectoris
- ;;^UTILITY(U,$J,358.3,31967,1,4,0)
- ;;=4^I25.810
- ;;^UTILITY(U,$J,358.3,31967,2)
- ;;=^5007141
- ;;^UTILITY(U,$J,358.3,31968,0)
- ;;=I65.29^^182^1979^18
- ;;^UTILITY(U,$J,358.3,31968,1,0)
+ ;;^UTILITY(U,$J,358.3,30811,1,3,0)
+ ;;=3^MDD,Recurrent w/ Psychotic Features
+ ;;^UTILITY(U,$J,358.3,30811,1,4,0)
+ ;;=4^F33.3
+ ;;^UTILITY(U,$J,358.3,30811,2)
+ ;;=^5003532
+ ;;^UTILITY(U,$J,358.3,30812,0)
+ ;;=F33.41^^123^1534^9
+ ;;^UTILITY(U,$J,358.3,30812,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31968,1,3,0)
- ;;=3^Occlusion & Stenosis Unspec Carotid Artery
- ;;^UTILITY(U,$J,358.3,31968,1,4,0)
- ;;=4^I65.29
- ;;^UTILITY(U,$J,358.3,31968,2)
- ;;=^5007363
- ;;^UTILITY(U,$J,358.3,31969,0)
- ;;=I65.22^^182^1979^16
- ;;^UTILITY(U,$J,358.3,31969,1,0)
+ ;;^UTILITY(U,$J,358.3,30812,1,3,0)
+ ;;=3^MDD,Recurrent,In Partial Remission
+ ;;^UTILITY(U,$J,358.3,30812,1,4,0)
+ ;;=4^F33.41
+ ;;^UTILITY(U,$J,358.3,30812,2)
+ ;;=^5003534
+ ;;^UTILITY(U,$J,358.3,30813,0)
+ ;;=F33.42^^123^1534^8
+ ;;^UTILITY(U,$J,358.3,30813,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31969,1,3,0)
- ;;=3^Occlusion & Stenosis Left Carotid Artery
- ;;^UTILITY(U,$J,358.3,31969,1,4,0)
- ;;=4^I65.22
- ;;^UTILITY(U,$J,358.3,31969,2)
- ;;=^5007361
- ;;^UTILITY(U,$J,358.3,31970,0)
- ;;=I65.23^^182^1979^15
- ;;^UTILITY(U,$J,358.3,31970,1,0)
+ ;;^UTILITY(U,$J,358.3,30813,1,3,0)
+ ;;=3^MDD,Recurrent,In Full Remission
+ ;;^UTILITY(U,$J,358.3,30813,1,4,0)
+ ;;=4^F33.42
+ ;;^UTILITY(U,$J,358.3,30813,2)
+ ;;=^5003535
+ ;;^UTILITY(U,$J,358.3,30814,0)
+ ;;=F34.8^^123^1534^6
+ ;;^UTILITY(U,$J,358.3,30814,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31970,1,3,0)
- ;;=3^Occlusion & Stenosis Bilateral Carotid Arteries
- ;;^UTILITY(U,$J,358.3,31970,1,4,0)
- ;;=4^I65.23
- ;;^UTILITY(U,$J,358.3,31970,2)
- ;;=^5007362
- ;;^UTILITY(U,$J,358.3,31971,0)
- ;;=I65.21^^182^1979^17
- ;;^UTILITY(U,$J,358.3,31971,1,0)
+ ;;^UTILITY(U,$J,358.3,30814,1,3,0)
+ ;;=3^Disruptive Mood Dysregulation Disorder
+ ;;^UTILITY(U,$J,358.3,30814,1,4,0)
+ ;;=4^F34.8
+ ;;^UTILITY(U,$J,358.3,30814,2)
+ ;;=^5003539
+ ;;^UTILITY(U,$J,358.3,30815,0)
+ ;;=F32.8^^123^1534^1
+ ;;^UTILITY(U,$J,358.3,30815,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31971,1,3,0)
- ;;=3^Occlusion & Stenosis Right Carotid Artery
+ ;;^UTILITY(U,$J,358.3,30815,1,3,0)
+ ;;=3^Depressive Disorder NEC
+ ;;^UTILITY(U,$J,358.3,30815,1,4,0)
+ ;;=4^F32.8

@@ -1,128 +1,136 @@
-IBDEI1SX ; ; 06-AUG-2015
+IBDEI1SX ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31768,1,0)
+ ;;^UTILITY(U,$J,358.3,30615,0)
+ ;;=M62.40^^121^1522^11
+ ;;^UTILITY(U,$J,358.3,30615,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31768,1,3,0)
- ;;=3^Concussion w LOC >24 hr w/o ret consc w surv, init
- ;;^UTILITY(U,$J,358.3,31768,1,4,0)
- ;;=4^S06.0X6A
- ;;^UTILITY(U,$J,358.3,31768,2)
- ;;=^5020684
- ;;^UTILITY(U,$J,358.3,31769,0)
- ;;=S06.0X0D^^181^1968^21
- ;;^UTILITY(U,$J,358.3,31769,1,0)
+ ;;^UTILITY(U,$J,358.3,30615,1,3,0)
+ ;;=3^Muscle Contracture,Unspec Site
+ ;;^UTILITY(U,$J,358.3,30615,1,4,0)
+ ;;=4^M62.40
+ ;;^UTILITY(U,$J,358.3,30615,2)
+ ;;=^5012631
+ ;;^UTILITY(U,$J,358.3,30616,0)
+ ;;=R68.89^^121^1522^8
+ ;;^UTILITY(U,$J,358.3,30616,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31769,1,3,0)
- ;;=3^Concussion w/o LOC, subs encntr
- ;;^UTILITY(U,$J,358.3,31769,1,4,0)
- ;;=4^S06.0X0D
- ;;^UTILITY(U,$J,358.3,31769,2)
- ;;=^5020667
- ;;^UTILITY(U,$J,358.3,31770,0)
- ;;=S06.0X1D^^181^1968^11
- ;;^UTILITY(U,$J,358.3,31770,1,0)
+ ;;^UTILITY(U,$J,358.3,30616,1,3,0)
+ ;;=3^General Signs & Symptoms,Other
+ ;;^UTILITY(U,$J,358.3,30616,1,4,0)
+ ;;=4^R68.89
+ ;;^UTILITY(U,$J,358.3,30616,2)
+ ;;=^5019557
+ ;;^UTILITY(U,$J,358.3,30617,0)
+ ;;=R39.89^^121^1522^9
+ ;;^UTILITY(U,$J,358.3,30617,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31770,1,3,0)
- ;;=3^Concussion w LOC of 30 minutes or less, subs
- ;;^UTILITY(U,$J,358.3,31770,1,4,0)
- ;;=4^S06.0X1D
- ;;^UTILITY(U,$J,358.3,31770,2)
- ;;=^5020670
- ;;^UTILITY(U,$J,358.3,31771,0)
- ;;=S06.0X2D^^181^1968^15
- ;;^UTILITY(U,$J,358.3,31771,1,0)
+ ;;^UTILITY(U,$J,358.3,30617,1,3,0)
+ ;;=3^Genitourinary System Signs & Symptoms,Other
+ ;;^UTILITY(U,$J,358.3,30617,1,4,0)
+ ;;=4^R39.89
+ ;;^UTILITY(U,$J,358.3,30617,2)
+ ;;=^5019350
+ ;;^UTILITY(U,$J,358.3,30618,0)
+ ;;=B02.23^^121^1523^1
+ ;;^UTILITY(U,$J,358.3,30618,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31771,1,3,0)
- ;;=3^Concussion w LOC of 31-59 min, subs
- ;;^UTILITY(U,$J,358.3,31771,1,4,0)
- ;;=4^S06.0X2D
- ;;^UTILITY(U,$J,358.3,31771,2)
- ;;=^5020673
- ;;^UTILITY(U,$J,358.3,31772,0)
- ;;=S06.0X3D^^181^1968^9
- ;;^UTILITY(U,$J,358.3,31772,1,0)
+ ;;^UTILITY(U,$J,358.3,30618,1,3,0)
+ ;;=3^Postherpetic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,30618,1,4,0)
+ ;;=4^B02.23
+ ;;^UTILITY(U,$J,358.3,30618,2)
+ ;;=^266550
+ ;;^UTILITY(U,$J,358.3,30619,0)
+ ;;=B02.22^^121^1523^2
+ ;;^UTILITY(U,$J,358.3,30619,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31772,1,3,0)
- ;;=3^Concussion w LOC of 1-5 hrs 59 min, subs
- ;;^UTILITY(U,$J,358.3,31772,1,4,0)
- ;;=4^S06.0X3D
- ;;^UTILITY(U,$J,358.3,31772,2)
- ;;=^5020676
- ;;^UTILITY(U,$J,358.3,31773,0)
- ;;=S06.0X4D^^181^1968^17
- ;;^UTILITY(U,$J,358.3,31773,1,0)
+ ;;^UTILITY(U,$J,358.3,30619,1,3,0)
+ ;;=3^Postherpetic Trigeminal Neuralgia
+ ;;^UTILITY(U,$J,358.3,30619,1,4,0)
+ ;;=4^B02.22
+ ;;^UTILITY(U,$J,358.3,30619,2)
+ ;;=^266546
+ ;;^UTILITY(U,$J,358.3,30620,0)
+ ;;=C15.9^^121^1524^8
+ ;;^UTILITY(U,$J,358.3,30620,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31773,1,3,0)
- ;;=3^Concussion w LOC of 6 hours to 24 hours, subs
- ;;^UTILITY(U,$J,358.3,31773,1,4,0)
- ;;=4^S06.0X4D
- ;;^UTILITY(U,$J,358.3,31773,2)
- ;;=^5020679
- ;;^UTILITY(U,$J,358.3,31774,0)
- ;;=S06.0X5D^^181^1968^2
- ;;^UTILITY(U,$J,358.3,31774,1,0)
+ ;;^UTILITY(U,$J,358.3,30620,1,3,0)
+ ;;=3^Malig Neop Esophagus,Unspec
+ ;;^UTILITY(U,$J,358.3,30620,1,4,0)
+ ;;=4^C15.9
+ ;;^UTILITY(U,$J,358.3,30620,2)
+ ;;=^5000919
+ ;;^UTILITY(U,$J,358.3,30621,0)
+ ;;=C22.8^^121^1524^13
+ ;;^UTILITY(U,$J,358.3,30621,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31774,1,3,0)
- ;;=3^Concussion w LOC >24 hr w ret consc lev, subs
- ;;^UTILITY(U,$J,358.3,31774,1,4,0)
- ;;=4^S06.0X5D
- ;;^UTILITY(U,$J,358.3,31774,2)
- ;;=^5020682
- ;;^UTILITY(U,$J,358.3,31775,0)
- ;;=S06.0X6D^^181^1968^5
- ;;^UTILITY(U,$J,358.3,31775,1,0)
+ ;;^UTILITY(U,$J,358.3,30621,1,3,0)
+ ;;=3^Malig Neop Liver,Primary,Unspec Type
+ ;;^UTILITY(U,$J,358.3,30621,1,4,0)
+ ;;=4^C22.8
+ ;;^UTILITY(U,$J,358.3,30621,2)
+ ;;=^5000939
+ ;;^UTILITY(U,$J,358.3,30622,0)
+ ;;=C22.0^^121^1524^5
+ ;;^UTILITY(U,$J,358.3,30622,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31775,1,3,0)
- ;;=3^Concussion w LOC >24 hr w/o ret consc w surv, subs
- ;;^UTILITY(U,$J,358.3,31775,1,4,0)
- ;;=4^S06.0X6D
- ;;^UTILITY(U,$J,358.3,31775,2)
- ;;=^5020685
- ;;^UTILITY(U,$J,358.3,31776,0)
- ;;=S06.0X0S^^181^1968^20
- ;;^UTILITY(U,$J,358.3,31776,1,0)
+ ;;^UTILITY(U,$J,358.3,30622,1,3,0)
+ ;;=3^Liver Cell Carcinoma
+ ;;^UTILITY(U,$J,358.3,30622,1,4,0)
+ ;;=4^C22.0
+ ;;^UTILITY(U,$J,358.3,30622,2)
+ ;;=^5000933
+ ;;^UTILITY(U,$J,358.3,30623,0)
+ ;;=C22.2^^121^1524^1
+ ;;^UTILITY(U,$J,358.3,30623,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31776,1,3,0)
- ;;=3^Concussion w/o LOC, sequela
- ;;^UTILITY(U,$J,358.3,31776,1,4,0)
- ;;=4^S06.0X0S
- ;;^UTILITY(U,$J,358.3,31776,2)
- ;;=^5020668
- ;;^UTILITY(U,$J,358.3,31777,0)
- ;;=S06.0X1S^^181^1968^12
- ;;^UTILITY(U,$J,358.3,31777,1,0)
+ ;;^UTILITY(U,$J,358.3,30623,1,3,0)
+ ;;=3^Hepatoblastoma
+ ;;^UTILITY(U,$J,358.3,30623,1,4,0)
+ ;;=4^C22.2
+ ;;^UTILITY(U,$J,358.3,30623,2)
+ ;;=^5000935
+ ;;^UTILITY(U,$J,358.3,30624,0)
+ ;;=C22.7^^121^1524^4
+ ;;^UTILITY(U,$J,358.3,30624,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31777,1,3,0)
- ;;=3^Concussion w LOC of 30 minutes or less, sequela
- ;;^UTILITY(U,$J,358.3,31777,1,4,0)
- ;;=4^S06.0X1S
- ;;^UTILITY(U,$J,358.3,31777,2)
- ;;=^5020671
- ;;^UTILITY(U,$J,358.3,31778,0)
- ;;=S06.0X2S^^181^1968^14
- ;;^UTILITY(U,$J,358.3,31778,1,0)
+ ;;^UTILITY(U,$J,358.3,30624,1,3,0)
+ ;;=3^Liver Carcinomas,Oth Spec
+ ;;^UTILITY(U,$J,358.3,30624,1,4,0)
+ ;;=4^C22.7
+ ;;^UTILITY(U,$J,358.3,30624,2)
+ ;;=^5000938
+ ;;^UTILITY(U,$J,358.3,30625,0)
+ ;;=C32.9^^121^1524^9
+ ;;^UTILITY(U,$J,358.3,30625,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31778,1,3,0)
- ;;=3^Concussion w LOC of 31-59 min, sequela
- ;;^UTILITY(U,$J,358.3,31778,1,4,0)
- ;;=4^S06.0X2S
- ;;^UTILITY(U,$J,358.3,31778,2)
- ;;=^5020674
- ;;^UTILITY(U,$J,358.3,31779,0)
- ;;=S06.0X3S^^181^1968^8
- ;;^UTILITY(U,$J,358.3,31779,1,0)
+ ;;^UTILITY(U,$J,358.3,30625,1,3,0)
+ ;;=3^Malig Neop Larynx,Unspec
+ ;;^UTILITY(U,$J,358.3,30625,1,4,0)
+ ;;=4^C32.9
+ ;;^UTILITY(U,$J,358.3,30625,2)
+ ;;=^5000956
+ ;;^UTILITY(U,$J,358.3,30626,0)
+ ;;=C34.91^^121^1524^15
+ ;;^UTILITY(U,$J,358.3,30626,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31779,1,3,0)
- ;;=3^Concussion w LOC of 1-5 hrs 59 min, sequela
- ;;^UTILITY(U,$J,358.3,31779,1,4,0)
- ;;=4^S06.0X3S
- ;;^UTILITY(U,$J,358.3,31779,2)
- ;;=^5020677
- ;;^UTILITY(U,$J,358.3,31780,0)
- ;;=S06.0X4S^^181^1968^18
- ;;^UTILITY(U,$J,358.3,31780,1,0)
+ ;;^UTILITY(U,$J,358.3,30626,1,3,0)
+ ;;=3^Malig Neop Right Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,30626,1,4,0)
+ ;;=4^C34.91
+ ;;^UTILITY(U,$J,358.3,30626,2)
+ ;;=^5000967
+ ;;^UTILITY(U,$J,358.3,30627,0)
+ ;;=C34.92^^121^1524^10
+ ;;^UTILITY(U,$J,358.3,30627,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31780,1,3,0)
- ;;=3^Concussion w LOC of 6 hours to 24 hours, sequela
+ ;;^UTILITY(U,$J,358.3,30627,1,3,0)
+ ;;=3^Malig Neop Left Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,30627,1,4,0)
+ ;;=4^C34.92
+ ;;^UTILITY(U,$J,358.3,30627,2)
+ ;;=^5000968
+ ;;^UTILITY(U,$J,358.3,30628,0)
+ ;;=C50.911^^121^1524^16

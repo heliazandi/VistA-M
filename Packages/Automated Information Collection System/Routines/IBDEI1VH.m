@@ -1,138 +1,126 @@
-IBDEI1VH ; ; 06-AUG-2015
+IBDEI1VH ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32947,2)
- ;;=^5000062
- ;;^UTILITY(U,$J,358.3,32948,0)
- ;;=B20.^^182^1994^26
- ;;^UTILITY(U,$J,358.3,32948,1,0)
+ ;;^UTILITY(U,$J,358.3,31810,2)
+ ;;=^5048700
+ ;;^UTILITY(U,$J,358.3,31811,0)
+ ;;=T25.632A^^126^1606^51
+ ;;^UTILITY(U,$J,358.3,31811,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32948,1,3,0)
- ;;=3^HIV Disease
- ;;^UTILITY(U,$J,358.3,32948,1,4,0)
- ;;=4^B20.
- ;;^UTILITY(U,$J,358.3,32948,2)
- ;;=^5000555
- ;;^UTILITY(U,$J,358.3,32949,0)
- ;;=B02.9^^182^1994^85
- ;;^UTILITY(U,$J,358.3,32949,1,0)
+ ;;^UTILITY(U,$J,358.3,31811,1,3,0)
+ ;;=3^Corrosion of lft toe(s), second degree, init enc
+ ;;^UTILITY(U,$J,358.3,31811,1,4,0)
+ ;;=4^T25.632A
+ ;;^UTILITY(U,$J,358.3,31811,2)
+ ;;=^5048703
+ ;;^UTILITY(U,$J,358.3,31812,0)
+ ;;=T25.621A^^126^1606^58
+ ;;^UTILITY(U,$J,358.3,31812,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32949,1,3,0)
- ;;=3^Zoster w/o Complications
- ;;^UTILITY(U,$J,358.3,32949,1,4,0)
- ;;=4^B02.9
- ;;^UTILITY(U,$J,358.3,32949,2)
- ;;=^5000501
- ;;^UTILITY(U,$J,358.3,32950,0)
- ;;=A60.9^^182^1994^2
- ;;^UTILITY(U,$J,358.3,32950,1,0)
+ ;;^UTILITY(U,$J,358.3,31812,1,3,0)
+ ;;=3^Corrosion of rt ft, second degree, init enc
+ ;;^UTILITY(U,$J,358.3,31812,1,4,0)
+ ;;=4^T25.621A
+ ;;^UTILITY(U,$J,358.3,31812,2)
+ ;;=^5048691
+ ;;^UTILITY(U,$J,358.3,31813,0)
+ ;;=T25.622A^^126^1606^43
+ ;;^UTILITY(U,$J,358.3,31813,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32950,1,3,0)
- ;;=3^Anogenital Herpesviral Infection,Unspec
- ;;^UTILITY(U,$J,358.3,32950,1,4,0)
- ;;=4^A60.9
- ;;^UTILITY(U,$J,358.3,32950,2)
- ;;=^5000359
- ;;^UTILITY(U,$J,358.3,32951,0)
- ;;=A60.04^^182^1994^29
- ;;^UTILITY(U,$J,358.3,32951,1,0)
+ ;;^UTILITY(U,$J,358.3,31813,1,3,0)
+ ;;=3^Corrosion of lft ft, second degree, init enc
+ ;;^UTILITY(U,$J,358.3,31813,1,4,0)
+ ;;=4^T25.622A
+ ;;^UTILITY(U,$J,358.3,31813,2)
+ ;;=^5048694
+ ;;^UTILITY(U,$J,358.3,31814,0)
+ ;;=T25.611A^^126^1606^56
+ ;;^UTILITY(U,$J,358.3,31814,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32951,1,3,0)
- ;;=3^Herpesviral Vulvovaginitis
- ;;^UTILITY(U,$J,358.3,32951,1,4,0)
- ;;=4^A60.04
- ;;^UTILITY(U,$J,358.3,32951,2)
- ;;=^5000356
- ;;^UTILITY(U,$J,358.3,32952,0)
- ;;=A60.01^^182^1994^27
- ;;^UTILITY(U,$J,358.3,32952,1,0)
+ ;;^UTILITY(U,$J,358.3,31814,1,3,0)
+ ;;=3^Corrosion of rt ankl, second degree, init enc
+ ;;^UTILITY(U,$J,358.3,31814,1,4,0)
+ ;;=4^T25.611A
+ ;;^UTILITY(U,$J,358.3,31814,2)
+ ;;=^5048682
+ ;;^UTILITY(U,$J,358.3,31815,0)
+ ;;=T25.612A^^126^1606^39
+ ;;^UTILITY(U,$J,358.3,31815,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32952,1,3,0)
- ;;=3^Herpesviral Infection of Penis
- ;;^UTILITY(U,$J,358.3,32952,1,4,0)
- ;;=4^A60.01
- ;;^UTILITY(U,$J,358.3,32952,2)
- ;;=^5000353
- ;;^UTILITY(U,$J,358.3,32953,0)
- ;;=B00.1^^182^1994^28
- ;;^UTILITY(U,$J,358.3,32953,1,0)
+ ;;^UTILITY(U,$J,358.3,31815,1,3,0)
+ ;;=3^Corrosion of lft ank, second degree, init enc
+ ;;^UTILITY(U,$J,358.3,31815,1,4,0)
+ ;;=4^T25.612A
+ ;;^UTILITY(U,$J,358.3,31815,2)
+ ;;=^5048685
+ ;;^UTILITY(U,$J,358.3,31816,0)
+ ;;=T24.631A^^126^1606^62
+ ;;^UTILITY(U,$J,358.3,31816,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32953,1,3,0)
- ;;=3^Herpesviral Vesicular Dermatitis
- ;;^UTILITY(U,$J,358.3,32953,1,4,0)
- ;;=4^B00.1
- ;;^UTILITY(U,$J,358.3,32953,2)
- ;;=^5000468
- ;;^UTILITY(U,$J,358.3,32954,0)
- ;;=B97.89^^182^1994^81
- ;;^UTILITY(U,$J,358.3,32954,1,0)
+ ;;^UTILITY(U,$J,358.3,31816,1,3,0)
+ ;;=3^Corrosion of rt lwr leg, second degree, init enc
+ ;;^UTILITY(U,$J,358.3,31816,1,4,0)
+ ;;=4^T24.631A
+ ;;^UTILITY(U,$J,358.3,31816,2)
+ ;;=^5048430
+ ;;^UTILITY(U,$J,358.3,31817,0)
+ ;;=T24.632A^^126^1606^47
+ ;;^UTILITY(U,$J,358.3,31817,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32954,1,3,0)
- ;;=3^Viral Agent Cause of Disease
- ;;^UTILITY(U,$J,358.3,32954,1,4,0)
- ;;=4^B97.89
- ;;^UTILITY(U,$J,358.3,32954,2)
- ;;=^5000879
- ;;^UTILITY(U,$J,358.3,32955,0)
- ;;=B97.10^^182^1994^20
- ;;^UTILITY(U,$J,358.3,32955,1,0)
+ ;;^UTILITY(U,$J,358.3,31817,1,3,0)
+ ;;=3^Corrosion of lft lwr leg, second degree, init enc
+ ;;^UTILITY(U,$J,358.3,31817,1,4,0)
+ ;;=4^T24.632A
+ ;;^UTILITY(U,$J,358.3,31817,2)
+ ;;=^5048433
+ ;;^UTILITY(U,$J,358.3,31818,0)
+ ;;=T25.731A^^126^1606^67
+ ;;^UTILITY(U,$J,358.3,31818,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32955,1,3,0)
- ;;=3^Enterovirus Cause of Disease
- ;;^UTILITY(U,$J,358.3,32955,1,4,0)
- ;;=4^B97.10
- ;;^UTILITY(U,$J,358.3,32955,2)
- ;;=^5000861
- ;;^UTILITY(U,$J,358.3,32956,0)
- ;;=B34.9^^182^1994^82
- ;;^UTILITY(U,$J,358.3,32956,1,0)
+ ;;^UTILITY(U,$J,358.3,31818,1,3,0)
+ ;;=3^Corrosion of rt toe(s), third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31818,1,4,0)
+ ;;=4^T25.731A
+ ;;^UTILITY(U,$J,358.3,31818,2)
+ ;;=^5048736
+ ;;^UTILITY(U,$J,358.3,31819,0)
+ ;;=T25.732A^^126^1606^52
+ ;;^UTILITY(U,$J,358.3,31819,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32956,1,3,0)
- ;;=3^Viral Infection,Unspec
- ;;^UTILITY(U,$J,358.3,32956,1,4,0)
- ;;=4^B34.9
- ;;^UTILITY(U,$J,358.3,32956,2)
- ;;=^5000603
- ;;^UTILITY(U,$J,358.3,32957,0)
- ;;=A69.20^^182^1994^45
- ;;^UTILITY(U,$J,358.3,32957,1,0)
+ ;;^UTILITY(U,$J,358.3,31819,1,3,0)
+ ;;=3^Corrosion of lft toe(s), third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31819,1,4,0)
+ ;;=4^T25.732A
+ ;;^UTILITY(U,$J,358.3,31819,2)
+ ;;=^5048739
+ ;;^UTILITY(U,$J,358.3,31820,0)
+ ;;=T25.721A^^126^1606^59
+ ;;^UTILITY(U,$J,358.3,31820,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32957,1,3,0)
- ;;=3^Lyme Disease,Unspec
- ;;^UTILITY(U,$J,358.3,32957,1,4,0)
- ;;=4^A69.20
- ;;^UTILITY(U,$J,358.3,32957,2)
- ;;=^5000375
- ;;^UTILITY(U,$J,358.3,32958,0)
- ;;=A69.22^^182^1994^47
- ;;^UTILITY(U,$J,358.3,32958,1,0)
+ ;;^UTILITY(U,$J,358.3,31820,1,3,0)
+ ;;=3^Corrosion of rt ft, third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31820,1,4,0)
+ ;;=4^T25.721A
+ ;;^UTILITY(U,$J,358.3,31820,2)
+ ;;=^5048727
+ ;;^UTILITY(U,$J,358.3,31821,0)
+ ;;=T25.722A^^126^1606^44
+ ;;^UTILITY(U,$J,358.3,31821,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32958,1,3,0)
- ;;=3^Neurologic Disorders d/t Lyme Disease
- ;;^UTILITY(U,$J,358.3,32958,1,4,0)
- ;;=4^A69.22
- ;;^UTILITY(U,$J,358.3,32958,2)
- ;;=^5000377
- ;;^UTILITY(U,$J,358.3,32959,0)
- ;;=A69.21^^182^1994^46
- ;;^UTILITY(U,$J,358.3,32959,1,0)
+ ;;^UTILITY(U,$J,358.3,31821,1,3,0)
+ ;;=3^Corrosion of lft ft, third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31821,1,4,0)
+ ;;=4^T25.722A
+ ;;^UTILITY(U,$J,358.3,31821,2)
+ ;;=^5048730
+ ;;^UTILITY(U,$J,358.3,31822,0)
+ ;;=T25.711A^^126^1606^54
+ ;;^UTILITY(U,$J,358.3,31822,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32959,1,3,0)
- ;;=3^Meningitis d/t Lyme Disease
- ;;^UTILITY(U,$J,358.3,32959,1,4,0)
- ;;=4^A69.21
- ;;^UTILITY(U,$J,358.3,32959,2)
- ;;=^5000376
- ;;^UTILITY(U,$J,358.3,32960,0)
- ;;=A69.29^^182^1994^17
- ;;^UTILITY(U,$J,358.3,32960,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32960,1,3,0)
- ;;=3^Conditions d/t Lyme Disease
- ;;^UTILITY(U,$J,358.3,32960,1,4,0)
- ;;=4^A69.29
- ;;^UTILITY(U,$J,358.3,32960,2)
- ;;=^5000379
- ;;^UTILITY(U,$J,358.3,32961,0)
- ;;=A69.23^^182^1994^5
+ ;;^UTILITY(U,$J,358.3,31822,1,3,0)
+ ;;=3^Corrosion of rt ank, third degree, init enc
+ ;;^UTILITY(U,$J,358.3,31822,1,4,0)
+ ;;=4^T25.711A
+ ;;^UTILITY(U,$J,358.3,31822,2)
+ ;;=^5048718

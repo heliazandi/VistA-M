@@ -1,144 +1,134 @@
-IBDEI095 ; ; 06-AUG-2015
+IBDEI095 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3823,0)
- ;;=382.3^^12^168^42
- ;;^UTILITY(U,$J,358.3,3823,1,0)
+ ;;^UTILITY(U,$J,358.3,3994,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3823,1,3,0)
- ;;=3^382.3
- ;;^UTILITY(U,$J,358.3,3823,1,4,0)
- ;;=4^Chr Supp OM, NOS
- ;;^UTILITY(U,$J,358.3,3823,2)
- ;;=^186937
- ;;^UTILITY(U,$J,358.3,3824,0)
- ;;=382.4^^12^168^88
- ;;^UTILITY(U,$J,358.3,3824,1,0)
+ ;;^UTILITY(U,$J,358.3,3994,1,3,0)
+ ;;=3^Fall from Sidewalk/Curb,Sequela
+ ;;^UTILITY(U,$J,358.3,3994,1,4,0)
+ ;;=4^W10.1XXS
+ ;;^UTILITY(U,$J,358.3,3994,2)
+ ;;=^5059585
+ ;;^UTILITY(U,$J,358.3,3995,0)
+ ;;=W06.XXXS^^18^225^7
+ ;;^UTILITY(U,$J,358.3,3995,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3824,1,3,0)
- ;;=3^382.4
- ;;^UTILITY(U,$J,358.3,3824,1,4,0)
- ;;=4^Suppurative OM, Unspec
- ;;^UTILITY(U,$J,358.3,3824,2)
- ;;=^88285
- ;;^UTILITY(U,$J,358.3,3825,0)
- ;;=382.9^^12^168^69
- ;;^UTILITY(U,$J,358.3,3825,1,0)
+ ;;^UTILITY(U,$J,358.3,3995,1,3,0)
+ ;;=3^Fall from Bed,Sequela
+ ;;^UTILITY(U,$J,358.3,3995,1,4,0)
+ ;;=4^W06.XXXS
+ ;;^UTILITY(U,$J,358.3,3995,2)
+ ;;=^5059561
+ ;;^UTILITY(U,$J,358.3,3996,0)
+ ;;=W07.XXXS^^18^225^8
+ ;;^UTILITY(U,$J,358.3,3996,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3825,1,3,0)
- ;;=3^382.9
- ;;^UTILITY(U,$J,358.3,3825,1,4,0)
- ;;=4^Otitis Media NOS
- ;;^UTILITY(U,$J,358.3,3825,2)
- ;;=^123967
- ;;^UTILITY(U,$J,358.3,3826,0)
- ;;=383.00^^12^168^6
- ;;^UTILITY(U,$J,358.3,3826,1,0)
+ ;;^UTILITY(U,$J,358.3,3996,1,3,0)
+ ;;=3^Fall from Chair,Sequela
+ ;;^UTILITY(U,$J,358.3,3996,1,4,0)
+ ;;=4^W07.XXXS
+ ;;^UTILITY(U,$J,358.3,3996,2)
+ ;;=^5059564
+ ;;^UTILITY(U,$J,358.3,3997,0)
+ ;;=W05.2XXS^^18^225^13
+ ;;^UTILITY(U,$J,358.3,3997,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3826,1,3,0)
- ;;=3^383.00
- ;;^UTILITY(U,$J,358.3,3826,1,4,0)
- ;;=4^AC Mastoiditis w/o Compl
- ;;^UTILITY(U,$J,358.3,3826,2)
- ;;=^269402
- ;;^UTILITY(U,$J,358.3,3827,0)
- ;;=383.01^^12^168^87
- ;;^UTILITY(U,$J,358.3,3827,1,0)
+ ;;^UTILITY(U,$J,358.3,3997,1,3,0)
+ ;;=3^Fall from Non-Moving Motorized Scooter,Sequela
+ ;;^UTILITY(U,$J,358.3,3997,1,4,0)
+ ;;=4^W05.2XXS
+ ;;^UTILITY(U,$J,358.3,3997,2)
+ ;;=^5059558
+ ;;^UTILITY(U,$J,358.3,3998,0)
+ ;;=W05.1XXS^^18^225^14
+ ;;^UTILITY(U,$J,358.3,3998,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3827,1,3,0)
- ;;=3^383.01
- ;;^UTILITY(U,$J,358.3,3827,1,4,0)
- ;;=4^Subperiosteal Mastoid Abscess
- ;;^UTILITY(U,$J,358.3,3827,2)
- ;;=^269403
- ;;^UTILITY(U,$J,358.3,3828,0)
- ;;=383.02^^12^168^7
- ;;^UTILITY(U,$J,358.3,3828,1,0)
+ ;;^UTILITY(U,$J,358.3,3998,1,3,0)
+ ;;=3^Fall from Non-Moving Nonmotorized Scooter,Sequela
+ ;;^UTILITY(U,$J,358.3,3998,1,4,0)
+ ;;=4^W05.1XXS
+ ;;^UTILITY(U,$J,358.3,3998,2)
+ ;;=^5059555
+ ;;^UTILITY(U,$J,358.3,3999,0)
+ ;;=W05.0XXS^^18^225^15
+ ;;^UTILITY(U,$J,358.3,3999,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3828,1,3,0)
- ;;=3^383.02
- ;;^UTILITY(U,$J,358.3,3828,1,4,0)
- ;;=4^AC Mastoiditis w/oth Compl
- ;;^UTILITY(U,$J,358.3,3828,2)
- ;;=^269404
- ;;^UTILITY(U,$J,358.3,3829,0)
- ;;=383.1^^12^168^35
- ;;^UTILITY(U,$J,358.3,3829,1,0)
+ ;;^UTILITY(U,$J,358.3,3999,1,3,0)
+ ;;=3^Fall from Non-Moving Wheelchair,Sequela
+ ;;^UTILITY(U,$J,358.3,3999,1,4,0)
+ ;;=4^W05.0XXS
+ ;;^UTILITY(U,$J,358.3,3999,2)
+ ;;=^5059552
+ ;;^UTILITY(U,$J,358.3,4000,0)
+ ;;=W18.12XS^^18^225^19
+ ;;^UTILITY(U,$J,358.3,4000,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3829,1,3,0)
- ;;=3^383.1
- ;;^UTILITY(U,$J,358.3,3829,1,4,0)
- ;;=4^Chr Mastoiditis
- ;;^UTILITY(U,$J,358.3,3829,2)
- ;;=^269405
- ;;^UTILITY(U,$J,358.3,3830,0)
- ;;=383.30^^12^168^78
- ;;^UTILITY(U,$J,358.3,3830,1,0)
+ ;;^UTILITY(U,$J,358.3,4000,1,3,0)
+ ;;=3^Fall from Toilet w/ Strike Against Object,Sequela
+ ;;^UTILITY(U,$J,358.3,4000,1,4,0)
+ ;;=4^W18.12XS
+ ;;^UTILITY(U,$J,358.3,4000,2)
+ ;;=^5059805
+ ;;^UTILITY(U,$J,358.3,4001,0)
+ ;;=W18.11XS^^18^225^20
+ ;;^UTILITY(U,$J,358.3,4001,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3830,1,3,0)
- ;;=3^383.30
- ;;^UTILITY(U,$J,358.3,3830,1,4,0)
- ;;=4^PostMastoidectomy Compl NOS
- ;;^UTILITY(U,$J,358.3,3830,2)
- ;;=^269413
- ;;^UTILITY(U,$J,358.3,3831,0)
- ;;=383.31^^12^168^79
- ;;^UTILITY(U,$J,358.3,3831,1,0)
+ ;;^UTILITY(U,$J,358.3,4001,1,3,0)
+ ;;=3^Fall from Toilet,Sequela
+ ;;^UTILITY(U,$J,358.3,4001,1,4,0)
+ ;;=4^W18.11XS
+ ;;^UTILITY(U,$J,358.3,4001,2)
+ ;;=^5059803
+ ;;^UTILITY(U,$J,358.3,4002,0)
+ ;;=W08.XXXS^^18^225^10
+ ;;^UTILITY(U,$J,358.3,4002,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3831,1,3,0)
- ;;=3^383.31
- ;;^UTILITY(U,$J,358.3,3831,1,4,0)
- ;;=4^Postmastoid Mucosal Cyst
- ;;^UTILITY(U,$J,358.3,3831,2)
- ;;=^269414
- ;;^UTILITY(U,$J,358.3,3832,0)
- ;;=383.32^^12^168^82
- ;;^UTILITY(U,$J,358.3,3832,1,0)
+ ;;^UTILITY(U,$J,358.3,4002,1,3,0)
+ ;;=3^Fall from Furniture,Sequela
+ ;;^UTILITY(U,$J,358.3,4002,1,4,0)
+ ;;=4^W08.XXXS
+ ;;^UTILITY(U,$J,358.3,4002,2)
+ ;;=^5059567
+ ;;^UTILITY(U,$J,358.3,4003,0)
+ ;;=W18.2XXS^^18^225^21
+ ;;^UTILITY(U,$J,358.3,4003,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3832,1,3,0)
- ;;=3^383.32
- ;;^UTILITY(U,$J,358.3,3832,1,4,0)
- ;;=4^Recurr Cholesteatma
- ;;^UTILITY(U,$J,358.3,3832,2)
- ;;=^269415
- ;;^UTILITY(U,$J,358.3,3833,0)
- ;;=383.33^^12^168^80
- ;;^UTILITY(U,$J,358.3,3833,1,0)
+ ;;^UTILITY(U,$J,358.3,4003,1,3,0)
+ ;;=3^Fall in Shower/Bathtub,Sequela
+ ;;^UTILITY(U,$J,358.3,4003,1,4,0)
+ ;;=4^W18.2XXS
+ ;;^UTILITY(U,$J,358.3,4003,2)
+ ;;=^5059808
+ ;;^UTILITY(U,$J,358.3,4004,0)
+ ;;=W11.XXXS^^18^225^12
+ ;;^UTILITY(U,$J,358.3,4004,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3833,1,3,0)
- ;;=3^383.33
- ;;^UTILITY(U,$J,358.3,3833,1,4,0)
- ;;=4^Postmastoidect Granulations
- ;;^UTILITY(U,$J,358.3,3833,2)
- ;;=^269418
- ;;^UTILITY(U,$J,358.3,3834,0)
- ;;=387.0^^12^168^72
- ;;^UTILITY(U,$J,358.3,3834,1,0)
+ ;;^UTILITY(U,$J,358.3,4004,1,3,0)
+ ;;=3^Fall from Ladder,Sequela
+ ;;^UTILITY(U,$J,358.3,4004,1,4,0)
+ ;;=4^W11.XXXS
+ ;;^UTILITY(U,$J,358.3,4004,2)
+ ;;=^5059597
+ ;;^UTILITY(U,$J,358.3,4005,0)
+ ;;=W01.10XS^^18^225^2
+ ;;^UTILITY(U,$J,358.3,4005,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3834,1,3,0)
- ;;=3^387.0
- ;;^UTILITY(U,$J,358.3,3834,1,4,0)
- ;;=4^Otoscler-Oval Wnd, Nonobl
- ;;^UTILITY(U,$J,358.3,3834,2)
- ;;=^269515
- ;;^UTILITY(U,$J,358.3,3835,0)
- ;;=387.1^^12^168^73
- ;;^UTILITY(U,$J,358.3,3835,1,0)
+ ;;^UTILITY(U,$J,358.3,4005,1,3,0)
+ ;;=3^Fall Same Level w/ Strike Against Object,Sequela
+ ;;^UTILITY(U,$J,358.3,4005,1,4,0)
+ ;;=4^W01.10XS
+ ;;^UTILITY(U,$J,358.3,4005,2)
+ ;;=^5059527
+ ;;^UTILITY(U,$J,358.3,4006,0)
+ ;;=W01.0XXS^^18^225^3
+ ;;^UTILITY(U,$J,358.3,4006,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3835,1,3,0)
- ;;=3^387.1
- ;;^UTILITY(U,$J,358.3,3835,1,4,0)
- ;;=4^Otoscler-Oval Wnd, Obl
- ;;^UTILITY(U,$J,358.3,3835,2)
- ;;=^269516
- ;;^UTILITY(U,$J,358.3,3836,0)
- ;;=387.2^^12^168^45
- ;;^UTILITY(U,$J,358.3,3836,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3836,1,3,0)
- ;;=3^387.2
- ;;^UTILITY(U,$J,358.3,3836,1,4,0)
- ;;=4^Cochlear Sclerosis
- ;;^UTILITY(U,$J,358.3,3836,2)
- ;;=^269517
+ ;;^UTILITY(U,$J,358.3,4006,1,3,0)
+ ;;=3^Fall Same Level w/o Strike Against Object,Sequela
+ ;;^UTILITY(U,$J,358.3,4006,1,4,0)
+ ;;=4^W01.0XXS
+ ;;^UTILITY(U,$J,358.3,4006,2)
+ ;;=^5059524
+ ;;^UTILITY(U,$J,358.3,4007,0)
+ ;;=W18.30XS^^18^225^22

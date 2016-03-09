@@ -1,140 +1,130 @@
-IBDEI022 ; ; 06-AUG-2015
+IBDEI022 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,415,0)
- ;;=D56.3^^2^20^18
- ;;^UTILITY(U,$J,358.3,415,1,0)
+ ;;^UTILITY(U,$J,358.3,474,0)
+ ;;=F15.23^^3^50^1
+ ;;^UTILITY(U,$J,358.3,474,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,415,1,3,0)
- ;;=3^Thalassemia minor
- ;;^UTILITY(U,$J,358.3,415,1,4,0)
- ;;=4^D56.3
- ;;^UTILITY(U,$J,358.3,415,2)
- ;;=^340497
- ;;^UTILITY(U,$J,358.3,416,0)
- ;;=D56.5^^2^20^7
- ;;^UTILITY(U,$J,358.3,416,1,0)
+ ;;^UTILITY(U,$J,358.3,474,1,3,0)
+ ;;=3^Amphetamine or Other Stimulant Withdrawal
+ ;;^UTILITY(U,$J,358.3,474,1,4,0)
+ ;;=4^F15.23
+ ;;^UTILITY(U,$J,358.3,474,2)
+ ;;=^5003301
+ ;;^UTILITY(U,$J,358.3,475,0)
+ ;;=F12.10^^3^51^16
+ ;;^UTILITY(U,$J,358.3,475,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,416,1,3,0)
- ;;=3^Hemoglobin E-beta thalassemia
- ;;^UTILITY(U,$J,358.3,416,1,4,0)
- ;;=4^D56.5
- ;;^UTILITY(U,$J,358.3,416,2)
- ;;=^340498
- ;;^UTILITY(U,$J,358.3,417,0)
- ;;=D56.8^^2^20^19
- ;;^UTILITY(U,$J,358.3,417,1,0)
+ ;;^UTILITY(U,$J,358.3,475,1,3,0)
+ ;;=3^Cannabis Use Disorder,Mild
+ ;;^UTILITY(U,$J,358.3,475,1,4,0)
+ ;;=4^F12.10
+ ;;^UTILITY(U,$J,358.3,475,2)
+ ;;=^5003155
+ ;;^UTILITY(U,$J,358.3,476,0)
+ ;;=F12.180^^3^51^20
+ ;;^UTILITY(U,$J,358.3,476,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,417,1,3,0)
- ;;=3^Thalassemias NEC
- ;;^UTILITY(U,$J,358.3,417,1,4,0)
- ;;=4^D56.8
- ;;^UTILITY(U,$J,358.3,417,2)
- ;;=^5002305
- ;;^UTILITY(U,$J,358.3,418,0)
- ;;=D57.3^^2^20^16
- ;;^UTILITY(U,$J,358.3,418,1,0)
+ ;;^UTILITY(U,$J,358.3,476,1,3,0)
+ ;;=3^Cannabis-Induced Anxiety Disorder w/ Mild Use Disorders
+ ;;^UTILITY(U,$J,358.3,476,1,4,0)
+ ;;=4^F12.180
+ ;;^UTILITY(U,$J,358.3,476,2)
+ ;;=^5003163
+ ;;^UTILITY(U,$J,358.3,477,0)
+ ;;=F12.188^^3^51^22
+ ;;^UTILITY(U,$J,358.3,477,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,418,1,3,0)
- ;;=3^Sickle-cell trait
- ;;^UTILITY(U,$J,358.3,418,1,4,0)
- ;;=4^D57.3
- ;;^UTILITY(U,$J,358.3,418,2)
- ;;=^5002313
- ;;^UTILITY(U,$J,358.3,419,0)
- ;;=D57.1^^2^20^13
- ;;^UTILITY(U,$J,358.3,419,1,0)
+ ;;^UTILITY(U,$J,358.3,477,1,3,0)
+ ;;=3^Cannabis-Induced Sleep Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,477,1,4,0)
+ ;;=4^F12.188
+ ;;^UTILITY(U,$J,358.3,477,2)
+ ;;=^5003164
+ ;;^UTILITY(U,$J,358.3,478,0)
+ ;;=F12.20^^3^51^17
+ ;;^UTILITY(U,$J,358.3,478,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,419,1,3,0)
- ;;=3^Sickle-cell disease without crisis
- ;;^UTILITY(U,$J,358.3,419,1,4,0)
- ;;=4^D57.1
- ;;^UTILITY(U,$J,358.3,419,2)
- ;;=^5002309
- ;;^UTILITY(U,$J,358.3,420,0)
- ;;=D57.02^^2^20^6
- ;;^UTILITY(U,$J,358.3,420,1,0)
+ ;;^UTILITY(U,$J,358.3,478,1,3,0)
+ ;;=3^Cannabis Use Disorder,Moderate-Severe
+ ;;^UTILITY(U,$J,358.3,478,1,4,0)
+ ;;=4^F12.20
+ ;;^UTILITY(U,$J,358.3,478,2)
+ ;;=^5003166
+ ;;^UTILITY(U,$J,358.3,479,0)
+ ;;=F12.21^^3^51^18
+ ;;^UTILITY(U,$J,358.3,479,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,420,1,3,0)
- ;;=3^Hb-SS disease with splenic sequestration
- ;;^UTILITY(U,$J,358.3,420,1,4,0)
- ;;=4^D57.02
- ;;^UTILITY(U,$J,358.3,420,2)
- ;;=^5002308
- ;;^UTILITY(U,$J,358.3,421,0)
- ;;=D57.01^^2^20^4
- ;;^UTILITY(U,$J,358.3,421,1,0)
+ ;;^UTILITY(U,$J,358.3,479,1,3,0)
+ ;;=3^Cannabis Use Disorder,Moderate-Severe,In Remission
+ ;;^UTILITY(U,$J,358.3,479,1,4,0)
+ ;;=4^F12.21
+ ;;^UTILITY(U,$J,358.3,479,2)
+ ;;=^5003167
+ ;;^UTILITY(U,$J,358.3,480,0)
+ ;;=F12.288^^3^51^19
+ ;;^UTILITY(U,$J,358.3,480,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,421,1,3,0)
- ;;=3^Hb-SS disease with acute chest syndrome
- ;;^UTILITY(U,$J,358.3,421,1,4,0)
- ;;=4^D57.01
- ;;^UTILITY(U,$J,358.3,421,2)
- ;;=^5002307
- ;;^UTILITY(U,$J,358.3,422,0)
- ;;=D57.00^^2^20^5
- ;;^UTILITY(U,$J,358.3,422,1,0)
+ ;;^UTILITY(U,$J,358.3,480,1,3,0)
+ ;;=3^Cannabis Withdrawal
+ ;;^UTILITY(U,$J,358.3,480,1,4,0)
+ ;;=4^F12.288
+ ;;^UTILITY(U,$J,358.3,480,2)
+ ;;=^5003176
+ ;;^UTILITY(U,$J,358.3,481,0)
+ ;;=F12.280^^3^51^21
+ ;;^UTILITY(U,$J,358.3,481,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,422,1,3,0)
- ;;=3^Hb-SS disease with crisis, unspecified
- ;;^UTILITY(U,$J,358.3,422,1,4,0)
- ;;=4^D57.00
- ;;^UTILITY(U,$J,358.3,422,2)
- ;;=^5002306
- ;;^UTILITY(U,$J,358.3,423,0)
- ;;=D57.20^^2^20^17
- ;;^UTILITY(U,$J,358.3,423,1,0)
+ ;;^UTILITY(U,$J,358.3,481,1,3,0)
+ ;;=3^Cannabis-Induced Anxiety Disorder w/ Moderate-Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,481,1,4,0)
+ ;;=4^F12.280
+ ;;^UTILITY(U,$J,358.3,481,2)
+ ;;=^5003175
+ ;;^UTILITY(U,$J,358.3,482,0)
+ ;;=F12.121^^3^51^6
+ ;;^UTILITY(U,$J,358.3,482,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,423,1,3,0)
- ;;=3^Sickle-cell/Hb-C disease without crisis
- ;;^UTILITY(U,$J,358.3,423,1,4,0)
- ;;=4^D57.20
- ;;^UTILITY(U,$J,358.3,423,2)
- ;;=^330080
- ;;^UTILITY(U,$J,358.3,424,0)
- ;;=D57.811^^2^20^10
- ;;^UTILITY(U,$J,358.3,424,1,0)
+ ;;^UTILITY(U,$J,358.3,482,1,3,0)
+ ;;=3^Cannabis Intoxication Delium w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,482,1,4,0)
+ ;;=4^F12.121
+ ;;^UTILITY(U,$J,358.3,482,2)
+ ;;=^5003157
+ ;;^UTILITY(U,$J,358.3,483,0)
+ ;;=F12.221^^3^51^7
+ ;;^UTILITY(U,$J,358.3,483,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,424,1,3,0)
- ;;=3^Sickle-Cell Disorders w/ Acute Chest Syndrome NEC
- ;;^UTILITY(U,$J,358.3,424,1,4,0)
- ;;=4^D57.811
- ;;^UTILITY(U,$J,358.3,424,2)
- ;;=^5002318
- ;;^UTILITY(U,$J,358.3,425,0)
- ;;=D57.812^^2^20^11
- ;;^UTILITY(U,$J,358.3,425,1,0)
+ ;;^UTILITY(U,$J,358.3,483,1,3,0)
+ ;;=3^Cannabis Intoxication Delium w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,483,1,4,0)
+ ;;=4^F12.221
+ ;;^UTILITY(U,$J,358.3,483,2)
+ ;;=^5003169
+ ;;^UTILITY(U,$J,358.3,484,0)
+ ;;=F12.921^^3^51^8
+ ;;^UTILITY(U,$J,358.3,484,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,425,1,3,0)
- ;;=3^Sickle-Cell Disorders w/ Splenic Sequestration
- ;;^UTILITY(U,$J,358.3,425,1,4,0)
- ;;=4^D57.812
- ;;^UTILITY(U,$J,358.3,425,2)
- ;;=^5002319
- ;;^UTILITY(U,$J,358.3,426,0)
- ;;=D57.819^^2^20^12
- ;;^UTILITY(U,$J,358.3,426,1,0)
+ ;;^UTILITY(U,$J,358.3,484,1,3,0)
+ ;;=3^Cannabis Intoxication Delium w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,484,1,4,0)
+ ;;=4^F12.921
+ ;;^UTILITY(U,$J,358.3,484,2)
+ ;;=^5003180
+ ;;^UTILITY(U,$J,358.3,485,0)
+ ;;=F12.229^^3^51^12
+ ;;^UTILITY(U,$J,358.3,485,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,426,1,3,0)
- ;;=3^Sickle-Cell Disorders w/ Unspec Crisis NEC
- ;;^UTILITY(U,$J,358.3,426,1,4,0)
- ;;=4^D57.819
- ;;^UTILITY(U,$J,358.3,426,2)
- ;;=^5002320
- ;;^UTILITY(U,$J,358.3,427,0)
- ;;=D58.8^^2^20^9
- ;;^UTILITY(U,$J,358.3,427,1,0)
+ ;;^UTILITY(U,$J,358.3,485,1,3,0)
+ ;;=3^Cannabis Intoxication w/o Perceptual Disturbances w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,485,1,4,0)
+ ;;=4^F12.229
+ ;;^UTILITY(U,$J,358.3,485,2)
+ ;;=^5003171
+ ;;^UTILITY(U,$J,358.3,486,0)
+ ;;=F12.122^^3^51^9
+ ;;^UTILITY(U,$J,358.3,486,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,427,1,3,0)
- ;;=3^Hereditary Hemolytic Anemias NEC
- ;;^UTILITY(U,$J,358.3,427,1,4,0)
- ;;=4^D58.8
- ;;^UTILITY(U,$J,358.3,427,2)
- ;;=^267984
- ;;^UTILITY(U,$J,358.3,428,0)
- ;;=D58.2^^2^20^8
- ;;^UTILITY(U,$J,358.3,428,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,428,1,3,0)
- ;;=3^Hemoglobinopathies NEC
+ ;;^UTILITY(U,$J,358.3,486,1,3,0)
+ ;;=3^Cannabis Intoxication w/ Perceptual Disturbances w/ Mild Use Disorder

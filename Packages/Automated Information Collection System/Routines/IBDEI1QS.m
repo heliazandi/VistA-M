@@ -1,122 +1,142 @@
-IBDEI1QS ; ; 06-AUG-2015
+IBDEI1QS ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30807,1,0)
+ ;;^UTILITY(U,$J,358.3,29561,2)
+ ;;=^5003035
+ ;;^UTILITY(U,$J,358.3,29562,0)
+ ;;=D35.2^^115^1472^9
+ ;;^UTILITY(U,$J,358.3,29562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30807,1,3,0)
- ;;=3^Displaced comminuted fracture of shaft of right femur, init
- ;;^UTILITY(U,$J,358.3,30807,1,4,0)
- ;;=4^S72.351A
- ;;^UTILITY(U,$J,358.3,30807,2)
- ;;=^5038432
- ;;^UTILITY(U,$J,358.3,30808,0)
- ;;=M61.052^^179^1929^5
- ;;^UTILITY(U,$J,358.3,30808,1,0)
+ ;;^UTILITY(U,$J,358.3,29562,1,3,0)
+ ;;=3^Prolactinoma,Unspec Site
+ ;;^UTILITY(U,$J,358.3,29562,1,4,0)
+ ;;=4^D35.2
+ ;;^UTILITY(U,$J,358.3,29562,2)
+ ;;=^5002145
+ ;;^UTILITY(U,$J,358.3,29563,0)
+ ;;=Z13.1^^115^1472^10
+ ;;^UTILITY(U,$J,358.3,29563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30808,1,3,0)
- ;;=3^Myositis ossificans traumatica, left thigh
- ;;^UTILITY(U,$J,358.3,30808,1,4,0)
- ;;=4^M61.052
- ;;^UTILITY(U,$J,358.3,30808,2)
- ;;=^5012424
- ;;^UTILITY(U,$J,358.3,30809,0)
- ;;=S72.354A^^179^1929^7
- ;;^UTILITY(U,$J,358.3,30809,1,0)
+ ;;^UTILITY(U,$J,358.3,29563,1,3,0)
+ ;;=3^Screen,Diabetes
+ ;;^UTILITY(U,$J,358.3,29563,1,4,0)
+ ;;=4^Z13.1
+ ;;^UTILITY(U,$J,358.3,29563,2)
+ ;;=^5062700
+ ;;^UTILITY(U,$J,358.3,29564,0)
+ ;;=Z13.220^^115^1472^11
+ ;;^UTILITY(U,$J,358.3,29564,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30809,1,3,0)
- ;;=3^Nondisp comminuted fracture of shaft of right femur, init
- ;;^UTILITY(U,$J,358.3,30809,1,4,0)
- ;;=4^S72.354A
- ;;^UTILITY(U,$J,358.3,30809,2)
- ;;=^5038480
- ;;^UTILITY(U,$J,358.3,30810,0)
- ;;=M84.552A^^179^1929^9
- ;;^UTILITY(U,$J,358.3,30810,1,0)
+ ;;^UTILITY(U,$J,358.3,29564,1,3,0)
+ ;;=3^Screen,Lipids
+ ;;^UTILITY(U,$J,358.3,29564,1,4,0)
+ ;;=4^Z13.220
+ ;;^UTILITY(U,$J,358.3,29564,2)
+ ;;=^5062702
+ ;;^UTILITY(U,$J,358.3,29565,0)
+ ;;=Z13.29^^115^1472^12
+ ;;^UTILITY(U,$J,358.3,29565,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30810,1,3,0)
- ;;=3^Path fracture in neoplastic disease, left femur, init
- ;;^UTILITY(U,$J,358.3,30810,1,4,0)
- ;;=4^M84.552A
- ;;^UTILITY(U,$J,358.3,30810,2)
- ;;=^5014124
- ;;^UTILITY(U,$J,358.3,30811,0)
- ;;=M84.551A^^179^1929^10
- ;;^UTILITY(U,$J,358.3,30811,1,0)
+ ;;^UTILITY(U,$J,358.3,29565,1,3,0)
+ ;;=3^Screen,Thyroid
+ ;;^UTILITY(U,$J,358.3,29565,1,4,0)
+ ;;=4^Z13.29
+ ;;^UTILITY(U,$J,358.3,29565,2)
+ ;;=^5062704
+ ;;^UTILITY(U,$J,358.3,29566,0)
+ ;;=N70.01^^115^1473^12
+ ;;^UTILITY(U,$J,358.3,29566,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30811,1,3,0)
- ;;=3^Path fracture in neoplastic disease, right femur, init
- ;;^UTILITY(U,$J,358.3,30811,1,4,0)
- ;;=4^M84.551A
- ;;^UTILITY(U,$J,358.3,30811,2)
- ;;=^5014118
- ;;^UTILITY(U,$J,358.3,30812,0)
- ;;=M84.652A^^179^1929^11
- ;;^UTILITY(U,$J,358.3,30812,1,0)
+ ;;^UTILITY(U,$J,358.3,29566,1,3,0)
+ ;;=3^Salpingitis,Acute
+ ;;^UTILITY(U,$J,358.3,29566,1,4,0)
+ ;;=4^N70.01
+ ;;^UTILITY(U,$J,358.3,29566,2)
+ ;;=^5015802
+ ;;^UTILITY(U,$J,358.3,29567,0)
+ ;;=A63.0^^115^1473^19
+ ;;^UTILITY(U,$J,358.3,29567,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30812,1,3,0)
- ;;=3^Pathological fracture in oth disease, left femur, init
- ;;^UTILITY(U,$J,358.3,30812,1,4,0)
- ;;=4^M84.652A
- ;;^UTILITY(U,$J,358.3,30812,2)
- ;;=^5134003
- ;;^UTILITY(U,$J,358.3,30813,0)
- ;;=M61.051^^179^1929^6
- ;;^UTILITY(U,$J,358.3,30813,1,0)
+ ;;^UTILITY(U,$J,358.3,29567,1,3,0)
+ ;;=3^Verereal Warts
+ ;;^UTILITY(U,$J,358.3,29567,1,4,0)
+ ;;=4^A63.0
+ ;;^UTILITY(U,$J,358.3,29567,2)
+ ;;=^5000360
+ ;;^UTILITY(U,$J,358.3,29568,0)
+ ;;=B37.3^^115^1473^1
+ ;;^UTILITY(U,$J,358.3,29568,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30813,1,3,0)
- ;;=3^Myositis ossificans traumatica, right thigh
- ;;^UTILITY(U,$J,358.3,30813,1,4,0)
- ;;=4^M61.051
- ;;^UTILITY(U,$J,358.3,30813,2)
- ;;=^5012423
- ;;^UTILITY(U,$J,358.3,30814,0)
- ;;=S72.355A^^179^1929^8
- ;;^UTILITY(U,$J,358.3,30814,1,0)
+ ;;^UTILITY(U,$J,358.3,29568,1,3,0)
+ ;;=3^Candidiasis
+ ;;^UTILITY(U,$J,358.3,29568,1,4,0)
+ ;;=4^B37.3
+ ;;^UTILITY(U,$J,358.3,29568,2)
+ ;;=^5000615
+ ;;^UTILITY(U,$J,358.3,29569,0)
+ ;;=N72.^^115^1473^2
+ ;;^UTILITY(U,$J,358.3,29569,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30814,1,3,0)
- ;;=3^Nondisp comminuted fracture of shaft of left femur, init
- ;;^UTILITY(U,$J,358.3,30814,1,4,0)
- ;;=4^S72.355A
- ;;^UTILITY(U,$J,358.3,30814,2)
- ;;=^5038496
- ;;^UTILITY(U,$J,358.3,30815,0)
- ;;=M84.651A^^179^1929^12
- ;;^UTILITY(U,$J,358.3,30815,1,0)
+ ;;^UTILITY(U,$J,358.3,29569,1,3,0)
+ ;;=3^Cervicitis
+ ;;^UTILITY(U,$J,358.3,29569,1,4,0)
+ ;;=4^N72.
+ ;;^UTILITY(U,$J,358.3,29569,2)
+ ;;=^5015812
+ ;;^UTILITY(U,$J,358.3,29570,0)
+ ;;=A74.89^^115^1473^3
+ ;;^UTILITY(U,$J,358.3,29570,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30815,1,3,0)
- ;;=3^Pathological fracture in oth disease, right femur, init
- ;;^UTILITY(U,$J,358.3,30815,1,4,0)
- ;;=4^M84.651A
- ;;^UTILITY(U,$J,358.3,30815,2)
- ;;=^5014262
- ;;^UTILITY(U,$J,358.3,30816,0)
- ;;=M84.452A^^179^1929^13
- ;;^UTILITY(U,$J,358.3,30816,1,0)
+ ;;^UTILITY(U,$J,358.3,29570,1,3,0)
+ ;;=3^Chlamydia (Culture +)
+ ;;^UTILITY(U,$J,358.3,29570,1,4,0)
+ ;;=4^A74.89
+ ;;^UTILITY(U,$J,358.3,29570,2)
+ ;;=^5000387
+ ;;^UTILITY(U,$J,358.3,29571,0)
+ ;;=Z11.8^^115^1473^13
+ ;;^UTILITY(U,$J,358.3,29571,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30816,1,3,0)
- ;;=3^Pathological fracture, left femur, init encntr for fracture
- ;;^UTILITY(U,$J,358.3,30816,1,4,0)
- ;;=4^M84.452A
- ;;^UTILITY(U,$J,358.3,30816,2)
- ;;=^5013908
- ;;^UTILITY(U,$J,358.3,30817,0)
- ;;=M84.451A^^179^1929^14
- ;;^UTILITY(U,$J,358.3,30817,1,0)
+ ;;^UTILITY(U,$J,358.3,29571,1,3,0)
+ ;;=3^Screen,Chlamydia
+ ;;^UTILITY(U,$J,358.3,29571,1,4,0)
+ ;;=4^Z11.8
+ ;;^UTILITY(U,$J,358.3,29571,2)
+ ;;=^5062677
+ ;;^UTILITY(U,$J,358.3,29572,0)
+ ;;=A56.02^^115^1473^4
+ ;;^UTILITY(U,$J,358.3,29572,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30817,1,3,0)
- ;;=3^Pathological fracture, right femur, init encntr for fracture
- ;;^UTILITY(U,$J,358.3,30817,1,4,0)
- ;;=4^M84.451A
- ;;^UTILITY(U,$J,358.3,30817,2)
- ;;=^5013902
- ;;^UTILITY(U,$J,358.3,30818,0)
- ;;=M84.352A^^179^1929^15
- ;;^UTILITY(U,$J,358.3,30818,1,0)
+ ;;^UTILITY(U,$J,358.3,29572,1,3,0)
+ ;;=3^Chlamydial Vulvovaginitis
+ ;;^UTILITY(U,$J,358.3,29572,1,4,0)
+ ;;=4^A56.02
+ ;;^UTILITY(U,$J,358.3,29572,2)
+ ;;=^5000340
+ ;;^UTILITY(U,$J,358.3,29573,0)
+ ;;=Z20.2^^115^1473^5
+ ;;^UTILITY(U,$J,358.3,29573,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30818,1,3,0)
- ;;=3^Stress fracture, left femur, initial encounter for fracture
- ;;^UTILITY(U,$J,358.3,30818,1,4,0)
- ;;=4^M84.352A
- ;;^UTILITY(U,$J,358.3,30818,2)
- ;;=^5013686
+ ;;^UTILITY(U,$J,358.3,29573,1,3,0)
+ ;;=3^Contact with/Exposure to Infection,Sexual Mode of Transmission
+ ;;^UTILITY(U,$J,358.3,29573,1,4,0)
+ ;;=4^Z20.2
+ ;;^UTILITY(U,$J,358.3,29573,2)
+ ;;=^5062764
+ ;;^UTILITY(U,$J,358.3,29574,0)
+ ;;=N71.9^^115^1473^6
+ ;;^UTILITY(U,$J,358.3,29574,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29574,1,3,0)
+ ;;=3^Endometritis
+ ;;^UTILITY(U,$J,358.3,29574,1,4,0)
+ ;;=4^N71.9
+ ;;^UTILITY(U,$J,358.3,29574,2)
+ ;;=^5015811
+ ;;^UTILITY(U,$J,358.3,29575,0)
+ ;;=A54.00^^115^1473^7
+ ;;^UTILITY(U,$J,358.3,29575,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29575,1,3,0)
+ ;;=3^Gonorrhea (Culture +),Lower GU Tract

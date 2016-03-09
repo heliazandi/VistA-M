@@ -1,138 +1,120 @@
-IBDEI18J ; ; 06-AUG-2015
+IBDEI18J ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,21875,0)
- ;;=438.11^^118^1360^3
- ;;^UTILITY(U,$J,358.3,21875,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21875,1,4,0)
- ;;=4^438.11
- ;;^UTILITY(U,$J,358.3,21875,1,5,0)
- ;;=5^Late Effect CVA,Aphasia
- ;;^UTILITY(U,$J,358.3,21875,2)
- ;;=^317907
- ;;^UTILITY(U,$J,358.3,21876,0)
- ;;=438.12^^118^1360^4
- ;;^UTILITY(U,$J,358.3,21876,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21876,1,4,0)
- ;;=4^438.12
- ;;^UTILITY(U,$J,358.3,21876,1,5,0)
- ;;=5^Late Effect CVA,Dysphasia
- ;;^UTILITY(U,$J,358.3,21876,2)
- ;;=^317908
- ;;^UTILITY(U,$J,358.3,21877,0)
- ;;=438.21^^118^1360^5
- ;;^UTILITY(U,$J,358.3,21877,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21877,1,4,0)
- ;;=4^438.21
- ;;^UTILITY(U,$J,358.3,21877,1,5,0)
- ;;=5^Late Effect CVA,Hemipl,Dom Side
- ;;^UTILITY(U,$J,358.3,21877,2)
- ;;=^317911
- ;;^UTILITY(U,$J,358.3,21878,0)
- ;;=438.22^^118^1360^6
- ;;^UTILITY(U,$J,358.3,21878,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21878,1,4,0)
- ;;=4^438.22
- ;;^UTILITY(U,$J,358.3,21878,1,5,0)
- ;;=5^Late Effect CVA,Hemipl,Non-Dom Side
- ;;^UTILITY(U,$J,358.3,21878,2)
- ;;=^317912
- ;;^UTILITY(U,$J,358.3,21879,0)
- ;;=438.32^^118^1360^9
- ;;^UTILITY(U,$J,358.3,21879,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21879,1,4,0)
- ;;=4^438.32
- ;;^UTILITY(U,$J,358.3,21879,1,5,0)
- ;;=5^Late Effect CVA,Monopl,U/L,Non-Dom Side
- ;;^UTILITY(U,$J,358.3,21879,2)
- ;;=^317915
- ;;^UTILITY(U,$J,358.3,21880,0)
- ;;=438.41^^118^1360^7
- ;;^UTILITY(U,$J,358.3,21880,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21880,1,4,0)
- ;;=4^438.41
- ;;^UTILITY(U,$J,358.3,21880,1,5,0)
- ;;=5^Late Effect CVA,Monopl,L/L,Dom Side
- ;;^UTILITY(U,$J,358.3,21880,2)
- ;;=^317917
- ;;^UTILITY(U,$J,358.3,21881,0)
- ;;=438.42^^118^1360^8
- ;;^UTILITY(U,$J,358.3,21881,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21881,1,4,0)
- ;;=4^438.42
- ;;^UTILITY(U,$J,358.3,21881,1,5,0)
- ;;=5^Late Effect CVA,Monopl,L/L,Non-Dom Side
- ;;^UTILITY(U,$J,358.3,21881,2)
- ;;=^317918
- ;;^UTILITY(U,$J,358.3,21882,0)
- ;;=438.84^^118^1360^1
- ;;^UTILITY(U,$J,358.3,21882,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21882,1,4,0)
- ;;=4^438.84
- ;;^UTILITY(U,$J,358.3,21882,1,5,0)
- ;;=5^Ataxia
- ;;^UTILITY(U,$J,358.3,21882,2)
- ;;=^328507
- ;;^UTILITY(U,$J,358.3,21883,0)
- ;;=070.51^^118^1361^1
- ;;^UTILITY(U,$J,358.3,21883,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21883,1,4,0)
- ;;=4^070.51
- ;;^UTILITY(U,$J,358.3,21883,1,5,0)
- ;;=5^Acute Hepatitis C w/o Coma
- ;;^UTILITY(U,$J,358.3,21883,2)
- ;;=^331778
- ;;^UTILITY(U,$J,358.3,21884,0)
- ;;=070.54^^118^1361^2
- ;;^UTILITY(U,$J,358.3,21884,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21884,1,4,0)
- ;;=4^070.54
- ;;^UTILITY(U,$J,358.3,21884,1,5,0)
- ;;=5^Chr Hepatitis C w/o Coma
- ;;^UTILITY(U,$J,358.3,21884,2)
- ;;=^303252
- ;;^UTILITY(U,$J,358.3,21885,0)
- ;;=V02.62^^118^1361^3
- ;;^UTILITY(U,$J,358.3,21885,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21885,1,4,0)
- ;;=4^V02.62
- ;;^UTILITY(U,$J,358.3,21885,1,5,0)
- ;;=5^Hepatitis C Carrier
- ;;^UTILITY(U,$J,358.3,21885,2)
- ;;=^317947
- ;;^UTILITY(U,$J,358.3,21886,0)
- ;;=300.00^^118^1362^1
- ;;^UTILITY(U,$J,358.3,21886,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21886,1,4,0)
- ;;=4^300.00
- ;;^UTILITY(U,$J,358.3,21886,1,5,0)
- ;;=5^Anxiety NOS
- ;;^UTILITY(U,$J,358.3,21886,2)
- ;;=^9200
- ;;^UTILITY(U,$J,358.3,21887,0)
- ;;=295.90^^118^1362^4
- ;;^UTILITY(U,$J,358.3,21887,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21887,1,4,0)
- ;;=4^295.90
- ;;^UTILITY(U,$J,358.3,21887,1,5,0)
- ;;=5^Schizophrenia NOS
- ;;^UTILITY(U,$J,358.3,21887,2)
- ;;=^108287
- ;;^UTILITY(U,$J,358.3,21888,0)
- ;;=296.20^^118^1362^3
- ;;^UTILITY(U,$J,358.3,21888,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,21001,1,4,0)
+ ;;=4^S56.811A
+ ;;^UTILITY(U,$J,358.3,21001,2)
+ ;;=^5031862
+ ;;^UTILITY(U,$J,358.3,21002,0)
+ ;;=S56.812A^^84^942^21
+ ;;^UTILITY(U,$J,358.3,21002,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21002,1,3,0)
+ ;;=3^Strain of Left Forearm Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,21002,1,4,0)
+ ;;=4^S56.812A
+ ;;^UTILITY(U,$J,358.3,21002,2)
+ ;;=^5031865
+ ;;^UTILITY(U,$J,358.3,21003,0)
+ ;;=S56.116A^^84^942^33
+ ;;^UTILITY(U,$J,358.3,21003,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21003,1,3,0)
+ ;;=3^Strain of Left Ring Finger at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,21003,1,4,0)
+ ;;=4^S56.116A
+ ;;^UTILITY(U,$J,358.3,21003,2)
+ ;;=^5031631
+ ;;^UTILITY(U,$J,358.3,21004,0)
+ ;;=S56.117A^^84^942^46
+ ;;^UTILITY(U,$J,358.3,21004,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21004,1,3,0)
+ ;;=3^Strain of Right Little Finger at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,21004,1,4,0)
+ ;;=4^S56.117A
+ ;;^UTILITY(U,$J,358.3,21004,2)
+ ;;=^5031634
+ ;;^UTILITY(U,$J,358.3,21005,0)
+ ;;=S56.118A^^84^942^26
+ ;;^UTILITY(U,$J,358.3,21005,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21005,1,3,0)
+ ;;=3^Strain of Left Little Finger at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,21005,1,4,0)
+ ;;=4^S56.118A
+ ;;^UTILITY(U,$J,358.3,21005,2)
+ ;;=^5031637
+ ;;^UTILITY(U,$J,358.3,21006,0)
+ ;;=S56.211A^^84^942^40
+ ;;^UTILITY(U,$J,358.3,21006,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21006,1,3,0)
+ ;;=3^Strain of Right Forearm Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,21006,1,4,0)
+ ;;=4^S56.211A
+ ;;^UTILITY(U,$J,358.3,21006,2)
+ ;;=^5031691
+ ;;^UTILITY(U,$J,358.3,21007,0)
+ ;;=S56.212A^^84^942^20
+ ;;^UTILITY(U,$J,358.3,21007,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21007,1,3,0)
+ ;;=3^Strain of Left Forearm Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,21007,1,4,0)
+ ;;=4^S56.212A
+ ;;^UTILITY(U,$J,358.3,21007,2)
+ ;;=^5031694
+ ;;^UTILITY(U,$J,358.3,21008,0)
+ ;;=S56.311A^^84^942^56
+ ;;^UTILITY(U,$J,358.3,21008,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21008,1,3,0)
+ ;;=3^Strain of Right Thumb at Forearm Level Extn/Abdr Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,21008,1,4,0)
+ ;;=4^S56.311A
+ ;;^UTILITY(U,$J,358.3,21008,2)
+ ;;=^5031715
+ ;;^UTILITY(U,$J,358.3,21009,0)
+ ;;=S56.312A^^84^942^35
+ ;;^UTILITY(U,$J,358.3,21009,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21009,1,3,0)
+ ;;=3^Strain of Left Thumb at Forearm Level Extn/Abdr Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,21009,1,4,0)
+ ;;=4^S56.312A
+ ;;^UTILITY(U,$J,358.3,21009,2)
+ ;;=^5031718
+ ;;^UTILITY(U,$J,358.3,21010,0)
+ ;;=S56.411A^^84^942^44
+ ;;^UTILITY(U,$J,358.3,21010,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21010,1,3,0)
+ ;;=3^Strain of Right Index Finger at Forearm Level Extensor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,21010,1,4,0)
+ ;;=4^S56.411A
+ ;;^UTILITY(U,$J,358.3,21010,2)
+ ;;=^5031763
+ ;;^UTILITY(U,$J,358.3,21011,0)
+ ;;=S56.412A^^84^942^24
+ ;;^UTILITY(U,$J,358.3,21011,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21011,1,3,0)
+ ;;=3^Strain of Left Index Finger at Forearm Level Extensor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,21011,1,4,0)
+ ;;=4^S56.412A
+ ;;^UTILITY(U,$J,358.3,21011,2)
+ ;;=^5031766
+ ;;^UTILITY(U,$J,358.3,21012,0)
+ ;;=S56.413A^^84^942^52
+ ;;^UTILITY(U,$J,358.3,21012,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21012,1,3,0)
+ ;;=3^Strain of Right Middle Finger at Forearm Level Extensor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,21012,1,4,0)
+ ;;=4^S56.413A
+ ;;^UTILITY(U,$J,358.3,21012,2)
+ ;;=^5031769
+ ;;^UTILITY(U,$J,358.3,21013,0)
+ ;;=S56.414A^^84^942^32

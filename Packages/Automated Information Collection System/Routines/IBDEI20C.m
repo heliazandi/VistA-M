@@ -1,120 +1,132 @@
-IBDEI20C ; ; 06-AUG-2015
+IBDEI20C ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35116,1,0)
+ ;;^UTILITY(U,$J,358.3,34059,2)
+ ;;=^5063628
+ ;;^UTILITY(U,$J,358.3,34060,0)
+ ;;=Z92.89^^131^1681^106
+ ;;^UTILITY(U,$J,358.3,34060,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35116,1,3,0)
- ;;=3^Nondisp fx of transverse shaft of left radius, sequela
- ;;^UTILITY(U,$J,358.3,35116,1,4,0)
- ;;=4^S52.325S
- ;;^UTILITY(U,$J,358.3,35116,2)
- ;;=^5030046
- ;;^UTILITY(U,$J,358.3,35117,0)
- ;;=S52.324S^^183^2026^121
- ;;^UTILITY(U,$J,358.3,35117,1,0)
+ ;;^UTILITY(U,$J,358.3,34060,1,3,0)
+ ;;=3^Personal Hx of Other Medical Treatment
+ ;;^UTILITY(U,$J,358.3,34060,1,4,0)
+ ;;=4^Z92.89
+ ;;^UTILITY(U,$J,358.3,34060,2)
+ ;;=^5063641
+ ;;^UTILITY(U,$J,358.3,34061,0)
+ ;;=Z77.110^^131^1681^9
+ ;;^UTILITY(U,$J,358.3,34061,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35117,1,3,0)
- ;;=3^Nondisp fx of transverse shaft of r radius, sequela
- ;;^UTILITY(U,$J,358.3,35117,1,4,0)
- ;;=4^S52.324S
- ;;^UTILITY(U,$J,358.3,35117,2)
- ;;=^5030030
- ;;^UTILITY(U,$J,358.3,35118,0)
- ;;=M84.434S^^183^2026^129
- ;;^UTILITY(U,$J,358.3,35118,1,0)
+ ;;^UTILITY(U,$J,358.3,34061,1,3,0)
+ ;;=3^Air Pollution Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,34061,1,4,0)
+ ;;=4^Z77.110
+ ;;^UTILITY(U,$J,358.3,34061,2)
+ ;;=^5063314
+ ;;^UTILITY(U,$J,358.3,34062,0)
+ ;;=Z77.112^^131^1681^142
+ ;;^UTILITY(U,$J,358.3,34062,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35118,1,3,0)
- ;;=3^Pathological fracture, left radius, sequela
- ;;^UTILITY(U,$J,358.3,35118,1,4,0)
- ;;=4^M84.434S
- ;;^UTILITY(U,$J,358.3,35118,2)
- ;;=^5013859
- ;;^UTILITY(U,$J,358.3,35119,0)
- ;;=M84.433S^^183^2026^131
- ;;^UTILITY(U,$J,358.3,35119,1,0)
+ ;;^UTILITY(U,$J,358.3,34062,1,3,0)
+ ;;=3^Soil Pollution Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,34062,1,4,0)
+ ;;=4^Z77.112
+ ;;^UTILITY(U,$J,358.3,34062,2)
+ ;;=^5063316
+ ;;^UTILITY(U,$J,358.3,34063,0)
+ ;;=Z77.111^^131^1681^148
+ ;;^UTILITY(U,$J,358.3,34063,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35119,1,3,0)
- ;;=3^Pathological fracture, right radius, sequela
- ;;^UTILITY(U,$J,358.3,35119,1,4,0)
- ;;=4^M84.433S
- ;;^UTILITY(U,$J,358.3,35119,2)
- ;;=^5013853
- ;;^UTILITY(U,$J,358.3,35120,0)
- ;;=S59.212S^^183^2026^134
- ;;^UTILITY(U,$J,358.3,35120,1,0)
+ ;;^UTILITY(U,$J,358.3,34063,1,3,0)
+ ;;=3^Water Pollution Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,34063,1,4,0)
+ ;;=4^Z77.111
+ ;;^UTILITY(U,$J,358.3,34063,2)
+ ;;=^5063315
+ ;;^UTILITY(U,$J,358.3,34064,0)
+ ;;=Z77.128^^131^1681^119
+ ;;^UTILITY(U,$J,358.3,34064,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35120,1,3,0)
- ;;=3^Sltr-haris Type I physl fx lower end radius, left arm, sqla
- ;;^UTILITY(U,$J,358.3,35120,1,4,0)
- ;;=4^S59.212S
- ;;^UTILITY(U,$J,358.3,35120,2)
- ;;=^5135626
- ;;^UTILITY(U,$J,358.3,35121,0)
- ;;=S59.211S^^183^2026^135
- ;;^UTILITY(U,$J,358.3,35121,1,0)
+ ;;^UTILITY(U,$J,358.3,34064,1,3,0)
+ ;;=3^Physical Environment Hazards Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,34064,1,4,0)
+ ;;=4^Z77.128
+ ;;^UTILITY(U,$J,358.3,34064,2)
+ ;;=^5063322
+ ;;^UTILITY(U,$J,358.3,34065,0)
+ ;;=Z77.123^^131^1681^140
+ ;;^UTILITY(U,$J,358.3,34065,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35121,1,3,0)
- ;;=3^Sltr-haris Type I physl fx lower end radius, right arm, sqla
- ;;^UTILITY(U,$J,358.3,35121,1,4,0)
- ;;=4^S59.211S
- ;;^UTILITY(U,$J,358.3,35121,2)
- ;;=^5032152
- ;;^UTILITY(U,$J,358.3,35122,0)
- ;;=S59.112S^^183^2026^137
- ;;^UTILITY(U,$J,358.3,35122,1,0)
+ ;;^UTILITY(U,$J,358.3,34065,1,3,0)
+ ;;=3^Radon/Radiation Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,34065,1,4,0)
+ ;;=4^Z77.123
+ ;;^UTILITY(U,$J,358.3,34065,2)
+ ;;=^5063321
+ ;;^UTILITY(U,$J,358.3,34066,0)
+ ;;=Z77.122^^131^1681^68
+ ;;^UTILITY(U,$J,358.3,34066,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35122,1,3,0)
- ;;=3^Sltr-haris Type I physl fx upper end radius, left arm, sqla
- ;;^UTILITY(U,$J,358.3,35122,1,4,0)
- ;;=4^S59.112S
- ;;^UTILITY(U,$J,358.3,35122,2)
- ;;=^5032074
- ;;^UTILITY(U,$J,358.3,35123,0)
- ;;=S59.111S^^183^2026^138
- ;;^UTILITY(U,$J,358.3,35123,1,0)
+ ;;^UTILITY(U,$J,358.3,34066,1,3,0)
+ ;;=3^Noise Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,34066,1,4,0)
+ ;;=4^Z77.122
+ ;;^UTILITY(U,$J,358.3,34066,2)
+ ;;=^5063320
+ ;;^UTILITY(U,$J,358.3,34067,0)
+ ;;=Z77.118^^131^1681^19
+ ;;^UTILITY(U,$J,358.3,34067,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35123,1,3,0)
- ;;=3^Sltr-haris Type I physl fx upper end radius, right arm, sqla
- ;;^UTILITY(U,$J,358.3,35123,1,4,0)
- ;;=4^S59.111S
- ;;^UTILITY(U,$J,358.3,35123,2)
- ;;=^5032068
- ;;^UTILITY(U,$J,358.3,35124,0)
- ;;=S59.222S^^183^2026^139
- ;;^UTILITY(U,$J,358.3,35124,1,0)
+ ;;^UTILITY(U,$J,358.3,34067,1,3,0)
+ ;;=3^Environmental Pollution Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,34067,1,4,0)
+ ;;=4^Z77.118
+ ;;^UTILITY(U,$J,358.3,34067,2)
+ ;;=^5063317
+ ;;^UTILITY(U,$J,358.3,34068,0)
+ ;;=Z77.9^^131^1681^54
+ ;;^UTILITY(U,$J,358.3,34068,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35124,1,3,0)
- ;;=3^Sltr-haris Type II physl fx lower end radius, left arm, sqla
- ;;^UTILITY(U,$J,358.3,35124,1,4,0)
- ;;=4^S59.222S
- ;;^UTILITY(U,$J,358.3,35124,2)
- ;;=^5135632
- ;;^UTILITY(U,$J,358.3,35125,0)
- ;;=S59.221S^^183^2026^140
- ;;^UTILITY(U,$J,358.3,35125,1,0)
+ ;;^UTILITY(U,$J,358.3,34068,1,3,0)
+ ;;=3^Health Hazard Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,34068,1,4,0)
+ ;;=4^Z77.9
+ ;;^UTILITY(U,$J,358.3,34068,2)
+ ;;=^5063326
+ ;;^UTILITY(U,$J,358.3,34069,0)
+ ;;=Z77.22^^131^1681^18
+ ;;^UTILITY(U,$J,358.3,34069,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35125,1,3,0)
- ;;=3^Sltr-haris Type II physl fx lower end rad, right arm, sqla
- ;;^UTILITY(U,$J,358.3,35125,1,4,0)
- ;;=4^S59.221S
- ;;^UTILITY(U,$J,358.3,35125,2)
- ;;=^5032164
- ;;^UTILITY(U,$J,358.3,35126,0)
- ;;=S59.122S^^183^2026^143
- ;;^UTILITY(U,$J,358.3,35126,1,0)
+ ;;^UTILITY(U,$J,358.3,34069,1,3,0)
+ ;;=3^Environmental Exposure Tobacco Smoke/Second-Hand Smoke
+ ;;^UTILITY(U,$J,358.3,34069,1,4,0)
+ ;;=4^Z77.22
+ ;;^UTILITY(U,$J,358.3,34069,2)
+ ;;=^5063324
+ ;;^UTILITY(U,$J,358.3,34070,0)
+ ;;=Z80.0^^131^1681^35
+ ;;^UTILITY(U,$J,358.3,34070,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35126,1,3,0)
- ;;=3^Sltr-haris Type II physl fx upper end radius, left arm, sqla
- ;;^UTILITY(U,$J,358.3,35126,1,4,0)
- ;;=4^S59.122S
- ;;^UTILITY(U,$J,358.3,35126,2)
- ;;=^5032092
- ;;^UTILITY(U,$J,358.3,35127,0)
- ;;=S59.121S^^183^2026^144
- ;;^UTILITY(U,$J,358.3,35127,1,0)
+ ;;^UTILITY(U,$J,358.3,34070,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Digestive Organs
+ ;;^UTILITY(U,$J,358.3,34070,1,4,0)
+ ;;=4^Z80.0
+ ;;^UTILITY(U,$J,358.3,34070,2)
+ ;;=^5063344
+ ;;^UTILITY(U,$J,358.3,34071,0)
+ ;;=Z80.1^^131^1681^41
+ ;;^UTILITY(U,$J,358.3,34071,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35127,1,3,0)
- ;;=3^Sltr-haris Type II physl fx upper end rad, right arm, sqla
- ;;^UTILITY(U,$J,358.3,35127,1,4,0)
- ;;=4^S59.121S
+ ;;^UTILITY(U,$J,358.3,34071,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Trachea,Bronc & Lung
+ ;;^UTILITY(U,$J,358.3,34071,1,4,0)
+ ;;=4^Z80.1
+ ;;^UTILITY(U,$J,358.3,34071,2)
+ ;;=^5063345
+ ;;^UTILITY(U,$J,358.3,34072,0)
+ ;;=Z80.3^^131^1681^34
+ ;;^UTILITY(U,$J,358.3,34072,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34072,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Breast

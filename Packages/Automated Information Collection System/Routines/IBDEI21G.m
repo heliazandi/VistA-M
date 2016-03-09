@@ -1,130 +1,138 @@
-IBDEI21G ; ; 06-AUG-2015
+IBDEI21G ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35618,1,4,0)
- ;;=4^C90.31
- ;;^UTILITY(U,$J,358.3,35618,2)
- ;;=^5001760
- ;;^UTILITY(U,$J,358.3,35619,0)
- ;;=C88.8^^189^2057^33
- ;;^UTILITY(U,$J,358.3,35619,1,0)
+ ;;^UTILITY(U,$J,358.3,34577,1,4,0)
+ ;;=4^Z12.39
+ ;;^UTILITY(U,$J,358.3,34577,2)
+ ;;=^5062686
+ ;;^UTILITY(U,$J,358.3,34578,0)
+ ;;=Z12.4^^131^1689^5
+ ;;^UTILITY(U,$J,358.3,34578,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35619,1,3,0)
- ;;=3^Malignant immunoproliferative diseases NEC
- ;;^UTILITY(U,$J,358.3,35619,1,4,0)
- ;;=4^C88.8
- ;;^UTILITY(U,$J,358.3,35619,2)
- ;;=^5001750
- ;;^UTILITY(U,$J,358.3,35620,0)
- ;;=C90.22^^189^2057^24
- ;;^UTILITY(U,$J,358.3,35620,1,0)
+ ;;^UTILITY(U,$J,358.3,34578,1,3,0)
+ ;;=3^Cervix Malignant Neoplasm Screen
+ ;;^UTILITY(U,$J,358.3,34578,1,4,0)
+ ;;=4^Z12.4
+ ;;^UTILITY(U,$J,358.3,34578,2)
+ ;;=^5062687
+ ;;^UTILITY(U,$J,358.3,34579,0)
+ ;;=Z13.5^^131^1689^8
+ ;;^UTILITY(U,$J,358.3,34579,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35620,1,3,0)
- ;;=3^Extramedullary plasmacytoma in relapse
- ;;^UTILITY(U,$J,358.3,35620,1,4,0)
- ;;=4^C90.22
- ;;^UTILITY(U,$J,358.3,35620,2)
- ;;=^5001758
- ;;^UTILITY(U,$J,358.3,35621,0)
- ;;=C90.32^^189^2057^49
- ;;^UTILITY(U,$J,358.3,35621,1,0)
+ ;;^UTILITY(U,$J,358.3,34579,1,3,0)
+ ;;=3^Eye and Ear Disorder Screen
+ ;;^UTILITY(U,$J,358.3,34579,1,4,0)
+ ;;=4^Z13.5
+ ;;^UTILITY(U,$J,358.3,34579,2)
+ ;;=^5062706
+ ;;^UTILITY(U,$J,358.3,34580,0)
+ ;;=Z01.89^^131^1689^6
+ ;;^UTILITY(U,$J,358.3,34580,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35621,1,3,0)
- ;;=3^Solitary plasmacytoma in relapse
- ;;^UTILITY(U,$J,358.3,35621,1,4,0)
- ;;=4^C90.32
- ;;^UTILITY(U,$J,358.3,35621,2)
- ;;=^5001761
- ;;^UTILITY(U,$J,358.3,35622,0)
- ;;=C91.01^^189^2057^2
- ;;^UTILITY(U,$J,358.3,35622,1,0)
+ ;;^UTILITY(U,$J,358.3,34580,1,3,0)
+ ;;=3^Diabetic Foot Exam
+ ;;^UTILITY(U,$J,358.3,34580,1,4,0)
+ ;;=4^Z01.89
+ ;;^UTILITY(U,$J,358.3,34580,2)
+ ;;=^5062632
+ ;;^UTILITY(U,$J,358.3,34581,0)
+ ;;=Z11.59^^131^1689^16
+ ;;^UTILITY(U,$J,358.3,34581,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35622,1,3,0)
- ;;=3^Acute lymphoblastic leukemia, in remission
- ;;^UTILITY(U,$J,358.3,35622,1,4,0)
- ;;=4^C91.01
- ;;^UTILITY(U,$J,358.3,35622,2)
- ;;=^5001763
- ;;^UTILITY(U,$J,358.3,35623,0)
- ;;=C91.02^^189^2057^1
- ;;^UTILITY(U,$J,358.3,35623,1,0)
+ ;;^UTILITY(U,$J,358.3,34581,1,3,0)
+ ;;=3^Viral Diseases Screen
+ ;;^UTILITY(U,$J,358.3,34581,1,4,0)
+ ;;=4^Z11.59
+ ;;^UTILITY(U,$J,358.3,34581,2)
+ ;;=^5062675
+ ;;^UTILITY(U,$J,358.3,34582,0)
+ ;;=Z13.6^^131^1689^4
+ ;;^UTILITY(U,$J,358.3,34582,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35623,1,3,0)
- ;;=3^Acute lymphoblastic leukemia, in relapse
- ;;^UTILITY(U,$J,358.3,35623,1,4,0)
- ;;=4^C91.02
- ;;^UTILITY(U,$J,358.3,35623,2)
- ;;=^5001764
- ;;^UTILITY(U,$J,358.3,35624,0)
- ;;=C91.11^^189^2057^16
- ;;^UTILITY(U,$J,358.3,35624,1,0)
+ ;;^UTILITY(U,$J,358.3,34582,1,3,0)
+ ;;=3^Cardiovascular Disorder Screen
+ ;;^UTILITY(U,$J,358.3,34582,1,4,0)
+ ;;=4^Z13.6
+ ;;^UTILITY(U,$J,358.3,34582,2)
+ ;;=^5062707
+ ;;^UTILITY(U,$J,358.3,34583,0)
+ ;;=Z12.12^^131^1689^14
+ ;;^UTILITY(U,$J,358.3,34583,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35624,1,3,0)
- ;;=3^Chronic lymphocytic leukemia of B-cell type in remission
- ;;^UTILITY(U,$J,358.3,35624,1,4,0)
- ;;=4^C91.11
- ;;^UTILITY(U,$J,358.3,35624,2)
- ;;=^5001766
- ;;^UTILITY(U,$J,358.3,35625,0)
- ;;=C91.12^^189^2057^17
- ;;^UTILITY(U,$J,358.3,35625,1,0)
+ ;;^UTILITY(U,$J,358.3,34583,1,3,0)
+ ;;=3^Rectum Malignant Neoplasm Screen
+ ;;^UTILITY(U,$J,358.3,34583,1,4,0)
+ ;;=4^Z12.12
+ ;;^UTILITY(U,$J,358.3,34583,2)
+ ;;=^5062682
+ ;;^UTILITY(U,$J,358.3,34584,0)
+ ;;=Z71.89^^131^1689^12
+ ;;^UTILITY(U,$J,358.3,34584,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35625,1,3,0)
- ;;=3^Chronic lymphocytic leukemia of B-cell type in relapse
- ;;^UTILITY(U,$J,358.3,35625,1,4,0)
- ;;=4^C91.12
- ;;^UTILITY(U,$J,358.3,35625,2)
- ;;=^5001767
- ;;^UTILITY(U,$J,358.3,35626,0)
- ;;=C91.Z1^^189^2057^32
- ;;^UTILITY(U,$J,358.3,35626,1,0)
+ ;;^UTILITY(U,$J,358.3,34584,1,3,0)
+ ;;=3^Other Specified Counseling
+ ;;^UTILITY(U,$J,358.3,34584,1,4,0)
+ ;;=4^Z71.89
+ ;;^UTILITY(U,$J,358.3,34584,2)
+ ;;=^5063253
+ ;;^UTILITY(U,$J,358.3,34585,0)
+ ;;=Z12.5^^131^1689^13
+ ;;^UTILITY(U,$J,358.3,34585,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35626,1,3,0)
- ;;=3^Lymphoid leukemia, in remission NEC
- ;;^UTILITY(U,$J,358.3,35626,1,4,0)
- ;;=4^C91.Z1
- ;;^UTILITY(U,$J,358.3,35626,2)
- ;;=^5001787
- ;;^UTILITY(U,$J,358.3,35627,0)
- ;;=C91.Z2^^189^2057^31
- ;;^UTILITY(U,$J,358.3,35627,1,0)
+ ;;^UTILITY(U,$J,358.3,34585,1,3,0)
+ ;;=3^Prostate Malignant Neoplasm Screen
+ ;;^UTILITY(U,$J,358.3,34585,1,4,0)
+ ;;=4^Z12.5
+ ;;^UTILITY(U,$J,358.3,34585,2)
+ ;;=^5062688
+ ;;^UTILITY(U,$J,358.3,34586,0)
+ ;;=Z00.00^^131^1689^9
+ ;;^UTILITY(U,$J,358.3,34586,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35627,1,3,0)
- ;;=3^Lymphoid leukemia, in relapse NEC
- ;;^UTILITY(U,$J,358.3,35627,1,4,0)
- ;;=4^C91.Z2
- ;;^UTILITY(U,$J,358.3,35627,2)
- ;;=^5001788
- ;;^UTILITY(U,$J,358.3,35628,0)
- ;;=C92.01^^189^2057^6
- ;;^UTILITY(U,$J,358.3,35628,1,0)
+ ;;^UTILITY(U,$J,358.3,34586,1,3,0)
+ ;;=3^General Adult Medical Exam w/o Abnormal Findings
+ ;;^UTILITY(U,$J,358.3,34586,1,4,0)
+ ;;=4^Z00.00
+ ;;^UTILITY(U,$J,358.3,34586,2)
+ ;;=^5062599
+ ;;^UTILITY(U,$J,358.3,34587,0)
+ ;;=Z02.79^^131^1689^11
+ ;;^UTILITY(U,$J,358.3,34587,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35628,1,3,0)
- ;;=3^Acute myeloblastic leukemia, in remission
- ;;^UTILITY(U,$J,358.3,35628,1,4,0)
- ;;=4^C92.01
- ;;^UTILITY(U,$J,358.3,35628,2)
- ;;=^5001790
- ;;^UTILITY(U,$J,358.3,35629,0)
- ;;=C92.41^^189^2057^10
- ;;^UTILITY(U,$J,358.3,35629,1,0)
+ ;;^UTILITY(U,$J,358.3,34587,1,3,0)
+ ;;=3^Medical Certificate Encounter
+ ;;^UTILITY(U,$J,358.3,34587,1,4,0)
+ ;;=4^Z02.79
+ ;;^UTILITY(U,$J,358.3,34587,2)
+ ;;=^5062641
+ ;;^UTILITY(U,$J,358.3,34588,0)
+ ;;=Z71.3^^131^1689^7
+ ;;^UTILITY(U,$J,358.3,34588,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35629,1,3,0)
- ;;=3^Acute promyelocytic leukemia, in remission
- ;;^UTILITY(U,$J,358.3,35629,1,4,0)
- ;;=4^C92.41
- ;;^UTILITY(U,$J,358.3,35629,2)
- ;;=^5001802
- ;;^UTILITY(U,$J,358.3,35630,0)
- ;;=C92.51^^189^2057^8
- ;;^UTILITY(U,$J,358.3,35630,1,0)
+ ;;^UTILITY(U,$J,358.3,34588,1,3,0)
+ ;;=3^Dietary Counseling
+ ;;^UTILITY(U,$J,358.3,34588,1,4,0)
+ ;;=4^Z71.3
+ ;;^UTILITY(U,$J,358.3,34588,2)
+ ;;=^5063245
+ ;;^UTILITY(U,$J,358.3,34589,0)
+ ;;=Z71.7^^131^1689^10
+ ;;^UTILITY(U,$J,358.3,34589,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35630,1,3,0)
- ;;=3^Acute myelomonocytic leukemia, in remission
- ;;^UTILITY(U,$J,358.3,35630,1,4,0)
- ;;=4^C92.51
- ;;^UTILITY(U,$J,358.3,35630,2)
- ;;=^5001805
- ;;^UTILITY(U,$J,358.3,35631,0)
- ;;=C92.02^^189^2057^5
+ ;;^UTILITY(U,$J,358.3,34589,1,3,0)
+ ;;=3^HIV Counseling
+ ;;^UTILITY(U,$J,358.3,34589,1,4,0)
+ ;;=4^Z71.7
+ ;;^UTILITY(U,$J,358.3,34589,2)
+ ;;=^5063251
+ ;;^UTILITY(U,$J,358.3,34590,0)
+ ;;=Z71.6^^131^1689^15
+ ;;^UTILITY(U,$J,358.3,34590,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34590,1,3,0)
+ ;;=3^Tobacco Abuse Counseling
+ ;;^UTILITY(U,$J,358.3,34590,1,4,0)
+ ;;=4^Z71.6
+ ;;^UTILITY(U,$J,358.3,34590,2)
+ ;;=^5063250

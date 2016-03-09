@@ -1,132 +1,134 @@
-IBDEI1XS ; ; 06-AUG-2015
+IBDEI1XS ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34008,1,4,0)
- ;;=4^Z82.49
- ;;^UTILITY(U,$J,358.3,34008,2)
- ;;=^5063369
- ;;^UTILITY(U,$J,358.3,34009,0)
- ;;=I50.9^^183^2014^25
- ;;^UTILITY(U,$J,358.3,34009,1,0)
+ ;;^UTILITY(U,$J,358.3,32847,1,4,0)
+ ;;=4^E66.3
+ ;;^UTILITY(U,$J,358.3,32847,2)
+ ;;=^5002830
+ ;;^UTILITY(U,$J,358.3,32848,0)
+ ;;=I10.^^128^1638^6
+ ;;^UTILITY(U,$J,358.3,32848,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34009,1,3,0)
- ;;=3^Heart failure, unspecified
- ;;^UTILITY(U,$J,358.3,34009,1,4,0)
- ;;=4^I50.9
- ;;^UTILITY(U,$J,358.3,34009,2)
- ;;=^5007251
- ;;^UTILITY(U,$J,358.3,34010,0)
- ;;=I25.2^^183^2014^27
- ;;^UTILITY(U,$J,358.3,34010,1,0)
+ ;;^UTILITY(U,$J,358.3,32848,1,3,0)
+ ;;=3^Hypertension,Essential Primary
+ ;;^UTILITY(U,$J,358.3,32848,1,4,0)
+ ;;=4^I10.
+ ;;^UTILITY(U,$J,358.3,32848,2)
+ ;;=^5007062
+ ;;^UTILITY(U,$J,358.3,32849,0)
+ ;;=I25.2^^128^1638^9
+ ;;^UTILITY(U,$J,358.3,32849,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34010,1,3,0)
- ;;=3^Old myocardial infarction
- ;;^UTILITY(U,$J,358.3,34010,1,4,0)
+ ;;^UTILITY(U,$J,358.3,32849,1,3,0)
+ ;;=3^Old Myocardial Infarction
+ ;;^UTILITY(U,$J,358.3,32849,1,4,0)
  ;;=4^I25.2
- ;;^UTILITY(U,$J,358.3,34010,2)
+ ;;^UTILITY(U,$J,358.3,32849,2)
  ;;=^259884
- ;;^UTILITY(U,$J,358.3,34011,0)
- ;;=I42.8^^183^2014^12
- ;;^UTILITY(U,$J,358.3,34011,1,0)
+ ;;^UTILITY(U,$J,358.3,32850,0)
+ ;;=I25.10^^128^1638^2
+ ;;^UTILITY(U,$J,358.3,32850,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34011,1,3,0)
- ;;=3^Cardiomyopathies NEC
- ;;^UTILITY(U,$J,358.3,34011,1,4,0)
- ;;=4^I42.8
- ;;^UTILITY(U,$J,358.3,34011,2)
- ;;=^5007199
- ;;^UTILITY(U,$J,358.3,34012,0)
- ;;=I42.2^^183^2014^26
- ;;^UTILITY(U,$J,358.3,34012,1,0)
+ ;;^UTILITY(U,$J,358.3,32850,1,3,0)
+ ;;=3^Athscl Hrt Disease,Native Coronary Artery,w/o Angina Pectoris
+ ;;^UTILITY(U,$J,358.3,32850,1,4,0)
+ ;;=4^I25.10
+ ;;^UTILITY(U,$J,358.3,32850,2)
+ ;;=^5007107
+ ;;^UTILITY(U,$J,358.3,32851,0)
+ ;;=I51.9^^128^1638^4
+ ;;^UTILITY(U,$J,358.3,32851,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34012,1,3,0)
- ;;=3^Hypertrophic cardiomyopathy NEC
- ;;^UTILITY(U,$J,358.3,34012,1,4,0)
- ;;=4^I42.2
- ;;^UTILITY(U,$J,358.3,34012,2)
- ;;=^340521
- ;;^UTILITY(U,$J,358.3,34013,0)
- ;;=I42.5^^183^2014^32
- ;;^UTILITY(U,$J,358.3,34013,1,0)
+ ;;^UTILITY(U,$J,358.3,32851,1,3,0)
+ ;;=3^Heart Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,32851,1,4,0)
+ ;;=4^I51.9
+ ;;^UTILITY(U,$J,358.3,32851,2)
+ ;;=^5007258
+ ;;^UTILITY(U,$J,358.3,32852,0)
+ ;;=K70.9^^128^1638^1
+ ;;^UTILITY(U,$J,358.3,32852,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34013,1,3,0)
- ;;=3^Restrictive cardiomyopathy NEC
- ;;^UTILITY(U,$J,358.3,34013,1,4,0)
- ;;=4^I42.5
- ;;^UTILITY(U,$J,358.3,34013,2)
- ;;=^5007196
- ;;^UTILITY(U,$J,358.3,34014,0)
- ;;=Z95.1^^183^2014^29
- ;;^UTILITY(U,$J,358.3,34014,1,0)
+ ;;^UTILITY(U,$J,358.3,32852,1,3,0)
+ ;;=3^Alcoholic Liver Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,32852,1,4,0)
+ ;;=4^K70.9
+ ;;^UTILITY(U,$J,358.3,32852,2)
+ ;;=^5008792
+ ;;^UTILITY(U,$J,358.3,32853,0)
+ ;;=R03.0^^128^1638^3
+ ;;^UTILITY(U,$J,358.3,32853,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34014,1,3,0)
- ;;=3^Presence of aortocoronary bypass graft
- ;;^UTILITY(U,$J,358.3,34014,1,4,0)
- ;;=4^Z95.1
- ;;^UTILITY(U,$J,358.3,34014,2)
- ;;=^5063669
- ;;^UTILITY(U,$J,358.3,34015,0)
- ;;=Z95.0^^183^2014^30
- ;;^UTILITY(U,$J,358.3,34015,1,0)
+ ;;^UTILITY(U,$J,358.3,32853,1,3,0)
+ ;;=3^Elevated B/P Reading w/o Diagnosis of HTN
+ ;;^UTILITY(U,$J,358.3,32853,1,4,0)
+ ;;=4^R03.0
+ ;;^UTILITY(U,$J,358.3,32853,2)
+ ;;=^5019171
+ ;;^UTILITY(U,$J,358.3,32854,0)
+ ;;=Z12.31^^128^1639^1
+ ;;^UTILITY(U,$J,358.3,32854,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34015,1,3,0)
- ;;=3^Presence of cardiac pacemaker
- ;;^UTILITY(U,$J,358.3,34015,1,4,0)
- ;;=4^Z95.0
- ;;^UTILITY(U,$J,358.3,34015,2)
- ;;=^5063668
- ;;^UTILITY(U,$J,358.3,34016,0)
- ;;=Z95.5^^183^2014^31
- ;;^UTILITY(U,$J,358.3,34016,1,0)
+ ;;^UTILITY(U,$J,358.3,32854,1,3,0)
+ ;;=3^Screening Mammogram for Malig Neop Breast
+ ;;^UTILITY(U,$J,358.3,32854,1,4,0)
+ ;;=4^Z12.31
+ ;;^UTILITY(U,$J,358.3,32854,2)
+ ;;=^5062685
+ ;;^UTILITY(U,$J,358.3,32855,0)
+ ;;=Z12.39^^128^1639^8
+ ;;^UTILITY(U,$J,358.3,32855,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34016,1,3,0)
- ;;=3^Presence of coronary angioplasty implant and graft
- ;;^UTILITY(U,$J,358.3,34016,1,4,0)
- ;;=4^Z95.5
- ;;^UTILITY(U,$J,358.3,34016,2)
- ;;=^5063673
- ;;^UTILITY(U,$J,358.3,34017,0)
- ;;=I21.3^^183^2014^33
- ;;^UTILITY(U,$J,358.3,34017,1,0)
+ ;;^UTILITY(U,$J,358.3,32855,1,3,0)
+ ;;=3^Screening for Malig Neop Breast
+ ;;^UTILITY(U,$J,358.3,32855,1,4,0)
+ ;;=4^Z12.39
+ ;;^UTILITY(U,$J,358.3,32855,2)
+ ;;=^5062686
+ ;;^UTILITY(U,$J,358.3,32856,0)
+ ;;=Z11.51^^128^1639^5
+ ;;^UTILITY(U,$J,358.3,32856,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34017,1,3,0)
- ;;=3^ST elevation (STEMI) myocardial infarction of unsp site
- ;;^UTILITY(U,$J,358.3,34017,1,4,0)
- ;;=4^I21.3
- ;;^UTILITY(U,$J,358.3,34017,2)
- ;;=^5007087
- ;;^UTILITY(U,$J,358.3,34018,0)
- ;;=J43.0^^183^2014^35
- ;;^UTILITY(U,$J,358.3,34018,1,0)
+ ;;^UTILITY(U,$J,358.3,32856,1,3,0)
+ ;;=3^Screening for HPV
+ ;;^UTILITY(U,$J,358.3,32856,1,4,0)
+ ;;=4^Z11.51
+ ;;^UTILITY(U,$J,358.3,32856,2)
+ ;;=^5062674
+ ;;^UTILITY(U,$J,358.3,32857,0)
+ ;;=Z11.59^^128^1639^16
+ ;;^UTILITY(U,$J,358.3,32857,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34018,1,3,0)
- ;;=3^Unilateral pulmonary emphysema [MacLeod's syndrome]
- ;;^UTILITY(U,$J,358.3,34018,1,4,0)
- ;;=4^J43.0
- ;;^UTILITY(U,$J,358.3,34018,2)
- ;;=^5008235
- ;;^UTILITY(U,$J,358.3,34019,0)
- ;;=I50.40^^183^2014^19
- ;;^UTILITY(U,$J,358.3,34019,1,0)
+ ;;^UTILITY(U,$J,358.3,32857,1,3,0)
+ ;;=3^Screening for Viral Diseases
+ ;;^UTILITY(U,$J,358.3,32857,1,4,0)
+ ;;=4^Z11.59
+ ;;^UTILITY(U,$J,358.3,32857,2)
+ ;;=^5062675
+ ;;^UTILITY(U,$J,358.3,32858,0)
+ ;;=Z11.3^^128^1639^6
+ ;;^UTILITY(U,$J,358.3,32858,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34019,1,3,0)
- ;;=3^Combined systolic and diastolic (congestive) hrt fail,Unspec
- ;;^UTILITY(U,$J,358.3,34019,1,4,0)
- ;;=4^I50.40
- ;;^UTILITY(U,$J,358.3,34019,2)
- ;;=^5007247
- ;;^UTILITY(U,$J,358.3,34020,0)
- ;;=I50.30^^183^2014^21
- ;;^UTILITY(U,$J,358.3,34020,1,0)
+ ;;^UTILITY(U,$J,358.3,32858,1,3,0)
+ ;;=3^Screening for Infections w/ Sexual Mode of Transmission
+ ;;^UTILITY(U,$J,358.3,32858,1,4,0)
+ ;;=4^Z11.3
+ ;;^UTILITY(U,$J,358.3,32858,2)
+ ;;=^5062672
+ ;;^UTILITY(U,$J,358.3,32859,0)
+ ;;=Z11.9^^128^1639^7
+ ;;^UTILITY(U,$J,358.3,32859,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34020,1,3,0)
- ;;=3^Diastolic (congestive) heart failure,Unspec
- ;;^UTILITY(U,$J,358.3,34020,1,4,0)
- ;;=4^I50.30
- ;;^UTILITY(U,$J,358.3,34020,2)
- ;;=^5007243
- ;;^UTILITY(U,$J,358.3,34021,0)
- ;;=I50.20^^183^2014^34
- ;;^UTILITY(U,$J,358.3,34021,1,0)
+ ;;^UTILITY(U,$J,358.3,32859,1,3,0)
+ ;;=3^Screening for Infectious/Parasitic Diseases
+ ;;^UTILITY(U,$J,358.3,32859,1,4,0)
+ ;;=4^Z11.9
+ ;;^UTILITY(U,$J,358.3,32859,2)
+ ;;=^5062678
+ ;;^UTILITY(U,$J,358.3,32860,0)
+ ;;=Z12.2^^128^1639^13
+ ;;^UTILITY(U,$J,358.3,32860,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32860,1,3,0)
+ ;;=3^Screening for Malig Neop Respiratory Organs

@@ -1,132 +1,134 @@
-IBDEI02L ; ; 06-AUG-2015
+IBDEI02L ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,660,2)
- ;;=^5063437
- ;;^UTILITY(U,$J,358.3,661,0)
- ;;=Z85.831^^2^27^29
- ;;^UTILITY(U,$J,358.3,661,1,0)
+ ;;^UTILITY(U,$J,358.3,730,1,4,0)
+ ;;=4^00560
+ ;;^UTILITY(U,$J,358.3,731,0)
+ ;;=00537^^5^78^4^^^^1
+ ;;^UTILITY(U,$J,358.3,731,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,661,1,3,0)
- ;;=3^Personal history of malignant neoplasm of soft tissue
- ;;^UTILITY(U,$J,358.3,661,1,4,0)
- ;;=4^Z85.831
- ;;^UTILITY(U,$J,358.3,661,2)
- ;;=^5063445
- ;;^UTILITY(U,$J,358.3,662,0)
- ;;=Z85.71^^2^27^1
- ;;^UTILITY(U,$J,358.3,662,1,0)
+ ;;^UTILITY(U,$J,358.3,731,1,2,0)
+ ;;=2^CARDIAC ABLATION ARTERY/PULM,ANESTH
+ ;;^UTILITY(U,$J,358.3,731,1,4,0)
+ ;;=4^00537
+ ;;^UTILITY(U,$J,358.3,732,0)
+ ;;=00560^^5^78^5^^^^1
+ ;;^UTILITY(U,$J,358.3,732,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,662,1,3,0)
- ;;=3^Personal history of Hodgkin lymphoma
- ;;^UTILITY(U,$J,358.3,662,1,4,0)
- ;;=4^Z85.71
- ;;^UTILITY(U,$J,358.3,662,2)
- ;;=^5063435
- ;;^UTILITY(U,$J,358.3,663,0)
- ;;=Z85.830^^2^27^30
- ;;^UTILITY(U,$J,358.3,663,1,0)
+ ;;^UTILITY(U,$J,358.3,732,1,2,0)
+ ;;=2^CARDIAC/CORO ANGIOGRAPHY,ANESTH
+ ;;^UTILITY(U,$J,358.3,732,1,4,0)
+ ;;=4^00560
+ ;;^UTILITY(U,$J,358.3,733,0)
+ ;;=00560^^5^78^6^^^^1
+ ;;^UTILITY(U,$J,358.3,733,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,663,1,3,0)
- ;;=3^Personal history of malignant neoplasm of bone
- ;;^UTILITY(U,$J,358.3,663,1,4,0)
- ;;=4^Z85.830
- ;;^UTILITY(U,$J,358.3,663,2)
- ;;=^5063444
- ;;^UTILITY(U,$J,358.3,664,0)
- ;;=Z85.820^^2^27^2
- ;;^UTILITY(U,$J,358.3,664,1,0)
+ ;;^UTILITY(U,$J,358.3,733,1,2,0)
+ ;;=2^COIL/STENT CARDIAC/CORO/CAROTID,ANESTH
+ ;;^UTILITY(U,$J,358.3,733,1,4,0)
+ ;;=4^00560
+ ;;^UTILITY(U,$J,358.3,734,0)
+ ;;=00537^^5^78^9^^^^1
+ ;;^UTILITY(U,$J,358.3,734,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,664,1,3,0)
- ;;=3^Personal history of malignant melanoma of skin
- ;;^UTILITY(U,$J,358.3,664,1,4,0)
- ;;=4^Z85.820
- ;;^UTILITY(U,$J,358.3,664,2)
- ;;=^5063441
- ;;^UTILITY(U,$J,358.3,665,0)
- ;;=Z85.828^^2^27^31
- ;;^UTILITY(U,$J,358.3,665,1,0)
+ ;;^UTILITY(U,$J,358.3,734,1,2,0)
+ ;;=2^NIPS PROCEDURE,ANESTH
+ ;;^UTILITY(U,$J,358.3,734,1,4,0)
+ ;;=4^00537
+ ;;^UTILITY(U,$J,358.3,735,0)
+ ;;=00560^^5^78^14^^^^1
+ ;;^UTILITY(U,$J,358.3,735,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,665,1,3,0)
- ;;=3^Personal history of malignant neoplasm of skin NEC
- ;;^UTILITY(U,$J,358.3,665,1,4,0)
- ;;=4^Z85.828
- ;;^UTILITY(U,$J,358.3,665,2)
- ;;=^5063443
- ;;^UTILITY(U,$J,358.3,666,0)
- ;;=Z85.840^^2^27^32
- ;;^UTILITY(U,$J,358.3,666,1,0)
+ ;;^UTILITY(U,$J,358.3,735,1,2,0)
+ ;;=2^TRANS-ESOPH ECHO/TEE,ANESTH
+ ;;^UTILITY(U,$J,358.3,735,1,4,0)
+ ;;=4^00560
+ ;;^UTILITY(U,$J,358.3,736,0)
+ ;;=00520^^5^78^3^^^^1
+ ;;^UTILITY(U,$J,358.3,736,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,666,1,3,0)
- ;;=3^Personal history of malignant neoplasm of eye
- ;;^UTILITY(U,$J,358.3,666,1,4,0)
- ;;=4^Z85.840
- ;;^UTILITY(U,$J,358.3,666,2)
- ;;=^5063446
- ;;^UTILITY(U,$J,358.3,667,0)
- ;;=Z85.841^^2^27^33
- ;;^UTILITY(U,$J,358.3,667,1,0)
+ ;;^UTILITY(U,$J,358.3,736,1,2,0)
+ ;;=2^BRONCHOSCOPY/CLOSED CHEST
+ ;;^UTILITY(U,$J,358.3,736,1,4,0)
+ ;;=4^00520
+ ;;^UTILITY(U,$J,358.3,737,0)
+ ;;=00528^^5^78^7^^^^1
+ ;;^UTILITY(U,$J,358.3,737,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,667,1,3,0)
- ;;=3^Personal history of malignant neoplasm of brain
- ;;^UTILITY(U,$J,358.3,667,1,4,0)
- ;;=4^Z85.841
- ;;^UTILITY(U,$J,358.3,667,2)
- ;;=^5063447
- ;;^UTILITY(U,$J,358.3,668,0)
- ;;=Z85.848^^2^27^34
- ;;^UTILITY(U,$J,358.3,668,1,0)
+ ;;^UTILITY(U,$J,358.3,737,1,2,0)
+ ;;=2^MEDIASCOPY/DIAGNOSTIC THORSCPY,ANETHS
+ ;;^UTILITY(U,$J,358.3,737,1,4,0)
+ ;;=4^00528
+ ;;^UTILITY(U,$J,358.3,738,0)
+ ;;=00530^^5^78^11^^^^1
+ ;;^UTILITY(U,$J,358.3,738,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,668,1,3,0)
- ;;=3^Personal history of malignant neoplasm of prt nervous tissue
- ;;^UTILITY(U,$J,358.3,668,1,4,0)
- ;;=4^Z85.848
- ;;^UTILITY(U,$J,358.3,668,2)
- ;;=^5063448
- ;;^UTILITY(U,$J,358.3,669,0)
- ;;=Z85.850^^2^27^35
- ;;^UTILITY(U,$J,358.3,669,1,0)
+ ;;^UTILITY(U,$J,358.3,738,1,2,0)
+ ;;=2^PERMANENT PACEMAKER INSERTION,ANESTH
+ ;;^UTILITY(U,$J,358.3,738,1,4,0)
+ ;;=4^00530
+ ;;^UTILITY(U,$J,358.3,739,0)
+ ;;=00540^^5^78^13^^^^1
+ ;;^UTILITY(U,$J,358.3,739,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,669,1,3,0)
- ;;=3^Personal history of malignant neoplasm of thyroid
- ;;^UTILITY(U,$J,358.3,669,1,4,0)
- ;;=4^Z85.850
- ;;^UTILITY(U,$J,358.3,669,2)
- ;;=^5063449
- ;;^UTILITY(U,$J,358.3,670,0)
- ;;=Z85.858^^2^27^36
- ;;^UTILITY(U,$J,358.3,670,1,0)
+ ;;^UTILITY(U,$J,358.3,739,1,2,0)
+ ;;=2^THORACOSCOPY/THORACOTOMY NOS
+ ;;^UTILITY(U,$J,358.3,739,1,4,0)
+ ;;=4^00540
+ ;;^UTILITY(U,$J,358.3,740,0)
+ ;;=00541^^5^78^12^^^^1
+ ;;^UTILITY(U,$J,358.3,740,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,670,1,3,0)
- ;;=3^Personal history of malignant neoplasm of endocrine glands
- ;;^UTILITY(U,$J,358.3,670,1,4,0)
- ;;=4^Z85.858
- ;;^UTILITY(U,$J,358.3,670,2)
- ;;=^5063450
- ;;^UTILITY(U,$J,358.3,671,0)
- ;;=N17.1^^3^28^2
- ;;^UTILITY(U,$J,358.3,671,1,0)
+ ;;^UTILITY(U,$J,358.3,740,1,2,0)
+ ;;=2^THORACOSCOPY/THORACOTOMY
+ ;;^UTILITY(U,$J,358.3,740,1,4,0)
+ ;;=4^00541
+ ;;^UTILITY(U,$J,358.3,741,0)
+ ;;=36000^^5^79^1^^^^1
+ ;;^UTILITY(U,$J,358.3,741,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,671,1,3,0)
- ;;=3^Acute kidney failure w/ acute cortical necrosis
- ;;^UTILITY(U,$J,358.3,671,1,4,0)
- ;;=4^N17.1
- ;;^UTILITY(U,$J,358.3,671,2)
- ;;=^5015599
- ;;^UTILITY(U,$J,358.3,672,0)
- ;;=N17.2^^3^28^3
- ;;^UTILITY(U,$J,358.3,672,1,0)
+ ;;^UTILITY(U,$J,358.3,741,1,2,0)
+ ;;=2^IV START/ACCESS
+ ;;^UTILITY(U,$J,358.3,741,1,4,0)
+ ;;=4^36000
+ ;;^UTILITY(U,$J,358.3,742,0)
+ ;;=00810^^5^80^2^^^^1
+ ;;^UTILITY(U,$J,358.3,742,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,672,1,3,0)
- ;;=3^Acute kidney failure w/ medullary necrosis
- ;;^UTILITY(U,$J,358.3,672,1,4,0)
- ;;=4^N17.2
- ;;^UTILITY(U,$J,358.3,672,2)
- ;;=^5015600
- ;;^UTILITY(U,$J,358.3,673,0)
- ;;=N17.8^^3^28^1
- ;;^UTILITY(U,$J,358.3,673,1,0)
+ ;;^UTILITY(U,$J,358.3,742,1,2,0)
+ ;;=2^ENDOSCOPIC LOWER INTESTINAL,ANESTH
+ ;;^UTILITY(U,$J,358.3,742,1,4,0)
+ ;;=4^00810
+ ;;^UTILITY(U,$J,358.3,743,0)
+ ;;=00860^^5^80^3^^^^1
+ ;;^UTILITY(U,$J,358.3,743,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,673,1,3,0)
- ;;=3^Acute Kidney Failure NEC
+ ;;^UTILITY(U,$J,358.3,743,1,2,0)
+ ;;=2^LOWER ABDOMEN (KIDNEY ABLATION),ANESTH
+ ;;^UTILITY(U,$J,358.3,743,1,4,0)
+ ;;=4^00860
+ ;;^UTILITY(U,$J,358.3,744,0)
+ ;;=00862^^5^80^1^^^^1
+ ;;^UTILITY(U,$J,358.3,744,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,744,1,2,0)
+ ;;=2^ANESTH KIDNEY/URET SURG,KIDNEY/RENAL RFA
+ ;;^UTILITY(U,$J,358.3,744,1,4,0)
+ ;;=4^00862
+ ;;^UTILITY(U,$J,358.3,745,0)
+ ;;=01520^^5^81^1^^^^1
+ ;;^UTILITY(U,$J,358.3,745,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,745,1,2,0)
+ ;;=2^VENOUS ANGIO LOWER LEG,ANESTH
+ ;;^UTILITY(U,$J,358.3,745,1,4,0)
+ ;;=4^01520
+ ;;^UTILITY(U,$J,358.3,746,0)
+ ;;=00350^^5^82^1^^^^1
+ ;;^UTILITY(U,$J,358.3,746,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,746,1,2,0)
+ ;;=2^CAROTID ANGIOGRAPHY,ANESTH
+ ;;^UTILITY(U,$J,358.3,746,1,4,0)
+ ;;=4^00350

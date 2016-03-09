@@ -1,140 +1,134 @@
-IBDEI046 ; ; 06-AUG-2015
+IBDEI046 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1423,0)
- ;;=N72.^^3^41^73
- ;;^UTILITY(U,$J,358.3,1423,1,0)
+ ;;^UTILITY(U,$J,358.3,1528,2)
+ ;;=^5007219
+ ;;^UTILITY(U,$J,358.3,1529,0)
+ ;;=I49.40^^11^143^33
+ ;;^UTILITY(U,$J,358.3,1529,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1423,1,3,0)
- ;;=3^Inflammatory disease of cervix uteri
- ;;^UTILITY(U,$J,358.3,1423,1,4,0)
- ;;=4^N72.
- ;;^UTILITY(U,$J,358.3,1423,2)
- ;;=^5015812
- ;;^UTILITY(U,$J,358.3,1424,0)
- ;;=N76.0^^3^41^24
- ;;^UTILITY(U,$J,358.3,1424,1,0)
+ ;;^UTILITY(U,$J,358.3,1529,1,3,0)
+ ;;=3^Premature Depolarization,Unspec
+ ;;^UTILITY(U,$J,358.3,1529,1,4,0)
+ ;;=4^I49.40
+ ;;^UTILITY(U,$J,358.3,1529,2)
+ ;;=^5007234
+ ;;^UTILITY(U,$J,358.3,1530,0)
+ ;;=I49.1^^11^143^7
+ ;;^UTILITY(U,$J,358.3,1530,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1424,1,3,0)
- ;;=3^Acute vaginitis
- ;;^UTILITY(U,$J,358.3,1424,1,4,0)
- ;;=4^N76.0
- ;;^UTILITY(U,$J,358.3,1424,2)
- ;;=^5015826
- ;;^UTILITY(U,$J,358.3,1425,0)
- ;;=N76.1^^3^41^96
- ;;^UTILITY(U,$J,358.3,1425,1,0)
+ ;;^UTILITY(U,$J,358.3,1530,1,3,0)
+ ;;=3^Atrial Premature Depolarization
+ ;;^UTILITY(U,$J,358.3,1530,1,4,0)
+ ;;=4^I49.1
+ ;;^UTILITY(U,$J,358.3,1530,2)
+ ;;=^5007231
+ ;;^UTILITY(U,$J,358.3,1531,0)
+ ;;=I49.49^^11^143^32
+ ;;^UTILITY(U,$J,358.3,1531,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1425,1,3,0)
- ;;=3^Subacute and chronic vaginitis
- ;;^UTILITY(U,$J,358.3,1425,1,4,0)
- ;;=4^N76.1
- ;;^UTILITY(U,$J,358.3,1425,2)
- ;;=^5015827
- ;;^UTILITY(U,$J,358.3,1426,0)
- ;;=L03.011^^3^41^39
- ;;^UTILITY(U,$J,358.3,1426,1,0)
+ ;;^UTILITY(U,$J,358.3,1531,1,3,0)
+ ;;=3^Premature Depolarization NEC
+ ;;^UTILITY(U,$J,358.3,1531,1,4,0)
+ ;;=4^I49.49
+ ;;^UTILITY(U,$J,358.3,1531,2)
+ ;;=^5007235
+ ;;^UTILITY(U,$J,358.3,1532,0)
+ ;;=I49.5^^11^143^40
+ ;;^UTILITY(U,$J,358.3,1532,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1426,1,3,0)
- ;;=3^Cellulitis of right finger
- ;;^UTILITY(U,$J,358.3,1426,1,4,0)
- ;;=4^L03.011
- ;;^UTILITY(U,$J,358.3,1426,2)
- ;;=^5009019
- ;;^UTILITY(U,$J,358.3,1427,0)
- ;;=L03.012^^3^41^32
- ;;^UTILITY(U,$J,358.3,1427,1,0)
+ ;;^UTILITY(U,$J,358.3,1532,1,3,0)
+ ;;=3^Sick Sinus Syndrome
+ ;;^UTILITY(U,$J,358.3,1532,1,4,0)
+ ;;=4^I49.5
+ ;;^UTILITY(U,$J,358.3,1532,2)
+ ;;=^110404
+ ;;^UTILITY(U,$J,358.3,1533,0)
+ ;;=R00.1^^11^143^9
+ ;;^UTILITY(U,$J,358.3,1533,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1427,1,3,0)
- ;;=3^Cellulitis of left finger
- ;;^UTILITY(U,$J,358.3,1427,1,4,0)
- ;;=4^L03.012
- ;;^UTILITY(U,$J,358.3,1427,2)
- ;;=^5009020
- ;;^UTILITY(U,$J,358.3,1428,0)
- ;;=L03.021^^3^41^14
- ;;^UTILITY(U,$J,358.3,1428,1,0)
+ ;;^UTILITY(U,$J,358.3,1533,1,3,0)
+ ;;=3^Bradycardia,Unspec
+ ;;^UTILITY(U,$J,358.3,1533,1,4,0)
+ ;;=4^R00.1
+ ;;^UTILITY(U,$J,358.3,1533,2)
+ ;;=^5019164
+ ;;^UTILITY(U,$J,358.3,1534,0)
+ ;;=T82.110A^^11^143^10
+ ;;^UTILITY(U,$J,358.3,1534,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1428,1,3,0)
- ;;=3^Acute lymphangitis of right finger
- ;;^UTILITY(U,$J,358.3,1428,1,4,0)
- ;;=4^L03.021
- ;;^UTILITY(U,$J,358.3,1428,2)
- ;;=^5009022
- ;;^UTILITY(U,$J,358.3,1429,0)
- ;;=L03.022^^3^41^9
- ;;^UTILITY(U,$J,358.3,1429,1,0)
+ ;;^UTILITY(U,$J,358.3,1534,1,3,0)
+ ;;=3^Breakdown of Cardiac Electrode,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1534,1,4,0)
+ ;;=4^T82.110A
+ ;;^UTILITY(U,$J,358.3,1534,2)
+ ;;=^5054680
+ ;;^UTILITY(U,$J,358.3,1535,0)
+ ;;=T82.111A^^11^143^11
+ ;;^UTILITY(U,$J,358.3,1535,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1429,1,3,0)
- ;;=3^Acute lymphangitis of left finger
- ;;^UTILITY(U,$J,358.3,1429,1,4,0)
- ;;=4^L03.022
- ;;^UTILITY(U,$J,358.3,1429,2)
- ;;=^5009023
- ;;^UTILITY(U,$J,358.3,1430,0)
- ;;=L03.031^^3^41^42
- ;;^UTILITY(U,$J,358.3,1430,1,0)
+ ;;^UTILITY(U,$J,358.3,1535,1,3,0)
+ ;;=3^Breakdown of Cardiac Pulse Generator,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1535,1,4,0)
+ ;;=4^T82.111A
+ ;;^UTILITY(U,$J,358.3,1535,2)
+ ;;=^5054683
+ ;;^UTILITY(U,$J,358.3,1536,0)
+ ;;=T82.120A^^11^143^17
+ ;;^UTILITY(U,$J,358.3,1536,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1430,1,3,0)
- ;;=3^Cellulitis of right toe
- ;;^UTILITY(U,$J,358.3,1430,1,4,0)
- ;;=4^L03.031
- ;;^UTILITY(U,$J,358.3,1430,2)
- ;;=^5009025
- ;;^UTILITY(U,$J,358.3,1431,0)
- ;;=L03.032^^3^41^35
- ;;^UTILITY(U,$J,358.3,1431,1,0)
+ ;;^UTILITY(U,$J,358.3,1536,1,3,0)
+ ;;=3^Displacement of Cardiac Electrode,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1536,1,4,0)
+ ;;=4^T82.120A
+ ;;^UTILITY(U,$J,358.3,1536,2)
+ ;;=^5054692
+ ;;^UTILITY(U,$J,358.3,1537,0)
+ ;;=T82.121A^^11^143^18
+ ;;^UTILITY(U,$J,358.3,1537,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1431,1,3,0)
- ;;=3^Cellulitis of left toe
- ;;^UTILITY(U,$J,358.3,1431,1,4,0)
- ;;=4^L03.032
- ;;^UTILITY(U,$J,358.3,1431,2)
- ;;=^5009026
- ;;^UTILITY(U,$J,358.3,1432,0)
- ;;=L03.041^^3^41^16
- ;;^UTILITY(U,$J,358.3,1432,1,0)
+ ;;^UTILITY(U,$J,358.3,1537,1,3,0)
+ ;;=3^Displacement of Cardiac Pulse Generator,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1537,1,4,0)
+ ;;=4^T82.121A
+ ;;^UTILITY(U,$J,358.3,1537,2)
+ ;;=^5054695
+ ;;^UTILITY(U,$J,358.3,1538,0)
+ ;;=T82.190A^^11^143^26
+ ;;^UTILITY(U,$J,358.3,1538,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1432,1,3,0)
- ;;=3^Acute lymphangitis of right toe
- ;;^UTILITY(U,$J,358.3,1432,1,4,0)
- ;;=4^L03.041
- ;;^UTILITY(U,$J,358.3,1432,2)
- ;;=^5009028
- ;;^UTILITY(U,$J,358.3,1433,0)
- ;;=L03.042^^3^41^11
- ;;^UTILITY(U,$J,358.3,1433,1,0)
+ ;;^UTILITY(U,$J,358.3,1538,1,3,0)
+ ;;=3^Mech Compl of Cardiac Electrode,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1538,1,4,0)
+ ;;=4^T82.190A
+ ;;^UTILITY(U,$J,358.3,1538,2)
+ ;;=^5054704
+ ;;^UTILITY(U,$J,358.3,1539,0)
+ ;;=T82.191A^^11^143^27
+ ;;^UTILITY(U,$J,358.3,1539,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1433,1,3,0)
- ;;=3^Acute lymphangitis of left toe
- ;;^UTILITY(U,$J,358.3,1433,1,4,0)
- ;;=4^L03.042
- ;;^UTILITY(U,$J,358.3,1433,2)
- ;;=^5009029
- ;;^UTILITY(U,$J,358.3,1434,0)
- ;;=L03.211^^3^41^30
- ;;^UTILITY(U,$J,358.3,1434,1,0)
+ ;;^UTILITY(U,$J,358.3,1539,1,3,0)
+ ;;=3^Mech Compl of Cardiac Pulse Generator,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1539,1,4,0)
+ ;;=4^T82.191A
+ ;;^UTILITY(U,$J,358.3,1539,2)
+ ;;=^5054707
+ ;;^UTILITY(U,$J,358.3,1540,0)
+ ;;=Z95.0^^11^143^35
+ ;;^UTILITY(U,$J,358.3,1540,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1434,1,3,0)
- ;;=3^Cellulitis of face
- ;;^UTILITY(U,$J,358.3,1434,1,4,0)
- ;;=4^L03.211
- ;;^UTILITY(U,$J,358.3,1434,2)
- ;;=^5009043
- ;;^UTILITY(U,$J,358.3,1435,0)
- ;;=L03.212^^3^41^8
- ;;^UTILITY(U,$J,358.3,1435,1,0)
+ ;;^UTILITY(U,$J,358.3,1540,1,3,0)
+ ;;=3^Presence of Cardiac Pacemaker
+ ;;^UTILITY(U,$J,358.3,1540,1,4,0)
+ ;;=4^Z95.0
+ ;;^UTILITY(U,$J,358.3,1540,2)
+ ;;=^5063668
+ ;;^UTILITY(U,$J,358.3,1541,0)
+ ;;=Z95.810^^11^143^34
+ ;;^UTILITY(U,$J,358.3,1541,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1435,1,3,0)
- ;;=3^Acute lymphangitis of face
- ;;^UTILITY(U,$J,358.3,1435,1,4,0)
- ;;=4^L03.212
- ;;^UTILITY(U,$J,358.3,1435,2)
- ;;=^5009044
- ;;^UTILITY(U,$J,358.3,1436,0)
- ;;=L03.221^^3^41^37
- ;;^UTILITY(U,$J,358.3,1436,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1436,1,3,0)
- ;;=3^Cellulitis of neck
+ ;;^UTILITY(U,$J,358.3,1541,1,3,0)
+ ;;=3^Presence of Automatic Cardiac Defibrillator
+ ;;^UTILITY(U,$J,358.3,1541,1,4,0)
+ ;;=4^Z95.810

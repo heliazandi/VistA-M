@@ -1,116 +1,132 @@
-IBDEI0TM ; ; 06-AUG-2015
+IBDEI0TM ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14342,0)
- ;;=28008^^75^885^4^^^^1
- ;;^UTILITY(U,$J,358.3,14342,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14342,1,2,0)
- ;;=2^Fasciotomy, foot and/or toe
- ;;^UTILITY(U,$J,358.3,14342,1,3,0)
- ;;=3^28008
- ;;^UTILITY(U,$J,358.3,14343,0)
- ;;=28010^^75^885^5^^^^1
- ;;^UTILITY(U,$J,358.3,14343,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14343,1,2,0)
- ;;=2^Tenotomy, percutaneous, toe; single tendon
- ;;^UTILITY(U,$J,358.3,14343,1,3,0)
- ;;=3^28010
- ;;^UTILITY(U,$J,358.3,14344,0)
- ;;=28011^^75^885^6^^^^1
- ;;^UTILITY(U,$J,358.3,14344,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14344,1,2,0)
- ;;=2^Tenotomy, percutaneous, toe; multiple tendons
- ;;^UTILITY(U,$J,358.3,14344,1,3,0)
- ;;=3^28011
- ;;^UTILITY(U,$J,358.3,14345,0)
- ;;=28020^^75^885^7^^^^1
- ;;^UTILITY(U,$J,358.3,14345,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14345,1,2,0)
- ;;=2^Arthrotomy, including exploration, drainage, or removal of loose or foreign body; intertarsal or tarsometatarsal joint
- ;;^UTILITY(U,$J,358.3,14345,1,3,0)
- ;;=3^28020
- ;;^UTILITY(U,$J,358.3,14346,0)
- ;;=28022^^75^885^8^^^^1
- ;;^UTILITY(U,$J,358.3,14346,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14346,1,2,0)
- ;;=2^Arthrotomy, including exploration, drainage, or removal of loose or foreign body; metatarsophalangeal joint 
- ;;^UTILITY(U,$J,358.3,14346,1,3,0)
- ;;=3^28022
- ;;^UTILITY(U,$J,358.3,14347,0)
- ;;=28024^^75^885^9^^^^1
- ;;^UTILITY(U,$J,358.3,14347,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14347,1,2,0)
- ;;=2^Arthrotomy, including exploration, drainage, or removal of loose or foreign body; interphalangeal joint
- ;;^UTILITY(U,$J,358.3,14347,1,3,0)
- ;;=3^28024
- ;;^UTILITY(U,$J,358.3,14348,0)
- ;;=28035^^75^885^11^^^^1
- ;;^UTILITY(U,$J,358.3,14348,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14348,1,2,0)
- ;;=2^Release, tarsal tunnel
- ;;^UTILITY(U,$J,358.3,14348,1,3,0)
- ;;=3^28035
- ;;^UTILITY(U,$J,358.3,14349,0)
- ;;=28055^^75^885^10^^^^1
- ;;^UTILITY(U,$J,358.3,14349,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14349,1,2,0)
- ;;=2^Neurectomy, Foot
- ;;^UTILITY(U,$J,358.3,14349,1,3,0)
- ;;=3^28055
- ;;^UTILITY(U,$J,358.3,14350,0)
- ;;=28043^^75^886^5^^^^1
- ;;^UTILITY(U,$J,358.3,14350,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14350,1,2,0)
- ;;=2^Excision Tumor-Foot,SQ Tissue >1.5cm
- ;;^UTILITY(U,$J,358.3,14350,1,3,0)
- ;;=3^28043
- ;;^UTILITY(U,$J,358.3,14351,0)
- ;;=28045^^75^886^4^^^^1
- ;;^UTILITY(U,$J,358.3,14351,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14351,1,2,0)
- ;;=2^Excision Tumor-Foot,Deep Subfascial >1.5cm
- ;;^UTILITY(U,$J,358.3,14351,1,3,0)
- ;;=3^28045
- ;;^UTILITY(U,$J,358.3,14352,0)
- ;;=28050^^75^886^2^^^^1
- ;;^UTILITY(U,$J,358.3,14352,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14352,1,2,0)
- ;;=2^Arthrotomy with biopsy; intertarsal or tarsometatarsal joint 
- ;;^UTILITY(U,$J,358.3,14352,1,3,0)
- ;;=3^28050
- ;;^UTILITY(U,$J,358.3,14353,0)
- ;;=28052^^75^886^3^^^^1
- ;;^UTILITY(U,$J,358.3,14353,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14353,1,2,0)
- ;;=2^Arthrotomy with biopsy; metatarsophalangeal joint 
- ;;^UTILITY(U,$J,358.3,14353,1,3,0)
- ;;=3^28052
- ;;^UTILITY(U,$J,358.3,14354,0)
- ;;=28054^^75^886^1^^^^1
- ;;^UTILITY(U,$J,358.3,14354,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14354,1,2,0)
- ;;=2^Arthrotomy with biopsy; interphalangeal joint
- ;;^UTILITY(U,$J,358.3,14354,1,3,0)
- ;;=3^28054
- ;;^UTILITY(U,$J,358.3,14355,0)
- ;;=28060^^75^886^21^^^^1
- ;;^UTILITY(U,$J,358.3,14355,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14355,1,2,0)
- ;;=2^Fasciectomy, plantar fascia; partial 
- ;;^UTILITY(U,$J,358.3,14355,1,3,0)
- ;;=3^28060
+ ;;^UTILITY(U,$J,358.3,13889,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Wrist
+ ;;^UTILITY(U,$J,358.3,13889,1,4,0)
+ ;;=4^M05.731
+ ;;^UTILITY(U,$J,358.3,13889,2)
+ ;;=^5010007
+ ;;^UTILITY(U,$J,358.3,13890,0)
+ ;;=M05.732^^53^599^147
+ ;;^UTILITY(U,$J,358.3,13890,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13890,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Wrist
+ ;;^UTILITY(U,$J,358.3,13890,1,4,0)
+ ;;=4^M05.732
+ ;;^UTILITY(U,$J,358.3,13890,2)
+ ;;=^5010008
+ ;;^UTILITY(U,$J,358.3,13891,0)
+ ;;=M05.741^^53^599^150
+ ;;^UTILITY(U,$J,358.3,13891,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13891,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Hand
+ ;;^UTILITY(U,$J,358.3,13891,1,4,0)
+ ;;=4^M05.741
+ ;;^UTILITY(U,$J,358.3,13891,2)
+ ;;=^5010010
+ ;;^UTILITY(U,$J,358.3,13892,0)
+ ;;=M05.742^^53^599^143
+ ;;^UTILITY(U,$J,358.3,13892,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13892,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Hand
+ ;;^UTILITY(U,$J,358.3,13892,1,4,0)
+ ;;=4^M05.742
+ ;;^UTILITY(U,$J,358.3,13892,2)
+ ;;=^5010011
+ ;;^UTILITY(U,$J,358.3,13893,0)
+ ;;=M05.751^^53^599^151
+ ;;^UTILITY(U,$J,358.3,13893,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13893,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Hip
+ ;;^UTILITY(U,$J,358.3,13893,1,4,0)
+ ;;=4^M05.751
+ ;;^UTILITY(U,$J,358.3,13893,2)
+ ;;=^5010013
+ ;;^UTILITY(U,$J,358.3,13894,0)
+ ;;=M05.752^^53^599^144
+ ;;^UTILITY(U,$J,358.3,13894,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13894,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Hip
+ ;;^UTILITY(U,$J,358.3,13894,1,4,0)
+ ;;=4^M05.752
+ ;;^UTILITY(U,$J,358.3,13894,2)
+ ;;=^5010014
+ ;;^UTILITY(U,$J,358.3,13895,0)
+ ;;=M05.761^^53^599^152
+ ;;^UTILITY(U,$J,358.3,13895,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13895,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Knee
+ ;;^UTILITY(U,$J,358.3,13895,1,4,0)
+ ;;=4^M05.761
+ ;;^UTILITY(U,$J,358.3,13895,2)
+ ;;=^5010016
+ ;;^UTILITY(U,$J,358.3,13896,0)
+ ;;=M05.762^^53^599^145
+ ;;^UTILITY(U,$J,358.3,13896,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13896,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Knee
+ ;;^UTILITY(U,$J,358.3,13896,1,4,0)
+ ;;=4^M05.762
+ ;;^UTILITY(U,$J,358.3,13896,2)
+ ;;=^5010017
+ ;;^UTILITY(U,$J,358.3,13897,0)
+ ;;=M05.771^^53^599^149
+ ;;^UTILITY(U,$J,358.3,13897,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13897,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Ankle
+ ;;^UTILITY(U,$J,358.3,13897,1,4,0)
+ ;;=4^M05.771
+ ;;^UTILITY(U,$J,358.3,13897,2)
+ ;;=^5010019
+ ;;^UTILITY(U,$J,358.3,13898,0)
+ ;;=M05.772^^53^599^142
+ ;;^UTILITY(U,$J,358.3,13898,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13898,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Ankle
+ ;;^UTILITY(U,$J,358.3,13898,1,4,0)
+ ;;=4^M05.772
+ ;;^UTILITY(U,$J,358.3,13898,2)
+ ;;=^5010020
+ ;;^UTILITY(U,$J,358.3,13899,0)
+ ;;=M05.79^^53^599^148
+ ;;^UTILITY(U,$J,358.3,13899,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13899,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Multiple Sites
+ ;;^UTILITY(U,$J,358.3,13899,1,4,0)
+ ;;=4^M05.79
+ ;;^UTILITY(U,$J,358.3,13899,2)
+ ;;=^5010022
+ ;;^UTILITY(U,$J,358.3,13900,0)
+ ;;=M06.00^^53^599^155
+ ;;^UTILITY(U,$J,358.3,13900,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13900,1,3,0)
+ ;;=3^Rheumatoid Arthritis w/o Rhematoid Factor,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13900,1,4,0)
+ ;;=4^M06.00
+ ;;^UTILITY(U,$J,358.3,13900,2)
+ ;;=^5010047
+ ;;^UTILITY(U,$J,358.3,13901,0)
+ ;;=M06.30^^53^599^158
+ ;;^UTILITY(U,$J,358.3,13901,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13901,1,3,0)
+ ;;=3^Rheumatoid Nodule,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13901,1,4,0)
+ ;;=4^M06.30
+ ;;^UTILITY(U,$J,358.3,13901,2)
+ ;;=^5010096
+ ;;^UTILITY(U,$J,358.3,13902,0)
+ ;;=M06.4^^53^599^48

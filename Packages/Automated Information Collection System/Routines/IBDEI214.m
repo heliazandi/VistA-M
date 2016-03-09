@@ -1,132 +1,132 @@
-IBDEI214 ; ; 06-AUG-2015
+IBDEI214 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35464,2)
- ;;=^5061780
- ;;^UTILITY(U,$J,358.3,35465,0)
- ;;=Y36.7X0S^^187^2044^13
- ;;^UTILITY(U,$J,358.3,35465,1,0)
+ ;;^UTILITY(U,$J,358.3,34422,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35465,1,3,0)
- ;;=3^War op w chem weapons and oth unconvtl warfare, milt, sqla
- ;;^UTILITY(U,$J,358.3,35465,1,4,0)
- ;;=4^Y36.7X0S
- ;;^UTILITY(U,$J,358.3,35465,2)
- ;;=^5061783
- ;;^UTILITY(U,$J,358.3,35466,0)
- ;;=E11.9^^188^2045^14
- ;;^UTILITY(U,$J,358.3,35466,1,0)
+ ;;^UTILITY(U,$J,358.3,34422,1,3,0)
+ ;;=3^Rotator Cuff Syndrome,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,34422,1,4,0)
+ ;;=4^M75.111
+ ;;^UTILITY(U,$J,358.3,34422,2)
+ ;;=^5013245
+ ;;^UTILITY(U,$J,358.3,34423,0)
+ ;;=M75.112^^131^1686^160
+ ;;^UTILITY(U,$J,358.3,34423,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35466,1,3,0)
- ;;=3^Diabetes Type 2 w/o Complications
- ;;^UTILITY(U,$J,358.3,35466,1,4,0)
- ;;=4^E11.9
- ;;^UTILITY(U,$J,358.3,35466,2)
- ;;=^5002666
- ;;^UTILITY(U,$J,358.3,35467,0)
- ;;=E10.9^^188^2045^13
- ;;^UTILITY(U,$J,358.3,35467,1,0)
+ ;;^UTILITY(U,$J,358.3,34423,1,3,0)
+ ;;=3^Rotator Cuff Syndrome,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,34423,1,4,0)
+ ;;=4^M75.112
+ ;;^UTILITY(U,$J,358.3,34423,2)
+ ;;=^5013246
+ ;;^UTILITY(U,$J,358.3,34424,0)
+ ;;=M75.51^^131^1686^10
+ ;;^UTILITY(U,$J,358.3,34424,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35467,1,3,0)
- ;;=3^Diabetes Type 1 w/o Complications
- ;;^UTILITY(U,$J,358.3,35467,1,4,0)
- ;;=4^E10.9
- ;;^UTILITY(U,$J,358.3,35467,2)
- ;;=^5002626
- ;;^UTILITY(U,$J,358.3,35468,0)
- ;;=N18.9^^188^2045^10
- ;;^UTILITY(U,$J,358.3,35468,1,0)
+ ;;^UTILITY(U,$J,358.3,34424,1,3,0)
+ ;;=3^Bursitis of Right Shoulder
+ ;;^UTILITY(U,$J,358.3,34424,1,4,0)
+ ;;=4^M75.51
+ ;;^UTILITY(U,$J,358.3,34424,2)
+ ;;=^5133690
+ ;;^UTILITY(U,$J,358.3,34425,0)
+ ;;=M75.52^^131^1686^9
+ ;;^UTILITY(U,$J,358.3,34425,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35468,1,3,0)
- ;;=3^Chronic kidney disease, unspecified
- ;;^UTILITY(U,$J,358.3,35468,1,4,0)
- ;;=4^N18.9
- ;;^UTILITY(U,$J,358.3,35468,2)
- ;;=^332812
- ;;^UTILITY(U,$J,358.3,35469,0)
- ;;=D50.0^^188^2045^27
- ;;^UTILITY(U,$J,358.3,35469,1,0)
+ ;;^UTILITY(U,$J,358.3,34425,1,3,0)
+ ;;=3^Bursitis of Left Shoulder
+ ;;^UTILITY(U,$J,358.3,34425,1,4,0)
+ ;;=4^M75.52
+ ;;^UTILITY(U,$J,358.3,34425,2)
+ ;;=^5133691
+ ;;^UTILITY(U,$J,358.3,34426,0)
+ ;;=M77.11^^131^1686^54
+ ;;^UTILITY(U,$J,358.3,34426,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35469,1,3,0)
- ;;=3^Iron deficiency anemia secondary to blood loss (chronic)
- ;;^UTILITY(U,$J,358.3,35469,1,4,0)
- ;;=4^D50.0
- ;;^UTILITY(U,$J,358.3,35469,2)
- ;;=^267971
- ;;^UTILITY(U,$J,358.3,35470,0)
- ;;=D50.9^^188^2045^28
- ;;^UTILITY(U,$J,358.3,35470,1,0)
+ ;;^UTILITY(U,$J,358.3,34426,1,3,0)
+ ;;=3^Lateral Epicondylitis,Right Elbow
+ ;;^UTILITY(U,$J,358.3,34426,1,4,0)
+ ;;=4^M77.11
+ ;;^UTILITY(U,$J,358.3,34426,2)
+ ;;=^5013304
+ ;;^UTILITY(U,$J,358.3,34427,0)
+ ;;=M77.12^^131^1686^53
+ ;;^UTILITY(U,$J,358.3,34427,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35470,1,3,0)
- ;;=3^Iron deficiency anemia, unspecified
- ;;^UTILITY(U,$J,358.3,35470,1,4,0)
- ;;=4^D50.9
- ;;^UTILITY(U,$J,358.3,35470,2)
- ;;=^5002283
- ;;^UTILITY(U,$J,358.3,35471,0)
- ;;=D62.^^188^2045^3
- ;;^UTILITY(U,$J,358.3,35471,1,0)
+ ;;^UTILITY(U,$J,358.3,34427,1,3,0)
+ ;;=3^Lateral Epicondylitis,Left Elbow
+ ;;^UTILITY(U,$J,358.3,34427,1,4,0)
+ ;;=4^M77.12
+ ;;^UTILITY(U,$J,358.3,34427,2)
+ ;;=^5013305
+ ;;^UTILITY(U,$J,358.3,34428,0)
+ ;;=M79.1^^131^1686^61
+ ;;^UTILITY(U,$J,358.3,34428,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35471,1,3,0)
- ;;=3^Acute posthemorrhagic anemia
- ;;^UTILITY(U,$J,358.3,35471,1,4,0)
- ;;=4^D62.
- ;;^UTILITY(U,$J,358.3,35471,2)
- ;;=^267986
- ;;^UTILITY(U,$J,358.3,35472,0)
- ;;=D64.9^^188^2045^4
- ;;^UTILITY(U,$J,358.3,35472,1,0)
+ ;;^UTILITY(U,$J,358.3,34428,1,3,0)
+ ;;=3^Myalgia
+ ;;^UTILITY(U,$J,358.3,34428,1,4,0)
+ ;;=4^M79.1
+ ;;^UTILITY(U,$J,358.3,34428,2)
+ ;;=^5013321
+ ;;^UTILITY(U,$J,358.3,34429,0)
+ ;;=M79.7^^131^1686^39
+ ;;^UTILITY(U,$J,358.3,34429,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35472,1,3,0)
- ;;=3^Anemia, unspecified
- ;;^UTILITY(U,$J,358.3,35472,1,4,0)
- ;;=4^D64.9
- ;;^UTILITY(U,$J,358.3,35472,2)
- ;;=^5002351
- ;;^UTILITY(U,$J,358.3,35473,0)
- ;;=F03.90^^188^2045^12
- ;;^UTILITY(U,$J,358.3,35473,1,0)
+ ;;^UTILITY(U,$J,358.3,34429,1,3,0)
+ ;;=3^Fibromyalgia
+ ;;^UTILITY(U,$J,358.3,34429,1,4,0)
+ ;;=4^M79.7
+ ;;^UTILITY(U,$J,358.3,34429,2)
+ ;;=^46261
+ ;;^UTILITY(U,$J,358.3,34430,0)
+ ;;=M80.08XA^^131^1686^1
+ ;;^UTILITY(U,$J,358.3,34430,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35473,1,3,0)
- ;;=3^Dementia w/o behavioral disturbance,Unspec
- ;;^UTILITY(U,$J,358.3,35473,1,4,0)
- ;;=4^F03.90
- ;;^UTILITY(U,$J,358.3,35473,2)
- ;;=^5003050
- ;;^UTILITY(U,$J,358.3,35474,0)
- ;;=I10.^^188^2045^19
- ;;^UTILITY(U,$J,358.3,35474,1,0)
+ ;;^UTILITY(U,$J,358.3,34430,1,3,0)
+ ;;=3^Age-Related Osteoporosis w/ Vertebra Fx,Init Encntr
+ ;;^UTILITY(U,$J,358.3,34430,1,4,0)
+ ;;=4^M80.08XA
+ ;;^UTILITY(U,$J,358.3,34430,2)
+ ;;=^5013495
+ ;;^UTILITY(U,$J,358.3,34431,0)
+ ;;=M80.08XD^^131^1686^2
+ ;;^UTILITY(U,$J,358.3,34431,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35474,1,3,0)
- ;;=3^Essential (primary) hypertension
- ;;^UTILITY(U,$J,358.3,35474,1,4,0)
- ;;=4^I10.
- ;;^UTILITY(U,$J,358.3,35474,2)
- ;;=^5007062
- ;;^UTILITY(U,$J,358.3,35475,0)
- ;;=G45.9^^188^2045^43
- ;;^UTILITY(U,$J,358.3,35475,1,0)
+ ;;^UTILITY(U,$J,358.3,34431,1,3,0)
+ ;;=3^Age-Related Osteoporosis w/ Vertebra Fx,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,34431,1,4,0)
+ ;;=4^M80.08XD
+ ;;^UTILITY(U,$J,358.3,34431,2)
+ ;;=^5013496
+ ;;^UTILITY(U,$J,358.3,34432,0)
+ ;;=M84.48XA^^131^1686^118
+ ;;^UTILITY(U,$J,358.3,34432,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35475,1,3,0)
- ;;=3^Transient cerebral ischemic attack, unspecified
- ;;^UTILITY(U,$J,358.3,35475,1,4,0)
- ;;=4^G45.9
- ;;^UTILITY(U,$J,358.3,35475,2)
- ;;=^5003959
- ;;^UTILITY(U,$J,358.3,35476,0)
- ;;=N18.4^^188^2045^9
- ;;^UTILITY(U,$J,358.3,35476,1,0)
+ ;;^UTILITY(U,$J,358.3,34432,1,3,0)
+ ;;=3^Pathological Fx,Oth Site,Init Encntr
+ ;;^UTILITY(U,$J,358.3,34432,1,4,0)
+ ;;=4^M84.48XA
+ ;;^UTILITY(U,$J,358.3,34432,2)
+ ;;=^5014016
+ ;;^UTILITY(U,$J,358.3,34433,0)
+ ;;=M84.48XD^^131^1686^119
+ ;;^UTILITY(U,$J,358.3,34433,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35476,1,3,0)
- ;;=3^Chronic kidney disease, stage 4 (severe)
- ;;^UTILITY(U,$J,358.3,35476,1,4,0)
- ;;=4^N18.4
- ;;^UTILITY(U,$J,358.3,35476,2)
- ;;=^5015605
- ;;^UTILITY(U,$J,358.3,35477,0)
- ;;=R44.3^^188^2045^22
- ;;^UTILITY(U,$J,358.3,35477,1,0)
+ ;;^UTILITY(U,$J,358.3,34433,1,3,0)
+ ;;=3^Pathological Fx,Oth Site,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,34433,1,4,0)
+ ;;=4^M84.48XD
+ ;;^UTILITY(U,$J,358.3,34433,2)
+ ;;=^5014017
+ ;;^UTILITY(U,$J,358.3,34434,0)
+ ;;=M87.011^^131^1686^45
+ ;;^UTILITY(U,$J,358.3,34434,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35477,1,3,0)
- ;;=3^Hallucinations, unspecified
+ ;;^UTILITY(U,$J,358.3,34434,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Right Shoulder
+ ;;^UTILITY(U,$J,358.3,34434,1,4,0)
+ ;;=4^M87.011
+ ;;^UTILITY(U,$J,358.3,34434,2)
+ ;;=^5014658

@@ -1,140 +1,130 @@
-IBDEI03D ; ; 06-AUG-2015
+IBDEI03D ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1038,1,3,0)
- ;;=3^Hepatitis A without hepatic coma
- ;;^UTILITY(U,$J,358.3,1038,1,4,0)
- ;;=4^B15.9
- ;;^UTILITY(U,$J,358.3,1038,2)
- ;;=^5000536
- ;;^UTILITY(U,$J,358.3,1039,0)
- ;;=B16.9^^3^37^3
- ;;^UTILITY(U,$J,358.3,1039,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1039,1,3,0)
- ;;=3^Acute hepatitis B w/o delta-agent and without hepatic coma
- ;;^UTILITY(U,$J,358.3,1039,1,4,0)
- ;;=4^B16.9
- ;;^UTILITY(U,$J,358.3,1039,2)
- ;;=^5000540
- ;;^UTILITY(U,$J,358.3,1040,0)
- ;;=B18.1^^3^37^26
- ;;^UTILITY(U,$J,358.3,1040,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1040,1,3,0)
- ;;=3^Chronic viral hepatitis B without delta-agent
- ;;^UTILITY(U,$J,358.3,1040,1,4,0)
- ;;=4^B18.1
- ;;^UTILITY(U,$J,358.3,1040,2)
- ;;=^5000547
- ;;^UTILITY(U,$J,358.3,1041,0)
- ;;=B17.10^^3^37^4
- ;;^UTILITY(U,$J,358.3,1041,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1041,1,3,0)
- ;;=3^Acute hepatitis C without hepatic coma
- ;;^UTILITY(U,$J,358.3,1041,1,4,0)
- ;;=4^B17.10
- ;;^UTILITY(U,$J,358.3,1041,2)
- ;;=^5000542
- ;;^UTILITY(U,$J,358.3,1042,0)
- ;;=B18.2^^3^37^27
- ;;^UTILITY(U,$J,358.3,1042,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1042,1,3,0)
- ;;=3^Chronic viral hepatitis C
- ;;^UTILITY(U,$J,358.3,1042,1,4,0)
- ;;=4^B18.2
- ;;^UTILITY(U,$J,358.3,1042,2)
- ;;=^5000548
- ;;^UTILITY(U,$J,358.3,1043,0)
- ;;=B18.8^^3^37^28
- ;;^UTILITY(U,$J,358.3,1043,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1043,1,3,0)
- ;;=3^Chronic viral hepatitis NEC
- ;;^UTILITY(U,$J,358.3,1043,1,4,0)
- ;;=4^B18.8
- ;;^UTILITY(U,$J,358.3,1043,2)
- ;;=^5000549
- ;;^UTILITY(U,$J,358.3,1044,0)
- ;;=B18.9^^3^37^29
- ;;^UTILITY(U,$J,358.3,1044,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1044,1,3,0)
- ;;=3^Chronic viral hepatitis, unspecified
- ;;^UTILITY(U,$J,358.3,1044,1,4,0)
- ;;=4^B18.9
- ;;^UTILITY(U,$J,358.3,1044,2)
- ;;=^5000550
- ;;^UTILITY(U,$J,358.3,1045,0)
- ;;=B37.0^^3^37^19
- ;;^UTILITY(U,$J,358.3,1045,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1045,1,3,0)
- ;;=3^Candidal stomatitis
- ;;^UTILITY(U,$J,358.3,1045,1,4,0)
- ;;=4^B37.0
- ;;^UTILITY(U,$J,358.3,1045,2)
- ;;=^5000612
- ;;^UTILITY(U,$J,358.3,1046,0)
- ;;=B37.83^^3^37^17
- ;;^UTILITY(U,$J,358.3,1046,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1046,1,3,0)
- ;;=3^Candidal cheilitis
- ;;^UTILITY(U,$J,358.3,1046,1,4,0)
- ;;=4^B37.83
- ;;^UTILITY(U,$J,358.3,1046,2)
- ;;=^5000622
- ;;^UTILITY(U,$J,358.3,1047,0)
- ;;=B37.81^^3^37^18
- ;;^UTILITY(U,$J,358.3,1047,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1047,1,3,0)
- ;;=3^Candidal esophagitis
- ;;^UTILITY(U,$J,358.3,1047,1,4,0)
- ;;=4^B37.81
- ;;^UTILITY(U,$J,358.3,1047,2)
- ;;=^5000620
- ;;^UTILITY(U,$J,358.3,1048,0)
- ;;=K63.5^^3^37^84
- ;;^UTILITY(U,$J,358.3,1048,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1048,1,3,0)
- ;;=3^Polyp of colon
- ;;^UTILITY(U,$J,358.3,1048,1,4,0)
- ;;=4^K63.5
- ;;^UTILITY(U,$J,358.3,1048,2)
- ;;=^5008765
- ;;^UTILITY(U,$J,358.3,1049,0)
- ;;=D73.2^^3^37^21
- ;;^UTILITY(U,$J,358.3,1049,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1049,1,3,0)
- ;;=3^Chronic congestive splenomegaly
- ;;^UTILITY(U,$J,358.3,1049,1,4,0)
- ;;=4^D73.2
- ;;^UTILITY(U,$J,358.3,1049,2)
- ;;=^268000
- ;;^UTILITY(U,$J,358.3,1050,0)
- ;;=K64.9^^3^37^60
- ;;^UTILITY(U,$J,358.3,1050,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1050,1,3,0)
- ;;=3^Hemorrhoids,Unspec
- ;;^UTILITY(U,$J,358.3,1050,1,4,0)
- ;;=4^K64.9
- ;;^UTILITY(U,$J,358.3,1050,2)
- ;;=^5008775
- ;;^UTILITY(U,$J,358.3,1051,0)
- ;;=I85.00^^3^37^44
- ;;^UTILITY(U,$J,358.3,1051,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1051,1,3,0)
- ;;=3^Esophageal varices without bleeding
- ;;^UTILITY(U,$J,358.3,1051,1,4,0)
- ;;=4^I85.00
- ;;^UTILITY(U,$J,358.3,1051,2)
- ;;=^5008023
+ ;;^UTILITY(U,$J,358.3,1133,1,3,0)
+ ;;=3^Electrocochleography
+ ;;^UTILITY(U,$J,358.3,1134,0)
+ ;;=92562^^7^115^25^^^^1
+ ;;^UTILITY(U,$J,358.3,1134,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1134,1,2,0)
+ ;;=2^92562
+ ;;^UTILITY(U,$J,358.3,1134,1,3,0)
+ ;;=3^Loudness Balance Test
+ ;;^UTILITY(U,$J,358.3,1135,0)
+ ;;=92588^^7^115^27^^^^1
+ ;;^UTILITY(U,$J,358.3,1135,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1135,1,2,0)
+ ;;=2^92588
+ ;;^UTILITY(U,$J,358.3,1135,1,3,0)
+ ;;=3^Otoacoustic Emissions,Diagnostic
+ ;;^UTILITY(U,$J,358.3,1136,0)
+ ;;=92587^^7^115^28^^^^1
+ ;;^UTILITY(U,$J,358.3,1136,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1136,1,2,0)
+ ;;=2^92587
+ ;;^UTILITY(U,$J,358.3,1136,1,3,0)
+ ;;=3^Otoacoustic Emissions,Limited
+ ;;^UTILITY(U,$J,358.3,1137,0)
+ ;;=92552^^7^115^29^^^^1
+ ;;^UTILITY(U,$J,358.3,1137,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1137,1,2,0)
+ ;;=2^92552
+ ;;^UTILITY(U,$J,358.3,1137,1,3,0)
+ ;;=3^Pure Tone Audiometry, Air
+ ;;^UTILITY(U,$J,358.3,1138,0)
+ ;;=92553^^7^115^30^^^^1
+ ;;^UTILITY(U,$J,358.3,1138,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1138,1,2,0)
+ ;;=2^92553
+ ;;^UTILITY(U,$J,358.3,1138,1,3,0)
+ ;;=3^Pure Tone Audiometry, Air & Bone
+ ;;^UTILITY(U,$J,358.3,1139,0)
+ ;;=92570^^7^115^1^^^^1
+ ;;^UTILITY(U,$J,358.3,1139,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1139,1,2,0)
+ ;;=2^92570
+ ;;^UTILITY(U,$J,358.3,1139,1,3,0)
+ ;;=3^Acoustic Immittance Testing
+ ;;^UTILITY(U,$J,358.3,1140,0)
+ ;;=92558^^7^115^16^^^^1
+ ;;^UTILITY(U,$J,358.3,1140,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1140,1,2,0)
+ ;;=2^92558
+ ;;^UTILITY(U,$J,358.3,1140,1,3,0)
+ ;;=3^Evoked Otoacoustic Emmissions,Scrn,Auto
+ ;;^UTILITY(U,$J,358.3,1141,0)
+ ;;=92611^^7^115^26^^^^1
+ ;;^UTILITY(U,$J,358.3,1141,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1141,1,2,0)
+ ;;=2^92611
+ ;;^UTILITY(U,$J,358.3,1141,1,3,0)
+ ;;=3^Motion Fluoroscopic Eval Swallowing
+ ;;^UTILITY(U,$J,358.3,1142,0)
+ ;;=92612^^7^115^22^^^^1
+ ;;^UTILITY(U,$J,358.3,1142,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1142,1,2,0)
+ ;;=2^92612
+ ;;^UTILITY(U,$J,358.3,1142,1,3,0)
+ ;;=3^Flexible Fiberoptic Eval Swallowing
+ ;;^UTILITY(U,$J,358.3,1143,0)
+ ;;=92626^^7^115^14^^^^1
+ ;;^UTILITY(U,$J,358.3,1143,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1143,1,2,0)
+ ;;=2^92626
+ ;;^UTILITY(U,$J,358.3,1143,1,3,0)
+ ;;=3^Eval Aud Rehab Status,1st hr
+ ;;^UTILITY(U,$J,358.3,1144,0)
+ ;;=92627^^7^115^15^^^^1
+ ;;^UTILITY(U,$J,358.3,1144,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1144,1,2,0)
+ ;;=2^92627
+ ;;^UTILITY(U,$J,358.3,1144,1,3,0)
+ ;;=3^Eval Aud Rehab Status,Ea Addl 15min
+ ;;^UTILITY(U,$J,358.3,1145,0)
+ ;;=92613^^7^115^21^^^^1
+ ;;^UTILITY(U,$J,358.3,1145,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1145,1,2,0)
+ ;;=2^92613
+ ;;^UTILITY(U,$J,358.3,1145,1,3,0)
+ ;;=3^Flex Fib Eval Swallow,Interp/Rpt Only
+ ;;^UTILITY(U,$J,358.3,1146,0)
+ ;;=92614^^7^115^23^^^^1
+ ;;^UTILITY(U,$J,358.3,1146,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1146,1,2,0)
+ ;;=2^92614
+ ;;^UTILITY(U,$J,358.3,1146,1,3,0)
+ ;;=3^Laryngoscopic Sensory Test,Video
+ ;;^UTILITY(U,$J,358.3,1147,0)
+ ;;=92615^^7^115^24^^^^1
+ ;;^UTILITY(U,$J,358.3,1147,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1147,1,2,0)
+ ;;=2^92615
+ ;;^UTILITY(U,$J,358.3,1147,1,3,0)
+ ;;=3^Laryngoscopic Sensory Tst,Interp&Rpt Only
+ ;;^UTILITY(U,$J,358.3,1148,0)
+ ;;=92560^^7^115^9^^^^1
+ ;;^UTILITY(U,$J,358.3,1148,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,1148,1,2,0)
+ ;;=2^92560
+ ;;^UTILITY(U,$J,358.3,1148,1,3,0)
+ ;;=3^Bekesy Audiometry,Screening
+ ;;^UTILITY(U,$J,358.3,1149,0)
+ ;;=92561^^7^115^8^^^^1
+ ;;^UTILITY(U,$J,358.3,1149,1,0)
+ ;;=^358.31IA^3^2

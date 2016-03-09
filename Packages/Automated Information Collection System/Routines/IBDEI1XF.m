@@ -1,130 +1,124 @@
-IBDEI1XF ; ; 06-AUG-2015
+IBDEI1XF ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33849,0)
- ;;=W55.03XD^^182^2011^98
- ;;^UTILITY(U,$J,358.3,33849,1,0)
+ ;;^UTILITY(U,$J,358.3,32675,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33849,1,3,0)
- ;;=3^Scratched by Cat,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33849,1,4,0)
- ;;=4^W55.03XD
- ;;^UTILITY(U,$J,358.3,33849,2)
- ;;=^5060269
- ;;^UTILITY(U,$J,358.3,33850,0)
- ;;=X00.8XXA^^182^2011^15
- ;;^UTILITY(U,$J,358.3,33850,1,0)
+ ;;^UTILITY(U,$J,358.3,32675,1,3,0)
+ ;;=3^Open wound, lft lsr toe(s) w/o nail dmg, unspec, init enc
+ ;;^UTILITY(U,$J,358.3,32675,1,4,0)
+ ;;=4^S91.105A
+ ;;^UTILITY(U,$J,358.3,32675,2)
+ ;;=^5044177
+ ;;^UTILITY(U,$J,358.3,32676,0)
+ ;;=S91.231A^^126^1623^31
+ ;;^UTILITY(U,$J,358.3,32676,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33850,1,3,0)
- ;;=3^Exp to Uncontrolled Bldg Fire,Init Encntr
- ;;^UTILITY(U,$J,358.3,33850,1,4,0)
- ;;=4^X00.8XXA
- ;;^UTILITY(U,$J,358.3,33850,2)
- ;;=^5060679
- ;;^UTILITY(U,$J,358.3,33851,0)
- ;;=X00.8XXD^^182^2011^16
- ;;^UTILITY(U,$J,358.3,33851,1,0)
+ ;;^UTILITY(U,$J,358.3,32676,1,3,0)
+ ;;=3^Punctr Wnd w/o FB, rt grt toe w/ nail dmg, init
+ ;;^UTILITY(U,$J,358.3,32676,1,4,0)
+ ;;=4^S91.231A
+ ;;^UTILITY(U,$J,358.3,32676,2)
+ ;;=^5044290
+ ;;^UTILITY(U,$J,358.3,32677,0)
+ ;;=S91.232A^^126^1623^27
+ ;;^UTILITY(U,$J,358.3,32677,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33851,1,3,0)
- ;;=3^Exp to Uncontrolled Bldg Fire,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33851,1,4,0)
- ;;=4^X00.8XXD
- ;;^UTILITY(U,$J,358.3,33851,2)
- ;;=^5060680
- ;;^UTILITY(U,$J,358.3,33852,0)
- ;;=X32.XXXA^^182^2011^13
- ;;^UTILITY(U,$J,358.3,33852,1,0)
+ ;;^UTILITY(U,$J,358.3,32677,1,3,0)
+ ;;=3^Punctr Wnd w/o FB, lft grt toe w/ nail dmg, init
+ ;;^UTILITY(U,$J,358.3,32677,1,4,0)
+ ;;=4^S91.232A
+ ;;^UTILITY(U,$J,358.3,32677,2)
+ ;;=^5044293
+ ;;^UTILITY(U,$J,358.3,32678,0)
+ ;;=S91.234A^^126^1623^33
+ ;;^UTILITY(U,$J,358.3,32678,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33852,1,3,0)
- ;;=3^Exp to Sunlight,Init Encntr
- ;;^UTILITY(U,$J,358.3,33852,1,4,0)
- ;;=4^X32.XXXA
- ;;^UTILITY(U,$J,358.3,33852,2)
- ;;=^5060847
- ;;^UTILITY(U,$J,358.3,33853,0)
- ;;=X32.XXXD^^182^2011^14
- ;;^UTILITY(U,$J,358.3,33853,1,0)
+ ;;^UTILITY(U,$J,358.3,32678,1,3,0)
+ ;;=3^Punctr Wnd w/o FB, rt lsr toe(s) w/ nail dmg, init
+ ;;^UTILITY(U,$J,358.3,32678,1,4,0)
+ ;;=4^S91.234A
+ ;;^UTILITY(U,$J,358.3,32678,2)
+ ;;=^5044296
+ ;;^UTILITY(U,$J,358.3,32679,0)
+ ;;=S91.202A^^126^1623^3
+ ;;^UTILITY(U,$J,358.3,32679,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33853,1,3,0)
- ;;=3^Exp to Sunlight,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33853,1,4,0)
- ;;=4^X32.XXXD
- ;;^UTILITY(U,$J,358.3,33853,2)
- ;;=^5060848
- ;;^UTILITY(U,$J,358.3,33854,0)
- ;;=Y04.0XXA^^182^2011^7
- ;;^UTILITY(U,$J,358.3,33854,1,0)
+ ;;^UTILITY(U,$J,358.3,32679,1,3,0)
+ ;;=3^Open wound, lft grt toe w/ nail dmg, unspec, init
+ ;;^UTILITY(U,$J,358.3,32679,1,4,0)
+ ;;=4^S91.202A
+ ;;^UTILITY(U,$J,358.3,32679,2)
+ ;;=^5137421
+ ;;^UTILITY(U,$J,358.3,32680,0)
+ ;;=S91.204A^^126^1623^11
+ ;;^UTILITY(U,$J,358.3,32680,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33854,1,3,0)
- ;;=3^Assault by Unarmed Fight,Init Encntr
- ;;^UTILITY(U,$J,358.3,33854,1,4,0)
- ;;=4^Y04.0XXA
- ;;^UTILITY(U,$J,358.3,33854,2)
- ;;=^5061165
- ;;^UTILITY(U,$J,358.3,33855,0)
- ;;=Y04.0XXD^^182^2011^8
- ;;^UTILITY(U,$J,358.3,33855,1,0)
+ ;;^UTILITY(U,$J,358.3,32680,1,3,0)
+ ;;=3^Open wound, rt lsr toe(s) w/ nail dmg, unspec, init
+ ;;^UTILITY(U,$J,358.3,32680,1,4,0)
+ ;;=4^S91.204A
+ ;;^UTILITY(U,$J,358.3,32680,2)
+ ;;=^5044267
+ ;;^UTILITY(U,$J,358.3,32681,0)
+ ;;=S91.205A^^126^1623^5
+ ;;^UTILITY(U,$J,358.3,32681,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33855,1,3,0)
- ;;=3^Assault by Unarmed Fight,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33855,1,4,0)
- ;;=4^Y04.0XXD
- ;;^UTILITY(U,$J,358.3,33855,2)
- ;;=^5061166
- ;;^UTILITY(U,$J,358.3,33856,0)
- ;;=Y04.1XXA^^182^2011^1
- ;;^UTILITY(U,$J,358.3,33856,1,0)
+ ;;^UTILITY(U,$J,358.3,32681,1,3,0)
+ ;;=3^Open wound, lft lsr toe(s) w/ nail dmg, unspec, init
+ ;;^UTILITY(U,$J,358.3,32681,1,4,0)
+ ;;=4^S91.205A
+ ;;^UTILITY(U,$J,358.3,32681,2)
+ ;;=^5137430
+ ;;^UTILITY(U,$J,358.3,32682,0)
+ ;;=S91.134A^^126^1623^34
+ ;;^UTILITY(U,$J,358.3,32682,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33856,1,3,0)
- ;;=3^Assault by Human Bite,Init Encntr
- ;;^UTILITY(U,$J,358.3,33856,1,4,0)
- ;;=4^Y04.1XXA
- ;;^UTILITY(U,$J,358.3,33856,2)
- ;;=^5061168
- ;;^UTILITY(U,$J,358.3,33857,0)
- ;;=Y04.1XXD^^182^2011^2
- ;;^UTILITY(U,$J,358.3,33857,1,0)
+ ;;^UTILITY(U,$J,358.3,32682,1,3,0)
+ ;;=3^Punctr Wnd w/o FB, rt lsr toe(s) w/o nail dmg, init
+ ;;^UTILITY(U,$J,358.3,32682,1,4,0)
+ ;;=4^S91.134A
+ ;;^UTILITY(U,$J,358.3,32682,2)
+ ;;=^5044222
+ ;;^UTILITY(U,$J,358.3,32683,0)
+ ;;=S91.135A^^126^1623^29
+ ;;^UTILITY(U,$J,358.3,32683,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33857,1,3,0)
- ;;=3^Assault by Human Bite,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33857,1,4,0)
- ;;=4^Y04.1XXD
- ;;^UTILITY(U,$J,358.3,33857,2)
- ;;=^5061169
- ;;^UTILITY(U,$J,358.3,33858,0)
- ;;=Y04.2XXA^^182^2011^5
- ;;^UTILITY(U,$J,358.3,33858,1,0)
+ ;;^UTILITY(U,$J,358.3,32683,1,3,0)
+ ;;=3^Punctr Wnd w/o FB, lft lsr toe(s) w/o nail dmg, init
+ ;;^UTILITY(U,$J,358.3,32683,1,4,0)
+ ;;=4^S91.135A
+ ;;^UTILITY(U,$J,358.3,32683,2)
+ ;;=^5044225
+ ;;^UTILITY(U,$J,358.3,32684,0)
+ ;;=S91.201A^^126^1623^9
+ ;;^UTILITY(U,$J,358.3,32684,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33858,1,3,0)
- ;;=3^Assault by Strike/Bumped by Another Person,Init Encntr
- ;;^UTILITY(U,$J,358.3,33858,1,4,0)
- ;;=4^Y04.2XXA
- ;;^UTILITY(U,$J,358.3,33858,2)
- ;;=^5061171
- ;;^UTILITY(U,$J,358.3,33859,0)
- ;;=Y04.8XXA^^182^2011^3
- ;;^UTILITY(U,$J,358.3,33859,1,0)
+ ;;^UTILITY(U,$J,358.3,32684,1,3,0)
+ ;;=3^Open wound, rt grt toe w/ nail dmg, unspec, init
+ ;;^UTILITY(U,$J,358.3,32684,1,4,0)
+ ;;=4^S91.201A
+ ;;^UTILITY(U,$J,358.3,32684,2)
+ ;;=^5044264
+ ;;^UTILITY(U,$J,358.3,32685,0)
+ ;;=S91.131A^^126^1623^32
+ ;;^UTILITY(U,$J,358.3,32685,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33859,1,3,0)
- ;;=3^Assault by Oth Bodily Force,Init Encntr
- ;;^UTILITY(U,$J,358.3,33859,1,4,0)
- ;;=4^Y04.8XXA
- ;;^UTILITY(U,$J,358.3,33859,2)
- ;;=^5061174
- ;;^UTILITY(U,$J,358.3,33860,0)
- ;;=Y04.2XXD^^182^2011^6
- ;;^UTILITY(U,$J,358.3,33860,1,0)
+ ;;^UTILITY(U,$J,358.3,32685,1,3,0)
+ ;;=3^Punctr Wnd w/o FB, rt grt toe w/o nail dmg, init
+ ;;^UTILITY(U,$J,358.3,32685,1,4,0)
+ ;;=4^S91.131A
+ ;;^UTILITY(U,$J,358.3,32685,2)
+ ;;=^5044213
+ ;;^UTILITY(U,$J,358.3,32686,0)
+ ;;=S91.132A^^126^1623^28
+ ;;^UTILITY(U,$J,358.3,32686,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33860,1,3,0)
- ;;=3^Assault by Strike/Bumped by Another Person,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33860,1,4,0)
- ;;=4^Y04.2XXD
- ;;^UTILITY(U,$J,358.3,33860,2)
- ;;=^5061172
- ;;^UTILITY(U,$J,358.3,33861,0)
- ;;=Y04.8XXD^^182^2011^4
- ;;^UTILITY(U,$J,358.3,33861,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33861,1,3,0)
- ;;=3^Assault by Oth Bodily Force,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,32686,1,3,0)
+ ;;=3^Punctr Wnd w/o FB, lft grt toe w/o nail dmg, init
+ ;;^UTILITY(U,$J,358.3,32686,1,4,0)
+ ;;=4^S91.132A
+ ;;^UTILITY(U,$J,358.3,32686,2)
+ ;;=^5044216
+ ;;^UTILITY(U,$J,358.3,32687,0)
+ ;;=S91.041A^^126^1623^19

@@ -1,134 +1,136 @@
-IBDEI03R ; ; 06-AUG-2015
+IBDEI03R ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1226,1,0)
+ ;;^UTILITY(U,$J,358.3,1330,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1226,1,3,0)
- ;;=3^Malignant neoplasm of extrahepatic bile duct
- ;;^UTILITY(U,$J,358.3,1226,1,4,0)
- ;;=4^C24.0
- ;;^UTILITY(U,$J,358.3,1226,2)
- ;;=^5000940
- ;;^UTILITY(U,$J,358.3,1227,0)
- ;;=C24.1^^3^39^50
- ;;^UTILITY(U,$J,358.3,1227,1,0)
+ ;;^UTILITY(U,$J,358.3,1330,1,3,0)
+ ;;=3^Ototoxic hearing loss, right ear
+ ;;^UTILITY(U,$J,358.3,1330,1,4,0)
+ ;;=4^H91.01
+ ;;^UTILITY(U,$J,358.3,1330,2)
+ ;;=^5006928
+ ;;^UTILITY(U,$J,358.3,1331,0)
+ ;;=H91.13^^8^132^16
+ ;;^UTILITY(U,$J,358.3,1331,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1227,1,3,0)
- ;;=3^Malignant neoplasm of ampulla of Vater
- ;;^UTILITY(U,$J,358.3,1227,1,4,0)
- ;;=4^C24.1
- ;;^UTILITY(U,$J,358.3,1227,2)
- ;;=^267100
- ;;^UTILITY(U,$J,358.3,1228,0)
- ;;=C25.9^^3^39^70
- ;;^UTILITY(U,$J,358.3,1228,1,0)
+ ;;^UTILITY(U,$J,358.3,1331,1,3,0)
+ ;;=3^Presbycusis, bilateral
+ ;;^UTILITY(U,$J,358.3,1331,1,4,0)
+ ;;=4^H91.13
+ ;;^UTILITY(U,$J,358.3,1331,2)
+ ;;=^5006935
+ ;;^UTILITY(U,$J,358.3,1332,0)
+ ;;=H91.12^^8^132^17
+ ;;^UTILITY(U,$J,358.3,1332,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1228,1,3,0)
- ;;=3^Malignant neoplasm of pancreas, unspecified
- ;;^UTILITY(U,$J,358.3,1228,1,4,0)
- ;;=4^C25.9
- ;;^UTILITY(U,$J,358.3,1228,2)
- ;;=^5000946
- ;;^UTILITY(U,$J,358.3,1229,0)
- ;;=C31.9^^3^39^49
- ;;^UTILITY(U,$J,358.3,1229,1,0)
+ ;;^UTILITY(U,$J,358.3,1332,1,3,0)
+ ;;=3^Presbycusis, left ear
+ ;;^UTILITY(U,$J,358.3,1332,1,4,0)
+ ;;=4^H91.12
+ ;;^UTILITY(U,$J,358.3,1332,2)
+ ;;=^5006934
+ ;;^UTILITY(U,$J,358.3,1333,0)
+ ;;=H91.11^^8^132^18
+ ;;^UTILITY(U,$J,358.3,1333,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1229,1,3,0)
- ;;=3^Malignant neoplasm of accessory sinus, unspecified
- ;;^UTILITY(U,$J,358.3,1229,1,4,0)
- ;;=4^C31.9
- ;;^UTILITY(U,$J,358.3,1229,2)
- ;;=^5000953
- ;;^UTILITY(U,$J,358.3,1230,0)
- ;;=C32.9^^3^39^62
- ;;^UTILITY(U,$J,358.3,1230,1,0)
+ ;;^UTILITY(U,$J,358.3,1333,1,3,0)
+ ;;=3^Presbycusis, right ear
+ ;;^UTILITY(U,$J,358.3,1333,1,4,0)
+ ;;=4^H91.11
+ ;;^UTILITY(U,$J,358.3,1333,2)
+ ;;=^5006933
+ ;;^UTILITY(U,$J,358.3,1334,0)
+ ;;=H90.3^^8^132^19
+ ;;^UTILITY(U,$J,358.3,1334,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1230,1,3,0)
- ;;=3^Malignant neoplasm of larynx, unspecified
- ;;^UTILITY(U,$J,358.3,1230,1,4,0)
- ;;=4^C32.9
- ;;^UTILITY(U,$J,358.3,1230,2)
- ;;=^5000956
- ;;^UTILITY(U,$J,358.3,1231,0)
- ;;=C34.91^^3^39^82
- ;;^UTILITY(U,$J,358.3,1231,1,0)
+ ;;^UTILITY(U,$J,358.3,1334,1,3,0)
+ ;;=3^Sensorineural hearing loss, bilateral
+ ;;^UTILITY(U,$J,358.3,1334,1,4,0)
+ ;;=4^H90.3
+ ;;^UTILITY(U,$J,358.3,1334,2)
+ ;;=^335328
+ ;;^UTILITY(U,$J,358.3,1335,0)
+ ;;=H90.42^^8^132^20
+ ;;^UTILITY(U,$J,358.3,1335,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1231,1,3,0)
- ;;=3^Malignant neoplasm of unsp part of right bronchus or lung
- ;;^UTILITY(U,$J,358.3,1231,1,4,0)
- ;;=4^C34.91
- ;;^UTILITY(U,$J,358.3,1231,2)
- ;;=^5000967
- ;;^UTILITY(U,$J,358.3,1232,0)
- ;;=C34.92^^3^39^81
- ;;^UTILITY(U,$J,358.3,1232,1,0)
+ ;;^UTILITY(U,$J,358.3,1335,1,3,0)
+ ;;=3^Snsrnrl hear loss, uni, left ear, w unrestr hear cntra side
+ ;;^UTILITY(U,$J,358.3,1335,1,4,0)
+ ;;=4^H90.42
+ ;;^UTILITY(U,$J,358.3,1335,2)
+ ;;=^5006922
+ ;;^UTILITY(U,$J,358.3,1336,0)
+ ;;=H90.41^^8^132^21
+ ;;^UTILITY(U,$J,358.3,1336,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1232,1,3,0)
- ;;=3^Malignant neoplasm of unsp part of left bronchus or lung
- ;;^UTILITY(U,$J,358.3,1232,1,4,0)
- ;;=4^C34.92
- ;;^UTILITY(U,$J,358.3,1232,2)
- ;;=^5000968
- ;;^UTILITY(U,$J,358.3,1233,0)
- ;;=C38.4^^3^39^71
- ;;^UTILITY(U,$J,358.3,1233,1,0)
+ ;;^UTILITY(U,$J,358.3,1336,1,3,0)
+ ;;=3^Snsrnrl hear loss, uni, right ear, w unrestr hear cntra side
+ ;;^UTILITY(U,$J,358.3,1336,1,4,0)
+ ;;=4^H90.41
+ ;;^UTILITY(U,$J,358.3,1336,2)
+ ;;=^5006921
+ ;;^UTILITY(U,$J,358.3,1337,0)
+ ;;=H91.23^^8^132^22
+ ;;^UTILITY(U,$J,358.3,1337,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1233,1,3,0)
- ;;=3^Malignant neoplasm of pleura
- ;;^UTILITY(U,$J,358.3,1233,1,4,0)
- ;;=4^C38.4
- ;;^UTILITY(U,$J,358.3,1233,2)
- ;;=^267140
- ;;^UTILITY(U,$J,358.3,1234,0)
- ;;=C45.0^^3^39^86
- ;;^UTILITY(U,$J,358.3,1234,1,0)
+ ;;^UTILITY(U,$J,358.3,1337,1,3,0)
+ ;;=3^Sudden idiopathic hearing loss, bilateral
+ ;;^UTILITY(U,$J,358.3,1337,1,4,0)
+ ;;=4^H91.23
+ ;;^UTILITY(U,$J,358.3,1337,2)
+ ;;=^5006939
+ ;;^UTILITY(U,$J,358.3,1338,0)
+ ;;=H91.22^^8^132^23
+ ;;^UTILITY(U,$J,358.3,1338,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1234,1,3,0)
- ;;=3^Mesothelioma of pleura
- ;;^UTILITY(U,$J,358.3,1234,1,4,0)
- ;;=4^C45.0
- ;;^UTILITY(U,$J,358.3,1234,2)
- ;;=^5001095
- ;;^UTILITY(U,$J,358.3,1235,0)
- ;;=C49.9^^3^39^55
- ;;^UTILITY(U,$J,358.3,1235,1,0)
+ ;;^UTILITY(U,$J,358.3,1338,1,3,0)
+ ;;=3^Sudden idiopathic hearing loss, left ear
+ ;;^UTILITY(U,$J,358.3,1338,1,4,0)
+ ;;=4^H91.22
+ ;;^UTILITY(U,$J,358.3,1338,2)
+ ;;=^5006938
+ ;;^UTILITY(U,$J,358.3,1339,0)
+ ;;=H91.21^^8^132^24
+ ;;^UTILITY(U,$J,358.3,1339,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1235,1,3,0)
- ;;=3^Malignant neoplasm of connective and soft tissue, unsp
- ;;^UTILITY(U,$J,358.3,1235,1,4,0)
- ;;=4^C49.9
- ;;^UTILITY(U,$J,358.3,1235,2)
- ;;=^5001136
- ;;^UTILITY(U,$J,358.3,1236,0)
- ;;=C43.9^^3^39^48
- ;;^UTILITY(U,$J,358.3,1236,1,0)
+ ;;^UTILITY(U,$J,358.3,1339,1,3,0)
+ ;;=3^Sudden idiopathic hearing loss, right ear
+ ;;^UTILITY(U,$J,358.3,1339,1,4,0)
+ ;;=4^H91.21
+ ;;^UTILITY(U,$J,358.3,1339,2)
+ ;;=^5006937
+ ;;^UTILITY(U,$J,358.3,1340,0)
+ ;;=H91.93^^8^132^8
+ ;;^UTILITY(U,$J,358.3,1340,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1236,1,3,0)
- ;;=3^Malignant melanoma of skin, unspecified
- ;;^UTILITY(U,$J,358.3,1236,1,4,0)
- ;;=4^C43.9
- ;;^UTILITY(U,$J,358.3,1236,2)
- ;;=^5001015
- ;;^UTILITY(U,$J,358.3,1237,0)
- ;;=D03.9^^3^39^85
- ;;^UTILITY(U,$J,358.3,1237,1,0)
+ ;;^UTILITY(U,$J,358.3,1340,1,3,0)
+ ;;=3^Hearing Loss,Bilateral,Unspec
+ ;;^UTILITY(U,$J,358.3,1340,1,4,0)
+ ;;=4^H91.93
+ ;;^UTILITY(U,$J,358.3,1340,2)
+ ;;=^5006944
+ ;;^UTILITY(U,$J,358.3,1341,0)
+ ;;=H91.91^^8^132^12
+ ;;^UTILITY(U,$J,358.3,1341,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1237,1,3,0)
- ;;=3^Melanoma in situ, unspecified
- ;;^UTILITY(U,$J,358.3,1237,1,4,0)
- ;;=4^D03.9
- ;;^UTILITY(U,$J,358.3,1237,2)
- ;;=^5001908
- ;;^UTILITY(U,$J,358.3,1238,0)
- ;;=C50.911^^3^39^84
- ;;^UTILITY(U,$J,358.3,1238,1,0)
+ ;;^UTILITY(U,$J,358.3,1341,1,3,0)
+ ;;=3^Hearing Loss,Right Ear,Unspec
+ ;;^UTILITY(U,$J,358.3,1341,1,4,0)
+ ;;=4^H91.91
+ ;;^UTILITY(U,$J,358.3,1341,2)
+ ;;=^5133553
+ ;;^UTILITY(U,$J,358.3,1342,0)
+ ;;=H91.92^^8^132^10
+ ;;^UTILITY(U,$J,358.3,1342,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1238,1,3,0)
- ;;=3^Malignant neoplasm of unsp site of right female breast
- ;;^UTILITY(U,$J,358.3,1238,1,4,0)
- ;;=4^C50.911
- ;;^UTILITY(U,$J,358.3,1238,2)
- ;;=^5001195
- ;;^UTILITY(U,$J,358.3,1239,0)
- ;;=C50.912^^3^39^83
+ ;;^UTILITY(U,$J,358.3,1342,1,3,0)
+ ;;=3^Hearing Loss,Left Ear,Unspec
+ ;;^UTILITY(U,$J,358.3,1342,1,4,0)
+ ;;=4^H91.92
+ ;;^UTILITY(U,$J,358.3,1342,2)
+ ;;=^5133554
+ ;;^UTILITY(U,$J,358.3,1343,0)
+ ;;=H83.3X1^^8^133^3
+ ;;^UTILITY(U,$J,358.3,1343,1,0)
+ ;;=^358.31IA^4^2

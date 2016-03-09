@@ -1,126 +1,144 @@
-IBDEI01M ; ; 06-AUG-2015
+IBDEI01M ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,201,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, accidental, subs
- ;;^UTILITY(U,$J,358.3,201,1,4,0)
- ;;=4^T49.6X1D
- ;;^UTILITY(U,$J,358.3,201,2)
- ;;=^5051915
- ;;^UTILITY(U,$J,358.3,202,0)
- ;;=T49.6X1S^^1^10^56
- ;;^UTILITY(U,$J,358.3,202,1,0)
+ ;;^UTILITY(U,$J,358.3,258,1,4,0)
+ ;;=4^F50.2
+ ;;^UTILITY(U,$J,358.3,258,2)
+ ;;=^5003600
+ ;;^UTILITY(U,$J,358.3,259,0)
+ ;;=F50.8^^3^30^8
+ ;;^UTILITY(U,$J,358.3,259,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,202,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, accidental, sequela
- ;;^UTILITY(U,$J,358.3,202,1,4,0)
- ;;=4^T49.6X1S
- ;;^UTILITY(U,$J,358.3,202,2)
- ;;=^5051916
- ;;^UTILITY(U,$J,358.3,203,0)
- ;;=T49.6X3D^^1^10^64
- ;;^UTILITY(U,$J,358.3,203,1,0)
+ ;;^UTILITY(U,$J,358.3,259,1,3,0)
+ ;;=3^Pica,In Adults
+ ;;^UTILITY(U,$J,358.3,259,1,4,0)
+ ;;=4^F50.8
+ ;;^UTILITY(U,$J,358.3,259,2)
+ ;;=^5003601
+ ;;^UTILITY(U,$J,358.3,260,0)
+ ;;=Z55.9^^3^31^1
+ ;;^UTILITY(U,$J,358.3,260,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,203,1,3,0)
- ;;=3^Poisoning by otorhino drugs and preparations, assault, subs
- ;;^UTILITY(U,$J,358.3,203,1,4,0)
- ;;=4^T49.6X3D
- ;;^UTILITY(U,$J,358.3,203,2)
- ;;=^5051921
- ;;^UTILITY(U,$J,358.3,204,0)
- ;;=T49.6X3S^^1^10^57
- ;;^UTILITY(U,$J,358.3,204,1,0)
+ ;;^UTILITY(U,$J,358.3,260,1,3,0)
+ ;;=3^Acedemic/Educational Problem
+ ;;^UTILITY(U,$J,358.3,260,1,4,0)
+ ;;=4^Z55.9
+ ;;^UTILITY(U,$J,358.3,260,2)
+ ;;=^5063106
+ ;;^UTILITY(U,$J,358.3,261,0)
+ ;;=Z56.81^^3^31^9
+ ;;^UTILITY(U,$J,358.3,261,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,204,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, assault, sequela
- ;;^UTILITY(U,$J,358.3,204,1,4,0)
- ;;=4^T49.6X3S
- ;;^UTILITY(U,$J,358.3,204,2)
- ;;=^5051922
- ;;^UTILITY(U,$J,358.3,205,0)
- ;;=T49.6X2A^^1^10^58
- ;;^UTILITY(U,$J,358.3,205,1,0)
+ ;;^UTILITY(U,$J,358.3,261,1,3,0)
+ ;;=3^Sexual Harassment on the Job
+ ;;^UTILITY(U,$J,358.3,261,1,4,0)
+ ;;=4^Z56.81
+ ;;^UTILITY(U,$J,358.3,261,2)
+ ;;=^5063114
+ ;;^UTILITY(U,$J,358.3,262,0)
+ ;;=Z56.9^^3^31^8
+ ;;^UTILITY(U,$J,358.3,262,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,205,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, self-harm, init
- ;;^UTILITY(U,$J,358.3,205,1,4,0)
- ;;=4^T49.6X2A
- ;;^UTILITY(U,$J,358.3,205,2)
- ;;=^5051917
- ;;^UTILITY(U,$J,358.3,206,0)
- ;;=T49.6X2D^^1^10^59
- ;;^UTILITY(U,$J,358.3,206,1,0)
+ ;;^UTILITY(U,$J,358.3,262,1,3,0)
+ ;;=3^Problems Related to Employment NEC
+ ;;^UTILITY(U,$J,358.3,262,1,4,0)
+ ;;=4^Z56.9
+ ;;^UTILITY(U,$J,358.3,262,2)
+ ;;=^5063117
+ ;;^UTILITY(U,$J,358.3,263,0)
+ ;;=Z56.82^^3^31^6
+ ;;^UTILITY(U,$J,358.3,263,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,206,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, self-harm, subs
- ;;^UTILITY(U,$J,358.3,206,1,4,0)
- ;;=4^T49.6X2D
- ;;^UTILITY(U,$J,358.3,206,2)
- ;;=^5051918
- ;;^UTILITY(U,$J,358.3,207,0)
- ;;=T49.6X2S^^1^10^60
- ;;^UTILITY(U,$J,358.3,207,1,0)
+ ;;^UTILITY(U,$J,358.3,263,1,3,0)
+ ;;=3^Problems Related to Current Military Deployment Status
+ ;;^UTILITY(U,$J,358.3,263,1,4,0)
+ ;;=4^Z56.82
+ ;;^UTILITY(U,$J,358.3,263,2)
+ ;;=^5063115
+ ;;^UTILITY(U,$J,358.3,264,0)
+ ;;=Z56.0^^3^31^13
+ ;;^UTILITY(U,$J,358.3,264,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,207,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, self-harm, sequela
- ;;^UTILITY(U,$J,358.3,207,1,4,0)
- ;;=4^T49.6X2S
- ;;^UTILITY(U,$J,358.3,207,2)
- ;;=^5051919
- ;;^UTILITY(U,$J,358.3,208,0)
- ;;=T49.6X4A^^1^10^61
- ;;^UTILITY(U,$J,358.3,208,1,0)
+ ;;^UTILITY(U,$J,358.3,264,1,3,0)
+ ;;=3^Unemployeement,Unspec
+ ;;^UTILITY(U,$J,358.3,264,1,4,0)
+ ;;=4^Z56.0
+ ;;^UTILITY(U,$J,358.3,264,2)
+ ;;=^5063107
+ ;;^UTILITY(U,$J,358.3,265,0)
+ ;;=Z56.1^^3^31^2
+ ;;^UTILITY(U,$J,358.3,265,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,208,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, undetermined, init
- ;;^UTILITY(U,$J,358.3,208,1,4,0)
- ;;=4^T49.6X4A
- ;;^UTILITY(U,$J,358.3,208,2)
- ;;=^5051923
- ;;^UTILITY(U,$J,358.3,209,0)
- ;;=T49.6X4D^^1^10^62
- ;;^UTILITY(U,$J,358.3,209,1,0)
+ ;;^UTILITY(U,$J,358.3,265,1,3,0)
+ ;;=3^Change of Job
+ ;;^UTILITY(U,$J,358.3,265,1,4,0)
+ ;;=4^Z56.1
+ ;;^UTILITY(U,$J,358.3,265,2)
+ ;;=^5063108
+ ;;^UTILITY(U,$J,358.3,266,0)
+ ;;=Z56.2^^3^31^11
+ ;;^UTILITY(U,$J,358.3,266,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,209,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, undetermined, subs
- ;;^UTILITY(U,$J,358.3,209,1,4,0)
- ;;=4^T49.6X4D
- ;;^UTILITY(U,$J,358.3,209,2)
- ;;=^5051924
- ;;^UTILITY(U,$J,358.3,210,0)
- ;;=T49.6X4S^^1^10^63
- ;;^UTILITY(U,$J,358.3,210,1,0)
+ ;;^UTILITY(U,$J,358.3,266,1,3,0)
+ ;;=3^Threat of Job Loss
+ ;;^UTILITY(U,$J,358.3,266,1,4,0)
+ ;;=4^Z56.2
+ ;;^UTILITY(U,$J,358.3,266,2)
+ ;;=^5063109
+ ;;^UTILITY(U,$J,358.3,267,0)
+ ;;=Z56.3^^3^31^10
+ ;;^UTILITY(U,$J,358.3,267,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,210,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, undetermined, sequela
- ;;^UTILITY(U,$J,358.3,210,1,4,0)
- ;;=4^T49.6X4S
- ;;^UTILITY(U,$J,358.3,210,2)
- ;;=^5051925
- ;;^UTILITY(U,$J,358.3,211,0)
- ;;=T36.91XA^^1^10^65
- ;;^UTILITY(U,$J,358.3,211,1,0)
+ ;;^UTILITY(U,$J,358.3,267,1,3,0)
+ ;;=3^Stressful Work Schedule
+ ;;^UTILITY(U,$J,358.3,267,1,4,0)
+ ;;=4^Z56.3
+ ;;^UTILITY(U,$J,358.3,267,2)
+ ;;=^5063110
+ ;;^UTILITY(U,$J,358.3,268,0)
+ ;;=Z56.4^^3^31^3
+ ;;^UTILITY(U,$J,358.3,268,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,211,1,3,0)
- ;;=3^Poisoning by unsp systemic antibiotic, accidental, init
- ;;^UTILITY(U,$J,358.3,211,1,4,0)
- ;;=4^T36.91XA
- ;;^UTILITY(U,$J,358.3,211,2)
- ;;=^5049418
- ;;^UTILITY(U,$J,358.3,212,0)
- ;;=T36.91XD^^1^10^66
- ;;^UTILITY(U,$J,358.3,212,1,0)
+ ;;^UTILITY(U,$J,358.3,268,1,3,0)
+ ;;=3^Discord w/ Boss & Workmates
+ ;;^UTILITY(U,$J,358.3,268,1,4,0)
+ ;;=4^Z56.4
+ ;;^UTILITY(U,$J,358.3,268,2)
+ ;;=^5063111
+ ;;^UTILITY(U,$J,358.3,269,0)
+ ;;=Z56.5^^3^31^12
+ ;;^UTILITY(U,$J,358.3,269,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,212,1,3,0)
- ;;=3^Poisoning by unsp systemic antibiotic, accidental, subs
- ;;^UTILITY(U,$J,358.3,212,1,4,0)
- ;;=4^T36.91XD
- ;;^UTILITY(U,$J,358.3,212,2)
- ;;=^5049419
- ;;^UTILITY(U,$J,358.3,213,0)
- ;;=T36.91XS^^1^10^67
- ;;^UTILITY(U,$J,358.3,213,1,0)
+ ;;^UTILITY(U,$J,358.3,269,1,3,0)
+ ;;=3^Uncongenial Work Environment
+ ;;^UTILITY(U,$J,358.3,269,1,4,0)
+ ;;=4^Z56.5
+ ;;^UTILITY(U,$J,358.3,269,2)
+ ;;=^5063112
+ ;;^UTILITY(U,$J,358.3,270,0)
+ ;;=Z56.6^^3^31^5
+ ;;^UTILITY(U,$J,358.3,270,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,213,1,3,0)
- ;;=3^Poisoning by unsp systemic antibiotic, accidental, sequela
+ ;;^UTILITY(U,$J,358.3,270,1,3,0)
+ ;;=3^Physical & Mental Strain Related to Work NEC
+ ;;^UTILITY(U,$J,358.3,270,1,4,0)
+ ;;=4^Z56.6
+ ;;^UTILITY(U,$J,358.3,270,2)
+ ;;=^5063113
+ ;;^UTILITY(U,$J,358.3,271,0)
+ ;;=Z56.82^^3^31^4
+ ;;^UTILITY(U,$J,358.3,271,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,271,1,3,0)
+ ;;=3^Military Deployment Status
+ ;;^UTILITY(U,$J,358.3,271,1,4,0)
+ ;;=4^Z56.82
+ ;;^UTILITY(U,$J,358.3,271,2)
+ ;;=^5063115
+ ;;^UTILITY(U,$J,358.3,272,0)
+ ;;=Z56.89^^3^31^7
+ ;;^UTILITY(U,$J,358.3,272,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,272,1,3,0)
+ ;;=3^Problems Related to Employment,Other

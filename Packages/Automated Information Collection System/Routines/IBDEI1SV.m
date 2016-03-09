@@ -1,124 +1,124 @@
-IBDEI1SV ; ; 06-AUG-2015
+IBDEI1SV ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31743,1,4,0)
- ;;=4^S02.402A
- ;;^UTILITY(U,$J,358.3,31743,2)
- ;;=^5020330
- ;;^UTILITY(U,$J,358.3,31744,0)
- ;;=S02.609A^^181^1967^7
- ;;^UTILITY(U,$J,358.3,31744,1,0)
+ ;;^UTILITY(U,$J,358.3,30590,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31744,1,3,0)
- ;;=3^Fracture of mandible, unsp, init encntr for closed fracture
- ;;^UTILITY(U,$J,358.3,31744,1,4,0)
- ;;=4^S02.609A
- ;;^UTILITY(U,$J,358.3,31744,2)
- ;;=^5020372
- ;;^UTILITY(U,$J,358.3,31745,0)
- ;;=S02.69XA^^181^1967^6
- ;;^UTILITY(U,$J,358.3,31745,1,0)
+ ;;^UTILITY(U,$J,358.3,30590,1,3,0)
+ ;;=3^Digital Nerve Injury,Left Index Finger,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30590,1,4,0)
+ ;;=4^S64.491A
+ ;;^UTILITY(U,$J,358.3,30590,2)
+ ;;=^5035802
+ ;;^UTILITY(U,$J,358.3,30591,0)
+ ;;=S64.492A^^121^1521^14
+ ;;^UTILITY(U,$J,358.3,30591,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31745,1,3,0)
- ;;=3^Fracture of mandible of oth site, init for clos fx
- ;;^UTILITY(U,$J,358.3,31745,1,4,0)
- ;;=4^S02.69XA
- ;;^UTILITY(U,$J,358.3,31745,2)
- ;;=^5020420
- ;;^UTILITY(U,$J,358.3,31746,0)
- ;;=S02.8XXA^^181^1967^11
- ;;^UTILITY(U,$J,358.3,31746,1,0)
+ ;;^UTILITY(U,$J,358.3,30591,1,3,0)
+ ;;=3^Digital Nerve Injury,Right Middle Finger,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30591,1,4,0)
+ ;;=4^S64.492A
+ ;;^UTILITY(U,$J,358.3,30591,2)
+ ;;=^5035805
+ ;;^UTILITY(U,$J,358.3,30592,0)
+ ;;=S64.493A^^121^1521^9
+ ;;^UTILITY(U,$J,358.3,30592,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31746,1,3,0)
- ;;=3^Fracture of oth skull and facial bones, init for clos fx
- ;;^UTILITY(U,$J,358.3,31746,1,4,0)
- ;;=4^S02.8XXA
- ;;^UTILITY(U,$J,358.3,31746,2)
- ;;=^5020426
- ;;^UTILITY(U,$J,358.3,31747,0)
- ;;=S02.91XA^^181^1967^12
- ;;^UTILITY(U,$J,358.3,31747,1,0)
+ ;;^UTILITY(U,$J,358.3,30592,1,3,0)
+ ;;=3^Digital Nerve Injury,Left Middle Finger,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30592,1,4,0)
+ ;;=4^S64.493A
+ ;;^UTILITY(U,$J,358.3,30592,2)
+ ;;=^5035808
+ ;;^UTILITY(U,$J,358.3,30593,0)
+ ;;=S64.494A^^121^1521^15
+ ;;^UTILITY(U,$J,358.3,30593,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31747,1,3,0)
- ;;=3^Fracture of skull unspec, init encntr for closed fracture
- ;;^UTILITY(U,$J,358.3,31747,1,4,0)
- ;;=4^S02.91XA
- ;;^UTILITY(U,$J,358.3,31747,2)
- ;;=^5020432
- ;;^UTILITY(U,$J,358.3,31748,0)
- ;;=S02.92XA^^181^1967^4
- ;;^UTILITY(U,$J,358.3,31748,1,0)
+ ;;^UTILITY(U,$J,358.3,30593,1,3,0)
+ ;;=3^Digital Nerve Injury,Right Ring Finger,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30593,1,4,0)
+ ;;=4^S64.494A
+ ;;^UTILITY(U,$J,358.3,30593,2)
+ ;;=^5035811
+ ;;^UTILITY(U,$J,358.3,30594,0)
+ ;;=S64.495A^^121^1521^10
+ ;;^UTILITY(U,$J,358.3,30594,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31748,1,3,0)
- ;;=3^Fracture of facial bones unspec, init for clos fx
- ;;^UTILITY(U,$J,358.3,31748,1,4,0)
- ;;=4^S02.92XA
- ;;^UTILITY(U,$J,358.3,31748,2)
- ;;=^5020438
- ;;^UTILITY(U,$J,358.3,31749,0)
- ;;=S02.0XXB^^181^1967^15
- ;;^UTILITY(U,$J,358.3,31749,1,0)
+ ;;^UTILITY(U,$J,358.3,30594,1,3,0)
+ ;;=3^Digital Nerve Injury,Left Ring Finger,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30594,1,4,0)
+ ;;=4^S64.495A
+ ;;^UTILITY(U,$J,358.3,30594,2)
+ ;;=^5035814
+ ;;^UTILITY(U,$J,358.3,30595,0)
+ ;;=S64.496A^^121^1521^13
+ ;;^UTILITY(U,$J,358.3,30595,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31749,1,3,0)
- ;;=3^Fracture of vault of skull, init encntr for open fracture
- ;;^UTILITY(U,$J,358.3,31749,1,4,0)
- ;;=4^S02.0XXB
- ;;^UTILITY(U,$J,358.3,31749,2)
- ;;=^5020253
- ;;^UTILITY(U,$J,358.3,31750,0)
- ;;=S02.2XXB^^181^1967^9
- ;;^UTILITY(U,$J,358.3,31750,1,0)
+ ;;^UTILITY(U,$J,358.3,30595,1,3,0)
+ ;;=3^Digital Nerve Injury,Right Little Finger,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30595,1,4,0)
+ ;;=4^S64.496A
+ ;;^UTILITY(U,$J,358.3,30595,2)
+ ;;=^5035817
+ ;;^UTILITY(U,$J,358.3,30596,0)
+ ;;=S64.497A^^121^1521^8
+ ;;^UTILITY(U,$J,358.3,30596,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31750,1,3,0)
- ;;=3^Fracture of nasal bones, initial encounter for open fracture
- ;;^UTILITY(U,$J,358.3,31750,1,4,0)
- ;;=4^S02.2XXB
- ;;^UTILITY(U,$J,358.3,31750,2)
- ;;=^5020307
- ;;^UTILITY(U,$J,358.3,31751,0)
- ;;=S02.402B^^181^1967^22
- ;;^UTILITY(U,$J,358.3,31751,1,0)
+ ;;^UTILITY(U,$J,358.3,30596,1,3,0)
+ ;;=3^Digital Nerve Injury,Left Little Finger,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30596,1,4,0)
+ ;;=4^S64.497A
+ ;;^UTILITY(U,$J,358.3,30596,2)
+ ;;=^5035820
+ ;;^UTILITY(U,$J,358.3,30597,0)
+ ;;=S44.91XA^^121^1521^34
+ ;;^UTILITY(U,$J,358.3,30597,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31751,1,3,0)
- ;;=3^Zygomatic fracture, unsp, init encntr for open fracture
- ;;^UTILITY(U,$J,358.3,31751,1,4,0)
- ;;=4^S02.402B
- ;;^UTILITY(U,$J,358.3,31751,2)
- ;;=^5020331
- ;;^UTILITY(U,$J,358.3,31752,0)
- ;;=S02.91XB^^181^1967^13
- ;;^UTILITY(U,$J,358.3,31752,1,0)
+ ;;^UTILITY(U,$J,358.3,30597,1,3,0)
+ ;;=3^Nerve Injury Unspec,Right Shldr/Upper Arm,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30597,1,4,0)
+ ;;=4^S44.91XA
+ ;;^UTILITY(U,$J,358.3,30597,2)
+ ;;=^5134801
+ ;;^UTILITY(U,$J,358.3,30598,0)
+ ;;=S44.92XA^^121^1521^33
+ ;;^UTILITY(U,$J,358.3,30598,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31752,1,3,0)
- ;;=3^Fracture of skull unspec, init encntr for open fracture
- ;;^UTILITY(U,$J,358.3,31752,1,4,0)
- ;;=4^S02.91XB
- ;;^UTILITY(U,$J,358.3,31752,2)
- ;;=^5020433
- ;;^UTILITY(U,$J,358.3,31753,0)
- ;;=S02.0XXD^^181^1967^17
- ;;^UTILITY(U,$J,358.3,31753,1,0)
+ ;;^UTILITY(U,$J,358.3,30598,1,3,0)
+ ;;=3^Nerve Injury Unspec,Left Shldr/Upper Arm, Init Encnt
+ ;;^UTILITY(U,$J,358.3,30598,1,4,0)
+ ;;=4^S44.92XA
+ ;;^UTILITY(U,$J,358.3,30598,2)
+ ;;=^5134802
+ ;;^UTILITY(U,$J,358.3,30599,0)
+ ;;=S94.8X1A^^121^1521^38
+ ;;^UTILITY(U,$J,358.3,30599,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31753,1,3,0)
- ;;=3^Fracture of vault of skull, subs for fx w routn heal
- ;;^UTILITY(U,$J,358.3,31753,1,4,0)
- ;;=4^S02.0XXD
- ;;^UTILITY(U,$J,358.3,31753,2)
- ;;=^5020254
- ;;^UTILITY(U,$J,358.3,31754,0)
- ;;=S02.10XD^^181^1967^3
- ;;^UTILITY(U,$J,358.3,31754,1,0)
+ ;;^UTILITY(U,$J,358.3,30599,1,3,0)
+ ;;=3^Nerve Injury,Right Ankle & Foot,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30599,1,4,0)
+ ;;=4^S94.8X1A
+ ;;^UTILITY(U,$J,358.3,30599,2)
+ ;;=^5045930
+ ;;^UTILITY(U,$J,358.3,30600,0)
+ ;;=S94.8X2A^^121^1521^35
+ ;;^UTILITY(U,$J,358.3,30600,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31754,1,3,0)
- ;;=3^Fracture of base of skull unspec, subs for fx w routn heal
- ;;^UTILITY(U,$J,358.3,31754,1,4,0)
- ;;=4^S02.10XD
- ;;^UTILITY(U,$J,358.3,31754,2)
- ;;=^5020260
- ;;^UTILITY(U,$J,358.3,31755,0)
- ;;=S02.0XXS^^181^1967^16
- ;;^UTILITY(U,$J,358.3,31755,1,0)
+ ;;^UTILITY(U,$J,358.3,30600,1,3,0)
+ ;;=3^Nerve Injury,Left Ankle & Foot,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30600,1,4,0)
+ ;;=4^S94.8X2A
+ ;;^UTILITY(U,$J,358.3,30600,2)
+ ;;=^5045933
+ ;;^UTILITY(U,$J,358.3,30601,0)
+ ;;=S74.91XA^^121^1521^39
+ ;;^UTILITY(U,$J,358.3,30601,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31755,1,3,0)
- ;;=3^Fracture of vault of skull, sequela
+ ;;^UTILITY(U,$J,358.3,30601,1,3,0)
+ ;;=3^Nerve Injury,Right Hip & Thigh,Init Encnt
+ ;;^UTILITY(U,$J,358.3,30601,1,4,0)
+ ;;=4^S74.91XA
+ ;;^UTILITY(U,$J,358.3,30601,2)
+ ;;=^5136509
+ ;;^UTILITY(U,$J,358.3,30602,0)
+ ;;=S74.92XA^^121^1521^36

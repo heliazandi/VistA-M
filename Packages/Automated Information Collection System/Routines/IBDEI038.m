@@ -1,142 +1,138 @@
-IBDEI038 ; ; 06-AUG-2015
+IBDEI038 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,969,1,4,0)
- ;;=4^J32.1
- ;;^UTILITY(U,$J,358.3,969,2)
- ;;=^24380
- ;;^UTILITY(U,$J,358.3,970,0)
- ;;=J32.9^^3^35^49
- ;;^UTILITY(U,$J,358.3,970,1,0)
+ ;;^UTILITY(U,$J,358.3,1062,0)
+ ;;=S23.9XXA^^6^111^18
+ ;;^UTILITY(U,$J,358.3,1062,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,970,1,3,0)
- ;;=3^Chronic sinusitis, unspecified
- ;;^UTILITY(U,$J,358.3,970,1,4,0)
+ ;;^UTILITY(U,$J,358.3,1062,1,3,0)
+ ;;=3^Sprain Thorax,Unspec Part,Initial Encounter
+ ;;^UTILITY(U,$J,358.3,1062,1,4,0)
+ ;;=4^S23.9XXA
+ ;;^UTILITY(U,$J,358.3,1062,2)
+ ;;=^5023267
+ ;;^UTILITY(U,$J,358.3,1063,0)
+ ;;=I69.928^^6^111^13
+ ;;^UTILITY(U,$J,358.3,1063,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1063,1,3,0)
+ ;;=3^Speech/Lang Deficits Following Unspec Cerebrovascular Disease
+ ;;^UTILITY(U,$J,358.3,1063,1,4,0)
+ ;;=4^I69.928
+ ;;^UTILITY(U,$J,358.3,1063,2)
+ ;;=^5007557
+ ;;^UTILITY(U,$J,358.3,1064,0)
+ ;;=S13.4XXA^^6^111^17
+ ;;^UTILITY(U,$J,358.3,1064,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1064,1,3,0)
+ ;;=3^Sprain Ligaments Cervical Spine,Initial Encounter
+ ;;^UTILITY(U,$J,358.3,1064,1,4,0)
+ ;;=4^S13.4XXA
+ ;;^UTILITY(U,$J,358.3,1064,2)
+ ;;=^5022028
+ ;;^UTILITY(U,$J,358.3,1065,0)
+ ;;=M15.3^^6^111^5
+ ;;^UTILITY(U,$J,358.3,1065,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1065,1,3,0)
+ ;;=3^Secondary Multiple Arthritis
+ ;;^UTILITY(U,$J,358.3,1065,1,4,0)
+ ;;=4^M15.3
+ ;;^UTILITY(U,$J,358.3,1065,2)
+ ;;=^5010765
+ ;;^UTILITY(U,$J,358.3,1066,0)
+ ;;=L08.9^^6^111^9
+ ;;^UTILITY(U,$J,358.3,1066,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1066,1,3,0)
+ ;;=3^Skin Infection,Unspec
+ ;;^UTILITY(U,$J,358.3,1066,1,4,0)
+ ;;=4^L08.9
+ ;;^UTILITY(U,$J,358.3,1066,2)
+ ;;=^5009082
+ ;;^UTILITY(U,$J,358.3,1067,0)
+ ;;=L98.9^^6^111^10
+ ;;^UTILITY(U,$J,358.3,1067,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1067,1,3,0)
+ ;;=3^Skin/Subcutaneous Tissue Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,1067,1,4,0)
+ ;;=4^L98.9
+ ;;^UTILITY(U,$J,358.3,1067,2)
+ ;;=^5009595
+ ;;^UTILITY(U,$J,358.3,1068,0)
+ ;;=M48.06^^6^111^14
+ ;;^UTILITY(U,$J,358.3,1068,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1068,1,3,0)
+ ;;=3^Spinal Stenosis,Lumbar Region
+ ;;^UTILITY(U,$J,358.3,1068,1,4,0)
+ ;;=4^M48.06
+ ;;^UTILITY(U,$J,358.3,1068,2)
+ ;;=^5012093
+ ;;^UTILITY(U,$J,358.3,1069,0)
+ ;;=R22.2^^6^111^19
+ ;;^UTILITY(U,$J,358.3,1069,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1069,1,3,0)
+ ;;=3^Swelling,Mass & Lump,Trunk
+ ;;^UTILITY(U,$J,358.3,1069,1,4,0)
+ ;;=4^R22.2
+ ;;^UTILITY(U,$J,358.3,1069,2)
+ ;;=^5019286
+ ;;^UTILITY(U,$J,358.3,1070,0)
+ ;;=M54.31^^6^111^3
+ ;;^UTILITY(U,$J,358.3,1070,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1070,1,3,0)
+ ;;=3^Sciatica,Right Side
+ ;;^UTILITY(U,$J,358.3,1070,1,4,0)
+ ;;=4^M54.31
+ ;;^UTILITY(U,$J,358.3,1070,2)
+ ;;=^5012306
+ ;;^UTILITY(U,$J,358.3,1071,0)
+ ;;=M54.32^^6^111^2
+ ;;^UTILITY(U,$J,358.3,1071,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1071,1,3,0)
+ ;;=3^Sciatica,Left Side
+ ;;^UTILITY(U,$J,358.3,1071,1,4,0)
+ ;;=4^M54.32
+ ;;^UTILITY(U,$J,358.3,1071,2)
+ ;;=^5012307
+ ;;^UTILITY(U,$J,358.3,1072,0)
+ ;;=F20.5^^6^111^1
+ ;;^UTILITY(U,$J,358.3,1072,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1072,1,3,0)
+ ;;=3^Schizophrenia,Residual
+ ;;^UTILITY(U,$J,358.3,1072,1,4,0)
+ ;;=4^F20.5
+ ;;^UTILITY(U,$J,358.3,1072,2)
+ ;;=^5003473
+ ;;^UTILITY(U,$J,358.3,1073,0)
+ ;;=J01.90^^6^111^7
+ ;;^UTILITY(U,$J,358.3,1073,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1073,1,3,0)
+ ;;=3^Sinusitis Acute,Unspec
+ ;;^UTILITY(U,$J,358.3,1073,1,4,0)
+ ;;=4^J01.90
+ ;;^UTILITY(U,$J,358.3,1073,2)
+ ;;=^5008127
+ ;;^UTILITY(U,$J,358.3,1074,0)
+ ;;=J32.9^^6^111^8
+ ;;^UTILITY(U,$J,358.3,1074,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1074,1,3,0)
+ ;;=3^Sinusitis,Chronic Unspec
+ ;;^UTILITY(U,$J,358.3,1074,1,4,0)
  ;;=4^J32.9
- ;;^UTILITY(U,$J,358.3,970,2)
+ ;;^UTILITY(U,$J,358.3,1074,2)
  ;;=^5008207
- ;;^UTILITY(U,$J,358.3,971,0)
- ;;=J35.01^^3^35^50
- ;;^UTILITY(U,$J,358.3,971,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,971,1,3,0)
- ;;=3^Chronic tonsillitis
- ;;^UTILITY(U,$J,358.3,971,1,4,0)
- ;;=4^J35.01
- ;;^UTILITY(U,$J,358.3,971,2)
- ;;=^259089
- ;;^UTILITY(U,$J,358.3,972,0)
- ;;=J35.3^^3^35^82
- ;;^UTILITY(U,$J,358.3,972,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,972,1,3,0)
- ;;=3^Hypertrophy of tonsils with hypertrophy of adenoids
- ;;^UTILITY(U,$J,358.3,972,1,4,0)
- ;;=4^J35.3
- ;;^UTILITY(U,$J,358.3,972,2)
- ;;=^5008216
- ;;^UTILITY(U,$J,358.3,973,0)
- ;;=J35.1^^3^35^81
- ;;^UTILITY(U,$J,358.3,973,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,973,1,3,0)
- ;;=3^Hypertrophy of tonsils
- ;;^UTILITY(U,$J,358.3,973,1,4,0)
- ;;=4^J35.1
- ;;^UTILITY(U,$J,358.3,973,2)
- ;;=^5008214
- ;;^UTILITY(U,$J,358.3,974,0)
- ;;=J35.2^^3^35^80
- ;;^UTILITY(U,$J,358.3,974,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,974,1,3,0)
- ;;=3^Hypertrophy of adenoids
- ;;^UTILITY(U,$J,358.3,974,1,4,0)
- ;;=4^J35.2
- ;;^UTILITY(U,$J,358.3,974,2)
- ;;=^5008215
- ;;^UTILITY(U,$J,358.3,975,0)
- ;;=J35.9^^3^35^40
- ;;^UTILITY(U,$J,358.3,975,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,975,1,3,0)
- ;;=3^Chronic disease of tonsils and adenoids, unspecified
- ;;^UTILITY(U,$J,358.3,975,1,4,0)
- ;;=4^J35.9
- ;;^UTILITY(U,$J,358.3,975,2)
- ;;=^5008218
- ;;^UTILITY(U,$J,358.3,976,0)
- ;;=J36.^^3^35^110
- ;;^UTILITY(U,$J,358.3,976,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,976,1,3,0)
- ;;=3^Peritonsillar abscess
- ;;^UTILITY(U,$J,358.3,976,1,4,0)
- ;;=4^J36.
- ;;^UTILITY(U,$J,358.3,976,2)
- ;;=^92333
- ;;^UTILITY(U,$J,358.3,977,0)
- ;;=J37.0^^3^35^43
- ;;^UTILITY(U,$J,358.3,977,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,977,1,3,0)
- ;;=3^Chronic laryngitis
- ;;^UTILITY(U,$J,358.3,977,1,4,0)
- ;;=4^J37.0
- ;;^UTILITY(U,$J,358.3,977,2)
- ;;=^269902
- ;;^UTILITY(U,$J,358.3,978,0)
- ;;=J30.81^^3^35^20
- ;;^UTILITY(U,$J,358.3,978,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,978,1,3,0)
- ;;=3^Allergic rhinitis due to animal (cat) (dog) hair and dander
- ;;^UTILITY(U,$J,358.3,978,1,4,0)
- ;;=4^J30.81
- ;;^UTILITY(U,$J,358.3,978,2)
- ;;=^5008203
- ;;^UTILITY(U,$J,358.3,979,0)
- ;;=J30.9^^3^35^21
- ;;^UTILITY(U,$J,358.3,979,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,979,1,3,0)
- ;;=3^Allergic rhinitis, unspecified
- ;;^UTILITY(U,$J,358.3,979,1,4,0)
- ;;=4^J30.9
- ;;^UTILITY(U,$J,358.3,979,2)
- ;;=^5008205
- ;;^UTILITY(U,$J,358.3,980,0)
- ;;=J34.81^^3^35^95
- ;;^UTILITY(U,$J,358.3,980,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,980,1,3,0)
- ;;=3^Nasal mucositis (ulcerative)
- ;;^UTILITY(U,$J,358.3,980,1,4,0)
- ;;=4^J34.81
- ;;^UTILITY(U,$J,358.3,980,2)
- ;;=^334089
- ;;^UTILITY(U,$J,358.3,981,0)
- ;;=J34.0^^3^35^1
- ;;^UTILITY(U,$J,358.3,981,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,981,1,3,0)
- ;;=3^Abscess, furuncle and carbuncle of nose
- ;;^UTILITY(U,$J,358.3,981,1,4,0)
- ;;=4^J34.0
- ;;^UTILITY(U,$J,358.3,981,2)
- ;;=^5008209
- ;;^UTILITY(U,$J,358.3,982,0)
- ;;=J34.1^^3^35^56
- ;;^UTILITY(U,$J,358.3,982,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,982,1,3,0)
- ;;=3^Cyst and mucocele of nose and nasal sinus
- ;;^UTILITY(U,$J,358.3,982,1,4,0)
- ;;=4^J34.1
- ;;^UTILITY(U,$J,358.3,982,2)
- ;;=^5008210
- ;;^UTILITY(U,$J,358.3,983,0)
- ;;=J38.00^^3^35^108
- ;;^UTILITY(U,$J,358.3,983,1,0)
+ ;;^UTILITY(U,$J,358.3,1075,0)
+ ;;=L72.3^^6^111^4
+ ;;^UTILITY(U,$J,358.3,1075,1,0)
  ;;=^358.31IA^4^2

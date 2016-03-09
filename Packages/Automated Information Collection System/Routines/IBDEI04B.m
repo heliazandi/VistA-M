@@ -1,138 +1,134 @@
-IBDEI04B ; ; 06-AUG-2015
+IBDEI04B ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1489,2)
- ;;=^5008367
- ;;^UTILITY(U,$J,358.3,1490,0)
- ;;=K76.81^^3^43^10
- ;;^UTILITY(U,$J,358.3,1490,1,0)
+ ;;^UTILITY(U,$J,358.3,1592,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1490,1,3,0)
- ;;=3^Hepatopulmonary syndrome
- ;;^UTILITY(U,$J,358.3,1490,1,4,0)
- ;;=4^K76.81
- ;;^UTILITY(U,$J,358.3,1490,2)
- ;;=^340555
- ;;^UTILITY(U,$J,358.3,1491,0)
- ;;=Z77.090^^3^43^6
- ;;^UTILITY(U,$J,358.3,1491,1,0)
+ ;;^UTILITY(U,$J,358.3,1592,1,3,0)
+ ;;=3^Complication of Vein Following Procedure NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1592,1,4,0)
+ ;;=4^T81.72XA
+ ;;^UTILITY(U,$J,358.3,1592,2)
+ ;;=^5054650
+ ;;^UTILITY(U,$J,358.3,1593,0)
+ ;;=T82.817A^^11^145^20
+ ;;^UTILITY(U,$J,358.3,1593,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1491,1,3,0)
- ;;=3^Contact with and (suspected) exposure to asbestos
- ;;^UTILITY(U,$J,358.3,1491,1,4,0)
- ;;=4^Z77.090
- ;;^UTILITY(U,$J,358.3,1491,2)
- ;;=^5063312
- ;;^UTILITY(U,$J,358.3,1492,0)
- ;;=F03.90^^3^44^11
- ;;^UTILITY(U,$J,358.3,1492,1,0)
+ ;;^UTILITY(U,$J,358.3,1593,1,3,0)
+ ;;=3^Embolism of Cardiac Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1593,1,4,0)
+ ;;=4^T82.817A
+ ;;^UTILITY(U,$J,358.3,1593,2)
+ ;;=^5054914
+ ;;^UTILITY(U,$J,358.3,1594,0)
+ ;;=T82.818A^^11^145^21
+ ;;^UTILITY(U,$J,358.3,1594,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1492,1,3,0)
- ;;=3^Dementia w/o Behavioral Disturbance,Unspec
- ;;^UTILITY(U,$J,358.3,1492,1,4,0)
- ;;=4^F03.90
- ;;^UTILITY(U,$J,358.3,1492,2)
- ;;=^5003050
- ;;^UTILITY(U,$J,358.3,1493,0)
- ;;=F02.80^^3^44^9
- ;;^UTILITY(U,$J,358.3,1493,1,0)
+ ;;^UTILITY(U,$J,358.3,1594,1,3,0)
+ ;;=3^Embolism of Vascular Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,1594,1,4,0)
+ ;;=4^T82.818A
+ ;;^UTILITY(U,$J,358.3,1594,2)
+ ;;=^5054917
+ ;;^UTILITY(U,$J,358.3,1595,0)
+ ;;=I26.99^^11^145^49
+ ;;^UTILITY(U,$J,358.3,1595,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1493,1,3,0)
- ;;=3^Dementia in oth diseases classd elswhr w/o behavrl disturb
- ;;^UTILITY(U,$J,358.3,1493,1,4,0)
- ;;=4^F02.80
- ;;^UTILITY(U,$J,358.3,1493,2)
- ;;=^5003048
- ;;^UTILITY(U,$J,358.3,1494,0)
- ;;=F02.81^^3^44^10
- ;;^UTILITY(U,$J,358.3,1494,1,0)
+ ;;^UTILITY(U,$J,358.3,1595,1,3,0)
+ ;;=3^Pulmonary Embolism w/o Acute Cor Pulmonale NEC
+ ;;^UTILITY(U,$J,358.3,1595,1,4,0)
+ ;;=4^I26.99
+ ;;^UTILITY(U,$J,358.3,1595,2)
+ ;;=^5007150
+ ;;^UTILITY(U,$J,358.3,1596,0)
+ ;;=I27.0^^11^145^46
+ ;;^UTILITY(U,$J,358.3,1596,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1494,1,3,0)
- ;;=3^Dementia in oth diseases classd elswhr w behavioral disturb
- ;;^UTILITY(U,$J,358.3,1494,1,4,0)
- ;;=4^F02.81
- ;;^UTILITY(U,$J,358.3,1494,2)
- ;;=^5003049
- ;;^UTILITY(U,$J,358.3,1495,0)
- ;;=F20.9^^3^44^25
- ;;^UTILITY(U,$J,358.3,1495,1,0)
+ ;;^UTILITY(U,$J,358.3,1596,1,3,0)
+ ;;=3^Primary Pulmonary Hypertension
+ ;;^UTILITY(U,$J,358.3,1596,1,4,0)
+ ;;=4^I27.0
+ ;;^UTILITY(U,$J,358.3,1596,2)
+ ;;=^265310
+ ;;^UTILITY(U,$J,358.3,1597,0)
+ ;;=I27.1^^11^145^32
+ ;;^UTILITY(U,$J,358.3,1597,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1495,1,3,0)
- ;;=3^Schizophrenia, unspecified
- ;;^UTILITY(U,$J,358.3,1495,1,4,0)
- ;;=4^F20.9
- ;;^UTILITY(U,$J,358.3,1495,2)
- ;;=^5003476
- ;;^UTILITY(U,$J,358.3,1496,0)
- ;;=F31.9^^3^44^7
- ;;^UTILITY(U,$J,358.3,1496,1,0)
+ ;;^UTILITY(U,$J,358.3,1597,1,3,0)
+ ;;=3^Kyphoscoliotic Hrt Disease
+ ;;^UTILITY(U,$J,358.3,1597,1,4,0)
+ ;;=4^I27.1
+ ;;^UTILITY(U,$J,358.3,1597,2)
+ ;;=^265120
+ ;;^UTILITY(U,$J,358.3,1598,0)
+ ;;=I27.2^^11^145^52
+ ;;^UTILITY(U,$J,358.3,1598,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1496,1,3,0)
- ;;=3^Bipolar disorder, unspecified
- ;;^UTILITY(U,$J,358.3,1496,1,4,0)
- ;;=4^F31.9
- ;;^UTILITY(U,$J,358.3,1496,2)
- ;;=^331892
- ;;^UTILITY(U,$J,358.3,1497,0)
- ;;=F41.9^^3^44^6
- ;;^UTILITY(U,$J,358.3,1497,1,0)
+ ;;^UTILITY(U,$J,358.3,1598,1,3,0)
+ ;;=3^Secondary Pulmonary Hypertension NEC
+ ;;^UTILITY(U,$J,358.3,1598,1,4,0)
+ ;;=4^I27.2
+ ;;^UTILITY(U,$J,358.3,1598,2)
+ ;;=^5007151
+ ;;^UTILITY(U,$J,358.3,1599,0)
+ ;;=I27.89^^11^145^50
+ ;;^UTILITY(U,$J,358.3,1599,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1497,1,3,0)
- ;;=3^Anxiety disorder, unspecified
- ;;^UTILITY(U,$J,358.3,1497,1,4,0)
- ;;=4^F41.9
- ;;^UTILITY(U,$J,358.3,1497,2)
- ;;=^5003567
- ;;^UTILITY(U,$J,358.3,1498,0)
- ;;=F42.^^3^44^17
- ;;^UTILITY(U,$J,358.3,1498,1,0)
+ ;;^UTILITY(U,$J,358.3,1599,1,3,0)
+ ;;=3^Pulmonary Hrt Diseases NEC
+ ;;^UTILITY(U,$J,358.3,1599,1,4,0)
+ ;;=4^I27.89
+ ;;^UTILITY(U,$J,358.3,1599,2)
+ ;;=^5007153
+ ;;^UTILITY(U,$J,358.3,1600,0)
+ ;;=I27.81^^11^145^18
+ ;;^UTILITY(U,$J,358.3,1600,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1498,1,3,0)
- ;;=3^Obsessive-compulsive disorder
- ;;^UTILITY(U,$J,358.3,1498,1,4,0)
- ;;=4^F42.
- ;;^UTILITY(U,$J,358.3,1498,2)
- ;;=^5003568
- ;;^UTILITY(U,$J,358.3,1499,0)
- ;;=F34.1^^3^44^12
- ;;^UTILITY(U,$J,358.3,1499,1,0)
+ ;;^UTILITY(U,$J,358.3,1600,1,3,0)
+ ;;=3^Cor Pulmonale,Chronic
+ ;;^UTILITY(U,$J,358.3,1600,1,4,0)
+ ;;=4^I27.81
+ ;;^UTILITY(U,$J,358.3,1600,2)
+ ;;=^5007152
+ ;;^UTILITY(U,$J,358.3,1601,0)
+ ;;=I42.1^^11^145^36
+ ;;^UTILITY(U,$J,358.3,1601,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1499,1,3,0)
- ;;=3^Dysthymic disorder
- ;;^UTILITY(U,$J,358.3,1499,1,4,0)
- ;;=4^F34.1
- ;;^UTILITY(U,$J,358.3,1499,2)
- ;;=^331913
- ;;^UTILITY(U,$J,358.3,1500,0)
- ;;=F45.0^^3^44^27
- ;;^UTILITY(U,$J,358.3,1500,1,0)
+ ;;^UTILITY(U,$J,358.3,1601,1,3,0)
+ ;;=3^Obstructive Hypertrophic Cardiomyopathy
+ ;;^UTILITY(U,$J,358.3,1601,1,4,0)
+ ;;=4^I42.1
+ ;;^UTILITY(U,$J,358.3,1601,2)
+ ;;=^340520
+ ;;^UTILITY(U,$J,358.3,1602,0)
+ ;;=I42.2^^11^145^31
+ ;;^UTILITY(U,$J,358.3,1602,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1500,1,3,0)
- ;;=3^Somatization disorder
- ;;^UTILITY(U,$J,358.3,1500,1,4,0)
- ;;=4^F45.0
- ;;^UTILITY(U,$J,358.3,1500,2)
- ;;=^112280
- ;;^UTILITY(U,$J,358.3,1501,0)
- ;;=F60.9^^3^44^22
- ;;^UTILITY(U,$J,358.3,1501,1,0)
+ ;;^UTILITY(U,$J,358.3,1602,1,3,0)
+ ;;=3^Hypertrophic Cardiomyopathy NEC
+ ;;^UTILITY(U,$J,358.3,1602,1,4,0)
+ ;;=4^I42.2
+ ;;^UTILITY(U,$J,358.3,1602,2)
+ ;;=^340521
+ ;;^UTILITY(U,$J,358.3,1603,0)
+ ;;=I42.5^^11^145^51
+ ;;^UTILITY(U,$J,358.3,1603,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1501,1,3,0)
- ;;=3^Personality disorder, unspecified
- ;;^UTILITY(U,$J,358.3,1501,1,4,0)
- ;;=4^F60.9
- ;;^UTILITY(U,$J,358.3,1501,2)
- ;;=^5003639
- ;;^UTILITY(U,$J,358.3,1502,0)
- ;;=F52.21^^3^44^15
- ;;^UTILITY(U,$J,358.3,1502,1,0)
+ ;;^UTILITY(U,$J,358.3,1603,1,3,0)
+ ;;=3^Restrictive Cardiomyopathy NEC
+ ;;^UTILITY(U,$J,358.3,1603,1,4,0)
+ ;;=4^I42.5
+ ;;^UTILITY(U,$J,358.3,1603,2)
+ ;;=^5007196
+ ;;^UTILITY(U,$J,358.3,1604,0)
+ ;;=I42.6^^11^145^4
+ ;;^UTILITY(U,$J,358.3,1604,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1502,1,3,0)
- ;;=3^Male erectile disorder
- ;;^UTILITY(U,$J,358.3,1502,1,4,0)
- ;;=4^F52.21
- ;;^UTILITY(U,$J,358.3,1502,2)
- ;;=^5003620
- ;;^UTILITY(U,$J,358.3,1503,0)
- ;;=F10.20^^3^44^4
+ ;;^UTILITY(U,$J,358.3,1604,1,3,0)
+ ;;=3^Alcoholic Cardiomyopathy
+ ;;^UTILITY(U,$J,358.3,1604,1,4,0)
+ ;;=4^I42.6
+ ;;^UTILITY(U,$J,358.3,1604,2)
+ ;;=^5007197
+ ;;^UTILITY(U,$J,358.3,1605,0)
+ ;;=I43.^^11^145^8

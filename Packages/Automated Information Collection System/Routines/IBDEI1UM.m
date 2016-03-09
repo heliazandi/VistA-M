@@ -1,138 +1,110 @@
-IBDEI1UM ; ; 06-AUG-2015
+IBDEI1UM ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32548,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32548,1,3,0)
- ;;=3^Paraphimosis
- ;;^UTILITY(U,$J,358.3,32548,1,4,0)
- ;;=4^N47.2
- ;;^UTILITY(U,$J,358.3,32548,2)
- ;;=^90023
- ;;^UTILITY(U,$J,358.3,32549,0)
- ;;=N47.1^^182^1988^76
- ;;^UTILITY(U,$J,358.3,32549,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32549,1,3,0)
- ;;=3^Phimosis
- ;;^UTILITY(U,$J,358.3,32549,1,4,0)
- ;;=4^N47.1
- ;;^UTILITY(U,$J,358.3,32549,2)
- ;;=^93340
- ;;^UTILITY(U,$J,358.3,32550,0)
- ;;=N47.3^^182^1988^22
- ;;^UTILITY(U,$J,358.3,32550,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32550,1,3,0)
- ;;=3^Deficient Foreskin
- ;;^UTILITY(U,$J,358.3,32550,1,4,0)
- ;;=4^N47.3
- ;;^UTILITY(U,$J,358.3,32550,2)
- ;;=^5015726
- ;;^UTILITY(U,$J,358.3,32551,0)
- ;;=N47.5^^182^1988^1
- ;;^UTILITY(U,$J,358.3,32551,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32551,1,3,0)
- ;;=3^Adhesions Prepuce & Glans Penis
- ;;^UTILITY(U,$J,358.3,32551,1,4,0)
- ;;=4^N47.5
- ;;^UTILITY(U,$J,358.3,32551,2)
- ;;=^5015728
- ;;^UTILITY(U,$J,358.3,32552,0)
- ;;=N47.4^^182^1988^17
- ;;^UTILITY(U,$J,358.3,32552,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32552,1,3,0)
- ;;=3^Cyst of Prepuce,Benign
- ;;^UTILITY(U,$J,358.3,32552,1,4,0)
- ;;=4^N47.4
- ;;^UTILITY(U,$J,358.3,32552,2)
- ;;=^5015727
- ;;^UTILITY(U,$J,358.3,32553,0)
- ;;=N47.8^^182^1988^23
- ;;^UTILITY(U,$J,358.3,32553,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32553,1,3,0)
- ;;=3^Disorders of Prepuce
- ;;^UTILITY(U,$J,358.3,32553,1,4,0)
- ;;=4^N47.8
- ;;^UTILITY(U,$J,358.3,32553,2)
- ;;=^5015730
- ;;^UTILITY(U,$J,358.3,32554,0)
- ;;=N47.7^^182^1988^54
- ;;^UTILITY(U,$J,358.3,32554,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32554,1,3,0)
- ;;=3^Inflammatory Diseases of Prepuce
- ;;^UTILITY(U,$J,358.3,32554,1,4,0)
- ;;=4^N47.7
- ;;^UTILITY(U,$J,358.3,32554,2)
- ;;=^5015729
- ;;^UTILITY(U,$J,358.3,32555,0)
- ;;=N47.6^^182^1988^3
- ;;^UTILITY(U,$J,358.3,32555,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32555,1,3,0)
- ;;=3^Balanoposthitis
- ;;^UTILITY(U,$J,358.3,32555,1,4,0)
- ;;=4^N47.6
- ;;^UTILITY(U,$J,358.3,32555,2)
- ;;=^12530
- ;;^UTILITY(U,$J,358.3,32556,0)
- ;;=N48.1^^182^1988^2
- ;;^UTILITY(U,$J,358.3,32556,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32556,1,3,0)
- ;;=3^Balanitis
- ;;^UTILITY(U,$J,358.3,32556,1,4,0)
- ;;=4^N48.1
- ;;^UTILITY(U,$J,358.3,32556,2)
- ;;=^12525
- ;;^UTILITY(U,$J,358.3,32557,0)
- ;;=N52.9^^182^1988^61
- ;;^UTILITY(U,$J,358.3,32557,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32557,1,3,0)
- ;;=3^Male Erectile Dysfunction,Unspec
- ;;^UTILITY(U,$J,358.3,32557,1,4,0)
- ;;=4^N52.9
- ;;^UTILITY(U,$J,358.3,32557,2)
- ;;=^5015763
- ;;^UTILITY(U,$J,358.3,32558,0)
- ;;=N52.8^^182^1988^60
- ;;^UTILITY(U,$J,358.3,32558,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32558,1,3,0)
- ;;=3^Male Erectile Dysfunction,Other
- ;;^UTILITY(U,$J,358.3,32558,1,4,0)
- ;;=4^N52.8
- ;;^UTILITY(U,$J,358.3,32558,2)
- ;;=^5015762
- ;;^UTILITY(U,$J,358.3,32559,0)
- ;;=N52.34^^182^1988^35
- ;;^UTILITY(U,$J,358.3,32559,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32559,1,3,0)
- ;;=3^Erectile Dysfunction Following Simple Prostatectomy
- ;;^UTILITY(U,$J,358.3,32559,1,4,0)
- ;;=4^N52.34
- ;;^UTILITY(U,$J,358.3,32559,2)
- ;;=^5015760
- ;;^UTILITY(U,$J,358.3,32560,0)
- ;;=N52.39^^182^1988^37
- ;;^UTILITY(U,$J,358.3,32560,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32560,1,3,0)
- ;;=3^Erectile Dysfunction Post-Surgical
- ;;^UTILITY(U,$J,358.3,32560,1,4,0)
- ;;=4^N52.39
- ;;^UTILITY(U,$J,358.3,32560,2)
- ;;=^5015761
- ;;^UTILITY(U,$J,358.3,32561,0)
- ;;=N52.33^^182^1988^36
- ;;^UTILITY(U,$J,358.3,32561,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32561,1,3,0)
- ;;=3^Erectile Dysfunction Following Urethral Surgery
+ ;;^UTILITY(U,$J,358.3,31401,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31401,1,2,0)
+ ;;=2^Lengthening or shortening of tendon, leg or ankle; single tendon
+ ;;^UTILITY(U,$J,358.3,31401,1,3,0)
+ ;;=3^27685
+ ;;^UTILITY(U,$J,358.3,31402,0)
+ ;;=27695^^125^1591^14^^^^1
+ ;;^UTILITY(U,$J,358.3,31402,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31402,1,2,0)
+ ;;=2^Repair, primary, disrupted ligament, ankle; both collateral ligaments
+ ;;^UTILITY(U,$J,358.3,31402,1,3,0)
+ ;;=3^27695
+ ;;^UTILITY(U,$J,358.3,31403,0)
+ ;;=27698^^125^1591^16^^^^1
+ ;;^UTILITY(U,$J,358.3,31403,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31403,1,2,0)
+ ;;=2^Repair, secondary, disrupted ligament ankle, collateral
+ ;;^UTILITY(U,$J,358.3,31403,1,3,0)
+ ;;=3^27698
+ ;;^UTILITY(U,$J,358.3,31404,0)
+ ;;=28200^^125^1591^19^^^^1
+ ;;^UTILITY(U,$J,358.3,31404,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31404,1,2,0)
+ ;;=2^Repair, tendon, flexor, foot; primary or secondary, without free graft, each tendon
+ ;;^UTILITY(U,$J,358.3,31404,1,3,0)
+ ;;=3^28200
+ ;;^UTILITY(U,$J,358.3,31405,0)
+ ;;=28202^^125^1591^20^^^^1
+ ;;^UTILITY(U,$J,358.3,31405,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31405,1,2,0)
+ ;;=2^Repair, tendon, flexor, foot; secondarywith free graft, each tendon (includes obtaining graft), 
+ ;;^UTILITY(U,$J,358.3,31405,1,3,0)
+ ;;=3^28202
+ ;;^UTILITY(U,$J,358.3,31406,0)
+ ;;=28210^^125^1591^18^^^^1
+ ;;^UTILITY(U,$J,358.3,31406,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31406,1,2,0)
+ ;;=2^Repair, tendon, extensor, foot; secondary with free graft, each tendon (includes obtaining graft) 
+ ;;^UTILITY(U,$J,358.3,31406,1,3,0)
+ ;;=3^28210
+ ;;^UTILITY(U,$J,358.3,31407,0)
+ ;;=28208^^125^1591^17^^^^1
+ ;;^UTILITY(U,$J,358.3,31407,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31407,1,2,0)
+ ;;=2^Repair, tendon, extensor, foot; primary or secondary, each tendon
+ ;;^UTILITY(U,$J,358.3,31407,1,3,0)
+ ;;=3^28208
+ ;;^UTILITY(U,$J,358.3,31408,0)
+ ;;=28230^^125^1591^29^^^^1
+ ;;^UTILITY(U,$J,358.3,31408,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31408,1,2,0)
+ ;;=2^Tenotomy, open, tendon flexor; foot, single or multiple tendon(s)(separate procedure)
+ ;;^UTILITY(U,$J,358.3,31408,1,3,0)
+ ;;=3^28230
+ ;;^UTILITY(U,$J,358.3,31409,0)
+ ;;=28232^^125^1591^30^^^^1
+ ;;^UTILITY(U,$J,358.3,31409,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31409,1,2,0)
+ ;;=2^Tenotomy, open, tendon flexor; toe, single tendon (separate procedure) 
+ ;;^UTILITY(U,$J,358.3,31409,1,3,0)
+ ;;=3^28232
+ ;;^UTILITY(U,$J,358.3,31410,0)
+ ;;=28234^^125^1591^28^^^^1
+ ;;^UTILITY(U,$J,358.3,31410,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31410,1,2,0)
+ ;;=2^Tenotomy, open, extensor, foot or toe, each tendon
+ ;;^UTILITY(U,$J,358.3,31410,1,3,0)
+ ;;=3^28234
+ ;;^UTILITY(U,$J,358.3,31411,0)
+ ;;=28270^^125^1591^4^^^^1
+ ;;^UTILITY(U,$J,358.3,31411,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31411,1,2,0)
+ ;;=2^Capsulotomy; metatarsophalangeal joint, with or without tenorrhaphy, each joint (separate procedure) 
+ ;;^UTILITY(U,$J,358.3,31411,1,3,0)
+ ;;=3^28270
+ ;;^UTILITY(U,$J,358.3,31412,0)
+ ;;=28272^^125^1591^3^^^^1
+ ;;^UTILITY(U,$J,358.3,31412,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31412,1,2,0)
+ ;;=2^Capsulotomy; interphalangeal joint, each joint
+ ;;^UTILITY(U,$J,358.3,31412,1,3,0)
+ ;;=3^28272
+ ;;^UTILITY(U,$J,358.3,31413,0)
+ ;;=28285^^125^1591^6^^^^1
+ ;;^UTILITY(U,$J,358.3,31413,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31413,1,2,0)
+ ;;=2^Correction, hammertoe
+ ;;^UTILITY(U,$J,358.3,31413,1,3,0)
+ ;;=3^28285
+ ;;^UTILITY(U,$J,358.3,31414,0)
+ ;;=28288^^125^1591^9^^^^1
+ ;;^UTILITY(U,$J,358.3,31414,1,0)
+ ;;=^358.31IA^3^2

@@ -1,130 +1,140 @@
-IBDEI07K ; ; 06-AUG-2015
+IBDEI07K ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3038,2)
- ;;=^5003502
- ;;^UTILITY(U,$J,358.3,3039,0)
- ;;=F31.4^^8^87^13
- ;;^UTILITY(U,$J,358.3,3039,1,0)
+ ;;^UTILITY(U,$J,358.3,3231,2)
+ ;;=^5019748
+ ;;^UTILITY(U,$J,358.3,3232,0)
+ ;;=N42.9^^18^216^63
+ ;;^UTILITY(U,$J,358.3,3232,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3039,1,3,0)
- ;;=3^Bipolor I Disorder,Current/Recent Episode Depressed,Severe
- ;;^UTILITY(U,$J,358.3,3039,1,4,0)
- ;;=4^F31.4
- ;;^UTILITY(U,$J,358.3,3039,2)
- ;;=^5003503
- ;;^UTILITY(U,$J,358.3,3040,0)
- ;;=F31.5^^8^87^14
- ;;^UTILITY(U,$J,358.3,3040,1,0)
+ ;;^UTILITY(U,$J,358.3,3232,1,3,0)
+ ;;=3^Prostate Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,3232,1,4,0)
+ ;;=4^N42.9
+ ;;^UTILITY(U,$J,358.3,3232,2)
+ ;;=^5015698
+ ;;^UTILITY(U,$J,358.3,3233,0)
+ ;;=N40.1^^18^216^65
+ ;;^UTILITY(U,$J,358.3,3233,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3040,1,3,0)
- ;;=3^Bipolor I Disorder,Current/Recent Episode Depressed,w/ Psychotic Features
- ;;^UTILITY(U,$J,358.3,3040,1,4,0)
- ;;=4^F31.5
- ;;^UTILITY(U,$J,358.3,3040,2)
- ;;=^5003504
- ;;^UTILITY(U,$J,358.3,3041,0)
- ;;=F31.75^^8^87^15
- ;;^UTILITY(U,$J,358.3,3041,1,0)
+ ;;^UTILITY(U,$J,358.3,3233,1,3,0)
+ ;;=3^Prostate,Enlarged w/ Lower Urinary Tract Symptoms
+ ;;^UTILITY(U,$J,358.3,3233,1,4,0)
+ ;;=4^N40.1
+ ;;^UTILITY(U,$J,358.3,3233,2)
+ ;;=^5015690
+ ;;^UTILITY(U,$J,358.3,3234,0)
+ ;;=N40.0^^18^216^66
+ ;;^UTILITY(U,$J,358.3,3234,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3041,1,3,0)
- ;;=3^Bipolor I Disorder,Current/Recent Episode Depressed,In Partial Remission
- ;;^UTILITY(U,$J,358.3,3041,1,4,0)
- ;;=4^F31.75
- ;;^UTILITY(U,$J,358.3,3041,2)
- ;;=^5003515
- ;;^UTILITY(U,$J,358.3,3042,0)
- ;;=F31.76^^8^87^16
- ;;^UTILITY(U,$J,358.3,3042,1,0)
+ ;;^UTILITY(U,$J,358.3,3234,1,3,0)
+ ;;=3^Prostate,Enlarged w/o Lower Urinary Tract Symptoms
+ ;;^UTILITY(U,$J,358.3,3234,1,4,0)
+ ;;=4^N40.0
+ ;;^UTILITY(U,$J,358.3,3234,2)
+ ;;=^5015689
+ ;;^UTILITY(U,$J,358.3,3235,0)
+ ;;=N41.9^^18^216^64
+ ;;^UTILITY(U,$J,358.3,3235,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3042,1,3,0)
- ;;=3^Bipolor I Disorder,Current/Recent Episode Depressed,In Full Remission
- ;;^UTILITY(U,$J,358.3,3042,1,4,0)
- ;;=4^F31.76
- ;;^UTILITY(U,$J,358.3,3042,2)
- ;;=^5003516
- ;;^UTILITY(U,$J,358.3,3043,0)
- ;;=F31.9^^8^87^17
- ;;^UTILITY(U,$J,358.3,3043,1,0)
+ ;;^UTILITY(U,$J,358.3,3235,1,3,0)
+ ;;=3^Prostate Inflammatory Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,3235,1,4,0)
+ ;;=4^N41.9
+ ;;^UTILITY(U,$J,358.3,3235,2)
+ ;;=^5015694
+ ;;^UTILITY(U,$J,358.3,3236,0)
+ ;;=C61.^^18^216^62
+ ;;^UTILITY(U,$J,358.3,3236,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3043,1,3,0)
- ;;=3^Bipolor I Disorder,Current/Recent Episode Unspec
- ;;^UTILITY(U,$J,358.3,3043,1,4,0)
- ;;=4^F31.9
- ;;^UTILITY(U,$J,358.3,3043,2)
- ;;=^331892
- ;;^UTILITY(U,$J,358.3,3044,0)
- ;;=F31.81^^8^87^3
- ;;^UTILITY(U,$J,358.3,3044,1,0)
+ ;;^UTILITY(U,$J,358.3,3236,1,3,0)
+ ;;=3^Prostate Cancer
+ ;;^UTILITY(U,$J,358.3,3236,1,4,0)
+ ;;=4^C61.
+ ;;^UTILITY(U,$J,358.3,3236,2)
+ ;;=^267239
+ ;;^UTILITY(U,$J,358.3,3237,0)
+ ;;=N40.3^^18^216^67
+ ;;^UTILITY(U,$J,358.3,3237,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3044,1,3,0)
- ;;=3^Bipolar II Disorder
- ;;^UTILITY(U,$J,358.3,3044,1,4,0)
- ;;=4^F31.81
- ;;^UTILITY(U,$J,358.3,3044,2)
- ;;=^5003519
- ;;^UTILITY(U,$J,358.3,3045,0)
- ;;=F34.0^^8^87^18
- ;;^UTILITY(U,$J,358.3,3045,1,0)
+ ;;^UTILITY(U,$J,358.3,3237,1,3,0)
+ ;;=3^Prostate,Nodular w/ Lower Urinary Tract Symptoms
+ ;;^UTILITY(U,$J,358.3,3237,1,4,0)
+ ;;=4^N40.3
+ ;;^UTILITY(U,$J,358.3,3237,2)
+ ;;=^5015692
+ ;;^UTILITY(U,$J,358.3,3238,0)
+ ;;=N40.2^^18^216^68
+ ;;^UTILITY(U,$J,358.3,3238,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3045,1,3,0)
- ;;=3^Cyclothymic Disorder
- ;;^UTILITY(U,$J,358.3,3045,1,4,0)
- ;;=4^F34.0
- ;;^UTILITY(U,$J,358.3,3045,2)
- ;;=^5003538
- ;;^UTILITY(U,$J,358.3,3046,0)
- ;;=F10.232^^8^88^2
- ;;^UTILITY(U,$J,358.3,3046,1,0)
+ ;;^UTILITY(U,$J,358.3,3238,1,3,0)
+ ;;=3^Prostate,Nodular w/o Lower Urinary Tract Symptoms
+ ;;^UTILITY(U,$J,358.3,3238,1,4,0)
+ ;;=4^N40.2
+ ;;^UTILITY(U,$J,358.3,3238,2)
+ ;;=^5015691
+ ;;^UTILITY(U,$J,358.3,3239,0)
+ ;;=Z87.430^^18^216^56
+ ;;^UTILITY(U,$J,358.3,3239,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3046,1,3,0)
- ;;=3^Alcohol Withdrawal Delirium w/ Perceptual Disturbances
- ;;^UTILITY(U,$J,358.3,3046,1,4,0)
- ;;=4^F10.232
- ;;^UTILITY(U,$J,358.3,3046,2)
- ;;=^5003088
- ;;^UTILITY(U,$J,358.3,3047,0)
- ;;=F10.231^^8^88^3
- ;;^UTILITY(U,$J,358.3,3047,1,0)
+ ;;^UTILITY(U,$J,358.3,3239,1,3,0)
+ ;;=3^Personal Hx of Prostatic Dysplasia
+ ;;^UTILITY(U,$J,358.3,3239,1,4,0)
+ ;;=4^Z87.430
+ ;;^UTILITY(U,$J,358.3,3239,2)
+ ;;=^5063493
+ ;;^UTILITY(U,$J,358.3,3240,0)
+ ;;=N41.2^^18^216^1
+ ;;^UTILITY(U,$J,358.3,3240,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3047,1,3,0)
- ;;=3^Alcohol Withdrawal Delirium w/o Perceptual Disturbances
- ;;^UTILITY(U,$J,358.3,3047,1,4,0)
- ;;=4^F10.231
- ;;^UTILITY(U,$J,358.3,3047,2)
- ;;=^5003087
- ;;^UTILITY(U,$J,358.3,3048,0)
- ;;=F10.121^^8^88^6
- ;;^UTILITY(U,$J,358.3,3048,1,0)
+ ;;^UTILITY(U,$J,358.3,3240,1,3,0)
+ ;;=3^Abscess of Prostate
+ ;;^UTILITY(U,$J,358.3,3240,1,4,0)
+ ;;=4^N41.2
+ ;;^UTILITY(U,$J,358.3,3240,2)
+ ;;=^270416
+ ;;^UTILITY(U,$J,358.3,3241,0)
+ ;;=N41.0^^18^216^69
+ ;;^UTILITY(U,$J,358.3,3241,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3048,1,3,0)
- ;;=3^Mild Alcohol Use Disorder w/ Intoxication Delirium
- ;;^UTILITY(U,$J,358.3,3048,1,4,0)
- ;;=4^F10.121
- ;;^UTILITY(U,$J,358.3,3048,2)
- ;;=^5003070
- ;;^UTILITY(U,$J,358.3,3049,0)
- ;;=F10.221^^8^88^7
- ;;^UTILITY(U,$J,358.3,3049,1,0)
+ ;;^UTILITY(U,$J,358.3,3241,1,3,0)
+ ;;=3^Prostatitis,Acute
+ ;;^UTILITY(U,$J,358.3,3241,1,4,0)
+ ;;=4^N41.0
+ ;;^UTILITY(U,$J,358.3,3241,2)
+ ;;=^259106
+ ;;^UTILITY(U,$J,358.3,3242,0)
+ ;;=N41.1^^18^216^70
+ ;;^UTILITY(U,$J,358.3,3242,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3049,1,3,0)
- ;;=3^Moderate/Severe Alcohol Use Disorder w/ Intoxication Delirium
- ;;^UTILITY(U,$J,358.3,3049,1,4,0)
- ;;=4^F10.221
- ;;^UTILITY(U,$J,358.3,3049,2)
- ;;=^5003084
- ;;^UTILITY(U,$J,358.3,3050,0)
- ;;=F10.921^^8^88^1
- ;;^UTILITY(U,$J,358.3,3050,1,0)
+ ;;^UTILITY(U,$J,358.3,3242,1,3,0)
+ ;;=3^Prostatitis,Chronic
+ ;;^UTILITY(U,$J,358.3,3242,1,4,0)
+ ;;=4^N41.1
+ ;;^UTILITY(U,$J,358.3,3242,2)
+ ;;=^186931
+ ;;^UTILITY(U,$J,358.3,3243,0)
+ ;;=N41.4^^18^216^71
+ ;;^UTILITY(U,$J,358.3,3243,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3050,1,3,0)
- ;;=3^Alcohol Intoxication Delirium w/o Use Disorder
- ;;^UTILITY(U,$J,358.3,3050,1,4,0)
- ;;=4^F10.921
- ;;^UTILITY(U,$J,358.3,3050,2)
- ;;=^5003102
- ;;^UTILITY(U,$J,358.3,3051,0)
- ;;=F05.^^8^88^4
- ;;^UTILITY(U,$J,358.3,3051,1,0)
+ ;;^UTILITY(U,$J,358.3,3243,1,3,0)
+ ;;=3^Prostatitis,Granulomatous
+ ;;^UTILITY(U,$J,358.3,3243,1,4,0)
+ ;;=4^N41.4
+ ;;^UTILITY(U,$J,358.3,3243,2)
+ ;;=^52938
+ ;;^UTILITY(U,$J,358.3,3244,0)
+ ;;=N41.3^^18^216^72
+ ;;^UTILITY(U,$J,358.3,3244,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3244,1,3,0)
+ ;;=3^Prostatocystitis
+ ;;^UTILITY(U,$J,358.3,3244,1,4,0)
+ ;;=4^N41.3
+ ;;^UTILITY(U,$J,358.3,3244,2)
+ ;;=^270418
+ ;;^UTILITY(U,$J,358.3,3245,0)
+ ;;=N70.93^^18^216^73
+ ;;^UTILITY(U,$J,358.3,3245,1,0)
  ;;=^358.31IA^4^2

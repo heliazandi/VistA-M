@@ -1,122 +1,124 @@
-IBDEI1SO ; ; 06-AUG-2015
+IBDEI1SO ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31656,2)
- ;;=^5010118
- ;;^UTILITY(U,$J,358.3,31657,0)
- ;;=M05.572^^180^1962^110
- ;;^UTILITY(U,$J,358.3,31657,1,0)
+ ;;^UTILITY(U,$J,358.3,30495,0)
+ ;;=64490^^120^1515^27^^^^1
+ ;;^UTILITY(U,$J,358.3,30495,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31657,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of left ank/ft
- ;;^UTILITY(U,$J,358.3,31657,1,4,0)
- ;;=4^M05.572
- ;;^UTILITY(U,$J,358.3,31657,2)
- ;;=^5009974
- ;;^UTILITY(U,$J,358.3,31658,0)
- ;;=M05.522^^180^1962^111
- ;;^UTILITY(U,$J,358.3,31658,1,0)
+ ;;^UTILITY(U,$J,358.3,30495,1,2,0)
+ ;;=2^Paravert Facet Block,Cerv/Thor,1st Lev
+ ;;^UTILITY(U,$J,358.3,30495,1,4,0)
+ ;;=4^64490
+ ;;^UTILITY(U,$J,358.3,30496,0)
+ ;;=64491^^120^1515^28^^^^1
+ ;;^UTILITY(U,$J,358.3,30496,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31658,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of left elbow
- ;;^UTILITY(U,$J,358.3,31658,1,4,0)
- ;;=4^M05.522
- ;;^UTILITY(U,$J,358.3,31658,2)
- ;;=^5009959
- ;;^UTILITY(U,$J,358.3,31659,0)
- ;;=M05.542^^180^1962^112
- ;;^UTILITY(U,$J,358.3,31659,1,0)
+ ;;^UTILITY(U,$J,358.3,30496,1,2,0)
+ ;;=2^Paravert Facet Block,Cerv/Thor,2nd Lev
+ ;;^UTILITY(U,$J,358.3,30496,1,4,0)
+ ;;=4^64491
+ ;;^UTILITY(U,$J,358.3,30497,0)
+ ;;=64492^^120^1515^25^^^^1
+ ;;^UTILITY(U,$J,358.3,30497,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31659,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of left hand
- ;;^UTILITY(U,$J,358.3,31659,1,4,0)
- ;;=4^M05.542
- ;;^UTILITY(U,$J,358.3,31659,2)
- ;;=^5009965
- ;;^UTILITY(U,$J,358.3,31660,0)
- ;;=M05.552^^180^1962^113
- ;;^UTILITY(U,$J,358.3,31660,1,0)
+ ;;^UTILITY(U,$J,358.3,30497,1,2,0)
+ ;;=2^Paravert Facet Blk,Cerv/Thor,Ea Addl Lev
+ ;;^UTILITY(U,$J,358.3,30497,1,4,0)
+ ;;=4^64492
+ ;;^UTILITY(U,$J,358.3,30498,0)
+ ;;=64493^^120^1515^29^^^^1
+ ;;^UTILITY(U,$J,358.3,30498,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31660,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of left hip
- ;;^UTILITY(U,$J,358.3,31660,1,4,0)
- ;;=4^M05.552
- ;;^UTILITY(U,$J,358.3,31660,2)
- ;;=^5009968
- ;;^UTILITY(U,$J,358.3,31661,0)
- ;;=M05.562^^180^1962^114
- ;;^UTILITY(U,$J,358.3,31661,1,0)
+ ;;^UTILITY(U,$J,358.3,30498,1,2,0)
+ ;;=2^Paravert Facet Block,Thor/Lumb,1st Lev
+ ;;^UTILITY(U,$J,358.3,30498,1,4,0)
+ ;;=4^64493
+ ;;^UTILITY(U,$J,358.3,30499,0)
+ ;;=64494^^120^1515^30^^^^1
+ ;;^UTILITY(U,$J,358.3,30499,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31661,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of left knee
- ;;^UTILITY(U,$J,358.3,31661,1,4,0)
- ;;=4^M05.562
- ;;^UTILITY(U,$J,358.3,31661,2)
- ;;=^5009971
- ;;^UTILITY(U,$J,358.3,31662,0)
- ;;=M05.512^^180^1962^115
- ;;^UTILITY(U,$J,358.3,31662,1,0)
+ ;;^UTILITY(U,$J,358.3,30499,1,2,0)
+ ;;=2^Paravert Facet Block,Thor/Lumb,2nd Lev
+ ;;^UTILITY(U,$J,358.3,30499,1,4,0)
+ ;;=4^64494
+ ;;^UTILITY(U,$J,358.3,30500,0)
+ ;;=64495^^120^1515^26^^^^1
+ ;;^UTILITY(U,$J,358.3,30500,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31662,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of left shoulder
- ;;^UTILITY(U,$J,358.3,31662,1,4,0)
- ;;=4^M05.512
- ;;^UTILITY(U,$J,358.3,31662,2)
- ;;=^5009956
- ;;^UTILITY(U,$J,358.3,31663,0)
- ;;=M05.532^^180^1962^116
- ;;^UTILITY(U,$J,358.3,31663,1,0)
+ ;;^UTILITY(U,$J,358.3,30500,1,2,0)
+ ;;=2^Paravert Facet Blk,Thor/Lum,Ea Addl Lev
+ ;;^UTILITY(U,$J,358.3,30500,1,4,0)
+ ;;=4^64495
+ ;;^UTILITY(U,$J,358.3,30501,0)
+ ;;=64510^^120^1515^1^^^^1
+ ;;^UTILITY(U,$J,358.3,30501,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31663,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of left wrist
- ;;^UTILITY(U,$J,358.3,31663,1,4,0)
- ;;=4^M05.532
- ;;^UTILITY(U,$J,358.3,31663,2)
- ;;=^5009962
- ;;^UTILITY(U,$J,358.3,31664,0)
- ;;=M05.59^^180^1962^117
- ;;^UTILITY(U,$J,358.3,31664,1,0)
+ ;;^UTILITY(U,$J,358.3,30501,1,2,0)
+ ;;=2^Automonic Nerve Inj Stellate Ganglion
+ ;;^UTILITY(U,$J,358.3,30501,1,4,0)
+ ;;=4^64510
+ ;;^UTILITY(U,$J,358.3,30502,0)
+ ;;=64520^^120^1515^2^^^^1
+ ;;^UTILITY(U,$J,358.3,30502,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31664,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of mult site
- ;;^UTILITY(U,$J,358.3,31664,1,4,0)
- ;;=4^M05.59
- ;;^UTILITY(U,$J,358.3,31664,2)
- ;;=^5009976
- ;;^UTILITY(U,$J,358.3,31665,0)
- ;;=M05.571^^180^1962^118
- ;;^UTILITY(U,$J,358.3,31665,1,0)
+ ;;^UTILITY(U,$J,358.3,30502,1,2,0)
+ ;;=2^Automonic Nerve Inj Thoracic/Lumbar
+ ;;^UTILITY(U,$J,358.3,30502,1,4,0)
+ ;;=4^64520
+ ;;^UTILITY(U,$J,358.3,30503,0)
+ ;;=64455^^120^1515^18^^^^1
+ ;;^UTILITY(U,$J,358.3,30503,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31665,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of right ank/ft
- ;;^UTILITY(U,$J,358.3,31665,1,4,0)
- ;;=4^M05.571
- ;;^UTILITY(U,$J,358.3,31665,2)
- ;;=^5009973
- ;;^UTILITY(U,$J,358.3,31666,0)
- ;;=M05.521^^180^1962^119
- ;;^UTILITY(U,$J,358.3,31666,1,0)
+ ;;^UTILITY(U,$J,358.3,30503,1,2,0)
+ ;;=2^N Block Common Plantar Digit
+ ;;^UTILITY(U,$J,358.3,30503,1,4,0)
+ ;;=4^64455
+ ;;^UTILITY(U,$J,358.3,30504,0)
+ ;;=64486^^120^1515^39^^^^1
+ ;;^UTILITY(U,$J,358.3,30504,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31666,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of right elbow
- ;;^UTILITY(U,$J,358.3,31666,1,4,0)
- ;;=4^M05.521
- ;;^UTILITY(U,$J,358.3,31666,2)
- ;;=^5009958
- ;;^UTILITY(U,$J,358.3,31667,0)
- ;;=M05.541^^180^1962^120
- ;;^UTILITY(U,$J,358.3,31667,1,0)
+ ;;^UTILITY(U,$J,358.3,30504,1,2,0)
+ ;;=2^TAP Abdom Plane Block,Unil w/ Image Guid
+ ;;^UTILITY(U,$J,358.3,30504,1,4,0)
+ ;;=4^64486
+ ;;^UTILITY(U,$J,358.3,30505,0)
+ ;;=64487^^120^1515^41^^^^1
+ ;;^UTILITY(U,$J,358.3,30505,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31667,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of right hand
- ;;^UTILITY(U,$J,358.3,31667,1,4,0)
- ;;=4^M05.541
- ;;^UTILITY(U,$J,358.3,31667,2)
- ;;=^5009964
- ;;^UTILITY(U,$J,358.3,31668,0)
- ;;=M05.541^^180^1962^121
- ;;^UTILITY(U,$J,358.3,31668,1,0)
+ ;;^UTILITY(U,$J,358.3,30505,1,2,0)
+ ;;=2^TAP Block by Cont Inf w/ Image Guidance
+ ;;^UTILITY(U,$J,358.3,30505,1,4,0)
+ ;;=4^64487
+ ;;^UTILITY(U,$J,358.3,30506,0)
+ ;;=64488^^120^1515^42^^^^1
+ ;;^UTILITY(U,$J,358.3,30506,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31668,1,3,0)
- ;;=3^Rheumatoid polyneurop w rheumatoid arthritis of right hand
+ ;;^UTILITY(U,$J,358.3,30506,1,2,0)
+ ;;=2^TAP Block by Inj,Bilat w/ Image Guidance
+ ;;^UTILITY(U,$J,358.3,30506,1,4,0)
+ ;;=4^64488
+ ;;^UTILITY(U,$J,358.3,30507,0)
+ ;;=64489^^120^1515^40^^^^1
+ ;;^UTILITY(U,$J,358.3,30507,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30507,1,2,0)
+ ;;=2^TAP Block Bilat by Cont Infusion w/ Image Guidance
+ ;;^UTILITY(U,$J,358.3,30507,1,4,0)
+ ;;=4^64489
+ ;;^UTILITY(U,$J,358.3,30508,0)
+ ;;=64402^^120^1515^8^^^^1
+ ;;^UTILITY(U,$J,358.3,30508,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30508,1,2,0)
+ ;;=2^Facial Nerve Block
+ ;;^UTILITY(U,$J,358.3,30508,1,4,0)
+ ;;=4^64402
+ ;;^UTILITY(U,$J,358.3,30509,0)
+ ;;=64447^^120^1515^19^^^^1
+ ;;^UTILITY(U,$J,358.3,30509,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30509,1,2,0)
+ ;;=2^N Block Inj FEM Single
+ ;;^UTILITY(U,$J,358.3,30509,1,4,0)
+ ;;=4^64447

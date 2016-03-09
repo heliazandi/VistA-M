@@ -1,128 +1,126 @@
-IBDEI1SG ; ; 06-AUG-2015
+IBDEI1SG ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31558,1,3,0)
- ;;=3^Presence of left artificial wrist joint
- ;;^UTILITY(U,$J,358.3,31558,1,4,0)
- ;;=4^Z96.632
- ;;^UTILITY(U,$J,358.3,31558,2)
- ;;=^5063699
- ;;^UTILITY(U,$J,358.3,31559,0)
- ;;=Z96.661^^180^1962^13
- ;;^UTILITY(U,$J,358.3,31559,1,0)
+ ;;^UTILITY(U,$J,358.3,30381,1,4,0)
+ ;;=4^D68.52
+ ;;^UTILITY(U,$J,358.3,30381,2)
+ ;;=^5002359
+ ;;^UTILITY(U,$J,358.3,30382,0)
+ ;;=D68.59^^118^1507^15
+ ;;^UTILITY(U,$J,358.3,30382,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31559,1,3,0)
- ;;=3^Presence of right artificial ankle joint
- ;;^UTILITY(U,$J,358.3,31559,1,4,0)
- ;;=4^Z96.661
- ;;^UTILITY(U,$J,358.3,31559,2)
- ;;=^5063709
- ;;^UTILITY(U,$J,358.3,31560,0)
- ;;=Z96.621^^180^1962^14
- ;;^UTILITY(U,$J,358.3,31560,1,0)
+ ;;^UTILITY(U,$J,358.3,30382,1,3,0)
+ ;;=3^Primary Thrombophilia NEC
+ ;;^UTILITY(U,$J,358.3,30382,1,4,0)
+ ;;=4^D68.59
+ ;;^UTILITY(U,$J,358.3,30382,2)
+ ;;=^5002360
+ ;;^UTILITY(U,$J,358.3,30383,0)
+ ;;=D68.61^^118^1507^2
+ ;;^UTILITY(U,$J,358.3,30383,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31560,1,3,0)
- ;;=3^Presence of right artificial elbow joint
- ;;^UTILITY(U,$J,358.3,31560,1,4,0)
- ;;=4^Z96.621
- ;;^UTILITY(U,$J,358.3,31560,2)
- ;;=^5063695
- ;;^UTILITY(U,$J,358.3,31561,0)
- ;;=Z96.641^^180^1962^15
- ;;^UTILITY(U,$J,358.3,31561,1,0)
+ ;;^UTILITY(U,$J,358.3,30383,1,3,0)
+ ;;=3^Antiphospholipid syndrome
+ ;;^UTILITY(U,$J,358.3,30383,1,4,0)
+ ;;=4^D68.61
+ ;;^UTILITY(U,$J,358.3,30383,2)
+ ;;=^185421
+ ;;^UTILITY(U,$J,358.3,30384,0)
+ ;;=D68.62^^118^1507^3
+ ;;^UTILITY(U,$J,358.3,30384,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31561,1,3,0)
- ;;=3^Presence of right artificial hip joint
- ;;^UTILITY(U,$J,358.3,31561,1,4,0)
- ;;=4^Z96.641
- ;;^UTILITY(U,$J,358.3,31561,2)
- ;;=^5063701
- ;;^UTILITY(U,$J,358.3,31562,0)
- ;;=Z96.651^^180^1962^16
- ;;^UTILITY(U,$J,358.3,31562,1,0)
+ ;;^UTILITY(U,$J,358.3,30384,1,3,0)
+ ;;=3^Lupus anticoagulant syndrome
+ ;;^UTILITY(U,$J,358.3,30384,1,4,0)
+ ;;=4^D68.62
+ ;;^UTILITY(U,$J,358.3,30384,2)
+ ;;=^5002361
+ ;;^UTILITY(U,$J,358.3,30385,0)
+ ;;=Z85.810^^118^1508^3
+ ;;^UTILITY(U,$J,358.3,30385,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31562,1,3,0)
- ;;=3^Presence of right artificial knee joint
- ;;^UTILITY(U,$J,358.3,31562,1,4,0)
- ;;=4^Z96.651
- ;;^UTILITY(U,$J,358.3,31562,2)
- ;;=^5063705
- ;;^UTILITY(U,$J,358.3,31563,0)
- ;;=Z96.611^^180^1962^17
- ;;^UTILITY(U,$J,358.3,31563,1,0)
+ ;;^UTILITY(U,$J,358.3,30385,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of tongue
+ ;;^UTILITY(U,$J,358.3,30385,1,4,0)
+ ;;=4^Z85.810
+ ;;^UTILITY(U,$J,358.3,30385,2)
+ ;;=^5063438
+ ;;^UTILITY(U,$J,358.3,30386,0)
+ ;;=Z85.818^^118^1508^4
+ ;;^UTILITY(U,$J,358.3,30386,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31563,1,3,0)
- ;;=3^Presence of right artificial shoulder joint
- ;;^UTILITY(U,$J,358.3,31563,1,4,0)
- ;;=4^Z96.611
- ;;^UTILITY(U,$J,358.3,31563,2)
- ;;=^5063692
- ;;^UTILITY(U,$J,358.3,31564,0)
- ;;=Z96.631^^180^1962^18
- ;;^UTILITY(U,$J,358.3,31564,1,0)
+ ;;^UTILITY(U,$J,358.3,30386,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of site of lip, oral cav, & pharynx
+ ;;^UTILITY(U,$J,358.3,30386,1,4,0)
+ ;;=4^Z85.818
+ ;;^UTILITY(U,$J,358.3,30386,2)
+ ;;=^5063439
+ ;;^UTILITY(U,$J,358.3,30387,0)
+ ;;=Z85.01^^118^1508^5
+ ;;^UTILITY(U,$J,358.3,30387,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31564,1,3,0)
- ;;=3^Presence of right artificial wrist joint
- ;;^UTILITY(U,$J,358.3,31564,1,4,0)
- ;;=4^Z96.631
- ;;^UTILITY(U,$J,358.3,31564,2)
- ;;=^5063698
- ;;^UTILITY(U,$J,358.3,31565,0)
- ;;=Z96.60^^180^1962^12
- ;;^UTILITY(U,$J,358.3,31565,1,0)
+ ;;^UTILITY(U,$J,358.3,30387,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of esophagus
+ ;;^UTILITY(U,$J,358.3,30387,1,4,0)
+ ;;=4^Z85.01
+ ;;^UTILITY(U,$J,358.3,30387,2)
+ ;;=^5063395
+ ;;^UTILITY(U,$J,358.3,30388,0)
+ ;;=Z85.028^^118^1508^6
+ ;;^UTILITY(U,$J,358.3,30388,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31565,1,3,0)
- ;;=3^Presence of orthopedic joint implant,unspec
- ;;^UTILITY(U,$J,358.3,31565,1,4,0)
- ;;=4^Z96.60
- ;;^UTILITY(U,$J,358.3,31565,2)
- ;;=^5063691
- ;;^UTILITY(U,$J,358.3,31566,0)
- ;;=M15.0^^180^1962^19
- ;;^UTILITY(U,$J,358.3,31566,1,0)
+ ;;^UTILITY(U,$J,358.3,30388,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of stomach NEC
+ ;;^UTILITY(U,$J,358.3,30388,1,4,0)
+ ;;=4^Z85.028
+ ;;^UTILITY(U,$J,358.3,30388,2)
+ ;;=^5063397
+ ;;^UTILITY(U,$J,358.3,30389,0)
+ ;;=Z85.038^^118^1508^7
+ ;;^UTILITY(U,$J,358.3,30389,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31566,1,3,0)
- ;;=3^Primary generalized (osteo)arthritis
- ;;^UTILITY(U,$J,358.3,31566,1,4,0)
- ;;=4^M15.0
- ;;^UTILITY(U,$J,358.3,31566,2)
- ;;=^5010762
- ;;^UTILITY(U,$J,358.3,31567,0)
- ;;=M19.072^^180^1962^20
- ;;^UTILITY(U,$J,358.3,31567,1,0)
+ ;;^UTILITY(U,$J,358.3,30389,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of large intestine
+ ;;^UTILITY(U,$J,358.3,30389,1,4,0)
+ ;;=4^Z85.038
+ ;;^UTILITY(U,$J,358.3,30389,2)
+ ;;=^5063399
+ ;;^UTILITY(U,$J,358.3,30390,0)
+ ;;=Z85.048^^118^1508^8
+ ;;^UTILITY(U,$J,358.3,30390,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31567,1,3,0)
- ;;=3^Primary osteoarthritis, left ankle and foot
- ;;^UTILITY(U,$J,358.3,31567,1,4,0)
- ;;=4^M19.072
- ;;^UTILITY(U,$J,358.3,31567,2)
- ;;=^5010821
- ;;^UTILITY(U,$J,358.3,31568,0)
- ;;=M19.042^^180^1962^21
- ;;^UTILITY(U,$J,358.3,31568,1,0)
+ ;;^UTILITY(U,$J,358.3,30390,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of rectum, rectosig junct, and anus
+ ;;^UTILITY(U,$J,358.3,30390,1,4,0)
+ ;;=4^Z85.048
+ ;;^UTILITY(U,$J,358.3,30390,2)
+ ;;=^5063401
+ ;;^UTILITY(U,$J,358.3,30391,0)
+ ;;=Z85.05^^118^1508^9
+ ;;^UTILITY(U,$J,358.3,30391,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31568,1,3,0)
- ;;=3^Primary osteoarthritis, left hand
- ;;^UTILITY(U,$J,358.3,31568,1,4,0)
- ;;=4^M19.042
- ;;^UTILITY(U,$J,358.3,31568,2)
- ;;=^5010818
- ;;^UTILITY(U,$J,358.3,31569,0)
- ;;=M19.012^^180^1962^22
- ;;^UTILITY(U,$J,358.3,31569,1,0)
+ ;;^UTILITY(U,$J,358.3,30391,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of liver
+ ;;^UTILITY(U,$J,358.3,30391,1,4,0)
+ ;;=4^Z85.05
+ ;;^UTILITY(U,$J,358.3,30391,2)
+ ;;=^5063402
+ ;;^UTILITY(U,$J,358.3,30392,0)
+ ;;=Z85.068^^118^1508^10
+ ;;^UTILITY(U,$J,358.3,30392,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31569,1,3,0)
- ;;=3^Primary osteoarthritis, left shoulder
- ;;^UTILITY(U,$J,358.3,31569,1,4,0)
- ;;=4^M19.012
- ;;^UTILITY(U,$J,358.3,31569,2)
- ;;=^5010809
- ;;^UTILITY(U,$J,358.3,31570,0)
- ;;=M19.071^^180^1962^23
- ;;^UTILITY(U,$J,358.3,31570,1,0)
+ ;;^UTILITY(U,$J,358.3,30392,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of small intestine
+ ;;^UTILITY(U,$J,358.3,30392,1,4,0)
+ ;;=4^Z85.068
+ ;;^UTILITY(U,$J,358.3,30392,2)
+ ;;=^5063404
+ ;;^UTILITY(U,$J,358.3,30393,0)
+ ;;=Z85.07^^118^1508^11
+ ;;^UTILITY(U,$J,358.3,30393,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31570,1,3,0)
- ;;=3^Primary osteoarthritis, right ankle and foot
- ;;^UTILITY(U,$J,358.3,31570,1,4,0)
- ;;=4^M19.071
+ ;;^UTILITY(U,$J,358.3,30393,1,3,0)
+ ;;=3^Personal history of malignant neoplasm of pancreas
+ ;;^UTILITY(U,$J,358.3,30393,1,4,0)
+ ;;=4^Z85.07

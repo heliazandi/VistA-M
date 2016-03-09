@@ -1,144 +1,124 @@
-IBDEI0HB ; ; 06-AUG-2015
+IBDEI0HB ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8063,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8063,1,4,0)
- ;;=4^595.0
- ;;^UTILITY(U,$J,358.3,8063,1,5,0)
- ;;=5^Cystitis, Acute
- ;;^UTILITY(U,$J,358.3,8063,2)
- ;;=^259104
- ;;^UTILITY(U,$J,358.3,8064,0)
- ;;=595.82^^35^480^11
- ;;^UTILITY(U,$J,358.3,8064,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8064,1,4,0)
- ;;=4^595.82
- ;;^UTILITY(U,$J,358.3,8064,1,5,0)
- ;;=5^Cystitis, Radiation
- ;;^UTILITY(U,$J,358.3,8064,2)
- ;;=^270391
- ;;^UTILITY(U,$J,358.3,8065,0)
- ;;=596.59^^35^480^17
- ;;^UTILITY(U,$J,358.3,8065,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8065,1,4,0)
- ;;=4^596.59
- ;;^UTILITY(U,$J,358.3,8065,1,5,0)
- ;;=5^Detrusor Muscle Insuff
- ;;^UTILITY(U,$J,358.3,8065,2)
- ;;=^270393
- ;;^UTILITY(U,$J,358.3,8066,0)
- ;;=788.1^^35^480^18
- ;;^UTILITY(U,$J,358.3,8066,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8066,1,4,0)
- ;;=4^788.1
- ;;^UTILITY(U,$J,358.3,8066,1,5,0)
- ;;=5^Dysuria
- ;;^UTILITY(U,$J,358.3,8066,2)
- ;;=^37716
- ;;^UTILITY(U,$J,358.3,8067,0)
- ;;=604.90^^35^480^41
- ;;^UTILITY(U,$J,358.3,8067,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8067,1,4,0)
- ;;=4^604.90
- ;;^UTILITY(U,$J,358.3,8067,1,5,0)
- ;;=5^Orchitis/Epididymit
- ;;^UTILITY(U,$J,358.3,8067,2)
- ;;=^86178
- ;;^UTILITY(U,$J,358.3,8068,0)
- ;;=607.84^^35^480^34
- ;;^UTILITY(U,$J,358.3,8068,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8068,1,4,0)
- ;;=4^607.84
- ;;^UTILITY(U,$J,358.3,8068,1,5,0)
- ;;=5^Impotence, Organic Origin
- ;;^UTILITY(U,$J,358.3,8068,2)
- ;;=^270441
- ;;^UTILITY(U,$J,358.3,8069,0)
- ;;=098.0^^35^480^56
- ;;^UTILITY(U,$J,358.3,8069,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8069,1,4,0)
- ;;=4^098.0
- ;;^UTILITY(U,$J,358.3,8069,1,5,0)
- ;;=5^Urethritis, Gonococcal
- ;;^UTILITY(U,$J,358.3,8069,2)
- ;;=^52567
- ;;^UTILITY(U,$J,358.3,8070,0)
- ;;=550.92^^35^480^23
- ;;^UTILITY(U,$J,358.3,8070,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8070,1,4,0)
- ;;=4^550.92
- ;;^UTILITY(U,$J,358.3,8070,1,5,0)
- ;;=5^Hernia, Inguinal, Bilat
- ;;^UTILITY(U,$J,358.3,8070,2)
- ;;=^270212
- ;;^UTILITY(U,$J,358.3,8071,0)
- ;;=550.90^^35^480^24
- ;;^UTILITY(U,$J,358.3,8071,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8071,1,4,0)
- ;;=4^550.90
- ;;^UTILITY(U,$J,358.3,8071,1,5,0)
- ;;=5^Hernia, Inguinal, Unilat
- ;;^UTILITY(U,$J,358.3,8071,2)
- ;;=^63302
- ;;^UTILITY(U,$J,358.3,8072,0)
- ;;=302.72^^35^480^35
- ;;^UTILITY(U,$J,358.3,8072,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8072,1,4,0)
- ;;=4^302.72
- ;;^UTILITY(U,$J,358.3,8072,1,5,0)
- ;;=5^Impotence, Psychosocial
- ;;^UTILITY(U,$J,358.3,8072,2)
- ;;=^100632
- ;;^UTILITY(U,$J,358.3,8073,0)
- ;;=788.30^^35^480^61
- ;;^UTILITY(U,$J,358.3,8073,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8073,1,4,0)
- ;;=4^788.30
- ;;^UTILITY(U,$J,358.3,8073,1,5,0)
- ;;=5^Urinary Incontinence,Unspec
- ;;^UTILITY(U,$J,358.3,8073,2)
- ;;=^124400
- ;;^UTILITY(U,$J,358.3,8074,0)
- ;;=V13.01^^35^480^25
- ;;^UTILITY(U,$J,358.3,8074,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8074,1,4,0)
- ;;=4^V13.01
- ;;^UTILITY(U,$J,358.3,8074,1,5,0)
- ;;=5^Hx Of Kidney Stone
- ;;^UTILITY(U,$J,358.3,8074,2)
- ;;=^303403
- ;;^UTILITY(U,$J,358.3,8075,0)
- ;;=302.71^^35^480^36
- ;;^UTILITY(U,$J,358.3,8075,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8075,1,4,0)
- ;;=4^302.71
- ;;^UTILITY(U,$J,358.3,8075,1,5,0)
- ;;=5^Loss Of Libido
- ;;^UTILITY(U,$J,358.3,8075,2)
- ;;=^1
- ;;^UTILITY(U,$J,358.3,8076,0)
- ;;=596.54^^35^480^38
- ;;^UTILITY(U,$J,358.3,8076,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8076,1,4,0)
- ;;=4^596.54
- ;;^UTILITY(U,$J,358.3,8076,1,5,0)
- ;;=5^Neurogenic Bladder 
- ;;^UTILITY(U,$J,358.3,8076,2)
- ;;=^304798
- ;;^UTILITY(U,$J,358.3,8077,0)
- ;;=788.43^^35^480^39
+ ;;^UTILITY(U,$J,358.3,8014,0)
+ ;;=S90.425A^^33^431^31
+ ;;^UTILITY(U,$J,358.3,8014,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8014,1,3,0)
+ ;;=3^Blister (nonthermal), left lesser toe(s), initial encounter
+ ;;^UTILITY(U,$J,358.3,8014,1,4,0)
+ ;;=4^S90.425A
+ ;;^UTILITY(U,$J,358.3,8014,2)
+ ;;=^5043919
+ ;;^UTILITY(U,$J,358.3,8015,0)
+ ;;=T23.121A^^33^431^35
+ ;;^UTILITY(U,$J,358.3,8015,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8015,1,3,0)
+ ;;=3^Burn first degree of single r finger except thumb, init
+ ;;^UTILITY(U,$J,358.3,8015,1,4,0)
+ ;;=4^T23.121A
+ ;;^UTILITY(U,$J,358.3,8015,2)
+ ;;=^5047671
+ ;;^UTILITY(U,$J,358.3,8016,0)
+ ;;=T23.122A^^33^431^34
+ ;;^UTILITY(U,$J,358.3,8016,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8016,1,3,0)
+ ;;=3^Burn first degree of single l finger except thumb, init
+ ;;^UTILITY(U,$J,358.3,8016,1,4,0)
+ ;;=4^T23.122A
+ ;;^UTILITY(U,$J,358.3,8016,2)
+ ;;=^5047674
+ ;;^UTILITY(U,$J,358.3,8017,0)
+ ;;=T23.221A^^33^431^39
+ ;;^UTILITY(U,$J,358.3,8017,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8017,1,3,0)
+ ;;=3^Burn second degree of single r finger except thumb, init
+ ;;^UTILITY(U,$J,358.3,8017,1,4,0)
+ ;;=4^T23.221A
+ ;;^UTILITY(U,$J,358.3,8017,2)
+ ;;=^5047749
+ ;;^UTILITY(U,$J,358.3,8018,0)
+ ;;=T23.222A^^33^431^38
+ ;;^UTILITY(U,$J,358.3,8018,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8018,1,3,0)
+ ;;=3^Burn second degree of single l finger except thumb, init
+ ;;^UTILITY(U,$J,358.3,8018,1,4,0)
+ ;;=4^T23.222A
+ ;;^UTILITY(U,$J,358.3,8018,2)
+ ;;=^5047752
+ ;;^UTILITY(U,$J,358.3,8019,0)
+ ;;=T23.321A^^33^431^43
+ ;;^UTILITY(U,$J,358.3,8019,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8019,1,3,0)
+ ;;=3^Burn third degree of single r finger except thumb, init
+ ;;^UTILITY(U,$J,358.3,8019,1,4,0)
+ ;;=4^T23.321A
+ ;;^UTILITY(U,$J,358.3,8019,2)
+ ;;=^5047827
+ ;;^UTILITY(U,$J,358.3,8020,0)
+ ;;=T23.322A^^33^431^42
+ ;;^UTILITY(U,$J,358.3,8020,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8020,1,3,0)
+ ;;=3^Burn third degree of single l finger except thumb, init
+ ;;^UTILITY(U,$J,358.3,8020,1,4,0)
+ ;;=4^T23.322A
+ ;;^UTILITY(U,$J,358.3,8020,2)
+ ;;=^5047830
+ ;;^UTILITY(U,$J,358.3,8021,0)
+ ;;=T23.101A^^33^431^33
+ ;;^UTILITY(U,$J,358.3,8021,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8021,1,3,0)
+ ;;=3^Burn first degree of right hand, unsp site, init encntr
+ ;;^UTILITY(U,$J,358.3,8021,1,4,0)
+ ;;=4^T23.101A
+ ;;^UTILITY(U,$J,358.3,8021,2)
+ ;;=^5047656
+ ;;^UTILITY(U,$J,358.3,8022,0)
+ ;;=T23.102A^^33^431^32
+ ;;^UTILITY(U,$J,358.3,8022,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8022,1,3,0)
+ ;;=3^Burn first degree of left hand, unsp site, init encntr
+ ;;^UTILITY(U,$J,358.3,8022,1,4,0)
+ ;;=4^T23.102A
+ ;;^UTILITY(U,$J,358.3,8022,2)
+ ;;=^5047659
+ ;;^UTILITY(U,$J,358.3,8023,0)
+ ;;=T23.201A^^33^431^37
+ ;;^UTILITY(U,$J,358.3,8023,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8023,1,3,0)
+ ;;=3^Burn second degree of right hand, unsp site, init encntr
+ ;;^UTILITY(U,$J,358.3,8023,1,4,0)
+ ;;=4^T23.201A
+ ;;^UTILITY(U,$J,358.3,8023,2)
+ ;;=^5047734
+ ;;^UTILITY(U,$J,358.3,8024,0)
+ ;;=T23.202A^^33^431^36
+ ;;^UTILITY(U,$J,358.3,8024,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8024,1,3,0)
+ ;;=3^Burn second degree of left hand, unsp site, init encntr
+ ;;^UTILITY(U,$J,358.3,8024,1,4,0)
+ ;;=4^T23.202A
+ ;;^UTILITY(U,$J,358.3,8024,2)
+ ;;=^5047737
+ ;;^UTILITY(U,$J,358.3,8025,0)
+ ;;=T23.301A^^33^431^41
+ ;;^UTILITY(U,$J,358.3,8025,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8025,1,3,0)
+ ;;=3^Burn third degree of right hand, unsp site, init encntr
+ ;;^UTILITY(U,$J,358.3,8025,1,4,0)
+ ;;=4^T23.301A
+ ;;^UTILITY(U,$J,358.3,8025,2)
+ ;;=^5047812

@@ -1,140 +1,134 @@
-IBDEI040 ; ; 06-AUG-2015
+IBDEI040 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1342,1,4,0)
- ;;=4^Z79.01
- ;;^UTILITY(U,$J,358.3,1342,2)
- ;;=^5063330
- ;;^UTILITY(U,$J,358.3,1343,0)
- ;;=Z95.1^^3^40^1
- ;;^UTILITY(U,$J,358.3,1343,1,0)
+ ;;^UTILITY(U,$J,358.3,1441,1,3,0)
+ ;;=3^Underdosing of unspecified systemic antibiotic, init encntr
+ ;;^UTILITY(U,$J,358.3,1441,1,4,0)
+ ;;=4^T36.96XA
+ ;;^UTILITY(U,$J,358.3,1441,2)
+ ;;=^5049433
+ ;;^UTILITY(U,$J,358.3,1442,0)
+ ;;=T36.96XD^^8^135^90
+ ;;^UTILITY(U,$J,358.3,1442,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1343,1,3,0)
- ;;=3^Presence of aortocoronary bypass graft
- ;;^UTILITY(U,$J,358.3,1343,1,4,0)
- ;;=4^Z95.1
- ;;^UTILITY(U,$J,358.3,1343,2)
- ;;=^5063669
- ;;^UTILITY(U,$J,358.3,1344,0)
- ;;=Z95.2^^3^40^3
- ;;^UTILITY(U,$J,358.3,1344,1,0)
+ ;;^UTILITY(U,$J,358.3,1442,1,3,0)
+ ;;=3^Underdosing of unspecified systemic antibiotic, subs encntr
+ ;;^UTILITY(U,$J,358.3,1442,1,4,0)
+ ;;=4^T36.96XD
+ ;;^UTILITY(U,$J,358.3,1442,2)
+ ;;=^5049434
+ ;;^UTILITY(U,$J,358.3,1443,0)
+ ;;=T36.96XS^^8^135^91
+ ;;^UTILITY(U,$J,358.3,1443,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1344,1,3,0)
- ;;=3^Presence of prosthetic heart valve
- ;;^UTILITY(U,$J,358.3,1344,1,4,0)
- ;;=4^Z95.2
- ;;^UTILITY(U,$J,358.3,1344,2)
- ;;=^5063670
- ;;^UTILITY(U,$J,358.3,1345,0)
- ;;=Z95.3^^3^40^4
- ;;^UTILITY(U,$J,358.3,1345,1,0)
+ ;;^UTILITY(U,$J,358.3,1443,1,3,0)
+ ;;=3^Underdosing of unspecified systemic antibiotic, sequela
+ ;;^UTILITY(U,$J,358.3,1443,1,4,0)
+ ;;=4^T36.96XS
+ ;;^UTILITY(U,$J,358.3,1443,2)
+ ;;=^5049435
+ ;;^UTILITY(U,$J,358.3,1444,0)
+ ;;=Z45.320^^8^136^1
+ ;;^UTILITY(U,$J,358.3,1444,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1345,1,3,0)
- ;;=3^Presence of xenogenic heart valve
- ;;^UTILITY(U,$J,358.3,1345,1,4,0)
- ;;=4^Z95.3
- ;;^UTILITY(U,$J,358.3,1345,2)
- ;;=^5063671
- ;;^UTILITY(U,$J,358.3,1346,0)
- ;;=Z95.0^^3^40^2
- ;;^UTILITY(U,$J,358.3,1346,1,0)
+ ;;^UTILITY(U,$J,358.3,1444,1,3,0)
+ ;;=3^Adjust/Mgmt of Bone Conduction Device
+ ;;^UTILITY(U,$J,358.3,1444,1,4,0)
+ ;;=4^Z45.320
+ ;;^UTILITY(U,$J,358.3,1444,2)
+ ;;=^5063001
+ ;;^UTILITY(U,$J,358.3,1445,0)
+ ;;=Z45.321^^8^136^2
+ ;;^UTILITY(U,$J,358.3,1445,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1346,1,3,0)
- ;;=3^Presence of cardiac pacemaker
- ;;^UTILITY(U,$J,358.3,1346,1,4,0)
- ;;=4^Z95.0
- ;;^UTILITY(U,$J,358.3,1346,2)
- ;;=^5063668
- ;;^UTILITY(U,$J,358.3,1347,0)
- ;;=A15.0^^3^41^103
- ;;^UTILITY(U,$J,358.3,1347,1,0)
+ ;;^UTILITY(U,$J,358.3,1445,1,3,0)
+ ;;=3^Adjust/Mgmt of Cochlear Device
+ ;;^UTILITY(U,$J,358.3,1445,1,4,0)
+ ;;=4^Z45.321
+ ;;^UTILITY(U,$J,358.3,1445,2)
+ ;;=^5063002
+ ;;^UTILITY(U,$J,358.3,1446,0)
+ ;;=Z45.328^^8^136^3
+ ;;^UTILITY(U,$J,358.3,1446,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1347,1,3,0)
- ;;=3^Tuberculosis of lung
- ;;^UTILITY(U,$J,358.3,1347,1,4,0)
- ;;=4^A15.0
- ;;^UTILITY(U,$J,358.3,1347,2)
- ;;=^5000062
- ;;^UTILITY(U,$J,358.3,1348,0)
- ;;=A31.0^^3^41^92
- ;;^UTILITY(U,$J,358.3,1348,1,0)
+ ;;^UTILITY(U,$J,358.3,1446,1,3,0)
+ ;;=3^Adjust/Mgmt of Implanted Hearing Device
+ ;;^UTILITY(U,$J,358.3,1446,1,4,0)
+ ;;=4^Z45.328
+ ;;^UTILITY(U,$J,358.3,1446,2)
+ ;;=^5063003
+ ;;^UTILITY(U,$J,358.3,1447,0)
+ ;;=Z02.0^^8^136^6
+ ;;^UTILITY(U,$J,358.3,1447,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1348,1,3,0)
- ;;=3^Pulmonary mycobacterial infection
- ;;^UTILITY(U,$J,358.3,1348,1,4,0)
- ;;=4^A31.0
- ;;^UTILITY(U,$J,358.3,1348,2)
- ;;=^5000149
- ;;^UTILITY(U,$J,358.3,1349,0)
- ;;=B20.^^3^41^72
- ;;^UTILITY(U,$J,358.3,1349,1,0)
+ ;;^UTILITY(U,$J,358.3,1447,1,3,0)
+ ;;=3^Exam for Admission to Educational Institution
+ ;;^UTILITY(U,$J,358.3,1447,1,4,0)
+ ;;=4^Z02.0
+ ;;^UTILITY(U,$J,358.3,1447,2)
+ ;;=^5062633
+ ;;^UTILITY(U,$J,358.3,1448,0)
+ ;;=Z02.2^^8^136^7
+ ;;^UTILITY(U,$J,358.3,1448,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1349,1,3,0)
- ;;=3^Human immunodeficiency virus [HIV] disease
- ;;^UTILITY(U,$J,358.3,1349,1,4,0)
- ;;=4^B20.
- ;;^UTILITY(U,$J,358.3,1349,2)
- ;;=^5000555
- ;;^UTILITY(U,$J,358.3,1350,0)
- ;;=B02.9^^3^41^110
- ;;^UTILITY(U,$J,358.3,1350,1,0)
+ ;;^UTILITY(U,$J,358.3,1448,1,3,0)
+ ;;=3^Exam for Admission to Residential Institution
+ ;;^UTILITY(U,$J,358.3,1448,1,4,0)
+ ;;=4^Z02.2
+ ;;^UTILITY(U,$J,358.3,1448,2)
+ ;;=^5062635
+ ;;^UTILITY(U,$J,358.3,1449,0)
+ ;;=Z02.4^^8^136^8
+ ;;^UTILITY(U,$J,358.3,1449,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1350,1,3,0)
- ;;=3^Zoster without complications
- ;;^UTILITY(U,$J,358.3,1350,1,4,0)
- ;;=4^B02.9
- ;;^UTILITY(U,$J,358.3,1350,2)
- ;;=^5000501
- ;;^UTILITY(U,$J,358.3,1351,0)
- ;;=A60.9^^3^41^26
- ;;^UTILITY(U,$J,358.3,1351,1,0)
+ ;;^UTILITY(U,$J,358.3,1449,1,3,0)
+ ;;=3^Exam for Driving License
+ ;;^UTILITY(U,$J,358.3,1449,1,4,0)
+ ;;=4^Z02.4
+ ;;^UTILITY(U,$J,358.3,1449,2)
+ ;;=^5062637
+ ;;^UTILITY(U,$J,358.3,1450,0)
+ ;;=Z02.6^^8^136^10
+ ;;^UTILITY(U,$J,358.3,1450,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1351,1,3,0)
- ;;=3^Anogenital herpesviral infection, unspecified
- ;;^UTILITY(U,$J,358.3,1351,1,4,0)
- ;;=4^A60.9
- ;;^UTILITY(U,$J,358.3,1351,2)
- ;;=^5000359
- ;;^UTILITY(U,$J,358.3,1352,0)
- ;;=A60.04^^3^41^71
- ;;^UTILITY(U,$J,358.3,1352,1,0)
+ ;;^UTILITY(U,$J,358.3,1450,1,3,0)
+ ;;=3^Exam for Insurance Purposes
+ ;;^UTILITY(U,$J,358.3,1450,1,4,0)
+ ;;=4^Z02.6
+ ;;^UTILITY(U,$J,358.3,1450,2)
+ ;;=^5062639
+ ;;^UTILITY(U,$J,358.3,1451,0)
+ ;;=Z02.5^^8^136^12
+ ;;^UTILITY(U,$J,358.3,1451,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1352,1,3,0)
- ;;=3^Herpesviral vulvovaginitis
- ;;^UTILITY(U,$J,358.3,1352,1,4,0)
- ;;=4^A60.04
- ;;^UTILITY(U,$J,358.3,1352,2)
- ;;=^5000356
- ;;^UTILITY(U,$J,358.3,1353,0)
- ;;=A60.01^^3^41^70
- ;;^UTILITY(U,$J,358.3,1353,1,0)
+ ;;^UTILITY(U,$J,358.3,1451,1,3,0)
+ ;;=3^Exam for Sport Participation
+ ;;^UTILITY(U,$J,358.3,1451,1,4,0)
+ ;;=4^Z02.5
+ ;;^UTILITY(U,$J,358.3,1451,2)
+ ;;=^5062638
+ ;;^UTILITY(U,$J,358.3,1452,0)
+ ;;=Z02.3^^8^136^11
+ ;;^UTILITY(U,$J,358.3,1452,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1353,1,3,0)
- ;;=3^Herpesviral infection of penis
- ;;^UTILITY(U,$J,358.3,1353,1,4,0)
- ;;=4^A60.01
- ;;^UTILITY(U,$J,358.3,1353,2)
- ;;=^5000353
- ;;^UTILITY(U,$J,358.3,1354,0)
- ;;=B00.81^^3^41^69
- ;;^UTILITY(U,$J,358.3,1354,1,0)
+ ;;^UTILITY(U,$J,358.3,1452,1,3,0)
+ ;;=3^Exam for Recruitment to Armed Forces
+ ;;^UTILITY(U,$J,358.3,1452,1,4,0)
+ ;;=4^Z02.3
+ ;;^UTILITY(U,$J,358.3,1452,2)
+ ;;=^5062636
+ ;;^UTILITY(U,$J,358.3,1453,0)
+ ;;=Z01.118^^8^136^4
+ ;;^UTILITY(U,$J,358.3,1453,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1354,1,3,0)
- ;;=3^Herpesviral hepatitis
- ;;^UTILITY(U,$J,358.3,1354,1,4,0)
- ;;=4^B00.81
- ;;^UTILITY(U,$J,358.3,1354,2)
- ;;=^5000478
- ;;^UTILITY(U,$J,358.3,1355,0)
- ;;=B15.9^^3^41^68
- ;;^UTILITY(U,$J,358.3,1355,1,0)
+ ;;^UTILITY(U,$J,358.3,1453,1,3,0)
+ ;;=3^Ears/Hearing Exam w/ Abnormal Findings
+ ;;^UTILITY(U,$J,358.3,1453,1,4,0)
+ ;;=4^Z01.118
+ ;;^UTILITY(U,$J,358.3,1453,2)
+ ;;=^5062616
+ ;;^UTILITY(U,$J,358.3,1454,0)
+ ;;=Z01.10^^8^136^5
+ ;;^UTILITY(U,$J,358.3,1454,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1355,1,3,0)
- ;;=3^Hepatitis A without hepatic coma
- ;;^UTILITY(U,$J,358.3,1355,1,4,0)
- ;;=4^B15.9
- ;;^UTILITY(U,$J,358.3,1355,2)
- ;;=^5000536
- ;;^UTILITY(U,$J,358.3,1356,0)
- ;;=B16.9^^3^41^5

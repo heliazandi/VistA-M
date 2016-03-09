@@ -1,138 +1,122 @@
-IBDEI1QF ; ; 06-AUG-2015
+IBDEI1QF ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30642,0)
- ;;=N70.03^^178^1924^13
- ;;^UTILITY(U,$J,358.3,30642,1,0)
+ ;;^UTILITY(U,$J,358.3,29389,1,3,0)
+ ;;=3^Suprvsn of preg w history of infertility, third trimester
+ ;;^UTILITY(U,$J,358.3,29389,1,4,0)
+ ;;=4^O09.03
+ ;;^UTILITY(U,$J,358.3,29389,2)
+ ;;=^5016051
+ ;;^UTILITY(U,$J,358.3,29390,0)
+ ;;=O09.11^^115^1462^29
+ ;;^UTILITY(U,$J,358.3,29390,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30642,1,3,0)
- ;;=3^Acute salpingitis and oophoritis
- ;;^UTILITY(U,$J,358.3,30642,1,4,0)
- ;;=4^N70.03
- ;;^UTILITY(U,$J,358.3,30642,2)
- ;;=^270465
- ;;^UTILITY(U,$J,358.3,30643,0)
- ;;=N70.11^^178^1924^30
- ;;^UTILITY(U,$J,358.3,30643,1,0)
+ ;;^UTILITY(U,$J,358.3,29390,1,3,0)
+ ;;=3^Suprvsn of preg w history of ect or molar preg, first tri
+ ;;^UTILITY(U,$J,358.3,29390,1,4,0)
+ ;;=4^O09.11
+ ;;^UTILITY(U,$J,358.3,29390,2)
+ ;;=^5016053
+ ;;^UTILITY(U,$J,358.3,29391,0)
+ ;;=O09.12^^115^1462^30
+ ;;^UTILITY(U,$J,358.3,29391,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30643,1,3,0)
- ;;=3^Chronic salpingitis
- ;;^UTILITY(U,$J,358.3,30643,1,4,0)
- ;;=4^N70.11
- ;;^UTILITY(U,$J,358.3,30643,2)
- ;;=^5015804
- ;;^UTILITY(U,$J,358.3,30644,0)
- ;;=N70.12^^178^1924^29
- ;;^UTILITY(U,$J,358.3,30644,1,0)
+ ;;^UTILITY(U,$J,358.3,29391,1,3,0)
+ ;;=3^Suprvsn of preg w history of ect or molar preg, second tri
+ ;;^UTILITY(U,$J,358.3,29391,1,4,0)
+ ;;=4^O09.12
+ ;;^UTILITY(U,$J,358.3,29391,2)
+ ;;=^5016054
+ ;;^UTILITY(U,$J,358.3,29392,0)
+ ;;=O09.13^^115^1462^31
+ ;;^UTILITY(U,$J,358.3,29392,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30644,1,3,0)
- ;;=3^Chronic oophoritis
- ;;^UTILITY(U,$J,358.3,30644,1,4,0)
- ;;=4^N70.12
- ;;^UTILITY(U,$J,358.3,30644,2)
- ;;=^5015805
- ;;^UTILITY(U,$J,358.3,30645,0)
- ;;=N70.13^^178^1924^31
- ;;^UTILITY(U,$J,358.3,30645,1,0)
+ ;;^UTILITY(U,$J,358.3,29392,1,3,0)
+ ;;=3^Suprvsn of preg w history of ect or molar preg, third tri
+ ;;^UTILITY(U,$J,358.3,29392,1,4,0)
+ ;;=4^O09.13
+ ;;^UTILITY(U,$J,358.3,29392,2)
+ ;;=^5016055
+ ;;^UTILITY(U,$J,358.3,29393,0)
+ ;;=O09.291^^115^1462^41
+ ;;^UTILITY(U,$J,358.3,29393,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30645,1,3,0)
- ;;=3^Chronic salpingitis and oophoritis
- ;;^UTILITY(U,$J,358.3,30645,1,4,0)
- ;;=4^N70.13
- ;;^UTILITY(U,$J,358.3,30645,2)
- ;;=^270466
- ;;^UTILITY(U,$J,358.3,30646,0)
- ;;=N73.9^^178^1924^53
- ;;^UTILITY(U,$J,358.3,30646,1,0)
+ ;;^UTILITY(U,$J,358.3,29393,1,3,0)
+ ;;=3^Suprvsn of preg w poor reprodctv or obstet hx, first tri
+ ;;^UTILITY(U,$J,358.3,29393,1,4,0)
+ ;;=4^O09.291
+ ;;^UTILITY(U,$J,358.3,29393,2)
+ ;;=^5016060
+ ;;^UTILITY(U,$J,358.3,29394,0)
+ ;;=O09.292^^115^1462^42
+ ;;^UTILITY(U,$J,358.3,29394,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30646,1,3,0)
- ;;=3^Female pelvic inflammatory disease, unspecified
- ;;^UTILITY(U,$J,358.3,30646,1,4,0)
- ;;=4^N73.9
- ;;^UTILITY(U,$J,358.3,30646,2)
- ;;=^5015820
- ;;^UTILITY(U,$J,358.3,30647,0)
- ;;=N72.^^178^1924^59
- ;;^UTILITY(U,$J,358.3,30647,1,0)
+ ;;^UTILITY(U,$J,358.3,29394,1,3,0)
+ ;;=3^Suprvsn of preg w poor reprodctv or obstet hx, second tri
+ ;;^UTILITY(U,$J,358.3,29394,1,4,0)
+ ;;=4^O09.292
+ ;;^UTILITY(U,$J,358.3,29394,2)
+ ;;=^5016061
+ ;;^UTILITY(U,$J,358.3,29395,0)
+ ;;=O09.293^^115^1462^43
+ ;;^UTILITY(U,$J,358.3,29395,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30647,1,3,0)
- ;;=3^Inflammatory disease of cervix uteri
- ;;^UTILITY(U,$J,358.3,30647,1,4,0)
- ;;=4^N72.
- ;;^UTILITY(U,$J,358.3,30647,2)
- ;;=^5015812
- ;;^UTILITY(U,$J,358.3,30648,0)
- ;;=N76.0^^178^1924^14
- ;;^UTILITY(U,$J,358.3,30648,1,0)
+ ;;^UTILITY(U,$J,358.3,29395,1,3,0)
+ ;;=3^Suprvsn of preg w poor reprodctv or obstet hx, third tri
+ ;;^UTILITY(U,$J,358.3,29395,1,4,0)
+ ;;=4^O09.293
+ ;;^UTILITY(U,$J,358.3,29395,2)
+ ;;=^5016062
+ ;;^UTILITY(U,$J,358.3,29396,0)
+ ;;=O09.41^^115^1462^26
+ ;;^UTILITY(U,$J,358.3,29396,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30648,1,3,0)
- ;;=3^Acute vaginitis
- ;;^UTILITY(U,$J,358.3,30648,1,4,0)
- ;;=4^N76.0
- ;;^UTILITY(U,$J,358.3,30648,2)
- ;;=^5015826
- ;;^UTILITY(U,$J,358.3,30649,0)
- ;;=N76.1^^178^1924^95
- ;;^UTILITY(U,$J,358.3,30649,1,0)
+ ;;^UTILITY(U,$J,358.3,29396,1,3,0)
+ ;;=3^Suprvsn of preg w grand multiparity, first trimester
+ ;;^UTILITY(U,$J,358.3,29396,1,4,0)
+ ;;=4^O09.41
+ ;;^UTILITY(U,$J,358.3,29396,2)
+ ;;=^5016069
+ ;;^UTILITY(U,$J,358.3,29397,0)
+ ;;=O09.42^^115^1462^27
+ ;;^UTILITY(U,$J,358.3,29397,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30649,1,3,0)
- ;;=3^Subacute and chronic vaginitis
- ;;^UTILITY(U,$J,358.3,30649,1,4,0)
- ;;=4^N76.1
- ;;^UTILITY(U,$J,358.3,30649,2)
- ;;=^5015827
- ;;^UTILITY(U,$J,358.3,30650,0)
- ;;=N75.0^^178^1924^34
- ;;^UTILITY(U,$J,358.3,30650,1,0)
+ ;;^UTILITY(U,$J,358.3,29397,1,3,0)
+ ;;=3^Suprvsn of preg w grand multiparity, second trimester
+ ;;^UTILITY(U,$J,358.3,29397,1,4,0)
+ ;;=4^O09.42
+ ;;^UTILITY(U,$J,358.3,29397,2)
+ ;;=^5016070
+ ;;^UTILITY(U,$J,358.3,29398,0)
+ ;;=O09.43^^115^1462^28
+ ;;^UTILITY(U,$J,358.3,29398,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30650,1,3,0)
- ;;=3^Cyst of Bartholin's gland
- ;;^UTILITY(U,$J,358.3,30650,1,4,0)
- ;;=4^N75.0
- ;;^UTILITY(U,$J,358.3,30650,2)
- ;;=^5015822
- ;;^UTILITY(U,$J,358.3,30651,0)
- ;;=N75.1^^178^1924^5
- ;;^UTILITY(U,$J,358.3,30651,1,0)
+ ;;^UTILITY(U,$J,358.3,29398,1,3,0)
+ ;;=3^Suprvsn of preg w grand multiparity, third trimester
+ ;;^UTILITY(U,$J,358.3,29398,1,4,0)
+ ;;=4^O09.43
+ ;;^UTILITY(U,$J,358.3,29398,2)
+ ;;=^5016071
+ ;;^UTILITY(U,$J,358.3,29399,0)
+ ;;=O09.31^^115^1462^38
+ ;;^UTILITY(U,$J,358.3,29399,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30651,1,3,0)
- ;;=3^Abscess of Bartholin's gland
- ;;^UTILITY(U,$J,358.3,30651,1,4,0)
- ;;=4^N75.1
- ;;^UTILITY(U,$J,358.3,30651,2)
- ;;=^5015823
- ;;^UTILITY(U,$J,358.3,30652,0)
- ;;=N76.4^^178^1924^6
- ;;^UTILITY(U,$J,358.3,30652,1,0)
+ ;;^UTILITY(U,$J,358.3,29399,1,3,0)
+ ;;=3^Suprvsn of preg w insufficient antenat care, first trimester
+ ;;^UTILITY(U,$J,358.3,29399,1,4,0)
+ ;;=4^O09.31
+ ;;^UTILITY(U,$J,358.3,29399,2)
+ ;;=^5016065
+ ;;^UTILITY(U,$J,358.3,29400,0)
+ ;;=O09.32^^115^1462^39
+ ;;^UTILITY(U,$J,358.3,29400,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30652,1,3,0)
- ;;=3^Abscess of vulva
- ;;^UTILITY(U,$J,358.3,30652,1,4,0)
- ;;=4^N76.4
- ;;^UTILITY(U,$J,358.3,30652,2)
- ;;=^5015830
- ;;^UTILITY(U,$J,358.3,30653,0)
- ;;=N80.0^^178^1924^46
- ;;^UTILITY(U,$J,358.3,30653,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30653,1,3,0)
- ;;=3^Endometriosis of uterus
- ;;^UTILITY(U,$J,358.3,30653,1,4,0)
- ;;=4^N80.0
- ;;^UTILITY(U,$J,358.3,30653,2)
- ;;=^270482
- ;;^UTILITY(U,$J,358.3,30654,0)
- ;;=N80.1^^178^1924^45
- ;;^UTILITY(U,$J,358.3,30654,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30654,1,3,0)
- ;;=3^Endometriosis of ovary
- ;;^UTILITY(U,$J,358.3,30654,1,4,0)
- ;;=4^N80.1
- ;;^UTILITY(U,$J,358.3,30654,2)
- ;;=^270484
- ;;^UTILITY(U,$J,358.3,30655,0)
- ;;=N81.11^^178^1924^35
- ;;^UTILITY(U,$J,358.3,30655,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29400,1,3,0)
+ ;;=3^Suprvsn of preg w insufficient antenat care, second tri
+ ;;^UTILITY(U,$J,358.3,29400,1,4,0)
+ ;;=4^O09.32
+ ;;^UTILITY(U,$J,358.3,29400,2)
+ ;;=^5016066
+ ;;^UTILITY(U,$J,358.3,29401,0)
+ ;;=O09.33^^115^1462^40

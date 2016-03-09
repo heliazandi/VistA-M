@@ -1,130 +1,118 @@
-IBDEI1UJ ; ; 06-AUG-2015
+IBDEI1UJ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32509,0)
- ;;=I12.9^^182^1988^51
- ;;^UTILITY(U,$J,358.3,32509,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32509,1,3,0)
- ;;=3^Hypertensive Kidney Disease Chronic w/ Stg 1-4
- ;;^UTILITY(U,$J,358.3,32509,1,4,0)
- ;;=4^I12.9
- ;;^UTILITY(U,$J,358.3,32509,2)
- ;;=^5007066
- ;;^UTILITY(U,$J,358.3,32510,0)
- ;;=N04.9^^182^1988^68
- ;;^UTILITY(U,$J,358.3,32510,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32510,1,3,0)
- ;;=3^Nephrotic Syndrome w/ Unspec Morphologic Changes
- ;;^UTILITY(U,$J,358.3,32510,1,4,0)
- ;;=4^N04.9
- ;;^UTILITY(U,$J,358.3,32510,2)
- ;;=^5015540
- ;;^UTILITY(U,$J,358.3,32511,0)
- ;;=N02.9^^182^1988^46
- ;;^UTILITY(U,$J,358.3,32511,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32511,1,3,0)
- ;;=3^Hematuria w/ Unspec Morphologic Changes,Recurrent & Persistent
- ;;^UTILITY(U,$J,358.3,32511,1,4,0)
- ;;=4^N02.9
- ;;^UTILITY(U,$J,358.3,32511,2)
- ;;=^5015520
- ;;^UTILITY(U,$J,358.3,32512,0)
- ;;=N06.9^^182^1988^83
- ;;^UTILITY(U,$J,358.3,32512,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32512,1,3,0)
- ;;=3^Proteinuria Isolated w/ Unspec Morphologic Lesion
- ;;^UTILITY(U,$J,358.3,32512,1,4,0)
- ;;=4^N06.9
- ;;^UTILITY(U,$J,358.3,32512,2)
- ;;=^5015558
- ;;^UTILITY(U,$J,358.3,32513,0)
- ;;=N05.9^^182^1988^65
- ;;^UTILITY(U,$J,358.3,32513,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32513,1,3,0)
- ;;=3^Nephritic Syndrome w/ Unspec Morphologic Changes
- ;;^UTILITY(U,$J,358.3,32513,1,4,0)
- ;;=4^N05.9
- ;;^UTILITY(U,$J,358.3,32513,2)
- ;;=^5134086
- ;;^UTILITY(U,$J,358.3,32514,0)
- ;;=N07.9^^182^1988^67
- ;;^UTILITY(U,$J,358.3,32514,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32514,1,3,0)
- ;;=3^Nephropathy Hereditary w/ Unspec Morphologic Lesions
- ;;^UTILITY(U,$J,358.3,32514,1,4,0)
- ;;=4^N07.9
- ;;^UTILITY(U,$J,358.3,32514,2)
- ;;=^5015568
- ;;^UTILITY(U,$J,358.3,32515,0)
- ;;=N15.9^^182^1988^88
- ;;^UTILITY(U,$J,358.3,32515,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32515,1,3,0)
- ;;=3^Renal Tubulo-Interstitial Disease,Unspec
- ;;^UTILITY(U,$J,358.3,32515,1,4,0)
- ;;=4^N15.9
- ;;^UTILITY(U,$J,358.3,32515,2)
- ;;=^5015596
- ;;^UTILITY(U,$J,358.3,32516,0)
- ;;=N17.9^^182^1988^58
- ;;^UTILITY(U,$J,358.3,32516,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32516,1,3,0)
- ;;=3^Kidney Failure,Acute,Unspec
- ;;^UTILITY(U,$J,358.3,32516,1,4,0)
- ;;=4^N17.9
- ;;^UTILITY(U,$J,358.3,32516,2)
- ;;=^338532
- ;;^UTILITY(U,$J,358.3,32517,0)
- ;;=N18.9^^182^1988^57
- ;;^UTILITY(U,$J,358.3,32517,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32517,1,3,0)
- ;;=3^Kidney Disease,Chronic,Unspec
- ;;^UTILITY(U,$J,358.3,32517,1,4,0)
- ;;=4^N18.9
- ;;^UTILITY(U,$J,358.3,32517,2)
- ;;=^332812
- ;;^UTILITY(U,$J,358.3,32518,0)
- ;;=N19.^^182^1988^59
- ;;^UTILITY(U,$J,358.3,32518,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32518,1,3,0)
- ;;=3^Kidney Failure,Unspec
- ;;^UTILITY(U,$J,358.3,32518,1,4,0)
- ;;=4^N19.
- ;;^UTILITY(U,$J,358.3,32518,2)
- ;;=^5015607
- ;;^UTILITY(U,$J,358.3,32519,0)
- ;;=N11.0^^182^1988^87
- ;;^UTILITY(U,$J,358.3,32519,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32519,1,3,0)
- ;;=3^Pyelonephritis,Chronic Nonobstructive Reflux-Associated
- ;;^UTILITY(U,$J,358.3,32519,1,4,0)
- ;;=4^N11.0
- ;;^UTILITY(U,$J,358.3,32519,2)
- ;;=^5015571
- ;;^UTILITY(U,$J,358.3,32520,0)
- ;;=N10.^^182^1988^66
- ;;^UTILITY(U,$J,358.3,32520,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32520,1,3,0)
- ;;=3^Nephritis Acute Tubulo-Interstitial
- ;;^UTILITY(U,$J,358.3,32520,1,4,0)
- ;;=4^N10.
- ;;^UTILITY(U,$J,358.3,32520,2)
- ;;=^5015570
- ;;^UTILITY(U,$J,358.3,32521,0)
- ;;=N20.2^^182^1988^8
- ;;^UTILITY(U,$J,358.3,32521,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32521,1,3,0)
- ;;=3^Calculus Kidney w/ Calculus Ureter
+ ;;^UTILITY(U,$J,358.3,31357,0)
+ ;;=12020^^125^1586^10^^^^1
+ ;;^UTILITY(U,$J,358.3,31357,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31357,1,2,0)
+ ;;=2^TX of Superficial Wound Dehiscence; simple closure
+ ;;^UTILITY(U,$J,358.3,31357,1,3,0)
+ ;;=3^12020
+ ;;^UTILITY(U,$J,358.3,31358,0)
+ ;;=12021^^125^1586^11^^^^1
+ ;;^UTILITY(U,$J,358.3,31358,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31358,1,2,0)
+ ;;=2^TX of Superficial Wound Dehiscence; simple closure with packing
+ ;;^UTILITY(U,$J,358.3,31358,1,3,0)
+ ;;=3^12021
+ ;;^UTILITY(U,$J,358.3,31359,0)
+ ;;=13160^^125^1586^7^^^^1
+ ;;^UTILITY(U,$J,358.3,31359,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31359,1,2,0)
+ ;;=2^Secondary Closure of Surgical Wound or Dehiscence, extensive or complicated 
+ ;;^UTILITY(U,$J,358.3,31359,1,3,0)
+ ;;=3^13160
+ ;;^UTILITY(U,$J,358.3,31360,0)
+ ;;=27650^^125^1586^6^^^^1
+ ;;^UTILITY(U,$J,358.3,31360,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31360,1,2,0)
+ ;;=2^Repair Primary Ruptured Achilles Tendon
+ ;;^UTILITY(U,$J,358.3,31360,1,3,0)
+ ;;=3^27650
+ ;;^UTILITY(U,$J,358.3,31361,0)
+ ;;=28406^^125^1586^5^^^^1
+ ;;^UTILITY(U,$J,358.3,31361,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31361,1,2,0)
+ ;;=2^Perc Fixation Calcaneous Fx
+ ;;^UTILITY(U,$J,358.3,31361,1,3,0)
+ ;;=3^28406
+ ;;^UTILITY(U,$J,358.3,31362,0)
+ ;;=16020^^125^1587^2^^^^1
+ ;;^UTILITY(U,$J,358.3,31362,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31362,1,2,0)
+ ;;=2^Dressings and/or Debridement, initial or subsequent; without anesthesia, office or hospital, small
+ ;;^UTILITY(U,$J,358.3,31362,1,3,0)
+ ;;=3^16020
+ ;;^UTILITY(U,$J,358.3,31363,0)
+ ;;=11100^^125^1588^2^^^^1
+ ;;^UTILITY(U,$J,358.3,31363,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31363,1,2,0)
+ ;;=2^Biopsy of skin,subq tissue single lesion
+ ;;^UTILITY(U,$J,358.3,31363,1,3,0)
+ ;;=3^11100
+ ;;^UTILITY(U,$J,358.3,31364,0)
+ ;;=11101^^125^1588^1^^^^1
+ ;;^UTILITY(U,$J,358.3,31364,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31364,1,2,0)
+ ;;=2^Biopsy of skin,subq tissue ea addl lesion
+ ;;^UTILITY(U,$J,358.3,31364,1,3,0)
+ ;;=3^11101
+ ;;^UTILITY(U,$J,358.3,31365,0)
+ ;;=20220^^125^1588^3^^^^1
+ ;;^UTILITY(U,$J,358.3,31365,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31365,1,2,0)
+ ;;=2^Biopsy,Bone,Trocar/Needle;Superficial
+ ;;^UTILITY(U,$J,358.3,31365,1,3,0)
+ ;;=3^20220
+ ;;^UTILITY(U,$J,358.3,31366,0)
+ ;;=20605^^125^1589^1^^^^1
+ ;;^UTILITY(U,$J,358.3,31366,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31366,1,2,0)
+ ;;=2^Arthroc,Aspir/Inj Int Joint/Bursa
+ ;;^UTILITY(U,$J,358.3,31366,1,3,0)
+ ;;=3^20605
+ ;;^UTILITY(U,$J,358.3,31367,0)
+ ;;=20615^^125^1589^6^^^^1
+ ;;^UTILITY(U,$J,358.3,31367,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31367,1,2,0)
+ ;;=2^Aspiration and injection for tx of bone cyst
+ ;;^UTILITY(U,$J,358.3,31367,1,3,0)
+ ;;=3^20615
+ ;;^UTILITY(U,$J,358.3,31368,0)
+ ;;=20600^^125^1589^3^^^^1
+ ;;^UTILITY(U,$J,358.3,31368,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31368,1,2,0)
+ ;;=2^Arthroc,Aspir/Inj Sm Joint/Bursa
+ ;;^UTILITY(U,$J,358.3,31368,1,3,0)
+ ;;=3^20600
+ ;;^UTILITY(U,$J,358.3,31369,0)
+ ;;=11900^^125^1589^15^^^^1
+ ;;^UTILITY(U,$J,358.3,31369,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31369,1,2,0)
+ ;;=2^Injection, intralesional; up to and including seven lesion 
+ ;;^UTILITY(U,$J,358.3,31369,1,3,0)
+ ;;=3^11900
+ ;;^UTILITY(U,$J,358.3,31370,0)
+ ;;=11901^^125^1589^14^^^^1
+ ;;^UTILITY(U,$J,358.3,31370,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,31370,1,2,0)
+ ;;=2^Injection, intralesional; more than seven lesions
+ ;;^UTILITY(U,$J,358.3,31370,1,3,0)
+ ;;=3^11901
+ ;;^UTILITY(U,$J,358.3,31371,0)
+ ;;=64450^^125^1589^13^^^^1

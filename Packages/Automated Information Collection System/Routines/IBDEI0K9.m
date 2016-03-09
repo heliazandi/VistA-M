@@ -1,142 +1,130 @@
-IBDEI0K9 ; ; 06-AUG-2015
+IBDEI0K9 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,9565,1,1,0)
- ;;=1^Expanded Problem Focus
- ;;^UTILITY(U,$J,358.3,9565,1,2,0)
- ;;=2^99202
- ;;^UTILITY(U,$J,358.3,9566,0)
- ;;=99203^^42^544^3
- ;;^UTILITY(U,$J,358.3,9566,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9566,1,1,0)
- ;;=1^Detailed
- ;;^UTILITY(U,$J,358.3,9566,1,2,0)
- ;;=2^99203
- ;;^UTILITY(U,$J,358.3,9567,0)
- ;;=99204^^42^544^4
- ;;^UTILITY(U,$J,358.3,9567,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9567,1,1,0)
- ;;=1^Comprehensive, Moderate
- ;;^UTILITY(U,$J,358.3,9567,1,2,0)
- ;;=2^99204
- ;;^UTILITY(U,$J,358.3,9568,0)
- ;;=99205^^42^544^5
- ;;^UTILITY(U,$J,358.3,9568,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9568,1,1,0)
- ;;=1^Comprehensive, High
- ;;^UTILITY(U,$J,358.3,9568,1,2,0)
- ;;=2^99205
- ;;^UTILITY(U,$J,358.3,9569,0)
- ;;=99211^^42^545^1
- ;;^UTILITY(U,$J,358.3,9569,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9569,1,1,0)
- ;;=1^Brief (no MD seen)
- ;;^UTILITY(U,$J,358.3,9569,1,2,0)
- ;;=2^99211
- ;;^UTILITY(U,$J,358.3,9570,0)
- ;;=99212^^42^545^2
- ;;^UTILITY(U,$J,358.3,9570,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9570,1,1,0)
- ;;=1^Problem Focused
- ;;^UTILITY(U,$J,358.3,9570,1,2,0)
- ;;=2^99212
- ;;^UTILITY(U,$J,358.3,9571,0)
- ;;=99213^^42^545^3
- ;;^UTILITY(U,$J,358.3,9571,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9571,1,1,0)
- ;;=1^Expanded Problem Focus
- ;;^UTILITY(U,$J,358.3,9571,1,2,0)
- ;;=2^99213
- ;;^UTILITY(U,$J,358.3,9572,0)
- ;;=99214^^42^545^4
- ;;^UTILITY(U,$J,358.3,9572,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9572,1,1,0)
- ;;=1^Detailed
- ;;^UTILITY(U,$J,358.3,9572,1,2,0)
- ;;=2^99214
- ;;^UTILITY(U,$J,358.3,9573,0)
- ;;=99215^^42^545^5
- ;;^UTILITY(U,$J,358.3,9573,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9573,1,1,0)
- ;;=1^Comprehensive
- ;;^UTILITY(U,$J,358.3,9573,1,2,0)
- ;;=2^99215
- ;;^UTILITY(U,$J,358.3,9574,0)
- ;;=99024^^42^545^0
- ;;^UTILITY(U,$J,358.3,9574,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9574,1,1,0)
- ;;=1^Post Op visit in Global
- ;;^UTILITY(U,$J,358.3,9574,1,2,0)
- ;;=2^99024
- ;;^UTILITY(U,$J,358.3,9575,0)
- ;;=99241^^42^546^1
- ;;^UTILITY(U,$J,358.3,9575,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9575,1,1,0)
- ;;=1^Problem Focused
- ;;^UTILITY(U,$J,358.3,9575,1,2,0)
- ;;=2^99241
- ;;^UTILITY(U,$J,358.3,9576,0)
- ;;=99242^^42^546^2
- ;;^UTILITY(U,$J,358.3,9576,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9576,1,1,0)
- ;;=1^Expanded Problem Focus
- ;;^UTILITY(U,$J,358.3,9576,1,2,0)
- ;;=2^99242
- ;;^UTILITY(U,$J,358.3,9577,0)
- ;;=99243^^42^546^3
- ;;^UTILITY(U,$J,358.3,9577,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9577,1,1,0)
- ;;=1^Detailed
- ;;^UTILITY(U,$J,358.3,9577,1,2,0)
- ;;=2^99243
- ;;^UTILITY(U,$J,358.3,9578,0)
- ;;=99244^^42^546^4
- ;;^UTILITY(U,$J,358.3,9578,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9578,1,1,0)
- ;;=1^Comprehensive, Moderate
- ;;^UTILITY(U,$J,358.3,9578,1,2,0)
- ;;=2^99244
- ;;^UTILITY(U,$J,358.3,9579,0)
- ;;=99245^^42^546^5
- ;;^UTILITY(U,$J,358.3,9579,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9579,1,1,0)
- ;;=1^Comprehensive, High
- ;;^UTILITY(U,$J,358.3,9579,1,2,0)
- ;;=2^99245
- ;;^UTILITY(U,$J,358.3,9580,0)
- ;;=92012^^42^547^1
- ;;^UTILITY(U,$J,358.3,9580,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9580,1,1,0)
- ;;=1^Eye Exam, Established
- ;;^UTILITY(U,$J,358.3,9580,1,2,0)
- ;;=2^92012
- ;;^UTILITY(U,$J,358.3,9581,0)
- ;;=92014^^42^547^2
- ;;^UTILITY(U,$J,358.3,9581,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9581,1,1,0)
- ;;=1^Comprehensive Exam, Estab
- ;;^UTILITY(U,$J,358.3,9581,1,2,0)
- ;;=2^92014
- ;;^UTILITY(U,$J,358.3,9582,0)
- ;;=92002^^42^547^3
- ;;^UTILITY(U,$J,358.3,9582,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,9582,1,1,0)
- ;;=1^Eye Exam, New Pt
+ ;;^UTILITY(U,$J,358.3,9418,0)
+ ;;=H34.233^^41^478^70
+ ;;^UTILITY(U,$J,358.3,9418,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9418,1,3,0)
+ ;;=3^Retinal Artery Branch Occlusion,Bilateral
+ ;;^UTILITY(U,$J,358.3,9418,1,4,0)
+ ;;=4^H34.233
+ ;;^UTILITY(U,$J,358.3,9418,2)
+ ;;=^5005566
+ ;;^UTILITY(U,$J,358.3,9419,0)
+ ;;=H34.211^^41^478^63
+ ;;^UTILITY(U,$J,358.3,9419,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9419,1,3,0)
+ ;;=3^Partial Retinal Artery Occlusion,Right Eye
+ ;;^UTILITY(U,$J,358.3,9419,1,4,0)
+ ;;=4^H34.211
+ ;;^UTILITY(U,$J,358.3,9419,2)
+ ;;=^5005560
+ ;;^UTILITY(U,$J,358.3,9420,0)
+ ;;=H34.212^^41^478^62
+ ;;^UTILITY(U,$J,358.3,9420,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9420,1,3,0)
+ ;;=3^Partial Retinal Artery Occlusion,Left Eye
+ ;;^UTILITY(U,$J,358.3,9420,1,4,0)
+ ;;=4^H34.212
+ ;;^UTILITY(U,$J,358.3,9420,2)
+ ;;=^5005561
+ ;;^UTILITY(U,$J,358.3,9421,0)
+ ;;=H34.213^^41^478^61
+ ;;^UTILITY(U,$J,358.3,9421,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9421,1,3,0)
+ ;;=3^Partial Retinal Artery Occlusion,Bilateral
+ ;;^UTILITY(U,$J,358.3,9421,1,4,0)
+ ;;=4^H34.213
+ ;;^UTILITY(U,$J,358.3,9421,2)
+ ;;=^5005562
+ ;;^UTILITY(U,$J,358.3,9422,0)
+ ;;=H34.811^^41^478^11
+ ;;^UTILITY(U,$J,358.3,9422,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9422,1,3,0)
+ ;;=3^Central Retinal Vein Occlusion,Right Eye
+ ;;^UTILITY(U,$J,358.3,9422,1,4,0)
+ ;;=4^H34.811
+ ;;^UTILITY(U,$J,358.3,9422,2)
+ ;;=^5005568
+ ;;^UTILITY(U,$J,358.3,9423,0)
+ ;;=H34.813^^41^478^9
+ ;;^UTILITY(U,$J,358.3,9423,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9423,1,3,0)
+ ;;=3^Central Retinal Vein Occlusion,Bilateral
+ ;;^UTILITY(U,$J,358.3,9423,1,4,0)
+ ;;=4^H34.813
+ ;;^UTILITY(U,$J,358.3,9423,2)
+ ;;=^5005570
+ ;;^UTILITY(U,$J,358.3,9424,0)
+ ;;=H34.831^^41^478^108
+ ;;^UTILITY(U,$J,358.3,9424,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9424,1,3,0)
+ ;;=3^Tributary Retinal Vein Occlusion,Right Eye
+ ;;^UTILITY(U,$J,358.3,9424,1,4,0)
+ ;;=4^H34.831
+ ;;^UTILITY(U,$J,358.3,9424,2)
+ ;;=^5005576
+ ;;^UTILITY(U,$J,358.3,9425,0)
+ ;;=H34.832^^41^478^107
+ ;;^UTILITY(U,$J,358.3,9425,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9425,1,3,0)
+ ;;=3^Tributary Retinal Vein Occlusion,Left Eye
+ ;;^UTILITY(U,$J,358.3,9425,1,4,0)
+ ;;=4^H34.832
+ ;;^UTILITY(U,$J,358.3,9425,2)
+ ;;=^5005577
+ ;;^UTILITY(U,$J,358.3,9426,0)
+ ;;=H34.833^^41^478^106
+ ;;^UTILITY(U,$J,358.3,9426,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9426,1,3,0)
+ ;;=3^Tributary Retinal Vein Occlusion,Bilateral
+ ;;^UTILITY(U,$J,358.3,9426,1,4,0)
+ ;;=4^H34.833
+ ;;^UTILITY(U,$J,358.3,9426,2)
+ ;;=^5005578
+ ;;^UTILITY(U,$J,358.3,9427,0)
+ ;;=H35.711^^41^478^14
+ ;;^UTILITY(U,$J,358.3,9427,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9427,1,3,0)
+ ;;=3^Central Serouos Chorioretinopathy,Right Eye
+ ;;^UTILITY(U,$J,358.3,9427,1,4,0)
+ ;;=4^H35.711
+ ;;^UTILITY(U,$J,358.3,9427,2)
+ ;;=^5005703
+ ;;^UTILITY(U,$J,358.3,9428,0)
+ ;;=H35.712^^41^478^13
+ ;;^UTILITY(U,$J,358.3,9428,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9428,1,3,0)
+ ;;=3^Central Serouos Chorioretinopathy,Left Eye
+ ;;^UTILITY(U,$J,358.3,9428,1,4,0)
+ ;;=4^H35.712
+ ;;^UTILITY(U,$J,358.3,9428,2)
+ ;;=^5005704
+ ;;^UTILITY(U,$J,358.3,9429,0)
+ ;;=H35.713^^41^478^12
+ ;;^UTILITY(U,$J,358.3,9429,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9429,1,3,0)
+ ;;=3^Central Serouos Chorioretinopathy,Bilateral
+ ;;^UTILITY(U,$J,358.3,9429,1,4,0)
+ ;;=4^H35.713
+ ;;^UTILITY(U,$J,358.3,9429,2)
+ ;;=^5005705
+ ;;^UTILITY(U,$J,358.3,9430,0)
+ ;;=H35.721^^41^478^98
+ ;;^UTILITY(U,$J,358.3,9430,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9430,1,3,0)
+ ;;=3^Serous Detachment of Retinal Pigment Epithelium,Right Eye

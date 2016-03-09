@@ -1,134 +1,138 @@
-IBDEI0KT ; ; 06-AUG-2015
+IBDEI0KT ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,9859,2)
- ;;=Pemphigoid^91108
- ;;^UTILITY(U,$J,358.3,9860,0)
- ;;=364.10^^44^558^54
- ;;^UTILITY(U,$J,358.3,9860,1,0)
+ ;;^UTILITY(U,$J,358.3,9710,1,3,0)
+ ;;=3^Hyphema,Left Eye
+ ;;^UTILITY(U,$J,358.3,9710,1,4,0)
+ ;;=4^H21.02
+ ;;^UTILITY(U,$J,358.3,9710,2)
+ ;;=^5005173
+ ;;^UTILITY(U,$J,358.3,9711,0)
+ ;;=H21.261^^44^495^94
+ ;;^UTILITY(U,$J,358.3,9711,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9860,1,3,0)
- ;;=3^Iridocyclitis, Chronic
- ;;^UTILITY(U,$J,358.3,9860,1,4,0)
- ;;=4^364.10
- ;;^UTILITY(U,$J,358.3,9860,2)
- ;;=Iridocyclitis, Chronic^24398
- ;;^UTILITY(U,$J,358.3,9861,0)
- ;;=054.44^^44^558^55
- ;;^UTILITY(U,$J,358.3,9861,1,0)
+ ;;^UTILITY(U,$J,358.3,9711,1,3,0)
+ ;;=3^Iris Atrophy,Right Eye
+ ;;^UTILITY(U,$J,358.3,9711,1,4,0)
+ ;;=4^H21.261
+ ;;^UTILITY(U,$J,358.3,9711,2)
+ ;;=^5005199
+ ;;^UTILITY(U,$J,358.3,9712,0)
+ ;;=H21.262^^44^495^93
+ ;;^UTILITY(U,$J,358.3,9712,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9861,1,3,0)
- ;;=3^Iridocyclitis, H Simplex
- ;;^UTILITY(U,$J,358.3,9861,1,4,0)
- ;;=4^054.44
- ;;^UTILITY(U,$J,358.3,9861,2)
- ;;=Iridocyclitis, H Simplex^266565
- ;;^UTILITY(U,$J,358.3,9862,0)
- ;;=053.22^^44^558^56
- ;;^UTILITY(U,$J,358.3,9862,1,0)
+ ;;^UTILITY(U,$J,358.3,9712,1,3,0)
+ ;;=3^Iris Atrophy,Left Eye
+ ;;^UTILITY(U,$J,358.3,9712,1,4,0)
+ ;;=4^H21.262
+ ;;^UTILITY(U,$J,358.3,9712,2)
+ ;;=^5005200
+ ;;^UTILITY(U,$J,358.3,9713,0)
+ ;;=H21.541^^44^495^138
+ ;;^UTILITY(U,$J,358.3,9713,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9862,1,3,0)
- ;;=3^Iridocyclitis, H Zoster
- ;;^UTILITY(U,$J,358.3,9862,1,4,0)
- ;;=4^053.22
- ;;^UTILITY(U,$J,358.3,9862,2)
- ;;=Iridocyclitis, H Zoster^266554
- ;;^UTILITY(U,$J,358.3,9863,0)
- ;;=364.42^^44^558^111
- ;;^UTILITY(U,$J,358.3,9863,1,0)
+ ;;^UTILITY(U,$J,358.3,9713,1,3,0)
+ ;;=3^Posterior Synechiae,Right Eye
+ ;;^UTILITY(U,$J,358.3,9713,1,4,0)
+ ;;=4^H21.541
+ ;;^UTILITY(U,$J,358.3,9713,2)
+ ;;=^5005251
+ ;;^UTILITY(U,$J,358.3,9714,0)
+ ;;=H21.542^^44^495^137
+ ;;^UTILITY(U,$J,358.3,9714,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9863,1,3,0)
- ;;=3^Rubeosis Iridis
- ;;^UTILITY(U,$J,358.3,9863,1,4,0)
- ;;=4^364.42
- ;;^UTILITY(U,$J,358.3,9863,2)
- ;;=Rubeosis Iridis^268716
- ;;^UTILITY(U,$J,358.3,9864,0)
- ;;=364.59^^44^558^59
- ;;^UTILITY(U,$J,358.3,9864,1,0)
+ ;;^UTILITY(U,$J,358.3,9714,1,3,0)
+ ;;=3^Posterior Synechiae,Left Eye
+ ;;^UTILITY(U,$J,358.3,9714,1,4,0)
+ ;;=4^H21.542
+ ;;^UTILITY(U,$J,358.3,9714,2)
+ ;;=^5005252
+ ;;^UTILITY(U,$J,358.3,9715,0)
+ ;;=H21.511^^44^495^8
+ ;;^UTILITY(U,$J,358.3,9715,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9864,1,3,0)
- ;;=3^Iris Atrophy,Other
- ;;^UTILITY(U,$J,358.3,9864,1,4,0)
- ;;=4^364.59
- ;;^UTILITY(U,$J,358.3,9864,2)
- ;;=Iris Atrophy^268731
- ;;^UTILITY(U,$J,358.3,9865,0)
- ;;=224.0^^44^558^11
- ;;^UTILITY(U,$J,358.3,9865,1,0)
+ ;;^UTILITY(U,$J,358.3,9715,1,3,0)
+ ;;=3^Anterior Synechiae,Right Eye
+ ;;^UTILITY(U,$J,358.3,9715,1,4,0)
+ ;;=4^H21.511
+ ;;^UTILITY(U,$J,358.3,9715,2)
+ ;;=^5005239
+ ;;^UTILITY(U,$J,358.3,9716,0)
+ ;;=H21.512^^44^495^7
+ ;;^UTILITY(U,$J,358.3,9716,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9865,1,3,0)
- ;;=3^Benign Neopl of Iris
- ;;^UTILITY(U,$J,358.3,9865,1,4,0)
- ;;=4^224.0
- ;;^UTILITY(U,$J,358.3,9865,2)
- ;;=^267670
- ;;^UTILITY(U,$J,358.3,9866,0)
- ;;=364.72^^44^558^6
- ;;^UTILITY(U,$J,358.3,9866,1,0)
+ ;;^UTILITY(U,$J,358.3,9716,1,3,0)
+ ;;=3^Anterior Synechiae,Left Eye
+ ;;^UTILITY(U,$J,358.3,9716,1,4,0)
+ ;;=4^H21.512
+ ;;^UTILITY(U,$J,358.3,9716,2)
+ ;;=^5005240
+ ;;^UTILITY(U,$J,358.3,9717,0)
+ ;;=H21.551^^44^495^147
+ ;;^UTILITY(U,$J,358.3,9717,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9866,1,3,0)
- ;;=3^Anterior Synechiae
- ;;^UTILITY(U,$J,358.3,9866,1,4,0)
- ;;=4^364.72
- ;;^UTILITY(U,$J,358.3,9866,2)
- ;;=Anterior Synechiae^265517
- ;;^UTILITY(U,$J,358.3,9867,0)
- ;;=364.71^^44^558^102
- ;;^UTILITY(U,$J,358.3,9867,1,0)
+ ;;^UTILITY(U,$J,358.3,9717,1,3,0)
+ ;;=3^Recession of Chamber Angle,Right Eye
+ ;;^UTILITY(U,$J,358.3,9717,1,4,0)
+ ;;=4^H21.551
+ ;;^UTILITY(U,$J,358.3,9717,2)
+ ;;=^5005255
+ ;;^UTILITY(U,$J,358.3,9718,0)
+ ;;=H21.552^^44^495^146
+ ;;^UTILITY(U,$J,358.3,9718,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9867,1,3,0)
- ;;=3^Posterior Synechiae
- ;;^UTILITY(U,$J,358.3,9867,1,4,0)
- ;;=4^364.71
- ;;^UTILITY(U,$J,358.3,9867,2)
- ;;=Posterior Synechiae^265519
- ;;^UTILITY(U,$J,358.3,9868,0)
- ;;=364.00^^44^558^57
- ;;^UTILITY(U,$J,358.3,9868,1,0)
+ ;;^UTILITY(U,$J,358.3,9718,1,3,0)
+ ;;=3^Recession of Chamber Angle,Left Eye
+ ;;^UTILITY(U,$J,358.3,9718,1,4,0)
+ ;;=4^H21.552
+ ;;^UTILITY(U,$J,358.3,9718,2)
+ ;;=^5005256
+ ;;^UTILITY(U,$J,358.3,9719,0)
+ ;;=H21.81^^44^495^76
+ ;;^UTILITY(U,$J,358.3,9719,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9868,1,3,0)
- ;;=3^Iridocyclitis,Acute/Subacute,Unspec
- ;;^UTILITY(U,$J,358.3,9868,1,4,0)
- ;;=4^364.00
- ;;^UTILITY(U,$J,358.3,9868,2)
- ;;=Iridocyclitis, Acute^268703
- ;;^UTILITY(U,$J,358.3,9869,0)
- ;;=379.40^^44^558^106
- ;;^UTILITY(U,$J,358.3,9869,1,0)
+ ;;^UTILITY(U,$J,358.3,9719,1,3,0)
+ ;;=3^Floppy Iris Syndrome
+ ;;^UTILITY(U,$J,358.3,9719,1,4,0)
+ ;;=4^H21.81
+ ;;^UTILITY(U,$J,358.3,9719,2)
+ ;;=^5005263
+ ;;^UTILITY(U,$J,358.3,9720,0)
+ ;;=H16.042^^44^495^116
+ ;;^UTILITY(U,$J,358.3,9720,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9869,1,3,0)
- ;;=3^Pupil, Abnormal function
- ;;^UTILITY(U,$J,358.3,9869,1,4,0)
- ;;=4^379.40
- ;;^UTILITY(U,$J,358.3,9869,2)
- ;;=Pupil, Abnormal function^101288
- ;;^UTILITY(U,$J,358.3,9870,0)
- ;;=190.0^^44^558^84
- ;;^UTILITY(U,$J,358.3,9870,1,0)
+ ;;^UTILITY(U,$J,358.3,9720,1,3,0)
+ ;;=3^Marginal Corneal Ulcer,Left Eye
+ ;;^UTILITY(U,$J,358.3,9720,1,4,0)
+ ;;=4^H16.042
+ ;;^UTILITY(U,$J,358.3,9720,2)
+ ;;=^5004883
+ ;;^UTILITY(U,$J,358.3,9721,0)
+ ;;=H16.041^^44^495^117
+ ;;^UTILITY(U,$J,358.3,9721,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9870,1,3,0)
- ;;=3^Malig Neopl of Eyeball,Iris
- ;;^UTILITY(U,$J,358.3,9870,1,4,0)
- ;;=4^190.0
- ;;^UTILITY(U,$J,358.3,9870,2)
- ;;=Malig Neopl of Iris^267271
- ;;^UTILITY(U,$J,358.3,9871,0)
- ;;=190.3^^44^558^83
- ;;^UTILITY(U,$J,358.3,9871,1,0)
+ ;;^UTILITY(U,$J,358.3,9721,1,3,0)
+ ;;=3^Marginal Corneal Ulcer,Right Eye
+ ;;^UTILITY(U,$J,358.3,9721,1,4,0)
+ ;;=4^H16.041
+ ;;^UTILITY(U,$J,358.3,9721,2)
+ ;;=^5004882
+ ;;^UTILITY(U,$J,358.3,9722,0)
+ ;;=H16.011^^44^495^31
+ ;;^UTILITY(U,$J,358.3,9722,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9871,1,3,0)
- ;;=3^Malig Neopl Conjunctiva
- ;;^UTILITY(U,$J,358.3,9871,1,4,0)
- ;;=4^190.3
- ;;^UTILITY(U,$J,358.3,9871,2)
- ;;=Malig Neopl Conjunctiva^267274
- ;;^UTILITY(U,$J,358.3,9872,0)
- ;;=364.41^^44^558^50
- ;;^UTILITY(U,$J,358.3,9872,1,0)
+ ;;^UTILITY(U,$J,358.3,9722,1,3,0)
+ ;;=3^Central Corneal Ulcer,Right Eye
+ ;;^UTILITY(U,$J,358.3,9722,1,4,0)
+ ;;=4^H16.011
+ ;;^UTILITY(U,$J,358.3,9722,2)
+ ;;=^5004870
+ ;;^UTILITY(U,$J,358.3,9723,0)
+ ;;=H16.012^^44^495^30
+ ;;^UTILITY(U,$J,358.3,9723,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9872,1,3,0)
- ;;=3^Hyphema
- ;;^UTILITY(U,$J,358.3,9872,1,4,0)
- ;;=4^364.41
+ ;;^UTILITY(U,$J,358.3,9723,1,3,0)
+ ;;=3^Central Corneal Ulcer,Left Eye
+ ;;^UTILITY(U,$J,358.3,9723,1,4,0)
+ ;;=4^H16.012

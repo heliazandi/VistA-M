@@ -1,128 +1,138 @@
-IBDEI21F ; ; 06-AUG-2015
+IBDEI21F ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35606,1,0)
+ ;;^UTILITY(U,$J,358.3,34564,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35606,1,3,0)
- ;;=3^Follicular lymphoma, unsp, lymph nodes of multiple sites
- ;;^UTILITY(U,$J,358.3,35606,1,4,0)
- ;;=4^C82.98
- ;;^UTILITY(U,$J,358.3,35606,2)
- ;;=^5001549
- ;;^UTILITY(U,$J,358.3,35607,0)
- ;;=C84.08^^189^2057^42
- ;;^UTILITY(U,$J,358.3,35607,1,0)
+ ;;^UTILITY(U,$J,358.3,34564,1,3,0)
+ ;;=3^Postprocedural Pain,Oth Chronic
+ ;;^UTILITY(U,$J,358.3,34564,1,4,0)
+ ;;=4^G89.28
+ ;;^UTILITY(U,$J,358.3,34564,2)
+ ;;=^5004157
+ ;;^UTILITY(U,$J,358.3,34565,0)
+ ;;=G89.3^^131^1688^9
+ ;;^UTILITY(U,$J,358.3,34565,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35607,1,3,0)
- ;;=3^Mycosis fungoides, lymph nodes of multiple sites
- ;;^UTILITY(U,$J,358.3,35607,1,4,0)
- ;;=4^C84.08
- ;;^UTILITY(U,$J,358.3,35607,2)
- ;;=^5001629
- ;;^UTILITY(U,$J,358.3,35608,0)
- ;;=C84.18^^189^2057^48
- ;;^UTILITY(U,$J,358.3,35608,1,0)
+ ;;^UTILITY(U,$J,358.3,34565,1,3,0)
+ ;;=3^Neoplasm Related Pain,Acute/Chronic
+ ;;^UTILITY(U,$J,358.3,34565,1,4,0)
+ ;;=4^G89.3
+ ;;^UTILITY(U,$J,358.3,34565,2)
+ ;;=^5004159
+ ;;^UTILITY(U,$J,358.3,34566,0)
+ ;;=G89.4^^131^1688^2
+ ;;^UTILITY(U,$J,358.3,34566,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35608,1,3,0)
- ;;=3^Sezary disease, lymph nodes of multiple sites
- ;;^UTILITY(U,$J,358.3,35608,1,4,0)
- ;;=4^C84.18
- ;;^UTILITY(U,$J,358.3,35608,2)
- ;;=^5001639
- ;;^UTILITY(U,$J,358.3,35609,0)
- ;;=C91.40^^189^2057^27
- ;;^UTILITY(U,$J,358.3,35609,1,0)
+ ;;^UTILITY(U,$J,358.3,34566,1,3,0)
+ ;;=3^Chronic Pain Syndrome
+ ;;^UTILITY(U,$J,358.3,34566,1,4,0)
+ ;;=4^G89.4
+ ;;^UTILITY(U,$J,358.3,34566,2)
+ ;;=^334079
+ ;;^UTILITY(U,$J,358.3,34567,0)
+ ;;=M27.0^^131^1688^3
+ ;;^UTILITY(U,$J,358.3,34567,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35609,1,3,0)
- ;;=3^Hairy cell leukemia not having achieved remission
- ;;^UTILITY(U,$J,358.3,35609,1,4,0)
- ;;=4^C91.40
- ;;^UTILITY(U,$J,358.3,35609,2)
- ;;=^5001771
- ;;^UTILITY(U,$J,358.3,35610,0)
- ;;=C96.0^^189^2057^39
- ;;^UTILITY(U,$J,358.3,35610,1,0)
+ ;;^UTILITY(U,$J,358.3,34567,1,3,0)
+ ;;=3^Developmental Disorder of Jaws
+ ;;^UTILITY(U,$J,358.3,34567,1,4,0)
+ ;;=4^M27.0
+ ;;^UTILITY(U,$J,358.3,34567,2)
+ ;;=^5011722
+ ;;^UTILITY(U,$J,358.3,34568,0)
+ ;;=M27.9^^131^1688^4
+ ;;^UTILITY(U,$J,358.3,34568,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35610,1,3,0)
- ;;=3^Multifocal and multisystemic Langerhans-cell histiocytosis
- ;;^UTILITY(U,$J,358.3,35610,1,4,0)
- ;;=4^C96.0
- ;;^UTILITY(U,$J,358.3,35610,2)
- ;;=^5001859
- ;;^UTILITY(U,$J,358.3,35611,0)
- ;;=C96.2^^189^2057^34
- ;;^UTILITY(U,$J,358.3,35611,1,0)
+ ;;^UTILITY(U,$J,358.3,34568,1,3,0)
+ ;;=3^Disease of Jaws,Unspec
+ ;;^UTILITY(U,$J,358.3,34568,1,4,0)
+ ;;=4^M27.9
+ ;;^UTILITY(U,$J,358.3,34568,2)
+ ;;=^5011737
+ ;;^UTILITY(U,$J,358.3,34569,0)
+ ;;=R68.84^^131^1688^8
+ ;;^UTILITY(U,$J,358.3,34569,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35611,1,3,0)
- ;;=3^Malignant mast cell tumor
- ;;^UTILITY(U,$J,358.3,35611,1,4,0)
- ;;=4^C96.2
- ;;^UTILITY(U,$J,358.3,35611,2)
- ;;=^5001860
- ;;^UTILITY(U,$J,358.3,35612,0)
- ;;=C84.48^^189^2057^45
- ;;^UTILITY(U,$J,358.3,35612,1,0)
+ ;;^UTILITY(U,$J,358.3,34569,1,3,0)
+ ;;=3^Jaw Pain
+ ;;^UTILITY(U,$J,358.3,34569,1,4,0)
+ ;;=4^R68.84
+ ;;^UTILITY(U,$J,358.3,34569,2)
+ ;;=^5019556
+ ;;^UTILITY(U,$J,358.3,34570,0)
+ ;;=N48.9^^131^1688^6
+ ;;^UTILITY(U,$J,358.3,34570,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35612,1,3,0)
- ;;=3^Peripheral T-cell lymphoma, not classified, nodes mult site
- ;;^UTILITY(U,$J,358.3,35612,1,4,0)
- ;;=4^C84.48
- ;;^UTILITY(U,$J,358.3,35612,2)
- ;;=^5001649
- ;;^UTILITY(U,$J,358.3,35613,0)
- ;;=C90.01^^189^2057^41
- ;;^UTILITY(U,$J,358.3,35613,1,0)
+ ;;^UTILITY(U,$J,358.3,34570,1,3,0)
+ ;;=3^Disorder of Penis,Unspec
+ ;;^UTILITY(U,$J,358.3,34570,1,4,0)
+ ;;=4^N48.9
+ ;;^UTILITY(U,$J,358.3,34570,2)
+ ;;=^5015743
+ ;;^UTILITY(U,$J,358.3,34571,0)
+ ;;=N50.9^^131^1688^5
+ ;;^UTILITY(U,$J,358.3,34571,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35613,1,3,0)
- ;;=3^Multiple myeloma in remission
- ;;^UTILITY(U,$J,358.3,35613,1,4,0)
- ;;=4^C90.01
- ;;^UTILITY(U,$J,358.3,35613,2)
- ;;=^267515
- ;;^UTILITY(U,$J,358.3,35614,0)
- ;;=C90.02^^189^2057^40
- ;;^UTILITY(U,$J,358.3,35614,1,0)
+ ;;^UTILITY(U,$J,358.3,34571,1,3,0)
+ ;;=3^Disorder of Male Genital Organs,Unspec
+ ;;^UTILITY(U,$J,358.3,34571,1,4,0)
+ ;;=4^N50.9
+ ;;^UTILITY(U,$J,358.3,34571,2)
+ ;;=^5015751
+ ;;^UTILITY(U,$J,358.3,34572,0)
+ ;;=R10.2^^131^1688^13
+ ;;^UTILITY(U,$J,358.3,34572,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35614,1,3,0)
- ;;=3^Multiple myeloma in relapse
- ;;^UTILITY(U,$J,358.3,35614,1,4,0)
- ;;=4^C90.02
- ;;^UTILITY(U,$J,358.3,35614,2)
- ;;=^5001753
- ;;^UTILITY(U,$J,358.3,35615,0)
- ;;=C90.11^^189^2057^47
- ;;^UTILITY(U,$J,358.3,35615,1,0)
+ ;;^UTILITY(U,$J,358.3,34572,1,3,0)
+ ;;=3^Pelvic/Perineal Pain
+ ;;^UTILITY(U,$J,358.3,34572,1,4,0)
+ ;;=4^R10.2
+ ;;^UTILITY(U,$J,358.3,34572,2)
+ ;;=^5019209
+ ;;^UTILITY(U,$J,358.3,34573,0)
+ ;;=N94.89^^131^1688^7
+ ;;^UTILITY(U,$J,358.3,34573,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35615,1,3,0)
- ;;=3^Plasma cell leukemia in remission
- ;;^UTILITY(U,$J,358.3,35615,1,4,0)
- ;;=4^C90.11
- ;;^UTILITY(U,$J,358.3,35615,2)
- ;;=^267517
- ;;^UTILITY(U,$J,358.3,35616,0)
- ;;=C90.12^^189^2057^46
- ;;^UTILITY(U,$J,358.3,35616,1,0)
+ ;;^UTILITY(U,$J,358.3,34573,1,3,0)
+ ;;=3^Female Genital Organs/Menstrual Cycle,Oth Cond
+ ;;^UTILITY(U,$J,358.3,34573,1,4,0)
+ ;;=4^N94.89
+ ;;^UTILITY(U,$J,358.3,34573,2)
+ ;;=^5015925
+ ;;^UTILITY(U,$J,358.3,34574,0)
+ ;;=N23.^^131^1688^18
+ ;;^UTILITY(U,$J,358.3,34574,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35616,1,3,0)
- ;;=3^Plasma cell leukemia in relapse
- ;;^UTILITY(U,$J,358.3,35616,1,4,0)
- ;;=4^C90.12
- ;;^UTILITY(U,$J,358.3,35616,2)
- ;;=^5001755
- ;;^UTILITY(U,$J,358.3,35617,0)
- ;;=C90.21^^189^2057^25
- ;;^UTILITY(U,$J,358.3,35617,1,0)
+ ;;^UTILITY(U,$J,358.3,34574,1,3,0)
+ ;;=3^Renal Colic,Unspec
+ ;;^UTILITY(U,$J,358.3,34574,1,4,0)
+ ;;=4^N23.
+ ;;^UTILITY(U,$J,358.3,34574,2)
+ ;;=^5015615
+ ;;^UTILITY(U,$J,358.3,34575,0)
+ ;;=Z71.89^^131^1689^1
+ ;;^UTILITY(U,$J,358.3,34575,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35617,1,3,0)
- ;;=3^Extramedullary plasmacytoma in remission
- ;;^UTILITY(U,$J,358.3,35617,1,4,0)
- ;;=4^C90.21
- ;;^UTILITY(U,$J,358.3,35617,2)
- ;;=^5001757
- ;;^UTILITY(U,$J,358.3,35618,0)
- ;;=C90.31^^189^2057^50
- ;;^UTILITY(U,$J,358.3,35618,1,0)
+ ;;^UTILITY(U,$J,358.3,34575,1,3,0)
+ ;;=3^Activity/Exercise Counseling
+ ;;^UTILITY(U,$J,358.3,34575,1,4,0)
+ ;;=4^Z71.89
+ ;;^UTILITY(U,$J,358.3,34575,2)
+ ;;=^5063253
+ ;;^UTILITY(U,$J,358.3,34576,0)
+ ;;=Z13.89^^131^1689^2
+ ;;^UTILITY(U,$J,358.3,34576,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35618,1,3,0)
- ;;=3^Solitary plasmacytoma in remission
+ ;;^UTILITY(U,$J,358.3,34576,1,3,0)
+ ;;=3^Alcohol Use Screen
+ ;;^UTILITY(U,$J,358.3,34576,1,4,0)
+ ;;=4^Z13.89
+ ;;^UTILITY(U,$J,358.3,34576,2)
+ ;;=^5062720
+ ;;^UTILITY(U,$J,358.3,34577,0)
+ ;;=Z12.39^^131^1689^3
+ ;;^UTILITY(U,$J,358.3,34577,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34577,1,3,0)
+ ;;=3^Breast Malignant Neoplasm Screen

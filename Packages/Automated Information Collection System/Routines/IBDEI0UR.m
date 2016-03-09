@@ -1,136 +1,124 @@
-IBDEI0UR ; ; 06-AUG-2015
+IBDEI0UR ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14942,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14942,1,4,0)
- ;;=4^796.2
- ;;^UTILITY(U,$J,358.3,14942,1,5,0)
- ;;=5^Elev BP w/o dx hypertension
- ;;^UTILITY(U,$J,358.3,14942,2)
- ;;=^273464
- ;;^UTILITY(U,$J,358.3,14943,0)
- ;;=402.10^^81^936^31
- ;;^UTILITY(U,$J,358.3,14943,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14943,1,4,0)
- ;;=4^402.10
- ;;^UTILITY(U,$J,358.3,14943,1,5,0)
- ;;=5^HTN w/ Heart Involvement
- ;;^UTILITY(U,$J,358.3,14943,2)
- ;;=^269598
- ;;^UTILITY(U,$J,358.3,14944,0)
- ;;=402.11^^81^936^32
- ;;^UTILITY(U,$J,358.3,14944,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14944,1,4,0)
- ;;=4^402.11
- ;;^UTILITY(U,$J,358.3,14944,1,5,0)
- ;;=5^HTN with CHF
- ;;^UTILITY(U,$J,358.3,14944,2)
- ;;=HTN with CHF^269599
- ;;^UTILITY(U,$J,358.3,14945,0)
- ;;=403.11^^81^936^37
- ;;^UTILITY(U,$J,358.3,14945,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14945,1,4,0)
- ;;=4^403.11
- ;;^UTILITY(U,$J,358.3,14945,1,5,0)
- ;;=5^HTN with Renal Failure
- ;;^UTILITY(U,$J,358.3,14945,2)
- ;;=^269608
- ;;^UTILITY(U,$J,358.3,14946,0)
- ;;=404.10^^81^936^35
- ;;^UTILITY(U,$J,358.3,14946,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14946,1,4,0)
- ;;=4^404.10
- ;;^UTILITY(U,$J,358.3,14946,1,5,0)
- ;;=5^HTN with Heart & Renal Involvement
- ;;^UTILITY(U,$J,358.3,14946,2)
- ;;=^269618
- ;;^UTILITY(U,$J,358.3,14947,0)
- ;;=404.11^^81^936^33
- ;;^UTILITY(U,$J,358.3,14947,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14947,1,4,0)
- ;;=4^404.11
- ;;^UTILITY(U,$J,358.3,14947,1,5,0)
- ;;=5^HTN with CHF & Renal Involvement
- ;;^UTILITY(U,$J,358.3,14947,2)
- ;;=^269619
- ;;^UTILITY(U,$J,358.3,14948,0)
- ;;=404.12^^81^936^36
- ;;^UTILITY(U,$J,358.3,14948,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14948,1,4,0)
- ;;=4^404.12
- ;;^UTILITY(U,$J,358.3,14948,1,5,0)
- ;;=5^HTN with Heart Involvement & Renal Failure
- ;;^UTILITY(U,$J,358.3,14948,2)
- ;;=^269620
- ;;^UTILITY(U,$J,358.3,14949,0)
- ;;=404.13^^81^936^34
- ;;^UTILITY(U,$J,358.3,14949,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14949,1,4,0)
- ;;=4^404.13
- ;;^UTILITY(U,$J,358.3,14949,1,5,0)
- ;;=5^HTN with CHF & Renal failure
- ;;^UTILITY(U,$J,358.3,14949,2)
- ;;=^269621
- ;;^UTILITY(U,$J,358.3,14950,0)
- ;;=401.9^^81^936^57
- ;;^UTILITY(U,$J,358.3,14950,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14950,1,4,0)
- ;;=4^401.9
- ;;^UTILITY(U,$J,358.3,14950,1,5,0)
- ;;=5^Hypertension, Essential
- ;;^UTILITY(U,$J,358.3,14950,2)
- ;;=^186630
- ;;^UTILITY(U,$J,358.3,14951,0)
- ;;=272.0^^81^936^55
- ;;^UTILITY(U,$J,358.3,14951,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14951,1,4,0)
- ;;=4^272.0
- ;;^UTILITY(U,$J,358.3,14951,1,5,0)
- ;;=5^Hypercholesterolemia, Pure
- ;;^UTILITY(U,$J,358.3,14951,2)
- ;;=^59973
- ;;^UTILITY(U,$J,358.3,14952,0)
- ;;=272.1^^81^936^58
- ;;^UTILITY(U,$J,358.3,14952,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14952,1,4,0)
- ;;=4^272.1
- ;;^UTILITY(U,$J,358.3,14952,1,5,0)
- ;;=5^Hypertriglyceridemia
- ;;^UTILITY(U,$J,358.3,14952,2)
- ;;=Hypertriglyceridemia^101303
- ;;^UTILITY(U,$J,358.3,14953,0)
- ;;=272.2^^81^936^63
- ;;^UTILITY(U,$J,358.3,14953,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14953,1,4,0)
- ;;=4^272.2
- ;;^UTILITY(U,$J,358.3,14953,1,5,0)
- ;;=5^Mixed Hyperlipidemia
- ;;^UTILITY(U,$J,358.3,14953,2)
- ;;=^78424
- ;;^UTILITY(U,$J,358.3,14954,0)
- ;;=396.0^^81^936^11
- ;;^UTILITY(U,$J,358.3,14954,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,14954,1,4,0)
- ;;=4^396.0
- ;;^UTILITY(U,$J,358.3,14954,1,5,0)
- ;;=5^Aortic and Mitral Stenosis
- ;;^UTILITY(U,$J,358.3,14954,2)
- ;;=Aortic and Mitral Stenosis^269580
- ;;^UTILITY(U,$J,358.3,14955,0)
- ;;=414.02^^81^936^18
- ;;^UTILITY(U,$J,358.3,14955,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,14424,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14424,1,3,0)
+ ;;=3^Opioid Dependence w/ Intoxication,Unspec
+ ;;^UTILITY(U,$J,358.3,14424,1,4,0)
+ ;;=4^F11.229
+ ;;^UTILITY(U,$J,358.3,14424,2)
+ ;;=^5003132
+ ;;^UTILITY(U,$J,358.3,14425,0)
+ ;;=F11.222^^53^607^38
+ ;;^UTILITY(U,$J,358.3,14425,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14425,1,3,0)
+ ;;=3^Opioid Dependence w/ Intoxication w/ Perceptual Disturbance
+ ;;^UTILITY(U,$J,358.3,14425,1,4,0)
+ ;;=4^F11.222
+ ;;^UTILITY(U,$J,358.3,14425,2)
+ ;;=^5003131
+ ;;^UTILITY(U,$J,358.3,14426,0)
+ ;;=F11.221^^53^607^37
+ ;;^UTILITY(U,$J,358.3,14426,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14426,1,3,0)
+ ;;=3^Opioid Dependence w/ Intoxication Delirium
+ ;;^UTILITY(U,$J,358.3,14426,1,4,0)
+ ;;=4^F11.221
+ ;;^UTILITY(U,$J,358.3,14426,2)
+ ;;=^5003130
+ ;;^UTILITY(U,$J,358.3,14427,0)
+ ;;=F11.220^^53^607^39
+ ;;^UTILITY(U,$J,358.3,14427,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14427,1,3,0)
+ ;;=3^Opioid Dependence w/ Intoxication,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,14427,1,4,0)
+ ;;=4^F11.220
+ ;;^UTILITY(U,$J,358.3,14427,2)
+ ;;=^5003129
+ ;;^UTILITY(U,$J,358.3,14428,0)
+ ;;=F14.29^^53^607^21
+ ;;^UTILITY(U,$J,358.3,14428,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14428,1,3,0)
+ ;;=3^Cocaine Dependence w/ Unspec Cocaine-Induced Disorder
+ ;;^UTILITY(U,$J,358.3,14428,1,4,0)
+ ;;=4^F14.29
+ ;;^UTILITY(U,$J,358.3,14428,2)
+ ;;=^5003268
+ ;;^UTILITY(U,$J,358.3,14429,0)
+ ;;=F14.288^^53^607^20
+ ;;^UTILITY(U,$J,358.3,14429,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14429,1,3,0)
+ ;;=3^Cocaine Dependence w/ Other Cocaine-Induced Disorder
+ ;;^UTILITY(U,$J,358.3,14429,1,4,0)
+ ;;=4^F14.288
+ ;;^UTILITY(U,$J,358.3,14429,2)
+ ;;=^5003267
+ ;;^UTILITY(U,$J,358.3,14430,0)
+ ;;=F14.282^^53^607^14
+ ;;^UTILITY(U,$J,358.3,14430,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14430,1,3,0)
+ ;;=3^Cocaine Dependence w/ Cocaine-Induced Sleep Disorder
+ ;;^UTILITY(U,$J,358.3,14430,1,4,0)
+ ;;=4^F14.282
+ ;;^UTILITY(U,$J,358.3,14430,2)
+ ;;=^5003266
+ ;;^UTILITY(U,$J,358.3,14431,0)
+ ;;=F14.281^^53^607^15
+ ;;^UTILITY(U,$J,358.3,14431,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14431,1,3,0)
+ ;;=3^Cocaine Dependence w/ Cocaine-Induced Sexual Dysfunction
+ ;;^UTILITY(U,$J,358.3,14431,1,4,0)
+ ;;=4^F14.281
+ ;;^UTILITY(U,$J,358.3,14431,2)
+ ;;=^5003265
+ ;;^UTILITY(U,$J,358.3,14432,0)
+ ;;=F14.280^^53^607^12
+ ;;^UTILITY(U,$J,358.3,14432,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14432,1,3,0)
+ ;;=3^Cocaine Dependence w/ Cocaine-Induced Anxiety Disorder
+ ;;^UTILITY(U,$J,358.3,14432,1,4,0)
+ ;;=4^F14.280
+ ;;^UTILITY(U,$J,358.3,14432,2)
+ ;;=^5003264
+ ;;^UTILITY(U,$J,358.3,14433,0)
+ ;;=F14.259^^53^607^11
+ ;;^UTILITY(U,$J,358.3,14433,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14433,1,3,0)
+ ;;=3^Cocaine Dependence w/ Cocaine-Induc Psychotic Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,14433,1,4,0)
+ ;;=4^F14.259
+ ;;^UTILITY(U,$J,358.3,14433,2)
+ ;;=^5003263
+ ;;^UTILITY(U,$J,358.3,14434,0)
+ ;;=F14.251^^53^607^10
+ ;;^UTILITY(U,$J,358.3,14434,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14434,1,3,0)
+ ;;=3^Cocaine Depend w/ Cocaine-Induc Psychotic Disorder w/ Hallucin
+ ;;^UTILITY(U,$J,358.3,14434,1,4,0)
+ ;;=4^F14.251
+ ;;^UTILITY(U,$J,358.3,14434,2)
+ ;;=^5003262
+ ;;^UTILITY(U,$J,358.3,14435,0)
+ ;;=F14.250^^53^607^9
+ ;;^UTILITY(U,$J,358.3,14435,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14435,1,3,0)
+ ;;=3^Cocaine Depend w/ Cocaine-Induc Psych Disorder w/ Delusions
+ ;;^UTILITY(U,$J,358.3,14435,1,4,0)
+ ;;=4^F14.250
+ ;;^UTILITY(U,$J,358.3,14435,2)
+ ;;=^5003261
+ ;;^UTILITY(U,$J,358.3,14436,0)
+ ;;=F14.24^^53^607^13

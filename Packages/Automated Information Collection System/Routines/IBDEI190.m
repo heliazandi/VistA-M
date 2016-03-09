@@ -1,126 +1,126 @@
-IBDEI190 ; ; 06-AUG-2015
+IBDEI190 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,22121,1,5,0)
- ;;=5^Heart Failure, Acute Diastolic
- ;;^UTILITY(U,$J,358.3,22121,2)
- ;;=Heart Failure, Acute Diastolic^328497
- ;;^UTILITY(U,$J,358.3,22122,0)
- ;;=428.32^^125^1387^43
- ;;^UTILITY(U,$J,358.3,22122,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22122,1,4,0)
- ;;=4^428.32
- ;;^UTILITY(U,$J,358.3,22122,1,5,0)
- ;;=5^Heart Failure, Chronic Diastolic
- ;;^UTILITY(U,$J,358.3,22122,2)
- ;;=Heart Failure, Chronic Diastolic^328498
- ;;^UTILITY(U,$J,358.3,22123,0)
- ;;=428.33^^125^1387^47
- ;;^UTILITY(U,$J,358.3,22123,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22123,1,4,0)
- ;;=4^428.33
- ;;^UTILITY(U,$J,358.3,22123,1,5,0)
- ;;=5^Heart Failure, Diastolic, Acute on Chronic
- ;;^UTILITY(U,$J,358.3,22123,2)
- ;;=Heart Failure, Diastolic, Acute on Chronic^328499
- ;;^UTILITY(U,$J,358.3,22124,0)
- ;;=428.40^^125^1387^46
- ;;^UTILITY(U,$J,358.3,22124,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22124,1,4,0)
- ;;=4^428.40
- ;;^UTILITY(U,$J,358.3,22124,1,5,0)
- ;;=5^Heart Failure, Diastolic& Systolic
- ;;^UTILITY(U,$J,358.3,22124,2)
- ;;=Heart Failure, Systolic and Diastolic^328596
- ;;^UTILITY(U,$J,358.3,22125,0)
- ;;=428.41^^125^1387^48
- ;;^UTILITY(U,$J,358.3,22125,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22125,1,4,0)
- ;;=4^428.41
- ;;^UTILITY(U,$J,358.3,22125,1,5,0)
- ;;=5^Heart Failure, Systolic & Diastolic, Acute
- ;;^UTILITY(U,$J,358.3,22125,2)
- ;;=Heart Failure, Systolic & Diastolic, Acute^328500
- ;;^UTILITY(U,$J,358.3,22126,0)
- ;;=428.42^^125^1387^52
- ;;^UTILITY(U,$J,358.3,22126,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22126,1,4,0)
- ;;=4^428.42
- ;;^UTILITY(U,$J,358.3,22126,1,5,0)
- ;;=5^Heart Failure,Systolic&Diastolic,Chronic
- ;;^UTILITY(U,$J,358.3,22126,2)
- ;;=^328501
- ;;^UTILITY(U,$J,358.3,22127,0)
- ;;=428.43^^125^1387^51
- ;;^UTILITY(U,$J,358.3,22127,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22127,1,4,0)
- ;;=4^428.43
- ;;^UTILITY(U,$J,358.3,22127,1,5,0)
- ;;=5^Heart Failure,Systolic&Diastolic
- ;;^UTILITY(U,$J,358.3,22127,2)
- ;;=^328502
- ;;^UTILITY(U,$J,358.3,22128,0)
- ;;=396.3^^125^1387^10
- ;;^UTILITY(U,$J,358.3,22128,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22128,1,4,0)
- ;;=4^396.3
- ;;^UTILITY(U,$J,358.3,22128,1,5,0)
- ;;=5^Aortic and Mitral Insufficiency
- ;;^UTILITY(U,$J,358.3,22128,2)
- ;;=Aortic and Mitral Insufficiency^269583
- ;;^UTILITY(U,$J,358.3,22129,0)
- ;;=429.9^^125^1387^28
- ;;^UTILITY(U,$J,358.3,22129,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22129,1,4,0)
- ;;=4^429.9
- ;;^UTILITY(U,$J,358.3,22129,1,5,0)
- ;;=5^Diastolic Dysfunction
- ;;^UTILITY(U,$J,358.3,22129,2)
- ;;=^54741
- ;;^UTILITY(U,$J,358.3,22130,0)
- ;;=453.79^^125^1387^27
- ;;^UTILITY(U,$J,358.3,22130,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22130,1,4,0)
- ;;=4^453.79
- ;;^UTILITY(U,$J,358.3,22130,1,5,0)
- ;;=5^Chr Venous Emblsm Oth Spec Veins
- ;;^UTILITY(U,$J,358.3,22130,2)
- ;;=^338251
- ;;^UTILITY(U,$J,358.3,22131,0)
- ;;=453.89^^125^1387^1
- ;;^UTILITY(U,$J,358.3,22131,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22131,1,4,0)
- ;;=4^453.89
- ;;^UTILITY(U,$J,358.3,22131,1,5,0)
- ;;=5^AC Venous Emblsm Oth Spec Veins
- ;;^UTILITY(U,$J,358.3,22131,2)
- ;;=^338259
- ;;^UTILITY(U,$J,358.3,22132,0)
- ;;=454.2^^125^1387^85
- ;;^UTILITY(U,$J,358.3,22132,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22132,1,4,0)
- ;;=4^454.2
- ;;^UTILITY(U,$J,358.3,22132,1,5,0)
- ;;=5^Varicose Veins w/Ulcer&Inflam
- ;;^UTILITY(U,$J,358.3,22132,2)
- ;;=^269821
- ;;^UTILITY(U,$J,358.3,22133,0)
- ;;=397.1^^125^1387^74
- ;;^UTILITY(U,$J,358.3,22133,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22133,1,4,0)
- ;;=4^397.1
- ;;^UTILITY(U,$J,358.3,22133,1,5,0)
- ;;=5^Rheumatic Disease Pulmonary Valve
+ ;;^UTILITY(U,$J,358.3,21216,1,3,0)
+ ;;=3^Coma Scale,Best Motor Resp,None,in the Field
+ ;;^UTILITY(U,$J,358.3,21216,1,4,0)
+ ;;=4^R40.2311
+ ;;^UTILITY(U,$J,358.3,21216,2)
+ ;;=^5019401
+ ;;^UTILITY(U,$J,358.3,21217,0)
+ ;;=R40.2310^^84^947^13
+ ;;^UTILITY(U,$J,358.3,21217,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21217,1,3,0)
+ ;;=3^Coma Scale,Best Motor Resp,None,Unspec Time
+ ;;^UTILITY(U,$J,358.3,21217,1,4,0)
+ ;;=4^R40.2310
+ ;;^UTILITY(U,$J,358.3,21217,2)
+ ;;=^5019400
+ ;;^UTILITY(U,$J,358.3,21218,0)
+ ;;=R40.4^^84^947^38
+ ;;^UTILITY(U,$J,358.3,21218,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21218,1,3,0)
+ ;;=3^Transient Alteration of Awareness
+ ;;^UTILITY(U,$J,358.3,21218,1,4,0)
+ ;;=4^R40.4
+ ;;^UTILITY(U,$J,358.3,21218,2)
+ ;;=^5019435
+ ;;^UTILITY(U,$J,358.3,21219,0)
+ ;;=V00.811A^^84^948^45
+ ;;^UTILITY(U,$J,358.3,21219,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21219,1,3,0)
+ ;;=3^Fall from Moving Wheelchair (pwered),Init Encntr
+ ;;^UTILITY(U,$J,358.3,21219,1,4,0)
+ ;;=4^V00.811A
+ ;;^UTILITY(U,$J,358.3,21219,2)
+ ;;=^5055937
+ ;;^UTILITY(U,$J,358.3,21220,0)
+ ;;=V00.811D^^84^948^46
+ ;;^UTILITY(U,$J,358.3,21220,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21220,1,3,0)
+ ;;=3^Fall from Moving Wheelchair (pwered),Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21220,1,4,0)
+ ;;=4^V00.811D
+ ;;^UTILITY(U,$J,358.3,21220,2)
+ ;;=^5055938
+ ;;^UTILITY(U,$J,358.3,21221,0)
+ ;;=V00.812A^^84^948^133
+ ;;^UTILITY(U,$J,358.3,21221,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21221,1,3,0)
+ ;;=3^Wheelchair Colliding w/ Stationary Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21221,1,4,0)
+ ;;=4^V00.812A
+ ;;^UTILITY(U,$J,358.3,21221,2)
+ ;;=^5055940
+ ;;^UTILITY(U,$J,358.3,21222,0)
+ ;;=V00.812D^^84^948^134
+ ;;^UTILITY(U,$J,358.3,21222,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21222,1,3,0)
+ ;;=3^Wheelchair Colliding w/ Stationary Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21222,1,4,0)
+ ;;=4^V00.812D
+ ;;^UTILITY(U,$J,358.3,21222,2)
+ ;;=^5055941
+ ;;^UTILITY(U,$J,358.3,21223,0)
+ ;;=V00.818A^^84^948^131
+ ;;^UTILITY(U,$J,358.3,21223,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21223,1,3,0)
+ ;;=3^Wheelchair Accident NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21223,1,4,0)
+ ;;=4^V00.818A
+ ;;^UTILITY(U,$J,358.3,21223,2)
+ ;;=^5055943
+ ;;^UTILITY(U,$J,358.3,21224,0)
+ ;;=V00.818D^^84^948^132
+ ;;^UTILITY(U,$J,358.3,21224,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21224,1,3,0)
+ ;;=3^Wheelchair Accident NEC,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21224,1,4,0)
+ ;;=4^V00.818D
+ ;;^UTILITY(U,$J,358.3,21224,2)
+ ;;=^5055944
+ ;;^UTILITY(U,$J,358.3,21225,0)
+ ;;=V00.831A^^84^948^43
+ ;;^UTILITY(U,$J,358.3,21225,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21225,1,3,0)
+ ;;=3^Fall from Mobility Scooter,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21225,1,4,0)
+ ;;=4^V00.831A
+ ;;^UTILITY(U,$J,358.3,21225,2)
+ ;;=^5055955
+ ;;^UTILITY(U,$J,358.3,21226,0)
+ ;;=V00.831D^^84^948^44
+ ;;^UTILITY(U,$J,358.3,21226,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21226,1,3,0)
+ ;;=3^Fall from Mobility Scooter,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,21226,1,4,0)
+ ;;=4^V00.831D
+ ;;^UTILITY(U,$J,358.3,21226,2)
+ ;;=^5055956
+ ;;^UTILITY(U,$J,358.3,21227,0)
+ ;;=V00.832A^^84^948^95
+ ;;^UTILITY(U,$J,358.3,21227,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21227,1,3,0)
+ ;;=3^Mobility Scooter Colliding w/ Stationary Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,21227,1,4,0)
+ ;;=4^V00.832A
+ ;;^UTILITY(U,$J,358.3,21227,2)
+ ;;=^5055958
+ ;;^UTILITY(U,$J,358.3,21228,0)
+ ;;=V00.832D^^84^948^96
+ ;;^UTILITY(U,$J,358.3,21228,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21228,1,3,0)
+ ;;=3^Mobility Scooter Colliding w/ Stationary Obj,Subs Encntr

@@ -1,136 +1,126 @@
-IBDEI1W2 ; ; 06-AUG-2015
+IBDEI1W2 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33219,1,3,0)
- ;;=3^Osteonecrosis,Pelvis
- ;;^UTILITY(U,$J,358.3,33219,1,4,0)
- ;;=4^M87.850
- ;;^UTILITY(U,$J,358.3,33219,2)
- ;;=^5014852
- ;;^UTILITY(U,$J,358.3,33220,0)
- ;;=M87.851^^182^1998^69
- ;;^UTILITY(U,$J,358.3,33220,1,0)
+ ;;^UTILITY(U,$J,358.3,32074,1,4,0)
+ ;;=4^S92.312A
+ ;;^UTILITY(U,$J,358.3,32074,2)
+ ;;=^5045067
+ ;;^UTILITY(U,$J,358.3,32075,0)
+ ;;=S92.311A^^126^1609^60
+ ;;^UTILITY(U,$J,358.3,32075,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33220,1,3,0)
- ;;=3^Osteonecrosis,Right Femur
- ;;^UTILITY(U,$J,358.3,33220,1,4,0)
- ;;=4^M87.851
- ;;^UTILITY(U,$J,358.3,33220,2)
- ;;=^5014853
- ;;^UTILITY(U,$J,358.3,33221,0)
- ;;=M87.852^^182^1998^66
- ;;^UTILITY(U,$J,358.3,33221,1,0)
+ ;;^UTILITY(U,$J,358.3,32075,1,3,0)
+ ;;=3^Disp fx of 1st metatarsal bone, rt ft, init
+ ;;^UTILITY(U,$J,358.3,32075,1,4,0)
+ ;;=4^S92.311A
+ ;;^UTILITY(U,$J,358.3,32075,2)
+ ;;=^5045060
+ ;;^UTILITY(U,$J,358.3,32076,0)
+ ;;=S92.332A^^126^1609^67
+ ;;^UTILITY(U,$J,358.3,32076,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33221,1,3,0)
- ;;=3^Osteonecrosis,Left Femur
- ;;^UTILITY(U,$J,358.3,33221,1,4,0)
- ;;=4^M87.852
- ;;^UTILITY(U,$J,358.3,33221,2)
- ;;=^5014854
- ;;^UTILITY(U,$J,358.3,33222,0)
- ;;=M88.0^^182^1998^57
- ;;^UTILITY(U,$J,358.3,33222,1,0)
+ ;;^UTILITY(U,$J,358.3,32076,1,3,0)
+ ;;=3^Disp fx of 3rd metatarsal bone, lft ft, init
+ ;;^UTILITY(U,$J,358.3,32076,1,4,0)
+ ;;=4^S92.332A
+ ;;^UTILITY(U,$J,358.3,32076,2)
+ ;;=^5045151
+ ;;^UTILITY(U,$J,358.3,32077,0)
+ ;;=S92.331A^^126^1609^68
+ ;;^UTILITY(U,$J,358.3,32077,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33222,1,3,0)
- ;;=3^Osteitis Deformans of Skull
- ;;^UTILITY(U,$J,358.3,33222,1,4,0)
- ;;=4^M88.0
- ;;^UTILITY(U,$J,358.3,33222,2)
- ;;=^5014874
- ;;^UTILITY(U,$J,358.3,33223,0)
- ;;=M88.1^^182^1998^58
- ;;^UTILITY(U,$J,358.3,33223,1,0)
+ ;;^UTILITY(U,$J,358.3,32077,1,3,0)
+ ;;=3^Disp fx of 3rd metatarsal bone, rt ft, init
+ ;;^UTILITY(U,$J,358.3,32077,1,4,0)
+ ;;=4^S92.331A
+ ;;^UTILITY(U,$J,358.3,32077,2)
+ ;;=^5045144
+ ;;^UTILITY(U,$J,358.3,32078,0)
+ ;;=S92.334A^^126^1609^293
+ ;;^UTILITY(U,$J,358.3,32078,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33223,1,3,0)
- ;;=3^Osteitis Deformans of Vertebrae
- ;;^UTILITY(U,$J,358.3,33223,1,4,0)
- ;;=4^M88.1
- ;;^UTILITY(U,$J,358.3,33223,2)
- ;;=^5014875
- ;;^UTILITY(U,$J,358.3,33224,0)
- ;;=M88.89^^182^1998^56
- ;;^UTILITY(U,$J,358.3,33224,1,0)
+ ;;^UTILITY(U,$J,358.3,32078,1,3,0)
+ ;;=3^Nondisp fx of 3rd metatarsal bone, rt ft, init
+ ;;^UTILITY(U,$J,358.3,32078,1,4,0)
+ ;;=4^S92.334A
+ ;;^UTILITY(U,$J,358.3,32078,2)
+ ;;=^5045165
+ ;;^UTILITY(U,$J,358.3,32079,0)
+ ;;=S92.335A^^126^1609^292
+ ;;^UTILITY(U,$J,358.3,32079,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33224,1,3,0)
- ;;=3^Osteitis Deformans of Mult Sites
- ;;^UTILITY(U,$J,358.3,33224,1,4,0)
- ;;=4^M88.89
- ;;^UTILITY(U,$J,358.3,33224,2)
- ;;=^5014898
- ;;^UTILITY(U,$J,358.3,33225,0)
- ;;=M94.0^^182^1998^14
- ;;^UTILITY(U,$J,358.3,33225,1,0)
+ ;;^UTILITY(U,$J,358.3,32079,1,3,0)
+ ;;=3^Nondisp fx of 3rd metatarsal bone, lft ft, init
+ ;;^UTILITY(U,$J,358.3,32079,1,4,0)
+ ;;=4^S92.335A
+ ;;^UTILITY(U,$J,358.3,32079,2)
+ ;;=^5045172
+ ;;^UTILITY(U,$J,358.3,32080,0)
+ ;;=S92.344A^^126^1609^297
+ ;;^UTILITY(U,$J,358.3,32080,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33225,1,3,0)
- ;;=3^Chondrocostal Junction Syndrome
- ;;^UTILITY(U,$J,358.3,33225,1,4,0)
- ;;=4^M94.0
- ;;^UTILITY(U,$J,358.3,33225,2)
- ;;=^5015327
- ;;^UTILITY(U,$J,358.3,33226,0)
- ;;=M94.20^^182^1998^17
- ;;^UTILITY(U,$J,358.3,33226,1,0)
+ ;;^UTILITY(U,$J,358.3,32080,1,3,0)
+ ;;=3^Nondisp fx of 4th metatarsal bone, rt ft, init
+ ;;^UTILITY(U,$J,358.3,32080,1,4,0)
+ ;;=4^S92.344A
+ ;;^UTILITY(U,$J,358.3,32080,2)
+ ;;=^5045207
+ ;;^UTILITY(U,$J,358.3,32081,0)
+ ;;=S92.342A^^126^1609^71
+ ;;^UTILITY(U,$J,358.3,32081,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33226,1,3,0)
- ;;=3^Chondromalacia,Unspec Site
- ;;^UTILITY(U,$J,358.3,33226,1,4,0)
- ;;=4^M94.20
- ;;^UTILITY(U,$J,358.3,33226,2)
- ;;=^5015329
- ;;^UTILITY(U,$J,358.3,33227,0)
- ;;=M94.261^^182^1998^16
- ;;^UTILITY(U,$J,358.3,33227,1,0)
+ ;;^UTILITY(U,$J,358.3,32081,1,3,0)
+ ;;=3^Disp fx of 4th metatarsal bone, lft ft,  init
+ ;;^UTILITY(U,$J,358.3,32081,1,4,0)
+ ;;=4^S92.342A
+ ;;^UTILITY(U,$J,358.3,32081,2)
+ ;;=^5045193
+ ;;^UTILITY(U,$J,358.3,32082,0)
+ ;;=S92.355A^^126^1609^300
+ ;;^UTILITY(U,$J,358.3,32082,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33227,1,3,0)
- ;;=3^Chondromalacia,Right Knee
- ;;^UTILITY(U,$J,358.3,33227,1,4,0)
- ;;=4^M94.261
- ;;^UTILITY(U,$J,358.3,33227,2)
- ;;=^5015345
- ;;^UTILITY(U,$J,358.3,33228,0)
- ;;=M94.262^^182^1998^15
- ;;^UTILITY(U,$J,358.3,33228,1,0)
+ ;;^UTILITY(U,$J,358.3,32082,1,3,0)
+ ;;=3^Nondisp fx of 5th metatarsal bone, lft ft, init
+ ;;^UTILITY(U,$J,358.3,32082,1,4,0)
+ ;;=4^S92.355A
+ ;;^UTILITY(U,$J,358.3,32082,2)
+ ;;=^5045256
+ ;;^UTILITY(U,$J,358.3,32083,0)
+ ;;=S92.301A^^126^1609^205
+ ;;^UTILITY(U,$J,358.3,32083,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33228,1,3,0)
- ;;=3^Chondromalacia,Left Knee
- ;;^UTILITY(U,$J,358.3,33228,1,4,0)
- ;;=4^M94.262
- ;;^UTILITY(U,$J,358.3,33228,2)
- ;;=^5015346
- ;;^UTILITY(U,$J,358.3,33229,0)
- ;;=R25.2^^182^1998^28
- ;;^UTILITY(U,$J,358.3,33229,1,0)
+ ;;^UTILITY(U,$J,358.3,32083,1,3,0)
+ ;;=3^Fx of metatarsal bone(s), rt ft, unspec, init
+ ;;^UTILITY(U,$J,358.3,32083,1,4,0)
+ ;;=4^S92.301A
+ ;;^UTILITY(U,$J,358.3,32083,2)
+ ;;=^5045046
+ ;;^UTILITY(U,$J,358.3,32084,0)
+ ;;=S92.302A^^126^1609^204
+ ;;^UTILITY(U,$J,358.3,32084,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33229,1,3,0)
- ;;=3^Cramp and Spasm
- ;;^UTILITY(U,$J,358.3,33229,1,4,0)
- ;;=4^R25.2
- ;;^UTILITY(U,$J,358.3,33229,2)
- ;;=^5019301
- ;;^UTILITY(U,$J,358.3,33230,0)
- ;;=R70.0^^182^1998^30
- ;;^UTILITY(U,$J,358.3,33230,1,0)
+ ;;^UTILITY(U,$J,358.3,32084,1,3,0)
+ ;;=3^Fx of metatarsal bone(s), lft ft, unspec, init
+ ;;^UTILITY(U,$J,358.3,32084,1,4,0)
+ ;;=4^S92.302A
+ ;;^UTILITY(U,$J,358.3,32084,2)
+ ;;=^5045053
+ ;;^UTILITY(U,$J,358.3,32085,0)
+ ;;=S92.202A^^126^1609^223
+ ;;^UTILITY(U,$J,358.3,32085,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33230,1,3,0)
- ;;=3^Elevated Erythrocyte Sedimentation Rate
- ;;^UTILITY(U,$J,358.3,33230,1,4,0)
- ;;=4^R70.0
- ;;^UTILITY(U,$J,358.3,33230,2)
- ;;=^5019559
- ;;^UTILITY(U,$J,358.3,33231,0)
- ;;=M25.511^^182^1998^89
- ;;^UTILITY(U,$J,358.3,33231,1,0)
+ ;;^UTILITY(U,$J,358.3,32085,1,3,0)
+ ;;=3^Fx of tarsal bone(s) of lft ft, unspec, init
+ ;;^UTILITY(U,$J,358.3,32085,1,4,0)
+ ;;=4^S92.202A
+ ;;^UTILITY(U,$J,358.3,32085,2)
+ ;;=^5044829
+ ;;^UTILITY(U,$J,358.3,32086,0)
+ ;;=S92.201A^^126^1609^224
+ ;;^UTILITY(U,$J,358.3,32086,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33231,1,3,0)
- ;;=3^Pain in Right Shoulder
- ;;^UTILITY(U,$J,358.3,33231,1,4,0)
- ;;=4^M25.511
- ;;^UTILITY(U,$J,358.3,33231,2)
- ;;=^5011602
- ;;^UTILITY(U,$J,358.3,33232,0)
- ;;=M25.512^^182^1998^79
- ;;^UTILITY(U,$J,358.3,33232,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33232,1,3,0)
- ;;=3^Pain in Left Shoulder
+ ;;^UTILITY(U,$J,358.3,32086,1,3,0)
+ ;;=3^Fx of tarsal bone(s) of rt ft, unspec, init
+ ;;^UTILITY(U,$J,358.3,32086,1,4,0)
+ ;;=4^S92.201A

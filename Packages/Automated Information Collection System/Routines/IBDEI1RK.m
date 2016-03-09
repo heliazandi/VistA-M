@@ -1,126 +1,132 @@
-IBDEI1RK ; ; 06-AUG-2015
+IBDEI1RK ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31156,1,3,0)
- ;;=3^Fracture of angle of mandible, sequela
- ;;^UTILITY(U,$J,358.3,31156,1,4,0)
- ;;=4^S02.65XS
- ;;^UTILITY(U,$J,358.3,31156,2)
- ;;=^5020407
- ;;^UTILITY(U,$J,358.3,31157,0)
- ;;=S02.61XS^^180^1947^12
- ;;^UTILITY(U,$J,358.3,31157,1,0)
+ ;;^UTILITY(U,$J,358.3,29980,0)
+ ;;=D52.1^^118^1493^18
+ ;;^UTILITY(U,$J,358.3,29980,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31157,1,3,0)
- ;;=3^Fracture of condylar process of mandible, sequela
- ;;^UTILITY(U,$J,358.3,31157,1,4,0)
- ;;=4^S02.61XS
- ;;^UTILITY(U,$J,358.3,31157,2)
- ;;=^5020383
- ;;^UTILITY(U,$J,358.3,31158,0)
- ;;=S02.63XS^^180^1947^13
- ;;^UTILITY(U,$J,358.3,31158,1,0)
+ ;;^UTILITY(U,$J,358.3,29980,1,3,0)
+ ;;=3^Drug-induced folate deficiency anemia
+ ;;^UTILITY(U,$J,358.3,29980,1,4,0)
+ ;;=4^D52.1
+ ;;^UTILITY(U,$J,358.3,29980,2)
+ ;;=^5002291
+ ;;^UTILITY(U,$J,358.3,29981,0)
+ ;;=D52.8^^118^1493^22
+ ;;^UTILITY(U,$J,358.3,29981,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31158,1,3,0)
- ;;=3^Fracture of coronoid process of mandible, sequela
- ;;^UTILITY(U,$J,358.3,31158,1,4,0)
- ;;=4^S02.63XS
- ;;^UTILITY(U,$J,358.3,31158,2)
- ;;=^5020395
- ;;^UTILITY(U,$J,358.3,31159,0)
- ;;=S02.69XS^^180^1947^15
- ;;^UTILITY(U,$J,358.3,31159,1,0)
+ ;;^UTILITY(U,$J,358.3,29981,1,3,0)
+ ;;=3^Folate deficiency anemias NEC
+ ;;^UTILITY(U,$J,358.3,29981,1,4,0)
+ ;;=4^D52.8
+ ;;^UTILITY(U,$J,358.3,29981,2)
+ ;;=^5002292
+ ;;^UTILITY(U,$J,358.3,29982,0)
+ ;;=D52.9^^118^1493^21
+ ;;^UTILITY(U,$J,358.3,29982,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31159,1,3,0)
- ;;=3^Fracture of mandible of other specified site, sequela
- ;;^UTILITY(U,$J,358.3,31159,1,4,0)
- ;;=4^S02.69XS
- ;;^UTILITY(U,$J,358.3,31159,2)
- ;;=^5020425
- ;;^UTILITY(U,$J,358.3,31160,0)
- ;;=S02.609S^^180^1947^16
- ;;^UTILITY(U,$J,358.3,31160,1,0)
+ ;;^UTILITY(U,$J,358.3,29982,1,3,0)
+ ;;=3^Folate deficiency anemia, unspecified
+ ;;^UTILITY(U,$J,358.3,29982,1,4,0)
+ ;;=4^D52.9
+ ;;^UTILITY(U,$J,358.3,29982,2)
+ ;;=^5002293
+ ;;^UTILITY(U,$J,358.3,29983,0)
+ ;;=D53.1^^118^1493^31
+ ;;^UTILITY(U,$J,358.3,29983,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31160,1,3,0)
- ;;=3^Fracture of mandible, unspecified, sequela
- ;;^UTILITY(U,$J,358.3,31160,1,4,0)
- ;;=4^S02.609S
- ;;^UTILITY(U,$J,358.3,31160,2)
- ;;=^5020377
- ;;^UTILITY(U,$J,358.3,31161,0)
- ;;=S02.2XXS^^180^1947^17
- ;;^UTILITY(U,$J,358.3,31161,1,0)
+ ;;^UTILITY(U,$J,358.3,29983,1,3,0)
+ ;;=3^Megaloblastic Anemias NEC
+ ;;^UTILITY(U,$J,358.3,29983,1,4,0)
+ ;;=4^D53.1
+ ;;^UTILITY(U,$J,358.3,29983,2)
+ ;;=^5002295
+ ;;^UTILITY(U,$J,358.3,29984,0)
+ ;;=D53.0^^118^1493^38
+ ;;^UTILITY(U,$J,358.3,29984,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31161,1,3,0)
- ;;=3^Fracture of nasal bones, sequela
- ;;^UTILITY(U,$J,358.3,31161,1,4,0)
- ;;=4^S02.2XXS
- ;;^UTILITY(U,$J,358.3,31161,2)
- ;;=^5020311
- ;;^UTILITY(U,$J,358.3,31162,0)
- ;;=S02.3XXS^^180^1947^20
- ;;^UTILITY(U,$J,358.3,31162,1,0)
+ ;;^UTILITY(U,$J,358.3,29984,1,3,0)
+ ;;=3^Protein deficiency anemia
+ ;;^UTILITY(U,$J,358.3,29984,1,4,0)
+ ;;=4^D53.0
+ ;;^UTILITY(U,$J,358.3,29984,2)
+ ;;=^5002294
+ ;;^UTILITY(U,$J,358.3,29985,0)
+ ;;=D53.9^^118^1493^35
+ ;;^UTILITY(U,$J,358.3,29985,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31162,1,3,0)
- ;;=3^Fracture of orbital floor, sequela
- ;;^UTILITY(U,$J,358.3,31162,1,4,0)
- ;;=4^S02.3XXS
- ;;^UTILITY(U,$J,358.3,31162,2)
- ;;=^5020317
- ;;^UTILITY(U,$J,358.3,31163,0)
- ;;=S02.64XS^^180^1947^21
- ;;^UTILITY(U,$J,358.3,31163,1,0)
+ ;;^UTILITY(U,$J,358.3,29985,1,3,0)
+ ;;=3^Nutritional anemia, unspecified
+ ;;^UTILITY(U,$J,358.3,29985,1,4,0)
+ ;;=4^D53.9
+ ;;^UTILITY(U,$J,358.3,29985,2)
+ ;;=^5002298
+ ;;^UTILITY(U,$J,358.3,29986,0)
+ ;;=D57.40^^118^1493^39
+ ;;^UTILITY(U,$J,358.3,29986,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31163,1,3,0)
- ;;=3^Fracture of ramus of mandible, sequela
- ;;^UTILITY(U,$J,358.3,31163,1,4,0)
- ;;=4^S02.64XS
- ;;^UTILITY(U,$J,358.3,31163,2)
- ;;=^5020401
- ;;^UTILITY(U,$J,358.3,31164,0)
- ;;=S02.62XS^^180^1947^23
- ;;^UTILITY(U,$J,358.3,31164,1,0)
+ ;;^UTILITY(U,$J,358.3,29986,1,3,0)
+ ;;=3^Sickle-cell thalassemia without crisis
+ ;;^UTILITY(U,$J,358.3,29986,1,4,0)
+ ;;=4^D57.40
+ ;;^UTILITY(U,$J,358.3,29986,2)
+ ;;=^329908
+ ;;^UTILITY(U,$J,358.3,29987,0)
+ ;;=D58.0^^118^1493^29
+ ;;^UTILITY(U,$J,358.3,29987,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31164,1,3,0)
- ;;=3^Fracture of subcondylar process of mandible, sequela
- ;;^UTILITY(U,$J,358.3,31164,1,4,0)
- ;;=4^S02.62XS
- ;;^UTILITY(U,$J,358.3,31164,2)
- ;;=^5020389
- ;;^UTILITY(U,$J,358.3,31165,0)
- ;;=S02.66XS^^180^1947^24
- ;;^UTILITY(U,$J,358.3,31165,1,0)
+ ;;^UTILITY(U,$J,358.3,29987,1,3,0)
+ ;;=3^Hereditary spherocytosis
+ ;;^UTILITY(U,$J,358.3,29987,1,4,0)
+ ;;=4^D58.0
+ ;;^UTILITY(U,$J,358.3,29987,2)
+ ;;=^5002321
+ ;;^UTILITY(U,$J,358.3,29988,0)
+ ;;=D58.1^^118^1493^26
+ ;;^UTILITY(U,$J,358.3,29988,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31165,1,3,0)
- ;;=3^Fracture of symphysis of mandible, sequela
- ;;^UTILITY(U,$J,358.3,31165,1,4,0)
- ;;=4^S02.66XS
- ;;^UTILITY(U,$J,358.3,31165,2)
- ;;=^5020413
- ;;^UTILITY(U,$J,358.3,31166,0)
- ;;=S02.600S^^180^1947^25
- ;;^UTILITY(U,$J,358.3,31166,1,0)
+ ;;^UTILITY(U,$J,358.3,29988,1,3,0)
+ ;;=3^Hereditary elliptocytosis
+ ;;^UTILITY(U,$J,358.3,29988,1,4,0)
+ ;;=4^D58.1
+ ;;^UTILITY(U,$J,358.3,29988,2)
+ ;;=^39378
+ ;;^UTILITY(U,$J,358.3,29989,0)
+ ;;=D55.0^^118^1493^5
+ ;;^UTILITY(U,$J,358.3,29989,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31166,1,3,0)
- ;;=3^Fracture of unspecified part of body of mandible, sequela
- ;;^UTILITY(U,$J,358.3,31166,1,4,0)
- ;;=4^S02.600S
- ;;^UTILITY(U,$J,358.3,31166,2)
- ;;=^5020371
- ;;^UTILITY(U,$J,358.3,31167,0)
- ;;=S02.0XXS^^180^1947^26
- ;;^UTILITY(U,$J,358.3,31167,1,0)
+ ;;^UTILITY(U,$J,358.3,29989,1,3,0)
+ ;;=3^Anemia due to glucose-6-phosphate dehydrogenase deficiency
+ ;;^UTILITY(U,$J,358.3,29989,1,4,0)
+ ;;=4^D55.0
+ ;;^UTILITY(U,$J,358.3,29989,2)
+ ;;=^5002299
+ ;;^UTILITY(U,$J,358.3,29990,0)
+ ;;=D55.1^^118^1493^6
+ ;;^UTILITY(U,$J,358.3,29990,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31167,1,3,0)
- ;;=3^Fracture of vault of skull, sequela
- ;;^UTILITY(U,$J,358.3,31167,1,4,0)
- ;;=4^S02.0XXS
- ;;^UTILITY(U,$J,358.3,31167,2)
- ;;=^5020257
- ;;^UTILITY(U,$J,358.3,31168,0)
- ;;=S14.2XXS^^180^1947^30
- ;;^UTILITY(U,$J,358.3,31168,1,0)
+ ;;^UTILITY(U,$J,358.3,29990,1,3,0)
+ ;;=3^Anemia due to other disorders of glutathione metabolism
+ ;;^UTILITY(U,$J,358.3,29990,1,4,0)
+ ;;=4^D55.1
+ ;;^UTILITY(U,$J,358.3,29990,2)
+ ;;=^5002300
+ ;;^UTILITY(U,$J,358.3,29991,0)
+ ;;=D55.8^^118^1493^12
+ ;;^UTILITY(U,$J,358.3,29991,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31168,1,3,0)
- ;;=3^Injury of nerve root of cervical spine, sequela
+ ;;^UTILITY(U,$J,358.3,29991,1,3,0)
+ ;;=3^Anemias due to enzyme disorders
+ ;;^UTILITY(U,$J,358.3,29991,1,4,0)
+ ;;=4^D55.8
+ ;;^UTILITY(U,$J,358.3,29991,2)
+ ;;=^5002303
+ ;;^UTILITY(U,$J,358.3,29992,0)
+ ;;=D58.9^^118^1493^27
+ ;;^UTILITY(U,$J,358.3,29992,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29992,1,3,0)
+ ;;=3^Hereditary hemolytic anemia, unspecified
+ ;;^UTILITY(U,$J,358.3,29992,1,4,0)
+ ;;=4^D58.9

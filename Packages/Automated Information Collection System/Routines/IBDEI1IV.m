@@ -1,140 +1,124 @@
-IBDEI1IV ; ; 06-AUG-2015
+IBDEI1IV ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,27027,1,3,0)
- ;;=3^Foot Amputat Stat
- ;;^UTILITY(U,$J,358.3,27027,1,4,0)
- ;;=4^V49.73
- ;;^UTILITY(U,$J,358.3,27027,2)
- ;;=^303441
- ;;^UTILITY(U,$J,358.3,27028,0)
- ;;=V49.70^^160^1754^14
- ;;^UTILITY(U,$J,358.3,27028,1,0)
+ ;;^UTILITY(U,$J,358.3,25840,1,3,0)
+ ;;=3^Adult Sexual Abuse,Confirmed,Subsequent Encounter 
+ ;;^UTILITY(U,$J,358.3,25840,1,4,0)
+ ;;=4^T74.21XD
+ ;;^UTILITY(U,$J,358.3,25840,2)
+ ;;=^5054153
+ ;;^UTILITY(U,$J,358.3,25841,0)
+ ;;=T76.21XA^^98^1209^15
+ ;;^UTILITY(U,$J,358.3,25841,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27028,1,3,0)
- ;;=3^Unsp L Limb Amput Stat
- ;;^UTILITY(U,$J,358.3,27028,1,4,0)
- ;;=4^V49.70
- ;;^UTILITY(U,$J,358.3,27028,2)
- ;;=^303438
- ;;^UTILITY(U,$J,358.3,27029,0)
- ;;=V49.71^^160^1754^7
- ;;^UTILITY(U,$J,358.3,27029,1,0)
+ ;;^UTILITY(U,$J,358.3,25841,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Initial Encounter  
+ ;;^UTILITY(U,$J,358.3,25841,1,4,0)
+ ;;=4^T76.21XA
+ ;;^UTILITY(U,$J,358.3,25841,2)
+ ;;=^5054227
+ ;;^UTILITY(U,$J,358.3,25842,0)
+ ;;=T76.21XD^^98^1209^16
+ ;;^UTILITY(U,$J,358.3,25842,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27029,1,3,0)
- ;;=3^Great Toe Amputat Stat
- ;;^UTILITY(U,$J,358.3,27029,1,4,0)
- ;;=4^V49.71
- ;;^UTILITY(U,$J,358.3,27029,2)
- ;;=^303439
- ;;^UTILITY(U,$J,358.3,27030,0)
- ;;=V49.72^^160^1754^11
- ;;^UTILITY(U,$J,358.3,27030,1,0)
+ ;;^UTILITY(U,$J,358.3,25842,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Subsequent Encounter  
+ ;;^UTILITY(U,$J,358.3,25842,1,4,0)
+ ;;=4^T76.21XD
+ ;;^UTILITY(U,$J,358.3,25842,2)
+ ;;=^5054228
+ ;;^UTILITY(U,$J,358.3,25843,0)
+ ;;=Z69.81^^98^1209^27
+ ;;^UTILITY(U,$J,358.3,25843,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27030,1,3,0)
- ;;=3^Oth Toe(S) Amputat Stat
- ;;^UTILITY(U,$J,358.3,27030,1,4,0)
- ;;=4^V49.72
- ;;^UTILITY(U,$J,358.3,27030,2)
- ;;=^303440
- ;;^UTILITY(U,$J,358.3,27031,0)
- ;;=V49.60^^160^1754^15
- ;;^UTILITY(U,$J,358.3,27031,1,0)
+ ;;^UTILITY(U,$J,358.3,25843,1,3,0)
+ ;;=3^MH Svc for Victim of Nonspousal/Nonpartner Abuse,Physical or Sexual
+ ;;^UTILITY(U,$J,358.3,25843,1,4,0)
+ ;;=4^Z69.81
+ ;;^UTILITY(U,$J,358.3,25843,2)
+ ;;=^5063234
+ ;;^UTILITY(U,$J,358.3,25844,0)
+ ;;=Z69.82^^98^1209^21
+ ;;^UTILITY(U,$J,358.3,25844,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27031,1,3,0)
- ;;=3^Unsp Lev U Limb Amput
- ;;^UTILITY(U,$J,358.3,27031,1,4,0)
- ;;=4^V49.60
- ;;^UTILITY(U,$J,358.3,27031,2)
- ;;=^303427
- ;;^UTILITY(U,$J,358.3,27032,0)
- ;;=V49.61^^160^1754^13
- ;;^UTILITY(U,$J,358.3,27032,1,0)
+ ;;^UTILITY(U,$J,358.3,25844,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonspousal/Nonpartner Abuse,Physical or Sexual
+ ;;^UTILITY(U,$J,358.3,25844,1,4,0)
+ ;;=4^Z69.82
+ ;;^UTILITY(U,$J,358.3,25844,2)
+ ;;=^5063235
+ ;;^UTILITY(U,$J,358.3,25845,0)
+ ;;=T74.01XA^^98^1209^1
+ ;;^UTILITY(U,$J,358.3,25845,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27032,1,3,0)
- ;;=3^Thumb Amput Status
- ;;^UTILITY(U,$J,358.3,27032,1,4,0)
- ;;=4^V49.61
- ;;^UTILITY(U,$J,358.3,27032,2)
- ;;=^303428
- ;;^UTILITY(U,$J,358.3,27033,0)
- ;;=V49.62^^160^1754^10
- ;;^UTILITY(U,$J,358.3,27033,1,0)
+ ;;^UTILITY(U,$J,358.3,25845,1,3,0)
+ ;;=3^Adult Neglect,Confirmed,Initial Encounter 
+ ;;^UTILITY(U,$J,358.3,25845,1,4,0)
+ ;;=4^T74.01XA
+ ;;^UTILITY(U,$J,358.3,25845,2)
+ ;;=^5054140
+ ;;^UTILITY(U,$J,358.3,25846,0)
+ ;;=T74.01XD^^98^1209^2
+ ;;^UTILITY(U,$J,358.3,25846,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27033,1,3,0)
- ;;=3^Oth Finger(s) Amput Status
- ;;^UTILITY(U,$J,358.3,27033,1,4,0)
- ;;=4^V49.62
- ;;^UTILITY(U,$J,358.3,27033,2)
- ;;=^303429
- ;;^UTILITY(U,$J,358.3,27034,0)
- ;;=V49.63^^160^1754^8
- ;;^UTILITY(U,$J,358.3,27034,1,0)
+ ;;^UTILITY(U,$J,358.3,25846,1,3,0)
+ ;;=3^Adult Neglect,Confirmed,Subsequent Encounter 
+ ;;^UTILITY(U,$J,358.3,25846,1,4,0)
+ ;;=4^T74.01XD
+ ;;^UTILITY(U,$J,358.3,25846,2)
+ ;;=^5054141
+ ;;^UTILITY(U,$J,358.3,25847,0)
+ ;;=T76.01XA^^98^1209^3
+ ;;^UTILITY(U,$J,358.3,25847,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27034,1,3,0)
- ;;=3^Hand Amput Status
- ;;^UTILITY(U,$J,358.3,27034,1,4,0)
- ;;=4^V49.63
- ;;^UTILITY(U,$J,358.3,27034,2)
- ;;=^303430
- ;;^UTILITY(U,$J,358.3,27035,0)
- ;;=V49.64^^160^1754^16
- ;;^UTILITY(U,$J,358.3,27035,1,0)
+ ;;^UTILITY(U,$J,358.3,25847,1,3,0)
+ ;;=3^Adult Neglect,Suspected,Initial Encounter  
+ ;;^UTILITY(U,$J,358.3,25847,1,4,0)
+ ;;=4^T76.01XA
+ ;;^UTILITY(U,$J,358.3,25847,2)
+ ;;=^5054215
+ ;;^UTILITY(U,$J,358.3,25848,0)
+ ;;=T76.01XD^^98^1209^4
+ ;;^UTILITY(U,$J,358.3,25848,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27035,1,3,0)
- ;;=3^Wrist Amput Status
- ;;^UTILITY(U,$J,358.3,27035,1,4,0)
- ;;=4^V49.64
- ;;^UTILITY(U,$J,358.3,27035,2)
- ;;=^303431
- ;;^UTILITY(U,$J,358.3,27036,0)
- ;;=V49.65^^160^1754^4
- ;;^UTILITY(U,$J,358.3,27036,1,0)
+ ;;^UTILITY(U,$J,358.3,25848,1,3,0)
+ ;;=3^Adult Neglect,Suspected,Subsequent Encounter  
+ ;;^UTILITY(U,$J,358.3,25848,1,4,0)
+ ;;=4^T76.01XD
+ ;;^UTILITY(U,$J,358.3,25848,2)
+ ;;=^5054216
+ ;;^UTILITY(U,$J,358.3,25849,0)
+ ;;=Z91.412^^98^1209^31
+ ;;^UTILITY(U,$J,358.3,25849,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27036,1,3,0)
- ;;=3^Below Elbow Amput Status
- ;;^UTILITY(U,$J,358.3,27036,1,4,0)
- ;;=4^V49.65
- ;;^UTILITY(U,$J,358.3,27036,2)
- ;;=^303432
- ;;^UTILITY(U,$J,358.3,27037,0)
- ;;=V49.66^^160^1754^1
- ;;^UTILITY(U,$J,358.3,27037,1,0)
+ ;;^UTILITY(U,$J,358.3,25849,1,3,0)
+ ;;=3^Personal Hx of Spouse or Partner Neglect
+ ;;^UTILITY(U,$J,358.3,25849,1,4,0)
+ ;;=4^Z91.412
+ ;;^UTILITY(U,$J,358.3,25849,2)
+ ;;=^5063621
+ ;;^UTILITY(U,$J,358.3,25850,0)
+ ;;=T74.31XA^^98^1209^9
+ ;;^UTILITY(U,$J,358.3,25850,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27037,1,3,0)
- ;;=3^Above Elbow Amput Status
- ;;^UTILITY(U,$J,358.3,27037,1,4,0)
- ;;=4^V49.66
- ;;^UTILITY(U,$J,358.3,27037,2)
- ;;=^303433
- ;;^UTILITY(U,$J,358.3,27038,0)
- ;;=V49.67^^160^1754^12
- ;;^UTILITY(U,$J,358.3,27038,1,0)
+ ;;^UTILITY(U,$J,358.3,25850,1,3,0)
+ ;;=3^Adult Psychological Abuse,Confirmed,Initial Encounter  
+ ;;^UTILITY(U,$J,358.3,25850,1,4,0)
+ ;;=4^T74.31XA
+ ;;^UTILITY(U,$J,358.3,25850,2)
+ ;;=^5054158
+ ;;^UTILITY(U,$J,358.3,25851,0)
+ ;;=T74.31XD^^98^1209^10
+ ;;^UTILITY(U,$J,358.3,25851,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27038,1,3,0)
- ;;=3^Shoulder Amput Status
- ;;^UTILITY(U,$J,358.3,27038,1,4,0)
- ;;=4^V49.67
- ;;^UTILITY(U,$J,358.3,27038,2)
- ;;=^303434
- ;;^UTILITY(U,$J,358.3,27039,0)
- ;;=V49.77^^160^1754^9
- ;;^UTILITY(U,$J,358.3,27039,1,0)
+ ;;^UTILITY(U,$J,358.3,25851,1,3,0)
+ ;;=3^Adult Psychological Abuse,Confirmed,Subsequent Encounter 
+ ;;^UTILITY(U,$J,358.3,25851,1,4,0)
+ ;;=4^T74.31XD
+ ;;^UTILITY(U,$J,358.3,25851,2)
+ ;;=^5054159
+ ;;^UTILITY(U,$J,358.3,25852,0)
+ ;;=T76.31XA^^98^1209^11
+ ;;^UTILITY(U,$J,358.3,25852,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27039,1,3,0)
- ;;=3^Hip Amput Status
- ;;^UTILITY(U,$J,358.3,27039,1,4,0)
- ;;=4^V49.77
- ;;^UTILITY(U,$J,358.3,27039,2)
- ;;=^303445
- ;;^UTILITY(U,$J,358.3,27040,0)
- ;;=784.3^^160^1755^1
- ;;^UTILITY(U,$J,358.3,27040,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,27040,1,3,0)
- ;;=3^Aphasia
- ;;^UTILITY(U,$J,358.3,27040,1,4,0)
- ;;=4^784.3
- ;;^UTILITY(U,$J,358.3,27040,2)
- ;;=^9453

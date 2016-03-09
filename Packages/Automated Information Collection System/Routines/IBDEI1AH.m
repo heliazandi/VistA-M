@@ -1,138 +1,122 @@
-IBDEI1AH ; ; 06-AUG-2015
+IBDEI1AH ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,22836,2)
- ;;=^186856
- ;;^UTILITY(U,$J,358.3,22837,0)
- ;;=238.4^^125^1397^109
- ;;^UTILITY(U,$J,358.3,22837,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22837,1,4,0)
- ;;=4^238.4
- ;;^UTILITY(U,$J,358.3,22837,1,5,0)
- ;;=5^Polycytheria Rubra Vera
- ;;^UTILITY(U,$J,358.3,22837,2)
- ;;=^96105
- ;;^UTILITY(U,$J,358.3,22838,0)
- ;;=V58.61^^125^1397^126
- ;;^UTILITY(U,$J,358.3,22838,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22838,1,4,0)
- ;;=4^V58.61
- ;;^UTILITY(U,$J,358.3,22838,1,5,0)
- ;;=5^Warfarin/Coumadin Use
- ;;^UTILITY(U,$J,358.3,22838,2)
- ;;=Warfarin/Coumadin Use^303459
- ;;^UTILITY(U,$J,358.3,22839,0)
- ;;=282.49^^125^1397^117
- ;;^UTILITY(U,$J,358.3,22839,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22839,1,4,0)
- ;;=4^282.49
- ;;^UTILITY(U,$J,358.3,22839,1,5,0)
- ;;=5^Thalassemia NEC
- ;;^UTILITY(U,$J,358.3,22839,2)
- ;;=^329910
- ;;^UTILITY(U,$J,358.3,22840,0)
- ;;=289.89^^125^1397^15
- ;;^UTILITY(U,$J,358.3,22840,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22840,1,4,0)
- ;;=4^289.89
- ;;^UTILITY(U,$J,358.3,22840,1,5,0)
- ;;=5^Blood Diseases NEC
- ;;^UTILITY(U,$J,358.3,22840,2)
- ;;=^329887
- ;;^UTILITY(U,$J,358.3,22841,0)
- ;;=238.79^^125^1397^88
- ;;^UTILITY(U,$J,358.3,22841,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22841,1,4,0)
- ;;=4^238.79
- ;;^UTILITY(U,$J,358.3,22841,1,5,0)
- ;;=5^Lymph/Hematopoietic Tissue NEC
- ;;^UTILITY(U,$J,358.3,22841,2)
- ;;=^334033
- ;;^UTILITY(U,$J,358.3,22842,0)
- ;;=287.30^^125^1397^110
- ;;^UTILITY(U,$J,358.3,22842,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22842,1,4,0)
- ;;=4^287.30
- ;;^UTILITY(U,$J,358.3,22842,1,5,0)
- ;;=5^Primary Thrombocytopenia
- ;;^UTILITY(U,$J,358.3,22842,2)
- ;;=^332841
- ;;^UTILITY(U,$J,358.3,22843,0)
- ;;=288.09^^125^1397^8
- ;;^UTILITY(U,$J,358.3,22843,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22843,1,4,0)
- ;;=4^288.09
- ;;^UTILITY(U,$J,358.3,22843,1,5,0)
- ;;=5^Agranulocytosis
- ;;^UTILITY(U,$J,358.3,22843,2)
- ;;=^334042
- ;;^UTILITY(U,$J,358.3,22844,0)
- ;;=V10.21^^125^1397^61
- ;;^UTILITY(U,$J,358.3,22844,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22844,1,4,0)
- ;;=4^V10.21
- ;;^UTILITY(U,$J,358.3,22844,1,5,0)
- ;;=5^H/O Laryngeal Cancer
- ;;^UTILITY(U,$J,358.3,22844,2)
- ;;=^295214
- ;;^UTILITY(U,$J,358.3,22845,0)
- ;;=284.2^^125^1397^106
- ;;^UTILITY(U,$J,358.3,22845,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22845,1,4,0)
- ;;=4^284.2
- ;;^UTILITY(U,$J,358.3,22845,1,5,0)
- ;;=5^Myelophthisic Anemia
- ;;^UTILITY(U,$J,358.3,22845,2)
- ;;=^334037
- ;;^UTILITY(U,$J,358.3,22846,0)
- ;;=202.40^^125^1397^76
- ;;^UTILITY(U,$J,358.3,22846,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22846,1,4,0)
- ;;=4^202.40
- ;;^UTILITY(U,$J,358.3,22846,1,5,0)
- ;;=5^Hairy Cell Leukemia,Unspecified site
- ;;^UTILITY(U,$J,358.3,22846,2)
- ;;=^69587
- ;;^UTILITY(U,$J,358.3,22847,0)
- ;;=287.49^^125^1397^118
- ;;^UTILITY(U,$J,358.3,22847,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22847,1,4,0)
- ;;=4^287.49
- ;;^UTILITY(U,$J,358.3,22847,1,5,0)
- ;;=5^Thrombocytopenia,Drug Induced
- ;;^UTILITY(U,$J,358.3,22847,2)
- ;;=^339610
- ;;^UTILITY(U,$J,358.3,22848,0)
- ;;=180.9^^125^1397^29
- ;;^UTILITY(U,$J,358.3,22848,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22848,1,4,0)
- ;;=4^180.9
- ;;^UTILITY(U,$J,358.3,22848,1,5,0)
- ;;=5^Ca Cervix
- ;;^UTILITY(U,$J,358.3,22848,2)
- ;;=^267214
- ;;^UTILITY(U,$J,358.3,22849,0)
- ;;=203.02^^125^1397^104
- ;;^UTILITY(U,$J,358.3,22849,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,22849,1,4,0)
- ;;=4^203.02
- ;;^UTILITY(U,$J,358.3,22849,1,5,0)
- ;;=5^Multiple Myeloma,In Relapse
- ;;^UTILITY(U,$J,358.3,22849,2)
- ;;=^336462
- ;;^UTILITY(U,$J,358.3,22850,0)
- ;;=204.02^^125^1397^2
+ ;;^UTILITY(U,$J,358.3,21922,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21922,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Breakdown of Skin
+ ;;^UTILITY(U,$J,358.3,21922,1,4,0)
+ ;;=4^L97.911
+ ;;^UTILITY(U,$J,358.3,21922,2)
+ ;;=^5133679
+ ;;^UTILITY(U,$J,358.3,21923,0)
+ ;;=L97.912^^87^970^222
+ ;;^UTILITY(U,$J,358.3,21923,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21923,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Fat Layer Exposed
+ ;;^UTILITY(U,$J,358.3,21923,1,4,0)
+ ;;=4^L97.912
+ ;;^UTILITY(U,$J,358.3,21923,2)
+ ;;=^5133681
+ ;;^UTILITY(U,$J,358.3,21924,0)
+ ;;=L97.913^^87^970^223
+ ;;^UTILITY(U,$J,358.3,21924,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21924,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Necrosis of Muscle
+ ;;^UTILITY(U,$J,358.3,21924,1,4,0)
+ ;;=4^L97.913
+ ;;^UTILITY(U,$J,358.3,21924,2)
+ ;;=^5133683
+ ;;^UTILITY(U,$J,358.3,21925,0)
+ ;;=L97.914^^87^970^224
+ ;;^UTILITY(U,$J,358.3,21925,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21925,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,21925,1,4,0)
+ ;;=4^L97.914
+ ;;^UTILITY(U,$J,358.3,21925,2)
+ ;;=^5133685
+ ;;^UTILITY(U,$J,358.3,21926,0)
+ ;;=L97.919^^87^970^225
+ ;;^UTILITY(U,$J,358.3,21926,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21926,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Unspec Severity
+ ;;^UTILITY(U,$J,358.3,21926,1,4,0)
+ ;;=4^L97.919
+ ;;^UTILITY(U,$J,358.3,21926,2)
+ ;;=^5133688
+ ;;^UTILITY(U,$J,358.3,21927,0)
+ ;;=L97.921^^87^970^191
+ ;;^UTILITY(U,$J,358.3,21927,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21927,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Lower Leg w/ Breakdown of Skin
+ ;;^UTILITY(U,$J,358.3,21927,1,4,0)
+ ;;=4^L97.921
+ ;;^UTILITY(U,$J,358.3,21927,2)
+ ;;=^5133680
+ ;;^UTILITY(U,$J,358.3,21928,0)
+ ;;=L97.922^^87^970^192
+ ;;^UTILITY(U,$J,358.3,21928,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21928,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Lower Leg w/ Fat Layer Exposed
+ ;;^UTILITY(U,$J,358.3,21928,1,4,0)
+ ;;=4^L97.922
+ ;;^UTILITY(U,$J,358.3,21928,2)
+ ;;=^5133682
+ ;;^UTILITY(U,$J,358.3,21929,0)
+ ;;=L97.923^^87^970^193
+ ;;^UTILITY(U,$J,358.3,21929,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21929,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Lower Leg w/ Necrosis of Muscle
+ ;;^UTILITY(U,$J,358.3,21929,1,4,0)
+ ;;=4^L97.923
+ ;;^UTILITY(U,$J,358.3,21929,2)
+ ;;=^5133684
+ ;;^UTILITY(U,$J,358.3,21930,0)
+ ;;=L97.924^^87^970^194
+ ;;^UTILITY(U,$J,358.3,21930,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21930,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Lower Leg w/ Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,21930,1,4,0)
+ ;;=4^L97.924
+ ;;^UTILITY(U,$J,358.3,21930,2)
+ ;;=^5133686
+ ;;^UTILITY(U,$J,358.3,21931,0)
+ ;;=L97.929^^87^970^195
+ ;;^UTILITY(U,$J,358.3,21931,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21931,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer of Left Lower Leg w/ Unspec Severity
+ ;;^UTILITY(U,$J,358.3,21931,1,4,0)
+ ;;=4^L97.929
+ ;;^UTILITY(U,$J,358.3,21931,2)
+ ;;=^5133689
+ ;;^UTILITY(U,$J,358.3,21932,0)
+ ;;=L98.2^^87^970^149
+ ;;^UTILITY(U,$J,358.3,21932,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21932,1,3,0)
+ ;;=3^Febrile Neutrophilic Dermatosis
+ ;;^UTILITY(U,$J,358.3,21932,1,4,0)
+ ;;=4^L98.2
+ ;;^UTILITY(U,$J,358.3,21932,2)
+ ;;=^5009575
+ ;;^UTILITY(U,$J,358.3,21933,0)
+ ;;=L98.9^^87^970^267
+ ;;^UTILITY(U,$J,358.3,21933,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21933,1,3,0)
+ ;;=3^Skin/Subcutaneous Tissue Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,21933,1,4,0)
+ ;;=4^L98.9
+ ;;^UTILITY(U,$J,358.3,21933,2)
+ ;;=^5009595

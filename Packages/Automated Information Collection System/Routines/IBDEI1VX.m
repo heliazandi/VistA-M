@@ -1,126 +1,128 @@
-IBDEI1VX ; ; 06-AUG-2015
+IBDEI1VX ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33155,1,4,0)
- ;;=4^M47.22
- ;;^UTILITY(U,$J,358.3,33155,2)
- ;;=^5012061
- ;;^UTILITY(U,$J,358.3,33156,0)
- ;;=M47.24^^182^1998^147
- ;;^UTILITY(U,$J,358.3,33156,1,0)
+ ;;^UTILITY(U,$J,358.3,32012,1,4,0)
+ ;;=4^S92.024A
+ ;;^UTILITY(U,$J,358.3,32012,2)
+ ;;=^5044430
+ ;;^UTILITY(U,$J,358.3,32013,0)
+ ;;=S92.021A^^126^1609^80
+ ;;^UTILITY(U,$J,358.3,32013,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33156,1,3,0)
- ;;=3^Sponylosis w/ Radiculopathy,Thoracic Region NEC
- ;;^UTILITY(U,$J,358.3,33156,1,4,0)
- ;;=4^M47.24
- ;;^UTILITY(U,$J,358.3,33156,2)
- ;;=^5012063
- ;;^UTILITY(U,$J,358.3,33157,0)
- ;;=M47.27^^182^1998^146
- ;;^UTILITY(U,$J,358.3,33157,1,0)
+ ;;^UTILITY(U,$J,358.3,32013,1,3,0)
+ ;;=3^Disp fx of anterior process of rt calcaneus, init
+ ;;^UTILITY(U,$J,358.3,32013,1,4,0)
+ ;;=4^S92.021A
+ ;;^UTILITY(U,$J,358.3,32013,2)
+ ;;=^5044409
+ ;;^UTILITY(U,$J,358.3,32014,0)
+ ;;=S92.022A^^126^1609^79
+ ;;^UTILITY(U,$J,358.3,32014,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33157,1,3,0)
- ;;=3^Sponylosis w/ Radiculopathy,Lumbosacral Region NEC
- ;;^UTILITY(U,$J,358.3,33157,1,4,0)
- ;;=4^M47.27
- ;;^UTILITY(U,$J,358.3,33157,2)
- ;;=^5012066
- ;;^UTILITY(U,$J,358.3,33158,0)
- ;;=M47.812^^182^1998^142
- ;;^UTILITY(U,$J,358.3,33158,1,0)
+ ;;^UTILITY(U,$J,358.3,32014,1,3,0)
+ ;;=3^Disp fx of anterior process of lft calcaneus, init
+ ;;^UTILITY(U,$J,358.3,32014,1,4,0)
+ ;;=4^S92.022A
+ ;;^UTILITY(U,$J,358.3,32014,2)
+ ;;=^5044416
+ ;;^UTILITY(U,$J,358.3,32015,0)
+ ;;=S92.015A^^126^1609^306
+ ;;^UTILITY(U,$J,358.3,32015,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33158,1,3,0)
- ;;=3^Spondylosis w/o Myelopathy/Radiculopathy,Cervical Region
- ;;^UTILITY(U,$J,358.3,33158,1,4,0)
- ;;=4^M47.812
- ;;^UTILITY(U,$J,358.3,33158,2)
- ;;=^5012069
- ;;^UTILITY(U,$J,358.3,33159,0)
- ;;=M47.814^^182^1998^143
- ;;^UTILITY(U,$J,358.3,33159,1,0)
+ ;;^UTILITY(U,$J,358.3,32015,1,3,0)
+ ;;=3^Nondisp fx of body of lft calcaneus, init
+ ;;^UTILITY(U,$J,358.3,32015,1,4,0)
+ ;;=4^S92.015A
+ ;;^UTILITY(U,$J,358.3,32015,2)
+ ;;=^5044395
+ ;;^UTILITY(U,$J,358.3,32016,0)
+ ;;=S92.014A^^126^1609^308
+ ;;^UTILITY(U,$J,358.3,32016,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33159,1,3,0)
- ;;=3^Spondylosis w/o Myelopathy/Radiculopathy,Thoracic Region
- ;;^UTILITY(U,$J,358.3,33159,1,4,0)
- ;;=4^M47.814
- ;;^UTILITY(U,$J,358.3,33159,2)
- ;;=^5012071
- ;;^UTILITY(U,$J,358.3,33160,0)
- ;;=M47.817^^182^1998^144
- ;;^UTILITY(U,$J,358.3,33160,1,0)
+ ;;^UTILITY(U,$J,358.3,32016,1,3,0)
+ ;;=3^Nondisp fx of body of rt calcaneus, init
+ ;;^UTILITY(U,$J,358.3,32016,1,4,0)
+ ;;=4^S92.014A
+ ;;^UTILITY(U,$J,358.3,32016,2)
+ ;;=^5044388
+ ;;^UTILITY(U,$J,358.3,32017,0)
+ ;;=S92.033A^^126^1609^9
+ ;;^UTILITY(U,$J,358.3,32017,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33160,1,3,0)
- ;;=3^Spondylosis w/o Myelopathy/Radiculopathy,Lumbosacral Region
- ;;^UTILITY(U,$J,358.3,33160,1,4,0)
- ;;=4^M47.817
- ;;^UTILITY(U,$J,358.3,33160,2)
- ;;=^5012074
- ;;^UTILITY(U,$J,358.3,33161,0)
- ;;=M48.50XA^^182^1998^18
- ;;^UTILITY(U,$J,358.3,33161,1,0)
+ ;;^UTILITY(U,$J,358.3,32017,1,3,0)
+ ;;=3^Disp avulsion fx tuberosity of calcaneus, unspec, init
+ ;;^UTILITY(U,$J,358.3,32017,1,4,0)
+ ;;=4^S92.033A
+ ;;^UTILITY(U,$J,358.3,32017,2)
+ ;;=^5044465
+ ;;^UTILITY(U,$J,358.3,32018,0)
+ ;;=S92.034A^^126^1609^233
+ ;;^UTILITY(U,$J,358.3,32018,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33161,1,3,0)
- ;;=3^Collapsed Vertebra NEC,Init Encntr
- ;;^UTILITY(U,$J,358.3,33161,1,4,0)
- ;;=4^M48.50XA
- ;;^UTILITY(U,$J,358.3,33161,2)
- ;;=^5012159
- ;;^UTILITY(U,$J,358.3,33162,0)
- ;;=M48.50XD^^182^1998^19
- ;;^UTILITY(U,$J,358.3,33162,1,0)
+ ;;^UTILITY(U,$J,358.3,32018,1,3,0)
+ ;;=3^Nondisp avulsion fx of tuberosity of rt calcaneus, init
+ ;;^UTILITY(U,$J,358.3,32018,1,4,0)
+ ;;=4^S92.034A
+ ;;^UTILITY(U,$J,358.3,32018,2)
+ ;;=^5044472
+ ;;^UTILITY(U,$J,358.3,32019,0)
+ ;;=S92.902A^^126^1609^193
+ ;;^UTILITY(U,$J,358.3,32019,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33162,1,3,0)
- ;;=3^Collapsed Vertebra NEC,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33162,1,4,0)
- ;;=4^M48.50XD
- ;;^UTILITY(U,$J,358.3,33162,2)
- ;;=^5012160
- ;;^UTILITY(U,$J,358.3,33163,0)
- ;;=M48.52XA^^182^1998^20
- ;;^UTILITY(U,$J,358.3,33163,1,0)
+ ;;^UTILITY(U,$J,358.3,32019,1,3,0)
+ ;;=3^Fx of lft foot, unspec, init
+ ;;^UTILITY(U,$J,358.3,32019,1,4,0)
+ ;;=4^S92.902A
+ ;;^UTILITY(U,$J,358.3,32019,2)
+ ;;=^5045585
+ ;;^UTILITY(U,$J,358.3,32020,0)
+ ;;=S92.901A^^126^1609^211
+ ;;^UTILITY(U,$J,358.3,32020,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33163,1,3,0)
- ;;=3^Collapsed Vertebra,Cervical Region,Init Encntr
- ;;^UTILITY(U,$J,358.3,33163,1,4,0)
- ;;=4^M48.52XA
- ;;^UTILITY(U,$J,358.3,33163,2)
- ;;=^5012167
- ;;^UTILITY(U,$J,358.3,33164,0)
- ;;=M48.52XD^^182^1998^21
- ;;^UTILITY(U,$J,358.3,33164,1,0)
+ ;;^UTILITY(U,$J,358.3,32020,1,3,0)
+ ;;=3^Fx of rt ft, unspec, init
+ ;;^UTILITY(U,$J,358.3,32020,1,4,0)
+ ;;=4^S92.901A
+ ;;^UTILITY(U,$J,358.3,32020,2)
+ ;;=^5045578
+ ;;^UTILITY(U,$J,358.3,32021,0)
+ ;;=S92.192A^^126^1609^199
+ ;;^UTILITY(U,$J,358.3,32021,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33164,1,3,0)
- ;;=3^Collapsed Vertebra,Cervical Region,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33164,1,4,0)
- ;;=4^M48.52XD
- ;;^UTILITY(U,$J,358.3,33164,2)
- ;;=^5012168
- ;;^UTILITY(U,$J,358.3,33165,0)
- ;;=M48.54XA^^182^1998^24
- ;;^UTILITY(U,$J,358.3,33165,1,0)
+ ;;^UTILITY(U,$J,358.3,32021,1,3,0)
+ ;;=3^Fx of lft talus, oth, init
+ ;;^UTILITY(U,$J,358.3,32021,1,4,0)
+ ;;=4^S92.192A
+ ;;^UTILITY(U,$J,358.3,32021,2)
+ ;;=^5137581
+ ;;^UTILITY(U,$J,358.3,32022,0)
+ ;;=S92.191A^^126^1609^216
+ ;;^UTILITY(U,$J,358.3,32022,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33165,1,3,0)
- ;;=3^Collapsed Vertebra,Throacic Region,Init Encntr
- ;;^UTILITY(U,$J,358.3,33165,1,4,0)
- ;;=4^M48.54XA
- ;;^UTILITY(U,$J,358.3,33165,2)
- ;;=^5012175
- ;;^UTILITY(U,$J,358.3,33166,0)
- ;;=M48.54XD^^182^1998^25
- ;;^UTILITY(U,$J,358.3,33166,1,0)
+ ;;^UTILITY(U,$J,358.3,32022,1,3,0)
+ ;;=3^Fx of rt talus, oth, init
+ ;;^UTILITY(U,$J,358.3,32022,1,4,0)
+ ;;=4^S92.191A
+ ;;^UTILITY(U,$J,358.3,32022,2)
+ ;;=^5044815
+ ;;^UTILITY(U,$J,358.3,32023,0)
+ ;;=S92.155A^^126^1609^230
+ ;;^UTILITY(U,$J,358.3,32023,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33166,1,3,0)
- ;;=3^Collapsed Vertebra,Throacic Region,Subs Encntr
- ;;^UTILITY(U,$J,358.3,33166,1,4,0)
- ;;=4^M48.54XD
- ;;^UTILITY(U,$J,358.3,33166,2)
- ;;=^5012176
- ;;^UTILITY(U,$J,358.3,33167,0)
- ;;=M48.57XA^^182^1998^22
- ;;^UTILITY(U,$J,358.3,33167,1,0)
+ ;;^UTILITY(U,$J,358.3,32023,1,3,0)
+ ;;=3^Nondisp avulsion fx (chip) of lft talus, init
+ ;;^UTILITY(U,$J,358.3,32023,1,4,0)
+ ;;=4^S92.155A
+ ;;^UTILITY(U,$J,358.3,32023,2)
+ ;;=^5044801
+ ;;^UTILITY(U,$J,358.3,32024,0)
+ ;;=S92.154A^^126^1609^231
+ ;;^UTILITY(U,$J,358.3,32024,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33167,1,3,0)
- ;;=3^Collapsed Vertebra,Lumbosacral Region,Init Encntr
- ;;^UTILITY(U,$J,358.3,33167,1,4,0)
- ;;=4^M48.57XA
+ ;;^UTILITY(U,$J,358.3,32024,1,3,0)
+ ;;=3^Nondisp avulsion fx (chip) of rt talus, init
+ ;;^UTILITY(U,$J,358.3,32024,1,4,0)
+ ;;=4^S92.154A
+ ;;^UTILITY(U,$J,358.3,32024,2)
+ ;;=^5044794

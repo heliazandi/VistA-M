@@ -1,124 +1,138 @@
-IBDEI05Q ; ; 06-AUG-2015
+IBDEI05Q ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2156,1,4,0)
- ;;=4^S91.111A
- ;;^UTILITY(U,$J,358.3,2156,2)
- ;;=^5044183
- ;;^UTILITY(U,$J,358.3,2157,0)
- ;;=S91.112A^^4^62^114
- ;;^UTILITY(U,$J,358.3,2157,1,0)
+ ;;^UTILITY(U,$J,358.3,2342,1,3,0)
+ ;;=3^Internal derangements of lft knee, oth
+ ;;^UTILITY(U,$J,358.3,2342,1,4,0)
+ ;;=4^M23.8X2
+ ;;^UTILITY(U,$J,358.3,2342,2)
+ ;;=^5011274
+ ;;^UTILITY(U,$J,358.3,2343,0)
+ ;;=M25.50^^15^186^75
+ ;;^UTILITY(U,$J,358.3,2343,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2157,1,3,0)
- ;;=3^Laceration w/o fb of left great toe w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,2157,1,4,0)
- ;;=4^S91.112A
- ;;^UTILITY(U,$J,358.3,2157,2)
- ;;=^5044186
- ;;^UTILITY(U,$J,358.3,2158,0)
- ;;=S91.114A^^4^62^129
- ;;^UTILITY(U,$J,358.3,2158,1,0)
+ ;;^UTILITY(U,$J,358.3,2343,1,3,0)
+ ;;=3^Pain in unspec joint
+ ;;^UTILITY(U,$J,358.3,2343,1,4,0)
+ ;;=4^M25.50
+ ;;^UTILITY(U,$J,358.3,2343,2)
+ ;;=^5011601
+ ;;^UTILITY(U,$J,358.3,2344,0)
+ ;;=M54.6^^15^186^74
+ ;;^UTILITY(U,$J,358.3,2344,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2158,1,3,0)
- ;;=3^Laceration w/o fb of right lesser toe(s) w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,2158,1,4,0)
- ;;=4^S91.114A
- ;;^UTILITY(U,$J,358.3,2158,2)
- ;;=^5044192
- ;;^UTILITY(U,$J,358.3,2159,0)
- ;;=S91.115A^^4^62^117
- ;;^UTILITY(U,$J,358.3,2159,1,0)
+ ;;^UTILITY(U,$J,358.3,2344,1,3,0)
+ ;;=3^Pain in thoracic spine
+ ;;^UTILITY(U,$J,358.3,2344,1,4,0)
+ ;;=4^M54.6
+ ;;^UTILITY(U,$J,358.3,2344,2)
+ ;;=^272507
+ ;;^UTILITY(U,$J,358.3,2345,0)
+ ;;=M96.1^^15^186^81
+ ;;^UTILITY(U,$J,358.3,2345,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2159,1,3,0)
- ;;=3^Laceration w/o fb of left lesser toe(s) w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,2159,1,4,0)
- ;;=4^S91.115A
- ;;^UTILITY(U,$J,358.3,2159,2)
- ;;=^5044195
- ;;^UTILITY(U,$J,358.3,2160,0)
- ;;=T73.3XXA^^4^62^59
- ;;^UTILITY(U,$J,358.3,2160,1,0)
+ ;;^UTILITY(U,$J,358.3,2345,1,3,0)
+ ;;=3^Postlaminectomy syndrome, NEC
+ ;;^UTILITY(U,$J,358.3,2345,1,4,0)
+ ;;=4^M96.1
+ ;;^UTILITY(U,$J,358.3,2345,2)
+ ;;=^5015374
+ ;;^UTILITY(U,$J,358.3,2346,0)
+ ;;=M54.31^^15^186^90
+ ;;^UTILITY(U,$J,358.3,2346,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2160,1,3,0)
- ;;=3^Exhaustion due to excessive exertion, initial encounter
- ;;^UTILITY(U,$J,358.3,2160,1,4,0)
- ;;=4^T73.3XXA
- ;;^UTILITY(U,$J,358.3,2160,2)
- ;;=^5054131
- ;;^UTILITY(U,$J,358.3,2161,0)
- ;;=S61.230A^^4^62^188
- ;;^UTILITY(U,$J,358.3,2161,1,0)
+ ;;^UTILITY(U,$J,358.3,2346,1,3,0)
+ ;;=3^Sciatica, right side
+ ;;^UTILITY(U,$J,358.3,2346,1,4,0)
+ ;;=4^M54.31
+ ;;^UTILITY(U,$J,358.3,2346,2)
+ ;;=^5012306
+ ;;^UTILITY(U,$J,358.3,2347,0)
+ ;;=M54.32^^15^186^89
+ ;;^UTILITY(U,$J,358.3,2347,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2161,1,3,0)
- ;;=3^Pnctr wnd w/o fb of right indx fngr w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,2161,1,4,0)
- ;;=4^S61.230A
- ;;^UTILITY(U,$J,358.3,2161,2)
- ;;=^5032816
- ;;^UTILITY(U,$J,358.3,2162,0)
- ;;=S61.231A^^4^62^178
- ;;^UTILITY(U,$J,358.3,2162,1,0)
+ ;;^UTILITY(U,$J,358.3,2347,1,3,0)
+ ;;=3^Sciatica, left side
+ ;;^UTILITY(U,$J,358.3,2347,1,4,0)
+ ;;=4^M54.32
+ ;;^UTILITY(U,$J,358.3,2347,2)
+ ;;=^5012307
+ ;;^UTILITY(U,$J,358.3,2348,0)
+ ;;=M75.21^^15^186^6
+ ;;^UTILITY(U,$J,358.3,2348,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2162,1,3,0)
- ;;=3^Pnctr wnd w/o fb of left indx fngr w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,2162,1,4,0)
- ;;=4^S61.231A
- ;;^UTILITY(U,$J,358.3,2162,2)
- ;;=^5032819
- ;;^UTILITY(U,$J,358.3,2163,0)
- ;;=S61.232A^^4^62^191
- ;;^UTILITY(U,$J,358.3,2163,1,0)
+ ;;^UTILITY(U,$J,358.3,2348,1,3,0)
+ ;;=3^Bicipital tendinitis, rt shldr
+ ;;^UTILITY(U,$J,358.3,2348,1,4,0)
+ ;;=4^M75.21
+ ;;^UTILITY(U,$J,358.3,2348,2)
+ ;;=^5013251
+ ;;^UTILITY(U,$J,358.3,2349,0)
+ ;;=M75.22^^15^186^5
+ ;;^UTILITY(U,$J,358.3,2349,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2163,1,3,0)
- ;;=3^Pnctr wnd w/o fb of right mid finger w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,2163,1,4,0)
- ;;=4^S61.232A
- ;;^UTILITY(U,$J,358.3,2163,2)
- ;;=^5032822
- ;;^UTILITY(U,$J,358.3,2164,0)
- ;;=S61.233A^^4^62^181
- ;;^UTILITY(U,$J,358.3,2164,1,0)
+ ;;^UTILITY(U,$J,358.3,2349,1,3,0)
+ ;;=3^Bicipital tendinitis, lft shldr
+ ;;^UTILITY(U,$J,358.3,2349,1,4,0)
+ ;;=4^M75.22
+ ;;^UTILITY(U,$J,358.3,2349,2)
+ ;;=^5013252
+ ;;^UTILITY(U,$J,358.3,2350,0)
+ ;;=M77.01^^15^186^67
+ ;;^UTILITY(U,$J,358.3,2350,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2164,1,3,0)
- ;;=3^Pnctr wnd w/o fb of left mid finger w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,2164,1,4,0)
- ;;=4^S61.233A
- ;;^UTILITY(U,$J,358.3,2164,2)
- ;;=^5032825
- ;;^UTILITY(U,$J,358.3,2165,0)
- ;;=S61.234A^^4^62^192
- ;;^UTILITY(U,$J,358.3,2165,1,0)
+ ;;^UTILITY(U,$J,358.3,2350,1,3,0)
+ ;;=3^Medial epicondylitis, rt elbow
+ ;;^UTILITY(U,$J,358.3,2350,1,4,0)
+ ;;=4^M77.01
+ ;;^UTILITY(U,$J,358.3,2350,2)
+ ;;=^5013301
+ ;;^UTILITY(U,$J,358.3,2351,0)
+ ;;=M77.02^^15^186^66
+ ;;^UTILITY(U,$J,358.3,2351,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2165,1,3,0)
- ;;=3^Pnctr wnd w/o fb of right rng fngr w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,2165,1,4,0)
- ;;=4^S61.234A
- ;;^UTILITY(U,$J,358.3,2165,2)
- ;;=^5032828
- ;;^UTILITY(U,$J,358.3,2166,0)
- ;;=S61.235A^^4^62^182
- ;;^UTILITY(U,$J,358.3,2166,1,0)
+ ;;^UTILITY(U,$J,358.3,2351,1,3,0)
+ ;;=3^Medial epicondylitis, lft elbow
+ ;;^UTILITY(U,$J,358.3,2351,1,4,0)
+ ;;=4^M77.02
+ ;;^UTILITY(U,$J,358.3,2351,2)
+ ;;=^5013302
+ ;;^UTILITY(U,$J,358.3,2352,0)
+ ;;=M77.11^^15^186^65
+ ;;^UTILITY(U,$J,358.3,2352,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2166,1,3,0)
- ;;=3^Pnctr wnd w/o fb of left rng fngr w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,2166,1,4,0)
- ;;=4^S61.235A
- ;;^UTILITY(U,$J,358.3,2166,2)
- ;;=^5032831
- ;;^UTILITY(U,$J,358.3,2167,0)
- ;;=S61.236A^^4^62^189
- ;;^UTILITY(U,$J,358.3,2167,1,0)
+ ;;^UTILITY(U,$J,358.3,2352,1,3,0)
+ ;;=3^Lateral epicondylitis, rt elbow
+ ;;^UTILITY(U,$J,358.3,2352,1,4,0)
+ ;;=4^M77.11
+ ;;^UTILITY(U,$J,358.3,2352,2)
+ ;;=^5013304
+ ;;^UTILITY(U,$J,358.3,2353,0)
+ ;;=M77.12^^15^186^64
+ ;;^UTILITY(U,$J,358.3,2353,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2167,1,3,0)
- ;;=3^Pnctr wnd w/o fb of right little finger w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,2167,1,4,0)
- ;;=4^S61.236A
- ;;^UTILITY(U,$J,358.3,2167,2)
- ;;=^5032834
- ;;^UTILITY(U,$J,358.3,2168,0)
- ;;=S61.237A^^4^62^179
- ;;^UTILITY(U,$J,358.3,2168,1,0)
+ ;;^UTILITY(U,$J,358.3,2353,1,3,0)
+ ;;=3^Lateral epicondylitis, lft elbow
+ ;;^UTILITY(U,$J,358.3,2353,1,4,0)
+ ;;=4^M77.12
+ ;;^UTILITY(U,$J,358.3,2353,2)
+ ;;=^5013305
+ ;;^UTILITY(U,$J,358.3,2354,0)
+ ;;=M70.61^^15^186^108
+ ;;^UTILITY(U,$J,358.3,2354,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2168,1,3,0)
- ;;=3^Pnctr wnd w/o fb of left little finger w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,2354,1,3,0)
+ ;;=3^Trochanteric bursitis, rt hip
+ ;;^UTILITY(U,$J,358.3,2354,1,4,0)
+ ;;=4^M70.61
+ ;;^UTILITY(U,$J,358.3,2354,2)
+ ;;=^5013059
+ ;;^UTILITY(U,$J,358.3,2355,0)
+ ;;=M70.62^^15^186^107
+ ;;^UTILITY(U,$J,358.3,2355,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2355,1,3,0)
+ ;;=3^Trochanteric bursitis, lft hip
+ ;;^UTILITY(U,$J,358.3,2355,1,4,0)
+ ;;=4^M70.62

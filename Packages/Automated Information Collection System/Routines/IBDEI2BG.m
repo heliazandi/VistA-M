@@ -1,0 +1,126 @@
+IBDEI2BG ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,39292,0)
+ ;;=H40.1212^^153^1921^72
+ ;;^UTILITY(U,$J,358.3,39292,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39292,1,3,0)
+ ;;=3^Low-Tension Glaucoma,Right Eye,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,39292,1,4,0)
+ ;;=4^H40.1212
+ ;;^UTILITY(U,$J,358.3,39292,2)
+ ;;=^5005760
+ ;;^UTILITY(U,$J,358.3,39293,0)
+ ;;=H40.1213^^153^1921^73
+ ;;^UTILITY(U,$J,358.3,39293,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39293,1,3,0)
+ ;;=3^Low-Tension Glaucoma,Right Eye,Severe Stage
+ ;;^UTILITY(U,$J,358.3,39293,1,4,0)
+ ;;=4^H40.1213
+ ;;^UTILITY(U,$J,358.3,39293,2)
+ ;;=^5005761
+ ;;^UTILITY(U,$J,358.3,39294,0)
+ ;;=H40.1214^^153^1921^70
+ ;;^UTILITY(U,$J,358.3,39294,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39294,1,3,0)
+ ;;=3^Low-Tension Glaucoma,Right Eye,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,39294,1,4,0)
+ ;;=4^H40.1214
+ ;;^UTILITY(U,$J,358.3,39294,2)
+ ;;=^5005762
+ ;;^UTILITY(U,$J,358.3,39295,0)
+ ;;=H40.1221^^153^1921^67
+ ;;^UTILITY(U,$J,358.3,39295,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39295,1,3,0)
+ ;;=3^Low-Tension Glaucoma,Left Eye,Mild Stage
+ ;;^UTILITY(U,$J,358.3,39295,1,4,0)
+ ;;=4^H40.1221
+ ;;^UTILITY(U,$J,358.3,39295,2)
+ ;;=^5005764
+ ;;^UTILITY(U,$J,358.3,39296,0)
+ ;;=H40.1222^^153^1921^68
+ ;;^UTILITY(U,$J,358.3,39296,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39296,1,3,0)
+ ;;=3^Low-Tension Glaucoma,Left Eye,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,39296,1,4,0)
+ ;;=4^H40.1222
+ ;;^UTILITY(U,$J,358.3,39296,2)
+ ;;=^5005765
+ ;;^UTILITY(U,$J,358.3,39297,0)
+ ;;=H40.1223^^153^1921^69
+ ;;^UTILITY(U,$J,358.3,39297,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39297,1,3,0)
+ ;;=3^Low-Tension Glaucoma,Left Eye,Severe Stage
+ ;;^UTILITY(U,$J,358.3,39297,1,4,0)
+ ;;=4^H40.1223
+ ;;^UTILITY(U,$J,358.3,39297,2)
+ ;;=^5133492
+ ;;^UTILITY(U,$J,358.3,39298,0)
+ ;;=H40.1224^^153^1921^66
+ ;;^UTILITY(U,$J,358.3,39298,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39298,1,3,0)
+ ;;=3^Low-Tension Glaucoma,Left Eye,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,39298,1,4,0)
+ ;;=4^H40.1224
+ ;;^UTILITY(U,$J,358.3,39298,2)
+ ;;=^5005766
+ ;;^UTILITY(U,$J,358.3,39299,0)
+ ;;=H40.1231^^153^1921^63
+ ;;^UTILITY(U,$J,358.3,39299,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39299,1,3,0)
+ ;;=3^Low-Tension Glaucoma,Bilateral,Mild Stage
+ ;;^UTILITY(U,$J,358.3,39299,1,4,0)
+ ;;=4^H40.1231
+ ;;^UTILITY(U,$J,358.3,39299,2)
+ ;;=^5005768
+ ;;^UTILITY(U,$J,358.3,39300,0)
+ ;;=H40.1232^^153^1921^64
+ ;;^UTILITY(U,$J,358.3,39300,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39300,1,3,0)
+ ;;=3^Low-Tension Glaucoma,Bilateral,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,39300,1,4,0)
+ ;;=4^H40.1232
+ ;;^UTILITY(U,$J,358.3,39300,2)
+ ;;=^5005769
+ ;;^UTILITY(U,$J,358.3,39301,0)
+ ;;=H40.1233^^153^1921^65
+ ;;^UTILITY(U,$J,358.3,39301,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39301,1,3,0)
+ ;;=3^Low-Tension Glaucoma,Bilateral,Severe Stage
+ ;;^UTILITY(U,$J,358.3,39301,1,4,0)
+ ;;=4^H40.1233
+ ;;^UTILITY(U,$J,358.3,39301,2)
+ ;;=^5005770
+ ;;^UTILITY(U,$J,358.3,39302,0)
+ ;;=H40.1234^^153^1921^62
+ ;;^UTILITY(U,$J,358.3,39302,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39302,1,3,0)
+ ;;=3^Low-Tension Glaucoma,Bilateral,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,39302,1,4,0)
+ ;;=4^H40.1234
+ ;;^UTILITY(U,$J,358.3,39302,2)
+ ;;=^5005771
+ ;;^UTILITY(U,$J,358.3,39303,0)
+ ;;=H40.1310^^153^1921^101
+ ;;^UTILITY(U,$J,358.3,39303,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39303,1,3,0)
+ ;;=3^Pigmentary Glaucoma,Right Eye,Unspec Stage
+ ;;^UTILITY(U,$J,358.3,39303,1,4,0)
+ ;;=4^H40.1310
+ ;;^UTILITY(U,$J,358.3,39303,2)
+ ;;=^5005775
+ ;;^UTILITY(U,$J,358.3,39304,0)
+ ;;=H40.1311^^153^1921^98

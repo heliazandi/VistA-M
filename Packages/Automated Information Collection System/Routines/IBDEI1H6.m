@@ -1,130 +1,134 @@
-IBDEI1H6 ; ; 06-AUG-2015
+IBDEI1H6 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,26176,1,5,0)
- ;;=5^Alzheimers Dementia w/o Behav Disturb
- ;;^UTILITY(U,$J,358.3,26176,2)
- ;;=^321980^331.0
- ;;^UTILITY(U,$J,358.3,26177,0)
- ;;=294.10^^152^1672^12
- ;;^UTILITY(U,$J,358.3,26177,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26177,1,2,0)
- ;;=2^294.10
- ;;^UTILITY(U,$J,358.3,26177,1,5,0)
- ;;=5^Dementia d/t Parkinson w/o Behav Disturb
- ;;^UTILITY(U,$J,358.3,26177,2)
- ;;=^321980^332.0
- ;;^UTILITY(U,$J,358.3,26178,0)
- ;;=294.11^^152^1672^11
- ;;^UTILITY(U,$J,358.3,26178,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26178,1,2,0)
- ;;=2^294.11
- ;;^UTILITY(U,$J,358.3,26178,1,5,0)
- ;;=5^Dementia d/t Parkinson w/ Behav Disturb
- ;;^UTILITY(U,$J,358.3,26178,2)
- ;;=^321982^332.0
- ;;^UTILITY(U,$J,358.3,26179,0)
- ;;=294.11^^152^1672^9
- ;;^UTILITY(U,$J,358.3,26179,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26179,1,2,0)
- ;;=2^294.11
- ;;^UTILITY(U,$J,358.3,26179,1,5,0)
- ;;=5^Dementia d/t MS w/ Behav Disturb
- ;;^UTILITY(U,$J,358.3,26179,2)
- ;;=^321982^340.
- ;;^UTILITY(U,$J,358.3,26180,0)
- ;;=294.10^^152^1672^10
- ;;^UTILITY(U,$J,358.3,26180,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26180,1,2,0)
- ;;=2^294.10
- ;;^UTILITY(U,$J,358.3,26180,1,5,0)
- ;;=5^Dementia d/t MS w/o Behav Disturb
- ;;^UTILITY(U,$J,358.3,26180,2)
- ;;=^321980^340.
- ;;^UTILITY(U,$J,358.3,26181,0)
- ;;=293.0^^152^1673^1
- ;;^UTILITY(U,$J,358.3,26181,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26181,1,2,0)
- ;;=2^293.0
- ;;^UTILITY(U,$J,358.3,26181,1,5,0)
- ;;=5^Acute Delirium d/t Oth Spec Condition
- ;;^UTILITY(U,$J,358.3,26181,2)
- ;;=Acute Delirium^268035
- ;;^UTILITY(U,$J,358.3,26182,0)
- ;;=291.0^^152^1673^2
- ;;^UTILITY(U,$J,358.3,26182,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26182,1,2,0)
- ;;=2^291.0
- ;;^UTILITY(U,$J,358.3,26182,1,5,0)
- ;;=5^Alcohol Withdrawal Delirium
- ;;^UTILITY(U,$J,358.3,26182,2)
- ;;=Withdrawal Delirium^4589
- ;;^UTILITY(U,$J,358.3,26183,0)
- ;;=292.81^^152^1673^3
- ;;^UTILITY(U,$J,358.3,26183,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26183,1,2,0)
- ;;=2^292.81
- ;;^UTILITY(U,$J,358.3,26183,1,5,0)
- ;;=5^Drug Induced Delirium
- ;;^UTILITY(U,$J,358.3,26183,2)
- ;;=Drug Induced Delirium^268022
- ;;^UTILITY(U,$J,358.3,26184,0)
- ;;=296.50^^152^1674^6
- ;;^UTILITY(U,$J,358.3,26184,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26184,1,2,0)
- ;;=2^296.50
- ;;^UTILITY(U,$J,358.3,26184,1,5,0)
- ;;=5^Bipolar Depressed, NOS
- ;;^UTILITY(U,$J,358.3,26184,2)
- ;;=^268130
- ;;^UTILITY(U,$J,358.3,26185,0)
- ;;=296.51^^152^1674^4
- ;;^UTILITY(U,$J,358.3,26185,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26185,1,2,0)
- ;;=2^296.51
- ;;^UTILITY(U,$J,358.3,26185,1,5,0)
- ;;=5^Bipolar Depressed, Mild
- ;;^UTILITY(U,$J,358.3,26185,2)
- ;;=^303620
- ;;^UTILITY(U,$J,358.3,26186,0)
- ;;=296.52^^152^1674^5
- ;;^UTILITY(U,$J,358.3,26186,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26186,1,2,0)
- ;;=2^296.52
- ;;^UTILITY(U,$J,358.3,26186,1,5,0)
- ;;=5^Bipolar Depressed, Moderate
- ;;^UTILITY(U,$J,358.3,26186,2)
- ;;=^303621
- ;;^UTILITY(U,$J,358.3,26187,0)
- ;;=296.53^^152^1674^2
- ;;^UTILITY(U,$J,358.3,26187,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26187,1,2,0)
- ;;=2^296.53
- ;;^UTILITY(U,$J,358.3,26187,1,5,0)
- ;;=5^Bipolar Depress Severe w/o Psychosis
- ;;^UTILITY(U,$J,358.3,26187,2)
- ;;=^303622
- ;;^UTILITY(U,$J,358.3,26188,0)
- ;;=296.54^^152^1674^1
- ;;^UTILITY(U,$J,358.3,26188,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26188,1,2,0)
- ;;=2^296.54
- ;;^UTILITY(U,$J,358.3,26188,1,5,0)
- ;;=5^Bipolar Depress Severe w/Psychosis
- ;;^UTILITY(U,$J,358.3,26188,2)
- ;;=Bipolar Depress Severe w/Psychosis^303623
- ;;^UTILITY(U,$J,358.3,26189,0)
- ;;=296.55^^152^1674^7
+ ;;^UTILITY(U,$J,358.3,25044,0)
+ ;;=F78.^^93^1127^5
+ ;;^UTILITY(U,$J,358.3,25044,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25044,1,3,0)
+ ;;=3^Intellectual Disabilities,Oth Specified
+ ;;^UTILITY(U,$J,358.3,25044,1,4,0)
+ ;;=4^F78.
+ ;;^UTILITY(U,$J,358.3,25044,2)
+ ;;=^5003672
+ ;;^UTILITY(U,$J,358.3,25045,0)
+ ;;=F79.^^93^1127^6
+ ;;^UTILITY(U,$J,358.3,25045,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25045,1,3,0)
+ ;;=3^Intellectual Disabilities,Unspec
+ ;;^UTILITY(U,$J,358.3,25045,1,4,0)
+ ;;=4^F79.
+ ;;^UTILITY(U,$J,358.3,25045,2)
+ ;;=^5003673
+ ;;^UTILITY(U,$J,358.3,25046,0)
+ ;;=Z00.6^^93^1128^1
+ ;;^UTILITY(U,$J,358.3,25046,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25046,1,3,0)
+ ;;=3^Exam of Participant of Control in Clinical Research Program
+ ;;^UTILITY(U,$J,358.3,25046,1,4,0)
+ ;;=4^Z00.6
+ ;;^UTILITY(U,$J,358.3,25046,2)
+ ;;=^5062608
+ ;;^UTILITY(U,$J,358.3,25047,0)
+ ;;=F45.22^^93^1129^1
+ ;;^UTILITY(U,$J,358.3,25047,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25047,1,3,0)
+ ;;=3^Body Dysmorphic Disorder
+ ;;^UTILITY(U,$J,358.3,25047,1,4,0)
+ ;;=4^F45.22
+ ;;^UTILITY(U,$J,358.3,25047,2)
+ ;;=^5003588
+ ;;^UTILITY(U,$J,358.3,25048,0)
+ ;;=F45.20^^93^1129^7
+ ;;^UTILITY(U,$J,358.3,25048,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25048,1,3,0)
+ ;;=3^Hypochondiacal Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,25048,1,4,0)
+ ;;=4^F45.20
+ ;;^UTILITY(U,$J,358.3,25048,2)
+ ;;=^5003586
+ ;;^UTILITY(U,$J,358.3,25049,0)
+ ;;=F45.21^^93^1129^9
+ ;;^UTILITY(U,$J,358.3,25049,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25049,1,3,0)
+ ;;=3^Hypochondriasis
+ ;;^UTILITY(U,$J,358.3,25049,1,4,0)
+ ;;=4^F45.21
+ ;;^UTILITY(U,$J,358.3,25049,2)
+ ;;=^5003587
+ ;;^UTILITY(U,$J,358.3,25050,0)
+ ;;=F45.29^^93^1129^8
+ ;;^UTILITY(U,$J,358.3,25050,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25050,1,3,0)
+ ;;=3^Hypochondriacal Disorders NEC
+ ;;^UTILITY(U,$J,358.3,25050,1,4,0)
+ ;;=4^F45.29
+ ;;^UTILITY(U,$J,358.3,25050,2)
+ ;;=^5003589
+ ;;^UTILITY(U,$J,358.3,25051,0)
+ ;;=F45.8^^93^1129^15
+ ;;^UTILITY(U,$J,358.3,25051,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25051,1,3,0)
+ ;;=3^Somatoform Disorders NEC
+ ;;^UTILITY(U,$J,358.3,25051,1,4,0)
+ ;;=4^F45.8
+ ;;^UTILITY(U,$J,358.3,25051,2)
+ ;;=^331915
+ ;;^UTILITY(U,$J,358.3,25052,0)
+ ;;=F45.41^^93^1129^10
+ ;;^UTILITY(U,$J,358.3,25052,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25052,1,3,0)
+ ;;=3^Pain Disorder Exclusively Related to Psychological Factors
+ ;;^UTILITY(U,$J,358.3,25052,1,4,0)
+ ;;=4^F45.41
+ ;;^UTILITY(U,$J,358.3,25052,2)
+ ;;=^5003590
+ ;;^UTILITY(U,$J,358.3,25053,0)
+ ;;=F45.42^^93^1129^11
+ ;;^UTILITY(U,$J,358.3,25053,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25053,1,3,0)
+ ;;=3^Pain Disorder w/ Related Psychological Factors
+ ;;^UTILITY(U,$J,358.3,25053,1,4,0)
+ ;;=4^F45.42
+ ;;^UTILITY(U,$J,358.3,25053,2)
+ ;;=^5003591
+ ;;^UTILITY(U,$J,358.3,25054,0)
+ ;;=F45.0^^93^1129^13
+ ;;^UTILITY(U,$J,358.3,25054,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25054,1,3,0)
+ ;;=3^Somatization Disorder
+ ;;^UTILITY(U,$J,358.3,25054,1,4,0)
+ ;;=4^F45.0
+ ;;^UTILITY(U,$J,358.3,25054,2)
+ ;;=^112280
+ ;;^UTILITY(U,$J,358.3,25055,0)
+ ;;=F45.9^^93^1129^14
+ ;;^UTILITY(U,$J,358.3,25055,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25055,1,3,0)
+ ;;=3^Somatoform Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,25055,1,4,0)
+ ;;=4^F45.9
+ ;;^UTILITY(U,$J,358.3,25055,2)
+ ;;=^5003592
+ ;;^UTILITY(U,$J,358.3,25056,0)
+ ;;=F45.1^^93^1129^16
+ ;;^UTILITY(U,$J,358.3,25056,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25056,1,3,0)
+ ;;=3^Undifferntiated Somatoform Disorder
+ ;;^UTILITY(U,$J,358.3,25056,1,4,0)
+ ;;=4^F45.1
+ ;;^UTILITY(U,$J,358.3,25056,2)
+ ;;=^5003585

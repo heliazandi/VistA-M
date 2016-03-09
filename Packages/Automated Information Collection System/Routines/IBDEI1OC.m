@@ -1,134 +1,132 @@
-IBDEI1OC ; ; 06-AUG-2015
+IBDEI1OC ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,29721,1,0)
+ ;;^UTILITY(U,$J,358.3,28445,1,3,0)
+ ;;=3^DM Type 2 w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,28445,1,4,0)
+ ;;=4^E11.621
+ ;;^UTILITY(U,$J,358.3,28445,2)
+ ;;=^5002656
+ ;;^UTILITY(U,$J,358.3,28446,0)
+ ;;=E11.641^^112^1421^16
+ ;;^UTILITY(U,$J,358.3,28446,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29721,1,3,0)
- ;;=3^Lymphangitis Right Finger,Acute
- ;;^UTILITY(U,$J,358.3,29721,1,4,0)
- ;;=4^L03.021
- ;;^UTILITY(U,$J,358.3,29721,2)
- ;;=^5009022
- ;;^UTILITY(U,$J,358.3,29722,0)
- ;;=L03.022^^177^1893^8
- ;;^UTILITY(U,$J,358.3,29722,1,0)
+ ;;^UTILITY(U,$J,358.3,28446,1,3,0)
+ ;;=3^DM Type 2 w/ Hypoglycemia w/ Coma
+ ;;^UTILITY(U,$J,358.3,28446,1,4,0)
+ ;;=4^E11.641
+ ;;^UTILITY(U,$J,358.3,28446,2)
+ ;;=^5002661
+ ;;^UTILITY(U,$J,358.3,28447,0)
+ ;;=E11.649^^112^1421^17
+ ;;^UTILITY(U,$J,358.3,28447,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29722,1,3,0)
- ;;=3^Lymphangitis Left Finger,Acute
- ;;^UTILITY(U,$J,358.3,29722,1,4,0)
- ;;=4^L03.022
- ;;^UTILITY(U,$J,358.3,29722,2)
- ;;=^5009023
- ;;^UTILITY(U,$J,358.3,29723,0)
- ;;=L03.031^^177^1893^4
- ;;^UTILITY(U,$J,358.3,29723,1,0)
+ ;;^UTILITY(U,$J,358.3,28447,1,3,0)
+ ;;=3^DM Type 2 w/ Hypoglycemia w/o Coma
+ ;;^UTILITY(U,$J,358.3,28447,1,4,0)
+ ;;=4^E11.649
+ ;;^UTILITY(U,$J,358.3,28447,2)
+ ;;=^5002662
+ ;;^UTILITY(U,$J,358.3,28448,0)
+ ;;=H40.11X0^^112^1422^9
+ ;;^UTILITY(U,$J,358.3,28448,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29723,1,3,0)
- ;;=3^Cellulitis Right Toe
- ;;^UTILITY(U,$J,358.3,29723,1,4,0)
- ;;=4^L03.031
- ;;^UTILITY(U,$J,358.3,29723,2)
- ;;=^5009025
- ;;^UTILITY(U,$J,358.3,29724,0)
- ;;=L03.032^^177^1893^2
- ;;^UTILITY(U,$J,358.3,29724,1,0)
+ ;;^UTILITY(U,$J,358.3,28448,1,3,0)
+ ;;=3^Glaucoma,Primary Open-Angle,Unspec Stage
+ ;;^UTILITY(U,$J,358.3,28448,1,4,0)
+ ;;=4^H40.11X0
+ ;;^UTILITY(U,$J,358.3,28448,2)
+ ;;=^5005753
+ ;;^UTILITY(U,$J,358.3,28449,0)
+ ;;=H40.11X1^^112^1422^6
+ ;;^UTILITY(U,$J,358.3,28449,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29724,1,3,0)
- ;;=3^Cellulitis Left Toe
- ;;^UTILITY(U,$J,358.3,29724,1,4,0)
- ;;=4^L03.032
- ;;^UTILITY(U,$J,358.3,29724,2)
- ;;=^5009026
- ;;^UTILITY(U,$J,358.3,29725,0)
- ;;=L03.041^^177^1893^7
- ;;^UTILITY(U,$J,358.3,29725,1,0)
+ ;;^UTILITY(U,$J,358.3,28449,1,3,0)
+ ;;=3^Glaucoma,Primary Open-Angle,Mild Stage
+ ;;^UTILITY(U,$J,358.3,28449,1,4,0)
+ ;;=4^H40.11X1
+ ;;^UTILITY(U,$J,358.3,28449,2)
+ ;;=^5005754
+ ;;^UTILITY(U,$J,358.3,28450,0)
+ ;;=H40.11X2^^112^1422^7
+ ;;^UTILITY(U,$J,358.3,28450,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29725,1,3,0)
- ;;=3^Lymphagnitis Right Toe,Acute
- ;;^UTILITY(U,$J,358.3,29725,1,4,0)
- ;;=4^L03.041
- ;;^UTILITY(U,$J,358.3,29725,2)
- ;;=^5009028
- ;;^UTILITY(U,$J,358.3,29726,0)
- ;;=L03.042^^177^1893^9
- ;;^UTILITY(U,$J,358.3,29726,1,0)
+ ;;^UTILITY(U,$J,358.3,28450,1,3,0)
+ ;;=3^Glaucoma,Primary Open-Angle,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,28450,1,4,0)
+ ;;=4^H40.11X2
+ ;;^UTILITY(U,$J,358.3,28450,2)
+ ;;=^5005755
+ ;;^UTILITY(U,$J,358.3,28451,0)
+ ;;=H40.11X3^^112^1422^8
+ ;;^UTILITY(U,$J,358.3,28451,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29726,1,3,0)
- ;;=3^Lymphangitis Left Toe,Acute
- ;;^UTILITY(U,$J,358.3,29726,1,4,0)
- ;;=4^L03.042
- ;;^UTILITY(U,$J,358.3,29726,2)
- ;;=^5009029
- ;;^UTILITY(U,$J,358.3,29727,0)
- ;;=L03.90^^177^1893^5
- ;;^UTILITY(U,$J,358.3,29727,1,0)
+ ;;^UTILITY(U,$J,358.3,28451,1,3,0)
+ ;;=3^Glaucoma,Primary Open-Angle,Severe Stage
+ ;;^UTILITY(U,$J,358.3,28451,1,4,0)
+ ;;=4^H40.11X3
+ ;;^UTILITY(U,$J,358.3,28451,2)
+ ;;=^5005756
+ ;;^UTILITY(U,$J,358.3,28452,0)
+ ;;=H40.11X4^^112^1422^5
+ ;;^UTILITY(U,$J,358.3,28452,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29727,1,3,0)
- ;;=3^Cellulitis,Unspec
- ;;^UTILITY(U,$J,358.3,29727,1,4,0)
- ;;=4^L03.90
- ;;^UTILITY(U,$J,358.3,29727,2)
- ;;=^5009067
- ;;^UTILITY(U,$J,358.3,29728,0)
- ;;=L25.9^^177^1893^6
- ;;^UTILITY(U,$J,358.3,29728,1,0)
+ ;;^UTILITY(U,$J,358.3,28452,1,3,0)
+ ;;=3^Glaucoma,Primary Open-Angle,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,28452,1,4,0)
+ ;;=4^H40.11X4
+ ;;^UTILITY(U,$J,358.3,28452,2)
+ ;;=^5005757
+ ;;^UTILITY(U,$J,358.3,28453,0)
+ ;;=H11.33^^112^1422^2
+ ;;^UTILITY(U,$J,358.3,28453,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29728,1,3,0)
- ;;=3^Contact Dermatitis,Unspec
- ;;^UTILITY(U,$J,358.3,29728,1,4,0)
- ;;=4^L25.9
- ;;^UTILITY(U,$J,358.3,29728,2)
- ;;=^5133647
- ;;^UTILITY(U,$J,358.3,29729,0)
- ;;=L97.919^^177^1893^21
- ;;^UTILITY(U,$J,358.3,29729,1,0)
+ ;;^UTILITY(U,$J,358.3,28453,1,3,0)
+ ;;=3^Conjunctival Hemorrhage,Bilateral
+ ;;^UTILITY(U,$J,358.3,28453,1,4,0)
+ ;;=4^H11.33
+ ;;^UTILITY(U,$J,358.3,28453,2)
+ ;;=^5004784
+ ;;^UTILITY(U,$J,358.3,28454,0)
+ ;;=H11.31^^112^1422^4
+ ;;^UTILITY(U,$J,358.3,28454,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29729,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer Right Lower Leg
- ;;^UTILITY(U,$J,358.3,29729,1,4,0)
- ;;=4^L97.919
- ;;^UTILITY(U,$J,358.3,29729,2)
- ;;=^5133688
- ;;^UTILITY(U,$J,358.3,29730,0)
- ;;=L97.929^^177^1893^15
- ;;^UTILITY(U,$J,358.3,29730,1,0)
+ ;;^UTILITY(U,$J,358.3,28454,1,3,0)
+ ;;=3^Conjunctival Hemorrhage,Right Eye
+ ;;^UTILITY(U,$J,358.3,28454,1,4,0)
+ ;;=4^H11.31
+ ;;^UTILITY(U,$J,358.3,28454,2)
+ ;;=^5004782
+ ;;^UTILITY(U,$J,358.3,28455,0)
+ ;;=H11.32^^112^1422^3
+ ;;^UTILITY(U,$J,358.3,28455,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29730,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer Left Lower Leg
- ;;^UTILITY(U,$J,358.3,29730,1,4,0)
- ;;=4^L97.929
- ;;^UTILITY(U,$J,358.3,29730,2)
- ;;=^5133689
- ;;^UTILITY(U,$J,358.3,29731,0)
- ;;=L97.119^^177^1893^22
- ;;^UTILITY(U,$J,358.3,29731,1,0)
+ ;;^UTILITY(U,$J,358.3,28455,1,3,0)
+ ;;=3^Conjunctival Hemorrhage,Left Eye
+ ;;^UTILITY(U,$J,358.3,28455,1,4,0)
+ ;;=4^H11.32
+ ;;^UTILITY(U,$J,358.3,28455,2)
+ ;;=^5004783
+ ;;^UTILITY(U,$J,358.3,28456,0)
+ ;;=H61.23^^112^1422^13
+ ;;^UTILITY(U,$J,358.3,28456,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29731,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer Right Thigh
- ;;^UTILITY(U,$J,358.3,29731,1,4,0)
- ;;=4^L97.119
- ;;^UTILITY(U,$J,358.3,29731,2)
- ;;=Select Surgery Menu Option: Request Operations^5009489
- ;;^UTILITY(U,$J,358.3,29732,0)
- ;;=L97.129^^177^1893^16
- ;;^UTILITY(U,$J,358.3,29732,1,0)
+ ;;^UTILITY(U,$J,358.3,28456,1,3,0)
+ ;;=3^Impacted Cerumen,Bilateral
+ ;;^UTILITY(U,$J,358.3,28456,1,4,0)
+ ;;=4^H61.23
+ ;;^UTILITY(U,$J,358.3,28456,2)
+ ;;=^5006533
+ ;;^UTILITY(U,$J,358.3,28457,0)
+ ;;=H61.22^^112^1422^14
+ ;;^UTILITY(U,$J,358.3,28457,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29732,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer Left Thigh
- ;;^UTILITY(U,$J,358.3,29732,1,4,0)
- ;;=4^L97.129
- ;;^UTILITY(U,$J,358.3,29732,2)
- ;;=^5009494
- ;;^UTILITY(U,$J,358.3,29733,0)
- ;;=L97.219^^177^1893^18
- ;;^UTILITY(U,$J,358.3,29733,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29733,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer Right Calf
- ;;^UTILITY(U,$J,358.3,29733,1,4,0)
- ;;=4^L97.219
- ;;^UTILITY(U,$J,358.3,29733,2)
- ;;=^5009504
- ;;^UTILITY(U,$J,358.3,29734,0)
- ;;=L97.229^^177^1893^12
+ ;;^UTILITY(U,$J,358.3,28457,1,3,0)
+ ;;=3^Impacted Cerumen,Left Ear
+ ;;^UTILITY(U,$J,358.3,28457,1,4,0)
+ ;;=4^H61.22
+ ;;^UTILITY(U,$J,358.3,28457,2)
+ ;;=^5006532
+ ;;^UTILITY(U,$J,358.3,28458,0)
+ ;;=H66.91^^112^1422^18

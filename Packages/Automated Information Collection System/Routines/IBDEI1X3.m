@@ -1,130 +1,130 @@
-IBDEI1X3 ; ; 06-AUG-2015
+IBDEI1X3 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33700,1,0)
+ ;;^UTILITY(U,$J,358.3,32527,0)
+ ;;=L40.4^^126^1617^18
+ ;;^UTILITY(U,$J,358.3,32527,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33700,1,3,0)
- ;;=3^Female Infertility,Unspec
- ;;^UTILITY(U,$J,358.3,33700,1,4,0)
- ;;=4^N97.9
- ;;^UTILITY(U,$J,358.3,33700,2)
- ;;=^5015935
- ;;^UTILITY(U,$J,358.3,33701,0)
- ;;=L29.1^^182^2008^50
- ;;^UTILITY(U,$J,358.3,33701,1,0)
+ ;;^UTILITY(U,$J,358.3,32527,1,3,0)
+ ;;=3^Psoriasis,Guttate
+ ;;^UTILITY(U,$J,358.3,32527,1,4,0)
+ ;;=4^L40.4
+ ;;^UTILITY(U,$J,358.3,32527,2)
+ ;;=^5009164
+ ;;^UTILITY(U,$J,358.3,32528,0)
+ ;;=M72.2^^126^1617^9
+ ;;^UTILITY(U,$J,358.3,32528,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33701,1,3,0)
- ;;=3^Pruritus Scroti
- ;;^UTILITY(U,$J,358.3,33701,1,4,0)
- ;;=4^L29.1
- ;;^UTILITY(U,$J,358.3,33701,2)
- ;;=^5009150
- ;;^UTILITY(U,$J,358.3,33702,0)
- ;;=L29.2^^182^2008^51
- ;;^UTILITY(U,$J,358.3,33702,1,0)
+ ;;^UTILITY(U,$J,358.3,32528,1,3,0)
+ ;;=3^Plantar fascial fibromatosis
+ ;;^UTILITY(U,$J,358.3,32528,1,4,0)
+ ;;=4^M72.2
+ ;;^UTILITY(U,$J,358.3,32528,2)
+ ;;=^272598
+ ;;^UTILITY(U,$J,358.3,32529,0)
+ ;;=M15.9^^126^1617^10
+ ;;^UTILITY(U,$J,358.3,32529,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33702,1,3,0)
- ;;=3^Pruritus Vulvae
- ;;^UTILITY(U,$J,358.3,33702,1,4,0)
- ;;=4^L29.2
- ;;^UTILITY(U,$J,358.3,33702,2)
- ;;=^100075
- ;;^UTILITY(U,$J,358.3,33703,0)
- ;;=R92.8^^182^2008^4
- ;;^UTILITY(U,$J,358.3,33703,1,0)
+ ;;^UTILITY(U,$J,358.3,32529,1,3,0)
+ ;;=3^Polyosteoarthritis,Unspec
+ ;;^UTILITY(U,$J,358.3,32529,1,4,0)
+ ;;=4^M15.9
+ ;;^UTILITY(U,$J,358.3,32529,2)
+ ;;=^5010768
+ ;;^UTILITY(U,$J,358.3,32530,0)
+ ;;=I87.002^^126^1617^13
+ ;;^UTILITY(U,$J,358.3,32530,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33703,1,3,0)
- ;;=3^Abnormal/Inconclusive Findings on Dx Imaging of Breast
- ;;^UTILITY(U,$J,358.3,33703,1,4,0)
- ;;=4^R92.8
- ;;^UTILITY(U,$J,358.3,33703,2)
- ;;=^5019712
- ;;^UTILITY(U,$J,358.3,33704,0)
- ;;=R87.619^^182^2008^1
- ;;^UTILITY(U,$J,358.3,33704,1,0)
+ ;;^UTILITY(U,$J,358.3,32530,1,3,0)
+ ;;=3^Postthrom syndr w/o compl of lft lwr extrem
+ ;;^UTILITY(U,$J,358.3,32530,1,4,0)
+ ;;=4^I87.002
+ ;;^UTILITY(U,$J,358.3,32530,2)
+ ;;=^5008028
+ ;;^UTILITY(U,$J,358.3,32531,0)
+ ;;=I73.9^^126^1617^2
+ ;;^UTILITY(U,$J,358.3,32531,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33704,1,3,0)
- ;;=3^Abnormal Cytology Findings in Specimen of Cervix Uteri,Unspec
- ;;^UTILITY(U,$J,358.3,33704,1,4,0)
- ;;=4^R87.619
- ;;^UTILITY(U,$J,358.3,33704,2)
- ;;=^5019676
- ;;^UTILITY(U,$J,358.3,33705,0)
- ;;=Z79.890^^182^2008^25
- ;;^UTILITY(U,$J,358.3,33705,1,0)
+ ;;^UTILITY(U,$J,358.3,32531,1,3,0)
+ ;;=3^Peripheral Vascular Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,32531,1,4,0)
+ ;;=4^I73.9
+ ;;^UTILITY(U,$J,358.3,32531,2)
+ ;;=^184182
+ ;;^UTILITY(U,$J,358.3,32532,0)
+ ;;=M06.372^^126^1618^12
+ ;;^UTILITY(U,$J,358.3,32532,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33705,1,3,0)
- ;;=3^Hormone Replacement Therapy,Postmenopausal
- ;;^UTILITY(U,$J,358.3,33705,1,4,0)
- ;;=4^Z79.890
- ;;^UTILITY(U,$J,358.3,33705,2)
- ;;=^331975
- ;;^UTILITY(U,$J,358.3,33706,0)
- ;;=Z33.1^^182^2008^48
- ;;^UTILITY(U,$J,358.3,33706,1,0)
+ ;;^UTILITY(U,$J,358.3,32532,1,3,0)
+ ;;=3^Rheumatoid nodule, left Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,32532,1,4,0)
+ ;;=4^M06.372
+ ;;^UTILITY(U,$J,358.3,32532,2)
+ ;;=^5010116
+ ;;^UTILITY(U,$J,358.3,32533,0)
+ ;;=M06.371^^126^1618^13
+ ;;^UTILITY(U,$J,358.3,32533,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33706,1,3,0)
- ;;=3^Pregnant State,Incidental
- ;;^UTILITY(U,$J,358.3,33706,1,4,0)
- ;;=4^Z33.1
- ;;^UTILITY(U,$J,358.3,33706,2)
- ;;=^5062853
- ;;^UTILITY(U,$J,358.3,33707,0)
- ;;=Z39.2^^182^2008^47
- ;;^UTILITY(U,$J,358.3,33707,1,0)
+ ;;^UTILITY(U,$J,358.3,32533,1,3,0)
+ ;;=3^Rheumatoid nodule, right Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,32533,1,4,0)
+ ;;=4^M06.371
+ ;;^UTILITY(U,$J,358.3,32533,2)
+ ;;=^5010115
+ ;;^UTILITY(U,$J,358.3,32534,0)
+ ;;=M05.59^^126^1618^8
+ ;;^UTILITY(U,$J,358.3,32534,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33707,1,3,0)
- ;;=3^Postpartum Follow-up Routine Encounter
- ;;^UTILITY(U,$J,358.3,33707,1,4,0)
- ;;=4^Z39.2
- ;;^UTILITY(U,$J,358.3,33707,2)
- ;;=^5062906
- ;;^UTILITY(U,$J,358.3,33708,0)
- ;;=Z30.09^^182^2008^10
- ;;^UTILITY(U,$J,358.3,33708,1,0)
+ ;;^UTILITY(U,$J,358.3,32534,1,3,0)
+ ;;=3^Rheum polyneuropathy w/ rheum arthr mult site
+ ;;^UTILITY(U,$J,358.3,32534,1,4,0)
+ ;;=4^M05.59
+ ;;^UTILITY(U,$J,358.3,32534,2)
+ ;;=^5009976
+ ;;^UTILITY(U,$J,358.3,32535,0)
+ ;;=M05.572^^126^1618^7
+ ;;^UTILITY(U,$J,358.3,32535,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33708,1,3,0)
- ;;=3^Counsel/Advice on Contraception Encounter
- ;;^UTILITY(U,$J,358.3,33708,1,4,0)
- ;;=4^Z30.09
- ;;^UTILITY(U,$J,358.3,33708,2)
- ;;=^5062817
- ;;^UTILITY(U,$J,358.3,33709,0)
- ;;=Z30.9^^182^2008^9
- ;;^UTILITY(U,$J,358.3,33709,1,0)
+ ;;^UTILITY(U,$J,358.3,32535,1,3,0)
+ ;;=3^Rheum polyneuropathy w/ rheum arthr lft ank/ft
+ ;;^UTILITY(U,$J,358.3,32535,1,4,0)
+ ;;=4^M05.572
+ ;;^UTILITY(U,$J,358.3,32535,2)
+ ;;=^5009974
+ ;;^UTILITY(U,$J,358.3,32536,0)
+ ;;=M05.571^^126^1618^9
+ ;;^UTILITY(U,$J,358.3,32536,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33709,1,3,0)
- ;;=3^Contraceptive Management Encounter
- ;;^UTILITY(U,$J,358.3,33709,1,4,0)
- ;;=4^Z30.9
- ;;^UTILITY(U,$J,358.3,33709,2)
- ;;=^5062828
- ;;^UTILITY(U,$J,358.3,33710,0)
- ;;=S31.000A^^182^2009^6
- ;;^UTILITY(U,$J,358.3,33710,1,0)
+ ;;^UTILITY(U,$J,358.3,32536,1,3,0)
+ ;;=3^Rheum polyneuropathy w/ rheum arthr rt ank/ft
+ ;;^UTILITY(U,$J,358.3,32536,1,4,0)
+ ;;=4^M05.571
+ ;;^UTILITY(U,$J,358.3,32536,2)
+ ;;=^5009973
+ ;;^UTILITY(U,$J,358.3,32537,0)
+ ;;=M05.471^^126^1618^6
+ ;;^UTILITY(U,$J,358.3,32537,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33710,1,3,0)
- ;;=3^Open Wnd Low Back/Pelvis w/o Penet Retroperiton,Init,Unspec
- ;;^UTILITY(U,$J,358.3,33710,1,4,0)
- ;;=4^S31.000A
- ;;^UTILITY(U,$J,358.3,33710,2)
- ;;=^5023993
- ;;^UTILITY(U,$J,358.3,33711,0)
- ;;=S31.050A^^182^2009^5
- ;;^UTILITY(U,$J,358.3,33711,1,0)
+ ;;^UTILITY(U,$J,358.3,32537,1,3,0)
+ ;;=3^Rheum myopathy w/ rheum arthr rt ank/ft
+ ;;^UTILITY(U,$J,358.3,32537,1,4,0)
+ ;;=4^M05.471
+ ;;^UTILITY(U,$J,358.3,32537,2)
+ ;;=^5009950
+ ;;^UTILITY(U,$J,358.3,32538,0)
+ ;;=M05.472^^126^1618^5
+ ;;^UTILITY(U,$J,358.3,32538,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33711,1,3,0)
- ;;=3^Open Bite Low Back/Pelvis w/o Penet Retroperiton,Init
- ;;^UTILITY(U,$J,358.3,33711,1,4,0)
- ;;=4^S31.050A
- ;;^UTILITY(U,$J,358.3,33711,2)
- ;;=^5024017
- ;;^UTILITY(U,$J,358.3,33712,0)
- ;;=S31.030A^^182^2009^7
- ;;^UTILITY(U,$J,358.3,33712,1,0)
+ ;;^UTILITY(U,$J,358.3,32538,1,3,0)
+ ;;=3^Rheum myopathy w/ rheum arthr lft ank/ft
+ ;;^UTILITY(U,$J,358.3,32538,1,4,0)
+ ;;=4^M05.472
+ ;;^UTILITY(U,$J,358.3,32538,2)
+ ;;=^5009951
+ ;;^UTILITY(U,$J,358.3,32539,0)
+ ;;=G90.523^^126^1618^1
+ ;;^UTILITY(U,$J,358.3,32539,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33712,1,3,0)
- ;;=3^Puncture Wnd w/o FB Low Back/Pelvis w/o Penet Retroperiton,Init
- ;;^UTILITY(U,$J,358.3,33712,1,4,0)
- ;;=4^S31.030A
+ ;;^UTILITY(U,$J,358.3,32539,1,3,0)
+ ;;=3^Regional Pain Syndrome,Bliateral Lower Limbs,Complex

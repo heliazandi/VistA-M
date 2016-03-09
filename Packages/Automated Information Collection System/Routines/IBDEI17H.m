@@ -1,124 +1,132 @@
-IBDEI17H ; ; 06-AUG-2015
+IBDEI17H ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,21338,1,3,0)
- ;;=3^Transcath Closure of ASD
- ;;^UTILITY(U,$J,358.3,21339,0)
- ;;=36100^^117^1330^11^^^^1
- ;;^UTILITY(U,$J,358.3,21339,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21339,1,2,0)
- ;;=2^36100
- ;;^UTILITY(U,$J,358.3,21339,1,3,0)
- ;;=3^Intro Needle Or Cath Carotid Or Vert. Artery
- ;;^UTILITY(U,$J,358.3,21340,0)
- ;;=36120^^117^1330^10^^^^1
- ;;^UTILITY(U,$J,358.3,21340,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21340,1,2,0)
- ;;=2^36120
- ;;^UTILITY(U,$J,358.3,21340,1,3,0)
- ;;=3^Intro Needle Or Cath Brachial Artery
- ;;^UTILITY(U,$J,358.3,21341,0)
- ;;=36140^^117^1330^12^^^^1
- ;;^UTILITY(U,$J,358.3,21341,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21341,1,2,0)
- ;;=2^36140
- ;;^UTILITY(U,$J,358.3,21341,1,3,0)
- ;;=3^Intro Needle Or Cath Ext Artery
- ;;^UTILITY(U,$J,358.3,21342,0)
- ;;=36215^^117^1330^40^^^^1
- ;;^UTILITY(U,$J,358.3,21342,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21342,1,2,0)
- ;;=2^36215
- ;;^UTILITY(U,$J,358.3,21342,1,3,0)
- ;;=3^Select Cath Arterial 1st Order Thor/Brachiocephalic
- ;;^UTILITY(U,$J,358.3,21343,0)
- ;;=36011^^117^1330^41^^^^1
- ;;^UTILITY(U,$J,358.3,21343,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21343,1,2,0)
- ;;=2^36011
- ;;^UTILITY(U,$J,358.3,21343,1,3,0)
- ;;=3^Select Cath Venous 1st Order (Renal Jug)
- ;;^UTILITY(U,$J,358.3,21344,0)
- ;;=36245^^117^1330^35^^^^1
- ;;^UTILITY(U,$J,358.3,21344,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21344,1,2,0)
- ;;=2^36245
- ;;^UTILITY(U,$J,358.3,21344,1,3,0)
- ;;=3^Select Cath 1st Order Abd/Pelvic/Le Artery
- ;;^UTILITY(U,$J,358.3,21345,0)
- ;;=36246^^117^1330^36^^^^1
- ;;^UTILITY(U,$J,358.3,21345,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21345,1,2,0)
- ;;=2^36246
- ;;^UTILITY(U,$J,358.3,21345,1,3,0)
- ;;=3^Select Cath 2nd Order Abd/Pelvic/Le Artery
- ;;^UTILITY(U,$J,358.3,21346,0)
- ;;=36247^^117^1330^38^^^^1
- ;;^UTILITY(U,$J,358.3,21346,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21346,1,2,0)
- ;;=2^36247
- ;;^UTILITY(U,$J,358.3,21346,1,3,0)
- ;;=3^Select Cath 3rd Order Abd/Pelvic/Le Artery
- ;;^UTILITY(U,$J,358.3,21347,0)
- ;;=36216^^117^1330^37^^^^1
- ;;^UTILITY(U,$J,358.3,21347,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21347,1,2,0)
- ;;=2^36216
- ;;^UTILITY(U,$J,358.3,21347,1,3,0)
- ;;=3^Select Cath 2nd Order Thor/Ue/Head
- ;;^UTILITY(U,$J,358.3,21348,0)
- ;;=36217^^117^1330^39^^^^1
- ;;^UTILITY(U,$J,358.3,21348,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21348,1,2,0)
- ;;=2^36217
- ;;^UTILITY(U,$J,358.3,21348,1,3,0)
- ;;=3^Select Cath 3rd Order Thor/Ue/Head
- ;;^UTILITY(U,$J,358.3,21349,0)
- ;;=36218^^117^1330^5^^^^1
- ;;^UTILITY(U,$J,358.3,21349,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21349,1,2,0)
- ;;=2^36218
- ;;^UTILITY(U,$J,358.3,21349,1,3,0)
- ;;=3^Each Addl 2nd/3rd Order Thor/Ue/Head
- ;;^UTILITY(U,$J,358.3,21350,0)
- ;;=36248^^117^1330^4^^^^1
- ;;^UTILITY(U,$J,358.3,21350,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21350,1,2,0)
- ;;=2^36248
- ;;^UTILITY(U,$J,358.3,21350,1,3,0)
- ;;=3^Each Addl 2nd/3rd Order Pelvic/Le
- ;;^UTILITY(U,$J,358.3,21351,0)
- ;;=36200^^117^1330^13^^^^1
- ;;^UTILITY(U,$J,358.3,21351,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21351,1,2,0)
- ;;=2^36200
- ;;^UTILITY(U,$J,358.3,21351,1,3,0)
- ;;=3^Non-Select Cath, Aorta
- ;;^UTILITY(U,$J,358.3,21352,0)
- ;;=33010^^117^1330^56^^^^1
- ;;^UTILITY(U,$J,358.3,21352,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21352,1,2,0)
- ;;=2^33010
- ;;^UTILITY(U,$J,358.3,21352,1,3,0)
- ;;=3^Visceral Selective
- ;;^UTILITY(U,$J,358.3,21353,0)
- ;;=35471^^117^1330^31^^^^1
- ;;^UTILITY(U,$J,358.3,21353,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,21353,1,2,0)
- ;;=2^35471
+ ;;^UTILITY(U,$J,358.3,20502,1,4,0)
+ ;;=4^G56.21
+ ;;^UTILITY(U,$J,358.3,20502,2)
+ ;;=^5004024
+ ;;^UTILITY(U,$J,358.3,20503,0)
+ ;;=G56.22^^84^935^55
+ ;;^UTILITY(U,$J,358.3,20503,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20503,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,20503,1,4,0)
+ ;;=4^G56.22
+ ;;^UTILITY(U,$J,358.3,20503,2)
+ ;;=^5004025
+ ;;^UTILITY(U,$J,358.3,20504,0)
+ ;;=M26.60^^84^935^180
+ ;;^UTILITY(U,$J,358.3,20504,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20504,1,3,0)
+ ;;=3^Temporomandibular Joint Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,20504,1,4,0)
+ ;;=4^M26.60
+ ;;^UTILITY(U,$J,358.3,20504,2)
+ ;;=^5011714
+ ;;^UTILITY(U,$J,358.3,20505,0)
+ ;;=L40.52^^84^935^137
+ ;;^UTILITY(U,$J,358.3,20505,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20505,1,3,0)
+ ;;=3^Psoriatic Arthritis Mutilans
+ ;;^UTILITY(U,$J,358.3,20505,1,4,0)
+ ;;=4^L40.52
+ ;;^UTILITY(U,$J,358.3,20505,2)
+ ;;=^5009167
+ ;;^UTILITY(U,$J,358.3,20506,0)
+ ;;=L40.53^^84^935^138
+ ;;^UTILITY(U,$J,358.3,20506,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20506,1,3,0)
+ ;;=3^Psoriatic Spondylitis
+ ;;^UTILITY(U,$J,358.3,20506,1,4,0)
+ ;;=4^L40.53
+ ;;^UTILITY(U,$J,358.3,20506,2)
+ ;;=^5009168
+ ;;^UTILITY(U,$J,358.3,20507,0)
+ ;;=M32.9^^84^935^179
+ ;;^UTILITY(U,$J,358.3,20507,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20507,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Unspec
+ ;;^UTILITY(U,$J,358.3,20507,1,4,0)
+ ;;=4^M32.9
+ ;;^UTILITY(U,$J,358.3,20507,2)
+ ;;=^5011761
+ ;;^UTILITY(U,$J,358.3,20508,0)
+ ;;=M32.0^^84^935^175
+ ;;^UTILITY(U,$J,358.3,20508,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20508,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Drug-Induced
+ ;;^UTILITY(U,$J,358.3,20508,1,4,0)
+ ;;=4^M32.0
+ ;;^UTILITY(U,$J,358.3,20508,2)
+ ;;=^5011752
+ ;;^UTILITY(U,$J,358.3,20509,0)
+ ;;=M32.13^^84^935^177
+ ;;^UTILITY(U,$J,358.3,20509,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20509,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Lung Involvement
+ ;;^UTILITY(U,$J,358.3,20509,1,4,0)
+ ;;=4^M32.13
+ ;;^UTILITY(U,$J,358.3,20509,2)
+ ;;=^5011756
+ ;;^UTILITY(U,$J,358.3,20510,0)
+ ;;=M32.14^^84^935^176
+ ;;^UTILITY(U,$J,358.3,20510,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20510,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Glomerular Disease
+ ;;^UTILITY(U,$J,358.3,20510,1,4,0)
+ ;;=4^M32.14
+ ;;^UTILITY(U,$J,358.3,20510,2)
+ ;;=^5011757
+ ;;^UTILITY(U,$J,358.3,20511,0)
+ ;;=M32.12^^84^935^178
+ ;;^UTILITY(U,$J,358.3,20511,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20511,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Pericarditis
+ ;;^UTILITY(U,$J,358.3,20511,1,4,0)
+ ;;=4^M32.12
+ ;;^UTILITY(U,$J,358.3,20511,2)
+ ;;=^5011755
+ ;;^UTILITY(U,$J,358.3,20512,0)
+ ;;=M05.59^^84^935^159
+ ;;^UTILITY(U,$J,358.3,20512,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20512,1,3,0)
+ ;;=3^Rheumatoid Polyneuropathy w/ Rheumatoid Arthritis of Mult Sites
+ ;;^UTILITY(U,$J,358.3,20512,1,4,0)
+ ;;=4^M05.59
+ ;;^UTILITY(U,$J,358.3,20512,2)
+ ;;=^5009976
+ ;;^UTILITY(U,$J,358.3,20513,0)
+ ;;=M05.711^^84^935^153
+ ;;^UTILITY(U,$J,358.3,20513,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20513,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Shoulder
+ ;;^UTILITY(U,$J,358.3,20513,1,4,0)
+ ;;=4^M05.711
+ ;;^UTILITY(U,$J,358.3,20513,2)
+ ;;=^5010001
+ ;;^UTILITY(U,$J,358.3,20514,0)
+ ;;=M05.712^^84^935^146
+ ;;^UTILITY(U,$J,358.3,20514,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20514,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Shoulder
+ ;;^UTILITY(U,$J,358.3,20514,1,4,0)
+ ;;=4^M05.712
+ ;;^UTILITY(U,$J,358.3,20514,2)
+ ;;=^5010002
+ ;;^UTILITY(U,$J,358.3,20515,0)
+ ;;=M05.731^^84^935^154
+ ;;^UTILITY(U,$J,358.3,20515,1,0)
+ ;;=^358.31IA^4^2

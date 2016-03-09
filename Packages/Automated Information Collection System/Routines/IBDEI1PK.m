@@ -1,122 +1,122 @@
-IBDEI1PK ; ; 06-AUG-2015
+IBDEI1PK ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30268,2)
- ;;=^5017100
- ;;^UTILITY(U,$J,358.3,30269,0)
- ;;=O36.8125^^178^1916^6
- ;;^UTILITY(U,$J,358.3,30269,1,0)
+ ;;^UTILITY(U,$J,358.3,29019,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30269,1,3,0)
- ;;=3^Decreased fetal movements, second trimester, fetus 5
- ;;^UTILITY(U,$J,358.3,30269,1,4,0)
- ;;=4^O36.8125
- ;;^UTILITY(U,$J,358.3,30269,2)
- ;;=^5017094
- ;;^UTILITY(U,$J,358.3,30270,0)
- ;;=O36.8135^^178^1916^12
- ;;^UTILITY(U,$J,358.3,30270,1,0)
+ ;;^UTILITY(U,$J,358.3,29019,1,3,0)
+ ;;=3^Maternal care for CNS malform in fetus, fetus 4
+ ;;^UTILITY(U,$J,358.3,29019,1,4,0)
+ ;;=4^O35.0XX4
+ ;;^UTILITY(U,$J,358.3,29019,2)
+ ;;=^5016779
+ ;;^UTILITY(U,$J,358.3,29020,0)
+ ;;=O35.0XX5^^115^1455^42
+ ;;^UTILITY(U,$J,358.3,29020,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30270,1,3,0)
- ;;=3^Decreased fetal movements, third trimester, fetus 5
- ;;^UTILITY(U,$J,358.3,30270,1,4,0)
- ;;=4^O36.8135
- ;;^UTILITY(U,$J,358.3,30270,2)
- ;;=^5017101
- ;;^UTILITY(U,$J,358.3,30271,0)
- ;;=O43.011^^178^1916^14
- ;;^UTILITY(U,$J,358.3,30271,1,0)
+ ;;^UTILITY(U,$J,358.3,29020,1,3,0)
+ ;;=3^Maternal care for CNS malform in fetus, fetus 5
+ ;;^UTILITY(U,$J,358.3,29020,1,4,0)
+ ;;=4^O35.0XX5
+ ;;^UTILITY(U,$J,358.3,29020,2)
+ ;;=^5016780
+ ;;^UTILITY(U,$J,358.3,29021,0)
+ ;;=O35.1XX0^^115^1455^61
+ ;;^UTILITY(U,$J,358.3,29021,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30271,1,3,0)
- ;;=3^Fetomaternal placental transfusion syndrome, first trimester
- ;;^UTILITY(U,$J,358.3,30271,1,4,0)
- ;;=4^O43.011
- ;;^UTILITY(U,$J,358.3,30271,2)
- ;;=^5017389
- ;;^UTILITY(U,$J,358.3,30272,0)
- ;;=O43.012^^178^1916^13
- ;;^UTILITY(U,$J,358.3,30272,1,0)
+ ;;^UTILITY(U,$J,358.3,29021,1,3,0)
+ ;;=3^Maternal care for chromosomal abnormality in fetus, unsp
+ ;;^UTILITY(U,$J,358.3,29021,1,4,0)
+ ;;=4^O35.1XX0
+ ;;^UTILITY(U,$J,358.3,29021,2)
+ ;;=^5016782
+ ;;^UTILITY(U,$J,358.3,29022,0)
+ ;;=O35.1XX1^^115^1455^62
+ ;;^UTILITY(U,$J,358.3,29022,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30272,1,3,0)
- ;;=3^Fetomaternal placental transfuse syndrome, second trimester
- ;;^UTILITY(U,$J,358.3,30272,1,4,0)
- ;;=4^O43.012
- ;;^UTILITY(U,$J,358.3,30272,2)
- ;;=^5017390
- ;;^UTILITY(U,$J,358.3,30273,0)
- ;;=O43.013^^178^1916^15
- ;;^UTILITY(U,$J,358.3,30273,1,0)
+ ;;^UTILITY(U,$J,358.3,29022,1,3,0)
+ ;;=3^Maternal care for chromosomal abnormality in fetus, fetus 1
+ ;;^UTILITY(U,$J,358.3,29022,1,4,0)
+ ;;=4^O35.1XX1
+ ;;^UTILITY(U,$J,358.3,29022,2)
+ ;;=^5016783
+ ;;^UTILITY(U,$J,358.3,29023,0)
+ ;;=O35.1XX2^^115^1455^63
+ ;;^UTILITY(U,$J,358.3,29023,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30273,1,3,0)
- ;;=3^Fetomaternal placental transfusion syndrome, third trimester
- ;;^UTILITY(U,$J,358.3,30273,1,4,0)
- ;;=4^O43.013
- ;;^UTILITY(U,$J,358.3,30273,2)
- ;;=^5017391
- ;;^UTILITY(U,$J,358.3,30274,0)
- ;;=O36.0110^^178^1916^43
- ;;^UTILITY(U,$J,358.3,30274,1,0)
+ ;;^UTILITY(U,$J,358.3,29023,1,3,0)
+ ;;=3^Maternal care for chromosomal abnormality in fetus, fetus 2
+ ;;^UTILITY(U,$J,358.3,29023,1,4,0)
+ ;;=4^O35.1XX2
+ ;;^UTILITY(U,$J,358.3,29023,2)
+ ;;=^5016784
+ ;;^UTILITY(U,$J,358.3,29024,0)
+ ;;=O35.1XX3^^115^1455^64
+ ;;^UTILITY(U,$J,358.3,29024,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30274,1,3,0)
- ;;=3^Maternal care for anti-D antibodies, first trimester, unsp
- ;;^UTILITY(U,$J,358.3,30274,1,4,0)
- ;;=4^O36.0110
- ;;^UTILITY(U,$J,358.3,30274,2)
- ;;=^5016842
- ;;^UTILITY(U,$J,358.3,30275,0)
- ;;=O36.0111^^178^1916^44
- ;;^UTILITY(U,$J,358.3,30275,1,0)
+ ;;^UTILITY(U,$J,358.3,29024,1,3,0)
+ ;;=3^Maternal care for chromosomal abnormality in fetus, fetus 3
+ ;;^UTILITY(U,$J,358.3,29024,1,4,0)
+ ;;=4^O35.1XX3
+ ;;^UTILITY(U,$J,358.3,29024,2)
+ ;;=^5016785
+ ;;^UTILITY(U,$J,358.3,29025,0)
+ ;;=O35.1XX4^^115^1455^65
+ ;;^UTILITY(U,$J,358.3,29025,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30275,1,3,0)
- ;;=3^Maternal care for anti-D antibodies, first tri, fetus 1
- ;;^UTILITY(U,$J,358.3,30275,1,4,0)
- ;;=4^O36.0111
- ;;^UTILITY(U,$J,358.3,30275,2)
- ;;=^5016843
- ;;^UTILITY(U,$J,358.3,30276,0)
- ;;=O36.0112^^178^1916^45
- ;;^UTILITY(U,$J,358.3,30276,1,0)
+ ;;^UTILITY(U,$J,358.3,29025,1,3,0)
+ ;;=3^Maternal care for chromosomal abnormality in fetus, fetus 4
+ ;;^UTILITY(U,$J,358.3,29025,1,4,0)
+ ;;=4^O35.1XX4
+ ;;^UTILITY(U,$J,358.3,29025,2)
+ ;;=^5016786
+ ;;^UTILITY(U,$J,358.3,29026,0)
+ ;;=O35.1XX5^^115^1455^66
+ ;;^UTILITY(U,$J,358.3,29026,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30276,1,3,0)
- ;;=3^Maternal care for anti-D antibodies, first tri, fetus 2
- ;;^UTILITY(U,$J,358.3,30276,1,4,0)
- ;;=4^O36.0112
- ;;^UTILITY(U,$J,358.3,30276,2)
- ;;=^5016844
- ;;^UTILITY(U,$J,358.3,30277,0)
- ;;=O36.0113^^178^1916^46
- ;;^UTILITY(U,$J,358.3,30277,1,0)
+ ;;^UTILITY(U,$J,358.3,29026,1,3,0)
+ ;;=3^Maternal care for chromosomal abnormality in fetus, fetus 5
+ ;;^UTILITY(U,$J,358.3,29026,1,4,0)
+ ;;=4^O35.1XX5
+ ;;^UTILITY(U,$J,358.3,29026,2)
+ ;;=^5016787
+ ;;^UTILITY(U,$J,358.3,29027,0)
+ ;;=O35.2XX0^^115^1455^110
+ ;;^UTILITY(U,$J,358.3,29027,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30277,1,3,0)
- ;;=3^Maternal care for anti-D antibodies, first tri, fetus 3
- ;;^UTILITY(U,$J,358.3,30277,1,4,0)
- ;;=4^O36.0113
- ;;^UTILITY(U,$J,358.3,30277,2)
- ;;=^5016845
- ;;^UTILITY(U,$J,358.3,30278,0)
- ;;=O36.0114^^178^1916^47
- ;;^UTILITY(U,$J,358.3,30278,1,0)
+ ;;^UTILITY(U,$J,358.3,29027,1,3,0)
+ ;;=3^Maternal care for hereditary disease in fetus, unsp
+ ;;^UTILITY(U,$J,358.3,29027,1,4,0)
+ ;;=4^O35.2XX0
+ ;;^UTILITY(U,$J,358.3,29027,2)
+ ;;=^5016789
+ ;;^UTILITY(U,$J,358.3,29028,0)
+ ;;=O35.2XX1^^115^1455^111
+ ;;^UTILITY(U,$J,358.3,29028,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30278,1,3,0)
- ;;=3^Maternal care for anti-D antibodies, first tri, fetus 4
- ;;^UTILITY(U,$J,358.3,30278,1,4,0)
- ;;=4^O36.0114
- ;;^UTILITY(U,$J,358.3,30278,2)
- ;;=^5016846
- ;;^UTILITY(U,$J,358.3,30279,0)
- ;;=O36.0115^^178^1916^48
- ;;^UTILITY(U,$J,358.3,30279,1,0)
+ ;;^UTILITY(U,$J,358.3,29028,1,3,0)
+ ;;=3^Maternal care for hereditary disease in fetus, fetus 1
+ ;;^UTILITY(U,$J,358.3,29028,1,4,0)
+ ;;=4^O35.2XX1
+ ;;^UTILITY(U,$J,358.3,29028,2)
+ ;;=^5016790
+ ;;^UTILITY(U,$J,358.3,29029,0)
+ ;;=O35.2XX2^^115^1455^112
+ ;;^UTILITY(U,$J,358.3,29029,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30279,1,3,0)
- ;;=3^Maternal care for anti-D antibodies, first tri, fetus 5
- ;;^UTILITY(U,$J,358.3,30279,1,4,0)
- ;;=4^O36.0115
- ;;^UTILITY(U,$J,358.3,30279,2)
- ;;=^5016847
- ;;^UTILITY(U,$J,358.3,30280,0)
- ;;=O36.0120^^178^1916^49
- ;;^UTILITY(U,$J,358.3,30280,1,0)
+ ;;^UTILITY(U,$J,358.3,29029,1,3,0)
+ ;;=3^Maternal care for hereditary disease in fetus, fetus 2
+ ;;^UTILITY(U,$J,358.3,29029,1,4,0)
+ ;;=4^O35.2XX2
+ ;;^UTILITY(U,$J,358.3,29029,2)
+ ;;=^5016791
+ ;;^UTILITY(U,$J,358.3,29030,0)
+ ;;=O35.2XX3^^115^1455^113
+ ;;^UTILITY(U,$J,358.3,29030,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30280,1,3,0)
- ;;=3^Maternal care for anti-D antibodies, second trimester, unsp
+ ;;^UTILITY(U,$J,358.3,29030,1,3,0)
+ ;;=3^Maternal care for hereditary disease in fetus, fetus 3
+ ;;^UTILITY(U,$J,358.3,29030,1,4,0)
+ ;;=4^O35.2XX3
+ ;;^UTILITY(U,$J,358.3,29030,2)
+ ;;=^5016792

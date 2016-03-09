@@ -1,122 +1,130 @@
-IBDEI1TI ; ; 06-AUG-2015
+IBDEI1TI ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32034,2)
- ;;=^5007672
- ;;^UTILITY(U,$J,358.3,32035,0)
- ;;=I70.443^^182^1981^37
- ;;^UTILITY(U,$J,358.3,32035,1,0)
+ ;;^UTILITY(U,$J,358.3,30881,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32035,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Left Leg w/ Ulcer of Ankle
- ;;^UTILITY(U,$J,358.3,32035,1,4,0)
- ;;=4^I70.443
- ;;^UTILITY(U,$J,358.3,32035,2)
- ;;=^5007673
- ;;^UTILITY(U,$J,358.3,32036,0)
- ;;=I70.444^^182^1981^38
- ;;^UTILITY(U,$J,358.3,32036,1,0)
+ ;;^UTILITY(U,$J,358.3,30881,1,3,0)
+ ;;=3^Impulse Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30881,1,4,0)
+ ;;=4^F63.9
+ ;;^UTILITY(U,$J,358.3,30881,2)
+ ;;=^5003646
+ ;;^UTILITY(U,$J,358.3,30882,0)
+ ;;=F42.^^123^1541^4
+ ;;^UTILITY(U,$J,358.3,30882,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32036,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Left Leg w/ Ulcer of Heel/Midfoot
- ;;^UTILITY(U,$J,358.3,32036,1,4,0)
- ;;=4^I70.444
- ;;^UTILITY(U,$J,358.3,32036,2)
- ;;=^5007674
- ;;^UTILITY(U,$J,358.3,32037,0)
- ;;=I70.445^^182^1981^39
- ;;^UTILITY(U,$J,358.3,32037,1,0)
+ ;;^UTILITY(U,$J,358.3,30882,1,3,0)
+ ;;=3^Hoarding Disorder
+ ;;^UTILITY(U,$J,358.3,30882,1,4,0)
+ ;;=4^F42.
+ ;;^UTILITY(U,$J,358.3,30882,2)
+ ;;=^5003568
+ ;;^UTILITY(U,$J,358.3,30883,0)
+ ;;=F06.8^^123^1541^6
+ ;;^UTILITY(U,$J,358.3,30883,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32037,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Left Leg w/ Ulcer of Oth Part of Foot
- ;;^UTILITY(U,$J,358.3,32037,1,4,0)
- ;;=4^I70.445
- ;;^UTILITY(U,$J,358.3,32037,2)
- ;;=^5007675
- ;;^UTILITY(U,$J,358.3,32038,0)
- ;;=I70.531^^182^1981^60
- ;;^UTILITY(U,$J,358.3,32038,1,0)
+ ;;^UTILITY(U,$J,358.3,30883,1,3,0)
+ ;;=3^Obsessive-Compulsive & Related Disorder d/t Another Med Condition
+ ;;^UTILITY(U,$J,358.3,30883,1,4,0)
+ ;;=4^F06.8
+ ;;^UTILITY(U,$J,358.3,30883,2)
+ ;;=^5003062
+ ;;^UTILITY(U,$J,358.3,30884,0)
+ ;;=F06.2^^123^1542^5
+ ;;^UTILITY(U,$J,358.3,30884,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32038,1,3,0)
- ;;=3^Athscl Nonaut Bio Bypass of Right Leg w/ Ulcer of Thigh
- ;;^UTILITY(U,$J,358.3,32038,1,4,0)
- ;;=4^I70.531
- ;;^UTILITY(U,$J,358.3,32038,2)
- ;;=^5007702
- ;;^UTILITY(U,$J,358.3,32039,0)
- ;;=I70.532^^182^1981^61
- ;;^UTILITY(U,$J,358.3,32039,1,0)
+ ;;^UTILITY(U,$J,358.3,30884,1,3,0)
+ ;;=3^Psychotic Disorder w/ Delusions d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,30884,1,4,0)
+ ;;=4^F06.2
+ ;;^UTILITY(U,$J,358.3,30884,2)
+ ;;=^5003055
+ ;;^UTILITY(U,$J,358.3,30885,0)
+ ;;=F06.0^^123^1542^6
+ ;;^UTILITY(U,$J,358.3,30885,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32039,1,3,0)
- ;;=3^Athscl Nonaut Bio Bypass of Right Leg w/ Ulcer of Calf
- ;;^UTILITY(U,$J,358.3,32039,1,4,0)
- ;;=4^I70.532
- ;;^UTILITY(U,$J,358.3,32039,2)
- ;;=^5007703
- ;;^UTILITY(U,$J,358.3,32040,0)
- ;;=I70.533^^182^1981^62
- ;;^UTILITY(U,$J,358.3,32040,1,0)
+ ;;^UTILITY(U,$J,358.3,30885,1,3,0)
+ ;;=3^Psychotic Disorder w/ Hallucinations d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,30885,1,4,0)
+ ;;=4^F06.0
+ ;;^UTILITY(U,$J,358.3,30885,2)
+ ;;=^5003053
+ ;;^UTILITY(U,$J,358.3,30886,0)
+ ;;=F06.4^^123^1542^1
+ ;;^UTILITY(U,$J,358.3,30886,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32040,1,3,0)
- ;;=3^Athscl Nonaut Bio Bypass of Right Leg w/ Ulcer of Ankle
- ;;^UTILITY(U,$J,358.3,32040,1,4,0)
- ;;=4^I70.533
- ;;^UTILITY(U,$J,358.3,32040,2)
- ;;=^5007704
- ;;^UTILITY(U,$J,358.3,32041,0)
- ;;=I70.534^^182^1981^63
- ;;^UTILITY(U,$J,358.3,32041,1,0)
+ ;;^UTILITY(U,$J,358.3,30886,1,3,0)
+ ;;=3^Anxiety Disorder d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,30886,1,4,0)
+ ;;=4^F06.4
+ ;;^UTILITY(U,$J,358.3,30886,2)
+ ;;=^5003061
+ ;;^UTILITY(U,$J,358.3,30887,0)
+ ;;=F06.1^^123^1542^2
+ ;;^UTILITY(U,$J,358.3,30887,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32041,1,3,0)
- ;;=3^Athscl Nonaut Bio Bypass of Right Leg w/ Ulcer of Heel/Midfoot
- ;;^UTILITY(U,$J,358.3,32041,1,4,0)
- ;;=4^I70.534
- ;;^UTILITY(U,$J,358.3,32041,2)
- ;;=^5007705
- ;;^UTILITY(U,$J,358.3,32042,0)
- ;;=I70.535^^182^1981^64
- ;;^UTILITY(U,$J,358.3,32042,1,0)
+ ;;^UTILITY(U,$J,358.3,30887,1,3,0)
+ ;;=3^Catatonia Associated w/ Schizophrenia
+ ;;^UTILITY(U,$J,358.3,30887,1,4,0)
+ ;;=4^F06.1
+ ;;^UTILITY(U,$J,358.3,30887,2)
+ ;;=^5003054
+ ;;^UTILITY(U,$J,358.3,30888,0)
+ ;;=R41.9^^123^1542^3
+ ;;^UTILITY(U,$J,358.3,30888,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32042,1,3,0)
- ;;=3^Athscl Nonaut Bio Bypass of Right Leg w/ Ulcer of Oth Part of Foot
- ;;^UTILITY(U,$J,358.3,32042,1,4,0)
- ;;=4^I70.535
- ;;^UTILITY(U,$J,358.3,32042,2)
- ;;=^5007706
- ;;^UTILITY(U,$J,358.3,32043,0)
- ;;=I70.541^^182^1981^55
- ;;^UTILITY(U,$J,358.3,32043,1,0)
+ ;;^UTILITY(U,$J,358.3,30888,1,3,0)
+ ;;=3^Neurocognitive Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30888,1,4,0)
+ ;;=4^R41.9
+ ;;^UTILITY(U,$J,358.3,30888,2)
+ ;;=^5019449
+ ;;^UTILITY(U,$J,358.3,30889,0)
+ ;;=F29.^^123^1542^7
+ ;;^UTILITY(U,$J,358.3,30889,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32043,1,3,0)
- ;;=3^Athscl Nonaut Bio Bypass of Left Leg w/ Ulcer of Thigh
- ;;^UTILITY(U,$J,358.3,32043,1,4,0)
- ;;=4^I70.541
- ;;^UTILITY(U,$J,358.3,32043,2)
- ;;=^5007709
- ;;^UTILITY(U,$J,358.3,32044,0)
- ;;=I70.542^^182^1981^56
- ;;^UTILITY(U,$J,358.3,32044,1,0)
+ ;;^UTILITY(U,$J,358.3,30889,1,3,0)
+ ;;=3^Schizophrenia Spectrum/Psychotic Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30889,1,4,0)
+ ;;=4^F29.
+ ;;^UTILITY(U,$J,358.3,30889,2)
+ ;;=^5003484
+ ;;^UTILITY(U,$J,358.3,30890,0)
+ ;;=F07.0^^123^1542^4
+ ;;^UTILITY(U,$J,358.3,30890,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32044,1,3,0)
- ;;=3^Athscl Nonaut Bio Bypass of Left Leg w/ Ulcer of Calf
- ;;^UTILITY(U,$J,358.3,32044,1,4,0)
- ;;=4^I70.542
- ;;^UTILITY(U,$J,358.3,32044,2)
- ;;=^5007710
- ;;^UTILITY(U,$J,358.3,32045,0)
- ;;=I70.543^^182^1981^57
- ;;^UTILITY(U,$J,358.3,32045,1,0)
+ ;;^UTILITY(U,$J,358.3,30890,1,3,0)
+ ;;=3^Personality Change d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,30890,1,4,0)
+ ;;=4^F07.0
+ ;;^UTILITY(U,$J,358.3,30890,2)
+ ;;=^5003063
+ ;;^UTILITY(U,$J,358.3,30891,0)
+ ;;=Z91.49^^123^1543^12
+ ;;^UTILITY(U,$J,358.3,30891,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32045,1,3,0)
- ;;=3^Athscl Nonaut Bio Bypass of Left Leg w/ Ulcer of Ankle
- ;;^UTILITY(U,$J,358.3,32045,1,4,0)
- ;;=4^I70.543
- ;;^UTILITY(U,$J,358.3,32045,2)
- ;;=^5007711
- ;;^UTILITY(U,$J,358.3,32046,0)
- ;;=I70.544^^182^1981^58
- ;;^UTILITY(U,$J,358.3,32046,1,0)
+ ;;^UTILITY(U,$J,358.3,30891,1,3,0)
+ ;;=3^Personal Hx of Psychological Trauma
+ ;;^UTILITY(U,$J,358.3,30891,1,4,0)
+ ;;=4^Z91.49
+ ;;^UTILITY(U,$J,358.3,30891,2)
+ ;;=^5063623
+ ;;^UTILITY(U,$J,358.3,30892,0)
+ ;;=Z91.5^^123^1543^13
+ ;;^UTILITY(U,$J,358.3,30892,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32046,1,3,0)
- ;;=3^Athscl Nonaut Bio Bypass of Left Leg w/ Ulcer of Heel/Midfoot
+ ;;^UTILITY(U,$J,358.3,30892,1,3,0)
+ ;;=3^Personal Hx of Self-Harm
+ ;;^UTILITY(U,$J,358.3,30892,1,4,0)
+ ;;=4^Z91.5
+ ;;^UTILITY(U,$J,358.3,30892,2)
+ ;;=^5063624
+ ;;^UTILITY(U,$J,358.3,30893,0)
+ ;;=Z91.82^^123^1543^11
+ ;;^UTILITY(U,$J,358.3,30893,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30893,1,3,0)
+ ;;=3^Personal Hx of Military Deployment
+ ;;^UTILITY(U,$J,358.3,30893,1,4,0)
+ ;;=4^Z91.82

@@ -1,124 +1,138 @@
-IBDEI1YP ; ; 06-AUG-2015
+IBDEI1YP ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34412,0)
- ;;=S72.365S^^183^2019^79
- ;;^UTILITY(U,$J,358.3,34412,1,0)
+ ;;^UTILITY(U,$J,358.3,33301,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34412,1,3,0)
- ;;=3^Nondisp segmental fx shaft of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34412,1,4,0)
- ;;=4^S72.365S
- ;;^UTILITY(U,$J,358.3,34412,2)
- ;;=^5038607
- ;;^UTILITY(U,$J,358.3,34413,0)
- ;;=S72.421S^^183^2019^18
- ;;^UTILITY(U,$J,358.3,34413,1,0)
+ ;;^UTILITY(U,$J,358.3,33301,1,3,0)
+ ;;=3^Irritant Contact Dermatitis,Unspec
+ ;;^UTILITY(U,$J,358.3,33301,1,4,0)
+ ;;=4^L24.9
+ ;;^UTILITY(U,$J,358.3,33301,2)
+ ;;=^5009136
+ ;;^UTILITY(U,$J,358.3,33302,0)
+ ;;=L25.9^^131^1669^115
+ ;;^UTILITY(U,$J,358.3,33302,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34413,1,3,0)
- ;;=3^Displaced lateral condyle fx of right femur, sequela
- ;;^UTILITY(U,$J,358.3,34413,1,4,0)
- ;;=4^S72.421S
- ;;^UTILITY(U,$J,358.3,34413,2)
- ;;=^5038771
- ;;^UTILITY(U,$J,358.3,34414,0)
- ;;=S72.422S^^183^2019^17
- ;;^UTILITY(U,$J,358.3,34414,1,0)
+ ;;^UTILITY(U,$J,358.3,33302,1,3,0)
+ ;;=3^Contact Dermatitis,Unspec
+ ;;^UTILITY(U,$J,358.3,33302,1,4,0)
+ ;;=4^L25.9
+ ;;^UTILITY(U,$J,358.3,33302,2)
+ ;;=^5133647
+ ;;^UTILITY(U,$J,358.3,33303,0)
+ ;;=L26.^^131^1669^148
+ ;;^UTILITY(U,$J,358.3,33303,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34414,1,3,0)
- ;;=3^Displaced lateral condyle fx of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34414,1,4,0)
- ;;=4^S72.422S
- ;;^UTILITY(U,$J,358.3,34414,2)
- ;;=^5038787
- ;;^UTILITY(U,$J,358.3,34415,0)
- ;;=S72.424S^^183^2019^64
- ;;^UTILITY(U,$J,358.3,34415,1,0)
+ ;;^UTILITY(U,$J,358.3,33303,1,3,0)
+ ;;=3^Exfoliative Dermatitis
+ ;;^UTILITY(U,$J,358.3,33303,1,4,0)
+ ;;=4^L26.
+ ;;^UTILITY(U,$J,358.3,33303,2)
+ ;;=^263886
+ ;;^UTILITY(U,$J,358.3,33304,0)
+ ;;=L27.0^^131^1669^265
+ ;;^UTILITY(U,$J,358.3,33304,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34415,1,3,0)
- ;;=3^Nondisp lateral condyle fx of right femur, sequela
- ;;^UTILITY(U,$J,358.3,34415,1,4,0)
- ;;=4^S72.424S
- ;;^UTILITY(U,$J,358.3,34415,2)
- ;;=^5038819
- ;;^UTILITY(U,$J,358.3,34416,0)
- ;;=S72.425S^^183^2019^63
- ;;^UTILITY(U,$J,358.3,34416,1,0)
+ ;;^UTILITY(U,$J,358.3,33304,1,3,0)
+ ;;=3^Skin Eruption d/t Drugs/Meds,Generalized
+ ;;^UTILITY(U,$J,358.3,33304,1,4,0)
+ ;;=4^L27.0
+ ;;^UTILITY(U,$J,358.3,33304,2)
+ ;;=^5009144
+ ;;^UTILITY(U,$J,358.3,33305,0)
+ ;;=L27.1^^131^1669^266
+ ;;^UTILITY(U,$J,358.3,33305,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34416,1,3,0)
- ;;=3^Nondisp lateral condyle fx of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34416,1,4,0)
- ;;=4^S72.425S
- ;;^UTILITY(U,$J,358.3,34416,2)
- ;;=^5038835
- ;;^UTILITY(U,$J,358.3,34417,0)
- ;;=S72.431S^^183^2019^26
- ;;^UTILITY(U,$J,358.3,34417,1,0)
+ ;;^UTILITY(U,$J,358.3,33305,1,3,0)
+ ;;=3^Skin Eruption d/t Drugs/Meds,Localized
+ ;;^UTILITY(U,$J,358.3,33305,1,4,0)
+ ;;=4^L27.1
+ ;;^UTILITY(U,$J,358.3,33305,2)
+ ;;=^5009145
+ ;;^UTILITY(U,$J,358.3,33306,0)
+ ;;=L29.0^^131^1669^250
+ ;;^UTILITY(U,$J,358.3,33306,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34417,1,3,0)
- ;;=3^Displaced medial condyle fx of right femur, sequela
- ;;^UTILITY(U,$J,358.3,34417,1,4,0)
- ;;=4^S72.431S
- ;;^UTILITY(U,$J,358.3,34417,2)
- ;;=^5038867
- ;;^UTILITY(U,$J,358.3,34418,0)
- ;;=S72.432S^^183^2019^25
- ;;^UTILITY(U,$J,358.3,34418,1,0)
+ ;;^UTILITY(U,$J,358.3,33306,1,3,0)
+ ;;=3^Pruritus Ani
+ ;;^UTILITY(U,$J,358.3,33306,1,4,0)
+ ;;=4^L29.0
+ ;;^UTILITY(U,$J,358.3,33306,2)
+ ;;=^100061
+ ;;^UTILITY(U,$J,358.3,33307,0)
+ ;;=L29.9^^131^1669^251
+ ;;^UTILITY(U,$J,358.3,33307,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34418,1,3,0)
- ;;=3^Displaced medial condyle fx of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34418,1,4,0)
- ;;=4^S72.432S
- ;;^UTILITY(U,$J,358.3,34418,2)
- ;;=^5038883
- ;;^UTILITY(U,$J,358.3,34419,0)
- ;;=S72.434S^^183^2019^72
- ;;^UTILITY(U,$J,358.3,34419,1,0)
+ ;;^UTILITY(U,$J,358.3,33307,1,3,0)
+ ;;=3^Pruritus,Unspec
+ ;;^UTILITY(U,$J,358.3,33307,1,4,0)
+ ;;=4^L29.9
+ ;;^UTILITY(U,$J,358.3,33307,2)
+ ;;=^5009153
+ ;;^UTILITY(U,$J,358.3,33308,0)
+ ;;=L30.0^^131^1669^232
+ ;;^UTILITY(U,$J,358.3,33308,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34419,1,3,0)
- ;;=3^Nondisp medial condyle fx of right femur, sequela
- ;;^UTILITY(U,$J,358.3,34419,1,4,0)
- ;;=4^S72.434S
- ;;^UTILITY(U,$J,358.3,34419,2)
- ;;=^5038915
- ;;^UTILITY(U,$J,358.3,34420,0)
- ;;=S72.435S^^183^2019^71
- ;;^UTILITY(U,$J,358.3,34420,1,0)
+ ;;^UTILITY(U,$J,358.3,33308,1,3,0)
+ ;;=3^Nummular Dermatitis
+ ;;^UTILITY(U,$J,358.3,33308,1,4,0)
+ ;;=4^L30.0
+ ;;^UTILITY(U,$J,358.3,33308,2)
+ ;;=^186823
+ ;;^UTILITY(U,$J,358.3,33309,0)
+ ;;=L30.1^^131^1669^140
+ ;;^UTILITY(U,$J,358.3,33309,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34420,1,3,0)
- ;;=3^Nondisp medial condyle fx of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34420,1,4,0)
- ;;=4^S72.435S
- ;;^UTILITY(U,$J,358.3,34420,2)
- ;;=^5038931
- ;;^UTILITY(U,$J,358.3,34421,0)
- ;;=S72.441S^^183^2019^24
- ;;^UTILITY(U,$J,358.3,34421,1,0)
+ ;;^UTILITY(U,$J,358.3,33309,1,3,0)
+ ;;=3^Dyshidrosis
+ ;;^UTILITY(U,$J,358.3,33309,1,4,0)
+ ;;=4^L30.1
+ ;;^UTILITY(U,$J,358.3,33309,2)
+ ;;=^5009154
+ ;;^UTILITY(U,$J,358.3,33310,0)
+ ;;=L30.2^^131^1669^132
+ ;;^UTILITY(U,$J,358.3,33310,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34421,1,3,0)
- ;;=3^Displaced lower epiphysis fx of right femur, sequela
- ;;^UTILITY(U,$J,358.3,34421,1,4,0)
- ;;=4^S72.441S
- ;;^UTILITY(U,$J,358.3,34421,2)
- ;;=^5038963
- ;;^UTILITY(U,$J,358.3,34422,0)
- ;;=S72.442S^^183^2019^23
- ;;^UTILITY(U,$J,358.3,34422,1,0)
+ ;;^UTILITY(U,$J,358.3,33310,1,3,0)
+ ;;=3^Cutaneous Autosensitization
+ ;;^UTILITY(U,$J,358.3,33310,1,4,0)
+ ;;=4^L30.2
+ ;;^UTILITY(U,$J,358.3,33310,2)
+ ;;=^5009155
+ ;;^UTILITY(U,$J,358.3,33311,0)
+ ;;=L30.4^^131^1669^144
+ ;;^UTILITY(U,$J,358.3,33311,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34422,1,3,0)
- ;;=3^Displaced lower epiphysis fx of left femur, sequela
- ;;^UTILITY(U,$J,358.3,34422,1,4,0)
- ;;=4^S72.442S
- ;;^UTILITY(U,$J,358.3,34422,2)
- ;;=^5136242
- ;;^UTILITY(U,$J,358.3,34423,0)
- ;;=S72.444S^^183^2019^70
- ;;^UTILITY(U,$J,358.3,34423,1,0)
+ ;;^UTILITY(U,$J,358.3,33311,1,3,0)
+ ;;=3^Erythema Intertrigo
+ ;;^UTILITY(U,$J,358.3,33311,1,4,0)
+ ;;=4^L30.4
+ ;;^UTILITY(U,$J,358.3,33311,2)
+ ;;=^5009157
+ ;;^UTILITY(U,$J,358.3,33312,0)
+ ;;=L30.8^^131^1669^135
+ ;;^UTILITY(U,$J,358.3,33312,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34423,1,3,0)
- ;;=3^Nondisp lower epiphy fx of right femur, sequela
- ;;^UTILITY(U,$J,358.3,34423,1,4,0)
- ;;=4^S72.444S
- ;;^UTILITY(U,$J,358.3,34423,2)
- ;;=^5038984
+ ;;^UTILITY(U,$J,358.3,33312,1,3,0)
+ ;;=3^Dermatitis NEC
+ ;;^UTILITY(U,$J,358.3,33312,1,4,0)
+ ;;=4^L30.8
+ ;;^UTILITY(U,$J,358.3,33312,2)
+ ;;=^5009158
+ ;;^UTILITY(U,$J,358.3,33313,0)
+ ;;=L30.9^^131^1669^136
+ ;;^UTILITY(U,$J,358.3,33313,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33313,1,3,0)
+ ;;=3^Dermatitis,Unspec
+ ;;^UTILITY(U,$J,358.3,33313,1,4,0)
+ ;;=4^L30.9
+ ;;^UTILITY(U,$J,358.3,33313,2)
+ ;;=^5009159
+ ;;^UTILITY(U,$J,358.3,33314,0)
+ ;;=L40.0^^131^1669^253
+ ;;^UTILITY(U,$J,358.3,33314,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33314,1,3,0)
+ ;;=3^Psoriasis Vulgaris

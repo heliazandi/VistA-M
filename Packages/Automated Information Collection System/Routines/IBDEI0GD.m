@@ -1,142 +1,132 @@
-IBDEI0GD ; ; 06-AUG-2015
+IBDEI0GD ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7590,1,5,0)
- ;;=5^DM Type I DM W/O Complications
- ;;^UTILITY(U,$J,358.3,7590,2)
- ;;=^33586
- ;;^UTILITY(U,$J,358.3,7591,0)
- ;;=272.0^^35^473^22
- ;;^UTILITY(U,$J,358.3,7591,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7591,1,4,0)
- ;;=4^272.0
- ;;^UTILITY(U,$J,358.3,7591,1,5,0)
- ;;=5^Hypercholesterolemia, Pure
- ;;^UTILITY(U,$J,358.3,7591,2)
- ;;=Hypercholesterolemia, Pure^59973
- ;;^UTILITY(U,$J,358.3,7592,0)
- ;;=272.1^^35^473^28
- ;;^UTILITY(U,$J,358.3,7592,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7592,1,4,0)
- ;;=4^272.1
- ;;^UTILITY(U,$J,358.3,7592,1,5,0)
- ;;=5^Hypertriglyceridemia, Pure
- ;;^UTILITY(U,$J,358.3,7592,2)
- ;;=Hypertriglyceridemia, Pure^101303
- ;;^UTILITY(U,$J,358.3,7593,0)
- ;;=272.2^^35^473^24
- ;;^UTILITY(U,$J,358.3,7593,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7593,1,4,0)
- ;;=4^272.2
- ;;^UTILITY(U,$J,358.3,7593,1,5,0)
- ;;=5^Hyperlipidemia, Mixed
- ;;^UTILITY(U,$J,358.3,7593,2)
- ;;=^78424
- ;;^UTILITY(U,$J,358.3,7594,0)
- ;;=275.42^^35^473^21
- ;;^UTILITY(U,$J,358.3,7594,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7594,1,4,0)
- ;;=4^275.42
- ;;^UTILITY(U,$J,358.3,7594,1,5,0)
- ;;=5^Hypercalcemia
- ;;^UTILITY(U,$J,358.3,7594,2)
- ;;=^59932
- ;;^UTILITY(U,$J,358.3,7595,0)
- ;;=275.41^^35^473^29
- ;;^UTILITY(U,$J,358.3,7595,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7595,1,4,0)
- ;;=4^275.41
- ;;^UTILITY(U,$J,358.3,7595,1,5,0)
- ;;=5^Hypocalcemia
- ;;^UTILITY(U,$J,358.3,7595,2)
- ;;=^60542
- ;;^UTILITY(U,$J,358.3,7596,0)
- ;;=276.7^^35^473^23
- ;;^UTILITY(U,$J,358.3,7596,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7596,1,4,0)
- ;;=4^276.7
- ;;^UTILITY(U,$J,358.3,7596,1,5,0)
- ;;=5^Hyperkalemia
- ;;^UTILITY(U,$J,358.3,7596,2)
- ;;=^60042
- ;;^UTILITY(U,$J,358.3,7597,0)
- ;;=275.2^^35^473^19
- ;;^UTILITY(U,$J,358.3,7597,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7597,1,4,0)
- ;;=4^275.2
- ;;^UTILITY(U,$J,358.3,7597,1,5,0)
- ;;=5^Hyper Or Hypomagnesemia
- ;;^UTILITY(U,$J,358.3,7597,2)
- ;;=^35626
- ;;^UTILITY(U,$J,358.3,7598,0)
- ;;=276.0^^35^473^25
- ;;^UTILITY(U,$J,358.3,7598,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7598,1,4,0)
- ;;=4^276.0
- ;;^UTILITY(U,$J,358.3,7598,1,5,0)
- ;;=5^Hypernatremia
- ;;^UTILITY(U,$J,358.3,7598,2)
- ;;=^60144
- ;;^UTILITY(U,$J,358.3,7599,0)
- ;;=276.1^^35^473^32
- ;;^UTILITY(U,$J,358.3,7599,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7599,1,4,0)
- ;;=4^276.1
- ;;^UTILITY(U,$J,358.3,7599,1,5,0)
- ;;=5^Hyponatremia
- ;;^UTILITY(U,$J,358.3,7599,2)
- ;;=Hyponatremia^60722
- ;;^UTILITY(U,$J,358.3,7600,0)
- ;;=275.3^^35^473^20
- ;;^UTILITY(U,$J,358.3,7600,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7600,1,4,0)
- ;;=4^275.3
- ;;^UTILITY(U,$J,358.3,7600,1,5,0)
- ;;=5^Hyper Or Hypophosphatemia
- ;;^UTILITY(U,$J,358.3,7600,2)
- ;;=^93796
- ;;^UTILITY(U,$J,358.3,7601,0)
- ;;=240.0^^35^473^14
- ;;^UTILITY(U,$J,358.3,7601,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7601,1,4,0)
- ;;=4^240.0
- ;;^UTILITY(U,$J,358.3,7601,1,5,0)
- ;;=5^Goiter, Simple
- ;;^UTILITY(U,$J,358.3,7601,2)
- ;;=^259806
- ;;^UTILITY(U,$J,358.3,7602,0)
- ;;=241.1^^35^473^13
- ;;^UTILITY(U,$J,358.3,7602,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7602,1,4,0)
- ;;=4^241.1
- ;;^UTILITY(U,$J,358.3,7602,1,5,0)
- ;;=5^Goiter, Nontox, Multinod
- ;;^UTILITY(U,$J,358.3,7602,2)
- ;;=^267790
- ;;^UTILITY(U,$J,358.3,7603,0)
- ;;=241.0^^35^473^50
- ;;^UTILITY(U,$J,358.3,7603,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,7603,1,4,0)
- ;;=4^241.0
- ;;^UTILITY(U,$J,358.3,7603,1,5,0)
- ;;=5^Thyroid Nodule, Nontoxic
- ;;^UTILITY(U,$J,358.3,7603,2)
- ;;=^83865
- ;;^UTILITY(U,$J,358.3,7604,0)
- ;;=242.00^^35^473^15
- ;;^UTILITY(U,$J,358.3,7604,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,7566,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7566,1,3,0)
+ ;;=3^Cocaine Dependence,Uncompicated
+ ;;^UTILITY(U,$J,358.3,7566,1,4,0)
+ ;;=4^F14.20
+ ;;^UTILITY(U,$J,358.3,7566,2)
+ ;;=^5003253
+ ;;^UTILITY(U,$J,358.3,7567,0)
+ ;;=F10.120^^30^410^1
+ ;;^UTILITY(U,$J,358.3,7567,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7567,1,3,0)
+ ;;=3^Alcohol Abuse w/ Intoxication,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,7567,1,4,0)
+ ;;=4^F10.120
+ ;;^UTILITY(U,$J,358.3,7567,2)
+ ;;=^5003069
+ ;;^UTILITY(U,$J,358.3,7568,0)
+ ;;=F10.10^^30^410^2
+ ;;^UTILITY(U,$J,358.3,7568,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7568,1,3,0)
+ ;;=3^Alcohol Abuse,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,7568,1,4,0)
+ ;;=4^F10.10
+ ;;^UTILITY(U,$J,358.3,7568,2)
+ ;;=^5003068
+ ;;^UTILITY(U,$J,358.3,7569,0)
+ ;;=F17.201^^30^410^28
+ ;;^UTILITY(U,$J,358.3,7569,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7569,1,3,0)
+ ;;=3^Nicotine Dependence In Remission,Unspec
+ ;;^UTILITY(U,$J,358.3,7569,1,4,0)
+ ;;=4^F17.201
+ ;;^UTILITY(U,$J,358.3,7569,2)
+ ;;=^5003361
+ ;;^UTILITY(U,$J,358.3,7570,0)
+ ;;=F17.210^^30^410^27
+ ;;^UTILITY(U,$J,358.3,7570,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7570,1,3,0)
+ ;;=3^Nicotine Dependence Cigarettes,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,7570,1,4,0)
+ ;;=4^F17.210
+ ;;^UTILITY(U,$J,358.3,7570,2)
+ ;;=^5003365
+ ;;^UTILITY(U,$J,358.3,7571,0)
+ ;;=F17.291^^30^410^29
+ ;;^UTILITY(U,$J,358.3,7571,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7571,1,3,0)
+ ;;=3^Nicotine Dependence Oth Tobacco Product,In Remission
+ ;;^UTILITY(U,$J,358.3,7571,1,4,0)
+ ;;=4^F17.291
+ ;;^UTILITY(U,$J,358.3,7571,2)
+ ;;=^5003376
+ ;;^UTILITY(U,$J,358.3,7572,0)
+ ;;=F17.290^^30^410^30
+ ;;^UTILITY(U,$J,358.3,7572,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7572,1,3,0)
+ ;;=3^Nicotine Dependence Oth Tobacco Product,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,7572,1,4,0)
+ ;;=4^F17.290
+ ;;^UTILITY(U,$J,358.3,7572,2)
+ ;;=^5003375
+ ;;^UTILITY(U,$J,358.3,7573,0)
+ ;;=F17.221^^30^410^24
+ ;;^UTILITY(U,$J,358.3,7573,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7573,1,3,0)
+ ;;=3^Nicotine Dependence Chewing Tobacco,In Remission
+ ;;^UTILITY(U,$J,358.3,7573,1,4,0)
+ ;;=4^F17.221
+ ;;^UTILITY(U,$J,358.3,7573,2)
+ ;;=^5003371
+ ;;^UTILITY(U,$J,358.3,7574,0)
+ ;;=F17.220^^30^410^25
+ ;;^UTILITY(U,$J,358.3,7574,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7574,1,3,0)
+ ;;=3^Nicotine Dependence Chewing Tobacco,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,7574,1,4,0)
+ ;;=4^F17.220
+ ;;^UTILITY(U,$J,358.3,7574,2)
+ ;;=^5003370
+ ;;^UTILITY(U,$J,358.3,7575,0)
+ ;;=F17.211^^30^410^26
+ ;;^UTILITY(U,$J,358.3,7575,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7575,1,3,0)
+ ;;=3^Nicotine Dependence Cigarettes,In Remission
+ ;;^UTILITY(U,$J,358.3,7575,1,4,0)
+ ;;=4^F17.211
+ ;;^UTILITY(U,$J,358.3,7575,2)
+ ;;=^5003366
+ ;;^UTILITY(U,$J,358.3,7576,0)
+ ;;=F17.200^^30^410^31
+ ;;^UTILITY(U,$J,358.3,7576,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7576,1,3,0)
+ ;;=3^Nicotine Dependence,Unspec,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,7576,1,4,0)
+ ;;=4^F17.200
+ ;;^UTILITY(U,$J,358.3,7576,2)
+ ;;=^5003360
+ ;;^UTILITY(U,$J,358.3,7577,0)
+ ;;=F11.120^^30^410^32
+ ;;^UTILITY(U,$J,358.3,7577,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7577,1,3,0)
+ ;;=3^Opioid Abuse w/ Intoxication,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,7577,1,4,0)
+ ;;=4^F11.120
+ ;;^UTILITY(U,$J,358.3,7577,2)
+ ;;=^5003115
+ ;;^UTILITY(U,$J,358.3,7578,0)
+ ;;=F11.10^^30^410^34
+ ;;^UTILITY(U,$J,358.3,7578,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,7578,1,3,0)
+ ;;=3^Opioid Abuse,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,7578,1,4,0)
+ ;;=4^F11.10
+ ;;^UTILITY(U,$J,358.3,7578,2)
+ ;;=^5003114

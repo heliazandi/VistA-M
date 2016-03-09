@@ -1,130 +1,138 @@
-IBDEI1SS ; ; 06-AUG-2015
+IBDEI1SS ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,31706,0)
- ;;=F93.0^^180^1963^17
- ;;^UTILITY(U,$J,358.3,31706,1,0)
+ ;;^UTILITY(U,$J,358.3,30550,1,4,0)
+ ;;=4^K83.9
+ ;;^UTILITY(U,$J,358.3,30550,2)
+ ;;=^5008881
+ ;;^UTILITY(U,$J,358.3,30551,0)
+ ;;=K86.1^^121^1520^6
+ ;;^UTILITY(U,$J,358.3,30551,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31706,1,3,0)
- ;;=3^Separation anxiety disorder of childhood
- ;;^UTILITY(U,$J,358.3,31706,1,4,0)
- ;;=4^F93.0
- ;;^UTILITY(U,$J,358.3,31706,2)
- ;;=^5003702
- ;;^UTILITY(U,$J,358.3,31707,0)
- ;;=F43.22^^180^1963^2
- ;;^UTILITY(U,$J,358.3,31707,1,0)
+ ;;^UTILITY(U,$J,358.3,30551,1,3,0)
+ ;;=3^Pancreatitis, Chronic
+ ;;^UTILITY(U,$J,358.3,30551,1,4,0)
+ ;;=4^K86.1
+ ;;^UTILITY(U,$J,358.3,30551,2)
+ ;;=^5008889
+ ;;^UTILITY(U,$J,358.3,30552,0)
+ ;;=K86.3^^121^1520^8
+ ;;^UTILITY(U,$J,358.3,30552,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31707,1,3,0)
- ;;=3^Adjustment disorder with anxiety
- ;;^UTILITY(U,$J,358.3,31707,1,4,0)
- ;;=4^F43.22
- ;;^UTILITY(U,$J,358.3,31707,2)
- ;;=^331949
- ;;^UTILITY(U,$J,358.3,31708,0)
- ;;=F43.23^^180^1963^5
- ;;^UTILITY(U,$J,358.3,31708,1,0)
+ ;;^UTILITY(U,$J,358.3,30552,1,3,0)
+ ;;=3^Pseudocyst of Pancreas
+ ;;^UTILITY(U,$J,358.3,30552,1,4,0)
+ ;;=4^K86.3
+ ;;^UTILITY(U,$J,358.3,30552,2)
+ ;;=^5008891
+ ;;^UTILITY(U,$J,358.3,30553,0)
+ ;;=G04.91^^121^1521^31
+ ;;^UTILITY(U,$J,358.3,30553,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31708,1,3,0)
- ;;=3^Adjustment disorder with mixed anxiety and depressed mood
- ;;^UTILITY(U,$J,358.3,31708,1,4,0)
- ;;=4^F43.23
- ;;^UTILITY(U,$J,358.3,31708,2)
- ;;=^331950
- ;;^UTILITY(U,$J,358.3,31709,0)
- ;;=F43.24^^180^1963^4
- ;;^UTILITY(U,$J,358.3,31709,1,0)
+ ;;^UTILITY(U,$J,358.3,30553,1,3,0)
+ ;;=3^Myelitis,Unspec
+ ;;^UTILITY(U,$J,358.3,30553,1,4,0)
+ ;;=4^G04.91
+ ;;^UTILITY(U,$J,358.3,30553,2)
+ ;;=^5003742
+ ;;^UTILITY(U,$J,358.3,30554,0)
+ ;;=G95.0^^121^1521^49
+ ;;^UTILITY(U,$J,358.3,30554,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31709,1,3,0)
- ;;=3^Adjustment disorder with disturbance of conduct
- ;;^UTILITY(U,$J,358.3,31709,1,4,0)
- ;;=4^F43.24
- ;;^UTILITY(U,$J,358.3,31709,2)
- ;;=^331951
- ;;^UTILITY(U,$J,358.3,31710,0)
- ;;=F43.25^^180^1963^1
- ;;^UTILITY(U,$J,358.3,31710,1,0)
+ ;;^UTILITY(U,$J,358.3,30554,1,3,0)
+ ;;=3^Syringomyelia & Syringobulbia
+ ;;^UTILITY(U,$J,358.3,30554,1,4,0)
+ ;;=4^G95.0
+ ;;^UTILITY(U,$J,358.3,30554,2)
+ ;;=^116874
+ ;;^UTILITY(U,$J,358.3,30555,0)
+ ;;=G99.0^^121^1521^1
+ ;;^UTILITY(U,$J,358.3,30555,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31710,1,3,0)
- ;;=3^Adjustment disorder w mixed disturb of emotions and conduct
- ;;^UTILITY(U,$J,358.3,31710,1,4,0)
- ;;=4^F43.25
- ;;^UTILITY(U,$J,358.3,31710,2)
- ;;=^331952
- ;;^UTILITY(U,$J,358.3,31711,0)
- ;;=F43.10^^180^1963^15
- ;;^UTILITY(U,$J,358.3,31711,1,0)
+ ;;^UTILITY(U,$J,358.3,30555,1,3,0)
+ ;;=3^Autonomic Neuropathy
+ ;;^UTILITY(U,$J,358.3,30555,1,4,0)
+ ;;=4^G99.0
+ ;;^UTILITY(U,$J,358.3,30555,2)
+ ;;=^5004215
+ ;;^UTILITY(U,$J,358.3,30556,0)
+ ;;=G90.50^^121^1521^5
+ ;;^UTILITY(U,$J,358.3,30556,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31711,1,3,0)
- ;;=3^Post-traumatic stress disorder, unspecified
- ;;^UTILITY(U,$J,358.3,31711,1,4,0)
- ;;=4^F43.10
- ;;^UTILITY(U,$J,358.3,31711,2)
- ;;=^5003570
- ;;^UTILITY(U,$J,358.3,31712,0)
- ;;=F43.12^^180^1963^14
- ;;^UTILITY(U,$J,358.3,31712,1,0)
+ ;;^UTILITY(U,$J,358.3,30556,1,3,0)
+ ;;=3^Complex Regional Pain Syndrome I,Unspec
+ ;;^UTILITY(U,$J,358.3,30556,1,4,0)
+ ;;=4^G90.50
+ ;;^UTILITY(U,$J,358.3,30556,2)
+ ;;=^5004163
+ ;;^UTILITY(U,$J,358.3,30557,0)
+ ;;=G83.4^^121^1521^4
+ ;;^UTILITY(U,$J,358.3,30557,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31712,1,3,0)
- ;;=3^Post-traumatic stress disorder, chronic
- ;;^UTILITY(U,$J,358.3,31712,1,4,0)
- ;;=4^F43.12
- ;;^UTILITY(U,$J,358.3,31712,2)
- ;;=^5003572
- ;;^UTILITY(U,$J,358.3,31713,0)
- ;;=F43.8^^180^1963^16
- ;;^UTILITY(U,$J,358.3,31713,1,0)
+ ;;^UTILITY(U,$J,358.3,30557,1,3,0)
+ ;;=3^Cauda Equina Syndrome
+ ;;^UTILITY(U,$J,358.3,30557,1,4,0)
+ ;;=4^G83.4
+ ;;^UTILITY(U,$J,358.3,30557,2)
+ ;;=^265172
+ ;;^UTILITY(U,$J,358.3,30558,0)
+ ;;=G50.0^^121^1521^50
+ ;;^UTILITY(U,$J,358.3,30558,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31713,1,3,0)
- ;;=3^Reactions to severe stress NEC
- ;;^UTILITY(U,$J,358.3,31713,1,4,0)
- ;;=4^F43.8
- ;;^UTILITY(U,$J,358.3,31713,2)
- ;;=^5003575
- ;;^UTILITY(U,$J,358.3,31714,0)
- ;;=F43.20^^180^1963^6
- ;;^UTILITY(U,$J,358.3,31714,1,0)
+ ;;^UTILITY(U,$J,358.3,30558,1,3,0)
+ ;;=3^Trigeminal Neuralgia
+ ;;^UTILITY(U,$J,358.3,30558,1,4,0)
+ ;;=4^G50.0
+ ;;^UTILITY(U,$J,358.3,30558,2)
+ ;;=^121978
+ ;;^UTILITY(U,$J,358.3,30559,0)
+ ;;=G51.9^^121^1521^17
+ ;;^UTILITY(U,$J,358.3,30559,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31714,1,3,0)
- ;;=3^Adjustment disorder, unspecified
- ;;^UTILITY(U,$J,358.3,31714,1,4,0)
- ;;=4^F43.20
- ;;^UTILITY(U,$J,358.3,31714,2)
- ;;=^5003573
- ;;^UTILITY(U,$J,358.3,31715,0)
- ;;=F07.0^^180^1963^13
- ;;^UTILITY(U,$J,358.3,31715,1,0)
+ ;;^UTILITY(U,$J,358.3,30559,1,3,0)
+ ;;=3^Facial Nerve Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30559,1,4,0)
+ ;;=4^G51.9
+ ;;^UTILITY(U,$J,358.3,30559,2)
+ ;;=^5003998
+ ;;^UTILITY(U,$J,358.3,30560,0)
+ ;;=G52.9^^121^1521^6
+ ;;^UTILITY(U,$J,358.3,30560,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31715,1,3,0)
- ;;=3^Personality change due to known physiological condition
- ;;^UTILITY(U,$J,358.3,31715,1,4,0)
- ;;=4^F07.0
- ;;^UTILITY(U,$J,358.3,31715,2)
- ;;=^5003063
- ;;^UTILITY(U,$J,358.3,31716,0)
- ;;=F32.9^^180^1963^12
- ;;^UTILITY(U,$J,358.3,31716,1,0)
+ ;;^UTILITY(U,$J,358.3,30560,1,3,0)
+ ;;=3^Cranial Nerve Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30560,1,4,0)
+ ;;=4^G52.9
+ ;;^UTILITY(U,$J,358.3,30560,2)
+ ;;=^5004005
+ ;;^UTILITY(U,$J,358.3,30561,0)
+ ;;=G54.9^^121^1521^41
+ ;;^UTILITY(U,$J,358.3,30561,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31716,1,3,0)
- ;;=3^Major depressive disorder, single episode, unspecified
- ;;^UTILITY(U,$J,358.3,31716,1,4,0)
- ;;=4^F32.9
- ;;^UTILITY(U,$J,358.3,31716,2)
- ;;=^5003528
- ;;^UTILITY(U,$J,358.3,31717,0)
- ;;=F98.5^^180^1964^1
- ;;^UTILITY(U,$J,358.3,31717,1,0)
+ ;;^UTILITY(U,$J,358.3,30561,1,3,0)
+ ;;=3^Nerve Root & Plexus Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30561,1,4,0)
+ ;;=4^G54.9
+ ;;^UTILITY(U,$J,358.3,30561,2)
+ ;;=^5004015
+ ;;^UTILITY(U,$J,358.3,30562,0)
+ ;;=G56.01^^121^1521^3
+ ;;^UTILITY(U,$J,358.3,30562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31717,1,3,0)
- ;;=3^Adult onset fluency disorder
- ;;^UTILITY(U,$J,358.3,31717,1,4,0)
- ;;=4^F98.5
- ;;^UTILITY(U,$J,358.3,31717,2)
- ;;=^5003717
- ;;^UTILITY(U,$J,358.3,31718,0)
- ;;=R47.01^^180^1964^2
- ;;^UTILITY(U,$J,358.3,31718,1,0)
+ ;;^UTILITY(U,$J,358.3,30562,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,30562,1,4,0)
+ ;;=4^G56.01
+ ;;^UTILITY(U,$J,358.3,30562,2)
+ ;;=^5004018
+ ;;^UTILITY(U,$J,358.3,30563,0)
+ ;;=G56.02^^121^1521^2
+ ;;^UTILITY(U,$J,358.3,30563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,31718,1,3,0)
- ;;=3^Aphasia
+ ;;^UTILITY(U,$J,358.3,30563,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,30563,1,4,0)
+ ;;=4^G56.02
+ ;;^UTILITY(U,$J,358.3,30563,2)
+ ;;=^5004019

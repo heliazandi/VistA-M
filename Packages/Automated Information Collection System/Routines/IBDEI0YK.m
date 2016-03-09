@@ -1,128 +1,134 @@
-IBDEI0YK ; ; 06-AUG-2015
+IBDEI0YK ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16849,2)
- ;;=Aortic and Mitral Stenosis/Regurg^269584
- ;;^UTILITY(U,$J,358.3,16850,0)
- ;;=507.0^^87^1024^1
- ;;^UTILITY(U,$J,358.3,16850,1,0)
+ ;;^UTILITY(U,$J,358.3,16228,0)
+ ;;=Z85.3^^61^728^6
+ ;;^UTILITY(U,$J,358.3,16228,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16850,1,3,0)
- ;;=3^507.0
- ;;^UTILITY(U,$J,358.3,16850,1,4,0)
- ;;=4^Aspriation Pneumonitia/Pneumonia
- ;;^UTILITY(U,$J,358.3,16850,2)
- ;;=Aspriation Pneumonitia/Pneumonia^95581
- ;;^UTILITY(U,$J,358.3,16851,0)
- ;;=495.2^^87^1024^2
- ;;^UTILITY(U,$J,358.3,16851,1,0)
+ ;;^UTILITY(U,$J,358.3,16228,1,3,0)
+ ;;=3^Personal Hx Malig Neop Breast
+ ;;^UTILITY(U,$J,358.3,16228,1,4,0)
+ ;;=4^Z85.3
+ ;;^UTILITY(U,$J,358.3,16228,2)
+ ;;=^5063416
+ ;;^UTILITY(U,$J,358.3,16229,0)
+ ;;=Z85.840^^61^728^12
+ ;;^UTILITY(U,$J,358.3,16229,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16851,1,3,0)
- ;;=3^495.2
- ;;^UTILITY(U,$J,358.3,16851,1,4,0)
- ;;=4^Bird Fanciers Lung
- ;;^UTILITY(U,$J,358.3,16851,2)
- ;;=Bird Fanciers Lung^14840
- ;;^UTILITY(U,$J,358.3,16852,0)
- ;;=506.4^^87^1024^7
- ;;^UTILITY(U,$J,358.3,16852,1,0)
+ ;;^UTILITY(U,$J,358.3,16229,1,3,0)
+ ;;=3^Personal Hx Malig Neop Eye
+ ;;^UTILITY(U,$J,358.3,16229,1,4,0)
+ ;;=4^Z85.840
+ ;;^UTILITY(U,$J,358.3,16229,2)
+ ;;=^5063446
+ ;;^UTILITY(U,$J,358.3,16230,0)
+ ;;=Z85.028^^61^728^28
+ ;;^UTILITY(U,$J,358.3,16230,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16852,1,3,0)
- ;;=3^506.4
- ;;^UTILITY(U,$J,358.3,16852,1,4,0)
- ;;=4^Interstitial Lung Disease, Chemical
- ;;^UTILITY(U,$J,358.3,16852,2)
- ;;=Interstitial Lung Disease, Chemical^269978
- ;;^UTILITY(U,$J,358.3,16853,0)
- ;;=515.^^87^1024^6
- ;;^UTILITY(U,$J,358.3,16853,1,0)
+ ;;^UTILITY(U,$J,358.3,16230,1,3,0)
+ ;;=3^Personal Hx Malig Neop Stomach
+ ;;^UTILITY(U,$J,358.3,16230,1,4,0)
+ ;;=4^Z85.028
+ ;;^UTILITY(U,$J,358.3,16230,2)
+ ;;=^5063397
+ ;;^UTILITY(U,$J,358.3,16231,0)
+ ;;=Z85.09^^61^728^9
+ ;;^UTILITY(U,$J,358.3,16231,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16853,1,3,0)
- ;;=3^515.
- ;;^UTILITY(U,$J,358.3,16853,1,4,0)
- ;;=4^Interstital Lung Disease, Unspec
- ;;^UTILITY(U,$J,358.3,16853,2)
- ;;=Interstital Lung Disease, Unspec^101072
- ;;^UTILITY(U,$J,358.3,16854,0)
- ;;=495.9^^87^1024^4
- ;;^UTILITY(U,$J,358.3,16854,1,0)
+ ;;^UTILITY(U,$J,358.3,16231,1,3,0)
+ ;;=3^Personal Hx Malig Neop Digestive Organs
+ ;;^UTILITY(U,$J,358.3,16231,1,4,0)
+ ;;=4^Z85.09
+ ;;^UTILITY(U,$J,358.3,16231,2)
+ ;;=^5063406
+ ;;^UTILITY(U,$J,358.3,16232,0)
+ ;;=Z85.528^^61^728^14
+ ;;^UTILITY(U,$J,358.3,16232,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16854,1,3,0)
- ;;=3^495.9
- ;;^UTILITY(U,$J,358.3,16854,1,4,0)
- ;;=4^Hypersensitivity Pneumonitis
- ;;^UTILITY(U,$J,358.3,16854,2)
- ;;=Hypersensitivity Pneumonitis^5656
- ;;^UTILITY(U,$J,358.3,16855,0)
- ;;=495.0^^87^1024^3
- ;;^UTILITY(U,$J,358.3,16855,1,0)
+ ;;^UTILITY(U,$J,358.3,16232,1,3,0)
+ ;;=3^Personal Hx Malig Neop Kidney
+ ;;^UTILITY(U,$J,358.3,16232,1,4,0)
+ ;;=4^Z85.528
+ ;;^UTILITY(U,$J,358.3,16232,2)
+ ;;=^5063430
+ ;;^UTILITY(U,$J,358.3,16233,0)
+ ;;=Z85.05^^61^728^17
+ ;;^UTILITY(U,$J,358.3,16233,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16855,1,3,0)
- ;;=3^495.0
- ;;^UTILITY(U,$J,358.3,16855,1,4,0)
- ;;=4^Farmer's Lung
- ;;^UTILITY(U,$J,358.3,16855,2)
- ;;=Farmer's Lung^44970
- ;;^UTILITY(U,$J,358.3,16856,0)
- ;;=507.1^^87^1024^8
- ;;^UTILITY(U,$J,358.3,16856,1,0)
+ ;;^UTILITY(U,$J,358.3,16233,1,3,0)
+ ;;=3^Personal Hx Malig Neop Liver
+ ;;^UTILITY(U,$J,358.3,16233,1,4,0)
+ ;;=4^Z85.05
+ ;;^UTILITY(U,$J,358.3,16233,2)
+ ;;=^5063402
+ ;;^UTILITY(U,$J,358.3,16234,0)
+ ;;=Z85.43^^61^728^21
+ ;;^UTILITY(U,$J,358.3,16234,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16856,1,3,0)
- ;;=3^507.1
- ;;^UTILITY(U,$J,358.3,16856,1,4,0)
- ;;=4^Lipoid Pneumonia
- ;;^UTILITY(U,$J,358.3,16856,2)
- ;;=Lipoid Pneumonia^95664
- ;;^UTILITY(U,$J,358.3,16857,0)
- ;;=710.0^^87^1024^9
- ;;^UTILITY(U,$J,358.3,16857,1,0)
+ ;;^UTILITY(U,$J,358.3,16234,1,3,0)
+ ;;=3^Personal Hx Malig Neop Ovary
+ ;;^UTILITY(U,$J,358.3,16234,1,4,0)
+ ;;=4^Z85.43
+ ;;^UTILITY(U,$J,358.3,16234,2)
+ ;;=^5063420
+ ;;^UTILITY(U,$J,358.3,16235,0)
+ ;;=Z85.850^^61^728^30
+ ;;^UTILITY(U,$J,358.3,16235,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16857,1,3,0)
- ;;=3^710.0
- ;;^UTILITY(U,$J,358.3,16857,1,4,0)
- ;;=4^Lupus Pneumonitis
- ;;^UTILITY(U,$J,358.3,16857,2)
- ;;=Lupus Pneumonitis^72159^517.8
- ;;^UTILITY(U,$J,358.3,16858,0)
- ;;=516.0^^87^1024^10
- ;;^UTILITY(U,$J,358.3,16858,1,0)
+ ;;^UTILITY(U,$J,358.3,16235,1,3,0)
+ ;;=3^Personal Hx Malig Neop Thyroid
+ ;;^UTILITY(U,$J,358.3,16235,1,4,0)
+ ;;=4^Z85.850
+ ;;^UTILITY(U,$J,358.3,16235,2)
+ ;;=^5063449
+ ;;^UTILITY(U,$J,358.3,16236,0)
+ ;;=Z85.810^^61^728^31
+ ;;^UTILITY(U,$J,358.3,16236,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16858,1,3,0)
- ;;=3^516.0
- ;;^UTILITY(U,$J,358.3,16858,1,4,0)
- ;;=4^Pulmonary Alveolar Proteinosis
- ;;^UTILITY(U,$J,358.3,16858,2)
- ;;=Pulmonary Alveolar Proteinosis^100985
- ;;^UTILITY(U,$J,358.3,16859,0)
- ;;=135.^^87^1024^11
- ;;^UTILITY(U,$J,358.3,16859,1,0)
+ ;;^UTILITY(U,$J,358.3,16236,1,3,0)
+ ;;=3^Personal Hx Malig Neop Tongue
+ ;;^UTILITY(U,$J,358.3,16236,1,4,0)
+ ;;=4^Z85.810
+ ;;^UTILITY(U,$J,358.3,16236,2)
+ ;;=^5063438
+ ;;^UTILITY(U,$J,358.3,16237,0)
+ ;;=Z85.118^^61^728^7
+ ;;^UTILITY(U,$J,358.3,16237,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16859,1,3,0)
- ;;=3^135.
- ;;^UTILITY(U,$J,358.3,16859,1,4,0)
- ;;=4^Pulmonary Sarcoidosis
- ;;^UTILITY(U,$J,358.3,16859,2)
- ;;=Pulmonary Sarcoidosis^107916^517.8
- ;;^UTILITY(U,$J,358.3,16860,0)
- ;;=714.81^^87^1024^12
- ;;^UTILITY(U,$J,358.3,16860,1,0)
+ ;;^UTILITY(U,$J,358.3,16237,1,3,0)
+ ;;=3^Personal Hx Malig Neop Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,16237,1,4,0)
+ ;;=4^Z85.118
+ ;;^UTILITY(U,$J,358.3,16237,2)
+ ;;=^5063408
+ ;;^UTILITY(U,$J,358.3,16238,0)
+ ;;=Z85.41^^61^728^8
+ ;;^UTILITY(U,$J,358.3,16238,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16860,1,3,0)
- ;;=3^714.81
- ;;^UTILITY(U,$J,358.3,16860,1,4,0)
- ;;=4^Rheumatoid Lung
- ;;^UTILITY(U,$J,358.3,16860,2)
- ;;=Rheumatoid Lung^106037
- ;;^UTILITY(U,$J,358.3,16861,0)
- ;;=710.1^^87^1024^13
- ;;^UTILITY(U,$J,358.3,16861,1,0)
+ ;;^UTILITY(U,$J,358.3,16238,1,3,0)
+ ;;=3^Personal Hx Malig Neop Cervix Uteri
+ ;;^UTILITY(U,$J,358.3,16238,1,4,0)
+ ;;=4^Z85.41
+ ;;^UTILITY(U,$J,358.3,16238,2)
+ ;;=^5063418
+ ;;^UTILITY(U,$J,358.3,16239,0)
+ ;;=Z85.858^^61^728^10
+ ;;^UTILITY(U,$J,358.3,16239,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16861,1,3,0)
- ;;=3^710.1
- ;;^UTILITY(U,$J,358.3,16861,1,4,0)
- ;;=4^Scleroderma/Systemic Sclerosis
- ;;^UTILITY(U,$J,358.3,16861,2)
- ;;=Scleroderma/Systemic Sclerosis^108590^517.8
- ;;^UTILITY(U,$J,358.3,16862,0)
- ;;=710.2^^87^1024^14
+ ;;^UTILITY(U,$J,358.3,16239,1,3,0)
+ ;;=3^Personal Hx Malig Neop Endocrine Glands
+ ;;^UTILITY(U,$J,358.3,16239,1,4,0)
+ ;;=4^Z85.858
+ ;;^UTILITY(U,$J,358.3,16239,2)
+ ;;=^5063450
+ ;;^UTILITY(U,$J,358.3,16240,0)
+ ;;=Z85.01^^61^728^11
+ ;;^UTILITY(U,$J,358.3,16240,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16240,1,3,0)
+ ;;=3^Personal Hx Malig Neop Esophagus
+ ;;^UTILITY(U,$J,358.3,16240,1,4,0)
+ ;;=4^Z85.01
+ ;;^UTILITY(U,$J,358.3,16240,2)
+ ;;=^5063395

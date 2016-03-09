@@ -1,124 +1,132 @@
-IBDEI1XQ ; ; 06-AUG-2015
+IBDEI1XQ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33983,2)
- ;;=^5007409
- ;;^UTILITY(U,$J,358.3,33984,0)
- ;;=I69.052^^183^2013^46
- ;;^UTILITY(U,$J,358.3,33984,1,0)
+ ;;^UTILITY(U,$J,358.3,32821,1,4,0)
+ ;;=4^Z80.7
+ ;;^UTILITY(U,$J,358.3,32821,2)
+ ;;=^5063355
+ ;;^UTILITY(U,$J,358.3,32822,0)
+ ;;=Z80.9^^128^1636^33
+ ;;^UTILITY(U,$J,358.3,32822,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33984,1,3,0)
- ;;=3^Hemiplga fol ntrm subarach hemor aff left dominant side
- ;;^UTILITY(U,$J,358.3,33984,1,4,0)
- ;;=4^I69.052
- ;;^UTILITY(U,$J,358.3,33984,2)
- ;;=^5007410
- ;;^UTILITY(U,$J,358.3,33985,0)
- ;;=I69.053^^183^2013^49
- ;;^UTILITY(U,$J,358.3,33985,1,0)
+ ;;^UTILITY(U,$J,358.3,32822,1,3,0)
+ ;;=3^Family Hx of Malig Neop,Unspec
+ ;;^UTILITY(U,$J,358.3,32822,1,4,0)
+ ;;=4^Z80.9
+ ;;^UTILITY(U,$J,358.3,32822,2)
+ ;;=^5063357
+ ;;^UTILITY(U,$J,358.3,32823,0)
+ ;;=Z82.0^^128^1636^11
+ ;;^UTILITY(U,$J,358.3,32823,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33985,1,3,0)
- ;;=3^Hemiplga fol ntrm subarach hemor aff right nondom side
- ;;^UTILITY(U,$J,358.3,33985,1,4,0)
- ;;=4^I69.053
- ;;^UTILITY(U,$J,358.3,33985,2)
- ;;=^5007411
- ;;^UTILITY(U,$J,358.3,33986,0)
- ;;=I69.054^^183^2013^47
- ;;^UTILITY(U,$J,358.3,33986,1,0)
+ ;;^UTILITY(U,$J,358.3,32823,1,3,0)
+ ;;=3^Family Hx of Epilepsy
+ ;;^UTILITY(U,$J,358.3,32823,1,4,0)
+ ;;=4^Z82.0
+ ;;^UTILITY(U,$J,358.3,32823,2)
+ ;;=^5063364
+ ;;^UTILITY(U,$J,358.3,32824,0)
+ ;;=Z82.41^^128^1636^42
+ ;;^UTILITY(U,$J,358.3,32824,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33986,1,3,0)
- ;;=3^Hemiplga fol ntrm subarach hemor aff left nondom side
- ;;^UTILITY(U,$J,358.3,33986,1,4,0)
- ;;=4^I69.054
- ;;^UTILITY(U,$J,358.3,33986,2)
- ;;=^5007412
- ;;^UTILITY(U,$J,358.3,33987,0)
- ;;=I50.41^^183^2014^1
- ;;^UTILITY(U,$J,358.3,33987,1,0)
+ ;;^UTILITY(U,$J,358.3,32824,1,3,0)
+ ;;=3^Family Hx of Sudden Cardiac Death
+ ;;^UTILITY(U,$J,358.3,32824,1,4,0)
+ ;;=4^Z82.41
+ ;;^UTILITY(U,$J,358.3,32824,2)
+ ;;=^5063368
+ ;;^UTILITY(U,$J,358.3,32825,0)
+ ;;=Z83.6^^128^1636^39
+ ;;^UTILITY(U,$J,358.3,32825,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33987,1,3,0)
- ;;=3^Acute combined systolic and diastolic (congestive) hrt fail
- ;;^UTILITY(U,$J,358.3,33987,1,4,0)
- ;;=4^I50.41
- ;;^UTILITY(U,$J,358.3,33987,2)
- ;;=^5007248
- ;;^UTILITY(U,$J,358.3,33988,0)
- ;;=I50.31^^183^2014^2
- ;;^UTILITY(U,$J,358.3,33988,1,0)
+ ;;^UTILITY(U,$J,358.3,32825,1,3,0)
+ ;;=3^Family Hx of Respiratory System Diseases
+ ;;^UTILITY(U,$J,358.3,32825,1,4,0)
+ ;;=4^Z83.6
+ ;;^UTILITY(U,$J,358.3,32825,2)
+ ;;=^5063385
+ ;;^UTILITY(U,$J,358.3,32826,0)
+ ;;=Z82.62^^128^1636^37
+ ;;^UTILITY(U,$J,358.3,32826,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33988,1,3,0)
- ;;=3^Acute diastolic (congestive) heart failure
- ;;^UTILITY(U,$J,358.3,33988,1,4,0)
- ;;=4^I50.31
- ;;^UTILITY(U,$J,358.3,33988,2)
- ;;=^5007244
- ;;^UTILITY(U,$J,358.3,33989,0)
- ;;=I50.43^^183^2014^3
- ;;^UTILITY(U,$J,358.3,33989,1,0)
+ ;;^UTILITY(U,$J,358.3,32826,1,3,0)
+ ;;=3^Family Hx of Osteoporosis
+ ;;^UTILITY(U,$J,358.3,32826,1,4,0)
+ ;;=4^Z82.62
+ ;;^UTILITY(U,$J,358.3,32826,2)
+ ;;=^5063372
+ ;;^UTILITY(U,$J,358.3,32827,0)
+ ;;=Z83.41^^128^1636^35
+ ;;^UTILITY(U,$J,358.3,32827,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33989,1,3,0)
- ;;=3^Acute on chronic combined systolic and diastolic hrt fail
- ;;^UTILITY(U,$J,358.3,33989,1,4,0)
- ;;=4^I50.43
- ;;^UTILITY(U,$J,358.3,33989,2)
- ;;=^5007250
- ;;^UTILITY(U,$J,358.3,33990,0)
- ;;=I50.33^^183^2014^4
- ;;^UTILITY(U,$J,358.3,33990,1,0)
+ ;;^UTILITY(U,$J,358.3,32827,1,3,0)
+ ;;=3^Family Hx of Multiple Endocrine Neoplasia Syndrome
+ ;;^UTILITY(U,$J,358.3,32827,1,4,0)
+ ;;=4^Z83.41
+ ;;^UTILITY(U,$J,358.3,32827,2)
+ ;;=^5063380
+ ;;^UTILITY(U,$J,358.3,32828,0)
+ ;;=Z83.49^^128^1636^10
+ ;;^UTILITY(U,$J,358.3,32828,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33990,1,3,0)
- ;;=3^Acute on chronic diastolic (congestive) heart failure
- ;;^UTILITY(U,$J,358.3,33990,1,4,0)
- ;;=4^I50.33
- ;;^UTILITY(U,$J,358.3,33990,2)
- ;;=^5007246
- ;;^UTILITY(U,$J,358.3,33991,0)
- ;;=I50.23^^183^2014^5
- ;;^UTILITY(U,$J,358.3,33991,1,0)
+ ;;^UTILITY(U,$J,358.3,32828,1,3,0)
+ ;;=3^Family Hx of Endo,Nutritional & Metabolic Diseases
+ ;;^UTILITY(U,$J,358.3,32828,1,4,0)
+ ;;=4^Z83.49
+ ;;^UTILITY(U,$J,358.3,32828,2)
+ ;;=^5063381
+ ;;^UTILITY(U,$J,358.3,32829,0)
+ ;;=Z81.0^^128^1636^17
+ ;;^UTILITY(U,$J,358.3,32829,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33991,1,3,0)
- ;;=3^Acute on chronic systolic (congestive) heart failure
- ;;^UTILITY(U,$J,358.3,33991,1,4,0)
- ;;=4^I50.23
- ;;^UTILITY(U,$J,358.3,33991,2)
- ;;=^5007242
- ;;^UTILITY(U,$J,358.3,33992,0)
- ;;=I50.21^^183^2014^6
- ;;^UTILITY(U,$J,358.3,33992,1,0)
+ ;;^UTILITY(U,$J,358.3,32829,1,3,0)
+ ;;=3^Family Hx of Intellectual Disabilities
+ ;;^UTILITY(U,$J,358.3,32829,1,4,0)
+ ;;=4^Z81.0
+ ;;^UTILITY(U,$J,358.3,32829,2)
+ ;;=^5063358
+ ;;^UTILITY(U,$J,358.3,32830,0)
+ ;;=Z84.1^^128^1636^19
+ ;;^UTILITY(U,$J,358.3,32830,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33992,1,3,0)
- ;;=3^Acute systolic (congestive) heart failure
- ;;^UTILITY(U,$J,358.3,33992,1,4,0)
- ;;=4^I50.21
- ;;^UTILITY(U,$J,358.3,33992,2)
- ;;=^5007240
- ;;^UTILITY(U,$J,358.3,33993,0)
- ;;=I25.111^^183^2014^7
- ;;^UTILITY(U,$J,358.3,33993,1,0)
+ ;;^UTILITY(U,$J,358.3,32830,1,3,0)
+ ;;=3^Family Hx of Kidney & Ureter Disorders
+ ;;^UTILITY(U,$J,358.3,32830,1,4,0)
+ ;;=4^Z84.1
+ ;;^UTILITY(U,$J,358.3,32830,2)
+ ;;=^5063389
+ ;;^UTILITY(U,$J,358.3,32831,0)
+ ;;=Z84.2^^128^1636^14
+ ;;^UTILITY(U,$J,358.3,32831,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33993,1,3,0)
- ;;=3^Athscl hrt disease of native cor art w ang pctrs w spasm
- ;;^UTILITY(U,$J,358.3,33993,1,4,0)
- ;;=4^I25.111
- ;;^UTILITY(U,$J,358.3,33993,2)
- ;;=^5007109
- ;;^UTILITY(U,$J,358.3,33994,0)
- ;;=I25.118^^183^2014^8
- ;;^UTILITY(U,$J,358.3,33994,1,0)
+ ;;^UTILITY(U,$J,358.3,32831,1,3,0)
+ ;;=3^Family Hx of Genitourinary System Diseases
+ ;;^UTILITY(U,$J,358.3,32831,1,4,0)
+ ;;=4^Z84.2
+ ;;^UTILITY(U,$J,358.3,32831,2)
+ ;;=^5063390
+ ;;^UTILITY(U,$J,358.3,32832,0)
+ ;;=Z83.1^^128^1636^16
+ ;;^UTILITY(U,$J,358.3,32832,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33994,1,3,0)
- ;;=3^Athscl hrt disease of native cor art w oth ang pctrs
- ;;^UTILITY(U,$J,358.3,33994,1,4,0)
- ;;=4^I25.118
- ;;^UTILITY(U,$J,358.3,33994,2)
- ;;=^5007110
- ;;^UTILITY(U,$J,358.3,33995,0)
- ;;=I25.119^^183^2014^9
- ;;^UTILITY(U,$J,358.3,33995,1,0)
+ ;;^UTILITY(U,$J,358.3,32832,1,3,0)
+ ;;=3^Family Hx of Infectious & Parasitic Diseases
+ ;;^UTILITY(U,$J,358.3,32832,1,4,0)
+ ;;=4^Z83.1
+ ;;^UTILITY(U,$J,358.3,32832,2)
+ ;;=^5063377
+ ;;^UTILITY(U,$J,358.3,32833,0)
+ ;;=Z84.81^^128^1636^13
+ ;;^UTILITY(U,$J,358.3,32833,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33995,1,3,0)
- ;;=3^Athscl hrt disease of native cor art w unsp ang pctrs
- ;;^UTILITY(U,$J,358.3,33995,1,4,0)
- ;;=4^I25.119
+ ;;^UTILITY(U,$J,358.3,32833,1,3,0)
+ ;;=3^Family Hx of Genetic Disease Carrier
+ ;;^UTILITY(U,$J,358.3,32833,1,4,0)
+ ;;=4^Z84.81
+ ;;^UTILITY(U,$J,358.3,32833,2)
+ ;;=^5063392
+ ;;^UTILITY(U,$J,358.3,32834,0)
+ ;;=Z83.511^^128^1636^15
+ ;;^UTILITY(U,$J,358.3,32834,1,0)
+ ;;=^358.31IA^4^2

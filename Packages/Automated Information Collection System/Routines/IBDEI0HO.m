@@ -1,142 +1,126 @@
-IBDEI0HO ; ; 06-AUG-2015
+IBDEI0HO ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8244,0)
- ;;=281.9^^35^482^107
- ;;^UTILITY(U,$J,358.3,8244,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8244,1,4,0)
- ;;=4^281.9
- ;;^UTILITY(U,$J,358.3,8244,1,5,0)
- ;;=5^Nutritional Anemia
- ;;^UTILITY(U,$J,358.3,8244,2)
- ;;=^123801
- ;;^UTILITY(U,$J,358.3,8245,0)
- ;;=281.0^^35^482^123
- ;;^UTILITY(U,$J,358.3,8245,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8245,1,4,0)
- ;;=4^281.0
- ;;^UTILITY(U,$J,358.3,8245,1,5,0)
- ;;=5^Vit B12 Deficiency (Pernicious Anemia)
- ;;^UTILITY(U,$J,358.3,8245,2)
- ;;=^7161
- ;;^UTILITY(U,$J,358.3,8246,0)
- ;;=282.60^^35^482^111
- ;;^UTILITY(U,$J,358.3,8246,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8246,1,4,0)
- ;;=4^282.60
- ;;^UTILITY(U,$J,358.3,8246,1,5,0)
- ;;=5^Sickle-Cell Anemia
- ;;^UTILITY(U,$J,358.3,8246,2)
- ;;=^7188
- ;;^UTILITY(U,$J,358.3,8247,0)
- ;;=282.62^^35^482^112
- ;;^UTILITY(U,$J,358.3,8247,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8247,1,4,0)
- ;;=4^282.62
- ;;^UTILITY(U,$J,358.3,8247,1,5,0)
- ;;=5^Sickle-Cell With Crisis
- ;;^UTILITY(U,$J,358.3,8247,2)
- ;;=^267982
- ;;^UTILITY(U,$J,358.3,8248,0)
- ;;=281.1^^35^482^124
- ;;^UTILITY(U,$J,358.3,8248,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8248,1,4,0)
- ;;=4^281.1
- ;;^UTILITY(U,$J,358.3,8248,1,5,0)
- ;;=5^Vit B12 Deficiency(Dietary)
- ;;^UTILITY(U,$J,358.3,8248,2)
- ;;=^267974
- ;;^UTILITY(U,$J,358.3,8249,0)
- ;;=286.7^^35^482^54
- ;;^UTILITY(U,$J,358.3,8249,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8249,1,4,0)
- ;;=4^286.7
- ;;^UTILITY(U,$J,358.3,8249,1,5,0)
- ;;=5^Coagulation Defect(Any),Acquired
- ;;^UTILITY(U,$J,358.3,8249,2)
- ;;=^2235
- ;;^UTILITY(U,$J,358.3,8250,0)
- ;;=289.9^^35^482^120
- ;;^UTILITY(U,$J,358.3,8250,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8250,1,4,0)
- ;;=4^289.9
- ;;^UTILITY(U,$J,358.3,8250,1,5,0)
- ;;=5^Thrombocytosis, Essential
- ;;^UTILITY(U,$J,358.3,8250,2)
- ;;=^55344
- ;;^UTILITY(U,$J,358.3,8251,0)
- ;;=451.9^^35^482^121
- ;;^UTILITY(U,$J,358.3,8251,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8251,1,4,0)
- ;;=4^451.9
- ;;^UTILITY(U,$J,358.3,8251,1,5,0)
- ;;=5^Thrombophlebitis 
- ;;^UTILITY(U,$J,358.3,8251,2)
- ;;=^93357
- ;;^UTILITY(U,$J,358.3,8252,0)
- ;;=446.6^^35^482^122
- ;;^UTILITY(U,$J,358.3,8252,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8252,1,4,0)
- ;;=4^446.6
- ;;^UTILITY(U,$J,358.3,8252,1,5,0)
- ;;=5^Thrombotic Thrombocytopenic Purpura(Ttp)
- ;;^UTILITY(U,$J,358.3,8252,2)
- ;;=^119061
- ;;^UTILITY(U,$J,358.3,8253,0)
- ;;=286.4^^35^482^125
- ;;^UTILITY(U,$J,358.3,8253,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8253,1,4,0)
- ;;=4^286.4
- ;;^UTILITY(U,$J,358.3,8253,1,5,0)
- ;;=5^Von Willebrand's Disease
- ;;^UTILITY(U,$J,358.3,8253,2)
- ;;=^127267
- ;;^UTILITY(U,$J,358.3,8254,0)
- ;;=204.00^^35^482^1
- ;;^UTILITY(U,$J,358.3,8254,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8254,1,4,0)
- ;;=4^204.00
- ;;^UTILITY(U,$J,358.3,8254,1,5,0)
- ;;=5^ALL w/o Remission
- ;;^UTILITY(U,$J,358.3,8254,2)
- ;;=^267521
- ;;^UTILITY(U,$J,358.3,8255,0)
- ;;=204.01^^35^482^3
- ;;^UTILITY(U,$J,358.3,8255,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8255,1,4,0)
- ;;=4^204.01
- ;;^UTILITY(U,$J,358.3,8255,1,5,0)
- ;;=5^ALL,In Remission
- ;;^UTILITY(U,$J,358.3,8255,2)
- ;;=^267522
- ;;^UTILITY(U,$J,358.3,8256,0)
- ;;=204.10^^35^482^16
- ;;^UTILITY(U,$J,358.3,8256,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8256,1,4,0)
- ;;=4^204.10
- ;;^UTILITY(U,$J,358.3,8256,1,5,0)
- ;;=5^CLL w/o Remission
- ;;^UTILITY(U,$J,358.3,8256,2)
- ;;=^267523
- ;;^UTILITY(U,$J,358.3,8257,0)
- ;;=204.11^^35^482^18
- ;;^UTILITY(U,$J,358.3,8257,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8257,1,4,0)
- ;;=4^204.11
- ;;^UTILITY(U,$J,358.3,8257,1,5,0)
- ;;=5^CLL,In Remission
+ ;;^UTILITY(U,$J,358.3,8173,0)
+ ;;=S43.402A^^33^431^211
+ ;;^UTILITY(U,$J,358.3,8173,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8173,1,3,0)
+ ;;=3^Sprain of left shoulder joint unspec, initial enco
+ ;;^UTILITY(U,$J,358.3,8173,1,4,0)
+ ;;=4^S43.402A
+ ;;^UTILITY(U,$J,358.3,8173,2)
+ ;;=^5027867
+ ;;^UTILITY(U,$J,358.3,8174,0)
+ ;;=S13.4XXA^^33^431^214
+ ;;^UTILITY(U,$J,358.3,8174,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8174,1,3,0)
+ ;;=3^Sprain of ligaments of cervical spine, initial encounter
+ ;;^UTILITY(U,$J,358.3,8174,1,4,0)
+ ;;=4^S13.4XXA
+ ;;^UTILITY(U,$J,358.3,8174,2)
+ ;;=^5022028
+ ;;^UTILITY(U,$J,358.3,8175,0)
+ ;;=S23.3XXA^^33^431^216
+ ;;^UTILITY(U,$J,358.3,8175,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8175,1,3,0)
+ ;;=3^Sprain of ligaments of thoracic spine, initial encounter
+ ;;^UTILITY(U,$J,358.3,8175,1,4,0)
+ ;;=4^S23.3XXA
+ ;;^UTILITY(U,$J,358.3,8175,2)
+ ;;=^5023246
+ ;;^UTILITY(U,$J,358.3,8176,0)
+ ;;=S63.601A^^33^431^231
+ ;;^UTILITY(U,$J,358.3,8176,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8176,1,3,0)
+ ;;=3^Sprain of right thumb unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8176,1,4,0)
+ ;;=4^S63.601A
+ ;;^UTILITY(U,$J,358.3,8176,2)
+ ;;=^5035616
+ ;;^UTILITY(U,$J,358.3,8177,0)
+ ;;=S63.602A^^33^431^212
+ ;;^UTILITY(U,$J,358.3,8177,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8177,1,3,0)
+ ;;=3^Sprain of left thumb unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8177,1,4,0)
+ ;;=4^S63.602A
+ ;;^UTILITY(U,$J,358.3,8177,2)
+ ;;=^5035619
+ ;;^UTILITY(U,$J,358.3,8178,0)
+ ;;=S93.501A^^33^431^224
+ ;;^UTILITY(U,$J,358.3,8178,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8178,1,3,0)
+ ;;=3^Sprain of right great toe unspec, initial encounte
+ ;;^UTILITY(U,$J,358.3,8178,1,4,0)
+ ;;=4^S93.501A
+ ;;^UTILITY(U,$J,358.3,8178,2)
+ ;;=^5045810
+ ;;^UTILITY(U,$J,358.3,8179,0)
+ ;;=S93.502A^^33^431^205
+ ;;^UTILITY(U,$J,358.3,8179,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8179,1,3,0)
+ ;;=3^Sprain of left great toe unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8179,1,4,0)
+ ;;=4^S93.502A
+ ;;^UTILITY(U,$J,358.3,8179,2)
+ ;;=^5045813
+ ;;^UTILITY(U,$J,358.3,8180,0)
+ ;;=S93.504A^^33^431^226
+ ;;^UTILITY(U,$J,358.3,8180,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8180,1,3,0)
+ ;;=3^Sprain of right lesser toe(s) unspec, initial enco
+ ;;^UTILITY(U,$J,358.3,8180,1,4,0)
+ ;;=4^S93.504A
+ ;;^UTILITY(U,$J,358.3,8180,2)
+ ;;=^5045816
+ ;;^UTILITY(U,$J,358.3,8181,0)
+ ;;=S93.505A^^33^431^207
+ ;;^UTILITY(U,$J,358.3,8181,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8181,1,3,0)
+ ;;=3^Sprain of left lesser toe(s) unspec, initial encou
+ ;;^UTILITY(U,$J,358.3,8181,1,4,0)
+ ;;=4^S93.505A
+ ;;^UTILITY(U,$J,358.3,8181,2)
+ ;;=^5045819
+ ;;^UTILITY(U,$J,358.3,8182,0)
+ ;;=S63.501A^^33^431^232
+ ;;^UTILITY(U,$J,358.3,8182,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8182,1,3,0)
+ ;;=3^Sprain of right wrist unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8182,1,4,0)
+ ;;=4^S63.501A
+ ;;^UTILITY(U,$J,358.3,8182,2)
+ ;;=^5035583
+ ;;^UTILITY(U,$J,358.3,8183,0)
+ ;;=S63.502A^^33^431^213
+ ;;^UTILITY(U,$J,358.3,8183,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8183,1,3,0)
+ ;;=3^Sprain of left wrist unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8183,1,4,0)
+ ;;=4^S63.502A
+ ;;^UTILITY(U,$J,358.3,8183,2)
+ ;;=^5035586
+ ;;^UTILITY(U,$J,358.3,8184,0)
+ ;;=S39.012A^^33^431^243
+ ;;^UTILITY(U,$J,358.3,8184,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8184,1,3,0)
+ ;;=3^Strain of muscle, fascia and tendon of lower back, init
+ ;;^UTILITY(U,$J,358.3,8184,1,4,0)
+ ;;=4^S39.012A
+ ;;^UTILITY(U,$J,358.3,8184,2)
+ ;;=^5026102
+ ;;^UTILITY(U,$J,358.3,8185,0)
+ ;;=S16.1XXA^^33^431^242

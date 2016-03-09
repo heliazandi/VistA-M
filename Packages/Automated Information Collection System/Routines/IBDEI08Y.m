@@ -1,136 +1,132 @@
-IBDEI08Y ; ; 06-AUG-2015
+IBDEI08Y ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3726,1,2,0)
- ;;=2^295.62
- ;;^UTILITY(U,$J,358.3,3726,1,5,0)
- ;;=5^Undifferentiated Schizophrenia, Chr
- ;;^UTILITY(U,$J,358.3,3726,2)
- ;;=^268078
- ;;^UTILITY(U,$J,358.3,3727,0)
- ;;=295.72^^11^162^11
- ;;^UTILITY(U,$J,358.3,3727,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3727,1,2,0)
- ;;=2^295.72
- ;;^UTILITY(U,$J,358.3,3727,1,5,0)
- ;;=5^Schizoaffective Disorder, Chr
- ;;^UTILITY(U,$J,358.3,3727,2)
- ;;=^268083
- ;;^UTILITY(U,$J,358.3,3728,0)
- ;;=295.74^^11^162^12
- ;;^UTILITY(U,$J,358.3,3728,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3728,1,2,0)
- ;;=2^295.74
- ;;^UTILITY(U,$J,358.3,3728,1,5,0)
- ;;=5^Schizoaffective Disorder, w/Exacerb.
- ;;^UTILITY(U,$J,358.3,3728,2)
- ;;=^268085
- ;;^UTILITY(U,$J,358.3,3729,0)
- ;;=295.42^^11^162^17
- ;;^UTILITY(U,$J,358.3,3729,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3729,1,2,0)
- ;;=2^295.42
- ;;^UTILITY(U,$J,358.3,3729,1,5,0)
- ;;=5^Schizophreniform Disorder, Chr
- ;;^UTILITY(U,$J,358.3,3729,2)
- ;;=^268068
- ;;^UTILITY(U,$J,358.3,3730,0)
- ;;=295.44^^11^162^18
- ;;^UTILITY(U,$J,358.3,3730,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3730,1,2,0)
- ;;=2^295.44
- ;;^UTILITY(U,$J,358.3,3730,1,5,0)
- ;;=5^Schizophreniform Disorderw/Exacerb.
- ;;^UTILITY(U,$J,358.3,3730,2)
- ;;=^268070
- ;;^UTILITY(U,$J,358.3,3731,0)
- ;;=295.02^^11^162^21
- ;;^UTILITY(U,$J,358.3,3731,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3731,1,2,0)
- ;;=2^295.02
- ;;^UTILITY(U,$J,358.3,3731,1,5,0)
- ;;=5^Simple Schizophrenia, Chronic
- ;;^UTILITY(U,$J,358.3,3731,2)
- ;;=Simple Schizophrenia, Chronic^268046
- ;;^UTILITY(U,$J,358.3,3732,0)
- ;;=295.04^^11^162^20
- ;;^UTILITY(U,$J,358.3,3732,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3732,1,2,0)
- ;;=2^295.04
- ;;^UTILITY(U,$J,358.3,3732,1,5,0)
- ;;=5^Simple Schizophrenia,  Chr w/Exacerbation
- ;;^UTILITY(U,$J,358.3,3732,2)
- ;;=^268048
- ;;^UTILITY(U,$J,358.3,3733,0)
- ;;=295.92^^11^162^14
- ;;^UTILITY(U,$J,358.3,3733,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3733,1,2,0)
- ;;=2^295.92
- ;;^UTILITY(U,$J,358.3,3733,1,5,0)
- ;;=5^Schizophrenia, NOS, Chronic
- ;;^UTILITY(U,$J,358.3,3733,2)
- ;;=Schizophrenia, NOS, Chronic^268093
- ;;^UTILITY(U,$J,358.3,3734,0)
- ;;=295.94^^11^162^15
- ;;^UTILITY(U,$J,358.3,3734,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3734,1,2,0)
- ;;=2^295.94
- ;;^UTILITY(U,$J,358.3,3734,1,5,0)
- ;;=5^Schizophrenia, NOS, Chronic w/Exacerbation
- ;;^UTILITY(U,$J,358.3,3734,2)
- ;;=^268095
- ;;^UTILITY(U,$J,358.3,3735,0)
- ;;=295.00^^11^162^19
- ;;^UTILITY(U,$J,358.3,3735,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3735,1,2,0)
- ;;=2^295.00
- ;;^UTILITY(U,$J,358.3,3735,1,5,0)
- ;;=5^Simple Schizophrenia NOS
- ;;^UTILITY(U,$J,358.3,3735,2)
- ;;=^265175
- ;;^UTILITY(U,$J,358.3,3736,0)
- ;;=295.10^^11^162^1
- ;;^UTILITY(U,$J,358.3,3736,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3736,1,2,0)
- ;;=2^295.10
- ;;^UTILITY(U,$J,358.3,3736,1,5,0)
- ;;=5^Disorganized Schizophrenia NOS
- ;;^UTILITY(U,$J,358.3,3736,2)
- ;;=^108319
- ;;^UTILITY(U,$J,358.3,3737,0)
- ;;=295.30^^11^162^7
- ;;^UTILITY(U,$J,358.3,3737,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3737,1,2,0)
- ;;=2^295.30
- ;;^UTILITY(U,$J,358.3,3737,1,5,0)
- ;;=5^Paranoid Schizophrenia NOS
- ;;^UTILITY(U,$J,358.3,3737,2)
- ;;=^108330
- ;;^UTILITY(U,$J,358.3,3738,0)
- ;;=295.40^^11^162^16
- ;;^UTILITY(U,$J,358.3,3738,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3738,1,2,0)
- ;;=2^295.40
- ;;^UTILITY(U,$J,358.3,3738,1,5,0)
- ;;=5^Schizophreniform Disorder NOS
- ;;^UTILITY(U,$J,358.3,3738,2)
- ;;=^331845
- ;;^UTILITY(U,$J,358.3,3739,0)
- ;;=295.50^^11^162^4
- ;;^UTILITY(U,$J,358.3,3739,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,3739,1,2,0)
- ;;=2^295.50
+ ;;^UTILITY(U,$J,358.3,3904,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3904,1,3,0)
+ ;;=3^Noncompliance w/ Med Regimen d/t Other Reasons
+ ;;^UTILITY(U,$J,358.3,3904,1,4,0)
+ ;;=4^Z91.128
+ ;;^UTILITY(U,$J,358.3,3904,2)
+ ;;=^5063613
+ ;;^UTILITY(U,$J,358.3,3905,0)
+ ;;=Z91.130^^18^224^76
+ ;;^UTILITY(U,$J,358.3,3905,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3905,1,3,0)
+ ;;=3^Noncompliance w/ Med Regimen d/t Age-Related Debility
+ ;;^UTILITY(U,$J,358.3,3905,1,4,0)
+ ;;=4^Z91.130
+ ;;^UTILITY(U,$J,358.3,3905,2)
+ ;;=^5063614
+ ;;^UTILITY(U,$J,358.3,3906,0)
+ ;;=Z91.138^^18^224^75
+ ;;^UTILITY(U,$J,358.3,3906,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3906,1,3,0)
+ ;;=3^Noncompliance w/ Med Regimen Unintentional
+ ;;^UTILITY(U,$J,358.3,3906,1,4,0)
+ ;;=4^Z91.138
+ ;;^UTILITY(U,$J,358.3,3906,2)
+ ;;=^5063615
+ ;;^UTILITY(U,$J,358.3,3907,0)
+ ;;=Z91.19^^18^224^79
+ ;;^UTILITY(U,$J,358.3,3907,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3907,1,3,0)
+ ;;=3^Noncompliance w/ Medical Treatment/Regimen
+ ;;^UTILITY(U,$J,358.3,3907,1,4,0)
+ ;;=4^Z91.19
+ ;;^UTILITY(U,$J,358.3,3907,2)
+ ;;=^5063618
+ ;;^UTILITY(U,$J,358.3,3908,0)
+ ;;=Z91.15^^18^224^80
+ ;;^UTILITY(U,$J,358.3,3908,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3908,1,3,0)
+ ;;=3^Noncompliance w/ Renal Dialysis
+ ;;^UTILITY(U,$J,358.3,3908,1,4,0)
+ ;;=4^Z91.15
+ ;;^UTILITY(U,$J,358.3,3908,2)
+ ;;=^5063617
+ ;;^UTILITY(U,$J,358.3,3909,0)
+ ;;=Z57.2^^18^224^85
+ ;;^UTILITY(U,$J,358.3,3909,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3909,1,3,0)
+ ;;=3^Occupational Exposure to Dust
+ ;;^UTILITY(U,$J,358.3,3909,1,4,0)
+ ;;=4^Z57.2
+ ;;^UTILITY(U,$J,358.3,3909,2)
+ ;;=^5063120
+ ;;^UTILITY(U,$J,358.3,3910,0)
+ ;;=Z57.31^^18^224^91
+ ;;^UTILITY(U,$J,358.3,3910,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3910,1,3,0)
+ ;;=3^Occupational Exposure to Tobacco Smoke,Environmental
+ ;;^UTILITY(U,$J,358.3,3910,1,4,0)
+ ;;=4^Z57.31
+ ;;^UTILITY(U,$J,358.3,3910,2)
+ ;;=^5063121
+ ;;^UTILITY(U,$J,358.3,3911,0)
+ ;;=Z57.6^^18^224^86
+ ;;^UTILITY(U,$J,358.3,3911,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3911,1,3,0)
+ ;;=3^Occupational Exposure to Extreme Temperature
+ ;;^UTILITY(U,$J,358.3,3911,1,4,0)
+ ;;=4^Z57.6
+ ;;^UTILITY(U,$J,358.3,3911,2)
+ ;;=^5063125
+ ;;^UTILITY(U,$J,358.3,3912,0)
+ ;;=Z57.0^^18^224^88
+ ;;^UTILITY(U,$J,358.3,3912,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3912,1,3,0)
+ ;;=3^Occupational Exposure to Noise
+ ;;^UTILITY(U,$J,358.3,3912,1,4,0)
+ ;;=4^Z57.0
+ ;;^UTILITY(U,$J,358.3,3912,2)
+ ;;=^5063118
+ ;;^UTILITY(U,$J,358.3,3913,0)
+ ;;=Z57.39^^18^224^84
+ ;;^UTILITY(U,$J,358.3,3913,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3913,1,3,0)
+ ;;=3^Occupational Exposure to Air Contaminants
+ ;;^UTILITY(U,$J,358.3,3913,1,4,0)
+ ;;=4^Z57.39
+ ;;^UTILITY(U,$J,358.3,3913,2)
+ ;;=^5063122
+ ;;^UTILITY(U,$J,358.3,3914,0)
+ ;;=Z57.8^^18^224^89
+ ;;^UTILITY(U,$J,358.3,3914,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3914,1,3,0)
+ ;;=3^Occupational Exposure to Other Risk Factors
+ ;;^UTILITY(U,$J,358.3,3914,1,4,0)
+ ;;=4^Z57.8
+ ;;^UTILITY(U,$J,358.3,3914,2)
+ ;;=^5063127
+ ;;^UTILITY(U,$J,358.3,3915,0)
+ ;;=Z57.1^^18^224^90
+ ;;^UTILITY(U,$J,358.3,3915,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3915,1,3,0)
+ ;;=3^Occupational Exposure to Radiation
+ ;;^UTILITY(U,$J,358.3,3915,1,4,0)
+ ;;=4^Z57.1
+ ;;^UTILITY(U,$J,358.3,3915,2)
+ ;;=^5063119
+ ;;^UTILITY(U,$J,358.3,3916,0)
+ ;;=Z57.4^^18^224^83
+ ;;^UTILITY(U,$J,358.3,3916,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3916,1,3,0)
+ ;;=3^Occupational Exposure to Agriculture Toxic Agents
+ ;;^UTILITY(U,$J,358.3,3916,1,4,0)
+ ;;=4^Z57.4
+ ;;^UTILITY(U,$J,358.3,3916,2)
+ ;;=^5063123

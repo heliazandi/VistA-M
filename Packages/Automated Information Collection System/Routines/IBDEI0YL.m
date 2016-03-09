@@ -1,138 +1,130 @@
-IBDEI0YL ; ; 06-AUG-2015
+IBDEI0YL ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16862,1,0)
+ ;;^UTILITY(U,$J,358.3,16241,0)
+ ;;=Z85.44^^61^728^13
+ ;;^UTILITY(U,$J,358.3,16241,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16862,1,3,0)
- ;;=3^710.2
- ;;^UTILITY(U,$J,358.3,16862,1,4,0)
- ;;=4^Sjogren's Syndrome
- ;;^UTILITY(U,$J,358.3,16862,2)
- ;;=Sjogren's Syndrome^192145^517.8
- ;;^UTILITY(U,$J,358.3,16863,0)
- ;;=516.30^^87^1024^5
- ;;^UTILITY(U,$J,358.3,16863,1,0)
+ ;;^UTILITY(U,$J,358.3,16241,1,3,0)
+ ;;=3^Personal Hx Malig Neop Female Genital Organs
+ ;;^UTILITY(U,$J,358.3,16241,1,4,0)
+ ;;=4^Z85.44
+ ;;^UTILITY(U,$J,358.3,16241,2)
+ ;;=^5063421
+ ;;^UTILITY(U,$J,358.3,16242,0)
+ ;;=Z85.71^^61^728^1
+ ;;^UTILITY(U,$J,358.3,16242,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16863,1,3,0)
- ;;=3^516.30
- ;;^UTILITY(U,$J,358.3,16863,1,4,0)
- ;;=4^Idiopathic Pulmonary Fibrosis
- ;;^UTILITY(U,$J,358.3,16863,2)
- ;;=^340610
- ;;^UTILITY(U,$J,358.3,16864,0)
- ;;=501.^^87^1025^1
- ;;^UTILITY(U,$J,358.3,16864,1,0)
+ ;;^UTILITY(U,$J,358.3,16242,1,3,0)
+ ;;=3^Personal Hx Hodgkin Lymphoma
+ ;;^UTILITY(U,$J,358.3,16242,1,4,0)
+ ;;=4^Z85.71
+ ;;^UTILITY(U,$J,358.3,16242,2)
+ ;;=^5063435
+ ;;^UTILITY(U,$J,358.3,16243,0)
+ ;;=Z85.79^^61^728^18
+ ;;^UTILITY(U,$J,358.3,16243,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16864,1,3,0)
- ;;=3^501.
- ;;^UTILITY(U,$J,358.3,16864,1,4,0)
- ;;=4^Asbestosis
- ;;^UTILITY(U,$J,358.3,16865,0)
- ;;=502.^^87^1025^4
- ;;^UTILITY(U,$J,358.3,16865,1,0)
+ ;;^UTILITY(U,$J,358.3,16243,1,3,0)
+ ;;=3^Personal Hx Malig Neop Lymphoid/Hematopoietic/Related Tissues
+ ;;^UTILITY(U,$J,358.3,16243,1,4,0)
+ ;;=4^Z85.79
+ ;;^UTILITY(U,$J,358.3,16243,2)
+ ;;=^5063437
+ ;;^UTILITY(U,$J,358.3,16244,0)
+ ;;=Z85.831^^61^728^27
+ ;;^UTILITY(U,$J,358.3,16244,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16865,1,3,0)
- ;;=3^502.
- ;;^UTILITY(U,$J,358.3,16865,1,4,0)
- ;;=4^Silicosis
- ;;^UTILITY(U,$J,358.3,16865,2)
- ;;=Silicosis^110600
- ;;^UTILITY(U,$J,358.3,16866,0)
- ;;=505.^^87^1025^3
- ;;^UTILITY(U,$J,358.3,16866,1,0)
+ ;;^UTILITY(U,$J,358.3,16244,1,3,0)
+ ;;=3^Personal Hx Malig Neop Soft Tissue
+ ;;^UTILITY(U,$J,358.3,16244,1,4,0)
+ ;;=4^Z85.831
+ ;;^UTILITY(U,$J,358.3,16244,2)
+ ;;=^5063445
+ ;;^UTILITY(U,$J,358.3,16245,0)
+ ;;=Z85.49^^61^728^19
+ ;;^UTILITY(U,$J,358.3,16245,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16866,1,3,0)
- ;;=3^505.
- ;;^UTILITY(U,$J,358.3,16866,1,4,0)
- ;;=4^Pneumoconiosis NEC
- ;;^UTILITY(U,$J,358.3,16866,2)
- ;;=^95539
- ;;^UTILITY(U,$J,358.3,16867,0)
- ;;=500.^^87^1025^2
- ;;^UTILITY(U,$J,358.3,16867,1,0)
+ ;;^UTILITY(U,$J,358.3,16245,1,3,0)
+ ;;=3^Personal Hx Malig Neop Male Genital Organs
+ ;;^UTILITY(U,$J,358.3,16245,1,4,0)
+ ;;=4^Z85.49
+ ;;^UTILITY(U,$J,358.3,16245,2)
+ ;;=^5063426
+ ;;^UTILITY(U,$J,358.3,16246,0)
+ ;;=Z85.820^^61^728^2
+ ;;^UTILITY(U,$J,358.3,16246,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16867,1,3,0)
- ;;=3^500.
- ;;^UTILITY(U,$J,358.3,16867,1,4,0)
- ;;=4^Coal Workers Pheumonoconiosis
- ;;^UTILITY(U,$J,358.3,16867,2)
- ;;=Coal Workers Pheumonoconiosis^8060
- ;;^UTILITY(U,$J,358.3,16868,0)
- ;;=508.0^^87^1026^13
- ;;^UTILITY(U,$J,358.3,16868,1,0)
+ ;;^UTILITY(U,$J,358.3,16246,1,3,0)
+ ;;=3^Personal Hx Malig Melanoma of Skin
+ ;;^UTILITY(U,$J,358.3,16246,1,4,0)
+ ;;=4^Z85.820
+ ;;^UTILITY(U,$J,358.3,16246,2)
+ ;;=^5063441
+ ;;^UTILITY(U,$J,358.3,16247,0)
+ ;;=Z85.848^^61^728^22
+ ;;^UTILITY(U,$J,358.3,16247,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16868,1,3,0)
- ;;=3^508.0
- ;;^UTILITY(U,$J,358.3,16868,1,4,0)
- ;;=4^Radiation Pneumonit
- ;;^UTILITY(U,$J,358.3,16869,0)
- ;;=518.3^^87^1026^5
- ;;^UTILITY(U,$J,358.3,16869,1,0)
+ ;;^UTILITY(U,$J,358.3,16247,1,3,0)
+ ;;=3^Personal Hx Malig Neop Parts of Nervous Tissue
+ ;;^UTILITY(U,$J,358.3,16247,1,4,0)
+ ;;=4^Z85.848
+ ;;^UTILITY(U,$J,358.3,16247,2)
+ ;;=^5063448
+ ;;^UTILITY(U,$J,358.3,16248,0)
+ ;;=Z85.22^^61^728^20
+ ;;^UTILITY(U,$J,358.3,16248,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16869,1,3,0)
- ;;=3^518.3
- ;;^UTILITY(U,$J,358.3,16869,1,4,0)
- ;;=4^Eosinophil Pneumonia
- ;;^UTILITY(U,$J,358.3,16870,0)
- ;;=507.0^^87^1026^2
- ;;^UTILITY(U,$J,358.3,16870,1,0)
+ ;;^UTILITY(U,$J,358.3,16248,1,3,0)
+ ;;=3^Personal Hx Malig Neop Nasal Cavities/Middle Ear/Accessory Sinuses
+ ;;^UTILITY(U,$J,358.3,16248,1,4,0)
+ ;;=4^Z85.22
+ ;;^UTILITY(U,$J,358.3,16248,2)
+ ;;=^5063412
+ ;;^UTILITY(U,$J,358.3,16249,0)
+ ;;=Z85.818^^61^728^16
+ ;;^UTILITY(U,$J,358.3,16249,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16870,1,3,0)
- ;;=3^507.0
- ;;^UTILITY(U,$J,358.3,16870,1,4,0)
- ;;=4^Aspiration Pneumonia
- ;;^UTILITY(U,$J,358.3,16870,2)
- ;;=Aspiration Pneumonia^95581
- ;;^UTILITY(U,$J,358.3,16871,0)
- ;;=507.1^^87^1026^9
- ;;^UTILITY(U,$J,358.3,16871,1,0)
+ ;;^UTILITY(U,$J,358.3,16249,1,3,0)
+ ;;=3^Personal Hx Malig Neop Lip/Oral Cavity/Pharynx
+ ;;^UTILITY(U,$J,358.3,16249,1,4,0)
+ ;;=4^Z85.818
+ ;;^UTILITY(U,$J,358.3,16249,2)
+ ;;=^5063439
+ ;;^UTILITY(U,$J,358.3,16250,0)
+ ;;=Z85.46^^61^728^24
+ ;;^UTILITY(U,$J,358.3,16250,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16871,1,3,0)
- ;;=3^507.1
- ;;^UTILITY(U,$J,358.3,16871,1,4,0)
- ;;=4^Lipoid Pneumonia
- ;;^UTILITY(U,$J,358.3,16872,0)
- ;;=516.0^^87^1026^12
- ;;^UTILITY(U,$J,358.3,16872,1,0)
+ ;;^UTILITY(U,$J,358.3,16250,1,3,0)
+ ;;=3^Personal Hx Malig Neop Prostate
+ ;;^UTILITY(U,$J,358.3,16250,1,4,0)
+ ;;=4^Z85.46
+ ;;^UTILITY(U,$J,358.3,16250,2)
+ ;;=^5063423
+ ;;^UTILITY(U,$J,358.3,16251,0)
+ ;;=Z85.048^^61^728^25
+ ;;^UTILITY(U,$J,358.3,16251,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16872,1,3,0)
- ;;=3^516.0
- ;;^UTILITY(U,$J,358.3,16872,1,4,0)
- ;;=4^Pulmonary Alveolar Proteinosis
- ;;^UTILITY(U,$J,358.3,16872,2)
- ;;=^100985
- ;;^UTILITY(U,$J,358.3,16873,0)
- ;;=518.89^^87^1026^10
- ;;^UTILITY(U,$J,358.3,16873,1,0)
+ ;;^UTILITY(U,$J,358.3,16251,1,3,0)
+ ;;=3^Personal Hx Malig Neop Rectum/Rectosigmoid Junction/Anus
+ ;;^UTILITY(U,$J,358.3,16251,1,4,0)
+ ;;=4^Z85.048
+ ;;^UTILITY(U,$J,358.3,16251,2)
+ ;;=^5063401
+ ;;^UTILITY(U,$J,358.3,16252,0)
+ ;;=Z85.828^^61^728^26
+ ;;^UTILITY(U,$J,358.3,16252,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16873,1,3,0)
- ;;=3^518.89
- ;;^UTILITY(U,$J,358.3,16873,1,4,0)
- ;;=4^Lung Nodule
- ;;^UTILITY(U,$J,358.3,16873,2)
- ;;=Lung Nodule^87486
- ;;^UTILITY(U,$J,358.3,16874,0)
- ;;=519.11^^87^1026^1
- ;;^UTILITY(U,$J,358.3,16874,1,0)
+ ;;^UTILITY(U,$J,358.3,16252,1,3,0)
+ ;;=3^Personal Hx Malig Neop Skin
+ ;;^UTILITY(U,$J,358.3,16252,1,4,0)
+ ;;=4^Z85.828
+ ;;^UTILITY(U,$J,358.3,16252,2)
+ ;;=^5063443
+ ;;^UTILITY(U,$J,358.3,16253,0)
+ ;;=Z85.47^^61^728^29
+ ;;^UTILITY(U,$J,358.3,16253,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16874,1,3,0)
- ;;=3^519.11
- ;;^UTILITY(U,$J,358.3,16874,1,4,0)
- ;;=4^Acute Bronchospasm
- ;;^UTILITY(U,$J,358.3,16874,2)
- ;;=^334092
- ;;^UTILITY(U,$J,358.3,16875,0)
- ;;=519.19^^87^1026^15
- ;;^UTILITY(U,$J,358.3,16875,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16875,1,3,0)
- ;;=3^519.19
- ;;^UTILITY(U,$J,358.3,16875,1,4,0)
- ;;=4^Trachea/Bronchus Disease NEC
- ;;^UTILITY(U,$J,358.3,16875,2)
- ;;=^87499
- ;;^UTILITY(U,$J,358.3,16876,0)
- ;;=V55.0^^87^1026^11
- ;;^UTILITY(U,$J,358.3,16876,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16253,1,3,0)
+ ;;=3^Personal Hx Malig Neop Testis

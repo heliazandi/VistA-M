@@ -1,132 +1,130 @@
-IBDEI1NS ; ; 06-AUG-2015
+IBDEI1NS ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,29467,0)
- ;;=M54.2^^176^1884^4
- ;;^UTILITY(U,$J,358.3,29467,1,0)
+ ;;^UTILITY(U,$J,358.3,28185,0)
+ ;;=96411^^111^1412^3^^^^1
+ ;;^UTILITY(U,$J,358.3,28185,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,28185,1,2,0)
+ ;;=2^96411
+ ;;^UTILITY(U,$J,358.3,28185,1,3,0)
+ ;;=3^CHEMO IV PUSH ADDL DRUG
+ ;;^UTILITY(U,$J,358.3,28186,0)
+ ;;=99091^^111^1413^1^^^^1
+ ;;^UTILITY(U,$J,358.3,28186,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,28186,1,2,0)
+ ;;=2^99091
+ ;;^UTILITY(U,$J,358.3,28186,1,3,0)
+ ;;=3^COLLECT/REVIEW DATA FROM PT > 29MIN
+ ;;^UTILITY(U,$J,358.3,28187,0)
+ ;;=36430^^111^1414^1^^^^1
+ ;;^UTILITY(U,$J,358.3,28187,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,28187,1,2,0)
+ ;;=2^36430
+ ;;^UTILITY(U,$J,358.3,28187,1,3,0)
+ ;;=3^BLOOD TRANSFUSION SERVICE
+ ;;^UTILITY(U,$J,358.3,28188,0)
+ ;;=S9445^^111^1415^1^^^^1
+ ;;^UTILITY(U,$J,358.3,28188,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,28188,1,2,0)
+ ;;=2^S9445
+ ;;^UTILITY(U,$J,358.3,28188,1,3,0)
+ ;;=3^PT EDUCATION,INDIV,PER ENCOUNTER
+ ;;^UTILITY(U,$J,358.3,28189,0)
+ ;;=L89.010^^112^1416^78
+ ;;^UTILITY(U,$J,358.3,28189,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29467,1,3,0)
- ;;=3^Cervicalgia
- ;;^UTILITY(U,$J,358.3,29467,1,4,0)
- ;;=4^M54.2
- ;;^UTILITY(U,$J,358.3,29467,2)
- ;;=^5012304
- ;;^UTILITY(U,$J,358.3,29468,0)
- ;;=I65.21^^176^1884^9
- ;;^UTILITY(U,$J,358.3,29468,1,0)
+ ;;^UTILITY(U,$J,358.3,28189,1,3,0)
+ ;;=3^Pressure Ulcer Right Elbow,Unstageable
+ ;;^UTILITY(U,$J,358.3,28189,1,4,0)
+ ;;=4^L89.010
+ ;;^UTILITY(U,$J,358.3,28189,2)
+ ;;=^5009337
+ ;;^UTILITY(U,$J,358.3,28190,0)
+ ;;=L89.011^^112^1416^73
+ ;;^UTILITY(U,$J,358.3,28190,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29468,1,3,0)
- ;;=3^Occlusion and stenosis of right carotid artery
- ;;^UTILITY(U,$J,358.3,29468,1,4,0)
- ;;=4^I65.21
- ;;^UTILITY(U,$J,358.3,29468,2)
- ;;=^5007360
- ;;^UTILITY(U,$J,358.3,29469,0)
- ;;=I65.22^^176^1884^8
- ;;^UTILITY(U,$J,358.3,29469,1,0)
+ ;;^UTILITY(U,$J,358.3,28190,1,3,0)
+ ;;=3^Pressure Ulcer Right Elbow,Stage 1
+ ;;^UTILITY(U,$J,358.3,28190,1,4,0)
+ ;;=4^L89.011
+ ;;^UTILITY(U,$J,358.3,28190,2)
+ ;;=^5009338
+ ;;^UTILITY(U,$J,358.3,28191,0)
+ ;;=L89.012^^112^1416^74
+ ;;^UTILITY(U,$J,358.3,28191,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29469,1,3,0)
- ;;=3^Occlusion and stenosis of left carotid artery
- ;;^UTILITY(U,$J,358.3,29469,1,4,0)
- ;;=4^I65.22
- ;;^UTILITY(U,$J,358.3,29469,2)
- ;;=^5007361
- ;;^UTILITY(U,$J,358.3,29470,0)
- ;;=M47.812^^176^1884^17
- ;;^UTILITY(U,$J,358.3,29470,1,0)
+ ;;^UTILITY(U,$J,358.3,28191,1,3,0)
+ ;;=3^Pressure Ulcer Right Elbow,Stage 2
+ ;;^UTILITY(U,$J,358.3,28191,1,4,0)
+ ;;=4^L89.012
+ ;;^UTILITY(U,$J,358.3,28191,2)
+ ;;=^5009339
+ ;;^UTILITY(U,$J,358.3,28192,0)
+ ;;=L89.013^^112^1416^75
+ ;;^UTILITY(U,$J,358.3,28192,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29470,1,3,0)
- ;;=3^Spondylosis w/o myelopathy or radiculopathy, cervical region
- ;;^UTILITY(U,$J,358.3,29470,1,4,0)
- ;;=4^M47.812
- ;;^UTILITY(U,$J,358.3,29470,2)
- ;;=^5012069
- ;;^UTILITY(U,$J,358.3,29471,0)
- ;;=M47.12^^176^1884^16
- ;;^UTILITY(U,$J,358.3,29471,1,0)
+ ;;^UTILITY(U,$J,358.3,28192,1,3,0)
+ ;;=3^Pressure Ulcer Right Elbow,Stage 3
+ ;;^UTILITY(U,$J,358.3,28192,1,4,0)
+ ;;=4^L89.013
+ ;;^UTILITY(U,$J,358.3,28192,2)
+ ;;=^5009340
+ ;;^UTILITY(U,$J,358.3,28193,0)
+ ;;=L89.014^^112^1416^76
+ ;;^UTILITY(U,$J,358.3,28193,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29471,1,3,0)
- ;;=3^Spondylosis w/ Myelopathy,Cervical Region NEC
- ;;^UTILITY(U,$J,358.3,29471,1,4,0)
- ;;=4^M47.12
- ;;^UTILITY(U,$J,358.3,29471,2)
- ;;=^5012052
- ;;^UTILITY(U,$J,358.3,29472,0)
- ;;=M48.02^^176^1884^14
- ;;^UTILITY(U,$J,358.3,29472,1,0)
+ ;;^UTILITY(U,$J,358.3,28193,1,3,0)
+ ;;=3^Pressure Ulcer Right Elbow,Stage 4
+ ;;^UTILITY(U,$J,358.3,28193,1,4,0)
+ ;;=4^L89.014
+ ;;^UTILITY(U,$J,358.3,28193,2)
+ ;;=^5009341
+ ;;^UTILITY(U,$J,358.3,28194,0)
+ ;;=L89.019^^112^1416^77
+ ;;^UTILITY(U,$J,358.3,28194,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29472,1,3,0)
- ;;=3^Spinal stenosis, cervical region
- ;;^UTILITY(U,$J,358.3,29472,1,4,0)
- ;;=4^M48.02
- ;;^UTILITY(U,$J,358.3,29472,2)
- ;;=^5012089
- ;;^UTILITY(U,$J,358.3,29473,0)
- ;;=M45.2^^176^1884^1
- ;;^UTILITY(U,$J,358.3,29473,1,0)
+ ;;^UTILITY(U,$J,358.3,28194,1,3,0)
+ ;;=3^Pressure Ulcer Right Elbow,Unspec Stage
+ ;;^UTILITY(U,$J,358.3,28194,1,4,0)
+ ;;=4^L89.019
+ ;;^UTILITY(U,$J,358.3,28194,2)
+ ;;=^5133648
+ ;;^UTILITY(U,$J,358.3,28195,0)
+ ;;=L89.029^^112^1416^29
+ ;;^UTILITY(U,$J,358.3,28195,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29473,1,3,0)
- ;;=3^Ankylosing spondylitis of cervical region
- ;;^UTILITY(U,$J,358.3,29473,1,4,0)
- ;;=4^M45.2
- ;;^UTILITY(U,$J,358.3,29473,2)
- ;;=^5011962
- ;;^UTILITY(U,$J,358.3,29474,0)
- ;;=M45.0^^176^1884^2
- ;;^UTILITY(U,$J,358.3,29474,1,0)
+ ;;^UTILITY(U,$J,358.3,28195,1,3,0)
+ ;;=3^Pressure Ulcer Left Elbow,Unspec Stage
+ ;;^UTILITY(U,$J,358.3,28195,1,4,0)
+ ;;=4^L89.029
+ ;;^UTILITY(U,$J,358.3,28195,2)
+ ;;=^5133649
+ ;;^UTILITY(U,$J,358.3,28196,0)
+ ;;=L89.020^^112^1416^30
+ ;;^UTILITY(U,$J,358.3,28196,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29474,1,3,0)
- ;;=3^Ankylosing spondylitis of multiple sites in spine
- ;;^UTILITY(U,$J,358.3,29474,1,4,0)
- ;;=4^M45.0
- ;;^UTILITY(U,$J,358.3,29474,2)
- ;;=^5011960
- ;;^UTILITY(U,$J,358.3,29475,0)
- ;;=Q76.2^^176^1884^5
- ;;^UTILITY(U,$J,358.3,29475,1,0)
+ ;;^UTILITY(U,$J,358.3,28196,1,3,0)
+ ;;=3^Pressure Ulcer Left Elbow,Unstageable
+ ;;^UTILITY(U,$J,358.3,28196,1,4,0)
+ ;;=4^L89.020
+ ;;^UTILITY(U,$J,358.3,28196,2)
+ ;;=^5009342
+ ;;^UTILITY(U,$J,358.3,28197,0)
+ ;;=L89.021^^112^1416^25
+ ;;^UTILITY(U,$J,358.3,28197,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29475,1,3,0)
- ;;=3^Congenital spondylolisthesis
- ;;^UTILITY(U,$J,358.3,29475,1,4,0)
- ;;=4^Q76.2
- ;;^UTILITY(U,$J,358.3,29475,2)
- ;;=^5019003
- ;;^UTILITY(U,$J,358.3,29476,0)
- ;;=M43.10^^176^1884^15
- ;;^UTILITY(U,$J,358.3,29476,1,0)
+ ;;^UTILITY(U,$J,358.3,28197,1,3,0)
+ ;;=3^Pressure Ulcer Left Elbow,Stage 1
+ ;;^UTILITY(U,$J,358.3,28197,1,4,0)
+ ;;=4^L89.021
+ ;;^UTILITY(U,$J,358.3,28197,2)
+ ;;=^5009343
+ ;;^UTILITY(U,$J,358.3,28198,0)
+ ;;=L89.022^^112^1416^26
+ ;;^UTILITY(U,$J,358.3,28198,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29476,1,3,0)
- ;;=3^Spondylolisthesis, site unspecified
- ;;^UTILITY(U,$J,358.3,29476,1,4,0)
- ;;=4^M43.10
- ;;^UTILITY(U,$J,358.3,29476,2)
- ;;=^5011921
- ;;^UTILITY(U,$J,358.3,29477,0)
- ;;=G95.0^^176^1884^18
- ;;^UTILITY(U,$J,358.3,29477,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29477,1,3,0)
- ;;=3^Syringomyelia and syringobulbia
- ;;^UTILITY(U,$J,358.3,29477,1,4,0)
- ;;=4^G95.0
- ;;^UTILITY(U,$J,358.3,29477,2)
- ;;=^116874
- ;;^UTILITY(U,$J,358.3,29478,0)
- ;;=G95.20^^176^1884^6
- ;;^UTILITY(U,$J,358.3,29478,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29478,1,3,0)
- ;;=3^Cord Compression,Unspec
- ;;^UTILITY(U,$J,358.3,29478,1,4,0)
- ;;=4^G95.20
- ;;^UTILITY(U,$J,358.3,29478,2)
- ;;=^5004190
- ;;^UTILITY(U,$J,358.3,29479,0)
- ;;=G96.0^^176^1884^3
- ;;^UTILITY(U,$J,358.3,29479,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,29479,1,3,0)
- ;;=3^Cerebrospinal fluid leak
- ;;^UTILITY(U,$J,358.3,29479,1,4,0)
- ;;=4^G96.0

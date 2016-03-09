@@ -1,142 +1,128 @@
-IBDEI0IH ; ; 06-AUG-2015
+IBDEI0IH ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8648,2)
- ;;=Jaundice^66155
- ;;^UTILITY(U,$J,358.3,8649,0)
- ;;=782.2^^35^487^110
- ;;^UTILITY(U,$J,358.3,8649,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8649,1,4,0)
- ;;=4^782.2
- ;;^UTILITY(U,$J,358.3,8649,1,5,0)
- ;;=5^Mass, Lump of skin
- ;;^UTILITY(U,$J,358.3,8649,2)
- ;;=^71690
- ;;^UTILITY(U,$J,358.3,8650,0)
- ;;=703.8^^35^487^121
- ;;^UTILITY(U,$J,358.3,8650,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8650,1,4,0)
- ;;=4^703.8
- ;;^UTILITY(U,$J,358.3,8650,1,5,0)
- ;;=5^Onychodystrophy/Onycholysis
- ;;^UTILITY(U,$J,358.3,8650,2)
- ;;=Onychodystrophy/Onycholysis^271926
- ;;^UTILITY(U,$J,358.3,8651,0)
- ;;=110.1^^35^487^122
- ;;^UTILITY(U,$J,358.3,8651,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8651,1,4,0)
- ;;=4^110.1
- ;;^UTILITY(U,$J,358.3,8651,1,5,0)
- ;;=5^Onychomycosis finger or toe
- ;;^UTILITY(U,$J,358.3,8651,2)
- ;;=^33173
- ;;^UTILITY(U,$J,358.3,8652,0)
- ;;=782.61^^35^487^125
- ;;^UTILITY(U,$J,358.3,8652,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8652,1,4,0)
- ;;=4^782.61
- ;;^UTILITY(U,$J,358.3,8652,1,5,0)
- ;;=5^Pallor
- ;;^UTILITY(U,$J,358.3,8652,2)
- ;;=Pallor^89216
- ;;^UTILITY(U,$J,358.3,8653,0)
- ;;=782.1^^35^487^137
- ;;^UTILITY(U,$J,358.3,8653,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8653,1,4,0)
- ;;=4^782.1
- ;;^UTILITY(U,$J,358.3,8653,1,5,0)
- ;;=5^Skin eruption, nonspec
- ;;^UTILITY(U,$J,358.3,8653,2)
- ;;=^102948
- ;;^UTILITY(U,$J,358.3,8654,0)
- ;;=788.35^^35^487^54
- ;;^UTILITY(U,$J,358.3,8654,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8654,1,4,0)
- ;;=4^788.35
- ;;^UTILITY(U,$J,358.3,8654,1,5,0)
- ;;=5^Dribbling, post-void
- ;;^UTILITY(U,$J,358.3,8654,2)
- ;;=^293938
- ;;^UTILITY(U,$J,358.3,8655,0)
- ;;=788.1^^35^487^61
- ;;^UTILITY(U,$J,358.3,8655,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8655,1,4,0)
- ;;=4^788.1
- ;;^UTILITY(U,$J,358.3,8655,1,5,0)
- ;;=5^Dysuria
- ;;^UTILITY(U,$J,358.3,8655,2)
- ;;=Dysuria^37716
- ;;^UTILITY(U,$J,358.3,8656,0)
- ;;=788.36^^35^487^68
- ;;^UTILITY(U,$J,358.3,8656,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8656,1,4,0)
- ;;=4^788.36
- ;;^UTILITY(U,$J,358.3,8656,1,5,0)
- ;;=5^Enuresis, nocturnal
- ;;^UTILITY(U,$J,358.3,8656,2)
- ;;=^293939
- ;;^UTILITY(U,$J,358.3,8657,0)
- ;;=788.41^^35^487^77
- ;;^UTILITY(U,$J,358.3,8657,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8657,1,4,0)
- ;;=4^788.41
- ;;^UTILITY(U,$J,358.3,8657,1,5,0)
- ;;=5^Frequency of urine
- ;;^UTILITY(U,$J,358.3,8657,2)
- ;;=^124396
- ;;^UTILITY(U,$J,358.3,8658,0)
- ;;=788.21^^35^487^91
- ;;^UTILITY(U,$J,358.3,8658,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8658,1,4,0)
- ;;=4^788.21
- ;;^UTILITY(U,$J,358.3,8658,1,5,0)
- ;;=5^Incomplet bladder emptying
- ;;^UTILITY(U,$J,358.3,8658,2)
- ;;=^295766
- ;;^UTILITY(U,$J,358.3,8659,0)
- ;;=788.34^^35^487^93
- ;;^UTILITY(U,$J,358.3,8659,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8659,1,4,0)
- ;;=4^788.34
- ;;^UTILITY(U,$J,358.3,8659,1,5,0)
- ;;=5^Incontinence, continuous
- ;;^UTILITY(U,$J,358.3,8659,2)
- ;;=^293937
- ;;^UTILITY(U,$J,358.3,8660,0)
- ;;=788.33^^35^487^94
- ;;^UTILITY(U,$J,358.3,8660,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8660,1,4,0)
- ;;=4^788.33
- ;;^UTILITY(U,$J,358.3,8660,1,5,0)
- ;;=5^Incontinence, mixed
- ;;^UTILITY(U,$J,358.3,8660,2)
- ;;=^293936
- ;;^UTILITY(U,$J,358.3,8661,0)
- ;;=788.30^^35^487^95
- ;;^UTILITY(U,$J,358.3,8661,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8661,1,4,0)
- ;;=4^788.30
- ;;^UTILITY(U,$J,358.3,8661,1,5,0)
- ;;=5^Incontinence, other
- ;;^UTILITY(U,$J,358.3,8661,2)
- ;;=Incontinence, other^124400
- ;;^UTILITY(U,$J,358.3,8662,0)
- ;;=788.32^^35^487^97
- ;;^UTILITY(U,$J,358.3,8662,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8662,1,4,0)
- ;;=4^788.32
+ ;;^UTILITY(U,$J,358.3,8579,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8579,1,3,0)
+ ;;=3^Sudden idiopathic hearing loss, left ear
+ ;;^UTILITY(U,$J,358.3,8579,1,4,0)
+ ;;=4^H91.22
+ ;;^UTILITY(U,$J,358.3,8579,2)
+ ;;=^5006938
+ ;;^UTILITY(U,$J,358.3,8580,0)
+ ;;=H90.0^^39^462^21
+ ;;^UTILITY(U,$J,358.3,8580,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8580,1,3,0)
+ ;;=3^Conductive hearing loss, bilateral
+ ;;^UTILITY(U,$J,358.3,8580,1,4,0)
+ ;;=4^H90.0
+ ;;^UTILITY(U,$J,358.3,8580,2)
+ ;;=^335257
+ ;;^UTILITY(U,$J,358.3,8581,0)
+ ;;=H90.11^^39^462^20
+ ;;^UTILITY(U,$J,358.3,8581,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8581,1,3,0)
+ ;;=3^Condctv hear loss, uni, right ear, w unrestr hear cntra side
+ ;;^UTILITY(U,$J,358.3,8581,1,4,0)
+ ;;=4^H90.11
+ ;;^UTILITY(U,$J,358.3,8581,2)
+ ;;=^5006918
+ ;;^UTILITY(U,$J,358.3,8582,0)
+ ;;=H90.12^^39^462^19
+ ;;^UTILITY(U,$J,358.3,8582,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8582,1,3,0)
+ ;;=3^Condctv hear loss, uni, left ear, w unrestr hear cntra side
+ ;;^UTILITY(U,$J,358.3,8582,1,4,0)
+ ;;=4^H90.12
+ ;;^UTILITY(U,$J,358.3,8582,2)
+ ;;=^5006919
+ ;;^UTILITY(U,$J,358.3,8583,0)
+ ;;=H90.3^^39^462^53
+ ;;^UTILITY(U,$J,358.3,8583,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8583,1,3,0)
+ ;;=3^Sensorineural hearing loss, bilateral
+ ;;^UTILITY(U,$J,358.3,8583,1,4,0)
+ ;;=4^H90.3
+ ;;^UTILITY(U,$J,358.3,8583,2)
+ ;;=^335328
+ ;;^UTILITY(U,$J,358.3,8584,0)
+ ;;=H90.41^^39^462^55
+ ;;^UTILITY(U,$J,358.3,8584,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8584,1,3,0)
+ ;;=3^Snsrnrl hear loss, uni, right ear, w unrestr hear cntra side
+ ;;^UTILITY(U,$J,358.3,8584,1,4,0)
+ ;;=4^H90.41
+ ;;^UTILITY(U,$J,358.3,8584,2)
+ ;;=^5006921
+ ;;^UTILITY(U,$J,358.3,8585,0)
+ ;;=H90.42^^39^462^54
+ ;;^UTILITY(U,$J,358.3,8585,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8585,1,3,0)
+ ;;=3^Snsrnrl hear loss, uni, left ear, w unrestr hear cntra side
+ ;;^UTILITY(U,$J,358.3,8585,1,4,0)
+ ;;=4^H90.42
+ ;;^UTILITY(U,$J,358.3,8585,2)
+ ;;=^5006922
+ ;;^UTILITY(U,$J,358.3,8586,0)
+ ;;=H90.6^^39^462^44
+ ;;^UTILITY(U,$J,358.3,8586,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8586,1,3,0)
+ ;;=3^Mixed conductive and sensorineural hearing loss, bilateral
+ ;;^UTILITY(U,$J,358.3,8586,1,4,0)
+ ;;=4^H90.6
+ ;;^UTILITY(U,$J,358.3,8586,2)
+ ;;=^5006924
+ ;;^UTILITY(U,$J,358.3,8587,0)
+ ;;=H90.71^^39^462^43
+ ;;^UTILITY(U,$J,358.3,8587,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8587,1,3,0)
+ ;;=3^Mix cndct/snrl hear loss,uni,r ear,w unrestr hear cntra side
+ ;;^UTILITY(U,$J,358.3,8587,1,4,0)
+ ;;=4^H90.71
+ ;;^UTILITY(U,$J,358.3,8587,2)
+ ;;=^5006925
+ ;;^UTILITY(U,$J,358.3,8588,0)
+ ;;=H90.72^^39^462^42
+ ;;^UTILITY(U,$J,358.3,8588,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8588,1,3,0)
+ ;;=3^Mix cndct/snrl hear loss,uni,l ear,w unrestr hear cntra side
+ ;;^UTILITY(U,$J,358.3,8588,1,4,0)
+ ;;=4^H90.72
+ ;;^UTILITY(U,$J,358.3,8588,2)
+ ;;=^5006926
+ ;;^UTILITY(U,$J,358.3,8589,0)
+ ;;=H61.001^^39^462^50
+ ;;^UTILITY(U,$J,358.3,8589,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8589,1,3,0)
+ ;;=3^Perichondritis of right external ear
+ ;;^UTILITY(U,$J,358.3,8589,1,4,0)
+ ;;=4^H61.001
+ ;;^UTILITY(U,$J,358.3,8589,2)
+ ;;=^5006499
+ ;;^UTILITY(U,$J,358.3,8590,0)
+ ;;=H61.002^^39^462^49
+ ;;^UTILITY(U,$J,358.3,8590,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8590,1,3,0)
+ ;;=3^Perichondritis of left external ear
+ ;;^UTILITY(U,$J,358.3,8590,1,4,0)
+ ;;=4^H61.002
+ ;;^UTILITY(U,$J,358.3,8590,2)
+ ;;=^5006500
+ ;;^UTILITY(U,$J,358.3,8591,0)
+ ;;=H65.111^^39^462^8
+ ;;^UTILITY(U,$J,358.3,8591,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8591,1,3,0)
+ ;;=3^Acute/subacute allergic otitis media, r ear

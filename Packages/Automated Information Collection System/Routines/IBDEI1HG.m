@@ -1,136 +1,124 @@
-IBDEI1HG ; ; 06-AUG-2015
+IBDEI1HG ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,26309,0)
- ;;=304.22^^152^1680^45
- ;;^UTILITY(U,$J,358.3,26309,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26309,1,2,0)
- ;;=2^304.22
- ;;^UTILITY(U,$J,358.3,26309,1,5,0)
- ;;=5^Cocaine Depend, Episodic
- ;;^UTILITY(U,$J,358.3,26309,2)
- ;;=^268199
- ;;^UTILITY(U,$J,358.3,26310,0)
- ;;=304.31^^152^1680^36
- ;;^UTILITY(U,$J,358.3,26310,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26310,1,2,0)
- ;;=2^304.31
- ;;^UTILITY(U,$J,358.3,26310,1,5,0)
- ;;=5^Cannabis Depend, Continuous
- ;;^UTILITY(U,$J,358.3,26310,2)
- ;;=^268201
- ;;^UTILITY(U,$J,358.3,26311,0)
- ;;=304.32^^152^1680^37
- ;;^UTILITY(U,$J,358.3,26311,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26311,1,2,0)
- ;;=2^304.32
- ;;^UTILITY(U,$J,358.3,26311,1,5,0)
- ;;=5^Cannabis Depend, Episodic
- ;;^UTILITY(U,$J,358.3,26311,2)
- ;;=^268202
- ;;^UTILITY(U,$J,358.3,26312,0)
- ;;=304.41^^152^1680^20
- ;;^UTILITY(U,$J,358.3,26312,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26312,1,2,0)
- ;;=2^304.41
- ;;^UTILITY(U,$J,358.3,26312,1,5,0)
- ;;=5^Amphetamine Depend, Continuous
- ;;^UTILITY(U,$J,358.3,26312,2)
- ;;=^268205
- ;;^UTILITY(U,$J,358.3,26313,0)
- ;;=304.42^^152^1680^21
- ;;^UTILITY(U,$J,358.3,26313,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26313,1,2,0)
- ;;=2^304.42
- ;;^UTILITY(U,$J,358.3,26313,1,5,0)
- ;;=5^Amphetamine Depend, Episodic
- ;;^UTILITY(U,$J,358.3,26313,2)
- ;;=^268206
- ;;^UTILITY(U,$J,358.3,26314,0)
- ;;=304.51^^152^1680^60
- ;;^UTILITY(U,$J,358.3,26314,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26314,1,2,0)
- ;;=2^304.51
- ;;^UTILITY(U,$J,358.3,26314,1,5,0)
- ;;=5^Hallucinogen Depend, Continuous
- ;;^UTILITY(U,$J,358.3,26314,2)
- ;;=^268208
- ;;^UTILITY(U,$J,358.3,26315,0)
- ;;=304.52^^152^1680^61
- ;;^UTILITY(U,$J,358.3,26315,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26315,1,2,0)
- ;;=2^304.52
- ;;^UTILITY(U,$J,358.3,26315,1,5,0)
- ;;=5^Hallucinogen Depend, Episodic
- ;;^UTILITY(U,$J,358.3,26315,2)
- ;;=^268209
- ;;^UTILITY(U,$J,358.3,26316,0)
- ;;=304.61^^152^1680^52
- ;;^UTILITY(U,$J,358.3,26316,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26316,1,2,0)
- ;;=2^304.61
- ;;^UTILITY(U,$J,358.3,26316,1,5,0)
- ;;=5^Drug Depend-Other, Continuous
- ;;^UTILITY(U,$J,358.3,26316,2)
- ;;=^268211
- ;;^UTILITY(U,$J,358.3,26317,0)
- ;;=304.62^^152^1680^53
- ;;^UTILITY(U,$J,358.3,26317,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26317,1,2,0)
- ;;=2^304.62
- ;;^UTILITY(U,$J,358.3,26317,1,5,0)
- ;;=5^Drug Depend-Other, Episodic
- ;;^UTILITY(U,$J,358.3,26317,2)
- ;;=^268212
- ;;^UTILITY(U,$J,358.3,26318,0)
- ;;=304.71^^152^1680^66
- ;;^UTILITY(U,$J,358.3,26318,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26318,1,2,0)
- ;;=2^304.71
- ;;^UTILITY(U,$J,358.3,26318,1,5,0)
- ;;=5^Opioid + Other Depend, Continuous
- ;;^UTILITY(U,$J,358.3,26318,2)
- ;;=^268215
- ;;^UTILITY(U,$J,358.3,26319,0)
- ;;=304.72^^152^1680^67
- ;;^UTILITY(U,$J,358.3,26319,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26319,1,2,0)
- ;;=2^304.72
- ;;^UTILITY(U,$J,358.3,26319,1,5,0)
- ;;=5^Opioid + Other Depend, Episodic
- ;;^UTILITY(U,$J,358.3,26319,2)
- ;;=^268216
- ;;^UTILITY(U,$J,358.3,26320,0)
- ;;=304.81^^152^1680^48
- ;;^UTILITY(U,$J,358.3,26320,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26320,1,2,0)
- ;;=2^304.81
- ;;^UTILITY(U,$J,358.3,26320,1,5,0)
- ;;=5^Comb Drug Depend, Continuous
- ;;^UTILITY(U,$J,358.3,26320,2)
- ;;=^268219
- ;;^UTILITY(U,$J,358.3,26321,0)
- ;;=304.82^^152^1680^49
- ;;^UTILITY(U,$J,358.3,26321,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,26321,1,2,0)
- ;;=2^304.82
- ;;^UTILITY(U,$J,358.3,26321,1,5,0)
- ;;=5^Comb Drug Depend, Episodic
- ;;^UTILITY(U,$J,358.3,26321,2)
- ;;=^268220
- ;;^UTILITY(U,$J,358.3,26322,0)
- ;;=305.01^^152^1680^1
+ ;;^UTILITY(U,$J,358.3,25172,1,4,0)
+ ;;=4^F31.73
+ ;;^UTILITY(U,$J,358.3,25172,2)
+ ;;=^5003513
+ ;;^UTILITY(U,$J,358.3,25173,0)
+ ;;=F31.74^^95^1141^11
+ ;;^UTILITY(U,$J,358.3,25173,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25173,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Manic,In Full Remission
+ ;;^UTILITY(U,$J,358.3,25173,1,4,0)
+ ;;=4^F31.74
+ ;;^UTILITY(U,$J,358.3,25173,2)
+ ;;=^5003514
+ ;;^UTILITY(U,$J,358.3,25174,0)
+ ;;=F31.30^^95^1141^12
+ ;;^UTILITY(U,$J,358.3,25174,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25174,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Depressed,Unspec
+ ;;^UTILITY(U,$J,358.3,25174,1,4,0)
+ ;;=4^F31.30
+ ;;^UTILITY(U,$J,358.3,25174,2)
+ ;;=^5003500
+ ;;^UTILITY(U,$J,358.3,25175,0)
+ ;;=F31.31^^95^1141^13
+ ;;^UTILITY(U,$J,358.3,25175,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25175,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Depressed,Mild
+ ;;^UTILITY(U,$J,358.3,25175,1,4,0)
+ ;;=4^F31.31
+ ;;^UTILITY(U,$J,358.3,25175,2)
+ ;;=^5003501
+ ;;^UTILITY(U,$J,358.3,25176,0)
+ ;;=F31.32^^95^1141^14
+ ;;^UTILITY(U,$J,358.3,25176,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25176,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Depressed,Moderate
+ ;;^UTILITY(U,$J,358.3,25176,1,4,0)
+ ;;=4^F31.32
+ ;;^UTILITY(U,$J,358.3,25176,2)
+ ;;=^5003502
+ ;;^UTILITY(U,$J,358.3,25177,0)
+ ;;=F31.4^^95^1141^15
+ ;;^UTILITY(U,$J,358.3,25177,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25177,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Depressed,Severe
+ ;;^UTILITY(U,$J,358.3,25177,1,4,0)
+ ;;=4^F31.4
+ ;;^UTILITY(U,$J,358.3,25177,2)
+ ;;=^5003503
+ ;;^UTILITY(U,$J,358.3,25178,0)
+ ;;=F31.5^^95^1141^16
+ ;;^UTILITY(U,$J,358.3,25178,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25178,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Depressed,w/ Psychotic Features
+ ;;^UTILITY(U,$J,358.3,25178,1,4,0)
+ ;;=4^F31.5
+ ;;^UTILITY(U,$J,358.3,25178,2)
+ ;;=^5003504
+ ;;^UTILITY(U,$J,358.3,25179,0)
+ ;;=F31.75^^95^1141^17
+ ;;^UTILITY(U,$J,358.3,25179,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25179,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Depressed,In Partial Remission
+ ;;^UTILITY(U,$J,358.3,25179,1,4,0)
+ ;;=4^F31.75
+ ;;^UTILITY(U,$J,358.3,25179,2)
+ ;;=^5003515
+ ;;^UTILITY(U,$J,358.3,25180,0)
+ ;;=F31.76^^95^1141^18
+ ;;^UTILITY(U,$J,358.3,25180,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25180,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Depressed,In Full Remission
+ ;;^UTILITY(U,$J,358.3,25180,1,4,0)
+ ;;=4^F31.76
+ ;;^UTILITY(U,$J,358.3,25180,2)
+ ;;=^5003516
+ ;;^UTILITY(U,$J,358.3,25181,0)
+ ;;=F31.9^^95^1141^19
+ ;;^UTILITY(U,$J,358.3,25181,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25181,1,3,0)
+ ;;=3^Bipolar I Disorder,Current/Recent Episode Unspec
+ ;;^UTILITY(U,$J,358.3,25181,1,4,0)
+ ;;=4^F31.9
+ ;;^UTILITY(U,$J,358.3,25181,2)
+ ;;=^331892
+ ;;^UTILITY(U,$J,358.3,25182,0)
+ ;;=F31.81^^95^1141^20
+ ;;^UTILITY(U,$J,358.3,25182,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25182,1,3,0)
+ ;;=3^Bipolar II Disorder
+ ;;^UTILITY(U,$J,358.3,25182,1,4,0)
+ ;;=4^F31.81
+ ;;^UTILITY(U,$J,358.3,25182,2)
+ ;;=^5003519
+ ;;^UTILITY(U,$J,358.3,25183,0)
+ ;;=F34.0^^95^1141^22
+ ;;^UTILITY(U,$J,358.3,25183,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25183,1,3,0)
+ ;;=3^Cyclothymic Disorder
+ ;;^UTILITY(U,$J,358.3,25183,1,4,0)
+ ;;=4^F34.0
+ ;;^UTILITY(U,$J,358.3,25183,2)
+ ;;=^5003538
+ ;;^UTILITY(U,$J,358.3,25184,0)
+ ;;=F31.0^^95^1141^3
+ ;;^UTILITY(U,$J,358.3,25184,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25184,1,3,0)
+ ;;=3^Bipolar Disorder,Current/Recent Episode Hypomanic

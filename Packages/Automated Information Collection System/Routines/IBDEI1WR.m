@@ -1,120 +1,136 @@
-IBDEI1WR ; ; 06-AUG-2015
+IBDEI1WR ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33549,2)
- ;;=^5031622
- ;;^UTILITY(U,$J,358.3,33550,0)
- ;;=S56.114A^^182^2005^31
- ;;^UTILITY(U,$J,358.3,33550,1,0)
+ ;;^UTILITY(U,$J,358.3,32374,1,3,0)
+ ;;=3^Gout,Drug-Induced Lft Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,32374,1,4,0)
+ ;;=4^M10.272
+ ;;^UTILITY(U,$J,358.3,32374,2)
+ ;;=^5010352
+ ;;^UTILITY(U,$J,358.3,32375,0)
+ ;;=M10.271^^126^1610^12
+ ;;^UTILITY(U,$J,358.3,32375,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33550,1,3,0)
- ;;=3^Strain of Left Middle Finger at Forearm Level Flexor Muscle/Fasc/Tendon
- ;;^UTILITY(U,$J,358.3,33550,1,4,0)
- ;;=4^S56.114A
- ;;^UTILITY(U,$J,358.3,33550,2)
- ;;=^5031625
- ;;^UTILITY(U,$J,358.3,33551,0)
- ;;=S56.115A^^182^2005^53
- ;;^UTILITY(U,$J,358.3,33551,1,0)
+ ;;^UTILITY(U,$J,358.3,32375,1,3,0)
+ ;;=3^Gout,Drug-Induced Rt Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,32375,1,4,0)
+ ;;=4^M10.271
+ ;;^UTILITY(U,$J,358.3,32375,2)
+ ;;=^5010351
+ ;;^UTILITY(U,$J,358.3,32376,0)
+ ;;=M10.29^^126^1610^11
+ ;;^UTILITY(U,$J,358.3,32376,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33551,1,3,0)
- ;;=3^Strain of Right Ring Finger at Forearm Level Flexor Muscle/Fasc/Tendon
- ;;^UTILITY(U,$J,358.3,33551,1,4,0)
- ;;=4^S56.115A
- ;;^UTILITY(U,$J,358.3,33551,2)
- ;;=^5031628
- ;;^UTILITY(U,$J,358.3,33552,0)
- ;;=S56.417A^^182^2005^45
- ;;^UTILITY(U,$J,358.3,33552,1,0)
+ ;;^UTILITY(U,$J,358.3,32376,1,3,0)
+ ;;=3^Gout,Drug-Induced Multiple Sites
+ ;;^UTILITY(U,$J,358.3,32376,1,4,0)
+ ;;=4^M10.29
+ ;;^UTILITY(U,$J,358.3,32376,2)
+ ;;=^5010355
+ ;;^UTILITY(U,$J,358.3,32377,0)
+ ;;=M10.172^^126^1610^15
+ ;;^UTILITY(U,$J,358.3,32377,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33552,1,3,0)
- ;;=3^Strain of Right Little Finger at Forearm Level Extn Musc/Fasc/Tendon
- ;;^UTILITY(U,$J,358.3,33552,1,4,0)
- ;;=4^S56.417A
- ;;^UTILITY(U,$J,358.3,33552,2)
- ;;=^5031781
- ;;^UTILITY(U,$J,358.3,33553,0)
- ;;=S56.418A^^182^2005^25
- ;;^UTILITY(U,$J,358.3,33553,1,0)
+ ;;^UTILITY(U,$J,358.3,32377,1,3,0)
+ ;;=3^Gout,Lead-Induced Lt Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,32377,1,4,0)
+ ;;=4^M10.172
+ ;;^UTILITY(U,$J,358.3,32377,2)
+ ;;=^5010328
+ ;;^UTILITY(U,$J,358.3,32378,0)
+ ;;=M10.171^^126^1610^16
+ ;;^UTILITY(U,$J,358.3,32378,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33553,1,3,0)
- ;;=3^Strain of Left Little Finger at Forearm Level Extn Muscle/Fasc/Tendon
- ;;^UTILITY(U,$J,358.3,33553,1,4,0)
- ;;=4^S56.418A
- ;;^UTILITY(U,$J,358.3,33553,2)
- ;;=^5031784
- ;;^UTILITY(U,$J,358.3,33554,0)
- ;;=S56.811A^^182^2005^41
- ;;^UTILITY(U,$J,358.3,33554,1,0)
+ ;;^UTILITY(U,$J,358.3,32378,1,3,0)
+ ;;=3^Gout,Lead-Induced Rt Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,32378,1,4,0)
+ ;;=4^M10.171
+ ;;^UTILITY(U,$J,358.3,32378,2)
+ ;;=^5010327
+ ;;^UTILITY(U,$J,358.3,32379,0)
+ ;;=L92.3^^126^1610^17
+ ;;^UTILITY(U,$J,358.3,32379,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33554,1,3,0)
- ;;=3^Strain of Right Forearm Muscle/Fasc/Tendon
- ;;^UTILITY(U,$J,358.3,33554,1,4,0)
- ;;=4^S56.811A
- ;;^UTILITY(U,$J,358.3,33554,2)
- ;;=^5031862
- ;;^UTILITY(U,$J,358.3,33555,0)
- ;;=S56.812A^^182^2005^21
- ;;^UTILITY(U,$J,358.3,33555,1,0)
+ ;;^UTILITY(U,$J,358.3,32379,1,3,0)
+ ;;=3^Granuloma,FB of Skin/Subcutaneous Tissue
+ ;;^UTILITY(U,$J,358.3,32379,1,4,0)
+ ;;=4^L92.3
+ ;;^UTILITY(U,$J,358.3,32379,2)
+ ;;=^5009464
+ ;;^UTILITY(U,$J,358.3,32380,0)
+ ;;=M10.9^^126^1610^9
+ ;;^UTILITY(U,$J,358.3,32380,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33555,1,3,0)
- ;;=3^Strain of Left Forearm Muscle/Fasc/Tendon
- ;;^UTILITY(U,$J,358.3,33555,1,4,0)
- ;;=4^S56.812A
- ;;^UTILITY(U,$J,358.3,33555,2)
- ;;=^5031865
- ;;^UTILITY(U,$J,358.3,33556,0)
- ;;=S56.116A^^182^2005^33
- ;;^UTILITY(U,$J,358.3,33556,1,0)
+ ;;^UTILITY(U,$J,358.3,32380,1,3,0)
+ ;;=3^Gout, unspecified
+ ;;^UTILITY(U,$J,358.3,32380,1,4,0)
+ ;;=4^M10.9
+ ;;^UTILITY(U,$J,358.3,32380,2)
+ ;;=^5010404
+ ;;^UTILITY(U,$J,358.3,32381,0)
+ ;;=M67.471^^126^1610^6
+ ;;^UTILITY(U,$J,358.3,32381,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33556,1,3,0)
- ;;=3^Strain of Left Ring Finger at Forearm Level Flexor Muscle/Fasc/Tendon
- ;;^UTILITY(U,$J,358.3,33556,1,4,0)
- ;;=4^S56.116A
- ;;^UTILITY(U,$J,358.3,33556,2)
- ;;=^5031631
- ;;^UTILITY(U,$J,358.3,33557,0)
- ;;=S56.117A^^182^2005^46
- ;;^UTILITY(U,$J,358.3,33557,1,0)
+ ;;^UTILITY(U,$J,358.3,32381,1,3,0)
+ ;;=3^Ganglion, right ankle and foot
+ ;;^UTILITY(U,$J,358.3,32381,1,4,0)
+ ;;=4^M67.471
+ ;;^UTILITY(U,$J,358.3,32381,2)
+ ;;=^5012975
+ ;;^UTILITY(U,$J,358.3,32382,0)
+ ;;=M67.472^^126^1610^4
+ ;;^UTILITY(U,$J,358.3,32382,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33557,1,3,0)
- ;;=3^Strain of Right Little Finger at Forearm Level Flexor Muscle/Fasc/Tendon
- ;;^UTILITY(U,$J,358.3,33557,1,4,0)
- ;;=4^S56.117A
- ;;^UTILITY(U,$J,358.3,33557,2)
- ;;=^5031634
- ;;^UTILITY(U,$J,358.3,33558,0)
- ;;=S56.118A^^182^2005^26
- ;;^UTILITY(U,$J,358.3,33558,1,0)
+ ;;^UTILITY(U,$J,358.3,32382,1,3,0)
+ ;;=3^Ganglion, left ankle and foot
+ ;;^UTILITY(U,$J,358.3,32382,1,4,0)
+ ;;=4^M67.472
+ ;;^UTILITY(U,$J,358.3,32382,2)
+ ;;=^5012976
+ ;;^UTILITY(U,$J,358.3,32383,0)
+ ;;=M67.472^^126^1610^5
+ ;;^UTILITY(U,$J,358.3,32383,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33558,1,3,0)
- ;;=3^Strain of Left Little Finger at Forearm Level Flexor Muscle/Fasc/Tendon
- ;;^UTILITY(U,$J,358.3,33558,1,4,0)
- ;;=4^S56.118A
- ;;^UTILITY(U,$J,358.3,33558,2)
- ;;=^5031637
- ;;^UTILITY(U,$J,358.3,33559,0)
- ;;=S56.211A^^182^2005^40
- ;;^UTILITY(U,$J,358.3,33559,1,0)
+ ;;^UTILITY(U,$J,358.3,32383,1,3,0)
+ ;;=3^Ganglion, left ankle and foot
+ ;;^UTILITY(U,$J,358.3,32383,1,4,0)
+ ;;=4^M67.472
+ ;;^UTILITY(U,$J,358.3,32383,2)
+ ;;=^5012976
+ ;;^UTILITY(U,$J,358.3,32384,0)
+ ;;=M67.471^^126^1610^7
+ ;;^UTILITY(U,$J,358.3,32384,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33559,1,3,0)
- ;;=3^Strain of Right Forearm Flexor Muscle/Fasc/Tendon
- ;;^UTILITY(U,$J,358.3,33559,1,4,0)
- ;;=4^S56.211A
- ;;^UTILITY(U,$J,358.3,33559,2)
- ;;=^5031691
- ;;^UTILITY(U,$J,358.3,33560,0)
- ;;=S56.212A^^182^2005^20
- ;;^UTILITY(U,$J,358.3,33560,1,0)
+ ;;^UTILITY(U,$J,358.3,32384,1,3,0)
+ ;;=3^Ganglion, right ankle and foot
+ ;;^UTILITY(U,$J,358.3,32384,1,4,0)
+ ;;=4^M67.471
+ ;;^UTILITY(U,$J,358.3,32384,2)
+ ;;=^5012975
+ ;;^UTILITY(U,$J,358.3,32385,0)
+ ;;=R26.9^^126^1610^3
+ ;;^UTILITY(U,$J,358.3,32385,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33560,1,3,0)
- ;;=3^Strain of Left Forearm Flexor Muscle/Fasc/Tendon
- ;;^UTILITY(U,$J,358.3,33560,1,4,0)
- ;;=4^S56.212A
- ;;^UTILITY(U,$J,358.3,33560,2)
- ;;=^5031694
- ;;^UTILITY(U,$J,358.3,33561,0)
- ;;=S56.311A^^182^2005^56
- ;;^UTILITY(U,$J,358.3,33561,1,0)
+ ;;^UTILITY(U,$J,358.3,32385,1,3,0)
+ ;;=3^Gait/Mobility Abnormalities,Unspec
+ ;;^UTILITY(U,$J,358.3,32385,1,4,0)
+ ;;=4^R26.9
+ ;;^UTILITY(U,$J,358.3,32385,2)
+ ;;=^5019309
+ ;;^UTILITY(U,$J,358.3,32386,0)
+ ;;=R26.1^^126^1610^2
+ ;;^UTILITY(U,$J,358.3,32386,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32386,1,3,0)
+ ;;=3^Gait,Paralytic
+ ;;^UTILITY(U,$J,358.3,32386,1,4,0)
+ ;;=4^R26.1
+ ;;^UTILITY(U,$J,358.3,32386,2)
+ ;;=^5019305
+ ;;^UTILITY(U,$J,358.3,32387,0)
+ ;;=R26.0^^126^1610^1
+ ;;^UTILITY(U,$J,358.3,32387,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32387,1,3,0)
+ ;;=3^Gait,Ataxic

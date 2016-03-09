@@ -1,138 +1,130 @@
-IBDEI18F ; ; 06-AUG-2015
+IBDEI18F ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,21820,1,5,0)
- ;;=5^Rhem Mitral Valve Dis
- ;;^UTILITY(U,$J,358.3,21820,2)
- ;;=^269571
- ;;^UTILITY(U,$J,358.3,21821,0)
- ;;=397.1^^118^1354^14
- ;;^UTILITY(U,$J,358.3,21821,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21821,1,4,0)
- ;;=4^397.1
- ;;^UTILITY(U,$J,358.3,21821,1,5,0)
- ;;=5^Rhem Pulm Valve Disease
- ;;^UTILITY(U,$J,358.3,21821,2)
- ;;=^269587
- ;;^UTILITY(U,$J,358.3,21822,0)
- ;;=397.0^^118^1354^15
- ;;^UTILITY(U,$J,358.3,21822,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21822,1,4,0)
- ;;=4^397.0
- ;;^UTILITY(U,$J,358.3,21822,1,5,0)
- ;;=5^Rhem Tricuspid Valve Disease
- ;;^UTILITY(U,$J,358.3,21822,2)
- ;;=^35528
- ;;^UTILITY(U,$J,358.3,21823,0)
- ;;=996.01^^118^1355^2
- ;;^UTILITY(U,$J,358.3,21823,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21823,1,4,0)
- ;;=4^996.01
- ;;^UTILITY(U,$J,358.3,21823,1,5,0)
- ;;=5^Cardiac Pacemaker Complication
- ;;^UTILITY(U,$J,358.3,21823,2)
- ;;=^276264
- ;;^UTILITY(U,$J,358.3,21824,0)
- ;;=996.02^^118^1355^5
- ;;^UTILITY(U,$J,358.3,21824,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21824,1,4,0)
- ;;=4^996.02
- ;;^UTILITY(U,$J,358.3,21824,1,5,0)
- ;;=5^Mech Comp Valve Prosth
- ;;^UTILITY(U,$J,358.3,21824,2)
- ;;=^276265
- ;;^UTILITY(U,$J,358.3,21825,0)
- ;;=996.04^^118^1355^3
- ;;^UTILITY(U,$J,358.3,21825,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21825,1,4,0)
- ;;=4^996.04
- ;;^UTILITY(U,$J,358.3,21825,1,5,0)
- ;;=5^Complication of ICD
- ;;^UTILITY(U,$J,358.3,21825,2)
- ;;=^303359
- ;;^UTILITY(U,$J,358.3,21826,0)
- ;;=996.1^^118^1355^4
- ;;^UTILITY(U,$J,358.3,21826,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21826,1,4,0)
- ;;=4^996.1
- ;;^UTILITY(U,$J,358.3,21826,1,5,0)
- ;;=5^Mech Comp AV Fistula
- ;;^UTILITY(U,$J,358.3,21826,2)
- ;;=^276268
- ;;^UTILITY(U,$J,358.3,21827,0)
- ;;=996.61^^118^1355^1
- ;;^UTILITY(U,$J,358.3,21827,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21827,1,4,0)
- ;;=4^996.61
- ;;^UTILITY(U,$J,358.3,21827,1,5,0)
- ;;=5^Cardiac Device Complication
- ;;^UTILITY(U,$J,358.3,21827,2)
- ;;=^276284
- ;;^UTILITY(U,$J,358.3,21828,0)
- ;;=996.72^^118^1355^6
- ;;^UTILITY(U,$J,358.3,21828,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21828,1,4,0)
- ;;=4^996.72
- ;;^UTILITY(U,$J,358.3,21828,1,5,0)
- ;;=5^Occlusion AV Fist Grft
- ;;^UTILITY(U,$J,358.3,21828,2)
- ;;=^276295
- ;;^UTILITY(U,$J,358.3,21829,0)
- ;;=996.74^^118^1355^7
- ;;^UTILITY(U,$J,358.3,21829,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21829,1,4,0)
- ;;=4^996.74
- ;;^UTILITY(U,$J,358.3,21829,1,5,0)
- ;;=5^Oth Comp of Heart Valve Prosth
- ;;^UTILITY(U,$J,358.3,21829,2)
- ;;=^276297
- ;;^UTILITY(U,$J,358.3,21830,0)
- ;;=996.71^^118^1355^8
- ;;^UTILITY(U,$J,358.3,21830,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21830,1,4,0)
- ;;=4^996.71
- ;;^UTILITY(U,$J,358.3,21830,1,5,0)
- ;;=5^Thrombus Valve Prosth
- ;;^UTILITY(U,$J,358.3,21830,2)
- ;;=^276294
- ;;^UTILITY(U,$J,358.3,21831,0)
- ;;=V45.89^^118^1356^12
- ;;^UTILITY(U,$J,358.3,21831,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21831,1,4,0)
- ;;=4^V45.89
- ;;^UTILITY(U,$J,358.3,21831,1,5,0)
- ;;=5^S/P Valve Surgery
- ;;^UTILITY(U,$J,358.3,21831,2)
- ;;=^276679
- ;;^UTILITY(U,$J,358.3,21832,0)
- ;;=V43.3^^118^1356^11
- ;;^UTILITY(U,$J,358.3,21832,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21832,1,4,0)
- ;;=4^V43.3
- ;;^UTILITY(U,$J,358.3,21832,1,5,0)
- ;;=5^S/P Artif Valve Replac
- ;;^UTILITY(U,$J,358.3,21832,2)
- ;;=^295440
- ;;^UTILITY(U,$J,358.3,21833,0)
- ;;=V58.61^^118^1356^9
- ;;^UTILITY(U,$J,358.3,21833,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,21833,1,4,0)
- ;;=4^V58.61
- ;;^UTILITY(U,$J,358.3,21833,1,5,0)
- ;;=5^Long Term Use Anticoagulants
- ;;^UTILITY(U,$J,358.3,21833,2)
- ;;=^303459
+ ;;^UTILITY(U,$J,358.3,20951,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20951,1,3,0)
+ ;;=3^Abnormal Urine Microbiological Findings
+ ;;^UTILITY(U,$J,358.3,20951,1,4,0)
+ ;;=4^R82.7
+ ;;^UTILITY(U,$J,358.3,20951,2)
+ ;;=^5019607
+ ;;^UTILITY(U,$J,358.3,20952,0)
+ ;;=R82.8^^84^941^23
+ ;;^UTILITY(U,$J,358.3,20952,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20952,1,3,0)
+ ;;=3^Abnormal Urine Cytology/Histology Findings
+ ;;^UTILITY(U,$J,358.3,20952,1,4,0)
+ ;;=4^R82.8
+ ;;^UTILITY(U,$J,358.3,20952,2)
+ ;;=^5019608
+ ;;^UTILITY(U,$J,358.3,20953,0)
+ ;;=R82.90^^84^941^25
+ ;;^UTILITY(U,$J,358.3,20953,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20953,1,3,0)
+ ;;=3^Abnormal Urine Findings,Unspec
+ ;;^UTILITY(U,$J,358.3,20953,1,4,0)
+ ;;=4^R82.90
+ ;;^UTILITY(U,$J,358.3,20953,2)
+ ;;=^5019609
+ ;;^UTILITY(U,$J,358.3,20954,0)
+ ;;=R82.91^^84^941^49
+ ;;^UTILITY(U,$J,358.3,20954,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20954,1,3,0)
+ ;;=3^Chromoabnormalities of Urine NEC
+ ;;^UTILITY(U,$J,358.3,20954,1,4,0)
+ ;;=4^R82.91
+ ;;^UTILITY(U,$J,358.3,20954,2)
+ ;;=^5019610
+ ;;^UTILITY(U,$J,358.3,20955,0)
+ ;;=R82.99^^84^941^24
+ ;;^UTILITY(U,$J,358.3,20955,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20955,1,3,0)
+ ;;=3^Abnormal Urine Findings NEC
+ ;;^UTILITY(U,$J,358.3,20955,1,4,0)
+ ;;=4^R82.99
+ ;;^UTILITY(U,$J,358.3,20955,2)
+ ;;=^5019611
+ ;;^UTILITY(U,$J,358.3,20956,0)
+ ;;=R89.9^^84^941^19
+ ;;^UTILITY(U,$J,358.3,20956,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20956,1,3,0)
+ ;;=3^Abnormal Organ/Tissue Specimen Findings,Unspec
+ ;;^UTILITY(U,$J,358.3,20956,1,4,0)
+ ;;=4^R89.9
+ ;;^UTILITY(U,$J,358.3,20956,2)
+ ;;=^5019702
+ ;;^UTILITY(U,$J,358.3,20957,0)
+ ;;=R90.0^^84^941^98
+ ;;^UTILITY(U,$J,358.3,20957,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20957,1,3,0)
+ ;;=3^Intracranial Space-Occupying Lesion Dx Imaging of Central Nervous System
+ ;;^UTILITY(U,$J,358.3,20957,1,4,0)
+ ;;=4^R90.0
+ ;;^UTILITY(U,$J,358.3,20957,2)
+ ;;=^5019703
+ ;;^UTILITY(U,$J,358.3,20958,0)
+ ;;=R90.89^^84^941^13
+ ;;^UTILITY(U,$J,358.3,20958,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20958,1,3,0)
+ ;;=3^Abnormal Findings on Dx Imaging of Central Nervous System NEC
+ ;;^UTILITY(U,$J,358.3,20958,1,4,0)
+ ;;=4^R90.89
+ ;;^UTILITY(U,$J,358.3,20958,2)
+ ;;=^5019706
+ ;;^UTILITY(U,$J,358.3,20959,0)
+ ;;=R91.8^^84^941^18
+ ;;^UTILITY(U,$J,358.3,20959,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20959,1,3,0)
+ ;;=3^Abnormal Nonspecific Lung Field Finding NEC
+ ;;^UTILITY(U,$J,358.3,20959,1,4,0)
+ ;;=4^R91.8
+ ;;^UTILITY(U,$J,358.3,20959,2)
+ ;;=^5019708
+ ;;^UTILITY(U,$J,358.3,20960,0)
+ ;;=R92.0^^84^941^117
+ ;;^UTILITY(U,$J,358.3,20960,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20960,1,3,0)
+ ;;=3^Mammographic Microcalcification on Dx Image of Breast
+ ;;^UTILITY(U,$J,358.3,20960,1,4,0)
+ ;;=4^R92.0
+ ;;^UTILITY(U,$J,358.3,20960,2)
+ ;;=^5019709
+ ;;^UTILITY(U,$J,358.3,20961,0)
+ ;;=R92.1^^84^941^116
+ ;;^UTILITY(U,$J,358.3,20961,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20961,1,3,0)
+ ;;=3^Mammographic Calcification on Dx Image of Breast
+ ;;^UTILITY(U,$J,358.3,20961,1,4,0)
+ ;;=4^R92.1
+ ;;^UTILITY(U,$J,358.3,20961,2)
+ ;;=^5019710
+ ;;^UTILITY(U,$J,358.3,20962,0)
+ ;;=R92.2^^84^941^91
+ ;;^UTILITY(U,$J,358.3,20962,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20962,1,3,0)
+ ;;=3^Inconclusive Mammogram
+ ;;^UTILITY(U,$J,358.3,20962,1,4,0)
+ ;;=4^R92.2
+ ;;^UTILITY(U,$J,358.3,20962,2)
+ ;;=^5019711
+ ;;^UTILITY(U,$J,358.3,20963,0)
+ ;;=R93.0^^84^941^10
+ ;;^UTILITY(U,$J,358.3,20963,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20963,1,3,0)
+ ;;=3^Abnormal Finding on Dx Image of Skull/Head NEC
+ ;;^UTILITY(U,$J,358.3,20963,1,4,0)
+ ;;=4^R93.0

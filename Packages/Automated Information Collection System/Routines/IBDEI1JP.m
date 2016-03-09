@@ -1,138 +1,126 @@
-IBDEI1JP ; ; 06-AUG-2015
+IBDEI1JP ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,27437,0)
- ;;=396.3^^162^1781^6
- ;;^UTILITY(U,$J,358.3,27437,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27437,1,4,0)
- ;;=4^396.3
- ;;^UTILITY(U,$J,358.3,27437,1,5,0)
- ;;=5^Aortic And Mitral Insufficiency
- ;;^UTILITY(U,$J,358.3,27437,2)
- ;;=Aortic and Mitral Insufficiency^269583
- ;;^UTILITY(U,$J,358.3,27438,0)
- ;;=414.3^^162^1781^15
- ;;^UTILITY(U,$J,358.3,27438,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27438,1,4,0)
- ;;=4^414.3
- ;;^UTILITY(U,$J,358.3,27438,1,5,0)
- ;;=5^CAD d/t Lipid Rich Plaque
- ;;^UTILITY(U,$J,358.3,27438,2)
- ;;=^336601
- ;;^UTILITY(U,$J,358.3,27439,0)
- ;;=453.9^^162^1781^82
- ;;^UTILITY(U,$J,358.3,27439,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27439,1,4,0)
- ;;=4^453.9
- ;;^UTILITY(U,$J,358.3,27439,1,5,0)
- ;;=5^Venous Thrombosis NOS
- ;;^UTILITY(U,$J,358.3,27439,2)
- ;;=^39455
- ;;^UTILITY(U,$J,358.3,27440,0)
- ;;=453.89^^162^1781^79
- ;;^UTILITY(U,$J,358.3,27440,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27440,1,4,0)
- ;;=4^453.89
- ;;^UTILITY(U,$J,358.3,27440,1,5,0)
- ;;=5^Venous Embolism,Acute NEC
- ;;^UTILITY(U,$J,358.3,27440,2)
- ;;=^338259
- ;;^UTILITY(U,$J,358.3,27441,0)
- ;;=453.79^^162^1781^80
- ;;^UTILITY(U,$J,358.3,27441,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27441,1,4,0)
- ;;=4^453.79
- ;;^UTILITY(U,$J,358.3,27441,1,5,0)
- ;;=5^Venous Embolism,Chr NEC
- ;;^UTILITY(U,$J,358.3,27441,2)
- ;;=^338251
- ;;^UTILITY(U,$J,358.3,27442,0)
- ;;=425.11^^162^1781^57
- ;;^UTILITY(U,$J,358.3,27442,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27442,1,4,0)
- ;;=4^425.11
- ;;^UTILITY(U,$J,358.3,27442,1,5,0)
- ;;=5^Hypertrophic Subaortic Stenosis
- ;;^UTILITY(U,$J,358.3,27442,2)
- ;;=^340520
- ;;^UTILITY(U,$J,358.3,27443,0)
- ;;=425.18^^162^1781^22
- ;;^UTILITY(U,$J,358.3,27443,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27443,1,4,0)
- ;;=4^425.18
- ;;^UTILITY(U,$J,358.3,27443,1,5,0)
- ;;=5^Cardiomyopathy,Hypertrophic
- ;;^UTILITY(U,$J,358.3,27443,2)
- ;;=^340521
- ;;^UTILITY(U,$J,358.3,27444,0)
- ;;=V12.55^^162^1781^52
- ;;^UTILITY(U,$J,358.3,27444,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27444,1,4,0)
- ;;=4^V12.55
- ;;^UTILITY(U,$J,358.3,27444,1,5,0)
- ;;=5^Hx of Pulmonary Embolism
- ;;^UTILITY(U,$J,358.3,27444,2)
- ;;=^340615
- ;;^UTILITY(U,$J,358.3,27445,0)
- ;;=414.4^^162^1781^14
- ;;^UTILITY(U,$J,358.3,27445,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27445,1,4,0)
- ;;=4^414.4
- ;;^UTILITY(U,$J,358.3,27445,1,5,0)
- ;;=5^CAD d/t Calc Coronary Lesion
- ;;^UTILITY(U,$J,358.3,27445,2)
- ;;=^340518
- ;;^UTILITY(U,$J,358.3,27446,0)
- ;;=271.3^^162^1782^11
- ;;^UTILITY(U,$J,358.3,27446,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27446,1,4,0)
- ;;=4^271.3
- ;;^UTILITY(U,$J,358.3,27446,1,5,0)
- ;;=5^Glucose Intolerance
- ;;^UTILITY(U,$J,358.3,27446,2)
- ;;=^64790
- ;;^UTILITY(U,$J,358.3,27447,0)
- ;;=611.1^^162^1782^16
- ;;^UTILITY(U,$J,358.3,27447,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27447,1,4,0)
- ;;=4^611.1
- ;;^UTILITY(U,$J,358.3,27447,1,5,0)
- ;;=5^Gynecomastia
- ;;^UTILITY(U,$J,358.3,27447,2)
- ;;=^60454
- ;;^UTILITY(U,$J,358.3,27448,0)
- ;;=704.1^^162^1782^17
- ;;^UTILITY(U,$J,358.3,27448,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27448,1,4,0)
- ;;=4^704.1
- ;;^UTILITY(U,$J,358.3,27448,1,5,0)
- ;;=5^Hirsutism
- ;;^UTILITY(U,$J,358.3,27448,2)
- ;;=^57407
- ;;^UTILITY(U,$J,358.3,27449,0)
- ;;=251.2^^162^1782^29
- ;;^UTILITY(U,$J,358.3,27449,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,27449,1,4,0)
- ;;=4^251.2
- ;;^UTILITY(U,$J,358.3,27449,1,5,0)
- ;;=5^Hypoglycemia NOS
- ;;^UTILITY(U,$J,358.3,27449,2)
- ;;=^60580
- ;;^UTILITY(U,$J,358.3,27450,0)
- ;;=257.2^^162^1782^30
- ;;^UTILITY(U,$J,358.3,27450,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,26219,2)
+ ;;=^5003185
+ ;;^UTILITY(U,$J,358.3,26220,0)
+ ;;=F12.988^^98^1237^5
+ ;;^UTILITY(U,$J,358.3,26220,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26220,1,3,0)
+ ;;=3^Cannabis Induced Sleep Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26220,1,4,0)
+ ;;=4^F12.988
+ ;;^UTILITY(U,$J,358.3,26220,2)
+ ;;=^5003187
+ ;;^UTILITY(U,$J,358.3,26221,0)
+ ;;=F12.929^^98^1237^13
+ ;;^UTILITY(U,$J,358.3,26221,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26221,1,3,0)
+ ;;=3^Cannabis Intoxication w/o Perceptual Disturbances w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26221,1,4,0)
+ ;;=4^F12.929
+ ;;^UTILITY(U,$J,358.3,26221,2)
+ ;;=^5003182
+ ;;^UTILITY(U,$J,358.3,26222,0)
+ ;;=F12.99^^98^1237^15
+ ;;^UTILITY(U,$J,358.3,26222,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26222,1,3,0)
+ ;;=3^Cannabis Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,26222,1,4,0)
+ ;;=4^F12.99
+ ;;^UTILITY(U,$J,358.3,26222,2)
+ ;;=^5003188
+ ;;^UTILITY(U,$J,358.3,26223,0)
+ ;;=F16.10^^98^1238^17
+ ;;^UTILITY(U,$J,358.3,26223,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26223,1,3,0)
+ ;;=3^Phencyclidine Use Disorder,Mild
+ ;;^UTILITY(U,$J,358.3,26223,1,4,0)
+ ;;=4^F16.10
+ ;;^UTILITY(U,$J,358.3,26223,2)
+ ;;=^5003323
+ ;;^UTILITY(U,$J,358.3,26224,0)
+ ;;=F16.20^^98^1238^18
+ ;;^UTILITY(U,$J,358.3,26224,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26224,1,3,0)
+ ;;=3^Phencyclidine Use Disorder,Moderate-Severe
+ ;;^UTILITY(U,$J,358.3,26224,1,4,0)
+ ;;=4^F16.20
+ ;;^UTILITY(U,$J,358.3,26224,2)
+ ;;=^5003336
+ ;;^UTILITY(U,$J,358.3,26225,0)
+ ;;=F16.21^^98^1238^19
+ ;;^UTILITY(U,$J,358.3,26225,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26225,1,3,0)
+ ;;=3^Phencyclidine Use Disorder,Moderate-Severe,In Remission
+ ;;^UTILITY(U,$J,358.3,26225,1,4,0)
+ ;;=4^F16.21
+ ;;^UTILITY(U,$J,358.3,26225,2)
+ ;;=^5003337
+ ;;^UTILITY(U,$J,358.3,26226,0)
+ ;;=F16.983^^98^1238^16
+ ;;^UTILITY(U,$J,358.3,26226,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26226,1,3,0)
+ ;;=3^Hallucinogen Persisting Perception Disorder
+ ;;^UTILITY(U,$J,358.3,26226,1,4,0)
+ ;;=4^F16.983
+ ;;^UTILITY(U,$J,358.3,26226,2)
+ ;;=^5003358
+ ;;^UTILITY(U,$J,358.3,26227,0)
+ ;;=F16.121^^98^1238^10
+ ;;^UTILITY(U,$J,358.3,26227,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26227,1,3,0)
+ ;;=3^Hallucinogen Intoxication Delirium w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26227,1,4,0)
+ ;;=4^F16.121
+ ;;^UTILITY(U,$J,358.3,26227,2)
+ ;;=^5003325
+ ;;^UTILITY(U,$J,358.3,26228,0)
+ ;;=F16.221^^98^1238^11
+ ;;^UTILITY(U,$J,358.3,26228,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26228,1,3,0)
+ ;;=3^Hallucinogen Intoxication Delirium w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26228,1,4,0)
+ ;;=4^F16.221
+ ;;^UTILITY(U,$J,358.3,26228,2)
+ ;;=^5003339
+ ;;^UTILITY(U,$J,358.3,26229,0)
+ ;;=F16.921^^98^1238^12
+ ;;^UTILITY(U,$J,358.3,26229,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26229,1,3,0)
+ ;;=3^Hallucinogen Intoxication Delirium w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26229,1,4,0)
+ ;;=4^F16.921
+ ;;^UTILITY(U,$J,358.3,26229,2)
+ ;;=^5003351
+ ;;^UTILITY(U,$J,358.3,26230,0)
+ ;;=F16.129^^98^1238^13
+ ;;^UTILITY(U,$J,358.3,26230,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26230,1,3,0)
+ ;;=3^Hallucinogen Intoxication w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26230,1,4,0)
+ ;;=4^F16.129
+ ;;^UTILITY(U,$J,358.3,26230,2)
+ ;;=^5003327
+ ;;^UTILITY(U,$J,358.3,26231,0)
+ ;;=F16.229^^98^1238^14
+ ;;^UTILITY(U,$J,358.3,26231,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26231,1,3,0)
+ ;;=3^Hallucinogen Intoxication w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26231,1,4,0)
+ ;;=4^F16.229
+ ;;^UTILITY(U,$J,358.3,26231,2)
+ ;;=^5003340

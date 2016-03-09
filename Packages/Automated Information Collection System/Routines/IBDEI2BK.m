@@ -1,0 +1,126 @@
+IBDEI2BK ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,39340,2)
+ ;;=^5005908
+ ;;^UTILITY(U,$J,358.3,39341,0)
+ ;;=H40.61X3^^153^1921^42
+ ;;^UTILITY(U,$J,358.3,39341,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39341,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Right Eye,Severe Stage
+ ;;^UTILITY(U,$J,358.3,39341,1,4,0)
+ ;;=4^H40.61X3
+ ;;^UTILITY(U,$J,358.3,39341,2)
+ ;;=^5133509
+ ;;^UTILITY(U,$J,358.3,39342,0)
+ ;;=H40.61X4^^153^1921^39
+ ;;^UTILITY(U,$J,358.3,39342,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39342,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Right Eye,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,39342,1,4,0)
+ ;;=4^H40.61X4
+ ;;^UTILITY(U,$J,358.3,39342,2)
+ ;;=^5005909
+ ;;^UTILITY(U,$J,358.3,39343,0)
+ ;;=H40.62X1^^153^1921^35
+ ;;^UTILITY(U,$J,358.3,39343,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39343,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Left Eye,Mild Stage
+ ;;^UTILITY(U,$J,358.3,39343,1,4,0)
+ ;;=4^H40.62X1
+ ;;^UTILITY(U,$J,358.3,39343,2)
+ ;;=^5005911
+ ;;^UTILITY(U,$J,358.3,39344,0)
+ ;;=H40.62X0^^153^1921^38
+ ;;^UTILITY(U,$J,358.3,39344,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39344,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Left Eye,Unspec Stage
+ ;;^UTILITY(U,$J,358.3,39344,1,4,0)
+ ;;=4^H40.62X0
+ ;;^UTILITY(U,$J,358.3,39344,2)
+ ;;=^5005910
+ ;;^UTILITY(U,$J,358.3,39345,0)
+ ;;=H40.62X2^^153^1921^36
+ ;;^UTILITY(U,$J,358.3,39345,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39345,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Left Eye,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,39345,1,4,0)
+ ;;=4^H40.62X2
+ ;;^UTILITY(U,$J,358.3,39345,2)
+ ;;=^5005912
+ ;;^UTILITY(U,$J,358.3,39346,0)
+ ;;=H40.62X3^^153^1921^37
+ ;;^UTILITY(U,$J,358.3,39346,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39346,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Left Eye,Severe Stage
+ ;;^UTILITY(U,$J,358.3,39346,1,4,0)
+ ;;=4^H40.62X3
+ ;;^UTILITY(U,$J,358.3,39346,2)
+ ;;=^5133510
+ ;;^UTILITY(U,$J,358.3,39347,0)
+ ;;=H40.62X4^^153^1921^34
+ ;;^UTILITY(U,$J,358.3,39347,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39347,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Left Eye,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,39347,1,4,0)
+ ;;=4^H40.62X4
+ ;;^UTILITY(U,$J,358.3,39347,2)
+ ;;=^5005913
+ ;;^UTILITY(U,$J,358.3,39348,0)
+ ;;=H40.63X0^^153^1921^33
+ ;;^UTILITY(U,$J,358.3,39348,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39348,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Bilateral,Unspec Stage
+ ;;^UTILITY(U,$J,358.3,39348,1,4,0)
+ ;;=4^H40.63X0
+ ;;^UTILITY(U,$J,358.3,39348,2)
+ ;;=^5005914
+ ;;^UTILITY(U,$J,358.3,39349,0)
+ ;;=H40.63X1^^153^1921^30
+ ;;^UTILITY(U,$J,358.3,39349,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39349,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Bilateral,Mild Stage
+ ;;^UTILITY(U,$J,358.3,39349,1,4,0)
+ ;;=4^H40.63X1
+ ;;^UTILITY(U,$J,358.3,39349,2)
+ ;;=^5005915
+ ;;^UTILITY(U,$J,358.3,39350,0)
+ ;;=H40.63X2^^153^1921^31
+ ;;^UTILITY(U,$J,358.3,39350,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39350,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Bilateral,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,39350,1,4,0)
+ ;;=4^H40.63X2
+ ;;^UTILITY(U,$J,358.3,39350,2)
+ ;;=^5005916
+ ;;^UTILITY(U,$J,358.3,39351,0)
+ ;;=H40.63X3^^153^1921^32
+ ;;^UTILITY(U,$J,358.3,39351,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39351,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Bilateral,Severe Stage
+ ;;^UTILITY(U,$J,358.3,39351,1,4,0)
+ ;;=4^H40.63X3
+ ;;^UTILITY(U,$J,358.3,39351,2)
+ ;;=^5005917
+ ;;^UTILITY(U,$J,358.3,39352,0)
+ ;;=H40.63X4^^153^1921^29
+ ;;^UTILITY(U,$J,358.3,39352,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39352,1,3,0)
+ ;;=3^Drug-Induced Glaucoma,Bilateral,Indeterminate Stage
+ ;;^UTILITY(U,$J,358.3,39352,1,4,0)
+ ;;=4^H40.63X4
+ ;;^UTILITY(U,$J,358.3,39352,2)
+ ;;=^5005918

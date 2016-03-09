@@ -1,146 +1,122 @@
-IBDEI0HJ ; ; 06-AUG-2015
+IBDEI0HJ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8174,1,5,0)
- ;;=5^Ca In-Situ Skin
- ;;^UTILITY(U,$J,358.3,8174,2)
- ;;=^267724
- ;;^UTILITY(U,$J,358.3,8175,0)
- ;;=156.2^^35^482^23
- ;;^UTILITY(U,$J,358.3,8175,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8175,1,4,0)
- ;;=4^156.2
- ;;^UTILITY(U,$J,358.3,8175,1,5,0)
- ;;=5^Ca Ampulla Of Vater
- ;;^UTILITY(U,$J,358.3,8175,2)
- ;;=^267100
- ;;^UTILITY(U,$J,358.3,8176,0)
- ;;=154.3^^35^482^24
- ;;^UTILITY(U,$J,358.3,8176,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8176,1,4,0)
- ;;=4^154.3
- ;;^UTILITY(U,$J,358.3,8176,1,5,0)
- ;;=5^Ca Anus
- ;;^UTILITY(U,$J,358.3,8176,2)
- ;;=CA Anus^267092
- ;;^UTILITY(U,$J,358.3,8177,0)
- ;;=156.1^^35^482^25
- ;;^UTILITY(U,$J,358.3,8177,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8177,1,4,0)
- ;;=4^156.1
- ;;^UTILITY(U,$J,358.3,8177,1,5,0)
- ;;=5^Ca Bile Ducts
- ;;^UTILITY(U,$J,358.3,8177,2)
- ;;=CA Bile Ducts^267099
- ;;^UTILITY(U,$J,358.3,8178,0)
- ;;=153.9^^35^482^30
- ;;^UTILITY(U,$J,358.3,8178,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8178,1,4,0)
- ;;=4^153.9
- ;;^UTILITY(U,$J,358.3,8178,1,5,0)
- ;;=5^Ca Colon
- ;;^UTILITY(U,$J,358.3,8178,2)
- ;;=CA Colon^267078
- ;;^UTILITY(U,$J,358.3,8179,0)
- ;;=150.9^^35^482^31
- ;;^UTILITY(U,$J,358.3,8179,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8179,1,4,0)
- ;;=4^150.9
- ;;^UTILITY(U,$J,358.3,8179,1,5,0)
- ;;=5^Ca Esophagus
- ;;^UTILITY(U,$J,358.3,8179,2)
- ;;=CA Esophagus^267055
- ;;^UTILITY(U,$J,358.3,8180,0)
- ;;=156.0^^35^482^32
- ;;^UTILITY(U,$J,358.3,8180,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8180,1,4,0)
- ;;=4^156.0
- ;;^UTILITY(U,$J,358.3,8180,1,5,0)
- ;;=5^Ca Gallbladder
- ;;^UTILITY(U,$J,358.3,8180,2)
- ;;=^267098
- ;;^UTILITY(U,$J,358.3,8181,0)
- ;;=155.0^^35^482^38
- ;;^UTILITY(U,$J,358.3,8181,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8181,1,4,0)
- ;;=4^155.0
- ;;^UTILITY(U,$J,358.3,8181,1,5,0)
- ;;=5^Ca Liver, Primary
- ;;^UTILITY(U,$J,358.3,8181,2)
- ;;=CA Liver, Primary^73526
- ;;^UTILITY(U,$J,358.3,8182,0)
- ;;=157.9^^35^482^44
- ;;^UTILITY(U,$J,358.3,8182,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8182,1,4,0)
- ;;=4^157.9
- ;;^UTILITY(U,$J,358.3,8182,1,5,0)
- ;;=5^Ca Pancreas
- ;;^UTILITY(U,$J,358.3,8182,2)
- ;;=CA Pancreas^267103
- ;;^UTILITY(U,$J,358.3,8183,0)
- ;;=154.1^^35^482^47
- ;;^UTILITY(U,$J,358.3,8183,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8183,1,4,0)
- ;;=4^154.1
- ;;^UTILITY(U,$J,358.3,8183,1,5,0)
- ;;=5^Ca Rectum
- ;;^UTILITY(U,$J,358.3,8183,2)
- ;;=CA Rectum^267090
- ;;^UTILITY(U,$J,358.3,8184,0)
- ;;=152.9^^35^482^50
- ;;^UTILITY(U,$J,358.3,8184,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8184,1,4,0)
- ;;=4^152.9
- ;;^UTILITY(U,$J,358.3,8184,1,5,0)
- ;;=5^Ca Small Bowel
- ;;^UTILITY(U,$J,358.3,8184,2)
- ;;=CA Small Bowel^267077
- ;;^UTILITY(U,$J,358.3,8185,0)
- ;;=151.9^^35^482^51
- ;;^UTILITY(U,$J,358.3,8185,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8185,1,4,0)
- ;;=4^151.9
- ;;^UTILITY(U,$J,358.3,8185,1,5,0)
- ;;=5^Ca Stomach
- ;;^UTILITY(U,$J,358.3,8185,2)
- ;;=CA Stomach^73532
- ;;^UTILITY(U,$J,358.3,8186,0)
- ;;=160.9^^35^482^22
- ;;^UTILITY(U,$J,358.3,8186,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8186,1,4,0)
- ;;=4^160.9
- ;;^UTILITY(U,$J,358.3,8186,1,5,0)
- ;;=5^Ca Accessory Sinuses
- ;;^UTILITY(U,$J,358.3,8186,2)
- ;;=^267127
- ;;^UTILITY(U,$J,358.3,8187,0)
- ;;=162.9^^35^482^40
- ;;^UTILITY(U,$J,358.3,8187,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8187,1,4,0)
- ;;=4^162.9
- ;;^UTILITY(U,$J,358.3,8187,1,5,0)
- ;;=5^Ca Lung
- ;;^UTILITY(U,$J,358.3,8187,2)
- ;;=CA Lung^73521
- ;;^UTILITY(U,$J,358.3,8188,0)
- ;;=161.9^^35^482^37
- ;;^UTILITY(U,$J,358.3,8188,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8188,1,4,0)
- ;;=4^161.9
- ;;^UTILITY(U,$J,358.3,8188,1,5,0)
- ;;=5^Ca Larynx
+ ;;^UTILITY(U,$J,358.3,8112,1,3,0)
+ ;;=3^Laceration w/o fb of right lesser toe(s) w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8112,1,4,0)
+ ;;=4^S91.114A
+ ;;^UTILITY(U,$J,358.3,8112,2)
+ ;;=^5044192
+ ;;^UTILITY(U,$J,358.3,8113,0)
+ ;;=S91.115A^^33^431^117
+ ;;^UTILITY(U,$J,358.3,8113,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8113,1,3,0)
+ ;;=3^Laceration w/o fb of left lesser toe(s) w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8113,1,4,0)
+ ;;=4^S91.115A
+ ;;^UTILITY(U,$J,358.3,8113,2)
+ ;;=^5044195
+ ;;^UTILITY(U,$J,358.3,8114,0)
+ ;;=T73.3XXA^^33^431^59
+ ;;^UTILITY(U,$J,358.3,8114,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8114,1,3,0)
+ ;;=3^Exhaustion due to excessive exertion, initial encounter
+ ;;^UTILITY(U,$J,358.3,8114,1,4,0)
+ ;;=4^T73.3XXA
+ ;;^UTILITY(U,$J,358.3,8114,2)
+ ;;=^5054131
+ ;;^UTILITY(U,$J,358.3,8115,0)
+ ;;=S61.230A^^33^431^188
+ ;;^UTILITY(U,$J,358.3,8115,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8115,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of right indx fngr w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8115,1,4,0)
+ ;;=4^S61.230A
+ ;;^UTILITY(U,$J,358.3,8115,2)
+ ;;=^5032816
+ ;;^UTILITY(U,$J,358.3,8116,0)
+ ;;=S61.231A^^33^431^178
+ ;;^UTILITY(U,$J,358.3,8116,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8116,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of left indx fngr w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8116,1,4,0)
+ ;;=4^S61.231A
+ ;;^UTILITY(U,$J,358.3,8116,2)
+ ;;=^5032819
+ ;;^UTILITY(U,$J,358.3,8117,0)
+ ;;=S61.232A^^33^431^191
+ ;;^UTILITY(U,$J,358.3,8117,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8117,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of right mid finger w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8117,1,4,0)
+ ;;=4^S61.232A
+ ;;^UTILITY(U,$J,358.3,8117,2)
+ ;;=^5032822
+ ;;^UTILITY(U,$J,358.3,8118,0)
+ ;;=S61.233A^^33^431^181
+ ;;^UTILITY(U,$J,358.3,8118,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8118,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of left mid finger w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8118,1,4,0)
+ ;;=4^S61.233A
+ ;;^UTILITY(U,$J,358.3,8118,2)
+ ;;=^5032825
+ ;;^UTILITY(U,$J,358.3,8119,0)
+ ;;=S61.234A^^33^431^192
+ ;;^UTILITY(U,$J,358.3,8119,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8119,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of right rng fngr w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8119,1,4,0)
+ ;;=4^S61.234A
+ ;;^UTILITY(U,$J,358.3,8119,2)
+ ;;=^5032828
+ ;;^UTILITY(U,$J,358.3,8120,0)
+ ;;=S61.235A^^33^431^182
+ ;;^UTILITY(U,$J,358.3,8120,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8120,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of left rng fngr w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8120,1,4,0)
+ ;;=4^S61.235A
+ ;;^UTILITY(U,$J,358.3,8120,2)
+ ;;=^5032831
+ ;;^UTILITY(U,$J,358.3,8121,0)
+ ;;=S61.236A^^33^431^189
+ ;;^UTILITY(U,$J,358.3,8121,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8121,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of right little finger w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8121,1,4,0)
+ ;;=4^S61.236A
+ ;;^UTILITY(U,$J,358.3,8121,2)
+ ;;=^5032834
+ ;;^UTILITY(U,$J,358.3,8122,0)
+ ;;=S61.237A^^33^431^179
+ ;;^UTILITY(U,$J,358.3,8122,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8122,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of left little finger w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8122,1,4,0)
+ ;;=4^S61.237A
+ ;;^UTILITY(U,$J,358.3,8122,2)
+ ;;=^5032837
+ ;;^UTILITY(U,$J,358.3,8123,0)
+ ;;=S91.331A^^33^431^185
+ ;;^UTILITY(U,$J,358.3,8123,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8123,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of right foot, init encntr
+ ;;^UTILITY(U,$J,358.3,8123,1,4,0)
+ ;;=4^S91.331A
+ ;;^UTILITY(U,$J,358.3,8123,2)
+ ;;=^5044332
+ ;;^UTILITY(U,$J,358.3,8124,0)
+ ;;=S91.332A^^33^431^175

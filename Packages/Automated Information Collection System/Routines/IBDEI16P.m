@@ -1,140 +1,128 @@
-IBDEI16P ; ; 06-AUG-2015
+IBDEI16P ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,20913,1,3,0)
- ;;=3^V06.3
- ;;^UTILITY(U,$J,358.3,20913,1,4,0)
- ;;=4^DTP & Polio Vaccine
- ;;^UTILITY(U,$J,358.3,20913,2)
- ;;=^295193
- ;;^UTILITY(U,$J,358.3,20914,0)
- ;;=V06.4^^112^1295^10
- ;;^UTILITY(U,$J,358.3,20914,1,0)
+ ;;^UTILITY(U,$J,358.3,20138,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20914,1,3,0)
- ;;=3^V06.4
- ;;^UTILITY(U,$J,358.3,20914,1,4,0)
- ;;=4^MMR Vaccine
- ;;^UTILITY(U,$J,358.3,20914,2)
- ;;=^295194
- ;;^UTILITY(U,$J,358.3,20915,0)
- ;;=V06.5^^112^1295^21
- ;;^UTILITY(U,$J,358.3,20915,1,0)
+ ;;^UTILITY(U,$J,358.3,20138,1,3,0)
+ ;;=3^Carcinoma in Situ Left Breast,Other Spec Type
+ ;;^UTILITY(U,$J,358.3,20138,1,4,0)
+ ;;=4^D05.82
+ ;;^UTILITY(U,$J,358.3,20138,2)
+ ;;=^5001934
+ ;;^UTILITY(U,$J,358.3,20139,0)
+ ;;=D05.81^^84^929^36
+ ;;^UTILITY(U,$J,358.3,20139,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20915,1,3,0)
- ;;=3^V06.5
- ;;^UTILITY(U,$J,358.3,20915,1,4,0)
- ;;=4^TD/DT Vaccine
- ;;^UTILITY(U,$J,358.3,20915,2)
- ;;=^330094
- ;;^UTILITY(U,$J,358.3,20916,0)
- ;;=V06.6^^112^1295^14
- ;;^UTILITY(U,$J,358.3,20916,1,0)
+ ;;^UTILITY(U,$J,358.3,20139,1,3,0)
+ ;;=3^Carcinoma in Situ Right Breast,Oth Spec Type
+ ;;^UTILITY(U,$J,358.3,20139,1,4,0)
+ ;;=4^D05.81
+ ;;^UTILITY(U,$J,358.3,20139,2)
+ ;;=^5001933
+ ;;^UTILITY(U,$J,358.3,20140,0)
+ ;;=D05.80^^84^929^38
+ ;;^UTILITY(U,$J,358.3,20140,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20916,1,3,0)
- ;;=3^V06.6
- ;;^UTILITY(U,$J,358.3,20916,1,4,0)
- ;;=4^Pneum & Flu Vaccine
- ;;^UTILITY(U,$J,358.3,20916,2)
- ;;=^303390
- ;;^UTILITY(U,$J,358.3,20917,0)
- ;;=V70.0^^112^1296^3
- ;;^UTILITY(U,$J,358.3,20917,1,0)
+ ;;^UTILITY(U,$J,358.3,20140,1,3,0)
+ ;;=3^Carcinoma in Situ Unspec Breast,Oth Spec Type
+ ;;^UTILITY(U,$J,358.3,20140,1,4,0)
+ ;;=4^D05.80
+ ;;^UTILITY(U,$J,358.3,20140,2)
+ ;;=^5001932
+ ;;^UTILITY(U,$J,358.3,20141,0)
+ ;;=D56.8^^84^929^186
+ ;;^UTILITY(U,$J,358.3,20141,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20917,1,3,0)
- ;;=3^V70.0
- ;;^UTILITY(U,$J,358.3,20917,1,4,0)
- ;;=4^Routine Medicine Exam (Not GYN)
- ;;^UTILITY(U,$J,358.3,20917,2)
- ;;=^295590
- ;;^UTILITY(U,$J,358.3,20918,0)
- ;;=V80.2^^112^1296^1
- ;;^UTILITY(U,$J,358.3,20918,1,0)
+ ;;^UTILITY(U,$J,358.3,20141,1,3,0)
+ ;;=3^Thalassemias,Other
+ ;;^UTILITY(U,$J,358.3,20141,1,4,0)
+ ;;=4^D56.8
+ ;;^UTILITY(U,$J,358.3,20141,2)
+ ;;=^5002305
+ ;;^UTILITY(U,$J,358.3,20142,0)
+ ;;=C82.89^^84^929^76
+ ;;^UTILITY(U,$J,358.3,20142,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20918,1,3,0)
- ;;=3^V80.2
- ;;^UTILITY(U,$J,358.3,20918,1,4,0)
- ;;=4^Diabetic Eye Exam
- ;;^UTILITY(U,$J,358.3,20918,2)
- ;;=^295685
- ;;^UTILITY(U,$J,358.3,20919,0)
- ;;=V72.85^^112^1296^2
- ;;^UTILITY(U,$J,358.3,20919,1,0)
+ ;;^UTILITY(U,$J,358.3,20142,1,3,0)
+ ;;=3^Follicular Lymphoma,Extranodal/Solid Organ Sites,Other Types
+ ;;^UTILITY(U,$J,358.3,20142,1,4,0)
+ ;;=4^C82.89
+ ;;^UTILITY(U,$J,358.3,20142,2)
+ ;;=^5001540
+ ;;^UTILITY(U,$J,358.3,20143,0)
+ ;;=D51.8^^84^929^193
+ ;;^UTILITY(U,$J,358.3,20143,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20919,1,3,0)
- ;;=3^V72.85
- ;;^UTILITY(U,$J,358.3,20919,1,4,0)
- ;;=4^Diabetic Foot Exam
- ;;^UTILITY(U,$J,358.3,20919,2)
- ;;=^295831
- ;;^UTILITY(U,$J,358.3,20920,0)
- ;;=V73.89^^112^1296^7
- ;;^UTILITY(U,$J,358.3,20920,1,0)
+ ;;^UTILITY(U,$J,358.3,20143,1,3,0)
+ ;;=3^Vitamin B12 Deficiency Anemias,Other
+ ;;^UTILITY(U,$J,358.3,20143,1,4,0)
+ ;;=4^D51.8
+ ;;^UTILITY(U,$J,358.3,20143,2)
+ ;;=^5002288
+ ;;^UTILITY(U,$J,358.3,20144,0)
+ ;;=I80.9^^84^929^178
+ ;;^UTILITY(U,$J,358.3,20144,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20920,1,3,0)
- ;;=3^V73.89
- ;;^UTILITY(U,$J,358.3,20920,1,4,0)
- ;;=4^Screening for Hepatitis C
- ;;^UTILITY(U,$J,358.3,20920,2)
- ;;=^295833
- ;;^UTILITY(U,$J,358.3,20921,0)
- ;;=V77.91^^112^1296^8
- ;;^UTILITY(U,$J,358.3,20921,1,0)
+ ;;^UTILITY(U,$J,358.3,20144,1,3,0)
+ ;;=3^Phlebitis/Thrombophlebitis,Unspec Site
+ ;;^UTILITY(U,$J,358.3,20144,1,4,0)
+ ;;=4^I80.9
+ ;;^UTILITY(U,$J,358.3,20144,2)
+ ;;=^93357
+ ;;^UTILITY(U,$J,358.3,20145,0)
+ ;;=D45.^^84^929^179
+ ;;^UTILITY(U,$J,358.3,20145,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20921,1,3,0)
- ;;=3^V77.91
- ;;^UTILITY(U,$J,358.3,20921,1,4,0)
- ;;=4^Screening for High Cholesterol
- ;;^UTILITY(U,$J,358.3,20921,2)
- ;;=^322093
- ;;^UTILITY(U,$J,358.3,20922,0)
- ;;=V81.1^^112^1296^9
- ;;^UTILITY(U,$J,358.3,20922,1,0)
+ ;;^UTILITY(U,$J,358.3,20145,1,3,0)
+ ;;=3^Polycythemia Vera
+ ;;^UTILITY(U,$J,358.3,20145,1,4,0)
+ ;;=4^D45.
+ ;;^UTILITY(U,$J,358.3,20145,2)
+ ;;=^96105
+ ;;^UTILITY(U,$J,358.3,20146,0)
+ ;;=C77.3^^84^929^109
+ ;;^UTILITY(U,$J,358.3,20146,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20922,1,3,0)
- ;;=3^V81.1
- ;;^UTILITY(U,$J,358.3,20922,1,4,0)
- ;;=4^Screening for Hypertension
- ;;^UTILITY(U,$J,358.3,20922,2)
- ;;=^295688
- ;;^UTILITY(U,$J,358.3,20923,0)
- ;;=V73.89^^112^1296^6
- ;;^UTILITY(U,$J,358.3,20923,1,0)
+ ;;^UTILITY(U,$J,358.3,20146,1,3,0)
+ ;;=3^Malig Neop Axilla/Upper Limb Lymph Nodes,Sec and Unspec
+ ;;^UTILITY(U,$J,358.3,20146,1,4,0)
+ ;;=4^C77.3
+ ;;^UTILITY(U,$J,358.3,20146,2)
+ ;;=^5001330
+ ;;^UTILITY(U,$J,358.3,20147,0)
+ ;;=C77.2^^84^929^125
+ ;;^UTILITY(U,$J,358.3,20147,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20923,1,3,0)
- ;;=3^V73.89
- ;;^UTILITY(U,$J,358.3,20923,1,4,0)
- ;;=4^Screening for HIV
- ;;^UTILITY(U,$J,358.3,20923,2)
- ;;=^295833
- ;;^UTILITY(U,$J,358.3,20924,0)
- ;;=V74.5^^112^1296^11
- ;;^UTILITY(U,$J,358.3,20924,1,0)
+ ;;^UTILITY(U,$J,358.3,20147,1,3,0)
+ ;;=3^Malig Neop Intra-Abdominal Lymph Nodes,Sec and Unspec
+ ;;^UTILITY(U,$J,358.3,20147,1,4,0)
+ ;;=4^C77.2
+ ;;^UTILITY(U,$J,358.3,20147,2)
+ ;;=^267316
+ ;;^UTILITY(U,$J,358.3,20148,0)
+ ;;=C77.1^^84^929^126
+ ;;^UTILITY(U,$J,358.3,20148,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20924,1,3,0)
- ;;=3^V74.5
- ;;^UTILITY(U,$J,358.3,20924,1,4,0)
- ;;=4^Screening for STDs
- ;;^UTILITY(U,$J,358.3,20924,2)
- ;;=^295637
- ;;^UTILITY(U,$J,358.3,20925,0)
- ;;=V79.1^^112^1296^4
- ;;^UTILITY(U,$J,358.3,20925,1,0)
+ ;;^UTILITY(U,$J,358.3,20148,1,3,0)
+ ;;=3^Malig Neop Intrathoracic Lymph Nodes,Sec and Unspec
+ ;;^UTILITY(U,$J,358.3,20148,1,4,0)
+ ;;=4^C77.1
+ ;;^UTILITY(U,$J,358.3,20148,2)
+ ;;=^267315
+ ;;^UTILITY(U,$J,358.3,20149,0)
+ ;;=C77.0^^84^929^142
+ ;;^UTILITY(U,$J,358.3,20149,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20925,1,3,0)
- ;;=3^V79.1
- ;;^UTILITY(U,$J,358.3,20925,1,4,0)
- ;;=4^Screening for Alcohol Use
- ;;^UTILITY(U,$J,358.3,20925,2)
- ;;=^295678
- ;;^UTILITY(U,$J,358.3,20926,0)
- ;;=V79.0^^112^1296^5
- ;;^UTILITY(U,$J,358.3,20926,1,0)
+ ;;^UTILITY(U,$J,358.3,20149,1,3,0)
+ ;;=3^Malig Neop Nodes of Head,Face and Neck,Sec and Unspec
+ ;;^UTILITY(U,$J,358.3,20149,1,4,0)
+ ;;=4^C77.0
+ ;;^UTILITY(U,$J,358.3,20149,2)
+ ;;=^5001329
+ ;;^UTILITY(U,$J,358.3,20150,0)
+ ;;=C77.8^^84^929^143
+ ;;^UTILITY(U,$J,358.3,20150,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,20926,1,3,0)
- ;;=3^V79.0
- ;;^UTILITY(U,$J,358.3,20926,1,4,0)
- ;;=4^Screening for Depression
- ;;^UTILITY(U,$J,358.3,20926,2)
- ;;=^295677
+ ;;^UTILITY(U,$J,358.3,20150,1,3,0)
+ ;;=3^Malig Neop Nodes of Multiple Regions,Sec and Unspec

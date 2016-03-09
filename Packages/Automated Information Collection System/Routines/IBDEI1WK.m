@@ -1,140 +1,124 @@
-IBDEI1WK ; ; 06-AUG-2015
+IBDEI1WK ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33457,2)
- ;;=^5019307
- ;;^UTILITY(U,$J,358.3,33458,0)
- ;;=R26.89^^182^2004^28
- ;;^UTILITY(U,$J,358.3,33458,1,0)
+ ;;^UTILITY(U,$J,358.3,32290,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33458,1,3,0)
- ;;=3^Abnormalities of Gait and Mobility NEC
- ;;^UTILITY(U,$J,358.3,33458,1,4,0)
- ;;=4^R26.89
- ;;^UTILITY(U,$J,358.3,33458,2)
- ;;=^5019308
- ;;^UTILITY(U,$J,358.3,33459,0)
- ;;=R26.9^^182^2004^29
- ;;^UTILITY(U,$J,358.3,33459,1,0)
+ ;;^UTILITY(U,$J,358.3,32290,1,3,0)
+ ;;=3^Disp fx ltrl cuneiform lft ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32290,1,4,0)
+ ;;=4^S92.222K
+ ;;^UTILITY(U,$J,358.3,32290,2)
+ ;;=^5044889
+ ;;^UTILITY(U,$J,358.3,32291,0)
+ ;;=S92.221K^^126^1609^41
+ ;;^UTILITY(U,$J,358.3,32291,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33459,1,3,0)
- ;;=3^Abnormalities of Gait and Mobility,Unspec
- ;;^UTILITY(U,$J,358.3,33459,1,4,0)
- ;;=4^R26.9
- ;;^UTILITY(U,$J,358.3,33459,2)
- ;;=^5019309
- ;;^UTILITY(U,$J,358.3,33460,0)
- ;;=R27.0^^182^2004^40
- ;;^UTILITY(U,$J,358.3,33460,1,0)
+ ;;^UTILITY(U,$J,358.3,32291,1,3,0)
+ ;;=3^Disp fx ltrl cuneiform rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32291,1,4,0)
+ ;;=4^S92.221K
+ ;;^UTILITY(U,$J,358.3,32291,2)
+ ;;=^5044882
+ ;;^UTILITY(U,$J,358.3,32292,0)
+ ;;=S92.241K^^126^1609^49
+ ;;^UTILITY(U,$J,358.3,32292,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33460,1,3,0)
- ;;=3^Ataxia,Unspec
- ;;^UTILITY(U,$J,358.3,33460,1,4,0)
- ;;=4^R27.0
- ;;^UTILITY(U,$J,358.3,33460,2)
- ;;=^5019310
- ;;^UTILITY(U,$J,358.3,33461,0)
- ;;=R27.8^^182^2004^94
- ;;^UTILITY(U,$J,358.3,33461,1,0)
+ ;;^UTILITY(U,$J,358.3,32292,1,3,0)
+ ;;=3^Disp fx med cuneiform rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32292,1,4,0)
+ ;;=4^S92.241K
+ ;;^UTILITY(U,$J,358.3,32292,2)
+ ;;=^5044966
+ ;;^UTILITY(U,$J,358.3,32293,0)
+ ;;=S92.242K^^126^1609^48
+ ;;^UTILITY(U,$J,358.3,32293,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33461,1,3,0)
- ;;=3^Lack of Coordination NEC
- ;;^UTILITY(U,$J,358.3,33461,1,4,0)
- ;;=4^R27.8
- ;;^UTILITY(U,$J,358.3,33461,2)
- ;;=^5019311
- ;;^UTILITY(U,$J,358.3,33462,0)
- ;;=R27.9^^182^2004^95
- ;;^UTILITY(U,$J,358.3,33462,1,0)
+ ;;^UTILITY(U,$J,358.3,32293,1,3,0)
+ ;;=3^Disp fx med cuneiform lft ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32293,1,4,0)
+ ;;=4^S92.242K
+ ;;^UTILITY(U,$J,358.3,32293,2)
+ ;;=^5044973
+ ;;^UTILITY(U,$J,358.3,32294,0)
+ ;;=S92.235K^^126^1609^263
+ ;;^UTILITY(U,$J,358.3,32294,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33462,1,3,0)
- ;;=3^Lack of Coordination,Unspec
- ;;^UTILITY(U,$J,358.3,33462,1,4,0)
- ;;=4^R27.9
- ;;^UTILITY(U,$J,358.3,33462,2)
- ;;=^5019312
- ;;^UTILITY(U,$J,358.3,33463,0)
- ;;=R29.0^^182^2004^147
- ;;^UTILITY(U,$J,358.3,33463,1,0)
+ ;;^UTILITY(U,$J,358.3,32294,1,3,0)
+ ;;=3^Nondisp fx intermed cuneiform lft ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32294,1,4,0)
+ ;;=4^S92.235K
+ ;;^UTILITY(U,$J,358.3,32294,2)
+ ;;=^5044952
+ ;;^UTILITY(U,$J,358.3,32295,0)
+ ;;=S92.234K^^126^1609^264
+ ;;^UTILITY(U,$J,358.3,32295,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33463,1,3,0)
- ;;=3^Tetany
- ;;^UTILITY(U,$J,358.3,33463,1,4,0)
- ;;=4^R29.0
- ;;^UTILITY(U,$J,358.3,33463,2)
- ;;=^118032
- ;;^UTILITY(U,$J,358.3,33464,0)
- ;;=R29.1^^182^2004^112
- ;;^UTILITY(U,$J,358.3,33464,1,0)
+ ;;^UTILITY(U,$J,358.3,32295,1,3,0)
+ ;;=3^Nondisp fx intermed cuneiform rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32295,1,4,0)
+ ;;=4^S92.234K
+ ;;^UTILITY(U,$J,358.3,32295,2)
+ ;;=^5044945
+ ;;^UTILITY(U,$J,358.3,32296,0)
+ ;;=S92.534K^^126^1609^262
+ ;;^UTILITY(U,$J,358.3,32296,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33464,1,3,0)
- ;;=3^Meningismus
- ;;^UTILITY(U,$J,358.3,33464,1,4,0)
- ;;=4^R29.1
- ;;^UTILITY(U,$J,358.3,33464,2)
- ;;=^5019313
- ;;^UTILITY(U,$J,358.3,33465,0)
- ;;=R29.5^^182^2004^149
- ;;^UTILITY(U,$J,358.3,33465,1,0)
+ ;;^UTILITY(U,$J,358.3,32296,1,3,0)
+ ;;=3^Nondisp fx dist phalanx rt lsr toe(s), subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32296,1,4,0)
+ ;;=4^S92.534K
+ ;;^UTILITY(U,$J,358.3,32296,2)
+ ;;=^5045540
+ ;;^UTILITY(U,$J,358.3,32297,0)
+ ;;=S92.535K^^126^1609^261
+ ;;^UTILITY(U,$J,358.3,32297,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33465,1,3,0)
- ;;=3^Transient Paralysis
- ;;^UTILITY(U,$J,358.3,33465,1,4,0)
- ;;=4^R29.5
- ;;^UTILITY(U,$J,358.3,33465,2)
- ;;=^5019316
- ;;^UTILITY(U,$J,358.3,33466,0)
- ;;=R34.^^182^2004^37
- ;;^UTILITY(U,$J,358.3,33466,1,0)
+ ;;^UTILITY(U,$J,358.3,32297,1,3,0)
+ ;;=3^Nondisp fx dist phalanx lft lsr toe(s), subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32297,1,4,0)
+ ;;=4^S92.535K
+ ;;^UTILITY(U,$J,358.3,32297,2)
+ ;;=^5045547
+ ;;^UTILITY(U,$J,358.3,32298,0)
+ ;;=S92.215K^^126^1609^259
+ ;;^UTILITY(U,$J,358.3,32298,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33466,1,3,0)
- ;;=3^Anuria and Oliguria
- ;;^UTILITY(U,$J,358.3,33466,1,4,0)
- ;;=4^R34.
- ;;^UTILITY(U,$J,358.3,33466,2)
- ;;=^5019333
- ;;^UTILITY(U,$J,358.3,33467,0)
- ;;=R35.8^^182^2004^134
- ;;^UTILITY(U,$J,358.3,33467,1,0)
+ ;;^UTILITY(U,$J,358.3,32298,1,3,0)
+ ;;=3^Nondisp fx cuboid bone lft ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32298,1,4,0)
+ ;;=4^S92.215K
+ ;;^UTILITY(U,$J,358.3,32298,2)
+ ;;=^5044868
+ ;;^UTILITY(U,$J,358.3,32299,0)
+ ;;=S92.214K^^126^1609^260
+ ;;^UTILITY(U,$J,358.3,32299,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33467,1,3,0)
- ;;=3^Polyuria NEC
- ;;^UTILITY(U,$J,358.3,33467,1,4,0)
- ;;=4^R35.8
- ;;^UTILITY(U,$J,358.3,33467,2)
- ;;=^5019336
- ;;^UTILITY(U,$J,358.3,33468,0)
- ;;=R39.12^^182^2004^135
- ;;^UTILITY(U,$J,358.3,33468,1,0)
+ ;;^UTILITY(U,$J,358.3,32299,1,3,0)
+ ;;=3^Nondisp fx cuboid bone rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32299,1,4,0)
+ ;;=4^S92.214K
+ ;;^UTILITY(U,$J,358.3,32299,2)
+ ;;=^5044861
+ ;;^UTILITY(U,$J,358.3,32300,0)
+ ;;=S92.212K^^126^1609^34
+ ;;^UTILITY(U,$J,358.3,32300,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33468,1,3,0)
- ;;=3^Poor Urinary Stream
- ;;^UTILITY(U,$J,358.3,33468,1,4,0)
- ;;=4^R39.12
- ;;^UTILITY(U,$J,358.3,33468,2)
- ;;=^5019342
- ;;^UTILITY(U,$J,358.3,33469,0)
- ;;=R39.14^^182^2004^69
- ;;^UTILITY(U,$J,358.3,33469,1,0)
+ ;;^UTILITY(U,$J,358.3,32300,1,3,0)
+ ;;=3^Disp fx cuboid bone lft ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32300,1,4,0)
+ ;;=4^S92.212K
+ ;;^UTILITY(U,$J,358.3,32300,2)
+ ;;=^5044847
+ ;;^UTILITY(U,$J,358.3,32301,0)
+ ;;=S92.211K^^126^1609^35
+ ;;^UTILITY(U,$J,358.3,32301,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33469,1,3,0)
- ;;=3^Feeling of Incomplete Bladder Emptying
- ;;^UTILITY(U,$J,358.3,33469,1,4,0)
- ;;=4^R39.14
- ;;^UTILITY(U,$J,358.3,33469,2)
- ;;=^5019344
- ;;^UTILITY(U,$J,358.3,33470,0)
- ;;=R41.4^^182^2004^116
- ;;^UTILITY(U,$J,358.3,33470,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33470,1,3,0)
- ;;=3^Neurologic Neglect Syndrome
- ;;^UTILITY(U,$J,358.3,33470,1,4,0)
- ;;=4^R41.4
- ;;^UTILITY(U,$J,358.3,33470,2)
- ;;=^303316
- ;;^UTILITY(U,$J,358.3,33471,0)
- ;;=R41.81^^182^2004^30
- ;;^UTILITY(U,$J,358.3,33471,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32301,1,3,0)
+ ;;=3^Disp fx cuboid bone rt ft, subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32301,1,4,0)
+ ;;=4^S92.211K
+ ;;^UTILITY(U,$J,358.3,32301,2)
+ ;;=^5044840
+ ;;^UTILITY(U,$J,358.3,32302,0)
+ ;;=S92.202K^^126^1609^222

@@ -1,144 +1,134 @@
-IBDEI066 ; ; 06-AUG-2015
+IBDEI066 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2362,1,3,0)
- ;;=3^Benign neoplasm of lip
- ;;^UTILITY(U,$J,358.3,2362,1,4,0)
- ;;=4^D10.0
- ;;^UTILITY(U,$J,358.3,2362,2)
- ;;=^267578
- ;;^UTILITY(U,$J,358.3,2363,0)
- ;;=D10.1^^5^69^11
- ;;^UTILITY(U,$J,358.3,2363,1,0)
+ ;;^UTILITY(U,$J,358.3,2558,1,4,0)
+ ;;=4^R41.0
+ ;;^UTILITY(U,$J,358.3,2558,2)
+ ;;=^5019436
+ ;;^UTILITY(U,$J,358.3,2559,0)
+ ;;=R41.844^^18^204^11
+ ;;^UTILITY(U,$J,358.3,2559,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2363,1,3,0)
- ;;=3^Benign neoplasm of tongue
- ;;^UTILITY(U,$J,358.3,2363,1,4,0)
- ;;=4^D10.1
- ;;^UTILITY(U,$J,358.3,2363,2)
- ;;=^267579
- ;;^UTILITY(U,$J,358.3,2364,0)
- ;;=D11.0^^5^69^9
- ;;^UTILITY(U,$J,358.3,2364,1,0)
+ ;;^UTILITY(U,$J,358.3,2559,1,3,0)
+ ;;=3^Cognitive Decline,Frontal Lobe/Executive Function Deficit
+ ;;^UTILITY(U,$J,358.3,2559,1,4,0)
+ ;;=4^R41.844
+ ;;^UTILITY(U,$J,358.3,2559,2)
+ ;;=^5019447
+ ;;^UTILITY(U,$J,358.3,2560,0)
+ ;;=R41.843^^18^204^12
+ ;;^UTILITY(U,$J,358.3,2560,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2364,1,3,0)
- ;;=3^Benign neoplasm of parotid gland
- ;;^UTILITY(U,$J,358.3,2364,1,4,0)
- ;;=4^D11.0
- ;;^UTILITY(U,$J,358.3,2364,2)
- ;;=^5001960
- ;;^UTILITY(U,$J,358.3,2365,0)
- ;;=D11.7^^5^69^8
- ;;^UTILITY(U,$J,358.3,2365,1,0)
+ ;;^UTILITY(U,$J,358.3,2560,1,3,0)
+ ;;=3^Cognitive Decline,Psychomotor Deficit
+ ;;^UTILITY(U,$J,358.3,2560,1,4,0)
+ ;;=4^R41.843
+ ;;^UTILITY(U,$J,358.3,2560,2)
+ ;;=^5019446
+ ;;^UTILITY(U,$J,358.3,2561,0)
+ ;;=R41.9^^18^204^13
+ ;;^UTILITY(U,$J,358.3,2561,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2365,1,3,0)
- ;;=3^Benign neoplasm of other major salivary glands
- ;;^UTILITY(U,$J,358.3,2365,1,4,0)
- ;;=4^D11.7
- ;;^UTILITY(U,$J,358.3,2365,2)
- ;;=^5001961
- ;;^UTILITY(U,$J,358.3,2366,0)
- ;;=D33.3^^5^69^6
- ;;^UTILITY(U,$J,358.3,2366,1,0)
+ ;;^UTILITY(U,$J,358.3,2561,1,3,0)
+ ;;=3^Cognitive Decline,Unspec
+ ;;^UTILITY(U,$J,358.3,2561,1,4,0)
+ ;;=4^R41.9
+ ;;^UTILITY(U,$J,358.3,2561,2)
+ ;;=^5019449
+ ;;^UTILITY(U,$J,358.3,2562,0)
+ ;;=R41.842^^18^204^14
+ ;;^UTILITY(U,$J,358.3,2562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2366,1,3,0)
- ;;=3^Benign neoplasm of cranial nerves
- ;;^UTILITY(U,$J,358.3,2366,1,4,0)
- ;;=4^D33.3
- ;;^UTILITY(U,$J,358.3,2366,2)
- ;;=^13298
- ;;^UTILITY(U,$J,358.3,2367,0)
- ;;=D34.^^5^69^10
- ;;^UTILITY(U,$J,358.3,2367,1,0)
+ ;;^UTILITY(U,$J,358.3,2562,1,3,0)
+ ;;=3^Cognitive Decline,Visuospatial Deficit
+ ;;^UTILITY(U,$J,358.3,2562,1,4,0)
+ ;;=4^R41.842
+ ;;^UTILITY(U,$J,358.3,2562,2)
+ ;;=^5019445
+ ;;^UTILITY(U,$J,358.3,2563,0)
+ ;;=G31.84^^18^204^15
+ ;;^UTILITY(U,$J,358.3,2563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2367,1,3,0)
- ;;=3^Benign neoplasm of thyroid gland
- ;;^UTILITY(U,$J,358.3,2367,1,4,0)
- ;;=4^D34.
- ;;^UTILITY(U,$J,358.3,2367,2)
- ;;=^5002141
- ;;^UTILITY(U,$J,358.3,2368,0)
- ;;=J34.2^^5^70^11
- ;;^UTILITY(U,$J,358.3,2368,1,0)
+ ;;^UTILITY(U,$J,358.3,2563,1,3,0)
+ ;;=3^Cognitive Impairment,Mild
+ ;;^UTILITY(U,$J,358.3,2563,1,4,0)
+ ;;=4^G31.84
+ ;;^UTILITY(U,$J,358.3,2563,2)
+ ;;=^5003813
+ ;;^UTILITY(U,$J,358.3,2564,0)
+ ;;=G31.83^^18^204^19
+ ;;^UTILITY(U,$J,358.3,2564,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2368,1,3,0)
- ;;=3^Deviated nasal septum
- ;;^UTILITY(U,$J,358.3,2368,1,4,0)
- ;;=4^J34.2
- ;;^UTILITY(U,$J,358.3,2368,2)
- ;;=^259087
- ;;^UTILITY(U,$J,358.3,2369,0)
- ;;=J33.0^^5^70^19
- ;;^UTILITY(U,$J,358.3,2369,1,0)
+ ;;^UTILITY(U,$J,358.3,2564,1,3,0)
+ ;;=3^Dementia w/ Lewy Bodies
+ ;;^UTILITY(U,$J,358.3,2564,1,4,0)
+ ;;=4^G31.83
+ ;;^UTILITY(U,$J,358.3,2564,2)
+ ;;=^329888
+ ;;^UTILITY(U,$J,358.3,2565,0)
+ ;;=G31.2^^18^204^22
+ ;;^UTILITY(U,$J,358.3,2565,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2369,1,3,0)
- ;;=3^Polyp of nasal cavity
- ;;^UTILITY(U,$J,358.3,2369,1,4,0)
- ;;=4^J33.0
- ;;^UTILITY(U,$J,358.3,2369,2)
- ;;=^269880
- ;;^UTILITY(U,$J,358.3,2370,0)
- ;;=J33.8^^5^70^20
- ;;^UTILITY(U,$J,358.3,2370,1,0)
+ ;;^UTILITY(U,$J,358.3,2565,1,3,0)
+ ;;=3^Dementia,Alcohol-Related
+ ;;^UTILITY(U,$J,358.3,2565,1,4,0)
+ ;;=4^G31.2
+ ;;^UTILITY(U,$J,358.3,2565,2)
+ ;;=^5003810
+ ;;^UTILITY(U,$J,358.3,2566,0)
+ ;;=A81.09^^18^204^25
+ ;;^UTILITY(U,$J,358.3,2566,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2370,1,3,0)
- ;;=3^Polyp of sinus NEC
- ;;^UTILITY(U,$J,358.3,2370,1,4,0)
- ;;=4^J33.8
- ;;^UTILITY(U,$J,358.3,2370,2)
- ;;=^269884
- ;;^UTILITY(U,$J,358.3,2371,0)
- ;;=J31.0^^5^70^8
- ;;^UTILITY(U,$J,358.3,2371,1,0)
+ ;;^UTILITY(U,$J,358.3,2566,1,3,0)
+ ;;=3^Dementia,Creutzfeldt-Jakob Disease,Other
+ ;;^UTILITY(U,$J,358.3,2566,1,4,0)
+ ;;=4^A81.09
+ ;;^UTILITY(U,$J,358.3,2566,2)
+ ;;=^5000410
+ ;;^UTILITY(U,$J,358.3,2567,0)
+ ;;=A81.00^^18^204^26
+ ;;^UTILITY(U,$J,358.3,2567,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2371,1,3,0)
- ;;=3^Chronic rhinitis
- ;;^UTILITY(U,$J,358.3,2371,1,4,0)
- ;;=4^J31.0
- ;;^UTILITY(U,$J,358.3,2371,2)
- ;;=^24434
- ;;^UTILITY(U,$J,358.3,2372,0)
- ;;=J31.2^^5^70^7
- ;;^UTILITY(U,$J,358.3,2372,1,0)
+ ;;^UTILITY(U,$J,358.3,2567,1,3,0)
+ ;;=3^Dementia,Creutzfeldt-Jakob Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,2567,1,4,0)
+ ;;=4^A81.00
+ ;;^UTILITY(U,$J,358.3,2567,2)
+ ;;=^5000409
+ ;;^UTILITY(U,$J,358.3,2568,0)
+ ;;=A81.01^^18^204^27
+ ;;^UTILITY(U,$J,358.3,2568,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2372,1,3,0)
- ;;=3^Chronic pharyngitis
- ;;^UTILITY(U,$J,358.3,2372,1,4,0)
- ;;=4^J31.2
- ;;^UTILITY(U,$J,358.3,2372,2)
- ;;=^269886
- ;;^UTILITY(U,$J,358.3,2373,0)
- ;;=J31.1^^5^70^5
- ;;^UTILITY(U,$J,358.3,2373,1,0)
+ ;;^UTILITY(U,$J,358.3,2568,1,3,0)
+ ;;=3^Dementia,Creutzfeldt-Jakob Disease,Variant
+ ;;^UTILITY(U,$J,358.3,2568,1,4,0)
+ ;;=4^A81.01
+ ;;^UTILITY(U,$J,358.3,2568,2)
+ ;;=^336701
+ ;;^UTILITY(U,$J,358.3,2569,0)
+ ;;=G31.9^^18^204^28
+ ;;^UTILITY(U,$J,358.3,2569,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2373,1,3,0)
- ;;=3^Chronic nasopharyngitis
- ;;^UTILITY(U,$J,358.3,2373,1,4,0)
- ;;=4^J31.1
- ;;^UTILITY(U,$J,358.3,2373,2)
- ;;=^269888
- ;;^UTILITY(U,$J,358.3,2374,0)
- ;;=J32.9^^5^70^9
- ;;^UTILITY(U,$J,358.3,2374,1,0)
+ ;;^UTILITY(U,$J,358.3,2569,1,3,0)
+ ;;=3^Dementia,Degenerative Disease Nervous System,Unspec
+ ;;^UTILITY(U,$J,358.3,2569,1,4,0)
+ ;;=4^G31.9
+ ;;^UTILITY(U,$J,358.3,2569,2)
+ ;;=^5003815
+ ;;^UTILITY(U,$J,358.3,2570,0)
+ ;;=G10.^^18^204^45
+ ;;^UTILITY(U,$J,358.3,2570,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2374,1,3,0)
- ;;=3^Chronic sinusitis, unspecified
- ;;^UTILITY(U,$J,358.3,2374,1,4,0)
- ;;=4^J32.9
- ;;^UTILITY(U,$J,358.3,2374,2)
- ;;=^5008207
- ;;^UTILITY(U,$J,358.3,2375,0)
- ;;=J32.4^^5^70^6
- ;;^UTILITY(U,$J,358.3,2375,1,0)
+ ;;^UTILITY(U,$J,358.3,2570,1,3,0)
+ ;;=3^Huntington's Disease w/ Dementia w/o Behavioral Disturbances
+ ;;^UTILITY(U,$J,358.3,2570,1,4,0)
+ ;;=4^G10.
+ ;;^UTILITY(U,$J,358.3,2570,2)
+ ;;=^5003751^F02.80
+ ;;^UTILITY(U,$J,358.3,2571,0)
+ ;;=G94.^^18^204^24
+ ;;^UTILITY(U,$J,358.3,2571,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2375,1,3,0)
- ;;=3^Chronic pansinusitis
- ;;^UTILITY(U,$J,358.3,2375,1,4,0)
- ;;=4^J32.4
- ;;^UTILITY(U,$J,358.3,2375,2)
- ;;=^5008206
- ;;^UTILITY(U,$J,358.3,2376,0)
- ;;=J35.01^^5^70^10
- ;;^UTILITY(U,$J,358.3,2376,1,0)
- ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2571,1,3,0)
+ ;;=3^Dementia,Brain Disorder in Diseases Classified Elsewhere

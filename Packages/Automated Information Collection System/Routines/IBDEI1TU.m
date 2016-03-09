@@ -1,136 +1,126 @@
-IBDEI1TU ; ; 06-AUG-2015
+IBDEI1TU ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32191,2)
- ;;=^2149
- ;;^UTILITY(U,$J,358.3,32192,0)
- ;;=L73.2^^182^1981^159
- ;;^UTILITY(U,$J,358.3,32192,1,0)
+ ;;^UTILITY(U,$J,358.3,31033,1,4,0)
+ ;;=4^F10.281
+ ;;^UTILITY(U,$J,358.3,31033,2)
+ ;;=^5003097
+ ;;^UTILITY(U,$J,358.3,31034,0)
+ ;;=F10.981^^123^1555^16
+ ;;^UTILITY(U,$J,358.3,31034,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32192,1,3,0)
- ;;=3^Hidradenitis Suppurativa
- ;;^UTILITY(U,$J,358.3,32192,1,4,0)
- ;;=4^L73.2
- ;;^UTILITY(U,$J,358.3,32192,2)
- ;;=^278979
- ;;^UTILITY(U,$J,358.3,32193,0)
- ;;=L73.9^^182^1981^153
- ;;^UTILITY(U,$J,358.3,32193,1,0)
+ ;;^UTILITY(U,$J,358.3,31034,1,3,0)
+ ;;=3^Alcohol Induced Sexual Dysfunction w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,31034,1,4,0)
+ ;;=4^F10.981
+ ;;^UTILITY(U,$J,358.3,31034,2)
+ ;;=^5003111
+ ;;^UTILITY(U,$J,358.3,31035,0)
+ ;;=F10.182^^123^1555^17
+ ;;^UTILITY(U,$J,358.3,31035,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32193,1,3,0)
- ;;=3^Follicular Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,32193,1,4,0)
- ;;=4^L73.9
- ;;^UTILITY(U,$J,358.3,32193,2)
- ;;=^5009286
- ;;^UTILITY(U,$J,358.3,32194,0)
- ;;=L82.0^^182^1981^161
- ;;^UTILITY(U,$J,358.3,32194,1,0)
+ ;;^UTILITY(U,$J,358.3,31035,1,3,0)
+ ;;=3^Alcohol Induced Sleep Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,31035,1,4,0)
+ ;;=4^F10.182
+ ;;^UTILITY(U,$J,358.3,31035,2)
+ ;;=^5003078
+ ;;^UTILITY(U,$J,358.3,31036,0)
+ ;;=F10.121^^123^1555^20
+ ;;^UTILITY(U,$J,358.3,31036,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32194,1,3,0)
- ;;=3^Inflamed Seborrheic Keratosis
- ;;^UTILITY(U,$J,358.3,32194,1,4,0)
- ;;=4^L82.0
- ;;^UTILITY(U,$J,358.3,32194,2)
- ;;=^303311
- ;;^UTILITY(U,$J,358.3,32195,0)
- ;;=L82.1^^182^1981^265
- ;;^UTILITY(U,$J,358.3,32195,1,0)
+ ;;^UTILITY(U,$J,358.3,31036,1,3,0)
+ ;;=3^Alcohol Intoxication Delirium w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,31036,1,4,0)
+ ;;=4^F10.121
+ ;;^UTILITY(U,$J,358.3,31036,2)
+ ;;=^5003070
+ ;;^UTILITY(U,$J,358.3,31037,0)
+ ;;=F10.221^^123^1555^21
+ ;;^UTILITY(U,$J,358.3,31037,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32195,1,3,0)
- ;;=3^Seborrheic Keratosis NEC
- ;;^UTILITY(U,$J,358.3,32195,1,4,0)
- ;;=4^L82.1
- ;;^UTILITY(U,$J,358.3,32195,2)
- ;;=^303312
- ;;^UTILITY(U,$J,358.3,32196,0)
- ;;=L84.^^182^1981^116
- ;;^UTILITY(U,$J,358.3,32196,1,0)
+ ;;^UTILITY(U,$J,358.3,31037,1,3,0)
+ ;;=3^Alcohol Intoxication Delirium w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,31037,1,4,0)
+ ;;=4^F10.221
+ ;;^UTILITY(U,$J,358.3,31037,2)
+ ;;=^5003084
+ ;;^UTILITY(U,$J,358.3,31038,0)
+ ;;=F10.921^^123^1555^22
+ ;;^UTILITY(U,$J,358.3,31038,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32196,1,3,0)
- ;;=3^Corns and Callosities
- ;;^UTILITY(U,$J,358.3,32196,1,4,0)
- ;;=4^L84.
- ;;^UTILITY(U,$J,358.3,32196,2)
- ;;=^271920
- ;;^UTILITY(U,$J,358.3,32197,0)
- ;;=L85.0^^182^1981^8
- ;;^UTILITY(U,$J,358.3,32197,1,0)
+ ;;^UTILITY(U,$J,358.3,31038,1,3,0)
+ ;;=3^Alcohol Intoxication Delirium w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,31038,1,4,0)
+ ;;=4^F10.921
+ ;;^UTILITY(U,$J,358.3,31038,2)
+ ;;=^5003102
+ ;;^UTILITY(U,$J,358.3,31039,0)
+ ;;=F10.129^^123^1555^23
+ ;;^UTILITY(U,$J,358.3,31039,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32197,1,3,0)
- ;;=3^Acquired Ichthyosis
- ;;^UTILITY(U,$J,358.3,32197,1,4,0)
- ;;=4^L85.0
- ;;^UTILITY(U,$J,358.3,32197,2)
- ;;=^5009320
- ;;^UTILITY(U,$J,358.3,32198,0)
- ;;=L85.1^^182^1981^10
- ;;^UTILITY(U,$J,358.3,32198,1,0)
+ ;;^UTILITY(U,$J,358.3,31039,1,3,0)
+ ;;=3^Alcohol Intoxication w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,31039,1,4,0)
+ ;;=4^F10.129
+ ;;^UTILITY(U,$J,358.3,31039,2)
+ ;;=^5003071
+ ;;^UTILITY(U,$J,358.3,31040,0)
+ ;;=F10.229^^123^1555^24
+ ;;^UTILITY(U,$J,358.3,31040,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32198,1,3,0)
- ;;=3^Acquired Keratosis Palmaris et Plantaris
- ;;^UTILITY(U,$J,358.3,32198,1,4,0)
- ;;=4^L85.1
- ;;^UTILITY(U,$J,358.3,32198,2)
- ;;=^5009321
- ;;^UTILITY(U,$J,358.3,32199,0)
- ;;=L85.2^^182^1981^167
- ;;^UTILITY(U,$J,358.3,32199,1,0)
+ ;;^UTILITY(U,$J,358.3,31040,1,3,0)
+ ;;=3^Alcohol Intoxication w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,31040,1,4,0)
+ ;;=4^F10.229
+ ;;^UTILITY(U,$J,358.3,31040,2)
+ ;;=^5003085
+ ;;^UTILITY(U,$J,358.3,31041,0)
+ ;;=F10.929^^123^1555^25
+ ;;^UTILITY(U,$J,358.3,31041,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32199,1,3,0)
- ;;=3^Keratosis Punctata
- ;;^UTILITY(U,$J,358.3,32199,1,4,0)
- ;;=4^L85.2
- ;;^UTILITY(U,$J,358.3,32199,2)
- ;;=^5009322
- ;;^UTILITY(U,$J,358.3,32200,0)
- ;;=L85.3^^182^1981^290
- ;;^UTILITY(U,$J,358.3,32200,1,0)
+ ;;^UTILITY(U,$J,358.3,31041,1,3,0)
+ ;;=3^Alcohol Intoxication w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,31041,1,4,0)
+ ;;=4^F10.929
+ ;;^UTILITY(U,$J,358.3,31041,2)
+ ;;=^5003103
+ ;;^UTILITY(U,$J,358.3,31042,0)
+ ;;=F10.99^^123^1555^26
+ ;;^UTILITY(U,$J,358.3,31042,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32200,1,3,0)
- ;;=3^Xerosis Cutis
- ;;^UTILITY(U,$J,358.3,32200,1,4,0)
- ;;=4^L85.3
- ;;^UTILITY(U,$J,358.3,32200,2)
- ;;=^5009323
- ;;^UTILITY(U,$J,358.3,32201,0)
- ;;=L86.^^182^1981^165
- ;;^UTILITY(U,$J,358.3,32201,1,0)
+ ;;^UTILITY(U,$J,358.3,31042,1,3,0)
+ ;;=3^Alcohol Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,31042,1,4,0)
+ ;;=4^F10.99
+ ;;^UTILITY(U,$J,358.3,31042,2)
+ ;;=^5133351
+ ;;^UTILITY(U,$J,358.3,31043,0)
+ ;;=F15.10^^123^1556^4
+ ;;^UTILITY(U,$J,358.3,31043,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32201,1,3,0)
- ;;=3^Keratoderma in Diseases Classified Elsewhere
- ;;^UTILITY(U,$J,358.3,32201,1,4,0)
- ;;=4^L86.
- ;;^UTILITY(U,$J,358.3,32201,2)
- ;;=^5009326
- ;;^UTILITY(U,$J,358.3,32202,0)
- ;;=L87.0^^182^1981^166
- ;;^UTILITY(U,$J,358.3,32202,1,0)
+ ;;^UTILITY(U,$J,358.3,31043,1,3,0)
+ ;;=3^Amphetamine-Type Disorder,Mild
+ ;;^UTILITY(U,$J,358.3,31043,1,4,0)
+ ;;=4^F15.10
+ ;;^UTILITY(U,$J,358.3,31043,2)
+ ;;=^5003282
+ ;;^UTILITY(U,$J,358.3,31044,0)
+ ;;=F15.14^^123^1556^2
+ ;;^UTILITY(U,$J,358.3,31044,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32202,1,3,0)
- ;;=3^Keratosis Follicularis et Parafollicularis in Cutem Penetrans
- ;;^UTILITY(U,$J,358.3,32202,1,4,0)
- ;;=4^L87.0
- ;;^UTILITY(U,$J,358.3,32202,2)
- ;;=^5009327
- ;;^UTILITY(U,$J,358.3,32203,0)
- ;;=L87.2^^182^1981^141
- ;;^UTILITY(U,$J,358.3,32203,1,0)
+ ;;^UTILITY(U,$J,358.3,31044,1,3,0)
+ ;;=3^Amphetamine-Induced Depressive,Bipolar & Related Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,31044,1,4,0)
+ ;;=4^F15.14
+ ;;^UTILITY(U,$J,358.3,31044,2)
+ ;;=^5003287
+ ;;^UTILITY(U,$J,358.3,31045,0)
+ ;;=F15.182^^123^1556^3
+ ;;^UTILITY(U,$J,358.3,31045,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32203,1,3,0)
- ;;=3^Elastosis Perforans Serpiginosa
- ;;^UTILITY(U,$J,358.3,32203,1,4,0)
- ;;=4^L87.2
- ;;^UTILITY(U,$J,358.3,32203,2)
- ;;=^5009329
- ;;^UTILITY(U,$J,358.3,32204,0)
- ;;=L89.300^^182^1981^243
- ;;^UTILITY(U,$J,358.3,32204,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32204,1,3,0)
- ;;=3^Pressure Ulcer of Buttock,Unstageable
- ;;^UTILITY(U,$J,358.3,32204,1,4,0)
- ;;=4^L89.300
- ;;^UTILITY(U,$J,358.3,32204,2)
- ;;=^5009389
+ ;;^UTILITY(U,$J,358.3,31045,1,3,0)
+ ;;=3^Amphetamine-Induced Sleep Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,31045,1,4,0)
+ ;;=4^F15.182

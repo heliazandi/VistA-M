@@ -1,122 +1,130 @@
-IBDEI1ZX ; ; 06-AUG-2015
+IBDEI1ZX ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34937,1,4,0)
- ;;=4^S89.122S
- ;;^UTILITY(U,$J,358.3,34937,2)
- ;;=^5137300
- ;;^UTILITY(U,$J,358.3,34938,0)
- ;;=S89.121S^^183^2024^88
- ;;^UTILITY(U,$J,358.3,34938,1,0)
+ ;;^UTILITY(U,$J,358.3,33867,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34938,1,3,0)
- ;;=3^Sltr-haris Type II physeal fx lower end of r tibia, sequela
- ;;^UTILITY(U,$J,358.3,34938,1,4,0)
- ;;=4^S89.121S
- ;;^UTILITY(U,$J,358.3,34938,2)
- ;;=^5043744
- ;;^UTILITY(U,$J,358.3,34939,0)
- ;;=S89.022S^^183^2024^91
- ;;^UTILITY(U,$J,358.3,34939,1,0)
+ ;;^UTILITY(U,$J,358.3,33867,1,3,0)
+ ;;=3^Cutaneous Follicle Center Lymphoma,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33867,1,4,0)
+ ;;=4^C82.60
+ ;;^UTILITY(U,$J,358.3,33867,2)
+ ;;=^5001521
+ ;;^UTILITY(U,$J,358.3,33868,0)
+ ;;=D56.2^^131^1680^54
+ ;;^UTILITY(U,$J,358.3,33868,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34939,1,3,0)
- ;;=3^Sltr-haris Type II physeal fx upper end of l tibia, sequela
- ;;^UTILITY(U,$J,358.3,34939,1,4,0)
- ;;=4^S89.022S
- ;;^UTILITY(U,$J,358.3,34939,2)
- ;;=^5043672
- ;;^UTILITY(U,$J,358.3,34940,0)
- ;;=S89.021S^^183^2024^92
- ;;^UTILITY(U,$J,358.3,34940,1,0)
+ ;;^UTILITY(U,$J,358.3,33868,1,3,0)
+ ;;=3^Delta-Beta Thalassemia
+ ;;^UTILITY(U,$J,358.3,33868,1,4,0)
+ ;;=4^D56.2
+ ;;^UTILITY(U,$J,358.3,33868,2)
+ ;;=^340496
+ ;;^UTILITY(U,$J,358.3,33869,0)
+ ;;=D75.9^^131^1680^55
+ ;;^UTILITY(U,$J,358.3,33869,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34940,1,3,0)
- ;;=3^Sltr-haris Type II physeal fx upper end of r tibia, sequela
- ;;^UTILITY(U,$J,358.3,34940,1,4,0)
- ;;=4^S89.021S
- ;;^UTILITY(U,$J,358.3,34940,2)
- ;;=^5043666
- ;;^UTILITY(U,$J,358.3,34941,0)
- ;;=S89.132S^^183^2024^95
- ;;^UTILITY(U,$J,358.3,34941,1,0)
+ ;;^UTILITY(U,$J,358.3,33869,1,3,0)
+ ;;=3^Disease of Blood/Blood-Forming Organs,Unspec
+ ;;^UTILITY(U,$J,358.3,33869,1,4,0)
+ ;;=4^D75.9
+ ;;^UTILITY(U,$J,358.3,33869,2)
+ ;;=^5002393
+ ;;^UTILITY(U,$J,358.3,33870,0)
+ ;;=D59.0^^131^1680^58
+ ;;^UTILITY(U,$J,358.3,33870,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34941,1,3,0)
- ;;=3^Sltr-haris Type III physeal fx lower end of l tibia, sequela
- ;;^UTILITY(U,$J,358.3,34941,1,4,0)
- ;;=4^S89.132S
- ;;^UTILITY(U,$J,358.3,34941,2)
- ;;=^5137306
- ;;^UTILITY(U,$J,358.3,34942,0)
- ;;=S89.131S^^183^2024^96
- ;;^UTILITY(U,$J,358.3,34942,1,0)
+ ;;^UTILITY(U,$J,358.3,33870,1,3,0)
+ ;;=3^Drug-Induced Autoimmune Hemolytic Anemia
+ ;;^UTILITY(U,$J,358.3,33870,1,4,0)
+ ;;=4^D59.0
+ ;;^UTILITY(U,$J,358.3,33870,2)
+ ;;=^5002323
+ ;;^UTILITY(U,$J,358.3,33871,0)
+ ;;=D59.2^^131^1680^59
+ ;;^UTILITY(U,$J,358.3,33871,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34942,1,3,0)
- ;;=3^Sltr-haris Type III physeal fx lower end of r tibia, sequela
- ;;^UTILITY(U,$J,358.3,34942,1,4,0)
- ;;=4^S89.131S
- ;;^UTILITY(U,$J,358.3,34942,2)
- ;;=^5043750
- ;;^UTILITY(U,$J,358.3,34943,0)
- ;;=S89.032S^^183^2024^97
- ;;^UTILITY(U,$J,358.3,34943,1,0)
+ ;;^UTILITY(U,$J,358.3,33871,1,3,0)
+ ;;=3^Drug-Induced Nonautoimmune Hemolytic Anemia
+ ;;^UTILITY(U,$J,358.3,33871,1,4,0)
+ ;;=4^D59.2
+ ;;^UTILITY(U,$J,358.3,33871,2)
+ ;;=^5002325
+ ;;^UTILITY(U,$J,358.3,33872,0)
+ ;;=R59.9^^131^1680^62
+ ;;^UTILITY(U,$J,358.3,33872,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34943,1,3,0)
- ;;=3^Sltr-haris Type III physeal fx upper end of l tibia, sequela
- ;;^UTILITY(U,$J,358.3,34943,1,4,0)
- ;;=4^S89.032S
- ;;^UTILITY(U,$J,358.3,34943,2)
- ;;=^5043690
- ;;^UTILITY(U,$J,358.3,34944,0)
- ;;=S89.031S^^183^2024^98
- ;;^UTILITY(U,$J,358.3,34944,1,0)
+ ;;^UTILITY(U,$J,358.3,33872,1,3,0)
+ ;;=3^Enlarged Lymph Nodes,Unspec
+ ;;^UTILITY(U,$J,358.3,33872,1,4,0)
+ ;;=4^R59.9
+ ;;^UTILITY(U,$J,358.3,33872,2)
+ ;;=^5019531
+ ;;^UTILITY(U,$J,358.3,33873,0)
+ ;;=D47.3^^131^1680^63
+ ;;^UTILITY(U,$J,358.3,33873,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34944,1,3,0)
- ;;=3^Sltr-haris Type III physeal fx upper end of r tibia, sequela
- ;;^UTILITY(U,$J,358.3,34944,1,4,0)
- ;;=4^S89.031S
- ;;^UTILITY(U,$J,358.3,34944,2)
- ;;=^5043684
- ;;^UTILITY(U,$J,358.3,34945,0)
- ;;=S89.142S^^183^2024^99
- ;;^UTILITY(U,$J,358.3,34945,1,0)
+ ;;^UTILITY(U,$J,358.3,33873,1,3,0)
+ ;;=3^Essential Thrombocythemia
+ ;;^UTILITY(U,$J,358.3,33873,1,4,0)
+ ;;=4^D47.3
+ ;;^UTILITY(U,$J,358.3,33873,2)
+ ;;=^5002258
+ ;;^UTILITY(U,$J,358.3,33874,0)
+ ;;=C82.09^^131^1680^64
+ ;;^UTILITY(U,$J,358.3,33874,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34945,1,3,0)
- ;;=3^Sltr-haris Type IV physeal fx lower end of l tibia, sequela
- ;;^UTILITY(U,$J,358.3,34945,1,4,0)
- ;;=4^S89.142S
- ;;^UTILITY(U,$J,358.3,34945,2)
- ;;=^5137312
- ;;^UTILITY(U,$J,358.3,34946,0)
- ;;=S89.141S^^183^2024^100
- ;;^UTILITY(U,$J,358.3,34946,1,0)
+ ;;^UTILITY(U,$J,358.3,33874,1,3,0)
+ ;;=3^Follicular Lymphoma Grade I,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,33874,1,4,0)
+ ;;=4^C82.09
+ ;;^UTILITY(U,$J,358.3,33874,2)
+ ;;=^5001470
+ ;;^UTILITY(U,$J,358.3,33875,0)
+ ;;=C82.00^^131^1680^65
+ ;;^UTILITY(U,$J,358.3,33875,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34946,1,3,0)
- ;;=3^Sltr-haris Type IV physeal fx lower end of r tibia, sequela
- ;;^UTILITY(U,$J,358.3,34946,1,4,0)
- ;;=4^S89.141S
- ;;^UTILITY(U,$J,358.3,34946,2)
- ;;=^5043756
- ;;^UTILITY(U,$J,358.3,34947,0)
- ;;=S89.041S^^183^2024^101
- ;;^UTILITY(U,$J,358.3,34947,1,0)
+ ;;^UTILITY(U,$J,358.3,33875,1,3,0)
+ ;;=3^Follicular Lymphoma Grade I,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33875,1,4,0)
+ ;;=4^C82.00
+ ;;^UTILITY(U,$J,358.3,33875,2)
+ ;;=^5001461
+ ;;^UTILITY(U,$J,358.3,33876,0)
+ ;;=C82.19^^131^1680^66
+ ;;^UTILITY(U,$J,358.3,33876,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34947,1,3,0)
- ;;=3^Sltr-haris Type IV physeal fx upper end of r tibia, sequela
- ;;^UTILITY(U,$J,358.3,34947,1,4,0)
- ;;=4^S89.041S
- ;;^UTILITY(U,$J,358.3,34947,2)
- ;;=^5043702
- ;;^UTILITY(U,$J,358.3,34948,0)
- ;;=S89.042S^^183^2024^102
- ;;^UTILITY(U,$J,358.3,34948,1,0)
+ ;;^UTILITY(U,$J,358.3,33876,1,3,0)
+ ;;=3^Follicular Lymphoma Grade II,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,33876,1,4,0)
+ ;;=4^C82.19
+ ;;^UTILITY(U,$J,358.3,33876,2)
+ ;;=^5001480
+ ;;^UTILITY(U,$J,358.3,33877,0)
+ ;;=C82.10^^131^1680^67
+ ;;^UTILITY(U,$J,358.3,33877,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34948,1,3,0)
- ;;=3^Sltr-haris Type IV physeal fx upper end of l tibia, sequela
- ;;^UTILITY(U,$J,358.3,34948,1,4,0)
- ;;=4^S89.042S
- ;;^UTILITY(U,$J,358.3,34948,2)
- ;;=^5043708
- ;;^UTILITY(U,$J,358.3,34949,0)
- ;;=M84.362S^^183^2024^104
- ;;^UTILITY(U,$J,358.3,34949,1,0)
+ ;;^UTILITY(U,$J,358.3,33877,1,3,0)
+ ;;=3^Follicular Lymphoma Grade II,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33877,1,4,0)
+ ;;=4^C82.10
+ ;;^UTILITY(U,$J,358.3,33877,2)
+ ;;=^5001471
+ ;;^UTILITY(U,$J,358.3,33878,0)
+ ;;=C82.29^^131^1680^68
+ ;;^UTILITY(U,$J,358.3,33878,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33878,1,3,0)
+ ;;=3^Follicular Lymphoma Grade III,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,33878,1,4,0)
+ ;;=4^C82.29
+ ;;^UTILITY(U,$J,358.3,33878,2)
+ ;;=^5001490
+ ;;^UTILITY(U,$J,358.3,33879,0)
+ ;;=C82.20^^131^1680^69
+ ;;^UTILITY(U,$J,358.3,33879,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33879,1,3,0)
+ ;;=3^Follicular Lymphoma Grade III,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33879,1,4,0)
+ ;;=4^C82.20

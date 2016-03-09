@@ -1,134 +1,140 @@
-IBDEI02A ; ; 06-AUG-2015
+IBDEI02A ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,518,1,4,0)
- ;;=4^C44.211
- ;;^UTILITY(U,$J,358.3,518,2)
- ;;=^5001031
- ;;^UTILITY(U,$J,358.3,519,0)
- ;;=C44.221^^2^23^37
- ;;^UTILITY(U,$J,358.3,519,1,0)
+ ;;^UTILITY(U,$J,358.3,574,2)
+ ;;=^5003250
+ ;;^UTILITY(U,$J,358.3,575,0)
+ ;;=F14.20^^3^57^3
+ ;;^UTILITY(U,$J,358.3,575,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,519,1,3,0)
- ;;=3^Squamous cell carcinoma skin/ unsp ear and extrn auric canal
- ;;^UTILITY(U,$J,358.3,519,1,4,0)
- ;;=4^C44.221
- ;;^UTILITY(U,$J,358.3,519,2)
- ;;=^5001034
- ;;^UTILITY(U,$J,358.3,520,0)
- ;;=C44.310^^2^23^8
- ;;^UTILITY(U,$J,358.3,520,1,0)
+ ;;^UTILITY(U,$J,358.3,575,1,3,0)
+ ;;=3^Cocaine Use Disorder,Moderate-Severe
+ ;;^UTILITY(U,$J,358.3,575,1,4,0)
+ ;;=4^F14.20
+ ;;^UTILITY(U,$J,358.3,575,2)
+ ;;=^5003253
+ ;;^UTILITY(U,$J,358.3,576,0)
+ ;;=F14.21^^3^57^2
+ ;;^UTILITY(U,$J,358.3,576,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,520,1,3,0)
- ;;=3^Basal cell carcinoma of skin of unspecified parts of face
- ;;^UTILITY(U,$J,358.3,520,1,4,0)
- ;;=4^C44.310
- ;;^UTILITY(U,$J,358.3,520,2)
- ;;=^5001043
- ;;^UTILITY(U,$J,358.3,521,0)
- ;;=C44.311^^2^23^4
- ;;^UTILITY(U,$J,358.3,521,1,0)
+ ;;^UTILITY(U,$J,358.3,576,1,3,0)
+ ;;=3^Cocaine Use Disorder,Mod-Severe,In Remission
+ ;;^UTILITY(U,$J,358.3,576,1,4,0)
+ ;;=4^F14.21
+ ;;^UTILITY(U,$J,358.3,576,2)
+ ;;=^5003254
+ ;;^UTILITY(U,$J,358.3,577,0)
+ ;;=F14.23^^3^57^4
+ ;;^UTILITY(U,$J,358.3,577,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,521,1,3,0)
- ;;=3^Basal cell carcinoma of skin of nose
- ;;^UTILITY(U,$J,358.3,521,1,4,0)
- ;;=4^C44.311
- ;;^UTILITY(U,$J,358.3,521,2)
- ;;=^5001044
- ;;^UTILITY(U,$J,358.3,522,0)
- ;;=C44.319^^2^23^5
- ;;^UTILITY(U,$J,358.3,522,1,0)
+ ;;^UTILITY(U,$J,358.3,577,1,3,0)
+ ;;=3^Cocaine Withdrawal
+ ;;^UTILITY(U,$J,358.3,577,1,4,0)
+ ;;=4^F14.23
+ ;;^UTILITY(U,$J,358.3,577,2)
+ ;;=^5003259
+ ;;^UTILITY(U,$J,358.3,578,0)
+ ;;=F43.0^^3^58^1
+ ;;^UTILITY(U,$J,358.3,578,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,522,1,3,0)
- ;;=3^Basal cell carcinoma of skin of other parts of face
- ;;^UTILITY(U,$J,358.3,522,1,4,0)
- ;;=4^C44.319
- ;;^UTILITY(U,$J,358.3,522,2)
- ;;=^5001045
- ;;^UTILITY(U,$J,358.3,523,0)
- ;;=C44.320^^2^23^36
- ;;^UTILITY(U,$J,358.3,523,1,0)
+ ;;^UTILITY(U,$J,358.3,578,1,3,0)
+ ;;=3^Acute Stress Disorder
+ ;;^UTILITY(U,$J,358.3,578,1,4,0)
+ ;;=4^F43.0
+ ;;^UTILITY(U,$J,358.3,578,2)
+ ;;=^5003569
+ ;;^UTILITY(U,$J,358.3,579,0)
+ ;;=F43.21^^3^58^3
+ ;;^UTILITY(U,$J,358.3,579,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,523,1,3,0)
- ;;=3^Squamous cell carcinoma of skin of unspecified parts of face
- ;;^UTILITY(U,$J,358.3,523,1,4,0)
- ;;=4^C44.320
- ;;^UTILITY(U,$J,358.3,523,2)
- ;;=^5001046
- ;;^UTILITY(U,$J,358.3,524,0)
- ;;=C44.321^^2^23^32
- ;;^UTILITY(U,$J,358.3,524,1,0)
+ ;;^UTILITY(U,$J,358.3,579,1,3,0)
+ ;;=3^Adjustment Disorder w/ Depressed Mood
+ ;;^UTILITY(U,$J,358.3,579,1,4,0)
+ ;;=4^F43.21
+ ;;^UTILITY(U,$J,358.3,579,2)
+ ;;=^331948
+ ;;^UTILITY(U,$J,358.3,580,0)
+ ;;=F43.22^^3^58^2
+ ;;^UTILITY(U,$J,358.3,580,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,524,1,3,0)
- ;;=3^Squamous cell carcinoma of skin of nose
- ;;^UTILITY(U,$J,358.3,524,1,4,0)
- ;;=4^C44.321
- ;;^UTILITY(U,$J,358.3,524,2)
- ;;=^5001047
- ;;^UTILITY(U,$J,358.3,525,0)
- ;;=C44.329^^2^23^33
- ;;^UTILITY(U,$J,358.3,525,1,0)
+ ;;^UTILITY(U,$J,358.3,580,1,3,0)
+ ;;=3^Adjustment Disorder w/ Anxiety
+ ;;^UTILITY(U,$J,358.3,580,1,4,0)
+ ;;=4^F43.22
+ ;;^UTILITY(U,$J,358.3,580,2)
+ ;;=^331949
+ ;;^UTILITY(U,$J,358.3,581,0)
+ ;;=F43.23^^3^58^5
+ ;;^UTILITY(U,$J,358.3,581,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,525,1,3,0)
- ;;=3^Squamous cell carcinoma of skin of other parts of face
- ;;^UTILITY(U,$J,358.3,525,1,4,0)
- ;;=4^C44.329
- ;;^UTILITY(U,$J,358.3,525,2)
- ;;=^5001048
- ;;^UTILITY(U,$J,358.3,526,0)
- ;;=C44.41^^2^23^7
- ;;^UTILITY(U,$J,358.3,526,1,0)
+ ;;^UTILITY(U,$J,358.3,581,1,3,0)
+ ;;=3^Adjustment Disorder w/ Mixed Anxiety & Depressed Mood
+ ;;^UTILITY(U,$J,358.3,581,1,4,0)
+ ;;=4^F43.23
+ ;;^UTILITY(U,$J,358.3,581,2)
+ ;;=^331950
+ ;;^UTILITY(U,$J,358.3,582,0)
+ ;;=F43.24^^3^58^4
+ ;;^UTILITY(U,$J,358.3,582,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,526,1,3,0)
- ;;=3^Basal cell carcinoma of skin of scalp and neck
- ;;^UTILITY(U,$J,358.3,526,1,4,0)
- ;;=4^C44.41
- ;;^UTILITY(U,$J,358.3,526,2)
- ;;=^340476
- ;;^UTILITY(U,$J,358.3,527,0)
- ;;=C44.42^^2^23^35
- ;;^UTILITY(U,$J,358.3,527,1,0)
+ ;;^UTILITY(U,$J,358.3,582,1,3,0)
+ ;;=3^Adjustment Disorder w/ Disturbance of Conduct
+ ;;^UTILITY(U,$J,358.3,582,1,4,0)
+ ;;=4^F43.24
+ ;;^UTILITY(U,$J,358.3,582,2)
+ ;;=^331951
+ ;;^UTILITY(U,$J,358.3,583,0)
+ ;;=F43.25^^3^58^6
+ ;;^UTILITY(U,$J,358.3,583,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,527,1,3,0)
- ;;=3^Squamous cell carcinoma of skin of scalp and neck
- ;;^UTILITY(U,$J,358.3,527,1,4,0)
- ;;=4^C44.42
- ;;^UTILITY(U,$J,358.3,527,2)
- ;;=^340477
- ;;^UTILITY(U,$J,358.3,528,0)
- ;;=C44.510^^2^23^1
- ;;^UTILITY(U,$J,358.3,528,1,0)
+ ;;^UTILITY(U,$J,358.3,583,1,3,0)
+ ;;=3^Adjustment Disorder w/ Mixed Disturbance Emotions & Conduct
+ ;;^UTILITY(U,$J,358.3,583,1,4,0)
+ ;;=4^F43.25
+ ;;^UTILITY(U,$J,358.3,583,2)
+ ;;=^331952
+ ;;^UTILITY(U,$J,358.3,584,0)
+ ;;=F43.8^^3^58^15
+ ;;^UTILITY(U,$J,358.3,584,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,528,1,3,0)
- ;;=3^Basal cell carcinoma of anal skin
- ;;^UTILITY(U,$J,358.3,528,1,4,0)
- ;;=4^C44.510
- ;;^UTILITY(U,$J,358.3,528,2)
- ;;=^5001054
- ;;^UTILITY(U,$J,358.3,529,0)
- ;;=C44.511^^2^23^2
- ;;^UTILITY(U,$J,358.3,529,1,0)
+ ;;^UTILITY(U,$J,358.3,584,1,3,0)
+ ;;=3^Trauma/Stressor-Related Disorder NEC
+ ;;^UTILITY(U,$J,358.3,584,1,4,0)
+ ;;=4^F43.8
+ ;;^UTILITY(U,$J,358.3,584,2)
+ ;;=^5003575
+ ;;^UTILITY(U,$J,358.3,585,0)
+ ;;=F43.20^^3^58^7
+ ;;^UTILITY(U,$J,358.3,585,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,529,1,3,0)
- ;;=3^Basal cell carcinoma of skin of breast
- ;;^UTILITY(U,$J,358.3,529,1,4,0)
- ;;=4^C44.511
- ;;^UTILITY(U,$J,358.3,529,2)
- ;;=^5001055
- ;;^UTILITY(U,$J,358.3,530,0)
- ;;=C44.519^^2^23^6
- ;;^UTILITY(U,$J,358.3,530,1,0)
+ ;;^UTILITY(U,$J,358.3,585,1,3,0)
+ ;;=3^Adjustment Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,585,1,4,0)
+ ;;=4^F43.20
+ ;;^UTILITY(U,$J,358.3,585,2)
+ ;;=^5003573
+ ;;^UTILITY(U,$J,358.3,586,0)
+ ;;=F43.9^^3^58^16
+ ;;^UTILITY(U,$J,358.3,586,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,530,1,3,0)
- ;;=3^Basal cell carcinoma of skin of other part of trunk
- ;;^UTILITY(U,$J,358.3,530,1,4,0)
- ;;=4^C44.519
- ;;^UTILITY(U,$J,358.3,530,2)
- ;;=^5001056
- ;;^UTILITY(U,$J,358.3,531,0)
- ;;=C44.520^^2^23^29
- ;;^UTILITY(U,$J,358.3,531,1,0)
+ ;;^UTILITY(U,$J,358.3,586,1,3,0)
+ ;;=3^Trauma/Stressor-Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,586,1,4,0)
+ ;;=4^F43.9
+ ;;^UTILITY(U,$J,358.3,586,2)
+ ;;=^5003576
+ ;;^UTILITY(U,$J,358.3,587,0)
+ ;;=F43.11^^3^58^9
+ ;;^UTILITY(U,$J,358.3,587,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,531,1,3,0)
- ;;=3^Squamous cell carcinoma of anal skin
+ ;;^UTILITY(U,$J,358.3,587,1,3,0)
+ ;;=3^PTSD,Acute
+ ;;^UTILITY(U,$J,358.3,587,1,4,0)
+ ;;=4^F43.11
+ ;;^UTILITY(U,$J,358.3,587,2)
+ ;;=^5003571
+ ;;^UTILITY(U,$J,358.3,588,0)
+ ;;=F43.12^^3^58^10
+ ;;^UTILITY(U,$J,358.3,588,1,0)
+ ;;=^358.31IA^4^2

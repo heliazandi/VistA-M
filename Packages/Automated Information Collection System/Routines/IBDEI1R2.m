@@ -1,128 +1,140 @@
-IBDEI1R2 ; ; 06-AUG-2015
+IBDEI1R2 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30933,2)
- ;;=^5011566
- ;;^UTILITY(U,$J,358.3,30934,0)
- ;;=M81.0^^179^1935^1
- ;;^UTILITY(U,$J,358.3,30934,1,0)
+ ;;^UTILITY(U,$J,358.3,29697,1,4,0)
+ ;;=4^Z02.79
+ ;;^UTILITY(U,$J,358.3,29697,2)
+ ;;=^5062641
+ ;;^UTILITY(U,$J,358.3,29698,0)
+ ;;=Z02.89^^115^1480^10
+ ;;^UTILITY(U,$J,358.3,29698,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30934,1,3,0)
- ;;=3^Age-related osteoporosis w/o current pathological fracture
- ;;^UTILITY(U,$J,358.3,30934,1,4,0)
- ;;=4^M81.0
- ;;^UTILITY(U,$J,358.3,30934,2)
- ;;=^5013555
- ;;^UTILITY(U,$J,358.3,30935,0)
- ;;=L40.50^^179^1935^2
- ;;^UTILITY(U,$J,358.3,30935,1,0)
+ ;;^UTILITY(U,$J,358.3,29698,1,3,0)
+ ;;=3^Med Exam NEC-Admin Purposes
+ ;;^UTILITY(U,$J,358.3,29698,1,4,0)
+ ;;=4^Z02.89
+ ;;^UTILITY(U,$J,358.3,29698,2)
+ ;;=^5062645
+ ;;^UTILITY(U,$J,358.3,29699,0)
+ ;;=Z31.61^^115^1480^11
+ ;;^UTILITY(U,$J,358.3,29699,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30935,1,3,0)
- ;;=3^Arthropathic psoriasis, unspecified
- ;;^UTILITY(U,$J,358.3,30935,1,4,0)
- ;;=4^L40.50
- ;;^UTILITY(U,$J,358.3,30935,2)
- ;;=^5009165
- ;;^UTILITY(U,$J,358.3,30936,0)
- ;;=T79.A0XA^^179^1935^3
- ;;^UTILITY(U,$J,358.3,30936,1,0)
+ ;;^UTILITY(U,$J,358.3,29699,1,3,0)
+ ;;=3^Natural Family Planning Counseling
+ ;;^UTILITY(U,$J,358.3,29699,1,4,0)
+ ;;=4^Z31.61
+ ;;^UTILITY(U,$J,358.3,29699,2)
+ ;;=^5062839
+ ;;^UTILITY(U,$J,358.3,29700,0)
+ ;;=Z12.4^^115^1480^12
+ ;;^UTILITY(U,$J,358.3,29700,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30936,1,3,0)
- ;;=3^Compartment syndrome, unspecified, initial encounter
- ;;^UTILITY(U,$J,358.3,30936,1,4,0)
- ;;=4^T79.A0XA
- ;;^UTILITY(U,$J,358.3,30936,2)
- ;;=^5054323
- ;;^UTILITY(U,$J,358.3,30937,0)
- ;;=G90.522^^179^1935^4
- ;;^UTILITY(U,$J,358.3,30937,1,0)
+ ;;^UTILITY(U,$J,358.3,29700,1,3,0)
+ ;;=3^Pap Smear (No Exam)
+ ;;^UTILITY(U,$J,358.3,29700,1,4,0)
+ ;;=4^Z12.4
+ ;;^UTILITY(U,$J,358.3,29700,2)
+ ;;=^5062687
+ ;;^UTILITY(U,$J,358.3,29701,0)
+ ;;=Z01.42^^115^1480^13
+ ;;^UTILITY(U,$J,358.3,29701,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30937,1,3,0)
- ;;=3^Complex regional pain syndrome I of left lower limb
- ;;^UTILITY(U,$J,358.3,30937,1,4,0)
- ;;=4^G90.522
- ;;^UTILITY(U,$J,358.3,30937,2)
- ;;=^5133371
- ;;^UTILITY(U,$J,358.3,30938,0)
- ;;=G90.512^^179^1935^5
- ;;^UTILITY(U,$J,358.3,30938,1,0)
+ ;;^UTILITY(U,$J,358.3,29701,1,3,0)
+ ;;=3^Pap Smear Confirmation
+ ;;^UTILITY(U,$J,358.3,29701,1,4,0)
+ ;;=4^Z01.42
+ ;;^UTILITY(U,$J,358.3,29701,2)
+ ;;=^5062624
+ ;;^UTILITY(U,$J,358.3,29702,0)
+ ;;=Z32.02^^115^1480^15
+ ;;^UTILITY(U,$J,358.3,29702,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30938,1,3,0)
- ;;=3^Complex regional pain syndrome I of left upper limb
- ;;^UTILITY(U,$J,358.3,30938,1,4,0)
- ;;=4^G90.512
- ;;^UTILITY(U,$J,358.3,30938,2)
- ;;=^5004165
- ;;^UTILITY(U,$J,358.3,30939,0)
- ;;=G90.523^^179^1935^6
- ;;^UTILITY(U,$J,358.3,30939,1,0)
+ ;;^UTILITY(U,$J,358.3,29702,1,3,0)
+ ;;=3^Pregnancy Test-Negative
+ ;;^UTILITY(U,$J,358.3,29702,1,4,0)
+ ;;=4^Z32.02
+ ;;^UTILITY(U,$J,358.3,29702,2)
+ ;;=^5062850
+ ;;^UTILITY(U,$J,358.3,29703,0)
+ ;;=Z32.01^^115^1480^16
+ ;;^UTILITY(U,$J,358.3,29703,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30939,1,3,0)
- ;;=3^Complex regional pain syndrome I of lower limb, bilateral
- ;;^UTILITY(U,$J,358.3,30939,1,4,0)
- ;;=4^G90.523
- ;;^UTILITY(U,$J,358.3,30939,2)
- ;;=^5004169
- ;;^UTILITY(U,$J,358.3,30940,0)
- ;;=G90.521^^179^1935^7
- ;;^UTILITY(U,$J,358.3,30940,1,0)
+ ;;^UTILITY(U,$J,358.3,29703,1,3,0)
+ ;;=3^Pregnancy Test-Positive
+ ;;^UTILITY(U,$J,358.3,29703,1,4,0)
+ ;;=4^Z32.01
+ ;;^UTILITY(U,$J,358.3,29703,2)
+ ;;=^5062849
+ ;;^UTILITY(U,$J,358.3,29704,0)
+ ;;=Z32.00^^115^1480^17
+ ;;^UTILITY(U,$J,358.3,29704,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30940,1,3,0)
- ;;=3^Complex regional pain syndrome I of right lower limb
- ;;^UTILITY(U,$J,358.3,30940,1,4,0)
- ;;=4^G90.521
- ;;^UTILITY(U,$J,358.3,30940,2)
- ;;=^5004168
- ;;^UTILITY(U,$J,358.3,30941,0)
- ;;=G90.511^^179^1935^8
- ;;^UTILITY(U,$J,358.3,30941,1,0)
+ ;;^UTILITY(U,$J,358.3,29704,1,3,0)
+ ;;=3^Pregnancy Test-Unconfirmed
+ ;;^UTILITY(U,$J,358.3,29704,1,4,0)
+ ;;=4^Z32.00
+ ;;^UTILITY(U,$J,358.3,29704,2)
+ ;;=^5062848
+ ;;^UTILITY(U,$J,358.3,29705,0)
+ ;;=Z01.810^^115^1480^14
+ ;;^UTILITY(U,$J,358.3,29705,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30941,1,3,0)
- ;;=3^Complex regional pain syndrome I of right upper limb
- ;;^UTILITY(U,$J,358.3,30941,1,4,0)
- ;;=4^G90.511
- ;;^UTILITY(U,$J,358.3,30941,2)
- ;;=^5004164
- ;;^UTILITY(U,$J,358.3,30942,0)
- ;;=I96.^^179^1935^9
- ;;^UTILITY(U,$J,358.3,30942,1,0)
+ ;;^UTILITY(U,$J,358.3,29705,1,3,0)
+ ;;=3^Pre-op EKG
+ ;;^UTILITY(U,$J,358.3,29705,1,4,0)
+ ;;=4^Z01.810
+ ;;^UTILITY(U,$J,358.3,29705,2)
+ ;;=^5062625
+ ;;^UTILITY(U,$J,358.3,29706,0)
+ ;;=Z31.69^^115^1480^18
+ ;;^UTILITY(U,$J,358.3,29706,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30942,1,3,0)
- ;;=3^Gangrene, not elsewhere classified
- ;;^UTILITY(U,$J,358.3,30942,1,4,0)
- ;;=4^I96.
- ;;^UTILITY(U,$J,358.3,30942,2)
- ;;=^5008081
- ;;^UTILITY(U,$J,358.3,30943,0)
- ;;=M10.9^^179^1935^10
- ;;^UTILITY(U,$J,358.3,30943,1,0)
+ ;;^UTILITY(U,$J,358.3,29706,1,3,0)
+ ;;=3^Procreation Management
+ ;;^UTILITY(U,$J,358.3,29706,1,4,0)
+ ;;=4^Z31.69
+ ;;^UTILITY(U,$J,358.3,29706,2)
+ ;;=^5062841
+ ;;^UTILITY(U,$J,358.3,29707,0)
+ ;;=Z65.9^^115^1480^19
+ ;;^UTILITY(U,$J,358.3,29707,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30943,1,3,0)
- ;;=3^Gout, unspecified
- ;;^UTILITY(U,$J,358.3,30943,1,4,0)
- ;;=4^M10.9
- ;;^UTILITY(U,$J,358.3,30943,2)
- ;;=^5010404
- ;;^UTILITY(U,$J,358.3,30944,0)
- ;;=M87.08^^179^1935^11
- ;;^UTILITY(U,$J,358.3,30944,1,0)
+ ;;^UTILITY(U,$J,358.3,29707,1,3,0)
+ ;;=3^Psychosocial Counseling
+ ;;^UTILITY(U,$J,358.3,29707,1,4,0)
+ ;;=4^Z65.9
+ ;;^UTILITY(U,$J,358.3,29707,2)
+ ;;=^5063186
+ ;;^UTILITY(U,$J,358.3,29708,0)
+ ;;=Z76.0^^115^1480^20
+ ;;^UTILITY(U,$J,358.3,29708,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30944,1,3,0)
- ;;=3^Idiopathic aseptic necrosis of bone, other site
- ;;^UTILITY(U,$J,358.3,30944,1,4,0)
- ;;=4^M87.08
- ;;^UTILITY(U,$J,358.3,30944,2)
- ;;=^5014698
- ;;^UTILITY(U,$J,358.3,30945,0)
- ;;=T84.52XA^^179^1935^12
- ;;^UTILITY(U,$J,358.3,30945,1,0)
+ ;;^UTILITY(U,$J,358.3,29708,1,3,0)
+ ;;=3^Repeat Rx,Not OCP
+ ;;^UTILITY(U,$J,358.3,29708,1,4,0)
+ ;;=4^Z76.0
+ ;;^UTILITY(U,$J,358.3,29708,2)
+ ;;=^5063297
+ ;;^UTILITY(U,$J,358.3,29709,0)
+ ;;=R37.^^115^1480^21
+ ;;^UTILITY(U,$J,358.3,29709,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30945,1,3,0)
- ;;=3^Infect/inflm reaction due to internal left hip prosth, init
- ;;^UTILITY(U,$J,358.3,30945,1,4,0)
- ;;=4^T84.52XA
- ;;^UTILITY(U,$J,358.3,30945,2)
- ;;=^5055388
- ;;^UTILITY(U,$J,358.3,30946,0)
- ;;=T84.54XA^^179^1935^13
+ ;;^UTILITY(U,$J,358.3,29709,1,3,0)
+ ;;=3^Sexual Dysfunction
+ ;;^UTILITY(U,$J,358.3,29709,1,4,0)
+ ;;=4^R37.
+ ;;^UTILITY(U,$J,358.3,29709,2)
+ ;;=^5019339
+ ;;^UTILITY(U,$J,358.3,29710,0)
+ ;;=Z01.411^^115^1480^22
+ ;;^UTILITY(U,$J,358.3,29710,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29710,1,3,0)
+ ;;=3^Well Woman Exam,Abnormal
+ ;;^UTILITY(U,$J,358.3,29710,1,4,0)
+ ;;=4^Z01.411
+ ;;^UTILITY(U,$J,358.3,29710,2)
+ ;;=^5062622
+ ;;^UTILITY(U,$J,358.3,29711,0)
+ ;;=Z01.419^^115^1480^23

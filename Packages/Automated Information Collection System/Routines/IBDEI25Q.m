@@ -1,0 +1,134 @@
+IBDEI25Q ; ; 17-FEB-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+Q Q
+ ;;^UTILITY(U,$J,358.3,36598,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36598,1,3,0)
+ ;;=3^Tuberculous Pleurisy
+ ;;^UTILITY(U,$J,358.3,36598,1,4,0)
+ ;;=4^A15.6
+ ;;^UTILITY(U,$J,358.3,36598,2)
+ ;;=^5000064
+ ;;^UTILITY(U,$J,358.3,36599,0)
+ ;;=H60.503^^137^1767^26
+ ;;^UTILITY(U,$J,358.3,36599,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36599,1,3,0)
+ ;;=3^AC Noninfective Otitis Externa,Bilateral,Unspec
+ ;;^UTILITY(U,$J,358.3,36599,1,4,0)
+ ;;=4^H60.503
+ ;;^UTILITY(U,$J,358.3,36599,2)
+ ;;=^5006469
+ ;;^UTILITY(U,$J,358.3,36600,0)
+ ;;=H60.502^^137^1767^27
+ ;;^UTILITY(U,$J,358.3,36600,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36600,1,3,0)
+ ;;=3^AC Noninfective Otitis Externa,Left Ear,Unspec
+ ;;^UTILITY(U,$J,358.3,36600,1,4,0)
+ ;;=4^H60.502
+ ;;^UTILITY(U,$J,358.3,36600,2)
+ ;;=^5006468
+ ;;^UTILITY(U,$J,358.3,36601,0)
+ ;;=H60.501^^137^1767^28
+ ;;^UTILITY(U,$J,358.3,36601,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36601,1,3,0)
+ ;;=3^AC Noninfective Otitis Externa,Right Ear,Unspec
+ ;;^UTILITY(U,$J,358.3,36601,1,4,0)
+ ;;=4^H60.501
+ ;;^UTILITY(U,$J,358.3,36601,2)
+ ;;=^5006467
+ ;;^UTILITY(U,$J,358.3,36602,0)
+ ;;=J15.9^^137^1767^46
+ ;;^UTILITY(U,$J,358.3,36602,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36602,1,3,0)
+ ;;=3^Bacterial Pneumonia,Unspec
+ ;;^UTILITY(U,$J,358.3,36602,1,4,0)
+ ;;=4^J15.9
+ ;;^UTILITY(U,$J,358.3,36602,2)
+ ;;=^5008178
+ ;;^UTILITY(U,$J,358.3,36603,0)
+ ;;=B97.10^^137^1767^58
+ ;;^UTILITY(U,$J,358.3,36603,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36603,1,3,0)
+ ;;=3^Enterovirus as Cause of Diseases Classified Elsewhere,Unspec
+ ;;^UTILITY(U,$J,358.3,36603,1,4,0)
+ ;;=4^B97.10
+ ;;^UTILITY(U,$J,358.3,36603,2)
+ ;;=^5000861
+ ;;^UTILITY(U,$J,358.3,36604,0)
+ ;;=J30.0^^137^1767^88
+ ;;^UTILITY(U,$J,358.3,36604,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36604,1,3,0)
+ ;;=3^Vasomotor Rhinitis
+ ;;^UTILITY(U,$J,358.3,36604,1,4,0)
+ ;;=4^J30.0
+ ;;^UTILITY(U,$J,358.3,36604,2)
+ ;;=^5008201
+ ;;^UTILITY(U,$J,358.3,36605,0)
+ ;;=B34.9^^137^1767^89
+ ;;^UTILITY(U,$J,358.3,36605,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36605,1,3,0)
+ ;;=3^Viral Infection,Unspec
+ ;;^UTILITY(U,$J,358.3,36605,1,4,0)
+ ;;=4^B34.9
+ ;;^UTILITY(U,$J,358.3,36605,2)
+ ;;=^5000603
+ ;;^UTILITY(U,$J,358.3,36606,0)
+ ;;=J12.9^^137^1767^90
+ ;;^UTILITY(U,$J,358.3,36606,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36606,1,3,0)
+ ;;=3^Viral Pneumonia,Unspec
+ ;;^UTILITY(U,$J,358.3,36606,1,4,0)
+ ;;=4^J12.9
+ ;;^UTILITY(U,$J,358.3,36606,2)
+ ;;=^5008169
+ ;;^UTILITY(U,$J,358.3,36607,0)
+ ;;=J84.114^^137^1768^1
+ ;;^UTILITY(U,$J,358.3,36607,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36607,1,3,0)
+ ;;=3^AC Interstitial Pneumonitis
+ ;;^UTILITY(U,$J,358.3,36607,1,4,0)
+ ;;=4^J84.114
+ ;;^UTILITY(U,$J,358.3,36607,2)
+ ;;=^340536
+ ;;^UTILITY(U,$J,358.3,36608,0)
+ ;;=J84.09^^137^1768^2
+ ;;^UTILITY(U,$J,358.3,36608,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36608,1,3,0)
+ ;;=3^Alveolar/Parieto-Alveolar Conditions NEC
+ ;;^UTILITY(U,$J,358.3,36608,1,4,0)
+ ;;=4^J84.09
+ ;;^UTILITY(U,$J,358.3,36608,2)
+ ;;=^5008299
+ ;;^UTILITY(U,$J,358.3,36609,0)
+ ;;=J67.2^^137^1768^3
+ ;;^UTILITY(U,$J,358.3,36609,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36609,1,3,0)
+ ;;=3^Bird Fancier's Lung
+ ;;^UTILITY(U,$J,358.3,36609,1,4,0)
+ ;;=4^J67.2
+ ;;^UTILITY(U,$J,358.3,36609,2)
+ ;;=^14840
+ ;;^UTILITY(U,$J,358.3,36610,0)
+ ;;=J68.4^^137^1768^5
+ ;;^UTILITY(U,$J,358.3,36610,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36610,1,3,0)
+ ;;=3^Chr Resp Cond d/t Chemicals/Gases/Fumes/Vapors
+ ;;^UTILITY(U,$J,358.3,36610,1,4,0)
+ ;;=4^J68.4
+ ;;^UTILITY(U,$J,358.3,36610,2)
+ ;;=^5008285
+ ;;^UTILITY(U,$J,358.3,36611,0)
+ ;;=M34.1^^137^1768^4

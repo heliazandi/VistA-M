@@ -1,126 +1,140 @@
-IBDEI1QN ; ; 06-AUG-2015
+IBDEI1QN ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30745,1,0)
+ ;;^UTILITY(U,$J,358.3,29493,1,3,0)
+ ;;=3^VIN 1
+ ;;^UTILITY(U,$J,358.3,29493,1,4,0)
+ ;;=4^N90.0
+ ;;^UTILITY(U,$J,358.3,29493,2)
+ ;;=^5015891
+ ;;^UTILITY(U,$J,358.3,29494,0)
+ ;;=N90.1^^115^1466^14
+ ;;^UTILITY(U,$J,358.3,29494,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30745,1,3,0)
- ;;=3^Loose body in left ankle
- ;;^UTILITY(U,$J,358.3,30745,1,4,0)
- ;;=4^M24.072
- ;;^UTILITY(U,$J,358.3,30745,2)
- ;;=^5011294
- ;;^UTILITY(U,$J,358.3,30746,0)
- ;;=M24.071^^179^1927^12
- ;;^UTILITY(U,$J,358.3,30746,1,0)
+ ;;^UTILITY(U,$J,358.3,29494,1,3,0)
+ ;;=3^VIN 2
+ ;;^UTILITY(U,$J,358.3,29494,1,4,0)
+ ;;=4^N90.1
+ ;;^UTILITY(U,$J,358.3,29494,2)
+ ;;=^5015892
+ ;;^UTILITY(U,$J,358.3,29495,0)
+ ;;=D07.1^^115^1466^15
+ ;;^UTILITY(U,$J,358.3,29495,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30746,1,3,0)
- ;;=3^Loose body in right ankle
- ;;^UTILITY(U,$J,358.3,30746,1,4,0)
- ;;=4^M24.071
- ;;^UTILITY(U,$J,358.3,30746,2)
- ;;=^5011293
- ;;^UTILITY(U,$J,358.3,30747,0)
- ;;=S82.65XA^^179^1927^15
- ;;^UTILITY(U,$J,358.3,30747,1,0)
+ ;;^UTILITY(U,$J,358.3,29495,1,3,0)
+ ;;=3^VIN 3
+ ;;^UTILITY(U,$J,358.3,29495,1,4,0)
+ ;;=4^D07.1
+ ;;^UTILITY(U,$J,358.3,29495,2)
+ ;;=^5001943
+ ;;^UTILITY(U,$J,358.3,29496,0)
+ ;;=Z90.710^^115^1467^2
+ ;;^UTILITY(U,$J,358.3,29496,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30747,1,3,0)
- ;;=3^Nondisp fx of lateral malleolus of left fibula, init
- ;;^UTILITY(U,$J,358.3,30747,1,4,0)
- ;;=4^S82.65XA
- ;;^UTILITY(U,$J,358.3,30747,2)
- ;;=^5042375
- ;;^UTILITY(U,$J,358.3,30748,0)
- ;;=S82.64XA^^179^1927^16
- ;;^UTILITY(U,$J,358.3,30748,1,0)
+ ;;^UTILITY(U,$J,358.3,29496,1,3,0)
+ ;;=3^Acquired Absense of Cervix & Uterus
+ ;;^UTILITY(U,$J,358.3,29496,1,4,0)
+ ;;=4^Z90.710
+ ;;^UTILITY(U,$J,358.3,29496,2)
+ ;;=^5063591
+ ;;^UTILITY(U,$J,358.3,29497,0)
+ ;;=Z90.711^^115^1467^1
+ ;;^UTILITY(U,$J,358.3,29497,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30748,1,3,0)
- ;;=3^Nondisp fx of lateral malleolus of right fibula, init
- ;;^UTILITY(U,$J,358.3,30748,1,4,0)
- ;;=4^S82.64XA
- ;;^UTILITY(U,$J,358.3,30748,2)
- ;;=^5042359
- ;;^UTILITY(U,$J,358.3,30749,0)
- ;;=S82.55XA^^179^1927^17
- ;;^UTILITY(U,$J,358.3,30749,1,0)
+ ;;^UTILITY(U,$J,358.3,29497,1,3,0)
+ ;;=3^Acquired Absence of Uterus w/ Remaining Cervical Stump
+ ;;^UTILITY(U,$J,358.3,29497,1,4,0)
+ ;;=4^Z90.711
+ ;;^UTILITY(U,$J,358.3,29497,2)
+ ;;=^5063592
+ ;;^UTILITY(U,$J,358.3,29498,0)
+ ;;=N80.0^^115^1467^3
+ ;;^UTILITY(U,$J,358.3,29498,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30749,1,3,0)
- ;;=3^Nondisp fx of medial malleolus of left tibia, init
- ;;^UTILITY(U,$J,358.3,30749,1,4,0)
- ;;=4^S82.55XA
- ;;^UTILITY(U,$J,358.3,30749,2)
- ;;=^5042279
- ;;^UTILITY(U,$J,358.3,30750,0)
- ;;=S82.54XA^^179^1927^18
- ;;^UTILITY(U,$J,358.3,30750,1,0)
+ ;;^UTILITY(U,$J,358.3,29498,1,3,0)
+ ;;=3^Adenomyosis
+ ;;^UTILITY(U,$J,358.3,29498,1,4,0)
+ ;;=4^N80.0
+ ;;^UTILITY(U,$J,358.3,29498,2)
+ ;;=^270482
+ ;;^UTILITY(U,$J,358.3,29499,0)
+ ;;=N85.6^^115^1467^4
+ ;;^UTILITY(U,$J,358.3,29499,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30750,1,3,0)
- ;;=3^Nondisp fx of medial malleolus of right tibia, init
- ;;^UTILITY(U,$J,358.3,30750,1,4,0)
- ;;=4^S82.54XA
- ;;^UTILITY(U,$J,358.3,30750,2)
- ;;=^5042263
- ;;^UTILITY(U,$J,358.3,30751,0)
- ;;=L97.329^^179^1927^13
- ;;^UTILITY(U,$J,358.3,30751,1,0)
+ ;;^UTILITY(U,$J,358.3,29499,1,3,0)
+ ;;=3^Asherman's Syndrome
+ ;;^UTILITY(U,$J,358.3,29499,1,4,0)
+ ;;=4^N85.6
+ ;;^UTILITY(U,$J,358.3,29499,2)
+ ;;=^270523
+ ;;^UTILITY(U,$J,358.3,29500,0)
+ ;;=C54.1^^115^1467^5
+ ;;^UTILITY(U,$J,358.3,29500,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30751,1,3,0)
- ;;=3^Non-pressure chronic ulcer of left ankle with unsp severity
- ;;^UTILITY(U,$J,358.3,30751,1,4,0)
- ;;=4^L97.329
- ;;^UTILITY(U,$J,358.3,30751,2)
- ;;=^5009524
- ;;^UTILITY(U,$J,358.3,30752,0)
- ;;=L97.319^^179^1927^14
- ;;^UTILITY(U,$J,358.3,30752,1,0)
+ ;;^UTILITY(U,$J,358.3,29500,1,3,0)
+ ;;=3^CA,Endometrium
+ ;;^UTILITY(U,$J,358.3,29500,1,4,0)
+ ;;=4^C54.1
+ ;;^UTILITY(U,$J,358.3,29500,2)
+ ;;=^5001206
+ ;;^UTILITY(U,$J,358.3,29501,0)
+ ;;=C54.3^^115^1467^6
+ ;;^UTILITY(U,$J,358.3,29501,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30752,1,3,0)
- ;;=3^Non-pressure chronic ulcer of right ankle with unsp severity
- ;;^UTILITY(U,$J,358.3,30752,1,4,0)
- ;;=4^L97.319
- ;;^UTILITY(U,$J,358.3,30752,2)
- ;;=^5009519
- ;;^UTILITY(U,$J,358.3,30753,0)
- ;;=M93.272^^179^1927^19
- ;;^UTILITY(U,$J,358.3,30753,1,0)
+ ;;^UTILITY(U,$J,358.3,29501,1,3,0)
+ ;;=3^CA,Fundus Uteri
+ ;;^UTILITY(U,$J,358.3,29501,1,4,0)
+ ;;=4^C54.3
+ ;;^UTILITY(U,$J,358.3,29501,2)
+ ;;=^5001208
+ ;;^UTILITY(U,$J,358.3,29502,0)
+ ;;=C54.2^^115^1467^7
+ ;;^UTILITY(U,$J,358.3,29502,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30753,1,3,0)
- ;;=3^Osteochondritis dissecans, l ankle and joints of left foot
- ;;^UTILITY(U,$J,358.3,30753,1,4,0)
- ;;=4^M93.272
- ;;^UTILITY(U,$J,358.3,30753,2)
- ;;=^5015275
- ;;^UTILITY(U,$J,358.3,30754,0)
- ;;=M93.271^^179^1927^20
- ;;^UTILITY(U,$J,358.3,30754,1,0)
+ ;;^UTILITY(U,$J,358.3,29502,1,3,0)
+ ;;=3^CA,Myometrium
+ ;;^UTILITY(U,$J,358.3,29502,1,4,0)
+ ;;=4^C54.2
+ ;;^UTILITY(U,$J,358.3,29502,2)
+ ;;=^5001207
+ ;;^UTILITY(U,$J,358.3,29503,0)
+ ;;=C54.8^^115^1467^8
+ ;;^UTILITY(U,$J,358.3,29503,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30754,1,3,0)
- ;;=3^Osteochondritis dissecans, r ankle and joints of right foot
- ;;^UTILITY(U,$J,358.3,30754,1,4,0)
- ;;=4^M93.271
- ;;^UTILITY(U,$J,358.3,30754,2)
- ;;=^5015274
- ;;^UTILITY(U,$J,358.3,30755,0)
- ;;=M25.372^^179^1927^9
- ;;^UTILITY(U,$J,358.3,30755,1,0)
+ ;;^UTILITY(U,$J,358.3,29503,1,3,0)
+ ;;=3^CA,Overlapping Sites of Uterus
+ ;;^UTILITY(U,$J,358.3,29503,1,4,0)
+ ;;=4^C54.8
+ ;;^UTILITY(U,$J,358.3,29503,2)
+ ;;=^5001209
+ ;;^UTILITY(U,$J,358.3,29504,0)
+ ;;=C54.9^^115^1467^9
+ ;;^UTILITY(U,$J,358.3,29504,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30755,1,3,0)
- ;;=3^Instability, left ankle NEC
- ;;^UTILITY(U,$J,358.3,30755,1,4,0)
- ;;=4^M25.372
- ;;^UTILITY(U,$J,358.3,30755,2)
- ;;=^5011570
- ;;^UTILITY(U,$J,358.3,30756,0)
- ;;=M25.371^^179^1927^10
- ;;^UTILITY(U,$J,358.3,30756,1,0)
+ ;;^UTILITY(U,$J,358.3,29504,1,3,0)
+ ;;=3^CA,Uterus,Unspec Site
+ ;;^UTILITY(U,$J,358.3,29504,1,4,0)
+ ;;=4^C54.9
+ ;;^UTILITY(U,$J,358.3,29504,2)
+ ;;=^5001210
+ ;;^UTILITY(U,$J,358.3,29505,0)
+ ;;=N85.02^^115^1467^10
+ ;;^UTILITY(U,$J,358.3,29505,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30756,1,3,0)
- ;;=3^Instability, right ankle NEC
- ;;^UTILITY(U,$J,358.3,30756,1,4,0)
- ;;=4^M25.371
- ;;^UTILITY(U,$J,358.3,30756,2)
- ;;=^5011569
- ;;^UTILITY(U,$J,358.3,30757,0)
- ;;=M25.572^^179^1927^21
- ;;^UTILITY(U,$J,358.3,30757,1,0)
+ ;;^UTILITY(U,$J,358.3,29505,1,3,0)
+ ;;=3^Endomet Hyperpla w/ Atyp
+ ;;^UTILITY(U,$J,358.3,29505,1,4,0)
+ ;;=4^N85.02
+ ;;^UTILITY(U,$J,358.3,29505,2)
+ ;;=^338265
+ ;;^UTILITY(U,$J,358.3,29506,0)
+ ;;=N85.00^^115^1467^12
+ ;;^UTILITY(U,$J,358.3,29506,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29506,1,3,0)
+ ;;=3^Endometrial Hyperplasia,Unspec
+ ;;^UTILITY(U,$J,358.3,29506,1,4,0)
+ ;;=4^N85.00
+ ;;^UTILITY(U,$J,358.3,29506,2)
+ ;;=^331542

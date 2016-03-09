@@ -1,144 +1,136 @@
-IBDEI071 ; ; 06-AUG-2015
+IBDEI071 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2779,1,4,0)
- ;;=4^H66.92
- ;;^UTILITY(U,$J,358.3,2779,2)
- ;;=^5006641
- ;;^UTILITY(U,$J,358.3,2780,0)
- ;;=H66.93^^7^83^157
- ;;^UTILITY(U,$J,358.3,2780,1,0)
+ ;;^UTILITY(U,$J,358.3,2976,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2780,1,3,0)
- ;;=3^Otitis, media, bilateral
- ;;^UTILITY(U,$J,358.3,2780,1,4,0)
- ;;=4^H66.93
- ;;^UTILITY(U,$J,358.3,2780,2)
- ;;=^5006642
- ;;^UTILITY(U,$J,358.3,2781,0)
- ;;=B89.^^7^83^161
- ;;^UTILITY(U,$J,358.3,2781,1,0)
+ ;;^UTILITY(U,$J,358.3,2976,1,3,0)
+ ;;=3^Transient Cerebral Ischemic Attacks & Related Syndromes
+ ;;^UTILITY(U,$J,358.3,2976,1,4,0)
+ ;;=4^G45.8
+ ;;^UTILITY(U,$J,358.3,2976,2)
+ ;;=^5003958
+ ;;^UTILITY(U,$J,358.3,2977,0)
+ ;;=I83.019^^18^210^81
+ ;;^UTILITY(U,$J,358.3,2977,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2781,1,3,0)
- ;;=3^Parasitosis
- ;;^UTILITY(U,$J,358.3,2781,1,4,0)
- ;;=4^B89.
- ;;^UTILITY(U,$J,358.3,2781,2)
- ;;=^5000822
- ;;^UTILITY(U,$J,358.3,2782,0)
- ;;=N73.9^^7^83^162
- ;;^UTILITY(U,$J,358.3,2782,1,0)
+ ;;^UTILITY(U,$J,358.3,2977,1,3,0)
+ ;;=3^Varicose Veins Right Lower Extrem w/ Ulcer Unspec Site
+ ;;^UTILITY(U,$J,358.3,2977,1,4,0)
+ ;;=4^I83.019
+ ;;^UTILITY(U,$J,358.3,2977,2)
+ ;;=^5007979
+ ;;^UTILITY(U,$J,358.3,2978,0)
+ ;;=I83.899^^18^210^79
+ ;;^UTILITY(U,$J,358.3,2978,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2782,1,3,0)
- ;;=3^Pelvic Inflammatory Disease
- ;;^UTILITY(U,$J,358.3,2782,1,4,0)
- ;;=4^N73.9
- ;;^UTILITY(U,$J,358.3,2782,2)
- ;;=^5015820
- ;;^UTILITY(U,$J,358.3,2783,0)
- ;;=K65.2^^7^83^163
- ;;^UTILITY(U,$J,358.3,2783,1,0)
+ ;;^UTILITY(U,$J,358.3,2978,1,3,0)
+ ;;=3^Varicose Veins Lower Extrem w/ Other Complications
+ ;;^UTILITY(U,$J,358.3,2978,1,4,0)
+ ;;=4^I83.899
+ ;;^UTILITY(U,$J,358.3,2978,2)
+ ;;=^5008018
+ ;;^UTILITY(U,$J,358.3,2979,0)
+ ;;=I83.90^^18^210^80
+ ;;^UTILITY(U,$J,358.3,2979,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2783,1,3,0)
- ;;=3^Peritonitis, bacterial
- ;;^UTILITY(U,$J,358.3,2783,1,4,0)
- ;;=4^K65.2
- ;;^UTILITY(U,$J,358.3,2783,2)
- ;;=^332801
- ;;^UTILITY(U,$J,358.3,2784,0)
- ;;=J02.9^^7^83^165
- ;;^UTILITY(U,$J,358.3,2784,1,0)
+ ;;^UTILITY(U,$J,358.3,2979,1,3,0)
+ ;;=3^Varicose Veins Lower Extrem,Asymptomatic
+ ;;^UTILITY(U,$J,358.3,2979,1,4,0)
+ ;;=4^I83.90
+ ;;^UTILITY(U,$J,358.3,2979,2)
+ ;;=^5008019
+ ;;^UTILITY(U,$J,358.3,2980,0)
+ ;;=I87.2^^18^210^82
+ ;;^UTILITY(U,$J,358.3,2980,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2784,1,3,0)
- ;;=3^Pharyngitis
- ;;^UTILITY(U,$J,358.3,2784,1,4,0)
- ;;=4^J02.9
- ;;^UTILITY(U,$J,358.3,2784,2)
- ;;=^5008130
- ;;^UTILITY(U,$J,358.3,2785,0)
- ;;=J18.9^^7^83^169
- ;;^UTILITY(U,$J,358.3,2785,1,0)
+ ;;^UTILITY(U,$J,358.3,2980,1,3,0)
+ ;;=3^Venous Insufficiency
+ ;;^UTILITY(U,$J,358.3,2980,1,4,0)
+ ;;=4^I87.2
+ ;;^UTILITY(U,$J,358.3,2980,2)
+ ;;=^5008047
+ ;;^UTILITY(U,$J,358.3,2981,0)
+ ;;=H61.23^^18^211^1
+ ;;^UTILITY(U,$J,358.3,2981,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2785,1,3,0)
- ;;=3^Pneumonia, NOS
- ;;^UTILITY(U,$J,358.3,2785,1,4,0)
- ;;=4^J18.9
- ;;^UTILITY(U,$J,358.3,2785,2)
- ;;=^95632
- ;;^UTILITY(U,$J,358.3,2786,0)
- ;;=J13.^^7^83^170
- ;;^UTILITY(U,$J,358.3,2786,1,0)
+ ;;^UTILITY(U,$J,358.3,2981,1,3,0)
+ ;;=3^Cerumen Impaction,Bilateral
+ ;;^UTILITY(U,$J,358.3,2981,1,4,0)
+ ;;=4^H61.23
+ ;;^UTILITY(U,$J,358.3,2981,2)
+ ;;=^5006533
+ ;;^UTILITY(U,$J,358.3,2982,0)
+ ;;=H61.22^^18^211^2
+ ;;^UTILITY(U,$J,358.3,2982,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2786,1,3,0)
- ;;=3^Pneumonia, Streptococcus pneumoniae
- ;;^UTILITY(U,$J,358.3,2786,1,4,0)
- ;;=4^J13.
- ;;^UTILITY(U,$J,358.3,2786,2)
- ;;=^5008170
- ;;^UTILITY(U,$J,358.3,2787,0)
- ;;=J15.7^^7^83^168
- ;;^UTILITY(U,$J,358.3,2787,1,0)
+ ;;^UTILITY(U,$J,358.3,2982,1,3,0)
+ ;;=3^Cerumen Impaction,Left Ear
+ ;;^UTILITY(U,$J,358.3,2982,1,4,0)
+ ;;=4^H61.22
+ ;;^UTILITY(U,$J,358.3,2982,2)
+ ;;=^5006532
+ ;;^UTILITY(U,$J,358.3,2983,0)
+ ;;=H61.21^^18^211^3
+ ;;^UTILITY(U,$J,358.3,2983,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2787,1,3,0)
- ;;=3^Pneumonia, Mycoplasma
- ;;^UTILITY(U,$J,358.3,2787,1,4,0)
- ;;=4^J15.7
- ;;^UTILITY(U,$J,358.3,2787,2)
- ;;=^5008177
- ;;^UTILITY(U,$J,358.3,2788,0)
- ;;=J16.0^^7^83^167
- ;;^UTILITY(U,$J,358.3,2788,1,0)
+ ;;^UTILITY(U,$J,358.3,2983,1,3,0)
+ ;;=3^Cerumen Impaction,Right Ear
+ ;;^UTILITY(U,$J,358.3,2983,1,4,0)
+ ;;=4^H61.21
+ ;;^UTILITY(U,$J,358.3,2983,2)
+ ;;=^5006531
+ ;;^UTILITY(U,$J,358.3,2984,0)
+ ;;=Z97.4^^18^211^10
+ ;;^UTILITY(U,$J,358.3,2984,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2788,1,3,0)
- ;;=3^Pneumonia, Chlamydia/Chlamydophila
- ;;^UTILITY(U,$J,358.3,2788,1,4,0)
- ;;=4^J16.0
- ;;^UTILITY(U,$J,358.3,2788,2)
- ;;=^5008179
- ;;^UTILITY(U,$J,358.3,2789,0)
- ;;=R76.11^^7^83^172
- ;;^UTILITY(U,$J,358.3,2789,1,0)
+ ;;^UTILITY(U,$J,358.3,2984,1,3,0)
+ ;;=3^Hearing-aid,External
+ ;;^UTILITY(U,$J,358.3,2984,1,4,0)
+ ;;=4^Z97.4
+ ;;^UTILITY(U,$J,358.3,2984,2)
+ ;;=^5063730
+ ;;^UTILITY(U,$J,358.3,2985,0)
+ ;;=H90.2^^18^211^5
+ ;;^UTILITY(U,$J,358.3,2985,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2789,1,3,0)
- ;;=3^Positive PPD/Tuberculin skin test
- ;;^UTILITY(U,$J,358.3,2789,1,4,0)
- ;;=4^R76.11
- ;;^UTILITY(U,$J,358.3,2789,2)
- ;;=^5019570
- ;;^UTILITY(U,$J,358.3,2790,0)
- ;;=R76.12^^7^83^171
- ;;^UTILITY(U,$J,358.3,2790,1,0)
+ ;;^UTILITY(U,$J,358.3,2985,1,3,0)
+ ;;=3^Hearing Loss,Conductive,Unspec
+ ;;^UTILITY(U,$J,358.3,2985,1,4,0)
+ ;;=4^H90.2
+ ;;^UTILITY(U,$J,358.3,2985,2)
+ ;;=^5006920
+ ;;^UTILITY(U,$J,358.3,2986,0)
+ ;;=H90.8^^18^211^7
+ ;;^UTILITY(U,$J,358.3,2986,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2790,1,3,0)
- ;;=3^Positive IGRA test for tuberculosis
- ;;^UTILITY(U,$J,358.3,2790,1,4,0)
- ;;=4^R76.12
- ;;^UTILITY(U,$J,358.3,2790,2)
- ;;=^5019571
- ;;^UTILITY(U,$J,358.3,2791,0)
- ;;=R76.8^^7^83^173
- ;;^UTILITY(U,$J,358.3,2791,1,0)
+ ;;^UTILITY(U,$J,358.3,2986,1,3,0)
+ ;;=3^Hearing Loss,Mixed Conductive & Sensorineural,Unspec
+ ;;^UTILITY(U,$J,358.3,2986,1,4,0)
+ ;;=4^H90.8
+ ;;^UTILITY(U,$J,358.3,2986,2)
+ ;;=^5006927
+ ;;^UTILITY(U,$J,358.3,2987,0)
+ ;;=H90.5^^18^211^9
+ ;;^UTILITY(U,$J,358.3,2987,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2791,1,3,0)
- ;;=3^Positive RPR
- ;;^UTILITY(U,$J,358.3,2791,1,4,0)
- ;;=4^R76.8
- ;;^UTILITY(U,$J,358.3,2791,2)
- ;;=^5019572
- ;;^UTILITY(U,$J,358.3,2792,0)
- ;;=N41.9^^7^83^174
- ;;^UTILITY(U,$J,358.3,2792,1,0)
+ ;;^UTILITY(U,$J,358.3,2987,1,3,0)
+ ;;=3^Hearing Loss,Sensorineural,Unspec
+ ;;^UTILITY(U,$J,358.3,2987,1,4,0)
+ ;;=4^H90.5
+ ;;^UTILITY(U,$J,358.3,2987,2)
+ ;;=^5006923
+ ;;^UTILITY(U,$J,358.3,2988,0)
+ ;;=H91.93^^18^211^4
+ ;;^UTILITY(U,$J,358.3,2988,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2792,1,3,0)
- ;;=3^Prostatitis
- ;;^UTILITY(U,$J,358.3,2792,1,4,0)
- ;;=4^N41.9
- ;;^UTILITY(U,$J,358.3,2792,2)
- ;;=^5015694
- ;;^UTILITY(U,$J,358.3,2793,0)
- ;;=T84.52XA^^7^83^176
- ;;^UTILITY(U,$J,358.3,2793,1,0)
+ ;;^UTILITY(U,$J,358.3,2988,1,3,0)
+ ;;=3^Hearing Loss,Bilateral,Unspec
+ ;;^UTILITY(U,$J,358.3,2988,1,4,0)
+ ;;=4^H91.93
+ ;;^UTILITY(U,$J,358.3,2988,2)
+ ;;=^5006944
+ ;;^UTILITY(U,$J,358.3,2989,0)
+ ;;=H91.92^^18^211^6
+ ;;^UTILITY(U,$J,358.3,2989,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2793,1,3,0)
- ;;=3^Prosthetic Left Hip Joint Infection,Init Encntr

@@ -1,142 +1,122 @@
-IBDEI1TS ; ; 06-AUG-2015
+IBDEI1TS ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,32164,1,3,0)
- ;;=3^Actinic Keratosis
- ;;^UTILITY(U,$J,358.3,32164,1,4,0)
- ;;=4^L57.0
- ;;^UTILITY(U,$J,358.3,32164,2)
- ;;=^66900
- ;;^UTILITY(U,$J,358.3,32165,0)
- ;;=L60.0^^182^1981^162
- ;;^UTILITY(U,$J,358.3,32165,1,0)
+ ;;^UTILITY(U,$J,358.3,31010,0)
+ ;;=F10.21^^123^1555^29
+ ;;^UTILITY(U,$J,358.3,31010,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32165,1,3,0)
- ;;=3^Ingrowing Nail
- ;;^UTILITY(U,$J,358.3,32165,1,4,0)
- ;;=4^L60.0
- ;;^UTILITY(U,$J,358.3,32165,2)
- ;;=^5009234
- ;;^UTILITY(U,$J,358.3,32166,0)
- ;;=L60.1^^182^1981^235
- ;;^UTILITY(U,$J,358.3,32166,1,0)
+ ;;^UTILITY(U,$J,358.3,31010,1,3,0)
+ ;;=3^Alcohol Use Disorder,Moderate-Severe In Remission
+ ;;^UTILITY(U,$J,358.3,31010,1,4,0)
+ ;;=4^F10.21
+ ;;^UTILITY(U,$J,358.3,31010,2)
+ ;;=^5003082
+ ;;^UTILITY(U,$J,358.3,31011,0)
+ ;;=F10.230^^123^1555^30
+ ;;^UTILITY(U,$J,358.3,31011,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32166,1,3,0)
- ;;=3^Onycholysis
- ;;^UTILITY(U,$J,358.3,32166,1,4,0)
- ;;=4^L60.1
- ;;^UTILITY(U,$J,358.3,32166,2)
- ;;=^186837
- ;;^UTILITY(U,$J,358.3,32167,0)
- ;;=L60.2^^182^1981^234
- ;;^UTILITY(U,$J,358.3,32167,1,0)
+ ;;^UTILITY(U,$J,358.3,31011,1,3,0)
+ ;;=3^Alcohol Use Disorder,Moderate-Severe w/ Withdrawal
+ ;;^UTILITY(U,$J,358.3,31011,1,4,0)
+ ;;=4^F10.230
+ ;;^UTILITY(U,$J,358.3,31011,2)
+ ;;=^5003086
+ ;;^UTILITY(U,$J,358.3,31012,0)
+ ;;=F10.231^^123^1555^31
+ ;;^UTILITY(U,$J,358.3,31012,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32167,1,3,0)
- ;;=3^Onychogryphosis
- ;;^UTILITY(U,$J,358.3,32167,1,4,0)
- ;;=4^L60.2
- ;;^UTILITY(U,$J,358.3,32167,2)
- ;;=^5009235
- ;;^UTILITY(U,$J,358.3,32168,0)
- ;;=L60.3^^182^1981^171
- ;;^UTILITY(U,$J,358.3,32168,1,0)
+ ;;^UTILITY(U,$J,358.3,31012,1,3,0)
+ ;;=3^Alcohol Use Disorder,Moderate-Severe w/ Withdrawal Delirium
+ ;;^UTILITY(U,$J,358.3,31012,1,4,0)
+ ;;=4^F10.231
+ ;;^UTILITY(U,$J,358.3,31012,2)
+ ;;=^5003087
+ ;;^UTILITY(U,$J,358.3,31013,0)
+ ;;=F10.232^^123^1555^32
+ ;;^UTILITY(U,$J,358.3,31013,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32168,1,3,0)
- ;;=3^Nail Dystrophy
- ;;^UTILITY(U,$J,358.3,32168,1,4,0)
- ;;=4^L60.3
- ;;^UTILITY(U,$J,358.3,32168,2)
- ;;=^5009236
- ;;^UTILITY(U,$J,358.3,32169,0)
- ;;=L60.4^^182^1981^88
- ;;^UTILITY(U,$J,358.3,32169,1,0)
+ ;;^UTILITY(U,$J,358.3,31013,1,3,0)
+ ;;=3^Alcohol Use Disorder,Moderate-Severe w/ Withdrawal Perceptual Disturbances
+ ;;^UTILITY(U,$J,358.3,31013,1,4,0)
+ ;;=4^F10.232
+ ;;^UTILITY(U,$J,358.3,31013,2)
+ ;;=^5003088
+ ;;^UTILITY(U,$J,358.3,31014,0)
+ ;;=F10.239^^123^1555^33
+ ;;^UTILITY(U,$J,358.3,31014,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32169,1,3,0)
- ;;=3^Beau's Lines
- ;;^UTILITY(U,$J,358.3,32169,1,4,0)
- ;;=4^L60.4
- ;;^UTILITY(U,$J,358.3,32169,2)
- ;;=^5009237
- ;;^UTILITY(U,$J,358.3,32170,0)
- ;;=L60.5^^182^1981^291
- ;;^UTILITY(U,$J,358.3,32170,1,0)
+ ;;^UTILITY(U,$J,358.3,31014,1,3,0)
+ ;;=3^Alcohol Withdrawal w/o Perceptual Disturbances
+ ;;^UTILITY(U,$J,358.3,31014,1,4,0)
+ ;;=4^F10.239
+ ;;^UTILITY(U,$J,358.3,31014,2)
+ ;;=^5003089
+ ;;^UTILITY(U,$J,358.3,31015,0)
+ ;;=F10.24^^123^1555^35
+ ;;^UTILITY(U,$J,358.3,31015,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32170,1,3,0)
- ;;=3^Yellow Nail Syndrome
- ;;^UTILITY(U,$J,358.3,32170,1,4,0)
- ;;=4^L60.5
- ;;^UTILITY(U,$J,358.3,32170,2)
- ;;=^5009238
- ;;^UTILITY(U,$J,358.3,32171,0)
- ;;=L60.8^^182^1981^169
- ;;^UTILITY(U,$J,358.3,32171,1,0)
+ ;;^UTILITY(U,$J,358.3,31015,1,3,0)
+ ;;=3^Alcohol-Induced Depressive & Related Disorder w/ Moderate-Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,31015,1,4,0)
+ ;;=4^F10.24
+ ;;^UTILITY(U,$J,358.3,31015,2)
+ ;;=^5003090
+ ;;^UTILITY(U,$J,358.3,31016,0)
+ ;;=F10.29^^123^1555^37
+ ;;^UTILITY(U,$J,358.3,31016,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32171,1,3,0)
- ;;=3^Nail Disorders NEC
- ;;^UTILITY(U,$J,358.3,32171,1,4,0)
- ;;=4^L60.8
- ;;^UTILITY(U,$J,358.3,32171,2)
- ;;=^5009239
- ;;^UTILITY(U,$J,358.3,32172,0)
- ;;=L62.^^182^1981^170
- ;;^UTILITY(U,$J,358.3,32172,1,0)
+ ;;^UTILITY(U,$J,358.3,31016,1,3,0)
+ ;;=3^Alcohol-Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,31016,1,4,0)
+ ;;=4^F10.29
+ ;;^UTILITY(U,$J,358.3,31016,2)
+ ;;=^5003100
+ ;;^UTILITY(U,$J,358.3,31017,0)
+ ;;=F10.180^^123^1555^1
+ ;;^UTILITY(U,$J,358.3,31017,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32172,1,3,0)
- ;;=3^Nail Disorders in Diseases Classified Elsewhere
- ;;^UTILITY(U,$J,358.3,32172,1,4,0)
- ;;=4^L62.
- ;;^UTILITY(U,$J,358.3,32172,2)
- ;;=^5009241
- ;;^UTILITY(U,$J,358.3,32173,0)
- ;;=L64.9^^182^1981^33
- ;;^UTILITY(U,$J,358.3,32173,1,0)
+ ;;^UTILITY(U,$J,358.3,31017,1,3,0)
+ ;;=3^Alcohol Induced Anxiety Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,31017,1,4,0)
+ ;;=4^F10.180
+ ;;^UTILITY(U,$J,358.3,31017,2)
+ ;;=^5003076
+ ;;^UTILITY(U,$J,358.3,31018,0)
+ ;;=F10.280^^123^1555^2
+ ;;^UTILITY(U,$J,358.3,31018,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32173,1,3,0)
- ;;=3^Androgenic Alopecia,Unspec
- ;;^UTILITY(U,$J,358.3,32173,1,4,0)
- ;;=4^L64.9
- ;;^UTILITY(U,$J,358.3,32173,2)
- ;;=^5009249
- ;;^UTILITY(U,$J,358.3,32174,0)
- ;;=L65.9^^182^1981^232
- ;;^UTILITY(U,$J,358.3,32174,1,0)
+ ;;^UTILITY(U,$J,358.3,31018,1,3,0)
+ ;;=3^Alcohol Induced Anxiety Disorder w/ Moderate/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,31018,1,4,0)
+ ;;=4^F10.280
+ ;;^UTILITY(U,$J,358.3,31018,2)
+ ;;=^5003096
+ ;;^UTILITY(U,$J,358.3,31019,0)
+ ;;=F10.980^^123^1555^3
+ ;;^UTILITY(U,$J,358.3,31019,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32174,1,3,0)
- ;;=3^Nonscarring Hair Loss,Unspec
- ;;^UTILITY(U,$J,358.3,32174,1,4,0)
- ;;=4^L65.9
- ;;^UTILITY(U,$J,358.3,32174,2)
- ;;=^5009252
- ;;^UTILITY(U,$J,358.3,32175,0)
- ;;=L70.0^^182^1981^6
- ;;^UTILITY(U,$J,358.3,32175,1,0)
+ ;;^UTILITY(U,$J,358.3,31019,1,3,0)
+ ;;=3^Alcohol Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,31019,1,4,0)
+ ;;=4^F10.980
+ ;;^UTILITY(U,$J,358.3,31019,2)
+ ;;=^5003110
+ ;;^UTILITY(U,$J,358.3,31020,0)
+ ;;=F10.94^^123^1555^4
+ ;;^UTILITY(U,$J,358.3,31020,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32175,1,3,0)
- ;;=3^Acne Vulgaris
- ;;^UTILITY(U,$J,358.3,32175,1,4,0)
- ;;=4^L70.0
- ;;^UTILITY(U,$J,358.3,32175,2)
- ;;=^5009268
- ;;^UTILITY(U,$J,358.3,32176,0)
- ;;=L70.1^^182^1981^1
- ;;^UTILITY(U,$J,358.3,32176,1,0)
+ ;;^UTILITY(U,$J,358.3,31020,1,3,0)
+ ;;=3^Alcohol Induced Depressive Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,31020,1,4,0)
+ ;;=4^F10.94
+ ;;^UTILITY(U,$J,358.3,31020,2)
+ ;;=^5003104
+ ;;^UTILITY(U,$J,358.3,31021,0)
+ ;;=F10.26^^123^1555^7
+ ;;^UTILITY(U,$J,358.3,31021,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32176,1,3,0)
- ;;=3^Acne Conglobata
- ;;^UTILITY(U,$J,358.3,32176,1,4,0)
- ;;=4^L70.1
- ;;^UTILITY(U,$J,358.3,32176,2)
- ;;=^5009269
- ;;^UTILITY(U,$J,358.3,32177,0)
- ;;=L70.3^^182^1981^5
- ;;^UTILITY(U,$J,358.3,32177,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,32177,1,3,0)
- ;;=3^Acne Tropica
- ;;^UTILITY(U,$J,358.3,32177,1,4,0)
- ;;=4^L70.3
- ;;^UTILITY(U,$J,358.3,32177,2)
- ;;=^5009270
- ;;^UTILITY(U,$J,358.3,32178,0)
- ;;=L70.4^^182^1981^160
+ ;;^UTILITY(U,$J,358.3,31021,1,3,0)
+ ;;=3^Alcohol Induced Neurocog Disorder,Amnestic Cofabul Type w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,31021,1,4,0)
+ ;;=4^F10.26

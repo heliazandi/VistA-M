@@ -1,122 +1,136 @@
-IBDEI202 ; ; 06-AUG-2015
+IBDEI202 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34996,2)
- ;;=^5042734
- ;;^UTILITY(U,$J,358.3,34997,0)
- ;;=S12.44XS^^183^2025^50
- ;;^UTILITY(U,$J,358.3,34997,1,0)
+ ;;^UTILITY(U,$J,358.3,33931,1,3,0)
+ ;;=3^Malig Neop Nasopharynx,Unspec
+ ;;^UTILITY(U,$J,358.3,33931,1,4,0)
+ ;;=4^C11.9
+ ;;^UTILITY(U,$J,358.3,33931,2)
+ ;;=^5000911
+ ;;^UTILITY(U,$J,358.3,33932,0)
+ ;;=C10.9^^131^1680^144
+ ;;^UTILITY(U,$J,358.3,33932,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34997,1,3,0)
- ;;=3^Type 3 traum spondylolysis of fifth cervcal vert, sequela
- ;;^UTILITY(U,$J,358.3,34997,1,4,0)
- ;;=4^S12.44XS
- ;;^UTILITY(U,$J,358.3,34997,2)
- ;;=^5021826
- ;;^UTILITY(U,$J,358.3,34998,0)
- ;;=S12.34XS^^183^2025^51
- ;;^UTILITY(U,$J,358.3,34998,1,0)
+ ;;^UTILITY(U,$J,358.3,33932,1,3,0)
+ ;;=3^Malig Neop Oropharynx,Unspec
+ ;;^UTILITY(U,$J,358.3,33932,1,4,0)
+ ;;=4^C10.9
+ ;;^UTILITY(U,$J,358.3,33932,2)
+ ;;=^5000909
+ ;;^UTILITY(U,$J,358.3,33933,0)
+ ;;=C25.9^^131^1680^145
+ ;;^UTILITY(U,$J,358.3,33933,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34998,1,3,0)
- ;;=3^Type 3 traum spondylolysis of fourth cervcal vert, sequela
- ;;^UTILITY(U,$J,358.3,34998,1,4,0)
- ;;=4^S12.34XS
- ;;^UTILITY(U,$J,358.3,34998,2)
- ;;=^5021772
- ;;^UTILITY(U,$J,358.3,34999,0)
- ;;=S12.14XS^^183^2025^52
- ;;^UTILITY(U,$J,358.3,34999,1,0)
+ ;;^UTILITY(U,$J,358.3,33933,1,3,0)
+ ;;=3^Malig Neop Pancreas,Unspec
+ ;;^UTILITY(U,$J,358.3,33933,1,4,0)
+ ;;=4^C25.9
+ ;;^UTILITY(U,$J,358.3,33933,2)
+ ;;=^5000946
+ ;;^UTILITY(U,$J,358.3,33934,0)
+ ;;=C47.9^^131^1680^146
+ ;;^UTILITY(U,$J,358.3,33934,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34999,1,3,0)
- ;;=3^Type 3 traum spondylolysis of second cervcal vert, sequela
- ;;^UTILITY(U,$J,358.3,34999,1,4,0)
- ;;=4^S12.14XS
- ;;^UTILITY(U,$J,358.3,34999,2)
- ;;=^5021664
- ;;^UTILITY(U,$J,358.3,35000,0)
- ;;=S12.64XS^^183^2025^53
- ;;^UTILITY(U,$J,358.3,35000,1,0)
+ ;;^UTILITY(U,$J,358.3,33934,1,3,0)
+ ;;=3^Malig Neop Peripheral Nerves/Autonomic Nervous System,Unspec
+ ;;^UTILITY(U,$J,358.3,33934,1,4,0)
+ ;;=4^C47.9
+ ;;^UTILITY(U,$J,358.3,33934,2)
+ ;;=^5001121
+ ;;^UTILITY(U,$J,358.3,33935,0)
+ ;;=C38.4^^131^1680^147
+ ;;^UTILITY(U,$J,358.3,33935,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35000,1,3,0)
- ;;=3^Type 3 traum spondylolysis of seventh cervcal vert, sqla
- ;;^UTILITY(U,$J,358.3,35000,1,4,0)
- ;;=4^S12.64XS
- ;;^UTILITY(U,$J,358.3,35000,2)
- ;;=^5021934
- ;;^UTILITY(U,$J,358.3,35001,0)
- ;;=S12.54XS^^183^2025^54
- ;;^UTILITY(U,$J,358.3,35001,1,0)
+ ;;^UTILITY(U,$J,358.3,33935,1,3,0)
+ ;;=3^Malig Neop Pleura
+ ;;^UTILITY(U,$J,358.3,33935,1,4,0)
+ ;;=4^C38.4
+ ;;^UTILITY(U,$J,358.3,33935,2)
+ ;;=^267140
+ ;;^UTILITY(U,$J,358.3,33936,0)
+ ;;=C61.^^131^1680^148
+ ;;^UTILITY(U,$J,358.3,33936,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35001,1,3,0)
- ;;=3^Type 3 traum spondylolysis of sixth cervcal vert, sequela
- ;;^UTILITY(U,$J,358.3,35001,1,4,0)
- ;;=4^S12.54XS
- ;;^UTILITY(U,$J,358.3,35001,2)
- ;;=^5021880
- ;;^UTILITY(U,$J,358.3,35002,0)
- ;;=S12.24XS^^183^2025^55
- ;;^UTILITY(U,$J,358.3,35002,1,0)
+ ;;^UTILITY(U,$J,358.3,33936,1,3,0)
+ ;;=3^Malig Neop Prostate
+ ;;^UTILITY(U,$J,358.3,33936,1,4,0)
+ ;;=4^C61.
+ ;;^UTILITY(U,$J,358.3,33936,2)
+ ;;=^267239
+ ;;^UTILITY(U,$J,358.3,33937,0)
+ ;;=C20.^^131^1680^149
+ ;;^UTILITY(U,$J,358.3,33937,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35002,1,3,0)
- ;;=3^Type 3 traum spondylolysis of third cervcal vert, sequela
- ;;^UTILITY(U,$J,358.3,35002,1,4,0)
- ;;=4^S12.24XS
- ;;^UTILITY(U,$J,358.3,35002,2)
- ;;=^5021718
- ;;^UTILITY(U,$J,358.3,35003,0)
- ;;=S32.052S^^183^2025^61
- ;;^UTILITY(U,$J,358.3,35003,1,0)
+ ;;^UTILITY(U,$J,358.3,33937,1,3,0)
+ ;;=3^Malig Neop Rectum
+ ;;^UTILITY(U,$J,358.3,33937,1,4,0)
+ ;;=4^C20.
+ ;;^UTILITY(U,$J,358.3,33937,2)
+ ;;=^267090
+ ;;^UTILITY(U,$J,358.3,33938,0)
+ ;;=C64.1^^131^1680^154
+ ;;^UTILITY(U,$J,358.3,33938,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35003,1,3,0)
- ;;=3^Unstable burst fracture of fifth lumbar vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35003,1,4,0)
- ;;=4^S32.052S
- ;;^UTILITY(U,$J,358.3,35003,2)
- ;;=^5024508
- ;;^UTILITY(U,$J,358.3,35004,0)
- ;;=S12.02XS^^183^2025^62
- ;;^UTILITY(U,$J,358.3,35004,1,0)
+ ;;^UTILITY(U,$J,358.3,33938,1,3,0)
+ ;;=3^Malig Neop Right Kidney,Except Renal pelvis
+ ;;^UTILITY(U,$J,358.3,33938,1,4,0)
+ ;;=4^C64.1
+ ;;^UTILITY(U,$J,358.3,33938,2)
+ ;;=^5001248
+ ;;^UTILITY(U,$J,358.3,33939,0)
+ ;;=C65.1^^131^1680^157
+ ;;^UTILITY(U,$J,358.3,33939,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35004,1,3,0)
- ;;=3^Unstable burst fracture of first cervical vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35004,1,4,0)
- ;;=4^S12.02XS
- ;;^UTILITY(U,$J,358.3,35004,2)
- ;;=^5021568
- ;;^UTILITY(U,$J,358.3,35005,0)
- ;;=S32.012S^^183^2025^63
- ;;^UTILITY(U,$J,358.3,35005,1,0)
+ ;;^UTILITY(U,$J,358.3,33939,1,3,0)
+ ;;=3^Malig Neop Right Renal Pelvis
+ ;;^UTILITY(U,$J,358.3,33939,1,4,0)
+ ;;=4^C65.1
+ ;;^UTILITY(U,$J,358.3,33939,2)
+ ;;=^5001251
+ ;;^UTILITY(U,$J,358.3,33940,0)
+ ;;=C62.91^^131^1680^158
+ ;;^UTILITY(U,$J,358.3,33940,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35005,1,3,0)
- ;;=3^Unstable burst fracture of first lumbar vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35005,1,4,0)
- ;;=4^S32.012S
- ;;^UTILITY(U,$J,358.3,35005,2)
- ;;=^5024388
- ;;^UTILITY(U,$J,358.3,35006,0)
- ;;=S22.012S^^183^2025^64
- ;;^UTILITY(U,$J,358.3,35006,1,0)
+ ;;^UTILITY(U,$J,358.3,33940,1,3,0)
+ ;;=3^Malig Neop Right Testis
+ ;;^UTILITY(U,$J,358.3,33940,1,4,0)
+ ;;=4^C62.91
+ ;;^UTILITY(U,$J,358.3,33940,2)
+ ;;=^5001237
+ ;;^UTILITY(U,$J,358.3,33941,0)
+ ;;=C17.9^^131^1680^159
+ ;;^UTILITY(U,$J,358.3,33941,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35006,1,3,0)
- ;;=3^Unstable burst fracture of first thoracic vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35006,1,4,0)
- ;;=4^S22.012S
- ;;^UTILITY(U,$J,358.3,35006,2)
- ;;=^5022852
- ;;^UTILITY(U,$J,358.3,35007,0)
- ;;=S32.042S^^183^2025^65
- ;;^UTILITY(U,$J,358.3,35007,1,0)
+ ;;^UTILITY(U,$J,358.3,33941,1,3,0)
+ ;;=3^Malig Neop Small Intestine,Unspec
+ ;;^UTILITY(U,$J,358.3,33941,1,4,0)
+ ;;=4^C17.9
+ ;;^UTILITY(U,$J,358.3,33941,2)
+ ;;=^5000926
+ ;;^UTILITY(U,$J,358.3,33942,0)
+ ;;=C16.9^^131^1680^160
+ ;;^UTILITY(U,$J,358.3,33942,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35007,1,3,0)
- ;;=3^Unstable burst fracture of fourth lumbar vertebra, sequela
- ;;^UTILITY(U,$J,358.3,35007,1,4,0)
- ;;=4^S32.042S
- ;;^UTILITY(U,$J,358.3,35007,2)
- ;;=^5024478
- ;;^UTILITY(U,$J,358.3,35008,0)
- ;;=S22.042S^^183^2025^66
- ;;^UTILITY(U,$J,358.3,35008,1,0)
+ ;;^UTILITY(U,$J,358.3,33942,1,3,0)
+ ;;=3^Malig Neop Stomach,Unspec
+ ;;^UTILITY(U,$J,358.3,33942,1,4,0)
+ ;;=4^C16.9
+ ;;^UTILITY(U,$J,358.3,33942,2)
+ ;;=^5000923
+ ;;^UTILITY(U,$J,358.3,33943,0)
+ ;;=C02.9^^131^1680^162
+ ;;^UTILITY(U,$J,358.3,33943,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35008,1,3,0)
- ;;=3^Unstable burst fracture of fourth thoracic vertebra, sequela
+ ;;^UTILITY(U,$J,358.3,33943,1,3,0)
+ ;;=3^Malig Neop Tongue,Unspec
+ ;;^UTILITY(U,$J,358.3,33943,1,4,0)
+ ;;=4^C02.9
+ ;;^UTILITY(U,$J,358.3,33943,2)
+ ;;=^5000891
+ ;;^UTILITY(U,$J,358.3,33944,0)
+ ;;=C64.9^^131^1680^127
+ ;;^UTILITY(U,$J,358.3,33944,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33944,1,3,0)
+ ;;=3^Malig Neop Kidney,Except Renal Pelvis,Unspec

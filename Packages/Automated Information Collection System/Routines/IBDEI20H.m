@@ -1,124 +1,136 @@
-IBDEI20H ; ; 06-AUG-2015
+IBDEI20H ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,35175,1,4,0)
- ;;=4^S62.124S
- ;;^UTILITY(U,$J,358.3,35175,2)
- ;;=^5033282
- ;;^UTILITY(U,$J,358.3,35176,0)
- ;;=S62.025S^^183^2026^93
- ;;^UTILITY(U,$J,358.3,35176,1,0)
+ ;;^UTILITY(U,$J,358.3,34124,1,3,0)
+ ;;=3^Colostomy Status
+ ;;^UTILITY(U,$J,358.3,34124,1,4,0)
+ ;;=4^Z93.3
+ ;;^UTILITY(U,$J,358.3,34124,2)
+ ;;=^5063645
+ ;;^UTILITY(U,$J,358.3,34125,0)
+ ;;=Z94.0^^131^1681^63
+ ;;^UTILITY(U,$J,358.3,34125,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35176,1,3,0)
- ;;=3^Nondisp fx of middle third of navic bone of left wrist, sequela
- ;;^UTILITY(U,$J,358.3,35176,1,4,0)
- ;;=4^S62.025S
- ;;^UTILITY(U,$J,358.3,35176,2)
- ;;=^5033149
- ;;^UTILITY(U,$J,358.3,35177,0)
- ;;=S62.024S^^183^2026^94
- ;;^UTILITY(U,$J,358.3,35177,1,0)
+ ;;^UTILITY(U,$J,358.3,34125,1,3,0)
+ ;;=3^Kidney Transplant Status
+ ;;^UTILITY(U,$J,358.3,34125,1,4,0)
+ ;;=4^Z94.0
+ ;;^UTILITY(U,$J,358.3,34125,2)
+ ;;=^5063654
+ ;;^UTILITY(U,$J,358.3,34126,0)
+ ;;=Z94.1^^131^1681^56
+ ;;^UTILITY(U,$J,358.3,34126,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35177,1,3,0)
- ;;=3^Nondisp fx of middle third of navic bone of right wrist, sequela
- ;;^UTILITY(U,$J,358.3,35177,1,4,0)
- ;;=4^S62.024S
- ;;^UTILITY(U,$J,358.3,35177,2)
- ;;=^5033142
- ;;^UTILITY(U,$J,358.3,35178,0)
- ;;=S62.165S^^183^2026^105
- ;;^UTILITY(U,$J,358.3,35178,1,0)
+ ;;^UTILITY(U,$J,358.3,34126,1,3,0)
+ ;;=3^Heart Transplant Status
+ ;;^UTILITY(U,$J,358.3,34126,1,4,0)
+ ;;=4^Z94.1
+ ;;^UTILITY(U,$J,358.3,34126,2)
+ ;;=^5063655
+ ;;^UTILITY(U,$J,358.3,34127,0)
+ ;;=Z94.2^^131^1681^66
+ ;;^UTILITY(U,$J,358.3,34127,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35178,1,3,0)
- ;;=3^Nondisp fx of pisiform, left wrist, sequela
- ;;^UTILITY(U,$J,358.3,35178,1,4,0)
- ;;=4^S62.165S
- ;;^UTILITY(U,$J,358.3,35178,2)
- ;;=^5033457
- ;;^UTILITY(U,$J,358.3,35179,0)
- ;;=S62.164S^^183^2026^106
- ;;^UTILITY(U,$J,358.3,35179,1,0)
+ ;;^UTILITY(U,$J,358.3,34127,1,3,0)
+ ;;=3^Lung Transplant Status
+ ;;^UTILITY(U,$J,358.3,34127,1,4,0)
+ ;;=4^Z94.2
+ ;;^UTILITY(U,$J,358.3,34127,2)
+ ;;=^5063656
+ ;;^UTILITY(U,$J,358.3,34128,0)
+ ;;=Z94.3^^131^1681^55
+ ;;^UTILITY(U,$J,358.3,34128,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35179,1,3,0)
- ;;=3^Nondisp fx of pisiform, right wrist, sequela
- ;;^UTILITY(U,$J,358.3,35179,1,4,0)
- ;;=4^S62.164S
- ;;^UTILITY(U,$J,358.3,35179,2)
- ;;=^5033450
- ;;^UTILITY(U,$J,358.3,35180,0)
- ;;=S62.035S^^183^2026^107
- ;;^UTILITY(U,$J,358.3,35180,1,0)
+ ;;^UTILITY(U,$J,358.3,34128,1,3,0)
+ ;;=3^Heart & Lungs Transplant Status
+ ;;^UTILITY(U,$J,358.3,34128,1,4,0)
+ ;;=4^Z94.3
+ ;;^UTILITY(U,$J,358.3,34128,2)
+ ;;=^5063657
+ ;;^UTILITY(U,$J,358.3,34129,0)
+ ;;=Z94.4^^131^1681^65
+ ;;^UTILITY(U,$J,358.3,34129,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35180,1,3,0)
- ;;=3^Nondisp fx of prox third of navic bone of left wrist, sequela
- ;;^UTILITY(U,$J,358.3,35180,1,4,0)
- ;;=4^S62.035S
- ;;^UTILITY(U,$J,358.3,35180,2)
- ;;=^5033191
- ;;^UTILITY(U,$J,358.3,35181,0)
- ;;=S62.034S^^183^2026^108
- ;;^UTILITY(U,$J,358.3,35181,1,0)
+ ;;^UTILITY(U,$J,358.3,34129,1,3,0)
+ ;;=3^Liver Transplant Status
+ ;;^UTILITY(U,$J,358.3,34129,1,4,0)
+ ;;=4^Z94.4
+ ;;^UTILITY(U,$J,358.3,34129,2)
+ ;;=^5063658
+ ;;^UTILITY(U,$J,358.3,34130,0)
+ ;;=Z94.84^^131^1681^143
+ ;;^UTILITY(U,$J,358.3,34130,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35181,1,3,0)
- ;;=3^Nondisp fx of prox third of navic bone of right wrist, sequela
- ;;^UTILITY(U,$J,358.3,35181,1,4,0)
- ;;=4^S62.034S
- ;;^UTILITY(U,$J,358.3,35181,2)
- ;;=^5033184
- ;;^UTILITY(U,$J,358.3,35182,0)
- ;;=S62.175S^^183^2026^123
- ;;^UTILITY(U,$J,358.3,35182,1,0)
+ ;;^UTILITY(U,$J,358.3,34130,1,3,0)
+ ;;=3^Stem Cell Transplant Status
+ ;;^UTILITY(U,$J,358.3,34130,1,4,0)
+ ;;=4^Z94.84
+ ;;^UTILITY(U,$J,358.3,34130,2)
+ ;;=^5063665
+ ;;^UTILITY(U,$J,358.3,34131,0)
+ ;;=Z96.21^^131^1681^14
+ ;;^UTILITY(U,$J,358.3,34131,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35182,1,3,0)
- ;;=3^Nondisp fx of trapezium, left wrist, sequela
- ;;^UTILITY(U,$J,358.3,35182,1,4,0)
- ;;=4^S62.175S
- ;;^UTILITY(U,$J,358.3,35182,2)
- ;;=^5033499
- ;;^UTILITY(U,$J,358.3,35183,0)
- ;;=S62.174S^^183^2026^124
- ;;^UTILITY(U,$J,358.3,35183,1,0)
+ ;;^UTILITY(U,$J,358.3,34131,1,3,0)
+ ;;=3^Cochlear Implant Status
+ ;;^UTILITY(U,$J,358.3,34131,1,4,0)
+ ;;=4^Z96.21
+ ;;^UTILITY(U,$J,358.3,34131,2)
+ ;;=^5063684
+ ;;^UTILITY(U,$J,358.3,34132,0)
+ ;;=Z96.41^^131^1681^126
+ ;;^UTILITY(U,$J,358.3,34132,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35183,1,3,0)
- ;;=3^Nondisp fx of trapezium, right wrist, sequela
- ;;^UTILITY(U,$J,358.3,35183,1,4,0)
- ;;=4^S62.174S
- ;;^UTILITY(U,$J,358.3,35183,2)
- ;;=^5033492
- ;;^UTILITY(U,$J,358.3,35184,0)
- ;;=S62.185S^^183^2026^125
- ;;^UTILITY(U,$J,358.3,35184,1,0)
+ ;;^UTILITY(U,$J,358.3,34132,1,3,0)
+ ;;=3^Presence of Insulin Pump
+ ;;^UTILITY(U,$J,358.3,34132,1,4,0)
+ ;;=4^Z96.41
+ ;;^UTILITY(U,$J,358.3,34132,2)
+ ;;=^5063688
+ ;;^UTILITY(U,$J,358.3,34133,0)
+ ;;=Z96.641^^131^1681^134
+ ;;^UTILITY(U,$J,358.3,34133,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35184,1,3,0)
- ;;=3^Nondisp fx of trapezoid, left wrist, sequela
- ;;^UTILITY(U,$J,358.3,35184,1,4,0)
- ;;=4^S62.185S
- ;;^UTILITY(U,$J,358.3,35184,2)
- ;;=^5033541
- ;;^UTILITY(U,$J,358.3,35185,0)
- ;;=S62.184S^^183^2026^126
- ;;^UTILITY(U,$J,358.3,35185,1,0)
+ ;;^UTILITY(U,$J,358.3,34133,1,3,0)
+ ;;=3^Presence of Right Artificial Hip Jt
+ ;;^UTILITY(U,$J,358.3,34133,1,4,0)
+ ;;=4^Z96.641
+ ;;^UTILITY(U,$J,358.3,34133,2)
+ ;;=^5063701
+ ;;^UTILITY(U,$J,358.3,34134,0)
+ ;;=Z96.642^^131^1681^129
+ ;;^UTILITY(U,$J,358.3,34134,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35185,1,3,0)
- ;;=3^Nondisp fx of trapezoid, right wrist, sequela
- ;;^UTILITY(U,$J,358.3,35185,1,4,0)
- ;;=4^S62.184S
- ;;^UTILITY(U,$J,358.3,35185,2)
- ;;=^5033534
- ;;^UTILITY(U,$J,358.3,35186,0)
- ;;=S62.115S^^183^2026^127
- ;;^UTILITY(U,$J,358.3,35186,1,0)
+ ;;^UTILITY(U,$J,358.3,34134,1,3,0)
+ ;;=3^Presence of Left Artificial Hip Jt
+ ;;^UTILITY(U,$J,358.3,34134,1,4,0)
+ ;;=4^Z96.642
+ ;;^UTILITY(U,$J,358.3,34134,2)
+ ;;=^5063702
+ ;;^UTILITY(U,$J,358.3,34135,0)
+ ;;=Z96.643^^131^1681^121
+ ;;^UTILITY(U,$J,358.3,34135,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35186,1,3,0)
- ;;=3^Nondisp fx of triquetrum bone, left wrist, sequela
- ;;^UTILITY(U,$J,358.3,35186,1,4,0)
- ;;=4^S62.115S
- ;;^UTILITY(U,$J,358.3,35186,2)
- ;;=^5033247
- ;;^UTILITY(U,$J,358.3,35187,0)
- ;;=S62.114S^^183^2026^128
- ;;^UTILITY(U,$J,358.3,35187,1,0)
+ ;;^UTILITY(U,$J,358.3,34135,1,3,0)
+ ;;=3^Presence of Artificial Hip Jt,Bilateral
+ ;;^UTILITY(U,$J,358.3,34135,1,4,0)
+ ;;=4^Z96.643
+ ;;^UTILITY(U,$J,358.3,34135,2)
+ ;;=^5063703
+ ;;^UTILITY(U,$J,358.3,34136,0)
+ ;;=Z96.651^^131^1681^135
+ ;;^UTILITY(U,$J,358.3,34136,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,35187,1,3,0)
- ;;=3^Nondisp fx of triquetrum bone, right wrist, sequela
+ ;;^UTILITY(U,$J,358.3,34136,1,3,0)
+ ;;=3^Presence of Right Artificial Knee Jt
+ ;;^UTILITY(U,$J,358.3,34136,1,4,0)
+ ;;=4^Z96.651
+ ;;^UTILITY(U,$J,358.3,34136,2)
+ ;;=^5063705
+ ;;^UTILITY(U,$J,358.3,34137,0)
+ ;;=Z96.652^^131^1681^130
+ ;;^UTILITY(U,$J,358.3,34137,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34137,1,3,0)
+ ;;=3^Presence of Left Artificial Knee Jt

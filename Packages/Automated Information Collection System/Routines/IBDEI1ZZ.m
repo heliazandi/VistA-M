@@ -1,122 +1,132 @@
-IBDEI1ZZ ; ; 06-AUG-2015
+IBDEI1ZZ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34961,1,3,0)
- ;;=3^Disp fx of segmental shaft of left fibula, sequela     
- ;;^UTILITY(U,$J,358.3,34961,1,4,0)
- ;;=4^S82.462S
- ;;^UTILITY(U,$J,358.3,34961,2)
- ;;=^5042129
- ;;^UTILITY(U,$J,358.3,34962,0)
- ;;=S82.461S^^183^2024^27
- ;;^UTILITY(U,$J,358.3,34962,1,0)
+ ;;^UTILITY(U,$J,358.3,33892,1,3,0)
+ ;;=3^Hb-SS Disease w/ Splenic Sequestration
+ ;;^UTILITY(U,$J,358.3,33892,1,4,0)
+ ;;=4^D57.02
+ ;;^UTILITY(U,$J,358.3,33892,2)
+ ;;=^5002308
+ ;;^UTILITY(U,$J,358.3,33893,0)
+ ;;=D68.32^^131^1680^84
+ ;;^UTILITY(U,$J,358.3,33893,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34962,1,3,0)
- ;;=3^Disp fx of segmental shaft of right fibula, sequela  
- ;;^UTILITY(U,$J,358.3,34962,1,4,0)
- ;;=4^S82.461S
- ;;^UTILITY(U,$J,358.3,34962,2)
- ;;=^5042113
- ;;^UTILITY(U,$J,358.3,34963,0)
- ;;=S82.442S^^183^2024^29
- ;;^UTILITY(U,$J,358.3,34963,1,0)
+ ;;^UTILITY(U,$J,358.3,33893,1,3,0)
+ ;;=3^Hemorrhagic Disorder d/t Extrinsic Circulating Anticoagulants
+ ;;^UTILITY(U,$J,358.3,33893,1,4,0)
+ ;;=4^D68.32
+ ;;^UTILITY(U,$J,358.3,33893,2)
+ ;;=^5002357
+ ;;^UTILITY(U,$J,358.3,33894,0)
+ ;;=C22.2^^131^1680^85
+ ;;^UTILITY(U,$J,358.3,33894,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34963,1,3,0)
- ;;=3^Disp fx of spiral shaft of left fibula, sequela 
- ;;^UTILITY(U,$J,358.3,34963,1,4,0)
- ;;=4^S82.442S
- ;;^UTILITY(U,$J,358.3,34963,2)
- ;;=^5041937
- ;;^UTILITY(U,$J,358.3,34964,0)
- ;;=S82.441S^^183^2024^31
- ;;^UTILITY(U,$J,358.3,34964,1,0)
+ ;;^UTILITY(U,$J,358.3,33894,1,3,0)
+ ;;=3^Hepatoblastoma
+ ;;^UTILITY(U,$J,358.3,33894,1,4,0)
+ ;;=4^C22.2
+ ;;^UTILITY(U,$J,358.3,33894,2)
+ ;;=^5000935
+ ;;^UTILITY(U,$J,358.3,33895,0)
+ ;;=D58.9^^131^1680^87
+ ;;^UTILITY(U,$J,358.3,33895,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34964,1,3,0)
- ;;=3^Disp fx of spiral shaft of right fibula, sequela 
- ;;^UTILITY(U,$J,358.3,34964,1,4,0)
- ;;=4^S82.441S
- ;;^UTILITY(U,$J,358.3,34964,2)
- ;;=^5041921
- ;;^UTILITY(U,$J,358.3,34965,0)
- ;;=S82.422S^^183^2024^33
- ;;^UTILITY(U,$J,358.3,34965,1,0)
+ ;;^UTILITY(U,$J,358.3,33895,1,3,0)
+ ;;=3^Hereditary Hemolytic Anemia,Unspec
+ ;;^UTILITY(U,$J,358.3,33895,1,4,0)
+ ;;=4^D58.9
+ ;;^UTILITY(U,$J,358.3,33895,2)
+ ;;=^5002322
+ ;;^UTILITY(U,$J,358.3,33896,0)
+ ;;=C81.99^^131^1680^88
+ ;;^UTILITY(U,$J,358.3,33896,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34965,1,3,0)
- ;;=3^Disp fx of transverse shaft of left fibula, sequela    
- ;;^UTILITY(U,$J,358.3,34965,1,4,0)
- ;;=4^S82.422S
- ;;^UTILITY(U,$J,358.3,34965,2)
- ;;=^5041745
- ;;^UTILITY(U,$J,358.3,34966,0)
- ;;=S82.421S^^183^2024^35
- ;;^UTILITY(U,$J,358.3,34966,1,0)
+ ;;^UTILITY(U,$J,358.3,33896,1,3,0)
+ ;;=3^Hodgkin Lymphoma,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,33896,1,4,0)
+ ;;=4^C81.99
+ ;;^UTILITY(U,$J,358.3,33896,2)
+ ;;=^5001460
+ ;;^UTILITY(U,$J,358.3,33897,0)
+ ;;=C81.90^^131^1680^89
+ ;;^UTILITY(U,$J,358.3,33897,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34966,1,3,0)
- ;;=3^Disp fx of transverse shaft of right fibula, sequela  
- ;;^UTILITY(U,$J,358.3,34966,1,4,0)
- ;;=4^S82.421S
- ;;^UTILITY(U,$J,358.3,34966,2)
- ;;=^5041729
- ;;^UTILITY(U,$J,358.3,34967,0)
- ;;=S82.455S^^183^2024^42
- ;;^UTILITY(U,$J,358.3,34967,1,0)
+ ;;^UTILITY(U,$J,358.3,33897,1,3,0)
+ ;;=3^Hodgkin Lymphoma,Unspec Site
+ ;;^UTILITY(U,$J,358.3,33897,1,4,0)
+ ;;=4^C81.90
+ ;;^UTILITY(U,$J,358.3,33897,2)
+ ;;=^5001451
+ ;;^UTILITY(U,$J,358.3,33898,0)
+ ;;=D89.2^^131^1680^90
+ ;;^UTILITY(U,$J,358.3,33898,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34967,1,3,0)
- ;;=3^Nondisp fx of comminuted shaft of left fibula, sequela 
- ;;^UTILITY(U,$J,358.3,34967,1,4,0)
- ;;=4^S82.455S
- ;;^UTILITY(U,$J,358.3,34967,2)
- ;;=^5042081
- ;;^UTILITY(U,$J,358.3,34968,0)
- ;;=S82.454S^^183^2024^44
- ;;^UTILITY(U,$J,358.3,34968,1,0)
+ ;;^UTILITY(U,$J,358.3,33898,1,3,0)
+ ;;=3^Hypergammaglobulenemia,Unspec
+ ;;^UTILITY(U,$J,358.3,33898,1,4,0)
+ ;;=4^D89.2
+ ;;^UTILITY(U,$J,358.3,33898,2)
+ ;;=^5002455
+ ;;^UTILITY(U,$J,358.3,33899,0)
+ ;;=D05.12^^131^1680^91
+ ;;^UTILITY(U,$J,358.3,33899,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34968,1,3,0)
- ;;=3^Nondisp fx of comminuted shaft of right fibula, sequela 
- ;;^UTILITY(U,$J,358.3,34968,1,4,0)
- ;;=4^S82.454S
- ;;^UTILITY(U,$J,358.3,34968,2)
- ;;=^5042065
- ;;^UTILITY(U,$J,358.3,34969,0)
- ;;=S82.65XS^^183^2024^47
- ;;^UTILITY(U,$J,358.3,34969,1,0)
+ ;;^UTILITY(U,$J,358.3,33899,1,3,0)
+ ;;=3^Intraductal Carcinoma in Situ,Left Breast
+ ;;^UTILITY(U,$J,358.3,33899,1,4,0)
+ ;;=4^D05.12
+ ;;^UTILITY(U,$J,358.3,33899,2)
+ ;;=^5001931
+ ;;^UTILITY(U,$J,358.3,33900,0)
+ ;;=D05.11^^131^1680^92
+ ;;^UTILITY(U,$J,358.3,33900,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34969,1,3,0)
- ;;=3^Nondisp fx of lateral malleolus of left fibula, sequela
- ;;^UTILITY(U,$J,358.3,34969,1,4,0)
- ;;=4^S82.65XS
- ;;^UTILITY(U,$J,358.3,34969,2)
- ;;=^5042390
- ;;^UTILITY(U,$J,358.3,34970,0)
- ;;=S82.64XS^^183^2024^48
- ;;^UTILITY(U,$J,358.3,34970,1,0)
+ ;;^UTILITY(U,$J,358.3,33900,1,3,0)
+ ;;=3^Intraductal Carcinoma in Situ,Right Breast
+ ;;^UTILITY(U,$J,358.3,33900,1,4,0)
+ ;;=4^D05.11
+ ;;^UTILITY(U,$J,358.3,33900,2)
+ ;;=^5001930
+ ;;^UTILITY(U,$J,358.3,33901,0)
+ ;;=D05.10^^131^1680^93
+ ;;^UTILITY(U,$J,358.3,33901,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34970,1,3,0)
- ;;=3^Nondisp fx of lateral malleolus of right fibula, sequela
- ;;^UTILITY(U,$J,358.3,34970,1,4,0)
- ;;=4^S82.64XS
- ;;^UTILITY(U,$J,358.3,34970,2)
- ;;=^5042374
- ;;^UTILITY(U,$J,358.3,34971,0)
- ;;=S82.435S^^183^2024^55
- ;;^UTILITY(U,$J,358.3,34971,1,0)
+ ;;^UTILITY(U,$J,358.3,33901,1,3,0)
+ ;;=3^Intraductal Carcinoma in Situ,Unspec Breast
+ ;;^UTILITY(U,$J,358.3,33901,1,4,0)
+ ;;=4^D05.10
+ ;;^UTILITY(U,$J,358.3,33901,2)
+ ;;=^5001929
+ ;;^UTILITY(U,$J,358.3,33902,0)
+ ;;=D50.0^^131^1680^94
+ ;;^UTILITY(U,$J,358.3,33902,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34971,1,3,0)
- ;;=3^Nondisp fx of oblique shaft of left fibula, sequela
- ;;^UTILITY(U,$J,358.3,34971,1,4,0)
- ;;=4^S82.435S
- ;;^UTILITY(U,$J,358.3,34971,2)
- ;;=^5041889
- ;;^UTILITY(U,$J,358.3,34972,0)
- ;;=S82.434S^^183^2024^57
- ;;^UTILITY(U,$J,358.3,34972,1,0)
+ ;;^UTILITY(U,$J,358.3,33902,1,3,0)
+ ;;=3^Iron Deficiency Anemia Secondary to Blood Loss
+ ;;^UTILITY(U,$J,358.3,33902,1,4,0)
+ ;;=4^D50.0
+ ;;^UTILITY(U,$J,358.3,33902,2)
+ ;;=^267971
+ ;;^UTILITY(U,$J,358.3,33903,0)
+ ;;=D50.9^^131^1680^95
+ ;;^UTILITY(U,$J,358.3,33903,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34972,1,3,0)
- ;;=3^Nondisp fx of oblique shaft of right fibula, sequela  
- ;;^UTILITY(U,$J,358.3,34972,1,4,0)
- ;;=4^S82.434S
- ;;^UTILITY(U,$J,358.3,34972,2)
- ;;=^5041873
- ;;^UTILITY(U,$J,358.3,34973,0)
- ;;=S82.465S^^183^2024^63
+ ;;^UTILITY(U,$J,358.3,33903,1,3,0)
+ ;;=3^Iron Deficiency Anemia,Unspec
+ ;;^UTILITY(U,$J,358.3,33903,1,4,0)
+ ;;=4^D50.9
+ ;;^UTILITY(U,$J,358.3,33903,2)
+ ;;=^5002283
+ ;;^UTILITY(U,$J,358.3,33904,0)
+ ;;=C46.9^^131^1680^96
+ ;;^UTILITY(U,$J,358.3,33904,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33904,1,3,0)
+ ;;=3^Kaposi's Sarcoma,Unspec
+ ;;^UTILITY(U,$J,358.3,33904,1,4,0)
+ ;;=4^C46.9
+ ;;^UTILITY(U,$J,358.3,33904,2)
+ ;;=^5001108
+ ;;^UTILITY(U,$J,358.3,33905,0)
+ ;;=C22.0^^131^1680^97

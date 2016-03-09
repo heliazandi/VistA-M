@@ -1,136 +1,126 @@
-IBDEI1W7 ; ; 06-AUG-2015
+IBDEI1W7 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,33284,2)
- ;;=^5003909
- ;;^UTILITY(U,$J,358.3,33285,0)
- ;;=G43.919^^182^1999^24
- ;;^UTILITY(U,$J,358.3,33285,1,0)
+ ;;^UTILITY(U,$J,358.3,32136,0)
+ ;;=T34.831A^^126^1609^190
+ ;;^UTILITY(U,$J,358.3,32136,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33285,1,3,0)
- ;;=3^Migraine Intractable w/o Status Migrainosus,Unspec
- ;;^UTILITY(U,$J,358.3,33285,1,4,0)
- ;;=4^G43.919
- ;;^UTILITY(U,$J,358.3,33285,2)
- ;;=^5003911
- ;;^UTILITY(U,$J,358.3,33286,0)
- ;;=G51.0^^182^1999^5
- ;;^UTILITY(U,$J,358.3,33286,1,0)
+ ;;^UTILITY(U,$J,358.3,32136,1,3,0)
+ ;;=3^Frostbite w/ tissue necrosis of rt toe(s), init
+ ;;^UTILITY(U,$J,358.3,32136,1,4,0)
+ ;;=4^T34.831A
+ ;;^UTILITY(U,$J,358.3,32136,2)
+ ;;=^5049241
+ ;;^UTILITY(U,$J,358.3,32137,0)
+ ;;=T34.832A^^126^1609^185
+ ;;^UTILITY(U,$J,358.3,32137,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33286,1,3,0)
- ;;=3^Bell's Palsy
- ;;^UTILITY(U,$J,358.3,33286,1,4,0)
- ;;=4^G51.0
- ;;^UTILITY(U,$J,358.3,33286,2)
- ;;=^13238
- ;;^UTILITY(U,$J,358.3,33287,0)
- ;;=G57.10^^182^1999^20
- ;;^UTILITY(U,$J,358.3,33287,1,0)
+ ;;^UTILITY(U,$J,358.3,32137,1,3,0)
+ ;;=3^Frostbite w/ tissue necrosis of lft toe(s), init
+ ;;^UTILITY(U,$J,358.3,32137,1,4,0)
+ ;;=4^T34.832A
+ ;;^UTILITY(U,$J,358.3,32137,2)
+ ;;=^5049244
+ ;;^UTILITY(U,$J,358.3,32138,0)
+ ;;=T33.811A^^126^1609^178
+ ;;^UTILITY(U,$J,358.3,32138,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33287,1,3,0)
- ;;=3^Meralgia Paresthetica Lower Limb,Unspec
- ;;^UTILITY(U,$J,358.3,33287,1,4,0)
- ;;=4^G57.10
- ;;^UTILITY(U,$J,358.3,33287,2)
- ;;=^5004041
- ;;^UTILITY(U,$J,358.3,33288,0)
- ;;=G57.12^^182^1999^21
- ;;^UTILITY(U,$J,358.3,33288,1,0)
+ ;;^UTILITY(U,$J,358.3,32138,1,3,0)
+ ;;=3^Frostbite of rt ankl, Superficial,init
+ ;;^UTILITY(U,$J,358.3,32138,1,4,0)
+ ;;=4^T33.811A
+ ;;^UTILITY(U,$J,358.3,32138,2)
+ ;;=^5049112
+ ;;^UTILITY(U,$J,358.3,32139,0)
+ ;;=T33.812A^^126^1609^175
+ ;;^UTILITY(U,$J,358.3,32139,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33288,1,3,0)
- ;;=3^Meralgia Paresthetica,Left Lower Limb
- ;;^UTILITY(U,$J,358.3,33288,1,4,0)
- ;;=4^G57.12
- ;;^UTILITY(U,$J,358.3,33288,2)
- ;;=^5004043
- ;;^UTILITY(U,$J,358.3,33289,0)
- ;;=G57.11^^182^1999^22
- ;;^UTILITY(U,$J,358.3,33289,1,0)
+ ;;^UTILITY(U,$J,358.3,32139,1,3,0)
+ ;;=3^Frostbite of lft ankl,Superficial, init
+ ;;^UTILITY(U,$J,358.3,32139,1,4,0)
+ ;;=4^T33.812A
+ ;;^UTILITY(U,$J,358.3,32139,2)
+ ;;=^5049115
+ ;;^UTILITY(U,$J,358.3,32140,0)
+ ;;=T33.821A^^126^1609^179
+ ;;^UTILITY(U,$J,358.3,32140,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33289,1,3,0)
- ;;=3^Meralgia Paresthetica,Right Lower Limb
- ;;^UTILITY(U,$J,358.3,33289,1,4,0)
- ;;=4^G57.11
- ;;^UTILITY(U,$J,358.3,33289,2)
- ;;=^5004042
- ;;^UTILITY(U,$J,358.3,33290,0)
- ;;=G60.8^^182^1999^30
- ;;^UTILITY(U,$J,358.3,33290,1,0)
+ ;;^UTILITY(U,$J,358.3,32140,1,3,0)
+ ;;=3^Frostbite of rt ft,Superficial, init
+ ;;^UTILITY(U,$J,358.3,32140,1,4,0)
+ ;;=4^T33.821A
+ ;;^UTILITY(U,$J,358.3,32140,2)
+ ;;=^5049121
+ ;;^UTILITY(U,$J,358.3,32141,0)
+ ;;=T33.822A^^126^1609^176
+ ;;^UTILITY(U,$J,358.3,32141,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33290,1,3,0)
- ;;=3^Neuropathies,Oth Hereditary and Idiopathic
- ;;^UTILITY(U,$J,358.3,33290,1,4,0)
- ;;=4^G60.8
- ;;^UTILITY(U,$J,358.3,33290,2)
- ;;=^5004070
- ;;^UTILITY(U,$J,358.3,33291,0)
- ;;=G60.9^^182^1999^31
- ;;^UTILITY(U,$J,358.3,33291,1,0)
+ ;;^UTILITY(U,$J,358.3,32141,1,3,0)
+ ;;=3^Frostbite of lft ft, Superficial,init
+ ;;^UTILITY(U,$J,358.3,32141,1,4,0)
+ ;;=4^T33.822A
+ ;;^UTILITY(U,$J,358.3,32141,2)
+ ;;=^5049124
+ ;;^UTILITY(U,$J,358.3,32142,0)
+ ;;=T33.831A^^126^1609^180
+ ;;^UTILITY(U,$J,358.3,32142,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33291,1,3,0)
- ;;=3^Neuropathy,Hereditary and Idiopathic Unspec
- ;;^UTILITY(U,$J,358.3,33291,1,4,0)
- ;;=4^G60.9
- ;;^UTILITY(U,$J,358.3,33291,2)
- ;;=^5004071
- ;;^UTILITY(U,$J,358.3,33292,0)
- ;;=G89.0^^182^2000^1
- ;;^UTILITY(U,$J,358.3,33292,1,0)
+ ;;^UTILITY(U,$J,358.3,32142,1,3,0)
+ ;;=3^Frostbite of rt toe(s), Superficial,init
+ ;;^UTILITY(U,$J,358.3,32142,1,4,0)
+ ;;=4^T33.831A
+ ;;^UTILITY(U,$J,358.3,32142,2)
+ ;;=^5049130
+ ;;^UTILITY(U,$J,358.3,32143,0)
+ ;;=T33.832A^^126^1609^177
+ ;;^UTILITY(U,$J,358.3,32143,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33292,1,3,0)
- ;;=3^Central Pain Syndrome
- ;;^UTILITY(U,$J,358.3,33292,1,4,0)
- ;;=4^G89.0
- ;;^UTILITY(U,$J,358.3,33292,2)
- ;;=^334189
- ;;^UTILITY(U,$J,358.3,33293,0)
- ;;=G89.11^^182^2000^10
- ;;^UTILITY(U,$J,358.3,33293,1,0)
+ ;;^UTILITY(U,$J,358.3,32143,1,3,0)
+ ;;=3^Frostbite of lft toe(s), Superficial,init
+ ;;^UTILITY(U,$J,358.3,32143,1,4,0)
+ ;;=4^T33.832A
+ ;;^UTILITY(U,$J,358.3,32143,2)
+ ;;=^5049133
+ ;;^UTILITY(U,$J,358.3,32144,0)
+ ;;=T34.811A^^126^1609^186
+ ;;^UTILITY(U,$J,358.3,32144,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33293,1,3,0)
- ;;=3^Pain d/t Trauma,Acute
- ;;^UTILITY(U,$J,358.3,33293,1,4,0)
- ;;=4^G89.11
- ;;^UTILITY(U,$J,358.3,33293,2)
- ;;=^5004152
- ;;^UTILITY(U,$J,358.3,33294,0)
- ;;=G89.12^^182^2000^14
- ;;^UTILITY(U,$J,358.3,33294,1,0)
+ ;;^UTILITY(U,$J,358.3,32144,1,3,0)
+ ;;=3^Frostbite w/ tissue necrosis of rt ankl, init
+ ;;^UTILITY(U,$J,358.3,32144,1,4,0)
+ ;;=4^T34.811A
+ ;;^UTILITY(U,$J,358.3,32144,2)
+ ;;=^5049223
+ ;;^UTILITY(U,$J,358.3,32145,0)
+ ;;=T34.812A^^126^1609^181
+ ;;^UTILITY(U,$J,358.3,32145,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33294,1,3,0)
- ;;=3^Post-Thoracotomy Pain,Acute
- ;;^UTILITY(U,$J,358.3,33294,1,4,0)
- ;;=4^G89.12
- ;;^UTILITY(U,$J,358.3,33294,2)
- ;;=^5004153
- ;;^UTILITY(U,$J,358.3,33295,0)
- ;;=G89.18^^182^2000^16
- ;;^UTILITY(U,$J,358.3,33295,1,0)
+ ;;^UTILITY(U,$J,358.3,32145,1,3,0)
+ ;;=3^Frostbite w/ tissue necrosis of lft ankl, init
+ ;;^UTILITY(U,$J,358.3,32145,1,4,0)
+ ;;=4^T34.812A
+ ;;^UTILITY(U,$J,358.3,32145,2)
+ ;;=^5049226
+ ;;^UTILITY(U,$J,358.3,32146,0)
+ ;;=Z46.89^^126^1609^161
+ ;;^UTILITY(U,$J,358.3,32146,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33295,1,3,0)
- ;;=3^Postprocedural Pain,Oth Acute
- ;;^UTILITY(U,$J,358.3,33295,1,4,0)
- ;;=4^G89.18
- ;;^UTILITY(U,$J,358.3,33295,2)
- ;;=^5004154
- ;;^UTILITY(U,$J,358.3,33296,0)
- ;;=R52.^^182^2000^12
- ;;^UTILITY(U,$J,358.3,33296,1,0)
+ ;;^UTILITY(U,$J,358.3,32146,1,3,0)
+ ;;=3^Fitting and adjustment of device, other
+ ;;^UTILITY(U,$J,358.3,32146,1,4,0)
+ ;;=4^Z46.89
+ ;;^UTILITY(U,$J,358.3,32146,2)
+ ;;=^5063023
+ ;;^UTILITY(U,$J,358.3,32147,0)
+ ;;=S92.532K^^126^1609^90
+ ;;^UTILITY(U,$J,358.3,32147,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33296,1,3,0)
- ;;=3^Pain,Unspec
- ;;^UTILITY(U,$J,358.3,33296,1,4,0)
- ;;=4^R52.
- ;;^UTILITY(U,$J,358.3,33296,2)
- ;;=^5019514
- ;;^UTILITY(U,$J,358.3,33297,0)
- ;;=G89.21^^182^2000^11
- ;;^UTILITY(U,$J,358.3,33297,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,33297,1,3,0)
- ;;=3^Pain d/t Trauma,Chronic
- ;;^UTILITY(U,$J,358.3,33297,1,4,0)
- ;;=4^G89.21
- ;;^UTILITY(U,$J,358.3,33297,2)
- ;;=^5004155
+ ;;^UTILITY(U,$J,358.3,32147,1,3,0)
+ ;;=3^Disp fx of dist phalanx of lft lsr toe(s), subs w/ nonunion
+ ;;^UTILITY(U,$J,358.3,32147,1,4,0)
+ ;;=4^S92.532K
+ ;;^UTILITY(U,$J,358.3,32147,2)
+ ;;=^5045526
+ ;;^UTILITY(U,$J,358.3,32148,0)
+ ;;=S92.531K^^126^1609^93

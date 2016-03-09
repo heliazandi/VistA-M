@@ -1,122 +1,132 @@
-IBDEI0TQ ; ; 06-AUG-2015
+IBDEI0TQ ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14396,1,2,0)
- ;;=2^Arthroscopy, subtalar jt,w/ debridement
- ;;^UTILITY(U,$J,358.3,14396,1,3,0)
- ;;=3^29906
- ;;^UTILITY(U,$J,358.3,14397,0)
- ;;=29907^^75^887^7^^^^1
- ;;^UTILITY(U,$J,358.3,14397,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14397,1,2,0)
- ;;=2^Arthroscopy,subtalar w/ fusion
- ;;^UTILITY(U,$J,358.3,14397,1,3,0)
- ;;=3^29907
- ;;^UTILITY(U,$J,358.3,14398,0)
- ;;=97605^^75^887^16^^^^1
- ;;^UTILITY(U,$J,358.3,14398,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14398,1,2,0)
- ;;=2^Neg Press Wound Tx <= 50 cm
- ;;^UTILITY(U,$J,358.3,14398,1,3,0)
- ;;=3^97605
- ;;^UTILITY(U,$J,358.3,14399,0)
- ;;=97606^^75^887^17^^^^1
- ;;^UTILITY(U,$J,358.3,14399,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14399,1,2,0)
- ;;=2^Neg Press Wound Tx > 50 cm
- ;;^UTILITY(U,$J,358.3,14399,1,3,0)
- ;;=3^97606
- ;;^UTILITY(U,$J,358.3,14400,0)
- ;;=2028F^^75^887^12^^^^1
- ;;^UTILITY(U,$J,358.3,14400,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14400,1,2,0)
- ;;=2^Foot Exam Performed
- ;;^UTILITY(U,$J,358.3,14400,1,3,0)
- ;;=3^2028F
- ;;^UTILITY(U,$J,358.3,14401,0)
- ;;=G8883^^75^887^9^^^^1
- ;;^UTILITY(U,$J,358.3,14401,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14401,1,2,0)
- ;;=2^Bx Result RVW,Comm,Tracked
- ;;^UTILITY(U,$J,358.3,14401,1,3,0)
- ;;=3^G8883
- ;;^UTILITY(U,$J,358.3,14402,0)
- ;;=S0395^^75^887^13^^^^1
- ;;^UTILITY(U,$J,358.3,14402,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14402,1,2,0)
- ;;=2^Impression Cast
- ;;^UTILITY(U,$J,358.3,14402,1,3,0)
- ;;=3^S0395
- ;;^UTILITY(U,$J,358.3,14403,0)
- ;;=E2402^^75^887^15^^^^1
- ;;^UTILITY(U,$J,358.3,14403,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14403,1,2,0)
- ;;=2^Neg Press Wound Therapy Pump
- ;;^UTILITY(U,$J,358.3,14403,1,3,0)
- ;;=3^E2402
- ;;^UTILITY(U,$J,358.3,14404,0)
- ;;=28400^^75^888^4^^^^1
- ;;^UTILITY(U,$J,358.3,14404,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14404,1,2,0)
- ;;=2^Closed TX of calcaneal fracture; without manipulation
- ;;^UTILITY(U,$J,358.3,14404,1,3,0)
- ;;=3^28400
- ;;^UTILITY(U,$J,358.3,14405,0)
- ;;=28405^^75^888^3^^^^1
- ;;^UTILITY(U,$J,358.3,14405,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14405,1,2,0)
- ;;=2^Closed TX of calcaneal fracture; with manipulation
- ;;^UTILITY(U,$J,358.3,14405,1,3,0)
- ;;=3^28405
- ;;^UTILITY(U,$J,358.3,14406,0)
- ;;=28406^^75^888^66^^^^1
- ;;^UTILITY(U,$J,358.3,14406,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14406,1,2,0)
- ;;=2^Perc Fixation of Calcaneous Fx
- ;;^UTILITY(U,$J,358.3,14406,1,3,0)
- ;;=3^28406
- ;;^UTILITY(U,$J,358.3,14407,0)
- ;;=28415^^75^888^34^^^^1
- ;;^UTILITY(U,$J,358.3,14407,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14407,1,2,0)
- ;;=2^Open TX of calcaneal fracture, with or without internal or external fixation;
- ;;^UTILITY(U,$J,358.3,14407,1,3,0)
- ;;=3^28415
- ;;^UTILITY(U,$J,358.3,14408,0)
- ;;=28420^^75^888^35^^^^1
- ;;^UTILITY(U,$J,358.3,14408,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14408,1,2,0)
- ;;=2^Open TX of calcaneal fracture, with or without internal or external fixation; with primary iliac or other autogenous bone graft
- ;;^UTILITY(U,$J,358.3,14408,1,3,0)
- ;;=3^28420
- ;;^UTILITY(U,$J,358.3,14409,0)
- ;;=28430^^75^888^17^^^^1
- ;;^UTILITY(U,$J,358.3,14409,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14409,1,2,0)
- ;;=2^Closed TX of talus fracture; without manipulation 
- ;;^UTILITY(U,$J,358.3,14409,1,3,0)
- ;;=3^28430
- ;;^UTILITY(U,$J,358.3,14410,0)
- ;;=28435^^75^888^16^^^^1
- ;;^UTILITY(U,$J,358.3,14410,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,14410,1,2,0)
- ;;=2^Closed TX of talus fracture; with manipulation 
- ;;^UTILITY(U,$J,358.3,14410,1,3,0)
- ;;=3^28435
- ;;^UTILITY(U,$J,358.3,14411,0)
- ;;=28436^^75^888^62^^^^1
+ ;;^UTILITY(U,$J,358.3,13939,2)
+ ;;=^5012176
+ ;;^UTILITY(U,$J,358.3,13940,0)
+ ;;=M48.57XA^^53^599^25
+ ;;^UTILITY(U,$J,358.3,13940,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13940,1,3,0)
+ ;;=3^Collapsed Vertebra,Lumbosacral Region,Init Encntr
+ ;;^UTILITY(U,$J,358.3,13940,1,4,0)
+ ;;=4^M48.57XA
+ ;;^UTILITY(U,$J,358.3,13940,2)
+ ;;=^5012187
+ ;;^UTILITY(U,$J,358.3,13941,0)
+ ;;=M48.57XD^^53^599^26
+ ;;^UTILITY(U,$J,358.3,13941,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13941,1,3,0)
+ ;;=3^Collapsed Vertebra,Lumbosacral Region,Subs Encntr,Rt Healing
+ ;;^UTILITY(U,$J,358.3,13941,1,4,0)
+ ;;=4^M48.57XD
+ ;;^UTILITY(U,$J,358.3,13941,2)
+ ;;=^5012188
+ ;;^UTILITY(U,$J,358.3,13942,0)
+ ;;=M50.30^^53^599^13
+ ;;^UTILITY(U,$J,358.3,13942,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13942,1,3,0)
+ ;;=3^Cervical Disc Degeneration,Unspec Region
+ ;;^UTILITY(U,$J,358.3,13942,1,4,0)
+ ;;=4^M50.30
+ ;;^UTILITY(U,$J,358.3,13942,2)
+ ;;=^5012227
+ ;;^UTILITY(U,$J,358.3,13943,0)
+ ;;=M51.14^^53^599^52
+ ;;^UTILITY(U,$J,358.3,13943,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13943,1,3,0)
+ ;;=3^Intvrt Disc Disorder w/ Radiculopathy,Thoracic Region
+ ;;^UTILITY(U,$J,358.3,13943,1,4,0)
+ ;;=4^M51.14
+ ;;^UTILITY(U,$J,358.3,13943,2)
+ ;;=^5012243
+ ;;^UTILITY(U,$J,358.3,13944,0)
+ ;;=M51.17^^53^599^51
+ ;;^UTILITY(U,$J,358.3,13944,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13944,1,3,0)
+ ;;=3^Intvrt Disc Disorder w/ Radiculopathy,Lumbosacral Region
+ ;;^UTILITY(U,$J,358.3,13944,1,4,0)
+ ;;=4^M51.17
+ ;;^UTILITY(U,$J,358.3,13944,2)
+ ;;=^5012246
+ ;;^UTILITY(U,$J,358.3,13945,0)
+ ;;=M51.34^^53^599^50
+ ;;^UTILITY(U,$J,358.3,13945,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13945,1,3,0)
+ ;;=3^Intvrt Disc Degeneration,Thoracic Region
+ ;;^UTILITY(U,$J,358.3,13945,1,4,0)
+ ;;=4^M51.34
+ ;;^UTILITY(U,$J,358.3,13945,2)
+ ;;=^5012251
+ ;;^UTILITY(U,$J,358.3,13946,0)
+ ;;=M51.37^^53^599^49
+ ;;^UTILITY(U,$J,358.3,13946,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13946,1,3,0)
+ ;;=3^Intvrt Disc Degeneration,Lumbosacral Region
+ ;;^UTILITY(U,$J,358.3,13946,1,4,0)
+ ;;=4^M51.37
+ ;;^UTILITY(U,$J,358.3,13946,2)
+ ;;=^5012254
+ ;;^UTILITY(U,$J,358.3,13947,0)
+ ;;=M54.14^^53^599^140
+ ;;^UTILITY(U,$J,358.3,13947,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13947,1,3,0)
+ ;;=3^Radiculopathy,Thoracic Region
+ ;;^UTILITY(U,$J,358.3,13947,1,4,0)
+ ;;=4^M54.14
+ ;;^UTILITY(U,$J,358.3,13947,2)
+ ;;=^5012299
+ ;;^UTILITY(U,$J,358.3,13948,0)
+ ;;=M54.17^^53^599^139
+ ;;^UTILITY(U,$J,358.3,13948,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13948,1,3,0)
+ ;;=3^Radiculopathy,Lumbosacral Region
+ ;;^UTILITY(U,$J,358.3,13948,1,4,0)
+ ;;=4^M54.17
+ ;;^UTILITY(U,$J,358.3,13948,2)
+ ;;=^5012302
+ ;;^UTILITY(U,$J,358.3,13949,0)
+ ;;=M54.2^^53^599^14
+ ;;^UTILITY(U,$J,358.3,13949,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13949,1,3,0)
+ ;;=3^Cervicalgia
+ ;;^UTILITY(U,$J,358.3,13949,1,4,0)
+ ;;=4^M54.2
+ ;;^UTILITY(U,$J,358.3,13949,2)
+ ;;=^5012304
+ ;;^UTILITY(U,$J,358.3,13950,0)
+ ;;=M54.31^^53^599^163
+ ;;^UTILITY(U,$J,358.3,13950,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13950,1,3,0)
+ ;;=3^Sciatica,Right Side
+ ;;^UTILITY(U,$J,358.3,13950,1,4,0)
+ ;;=4^M54.31
+ ;;^UTILITY(U,$J,358.3,13950,2)
+ ;;=^5012306
+ ;;^UTILITY(U,$J,358.3,13951,0)
+ ;;=M54.32^^53^599^162
+ ;;^UTILITY(U,$J,358.3,13951,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13951,1,3,0)
+ ;;=3^Sciatica,Left Side
+ ;;^UTILITY(U,$J,358.3,13951,1,4,0)
+ ;;=4^M54.32
+ ;;^UTILITY(U,$J,358.3,13951,2)
+ ;;=^5012307
+ ;;^UTILITY(U,$J,358.3,13952,0)
+ ;;=M54.5^^53^599^57
+ ;;^UTILITY(U,$J,358.3,13952,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13952,1,3,0)
+ ;;=3^Low Back Pain

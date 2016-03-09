@@ -1,124 +1,130 @@
-IBDEI1ZW ; ; 06-AUG-2015
+IBDEI1ZW ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,34925,1,4,0)
- ;;=4^S82.265S
- ;;^UTILITY(U,$J,358.3,34925,2)
- ;;=^5041602
- ;;^UTILITY(U,$J,358.3,34926,0)
- ;;=S82.264S^^183^2024^65
- ;;^UTILITY(U,$J,358.3,34926,1,0)
+ ;;^UTILITY(U,$J,358.3,33854,1,4,0)
+ ;;=4^C83.70
+ ;;^UTILITY(U,$J,358.3,33854,2)
+ ;;=^5001591
+ ;;^UTILITY(U,$J,358.3,33855,0)
+ ;;=D09.0^^131^1680^39
+ ;;^UTILITY(U,$J,358.3,33855,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34926,1,3,0)
- ;;=3^Nondisp fx of segmental shaft of right tibia, sequela 
- ;;^UTILITY(U,$J,358.3,34926,1,4,0)
- ;;=4^S82.264S
- ;;^UTILITY(U,$J,358.3,34926,2)
- ;;=^5041586
- ;;^UTILITY(U,$J,358.3,34927,0)
- ;;=S82.244S^^183^2024^70
- ;;^UTILITY(U,$J,358.3,34927,1,0)
+ ;;^UTILITY(U,$J,358.3,33855,1,3,0)
+ ;;=3^Carcinoma in Situ of Bladder
+ ;;^UTILITY(U,$J,358.3,33855,1,4,0)
+ ;;=4^D09.0
+ ;;^UTILITY(U,$J,358.3,33855,2)
+ ;;=^267742
+ ;;^UTILITY(U,$J,358.3,33856,0)
+ ;;=D06.9^^131^1680^40
+ ;;^UTILITY(U,$J,358.3,33856,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34927,1,3,0)
- ;;=3^Nondisp fx of spiral shaft of right tibia, sequela  
- ;;^UTILITY(U,$J,358.3,34927,1,4,0)
- ;;=4^S82.244S
- ;;^UTILITY(U,$J,358.3,34927,2)
- ;;=^5041394
- ;;^UTILITY(U,$J,358.3,34928,0)
- ;;=S82.245S^^183^2024^68
- ;;^UTILITY(U,$J,358.3,34928,1,0)
+ ;;^UTILITY(U,$J,358.3,33856,1,3,0)
+ ;;=3^Carcinoma in Situ of Cervix
+ ;;^UTILITY(U,$J,358.3,33856,1,4,0)
+ ;;=4^D06.9
+ ;;^UTILITY(U,$J,358.3,33856,2)
+ ;;=^5001941
+ ;;^UTILITY(U,$J,358.3,33857,0)
+ ;;=D06.0^^131^1680^42
+ ;;^UTILITY(U,$J,358.3,33857,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34928,1,3,0)
- ;;=3^Nondisp fx of spiral shaft of left tibia, sequela   
- ;;^UTILITY(U,$J,358.3,34928,1,4,0)
- ;;=4^S82.245S
- ;;^UTILITY(U,$J,358.3,34928,2)
- ;;=^5041410
- ;;^UTILITY(U,$J,358.3,34929,0)
- ;;=S82.225S^^183^2024^71
- ;;^UTILITY(U,$J,358.3,34929,1,0)
+ ;;^UTILITY(U,$J,358.3,33857,1,3,0)
+ ;;=3^Carcinoma in Situ of Endocervix
+ ;;^UTILITY(U,$J,358.3,33857,1,4,0)
+ ;;=4^D06.0
+ ;;^UTILITY(U,$J,358.3,33857,2)
+ ;;=^5001938
+ ;;^UTILITY(U,$J,358.3,33858,0)
+ ;;=D06.1^^131^1680^43
+ ;;^UTILITY(U,$J,358.3,33858,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34929,1,3,0)
- ;;=3^Nondisp fx of transverse shaft of left tibia, sequela  
- ;;^UTILITY(U,$J,358.3,34929,1,4,0)
- ;;=4^S82.225S
- ;;^UTILITY(U,$J,358.3,34929,2)
- ;;=^5041218
- ;;^UTILITY(U,$J,358.3,34930,0)
- ;;=S82.224S^^183^2024^73
- ;;^UTILITY(U,$J,358.3,34930,1,0)
+ ;;^UTILITY(U,$J,358.3,33858,1,3,0)
+ ;;=3^Carcinoma in Situ of Exocervix
+ ;;^UTILITY(U,$J,358.3,33858,1,4,0)
+ ;;=4^D06.1
+ ;;^UTILITY(U,$J,358.3,33858,2)
+ ;;=^5001939
+ ;;^UTILITY(U,$J,358.3,33859,0)
+ ;;=D06.7^^131^1680^41
+ ;;^UTILITY(U,$J,358.3,33859,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34930,1,3,0)
- ;;=3^Nondisp fx of transverse shaft of right tibia, sequela  
- ;;^UTILITY(U,$J,358.3,34930,1,4,0)
- ;;=4^S82.224S
- ;;^UTILITY(U,$J,358.3,34930,2)
- ;;=^5041202
- ;;^UTILITY(U,$J,358.3,34931,0)
- ;;=M84.462S^^183^2024^76
- ;;^UTILITY(U,$J,358.3,34931,1,0)
+ ;;^UTILITY(U,$J,358.3,33859,1,3,0)
+ ;;=3^Carcinoma in Situ of Cervix,Other Parts
+ ;;^UTILITY(U,$J,358.3,33859,1,4,0)
+ ;;=4^D06.7
+ ;;^UTILITY(U,$J,358.3,33859,2)
+ ;;=^5001940
+ ;;^UTILITY(U,$J,358.3,33860,0)
+ ;;=D04.9^^131^1680^44
+ ;;^UTILITY(U,$J,358.3,33860,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34931,1,3,0)
- ;;=3^Pathological fracture, left tibia, sequela
- ;;^UTILITY(U,$J,358.3,34931,1,4,0)
- ;;=4^M84.462S
- ;;^UTILITY(U,$J,358.3,34931,2)
- ;;=^5013943
- ;;^UTILITY(U,$J,358.3,34932,0)
- ;;=M84.461S^^183^2024^78
- ;;^UTILITY(U,$J,358.3,34932,1,0)
+ ;;^UTILITY(U,$J,358.3,33860,1,3,0)
+ ;;=3^Carcinoma in Situ of Skin
+ ;;^UTILITY(U,$J,358.3,33860,1,4,0)
+ ;;=4^D04.9
+ ;;^UTILITY(U,$J,358.3,33860,2)
+ ;;=^5001925
+ ;;^UTILITY(U,$J,358.3,33861,0)
+ ;;=C91.11^^131^1680^47
+ ;;^UTILITY(U,$J,358.3,33861,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34932,1,3,0)
- ;;=3^Pathological fracture, right tibia, sequela
- ;;^UTILITY(U,$J,358.3,34932,1,4,0)
- ;;=4^M84.461S
- ;;^UTILITY(U,$J,358.3,34932,2)
- ;;=^5013937
- ;;^UTILITY(U,$J,358.3,34933,0)
- ;;=S89.112S^^183^2024^79
- ;;^UTILITY(U,$J,358.3,34933,1,0)
+ ;;^UTILITY(U,$J,358.3,33861,1,3,0)
+ ;;=3^Chronic Lymphocytic Leukemia of B-Cell Type,In Remission
+ ;;^UTILITY(U,$J,358.3,33861,1,4,0)
+ ;;=4^C91.11
+ ;;^UTILITY(U,$J,358.3,33861,2)
+ ;;=^5001766
+ ;;^UTILITY(U,$J,358.3,33862,0)
+ ;;=C91.10^^131^1680^48
+ ;;^UTILITY(U,$J,358.3,33862,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34933,1,3,0)
- ;;=3^Sltr-haris Type I physeal fx lower end of l tibia, sequela
- ;;^UTILITY(U,$J,358.3,34933,1,4,0)
- ;;=4^S89.112S
- ;;^UTILITY(U,$J,358.3,34933,2)
- ;;=^5137294
- ;;^UTILITY(U,$J,358.3,34934,0)
- ;;=S89.012S^^183^2024^83
- ;;^UTILITY(U,$J,358.3,34934,1,0)
+ ;;^UTILITY(U,$J,358.3,33862,1,3,0)
+ ;;=3^Chronic Lymphocytic Leukemia of B-Cell Type,Not in Remission
+ ;;^UTILITY(U,$J,358.3,33862,1,4,0)
+ ;;=4^C91.10
+ ;;^UTILITY(U,$J,358.3,33862,2)
+ ;;=^5001765
+ ;;^UTILITY(U,$J,358.3,33863,0)
+ ;;=C92.11^^131^1680^49
+ ;;^UTILITY(U,$J,358.3,33863,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34934,1,3,0)
- ;;=3^Sltr-haris Type I physeal fx upper end of l tibia, sequela
- ;;^UTILITY(U,$J,358.3,34934,1,4,0)
- ;;=4^S89.012S
- ;;^UTILITY(U,$J,358.3,34934,2)
- ;;=^5043654
- ;;^UTILITY(U,$J,358.3,34935,0)
- ;;=S89.011S^^183^2024^84
- ;;^UTILITY(U,$J,358.3,34935,1,0)
+ ;;^UTILITY(U,$J,358.3,33863,1,3,0)
+ ;;=3^Chronic Myeloid Leukemia,BCR/ABL-Positive,In Remission
+ ;;^UTILITY(U,$J,358.3,33863,1,4,0)
+ ;;=4^C92.11
+ ;;^UTILITY(U,$J,358.3,33863,2)
+ ;;=^5001793
+ ;;^UTILITY(U,$J,358.3,33864,0)
+ ;;=C92.10^^131^1680^50
+ ;;^UTILITY(U,$J,358.3,33864,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34935,1,3,0)
- ;;=3^Sltr-haris Type I physeal fx upper end of r tibia, sequela
- ;;^UTILITY(U,$J,358.3,34935,1,4,0)
- ;;=4^S89.011S
- ;;^UTILITY(U,$J,358.3,34935,2)
- ;;=^5043648
- ;;^UTILITY(U,$J,358.3,34936,0)
- ;;=S89.111S^^183^2024^80
- ;;^UTILITY(U,$J,358.3,34936,1,0)
+ ;;^UTILITY(U,$J,358.3,33864,1,3,0)
+ ;;=3^Chronic Myeloid Leukemia,BCR/ABL-Positive,Not in Remission
+ ;;^UTILITY(U,$J,358.3,33864,1,4,0)
+ ;;=4^C92.10
+ ;;^UTILITY(U,$J,358.3,33864,2)
+ ;;=^5001792
+ ;;^UTILITY(U,$J,358.3,33865,0)
+ ;;=D47.1^^131^1680^51
+ ;;^UTILITY(U,$J,358.3,33865,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34936,1,3,0)
- ;;=3^Sltr-haris Type I physeal fx lower end of r tibia, sequela
- ;;^UTILITY(U,$J,358.3,34936,1,4,0)
- ;;=4^S89.111S
- ;;^UTILITY(U,$J,358.3,34936,2)
- ;;=^5043732
- ;;^UTILITY(U,$J,358.3,34937,0)
- ;;=S89.122S^^183^2024^87
- ;;^UTILITY(U,$J,358.3,34937,1,0)
+ ;;^UTILITY(U,$J,358.3,33865,1,3,0)
+ ;;=3^Chronic Myeloproliferative Disease
+ ;;^UTILITY(U,$J,358.3,33865,1,4,0)
+ ;;=4^D47.1
+ ;;^UTILITY(U,$J,358.3,33865,2)
+ ;;=^5002256
+ ;;^UTILITY(U,$J,358.3,33866,0)
+ ;;=C82.69^^131^1680^52
+ ;;^UTILITY(U,$J,358.3,33866,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,34937,1,3,0)
- ;;=3^Sltr-haris Type II physeal fx lower end of l tibia, sequela
+ ;;^UTILITY(U,$J,358.3,33866,1,3,0)
+ ;;=3^Cutaneous Follicle Center Lymphoma,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,33866,1,4,0)
+ ;;=4^C82.69
+ ;;^UTILITY(U,$J,358.3,33866,2)
+ ;;=^5001530
+ ;;^UTILITY(U,$J,358.3,33867,0)
+ ;;=C82.60^^131^1680^53

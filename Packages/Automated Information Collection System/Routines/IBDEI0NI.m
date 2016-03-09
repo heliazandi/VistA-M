@@ -1,124 +1,136 @@
-IBDEI0NI ; ; 06-AUG-2015
+IBDEI0NI ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,11200,1,2,0)
- ;;=2^301.7
- ;;^UTILITY(U,$J,358.3,11200,1,5,0)
- ;;=5^Antisocial Personality Dis
- ;;^UTILITY(U,$J,358.3,11200,2)
- ;;=Antisocial Personality Dis^9066
- ;;^UTILITY(U,$J,358.3,11201,0)
- ;;=301.82^^50^637^2
- ;;^UTILITY(U,$J,358.3,11201,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11201,1,2,0)
- ;;=2^301.82
- ;;^UTILITY(U,$J,358.3,11201,1,5,0)
- ;;=5^Avoidant Personality Disorder
- ;;^UTILITY(U,$J,358.3,11201,2)
- ;;=Avoidant Personality Disorder^265347
- ;;^UTILITY(U,$J,358.3,11202,0)
- ;;=301.83^^50^637^3
- ;;^UTILITY(U,$J,358.3,11202,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11202,1,2,0)
- ;;=2^301.83
- ;;^UTILITY(U,$J,358.3,11202,1,5,0)
- ;;=5^Borderline Personality Disorder
- ;;^UTILITY(U,$J,358.3,11202,2)
- ;;=Borderline Personality Disorder^16372
- ;;^UTILITY(U,$J,358.3,11203,0)
- ;;=301.6^^50^637^6
- ;;^UTILITY(U,$J,358.3,11203,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11203,1,2,0)
- ;;=2^301.6
- ;;^UTILITY(U,$J,358.3,11203,1,5,0)
- ;;=5^Dependent Personality Disorder
- ;;^UTILITY(U,$J,358.3,11203,2)
- ;;=Dependent Personality Disorder^32860
- ;;^UTILITY(U,$J,358.3,11204,0)
- ;;=301.50^^50^637^8
- ;;^UTILITY(U,$J,358.3,11204,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11204,1,2,0)
- ;;=2^301.50
- ;;^UTILITY(U,$J,358.3,11204,1,5,0)
- ;;=5^Histrionic Personality Disorder
- ;;^UTILITY(U,$J,358.3,11204,2)
- ;;=Histrionic Personality Disorder^57763
- ;;^UTILITY(U,$J,358.3,11205,0)
- ;;=301.81^^50^637^11
- ;;^UTILITY(U,$J,358.3,11205,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11205,1,2,0)
- ;;=2^301.81
- ;;^UTILITY(U,$J,358.3,11205,1,5,0)
- ;;=5^Narcissistic Personality Disorder
- ;;^UTILITY(U,$J,358.3,11205,2)
- ;;=Narcissistic Personality Disorder^265353
- ;;^UTILITY(U,$J,358.3,11206,0)
- ;;=301.0^^50^637^12
- ;;^UTILITY(U,$J,358.3,11206,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11206,1,2,0)
- ;;=2^301.0
- ;;^UTILITY(U,$J,358.3,11206,1,5,0)
- ;;=5^Paranoid Personality Disorder
- ;;^UTILITY(U,$J,358.3,11206,2)
- ;;=Paranoid Personality Disorder^89982
- ;;^UTILITY(U,$J,358.3,11207,0)
- ;;=301.9^^50^637^16
- ;;^UTILITY(U,$J,358.3,11207,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11207,1,2,0)
- ;;=2^301.9
- ;;^UTILITY(U,$J,358.3,11207,1,5,0)
- ;;=5^Unspecified Personality Disorder
- ;;^UTILITY(U,$J,358.3,11207,2)
- ;;=Unspecified Personality Disorder^92451
- ;;^UTILITY(U,$J,358.3,11208,0)
- ;;=301.20^^50^637^14
- ;;^UTILITY(U,$J,358.3,11208,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11208,1,2,0)
- ;;=2^301.20
- ;;^UTILITY(U,$J,358.3,11208,1,5,0)
- ;;=5^Schizoid Personality Disorder
- ;;^UTILITY(U,$J,358.3,11208,2)
- ;;=^108271
- ;;^UTILITY(U,$J,358.3,11209,0)
- ;;=301.22^^50^637^15
- ;;^UTILITY(U,$J,358.3,11209,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11209,1,2,0)
- ;;=2^301.22
- ;;^UTILITY(U,$J,358.3,11209,1,5,0)
- ;;=5^Schizotypal Personality Disorder
- ;;^UTILITY(U,$J,358.3,11209,2)
- ;;=Schizotypal Personality Disorder^108367
- ;;^UTILITY(U,$J,358.3,11210,0)
- ;;=301.4^^50^637^4
- ;;^UTILITY(U,$J,358.3,11210,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11210,1,2,0)
- ;;=2^301.4
- ;;^UTILITY(U,$J,358.3,11210,1,5,0)
- ;;=5^Compulsive Personality Disorder
- ;;^UTILITY(U,$J,358.3,11210,2)
- ;;=Compulsive Personality Disorder^27122
- ;;^UTILITY(U,$J,358.3,11211,0)
- ;;=301.84^^50^637^13
- ;;^UTILITY(U,$J,358.3,11211,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,11211,1,2,0)
- ;;=2^301.84
- ;;^UTILITY(U,$J,358.3,11211,1,5,0)
- ;;=5^Passive-Aggressive Personality Dis
- ;;^UTILITY(U,$J,358.3,11211,2)
- ;;=Passive-Aggressive Personality Dis^90602
- ;;^UTILITY(U,$J,358.3,11212,0)
- ;;=301.11^^50^637^9
- ;;^UTILITY(U,$J,358.3,11212,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,10973,1,3,0)
+ ;;=3^Arteritis,Unspec
+ ;;^UTILITY(U,$J,358.3,10973,1,4,0)
+ ;;=4^I77.6
+ ;;^UTILITY(U,$J,358.3,10973,2)
+ ;;=^5007813
+ ;;^UTILITY(U,$J,358.3,10974,0)
+ ;;=I25.810^^47^524^15
+ ;;^UTILITY(U,$J,358.3,10974,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10974,1,3,0)
+ ;;=3^Atherosclerosis of CABG w/o Angina Pectoris
+ ;;^UTILITY(U,$J,358.3,10974,1,4,0)
+ ;;=4^I25.810
+ ;;^UTILITY(U,$J,358.3,10974,2)
+ ;;=^5007141
+ ;;^UTILITY(U,$J,358.3,10975,0)
+ ;;=I70.91^^47^524^16
+ ;;^UTILITY(U,$J,358.3,10975,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10975,1,3,0)
+ ;;=3^Atherosclerosis,Generalized
+ ;;^UTILITY(U,$J,358.3,10975,1,4,0)
+ ;;=4^I70.91
+ ;;^UTILITY(U,$J,358.3,10975,2)
+ ;;=^5007785
+ ;;^UTILITY(U,$J,358.3,10976,0)
+ ;;=I70.90^^47^524^17
+ ;;^UTILITY(U,$J,358.3,10976,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10976,1,3,0)
+ ;;=3^Atherosclerosis,Unspec
+ ;;^UTILITY(U,$J,358.3,10976,1,4,0)
+ ;;=4^I70.90
+ ;;^UTILITY(U,$J,358.3,10976,2)
+ ;;=^5007784
+ ;;^UTILITY(U,$J,358.3,10977,0)
+ ;;=I25.10^^47^524^18
+ ;;^UTILITY(U,$J,358.3,10977,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10977,1,3,0)
+ ;;=3^Athscl Hrt Disease Native Coronary Artery w/o Angina Pectoris
+ ;;^UTILITY(U,$J,358.3,10977,1,4,0)
+ ;;=4^I25.10
+ ;;^UTILITY(U,$J,358.3,10977,2)
+ ;;=^5007107
+ ;;^UTILITY(U,$J,358.3,10978,0)
+ ;;=I48.91^^47^524^19
+ ;;^UTILITY(U,$J,358.3,10978,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10978,1,3,0)
+ ;;=3^Atrial Fibrillation,Unspec
+ ;;^UTILITY(U,$J,358.3,10978,1,4,0)
+ ;;=4^I48.91
+ ;;^UTILITY(U,$J,358.3,10978,2)
+ ;;=^5007229
+ ;;^UTILITY(U,$J,358.3,10979,0)
+ ;;=Z95.1^^47^524^21
+ ;;^UTILITY(U,$J,358.3,10979,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10979,1,3,0)
+ ;;=3^Bypass Graft,Aortocoronary
+ ;;^UTILITY(U,$J,358.3,10979,1,4,0)
+ ;;=4^Z95.1
+ ;;^UTILITY(U,$J,358.3,10979,2)
+ ;;=^5063669
+ ;;^UTILITY(U,$J,358.3,10980,0)
+ ;;=I78.9^^47^524^22
+ ;;^UTILITY(U,$J,358.3,10980,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10980,1,3,0)
+ ;;=3^Capillary Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,10980,1,4,0)
+ ;;=4^I78.9
+ ;;^UTILITY(U,$J,358.3,10980,2)
+ ;;=^5007816
+ ;;^UTILITY(U,$J,358.3,10981,0)
+ ;;=I51.7^^47^524^23
+ ;;^UTILITY(U,$J,358.3,10981,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10981,1,3,0)
+ ;;=3^Cardiomegaly
+ ;;^UTILITY(U,$J,358.3,10981,1,4,0)
+ ;;=4^I51.7
+ ;;^UTILITY(U,$J,358.3,10981,2)
+ ;;=^5007257
+ ;;^UTILITY(U,$J,358.3,10982,0)
+ ;;=I42.1^^47^524^24
+ ;;^UTILITY(U,$J,358.3,10982,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10982,1,3,0)
+ ;;=3^Cardiomyopathy,Obstructive Hypertrophic
+ ;;^UTILITY(U,$J,358.3,10982,1,4,0)
+ ;;=4^I42.1
+ ;;^UTILITY(U,$J,358.3,10982,2)
+ ;;=^340520
+ ;;^UTILITY(U,$J,358.3,10983,0)
+ ;;=I42.2^^47^524^25
+ ;;^UTILITY(U,$J,358.3,10983,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10983,1,3,0)
+ ;;=3^Cardiomyopathy,Other Hypertrophic
+ ;;^UTILITY(U,$J,358.3,10983,1,4,0)
+ ;;=4^I42.2
+ ;;^UTILITY(U,$J,358.3,10983,2)
+ ;;=^340521
+ ;;^UTILITY(U,$J,358.3,10984,0)
+ ;;=Z13.6^^47^524^26
+ ;;^UTILITY(U,$J,358.3,10984,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10984,1,3,0)
+ ;;=3^Cardiovascular Disorder Screening
+ ;;^UTILITY(U,$J,358.3,10984,1,4,0)
+ ;;=4^Z13.6
+ ;;^UTILITY(U,$J,358.3,10984,2)
+ ;;=^5062707
+ ;;^UTILITY(U,$J,358.3,10985,0)
+ ;;=G45.1^^47^524^27
+ ;;^UTILITY(U,$J,358.3,10985,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10985,1,3,0)
+ ;;=3^Carotid Artery Syndrome
+ ;;^UTILITY(U,$J,358.3,10985,1,4,0)
+ ;;=4^G45.1
+ ;;^UTILITY(U,$J,358.3,10985,2)
+ ;;=^5003956
+ ;;^UTILITY(U,$J,358.3,10986,0)
+ ;;=I65.29^^47^524^28
+ ;;^UTILITY(U,$J,358.3,10986,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10986,1,3,0)
+ ;;=3^Carotid Artery,Occlusion & Stenosis,Unspec

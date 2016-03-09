@@ -1,142 +1,126 @@
-IBDEI0HI ; ; 06-AUG-2015
+IBDEI0HI ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8160,2)
- ;;=^336613
- ;;^UTILITY(U,$J,358.3,8161,0)
- ;;=611.82^^35^481^27
- ;;^UTILITY(U,$J,358.3,8161,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8161,1,4,0)
- ;;=4^611.82
- ;;^UTILITY(U,$J,358.3,8161,1,5,0)
- ;;=5^Hypoplasia of Breast
- ;;^UTILITY(U,$J,358.3,8161,2)
- ;;=^336614
- ;;^UTILITY(U,$J,358.3,8162,0)
- ;;=625.70^^35^481^62
- ;;^UTILITY(U,$J,358.3,8162,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8162,1,4,0)
- ;;=4^625.70
- ;;^UTILITY(U,$J,358.3,8162,1,5,0)
- ;;=5^Volvodynia NOS
- ;;^UTILITY(U,$J,358.3,8162,2)
- ;;=^336753
- ;;^UTILITY(U,$J,358.3,8163,0)
- ;;=625.71^^35^481^65
- ;;^UTILITY(U,$J,358.3,8163,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8163,1,4,0)
- ;;=4^625.71
- ;;^UTILITY(U,$J,358.3,8163,1,5,0)
- ;;=5^Vulvar Vestibulitis
- ;;^UTILITY(U,$J,358.3,8163,2)
- ;;=^336618
- ;;^UTILITY(U,$J,358.3,8164,0)
- ;;=625.79^^35^481^66
- ;;^UTILITY(U,$J,358.3,8164,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8164,1,4,0)
- ;;=4^625.79
- ;;^UTILITY(U,$J,358.3,8164,1,5,0)
- ;;=5^Vulvodynia NEC
- ;;^UTILITY(U,$J,358.3,8164,2)
- ;;=^336619
- ;;^UTILITY(U,$J,358.3,8165,0)
- ;;=795.07^^35^481^11
- ;;^UTILITY(U,$J,358.3,8165,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8165,1,4,0)
- ;;=4^795.07
- ;;^UTILITY(U,$J,358.3,8165,1,5,0)
- ;;=5^Cervical Smear w/o Transformation Zone
- ;;^UTILITY(U,$J,358.3,8165,2)
- ;;=^336674
- ;;^UTILITY(U,$J,358.3,8166,0)
- ;;=795.08^^35^481^53
- ;;^UTILITY(U,$J,358.3,8166,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8166,1,4,0)
- ;;=4^795.08
- ;;^UTILITY(U,$J,358.3,8166,1,5,0)
- ;;=5^Unsatis Cerv Cytology Smear
- ;;^UTILITY(U,$J,358.3,8166,2)
- ;;=^336842
- ;;^UTILITY(U,$J,358.3,8167,0)
- ;;=796.70^^35^481^3
- ;;^UTILITY(U,$J,358.3,8167,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8167,1,4,0)
- ;;=4^796.70
- ;;^UTILITY(U,$J,358.3,8167,1,5,0)
- ;;=5^Abnormal Pap Smear of Anus NOS
- ;;^UTILITY(U,$J,358.3,8167,2)
- ;;=^336766
- ;;^UTILITY(U,$J,358.3,8168,0)
- ;;=795.10^^35^481^4
- ;;^UTILITY(U,$J,358.3,8168,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8168,1,4,0)
- ;;=4^795.10
- ;;^UTILITY(U,$J,358.3,8168,1,5,0)
- ;;=5^Abnormal Pap Smear of Vagina NOS
- ;;^UTILITY(U,$J,358.3,8168,2)
- ;;=^336765
- ;;^UTILITY(U,$J,358.3,8169,0)
- ;;=795.18^^35^481^54
- ;;^UTILITY(U,$J,358.3,8169,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8169,1,4,0)
- ;;=4^795.18
- ;;^UTILITY(U,$J,358.3,8169,1,5,0)
- ;;=5^Unsatis Vaginal Cytology Smear
- ;;^UTILITY(U,$J,358.3,8169,2)
- ;;=^336681
- ;;^UTILITY(U,$J,358.3,8170,0)
- ;;=796.78^^35^481^52
- ;;^UTILITY(U,$J,358.3,8170,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8170,1,4,0)
- ;;=4^796.78
- ;;^UTILITY(U,$J,358.3,8170,1,5,0)
- ;;=5^Unsatis Anus Cytology Smear
- ;;^UTILITY(U,$J,358.3,8170,2)
- ;;=^336690
- ;;^UTILITY(U,$J,358.3,8171,0)
- ;;=233.7^^35^482^33
- ;;^UTILITY(U,$J,358.3,8171,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8171,1,4,0)
- ;;=4^233.7
- ;;^UTILITY(U,$J,358.3,8171,1,5,0)
- ;;=5^Ca In-Situ Bladder
- ;;^UTILITY(U,$J,358.3,8171,2)
- ;;=^267742
- ;;^UTILITY(U,$J,358.3,8172,0)
- ;;=233.0^^35^482^34
- ;;^UTILITY(U,$J,358.3,8172,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8172,1,4,0)
- ;;=4^233.0
- ;;^UTILITY(U,$J,358.3,8172,1,5,0)
- ;;=5^Ca In-Situ Breast
- ;;^UTILITY(U,$J,358.3,8172,2)
- ;;=Ca In-Situ Breast^267735
- ;;^UTILITY(U,$J,358.3,8173,0)
- ;;=233.1^^35^482^35
- ;;^UTILITY(U,$J,358.3,8173,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8173,1,4,0)
- ;;=4^233.1
- ;;^UTILITY(U,$J,358.3,8173,1,5,0)
- ;;=5^Ca In-Situ Cervix
- ;;^UTILITY(U,$J,358.3,8173,2)
- ;;=^267736
- ;;^UTILITY(U,$J,358.3,8174,0)
- ;;=232.9^^35^482^36
- ;;^UTILITY(U,$J,358.3,8174,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,8174,1,4,0)
- ;;=4^232.9
+ ;;^UTILITY(U,$J,358.3,8100,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8100,1,3,0)
+ ;;=3^Laceration w/o fb of left foot, init encntr
+ ;;^UTILITY(U,$J,358.3,8100,1,4,0)
+ ;;=4^S91.312A
+ ;;^UTILITY(U,$J,358.3,8100,2)
+ ;;=^5044323
+ ;;^UTILITY(U,$J,358.3,8101,0)
+ ;;=S51.811A^^33^431^125
+ ;;^UTILITY(U,$J,358.3,8101,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8101,1,3,0)
+ ;;=3^Laceration w/o fb of right forearm, init encntr
+ ;;^UTILITY(U,$J,358.3,8101,1,4,0)
+ ;;=4^S51.811A
+ ;;^UTILITY(U,$J,358.3,8101,2)
+ ;;=^5028665
+ ;;^UTILITY(U,$J,358.3,8102,0)
+ ;;=S51.812A^^33^431^113
+ ;;^UTILITY(U,$J,358.3,8102,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8102,1,3,0)
+ ;;=3^Laceration w/o fb of left forearm, init encntr
+ ;;^UTILITY(U,$J,358.3,8102,1,4,0)
+ ;;=4^S51.812A
+ ;;^UTILITY(U,$J,358.3,8102,2)
+ ;;=^5028668
+ ;;^UTILITY(U,$J,358.3,8103,0)
+ ;;=S61.411A^^33^431^127
+ ;;^UTILITY(U,$J,358.3,8103,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8103,1,3,0)
+ ;;=3^Laceration w/o fb of right hand, init encntr
+ ;;^UTILITY(U,$J,358.3,8103,1,4,0)
+ ;;=4^S61.411A
+ ;;^UTILITY(U,$J,358.3,8103,2)
+ ;;=^5032987
+ ;;^UTILITY(U,$J,358.3,8104,0)
+ ;;=S61.412A^^33^431^115
+ ;;^UTILITY(U,$J,358.3,8104,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8104,1,3,0)
+ ;;=3^Laceration w/o fb of left hand, init encntr
+ ;;^UTILITY(U,$J,358.3,8104,1,4,0)
+ ;;=4^S61.412A
+ ;;^UTILITY(U,$J,358.3,8104,2)
+ ;;=^5032990
+ ;;^UTILITY(U,$J,358.3,8105,0)
+ ;;=S81.811A^^33^431^131
+ ;;^UTILITY(U,$J,358.3,8105,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8105,1,3,0)
+ ;;=3^Laceration w/o fb of right lower leg, init encntr
+ ;;^UTILITY(U,$J,358.3,8105,1,4,0)
+ ;;=4^S81.811A
+ ;;^UTILITY(U,$J,358.3,8105,2)
+ ;;=^5040071
+ ;;^UTILITY(U,$J,358.3,8106,0)
+ ;;=S81.812A^^33^431^119
+ ;;^UTILITY(U,$J,358.3,8106,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8106,1,3,0)
+ ;;=3^Laceration w/o fb of left lower leg, init encntr
+ ;;^UTILITY(U,$J,358.3,8106,1,4,0)
+ ;;=4^S81.812A
+ ;;^UTILITY(U,$J,358.3,8106,2)
+ ;;=^5040074
+ ;;^UTILITY(U,$J,358.3,8107,0)
+ ;;=S01.01XA^^33^431^136
+ ;;^UTILITY(U,$J,358.3,8107,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8107,1,3,0)
+ ;;=3^Laceration w/o fb of scalp, initial encounter
+ ;;^UTILITY(U,$J,358.3,8107,1,4,0)
+ ;;=4^S01.01XA
+ ;;^UTILITY(U,$J,358.3,8107,2)
+ ;;=^5020036
+ ;;^UTILITY(U,$J,358.3,8108,0)
+ ;;=S61.011A^^33^431^134
+ ;;^UTILITY(U,$J,358.3,8108,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8108,1,3,0)
+ ;;=3^Laceration w/o fb of right thumb w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8108,1,4,0)
+ ;;=4^S61.011A
+ ;;^UTILITY(U,$J,358.3,8108,2)
+ ;;=^5032690
+ ;;^UTILITY(U,$J,358.3,8109,0)
+ ;;=S61.012A^^33^431^122
+ ;;^UTILITY(U,$J,358.3,8109,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8109,1,3,0)
+ ;;=3^Laceration w/o fb of left thumb w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8109,1,4,0)
+ ;;=4^S61.012A
+ ;;^UTILITY(U,$J,358.3,8109,2)
+ ;;=^5032693
+ ;;^UTILITY(U,$J,358.3,8110,0)
+ ;;=S91.111A^^33^431^126
+ ;;^UTILITY(U,$J,358.3,8110,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8110,1,3,0)
+ ;;=3^Laceration w/o fb of right great toe w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8110,1,4,0)
+ ;;=4^S91.111A
+ ;;^UTILITY(U,$J,358.3,8110,2)
+ ;;=^5044183
+ ;;^UTILITY(U,$J,358.3,8111,0)
+ ;;=S91.112A^^33^431^114
+ ;;^UTILITY(U,$J,358.3,8111,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8111,1,3,0)
+ ;;=3^Laceration w/o fb of left great toe w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8111,1,4,0)
+ ;;=4^S91.112A
+ ;;^UTILITY(U,$J,358.3,8111,2)
+ ;;=^5044186
+ ;;^UTILITY(U,$J,358.3,8112,0)
+ ;;=S91.114A^^33^431^129
+ ;;^UTILITY(U,$J,358.3,8112,1,0)
+ ;;=^358.31IA^4^2

@@ -1,140 +1,132 @@
-IBDEI0E7 ; ; 06-AUG-2015
+IBDEI0E7 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6466,2)
- ;;=^67056
- ;;^UTILITY(U,$J,358.3,6467,0)
- ;;=403.91^^31^411^49
- ;;^UTILITY(U,$J,358.3,6467,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6467,1,4,0)
- ;;=4^403.91
- ;;^UTILITY(U,$J,358.3,6467,1,5,0)
- ;;=5^Renal Failure, Chronic Hypertensive
- ;;^UTILITY(U,$J,358.3,6467,2)
- ;;=^269610
- ;;^UTILITY(U,$J,358.3,6468,0)
- ;;=586.^^31^411^54
- ;;^UTILITY(U,$J,358.3,6468,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6468,1,4,0)
- ;;=4^586.
- ;;^UTILITY(U,$J,358.3,6468,1,5,0)
- ;;=5^Uremia
- ;;^UTILITY(U,$J,358.3,6468,2)
- ;;=Uremia^104733
- ;;^UTILITY(U,$J,358.3,6469,0)
- ;;=599.0^^31^411^66
- ;;^UTILITY(U,$J,358.3,6469,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6469,1,4,0)
- ;;=4^599.0
- ;;^UTILITY(U,$J,358.3,6469,1,5,0)
- ;;=5^Urinary Tract Infection
- ;;^UTILITY(U,$J,358.3,6469,2)
- ;;=Urinary Tract Infection^124436
- ;;^UTILITY(U,$J,358.3,6470,0)
- ;;=275.42^^31^411^25
- ;;^UTILITY(U,$J,358.3,6470,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6470,1,4,0)
- ;;=4^275.42
- ;;^UTILITY(U,$J,358.3,6470,1,5,0)
- ;;=5^Hypercalcemia
- ;;^UTILITY(U,$J,358.3,6470,2)
- ;;=Hypercalcemia^59932
- ;;^UTILITY(U,$J,358.3,6471,0)
- ;;=275.41^^31^411^28
- ;;^UTILITY(U,$J,358.3,6471,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6471,1,4,0)
- ;;=4^275.41
- ;;^UTILITY(U,$J,358.3,6471,1,5,0)
- ;;=5^Hypocalcemia
- ;;^UTILITY(U,$J,358.3,6471,2)
- ;;=Hypocalcemia^60542
- ;;^UTILITY(U,$J,358.3,6472,0)
- ;;=276.7^^31^411^26
- ;;^UTILITY(U,$J,358.3,6472,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6472,1,4,0)
- ;;=4^276.7
- ;;^UTILITY(U,$J,358.3,6472,1,5,0)
- ;;=5^Hyperkalemia/Hyperpotassemia
- ;;^UTILITY(U,$J,358.3,6472,2)
- ;;=Hyperkalemia/Hyperpotassemia^60042
- ;;^UTILITY(U,$J,358.3,6473,0)
- ;;=276.8^^31^411^29
- ;;^UTILITY(U,$J,358.3,6473,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6473,1,4,0)
- ;;=4^276.8
- ;;^UTILITY(U,$J,358.3,6473,1,5,0)
- ;;=5^Hypokalemia/Hypopotassemia
- ;;^UTILITY(U,$J,358.3,6473,2)
- ;;=Hypokalemia/Hypopotassemia^60611
- ;;^UTILITY(U,$J,358.3,6474,0)
- ;;=275.2^^31^411^23
- ;;^UTILITY(U,$J,358.3,6474,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6474,1,4,0)
- ;;=4^275.2
- ;;^UTILITY(U,$J,358.3,6474,1,5,0)
- ;;=5^Hyper Or Hypomagnesemia
- ;;^UTILITY(U,$J,358.3,6474,2)
- ;;=^35626
- ;;^UTILITY(U,$J,358.3,6475,0)
- ;;=276.0^^31^411^27
- ;;^UTILITY(U,$J,358.3,6475,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6475,1,4,0)
- ;;=4^276.0
- ;;^UTILITY(U,$J,358.3,6475,1,5,0)
- ;;=5^Hypernatremia
- ;;^UTILITY(U,$J,358.3,6475,2)
- ;;=^60144
- ;;^UTILITY(U,$J,358.3,6476,0)
- ;;=276.1^^31^411^30
- ;;^UTILITY(U,$J,358.3,6476,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6476,1,4,0)
- ;;=4^276.1
- ;;^UTILITY(U,$J,358.3,6476,1,5,0)
- ;;=5^Hyponatremia
- ;;^UTILITY(U,$J,358.3,6476,2)
- ;;=Hyponatremia^60722
- ;;^UTILITY(U,$J,358.3,6477,0)
- ;;=275.3^^31^411^24
- ;;^UTILITY(U,$J,358.3,6477,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6477,1,4,0)
- ;;=4^275.3
- ;;^UTILITY(U,$J,358.3,6477,1,5,0)
- ;;=5^Hyper Or Hypophosphatemia
- ;;^UTILITY(U,$J,358.3,6477,2)
- ;;=^93796
- ;;^UTILITY(U,$J,358.3,6478,0)
- ;;=250.40^^31^411^13
- ;;^UTILITY(U,$J,358.3,6478,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6478,1,4,0)
- ;;=4^250.40
- ;;^UTILITY(U,$J,358.3,6478,1,5,0)
- ;;=5^DM type II with Nephropathy
- ;;^UTILITY(U,$J,358.3,6478,2)
- ;;=DM type II with Nephropathy^267837^583.81
- ;;^UTILITY(U,$J,358.3,6479,0)
- ;;=790.93^^31^411^1
- ;;^UTILITY(U,$J,358.3,6479,1,0)
- ;;=^358.31IA^5^2
- ;;^UTILITY(U,$J,358.3,6479,1,4,0)
- ;;=4^790.93
- ;;^UTILITY(U,$J,358.3,6479,1,5,0)
- ;;=5^Abnormal PSA
- ;;^UTILITY(U,$J,358.3,6479,2)
- ;;=Abnormal PSA^295772
- ;;^UTILITY(U,$J,358.3,6480,0)
- ;;=627.3^^31^411^3
- ;;^UTILITY(U,$J,358.3,6480,1,0)
- ;;=^358.31IA^5^2
+ ;;^UTILITY(U,$J,358.3,6531,0)
+ ;;=C82.30^^30^396^69
+ ;;^UTILITY(U,$J,358.3,6531,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6531,1,3,0)
+ ;;=3^Follicular Lymphoma Grade IIIa,Unspec Site
+ ;;^UTILITY(U,$J,358.3,6531,1,4,0)
+ ;;=4^C82.30
+ ;;^UTILITY(U,$J,358.3,6531,2)
+ ;;=^5001491
+ ;;^UTILITY(U,$J,358.3,6532,0)
+ ;;=C82.49^^30^396^70
+ ;;^UTILITY(U,$J,358.3,6532,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6532,1,3,0)
+ ;;=3^Follicular Lymphoma Grade IIIb,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,6532,1,4,0)
+ ;;=4^C82.49
+ ;;^UTILITY(U,$J,358.3,6532,2)
+ ;;=^5001510
+ ;;^UTILITY(U,$J,358.3,6533,0)
+ ;;=C82.40^^30^396^71
+ ;;^UTILITY(U,$J,358.3,6533,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6533,1,3,0)
+ ;;=3^Follicular Lymphoma Grade IIIb,Unspec Site
+ ;;^UTILITY(U,$J,358.3,6533,1,4,0)
+ ;;=4^C82.40
+ ;;^UTILITY(U,$J,358.3,6533,2)
+ ;;=^5001501
+ ;;^UTILITY(U,$J,358.3,6534,0)
+ ;;=C82.99^^30^396^72
+ ;;^UTILITY(U,$J,358.3,6534,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6534,1,3,0)
+ ;;=3^Follicular Lymphoma Unspec,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,6534,1,4,0)
+ ;;=4^C82.99
+ ;;^UTILITY(U,$J,358.3,6534,2)
+ ;;=^5001550
+ ;;^UTILITY(U,$J,358.3,6535,0)
+ ;;=C82.90^^30^396^73
+ ;;^UTILITY(U,$J,358.3,6535,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6535,1,3,0)
+ ;;=3^Follicular Lymphoma Unspec,Unspec Site
+ ;;^UTILITY(U,$J,358.3,6535,1,4,0)
+ ;;=4^C82.90
+ ;;^UTILITY(U,$J,358.3,6535,2)
+ ;;=^5001541
+ ;;^UTILITY(U,$J,358.3,6536,0)
+ ;;=R59.1^^30^396^58
+ ;;^UTILITY(U,$J,358.3,6536,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6536,1,3,0)
+ ;;=3^Enlarged Lymph Nodes,Generalized
+ ;;^UTILITY(U,$J,358.3,6536,1,4,0)
+ ;;=4^R59.1
+ ;;^UTILITY(U,$J,358.3,6536,2)
+ ;;=^5019530
+ ;;^UTILITY(U,$J,358.3,6537,0)
+ ;;=C91.40^^30^396^77
+ ;;^UTILITY(U,$J,358.3,6537,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6537,1,3,0)
+ ;;=3^Hairy Cell Leukemia,Not in Remission
+ ;;^UTILITY(U,$J,358.3,6537,1,4,0)
+ ;;=4^C91.40
+ ;;^UTILITY(U,$J,358.3,6537,2)
+ ;;=^5001771
+ ;;^UTILITY(U,$J,358.3,6538,0)
+ ;;=C91.42^^30^396^75
+ ;;^UTILITY(U,$J,358.3,6538,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6538,1,3,0)
+ ;;=3^Hairy Cell Leukemia,In Relapse
+ ;;^UTILITY(U,$J,358.3,6538,1,4,0)
+ ;;=4^C91.42
+ ;;^UTILITY(U,$J,358.3,6538,2)
+ ;;=^5001773
+ ;;^UTILITY(U,$J,358.3,6539,0)
+ ;;=C91.41^^30^396^76
+ ;;^UTILITY(U,$J,358.3,6539,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6539,1,3,0)
+ ;;=3^Hairy Cell Leukemia,In Remission
+ ;;^UTILITY(U,$J,358.3,6539,1,4,0)
+ ;;=4^C91.41
+ ;;^UTILITY(U,$J,358.3,6539,2)
+ ;;=^5001772
+ ;;^UTILITY(U,$J,358.3,6540,0)
+ ;;=D57.01^^30^396^78
+ ;;^UTILITY(U,$J,358.3,6540,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6540,1,3,0)
+ ;;=3^Hb-SS Disease w/ Acute Chest Syndrome
+ ;;^UTILITY(U,$J,358.3,6540,1,4,0)
+ ;;=4^D57.01
+ ;;^UTILITY(U,$J,358.3,6540,2)
+ ;;=^5002307
+ ;;^UTILITY(U,$J,358.3,6541,0)
+ ;;=D57.00^^30^396^79
+ ;;^UTILITY(U,$J,358.3,6541,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6541,1,3,0)
+ ;;=3^Hb-SS Disease w/ Crisis,Unspec
+ ;;^UTILITY(U,$J,358.3,6541,1,4,0)
+ ;;=4^D57.00
+ ;;^UTILITY(U,$J,358.3,6541,2)
+ ;;=^5002306
+ ;;^UTILITY(U,$J,358.3,6542,0)
+ ;;=D57.02^^30^396^80
+ ;;^UTILITY(U,$J,358.3,6542,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6542,1,3,0)
+ ;;=3^Hb-SS Disease w/ Splenic Sequestration
+ ;;^UTILITY(U,$J,358.3,6542,1,4,0)
+ ;;=4^D57.02
+ ;;^UTILITY(U,$J,358.3,6542,2)
+ ;;=^5002308
+ ;;^UTILITY(U,$J,358.3,6543,0)
+ ;;=D68.32^^30^396^82
+ ;;^UTILITY(U,$J,358.3,6543,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6543,1,3,0)
+ ;;=3^Hemorrhagic Disorder d/t Extrinsic Circulating Anticoagulants
+ ;;^UTILITY(U,$J,358.3,6543,1,4,0)
+ ;;=4^D68.32

@@ -1,128 +1,140 @@
-IBDEI1R0 ; ; 06-AUG-2015
+IBDEI1R0 ; ; 17-FEB-2016
  ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,30908,1,3,0)
- ;;=3^Loose body in knee, left knee
- ;;^UTILITY(U,$J,358.3,30908,1,4,0)
- ;;=4^M23.42
- ;;^UTILITY(U,$J,358.3,30908,2)
- ;;=^5011252
- ;;^UTILITY(U,$J,358.3,30909,0)
- ;;=M23.41^^179^1934^24
- ;;^UTILITY(U,$J,358.3,30909,1,0)
+ ;;^UTILITY(U,$J,358.3,29670,1,3,0)
+ ;;=3^Postmenopausal Bleeding
+ ;;^UTILITY(U,$J,358.3,29670,1,4,0)
+ ;;=4^N95.0
+ ;;^UTILITY(U,$J,358.3,29670,2)
+ ;;=^97040
+ ;;^UTILITY(U,$J,358.3,29671,0)
+ ;;=N93.8^^115^1478^10
+ ;;^UTILITY(U,$J,358.3,29671,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30909,1,3,0)
- ;;=3^Loose body in knee, right knee
- ;;^UTILITY(U,$J,358.3,30909,1,4,0)
- ;;=4^M23.41
- ;;^UTILITY(U,$J,358.3,30909,2)
- ;;=^5011251
- ;;^UTILITY(U,$J,358.3,30910,0)
- ;;=M93.262^^179^1934^25
- ;;^UTILITY(U,$J,358.3,30910,1,0)
+ ;;^UTILITY(U,$J,358.3,29671,1,3,0)
+ ;;=3^Uterine Bleed,Dysfuntional (DUB)
+ ;;^UTILITY(U,$J,358.3,29671,1,4,0)
+ ;;=4^N93.8
+ ;;^UTILITY(U,$J,358.3,29671,2)
+ ;;=^5015915
+ ;;^UTILITY(U,$J,358.3,29672,0)
+ ;;=C56.1^^115^1479^10
+ ;;^UTILITY(U,$J,358.3,29672,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30910,1,3,0)
- ;;=3^Osteochondritis dissecans, left knee
- ;;^UTILITY(U,$J,358.3,30910,1,4,0)
- ;;=4^M93.262
- ;;^UTILITY(U,$J,358.3,30910,2)
- ;;=^5015272
- ;;^UTILITY(U,$J,358.3,30911,0)
- ;;=M93.261^^179^1934^26
- ;;^UTILITY(U,$J,358.3,30911,1,0)
+ ;;^UTILITY(U,$J,358.3,29672,1,3,0)
+ ;;=3^Ovarian CA,Right
+ ;;^UTILITY(U,$J,358.3,29672,1,4,0)
+ ;;=4^C56.1
+ ;;^UTILITY(U,$J,358.3,29672,2)
+ ;;=^5001212
+ ;;^UTILITY(U,$J,358.3,29673,0)
+ ;;=C56.2^^115^1479^9
+ ;;^UTILITY(U,$J,358.3,29673,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30911,1,3,0)
- ;;=3^Osteochondritis dissecans, right knee
- ;;^UTILITY(U,$J,358.3,30911,1,4,0)
- ;;=4^M93.261
- ;;^UTILITY(U,$J,358.3,30911,2)
- ;;=^5015271
- ;;^UTILITY(U,$J,358.3,30912,0)
- ;;=M70.52^^179^1934^3
- ;;^UTILITY(U,$J,358.3,30912,1,0)
+ ;;^UTILITY(U,$J,358.3,29673,1,3,0)
+ ;;=3^Ovarian CA,Left
+ ;;^UTILITY(U,$J,358.3,29673,1,4,0)
+ ;;=4^C56.2
+ ;;^UTILITY(U,$J,358.3,29673,2)
+ ;;=^5001213
+ ;;^UTILITY(U,$J,358.3,29674,0)
+ ;;=N70.02^^115^1479^7
+ ;;^UTILITY(U,$J,358.3,29674,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30912,1,3,0)
- ;;=3^Bursitis of Left Knee NEC
- ;;^UTILITY(U,$J,358.3,30912,1,4,0)
- ;;=4^M70.52
- ;;^UTILITY(U,$J,358.3,30912,2)
- ;;=^5013057
- ;;^UTILITY(U,$J,358.3,30913,0)
- ;;=M70.51^^179^1934^4
- ;;^UTILITY(U,$J,358.3,30913,1,0)
+ ;;^UTILITY(U,$J,358.3,29674,1,3,0)
+ ;;=3^Oophoritis,Acute
+ ;;^UTILITY(U,$J,358.3,29674,1,4,0)
+ ;;=4^N70.02
+ ;;^UTILITY(U,$J,358.3,29674,2)
+ ;;=^5015803
+ ;;^UTILITY(U,$J,358.3,29675,0)
+ ;;=N70.03^^115^1479^15
+ ;;^UTILITY(U,$J,358.3,29675,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30913,1,3,0)
- ;;=3^Bursitis of Right Knee NEC
- ;;^UTILITY(U,$J,358.3,30913,1,4,0)
- ;;=4^M70.51
- ;;^UTILITY(U,$J,358.3,30913,2)
- ;;=^5013056
- ;;^UTILITY(U,$J,358.3,30914,0)
- ;;=S83.095A^^179^1934^15
- ;;^UTILITY(U,$J,358.3,30914,1,0)
+ ;;^UTILITY(U,$J,358.3,29675,1,3,0)
+ ;;=3^Salpingitis and Oophoritis,Acute
+ ;;^UTILITY(U,$J,358.3,29675,1,4,0)
+ ;;=4^N70.03
+ ;;^UTILITY(U,$J,358.3,29675,2)
+ ;;=^270465
+ ;;^UTILITY(U,$J,358.3,29676,0)
+ ;;=N83.53^^115^1479^1
+ ;;^UTILITY(U,$J,358.3,29676,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30914,1,3,0)
- ;;=3^Dislocation of left patella, init encntr NEC
- ;;^UTILITY(U,$J,358.3,30914,1,4,0)
- ;;=4^S83.095A
- ;;^UTILITY(U,$J,358.3,30914,2)
- ;;=^5137019
- ;;^UTILITY(U,$J,358.3,30915,0)
- ;;=S83.094A^^179^1934^16
- ;;^UTILITY(U,$J,358.3,30915,1,0)
+ ;;^UTILITY(U,$J,358.3,29676,1,3,0)
+ ;;=3^Adnexal Torsion
+ ;;^UTILITY(U,$J,358.3,29676,1,4,0)
+ ;;=4^N83.53
+ ;;^UTILITY(U,$J,358.3,29676,2)
+ ;;=^5015862
+ ;;^UTILITY(U,$J,358.3,29677,0)
+ ;;=D28.2^^115^1479^2
+ ;;^UTILITY(U,$J,358.3,29677,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30915,1,3,0)
- ;;=3^Dislocation of right patella, init encntr NEC
- ;;^UTILITY(U,$J,358.3,30915,1,4,0)
- ;;=4^S83.094A
- ;;^UTILITY(U,$J,358.3,30915,2)
- ;;=^5042932
- ;;^UTILITY(U,$J,358.3,30916,0)
- ;;=M25.362^^179^1934^21
- ;;^UTILITY(U,$J,358.3,30916,1,0)
+ ;;^UTILITY(U,$J,358.3,29677,1,3,0)
+ ;;=3^Benign Neop,Fallopian
+ ;;^UTILITY(U,$J,358.3,29677,1,4,0)
+ ;;=4^D28.2
+ ;;^UTILITY(U,$J,358.3,29677,2)
+ ;;=^5002089
+ ;;^UTILITY(U,$J,358.3,29678,0)
+ ;;=D27.0^^115^1479^4
+ ;;^UTILITY(U,$J,358.3,29678,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30916,1,3,0)
- ;;=3^Instability, left knee NEC
- ;;^UTILITY(U,$J,358.3,30916,1,4,0)
- ;;=4^M25.362
- ;;^UTILITY(U,$J,358.3,30916,2)
- ;;=^5011567
- ;;^UTILITY(U,$J,358.3,30917,0)
- ;;=S83.282A^^179^1934^37
- ;;^UTILITY(U,$J,358.3,30917,1,0)
+ ;;^UTILITY(U,$J,358.3,29678,1,3,0)
+ ;;=3^Benign Neop,Right Ovary
+ ;;^UTILITY(U,$J,358.3,29678,1,4,0)
+ ;;=4^D27.0
+ ;;^UTILITY(U,$J,358.3,29678,2)
+ ;;=^5002086
+ ;;^UTILITY(U,$J,358.3,29679,0)
+ ;;=D27.1^^115^1479^3
+ ;;^UTILITY(U,$J,358.3,29679,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30917,1,3,0)
- ;;=3^Tear of Left Knee Lat Mensc,Current Injury,Init Encntr NEC
- ;;^UTILITY(U,$J,358.3,30917,1,4,0)
- ;;=4^S83.282A
- ;;^UTILITY(U,$J,358.3,30917,2)
- ;;=^5137064
- ;;^UTILITY(U,$J,358.3,30918,0)
- ;;=S83.281A^^179^1934^39
- ;;^UTILITY(U,$J,358.3,30918,1,0)
+ ;;^UTILITY(U,$J,358.3,29679,1,3,0)
+ ;;=3^Benign Neop,Left Ovary
+ ;;^UTILITY(U,$J,358.3,29679,1,4,0)
+ ;;=4^D27.1
+ ;;^UTILITY(U,$J,358.3,29679,2)
+ ;;=^5002087
+ ;;^UTILITY(U,$J,358.3,29680,0)
+ ;;=N70.12^^115^1479^8
+ ;;^UTILITY(U,$J,358.3,29680,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30918,1,3,0)
- ;;=3^Tear of Right Knee Lat Mensc,Current Injury,Init Encntr NEC
- ;;^UTILITY(U,$J,358.3,30918,1,4,0)
- ;;=4^S83.281A
- ;;^UTILITY(U,$J,358.3,30918,2)
- ;;=^5043091
- ;;^UTILITY(U,$J,358.3,30919,0)
- ;;=S83.242A^^179^1934^38
- ;;^UTILITY(U,$J,358.3,30919,1,0)
+ ;;^UTILITY(U,$J,358.3,29680,1,3,0)
+ ;;=3^Oophoritis,Chronic
+ ;;^UTILITY(U,$J,358.3,29680,1,4,0)
+ ;;=4^N70.12
+ ;;^UTILITY(U,$J,358.3,29680,2)
+ ;;=^5015805
+ ;;^UTILITY(U,$J,358.3,29681,0)
+ ;;=N70.11^^115^1479^17
+ ;;^UTILITY(U,$J,358.3,29681,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30919,1,3,0)
- ;;=3^Tear of Left Knee Medial Meniscus,Current Injury,Init Encntr NEC
- ;;^UTILITY(U,$J,358.3,30919,1,4,0)
- ;;=4^S83.242A
- ;;^UTILITY(U,$J,358.3,30919,2)
- ;;=^5137058
- ;;^UTILITY(U,$J,358.3,30920,0)
- ;;=S83.241A^^179^1934^40
- ;;^UTILITY(U,$J,358.3,30920,1,0)
+ ;;^UTILITY(U,$J,358.3,29681,1,3,0)
+ ;;=3^Salpingitis,Chronic
+ ;;^UTILITY(U,$J,358.3,29681,1,4,0)
+ ;;=4^N70.11
+ ;;^UTILITY(U,$J,358.3,29681,2)
+ ;;=^5015804
+ ;;^UTILITY(U,$J,358.3,29682,0)
+ ;;=N70.13^^115^1479^16
+ ;;^UTILITY(U,$J,358.3,29682,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,30920,1,3,0)
- ;;=3^Tear of Right Knee Medial Meniscus,Current Injry,Init Encntr NEC
- ;;^UTILITY(U,$J,358.3,30920,1,4,0)
- ;;=4^S83.241A
+ ;;^UTILITY(U,$J,358.3,29682,1,3,0)
+ ;;=3^Salpingitis and Oophoritis,Chronic
+ ;;^UTILITY(U,$J,358.3,29682,1,4,0)
+ ;;=4^N70.13
+ ;;^UTILITY(U,$J,358.3,29682,2)
+ ;;=^270466
+ ;;^UTILITY(U,$J,358.3,29683,0)
+ ;;=N83.1^^115^1479^5
+ ;;^UTILITY(U,$J,358.3,29683,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29683,1,3,0)
+ ;;=3^Corpus Luteum Cyst
+ ;;^UTILITY(U,$J,358.3,29683,1,4,0)
+ ;;=4^N83.1
+ ;;^UTILITY(U,$J,358.3,29683,2)
+ ;;=^28631
