@@ -1,134 +1,280 @@
-IBDEI0C3 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0C3 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,5212,0)
- ;;=I50.40^^40^357^15
- ;;^UTILITY(U,$J,358.3,5212,1,0)
+ ;;^UTILITY(U,$J,358.3,12115,1,4,0)
+ ;;=4^D03.62
+ ;;^UTILITY(U,$J,358.3,12115,2)
+ ;;=^5001903
+ ;;^UTILITY(U,$J,358.3,12116,0)
+ ;;=D03.71^^56^646^30
+ ;;^UTILITY(U,$J,358.3,12116,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5212,1,3,0)
- ;;=3^Combined Systolic/Diastolic Hrt Failure,Unspec
- ;;^UTILITY(U,$J,358.3,5212,1,4,0)
- ;;=4^I50.40
- ;;^UTILITY(U,$J,358.3,5212,2)
- ;;=^5007247
- ;;^UTILITY(U,$J,358.3,5213,0)
- ;;=I50.41^^40^357^2
- ;;^UTILITY(U,$J,358.3,5213,1,0)
+ ;;^UTILITY(U,$J,358.3,12116,1,3,0)
+ ;;=3^Melanoma in Situ of Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,12116,1,4,0)
+ ;;=4^D03.71
+ ;;^UTILITY(U,$J,358.3,12116,2)
+ ;;=^5001905
+ ;;^UTILITY(U,$J,358.3,12117,0)
+ ;;=D03.72^^56^646^24
+ ;;^UTILITY(U,$J,358.3,12117,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5213,1,3,0)
- ;;=3^Acute Combined Systolic/Diastolic Hrt Failure
- ;;^UTILITY(U,$J,358.3,5213,1,4,0)
- ;;=4^I50.41
- ;;^UTILITY(U,$J,358.3,5213,2)
- ;;=^5007248
- ;;^UTILITY(U,$J,358.3,5214,0)
- ;;=I50.30^^40^357^16
- ;;^UTILITY(U,$J,358.3,5214,1,0)
+ ;;^UTILITY(U,$J,358.3,12117,1,3,0)
+ ;;=3^Melanoma in Situ of Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,12117,1,4,0)
+ ;;=4^D03.72
+ ;;^UTILITY(U,$J,358.3,12117,2)
+ ;;=^5001906
+ ;;^UTILITY(U,$J,358.3,12118,0)
+ ;;=D03.8^^56^646^27
+ ;;^UTILITY(U,$J,358.3,12118,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5214,1,3,0)
- ;;=3^Diastolic Heart Failure,Unspec
- ;;^UTILITY(U,$J,358.3,5214,1,4,0)
- ;;=4^I50.30
- ;;^UTILITY(U,$J,358.3,5214,2)
- ;;=^5007243
- ;;^UTILITY(U,$J,358.3,5215,0)
- ;;=I50.31^^40^357^3
- ;;^UTILITY(U,$J,358.3,5215,1,0)
+ ;;^UTILITY(U,$J,358.3,12118,1,3,0)
+ ;;=3^Melanoma in Situ of Other Sites
+ ;;^UTILITY(U,$J,358.3,12118,1,4,0)
+ ;;=4^D03.8
+ ;;^UTILITY(U,$J,358.3,12118,2)
+ ;;=^5001907
+ ;;^UTILITY(U,$J,358.3,12119,0)
+ ;;=C4A.0^^56^647^8
+ ;;^UTILITY(U,$J,358.3,12119,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5215,1,3,0)
- ;;=3^Acute Diastolic Heart Failure
- ;;^UTILITY(U,$J,358.3,5215,1,4,0)
- ;;=4^I50.31
- ;;^UTILITY(U,$J,358.3,5215,2)
- ;;=^5007244
- ;;^UTILITY(U,$J,358.3,5216,0)
- ;;=I50.32^^40^357^13
- ;;^UTILITY(U,$J,358.3,5216,1,0)
+ ;;^UTILITY(U,$J,358.3,12119,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Lip
+ ;;^UTILITY(U,$J,358.3,12119,1,4,0)
+ ;;=4^C4A.0
+ ;;^UTILITY(U,$J,358.3,12119,2)
+ ;;=^5001137
+ ;;^UTILITY(U,$J,358.3,12120,0)
+ ;;=C4A.11^^56^647^12
+ ;;^UTILITY(U,$J,358.3,12120,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5216,1,3,0)
- ;;=3^Chronic Diastolic Heart Failure
- ;;^UTILITY(U,$J,358.3,5216,1,4,0)
- ;;=4^I50.32
- ;;^UTILITY(U,$J,358.3,5216,2)
- ;;=^5007245
- ;;^UTILITY(U,$J,358.3,5217,0)
- ;;=I50.33^^40^357^6
- ;;^UTILITY(U,$J,358.3,5217,1,0)
+ ;;^UTILITY(U,$J,358.3,12120,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Right Eyelid
+ ;;^UTILITY(U,$J,358.3,12120,1,4,0)
+ ;;=4^C4A.11
+ ;;^UTILITY(U,$J,358.3,12120,2)
+ ;;=^5001139
+ ;;^UTILITY(U,$J,358.3,12121,0)
+ ;;=C4A.12^^56^647^5
+ ;;^UTILITY(U,$J,358.3,12121,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5217,1,3,0)
- ;;=3^Acute on Chronic Diastolic Heart Failure
- ;;^UTILITY(U,$J,358.3,5217,1,4,0)
- ;;=4^I50.33
- ;;^UTILITY(U,$J,358.3,5217,2)
- ;;=^5007246
- ;;^UTILITY(U,$J,358.3,5218,0)
- ;;=I50.21^^40^357^4
- ;;^UTILITY(U,$J,358.3,5218,1,0)
+ ;;^UTILITY(U,$J,358.3,12121,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Left Eyelid
+ ;;^UTILITY(U,$J,358.3,12121,1,4,0)
+ ;;=4^C4A.12
+ ;;^UTILITY(U,$J,358.3,12121,2)
+ ;;=^5001140
+ ;;^UTILITY(U,$J,358.3,12122,0)
+ ;;=C4A.21^^56^647^11
+ ;;^UTILITY(U,$J,358.3,12122,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5218,1,3,0)
- ;;=3^Acute Systolic Heart Failure
- ;;^UTILITY(U,$J,358.3,5218,1,4,0)
- ;;=4^I50.21
- ;;^UTILITY(U,$J,358.3,5218,2)
- ;;=^5007240
- ;;^UTILITY(U,$J,358.3,5219,0)
- ;;=I50.22^^40^357^14
- ;;^UTILITY(U,$J,358.3,5219,1,0)
+ ;;^UTILITY(U,$J,358.3,12122,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Right Ear/External Auric Canal
+ ;;^UTILITY(U,$J,358.3,12122,1,4,0)
+ ;;=4^C4A.21
+ ;;^UTILITY(U,$J,358.3,12122,2)
+ ;;=^5001142
+ ;;^UTILITY(U,$J,358.3,12123,0)
+ ;;=C4A.22^^56^647^4
+ ;;^UTILITY(U,$J,358.3,12123,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5219,1,3,0)
- ;;=3^Chronic Systolic Heart Failure
- ;;^UTILITY(U,$J,358.3,5219,1,4,0)
- ;;=4^I50.22
- ;;^UTILITY(U,$J,358.3,5219,2)
- ;;=^5007241
- ;;^UTILITY(U,$J,358.3,5220,0)
- ;;=I50.23^^40^357^7
- ;;^UTILITY(U,$J,358.3,5220,1,0)
+ ;;^UTILITY(U,$J,358.3,12123,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Left Ear/External Auric Canal
+ ;;^UTILITY(U,$J,358.3,12123,1,4,0)
+ ;;=4^C4A.22
+ ;;^UTILITY(U,$J,358.3,12123,2)
+ ;;=^5001143
+ ;;^UTILITY(U,$J,358.3,12124,0)
+ ;;=C4A.30^^56^647^3
+ ;;^UTILITY(U,$J,358.3,12124,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5220,1,3,0)
- ;;=3^Acute on Chronic Systolic Heart Failure
- ;;^UTILITY(U,$J,358.3,5220,1,4,0)
- ;;=4^I50.23
- ;;^UTILITY(U,$J,358.3,5220,2)
- ;;=^5007242
- ;;^UTILITY(U,$J,358.3,5221,0)
- ;;=I50.20^^40^357^28
- ;;^UTILITY(U,$J,358.3,5221,1,0)
+ ;;^UTILITY(U,$J,358.3,12124,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Face,Unspec
+ ;;^UTILITY(U,$J,358.3,12124,1,4,0)
+ ;;=4^C4A.30
+ ;;^UTILITY(U,$J,358.3,12124,2)
+ ;;=^5001144
+ ;;^UTILITY(U,$J,358.3,12125,0)
+ ;;=C4A.31^^56^647^9
+ ;;^UTILITY(U,$J,358.3,12125,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5221,1,3,0)
- ;;=3^Systolic Heart Failure,Unspec
- ;;^UTILITY(U,$J,358.3,5221,1,4,0)
- ;;=4^I50.20
- ;;^UTILITY(U,$J,358.3,5221,2)
- ;;=^5007239
- ;;^UTILITY(U,$J,358.3,5222,0)
- ;;=I65.23^^40^357^23
- ;;^UTILITY(U,$J,358.3,5222,1,0)
+ ;;^UTILITY(U,$J,358.3,12125,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Nose
+ ;;^UTILITY(U,$J,358.3,12125,1,4,0)
+ ;;=4^C4A.31
+ ;;^UTILITY(U,$J,358.3,12125,2)
+ ;;=^5001145
+ ;;^UTILITY(U,$J,358.3,12126,0)
+ ;;=C4A.39^^56^647^2
+ ;;^UTILITY(U,$J,358.3,12126,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5222,1,3,0)
- ;;=3^Occlusion/Stenosis of Bilateral Carotid Arteries
- ;;^UTILITY(U,$J,358.3,5222,1,4,0)
- ;;=4^I65.23
- ;;^UTILITY(U,$J,358.3,5222,2)
- ;;=^5007362
- ;;^UTILITY(U,$J,358.3,5223,0)
- ;;=I65.22^^40^357^24
- ;;^UTILITY(U,$J,358.3,5223,1,0)
+ ;;^UTILITY(U,$J,358.3,12126,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Face NEC
+ ;;^UTILITY(U,$J,358.3,12126,1,4,0)
+ ;;=4^C4A.39
+ ;;^UTILITY(U,$J,358.3,12126,2)
+ ;;=^5001146
+ ;;^UTILITY(U,$J,358.3,12127,0)
+ ;;=C4A.4^^56^647^15
+ ;;^UTILITY(U,$J,358.3,12127,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5223,1,3,0)
- ;;=3^Occlusion/Stenosis of Left Carotid Artery
- ;;^UTILITY(U,$J,358.3,5223,1,4,0)
- ;;=4^I65.22
- ;;^UTILITY(U,$J,358.3,5223,2)
- ;;=^5007361
- ;;^UTILITY(U,$J,358.3,5224,0)
- ;;=I65.21^^40^357^26
- ;;^UTILITY(U,$J,358.3,5224,1,0)
+ ;;^UTILITY(U,$J,358.3,12127,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Scalp/Neck
+ ;;^UTILITY(U,$J,358.3,12127,1,4,0)
+ ;;=4^C4A.4
+ ;;^UTILITY(U,$J,358.3,12127,2)
+ ;;=^5001147
+ ;;^UTILITY(U,$J,358.3,12128,0)
+ ;;=C4A.51^^56^647^1
+ ;;^UTILITY(U,$J,358.3,12128,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5224,1,3,0)
- ;;=3^Occlusion/Stenosis of Right Carotid Artery
- ;;^UTILITY(U,$J,358.3,5224,1,4,0)
- ;;=4^I65.21
- ;;^UTILITY(U,$J,358.3,5224,2)
- ;;=^5007360
+ ;;^UTILITY(U,$J,358.3,12128,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Anal Skin
+ ;;^UTILITY(U,$J,358.3,12128,1,4,0)
+ ;;=4^C4A.51
+ ;;^UTILITY(U,$J,358.3,12128,2)
+ ;;=^5001148
+ ;;^UTILITY(U,$J,358.3,12129,0)
+ ;;=C4A.52^^56^647^16
+ ;;^UTILITY(U,$J,358.3,12129,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12129,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Skin of Breast
+ ;;^UTILITY(U,$J,358.3,12129,1,4,0)
+ ;;=4^C4A.52
+ ;;^UTILITY(U,$J,358.3,12129,2)
+ ;;=^5001149
+ ;;^UTILITY(U,$J,358.3,12130,0)
+ ;;=C4A.59^^56^647^17
+ ;;^UTILITY(U,$J,358.3,12130,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12130,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Trunk NEC
+ ;;^UTILITY(U,$J,358.3,12130,1,4,0)
+ ;;=4^C4A.59
+ ;;^UTILITY(U,$J,358.3,12130,2)
+ ;;=^5001150
+ ;;^UTILITY(U,$J,358.3,12131,0)
+ ;;=C4A.61^^56^647^14
+ ;;^UTILITY(U,$J,358.3,12131,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12131,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,12131,1,4,0)
+ ;;=4^C4A.61
+ ;;^UTILITY(U,$J,358.3,12131,2)
+ ;;=^5001152
+ ;;^UTILITY(U,$J,358.3,12132,0)
+ ;;=C4A.62^^56^647^7
+ ;;^UTILITY(U,$J,358.3,12132,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12132,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,12132,1,4,0)
+ ;;=4^C4A.62
+ ;;^UTILITY(U,$J,358.3,12132,2)
+ ;;=^5001153
+ ;;^UTILITY(U,$J,358.3,12133,0)
+ ;;=C4A.71^^56^647^13
+ ;;^UTILITY(U,$J,358.3,12133,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12133,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,12133,1,4,0)
+ ;;=4^C4A.71
+ ;;^UTILITY(U,$J,358.3,12133,2)
+ ;;=^5001155
+ ;;^UTILITY(U,$J,358.3,12134,0)
+ ;;=C4A.72^^56^647^6
+ ;;^UTILITY(U,$J,358.3,12134,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12134,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,12134,1,4,0)
+ ;;=4^C4A.72
+ ;;^UTILITY(U,$J,358.3,12134,2)
+ ;;=^5001156
+ ;;^UTILITY(U,$J,358.3,12135,0)
+ ;;=C4A.8^^56^647^10
+ ;;^UTILITY(U,$J,358.3,12135,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12135,1,3,0)
+ ;;=3^Merkel Cell Carcinoma of Overlapping Sites
+ ;;^UTILITY(U,$J,358.3,12135,1,4,0)
+ ;;=4^C4A.8
+ ;;^UTILITY(U,$J,358.3,12135,2)
+ ;;=^5001157
+ ;;^UTILITY(U,$J,358.3,12136,0)
+ ;;=C4A.9^^56^647^18
+ ;;^UTILITY(U,$J,358.3,12136,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12136,1,3,0)
+ ;;=3^Merkel Cell Carcinoma,Unspec
+ ;;^UTILITY(U,$J,358.3,12136,1,4,0)
+ ;;=4^C4A.9
+ ;;^UTILITY(U,$J,358.3,12136,2)
+ ;;=^5001158
+ ;;^UTILITY(U,$J,358.3,12137,0)
+ ;;=S01.20XA^^56^648^33
+ ;;^UTILITY(U,$J,358.3,12137,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12137,1,3,0)
+ ;;=3^Open Wound of Nose,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12137,1,4,0)
+ ;;=4^S01.20XA
+ ;;^UTILITY(U,$J,358.3,12137,2)
+ ;;=^5020090
+ ;;^UTILITY(U,$J,358.3,12138,0)
+ ;;=S01.00XA^^56^648^62
+ ;;^UTILITY(U,$J,358.3,12138,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12138,1,3,0)
+ ;;=3^Open Wound of Scalp,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12138,1,4,0)
+ ;;=4^S01.00XA
+ ;;^UTILITY(U,$J,358.3,12138,2)
+ ;;=^5020033
+ ;;^UTILITY(U,$J,358.3,12139,0)
+ ;;=S01.402A^^56^648^7
+ ;;^UTILITY(U,$J,358.3,12139,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12139,1,3,0)
+ ;;=3^Open Wound of Left Cheek/TMJ Area,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12139,1,4,0)
+ ;;=4^S01.402A
+ ;;^UTILITY(U,$J,358.3,12139,2)
+ ;;=^5020150
+ ;;^UTILITY(U,$J,358.3,12140,0)
+ ;;=S01.401A^^56^648^38
+ ;;^UTILITY(U,$J,358.3,12140,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12140,1,3,0)
+ ;;=3^Open Wound of Right Cheek/TMJ Area,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12140,1,4,0)
+ ;;=4^S01.401A
+ ;;^UTILITY(U,$J,358.3,12140,2)
+ ;;=^5020147
+ ;;^UTILITY(U,$J,358.3,12141,0)
+ ;;=S01.80XA^^56^648^1
+ ;;^UTILITY(U,$J,358.3,12141,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12141,1,3,0)
+ ;;=3^Open Wound of Head NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12141,1,4,0)
+ ;;=4^S01.80XA
+ ;;^UTILITY(U,$J,358.3,12141,2)
+ ;;=^5020222
+ ;;^UTILITY(U,$J,358.3,12142,0)
+ ;;=S01.90XA^^56^648^2
+ ;;^UTILITY(U,$J,358.3,12142,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12142,1,3,0)
+ ;;=3^Open Wound of Head,Unspec,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12142,1,4,0)
+ ;;=4^S01.90XA
+ ;;^UTILITY(U,$J,358.3,12142,2)
+ ;;=^5020240
+ ;;^UTILITY(U,$J,358.3,12143,0)
+ ;;=S11.80XA^^56^648^31

@@ -1,138 +1,62 @@
-IBDEI168 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI168 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
+ Q:'DIFQ(358.5)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,19566,1,3,0)
- ;;=3^COPD w/ Acute Exacerbation
- ;;^UTILITY(U,$J,358.3,19566,1,4,0)
- ;;=4^J44.1
- ;;^UTILITY(U,$J,358.3,19566,2)
- ;;=^5008240
- ;;^UTILITY(U,$J,358.3,19567,0)
- ;;=J42.^^94^926^10
- ;;^UTILITY(U,$J,358.3,19567,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19567,1,3,0)
- ;;=3^Bronchitis,Unspec Chronic
- ;;^UTILITY(U,$J,358.3,19567,1,4,0)
- ;;=4^J42.
- ;;^UTILITY(U,$J,358.3,19567,2)
- ;;=^5008234
- ;;^UTILITY(U,$J,358.3,19568,0)
- ;;=J43.9^^94^926^22
- ;;^UTILITY(U,$J,358.3,19568,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19568,1,3,0)
- ;;=3^Emphysema,Unspec
- ;;^UTILITY(U,$J,358.3,19568,1,4,0)
- ;;=4^J43.9
- ;;^UTILITY(U,$J,358.3,19568,2)
- ;;=^5008238
- ;;^UTILITY(U,$J,358.3,19569,0)
- ;;=J43.0^^94^926^30
- ;;^UTILITY(U,$J,358.3,19569,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19569,1,3,0)
- ;;=3^MacLeod's Syndrome
- ;;^UTILITY(U,$J,358.3,19569,1,4,0)
- ;;=4^J43.0
- ;;^UTILITY(U,$J,358.3,19569,2)
- ;;=^5008235
- ;;^UTILITY(U,$J,358.3,19570,0)
- ;;=J43.1^^94^926^21
- ;;^UTILITY(U,$J,358.3,19570,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19570,1,3,0)
- ;;=3^Emphysema,Panlobular
- ;;^UTILITY(U,$J,358.3,19570,1,4,0)
- ;;=4^J43.1
- ;;^UTILITY(U,$J,358.3,19570,2)
- ;;=^5008236
- ;;^UTILITY(U,$J,358.3,19571,0)
- ;;=J43.2^^94^926^19
- ;;^UTILITY(U,$J,358.3,19571,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19571,1,3,0)
- ;;=3^Emphysema,Centrilobular
- ;;^UTILITY(U,$J,358.3,19571,1,4,0)
- ;;=4^J43.2
- ;;^UTILITY(U,$J,358.3,19571,2)
- ;;=^5008237
- ;;^UTILITY(U,$J,358.3,19572,0)
- ;;=J43.8^^94^926^20
- ;;^UTILITY(U,$J,358.3,19572,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19572,1,3,0)
- ;;=3^Emphysema,Other
- ;;^UTILITY(U,$J,358.3,19572,1,4,0)
- ;;=4^J43.8
- ;;^UTILITY(U,$J,358.3,19572,2)
- ;;=^87569
- ;;^UTILITY(U,$J,358.3,19573,0)
- ;;=J45.902^^94^926^4
- ;;^UTILITY(U,$J,358.3,19573,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19573,1,3,0)
- ;;=3^Asthma w/ Status Asthmaticus,Unspec
- ;;^UTILITY(U,$J,358.3,19573,1,4,0)
- ;;=4^J45.902
- ;;^UTILITY(U,$J,358.3,19573,2)
- ;;=^5008255
- ;;^UTILITY(U,$J,358.3,19574,0)
- ;;=J45.901^^94^926^3
- ;;^UTILITY(U,$J,358.3,19574,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19574,1,3,0)
- ;;=3^Asthma w/ Acute Exacerbation,Unspec
- ;;^UTILITY(U,$J,358.3,19574,1,4,0)
- ;;=4^J45.901
- ;;^UTILITY(U,$J,358.3,19574,2)
- ;;=^5008254
- ;;^UTILITY(U,$J,358.3,19575,0)
- ;;=J47.9^^94^926^9
- ;;^UTILITY(U,$J,358.3,19575,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19575,1,3,0)
- ;;=3^Bronchiectasis,Uncomplicated
- ;;^UTILITY(U,$J,358.3,19575,1,4,0)
- ;;=4^J47.9
- ;;^UTILITY(U,$J,358.3,19575,2)
- ;;=^5008260
- ;;^UTILITY(U,$J,358.3,19576,0)
- ;;=J47.1^^94^926^7
- ;;^UTILITY(U,$J,358.3,19576,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19576,1,3,0)
- ;;=3^Bronchiectasis w/ Acute Exacerbation
- ;;^UTILITY(U,$J,358.3,19576,1,4,0)
- ;;=4^J47.1
- ;;^UTILITY(U,$J,358.3,19576,2)
- ;;=^5008259
- ;;^UTILITY(U,$J,358.3,19577,0)
- ;;=J47.0^^94^926^8
- ;;^UTILITY(U,$J,358.3,19577,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19577,1,3,0)
- ;;=3^Bronchiectasis w/ Acute Lower Respiratory Infection
- ;;^UTILITY(U,$J,358.3,19577,1,4,0)
- ;;=4^J47.0
- ;;^UTILITY(U,$J,358.3,19577,2)
- ;;=^5008258
- ;;^UTILITY(U,$J,358.3,19578,0)
- ;;=R09.1^^94^926^37
- ;;^UTILITY(U,$J,358.3,19578,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19578,1,3,0)
- ;;=3^Pleurisy
- ;;^UTILITY(U,$J,358.3,19578,1,4,0)
- ;;=4^R09.1
- ;;^UTILITY(U,$J,358.3,19578,2)
- ;;=^95428
- ;;^UTILITY(U,$J,358.3,19579,0)
- ;;=J94.9^^94^926^33
- ;;^UTILITY(U,$J,358.3,19579,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19579,1,3,0)
- ;;=3^Pleural Condition,Unspec
- ;;^UTILITY(U,$J,358.3,19579,1,4,0)
- ;;=4^J94.9
+ ;;^DIC(358.5,0,"GL")
+ ;;=^IBE(358.5,
+ ;;^DIC("B","IMP/EXP DATA FIELD",358.5)
+ ;;=
+ ;;^DIC(358.5,"%D",0)
+ ;;=^^1^1^2940829^^^^
+ ;;^DIC(358.5,"%D",1,0)
+ ;;=Used by the import/export utility as a workspace.
+ ;;^DIC(358.5,"%D",2,0)
+ ;;= 
+ ;;^DIC(358.5,"%D",3,0)
+ ;;= 
+ ;;^DIC(358.5,"%D",4,0)
+ ;;=This file is nearly identical to file #357.5. It is used by the
+ ;;^DIC(358.5,"%D",5,0)
+ ;;=Import/Export Utility as a temporary staging area for data from that file
+ ;;^DIC(358.5,"%D",6,0)
+ ;;=that is being imported or exported.
+ ;;^DD(358.5,0)
+ ;;=FIELD^^2^13
+ ;;^DD(358.5,0,"DDA")
+ ;;=N
+ ;;^DD(358.5,0,"DT")
+ ;;=2930730
+ ;;^DD(358.5,0,"ID",.02)
+ ;;=W ""
+ ;;^DD(358.5,0,"ID",.03)
+ ;;=W ""
+ ;;^DD(358.5,0,"IX","B",358.5,.01)
+ ;;=
+ ;;^DD(358.5,0,"IX","C",358.5,.02)
+ ;;=
+ ;;^DD(358.5,0,"NM","IMP/EXP DATA FIELD")
+ ;;=
+ ;;^DD(358.5,0,"VRPK")
+ ;;=IBD
+ ;;^DD(358.5,.01,0)
+ ;;=NAME^RF^^0;1^K:$L(X)>30!($L(X)<3)!'(X'?1P.E) X
+ ;;^DD(358.5,.01,1,0)
+ ;;=^.1
+ ;;^DD(358.5,.01,1,1,0)
+ ;;=358.5^B
+ ;;^DD(358.5,.01,1,1,1)
+ ;;=S ^IBE(358.5,"B",$E(X,1,30),DA)=""
+ ;;^DD(358.5,.01,1,1,2)
+ ;;=K ^IBE(358.5,"B",$E(X,1,30),DA)
+ ;;^DD(358.5,.01,3)
+ ;;=Answer must be 3-30 characters in length.
+ ;;^DD(358.5,.01,21,0)
+ ;;=^^3^3^2930419^^^
+ ;;^DD(358.5,.01,21,1,0)
+ ;;= 
+ ;;^DD(358.5,.01,21,2,0)
+ ;;=The name is used to identify the field within a block. It can be anything
+ ;;^DD(358.5,.01,21,3,0)
+ ;;=the designer of a form wants it to be.
+ ;;^DD(358.5,.01,"DT")
+ ;;=2930419

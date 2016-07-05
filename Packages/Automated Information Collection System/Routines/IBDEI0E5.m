@@ -1,128 +1,284 @@
-IBDEI0E5 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0E5 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6173,1,0)
+ ;;^UTILITY(U,$J,358.3,14139,1,4,0)
+ ;;=4^I70.741
+ ;;^UTILITY(U,$J,358.3,14139,2)
+ ;;=^5133601
+ ;;^UTILITY(U,$J,358.3,14140,0)
+ ;;=I70.742^^61^729^76
+ ;;^UTILITY(U,$J,358.3,14140,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6173,1,3,0)
- ;;=3^Urinary Incontinence,Unspec
- ;;^UTILITY(U,$J,358.3,6173,1,4,0)
- ;;=4^R32.
- ;;^UTILITY(U,$J,358.3,6173,2)
- ;;=^5019329
- ;;^UTILITY(U,$J,358.3,6174,0)
- ;;=R35.0^^40^384^19
- ;;^UTILITY(U,$J,358.3,6174,1,0)
+ ;;^UTILITY(U,$J,358.3,14140,1,3,0)
+ ;;=3^Athscl of Bypass Graft of Left Leg w/ Calf Ulcer
+ ;;^UTILITY(U,$J,358.3,14140,1,4,0)
+ ;;=4^I70.742
+ ;;^UTILITY(U,$J,358.3,14140,2)
+ ;;=^5133602
+ ;;^UTILITY(U,$J,358.3,14141,0)
+ ;;=I70.743^^61^729^75
+ ;;^UTILITY(U,$J,358.3,14141,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6174,1,3,0)
- ;;=3^Frequency of Micturition
- ;;^UTILITY(U,$J,358.3,6174,1,4,0)
- ;;=4^R35.0
- ;;^UTILITY(U,$J,358.3,6174,2)
- ;;=^5019334
- ;;^UTILITY(U,$J,358.3,6175,0)
- ;;=I83.019^^40^385^21
- ;;^UTILITY(U,$J,358.3,6175,1,0)
+ ;;^UTILITY(U,$J,358.3,14141,1,3,0)
+ ;;=3^Athscl of Bypass Graft of Left Leg w/ Ankle Ulcer
+ ;;^UTILITY(U,$J,358.3,14141,1,4,0)
+ ;;=4^I70.743
+ ;;^UTILITY(U,$J,358.3,14141,2)
+ ;;=^5133603
+ ;;^UTILITY(U,$J,358.3,14142,0)
+ ;;=I70.744^^61^729^77
+ ;;^UTILITY(U,$J,358.3,14142,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6175,1,3,0)
- ;;=3^Varicose Veins of Right Lower Extremity w/ Ulcer
- ;;^UTILITY(U,$J,358.3,6175,1,4,0)
- ;;=4^I83.019
- ;;^UTILITY(U,$J,358.3,6175,2)
- ;;=^5007979
- ;;^UTILITY(U,$J,358.3,6176,0)
- ;;=I83.029^^40^385^12
- ;;^UTILITY(U,$J,358.3,6176,1,0)
+ ;;^UTILITY(U,$J,358.3,14142,1,3,0)
+ ;;=3^Athscl of Bypass Graft of Left Leg w/ Heel/Midfoot Ulcer
+ ;;^UTILITY(U,$J,358.3,14142,1,4,0)
+ ;;=4^I70.744
+ ;;^UTILITY(U,$J,358.3,14142,2)
+ ;;=^5133604
+ ;;^UTILITY(U,$J,358.3,14143,0)
+ ;;=I70.745^^61^729^78
+ ;;^UTILITY(U,$J,358.3,14143,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6176,1,3,0)
- ;;=3^Varicose Veins of Left Lower Extremity w/ Ulcer
- ;;^UTILITY(U,$J,358.3,6176,1,4,0)
- ;;=4^I83.029
- ;;^UTILITY(U,$J,358.3,6176,2)
- ;;=^5007986
- ;;^UTILITY(U,$J,358.3,6177,0)
- ;;=I83.014^^40^385^13
- ;;^UTILITY(U,$J,358.3,6177,1,0)
+ ;;^UTILITY(U,$J,358.3,14143,1,3,0)
+ ;;=3^Athscl of Bypass Graft of Left Leg w/ Oth Part Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,14143,1,4,0)
+ ;;=4^I70.745
+ ;;^UTILITY(U,$J,358.3,14143,2)
+ ;;=^5133605
+ ;;^UTILITY(U,$J,358.3,14144,0)
+ ;;=I83.009^^61^729^287
+ ;;^UTILITY(U,$J,358.3,14144,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6177,1,3,0)
- ;;=3^Varicose Veins of Right Lower Extrem w/ Heel/Midfoot Ulcer
- ;;^UTILITY(U,$J,358.3,6177,1,4,0)
- ;;=4^I83.014
- ;;^UTILITY(U,$J,358.3,6177,2)
- ;;=^5007976
- ;;^UTILITY(U,$J,358.3,6178,0)
- ;;=I83.013^^40^385^14
- ;;^UTILITY(U,$J,358.3,6178,1,0)
+ ;;^UTILITY(U,$J,358.3,14144,1,3,0)
+ ;;=3^Varicose Veins of Lower Extremity w/ Ulcer
+ ;;^UTILITY(U,$J,358.3,14144,1,4,0)
+ ;;=4^I83.009
+ ;;^UTILITY(U,$J,358.3,14144,2)
+ ;;=^5007972
+ ;;^UTILITY(U,$J,358.3,14145,0)
+ ;;=H65.03^^61^730^3
+ ;;^UTILITY(U,$J,358.3,14145,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6178,1,3,0)
- ;;=3^Varicose Veins of Right Lower Extrem w/ Ankle Ulcer
- ;;^UTILITY(U,$J,358.3,6178,1,4,0)
- ;;=4^I83.013
- ;;^UTILITY(U,$J,358.3,6178,2)
- ;;=^5007975
- ;;^UTILITY(U,$J,358.3,6179,0)
- ;;=I83.012^^40^385^15
- ;;^UTILITY(U,$J,358.3,6179,1,0)
+ ;;^UTILITY(U,$J,358.3,14145,1,3,0)
+ ;;=3^Acute Serous Otitis Media,Bilateral
+ ;;^UTILITY(U,$J,358.3,14145,1,4,0)
+ ;;=4^H65.03
+ ;;^UTILITY(U,$J,358.3,14145,2)
+ ;;=^5006572
+ ;;^UTILITY(U,$J,358.3,14146,0)
+ ;;=H65.01^^61^730^5
+ ;;^UTILITY(U,$J,358.3,14146,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6179,1,3,0)
- ;;=3^Varicose Veins of Right Lower Extrem w/ Calf Ulcer
- ;;^UTILITY(U,$J,358.3,6179,1,4,0)
- ;;=4^I83.012
- ;;^UTILITY(U,$J,358.3,6179,2)
- ;;=^5007974
- ;;^UTILITY(U,$J,358.3,6180,0)
- ;;=I83.011^^40^385^16
- ;;^UTILITY(U,$J,358.3,6180,1,0)
+ ;;^UTILITY(U,$J,358.3,14146,1,3,0)
+ ;;=3^Acute Serous Otitis Media,Right Ear
+ ;;^UTILITY(U,$J,358.3,14146,1,4,0)
+ ;;=4^H65.01
+ ;;^UTILITY(U,$J,358.3,14146,2)
+ ;;=^5006570
+ ;;^UTILITY(U,$J,358.3,14147,0)
+ ;;=H65.23^^61^730^15
+ ;;^UTILITY(U,$J,358.3,14147,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6180,1,3,0)
- ;;=3^Varicose Veins of Right Lower Extrem w/ Thigh Ulcer
- ;;^UTILITY(U,$J,358.3,6180,1,4,0)
- ;;=4^I83.011
- ;;^UTILITY(U,$J,358.3,6180,2)
- ;;=^5007973
- ;;^UTILITY(U,$J,358.3,6181,0)
- ;;=I83.018^^40^385^17
- ;;^UTILITY(U,$J,358.3,6181,1,0)
+ ;;^UTILITY(U,$J,358.3,14147,1,3,0)
+ ;;=3^Chronic Serous Otitis Media,Bilateral
+ ;;^UTILITY(U,$J,358.3,14147,1,4,0)
+ ;;=4^H65.23
+ ;;^UTILITY(U,$J,358.3,14147,2)
+ ;;=^5006596
+ ;;^UTILITY(U,$J,358.3,14148,0)
+ ;;=H65.22^^61^730^16
+ ;;^UTILITY(U,$J,358.3,14148,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6181,1,3,0)
- ;;=3^Varicose Veins of Right Lower Extrem w/ Lower Leg Ulcer
- ;;^UTILITY(U,$J,358.3,6181,1,4,0)
- ;;=4^I83.018
- ;;^UTILITY(U,$J,358.3,6181,2)
- ;;=^5007978
- ;;^UTILITY(U,$J,358.3,6182,0)
- ;;=I83.015^^40^385^18
- ;;^UTILITY(U,$J,358.3,6182,1,0)
+ ;;^UTILITY(U,$J,358.3,14148,1,3,0)
+ ;;=3^Chronic Serous Otitis Media,Left Ear
+ ;;^UTILITY(U,$J,358.3,14148,1,4,0)
+ ;;=4^H65.22
+ ;;^UTILITY(U,$J,358.3,14148,2)
+ ;;=^5006595
+ ;;^UTILITY(U,$J,358.3,14149,0)
+ ;;=H65.21^^61^730^17
+ ;;^UTILITY(U,$J,358.3,14149,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6182,1,3,0)
- ;;=3^Varicose Veins of Right Lower Extrem w/ Foot Ulcer
- ;;^UTILITY(U,$J,358.3,6182,1,4,0)
- ;;=4^I83.015
- ;;^UTILITY(U,$J,358.3,6182,2)
- ;;=^5007977
- ;;^UTILITY(U,$J,358.3,6183,0)
- ;;=I83.019^^40^385^19
- ;;^UTILITY(U,$J,358.3,6183,1,0)
+ ;;^UTILITY(U,$J,358.3,14149,1,3,0)
+ ;;=3^Chronic Serous Otitis Media,Right Ear
+ ;;^UTILITY(U,$J,358.3,14149,1,4,0)
+ ;;=4^H65.21
+ ;;^UTILITY(U,$J,358.3,14149,2)
+ ;;=^5006594
+ ;;^UTILITY(U,$J,358.3,14150,0)
+ ;;=H66.012^^61^730^6
+ ;;^UTILITY(U,$J,358.3,14150,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6183,1,3,0)
- ;;=3^Varicose Veins of Right Lower Extrem w/ Ulcer,Unspec Site
- ;;^UTILITY(U,$J,358.3,6183,1,4,0)
- ;;=4^I83.019
- ;;^UTILITY(U,$J,358.3,6183,2)
- ;;=^5007979
- ;;^UTILITY(U,$J,358.3,6184,0)
- ;;=I83.11^^40^385^20
- ;;^UTILITY(U,$J,358.3,6184,1,0)
+ ;;^UTILITY(U,$J,358.3,14150,1,3,0)
+ ;;=3^Acute Suppr Otitis Media w/ Spon Rupt Ear Drum,Left Ear
+ ;;^UTILITY(U,$J,358.3,14150,1,4,0)
+ ;;=4^H66.012
+ ;;^UTILITY(U,$J,358.3,14150,2)
+ ;;=^5133534
+ ;;^UTILITY(U,$J,358.3,14151,0)
+ ;;=H66.011^^61^730^7
+ ;;^UTILITY(U,$J,358.3,14151,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6184,1,3,0)
- ;;=3^Varicose Veins of Right Lower Extrem w/ Inflammation
- ;;^UTILITY(U,$J,358.3,6184,1,4,0)
- ;;=4^I83.11
- ;;^UTILITY(U,$J,358.3,6184,2)
- ;;=^5007988
- ;;^UTILITY(U,$J,358.3,6185,0)
- ;;=I83.91^^40^385^3
- ;;^UTILITY(U,$J,358.3,6185,1,0)
+ ;;^UTILITY(U,$J,358.3,14151,1,3,0)
+ ;;=3^Acute Suppr Otitis Media w/ Spon Rupt Ear Drum,Right Ear
+ ;;^UTILITY(U,$J,358.3,14151,1,4,0)
+ ;;=4^H66.011
+ ;;^UTILITY(U,$J,358.3,14151,2)
+ ;;=^5006621
+ ;;^UTILITY(U,$J,358.3,14152,0)
+ ;;=H66.91^^61^730^36
+ ;;^UTILITY(U,$J,358.3,14152,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6185,1,3,0)
- ;;=3^Asymptomatic Varicose Veins of Right Lower Extrem 
+ ;;^UTILITY(U,$J,358.3,14152,1,3,0)
+ ;;=3^Otitis Media,Unspec,Right Ear
+ ;;^UTILITY(U,$J,358.3,14152,1,4,0)
+ ;;=4^H66.91
+ ;;^UTILITY(U,$J,358.3,14152,2)
+ ;;=^5006640
+ ;;^UTILITY(U,$J,358.3,14153,0)
+ ;;=H66.92^^61^730^35
+ ;;^UTILITY(U,$J,358.3,14153,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14153,1,3,0)
+ ;;=3^Otitis Media,Unspec,Left Ear
+ ;;^UTILITY(U,$J,358.3,14153,1,4,0)
+ ;;=4^H66.92
+ ;;^UTILITY(U,$J,358.3,14153,2)
+ ;;=^5006641
+ ;;^UTILITY(U,$J,358.3,14154,0)
+ ;;=H66.93^^61^730^34
+ ;;^UTILITY(U,$J,358.3,14154,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14154,1,3,0)
+ ;;=3^Otitis Media,Unspec,Bilateral
+ ;;^UTILITY(U,$J,358.3,14154,1,4,0)
+ ;;=4^H66.93
+ ;;^UTILITY(U,$J,358.3,14154,2)
+ ;;=^5006642
+ ;;^UTILITY(U,$J,358.3,14155,0)
+ ;;=H81.10^^61^730^37
+ ;;^UTILITY(U,$J,358.3,14155,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14155,1,3,0)
+ ;;=3^Paroxysmal Veritgo,Benign,Unspec Ear
+ ;;^UTILITY(U,$J,358.3,14155,1,4,0)
+ ;;=4^H81.10
+ ;;^UTILITY(U,$J,358.3,14155,2)
+ ;;=^5006864
+ ;;^UTILITY(U,$J,358.3,14156,0)
+ ;;=H93.13^^61^730^38
+ ;;^UTILITY(U,$J,358.3,14156,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14156,1,3,0)
+ ;;=3^Tinnitus,Bilateral
+ ;;^UTILITY(U,$J,358.3,14156,1,4,0)
+ ;;=4^H93.13
+ ;;^UTILITY(U,$J,358.3,14156,2)
+ ;;=^5006966
+ ;;^UTILITY(U,$J,358.3,14157,0)
+ ;;=H93.12^^61^730^39
+ ;;^UTILITY(U,$J,358.3,14157,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14157,1,3,0)
+ ;;=3^Tinnitus,Left Ear
+ ;;^UTILITY(U,$J,358.3,14157,1,4,0)
+ ;;=4^H93.12
+ ;;^UTILITY(U,$J,358.3,14157,2)
+ ;;=^5006965
+ ;;^UTILITY(U,$J,358.3,14158,0)
+ ;;=H93.11^^61^730^40
+ ;;^UTILITY(U,$J,358.3,14158,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14158,1,3,0)
+ ;;=3^Tinnitus,Right Ear
+ ;;^UTILITY(U,$J,358.3,14158,1,4,0)
+ ;;=4^H93.11
+ ;;^UTILITY(U,$J,358.3,14158,2)
+ ;;=^5006964
+ ;;^UTILITY(U,$J,358.3,14159,0)
+ ;;=H92.01^^61^730^33
+ ;;^UTILITY(U,$J,358.3,14159,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14159,1,3,0)
+ ;;=3^Otalgia,Right Ear
+ ;;^UTILITY(U,$J,358.3,14159,1,4,0)
+ ;;=4^H92.01
+ ;;^UTILITY(U,$J,358.3,14159,2)
+ ;;=^5006945
+ ;;^UTILITY(U,$J,358.3,14160,0)
+ ;;=H92.02^^61^730^32
+ ;;^UTILITY(U,$J,358.3,14160,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14160,1,3,0)
+ ;;=3^Otalgia,Left Ear
+ ;;^UTILITY(U,$J,358.3,14160,1,4,0)
+ ;;=4^H92.02
+ ;;^UTILITY(U,$J,358.3,14160,2)
+ ;;=^5006946
+ ;;^UTILITY(U,$J,358.3,14161,0)
+ ;;=H92.03^^61^730^31
+ ;;^UTILITY(U,$J,358.3,14161,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14161,1,3,0)
+ ;;=3^Otalgia,Bilateral
+ ;;^UTILITY(U,$J,358.3,14161,1,4,0)
+ ;;=4^H92.03
+ ;;^UTILITY(U,$J,358.3,14161,2)
+ ;;=^5006947
+ ;;^UTILITY(U,$J,358.3,14162,0)
+ ;;=H91.92^^61^730^22
+ ;;^UTILITY(U,$J,358.3,14162,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14162,1,3,0)
+ ;;=3^Hearing Loss,Unspec,Left Ear
+ ;;^UTILITY(U,$J,358.3,14162,1,4,0)
+ ;;=4^H91.92
+ ;;^UTILITY(U,$J,358.3,14162,2)
+ ;;=^5133554
+ ;;^UTILITY(U,$J,358.3,14163,0)
+ ;;=H91.93^^61^730^21
+ ;;^UTILITY(U,$J,358.3,14163,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14163,1,3,0)
+ ;;=3^Hearing Loss,Unspec,Bilateral
+ ;;^UTILITY(U,$J,358.3,14163,1,4,0)
+ ;;=4^H91.93
+ ;;^UTILITY(U,$J,358.3,14163,2)
+ ;;=^5006944
+ ;;^UTILITY(U,$J,358.3,14164,0)
+ ;;=H91.91^^61^730^23
+ ;;^UTILITY(U,$J,358.3,14164,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14164,1,3,0)
+ ;;=3^Hearing Loss,Unspec,Right Ear
+ ;;^UTILITY(U,$J,358.3,14164,1,4,0)
+ ;;=4^H91.91
+ ;;^UTILITY(U,$J,358.3,14164,2)
+ ;;=^5133553
+ ;;^UTILITY(U,$J,358.3,14165,0)
+ ;;=H65.02^^61^730^4
+ ;;^UTILITY(U,$J,358.3,14165,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14165,1,3,0)
+ ;;=3^Acute Serous Otitis Media,Left Ear
+ ;;^UTILITY(U,$J,358.3,14165,1,4,0)
+ ;;=4^H65.02
+ ;;^UTILITY(U,$J,358.3,14165,2)
+ ;;=^5006571
+ ;;^UTILITY(U,$J,358.3,14166,0)
+ ;;=H60.312^^61^730^19
+ ;;^UTILITY(U,$J,358.3,14166,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14166,1,3,0)
+ ;;=3^Diffuse Otitis Externa,Left Ear
+ ;;^UTILITY(U,$J,358.3,14166,1,4,0)
+ ;;=4^H60.312
+ ;;^UTILITY(U,$J,358.3,14166,2)
+ ;;=^5006448
+ ;;^UTILITY(U,$J,358.3,14167,0)
+ ;;=H60.311^^61^730^20
+ ;;^UTILITY(U,$J,358.3,14167,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14167,1,3,0)
+ ;;=3^Diffuse Otitis Externa,Right Ear

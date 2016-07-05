@@ -1,132 +1,288 @@
-IBDEI13M ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI13M ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18347,1,3,0)
- ;;=3^Xerosis Cutis
- ;;^UTILITY(U,$J,358.3,18347,1,4,0)
- ;;=4^L85.3
- ;;^UTILITY(U,$J,358.3,18347,2)
- ;;=^5009323
- ;;^UTILITY(U,$J,358.3,18348,0)
- ;;=L86.^^94^905^164
- ;;^UTILITY(U,$J,358.3,18348,1,0)
+ ;;^UTILITY(U,$J,358.3,39885,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18348,1,3,0)
- ;;=3^Keratoderma in Diseases Classified Elsewhere
- ;;^UTILITY(U,$J,358.3,18348,1,4,0)
- ;;=4^L86.
- ;;^UTILITY(U,$J,358.3,18348,2)
- ;;=^5009326
- ;;^UTILITY(U,$J,358.3,18349,0)
- ;;=L87.0^^94^905^165
- ;;^UTILITY(U,$J,358.3,18349,1,0)
+ ;;^UTILITY(U,$J,358.3,39885,1,3,0)
+ ;;=3^Wheezing
+ ;;^UTILITY(U,$J,358.3,39885,1,4,0)
+ ;;=4^R06.2
+ ;;^UTILITY(U,$J,358.3,39885,2)
+ ;;=^5019184
+ ;;^UTILITY(U,$J,358.3,39886,0)
+ ;;=J44.0^^148^1957^13
+ ;;^UTILITY(U,$J,358.3,39886,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18349,1,3,0)
- ;;=3^Keratosis Follicularis et Parafollicularis in Cutem Penetrans
- ;;^UTILITY(U,$J,358.3,18349,1,4,0)
- ;;=4^L87.0
- ;;^UTILITY(U,$J,358.3,18349,2)
- ;;=^5009327
- ;;^UTILITY(U,$J,358.3,18350,0)
- ;;=L87.2^^94^905^141
- ;;^UTILITY(U,$J,358.3,18350,1,0)
+ ;;^UTILITY(U,$J,358.3,39886,1,3,0)
+ ;;=3^COPD w/ Acute Lower Respiratory Infection
+ ;;^UTILITY(U,$J,358.3,39886,1,4,0)
+ ;;=4^J44.0
+ ;;^UTILITY(U,$J,358.3,39886,2)
+ ;;=^5008239
+ ;;^UTILITY(U,$J,358.3,39887,0)
+ ;;=J94.1^^148^1957^23
+ ;;^UTILITY(U,$J,358.3,39887,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18350,1,3,0)
- ;;=3^Elastosis Perforans Serpiginosa
- ;;^UTILITY(U,$J,358.3,18350,1,4,0)
- ;;=4^L87.2
- ;;^UTILITY(U,$J,358.3,18350,2)
- ;;=^5009329
- ;;^UTILITY(U,$J,358.3,18351,0)
- ;;=L89.300^^94^905^242
- ;;^UTILITY(U,$J,358.3,18351,1,0)
+ ;;^UTILITY(U,$J,358.3,39887,1,3,0)
+ ;;=3^Fibrothorax
+ ;;^UTILITY(U,$J,358.3,39887,1,4,0)
+ ;;=4^J94.1
+ ;;^UTILITY(U,$J,358.3,39887,2)
+ ;;=^5008317
+ ;;^UTILITY(U,$J,358.3,39888,0)
+ ;;=G47.33^^148^1957^31
+ ;;^UTILITY(U,$J,358.3,39888,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18351,1,3,0)
- ;;=3^Pressure Ulcer of Buttock,Unstageable
- ;;^UTILITY(U,$J,358.3,18351,1,4,0)
- ;;=4^L89.300
- ;;^UTILITY(U,$J,358.3,18351,2)
- ;;=^5009389
- ;;^UTILITY(U,$J,358.3,18352,0)
- ;;=L89.301^^94^905^237
- ;;^UTILITY(U,$J,358.3,18352,1,0)
+ ;;^UTILITY(U,$J,358.3,39888,1,3,0)
+ ;;=3^Obstructive Sleep Apnea
+ ;;^UTILITY(U,$J,358.3,39888,1,4,0)
+ ;;=4^G47.33
+ ;;^UTILITY(U,$J,358.3,39888,2)
+ ;;=^332763
+ ;;^UTILITY(U,$J,358.3,39889,0)
+ ;;=R91.1^^148^1957^55
+ ;;^UTILITY(U,$J,358.3,39889,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18352,1,3,0)
- ;;=3^Pressure Ulcer of Buttock,Stage 1
- ;;^UTILITY(U,$J,358.3,18352,1,4,0)
- ;;=4^L89.301
- ;;^UTILITY(U,$J,358.3,18352,2)
- ;;=^5009390
- ;;^UTILITY(U,$J,358.3,18353,0)
- ;;=L89.302^^94^905^238
- ;;^UTILITY(U,$J,358.3,18353,1,0)
+ ;;^UTILITY(U,$J,358.3,39889,1,3,0)
+ ;;=3^Solitary Pulmonary Nodule
+ ;;^UTILITY(U,$J,358.3,39889,1,4,0)
+ ;;=4^R91.1
+ ;;^UTILITY(U,$J,358.3,39889,2)
+ ;;=^5019707
+ ;;^UTILITY(U,$J,358.3,39890,0)
+ ;;=T74.21XA^^148^1958^1
+ ;;^UTILITY(U,$J,358.3,39890,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18353,1,3,0)
- ;;=3^Pressure Ulcer of Buttock,Stage 2
- ;;^UTILITY(U,$J,358.3,18353,1,4,0)
- ;;=4^L89.302
- ;;^UTILITY(U,$J,358.3,18353,2)
- ;;=^5009391
- ;;^UTILITY(U,$J,358.3,18354,0)
- ;;=L89.303^^94^905^239
- ;;^UTILITY(U,$J,358.3,18354,1,0)
+ ;;^UTILITY(U,$J,358.3,39890,1,3,0)
+ ;;=3^Adult Sexual Abuse,Confirmed,Init Encntr
+ ;;^UTILITY(U,$J,358.3,39890,1,4,0)
+ ;;=4^T74.21XA
+ ;;^UTILITY(U,$J,358.3,39890,2)
+ ;;=^5054152
+ ;;^UTILITY(U,$J,358.3,39891,0)
+ ;;=T76.21XA^^148^1958^4
+ ;;^UTILITY(U,$J,358.3,39891,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18354,1,3,0)
- ;;=3^Pressure Ulcer of Buttock,Stage 3
- ;;^UTILITY(U,$J,358.3,18354,1,4,0)
- ;;=4^L89.303
- ;;^UTILITY(U,$J,358.3,18354,2)
- ;;=^5009392
- ;;^UTILITY(U,$J,358.3,18355,0)
- ;;=L89.304^^94^905^240
- ;;^UTILITY(U,$J,358.3,18355,1,0)
+ ;;^UTILITY(U,$J,358.3,39891,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Init Encntr
+ ;;^UTILITY(U,$J,358.3,39891,1,4,0)
+ ;;=4^T76.21XA
+ ;;^UTILITY(U,$J,358.3,39891,2)
+ ;;=^5054227
+ ;;^UTILITY(U,$J,358.3,39892,0)
+ ;;=Y07.9^^148^1958^9
+ ;;^UTILITY(U,$J,358.3,39892,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18355,1,3,0)
- ;;=3^Pressure Ulcer of Buttock,Stage 4
- ;;^UTILITY(U,$J,358.3,18355,1,4,0)
- ;;=4^L89.304
- ;;^UTILITY(U,$J,358.3,18355,2)
- ;;=^5009393
- ;;^UTILITY(U,$J,358.3,18356,0)
- ;;=L89.309^^94^905^241
- ;;^UTILITY(U,$J,358.3,18356,1,0)
+ ;;^UTILITY(U,$J,358.3,39892,1,3,0)
+ ;;=3^Perpetrator of Maltreatment/Neglect,Unspec
+ ;;^UTILITY(U,$J,358.3,39892,1,4,0)
+ ;;=4^Y07.9
+ ;;^UTILITY(U,$J,358.3,39892,2)
+ ;;=^5061209
+ ;;^UTILITY(U,$J,358.3,39893,0)
+ ;;=T74.21XD^^148^1958^3
+ ;;^UTILITY(U,$J,358.3,39893,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18356,1,3,0)
- ;;=3^Pressure Ulcer of Buttock,Stage Unspec
- ;;^UTILITY(U,$J,358.3,18356,1,4,0)
- ;;=4^L89.309
- ;;^UTILITY(U,$J,358.3,18356,2)
- ;;=^5133672
- ;;^UTILITY(U,$J,358.3,18357,0)
- ;;=L89.90^^94^905^247
- ;;^UTILITY(U,$J,358.3,18357,1,0)
+ ;;^UTILITY(U,$J,358.3,39893,1,3,0)
+ ;;=3^Adult Sexual Abuse,Confirmed,Sub Encntr
+ ;;^UTILITY(U,$J,358.3,39893,1,4,0)
+ ;;=4^T74.21XD
+ ;;^UTILITY(U,$J,358.3,39893,2)
+ ;;=^5054153
+ ;;^UTILITY(U,$J,358.3,39894,0)
+ ;;=T74.21XS^^148^1958^2
+ ;;^UTILITY(U,$J,358.3,39894,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18357,1,3,0)
- ;;=3^Pressure Ulcer of Unspec Site,Unspec Stage
- ;;^UTILITY(U,$J,358.3,18357,1,4,0)
- ;;=4^L89.90
- ;;^UTILITY(U,$J,358.3,18357,2)
- ;;=^5133666
- ;;^UTILITY(U,$J,358.3,18358,0)
- ;;=L89.91^^94^905^243
- ;;^UTILITY(U,$J,358.3,18358,1,0)
+ ;;^UTILITY(U,$J,358.3,39894,1,3,0)
+ ;;=3^Adult Sexual Abuse,Confirmed,Sequela
+ ;;^UTILITY(U,$J,358.3,39894,1,4,0)
+ ;;=4^T74.21XS
+ ;;^UTILITY(U,$J,358.3,39894,2)
+ ;;=^5054154
+ ;;^UTILITY(U,$J,358.3,39895,0)
+ ;;=T76.21XD^^148^1958^6
+ ;;^UTILITY(U,$J,358.3,39895,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18358,1,3,0)
- ;;=3^Pressure Ulcer of Unspec Site,Stage 1
- ;;^UTILITY(U,$J,358.3,18358,1,4,0)
- ;;=4^L89.91
- ;;^UTILITY(U,$J,358.3,18358,2)
- ;;=^5133664
- ;;^UTILITY(U,$J,358.3,18359,0)
- ;;=L89.92^^94^905^244
- ;;^UTILITY(U,$J,358.3,18359,1,0)
+ ;;^UTILITY(U,$J,358.3,39895,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Sub Encntr
+ ;;^UTILITY(U,$J,358.3,39895,1,4,0)
+ ;;=4^T76.21XD
+ ;;^UTILITY(U,$J,358.3,39895,2)
+ ;;=^5054228
+ ;;^UTILITY(U,$J,358.3,39896,0)
+ ;;=T76.21XS^^148^1958^5
+ ;;^UTILITY(U,$J,358.3,39896,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18359,1,3,0)
- ;;=3^Pressure Ulcer of Unspec Site,Stage 2
- ;;^UTILITY(U,$J,358.3,18359,1,4,0)
- ;;=4^L89.92
- ;;^UTILITY(U,$J,358.3,18359,2)
- ;;=^5133667
- ;;^UTILITY(U,$J,358.3,18360,0)
- ;;=L89.93^^94^905^245
+ ;;^UTILITY(U,$J,358.3,39896,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Sequela
+ ;;^UTILITY(U,$J,358.3,39896,1,4,0)
+ ;;=4^T76.21XS
+ ;;^UTILITY(U,$J,358.3,39896,2)
+ ;;=^5054229
+ ;;^UTILITY(U,$J,358.3,39897,0)
+ ;;=Y07.53^^148^1958^7
+ ;;^UTILITY(U,$J,358.3,39897,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39897,1,3,0)
+ ;;=3^Instructor,Perpetrator of MST
+ ;;^UTILITY(U,$J,358.3,39897,1,4,0)
+ ;;=4^Y07.53
+ ;;^UTILITY(U,$J,358.3,39897,2)
+ ;;=^5061207
+ ;;^UTILITY(U,$J,358.3,39898,0)
+ ;;=Y07.59^^148^1958^8
+ ;;^UTILITY(U,$J,358.3,39898,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39898,1,3,0)
+ ;;=3^Non-Family Member,Perpetrator of MST/Abuse NEC
+ ;;^UTILITY(U,$J,358.3,39898,1,4,0)
+ ;;=4^Y07.59
+ ;;^UTILITY(U,$J,358.3,39898,2)
+ ;;=^5061208
+ ;;^UTILITY(U,$J,358.3,39899,0)
+ ;;=E66.01^^148^1959^120
+ ;;^UTILITY(U,$J,358.3,39899,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39899,1,3,0)
+ ;;=3^Morbid Obesity
+ ;;^UTILITY(U,$J,358.3,39899,1,4,0)
+ ;;=4^E66.01
+ ;;^UTILITY(U,$J,358.3,39899,2)
+ ;;=^5002826
+ ;;^UTILITY(U,$J,358.3,39900,0)
+ ;;=F18.10^^148^1959^95
+ ;;^UTILITY(U,$J,358.3,39900,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39900,1,3,0)
+ ;;=3^Inhalant Abuse,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,39900,1,4,0)
+ ;;=4^F18.10
+ ;;^UTILITY(U,$J,358.3,39900,2)
+ ;;=^5003380
+ ;;^UTILITY(U,$J,358.3,39901,0)
+ ;;=F55.0^^148^1959^38
+ ;;^UTILITY(U,$J,358.3,39901,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39901,1,3,0)
+ ;;=3^Antacid Abuse
+ ;;^UTILITY(U,$J,358.3,39901,1,4,0)
+ ;;=4^F55.0
+ ;;^UTILITY(U,$J,358.3,39901,2)
+ ;;=^5003628
+ ;;^UTILITY(U,$J,358.3,39902,0)
+ ;;=F18.90^^148^1959^96
+ ;;^UTILITY(U,$J,358.3,39902,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39902,1,3,0)
+ ;;=3^Inhalant Use Uncomplicated,Unspec
+ ;;^UTILITY(U,$J,358.3,39902,1,4,0)
+ ;;=4^F18.90
+ ;;^UTILITY(U,$J,358.3,39902,2)
+ ;;=^5003405
+ ;;^UTILITY(U,$J,358.3,39903,0)
+ ;;=F55.2^^148^1959^102
+ ;;^UTILITY(U,$J,358.3,39903,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39903,1,3,0)
+ ;;=3^Laxative Abuse
+ ;;^UTILITY(U,$J,358.3,39903,1,4,0)
+ ;;=4^F55.2
+ ;;^UTILITY(U,$J,358.3,39903,2)
+ ;;=^5003630
+ ;;^UTILITY(U,$J,358.3,39904,0)
+ ;;=F55.1^^148^1959^81
+ ;;^UTILITY(U,$J,358.3,39904,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39904,1,3,0)
+ ;;=3^Herbal/Folk Remedy Abuse
+ ;;^UTILITY(U,$J,358.3,39904,1,4,0)
+ ;;=4^F55.1
+ ;;^UTILITY(U,$J,358.3,39904,2)
+ ;;=^5003629
+ ;;^UTILITY(U,$J,358.3,39905,0)
+ ;;=F55.8^^148^1959^124
+ ;;^UTILITY(U,$J,358.3,39905,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39905,1,3,0)
+ ;;=3^Non-Psychoactive Substance Abuse
+ ;;^UTILITY(U,$J,358.3,39905,1,4,0)
+ ;;=4^F55.8
+ ;;^UTILITY(U,$J,358.3,39905,2)
+ ;;=^5003633
+ ;;^UTILITY(U,$J,358.3,39906,0)
+ ;;=F55.4^^148^1959^161
+ ;;^UTILITY(U,$J,358.3,39906,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39906,1,3,0)
+ ;;=3^Vitamin Abuse
+ ;;^UTILITY(U,$J,358.3,39906,1,4,0)
+ ;;=4^F55.4
+ ;;^UTILITY(U,$J,358.3,39906,2)
+ ;;=^5003632
+ ;;^UTILITY(U,$J,358.3,39907,0)
+ ;;=F55.3^^148^1959^151
+ ;;^UTILITY(U,$J,358.3,39907,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39907,1,3,0)
+ ;;=3^Steroid/Hormone Abuse
+ ;;^UTILITY(U,$J,358.3,39907,1,4,0)
+ ;;=4^F55.3
+ ;;^UTILITY(U,$J,358.3,39907,2)
+ ;;=^5003631
+ ;;^UTILITY(U,$J,358.3,39908,0)
+ ;;=F51.09^^148^1959^97
+ ;;^UTILITY(U,$J,358.3,39908,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39908,1,3,0)
+ ;;=3^Insomnia not d/t Substance/Known Physiol Condition
+ ;;^UTILITY(U,$J,358.3,39908,1,4,0)
+ ;;=4^F51.09
+ ;;^UTILITY(U,$J,358.3,39908,2)
+ ;;=^5003608
+ ;;^UTILITY(U,$J,358.3,39909,0)
+ ;;=H53.9^^148^1959^159
+ ;;^UTILITY(U,$J,358.3,39909,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39909,1,3,0)
+ ;;=3^Visual Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,39909,1,4,0)
+ ;;=4^H53.9
+ ;;^UTILITY(U,$J,358.3,39909,2)
+ ;;=^124001
+ ;;^UTILITY(U,$J,358.3,39910,0)
+ ;;=I89.0^^148^1959^113
+ ;;^UTILITY(U,$J,358.3,39910,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39910,1,3,0)
+ ;;=3^Lymphedema NEC
+ ;;^UTILITY(U,$J,358.3,39910,1,4,0)
+ ;;=4^I89.0
+ ;;^UTILITY(U,$J,358.3,39910,2)
+ ;;=^5008073
+ ;;^UTILITY(U,$J,358.3,39911,0)
+ ;;=I87.1^^148^1959^158
+ ;;^UTILITY(U,$J,358.3,39911,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39911,1,3,0)
+ ;;=3^Vein Compression
+ ;;^UTILITY(U,$J,358.3,39911,1,4,0)
+ ;;=4^I87.1
+ ;;^UTILITY(U,$J,358.3,39911,2)
+ ;;=^269850
+ ;;^UTILITY(U,$J,358.3,39912,0)
+ ;;=K08.8^^148^1959^60
+ ;;^UTILITY(U,$J,358.3,39912,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39912,1,3,0)
+ ;;=3^Disorder of Teeth/Supporting Structures,Oth Specified
+ ;;^UTILITY(U,$J,358.3,39912,1,4,0)
+ ;;=4^K08.8
+ ;;^UTILITY(U,$J,358.3,39912,2)
+ ;;=^5008467
+ ;;^UTILITY(U,$J,358.3,39913,0)
+ ;;=N39.3^^148^1959^152
+ ;;^UTILITY(U,$J,358.3,39913,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39913,1,3,0)
+ ;;=3^Stress Incontinence (Female/Male)

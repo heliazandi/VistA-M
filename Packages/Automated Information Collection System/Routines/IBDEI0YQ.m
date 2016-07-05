@@ -1,116 +1,276 @@
-IBDEI0YQ ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0YQ ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15990,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Index Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15990,1,4,0)
- ;;=4^S61.330A
- ;;^UTILITY(U,$J,358.3,15990,2)
- ;;=^5032936
- ;;^UTILITY(U,$J,358.3,15991,0)
- ;;=S61.230A^^85^830^48
- ;;^UTILITY(U,$J,358.3,15991,1,0)
+ ;;^UTILITY(U,$J,358.3,34950,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15991,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Index Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15991,1,4,0)
- ;;=4^S61.230A
- ;;^UTILITY(U,$J,358.3,15991,2)
- ;;=^5032816
- ;;^UTILITY(U,$J,358.3,15992,0)
- ;;=S91.234A^^85^830^50
- ;;^UTILITY(U,$J,358.3,15992,1,0)
+ ;;^UTILITY(U,$J,358.3,34950,1,3,0)
+ ;;=3^Cerebral Infarction d/t Right Middle Cerebral Artery Occls/Stenosis
+ ;;^UTILITY(U,$J,358.3,34950,1,4,0)
+ ;;=4^I63.511
+ ;;^UTILITY(U,$J,358.3,34950,2)
+ ;;=^5007344
+ ;;^UTILITY(U,$J,358.3,34951,0)
+ ;;=I63.521^^125^1651^9
+ ;;^UTILITY(U,$J,358.3,34951,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15992,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Lesser Toe(s) w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15992,1,4,0)
- ;;=4^S91.234A
- ;;^UTILITY(U,$J,358.3,15992,2)
- ;;=^5044296
- ;;^UTILITY(U,$J,358.3,15993,0)
- ;;=S91.134A^^85^830^51
- ;;^UTILITY(U,$J,358.3,15993,1,0)
+ ;;^UTILITY(U,$J,358.3,34951,1,3,0)
+ ;;=3^Cerebral Infarction d/t Right Anterior Cerebral Artery Occls/Stenosis
+ ;;^UTILITY(U,$J,358.3,34951,1,4,0)
+ ;;=4^I63.521
+ ;;^UTILITY(U,$J,358.3,34951,2)
+ ;;=^5007346
+ ;;^UTILITY(U,$J,358.3,34952,0)
+ ;;=I63.531^^125^1651^12
+ ;;^UTILITY(U,$J,358.3,34952,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15993,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Lesser Toe(s) w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15993,1,4,0)
- ;;=4^S91.134A
- ;;^UTILITY(U,$J,358.3,15993,2)
- ;;=^5044222
- ;;^UTILITY(U,$J,358.3,15994,0)
- ;;=S61.336A^^85^830^52
- ;;^UTILITY(U,$J,358.3,15994,1,0)
+ ;;^UTILITY(U,$J,358.3,34952,1,3,0)
+ ;;=3^Cerebral Infarction d/t Right Posterior Cerebral Artery Occls/Stenosis
+ ;;^UTILITY(U,$J,358.3,34952,1,4,0)
+ ;;=4^I63.531
+ ;;^UTILITY(U,$J,358.3,34952,2)
+ ;;=^5007348
+ ;;^UTILITY(U,$J,358.3,34953,0)
+ ;;=I63.541^^125^1651^10
+ ;;^UTILITY(U,$J,358.3,34953,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15994,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Little Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15994,1,4,0)
- ;;=4^S61.336A
- ;;^UTILITY(U,$J,358.3,15994,2)
- ;;=^5032954
- ;;^UTILITY(U,$J,358.3,15995,0)
- ;;=S61.236A^^85^830^53
- ;;^UTILITY(U,$J,358.3,15995,1,0)
+ ;;^UTILITY(U,$J,358.3,34953,1,3,0)
+ ;;=3^Cerebral Infarction d/t Right Cerebellar Artery Occls/Stenosis
+ ;;^UTILITY(U,$J,358.3,34953,1,4,0)
+ ;;=4^I63.541
+ ;;^UTILITY(U,$J,358.3,34953,2)
+ ;;=^5007350
+ ;;^UTILITY(U,$J,358.3,34954,0)
+ ;;=G45.9^^125^1651^23
+ ;;^UTILITY(U,$J,358.3,34954,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15995,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Little Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15995,1,4,0)
- ;;=4^S61.236A
- ;;^UTILITY(U,$J,358.3,15995,2)
- ;;=^5032834
- ;;^UTILITY(U,$J,358.3,15996,0)
- ;;=S61.332A^^85^830^55
- ;;^UTILITY(U,$J,358.3,15996,1,0)
+ ;;^UTILITY(U,$J,358.3,34954,1,3,0)
+ ;;=3^Transient Cerebral Ischemic Attack,Unspec
+ ;;^UTILITY(U,$J,358.3,34954,1,4,0)
+ ;;=4^G45.9
+ ;;^UTILITY(U,$J,358.3,34954,2)
+ ;;=^5003959
+ ;;^UTILITY(U,$J,358.3,34955,0)
+ ;;=Z86.73^^125^1651^16
+ ;;^UTILITY(U,$J,358.3,34955,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15996,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Middle Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15996,1,4,0)
- ;;=4^S61.332A
- ;;^UTILITY(U,$J,358.3,15996,2)
- ;;=^5032942
- ;;^UTILITY(U,$J,358.3,15997,0)
- ;;=S61.232A^^85^830^56
- ;;^UTILITY(U,$J,358.3,15997,1,0)
+ ;;^UTILITY(U,$J,358.3,34955,1,3,0)
+ ;;=3^Hx of TIA and Cerebral Infarction w/o Residual Deficits
+ ;;^UTILITY(U,$J,358.3,34955,1,4,0)
+ ;;=4^Z86.73
+ ;;^UTILITY(U,$J,358.3,34955,2)
+ ;;=^5063477
+ ;;^UTILITY(U,$J,358.3,34956,0)
+ ;;=G82.50^^125^1651^21
+ ;;^UTILITY(U,$J,358.3,34956,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15997,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Middle Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15997,1,4,0)
- ;;=4^S61.232A
- ;;^UTILITY(U,$J,358.3,15997,2)
- ;;=^5032822
- ;;^UTILITY(U,$J,358.3,15998,0)
- ;;=S61.334A^^85^830^57
- ;;^UTILITY(U,$J,358.3,15998,1,0)
+ ;;^UTILITY(U,$J,358.3,34956,1,3,0)
+ ;;=3^Quadriplegia,Unspec
+ ;;^UTILITY(U,$J,358.3,34956,1,4,0)
+ ;;=4^G82.50
+ ;;^UTILITY(U,$J,358.3,34956,2)
+ ;;=^5004128
+ ;;^UTILITY(U,$J,358.3,34957,0)
+ ;;=R76.11^^125^1652^1
+ ;;^UTILITY(U,$J,358.3,34957,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15998,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Ring Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15998,1,4,0)
- ;;=4^S61.334A
- ;;^UTILITY(U,$J,358.3,15998,2)
- ;;=^5032948
- ;;^UTILITY(U,$J,358.3,15999,0)
- ;;=S61.234A^^85^830^58
- ;;^UTILITY(U,$J,358.3,15999,1,0)
+ ;;^UTILITY(U,$J,358.3,34957,1,3,0)
+ ;;=3^Abnormal Reaction to Tuberculin Test
+ ;;^UTILITY(U,$J,358.3,34957,1,4,0)
+ ;;=4^R76.11
+ ;;^UTILITY(U,$J,358.3,34957,2)
+ ;;=^5019570
+ ;;^UTILITY(U,$J,358.3,34958,0)
+ ;;=J47.1^^125^1652^7
+ ;;^UTILITY(U,$J,358.3,34958,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15999,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Ring Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15999,1,4,0)
- ;;=4^S61.234A
- ;;^UTILITY(U,$J,358.3,15999,2)
- ;;=^5032828
- ;;^UTILITY(U,$J,358.3,16000,0)
- ;;=S61.131A^^85^830^62
- ;;^UTILITY(U,$J,358.3,16000,1,0)
+ ;;^UTILITY(U,$J,358.3,34958,1,3,0)
+ ;;=3^Bronchiectasis w/ Exacerbation
+ ;;^UTILITY(U,$J,358.3,34958,1,4,0)
+ ;;=4^J47.1
+ ;;^UTILITY(U,$J,358.3,34958,2)
+ ;;=^5008259
+ ;;^UTILITY(U,$J,358.3,34959,0)
+ ;;=J47.0^^125^1652^6
+ ;;^UTILITY(U,$J,358.3,34959,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16000,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Thumb w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,16000,1,4,0)
- ;;=4^S61.131A
- ;;^UTILITY(U,$J,358.3,16000,2)
- ;;=^5032732
- ;;^UTILITY(U,$J,358.3,16001,0)
- ;;=S91.032A^^85^830^5
- ;;^UTILITY(U,$J,358.3,16001,1,0)
+ ;;^UTILITY(U,$J,358.3,34959,1,3,0)
+ ;;=3^Bronchiectasis w/ Acute Lower Respiratory Infection
+ ;;^UTILITY(U,$J,358.3,34959,1,4,0)
+ ;;=4^J47.0
+ ;;^UTILITY(U,$J,358.3,34959,2)
+ ;;=^5008258
+ ;;^UTILITY(U,$J,358.3,34960,0)
+ ;;=J47.9^^125^1652^8
+ ;;^UTILITY(U,$J,358.3,34960,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16001,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Ankle,Init Encntr
+ ;;^UTILITY(U,$J,358.3,34960,1,3,0)
+ ;;=3^Bronchiectasis,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,34960,1,4,0)
+ ;;=4^J47.9
+ ;;^UTILITY(U,$J,358.3,34960,2)
+ ;;=^5008260
+ ;;^UTILITY(U,$J,358.3,34961,0)
+ ;;=J43.2^^125^1652^12
+ ;;^UTILITY(U,$J,358.3,34961,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34961,1,3,0)
+ ;;=3^Centrilobular Emphysema
+ ;;^UTILITY(U,$J,358.3,34961,1,4,0)
+ ;;=4^J43.2
+ ;;^UTILITY(U,$J,358.3,34961,2)
+ ;;=^5008237
+ ;;^UTILITY(U,$J,358.3,34962,0)
+ ;;=J44.1^^125^1652^10
+ ;;^UTILITY(U,$J,358.3,34962,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34962,1,3,0)
+ ;;=3^COPD w/ Exacerbation
+ ;;^UTILITY(U,$J,358.3,34962,1,4,0)
+ ;;=4^J44.1
+ ;;^UTILITY(U,$J,358.3,34962,2)
+ ;;=^5008240
+ ;;^UTILITY(U,$J,358.3,34963,0)
+ ;;=J44.0^^125^1652^9
+ ;;^UTILITY(U,$J,358.3,34963,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34963,1,3,0)
+ ;;=3^COPD w/ Acute Lower Respiratory Infection
+ ;;^UTILITY(U,$J,358.3,34963,1,4,0)
+ ;;=4^J44.0
+ ;;^UTILITY(U,$J,358.3,34963,2)
+ ;;=^5008239
+ ;;^UTILITY(U,$J,358.3,34964,0)
+ ;;=J44.9^^125^1652^11
+ ;;^UTILITY(U,$J,358.3,34964,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34964,1,3,0)
+ ;;=3^COPD,Unspec
+ ;;^UTILITY(U,$J,358.3,34964,1,4,0)
+ ;;=4^J44.9
+ ;;^UTILITY(U,$J,358.3,34964,2)
+ ;;=^5008241
+ ;;^UTILITY(U,$J,358.3,34965,0)
+ ;;=J45.991^^125^1652^14
+ ;;^UTILITY(U,$J,358.3,34965,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34965,1,3,0)
+ ;;=3^Cough Variant Asthma
+ ;;^UTILITY(U,$J,358.3,34965,1,4,0)
+ ;;=4^J45.991
+ ;;^UTILITY(U,$J,358.3,34965,2)
+ ;;=^329927
+ ;;^UTILITY(U,$J,358.3,34966,0)
+ ;;=J43.9^^125^1652^16
+ ;;^UTILITY(U,$J,358.3,34966,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34966,1,3,0)
+ ;;=3^Emphysema,Unspec
+ ;;^UTILITY(U,$J,358.3,34966,1,4,0)
+ ;;=4^J43.9
+ ;;^UTILITY(U,$J,358.3,34966,2)
+ ;;=^5008238
+ ;;^UTILITY(U,$J,358.3,34967,0)
+ ;;=J45.990^^125^1652^17
+ ;;^UTILITY(U,$J,358.3,34967,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34967,1,3,0)
+ ;;=3^Exercise Induced Bronchospasm
+ ;;^UTILITY(U,$J,358.3,34967,1,4,0)
+ ;;=4^J45.990
+ ;;^UTILITY(U,$J,358.3,34967,2)
+ ;;=^329926
+ ;;^UTILITY(U,$J,358.3,34968,0)
+ ;;=J45.22^^125^1652^19
+ ;;^UTILITY(U,$J,358.3,34968,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34968,1,3,0)
+ ;;=3^Mild Intermittent Asthma w/ Status Asthmaticus
+ ;;^UTILITY(U,$J,358.3,34968,1,4,0)
+ ;;=4^J45.22
+ ;;^UTILITY(U,$J,358.3,34968,2)
+ ;;=^5008244
+ ;;^UTILITY(U,$J,358.3,34969,0)
+ ;;=J45.20^^125^1652^20
+ ;;^UTILITY(U,$J,358.3,34969,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34969,1,3,0)
+ ;;=3^Mild Intermittent Asthma,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,34969,1,4,0)
+ ;;=4^J45.20
+ ;;^UTILITY(U,$J,358.3,34969,2)
+ ;;=^5008242
+ ;;^UTILITY(U,$J,358.3,34970,0)
+ ;;=J45.21^^125^1652^18
+ ;;^UTILITY(U,$J,358.3,34970,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34970,1,3,0)
+ ;;=3^Mild Intermittent Asthma w/ Exacerbation
+ ;;^UTILITY(U,$J,358.3,34970,1,4,0)
+ ;;=4^J45.21
+ ;;^UTILITY(U,$J,358.3,34970,2)
+ ;;=^5008243
+ ;;^UTILITY(U,$J,358.3,34971,0)
+ ;;=J45.31^^125^1652^21
+ ;;^UTILITY(U,$J,358.3,34971,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34971,1,3,0)
+ ;;=3^Mild Persistent Asthma w/ Exacerbation
+ ;;^UTILITY(U,$J,358.3,34971,1,4,0)
+ ;;=4^J45.31
+ ;;^UTILITY(U,$J,358.3,34971,2)
+ ;;=^5008246
+ ;;^UTILITY(U,$J,358.3,34972,0)
+ ;;=J45.32^^125^1652^22
+ ;;^UTILITY(U,$J,358.3,34972,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34972,1,3,0)
+ ;;=3^Mild Persistent Asthma w/ Status Asthmaticus
+ ;;^UTILITY(U,$J,358.3,34972,1,4,0)
+ ;;=4^J45.32
+ ;;^UTILITY(U,$J,358.3,34972,2)
+ ;;=^5008247
+ ;;^UTILITY(U,$J,358.3,34973,0)
+ ;;=J45.30^^125^1652^23
+ ;;^UTILITY(U,$J,358.3,34973,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34973,1,3,0)
+ ;;=3^Mild Persistent Asthma,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,34973,1,4,0)
+ ;;=4^J45.30
+ ;;^UTILITY(U,$J,358.3,34973,2)
+ ;;=^5008245
+ ;;^UTILITY(U,$J,358.3,34974,0)
+ ;;=J45.41^^125^1652^24
+ ;;^UTILITY(U,$J,358.3,34974,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34974,1,3,0)
+ ;;=3^Moderate Persistent Asthma w/ Exacerbation
+ ;;^UTILITY(U,$J,358.3,34974,1,4,0)
+ ;;=4^J45.41
+ ;;^UTILITY(U,$J,358.3,34974,2)
+ ;;=^5008249
+ ;;^UTILITY(U,$J,358.3,34975,0)
+ ;;=J45.42^^125^1652^25
+ ;;^UTILITY(U,$J,358.3,34975,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34975,1,3,0)
+ ;;=3^Moderate Persistent Asthma w/ Status Asthmaticus
+ ;;^UTILITY(U,$J,358.3,34975,1,4,0)
+ ;;=4^J45.42
+ ;;^UTILITY(U,$J,358.3,34975,2)
+ ;;=^5008250
+ ;;^UTILITY(U,$J,358.3,34976,0)
+ ;;=J45.40^^125^1652^26
+ ;;^UTILITY(U,$J,358.3,34976,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34976,1,3,0)
+ ;;=3^Moderate Persistent Asthma,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,34976,1,4,0)
+ ;;=4^J45.40
+ ;;^UTILITY(U,$J,358.3,34976,2)
+ ;;=^5008248
+ ;;^UTILITY(U,$J,358.3,34977,0)
+ ;;=J41.1^^125^1652^27
+ ;;^UTILITY(U,$J,358.3,34977,1,0)
+ ;;=^358.31IA^4^2

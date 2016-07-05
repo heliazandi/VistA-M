@@ -1,134 +1,280 @@
-IBDEI0X6 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0X6 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15292,1,4,0)
- ;;=4^C44.500
- ;;^UTILITY(U,$J,358.3,15292,2)
- ;;=^5001051
- ;;^UTILITY(U,$J,358.3,15293,0)
- ;;=C44.501^^85^814^3
- ;;^UTILITY(U,$J,358.3,15293,1,0)
+ ;;^UTILITY(U,$J,358.3,33369,1,3,0)
+ ;;=3^Nicotine Dependence Chewing Tobacco,In Remission
+ ;;^UTILITY(U,$J,358.3,33369,1,4,0)
+ ;;=4^F17.221
+ ;;^UTILITY(U,$J,358.3,33369,2)
+ ;;=^5003371
+ ;;^UTILITY(U,$J,358.3,33370,0)
+ ;;=F17.220^^119^1578^25
+ ;;^UTILITY(U,$J,358.3,33370,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15293,1,3,0)
- ;;=3^Malig Neop of Skin of Breast
- ;;^UTILITY(U,$J,358.3,15293,1,4,0)
- ;;=4^C44.501
- ;;^UTILITY(U,$J,358.3,15293,2)
- ;;=^5001052
- ;;^UTILITY(U,$J,358.3,15294,0)
- ;;=C44.509^^85^814^17
- ;;^UTILITY(U,$J,358.3,15294,1,0)
+ ;;^UTILITY(U,$J,358.3,33370,1,3,0)
+ ;;=3^Nicotine Dependence Chewing Tobacco,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,33370,1,4,0)
+ ;;=4^F17.220
+ ;;^UTILITY(U,$J,358.3,33370,2)
+ ;;=^5003370
+ ;;^UTILITY(U,$J,358.3,33371,0)
+ ;;=F17.211^^119^1578^26
+ ;;^UTILITY(U,$J,358.3,33371,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15294,1,3,0)
- ;;=3^Malig Neop of Skin of Trunk NEC
- ;;^UTILITY(U,$J,358.3,15294,1,4,0)
- ;;=4^C44.509
- ;;^UTILITY(U,$J,358.3,15294,2)
- ;;=^5001053
- ;;^UTILITY(U,$J,358.3,15295,0)
- ;;=C44.602^^85^814^15
- ;;^UTILITY(U,$J,358.3,15295,1,0)
+ ;;^UTILITY(U,$J,358.3,33371,1,3,0)
+ ;;=3^Nicotine Dependence Cigarettes,In Remission
+ ;;^UTILITY(U,$J,358.3,33371,1,4,0)
+ ;;=4^F17.211
+ ;;^UTILITY(U,$J,358.3,33371,2)
+ ;;=^5003366
+ ;;^UTILITY(U,$J,358.3,33372,0)
+ ;;=F17.200^^119^1578^31
+ ;;^UTILITY(U,$J,358.3,33372,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15295,1,3,0)
- ;;=3^Malig Neop of Skin of Right Upper Limb
- ;;^UTILITY(U,$J,358.3,15295,1,4,0)
- ;;=4^C44.602
- ;;^UTILITY(U,$J,358.3,15295,2)
- ;;=^5001064
- ;;^UTILITY(U,$J,358.3,15296,0)
- ;;=C44.609^^85^814^9
- ;;^UTILITY(U,$J,358.3,15296,1,0)
+ ;;^UTILITY(U,$J,358.3,33372,1,3,0)
+ ;;=3^Nicotine Dependence,Unspec,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,33372,1,4,0)
+ ;;=4^F17.200
+ ;;^UTILITY(U,$J,358.3,33372,2)
+ ;;=^5003360
+ ;;^UTILITY(U,$J,358.3,33373,0)
+ ;;=F11.120^^119^1578^32
+ ;;^UTILITY(U,$J,358.3,33373,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15296,1,3,0)
- ;;=3^Malig Neop of Skin of Left Upper Limb
- ;;^UTILITY(U,$J,358.3,15296,1,4,0)
- ;;=4^C44.609
- ;;^UTILITY(U,$J,358.3,15296,2)
- ;;=^5001065
- ;;^UTILITY(U,$J,358.3,15297,0)
- ;;=C44.702^^85^814^14
- ;;^UTILITY(U,$J,358.3,15297,1,0)
+ ;;^UTILITY(U,$J,358.3,33373,1,3,0)
+ ;;=3^Opioid Abuse w/ Intoxication,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,33373,1,4,0)
+ ;;=4^F11.120
+ ;;^UTILITY(U,$J,358.3,33373,2)
+ ;;=^5003115
+ ;;^UTILITY(U,$J,358.3,33374,0)
+ ;;=F11.10^^119^1578^34
+ ;;^UTILITY(U,$J,358.3,33374,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15297,1,3,0)
- ;;=3^Malig Neop of Skin of Right Lower Limb
- ;;^UTILITY(U,$J,358.3,15297,1,4,0)
- ;;=4^C44.702
- ;;^UTILITY(U,$J,358.3,15297,2)
- ;;=^5001076
- ;;^UTILITY(U,$J,358.3,15298,0)
- ;;=C44.709^^85^814^8
- ;;^UTILITY(U,$J,358.3,15298,1,0)
+ ;;^UTILITY(U,$J,358.3,33374,1,3,0)
+ ;;=3^Opioid Abuse,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,33374,1,4,0)
+ ;;=4^F11.10
+ ;;^UTILITY(U,$J,358.3,33374,2)
+ ;;=^5003114
+ ;;^UTILITY(U,$J,358.3,33375,0)
+ ;;=F11.129^^119^1578^33
+ ;;^UTILITY(U,$J,358.3,33375,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15298,1,3,0)
- ;;=3^Malig Neop of Skin of Left Lower Limb
- ;;^UTILITY(U,$J,358.3,15298,1,4,0)
- ;;=4^C44.709
- ;;^UTILITY(U,$J,358.3,15298,2)
- ;;=^5001077
- ;;^UTILITY(U,$J,358.3,15299,0)
- ;;=C44.80^^85^814^2
- ;;^UTILITY(U,$J,358.3,15299,1,0)
+ ;;^UTILITY(U,$J,358.3,33375,1,3,0)
+ ;;=3^Opioid Abuse w/ Intoxication,Unspec
+ ;;^UTILITY(U,$J,358.3,33375,1,4,0)
+ ;;=4^F11.129
+ ;;^UTILITY(U,$J,358.3,33375,2)
+ ;;=^5003118
+ ;;^UTILITY(U,$J,358.3,33376,0)
+ ;;=F10.21^^119^1578^3
+ ;;^UTILITY(U,$J,358.3,33376,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15299,1,3,0)
- ;;=3^Malig Neop of Overlapping Sites of Skin
- ;;^UTILITY(U,$J,358.3,15299,1,4,0)
- ;;=4^C44.80
- ;;^UTILITY(U,$J,358.3,15299,2)
- ;;=^5001087
- ;;^UTILITY(U,$J,358.3,15300,0)
- ;;=C44.90^^85^814^18
- ;;^UTILITY(U,$J,358.3,15300,1,0)
+ ;;^UTILITY(U,$J,358.3,33376,1,3,0)
+ ;;=3^Alcohol Dependence,In Remission
+ ;;^UTILITY(U,$J,358.3,33376,1,4,0)
+ ;;=4^F10.21
+ ;;^UTILITY(U,$J,358.3,33376,2)
+ ;;=^5003082
+ ;;^UTILITY(U,$J,358.3,33377,0)
+ ;;=F12.10^^119^1578^5
+ ;;^UTILITY(U,$J,358.3,33377,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15300,1,3,0)
- ;;=3^Malig Neop of Skin,Unspec
- ;;^UTILITY(U,$J,358.3,15300,1,4,0)
- ;;=4^C44.90
- ;;^UTILITY(U,$J,358.3,15300,2)
- ;;=^5001091
- ;;^UTILITY(U,$J,358.3,15301,0)
- ;;=C43.9^^85^815^16
- ;;^UTILITY(U,$J,358.3,15301,1,0)
+ ;;^UTILITY(U,$J,358.3,33377,1,3,0)
+ ;;=3^Cannabis Abuse,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,33377,1,4,0)
+ ;;=4^F12.10
+ ;;^UTILITY(U,$J,358.3,33377,2)
+ ;;=^5003155
+ ;;^UTILITY(U,$J,358.3,33378,0)
+ ;;=F12.20^^119^1578^7
+ ;;^UTILITY(U,$J,358.3,33378,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15301,1,3,0)
- ;;=3^Malig Melanoma of Skin,Unspec
- ;;^UTILITY(U,$J,358.3,15301,1,4,0)
- ;;=4^C43.9
- ;;^UTILITY(U,$J,358.3,15301,2)
- ;;=^5001015
- ;;^UTILITY(U,$J,358.3,15302,0)
- ;;=C43.0^^85^815^7
- ;;^UTILITY(U,$J,358.3,15302,1,0)
+ ;;^UTILITY(U,$J,358.3,33378,1,3,0)
+ ;;=3^Cannabis Dependence,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,33378,1,4,0)
+ ;;=4^F12.20
+ ;;^UTILITY(U,$J,358.3,33378,2)
+ ;;=^5003166
+ ;;^UTILITY(U,$J,358.3,33379,0)
+ ;;=F12.21^^119^1578^6
+ ;;^UTILITY(U,$J,358.3,33379,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15302,1,3,0)
- ;;=3^Malig Melanoma of Lip
- ;;^UTILITY(U,$J,358.3,15302,1,4,0)
- ;;=4^C43.0
- ;;^UTILITY(U,$J,358.3,15302,2)
- ;;=^5000994
- ;;^UTILITY(U,$J,358.3,15303,0)
- ;;=C43.11^^85^815^11
- ;;^UTILITY(U,$J,358.3,15303,1,0)
+ ;;^UTILITY(U,$J,358.3,33379,1,3,0)
+ ;;=3^Cannabis Dependence,In Remission
+ ;;^UTILITY(U,$J,358.3,33379,1,4,0)
+ ;;=4^F12.21
+ ;;^UTILITY(U,$J,358.3,33379,2)
+ ;;=^5003167
+ ;;^UTILITY(U,$J,358.3,33380,0)
+ ;;=F12.90^^119^1578^8
+ ;;^UTILITY(U,$J,358.3,33380,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15303,1,3,0)
- ;;=3^Malig Melanoma of Right Eyelid
- ;;^UTILITY(U,$J,358.3,15303,1,4,0)
- ;;=4^C43.11
- ;;^UTILITY(U,$J,358.3,15303,2)
- ;;=^5000996
- ;;^UTILITY(U,$J,358.3,15304,0)
- ;;=C43.12^^85^815^4
- ;;^UTILITY(U,$J,358.3,15304,1,0)
+ ;;^UTILITY(U,$J,358.3,33380,1,3,0)
+ ;;=3^Cannabis Use,Unspec,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,33380,1,4,0)
+ ;;=4^F12.90
+ ;;^UTILITY(U,$J,358.3,33380,2)
+ ;;=^5003178
+ ;;^UTILITY(U,$J,358.3,33381,0)
+ ;;=I83.019^^119^1579^3
+ ;;^UTILITY(U,$J,358.3,33381,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15304,1,3,0)
- ;;=3^Malig Melanoma of Left Eyelid
- ;;^UTILITY(U,$J,358.3,15304,1,4,0)
- ;;=4^C43.12
- ;;^UTILITY(U,$J,358.3,15304,2)
- ;;=^5000997
- ;;^UTILITY(U,$J,358.3,15305,0)
- ;;=C43.21^^85^815^10
- ;;^UTILITY(U,$J,358.3,15305,1,0)
+ ;;^UTILITY(U,$J,358.3,33381,1,3,0)
+ ;;=3^Varicose Veins Right Lower Extrem w/ Ulcer,Unspec
+ ;;^UTILITY(U,$J,358.3,33381,1,4,0)
+ ;;=4^I83.019
+ ;;^UTILITY(U,$J,358.3,33381,2)
+ ;;=^5007979
+ ;;^UTILITY(U,$J,358.3,33382,0)
+ ;;=I83.219^^119^1579^4
+ ;;^UTILITY(U,$J,358.3,33382,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15305,1,3,0)
- ;;=3^Malig Melanoma of Right Ear/External Auricular Canal
+ ;;^UTILITY(U,$J,358.3,33382,1,3,0)
+ ;;=3^Varicose Veins Right Lower Extrem w/ Ulcer & Inflam,Unspec
+ ;;^UTILITY(U,$J,358.3,33382,1,4,0)
+ ;;=4^I83.219
+ ;;^UTILITY(U,$J,358.3,33382,2)
+ ;;=^5008003
+ ;;^UTILITY(U,$J,358.3,33383,0)
+ ;;=I83.029^^119^1579^1
+ ;;^UTILITY(U,$J,358.3,33383,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33383,1,3,0)
+ ;;=3^Varicose Veins Left Lower Extrem w/ Ulcer,Unspec
+ ;;^UTILITY(U,$J,358.3,33383,1,4,0)
+ ;;=4^I83.029
+ ;;^UTILITY(U,$J,358.3,33383,2)
+ ;;=^5007986
+ ;;^UTILITY(U,$J,358.3,33384,0)
+ ;;=I83.229^^119^1579^2
+ ;;^UTILITY(U,$J,358.3,33384,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33384,1,3,0)
+ ;;=3^Varicose Veins Left Lower Extrem w/ Ulcer & Inflam,Unspec
+ ;;^UTILITY(U,$J,358.3,33384,1,4,0)
+ ;;=4^I83.229
+ ;;^UTILITY(U,$J,358.3,33384,2)
+ ;;=^5008010
+ ;;^UTILITY(U,$J,358.3,33385,0)
+ ;;=B00.81^^119^1580^56
+ ;;^UTILITY(U,$J,358.3,33385,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33385,1,3,0)
+ ;;=3^Herpesviral Hepatitis
+ ;;^UTILITY(U,$J,358.3,33385,1,4,0)
+ ;;=4^B00.81
+ ;;^UTILITY(U,$J,358.3,33385,2)
+ ;;=^5000478
+ ;;^UTILITY(U,$J,358.3,33386,0)
+ ;;=D25.9^^119^1580^65
+ ;;^UTILITY(U,$J,358.3,33386,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33386,1,3,0)
+ ;;=3^Leiomyoma of Uterus,Unspec
+ ;;^UTILITY(U,$J,358.3,33386,1,4,0)
+ ;;=4^D25.9
+ ;;^UTILITY(U,$J,358.3,33386,2)
+ ;;=^5002081
+ ;;^UTILITY(U,$J,358.3,33387,0)
+ ;;=F52.9^^119^1580^103
+ ;;^UTILITY(U,$J,358.3,33387,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33387,1,3,0)
+ ;;=3^Sexual Dysfnct Not d/t a Sub/Known Physiol Cond,Unspec
+ ;;^UTILITY(U,$J,358.3,33387,1,4,0)
+ ;;=4^F52.9
+ ;;^UTILITY(U,$J,358.3,33387,2)
+ ;;=^5003625
+ ;;^UTILITY(U,$J,358.3,33388,0)
+ ;;=R37.^^119^1580^104
+ ;;^UTILITY(U,$J,358.3,33388,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33388,1,3,0)
+ ;;=3^Sexual Dysfunction,Unspec
+ ;;^UTILITY(U,$J,358.3,33388,1,4,0)
+ ;;=4^R37.
+ ;;^UTILITY(U,$J,358.3,33388,2)
+ ;;=^5019339
+ ;;^UTILITY(U,$J,358.3,33389,0)
+ ;;=N60.01^^119^1580^107
+ ;;^UTILITY(U,$J,358.3,33389,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33389,1,3,0)
+ ;;=3^Solitary Cyst of Right Breast
+ ;;^UTILITY(U,$J,358.3,33389,1,4,0)
+ ;;=4^N60.01
+ ;;^UTILITY(U,$J,358.3,33389,2)
+ ;;=^5015770
+ ;;^UTILITY(U,$J,358.3,33390,0)
+ ;;=N60.02^^119^1580^106
+ ;;^UTILITY(U,$J,358.3,33390,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33390,1,3,0)
+ ;;=3^Solitary Cyst of Left Breast
+ ;;^UTILITY(U,$J,358.3,33390,1,4,0)
+ ;;=4^N60.02
+ ;;^UTILITY(U,$J,358.3,33390,2)
+ ;;=^5015771
+ ;;^UTILITY(U,$J,358.3,33391,0)
+ ;;=N60.09^^119^1580^108
+ ;;^UTILITY(U,$J,358.3,33391,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33391,1,3,0)
+ ;;=3^Solitary Cyst of Unspec Breast
+ ;;^UTILITY(U,$J,358.3,33391,1,4,0)
+ ;;=4^N60.09
+ ;;^UTILITY(U,$J,358.3,33391,2)
+ ;;=^5015772
+ ;;^UTILITY(U,$J,358.3,33392,0)
+ ;;=N60.11^^119^1580^31
+ ;;^UTILITY(U,$J,358.3,33392,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33392,1,3,0)
+ ;;=3^Diffuse Cystic Mastopathy of Right Breast
+ ;;^UTILITY(U,$J,358.3,33392,1,4,0)
+ ;;=4^N60.11
+ ;;^UTILITY(U,$J,358.3,33392,2)
+ ;;=^5015773
+ ;;^UTILITY(U,$J,358.3,33393,0)
+ ;;=N60.12^^119^1580^30
+ ;;^UTILITY(U,$J,358.3,33393,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33393,1,3,0)
+ ;;=3^Diffuse Cystic Mastopathy of Left Breast
+ ;;^UTILITY(U,$J,358.3,33393,1,4,0)
+ ;;=4^N60.12
+ ;;^UTILITY(U,$J,358.3,33393,2)
+ ;;=^5015774
+ ;;^UTILITY(U,$J,358.3,33394,0)
+ ;;=N64.4^^119^1580^70
+ ;;^UTILITY(U,$J,358.3,33394,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33394,1,3,0)
+ ;;=3^Mastodynia
+ ;;^UTILITY(U,$J,358.3,33394,1,4,0)
+ ;;=4^N64.4
+ ;;^UTILITY(U,$J,358.3,33394,2)
+ ;;=^5015794
+ ;;^UTILITY(U,$J,358.3,33395,0)
+ ;;=N63.^^119^1580^67
+ ;;^UTILITY(U,$J,358.3,33395,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33395,1,3,0)
+ ;;=3^Lump in Breast,Unspec
+ ;;^UTILITY(U,$J,358.3,33395,1,4,0)
+ ;;=4^N63.
+ ;;^UTILITY(U,$J,358.3,33395,2)
+ ;;=^5015791
+ ;;^UTILITY(U,$J,358.3,33396,0)
+ ;;=N64.51^^119^1580^61
+ ;;^UTILITY(U,$J,358.3,33396,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33396,1,3,0)
+ ;;=3^Induration of Breast
+ ;;^UTILITY(U,$J,358.3,33396,1,4,0)
+ ;;=4^N64.51
+ ;;^UTILITY(U,$J,358.3,33396,2)
+ ;;=^5015795

@@ -1,124 +1,292 @@
-IBDEI04P ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI04P ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1514,2)
- ;;=^5051018
- ;;^UTILITY(U,$J,358.3,1515,0)
- ;;=T45.1X2S^^14^156^18
- ;;^UTILITY(U,$J,358.3,1515,1,0)
+ ;;^UTILITY(U,$J,358.3,4441,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1515,1,3,0)
- ;;=3^Poisn by antineopl and immunosup drugs, self-harm, sequela
- ;;^UTILITY(U,$J,358.3,1515,1,4,0)
- ;;=4^T45.1X2S
- ;;^UTILITY(U,$J,358.3,1515,2)
- ;;=^5051019
- ;;^UTILITY(U,$J,358.3,1516,0)
- ;;=T45.1X4A^^14^156^39
- ;;^UTILITY(U,$J,358.3,1516,1,0)
+ ;;^UTILITY(U,$J,358.3,4441,1,3,0)
+ ;;=3^Benign Lipomatous Neop of Skin of Head/Face/Neck
+ ;;^UTILITY(U,$J,358.3,4441,1,4,0)
+ ;;=4^D17.0
+ ;;^UTILITY(U,$J,358.3,4441,2)
+ ;;=^5002005
+ ;;^UTILITY(U,$J,358.3,4442,0)
+ ;;=D17.22^^30^317^27
+ ;;^UTILITY(U,$J,358.3,4442,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1516,1,3,0)
- ;;=3^Poisoning by antineopl and immunosup drugs, undet, init
- ;;^UTILITY(U,$J,358.3,1516,1,4,0)
- ;;=4^T45.1X4A
- ;;^UTILITY(U,$J,358.3,1516,2)
- ;;=^5051023
- ;;^UTILITY(U,$J,358.3,1517,0)
- ;;=T45.1X4D^^14^156^40
- ;;^UTILITY(U,$J,358.3,1517,1,0)
+ ;;^UTILITY(U,$J,358.3,4442,1,3,0)
+ ;;=3^Benign Lipomatous Neop of Skin of Left Arm
+ ;;^UTILITY(U,$J,358.3,4442,1,4,0)
+ ;;=4^D17.22
+ ;;^UTILITY(U,$J,358.3,4442,2)
+ ;;=^5002009
+ ;;^UTILITY(U,$J,358.3,4443,0)
+ ;;=D17.24^^30^317^28
+ ;;^UTILITY(U,$J,358.3,4443,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1517,1,3,0)
- ;;=3^Poisoning by antineopl and immunosup drugs, undet, subs
- ;;^UTILITY(U,$J,358.3,1517,1,4,0)
- ;;=4^T45.1X4D
- ;;^UTILITY(U,$J,358.3,1517,2)
- ;;=^5051024
- ;;^UTILITY(U,$J,358.3,1518,0)
- ;;=T45.1X4S^^14^156^41
- ;;^UTILITY(U,$J,358.3,1518,1,0)
+ ;;^UTILITY(U,$J,358.3,4443,1,3,0)
+ ;;=3^Benign Lipomatous Neop of Skin of Left Leg
+ ;;^UTILITY(U,$J,358.3,4443,1,4,0)
+ ;;=4^D17.24
+ ;;^UTILITY(U,$J,358.3,4443,2)
+ ;;=^5002011
+ ;;^UTILITY(U,$J,358.3,4444,0)
+ ;;=D17.39^^30^317^25
+ ;;^UTILITY(U,$J,358.3,4444,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1518,1,3,0)
- ;;=3^Poisoning by antineopl and immunosup drugs, undet, sequela
- ;;^UTILITY(U,$J,358.3,1518,1,4,0)
- ;;=4^T45.1X4S
- ;;^UTILITY(U,$J,358.3,1518,2)
- ;;=^5051025
- ;;^UTILITY(U,$J,358.3,1519,0)
- ;;=T36.8X1A^^14^156^42
- ;;^UTILITY(U,$J,358.3,1519,1,0)
+ ;;^UTILITY(U,$J,358.3,4444,1,3,0)
+ ;;=3^Benign Lipomatous Neop of Skin NEC
+ ;;^UTILITY(U,$J,358.3,4444,1,4,0)
+ ;;=4^D17.39
+ ;;^UTILITY(U,$J,358.3,4444,2)
+ ;;=^5002013
+ ;;^UTILITY(U,$J,358.3,4445,0)
+ ;;=D17.21^^30^317^29
+ ;;^UTILITY(U,$J,358.3,4445,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1519,1,3,0)
- ;;=3^Poisoning by oth systemic antibiotics, accidental, init
- ;;^UTILITY(U,$J,358.3,1519,1,4,0)
- ;;=4^T36.8X1A
- ;;^UTILITY(U,$J,358.3,1519,2)
- ;;=^5049400
- ;;^UTILITY(U,$J,358.3,1520,0)
- ;;=T36.8X1D^^14^156^43
- ;;^UTILITY(U,$J,358.3,1520,1,0)
+ ;;^UTILITY(U,$J,358.3,4445,1,3,0)
+ ;;=3^Benign Lipomatous Neop of Skin of Right Arm
+ ;;^UTILITY(U,$J,358.3,4445,1,4,0)
+ ;;=4^D17.21
+ ;;^UTILITY(U,$J,358.3,4445,2)
+ ;;=^5002008
+ ;;^UTILITY(U,$J,358.3,4446,0)
+ ;;=D17.23^^30^317^30
+ ;;^UTILITY(U,$J,358.3,4446,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1520,1,3,0)
- ;;=3^Poisoning by oth systemic antibiotics, accidental, subs
- ;;^UTILITY(U,$J,358.3,1520,1,4,0)
- ;;=4^T36.8X1D
- ;;^UTILITY(U,$J,358.3,1520,2)
- ;;=^5049401
- ;;^UTILITY(U,$J,358.3,1521,0)
- ;;=T36.8X1S^^14^156^44
- ;;^UTILITY(U,$J,358.3,1521,1,0)
+ ;;^UTILITY(U,$J,358.3,4446,1,3,0)
+ ;;=3^Benign Lipomatous Neop of Skin of Right Leg
+ ;;^UTILITY(U,$J,358.3,4446,1,4,0)
+ ;;=4^D17.23
+ ;;^UTILITY(U,$J,358.3,4446,2)
+ ;;=^5002010
+ ;;^UTILITY(U,$J,358.3,4447,0)
+ ;;=D17.1^^30^317^31
+ ;;^UTILITY(U,$J,358.3,4447,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1521,1,3,0)
- ;;=3^Poisoning by oth systemic antibiotics, accidental, sequela
- ;;^UTILITY(U,$J,358.3,1521,1,4,0)
- ;;=4^T36.8X1S
- ;;^UTILITY(U,$J,358.3,1521,2)
- ;;=^5049402
- ;;^UTILITY(U,$J,358.3,1522,0)
- ;;=T36.8X3A^^14^156^45
- ;;^UTILITY(U,$J,358.3,1522,1,0)
+ ;;^UTILITY(U,$J,358.3,4447,1,3,0)
+ ;;=3^Benign Lipomatous Neop of Skin of Trunk
+ ;;^UTILITY(U,$J,358.3,4447,1,4,0)
+ ;;=4^D17.1
+ ;;^UTILITY(U,$J,358.3,4447,2)
+ ;;=^5002006
+ ;;^UTILITY(U,$J,358.3,4448,0)
+ ;;=G56.02^^30^317^32
+ ;;^UTILITY(U,$J,358.3,4448,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1522,1,3,0)
- ;;=3^Poisoning by oth systemic antibiotics, assault, init encntr
- ;;^UTILITY(U,$J,358.3,1522,1,4,0)
- ;;=4^T36.8X3A
- ;;^UTILITY(U,$J,358.3,1522,2)
- ;;=^5049406
- ;;^UTILITY(U,$J,358.3,1523,0)
- ;;=T36.8X3D^^14^156^46
- ;;^UTILITY(U,$J,358.3,1523,1,0)
+ ;;^UTILITY(U,$J,358.3,4448,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,4448,1,4,0)
+ ;;=4^G56.02
+ ;;^UTILITY(U,$J,358.3,4448,2)
+ ;;=^5004019
+ ;;^UTILITY(U,$J,358.3,4449,0)
+ ;;=G56.01^^30^317^33
+ ;;^UTILITY(U,$J,358.3,4449,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1523,1,3,0)
- ;;=3^Poisoning by oth systemic antibiotics, assault, subs encntr
- ;;^UTILITY(U,$J,358.3,1523,1,4,0)
- ;;=4^T36.8X3D
- ;;^UTILITY(U,$J,358.3,1523,2)
- ;;=^5049407
- ;;^UTILITY(U,$J,358.3,1524,0)
- ;;=T36.8X3S^^14^156^53
- ;;^UTILITY(U,$J,358.3,1524,1,0)
+ ;;^UTILITY(U,$J,358.3,4449,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,4449,1,4,0)
+ ;;=4^G56.01
+ ;;^UTILITY(U,$J,358.3,4449,2)
+ ;;=^5004018
+ ;;^UTILITY(U,$J,358.3,4450,0)
+ ;;=K12.2^^30^317^45
+ ;;^UTILITY(U,$J,358.3,4450,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1524,1,3,0)
- ;;=3^Poisoning by other systemic antibiotics, assault, sequela
- ;;^UTILITY(U,$J,358.3,1524,1,4,0)
- ;;=4^T36.8X3S
- ;;^UTILITY(U,$J,358.3,1524,2)
- ;;=^5049408
- ;;^UTILITY(U,$J,358.3,1525,0)
- ;;=T36.8X2A^^14^156^47
- ;;^UTILITY(U,$J,358.3,1525,1,0)
+ ;;^UTILITY(U,$J,358.3,4450,1,3,0)
+ ;;=3^Cellulitis of Mouth
+ ;;^UTILITY(U,$J,358.3,4450,1,4,0)
+ ;;=4^K12.2
+ ;;^UTILITY(U,$J,358.3,4450,2)
+ ;;=^5008485
+ ;;^UTILITY(U,$J,358.3,4451,0)
+ ;;=L03.311^^30^317^34
+ ;;^UTILITY(U,$J,358.3,4451,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1525,1,3,0)
- ;;=3^Poisoning by oth systemic antibiotics, self-harm, init
- ;;^UTILITY(U,$J,358.3,1525,1,4,0)
- ;;=4^T36.8X2A
- ;;^UTILITY(U,$J,358.3,1525,2)
- ;;=^5049403
- ;;^UTILITY(U,$J,358.3,1526,0)
- ;;=T36.8X2D^^14^156^48
- ;;^UTILITY(U,$J,358.3,1526,1,0)
+ ;;^UTILITY(U,$J,358.3,4451,1,3,0)
+ ;;=3^Cellulitis of Abdominal Wall
+ ;;^UTILITY(U,$J,358.3,4451,1,4,0)
+ ;;=4^L03.311
+ ;;^UTILITY(U,$J,358.3,4451,2)
+ ;;=^5009047
+ ;;^UTILITY(U,$J,358.3,4452,0)
+ ;;=L03.317^^30^317^35
+ ;;^UTILITY(U,$J,358.3,4452,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1526,1,3,0)
- ;;=3^Poisoning by oth systemic antibiotics, self-harm, subs
- ;;^UTILITY(U,$J,358.3,1526,1,4,0)
- ;;=4^T36.8X2D
+ ;;^UTILITY(U,$J,358.3,4452,1,3,0)
+ ;;=3^Cellulitis of Buttock
+ ;;^UTILITY(U,$J,358.3,4452,1,4,0)
+ ;;=4^L03.317
+ ;;^UTILITY(U,$J,358.3,4452,2)
+ ;;=^5009053
+ ;;^UTILITY(U,$J,358.3,4453,0)
+ ;;=L03.313^^30^317^36
+ ;;^UTILITY(U,$J,358.3,4453,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4453,1,3,0)
+ ;;=3^Cellulitis of Chest Wall
+ ;;^UTILITY(U,$J,358.3,4453,1,4,0)
+ ;;=4^L03.313
+ ;;^UTILITY(U,$J,358.3,4453,2)
+ ;;=^5009049
+ ;;^UTILITY(U,$J,358.3,4454,0)
+ ;;=L03.211^^30^317^37
+ ;;^UTILITY(U,$J,358.3,4454,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4454,1,3,0)
+ ;;=3^Cellulitis of Face
+ ;;^UTILITY(U,$J,358.3,4454,1,4,0)
+ ;;=4^L03.211
+ ;;^UTILITY(U,$J,358.3,4454,2)
+ ;;=^5009043
+ ;;^UTILITY(U,$J,358.3,4455,0)
+ ;;=L03.314^^30^317^38
+ ;;^UTILITY(U,$J,358.3,4455,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4455,1,3,0)
+ ;;=3^Cellulitis of Groin
+ ;;^UTILITY(U,$J,358.3,4455,1,4,0)
+ ;;=4^L03.314
+ ;;^UTILITY(U,$J,358.3,4455,2)
+ ;;=^5009050
+ ;;^UTILITY(U,$J,358.3,4456,0)
+ ;;=L03.811^^30^317^39
+ ;;^UTILITY(U,$J,358.3,4456,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4456,1,3,0)
+ ;;=3^Cellulitis of Head
+ ;;^UTILITY(U,$J,358.3,4456,1,4,0)
+ ;;=4^L03.811
+ ;;^UTILITY(U,$J,358.3,4456,2)
+ ;;=^5009063
+ ;;^UTILITY(U,$J,358.3,4457,0)
+ ;;=L03.112^^30^317^40
+ ;;^UTILITY(U,$J,358.3,4457,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4457,1,3,0)
+ ;;=3^Cellulitis of Left Axilla
+ ;;^UTILITY(U,$J,358.3,4457,1,4,0)
+ ;;=4^L03.112
+ ;;^UTILITY(U,$J,358.3,4457,2)
+ ;;=^5009032
+ ;;^UTILITY(U,$J,358.3,4458,0)
+ ;;=L03.012^^30^317^41
+ ;;^UTILITY(U,$J,358.3,4458,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4458,1,3,0)
+ ;;=3^Cellulitis of Left Finger
+ ;;^UTILITY(U,$J,358.3,4458,1,4,0)
+ ;;=4^L03.012
+ ;;^UTILITY(U,$J,358.3,4458,2)
+ ;;=^5009020
+ ;;^UTILITY(U,$J,358.3,4459,0)
+ ;;=L03.116^^30^317^42
+ ;;^UTILITY(U,$J,358.3,4459,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4459,1,3,0)
+ ;;=3^Cellulitis of Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,4459,1,4,0)
+ ;;=4^L03.116
+ ;;^UTILITY(U,$J,358.3,4459,2)
+ ;;=^5133645
+ ;;^UTILITY(U,$J,358.3,4460,0)
+ ;;=L03.032^^30^317^43
+ ;;^UTILITY(U,$J,358.3,4460,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4460,1,3,0)
+ ;;=3^Cellulitis of Left Toe
+ ;;^UTILITY(U,$J,358.3,4460,1,4,0)
+ ;;=4^L03.032
+ ;;^UTILITY(U,$J,358.3,4460,2)
+ ;;=^5009026
+ ;;^UTILITY(U,$J,358.3,4461,0)
+ ;;=L03.114^^30^317^44
+ ;;^UTILITY(U,$J,358.3,4461,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4461,1,3,0)
+ ;;=3^Cellulitis of Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,4461,1,4,0)
+ ;;=4^L03.114
+ ;;^UTILITY(U,$J,358.3,4461,2)
+ ;;=^5009034
+ ;;^UTILITY(U,$J,358.3,4462,0)
+ ;;=L03.221^^30^317^46
+ ;;^UTILITY(U,$J,358.3,4462,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4462,1,3,0)
+ ;;=3^Cellulitis of Neck
+ ;;^UTILITY(U,$J,358.3,4462,1,4,0)
+ ;;=4^L03.221
+ ;;^UTILITY(U,$J,358.3,4462,2)
+ ;;=^5009045
+ ;;^UTILITY(U,$J,358.3,4463,0)
+ ;;=L03.818^^30^317^47
+ ;;^UTILITY(U,$J,358.3,4463,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4463,1,3,0)
+ ;;=3^Cellulitis of Other Sites
+ ;;^UTILITY(U,$J,358.3,4463,1,4,0)
+ ;;=4^L03.818
+ ;;^UTILITY(U,$J,358.3,4463,2)
+ ;;=^5009064
+ ;;^UTILITY(U,$J,358.3,4464,0)
+ ;;=L03.315^^30^317^48
+ ;;^UTILITY(U,$J,358.3,4464,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4464,1,3,0)
+ ;;=3^Cellulitis of Perineum
+ ;;^UTILITY(U,$J,358.3,4464,1,4,0)
+ ;;=4^L03.315
+ ;;^UTILITY(U,$J,358.3,4464,2)
+ ;;=^5009051
+ ;;^UTILITY(U,$J,358.3,4465,0)
+ ;;=L03.111^^30^317^49
+ ;;^UTILITY(U,$J,358.3,4465,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4465,1,3,0)
+ ;;=3^Cellulitis of Right Axilla
+ ;;^UTILITY(U,$J,358.3,4465,1,4,0)
+ ;;=4^L03.111
+ ;;^UTILITY(U,$J,358.3,4465,2)
+ ;;=^5009031
+ ;;^UTILITY(U,$J,358.3,4466,0)
+ ;;=L03.011^^30^317^50
+ ;;^UTILITY(U,$J,358.3,4466,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4466,1,3,0)
+ ;;=3^Cellulitis of Right Finger
+ ;;^UTILITY(U,$J,358.3,4466,1,4,0)
+ ;;=4^L03.011
+ ;;^UTILITY(U,$J,358.3,4466,2)
+ ;;=^5009019
+ ;;^UTILITY(U,$J,358.3,4467,0)
+ ;;=L03.115^^30^317^51
+ ;;^UTILITY(U,$J,358.3,4467,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4467,1,3,0)
+ ;;=3^Cellulitis of Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,4467,1,4,0)
+ ;;=4^L03.115
+ ;;^UTILITY(U,$J,358.3,4467,2)
+ ;;=^5009035
+ ;;^UTILITY(U,$J,358.3,4468,0)
+ ;;=L03.031^^30^317^52
+ ;;^UTILITY(U,$J,358.3,4468,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4468,1,3,0)
+ ;;=3^Cellulitis of Right Toe
+ ;;^UTILITY(U,$J,358.3,4468,1,4,0)
+ ;;=4^L03.031
+ ;;^UTILITY(U,$J,358.3,4468,2)
+ ;;=^5009025
+ ;;^UTILITY(U,$J,358.3,4469,0)
+ ;;=L03.113^^30^317^53
+ ;;^UTILITY(U,$J,358.3,4469,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4469,1,3,0)
+ ;;=3^Cellulitis of Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,4469,1,4,0)
+ ;;=4^L03.113
+ ;;^UTILITY(U,$J,358.3,4469,2)
+ ;;=^5009033

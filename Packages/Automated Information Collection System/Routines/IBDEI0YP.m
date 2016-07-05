@@ -1,118 +1,282 @@
-IBDEI0YP ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0YP ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15979,0)
- ;;=S61.231A^^85^830^16
- ;;^UTILITY(U,$J,358.3,15979,1,0)
+ ;;^UTILITY(U,$J,358.3,34922,1,3,0)
+ ;;=3^Eosinophilic Cellulitis
+ ;;^UTILITY(U,$J,358.3,34922,1,4,0)
+ ;;=4^L98.3
+ ;;^UTILITY(U,$J,358.3,34922,2)
+ ;;=^5009576
+ ;;^UTILITY(U,$J,358.3,34923,0)
+ ;;=L40.1^^125^1650^18
+ ;;^UTILITY(U,$J,358.3,34923,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15979,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Index Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15979,1,4,0)
- ;;=4^S61.231A
- ;;^UTILITY(U,$J,358.3,15979,2)
- ;;=^5032819
- ;;^UTILITY(U,$J,358.3,15980,0)
- ;;=S91.235A^^85^830^18
- ;;^UTILITY(U,$J,358.3,15980,1,0)
+ ;;^UTILITY(U,$J,358.3,34923,1,3,0)
+ ;;=3^Pustular Psoriasis,Generalized
+ ;;^UTILITY(U,$J,358.3,34923,1,4,0)
+ ;;=4^L40.1
+ ;;^UTILITY(U,$J,358.3,34923,2)
+ ;;=^5009161
+ ;;^UTILITY(U,$J,358.3,34924,0)
+ ;;=L40.4^^125^1650^12
+ ;;^UTILITY(U,$J,358.3,34924,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15980,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Lesser Toe(s) w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15980,1,4,0)
- ;;=4^S91.235A
- ;;^UTILITY(U,$J,358.3,15980,2)
- ;;=^5044299
- ;;^UTILITY(U,$J,358.3,15981,0)
- ;;=S91.135A^^85^830^19
- ;;^UTILITY(U,$J,358.3,15981,1,0)
+ ;;^UTILITY(U,$J,358.3,34924,1,3,0)
+ ;;=3^Guttate Psoriasis
+ ;;^UTILITY(U,$J,358.3,34924,1,4,0)
+ ;;=4^L40.4
+ ;;^UTILITY(U,$J,358.3,34924,2)
+ ;;=^5009164
+ ;;^UTILITY(U,$J,358.3,34925,0)
+ ;;=L24.9^^125^1650^13
+ ;;^UTILITY(U,$J,358.3,34925,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15981,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Lesser Toe(s) w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15981,1,4,0)
- ;;=4^S91.135A
- ;;^UTILITY(U,$J,358.3,15981,2)
- ;;=^5044225
- ;;^UTILITY(U,$J,358.3,15982,0)
- ;;=S61.337A^^85^830^21
- ;;^UTILITY(U,$J,358.3,15982,1,0)
+ ;;^UTILITY(U,$J,358.3,34925,1,3,0)
+ ;;=3^Irritant Contact Dermatitis
+ ;;^UTILITY(U,$J,358.3,34925,1,4,0)
+ ;;=4^L24.9
+ ;;^UTILITY(U,$J,358.3,34925,2)
+ ;;=^5009136
+ ;;^UTILITY(U,$J,358.3,34926,0)
+ ;;=L30.0^^125^1650^14
+ ;;^UTILITY(U,$J,358.3,34926,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15982,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Little Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15982,1,4,0)
- ;;=4^S61.337A
- ;;^UTILITY(U,$J,358.3,15982,2)
- ;;=^5032957
- ;;^UTILITY(U,$J,358.3,15983,0)
- ;;=S61.333A^^85^830^23
- ;;^UTILITY(U,$J,358.3,15983,1,0)
+ ;;^UTILITY(U,$J,358.3,34926,1,3,0)
+ ;;=3^Nummular Dermatitis
+ ;;^UTILITY(U,$J,358.3,34926,1,4,0)
+ ;;=4^L30.0
+ ;;^UTILITY(U,$J,358.3,34926,2)
+ ;;=^186823
+ ;;^UTILITY(U,$J,358.3,34927,0)
+ ;;=L40.8^^125^1650^15
+ ;;^UTILITY(U,$J,358.3,34927,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15983,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Middle Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15983,1,4,0)
- ;;=4^S61.333A
- ;;^UTILITY(U,$J,358.3,15983,2)
- ;;=^5032945
- ;;^UTILITY(U,$J,358.3,15984,0)
- ;;=S61.233A^^85^830^24
- ;;^UTILITY(U,$J,358.3,15984,1,0)
+ ;;^UTILITY(U,$J,358.3,34927,1,3,0)
+ ;;=3^Psoriasis NEC
+ ;;^UTILITY(U,$J,358.3,34927,1,4,0)
+ ;;=4^L40.8
+ ;;^UTILITY(U,$J,358.3,34927,2)
+ ;;=^271917
+ ;;^UTILITY(U,$J,358.3,34928,0)
+ ;;=L30.8^^125^1650^9
+ ;;^UTILITY(U,$J,358.3,34928,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15984,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Middle Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15984,1,4,0)
- ;;=4^S61.233A
- ;;^UTILITY(U,$J,358.3,15984,2)
- ;;=^5032825
- ;;^UTILITY(U,$J,358.3,15985,0)
- ;;=S61.335A^^85^830^25
- ;;^UTILITY(U,$J,358.3,15985,1,0)
+ ;;^UTILITY(U,$J,358.3,34928,1,3,0)
+ ;;=3^Dermatitis NEC
+ ;;^UTILITY(U,$J,358.3,34928,1,4,0)
+ ;;=4^L30.8
+ ;;^UTILITY(U,$J,358.3,34928,2)
+ ;;=^5009158
+ ;;^UTILITY(U,$J,358.3,34929,0)
+ ;;=L40.0^^125^1650^16
+ ;;^UTILITY(U,$J,358.3,34929,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15985,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Ring Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15985,1,4,0)
- ;;=4^S61.335A
- ;;^UTILITY(U,$J,358.3,15985,2)
- ;;=^5032951
- ;;^UTILITY(U,$J,358.3,15986,0)
- ;;=S61.235A^^85^830^26
- ;;^UTILITY(U,$J,358.3,15986,1,0)
+ ;;^UTILITY(U,$J,358.3,34929,1,3,0)
+ ;;=3^Psoriasis Vulgaris
+ ;;^UTILITY(U,$J,358.3,34929,1,4,0)
+ ;;=4^L40.0
+ ;;^UTILITY(U,$J,358.3,34929,2)
+ ;;=^5009160
+ ;;^UTILITY(U,$J,358.3,34930,0)
+ ;;=L40.9^^125^1650^17
+ ;;^UTILITY(U,$J,358.3,34930,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15986,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Ring Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15986,1,4,0)
- ;;=4^S61.235A
- ;;^UTILITY(U,$J,358.3,15986,2)
- ;;=^5032831
- ;;^UTILITY(U,$J,358.3,15987,0)
- ;;=S61.132A^^85^830^29
- ;;^UTILITY(U,$J,358.3,15987,1,0)
+ ;;^UTILITY(U,$J,358.3,34930,1,3,0)
+ ;;=3^Psoriasis,Unspec
+ ;;^UTILITY(U,$J,358.3,34930,1,4,0)
+ ;;=4^L40.9
+ ;;^UTILITY(U,$J,358.3,34930,2)
+ ;;=^5009171
+ ;;^UTILITY(U,$J,358.3,34931,0)
+ ;;=L40.3^^125^1650^19
+ ;;^UTILITY(U,$J,358.3,34931,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15987,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Thumb w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15987,1,4,0)
- ;;=4^S61.132A
- ;;^UTILITY(U,$J,358.3,15987,2)
- ;;=^5032735
- ;;^UTILITY(U,$J,358.3,15988,0)
- ;;=S91.231A^^85^830^43
- ;;^UTILITY(U,$J,358.3,15988,1,0)
+ ;;^UTILITY(U,$J,358.3,34931,1,3,0)
+ ;;=3^Pustulosis Palmaris et Plantaris
+ ;;^UTILITY(U,$J,358.3,34931,1,4,0)
+ ;;=4^L40.3
+ ;;^UTILITY(U,$J,358.3,34931,2)
+ ;;=^5009163
+ ;;^UTILITY(U,$J,358.3,34932,0)
+ ;;=R21.^^125^1650^20
+ ;;^UTILITY(U,$J,358.3,34932,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15988,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Great Toe w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15988,1,4,0)
- ;;=4^S91.231A
- ;;^UTILITY(U,$J,358.3,15988,2)
- ;;=^5044290
- ;;^UTILITY(U,$J,358.3,15989,0)
- ;;=S91.131A^^85^830^44
- ;;^UTILITY(U,$J,358.3,15989,1,0)
+ ;;^UTILITY(U,$J,358.3,34932,1,3,0)
+ ;;=3^Rash/Oth Nonspecific Skin Eruption
+ ;;^UTILITY(U,$J,358.3,34932,1,4,0)
+ ;;=4^R21.
+ ;;^UTILITY(U,$J,358.3,34932,2)
+ ;;=^5019283
+ ;;^UTILITY(U,$J,358.3,34933,0)
+ ;;=L25.9^^125^1650^6
+ ;;^UTILITY(U,$J,358.3,34933,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15989,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Great Toe w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15989,1,4,0)
- ;;=4^S91.131A
- ;;^UTILITY(U,$J,358.3,15989,2)
- ;;=^5044213
- ;;^UTILITY(U,$J,358.3,15990,0)
- ;;=S61.330A^^85^830^47
- ;;^UTILITY(U,$J,358.3,15990,1,0)
+ ;;^UTILITY(U,$J,358.3,34933,1,3,0)
+ ;;=3^Contact Dermatitis,Unspec
+ ;;^UTILITY(U,$J,358.3,34933,1,4,0)
+ ;;=4^L25.9
+ ;;^UTILITY(U,$J,358.3,34933,2)
+ ;;=^5133647
+ ;;^UTILITY(U,$J,358.3,34934,0)
+ ;;=M34.89^^125^1651^22
+ ;;^UTILITY(U,$J,358.3,34934,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34934,1,3,0)
+ ;;=3^Systemic Sclerosis NEC
+ ;;^UTILITY(U,$J,358.3,34934,1,4,0)
+ ;;=4^M34.89
+ ;;^UTILITY(U,$J,358.3,34934,2)
+ ;;=^5011784
+ ;;^UTILITY(U,$J,358.3,34935,0)
+ ;;=M34.0^^125^1651^20
+ ;;^UTILITY(U,$J,358.3,34935,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34935,1,3,0)
+ ;;=3^Progressive Systemic Sclerosis
+ ;;^UTILITY(U,$J,358.3,34935,1,4,0)
+ ;;=4^M34.0
+ ;;^UTILITY(U,$J,358.3,34935,2)
+ ;;=^5011778
+ ;;^UTILITY(U,$J,358.3,34936,0)
+ ;;=F03.90^^125^1651^14
+ ;;^UTILITY(U,$J,358.3,34936,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34936,1,3,0)
+ ;;=3^Dementia w/o Behavioral Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,34936,1,4,0)
+ ;;=4^F03.90
+ ;;^UTILITY(U,$J,358.3,34936,2)
+ ;;=^5003050
+ ;;^UTILITY(U,$J,358.3,34937,0)
+ ;;=F06.8^^125^1651^17
+ ;;^UTILITY(U,$J,358.3,34937,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34937,1,3,0)
+ ;;=3^Mental Disorders d/t Physiological Condition
+ ;;^UTILITY(U,$J,358.3,34937,1,4,0)
+ ;;=4^F06.8
+ ;;^UTILITY(U,$J,358.3,34937,2)
+ ;;=^5003062
+ ;;^UTILITY(U,$J,358.3,34938,0)
+ ;;=F06.1^^125^1651^1
+ ;;^UTILITY(U,$J,358.3,34938,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34938,1,3,0)
+ ;;=3^Catatonic Disorder d/t Physiological Condition
+ ;;^UTILITY(U,$J,358.3,34938,1,4,0)
+ ;;=4^F06.1
+ ;;^UTILITY(U,$J,358.3,34938,2)
+ ;;=^5003054
+ ;;^UTILITY(U,$J,358.3,34939,0)
+ ;;=G35.^^125^1651^18
+ ;;^UTILITY(U,$J,358.3,34939,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34939,1,3,0)
+ ;;=3^Multiple Sclerosis
+ ;;^UTILITY(U,$J,358.3,34939,1,4,0)
+ ;;=4^G35.
+ ;;^UTILITY(U,$J,358.3,34939,2)
+ ;;=^79761
+ ;;^UTILITY(U,$J,358.3,34940,0)
+ ;;=G60.9^^125^1651^15
+ ;;^UTILITY(U,$J,358.3,34940,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34940,1,3,0)
+ ;;=3^Hereditary/Idiopathic Neuropathy,Unspec
+ ;;^UTILITY(U,$J,358.3,34940,1,4,0)
+ ;;=4^G60.9
+ ;;^UTILITY(U,$J,358.3,34940,2)
+ ;;=^5004071
+ ;;^UTILITY(U,$J,358.3,34941,0)
+ ;;=G62.9^^125^1651^19
+ ;;^UTILITY(U,$J,358.3,34941,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34941,1,3,0)
+ ;;=3^Polyneuropathy,Unspec
+ ;;^UTILITY(U,$J,358.3,34941,1,4,0)
+ ;;=4^G62.9
+ ;;^UTILITY(U,$J,358.3,34941,2)
+ ;;=^5004079
+ ;;^UTILITY(U,$J,358.3,34942,0)
+ ;;=I63.9^^125^1651^13
+ ;;^UTILITY(U,$J,358.3,34942,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34942,1,3,0)
+ ;;=3^Cerebral Infarction,Unspec
+ ;;^UTILITY(U,$J,358.3,34942,1,4,0)
+ ;;=4^I63.9
+ ;;^UTILITY(U,$J,358.3,34942,2)
+ ;;=^5007355
+ ;;^UTILITY(U,$J,358.3,34943,0)
+ ;;=I63.50^^125^1651^7
+ ;;^UTILITY(U,$J,358.3,34943,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34943,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occls/Stenosis of Unspec Cerebral Artery
+ ;;^UTILITY(U,$J,358.3,34943,1,4,0)
+ ;;=4^I63.50
+ ;;^UTILITY(U,$J,358.3,34943,2)
+ ;;=^5007343
+ ;;^UTILITY(U,$J,358.3,34944,0)
+ ;;=I63.549^^125^1651^8
+ ;;^UTILITY(U,$J,358.3,34944,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34944,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occls/Stenosis of Unspec Cerebellar Artery
+ ;;^UTILITY(U,$J,358.3,34944,1,4,0)
+ ;;=4^I63.549
+ ;;^UTILITY(U,$J,358.3,34944,2)
+ ;;=^5133571
+ ;;^UTILITY(U,$J,358.3,34945,0)
+ ;;=I63.8^^125^1651^2
+ ;;^UTILITY(U,$J,358.3,34945,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34945,1,3,0)
+ ;;=3^Cerebral Infarction NEC
+ ;;^UTILITY(U,$J,358.3,34945,1,4,0)
+ ;;=4^I63.8
+ ;;^UTILITY(U,$J,358.3,34945,2)
+ ;;=^5007354
+ ;;^UTILITY(U,$J,358.3,34946,0)
+ ;;=I63.512^^125^1651^5
+ ;;^UTILITY(U,$J,358.3,34946,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34946,1,3,0)
+ ;;=3^Cerebral Infarction d/t Left Middle Cerebral Artery Occls/Stenosis
+ ;;^UTILITY(U,$J,358.3,34946,1,4,0)
+ ;;=4^I63.512
+ ;;^UTILITY(U,$J,358.3,34946,2)
+ ;;=^5007345
+ ;;^UTILITY(U,$J,358.3,34947,0)
+ ;;=I63.522^^125^1651^3
+ ;;^UTILITY(U,$J,358.3,34947,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34947,1,3,0)
+ ;;=3^Cerebral Infarction d/t Left Anterior Cerebral Artery Occls/Stenosis
+ ;;^UTILITY(U,$J,358.3,34947,1,4,0)
+ ;;=4^I63.522
+ ;;^UTILITY(U,$J,358.3,34947,2)
+ ;;=^5007347
+ ;;^UTILITY(U,$J,358.3,34948,0)
+ ;;=I63.532^^125^1651^6
+ ;;^UTILITY(U,$J,358.3,34948,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34948,1,3,0)
+ ;;=3^Cerebral Infarction d/t Left Posterior Cerebral Artery Occls/Stenosis
+ ;;^UTILITY(U,$J,358.3,34948,1,4,0)
+ ;;=4^I63.532
+ ;;^UTILITY(U,$J,358.3,34948,2)
+ ;;=^5007349
+ ;;^UTILITY(U,$J,358.3,34949,0)
+ ;;=I63.542^^125^1651^4
+ ;;^UTILITY(U,$J,358.3,34949,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34949,1,3,0)
+ ;;=3^Cerebral Infarction d/t Left Cerebellar Artery Occls/Stenosis
+ ;;^UTILITY(U,$J,358.3,34949,1,4,0)
+ ;;=4^I63.542
+ ;;^UTILITY(U,$J,358.3,34949,2)
+ ;;=^5007351
+ ;;^UTILITY(U,$J,358.3,34950,0)
+ ;;=I63.511^^125^1651^11

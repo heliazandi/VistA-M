@@ -1,132 +1,282 @@
-IBDEI14Q ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI14Q ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18864,1,0)
+ ;;^UTILITY(U,$J,358.3,41026,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18864,1,3,0)
- ;;=3^Follicular Lymphoma Unspec,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,18864,1,4,0)
- ;;=4^C82.99
- ;;^UTILITY(U,$J,358.3,18864,2)
- ;;=^5001550
- ;;^UTILITY(U,$J,358.3,18865,0)
- ;;=C82.90^^94^916^73
- ;;^UTILITY(U,$J,358.3,18865,1,0)
+ ;;^UTILITY(U,$J,358.3,41026,1,3,0)
+ ;;=3^Varic Veins LLE w/ Ulc of Calf & Inflam
+ ;;^UTILITY(U,$J,358.3,41026,1,4,0)
+ ;;=4^I83.222
+ ;;^UTILITY(U,$J,358.3,41026,2)
+ ;;=^5008005
+ ;;^UTILITY(U,$J,358.3,41027,0)
+ ;;=I83.223^^153^2003^150
+ ;;^UTILITY(U,$J,358.3,41027,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18865,1,3,0)
- ;;=3^Follicular Lymphoma Unspec,Unspec Site
- ;;^UTILITY(U,$J,358.3,18865,1,4,0)
- ;;=4^C82.90
- ;;^UTILITY(U,$J,358.3,18865,2)
- ;;=^5001541
- ;;^UTILITY(U,$J,358.3,18866,0)
- ;;=R59.1^^94^916^58
- ;;^UTILITY(U,$J,358.3,18866,1,0)
+ ;;^UTILITY(U,$J,358.3,41027,1,3,0)
+ ;;=3^Varic Veins LLE w/ Ulc of Ankle & Inflam
+ ;;^UTILITY(U,$J,358.3,41027,1,4,0)
+ ;;=4^I83.223
+ ;;^UTILITY(U,$J,358.3,41027,2)
+ ;;=^5008006
+ ;;^UTILITY(U,$J,358.3,41028,0)
+ ;;=I83.224^^153^2003^154
+ ;;^UTILITY(U,$J,358.3,41028,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18866,1,3,0)
- ;;=3^Enlarged Lymph Nodes,Generalized
- ;;^UTILITY(U,$J,358.3,18866,1,4,0)
- ;;=4^R59.1
- ;;^UTILITY(U,$J,358.3,18866,2)
- ;;=^5019530
- ;;^UTILITY(U,$J,358.3,18867,0)
- ;;=C91.40^^94^916^77
- ;;^UTILITY(U,$J,358.3,18867,1,0)
+ ;;^UTILITY(U,$J,358.3,41028,1,3,0)
+ ;;=3^Varic Veins LLE w/ Ulc of Heel/Midfoot & Inflam
+ ;;^UTILITY(U,$J,358.3,41028,1,4,0)
+ ;;=4^I83.224
+ ;;^UTILITY(U,$J,358.3,41028,2)
+ ;;=^5008007
+ ;;^UTILITY(U,$J,358.3,41029,0)
+ ;;=I83.225^^153^2003^158
+ ;;^UTILITY(U,$J,358.3,41029,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18867,1,3,0)
- ;;=3^Hairy Cell Leukemia,Not in Remission
- ;;^UTILITY(U,$J,358.3,18867,1,4,0)
- ;;=4^C91.40
- ;;^UTILITY(U,$J,358.3,18867,2)
- ;;=^5001771
- ;;^UTILITY(U,$J,358.3,18868,0)
- ;;=C91.42^^94^916^75
- ;;^UTILITY(U,$J,358.3,18868,1,0)
+ ;;^UTILITY(U,$J,358.3,41029,1,3,0)
+ ;;=3^Varic Veins LLE w/ Ulc of Oth Part of Ft & Inflam
+ ;;^UTILITY(U,$J,358.3,41029,1,4,0)
+ ;;=4^I83.225
+ ;;^UTILITY(U,$J,358.3,41029,2)
+ ;;=^5008008
+ ;;^UTILITY(U,$J,358.3,41030,0)
+ ;;=I83.228^^153^2003^155
+ ;;^UTILITY(U,$J,358.3,41030,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18868,1,3,0)
- ;;=3^Hairy Cell Leukemia,In Relapse
- ;;^UTILITY(U,$J,358.3,18868,1,4,0)
- ;;=4^C91.42
- ;;^UTILITY(U,$J,358.3,18868,2)
- ;;=^5001773
- ;;^UTILITY(U,$J,358.3,18869,0)
- ;;=C91.41^^94^916^76
- ;;^UTILITY(U,$J,358.3,18869,1,0)
+ ;;^UTILITY(U,$J,358.3,41030,1,3,0)
+ ;;=3^Varic Veins LLE w/ Ulc of Oth Part LE & Inflam
+ ;;^UTILITY(U,$J,358.3,41030,1,4,0)
+ ;;=4^I83.228
+ ;;^UTILITY(U,$J,358.3,41030,2)
+ ;;=^5008009
+ ;;^UTILITY(U,$J,358.3,41031,0)
+ ;;=I83.91^^153^2003^46
+ ;;^UTILITY(U,$J,358.3,41031,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18869,1,3,0)
- ;;=3^Hairy Cell Leukemia,In Remission
- ;;^UTILITY(U,$J,358.3,18869,1,4,0)
- ;;=4^C91.41
- ;;^UTILITY(U,$J,358.3,18869,2)
- ;;=^5001772
- ;;^UTILITY(U,$J,358.3,18870,0)
- ;;=D57.01^^94^916^78
- ;;^UTILITY(U,$J,358.3,18870,1,0)
+ ;;^UTILITY(U,$J,358.3,41031,1,3,0)
+ ;;=3^Asymptomatic Varicose Veins Rt LE
+ ;;^UTILITY(U,$J,358.3,41031,1,4,0)
+ ;;=4^I83.91
+ ;;^UTILITY(U,$J,358.3,41031,2)
+ ;;=^5008020
+ ;;^UTILITY(U,$J,358.3,41032,0)
+ ;;=I83.92^^153^2003^45
+ ;;^UTILITY(U,$J,358.3,41032,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18870,1,3,0)
- ;;=3^Hb-SS Disease w/ Acute Chest Syndrome
- ;;^UTILITY(U,$J,358.3,18870,1,4,0)
- ;;=4^D57.01
- ;;^UTILITY(U,$J,358.3,18870,2)
- ;;=^5002307
- ;;^UTILITY(U,$J,358.3,18871,0)
- ;;=D57.00^^94^916^79
- ;;^UTILITY(U,$J,358.3,18871,1,0)
+ ;;^UTILITY(U,$J,358.3,41032,1,3,0)
+ ;;=3^Asymptomatic Varicose Veins Lt LE
+ ;;^UTILITY(U,$J,358.3,41032,1,4,0)
+ ;;=4^I83.92
+ ;;^UTILITY(U,$J,358.3,41032,2)
+ ;;=^5008021
+ ;;^UTILITY(U,$J,358.3,41033,0)
+ ;;=I83.93^^153^2003^44
+ ;;^UTILITY(U,$J,358.3,41033,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18871,1,3,0)
- ;;=3^Hb-SS Disease w/ Crisis,Unspec
- ;;^UTILITY(U,$J,358.3,18871,1,4,0)
- ;;=4^D57.00
- ;;^UTILITY(U,$J,358.3,18871,2)
- ;;=^5002306
- ;;^UTILITY(U,$J,358.3,18872,0)
- ;;=D57.02^^94^916^80
- ;;^UTILITY(U,$J,358.3,18872,1,0)
+ ;;^UTILITY(U,$J,358.3,41033,1,3,0)
+ ;;=3^Asymptomatic Varicose Veins Bil LE
+ ;;^UTILITY(U,$J,358.3,41033,1,4,0)
+ ;;=4^I83.93
+ ;;^UTILITY(U,$J,358.3,41033,2)
+ ;;=^5008022
+ ;;^UTILITY(U,$J,358.3,41034,0)
+ ;;=I89.0^^153^2003^118
+ ;;^UTILITY(U,$J,358.3,41034,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18872,1,3,0)
- ;;=3^Hb-SS Disease w/ Splenic Sequestration
- ;;^UTILITY(U,$J,358.3,18872,1,4,0)
- ;;=4^D57.02
- ;;^UTILITY(U,$J,358.3,18872,2)
- ;;=^5002308
- ;;^UTILITY(U,$J,358.3,18873,0)
- ;;=D68.32^^94^916^82
- ;;^UTILITY(U,$J,358.3,18873,1,0)
+ ;;^UTILITY(U,$J,358.3,41034,1,3,0)
+ ;;=3^Lymphedema NEC
+ ;;^UTILITY(U,$J,358.3,41034,1,4,0)
+ ;;=4^I89.0
+ ;;^UTILITY(U,$J,358.3,41034,2)
+ ;;=^5008073
+ ;;^UTILITY(U,$J,358.3,41035,0)
+ ;;=I87.2^^153^2003^171
+ ;;^UTILITY(U,$J,358.3,41035,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18873,1,3,0)
- ;;=3^Hemorrhagic Disorder d/t Extrinsic Circulating Anticoagulants
- ;;^UTILITY(U,$J,358.3,18873,1,4,0)
- ;;=4^D68.32
- ;;^UTILITY(U,$J,358.3,18873,2)
- ;;=^5002357
- ;;^UTILITY(U,$J,358.3,18874,0)
- ;;=C22.2^^94^916^83
- ;;^UTILITY(U,$J,358.3,18874,1,0)
+ ;;^UTILITY(U,$J,358.3,41035,1,3,0)
+ ;;=3^Venous Insufficiency
+ ;;^UTILITY(U,$J,358.3,41035,1,4,0)
+ ;;=4^I87.2
+ ;;^UTILITY(U,$J,358.3,41035,2)
+ ;;=^5008047
+ ;;^UTILITY(U,$J,358.3,41036,0)
+ ;;=K55.0^^153^2003^32
+ ;;^UTILITY(U,$J,358.3,41036,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18874,1,3,0)
- ;;=3^Hepatoblastoma
- ;;^UTILITY(U,$J,358.3,18874,1,4,0)
- ;;=4^C22.2
- ;;^UTILITY(U,$J,358.3,18874,2)
- ;;=^5000935
- ;;^UTILITY(U,$J,358.3,18875,0)
- ;;=D58.9^^94^916^85
- ;;^UTILITY(U,$J,358.3,18875,1,0)
+ ;;^UTILITY(U,$J,358.3,41036,1,3,0)
+ ;;=3^AC Intestine Vascular Disorders
+ ;;^UTILITY(U,$J,358.3,41036,1,4,0)
+ ;;=4^K55.0
+ ;;^UTILITY(U,$J,358.3,41036,2)
+ ;;=^5008705
+ ;;^UTILITY(U,$J,358.3,41037,0)
+ ;;=K55.1^^153^2003^75
+ ;;^UTILITY(U,$J,358.3,41037,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18875,1,3,0)
- ;;=3^Hereditary Hemolytic Anemia,Unspec
- ;;^UTILITY(U,$J,358.3,18875,1,4,0)
- ;;=4^D58.9
- ;;^UTILITY(U,$J,358.3,18875,2)
- ;;=^5002322
- ;;^UTILITY(U,$J,358.3,18876,0)
- ;;=C81.99^^94^916^86
- ;;^UTILITY(U,$J,358.3,18876,1,0)
+ ;;^UTILITY(U,$J,358.3,41037,1,3,0)
+ ;;=3^Chr Intestine Vascular Disorders
+ ;;^UTILITY(U,$J,358.3,41037,1,4,0)
+ ;;=4^K55.1
+ ;;^UTILITY(U,$J,358.3,41037,2)
+ ;;=^5008706
+ ;;^UTILITY(U,$J,358.3,41038,0)
+ ;;=N18.9^^153^2003^76
+ ;;^UTILITY(U,$J,358.3,41038,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18876,1,3,0)
- ;;=3^Hodgkin Lymphoma,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,18876,1,4,0)
- ;;=4^C81.99
- ;;^UTILITY(U,$J,358.3,18876,2)
- ;;=^5001460
+ ;;^UTILITY(U,$J,358.3,41038,1,3,0)
+ ;;=3^Chr Kidney Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,41038,1,4,0)
+ ;;=4^N18.9
+ ;;^UTILITY(U,$J,358.3,41038,2)
+ ;;=^332812
+ ;;^UTILITY(U,$J,358.3,41039,0)
+ ;;=N28.0^^153^2003^109
+ ;;^UTILITY(U,$J,358.3,41039,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41039,1,3,0)
+ ;;=3^Kidney Ischemia & Infarction
+ ;;^UTILITY(U,$J,358.3,41039,1,4,0)
+ ;;=4^N28.0
+ ;;^UTILITY(U,$J,358.3,41039,2)
+ ;;=^5015626
+ ;;^UTILITY(U,$J,358.3,41040,0)
+ ;;=L03.114^^153^2003^67
+ ;;^UTILITY(U,$J,358.3,41040,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41040,1,3,0)
+ ;;=3^Cellulitis Lt Upper Limb
+ ;;^UTILITY(U,$J,358.3,41040,1,4,0)
+ ;;=4^L03.114
+ ;;^UTILITY(U,$J,358.3,41040,2)
+ ;;=^5009034
+ ;;^UTILITY(U,$J,358.3,41041,0)
+ ;;=L03.113^^153^2003^69
+ ;;^UTILITY(U,$J,358.3,41041,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41041,1,3,0)
+ ;;=3^Cellulitis Rt Upper Limb
+ ;;^UTILITY(U,$J,358.3,41041,1,4,0)
+ ;;=4^L03.113
+ ;;^UTILITY(U,$J,358.3,41041,2)
+ ;;=^5009033
+ ;;^UTILITY(U,$J,358.3,41042,0)
+ ;;=L03.115^^153^2003^68
+ ;;^UTILITY(U,$J,358.3,41042,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41042,1,3,0)
+ ;;=3^Cellulitis Rt Lower Limb
+ ;;^UTILITY(U,$J,358.3,41042,1,4,0)
+ ;;=4^L03.115
+ ;;^UTILITY(U,$J,358.3,41042,2)
+ ;;=^5009035
+ ;;^UTILITY(U,$J,358.3,41043,0)
+ ;;=L03.116^^153^2003^66
+ ;;^UTILITY(U,$J,358.3,41043,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41043,1,3,0)
+ ;;=3^Cellulitis Lt Lower Limb
+ ;;^UTILITY(U,$J,358.3,41043,1,4,0)
+ ;;=4^L03.116
+ ;;^UTILITY(U,$J,358.3,41043,2)
+ ;;=^5133645
+ ;;^UTILITY(U,$J,358.3,41044,0)
+ ;;=L97.119^^153^2003^128
+ ;;^UTILITY(U,$J,358.3,41044,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41044,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer Rt Thigh
+ ;;^UTILITY(U,$J,358.3,41044,1,4,0)
+ ;;=4^L97.119
+ ;;^UTILITY(U,$J,358.3,41044,2)
+ ;;=^5009489
+ ;;^UTILITY(U,$J,358.3,41045,0)
+ ;;=L97.129^^153^2003^124
+ ;;^UTILITY(U,$J,358.3,41045,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41045,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer Lt Thigh
+ ;;^UTILITY(U,$J,358.3,41045,1,4,0)
+ ;;=4^L97.129
+ ;;^UTILITY(U,$J,358.3,41045,2)
+ ;;=^5009494
+ ;;^UTILITY(U,$J,358.3,41046,0)
+ ;;=L97.219^^153^2003^125
+ ;;^UTILITY(U,$J,358.3,41046,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41046,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer Rt Calf
+ ;;^UTILITY(U,$J,358.3,41046,1,4,0)
+ ;;=4^L97.219
+ ;;^UTILITY(U,$J,358.3,41046,2)
+ ;;=^5009504
+ ;;^UTILITY(U,$J,358.3,41047,0)
+ ;;=L97.229^^153^2003^121
+ ;;^UTILITY(U,$J,358.3,41047,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41047,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer Lt Calf
+ ;;^UTILITY(U,$J,358.3,41047,1,4,0)
+ ;;=4^L97.229
+ ;;^UTILITY(U,$J,358.3,41047,2)
+ ;;=^5009509
+ ;;^UTILITY(U,$J,358.3,41048,0)
+ ;;=L97.419^^153^2003^126
+ ;;^UTILITY(U,$J,358.3,41048,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41048,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer Rt Heel/Midfoot
+ ;;^UTILITY(U,$J,358.3,41048,1,4,0)
+ ;;=4^L97.419
+ ;;^UTILITY(U,$J,358.3,41048,2)
+ ;;=^5009534
+ ;;^UTILITY(U,$J,358.3,41049,0)
+ ;;=L97.429^^153^2003^122
+ ;;^UTILITY(U,$J,358.3,41049,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41049,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer Lt Heel/Midfoot
+ ;;^UTILITY(U,$J,358.3,41049,1,4,0)
+ ;;=4^L97.429
+ ;;^UTILITY(U,$J,358.3,41049,2)
+ ;;=^5009539
+ ;;^UTILITY(U,$J,358.3,41050,0)
+ ;;=L97.519^^153^2003^127
+ ;;^UTILITY(U,$J,358.3,41050,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41050,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer Rt Oth Part Foot
+ ;;^UTILITY(U,$J,358.3,41050,1,4,0)
+ ;;=4^L97.519
+ ;;^UTILITY(U,$J,358.3,41050,2)
+ ;;=^5009549
+ ;;^UTILITY(U,$J,358.3,41051,0)
+ ;;=L97.529^^153^2003^123
+ ;;^UTILITY(U,$J,358.3,41051,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41051,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer Lt Oth Part Foot
+ ;;^UTILITY(U,$J,358.3,41051,1,4,0)
+ ;;=4^L97.529
+ ;;^UTILITY(U,$J,358.3,41051,2)
+ ;;=^5009554
+ ;;^UTILITY(U,$J,358.3,41052,0)
+ ;;=L98.419^^153^2003^120
+ ;;^UTILITY(U,$J,358.3,41052,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41052,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer Buttock
+ ;;^UTILITY(U,$J,358.3,41052,1,4,0)
+ ;;=4^L98.419
+ ;;^UTILITY(U,$J,358.3,41052,2)
+ ;;=^5009581
+ ;;^UTILITY(U,$J,358.3,41053,0)
+ ;;=L98.429^^153^2003^119
+ ;;^UTILITY(U,$J,358.3,41053,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41053,1,3,0)
+ ;;=3^Non-Pressure Chr Ulcer Back
+ ;;^UTILITY(U,$J,358.3,41053,1,4,0)
+ ;;=4^L98.429
+ ;;^UTILITY(U,$J,358.3,41053,2)
+ ;;=^5009586

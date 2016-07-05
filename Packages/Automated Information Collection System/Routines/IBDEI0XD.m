@@ -1,122 +1,266 @@
-IBDEI0XD ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0XD ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15381,2)
- ;;=^5032750
- ;;^UTILITY(U,$J,358.3,15382,0)
- ;;=S61.204A^^85^817^56
- ;;^UTILITY(U,$J,358.3,15382,1,0)
+ ;;^UTILITY(U,$J,358.3,33565,0)
+ ;;=R40.2320^^119^1582^3
+ ;;^UTILITY(U,$J,358.3,33565,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15382,1,3,0)
- ;;=3^Open Wound of Right Ring Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15382,1,4,0)
- ;;=4^S61.204A
- ;;^UTILITY(U,$J,358.3,15382,2)
- ;;=^5032753
- ;;^UTILITY(U,$J,358.3,15383,0)
- ;;=S61.205A^^85^817^25
- ;;^UTILITY(U,$J,358.3,15383,1,0)
+ ;;^UTILITY(U,$J,358.3,33565,1,3,0)
+ ;;=3^Coma Scale,Best Motor Resp,Extension,Unspec Time
+ ;;^UTILITY(U,$J,358.3,33565,1,4,0)
+ ;;=4^R40.2320
+ ;;^UTILITY(U,$J,358.3,33565,2)
+ ;;=^5019405
+ ;;^UTILITY(U,$J,358.3,33566,0)
+ ;;=R40.2314^^119^1582^11
+ ;;^UTILITY(U,$J,358.3,33566,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15383,1,3,0)
- ;;=3^Open Wound of Left Ring Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15383,1,4,0)
- ;;=4^S61.205A
- ;;^UTILITY(U,$J,358.3,15383,2)
- ;;=^5032756
- ;;^UTILITY(U,$J,358.3,15384,0)
- ;;=S61.206A^^85^817^51
- ;;^UTILITY(U,$J,358.3,15384,1,0)
+ ;;^UTILITY(U,$J,358.3,33566,1,3,0)
+ ;;=3^Coma Scale,Best Motor Resp,None,24+ Hrs
+ ;;^UTILITY(U,$J,358.3,33566,1,4,0)
+ ;;=4^R40.2314
+ ;;^UTILITY(U,$J,358.3,33566,2)
+ ;;=^5019404
+ ;;^UTILITY(U,$J,358.3,33567,0)
+ ;;=R40.2313^^119^1582^14
+ ;;^UTILITY(U,$J,358.3,33567,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15384,1,3,0)
- ;;=3^Open Wound of Right Little Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15384,1,4,0)
- ;;=4^S61.206A
- ;;^UTILITY(U,$J,358.3,15384,2)
- ;;=^5032759
- ;;^UTILITY(U,$J,358.3,15385,0)
- ;;=S61.207A^^85^817^20
- ;;^UTILITY(U,$J,358.3,15385,1,0)
+ ;;^UTILITY(U,$J,358.3,33567,1,3,0)
+ ;;=3^Coma Scale,Best Motor Resp,None,at Hospital Admission
+ ;;^UTILITY(U,$J,358.3,33567,1,4,0)
+ ;;=4^R40.2313
+ ;;^UTILITY(U,$J,358.3,33567,2)
+ ;;=^5019403
+ ;;^UTILITY(U,$J,358.3,33568,0)
+ ;;=R40.2312^^119^1582^12
+ ;;^UTILITY(U,$J,358.3,33568,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15385,1,3,0)
- ;;=3^Open Wound of Left Little Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15385,1,4,0)
- ;;=4^S61.207A
- ;;^UTILITY(U,$J,358.3,15385,2)
- ;;=^5032762
- ;;^UTILITY(U,$J,358.3,15386,0)
- ;;=S61.300A^^85^817^45
- ;;^UTILITY(U,$J,358.3,15386,1,0)
+ ;;^UTILITY(U,$J,358.3,33568,1,3,0)
+ ;;=3^Coma Scale,Best Motor Resp,None,Emerg Dept
+ ;;^UTILITY(U,$J,358.3,33568,1,4,0)
+ ;;=4^R40.2312
+ ;;^UTILITY(U,$J,358.3,33568,2)
+ ;;=^5019402
+ ;;^UTILITY(U,$J,358.3,33569,0)
+ ;;=R40.2311^^119^1582^15
+ ;;^UTILITY(U,$J,358.3,33569,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15386,1,3,0)
- ;;=3^Open Wound of Right Index Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15386,1,4,0)
- ;;=4^S61.300A
- ;;^UTILITY(U,$J,358.3,15386,2)
- ;;=^5032891
- ;;^UTILITY(U,$J,358.3,15387,0)
- ;;=S61.301A^^85^817^14
- ;;^UTILITY(U,$J,358.3,15387,1,0)
+ ;;^UTILITY(U,$J,358.3,33569,1,3,0)
+ ;;=3^Coma Scale,Best Motor Resp,None,in the Field
+ ;;^UTILITY(U,$J,358.3,33569,1,4,0)
+ ;;=4^R40.2311
+ ;;^UTILITY(U,$J,358.3,33569,2)
+ ;;=^5019401
+ ;;^UTILITY(U,$J,358.3,33570,0)
+ ;;=R40.2310^^119^1582^13
+ ;;^UTILITY(U,$J,358.3,33570,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15387,1,3,0)
- ;;=3^Open Wound of Left Index Finger w/ Damage to Nail,Init Encntr
- ;;^UTILITY(U,$J,358.3,15387,1,4,0)
- ;;=4^S61.301A
- ;;^UTILITY(U,$J,358.3,15387,2)
- ;;=^5135735
- ;;^UTILITY(U,$J,358.3,15388,0)
- ;;=S61.302A^^85^817^53
- ;;^UTILITY(U,$J,358.3,15388,1,0)
+ ;;^UTILITY(U,$J,358.3,33570,1,3,0)
+ ;;=3^Coma Scale,Best Motor Resp,None,Unspec Time
+ ;;^UTILITY(U,$J,358.3,33570,1,4,0)
+ ;;=4^R40.2310
+ ;;^UTILITY(U,$J,358.3,33570,2)
+ ;;=^5019400
+ ;;^UTILITY(U,$J,358.3,33571,0)
+ ;;=R40.4^^119^1582^38
+ ;;^UTILITY(U,$J,358.3,33571,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15388,1,3,0)
- ;;=3^Open Wound of Right Middle Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15388,1,4,0)
- ;;=4^S61.302A
- ;;^UTILITY(U,$J,358.3,15388,2)
- ;;=^5032894
- ;;^UTILITY(U,$J,358.3,15389,0)
- ;;=S61.303A^^85^817^22
- ;;^UTILITY(U,$J,358.3,15389,1,0)
+ ;;^UTILITY(U,$J,358.3,33571,1,3,0)
+ ;;=3^Transient Alteration of Awareness
+ ;;^UTILITY(U,$J,358.3,33571,1,4,0)
+ ;;=4^R40.4
+ ;;^UTILITY(U,$J,358.3,33571,2)
+ ;;=^5019435
+ ;;^UTILITY(U,$J,358.3,33572,0)
+ ;;=V00.811A^^119^1583^45
+ ;;^UTILITY(U,$J,358.3,33572,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15389,1,3,0)
- ;;=3^Open Wound of Left Middle Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15389,1,4,0)
- ;;=4^S61.303A
- ;;^UTILITY(U,$J,358.3,15389,2)
- ;;=^5135738
- ;;^UTILITY(U,$J,358.3,15390,0)
- ;;=S61.304A^^85^817^55
- ;;^UTILITY(U,$J,358.3,15390,1,0)
+ ;;^UTILITY(U,$J,358.3,33572,1,3,0)
+ ;;=3^Fall from Moving Wheelchair (pwered),Init Encntr
+ ;;^UTILITY(U,$J,358.3,33572,1,4,0)
+ ;;=4^V00.811A
+ ;;^UTILITY(U,$J,358.3,33572,2)
+ ;;=^5055937
+ ;;^UTILITY(U,$J,358.3,33573,0)
+ ;;=V00.811D^^119^1583^46
+ ;;^UTILITY(U,$J,358.3,33573,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15390,1,3,0)
- ;;=3^Open Wound of Right Ring Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15390,1,4,0)
- ;;=4^S61.304A
- ;;^UTILITY(U,$J,358.3,15390,2)
- ;;=^5032897
- ;;^UTILITY(U,$J,358.3,15391,0)
- ;;=S61.305A^^85^817^24
- ;;^UTILITY(U,$J,358.3,15391,1,0)
+ ;;^UTILITY(U,$J,358.3,33573,1,3,0)
+ ;;=3^Fall from Moving Wheelchair (pwered),Subs Encntr
+ ;;^UTILITY(U,$J,358.3,33573,1,4,0)
+ ;;=4^V00.811D
+ ;;^UTILITY(U,$J,358.3,33573,2)
+ ;;=^5055938
+ ;;^UTILITY(U,$J,358.3,33574,0)
+ ;;=V00.812A^^119^1583^133
+ ;;^UTILITY(U,$J,358.3,33574,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15391,1,3,0)
- ;;=3^Open Wound of Left Ring Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15391,1,4,0)
- ;;=4^S61.305A
- ;;^UTILITY(U,$J,358.3,15391,2)
- ;;=^5135741
- ;;^UTILITY(U,$J,358.3,15392,0)
- ;;=S61.306A^^85^817^50
- ;;^UTILITY(U,$J,358.3,15392,1,0)
+ ;;^UTILITY(U,$J,358.3,33574,1,3,0)
+ ;;=3^Wheelchair Colliding w/ Stationary Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33574,1,4,0)
+ ;;=4^V00.812A
+ ;;^UTILITY(U,$J,358.3,33574,2)
+ ;;=^5055940
+ ;;^UTILITY(U,$J,358.3,33575,0)
+ ;;=V00.812D^^119^1583^134
+ ;;^UTILITY(U,$J,358.3,33575,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15392,1,3,0)
- ;;=3^Open Wound of Right Little Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15392,1,4,0)
- ;;=4^S61.306A
- ;;^UTILITY(U,$J,358.3,15392,2)
- ;;=^5032900
- ;;^UTILITY(U,$J,358.3,15393,0)
- ;;=S61.307A^^85^817^19
- ;;^UTILITY(U,$J,358.3,15393,1,0)
+ ;;^UTILITY(U,$J,358.3,33575,1,3,0)
+ ;;=3^Wheelchair Colliding w/ Stationary Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,33575,1,4,0)
+ ;;=4^V00.812D
+ ;;^UTILITY(U,$J,358.3,33575,2)
+ ;;=^5055941
+ ;;^UTILITY(U,$J,358.3,33576,0)
+ ;;=V00.818A^^119^1583^131
+ ;;^UTILITY(U,$J,358.3,33576,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15393,1,3,0)
- ;;=3^Open Wound of Left Little Finger w/ Nail Damage,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33576,1,3,0)
+ ;;=3^Wheelchair Accident NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33576,1,4,0)
+ ;;=4^V00.818A
+ ;;^UTILITY(U,$J,358.3,33576,2)
+ ;;=^5055943
+ ;;^UTILITY(U,$J,358.3,33577,0)
+ ;;=V00.818D^^119^1583^132
+ ;;^UTILITY(U,$J,358.3,33577,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33577,1,3,0)
+ ;;=3^Wheelchair Accident NEC,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,33577,1,4,0)
+ ;;=4^V00.818D
+ ;;^UTILITY(U,$J,358.3,33577,2)
+ ;;=^5055944
+ ;;^UTILITY(U,$J,358.3,33578,0)
+ ;;=V00.831A^^119^1583^43
+ ;;^UTILITY(U,$J,358.3,33578,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33578,1,3,0)
+ ;;=3^Fall from Mobility Scooter,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33578,1,4,0)
+ ;;=4^V00.831A
+ ;;^UTILITY(U,$J,358.3,33578,2)
+ ;;=^5055955
+ ;;^UTILITY(U,$J,358.3,33579,0)
+ ;;=V00.831D^^119^1583^44
+ ;;^UTILITY(U,$J,358.3,33579,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33579,1,3,0)
+ ;;=3^Fall from Mobility Scooter,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,33579,1,4,0)
+ ;;=4^V00.831D
+ ;;^UTILITY(U,$J,358.3,33579,2)
+ ;;=^5055956
+ ;;^UTILITY(U,$J,358.3,33580,0)
+ ;;=V00.832A^^119^1583^95
+ ;;^UTILITY(U,$J,358.3,33580,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33580,1,3,0)
+ ;;=3^Mobility Scooter Colliding w/ Stationary Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33580,1,4,0)
+ ;;=4^V00.832A
+ ;;^UTILITY(U,$J,358.3,33580,2)
+ ;;=^5055958
+ ;;^UTILITY(U,$J,358.3,33581,0)
+ ;;=V00.832D^^119^1583^96
+ ;;^UTILITY(U,$J,358.3,33581,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33581,1,3,0)
+ ;;=3^Mobility Scooter Colliding w/ Stationary Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,33581,1,4,0)
+ ;;=4^V00.832D
+ ;;^UTILITY(U,$J,358.3,33581,2)
+ ;;=^5055959
+ ;;^UTILITY(U,$J,358.3,33582,0)
+ ;;=V00.838A^^119^1583^93
+ ;;^UTILITY(U,$J,358.3,33582,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33582,1,3,0)
+ ;;=3^Mobility Scooter Accident NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33582,1,4,0)
+ ;;=4^V00.838A
+ ;;^UTILITY(U,$J,358.3,33582,2)
+ ;;=^5055961
+ ;;^UTILITY(U,$J,358.3,33583,0)
+ ;;=V00.838D^^119^1583^94
+ ;;^UTILITY(U,$J,358.3,33583,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33583,1,3,0)
+ ;;=3^Mobility Scooter Accident NEC,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,33583,1,4,0)
+ ;;=4^V00.838D
+ ;;^UTILITY(U,$J,358.3,33583,2)
+ ;;=^5055962
+ ;;^UTILITY(U,$J,358.3,33584,0)
+ ;;=V00.891A^^119^1583^57
+ ;;^UTILITY(U,$J,358.3,33584,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33584,1,3,0)
+ ;;=3^Fall from Pedestrian Conveyance,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33584,1,4,0)
+ ;;=4^V00.891A
+ ;;^UTILITY(U,$J,358.3,33584,2)
+ ;;=^5055964
+ ;;^UTILITY(U,$J,358.3,33585,0)
+ ;;=V00.891D^^119^1583^58
+ ;;^UTILITY(U,$J,358.3,33585,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33585,1,3,0)
+ ;;=3^Fall from Pedestrian Conveyance,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,33585,1,4,0)
+ ;;=4^V00.891D
+ ;;^UTILITY(U,$J,358.3,33585,2)
+ ;;=^5055965
+ ;;^UTILITY(U,$J,358.3,33586,0)
+ ;;=V00.892A^^119^1583^99
+ ;;^UTILITY(U,$J,358.3,33586,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33586,1,3,0)
+ ;;=3^Pedestrian Conveyance Colliding w/ Stationary Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33586,1,4,0)
+ ;;=4^V00.892A
+ ;;^UTILITY(U,$J,358.3,33586,2)
+ ;;=^5055967
+ ;;^UTILITY(U,$J,358.3,33587,0)
+ ;;=V00.892D^^119^1583^100
+ ;;^UTILITY(U,$J,358.3,33587,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33587,1,3,0)
+ ;;=3^Pedestrian Conveyance Colliding w/ Stationary Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,33587,1,4,0)
+ ;;=4^V00.892D
+ ;;^UTILITY(U,$J,358.3,33587,2)
+ ;;=^5055968
+ ;;^UTILITY(U,$J,358.3,33588,0)
+ ;;=V00.898A^^119^1583^97
+ ;;^UTILITY(U,$J,358.3,33588,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33588,1,3,0)
+ ;;=3^Pedestrian Conveyance Accident NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33588,1,4,0)
+ ;;=4^V00.898A
+ ;;^UTILITY(U,$J,358.3,33588,2)
+ ;;=^5055970
+ ;;^UTILITY(U,$J,358.3,33589,0)
+ ;;=V00.898D^^119^1583^98
+ ;;^UTILITY(U,$J,358.3,33589,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33589,1,3,0)
+ ;;=3^Pedestrian Conveyance Accident NEC,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,33589,1,4,0)
+ ;;=4^V00.898D
+ ;;^UTILITY(U,$J,358.3,33589,2)
+ ;;=^5055971
+ ;;^UTILITY(U,$J,358.3,33590,0)
+ ;;=W00.0XXA^^119^1583^79
+ ;;^UTILITY(U,$J,358.3,33590,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33590,1,3,0)
+ ;;=3^Fall on Same Level d/t Ice/Snow,Init Encntr
+ ;;^UTILITY(U,$J,358.3,33590,1,4,0)
+ ;;=4^W00.0XXA
+ ;;^UTILITY(U,$J,358.3,33590,2)
+ ;;=^5059510
+ ;;^UTILITY(U,$J,358.3,33591,0)
+ ;;=W00.0XXD^^119^1583^80

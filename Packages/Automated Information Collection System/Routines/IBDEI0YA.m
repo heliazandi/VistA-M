@@ -1,136 +1,284 @@
-IBDEI0YA ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0YA ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15795,1,3,0)
- ;;=3^Calculus of Kidney w/ Calculus of Ureter
- ;;^UTILITY(U,$J,358.3,15795,1,4,0)
- ;;=4^N20.2
- ;;^UTILITY(U,$J,358.3,15795,2)
- ;;=^5015609
- ;;^UTILITY(U,$J,358.3,15796,0)
- ;;=N32.0^^85^826^3
- ;;^UTILITY(U,$J,358.3,15796,1,0)
+ ;;^UTILITY(U,$J,358.3,34505,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15796,1,3,0)
- ;;=3^Bladder-Neck Obstruction
- ;;^UTILITY(U,$J,358.3,15796,1,4,0)
- ;;=4^N32.0
- ;;^UTILITY(U,$J,358.3,15796,2)
- ;;=^5015649
- ;;^UTILITY(U,$J,358.3,15797,0)
- ;;=N31.1^^85^826^33
- ;;^UTILITY(U,$J,358.3,15797,1,0)
+ ;;^UTILITY(U,$J,358.3,34505,1,3,0)
+ ;;=3^Pericarditis in Systemic Lupus Erythematosus
+ ;;^UTILITY(U,$J,358.3,34505,1,4,0)
+ ;;=4^M32.12
+ ;;^UTILITY(U,$J,358.3,34505,2)
+ ;;=^5011755
+ ;;^UTILITY(U,$J,358.3,34506,0)
+ ;;=E87.8^^125^1635^3
+ ;;^UTILITY(U,$J,358.3,34506,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15797,1,3,0)
- ;;=3^Reflex Neuropathic Bladder NEC
- ;;^UTILITY(U,$J,358.3,15797,1,4,0)
- ;;=4^N31.1
- ;;^UTILITY(U,$J,358.3,15797,2)
- ;;=^5015645
- ;;^UTILITY(U,$J,358.3,15798,0)
- ;;=N31.9^^85^826^29
- ;;^UTILITY(U,$J,358.3,15798,1,0)
+ ;;^UTILITY(U,$J,358.3,34506,1,3,0)
+ ;;=3^Electrolyte/Fluid Balance Disorders NEC
+ ;;^UTILITY(U,$J,358.3,34506,1,4,0)
+ ;;=4^E87.8
+ ;;^UTILITY(U,$J,358.3,34506,2)
+ ;;=^5003026
+ ;;^UTILITY(U,$J,358.3,34507,0)
+ ;;=E11.9^^125^1635^2
+ ;;^UTILITY(U,$J,358.3,34507,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15798,1,3,0)
- ;;=3^Neuromuscular Dysfunction of Bladder,Unspec
- ;;^UTILITY(U,$J,358.3,15798,1,4,0)
- ;;=4^N31.9
- ;;^UTILITY(U,$J,358.3,15798,2)
- ;;=^5015648
- ;;^UTILITY(U,$J,358.3,15799,0)
- ;;=N31.0^^85^826^36
- ;;^UTILITY(U,$J,358.3,15799,1,0)
+ ;;^UTILITY(U,$J,358.3,34507,1,3,0)
+ ;;=3^DM Type 2 w/o Complications
+ ;;^UTILITY(U,$J,358.3,34507,1,4,0)
+ ;;=4^E11.9
+ ;;^UTILITY(U,$J,358.3,34507,2)
+ ;;=^5002666
+ ;;^UTILITY(U,$J,358.3,34508,0)
+ ;;=E10.9^^125^1635^1
+ ;;^UTILITY(U,$J,358.3,34508,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15799,1,3,0)
- ;;=3^Uninhibited Neuropathic Bladder NEC
- ;;^UTILITY(U,$J,358.3,15799,1,4,0)
- ;;=4^N31.0
- ;;^UTILITY(U,$J,358.3,15799,2)
- ;;=^5015644
- ;;^UTILITY(U,$J,358.3,15800,0)
- ;;=N35.9^^85^826^37
- ;;^UTILITY(U,$J,358.3,15800,1,0)
+ ;;^UTILITY(U,$J,358.3,34508,1,3,0)
+ ;;=3^DM Type 1 w/o Complications
+ ;;^UTILITY(U,$J,358.3,34508,1,4,0)
+ ;;=4^E10.9
+ ;;^UTILITY(U,$J,358.3,34508,2)
+ ;;=^5002626
+ ;;^UTILITY(U,$J,358.3,34509,0)
+ ;;=Z79.4^^125^1635^4
+ ;;^UTILITY(U,$J,358.3,34509,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15800,1,3,0)
- ;;=3^Urethral Stricture,Unspec
- ;;^UTILITY(U,$J,358.3,15800,1,4,0)
- ;;=4^N35.9
- ;;^UTILITY(U,$J,358.3,15800,2)
- ;;=^5015671
- ;;^UTILITY(U,$J,358.3,15801,0)
- ;;=N39.0^^85^826^35
- ;;^UTILITY(U,$J,358.3,15801,1,0)
+ ;;^UTILITY(U,$J,358.3,34509,1,3,0)
+ ;;=3^Long Term Use of Insulin
+ ;;^UTILITY(U,$J,358.3,34509,1,4,0)
+ ;;=4^Z79.4
+ ;;^UTILITY(U,$J,358.3,34509,2)
+ ;;=^5063334
+ ;;^UTILITY(U,$J,358.3,34510,0)
+ ;;=H60.03^^125^1636^1
+ ;;^UTILITY(U,$J,358.3,34510,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15801,1,3,0)
- ;;=3^UTI,Unspec Site
- ;;^UTILITY(U,$J,358.3,15801,1,4,0)
- ;;=4^N39.0
- ;;^UTILITY(U,$J,358.3,15801,2)
- ;;=^124436
- ;;^UTILITY(U,$J,358.3,15802,0)
- ;;=R31.9^^85^826^21
- ;;^UTILITY(U,$J,358.3,15802,1,0)
+ ;;^UTILITY(U,$J,358.3,34510,1,3,0)
+ ;;=3^Abscess Bilateral External Ear
+ ;;^UTILITY(U,$J,358.3,34510,1,4,0)
+ ;;=4^H60.03
+ ;;^UTILITY(U,$J,358.3,34510,2)
+ ;;=^5006438
+ ;;^UTILITY(U,$J,358.3,34511,0)
+ ;;=H60.02^^125^1636^2
+ ;;^UTILITY(U,$J,358.3,34511,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15802,1,3,0)
- ;;=3^Hematuria,Unspec
- ;;^UTILITY(U,$J,358.3,15802,1,4,0)
- ;;=4^R31.9
- ;;^UTILITY(U,$J,358.3,15802,2)
- ;;=^5019328
- ;;^UTILITY(U,$J,358.3,15803,0)
- ;;=R31.0^^85^826^20
- ;;^UTILITY(U,$J,358.3,15803,1,0)
+ ;;^UTILITY(U,$J,358.3,34511,1,3,0)
+ ;;=3^Abscess Left External Ear
+ ;;^UTILITY(U,$J,358.3,34511,1,4,0)
+ ;;=4^H60.02
+ ;;^UTILITY(U,$J,358.3,34511,2)
+ ;;=^5006437
+ ;;^UTILITY(U,$J,358.3,34512,0)
+ ;;=H60.01^^125^1636^3
+ ;;^UTILITY(U,$J,358.3,34512,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15803,1,3,0)
- ;;=3^Gross Hematuria
- ;;^UTILITY(U,$J,358.3,15803,1,4,0)
- ;;=4^R31.0
- ;;^UTILITY(U,$J,358.3,15803,2)
- ;;=^5019325
- ;;^UTILITY(U,$J,358.3,15804,0)
- ;;=R31.1^^85^826^1
- ;;^UTILITY(U,$J,358.3,15804,1,0)
+ ;;^UTILITY(U,$J,358.3,34512,1,3,0)
+ ;;=3^Abscess Right External Ear
+ ;;^UTILITY(U,$J,358.3,34512,1,4,0)
+ ;;=4^H60.01
+ ;;^UTILITY(U,$J,358.3,34512,2)
+ ;;=^5006436
+ ;;^UTILITY(U,$J,358.3,34513,0)
+ ;;=H60.13^^125^1636^5
+ ;;^UTILITY(U,$J,358.3,34513,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15804,1,3,0)
- ;;=3^Benign Essential Microscopic Hematuria
- ;;^UTILITY(U,$J,358.3,15804,1,4,0)
- ;;=4^R31.1
- ;;^UTILITY(U,$J,358.3,15804,2)
- ;;=^5019326
- ;;^UTILITY(U,$J,358.3,15805,0)
- ;;=R31.2^^85^826^28
- ;;^UTILITY(U,$J,358.3,15805,1,0)
+ ;;^UTILITY(U,$J,358.3,34513,1,3,0)
+ ;;=3^Cellulitis Bilateral External Ear
+ ;;^UTILITY(U,$J,358.3,34513,1,4,0)
+ ;;=4^H60.13
+ ;;^UTILITY(U,$J,358.3,34513,2)
+ ;;=^5006442
+ ;;^UTILITY(U,$J,358.3,34514,0)
+ ;;=H60.12^^125^1636^6
+ ;;^UTILITY(U,$J,358.3,34514,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15805,1,3,0)
- ;;=3^Microscopic Hematuria NEC
- ;;^UTILITY(U,$J,358.3,15805,1,4,0)
- ;;=4^R31.2
- ;;^UTILITY(U,$J,358.3,15805,2)
- ;;=^5019327
- ;;^UTILITY(U,$J,358.3,15806,0)
- ;;=N40.0^^85^826^6
- ;;^UTILITY(U,$J,358.3,15806,1,0)
+ ;;^UTILITY(U,$J,358.3,34514,1,3,0)
+ ;;=3^Cellulitis Left External Ear
+ ;;^UTILITY(U,$J,358.3,34514,1,4,0)
+ ;;=4^H60.12
+ ;;^UTILITY(U,$J,358.3,34514,2)
+ ;;=^5006441
+ ;;^UTILITY(U,$J,358.3,34515,0)
+ ;;=H60.11^^125^1636^7
+ ;;^UTILITY(U,$J,358.3,34515,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15806,1,3,0)
- ;;=3^Enlarged Prostate w/o Lower Urinary Tract Symptoms
- ;;^UTILITY(U,$J,358.3,15806,1,4,0)
- ;;=4^N40.0
- ;;^UTILITY(U,$J,358.3,15806,2)
- ;;=^5015689
- ;;^UTILITY(U,$J,358.3,15807,0)
- ;;=N42.89^^85^826^32
- ;;^UTILITY(U,$J,358.3,15807,1,0)
+ ;;^UTILITY(U,$J,358.3,34515,1,3,0)
+ ;;=3^Cellulitis Right External Ear
+ ;;^UTILITY(U,$J,358.3,34515,1,4,0)
+ ;;=4^H60.11
+ ;;^UTILITY(U,$J,358.3,34515,2)
+ ;;=^5006440
+ ;;^UTILITY(U,$J,358.3,34516,0)
+ ;;=H60.323^^125^1636^8
+ ;;^UTILITY(U,$J,358.3,34516,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15807,1,3,0)
- ;;=3^Prostate Disorders NEC
- ;;^UTILITY(U,$J,358.3,15807,1,4,0)
- ;;=4^N42.89
- ;;^UTILITY(U,$J,358.3,15807,2)
- ;;=^270425
- ;;^UTILITY(U,$J,358.3,15808,0)
- ;;=N41.9^^85^826^23
- ;;^UTILITY(U,$J,358.3,15808,1,0)
+ ;;^UTILITY(U,$J,358.3,34516,1,3,0)
+ ;;=3^Hemorrhagic Bilateral Otitis Externa
+ ;;^UTILITY(U,$J,358.3,34516,1,4,0)
+ ;;=4^H60.323
+ ;;^UTILITY(U,$J,358.3,34516,2)
+ ;;=^5006453
+ ;;^UTILITY(U,$J,358.3,34517,0)
+ ;;=H60.322^^125^1636^9
+ ;;^UTILITY(U,$J,358.3,34517,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15808,1,3,0)
- ;;=3^Inflammatory Disease of Prostate,Unspec
+ ;;^UTILITY(U,$J,358.3,34517,1,3,0)
+ ;;=3^Hemorrhagic Left Otitis Externa
+ ;;^UTILITY(U,$J,358.3,34517,1,4,0)
+ ;;=4^H60.322
+ ;;^UTILITY(U,$J,358.3,34517,2)
+ ;;=^5006452
+ ;;^UTILITY(U,$J,358.3,34518,0)
+ ;;=H60.321^^125^1636^10
+ ;;^UTILITY(U,$J,358.3,34518,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34518,1,3,0)
+ ;;=3^Hemorrhagic Right Otitis Externa
+ ;;^UTILITY(U,$J,358.3,34518,1,4,0)
+ ;;=4^H60.321
+ ;;^UTILITY(U,$J,358.3,34518,2)
+ ;;=^5006451
+ ;;^UTILITY(U,$J,358.3,34519,0)
+ ;;=H60.393^^125^1636^11
+ ;;^UTILITY(U,$J,358.3,34519,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34519,1,3,0)
+ ;;=3^Infective Bilateral Otitis Externa NEC
+ ;;^UTILITY(U,$J,358.3,34519,1,4,0)
+ ;;=4^H60.393
+ ;;^UTILITY(U,$J,358.3,34519,2)
+ ;;=^5006461
+ ;;^UTILITY(U,$J,358.3,34520,0)
+ ;;=H60.392^^125^1636^12
+ ;;^UTILITY(U,$J,358.3,34520,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34520,1,3,0)
+ ;;=3^Infective Left Otitis Externa
+ ;;^UTILITY(U,$J,358.3,34520,1,4,0)
+ ;;=4^H60.392
+ ;;^UTILITY(U,$J,358.3,34520,2)
+ ;;=^5006460
+ ;;^UTILITY(U,$J,358.3,34521,0)
+ ;;=H60.391^^125^1636^13
+ ;;^UTILITY(U,$J,358.3,34521,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34521,1,3,0)
+ ;;=3^Infective Right Otitis Externa
+ ;;^UTILITY(U,$J,358.3,34521,1,4,0)
+ ;;=4^H60.391
+ ;;^UTILITY(U,$J,358.3,34521,2)
+ ;;=^5006459
+ ;;^UTILITY(U,$J,358.3,34522,0)
+ ;;=H66.93^^125^1636^17
+ ;;^UTILITY(U,$J,358.3,34522,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34522,1,3,0)
+ ;;=3^Otitis Media Bilateral,Unspec
+ ;;^UTILITY(U,$J,358.3,34522,1,4,0)
+ ;;=4^H66.93
+ ;;^UTILITY(U,$J,358.3,34522,2)
+ ;;=^5006642
+ ;;^UTILITY(U,$J,358.3,34523,0)
+ ;;=H66.92^^125^1636^18
+ ;;^UTILITY(U,$J,358.3,34523,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34523,1,3,0)
+ ;;=3^Otitis Media Left Ear,Unspec
+ ;;^UTILITY(U,$J,358.3,34523,1,4,0)
+ ;;=4^H66.92
+ ;;^UTILITY(U,$J,358.3,34523,2)
+ ;;=^5006641
+ ;;^UTILITY(U,$J,358.3,34524,0)
+ ;;=H66.91^^125^1636^19
+ ;;^UTILITY(U,$J,358.3,34524,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34524,1,3,0)
+ ;;=3^Otitis Media Right Ear,Unspec
+ ;;^UTILITY(U,$J,358.3,34524,1,4,0)
+ ;;=4^H66.91
+ ;;^UTILITY(U,$J,358.3,34524,2)
+ ;;=^5006640
+ ;;^UTILITY(U,$J,358.3,34525,0)
+ ;;=H60.93^^125^1636^14
+ ;;^UTILITY(U,$J,358.3,34525,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34525,1,3,0)
+ ;;=3^Otitis Externa Bilateral,Unspec
+ ;;^UTILITY(U,$J,358.3,34525,1,4,0)
+ ;;=4^H60.93
+ ;;^UTILITY(U,$J,358.3,34525,2)
+ ;;=^5006498
+ ;;^UTILITY(U,$J,358.3,34526,0)
+ ;;=H60.92^^125^1636^15
+ ;;^UTILITY(U,$J,358.3,34526,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34526,1,3,0)
+ ;;=3^Otitis Externa Left Ear,Unspec
+ ;;^UTILITY(U,$J,358.3,34526,1,4,0)
+ ;;=4^H60.92
+ ;;^UTILITY(U,$J,358.3,34526,2)
+ ;;=^5133525
+ ;;^UTILITY(U,$J,358.3,34527,0)
+ ;;=H60.91^^125^1636^16
+ ;;^UTILITY(U,$J,358.3,34527,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34527,1,3,0)
+ ;;=3^Otitis Externa Right Ear,Unspec
+ ;;^UTILITY(U,$J,358.3,34527,1,4,0)
+ ;;=4^H60.91
+ ;;^UTILITY(U,$J,358.3,34527,2)
+ ;;=^5133524
+ ;;^UTILITY(U,$J,358.3,34528,0)
+ ;;=J30.9^^125^1636^4
+ ;;^UTILITY(U,$J,358.3,34528,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34528,1,3,0)
+ ;;=3^Allergic Rhinitis,Unspec
+ ;;^UTILITY(U,$J,358.3,34528,1,4,0)
+ ;;=4^J30.9
+ ;;^UTILITY(U,$J,358.3,34528,2)
+ ;;=^5008205
+ ;;^UTILITY(U,$J,358.3,34529,0)
+ ;;=J38.00^^125^1636^20
+ ;;^UTILITY(U,$J,358.3,34529,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34529,1,3,0)
+ ;;=3^Paralysis of Vocal Cords/Larynx,Unspec
+ ;;^UTILITY(U,$J,358.3,34529,1,4,0)
+ ;;=4^J38.00
+ ;;^UTILITY(U,$J,358.3,34529,2)
+ ;;=^5008219
+ ;;^UTILITY(U,$J,358.3,34530,0)
+ ;;=K92.2^^125^1637^2
+ ;;^UTILITY(U,$J,358.3,34530,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34530,1,3,0)
+ ;;=3^Gastrointestinal Hemorrhage,Unspec
+ ;;^UTILITY(U,$J,358.3,34530,1,4,0)
+ ;;=4^K92.2
+ ;;^UTILITY(U,$J,358.3,34530,2)
+ ;;=^5008915
+ ;;^UTILITY(U,$J,358.3,34531,0)
+ ;;=K27.9^^125^1637^3
+ ;;^UTILITY(U,$J,358.3,34531,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34531,1,3,0)
+ ;;=3^Peptic Ulcer w/o Hemorrhage/Perforation,Unspec Site
+ ;;^UTILITY(U,$J,358.3,34531,1,4,0)
+ ;;=4^K27.9
+ ;;^UTILITY(U,$J,358.3,34531,2)
+ ;;=^5008536
+ ;;^UTILITY(U,$J,358.3,34532,0)
+ ;;=K46.9^^125^1637^1
+ ;;^UTILITY(U,$J,358.3,34532,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34532,1,3,0)
+ ;;=3^Abdominal Hernia w/o Obstruction/Gangrene,Unspec
+ ;;^UTILITY(U,$J,358.3,34532,1,4,0)
+ ;;=4^K46.9
+ ;;^UTILITY(U,$J,358.3,34532,2)
+ ;;=^5008623
+ ;;^UTILITY(U,$J,358.3,34533,0)
+ ;;=N14.0^^125^1638^1

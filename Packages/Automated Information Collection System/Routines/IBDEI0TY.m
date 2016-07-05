@@ -1,128 +1,284 @@
-IBDEI0TY ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0TY ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,13779,1,2,0)
- ;;=2^Glasses Fitting, Bifocal
- ;;^UTILITY(U,$J,358.3,13779,1,3,0)
- ;;=3^92341
- ;;^UTILITY(U,$J,358.3,13780,0)
- ;;=92342^^81^767^8^^^^1
- ;;^UTILITY(U,$J,358.3,13780,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13780,1,2,0)
- ;;=2^Glasses Fitting, Multifocal
- ;;^UTILITY(U,$J,358.3,13780,1,3,0)
- ;;=3^92342
- ;;^UTILITY(U,$J,358.3,13781,0)
- ;;=92352^^81^767^7^^^^1
- ;;^UTILITY(U,$J,358.3,13781,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13781,1,2,0)
- ;;=2^Glasses Fitting, Monofocal for Aphakia
- ;;^UTILITY(U,$J,358.3,13781,1,3,0)
- ;;=3^92352
- ;;^UTILITY(U,$J,358.3,13782,0)
- ;;=92353^^81^767^9^^^^1
- ;;^UTILITY(U,$J,358.3,13782,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13782,1,2,0)
- ;;=2^Glasses Fitting, Multifocal, for Aphakia
- ;;^UTILITY(U,$J,358.3,13782,1,3,0)
- ;;=3^92353
- ;;^UTILITY(U,$J,358.3,13783,0)
- ;;=92354^^81^767^10^^^^1
- ;;^UTILITY(U,$J,358.3,13783,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13783,1,2,0)
- ;;=2^Low Vision Aid Fitting, Single Element
- ;;^UTILITY(U,$J,358.3,13783,1,3,0)
- ;;=3^92354
- ;;^UTILITY(U,$J,358.3,13784,0)
- ;;=92355^^81^767^11^^^^1
- ;;^UTILITY(U,$J,358.3,13784,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13784,1,2,0)
- ;;=2^Low Vision Aid Fitting, Telescopic/Compound Lens
- ;;^UTILITY(U,$J,358.3,13784,1,3,0)
- ;;=3^92355
- ;;^UTILITY(U,$J,358.3,13785,0)
- ;;=92370^^81^767^13^^^^1
- ;;^UTILITY(U,$J,358.3,13785,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13785,1,2,0)
- ;;=2^Repair/Refit Glasses
- ;;^UTILITY(U,$J,358.3,13785,1,3,0)
- ;;=3^92370
- ;;^UTILITY(U,$J,358.3,13786,0)
- ;;=92371^^81^767^14^^^^1
- ;;^UTILITY(U,$J,358.3,13786,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13786,1,2,0)
- ;;=2^Repair/Refit Glasses for Aphakia
- ;;^UTILITY(U,$J,358.3,13786,1,3,0)
- ;;=3^92371
- ;;^UTILITY(U,$J,358.3,13787,0)
- ;;=92071^^81^767^2^^^^1
- ;;^UTILITY(U,$J,358.3,13787,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13787,1,2,0)
- ;;=2^Contact Lens Tx for Ocular Disease
- ;;^UTILITY(U,$J,358.3,13787,1,3,0)
- ;;=3^92071
- ;;^UTILITY(U,$J,358.3,13788,0)
- ;;=92072^^81^767^1^^^^1
- ;;^UTILITY(U,$J,358.3,13788,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13788,1,2,0)
- ;;=2^Contact Lens Mgmt Keratoconus,Init
- ;;^UTILITY(U,$J,358.3,13788,1,3,0)
- ;;=3^92072
- ;;^UTILITY(U,$J,358.3,13789,0)
- ;;=99024^^81^767^12^^^^1
- ;;^UTILITY(U,$J,358.3,13789,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13789,1,2,0)
- ;;=2^Postop Follow-Up Visit
- ;;^UTILITY(U,$J,358.3,13789,1,3,0)
- ;;=3^99024
- ;;^UTILITY(U,$J,358.3,13790,0)
- ;;=65430^^81^768^6^^^^1
- ;;^UTILITY(U,$J,358.3,13790,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13790,1,2,0)
- ;;=2^Corneal Scrape* (dx culture)
- ;;^UTILITY(U,$J,358.3,13790,1,3,0)
- ;;=3^65430
- ;;^UTILITY(U,$J,358.3,13791,0)
- ;;=92285^^81^768^10^^^^1
- ;;^UTILITY(U,$J,358.3,13791,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13791,1,2,0)
- ;;=2^External Eye Photography
- ;;^UTILITY(U,$J,358.3,13791,1,3,0)
- ;;=3^92285
- ;;^UTILITY(U,$J,358.3,13792,0)
- ;;=92225^^81^768^9^^^^1
- ;;^UTILITY(U,$J,358.3,13792,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13792,1,2,0)
- ;;=2^Extended Ophthalmoscopy,Initial
- ;;^UTILITY(U,$J,358.3,13792,1,3,0)
- ;;=3^92225
- ;;^UTILITY(U,$J,358.3,13793,0)
- ;;=92235^^81^768^11^^^^1
- ;;^UTILITY(U,$J,358.3,13793,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13793,1,2,0)
- ;;=2^Fluorescein Angio
- ;;^UTILITY(U,$J,358.3,13793,1,3,0)
- ;;=3^92235
- ;;^UTILITY(U,$J,358.3,13794,0)
- ;;=92250^^81^768^12^^^^1
- ;;^UTILITY(U,$J,358.3,13794,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,13794,1,2,0)
- ;;=2^Fundus Photography
- ;;^UTILITY(U,$J,358.3,13794,1,3,0)
- ;;=3^92250
+ ;;^UTILITY(U,$J,358.3,30124,0)
+ ;;=F32.0^^113^1445^17
+ ;;^UTILITY(U,$J,358.3,30124,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30124,1,3,0)
+ ;;=3^MDD,Single Episode,Mild
+ ;;^UTILITY(U,$J,358.3,30124,1,4,0)
+ ;;=4^F32.0
+ ;;^UTILITY(U,$J,358.3,30124,2)
+ ;;=^5003521
+ ;;^UTILITY(U,$J,358.3,30125,0)
+ ;;=F32.1^^113^1445^18
+ ;;^UTILITY(U,$J,358.3,30125,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30125,1,3,0)
+ ;;=3^MDD,Single Episode,Moderate
+ ;;^UTILITY(U,$J,358.3,30125,1,4,0)
+ ;;=4^F32.1
+ ;;^UTILITY(U,$J,358.3,30125,2)
+ ;;=^5003522
+ ;;^UTILITY(U,$J,358.3,30126,0)
+ ;;=F32.2^^113^1445^19
+ ;;^UTILITY(U,$J,358.3,30126,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30126,1,3,0)
+ ;;=3^MDD,Single Episode,Severe
+ ;;^UTILITY(U,$J,358.3,30126,1,4,0)
+ ;;=4^F32.2
+ ;;^UTILITY(U,$J,358.3,30126,2)
+ ;;=^5003523
+ ;;^UTILITY(U,$J,358.3,30127,0)
+ ;;=F32.3^^113^1445^14
+ ;;^UTILITY(U,$J,358.3,30127,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30127,1,3,0)
+ ;;=3^MDD,Single Episode w Psychotic Features
+ ;;^UTILITY(U,$J,358.3,30127,1,4,0)
+ ;;=4^F32.3
+ ;;^UTILITY(U,$J,358.3,30127,2)
+ ;;=^5003524
+ ;;^UTILITY(U,$J,358.3,30128,0)
+ ;;=F32.4^^113^1445^16
+ ;;^UTILITY(U,$J,358.3,30128,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30128,1,3,0)
+ ;;=3^MDD,Single Episode,In Partial Remission
+ ;;^UTILITY(U,$J,358.3,30128,1,4,0)
+ ;;=4^F32.4
+ ;;^UTILITY(U,$J,358.3,30128,2)
+ ;;=^5003525
+ ;;^UTILITY(U,$J,358.3,30129,0)
+ ;;=F32.5^^113^1445^15
+ ;;^UTILITY(U,$J,358.3,30129,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30129,1,3,0)
+ ;;=3^MDD,Single Episode,In Full Remission
+ ;;^UTILITY(U,$J,358.3,30129,1,4,0)
+ ;;=4^F32.5
+ ;;^UTILITY(U,$J,358.3,30129,2)
+ ;;=^5003526
+ ;;^UTILITY(U,$J,358.3,30130,0)
+ ;;=F33.9^^113^1445^13
+ ;;^UTILITY(U,$J,358.3,30130,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30130,1,3,0)
+ ;;=3^MDD,Recurrent Episode,Unspec
+ ;;^UTILITY(U,$J,358.3,30130,1,4,0)
+ ;;=4^F33.9
+ ;;^UTILITY(U,$J,358.3,30130,2)
+ ;;=^5003537
+ ;;^UTILITY(U,$J,358.3,30131,0)
+ ;;=F33.0^^113^1445^10
+ ;;^UTILITY(U,$J,358.3,30131,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30131,1,3,0)
+ ;;=3^MDD,Recurrent Episode,Mild
+ ;;^UTILITY(U,$J,358.3,30131,1,4,0)
+ ;;=4^F33.0
+ ;;^UTILITY(U,$J,358.3,30131,2)
+ ;;=^5003529
+ ;;^UTILITY(U,$J,358.3,30132,0)
+ ;;=F33.1^^113^1445^11
+ ;;^UTILITY(U,$J,358.3,30132,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30132,1,3,0)
+ ;;=3^MDD,Recurrent Episode,Moderate
+ ;;^UTILITY(U,$J,358.3,30132,1,4,0)
+ ;;=4^F33.1
+ ;;^UTILITY(U,$J,358.3,30132,2)
+ ;;=^5003530
+ ;;^UTILITY(U,$J,358.3,30133,0)
+ ;;=F33.2^^113^1445^12
+ ;;^UTILITY(U,$J,358.3,30133,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30133,1,3,0)
+ ;;=3^MDD,Recurrent Episode,Severe
+ ;;^UTILITY(U,$J,358.3,30133,1,4,0)
+ ;;=4^F33.2
+ ;;^UTILITY(U,$J,358.3,30133,2)
+ ;;=^5003531
+ ;;^UTILITY(U,$J,358.3,30134,0)
+ ;;=F33.3^^113^1445^7
+ ;;^UTILITY(U,$J,358.3,30134,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30134,1,3,0)
+ ;;=3^MDD,Recurrent Episode w/ Psychotic Features
+ ;;^UTILITY(U,$J,358.3,30134,1,4,0)
+ ;;=4^F33.3
+ ;;^UTILITY(U,$J,358.3,30134,2)
+ ;;=^5003532
+ ;;^UTILITY(U,$J,358.3,30135,0)
+ ;;=F33.41^^113^1445^9
+ ;;^UTILITY(U,$J,358.3,30135,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30135,1,3,0)
+ ;;=3^MDD,Recurrent Episode,In Partial Remission
+ ;;^UTILITY(U,$J,358.3,30135,1,4,0)
+ ;;=4^F33.41
+ ;;^UTILITY(U,$J,358.3,30135,2)
+ ;;=^5003534
+ ;;^UTILITY(U,$J,358.3,30136,0)
+ ;;=F33.42^^113^1445^8
+ ;;^UTILITY(U,$J,358.3,30136,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30136,1,3,0)
+ ;;=3^MDD,Recurrent Episode,In Full Remission
+ ;;^UTILITY(U,$J,358.3,30136,1,4,0)
+ ;;=4^F33.42
+ ;;^UTILITY(U,$J,358.3,30136,2)
+ ;;=^5003535
+ ;;^UTILITY(U,$J,358.3,30137,0)
+ ;;=F34.8^^113^1445^6
+ ;;^UTILITY(U,$J,358.3,30137,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30137,1,3,0)
+ ;;=3^Disruptive Mood Dysregulation Disorder
+ ;;^UTILITY(U,$J,358.3,30137,1,4,0)
+ ;;=4^F34.8
+ ;;^UTILITY(U,$J,358.3,30137,2)
+ ;;=^5003539
+ ;;^UTILITY(U,$J,358.3,30138,0)
+ ;;=F34.1^^113^1445^21
+ ;;^UTILITY(U,$J,358.3,30138,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30138,1,3,0)
+ ;;=3^Persistent Depressive Disorder (Dysthmia)
+ ;;^UTILITY(U,$J,358.3,30138,1,4,0)
+ ;;=4^F34.1
+ ;;^UTILITY(U,$J,358.3,30138,2)
+ ;;=^331913
+ ;;^UTILITY(U,$J,358.3,30139,0)
+ ;;=N94.3^^113^1445^22
+ ;;^UTILITY(U,$J,358.3,30139,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30139,1,3,0)
+ ;;=3^Premenstrual Dysphoric Disorder
+ ;;^UTILITY(U,$J,358.3,30139,1,4,0)
+ ;;=4^N94.3
+ ;;^UTILITY(U,$J,358.3,30139,2)
+ ;;=^5015919
+ ;;^UTILITY(U,$J,358.3,30140,0)
+ ;;=F06.34^^113^1445^3
+ ;;^UTILITY(U,$J,358.3,30140,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30140,1,3,0)
+ ;;=3^Depressive Disorder d/t Another Med Cond w/ Mixed Features,Unsp
+ ;;^UTILITY(U,$J,358.3,30140,1,4,0)
+ ;;=4^F06.34
+ ;;^UTILITY(U,$J,358.3,30140,2)
+ ;;=^5003060
+ ;;^UTILITY(U,$J,358.3,30141,0)
+ ;;=F32.8^^113^1445^4
+ ;;^UTILITY(U,$J,358.3,30141,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30141,1,3,0)
+ ;;=3^Depressive Disorder,Other Specified
+ ;;^UTILITY(U,$J,358.3,30141,1,4,0)
+ ;;=4^F32.8
+ ;;^UTILITY(U,$J,358.3,30141,2)
+ ;;=^5003527
+ ;;^UTILITY(U,$J,358.3,30142,0)
+ ;;=F32.9^^113^1445^5
+ ;;^UTILITY(U,$J,358.3,30142,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30142,1,3,0)
+ ;;=3^Depressive Disorder,Unsp
+ ;;^UTILITY(U,$J,358.3,30142,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,30142,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,30143,0)
+ ;;=F44.81^^113^1446^6
+ ;;^UTILITY(U,$J,358.3,30143,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30143,1,3,0)
+ ;;=3^Dissociative Identity Disorder
+ ;;^UTILITY(U,$J,358.3,30143,1,4,0)
+ ;;=4^F44.81
+ ;;^UTILITY(U,$J,358.3,30143,2)
+ ;;=^331909
+ ;;^UTILITY(U,$J,358.3,30144,0)
+ ;;=F44.9^^113^1446^5
+ ;;^UTILITY(U,$J,358.3,30144,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30144,1,3,0)
+ ;;=3^Dissociative Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30144,1,4,0)
+ ;;=4^F44.9
+ ;;^UTILITY(U,$J,358.3,30144,2)
+ ;;=^5003584
+ ;;^UTILITY(U,$J,358.3,30145,0)
+ ;;=F44.0^^113^1446^2
+ ;;^UTILITY(U,$J,358.3,30145,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30145,1,3,0)
+ ;;=3^Dissociative Amnesia
+ ;;^UTILITY(U,$J,358.3,30145,1,4,0)
+ ;;=4^F44.0
+ ;;^UTILITY(U,$J,358.3,30145,2)
+ ;;=^5003577
+ ;;^UTILITY(U,$J,358.3,30146,0)
+ ;;=F48.1^^113^1446^1
+ ;;^UTILITY(U,$J,358.3,30146,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30146,1,3,0)
+ ;;=3^Depersonalization/Derealization Disorder
+ ;;^UTILITY(U,$J,358.3,30146,1,4,0)
+ ;;=4^F48.1
+ ;;^UTILITY(U,$J,358.3,30146,2)
+ ;;=^5003593
+ ;;^UTILITY(U,$J,358.3,30147,0)
+ ;;=F44.89^^113^1446^4
+ ;;^UTILITY(U,$J,358.3,30147,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30147,1,3,0)
+ ;;=3^Dissociative Disorder,Other Specified
+ ;;^UTILITY(U,$J,358.3,30147,1,4,0)
+ ;;=4^F44.89
+ ;;^UTILITY(U,$J,358.3,30147,2)
+ ;;=^5003583
+ ;;^UTILITY(U,$J,358.3,30148,0)
+ ;;=F44.1^^113^1446^3
+ ;;^UTILITY(U,$J,358.3,30148,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30148,1,3,0)
+ ;;=3^Dissociative Amnesia w/ Dissociative Fugue
+ ;;^UTILITY(U,$J,358.3,30148,1,4,0)
+ ;;=4^F44.1
+ ;;^UTILITY(U,$J,358.3,30148,2)
+ ;;=^331908
+ ;;^UTILITY(U,$J,358.3,30149,0)
+ ;;=F50.02^^113^1447^1
+ ;;^UTILITY(U,$J,358.3,30149,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30149,1,3,0)
+ ;;=3^Anorexia Nervosa,Binge-Eating/Purging Type
+ ;;^UTILITY(U,$J,358.3,30149,1,4,0)
+ ;;=4^F50.02
+ ;;^UTILITY(U,$J,358.3,30149,2)
+ ;;=^5003599
+ ;;^UTILITY(U,$J,358.3,30150,0)
+ ;;=F50.01^^113^1447^2
+ ;;^UTILITY(U,$J,358.3,30150,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30150,1,3,0)
+ ;;=3^Anorexia Nervosa,Restricting Type
+ ;;^UTILITY(U,$J,358.3,30150,1,4,0)
+ ;;=4^F50.01
+ ;;^UTILITY(U,$J,358.3,30150,2)
+ ;;=^5003598
+ ;;^UTILITY(U,$J,358.3,30151,0)
+ ;;=F50.9^^113^1447^7
+ ;;^UTILITY(U,$J,358.3,30151,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30151,1,3,0)
+ ;;=3^Feeding/Eating Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,30151,1,4,0)
+ ;;=4^F50.9
+ ;;^UTILITY(U,$J,358.3,30151,2)
+ ;;=^5003602

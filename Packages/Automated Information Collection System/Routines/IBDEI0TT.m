@@ -1,134 +1,274 @@
-IBDEI0TT ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0TT ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,13712,2)
- ;;=^5005943
- ;;^UTILITY(U,$J,358.3,13713,0)
- ;;=H43.23^^80^763^28
- ;;^UTILITY(U,$J,358.3,13713,1,0)
+ ;;^UTILITY(U,$J,358.3,29990,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13713,1,3,0)
- ;;=3^Crystalline Deposits in Vitreous Body,Bilateral
- ;;^UTILITY(U,$J,358.3,13713,1,4,0)
- ;;=4^H43.23
- ;;^UTILITY(U,$J,358.3,13713,2)
- ;;=^5005944
- ;;^UTILITY(U,$J,358.3,13714,0)
- ;;=H43.11^^80^763^117
- ;;^UTILITY(U,$J,358.3,13714,1,0)
+ ;;^UTILITY(U,$J,358.3,29990,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonparental Child Sexual Abuse
+ ;;^UTILITY(U,$J,358.3,29990,1,4,0)
+ ;;=4^Z69.021
+ ;;^UTILITY(U,$J,358.3,29990,2)
+ ;;=^5063231
+ ;;^UTILITY(U,$J,358.3,29991,0)
+ ;;=Z69.011^^113^1441^23
+ ;;^UTILITY(U,$J,358.3,29991,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13714,1,3,0)
- ;;=3^Vitreous Hemorrhage,Right Eye
- ;;^UTILITY(U,$J,358.3,13714,1,4,0)
- ;;=4^H43.11
- ;;^UTILITY(U,$J,358.3,13714,2)
- ;;=^5005938
- ;;^UTILITY(U,$J,358.3,13715,0)
- ;;=H43.12^^80^763^116
- ;;^UTILITY(U,$J,358.3,13715,1,0)
+ ;;^UTILITY(U,$J,358.3,29991,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Parental Child Abuse
+ ;;^UTILITY(U,$J,358.3,29991,1,4,0)
+ ;;=4^Z69.011
+ ;;^UTILITY(U,$J,358.3,29991,2)
+ ;;=^5063229
+ ;;^UTILITY(U,$J,358.3,29992,0)
+ ;;=Z69.011^^113^1441^24
+ ;;^UTILITY(U,$J,358.3,29992,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13715,1,3,0)
- ;;=3^Vitreous Hemorrhage,Left Eye
- ;;^UTILITY(U,$J,358.3,13715,1,4,0)
- ;;=4^H43.12
- ;;^UTILITY(U,$J,358.3,13715,2)
- ;;=^5005939
- ;;^UTILITY(U,$J,358.3,13716,0)
- ;;=H43.391^^80^763^120
- ;;^UTILITY(U,$J,358.3,13716,1,0)
+ ;;^UTILITY(U,$J,358.3,29992,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Parental Child Neglect
+ ;;^UTILITY(U,$J,358.3,29992,1,4,0)
+ ;;=4^Z69.011
+ ;;^UTILITY(U,$J,358.3,29992,2)
+ ;;=^5063229
+ ;;^UTILITY(U,$J,358.3,29993,0)
+ ;;=Z69.011^^113^1441^25
+ ;;^UTILITY(U,$J,358.3,29993,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13716,1,3,0)
- ;;=3^Vitreous Opacities,Right Eye NEC
- ;;^UTILITY(U,$J,358.3,13716,1,4,0)
- ;;=4^H43.391
- ;;^UTILITY(U,$J,358.3,13716,2)
- ;;=^5005949
- ;;^UTILITY(U,$J,358.3,13717,0)
- ;;=H43.392^^80^763^119
- ;;^UTILITY(U,$J,358.3,13717,1,0)
+ ;;^UTILITY(U,$J,358.3,29993,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Parental Child Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,29993,1,4,0)
+ ;;=4^Z69.011
+ ;;^UTILITY(U,$J,358.3,29993,2)
+ ;;=^5063229
+ ;;^UTILITY(U,$J,358.3,29994,0)
+ ;;=Z69.011^^113^1441^26
+ ;;^UTILITY(U,$J,358.3,29994,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13717,1,3,0)
- ;;=3^Vitreous Opacities,Left Eye NEC
- ;;^UTILITY(U,$J,358.3,13717,1,4,0)
- ;;=4^H43.392
- ;;^UTILITY(U,$J,358.3,13717,2)
- ;;=^5005950
- ;;^UTILITY(U,$J,358.3,13718,0)
- ;;=H43.393^^80^763^118
- ;;^UTILITY(U,$J,358.3,13718,1,0)
+ ;;^UTILITY(U,$J,358.3,29994,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Parental Child Sexual Abuse
+ ;;^UTILITY(U,$J,358.3,29994,1,4,0)
+ ;;=4^Z69.011
+ ;;^UTILITY(U,$J,358.3,29994,2)
+ ;;=^5063229
+ ;;^UTILITY(U,$J,358.3,29995,0)
+ ;;=Z69.12^^113^1441^17
+ ;;^UTILITY(U,$J,358.3,29995,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13718,1,3,0)
- ;;=3^Vitreous Opacities,Bilateral NEC
- ;;^UTILITY(U,$J,358.3,13718,1,4,0)
- ;;=4^H43.393
- ;;^UTILITY(U,$J,358.3,13718,2)
- ;;=^5005951
- ;;^UTILITY(U,$J,358.3,13719,0)
- ;;=H43.01^^80^763^123
- ;;^UTILITY(U,$J,358.3,13719,1,0)
+ ;;^UTILITY(U,$J,358.3,29995,1,3,0)
+ ;;=3^MH SVC for Perpetrator of Spousal/Partner Neglect
+ ;;^UTILITY(U,$J,358.3,29995,1,4,0)
+ ;;=4^Z69.12
+ ;;^UTILITY(U,$J,358.3,29995,2)
+ ;;=^5063233
+ ;;^UTILITY(U,$J,358.3,29996,0)
+ ;;=Z69.12^^113^1441^28
+ ;;^UTILITY(U,$J,358.3,29996,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13719,1,3,0)
- ;;=3^Vitreous Prolapse,Right Eye
- ;;^UTILITY(U,$J,358.3,13719,1,4,0)
- ;;=4^H43.01
- ;;^UTILITY(U,$J,358.3,13719,2)
- ;;=^5005934
- ;;^UTILITY(U,$J,358.3,13720,0)
- ;;=H43.02^^80^763^122
- ;;^UTILITY(U,$J,358.3,13720,1,0)
+ ;;^UTILITY(U,$J,358.3,29996,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Spousal/Partner Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,29996,1,4,0)
+ ;;=4^Z69.12
+ ;;^UTILITY(U,$J,358.3,29996,2)
+ ;;=^5063233
+ ;;^UTILITY(U,$J,358.3,29997,0)
+ ;;=Z69.12^^113^1441^29
+ ;;^UTILITY(U,$J,358.3,29997,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13720,1,3,0)
- ;;=3^Vitreous Prolapse,Left Eye
- ;;^UTILITY(U,$J,358.3,13720,1,4,0)
- ;;=4^H43.02
- ;;^UTILITY(U,$J,358.3,13720,2)
- ;;=^5005935
- ;;^UTILITY(U,$J,358.3,13721,0)
- ;;=H43.03^^80^763^121
- ;;^UTILITY(U,$J,358.3,13721,1,0)
+ ;;^UTILITY(U,$J,358.3,29997,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Spousal/Partner Violence,Sexual
+ ;;^UTILITY(U,$J,358.3,29997,1,4,0)
+ ;;=4^Z69.12
+ ;;^UTILITY(U,$J,358.3,29997,2)
+ ;;=^5063233
+ ;;^UTILITY(U,$J,358.3,29998,0)
+ ;;=Z69.11^^113^1441^32
+ ;;^UTILITY(U,$J,358.3,29998,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13721,1,3,0)
- ;;=3^Vitreous Prolapse,Bilateral
- ;;^UTILITY(U,$J,358.3,13721,1,4,0)
- ;;=4^H43.03
- ;;^UTILITY(U,$J,358.3,13721,2)
- ;;=^5005936
- ;;^UTILITY(U,$J,358.3,13722,0)
- ;;=H43.821^^80^763^115
- ;;^UTILITY(U,$J,358.3,13722,1,0)
+ ;;^UTILITY(U,$J,358.3,29998,1,3,0)
+ ;;=3^MH Svc for Victim of Spousal/Partner Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,29998,1,4,0)
+ ;;=4^Z69.11
+ ;;^UTILITY(U,$J,358.3,29998,2)
+ ;;=^5063232
+ ;;^UTILITY(U,$J,358.3,29999,0)
+ ;;=Z69.11^^113^1441^33
+ ;;^UTILITY(U,$J,358.3,29999,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13722,1,3,0)
- ;;=3^Vitreomacular Adhesion,Right Eye
- ;;^UTILITY(U,$J,358.3,13722,1,4,0)
- ;;=4^H43.821
- ;;^UTILITY(U,$J,358.3,13722,2)
- ;;=^5005957
- ;;^UTILITY(U,$J,358.3,13723,0)
- ;;=H43.822^^80^763^114
- ;;^UTILITY(U,$J,358.3,13723,1,0)
+ ;;^UTILITY(U,$J,358.3,29999,1,3,0)
+ ;;=3^MH Svc for Victim of Spousal/Partner Violence,Physical
+ ;;^UTILITY(U,$J,358.3,29999,1,4,0)
+ ;;=4^Z69.11
+ ;;^UTILITY(U,$J,358.3,29999,2)
+ ;;=^5063232
+ ;;^UTILITY(U,$J,358.3,30000,0)
+ ;;=Z69.11^^113^1441^34
+ ;;^UTILITY(U,$J,358.3,30000,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13723,1,3,0)
- ;;=3^Vitreomacular Adhesion,Left Eye
- ;;^UTILITY(U,$J,358.3,13723,1,4,0)
- ;;=4^H43.822
- ;;^UTILITY(U,$J,358.3,13723,2)
- ;;=^5005958
- ;;^UTILITY(U,$J,358.3,13724,0)
- ;;=H43.823^^80^763^113
- ;;^UTILITY(U,$J,358.3,13724,1,0)
+ ;;^UTILITY(U,$J,358.3,30000,1,3,0)
+ ;;=3^MH Svc for Victim of Spousal/Partner Violence,Sexual
+ ;;^UTILITY(U,$J,358.3,30000,1,4,0)
+ ;;=4^Z69.11
+ ;;^UTILITY(U,$J,358.3,30000,2)
+ ;;=^5063232
+ ;;^UTILITY(U,$J,358.3,30001,0)
+ ;;=Z62.812^^113^1441^36
+ ;;^UTILITY(U,$J,358.3,30001,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13724,1,3,0)
- ;;=3^Vitreomacular Adhesion,Bilateral
- ;;^UTILITY(U,$J,358.3,13724,1,4,0)
- ;;=4^H43.823
- ;;^UTILITY(U,$J,358.3,13724,2)
- ;;=^5005959
- ;;^UTILITY(U,$J,358.3,13725,0)
- ;;=H35.31^^80^763^63
- ;;^UTILITY(U,$J,358.3,13725,1,0)
+ ;;^UTILITY(U,$J,358.3,30001,1,3,0)
+ ;;=3^Personal Past Hx of Childhood Neglect
+ ;;^UTILITY(U,$J,358.3,30001,1,4,0)
+ ;;=4^Z62.812
+ ;;^UTILITY(U,$J,358.3,30001,2)
+ ;;=^5063155
+ ;;^UTILITY(U,$J,358.3,30002,0)
+ ;;=Z62.810^^113^1441^37
+ ;;^UTILITY(U,$J,358.3,30002,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13725,1,3,0)
- ;;=3^Nonexudative Age-Related Macular Degeneration
- ;;^UTILITY(U,$J,358.3,13725,1,4,0)
- ;;=4^H35.31
+ ;;^UTILITY(U,$J,358.3,30002,1,3,0)
+ ;;=3^Personal Past Hx of Childhood Physical Abuse
+ ;;^UTILITY(U,$J,358.3,30002,1,4,0)
+ ;;=4^Z62.810
+ ;;^UTILITY(U,$J,358.3,30002,2)
+ ;;=^5063153
+ ;;^UTILITY(U,$J,358.3,30003,0)
+ ;;=Z62.810^^113^1441^39
+ ;;^UTILITY(U,$J,358.3,30003,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30003,1,3,0)
+ ;;=3^Personal Past Hx of Childhood Sexual Abuse
+ ;;^UTILITY(U,$J,358.3,30003,1,4,0)
+ ;;=4^Z62.810
+ ;;^UTILITY(U,$J,358.3,30003,2)
+ ;;=^5063153
+ ;;^UTILITY(U,$J,358.3,30004,0)
+ ;;=Z62.811^^113^1441^38
+ ;;^UTILITY(U,$J,358.3,30004,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30004,1,3,0)
+ ;;=3^Personal Past Hx of Childhood Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,30004,1,4,0)
+ ;;=4^Z62.811
+ ;;^UTILITY(U,$J,358.3,30004,2)
+ ;;=^5063154
+ ;;^UTILITY(U,$J,358.3,30005,0)
+ ;;=Z91.410^^113^1441^42
+ ;;^UTILITY(U,$J,358.3,30005,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30005,1,3,0)
+ ;;=3^Personal Past Hx of Spouse or Partner Violence,Sexual
+ ;;^UTILITY(U,$J,358.3,30005,1,4,0)
+ ;;=4^Z91.410
+ ;;^UTILITY(U,$J,358.3,30005,2)
+ ;;=^5063619
+ ;;^UTILITY(U,$J,358.3,30006,0)
+ ;;=F06.4^^113^1442^3
+ ;;^UTILITY(U,$J,358.3,30006,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30006,1,3,0)
+ ;;=3^Anxiety Disorder d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,30006,1,4,0)
+ ;;=4^F06.4
+ ;;^UTILITY(U,$J,358.3,30006,2)
+ ;;=^5003061
+ ;;^UTILITY(U,$J,358.3,30007,0)
+ ;;=F41.0^^113^1442^12
+ ;;^UTILITY(U,$J,358.3,30007,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30007,1,3,0)
+ ;;=3^Panic Disorder
+ ;;^UTILITY(U,$J,358.3,30007,1,4,0)
+ ;;=4^F41.0
+ ;;^UTILITY(U,$J,358.3,30007,2)
+ ;;=^5003564
+ ;;^UTILITY(U,$J,358.3,30008,0)
+ ;;=F41.1^^113^1442^10
+ ;;^UTILITY(U,$J,358.3,30008,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30008,1,3,0)
+ ;;=3^Generalized Anxiety Disorder
+ ;;^UTILITY(U,$J,358.3,30008,1,4,0)
+ ;;=4^F41.1
+ ;;^UTILITY(U,$J,358.3,30008,2)
+ ;;=^50059
+ ;;^UTILITY(U,$J,358.3,30009,0)
+ ;;=F40.10^^113^1442^17
+ ;;^UTILITY(U,$J,358.3,30009,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30009,1,3,0)
+ ;;=3^Social Anxiety Disorder (Social Phobia)
+ ;;^UTILITY(U,$J,358.3,30009,1,4,0)
+ ;;=4^F40.10
+ ;;^UTILITY(U,$J,358.3,30009,2)
+ ;;=^5003544
+ ;;^UTILITY(U,$J,358.3,30010,0)
+ ;;=F40.218^^113^1442^2
+ ;;^UTILITY(U,$J,358.3,30010,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30010,1,3,0)
+ ;;=3^Animal Phobia
+ ;;^UTILITY(U,$J,358.3,30010,1,4,0)
+ ;;=4^F40.218
+ ;;^UTILITY(U,$J,358.3,30010,2)
+ ;;=^5003547
+ ;;^UTILITY(U,$J,358.3,30011,0)
+ ;;=F40.228^^113^1442^11
+ ;;^UTILITY(U,$J,358.3,30011,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30011,1,3,0)
+ ;;=3^Natural Environment Phobia
+ ;;^UTILITY(U,$J,358.3,30011,1,4,0)
+ ;;=4^F40.228
+ ;;^UTILITY(U,$J,358.3,30011,2)
+ ;;=^5003549
+ ;;^UTILITY(U,$J,358.3,30012,0)
+ ;;=F40.230^^113^1442^6
+ ;;^UTILITY(U,$J,358.3,30012,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30012,1,3,0)
+ ;;=3^Fear of Blood
+ ;;^UTILITY(U,$J,358.3,30012,1,4,0)
+ ;;=4^F40.230
+ ;;^UTILITY(U,$J,358.3,30012,2)
+ ;;=^5003550
+ ;;^UTILITY(U,$J,358.3,30013,0)
+ ;;=F40.231^^113^1442^7
+ ;;^UTILITY(U,$J,358.3,30013,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30013,1,3,0)
+ ;;=3^Fear of Injections & Transfusions
+ ;;^UTILITY(U,$J,358.3,30013,1,4,0)
+ ;;=4^F40.231
+ ;;^UTILITY(U,$J,358.3,30013,2)
+ ;;=^5003551
+ ;;^UTILITY(U,$J,358.3,30014,0)
+ ;;=F40.232^^113^1442^9
+ ;;^UTILITY(U,$J,358.3,30014,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30014,1,3,0)
+ ;;=3^Fear of Other Medical Care
+ ;;^UTILITY(U,$J,358.3,30014,1,4,0)
+ ;;=4^F40.232
+ ;;^UTILITY(U,$J,358.3,30014,2)
+ ;;=^5003552
+ ;;^UTILITY(U,$J,358.3,30015,0)
+ ;;=F40.233^^113^1442^8
+ ;;^UTILITY(U,$J,358.3,30015,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30015,1,3,0)
+ ;;=3^Fear of Injury
+ ;;^UTILITY(U,$J,358.3,30015,1,4,0)
+ ;;=4^F40.233
+ ;;^UTILITY(U,$J,358.3,30015,2)
+ ;;=^5003553
+ ;;^UTILITY(U,$J,358.3,30016,0)
+ ;;=F40.248^^113^1442^16
+ ;;^UTILITY(U,$J,358.3,30016,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,30016,1,3,0)
+ ;;=3^Situational Phobia 
+ ;;^UTILITY(U,$J,358.3,30016,1,4,0)
+ ;;=4^F40.248
+ ;;^UTILITY(U,$J,358.3,30016,2)
+ ;;=^5003558
+ ;;^UTILITY(U,$J,358.3,30017,0)
+ ;;=F93.0^^113^1442^15

@@ -1,130 +1,290 @@
-IBDEI04T ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI04T ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1563,0)
- ;;=T49.6X6A^^14^156^86
- ;;^UTILITY(U,$J,358.3,1563,1,0)
+ ;;^UTILITY(U,$J,358.3,4554,1,4,0)
+ ;;=4^J84.17
+ ;;^UTILITY(U,$J,358.3,4554,2)
+ ;;=^5008301
+ ;;^UTILITY(U,$J,358.3,4555,0)
+ ;;=J98.4^^30^319^20
+ ;;^UTILITY(U,$J,358.3,4555,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1563,1,3,0)
- ;;=3^Underdosing of otorhino drugs and preparations, init
- ;;^UTILITY(U,$J,358.3,1563,1,4,0)
- ;;=4^T49.6X6A
- ;;^UTILITY(U,$J,358.3,1563,2)
- ;;=^5051929
- ;;^UTILITY(U,$J,358.3,1564,0)
- ;;=T49.6X6D^^14^156^87
- ;;^UTILITY(U,$J,358.3,1564,1,0)
+ ;;^UTILITY(U,$J,358.3,4555,1,3,0)
+ ;;=3^Lung Disorders NEC
+ ;;^UTILITY(U,$J,358.3,4555,1,4,0)
+ ;;=4^J98.4
+ ;;^UTILITY(U,$J,358.3,4555,2)
+ ;;=^5008362
+ ;;^UTILITY(U,$J,358.3,4556,0)
+ ;;=G47.30^^30^319^26
+ ;;^UTILITY(U,$J,358.3,4556,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1564,1,3,0)
- ;;=3^Underdosing of otorhino drugs and preparations, subs
- ;;^UTILITY(U,$J,358.3,1564,1,4,0)
- ;;=4^T49.6X6D
- ;;^UTILITY(U,$J,358.3,1564,2)
- ;;=^5051930
- ;;^UTILITY(U,$J,358.3,1565,0)
- ;;=T49.6X6S^^14^156^88
- ;;^UTILITY(U,$J,358.3,1565,1,0)
+ ;;^UTILITY(U,$J,358.3,4556,1,3,0)
+ ;;=3^Sleep Apnea,Unspec
+ ;;^UTILITY(U,$J,358.3,4556,1,4,0)
+ ;;=4^G47.30
+ ;;^UTILITY(U,$J,358.3,4556,2)
+ ;;=^5003977
+ ;;^UTILITY(U,$J,358.3,4557,0)
+ ;;=R06.02^^30^319^25
+ ;;^UTILITY(U,$J,358.3,4557,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1565,1,3,0)
- ;;=3^Underdosing of otorhino drugs and preparations, sequela
- ;;^UTILITY(U,$J,358.3,1565,1,4,0)
- ;;=4^T49.6X6S
- ;;^UTILITY(U,$J,358.3,1565,2)
- ;;=^5051931
- ;;^UTILITY(U,$J,358.3,1566,0)
- ;;=T36.96XA^^14^156^89
- ;;^UTILITY(U,$J,358.3,1566,1,0)
+ ;;^UTILITY(U,$J,358.3,4557,1,3,0)
+ ;;=3^Shortness of Breath
+ ;;^UTILITY(U,$J,358.3,4557,1,4,0)
+ ;;=4^R06.02
+ ;;^UTILITY(U,$J,358.3,4557,2)
+ ;;=^5019181
+ ;;^UTILITY(U,$J,358.3,4558,0)
+ ;;=R06.83^^30^319^27
+ ;;^UTILITY(U,$J,358.3,4558,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1566,1,3,0)
- ;;=3^Underdosing of unspecified systemic antibiotic, init encntr
- ;;^UTILITY(U,$J,358.3,1566,1,4,0)
- ;;=4^T36.96XA
- ;;^UTILITY(U,$J,358.3,1566,2)
- ;;=^5049433
- ;;^UTILITY(U,$J,358.3,1567,0)
- ;;=T36.96XD^^14^156^90
- ;;^UTILITY(U,$J,358.3,1567,1,0)
+ ;;^UTILITY(U,$J,358.3,4558,1,3,0)
+ ;;=3^Snoring
+ ;;^UTILITY(U,$J,358.3,4558,1,4,0)
+ ;;=4^R06.83
+ ;;^UTILITY(U,$J,358.3,4558,2)
+ ;;=^5019192
+ ;;^UTILITY(U,$J,358.3,4559,0)
+ ;;=R06.00^^30^319^18
+ ;;^UTILITY(U,$J,358.3,4559,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1567,1,3,0)
- ;;=3^Underdosing of unspecified systemic antibiotic, subs encntr
- ;;^UTILITY(U,$J,358.3,1567,1,4,0)
- ;;=4^T36.96XD
- ;;^UTILITY(U,$J,358.3,1567,2)
- ;;=^5049434
- ;;^UTILITY(U,$J,358.3,1568,0)
- ;;=T36.96XS^^14^156^91
- ;;^UTILITY(U,$J,358.3,1568,1,0)
+ ;;^UTILITY(U,$J,358.3,4559,1,3,0)
+ ;;=3^Dyspnea,Unspec
+ ;;^UTILITY(U,$J,358.3,4559,1,4,0)
+ ;;=4^R06.00
+ ;;^UTILITY(U,$J,358.3,4559,2)
+ ;;=^5019180
+ ;;^UTILITY(U,$J,358.3,4560,0)
+ ;;=R06.09^^30^319^17
+ ;;^UTILITY(U,$J,358.3,4560,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1568,1,3,0)
- ;;=3^Underdosing of unspecified systemic antibiotic, sequela
- ;;^UTILITY(U,$J,358.3,1568,1,4,0)
- ;;=4^T36.96XS
- ;;^UTILITY(U,$J,358.3,1568,2)
- ;;=^5049435
- ;;^UTILITY(U,$J,358.3,1569,0)
- ;;=Z45.320^^14^157^1
- ;;^UTILITY(U,$J,358.3,1569,1,0)
+ ;;^UTILITY(U,$J,358.3,4560,1,3,0)
+ ;;=3^Dyspnea NEC
+ ;;^UTILITY(U,$J,358.3,4560,1,4,0)
+ ;;=4^R06.09
+ ;;^UTILITY(U,$J,358.3,4560,2)
+ ;;=^5019182
+ ;;^UTILITY(U,$J,358.3,4561,0)
+ ;;=R06.89^^30^319^14
+ ;;^UTILITY(U,$J,358.3,4561,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1569,1,3,0)
- ;;=3^Adjust/Mgmt of Bone Conduction Device
- ;;^UTILITY(U,$J,358.3,1569,1,4,0)
- ;;=4^Z45.320
- ;;^UTILITY(U,$J,358.3,1569,2)
- ;;=^5063001
- ;;^UTILITY(U,$J,358.3,1570,0)
- ;;=Z45.321^^14^157^2
- ;;^UTILITY(U,$J,358.3,1570,1,0)
+ ;;^UTILITY(U,$J,358.3,4561,1,3,0)
+ ;;=3^Breathing Abnormalities NEC
+ ;;^UTILITY(U,$J,358.3,4561,1,4,0)
+ ;;=4^R06.89
+ ;;^UTILITY(U,$J,358.3,4561,2)
+ ;;=^5019193
+ ;;^UTILITY(U,$J,358.3,4562,0)
+ ;;=R22.2^^30^319^29
+ ;;^UTILITY(U,$J,358.3,4562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1570,1,3,0)
- ;;=3^Adjust/Mgmt of Cochlear Device
- ;;^UTILITY(U,$J,358.3,1570,1,4,0)
- ;;=4^Z45.321
- ;;^UTILITY(U,$J,358.3,1570,2)
- ;;=^5063002
- ;;^UTILITY(U,$J,358.3,1571,0)
- ;;=Z45.328^^14^157^3
- ;;^UTILITY(U,$J,358.3,1571,1,0)
+ ;;^UTILITY(U,$J,358.3,4562,1,3,0)
+ ;;=3^Swelling/Mass/Lump,Trunk,Localized
+ ;;^UTILITY(U,$J,358.3,4562,1,4,0)
+ ;;=4^R22.2
+ ;;^UTILITY(U,$J,358.3,4562,2)
+ ;;=^5019286
+ ;;^UTILITY(U,$J,358.3,4563,0)
+ ;;=R91.8^^30^319^1
+ ;;^UTILITY(U,$J,358.3,4563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1571,1,3,0)
- ;;=3^Adjust/Mgmt of Implanted Hearing Device
- ;;^UTILITY(U,$J,358.3,1571,1,4,0)
- ;;=4^Z45.328
- ;;^UTILITY(U,$J,358.3,1571,2)
- ;;=^5063003
- ;;^UTILITY(U,$J,358.3,1572,0)
- ;;=Z02.0^^14^157^6
- ;;^UTILITY(U,$J,358.3,1572,1,0)
+ ;;^UTILITY(U,$J,358.3,4563,1,3,0)
+ ;;=3^Abnormal Finding of Lung Field
+ ;;^UTILITY(U,$J,358.3,4563,1,4,0)
+ ;;=4^R91.8
+ ;;^UTILITY(U,$J,358.3,4563,2)
+ ;;=^5019708
+ ;;^UTILITY(U,$J,358.3,4564,0)
+ ;;=R91.1^^30^319^28
+ ;;^UTILITY(U,$J,358.3,4564,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1572,1,3,0)
- ;;=3^Exam for Admission to Educational Institution
- ;;^UTILITY(U,$J,358.3,1572,1,4,0)
- ;;=4^Z02.0
- ;;^UTILITY(U,$J,358.3,1572,2)
- ;;=^5062633
- ;;^UTILITY(U,$J,358.3,1573,0)
- ;;=Z02.2^^14^157^7
- ;;^UTILITY(U,$J,358.3,1573,1,0)
+ ;;^UTILITY(U,$J,358.3,4564,1,3,0)
+ ;;=3^Solitary Pulmonary Nodule
+ ;;^UTILITY(U,$J,358.3,4564,1,4,0)
+ ;;=4^R91.1
+ ;;^UTILITY(U,$J,358.3,4564,2)
+ ;;=^5019707
+ ;;^UTILITY(U,$J,358.3,4565,0)
+ ;;=L98.9^^30^320^1
+ ;;^UTILITY(U,$J,358.3,4565,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1573,1,3,0)
- ;;=3^Exam for Admission to Residential Institution
- ;;^UTILITY(U,$J,358.3,1573,1,4,0)
- ;;=4^Z02.2
- ;;^UTILITY(U,$J,358.3,1573,2)
- ;;=^5062635
- ;;^UTILITY(U,$J,358.3,1574,0)
- ;;=Z02.4^^14^157^8
- ;;^UTILITY(U,$J,358.3,1574,1,0)
+ ;;^UTILITY(U,$J,358.3,4565,1,3,0)
+ ;;=3^Skin/Subcutaneous Tissue Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,4565,1,4,0)
+ ;;=4^L98.9
+ ;;^UTILITY(U,$J,358.3,4565,2)
+ ;;=^5009595
+ ;;^UTILITY(U,$J,358.3,4566,0)
+ ;;=M65.351^^30^320^8
+ ;;^UTILITY(U,$J,358.3,4566,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1574,1,3,0)
- ;;=3^Exam for Driving License
- ;;^UTILITY(U,$J,358.3,1574,1,4,0)
- ;;=4^Z02.4
- ;;^UTILITY(U,$J,358.3,1574,2)
- ;;=^5062637
- ;;^UTILITY(U,$J,358.3,1575,0)
- ;;=Z02.6^^14^157^10
- ;;^UTILITY(U,$J,358.3,1575,1,0)
+ ;;^UTILITY(U,$J,358.3,4566,1,3,0)
+ ;;=3^Trigger Finger,Right Little Finger
+ ;;^UTILITY(U,$J,358.3,4566,1,4,0)
+ ;;=4^M65.351
+ ;;^UTILITY(U,$J,358.3,4566,2)
+ ;;=^5012789
+ ;;^UTILITY(U,$J,358.3,4567,0)
+ ;;=M65.352^^30^320^3
+ ;;^UTILITY(U,$J,358.3,4567,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1575,1,3,0)
- ;;=3^Exam for Insurance Purposes
+ ;;^UTILITY(U,$J,358.3,4567,1,3,0)
+ ;;=3^Trigger Finger,Left Little Finger
+ ;;^UTILITY(U,$J,358.3,4567,1,4,0)
+ ;;=4^M65.352
+ ;;^UTILITY(U,$J,358.3,4567,2)
+ ;;=^5012790
+ ;;^UTILITY(U,$J,358.3,4568,0)
+ ;;=M65.341^^30^320^10
+ ;;^UTILITY(U,$J,358.3,4568,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4568,1,3,0)
+ ;;=3^Trigger Finger,Right Ring Finger
+ ;;^UTILITY(U,$J,358.3,4568,1,4,0)
+ ;;=4^M65.341
+ ;;^UTILITY(U,$J,358.3,4568,2)
+ ;;=^5012786
+ ;;^UTILITY(U,$J,358.3,4569,0)
+ ;;=M65.342^^30^320^5
+ ;;^UTILITY(U,$J,358.3,4569,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4569,1,3,0)
+ ;;=3^Trigger Finger,Left Ring Finger
+ ;;^UTILITY(U,$J,358.3,4569,1,4,0)
+ ;;=4^M65.342
+ ;;^UTILITY(U,$J,358.3,4569,2)
+ ;;=^5012787
+ ;;^UTILITY(U,$J,358.3,4570,0)
+ ;;=M65.332^^30^320^4
+ ;;^UTILITY(U,$J,358.3,4570,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4570,1,3,0)
+ ;;=3^Trigger Finger,Left Middle Finger
+ ;;^UTILITY(U,$J,358.3,4570,1,4,0)
+ ;;=4^M65.332
+ ;;^UTILITY(U,$J,358.3,4570,2)
+ ;;=^5012784
+ ;;^UTILITY(U,$J,358.3,4571,0)
+ ;;=M65.322^^30^320^2
+ ;;^UTILITY(U,$J,358.3,4571,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4571,1,3,0)
+ ;;=3^Trigger Finger,Left Index Finger
+ ;;^UTILITY(U,$J,358.3,4571,1,4,0)
+ ;;=4^M65.322
+ ;;^UTILITY(U,$J,358.3,4571,2)
+ ;;=^5012781
+ ;;^UTILITY(U,$J,358.3,4572,0)
+ ;;=M65.331^^30^320^9
+ ;;^UTILITY(U,$J,358.3,4572,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4572,1,3,0)
+ ;;=3^Trigger Finger,Right Middle Finger
+ ;;^UTILITY(U,$J,358.3,4572,1,4,0)
+ ;;=4^M65.331
+ ;;^UTILITY(U,$J,358.3,4572,2)
+ ;;=^5012783
+ ;;^UTILITY(U,$J,358.3,4573,0)
+ ;;=M65.321^^30^320^7
+ ;;^UTILITY(U,$J,358.3,4573,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4573,1,3,0)
+ ;;=3^Trigger Finger,Right Index Finger
+ ;;^UTILITY(U,$J,358.3,4573,1,4,0)
+ ;;=4^M65.321
+ ;;^UTILITY(U,$J,358.3,4573,2)
+ ;;=^5012780
+ ;;^UTILITY(U,$J,358.3,4574,0)
+ ;;=M65.312^^30^320^6
+ ;;^UTILITY(U,$J,358.3,4574,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4574,1,3,0)
+ ;;=3^Trigger Finger,Left Thumb
+ ;;^UTILITY(U,$J,358.3,4574,1,4,0)
+ ;;=4^M65.312
+ ;;^UTILITY(U,$J,358.3,4574,2)
+ ;;=^5012778
+ ;;^UTILITY(U,$J,358.3,4575,0)
+ ;;=M65.311^^30^320^11
+ ;;^UTILITY(U,$J,358.3,4575,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4575,1,3,0)
+ ;;=3^Trigger Finger,Right Thumb
+ ;;^UTILITY(U,$J,358.3,4575,1,4,0)
+ ;;=4^M65.311
+ ;;^UTILITY(U,$J,358.3,4575,2)
+ ;;=^5012777
+ ;;^UTILITY(U,$J,358.3,4576,0)
+ ;;=E08.621^^30^321^86
+ ;;^UTILITY(U,$J,358.3,4576,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4576,1,3,0)
+ ;;=3^Diabetes d/t Underlying Condition w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,4576,1,4,0)
+ ;;=4^E08.621
+ ;;^UTILITY(U,$J,358.3,4576,2)
+ ;;=^5002534
+ ;;^UTILITY(U,$J,358.3,4577,0)
+ ;;=E09.621^^30^321^85
+ ;;^UTILITY(U,$J,358.3,4577,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4577,1,3,0)
+ ;;=3^Diabetes d/t Drug/Chemical Induced w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,4577,1,4,0)
+ ;;=4^E09.621
+ ;;^UTILITY(U,$J,358.3,4577,2)
+ ;;=^5002576
+ ;;^UTILITY(U,$J,358.3,4578,0)
+ ;;=I70.231^^30^321^22
+ ;;^UTILITY(U,$J,358.3,4578,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4578,1,3,0)
+ ;;=3^Athscl Native Arteries of Right Leg w/ Thigh Ulcer
+ ;;^UTILITY(U,$J,358.3,4578,1,4,0)
+ ;;=4^I70.231
+ ;;^UTILITY(U,$J,358.3,4578,2)
+ ;;=^5007588
+ ;;^UTILITY(U,$J,358.3,4579,0)
+ ;;=I70.232^^30^321^23
+ ;;^UTILITY(U,$J,358.3,4579,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4579,1,3,0)
+ ;;=3^Athscl Native Arteries of Right Leg w/ Calf Ulcer
+ ;;^UTILITY(U,$J,358.3,4579,1,4,0)
+ ;;=4^I70.232
+ ;;^UTILITY(U,$J,358.3,4579,2)
+ ;;=^5007589
+ ;;^UTILITY(U,$J,358.3,4580,0)
+ ;;=I70.233^^30^321^24
+ ;;^UTILITY(U,$J,358.3,4580,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4580,1,3,0)
+ ;;=3^Athscl Native Arteries of Right Leg w/ Ankle Ulcer
+ ;;^UTILITY(U,$J,358.3,4580,1,4,0)
+ ;;=4^I70.233
+ ;;^UTILITY(U,$J,358.3,4580,2)
+ ;;=^5007590
+ ;;^UTILITY(U,$J,358.3,4581,0)
+ ;;=I70.234^^30^321^25
+ ;;^UTILITY(U,$J,358.3,4581,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4581,1,3,0)
+ ;;=3^Athscl Native Arteries of Right Leg w/ Heel/Midfoot Ulcer
+ ;;^UTILITY(U,$J,358.3,4581,1,4,0)
+ ;;=4^I70.234
+ ;;^UTILITY(U,$J,358.3,4581,2)
+ ;;=^5007591
+ ;;^UTILITY(U,$J,358.3,4582,0)
+ ;;=I70.235^^30^321^26
+ ;;^UTILITY(U,$J,358.3,4582,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4582,1,3,0)
+ ;;=3^Athscl Native Arteries of Right Leg w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,4582,1,4,0)
+ ;;=4^I70.235
+ ;;^UTILITY(U,$J,358.3,4582,2)
+ ;;=^5007592
+ ;;^UTILITY(U,$J,358.3,4583,0)
+ ;;=I70.238^^30^321^27

@@ -1,130 +1,280 @@
-IBDEI0UY ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0UY ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14241,1,0)
+ ;;^UTILITY(U,$J,358.3,31126,0)
+ ;;=C06.9^^116^1526^320
+ ;;^UTILITY(U,$J,358.3,31126,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14241,1,3,0)
- ;;=3^Type 2 DM w/ Prolif DM Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,14241,1,4,0)
- ;;=4^E11.351
- ;;^UTILITY(U,$J,358.3,14241,2)
- ;;=^5002640
- ;;^UTILITY(U,$J,358.3,14242,0)
- ;;=E11.359^^82^775^71
- ;;^UTILITY(U,$J,358.3,14242,1,0)
+ ;;^UTILITY(U,$J,358.3,31126,1,3,0)
+ ;;=3^Malig Neop Mouth,Unspec
+ ;;^UTILITY(U,$J,358.3,31126,1,4,0)
+ ;;=4^C06.9
+ ;;^UTILITY(U,$J,358.3,31126,2)
+ ;;=^5000901
+ ;;^UTILITY(U,$J,358.3,31127,0)
+ ;;=C05.9^^116^1526^321
+ ;;^UTILITY(U,$J,358.3,31127,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14242,1,3,0)
- ;;=3^Type 2 DM w/ Prolif DM Retinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,14242,1,4,0)
- ;;=4^E11.359
- ;;^UTILITY(U,$J,358.3,14242,2)
- ;;=^5002641
- ;;^UTILITY(U,$J,358.3,14243,0)
- ;;=E11.341^^82^775^72
- ;;^UTILITY(U,$J,358.3,14243,1,0)
+ ;;^UTILITY(U,$J,358.3,31127,1,3,0)
+ ;;=3^Malig Neop Palate,Unspec
+ ;;^UTILITY(U,$J,358.3,31127,1,4,0)
+ ;;=4^C05.9
+ ;;^UTILITY(U,$J,358.3,31127,2)
+ ;;=^5000898
+ ;;^UTILITY(U,$J,358.3,31128,0)
+ ;;=C07.^^116^1526^322
+ ;;^UTILITY(U,$J,358.3,31128,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14243,1,3,0)
- ;;=3^Type 2 DM w/ Severe Nonprolif DM Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,14243,1,4,0)
- ;;=4^E11.341
- ;;^UTILITY(U,$J,358.3,14243,2)
- ;;=^5002638
- ;;^UTILITY(U,$J,358.3,14244,0)
- ;;=E11.349^^82^775^73
- ;;^UTILITY(U,$J,358.3,14244,1,0)
+ ;;^UTILITY(U,$J,358.3,31128,1,3,0)
+ ;;=3^Malig Neop Parotid Gland
+ ;;^UTILITY(U,$J,358.3,31128,1,4,0)
+ ;;=4^C07.
+ ;;^UTILITY(U,$J,358.3,31128,2)
+ ;;=^267005
+ ;;^UTILITY(U,$J,358.3,31129,0)
+ ;;=C44.209^^116^1526^333
+ ;;^UTILITY(U,$J,358.3,31129,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14244,1,3,0)
- ;;=3^Type 2 DM w/ Severe Nonprolif DM Retinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,14244,1,4,0)
- ;;=4^E11.349
- ;;^UTILITY(U,$J,358.3,14244,2)
- ;;=^5002639
- ;;^UTILITY(U,$J,358.3,14245,0)
- ;;=E11.9^^82^775^74
- ;;^UTILITY(U,$J,358.3,14245,1,0)
+ ;;^UTILITY(U,$J,358.3,31129,1,3,0)
+ ;;=3^Malig Neop Skin,Unspec,Left Ear/External Auric Canal
+ ;;^UTILITY(U,$J,358.3,31129,1,4,0)
+ ;;=4^C44.209
+ ;;^UTILITY(U,$J,358.3,31129,2)
+ ;;=^5001030
+ ;;^UTILITY(U,$J,358.3,31130,0)
+ ;;=C44.202^^116^1526^323
+ ;;^UTILITY(U,$J,358.3,31130,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14245,1,3,0)
- ;;=3^Type 2 DM w/o Complications
- ;;^UTILITY(U,$J,358.3,14245,1,4,0)
- ;;=4^E11.9
- ;;^UTILITY(U,$J,358.3,14245,2)
- ;;=^5002666
- ;;^UTILITY(U,$J,358.3,14246,0)
- ;;=H35.363^^82^775^18
- ;;^UTILITY(U,$J,358.3,14246,1,0)
+ ;;^UTILITY(U,$J,358.3,31130,1,3,0)
+ ;;=3^Malig Neop Skin Right Ear/External Auric Canal
+ ;;^UTILITY(U,$J,358.3,31130,1,4,0)
+ ;;=4^C44.202
+ ;;^UTILITY(U,$J,358.3,31130,2)
+ ;;=^5001029
+ ;;^UTILITY(U,$J,358.3,31131,0)
+ ;;=S02.401A^^116^1526^340
+ ;;^UTILITY(U,$J,358.3,31131,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14246,1,3,0)
- ;;=3^Drusen of Macular,Bilateral
- ;;^UTILITY(U,$J,358.3,14246,1,4,0)
- ;;=4^H35.363
- ;;^UTILITY(U,$J,358.3,14246,2)
- ;;=^5005660
- ;;^UTILITY(U,$J,358.3,14247,0)
- ;;=H35.362^^82^775^19
- ;;^UTILITY(U,$J,358.3,14247,1,0)
+ ;;^UTILITY(U,$J,358.3,31131,1,3,0)
+ ;;=3^Maxillary Fx,Unspec,Init Encntr,Closed Fx
+ ;;^UTILITY(U,$J,358.3,31131,1,4,0)
+ ;;=4^S02.401A
+ ;;^UTILITY(U,$J,358.3,31131,2)
+ ;;=^5020324
+ ;;^UTILITY(U,$J,358.3,31132,0)
+ ;;=C02.9^^116^1526^337
+ ;;^UTILITY(U,$J,358.3,31132,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14247,1,3,0)
- ;;=3^Drusen of Macular,Left Eye
- ;;^UTILITY(U,$J,358.3,14247,1,4,0)
- ;;=4^H35.362
- ;;^UTILITY(U,$J,358.3,14247,2)
- ;;=^5005659
- ;;^UTILITY(U,$J,358.3,14248,0)
- ;;=H35.361^^82^775^20
- ;;^UTILITY(U,$J,358.3,14248,1,0)
+ ;;^UTILITY(U,$J,358.3,31132,1,3,0)
+ ;;=3^Malig Neop Tongue,Unspec
+ ;;^UTILITY(U,$J,358.3,31132,1,4,0)
+ ;;=4^C02.9
+ ;;^UTILITY(U,$J,358.3,31132,2)
+ ;;=^5000891
+ ;;^UTILITY(U,$J,358.3,31133,0)
+ ;;=M20.012^^116^1526^338
+ ;;^UTILITY(U,$J,358.3,31133,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14248,1,3,0)
- ;;=3^Drusen of Macular,Right Eye
- ;;^UTILITY(U,$J,358.3,14248,1,4,0)
- ;;=4^H35.361
- ;;^UTILITY(U,$J,358.3,14248,2)
- ;;=^5005658
- ;;^UTILITY(U,$J,358.3,14249,0)
- ;;=H04.123^^82^775^21
- ;;^UTILITY(U,$J,358.3,14249,1,0)
+ ;;^UTILITY(U,$J,358.3,31133,1,3,0)
+ ;;=3^Mallet Finger of Left Finger(s)
+ ;;^UTILITY(U,$J,358.3,31133,1,4,0)
+ ;;=4^M20.012
+ ;;^UTILITY(U,$J,358.3,31133,2)
+ ;;=^5011031
+ ;;^UTILITY(U,$J,358.3,31134,0)
+ ;;=M20.011^^116^1526^339
+ ;;^UTILITY(U,$J,358.3,31134,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14249,1,3,0)
- ;;=3^Dry Eye Syndrome,Bilateral Lacrimal Glands
- ;;^UTILITY(U,$J,358.3,14249,1,4,0)
- ;;=4^H04.123
- ;;^UTILITY(U,$J,358.3,14249,2)
- ;;=^5004465
- ;;^UTILITY(U,$J,358.3,14250,0)
- ;;=H35.32^^82^775^28
- ;;^UTILITY(U,$J,358.3,14250,1,0)
+ ;;^UTILITY(U,$J,358.3,31134,1,3,0)
+ ;;=3^Mallet Finger of Right Finger(s)
+ ;;^UTILITY(U,$J,358.3,31134,1,4,0)
+ ;;=4^M20.011
+ ;;^UTILITY(U,$J,358.3,31134,2)
+ ;;=^5011030
+ ;;^UTILITY(U,$J,358.3,31135,0)
+ ;;=M95.2^^116^1526^204
+ ;;^UTILITY(U,$J,358.3,31135,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14250,1,3,0)
- ;;=3^Exudative Age-Related Macular Degeneration
- ;;^UTILITY(U,$J,358.3,14250,1,4,0)
- ;;=4^H35.32
- ;;^UTILITY(U,$J,358.3,14250,2)
- ;;=^5005648
- ;;^UTILITY(U,$J,358.3,14251,0)
- ;;=H35.023^^82^775^29
- ;;^UTILITY(U,$J,358.3,14251,1,0)
+ ;;^UTILITY(U,$J,358.3,31135,1,3,0)
+ ;;=3^Head Deformity,Acquired
+ ;;^UTILITY(U,$J,358.3,31135,1,4,0)
+ ;;=4^M95.2
+ ;;^UTILITY(U,$J,358.3,31135,2)
+ ;;=^272769
+ ;;^UTILITY(U,$J,358.3,31136,0)
+ ;;=L90.8^^116^1526^83
+ ;;^UTILITY(U,$J,358.3,31136,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14251,1,3,0)
- ;;=3^Exudative Retinopathy,Bilateral
- ;;^UTILITY(U,$J,358.3,14251,1,4,0)
- ;;=4^H35.023
- ;;^UTILITY(U,$J,358.3,14251,2)
- ;;=^5005588
- ;;^UTILITY(U,$J,358.3,14252,0)
- ;;=H35.022^^82^775^30
- ;;^UTILITY(U,$J,358.3,14252,1,0)
+ ;;^UTILITY(U,$J,358.3,31136,1,3,0)
+ ;;=3^Atrophic Skin Disorders
+ ;;^UTILITY(U,$J,358.3,31136,1,4,0)
+ ;;=4^L90.8
+ ;;^UTILITY(U,$J,358.3,31136,2)
+ ;;=^5009457
+ ;;^UTILITY(U,$J,358.3,31137,0)
+ ;;=D23.22^^116^1526^104
+ ;;^UTILITY(U,$J,358.3,31137,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14252,1,3,0)
- ;;=3^Exudative Retinopathy,Left Eye
- ;;^UTILITY(U,$J,358.3,14252,1,4,0)
- ;;=4^H35.022
- ;;^UTILITY(U,$J,358.3,14252,2)
- ;;=^5005587
- ;;^UTILITY(U,$J,358.3,14253,0)
- ;;=H35.021^^82^775^31
- ;;^UTILITY(U,$J,358.3,14253,1,0)
+ ;;^UTILITY(U,$J,358.3,31137,1,3,0)
+ ;;=3^Benign Neop Skin Left Ear/External Auric Canal
+ ;;^UTILITY(U,$J,358.3,31137,1,4,0)
+ ;;=4^D23.22
+ ;;^UTILITY(U,$J,358.3,31137,2)
+ ;;=^5002065
+ ;;^UTILITY(U,$J,358.3,31138,0)
+ ;;=D23.21^^116^1526^106
+ ;;^UTILITY(U,$J,358.3,31138,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14253,1,3,0)
- ;;=3^Exudative Retinopathy,Right Eye
- ;;^UTILITY(U,$J,358.3,14253,1,4,0)
- ;;=4^H35.021
+ ;;^UTILITY(U,$J,358.3,31138,1,3,0)
+ ;;=3^Benign Neop Skin Right Ear/External Auric Canal
+ ;;^UTILITY(U,$J,358.3,31138,1,4,0)
+ ;;=4^D23.21
+ ;;^UTILITY(U,$J,358.3,31138,2)
+ ;;=^5002064
+ ;;^UTILITY(U,$J,358.3,31139,0)
+ ;;=D23.4^^116^1526^108
+ ;;^UTILITY(U,$J,358.3,31139,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31139,1,3,0)
+ ;;=3^Benign Neop Skin Scalp/Neck
+ ;;^UTILITY(U,$J,358.3,31139,1,4,0)
+ ;;=4^D23.4
+ ;;^UTILITY(U,$J,358.3,31139,2)
+ ;;=^5002068
+ ;;^UTILITY(U,$J,358.3,31140,0)
+ ;;=D23.9^^116^1526^110
+ ;;^UTILITY(U,$J,358.3,31140,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31140,1,3,0)
+ ;;=3^Benign Neop Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,31140,1,4,0)
+ ;;=4^D23.9
+ ;;^UTILITY(U,$J,358.3,31140,2)
+ ;;=^5002076
+ ;;^UTILITY(U,$J,358.3,31141,0)
+ ;;=Q67.4^^116^1526^133
+ ;;^UTILITY(U,$J,358.3,31141,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31141,1,3,0)
+ ;;=3^Congenital Skull/Face/Jaw Deformities
+ ;;^UTILITY(U,$J,358.3,31141,1,4,0)
+ ;;=4^Q67.4
+ ;;^UTILITY(U,$J,358.3,31141,2)
+ ;;=^5018880
+ ;;^UTILITY(U,$J,358.3,31142,0)
+ ;;=Q83.8^^116^1526^127
+ ;;^UTILITY(U,$J,358.3,31142,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31142,1,3,0)
+ ;;=3^Congenital Breast Malformations
+ ;;^UTILITY(U,$J,358.3,31142,1,4,0)
+ ;;=4^Q83.8
+ ;;^UTILITY(U,$J,358.3,31142,2)
+ ;;=^5019058
+ ;;^UTILITY(U,$J,358.3,31143,0)
+ ;;=Q30.8^^116^1526^132
+ ;;^UTILITY(U,$J,358.3,31143,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31143,1,3,0)
+ ;;=3^Congenital Nose Malformations
+ ;;^UTILITY(U,$J,358.3,31143,1,4,0)
+ ;;=4^Q30.8
+ ;;^UTILITY(U,$J,358.3,31143,2)
+ ;;=^5018603
+ ;;^UTILITY(U,$J,358.3,31144,0)
+ ;;=L91.8^^116^1526^209
+ ;;^UTILITY(U,$J,358.3,31144,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31144,1,3,0)
+ ;;=3^Hypertrophic Skin Disorders NEC
+ ;;^UTILITY(U,$J,358.3,31144,1,4,0)
+ ;;=4^L91.8
+ ;;^UTILITY(U,$J,358.3,31144,2)
+ ;;=^5009460
+ ;;^UTILITY(U,$J,358.3,31145,0)
+ ;;=S69.82XA^^116^1526^238
+ ;;^UTILITY(U,$J,358.3,31145,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31145,1,3,0)
+ ;;=3^Injury Left Wrist/Hand/Finger,Init Encntr NEC
+ ;;^UTILITY(U,$J,358.3,31145,1,4,0)
+ ;;=4^S69.82XA
+ ;;^UTILITY(U,$J,358.3,31145,2)
+ ;;=^5036819
+ ;;^UTILITY(U,$J,358.3,31146,0)
+ ;;=S69.81XA^^116^1526^251
+ ;;^UTILITY(U,$J,358.3,31146,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31146,1,3,0)
+ ;;=3^Injury Right Wrist/Hand/Finger,Init Encntr NEC
+ ;;^UTILITY(U,$J,358.3,31146,1,4,0)
+ ;;=4^S69.81XA
+ ;;^UTILITY(U,$J,358.3,31146,2)
+ ;;=^5036816
+ ;;^UTILITY(U,$J,358.3,31147,0)
+ ;;=C44.49^^116^1526^326
+ ;;^UTILITY(U,$J,358.3,31147,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31147,1,3,0)
+ ;;=3^Malig Neop Skin Scalp/Neck NEC
+ ;;^UTILITY(U,$J,358.3,31147,1,4,0)
+ ;;=4^C44.49
+ ;;^UTILITY(U,$J,358.3,31147,2)
+ ;;=^340478
+ ;;^UTILITY(U,$J,358.3,31148,0)
+ ;;=Q17.3^^116^1526^159
+ ;;^UTILITY(U,$J,358.3,31148,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31148,1,3,0)
+ ;;=3^Ear Misshape NEC
+ ;;^UTILITY(U,$J,358.3,31148,1,4,0)
+ ;;=4^Q17.3
+ ;;^UTILITY(U,$J,358.3,31148,2)
+ ;;=^5018512
+ ;;^UTILITY(U,$J,358.3,31149,0)
+ ;;=C44.192^^116^1526^325
+ ;;^UTILITY(U,$J,358.3,31149,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31149,1,3,0)
+ ;;=3^Malig Neop Skin Right Eyelid NEC
+ ;;^UTILITY(U,$J,358.3,31149,1,4,0)
+ ;;=4^C44.192
+ ;;^UTILITY(U,$J,358.3,31149,2)
+ ;;=^5001026
+ ;;^UTILITY(U,$J,358.3,31150,0)
+ ;;=C44.199^^116^1526^329
+ ;;^UTILITY(U,$J,358.3,31150,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31150,1,3,0)
+ ;;=3^Malig Neop Skin,Oth,Left Eyelid NEC
+ ;;^UTILITY(U,$J,358.3,31150,1,4,0)
+ ;;=4^C44.199
+ ;;^UTILITY(U,$J,358.3,31150,2)
+ ;;=^5001027
+ ;;^UTILITY(U,$J,358.3,31151,0)
+ ;;=C44.299^^116^1526^328
+ ;;^UTILITY(U,$J,358.3,31151,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31151,1,3,0)
+ ;;=3^Malig Neop Skin,Oth,Left Ear/External Auric Canal
+ ;;^UTILITY(U,$J,358.3,31151,1,4,0)
+ ;;=4^C44.299
+ ;;^UTILITY(U,$J,358.3,31151,2)
+ ;;=^5001039
+ ;;^UTILITY(U,$J,358.3,31152,0)
+ ;;=C44.292^^116^1526^324
+ ;;^UTILITY(U,$J,358.3,31152,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31152,1,3,0)
+ ;;=3^Malig Neop Skin Right Ear/External Auric Canal NEC
+ ;;^UTILITY(U,$J,358.3,31152,1,4,0)
+ ;;=4^C44.292
+ ;;^UTILITY(U,$J,358.3,31152,2)
+ ;;=^5001038
+ ;;^UTILITY(U,$J,358.3,31153,0)
+ ;;=Q17.8^^116^1526^128
+ ;;^UTILITY(U,$J,358.3,31153,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31153,1,3,0)
+ ;;=3^Congenital Ear Malformations NEC

@@ -1,70 +1,276 @@
-IBDEI00O ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQR(358.1)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI00O ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.1,395,0)
- ;;=1995 VISIT TYPE CODES (V2.1)^83^^6^0^132^3^^^1^^CR^1995 visit types WITH CODES SHOWN^0
- ;;^UTILITY(U,$J,358.1,396,0)
- ;;=SPEECH PATHOLOGY CPT CODES^83^^10^0^132^65^^^1^SPEECH PATHOLOGY PROCEDURES PERFORMED THIS VISIT^C^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,397,0)
- ;;=HEADER^83^^1^54^15^1^^^2
- ;;^UTILITY(U,$J,358.1,398,0)
- ;;=PATIENT INFORMATION^83^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,399,0)
- ;;=ICD-10 DIAGNOSES (V1.0)^83^^81^0^132^102^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^
- ;;^UTILITY(U,$J,358.1,400,0)
- ;;=HEADER^84^^1^56^44^1^^^2
- ;;^UTILITY(U,$J,358.1,401,0)
- ;;=PATIENT INFORMATION^84^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,402,0)
- ;;=CPT CODES (3 COL)^84^^7^0^132^28^^^1^PLEASE CHECK OFF PROCEDURES PERFORMED THIS VISIT^BCU^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,403,0)
- ;;=SWS MEDICAL ICD-10^84^^36^0^132^168^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^
- ;;^UTILITY(U,$J,358.1,404,0)
- ;;=CPT CODES (3 COL)^85^^6^0^132^34^^^1^PLEASE CHECK OFF PROCEDURES PERFORMED THIS VISIT^BCU^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,405,0)
- ;;=HEADER^85^^1^55^44^1^^^2
- ;;^UTILITY(U,$J,358.1,406,0)
- ;;=PATIENT INFORMATION^85^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,407,0)
- ;;=MENTAL HEALTH ICD-10^85^^41^0^132^434^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^
- ;;^UTILITY(U,$J,358.1,408,0)
- ;;=1995 VISIT TYPE CODES (V2.1)^86^^6^0^132^10^^^1^TYPE OF VISIT^CR^1995 visit types WITH CODES SHOWN^0
- ;;^UTILITY(U,$J,358.1,409,0)
- ;;=HEADER^86^^1^49^12^1^^^2
- ;;^UTILITY(U,$J,358.1,410,0)
- ;;=PATIENT INFORMATION^86^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,411,0)
- ;;=PROCEDURES (V2.1)^86^^17^0^133^43^^^1^MARK ALL PROCEDURES PERFORMED^CR^Common CPT-4 procedures^0
- ;;^UTILITY(U,$J,358.1,412,0)
- ;;=ICD-10 DIAGNOSES (V1.0)^86^^61^0^132^99^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^0
- ;;^UTILITY(U,$J,358.1,413,0)
- ;;=1995 VISIT TYPE CODES (V2.1)^87^^6^0^132^10^^^1^TYPE OF VISIT^CR^1995 visit types WITH CODES SHOWN^0
- ;;^UTILITY(U,$J,358.1,414,0)
- ;;=HEADER^87^^1^49^17^1^^^2
- ;;^UTILITY(U,$J,358.1,415,0)
- ;;=PATIENT INFORMATION^87^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,416,0)
- ;;=CPT CODES (3 COL)^87^^17^0^132^7^^^1^PLEASE CHECK OFF PROCEDURES PERFORMED THIS VISIT^BCU^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,417,0)
- ;;=DERM/TELEDERM ICD-10^87^^25^0^132^409^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^
- ;;^UTILITY(U,$J,358.1,418,0)
- ;;=HEADER^88^^1^49^34^1^^^2
- ;;^UTILITY(U,$J,358.1,419,0)
- ;;=PATIENT INFORMATION^88^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,420,0)
- ;;=CPT CODES (3 COL)^88^^7^0^132^6^^^1^PLEASE CHECK OFF PROCEDURES PERFORMED THIS VISIT^BCU^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,421,0)
- ;;=TELEHEALTH ICD-10^88^^14^0^132^316^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^0
- ;;^UTILITY(U,$J,358.1,422,0)
- ;;=HEADER^89^^1^59^26^1^^^2
- ;;^UTILITY(U,$J,358.1,423,0)
- ;;=CPT CODES^89^^7^0^132^9^^^1^FILL IN BUBBLE FOR TELEPHONE CALL PERFORMED^UBRC^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,424,0)
- ;;=PATIENT INFORMATION^89^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,425,0)
- ;;=TELEPHONE ICD-10^89^^17^0^132^28^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^0
- ;;^UTILITY(U,$J,358.1,426,0)
- ;;=HEADER^90^^1^56^25^1^^^2
- ;;^UTILITY(U,$J,358.1,427,0)
- ;;=PATIENT INFORMATION^90^^3^0^132^3^^^2^^^Patient information-name/ssn/age
+ ;;^UTILITY(U,$J,358.3,137,1,4,0)
+ ;;=4^Z69.82
+ ;;^UTILITY(U,$J,358.3,137,2)
+ ;;=^5063235
+ ;;^UTILITY(U,$J,358.3,138,0)
+ ;;=T74.01XA^^3^23^1
+ ;;^UTILITY(U,$J,358.3,138,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,138,1,3,0)
+ ;;=3^Adult Neglect,Confirmed,Initial Encounter 
+ ;;^UTILITY(U,$J,358.3,138,1,4,0)
+ ;;=4^T74.01XA
+ ;;^UTILITY(U,$J,358.3,138,2)
+ ;;=^5054140
+ ;;^UTILITY(U,$J,358.3,139,0)
+ ;;=T74.01XD^^3^23^2
+ ;;^UTILITY(U,$J,358.3,139,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,139,1,3,0)
+ ;;=3^Adult Neglect,Confirmed,Subsequent Encounter 
+ ;;^UTILITY(U,$J,358.3,139,1,4,0)
+ ;;=4^T74.01XD
+ ;;^UTILITY(U,$J,358.3,139,2)
+ ;;=^5054141
+ ;;^UTILITY(U,$J,358.3,140,0)
+ ;;=T76.01XA^^3^23^3
+ ;;^UTILITY(U,$J,358.3,140,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,140,1,3,0)
+ ;;=3^Adult Neglect,Suspected,Initial Encounter  
+ ;;^UTILITY(U,$J,358.3,140,1,4,0)
+ ;;=4^T76.01XA
+ ;;^UTILITY(U,$J,358.3,140,2)
+ ;;=^5054215
+ ;;^UTILITY(U,$J,358.3,141,0)
+ ;;=T76.01XD^^3^23^4
+ ;;^UTILITY(U,$J,358.3,141,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,141,1,3,0)
+ ;;=3^Adult Neglect,Suspected,Subsequent Encounter  
+ ;;^UTILITY(U,$J,358.3,141,1,4,0)
+ ;;=4^T76.01XD
+ ;;^UTILITY(U,$J,358.3,141,2)
+ ;;=^5054216
+ ;;^UTILITY(U,$J,358.3,142,0)
+ ;;=Z91.412^^3^23^40
+ ;;^UTILITY(U,$J,358.3,142,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,142,1,3,0)
+ ;;=3^Personal Past Hx of Spouse or Partner Neglect
+ ;;^UTILITY(U,$J,358.3,142,1,4,0)
+ ;;=4^Z91.412
+ ;;^UTILITY(U,$J,358.3,142,2)
+ ;;=^5063621
+ ;;^UTILITY(U,$J,358.3,143,0)
+ ;;=T74.31XA^^3^23^9
+ ;;^UTILITY(U,$J,358.3,143,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,143,1,3,0)
+ ;;=3^Adult Psychological Abuse,Confirmed,Initial Encounter  
+ ;;^UTILITY(U,$J,358.3,143,1,4,0)
+ ;;=4^T74.31XA
+ ;;^UTILITY(U,$J,358.3,143,2)
+ ;;=^5054158
+ ;;^UTILITY(U,$J,358.3,144,0)
+ ;;=T74.31XD^^3^23^10
+ ;;^UTILITY(U,$J,358.3,144,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,144,1,3,0)
+ ;;=3^Adult Psychological Abuse,Confirmed,Subsequent Encounter 
+ ;;^UTILITY(U,$J,358.3,144,1,4,0)
+ ;;=4^T74.31XD
+ ;;^UTILITY(U,$J,358.3,144,2)
+ ;;=^5054159
+ ;;^UTILITY(U,$J,358.3,145,0)
+ ;;=T76.31XA^^3^23^11
+ ;;^UTILITY(U,$J,358.3,145,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,145,1,3,0)
+ ;;=3^Adult Psychological Abuse,Suspected,Initial Encounter 
+ ;;^UTILITY(U,$J,358.3,145,1,4,0)
+ ;;=4^T76.31XA
+ ;;^UTILITY(U,$J,358.3,145,2)
+ ;;=^5054233
+ ;;^UTILITY(U,$J,358.3,146,0)
+ ;;=T76.31XD^^3^23^12
+ ;;^UTILITY(U,$J,358.3,146,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,146,1,3,0)
+ ;;=3^Adult Psychological Abuse,Suspected,Subsequent Encounter 
+ ;;^UTILITY(U,$J,358.3,146,1,4,0)
+ ;;=4^T76.31XD
+ ;;^UTILITY(U,$J,358.3,146,2)
+ ;;=^5054234
+ ;;^UTILITY(U,$J,358.3,147,0)
+ ;;=Z91.411^^3^23^41
+ ;;^UTILITY(U,$J,358.3,147,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,147,1,3,0)
+ ;;=3^Personal Past Hx of Spouse or Partner Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,147,1,4,0)
+ ;;=4^Z91.411
+ ;;^UTILITY(U,$J,358.3,147,2)
+ ;;=^5063620
+ ;;^UTILITY(U,$J,358.3,148,0)
+ ;;=Z69.021^^3^23^18
+ ;;^UTILITY(U,$J,358.3,148,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,148,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonparental Child Abuse
+ ;;^UTILITY(U,$J,358.3,148,1,4,0)
+ ;;=4^Z69.021
+ ;;^UTILITY(U,$J,358.3,148,2)
+ ;;=^5063231
+ ;;^UTILITY(U,$J,358.3,149,0)
+ ;;=Z69.021^^3^23^19
+ ;;^UTILITY(U,$J,358.3,149,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,149,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonparental Child Neglect
+ ;;^UTILITY(U,$J,358.3,149,1,4,0)
+ ;;=4^Z69.021
+ ;;^UTILITY(U,$J,358.3,149,2)
+ ;;=^5063231
+ ;;^UTILITY(U,$J,358.3,150,0)
+ ;;=Z69.021^^3^23^20
+ ;;^UTILITY(U,$J,358.3,150,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,150,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonparental Child Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,150,1,4,0)
+ ;;=4^Z69.021
+ ;;^UTILITY(U,$J,358.3,150,2)
+ ;;=^5063231
+ ;;^UTILITY(U,$J,358.3,151,0)
+ ;;=Z69.021^^3^23^21
+ ;;^UTILITY(U,$J,358.3,151,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,151,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Nonparental Child Sexual Abuse
+ ;;^UTILITY(U,$J,358.3,151,1,4,0)
+ ;;=4^Z69.021
+ ;;^UTILITY(U,$J,358.3,151,2)
+ ;;=^5063231
+ ;;^UTILITY(U,$J,358.3,152,0)
+ ;;=Z69.011^^3^23^23
+ ;;^UTILITY(U,$J,358.3,152,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,152,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Parental Child Abuse
+ ;;^UTILITY(U,$J,358.3,152,1,4,0)
+ ;;=4^Z69.011
+ ;;^UTILITY(U,$J,358.3,152,2)
+ ;;=^5063229
+ ;;^UTILITY(U,$J,358.3,153,0)
+ ;;=Z69.011^^3^23^24
+ ;;^UTILITY(U,$J,358.3,153,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,153,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Parental Child Neglect
+ ;;^UTILITY(U,$J,358.3,153,1,4,0)
+ ;;=4^Z69.011
+ ;;^UTILITY(U,$J,358.3,153,2)
+ ;;=^5063229
+ ;;^UTILITY(U,$J,358.3,154,0)
+ ;;=Z69.011^^3^23^25
+ ;;^UTILITY(U,$J,358.3,154,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,154,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Parental Child Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,154,1,4,0)
+ ;;=4^Z69.011
+ ;;^UTILITY(U,$J,358.3,154,2)
+ ;;=^5063229
+ ;;^UTILITY(U,$J,358.3,155,0)
+ ;;=Z69.011^^3^23^26
+ ;;^UTILITY(U,$J,358.3,155,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,155,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Parental Child Sexual Abuse
+ ;;^UTILITY(U,$J,358.3,155,1,4,0)
+ ;;=4^Z69.011
+ ;;^UTILITY(U,$J,358.3,155,2)
+ ;;=^5063229
+ ;;^UTILITY(U,$J,358.3,156,0)
+ ;;=Z69.12^^3^23^17
+ ;;^UTILITY(U,$J,358.3,156,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,156,1,3,0)
+ ;;=3^MH SVC for Perpetrator of Spousal/Partner Neglect
+ ;;^UTILITY(U,$J,358.3,156,1,4,0)
+ ;;=4^Z69.12
+ ;;^UTILITY(U,$J,358.3,156,2)
+ ;;=^5063233
+ ;;^UTILITY(U,$J,358.3,157,0)
+ ;;=Z69.12^^3^23^28
+ ;;^UTILITY(U,$J,358.3,157,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,157,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Spousal/Partner Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,157,1,4,0)
+ ;;=4^Z69.12
+ ;;^UTILITY(U,$J,358.3,157,2)
+ ;;=^5063233
+ ;;^UTILITY(U,$J,358.3,158,0)
+ ;;=Z69.12^^3^23^29
+ ;;^UTILITY(U,$J,358.3,158,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,158,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Spousal/Partner Violence,Sexual
+ ;;^UTILITY(U,$J,358.3,158,1,4,0)
+ ;;=4^Z69.12
+ ;;^UTILITY(U,$J,358.3,158,2)
+ ;;=^5063233
+ ;;^UTILITY(U,$J,358.3,159,0)
+ ;;=Z69.11^^3^23^32
+ ;;^UTILITY(U,$J,358.3,159,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,159,1,3,0)
+ ;;=3^MH Svc for Victim of Spousal/Partner Psychological Abuse
+ ;;^UTILITY(U,$J,358.3,159,1,4,0)
+ ;;=4^Z69.11
+ ;;^UTILITY(U,$J,358.3,159,2)
+ ;;=^5063232
+ ;;^UTILITY(U,$J,358.3,160,0)
+ ;;=Z69.11^^3^23^33
+ ;;^UTILITY(U,$J,358.3,160,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,160,1,3,0)
+ ;;=3^MH Svc for Victim of Spousal/Partner Violence,Physical
+ ;;^UTILITY(U,$J,358.3,160,1,4,0)
+ ;;=4^Z69.11
+ ;;^UTILITY(U,$J,358.3,160,2)
+ ;;=^5063232
+ ;;^UTILITY(U,$J,358.3,161,0)
+ ;;=Z69.11^^3^23^34
+ ;;^UTILITY(U,$J,358.3,161,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,161,1,3,0)
+ ;;=3^MH Svc for Victim of Spousal/Partner Violence,Sexual
+ ;;^UTILITY(U,$J,358.3,161,1,4,0)
+ ;;=4^Z69.11
+ ;;^UTILITY(U,$J,358.3,161,2)
+ ;;=^5063232
+ ;;^UTILITY(U,$J,358.3,162,0)
+ ;;=Z62.812^^3^23^36
+ ;;^UTILITY(U,$J,358.3,162,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,162,1,3,0)
+ ;;=3^Personal Past Hx of Childhood Neglect
+ ;;^UTILITY(U,$J,358.3,162,1,4,0)
+ ;;=4^Z62.812
+ ;;^UTILITY(U,$J,358.3,162,2)
+ ;;=^5063155
+ ;;^UTILITY(U,$J,358.3,163,0)
+ ;;=Z62.810^^3^23^37
+ ;;^UTILITY(U,$J,358.3,163,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,163,1,3,0)
+ ;;=3^Personal Past Hx of Childhood Physical Abuse
+ ;;^UTILITY(U,$J,358.3,163,1,4,0)
+ ;;=4^Z62.810
+ ;;^UTILITY(U,$J,358.3,163,2)
+ ;;=^5063153
+ ;;^UTILITY(U,$J,358.3,164,0)
+ ;;=Z62.810^^3^23^39
+ ;;^UTILITY(U,$J,358.3,164,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,164,1,3,0)
+ ;;=3^Personal Past Hx of Childhood Sexual Abuse
+ ;;^UTILITY(U,$J,358.3,164,1,4,0)
+ ;;=4^Z62.810

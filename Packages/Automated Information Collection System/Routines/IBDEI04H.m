@@ -1,130 +1,292 @@
-IBDEI04H ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI04H ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1413,0)
- ;;=H61.21^^14^151^22
- ;;^UTILITY(U,$J,358.3,1413,1,0)
+ ;;^UTILITY(U,$J,358.3,4218,1,4,0)
+ ;;=4^C44.109
+ ;;^UTILITY(U,$J,358.3,4218,2)
+ ;;=^5001018
+ ;;^UTILITY(U,$J,358.3,4219,0)
+ ;;=C44.202^^30^310^12
+ ;;^UTILITY(U,$J,358.3,4219,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1413,1,3,0)
- ;;=3^Impacted cerumen, right ear
- ;;^UTILITY(U,$J,358.3,1413,1,4,0)
- ;;=4^H61.21
- ;;^UTILITY(U,$J,358.3,1413,2)
- ;;=^5006531
- ;;^UTILITY(U,$J,358.3,1414,0)
- ;;=H72.813^^14^151^26
- ;;^UTILITY(U,$J,358.3,1414,1,0)
+ ;;^UTILITY(U,$J,358.3,4219,1,3,0)
+ ;;=3^Malig Neop of Skin of Right Ear
+ ;;^UTILITY(U,$J,358.3,4219,1,4,0)
+ ;;=4^C44.202
+ ;;^UTILITY(U,$J,358.3,4219,2)
+ ;;=^5001029
+ ;;^UTILITY(U,$J,358.3,4220,0)
+ ;;=C44.209^^30^310^6
+ ;;^UTILITY(U,$J,358.3,4220,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1414,1,3,0)
- ;;=3^Multiple perforations of tympanic membrane, bilateral
- ;;^UTILITY(U,$J,358.3,1414,1,4,0)
- ;;=4^H72.813
- ;;^UTILITY(U,$J,358.3,1414,2)
- ;;=^5006756
- ;;^UTILITY(U,$J,358.3,1415,0)
- ;;=H72.812^^14^151^27
- ;;^UTILITY(U,$J,358.3,1415,1,0)
+ ;;^UTILITY(U,$J,358.3,4220,1,3,0)
+ ;;=3^Malig Neop of Skin of Left Ear
+ ;;^UTILITY(U,$J,358.3,4220,1,4,0)
+ ;;=4^C44.209
+ ;;^UTILITY(U,$J,358.3,4220,2)
+ ;;=^5001030
+ ;;^UTILITY(U,$J,358.3,4221,0)
+ ;;=C44.300^^30^310^5
+ ;;^UTILITY(U,$J,358.3,4221,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1415,1,3,0)
- ;;=3^Multiple perforations of tympanic membrane, left ear
- ;;^UTILITY(U,$J,358.3,1415,1,4,0)
- ;;=4^H72.812
- ;;^UTILITY(U,$J,358.3,1415,2)
- ;;=^5006755
- ;;^UTILITY(U,$J,358.3,1416,0)
- ;;=H72.811^^14^151^28
- ;;^UTILITY(U,$J,358.3,1416,1,0)
+ ;;^UTILITY(U,$J,358.3,4221,1,3,0)
+ ;;=3^Malig Neop of Skin of Face,Unspec
+ ;;^UTILITY(U,$J,358.3,4221,1,4,0)
+ ;;=4^C44.300
+ ;;^UTILITY(U,$J,358.3,4221,2)
+ ;;=^5001040
+ ;;^UTILITY(U,$J,358.3,4222,0)
+ ;;=C44.301^^30^310^11
+ ;;^UTILITY(U,$J,358.3,4222,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1416,1,3,0)
- ;;=3^Multiple perforations of tympanic membrane, right ear
- ;;^UTILITY(U,$J,358.3,1416,1,4,0)
- ;;=4^H72.811
- ;;^UTILITY(U,$J,358.3,1416,2)
- ;;=^5006754
- ;;^UTILITY(U,$J,358.3,1417,0)
- ;;=H72.2X3^^14^151^23
- ;;^UTILITY(U,$J,358.3,1417,1,0)
+ ;;^UTILITY(U,$J,358.3,4222,1,3,0)
+ ;;=3^Malig Neop of Skin of Nose
+ ;;^UTILITY(U,$J,358.3,4222,1,4,0)
+ ;;=4^C44.301
+ ;;^UTILITY(U,$J,358.3,4222,2)
+ ;;=^5001041
+ ;;^UTILITY(U,$J,358.3,4223,0)
+ ;;=C44.309^^30^310^4
+ ;;^UTILITY(U,$J,358.3,4223,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1417,1,3,0)
- ;;=3^Marginal perforations of tympanic membrane, bilateral NEC
- ;;^UTILITY(U,$J,358.3,1417,1,4,0)
- ;;=4^H72.2X3
- ;;^UTILITY(U,$J,358.3,1417,2)
- ;;=^5006752
- ;;^UTILITY(U,$J,358.3,1418,0)
- ;;=H72.2X2^^14^151^24
- ;;^UTILITY(U,$J,358.3,1418,1,0)
+ ;;^UTILITY(U,$J,358.3,4223,1,3,0)
+ ;;=3^Malig Neop of Skin of Face NEC
+ ;;^UTILITY(U,$J,358.3,4223,1,4,0)
+ ;;=4^C44.309
+ ;;^UTILITY(U,$J,358.3,4223,2)
+ ;;=^5001042
+ ;;^UTILITY(U,$J,358.3,4224,0)
+ ;;=C44.40^^30^310^16
+ ;;^UTILITY(U,$J,358.3,4224,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1418,1,3,0)
- ;;=3^Marginal perforations of tympanic membrane, left ear NEC
- ;;^UTILITY(U,$J,358.3,1418,1,4,0)
- ;;=4^H72.2X2
- ;;^UTILITY(U,$J,358.3,1418,2)
- ;;=^5006751
- ;;^UTILITY(U,$J,358.3,1419,0)
- ;;=H72.2X1^^14^151^25
- ;;^UTILITY(U,$J,358.3,1419,1,0)
+ ;;^UTILITY(U,$J,358.3,4224,1,3,0)
+ ;;=3^Malig Neop of Skin of Scalp/Neck
+ ;;^UTILITY(U,$J,358.3,4224,1,4,0)
+ ;;=4^C44.40
+ ;;^UTILITY(U,$J,358.3,4224,2)
+ ;;=^340600
+ ;;^UTILITY(U,$J,358.3,4225,0)
+ ;;=C44.500^^30^310^1
+ ;;^UTILITY(U,$J,358.3,4225,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1419,1,3,0)
- ;;=3^Marginal perforations of tympanic membrane, right ear NEC
- ;;^UTILITY(U,$J,358.3,1419,1,4,0)
- ;;=4^H72.2X1
- ;;^UTILITY(U,$J,358.3,1419,2)
- ;;=^5006750
- ;;^UTILITY(U,$J,358.3,1420,0)
- ;;=H69.83^^14^151^14
- ;;^UTILITY(U,$J,358.3,1420,1,0)
+ ;;^UTILITY(U,$J,358.3,4225,1,3,0)
+ ;;=3^Malig Neop of Anal Skin
+ ;;^UTILITY(U,$J,358.3,4225,1,4,0)
+ ;;=4^C44.500
+ ;;^UTILITY(U,$J,358.3,4225,2)
+ ;;=^5001051
+ ;;^UTILITY(U,$J,358.3,4226,0)
+ ;;=C44.501^^30^310^3
+ ;;^UTILITY(U,$J,358.3,4226,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1420,1,3,0)
- ;;=3^Eustachian Tube Disorders,Bilateral NEC
- ;;^UTILITY(U,$J,358.3,1420,1,4,0)
- ;;=4^H69.83
- ;;^UTILITY(U,$J,358.3,1420,2)
- ;;=^5006680
- ;;^UTILITY(U,$J,358.3,1421,0)
- ;;=H69.82^^14^151^16
- ;;^UTILITY(U,$J,358.3,1421,1,0)
+ ;;^UTILITY(U,$J,358.3,4226,1,3,0)
+ ;;=3^Malig Neop of Skin of Breast
+ ;;^UTILITY(U,$J,358.3,4226,1,4,0)
+ ;;=4^C44.501
+ ;;^UTILITY(U,$J,358.3,4226,2)
+ ;;=^5001052
+ ;;^UTILITY(U,$J,358.3,4227,0)
+ ;;=C44.509^^30^310^17
+ ;;^UTILITY(U,$J,358.3,4227,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1421,1,3,0)
- ;;=3^Eustachian Tube Disorders,Left Ear NEC
- ;;^UTILITY(U,$J,358.3,1421,1,4,0)
- ;;=4^H69.82
- ;;^UTILITY(U,$J,358.3,1421,2)
- ;;=^5006679
- ;;^UTILITY(U,$J,358.3,1422,0)
- ;;=H69.81^^14^151^18
- ;;^UTILITY(U,$J,358.3,1422,1,0)
+ ;;^UTILITY(U,$J,358.3,4227,1,3,0)
+ ;;=3^Malig Neop of Skin of Trunk NEC
+ ;;^UTILITY(U,$J,358.3,4227,1,4,0)
+ ;;=4^C44.509
+ ;;^UTILITY(U,$J,358.3,4227,2)
+ ;;=^5001053
+ ;;^UTILITY(U,$J,358.3,4228,0)
+ ;;=C44.602^^30^310^15
+ ;;^UTILITY(U,$J,358.3,4228,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1422,1,3,0)
- ;;=3^Eustachian Tube Disorders,Right Ear NEC
- ;;^UTILITY(U,$J,358.3,1422,1,4,0)
- ;;=4^H69.81
- ;;^UTILITY(U,$J,358.3,1422,2)
- ;;=^5006678
- ;;^UTILITY(U,$J,358.3,1423,0)
- ;;=H69.03^^14^151^29
- ;;^UTILITY(U,$J,358.3,1423,1,0)
+ ;;^UTILITY(U,$J,358.3,4228,1,3,0)
+ ;;=3^Malig Neop of Skin of Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,4228,1,4,0)
+ ;;=4^C44.602
+ ;;^UTILITY(U,$J,358.3,4228,2)
+ ;;=^5001064
+ ;;^UTILITY(U,$J,358.3,4229,0)
+ ;;=C44.609^^30^310^9
+ ;;^UTILITY(U,$J,358.3,4229,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1423,1,3,0)
- ;;=3^Patulous Eustachian tube, bilateral
- ;;^UTILITY(U,$J,358.3,1423,1,4,0)
- ;;=4^H69.03
- ;;^UTILITY(U,$J,358.3,1423,2)
- ;;=^5006676
- ;;^UTILITY(U,$J,358.3,1424,0)
- ;;=H69.02^^14^151^30
- ;;^UTILITY(U,$J,358.3,1424,1,0)
+ ;;^UTILITY(U,$J,358.3,4229,1,3,0)
+ ;;=3^Malig Neop of Skin of Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,4229,1,4,0)
+ ;;=4^C44.609
+ ;;^UTILITY(U,$J,358.3,4229,2)
+ ;;=^5001065
+ ;;^UTILITY(U,$J,358.3,4230,0)
+ ;;=C44.702^^30^310^14
+ ;;^UTILITY(U,$J,358.3,4230,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1424,1,3,0)
- ;;=3^Patulous Eustachian tube, left ear
- ;;^UTILITY(U,$J,358.3,1424,1,4,0)
- ;;=4^H69.02
- ;;^UTILITY(U,$J,358.3,1424,2)
- ;;=^5006675
- ;;^UTILITY(U,$J,358.3,1425,0)
- ;;=H69.01^^14^151^31
- ;;^UTILITY(U,$J,358.3,1425,1,0)
+ ;;^UTILITY(U,$J,358.3,4230,1,3,0)
+ ;;=3^Malig Neop of Skin of Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,4230,1,4,0)
+ ;;=4^C44.702
+ ;;^UTILITY(U,$J,358.3,4230,2)
+ ;;=^5001076
+ ;;^UTILITY(U,$J,358.3,4231,0)
+ ;;=C44.709^^30^310^8
+ ;;^UTILITY(U,$J,358.3,4231,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1425,1,3,0)
- ;;=3^Patulous Eustachian tube, right ear
+ ;;^UTILITY(U,$J,358.3,4231,1,3,0)
+ ;;=3^Malig Neop of Skin of Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,4231,1,4,0)
+ ;;=4^C44.709
+ ;;^UTILITY(U,$J,358.3,4231,2)
+ ;;=^5001077
+ ;;^UTILITY(U,$J,358.3,4232,0)
+ ;;=C44.80^^30^310^2
+ ;;^UTILITY(U,$J,358.3,4232,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4232,1,3,0)
+ ;;=3^Malig Neop of Overlapping Sites of Skin
+ ;;^UTILITY(U,$J,358.3,4232,1,4,0)
+ ;;=4^C44.80
+ ;;^UTILITY(U,$J,358.3,4232,2)
+ ;;=^5001087
+ ;;^UTILITY(U,$J,358.3,4233,0)
+ ;;=C44.90^^30^310^18
+ ;;^UTILITY(U,$J,358.3,4233,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4233,1,3,0)
+ ;;=3^Malig Neop of Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,4233,1,4,0)
+ ;;=4^C44.90
+ ;;^UTILITY(U,$J,358.3,4233,2)
+ ;;=^5001091
+ ;;^UTILITY(U,$J,358.3,4234,0)
+ ;;=C43.9^^30^311^16
+ ;;^UTILITY(U,$J,358.3,4234,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4234,1,3,0)
+ ;;=3^Malig Melanoma of Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,4234,1,4,0)
+ ;;=4^C43.9
+ ;;^UTILITY(U,$J,358.3,4234,2)
+ ;;=^5001015
+ ;;^UTILITY(U,$J,358.3,4235,0)
+ ;;=C43.0^^30^311^7
+ ;;^UTILITY(U,$J,358.3,4235,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4235,1,3,0)
+ ;;=3^Malig Melanoma of Lip
+ ;;^UTILITY(U,$J,358.3,4235,1,4,0)
+ ;;=4^C43.0
+ ;;^UTILITY(U,$J,358.3,4235,2)
+ ;;=^5000994
+ ;;^UTILITY(U,$J,358.3,4236,0)
+ ;;=C43.11^^30^311^11
+ ;;^UTILITY(U,$J,358.3,4236,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4236,1,3,0)
+ ;;=3^Malig Melanoma of Right Eyelid
+ ;;^UTILITY(U,$J,358.3,4236,1,4,0)
+ ;;=4^C43.11
+ ;;^UTILITY(U,$J,358.3,4236,2)
+ ;;=^5000996
+ ;;^UTILITY(U,$J,358.3,4237,0)
+ ;;=C43.12^^30^311^4
+ ;;^UTILITY(U,$J,358.3,4237,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4237,1,3,0)
+ ;;=3^Malig Melanoma of Left Eyelid
+ ;;^UTILITY(U,$J,358.3,4237,1,4,0)
+ ;;=4^C43.12
+ ;;^UTILITY(U,$J,358.3,4237,2)
+ ;;=^5000997
+ ;;^UTILITY(U,$J,358.3,4238,0)
+ ;;=C43.21^^30^311^10
+ ;;^UTILITY(U,$J,358.3,4238,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4238,1,3,0)
+ ;;=3^Malig Melanoma of Right Ear/External Auricular Canal
+ ;;^UTILITY(U,$J,358.3,4238,1,4,0)
+ ;;=4^C43.21
+ ;;^UTILITY(U,$J,358.3,4238,2)
+ ;;=^5000999
+ ;;^UTILITY(U,$J,358.3,4239,0)
+ ;;=C43.22^^30^311^3
+ ;;^UTILITY(U,$J,358.3,4239,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4239,1,3,0)
+ ;;=3^Malig Melanoma of Left Ear/External Auricular Canal
+ ;;^UTILITY(U,$J,358.3,4239,1,4,0)
+ ;;=4^C43.22
+ ;;^UTILITY(U,$J,358.3,4239,2)
+ ;;=^5001000
+ ;;^UTILITY(U,$J,358.3,4240,0)
+ ;;=C43.31^^30^311^8
+ ;;^UTILITY(U,$J,358.3,4240,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4240,1,3,0)
+ ;;=3^Malig Melanoma of Nose
+ ;;^UTILITY(U,$J,358.3,4240,1,4,0)
+ ;;=4^C43.31
+ ;;^UTILITY(U,$J,358.3,4240,2)
+ ;;=^5001002
+ ;;^UTILITY(U,$J,358.3,4241,0)
+ ;;=C43.39^^30^311^2
+ ;;^UTILITY(U,$J,358.3,4241,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4241,1,3,0)
+ ;;=3^Malig Melanoma of Face NEC
+ ;;^UTILITY(U,$J,358.3,4241,1,4,0)
+ ;;=4^C43.39
+ ;;^UTILITY(U,$J,358.3,4241,2)
+ ;;=^5001003
+ ;;^UTILITY(U,$J,358.3,4242,0)
+ ;;=C43.4^^30^311^14
+ ;;^UTILITY(U,$J,358.3,4242,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4242,1,3,0)
+ ;;=3^Malig Melanoma of Scalp/Neck
+ ;;^UTILITY(U,$J,358.3,4242,1,4,0)
+ ;;=4^C43.4
+ ;;^UTILITY(U,$J,358.3,4242,2)
+ ;;=^5001004
+ ;;^UTILITY(U,$J,358.3,4243,0)
+ ;;=C43.51^^30^311^1
+ ;;^UTILITY(U,$J,358.3,4243,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4243,1,3,0)
+ ;;=3^Malig Melanoma of Anal Skin
+ ;;^UTILITY(U,$J,358.3,4243,1,4,0)
+ ;;=4^C43.51
+ ;;^UTILITY(U,$J,358.3,4243,2)
+ ;;=^5001005
+ ;;^UTILITY(U,$J,358.3,4244,0)
+ ;;=C43.52^^30^311^15
+ ;;^UTILITY(U,$J,358.3,4244,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4244,1,3,0)
+ ;;=3^Malig Melanoma of Skin of Breast
+ ;;^UTILITY(U,$J,358.3,4244,1,4,0)
+ ;;=4^C43.52
+ ;;^UTILITY(U,$J,358.3,4244,2)
+ ;;=^5001006
+ ;;^UTILITY(U,$J,358.3,4245,0)
+ ;;=C43.59^^30^311^17
+ ;;^UTILITY(U,$J,358.3,4245,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4245,1,3,0)
+ ;;=3^Malig Melanoma of Trunk NEC
+ ;;^UTILITY(U,$J,358.3,4245,1,4,0)
+ ;;=4^C43.59
+ ;;^UTILITY(U,$J,358.3,4245,2)
+ ;;=^5001007
+ ;;^UTILITY(U,$J,358.3,4246,0)
+ ;;=C43.61^^30^311^13
+ ;;^UTILITY(U,$J,358.3,4246,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4246,1,3,0)
+ ;;=3^Malig Melanoma of Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,4246,1,4,0)
+ ;;=4^C43.61
+ ;;^UTILITY(U,$J,358.3,4246,2)
+ ;;=^5001009
+ ;;^UTILITY(U,$J,358.3,4247,0)
+ ;;=C43.62^^30^311^6
+ ;;^UTILITY(U,$J,358.3,4247,1,0)
+ ;;=^358.31IA^4^2

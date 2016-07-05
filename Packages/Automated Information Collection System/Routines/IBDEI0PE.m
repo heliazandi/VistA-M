@@ -1,134 +1,286 @@
-IBDEI0PE ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0PE ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,11634,2)
- ;;=^5019713
- ;;^UTILITY(U,$J,358.3,11635,0)
- ;;=R93.2^^68^687^9
- ;;^UTILITY(U,$J,358.3,11635,1,0)
+ ;;^UTILITY(U,$J,358.3,25554,0)
+ ;;=F50.8^^97^1203^8
+ ;;^UTILITY(U,$J,358.3,25554,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11635,1,3,0)
- ;;=3^Abnormal Finding on Dx Image of Liver/Biliary Tract
- ;;^UTILITY(U,$J,358.3,11635,1,4,0)
- ;;=4^R93.2
- ;;^UTILITY(U,$J,358.3,11635,2)
- ;;=^5019715
- ;;^UTILITY(U,$J,358.3,11636,0)
- ;;=R93.3^^68^687^7
- ;;^UTILITY(U,$J,358.3,11636,1,0)
+ ;;^UTILITY(U,$J,358.3,25554,1,3,0)
+ ;;=3^Pica in Adults
+ ;;^UTILITY(U,$J,358.3,25554,1,4,0)
+ ;;=4^F50.8
+ ;;^UTILITY(U,$J,358.3,25554,2)
+ ;;=^5003601
+ ;;^UTILITY(U,$J,358.3,25555,0)
+ ;;=F98.21^^97^1203^9
+ ;;^UTILITY(U,$J,358.3,25555,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11636,1,3,0)
- ;;=3^Abnormal Finding on Dx Image of Digestive Tract Part
- ;;^UTILITY(U,$J,358.3,11636,1,4,0)
- ;;=4^R93.3
- ;;^UTILITY(U,$J,358.3,11636,2)
- ;;=^5019716
- ;;^UTILITY(U,$J,358.3,11637,0)
- ;;=R93.4^^68^687^11
- ;;^UTILITY(U,$J,358.3,11637,1,0)
+ ;;^UTILITY(U,$J,358.3,25555,1,3,0)
+ ;;=3^Rumination Disorder
+ ;;^UTILITY(U,$J,358.3,25555,1,4,0)
+ ;;=4^F98.21
+ ;;^UTILITY(U,$J,358.3,25555,2)
+ ;;=^5003713
+ ;;^UTILITY(U,$J,358.3,25556,0)
+ ;;=Z55.9^^97^1204^1
+ ;;^UTILITY(U,$J,358.3,25556,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11637,1,3,0)
- ;;=3^Abnormal Finding on Dx Image of Urinary Organs
- ;;^UTILITY(U,$J,358.3,11637,1,4,0)
- ;;=4^R93.4
- ;;^UTILITY(U,$J,358.3,11637,2)
- ;;=^5019717
- ;;^UTILITY(U,$J,358.3,11638,0)
- ;;=R93.5^^68^687^6
- ;;^UTILITY(U,$J,358.3,11638,1,0)
+ ;;^UTILITY(U,$J,358.3,25556,1,3,0)
+ ;;=3^Academic/Educational Problem
+ ;;^UTILITY(U,$J,358.3,25556,1,4,0)
+ ;;=4^Z55.9
+ ;;^UTILITY(U,$J,358.3,25556,2)
+ ;;=^5063106
+ ;;^UTILITY(U,$J,358.3,25557,0)
+ ;;=Z56.82^^97^1204^2
+ ;;^UTILITY(U,$J,358.3,25557,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11638,1,3,0)
- ;;=3^Abnormal Finding on Dx Image of Abdominal Regions
- ;;^UTILITY(U,$J,358.3,11638,1,4,0)
- ;;=4^R93.5
- ;;^UTILITY(U,$J,358.3,11638,2)
- ;;=^5019718
- ;;^UTILITY(U,$J,358.3,11639,0)
- ;;=R93.6^^68^687^8
- ;;^UTILITY(U,$J,358.3,11639,1,0)
+ ;;^UTILITY(U,$J,358.3,25557,1,3,0)
+ ;;=3^Problems Related to Current Military Deployment Status
+ ;;^UTILITY(U,$J,358.3,25557,1,4,0)
+ ;;=4^Z56.82
+ ;;^UTILITY(U,$J,358.3,25557,2)
+ ;;=^5063115
+ ;;^UTILITY(U,$J,358.3,25558,0)
+ ;;=F64.1^^97^1205^1
+ ;;^UTILITY(U,$J,358.3,25558,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11639,1,3,0)
- ;;=3^Abnormal Finding on Dx Image of Limbs
- ;;^UTILITY(U,$J,358.3,11639,1,4,0)
- ;;=4^R93.6
- ;;^UTILITY(U,$J,358.3,11639,2)
- ;;=^5019719
- ;;^UTILITY(U,$J,358.3,11640,0)
- ;;=R94.4^^68^687^16
- ;;^UTILITY(U,$J,358.3,11640,1,0)
+ ;;^UTILITY(U,$J,358.3,25558,1,3,0)
+ ;;=3^Gender Dysphoria in Adolescents & Adults
+ ;;^UTILITY(U,$J,358.3,25558,1,4,0)
+ ;;=4^F64.1
+ ;;^UTILITY(U,$J,358.3,25558,2)
+ ;;=^5003647
+ ;;^UTILITY(U,$J,358.3,25559,0)
+ ;;=F64.8^^97^1205^2
+ ;;^UTILITY(U,$J,358.3,25559,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11640,1,3,0)
- ;;=3^Abnormal Kidney Function Studies
- ;;^UTILITY(U,$J,358.3,11640,1,4,0)
- ;;=4^R94.4
- ;;^UTILITY(U,$J,358.3,11640,2)
- ;;=^5019741
- ;;^UTILITY(U,$J,358.3,11641,0)
- ;;=R94.5^^68^687^17
- ;;^UTILITY(U,$J,358.3,11641,1,0)
+ ;;^UTILITY(U,$J,358.3,25559,1,3,0)
+ ;;=3^Gender Dysphoria,Other Specified
+ ;;^UTILITY(U,$J,358.3,25559,1,4,0)
+ ;;=4^F64.8
+ ;;^UTILITY(U,$J,358.3,25559,2)
+ ;;=^5003649
+ ;;^UTILITY(U,$J,358.3,25560,0)
+ ;;=F64.9^^97^1205^3
+ ;;^UTILITY(U,$J,358.3,25560,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11641,1,3,0)
- ;;=3^Abnormal Liver Function Studies
- ;;^UTILITY(U,$J,358.3,11641,1,4,0)
- ;;=4^R94.5
- ;;^UTILITY(U,$J,358.3,11641,2)
- ;;=^5019742
- ;;^UTILITY(U,$J,358.3,11642,0)
- ;;=R94.6^^68^687^21
- ;;^UTILITY(U,$J,358.3,11642,1,0)
+ ;;^UTILITY(U,$J,358.3,25560,1,3,0)
+ ;;=3^Gender Dysphoria,Unspec
+ ;;^UTILITY(U,$J,358.3,25560,1,4,0)
+ ;;=4^F64.9
+ ;;^UTILITY(U,$J,358.3,25560,2)
+ ;;=^5003650
+ ;;^UTILITY(U,$J,358.3,25561,0)
+ ;;=Z59.2^^97^1206^1
+ ;;^UTILITY(U,$J,358.3,25561,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11642,1,3,0)
- ;;=3^Abnormal Thyroid Function Studies
- ;;^UTILITY(U,$J,358.3,11642,1,4,0)
- ;;=4^R94.6
- ;;^UTILITY(U,$J,358.3,11642,2)
- ;;=^5019743
- ;;^UTILITY(U,$J,358.3,11643,0)
- ;;=R94.7^^68^687^5
- ;;^UTILITY(U,$J,358.3,11643,1,0)
+ ;;^UTILITY(U,$J,358.3,25561,1,3,0)
+ ;;=3^Discord w/ Neighbor,Lodger or Landlord
+ ;;^UTILITY(U,$J,358.3,25561,1,4,0)
+ ;;=4^Z59.2
+ ;;^UTILITY(U,$J,358.3,25561,2)
+ ;;=^5063131
+ ;;^UTILITY(U,$J,358.3,25562,0)
+ ;;=Z59.0^^97^1206^3
+ ;;^UTILITY(U,$J,358.3,25562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11643,1,3,0)
- ;;=3^Abnormal Endocrine Function Sutdies NEC
- ;;^UTILITY(U,$J,358.3,11643,1,4,0)
- ;;=4^R94.7
- ;;^UTILITY(U,$J,358.3,11643,2)
- ;;=^5019744
- ;;^UTILITY(U,$J,358.3,11644,0)
- ;;=R94.31^^68^687^4
- ;;^UTILITY(U,$J,358.3,11644,1,0)
+ ;;^UTILITY(U,$J,358.3,25562,1,3,0)
+ ;;=3^Homelessness
+ ;;^UTILITY(U,$J,358.3,25562,1,4,0)
+ ;;=4^Z59.0
+ ;;^UTILITY(U,$J,358.3,25562,2)
+ ;;=^5063129
+ ;;^UTILITY(U,$J,358.3,25563,0)
+ ;;=Z59.1^^97^1206^5
+ ;;^UTILITY(U,$J,358.3,25563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11644,1,3,0)
- ;;=3^Abnormal EKG
- ;;^UTILITY(U,$J,358.3,11644,1,4,0)
- ;;=4^R94.31
- ;;^UTILITY(U,$J,358.3,11644,2)
- ;;=^5019739
- ;;^UTILITY(U,$J,358.3,11645,0)
- ;;=R97.0^^68^687^67
- ;;^UTILITY(U,$J,358.3,11645,1,0)
+ ;;^UTILITY(U,$J,358.3,25563,1,3,0)
+ ;;=3^Inadequate Housing
+ ;;^UTILITY(U,$J,358.3,25563,1,4,0)
+ ;;=4^Z59.1
+ ;;^UTILITY(U,$J,358.3,25563,2)
+ ;;=^5063130
+ ;;^UTILITY(U,$J,358.3,25564,0)
+ ;;=Z59.3^^97^1206^9
+ ;;^UTILITY(U,$J,358.3,25564,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11645,1,3,0)
- ;;=3^Elevated Carcinoembryonic Antigen 
- ;;^UTILITY(U,$J,358.3,11645,1,4,0)
- ;;=4^R97.0
- ;;^UTILITY(U,$J,358.3,11645,2)
- ;;=^5019746
- ;;^UTILITY(U,$J,358.3,11646,0)
- ;;=R97.1^^68^687^66
- ;;^UTILITY(U,$J,358.3,11646,1,0)
+ ;;^UTILITY(U,$J,358.3,25564,1,3,0)
+ ;;=3^Problems Related to Living in Residential Institution
+ ;;^UTILITY(U,$J,358.3,25564,1,4,0)
+ ;;=4^Z59.3
+ ;;^UTILITY(U,$J,358.3,25564,2)
+ ;;=^5063132
+ ;;^UTILITY(U,$J,358.3,25565,0)
+ ;;=Z59.4^^97^1206^7
+ ;;^UTILITY(U,$J,358.3,25565,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11646,1,3,0)
- ;;=3^Elevated Cancer Antigen 125
- ;;^UTILITY(U,$J,358.3,11646,1,4,0)
- ;;=4^R97.1
- ;;^UTILITY(U,$J,358.3,11646,2)
- ;;=^5019747
- ;;^UTILITY(U,$J,358.3,11647,0)
- ;;=R97.2^^68^687^68
- ;;^UTILITY(U,$J,358.3,11647,1,0)
+ ;;^UTILITY(U,$J,358.3,25565,1,3,0)
+ ;;=3^Lack of Adequate Food or Safe Drinking Water
+ ;;^UTILITY(U,$J,358.3,25565,1,4,0)
+ ;;=4^Z59.4
+ ;;^UTILITY(U,$J,358.3,25565,2)
+ ;;=^5063133
+ ;;^UTILITY(U,$J,358.3,25566,0)
+ ;;=Z59.5^^97^1206^2
+ ;;^UTILITY(U,$J,358.3,25566,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11647,1,3,0)
- ;;=3^Elevated PSA
- ;;^UTILITY(U,$J,358.3,11647,1,4,0)
- ;;=4^R97.2
+ ;;^UTILITY(U,$J,358.3,25566,1,3,0)
+ ;;=3^Extreme Poverty
+ ;;^UTILITY(U,$J,358.3,25566,1,4,0)
+ ;;=4^Z59.5
+ ;;^UTILITY(U,$J,358.3,25566,2)
+ ;;=^5063134
+ ;;^UTILITY(U,$J,358.3,25567,0)
+ ;;=Z59.6^^97^1206^8
+ ;;^UTILITY(U,$J,358.3,25567,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25567,1,3,0)
+ ;;=3^Low Income
+ ;;^UTILITY(U,$J,358.3,25567,1,4,0)
+ ;;=4^Z59.6
+ ;;^UTILITY(U,$J,358.3,25567,2)
+ ;;=^5063135
+ ;;^UTILITY(U,$J,358.3,25568,0)
+ ;;=Z59.7^^97^1206^6
+ ;;^UTILITY(U,$J,358.3,25568,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25568,1,3,0)
+ ;;=3^Insufficient Social Insurance/Welfare Support
+ ;;^UTILITY(U,$J,358.3,25568,1,4,0)
+ ;;=4^Z59.7
+ ;;^UTILITY(U,$J,358.3,25568,2)
+ ;;=^5063136
+ ;;^UTILITY(U,$J,358.3,25569,0)
+ ;;=Z59.9^^97^1206^4
+ ;;^UTILITY(U,$J,358.3,25569,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25569,1,3,0)
+ ;;=3^Housing/Economic Problems,Unspec
+ ;;^UTILITY(U,$J,358.3,25569,1,4,0)
+ ;;=4^Z59.9
+ ;;^UTILITY(U,$J,358.3,25569,2)
+ ;;=^5063138
+ ;;^UTILITY(U,$J,358.3,25570,0)
+ ;;=G21.19^^97^1207^10
+ ;;^UTILITY(U,$J,358.3,25570,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25570,1,3,0)
+ ;;=3^Medication-Induced Parkinsonism,Other
+ ;;^UTILITY(U,$J,358.3,25570,1,4,0)
+ ;;=4^G21.19
+ ;;^UTILITY(U,$J,358.3,25570,2)
+ ;;=^5003773
+ ;;^UTILITY(U,$J,358.3,25571,0)
+ ;;=G21.11^^97^1207^13
+ ;;^UTILITY(U,$J,358.3,25571,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25571,1,3,0)
+ ;;=3^Neuroleptic-Induced Parkinsonism
+ ;;^UTILITY(U,$J,358.3,25571,1,4,0)
+ ;;=4^G21.11
+ ;;^UTILITY(U,$J,358.3,25571,2)
+ ;;=^5003772
+ ;;^UTILITY(U,$J,358.3,25572,0)
+ ;;=G24.01^^97^1207^15
+ ;;^UTILITY(U,$J,358.3,25572,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25572,1,3,0)
+ ;;=3^Tardive Dyskinesia
+ ;;^UTILITY(U,$J,358.3,25572,1,4,0)
+ ;;=4^G24.01
+ ;;^UTILITY(U,$J,358.3,25572,2)
+ ;;=^5003784
+ ;;^UTILITY(U,$J,358.3,25573,0)
+ ;;=G24.09^^97^1207^16
+ ;;^UTILITY(U,$J,358.3,25573,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25573,1,3,0)
+ ;;=3^Tardive Dystonia
+ ;;^UTILITY(U,$J,358.3,25573,1,4,0)
+ ;;=4^G24.09
+ ;;^UTILITY(U,$J,358.3,25573,2)
+ ;;=^5003786
+ ;;^UTILITY(U,$J,358.3,25574,0)
+ ;;=G25.1^^97^1207^11
+ ;;^UTILITY(U,$J,358.3,25574,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25574,1,3,0)
+ ;;=3^Medication-Induced Postural Tremor
+ ;;^UTILITY(U,$J,358.3,25574,1,4,0)
+ ;;=4^G25.1
+ ;;^UTILITY(U,$J,358.3,25574,2)
+ ;;=^5003792
+ ;;^UTILITY(U,$J,358.3,25575,0)
+ ;;=G25.71^^97^1207^14
+ ;;^UTILITY(U,$J,358.3,25575,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25575,1,3,0)
+ ;;=3^Tardive Akathisia
+ ;;^UTILITY(U,$J,358.3,25575,1,4,0)
+ ;;=4^G25.71
+ ;;^UTILITY(U,$J,358.3,25575,2)
+ ;;=^5003799
+ ;;^UTILITY(U,$J,358.3,25576,0)
+ ;;=G25.79^^97^1207^9
+ ;;^UTILITY(U,$J,358.3,25576,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25576,1,3,0)
+ ;;=3^Medication-Induced Movement Disorder,Other
+ ;;^UTILITY(U,$J,358.3,25576,1,4,0)
+ ;;=4^G25.79
+ ;;^UTILITY(U,$J,358.3,25576,2)
+ ;;=^5003800
+ ;;^UTILITY(U,$J,358.3,25577,0)
+ ;;=T43.205A^^97^1207^4
+ ;;^UTILITY(U,$J,358.3,25577,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25577,1,3,0)
+ ;;=3^Antidepressant Discontinuation Syndrome,Init Encntr
+ ;;^UTILITY(U,$J,358.3,25577,1,4,0)
+ ;;=4^T43.205A
+ ;;^UTILITY(U,$J,358.3,25577,2)
+ ;;=^5050540
+ ;;^UTILITY(U,$J,358.3,25578,0)
+ ;;=T43.205D^^97^1207^5
+ ;;^UTILITY(U,$J,358.3,25578,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25578,1,3,0)
+ ;;=3^Antidepressant Discontinuation Syndrome,Subseq Encntr
+ ;;^UTILITY(U,$J,358.3,25578,1,4,0)
+ ;;=4^T43.205D
+ ;;^UTILITY(U,$J,358.3,25578,2)
+ ;;=^5050541
+ ;;^UTILITY(U,$J,358.3,25579,0)
+ ;;=T43.205S^^97^1207^6
+ ;;^UTILITY(U,$J,358.3,25579,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25579,1,3,0)
+ ;;=3^Antidepressant Discontinuation Syndrome,Sequela
+ ;;^UTILITY(U,$J,358.3,25579,1,4,0)
+ ;;=4^T43.205S
+ ;;^UTILITY(U,$J,358.3,25579,2)
+ ;;=^5050542
+ ;;^UTILITY(U,$J,358.3,25580,0)
+ ;;=G25.71^^97^1207^7
+ ;;^UTILITY(U,$J,358.3,25580,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25580,1,3,0)
+ ;;=3^Medication-Induced Acute Akathisia
+ ;;^UTILITY(U,$J,358.3,25580,1,4,0)
+ ;;=4^G25.71
+ ;;^UTILITY(U,$J,358.3,25580,2)
+ ;;=^5003799
+ ;;^UTILITY(U,$J,358.3,25581,0)
+ ;;=G24.02^^97^1207^8
+ ;;^UTILITY(U,$J,358.3,25581,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,25581,1,3,0)
+ ;;=3^Medication-Induced Acute Dystonia
+ ;;^UTILITY(U,$J,358.3,25581,1,4,0)
+ ;;=4^G24.02
+ ;;^UTILITY(U,$J,358.3,25581,2)
+ ;;=^5003785
+ ;;^UTILITY(U,$J,358.3,25582,0)
+ ;;=G21.0^^97^1207^12

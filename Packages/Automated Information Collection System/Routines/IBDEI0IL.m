@@ -1,130 +1,290 @@
-IBDEI0IL ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0IL ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8352,0)
- ;;=C50.911^^55^538^84
- ;;^UTILITY(U,$J,358.3,8352,1,0)
+ ;;^UTILITY(U,$J,358.3,18727,0)
+ ;;=C22.4^^84^967^15
+ ;;^UTILITY(U,$J,358.3,18727,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8352,1,3,0)
- ;;=3^Malignant neoplasm of unsp site of right female breast
- ;;^UTILITY(U,$J,358.3,8352,1,4,0)
- ;;=4^C50.911
- ;;^UTILITY(U,$J,358.3,8352,2)
- ;;=^5001195
- ;;^UTILITY(U,$J,358.3,8353,0)
- ;;=C50.912^^55^538^83
- ;;^UTILITY(U,$J,358.3,8353,1,0)
+ ;;^UTILITY(U,$J,358.3,18727,1,3,0)
+ ;;=3^Liver Sarcomas NEC
+ ;;^UTILITY(U,$J,358.3,18727,1,4,0)
+ ;;=4^C22.4
+ ;;^UTILITY(U,$J,358.3,18727,2)
+ ;;=^5000937
+ ;;^UTILITY(U,$J,358.3,18728,0)
+ ;;=C22.3^^84^967^16
+ ;;^UTILITY(U,$J,358.3,18728,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8353,1,3,0)
- ;;=3^Malignant neoplasm of unsp site of left female breast
- ;;^UTILITY(U,$J,358.3,8353,1,4,0)
+ ;;^UTILITY(U,$J,358.3,18728,1,3,0)
+ ;;=3^Angiosarcoma of Liver
+ ;;^UTILITY(U,$J,358.3,18728,1,4,0)
+ ;;=4^C22.3
+ ;;^UTILITY(U,$J,358.3,18728,2)
+ ;;=^5000936
+ ;;^UTILITY(U,$J,358.3,18729,0)
+ ;;=C23.^^84^967^17
+ ;;^UTILITY(U,$J,358.3,18729,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18729,1,3,0)
+ ;;=3^Malig Neop of Gallbladder
+ ;;^UTILITY(U,$J,358.3,18729,1,4,0)
+ ;;=4^C23.
+ ;;^UTILITY(U,$J,358.3,18729,2)
+ ;;=^267098
+ ;;^UTILITY(U,$J,358.3,18730,0)
+ ;;=C24.0^^84^967^18
+ ;;^UTILITY(U,$J,358.3,18730,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18730,1,3,0)
+ ;;=3^Malig Neop of Extrahepatic Bile Duct
+ ;;^UTILITY(U,$J,358.3,18730,1,4,0)
+ ;;=4^C24.0
+ ;;^UTILITY(U,$J,358.3,18730,2)
+ ;;=^5000940
+ ;;^UTILITY(U,$J,358.3,18731,0)
+ ;;=C24.1^^84^967^19
+ ;;^UTILITY(U,$J,358.3,18731,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18731,1,3,0)
+ ;;=3^Malig Neop of Ampulla of Vater
+ ;;^UTILITY(U,$J,358.3,18731,1,4,0)
+ ;;=4^C24.1
+ ;;^UTILITY(U,$J,358.3,18731,2)
+ ;;=^267100
+ ;;^UTILITY(U,$J,358.3,18732,0)
+ ;;=C25.9^^84^967^20
+ ;;^UTILITY(U,$J,358.3,18732,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18732,1,3,0)
+ ;;=3^Malig Neop of Pancreas,Unspec
+ ;;^UTILITY(U,$J,358.3,18732,1,4,0)
+ ;;=4^C25.9
+ ;;^UTILITY(U,$J,358.3,18732,2)
+ ;;=^5000946
+ ;;^UTILITY(U,$J,358.3,18733,0)
+ ;;=C31.9^^84^967^21
+ ;;^UTILITY(U,$J,358.3,18733,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18733,1,3,0)
+ ;;=3^Malig Neop of Accessory Sinus,Unspec
+ ;;^UTILITY(U,$J,358.3,18733,1,4,0)
+ ;;=4^C31.9
+ ;;^UTILITY(U,$J,358.3,18733,2)
+ ;;=^5000953
+ ;;^UTILITY(U,$J,358.3,18734,0)
+ ;;=C32.9^^84^967^22
+ ;;^UTILITY(U,$J,358.3,18734,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18734,1,3,0)
+ ;;=3^Malig Neop of Larynx,Unspec
+ ;;^UTILITY(U,$J,358.3,18734,1,4,0)
+ ;;=4^C32.9
+ ;;^UTILITY(U,$J,358.3,18734,2)
+ ;;=^5000956
+ ;;^UTILITY(U,$J,358.3,18735,0)
+ ;;=C34.91^^84^967^23
+ ;;^UTILITY(U,$J,358.3,18735,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18735,1,3,0)
+ ;;=3^Malig Neop of Right Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,18735,1,4,0)
+ ;;=4^C34.91
+ ;;^UTILITY(U,$J,358.3,18735,2)
+ ;;=^5000967
+ ;;^UTILITY(U,$J,358.3,18736,0)
+ ;;=C34.92^^84^967^24
+ ;;^UTILITY(U,$J,358.3,18736,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18736,1,3,0)
+ ;;=3^Malig Neop of Left Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,18736,1,4,0)
+ ;;=4^C34.92
+ ;;^UTILITY(U,$J,358.3,18736,2)
+ ;;=^5000968
+ ;;^UTILITY(U,$J,358.3,18737,0)
+ ;;=C38.4^^84^967^25
+ ;;^UTILITY(U,$J,358.3,18737,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18737,1,3,0)
+ ;;=3^Malig Neop of Pleura
+ ;;^UTILITY(U,$J,358.3,18737,1,4,0)
+ ;;=4^C38.4
+ ;;^UTILITY(U,$J,358.3,18737,2)
+ ;;=^267140
+ ;;^UTILITY(U,$J,358.3,18738,0)
+ ;;=C45.0^^84^967^26
+ ;;^UTILITY(U,$J,358.3,18738,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18738,1,3,0)
+ ;;=3^Mesothelioma of Pleura
+ ;;^UTILITY(U,$J,358.3,18738,1,4,0)
+ ;;=4^C45.0
+ ;;^UTILITY(U,$J,358.3,18738,2)
+ ;;=^5001095
+ ;;^UTILITY(U,$J,358.3,18739,0)
+ ;;=C49.9^^84^967^27
+ ;;^UTILITY(U,$J,358.3,18739,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18739,1,3,0)
+ ;;=3^Malig Neop of Connective/Soft Tissue,Unspec
+ ;;^UTILITY(U,$J,358.3,18739,1,4,0)
+ ;;=4^C49.9
+ ;;^UTILITY(U,$J,358.3,18739,2)
+ ;;=^5001136
+ ;;^UTILITY(U,$J,358.3,18740,0)
+ ;;=C43.9^^84^967^28
+ ;;^UTILITY(U,$J,358.3,18740,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18740,1,3,0)
+ ;;=3^Malig Melanoma of Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,18740,1,4,0)
+ ;;=4^C43.9
+ ;;^UTILITY(U,$J,358.3,18740,2)
+ ;;=^5001015
+ ;;^UTILITY(U,$J,358.3,18741,0)
+ ;;=C50.912^^84^967^29
+ ;;^UTILITY(U,$J,358.3,18741,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18741,1,3,0)
+ ;;=3^Malig Neop of Left Female Breast
+ ;;^UTILITY(U,$J,358.3,18741,1,4,0)
  ;;=4^C50.912
- ;;^UTILITY(U,$J,358.3,8353,2)
+ ;;^UTILITY(U,$J,358.3,18741,2)
  ;;=^5001196
- ;;^UTILITY(U,$J,358.3,8354,0)
- ;;=C46.9^^55^538^43
- ;;^UTILITY(U,$J,358.3,8354,1,0)
+ ;;^UTILITY(U,$J,358.3,18742,0)
+ ;;=C50.911^^84^967^30
+ ;;^UTILITY(U,$J,358.3,18742,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8354,1,3,0)
- ;;=3^Kaposi's sarcoma, unspecified
- ;;^UTILITY(U,$J,358.3,8354,1,4,0)
+ ;;^UTILITY(U,$J,358.3,18742,1,3,0)
+ ;;=3^Malig Neop of Right Female Breast
+ ;;^UTILITY(U,$J,358.3,18742,1,4,0)
+ ;;=4^C50.911
+ ;;^UTILITY(U,$J,358.3,18742,2)
+ ;;=^5001195
+ ;;^UTILITY(U,$J,358.3,18743,0)
+ ;;=C46.9^^84^967^31
+ ;;^UTILITY(U,$J,358.3,18743,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18743,1,3,0)
+ ;;=3^Kaposi's Sarcoma,Unspec
+ ;;^UTILITY(U,$J,358.3,18743,1,4,0)
  ;;=4^C46.9
- ;;^UTILITY(U,$J,358.3,8354,2)
+ ;;^UTILITY(U,$J,358.3,18743,2)
  ;;=^5001108
- ;;^UTILITY(U,$J,358.3,8355,0)
- ;;=C61.^^55^538^72
- ;;^UTILITY(U,$J,358.3,8355,1,0)
+ ;;^UTILITY(U,$J,358.3,18744,0)
+ ;;=C61.^^84^967^32
+ ;;^UTILITY(U,$J,358.3,18744,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8355,1,3,0)
- ;;=3^Malignant neoplasm of prostate
- ;;^UTILITY(U,$J,358.3,8355,1,4,0)
+ ;;^UTILITY(U,$J,358.3,18744,1,3,0)
+ ;;=3^Malig Neop of Prostate
+ ;;^UTILITY(U,$J,358.3,18744,1,4,0)
  ;;=4^C61.
- ;;^UTILITY(U,$J,358.3,8355,2)
+ ;;^UTILITY(U,$J,358.3,18744,2)
  ;;=^267239
- ;;^UTILITY(U,$J,358.3,8356,0)
- ;;=C62.11^^55^538^57
- ;;^UTILITY(U,$J,358.3,8356,1,0)
+ ;;^UTILITY(U,$J,358.3,18745,0)
+ ;;=C62.12^^84^967^33
+ ;;^UTILITY(U,$J,358.3,18745,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8356,1,3,0)
- ;;=3^Malignant neoplasm of descended right testis
- ;;^UTILITY(U,$J,358.3,8356,1,4,0)
- ;;=4^C62.11
- ;;^UTILITY(U,$J,358.3,8356,2)
- ;;=^5001234
- ;;^UTILITY(U,$J,358.3,8357,0)
- ;;=C62.12^^55^538^56
- ;;^UTILITY(U,$J,358.3,8357,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8357,1,3,0)
- ;;=3^Malignant neoplasm of descended left testis
- ;;^UTILITY(U,$J,358.3,8357,1,4,0)
+ ;;^UTILITY(U,$J,358.3,18745,1,3,0)
+ ;;=3^Malig Neop of Left Descended Testis
+ ;;^UTILITY(U,$J,358.3,18745,1,4,0)
  ;;=4^C62.12
- ;;^UTILITY(U,$J,358.3,8357,2)
+ ;;^UTILITY(U,$J,358.3,18745,2)
  ;;=^5001235
- ;;^UTILITY(U,$J,358.3,8358,0)
- ;;=C62.91^^55^538^76
- ;;^UTILITY(U,$J,358.3,8358,1,0)
+ ;;^UTILITY(U,$J,358.3,18746,0)
+ ;;=C62.11^^84^967^34
+ ;;^UTILITY(U,$J,358.3,18746,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8358,1,3,0)
- ;;=3^Malignant neoplasm of right testis, unsp descended or undescended
- ;;^UTILITY(U,$J,358.3,8358,1,4,0)
- ;;=4^C62.91
- ;;^UTILITY(U,$J,358.3,8358,2)
- ;;=^5001237
- ;;^UTILITY(U,$J,358.3,8359,0)
- ;;=C62.92^^55^538^65
- ;;^UTILITY(U,$J,358.3,8359,1,0)
+ ;;^UTILITY(U,$J,358.3,18746,1,3,0)
+ ;;=3^Malig Neop of Right Descended Testis
+ ;;^UTILITY(U,$J,358.3,18746,1,4,0)
+ ;;=4^C62.11
+ ;;^UTILITY(U,$J,358.3,18746,2)
+ ;;=^5001234
+ ;;^UTILITY(U,$J,358.3,18747,0)
+ ;;=C62.92^^84^967^35
+ ;;^UTILITY(U,$J,358.3,18747,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8359,1,3,0)
- ;;=3^Malignant neoplasm of left testis, unsp descended or undescended
- ;;^UTILITY(U,$J,358.3,8359,1,4,0)
+ ;;^UTILITY(U,$J,358.3,18747,1,3,0)
+ ;;=3^Malig Neop of Left Testis
+ ;;^UTILITY(U,$J,358.3,18747,1,4,0)
  ;;=4^C62.92
- ;;^UTILITY(U,$J,358.3,8359,2)
+ ;;^UTILITY(U,$J,358.3,18747,2)
  ;;=^5001238
- ;;^UTILITY(U,$J,358.3,8360,0)
- ;;=C67.9^^55^538^52
- ;;^UTILITY(U,$J,358.3,8360,1,0)
+ ;;^UTILITY(U,$J,358.3,18748,0)
+ ;;=C62.91^^84^967^36
+ ;;^UTILITY(U,$J,358.3,18748,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8360,1,3,0)
- ;;=3^Malignant neoplasm of bladder, unspecified
- ;;^UTILITY(U,$J,358.3,8360,1,4,0)
+ ;;^UTILITY(U,$J,358.3,18748,1,3,0)
+ ;;=3^Malig Neop of Right Testis
+ ;;^UTILITY(U,$J,358.3,18748,1,4,0)
+ ;;=4^C62.91
+ ;;^UTILITY(U,$J,358.3,18748,2)
+ ;;=^5001237
+ ;;^UTILITY(U,$J,358.3,18749,0)
+ ;;=C67.9^^84^967^37
+ ;;^UTILITY(U,$J,358.3,18749,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18749,1,3,0)
+ ;;=3^Malig Neop of Bladder,Unspec
+ ;;^UTILITY(U,$J,358.3,18749,1,4,0)
  ;;=4^C67.9
- ;;^UTILITY(U,$J,358.3,8360,2)
+ ;;^UTILITY(U,$J,358.3,18749,2)
  ;;=^5001263
- ;;^UTILITY(U,$J,358.3,8361,0)
- ;;=C64.2^^55^538^63
- ;;^UTILITY(U,$J,358.3,8361,1,0)
+ ;;^UTILITY(U,$J,358.3,18750,0)
+ ;;=C64.2^^84^967^38
+ ;;^UTILITY(U,$J,358.3,18750,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8361,1,3,0)
- ;;=3^Malignant neoplasm of left kidney, except renal pelvis
- ;;^UTILITY(U,$J,358.3,8361,1,4,0)
+ ;;^UTILITY(U,$J,358.3,18750,1,3,0)
+ ;;=3^Malig Neop of Left Kidney,Except Renal Pelvis
+ ;;^UTILITY(U,$J,358.3,18750,1,4,0)
  ;;=4^C64.2
- ;;^UTILITY(U,$J,358.3,8361,2)
+ ;;^UTILITY(U,$J,358.3,18750,2)
  ;;=^5001249
- ;;^UTILITY(U,$J,358.3,8362,0)
- ;;=C64.1^^55^538^74
- ;;^UTILITY(U,$J,358.3,8362,1,0)
+ ;;^UTILITY(U,$J,358.3,18751,0)
+ ;;=C64.1^^84^967^39
+ ;;^UTILITY(U,$J,358.3,18751,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8362,1,3,0)
- ;;=3^Malignant neoplasm of right kidney, except renal pelvis
- ;;^UTILITY(U,$J,358.3,8362,1,4,0)
+ ;;^UTILITY(U,$J,358.3,18751,1,3,0)
+ ;;=3^Malig Neop of Right Kidney,Except Renal Pelvis
+ ;;^UTILITY(U,$J,358.3,18751,1,4,0)
  ;;=4^C64.1
- ;;^UTILITY(U,$J,358.3,8362,2)
+ ;;^UTILITY(U,$J,358.3,18751,2)
  ;;=^5001248
- ;;^UTILITY(U,$J,358.3,8363,0)
- ;;=C65.1^^55^538^75
- ;;^UTILITY(U,$J,358.3,8363,1,0)
+ ;;^UTILITY(U,$J,358.3,18752,0)
+ ;;=C65.1^^84^967^40
+ ;;^UTILITY(U,$J,358.3,18752,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8363,1,3,0)
- ;;=3^Malignant neoplasm of right renal pelvis
- ;;^UTILITY(U,$J,358.3,8363,1,4,0)
+ ;;^UTILITY(U,$J,358.3,18752,1,3,0)
+ ;;=3^Malig Neop of Right Renal Pelvis
+ ;;^UTILITY(U,$J,358.3,18752,1,4,0)
  ;;=4^C65.1
- ;;^UTILITY(U,$J,358.3,8363,2)
+ ;;^UTILITY(U,$J,358.3,18752,2)
  ;;=^5001251
- ;;^UTILITY(U,$J,358.3,8364,0)
- ;;=C65.2^^55^538^64
- ;;^UTILITY(U,$J,358.3,8364,1,0)
+ ;;^UTILITY(U,$J,358.3,18753,0)
+ ;;=C65.2^^84^967^41
+ ;;^UTILITY(U,$J,358.3,18753,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8364,1,3,0)
- ;;=3^Malignant neoplasm of left renal pelvis
+ ;;^UTILITY(U,$J,358.3,18753,1,3,0)
+ ;;=3^Malig Neop of Left Renal Pelvis
+ ;;^UTILITY(U,$J,358.3,18753,1,4,0)
+ ;;=4^C65.2
+ ;;^UTILITY(U,$J,358.3,18753,2)
+ ;;=^5001252
+ ;;^UTILITY(U,$J,358.3,18754,0)
+ ;;=C71.9^^84^967^42
+ ;;^UTILITY(U,$J,358.3,18754,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18754,1,3,0)
+ ;;=3^Malig Neop of Brain,Unspec
+ ;;^UTILITY(U,$J,358.3,18754,1,4,0)
+ ;;=4^C71.9
+ ;;^UTILITY(U,$J,358.3,18754,2)
+ ;;=^5001297
+ ;;^UTILITY(U,$J,358.3,18755,0)
+ ;;=C83.50^^84^967^43
+ ;;^UTILITY(U,$J,358.3,18755,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18755,1,3,0)
+ ;;=3^Lymphoblastic Lymphoma,Unspec Site

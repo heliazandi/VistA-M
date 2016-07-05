@@ -1,124 +1,292 @@
-IBDEI0E8 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0E8 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6210,1,0)
+ ;;^UTILITY(U,$J,358.3,14224,2)
+ ;;=^5002626
+ ;;^UTILITY(U,$J,358.3,14225,0)
+ ;;=E11.21^^61^732^17
+ ;;^UTILITY(U,$J,358.3,14225,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6210,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of GU System
- ;;^UTILITY(U,$J,358.3,6210,1,4,0)
- ;;=4^N99.62
- ;;^UTILITY(U,$J,358.3,6210,2)
- ;;=^5015964
- ;;^UTILITY(U,$J,358.3,6211,0)
- ;;=M96.811^^40^386^34
- ;;^UTILITY(U,$J,358.3,6211,1,0)
+ ;;^UTILITY(U,$J,358.3,14225,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Nephropathy
+ ;;^UTILITY(U,$J,358.3,14225,1,4,0)
+ ;;=4^E11.21
+ ;;^UTILITY(U,$J,358.3,14225,2)
+ ;;=^5002629
+ ;;^UTILITY(U,$J,358.3,14226,0)
+ ;;=E11.39^^61^732^18
+ ;;^UTILITY(U,$J,358.3,14226,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6211,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Musculoskeletal System
- ;;^UTILITY(U,$J,358.3,6211,1,4,0)
- ;;=4^M96.811
- ;;^UTILITY(U,$J,358.3,6211,2)
- ;;=^5015394
- ;;^UTILITY(U,$J,358.3,6212,0)
- ;;=J95.62^^40^386^37
- ;;^UTILITY(U,$J,358.3,6212,1,0)
+ ;;^UTILITY(U,$J,358.3,14226,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Ophthalmic Complication NEC
+ ;;^UTILITY(U,$J,358.3,14226,1,4,0)
+ ;;=4^E11.39
+ ;;^UTILITY(U,$J,358.3,14226,2)
+ ;;=^5002643
+ ;;^UTILITY(U,$J,358.3,14227,0)
+ ;;=E11.43^^61^732^15
+ ;;^UTILITY(U,$J,358.3,14227,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6212,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Respiratory System
- ;;^UTILITY(U,$J,358.3,6212,1,4,0)
- ;;=4^J95.62
- ;;^UTILITY(U,$J,358.3,6212,2)
- ;;=^5008333
- ;;^UTILITY(U,$J,358.3,6213,0)
- ;;=K91.72^^40^386^1
- ;;^UTILITY(U,$J,358.3,6213,1,0)
+ ;;^UTILITY(U,$J,358.3,14227,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Autonomic Neuropathy
+ ;;^UTILITY(U,$J,358.3,14227,1,4,0)
+ ;;=4^E11.43
+ ;;^UTILITY(U,$J,358.3,14227,2)
+ ;;=^5002647
+ ;;^UTILITY(U,$J,358.3,14228,0)
+ ;;=E11.59^^61^732^13
+ ;;^UTILITY(U,$J,358.3,14228,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6213,1,3,0)
- ;;=3^Accidental Puncture/Laceration of Digestive System During Surgery
- ;;^UTILITY(U,$J,358.3,6213,1,4,0)
- ;;=4^K91.72
- ;;^UTILITY(U,$J,358.3,6213,2)
- ;;=^5008906
- ;;^UTILITY(U,$J,358.3,6214,0)
- ;;=E36.12^^40^386^2
- ;;^UTILITY(U,$J,358.3,6214,1,0)
+ ;;^UTILITY(U,$J,358.3,14228,1,3,0)
+ ;;=3^DM Type 2 w/ Circulatory Complications NEC
+ ;;^UTILITY(U,$J,358.3,14228,1,4,0)
+ ;;=4^E11.59
+ ;;^UTILITY(U,$J,358.3,14228,2)
+ ;;=^5002652
+ ;;^UTILITY(U,$J,358.3,14229,0)
+ ;;=E11.618^^61^732^14
+ ;;^UTILITY(U,$J,358.3,14229,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6214,1,3,0)
- ;;=3^Accidental Puncture/Laceration of Endocrine System During Surgery
- ;;^UTILITY(U,$J,358.3,6214,1,4,0)
- ;;=4^E36.12
- ;;^UTILITY(U,$J,358.3,6214,2)
- ;;=^5002782
- ;;^UTILITY(U,$J,358.3,6215,0)
- ;;=H59.221^^40^386^9
- ;;^UTILITY(U,$J,358.3,6215,1,0)
+ ;;^UTILITY(U,$J,358.3,14229,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Arthropathy NEC
+ ;;^UTILITY(U,$J,358.3,14229,1,4,0)
+ ;;=4^E11.618
+ ;;^UTILITY(U,$J,358.3,14229,2)
+ ;;=^5002654
+ ;;^UTILITY(U,$J,358.3,14230,0)
+ ;;=E11.621^^61^732^16
+ ;;^UTILITY(U,$J,358.3,14230,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6215,1,3,0)
- ;;=3^Accidental Puncture/Laceration of Right Eye/Adnexa During Surgery
- ;;^UTILITY(U,$J,358.3,6215,1,4,0)
- ;;=4^H59.221
- ;;^UTILITY(U,$J,358.3,6215,2)
- ;;=^5006413
- ;;^UTILITY(U,$J,358.3,6216,0)
- ;;=H59.222^^40^386^5
- ;;^UTILITY(U,$J,358.3,6216,1,0)
+ ;;^UTILITY(U,$J,358.3,14230,1,3,0)
+ ;;=3^DM Type 2 w/ Diabetic Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,14230,1,4,0)
+ ;;=4^E11.621
+ ;;^UTILITY(U,$J,358.3,14230,2)
+ ;;=^5002656
+ ;;^UTILITY(U,$J,358.3,14231,0)
+ ;;=E11.622^^61^732^20
+ ;;^UTILITY(U,$J,358.3,14231,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6216,1,3,0)
- ;;=3^Accidental Puncture/Laceration of Left Eye/Adnexa During Surgery
- ;;^UTILITY(U,$J,358.3,6216,1,4,0)
- ;;=4^H59.222
- ;;^UTILITY(U,$J,358.3,6216,2)
- ;;=^5006414
- ;;^UTILITY(U,$J,358.3,6217,0)
- ;;=N99.72^^40^386^4
- ;;^UTILITY(U,$J,358.3,6217,1,0)
+ ;;^UTILITY(U,$J,358.3,14231,1,3,0)
+ ;;=3^DM Type 2 w/ Skin Ulcer NEC
+ ;;^UTILITY(U,$J,358.3,14231,1,4,0)
+ ;;=4^E11.622
+ ;;^UTILITY(U,$J,358.3,14231,2)
+ ;;=^5002657
+ ;;^UTILITY(U,$J,358.3,14232,0)
+ ;;=E11.65^^61^732^19
+ ;;^UTILITY(U,$J,358.3,14232,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6217,1,3,0)
- ;;=3^Accidental Puncture/Laceration of GU System
- ;;^UTILITY(U,$J,358.3,6217,1,4,0)
- ;;=4^N99.72
- ;;^UTILITY(U,$J,358.3,6217,2)
- ;;=^5015966
- ;;^UTILITY(U,$J,358.3,6218,0)
- ;;=M96.821^^40^386^6
- ;;^UTILITY(U,$J,358.3,6218,1,0)
+ ;;^UTILITY(U,$J,358.3,14232,1,3,0)
+ ;;=3^DM Type 2 w/ Hyperglycemia
+ ;;^UTILITY(U,$J,358.3,14232,1,4,0)
+ ;;=4^E11.65
+ ;;^UTILITY(U,$J,358.3,14232,2)
+ ;;=^5002663
+ ;;^UTILITY(U,$J,358.3,14233,0)
+ ;;=E11.9^^61^732^21
+ ;;^UTILITY(U,$J,358.3,14233,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6218,1,3,0)
- ;;=3^Accidental Puncture/Laceration of Musculoskeletal System
- ;;^UTILITY(U,$J,358.3,6218,1,4,0)
- ;;=4^M96.821
- ;;^UTILITY(U,$J,358.3,6218,2)
- ;;=^5015396
- ;;^UTILITY(U,$J,358.3,6219,0)
- ;;=G97.49^^40^386^7
- ;;^UTILITY(U,$J,358.3,6219,1,0)
+ ;;^UTILITY(U,$J,358.3,14233,1,3,0)
+ ;;=3^DM Type 2 w/o Complications
+ ;;^UTILITY(U,$J,358.3,14233,1,4,0)
+ ;;=4^E11.9
+ ;;^UTILITY(U,$J,358.3,14233,2)
+ ;;=^5002666
+ ;;^UTILITY(U,$J,358.3,14234,0)
+ ;;=E13.9^^61^732^22
+ ;;^UTILITY(U,$J,358.3,14234,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6219,1,3,0)
- ;;=3^Accidental Puncture/Laceration of Nervous System During Surgery
- ;;^UTILITY(U,$J,358.3,6219,1,4,0)
- ;;=4^G97.49
- ;;^UTILITY(U,$J,358.3,6219,2)
- ;;=^5004208
- ;;^UTILITY(U,$J,358.3,6220,0)
- ;;=J95.72^^40^386^8
- ;;^UTILITY(U,$J,358.3,6220,1,0)
+ ;;^UTILITY(U,$J,358.3,14234,1,3,0)
+ ;;=3^Diabetes Mellitus (Secondary) w/o Complications NEC
+ ;;^UTILITY(U,$J,358.3,14234,1,4,0)
+ ;;=4^E13.9
+ ;;^UTILITY(U,$J,358.3,14234,2)
+ ;;=^5002704
+ ;;^UTILITY(U,$J,358.3,14235,0)
+ ;;=E16.2^^61^732^29
+ ;;^UTILITY(U,$J,358.3,14235,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6220,1,3,0)
- ;;=3^Accidental Puncture/Laceration of Respiratory System During Surgery
- ;;^UTILITY(U,$J,358.3,6220,1,4,0)
- ;;=4^J95.72
- ;;^UTILITY(U,$J,358.3,6220,2)
- ;;=^5008335
- ;;^UTILITY(U,$J,358.3,6221,0)
- ;;=L76.12^^40^386^10
- ;;^UTILITY(U,$J,358.3,6221,1,0)
+ ;;^UTILITY(U,$J,358.3,14235,1,3,0)
+ ;;=3^Hypoglycemia,Unspec
+ ;;^UTILITY(U,$J,358.3,14235,1,4,0)
+ ;;=4^E16.2
+ ;;^UTILITY(U,$J,358.3,14235,2)
+ ;;=^5002708
+ ;;^UTILITY(U,$J,358.3,14236,0)
+ ;;=E20.0^^61^732^34
+ ;;^UTILITY(U,$J,358.3,14236,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6221,1,3,0)
- ;;=3^Accidental Puncture/Laceration of Skin During Surgery
- ;;^UTILITY(U,$J,358.3,6221,1,4,0)
- ;;=4^L76.12
- ;;^UTILITY(U,$J,358.3,6221,2)
- ;;=^5009305
- ;;^UTILITY(U,$J,358.3,6222,0)
- ;;=I97.88^^40^386^15
+ ;;^UTILITY(U,$J,358.3,14236,1,3,0)
+ ;;=3^Idiopathic Hypoparathyroidism
+ ;;^UTILITY(U,$J,358.3,14236,1,4,0)
+ ;;=4^E20.0
+ ;;^UTILITY(U,$J,358.3,14236,2)
+ ;;=^5002712
+ ;;^UTILITY(U,$J,358.3,14237,0)
+ ;;=E20.9^^61^732^30
+ ;;^UTILITY(U,$J,358.3,14237,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14237,1,3,0)
+ ;;=3^Hypoparathyroidism,Unspec
+ ;;^UTILITY(U,$J,358.3,14237,1,4,0)
+ ;;=4^E20.9
+ ;;^UTILITY(U,$J,358.3,14237,2)
+ ;;=^5002714
+ ;;^UTILITY(U,$J,358.3,14238,0)
+ ;;=E23.0^^61^732^31
+ ;;^UTILITY(U,$J,358.3,14238,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14238,1,3,0)
+ ;;=3^Hypopituitarism
+ ;;^UTILITY(U,$J,358.3,14238,1,4,0)
+ ;;=4^E23.0
+ ;;^UTILITY(U,$J,358.3,14238,2)
+ ;;=^60685
+ ;;^UTILITY(U,$J,358.3,14239,0)
+ ;;=E27.1^^61^732^51
+ ;;^UTILITY(U,$J,358.3,14239,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14239,1,3,0)
+ ;;=3^Primary Adrenocortical Insufficiency
+ ;;^UTILITY(U,$J,358.3,14239,1,4,0)
+ ;;=4^E27.1
+ ;;^UTILITY(U,$J,358.3,14239,2)
+ ;;=^5002740
+ ;;^UTILITY(U,$J,358.3,14240,0)
+ ;;=E27.2^^61^732^1
+ ;;^UTILITY(U,$J,358.3,14240,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14240,1,3,0)
+ ;;=3^Addisonian Crisis
+ ;;^UTILITY(U,$J,358.3,14240,1,4,0)
+ ;;=4^E27.2
+ ;;^UTILITY(U,$J,358.3,14240,2)
+ ;;=^263725
+ ;;^UTILITY(U,$J,358.3,14241,0)
+ ;;=E27.3^^61^732^23
+ ;;^UTILITY(U,$J,358.3,14241,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14241,1,3,0)
+ ;;=3^Drug-induced Adrenocortical Insufficiency
+ ;;^UTILITY(U,$J,358.3,14241,1,4,0)
+ ;;=4^E27.3
+ ;;^UTILITY(U,$J,358.3,14241,2)
+ ;;=^5002741
+ ;;^UTILITY(U,$J,358.3,14242,0)
+ ;;=E29.1^^61^732^52
+ ;;^UTILITY(U,$J,358.3,14242,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14242,1,3,0)
+ ;;=3^Testicular Hypofunction
+ ;;^UTILITY(U,$J,358.3,14242,1,4,0)
+ ;;=4^E29.1
+ ;;^UTILITY(U,$J,358.3,14242,2)
+ ;;=^5002754
+ ;;^UTILITY(U,$J,358.3,14243,0)
+ ;;=E55.9^^61^732^59
+ ;;^UTILITY(U,$J,358.3,14243,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14243,1,3,0)
+ ;;=3^Vitamin D Deficiency,Unspec
+ ;;^UTILITY(U,$J,358.3,14243,1,4,0)
+ ;;=4^E55.9
+ ;;^UTILITY(U,$J,358.3,14243,2)
+ ;;=^5002799
+ ;;^UTILITY(U,$J,358.3,14244,0)
+ ;;=E66.01^^61^732^38
+ ;;^UTILITY(U,$J,358.3,14244,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14244,1,3,0)
+ ;;=3^Morbid Obesity
+ ;;^UTILITY(U,$J,358.3,14244,1,4,0)
+ ;;=4^E66.01
+ ;;^UTILITY(U,$J,358.3,14244,2)
+ ;;=^5002826
+ ;;^UTILITY(U,$J,358.3,14245,0)
+ ;;=E66.8^^61^732^42
+ ;;^UTILITY(U,$J,358.3,14245,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14245,1,3,0)
+ ;;=3^Obesity NEC
+ ;;^UTILITY(U,$J,358.3,14245,1,4,0)
+ ;;=4^E66.8
+ ;;^UTILITY(U,$J,358.3,14245,2)
+ ;;=^5002831
+ ;;^UTILITY(U,$J,358.3,14246,0)
+ ;;=E66.9^^61^732^43
+ ;;^UTILITY(U,$J,358.3,14246,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14246,1,3,0)
+ ;;=3^Obesity,Unspec
+ ;;^UTILITY(U,$J,358.3,14246,1,4,0)
+ ;;=4^E66.9
+ ;;^UTILITY(U,$J,358.3,14246,2)
+ ;;=^5002832
+ ;;^UTILITY(U,$J,358.3,14247,0)
+ ;;=E74.39^^61^732^35
+ ;;^UTILITY(U,$J,358.3,14247,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14247,1,3,0)
+ ;;=3^Intestinal Carbohydrate Absorption Disorder NEC
+ ;;^UTILITY(U,$J,358.3,14247,1,4,0)
+ ;;=4^E74.39
+ ;;^UTILITY(U,$J,358.3,14247,2)
+ ;;=^5002928
+ ;;^UTILITY(U,$J,358.3,14248,0)
+ ;;=E83.30^^61^732^46
+ ;;^UTILITY(U,$J,358.3,14248,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14248,1,3,0)
+ ;;=3^Phosphorus Metabolism Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,14248,1,4,0)
+ ;;=4^E83.30
+ ;;^UTILITY(U,$J,358.3,14248,2)
+ ;;=^5002997
+ ;;^UTILITY(U,$J,358.3,14249,0)
+ ;;=E83.51^^61^732^28
+ ;;^UTILITY(U,$J,358.3,14249,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14249,1,3,0)
+ ;;=3^Hypocalcemia
+ ;;^UTILITY(U,$J,358.3,14249,1,4,0)
+ ;;=4^E83.51
+ ;;^UTILITY(U,$J,358.3,14249,2)
+ ;;=^60542
+ ;;^UTILITY(U,$J,358.3,14250,0)
+ ;;=E83.52^^61^732^26
+ ;;^UTILITY(U,$J,358.3,14250,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14250,1,3,0)
+ ;;=3^Hypercalcemia
+ ;;^UTILITY(U,$J,358.3,14250,1,4,0)
+ ;;=4^E83.52
+ ;;^UTILITY(U,$J,358.3,14250,2)
+ ;;=^59932
+ ;;^UTILITY(U,$J,358.3,14251,0)
+ ;;=E87.5^^61^732^27
+ ;;^UTILITY(U,$J,358.3,14251,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14251,1,3,0)
+ ;;=3^Hyperkalemia
+ ;;^UTILITY(U,$J,358.3,14251,1,4,0)
+ ;;=4^E87.5
+ ;;^UTILITY(U,$J,358.3,14251,2)
+ ;;=^60041
+ ;;^UTILITY(U,$J,358.3,14252,0)
+ ;;=E89.2^^61^732^48
+ ;;^UTILITY(U,$J,358.3,14252,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14252,1,3,0)
+ ;;=3^PostProcedural Hypoparathyroidism
+ ;;^UTILITY(U,$J,358.3,14252,1,4,0)
+ ;;=4^E89.2
+ ;;^UTILITY(U,$J,358.3,14252,2)
+ ;;=^5003037
+ ;;^UTILITY(U,$J,358.3,14253,0)
+ ;;=E89.6^^61^732^47
+ ;;^UTILITY(U,$J,358.3,14253,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14253,1,3,0)
+ ;;=3^PostProcedural Adrenocortical Hypofunction

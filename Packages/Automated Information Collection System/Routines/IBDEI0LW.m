@@ -1,128 +1,290 @@
-IBDEI0LW ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0LW ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,9992,1,3,0)
- ;;=3^Angina Pectoris,Unspec
- ;;^UTILITY(U,$J,358.3,9992,1,4,0)
- ;;=4^I20.9
- ;;^UTILITY(U,$J,358.3,9992,2)
- ;;=^5007079
- ;;^UTILITY(U,$J,358.3,9993,0)
- ;;=I25.729^^68^661^4
- ;;^UTILITY(U,$J,358.3,9993,1,0)
+ ;;^UTILITY(U,$J,358.3,22080,1,4,0)
+ ;;=4^N52.32
+ ;;^UTILITY(U,$J,358.3,22080,2)
+ ;;=^5015758
+ ;;^UTILITY(U,$J,358.3,22081,0)
+ ;;=N52.31^^89^1042^37
+ ;;^UTILITY(U,$J,358.3,22081,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9993,1,3,0)
- ;;=3^Athscl Autologous Artery CABG w/ Unspec Angina Pectoris
- ;;^UTILITY(U,$J,358.3,9993,1,4,0)
- ;;=4^I25.729
- ;;^UTILITY(U,$J,358.3,9993,2)
- ;;=^5133561
- ;;^UTILITY(U,$J,358.3,9994,0)
- ;;=I25.709^^68^661^11
- ;;^UTILITY(U,$J,358.3,9994,1,0)
+ ;;^UTILITY(U,$J,358.3,22081,1,3,0)
+ ;;=3^Erectile Dysfunction Following Radical Prostatectomy
+ ;;^UTILITY(U,$J,358.3,22081,1,4,0)
+ ;;=4^N52.31
+ ;;^UTILITY(U,$J,358.3,22081,2)
+ ;;=^5015757
+ ;;^UTILITY(U,$J,358.3,22082,0)
+ ;;=N52.2^^89^1042^43
+ ;;^UTILITY(U,$J,358.3,22082,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9994,1,3,0)
- ;;=3^Athscl of CABG,Unspec w/ Unspec Angina Pectoris
- ;;^UTILITY(U,$J,358.3,9994,1,4,0)
- ;;=4^I25.709
- ;;^UTILITY(U,$J,358.3,9994,2)
- ;;=^5007120
- ;;^UTILITY(U,$J,358.3,9995,0)
- ;;=I25.10^^68^661^6
- ;;^UTILITY(U,$J,358.3,9995,1,0)
+ ;;^UTILITY(U,$J,358.3,22082,1,3,0)
+ ;;=3^Erectile Dysfunction,Drug-Induced
+ ;;^UTILITY(U,$J,358.3,22082,1,4,0)
+ ;;=4^N52.2
+ ;;^UTILITY(U,$J,358.3,22082,2)
+ ;;=^5015756
+ ;;^UTILITY(U,$J,358.3,22083,0)
+ ;;=N52.03^^89^1042^34
+ ;;^UTILITY(U,$J,358.3,22083,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9995,1,3,0)
- ;;=3^Athscl HRT Dis of Native Cor Art w/o Ang Pctrs
- ;;^UTILITY(U,$J,358.3,9995,1,4,0)
- ;;=4^I25.10
- ;;^UTILITY(U,$J,358.3,9995,2)
- ;;=^5007107
- ;;^UTILITY(U,$J,358.3,9996,0)
- ;;=I25.810^^68^661^8
- ;;^UTILITY(U,$J,358.3,9996,1,0)
+ ;;^UTILITY(U,$J,358.3,22083,1,3,0)
+ ;;=3^Erectile Dysfunction Comb Artrl Insuff & Corporo-Venous Occlusv
+ ;;^UTILITY(U,$J,358.3,22083,1,4,0)
+ ;;=4^N52.03
+ ;;^UTILITY(U,$J,358.3,22083,2)
+ ;;=^5015754
+ ;;^UTILITY(U,$J,358.3,22084,0)
+ ;;=N52.02^^89^1042^35
+ ;;^UTILITY(U,$J,358.3,22084,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9996,1,3,0)
- ;;=3^Athscl of CABG w/o Angina Pectoris
- ;;^UTILITY(U,$J,358.3,9996,1,4,0)
- ;;=4^I25.810
- ;;^UTILITY(U,$J,358.3,9996,2)
- ;;=^5007141
- ;;^UTILITY(U,$J,358.3,9997,0)
- ;;=I65.29^^68^662^18
- ;;^UTILITY(U,$J,358.3,9997,1,0)
+ ;;^UTILITY(U,$J,358.3,22084,1,3,0)
+ ;;=3^Erectile Dysfunction Corporo-Venous Occlusive
+ ;;^UTILITY(U,$J,358.3,22084,1,4,0)
+ ;;=4^N52.02
+ ;;^UTILITY(U,$J,358.3,22084,2)
+ ;;=^5015753
+ ;;^UTILITY(U,$J,358.3,22085,0)
+ ;;=N52.1^^89^1042^42
+ ;;^UTILITY(U,$J,358.3,22085,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9997,1,3,0)
- ;;=3^Occlusion & Stenosis Unspec Carotid Artery
- ;;^UTILITY(U,$J,358.3,9997,1,4,0)
- ;;=4^I65.29
- ;;^UTILITY(U,$J,358.3,9997,2)
- ;;=^5007363
- ;;^UTILITY(U,$J,358.3,9998,0)
- ;;=I65.22^^68^662^16
- ;;^UTILITY(U,$J,358.3,9998,1,0)
+ ;;^UTILITY(U,$J,358.3,22085,1,3,0)
+ ;;=3^Erectile Dysfunction d/t Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,22085,1,4,0)
+ ;;=4^N52.1
+ ;;^UTILITY(U,$J,358.3,22085,2)
+ ;;=^5015755
+ ;;^UTILITY(U,$J,358.3,22086,0)
+ ;;=N52.01^^89^1042^41
+ ;;^UTILITY(U,$J,358.3,22086,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9998,1,3,0)
- ;;=3^Occlusion & Stenosis Left Carotid Artery
- ;;^UTILITY(U,$J,358.3,9998,1,4,0)
- ;;=4^I65.22
- ;;^UTILITY(U,$J,358.3,9998,2)
- ;;=^5007361
- ;;^UTILITY(U,$J,358.3,9999,0)
- ;;=I65.23^^68^662^15
- ;;^UTILITY(U,$J,358.3,9999,1,0)
+ ;;^UTILITY(U,$J,358.3,22086,1,3,0)
+ ;;=3^Erectile Dysfunction d/t Arterial Insufficiency
+ ;;^UTILITY(U,$J,358.3,22086,1,4,0)
+ ;;=4^N52.01
+ ;;^UTILITY(U,$J,358.3,22086,2)
+ ;;=^5015752
+ ;;^UTILITY(U,$J,358.3,22087,0)
+ ;;=N95.2^^89^1042^81
+ ;;^UTILITY(U,$J,358.3,22087,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9999,1,3,0)
- ;;=3^Occlusion & Stenosis Bilateral Carotid Arteries
- ;;^UTILITY(U,$J,358.3,9999,1,4,0)
- ;;=4^I65.23
- ;;^UTILITY(U,$J,358.3,9999,2)
- ;;=^5007362
- ;;^UTILITY(U,$J,358.3,10000,0)
- ;;=I65.21^^68^662^17
- ;;^UTILITY(U,$J,358.3,10000,1,0)
+ ;;^UTILITY(U,$J,358.3,22087,1,3,0)
+ ;;=3^Postmenopausal Atrophic Vaginitis
+ ;;^UTILITY(U,$J,358.3,22087,1,4,0)
+ ;;=4^N95.2
+ ;;^UTILITY(U,$J,358.3,22087,2)
+ ;;=^270577
+ ;;^UTILITY(U,$J,358.3,22088,0)
+ ;;=R30.9^^89^1042^65
+ ;;^UTILITY(U,$J,358.3,22088,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10000,1,3,0)
- ;;=3^Occlusion & Stenosis Right Carotid Artery
- ;;^UTILITY(U,$J,358.3,10000,1,4,0)
- ;;=4^I65.21
- ;;^UTILITY(U,$J,358.3,10000,2)
- ;;=^5007360
- ;;^UTILITY(U,$J,358.3,10001,0)
- ;;=I70.219^^68^662^3
- ;;^UTILITY(U,$J,358.3,10001,1,0)
+ ;;^UTILITY(U,$J,358.3,22088,1,3,0)
+ ;;=3^Micturition Painful,Unspec
+ ;;^UTILITY(U,$J,358.3,22088,1,4,0)
+ ;;=4^R30.9
+ ;;^UTILITY(U,$J,358.3,22088,2)
+ ;;=^5019324
+ ;;^UTILITY(U,$J,358.3,22089,0)
+ ;;=R30.0^^89^1042^26
+ ;;^UTILITY(U,$J,358.3,22089,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10001,1,3,0)
- ;;=3^Athscl Native Arteries of Extrm w/ Intrmt Claud,Unspec Extrm
- ;;^UTILITY(U,$J,358.3,10001,1,4,0)
- ;;=4^I70.219
- ;;^UTILITY(U,$J,358.3,10001,2)
- ;;=^5007582
- ;;^UTILITY(U,$J,358.3,10002,0)
- ;;=I70.213^^68^662^4
- ;;^UTILITY(U,$J,358.3,10002,1,0)
+ ;;^UTILITY(U,$J,358.3,22089,1,3,0)
+ ;;=3^Dysuria
+ ;;^UTILITY(U,$J,358.3,22089,1,4,0)
+ ;;=4^R30.0
+ ;;^UTILITY(U,$J,358.3,22089,2)
+ ;;=^5019322
+ ;;^UTILITY(U,$J,358.3,22090,0)
+ ;;=R33.9^^89^1042^105
+ ;;^UTILITY(U,$J,358.3,22090,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10002,1,3,0)
- ;;=3^Athscl Native Arteries of Extrm w/ Intrmt Claud,Bilat Legs
- ;;^UTILITY(U,$J,358.3,10002,1,4,0)
- ;;=4^I70.213
- ;;^UTILITY(U,$J,358.3,10002,2)
- ;;=^5007580
- ;;^UTILITY(U,$J,358.3,10003,0)
- ;;=I70.212^^68^662^5
- ;;^UTILITY(U,$J,358.3,10003,1,0)
+ ;;^UTILITY(U,$J,358.3,22090,1,3,0)
+ ;;=3^Urine Retention,Unspec
+ ;;^UTILITY(U,$J,358.3,22090,1,4,0)
+ ;;=4^R33.9
+ ;;^UTILITY(U,$J,358.3,22090,2)
+ ;;=^5019332
+ ;;^UTILITY(U,$J,358.3,22091,0)
+ ;;=R32.^^89^1042^103
+ ;;^UTILITY(U,$J,358.3,22091,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10003,1,3,0)
- ;;=3^Athscl Native Arteries of Extrm w/ Intrmt Claud,Left Leg
- ;;^UTILITY(U,$J,358.3,10003,1,4,0)
- ;;=4^I70.212
- ;;^UTILITY(U,$J,358.3,10003,2)
- ;;=^5007579
- ;;^UTILITY(U,$J,358.3,10004,0)
- ;;=I70.211^^68^662^6
- ;;^UTILITY(U,$J,358.3,10004,1,0)
+ ;;^UTILITY(U,$J,358.3,22091,1,3,0)
+ ;;=3^Urinary Incontinence,Unspec
+ ;;^UTILITY(U,$J,358.3,22091,1,4,0)
+ ;;=4^R32.
+ ;;^UTILITY(U,$J,358.3,22091,2)
+ ;;=^5019329
+ ;;^UTILITY(U,$J,358.3,22092,0)
+ ;;=N39.41^^89^1042^101
+ ;;^UTILITY(U,$J,358.3,22092,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10004,1,3,0)
- ;;=3^Athscl Native Arteries of Extrm w/ Intrmt Claud,Right Leg
- ;;^UTILITY(U,$J,358.3,10004,1,4,0)
- ;;=4^I70.211
+ ;;^UTILITY(U,$J,358.3,22092,1,3,0)
+ ;;=3^Urge Incontinence
+ ;;^UTILITY(U,$J,358.3,22092,1,4,0)
+ ;;=4^N39.41
+ ;;^UTILITY(U,$J,358.3,22092,2)
+ ;;=^5015680
+ ;;^UTILITY(U,$J,358.3,22093,0)
+ ;;=R35.0^^89^1042^63
+ ;;^UTILITY(U,$J,358.3,22093,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22093,1,3,0)
+ ;;=3^Micturition Frequency
+ ;;^UTILITY(U,$J,358.3,22093,1,4,0)
+ ;;=4^R35.0
+ ;;^UTILITY(U,$J,358.3,22093,2)
+ ;;=^5019334
+ ;;^UTILITY(U,$J,358.3,22094,0)
+ ;;=R35.1^^89^1042^73
+ ;;^UTILITY(U,$J,358.3,22094,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22094,1,3,0)
+ ;;=3^Nocturia
+ ;;^UTILITY(U,$J,358.3,22094,1,4,0)
+ ;;=4^R35.1
+ ;;^UTILITY(U,$J,358.3,22094,2)
+ ;;=^5019335
+ ;;^UTILITY(U,$J,358.3,22095,0)
+ ;;=R39.11^^89^1042^64
+ ;;^UTILITY(U,$J,358.3,22095,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22095,1,3,0)
+ ;;=3^Micturition Hesitancy
+ ;;^UTILITY(U,$J,358.3,22095,1,4,0)
+ ;;=4^R39.11
+ ;;^UTILITY(U,$J,358.3,22095,2)
+ ;;=^5019341
+ ;;^UTILITY(U,$J,358.3,22096,0)
+ ;;=R39.16^^89^1042^95
+ ;;^UTILITY(U,$J,358.3,22096,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22096,1,3,0)
+ ;;=3^Straining to Void
+ ;;^UTILITY(U,$J,358.3,22096,1,4,0)
+ ;;=4^R39.16
+ ;;^UTILITY(U,$J,358.3,22096,2)
+ ;;=^5019346
+ ;;^UTILITY(U,$J,358.3,22097,0)
+ ;;=R36.0^^89^1042^97
+ ;;^UTILITY(U,$J,358.3,22097,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22097,1,3,0)
+ ;;=3^Urethral Discharge w/o Blood
+ ;;^UTILITY(U,$J,358.3,22097,1,4,0)
+ ;;=4^R36.0
+ ;;^UTILITY(U,$J,358.3,22097,2)
+ ;;=^5019337
+ ;;^UTILITY(U,$J,358.3,22098,0)
+ ;;=R36.9^^89^1042^98
+ ;;^UTILITY(U,$J,358.3,22098,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22098,1,3,0)
+ ;;=3^Urethral Discharge,Unspec
+ ;;^UTILITY(U,$J,358.3,22098,1,4,0)
+ ;;=4^R36.9
+ ;;^UTILITY(U,$J,358.3,22098,2)
+ ;;=^5019338
+ ;;^UTILITY(U,$J,358.3,22099,0)
+ ;;=R97.2^^89^1042^27
+ ;;^UTILITY(U,$J,358.3,22099,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22099,1,3,0)
+ ;;=3^Elevated PSA
+ ;;^UTILITY(U,$J,358.3,22099,1,4,0)
+ ;;=4^R97.2
+ ;;^UTILITY(U,$J,358.3,22099,2)
+ ;;=^5019748
+ ;;^UTILITY(U,$J,358.3,22100,0)
+ ;;=R80.1^^89^1042^87
+ ;;^UTILITY(U,$J,358.3,22100,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22100,1,3,0)
+ ;;=3^Proteinuria Persistent,Unspec
+ ;;^UTILITY(U,$J,358.3,22100,1,4,0)
+ ;;=4^R80.1
+ ;;^UTILITY(U,$J,358.3,22100,2)
+ ;;=^5019596
+ ;;^UTILITY(U,$J,358.3,22101,0)
+ ;;=R80.0^^89^1042^85
+ ;;^UTILITY(U,$J,358.3,22101,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22101,1,3,0)
+ ;;=3^Proteinuria Isolated
+ ;;^UTILITY(U,$J,358.3,22101,1,4,0)
+ ;;=4^R80.0
+ ;;^UTILITY(U,$J,358.3,22101,2)
+ ;;=^5019595
+ ;;^UTILITY(U,$J,358.3,22102,0)
+ ;;=R80.8^^89^1042^88
+ ;;^UTILITY(U,$J,358.3,22102,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22102,1,3,0)
+ ;;=3^Proteinuria,Other
+ ;;^UTILITY(U,$J,358.3,22102,1,4,0)
+ ;;=4^R80.8
+ ;;^UTILITY(U,$J,358.3,22102,2)
+ ;;=^5019598
+ ;;^UTILITY(U,$J,358.3,22103,0)
+ ;;=R80.3^^89^1042^84
+ ;;^UTILITY(U,$J,358.3,22103,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22103,1,3,0)
+ ;;=3^Proteinuria Bence Jones
+ ;;^UTILITY(U,$J,358.3,22103,1,4,0)
+ ;;=4^R80.3
+ ;;^UTILITY(U,$J,358.3,22103,2)
+ ;;=^13272
+ ;;^UTILITY(U,$J,358.3,22104,0)
+ ;;=R80.9^^89^1042^89
+ ;;^UTILITY(U,$J,358.3,22104,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22104,1,3,0)
+ ;;=3^Proteinuria,Unspec
+ ;;^UTILITY(U,$J,358.3,22104,1,4,0)
+ ;;=4^R80.9
+ ;;^UTILITY(U,$J,358.3,22104,2)
+ ;;=^5019599
+ ;;^UTILITY(U,$J,358.3,22105,0)
+ ;;=Z87.442^^89^1042^77
+ ;;^UTILITY(U,$J,358.3,22105,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22105,1,3,0)
+ ;;=3^Personal Hx of Urinary Calculi
+ ;;^UTILITY(U,$J,358.3,22105,1,4,0)
+ ;;=4^Z87.442
+ ;;^UTILITY(U,$J,358.3,22105,2)
+ ;;=^5063497
+ ;;^UTILITY(U,$J,358.3,22106,0)
+ ;;=N18.1^^89^1042^13
+ ;;^UTILITY(U,$J,358.3,22106,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22106,1,3,0)
+ ;;=3^Chronic Kidney Disease,Stage 1
+ ;;^UTILITY(U,$J,358.3,22106,1,4,0)
+ ;;=4^N18.1
+ ;;^UTILITY(U,$J,358.3,22106,2)
+ ;;=^5015602
+ ;;^UTILITY(U,$J,358.3,22107,0)
+ ;;=N18.2^^89^1042^14
+ ;;^UTILITY(U,$J,358.3,22107,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22107,1,3,0)
+ ;;=3^Chronic Kidney Disease,Stage 2
+ ;;^UTILITY(U,$J,358.3,22107,1,4,0)
+ ;;=4^N18.2
+ ;;^UTILITY(U,$J,358.3,22107,2)
+ ;;=^5015603
+ ;;^UTILITY(U,$J,358.3,22108,0)
+ ;;=N18.3^^89^1042^15
+ ;;^UTILITY(U,$J,358.3,22108,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22108,1,3,0)
+ ;;=3^Chronic Kidney Disease,Stage 3
+ ;;^UTILITY(U,$J,358.3,22108,1,4,0)
+ ;;=4^N18.3
+ ;;^UTILITY(U,$J,358.3,22108,2)
+ ;;=^5015604
+ ;;^UTILITY(U,$J,358.3,22109,0)
+ ;;=N18.4^^89^1042^16

@@ -1,124 +1,292 @@
-IBDEI04Q ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI04Q ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1526,2)
- ;;=^5049404
- ;;^UTILITY(U,$J,358.3,1527,0)
- ;;=T36.8X2S^^14^156^49
- ;;^UTILITY(U,$J,358.3,1527,1,0)
+ ;;^UTILITY(U,$J,358.3,4470,0)
+ ;;=L03.319^^30^317^54
+ ;;^UTILITY(U,$J,358.3,4470,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1527,1,3,0)
- ;;=3^Poisoning by oth systemic antibiotics, self-harm, sequela
- ;;^UTILITY(U,$J,358.3,1527,1,4,0)
- ;;=4^T36.8X2S
- ;;^UTILITY(U,$J,358.3,1527,2)
- ;;=^5049405
- ;;^UTILITY(U,$J,358.3,1528,0)
- ;;=T36.8X4A^^14^156^50
- ;;^UTILITY(U,$J,358.3,1528,1,0)
+ ;;^UTILITY(U,$J,358.3,4470,1,3,0)
+ ;;=3^Cellulitis of Trunk,Unspec
+ ;;^UTILITY(U,$J,358.3,4470,1,4,0)
+ ;;=4^L03.319
+ ;;^UTILITY(U,$J,358.3,4470,2)
+ ;;=^5009054
+ ;;^UTILITY(U,$J,358.3,4471,0)
+ ;;=L03.316^^30^317^55
+ ;;^UTILITY(U,$J,358.3,4471,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1528,1,3,0)
- ;;=3^Poisoning by oth systemic antibiotics, undetermined, init
- ;;^UTILITY(U,$J,358.3,1528,1,4,0)
- ;;=4^T36.8X4A
- ;;^UTILITY(U,$J,358.3,1528,2)
- ;;=^5049409
- ;;^UTILITY(U,$J,358.3,1529,0)
- ;;=T36.8X4D^^14^156^51
- ;;^UTILITY(U,$J,358.3,1529,1,0)
+ ;;^UTILITY(U,$J,358.3,4471,1,3,0)
+ ;;=3^Cellulitis of Umbilicus
+ ;;^UTILITY(U,$J,358.3,4471,1,4,0)
+ ;;=4^L03.316
+ ;;^UTILITY(U,$J,358.3,4471,2)
+ ;;=^5009052
+ ;;^UTILITY(U,$J,358.3,4472,0)
+ ;;=L03.90^^30^317^56
+ ;;^UTILITY(U,$J,358.3,4472,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1529,1,3,0)
- ;;=3^Poisoning by oth systemic antibiotics, undetermined, subs
- ;;^UTILITY(U,$J,358.3,1529,1,4,0)
- ;;=4^T36.8X4D
- ;;^UTILITY(U,$J,358.3,1529,2)
- ;;=^5049410
- ;;^UTILITY(U,$J,358.3,1530,0)
- ;;=T36.8X4S^^14^156^52
- ;;^UTILITY(U,$J,358.3,1530,1,0)
+ ;;^UTILITY(U,$J,358.3,4472,1,3,0)
+ ;;=3^Cellulitis,Unspec
+ ;;^UTILITY(U,$J,358.3,4472,1,4,0)
+ ;;=4^L03.90
+ ;;^UTILITY(U,$J,358.3,4472,2)
+ ;;=^5009067
+ ;;^UTILITY(U,$J,358.3,4473,0)
+ ;;=L02.211^^30^317^57
+ ;;^UTILITY(U,$J,358.3,4473,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1530,1,3,0)
- ;;=3^Poisoning by oth systemic antibiotics, undetermined, sequela
- ;;^UTILITY(U,$J,358.3,1530,1,4,0)
- ;;=4^T36.8X4S
- ;;^UTILITY(U,$J,358.3,1530,2)
- ;;=^5049411
- ;;^UTILITY(U,$J,358.3,1531,0)
- ;;=T49.6X1A^^14^156^54
- ;;^UTILITY(U,$J,358.3,1531,1,0)
+ ;;^UTILITY(U,$J,358.3,4473,1,3,0)
+ ;;=3^Cutaneous Abscess of Abdominal Wall
+ ;;^UTILITY(U,$J,358.3,4473,1,4,0)
+ ;;=4^L02.211
+ ;;^UTILITY(U,$J,358.3,4473,2)
+ ;;=^5008950
+ ;;^UTILITY(U,$J,358.3,4474,0)
+ ;;=L02.212^^30^317^58
+ ;;^UTILITY(U,$J,358.3,4474,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1531,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, accidental, init
- ;;^UTILITY(U,$J,358.3,1531,1,4,0)
- ;;=4^T49.6X1A
- ;;^UTILITY(U,$J,358.3,1531,2)
- ;;=^5051914
- ;;^UTILITY(U,$J,358.3,1532,0)
- ;;=T49.6X1D^^14^156^55
- ;;^UTILITY(U,$J,358.3,1532,1,0)
+ ;;^UTILITY(U,$J,358.3,4474,1,3,0)
+ ;;=3^Cutaneous Abscess of Back
+ ;;^UTILITY(U,$J,358.3,4474,1,4,0)
+ ;;=4^L02.212
+ ;;^UTILITY(U,$J,358.3,4474,2)
+ ;;=^5008951
+ ;;^UTILITY(U,$J,358.3,4475,0)
+ ;;=L02.31^^30^317^59
+ ;;^UTILITY(U,$J,358.3,4475,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1532,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, accidental, subs
- ;;^UTILITY(U,$J,358.3,1532,1,4,0)
- ;;=4^T49.6X1D
- ;;^UTILITY(U,$J,358.3,1532,2)
- ;;=^5051915
- ;;^UTILITY(U,$J,358.3,1533,0)
- ;;=T49.6X1S^^14^156^56
- ;;^UTILITY(U,$J,358.3,1533,1,0)
+ ;;^UTILITY(U,$J,358.3,4475,1,3,0)
+ ;;=3^Cutaneous Abscess of Buttock
+ ;;^UTILITY(U,$J,358.3,4475,1,4,0)
+ ;;=4^L02.31
+ ;;^UTILITY(U,$J,358.3,4475,2)
+ ;;=^5008971
+ ;;^UTILITY(U,$J,358.3,4476,0)
+ ;;=L02.213^^30^317^60
+ ;;^UTILITY(U,$J,358.3,4476,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1533,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, accidental, sequela
- ;;^UTILITY(U,$J,358.3,1533,1,4,0)
- ;;=4^T49.6X1S
- ;;^UTILITY(U,$J,358.3,1533,2)
- ;;=^5051916
- ;;^UTILITY(U,$J,358.3,1534,0)
- ;;=T49.6X3D^^14^156^64
- ;;^UTILITY(U,$J,358.3,1534,1,0)
+ ;;^UTILITY(U,$J,358.3,4476,1,3,0)
+ ;;=3^Cutaneous Abscess of Chest Wall
+ ;;^UTILITY(U,$J,358.3,4476,1,4,0)
+ ;;=4^L02.213
+ ;;^UTILITY(U,$J,358.3,4476,2)
+ ;;=^5008952
+ ;;^UTILITY(U,$J,358.3,4477,0)
+ ;;=L02.01^^30^317^61
+ ;;^UTILITY(U,$J,358.3,4477,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1534,1,3,0)
- ;;=3^Poisoning by otorhino drugs and preparations, assault, subs
- ;;^UTILITY(U,$J,358.3,1534,1,4,0)
- ;;=4^T49.6X3D
- ;;^UTILITY(U,$J,358.3,1534,2)
- ;;=^5051921
- ;;^UTILITY(U,$J,358.3,1535,0)
- ;;=T49.6X3S^^14^156^57
- ;;^UTILITY(U,$J,358.3,1535,1,0)
+ ;;^UTILITY(U,$J,358.3,4477,1,3,0)
+ ;;=3^Cutaneous Abscess of Face
+ ;;^UTILITY(U,$J,358.3,4477,1,4,0)
+ ;;=4^L02.01
+ ;;^UTILITY(U,$J,358.3,4477,2)
+ ;;=^5008944
+ ;;^UTILITY(U,$J,358.3,4478,0)
+ ;;=L02.214^^30^317^62
+ ;;^UTILITY(U,$J,358.3,4478,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1535,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, assault, sequela
- ;;^UTILITY(U,$J,358.3,1535,1,4,0)
- ;;=4^T49.6X3S
- ;;^UTILITY(U,$J,358.3,1535,2)
- ;;=^5051922
- ;;^UTILITY(U,$J,358.3,1536,0)
- ;;=T49.6X2A^^14^156^58
- ;;^UTILITY(U,$J,358.3,1536,1,0)
+ ;;^UTILITY(U,$J,358.3,4478,1,3,0)
+ ;;=3^Cutaneous Abscess of Groin
+ ;;^UTILITY(U,$J,358.3,4478,1,4,0)
+ ;;=4^L02.214
+ ;;^UTILITY(U,$J,358.3,4478,2)
+ ;;=^5008953
+ ;;^UTILITY(U,$J,358.3,4479,0)
+ ;;=L02.811^^30^317^63
+ ;;^UTILITY(U,$J,358.3,4479,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1536,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, self-harm, init
- ;;^UTILITY(U,$J,358.3,1536,1,4,0)
- ;;=4^T49.6X2A
- ;;^UTILITY(U,$J,358.3,1536,2)
- ;;=^5051917
- ;;^UTILITY(U,$J,358.3,1537,0)
- ;;=T49.6X2D^^14^156^59
- ;;^UTILITY(U,$J,358.3,1537,1,0)
+ ;;^UTILITY(U,$J,358.3,4479,1,3,0)
+ ;;=3^Cutaneous Abscess of Head
+ ;;^UTILITY(U,$J,358.3,4479,1,4,0)
+ ;;=4^L02.811
+ ;;^UTILITY(U,$J,358.3,4479,2)
+ ;;=^5009010
+ ;;^UTILITY(U,$J,358.3,4480,0)
+ ;;=L02.412^^30^317^64
+ ;;^UTILITY(U,$J,358.3,4480,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1537,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, self-harm, subs
- ;;^UTILITY(U,$J,358.3,1537,1,4,0)
- ;;=4^T49.6X2D
- ;;^UTILITY(U,$J,358.3,1537,2)
- ;;=^5051918
- ;;^UTILITY(U,$J,358.3,1538,0)
- ;;=T49.6X2S^^14^156^60
- ;;^UTILITY(U,$J,358.3,1538,1,0)
+ ;;^UTILITY(U,$J,358.3,4480,1,3,0)
+ ;;=3^Cutaneous Abscess of Left Axilla
+ ;;^UTILITY(U,$J,358.3,4480,1,4,0)
+ ;;=4^L02.412
+ ;;^UTILITY(U,$J,358.3,4480,2)
+ ;;=^5008975
+ ;;^UTILITY(U,$J,358.3,4481,0)
+ ;;=L02.612^^30^317^65
+ ;;^UTILITY(U,$J,358.3,4481,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1538,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, self-harm, sequela
- ;;^UTILITY(U,$J,358.3,1538,1,4,0)
- ;;=4^T49.6X2S
+ ;;^UTILITY(U,$J,358.3,4481,1,3,0)
+ ;;=3^Cutaneous Abscess of Left Foot
+ ;;^UTILITY(U,$J,358.3,4481,1,4,0)
+ ;;=4^L02.612
+ ;;^UTILITY(U,$J,358.3,4481,2)
+ ;;=^5009002
+ ;;^UTILITY(U,$J,358.3,4482,0)
+ ;;=L02.512^^30^317^66
+ ;;^UTILITY(U,$J,358.3,4482,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4482,1,3,0)
+ ;;=3^Cutaneous Abscess of Left Hand
+ ;;^UTILITY(U,$J,358.3,4482,1,4,0)
+ ;;=4^L02.512
+ ;;^UTILITY(U,$J,358.3,4482,2)
+ ;;=^5008993
+ ;;^UTILITY(U,$J,358.3,4483,0)
+ ;;=L02.416^^30^317^67
+ ;;^UTILITY(U,$J,358.3,4483,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4483,1,3,0)
+ ;;=3^Cutaneous Abscess of Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,4483,1,4,0)
+ ;;=4^L02.416
+ ;;^UTILITY(U,$J,358.3,4483,2)
+ ;;=^5133642
+ ;;^UTILITY(U,$J,358.3,4484,0)
+ ;;=L02.414^^30^317^68
+ ;;^UTILITY(U,$J,358.3,4484,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4484,1,3,0)
+ ;;=3^Cutaneous Abscess of Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,4484,1,4,0)
+ ;;=4^L02.414
+ ;;^UTILITY(U,$J,358.3,4484,2)
+ ;;=^5008977
+ ;;^UTILITY(U,$J,358.3,4485,0)
+ ;;=L02.11^^30^317^69
+ ;;^UTILITY(U,$J,358.3,4485,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4485,1,3,0)
+ ;;=3^Cutaneous Abscess of Neck
+ ;;^UTILITY(U,$J,358.3,4485,1,4,0)
+ ;;=4^L02.11
+ ;;^UTILITY(U,$J,358.3,4485,2)
+ ;;=^5008947
+ ;;^UTILITY(U,$J,358.3,4486,0)
+ ;;=L02.818^^30^317^70
+ ;;^UTILITY(U,$J,358.3,4486,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4486,1,3,0)
+ ;;=3^Cutaneous Abscess of Other Sites
+ ;;^UTILITY(U,$J,358.3,4486,1,4,0)
+ ;;=4^L02.818
+ ;;^UTILITY(U,$J,358.3,4486,2)
+ ;;=^5009011
+ ;;^UTILITY(U,$J,358.3,4487,0)
+ ;;=L02.215^^30^317^71
+ ;;^UTILITY(U,$J,358.3,4487,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4487,1,3,0)
+ ;;=3^Cutaneous Abscess of Perineum
+ ;;^UTILITY(U,$J,358.3,4487,1,4,0)
+ ;;=4^L02.215
+ ;;^UTILITY(U,$J,358.3,4487,2)
+ ;;=^5008954
+ ;;^UTILITY(U,$J,358.3,4488,0)
+ ;;=L02.411^^30^317^72
+ ;;^UTILITY(U,$J,358.3,4488,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4488,1,3,0)
+ ;;=3^Cutaneous Abscess of Right Axilla
+ ;;^UTILITY(U,$J,358.3,4488,1,4,0)
+ ;;=4^L02.411
+ ;;^UTILITY(U,$J,358.3,4488,2)
+ ;;=^5008974
+ ;;^UTILITY(U,$J,358.3,4489,0)
+ ;;=L02.611^^30^317^73
+ ;;^UTILITY(U,$J,358.3,4489,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4489,1,3,0)
+ ;;=3^Cutaneous Abscess of Right Foot
+ ;;^UTILITY(U,$J,358.3,4489,1,4,0)
+ ;;=4^L02.611
+ ;;^UTILITY(U,$J,358.3,4489,2)
+ ;;=^5009001
+ ;;^UTILITY(U,$J,358.3,4490,0)
+ ;;=L02.511^^30^317^74
+ ;;^UTILITY(U,$J,358.3,4490,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4490,1,3,0)
+ ;;=3^Cutaneous Abscess of Right Hand
+ ;;^UTILITY(U,$J,358.3,4490,1,4,0)
+ ;;=4^L02.511
+ ;;^UTILITY(U,$J,358.3,4490,2)
+ ;;=^5008992
+ ;;^UTILITY(U,$J,358.3,4491,0)
+ ;;=L02.415^^30^317^75
+ ;;^UTILITY(U,$J,358.3,4491,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4491,1,3,0)
+ ;;=3^Cutaneous Abscess of Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,4491,1,4,0)
+ ;;=4^L02.415
+ ;;^UTILITY(U,$J,358.3,4491,2)
+ ;;=^5008978
+ ;;^UTILITY(U,$J,358.3,4492,0)
+ ;;=L02.413^^30^317^76
+ ;;^UTILITY(U,$J,358.3,4492,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4492,1,3,0)
+ ;;=3^Cutaneous Abscess of Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,4492,1,4,0)
+ ;;=4^L02.413
+ ;;^UTILITY(U,$J,358.3,4492,2)
+ ;;=^5008976
+ ;;^UTILITY(U,$J,358.3,4493,0)
+ ;;=L02.219^^30^317^77
+ ;;^UTILITY(U,$J,358.3,4493,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4493,1,3,0)
+ ;;=3^Cutaneous Abscess of Trunk,Unspec
+ ;;^UTILITY(U,$J,358.3,4493,1,4,0)
+ ;;=4^L02.219
+ ;;^UTILITY(U,$J,358.3,4493,2)
+ ;;=^5008956
+ ;;^UTILITY(U,$J,358.3,4494,0)
+ ;;=L02.216^^30^317^78
+ ;;^UTILITY(U,$J,358.3,4494,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4494,1,3,0)
+ ;;=3^Cutaneous Abscess of Umbilicus
+ ;;^UTILITY(U,$J,358.3,4494,1,4,0)
+ ;;=4^L02.216
+ ;;^UTILITY(U,$J,358.3,4494,2)
+ ;;=^5008955
+ ;;^UTILITY(U,$J,358.3,4495,0)
+ ;;=L02.91^^30^317^79
+ ;;^UTILITY(U,$J,358.3,4495,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4495,1,3,0)
+ ;;=3^Cutaneous Abscess,Unspec
+ ;;^UTILITY(U,$J,358.3,4495,1,4,0)
+ ;;=4^L02.91
+ ;;^UTILITY(U,$J,358.3,4495,2)
+ ;;=^5009016
+ ;;^UTILITY(U,$J,358.3,4496,0)
+ ;;=L98.3^^30^317^82
+ ;;^UTILITY(U,$J,358.3,4496,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4496,1,3,0)
+ ;;=3^Eosinophilic Cellulitis,Skin/Subcutaneous
+ ;;^UTILITY(U,$J,358.3,4496,1,4,0)
+ ;;=4^L98.3
+ ;;^UTILITY(U,$J,358.3,4496,2)
+ ;;=^5009576
+ ;;^UTILITY(U,$J,358.3,4497,0)
+ ;;=L72.0^^30^317^83
+ ;;^UTILITY(U,$J,358.3,4497,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4497,1,3,0)
+ ;;=3^Epidermal Cyst
+ ;;^UTILITY(U,$J,358.3,4497,1,4,0)
+ ;;=4^L72.0
+ ;;^UTILITY(U,$J,358.3,4497,2)
+ ;;=^5009277
+ ;;^UTILITY(U,$J,358.3,4498,0)
+ ;;=L72.9^^30^317^84
+ ;;^UTILITY(U,$J,358.3,4498,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4498,1,3,0)
+ ;;=3^Follicular Cyst of Skin/Subcutaneous Tissue,Unspec
+ ;;^UTILITY(U,$J,358.3,4498,1,4,0)
+ ;;=4^L72.9

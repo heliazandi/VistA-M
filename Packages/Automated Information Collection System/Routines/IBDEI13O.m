@@ -1,124 +1,294 @@
-IBDEI13O ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI13O ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18372,1,4,0)
- ;;=4^L97.123
- ;;^UTILITY(U,$J,358.3,18372,2)
- ;;=^5009492
- ;;^UTILITY(U,$J,358.3,18373,0)
- ;;=L97.124^^94^905^199
- ;;^UTILITY(U,$J,358.3,18373,1,0)
+ ;;^UTILITY(U,$J,358.3,39942,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18373,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Thigh w/ Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,18373,1,4,0)
- ;;=4^L97.124
- ;;^UTILITY(U,$J,358.3,18373,2)
- ;;=^5009493
- ;;^UTILITY(U,$J,358.3,18374,0)
- ;;=L97.129^^94^905^200
- ;;^UTILITY(U,$J,358.3,18374,1,0)
+ ;;^UTILITY(U,$J,358.3,39942,1,3,0)
+ ;;=3^Heartburn
+ ;;^UTILITY(U,$J,358.3,39942,1,4,0)
+ ;;=4^R12.
+ ;;^UTILITY(U,$J,358.3,39942,2)
+ ;;=^5019238
+ ;;^UTILITY(U,$J,358.3,39943,0)
+ ;;=R14.0^^148^1959^1
+ ;;^UTILITY(U,$J,358.3,39943,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18374,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Thigh w/ Unspec Severity
- ;;^UTILITY(U,$J,358.3,18374,1,4,0)
- ;;=4^L97.129
- ;;^UTILITY(U,$J,358.3,18374,2)
- ;;=^5009494
- ;;^UTILITY(U,$J,358.3,18375,0)
- ;;=L97.211^^94^905^206
- ;;^UTILITY(U,$J,358.3,18375,1,0)
+ ;;^UTILITY(U,$J,358.3,39943,1,3,0)
+ ;;=3^Abdominal Distension
+ ;;^UTILITY(U,$J,358.3,39943,1,4,0)
+ ;;=4^R14.0
+ ;;^UTILITY(U,$J,358.3,39943,2)
+ ;;=^5019240
+ ;;^UTILITY(U,$J,358.3,39944,0)
+ ;;=R14.1^^148^1959^77
+ ;;^UTILITY(U,$J,358.3,39944,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18375,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,18375,1,4,0)
- ;;=4^L97.211
- ;;^UTILITY(U,$J,358.3,18375,2)
- ;;=^5009500
- ;;^UTILITY(U,$J,358.3,18376,0)
- ;;=L97.212^^94^905^207
- ;;^UTILITY(U,$J,358.3,18376,1,0)
+ ;;^UTILITY(U,$J,358.3,39944,1,3,0)
+ ;;=3^Gas Pain
+ ;;^UTILITY(U,$J,358.3,39944,1,4,0)
+ ;;=4^R14.1
+ ;;^UTILITY(U,$J,358.3,39944,2)
+ ;;=^5019241
+ ;;^UTILITY(U,$J,358.3,39945,0)
+ ;;=R14.2^^148^1959^70
+ ;;^UTILITY(U,$J,358.3,39945,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18376,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,18376,1,4,0)
- ;;=4^L97.212
- ;;^UTILITY(U,$J,358.3,18376,2)
- ;;=^5009501
- ;;^UTILITY(U,$J,358.3,18377,0)
- ;;=L97.213^^94^905^208
- ;;^UTILITY(U,$J,358.3,18377,1,0)
+ ;;^UTILITY(U,$J,358.3,39945,1,3,0)
+ ;;=3^Eructation
+ ;;^UTILITY(U,$J,358.3,39945,1,4,0)
+ ;;=4^R14.2
+ ;;^UTILITY(U,$J,358.3,39945,2)
+ ;;=^5019242
+ ;;^UTILITY(U,$J,358.3,39946,0)
+ ;;=R14.3^^148^1959^74
+ ;;^UTILITY(U,$J,358.3,39946,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18377,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,18377,1,4,0)
- ;;=4^L97.213
- ;;^UTILITY(U,$J,358.3,18377,2)
- ;;=^5009502
- ;;^UTILITY(U,$J,358.3,18378,0)
- ;;=L97.214^^94^905^209
- ;;^UTILITY(U,$J,358.3,18378,1,0)
+ ;;^UTILITY(U,$J,358.3,39946,1,3,0)
+ ;;=3^Flatulence
+ ;;^UTILITY(U,$J,358.3,39946,1,4,0)
+ ;;=4^R14.3
+ ;;^UTILITY(U,$J,358.3,39946,2)
+ ;;=^5019243
+ ;;^UTILITY(U,$J,358.3,39947,0)
+ ;;=R15.9^^148^1959^76
+ ;;^UTILITY(U,$J,358.3,39947,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18378,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,18378,1,4,0)
- ;;=4^L97.214
- ;;^UTILITY(U,$J,358.3,18378,2)
- ;;=^5009503
- ;;^UTILITY(U,$J,358.3,18379,0)
- ;;=L97.219^^94^905^210
- ;;^UTILITY(U,$J,358.3,18379,1,0)
+ ;;^UTILITY(U,$J,358.3,39947,1,3,0)
+ ;;=3^Full Incontinence of Feces
+ ;;^UTILITY(U,$J,358.3,39947,1,4,0)
+ ;;=4^R15.9
+ ;;^UTILITY(U,$J,358.3,39947,2)
+ ;;=^5019247
+ ;;^UTILITY(U,$J,358.3,39948,0)
+ ;;=R17.^^148^1959^99
+ ;;^UTILITY(U,$J,358.3,39948,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18379,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Unspec Severity
- ;;^UTILITY(U,$J,358.3,18379,1,4,0)
- ;;=4^L97.219
- ;;^UTILITY(U,$J,358.3,18379,2)
- ;;=^5009504
- ;;^UTILITY(U,$J,358.3,18380,0)
- ;;=L97.221^^94^905^176
- ;;^UTILITY(U,$J,358.3,18380,1,0)
+ ;;^UTILITY(U,$J,358.3,39948,1,3,0)
+ ;;=3^Jaundice,Unspec
+ ;;^UTILITY(U,$J,358.3,39948,1,4,0)
+ ;;=4^R17.
+ ;;^UTILITY(U,$J,358.3,39948,2)
+ ;;=^5019251
+ ;;^UTILITY(U,$J,358.3,39949,0)
+ ;;=R19.30^^148^1959^2
+ ;;^UTILITY(U,$J,358.3,39949,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18380,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,18380,1,4,0)
- ;;=4^L97.221
- ;;^UTILITY(U,$J,358.3,18380,2)
- ;;=^5009505
- ;;^UTILITY(U,$J,358.3,18381,0)
- ;;=L97.222^^94^905^177
- ;;^UTILITY(U,$J,358.3,18381,1,0)
+ ;;^UTILITY(U,$J,358.3,39949,1,3,0)
+ ;;=3^Abdominal Rigidity,Unspec Site
+ ;;^UTILITY(U,$J,358.3,39949,1,4,0)
+ ;;=4^R19.30
+ ;;^UTILITY(U,$J,358.3,39949,2)
+ ;;=^5019266
+ ;;^UTILITY(U,$J,358.3,39950,0)
+ ;;=R19.4^^148^1959^45
+ ;;^UTILITY(U,$J,358.3,39950,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18381,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,18381,1,4,0)
- ;;=4^L97.222
- ;;^UTILITY(U,$J,358.3,18381,2)
- ;;=^5009506
- ;;^UTILITY(U,$J,358.3,18382,0)
- ;;=L97.223^^94^905^178
- ;;^UTILITY(U,$J,358.3,18382,1,0)
+ ;;^UTILITY(U,$J,358.3,39950,1,3,0)
+ ;;=3^Bowel Habit Changes
+ ;;^UTILITY(U,$J,358.3,39950,1,4,0)
+ ;;=4^R19.4
+ ;;^UTILITY(U,$J,358.3,39950,2)
+ ;;=^5019273
+ ;;^UTILITY(U,$J,358.3,39951,0)
+ ;;=R19.8^^148^1959^59
+ ;;^UTILITY(U,$J,358.3,39951,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18382,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,18382,1,4,0)
- ;;=4^L97.223
- ;;^UTILITY(U,$J,358.3,18382,2)
- ;;=^5009507
- ;;^UTILITY(U,$J,358.3,18383,0)
- ;;=L97.224^^94^905^179
- ;;^UTILITY(U,$J,358.3,18383,1,0)
+ ;;^UTILITY(U,$J,358.3,39951,1,3,0)
+ ;;=3^Digestive System/Abdomen Symptoms NEC
+ ;;^UTILITY(U,$J,358.3,39951,1,4,0)
+ ;;=4^R19.8
+ ;;^UTILITY(U,$J,358.3,39951,2)
+ ;;=^5019277
+ ;;^UTILITY(U,$J,358.3,39952,0)
+ ;;=R20.0^^148^1959^35
+ ;;^UTILITY(U,$J,358.3,39952,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18383,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,18383,1,4,0)
- ;;=4^L97.224
- ;;^UTILITY(U,$J,358.3,18383,2)
- ;;=^5009508
- ;;^UTILITY(U,$J,358.3,18384,0)
- ;;=L97.229^^94^905^180
- ;;^UTILITY(U,$J,358.3,18384,1,0)
+ ;;^UTILITY(U,$J,358.3,39952,1,3,0)
+ ;;=3^Anesthesia of Skin
+ ;;^UTILITY(U,$J,358.3,39952,1,4,0)
+ ;;=4^R20.0
+ ;;^UTILITY(U,$J,358.3,39952,2)
+ ;;=^5019278
+ ;;^UTILITY(U,$J,358.3,39953,0)
+ ;;=R20.1^^148^1959^87
+ ;;^UTILITY(U,$J,358.3,39953,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18384,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Unspec Severity
+ ;;^UTILITY(U,$J,358.3,39953,1,3,0)
+ ;;=3^Hypoesthesia of Skin
+ ;;^UTILITY(U,$J,358.3,39953,1,4,0)
+ ;;=4^R20.1
+ ;;^UTILITY(U,$J,358.3,39953,2)
+ ;;=^5019279
+ ;;^UTILITY(U,$J,358.3,39954,0)
+ ;;=R20.2^^148^1959^131
+ ;;^UTILITY(U,$J,358.3,39954,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39954,1,3,0)
+ ;;=3^Paresthesia of Skin
+ ;;^UTILITY(U,$J,358.3,39954,1,4,0)
+ ;;=4^R20.2
+ ;;^UTILITY(U,$J,358.3,39954,2)
+ ;;=^5019280
+ ;;^UTILITY(U,$J,358.3,39955,0)
+ ;;=R20.3^^148^1959^83
+ ;;^UTILITY(U,$J,358.3,39955,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39955,1,3,0)
+ ;;=3^Hyperesthesia
+ ;;^UTILITY(U,$J,358.3,39955,1,4,0)
+ ;;=4^R20.3
+ ;;^UTILITY(U,$J,358.3,39955,2)
+ ;;=^60011
+ ;;^UTILITY(U,$J,358.3,39956,0)
+ ;;=R21.^^148^1959^145
+ ;;^UTILITY(U,$J,358.3,39956,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39956,1,3,0)
+ ;;=3^Rash
+ ;;^UTILITY(U,$J,358.3,39956,1,4,0)
+ ;;=4^R21.
+ ;;^UTILITY(U,$J,358.3,39956,2)
+ ;;=^5019283
+ ;;^UTILITY(U,$J,358.3,39957,0)
+ ;;=R22.0^^148^1959^105
+ ;;^UTILITY(U,$J,358.3,39957,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39957,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Head
+ ;;^UTILITY(U,$J,358.3,39957,1,4,0)
+ ;;=4^R22.0
+ ;;^UTILITY(U,$J,358.3,39957,2)
+ ;;=^5019284
+ ;;^UTILITY(U,$J,358.3,39958,0)
+ ;;=R22.1^^148^1959^108
+ ;;^UTILITY(U,$J,358.3,39958,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39958,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Neck
+ ;;^UTILITY(U,$J,358.3,39958,1,4,0)
+ ;;=4^R22.1
+ ;;^UTILITY(U,$J,358.3,39958,2)
+ ;;=^5019285
+ ;;^UTILITY(U,$J,358.3,39959,0)
+ ;;=R22.2^^148^1959^111
+ ;;^UTILITY(U,$J,358.3,39959,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39959,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Trunk
+ ;;^UTILITY(U,$J,358.3,39959,1,4,0)
+ ;;=4^R22.2
+ ;;^UTILITY(U,$J,358.3,39959,2)
+ ;;=^5019286
+ ;;^UTILITY(U,$J,358.3,39960,0)
+ ;;=R22.31^^148^1959^110
+ ;;^UTILITY(U,$J,358.3,39960,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39960,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,39960,1,4,0)
+ ;;=4^R22.31
+ ;;^UTILITY(U,$J,358.3,39960,2)
+ ;;=^5019288
+ ;;^UTILITY(U,$J,358.3,39961,0)
+ ;;=R22.32^^148^1959^107
+ ;;^UTILITY(U,$J,358.3,39961,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39961,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,39961,1,4,0)
+ ;;=4^R22.32
+ ;;^UTILITY(U,$J,358.3,39961,2)
+ ;;=^5019289
+ ;;^UTILITY(U,$J,358.3,39962,0)
+ ;;=R22.33^^148^1959^103
+ ;;^UTILITY(U,$J,358.3,39962,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39962,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Bilateral Upper Limb
+ ;;^UTILITY(U,$J,358.3,39962,1,4,0)
+ ;;=4^R22.33
+ ;;^UTILITY(U,$J,358.3,39962,2)
+ ;;=^5019290
+ ;;^UTILITY(U,$J,358.3,39963,0)
+ ;;=R22.42^^148^1959^106
+ ;;^UTILITY(U,$J,358.3,39963,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39963,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,39963,1,4,0)
+ ;;=4^R22.42
+ ;;^UTILITY(U,$J,358.3,39963,2)
+ ;;=^5134179
+ ;;^UTILITY(U,$J,358.3,39964,0)
+ ;;=R22.41^^148^1959^109
+ ;;^UTILITY(U,$J,358.3,39964,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39964,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,39964,1,4,0)
+ ;;=4^R22.41
+ ;;^UTILITY(U,$J,358.3,39964,2)
+ ;;=^5134178
+ ;;^UTILITY(U,$J,358.3,39965,0)
+ ;;=R22.43^^148^1959^104
+ ;;^UTILITY(U,$J,358.3,39965,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39965,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Bilateral Lower Limb
+ ;;^UTILITY(U,$J,358.3,39965,1,4,0)
+ ;;=4^R22.43
+ ;;^UTILITY(U,$J,358.3,39965,2)
+ ;;=^5019291
+ ;;^UTILITY(U,$J,358.3,39966,0)
+ ;;=R22.9^^148^1959^112
+ ;;^UTILITY(U,$J,358.3,39966,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39966,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Unspec
+ ;;^UTILITY(U,$J,358.3,39966,1,4,0)
+ ;;=4^R22.9
+ ;;^UTILITY(U,$J,358.3,39966,2)
+ ;;=^5019292
+ ;;^UTILITY(U,$J,358.3,39967,0)
+ ;;=R23.0^^148^1959^57
+ ;;^UTILITY(U,$J,358.3,39967,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39967,1,3,0)
+ ;;=3^Cyanosis
+ ;;^UTILITY(U,$J,358.3,39967,1,4,0)
+ ;;=4^R23.0
+ ;;^UTILITY(U,$J,358.3,39967,2)
+ ;;=^5019293
+ ;;^UTILITY(U,$J,358.3,39968,0)
+ ;;=R23.1^^148^1959^128
+ ;;^UTILITY(U,$J,358.3,39968,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39968,1,3,0)
+ ;;=3^Pallor
+ ;;^UTILITY(U,$J,358.3,39968,1,4,0)
+ ;;=4^R23.1
+ ;;^UTILITY(U,$J,358.3,39968,2)
+ ;;=^5019294
+ ;;^UTILITY(U,$J,358.3,39969,0)
+ ;;=R23.2^^148^1959^75
+ ;;^UTILITY(U,$J,358.3,39969,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39969,1,3,0)
+ ;;=3^Flushing
+ ;;^UTILITY(U,$J,358.3,39969,1,4,0)
+ ;;=4^R23.2
+ ;;^UTILITY(U,$J,358.3,39969,2)
+ ;;=^47184
+ ;;^UTILITY(U,$J,358.3,39970,0)
+ ;;=R23.4^^148^1959^147
+ ;;^UTILITY(U,$J,358.3,39970,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39970,1,3,0)
+ ;;=3^Skin Texture Changes
+ ;;^UTILITY(U,$J,358.3,39970,1,4,0)
+ ;;=4^R23.4
+ ;;^UTILITY(U,$J,358.3,39970,2)
+ ;;=^5019296
+ ;;^UTILITY(U,$J,358.3,39971,0)
+ ;;=R26.0^^148^1959^43

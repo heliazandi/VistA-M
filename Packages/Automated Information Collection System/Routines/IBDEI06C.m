@@ -1,134 +1,300 @@
-IBDEI06C ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI06C ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2369,1,4,0)
- ;;=4^I36.1
- ;;^UTILITY(U,$J,358.3,2369,2)
- ;;=^5007180
- ;;^UTILITY(U,$J,358.3,2370,0)
- ;;=I37.0^^19^200^3
- ;;^UTILITY(U,$J,358.3,2370,1,0)
+ ;;^UTILITY(U,$J,358.3,6180,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2370,1,3,0)
- ;;=3^Nonrheumatic Pulmonary Valve Stenosis
- ;;^UTILITY(U,$J,358.3,2370,1,4,0)
- ;;=4^I37.0
- ;;^UTILITY(U,$J,358.3,2370,2)
- ;;=^5007184
- ;;^UTILITY(U,$J,358.3,2371,0)
- ;;=I51.1^^19^201^1
- ;;^UTILITY(U,$J,358.3,2371,1,0)
+ ;;^UTILITY(U,$J,358.3,6180,1,3,0)
+ ;;=3^Aftercare Following Kidney Transplant
+ ;;^UTILITY(U,$J,358.3,6180,1,4,0)
+ ;;=4^Z48.22
+ ;;^UTILITY(U,$J,358.3,6180,2)
+ ;;=^5063039
+ ;;^UTILITY(U,$J,358.3,6181,0)
+ ;;=Z52.4^^39^442^2
+ ;;^UTILITY(U,$J,358.3,6181,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2371,1,3,0)
- ;;=3^Rupture of Chordae Tendineae NEC
- ;;^UTILITY(U,$J,358.3,2371,1,4,0)
- ;;=4^I51.1
- ;;^UTILITY(U,$J,358.3,2371,2)
- ;;=^5007253
- ;;^UTILITY(U,$J,358.3,2372,0)
- ;;=I51.2^^19^201^2
- ;;^UTILITY(U,$J,358.3,2372,1,0)
+ ;;^UTILITY(U,$J,358.3,6181,1,3,0)
+ ;;=3^Kidney Donor
+ ;;^UTILITY(U,$J,358.3,6181,1,4,0)
+ ;;=4^Z52.4
+ ;;^UTILITY(U,$J,358.3,6181,2)
+ ;;=^5063082
+ ;;^UTILITY(U,$J,358.3,6182,0)
+ ;;=D47.Z1^^39^442^9
+ ;;^UTILITY(U,$J,358.3,6182,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2372,1,3,0)
- ;;=3^Rupture of Papillary Muscle NEC
- ;;^UTILITY(U,$J,358.3,2372,1,4,0)
- ;;=4^I51.2
- ;;^UTILITY(U,$J,358.3,2372,2)
- ;;=^5007254
- ;;^UTILITY(U,$J,358.3,2373,0)
- ;;=I38.^^19^202^4
- ;;^UTILITY(U,$J,358.3,2373,1,0)
+ ;;^UTILITY(U,$J,358.3,6182,1,3,0)
+ ;;=3^Post-Transplant Lymphoproliferative Disorder (PTLD)
+ ;;^UTILITY(U,$J,358.3,6182,1,4,0)
+ ;;=4^D47.Z1
+ ;;^UTILITY(U,$J,358.3,6182,2)
+ ;;=^5002261
+ ;;^UTILITY(U,$J,358.3,6183,0)
+ ;;=T86.10^^39^442^4
+ ;;^UTILITY(U,$J,358.3,6183,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2373,1,3,0)
- ;;=3^Endocarditis Valve,Unspec
- ;;^UTILITY(U,$J,358.3,2373,1,4,0)
- ;;=4^I38.
- ;;^UTILITY(U,$J,358.3,2373,2)
- ;;=^40327
- ;;^UTILITY(U,$J,358.3,2374,0)
- ;;=T82.01XA^^19^202^1
- ;;^UTILITY(U,$J,358.3,2374,1,0)
+ ;;^UTILITY(U,$J,358.3,6183,1,3,0)
+ ;;=3^Kidney Transplant Complication,Unspec
+ ;;^UTILITY(U,$J,358.3,6183,1,4,0)
+ ;;=4^T86.10
+ ;;^UTILITY(U,$J,358.3,6183,2)
+ ;;=^5055708
+ ;;^UTILITY(U,$J,358.3,6184,0)
+ ;;=N18.1^^39^443^1
+ ;;^UTILITY(U,$J,358.3,6184,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2374,1,3,0)
- ;;=3^Breakdown of Heart Valve Prosthesis,Init Encntr
- ;;^UTILITY(U,$J,358.3,2374,1,4,0)
- ;;=4^T82.01XA
- ;;^UTILITY(U,$J,358.3,2374,2)
- ;;=^5054668
- ;;^UTILITY(U,$J,358.3,2375,0)
- ;;=T82.02XA^^19^202^2
- ;;^UTILITY(U,$J,358.3,2375,1,0)
+ ;;^UTILITY(U,$J,358.3,6184,1,3,0)
+ ;;=3^Chr Kidney Disease,Stage 1
+ ;;^UTILITY(U,$J,358.3,6184,1,4,0)
+ ;;=4^N18.1
+ ;;^UTILITY(U,$J,358.3,6184,2)
+ ;;=^5015602
+ ;;^UTILITY(U,$J,358.3,6185,0)
+ ;;=N18.2^^39^443^2
+ ;;^UTILITY(U,$J,358.3,6185,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2375,1,3,0)
- ;;=3^Displacement of Heart Valve Prosthesis,Init Encntr
- ;;^UTILITY(U,$J,358.3,2375,1,4,0)
- ;;=4^T82.02XA
- ;;^UTILITY(U,$J,358.3,2375,2)
- ;;=^5054671
- ;;^UTILITY(U,$J,358.3,2376,0)
- ;;=T82.03XA^^19^202^5
- ;;^UTILITY(U,$J,358.3,2376,1,0)
+ ;;^UTILITY(U,$J,358.3,6185,1,3,0)
+ ;;=3^Chr Kidney Disease,Stage 2
+ ;;^UTILITY(U,$J,358.3,6185,1,4,0)
+ ;;=4^N18.2
+ ;;^UTILITY(U,$J,358.3,6185,2)
+ ;;=^5015603
+ ;;^UTILITY(U,$J,358.3,6186,0)
+ ;;=N18.3^^39^443^3
+ ;;^UTILITY(U,$J,358.3,6186,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2376,1,3,0)
- ;;=3^Leakage of Heart Valve Prosthesis,Init Encntr
- ;;^UTILITY(U,$J,358.3,2376,1,4,0)
- ;;=4^T82.03XA
- ;;^UTILITY(U,$J,358.3,2376,2)
- ;;=^5054674
- ;;^UTILITY(U,$J,358.3,2377,0)
- ;;=T82.09XA^^19^202^7
- ;;^UTILITY(U,$J,358.3,2377,1,0)
+ ;;^UTILITY(U,$J,358.3,6186,1,3,0)
+ ;;=3^Chr Kidney Disease,Stage 3
+ ;;^UTILITY(U,$J,358.3,6186,1,4,0)
+ ;;=4^N18.3
+ ;;^UTILITY(U,$J,358.3,6186,2)
+ ;;=^5015604
+ ;;^UTILITY(U,$J,358.3,6187,0)
+ ;;=N18.4^^39^443^4
+ ;;^UTILITY(U,$J,358.3,6187,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2377,1,3,0)
- ;;=3^Mech Compl of Heart Valve Prosthesis,Init Encntr
- ;;^UTILITY(U,$J,358.3,2377,1,4,0)
- ;;=4^T82.09XA
- ;;^UTILITY(U,$J,358.3,2377,2)
- ;;=^5054677
- ;;^UTILITY(U,$J,358.3,2378,0)
- ;;=T82.817A^^19^202^3
- ;;^UTILITY(U,$J,358.3,2378,1,0)
+ ;;^UTILITY(U,$J,358.3,6187,1,3,0)
+ ;;=3^Chr Kidney Disease,Stage 4
+ ;;^UTILITY(U,$J,358.3,6187,1,4,0)
+ ;;=4^N18.4
+ ;;^UTILITY(U,$J,358.3,6187,2)
+ ;;=^5015605
+ ;;^UTILITY(U,$J,358.3,6188,0)
+ ;;=N18.5^^39^443^5
+ ;;^UTILITY(U,$J,358.3,6188,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2378,1,3,0)
- ;;=3^Embolism of Cardiac Prosthetic Device/Implant/Graft,Init Encntr
- ;;^UTILITY(U,$J,358.3,2378,1,4,0)
- ;;=4^T82.817A
- ;;^UTILITY(U,$J,358.3,2378,2)
- ;;=^5054914
- ;;^UTILITY(U,$J,358.3,2379,0)
- ;;=T82.867A^^19^202^10
- ;;^UTILITY(U,$J,358.3,2379,1,0)
+ ;;^UTILITY(U,$J,358.3,6188,1,3,0)
+ ;;=3^Chr Kidney Disease,Stage 5
+ ;;^UTILITY(U,$J,358.3,6188,1,4,0)
+ ;;=4^N18.5
+ ;;^UTILITY(U,$J,358.3,6188,2)
+ ;;=^5015606
+ ;;^UTILITY(U,$J,358.3,6189,0)
+ ;;=N18.9^^39^443^6
+ ;;^UTILITY(U,$J,358.3,6189,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2379,1,3,0)
- ;;=3^Thrombosis of Cardiac Prosthetic Device/Implant/Graft,Init Encntr
- ;;^UTILITY(U,$J,358.3,2379,1,4,0)
- ;;=4^T82.867A
- ;;^UTILITY(U,$J,358.3,2379,2)
- ;;=^5054944
- ;;^UTILITY(U,$J,358.3,2380,0)
- ;;=Z95.2^^19^202^9
- ;;^UTILITY(U,$J,358.3,2380,1,0)
+ ;;^UTILITY(U,$J,358.3,6189,1,3,0)
+ ;;=3^Chr Kidney Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,6189,1,4,0)
+ ;;=4^N18.9
+ ;;^UTILITY(U,$J,358.3,6189,2)
+ ;;=^332812
+ ;;^UTILITY(U,$J,358.3,6190,0)
+ ;;=N18.6^^39^443^7
+ ;;^UTILITY(U,$J,358.3,6190,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2380,1,3,0)
- ;;=3^Presence of Prosthetic Heart Valve
- ;;^UTILITY(U,$J,358.3,2380,1,4,0)
- ;;=4^Z95.2
- ;;^UTILITY(U,$J,358.3,2380,2)
- ;;=^5063670
- ;;^UTILITY(U,$J,358.3,2381,0)
- ;;=Z98.89^^19^202^8
- ;;^UTILITY(U,$J,358.3,2381,1,0)
+ ;;^UTILITY(U,$J,358.3,6190,1,3,0)
+ ;;=3^ESRD
+ ;;^UTILITY(U,$J,358.3,6190,1,4,0)
+ ;;=4^N18.6
+ ;;^UTILITY(U,$J,358.3,6190,2)
+ ;;=^303986
+ ;;^UTILITY(U,$J,358.3,6191,0)
+ ;;=N19.^^39^443^8
+ ;;^UTILITY(U,$J,358.3,6191,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2381,1,3,0)
- ;;=3^Postprocedural States NEC
- ;;^UTILITY(U,$J,358.3,2381,1,4,0)
- ;;=4^Z98.89
- ;;^UTILITY(U,$J,358.3,2381,2)
- ;;=^5063754
- ;;^UTILITY(U,$J,358.3,2382,0)
- ;;=Z79.01^^19^202^6
- ;;^UTILITY(U,$J,358.3,2382,1,0)
+ ;;^UTILITY(U,$J,358.3,6191,1,3,0)
+ ;;=3^Kidney Failure,Unspec
+ ;;^UTILITY(U,$J,358.3,6191,1,4,0)
+ ;;=4^N19.
+ ;;^UTILITY(U,$J,358.3,6191,2)
+ ;;=^5015607
+ ;;^UTILITY(U,$J,358.3,6192,0)
+ ;;=N10.^^39^444^5
+ ;;^UTILITY(U,$J,358.3,6192,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2382,1,3,0)
- ;;=3^Long Term Current Use of Anticoagulants
+ ;;^UTILITY(U,$J,358.3,6192,1,3,0)
+ ;;=3^Acute Tubulo-Interstitial Nephritis
+ ;;^UTILITY(U,$J,358.3,6192,1,4,0)
+ ;;=4^N10.
+ ;;^UTILITY(U,$J,358.3,6192,2)
+ ;;=^5015570
+ ;;^UTILITY(U,$J,358.3,6193,0)
+ ;;=N17.1^^39^444^1
+ ;;^UTILITY(U,$J,358.3,6193,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6193,1,3,0)
+ ;;=3^AKI w/ Acute Cortical Necrosis
+ ;;^UTILITY(U,$J,358.3,6193,1,4,0)
+ ;;=4^N17.1
+ ;;^UTILITY(U,$J,358.3,6193,2)
+ ;;=^5015599
+ ;;^UTILITY(U,$J,358.3,6194,0)
+ ;;=N17.0^^39^444^3
+ ;;^UTILITY(U,$J,358.3,6194,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6194,1,3,0)
+ ;;=3^AKI w/ Tubular Necrosis
+ ;;^UTILITY(U,$J,358.3,6194,1,4,0)
+ ;;=4^N17.0
+ ;;^UTILITY(U,$J,358.3,6194,2)
+ ;;=^5015598
+ ;;^UTILITY(U,$J,358.3,6195,0)
+ ;;=N17.2^^39^444^2
+ ;;^UTILITY(U,$J,358.3,6195,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6195,1,3,0)
+ ;;=3^AKI w/ Medullary Necrosis
+ ;;^UTILITY(U,$J,358.3,6195,1,4,0)
+ ;;=4^N17.2
+ ;;^UTILITY(U,$J,358.3,6195,2)
+ ;;=^5015600
+ ;;^UTILITY(U,$J,358.3,6196,0)
+ ;;=N17.9^^39^444^4
+ ;;^UTILITY(U,$J,358.3,6196,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6196,1,3,0)
+ ;;=3^AKI,Unspec
+ ;;^UTILITY(U,$J,358.3,6196,1,4,0)
+ ;;=4^N17.9
+ ;;^UTILITY(U,$J,358.3,6196,2)
+ ;;=^338532
+ ;;^UTILITY(U,$J,358.3,6197,0)
+ ;;=K76.7^^39^444^10
+ ;;^UTILITY(U,$J,358.3,6197,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6197,1,3,0)
+ ;;=3^Hepatorenal Syndrome
+ ;;^UTILITY(U,$J,358.3,6197,1,4,0)
+ ;;=4^K76.7
+ ;;^UTILITY(U,$J,358.3,6197,2)
+ ;;=^56497
+ ;;^UTILITY(U,$J,358.3,6198,0)
+ ;;=Z99.2^^39^444^7
+ ;;^UTILITY(U,$J,358.3,6198,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6198,1,3,0)
+ ;;=3^Dependence on Renal Dialysis
+ ;;^UTILITY(U,$J,358.3,6198,1,4,0)
+ ;;=4^Z99.2
+ ;;^UTILITY(U,$J,358.3,6198,2)
+ ;;=^5063758
+ ;;^UTILITY(U,$J,358.3,6199,0)
+ ;;=Z49.31^^39^444^8
+ ;;^UTILITY(U,$J,358.3,6199,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6199,1,3,0)
+ ;;=3^Encounter for Adequacy Testing for Hemodialysis
+ ;;^UTILITY(U,$J,358.3,6199,1,4,0)
+ ;;=4^Z49.31
+ ;;^UTILITY(U,$J,358.3,6199,2)
+ ;;=^5063058
+ ;;^UTILITY(U,$J,358.3,6200,0)
+ ;;=Z49.01^^39^444^9
+ ;;^UTILITY(U,$J,358.3,6200,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6200,1,3,0)
+ ;;=3^Fitting/Adjustment of Extracorporeal Dialysis Catheter
+ ;;^UTILITY(U,$J,358.3,6200,1,4,0)
+ ;;=4^Z49.01
+ ;;^UTILITY(U,$J,358.3,6200,2)
+ ;;=^5063056
+ ;;^UTILITY(U,$J,358.3,6201,0)
+ ;;=Z48.00^^39^444^6
+ ;;^UTILITY(U,$J,358.3,6201,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6201,1,3,0)
+ ;;=3^Change/Removal of Nonsurgical Wound Dressing
+ ;;^UTILITY(U,$J,358.3,6201,1,4,0)
+ ;;=4^Z48.00
+ ;;^UTILITY(U,$J,358.3,6201,2)
+ ;;=^5063033
+ ;;^UTILITY(U,$J,358.3,6202,0)
+ ;;=N17.0^^39^445^3
+ ;;^UTILITY(U,$J,358.3,6202,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6202,1,3,0)
+ ;;=3^AKI w/ Tubular Necrosis
+ ;;^UTILITY(U,$J,358.3,6202,1,4,0)
+ ;;=4^N17.0
+ ;;^UTILITY(U,$J,358.3,6202,2)
+ ;;=^5015598
+ ;;^UTILITY(U,$J,358.3,6203,0)
+ ;;=N17.1^^39^445^1
+ ;;^UTILITY(U,$J,358.3,6203,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6203,1,3,0)
+ ;;=3^AKI w/ Acute Cortical Necrosis
+ ;;^UTILITY(U,$J,358.3,6203,1,4,0)
+ ;;=4^N17.1
+ ;;^UTILITY(U,$J,358.3,6203,2)
+ ;;=^5015599
+ ;;^UTILITY(U,$J,358.3,6204,0)
+ ;;=N17.2^^39^445^2
+ ;;^UTILITY(U,$J,358.3,6204,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6204,1,3,0)
+ ;;=3^AKI w/ Medullary Necrosis
+ ;;^UTILITY(U,$J,358.3,6204,1,4,0)
+ ;;=4^N17.2
+ ;;^UTILITY(U,$J,358.3,6204,2)
+ ;;=^5015600
+ ;;^UTILITY(U,$J,358.3,6205,0)
+ ;;=N10.^^39^445^6
+ ;;^UTILITY(U,$J,358.3,6205,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6205,1,3,0)
+ ;;=3^Acute Tubulo-Interstitial Nephritis
+ ;;^UTILITY(U,$J,358.3,6205,1,4,0)
+ ;;=4^N10.
+ ;;^UTILITY(U,$J,358.3,6205,2)
+ ;;=^5015570
+ ;;^UTILITY(U,$J,358.3,6206,0)
+ ;;=N17.8^^39^445^4
+ ;;^UTILITY(U,$J,358.3,6206,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6206,1,3,0)
+ ;;=3^AKI,Other
+ ;;^UTILITY(U,$J,358.3,6206,1,4,0)
+ ;;=4^N17.8
+ ;;^UTILITY(U,$J,358.3,6206,2)
+ ;;=^5015601
+ ;;^UTILITY(U,$J,358.3,6207,0)
+ ;;=N17.9^^39^445^5
+ ;;^UTILITY(U,$J,358.3,6207,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6207,1,3,0)
+ ;;=3^AKI,Unspec
+ ;;^UTILITY(U,$J,358.3,6207,1,4,0)
+ ;;=4^N17.9
+ ;;^UTILITY(U,$J,358.3,6207,2)
+ ;;=^338532
+ ;;^UTILITY(U,$J,358.3,6208,0)
+ ;;=R39.2^^39^445^15
+ ;;^UTILITY(U,$J,358.3,6208,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6208,1,3,0)
+ ;;=3^Pre-Renal Uremia
+ ;;^UTILITY(U,$J,358.3,6208,1,4,0)
+ ;;=4^R39.2
+ ;;^UTILITY(U,$J,358.3,6208,2)
+ ;;=^5019348
+ ;;^UTILITY(U,$J,358.3,6209,0)
+ ;;=N13.9^^39^445^14
+ ;;^UTILITY(U,$J,358.3,6209,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6209,1,3,0)
+ ;;=3^Obstructive and Reflux Uropathy,Unspec
+ ;;^UTILITY(U,$J,358.3,6209,1,4,0)
+ ;;=4^N13.9

@@ -1,134 +1,284 @@
-IBDEI0X8 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0X8 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15318,2)
- ;;=^5001888
- ;;^UTILITY(U,$J,358.3,15319,0)
- ;;=D03.11^^85^815^29
- ;;^UTILITY(U,$J,358.3,15319,1,0)
+ ;;^UTILITY(U,$J,358.3,33426,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15319,1,3,0)
- ;;=3^Melanoma in Situ of Right Eyelid
- ;;^UTILITY(U,$J,358.3,15319,1,4,0)
- ;;=4^D03.11
- ;;^UTILITY(U,$J,358.3,15319,2)
- ;;=^5001890
- ;;^UTILITY(U,$J,358.3,15320,0)
- ;;=D03.12^^85^815^23
- ;;^UTILITY(U,$J,358.3,15320,1,0)
+ ;;^UTILITY(U,$J,358.3,33426,1,3,0)
+ ;;=3^Excessive/Frequent Menstruation w/ Regular Cycle
+ ;;^UTILITY(U,$J,358.3,33426,1,4,0)
+ ;;=4^N92.0
+ ;;^UTILITY(U,$J,358.3,33426,2)
+ ;;=^5015908
+ ;;^UTILITY(U,$J,358.3,33427,0)
+ ;;=N92.6^^119^1580^63
+ ;;^UTILITY(U,$J,358.3,33427,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15320,1,3,0)
- ;;=3^Melanoma in Situ of Left Eyelid
- ;;^UTILITY(U,$J,358.3,15320,1,4,0)
- ;;=4^D03.12
- ;;^UTILITY(U,$J,358.3,15320,2)
- ;;=^5001891
- ;;^UTILITY(U,$J,358.3,15321,0)
- ;;=D03.21^^85^815^28
- ;;^UTILITY(U,$J,358.3,15321,1,0)
+ ;;^UTILITY(U,$J,358.3,33427,1,3,0)
+ ;;=3^Irregular Menstruation,Unspec
+ ;;^UTILITY(U,$J,358.3,33427,1,4,0)
+ ;;=4^N92.6
+ ;;^UTILITY(U,$J,358.3,33427,2)
+ ;;=^5015913
+ ;;^UTILITY(U,$J,358.3,33428,0)
+ ;;=N92.5^^119^1580^62
+ ;;^UTILITY(U,$J,358.3,33428,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15321,1,3,0)
- ;;=3^Melanoma in Situ of Right Ear/External Auricular Canal
- ;;^UTILITY(U,$J,358.3,15321,1,4,0)
- ;;=4^D03.21
- ;;^UTILITY(U,$J,358.3,15321,2)
- ;;=^5001893
- ;;^UTILITY(U,$J,358.3,15322,0)
- ;;=D03.22^^85^815^22
- ;;^UTILITY(U,$J,358.3,15322,1,0)
+ ;;^UTILITY(U,$J,358.3,33428,1,3,0)
+ ;;=3^Irregular Menstruation,Other Spec
+ ;;^UTILITY(U,$J,358.3,33428,1,4,0)
+ ;;=4^N92.5
+ ;;^UTILITY(U,$J,358.3,33428,2)
+ ;;=^5015912
+ ;;^UTILITY(U,$J,358.3,33429,0)
+ ;;=N92.3^^119^1580^80
+ ;;^UTILITY(U,$J,358.3,33429,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15322,1,3,0)
- ;;=3^Melanoma in Situ of Left Ear/External Auricular Canal
- ;;^UTILITY(U,$J,358.3,15322,1,4,0)
- ;;=4^D03.22
- ;;^UTILITY(U,$J,358.3,15322,2)
- ;;=^5001894
- ;;^UTILITY(U,$J,358.3,15323,0)
- ;;=D03.30^^85^815^21
- ;;^UTILITY(U,$J,358.3,15323,1,0)
+ ;;^UTILITY(U,$J,358.3,33429,1,3,0)
+ ;;=3^Ovulation Bleeding
+ ;;^UTILITY(U,$J,358.3,33429,1,4,0)
+ ;;=4^N92.3
+ ;;^UTILITY(U,$J,358.3,33429,2)
+ ;;=^270570
+ ;;^UTILITY(U,$J,358.3,33430,0)
+ ;;=N89.7^^119^1580^55
+ ;;^UTILITY(U,$J,358.3,33430,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15323,1,3,0)
- ;;=3^Melanoma in Situ of Face,Unspec
- ;;^UTILITY(U,$J,358.3,15323,1,4,0)
- ;;=4^D03.30
- ;;^UTILITY(U,$J,358.3,15323,2)
- ;;=^5001895
- ;;^UTILITY(U,$J,358.3,15324,0)
- ;;=D03.39^^85^815^20
- ;;^UTILITY(U,$J,358.3,15324,1,0)
+ ;;^UTILITY(U,$J,358.3,33430,1,3,0)
+ ;;=3^Hematocolpos
+ ;;^UTILITY(U,$J,358.3,33430,1,4,0)
+ ;;=4^N89.7
+ ;;^UTILITY(U,$J,358.3,33430,2)
+ ;;=^5015889
+ ;;^UTILITY(U,$J,358.3,33431,0)
+ ;;=N93.8^^119^1580^5
+ ;;^UTILITY(U,$J,358.3,33431,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15324,1,3,0)
- ;;=3^Melanoma in Situ of Face NEC
- ;;^UTILITY(U,$J,358.3,15324,1,4,0)
- ;;=4^D03.39
- ;;^UTILITY(U,$J,358.3,15324,2)
- ;;=^5001896
- ;;^UTILITY(U,$J,358.3,15325,0)
- ;;=D03.4^^85^815^32
- ;;^UTILITY(U,$J,358.3,15325,1,0)
+ ;;^UTILITY(U,$J,358.3,33431,1,3,0)
+ ;;=3^Abnormal Uterine/Vaginal Bleeding,Other Spec
+ ;;^UTILITY(U,$J,358.3,33431,1,4,0)
+ ;;=4^N93.8
+ ;;^UTILITY(U,$J,358.3,33431,2)
+ ;;=^5015915
+ ;;^UTILITY(U,$J,358.3,33432,0)
+ ;;=N93.9^^119^1580^6
+ ;;^UTILITY(U,$J,358.3,33432,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15325,1,3,0)
- ;;=3^Melanoma in Situ of Scalp/Neck
- ;;^UTILITY(U,$J,358.3,15325,1,4,0)
- ;;=4^D03.4
- ;;^UTILITY(U,$J,358.3,15325,2)
- ;;=^5001897
- ;;^UTILITY(U,$J,358.3,15326,0)
- ;;=D03.51^^85^815^18
- ;;^UTILITY(U,$J,358.3,15326,1,0)
+ ;;^UTILITY(U,$J,358.3,33432,1,3,0)
+ ;;=3^Abnormal Uterine/Vaginal Bleeding,Unspec
+ ;;^UTILITY(U,$J,358.3,33432,1,4,0)
+ ;;=4^N93.9
+ ;;^UTILITY(U,$J,358.3,33432,2)
+ ;;=^5015916
+ ;;^UTILITY(U,$J,358.3,33433,0)
+ ;;=N92.4^^119^1580^39
+ ;;^UTILITY(U,$J,358.3,33433,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15326,1,3,0)
- ;;=3^Melanoma in Situ of Anal Skin
- ;;^UTILITY(U,$J,358.3,15326,1,4,0)
- ;;=4^D03.51
- ;;^UTILITY(U,$J,358.3,15326,2)
- ;;=^5001898
- ;;^UTILITY(U,$J,358.3,15327,0)
- ;;=D03.52^^85^815^19
- ;;^UTILITY(U,$J,358.3,15327,1,0)
+ ;;^UTILITY(U,$J,358.3,33433,1,3,0)
+ ;;=3^Excessive Bleeding in Premenopausal Period
+ ;;^UTILITY(U,$J,358.3,33433,1,4,0)
+ ;;=4^N92.4
+ ;;^UTILITY(U,$J,358.3,33433,2)
+ ;;=^5015911
+ ;;^UTILITY(U,$J,358.3,33434,0)
+ ;;=N95.0^^119^1580^89
+ ;;^UTILITY(U,$J,358.3,33434,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15327,1,3,0)
- ;;=3^Melanoma in Situ of Breast
- ;;^UTILITY(U,$J,358.3,15327,1,4,0)
- ;;=4^D03.52
- ;;^UTILITY(U,$J,358.3,15327,2)
- ;;=^5001899
- ;;^UTILITY(U,$J,358.3,15328,0)
- ;;=D03.59^^85^815^33
- ;;^UTILITY(U,$J,358.3,15328,1,0)
+ ;;^UTILITY(U,$J,358.3,33434,1,3,0)
+ ;;=3^Postmenopausal Bleeding
+ ;;^UTILITY(U,$J,358.3,33434,1,4,0)
+ ;;=4^N95.0
+ ;;^UTILITY(U,$J,358.3,33434,2)
+ ;;=^97040
+ ;;^UTILITY(U,$J,358.3,33435,0)
+ ;;=N95.1^^119^1580^71
+ ;;^UTILITY(U,$J,358.3,33435,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15328,1,3,0)
- ;;=3^Melanoma in Situ of Trunk NEC
- ;;^UTILITY(U,$J,358.3,15328,1,4,0)
- ;;=4^D03.59
- ;;^UTILITY(U,$J,358.3,15328,2)
- ;;=^5001900
- ;;^UTILITY(U,$J,358.3,15329,0)
- ;;=D03.61^^85^815^31
- ;;^UTILITY(U,$J,358.3,15329,1,0)
+ ;;^UTILITY(U,$J,358.3,33435,1,3,0)
+ ;;=3^Menopausal/Female Climacteric States
+ ;;^UTILITY(U,$J,358.3,33435,1,4,0)
+ ;;=4^N95.1
+ ;;^UTILITY(U,$J,358.3,33435,2)
+ ;;=^5015927
+ ;;^UTILITY(U,$J,358.3,33436,0)
+ ;;=N97.0^^119^1580^46
+ ;;^UTILITY(U,$J,358.3,33436,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15329,1,3,0)
- ;;=3^Melanoma in Situ of Right Upper Limb
- ;;^UTILITY(U,$J,358.3,15329,1,4,0)
- ;;=4^D03.61
- ;;^UTILITY(U,$J,358.3,15329,2)
- ;;=^5001902
- ;;^UTILITY(U,$J,358.3,15330,0)
- ;;=D03.62^^85^815^25
- ;;^UTILITY(U,$J,358.3,15330,1,0)
+ ;;^UTILITY(U,$J,358.3,33436,1,3,0)
+ ;;=3^Female Infertility Associated w/ Anovulation
+ ;;^UTILITY(U,$J,358.3,33436,1,4,0)
+ ;;=4^N97.0
+ ;;^UTILITY(U,$J,358.3,33436,2)
+ ;;=^5015931
+ ;;^UTILITY(U,$J,358.3,33437,0)
+ ;;=N97.9^^119^1580^47
+ ;;^UTILITY(U,$J,358.3,33437,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15330,1,3,0)
- ;;=3^Melanoma in Situ of Left Upper Limb
- ;;^UTILITY(U,$J,358.3,15330,1,4,0)
- ;;=4^D03.62
- ;;^UTILITY(U,$J,358.3,15330,2)
- ;;=^5001903
- ;;^UTILITY(U,$J,358.3,15331,0)
- ;;=D03.71^^85^815^30
- ;;^UTILITY(U,$J,358.3,15331,1,0)
+ ;;^UTILITY(U,$J,358.3,33437,1,3,0)
+ ;;=3^Female Infertility,Unspec
+ ;;^UTILITY(U,$J,358.3,33437,1,4,0)
+ ;;=4^N97.9
+ ;;^UTILITY(U,$J,358.3,33437,2)
+ ;;=^5015935
+ ;;^UTILITY(U,$J,358.3,33438,0)
+ ;;=L29.2^^119^1580^96
+ ;;^UTILITY(U,$J,358.3,33438,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15331,1,3,0)
- ;;=3^Melanoma in Situ of Right Lower Limb
- ;;^UTILITY(U,$J,358.3,15331,1,4,0)
- ;;=4^D03.71
+ ;;^UTILITY(U,$J,358.3,33438,1,3,0)
+ ;;=3^Pruritus Vulvae
+ ;;^UTILITY(U,$J,358.3,33438,1,4,0)
+ ;;=4^L29.2
+ ;;^UTILITY(U,$J,358.3,33438,2)
+ ;;=^100075
+ ;;^UTILITY(U,$J,358.3,33439,0)
+ ;;=R92.8^^119^1580^7
+ ;;^UTILITY(U,$J,358.3,33439,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33439,1,3,0)
+ ;;=3^Abnormal/Inconclusive Findings on Dx Imaging of Breast
+ ;;^UTILITY(U,$J,358.3,33439,1,4,0)
+ ;;=4^R92.8
+ ;;^UTILITY(U,$J,358.3,33439,2)
+ ;;=^5019712
+ ;;^UTILITY(U,$J,358.3,33440,0)
+ ;;=R87.619^^119^1580^4
+ ;;^UTILITY(U,$J,358.3,33440,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33440,1,3,0)
+ ;;=3^Abnormal Cytology Findings in Specimen of Cervix Uteri,Unspec
+ ;;^UTILITY(U,$J,358.3,33440,1,4,0)
+ ;;=4^R87.619
+ ;;^UTILITY(U,$J,358.3,33440,2)
+ ;;=^5019676
+ ;;^UTILITY(U,$J,358.3,33441,0)
+ ;;=Z79.890^^119^1580^57
+ ;;^UTILITY(U,$J,358.3,33441,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33441,1,3,0)
+ ;;=3^Hormone Replacement Therapy,Postmenopausal
+ ;;^UTILITY(U,$J,358.3,33441,1,4,0)
+ ;;=4^Z79.890
+ ;;^UTILITY(U,$J,358.3,33441,2)
+ ;;=^331975
+ ;;^UTILITY(U,$J,358.3,33442,0)
+ ;;=Z33.1^^119^1580^94
+ ;;^UTILITY(U,$J,358.3,33442,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33442,1,3,0)
+ ;;=3^Pregnant State,Incidental
+ ;;^UTILITY(U,$J,358.3,33442,1,4,0)
+ ;;=4^Z33.1
+ ;;^UTILITY(U,$J,358.3,33442,2)
+ ;;=^5062853
+ ;;^UTILITY(U,$J,358.3,33443,0)
+ ;;=Z39.2^^119^1580^90
+ ;;^UTILITY(U,$J,358.3,33443,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33443,1,3,0)
+ ;;=3^Postpartum Follow-up Routine Encounter
+ ;;^UTILITY(U,$J,358.3,33443,1,4,0)
+ ;;=4^Z39.2
+ ;;^UTILITY(U,$J,358.3,33443,2)
+ ;;=^5062906
+ ;;^UTILITY(U,$J,358.3,33444,0)
+ ;;=Z30.09^^119^1580^25
+ ;;^UTILITY(U,$J,358.3,33444,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33444,1,3,0)
+ ;;=3^Counsel/Advice on Contraception Encounter
+ ;;^UTILITY(U,$J,358.3,33444,1,4,0)
+ ;;=4^Z30.09
+ ;;^UTILITY(U,$J,358.3,33444,2)
+ ;;=^5062817
+ ;;^UTILITY(U,$J,358.3,33445,0)
+ ;;=Z30.9^^119^1580^24
+ ;;^UTILITY(U,$J,358.3,33445,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33445,1,3,0)
+ ;;=3^Contraceptive Management Encounter
+ ;;^UTILITY(U,$J,358.3,33445,1,4,0)
+ ;;=4^Z30.9
+ ;;^UTILITY(U,$J,358.3,33445,2)
+ ;;=^5062828
+ ;;^UTILITY(U,$J,358.3,33446,0)
+ ;;=N64.3^^119^1580^53
+ ;;^UTILITY(U,$J,358.3,33446,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33446,1,3,0)
+ ;;=3^Galactorrhea Not Associated w/ Childbirth
+ ;;^UTILITY(U,$J,358.3,33446,1,4,0)
+ ;;=4^N64.3
+ ;;^UTILITY(U,$J,358.3,33446,2)
+ ;;=^270460
+ ;;^UTILITY(U,$J,358.3,33447,0)
+ ;;=R92.2^^119^1580^60
+ ;;^UTILITY(U,$J,358.3,33447,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33447,1,3,0)
+ ;;=3^Inconclusive Mammogram
+ ;;^UTILITY(U,$J,358.3,33447,1,4,0)
+ ;;=4^R92.2
+ ;;^UTILITY(U,$J,358.3,33447,2)
+ ;;=^5019711
+ ;;^UTILITY(U,$J,358.3,33448,0)
+ ;;=Z30.432^^119^1580^98
+ ;;^UTILITY(U,$J,358.3,33448,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33448,1,3,0)
+ ;;=3^Removal of IUD
+ ;;^UTILITY(U,$J,358.3,33448,1,4,0)
+ ;;=4^Z30.432
+ ;;^UTILITY(U,$J,358.3,33448,2)
+ ;;=^5062824
+ ;;^UTILITY(U,$J,358.3,33449,0)
+ ;;=Z90.710^^119^1580^12
+ ;;^UTILITY(U,$J,358.3,33449,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33449,1,3,0)
+ ;;=3^Acquired Absence of Cervix & Uterus
+ ;;^UTILITY(U,$J,358.3,33449,1,4,0)
+ ;;=4^Z90.710
+ ;;^UTILITY(U,$J,358.3,33449,2)
+ ;;=^5063591
+ ;;^UTILITY(U,$J,358.3,33450,0)
+ ;;=Z90.13^^119^1580^11
+ ;;^UTILITY(U,$J,358.3,33450,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33450,1,3,0)
+ ;;=3^Acquired Absence of Breasts,Bilateral
+ ;;^UTILITY(U,$J,358.3,33450,1,4,0)
+ ;;=4^Z90.13
+ ;;^UTILITY(U,$J,358.3,33450,2)
+ ;;=^5063584
+ ;;^UTILITY(U,$J,358.3,33451,0)
+ ;;=Z90.12^^119^1580^9
+ ;;^UTILITY(U,$J,358.3,33451,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33451,1,3,0)
+ ;;=3^Acquired Absence of Breast,Left
+ ;;^UTILITY(U,$J,358.3,33451,1,4,0)
+ ;;=4^Z90.12
+ ;;^UTILITY(U,$J,358.3,33451,2)
+ ;;=^5063583
+ ;;^UTILITY(U,$J,358.3,33452,0)
+ ;;=Z90.11^^119^1580^10
+ ;;^UTILITY(U,$J,358.3,33452,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33452,1,3,0)
+ ;;=3^Acquired Absence of Breast,Right
+ ;;^UTILITY(U,$J,358.3,33452,1,4,0)
+ ;;=4^Z90.11
+ ;;^UTILITY(U,$J,358.3,33452,2)
+ ;;=^5063582
+ ;;^UTILITY(U,$J,358.3,33453,0)
+ ;;=A63.0^^119^1580^16
+ ;;^UTILITY(U,$J,358.3,33453,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33453,1,3,0)
+ ;;=3^Anogenital Warts,Verereal
+ ;;^UTILITY(U,$J,358.3,33453,1,4,0)
+ ;;=4^A63.0
+ ;;^UTILITY(U,$J,358.3,33453,2)
+ ;;=^5000360
+ ;;^UTILITY(U,$J,358.3,33454,0)
+ ;;=R63.0^^119^1580^17

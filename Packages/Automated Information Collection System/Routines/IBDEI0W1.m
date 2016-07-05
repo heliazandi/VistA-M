@@ -1,132 +1,288 @@
-IBDEI0W1 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0W1 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14761,1,4,0)
- ;;=4^R10.10
- ;;^UTILITY(U,$J,358.3,14761,2)
- ;;=^5019205
- ;;^UTILITY(U,$J,358.3,14762,0)
- ;;=Z48.00^^85^795^12
- ;;^UTILITY(U,$J,358.3,14762,1,0)
+ ;;^UTILITY(U,$J,358.3,32228,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14762,1,3,0)
- ;;=3^Change/Removal Nonsurgical Wound Dressing
- ;;^UTILITY(U,$J,358.3,14762,1,4,0)
- ;;=4^Z48.00
- ;;^UTILITY(U,$J,358.3,14762,2)
- ;;=^5063033
- ;;^UTILITY(U,$J,358.3,14763,0)
- ;;=Z48.01^^85^795^13
- ;;^UTILITY(U,$J,358.3,14763,1,0)
+ ;;^UTILITY(U,$J,358.3,32228,1,3,0)
+ ;;=3^Chronic Kidney Disease,Stage 3
+ ;;^UTILITY(U,$J,358.3,32228,1,4,0)
+ ;;=4^N18.3
+ ;;^UTILITY(U,$J,358.3,32228,2)
+ ;;=^5015604
+ ;;^UTILITY(U,$J,358.3,32229,0)
+ ;;=N18.4^^119^1560^16
+ ;;^UTILITY(U,$J,358.3,32229,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14763,1,3,0)
- ;;=3^Change/Removal Surgical Wound Dressing
- ;;^UTILITY(U,$J,358.3,14763,1,4,0)
- ;;=4^Z48.01
- ;;^UTILITY(U,$J,358.3,14763,2)
- ;;=^5063034
- ;;^UTILITY(U,$J,358.3,14764,0)
- ;;=Z48.02^^85^795^16
- ;;^UTILITY(U,$J,358.3,14764,1,0)
+ ;;^UTILITY(U,$J,358.3,32229,1,3,0)
+ ;;=3^Chronic Kidney Disease,Stage 4
+ ;;^UTILITY(U,$J,358.3,32229,1,4,0)
+ ;;=4^N18.4
+ ;;^UTILITY(U,$J,358.3,32229,2)
+ ;;=^5015605
+ ;;^UTILITY(U,$J,358.3,32230,0)
+ ;;=N18.5^^119^1560^17
+ ;;^UTILITY(U,$J,358.3,32230,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14764,1,3,0)
- ;;=3^Removal of Sutures
- ;;^UTILITY(U,$J,358.3,14764,1,4,0)
- ;;=4^Z48.02
- ;;^UTILITY(U,$J,358.3,14764,2)
- ;;=^5063035
- ;;^UTILITY(U,$J,358.3,14765,0)
- ;;=Z48.3^^85^795^4
- ;;^UTILITY(U,$J,358.3,14765,1,0)
+ ;;^UTILITY(U,$J,358.3,32230,1,3,0)
+ ;;=3^Chronic Kidney Disease,Stage 5
+ ;;^UTILITY(U,$J,358.3,32230,1,4,0)
+ ;;=4^N18.5
+ ;;^UTILITY(U,$J,358.3,32230,2)
+ ;;=^5015606
+ ;;^UTILITY(U,$J,358.3,32231,0)
+ ;;=Q61.3^^119^1560^80
+ ;;^UTILITY(U,$J,358.3,32231,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14765,1,3,0)
- ;;=3^Aftercare Following Neoplasm Surgery
- ;;^UTILITY(U,$J,358.3,14765,1,4,0)
- ;;=4^Z48.3
- ;;^UTILITY(U,$J,358.3,14765,2)
- ;;=^5063046
- ;;^UTILITY(U,$J,358.3,14766,0)
- ;;=Z48.810^^85^795^7
- ;;^UTILITY(U,$J,358.3,14766,1,0)
+ ;;^UTILITY(U,$J,358.3,32231,1,3,0)
+ ;;=3^Polycystic Kidney,Unspec
+ ;;^UTILITY(U,$J,358.3,32231,1,4,0)
+ ;;=4^Q61.3
+ ;;^UTILITY(U,$J,358.3,32231,2)
+ ;;=^5018797
+ ;;^UTILITY(U,$J,358.3,32232,0)
+ ;;=N20.1^^119^1560^9
+ ;;^UTILITY(U,$J,358.3,32232,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14766,1,3,0)
- ;;=3^Aftercare Following Sense Organ Surgery
- ;;^UTILITY(U,$J,358.3,14766,1,4,0)
- ;;=4^Z48.810
- ;;^UTILITY(U,$J,358.3,14766,2)
- ;;=^5063047
- ;;^UTILITY(U,$J,358.3,14767,0)
- ;;=Z48.811^^85^795^5
- ;;^UTILITY(U,$J,358.3,14767,1,0)
+ ;;^UTILITY(U,$J,358.3,32232,1,3,0)
+ ;;=3^Calculus Ureter
+ ;;^UTILITY(U,$J,358.3,32232,1,4,0)
+ ;;=4^N20.1
+ ;;^UTILITY(U,$J,358.3,32232,2)
+ ;;=^5015608
+ ;;^UTILITY(U,$J,358.3,32233,0)
+ ;;=N18.9^^119^1560^18
+ ;;^UTILITY(U,$J,358.3,32233,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14767,1,3,0)
- ;;=3^Aftercare Following Nervous System Surgery
- ;;^UTILITY(U,$J,358.3,14767,1,4,0)
- ;;=4^Z48.811
- ;;^UTILITY(U,$J,358.3,14767,2)
- ;;=^5063048
- ;;^UTILITY(U,$J,358.3,14768,0)
- ;;=Z48.812^^85^795^1
- ;;^UTILITY(U,$J,358.3,14768,1,0)
+ ;;^UTILITY(U,$J,358.3,32233,1,3,0)
+ ;;=3^Chronic Kidney Failure,Unspec
+ ;;^UTILITY(U,$J,358.3,32233,1,4,0)
+ ;;=4^N18.9
+ ;;^UTILITY(U,$J,358.3,32233,2)
+ ;;=^332812
+ ;;^UTILITY(U,$J,358.3,32234,0)
+ ;;=N18.6^^119^1560^28
+ ;;^UTILITY(U,$J,358.3,32234,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14768,1,3,0)
- ;;=3^Aftercare Following Circulatory System Surgery
- ;;^UTILITY(U,$J,358.3,14768,1,4,0)
- ;;=4^Z48.812
- ;;^UTILITY(U,$J,358.3,14768,2)
- ;;=^5063049
- ;;^UTILITY(U,$J,358.3,14769,0)
- ;;=Z48.813^^85^795^6
- ;;^UTILITY(U,$J,358.3,14769,1,0)
+ ;;^UTILITY(U,$J,358.3,32234,1,3,0)
+ ;;=3^End Stage Renal Disease (ESRD)
+ ;;^UTILITY(U,$J,358.3,32234,1,4,0)
+ ;;=4^N18.6
+ ;;^UTILITY(U,$J,358.3,32234,2)
+ ;;=^303986
+ ;;^UTILITY(U,$J,358.3,32235,0)
+ ;;=N52.9^^119^1560^44
+ ;;^UTILITY(U,$J,358.3,32235,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14769,1,3,0)
- ;;=3^Aftercare Following Respiratory System Surgery
- ;;^UTILITY(U,$J,358.3,14769,1,4,0)
- ;;=4^Z48.813
- ;;^UTILITY(U,$J,358.3,14769,2)
- ;;=^5063050
- ;;^UTILITY(U,$J,358.3,14770,0)
- ;;=Z48.814^^85^795^10
- ;;^UTILITY(U,$J,358.3,14770,1,0)
+ ;;^UTILITY(U,$J,358.3,32235,1,3,0)
+ ;;=3^Erectile Dysfunction,Unspec
+ ;;^UTILITY(U,$J,358.3,32235,1,4,0)
+ ;;=4^N52.9
+ ;;^UTILITY(U,$J,358.3,32235,2)
+ ;;=^5015763
+ ;;^UTILITY(U,$J,358.3,32236,0)
+ ;;=N32.81^^119^1560^75
+ ;;^UTILITY(U,$J,358.3,32236,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14770,1,3,0)
- ;;=3^Aftercare Following Teeth/Oral Cavity Surgery
- ;;^UTILITY(U,$J,358.3,14770,1,4,0)
- ;;=4^Z48.814
- ;;^UTILITY(U,$J,358.3,14770,2)
- ;;=^5063051
- ;;^UTILITY(U,$J,358.3,14771,0)
- ;;=Z48.815^^85^795^2
- ;;^UTILITY(U,$J,358.3,14771,1,0)
+ ;;^UTILITY(U,$J,358.3,32236,1,3,0)
+ ;;=3^Overactive Bladder
+ ;;^UTILITY(U,$J,358.3,32236,1,4,0)
+ ;;=4^N32.81
+ ;;^UTILITY(U,$J,358.3,32236,2)
+ ;;=^5015652
+ ;;^UTILITY(U,$J,358.3,32237,0)
+ ;;=Q61.2^^119^1560^79
+ ;;^UTILITY(U,$J,358.3,32237,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14771,1,3,0)
- ;;=3^Aftercare Following Digestive System Surgery
- ;;^UTILITY(U,$J,358.3,14771,1,4,0)
- ;;=4^Z48.815
- ;;^UTILITY(U,$J,358.3,14771,2)
- ;;=^5063052
- ;;^UTILITY(U,$J,358.3,14772,0)
- ;;=Z48.816^^85^795^3
- ;;^UTILITY(U,$J,358.3,14772,1,0)
+ ;;^UTILITY(U,$J,358.3,32237,1,3,0)
+ ;;=3^Polycystic Kidney,Adult Type
+ ;;^UTILITY(U,$J,358.3,32237,1,4,0)
+ ;;=4^Q61.2
+ ;;^UTILITY(U,$J,358.3,32237,2)
+ ;;=^5018796
+ ;;^UTILITY(U,$J,358.3,32238,0)
+ ;;=N41.1^^119^1560^83
+ ;;^UTILITY(U,$J,358.3,32238,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14772,1,3,0)
- ;;=3^Aftercare Following GU System Surgery
- ;;^UTILITY(U,$J,358.3,14772,1,4,0)
- ;;=4^Z48.816
- ;;^UTILITY(U,$J,358.3,14772,2)
- ;;=^5063053
- ;;^UTILITY(U,$J,358.3,14773,0)
- ;;=Z48.817^^85^795^8
- ;;^UTILITY(U,$J,358.3,14773,1,0)
+ ;;^UTILITY(U,$J,358.3,32238,1,3,0)
+ ;;=3^Prostatitis,Chronic
+ ;;^UTILITY(U,$J,358.3,32238,1,4,0)
+ ;;=4^N41.1
+ ;;^UTILITY(U,$J,358.3,32238,2)
+ ;;=^186931
+ ;;^UTILITY(U,$J,358.3,32239,0)
+ ;;=N11.9^^119^1560^91
+ ;;^UTILITY(U,$J,358.3,32239,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14773,1,3,0)
- ;;=3^Aftercare Following Skin Surgery
- ;;^UTILITY(U,$J,358.3,14773,1,4,0)
- ;;=4^Z48.817
- ;;^UTILITY(U,$J,358.3,14773,2)
- ;;=^5063054
- ;;^UTILITY(U,$J,358.3,14774,0)
- ;;=Z48.89^^85^795^9
- ;;^UTILITY(U,$J,358.3,14774,1,0)
+ ;;^UTILITY(U,$J,358.3,32239,1,3,0)
+ ;;=3^Pyelonephritis,Chronic,Unspec
+ ;;^UTILITY(U,$J,358.3,32239,1,4,0)
+ ;;=4^N11.9
+ ;;^UTILITY(U,$J,358.3,32239,2)
+ ;;=^5015574
+ ;;^UTILITY(U,$J,358.3,32240,0)
+ ;;=N20.9^^119^1560^102
+ ;;^UTILITY(U,$J,358.3,32240,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32240,1,3,0)
+ ;;=3^Urinary Calculus,Unspec
+ ;;^UTILITY(U,$J,358.3,32240,1,4,0)
+ ;;=4^N20.9
+ ;;^UTILITY(U,$J,358.3,32240,2)
+ ;;=^5015610
+ ;;^UTILITY(U,$J,358.3,32241,0)
+ ;;=R51.^^119^1561^2
+ ;;^UTILITY(U,$J,358.3,32241,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32241,1,3,0)
+ ;;=3^Headache
+ ;;^UTILITY(U,$J,358.3,32241,1,4,0)
+ ;;=4^R51.
+ ;;^UTILITY(U,$J,358.3,32241,2)
+ ;;=^5019513
+ ;;^UTILITY(U,$J,358.3,32242,0)
+ ;;=G44.1^^119^1561^9
+ ;;^UTILITY(U,$J,358.3,32242,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32242,1,3,0)
+ ;;=3^Vascular Headache NEC
+ ;;^UTILITY(U,$J,358.3,32242,1,4,0)
+ ;;=4^G44.1
+ ;;^UTILITY(U,$J,358.3,32242,2)
+ ;;=^5003934
+ ;;^UTILITY(U,$J,358.3,32243,0)
+ ;;=G43.909^^119^1561^5
+ ;;^UTILITY(U,$J,358.3,32243,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32243,1,3,0)
+ ;;=3^Migraine,Unspec,Not Intractable
+ ;;^UTILITY(U,$J,358.3,32243,1,4,0)
+ ;;=4^G43.909
+ ;;^UTILITY(U,$J,358.3,32243,2)
+ ;;=^5003909
+ ;;^UTILITY(U,$J,358.3,32244,0)
+ ;;=G44.009^^119^1561^1
+ ;;^UTILITY(U,$J,358.3,32244,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32244,1,3,0)
+ ;;=3^Cluster Headache,Unspec,Not Intractable
+ ;;^UTILITY(U,$J,358.3,32244,1,4,0)
+ ;;=4^G44.009
+ ;;^UTILITY(U,$J,358.3,32244,2)
+ ;;=^5003921
+ ;;^UTILITY(U,$J,358.3,32245,0)
+ ;;=G44.40^^119^1561^4
+ ;;^UTILITY(U,$J,358.3,32245,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32245,1,3,0)
+ ;;=3^Medication Overuse Headache,Not Intractable
+ ;;^UTILITY(U,$J,358.3,32245,1,4,0)
+ ;;=4^G44.40
+ ;;^UTILITY(U,$J,358.3,32245,2)
+ ;;=^5003947
+ ;;^UTILITY(U,$J,358.3,32246,0)
+ ;;=G44.89^^119^1561^3
+ ;;^UTILITY(U,$J,358.3,32246,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32246,1,3,0)
+ ;;=3^Headache Syndrome NEC
+ ;;^UTILITY(U,$J,358.3,32246,1,4,0)
+ ;;=4^G44.89
+ ;;^UTILITY(U,$J,358.3,32246,2)
+ ;;=^5003954
+ ;;^UTILITY(U,$J,358.3,32247,0)
+ ;;=G44.84^^119^1561^7
+ ;;^UTILITY(U,$J,358.3,32247,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32247,1,3,0)
+ ;;=3^Primary Exertional Headache
+ ;;^UTILITY(U,$J,358.3,32247,1,4,0)
+ ;;=4^G44.84
+ ;;^UTILITY(U,$J,358.3,32247,2)
+ ;;=^336563
+ ;;^UTILITY(U,$J,358.3,32248,0)
+ ;;=G44.301^^119^1561^6
+ ;;^UTILITY(U,$J,358.3,32248,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32248,1,3,0)
+ ;;=3^Post-Traumatic Headache,Unspec,Intractable
+ ;;^UTILITY(U,$J,358.3,32248,1,4,0)
+ ;;=4^G44.301
+ ;;^UTILITY(U,$J,358.3,32248,2)
+ ;;=^5003941
+ ;;^UTILITY(U,$J,358.3,32249,0)
+ ;;=G44.209^^119^1561^8
+ ;;^UTILITY(U,$J,358.3,32249,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32249,1,3,0)
+ ;;=3^Tension-Type Headache,Unspec,Not Intractable
+ ;;^UTILITY(U,$J,358.3,32249,1,4,0)
+ ;;=4^G44.209
+ ;;^UTILITY(U,$J,358.3,32249,2)
+ ;;=^5003936
+ ;;^UTILITY(U,$J,358.3,32250,0)
+ ;;=I50.32^^119^1562^5
+ ;;^UTILITY(U,$J,358.3,32250,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32250,1,3,0)
+ ;;=3^Diastolic Heart Failure,Chronic
+ ;;^UTILITY(U,$J,358.3,32250,1,4,0)
+ ;;=4^I50.32
+ ;;^UTILITY(U,$J,358.3,32250,2)
+ ;;=^5007245
+ ;;^UTILITY(U,$J,358.3,32251,0)
+ ;;=I50.33^^119^1562^4
+ ;;^UTILITY(U,$J,358.3,32251,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32251,1,3,0)
+ ;;=3^Diastolic Heart Failure,Acute on Chronic
+ ;;^UTILITY(U,$J,358.3,32251,1,4,0)
+ ;;=4^I50.33
+ ;;^UTILITY(U,$J,358.3,32251,2)
+ ;;=^5007246
+ ;;^UTILITY(U,$J,358.3,32252,0)
+ ;;=I50.40^^119^1562^9
+ ;;^UTILITY(U,$J,358.3,32252,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32252,1,3,0)
+ ;;=3^Systolic & Diastolic Congestive Heart Failure,Combined Unspec
+ ;;^UTILITY(U,$J,358.3,32252,1,4,0)
+ ;;=4^I50.40
+ ;;^UTILITY(U,$J,358.3,32252,2)
+ ;;=^5007247
+ ;;^UTILITY(U,$J,358.3,32253,0)
+ ;;=I51.7^^119^1562^2
+ ;;^UTILITY(U,$J,358.3,32253,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32253,1,3,0)
+ ;;=3^Cardiomegaly
+ ;;^UTILITY(U,$J,358.3,32253,1,4,0)
+ ;;=4^I51.7
+ ;;^UTILITY(U,$J,358.3,32253,2)
+ ;;=^5007257
+ ;;^UTILITY(U,$J,358.3,32254,0)
+ ;;=I42.6^^119^1562^1
+ ;;^UTILITY(U,$J,358.3,32254,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32254,1,3,0)
+ ;;=3^Alcoholic Cardiomyopathy
+ ;;^UTILITY(U,$J,358.3,32254,1,4,0)
+ ;;=4^I42.6
+ ;;^UTILITY(U,$J,358.3,32254,2)
+ ;;=^5007197
+ ;;^UTILITY(U,$J,358.3,32255,0)
+ ;;=I50.1^^119^1562^8
+ ;;^UTILITY(U,$J,358.3,32255,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32255,1,3,0)
+ ;;=3^Left Ventricular Failure
+ ;;^UTILITY(U,$J,358.3,32255,1,4,0)
+ ;;=4^I50.1
+ ;;^UTILITY(U,$J,358.3,32255,2)
+ ;;=^5007238
+ ;;^UTILITY(U,$J,358.3,32256,0)
+ ;;=I50.20^^119^1562^13
+ ;;^UTILITY(U,$J,358.3,32256,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,32256,1,3,0)
+ ;;=3^Systolic Heart Failure,Unspec

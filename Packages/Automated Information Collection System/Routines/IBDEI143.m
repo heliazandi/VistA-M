@@ -1,130 +1,264 @@
-IBDEI143 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI143 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18565,0)
- ;;=H01.004^^94^909^2
- ;;^UTILITY(U,$J,358.3,18565,1,0)
+ ;;^UTILITY(U,$J,358.3,40356,1,4,0)
+ ;;=4^V00.812A
+ ;;^UTILITY(U,$J,358.3,40356,2)
+ ;;=^5055940
+ ;;^UTILITY(U,$J,358.3,40357,0)
+ ;;=V00.812D^^148^1966^134
+ ;;^UTILITY(U,$J,358.3,40357,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18565,1,3,0)
- ;;=3^Blepharitis Unspec,Left Upper Eyelid
- ;;^UTILITY(U,$J,358.3,18565,1,4,0)
- ;;=4^H01.004
- ;;^UTILITY(U,$J,358.3,18565,2)
- ;;=^5004241
- ;;^UTILITY(U,$J,358.3,18566,0)
- ;;=H01.005^^94^909^1
- ;;^UTILITY(U,$J,358.3,18566,1,0)
+ ;;^UTILITY(U,$J,358.3,40357,1,3,0)
+ ;;=3^Wheelchair Colliding w/ Stationary Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40357,1,4,0)
+ ;;=4^V00.812D
+ ;;^UTILITY(U,$J,358.3,40357,2)
+ ;;=^5055941
+ ;;^UTILITY(U,$J,358.3,40358,0)
+ ;;=V00.818A^^148^1966^131
+ ;;^UTILITY(U,$J,358.3,40358,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18566,1,3,0)
- ;;=3^Blepharitis Unspec,Left Lower Eyelid
- ;;^UTILITY(U,$J,358.3,18566,1,4,0)
- ;;=4^H01.005
- ;;^UTILITY(U,$J,358.3,18566,2)
- ;;=^5133380
- ;;^UTILITY(U,$J,358.3,18567,0)
- ;;=H01.001^^94^909^4
- ;;^UTILITY(U,$J,358.3,18567,1,0)
+ ;;^UTILITY(U,$J,358.3,40358,1,3,0)
+ ;;=3^Wheelchair Accident NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,40358,1,4,0)
+ ;;=4^V00.818A
+ ;;^UTILITY(U,$J,358.3,40358,2)
+ ;;=^5055943
+ ;;^UTILITY(U,$J,358.3,40359,0)
+ ;;=V00.818D^^148^1966^132
+ ;;^UTILITY(U,$J,358.3,40359,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18567,1,3,0)
- ;;=3^Blepharitis Unspec,Right Upper Eyelid
- ;;^UTILITY(U,$J,358.3,18567,1,4,0)
- ;;=4^H01.001
- ;;^UTILITY(U,$J,358.3,18567,2)
- ;;=^5004238
- ;;^UTILITY(U,$J,358.3,18568,0)
- ;;=H57.13^^94^909^10
- ;;^UTILITY(U,$J,358.3,18568,1,0)
+ ;;^UTILITY(U,$J,358.3,40359,1,3,0)
+ ;;=3^Wheelchair Accident NEC,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40359,1,4,0)
+ ;;=4^V00.818D
+ ;;^UTILITY(U,$J,358.3,40359,2)
+ ;;=^5055944
+ ;;^UTILITY(U,$J,358.3,40360,0)
+ ;;=V00.831A^^148^1966^43
+ ;;^UTILITY(U,$J,358.3,40360,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18568,1,3,0)
- ;;=3^Ocular Pain,Bilateral
- ;;^UTILITY(U,$J,358.3,18568,1,4,0)
- ;;=4^H57.13
- ;;^UTILITY(U,$J,358.3,18568,2)
- ;;=^5006384
- ;;^UTILITY(U,$J,358.3,18569,0)
- ;;=H57.12^^94^909^11
- ;;^UTILITY(U,$J,358.3,18569,1,0)
+ ;;^UTILITY(U,$J,358.3,40360,1,3,0)
+ ;;=3^Fall from Mobility Scooter,Init Encntr
+ ;;^UTILITY(U,$J,358.3,40360,1,4,0)
+ ;;=4^V00.831A
+ ;;^UTILITY(U,$J,358.3,40360,2)
+ ;;=^5055955
+ ;;^UTILITY(U,$J,358.3,40361,0)
+ ;;=V00.831D^^148^1966^44
+ ;;^UTILITY(U,$J,358.3,40361,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18569,1,3,0)
- ;;=3^Ocular Pain,Left Eye
- ;;^UTILITY(U,$J,358.3,18569,1,4,0)
- ;;=4^H57.12
- ;;^UTILITY(U,$J,358.3,18569,2)
- ;;=^5006383
- ;;^UTILITY(U,$J,358.3,18570,0)
- ;;=H57.11^^94^909^12
- ;;^UTILITY(U,$J,358.3,18570,1,0)
+ ;;^UTILITY(U,$J,358.3,40361,1,3,0)
+ ;;=3^Fall from Mobility Scooter,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40361,1,4,0)
+ ;;=4^V00.831D
+ ;;^UTILITY(U,$J,358.3,40361,2)
+ ;;=^5055956
+ ;;^UTILITY(U,$J,358.3,40362,0)
+ ;;=V00.832A^^148^1966^95
+ ;;^UTILITY(U,$J,358.3,40362,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18570,1,3,0)
- ;;=3^Ocular Pain,Right Eye
- ;;^UTILITY(U,$J,358.3,18570,1,4,0)
- ;;=4^H57.11
- ;;^UTILITY(U,$J,358.3,18570,2)
- ;;=^5006382
- ;;^UTILITY(U,$J,358.3,18571,0)
- ;;=S05.02XA^^94^910^3
- ;;^UTILITY(U,$J,358.3,18571,1,0)
+ ;;^UTILITY(U,$J,358.3,40362,1,3,0)
+ ;;=3^Mobility Scooter Colliding w/ Stationary Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,40362,1,4,0)
+ ;;=4^V00.832A
+ ;;^UTILITY(U,$J,358.3,40362,2)
+ ;;=^5055958
+ ;;^UTILITY(U,$J,358.3,40363,0)
+ ;;=V00.832D^^148^1966^96
+ ;;^UTILITY(U,$J,358.3,40363,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18571,1,3,0)
- ;;=3^Inj Conjunctiva/Corneal Abrasion w/o FB,Left Eye,Init
- ;;^UTILITY(U,$J,358.3,18571,1,4,0)
- ;;=4^S05.02XA
- ;;^UTILITY(U,$J,358.3,18571,2)
- ;;=^5020582
- ;;^UTILITY(U,$J,358.3,18572,0)
- ;;=S05.01XA^^94^910^4
- ;;^UTILITY(U,$J,358.3,18572,1,0)
+ ;;^UTILITY(U,$J,358.3,40363,1,3,0)
+ ;;=3^Mobility Scooter Colliding w/ Stationary Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40363,1,4,0)
+ ;;=4^V00.832D
+ ;;^UTILITY(U,$J,358.3,40363,2)
+ ;;=^5055959
+ ;;^UTILITY(U,$J,358.3,40364,0)
+ ;;=V00.838A^^148^1966^93
+ ;;^UTILITY(U,$J,358.3,40364,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18572,1,3,0)
- ;;=3^Inj Conjunctiva/Corneal Abrasion w/o FB,Right Eye,Init
- ;;^UTILITY(U,$J,358.3,18572,1,4,0)
- ;;=4^S05.01XA
- ;;^UTILITY(U,$J,358.3,18572,2)
- ;;=^5020579
- ;;^UTILITY(U,$J,358.3,18573,0)
- ;;=T15.02XA^^94^910^1
- ;;^UTILITY(U,$J,358.3,18573,1,0)
+ ;;^UTILITY(U,$J,358.3,40364,1,3,0)
+ ;;=3^Mobility Scooter Accident NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,40364,1,4,0)
+ ;;=4^V00.838A
+ ;;^UTILITY(U,$J,358.3,40364,2)
+ ;;=^5055961
+ ;;^UTILITY(U,$J,358.3,40365,0)
+ ;;=V00.838D^^148^1966^94
+ ;;^UTILITY(U,$J,358.3,40365,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18573,1,3,0)
- ;;=3^Foreign Body in Cornea,Left Eye,Init Encntr
- ;;^UTILITY(U,$J,358.3,18573,1,4,0)
- ;;=4^T15.02XA
- ;;^UTILITY(U,$J,358.3,18573,2)
- ;;=^5046387
- ;;^UTILITY(U,$J,358.3,18574,0)
- ;;=T15.01XA^^94^910^2
- ;;^UTILITY(U,$J,358.3,18574,1,0)
+ ;;^UTILITY(U,$J,358.3,40365,1,3,0)
+ ;;=3^Mobility Scooter Accident NEC,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40365,1,4,0)
+ ;;=4^V00.838D
+ ;;^UTILITY(U,$J,358.3,40365,2)
+ ;;=^5055962
+ ;;^UTILITY(U,$J,358.3,40366,0)
+ ;;=V00.891A^^148^1966^57
+ ;;^UTILITY(U,$J,358.3,40366,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18574,1,3,0)
- ;;=3^Foreign Body in Cornea,Right Eye,Init Encntr
- ;;^UTILITY(U,$J,358.3,18574,1,4,0)
- ;;=4^T15.01XA
- ;;^UTILITY(U,$J,358.3,18574,2)
- ;;=^5046384
- ;;^UTILITY(U,$J,358.3,18575,0)
- ;;=S00.252A^^94^910^5
- ;;^UTILITY(U,$J,358.3,18575,1,0)
+ ;;^UTILITY(U,$J,358.3,40366,1,3,0)
+ ;;=3^Fall from Pedestrian Conveyance,Init Encntr
+ ;;^UTILITY(U,$J,358.3,40366,1,4,0)
+ ;;=4^V00.891A
+ ;;^UTILITY(U,$J,358.3,40366,2)
+ ;;=^5055964
+ ;;^UTILITY(U,$J,358.3,40367,0)
+ ;;=V00.891D^^148^1966^58
+ ;;^UTILITY(U,$J,358.3,40367,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18575,1,3,0)
- ;;=3^Superficial FB of Left Eyelid/Periocular Area,Init Encntr
- ;;^UTILITY(U,$J,358.3,18575,1,4,0)
- ;;=4^S00.252A
- ;;^UTILITY(U,$J,358.3,18575,2)
- ;;=^5019820
- ;;^UTILITY(U,$J,358.3,18576,0)
- ;;=S00.251A^^94^910^6
- ;;^UTILITY(U,$J,358.3,18576,1,0)
+ ;;^UTILITY(U,$J,358.3,40367,1,3,0)
+ ;;=3^Fall from Pedestrian Conveyance,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40367,1,4,0)
+ ;;=4^V00.891D
+ ;;^UTILITY(U,$J,358.3,40367,2)
+ ;;=^5055965
+ ;;^UTILITY(U,$J,358.3,40368,0)
+ ;;=V00.892A^^148^1966^99
+ ;;^UTILITY(U,$J,358.3,40368,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18576,1,3,0)
- ;;=3^Superficial FB of Right Eyelid/Periocular Area,Init Encntr
- ;;^UTILITY(U,$J,358.3,18576,1,4,0)
- ;;=4^S00.251A
- ;;^UTILITY(U,$J,358.3,18576,2)
- ;;=^5019817
- ;;^UTILITY(U,$J,358.3,18577,0)
- ;;=B96.81^^94^911^56
- ;;^UTILITY(U,$J,358.3,18577,1,0)
+ ;;^UTILITY(U,$J,358.3,40368,1,3,0)
+ ;;=3^Pedestrian Conveyance Colliding w/ Stationary Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,40368,1,4,0)
+ ;;=4^V00.892A
+ ;;^UTILITY(U,$J,358.3,40368,2)
+ ;;=^5055967
+ ;;^UTILITY(U,$J,358.3,40369,0)
+ ;;=V00.892D^^148^1966^100
+ ;;^UTILITY(U,$J,358.3,40369,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18577,1,3,0)
- ;;=3^H. Pylori as the Cause of Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,40369,1,3,0)
+ ;;=3^Pedestrian Conveyance Colliding w/ Stationary Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40369,1,4,0)
+ ;;=4^V00.892D
+ ;;^UTILITY(U,$J,358.3,40369,2)
+ ;;=^5055968
+ ;;^UTILITY(U,$J,358.3,40370,0)
+ ;;=V00.898A^^148^1966^97
+ ;;^UTILITY(U,$J,358.3,40370,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40370,1,3,0)
+ ;;=3^Pedestrian Conveyance Accident NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,40370,1,4,0)
+ ;;=4^V00.898A
+ ;;^UTILITY(U,$J,358.3,40370,2)
+ ;;=^5055970
+ ;;^UTILITY(U,$J,358.3,40371,0)
+ ;;=V00.898D^^148^1966^98
+ ;;^UTILITY(U,$J,358.3,40371,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40371,1,3,0)
+ ;;=3^Pedestrian Conveyance Accident NEC,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40371,1,4,0)
+ ;;=4^V00.898D
+ ;;^UTILITY(U,$J,358.3,40371,2)
+ ;;=^5055971
+ ;;^UTILITY(U,$J,358.3,40372,0)
+ ;;=W00.0XXA^^148^1966^79
+ ;;^UTILITY(U,$J,358.3,40372,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40372,1,3,0)
+ ;;=3^Fall on Same Level d/t Ice/Snow,Init Encntr
+ ;;^UTILITY(U,$J,358.3,40372,1,4,0)
+ ;;=4^W00.0XXA
+ ;;^UTILITY(U,$J,358.3,40372,2)
+ ;;=^5059510
+ ;;^UTILITY(U,$J,358.3,40373,0)
+ ;;=W00.0XXD^^148^1966^80
+ ;;^UTILITY(U,$J,358.3,40373,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40373,1,3,0)
+ ;;=3^Fall on Same Level d/t Ice/Snow,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40373,1,4,0)
+ ;;=4^W00.0XXD
+ ;;^UTILITY(U,$J,358.3,40373,2)
+ ;;=^5059511
+ ;;^UTILITY(U,$J,358.3,40374,0)
+ ;;=W00.1XXA^^148^1966^59
+ ;;^UTILITY(U,$J,358.3,40374,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40374,1,3,0)
+ ;;=3^Fall from Stairs/Steps d/t Ice/Snow,Init Encntr
+ ;;^UTILITY(U,$J,358.3,40374,1,4,0)
+ ;;=4^W00.1XXA
+ ;;^UTILITY(U,$J,358.3,40374,2)
+ ;;=^5059513
+ ;;^UTILITY(U,$J,358.3,40375,0)
+ ;;=W00.1XXD^^148^1966^60
+ ;;^UTILITY(U,$J,358.3,40375,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40375,1,3,0)
+ ;;=3^Fall from Stairs/Steps d/t Ice/Snow,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40375,1,4,0)
+ ;;=4^W00.1XXD
+ ;;^UTILITY(U,$J,358.3,40375,2)
+ ;;=^5059514
+ ;;^UTILITY(U,$J,358.3,40376,0)
+ ;;=W00.2XXA^^148^1966^53
+ ;;^UTILITY(U,$J,358.3,40376,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40376,1,3,0)
+ ;;=3^Fall from One Level to Another d/t Ice/Snow,Init Encntr
+ ;;^UTILITY(U,$J,358.3,40376,1,4,0)
+ ;;=4^W00.2XXA
+ ;;^UTILITY(U,$J,358.3,40376,2)
+ ;;=^5059516
+ ;;^UTILITY(U,$J,358.3,40377,0)
+ ;;=W00.2XXD^^148^1966^54
+ ;;^UTILITY(U,$J,358.3,40377,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40377,1,3,0)
+ ;;=3^Fall from One Level to Another d/t Ice/Snow,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40377,1,4,0)
+ ;;=4^W00.2XXD
+ ;;^UTILITY(U,$J,358.3,40377,2)
+ ;;=^5059517
+ ;;^UTILITY(U,$J,358.3,40378,0)
+ ;;=W00.9XXA^^148^1966^25
+ ;;^UTILITY(U,$J,358.3,40378,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40378,1,3,0)
+ ;;=3^Fall d/t Ice/Snow,Unspec,Init Encntr
+ ;;^UTILITY(U,$J,358.3,40378,1,4,0)
+ ;;=4^W00.9XXA
+ ;;^UTILITY(U,$J,358.3,40378,2)
+ ;;=^5059519
+ ;;^UTILITY(U,$J,358.3,40379,0)
+ ;;=W00.9XXD^^148^1966^26
+ ;;^UTILITY(U,$J,358.3,40379,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40379,1,3,0)
+ ;;=3^Fall d/t Ice/Snow,Unspec,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40379,1,4,0)
+ ;;=4^W00.9XXD
+ ;;^UTILITY(U,$J,358.3,40379,2)
+ ;;=^5059520
+ ;;^UTILITY(U,$J,358.3,40380,0)
+ ;;=W01.0XXA^^148^1966^87
+ ;;^UTILITY(U,$J,358.3,40380,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40380,1,3,0)
+ ;;=3^Fall,Same Level,From Slip/Trip w/o Strike Against Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,40380,1,4,0)
+ ;;=4^W01.0XXA
+ ;;^UTILITY(U,$J,358.3,40380,2)
+ ;;=^5059522
+ ;;^UTILITY(U,$J,358.3,40381,0)
+ ;;=W01.0XXD^^148^1966^88
+ ;;^UTILITY(U,$J,358.3,40381,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40381,1,3,0)
+ ;;=3^Fall,Same Level,From Slip/Trip w/o Strike Against Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,40381,1,4,0)
+ ;;=4^W01.0XXD
+ ;;^UTILITY(U,$J,358.3,40381,2)
+ ;;=^5059523
+ ;;^UTILITY(U,$J,358.3,40382,0)
+ ;;=W03.XXXA^^148^1966^85
+ ;;^UTILITY(U,$J,358.3,40382,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40382,1,3,0)
+ ;;=3^Fall,Same Level d/t Collision w/ Another Person,Init Encntr

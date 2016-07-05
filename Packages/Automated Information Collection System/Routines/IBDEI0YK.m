@@ -1,128 +1,278 @@
-IBDEI0YK ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0YK ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15918,1,4,0)
- ;;=4^S01.85XA
- ;;^UTILITY(U,$J,358.3,15918,2)
- ;;=^5020237
- ;;^UTILITY(U,$J,358.3,15919,0)
- ;;=S11.85XA^^85^829^32
- ;;^UTILITY(U,$J,358.3,15919,1,0)
+ ;;^UTILITY(U,$J,358.3,34783,1,4,0)
+ ;;=4^M06.072
+ ;;^UTILITY(U,$J,358.3,34783,2)
+ ;;=^5010067
+ ;;^UTILITY(U,$J,358.3,34784,0)
+ ;;=M06.022^^125^1643^41
+ ;;^UTILITY(U,$J,358.3,34784,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15919,1,3,0)
- ;;=3^Open Bite of Neck,Oth Part,Init Encntr
- ;;^UTILITY(U,$J,358.3,15919,1,4,0)
- ;;=4^S11.85XA
- ;;^UTILITY(U,$J,358.3,15919,2)
- ;;=^5021521
- ;;^UTILITY(U,$J,358.3,15920,0)
- ;;=S91.051A^^85^829^37
- ;;^UTILITY(U,$J,358.3,15920,1,0)
+ ;;^UTILITY(U,$J,358.3,34784,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Left Elbow
+ ;;^UTILITY(U,$J,358.3,34784,1,4,0)
+ ;;=4^M06.022
+ ;;^UTILITY(U,$J,358.3,34784,2)
+ ;;=^5010052
+ ;;^UTILITY(U,$J,358.3,34785,0)
+ ;;=M06.042^^125^1643^42
+ ;;^UTILITY(U,$J,358.3,34785,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15920,1,3,0)
- ;;=3^Open Bite of Right Ankle,Init Encntr
- ;;^UTILITY(U,$J,358.3,15920,1,4,0)
- ;;=4^S91.051A
- ;;^UTILITY(U,$J,358.3,15920,2)
- ;;=^5044159
- ;;^UTILITY(U,$J,358.3,15921,0)
- ;;=S31.815A^^85^829^38
- ;;^UTILITY(U,$J,358.3,15921,1,0)
+ ;;^UTILITY(U,$J,358.3,34785,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Left Hand
+ ;;^UTILITY(U,$J,358.3,34785,1,4,0)
+ ;;=4^M06.042
+ ;;^UTILITY(U,$J,358.3,34785,2)
+ ;;=^5010058
+ ;;^UTILITY(U,$J,358.3,34786,0)
+ ;;=M06.052^^125^1643^43
+ ;;^UTILITY(U,$J,358.3,34786,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15921,1,3,0)
- ;;=3^Open Bite of Right Buttock,Init Encntr
- ;;^UTILITY(U,$J,358.3,15921,1,4,0)
- ;;=4^S31.815A
- ;;^UTILITY(U,$J,358.3,15921,2)
- ;;=^5024305
- ;;^UTILITY(U,$J,358.3,15922,0)
- ;;=S01.451A^^85^829^39
- ;;^UTILITY(U,$J,358.3,15922,1,0)
+ ;;^UTILITY(U,$J,358.3,34786,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Left Hip
+ ;;^UTILITY(U,$J,358.3,34786,1,4,0)
+ ;;=4^M06.052
+ ;;^UTILITY(U,$J,358.3,34786,2)
+ ;;=^5010061
+ ;;^UTILITY(U,$J,358.3,34787,0)
+ ;;=M06.062^^125^1643^44
+ ;;^UTILITY(U,$J,358.3,34787,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15922,1,3,0)
- ;;=3^Open Bite of Right Cheek/Temporomandibular Area,Init Encntr
- ;;^UTILITY(U,$J,358.3,15922,1,4,0)
- ;;=4^S01.451A
- ;;^UTILITY(U,$J,358.3,15922,2)
- ;;=^5020177
- ;;^UTILITY(U,$J,358.3,15923,0)
- ;;=S01.351A^^85^829^40
- ;;^UTILITY(U,$J,358.3,15923,1,0)
+ ;;^UTILITY(U,$J,358.3,34787,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Left Knee
+ ;;^UTILITY(U,$J,358.3,34787,1,4,0)
+ ;;=4^M06.062
+ ;;^UTILITY(U,$J,358.3,34787,2)
+ ;;=^5010064
+ ;;^UTILITY(U,$J,358.3,34788,0)
+ ;;=M06.012^^125^1643^45
+ ;;^UTILITY(U,$J,358.3,34788,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15923,1,3,0)
- ;;=3^Open Bite of Right Ear,Init Encntr
- ;;^UTILITY(U,$J,358.3,15923,1,4,0)
- ;;=4^S01.351A
- ;;^UTILITY(U,$J,358.3,15923,2)
- ;;=^5020138
- ;;^UTILITY(U,$J,358.3,15924,0)
- ;;=S51.051A^^85^829^41
- ;;^UTILITY(U,$J,358.3,15924,1,0)
+ ;;^UTILITY(U,$J,358.3,34788,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Left Shldr
+ ;;^UTILITY(U,$J,358.3,34788,1,4,0)
+ ;;=4^M06.012
+ ;;^UTILITY(U,$J,358.3,34788,2)
+ ;;=^5010049
+ ;;^UTILITY(U,$J,358.3,34789,0)
+ ;;=M06.032^^125^1643^46
+ ;;^UTILITY(U,$J,358.3,34789,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15924,1,3,0)
- ;;=3^Open Bite of Right Elbow,Init Encntr
- ;;^UTILITY(U,$J,358.3,15924,1,4,0)
- ;;=4^S51.051A
- ;;^UTILITY(U,$J,358.3,15924,2)
- ;;=^5028650
- ;;^UTILITY(U,$J,358.3,15925,0)
- ;;=S91.351A^^85^829^42
- ;;^UTILITY(U,$J,358.3,15925,1,0)
+ ;;^UTILITY(U,$J,358.3,34789,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Left Wrist
+ ;;^UTILITY(U,$J,358.3,34789,1,4,0)
+ ;;=4^M06.032
+ ;;^UTILITY(U,$J,358.3,34789,2)
+ ;;=^5010055
+ ;;^UTILITY(U,$J,358.3,34790,0)
+ ;;=M06.09^^125^1643^47
+ ;;^UTILITY(U,$J,358.3,34790,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15925,1,3,0)
- ;;=3^Open Bite of Right Foot,Init Encntr
- ;;^UTILITY(U,$J,358.3,15925,1,4,0)
- ;;=4^S91.351A
- ;;^UTILITY(U,$J,358.3,15925,2)
- ;;=^5044344
- ;;^UTILITY(U,$J,358.3,15926,0)
- ;;=S91.251A^^85^829^43
- ;;^UTILITY(U,$J,358.3,15926,1,0)
+ ;;^UTILITY(U,$J,358.3,34790,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Mult Sites
+ ;;^UTILITY(U,$J,358.3,34790,1,4,0)
+ ;;=4^M06.09
+ ;;^UTILITY(U,$J,358.3,34790,2)
+ ;;=^5010070
+ ;;^UTILITY(U,$J,358.3,34791,0)
+ ;;=M06.071^^125^1643^48
+ ;;^UTILITY(U,$J,358.3,34791,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15926,1,3,0)
- ;;=3^Open Bite of Right Great Toe w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15926,1,4,0)
- ;;=4^S91.251A
- ;;^UTILITY(U,$J,358.3,15926,2)
- ;;=^5044305
- ;;^UTILITY(U,$J,358.3,15927,0)
- ;;=S61.451A^^85^829^44
- ;;^UTILITY(U,$J,358.3,15927,1,0)
+ ;;^UTILITY(U,$J,358.3,34791,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Right Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,34791,1,4,0)
+ ;;=4^M06.071
+ ;;^UTILITY(U,$J,358.3,34791,2)
+ ;;=^5010066
+ ;;^UTILITY(U,$J,358.3,34792,0)
+ ;;=M06.021^^125^1643^49
+ ;;^UTILITY(U,$J,358.3,34792,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15927,1,3,0)
- ;;=3^Open Bite of Right Hand,Init Encntr
- ;;^UTILITY(U,$J,358.3,15927,1,4,0)
- ;;=4^S61.451A
- ;;^UTILITY(U,$J,358.3,15927,2)
- ;;=^5033011
- ;;^UTILITY(U,$J,358.3,15928,0)
- ;;=S71.051A^^85^829^45
- ;;^UTILITY(U,$J,358.3,15928,1,0)
+ ;;^UTILITY(U,$J,358.3,34792,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Right Elbow
+ ;;^UTILITY(U,$J,358.3,34792,1,4,0)
+ ;;=4^M06.021
+ ;;^UTILITY(U,$J,358.3,34792,2)
+ ;;=^5010051
+ ;;^UTILITY(U,$J,358.3,34793,0)
+ ;;=M06.041^^125^1643^50
+ ;;^UTILITY(U,$J,358.3,34793,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15928,1,3,0)
- ;;=3^Open Bite of Right Hip,Init Encntr
- ;;^UTILITY(U,$J,358.3,15928,1,4,0)
- ;;=4^S71.051A
- ;;^UTILITY(U,$J,358.3,15928,2)
- ;;=^5036999
- ;;^UTILITY(U,$J,358.3,15929,0)
- ;;=S61.350A^^85^829^46
- ;;^UTILITY(U,$J,358.3,15929,1,0)
+ ;;^UTILITY(U,$J,358.3,34793,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Right Hand
+ ;;^UTILITY(U,$J,358.3,34793,1,4,0)
+ ;;=4^M06.041
+ ;;^UTILITY(U,$J,358.3,34793,2)
+ ;;=^5010057
+ ;;^UTILITY(U,$J,358.3,34794,0)
+ ;;=M06.051^^125^1643^51
+ ;;^UTILITY(U,$J,358.3,34794,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15929,1,3,0)
- ;;=3^Open Bite of Right Index Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15929,1,4,0)
- ;;=4^S61.350A
- ;;^UTILITY(U,$J,358.3,15929,2)
- ;;=^5032966
- ;;^UTILITY(U,$J,358.3,15930,0)
- ;;=S61.250A^^85^829^47
- ;;^UTILITY(U,$J,358.3,15930,1,0)
+ ;;^UTILITY(U,$J,358.3,34794,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Right Hip
+ ;;^UTILITY(U,$J,358.3,34794,1,4,0)
+ ;;=4^M06.051
+ ;;^UTILITY(U,$J,358.3,34794,2)
+ ;;=^5010060
+ ;;^UTILITY(U,$J,358.3,34795,0)
+ ;;=M06.061^^125^1643^52
+ ;;^UTILITY(U,$J,358.3,34795,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15930,1,3,0)
- ;;=3^Open Bite of Right Index Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15930,1,4,0)
- ;;=4^S61.250A
- ;;^UTILITY(U,$J,358.3,15930,2)
- ;;=^5032861
+ ;;^UTILITY(U,$J,358.3,34795,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Right Knee
+ ;;^UTILITY(U,$J,358.3,34795,1,4,0)
+ ;;=4^M06.061
+ ;;^UTILITY(U,$J,358.3,34795,2)
+ ;;=^5010063
+ ;;^UTILITY(U,$J,358.3,34796,0)
+ ;;=M06.011^^125^1643^53
+ ;;^UTILITY(U,$J,358.3,34796,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34796,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Right Shldr
+ ;;^UTILITY(U,$J,358.3,34796,1,4,0)
+ ;;=4^M06.011
+ ;;^UTILITY(U,$J,358.3,34796,2)
+ ;;=^5010048
+ ;;^UTILITY(U,$J,358.3,34797,0)
+ ;;=M06.031^^125^1643^54
+ ;;^UTILITY(U,$J,358.3,34797,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34797,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Right Wrist
+ ;;^UTILITY(U,$J,358.3,34797,1,4,0)
+ ;;=4^M06.031
+ ;;^UTILITY(U,$J,358.3,34797,2)
+ ;;=^5010054
+ ;;^UTILITY(U,$J,358.3,34798,0)
+ ;;=M06.00^^125^1643^55
+ ;;^UTILITY(U,$J,358.3,34798,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34798,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Unspec Site
+ ;;^UTILITY(U,$J,358.3,34798,1,4,0)
+ ;;=4^M06.00
+ ;;^UTILITY(U,$J,358.3,34798,2)
+ ;;=^5010047
+ ;;^UTILITY(U,$J,358.3,34799,0)
+ ;;=M06.08^^125^1643^56
+ ;;^UTILITY(U,$J,358.3,34799,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34799,1,3,0)
+ ;;=3^Rheum Arth w/o Rheum Factor Vertebrae
+ ;;^UTILITY(U,$J,358.3,34799,1,4,0)
+ ;;=4^M06.08
+ ;;^UTILITY(U,$J,358.3,34799,2)
+ ;;=^5010069
+ ;;^UTILITY(U,$J,358.3,34800,0)
+ ;;=M06.9^^125^1643^106
+ ;;^UTILITY(U,$J,358.3,34800,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34800,1,3,0)
+ ;;=3^Rheumatoid Arthritis,Unspec
+ ;;^UTILITY(U,$J,358.3,34800,1,4,0)
+ ;;=4^M06.9
+ ;;^UTILITY(U,$J,358.3,34800,2)
+ ;;=^5010145
+ ;;^UTILITY(U,$J,358.3,34801,0)
+ ;;=M06.272^^125^1643^107
+ ;;^UTILITY(U,$J,358.3,34801,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34801,1,3,0)
+ ;;=3^Rheumatoid Bursitis Left Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,34801,1,4,0)
+ ;;=4^M06.272
+ ;;^UTILITY(U,$J,358.3,34801,2)
+ ;;=^5010092
+ ;;^UTILITY(U,$J,358.3,34802,0)
+ ;;=M06.222^^125^1643^108
+ ;;^UTILITY(U,$J,358.3,34802,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34802,1,3,0)
+ ;;=3^Rheumatoid Bursitis Left Elbow
+ ;;^UTILITY(U,$J,358.3,34802,1,4,0)
+ ;;=4^M06.222
+ ;;^UTILITY(U,$J,358.3,34802,2)
+ ;;=^5010077
+ ;;^UTILITY(U,$J,358.3,34803,0)
+ ;;=M06.242^^125^1643^109
+ ;;^UTILITY(U,$J,358.3,34803,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34803,1,3,0)
+ ;;=3^Rheumatoid Bursitis Left Hand
+ ;;^UTILITY(U,$J,358.3,34803,1,4,0)
+ ;;=4^M06.242
+ ;;^UTILITY(U,$J,358.3,34803,2)
+ ;;=^5010083
+ ;;^UTILITY(U,$J,358.3,34804,0)
+ ;;=M06.252^^125^1643^110
+ ;;^UTILITY(U,$J,358.3,34804,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34804,1,3,0)
+ ;;=3^Rheumatoid Bursitis Left Hip
+ ;;^UTILITY(U,$J,358.3,34804,1,4,0)
+ ;;=4^M06.252
+ ;;^UTILITY(U,$J,358.3,34804,2)
+ ;;=^5010086
+ ;;^UTILITY(U,$J,358.3,34805,0)
+ ;;=M06.262^^125^1643^111
+ ;;^UTILITY(U,$J,358.3,34805,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34805,1,3,0)
+ ;;=3^Rheumatoid Bursitis Left Knee
+ ;;^UTILITY(U,$J,358.3,34805,1,4,0)
+ ;;=4^M06.262
+ ;;^UTILITY(U,$J,358.3,34805,2)
+ ;;=^5010089
+ ;;^UTILITY(U,$J,358.3,34806,0)
+ ;;=M06.212^^125^1643^112
+ ;;^UTILITY(U,$J,358.3,34806,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34806,1,3,0)
+ ;;=3^Rheumatoid Bursitis Left Shoulder
+ ;;^UTILITY(U,$J,358.3,34806,1,4,0)
+ ;;=4^M06.212
+ ;;^UTILITY(U,$J,358.3,34806,2)
+ ;;=^5010074
+ ;;^UTILITY(U,$J,358.3,34807,0)
+ ;;=M06.232^^125^1643^113
+ ;;^UTILITY(U,$J,358.3,34807,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34807,1,3,0)
+ ;;=3^Rheumatoid Bursitis Left Wrist
+ ;;^UTILITY(U,$J,358.3,34807,1,4,0)
+ ;;=4^M06.232
+ ;;^UTILITY(U,$J,358.3,34807,2)
+ ;;=^5010080
+ ;;^UTILITY(U,$J,358.3,34808,0)
+ ;;=M06.29^^125^1643^114
+ ;;^UTILITY(U,$J,358.3,34808,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34808,1,3,0)
+ ;;=3^Rheumatoid Bursitis Mult Sites
+ ;;^UTILITY(U,$J,358.3,34808,1,4,0)
+ ;;=4^M06.29
+ ;;^UTILITY(U,$J,358.3,34808,2)
+ ;;=^5010095
+ ;;^UTILITY(U,$J,358.3,34809,0)
+ ;;=M06.271^^125^1643^115
+ ;;^UTILITY(U,$J,358.3,34809,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34809,1,3,0)
+ ;;=3^Rheumatoid Bursitis Right Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,34809,1,4,0)
+ ;;=4^M06.271
+ ;;^UTILITY(U,$J,358.3,34809,2)
+ ;;=^5010091
+ ;;^UTILITY(U,$J,358.3,34810,0)
+ ;;=M06.221^^125^1643^116
+ ;;^UTILITY(U,$J,358.3,34810,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34810,1,3,0)
+ ;;=3^Rheumatoid Bursitis Right Elbow
+ ;;^UTILITY(U,$J,358.3,34810,1,4,0)
+ ;;=4^M06.221
+ ;;^UTILITY(U,$J,358.3,34810,2)
+ ;;=^5010076

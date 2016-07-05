@@ -1,132 +1,282 @@
-IBDEI112 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI112 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,17098,1,0)
+ ;;^UTILITY(U,$J,358.3,37269,0)
+ ;;=L49.2^^138^1845^16
+ ;;^UTILITY(U,$J,358.3,37269,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17098,1,3,0)
- ;;=3^Nervous System Degenerative Disease,Unspec
- ;;^UTILITY(U,$J,358.3,17098,1,4,0)
- ;;=4^G31.9
- ;;^UTILITY(U,$J,358.3,17098,2)
- ;;=^5003815
- ;;^UTILITY(U,$J,358.3,17099,0)
- ;;=G50.0^^88^857^86
- ;;^UTILITY(U,$J,358.3,17099,1,0)
+ ;;^UTILITY(U,$J,358.3,37269,1,3,0)
+ ;;=3^Exfoliation d/t Erythematous Cond w/ 20-29% Body Surface
+ ;;^UTILITY(U,$J,358.3,37269,1,4,0)
+ ;;=4^L49.2
+ ;;^UTILITY(U,$J,358.3,37269,2)
+ ;;=^5009192
+ ;;^UTILITY(U,$J,358.3,37270,0)
+ ;;=L49.3^^138^1845^17
+ ;;^UTILITY(U,$J,358.3,37270,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17099,1,3,0)
- ;;=3^Neuralgia,Trigeminal
- ;;^UTILITY(U,$J,358.3,17099,1,4,0)
- ;;=4^G50.0
- ;;^UTILITY(U,$J,358.3,17099,2)
- ;;=^121978
- ;;^UTILITY(U,$J,358.3,17100,0)
- ;;=G62.81^^88^857^92
- ;;^UTILITY(U,$J,358.3,17100,1,0)
+ ;;^UTILITY(U,$J,358.3,37270,1,3,0)
+ ;;=3^Exfoliation d/t Erythematous Cond w/ 30-39% Body Surface
+ ;;^UTILITY(U,$J,358.3,37270,1,4,0)
+ ;;=4^L49.3
+ ;;^UTILITY(U,$J,358.3,37270,2)
+ ;;=^5009193
+ ;;^UTILITY(U,$J,358.3,37271,0)
+ ;;=L49.4^^138^1845^18
+ ;;^UTILITY(U,$J,358.3,37271,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17100,1,3,0)
- ;;=3^Neuropathy,Critical Illness Polyneuropathy
- ;;^UTILITY(U,$J,358.3,17100,1,4,0)
- ;;=4^G62.81
- ;;^UTILITY(U,$J,358.3,17100,2)
- ;;=^328481
- ;;^UTILITY(U,$J,358.3,17101,0)
- ;;=G62.1^^88^857^87
- ;;^UTILITY(U,$J,358.3,17101,1,0)
+ ;;^UTILITY(U,$J,358.3,37271,1,3,0)
+ ;;=3^Exfoliation d/t Erythematous Cond w/ 40-49% Body Surface
+ ;;^UTILITY(U,$J,358.3,37271,1,4,0)
+ ;;=4^L49.4
+ ;;^UTILITY(U,$J,358.3,37271,2)
+ ;;=^5009194
+ ;;^UTILITY(U,$J,358.3,37272,0)
+ ;;=L49.5^^138^1845^19
+ ;;^UTILITY(U,$J,358.3,37272,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17101,1,3,0)
- ;;=3^Neuropathy,Alcoholic Polyneuropathy
- ;;^UTILITY(U,$J,358.3,17101,1,4,0)
- ;;=4^G62.1
- ;;^UTILITY(U,$J,358.3,17101,2)
- ;;=^5004076
- ;;^UTILITY(U,$J,358.3,17102,0)
- ;;=G51.0^^88^857^88
- ;;^UTILITY(U,$J,358.3,17102,1,0)
+ ;;^UTILITY(U,$J,358.3,37272,1,3,0)
+ ;;=3^Exfoliation d/t Erythematous Cond w/ 50-59% Body Surface
+ ;;^UTILITY(U,$J,358.3,37272,1,4,0)
+ ;;=4^L49.5
+ ;;^UTILITY(U,$J,358.3,37272,2)
+ ;;=^5009195
+ ;;^UTILITY(U,$J,358.3,37273,0)
+ ;;=L49.6^^138^1845^20
+ ;;^UTILITY(U,$J,358.3,37273,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17102,1,3,0)
- ;;=3^Neuropathy,Bell's Palsy
- ;;^UTILITY(U,$J,358.3,17102,1,4,0)
- ;;=4^G51.0
- ;;^UTILITY(U,$J,358.3,17102,2)
- ;;=^13238
- ;;^UTILITY(U,$J,358.3,17103,0)
- ;;=G56.01^^88^857^90
- ;;^UTILITY(U,$J,358.3,17103,1,0)
+ ;;^UTILITY(U,$J,358.3,37273,1,3,0)
+ ;;=3^Exfoliation d/t Erythematous Cond w/ 60-69% Body Surface
+ ;;^UTILITY(U,$J,358.3,37273,1,4,0)
+ ;;=4^L49.6
+ ;;^UTILITY(U,$J,358.3,37273,2)
+ ;;=^5009196
+ ;;^UTILITY(U,$J,358.3,37274,0)
+ ;;=L49.7^^138^1845^21
+ ;;^UTILITY(U,$J,358.3,37274,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17103,1,3,0)
- ;;=3^Neuropathy,Carpal Tunnel Syndrome,Rt Upper Limb
- ;;^UTILITY(U,$J,358.3,17103,1,4,0)
- ;;=4^G56.01
- ;;^UTILITY(U,$J,358.3,17103,2)
- ;;=^5004018
- ;;^UTILITY(U,$J,358.3,17104,0)
- ;;=G56.02^^88^857^89
- ;;^UTILITY(U,$J,358.3,17104,1,0)
+ ;;^UTILITY(U,$J,358.3,37274,1,3,0)
+ ;;=3^Exfoliation d/t Erythematous Cond w/ 70-79% Body Surface
+ ;;^UTILITY(U,$J,358.3,37274,1,4,0)
+ ;;=4^L49.7
+ ;;^UTILITY(U,$J,358.3,37274,2)
+ ;;=^5009197
+ ;;^UTILITY(U,$J,358.3,37275,0)
+ ;;=L49.8^^138^1845^22
+ ;;^UTILITY(U,$J,358.3,37275,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17104,1,3,0)
- ;;=3^Neuropathy,Carpal Tunnel Syndrome,Lt Upper Limb
- ;;^UTILITY(U,$J,358.3,17104,1,4,0)
- ;;=4^G56.02
- ;;^UTILITY(U,$J,358.3,17104,2)
- ;;=^5004019
- ;;^UTILITY(U,$J,358.3,17105,0)
- ;;=G52.9^^88^857^91
- ;;^UTILITY(U,$J,358.3,17105,1,0)
+ ;;^UTILITY(U,$J,358.3,37275,1,3,0)
+ ;;=3^Exfoliation d/t Erythematous Cond w/ 80-89% Body Surface
+ ;;^UTILITY(U,$J,358.3,37275,1,4,0)
+ ;;=4^L49.8
+ ;;^UTILITY(U,$J,358.3,37275,2)
+ ;;=^5009198
+ ;;^UTILITY(U,$J,358.3,37276,0)
+ ;;=L49.9^^138^1845^25
+ ;;^UTILITY(U,$J,358.3,37276,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17105,1,3,0)
- ;;=3^Neuropathy,Cranial Nerve Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,17105,1,4,0)
- ;;=4^G52.9
- ;;^UTILITY(U,$J,358.3,17105,2)
- ;;=^5004005
- ;;^UTILITY(U,$J,358.3,17106,0)
- ;;=G51.9^^88^857^95
- ;;^UTILITY(U,$J,358.3,17106,1,0)
+ ;;^UTILITY(U,$J,358.3,37276,1,3,0)
+ ;;=3^Exfoliation d/t Erythematous Cond w/ > 89% Body Surface
+ ;;^UTILITY(U,$J,358.3,37276,1,4,0)
+ ;;=4^L49.9
+ ;;^UTILITY(U,$J,358.3,37276,2)
+ ;;=^5009199
+ ;;^UTILITY(U,$J,358.3,37277,0)
+ ;;=Z65.5^^138^1845^26
+ ;;^UTILITY(U,$J,358.3,37277,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17106,1,3,0)
- ;;=3^Neuropathy,Facial Nerve Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,17106,1,4,0)
- ;;=4^G51.9
- ;;^UTILITY(U,$J,358.3,17106,2)
- ;;=^5003998
- ;;^UTILITY(U,$J,358.3,17107,0)
- ;;=G62.0^^88^857^93
- ;;^UTILITY(U,$J,358.3,17107,1,0)
+ ;;^UTILITY(U,$J,358.3,37277,1,3,0)
+ ;;=3^Exposure to Disaster/War/Hostilities
+ ;;^UTILITY(U,$J,358.3,37277,1,4,0)
+ ;;=4^Z65.5
+ ;;^UTILITY(U,$J,358.3,37277,2)
+ ;;=^5063184
+ ;;^UTILITY(U,$J,358.3,37278,0)
+ ;;=Z77.22^^138^1845^27
+ ;;^UTILITY(U,$J,358.3,37278,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17107,1,3,0)
- ;;=3^Neuropathy,Drug-Induced Polyneuropathy
- ;;^UTILITY(U,$J,358.3,17107,1,4,0)
- ;;=4^G62.0
- ;;^UTILITY(U,$J,358.3,17107,2)
- ;;=^5004075
- ;;^UTILITY(U,$J,358.3,17108,0)
- ;;=G61.0^^88^857^96
- ;;^UTILITY(U,$J,358.3,17108,1,0)
+ ;;^UTILITY(U,$J,358.3,37278,1,3,0)
+ ;;=3^Exposure to/Contact w/ Environmental Tobacco Smoke
+ ;;^UTILITY(U,$J,358.3,37278,1,4,0)
+ ;;=4^Z77.22
+ ;;^UTILITY(U,$J,358.3,37278,2)
+ ;;=^5063324
+ ;;^UTILITY(U,$J,358.3,37279,0)
+ ;;=L30.9^^138^1845^5
+ ;;^UTILITY(U,$J,358.3,37279,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17108,1,3,0)
- ;;=3^Neuropathy,Guillain-Barre Syndrome
- ;;^UTILITY(U,$J,358.3,17108,1,4,0)
- ;;=4^G61.0
- ;;^UTILITY(U,$J,358.3,17108,2)
- ;;=^53405
- ;;^UTILITY(U,$J,358.3,17109,0)
- ;;=G60.9^^88^857^97
- ;;^UTILITY(U,$J,358.3,17109,1,0)
+ ;;^UTILITY(U,$J,358.3,37279,1,3,0)
+ ;;=3^Eczema,Unspec
+ ;;^UTILITY(U,$J,358.3,37279,1,4,0)
+ ;;=4^L30.9
+ ;;^UTILITY(U,$J,358.3,37279,2)
+ ;;=^5009159
+ ;;^UTILITY(U,$J,358.3,37280,0)
+ ;;=L23.9^^138^1845^2
+ ;;^UTILITY(U,$J,358.3,37280,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17109,1,3,0)
- ;;=3^Neuropathy,Hereditary/Idiopathic,Unspec
- ;;^UTILITY(U,$J,358.3,17109,1,4,0)
- ;;=4^G60.9
- ;;^UTILITY(U,$J,358.3,17109,2)
- ;;=^5004071
- ;;^UTILITY(U,$J,358.3,17110,0)
- ;;=G61.9^^88^857^98
- ;;^UTILITY(U,$J,358.3,17110,1,0)
+ ;;^UTILITY(U,$J,358.3,37280,1,3,0)
+ ;;=3^Eczema,Allergic Contact,Unspec
+ ;;^UTILITY(U,$J,358.3,37280,1,4,0)
+ ;;=4^L23.9
+ ;;^UTILITY(U,$J,358.3,37280,2)
+ ;;=^5009125
+ ;;^UTILITY(U,$J,358.3,37281,0)
+ ;;=L20.82^^138^1845^3
+ ;;^UTILITY(U,$J,358.3,37281,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17110,1,3,0)
- ;;=3^Neuropathy,Inflammatory Polyneuropathy,Unspec
- ;;^UTILITY(U,$J,358.3,17110,1,4,0)
- ;;=4^G61.9
- ;;^UTILITY(U,$J,358.3,17110,2)
- ;;=^5004074
+ ;;^UTILITY(U,$J,358.3,37281,1,3,0)
+ ;;=3^Eczema,Flexural
+ ;;^UTILITY(U,$J,358.3,37281,1,4,0)
+ ;;=4^L20.82
+ ;;^UTILITY(U,$J,358.3,37281,2)
+ ;;=^5009109
+ ;;^UTILITY(U,$J,358.3,37282,0)
+ ;;=L20.84^^138^1845^4
+ ;;^UTILITY(U,$J,358.3,37282,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37282,1,3,0)
+ ;;=3^Eczema,Intrinsic
+ ;;^UTILITY(U,$J,358.3,37282,1,4,0)
+ ;;=4^L20.84
+ ;;^UTILITY(U,$J,358.3,37282,2)
+ ;;=^5009111
+ ;;^UTILITY(U,$J,358.3,37283,0)
+ ;;=L51.8^^138^1845^10
+ ;;^UTILITY(U,$J,358.3,37283,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37283,1,3,0)
+ ;;=3^Erythema Multiforme,Other
+ ;;^UTILITY(U,$J,358.3,37283,1,4,0)
+ ;;=4^L51.8
+ ;;^UTILITY(U,$J,358.3,37283,2)
+ ;;=^336639
+ ;;^UTILITY(U,$J,358.3,37284,0)
+ ;;=R23.4^^138^1845^14
+ ;;^UTILITY(U,$J,358.3,37284,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37284,1,3,0)
+ ;;=3^Eschar/Desquamination of Skin
+ ;;^UTILITY(U,$J,358.3,37284,1,4,0)
+ ;;=4^R23.4
+ ;;^UTILITY(U,$J,358.3,37284,2)
+ ;;=^5019296
+ ;;^UTILITY(U,$J,358.3,37285,0)
+ ;;=L49.9^^138^1845^23
+ ;;^UTILITY(U,$J,358.3,37285,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37285,1,3,0)
+ ;;=3^Exfoliation d/t Erythematous Cond w/ 90% or More Body Surface
+ ;;^UTILITY(U,$J,358.3,37285,1,4,0)
+ ;;=4^L49.9
+ ;;^UTILITY(U,$J,358.3,37285,2)
+ ;;=^5009199
+ ;;^UTILITY(U,$J,358.3,37286,0)
+ ;;=L74.9^^138^1845^1
+ ;;^UTILITY(U,$J,358.3,37286,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37286,1,3,0)
+ ;;=3^Eccrine Sweat Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,37286,1,4,0)
+ ;;=4^L74.9
+ ;;^UTILITY(U,$J,358.3,37286,2)
+ ;;=^5009296
+ ;;^UTILITY(U,$J,358.3,37287,0)
+ ;;=L92.3^^138^1846^1
+ ;;^UTILITY(U,$J,358.3,37287,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37287,1,3,0)
+ ;;=3^FB Granuloma Skin/Subcutaneous Tissue
+ ;;^UTILITY(U,$J,358.3,37287,1,4,0)
+ ;;=4^L92.3
+ ;;^UTILITY(U,$J,358.3,37287,2)
+ ;;=^5009464
+ ;;^UTILITY(U,$J,358.3,37288,0)
+ ;;=L66.2^^138^1846^3
+ ;;^UTILITY(U,$J,358.3,37288,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37288,1,3,0)
+ ;;=3^Folliculitis Decalvans
+ ;;^UTILITY(U,$J,358.3,37288,1,4,0)
+ ;;=4^L66.2
+ ;;^UTILITY(U,$J,358.3,37288,2)
+ ;;=^5009254
+ ;;^UTILITY(U,$J,358.3,37289,0)
+ ;;=L73.9^^138^1846^2
+ ;;^UTILITY(U,$J,358.3,37289,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37289,1,3,0)
+ ;;=3^Follicular Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,37289,1,4,0)
+ ;;=4^L73.9
+ ;;^UTILITY(U,$J,358.3,37289,2)
+ ;;=^5009286
+ ;;^UTILITY(U,$J,358.3,37290,0)
+ ;;=L02.221^^138^1846^4
+ ;;^UTILITY(U,$J,358.3,37290,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37290,1,3,0)
+ ;;=3^Furuncle,Abdominal Wall
+ ;;^UTILITY(U,$J,358.3,37290,1,4,0)
+ ;;=4^L02.221
+ ;;^UTILITY(U,$J,358.3,37290,2)
+ ;;=^5008957
+ ;;^UTILITY(U,$J,358.3,37291,0)
+ ;;=L02.222^^138^1846^5
+ ;;^UTILITY(U,$J,358.3,37291,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37291,1,3,0)
+ ;;=3^Furuncle,Back
+ ;;^UTILITY(U,$J,358.3,37291,1,4,0)
+ ;;=4^L02.222
+ ;;^UTILITY(U,$J,358.3,37291,2)
+ ;;=^5008958
+ ;;^UTILITY(U,$J,358.3,37292,0)
+ ;;=L02.223^^138^1846^6
+ ;;^UTILITY(U,$J,358.3,37292,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37292,1,3,0)
+ ;;=3^Furuncle,Chest Wall
+ ;;^UTILITY(U,$J,358.3,37292,1,4,0)
+ ;;=4^L02.223
+ ;;^UTILITY(U,$J,358.3,37292,2)
+ ;;=^5008959
+ ;;^UTILITY(U,$J,358.3,37293,0)
+ ;;=L02.224^^138^1846^7
+ ;;^UTILITY(U,$J,358.3,37293,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37293,1,3,0)
+ ;;=3^Furuncle,Groin
+ ;;^UTILITY(U,$J,358.3,37293,1,4,0)
+ ;;=4^L02.224
+ ;;^UTILITY(U,$J,358.3,37293,2)
+ ;;=^5008960
+ ;;^UTILITY(U,$J,358.3,37294,0)
+ ;;=L02.422^^138^1846^8
+ ;;^UTILITY(U,$J,358.3,37294,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37294,1,3,0)
+ ;;=3^Furuncle,Left Axilla
+ ;;^UTILITY(U,$J,358.3,37294,1,4,0)
+ ;;=4^L02.422
+ ;;^UTILITY(U,$J,358.3,37294,2)
+ ;;=^5008981
+ ;;^UTILITY(U,$J,358.3,37295,0)
+ ;;=L02.421^^138^1846^11
+ ;;^UTILITY(U,$J,358.3,37295,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37295,1,3,0)
+ ;;=3^Furuncle,Right Axilla
+ ;;^UTILITY(U,$J,358.3,37295,1,4,0)
+ ;;=4^L02.421
+ ;;^UTILITY(U,$J,358.3,37295,2)
+ ;;=^5008980
+ ;;^UTILITY(U,$J,358.3,37296,0)
+ ;;=L02.426^^138^1846^9
+ ;;^UTILITY(U,$J,358.3,37296,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37296,1,3,0)
+ ;;=3^Furuncle,Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,37296,1,4,0)
+ ;;=4^L02.426

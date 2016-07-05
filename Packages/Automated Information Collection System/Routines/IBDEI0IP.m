@@ -1,134 +1,286 @@
-IBDEI0IP ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0IP ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8402,1,0)
+ ;;^UTILITY(U,$J,358.3,18838,1,4,0)
+ ;;=4^H60.12
+ ;;^UTILITY(U,$J,358.3,18838,2)
+ ;;=^5006441
+ ;;^UTILITY(U,$J,358.3,18839,0)
+ ;;=H60.13^^84^968^16
+ ;;^UTILITY(U,$J,358.3,18839,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8402,1,3,0)
- ;;=3^Carcinoma in situ of bladder
- ;;^UTILITY(U,$J,358.3,8402,1,4,0)
- ;;=4^D09.0
- ;;^UTILITY(U,$J,358.3,8402,2)
- ;;=^267742
- ;;^UTILITY(U,$J,358.3,8403,0)
- ;;=D45.^^55^538^93
- ;;^UTILITY(U,$J,358.3,8403,1,0)
+ ;;^UTILITY(U,$J,358.3,18839,1,3,0)
+ ;;=3^Cellulitis of Bilateral External Ear
+ ;;^UTILITY(U,$J,358.3,18839,1,4,0)
+ ;;=4^H60.13
+ ;;^UTILITY(U,$J,358.3,18839,2)
+ ;;=^5006442
+ ;;^UTILITY(U,$J,358.3,18840,0)
+ ;;=H60.311^^84^968^45
+ ;;^UTILITY(U,$J,358.3,18840,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8403,1,3,0)
- ;;=3^Polycythemia vera
- ;;^UTILITY(U,$J,358.3,8403,1,4,0)
- ;;=4^D45.
- ;;^UTILITY(U,$J,358.3,8403,2)
- ;;=^96105
- ;;^UTILITY(U,$J,358.3,8404,0)
- ;;=C94.40^^55^538^7
- ;;^UTILITY(U,$J,358.3,8404,1,0)
+ ;;^UTILITY(U,$J,358.3,18840,1,3,0)
+ ;;=3^Diffuse Otitis Externa of Right Ear
+ ;;^UTILITY(U,$J,358.3,18840,1,4,0)
+ ;;=4^H60.311
+ ;;^UTILITY(U,$J,358.3,18840,2)
+ ;;=^5006447
+ ;;^UTILITY(U,$J,358.3,18841,0)
+ ;;=H60.312^^84^968^44
+ ;;^UTILITY(U,$J,358.3,18841,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8404,1,3,0)
- ;;=3^Acute panmyelosis w myelofibrosis not achieve remission
- ;;^UTILITY(U,$J,358.3,8404,1,4,0)
- ;;=4^C94.40
- ;;^UTILITY(U,$J,358.3,8404,2)
- ;;=^5001843
- ;;^UTILITY(U,$J,358.3,8405,0)
- ;;=C94.41^^55^538^8
- ;;^UTILITY(U,$J,358.3,8405,1,0)
+ ;;^UTILITY(U,$J,358.3,18841,1,3,0)
+ ;;=3^Diffuse Otitis Externa of Left Ear
+ ;;^UTILITY(U,$J,358.3,18841,1,4,0)
+ ;;=4^H60.312
+ ;;^UTILITY(U,$J,358.3,18841,2)
+ ;;=^5006448
+ ;;^UTILITY(U,$J,358.3,18842,0)
+ ;;=H60.313^^84^968^43
+ ;;^UTILITY(U,$J,358.3,18842,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8405,1,3,0)
- ;;=3^Acute panmyelosis w myelofibrosis, in remission
- ;;^UTILITY(U,$J,358.3,8405,1,4,0)
- ;;=4^C94.41
- ;;^UTILITY(U,$J,358.3,8405,2)
- ;;=^5001844
- ;;^UTILITY(U,$J,358.3,8406,0)
- ;;=C94.42^^55^538^9
- ;;^UTILITY(U,$J,358.3,8406,1,0)
+ ;;^UTILITY(U,$J,358.3,18842,1,3,0)
+ ;;=3^Diffuse Otitis Externa of Bilateral Ears
+ ;;^UTILITY(U,$J,358.3,18842,1,4,0)
+ ;;=4^H60.313
+ ;;^UTILITY(U,$J,358.3,18842,2)
+ ;;=^5006449
+ ;;^UTILITY(U,$J,358.3,18843,0)
+ ;;=H60.391^^84^968^68
+ ;;^UTILITY(U,$J,358.3,18843,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8406,1,3,0)
- ;;=3^Acute panmyelosis w myelofibrosis, in relapse
- ;;^UTILITY(U,$J,358.3,8406,1,4,0)
- ;;=4^C94.42
- ;;^UTILITY(U,$J,358.3,8406,2)
- ;;=^5001845
- ;;^UTILITY(U,$J,358.3,8407,0)
- ;;=D47.1^^55^538^27
- ;;^UTILITY(U,$J,358.3,8407,1,0)
+ ;;^UTILITY(U,$J,358.3,18843,1,3,0)
+ ;;=3^Infective Otitis Externa of Right Ear NEC
+ ;;^UTILITY(U,$J,358.3,18843,1,4,0)
+ ;;=4^H60.391
+ ;;^UTILITY(U,$J,358.3,18843,2)
+ ;;=^5006459
+ ;;^UTILITY(U,$J,358.3,18844,0)
+ ;;=H60.392^^84^968^67
+ ;;^UTILITY(U,$J,358.3,18844,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8407,1,3,0)
- ;;=3^Chronic myeloproliferative disease
- ;;^UTILITY(U,$J,358.3,8407,1,4,0)
- ;;=4^D47.1
- ;;^UTILITY(U,$J,358.3,8407,2)
- ;;=^5002256
- ;;^UTILITY(U,$J,358.3,8408,0)
- ;;=D47.9^^55^538^90
- ;;^UTILITY(U,$J,358.3,8408,1,0)
+ ;;^UTILITY(U,$J,358.3,18844,1,3,0)
+ ;;=3^Infective Otitis Externa of Left Ear NEC
+ ;;^UTILITY(U,$J,358.3,18844,1,4,0)
+ ;;=4^H60.392
+ ;;^UTILITY(U,$J,358.3,18844,2)
+ ;;=^5006460
+ ;;^UTILITY(U,$J,358.3,18845,0)
+ ;;=H60.393^^84^968^66
+ ;;^UTILITY(U,$J,358.3,18845,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8408,1,3,0)
- ;;=3^Neoplm of uncrt behav of lymphoid,hematpoetc & rel tiss,unsp
- ;;^UTILITY(U,$J,358.3,8408,1,4,0)
- ;;=4^D47.9
- ;;^UTILITY(U,$J,358.3,8408,2)
- ;;=^5002260
- ;;^UTILITY(U,$J,358.3,8409,0)
- ;;=C88.0^^55^538^134
- ;;^UTILITY(U,$J,358.3,8409,1,0)
+ ;;^UTILITY(U,$J,358.3,18845,1,3,0)
+ ;;=3^Infective Otitis Externa of Bilateral Ears NEC
+ ;;^UTILITY(U,$J,358.3,18845,1,4,0)
+ ;;=4^H60.393
+ ;;^UTILITY(U,$J,358.3,18845,2)
+ ;;=^5006461
+ ;;^UTILITY(U,$J,358.3,18846,0)
+ ;;=H60.01^^84^968^3
+ ;;^UTILITY(U,$J,358.3,18846,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8409,1,3,0)
- ;;=3^Waldenstrom macroglobulinemia
- ;;^UTILITY(U,$J,358.3,8409,1,4,0)
- ;;=4^C88.0
- ;;^UTILITY(U,$J,358.3,8409,2)
- ;;=^5001748
- ;;^UTILITY(U,$J,358.3,8410,0)
- ;;=D50.0^^55^538^41
- ;;^UTILITY(U,$J,358.3,8410,1,0)
+ ;;^UTILITY(U,$J,358.3,18846,1,3,0)
+ ;;=3^Abscess of Right External Ear
+ ;;^UTILITY(U,$J,358.3,18846,1,4,0)
+ ;;=4^H60.01
+ ;;^UTILITY(U,$J,358.3,18846,2)
+ ;;=^5006436
+ ;;^UTILITY(U,$J,358.3,18847,0)
+ ;;=H60.02^^84^968^2
+ ;;^UTILITY(U,$J,358.3,18847,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8410,1,3,0)
- ;;=3^Iron deficiency anemia secondary to blood loss (chronic)
- ;;^UTILITY(U,$J,358.3,8410,1,4,0)
- ;;=4^D50.0
- ;;^UTILITY(U,$J,358.3,8410,2)
- ;;=^267971
- ;;^UTILITY(U,$J,358.3,8411,0)
- ;;=D50.9^^55^538^42
- ;;^UTILITY(U,$J,358.3,8411,1,0)
+ ;;^UTILITY(U,$J,358.3,18847,1,3,0)
+ ;;=3^Abscess of Left External Ear
+ ;;^UTILITY(U,$J,358.3,18847,1,4,0)
+ ;;=4^H60.02
+ ;;^UTILITY(U,$J,358.3,18847,2)
+ ;;=^5006437
+ ;;^UTILITY(U,$J,358.3,18848,0)
+ ;;=H60.03^^84^968^1
+ ;;^UTILITY(U,$J,358.3,18848,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8411,1,3,0)
- ;;=3^Iron deficiency anemia, unspecified
- ;;^UTILITY(U,$J,358.3,8411,1,4,0)
- ;;=4^D50.9
- ;;^UTILITY(U,$J,358.3,8411,2)
- ;;=^5002283
- ;;^UTILITY(U,$J,358.3,8412,0)
- ;;=D51.0^^55^538^131
- ;;^UTILITY(U,$J,358.3,8412,1,0)
+ ;;^UTILITY(U,$J,358.3,18848,1,3,0)
+ ;;=3^Abscess of Bilateral External Ears
+ ;;^UTILITY(U,$J,358.3,18848,1,4,0)
+ ;;=4^H60.03
+ ;;^UTILITY(U,$J,358.3,18848,2)
+ ;;=^5006438
+ ;;^UTILITY(U,$J,358.3,18849,0)
+ ;;=H60.91^^84^968^84
+ ;;^UTILITY(U,$J,358.3,18849,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8412,1,3,0)
- ;;=3^Vit B12 defic anemia d/t intrinsic factor deficiency
- ;;^UTILITY(U,$J,358.3,8412,1,4,0)
- ;;=4^D51.0
- ;;^UTILITY(U,$J,358.3,8412,2)
- ;;=^5002284
- ;;^UTILITY(U,$J,358.3,8413,0)
- ;;=D51.1^^55^538^132
- ;;^UTILITY(U,$J,358.3,8413,1,0)
+ ;;^UTILITY(U,$J,358.3,18849,1,3,0)
+ ;;=3^Otitis Externa of Right Ear,Unspec
+ ;;^UTILITY(U,$J,358.3,18849,1,4,0)
+ ;;=4^H60.91
+ ;;^UTILITY(U,$J,358.3,18849,2)
+ ;;=^5133524
+ ;;^UTILITY(U,$J,358.3,18850,0)
+ ;;=H60.92^^84^968^83
+ ;;^UTILITY(U,$J,358.3,18850,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8413,1,3,0)
- ;;=3^Vit B12 defic anemia d/t slctv vit B12 malabsorp w protein
- ;;^UTILITY(U,$J,358.3,8413,1,4,0)
- ;;=4^D51.1
- ;;^UTILITY(U,$J,358.3,8413,2)
- ;;=^5002285
- ;;^UTILITY(U,$J,358.3,8414,0)
- ;;=D53.9^^55^538^91
- ;;^UTILITY(U,$J,358.3,8414,1,0)
+ ;;^UTILITY(U,$J,358.3,18850,1,3,0)
+ ;;=3^Otitis Externa of Left Ear,Unspec
+ ;;^UTILITY(U,$J,358.3,18850,1,4,0)
+ ;;=4^H60.92
+ ;;^UTILITY(U,$J,358.3,18850,2)
+ ;;=^5133525
+ ;;^UTILITY(U,$J,358.3,18851,0)
+ ;;=H60.93^^84^968^82
+ ;;^UTILITY(U,$J,358.3,18851,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8414,1,3,0)
- ;;=3^Nutritional anemia, unspecified
- ;;^UTILITY(U,$J,358.3,8414,1,4,0)
- ;;=4^D53.9
- ;;^UTILITY(U,$J,358.3,8414,2)
- ;;=^5002298
- ;;^UTILITY(U,$J,358.3,8415,0)
- ;;=D57.1^^55^538^128
+ ;;^UTILITY(U,$J,358.3,18851,1,3,0)
+ ;;=3^Otitis Externa of Bilateral Ears,Unspec
+ ;;^UTILITY(U,$J,358.3,18851,1,4,0)
+ ;;=4^H60.93
+ ;;^UTILITY(U,$J,358.3,18851,2)
+ ;;=^5006498
+ ;;^UTILITY(U,$J,358.3,18852,0)
+ ;;=H83.01^^84^968^73
+ ;;^UTILITY(U,$J,358.3,18852,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18852,1,3,0)
+ ;;=3^Labyrinthitis of Right Ear
+ ;;^UTILITY(U,$J,358.3,18852,1,4,0)
+ ;;=4^H83.01
+ ;;^UTILITY(U,$J,358.3,18852,2)
+ ;;=^5006894
+ ;;^UTILITY(U,$J,358.3,18853,0)
+ ;;=H83.02^^84^968^72
+ ;;^UTILITY(U,$J,358.3,18853,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18853,1,3,0)
+ ;;=3^Labyrinthitis of Left Ear
+ ;;^UTILITY(U,$J,358.3,18853,1,4,0)
+ ;;=4^H83.02
+ ;;^UTILITY(U,$J,358.3,18853,2)
+ ;;=^5006895
+ ;;^UTILITY(U,$J,358.3,18854,0)
+ ;;=H83.03^^84^968^71
+ ;;^UTILITY(U,$J,358.3,18854,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18854,1,3,0)
+ ;;=3^Labyrinthitis of Bilateral Ears
+ ;;^UTILITY(U,$J,358.3,18854,1,4,0)
+ ;;=4^H83.03
+ ;;^UTILITY(U,$J,358.3,18854,2)
+ ;;=^5006896
+ ;;^UTILITY(U,$J,358.3,18855,0)
+ ;;=I38.^^84^968^47
+ ;;^UTILITY(U,$J,358.3,18855,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18855,1,3,0)
+ ;;=3^Endocarditis,Valve Unspec
+ ;;^UTILITY(U,$J,358.3,18855,1,4,0)
+ ;;=4^I38.
+ ;;^UTILITY(U,$J,358.3,18855,2)
+ ;;=^40327
+ ;;^UTILITY(U,$J,358.3,18856,0)
+ ;;=J00.^^84^968^6
+ ;;^UTILITY(U,$J,358.3,18856,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18856,1,3,0)
+ ;;=3^Acute Nasopharyngitis
+ ;;^UTILITY(U,$J,358.3,18856,1,4,0)
+ ;;=4^J00.
+ ;;^UTILITY(U,$J,358.3,18856,2)
+ ;;=^5008115
+ ;;^UTILITY(U,$J,358.3,18857,0)
+ ;;=J01.90^^84^968^9
+ ;;^UTILITY(U,$J,358.3,18857,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18857,1,3,0)
+ ;;=3^Acute Sinusitis,Unspec
+ ;;^UTILITY(U,$J,358.3,18857,1,4,0)
+ ;;=4^J01.90
+ ;;^UTILITY(U,$J,358.3,18857,2)
+ ;;=^5008127
+ ;;^UTILITY(U,$J,358.3,18858,0)
+ ;;=J02.9^^84^968^8
+ ;;^UTILITY(U,$J,358.3,18858,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18858,1,3,0)
+ ;;=3^Acute Pharyngitis,Unspec
+ ;;^UTILITY(U,$J,358.3,18858,1,4,0)
+ ;;=4^J02.9
+ ;;^UTILITY(U,$J,358.3,18858,2)
+ ;;=^5008130
+ ;;^UTILITY(U,$J,358.3,18859,0)
+ ;;=J03.90^^84^968^10
+ ;;^UTILITY(U,$J,358.3,18859,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18859,1,3,0)
+ ;;=3^Acute Tonsillitis,Unspec
+ ;;^UTILITY(U,$J,358.3,18859,1,4,0)
+ ;;=4^J03.90
+ ;;^UTILITY(U,$J,358.3,18859,2)
+ ;;=^5008135
+ ;;^UTILITY(U,$J,358.3,18860,0)
+ ;;=J04.0^^84^968^5
+ ;;^UTILITY(U,$J,358.3,18860,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18860,1,3,0)
+ ;;=3^Acute Laryngitis
+ ;;^UTILITY(U,$J,358.3,18860,1,4,0)
+ ;;=4^J04.0
+ ;;^UTILITY(U,$J,358.3,18860,2)
+ ;;=^5008137
+ ;;^UTILITY(U,$J,358.3,18861,0)
+ ;;=J06.9^^84^968^11
+ ;;^UTILITY(U,$J,358.3,18861,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18861,1,3,0)
+ ;;=3^Acute Upper Respiratory Infection,Unspec
+ ;;^UTILITY(U,$J,358.3,18861,1,4,0)
+ ;;=4^J06.9
+ ;;^UTILITY(U,$J,358.3,18861,2)
+ ;;=^5008143
+ ;;^UTILITY(U,$J,358.3,18862,0)
+ ;;=J20.9^^84^968^4
+ ;;^UTILITY(U,$J,358.3,18862,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18862,1,3,0)
+ ;;=3^Acute Bronchitis,Unspec
+ ;;^UTILITY(U,$J,358.3,18862,1,4,0)
+ ;;=4^J20.9
+ ;;^UTILITY(U,$J,358.3,18862,2)
+ ;;=^5008195
+ ;;^UTILITY(U,$J,358.3,18863,0)
+ ;;=J32.9^^84^968^35
+ ;;^UTILITY(U,$J,358.3,18863,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18863,1,3,0)
+ ;;=3^Chronic Sinusitis,Unspec
+ ;;^UTILITY(U,$J,358.3,18863,1,4,0)
+ ;;=4^J32.9
+ ;;^UTILITY(U,$J,358.3,18863,2)
+ ;;=^5008207
+ ;;^UTILITY(U,$J,358.3,18864,0)
+ ;;=J18.9^^84^968^86
+ ;;^UTILITY(U,$J,358.3,18864,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18864,1,3,0)
+ ;;=3^Pneumonia,Unspec Organism
+ ;;^UTILITY(U,$J,358.3,18864,1,4,0)
+ ;;=4^J18.9
+ ;;^UTILITY(U,$J,358.3,18864,2)
+ ;;=^95632
+ ;;^UTILITY(U,$J,358.3,18865,0)
+ ;;=J11.00^^84^968^55
+ ;;^UTILITY(U,$J,358.3,18865,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18865,1,3,0)
+ ;;=3^Flu d/t Unidentified Flu Virus w/ Unspec Type of Pneumonia
+ ;;^UTILITY(U,$J,358.3,18865,1,4,0)
+ ;;=4^J11.00
+ ;;^UTILITY(U,$J,358.3,18865,2)
+ ;;=^5008156
+ ;;^UTILITY(U,$J,358.3,18866,0)
+ ;;=J10.1^^84^968^53
+ ;;^UTILITY(U,$J,358.3,18866,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18866,1,3,0)
+ ;;=3^Flu d/t Indentified Flu Virus w/ Respiratory Manifestations
+ ;;^UTILITY(U,$J,358.3,18866,1,4,0)
+ ;;=4^J10.1

@@ -1,128 +1,294 @@
-IBDEI0DR ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0DR ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,5998,2)
- ;;=^5007593
- ;;^UTILITY(U,$J,358.3,5999,0)
- ;;=I70.239^^40^383^28
- ;;^UTILITY(U,$J,358.3,5999,1,0)
+ ;;^UTILITY(U,$J,358.3,13752,1,4,0)
+ ;;=4^I10.
+ ;;^UTILITY(U,$J,358.3,13752,2)
+ ;;=^5007062
+ ;;^UTILITY(U,$J,358.3,13753,0)
+ ;;=I50.9^^61^724^14
+ ;;^UTILITY(U,$J,358.3,13753,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5999,1,3,0)
- ;;=3^Athscl Native Arteries of Right Leg w/ Ulcer,Unspec Site
- ;;^UTILITY(U,$J,358.3,5999,1,4,0)
- ;;=4^I70.239
- ;;^UTILITY(U,$J,358.3,5999,2)
- ;;=^5007594
- ;;^UTILITY(U,$J,358.3,6000,0)
- ;;=I70.241^^40^383^20
- ;;^UTILITY(U,$J,358.3,6000,1,0)
+ ;;^UTILITY(U,$J,358.3,13753,1,3,0)
+ ;;=3^Congestive Heart Failure,Unspec
+ ;;^UTILITY(U,$J,358.3,13753,1,4,0)
+ ;;=4^I50.9
+ ;;^UTILITY(U,$J,358.3,13753,2)
+ ;;=^5007251
+ ;;^UTILITY(U,$J,358.3,13754,0)
+ ;;=I67.89^^61^724^13
+ ;;^UTILITY(U,$J,358.3,13754,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6000,1,3,0)
- ;;=3^Athscl Native Arteries of Left Leg w/ Thigh Ulcer
- ;;^UTILITY(U,$J,358.3,6000,1,4,0)
- ;;=4^I70.241
- ;;^UTILITY(U,$J,358.3,6000,2)
- ;;=^5007595
- ;;^UTILITY(U,$J,358.3,6001,0)
- ;;=I70.242^^40^383^16
- ;;^UTILITY(U,$J,358.3,6001,1,0)
+ ;;^UTILITY(U,$J,358.3,13754,1,3,0)
+ ;;=3^Cerebrovascular Disease,Oth
+ ;;^UTILITY(U,$J,358.3,13754,1,4,0)
+ ;;=4^I67.89
+ ;;^UTILITY(U,$J,358.3,13754,2)
+ ;;=^5007388
+ ;;^UTILITY(U,$J,358.3,13755,0)
+ ;;=J32.8^^61^724^50
+ ;;^UTILITY(U,$J,358.3,13755,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6001,1,3,0)
- ;;=3^Athscl Native Arteries of Left Leg w/ Calf Ulcer
- ;;^UTILITY(U,$J,358.3,6001,1,4,0)
- ;;=4^I70.242
- ;;^UTILITY(U,$J,358.3,6001,2)
- ;;=^5007596
- ;;^UTILITY(U,$J,358.3,6002,0)
- ;;=I70.243^^40^383^15
- ;;^UTILITY(U,$J,358.3,6002,1,0)
+ ;;^UTILITY(U,$J,358.3,13755,1,3,0)
+ ;;=3^Sinusitis,Chr,Oth
+ ;;^UTILITY(U,$J,358.3,13755,1,4,0)
+ ;;=4^J32.8
+ ;;^UTILITY(U,$J,358.3,13755,2)
+ ;;=^269890
+ ;;^UTILITY(U,$J,358.3,13756,0)
+ ;;=J32.4^^61^724^49
+ ;;^UTILITY(U,$J,358.3,13756,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6002,1,3,0)
- ;;=3^Athscl Native Arteries of Left Leg w/ Ankle Ulcer
- ;;^UTILITY(U,$J,358.3,6002,1,4,0)
- ;;=4^I70.243
- ;;^UTILITY(U,$J,358.3,6002,2)
- ;;=^5007597
- ;;^UTILITY(U,$J,358.3,6003,0)
- ;;=I70.244^^40^383^18
- ;;^UTILITY(U,$J,358.3,6003,1,0)
+ ;;^UTILITY(U,$J,358.3,13756,1,3,0)
+ ;;=3^Pansinusitis,Chr
+ ;;^UTILITY(U,$J,358.3,13756,1,4,0)
+ ;;=4^J32.4
+ ;;^UTILITY(U,$J,358.3,13756,2)
+ ;;=^5008206
+ ;;^UTILITY(U,$J,358.3,13757,0)
+ ;;=J40.^^61^724^8
+ ;;^UTILITY(U,$J,358.3,13757,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6003,1,3,0)
- ;;=3^Athscl Native Arteries of Left Leg w/ Heel/Midfoot Ulcer
- ;;^UTILITY(U,$J,358.3,6003,1,4,0)
- ;;=4^I70.244
- ;;^UTILITY(U,$J,358.3,6003,2)
- ;;=^5007598
- ;;^UTILITY(U,$J,358.3,6004,0)
- ;;=I70.245^^40^383^17
- ;;^UTILITY(U,$J,358.3,6004,1,0)
+ ;;^UTILITY(U,$J,358.3,13757,1,3,0)
+ ;;=3^Bronchitis,Unspec
+ ;;^UTILITY(U,$J,358.3,13757,1,4,0)
+ ;;=4^J40.
+ ;;^UTILITY(U,$J,358.3,13757,2)
+ ;;=^17164
+ ;;^UTILITY(U,$J,358.3,13758,0)
+ ;;=J45.909^^61^724^4
+ ;;^UTILITY(U,$J,358.3,13758,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6004,1,3,0)
- ;;=3^Athscl Native Arteries of Left Leg w/ Foot Ulcer
- ;;^UTILITY(U,$J,358.3,6004,1,4,0)
- ;;=4^I70.245
- ;;^UTILITY(U,$J,358.3,6004,2)
- ;;=^5007599
- ;;^UTILITY(U,$J,358.3,6005,0)
- ;;=I70.248^^40^383^19
- ;;^UTILITY(U,$J,358.3,6005,1,0)
+ ;;^UTILITY(U,$J,358.3,13758,1,3,0)
+ ;;=3^Asthma,Unspec,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,13758,1,4,0)
+ ;;=4^J45.909
+ ;;^UTILITY(U,$J,358.3,13758,2)
+ ;;=^5008256
+ ;;^UTILITY(U,$J,358.3,13759,0)
+ ;;=J44.9^^61^724^9
+ ;;^UTILITY(U,$J,358.3,13759,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6005,1,3,0)
- ;;=3^Athscl Native Arteries of Left Leg w/ Lower Leg Ulcer
- ;;^UTILITY(U,$J,358.3,6005,1,4,0)
- ;;=4^I70.248
- ;;^UTILITY(U,$J,358.3,6005,2)
- ;;=^5007600
- ;;^UTILITY(U,$J,358.3,6006,0)
- ;;=I70.249^^40^383^21
- ;;^UTILITY(U,$J,358.3,6006,1,0)
+ ;;^UTILITY(U,$J,358.3,13759,1,3,0)
+ ;;=3^COPD,Unspec
+ ;;^UTILITY(U,$J,358.3,13759,1,4,0)
+ ;;=4^J44.9
+ ;;^UTILITY(U,$J,358.3,13759,2)
+ ;;=^5008241
+ ;;^UTILITY(U,$J,358.3,13760,0)
+ ;;=K21.9^^61^724^21
+ ;;^UTILITY(U,$J,358.3,13760,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6006,1,3,0)
- ;;=3^Athscl Native Arteries of Left Leg w/ Ulcer,Unspec Site
- ;;^UTILITY(U,$J,358.3,6006,1,4,0)
- ;;=4^I70.249
- ;;^UTILITY(U,$J,358.3,6006,2)
- ;;=^5007601
- ;;^UTILITY(U,$J,358.3,6007,0)
- ;;=I70.331^^40^383^64
- ;;^UTILITY(U,$J,358.3,6007,1,0)
+ ;;^UTILITY(U,$J,358.3,13760,1,3,0)
+ ;;=3^GERD w/o Esophagitis
+ ;;^UTILITY(U,$J,358.3,13760,1,4,0)
+ ;;=4^K21.9
+ ;;^UTILITY(U,$J,358.3,13760,2)
+ ;;=^5008505
+ ;;^UTILITY(U,$J,358.3,13761,0)
+ ;;=N40.0^^61^724^20
+ ;;^UTILITY(U,$J,358.3,13761,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6007,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Thigh Ulcer
- ;;^UTILITY(U,$J,358.3,6007,1,4,0)
- ;;=4^I70.331
- ;;^UTILITY(U,$J,358.3,6007,2)
- ;;=^5007626
- ;;^UTILITY(U,$J,358.3,6008,0)
- ;;=I70.332^^40^383^65
- ;;^UTILITY(U,$J,358.3,6008,1,0)
+ ;;^UTILITY(U,$J,358.3,13761,1,3,0)
+ ;;=3^Enlarged Prostate w/o LUTS
+ ;;^UTILITY(U,$J,358.3,13761,1,4,0)
+ ;;=4^N40.0
+ ;;^UTILITY(U,$J,358.3,13761,2)
+ ;;=^5015689
+ ;;^UTILITY(U,$J,358.3,13762,0)
+ ;;=N40.1^^61^724^19
+ ;;^UTILITY(U,$J,358.3,13762,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6008,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Calf Ulcer
- ;;^UTILITY(U,$J,358.3,6008,1,4,0)
- ;;=4^I70.332
- ;;^UTILITY(U,$J,358.3,6008,2)
- ;;=^5007627
- ;;^UTILITY(U,$J,358.3,6009,0)
- ;;=I70.333^^40^383^66
- ;;^UTILITY(U,$J,358.3,6009,1,0)
+ ;;^UTILITY(U,$J,358.3,13762,1,3,0)
+ ;;=3^Enlarged Prostate w/ LUTS
+ ;;^UTILITY(U,$J,358.3,13762,1,4,0)
+ ;;=4^N40.1
+ ;;^UTILITY(U,$J,358.3,13762,2)
+ ;;=^5015690
+ ;;^UTILITY(U,$J,358.3,13763,0)
+ ;;=L03.811^^61^724^10
+ ;;^UTILITY(U,$J,358.3,13763,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6009,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Ankle Ulcer
- ;;^UTILITY(U,$J,358.3,6009,1,4,0)
- ;;=4^I70.333
- ;;^UTILITY(U,$J,358.3,6009,2)
- ;;=^5007628
- ;;^UTILITY(U,$J,358.3,6010,0)
- ;;=I70.334^^40^383^67
- ;;^UTILITY(U,$J,358.3,6010,1,0)
+ ;;^UTILITY(U,$J,358.3,13763,1,3,0)
+ ;;=3^Cellulitis,Head (Except Face)
+ ;;^UTILITY(U,$J,358.3,13763,1,4,0)
+ ;;=4^L03.811
+ ;;^UTILITY(U,$J,358.3,13763,2)
+ ;;=^5009063
+ ;;^UTILITY(U,$J,358.3,13764,0)
+ ;;=L03.818^^61^724^11
+ ;;^UTILITY(U,$J,358.3,13764,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6010,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Heel/Midfoot Ulcer
- ;;^UTILITY(U,$J,358.3,6010,1,4,0)
- ;;=4^I70.334
- ;;^UTILITY(U,$J,358.3,6010,2)
- ;;=^5007629
- ;;^UTILITY(U,$J,358.3,6011,0)
- ;;=I70.335^^40^383^68
+ ;;^UTILITY(U,$J,358.3,13764,1,3,0)
+ ;;=3^Cellulitis,Oth Sites
+ ;;^UTILITY(U,$J,358.3,13764,1,4,0)
+ ;;=4^L03.818
+ ;;^UTILITY(U,$J,358.3,13764,2)
+ ;;=^5009064
+ ;;^UTILITY(U,$J,358.3,13765,0)
+ ;;=L03.891^^61^724^35
+ ;;^UTILITY(U,$J,358.3,13765,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13765,1,3,0)
+ ;;=3^Lymphangitis,Head (Except Face),Acute
+ ;;^UTILITY(U,$J,358.3,13765,1,4,0)
+ ;;=4^L03.891
+ ;;^UTILITY(U,$J,358.3,13765,2)
+ ;;=^5009065
+ ;;^UTILITY(U,$J,358.3,13766,0)
+ ;;=L03.898^^61^724^36
+ ;;^UTILITY(U,$J,358.3,13766,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13766,1,3,0)
+ ;;=3^Lymphangitis,Oth Sites,Acute
+ ;;^UTILITY(U,$J,358.3,13766,1,4,0)
+ ;;=4^L03.898
+ ;;^UTILITY(U,$J,358.3,13766,2)
+ ;;=^5009066
+ ;;^UTILITY(U,$J,358.3,13767,0)
+ ;;=L03.90^^61^724^12
+ ;;^UTILITY(U,$J,358.3,13767,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13767,1,3,0)
+ ;;=3^Cellulitis,Unspec
+ ;;^UTILITY(U,$J,358.3,13767,1,4,0)
+ ;;=4^L03.90
+ ;;^UTILITY(U,$J,358.3,13767,2)
+ ;;=^5009067
+ ;;^UTILITY(U,$J,358.3,13768,0)
+ ;;=L03.91^^61^724^34
+ ;;^UTILITY(U,$J,358.3,13768,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13768,1,3,0)
+ ;;=3^Lymphangitis,Acute,Unspec
+ ;;^UTILITY(U,$J,358.3,13768,1,4,0)
+ ;;=4^L03.91
+ ;;^UTILITY(U,$J,358.3,13768,2)
+ ;;=^5009068
+ ;;^UTILITY(U,$J,358.3,13769,0)
+ ;;=M51.26^^61^724^32
+ ;;^UTILITY(U,$J,358.3,13769,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13769,1,3,0)
+ ;;=3^Intervertebral Disc Displacement,Lumbar Region
+ ;;^UTILITY(U,$J,358.3,13769,1,4,0)
+ ;;=4^M51.26
+ ;;^UTILITY(U,$J,358.3,13769,2)
+ ;;=^5012249
+ ;;^UTILITY(U,$J,358.3,13770,0)
+ ;;=M51.27^^61^724^33
+ ;;^UTILITY(U,$J,358.3,13770,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13770,1,3,0)
+ ;;=3^Intervertebral Disc Displacement,Lumbosacral Region
+ ;;^UTILITY(U,$J,358.3,13770,1,4,0)
+ ;;=4^M51.27
+ ;;^UTILITY(U,$J,358.3,13770,2)
+ ;;=^5012250
+ ;;^UTILITY(U,$J,358.3,13771,0)
+ ;;=G47.33^^61^724^52
+ ;;^UTILITY(U,$J,358.3,13771,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13771,1,3,0)
+ ;;=3^Sleep Apnea,Obstructive
+ ;;^UTILITY(U,$J,358.3,13771,1,4,0)
+ ;;=4^G47.33
+ ;;^UTILITY(U,$J,358.3,13771,2)
+ ;;=^332763
+ ;;^UTILITY(U,$J,358.3,13772,0)
+ ;;=G44.1^^61^724^56
+ ;;^UTILITY(U,$J,358.3,13772,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13772,1,3,0)
+ ;;=3^Vascular Headache NEC
+ ;;^UTILITY(U,$J,358.3,13772,1,4,0)
+ ;;=4^G44.1
+ ;;^UTILITY(U,$J,358.3,13772,2)
+ ;;=^5003934
+ ;;^UTILITY(U,$J,358.3,13773,0)
+ ;;=R73.01^^61^724^30
+ ;;^UTILITY(U,$J,358.3,13773,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13773,1,3,0)
+ ;;=3^Impaired Fasting Glucose
+ ;;^UTILITY(U,$J,358.3,13773,1,4,0)
+ ;;=4^R73.01
+ ;;^UTILITY(U,$J,358.3,13773,2)
+ ;;=^5019561
+ ;;^UTILITY(U,$J,358.3,13774,0)
+ ;;=R74.8^^61^724^1
+ ;;^UTILITY(U,$J,358.3,13774,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13774,1,3,0)
+ ;;=3^Abnormal Levels of Serum Enzymes
+ ;;^UTILITY(U,$J,358.3,13774,1,4,0)
+ ;;=4^R74.8
+ ;;^UTILITY(U,$J,358.3,13774,2)
+ ;;=^5019566
+ ;;^UTILITY(U,$J,358.3,13775,0)
+ ;;=R97.2^^61^724^18
+ ;;^UTILITY(U,$J,358.3,13775,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13775,1,3,0)
+ ;;=3^Elevated Prostate Specific Antigen
+ ;;^UTILITY(U,$J,358.3,13775,1,4,0)
+ ;;=4^R97.2
+ ;;^UTILITY(U,$J,358.3,13775,2)
+ ;;=^5019748
+ ;;^UTILITY(U,$J,358.3,13776,0)
+ ;;=R03.0^^61^724^17
+ ;;^UTILITY(U,$J,358.3,13776,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13776,1,3,0)
+ ;;=3^Elevated BP Reading w/o Diagnosis of HTN
+ ;;^UTILITY(U,$J,358.3,13776,1,4,0)
+ ;;=4^R03.0
+ ;;^UTILITY(U,$J,358.3,13776,2)
+ ;;=^5019171
+ ;;^UTILITY(U,$J,358.3,13777,0)
+ ;;=Z91.19^^61^724^42
+ ;;^UTILITY(U,$J,358.3,13777,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13777,1,3,0)
+ ;;=3^Noncompliance w/ Medical Treatment/Regimen
+ ;;^UTILITY(U,$J,358.3,13777,1,4,0)
+ ;;=4^Z91.19
+ ;;^UTILITY(U,$J,358.3,13777,2)
+ ;;=^5063618
+ ;;^UTILITY(U,$J,358.3,13778,0)
+ ;;=E66.01^^61^724^43
+ ;;^UTILITY(U,$J,358.3,13778,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13778,1,3,0)
+ ;;=3^Obesity,Morbid
+ ;;^UTILITY(U,$J,358.3,13778,1,4,0)
+ ;;=4^E66.01
+ ;;^UTILITY(U,$J,358.3,13778,2)
+ ;;=^5002826
+ ;;^UTILITY(U,$J,358.3,13779,0)
+ ;;=H93.19^^61^724^55
+ ;;^UTILITY(U,$J,358.3,13779,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13779,1,3,0)
+ ;;=3^Tinnitus,Unspec Ear
+ ;;^UTILITY(U,$J,358.3,13779,1,4,0)
+ ;;=4^H93.19
+ ;;^UTILITY(U,$J,358.3,13779,2)
+ ;;=^5006967
+ ;;^UTILITY(U,$J,358.3,13780,0)
+ ;;=G47.00^^61^724^31
+ ;;^UTILITY(U,$J,358.3,13780,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13780,1,3,0)
+ ;;=3^Insomnia,Unspec
+ ;;^UTILITY(U,$J,358.3,13780,1,4,0)
+ ;;=4^G47.00
+ ;;^UTILITY(U,$J,358.3,13780,2)
+ ;;=^332924
+ ;;^UTILITY(U,$J,358.3,13781,0)
+ ;;=F43.10^^61^724^47
+ ;;^UTILITY(U,$J,358.3,13781,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13781,1,3,0)
+ ;;=3^PTSD,Unspec

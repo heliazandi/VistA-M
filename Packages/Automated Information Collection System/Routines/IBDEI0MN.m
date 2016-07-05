@@ -1,136 +1,282 @@
-IBDEI0MN ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0MN ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10337,1,3,0)
- ;;=3^Otalgia,Bilateral
- ;;^UTILITY(U,$J,358.3,10337,1,4,0)
- ;;=4^H92.03
- ;;^UTILITY(U,$J,358.3,10337,2)
- ;;=^5006947
- ;;^UTILITY(U,$J,358.3,10338,0)
- ;;=H91.92^^68^665^22
- ;;^UTILITY(U,$J,358.3,10338,1,0)
+ ;;^UTILITY(U,$J,358.3,22834,2)
+ ;;=^5014481
+ ;;^UTILITY(U,$J,358.3,22835,0)
+ ;;=M85.842^^89^1052^82
+ ;;^UTILITY(U,$J,358.3,22835,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10338,1,3,0)
- ;;=3^Hearing Loss,Unspec,Left Ear
- ;;^UTILITY(U,$J,358.3,10338,1,4,0)
- ;;=4^H91.92
- ;;^UTILITY(U,$J,358.3,10338,2)
- ;;=^5133554
- ;;^UTILITY(U,$J,358.3,10339,0)
- ;;=H91.93^^68^665^21
- ;;^UTILITY(U,$J,358.3,10339,1,0)
+ ;;^UTILITY(U,$J,358.3,22835,1,3,0)
+ ;;=3^Osteopenia,Left Hand
+ ;;^UTILITY(U,$J,358.3,22835,1,4,0)
+ ;;=4^M85.842
+ ;;^UTILITY(U,$J,358.3,22835,2)
+ ;;=^5014484
+ ;;^UTILITY(U,$J,358.3,22836,0)
+ ;;=M85.862^^89^1052^83
+ ;;^UTILITY(U,$J,358.3,22836,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10339,1,3,0)
- ;;=3^Hearing Loss,Unspec,Bilateral
- ;;^UTILITY(U,$J,358.3,10339,1,4,0)
- ;;=4^H91.93
- ;;^UTILITY(U,$J,358.3,10339,2)
- ;;=^5006944
- ;;^UTILITY(U,$J,358.3,10340,0)
- ;;=H91.91^^68^665^23
- ;;^UTILITY(U,$J,358.3,10340,1,0)
+ ;;^UTILITY(U,$J,358.3,22836,1,3,0)
+ ;;=3^Osteopenia,Left Lower Leg
+ ;;^UTILITY(U,$J,358.3,22836,1,4,0)
+ ;;=4^M85.862
+ ;;^UTILITY(U,$J,358.3,22836,2)
+ ;;=^5014490
+ ;;^UTILITY(U,$J,358.3,22837,0)
+ ;;=M85.812^^89^1052^84
+ ;;^UTILITY(U,$J,358.3,22837,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10340,1,3,0)
- ;;=3^Hearing Loss,Unspec,Right Ear
- ;;^UTILITY(U,$J,358.3,10340,1,4,0)
- ;;=4^H91.91
- ;;^UTILITY(U,$J,358.3,10340,2)
- ;;=^5133553
- ;;^UTILITY(U,$J,358.3,10341,0)
- ;;=H65.02^^68^665^4
- ;;^UTILITY(U,$J,358.3,10341,1,0)
+ ;;^UTILITY(U,$J,358.3,22837,1,3,0)
+ ;;=3^Osteopenia,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22837,1,4,0)
+ ;;=4^M85.812
+ ;;^UTILITY(U,$J,358.3,22837,2)
+ ;;=^5014475
+ ;;^UTILITY(U,$J,358.3,22838,0)
+ ;;=M85.852^^89^1052^85
+ ;;^UTILITY(U,$J,358.3,22838,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10341,1,3,0)
- ;;=3^Acute Serous Otitis Media,Left Ear
- ;;^UTILITY(U,$J,358.3,10341,1,4,0)
- ;;=4^H65.02
- ;;^UTILITY(U,$J,358.3,10341,2)
- ;;=^5006571
- ;;^UTILITY(U,$J,358.3,10342,0)
- ;;=H60.312^^68^665^19
- ;;^UTILITY(U,$J,358.3,10342,1,0)
+ ;;^UTILITY(U,$J,358.3,22838,1,3,0)
+ ;;=3^Osteopenia,Left Thigh
+ ;;^UTILITY(U,$J,358.3,22838,1,4,0)
+ ;;=4^M85.852
+ ;;^UTILITY(U,$J,358.3,22838,2)
+ ;;=^5014487
+ ;;^UTILITY(U,$J,358.3,22839,0)
+ ;;=M85.822^^89^1052^86
+ ;;^UTILITY(U,$J,358.3,22839,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10342,1,3,0)
- ;;=3^Diffuse Otitis Externa,Left Ear
- ;;^UTILITY(U,$J,358.3,10342,1,4,0)
- ;;=4^H60.312
- ;;^UTILITY(U,$J,358.3,10342,2)
- ;;=^5006448
- ;;^UTILITY(U,$J,358.3,10343,0)
- ;;=H60.311^^68^665^20
- ;;^UTILITY(U,$J,358.3,10343,1,0)
+ ;;^UTILITY(U,$J,358.3,22839,1,3,0)
+ ;;=3^Osteopenia,Left Upper Arm
+ ;;^UTILITY(U,$J,358.3,22839,1,4,0)
+ ;;=4^M85.822
+ ;;^UTILITY(U,$J,358.3,22839,2)
+ ;;=^5014478
+ ;;^UTILITY(U,$J,358.3,22840,0)
+ ;;=M85.89^^89^1052^87
+ ;;^UTILITY(U,$J,358.3,22840,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10343,1,3,0)
- ;;=3^Diffuse Otitis Externa,Right Ear
- ;;^UTILITY(U,$J,358.3,10343,1,4,0)
- ;;=4^H60.311
- ;;^UTILITY(U,$J,358.3,10343,2)
- ;;=^5006447
- ;;^UTILITY(U,$J,358.3,10344,0)
- ;;=H55.09^^68^665^30
- ;;^UTILITY(U,$J,358.3,10344,1,0)
+ ;;^UTILITY(U,$J,358.3,22840,1,3,0)
+ ;;=3^Osteopenia,Multiple Sites
+ ;;^UTILITY(U,$J,358.3,22840,1,4,0)
+ ;;=4^M85.89
+ ;;^UTILITY(U,$J,358.3,22840,2)
+ ;;=^5014495
+ ;;^UTILITY(U,$J,358.3,22841,0)
+ ;;=M85.88^^89^1052^88
+ ;;^UTILITY(U,$J,358.3,22841,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10344,1,3,0)
- ;;=3^Nystagmus NEC
- ;;^UTILITY(U,$J,358.3,10344,1,4,0)
- ;;=4^H55.09
- ;;^UTILITY(U,$J,358.3,10344,2)
- ;;=^87599
- ;;^UTILITY(U,$J,358.3,10345,0)
- ;;=H60.01^^68^665^2
- ;;^UTILITY(U,$J,358.3,10345,1,0)
+ ;;^UTILITY(U,$J,358.3,22841,1,3,0)
+ ;;=3^Osteopenia,Other Site
+ ;;^UTILITY(U,$J,358.3,22841,1,4,0)
+ ;;=4^M85.88
+ ;;^UTILITY(U,$J,358.3,22841,2)
+ ;;=^5134059
+ ;;^UTILITY(U,$J,358.3,22842,0)
+ ;;=M85.871^^89^1052^89
+ ;;^UTILITY(U,$J,358.3,22842,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10345,1,3,0)
- ;;=3^Abscess External Ear,Right
- ;;^UTILITY(U,$J,358.3,10345,1,4,0)
- ;;=4^H60.01
- ;;^UTILITY(U,$J,358.3,10345,2)
- ;;=^5006436
- ;;^UTILITY(U,$J,358.3,10346,0)
- ;;=H60.02^^68^665^1
- ;;^UTILITY(U,$J,358.3,10346,1,0)
+ ;;^UTILITY(U,$J,358.3,22842,1,3,0)
+ ;;=3^Osteopenia,Right Foot & Ankle
+ ;;^UTILITY(U,$J,358.3,22842,1,4,0)
+ ;;=4^M85.871
+ ;;^UTILITY(U,$J,358.3,22842,2)
+ ;;=^5014492
+ ;;^UTILITY(U,$J,358.3,22843,0)
+ ;;=M85.831^^89^1052^90
+ ;;^UTILITY(U,$J,358.3,22843,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10346,1,3,0)
- ;;=3^Abscess External Ear,Left
- ;;^UTILITY(U,$J,358.3,10346,1,4,0)
- ;;=4^H60.02
- ;;^UTILITY(U,$J,358.3,10346,2)
- ;;=^5006437
- ;;^UTILITY(U,$J,358.3,10347,0)
- ;;=H60.12^^68^665^13
- ;;^UTILITY(U,$J,358.3,10347,1,0)
+ ;;^UTILITY(U,$J,358.3,22843,1,3,0)
+ ;;=3^Osteopenia,Right Forearm
+ ;;^UTILITY(U,$J,358.3,22843,1,4,0)
+ ;;=4^M85.831
+ ;;^UTILITY(U,$J,358.3,22843,2)
+ ;;=^5014480
+ ;;^UTILITY(U,$J,358.3,22844,0)
+ ;;=M85.841^^89^1052^91
+ ;;^UTILITY(U,$J,358.3,22844,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10347,1,3,0)
- ;;=3^Cellulitis External Ear,Left
- ;;^UTILITY(U,$J,358.3,10347,1,4,0)
- ;;=4^H60.12
- ;;^UTILITY(U,$J,358.3,10347,2)
- ;;=^5006441
- ;;^UTILITY(U,$J,358.3,10348,0)
- ;;=H60.11^^68^665^14
- ;;^UTILITY(U,$J,358.3,10348,1,0)
+ ;;^UTILITY(U,$J,358.3,22844,1,3,0)
+ ;;=3^Osteopenia,Right Hand
+ ;;^UTILITY(U,$J,358.3,22844,1,4,0)
+ ;;=4^M85.841
+ ;;^UTILITY(U,$J,358.3,22844,2)
+ ;;=^5014483
+ ;;^UTILITY(U,$J,358.3,22845,0)
+ ;;=M85.861^^89^1052^92
+ ;;^UTILITY(U,$J,358.3,22845,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10348,1,3,0)
- ;;=3^Cellulitis External Ear,Right
- ;;^UTILITY(U,$J,358.3,10348,1,4,0)
- ;;=4^H60.11
- ;;^UTILITY(U,$J,358.3,10348,2)
- ;;=^5006440
- ;;^UTILITY(U,$J,358.3,10349,0)
- ;;=H61.21^^68^665^26
- ;;^UTILITY(U,$J,358.3,10349,1,0)
+ ;;^UTILITY(U,$J,358.3,22845,1,3,0)
+ ;;=3^Osteopenia,Right Lower Leg
+ ;;^UTILITY(U,$J,358.3,22845,1,4,0)
+ ;;=4^M85.861
+ ;;^UTILITY(U,$J,358.3,22845,2)
+ ;;=^5014489
+ ;;^UTILITY(U,$J,358.3,22846,0)
+ ;;=M85.811^^89^1052^93
+ ;;^UTILITY(U,$J,358.3,22846,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10349,1,3,0)
- ;;=3^Impacted Cerumen,Right Ear
- ;;^UTILITY(U,$J,358.3,10349,1,4,0)
- ;;=4^H61.21
- ;;^UTILITY(U,$J,358.3,10349,2)
- ;;=^5006531
- ;;^UTILITY(U,$J,358.3,10350,0)
- ;;=H61.22^^68^665^25
- ;;^UTILITY(U,$J,358.3,10350,1,0)
+ ;;^UTILITY(U,$J,358.3,22846,1,3,0)
+ ;;=3^Osteopenia,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22846,1,4,0)
+ ;;=4^M85.811
+ ;;^UTILITY(U,$J,358.3,22846,2)
+ ;;=^5014474
+ ;;^UTILITY(U,$J,358.3,22847,0)
+ ;;=M85.851^^89^1052^94
+ ;;^UTILITY(U,$J,358.3,22847,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10350,1,3,0)
- ;;=3^Impacted Cerumen,Left Ear
+ ;;^UTILITY(U,$J,358.3,22847,1,3,0)
+ ;;=3^Osteopenia,Right Thigh
+ ;;^UTILITY(U,$J,358.3,22847,1,4,0)
+ ;;=4^M85.851
+ ;;^UTILITY(U,$J,358.3,22847,2)
+ ;;=^5014486
+ ;;^UTILITY(U,$J,358.3,22848,0)
+ ;;=M85.821^^89^1052^95
+ ;;^UTILITY(U,$J,358.3,22848,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22848,1,3,0)
+ ;;=3^Osteopenia,Right Upper Arm
+ ;;^UTILITY(U,$J,358.3,22848,1,4,0)
+ ;;=4^M85.821
+ ;;^UTILITY(U,$J,358.3,22848,2)
+ ;;=^5014477
+ ;;^UTILITY(U,$J,358.3,22849,0)
+ ;;=M85.80^^89^1052^96
+ ;;^UTILITY(U,$J,358.3,22849,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22849,1,3,0)
+ ;;=3^Osteopenia,Unspec Site
+ ;;^UTILITY(U,$J,358.3,22849,1,4,0)
+ ;;=4^M85.80
+ ;;^UTILITY(U,$J,358.3,22849,2)
+ ;;=^5014473
+ ;;^UTILITY(U,$J,358.3,22850,0)
+ ;;=B02.0^^89^1053^46
+ ;;^UTILITY(U,$J,358.3,22850,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22850,1,3,0)
+ ;;=3^Zoster Encephalitis
+ ;;^UTILITY(U,$J,358.3,22850,1,4,0)
+ ;;=4^B02.0
+ ;;^UTILITY(U,$J,358.3,22850,2)
+ ;;=^5000488
+ ;;^UTILITY(U,$J,358.3,22851,0)
+ ;;=B02.29^^89^1053^36
+ ;;^UTILITY(U,$J,358.3,22851,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22851,1,3,0)
+ ;;=3^Postherpetic Nervous System Involvement,Other
+ ;;^UTILITY(U,$J,358.3,22851,1,4,0)
+ ;;=4^B02.29
+ ;;^UTILITY(U,$J,358.3,22851,2)
+ ;;=^5000492
+ ;;^UTILITY(U,$J,358.3,22852,0)
+ ;;=F03.90^^89^1053^10
+ ;;^UTILITY(U,$J,358.3,22852,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22852,1,3,0)
+ ;;=3^Dementia w/o Behavioral Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,22852,1,4,0)
+ ;;=4^F03.90
+ ;;^UTILITY(U,$J,358.3,22852,2)
+ ;;=^5003050
+ ;;^UTILITY(U,$J,358.3,22853,0)
+ ;;=F03.91^^89^1053^9
+ ;;^UTILITY(U,$J,358.3,22853,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22853,1,3,0)
+ ;;=3^Dementia w/ Behavioral Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,22853,1,4,0)
+ ;;=4^F03.91
+ ;;^UTILITY(U,$J,358.3,22853,2)
+ ;;=^5133350
+ ;;^UTILITY(U,$J,358.3,22854,0)
+ ;;=F01.50^^89^1053^12
+ ;;^UTILITY(U,$J,358.3,22854,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22854,1,3,0)
+ ;;=3^Dementia,Vascular w/o Behavioral Disturbance
+ ;;^UTILITY(U,$J,358.3,22854,1,4,0)
+ ;;=4^F01.50
+ ;;^UTILITY(U,$J,358.3,22854,2)
+ ;;=^5003046
+ ;;^UTILITY(U,$J,358.3,22855,0)
+ ;;=F10.27^^89^1053^11
+ ;;^UTILITY(U,$J,358.3,22855,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22855,1,3,0)
+ ;;=3^Dementia,Alcohol-Induced/Persist w/ Alcohol Dependence
+ ;;^UTILITY(U,$J,358.3,22855,1,4,0)
+ ;;=4^F10.27
+ ;;^UTILITY(U,$J,358.3,22855,2)
+ ;;=^5003095
+ ;;^UTILITY(U,$J,358.3,22856,0)
+ ;;=F06.1^^89^1053^6
+ ;;^UTILITY(U,$J,358.3,22856,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22856,1,3,0)
+ ;;=3^Catatonic Disorder d/t Known Physiological Condition
+ ;;^UTILITY(U,$J,358.3,22856,1,4,0)
+ ;;=4^F06.1
+ ;;^UTILITY(U,$J,358.3,22856,2)
+ ;;=^5003054
+ ;;^UTILITY(U,$J,358.3,22857,0)
+ ;;=F06.8^^89^1053^21
+ ;;^UTILITY(U,$J,358.3,22857,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22857,1,3,0)
+ ;;=3^Mental Disorders d/t Known Physiological Condition,Other
+ ;;^UTILITY(U,$J,358.3,22857,1,4,0)
+ ;;=4^F06.8
+ ;;^UTILITY(U,$J,358.3,22857,2)
+ ;;=^5003062
+ ;;^UTILITY(U,$J,358.3,22858,0)
+ ;;=F06.0^^89^1053^37
+ ;;^UTILITY(U,$J,358.3,22858,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22858,1,3,0)
+ ;;=3^Psychotic Disorder w/ Hallucin d/t Known Physiol Condition
+ ;;^UTILITY(U,$J,358.3,22858,1,4,0)
+ ;;=4^F06.0
+ ;;^UTILITY(U,$J,358.3,22858,2)
+ ;;=^5003053
+ ;;^UTILITY(U,$J,358.3,22859,0)
+ ;;=G44.209^^89^1053^42
+ ;;^UTILITY(U,$J,358.3,22859,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22859,1,3,0)
+ ;;=3^Tension-Type Headache,Not Intractable,Unspec
+ ;;^UTILITY(U,$J,358.3,22859,1,4,0)
+ ;;=4^G44.209
+ ;;^UTILITY(U,$J,358.3,22859,2)
+ ;;=^5003936
+ ;;^UTILITY(U,$J,358.3,22860,0)
+ ;;=F09.^^89^1053^20
+ ;;^UTILITY(U,$J,358.3,22860,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22860,1,3,0)
+ ;;=3^Mental Disorder d/t Known Physiological Condition,Unspec
+ ;;^UTILITY(U,$J,358.3,22860,1,4,0)
+ ;;=4^F09.
+ ;;^UTILITY(U,$J,358.3,22860,2)
+ ;;=^5003067
+ ;;^UTILITY(U,$J,358.3,22861,0)
+ ;;=F07.9^^89^1053^35
+ ;;^UTILITY(U,$J,358.3,22861,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22861,1,3,0)
+ ;;=3^Personality & Behavrl Disorder d/t Known Physiol Cond,Unspec
+ ;;^UTILITY(U,$J,358.3,22861,1,4,0)
+ ;;=4^F07.9
+ ;;^UTILITY(U,$J,358.3,22861,2)
+ ;;=^5003066
+ ;;^UTILITY(U,$J,358.3,22862,0)
+ ;;=G30.0^^89^1053^1
+ ;;^UTILITY(U,$J,358.3,22862,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22862,1,3,0)
+ ;;=3^Alzheimer's Disease w/ Early Onset

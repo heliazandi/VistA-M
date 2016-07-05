@@ -1,124 +1,270 @@
-IBDEI0Y8 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0Y8 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15770,1,4,0)
- ;;=4^L97.322
- ;;^UTILITY(U,$J,358.3,15770,2)
- ;;=^5009521
- ;;^UTILITY(U,$J,358.3,15771,0)
- ;;=L97.323^^85^825^89
- ;;^UTILITY(U,$J,358.3,15771,1,0)
+ ;;^UTILITY(U,$J,358.3,34450,1,3,0)
+ ;;=3^Athscl Bypass Cor Art Transplt Hrt w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,34450,1,4,0)
+ ;;=4^I25.769
+ ;;^UTILITY(U,$J,358.3,34450,2)
+ ;;=^5007138
+ ;;^UTILITY(U,$J,358.3,34451,0)
+ ;;=I25.760^^125^1634^20
+ ;;^UTILITY(U,$J,358.3,34451,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15771,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Left Ankle,Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,15771,1,4,0)
- ;;=4^L97.323
- ;;^UTILITY(U,$J,358.3,15771,2)
- ;;=^5009522
- ;;^UTILITY(U,$J,358.3,15772,0)
- ;;=L97.324^^85^825^90
- ;;^UTILITY(U,$J,358.3,15772,1,0)
+ ;;^UTILITY(U,$J,358.3,34451,1,3,0)
+ ;;=3^Athscl Bypass Cor Art Transplt Hrt w/ Unstable Angina
+ ;;^UTILITY(U,$J,358.3,34451,1,4,0)
+ ;;=4^I25.760
+ ;;^UTILITY(U,$J,358.3,34451,2)
+ ;;=^5007135
+ ;;^UTILITY(U,$J,358.3,34452,0)
+ ;;=I25.701^^125^1634^23
+ ;;^UTILITY(U,$J,358.3,34452,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15772,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Left Ankle,Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,15772,1,4,0)
- ;;=4^L97.324
- ;;^UTILITY(U,$J,358.3,15772,2)
- ;;=^5009523
- ;;^UTILITY(U,$J,358.3,15773,0)
- ;;=L97.329^^85^825^91
- ;;^UTILITY(U,$J,358.3,15773,1,0)
+ ;;^UTILITY(U,$J,358.3,34452,1,3,0)
+ ;;=3^Athscl CABG w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,34452,1,4,0)
+ ;;=4^I25.701
+ ;;^UTILITY(U,$J,358.3,34452,2)
+ ;;=^5007118
+ ;;^UTILITY(U,$J,358.3,34453,0)
+ ;;=I25.708^^125^1634^21
+ ;;^UTILITY(U,$J,358.3,34453,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15773,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Left Ankle,Unspec Severity
- ;;^UTILITY(U,$J,358.3,15773,1,4,0)
- ;;=4^L97.329
- ;;^UTILITY(U,$J,358.3,15773,2)
- ;;=^5009524
- ;;^UTILITY(U,$J,358.3,15774,0)
- ;;=L97.421^^85^825^102
- ;;^UTILITY(U,$J,358.3,15774,1,0)
+ ;;^UTILITY(U,$J,358.3,34453,1,3,0)
+ ;;=3^Athscl CABG w/ Ang Pctrs NEC
+ ;;^UTILITY(U,$J,358.3,34453,1,4,0)
+ ;;=4^I25.708
+ ;;^UTILITY(U,$J,358.3,34453,2)
+ ;;=^5007119
+ ;;^UTILITY(U,$J,358.3,34454,0)
+ ;;=I25.709^^125^1634^25
+ ;;^UTILITY(U,$J,358.3,34454,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15774,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Left Heel/Midfoot,Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,15774,1,4,0)
- ;;=4^L97.421
- ;;^UTILITY(U,$J,358.3,15774,2)
- ;;=^5009535
- ;;^UTILITY(U,$J,358.3,15775,0)
- ;;=L97.422^^85^825^103
- ;;^UTILITY(U,$J,358.3,15775,1,0)
+ ;;^UTILITY(U,$J,358.3,34454,1,3,0)
+ ;;=3^Athscl CABG w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,34454,1,4,0)
+ ;;=4^I25.709
+ ;;^UTILITY(U,$J,358.3,34454,2)
+ ;;=^5007120
+ ;;^UTILITY(U,$J,358.3,34455,0)
+ ;;=I25.700^^125^1634^27
+ ;;^UTILITY(U,$J,358.3,34455,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15775,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Left Heel/Midfoot,Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,15775,1,4,0)
- ;;=4^L97.422
- ;;^UTILITY(U,$J,358.3,15775,2)
- ;;=^5009536
- ;;^UTILITY(U,$J,358.3,15776,0)
- ;;=L97.423^^85^825^104
- ;;^UTILITY(U,$J,358.3,15776,1,0)
+ ;;^UTILITY(U,$J,358.3,34455,1,3,0)
+ ;;=3^Athscl CABG w/ Unstable Angina
+ ;;^UTILITY(U,$J,358.3,34455,1,4,0)
+ ;;=4^I25.700
+ ;;^UTILITY(U,$J,358.3,34455,2)
+ ;;=^5007117
+ ;;^UTILITY(U,$J,358.3,34456,0)
+ ;;=I25.751^^125^1634^34
+ ;;^UTILITY(U,$J,358.3,34456,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15776,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Left Heel/Midfoot,Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,15776,1,4,0)
- ;;=4^L97.423
- ;;^UTILITY(U,$J,358.3,15776,2)
- ;;=^5009537
- ;;^UTILITY(U,$J,358.3,15777,0)
- ;;=L97.424^^85^825^105
- ;;^UTILITY(U,$J,358.3,15777,1,0)
+ ;;^UTILITY(U,$J,358.3,34456,1,3,0)
+ ;;=3^Athscl Native Cor Art of Transplt Hrt w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,34456,1,4,0)
+ ;;=4^I25.751
+ ;;^UTILITY(U,$J,358.3,34456,2)
+ ;;=^5007132
+ ;;^UTILITY(U,$J,358.3,34457,0)
+ ;;=I25.758^^125^1634^35
+ ;;^UTILITY(U,$J,358.3,34457,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15777,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Left Heel/Midfoot,Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,15777,1,4,0)
- ;;=4^L97.424
- ;;^UTILITY(U,$J,358.3,15777,2)
- ;;=^5009538
- ;;^UTILITY(U,$J,358.3,15778,0)
- ;;=L97.429^^85^825^106
- ;;^UTILITY(U,$J,358.3,15778,1,0)
+ ;;^UTILITY(U,$J,358.3,34457,1,3,0)
+ ;;=3^Athscl Native Cor Art of Transplt Hrt w/ Ang Pctrs NEC
+ ;;^UTILITY(U,$J,358.3,34457,1,4,0)
+ ;;=4^I25.758
+ ;;^UTILITY(U,$J,358.3,34457,2)
+ ;;=^5007133
+ ;;^UTILITY(U,$J,358.3,34458,0)
+ ;;=I25.759^^125^1634^36
+ ;;^UTILITY(U,$J,358.3,34458,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15778,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Left Heel/Midfoot,Unspec Severity
- ;;^UTILITY(U,$J,358.3,15778,1,4,0)
- ;;=4^L97.429
- ;;^UTILITY(U,$J,358.3,15778,2)
- ;;=^5009539
- ;;^UTILITY(U,$J,358.3,15779,0)
- ;;=L97.521^^85^825^97
- ;;^UTILITY(U,$J,358.3,15779,1,0)
+ ;;^UTILITY(U,$J,358.3,34458,1,3,0)
+ ;;=3^Athscl Native Cor Art of Transplt Hrt w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,34458,1,4,0)
+ ;;=4^I25.759
+ ;;^UTILITY(U,$J,358.3,34458,2)
+ ;;=^5007134
+ ;;^UTILITY(U,$J,358.3,34459,0)
+ ;;=I25.750^^125^1634^37
+ ;;^UTILITY(U,$J,358.3,34459,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15779,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Left Foot NEC,Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,15779,1,4,0)
- ;;=4^L97.521
- ;;^UTILITY(U,$J,358.3,15779,2)
- ;;=^5009550
- ;;^UTILITY(U,$J,358.3,15780,0)
- ;;=L97.522^^85^825^98
- ;;^UTILITY(U,$J,358.3,15780,1,0)
+ ;;^UTILITY(U,$J,358.3,34459,1,3,0)
+ ;;=3^Athscl Native Cor Art of Transplt Hrt w/ Unstable Angina
+ ;;^UTILITY(U,$J,358.3,34459,1,4,0)
+ ;;=4^I25.750
+ ;;^UTILITY(U,$J,358.3,34459,2)
+ ;;=^5007131
+ ;;^UTILITY(U,$J,358.3,34460,0)
+ ;;=I25.731^^125^1634^39
+ ;;^UTILITY(U,$J,358.3,34460,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15780,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Left Foot NEC,Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,15780,1,4,0)
- ;;=4^L97.522
- ;;^UTILITY(U,$J,358.3,15780,2)
- ;;=^5009551
- ;;^UTILITY(U,$J,358.3,15781,0)
- ;;=L97.523^^85^825^99
- ;;^UTILITY(U,$J,358.3,15781,1,0)
+ ;;^UTILITY(U,$J,358.3,34460,1,3,0)
+ ;;=3^Athscl Nonaut Bio CABG w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,34460,1,4,0)
+ ;;=4^I25.731
+ ;;^UTILITY(U,$J,358.3,34460,2)
+ ;;=^5007128
+ ;;^UTILITY(U,$J,358.3,34461,0)
+ ;;=I25.738^^125^1634^38
+ ;;^UTILITY(U,$J,358.3,34461,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15781,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Left Foot NEC,Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,15781,1,4,0)
- ;;=4^L97.523
- ;;^UTILITY(U,$J,358.3,15781,2)
- ;;=^5009552
- ;;^UTILITY(U,$J,358.3,15782,0)
- ;;=L97.524^^85^825^100
- ;;^UTILITY(U,$J,358.3,15782,1,0)
+ ;;^UTILITY(U,$J,358.3,34461,1,3,0)
+ ;;=3^Athscl Nonaut Bio CABG w/ Ang Pctrs NEC
+ ;;^UTILITY(U,$J,358.3,34461,1,4,0)
+ ;;=4^I25.738
+ ;;^UTILITY(U,$J,358.3,34461,2)
+ ;;=^5007129
+ ;;^UTILITY(U,$J,358.3,34462,0)
+ ;;=I25.739^^125^1634^40
+ ;;^UTILITY(U,$J,358.3,34462,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15782,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Left Foot NEC,Necrosis of Bone
+ ;;^UTILITY(U,$J,358.3,34462,1,3,0)
+ ;;=3^Athscl Nonaut Bio CABG w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,34462,1,4,0)
+ ;;=4^I25.739
+ ;;^UTILITY(U,$J,358.3,34462,2)
+ ;;=^5007130
+ ;;^UTILITY(U,$J,358.3,34463,0)
+ ;;=I25.730^^125^1634^41
+ ;;^UTILITY(U,$J,358.3,34463,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34463,1,3,0)
+ ;;=3^Athscl Nonaut Bio CABG w/ Unstable Angina
+ ;;^UTILITY(U,$J,358.3,34463,1,4,0)
+ ;;=4^I25.730
+ ;;^UTILITY(U,$J,358.3,34463,2)
+ ;;=^5007127
+ ;;^UTILITY(U,$J,358.3,34464,0)
+ ;;=I25.791^^125^1634^24
+ ;;^UTILITY(U,$J,358.3,34464,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34464,1,3,0)
+ ;;=3^Athscl CABG w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,34464,1,4,0)
+ ;;=4^I25.791
+ ;;^UTILITY(U,$J,358.3,34464,2)
+ ;;=^5007140
+ ;;^UTILITY(U,$J,358.3,34465,0)
+ ;;=I25.798^^125^1634^22
+ ;;^UTILITY(U,$J,358.3,34465,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34465,1,3,0)
+ ;;=3^Athscl CABG w/ Ang Pctrs NEC
+ ;;^UTILITY(U,$J,358.3,34465,1,4,0)
+ ;;=4^I25.798
+ ;;^UTILITY(U,$J,358.3,34465,2)
+ ;;=^5133558
+ ;;^UTILITY(U,$J,358.3,34466,0)
+ ;;=I25.799^^125^1634^26
+ ;;^UTILITY(U,$J,358.3,34466,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34466,1,3,0)
+ ;;=3^Athscl CABG w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,34466,1,4,0)
+ ;;=4^I25.799
+ ;;^UTILITY(U,$J,358.3,34466,2)
+ ;;=^5133559
+ ;;^UTILITY(U,$J,358.3,34467,0)
+ ;;=I25.790^^125^1634^28
+ ;;^UTILITY(U,$J,358.3,34467,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34467,1,3,0)
+ ;;=3^Athscl CABG w/ Unstable Angina
+ ;;^UTILITY(U,$J,358.3,34467,1,4,0)
+ ;;=4^I25.790
+ ;;^UTILITY(U,$J,358.3,34467,2)
+ ;;=^5007139
+ ;;^UTILITY(U,$J,358.3,34468,0)
+ ;;=I25.111^^125^1634^29
+ ;;^UTILITY(U,$J,358.3,34468,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34468,1,3,0)
+ ;;=3^Athscl Hrt Disease Native Cor Art w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,34468,1,4,0)
+ ;;=4^I25.111
+ ;;^UTILITY(U,$J,358.3,34468,2)
+ ;;=^5007109
+ ;;^UTILITY(U,$J,358.3,34469,0)
+ ;;=I25.118^^125^1634^30
+ ;;^UTILITY(U,$J,358.3,34469,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34469,1,3,0)
+ ;;=3^Athscl Hrt Disease Native Cor Art w/ Ang Pctrs NEC
+ ;;^UTILITY(U,$J,358.3,34469,1,4,0)
+ ;;=4^I25.118
+ ;;^UTILITY(U,$J,358.3,34469,2)
+ ;;=^5007110
+ ;;^UTILITY(U,$J,358.3,34470,0)
+ ;;=I25.119^^125^1634^31
+ ;;^UTILITY(U,$J,358.3,34470,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34470,1,3,0)
+ ;;=3^Athscl Hrt Disease Native Cor Art w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,34470,1,4,0)
+ ;;=4^I25.119
+ ;;^UTILITY(U,$J,358.3,34470,2)
+ ;;=^5007111
+ ;;^UTILITY(U,$J,358.3,34471,0)
+ ;;=I25.110^^125^1634^32
+ ;;^UTILITY(U,$J,358.3,34471,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34471,1,3,0)
+ ;;=3^Athscl Hrt Disease Native Cor Art w/ Unstable Angina
+ ;;^UTILITY(U,$J,358.3,34471,1,4,0)
+ ;;=4^I25.110
+ ;;^UTILITY(U,$J,358.3,34471,2)
+ ;;=^5007108
+ ;;^UTILITY(U,$J,358.3,34472,0)
+ ;;=I25.10^^125^1634^33
+ ;;^UTILITY(U,$J,358.3,34472,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34472,1,3,0)
+ ;;=3^Athscl Hrt Disease Native Cor Art w/o Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,34472,1,4,0)
+ ;;=4^I25.10
+ ;;^UTILITY(U,$J,358.3,34472,2)
+ ;;=^5007107
+ ;;^UTILITY(U,$J,358.3,34473,0)
+ ;;=I48.0^^125^1634^42
+ ;;^UTILITY(U,$J,358.3,34473,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34473,1,3,0)
+ ;;=3^Atrial Fibrillation
+ ;;^UTILITY(U,$J,358.3,34473,1,4,0)
+ ;;=4^I48.0
+ ;;^UTILITY(U,$J,358.3,34473,2)
+ ;;=^90473
+ ;;^UTILITY(U,$J,358.3,34474,0)
+ ;;=I49.9^^125^1634^44
+ ;;^UTILITY(U,$J,358.3,34474,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34474,1,3,0)
+ ;;=3^Cardiac Arrhythmia,Unspec
+ ;;^UTILITY(U,$J,358.3,34474,1,4,0)
+ ;;=4^I49.9
+ ;;^UTILITY(U,$J,358.3,34474,2)
+ ;;=^5007237
+ ;;^UTILITY(U,$J,358.3,34475,0)
+ ;;=I42.9^^125^1634^45
+ ;;^UTILITY(U,$J,358.3,34475,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34475,1,3,0)
+ ;;=3^Cardiomyopathy,Unspec
+ ;;^UTILITY(U,$J,358.3,34475,1,4,0)
+ ;;=4^I42.9
+ ;;^UTILITY(U,$J,358.3,34475,2)
+ ;;=^5007200
+ ;;^UTILITY(U,$J,358.3,34476,0)
+ ;;=I50.42^^125^1634^47
+ ;;^UTILITY(U,$J,358.3,34476,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34476,1,3,0)
+ ;;=3^Chr Combined Systolic & Diastolic Congestive Hrt Failure
+ ;;^UTILITY(U,$J,358.3,34476,1,4,0)
+ ;;=4^I50.42
+ ;;^UTILITY(U,$J,358.3,34476,2)
+ ;;=^5007249

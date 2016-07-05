@@ -1,128 +1,282 @@
-IBDEI0Z0 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0Z0 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16123,1,4,0)
- ;;=4^R46.0
- ;;^UTILITY(U,$J,358.3,16123,2)
- ;;=^5019478
- ;;^UTILITY(U,$J,358.3,16124,0)
- ;;=F39.^^88^842^14
- ;;^UTILITY(U,$J,358.3,16124,1,0)
+ ;;^UTILITY(U,$J,358.3,35245,1,4,0)
+ ;;=4^Z02.0
+ ;;^UTILITY(U,$J,358.3,35245,2)
+ ;;=^5062633
+ ;;^UTILITY(U,$J,358.3,35246,0)
+ ;;=Z02.2^^128^1684^10
+ ;;^UTILITY(U,$J,358.3,35246,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16124,1,3,0)
- ;;=3^Mood Affective Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,16124,1,4,0)
- ;;=4^F39.
- ;;^UTILITY(U,$J,358.3,16124,2)
- ;;=^5003541
- ;;^UTILITY(U,$J,358.3,16125,0)
- ;;=F06.30^^88^842^15
- ;;^UTILITY(U,$J,358.3,16125,1,0)
+ ;;^UTILITY(U,$J,358.3,35246,1,3,0)
+ ;;=3^Exam,admission to residential institution
+ ;;^UTILITY(U,$J,358.3,35246,1,4,0)
+ ;;=4^Z02.2
+ ;;^UTILITY(U,$J,358.3,35246,2)
+ ;;=^5062635
+ ;;^UTILITY(U,$J,358.3,35247,0)
+ ;;=Z02.4^^128^1684^11
+ ;;^UTILITY(U,$J,358.3,35247,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16125,1,3,0)
- ;;=3^Mood Disorder d/t Physiological Condition
- ;;^UTILITY(U,$J,358.3,16125,1,4,0)
- ;;=4^F06.30
- ;;^UTILITY(U,$J,358.3,16125,2)
- ;;=^5003056
- ;;^UTILITY(U,$J,358.3,16126,0)
- ;;=F17.221^^88^842^19
- ;;^UTILITY(U,$J,358.3,16126,1,0)
+ ;;^UTILITY(U,$J,358.3,35247,1,3,0)
+ ;;=3^Exam,driving license
+ ;;^UTILITY(U,$J,358.3,35247,1,4,0)
+ ;;=4^Z02.4
+ ;;^UTILITY(U,$J,358.3,35247,2)
+ ;;=^5062637
+ ;;^UTILITY(U,$J,358.3,35248,0)
+ ;;=Z02.6^^128^1684^12
+ ;;^UTILITY(U,$J,358.3,35248,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16126,1,3,0)
- ;;=3^Nicotine Dependence,Chewing Tobacco,in Remission
- ;;^UTILITY(U,$J,358.3,16126,1,4,0)
- ;;=4^F17.221
- ;;^UTILITY(U,$J,358.3,16126,2)
- ;;=^5003371
- ;;^UTILITY(U,$J,358.3,16127,0)
- ;;=F17.220^^88^842^18
- ;;^UTILITY(U,$J,358.3,16127,1,0)
+ ;;^UTILITY(U,$J,358.3,35248,1,3,0)
+ ;;=3^Exam,insurance purposes
+ ;;^UTILITY(U,$J,358.3,35248,1,4,0)
+ ;;=4^Z02.6
+ ;;^UTILITY(U,$J,358.3,35248,2)
+ ;;=^5062639
+ ;;^UTILITY(U,$J,358.3,35249,0)
+ ;;=Z02.5^^128^1684^13
+ ;;^UTILITY(U,$J,358.3,35249,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16127,1,3,0)
- ;;=3^Nicotine Dependence,Chewing Tobacco,Uncomplicated
- ;;^UTILITY(U,$J,358.3,16127,1,4,0)
- ;;=4^F17.220
- ;;^UTILITY(U,$J,358.3,16127,2)
- ;;=^5003370
- ;;^UTILITY(U,$J,358.3,16128,0)
- ;;=F17.229^^88^842^16
- ;;^UTILITY(U,$J,358.3,16128,1,0)
+ ;;^UTILITY(U,$J,358.3,35249,1,3,0)
+ ;;=3^Exam,participation in sport
+ ;;^UTILITY(U,$J,358.3,35249,1,4,0)
+ ;;=4^Z02.5
+ ;;^UTILITY(U,$J,358.3,35249,2)
+ ;;=^5062638
+ ;;^UTILITY(U,$J,358.3,35250,0)
+ ;;=Z02.3^^128^1684^14
+ ;;^UTILITY(U,$J,358.3,35250,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16128,1,3,0)
- ;;=3^Nicotine Dependence,Chewing Tobacco w/ Unspec Disorders
- ;;^UTILITY(U,$J,358.3,16128,1,4,0)
- ;;=4^F17.229
- ;;^UTILITY(U,$J,358.3,16128,2)
- ;;=^5003374
- ;;^UTILITY(U,$J,358.3,16129,0)
- ;;=F17.223^^88^842^17
- ;;^UTILITY(U,$J,358.3,16129,1,0)
+ ;;^UTILITY(U,$J,358.3,35250,1,3,0)
+ ;;=3^Exam,recruitment to armed forces
+ ;;^UTILITY(U,$J,358.3,35250,1,4,0)
+ ;;=4^Z02.3
+ ;;^UTILITY(U,$J,358.3,35250,2)
+ ;;=^5062636
+ ;;^UTILITY(U,$J,358.3,35251,0)
+ ;;=Z44.8^^128^1684^17
+ ;;^UTILITY(U,$J,358.3,35251,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16129,1,3,0)
- ;;=3^Nicotine Dependence,Chewing Tobacco w/ Withdrawal
- ;;^UTILITY(U,$J,358.3,16129,1,4,0)
- ;;=4^F17.223
- ;;^UTILITY(U,$J,358.3,16129,2)
- ;;=^5003372
- ;;^UTILITY(U,$J,358.3,16130,0)
- ;;=F17.211^^88^842^23
- ;;^UTILITY(U,$J,358.3,16130,1,0)
+ ;;^UTILITY(U,$J,358.3,35251,1,3,0)
+ ;;=3^Fit/adjst,external prosth dev
+ ;;^UTILITY(U,$J,358.3,35251,1,4,0)
+ ;;=4^Z44.8
+ ;;^UTILITY(U,$J,358.3,35251,2)
+ ;;=^5062992
+ ;;^UTILITY(U,$J,358.3,35252,0)
+ ;;=Z44.9^^128^1684^18
+ ;;^UTILITY(U,$J,358.3,35252,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16130,1,3,0)
- ;;=3^Nicotine Dependence,Cigarettes,in Remission
- ;;^UTILITY(U,$J,358.3,16130,1,4,0)
- ;;=4^F17.211
- ;;^UTILITY(U,$J,358.3,16130,2)
- ;;=^5003366
- ;;^UTILITY(U,$J,358.3,16131,0)
- ;;=F17.210^^88^842^22
- ;;^UTILITY(U,$J,358.3,16131,1,0)
+ ;;^UTILITY(U,$J,358.3,35252,1,3,0)
+ ;;=3^Fit/adjst,external prosth device,unspec
+ ;;^UTILITY(U,$J,358.3,35252,1,4,0)
+ ;;=4^Z44.9
+ ;;^UTILITY(U,$J,358.3,35252,2)
+ ;;=^5062993
+ ;;^UTILITY(U,$J,358.3,35253,0)
+ ;;=Z09.^^128^1684^16
+ ;;^UTILITY(U,$J,358.3,35253,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16131,1,3,0)
- ;;=3^Nicotine Dependence,Cigarettes,Uncomplicated
- ;;^UTILITY(U,$J,358.3,16131,1,4,0)
- ;;=4^F17.210
- ;;^UTILITY(U,$J,358.3,16131,2)
- ;;=^5003365
- ;;^UTILITY(U,$J,358.3,16132,0)
- ;;=F17.219^^88^842^20
- ;;^UTILITY(U,$J,358.3,16132,1,0)
+ ;;^UTILITY(U,$J,358.3,35253,1,3,0)
+ ;;=3^F/U exam aft trtmt,cond oth than malig neoplm
+ ;;^UTILITY(U,$J,358.3,35253,1,4,0)
+ ;;=4^Z09.
+ ;;^UTILITY(U,$J,358.3,35253,2)
+ ;;=^5062668
+ ;;^UTILITY(U,$J,358.3,35254,0)
+ ;;=Z02.79^^128^1684^19
+ ;;^UTILITY(U,$J,358.3,35254,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16132,1,3,0)
- ;;=3^Nicotine Dependence,Cigarettes w/ Unspec Disorders
- ;;^UTILITY(U,$J,358.3,16132,1,4,0)
- ;;=4^F17.219
- ;;^UTILITY(U,$J,358.3,16132,2)
- ;;=^5003369
- ;;^UTILITY(U,$J,358.3,16133,0)
- ;;=F17.213^^88^842^21
- ;;^UTILITY(U,$J,358.3,16133,1,0)
+ ;;^UTILITY(U,$J,358.3,35254,1,3,0)
+ ;;=3^Issue of other medical certificate
+ ;;^UTILITY(U,$J,358.3,35254,1,4,0)
+ ;;=4^Z02.79
+ ;;^UTILITY(U,$J,358.3,35254,2)
+ ;;=^5062641
+ ;;^UTILITY(U,$J,358.3,35255,0)
+ ;;=Z51.89^^128^1684^31
+ ;;^UTILITY(U,$J,358.3,35255,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16133,1,3,0)
- ;;=3^Nicotine Dependence,Cigarettes w/ Withdrawal
- ;;^UTILITY(U,$J,358.3,16133,1,4,0)
- ;;=4^F17.213
- ;;^UTILITY(U,$J,358.3,16133,2)
- ;;=^5003367
- ;;^UTILITY(U,$J,358.3,16134,0)
- ;;=F17.291^^88^842^24
- ;;^UTILITY(U,$J,358.3,16134,1,0)
+ ;;^UTILITY(U,$J,358.3,35255,1,3,0)
+ ;;=3^Specified aftercare NEC
+ ;;^UTILITY(U,$J,358.3,35255,1,4,0)
+ ;;=4^Z51.89
+ ;;^UTILITY(U,$J,358.3,35255,2)
+ ;;=^5063065
+ ;;^UTILITY(U,$J,358.3,35256,0)
+ ;;=Z02.1^^128^1684^25
+ ;;^UTILITY(U,$J,358.3,35256,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16134,1,3,0)
- ;;=3^Nicotine Dependence,Oth Tobacco Product,in Remission
- ;;^UTILITY(U,$J,358.3,16134,1,4,0)
- ;;=4^F17.291
- ;;^UTILITY(U,$J,358.3,16134,2)
- ;;=^5003376
- ;;^UTILITY(U,$J,358.3,16135,0)
- ;;=F17.290^^88^842^25
- ;;^UTILITY(U,$J,358.3,16135,1,0)
+ ;;^UTILITY(U,$J,358.3,35256,1,3,0)
+ ;;=3^Pre-employment examination
+ ;;^UTILITY(U,$J,358.3,35256,1,4,0)
+ ;;=4^Z02.1
+ ;;^UTILITY(U,$J,358.3,35256,2)
+ ;;=^5062634
+ ;;^UTILITY(U,$J,358.3,35257,0)
+ ;;=Z13.5^^128^1684^15
+ ;;^UTILITY(U,$J,358.3,35257,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16135,1,3,0)
- ;;=3^Nicotine Dependence,Oth Tobacco Product,Uncomplicated
- ;;^UTILITY(U,$J,358.3,16135,1,4,0)
- ;;=4^F17.290
- ;;^UTILITY(U,$J,358.3,16135,2)
- ;;=^5003375
+ ;;^UTILITY(U,$J,358.3,35257,1,3,0)
+ ;;=3^Eye and Ear Disorder Screening
+ ;;^UTILITY(U,$J,358.3,35257,1,4,0)
+ ;;=4^Z13.5
+ ;;^UTILITY(U,$J,358.3,35257,2)
+ ;;=^5062706
+ ;;^UTILITY(U,$J,358.3,35258,0)
+ ;;=Z13.850^^128^1684^32
+ ;;^UTILITY(U,$J,358.3,35258,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35258,1,3,0)
+ ;;=3^Traumatic Brain Injury Screening
+ ;;^UTILITY(U,$J,358.3,35258,1,4,0)
+ ;;=4^Z13.850
+ ;;^UTILITY(U,$J,358.3,35258,2)
+ ;;=^5062717
+ ;;^UTILITY(U,$J,358.3,35259,0)
+ ;;=Z85.841^^128^1684^20
+ ;;^UTILITY(U,$J,358.3,35259,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35259,1,3,0)
+ ;;=3^Prsnl hx,malig neopl,brain
+ ;;^UTILITY(U,$J,358.3,35259,1,4,0)
+ ;;=4^Z85.841
+ ;;^UTILITY(U,$J,358.3,35259,2)
+ ;;=^5063447
+ ;;^UTILITY(U,$J,358.3,35260,0)
+ ;;=Z85.21^^128^1684^21
+ ;;^UTILITY(U,$J,358.3,35260,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35260,1,3,0)
+ ;;=3^Prsnl hx,malig neopl,larynx
+ ;;^UTILITY(U,$J,358.3,35260,1,4,0)
+ ;;=4^Z85.21
+ ;;^UTILITY(U,$J,358.3,35260,2)
+ ;;=^5063411
+ ;;^UTILITY(U,$J,358.3,35261,0)
+ ;;=Z85.22^^128^1684^22
+ ;;^UTILITY(U,$J,358.3,35261,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35261,1,3,0)
+ ;;=3^Prsnl hx,malig neopl,nasl cav/midear/access sinus
+ ;;^UTILITY(U,$J,358.3,35261,1,4,0)
+ ;;=4^Z85.22
+ ;;^UTILITY(U,$J,358.3,35261,2)
+ ;;=^5063412
+ ;;^UTILITY(U,$J,358.3,35262,0)
+ ;;=Z85.810^^128^1684^23
+ ;;^UTILITY(U,$J,358.3,35262,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35262,1,3,0)
+ ;;=3^Prsnl hx,malig neopl,tongue
+ ;;^UTILITY(U,$J,358.3,35262,1,4,0)
+ ;;=4^Z85.810
+ ;;^UTILITY(U,$J,358.3,35262,2)
+ ;;=^5063438
+ ;;^UTILITY(U,$J,358.3,35263,0)
+ ;;=Z85.12^^128^1684^24
+ ;;^UTILITY(U,$J,358.3,35263,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35263,1,3,0)
+ ;;=3^Prsnl hx,malig neopl,trachea
+ ;;^UTILITY(U,$J,358.3,35263,1,4,0)
+ ;;=4^Z85.12
+ ;;^UTILITY(U,$J,358.3,35263,2)
+ ;;=^5063409
+ ;;^UTILITY(U,$J,358.3,35264,0)
+ ;;=Z53.09^^128^1684^26
+ ;;^UTILITY(U,$J,358.3,35264,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35264,1,3,0)
+ ;;=3^Proc/trtmt not crd out,contraindication
+ ;;^UTILITY(U,$J,358.3,35264,1,4,0)
+ ;;=4^Z53.09
+ ;;^UTILITY(U,$J,358.3,35264,2)
+ ;;=^5063093
+ ;;^UTILITY(U,$J,358.3,35265,0)
+ ;;=Z53.29^^128^1684^29
+ ;;^UTILITY(U,$J,358.3,35265,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35265,1,3,0)
+ ;;=3^Proc/trtmt not crd out,pt decision for oth reasons
+ ;;^UTILITY(U,$J,358.3,35265,1,4,0)
+ ;;=4^Z53.29
+ ;;^UTILITY(U,$J,358.3,35265,2)
+ ;;=^5063097
+ ;;^UTILITY(U,$J,358.3,35266,0)
+ ;;=Z53.1^^128^1684^28
+ ;;^UTILITY(U,$J,358.3,35266,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35266,1,3,0)
+ ;;=3^Proc/trtmt not crd out,pt believ/group pressure
+ ;;^UTILITY(U,$J,358.3,35266,1,4,0)
+ ;;=4^Z53.1
+ ;;^UTILITY(U,$J,358.3,35266,2)
+ ;;=^5063094
+ ;;^UTILITY(U,$J,358.3,35267,0)
+ ;;=Z53.21^^128^1684^30
+ ;;^UTILITY(U,$J,358.3,35267,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35267,1,3,0)
+ ;;=3^Proc/trtmt not crd out,pt lv bef seen by HC prov
+ ;;^UTILITY(U,$J,358.3,35267,1,4,0)
+ ;;=4^Z53.21
+ ;;^UTILITY(U,$J,358.3,35267,2)
+ ;;=^5063096
+ ;;^UTILITY(U,$J,358.3,35268,0)
+ ;;=Z53.8^^128^1684^27
+ ;;^UTILITY(U,$J,358.3,35268,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35268,1,3,0)
+ ;;=3^Proc/trtmt not crd out,oth reasons
+ ;;^UTILITY(U,$J,358.3,35268,1,4,0)
+ ;;=4^Z53.8
+ ;;^UTILITY(U,$J,358.3,35268,2)
+ ;;=^5063098
+ ;;^UTILITY(U,$J,358.3,35269,0)
+ ;;=90832^^129^1685^1^^^^1
+ ;;^UTILITY(U,$J,358.3,35269,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,35269,1,2,0)
+ ;;=2^90832
+ ;;^UTILITY(U,$J,358.3,35269,1,3,0)
+ ;;=3^Inpt/Outpt Psytx;16-37 min
+ ;;^UTILITY(U,$J,358.3,35270,0)
+ ;;=90834^^129^1685^2^^^^1
+ ;;^UTILITY(U,$J,358.3,35270,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,35270,1,2,0)
+ ;;=2^90834
+ ;;^UTILITY(U,$J,358.3,35270,1,3,0)
+ ;;=3^Inpt/Outpt Psytx;38-52 min
+ ;;^UTILITY(U,$J,358.3,35271,0)
+ ;;=90837^^129^1685^3^^^^1
+ ;;^UTILITY(U,$J,358.3,35271,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,35271,1,2,0)
+ ;;=2^90837
+ ;;^UTILITY(U,$J,358.3,35271,1,3,0)
+ ;;=3^Inpt/Outpt Psytx;53+ min
+ ;;^UTILITY(U,$J,358.3,35272,0)
+ ;;=90839^^129^1685^6^^^^1
+ ;;^UTILITY(U,$J,358.3,35272,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,35272,1,2,0)
+ ;;=2^90839
+ ;;^UTILITY(U,$J,358.3,35272,1,3,0)
+ ;;=3^PsyTx Crisis Initial 60 min
+ ;;^UTILITY(U,$J,358.3,35273,0)
+ ;;=90840^^129^1685^5^^^^1
+ ;;^UTILITY(U,$J,358.3,35273,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,35273,1,2,0)
+ ;;=2^90840
+ ;;^UTILITY(U,$J,358.3,35273,1,3,0)
+ ;;=3^PsyTx Crisis Ea Addl 30 min
+ ;;^UTILITY(U,$J,358.3,35274,0)
+ ;;=90785^^129^1685^4^^^^1
+ ;;^UTILITY(U,$J,358.3,35274,1,0)
+ ;;=^358.31IA^3^2

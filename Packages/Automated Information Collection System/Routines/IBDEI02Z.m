@@ -1,136 +1,282 @@
-IBDEI02Z ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI02Z ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,634,0)
- ;;=G30.0^^6^76^2
- ;;^UTILITY(U,$J,358.3,634,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,634,1,3,0)
- ;;=3^Alzheimer's Disease w/ Early Onset
- ;;^UTILITY(U,$J,358.3,634,1,4,0)
- ;;=4^G30.0
- ;;^UTILITY(U,$J,358.3,634,2)
- ;;=^5003805
- ;;^UTILITY(U,$J,358.3,635,0)
- ;;=G30.1^^6^76^3
- ;;^UTILITY(U,$J,358.3,635,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,635,1,3,0)
- ;;=3^Alzheimer's Disease w/ Late Onset
- ;;^UTILITY(U,$J,358.3,635,1,4,0)
- ;;=4^G30.1
- ;;^UTILITY(U,$J,358.3,635,2)
- ;;=^5003806
- ;;^UTILITY(U,$J,358.3,636,0)
- ;;=G30.9^^6^76^4
- ;;^UTILITY(U,$J,358.3,636,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,636,1,3,0)
- ;;=3^Alzheimer's Disease,Unspec
- ;;^UTILITY(U,$J,358.3,636,1,4,0)
- ;;=4^G30.9
- ;;^UTILITY(U,$J,358.3,636,2)
- ;;=^5003808
- ;;^UTILITY(U,$J,358.3,637,0)
- ;;=G10.^^6^76^19
- ;;^UTILITY(U,$J,358.3,637,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,637,1,3,0)
- ;;=3^Huntington's Disease w/ Dementia w/ Behavioral Disturbance
- ;;^UTILITY(U,$J,358.3,637,1,4,0)
- ;;=4^G10.
- ;;^UTILITY(U,$J,358.3,637,2)
- ;;=^5003751^F02.81
- ;;^UTILITY(U,$J,358.3,638,0)
- ;;=G10.^^6^76^20
- ;;^UTILITY(U,$J,358.3,638,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,638,1,3,0)
- ;;=3^Huntington's Disease w/ Dementia w/o Behavioral Disturbances
- ;;^UTILITY(U,$J,358.3,638,1,4,0)
- ;;=4^G10.
- ;;^UTILITY(U,$J,358.3,638,2)
- ;;=^5003751^F02.80
- ;;^UTILITY(U,$J,358.3,639,0)
- ;;=G90.3^^6^76^21
- ;;^UTILITY(U,$J,358.3,639,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,639,1,3,0)
- ;;=3^Multi-System Degeneration of the Autonomic Nervous System
- ;;^UTILITY(U,$J,358.3,639,1,4,0)
- ;;=4^G90.3
- ;;^UTILITY(U,$J,358.3,639,2)
- ;;=^5004162
- ;;^UTILITY(U,$J,358.3,640,0)
- ;;=G91.2^^6^76^22
- ;;^UTILITY(U,$J,358.3,640,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,640,1,3,0)
- ;;=3^NPH w/ Dementia w/ Behavioral Disturbances
- ;;^UTILITY(U,$J,358.3,640,1,4,0)
- ;;=4^G91.2
- ;;^UTILITY(U,$J,358.3,640,2)
- ;;=^5004174^F02.81
- ;;^UTILITY(U,$J,358.3,641,0)
- ;;=G91.2^^6^76^23
- ;;^UTILITY(U,$J,358.3,641,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,641,1,3,0)
- ;;=3^NPH w/ Dementia w/o Behavioral Disturbances
- ;;^UTILITY(U,$J,358.3,641,1,4,0)
- ;;=4^G91.2
- ;;^UTILITY(U,$J,358.3,641,2)
- ;;=^5004174^F02.80
- ;;^UTILITY(U,$J,358.3,642,0)
- ;;=G30.8^^6^76^5
- ;;^UTILITY(U,$J,358.3,642,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,642,1,3,0)
- ;;=3^Alzheimer's Diseases NEC
- ;;^UTILITY(U,$J,358.3,642,1,4,0)
- ;;=4^G30.8
- ;;^UTILITY(U,$J,358.3,642,2)
- ;;=^5003807
- ;;^UTILITY(U,$J,358.3,643,0)
- ;;=G31.09^^6^76^16
- ;;^UTILITY(U,$J,358.3,643,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,643,1,3,0)
- ;;=3^Frontotemporal Dementia NEC
- ;;^UTILITY(U,$J,358.3,643,1,4,0)
- ;;=4^G31.09
- ;;^UTILITY(U,$J,358.3,643,2)
- ;;=^329916
- ;;^UTILITY(U,$J,358.3,644,0)
- ;;=G20.^^6^76^24
- ;;^UTILITY(U,$J,358.3,644,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,644,1,3,0)
- ;;=3^Parkinson's Disease w/ Dementia w/ Behavioral Disturbances
- ;;^UTILITY(U,$J,358.3,644,1,4,0)
- ;;=4^G20.
- ;;^UTILITY(U,$J,358.3,644,2)
- ;;=^5003770^F02.81
- ;;^UTILITY(U,$J,358.3,645,0)
- ;;=G20.^^6^76^25
- ;;^UTILITY(U,$J,358.3,645,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,645,1,3,0)
- ;;=3^Parkinson's Disease w/ Dementia w/o Behavioral Disturbances
- ;;^UTILITY(U,$J,358.3,645,1,4,0)
- ;;=4^G20.
- ;;^UTILITY(U,$J,358.3,645,2)
- ;;=^5003770^F02.80
- ;;^UTILITY(U,$J,358.3,646,0)
- ;;=G31.01^^6^76^26
- ;;^UTILITY(U,$J,358.3,646,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,646,1,3,0)
- ;;=3^Pick's Disease
- ;;^UTILITY(U,$J,358.3,646,1,4,0)
- ;;=4^G31.01
- ;;^UTILITY(U,$J,358.3,646,2)
- ;;=^329915
- ;;^UTILITY(U,$J,358.3,647,0)
- ;;=G23.1^^6^76^28
+ ;;^UTILITY(U,$J,358.3,2595,0)
+ ;;=A9502^^15^184^23^^^^1
+ ;;^UTILITY(U,$J,358.3,2595,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2595,1,2,0)
+ ;;=2^A9502
+ ;;^UTILITY(U,$J,358.3,2595,1,3,0)
+ ;;=3^TC99M Tetrofosmin
+ ;;^UTILITY(U,$J,358.3,2596,0)
+ ;;=J0280^^15^184^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2596,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2596,1,2,0)
+ ;;=2^J0280
+ ;;^UTILITY(U,$J,358.3,2596,1,3,0)
+ ;;=3^Aminophyllin 250mg
+ ;;^UTILITY(U,$J,358.3,2597,0)
+ ;;=J0461^^15^184^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2597,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2597,1,2,0)
+ ;;=2^J0461
+ ;;^UTILITY(U,$J,358.3,2597,1,3,0)
+ ;;=3^Atropine Sulfate 0.01mg
+ ;;^UTILITY(U,$J,358.3,2598,0)
+ ;;=J1245^^15^184^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2598,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2598,1,2,0)
+ ;;=2^J1245
+ ;;^UTILITY(U,$J,358.3,2598,1,3,0)
+ ;;=3^Dipyridamole per 10mg
+ ;;^UTILITY(U,$J,358.3,2599,0)
+ ;;=J2785^^15^184^21^^^^1
+ ;;^UTILITY(U,$J,358.3,2599,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2599,1,2,0)
+ ;;=2^J2785
+ ;;^UTILITY(U,$J,358.3,2599,1,3,0)
+ ;;=3^Regadenoson 0.1mg
+ ;;^UTILITY(U,$J,358.3,2600,0)
+ ;;=J7030^^15^184^14^^^^1
+ ;;^UTILITY(U,$J,358.3,2600,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2600,1,2,0)
+ ;;=2^J7030
+ ;;^UTILITY(U,$J,358.3,2600,1,3,0)
+ ;;=3^NS Solution Infusion 1000ml
+ ;;^UTILITY(U,$J,358.3,2601,0)
+ ;;=J7050^^15^184^15^^^^1
+ ;;^UTILITY(U,$J,358.3,2601,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2601,1,2,0)
+ ;;=2^J7050
+ ;;^UTILITY(U,$J,358.3,2601,1,3,0)
+ ;;=3^NS Solution Infusion 250ml
+ ;;^UTILITY(U,$J,358.3,2602,0)
+ ;;=J7040^^15^184^16^^^^1
+ ;;^UTILITY(U,$J,358.3,2602,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2602,1,2,0)
+ ;;=2^J7040
+ ;;^UTILITY(U,$J,358.3,2602,1,3,0)
+ ;;=3^NS Solution Infusion 500ml
+ ;;^UTILITY(U,$J,358.3,2603,0)
+ ;;=J3240^^15^184^27^^^^1
+ ;;^UTILITY(U,$J,358.3,2603,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2603,1,2,0)
+ ;;=2^J3240
+ ;;^UTILITY(U,$J,358.3,2603,1,3,0)
+ ;;=3^Thyrotropin Alpha 0.9mg
+ ;;^UTILITY(U,$J,358.3,2604,0)
+ ;;=93015^^15^185^7
+ ;;^UTILITY(U,$J,358.3,2604,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2604,1,2,0)
+ ;;=2^93015
+ ;;^UTILITY(U,$J,358.3,2604,1,3,0)
+ ;;=3^Cardiovascular Stress Test
+ ;;^UTILITY(U,$J,358.3,2605,0)
+ ;;=93660^^15^185^16
+ ;;^UTILITY(U,$J,358.3,2605,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2605,1,2,0)
+ ;;=2^93660
+ ;;^UTILITY(U,$J,358.3,2605,1,3,0)
+ ;;=3^Tilt Test Study
+ ;;^UTILITY(U,$J,358.3,2606,0)
+ ;;=78472^^15^185^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2606,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2606,1,2,0)
+ ;;=2^78472
+ ;;^UTILITY(U,$J,358.3,2606,1,3,0)
+ ;;=3^Cardiac Blood Pool Gate+EF 
+ ;;^UTILITY(U,$J,358.3,2607,0)
+ ;;=78473^^15^185^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2607,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2607,1,2,0)
+ ;;=2^78473
+ ;;^UTILITY(U,$J,358.3,2607,1,3,0)
+ ;;=3^Cardiac Blood Pool Gate mult
+ ;;^UTILITY(U,$J,358.3,2608,0)
+ ;;=78481^^15^185^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2608,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2608,1,2,0)
+ ;;=2^78481
+ ;;^UTILITY(U,$J,358.3,2608,1,3,0)
+ ;;=3^Cardiac Blood Pool Imag
+ ;;^UTILITY(U,$J,358.3,2609,0)
+ ;;=78483^^15^185^5^^^^1
+ ;;^UTILITY(U,$J,358.3,2609,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2609,1,2,0)
+ ;;=2^78483
+ ;;^UTILITY(U,$J,358.3,2609,1,3,0)
+ ;;=3^Cardiac Blood Pool Imag mult
+ ;;^UTILITY(U,$J,358.3,2610,0)
+ ;;=78491^^15^185^14^^^^1
+ ;;^UTILITY(U,$J,358.3,2610,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2610,1,2,0)
+ ;;=2^78491
+ ;;^UTILITY(U,$J,358.3,2610,1,3,0)
+ ;;=3^PET, Single, Rest or stress
+ ;;^UTILITY(U,$J,358.3,2611,0)
+ ;;=78492^^15^185^15^^^^1
+ ;;^UTILITY(U,$J,358.3,2611,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2611,1,2,0)
+ ;;=2^78492
+ ;;^UTILITY(U,$J,358.3,2611,1,3,0)
+ ;;=3^PET, multiple, rest or stress
+ ;;^UTILITY(U,$J,358.3,2612,0)
+ ;;=78496^^15^185^4^^^^1
+ ;;^UTILITY(U,$J,358.3,2612,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2612,1,2,0)
+ ;;=2^78496
+ ;;^UTILITY(U,$J,358.3,2612,1,3,0)
+ ;;=3^Cardiac Blood Pool Imag Gate sgl+EF
+ ;;^UTILITY(U,$J,358.3,2613,0)
+ ;;=78451^^15^185^11^^^^1
+ ;;^UTILITY(U,$J,358.3,2613,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2613,1,2,0)
+ ;;=2^78451
+ ;;^UTILITY(U,$J,358.3,2613,1,3,0)
+ ;;=3^HT Muscle Image Spect,Single
+ ;;^UTILITY(U,$J,358.3,2614,0)
+ ;;=78452^^15^185^10^^^^1
+ ;;^UTILITY(U,$J,358.3,2614,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2614,1,2,0)
+ ;;=2^78452
+ ;;^UTILITY(U,$J,358.3,2614,1,3,0)
+ ;;=3^HT Muscle Image Spect,Multi
+ ;;^UTILITY(U,$J,358.3,2615,0)
+ ;;=78453^^15^185^13^^^^1
+ ;;^UTILITY(U,$J,358.3,2615,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2615,1,2,0)
+ ;;=2^78453
+ ;;^UTILITY(U,$J,358.3,2615,1,3,0)
+ ;;=3^HT Muscle Image,Planar,Single
+ ;;^UTILITY(U,$J,358.3,2616,0)
+ ;;=78454^^15^185^12^^^^1
+ ;;^UTILITY(U,$J,358.3,2616,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2616,1,2,0)
+ ;;=2^78454
+ ;;^UTILITY(U,$J,358.3,2616,1,3,0)
+ ;;=3^HT Muscle Image,Planar,Multi
+ ;;^UTILITY(U,$J,358.3,2617,0)
+ ;;=93641^^15^185^8^^^^1
+ ;;^UTILITY(U,$J,358.3,2617,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2617,1,2,0)
+ ;;=2^93641
+ ;;^UTILITY(U,$J,358.3,2617,1,3,0)
+ ;;=3^Electrophysiology Eval,Pulse Generator
+ ;;^UTILITY(U,$J,358.3,2618,0)
+ ;;=93642^^15^185^9^^^^1
+ ;;^UTILITY(U,$J,358.3,2618,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2618,1,2,0)
+ ;;=2^93642
+ ;;^UTILITY(U,$J,358.3,2618,1,3,0)
+ ;;=3^Electrophysiology Eval,Sensing/Therapeutic Parameters
+ ;;^UTILITY(U,$J,358.3,2619,0)
+ ;;=93797^^15^185^6^^^^1
+ ;;^UTILITY(U,$J,358.3,2619,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2619,1,2,0)
+ ;;=2^93797
+ ;;^UTILITY(U,$J,358.3,2619,1,3,0)
+ ;;=3^Cardiac Rehab w/o ECG Monitoring
+ ;;^UTILITY(U,$J,358.3,2620,0)
+ ;;=93799^^15^185^17^^^^1
+ ;;^UTILITY(U,$J,358.3,2620,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2620,1,2,0)
+ ;;=2^93799
+ ;;^UTILITY(U,$J,358.3,2620,1,3,0)
+ ;;=3^Unlisted Cardiovascular Procedure
+ ;;^UTILITY(U,$J,358.3,2621,0)
+ ;;=93015^^15^186^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2621,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2621,1,2,0)
+ ;;=2^93015
+ ;;^UTILITY(U,$J,358.3,2621,1,3,0)
+ ;;=3^Cardiovascular Stress Test
+ ;;^UTILITY(U,$J,358.3,2622,0)
+ ;;=93016^^15^186^5^^^^1
+ ;;^UTILITY(U,$J,358.3,2622,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2622,1,2,0)
+ ;;=2^93016
+ ;;^UTILITY(U,$J,358.3,2622,1,3,0)
+ ;;=3^Stress Test, Phy Super Only No Report
+ ;;^UTILITY(U,$J,358.3,2623,0)
+ ;;=93017^^15^186^6^^^^1
+ ;;^UTILITY(U,$J,358.3,2623,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2623,1,2,0)
+ ;;=2^93017
+ ;;^UTILITY(U,$J,358.3,2623,1,3,0)
+ ;;=3^Stress Test, Tracing Only
+ ;;^UTILITY(U,$J,358.3,2624,0)
+ ;;=93018^^15^186^4^^^^1
+ ;;^UTILITY(U,$J,358.3,2624,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2624,1,2,0)
+ ;;=2^93018
+ ;;^UTILITY(U,$J,358.3,2624,1,3,0)
+ ;;=3^Stress Test, Interr & Report Only
+ ;;^UTILITY(U,$J,358.3,2625,0)
+ ;;=78451^^15^186^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2625,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2625,1,2,0)
+ ;;=2^78451
+ ;;^UTILITY(U,$J,358.3,2625,1,3,0)
+ ;;=3^SPECT,Single Study
+ ;;^UTILITY(U,$J,358.3,2626,0)
+ ;;=93350^^15^186^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2626,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2626,1,2,0)
+ ;;=2^93350
+ ;;^UTILITY(U,$J,358.3,2626,1,3,0)
+ ;;=3^Stress TTE Only
+ ;;^UTILITY(U,$J,358.3,2627,0)
+ ;;=99401^^15^187^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2627,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2627,1,2,0)
+ ;;=2^99401
+ ;;^UTILITY(U,$J,358.3,2627,1,3,0)
+ ;;=3^Preventive Counseling,15 min
+ ;;^UTILITY(U,$J,358.3,2628,0)
+ ;;=99402^^15^187^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2628,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2628,1,2,0)
+ ;;=2^99402
+ ;;^UTILITY(U,$J,358.3,2628,1,3,0)
+ ;;=3^Preventive Counseling,30 min
+ ;;^UTILITY(U,$J,358.3,2629,0)
+ ;;=99403^^15^187^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2629,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2629,1,2,0)
+ ;;=2^99403

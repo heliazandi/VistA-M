@@ -1,138 +1,282 @@
-IBDEI0FH ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0FH ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6826,2)
- ;;=^5001894
- ;;^UTILITY(U,$J,358.3,6827,0)
- ;;=D03.30^^46^451^59
- ;;^UTILITY(U,$J,358.3,6827,1,0)
+ ;;^UTILITY(U,$J,358.3,15493,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6827,1,3,0)
- ;;=3^Melanoma in Situ Unspec Part of Face
- ;;^UTILITY(U,$J,358.3,6827,1,4,0)
- ;;=4^D03.30
- ;;^UTILITY(U,$J,358.3,6827,2)
- ;;=^5001895
- ;;^UTILITY(U,$J,358.3,6828,0)
- ;;=D03.4^^46^451^57
- ;;^UTILITY(U,$J,358.3,6828,1,0)
+ ;;^UTILITY(U,$J,358.3,15493,1,3,0)
+ ;;=3^Abnormal Finding on Dx Image of Limbs
+ ;;^UTILITY(U,$J,358.3,15493,1,4,0)
+ ;;=4^R93.6
+ ;;^UTILITY(U,$J,358.3,15493,2)
+ ;;=^5019719
+ ;;^UTILITY(U,$J,358.3,15494,0)
+ ;;=R94.4^^61^752^16
+ ;;^UTILITY(U,$J,358.3,15494,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6828,1,3,0)
- ;;=3^Melanoma in Situ Scalp/Neck
- ;;^UTILITY(U,$J,358.3,6828,1,4,0)
- ;;=4^D03.4
- ;;^UTILITY(U,$J,358.3,6828,2)
- ;;=^5001897
- ;;^UTILITY(U,$J,358.3,6829,0)
- ;;=D03.59^^46^451^58
- ;;^UTILITY(U,$J,358.3,6829,1,0)
+ ;;^UTILITY(U,$J,358.3,15494,1,3,0)
+ ;;=3^Abnormal Kidney Function Studies
+ ;;^UTILITY(U,$J,358.3,15494,1,4,0)
+ ;;=4^R94.4
+ ;;^UTILITY(U,$J,358.3,15494,2)
+ ;;=^5019741
+ ;;^UTILITY(U,$J,358.3,15495,0)
+ ;;=R94.5^^61^752^17
+ ;;^UTILITY(U,$J,358.3,15495,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6829,1,3,0)
- ;;=3^Melanoma in Situ Trunk,Other Part
- ;;^UTILITY(U,$J,358.3,6829,1,4,0)
- ;;=4^D03.59
- ;;^UTILITY(U,$J,358.3,6829,2)
- ;;=^5001900
- ;;^UTILITY(U,$J,358.3,6830,0)
- ;;=D03.51^^46^451^47
- ;;^UTILITY(U,$J,358.3,6830,1,0)
+ ;;^UTILITY(U,$J,358.3,15495,1,3,0)
+ ;;=3^Abnormal Liver Function Studies
+ ;;^UTILITY(U,$J,358.3,15495,1,4,0)
+ ;;=4^R94.5
+ ;;^UTILITY(U,$J,358.3,15495,2)
+ ;;=^5019742
+ ;;^UTILITY(U,$J,358.3,15496,0)
+ ;;=R94.6^^61^752^21
+ ;;^UTILITY(U,$J,358.3,15496,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6830,1,3,0)
- ;;=3^Melanoma in Situ Anal Skin
- ;;^UTILITY(U,$J,358.3,6830,1,4,0)
- ;;=4^D03.51
- ;;^UTILITY(U,$J,358.3,6830,2)
- ;;=^5001898
- ;;^UTILITY(U,$J,358.3,6831,0)
- ;;=D03.52^^46^451^48
- ;;^UTILITY(U,$J,358.3,6831,1,0)
+ ;;^UTILITY(U,$J,358.3,15496,1,3,0)
+ ;;=3^Abnormal Thyroid Function Studies
+ ;;^UTILITY(U,$J,358.3,15496,1,4,0)
+ ;;=4^R94.6
+ ;;^UTILITY(U,$J,358.3,15496,2)
+ ;;=^5019743
+ ;;^UTILITY(U,$J,358.3,15497,0)
+ ;;=R94.7^^61^752^5
+ ;;^UTILITY(U,$J,358.3,15497,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6831,1,3,0)
- ;;=3^Melanoma in Situ Breast,Skin/Soft Tissue
- ;;^UTILITY(U,$J,358.3,6831,1,4,0)
- ;;=4^D03.52
- ;;^UTILITY(U,$J,358.3,6831,2)
- ;;=^5001899
- ;;^UTILITY(U,$J,358.3,6832,0)
- ;;=D03.61^^46^451^56
- ;;^UTILITY(U,$J,358.3,6832,1,0)
+ ;;^UTILITY(U,$J,358.3,15497,1,3,0)
+ ;;=3^Abnormal Endocrine Function Sutdies NEC
+ ;;^UTILITY(U,$J,358.3,15497,1,4,0)
+ ;;=4^R94.7
+ ;;^UTILITY(U,$J,358.3,15497,2)
+ ;;=^5019744
+ ;;^UTILITY(U,$J,358.3,15498,0)
+ ;;=R94.31^^61^752^4
+ ;;^UTILITY(U,$J,358.3,15498,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6832,1,3,0)
- ;;=3^Melanoma in Situ Right Upper Limb
- ;;^UTILITY(U,$J,358.3,6832,1,4,0)
- ;;=4^D03.61
- ;;^UTILITY(U,$J,358.3,6832,2)
- ;;=^5001902
- ;;^UTILITY(U,$J,358.3,6833,0)
- ;;=D03.62^^46^451^52
- ;;^UTILITY(U,$J,358.3,6833,1,0)
+ ;;^UTILITY(U,$J,358.3,15498,1,3,0)
+ ;;=3^Abnormal EKG
+ ;;^UTILITY(U,$J,358.3,15498,1,4,0)
+ ;;=4^R94.31
+ ;;^UTILITY(U,$J,358.3,15498,2)
+ ;;=^5019739
+ ;;^UTILITY(U,$J,358.3,15499,0)
+ ;;=R97.0^^61^752^67
+ ;;^UTILITY(U,$J,358.3,15499,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6833,1,3,0)
- ;;=3^Melanoma in Situ Left Upper Limb
- ;;^UTILITY(U,$J,358.3,6833,1,4,0)
- ;;=4^D03.62
- ;;^UTILITY(U,$J,358.3,6833,2)
- ;;=^5001903
- ;;^UTILITY(U,$J,358.3,6834,0)
- ;;=D03.71^^46^451^55
- ;;^UTILITY(U,$J,358.3,6834,1,0)
+ ;;^UTILITY(U,$J,358.3,15499,1,3,0)
+ ;;=3^Elevated Carcinoembryonic Antigen 
+ ;;^UTILITY(U,$J,358.3,15499,1,4,0)
+ ;;=4^R97.0
+ ;;^UTILITY(U,$J,358.3,15499,2)
+ ;;=^5019746
+ ;;^UTILITY(U,$J,358.3,15500,0)
+ ;;=R97.1^^61^752^66
+ ;;^UTILITY(U,$J,358.3,15500,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6834,1,3,0)
- ;;=3^Melanoma in Situ Right Lower Limb
- ;;^UTILITY(U,$J,358.3,6834,1,4,0)
- ;;=4^D03.71
- ;;^UTILITY(U,$J,358.3,6834,2)
- ;;=^5001905
- ;;^UTILITY(U,$J,358.3,6835,0)
- ;;=D03.72^^46^451^51
- ;;^UTILITY(U,$J,358.3,6835,1,0)
+ ;;^UTILITY(U,$J,358.3,15500,1,3,0)
+ ;;=3^Elevated Cancer Antigen 125
+ ;;^UTILITY(U,$J,358.3,15500,1,4,0)
+ ;;=4^R97.1
+ ;;^UTILITY(U,$J,358.3,15500,2)
+ ;;=^5019747
+ ;;^UTILITY(U,$J,358.3,15501,0)
+ ;;=R97.2^^61^752^68
+ ;;^UTILITY(U,$J,358.3,15501,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6835,1,3,0)
- ;;=3^Melanoma in Situ Left Lower Limb
- ;;^UTILITY(U,$J,358.3,6835,1,4,0)
- ;;=4^D03.72
- ;;^UTILITY(U,$J,358.3,6835,2)
- ;;=^5001906
- ;;^UTILITY(U,$J,358.3,6836,0)
- ;;=D03.8^^46^451^61
- ;;^UTILITY(U,$J,358.3,6836,1,0)
+ ;;^UTILITY(U,$J,358.3,15501,1,3,0)
+ ;;=3^Elevated PSA
+ ;;^UTILITY(U,$J,358.3,15501,1,4,0)
+ ;;=4^R97.2
+ ;;^UTILITY(U,$J,358.3,15501,2)
+ ;;=^5019748
+ ;;^UTILITY(U,$J,358.3,15502,0)
+ ;;=R97.8^^61^752^22
+ ;;^UTILITY(U,$J,358.3,15502,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6836,1,3,0)
- ;;=3^Melanoma in Situ of Other Sites
- ;;^UTILITY(U,$J,358.3,6836,1,4,0)
- ;;=4^D03.8
- ;;^UTILITY(U,$J,358.3,6836,2)
- ;;=^5001907
- ;;^UTILITY(U,$J,358.3,6837,0)
- ;;=D22.0^^46^451^38
- ;;^UTILITY(U,$J,358.3,6837,1,0)
+ ;;^UTILITY(U,$J,358.3,15502,1,3,0)
+ ;;=3^Abnormal Tumor Markers NEC
+ ;;^UTILITY(U,$J,358.3,15502,1,4,0)
+ ;;=4^R97.8
+ ;;^UTILITY(U,$J,358.3,15502,2)
+ ;;=^5019749
+ ;;^UTILITY(U,$J,358.3,15503,0)
+ ;;=R93.8^^61^752^12
+ ;;^UTILITY(U,$J,358.3,15503,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6837,1,3,0)
- ;;=3^Melanocytic Nevi of Lip
- ;;^UTILITY(U,$J,358.3,6837,1,4,0)
- ;;=4^D22.0
- ;;^UTILITY(U,$J,358.3,6837,2)
- ;;=^5002041
- ;;^UTILITY(U,$J,358.3,6838,0)
- ;;=D22.12^^46^451^35
- ;;^UTILITY(U,$J,358.3,6838,1,0)
+ ;;^UTILITY(U,$J,358.3,15503,1,3,0)
+ ;;=3^Abnormal Findings on Dx Imaging of Body Structures
+ ;;^UTILITY(U,$J,358.3,15503,1,4,0)
+ ;;=4^R93.8
+ ;;^UTILITY(U,$J,358.3,15503,2)
+ ;;=^5019721
+ ;;^UTILITY(U,$J,358.3,15504,0)
+ ;;=R93.1^^61^752^14
+ ;;^UTILITY(U,$J,358.3,15504,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6838,1,3,0)
- ;;=3^Melanocytic Nevi of Left Eyelid
- ;;^UTILITY(U,$J,358.3,6838,1,4,0)
- ;;=4^D22.12
- ;;^UTILITY(U,$J,358.3,6838,2)
- ;;=^5002044
- ;;^UTILITY(U,$J,358.3,6839,0)
- ;;=D22.11^^46^451^40
- ;;^UTILITY(U,$J,358.3,6839,1,0)
+ ;;^UTILITY(U,$J,358.3,15504,1,3,0)
+ ;;=3^Abnormal Findings on Dx Imaging of Heart/Cor Circ
+ ;;^UTILITY(U,$J,358.3,15504,1,4,0)
+ ;;=4^R93.1
+ ;;^UTILITY(U,$J,358.3,15504,2)
+ ;;=^5019714
+ ;;^UTILITY(U,$J,358.3,15505,0)
+ ;;=R68.83^^61^752^48
+ ;;^UTILITY(U,$J,358.3,15505,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6839,1,3,0)
- ;;=3^Melanocytic Nevi of Right Eyelid
- ;;^UTILITY(U,$J,358.3,6839,1,4,0)
- ;;=4^D22.11
- ;;^UTILITY(U,$J,358.3,6839,2)
- ;;=^5002043
- ;;^UTILITY(U,$J,358.3,6840,0)
- ;;=D22.21^^46^451^39
+ ;;^UTILITY(U,$J,358.3,15505,1,3,0)
+ ;;=3^Chills w/o Fever
+ ;;^UTILITY(U,$J,358.3,15505,1,4,0)
+ ;;=4^R68.83
+ ;;^UTILITY(U,$J,358.3,15505,2)
+ ;;=^5019555
+ ;;^UTILITY(U,$J,358.3,15506,0)
+ ;;=R68.2^^61^752^62
+ ;;^UTILITY(U,$J,358.3,15506,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15506,1,3,0)
+ ;;=3^Dry Mouth,Unspec
+ ;;^UTILITY(U,$J,358.3,15506,1,4,0)
+ ;;=4^R68.2
+ ;;^UTILITY(U,$J,358.3,15506,2)
+ ;;=^5019552
+ ;;^UTILITY(U,$J,358.3,15507,0)
+ ;;=R09.02^^61^752^88
+ ;;^UTILITY(U,$J,358.3,15507,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15507,1,3,0)
+ ;;=3^Hypoxemia
+ ;;^UTILITY(U,$J,358.3,15507,1,4,0)
+ ;;=4^R09.02
+ ;;^UTILITY(U,$J,358.3,15507,2)
+ ;;=^332831
+ ;;^UTILITY(U,$J,358.3,15508,0)
+ ;;=R39.81^^61^752^92
+ ;;^UTILITY(U,$J,358.3,15508,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15508,1,3,0)
+ ;;=3^Incontinence d/t Cognitive Imprmt/Svr Disability/Mobility
+ ;;^UTILITY(U,$J,358.3,15508,1,4,0)
+ ;;=4^R39.81
+ ;;^UTILITY(U,$J,358.3,15508,2)
+ ;;=^5019349
+ ;;^UTILITY(U,$J,358.3,15509,0)
+ ;;=R29.6^^61^752^146
+ ;;^UTILITY(U,$J,358.3,15509,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15509,1,3,0)
+ ;;=3^Repeated Falls
+ ;;^UTILITY(U,$J,358.3,15509,1,4,0)
+ ;;=4^R29.6
+ ;;^UTILITY(U,$J,358.3,15509,2)
+ ;;=^5019317
+ ;;^UTILITY(U,$J,358.3,15510,0)
+ ;;=R44.1^^61^752^160
+ ;;^UTILITY(U,$J,358.3,15510,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15510,1,3,0)
+ ;;=3^Visual Hallucinations
+ ;;^UTILITY(U,$J,358.3,15510,1,4,0)
+ ;;=4^R44.1
+ ;;^UTILITY(U,$J,358.3,15510,2)
+ ;;=^5019456
+ ;;^UTILITY(U,$J,358.3,15511,0)
+ ;;=S43.51XA^^61^753^12
+ ;;^UTILITY(U,$J,358.3,15511,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15511,1,3,0)
+ ;;=3^Sprain of Right Acromioclavicular Joint
+ ;;^UTILITY(U,$J,358.3,15511,1,4,0)
+ ;;=4^S43.51XA
+ ;;^UTILITY(U,$J,358.3,15511,2)
+ ;;=^5027903
+ ;;^UTILITY(U,$J,358.3,15512,0)
+ ;;=S43.52XA^^61^753^1
+ ;;^UTILITY(U,$J,358.3,15512,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15512,1,3,0)
+ ;;=3^Sprain of Left Acromioclavicular Joint
+ ;;^UTILITY(U,$J,358.3,15512,1,4,0)
+ ;;=4^S43.52XA
+ ;;^UTILITY(U,$J,358.3,15512,2)
+ ;;=^5027906
+ ;;^UTILITY(U,$J,358.3,15513,0)
+ ;;=S43.421A^^61^753^17
+ ;;^UTILITY(U,$J,358.3,15513,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15513,1,3,0)
+ ;;=3^Sprain of Right Rotator Cuff Capsule
+ ;;^UTILITY(U,$J,358.3,15513,1,4,0)
+ ;;=4^S43.421A
+ ;;^UTILITY(U,$J,358.3,15513,2)
+ ;;=^5027879
+ ;;^UTILITY(U,$J,358.3,15514,0)
+ ;;=S43.422A^^61^753^6
+ ;;^UTILITY(U,$J,358.3,15514,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15514,1,3,0)
+ ;;=3^Sprain of Left Rotator Cuff Capsule
+ ;;^UTILITY(U,$J,358.3,15514,1,4,0)
+ ;;=4^S43.422A
+ ;;^UTILITY(U,$J,358.3,15514,2)
+ ;;=^5027882
+ ;;^UTILITY(U,$J,358.3,15515,0)
+ ;;=S53.401A^^61^753^14
+ ;;^UTILITY(U,$J,358.3,15515,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15515,1,3,0)
+ ;;=3^Sprain of Right Elbow
+ ;;^UTILITY(U,$J,358.3,15515,1,4,0)
+ ;;=4^S53.401A
+ ;;^UTILITY(U,$J,358.3,15515,2)
+ ;;=^5031361
+ ;;^UTILITY(U,$J,358.3,15516,0)
+ ;;=S53.402A^^61^753^3
+ ;;^UTILITY(U,$J,358.3,15516,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15516,1,3,0)
+ ;;=3^Sprain of Left Elbow
+ ;;^UTILITY(U,$J,358.3,15516,1,4,0)
+ ;;=4^S53.402A
+ ;;^UTILITY(U,$J,358.3,15516,2)
+ ;;=^5031364
+ ;;^UTILITY(U,$J,358.3,15517,0)
+ ;;=S56.011A^^61^753^55
+ ;;^UTILITY(U,$J,358.3,15517,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15517,1,3,0)
+ ;;=3^Strain of Right Thumb at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,15517,1,4,0)
+ ;;=4^S56.011A
+ ;;^UTILITY(U,$J,358.3,15517,2)
+ ;;=^5031568
+ ;;^UTILITY(U,$J,358.3,15518,0)
+ ;;=S56.012A^^61^753^36
+ ;;^UTILITY(U,$J,358.3,15518,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15518,1,3,0)
+ ;;=3^Strain of Left Thumb at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,15518,1,4,0)
+ ;;=4^S56.012A
+ ;;^UTILITY(U,$J,358.3,15518,2)
+ ;;=^5031571
+ ;;^UTILITY(U,$J,358.3,15519,0)
+ ;;=S56.111A^^61^753^43
+ ;;^UTILITY(U,$J,358.3,15519,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15519,1,3,0)
+ ;;=3^Strain of Right Index Finger at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,15519,1,4,0)
+ ;;=4^S56.111A
+ ;;^UTILITY(U,$J,358.3,15519,2)
+ ;;=^5031616
+ ;;^UTILITY(U,$J,358.3,15520,0)
+ ;;=S56.112A^^61^753^23
+ ;;^UTILITY(U,$J,358.3,15520,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15520,1,3,0)
+ ;;=3^Strain of Left Index Finger at Forearm Level Flexor Muscle/Fasc/Tendon
+ ;;^UTILITY(U,$J,358.3,15520,1,4,0)
+ ;;=4^S56.112A
+ ;;^UTILITY(U,$J,358.3,15520,2)
+ ;;=^5031619

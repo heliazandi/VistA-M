@@ -1,132 +1,286 @@
-IBDEI0C2 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0C2 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,5199,1,0)
+ ;;^UTILITY(U,$J,358.3,12087,1,3,0)
+ ;;=3^Malig Melanoma of Lip
+ ;;^UTILITY(U,$J,358.3,12087,1,4,0)
+ ;;=4^C43.0
+ ;;^UTILITY(U,$J,358.3,12087,2)
+ ;;=^5000994
+ ;;^UTILITY(U,$J,358.3,12088,0)
+ ;;=C43.11^^56^646^11
+ ;;^UTILITY(U,$J,358.3,12088,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5199,1,3,0)
- ;;=3^Malig Neop of Lower-Outer Quadrant of Right Breast
- ;;^UTILITY(U,$J,358.3,5199,1,4,0)
- ;;=4^C50.521
- ;;^UTILITY(U,$J,358.3,5199,2)
- ;;=^5001182
- ;;^UTILITY(U,$J,358.3,5200,0)
- ;;=C50.522^^40^356^9
- ;;^UTILITY(U,$J,358.3,5200,1,0)
+ ;;^UTILITY(U,$J,358.3,12088,1,3,0)
+ ;;=3^Malig Melanoma of Right Eyelid
+ ;;^UTILITY(U,$J,358.3,12088,1,4,0)
+ ;;=4^C43.11
+ ;;^UTILITY(U,$J,358.3,12088,2)
+ ;;=^5000996
+ ;;^UTILITY(U,$J,358.3,12089,0)
+ ;;=C43.12^^56^646^4
+ ;;^UTILITY(U,$J,358.3,12089,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5200,1,3,0)
- ;;=3^Malig Neop of Lower-Outer Quadrant of Left Breast
- ;;^UTILITY(U,$J,358.3,5200,1,4,0)
- ;;=4^C50.522
- ;;^UTILITY(U,$J,358.3,5200,2)
- ;;=^5133338
- ;;^UTILITY(U,$J,358.3,5201,0)
- ;;=C50.621^^40^356^3
- ;;^UTILITY(U,$J,358.3,5201,1,0)
+ ;;^UTILITY(U,$J,358.3,12089,1,3,0)
+ ;;=3^Malig Melanoma of Left Eyelid
+ ;;^UTILITY(U,$J,358.3,12089,1,4,0)
+ ;;=4^C43.12
+ ;;^UTILITY(U,$J,358.3,12089,2)
+ ;;=^5000997
+ ;;^UTILITY(U,$J,358.3,12090,0)
+ ;;=C43.21^^56^646^10
+ ;;^UTILITY(U,$J,358.3,12090,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5201,1,3,0)
- ;;=3^Malig Neop of Axillary Tail of Right Breast
- ;;^UTILITY(U,$J,358.3,5201,1,4,0)
- ;;=4^C50.621
- ;;^UTILITY(U,$J,358.3,5201,2)
- ;;=^5001186
- ;;^UTILITY(U,$J,358.3,5202,0)
- ;;=C50.622^^40^356^2
- ;;^UTILITY(U,$J,358.3,5202,1,0)
+ ;;^UTILITY(U,$J,358.3,12090,1,3,0)
+ ;;=3^Malig Melanoma of Right Ear/External Auricular Canal
+ ;;^UTILITY(U,$J,358.3,12090,1,4,0)
+ ;;=4^C43.21
+ ;;^UTILITY(U,$J,358.3,12090,2)
+ ;;=^5000999
+ ;;^UTILITY(U,$J,358.3,12091,0)
+ ;;=C43.22^^56^646^3
+ ;;^UTILITY(U,$J,358.3,12091,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5202,1,3,0)
- ;;=3^Malig Neop of Axillary Tail of Left Breast
- ;;^UTILITY(U,$J,358.3,5202,1,4,0)
- ;;=4^C50.622
- ;;^UTILITY(U,$J,358.3,5202,2)
- ;;=^5001187
- ;;^UTILITY(U,$J,358.3,5203,0)
- ;;=C50.821^^40^356^14
- ;;^UTILITY(U,$J,358.3,5203,1,0)
+ ;;^UTILITY(U,$J,358.3,12091,1,3,0)
+ ;;=3^Malig Melanoma of Left Ear/External Auricular Canal
+ ;;^UTILITY(U,$J,358.3,12091,1,4,0)
+ ;;=4^C43.22
+ ;;^UTILITY(U,$J,358.3,12091,2)
+ ;;=^5001000
+ ;;^UTILITY(U,$J,358.3,12092,0)
+ ;;=C43.31^^56^646^8
+ ;;^UTILITY(U,$J,358.3,12092,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5203,1,3,0)
- ;;=3^Malig Neop of Overlapping Sites of Right Breast
- ;;^UTILITY(U,$J,358.3,5203,1,4,0)
- ;;=4^C50.821
- ;;^UTILITY(U,$J,358.3,5203,2)
- ;;=^5001192
- ;;^UTILITY(U,$J,358.3,5204,0)
- ;;=C50.822^^40^356^13
- ;;^UTILITY(U,$J,358.3,5204,1,0)
+ ;;^UTILITY(U,$J,358.3,12092,1,3,0)
+ ;;=3^Malig Melanoma of Nose
+ ;;^UTILITY(U,$J,358.3,12092,1,4,0)
+ ;;=4^C43.31
+ ;;^UTILITY(U,$J,358.3,12092,2)
+ ;;=^5001002
+ ;;^UTILITY(U,$J,358.3,12093,0)
+ ;;=C43.39^^56^646^2
+ ;;^UTILITY(U,$J,358.3,12093,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5204,1,3,0)
- ;;=3^Malig Neop of Overlapping Sites of Left Breast
- ;;^UTILITY(U,$J,358.3,5204,1,4,0)
- ;;=4^C50.822
- ;;^UTILITY(U,$J,358.3,5204,2)
- ;;=^5001193
- ;;^UTILITY(U,$J,358.3,5205,0)
- ;;=C50.921^^40^356^15
- ;;^UTILITY(U,$J,358.3,5205,1,0)
+ ;;^UTILITY(U,$J,358.3,12093,1,3,0)
+ ;;=3^Malig Melanoma of Face NEC
+ ;;^UTILITY(U,$J,358.3,12093,1,4,0)
+ ;;=4^C43.39
+ ;;^UTILITY(U,$J,358.3,12093,2)
+ ;;=^5001003
+ ;;^UTILITY(U,$J,358.3,12094,0)
+ ;;=C43.4^^56^646^14
+ ;;^UTILITY(U,$J,358.3,12094,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5205,1,3,0)
- ;;=3^Malig Neop of Right Breast,Unspec Site
- ;;^UTILITY(U,$J,358.3,5205,1,4,0)
- ;;=4^C50.921
- ;;^UTILITY(U,$J,358.3,5205,2)
- ;;=^5001198
- ;;^UTILITY(U,$J,358.3,5206,0)
- ;;=C50.922^^40^356^6
- ;;^UTILITY(U,$J,358.3,5206,1,0)
+ ;;^UTILITY(U,$J,358.3,12094,1,3,0)
+ ;;=3^Malig Melanoma of Scalp/Neck
+ ;;^UTILITY(U,$J,358.3,12094,1,4,0)
+ ;;=4^C43.4
+ ;;^UTILITY(U,$J,358.3,12094,2)
+ ;;=^5001004
+ ;;^UTILITY(U,$J,358.3,12095,0)
+ ;;=C43.51^^56^646^1
+ ;;^UTILITY(U,$J,358.3,12095,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5206,1,3,0)
- ;;=3^Malig Neop of Left Breast,Unspec Site
- ;;^UTILITY(U,$J,358.3,5206,1,4,0)
- ;;=4^C50.922
- ;;^UTILITY(U,$J,358.3,5206,2)
- ;;=^5133340
- ;;^UTILITY(U,$J,358.3,5207,0)
- ;;=N62.^^40^356^1
- ;;^UTILITY(U,$J,358.3,5207,1,0)
+ ;;^UTILITY(U,$J,358.3,12095,1,3,0)
+ ;;=3^Malig Melanoma of Anal Skin
+ ;;^UTILITY(U,$J,358.3,12095,1,4,0)
+ ;;=4^C43.51
+ ;;^UTILITY(U,$J,358.3,12095,2)
+ ;;=^5001005
+ ;;^UTILITY(U,$J,358.3,12096,0)
+ ;;=C43.52^^56^646^15
+ ;;^UTILITY(U,$J,358.3,12096,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5207,1,3,0)
- ;;=3^Hypertrophy of Breast
- ;;^UTILITY(U,$J,358.3,5207,1,4,0)
- ;;=4^N62.
- ;;^UTILITY(U,$J,358.3,5207,2)
- ;;=^5015790
- ;;^UTILITY(U,$J,358.3,5208,0)
- ;;=I25.10^^40^357^8
- ;;^UTILITY(U,$J,358.3,5208,1,0)
+ ;;^UTILITY(U,$J,358.3,12096,1,3,0)
+ ;;=3^Malig Melanoma of Skin of Breast
+ ;;^UTILITY(U,$J,358.3,12096,1,4,0)
+ ;;=4^C43.52
+ ;;^UTILITY(U,$J,358.3,12096,2)
+ ;;=^5001006
+ ;;^UTILITY(U,$J,358.3,12097,0)
+ ;;=C43.59^^56^646^17
+ ;;^UTILITY(U,$J,358.3,12097,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5208,1,3,0)
- ;;=3^Athscl Hrt Disease of Native Coronary Artery w/o Ang Pctrs
- ;;^UTILITY(U,$J,358.3,5208,1,4,0)
- ;;=4^I25.10
- ;;^UTILITY(U,$J,358.3,5208,2)
- ;;=^5007107
- ;;^UTILITY(U,$J,358.3,5209,0)
- ;;=I50.9^^40^357^22
- ;;^UTILITY(U,$J,358.3,5209,1,0)
+ ;;^UTILITY(U,$J,358.3,12097,1,3,0)
+ ;;=3^Malig Melanoma of Trunk NEC
+ ;;^UTILITY(U,$J,358.3,12097,1,4,0)
+ ;;=4^C43.59
+ ;;^UTILITY(U,$J,358.3,12097,2)
+ ;;=^5001007
+ ;;^UTILITY(U,$J,358.3,12098,0)
+ ;;=C43.61^^56^646^13
+ ;;^UTILITY(U,$J,358.3,12098,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5209,1,3,0)
- ;;=3^Heart Failure,Unspec
- ;;^UTILITY(U,$J,358.3,5209,1,4,0)
- ;;=4^I50.9
- ;;^UTILITY(U,$J,358.3,5209,2)
- ;;=^5007251
- ;;^UTILITY(U,$J,358.3,5210,0)
- ;;=I50.43^^40^357^5
- ;;^UTILITY(U,$J,358.3,5210,1,0)
+ ;;^UTILITY(U,$J,358.3,12098,1,3,0)
+ ;;=3^Malig Melanoma of Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,12098,1,4,0)
+ ;;=4^C43.61
+ ;;^UTILITY(U,$J,358.3,12098,2)
+ ;;=^5001009
+ ;;^UTILITY(U,$J,358.3,12099,0)
+ ;;=C43.62^^56^646^6
+ ;;^UTILITY(U,$J,358.3,12099,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5210,1,3,0)
- ;;=3^Acute on Chronic Combined Systolic/Diastolic Hrt Failure
- ;;^UTILITY(U,$J,358.3,5210,1,4,0)
- ;;=4^I50.43
- ;;^UTILITY(U,$J,358.3,5210,2)
- ;;=^5007250
- ;;^UTILITY(U,$J,358.3,5211,0)
- ;;=I50.42^^40^357^12
- ;;^UTILITY(U,$J,358.3,5211,1,0)
+ ;;^UTILITY(U,$J,358.3,12099,1,3,0)
+ ;;=3^Malig Melanoma of Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,12099,1,4,0)
+ ;;=4^C43.62
+ ;;^UTILITY(U,$J,358.3,12099,2)
+ ;;=^5001010
+ ;;^UTILITY(U,$J,358.3,12100,0)
+ ;;=C43.71^^56^646^12
+ ;;^UTILITY(U,$J,358.3,12100,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5211,1,3,0)
- ;;=3^Chronic Combined Systolic/Diastolic Hrt Failure
- ;;^UTILITY(U,$J,358.3,5211,1,4,0)
- ;;=4^I50.42
- ;;^UTILITY(U,$J,358.3,5211,2)
- ;;=^5007249
+ ;;^UTILITY(U,$J,358.3,12100,1,3,0)
+ ;;=3^Malig Melanoma of Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,12100,1,4,0)
+ ;;=4^C43.71
+ ;;^UTILITY(U,$J,358.3,12100,2)
+ ;;=^5001012
+ ;;^UTILITY(U,$J,358.3,12101,0)
+ ;;=C43.72^^56^646^5
+ ;;^UTILITY(U,$J,358.3,12101,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12101,1,3,0)
+ ;;=3^Malig Melanoma of Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,12101,1,4,0)
+ ;;=4^C43.72
+ ;;^UTILITY(U,$J,358.3,12101,2)
+ ;;=^5001013
+ ;;^UTILITY(U,$J,358.3,12102,0)
+ ;;=C43.8^^56^646^9
+ ;;^UTILITY(U,$J,358.3,12102,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12102,1,3,0)
+ ;;=3^Malig Melanoma of Overlapping Sites of Skin
+ ;;^UTILITY(U,$J,358.3,12102,1,4,0)
+ ;;=4^C43.8
+ ;;^UTILITY(U,$J,358.3,12102,2)
+ ;;=^5001014
+ ;;^UTILITY(U,$J,358.3,12103,0)
+ ;;=D03.0^^56^646^26
+ ;;^UTILITY(U,$J,358.3,12103,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12103,1,3,0)
+ ;;=3^Melanoma in Situ of Lip
+ ;;^UTILITY(U,$J,358.3,12103,1,4,0)
+ ;;=4^D03.0
+ ;;^UTILITY(U,$J,358.3,12103,2)
+ ;;=^5001888
+ ;;^UTILITY(U,$J,358.3,12104,0)
+ ;;=D03.11^^56^646^29
+ ;;^UTILITY(U,$J,358.3,12104,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12104,1,3,0)
+ ;;=3^Melanoma in Situ of Right Eyelid
+ ;;^UTILITY(U,$J,358.3,12104,1,4,0)
+ ;;=4^D03.11
+ ;;^UTILITY(U,$J,358.3,12104,2)
+ ;;=^5001890
+ ;;^UTILITY(U,$J,358.3,12105,0)
+ ;;=D03.12^^56^646^23
+ ;;^UTILITY(U,$J,358.3,12105,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12105,1,3,0)
+ ;;=3^Melanoma in Situ of Left Eyelid
+ ;;^UTILITY(U,$J,358.3,12105,1,4,0)
+ ;;=4^D03.12
+ ;;^UTILITY(U,$J,358.3,12105,2)
+ ;;=^5001891
+ ;;^UTILITY(U,$J,358.3,12106,0)
+ ;;=D03.21^^56^646^28
+ ;;^UTILITY(U,$J,358.3,12106,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12106,1,3,0)
+ ;;=3^Melanoma in Situ of Right Ear/External Auricular Canal
+ ;;^UTILITY(U,$J,358.3,12106,1,4,0)
+ ;;=4^D03.21
+ ;;^UTILITY(U,$J,358.3,12106,2)
+ ;;=^5001893
+ ;;^UTILITY(U,$J,358.3,12107,0)
+ ;;=D03.22^^56^646^22
+ ;;^UTILITY(U,$J,358.3,12107,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12107,1,3,0)
+ ;;=3^Melanoma in Situ of Left Ear/External Auricular Canal
+ ;;^UTILITY(U,$J,358.3,12107,1,4,0)
+ ;;=4^D03.22
+ ;;^UTILITY(U,$J,358.3,12107,2)
+ ;;=^5001894
+ ;;^UTILITY(U,$J,358.3,12108,0)
+ ;;=D03.30^^56^646^21
+ ;;^UTILITY(U,$J,358.3,12108,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12108,1,3,0)
+ ;;=3^Melanoma in Situ of Face,Unspec
+ ;;^UTILITY(U,$J,358.3,12108,1,4,0)
+ ;;=4^D03.30
+ ;;^UTILITY(U,$J,358.3,12108,2)
+ ;;=^5001895
+ ;;^UTILITY(U,$J,358.3,12109,0)
+ ;;=D03.39^^56^646^20
+ ;;^UTILITY(U,$J,358.3,12109,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12109,1,3,0)
+ ;;=3^Melanoma in Situ of Face NEC
+ ;;^UTILITY(U,$J,358.3,12109,1,4,0)
+ ;;=4^D03.39
+ ;;^UTILITY(U,$J,358.3,12109,2)
+ ;;=^5001896
+ ;;^UTILITY(U,$J,358.3,12110,0)
+ ;;=D03.4^^56^646^32
+ ;;^UTILITY(U,$J,358.3,12110,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12110,1,3,0)
+ ;;=3^Melanoma in Situ of Scalp/Neck
+ ;;^UTILITY(U,$J,358.3,12110,1,4,0)
+ ;;=4^D03.4
+ ;;^UTILITY(U,$J,358.3,12110,2)
+ ;;=^5001897
+ ;;^UTILITY(U,$J,358.3,12111,0)
+ ;;=D03.51^^56^646^18
+ ;;^UTILITY(U,$J,358.3,12111,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12111,1,3,0)
+ ;;=3^Melanoma in Situ of Anal Skin
+ ;;^UTILITY(U,$J,358.3,12111,1,4,0)
+ ;;=4^D03.51
+ ;;^UTILITY(U,$J,358.3,12111,2)
+ ;;=^5001898
+ ;;^UTILITY(U,$J,358.3,12112,0)
+ ;;=D03.52^^56^646^19
+ ;;^UTILITY(U,$J,358.3,12112,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12112,1,3,0)
+ ;;=3^Melanoma in Situ of Breast
+ ;;^UTILITY(U,$J,358.3,12112,1,4,0)
+ ;;=4^D03.52
+ ;;^UTILITY(U,$J,358.3,12112,2)
+ ;;=^5001899
+ ;;^UTILITY(U,$J,358.3,12113,0)
+ ;;=D03.59^^56^646^33
+ ;;^UTILITY(U,$J,358.3,12113,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12113,1,3,0)
+ ;;=3^Melanoma in Situ of Trunk NEC
+ ;;^UTILITY(U,$J,358.3,12113,1,4,0)
+ ;;=4^D03.59
+ ;;^UTILITY(U,$J,358.3,12113,2)
+ ;;=^5001900
+ ;;^UTILITY(U,$J,358.3,12114,0)
+ ;;=D03.61^^56^646^31
+ ;;^UTILITY(U,$J,358.3,12114,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12114,1,3,0)
+ ;;=3^Melanoma in Situ of Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,12114,1,4,0)
+ ;;=4^D03.61
+ ;;^UTILITY(U,$J,358.3,12114,2)
+ ;;=^5001902
+ ;;^UTILITY(U,$J,358.3,12115,0)
+ ;;=D03.62^^56^646^25
+ ;;^UTILITY(U,$J,358.3,12115,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12115,1,3,0)
+ ;;=3^Melanoma in Situ of Left Upper Limb

@@ -1,122 +1,270 @@
-IBDEI0Q7 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0Q7 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,11998,2)
- ;;=^5061661
- ;;^UTILITY(U,$J,358.3,11999,0)
- ;;=Y36.300D^^68^694^127
- ;;^UTILITY(U,$J,358.3,11999,1,0)
+ ;;^UTILITY(U,$J,358.3,26352,2)
+ ;;=^5003770^
+ ;;^UTILITY(U,$J,358.3,26353,0)
+ ;;=G23.1^^100^1266^73
+ ;;^UTILITY(U,$J,358.3,26353,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,11999,1,3,0)
- ;;=3^War Op Inv Unspec Fire/Conflagr/Hot Subst,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,11999,1,4,0)
- ;;=4^Y36.300D
- ;;^UTILITY(U,$J,358.3,11999,2)
- ;;=^5061662
- ;;^UTILITY(U,$J,358.3,12000,0)
- ;;=Y36.410A^^68^694^121
- ;;^UTILITY(U,$J,358.3,12000,1,0)
+ ;;^UTILITY(U,$J,358.3,26353,1,3,0)
+ ;;=3^Progressive Supranuclear Ophthalmoplegia Palsy
+ ;;^UTILITY(U,$J,358.3,26353,1,4,0)
+ ;;=4^G23.1
+ ;;^UTILITY(U,$J,358.3,26353,2)
+ ;;=^5003780
+ ;;^UTILITY(U,$J,358.3,26354,0)
+ ;;=F03.91^^100^1266^17
+ ;;^UTILITY(U,$J,358.3,26354,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12000,1,3,0)
- ;;=3^War Op Inv Rubber Bullets,Milt,Init Encntr
- ;;^UTILITY(U,$J,358.3,12000,1,4,0)
- ;;=4^Y36.410A
- ;;^UTILITY(U,$J,358.3,12000,2)
- ;;=^5061691
- ;;^UTILITY(U,$J,358.3,12001,0)
- ;;=Y36.410D^^68^694^123
- ;;^UTILITY(U,$J,358.3,12001,1,0)
+ ;;^UTILITY(U,$J,358.3,26354,1,3,0)
+ ;;=3^Dementia w/ Behavioral Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,26354,1,4,0)
+ ;;=4^F03.91
+ ;;^UTILITY(U,$J,358.3,26354,2)
+ ;;=^5133350
+ ;;^UTILITY(U,$J,358.3,26355,0)
+ ;;=F03.90^^100^1266^19
+ ;;^UTILITY(U,$J,358.3,26355,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12001,1,3,0)
- ;;=3^War Op Inv Rubber Bullets,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,12001,1,4,0)
- ;;=4^Y36.410D
- ;;^UTILITY(U,$J,358.3,12001,2)
- ;;=^5061692
- ;;^UTILITY(U,$J,358.3,12002,0)
- ;;=Y36.6X0A^^68^694^113
- ;;^UTILITY(U,$J,358.3,12002,1,0)
+ ;;^UTILITY(U,$J,358.3,26355,1,3,0)
+ ;;=3^Dementia w/o Behavioral Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,26355,1,4,0)
+ ;;=4^F03.90
+ ;;^UTILITY(U,$J,358.3,26355,2)
+ ;;=^5003050
+ ;;^UTILITY(U,$J,358.3,26356,0)
+ ;;=F02.81^^100^1266^40
+ ;;^UTILITY(U,$J,358.3,26356,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12002,1,3,0)
- ;;=3^War Op Inv Biological Weapons,Milt,Init Encntr
- ;;^UTILITY(U,$J,358.3,12002,1,4,0)
- ;;=4^Y36.6X0A
- ;;^UTILITY(U,$J,358.3,12002,2)
- ;;=^5061775
- ;;^UTILITY(U,$J,358.3,12003,0)
- ;;=Y36.6X0D^^68^694^115
- ;;^UTILITY(U,$J,358.3,12003,1,0)
+ ;;^UTILITY(U,$J,358.3,26356,1,3,0)
+ ;;=3^Major Neurocog D/O d/t Prob ALZHEIMER'S DISEASE w/ Behav Disturb
+ ;;^UTILITY(U,$J,358.3,26356,1,4,0)
+ ;;=4^F02.81
+ ;;^UTILITY(U,$J,358.3,26356,2)
+ ;;=^5003049
+ ;;^UTILITY(U,$J,358.3,26357,0)
+ ;;=F02.80^^100^1266^41
+ ;;^UTILITY(U,$J,358.3,26357,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12003,1,3,0)
- ;;=3^War Op Inv Biological Weapons,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,12003,1,4,0)
- ;;=4^Y36.6X0D
- ;;^UTILITY(U,$J,358.3,12003,2)
- ;;=^5061776
- ;;^UTILITY(U,$J,358.3,12004,0)
- ;;=Y36.7X0A^^68^694^128
- ;;^UTILITY(U,$J,358.3,12004,1,0)
+ ;;^UTILITY(U,$J,358.3,26357,1,3,0)
+ ;;=3^Major Neurocog D/O d/t Prob ALZHEIMER'S DISEASE w/o Behav Disturb
+ ;;^UTILITY(U,$J,358.3,26357,1,4,0)
+ ;;=4^F02.80
+ ;;^UTILITY(U,$J,358.3,26357,2)
+ ;;=^5003048
+ ;;^UTILITY(U,$J,358.3,26358,0)
+ ;;=G31.84^^100^1266^56
+ ;;^UTILITY(U,$J,358.3,26358,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12004,1,3,0)
- ;;=3^War Op w/ Chem Weapons/Unconvtl Warfare,Milt,Init Encntr
- ;;^UTILITY(U,$J,358.3,12004,1,4,0)
- ;;=4^Y36.7X0A
- ;;^UTILITY(U,$J,358.3,12004,2)
- ;;=^5061781
- ;;^UTILITY(U,$J,358.3,12005,0)
- ;;=Y36.7X0D^^68^694^129
- ;;^UTILITY(U,$J,358.3,12005,1,0)
+ ;;^UTILITY(U,$J,358.3,26358,1,3,0)
+ ;;=3^Mild Neurocog D/O d/t ALZHEIMER'S DISEASE
+ ;;^UTILITY(U,$J,358.3,26358,1,4,0)
+ ;;=4^G31.84
+ ;;^UTILITY(U,$J,358.3,26358,2)
+ ;;=^5003813
+ ;;^UTILITY(U,$J,358.3,26359,0)
+ ;;=F02.81^^100^1266^24
+ ;;^UTILITY(U,$J,358.3,26359,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12005,1,3,0)
- ;;=3^War Op w/ Chem Weapons/Unconvtl Warfare,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,12005,1,4,0)
- ;;=4^Y36.7X0D
- ;;^UTILITY(U,$J,358.3,12005,2)
- ;;=^5061782
- ;;^UTILITY(U,$J,358.3,12006,0)
- ;;=Y36.810A^^68^694^22
- ;;^UTILITY(U,$J,358.3,12006,1,0)
+ ;;^UTILITY(U,$J,358.3,26359,1,3,0)
+ ;;=3^Major Neurocog D/O d/t ANOTHER MED COND w/ Behav Disturb
+ ;;^UTILITY(U,$J,358.3,26359,1,4,0)
+ ;;=4^F02.81
+ ;;^UTILITY(U,$J,358.3,26359,2)
+ ;;=^5003049
+ ;;^UTILITY(U,$J,358.3,26360,0)
+ ;;=F02.80^^100^1266^25
+ ;;^UTILITY(U,$J,358.3,26360,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12006,1,3,0)
- ;;=3^Explosn of Mine Placed During War Op but Expld Aft,Milt,Init Encntr
- ;;^UTILITY(U,$J,358.3,12006,1,4,0)
- ;;=4^Y36.810A
- ;;^UTILITY(U,$J,358.3,12006,2)
- ;;=^5061787
- ;;^UTILITY(U,$J,358.3,12007,0)
- ;;=Y36.810D^^68^694^23
- ;;^UTILITY(U,$J,358.3,12007,1,0)
+ ;;^UTILITY(U,$J,358.3,26360,1,3,0)
+ ;;=3^Major Neurocog D/O d/t ANOTHER MED COND w/o Behav Disturb
+ ;;^UTILITY(U,$J,358.3,26360,1,4,0)
+ ;;=4^F02.80
+ ;;^UTILITY(U,$J,358.3,26360,2)
+ ;;=^5003048
+ ;;^UTILITY(U,$J,358.3,26361,0)
+ ;;=G31.84^^100^1266^57
+ ;;^UTILITY(U,$J,358.3,26361,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12007,1,3,0)
- ;;=3^Explosn of Mine Placed During War Op but Expld Aft,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,12007,1,4,0)
- ;;=4^Y36.810D
- ;;^UTILITY(U,$J,358.3,12007,2)
- ;;=^5061788
- ;;^UTILITY(U,$J,358.3,12008,0)
- ;;=Y36.820A^^68^694^19
- ;;^UTILITY(U,$J,358.3,12008,1,0)
+ ;;^UTILITY(U,$J,358.3,26361,1,3,0)
+ ;;=3^Mild Neurocog D/O d/t ANOTHER MEDICAL CONDITION
+ ;;^UTILITY(U,$J,358.3,26361,1,4,0)
+ ;;=4^G31.84
+ ;;^UTILITY(U,$J,358.3,26361,2)
+ ;;=^5003813
+ ;;^UTILITY(U,$J,358.3,26362,0)
+ ;;=A81.01^^100^1266^9
+ ;;^UTILITY(U,$J,358.3,26362,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12008,1,3,0)
- ;;=3^Explosn of Bomb Placed During War Op But Expld Aft,Milt,Init Encntr
- ;;^UTILITY(U,$J,358.3,12008,1,4,0)
- ;;=4^Y36.820A
- ;;^UTILITY(U,$J,358.3,12008,2)
- ;;=^5061793
- ;;^UTILITY(U,$J,358.3,12009,0)
- ;;=Y36.820D^^68^694^20
- ;;^UTILITY(U,$J,358.3,12009,1,0)
+ ;;^UTILITY(U,$J,358.3,26362,1,3,0)
+ ;;=3^Creutzfeldt-Jakob Disease,Variant
+ ;;^UTILITY(U,$J,358.3,26362,1,4,0)
+ ;;=4^A81.01
+ ;;^UTILITY(U,$J,358.3,26362,2)
+ ;;=^336701
+ ;;^UTILITY(U,$J,358.3,26363,0)
+ ;;=F05.^^100^1266^13
+ ;;^UTILITY(U,$J,358.3,26363,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12009,1,3,0)
- ;;=3^Explosn of Bomb Placed During War Op But Expld Aft,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,12009,1,4,0)
- ;;=4^Y36.820D
- ;;^UTILITY(U,$J,358.3,12009,2)
- ;;=^5061794
- ;;^UTILITY(U,$J,358.3,12010,0)
- ;;=Y37.200A^^68^694^91
- ;;^UTILITY(U,$J,358.3,12010,1,0)
+ ;;^UTILITY(U,$J,358.3,26363,1,3,0)
+ ;;=3^Delirium d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,26363,1,4,0)
+ ;;=4^F05.
+ ;;^UTILITY(U,$J,358.3,26363,2)
+ ;;=^5003052
+ ;;^UTILITY(U,$J,358.3,26364,0)
+ ;;=F05.^^100^1266^14
+ ;;^UTILITY(U,$J,358.3,26364,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12010,1,3,0)
- ;;=3^Miltary Op Inv Explosion/Fragments,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,26364,1,3,0)
+ ;;=3^Delirium d/t Multiple Etiologies
+ ;;^UTILITY(U,$J,358.3,26364,1,4,0)
+ ;;=4^F05.
+ ;;^UTILITY(U,$J,358.3,26364,2)
+ ;;=^5003052
+ ;;^UTILITY(U,$J,358.3,26365,0)
+ ;;=R41.0^^100^1266^15
+ ;;^UTILITY(U,$J,358.3,26365,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26365,1,3,0)
+ ;;=3^Delirium,Other Specified
+ ;;^UTILITY(U,$J,358.3,26365,1,4,0)
+ ;;=4^R41.0
+ ;;^UTILITY(U,$J,358.3,26365,2)
+ ;;=^5019436
+ ;;^UTILITY(U,$J,358.3,26366,0)
+ ;;=R41.0^^100^1266^16
+ ;;^UTILITY(U,$J,358.3,26366,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26366,1,3,0)
+ ;;=3^Delirium,Unspec
+ ;;^UTILITY(U,$J,358.3,26366,1,4,0)
+ ;;=4^R41.0
+ ;;^UTILITY(U,$J,358.3,26366,2)
+ ;;=^5019436
+ ;;^UTILITY(U,$J,358.3,26367,0)
+ ;;=G31.09^^100^1266^20
+ ;;^UTILITY(U,$J,358.3,26367,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26367,1,3,0)
+ ;;=3^Frontotemporal Disease
+ ;;^UTILITY(U,$J,358.3,26367,1,4,0)
+ ;;=4^G31.09
+ ;;^UTILITY(U,$J,358.3,26367,2)
+ ;;=^329916
+ ;;^UTILITY(U,$J,358.3,26368,0)
+ ;;=F02.81^^100^1266^36
+ ;;^UTILITY(U,$J,358.3,26368,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26368,1,3,0)
+ ;;=3^Major Neurocog D/O d/t Poss FRONTOTEMP LOBAR DEGEN w/ Behav Disturb
+ ;;^UTILITY(U,$J,358.3,26368,1,4,0)
+ ;;=4^F02.81
+ ;;^UTILITY(U,$J,358.3,26368,2)
+ ;;=^5003049
+ ;;^UTILITY(U,$J,358.3,26369,0)
+ ;;=F02.80^^100^1266^37
+ ;;^UTILITY(U,$J,358.3,26369,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26369,1,3,0)
+ ;;=3^Major Neurocog D/O d/t Poss FRONTOTEMP LOBAR DEGEN w/o Behav Disturb
+ ;;^UTILITY(U,$J,358.3,26369,1,4,0)
+ ;;=4^F02.80
+ ;;^UTILITY(U,$J,358.3,26369,2)
+ ;;=^5003048
+ ;;^UTILITY(U,$J,358.3,26370,0)
+ ;;=F02.81^^100^1266^42
+ ;;^UTILITY(U,$J,358.3,26370,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26370,1,3,0)
+ ;;=3^Major Neurocog D/O d/t Prob FRONTOTEMP LOBAR DEGEN w/ Behav Disturb
+ ;;^UTILITY(U,$J,358.3,26370,1,4,0)
+ ;;=4^F02.81
+ ;;^UTILITY(U,$J,358.3,26370,2)
+ ;;=^5003049
+ ;;^UTILITY(U,$J,358.3,26371,0)
+ ;;=F02.80^^100^1266^43
+ ;;^UTILITY(U,$J,358.3,26371,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26371,1,3,0)
+ ;;=3^Major Neurocog D/O d/t Prob FRONTOTEMP LOBAR DEGEN w/o Behav Disturb
+ ;;^UTILITY(U,$J,358.3,26371,1,4,0)
+ ;;=4^F02.80
+ ;;^UTILITY(U,$J,358.3,26371,2)
+ ;;=^5003048
+ ;;^UTILITY(U,$J,358.3,26372,0)
+ ;;=G31.84^^100^1266^58
+ ;;^UTILITY(U,$J,358.3,26372,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26372,1,3,0)
+ ;;=3^Mild Neurocog D/O d/t FRONTOTEMP LOBAR DEGEN
+ ;;^UTILITY(U,$J,358.3,26372,1,4,0)
+ ;;=4^G31.84
+ ;;^UTILITY(U,$J,358.3,26372,2)
+ ;;=^5003813
+ ;;^UTILITY(U,$J,358.3,26373,0)
+ ;;=F02.81^^100^1266^26
+ ;;^UTILITY(U,$J,358.3,26373,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26373,1,3,0)
+ ;;=3^Major Neurocog D/O d/t HIV INFECTION w/ Behav Disturb
+ ;;^UTILITY(U,$J,358.3,26373,1,4,0)
+ ;;=4^F02.81
+ ;;^UTILITY(U,$J,358.3,26373,2)
+ ;;=^5003049
+ ;;^UTILITY(U,$J,358.3,26374,0)
+ ;;=F02.80^^100^1266^27
+ ;;^UTILITY(U,$J,358.3,26374,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26374,1,3,0)
+ ;;=3^Major Neurocog D/O d/t HIV INFECTION w/o Behav Disturb
+ ;;^UTILITY(U,$J,358.3,26374,1,4,0)
+ ;;=4^F02.80
+ ;;^UTILITY(U,$J,358.3,26374,2)
+ ;;=^5003048
+ ;;^UTILITY(U,$J,358.3,26375,0)
+ ;;=G31.84^^100^1266^59
+ ;;^UTILITY(U,$J,358.3,26375,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26375,1,3,0)
+ ;;=3^Mild Neurocog D/O d/t HIV INFECTION
+ ;;^UTILITY(U,$J,358.3,26375,1,4,0)
+ ;;=4^G31.84
+ ;;^UTILITY(U,$J,358.3,26375,2)
+ ;;=^5003813
+ ;;^UTILITY(U,$J,358.3,26376,0)
+ ;;=F02.81^^100^1266^28
+ ;;^UTILITY(U,$J,358.3,26376,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26376,1,3,0)
+ ;;=3^Major Neurocog D/O d/t HUNTINGTON'S DISEASE w/ Behav Disturb
+ ;;^UTILITY(U,$J,358.3,26376,1,4,0)
+ ;;=4^F02.81
+ ;;^UTILITY(U,$J,358.3,26376,2)
+ ;;=^5003049
+ ;;^UTILITY(U,$J,358.3,26377,0)
+ ;;=F02.80^^100^1266^29
+ ;;^UTILITY(U,$J,358.3,26377,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26377,1,3,0)
+ ;;=3^Major Neurocog D/O d/t HUNTINGTON'S DISEASE w/o Behav Disturb
+ ;;^UTILITY(U,$J,358.3,26377,1,4,0)
+ ;;=4^F02.80
+ ;;^UTILITY(U,$J,358.3,26377,2)
+ ;;=^5003048
+ ;;^UTILITY(U,$J,358.3,26378,0)
+ ;;=G31.84^^100^1266^60
+ ;;^UTILITY(U,$J,358.3,26378,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26378,1,3,0)
+ ;;=3^Mild Neurocog D/O d/t HUNTINGTON'S DISEASE
+ ;;^UTILITY(U,$J,358.3,26378,1,4,0)
+ ;;=4^G31.84
+ ;;^UTILITY(U,$J,358.3,26378,2)
+ ;;=^5003813
+ ;;^UTILITY(U,$J,358.3,26379,0)
+ ;;=G31.83^^100^1266^23
+ ;;^UTILITY(U,$J,358.3,26379,1,0)
+ ;;=^358.31IA^4^2

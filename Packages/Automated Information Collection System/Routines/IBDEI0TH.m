@@ -1,136 +1,264 @@
-IBDEI0TH ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0TH ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,13558,1,3,0)
- ;;=3^Entropion Right Lower Eyelid,Unspec
- ;;^UTILITY(U,$J,358.3,13558,1,4,0)
- ;;=4^H02.002
- ;;^UTILITY(U,$J,358.3,13558,2)
- ;;=^5133394
- ;;^UTILITY(U,$J,358.3,13559,0)
- ;;=H02.001^^80^761^40
- ;;^UTILITY(U,$J,358.3,13559,1,0)
+ ;;^UTILITY(U,$J,358.3,29671,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13559,1,3,0)
- ;;=3^Entropion Right Upper Eyelid,Unspec
- ;;^UTILITY(U,$J,358.3,13559,1,4,0)
- ;;=4^H02.001
- ;;^UTILITY(U,$J,358.3,13559,2)
- ;;=^5004274
- ;;^UTILITY(U,$J,358.3,13560,0)
- ;;=H04.202^^80^761^41
- ;;^UTILITY(U,$J,358.3,13560,1,0)
+ ;;^UTILITY(U,$J,358.3,29671,1,3,0)
+ ;;=3^Displaced intertrochanteric fracture of left femur, init
+ ;;^UTILITY(U,$J,358.3,29671,1,4,0)
+ ;;=4^S72.142A
+ ;;^UTILITY(U,$J,358.3,29671,2)
+ ;;=^5037931
+ ;;^UTILITY(U,$J,358.3,29672,0)
+ ;;=S72.141A^^111^1431^20
+ ;;^UTILITY(U,$J,358.3,29672,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13560,1,3,0)
- ;;=3^Epiphora Left Lacrimal Gland,Unspec
- ;;^UTILITY(U,$J,358.3,13560,1,4,0)
- ;;=4^H04.202
- ;;^UTILITY(U,$J,358.3,13560,2)
- ;;=^5004485
- ;;^UTILITY(U,$J,358.3,13561,0)
- ;;=H04.201^^80^761^42
- ;;^UTILITY(U,$J,358.3,13561,1,0)
+ ;;^UTILITY(U,$J,358.3,29672,1,3,0)
+ ;;=3^Displaced intertrochanteric fracture of right femur, init
+ ;;^UTILITY(U,$J,358.3,29672,1,4,0)
+ ;;=4^S72.141A
+ ;;^UTILITY(U,$J,358.3,29672,2)
+ ;;=^5037915
+ ;;^UTILITY(U,$J,358.3,29673,0)
+ ;;=S72.22XA^^111^1431^23
+ ;;^UTILITY(U,$J,358.3,29673,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13561,1,3,0)
- ;;=3^Epiphora Right Lacrimal Gland,Unspec
- ;;^UTILITY(U,$J,358.3,13561,1,4,0)
- ;;=4^H04.201
- ;;^UTILITY(U,$J,358.3,13561,2)
- ;;=^5004484
- ;;^UTILITY(U,$J,358.3,13562,0)
- ;;=H52.01^^80^762^13
- ;;^UTILITY(U,$J,358.3,13562,1,0)
+ ;;^UTILITY(U,$J,358.3,29673,1,3,0)
+ ;;=3^Displaced subtrochanteric fracture of left femur, init
+ ;;^UTILITY(U,$J,358.3,29673,1,4,0)
+ ;;=4^S72.22XA
+ ;;^UTILITY(U,$J,358.3,29673,2)
+ ;;=^5038027
+ ;;^UTILITY(U,$J,358.3,29674,0)
+ ;;=S72.21XA^^111^1431^25
+ ;;^UTILITY(U,$J,358.3,29674,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13562,1,3,0)
- ;;=3^Hypermetropia,Right Eye
- ;;^UTILITY(U,$J,358.3,13562,1,4,0)
- ;;=4^H52.01
- ;;^UTILITY(U,$J,358.3,13562,2)
- ;;=^5006260
- ;;^UTILITY(U,$J,358.3,13563,0)
- ;;=H52.02^^80^762^12
- ;;^UTILITY(U,$J,358.3,13563,1,0)
+ ;;^UTILITY(U,$J,358.3,29674,1,3,0)
+ ;;=3^Displaced subtrochanteric fracture of right femur, init
+ ;;^UTILITY(U,$J,358.3,29674,1,4,0)
+ ;;=4^S72.21XA
+ ;;^UTILITY(U,$J,358.3,29674,2)
+ ;;=^5038011
+ ;;^UTILITY(U,$J,358.3,29675,0)
+ ;;=S72.002A^^111^1431^29
+ ;;^UTILITY(U,$J,358.3,29675,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13563,1,3,0)
- ;;=3^Hypermetropia,Left Eye
- ;;^UTILITY(U,$J,358.3,13563,1,4,0)
- ;;=4^H52.02
- ;;^UTILITY(U,$J,358.3,13563,2)
- ;;=^5006261
- ;;^UTILITY(U,$J,358.3,13564,0)
- ;;=H52.13^^80^762^15
- ;;^UTILITY(U,$J,358.3,13564,1,0)
+ ;;^UTILITY(U,$J,358.3,29675,1,3,0)
+ ;;=3^Fracture of unsp part of neck of left femur, init
+ ;;^UTILITY(U,$J,358.3,29675,1,4,0)
+ ;;=4^S72.002A
+ ;;^UTILITY(U,$J,358.3,29675,2)
+ ;;=^5037063
+ ;;^UTILITY(U,$J,358.3,29676,0)
+ ;;=S72.001A^^111^1431^31
+ ;;^UTILITY(U,$J,358.3,29676,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13564,1,3,0)
- ;;=3^Myopia,Bilateral
- ;;^UTILITY(U,$J,358.3,13564,1,4,0)
- ;;=4^H52.13
- ;;^UTILITY(U,$J,358.3,13564,2)
- ;;=^5006266
- ;;^UTILITY(U,$J,358.3,13565,0)
- ;;=H52.11^^80^762^17
- ;;^UTILITY(U,$J,358.3,13565,1,0)
+ ;;^UTILITY(U,$J,358.3,29676,1,3,0)
+ ;;=3^Fracture of unsp part of neck of right femur, init
+ ;;^UTILITY(U,$J,358.3,29676,1,4,0)
+ ;;=4^S72.001A
+ ;;^UTILITY(U,$J,358.3,29676,2)
+ ;;=^5037047
+ ;;^UTILITY(U,$J,358.3,29677,0)
+ ;;=M87.052^^111^1431^37
+ ;;^UTILITY(U,$J,358.3,29677,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13565,1,3,0)
- ;;=3^Myopia,Right Eye
- ;;^UTILITY(U,$J,358.3,13565,1,4,0)
- ;;=4^H52.11
- ;;^UTILITY(U,$J,358.3,13565,2)
- ;;=^5006264
- ;;^UTILITY(U,$J,358.3,13566,0)
- ;;=H52.12^^80^762^16
- ;;^UTILITY(U,$J,358.3,13566,1,0)
+ ;;^UTILITY(U,$J,358.3,29677,1,3,0)
+ ;;=3^Idiopathic aseptic necrosis of left femur
+ ;;^UTILITY(U,$J,358.3,29677,1,4,0)
+ ;;=4^M87.052
+ ;;^UTILITY(U,$J,358.3,29677,2)
+ ;;=^5014681
+ ;;^UTILITY(U,$J,358.3,29678,0)
+ ;;=M87.051^^111^1431^39
+ ;;^UTILITY(U,$J,358.3,29678,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13566,1,3,0)
- ;;=3^Myopia,Left Eye
- ;;^UTILITY(U,$J,358.3,13566,1,4,0)
- ;;=4^H52.12
- ;;^UTILITY(U,$J,358.3,13566,2)
- ;;=^5006265
- ;;^UTILITY(U,$J,358.3,13567,0)
- ;;=H52.201^^80^762^4
- ;;^UTILITY(U,$J,358.3,13567,1,0)
+ ;;^UTILITY(U,$J,358.3,29678,1,3,0)
+ ;;=3^Idiopathic aseptic necrosis of right femur
+ ;;^UTILITY(U,$J,358.3,29678,1,4,0)
+ ;;=4^M87.051
+ ;;^UTILITY(U,$J,358.3,29678,2)
+ ;;=^5014680
+ ;;^UTILITY(U,$J,358.3,29679,0)
+ ;;=M76.32^^111^1431^41
+ ;;^UTILITY(U,$J,358.3,29679,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13567,1,3,0)
- ;;=3^Astigmatism,Right Eye,Unspec
- ;;^UTILITY(U,$J,358.3,13567,1,4,0)
- ;;=4^H52.201
- ;;^UTILITY(U,$J,358.3,13567,2)
- ;;=^5006267
- ;;^UTILITY(U,$J,358.3,13568,0)
- ;;=H52.202^^80^762^3
- ;;^UTILITY(U,$J,358.3,13568,1,0)
+ ;;^UTILITY(U,$J,358.3,29679,1,3,0)
+ ;;=3^Iliotibial band syndrome, left leg
+ ;;^UTILITY(U,$J,358.3,29679,1,4,0)
+ ;;=4^M76.32
+ ;;^UTILITY(U,$J,358.3,29679,2)
+ ;;=^5013277
+ ;;^UTILITY(U,$J,358.3,29680,0)
+ ;;=M76.31^^111^1431^43
+ ;;^UTILITY(U,$J,358.3,29680,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13568,1,3,0)
- ;;=3^Astigmatism,Left Eye,Unspec
- ;;^UTILITY(U,$J,358.3,13568,1,4,0)
- ;;=4^H52.202
- ;;^UTILITY(U,$J,358.3,13568,2)
- ;;=^5006268
- ;;^UTILITY(U,$J,358.3,13569,0)
- ;;=H52.31^^80^762^2
- ;;^UTILITY(U,$J,358.3,13569,1,0)
+ ;;^UTILITY(U,$J,358.3,29680,1,3,0)
+ ;;=3^Iliotibial band syndrome, right leg
+ ;;^UTILITY(U,$J,358.3,29680,1,4,0)
+ ;;=4^M76.31
+ ;;^UTILITY(U,$J,358.3,29680,2)
+ ;;=^5013276
+ ;;^UTILITY(U,$J,358.3,29681,0)
+ ;;=S72.145A^^111^1431^49
+ ;;^UTILITY(U,$J,358.3,29681,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13569,1,3,0)
- ;;=3^Anisometropia
- ;;^UTILITY(U,$J,358.3,13569,1,4,0)
- ;;=4^H52.31
- ;;^UTILITY(U,$J,358.3,13569,2)
- ;;=^7839
- ;;^UTILITY(U,$J,358.3,13570,0)
- ;;=H53.021^^80^762^26
- ;;^UTILITY(U,$J,358.3,13570,1,0)
+ ;;^UTILITY(U,$J,358.3,29681,1,3,0)
+ ;;=3^Nondisplaced intertrochanteric fracture of left femur, init
+ ;;^UTILITY(U,$J,358.3,29681,1,4,0)
+ ;;=4^S72.145A
+ ;;^UTILITY(U,$J,358.3,29681,2)
+ ;;=^5037979
+ ;;^UTILITY(U,$J,358.3,29682,0)
+ ;;=S72.144A^^111^1431^50
+ ;;^UTILITY(U,$J,358.3,29682,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13570,1,3,0)
- ;;=3^Refractive Amblyopia,Right Eye
- ;;^UTILITY(U,$J,358.3,13570,1,4,0)
- ;;=4^H53.021
- ;;^UTILITY(U,$J,358.3,13570,2)
- ;;=^5006299
- ;;^UTILITY(U,$J,358.3,13571,0)
- ;;=H53.022^^80^762^25
- ;;^UTILITY(U,$J,358.3,13571,1,0)
+ ;;^UTILITY(U,$J,358.3,29682,1,3,0)
+ ;;=3^Nondisplaced intertrochanteric fracture of right femur, init
+ ;;^UTILITY(U,$J,358.3,29682,1,4,0)
+ ;;=4^S72.144A
+ ;;^UTILITY(U,$J,358.3,29682,2)
+ ;;=^5037963
+ ;;^UTILITY(U,$J,358.3,29683,0)
+ ;;=S72.142A^^111^1431^21
+ ;;^UTILITY(U,$J,358.3,29683,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13571,1,3,0)
- ;;=3^Refractive Amblyopia,Left Eye
+ ;;^UTILITY(U,$J,358.3,29683,1,3,0)
+ ;;=3^Displaced intertrochanteric fracture of left femur, init
+ ;;^UTILITY(U,$J,358.3,29683,1,4,0)
+ ;;=4^S72.142A
+ ;;^UTILITY(U,$J,358.3,29683,2)
+ ;;=^5037931
+ ;;^UTILITY(U,$J,358.3,29684,0)
+ ;;=S72.141A^^111^1431^22
+ ;;^UTILITY(U,$J,358.3,29684,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29684,1,3,0)
+ ;;=3^Displaced intertrochanteric fracture of right femur, init
+ ;;^UTILITY(U,$J,358.3,29684,1,4,0)
+ ;;=4^S72.141A
+ ;;^UTILITY(U,$J,358.3,29684,2)
+ ;;=^5037915
+ ;;^UTILITY(U,$J,358.3,29685,0)
+ ;;=S72.22XA^^111^1431^24
+ ;;^UTILITY(U,$J,358.3,29685,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29685,1,3,0)
+ ;;=3^Displaced subtrochanteric fracture of left femur, init
+ ;;^UTILITY(U,$J,358.3,29685,1,4,0)
+ ;;=4^S72.22XA
+ ;;^UTILITY(U,$J,358.3,29685,2)
+ ;;=^5038027
+ ;;^UTILITY(U,$J,358.3,29686,0)
+ ;;=S72.21XA^^111^1431^26
+ ;;^UTILITY(U,$J,358.3,29686,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29686,1,3,0)
+ ;;=3^Displaced subtrochanteric fracture of right femur, init
+ ;;^UTILITY(U,$J,358.3,29686,1,4,0)
+ ;;=4^S72.21XA
+ ;;^UTILITY(U,$J,358.3,29686,2)
+ ;;=^5038011
+ ;;^UTILITY(U,$J,358.3,29687,0)
+ ;;=S72.002A^^111^1431^30
+ ;;^UTILITY(U,$J,358.3,29687,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29687,1,3,0)
+ ;;=3^Fracture of unsp part of neck of left femur, init
+ ;;^UTILITY(U,$J,358.3,29687,1,4,0)
+ ;;=4^S72.002A
+ ;;^UTILITY(U,$J,358.3,29687,2)
+ ;;=^5037063
+ ;;^UTILITY(U,$J,358.3,29688,0)
+ ;;=S72.001A^^111^1431^32
+ ;;^UTILITY(U,$J,358.3,29688,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29688,1,3,0)
+ ;;=3^Fracture of unsp part of neck of right femur, init
+ ;;^UTILITY(U,$J,358.3,29688,1,4,0)
+ ;;=4^S72.001A
+ ;;^UTILITY(U,$J,358.3,29688,2)
+ ;;=^5037047
+ ;;^UTILITY(U,$J,358.3,29689,0)
+ ;;=M87.052^^111^1431^38
+ ;;^UTILITY(U,$J,358.3,29689,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29689,1,3,0)
+ ;;=3^Idiopathic aseptic necrosis of left femur
+ ;;^UTILITY(U,$J,358.3,29689,1,4,0)
+ ;;=4^M87.052
+ ;;^UTILITY(U,$J,358.3,29689,2)
+ ;;=^5014681
+ ;;^UTILITY(U,$J,358.3,29690,0)
+ ;;=M87.051^^111^1431^40
+ ;;^UTILITY(U,$J,358.3,29690,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29690,1,3,0)
+ ;;=3^Idiopathic aseptic necrosis of right femur
+ ;;^UTILITY(U,$J,358.3,29690,1,4,0)
+ ;;=4^M87.051
+ ;;^UTILITY(U,$J,358.3,29690,2)
+ ;;=^5014680
+ ;;^UTILITY(U,$J,358.3,29691,0)
+ ;;=M76.32^^111^1431^42
+ ;;^UTILITY(U,$J,358.3,29691,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29691,1,3,0)
+ ;;=3^Iliotibial band syndrome, left leg
+ ;;^UTILITY(U,$J,358.3,29691,1,4,0)
+ ;;=4^M76.32
+ ;;^UTILITY(U,$J,358.3,29691,2)
+ ;;=^5013277
+ ;;^UTILITY(U,$J,358.3,29692,0)
+ ;;=M76.31^^111^1431^44
+ ;;^UTILITY(U,$J,358.3,29692,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29692,1,3,0)
+ ;;=3^Iliotibial band syndrome, right leg
+ ;;^UTILITY(U,$J,358.3,29692,1,4,0)
+ ;;=4^M76.31
+ ;;^UTILITY(U,$J,358.3,29692,2)
+ ;;=^5013276
+ ;;^UTILITY(U,$J,358.3,29693,0)
+ ;;=S72.145A^^111^1431^51
+ ;;^UTILITY(U,$J,358.3,29693,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29693,1,3,0)
+ ;;=3^Nondisplaced intertrochanteric fracture of left femur, init
+ ;;^UTILITY(U,$J,358.3,29693,1,4,0)
+ ;;=4^S72.145A
+ ;;^UTILITY(U,$J,358.3,29693,2)
+ ;;=^5037979
+ ;;^UTILITY(U,$J,358.3,29694,0)
+ ;;=S72.144A^^111^1431^52
+ ;;^UTILITY(U,$J,358.3,29694,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29694,1,3,0)
+ ;;=3^Nondisplaced intertrochanteric fracture of right femur, init
+ ;;^UTILITY(U,$J,358.3,29694,1,4,0)
+ ;;=4^S72.144A
+ ;;^UTILITY(U,$J,358.3,29694,2)
+ ;;=^5037963
+ ;;^UTILITY(U,$J,358.3,29695,0)
+ ;;=M16.12^^111^1431^54
+ ;;^UTILITY(U,$J,358.3,29695,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29695,1,3,0)
+ ;;=3^Osteoarthritis, primary, left hip unilateral
+ ;;^UTILITY(U,$J,358.3,29695,1,4,0)
+ ;;=4^M16.12
+ ;;^UTILITY(U,$J,358.3,29695,2)
+ ;;=^5010772
+ ;;^UTILITY(U,$J,358.3,29696,0)
+ ;;=M16.11^^111^1431^55
+ ;;^UTILITY(U,$J,358.3,29696,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29696,1,3,0)
+ ;;=3^Osteoarthritis, primary, right hip unilateral
+ ;;^UTILITY(U,$J,358.3,29696,1,4,0)
+ ;;=4^M16.11
+ ;;^UTILITY(U,$J,358.3,29696,2)
+ ;;=^5010771
+ ;;^UTILITY(U,$J,358.3,29697,0)
+ ;;=M16.0^^111^1431^53

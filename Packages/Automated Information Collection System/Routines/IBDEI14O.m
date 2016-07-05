@@ -1,130 +1,278 @@
-IBDEI14O ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI14O ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18839,0)
- ;;=D06.7^^94^916^39
- ;;^UTILITY(U,$J,358.3,18839,1,0)
+ ;;^UTILITY(U,$J,358.3,40971,1,3,0)
+ ;;=3^Phleb & Thrombphleb Bil Femoral Vein
+ ;;^UTILITY(U,$J,358.3,40971,1,4,0)
+ ;;=4^I80.13
+ ;;^UTILITY(U,$J,358.3,40971,2)
+ ;;=^5007827
+ ;;^UTILITY(U,$J,358.3,40972,0)
+ ;;=I80.202^^153^2003^138
+ ;;^UTILITY(U,$J,358.3,40972,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18839,1,3,0)
- ;;=3^Carcinoma in Situ of Cervix,Other Parts
- ;;^UTILITY(U,$J,358.3,18839,1,4,0)
- ;;=4^D06.7
- ;;^UTILITY(U,$J,358.3,18839,2)
- ;;=^5001940
- ;;^UTILITY(U,$J,358.3,18840,0)
- ;;=D04.9^^94^916^42
- ;;^UTILITY(U,$J,358.3,18840,1,0)
+ ;;^UTILITY(U,$J,358.3,40972,1,3,0)
+ ;;=3^Phleb & Thrombphleb Lt LE Deep Vessels
+ ;;^UTILITY(U,$J,358.3,40972,1,4,0)
+ ;;=4^I80.202
+ ;;^UTILITY(U,$J,358.3,40972,2)
+ ;;=^5007829
+ ;;^UTILITY(U,$J,358.3,40973,0)
+ ;;=I80.201^^153^2003^141
+ ;;^UTILITY(U,$J,358.3,40973,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18840,1,3,0)
- ;;=3^Carcinoma in Situ of Skin
- ;;^UTILITY(U,$J,358.3,18840,1,4,0)
- ;;=4^D04.9
- ;;^UTILITY(U,$J,358.3,18840,2)
- ;;=^5001925
- ;;^UTILITY(U,$J,358.3,18841,0)
- ;;=C91.11^^94^916^45
- ;;^UTILITY(U,$J,358.3,18841,1,0)
+ ;;^UTILITY(U,$J,358.3,40973,1,3,0)
+ ;;=3^Phleb & Thrombphleb Rt LE Deep Vessels
+ ;;^UTILITY(U,$J,358.3,40973,1,4,0)
+ ;;=4^I80.201
+ ;;^UTILITY(U,$J,358.3,40973,2)
+ ;;=^5007828
+ ;;^UTILITY(U,$J,358.3,40974,0)
+ ;;=I80.203^^153^2003^135
+ ;;^UTILITY(U,$J,358.3,40974,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18841,1,3,0)
- ;;=3^Chronic Lymphocytic Leukemia of B-Cell Type,In Remission
- ;;^UTILITY(U,$J,358.3,18841,1,4,0)
- ;;=4^C91.11
- ;;^UTILITY(U,$J,358.3,18841,2)
- ;;=^5001766
- ;;^UTILITY(U,$J,358.3,18842,0)
- ;;=C91.10^^94^916^46
- ;;^UTILITY(U,$J,358.3,18842,1,0)
+ ;;^UTILITY(U,$J,358.3,40974,1,3,0)
+ ;;=3^Phleb & Thrombphleb Bil LE Deep Vessels
+ ;;^UTILITY(U,$J,358.3,40974,1,4,0)
+ ;;=4^I80.203
+ ;;^UTILITY(U,$J,358.3,40974,2)
+ ;;=^5007830
+ ;;^UTILITY(U,$J,358.3,40975,0)
+ ;;=I80.212^^153^2003^137
+ ;;^UTILITY(U,$J,358.3,40975,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18842,1,3,0)
- ;;=3^Chronic Lymphocytic Leukemia of B-Cell Type,Not in Remission
- ;;^UTILITY(U,$J,358.3,18842,1,4,0)
- ;;=4^C91.10
- ;;^UTILITY(U,$J,358.3,18842,2)
- ;;=^5001765
- ;;^UTILITY(U,$J,358.3,18843,0)
- ;;=C92.11^^94^916^47
- ;;^UTILITY(U,$J,358.3,18843,1,0)
+ ;;^UTILITY(U,$J,358.3,40975,1,3,0)
+ ;;=3^Phleb & Thrombphleb Lt Iliac Vein
+ ;;^UTILITY(U,$J,358.3,40975,1,4,0)
+ ;;=4^I80.212
+ ;;^UTILITY(U,$J,358.3,40975,2)
+ ;;=^5007832
+ ;;^UTILITY(U,$J,358.3,40976,0)
+ ;;=I80.213^^153^2003^134
+ ;;^UTILITY(U,$J,358.3,40976,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18843,1,3,0)
- ;;=3^Chronic Myeloid Leukemia,BCR/ABL-Positive,In Remission
- ;;^UTILITY(U,$J,358.3,18843,1,4,0)
- ;;=4^C92.11
- ;;^UTILITY(U,$J,358.3,18843,2)
- ;;=^5001793
- ;;^UTILITY(U,$J,358.3,18844,0)
- ;;=C92.10^^94^916^48
- ;;^UTILITY(U,$J,358.3,18844,1,0)
+ ;;^UTILITY(U,$J,358.3,40976,1,3,0)
+ ;;=3^Phleb & Thrombphleb Bil Iliac Vein
+ ;;^UTILITY(U,$J,358.3,40976,1,4,0)
+ ;;=4^I80.213
+ ;;^UTILITY(U,$J,358.3,40976,2)
+ ;;=^5007833
+ ;;^UTILITY(U,$J,358.3,40977,0)
+ ;;=I82.411^^153^2003^22
+ ;;^UTILITY(U,$J,358.3,40977,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18844,1,3,0)
- ;;=3^Chronic Myeloid Leukemia,BCR/ABL-Positive,Not in Remission
- ;;^UTILITY(U,$J,358.3,18844,1,4,0)
- ;;=4^C92.10
- ;;^UTILITY(U,$J,358.3,18844,2)
- ;;=^5001792
- ;;^UTILITY(U,$J,358.3,18845,0)
- ;;=D47.1^^94^916^49
- ;;^UTILITY(U,$J,358.3,18845,1,0)
+ ;;^UTILITY(U,$J,358.3,40977,1,3,0)
+ ;;=3^AC Embol & Thromb Rt Fem Vein
+ ;;^UTILITY(U,$J,358.3,40977,1,4,0)
+ ;;=4^I82.411
+ ;;^UTILITY(U,$J,358.3,40977,2)
+ ;;=^5007857
+ ;;^UTILITY(U,$J,358.3,40978,0)
+ ;;=I82.412^^153^2003^12
+ ;;^UTILITY(U,$J,358.3,40978,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18845,1,3,0)
- ;;=3^Chronic Myeloproliferative Disease
- ;;^UTILITY(U,$J,358.3,18845,1,4,0)
- ;;=4^D47.1
- ;;^UTILITY(U,$J,358.3,18845,2)
- ;;=^5002256
- ;;^UTILITY(U,$J,358.3,18846,0)
- ;;=C82.69^^94^916^50
- ;;^UTILITY(U,$J,358.3,18846,1,0)
+ ;;^UTILITY(U,$J,358.3,40978,1,3,0)
+ ;;=3^AC Embol & Thromb Lt Fem Vein
+ ;;^UTILITY(U,$J,358.3,40978,1,4,0)
+ ;;=4^I82.412
+ ;;^UTILITY(U,$J,358.3,40978,2)
+ ;;=^5007858
+ ;;^UTILITY(U,$J,358.3,40979,0)
+ ;;=I82.413^^153^2003^2
+ ;;^UTILITY(U,$J,358.3,40979,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18846,1,3,0)
- ;;=3^Cutaneous Follicle Center Lymphoma,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,18846,1,4,0)
- ;;=4^C82.69
- ;;^UTILITY(U,$J,358.3,18846,2)
- ;;=^5001530
- ;;^UTILITY(U,$J,358.3,18847,0)
- ;;=C82.60^^94^916^51
- ;;^UTILITY(U,$J,358.3,18847,1,0)
+ ;;^UTILITY(U,$J,358.3,40979,1,3,0)
+ ;;=3^AC Embol & Thromb Bil Fem Vein
+ ;;^UTILITY(U,$J,358.3,40979,1,4,0)
+ ;;=4^I82.413
+ ;;^UTILITY(U,$J,358.3,40979,2)
+ ;;=^5007859
+ ;;^UTILITY(U,$J,358.3,40980,0)
+ ;;=I82.421^^153^2003^23
+ ;;^UTILITY(U,$J,358.3,40980,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18847,1,3,0)
- ;;=3^Cutaneous Follicle Center Lymphoma,Unspec Site
- ;;^UTILITY(U,$J,358.3,18847,1,4,0)
- ;;=4^C82.60
- ;;^UTILITY(U,$J,358.3,18847,2)
- ;;=^5001521
- ;;^UTILITY(U,$J,358.3,18848,0)
- ;;=D56.2^^94^916^52
- ;;^UTILITY(U,$J,358.3,18848,1,0)
+ ;;^UTILITY(U,$J,358.3,40980,1,3,0)
+ ;;=3^AC Embol & Thromb Rt Iliac Vein
+ ;;^UTILITY(U,$J,358.3,40980,1,4,0)
+ ;;=4^I82.421
+ ;;^UTILITY(U,$J,358.3,40980,2)
+ ;;=^5007861
+ ;;^UTILITY(U,$J,358.3,40981,0)
+ ;;=I82.422^^153^2003^13
+ ;;^UTILITY(U,$J,358.3,40981,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18848,1,3,0)
- ;;=3^Delta-Beta Thalassemia
- ;;^UTILITY(U,$J,358.3,18848,1,4,0)
- ;;=4^D56.2
- ;;^UTILITY(U,$J,358.3,18848,2)
- ;;=^340496
- ;;^UTILITY(U,$J,358.3,18849,0)
- ;;=D75.9^^94^916^53
- ;;^UTILITY(U,$J,358.3,18849,1,0)
+ ;;^UTILITY(U,$J,358.3,40981,1,3,0)
+ ;;=3^AC Embol & Thromb Lt Iliac Vein
+ ;;^UTILITY(U,$J,358.3,40981,1,4,0)
+ ;;=4^I82.422
+ ;;^UTILITY(U,$J,358.3,40981,2)
+ ;;=^5007862
+ ;;^UTILITY(U,$J,358.3,40982,0)
+ ;;=I82.423^^153^2003^3
+ ;;^UTILITY(U,$J,358.3,40982,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18849,1,3,0)
- ;;=3^Disease of Blood/Blood-Forming Organs,Unspec
- ;;^UTILITY(U,$J,358.3,18849,1,4,0)
- ;;=4^D75.9
- ;;^UTILITY(U,$J,358.3,18849,2)
- ;;=^5002393
- ;;^UTILITY(U,$J,358.3,18850,0)
- ;;=D59.0^^94^916^56
- ;;^UTILITY(U,$J,358.3,18850,1,0)
+ ;;^UTILITY(U,$J,358.3,40982,1,3,0)
+ ;;=3^AC Embol & Thromb Bil Iliac Vein
+ ;;^UTILITY(U,$J,358.3,40982,1,4,0)
+ ;;=4^I82.423
+ ;;^UTILITY(U,$J,358.3,40982,2)
+ ;;=^5007863
+ ;;^UTILITY(U,$J,358.3,40983,0)
+ ;;=I82.431^^153^2003^25
+ ;;^UTILITY(U,$J,358.3,40983,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18850,1,3,0)
- ;;=3^Drug-Induced Autoimmune Hemolytic Anemia
- ;;^UTILITY(U,$J,358.3,18850,1,4,0)
- ;;=4^D59.0
- ;;^UTILITY(U,$J,358.3,18850,2)
- ;;=^5002323
- ;;^UTILITY(U,$J,358.3,18851,0)
- ;;=D59.2^^94^916^57
- ;;^UTILITY(U,$J,358.3,18851,1,0)
+ ;;^UTILITY(U,$J,358.3,40983,1,3,0)
+ ;;=3^AC Embol & Thromb Rt Pop Vein
+ ;;^UTILITY(U,$J,358.3,40983,1,4,0)
+ ;;=4^I82.431
+ ;;^UTILITY(U,$J,358.3,40983,2)
+ ;;=^5007865
+ ;;^UTILITY(U,$J,358.3,40984,0)
+ ;;=I82.432^^153^2003^15
+ ;;^UTILITY(U,$J,358.3,40984,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18851,1,3,0)
- ;;=3^Drug-Induced Nonautoimmune Hemolytic Anemia
+ ;;^UTILITY(U,$J,358.3,40984,1,3,0)
+ ;;=3^AC Embol & Thromb Lt Pop Vein
+ ;;^UTILITY(U,$J,358.3,40984,1,4,0)
+ ;;=4^I82.432
+ ;;^UTILITY(U,$J,358.3,40984,2)
+ ;;=^5007866
+ ;;^UTILITY(U,$J,358.3,40985,0)
+ ;;=I82.433^^153^2003^5
+ ;;^UTILITY(U,$J,358.3,40985,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40985,1,3,0)
+ ;;=3^AC Embol & Thromb Bil Pop Vein
+ ;;^UTILITY(U,$J,358.3,40985,1,4,0)
+ ;;=4^I82.433
+ ;;^UTILITY(U,$J,358.3,40985,2)
+ ;;=^5007867
+ ;;^UTILITY(U,$J,358.3,40986,0)
+ ;;=I82.4Y1^^153^2003^26
+ ;;^UTILITY(U,$J,358.3,40986,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40986,1,3,0)
+ ;;=3^AC Embol & Thromb Rt Prox LE Deep Veins
+ ;;^UTILITY(U,$J,358.3,40986,1,4,0)
+ ;;=4^I82.4Y1
+ ;;^UTILITY(U,$J,358.3,40986,2)
+ ;;=^5007877
+ ;;^UTILITY(U,$J,358.3,40987,0)
+ ;;=I82.4Y2^^153^2003^16
+ ;;^UTILITY(U,$J,358.3,40987,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40987,1,3,0)
+ ;;=3^AC Embol & Thromb Lt Prox LE Deep Veins
+ ;;^UTILITY(U,$J,358.3,40987,1,4,0)
+ ;;=4^I82.4Y2
+ ;;^UTILITY(U,$J,358.3,40987,2)
+ ;;=^5007878
+ ;;^UTILITY(U,$J,358.3,40988,0)
+ ;;=I82.4Y3^^153^2003^6
+ ;;^UTILITY(U,$J,358.3,40988,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40988,1,3,0)
+ ;;=3^AC Embol & Thromb Bil Prox LE Deep Veins
+ ;;^UTILITY(U,$J,358.3,40988,1,4,0)
+ ;;=4^I82.4Y3
+ ;;^UTILITY(U,$J,358.3,40988,2)
+ ;;=^5007879
+ ;;^UTILITY(U,$J,358.3,40989,0)
+ ;;=I82.611^^153^2003^29
+ ;;^UTILITY(U,$J,358.3,40989,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40989,1,3,0)
+ ;;=3^AC Embol & Thromb Rt UE Superfic Veins
+ ;;^UTILITY(U,$J,358.3,40989,1,4,0)
+ ;;=4^I82.611
+ ;;^UTILITY(U,$J,358.3,40989,2)
+ ;;=^5007915
+ ;;^UTILITY(U,$J,358.3,40990,0)
+ ;;=I82.612^^153^2003^19
+ ;;^UTILITY(U,$J,358.3,40990,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40990,1,3,0)
+ ;;=3^AC Embol & Thromb Lt UE Superfic Veins
+ ;;^UTILITY(U,$J,358.3,40990,1,4,0)
+ ;;=4^I82.612
+ ;;^UTILITY(U,$J,358.3,40990,2)
+ ;;=^5007916
+ ;;^UTILITY(U,$J,358.3,40991,0)
+ ;;=I82.613^^153^2003^9
+ ;;^UTILITY(U,$J,358.3,40991,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40991,1,3,0)
+ ;;=3^AC Embol & Thromb Bil UE Superfic Vein
+ ;;^UTILITY(U,$J,358.3,40991,1,4,0)
+ ;;=4^I82.613
+ ;;^UTILITY(U,$J,358.3,40991,2)
+ ;;=^5007917
+ ;;^UTILITY(U,$J,358.3,40992,0)
+ ;;=I82.621^^153^2003^28
+ ;;^UTILITY(U,$J,358.3,40992,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40992,1,3,0)
+ ;;=3^AC Embol & Thromb Rt UE Deep Veins
+ ;;^UTILITY(U,$J,358.3,40992,1,4,0)
+ ;;=4^I82.621
+ ;;^UTILITY(U,$J,358.3,40992,2)
+ ;;=^5007919
+ ;;^UTILITY(U,$J,358.3,40993,0)
+ ;;=I82.622^^153^2003^18
+ ;;^UTILITY(U,$J,358.3,40993,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40993,1,3,0)
+ ;;=3^AC Embol & Thromb Lt UE Deep Veins
+ ;;^UTILITY(U,$J,358.3,40993,1,4,0)
+ ;;=4^I82.622
+ ;;^UTILITY(U,$J,358.3,40993,2)
+ ;;=^5007920
+ ;;^UTILITY(U,$J,358.3,40994,0)
+ ;;=I82.623^^153^2003^8
+ ;;^UTILITY(U,$J,358.3,40994,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40994,1,3,0)
+ ;;=3^AC Embol & Thromb Bil UE Deep Veins
+ ;;^UTILITY(U,$J,358.3,40994,1,4,0)
+ ;;=4^I82.623
+ ;;^UTILITY(U,$J,358.3,40994,2)
+ ;;=^5007921
+ ;;^UTILITY(U,$J,358.3,40995,0)
+ ;;=I82.601^^153^2003^30
+ ;;^UTILITY(U,$J,358.3,40995,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40995,1,3,0)
+ ;;=3^AC Embol & Thromb Rt UE Veins,Unspec
+ ;;^UTILITY(U,$J,358.3,40995,1,4,0)
+ ;;=4^I82.601
+ ;;^UTILITY(U,$J,358.3,40995,2)
+ ;;=^5007912
+ ;;^UTILITY(U,$J,358.3,40996,0)
+ ;;=I82.602^^153^2003^20
+ ;;^UTILITY(U,$J,358.3,40996,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40996,1,3,0)
+ ;;=3^AC Embol & Thromb Lt UE Veins,Unspec
+ ;;^UTILITY(U,$J,358.3,40996,1,4,0)
+ ;;=4^I82.602
+ ;;^UTILITY(U,$J,358.3,40996,2)
+ ;;=^5007913
+ ;;^UTILITY(U,$J,358.3,40997,0)
+ ;;=I82.603^^153^2003^10
+ ;;^UTILITY(U,$J,358.3,40997,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40997,1,3,0)
+ ;;=3^AC Embol & Thromb Bil UE Veins,Unspec
+ ;;^UTILITY(U,$J,358.3,40997,1,4,0)
+ ;;=4^I82.603
+ ;;^UTILITY(U,$J,358.3,40997,2)
+ ;;=^5007914
+ ;;^UTILITY(U,$J,358.3,40998,0)
+ ;;=I82.A11^^153^2003^21
+ ;;^UTILITY(U,$J,358.3,40998,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40998,1,3,0)
+ ;;=3^AC Embol & Thromb Rt Ax Vein
+ ;;^UTILITY(U,$J,358.3,40998,1,4,0)
+ ;;=4^I82.A11

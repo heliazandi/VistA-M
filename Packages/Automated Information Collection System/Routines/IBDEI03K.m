@@ -1,144 +1,274 @@
-IBDEI03K ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI03K ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,953,1,0)
+ ;;^UTILITY(U,$J,358.3,3242,1,2,0)
+ ;;=2^94640
+ ;;^UTILITY(U,$J,358.3,3242,1,3,0)
+ ;;=3^INHALATION TREATMENT
+ ;;^UTILITY(U,$J,358.3,3243,0)
+ ;;=94664^^26^248^3^^^^1
+ ;;^UTILITY(U,$J,358.3,3243,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3243,1,2,0)
+ ;;=2^94664
+ ;;^UTILITY(U,$J,358.3,3243,1,3,0)
+ ;;=3^DEMO/EVAL PT USE OF NEBULIZER
+ ;;^UTILITY(U,$J,358.3,3244,0)
+ ;;=94667^^26^248^1^^^^1
+ ;;^UTILITY(U,$J,358.3,3244,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3244,1,2,0)
+ ;;=2^94667
+ ;;^UTILITY(U,$J,358.3,3244,1,3,0)
+ ;;=3^CHEST WALL MANIPULATION
+ ;;^UTILITY(U,$J,358.3,3245,0)
+ ;;=94660^^26^248^2^^^^1
+ ;;^UTILITY(U,$J,358.3,3245,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3245,1,2,0)
+ ;;=2^94660
+ ;;^UTILITY(U,$J,358.3,3245,1,3,0)
+ ;;=3^CPAP MANAGEMENT
+ ;;^UTILITY(U,$J,358.3,3246,0)
+ ;;=32400^^26^249^3^^^^1
+ ;;^UTILITY(U,$J,358.3,3246,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3246,1,2,0)
+ ;;=2^32400
+ ;;^UTILITY(U,$J,358.3,3246,1,3,0)
+ ;;=3^PLEURAL BIOPSY
+ ;;^UTILITY(U,$J,358.3,3247,0)
+ ;;=32554^^26^249^2^^^^1
+ ;;^UTILITY(U,$J,358.3,3247,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3247,1,2,0)
+ ;;=2^32554
+ ;;^UTILITY(U,$J,358.3,3247,1,3,0)
+ ;;=3^ASPIRATE PLEURA W/O IMAGING
+ ;;^UTILITY(U,$J,358.3,3248,0)
+ ;;=32555^^26^249^1^^^^1
+ ;;^UTILITY(U,$J,358.3,3248,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3248,1,2,0)
+ ;;=2^32555
+ ;;^UTILITY(U,$J,358.3,3248,1,3,0)
+ ;;=3^ASPIRATE PLEURA W/ IMAGING
+ ;;^UTILITY(U,$J,358.3,3249,0)
+ ;;=99291^^26^250^1^^^^1
+ ;;^UTILITY(U,$J,358.3,3249,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3249,1,2,0)
+ ;;=2^99291
+ ;;^UTILITY(U,$J,358.3,3249,1,3,0)
+ ;;=3^CRITICAL CARE E&M,30-74 MIN
+ ;;^UTILITY(U,$J,358.3,3250,0)
+ ;;=99292^^26^250^2^^^^1
+ ;;^UTILITY(U,$J,358.3,3250,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3250,1,2,0)
+ ;;=2^99292
+ ;;^UTILITY(U,$J,358.3,3250,1,3,0)
+ ;;=3^CRITICAL CARE E&M,EA ADDL 30 MIN
+ ;;^UTILITY(U,$J,358.3,3251,0)
+ ;;=G0425^^26^251^1^^^^1
+ ;;^UTILITY(U,$J,358.3,3251,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3251,1,2,0)
+ ;;=2^G0425
+ ;;^UTILITY(U,$J,358.3,3251,1,3,0)
+ ;;=3^INPT/TELECONSULT,INIT,30 MIN
+ ;;^UTILITY(U,$J,358.3,3252,0)
+ ;;=G0426^^26^251^2^^^^1
+ ;;^UTILITY(U,$J,358.3,3252,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3252,1,2,0)
+ ;;=2^G0426
+ ;;^UTILITY(U,$J,358.3,3252,1,3,0)
+ ;;=3^INPT/TELECONSULT,INIT,50 MIN
+ ;;^UTILITY(U,$J,358.3,3253,0)
+ ;;=G0427^^26^251^3^^^^1
+ ;;^UTILITY(U,$J,358.3,3253,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3253,1,2,0)
+ ;;=2^G0427
+ ;;^UTILITY(U,$J,358.3,3253,1,3,0)
+ ;;=3^INPT/TELECONSULT,INIT,70 MIN
+ ;;^UTILITY(U,$J,358.3,3254,0)
+ ;;=G0406^^26^251^4^^^^1
+ ;;^UTILITY(U,$J,358.3,3254,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3254,1,2,0)
+ ;;=2^G0406
+ ;;^UTILITY(U,$J,358.3,3254,1,3,0)
+ ;;=3^INPT/TELE FOLLOW-UP,15 MIN
+ ;;^UTILITY(U,$J,358.3,3255,0)
+ ;;=G0407^^26^251^5^^^^1
+ ;;^UTILITY(U,$J,358.3,3255,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3255,1,2,0)
+ ;;=2^G0407
+ ;;^UTILITY(U,$J,358.3,3255,1,3,0)
+ ;;=3^INPT/TELE FOLLOW-UP,25 MIN
+ ;;^UTILITY(U,$J,358.3,3256,0)
+ ;;=G0408^^26^251^6^^^^1
+ ;;^UTILITY(U,$J,358.3,3256,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3256,1,2,0)
+ ;;=2^G0408
+ ;;^UTILITY(U,$J,358.3,3256,1,3,0)
+ ;;=3^INPT/TELE FOLLOW-UP,35 MIN
+ ;;^UTILITY(U,$J,358.3,3257,0)
+ ;;=G0459^^26^251^7^^^^1
+ ;;^UTILITY(U,$J,358.3,3257,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,3257,1,2,0)
+ ;;=2^G0459
+ ;;^UTILITY(U,$J,358.3,3257,1,3,0)
+ ;;=3^INPT/TELE PHARM MGMT
+ ;;^UTILITY(U,$J,358.3,3258,0)
+ ;;=I63.50^^27^252^1
+ ;;^UTILITY(U,$J,358.3,3258,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,953,1,3,0)
- ;;=3^Asthma Uncomplicated,Unspec
- ;;^UTILITY(U,$J,358.3,953,1,4,0)
- ;;=4^J45.909
- ;;^UTILITY(U,$J,358.3,953,2)
- ;;=^5008256
- ;;^UTILITY(U,$J,358.3,954,0)
- ;;=M12.9^^12^119^17
- ;;^UTILITY(U,$J,358.3,954,1,0)
+ ;;^UTILITY(U,$J,358.3,3258,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occls/Stenosis of Unspec Cerebral Artery
+ ;;^UTILITY(U,$J,358.3,3258,1,4,0)
+ ;;=4^I63.50
+ ;;^UTILITY(U,$J,358.3,3258,2)
+ ;;=^5007343
+ ;;^UTILITY(U,$J,358.3,3259,0)
+ ;;=I63.511^^27^252^2
+ ;;^UTILITY(U,$J,358.3,3259,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,954,1,3,0)
- ;;=3^Arthropathy,Unspec
- ;;^UTILITY(U,$J,358.3,954,1,4,0)
- ;;=4^M12.9
- ;;^UTILITY(U,$J,358.3,954,2)
- ;;=^5010666
- ;;^UTILITY(U,$J,358.3,955,0)
- ;;=T78.40XA^^12^119^11
- ;;^UTILITY(U,$J,358.3,955,1,0)
+ ;;^UTILITY(U,$J,358.3,3259,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occls/Stenosis of Right Mid Cerebral Artery
+ ;;^UTILITY(U,$J,358.3,3259,1,4,0)
+ ;;=4^I63.511
+ ;;^UTILITY(U,$J,358.3,3259,2)
+ ;;=^5007344
+ ;;^UTILITY(U,$J,358.3,3260,0)
+ ;;=I63.512^^27^252^3
+ ;;^UTILITY(U,$J,358.3,3260,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,955,1,3,0)
- ;;=3^Allergy,Unspec Initial Encounter
- ;;^UTILITY(U,$J,358.3,955,1,4,0)
- ;;=4^T78.40XA
- ;;^UTILITY(U,$J,358.3,955,2)
- ;;=^5054284
- ;;^UTILITY(U,$J,358.3,956,0)
- ;;=L40.2^^12^119^6
- ;;^UTILITY(U,$J,358.3,956,1,0)
+ ;;^UTILITY(U,$J,358.3,3260,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occls/Stenosis of Left Mid Cerebral Artery
+ ;;^UTILITY(U,$J,358.3,3260,1,4,0)
+ ;;=4^I63.512
+ ;;^UTILITY(U,$J,358.3,3260,2)
+ ;;=^5007345
+ ;;^UTILITY(U,$J,358.3,3261,0)
+ ;;=I63.521^^27^252^4
+ ;;^UTILITY(U,$J,358.3,3261,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,956,1,3,0)
- ;;=3^Acrodermatitis Continua
- ;;^UTILITY(U,$J,358.3,956,1,4,0)
- ;;=4^L40.2
- ;;^UTILITY(U,$J,358.3,956,2)
- ;;=^5009162
- ;;^UTILITY(U,$J,358.3,957,0)
- ;;=R10.9^^12^119^3
- ;;^UTILITY(U,$J,358.3,957,1,0)
+ ;;^UTILITY(U,$J,358.3,3261,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occls/Stenosis of Right Ant Cerebral Artery
+ ;;^UTILITY(U,$J,358.3,3261,1,4,0)
+ ;;=4^I63.521
+ ;;^UTILITY(U,$J,358.3,3261,2)
+ ;;=^5007346
+ ;;^UTILITY(U,$J,358.3,3262,0)
+ ;;=I63.522^^27^252^5
+ ;;^UTILITY(U,$J,358.3,3262,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,957,1,3,0)
- ;;=3^Abdominal Pain,Unspec
- ;;^UTILITY(U,$J,358.3,957,1,4,0)
- ;;=4^R10.9
- ;;^UTILITY(U,$J,358.3,957,2)
- ;;=^5019230
- ;;^UTILITY(U,$J,358.3,958,0)
- ;;=F10.10^^12^119^8
- ;;^UTILITY(U,$J,358.3,958,1,0)
+ ;;^UTILITY(U,$J,358.3,3262,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occls/Stenosis of Left Ant Cerebral Artery
+ ;;^UTILITY(U,$J,358.3,3262,1,4,0)
+ ;;=4^I63.522
+ ;;^UTILITY(U,$J,358.3,3262,2)
+ ;;=^5007347
+ ;;^UTILITY(U,$J,358.3,3263,0)
+ ;;=I63.531^^27^252^6
+ ;;^UTILITY(U,$J,358.3,3263,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,958,1,3,0)
- ;;=3^Alcohol Abuse Uncomplicated
- ;;^UTILITY(U,$J,358.3,958,1,4,0)
- ;;=4^F10.10
- ;;^UTILITY(U,$J,358.3,958,2)
- ;;=^5003068
- ;;^UTILITY(U,$J,358.3,959,0)
- ;;=F43.0^^12^119^7
- ;;^UTILITY(U,$J,358.3,959,1,0)
+ ;;^UTILITY(U,$J,358.3,3263,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occls/Stenosis of Right Post Cerebral Artery
+ ;;^UTILITY(U,$J,358.3,3263,1,4,0)
+ ;;=4^I63.531
+ ;;^UTILITY(U,$J,358.3,3263,2)
+ ;;=^5007348
+ ;;^UTILITY(U,$J,358.3,3264,0)
+ ;;=I63.532^^27^252^7
+ ;;^UTILITY(U,$J,358.3,3264,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,959,1,3,0)
- ;;=3^Acute Stress Reaction
- ;;^UTILITY(U,$J,358.3,959,1,4,0)
- ;;=4^F43.0
- ;;^UTILITY(U,$J,358.3,959,2)
- ;;=^5003569
- ;;^UTILITY(U,$J,358.3,960,0)
- ;;=Z89.511^^12^119^5
- ;;^UTILITY(U,$J,358.3,960,1,0)
+ ;;^UTILITY(U,$J,358.3,3264,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occls/Stenosis of Left Post Cerebral Artery
+ ;;^UTILITY(U,$J,358.3,3264,1,4,0)
+ ;;=4^I63.532
+ ;;^UTILITY(U,$J,358.3,3264,2)
+ ;;=^5007349
+ ;;^UTILITY(U,$J,358.3,3265,0)
+ ;;=I63.541^^27^252^8
+ ;;^UTILITY(U,$J,358.3,3265,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,960,1,3,0)
- ;;=3^Acquired Absence Right Leg Below Knee
- ;;^UTILITY(U,$J,358.3,960,1,4,0)
- ;;=4^Z89.511
- ;;^UTILITY(U,$J,358.3,960,2)
- ;;=^5063566
- ;;^UTILITY(U,$J,358.3,961,0)
- ;;=Z89.512^^12^119^4
- ;;^UTILITY(U,$J,358.3,961,1,0)
+ ;;^UTILITY(U,$J,358.3,3265,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occls/Stenosis of Right Cereblr Artery
+ ;;^UTILITY(U,$J,358.3,3265,1,4,0)
+ ;;=4^I63.541
+ ;;^UTILITY(U,$J,358.3,3265,2)
+ ;;=^5007350
+ ;;^UTILITY(U,$J,358.3,3266,0)
+ ;;=I63.542^^27^252^9
+ ;;^UTILITY(U,$J,358.3,3266,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,961,1,3,0)
- ;;=3^Acquired Absence Left Leg Below Knee
- ;;^UTILITY(U,$J,358.3,961,1,4,0)
- ;;=4^Z89.512
- ;;^UTILITY(U,$J,358.3,961,2)
- ;;=^5063567
- ;;^UTILITY(U,$J,358.3,962,0)
- ;;=E53.8^^12^120^1
- ;;^UTILITY(U,$J,358.3,962,1,0)
+ ;;^UTILITY(U,$J,358.3,3266,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occls/Stenosis of Left Cereblr Artery
+ ;;^UTILITY(U,$J,358.3,3266,1,4,0)
+ ;;=4^I63.542
+ ;;^UTILITY(U,$J,358.3,3266,2)
+ ;;=^5007351
+ ;;^UTILITY(U,$J,358.3,3267,0)
+ ;;=I63.59^^27^252^10
+ ;;^UTILITY(U,$J,358.3,3267,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,962,1,3,0)
- ;;=3^B Vitamin Group Deficiency
- ;;^UTILITY(U,$J,358.3,962,1,4,0)
- ;;=4^E53.8
- ;;^UTILITY(U,$J,358.3,962,2)
- ;;=^5002797
- ;;^UTILITY(U,$J,358.3,963,0)
- ;;=F31.9^^12^120^2
- ;;^UTILITY(U,$J,358.3,963,1,0)
+ ;;^UTILITY(U,$J,358.3,3267,1,3,0)
+ ;;=3^Cerebral Infarction d/t Occls/Stenosis of Cerebral Artery
+ ;;^UTILITY(U,$J,358.3,3267,1,4,0)
+ ;;=4^I63.59
+ ;;^UTILITY(U,$J,358.3,3267,2)
+ ;;=^5007352
+ ;;^UTILITY(U,$J,358.3,3268,0)
+ ;;=I63.9^^27^252^11
+ ;;^UTILITY(U,$J,358.3,3268,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,963,1,3,0)
- ;;=3^Bipolar Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,963,1,4,0)
- ;;=4^F31.9
- ;;^UTILITY(U,$J,358.3,963,2)
- ;;=^331892
- ;;^UTILITY(U,$J,358.3,964,0)
- ;;=R00.1^^12^120^5
- ;;^UTILITY(U,$J,358.3,964,1,0)
+ ;;^UTILITY(U,$J,358.3,3268,1,3,0)
+ ;;=3^Cerebral Infarction,Unspec
+ ;;^UTILITY(U,$J,358.3,3268,1,4,0)
+ ;;=4^I63.9
+ ;;^UTILITY(U,$J,358.3,3268,2)
+ ;;=^5007355
+ ;;^UTILITY(U,$J,358.3,3269,0)
+ ;;=I65.21^^27^252^29
+ ;;^UTILITY(U,$J,358.3,3269,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,964,1,3,0)
- ;;=3^Bradycardia,Unspec
- ;;^UTILITY(U,$J,358.3,964,1,4,0)
- ;;=4^R00.1
- ;;^UTILITY(U,$J,358.3,964,2)
- ;;=^5019164
- ;;^UTILITY(U,$J,358.3,965,0)
- ;;=J20.9^^12^120^6
- ;;^UTILITY(U,$J,358.3,965,1,0)
+ ;;^UTILITY(U,$J,358.3,3269,1,3,0)
+ ;;=3^Occlusion/Stenosis of Right Carotid Artery
+ ;;^UTILITY(U,$J,358.3,3269,1,4,0)
+ ;;=4^I65.21
+ ;;^UTILITY(U,$J,358.3,3269,2)
+ ;;=^5007360
+ ;;^UTILITY(U,$J,358.3,3270,0)
+ ;;=I65.22^^27^252^28
+ ;;^UTILITY(U,$J,358.3,3270,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,965,1,3,0)
- ;;=3^Bronchitis,Acute,Unspec
- ;;^UTILITY(U,$J,358.3,965,1,4,0)
- ;;=4^J20.9
- ;;^UTILITY(U,$J,358.3,965,2)
- ;;=^5008195
- ;;^UTILITY(U,$J,358.3,966,0)
- ;;=N32.0^^12^120^3
- ;;^UTILITY(U,$J,358.3,966,1,0)
+ ;;^UTILITY(U,$J,358.3,3270,1,3,0)
+ ;;=3^Occlusion/Stenosis of Left Carotid Artery
+ ;;^UTILITY(U,$J,358.3,3270,1,4,0)
+ ;;=4^I65.22
+ ;;^UTILITY(U,$J,358.3,3270,2)
+ ;;=^5007361
+ ;;^UTILITY(U,$J,358.3,3271,0)
+ ;;=I65.23^^27^252^27
+ ;;^UTILITY(U,$J,358.3,3271,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,966,1,3,0)
- ;;=3^Bladder-Neck Obstruction
- ;;^UTILITY(U,$J,358.3,966,1,4,0)
- ;;=4^N32.0
- ;;^UTILITY(U,$J,358.3,966,2)
- ;;=^5015649
- ;;^UTILITY(U,$J,358.3,967,0)
- ;;=M71.50^^12^120^7
+ ;;^UTILITY(U,$J,358.3,3271,1,3,0)
+ ;;=3^Occlusion/Stenosis of Bilateral Carotid Arteries
+ ;;^UTILITY(U,$J,358.3,3271,1,4,0)
+ ;;=4^I65.23
+ ;;^UTILITY(U,$J,358.3,3271,2)
+ ;;=^5007362
+ ;;^UTILITY(U,$J,358.3,3272,0)
+ ;;=G45.9^^27^252^32
+ ;;^UTILITY(U,$J,358.3,3272,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,3272,1,3,0)
+ ;;=3^Transient Cerebral Ischemic Attack,Unspec

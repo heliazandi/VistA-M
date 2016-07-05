@@ -1,140 +1,296 @@
-IBDEI03A ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI03A ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,796,1,0)
+ ;;^UTILITY(U,$J,358.3,2925,1,3,0)
+ ;;=3^Therapeutic Drug Level Monitoring
+ ;;^UTILITY(U,$J,358.3,2925,1,4,0)
+ ;;=4^Z51.81
+ ;;^UTILITY(U,$J,358.3,2925,2)
+ ;;=^5063064
+ ;;^UTILITY(U,$J,358.3,2926,0)
+ ;;=F11.20^^20^208^2
+ ;;^UTILITY(U,$J,358.3,2926,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,796,1,3,0)
- ;;=3^Irritant Contact Dermatitis d/t Oils/Greases
- ;;^UTILITY(U,$J,358.3,796,1,4,0)
- ;;=4^L24.1
- ;;^UTILITY(U,$J,358.3,796,2)
- ;;=^5009127
- ;;^UTILITY(U,$J,358.3,797,0)
- ;;=L24.2^^9^88^100
- ;;^UTILITY(U,$J,358.3,797,1,0)
+ ;;^UTILITY(U,$J,358.3,2926,1,3,0)
+ ;;=3^Opioid Dependence,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,2926,1,4,0)
+ ;;=4^F11.20
+ ;;^UTILITY(U,$J,358.3,2926,2)
+ ;;=^5003127
+ ;;^UTILITY(U,$J,358.3,2927,0)
+ ;;=M54.5^^20^208^1
+ ;;^UTILITY(U,$J,358.3,2927,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,797,1,3,0)
- ;;=3^Irritant Contact Dermatitis d/t Solvents
- ;;^UTILITY(U,$J,358.3,797,1,4,0)
- ;;=4^L24.2
- ;;^UTILITY(U,$J,358.3,797,2)
- ;;=^5009128
- ;;^UTILITY(U,$J,358.3,798,0)
- ;;=L24.3^^9^88^93
- ;;^UTILITY(U,$J,358.3,798,1,0)
+ ;;^UTILITY(U,$J,358.3,2927,1,3,0)
+ ;;=3^Low Back Pain
+ ;;^UTILITY(U,$J,358.3,2927,1,4,0)
+ ;;=4^M54.5
+ ;;^UTILITY(U,$J,358.3,2927,2)
+ ;;=^5012311
+ ;;^UTILITY(U,$J,358.3,2928,0)
+ ;;=M19.90^^20^208^3
+ ;;^UTILITY(U,$J,358.3,2928,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,798,1,3,0)
- ;;=3^Irritant Contact Dermatitis d/t Cosmetics
- ;;^UTILITY(U,$J,358.3,798,1,4,0)
- ;;=4^L24.3
- ;;^UTILITY(U,$J,358.3,798,2)
- ;;=^5009129
- ;;^UTILITY(U,$J,358.3,799,0)
- ;;=L24.5^^9^88^98
- ;;^UTILITY(U,$J,358.3,799,1,0)
+ ;;^UTILITY(U,$J,358.3,2928,1,3,0)
+ ;;=3^Osteoarthritis,Unspec Site
+ ;;^UTILITY(U,$J,358.3,2928,1,4,0)
+ ;;=4^M19.90
+ ;;^UTILITY(U,$J,358.3,2928,2)
+ ;;=^5010853
+ ;;^UTILITY(U,$J,358.3,2929,0)
+ ;;=F43.10^^20^209^6
+ ;;^UTILITY(U,$J,358.3,2929,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,799,1,3,0)
- ;;=3^Irritant Contact Dermatitis d/t Oth Chemical Products
- ;;^UTILITY(U,$J,358.3,799,1,4,0)
- ;;=4^L24.5
- ;;^UTILITY(U,$J,358.3,799,2)
- ;;=^5009131
- ;;^UTILITY(U,$J,358.3,800,0)
- ;;=L24.6^^9^88^95
- ;;^UTILITY(U,$J,358.3,800,1,0)
+ ;;^UTILITY(U,$J,358.3,2929,1,3,0)
+ ;;=3^PTSD,Unspec
+ ;;^UTILITY(U,$J,358.3,2929,1,4,0)
+ ;;=4^F43.10
+ ;;^UTILITY(U,$J,358.3,2929,2)
+ ;;=^5003570
+ ;;^UTILITY(U,$J,358.3,2930,0)
+ ;;=F43.12^^20^209^5
+ ;;^UTILITY(U,$J,358.3,2930,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,800,1,3,0)
- ;;=3^Irritant Contact Dermatitis d/t Food in Contact w/ Skin
- ;;^UTILITY(U,$J,358.3,800,1,4,0)
- ;;=4^L24.6
- ;;^UTILITY(U,$J,358.3,800,2)
- ;;=^5009132
- ;;^UTILITY(U,$J,358.3,801,0)
- ;;=L24.7^^9^88^99
- ;;^UTILITY(U,$J,358.3,801,1,0)
+ ;;^UTILITY(U,$J,358.3,2930,1,3,0)
+ ;;=3^PTSD,Chronic
+ ;;^UTILITY(U,$J,358.3,2930,1,4,0)
+ ;;=4^F43.12
+ ;;^UTILITY(U,$J,358.3,2930,2)
+ ;;=^5003572
+ ;;^UTILITY(U,$J,358.3,2931,0)
+ ;;=F32.9^^20^209^3
+ ;;^UTILITY(U,$J,358.3,2931,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,801,1,3,0)
- ;;=3^Irritant Contact Dermatitis d/t Plants
- ;;^UTILITY(U,$J,358.3,801,1,4,0)
- ;;=4^L24.7
- ;;^UTILITY(U,$J,358.3,801,2)
- ;;=^5009133
- ;;^UTILITY(U,$J,358.3,802,0)
- ;;=L24.81^^9^88^96
- ;;^UTILITY(U,$J,358.3,802,1,0)
+ ;;^UTILITY(U,$J,358.3,2931,1,3,0)
+ ;;=3^MDD,Single Episode,Unspec
+ ;;^UTILITY(U,$J,358.3,2931,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,2931,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,2932,0)
+ ;;=F41.9^^20^209^2
+ ;;^UTILITY(U,$J,358.3,2932,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,802,1,3,0)
- ;;=3^Irritant Contact Dermatitis d/t Metals
- ;;^UTILITY(U,$J,358.3,802,1,4,0)
- ;;=4^L24.81
- ;;^UTILITY(U,$J,358.3,802,2)
- ;;=^5009134
- ;;^UTILITY(U,$J,358.3,803,0)
- ;;=R21.^^9^88^107
- ;;^UTILITY(U,$J,358.3,803,1,0)
+ ;;^UTILITY(U,$J,358.3,2932,1,3,0)
+ ;;=3^Anxiety Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,2932,1,4,0)
+ ;;=4^F41.9
+ ;;^UTILITY(U,$J,358.3,2932,2)
+ ;;=^5003567
+ ;;^UTILITY(U,$J,358.3,2933,0)
+ ;;=F10.20^^20^209^1
+ ;;^UTILITY(U,$J,358.3,2933,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,803,1,3,0)
- ;;=3^Rash/Nonspecific Skin Eruption
- ;;^UTILITY(U,$J,358.3,803,1,4,0)
- ;;=4^R21.
- ;;^UTILITY(U,$J,358.3,803,2)
- ;;=^5019283
- ;;^UTILITY(U,$J,358.3,804,0)
- ;;=L27.0^^9^88^110
- ;;^UTILITY(U,$J,358.3,804,1,0)
+ ;;^UTILITY(U,$J,358.3,2933,1,3,0)
+ ;;=3^Alcohol Dependence,Uncomp
+ ;;^UTILITY(U,$J,358.3,2933,1,4,0)
+ ;;=4^F10.20
+ ;;^UTILITY(U,$J,358.3,2933,2)
+ ;;=^5003081
+ ;;^UTILITY(U,$J,358.3,2934,0)
+ ;;=F06.8^^20^209^4
+ ;;^UTILITY(U,$J,358.3,2934,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,804,1,3,0)
- ;;=3^Skin Eruption d/t Drugs/Meds Taken Internally
- ;;^UTILITY(U,$J,358.3,804,1,4,0)
- ;;=4^L27.0
- ;;^UTILITY(U,$J,358.3,804,2)
- ;;=^5009144
- ;;^UTILITY(U,$J,358.3,805,0)
- ;;=Z91.010^^9^88^35
- ;;^UTILITY(U,$J,358.3,805,1,0)
+ ;;^UTILITY(U,$J,358.3,2934,1,3,0)
+ ;;=3^Mental Disorders d/t Physiological Condition
+ ;;^UTILITY(U,$J,358.3,2934,1,4,0)
+ ;;=4^F06.8
+ ;;^UTILITY(U,$J,358.3,2934,2)
+ ;;=^5003062
+ ;;^UTILITY(U,$J,358.3,2935,0)
+ ;;=F06.0^^20^209^7
+ ;;^UTILITY(U,$J,358.3,2935,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,805,1,3,0)
- ;;=3^Allergy to Peanuts
- ;;^UTILITY(U,$J,358.3,805,1,4,0)
- ;;=4^Z91.010
- ;;^UTILITY(U,$J,358.3,805,2)
- ;;=^5063599
- ;;^UTILITY(U,$J,358.3,806,0)
- ;;=Z91.011^^9^88^32
- ;;^UTILITY(U,$J,358.3,806,1,0)
+ ;;^UTILITY(U,$J,358.3,2935,1,3,0)
+ ;;=3^Psychotic Disorder w/ Hallucinations d/t Physiol Condition
+ ;;^UTILITY(U,$J,358.3,2935,1,4,0)
+ ;;=4^F06.0
+ ;;^UTILITY(U,$J,358.3,2935,2)
+ ;;=^5003053
+ ;;^UTILITY(U,$J,358.3,2936,0)
+ ;;=E05.90^^20^210^14
+ ;;^UTILITY(U,$J,358.3,2936,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,806,1,3,0)
- ;;=3^Allergy to Milk Products
- ;;^UTILITY(U,$J,358.3,806,1,4,0)
- ;;=4^Z91.011
- ;;^UTILITY(U,$J,358.3,806,2)
- ;;=^5063600
- ;;^UTILITY(U,$J,358.3,807,0)
- ;;=Z91.012^^9^88^29
- ;;^UTILITY(U,$J,358.3,807,1,0)
+ ;;^UTILITY(U,$J,358.3,2936,1,3,0)
+ ;;=3^Thyrotoxicosis,Unspec
+ ;;^UTILITY(U,$J,358.3,2936,1,4,0)
+ ;;=4^E05.90
+ ;;^UTILITY(U,$J,358.3,2936,2)
+ ;;=^5002492
+ ;;^UTILITY(U,$J,358.3,2937,0)
+ ;;=E03.9^^20^210^9
+ ;;^UTILITY(U,$J,358.3,2937,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,807,1,3,0)
- ;;=3^Allergy to Eggs
- ;;^UTILITY(U,$J,358.3,807,1,4,0)
- ;;=4^Z91.012
- ;;^UTILITY(U,$J,358.3,807,2)
- ;;=^5063601
- ;;^UTILITY(U,$J,358.3,808,0)
- ;;=Z91.013^^9^88^37
- ;;^UTILITY(U,$J,358.3,808,1,0)
+ ;;^UTILITY(U,$J,358.3,2937,1,3,0)
+ ;;=3^Hypothyroidism,Unspec
+ ;;^UTILITY(U,$J,358.3,2937,1,4,0)
+ ;;=4^E03.9
+ ;;^UTILITY(U,$J,358.3,2937,2)
+ ;;=^5002476
+ ;;^UTILITY(U,$J,358.3,2938,0)
+ ;;=E11.9^^20^210^6
+ ;;^UTILITY(U,$J,358.3,2938,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,808,1,3,0)
- ;;=3^Allergy to Seafood
- ;;^UTILITY(U,$J,358.3,808,1,4,0)
- ;;=4^Z91.013
- ;;^UTILITY(U,$J,358.3,808,2)
- ;;=^5063602
- ;;^UTILITY(U,$J,358.3,809,0)
- ;;=Z91.030^^9^88^52
- ;;^UTILITY(U,$J,358.3,809,1,0)
+ ;;^UTILITY(U,$J,358.3,2938,1,3,0)
+ ;;=3^Diabetes Type 2 w/o Complications
+ ;;^UTILITY(U,$J,358.3,2938,1,4,0)
+ ;;=4^E11.9
+ ;;^UTILITY(U,$J,358.3,2938,2)
+ ;;=^5002666
+ ;;^UTILITY(U,$J,358.3,2939,0)
+ ;;=E10.9^^20^210^1
+ ;;^UTILITY(U,$J,358.3,2939,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,809,1,3,0)
- ;;=3^Bee Allergy
- ;;^UTILITY(U,$J,358.3,809,1,4,0)
- ;;=4^Z91.030
+ ;;^UTILITY(U,$J,358.3,2939,1,3,0)
+ ;;=3^Diabetes Type 1 w/o Complications
+ ;;^UTILITY(U,$J,358.3,2939,1,4,0)
+ ;;=4^E10.9
+ ;;^UTILITY(U,$J,358.3,2939,2)
+ ;;=^5002626
+ ;;^UTILITY(U,$J,358.3,2940,0)
+ ;;=E11.65^^20^210^4
+ ;;^UTILITY(U,$J,358.3,2940,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2940,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Hyperglycemia
+ ;;^UTILITY(U,$J,358.3,2940,1,4,0)
+ ;;=4^E11.65
+ ;;^UTILITY(U,$J,358.3,2940,2)
+ ;;=^5002663
+ ;;^UTILITY(U,$J,358.3,2941,0)
+ ;;=E11.29^^20^210^2
+ ;;^UTILITY(U,$J,358.3,2941,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2941,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Diabetic Kidney Complication
+ ;;^UTILITY(U,$J,358.3,2941,1,4,0)
+ ;;=4^E11.29
+ ;;^UTILITY(U,$J,358.3,2941,2)
+ ;;=^5002631
+ ;;^UTILITY(U,$J,358.3,2942,0)
+ ;;=E11.40^^20^210^3
+ ;;^UTILITY(U,$J,358.3,2942,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2942,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Diabetic Neuropathy
+ ;;^UTILITY(U,$J,358.3,2942,1,4,0)
+ ;;=4^E11.40
+ ;;^UTILITY(U,$J,358.3,2942,2)
+ ;;=^5002644
+ ;;^UTILITY(U,$J,358.3,2943,0)
+ ;;=E11.8^^20^210^5
+ ;;^UTILITY(U,$J,358.3,2943,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2943,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Unspec Complications
+ ;;^UTILITY(U,$J,358.3,2943,1,4,0)
+ ;;=4^E11.8
+ ;;^UTILITY(U,$J,358.3,2943,2)
+ ;;=^5002665
+ ;;^UTILITY(U,$J,358.3,2944,0)
+ ;;=E78.0^^20^210^13
+ ;;^UTILITY(U,$J,358.3,2944,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2944,1,3,0)
+ ;;=3^Pure Hypercholesterolemia
+ ;;^UTILITY(U,$J,358.3,2944,1,4,0)
+ ;;=4^E78.0
+ ;;^UTILITY(U,$J,358.3,2944,2)
+ ;;=^5002966
+ ;;^UTILITY(U,$J,358.3,2945,0)
+ ;;=E78.2^^20^210^12
+ ;;^UTILITY(U,$J,358.3,2945,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2945,1,3,0)
+ ;;=3^Mixed Hyperlipidemia
+ ;;^UTILITY(U,$J,358.3,2945,1,4,0)
+ ;;=4^E78.2
+ ;;^UTILITY(U,$J,358.3,2945,2)
+ ;;=^78424
+ ;;^UTILITY(U,$J,358.3,2946,0)
+ ;;=E78.5^^20^210^8
+ ;;^UTILITY(U,$J,358.3,2946,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2946,1,3,0)
+ ;;=3^Hyperlipidemia,Unspec
+ ;;^UTILITY(U,$J,358.3,2946,1,4,0)
+ ;;=4^E78.5
+ ;;^UTILITY(U,$J,358.3,2946,2)
+ ;;=^5002969
+ ;;^UTILITY(U,$J,358.3,2947,0)
+ ;;=M10.9^^20^210^7
+ ;;^UTILITY(U,$J,358.3,2947,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2947,1,3,0)
+ ;;=3^Gout,Unspec
+ ;;^UTILITY(U,$J,358.3,2947,1,4,0)
+ ;;=4^M10.9
+ ;;^UTILITY(U,$J,358.3,2947,2)
+ ;;=^5010404
+ ;;^UTILITY(U,$J,358.3,2948,0)
+ ;;=Z79.4^^20^210^11
+ ;;^UTILITY(U,$J,358.3,2948,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2948,1,3,0)
+ ;;=3^Long Term (Current) Use of Insulin
+ ;;^UTILITY(U,$J,358.3,2948,1,4,0)
+ ;;=4^Z79.4
+ ;;^UTILITY(U,$J,358.3,2948,2)
+ ;;=^5063334
+ ;;^UTILITY(U,$J,358.3,2949,0)
+ ;;=Z79.83^^20^210^10
+ ;;^UTILITY(U,$J,358.3,2949,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2949,1,3,0)
+ ;;=3^Long Term (Current) Use of Bisphosphonates
+ ;;^UTILITY(U,$J,358.3,2949,1,4,0)
+ ;;=4^Z79.83
+ ;;^UTILITY(U,$J,358.3,2949,2)
+ ;;=^5063341
+ ;;^UTILITY(U,$J,358.3,2950,0)
+ ;;=I25.10^^20^211^1
+ ;;^UTILITY(U,$J,358.3,2950,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2950,1,3,0)
+ ;;=3^Athscl Hrt Disease w/o Angina Pectoris
+ ;;^UTILITY(U,$J,358.3,2950,1,4,0)
+ ;;=4^I25.10
+ ;;^UTILITY(U,$J,358.3,2950,2)
+ ;;=^5007107
+ ;;^UTILITY(U,$J,358.3,2951,0)
+ ;;=I25.9^^20^211^4
+ ;;^UTILITY(U,$J,358.3,2951,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2951,1,3,0)
+ ;;=3^Ischemic Hrt Disease,Chronic Unspec
+ ;;^UTILITY(U,$J,358.3,2951,1,4,0)
+ ;;=4^I25.9
+ ;;^UTILITY(U,$J,358.3,2951,2)
+ ;;=^5007144
+ ;;^UTILITY(U,$J,358.3,2952,0)
+ ;;=I50.9^^20^211^3
+ ;;^UTILITY(U,$J,358.3,2952,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2952,1,3,0)
+ ;;=3^Heart Failure,Unspec
+ ;;^UTILITY(U,$J,358.3,2952,1,4,0)
+ ;;=4^I50.9
+ ;;^UTILITY(U,$J,358.3,2952,2)
+ ;;=^5007251
+ ;;^UTILITY(U,$J,358.3,2953,0)
+ ;;=R03.0^^20^211^2
+ ;;^UTILITY(U,$J,358.3,2953,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2953,1,3,0)
+ ;;=3^Elevated B/P w/o Diagnosis of HTN
+ ;;^UTILITY(U,$J,358.3,2953,1,4,0)
+ ;;=4^R03.0
+ ;;^UTILITY(U,$J,358.3,2953,2)
+ ;;=^5019171
+ ;;^UTILITY(U,$J,358.3,2954,0)
+ ;;=J45.909^^20^212^2
+ ;;^UTILITY(U,$J,358.3,2954,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2954,1,3,0)
+ ;;=3^Asthma,Uncomplicated

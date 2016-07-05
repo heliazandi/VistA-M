@@ -1,134 +1,284 @@
-IBDEI111 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI111 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,17085,1,0)
+ ;;^UTILITY(U,$J,358.3,37241,0)
+ ;;=E08.622^^138^1844^23
+ ;;^UTILITY(U,$J,358.3,37241,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17085,1,3,0)
- ;;=3^Huntington's Disease
- ;;^UTILITY(U,$J,358.3,17085,1,4,0)
- ;;=4^G10.
- ;;^UTILITY(U,$J,358.3,17085,2)
- ;;=^5003751
- ;;^UTILITY(U,$J,358.3,17086,0)
- ;;=G91.2^^88^857^72
- ;;^UTILITY(U,$J,358.3,17086,1,0)
+ ;;^UTILITY(U,$J,358.3,37241,1,3,0)
+ ;;=3^Diabetes d/t Underlying Condition w/ Skin Ulcer
+ ;;^UTILITY(U,$J,358.3,37241,1,4,0)
+ ;;=4^E08.622
+ ;;^UTILITY(U,$J,358.3,37241,2)
+ ;;=^5002535
+ ;;^UTILITY(U,$J,358.3,37242,0)
+ ;;=T81.31XA^^138^1844^26
+ ;;^UTILITY(U,$J,358.3,37242,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17086,1,3,0)
- ;;=3^Hydrocephalus,Idiopathic,Normal Pressure
- ;;^UTILITY(U,$J,358.3,17086,1,4,0)
- ;;=4^G91.2
- ;;^UTILITY(U,$J,358.3,17086,2)
- ;;=^5004174
- ;;^UTILITY(U,$J,358.3,17087,0)
- ;;=G91.9^^88^857^73
- ;;^UTILITY(U,$J,358.3,17087,1,0)
+ ;;^UTILITY(U,$J,358.3,37242,1,3,0)
+ ;;=3^Disruption External Surgical Wound NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,37242,1,4,0)
+ ;;=4^T81.31XA
+ ;;^UTILITY(U,$J,358.3,37242,2)
+ ;;=^5054470
+ ;;^UTILITY(U,$J,358.3,37243,0)
+ ;;=L26.^^138^1844^8
+ ;;^UTILITY(U,$J,358.3,37243,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17087,1,3,0)
- ;;=3^Hydrocephalus,Unspec
- ;;^UTILITY(U,$J,358.3,17087,1,4,0)
- ;;=4^G91.9
- ;;^UTILITY(U,$J,358.3,17087,2)
- ;;=^5004178
- ;;^UTILITY(U,$J,358.3,17088,0)
- ;;=R25.9^^88^857^74
- ;;^UTILITY(U,$J,358.3,17088,1,0)
+ ;;^UTILITY(U,$J,358.3,37243,1,3,0)
+ ;;=3^Dermatitis,Exfoliative
+ ;;^UTILITY(U,$J,358.3,37243,1,4,0)
+ ;;=4^L26.
+ ;;^UTILITY(U,$J,358.3,37243,2)
+ ;;=^263886
+ ;;^UTILITY(U,$J,358.3,37244,0)
+ ;;=L98.1^^138^1844^9
+ ;;^UTILITY(U,$J,358.3,37244,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17088,1,3,0)
- ;;=3^Involuntary Movements,Abnormal,Unspec
- ;;^UTILITY(U,$J,358.3,17088,1,4,0)
- ;;=4^R25.9
- ;;^UTILITY(U,$J,358.3,17088,2)
- ;;=^5019303
- ;;^UTILITY(U,$J,358.3,17089,0)
- ;;=G43.911^^88^857^75
- ;;^UTILITY(U,$J,358.3,17089,1,0)
+ ;;^UTILITY(U,$J,358.3,37244,1,3,0)
+ ;;=3^Dermatitis,Factitial
+ ;;^UTILITY(U,$J,358.3,37244,1,4,0)
+ ;;=4^L98.1
+ ;;^UTILITY(U,$J,358.3,37244,2)
+ ;;=^186781
+ ;;^UTILITY(U,$J,358.3,37245,0)
+ ;;=L30.3^^138^1844^11
+ ;;^UTILITY(U,$J,358.3,37245,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17089,1,3,0)
- ;;=3^Migraine,Intractable w/ Status Migrainosus,Unspec
- ;;^UTILITY(U,$J,358.3,17089,1,4,0)
- ;;=4^G43.911
- ;;^UTILITY(U,$J,358.3,17089,2)
- ;;=^5003910
- ;;^UTILITY(U,$J,358.3,17090,0)
- ;;=G43.919^^88^857^76
- ;;^UTILITY(U,$J,358.3,17090,1,0)
+ ;;^UTILITY(U,$J,358.3,37245,1,3,0)
+ ;;=3^Dermatitis,Infective
+ ;;^UTILITY(U,$J,358.3,37245,1,4,0)
+ ;;=4^L30.3
+ ;;^UTILITY(U,$J,358.3,37245,2)
+ ;;=^5009156
+ ;;^UTILITY(U,$J,358.3,37246,0)
+ ;;=L56.2^^138^1844^19
+ ;;^UTILITY(U,$J,358.3,37246,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17090,1,3,0)
- ;;=3^Migraine,Intractable w/o Status Migrainosus,Unspec
- ;;^UTILITY(U,$J,358.3,17090,1,4,0)
- ;;=4^G43.919
- ;;^UTILITY(U,$J,358.3,17090,2)
- ;;=^5003911
- ;;^UTILITY(U,$J,358.3,17091,0)
- ;;=G43.901^^88^857^77
- ;;^UTILITY(U,$J,358.3,17091,1,0)
+ ;;^UTILITY(U,$J,358.3,37246,1,3,0)
+ ;;=3^Dermatitis,Photocontact
+ ;;^UTILITY(U,$J,358.3,37246,1,4,0)
+ ;;=4^L56.2
+ ;;^UTILITY(U,$J,358.3,37246,2)
+ ;;=^5009216
+ ;;^UTILITY(U,$J,358.3,37247,0)
+ ;;=L71.0^^138^1844^18
+ ;;^UTILITY(U,$J,358.3,37247,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17091,1,3,0)
- ;;=3^Migraine,Not Intractable w/ Status Migrainosis,Unspec
- ;;^UTILITY(U,$J,358.3,17091,1,4,0)
- ;;=4^G43.901
- ;;^UTILITY(U,$J,358.3,17091,2)
- ;;=^5003908
- ;;^UTILITY(U,$J,358.3,17092,0)
- ;;=G43.909^^88^857^78
- ;;^UTILITY(U,$J,358.3,17092,1,0)
+ ;;^UTILITY(U,$J,358.3,37247,1,3,0)
+ ;;=3^Dermatitis,Perioral
+ ;;^UTILITY(U,$J,358.3,37247,1,4,0)
+ ;;=4^L71.0
+ ;;^UTILITY(U,$J,358.3,37247,2)
+ ;;=^5009274
+ ;;^UTILITY(U,$J,358.3,37248,0)
+ ;;=L23.1^^138^1844^2
+ ;;^UTILITY(U,$J,358.3,37248,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17092,1,3,0)
- ;;=3^Migraine,Not Intractable w/o Status Migrainosis,Unspec
- ;;^UTILITY(U,$J,358.3,17092,1,4,0)
- ;;=4^G43.909
- ;;^UTILITY(U,$J,358.3,17092,2)
- ;;=^5003909
- ;;^UTILITY(U,$J,358.3,17093,0)
- ;;=G12.20^^88^857^79
- ;;^UTILITY(U,$J,358.3,17093,1,0)
+ ;;^UTILITY(U,$J,358.3,37248,1,3,0)
+ ;;=3^Dermatitis,Allergic Contact d/t Adhesives
+ ;;^UTILITY(U,$J,358.3,37248,1,4,0)
+ ;;=4^L23.1
+ ;;^UTILITY(U,$J,358.3,37248,2)
+ ;;=^5009116
+ ;;^UTILITY(U,$J,358.3,37249,0)
+ ;;=L23.81^^138^1844^3
+ ;;^UTILITY(U,$J,358.3,37249,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17093,1,3,0)
- ;;=3^Motor Neuron Disease,Unspec
- ;;^UTILITY(U,$J,358.3,17093,1,4,0)
- ;;=4^G12.20
- ;;^UTILITY(U,$J,358.3,17093,2)
- ;;=^5003761
- ;;^UTILITY(U,$J,358.3,17094,0)
- ;;=G25.70^^88^857^80
- ;;^UTILITY(U,$J,358.3,17094,1,0)
+ ;;^UTILITY(U,$J,358.3,37249,1,3,0)
+ ;;=3^Dermatitis,Allergic Contact d/t Animal Dander
+ ;;^UTILITY(U,$J,358.3,37249,1,4,0)
+ ;;=4^L23.81
+ ;;^UTILITY(U,$J,358.3,37249,2)
+ ;;=^5009123
+ ;;^UTILITY(U,$J,358.3,37250,0)
+ ;;=L23.0^^138^1844^5
+ ;;^UTILITY(U,$J,358.3,37250,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17094,1,3,0)
- ;;=3^Movement Disorder,Drug-Induced,Unspec
- ;;^UTILITY(U,$J,358.3,17094,1,4,0)
- ;;=4^G25.70
- ;;^UTILITY(U,$J,358.3,17094,2)
- ;;=^5003798
- ;;^UTILITY(U,$J,358.3,17095,0)
- ;;=G35.^^88^857^81
- ;;^UTILITY(U,$J,358.3,17095,1,0)
+ ;;^UTILITY(U,$J,358.3,37250,1,3,0)
+ ;;=3^Dermatitis,Allergic Contact d/t Metals
+ ;;^UTILITY(U,$J,358.3,37250,1,4,0)
+ ;;=4^L23.0
+ ;;^UTILITY(U,$J,358.3,37250,2)
+ ;;=^5009115
+ ;;^UTILITY(U,$J,358.3,37251,0)
+ ;;=B00.1^^138^1844^10
+ ;;^UTILITY(U,$J,358.3,37251,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17095,1,3,0)
- ;;=3^Multiple Sclerosis
- ;;^UTILITY(U,$J,358.3,17095,1,4,0)
- ;;=4^G35.
- ;;^UTILITY(U,$J,358.3,17095,2)
- ;;=^79761
- ;;^UTILITY(U,$J,358.3,17096,0)
- ;;=G25.3^^88^857^82
- ;;^UTILITY(U,$J,358.3,17096,1,0)
+ ;;^UTILITY(U,$J,358.3,37251,1,3,0)
+ ;;=3^Dermatitis,Herpes Simplex
+ ;;^UTILITY(U,$J,358.3,37251,1,4,0)
+ ;;=4^B00.1
+ ;;^UTILITY(U,$J,358.3,37251,2)
+ ;;=^5000468
+ ;;^UTILITY(U,$J,358.3,37252,0)
+ ;;=L24.0^^138^1844^13
+ ;;^UTILITY(U,$J,358.3,37252,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17096,1,3,0)
- ;;=3^Myoclonus
- ;;^UTILITY(U,$J,358.3,17096,1,4,0)
- ;;=4^G25.3
- ;;^UTILITY(U,$J,358.3,17096,2)
- ;;=^80620
- ;;^UTILITY(U,$J,358.3,17097,0)
- ;;=G70.9^^88^857^83
- ;;^UTILITY(U,$J,358.3,17097,1,0)
+ ;;^UTILITY(U,$J,358.3,37252,1,3,0)
+ ;;=3^Dermatitis,Irritant Contact d/t Detergents
+ ;;^UTILITY(U,$J,358.3,37252,1,4,0)
+ ;;=4^L24.0
+ ;;^UTILITY(U,$J,358.3,37252,2)
+ ;;=^5009126
+ ;;^UTILITY(U,$J,358.3,37253,0)
+ ;;=L24.81^^138^1844^14
+ ;;^UTILITY(U,$J,358.3,37253,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17097,1,3,0)
- ;;=3^Myoneural Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,17097,1,4,0)
- ;;=4^G70.9
- ;;^UTILITY(U,$J,358.3,17097,2)
- ;;=^5004087
- ;;^UTILITY(U,$J,358.3,17098,0)
- ;;=G31.9^^88^857^84
+ ;;^UTILITY(U,$J,358.3,37253,1,3,0)
+ ;;=3^Dermatitis,Irritant Contact d/t Metals
+ ;;^UTILITY(U,$J,358.3,37253,1,4,0)
+ ;;=4^L24.81
+ ;;^UTILITY(U,$J,358.3,37253,2)
+ ;;=^5009134
+ ;;^UTILITY(U,$J,358.3,37254,0)
+ ;;=L24.2^^138^1844^15
+ ;;^UTILITY(U,$J,358.3,37254,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37254,1,3,0)
+ ;;=3^Dermatitis,Irritant Contact d/t Solvents
+ ;;^UTILITY(U,$J,358.3,37254,1,4,0)
+ ;;=4^L24.2
+ ;;^UTILITY(U,$J,358.3,37254,2)
+ ;;=^5009128
+ ;;^UTILITY(U,$J,358.3,37255,0)
+ ;;=E08.620^^138^1844^22
+ ;;^UTILITY(U,$J,358.3,37255,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37255,1,3,0)
+ ;;=3^Diabetes d/t Underlying Condition w/ DM Dermatitis
+ ;;^UTILITY(U,$J,358.3,37255,1,4,0)
+ ;;=4^E08.620
+ ;;^UTILITY(U,$J,358.3,37255,2)
+ ;;=^5002533
+ ;;^UTILITY(U,$J,358.3,37256,0)
+ ;;=E08.621^^138^1844^24
+ ;;^UTILITY(U,$J,358.3,37256,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37256,1,3,0)
+ ;;=3^Diabetes d/t Underlying Conditions w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,37256,1,4,0)
+ ;;=4^E08.621
+ ;;^UTILITY(U,$J,358.3,37256,2)
+ ;;=^5002534
+ ;;^UTILITY(U,$J,358.3,37257,0)
+ ;;=T81.33XA^^138^1844^27
+ ;;^UTILITY(U,$J,358.3,37257,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37257,1,3,0)
+ ;;=3^Disruption Traumatic Inj/Wound Repair,Init Encntr
+ ;;^UTILITY(U,$J,358.3,37257,1,4,0)
+ ;;=4^T81.33XA
+ ;;^UTILITY(U,$J,358.3,37257,2)
+ ;;=^5054476
+ ;;^UTILITY(U,$J,358.3,37258,0)
+ ;;=L60.3^^138^1844^30
+ ;;^UTILITY(U,$J,358.3,37258,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37258,1,3,0)
+ ;;=3^Dystrophic Nails
+ ;;^UTILITY(U,$J,358.3,37258,1,4,0)
+ ;;=4^L60.3
+ ;;^UTILITY(U,$J,358.3,37258,2)
+ ;;=^5009236
+ ;;^UTILITY(U,$J,358.3,37259,0)
+ ;;=M71.30^^138^1844^25
+ ;;^UTILITY(U,$J,358.3,37259,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37259,1,3,0)
+ ;;=3^Digital Mucous Cyst
+ ;;^UTILITY(U,$J,358.3,37259,1,4,0)
+ ;;=4^M71.30
+ ;;^UTILITY(U,$J,358.3,37259,2)
+ ;;=^5013149
+ ;;^UTILITY(U,$J,358.3,37260,0)
+ ;;=L30.4^^138^1845^9
+ ;;^UTILITY(U,$J,358.3,37260,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37260,1,3,0)
+ ;;=3^Erythema Intertrigo
+ ;;^UTILITY(U,$J,358.3,37260,1,4,0)
+ ;;=4^L30.4
+ ;;^UTILITY(U,$J,358.3,37260,2)
+ ;;=^5009157
+ ;;^UTILITY(U,$J,358.3,37261,0)
+ ;;=R60.0^^138^1845^6
+ ;;^UTILITY(U,$J,358.3,37261,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37261,1,3,0)
+ ;;=3^Edema,Localized
+ ;;^UTILITY(U,$J,358.3,37261,1,4,0)
+ ;;=4^R60.0
+ ;;^UTILITY(U,$J,358.3,37261,2)
+ ;;=^5019532
+ ;;^UTILITY(U,$J,358.3,37262,0)
+ ;;=L53.0^^138^1845^13
+ ;;^UTILITY(U,$J,358.3,37262,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37262,1,3,0)
+ ;;=3^Erythema Toxic
+ ;;^UTILITY(U,$J,358.3,37262,1,4,0)
+ ;;=4^L53.0
+ ;;^UTILITY(U,$J,358.3,37262,2)
+ ;;=^5009207
+ ;;^UTILITY(U,$J,358.3,37263,0)
+ ;;=L53.1^^138^1845^8
+ ;;^UTILITY(U,$J,358.3,37263,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37263,1,3,0)
+ ;;=3^Erythema Annulare Centrifugum
+ ;;^UTILITY(U,$J,358.3,37263,1,4,0)
+ ;;=4^L53.1
+ ;;^UTILITY(U,$J,358.3,37263,2)
+ ;;=^5009208
+ ;;^UTILITY(U,$J,358.3,37264,0)
+ ;;=L51.9^^138^1845^11
+ ;;^UTILITY(U,$J,358.3,37264,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37264,1,3,0)
+ ;;=3^Erythema Multiforme,Unspec
+ ;;^UTILITY(U,$J,358.3,37264,1,4,0)
+ ;;=4^L51.9
+ ;;^UTILITY(U,$J,358.3,37264,2)
+ ;;=^336759
+ ;;^UTILITY(U,$J,358.3,37265,0)
+ ;;=L12.35^^138^1845^7
+ ;;^UTILITY(U,$J,358.3,37265,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37265,1,3,0)
+ ;;=3^Epidermolysis Bullosa,Acquired
+ ;;^UTILITY(U,$J,358.3,37265,1,4,0)
+ ;;=4^L12.35
+ ;;^UTILITY(U,$J,358.3,37265,2)
+ ;;=^5009100
+ ;;^UTILITY(U,$J,358.3,37266,0)
+ ;;=L52.^^138^1845^12
+ ;;^UTILITY(U,$J,358.3,37266,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37266,1,3,0)
+ ;;=3^Erythema Nodosum
+ ;;^UTILITY(U,$J,358.3,37266,1,4,0)
+ ;;=4^L52.
+ ;;^UTILITY(U,$J,358.3,37266,2)
+ ;;=^42065
+ ;;^UTILITY(U,$J,358.3,37267,0)
+ ;;=L49.0^^138^1845^24
+ ;;^UTILITY(U,$J,358.3,37267,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37267,1,3,0)
+ ;;=3^Exfoliation d/t Erythematous Cond w/ < 10% Body Surface
+ ;;^UTILITY(U,$J,358.3,37267,1,4,0)
+ ;;=4^L49.0
+ ;;^UTILITY(U,$J,358.3,37267,2)
+ ;;=^5009190
+ ;;^UTILITY(U,$J,358.3,37268,0)
+ ;;=L49.1^^138^1845^15
+ ;;^UTILITY(U,$J,358.3,37268,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,37268,1,3,0)
+ ;;=3^Exfoliation d/t Erythematous Cond w/ 10-19% Body Surface
+ ;;^UTILITY(U,$J,358.3,37268,1,4,0)
+ ;;=4^L49.1
+ ;;^UTILITY(U,$J,358.3,37268,2)
+ ;;=^5009191

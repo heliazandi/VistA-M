@@ -1,128 +1,290 @@
-IBDEI0GQ ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0GQ ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7465,1,0)
+ ;;^UTILITY(U,$J,358.3,16788,1,2,0)
+ ;;=2^99347
+ ;;^UTILITY(U,$J,358.3,16788,1,3,0)
+ ;;=3^PROBLEM FOCUSED
+ ;;^UTILITY(U,$J,358.3,16789,0)
+ ;;=99348^^72^840^2^^^^1
+ ;;^UTILITY(U,$J,358.3,16789,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16789,1,2,0)
+ ;;=2^99348
+ ;;^UTILITY(U,$J,358.3,16789,1,3,0)
+ ;;=3^EXP PROBLEM FOCUSED
+ ;;^UTILITY(U,$J,358.3,16790,0)
+ ;;=99349^^72^840^3^^^^1
+ ;;^UTILITY(U,$J,358.3,16790,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16790,1,2,0)
+ ;;=2^99349
+ ;;^UTILITY(U,$J,358.3,16790,1,3,0)
+ ;;=3^DETAILED
+ ;;^UTILITY(U,$J,358.3,16791,0)
+ ;;=99350^^72^840^4^^^^1
+ ;;^UTILITY(U,$J,358.3,16791,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16791,1,2,0)
+ ;;=2^99350
+ ;;^UTILITY(U,$J,358.3,16791,1,3,0)
+ ;;=3^COMPREHENSIVE
+ ;;^UTILITY(U,$J,358.3,16792,0)
+ ;;=90847^^72^841^1^^^^1
+ ;;^UTILITY(U,$J,358.3,16792,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16792,1,2,0)
+ ;;=2^90847
+ ;;^UTILITY(U,$J,358.3,16792,1,3,0)
+ ;;=3^FAMILY PSYTX W/PATIENT
+ ;;^UTILITY(U,$J,358.3,16793,0)
+ ;;=90849^^72^841^3^^^^1
+ ;;^UTILITY(U,$J,358.3,16793,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16793,1,2,0)
+ ;;=2^90849
+ ;;^UTILITY(U,$J,358.3,16793,1,3,0)
+ ;;=3^MULTIPLE FAMILY GROUP PSYTX
+ ;;^UTILITY(U,$J,358.3,16794,0)
+ ;;=90853^^72^841^2^^^^1
+ ;;^UTILITY(U,$J,358.3,16794,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16794,1,2,0)
+ ;;=2^90853
+ ;;^UTILITY(U,$J,358.3,16794,1,3,0)
+ ;;=3^GROUP PSYCHOTHERAPY
+ ;;^UTILITY(U,$J,358.3,16795,0)
+ ;;=90832^^72^841^5^^^^1
+ ;;^UTILITY(U,$J,358.3,16795,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16795,1,2,0)
+ ;;=2^90832
+ ;;^UTILITY(U,$J,358.3,16795,1,3,0)
+ ;;=3^PSYTX PT OR FAMILY 16-37 MIN
+ ;;^UTILITY(U,$J,358.3,16796,0)
+ ;;=90834^^72^841^6^^^^1
+ ;;^UTILITY(U,$J,358.3,16796,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16796,1,2,0)
+ ;;=2^90834
+ ;;^UTILITY(U,$J,358.3,16796,1,3,0)
+ ;;=3^PSYTX PT OR FAMILY 38-52 MIN
+ ;;^UTILITY(U,$J,358.3,16797,0)
+ ;;=90837^^72^841^7^^^^1
+ ;;^UTILITY(U,$J,358.3,16797,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16797,1,2,0)
+ ;;=2^90837
+ ;;^UTILITY(U,$J,358.3,16797,1,3,0)
+ ;;=3^PSYTX PT OR FAMILY 53+ MIN
+ ;;^UTILITY(U,$J,358.3,16798,0)
+ ;;=90791^^72^841^4^^^^1
+ ;;^UTILITY(U,$J,358.3,16798,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16798,1,2,0)
+ ;;=2^90791
+ ;;^UTILITY(U,$J,358.3,16798,1,3,0)
+ ;;=3^PSYCH DIAGNOSTIC EVALUATION
+ ;;^UTILITY(U,$J,358.3,16799,0)
+ ;;=99341^^72^842^1^^^^1
+ ;;^UTILITY(U,$J,358.3,16799,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16799,1,2,0)
+ ;;=2^99341
+ ;;^UTILITY(U,$J,358.3,16799,1,3,0)
+ ;;=3^PROBLEM FOCUSED
+ ;;^UTILITY(U,$J,358.3,16800,0)
+ ;;=99342^^72^842^2^^^^1
+ ;;^UTILITY(U,$J,358.3,16800,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16800,1,2,0)
+ ;;=2^99342
+ ;;^UTILITY(U,$J,358.3,16800,1,3,0)
+ ;;=3^EXP PROBLEM FOCUSED
+ ;;^UTILITY(U,$J,358.3,16801,0)
+ ;;=99343^^72^842^3^^^^1
+ ;;^UTILITY(U,$J,358.3,16801,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16801,1,2,0)
+ ;;=2^99343
+ ;;^UTILITY(U,$J,358.3,16801,1,3,0)
+ ;;=3^DETAILED
+ ;;^UTILITY(U,$J,358.3,16802,0)
+ ;;=99344^^72^842^4^^^^1
+ ;;^UTILITY(U,$J,358.3,16802,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16802,1,2,0)
+ ;;=2^99344
+ ;;^UTILITY(U,$J,358.3,16802,1,3,0)
+ ;;=3^COMPREHENSIVE,MOD
+ ;;^UTILITY(U,$J,358.3,16803,0)
+ ;;=99345^^72^842^5^^^^1
+ ;;^UTILITY(U,$J,358.3,16803,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,16803,1,2,0)
+ ;;=2^99345
+ ;;^UTILITY(U,$J,358.3,16803,1,3,0)
+ ;;=3^COMPREHENSIVE,HIGH
+ ;;^UTILITY(U,$J,358.3,16804,0)
+ ;;=D50.9^^73^843^9
+ ;;^UTILITY(U,$J,358.3,16804,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7465,1,3,0)
- ;;=3^Displacement of Intraperitoneal Dialysis Catheter,Init Encntr
- ;;^UTILITY(U,$J,358.3,7465,1,4,0)
- ;;=4^T85.621A
- ;;^UTILITY(U,$J,358.3,7465,2)
- ;;=^5055625
- ;;^UTILITY(U,$J,358.3,7466,0)
- ;;=T85.621D^^52^501^9
- ;;^UTILITY(U,$J,358.3,7466,1,0)
+ ;;^UTILITY(U,$J,358.3,16804,1,3,0)
+ ;;=3^Anemia, iron defiency, unspec
+ ;;^UTILITY(U,$J,358.3,16804,1,4,0)
+ ;;=4^D50.9
+ ;;^UTILITY(U,$J,358.3,16804,2)
+ ;;=^5002283
+ ;;^UTILITY(U,$J,358.3,16805,0)
+ ;;=D64.9^^73^843^10
+ ;;^UTILITY(U,$J,358.3,16805,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7466,1,3,0)
- ;;=3^Displacement of Intraperitoneal Dialysis Catheter,Subs Encntr
- ;;^UTILITY(U,$J,358.3,7466,1,4,0)
- ;;=4^T85.621D
- ;;^UTILITY(U,$J,358.3,7466,2)
- ;;=^5055626
- ;;^UTILITY(U,$J,358.3,7467,0)
- ;;=K65.0^^52^501^10
- ;;^UTILITY(U,$J,358.3,7467,1,0)
+ ;;^UTILITY(U,$J,358.3,16805,1,3,0)
+ ;;=3^Anemia, unspec
+ ;;^UTILITY(U,$J,358.3,16805,1,4,0)
+ ;;=4^D64.9
+ ;;^UTILITY(U,$J,358.3,16805,2)
+ ;;=^5002351
+ ;;^UTILITY(U,$J,358.3,16806,0)
+ ;;=G30.9^^73^843^8
+ ;;^UTILITY(U,$J,358.3,16806,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7467,1,3,0)
- ;;=3^Generalized (acute) Peritonitis
- ;;^UTILITY(U,$J,358.3,7467,1,4,0)
- ;;=4^K65.0
- ;;^UTILITY(U,$J,358.3,7467,2)
- ;;=^332799
- ;;^UTILITY(U,$J,358.3,7468,0)
- ;;=G60.9^^52^501^14
- ;;^UTILITY(U,$J,358.3,7468,1,0)
+ ;;^UTILITY(U,$J,358.3,16806,1,3,0)
+ ;;=3^Alzheimer's disease, unspec
+ ;;^UTILITY(U,$J,358.3,16806,1,4,0)
+ ;;=4^G30.9
+ ;;^UTILITY(U,$J,358.3,16806,2)
+ ;;=^5003808
+ ;;^UTILITY(U,$J,358.3,16807,0)
+ ;;=I20.9^^73^843^12
+ ;;^UTILITY(U,$J,358.3,16807,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7468,1,3,0)
- ;;=3^Hereditary & Idiopathic Neuropathy,Unspec
- ;;^UTILITY(U,$J,358.3,7468,1,4,0)
- ;;=4^G60.9
- ;;^UTILITY(U,$J,358.3,7468,2)
- ;;=^5004071
- ;;^UTILITY(U,$J,358.3,7469,0)
- ;;=T82.838A^^52^501^12
- ;;^UTILITY(U,$J,358.3,7469,1,0)
+ ;;^UTILITY(U,$J,358.3,16807,1,3,0)
+ ;;=3^Angina pectoris, unspec
+ ;;^UTILITY(U,$J,358.3,16807,1,4,0)
+ ;;=4^I20.9
+ ;;^UTILITY(U,$J,358.3,16807,2)
+ ;;=^5007079
+ ;;^UTILITY(U,$J,358.3,16808,0)
+ ;;=I35.0^^73^843^13
+ ;;^UTILITY(U,$J,358.3,16808,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7469,1,3,0)
- ;;=3^Hemorrhage of Vascular Graft/Fistula,Init Encntr
- ;;^UTILITY(U,$J,358.3,7469,1,4,0)
- ;;=4^T82.838A
- ;;^UTILITY(U,$J,358.3,7469,2)
- ;;=^5054929
- ;;^UTILITY(U,$J,358.3,7470,0)
- ;;=T82.838D^^52^501^13
- ;;^UTILITY(U,$J,358.3,7470,1,0)
+ ;;^UTILITY(U,$J,358.3,16808,1,3,0)
+ ;;=3^Aortic (valve) stenosis, Nonrheumatic
+ ;;^UTILITY(U,$J,358.3,16808,1,4,0)
+ ;;=4^I35.0
+ ;;^UTILITY(U,$J,358.3,16808,2)
+ ;;=^5007174
+ ;;^UTILITY(U,$J,358.3,16809,0)
+ ;;=I48.91^^73^843^16
+ ;;^UTILITY(U,$J,358.3,16809,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7470,1,3,0)
- ;;=3^Hemorrhage of Vascular Graft/Fistula,Subs Encntr
- ;;^UTILITY(U,$J,358.3,7470,1,4,0)
- ;;=4^T82.838D
- ;;^UTILITY(U,$J,358.3,7470,2)
- ;;=^5054930
- ;;^UTILITY(U,$J,358.3,7471,0)
- ;;=E83.81^^52^501^15
- ;;^UTILITY(U,$J,358.3,7471,1,0)
+ ;;^UTILITY(U,$J,358.3,16809,1,3,0)
+ ;;=3^Atrial fibrillation, unspec
+ ;;^UTILITY(U,$J,358.3,16809,1,4,0)
+ ;;=4^I48.91
+ ;;^UTILITY(U,$J,358.3,16809,2)
+ ;;=^5007229
+ ;;^UTILITY(U,$J,358.3,16810,0)
+ ;;=I48.92^^73^843^17
+ ;;^UTILITY(U,$J,358.3,16810,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7471,1,3,0)
- ;;=3^Hungry Bone Syndrome
- ;;^UTILITY(U,$J,358.3,7471,1,4,0)
- ;;=4^E83.81
- ;;^UTILITY(U,$J,358.3,7471,2)
- ;;=^336538
- ;;^UTILITY(U,$J,358.3,7472,0)
- ;;=T85.71XA^^52^501^21
- ;;^UTILITY(U,$J,358.3,7472,1,0)
+ ;;^UTILITY(U,$J,358.3,16810,1,3,0)
+ ;;=3^Atrial flutter, unspec
+ ;;^UTILITY(U,$J,358.3,16810,1,4,0)
+ ;;=4^I48.92
+ ;;^UTILITY(U,$J,358.3,16810,2)
+ ;;=^5007230
+ ;;^UTILITY(U,$J,358.3,16811,0)
+ ;;=I71.4^^73^843^1
+ ;;^UTILITY(U,$J,358.3,16811,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7472,1,3,0)
- ;;=3^Infection d/t Peritoneal Dialysis Catheter,Init Encntr
- ;;^UTILITY(U,$J,358.3,7472,1,4,0)
- ;;=4^T85.71XA
- ;;^UTILITY(U,$J,358.3,7472,2)
- ;;=^5055670
- ;;^UTILITY(U,$J,358.3,7473,0)
- ;;=T85.71XD^^52^501^22
- ;;^UTILITY(U,$J,358.3,7473,1,0)
+ ;;^UTILITY(U,$J,358.3,16811,1,3,0)
+ ;;=3^Abdominal aortic aneurysm, w/o rupture
+ ;;^UTILITY(U,$J,358.3,16811,1,4,0)
+ ;;=4^I71.4
+ ;;^UTILITY(U,$J,358.3,16811,2)
+ ;;=^5007789
+ ;;^UTILITY(U,$J,358.3,16812,0)
+ ;;=J30.9^^73^843^6
+ ;;^UTILITY(U,$J,358.3,16812,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7473,1,3,0)
- ;;=3^Infection d/t Peritoneal Dialysis Catheter,Subs Encntr
- ;;^UTILITY(U,$J,358.3,7473,1,4,0)
- ;;=4^T85.71XD
- ;;^UTILITY(U,$J,358.3,7473,2)
- ;;=^5055671
- ;;^UTILITY(U,$J,358.3,7474,0)
- ;;=T82.7XXA^^52^501^19
- ;;^UTILITY(U,$J,358.3,7474,1,0)
+ ;;^UTILITY(U,$J,358.3,16812,1,3,0)
+ ;;=3^Allergic rhinitis, unspec
+ ;;^UTILITY(U,$J,358.3,16812,1,4,0)
+ ;;=4^J30.9
+ ;;^UTILITY(U,$J,358.3,16812,2)
+ ;;=^5008205
+ ;;^UTILITY(U,$J,358.3,16813,0)
+ ;;=J45.909^^73^843^15
+ ;;^UTILITY(U,$J,358.3,16813,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7474,1,3,0)
- ;;=3^Infection d/t Dialysis Catheter or AV Fistula/Graft,Init Encntr
- ;;^UTILITY(U,$J,358.3,7474,1,4,0)
- ;;=4^T82.7XXA
- ;;^UTILITY(U,$J,358.3,7474,2)
- ;;=^5054911
- ;;^UTILITY(U,$J,358.3,7475,0)
- ;;=T82.7XXD^^52^501^20
- ;;^UTILITY(U,$J,358.3,7475,1,0)
+ ;;^UTILITY(U,$J,358.3,16813,1,3,0)
+ ;;=3^Asthma, uncomplicated, unspec
+ ;;^UTILITY(U,$J,358.3,16813,1,4,0)
+ ;;=4^J45.909
+ ;;^UTILITY(U,$J,358.3,16813,2)
+ ;;=^5008256
+ ;;^UTILITY(U,$J,358.3,16814,0)
+ ;;=M12.9^^73^843^14
+ ;;^UTILITY(U,$J,358.3,16814,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7475,1,3,0)
- ;;=3^Infection d/t Dialysis Catheter or AV Fistula/Graft,Subs Encntr
- ;;^UTILITY(U,$J,358.3,7475,1,4,0)
- ;;=4^T82.7XXD
- ;;^UTILITY(U,$J,358.3,7475,2)
- ;;=^5054912
- ;;^UTILITY(U,$J,358.3,7476,0)
- ;;=T85.631A^^52^501^23
- ;;^UTILITY(U,$J,358.3,7476,1,0)
+ ;;^UTILITY(U,$J,358.3,16814,1,3,0)
+ ;;=3^Arthropathy, unspec
+ ;;^UTILITY(U,$J,358.3,16814,1,4,0)
+ ;;=4^M12.9
+ ;;^UTILITY(U,$J,358.3,16814,2)
+ ;;=^5010666
+ ;;^UTILITY(U,$J,358.3,16815,0)
+ ;;=T78.40XA^^73^843^7
+ ;;^UTILITY(U,$J,358.3,16815,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7476,1,3,0)
- ;;=3^Leakage of Intraperitoneal Dialysis Catheter,Init Encntr
- ;;^UTILITY(U,$J,358.3,7476,1,4,0)
- ;;=4^T85.631A
- ;;^UTILITY(U,$J,358.3,7476,2)
- ;;=^5055643
- ;;^UTILITY(U,$J,358.3,7477,0)
- ;;=T85.631D^^52^501^24
- ;;^UTILITY(U,$J,358.3,7477,1,0)
+ ;;^UTILITY(U,$J,358.3,16815,1,3,0)
+ ;;=3^Allergy, unspec, init encntr
+ ;;^UTILITY(U,$J,358.3,16815,1,4,0)
+ ;;=4^T78.40XA
+ ;;^UTILITY(U,$J,358.3,16815,2)
+ ;;=^5054284
+ ;;^UTILITY(U,$J,358.3,16816,0)
+ ;;=R10.9^^73^843^2
+ ;;^UTILITY(U,$J,358.3,16816,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7477,1,3,0)
- ;;=3^Leakage of Intraperitoneal Dialysis Catheter,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,16816,1,3,0)
+ ;;=3^Abdominal pain, unspec
+ ;;^UTILITY(U,$J,358.3,16816,1,4,0)
+ ;;=4^R10.9
+ ;;^UTILITY(U,$J,358.3,16816,2)
+ ;;=^5019230
+ ;;^UTILITY(U,$J,358.3,16817,0)
+ ;;=L40.2^^73^843^5
+ ;;^UTILITY(U,$J,358.3,16817,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16817,1,3,0)
+ ;;=3^Acrodermatitis Continua
+ ;;^UTILITY(U,$J,358.3,16817,1,4,0)
+ ;;=4^L40.2
+ ;;^UTILITY(U,$J,358.3,16817,2)
+ ;;=^5009162
+ ;;^UTILITY(U,$J,358.3,16818,0)
+ ;;=Z89.512^^73^843^3
+ ;;^UTILITY(U,$J,358.3,16818,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16818,1,3,0)
+ ;;=3^Acquired Absence Left Leg Below Knee
+ ;;^UTILITY(U,$J,358.3,16818,1,4,0)
+ ;;=4^Z89.512
+ ;;^UTILITY(U,$J,358.3,16818,2)
+ ;;=^5063567
+ ;;^UTILITY(U,$J,358.3,16819,0)
+ ;;=Z89.511^^73^843^4
+ ;;^UTILITY(U,$J,358.3,16819,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16819,1,3,0)
+ ;;=3^Acquired Absence Right Leg Below Knee
+ ;;^UTILITY(U,$J,358.3,16819,1,4,0)
+ ;;=4^Z89.511
+ ;;^UTILITY(U,$J,358.3,16819,2)
+ ;;=^5063566
+ ;;^UTILITY(U,$J,358.3,16820,0)
+ ;;=D51.9^^73^843^11

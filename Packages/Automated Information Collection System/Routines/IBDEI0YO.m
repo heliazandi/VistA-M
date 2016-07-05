@@ -1,122 +1,286 @@
-IBDEI0YO ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0YO ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15967,1,0)
+ ;;^UTILITY(U,$J,358.3,34894,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15967,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Elbow,Init Encntr
- ;;^UTILITY(U,$J,358.3,15967,1,4,0)
- ;;=4^S51.031A
- ;;^UTILITY(U,$J,358.3,15967,2)
- ;;=^5028638
- ;;^UTILITY(U,$J,358.3,15968,0)
- ;;=S51.032A^^85^830^9
- ;;^UTILITY(U,$J,358.3,15968,1,0)
+ ;;^UTILITY(U,$J,358.3,34894,1,3,0)
+ ;;=3^Pleural Plaque w/o Asbestos
+ ;;^UTILITY(U,$J,358.3,34894,1,4,0)
+ ;;=4^J92.9
+ ;;^UTILITY(U,$J,358.3,34894,2)
+ ;;=^5008313
+ ;;^UTILITY(U,$J,358.3,34895,0)
+ ;;=R09.1^^125^1648^9
+ ;;^UTILITY(U,$J,358.3,34895,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15968,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Elbow,Init Encntr
- ;;^UTILITY(U,$J,358.3,15968,1,4,0)
- ;;=4^S51.032A
- ;;^UTILITY(U,$J,358.3,15968,2)
- ;;=^5028641
- ;;^UTILITY(U,$J,358.3,15969,0)
- ;;=S61.531A^^85^830^63
- ;;^UTILITY(U,$J,358.3,15969,1,0)
+ ;;^UTILITY(U,$J,358.3,34895,1,3,0)
+ ;;=3^Pleurisy
+ ;;^UTILITY(U,$J,358.3,34895,1,4,0)
+ ;;=4^R09.1
+ ;;^UTILITY(U,$J,358.3,34895,2)
+ ;;=^95428
+ ;;^UTILITY(U,$J,358.3,34896,0)
+ ;;=J86.0^^125^1648^10
+ ;;^UTILITY(U,$J,358.3,34896,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15969,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Wrist,Init Encntr
- ;;^UTILITY(U,$J,358.3,15969,1,4,0)
- ;;=4^S61.531A
- ;;^UTILITY(U,$J,358.3,15969,2)
- ;;=^5033038
- ;;^UTILITY(U,$J,358.3,15970,0)
- ;;=S61.532A^^85^830^31
- ;;^UTILITY(U,$J,358.3,15970,1,0)
+ ;;^UTILITY(U,$J,358.3,34896,1,3,0)
+ ;;=3^Pyothorax w/ Fistula
+ ;;^UTILITY(U,$J,358.3,34896,1,4,0)
+ ;;=4^J86.0
+ ;;^UTILITY(U,$J,358.3,34896,2)
+ ;;=^5008308
+ ;;^UTILITY(U,$J,358.3,34897,0)
+ ;;=J86.9^^125^1648^11
+ ;;^UTILITY(U,$J,358.3,34897,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15970,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Wrist,Init Encntr
- ;;^UTILITY(U,$J,358.3,15970,1,4,0)
- ;;=4^S61.532A
- ;;^UTILITY(U,$J,358.3,15970,2)
- ;;=^5033041
- ;;^UTILITY(U,$J,358.3,15971,0)
- ;;=S61.432A^^85^830^13
- ;;^UTILITY(U,$J,358.3,15971,1,0)
+ ;;^UTILITY(U,$J,358.3,34897,1,3,0)
+ ;;=3^Pyothorax w/o Fistula
+ ;;^UTILITY(U,$J,358.3,34897,1,4,0)
+ ;;=4^J86.9
+ ;;^UTILITY(U,$J,358.3,34897,2)
+ ;;=^5008309
+ ;;^UTILITY(U,$J,358.3,34898,0)
+ ;;=F41.9^^125^1649^2
+ ;;^UTILITY(U,$J,358.3,34898,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15971,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Hand,Init Encntr
- ;;^UTILITY(U,$J,358.3,15971,1,4,0)
- ;;=4^S61.432A
- ;;^UTILITY(U,$J,358.3,15971,2)
- ;;=^5033002
- ;;^UTILITY(U,$J,358.3,15972,0)
- ;;=S61.431A^^85^830^45
- ;;^UTILITY(U,$J,358.3,15972,1,0)
+ ;;^UTILITY(U,$J,358.3,34898,1,3,0)
+ ;;=3^Anxiety Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,34898,1,4,0)
+ ;;=4^F41.9
+ ;;^UTILITY(U,$J,358.3,34898,2)
+ ;;=^5003567
+ ;;^UTILITY(U,$J,358.3,34899,0)
+ ;;=F10.20^^125^1649^1
+ ;;^UTILITY(U,$J,358.3,34899,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15972,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Hand,Init Encntr
- ;;^UTILITY(U,$J,358.3,15972,1,4,0)
- ;;=4^S61.431A
- ;;^UTILITY(U,$J,358.3,15972,2)
- ;;=^5032999
- ;;^UTILITY(U,$J,358.3,15973,0)
- ;;=S61.031A^^85^830^61
- ;;^UTILITY(U,$J,358.3,15973,1,0)
+ ;;^UTILITY(U,$J,358.3,34899,1,3,0)
+ ;;=3^Alcohol Dependence,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,34899,1,4,0)
+ ;;=4^F10.20
+ ;;^UTILITY(U,$J,358.3,34899,2)
+ ;;=^5003081
+ ;;^UTILITY(U,$J,358.3,34900,0)
+ ;;=F32.9^^125^1649^4
+ ;;^UTILITY(U,$J,358.3,34900,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15973,1,3,0)
- ;;=3^Puncture Wound w/o FB of Right Thumb w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15973,1,4,0)
- ;;=4^S61.031A
- ;;^UTILITY(U,$J,358.3,15973,2)
- ;;=^5032702
- ;;^UTILITY(U,$J,358.3,15974,0)
- ;;=S61.032A^^85^830^30
- ;;^UTILITY(U,$J,358.3,15974,1,0)
+ ;;^UTILITY(U,$J,358.3,34900,1,3,0)
+ ;;=3^Major Depressive Disorder,Single Episoide,Unspec
+ ;;^UTILITY(U,$J,358.3,34900,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,34900,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,34901,0)
+ ;;=F17.221^^125^1649^5
+ ;;^UTILITY(U,$J,358.3,34901,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15974,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Thumb w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15974,1,4,0)
- ;;=4^S61.032A
- ;;^UTILITY(U,$J,358.3,15974,2)
- ;;=^5032705
- ;;^UTILITY(U,$J,358.3,15975,0)
- ;;=S61.237A^^85^830^20
- ;;^UTILITY(U,$J,358.3,15975,1,0)
+ ;;^UTILITY(U,$J,358.3,34901,1,3,0)
+ ;;=3^Nicotine Dependence,Chewing Tobacco,In Remission
+ ;;^UTILITY(U,$J,358.3,34901,1,4,0)
+ ;;=4^F17.221
+ ;;^UTILITY(U,$J,358.3,34901,2)
+ ;;=^5003371
+ ;;^UTILITY(U,$J,358.3,34902,0)
+ ;;=F17.220^^125^1649^6
+ ;;^UTILITY(U,$J,358.3,34902,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15975,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Little Finger w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15975,1,4,0)
- ;;=4^S61.237A
- ;;^UTILITY(U,$J,358.3,15975,2)
- ;;=^5032837
- ;;^UTILITY(U,$J,358.3,15976,0)
- ;;=S91.232A^^85^830^11
- ;;^UTILITY(U,$J,358.3,15976,1,0)
+ ;;^UTILITY(U,$J,358.3,34902,1,3,0)
+ ;;=3^Nicotine Dependence,Chewing Tobacco,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,34902,1,4,0)
+ ;;=4^F17.220
+ ;;^UTILITY(U,$J,358.3,34902,2)
+ ;;=^5003370
+ ;;^UTILITY(U,$J,358.3,34903,0)
+ ;;=F17.211^^125^1649^7
+ ;;^UTILITY(U,$J,358.3,34903,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15976,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Great Toe w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15976,1,4,0)
- ;;=4^S91.232A
- ;;^UTILITY(U,$J,358.3,15976,2)
- ;;=^5044293
- ;;^UTILITY(U,$J,358.3,15977,0)
- ;;=S91.132A^^85^830^12
- ;;^UTILITY(U,$J,358.3,15977,1,0)
+ ;;^UTILITY(U,$J,358.3,34903,1,3,0)
+ ;;=3^Nicotine Dependence,Cigarettes,In Remission
+ ;;^UTILITY(U,$J,358.3,34903,1,4,0)
+ ;;=4^F17.211
+ ;;^UTILITY(U,$J,358.3,34903,2)
+ ;;=^5003366
+ ;;^UTILITY(U,$J,358.3,34904,0)
+ ;;=F17.210^^125^1649^8
+ ;;^UTILITY(U,$J,358.3,34904,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15977,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Great Toe w/o Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15977,1,4,0)
- ;;=4^S91.132A
- ;;^UTILITY(U,$J,358.3,15977,2)
- ;;=^5044216
- ;;^UTILITY(U,$J,358.3,15978,0)
- ;;=S61.331A^^85^830^15
- ;;^UTILITY(U,$J,358.3,15978,1,0)
+ ;;^UTILITY(U,$J,358.3,34904,1,3,0)
+ ;;=3^Nicotine Dependence,Cigarettes,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,34904,1,4,0)
+ ;;=4^F17.210
+ ;;^UTILITY(U,$J,358.3,34904,2)
+ ;;=^5003365
+ ;;^UTILITY(U,$J,358.3,34905,0)
+ ;;=F17.291^^125^1649^9
+ ;;^UTILITY(U,$J,358.3,34905,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15978,1,3,0)
- ;;=3^Puncture Wound w/o FB of Left Index Finger w/ Nail Damage,Init Encntr
- ;;^UTILITY(U,$J,358.3,15978,1,4,0)
- ;;=4^S61.331A
- ;;^UTILITY(U,$J,358.3,15978,2)
- ;;=^5032939
+ ;;^UTILITY(U,$J,358.3,34905,1,3,0)
+ ;;=3^Nicotine Dependence,Oth Tobacco Product,In Remission
+ ;;^UTILITY(U,$J,358.3,34905,1,4,0)
+ ;;=4^F17.291
+ ;;^UTILITY(U,$J,358.3,34905,2)
+ ;;=^5003376
+ ;;^UTILITY(U,$J,358.3,34906,0)
+ ;;=F17.290^^125^1649^10
+ ;;^UTILITY(U,$J,358.3,34906,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34906,1,3,0)
+ ;;=3^Nicotine Dependence,Oth Tobacco Product,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,34906,1,4,0)
+ ;;=4^F17.290
+ ;;^UTILITY(U,$J,358.3,34906,2)
+ ;;=^5003375
+ ;;^UTILITY(U,$J,358.3,34907,0)
+ ;;=F17.201^^125^1649^11
+ ;;^UTILITY(U,$J,358.3,34907,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34907,1,3,0)
+ ;;=3^Nicotine Dependence,Unspec,In Remission
+ ;;^UTILITY(U,$J,358.3,34907,1,4,0)
+ ;;=4^F17.201
+ ;;^UTILITY(U,$J,358.3,34907,2)
+ ;;=^5003361
+ ;;^UTILITY(U,$J,358.3,34908,0)
+ ;;=F17.200^^125^1649^12
+ ;;^UTILITY(U,$J,358.3,34908,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34908,1,3,0)
+ ;;=3^Nicotine Dependence,Unspec,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,34908,1,4,0)
+ ;;=4^F17.200
+ ;;^UTILITY(U,$J,358.3,34908,2)
+ ;;=^5003360
+ ;;^UTILITY(U,$J,358.3,34909,0)
+ ;;=F19.20^^125^1649^16
+ ;;^UTILITY(U,$J,358.3,34909,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34909,1,3,0)
+ ;;=3^Psycoactive Substance Dependence,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,34909,1,4,0)
+ ;;=4^F19.20
+ ;;^UTILITY(U,$J,358.3,34909,2)
+ ;;=^5003431
+ ;;^UTILITY(U,$J,358.3,34910,0)
+ ;;=F43.11^^125^1649^13
+ ;;^UTILITY(U,$J,358.3,34910,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34910,1,3,0)
+ ;;=3^PTSD,Acute
+ ;;^UTILITY(U,$J,358.3,34910,1,4,0)
+ ;;=4^F43.11
+ ;;^UTILITY(U,$J,358.3,34910,2)
+ ;;=^5003571
+ ;;^UTILITY(U,$J,358.3,34911,0)
+ ;;=F43.12^^125^1649^14
+ ;;^UTILITY(U,$J,358.3,34911,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34911,1,3,0)
+ ;;=3^PTSD,Chronic
+ ;;^UTILITY(U,$J,358.3,34911,1,4,0)
+ ;;=4^F43.12
+ ;;^UTILITY(U,$J,358.3,34911,2)
+ ;;=^5003572
+ ;;^UTILITY(U,$J,358.3,34912,0)
+ ;;=F43.10^^125^1649^15
+ ;;^UTILITY(U,$J,358.3,34912,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34912,1,3,0)
+ ;;=3^PTSD,Unspec
+ ;;^UTILITY(U,$J,358.3,34912,1,4,0)
+ ;;=4^F43.10
+ ;;^UTILITY(U,$J,358.3,34912,2)
+ ;;=^5003570
+ ;;^UTILITY(U,$J,358.3,34913,0)
+ ;;=Z87.891^^125^1649^3
+ ;;^UTILITY(U,$J,358.3,34913,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34913,1,3,0)
+ ;;=3^Hx of Nicotine Dependence
+ ;;^UTILITY(U,$J,358.3,34913,1,4,0)
+ ;;=4^Z87.891
+ ;;^UTILITY(U,$J,358.3,34913,2)
+ ;;=^5063518
+ ;;^UTILITY(U,$J,358.3,34914,0)
+ ;;=L40.2^^125^1650^1
+ ;;^UTILITY(U,$J,358.3,34914,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34914,1,3,0)
+ ;;=3^Acrodermatitis Continua
+ ;;^UTILITY(U,$J,358.3,34914,1,4,0)
+ ;;=4^L40.2
+ ;;^UTILITY(U,$J,358.3,34914,2)
+ ;;=^5009162
+ ;;^UTILITY(U,$J,358.3,34915,0)
+ ;;=L03.91^^125^1650^2
+ ;;^UTILITY(U,$J,358.3,34915,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34915,1,3,0)
+ ;;=3^Acute Lymphangitis,Unspec
+ ;;^UTILITY(U,$J,358.3,34915,1,4,0)
+ ;;=4^L03.91
+ ;;^UTILITY(U,$J,358.3,34915,2)
+ ;;=^5009068
+ ;;^UTILITY(U,$J,358.3,34916,0)
+ ;;=L23.9^^125^1650^3
+ ;;^UTILITY(U,$J,358.3,34916,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34916,1,3,0)
+ ;;=3^Allergic Contact Dermatitis
+ ;;^UTILITY(U,$J,358.3,34916,1,4,0)
+ ;;=4^L23.9
+ ;;^UTILITY(U,$J,358.3,34916,2)
+ ;;=^5009125
+ ;;^UTILITY(U,$J,358.3,34917,0)
+ ;;=L03.90^^125^1650^4
+ ;;^UTILITY(U,$J,358.3,34917,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34917,1,3,0)
+ ;;=3^Cellulitis,Unspec
+ ;;^UTILITY(U,$J,358.3,34917,1,4,0)
+ ;;=4^L03.90
+ ;;^UTILITY(U,$J,358.3,34917,2)
+ ;;=^5009067
+ ;;^UTILITY(U,$J,358.3,34918,0)
+ ;;=L02.91^^125^1650^7
+ ;;^UTILITY(U,$J,358.3,34918,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34918,1,3,0)
+ ;;=3^Cutaneous Abscess,Unspec
+ ;;^UTILITY(U,$J,358.3,34918,1,4,0)
+ ;;=4^L02.91
+ ;;^UTILITY(U,$J,358.3,34918,2)
+ ;;=^5009016
+ ;;^UTILITY(U,$J,358.3,34919,0)
+ ;;=L30.2^^125^1650^8
+ ;;^UTILITY(U,$J,358.3,34919,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34919,1,3,0)
+ ;;=3^Cutaneous Autosensitization
+ ;;^UTILITY(U,$J,358.3,34919,1,4,0)
+ ;;=4^L30.2
+ ;;^UTILITY(U,$J,358.3,34919,2)
+ ;;=^5009155
+ ;;^UTILITY(U,$J,358.3,34920,0)
+ ;;=L30.9^^125^1650^10
+ ;;^UTILITY(U,$J,358.3,34920,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34920,1,3,0)
+ ;;=3^Dermatitis,Unspec
+ ;;^UTILITY(U,$J,358.3,34920,1,4,0)
+ ;;=4^L30.9
+ ;;^UTILITY(U,$J,358.3,34920,2)
+ ;;=^5009159
+ ;;^UTILITY(U,$J,358.3,34921,0)
+ ;;=Z48.01^^125^1650^5
+ ;;^UTILITY(U,$J,358.3,34921,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34921,1,3,0)
+ ;;=3^Change/Removal of Surgical Wound Dressing
+ ;;^UTILITY(U,$J,358.3,34921,1,4,0)
+ ;;=4^Z48.01
+ ;;^UTILITY(U,$J,358.3,34921,2)
+ ;;=^5063034
+ ;;^UTILITY(U,$J,358.3,34922,0)
+ ;;=L98.3^^125^1650^11
+ ;;^UTILITY(U,$J,358.3,34922,1,0)
+ ;;=^358.31IA^4^2

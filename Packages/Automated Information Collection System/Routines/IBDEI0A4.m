@@ -1,134 +1,290 @@
-IBDEI0A4 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0A4 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,4206,1,4,0)
- ;;=4^Z57.31
- ;;^UTILITY(U,$J,358.3,4206,2)
- ;;=^5063121
- ;;^UTILITY(U,$J,358.3,4207,0)
- ;;=Z57.6^^28^263^86
- ;;^UTILITY(U,$J,358.3,4207,1,0)
+ ;;^UTILITY(U,$J,358.3,10121,1,3,0)
+ ;;=3^Myopia,Left Eye
+ ;;^UTILITY(U,$J,358.3,10121,1,4,0)
+ ;;=4^H52.12
+ ;;^UTILITY(U,$J,358.3,10121,2)
+ ;;=^5006265
+ ;;^UTILITY(U,$J,358.3,10122,0)
+ ;;=H52.11^^51^588^51
+ ;;^UTILITY(U,$J,358.3,10122,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4207,1,3,0)
- ;;=3^Occupational Exposure to Extreme Temperature
- ;;^UTILITY(U,$J,358.3,4207,1,4,0)
- ;;=4^Z57.6
- ;;^UTILITY(U,$J,358.3,4207,2)
- ;;=^5063125
- ;;^UTILITY(U,$J,358.3,4208,0)
- ;;=Z57.0^^28^263^88
- ;;^UTILITY(U,$J,358.3,4208,1,0)
+ ;;^UTILITY(U,$J,358.3,10122,1,3,0)
+ ;;=3^Myopia,Right Eye
+ ;;^UTILITY(U,$J,358.3,10122,1,4,0)
+ ;;=4^H52.11
+ ;;^UTILITY(U,$J,358.3,10122,2)
+ ;;=^5006264
+ ;;^UTILITY(U,$J,358.3,10123,0)
+ ;;=H40.053^^51^588^52
+ ;;^UTILITY(U,$J,358.3,10123,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4208,1,3,0)
- ;;=3^Occupational Exposure to Noise
- ;;^UTILITY(U,$J,358.3,4208,1,4,0)
- ;;=4^Z57.0
- ;;^UTILITY(U,$J,358.3,4208,2)
- ;;=^5063118
- ;;^UTILITY(U,$J,358.3,4209,0)
- ;;=Z57.39^^28^263^84
- ;;^UTILITY(U,$J,358.3,4209,1,0)
+ ;;^UTILITY(U,$J,358.3,10123,1,3,0)
+ ;;=3^Ocular HTN,Bilateral
+ ;;^UTILITY(U,$J,358.3,10123,1,4,0)
+ ;;=4^H40.053
+ ;;^UTILITY(U,$J,358.3,10123,2)
+ ;;=^5005742
+ ;;^UTILITY(U,$J,358.3,10124,0)
+ ;;=H40.052^^51^588^53
+ ;;^UTILITY(U,$J,358.3,10124,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4209,1,3,0)
- ;;=3^Occupational Exposure to Air Contaminants
- ;;^UTILITY(U,$J,358.3,4209,1,4,0)
- ;;=4^Z57.39
- ;;^UTILITY(U,$J,358.3,4209,2)
- ;;=^5063122
- ;;^UTILITY(U,$J,358.3,4210,0)
- ;;=Z57.8^^28^263^89
- ;;^UTILITY(U,$J,358.3,4210,1,0)
+ ;;^UTILITY(U,$J,358.3,10124,1,3,0)
+ ;;=3^Ocular HTN,Left Eye
+ ;;^UTILITY(U,$J,358.3,10124,1,4,0)
+ ;;=4^H40.052
+ ;;^UTILITY(U,$J,358.3,10124,2)
+ ;;=^5005741
+ ;;^UTILITY(U,$J,358.3,10125,0)
+ ;;=H40.051^^51^588^54
+ ;;^UTILITY(U,$J,358.3,10125,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4210,1,3,0)
- ;;=3^Occupational Exposure to Other Risk Factors
- ;;^UTILITY(U,$J,358.3,4210,1,4,0)
- ;;=4^Z57.8
- ;;^UTILITY(U,$J,358.3,4210,2)
- ;;=^5063127
- ;;^UTILITY(U,$J,358.3,4211,0)
- ;;=Z57.1^^28^263^90
- ;;^UTILITY(U,$J,358.3,4211,1,0)
+ ;;^UTILITY(U,$J,358.3,10125,1,3,0)
+ ;;=3^Ocular HTN,Right Eye
+ ;;^UTILITY(U,$J,358.3,10125,1,4,0)
+ ;;=4^H40.051
+ ;;^UTILITY(U,$J,358.3,10125,2)
+ ;;=^5005740
+ ;;^UTILITY(U,$J,358.3,10126,0)
+ ;;=H11.152^^51^588^55
+ ;;^UTILITY(U,$J,358.3,10126,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4211,1,3,0)
- ;;=3^Occupational Exposure to Radiation
- ;;^UTILITY(U,$J,358.3,4211,1,4,0)
- ;;=4^Z57.1
- ;;^UTILITY(U,$J,358.3,4211,2)
- ;;=^5063119
- ;;^UTILITY(U,$J,358.3,4212,0)
- ;;=Z57.4^^28^263^83
- ;;^UTILITY(U,$J,358.3,4212,1,0)
+ ;;^UTILITY(U,$J,358.3,10126,1,3,0)
+ ;;=3^Pinguecula,Left Eye
+ ;;^UTILITY(U,$J,358.3,10126,1,4,0)
+ ;;=4^H11.152
+ ;;^UTILITY(U,$J,358.3,10126,2)
+ ;;=^5004762
+ ;;^UTILITY(U,$J,358.3,10127,0)
+ ;;=H11.151^^51^588^56
+ ;;^UTILITY(U,$J,358.3,10127,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4212,1,3,0)
- ;;=3^Occupational Exposure to Agriculture Toxic Agents
- ;;^UTILITY(U,$J,358.3,4212,1,4,0)
- ;;=4^Z57.4
- ;;^UTILITY(U,$J,358.3,4212,2)
- ;;=^5063123
- ;;^UTILITY(U,$J,358.3,4213,0)
- ;;=Z57.5^^28^263^87
- ;;^UTILITY(U,$J,358.3,4213,1,0)
+ ;;^UTILITY(U,$J,358.3,10127,1,3,0)
+ ;;=3^Pinguecula,Right Eye
+ ;;^UTILITY(U,$J,358.3,10127,1,4,0)
+ ;;=4^H11.151
+ ;;^UTILITY(U,$J,358.3,10127,2)
+ ;;=^5004761
+ ;;^UTILITY(U,$J,358.3,10128,0)
+ ;;=H40.11X1^^51^588^38
+ ;;^UTILITY(U,$J,358.3,10128,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4213,1,3,0)
- ;;=3^Occupational Exposure to Industrial Toxic Agents
- ;;^UTILITY(U,$J,358.3,4213,1,4,0)
- ;;=4^Z57.5
- ;;^UTILITY(U,$J,358.3,4213,2)
- ;;=^5063124
- ;;^UTILITY(U,$J,358.3,4214,0)
- ;;=Z57.9^^28^263^92
- ;;^UTILITY(U,$J,358.3,4214,1,0)
+ ;;^UTILITY(U,$J,358.3,10128,1,3,0)
+ ;;=3^Glaucoma,Primary Open-Angle,Mild Stage
+ ;;^UTILITY(U,$J,358.3,10128,1,4,0)
+ ;;=4^H40.11X1
+ ;;^UTILITY(U,$J,358.3,10128,2)
+ ;;=^5005754
+ ;;^UTILITY(U,$J,358.3,10129,0)
+ ;;=H40.11X2^^51^588^39
+ ;;^UTILITY(U,$J,358.3,10129,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4214,1,3,0)
- ;;=3^Occupational Exposure to Unspec Risk Factor
- ;;^UTILITY(U,$J,358.3,4214,1,4,0)
- ;;=4^Z57.9
- ;;^UTILITY(U,$J,358.3,4214,2)
- ;;=^5063128
- ;;^UTILITY(U,$J,358.3,4215,0)
- ;;=Z57.7^^28^263^93
- ;;^UTILITY(U,$J,358.3,4215,1,0)
+ ;;^UTILITY(U,$J,358.3,10129,1,3,0)
+ ;;=3^Glaucoma,Primary Open-Angle,Moderate Stage
+ ;;^UTILITY(U,$J,358.3,10129,1,4,0)
+ ;;=4^H40.11X2
+ ;;^UTILITY(U,$J,358.3,10129,2)
+ ;;=^5005755
+ ;;^UTILITY(U,$J,358.3,10130,0)
+ ;;=H40.11X3^^51^588^40
+ ;;^UTILITY(U,$J,358.3,10130,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4215,1,3,0)
- ;;=3^Occupational Exposure to Vibration
- ;;^UTILITY(U,$J,358.3,4215,1,4,0)
- ;;=4^Z57.7
- ;;^UTILITY(U,$J,358.3,4215,2)
- ;;=^5063126
- ;;^UTILITY(U,$J,358.3,4216,0)
- ;;=Z71.2^^28^263^95
- ;;^UTILITY(U,$J,358.3,4216,1,0)
+ ;;^UTILITY(U,$J,358.3,10130,1,3,0)
+ ;;=3^Glaucoma,Primary Open-Angle,Severe Stage
+ ;;^UTILITY(U,$J,358.3,10130,1,4,0)
+ ;;=4^H40.11X3
+ ;;^UTILITY(U,$J,358.3,10130,2)
+ ;;=^5005756
+ ;;^UTILITY(U,$J,358.3,10131,0)
+ ;;=H11.002^^51^588^58
+ ;;^UTILITY(U,$J,358.3,10131,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4216,1,3,0)
- ;;=3^Person Consulting for Explanation of Exam/Test Findings
- ;;^UTILITY(U,$J,358.3,4216,1,4,0)
- ;;=4^Z71.2
- ;;^UTILITY(U,$J,358.3,4216,2)
- ;;=^5063244
- ;;^UTILITY(U,$J,358.3,4217,0)
- ;;=Z71.0^^28^263^96
- ;;^UTILITY(U,$J,358.3,4217,1,0)
+ ;;^UTILITY(U,$J,358.3,10131,1,3,0)
+ ;;=3^Pterygium,Left Eye
+ ;;^UTILITY(U,$J,358.3,10131,1,4,0)
+ ;;=4^H11.002
+ ;;^UTILITY(U,$J,358.3,10131,2)
+ ;;=^5004718
+ ;;^UTILITY(U,$J,358.3,10132,0)
+ ;;=H11.001^^51^588^59
+ ;;^UTILITY(U,$J,358.3,10132,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4217,1,3,0)
- ;;=3^Person Consulting on Behalf Another Person
- ;;^UTILITY(U,$J,358.3,4217,1,4,0)
- ;;=4^Z71.0
- ;;^UTILITY(U,$J,358.3,4217,2)
- ;;=^5063242
- ;;^UTILITY(U,$J,358.3,4218,0)
- ;;=Z71.1^^28^263^97
- ;;^UTILITY(U,$J,358.3,4218,1,0)
+ ;;^UTILITY(U,$J,358.3,10132,1,3,0)
+ ;;=3^Pterygium,Right Eye
+ ;;^UTILITY(U,$J,358.3,10132,1,4,0)
+ ;;=4^H11.001
+ ;;^UTILITY(U,$J,358.3,10132,2)
+ ;;=^5004717
+ ;;^UTILITY(U,$J,358.3,10133,0)
+ ;;=H35.373^^51^588^60
+ ;;^UTILITY(U,$J,358.3,10133,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4218,1,3,0)
- ;;=3^Person w/ Feared Health Complaint w/ No Diagnosis Made
- ;;^UTILITY(U,$J,358.3,4218,1,4,0)
- ;;=4^Z71.1
- ;;^UTILITY(U,$J,358.3,4218,2)
- ;;=^5063243
- ;;^UTILITY(U,$J,358.3,4219,0)
- ;;=Z91.419^^28^263^98
- ;;^UTILITY(U,$J,358.3,4219,1,0)
+ ;;^UTILITY(U,$J,358.3,10133,1,3,0)
+ ;;=3^Puckering of Macula,Bilateral
+ ;;^UTILITY(U,$J,358.3,10133,1,4,0)
+ ;;=4^H35.373
+ ;;^UTILITY(U,$J,358.3,10133,2)
+ ;;=^5005664
+ ;;^UTILITY(U,$J,358.3,10134,0)
+ ;;=H35.372^^51^588^61
+ ;;^UTILITY(U,$J,358.3,10134,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4219,1,3,0)
- ;;=3^Personal Hx of Adult Abuse,Unspec
+ ;;^UTILITY(U,$J,358.3,10134,1,3,0)
+ ;;=3^Puckering of Macula,Left eye
+ ;;^UTILITY(U,$J,358.3,10134,1,4,0)
+ ;;=4^H35.372
+ ;;^UTILITY(U,$J,358.3,10134,2)
+ ;;=^5005663
+ ;;^UTILITY(U,$J,358.3,10135,0)
+ ;;=H35.371^^51^588^62
+ ;;^UTILITY(U,$J,358.3,10135,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10135,1,3,0)
+ ;;=3^Puckering of Macula,Right eye
+ ;;^UTILITY(U,$J,358.3,10135,1,4,0)
+ ;;=4^H35.371
+ ;;^UTILITY(U,$J,358.3,10135,2)
+ ;;=^5005662
+ ;;^UTILITY(U,$J,358.3,10136,0)
+ ;;=H52.223^^51^588^2
+ ;;^UTILITY(U,$J,358.3,10136,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10136,1,3,0)
+ ;;=3^Astigmatism,Bilateral
+ ;;^UTILITY(U,$J,358.3,10136,1,4,0)
+ ;;=4^H52.223
+ ;;^UTILITY(U,$J,358.3,10136,2)
+ ;;=^5006276
+ ;;^UTILITY(U,$J,358.3,10137,0)
+ ;;=H52.222^^51^588^3
+ ;;^UTILITY(U,$J,358.3,10137,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10137,1,3,0)
+ ;;=3^Astigmatism,Left Eye
+ ;;^UTILITY(U,$J,358.3,10137,1,4,0)
+ ;;=4^H52.222
+ ;;^UTILITY(U,$J,358.3,10137,2)
+ ;;=^5006275
+ ;;^UTILITY(U,$J,358.3,10138,0)
+ ;;=H52.221^^51^588^4
+ ;;^UTILITY(U,$J,358.3,10138,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10138,1,3,0)
+ ;;=3^Astigmatism,Right Eye
+ ;;^UTILITY(U,$J,358.3,10138,1,4,0)
+ ;;=4^H52.221
+ ;;^UTILITY(U,$J,358.3,10138,2)
+ ;;=^5006274
+ ;;^UTILITY(U,$J,358.3,10139,0)
+ ;;=Z13.5^^51^588^63
+ ;;^UTILITY(U,$J,358.3,10139,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10139,1,3,0)
+ ;;=3^Screening for Eye & Ear Disorders
+ ;;^UTILITY(U,$J,358.3,10139,1,4,0)
+ ;;=4^Z13.5
+ ;;^UTILITY(U,$J,358.3,10139,2)
+ ;;=^5062706
+ ;;^UTILITY(U,$J,358.3,10140,0)
+ ;;=H34.832^^51^588^64
+ ;;^UTILITY(U,$J,358.3,10140,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10140,1,3,0)
+ ;;=3^Tributary Retinal Vein Occlusion,Left Eye
+ ;;^UTILITY(U,$J,358.3,10140,1,4,0)
+ ;;=4^H34.832
+ ;;^UTILITY(U,$J,358.3,10140,2)
+ ;;=^5005577
+ ;;^UTILITY(U,$J,358.3,10141,0)
+ ;;=H34.831^^51^588^65
+ ;;^UTILITY(U,$J,358.3,10141,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10141,1,3,0)
+ ;;=3^Tributary Retinal Vein Occlusion,Right Eye
+ ;;^UTILITY(U,$J,358.3,10141,1,4,0)
+ ;;=4^H34.831
+ ;;^UTILITY(U,$J,358.3,10141,2)
+ ;;=^5005576
+ ;;^UTILITY(U,$J,358.3,10142,0)
+ ;;=H53.143^^51^588^75
+ ;;^UTILITY(U,$J,358.3,10142,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10142,1,3,0)
+ ;;=3^Visual Discomfort,Bilateral
+ ;;^UTILITY(U,$J,358.3,10142,1,4,0)
+ ;;=4^H53.143
+ ;;^UTILITY(U,$J,358.3,10142,2)
+ ;;=^5006319
+ ;;^UTILITY(U,$J,358.3,10143,0)
+ ;;=H53.142^^51^588^76
+ ;;^UTILITY(U,$J,358.3,10143,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10143,1,3,0)
+ ;;=3^Visual Discomfort,Left Eye
+ ;;^UTILITY(U,$J,358.3,10143,1,4,0)
+ ;;=4^H53.142
+ ;;^UTILITY(U,$J,358.3,10143,2)
+ ;;=^5006318
+ ;;^UTILITY(U,$J,358.3,10144,0)
+ ;;=H53.141^^51^588^77
+ ;;^UTILITY(U,$J,358.3,10144,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10144,1,3,0)
+ ;;=3^Visual Discomfort,Right Eye
+ ;;^UTILITY(U,$J,358.3,10144,1,4,0)
+ ;;=4^H53.141
+ ;;^UTILITY(U,$J,358.3,10144,2)
+ ;;=^5006317
+ ;;^UTILITY(U,$J,358.3,10145,0)
+ ;;=C72.31^^51^589^31
+ ;;^UTILITY(U,$J,358.3,10145,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10145,1,3,0)
+ ;;=3^Malig Neop of Right Optic Nerve
+ ;;^UTILITY(U,$J,358.3,10145,1,4,0)
+ ;;=4^C72.31
+ ;;^UTILITY(U,$J,358.3,10145,2)
+ ;;=^5001303
+ ;;^UTILITY(U,$J,358.3,10146,0)
+ ;;=C72.32^^51^589^30
+ ;;^UTILITY(U,$J,358.3,10146,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10146,1,3,0)
+ ;;=3^Malig Neop of Left Optic Nerve
+ ;;^UTILITY(U,$J,358.3,10146,1,4,0)
+ ;;=4^C72.32
+ ;;^UTILITY(U,$J,358.3,10146,2)
+ ;;=^5001304
+ ;;^UTILITY(U,$J,358.3,10147,0)
+ ;;=D33.3^^51^589^5
+ ;;^UTILITY(U,$J,358.3,10147,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10147,1,3,0)
+ ;;=3^Benigh Neop of Cranial Nerves
+ ;;^UTILITY(U,$J,358.3,10147,1,4,0)
+ ;;=4^D33.3
+ ;;^UTILITY(U,$J,358.3,10147,2)
+ ;;=^13298
+ ;;^UTILITY(U,$J,358.3,10148,0)
+ ;;=G24.5^^51^589^8
+ ;;^UTILITY(U,$J,358.3,10148,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10148,1,3,0)
+ ;;=3^Blepharospasm
+ ;;^UTILITY(U,$J,358.3,10148,1,4,0)
+ ;;=4^G24.5
+ ;;^UTILITY(U,$J,358.3,10148,2)
+ ;;=^15293
+ ;;^UTILITY(U,$J,358.3,10149,0)
+ ;;=G43.909^^51^589^32
+ ;;^UTILITY(U,$J,358.3,10149,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10149,1,3,0)
+ ;;=3^Migraine Not Intractable w/o Status Migrainosus
+ ;;^UTILITY(U,$J,358.3,10149,1,4,0)
+ ;;=4^G43.909
+ ;;^UTILITY(U,$J,358.3,10149,2)
+ ;;=^5003909

@@ -1,138 +1,296 @@
-IBDEI065 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI065 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2275,1,4,0)
- ;;=4^T86.22
- ;;^UTILITY(U,$J,358.3,2275,2)
- ;;=^5055715
- ;;^UTILITY(U,$J,358.3,2276,0)
- ;;=T86.23^^19^192^24
- ;;^UTILITY(U,$J,358.3,2276,1,0)
+ ;;^UTILITY(U,$J,358.3,5976,1,3,0)
+ ;;=3^Patient's Noncompliance w/ Renal Dialysis
+ ;;^UTILITY(U,$J,358.3,5976,1,4,0)
+ ;;=4^Z91.15
+ ;;^UTILITY(U,$J,358.3,5976,2)
+ ;;=^5063617
+ ;;^UTILITY(U,$J,358.3,5977,0)
+ ;;=Z49.32^^39^427^1
+ ;;^UTILITY(U,$J,358.3,5977,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2276,1,3,0)
- ;;=3^Heart Transplant Infection
- ;;^UTILITY(U,$J,358.3,2276,1,4,0)
- ;;=4^T86.23
- ;;^UTILITY(U,$J,358.3,2276,2)
- ;;=^5055716
- ;;^UTILITY(U,$J,358.3,2277,0)
- ;;=T86.290^^19^192^5
- ;;^UTILITY(U,$J,358.3,2277,1,0)
+ ;;^UTILITY(U,$J,358.3,5977,1,3,0)
+ ;;=3^Adequacy Testing for Peritoneal Dialysis
+ ;;^UTILITY(U,$J,358.3,5977,1,4,0)
+ ;;=4^Z49.32
+ ;;^UTILITY(U,$J,358.3,5977,2)
+ ;;=^5063059
+ ;;^UTILITY(U,$J,358.3,5978,0)
+ ;;=N18.6^^39^427^2
+ ;;^UTILITY(U,$J,358.3,5978,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2277,1,3,0)
- ;;=3^Cardiac Allograft Vasculopathy
- ;;^UTILITY(U,$J,358.3,2277,1,4,0)
- ;;=4^T86.290
- ;;^UTILITY(U,$J,358.3,2277,2)
- ;;=^5055717
- ;;^UTILITY(U,$J,358.3,2278,0)
- ;;=T86.298^^19^192^16
- ;;^UTILITY(U,$J,358.3,2278,1,0)
+ ;;^UTILITY(U,$J,358.3,5978,1,3,0)
+ ;;=3^ESRD
+ ;;^UTILITY(U,$J,358.3,5978,1,4,0)
+ ;;=4^N18.6
+ ;;^UTILITY(U,$J,358.3,5978,2)
+ ;;=^303986
+ ;;^UTILITY(U,$J,358.3,5979,0)
+ ;;=I25.10^^39^428^3
+ ;;^UTILITY(U,$J,358.3,5979,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2278,1,3,0)
- ;;=3^Complications of Heart Transplant NEC
- ;;^UTILITY(U,$J,358.3,2278,1,4,0)
- ;;=4^T86.298
- ;;^UTILITY(U,$J,358.3,2278,2)
- ;;=^5055718
- ;;^UTILITY(U,$J,358.3,2279,0)
- ;;=T86.30^^19^192^12
- ;;^UTILITY(U,$J,358.3,2279,1,0)
+ ;;^UTILITY(U,$J,358.3,5979,1,3,0)
+ ;;=3^Athscl Hrt Disease,Native Coronary Artery w/o Angina Pectoris
+ ;;^UTILITY(U,$J,358.3,5979,1,4,0)
+ ;;=4^I25.10
+ ;;^UTILITY(U,$J,358.3,5979,2)
+ ;;=^5007107
+ ;;^UTILITY(U,$J,358.3,5980,0)
+ ;;=I42.8^^39^428^7
+ ;;^UTILITY(U,$J,358.3,5980,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2279,1,3,0)
- ;;=3^Complication of Heart-Lung Transplant,Unspec
- ;;^UTILITY(U,$J,358.3,2279,1,4,0)
- ;;=4^T86.30
- ;;^UTILITY(U,$J,358.3,2279,2)
- ;;=^5055719
- ;;^UTILITY(U,$J,358.3,2280,0)
- ;;=T86.39^^19^192^17
- ;;^UTILITY(U,$J,358.3,2280,1,0)
+ ;;^UTILITY(U,$J,358.3,5980,1,3,0)
+ ;;=3^Cardiomyopathy,Other
+ ;;^UTILITY(U,$J,358.3,5980,1,4,0)
+ ;;=4^I42.8
+ ;;^UTILITY(U,$J,358.3,5980,2)
+ ;;=^5007199
+ ;;^UTILITY(U,$J,358.3,5981,0)
+ ;;=I48.91^^39^428^4
+ ;;^UTILITY(U,$J,358.3,5981,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2280,1,3,0)
- ;;=3^Complications of Heart-Lung Transplant NEC
- ;;^UTILITY(U,$J,358.3,2280,1,4,0)
- ;;=4^T86.39
- ;;^UTILITY(U,$J,358.3,2280,2)
- ;;=^5055723
- ;;^UTILITY(U,$J,358.3,2281,0)
- ;;=T86.31^^19^192^30
- ;;^UTILITY(U,$J,358.3,2281,1,0)
+ ;;^UTILITY(U,$J,358.3,5981,1,3,0)
+ ;;=3^Atrial Fibrillation,Unspec
+ ;;^UTILITY(U,$J,358.3,5981,1,4,0)
+ ;;=4^I48.91
+ ;;^UTILITY(U,$J,358.3,5981,2)
+ ;;=^5007229
+ ;;^UTILITY(U,$J,358.3,5982,0)
+ ;;=I49.8^^39^428^6
+ ;;^UTILITY(U,$J,358.3,5982,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2281,1,3,0)
- ;;=3^Heart-Lung Transplant Rejection
- ;;^UTILITY(U,$J,358.3,2281,1,4,0)
- ;;=4^T86.31
- ;;^UTILITY(U,$J,358.3,2281,2)
- ;;=^5055720
- ;;^UTILITY(U,$J,358.3,2282,0)
- ;;=T86.32^^19^192^28
- ;;^UTILITY(U,$J,358.3,2282,1,0)
+ ;;^UTILITY(U,$J,358.3,5982,1,3,0)
+ ;;=3^Cardiac Arrhythmias,Other Spec
+ ;;^UTILITY(U,$J,358.3,5982,1,4,0)
+ ;;=4^I49.8
+ ;;^UTILITY(U,$J,358.3,5982,2)
+ ;;=^5007236
+ ;;^UTILITY(U,$J,358.3,5983,0)
+ ;;=R00.1^^39^428^5
+ ;;^UTILITY(U,$J,358.3,5983,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2282,1,3,0)
- ;;=3^Heart-Lung Transplant Failure
- ;;^UTILITY(U,$J,358.3,2282,1,4,0)
- ;;=4^T86.32
- ;;^UTILITY(U,$J,358.3,2282,2)
- ;;=^5055721
- ;;^UTILITY(U,$J,358.3,2283,0)
- ;;=T86.33^^19^192^29
- ;;^UTILITY(U,$J,358.3,2283,1,0)
+ ;;^UTILITY(U,$J,358.3,5983,1,3,0)
+ ;;=3^Bradycardia,Unspec
+ ;;^UTILITY(U,$J,358.3,5983,1,4,0)
+ ;;=4^R00.1
+ ;;^UTILITY(U,$J,358.3,5983,2)
+ ;;=^5019164
+ ;;^UTILITY(U,$J,358.3,5984,0)
+ ;;=I50.9^^39^428^13
+ ;;^UTILITY(U,$J,358.3,5984,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2283,1,3,0)
- ;;=3^Heart-Lung Transplant Infection
- ;;^UTILITY(U,$J,358.3,2283,1,4,0)
- ;;=4^T86.33
- ;;^UTILITY(U,$J,358.3,2283,2)
- ;;=^5055722
- ;;^UTILITY(U,$J,358.3,2284,0)
- ;;=T86.810^^19^192^35
- ;;^UTILITY(U,$J,358.3,2284,1,0)
+ ;;^UTILITY(U,$J,358.3,5984,1,3,0)
+ ;;=3^Heart Failure,Unspec
+ ;;^UTILITY(U,$J,358.3,5984,1,4,0)
+ ;;=4^I50.9
+ ;;^UTILITY(U,$J,358.3,5984,2)
+ ;;=^5007251
+ ;;^UTILITY(U,$J,358.3,5985,0)
+ ;;=I95.1^^39^428^14
+ ;;^UTILITY(U,$J,358.3,5985,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2284,1,3,0)
- ;;=3^Lung Transplant Rejection
- ;;^UTILITY(U,$J,358.3,2284,1,4,0)
- ;;=4^T86.810
- ;;^UTILITY(U,$J,358.3,2284,2)
- ;;=^5055730
- ;;^UTILITY(U,$J,358.3,2285,0)
- ;;=T86.811^^19^192^34
- ;;^UTILITY(U,$J,358.3,2285,1,0)
+ ;;^UTILITY(U,$J,358.3,5985,1,3,0)
+ ;;=3^Hypotension,Orthostatic
+ ;;^UTILITY(U,$J,358.3,5985,1,4,0)
+ ;;=4^I95.1
+ ;;^UTILITY(U,$J,358.3,5985,2)
+ ;;=^60741
+ ;;^UTILITY(U,$J,358.3,5986,0)
+ ;;=R55.^^39^428^17
+ ;;^UTILITY(U,$J,358.3,5986,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2285,1,3,0)
- ;;=3^Lung Transplant Failure
- ;;^UTILITY(U,$J,358.3,2285,1,4,0)
- ;;=4^T86.811
- ;;^UTILITY(U,$J,358.3,2285,2)
- ;;=^5055731
- ;;^UTILITY(U,$J,358.3,2286,0)
- ;;=T86.819^^19^192^14
- ;;^UTILITY(U,$J,358.3,2286,1,0)
+ ;;^UTILITY(U,$J,358.3,5986,1,3,0)
+ ;;=3^Syncope and Collapse
+ ;;^UTILITY(U,$J,358.3,5986,1,4,0)
+ ;;=4^R55.
+ ;;^UTILITY(U,$J,358.3,5986,2)
+ ;;=^116707
+ ;;^UTILITY(U,$J,358.3,5987,0)
+ ;;=R00.0^^39^428^18
+ ;;^UTILITY(U,$J,358.3,5987,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2286,1,3,0)
- ;;=3^Complication of Lung Transplant,Unspec
- ;;^UTILITY(U,$J,358.3,2286,1,4,0)
- ;;=4^T86.819
- ;;^UTILITY(U,$J,358.3,2286,2)
- ;;=^5137975
- ;;^UTILITY(U,$J,358.3,2287,0)
- ;;=T86.818^^19^192^13
- ;;^UTILITY(U,$J,358.3,2287,1,0)
+ ;;^UTILITY(U,$J,358.3,5987,1,3,0)
+ ;;=3^Tachycardia,Unspec
+ ;;^UTILITY(U,$J,358.3,5987,1,4,0)
+ ;;=4^R00.0
+ ;;^UTILITY(U,$J,358.3,5987,2)
+ ;;=^5019163
+ ;;^UTILITY(U,$J,358.3,5988,0)
+ ;;=R07.9^^39^428^8
+ ;;^UTILITY(U,$J,358.3,5988,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2287,1,3,0)
- ;;=3^Complication of Lung Transplant NEC
- ;;^UTILITY(U,$J,358.3,2287,1,4,0)
- ;;=4^T86.818
- ;;^UTILITY(U,$J,358.3,2287,2)
- ;;=^5055733
- ;;^UTILITY(U,$J,358.3,2288,0)
- ;;=Z94.1^^19^192^26
- ;;^UTILITY(U,$J,358.3,2288,1,0)
+ ;;^UTILITY(U,$J,358.3,5988,1,3,0)
+ ;;=3^Chest Pain,Unspec
+ ;;^UTILITY(U,$J,358.3,5988,1,4,0)
+ ;;=4^R07.9
+ ;;^UTILITY(U,$J,358.3,5988,2)
+ ;;=^5019201
+ ;;^UTILITY(U,$J,358.3,5989,0)
+ ;;=I20.0^^39^428^19
+ ;;^UTILITY(U,$J,358.3,5989,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2288,1,3,0)
- ;;=3^Heart Transplant Status
- ;;^UTILITY(U,$J,358.3,2288,1,4,0)
- ;;=4^Z94.1
- ;;^UTILITY(U,$J,358.3,2288,2)
- ;;=^5063655
+ ;;^UTILITY(U,$J,358.3,5989,1,3,0)
+ ;;=3^Unstable Angina
+ ;;^UTILITY(U,$J,358.3,5989,1,4,0)
+ ;;=4^I20.0
+ ;;^UTILITY(U,$J,358.3,5989,2)
+ ;;=^5007076
+ ;;^UTILITY(U,$J,358.3,5990,0)
+ ;;=I20.9^^39^428^1
+ ;;^UTILITY(U,$J,358.3,5990,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5990,1,3,0)
+ ;;=3^Angina Pectoris,Unspec
+ ;;^UTILITY(U,$J,358.3,5990,1,4,0)
+ ;;=4^I20.9
+ ;;^UTILITY(U,$J,358.3,5990,2)
+ ;;=^5007079
+ ;;^UTILITY(U,$J,358.3,5991,0)
+ ;;=I31.9^^39^428^16
+ ;;^UTILITY(U,$J,358.3,5991,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5991,1,3,0)
+ ;;=3^Pericardium Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,5991,1,4,0)
+ ;;=4^I31.9
+ ;;^UTILITY(U,$J,358.3,5991,2)
+ ;;=^5007165
+ ;;^UTILITY(U,$J,358.3,5992,0)
+ ;;=I49.9^^39^428^2
+ ;;^UTILITY(U,$J,358.3,5992,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5992,1,3,0)
+ ;;=3^Arrhythmia,Cardiac,Unspec
+ ;;^UTILITY(U,$J,358.3,5992,1,4,0)
+ ;;=4^I49.9
+ ;;^UTILITY(U,$J,358.3,5992,2)
+ ;;=^5007237
+ ;;^UTILITY(U,$J,358.3,5993,0)
+ ;;=I13.0^^39^428^9
+ ;;^UTILITY(U,$J,358.3,5993,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5993,1,3,0)
+ ;;=3^HTN Hrt Disease w/ Hrt Failure and CKD,Stage 1-4
+ ;;^UTILITY(U,$J,358.3,5993,1,4,0)
+ ;;=4^I13.0
+ ;;^UTILITY(U,$J,358.3,5993,2)
+ ;;=^5007067
+ ;;^UTILITY(U,$J,358.3,5994,0)
+ ;;=I13.2^^39^428^10
+ ;;^UTILITY(U,$J,358.3,5994,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5994,1,3,0)
+ ;;=3^HTN Hrt Disease w/ Hrt Failure and CKD, Stage 5 or ESRD
+ ;;^UTILITY(U,$J,358.3,5994,1,4,0)
+ ;;=4^I13.2
+ ;;^UTILITY(U,$J,358.3,5994,2)
+ ;;=^5007070
+ ;;^UTILITY(U,$J,358.3,5995,0)
+ ;;=I13.10^^39^428^11
+ ;;^UTILITY(U,$J,358.3,5995,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5995,1,3,0)
+ ;;=3^HTN Hrt Disease w/o Hrt Failure and CKD, Stage 1-4
+ ;;^UTILITY(U,$J,358.3,5995,1,4,0)
+ ;;=4^I13.10
+ ;;^UTILITY(U,$J,358.3,5995,2)
+ ;;=^5007068
+ ;;^UTILITY(U,$J,358.3,5996,0)
+ ;;=I13.11^^39^428^12
+ ;;^UTILITY(U,$J,358.3,5996,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5996,1,3,0)
+ ;;=3^HTN Hrt Disease w/o Hrt Failure and CKD,Stage 5 or ESRD
+ ;;^UTILITY(U,$J,358.3,5996,1,4,0)
+ ;;=4^I13.11
+ ;;^UTILITY(U,$J,358.3,5996,2)
+ ;;=^5007069
+ ;;^UTILITY(U,$J,358.3,5997,0)
+ ;;=I50.1^^39^428^15
+ ;;^UTILITY(U,$J,358.3,5997,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5997,1,3,0)
+ ;;=3^Left Ventricular Failure
+ ;;^UTILITY(U,$J,358.3,5997,1,4,0)
+ ;;=4^I50.1
+ ;;^UTILITY(U,$J,358.3,5997,2)
+ ;;=^5007238
+ ;;^UTILITY(U,$J,358.3,5998,0)
+ ;;=E21.3^^39^429^17
+ ;;^UTILITY(U,$J,358.3,5998,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5998,1,3,0)
+ ;;=3^Hyperparathyroidism,Unspec
+ ;;^UTILITY(U,$J,358.3,5998,1,4,0)
+ ;;=4^E21.3
+ ;;^UTILITY(U,$J,358.3,5998,2)
+ ;;=^331438
+ ;;^UTILITY(U,$J,358.3,5999,0)
+ ;;=E78.5^^39^429^16
+ ;;^UTILITY(U,$J,358.3,5999,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5999,1,3,0)
+ ;;=3^Hyperlipidemia,Unspec
+ ;;^UTILITY(U,$J,358.3,5999,1,4,0)
+ ;;=4^E78.5
+ ;;^UTILITY(U,$J,358.3,5999,2)
+ ;;=^5002969
+ ;;^UTILITY(U,$J,358.3,6000,0)
+ ;;=M10.30^^39^429^11
+ ;;^UTILITY(U,$J,358.3,6000,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6000,1,3,0)
+ ;;=3^Gout d/t Renal Impairment,Unspec Site
+ ;;^UTILITY(U,$J,358.3,6000,1,4,0)
+ ;;=4^M10.30
+ ;;^UTILITY(U,$J,358.3,6000,2)
+ ;;=^5010356
+ ;;^UTILITY(U,$J,358.3,6001,0)
+ ;;=E66.9^^39^429^33
+ ;;^UTILITY(U,$J,358.3,6001,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6001,1,3,0)
+ ;;=3^Obesity,Unspec
+ ;;^UTILITY(U,$J,358.3,6001,1,4,0)
+ ;;=4^E66.9
+ ;;^UTILITY(U,$J,358.3,6001,2)
+ ;;=^5002832
+ ;;^UTILITY(U,$J,358.3,6002,0)
+ ;;=E66.01^^39^429^32
+ ;;^UTILITY(U,$J,358.3,6002,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6002,1,3,0)
+ ;;=3^Obesity,Morbid,d/t Excess Calories
+ ;;^UTILITY(U,$J,358.3,6002,1,4,0)
+ ;;=4^E66.01
+ ;;^UTILITY(U,$J,358.3,6002,2)
+ ;;=^5002826
+ ;;^UTILITY(U,$J,358.3,6003,0)
+ ;;=D50.9^^39^429^2
+ ;;^UTILITY(U,$J,358.3,6003,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6003,1,3,0)
+ ;;=3^Anemia,Iron Deficiency,Unspec
+ ;;^UTILITY(U,$J,358.3,6003,1,4,0)
+ ;;=4^D50.9
+ ;;^UTILITY(U,$J,358.3,6003,2)
+ ;;=^5002283
+ ;;^UTILITY(U,$J,358.3,6004,0)
+ ;;=D63.1^^39^429^1
+ ;;^UTILITY(U,$J,358.3,6004,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6004,1,3,0)
+ ;;=3^Anemia in Chronic Kidney Disease
+ ;;^UTILITY(U,$J,358.3,6004,1,4,0)
+ ;;=4^D63.1
+ ;;^UTILITY(U,$J,358.3,6004,2)
+ ;;=^332908
+ ;;^UTILITY(U,$J,358.3,6005,0)
+ ;;=G60.9^^39^429^31
+ ;;^UTILITY(U,$J,358.3,6005,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,6005,1,3,0)
+ ;;=3^Neuropathy,Hereditary/Idiopathic,Unspec

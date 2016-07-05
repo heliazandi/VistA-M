@@ -1,132 +1,284 @@
-IBDEI0AB ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0AB ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,4297,0)
- ;;=W18.11XS^^28^264^20
- ;;^UTILITY(U,$J,358.3,4297,1,0)
+ ;;^UTILITY(U,$J,358.3,10316,1,4,0)
+ ;;=4^H52.201
+ ;;^UTILITY(U,$J,358.3,10316,2)
+ ;;=^5006267
+ ;;^UTILITY(U,$J,358.3,10317,0)
+ ;;=H52.202^^51^591^3
+ ;;^UTILITY(U,$J,358.3,10317,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4297,1,3,0)
- ;;=3^Fall from Toilet,Sequela
- ;;^UTILITY(U,$J,358.3,4297,1,4,0)
- ;;=4^W18.11XS
- ;;^UTILITY(U,$J,358.3,4297,2)
- ;;=^5059803
- ;;^UTILITY(U,$J,358.3,4298,0)
- ;;=W08.XXXS^^28^264^10
- ;;^UTILITY(U,$J,358.3,4298,1,0)
+ ;;^UTILITY(U,$J,358.3,10317,1,3,0)
+ ;;=3^Astigmatism,Left Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,10317,1,4,0)
+ ;;=4^H52.202
+ ;;^UTILITY(U,$J,358.3,10317,2)
+ ;;=^5006268
+ ;;^UTILITY(U,$J,358.3,10318,0)
+ ;;=H52.31^^51^591^2
+ ;;^UTILITY(U,$J,358.3,10318,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4298,1,3,0)
- ;;=3^Fall from Furniture,Sequela
- ;;^UTILITY(U,$J,358.3,4298,1,4,0)
- ;;=4^W08.XXXS
- ;;^UTILITY(U,$J,358.3,4298,2)
- ;;=^5059567
- ;;^UTILITY(U,$J,358.3,4299,0)
- ;;=W18.2XXS^^28^264^21
- ;;^UTILITY(U,$J,358.3,4299,1,0)
+ ;;^UTILITY(U,$J,358.3,10318,1,3,0)
+ ;;=3^Anisometropia
+ ;;^UTILITY(U,$J,358.3,10318,1,4,0)
+ ;;=4^H52.31
+ ;;^UTILITY(U,$J,358.3,10318,2)
+ ;;=^7839
+ ;;^UTILITY(U,$J,358.3,10319,0)
+ ;;=H53.021^^51^591^26
+ ;;^UTILITY(U,$J,358.3,10319,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4299,1,3,0)
- ;;=3^Fall in Shower/Bathtub,Sequela
- ;;^UTILITY(U,$J,358.3,4299,1,4,0)
- ;;=4^W18.2XXS
- ;;^UTILITY(U,$J,358.3,4299,2)
- ;;=^5059808
- ;;^UTILITY(U,$J,358.3,4300,0)
- ;;=W11.XXXS^^28^264^12
- ;;^UTILITY(U,$J,358.3,4300,1,0)
+ ;;^UTILITY(U,$J,358.3,10319,1,3,0)
+ ;;=3^Refractive Amblyopia,Right Eye
+ ;;^UTILITY(U,$J,358.3,10319,1,4,0)
+ ;;=4^H53.021
+ ;;^UTILITY(U,$J,358.3,10319,2)
+ ;;=^5006299
+ ;;^UTILITY(U,$J,358.3,10320,0)
+ ;;=H53.022^^51^591^25
+ ;;^UTILITY(U,$J,358.3,10320,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4300,1,3,0)
- ;;=3^Fall from Ladder,Sequela
- ;;^UTILITY(U,$J,358.3,4300,1,4,0)
- ;;=4^W11.XXXS
- ;;^UTILITY(U,$J,358.3,4300,2)
- ;;=^5059597
- ;;^UTILITY(U,$J,358.3,4301,0)
- ;;=W01.10XS^^28^264^2
- ;;^UTILITY(U,$J,358.3,4301,1,0)
+ ;;^UTILITY(U,$J,358.3,10320,1,3,0)
+ ;;=3^Refractive Amblyopia,Left Eye
+ ;;^UTILITY(U,$J,358.3,10320,1,4,0)
+ ;;=4^H53.022
+ ;;^UTILITY(U,$J,358.3,10320,2)
+ ;;=^5006300
+ ;;^UTILITY(U,$J,358.3,10321,0)
+ ;;=H53.31^^51^591^1
+ ;;^UTILITY(U,$J,358.3,10321,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4301,1,3,0)
- ;;=3^Fall Same Level w/ Strike Against Object,Sequela
- ;;^UTILITY(U,$J,358.3,4301,1,4,0)
- ;;=4^W01.10XS
- ;;^UTILITY(U,$J,358.3,4301,2)
- ;;=^5059527
- ;;^UTILITY(U,$J,358.3,4302,0)
- ;;=W01.0XXS^^28^264^3
- ;;^UTILITY(U,$J,358.3,4302,1,0)
+ ;;^UTILITY(U,$J,358.3,10321,1,3,0)
+ ;;=3^Abnormal Retinal Correspondence
+ ;;^UTILITY(U,$J,358.3,10321,1,4,0)
+ ;;=4^H53.31
+ ;;^UTILITY(U,$J,358.3,10321,2)
+ ;;=^268844
+ ;;^UTILITY(U,$J,358.3,10322,0)
+ ;;=H53.30^^51^591^5
+ ;;^UTILITY(U,$J,358.3,10322,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4302,1,3,0)
- ;;=3^Fall Same Level w/o Strike Against Object,Sequela
- ;;^UTILITY(U,$J,358.3,4302,1,4,0)
- ;;=4^W01.0XXS
- ;;^UTILITY(U,$J,358.3,4302,2)
- ;;=^5059524
- ;;^UTILITY(U,$J,358.3,4303,0)
- ;;=W18.30XS^^28^264^22
- ;;^UTILITY(U,$J,358.3,4303,1,0)
+ ;;^UTILITY(U,$J,358.3,10322,1,3,0)
+ ;;=3^Binocular Vision Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,10322,1,4,0)
+ ;;=4^H53.30
+ ;;^UTILITY(U,$J,358.3,10322,2)
+ ;;=^5006322
+ ;;^UTILITY(U,$J,358.3,10323,0)
+ ;;=H53.481^^51^591^6
+ ;;^UTILITY(U,$J,358.3,10323,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4303,1,3,0)
- ;;=3^Fall on Same Level,Unspec,Sequela
- ;;^UTILITY(U,$J,358.3,4303,1,4,0)
- ;;=4^W18.30XS
- ;;^UTILITY(U,$J,358.3,4303,2)
- ;;=^5059811
- ;;^UTILITY(U,$J,358.3,4304,0)
- ;;=W04.XXXS^^28^264^4
- ;;^UTILITY(U,$J,358.3,4304,1,0)
+ ;;^UTILITY(U,$J,358.3,10323,1,3,0)
+ ;;=3^Contraction of Visual Field,Generalized,Right Eye
+ ;;^UTILITY(U,$J,358.3,10323,1,4,0)
+ ;;=4^H53.481
+ ;;^UTILITY(U,$J,358.3,10323,2)
+ ;;=^5006344
+ ;;^UTILITY(U,$J,358.3,10324,0)
+ ;;=H53.482^^51^591^7
+ ;;^UTILITY(U,$J,358.3,10324,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4304,1,3,0)
- ;;=3^Fall While Being Carried by Oth Persons,Sequela
- ;;^UTILITY(U,$J,358.3,4304,1,4,0)
- ;;=4^W04.XXXS
- ;;^UTILITY(U,$J,358.3,4304,2)
- ;;=^5059549
- ;;^UTILITY(U,$J,358.3,4305,0)
- ;;=W17.89XS^^28^264^16
- ;;^UTILITY(U,$J,358.3,4305,1,0)
+ ;;^UTILITY(U,$J,358.3,10324,1,3,0)
+ ;;=3^Contraction of Visual Field,Generalized,Left Eye
+ ;;^UTILITY(U,$J,358.3,10324,1,4,0)
+ ;;=4^H53.482
+ ;;^UTILITY(U,$J,358.3,10324,2)
+ ;;=^5006345
+ ;;^UTILITY(U,$J,358.3,10325,0)
+ ;;=H53.483^^51^591^8
+ ;;^UTILITY(U,$J,358.3,10325,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4305,1,3,0)
- ;;=3^Fall from One Level to Another,Sequela
- ;;^UTILITY(U,$J,358.3,4305,1,4,0)
- ;;=4^W17.89XS
- ;;^UTILITY(U,$J,358.3,4305,2)
- ;;=^5059789
- ;;^UTILITY(U,$J,358.3,4306,0)
- ;;=W03.XXXS^^28^264^1
- ;;^UTILITY(U,$J,358.3,4306,1,0)
+ ;;^UTILITY(U,$J,358.3,10325,1,3,0)
+ ;;=3^Contraction of Visual Field,Generalized,Bilateral
+ ;;^UTILITY(U,$J,358.3,10325,1,4,0)
+ ;;=4^H53.483
+ ;;^UTILITY(U,$J,358.3,10325,2)
+ ;;=^5006346
+ ;;^UTILITY(U,$J,358.3,10326,0)
+ ;;=H51.12^^51^591^9
+ ;;^UTILITY(U,$J,358.3,10326,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4306,1,3,0)
- ;;=3^Fall Same Level d/t Collision w/ Another Person,Sequela
- ;;^UTILITY(U,$J,358.3,4306,1,4,0)
- ;;=4^W03.XXXS
- ;;^UTILITY(U,$J,358.3,4306,2)
- ;;=^5059546
- ;;^UTILITY(U,$J,358.3,4307,0)
- ;;=W18.00XS^^28^264^6
- ;;^UTILITY(U,$J,358.3,4307,1,0)
+ ;;^UTILITY(U,$J,358.3,10326,1,3,0)
+ ;;=3^Convergence Excess
+ ;;^UTILITY(U,$J,358.3,10326,1,4,0)
+ ;;=4^H51.12
+ ;;^UTILITY(U,$J,358.3,10326,2)
+ ;;=^5006252
+ ;;^UTILITY(U,$J,358.3,10327,0)
+ ;;=H51.11^^51^591^10
+ ;;^UTILITY(U,$J,358.3,10327,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4307,1,3,0)
- ;;=3^Fall d/t Striking Unspec Object,Sequela
- ;;^UTILITY(U,$J,358.3,4307,1,4,0)
- ;;=4^W18.00XS
- ;;^UTILITY(U,$J,358.3,4307,2)
- ;;=^5059792
- ;;^UTILITY(U,$J,358.3,4308,0)
- ;;=W00.9XXS^^28^264^5
- ;;^UTILITY(U,$J,358.3,4308,1,0)
+ ;;^UTILITY(U,$J,358.3,10327,1,3,0)
+ ;;=3^Convergence Insufficiency
+ ;;^UTILITY(U,$J,358.3,10327,1,4,0)
+ ;;=4^H51.11
+ ;;^UTILITY(U,$J,358.3,10327,2)
+ ;;=^5006251
+ ;;^UTILITY(U,$J,358.3,10328,0)
+ ;;=H52.03^^51^591^11
+ ;;^UTILITY(U,$J,358.3,10328,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4308,1,3,0)
- ;;=3^Fall d/t Snow/Ice,Sequela
- ;;^UTILITY(U,$J,358.3,4308,1,4,0)
- ;;=4^W00.9XXS
- ;;^UTILITY(U,$J,358.3,4308,2)
- ;;=^5059521
- ;;^UTILITY(U,$J,358.3,4309,0)
- ;;=W18.40XS^^28^264^23
- ;;^UTILITY(U,$J,358.3,4309,1,0)
+ ;;^UTILITY(U,$J,358.3,10328,1,3,0)
+ ;;=3^Hypermetropia,Bilateral
+ ;;^UTILITY(U,$J,358.3,10328,1,4,0)
+ ;;=4^H52.03
+ ;;^UTILITY(U,$J,358.3,10328,2)
+ ;;=^5006262
+ ;;^UTILITY(U,$J,358.3,10329,0)
+ ;;=H55.89^^51^591^14
+ ;;^UTILITY(U,$J,358.3,10329,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4309,1,3,0)
- ;;=3^Slip/Trip/Stumble w/o Falling,Sequela
- ;;^UTILITY(U,$J,358.3,4309,1,4,0)
- ;;=4^W18.40XS
+ ;;^UTILITY(U,$J,358.3,10329,1,3,0)
+ ;;=3^Irregular Eye Movements NEC
+ ;;^UTILITY(U,$J,358.3,10329,1,4,0)
+ ;;=4^H55.89
+ ;;^UTILITY(U,$J,358.3,10329,2)
+ ;;=^5006374
+ ;;^UTILITY(U,$J,358.3,10330,0)
+ ;;=H53.62^^51^591^19
+ ;;^UTILITY(U,$J,358.3,10330,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10330,1,3,0)
+ ;;=3^Night Blindness,Acquired
+ ;;^UTILITY(U,$J,358.3,10330,1,4,0)
+ ;;=4^H53.62
+ ;;^UTILITY(U,$J,358.3,10330,2)
+ ;;=^265401
+ ;;^UTILITY(U,$J,358.3,10331,0)
+ ;;=H53.63^^51^591^20
+ ;;^UTILITY(U,$J,358.3,10331,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10331,1,3,0)
+ ;;=3^Night Blindness,Congenital
+ ;;^UTILITY(U,$J,358.3,10331,1,4,0)
+ ;;=4^H53.63
+ ;;^UTILITY(U,$J,358.3,10331,2)
+ ;;=^265396
+ ;;^UTILITY(U,$J,358.3,10332,0)
+ ;;=H53.69^^51^591^18
+ ;;^UTILITY(U,$J,358.3,10332,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10332,1,3,0)
+ ;;=3^Night Blindness NEC
+ ;;^UTILITY(U,$J,358.3,10332,1,4,0)
+ ;;=4^H53.69
+ ;;^UTILITY(U,$J,358.3,10332,2)
+ ;;=^87726
+ ;;^UTILITY(U,$J,358.3,10333,0)
+ ;;=H52.521^^51^591^23
+ ;;^UTILITY(U,$J,358.3,10333,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10333,1,3,0)
+ ;;=3^Paresis of Accommodation,Right eye
+ ;;^UTILITY(U,$J,358.3,10333,1,4,0)
+ ;;=4^H52.521
+ ;;^UTILITY(U,$J,358.3,10333,2)
+ ;;=^5006282
+ ;;^UTILITY(U,$J,358.3,10334,0)
+ ;;=H52.522^^51^591^22
+ ;;^UTILITY(U,$J,358.3,10334,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10334,1,3,0)
+ ;;=3^Paresis of Accommodation,Left Eye
+ ;;^UTILITY(U,$J,358.3,10334,1,4,0)
+ ;;=4^H52.522
+ ;;^UTILITY(U,$J,358.3,10334,2)
+ ;;=^5006283
+ ;;^UTILITY(U,$J,358.3,10335,0)
+ ;;=H52.523^^51^591^21
+ ;;^UTILITY(U,$J,358.3,10335,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10335,1,3,0)
+ ;;=3^Paresis of Accommodation,Bilateral
+ ;;^UTILITY(U,$J,358.3,10335,1,4,0)
+ ;;=4^H52.523
+ ;;^UTILITY(U,$J,358.3,10335,2)
+ ;;=^5006284
+ ;;^UTILITY(U,$J,358.3,10336,0)
+ ;;=Z87.820^^51^591^24
+ ;;^UTILITY(U,$J,358.3,10336,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10336,1,3,0)
+ ;;=3^Personal Hx of Traumatic Brain Injury
+ ;;^UTILITY(U,$J,358.3,10336,1,4,0)
+ ;;=4^Z87.820
+ ;;^UTILITY(U,$J,358.3,10336,2)
+ ;;=^5063514
+ ;;^UTILITY(U,$J,358.3,10337,0)
+ ;;=H55.81^^51^591^27
+ ;;^UTILITY(U,$J,358.3,10337,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10337,1,3,0)
+ ;;=3^Saccadic Eye Movements
+ ;;^UTILITY(U,$J,358.3,10337,1,4,0)
+ ;;=4^H55.81
+ ;;^UTILITY(U,$J,358.3,10337,2)
+ ;;=^5006373
+ ;;^UTILITY(U,$J,358.3,10338,0)
+ ;;=H53.423^^51^591^28
+ ;;^UTILITY(U,$J,358.3,10338,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10338,1,3,0)
+ ;;=3^Scotoma Involving Blind Spot,Bilateral
+ ;;^UTILITY(U,$J,358.3,10338,1,4,0)
+ ;;=4^H53.423
+ ;;^UTILITY(U,$J,358.3,10338,2)
+ ;;=^5006331
+ ;;^UTILITY(U,$J,358.3,10339,0)
+ ;;=H53.421^^51^591^30
+ ;;^UTILITY(U,$J,358.3,10339,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10339,1,3,0)
+ ;;=3^Scotoma Involving Blind Spot,Right Eye
+ ;;^UTILITY(U,$J,358.3,10339,1,4,0)
+ ;;=4^H53.421
+ ;;^UTILITY(U,$J,358.3,10339,2)
+ ;;=^5006329
+ ;;^UTILITY(U,$J,358.3,10340,0)
+ ;;=H53.422^^51^591^29
+ ;;^UTILITY(U,$J,358.3,10340,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10340,1,3,0)
+ ;;=3^Scotoma Involving Blind Spot,Left Eye
+ ;;^UTILITY(U,$J,358.3,10340,1,4,0)
+ ;;=4^H53.422
+ ;;^UTILITY(U,$J,358.3,10340,2)
+ ;;=^5006330
+ ;;^UTILITY(U,$J,358.3,10341,0)
+ ;;=H53.413^^51^591^31
+ ;;^UTILITY(U,$J,358.3,10341,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10341,1,3,0)
+ ;;=3^Scotoma Involving Central Area,Bilateral
+ ;;^UTILITY(U,$J,358.3,10341,1,4,0)
+ ;;=4^H53.413
+ ;;^UTILITY(U,$J,358.3,10341,2)
+ ;;=^5006327
+ ;;^UTILITY(U,$J,358.3,10342,0)
+ ;;=H53.411^^51^591^33
+ ;;^UTILITY(U,$J,358.3,10342,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10342,1,3,0)
+ ;;=3^Scotoma Involving Central Area,Right Eye
+ ;;^UTILITY(U,$J,358.3,10342,1,4,0)
+ ;;=4^H53.411
+ ;;^UTILITY(U,$J,358.3,10342,2)
+ ;;=^5006325
+ ;;^UTILITY(U,$J,358.3,10343,0)
+ ;;=H53.412^^51^591^32
+ ;;^UTILITY(U,$J,358.3,10343,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10343,1,3,0)
+ ;;=3^Scotoma Involving Central Area,Left Eye
+ ;;^UTILITY(U,$J,358.3,10343,1,4,0)
+ ;;=4^H53.412
+ ;;^UTILITY(U,$J,358.3,10343,2)
+ ;;=^5006326
+ ;;^UTILITY(U,$J,358.3,10344,0)
+ ;;=H53.33^^51^591^34
+ ;;^UTILITY(U,$J,358.3,10344,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10344,1,3,0)
+ ;;=3^Simultaneous Visual Perception w/o Fusion

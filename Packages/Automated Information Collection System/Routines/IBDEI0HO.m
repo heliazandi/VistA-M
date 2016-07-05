@@ -1,126 +1,288 @@
-IBDEI0HO ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0HO ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7918,1,3,0)
- ;;=3^Non-prs chr ulc unsp prt of r low leg limited to brkdwn skin
- ;;^UTILITY(U,$J,358.3,7918,1,4,0)
- ;;=4^L97.911
- ;;^UTILITY(U,$J,358.3,7918,2)
- ;;=^5133679
- ;;^UTILITY(U,$J,358.3,7919,0)
- ;;=L97.112^^55^531^102
- ;;^UTILITY(U,$J,358.3,7919,1,0)
+ ;;^UTILITY(U,$J,358.3,17765,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7919,1,3,0)
- ;;=3^Non-prs chr ulcer of right thigh w fat layer exposed
- ;;^UTILITY(U,$J,358.3,7919,1,4,0)
- ;;=4^L97.112
- ;;^UTILITY(U,$J,358.3,7919,2)
- ;;=^5009486
- ;;^UTILITY(U,$J,358.3,7920,0)
- ;;=L97.111^^55^531^101
- ;;^UTILITY(U,$J,358.3,7920,1,0)
+ ;;^UTILITY(U,$J,358.3,17765,1,3,0)
+ ;;=3^Asymptomatic Menopausal State
+ ;;^UTILITY(U,$J,358.3,17765,1,4,0)
+ ;;=4^Z78.0
+ ;;^UTILITY(U,$J,358.3,17765,2)
+ ;;=^5063327
+ ;;^UTILITY(U,$J,358.3,17766,0)
+ ;;=Z74.01^^78^922^3
+ ;;^UTILITY(U,$J,358.3,17766,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7920,1,3,0)
- ;;=3^Non-prs chr ulcer of right thigh limited to brkdwn skin
- ;;^UTILITY(U,$J,358.3,7920,1,4,0)
- ;;=4^L97.111
- ;;^UTILITY(U,$J,358.3,7920,2)
- ;;=^5009485
- ;;^UTILITY(U,$J,358.3,7921,0)
- ;;=L97.124^^55^531^83
- ;;^UTILITY(U,$J,358.3,7921,1,0)
+ ;;^UTILITY(U,$J,358.3,17766,1,3,0)
+ ;;=3^Bed Confinement Status
+ ;;^UTILITY(U,$J,358.3,17766,1,4,0)
+ ;;=4^Z74.01
+ ;;^UTILITY(U,$J,358.3,17766,2)
+ ;;=^5063282
+ ;;^UTILITY(U,$J,358.3,17767,0)
+ ;;=Z73.82^^78^922^5
+ ;;^UTILITY(U,$J,358.3,17767,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7921,1,3,0)
- ;;=3^Non-prs chr ulcer of left thigh w necrosis of bone
- ;;^UTILITY(U,$J,358.3,7921,1,4,0)
- ;;=4^L97.124
- ;;^UTILITY(U,$J,358.3,7921,2)
- ;;=^5009493
- ;;^UTILITY(U,$J,358.3,7922,0)
- ;;=L97.129^^55^531^85
- ;;^UTILITY(U,$J,358.3,7922,1,0)
+ ;;^UTILITY(U,$J,358.3,17767,1,3,0)
+ ;;=3^Dual Sensory Impairment
+ ;;^UTILITY(U,$J,358.3,17767,1,4,0)
+ ;;=4^Z73.82
+ ;;^UTILITY(U,$J,358.3,17767,2)
+ ;;=^5063279
+ ;;^UTILITY(U,$J,358.3,17768,0)
+ ;;=Z66.^^78^922^4
+ ;;^UTILITY(U,$J,358.3,17768,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7922,1,3,0)
- ;;=3^Non-prs chr ulcer of left thigh with unsp severity
- ;;^UTILITY(U,$J,358.3,7922,1,4,0)
- ;;=4^L97.129
- ;;^UTILITY(U,$J,358.3,7922,2)
- ;;=^5009494
- ;;^UTILITY(U,$J,358.3,7923,0)
- ;;=L97.123^^55^531^84
- ;;^UTILITY(U,$J,358.3,7923,1,0)
+ ;;^UTILITY(U,$J,358.3,17768,1,3,0)
+ ;;=3^Do Not Resuscitate
+ ;;^UTILITY(U,$J,358.3,17768,1,4,0)
+ ;;=4^Z66.
+ ;;^UTILITY(U,$J,358.3,17768,2)
+ ;;=^5063187
+ ;;^UTILITY(U,$J,358.3,17769,0)
+ ;;=Z78.1^^78^922^7
+ ;;^UTILITY(U,$J,358.3,17769,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7923,1,3,0)
- ;;=3^Non-prs chr ulcer of left thigh w necrosis of muscle
- ;;^UTILITY(U,$J,358.3,7923,1,4,0)
- ;;=4^L97.123
- ;;^UTILITY(U,$J,358.3,7923,2)
- ;;=^5009492
- ;;^UTILITY(U,$J,358.3,7924,0)
- ;;=L97.113^^55^531^103
- ;;^UTILITY(U,$J,358.3,7924,1,0)
+ ;;^UTILITY(U,$J,358.3,17769,1,3,0)
+ ;;=3^Physical Restraint Status
+ ;;^UTILITY(U,$J,358.3,17769,1,4,0)
+ ;;=4^Z78.1
+ ;;^UTILITY(U,$J,358.3,17769,2)
+ ;;=^5063328
+ ;;^UTILITY(U,$J,358.3,17770,0)
+ ;;=Z87.898^^78^922^6
+ ;;^UTILITY(U,$J,358.3,17770,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7924,1,3,0)
- ;;=3^Non-prs chr ulcer of right thigh w necrosis of muscle
- ;;^UTILITY(U,$J,358.3,7924,1,4,0)
- ;;=4^L97.113
- ;;^UTILITY(U,$J,358.3,7924,2)
- ;;=^5009487
- ;;^UTILITY(U,$J,358.3,7925,0)
- ;;=L97.114^^55^531^104
- ;;^UTILITY(U,$J,358.3,7925,1,0)
+ ;;^UTILITY(U,$J,358.3,17770,1,3,0)
+ ;;=3^Personal Hx of Oth Spec Conditions
+ ;;^UTILITY(U,$J,358.3,17770,1,4,0)
+ ;;=4^Z87.898
+ ;;^UTILITY(U,$J,358.3,17770,2)
+ ;;=^5063520
+ ;;^UTILITY(U,$J,358.3,17771,0)
+ ;;=Z63.32^^78^923^1
+ ;;^UTILITY(U,$J,358.3,17771,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7925,1,3,0)
- ;;=3^Non-prs chr ulcer of right thigh w necrosis of bone
- ;;^UTILITY(U,$J,358.3,7925,1,4,0)
- ;;=4^L97.114
- ;;^UTILITY(U,$J,358.3,7925,2)
- ;;=^5009488
- ;;^UTILITY(U,$J,358.3,7926,0)
- ;;=L97.119^^55^531^105
- ;;^UTILITY(U,$J,358.3,7926,1,0)
+ ;;^UTILITY(U,$J,358.3,17771,1,3,0)
+ ;;=3^Absence of Family Member
+ ;;^UTILITY(U,$J,358.3,17771,1,4,0)
+ ;;=4^Z63.32
+ ;;^UTILITY(U,$J,358.3,17771,2)
+ ;;=^5063167
+ ;;^UTILITY(U,$J,358.3,17772,0)
+ ;;=Z63.8^^78^923^10
+ ;;^UTILITY(U,$J,358.3,17772,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7926,1,3,0)
- ;;=3^Non-prs chr ulcer of right thigh with unsp severity
- ;;^UTILITY(U,$J,358.3,7926,1,4,0)
- ;;=4^L97.119
- ;;^UTILITY(U,$J,358.3,7926,2)
- ;;=^5009489
- ;;^UTILITY(U,$J,358.3,7927,0)
- ;;=L97.121^^55^531^81
- ;;^UTILITY(U,$J,358.3,7927,1,0)
+ ;;^UTILITY(U,$J,358.3,17772,1,3,0)
+ ;;=3^Primary Support Group Problems
+ ;;^UTILITY(U,$J,358.3,17772,1,4,0)
+ ;;=4^Z63.8
+ ;;^UTILITY(U,$J,358.3,17772,2)
+ ;;=^5063174
+ ;;^UTILITY(U,$J,358.3,17773,0)
+ ;;=Z63.5^^78^923^4
+ ;;^UTILITY(U,$J,358.3,17773,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7927,1,3,0)
- ;;=3^Non-prs chr ulcer of left thigh limited to brkdwn skin
- ;;^UTILITY(U,$J,358.3,7927,1,4,0)
- ;;=4^L97.121
- ;;^UTILITY(U,$J,358.3,7927,2)
- ;;=^5009490
- ;;^UTILITY(U,$J,358.3,7928,0)
- ;;=L97.122^^55^531^82
- ;;^UTILITY(U,$J,358.3,7928,1,0)
+ ;;^UTILITY(U,$J,358.3,17773,1,3,0)
+ ;;=3^Disruption of Family by Separation/Divorce
+ ;;^UTILITY(U,$J,358.3,17773,1,4,0)
+ ;;=4^Z63.5
+ ;;^UTILITY(U,$J,358.3,17773,2)
+ ;;=^5063169
+ ;;^UTILITY(U,$J,358.3,17774,0)
+ ;;=Z71.89^^78^923^5
+ ;;^UTILITY(U,$J,358.3,17774,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7928,1,3,0)
- ;;=3^Non-prs chr ulcer of left thigh w fat layer exposed
- ;;^UTILITY(U,$J,358.3,7928,1,4,0)
- ;;=4^L97.122
- ;;^UTILITY(U,$J,358.3,7928,2)
- ;;=^5009491
- ;;^UTILITY(U,$J,358.3,7929,0)
- ;;=L97.223^^55^531^73
- ;;^UTILITY(U,$J,358.3,7929,1,0)
+ ;;^UTILITY(U,$J,358.3,17774,1,3,0)
+ ;;=3^Family Counseling
+ ;;^UTILITY(U,$J,358.3,17774,1,4,0)
+ ;;=4^Z71.89
+ ;;^UTILITY(U,$J,358.3,17774,2)
+ ;;=^5063253
+ ;;^UTILITY(U,$J,358.3,17775,0)
+ ;;=Z69.11^^78^923^9
+ ;;^UTILITY(U,$J,358.3,17775,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7929,1,3,0)
- ;;=3^Non-prs chr ulcer of left calf w necrosis of muscle
- ;;^UTILITY(U,$J,358.3,7929,1,4,0)
- ;;=4^L97.223
- ;;^UTILITY(U,$J,358.3,7929,2)
- ;;=^5009507
- ;;^UTILITY(U,$J,358.3,7930,0)
- ;;=L97.222^^55^531^72
- ;;^UTILITY(U,$J,358.3,7930,1,0)
+ ;;^UTILITY(U,$J,358.3,17775,1,3,0)
+ ;;=3^Mental Hlth Svc for Victim of Spousal/Partner Abuse
+ ;;^UTILITY(U,$J,358.3,17775,1,4,0)
+ ;;=4^Z69.11
+ ;;^UTILITY(U,$J,358.3,17775,2)
+ ;;=^5063232
+ ;;^UTILITY(U,$J,358.3,17776,0)
+ ;;=Z69.12^^78^923^7
+ ;;^UTILITY(U,$J,358.3,17776,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7930,1,3,0)
- ;;=3^Non-prs chr ulcer of left calf w fat layer exposed
+ ;;^UTILITY(U,$J,358.3,17776,1,3,0)
+ ;;=3^Mental Hlth Svc for Perpetrator of Spousal/Partner Abuse
+ ;;^UTILITY(U,$J,358.3,17776,1,4,0)
+ ;;=4^Z69.12
+ ;;^UTILITY(U,$J,358.3,17776,2)
+ ;;=^5063233
+ ;;^UTILITY(U,$J,358.3,17777,0)
+ ;;=Z69.010^^78^923^8
+ ;;^UTILITY(U,$J,358.3,17777,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17777,1,3,0)
+ ;;=3^Mental Hlth Svc for Victim of Parental Child Abuse
+ ;;^UTILITY(U,$J,358.3,17777,1,4,0)
+ ;;=4^Z69.010
+ ;;^UTILITY(U,$J,358.3,17777,2)
+ ;;=^5063228
+ ;;^UTILITY(U,$J,358.3,17778,0)
+ ;;=Z69.011^^78^923^6
+ ;;^UTILITY(U,$J,358.3,17778,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17778,1,3,0)
+ ;;=3^Mental Hlth Svc for Perpetrator of Parental Child Abuse
+ ;;^UTILITY(U,$J,358.3,17778,1,4,0)
+ ;;=4^Z69.011
+ ;;^UTILITY(U,$J,358.3,17778,2)
+ ;;=^5063229
+ ;;^UTILITY(U,$J,358.3,17779,0)
+ ;;=Z62.898^^78^923^11
+ ;;^UTILITY(U,$J,358.3,17779,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17779,1,3,0)
+ ;;=3^Problems Related to Upbringing
+ ;;^UTILITY(U,$J,358.3,17779,1,4,0)
+ ;;=4^Z62.898
+ ;;^UTILITY(U,$J,358.3,17779,2)
+ ;;=^5063162
+ ;;^UTILITY(U,$J,358.3,17780,0)
+ ;;=Z63.79^^78^923^12
+ ;;^UTILITY(U,$J,358.3,17780,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17780,1,3,0)
+ ;;=3^Stressful Life Events
+ ;;^UTILITY(U,$J,358.3,17780,1,4,0)
+ ;;=4^Z63.79
+ ;;^UTILITY(U,$J,358.3,17780,2)
+ ;;=^5063173
+ ;;^UTILITY(U,$J,358.3,17781,0)
+ ;;=Z63.72^^78^923^2
+ ;;^UTILITY(U,$J,358.3,17781,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17781,1,3,0)
+ ;;=3^Alcoholism/Drug Addiction in Family
+ ;;^UTILITY(U,$J,358.3,17781,1,4,0)
+ ;;=4^Z63.72
+ ;;^UTILITY(U,$J,358.3,17781,2)
+ ;;=^5063172
+ ;;^UTILITY(U,$J,358.3,17782,0)
+ ;;=Z63.6^^78^923^3
+ ;;^UTILITY(U,$J,358.3,17782,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17782,1,3,0)
+ ;;=3^Dependent Relative Needing Care at Home
+ ;;^UTILITY(U,$J,358.3,17782,1,4,0)
+ ;;=4^Z63.6
+ ;;^UTILITY(U,$J,358.3,17782,2)
+ ;;=^5063170
+ ;;^UTILITY(U,$J,358.3,17783,0)
+ ;;=Z59.0^^78^924^4
+ ;;^UTILITY(U,$J,358.3,17783,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17783,1,3,0)
+ ;;=3^Homelessness
+ ;;^UTILITY(U,$J,358.3,17783,1,4,0)
+ ;;=4^Z59.0
+ ;;^UTILITY(U,$J,358.3,17783,2)
+ ;;=^5063129
+ ;;^UTILITY(U,$J,358.3,17784,0)
+ ;;=Z59.1^^78^924^6
+ ;;^UTILITY(U,$J,358.3,17784,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17784,1,3,0)
+ ;;=3^Inadequate Housing
+ ;;^UTILITY(U,$J,358.3,17784,1,4,0)
+ ;;=4^Z59.1
+ ;;^UTILITY(U,$J,358.3,17784,2)
+ ;;=^5063130
+ ;;^UTILITY(U,$J,358.3,17785,0)
+ ;;=Z59.5^^78^924^2
+ ;;^UTILITY(U,$J,358.3,17785,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17785,1,3,0)
+ ;;=3^Extreme Poverty
+ ;;^UTILITY(U,$J,358.3,17785,1,4,0)
+ ;;=4^Z59.5
+ ;;^UTILITY(U,$J,358.3,17785,2)
+ ;;=^5063134
+ ;;^UTILITY(U,$J,358.3,17786,0)
+ ;;=Z60.2^^78^924^8
+ ;;^UTILITY(U,$J,358.3,17786,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17786,1,3,0)
+ ;;=3^Problems Related to Living Alone
+ ;;^UTILITY(U,$J,358.3,17786,1,4,0)
+ ;;=4^Z60.2
+ ;;^UTILITY(U,$J,358.3,17786,2)
+ ;;=^5063140
+ ;;^UTILITY(U,$J,358.3,17787,0)
+ ;;=Z74.2^^78^924^1
+ ;;^UTILITY(U,$J,358.3,17787,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17787,1,3,0)
+ ;;=3^Assistance at Home Needed
+ ;;^UTILITY(U,$J,358.3,17787,1,4,0)
+ ;;=4^Z74.2
+ ;;^UTILITY(U,$J,358.3,17787,2)
+ ;;=^5063285
+ ;;^UTILITY(U,$J,358.3,17788,0)
+ ;;=Z75.5^^78^924^3
+ ;;^UTILITY(U,$J,358.3,17788,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17788,1,3,0)
+ ;;=3^Holiday Relief Care
+ ;;^UTILITY(U,$J,358.3,17788,1,4,0)
+ ;;=4^Z75.5
+ ;;^UTILITY(U,$J,358.3,17788,2)
+ ;;=^5063294
+ ;;^UTILITY(U,$J,358.3,17789,0)
+ ;;=Z59.3^^78^924^9
+ ;;^UTILITY(U,$J,358.3,17789,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17789,1,3,0)
+ ;;=3^Problems Related to Living in Residential Institution
+ ;;^UTILITY(U,$J,358.3,17789,1,4,0)
+ ;;=4^Z59.3
+ ;;^UTILITY(U,$J,358.3,17789,2)
+ ;;=^5063132
+ ;;^UTILITY(U,$J,358.3,17790,0)
+ ;;=Z63.8^^78^924^7
+ ;;^UTILITY(U,$J,358.3,17790,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17790,1,3,0)
+ ;;=3^Primary Support Group Problems
+ ;;^UTILITY(U,$J,358.3,17790,1,4,0)
+ ;;=4^Z63.8
+ ;;^UTILITY(U,$J,358.3,17790,2)
+ ;;=^5063174
+ ;;^UTILITY(U,$J,358.3,17791,0)
+ ;;=Z59.8^^78^924^5
+ ;;^UTILITY(U,$J,358.3,17791,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17791,1,3,0)
+ ;;=3^Housing/Economic Circumstance Problems
+ ;;^UTILITY(U,$J,358.3,17791,1,4,0)
+ ;;=4^Z59.8
+ ;;^UTILITY(U,$J,358.3,17791,2)
+ ;;=^5063137
+ ;;^UTILITY(U,$J,358.3,17792,0)
+ ;;=F81.9^^78^925^2
+ ;;^UTILITY(U,$J,358.3,17792,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17792,1,3,0)
+ ;;=3^Developmental Disorder of Scholastic Skills,Unspec
+ ;;^UTILITY(U,$J,358.3,17792,1,4,0)
+ ;;=4^F81.9
+ ;;^UTILITY(U,$J,358.3,17792,2)
+ ;;=^5003682
+ ;;^UTILITY(U,$J,358.3,17793,0)
+ ;;=Z86.59^^78^925^4
+ ;;^UTILITY(U,$J,358.3,17793,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17793,1,3,0)
+ ;;=3^Personal Hx of Mental/Behavioral Disorders

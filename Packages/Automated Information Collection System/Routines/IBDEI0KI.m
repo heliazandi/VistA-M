@@ -1,124 +1,292 @@
-IBDEI0KI ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0KI ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,9271,1,3,0)
- ;;=3^Absence Seizures Not Intractable w/ Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9271,1,4,0)
- ;;=4^G40.A01
- ;;^UTILITY(U,$J,358.3,9271,2)
- ;;=^5003868
- ;;^UTILITY(U,$J,358.3,9272,0)
- ;;=G40.A09^^61^588^4
- ;;^UTILITY(U,$J,358.3,9272,1,0)
+ ;;^UTILITY(U,$J,358.3,20670,2)
+ ;;=^5019284
+ ;;^UTILITY(U,$J,358.3,20671,0)
+ ;;=R22.1^^86^1006^108
+ ;;^UTILITY(U,$J,358.3,20671,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9272,1,3,0)
- ;;=3^Absence Seizures Not Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9272,1,4,0)
- ;;=4^G40.A09
- ;;^UTILITY(U,$J,358.3,9272,2)
- ;;=^5003869
- ;;^UTILITY(U,$J,358.3,9273,0)
- ;;=G40.A11^^61^588^1
- ;;^UTILITY(U,$J,358.3,9273,1,0)
+ ;;^UTILITY(U,$J,358.3,20671,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Neck
+ ;;^UTILITY(U,$J,358.3,20671,1,4,0)
+ ;;=4^R22.1
+ ;;^UTILITY(U,$J,358.3,20671,2)
+ ;;=^5019285
+ ;;^UTILITY(U,$J,358.3,20672,0)
+ ;;=R22.2^^86^1006^111
+ ;;^UTILITY(U,$J,358.3,20672,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9273,1,3,0)
- ;;=3^Absence Seizures Intractable w/ Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9273,1,4,0)
- ;;=4^G40.A11
- ;;^UTILITY(U,$J,358.3,9273,2)
- ;;=^5003870
- ;;^UTILITY(U,$J,358.3,9274,0)
- ;;=G40.A19^^61^588^2
- ;;^UTILITY(U,$J,358.3,9274,1,0)
+ ;;^UTILITY(U,$J,358.3,20672,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Trunk
+ ;;^UTILITY(U,$J,358.3,20672,1,4,0)
+ ;;=4^R22.2
+ ;;^UTILITY(U,$J,358.3,20672,2)
+ ;;=^5019286
+ ;;^UTILITY(U,$J,358.3,20673,0)
+ ;;=R22.31^^86^1006^110
+ ;;^UTILITY(U,$J,358.3,20673,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9274,1,3,0)
- ;;=3^Absence Seizures Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9274,1,4,0)
- ;;=4^G40.A19
- ;;^UTILITY(U,$J,358.3,9274,2)
- ;;=^5003871
- ;;^UTILITY(U,$J,358.3,9275,0)
- ;;=G40.309^^61^588^16
- ;;^UTILITY(U,$J,358.3,9275,1,0)
+ ;;^UTILITY(U,$J,358.3,20673,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,20673,1,4,0)
+ ;;=4^R22.31
+ ;;^UTILITY(U,$J,358.3,20673,2)
+ ;;=^5019288
+ ;;^UTILITY(U,$J,358.3,20674,0)
+ ;;=R22.32^^86^1006^107
+ ;;^UTILITY(U,$J,358.3,20674,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9275,1,3,0)
- ;;=3^Generalized Seizures Not Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9275,1,4,0)
- ;;=4^G40.309
- ;;^UTILITY(U,$J,358.3,9275,2)
- ;;=^5003842
- ;;^UTILITY(U,$J,358.3,9276,0)
- ;;=G40.311^^61^588^14
- ;;^UTILITY(U,$J,358.3,9276,1,0)
+ ;;^UTILITY(U,$J,358.3,20674,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,20674,1,4,0)
+ ;;=4^R22.32
+ ;;^UTILITY(U,$J,358.3,20674,2)
+ ;;=^5019289
+ ;;^UTILITY(U,$J,358.3,20675,0)
+ ;;=R22.33^^86^1006^103
+ ;;^UTILITY(U,$J,358.3,20675,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9276,1,3,0)
- ;;=3^Generalized Seizures Intractable w/ Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9276,1,4,0)
- ;;=4^G40.311
- ;;^UTILITY(U,$J,358.3,9276,2)
- ;;=^5003843
- ;;^UTILITY(U,$J,358.3,9277,0)
- ;;=G40.319^^61^588^15
- ;;^UTILITY(U,$J,358.3,9277,1,0)
+ ;;^UTILITY(U,$J,358.3,20675,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Bilateral Upper Limb
+ ;;^UTILITY(U,$J,358.3,20675,1,4,0)
+ ;;=4^R22.33
+ ;;^UTILITY(U,$J,358.3,20675,2)
+ ;;=^5019290
+ ;;^UTILITY(U,$J,358.3,20676,0)
+ ;;=R22.42^^86^1006^106
+ ;;^UTILITY(U,$J,358.3,20676,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9277,1,3,0)
- ;;=3^Generalized Seizures Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9277,1,4,0)
- ;;=4^G40.319
- ;;^UTILITY(U,$J,358.3,9277,2)
- ;;=^5003844
- ;;^UTILITY(U,$J,358.3,9278,0)
- ;;=G40.409^^61^588^19
- ;;^UTILITY(U,$J,358.3,9278,1,0)
+ ;;^UTILITY(U,$J,358.3,20676,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,20676,1,4,0)
+ ;;=4^R22.42
+ ;;^UTILITY(U,$J,358.3,20676,2)
+ ;;=^5134179
+ ;;^UTILITY(U,$J,358.3,20677,0)
+ ;;=R22.41^^86^1006^109
+ ;;^UTILITY(U,$J,358.3,20677,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9278,1,3,0)
- ;;=3^Generalized Seizures,Other, Not Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9278,1,4,0)
- ;;=4^G40.409
- ;;^UTILITY(U,$J,358.3,9278,2)
- ;;=^5003846
- ;;^UTILITY(U,$J,358.3,9279,0)
- ;;=G40.411^^61^588^17
- ;;^UTILITY(U,$J,358.3,9279,1,0)
+ ;;^UTILITY(U,$J,358.3,20677,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,20677,1,4,0)
+ ;;=4^R22.41
+ ;;^UTILITY(U,$J,358.3,20677,2)
+ ;;=^5134178
+ ;;^UTILITY(U,$J,358.3,20678,0)
+ ;;=R22.43^^86^1006^104
+ ;;^UTILITY(U,$J,358.3,20678,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9279,1,3,0)
- ;;=3^Generalized Seizures,Other, Intractable w/ Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9279,1,4,0)
- ;;=4^G40.411
- ;;^UTILITY(U,$J,358.3,9279,2)
- ;;=^5003847
- ;;^UTILITY(U,$J,358.3,9280,0)
- ;;=G40.419^^61^588^18
- ;;^UTILITY(U,$J,358.3,9280,1,0)
+ ;;^UTILITY(U,$J,358.3,20678,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Bilateral Lower Limb
+ ;;^UTILITY(U,$J,358.3,20678,1,4,0)
+ ;;=4^R22.43
+ ;;^UTILITY(U,$J,358.3,20678,2)
+ ;;=^5019291
+ ;;^UTILITY(U,$J,358.3,20679,0)
+ ;;=R22.9^^86^1006^112
+ ;;^UTILITY(U,$J,358.3,20679,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9280,1,3,0)
- ;;=3^Generalized Seizures,Other, Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9280,1,4,0)
- ;;=4^G40.419
- ;;^UTILITY(U,$J,358.3,9280,2)
- ;;=^5003848
- ;;^UTILITY(U,$J,358.3,9281,0)
- ;;=G40.209^^61^588^7
- ;;^UTILITY(U,$J,358.3,9281,1,0)
+ ;;^UTILITY(U,$J,358.3,20679,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Unspec
+ ;;^UTILITY(U,$J,358.3,20679,1,4,0)
+ ;;=4^R22.9
+ ;;^UTILITY(U,$J,358.3,20679,2)
+ ;;=^5019292
+ ;;^UTILITY(U,$J,358.3,20680,0)
+ ;;=R23.0^^86^1006^57
+ ;;^UTILITY(U,$J,358.3,20680,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9281,1,3,0)
- ;;=3^Complex Partial Seizures Not Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9281,1,4,0)
- ;;=4^G40.209
- ;;^UTILITY(U,$J,358.3,9281,2)
- ;;=^5003838
- ;;^UTILITY(U,$J,358.3,9282,0)
- ;;=G40.211^^61^588^5
- ;;^UTILITY(U,$J,358.3,9282,1,0)
+ ;;^UTILITY(U,$J,358.3,20680,1,3,0)
+ ;;=3^Cyanosis
+ ;;^UTILITY(U,$J,358.3,20680,1,4,0)
+ ;;=4^R23.0
+ ;;^UTILITY(U,$J,358.3,20680,2)
+ ;;=^5019293
+ ;;^UTILITY(U,$J,358.3,20681,0)
+ ;;=R23.1^^86^1006^128
+ ;;^UTILITY(U,$J,358.3,20681,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9282,1,3,0)
- ;;=3^Complex Partial Seizures Intractable w/ Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9282,1,4,0)
- ;;=4^G40.211
- ;;^UTILITY(U,$J,358.3,9282,2)
- ;;=^5003839
- ;;^UTILITY(U,$J,358.3,9283,0)
- ;;=G40.219^^61^588^6
- ;;^UTILITY(U,$J,358.3,9283,1,0)
+ ;;^UTILITY(U,$J,358.3,20681,1,3,0)
+ ;;=3^Pallor
+ ;;^UTILITY(U,$J,358.3,20681,1,4,0)
+ ;;=4^R23.1
+ ;;^UTILITY(U,$J,358.3,20681,2)
+ ;;=^5019294
+ ;;^UTILITY(U,$J,358.3,20682,0)
+ ;;=R23.2^^86^1006^75
+ ;;^UTILITY(U,$J,358.3,20682,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20682,1,3,0)
+ ;;=3^Flushing
+ ;;^UTILITY(U,$J,358.3,20682,1,4,0)
+ ;;=4^R23.2
+ ;;^UTILITY(U,$J,358.3,20682,2)
+ ;;=^47184
+ ;;^UTILITY(U,$J,358.3,20683,0)
+ ;;=R23.4^^86^1006^147
+ ;;^UTILITY(U,$J,358.3,20683,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20683,1,3,0)
+ ;;=3^Skin Texture Changes
+ ;;^UTILITY(U,$J,358.3,20683,1,4,0)
+ ;;=4^R23.4
+ ;;^UTILITY(U,$J,358.3,20683,2)
+ ;;=^5019296
+ ;;^UTILITY(U,$J,358.3,20684,0)
+ ;;=R26.0^^86^1006^43
+ ;;^UTILITY(U,$J,358.3,20684,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20684,1,3,0)
+ ;;=3^Ataxic Gait
+ ;;^UTILITY(U,$J,358.3,20684,1,4,0)
+ ;;=4^R26.0
+ ;;^UTILITY(U,$J,358.3,20684,2)
+ ;;=^5019304
+ ;;^UTILITY(U,$J,358.3,20685,0)
+ ;;=R26.1^^86^1006^130
+ ;;^UTILITY(U,$J,358.3,20685,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20685,1,3,0)
+ ;;=3^Paralytic Gait
+ ;;^UTILITY(U,$J,358.3,20685,1,4,0)
+ ;;=4^R26.1
+ ;;^UTILITY(U,$J,358.3,20685,2)
+ ;;=^5019305
+ ;;^UTILITY(U,$J,358.3,20686,0)
+ ;;=R26.81^^86^1006^156
+ ;;^UTILITY(U,$J,358.3,20686,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20686,1,3,0)
+ ;;=3^Unsteadiness on Feet
+ ;;^UTILITY(U,$J,358.3,20686,1,4,0)
+ ;;=4^R26.81
+ ;;^UTILITY(U,$J,358.3,20686,2)
+ ;;=^5019307
+ ;;^UTILITY(U,$J,358.3,20687,0)
+ ;;=R26.89^^86^1006^30
+ ;;^UTILITY(U,$J,358.3,20687,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20687,1,3,0)
+ ;;=3^Abnormalities of Gait and Mobility NEC
+ ;;^UTILITY(U,$J,358.3,20687,1,4,0)
+ ;;=4^R26.89
+ ;;^UTILITY(U,$J,358.3,20687,2)
+ ;;=^5019308
+ ;;^UTILITY(U,$J,358.3,20688,0)
+ ;;=R26.9^^86^1006^31
+ ;;^UTILITY(U,$J,358.3,20688,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20688,1,3,0)
+ ;;=3^Abnormalities of Gait and Mobility,Unspec
+ ;;^UTILITY(U,$J,358.3,20688,1,4,0)
+ ;;=4^R26.9
+ ;;^UTILITY(U,$J,358.3,20688,2)
+ ;;=^5019309
+ ;;^UTILITY(U,$J,358.3,20689,0)
+ ;;=R27.0^^86^1006^42
+ ;;^UTILITY(U,$J,358.3,20689,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20689,1,3,0)
+ ;;=3^Ataxia,Unspec
+ ;;^UTILITY(U,$J,358.3,20689,1,4,0)
+ ;;=4^R27.0
+ ;;^UTILITY(U,$J,358.3,20689,2)
+ ;;=^5019310
+ ;;^UTILITY(U,$J,358.3,20690,0)
+ ;;=R27.8^^86^1006^100
+ ;;^UTILITY(U,$J,358.3,20690,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20690,1,3,0)
+ ;;=3^Lack of Coordination NEC
+ ;;^UTILITY(U,$J,358.3,20690,1,4,0)
+ ;;=4^R27.8
+ ;;^UTILITY(U,$J,358.3,20690,2)
+ ;;=^5019311
+ ;;^UTILITY(U,$J,358.3,20691,0)
+ ;;=R27.9^^86^1006^101
+ ;;^UTILITY(U,$J,358.3,20691,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20691,1,3,0)
+ ;;=3^Lack of Coordination,Unspec
+ ;;^UTILITY(U,$J,358.3,20691,1,4,0)
+ ;;=4^R27.9
+ ;;^UTILITY(U,$J,358.3,20691,2)
+ ;;=^5019312
+ ;;^UTILITY(U,$J,358.3,20692,0)
+ ;;=R29.0^^86^1006^153
+ ;;^UTILITY(U,$J,358.3,20692,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20692,1,3,0)
+ ;;=3^Tetany
+ ;;^UTILITY(U,$J,358.3,20692,1,4,0)
+ ;;=4^R29.0
+ ;;^UTILITY(U,$J,358.3,20692,2)
+ ;;=^118032
+ ;;^UTILITY(U,$J,358.3,20693,0)
+ ;;=R29.1^^86^1006^118
+ ;;^UTILITY(U,$J,358.3,20693,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20693,1,3,0)
+ ;;=3^Meningismus
+ ;;^UTILITY(U,$J,358.3,20693,1,4,0)
+ ;;=4^R29.1
+ ;;^UTILITY(U,$J,358.3,20693,2)
+ ;;=^5019313
+ ;;^UTILITY(U,$J,358.3,20694,0)
+ ;;=R29.5^^86^1006^155
+ ;;^UTILITY(U,$J,358.3,20694,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20694,1,3,0)
+ ;;=3^Transient Paralysis
+ ;;^UTILITY(U,$J,358.3,20694,1,4,0)
+ ;;=4^R29.5
+ ;;^UTILITY(U,$J,358.3,20694,2)
+ ;;=^5019316
+ ;;^UTILITY(U,$J,358.3,20695,0)
+ ;;=R34.^^86^1006^39
+ ;;^UTILITY(U,$J,358.3,20695,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20695,1,3,0)
+ ;;=3^Anuria and Oliguria
+ ;;^UTILITY(U,$J,358.3,20695,1,4,0)
+ ;;=4^R34.
+ ;;^UTILITY(U,$J,358.3,20695,2)
+ ;;=^5019333
+ ;;^UTILITY(U,$J,358.3,20696,0)
+ ;;=R35.8^^86^1006^140
+ ;;^UTILITY(U,$J,358.3,20696,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20696,1,3,0)
+ ;;=3^Polyuria NEC
+ ;;^UTILITY(U,$J,358.3,20696,1,4,0)
+ ;;=4^R35.8
+ ;;^UTILITY(U,$J,358.3,20696,2)
+ ;;=^5019336
+ ;;^UTILITY(U,$J,358.3,20697,0)
+ ;;=R39.12^^86^1006^141
+ ;;^UTILITY(U,$J,358.3,20697,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20697,1,3,0)
+ ;;=3^Poor Urinary Stream
+ ;;^UTILITY(U,$J,358.3,20697,1,4,0)
+ ;;=4^R39.12
+ ;;^UTILITY(U,$J,358.3,20697,2)
+ ;;=^5019342
+ ;;^UTILITY(U,$J,358.3,20698,0)
+ ;;=R39.14^^86^1006^73
+ ;;^UTILITY(U,$J,358.3,20698,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20698,1,3,0)
+ ;;=3^Feeling of Incomplete Bladder Emptying
+ ;;^UTILITY(U,$J,358.3,20698,1,4,0)
+ ;;=4^R39.14
+ ;;^UTILITY(U,$J,358.3,20698,2)
+ ;;=^5019344
+ ;;^UTILITY(U,$J,358.3,20699,0)
+ ;;=R41.4^^86^1006^122
+ ;;^UTILITY(U,$J,358.3,20699,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20699,1,3,0)
+ ;;=3^Neurologic Neglect Syndrome

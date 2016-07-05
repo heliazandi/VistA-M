@@ -1,134 +1,286 @@
-IBDEI0ZU ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0ZU ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16521,1,0)
+ ;;^UTILITY(U,$J,358.3,36052,1,3,0)
+ ;;=3^Cocaine Use D/O, Mild
+ ;;^UTILITY(U,$J,358.3,36052,1,4,0)
+ ;;=4^F14.10
+ ;;^UTILITY(U,$J,358.3,36052,2)
+ ;;=^5003239
+ ;;^UTILITY(U,$J,358.3,36053,0)
+ ;;=F14.20^^130^1737^69
+ ;;^UTILITY(U,$J,358.3,36053,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16521,1,3,0)
- ;;=3^Vestibular Function Disorder,Bilateral
- ;;^UTILITY(U,$J,358.3,16521,1,4,0)
- ;;=4^H81.93
- ;;^UTILITY(U,$J,358.3,16521,2)
- ;;=^5006889
- ;;^UTILITY(U,$J,358.3,16522,0)
- ;;=R63.0^^88^850^1
- ;;^UTILITY(U,$J,358.3,16522,1,0)
+ ;;^UTILITY(U,$J,358.3,36053,1,3,0)
+ ;;=3^Cocaine Use D/O, Moderate
+ ;;^UTILITY(U,$J,358.3,36053,1,4,0)
+ ;;=4^F14.20
+ ;;^UTILITY(U,$J,358.3,36053,2)
+ ;;=^5003253
+ ;;^UTILITY(U,$J,358.3,36054,0)
+ ;;=F14.20^^130^1737^70
+ ;;^UTILITY(U,$J,358.3,36054,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16522,1,3,0)
- ;;=3^Anorexia
- ;;^UTILITY(U,$J,358.3,16522,1,4,0)
- ;;=4^R63.0
- ;;^UTILITY(U,$J,358.3,16522,2)
- ;;=^7939
- ;;^UTILITY(U,$J,358.3,16523,0)
- ;;=R64.^^88^850^2
- ;;^UTILITY(U,$J,358.3,16523,1,0)
+ ;;^UTILITY(U,$J,358.3,36054,1,3,0)
+ ;;=3^Cocaine Use D/O, Severe
+ ;;^UTILITY(U,$J,358.3,36054,1,4,0)
+ ;;=4^F14.20
+ ;;^UTILITY(U,$J,358.3,36054,2)
+ ;;=^5003253
+ ;;^UTILITY(U,$J,358.3,36055,0)
+ ;;=F14.23^^130^1737^71
+ ;;^UTILITY(U,$J,358.3,36055,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16523,1,3,0)
- ;;=3^Cachexia
- ;;^UTILITY(U,$J,358.3,16523,1,4,0)
- ;;=4^R64.
- ;;^UTILITY(U,$J,358.3,16523,2)
- ;;=^17920
- ;;^UTILITY(U,$J,358.3,16524,0)
- ;;=E86.0^^88^850^4
- ;;^UTILITY(U,$J,358.3,16524,1,0)
+ ;;^UTILITY(U,$J,358.3,36055,1,3,0)
+ ;;=3^Cocaine Withdrawal
+ ;;^UTILITY(U,$J,358.3,36055,1,4,0)
+ ;;=4^F14.23
+ ;;^UTILITY(U,$J,358.3,36055,2)
+ ;;=^5003259
+ ;;^UTILITY(U,$J,358.3,36056,0)
+ ;;=Z02.71^^130^1738^2
+ ;;^UTILITY(U,$J,358.3,36056,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16524,1,3,0)
- ;;=3^Dehydration
- ;;^UTILITY(U,$J,358.3,16524,1,4,0)
- ;;=4^E86.0
- ;;^UTILITY(U,$J,358.3,16524,2)
- ;;=^332743
- ;;^UTILITY(U,$J,358.3,16525,0)
- ;;=Z86.31^^88^850^75
- ;;^UTILITY(U,$J,358.3,16525,1,0)
+ ;;^UTILITY(U,$J,358.3,36056,1,3,0)
+ ;;=3^Disability Determination Exam
+ ;;^UTILITY(U,$J,358.3,36056,1,4,0)
+ ;;=4^Z02.71
+ ;;^UTILITY(U,$J,358.3,36056,2)
+ ;;=^5062640
+ ;;^UTILITY(U,$J,358.3,36057,0)
+ ;;=Z02.79^^130^1738^4
+ ;;^UTILITY(U,$J,358.3,36057,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16525,1,3,0)
- ;;=3^Personal Hx of Diabetic Foot Ulcer
- ;;^UTILITY(U,$J,358.3,16525,1,4,0)
- ;;=4^Z86.31
- ;;^UTILITY(U,$J,358.3,16525,2)
- ;;=^5063467
- ;;^UTILITY(U,$J,358.3,16526,0)
- ;;=E10.8^^88^850^5
- ;;^UTILITY(U,$J,358.3,16526,1,0)
+ ;;^UTILITY(U,$J,358.3,36057,1,3,0)
+ ;;=3^Issue of Medical Certificate
+ ;;^UTILITY(U,$J,358.3,36057,1,4,0)
+ ;;=4^Z02.79
+ ;;^UTILITY(U,$J,358.3,36057,2)
+ ;;=^5062641
+ ;;^UTILITY(U,$J,358.3,36058,0)
+ ;;=Z04.9^^130^1738^3
+ ;;^UTILITY(U,$J,358.3,36058,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16526,1,3,0)
- ;;=3^Diabetes Type 1 w/ Unspec Complications
- ;;^UTILITY(U,$J,358.3,16526,1,4,0)
- ;;=4^E10.8
- ;;^UTILITY(U,$J,358.3,16526,2)
- ;;=^5002625
- ;;^UTILITY(U,$J,358.3,16527,0)
- ;;=E10.9^^88^850^6
- ;;^UTILITY(U,$J,358.3,16527,1,0)
+ ;;^UTILITY(U,$J,358.3,36058,1,3,0)
+ ;;=3^Exam & Observation for Unspec Reason
+ ;;^UTILITY(U,$J,358.3,36058,1,4,0)
+ ;;=4^Z04.9
+ ;;^UTILITY(U,$J,358.3,36058,2)
+ ;;=^5062666
+ ;;^UTILITY(U,$J,358.3,36059,0)
+ ;;=Z02.9^^130^1738^1
+ ;;^UTILITY(U,$J,358.3,36059,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16527,1,3,0)
- ;;=3^Diabetes Type 1 w/o Complications
- ;;^UTILITY(U,$J,358.3,16527,1,4,0)
- ;;=4^E10.9
- ;;^UTILITY(U,$J,358.3,16527,2)
- ;;=^5002626
- ;;^UTILITY(U,$J,358.3,16528,0)
- ;;=E11.40^^88^850^15
- ;;^UTILITY(U,$J,358.3,16528,1,0)
+ ;;^UTILITY(U,$J,358.3,36059,1,3,0)
+ ;;=3^Adminstrative Exams,Unspec
+ ;;^UTILITY(U,$J,358.3,36059,1,4,0)
+ ;;=4^Z02.9
+ ;;^UTILITY(U,$J,358.3,36059,2)
+ ;;=^5062646
+ ;;^UTILITY(U,$J,358.3,36060,0)
+ ;;=Z76.82^^130^1739^2
+ ;;^UTILITY(U,$J,358.3,36060,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16528,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Neuropathy,Unspec
- ;;^UTILITY(U,$J,358.3,16528,1,4,0)
- ;;=4^E11.40
- ;;^UTILITY(U,$J,358.3,16528,2)
- ;;=^5002644
- ;;^UTILITY(U,$J,358.3,16529,0)
- ;;=E11.620^^88^850^11
- ;;^UTILITY(U,$J,358.3,16529,1,0)
+ ;;^UTILITY(U,$J,358.3,36060,1,3,0)
+ ;;=3^Awaiting Organ Transplant Status
+ ;;^UTILITY(U,$J,358.3,36060,1,4,0)
+ ;;=4^Z76.82
+ ;;^UTILITY(U,$J,358.3,36060,2)
+ ;;=^331582
+ ;;^UTILITY(U,$J,358.3,36061,0)
+ ;;=Z78.0^^130^1739^1
+ ;;^UTILITY(U,$J,358.3,36061,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16529,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Dermatitis
- ;;^UTILITY(U,$J,358.3,16529,1,4,0)
- ;;=4^E11.620
- ;;^UTILITY(U,$J,358.3,16529,2)
- ;;=^5002655
- ;;^UTILITY(U,$J,358.3,16530,0)
- ;;=E11.610^^88^850^14
- ;;^UTILITY(U,$J,358.3,16530,1,0)
+ ;;^UTILITY(U,$J,358.3,36061,1,3,0)
+ ;;=3^Asymptomatic Menopausal State
+ ;;^UTILITY(U,$J,358.3,36061,1,4,0)
+ ;;=4^Z78.0
+ ;;^UTILITY(U,$J,358.3,36061,2)
+ ;;=^5063327
+ ;;^UTILITY(U,$J,358.3,36062,0)
+ ;;=Z74.01^^130^1739^3
+ ;;^UTILITY(U,$J,358.3,36062,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16530,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Neuropathic Arthropathy
- ;;^UTILITY(U,$J,358.3,16530,1,4,0)
- ;;=4^E11.610
- ;;^UTILITY(U,$J,358.3,16530,2)
- ;;=^5002653
- ;;^UTILITY(U,$J,358.3,16531,0)
- ;;=E11.52^^88^850^17
- ;;^UTILITY(U,$J,358.3,16531,1,0)
+ ;;^UTILITY(U,$J,358.3,36062,1,3,0)
+ ;;=3^Bed Confinement Status
+ ;;^UTILITY(U,$J,358.3,36062,1,4,0)
+ ;;=4^Z74.01
+ ;;^UTILITY(U,$J,358.3,36062,2)
+ ;;=^5063282
+ ;;^UTILITY(U,$J,358.3,36063,0)
+ ;;=Z73.82^^130^1739^5
+ ;;^UTILITY(U,$J,358.3,36063,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16531,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Periph Angiopathy w/ Gangrene
- ;;^UTILITY(U,$J,358.3,16531,1,4,0)
- ;;=4^E11.52
- ;;^UTILITY(U,$J,358.3,16531,2)
- ;;=^5002651
- ;;^UTILITY(U,$J,358.3,16532,0)
- ;;=E11.51^^88^850^18
- ;;^UTILITY(U,$J,358.3,16532,1,0)
+ ;;^UTILITY(U,$J,358.3,36063,1,3,0)
+ ;;=3^Dual Sensory Impairment
+ ;;^UTILITY(U,$J,358.3,36063,1,4,0)
+ ;;=4^Z73.82
+ ;;^UTILITY(U,$J,358.3,36063,2)
+ ;;=^5063279
+ ;;^UTILITY(U,$J,358.3,36064,0)
+ ;;=Z66.^^130^1739^4
+ ;;^UTILITY(U,$J,358.3,36064,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16532,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Periph Angiopathy w/o Gangrene
- ;;^UTILITY(U,$J,358.3,16532,1,4,0)
- ;;=4^E11.51
- ;;^UTILITY(U,$J,358.3,16532,2)
- ;;=^5002650
- ;;^UTILITY(U,$J,358.3,16533,0)
- ;;=E11.621^^88^850^21
- ;;^UTILITY(U,$J,358.3,16533,1,0)
+ ;;^UTILITY(U,$J,358.3,36064,1,3,0)
+ ;;=3^Do Not Resuscitate
+ ;;^UTILITY(U,$J,358.3,36064,1,4,0)
+ ;;=4^Z66.
+ ;;^UTILITY(U,$J,358.3,36064,2)
+ ;;=^5063187
+ ;;^UTILITY(U,$J,358.3,36065,0)
+ ;;=Z78.1^^130^1739^7
+ ;;^UTILITY(U,$J,358.3,36065,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16533,1,3,0)
- ;;=3^Diabetes Type 2 w/ Foot Ulcer
- ;;^UTILITY(U,$J,358.3,16533,1,4,0)
- ;;=4^E11.621
- ;;^UTILITY(U,$J,358.3,16533,2)
- ;;=^5002656
- ;;^UTILITY(U,$J,358.3,16534,0)
- ;;=E11.44^^88^850^8
+ ;;^UTILITY(U,$J,358.3,36065,1,3,0)
+ ;;=3^Physical Restraint Status
+ ;;^UTILITY(U,$J,358.3,36065,1,4,0)
+ ;;=4^Z78.1
+ ;;^UTILITY(U,$J,358.3,36065,2)
+ ;;=^5063328
+ ;;^UTILITY(U,$J,358.3,36066,0)
+ ;;=Z87.898^^130^1739^6
+ ;;^UTILITY(U,$J,358.3,36066,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36066,1,3,0)
+ ;;=3^Personal Hx of Oth Spec Conditions
+ ;;^UTILITY(U,$J,358.3,36066,1,4,0)
+ ;;=4^Z87.898
+ ;;^UTILITY(U,$J,358.3,36066,2)
+ ;;=^5063520
+ ;;^UTILITY(U,$J,358.3,36067,0)
+ ;;=Z51.89^^130^1740^1
+ ;;^UTILITY(U,$J,358.3,36067,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36067,1,3,0)
+ ;;=3^Aftercare,Oth Spec
+ ;;^UTILITY(U,$J,358.3,36067,1,4,0)
+ ;;=4^Z51.89
+ ;;^UTILITY(U,$J,358.3,36067,2)
+ ;;=^5063065
+ ;;^UTILITY(U,$J,358.3,36068,0)
+ ;;=Z51.5^^130^1740^2
+ ;;^UTILITY(U,$J,358.3,36068,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36068,1,3,0)
+ ;;=3^Palliative Care
+ ;;^UTILITY(U,$J,358.3,36068,1,4,0)
+ ;;=4^Z51.5
+ ;;^UTILITY(U,$J,358.3,36068,2)
+ ;;=^5063063
+ ;;^UTILITY(U,$J,358.3,36069,0)
+ ;;=Z63.32^^130^1741^1
+ ;;^UTILITY(U,$J,358.3,36069,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36069,1,3,0)
+ ;;=3^Absence of Family Member
+ ;;^UTILITY(U,$J,358.3,36069,1,4,0)
+ ;;=4^Z63.32
+ ;;^UTILITY(U,$J,358.3,36069,2)
+ ;;=^5063167
+ ;;^UTILITY(U,$J,358.3,36070,0)
+ ;;=Z63.8^^130^1741^10
+ ;;^UTILITY(U,$J,358.3,36070,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36070,1,3,0)
+ ;;=3^Primary Support Group Problems
+ ;;^UTILITY(U,$J,358.3,36070,1,4,0)
+ ;;=4^Z63.8
+ ;;^UTILITY(U,$J,358.3,36070,2)
+ ;;=^5063174
+ ;;^UTILITY(U,$J,358.3,36071,0)
+ ;;=Z63.5^^130^1741^4
+ ;;^UTILITY(U,$J,358.3,36071,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36071,1,3,0)
+ ;;=3^Disruption of Family by Separation/Divorce
+ ;;^UTILITY(U,$J,358.3,36071,1,4,0)
+ ;;=4^Z63.5
+ ;;^UTILITY(U,$J,358.3,36071,2)
+ ;;=^5063169
+ ;;^UTILITY(U,$J,358.3,36072,0)
+ ;;=Z71.89^^130^1741^5
+ ;;^UTILITY(U,$J,358.3,36072,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36072,1,3,0)
+ ;;=3^Family Counseling
+ ;;^UTILITY(U,$J,358.3,36072,1,4,0)
+ ;;=4^Z71.89
+ ;;^UTILITY(U,$J,358.3,36072,2)
+ ;;=^5063253
+ ;;^UTILITY(U,$J,358.3,36073,0)
+ ;;=Z69.11^^130^1741^9
+ ;;^UTILITY(U,$J,358.3,36073,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36073,1,3,0)
+ ;;=3^Mental Hlth Svc for Victim of Spousal/Partner Abuse
+ ;;^UTILITY(U,$J,358.3,36073,1,4,0)
+ ;;=4^Z69.11
+ ;;^UTILITY(U,$J,358.3,36073,2)
+ ;;=^5063232
+ ;;^UTILITY(U,$J,358.3,36074,0)
+ ;;=Z69.12^^130^1741^7
+ ;;^UTILITY(U,$J,358.3,36074,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36074,1,3,0)
+ ;;=3^Mental Hlth Svc for Perpetrator of Spousal/Partner Abuse
+ ;;^UTILITY(U,$J,358.3,36074,1,4,0)
+ ;;=4^Z69.12
+ ;;^UTILITY(U,$J,358.3,36074,2)
+ ;;=^5063233
+ ;;^UTILITY(U,$J,358.3,36075,0)
+ ;;=Z69.010^^130^1741^8
+ ;;^UTILITY(U,$J,358.3,36075,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36075,1,3,0)
+ ;;=3^Mental Hlth Svc for Victim of Parental Child Abuse
+ ;;^UTILITY(U,$J,358.3,36075,1,4,0)
+ ;;=4^Z69.010
+ ;;^UTILITY(U,$J,358.3,36075,2)
+ ;;=^5063228
+ ;;^UTILITY(U,$J,358.3,36076,0)
+ ;;=Z69.011^^130^1741^6
+ ;;^UTILITY(U,$J,358.3,36076,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36076,1,3,0)
+ ;;=3^Mental Hlth Svc for Perpetrator of Parental Child Abuse
+ ;;^UTILITY(U,$J,358.3,36076,1,4,0)
+ ;;=4^Z69.011
+ ;;^UTILITY(U,$J,358.3,36076,2)
+ ;;=^5063229
+ ;;^UTILITY(U,$J,358.3,36077,0)
+ ;;=Z62.898^^130^1741^11
+ ;;^UTILITY(U,$J,358.3,36077,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36077,1,3,0)
+ ;;=3^Problems Related to Upbringing
+ ;;^UTILITY(U,$J,358.3,36077,1,4,0)
+ ;;=4^Z62.898
+ ;;^UTILITY(U,$J,358.3,36077,2)
+ ;;=^5063162
+ ;;^UTILITY(U,$J,358.3,36078,0)
+ ;;=Z63.79^^130^1741^12
+ ;;^UTILITY(U,$J,358.3,36078,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36078,1,3,0)
+ ;;=3^Stressful Life Events
+ ;;^UTILITY(U,$J,358.3,36078,1,4,0)
+ ;;=4^Z63.79
+ ;;^UTILITY(U,$J,358.3,36078,2)
+ ;;=^5063173
+ ;;^UTILITY(U,$J,358.3,36079,0)
+ ;;=Z63.72^^130^1741^2
+ ;;^UTILITY(U,$J,358.3,36079,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36079,1,3,0)
+ ;;=3^Alcoholism/Drug Addiction in Family
+ ;;^UTILITY(U,$J,358.3,36079,1,4,0)
+ ;;=4^Z63.72
+ ;;^UTILITY(U,$J,358.3,36079,2)
+ ;;=^5063172
+ ;;^UTILITY(U,$J,358.3,36080,0)
+ ;;=Z63.6^^130^1741^3
+ ;;^UTILITY(U,$J,358.3,36080,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36080,1,3,0)
+ ;;=3^Dependent Relative Needing Care at Home

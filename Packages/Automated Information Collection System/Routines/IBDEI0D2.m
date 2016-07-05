@@ -1,136 +1,282 @@
-IBDEI0D2 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0D2 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,5674,1,4,0)
- ;;=4^D03.51
- ;;^UTILITY(U,$J,358.3,5674,2)
- ;;=^5001898
- ;;^UTILITY(U,$J,358.3,5675,0)
- ;;=D03.52^^40^373^19
- ;;^UTILITY(U,$J,358.3,5675,1,0)
+ ;;^UTILITY(U,$J,358.3,13063,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5675,1,3,0)
- ;;=3^Melanoma in Situ of Breast
- ;;^UTILITY(U,$J,358.3,5675,1,4,0)
- ;;=4^D03.52
- ;;^UTILITY(U,$J,358.3,5675,2)
- ;;=^5001899
- ;;^UTILITY(U,$J,358.3,5676,0)
- ;;=D03.59^^40^373^33
- ;;^UTILITY(U,$J,358.3,5676,1,0)
+ ;;^UTILITY(U,$J,358.3,13063,1,3,0)
+ ;;=3^Major Neurocog D/O d/t Prob VASCULAR DISEASE w/o Behav Disturb
+ ;;^UTILITY(U,$J,358.3,13063,1,4,0)
+ ;;=4^F01.50
+ ;;^UTILITY(U,$J,358.3,13063,2)
+ ;;=^5003046
+ ;;^UTILITY(U,$J,358.3,13064,0)
+ ;;=G31.84^^58^675^65
+ ;;^UTILITY(U,$J,358.3,13064,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5676,1,3,0)
- ;;=3^Melanoma in Situ of Trunk NEC
- ;;^UTILITY(U,$J,358.3,5676,1,4,0)
- ;;=4^D03.59
- ;;^UTILITY(U,$J,358.3,5676,2)
- ;;=^5001900
- ;;^UTILITY(U,$J,358.3,5677,0)
- ;;=D03.61^^40^373^31
- ;;^UTILITY(U,$J,358.3,5677,1,0)
+ ;;^UTILITY(U,$J,358.3,13064,1,3,0)
+ ;;=3^Mild Neurocog D/O d/t VASCULAR DISEASE
+ ;;^UTILITY(U,$J,358.3,13064,1,4,0)
+ ;;=4^G31.84
+ ;;^UTILITY(U,$J,358.3,13064,2)
+ ;;=^5003813
+ ;;^UTILITY(U,$J,358.3,13065,0)
+ ;;=R41.9^^58^675^68
+ ;;^UTILITY(U,$J,358.3,13065,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5677,1,3,0)
- ;;=3^Melanoma in Situ of Right Upper Limb
- ;;^UTILITY(U,$J,358.3,5677,1,4,0)
- ;;=4^D03.61
- ;;^UTILITY(U,$J,358.3,5677,2)
- ;;=^5001902
- ;;^UTILITY(U,$J,358.3,5678,0)
- ;;=D03.62^^40^373^25
- ;;^UTILITY(U,$J,358.3,5678,1,0)
+ ;;^UTILITY(U,$J,358.3,13065,1,3,0)
+ ;;=3^Neurocognitive Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,13065,1,4,0)
+ ;;=4^R41.9
+ ;;^UTILITY(U,$J,358.3,13065,2)
+ ;;=^5019449
+ ;;^UTILITY(U,$J,358.3,13066,0)
+ ;;=F06.31^^58^676^1
+ ;;^UTILITY(U,$J,358.3,13066,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5678,1,3,0)
- ;;=3^Melanoma in Situ of Left Upper Limb
- ;;^UTILITY(U,$J,358.3,5678,1,4,0)
- ;;=4^D03.62
- ;;^UTILITY(U,$J,358.3,5678,2)
- ;;=^5001903
- ;;^UTILITY(U,$J,358.3,5679,0)
- ;;=D03.71^^40^373^30
- ;;^UTILITY(U,$J,358.3,5679,1,0)
+ ;;^UTILITY(U,$J,358.3,13066,1,3,0)
+ ;;=3^Depressive Disorder d/t Another Med Cond w/ Depressive Features
+ ;;^UTILITY(U,$J,358.3,13066,1,4,0)
+ ;;=4^F06.31
+ ;;^UTILITY(U,$J,358.3,13066,2)
+ ;;=^5003057
+ ;;^UTILITY(U,$J,358.3,13067,0)
+ ;;=F06.32^^58^676^2
+ ;;^UTILITY(U,$J,358.3,13067,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5679,1,3,0)
- ;;=3^Melanoma in Situ of Right Lower Limb
- ;;^UTILITY(U,$J,358.3,5679,1,4,0)
- ;;=4^D03.71
- ;;^UTILITY(U,$J,358.3,5679,2)
- ;;=^5001905
- ;;^UTILITY(U,$J,358.3,5680,0)
- ;;=D03.72^^40^373^24
- ;;^UTILITY(U,$J,358.3,5680,1,0)
+ ;;^UTILITY(U,$J,358.3,13067,1,3,0)
+ ;;=3^Depressive Disorder d/t Another Med Cond w/ Major Depressive-Like Episode
+ ;;^UTILITY(U,$J,358.3,13067,1,4,0)
+ ;;=4^F06.32
+ ;;^UTILITY(U,$J,358.3,13067,2)
+ ;;=^5003058
+ ;;^UTILITY(U,$J,358.3,13068,0)
+ ;;=F32.9^^58^676^20
+ ;;^UTILITY(U,$J,358.3,13068,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5680,1,3,0)
- ;;=3^Melanoma in Situ of Left Lower Limb
- ;;^UTILITY(U,$J,358.3,5680,1,4,0)
- ;;=4^D03.72
- ;;^UTILITY(U,$J,358.3,5680,2)
- ;;=^5001906
- ;;^UTILITY(U,$J,358.3,5681,0)
- ;;=D03.8^^40^373^27
- ;;^UTILITY(U,$J,358.3,5681,1,0)
+ ;;^UTILITY(U,$J,358.3,13068,1,3,0)
+ ;;=3^MDD,Single Episode,Unspec
+ ;;^UTILITY(U,$J,358.3,13068,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,13068,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,13069,0)
+ ;;=F32.0^^58^676^17
+ ;;^UTILITY(U,$J,358.3,13069,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5681,1,3,0)
- ;;=3^Melanoma in Situ of Other Sites
- ;;^UTILITY(U,$J,358.3,5681,1,4,0)
- ;;=4^D03.8
- ;;^UTILITY(U,$J,358.3,5681,2)
- ;;=^5001907
- ;;^UTILITY(U,$J,358.3,5682,0)
- ;;=C4A.0^^40^374^8
- ;;^UTILITY(U,$J,358.3,5682,1,0)
+ ;;^UTILITY(U,$J,358.3,13069,1,3,0)
+ ;;=3^MDD,Single Episode,Mild
+ ;;^UTILITY(U,$J,358.3,13069,1,4,0)
+ ;;=4^F32.0
+ ;;^UTILITY(U,$J,358.3,13069,2)
+ ;;=^5003521
+ ;;^UTILITY(U,$J,358.3,13070,0)
+ ;;=F32.1^^58^676^18
+ ;;^UTILITY(U,$J,358.3,13070,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5682,1,3,0)
- ;;=3^Merkel Cell Carcinoma of Lip
- ;;^UTILITY(U,$J,358.3,5682,1,4,0)
- ;;=4^C4A.0
- ;;^UTILITY(U,$J,358.3,5682,2)
- ;;=^5001137
- ;;^UTILITY(U,$J,358.3,5683,0)
- ;;=C4A.11^^40^374^12
- ;;^UTILITY(U,$J,358.3,5683,1,0)
+ ;;^UTILITY(U,$J,358.3,13070,1,3,0)
+ ;;=3^MDD,Single Episode,Moderate
+ ;;^UTILITY(U,$J,358.3,13070,1,4,0)
+ ;;=4^F32.1
+ ;;^UTILITY(U,$J,358.3,13070,2)
+ ;;=^5003522
+ ;;^UTILITY(U,$J,358.3,13071,0)
+ ;;=F32.2^^58^676^19
+ ;;^UTILITY(U,$J,358.3,13071,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5683,1,3,0)
- ;;=3^Merkel Cell Carcinoma of Right Eyelid
- ;;^UTILITY(U,$J,358.3,5683,1,4,0)
- ;;=4^C4A.11
- ;;^UTILITY(U,$J,358.3,5683,2)
- ;;=^5001139
- ;;^UTILITY(U,$J,358.3,5684,0)
- ;;=C4A.12^^40^374^5
- ;;^UTILITY(U,$J,358.3,5684,1,0)
+ ;;^UTILITY(U,$J,358.3,13071,1,3,0)
+ ;;=3^MDD,Single Episode,Severe
+ ;;^UTILITY(U,$J,358.3,13071,1,4,0)
+ ;;=4^F32.2
+ ;;^UTILITY(U,$J,358.3,13071,2)
+ ;;=^5003523
+ ;;^UTILITY(U,$J,358.3,13072,0)
+ ;;=F32.3^^58^676^14
+ ;;^UTILITY(U,$J,358.3,13072,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5684,1,3,0)
- ;;=3^Merkel Cell Carcinoma of Left Eyelid
- ;;^UTILITY(U,$J,358.3,5684,1,4,0)
- ;;=4^C4A.12
- ;;^UTILITY(U,$J,358.3,5684,2)
- ;;=^5001140
- ;;^UTILITY(U,$J,358.3,5685,0)
- ;;=C4A.21^^40^374^11
- ;;^UTILITY(U,$J,358.3,5685,1,0)
+ ;;^UTILITY(U,$J,358.3,13072,1,3,0)
+ ;;=3^MDD,Single Episode w Psychotic Features
+ ;;^UTILITY(U,$J,358.3,13072,1,4,0)
+ ;;=4^F32.3
+ ;;^UTILITY(U,$J,358.3,13072,2)
+ ;;=^5003524
+ ;;^UTILITY(U,$J,358.3,13073,0)
+ ;;=F32.4^^58^676^16
+ ;;^UTILITY(U,$J,358.3,13073,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5685,1,3,0)
- ;;=3^Merkel Cell Carcinoma of Right Ear/External Auric Canal
- ;;^UTILITY(U,$J,358.3,5685,1,4,0)
- ;;=4^C4A.21
- ;;^UTILITY(U,$J,358.3,5685,2)
- ;;=^5001142
- ;;^UTILITY(U,$J,358.3,5686,0)
- ;;=C4A.22^^40^374^4
- ;;^UTILITY(U,$J,358.3,5686,1,0)
+ ;;^UTILITY(U,$J,358.3,13073,1,3,0)
+ ;;=3^MDD,Single Episode,In Partial Remission
+ ;;^UTILITY(U,$J,358.3,13073,1,4,0)
+ ;;=4^F32.4
+ ;;^UTILITY(U,$J,358.3,13073,2)
+ ;;=^5003525
+ ;;^UTILITY(U,$J,358.3,13074,0)
+ ;;=F32.5^^58^676^15
+ ;;^UTILITY(U,$J,358.3,13074,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5686,1,3,0)
- ;;=3^Merkel Cell Carcinoma of Left Ear/External Auric Canal
- ;;^UTILITY(U,$J,358.3,5686,1,4,0)
- ;;=4^C4A.22
- ;;^UTILITY(U,$J,358.3,5686,2)
- ;;=^5001143
- ;;^UTILITY(U,$J,358.3,5687,0)
- ;;=C4A.30^^40^374^3
- ;;^UTILITY(U,$J,358.3,5687,1,0)
+ ;;^UTILITY(U,$J,358.3,13074,1,3,0)
+ ;;=3^MDD,Single Episode,In Full Remission
+ ;;^UTILITY(U,$J,358.3,13074,1,4,0)
+ ;;=4^F32.5
+ ;;^UTILITY(U,$J,358.3,13074,2)
+ ;;=^5003526
+ ;;^UTILITY(U,$J,358.3,13075,0)
+ ;;=F33.9^^58^676^13
+ ;;^UTILITY(U,$J,358.3,13075,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5687,1,3,0)
- ;;=3^Merkel Cell Carcinoma of Face,Unspec
- ;;^UTILITY(U,$J,358.3,5687,1,4,0)
- ;;=4^C4A.30
+ ;;^UTILITY(U,$J,358.3,13075,1,3,0)
+ ;;=3^MDD,Recurrent Episode,Unspec
+ ;;^UTILITY(U,$J,358.3,13075,1,4,0)
+ ;;=4^F33.9
+ ;;^UTILITY(U,$J,358.3,13075,2)
+ ;;=^5003537
+ ;;^UTILITY(U,$J,358.3,13076,0)
+ ;;=F33.0^^58^676^10
+ ;;^UTILITY(U,$J,358.3,13076,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13076,1,3,0)
+ ;;=3^MDD,Recurrent Episode,Mild
+ ;;^UTILITY(U,$J,358.3,13076,1,4,0)
+ ;;=4^F33.0
+ ;;^UTILITY(U,$J,358.3,13076,2)
+ ;;=^5003529
+ ;;^UTILITY(U,$J,358.3,13077,0)
+ ;;=F33.1^^58^676^11
+ ;;^UTILITY(U,$J,358.3,13077,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13077,1,3,0)
+ ;;=3^MDD,Recurrent Episode,Moderate
+ ;;^UTILITY(U,$J,358.3,13077,1,4,0)
+ ;;=4^F33.1
+ ;;^UTILITY(U,$J,358.3,13077,2)
+ ;;=^5003530
+ ;;^UTILITY(U,$J,358.3,13078,0)
+ ;;=F33.2^^58^676^12
+ ;;^UTILITY(U,$J,358.3,13078,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13078,1,3,0)
+ ;;=3^MDD,Recurrent Episode,Severe
+ ;;^UTILITY(U,$J,358.3,13078,1,4,0)
+ ;;=4^F33.2
+ ;;^UTILITY(U,$J,358.3,13078,2)
+ ;;=^5003531
+ ;;^UTILITY(U,$J,358.3,13079,0)
+ ;;=F33.3^^58^676^7
+ ;;^UTILITY(U,$J,358.3,13079,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13079,1,3,0)
+ ;;=3^MDD,Recurrent Episode w/ Psychotic Features
+ ;;^UTILITY(U,$J,358.3,13079,1,4,0)
+ ;;=4^F33.3
+ ;;^UTILITY(U,$J,358.3,13079,2)
+ ;;=^5003532
+ ;;^UTILITY(U,$J,358.3,13080,0)
+ ;;=F33.41^^58^676^9
+ ;;^UTILITY(U,$J,358.3,13080,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13080,1,3,0)
+ ;;=3^MDD,Recurrent Episode,In Partial Remission
+ ;;^UTILITY(U,$J,358.3,13080,1,4,0)
+ ;;=4^F33.41
+ ;;^UTILITY(U,$J,358.3,13080,2)
+ ;;=^5003534
+ ;;^UTILITY(U,$J,358.3,13081,0)
+ ;;=F33.42^^58^676^8
+ ;;^UTILITY(U,$J,358.3,13081,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13081,1,3,0)
+ ;;=3^MDD,Recurrent Episode,In Full Remission
+ ;;^UTILITY(U,$J,358.3,13081,1,4,0)
+ ;;=4^F33.42
+ ;;^UTILITY(U,$J,358.3,13081,2)
+ ;;=^5003535
+ ;;^UTILITY(U,$J,358.3,13082,0)
+ ;;=F34.8^^58^676^6
+ ;;^UTILITY(U,$J,358.3,13082,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13082,1,3,0)
+ ;;=3^Disruptive Mood Dysregulation Disorder
+ ;;^UTILITY(U,$J,358.3,13082,1,4,0)
+ ;;=4^F34.8
+ ;;^UTILITY(U,$J,358.3,13082,2)
+ ;;=^5003539
+ ;;^UTILITY(U,$J,358.3,13083,0)
+ ;;=F34.1^^58^676^21
+ ;;^UTILITY(U,$J,358.3,13083,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13083,1,3,0)
+ ;;=3^Persistent Depressive Disorder (Dysthmia)
+ ;;^UTILITY(U,$J,358.3,13083,1,4,0)
+ ;;=4^F34.1
+ ;;^UTILITY(U,$J,358.3,13083,2)
+ ;;=^331913
+ ;;^UTILITY(U,$J,358.3,13084,0)
+ ;;=N94.3^^58^676^22
+ ;;^UTILITY(U,$J,358.3,13084,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13084,1,3,0)
+ ;;=3^Premenstrual Dysphoric Disorder
+ ;;^UTILITY(U,$J,358.3,13084,1,4,0)
+ ;;=4^N94.3
+ ;;^UTILITY(U,$J,358.3,13084,2)
+ ;;=^5015919
+ ;;^UTILITY(U,$J,358.3,13085,0)
+ ;;=F06.34^^58^676^3
+ ;;^UTILITY(U,$J,358.3,13085,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13085,1,3,0)
+ ;;=3^Depressive Disorder d/t Another Med Cond w/ Mixed Features,Unsp
+ ;;^UTILITY(U,$J,358.3,13085,1,4,0)
+ ;;=4^F06.34
+ ;;^UTILITY(U,$J,358.3,13085,2)
+ ;;=^5003060
+ ;;^UTILITY(U,$J,358.3,13086,0)
+ ;;=F32.8^^58^676^4
+ ;;^UTILITY(U,$J,358.3,13086,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13086,1,3,0)
+ ;;=3^Depressive Disorder,Other Specified
+ ;;^UTILITY(U,$J,358.3,13086,1,4,0)
+ ;;=4^F32.8
+ ;;^UTILITY(U,$J,358.3,13086,2)
+ ;;=^5003527
+ ;;^UTILITY(U,$J,358.3,13087,0)
+ ;;=F32.9^^58^676^5
+ ;;^UTILITY(U,$J,358.3,13087,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13087,1,3,0)
+ ;;=3^Depressive Disorder,Unsp
+ ;;^UTILITY(U,$J,358.3,13087,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,13087,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,13088,0)
+ ;;=F44.81^^58^677^6
+ ;;^UTILITY(U,$J,358.3,13088,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13088,1,3,0)
+ ;;=3^Dissociative Identity Disorder
+ ;;^UTILITY(U,$J,358.3,13088,1,4,0)
+ ;;=4^F44.81
+ ;;^UTILITY(U,$J,358.3,13088,2)
+ ;;=^331909
+ ;;^UTILITY(U,$J,358.3,13089,0)
+ ;;=F44.9^^58^677^5
+ ;;^UTILITY(U,$J,358.3,13089,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13089,1,3,0)
+ ;;=3^Dissociative Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,13089,1,4,0)
+ ;;=4^F44.9
+ ;;^UTILITY(U,$J,358.3,13089,2)
+ ;;=^5003584
+ ;;^UTILITY(U,$J,358.3,13090,0)
+ ;;=F44.0^^58^677^2
+ ;;^UTILITY(U,$J,358.3,13090,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13090,1,3,0)
+ ;;=3^Dissociative Amnesia
+ ;;^UTILITY(U,$J,358.3,13090,1,4,0)
+ ;;=4^F44.0
+ ;;^UTILITY(U,$J,358.3,13090,2)
+ ;;=^5003577
