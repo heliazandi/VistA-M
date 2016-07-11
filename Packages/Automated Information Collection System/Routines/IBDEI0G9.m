@@ -1,134 +1,284 @@
-IBDEI0G9 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0G9 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7214,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Right Lower Leg Oth Part
- ;;^UTILITY(U,$J,358.3,7214,1,4,0)
- ;;=4^L97.819
- ;;^UTILITY(U,$J,358.3,7214,2)
- ;;=^5009564
- ;;^UTILITY(U,$J,358.3,7215,0)
- ;;=L97.829^^49^479^119
- ;;^UTILITY(U,$J,358.3,7215,1,0)
+ ;;^UTILITY(U,$J,358.3,16288,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7215,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Left Lower Leg Oth Part
- ;;^UTILITY(U,$J,358.3,7215,1,4,0)
- ;;=4^L97.829
- ;;^UTILITY(U,$J,358.3,7215,2)
- ;;=^5009569
- ;;^UTILITY(U,$J,358.3,7216,0)
- ;;=L98.419^^49^479^114
- ;;^UTILITY(U,$J,358.3,7216,1,0)
+ ;;^UTILITY(U,$J,358.3,16288,1,3,0)
+ ;;=3^Malig Neop Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,16288,1,4,0)
+ ;;=4^C44.99
+ ;;^UTILITY(U,$J,358.3,16288,2)
+ ;;=^5001094
+ ;;^UTILITY(U,$J,358.3,16289,0)
+ ;;=C48.2^^64^784^14
+ ;;^UTILITY(U,$J,358.3,16289,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7216,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Buttock
- ;;^UTILITY(U,$J,358.3,7216,1,4,0)
- ;;=4^L98.419
- ;;^UTILITY(U,$J,358.3,7216,2)
- ;;=^5009581
- ;;^UTILITY(U,$J,358.3,7217,0)
- ;;=L98.429^^49^479^113
- ;;^UTILITY(U,$J,358.3,7217,1,0)
+ ;;^UTILITY(U,$J,358.3,16289,1,3,0)
+ ;;=3^Malig Neop Peritoneum,Unspec
+ ;;^UTILITY(U,$J,358.3,16289,1,4,0)
+ ;;=4^C48.2
+ ;;^UTILITY(U,$J,358.3,16289,2)
+ ;;=^5001122
+ ;;^UTILITY(U,$J,358.3,16290,0)
+ ;;=C38.4^^64^784^15
+ ;;^UTILITY(U,$J,358.3,16290,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7217,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Back
- ;;^UTILITY(U,$J,358.3,7217,1,4,0)
- ;;=4^L98.429
- ;;^UTILITY(U,$J,358.3,7217,2)
- ;;=^5009586
- ;;^UTILITY(U,$J,358.3,7218,0)
- ;;=L98.499^^49^479^127
- ;;^UTILITY(U,$J,358.3,7218,1,0)
+ ;;^UTILITY(U,$J,358.3,16290,1,3,0)
+ ;;=3^Malig Neop Pleura
+ ;;^UTILITY(U,$J,358.3,16290,1,4,0)
+ ;;=4^C38.4
+ ;;^UTILITY(U,$J,358.3,16290,2)
+ ;;=^267140
+ ;;^UTILITY(U,$J,358.3,16291,0)
+ ;;=C44.92^^64^784^19
+ ;;^UTILITY(U,$J,358.3,16291,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7218,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Skin
- ;;^UTILITY(U,$J,358.3,7218,1,4,0)
- ;;=4^L98.499
- ;;^UTILITY(U,$J,358.3,7218,2)
- ;;=^5009591
- ;;^UTILITY(U,$J,358.3,7219,0)
- ;;=M90.80^^49^479^128
- ;;^UTILITY(U,$J,358.3,7219,1,0)
+ ;;^UTILITY(U,$J,358.3,16291,1,3,0)
+ ;;=3^SCC of Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,16291,1,4,0)
+ ;;=4^C44.92
+ ;;^UTILITY(U,$J,358.3,16291,2)
+ ;;=^5001093
+ ;;^UTILITY(U,$J,358.3,16292,0)
+ ;;=C49.9^^64^784^13
+ ;;^UTILITY(U,$J,358.3,16292,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7219,1,3,0)
- ;;=3^Osteopathy in Diseases Classified Elsewhere
- ;;^UTILITY(U,$J,358.3,7219,1,4,0)
- ;;=4^M90.80
- ;;^UTILITY(U,$J,358.3,7219,2)
- ;;=^5015168
- ;;^UTILITY(U,$J,358.3,7220,0)
- ;;=Z83.3^^49^479^89
- ;;^UTILITY(U,$J,358.3,7220,1,0)
+ ;;^UTILITY(U,$J,358.3,16292,1,3,0)
+ ;;=3^Malig Neop Connective & Soft Tissue,Unspec
+ ;;^UTILITY(U,$J,358.3,16292,1,4,0)
+ ;;=4^C49.9
+ ;;^UTILITY(U,$J,358.3,16292,2)
+ ;;=^5001136
+ ;;^UTILITY(U,$J,358.3,16293,0)
+ ;;=C72.0^^64^784^17
+ ;;^UTILITY(U,$J,358.3,16293,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7220,1,3,0)
- ;;=3^Family Hx of Diabetes Mellitus
- ;;^UTILITY(U,$J,358.3,7220,1,4,0)
- ;;=4^Z83.3
- ;;^UTILITY(U,$J,358.3,7220,2)
- ;;=^5063379
- ;;^UTILITY(U,$J,358.3,7221,0)
- ;;=Z79.4^^49^479^95
- ;;^UTILITY(U,$J,358.3,7221,1,0)
+ ;;^UTILITY(U,$J,358.3,16293,1,3,0)
+ ;;=3^Malig Neop Spinal Cord
+ ;;^UTILITY(U,$J,358.3,16293,1,4,0)
+ ;;=4^C72.0
+ ;;^UTILITY(U,$J,358.3,16293,2)
+ ;;=^267292
+ ;;^UTILITY(U,$J,358.3,16294,0)
+ ;;=C72.1^^64^784^12
+ ;;^UTILITY(U,$J,358.3,16294,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7221,1,3,0)
- ;;=3^Long Term (Current) Use of Insulin
- ;;^UTILITY(U,$J,358.3,7221,1,4,0)
- ;;=4^Z79.4
- ;;^UTILITY(U,$J,358.3,7221,2)
- ;;=^5063334
- ;;^UTILITY(U,$J,358.3,7222,0)
- ;;=Z09.^^49^479^88
- ;;^UTILITY(U,$J,358.3,7222,1,0)
+ ;;^UTILITY(U,$J,358.3,16294,1,3,0)
+ ;;=3^Malig Neop Cauda Equina
+ ;;^UTILITY(U,$J,358.3,16294,1,4,0)
+ ;;=4^C72.1
+ ;;^UTILITY(U,$J,358.3,16294,2)
+ ;;=^5001298
+ ;;^UTILITY(U,$J,358.3,16295,0)
+ ;;=C92.40^^64^785^15
+ ;;^UTILITY(U,$J,358.3,16295,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7222,1,3,0)
- ;;=3^F/U Exam After Treatment,Not Malig Neop
- ;;^UTILITY(U,$J,358.3,7222,1,4,0)
- ;;=4^Z09.
- ;;^UTILITY(U,$J,358.3,7222,2)
- ;;=^5062668
- ;;^UTILITY(U,$J,358.3,7223,0)
- ;;=Z76.0^^49^479^92
- ;;^UTILITY(U,$J,358.3,7223,1,0)
+ ;;^UTILITY(U,$J,358.3,16295,1,3,0)
+ ;;=3^Promyelocytic Leukemia,Acute,Not in Remission
+ ;;^UTILITY(U,$J,358.3,16295,1,4,0)
+ ;;=4^C92.40
+ ;;^UTILITY(U,$J,358.3,16295,2)
+ ;;=^5001801
+ ;;^UTILITY(U,$J,358.3,16296,0)
+ ;;=C92.41^^64^785^14
+ ;;^UTILITY(U,$J,358.3,16296,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7223,1,3,0)
- ;;=3^Issue of Repeat Prescription
- ;;^UTILITY(U,$J,358.3,7223,1,4,0)
- ;;=4^Z76.0
- ;;^UTILITY(U,$J,358.3,7223,2)
- ;;=^5063297
- ;;^UTILITY(U,$J,358.3,7224,0)
- ;;=E10.11^^49^479^36
- ;;^UTILITY(U,$J,358.3,7224,1,0)
+ ;;^UTILITY(U,$J,358.3,16296,1,3,0)
+ ;;=3^Promyelocytic Leukemia,Acute,In Remission
+ ;;^UTILITY(U,$J,358.3,16296,1,4,0)
+ ;;=4^C92.41
+ ;;^UTILITY(U,$J,358.3,16296,2)
+ ;;=^5001802
+ ;;^UTILITY(U,$J,358.3,16297,0)
+ ;;=C92.50^^64^785^11
+ ;;^UTILITY(U,$J,358.3,16297,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7224,1,3,0)
- ;;=3^Diabetes Type 1 w/ Ketacidosis w/ Coma
- ;;^UTILITY(U,$J,358.3,7224,1,4,0)
- ;;=4^E10.11
- ;;^UTILITY(U,$J,358.3,7224,2)
- ;;=^5002588
- ;;^UTILITY(U,$J,358.3,7225,0)
- ;;=E10.22^^49^479^18
- ;;^UTILITY(U,$J,358.3,7225,1,0)
+ ;;^UTILITY(U,$J,358.3,16297,1,3,0)
+ ;;=3^Myelomonocytic Leumkemia,Acute,Not in Remission
+ ;;^UTILITY(U,$J,358.3,16297,1,4,0)
+ ;;=4^C92.50
+ ;;^UTILITY(U,$J,358.3,16297,2)
+ ;;=^5001804
+ ;;^UTILITY(U,$J,358.3,16298,0)
+ ;;=C92.51^^64^785^10
+ ;;^UTILITY(U,$J,358.3,16298,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7225,1,3,0)
- ;;=3^Diabetes Type 1 w/ Diabetic Chr Kidney Disease
- ;;^UTILITY(U,$J,358.3,7225,1,4,0)
- ;;=4^E10.22
- ;;^UTILITY(U,$J,358.3,7225,2)
- ;;=^5002590
- ;;^UTILITY(U,$J,358.3,7226,0)
- ;;=E10.29^^49^479^20
- ;;^UTILITY(U,$J,358.3,7226,1,0)
+ ;;^UTILITY(U,$J,358.3,16298,1,3,0)
+ ;;=3^Myelomonocytic Leumkemia,Acute,In Remission
+ ;;^UTILITY(U,$J,358.3,16298,1,4,0)
+ ;;=4^C92.51
+ ;;^UTILITY(U,$J,358.3,16298,2)
+ ;;=^5001805
+ ;;^UTILITY(U,$J,358.3,16299,0)
+ ;;=C92.00^^64^785^4
+ ;;^UTILITY(U,$J,358.3,16299,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7226,1,3,0)
- ;;=3^Diabetes Type 1 w/ Diabetic Kidney Complication NEC
- ;;^UTILITY(U,$J,358.3,7226,1,4,0)
- ;;=4^E10.29
- ;;^UTILITY(U,$J,358.3,7226,2)
- ;;=^5002591
- ;;^UTILITY(U,$J,358.3,7227,0)
- ;;=E10.331^^49^479^40
- ;;^UTILITY(U,$J,358.3,7227,1,0)
+ ;;^UTILITY(U,$J,358.3,16299,1,3,0)
+ ;;=3^Myeloblastic Leukemia,Acute,Not in Remission
+ ;;^UTILITY(U,$J,358.3,16299,1,4,0)
+ ;;=4^C92.00
+ ;;^UTILITY(U,$J,358.3,16299,2)
+ ;;=^5001789
+ ;;^UTILITY(U,$J,358.3,16300,0)
+ ;;=C92.01^^64^785^3
+ ;;^UTILITY(U,$J,358.3,16300,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16300,1,3,0)
+ ;;=3^Myeloblastic Leukemia,Acute,In Remission
+ ;;^UTILITY(U,$J,358.3,16300,1,4,0)
+ ;;=4^C92.01
+ ;;^UTILITY(U,$J,358.3,16300,2)
+ ;;=^5001790
+ ;;^UTILITY(U,$J,358.3,16301,0)
+ ;;=C92.10^^64^785^7
+ ;;^UTILITY(U,$J,358.3,16301,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16301,1,3,0)
+ ;;=3^Myeloid Leukemia BCR/ABL-Positive,Chr,Not in Remission
+ ;;^UTILITY(U,$J,358.3,16301,1,4,0)
+ ;;=4^C92.10
+ ;;^UTILITY(U,$J,358.3,16301,2)
+ ;;=^5001792
+ ;;^UTILITY(U,$J,358.3,16302,0)
+ ;;=C92.11^^64^785^6
+ ;;^UTILITY(U,$J,358.3,16302,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16302,1,3,0)
+ ;;=3^Myeloid Leukemia BCR/ABL-Positive,Chr,In Remission
+ ;;^UTILITY(U,$J,358.3,16302,1,4,0)
+ ;;=4^C92.11
+ ;;^UTILITY(U,$J,358.3,16302,2)
+ ;;=^5001793
+ ;;^UTILITY(U,$J,358.3,16303,0)
+ ;;=C92.20^^64^785^9
+ ;;^UTILITY(U,$J,358.3,16303,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16303,1,3,0)
+ ;;=3^Myeloid Leukemia BCR/ABL-neg,Atyp Chr,Not in Remission
+ ;;^UTILITY(U,$J,358.3,16303,1,4,0)
+ ;;=4^C92.20
+ ;;^UTILITY(U,$J,358.3,16303,2)
+ ;;=^5001795
+ ;;^UTILITY(U,$J,358.3,16304,0)
+ ;;=C92.21^^64^785^8
+ ;;^UTILITY(U,$J,358.3,16304,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16304,1,3,0)
+ ;;=3^Myeloid Leukemia BCR/ABL-neg,Atyp Chr,In Remission
+ ;;^UTILITY(U,$J,358.3,16304,1,4,0)
+ ;;=4^C92.21
+ ;;^UTILITY(U,$J,358.3,16304,2)
+ ;;=^5001796
+ ;;^UTILITY(U,$J,358.3,16305,0)
+ ;;=D46.9^^64^785^5
+ ;;^UTILITY(U,$J,358.3,16305,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16305,1,3,0)
+ ;;=3^Myelodysplastic Syndrome,Unspec
+ ;;^UTILITY(U,$J,358.3,16305,1,4,0)
+ ;;=4^D46.9
+ ;;^UTILITY(U,$J,358.3,16305,2)
+ ;;=^334031
+ ;;^UTILITY(U,$J,358.3,16306,0)
+ ;;=D45.^^64^785^12
+ ;;^UTILITY(U,$J,358.3,16306,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16306,1,3,0)
+ ;;=3^Polycythemia Vera
+ ;;^UTILITY(U,$J,358.3,16306,1,4,0)
+ ;;=4^D45.
+ ;;^UTILITY(U,$J,358.3,16306,2)
+ ;;=^96105
+ ;;^UTILITY(U,$J,358.3,16307,0)
+ ;;=D75.1^^64^785^13
+ ;;^UTILITY(U,$J,358.3,16307,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16307,1,3,0)
+ ;;=3^Polycythemia,Secondary
+ ;;^UTILITY(U,$J,358.3,16307,1,4,0)
+ ;;=4^D75.1
+ ;;^UTILITY(U,$J,358.3,16307,2)
+ ;;=^186856
+ ;;^UTILITY(U,$J,358.3,16308,0)
+ ;;=D68.51^^64^785^1
+ ;;^UTILITY(U,$J,358.3,16308,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16308,1,3,0)
+ ;;=3^Activated Protein C Resistance
+ ;;^UTILITY(U,$J,358.3,16308,1,4,0)
+ ;;=4^D68.51
+ ;;^UTILITY(U,$J,358.3,16308,2)
+ ;;=^5002358
+ ;;^UTILITY(U,$J,358.3,16309,0)
+ ;;=D68.52^^64^785^16
+ ;;^UTILITY(U,$J,358.3,16309,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16309,1,3,0)
+ ;;=3^Prothrombin Gene Mutation
+ ;;^UTILITY(U,$J,358.3,16309,1,4,0)
+ ;;=4^D68.52
+ ;;^UTILITY(U,$J,358.3,16309,2)
+ ;;=^5002359
+ ;;^UTILITY(U,$J,358.3,16310,0)
+ ;;=D68.59^^64^785^17
+ ;;^UTILITY(U,$J,358.3,16310,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16310,1,3,0)
+ ;;=3^Thrombophilia,Primary,Other
+ ;;^UTILITY(U,$J,358.3,16310,1,4,0)
+ ;;=4^D68.59
+ ;;^UTILITY(U,$J,358.3,16310,2)
+ ;;=^5002360
+ ;;^UTILITY(U,$J,358.3,16311,0)
+ ;;=D68.62^^64^785^2
+ ;;^UTILITY(U,$J,358.3,16311,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16311,1,3,0)
+ ;;=3^Lupus Anticoagulant Syndrome
+ ;;^UTILITY(U,$J,358.3,16311,1,4,0)
+ ;;=4^D68.62
+ ;;^UTILITY(U,$J,358.3,16311,2)
+ ;;=^5002361
+ ;;^UTILITY(U,$J,358.3,16312,0)
+ ;;=D72.9^^64^785^18
+ ;;^UTILITY(U,$J,358.3,16312,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16312,1,3,0)
+ ;;=3^White Blood Cell Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,16312,1,4,0)
+ ;;=4^D72.9
+ ;;^UTILITY(U,$J,358.3,16312,2)
+ ;;=^5002381
+ ;;^UTILITY(U,$J,358.3,16313,0)
+ ;;=Z85.038^^64^786^15
+ ;;^UTILITY(U,$J,358.3,16313,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16313,1,3,0)
+ ;;=3^Personal Hx Malig Neop Large Intestine
+ ;;^UTILITY(U,$J,358.3,16313,1,4,0)
+ ;;=4^Z85.038
+ ;;^UTILITY(U,$J,358.3,16313,2)
+ ;;=^5063399
+ ;;^UTILITY(U,$J,358.3,16314,0)
+ ;;=Z85.51^^64^786^3
+ ;;^UTILITY(U,$J,358.3,16314,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16314,1,3,0)
+ ;;=3^Personal Hx Malig Neop Bladder
+ ;;^UTILITY(U,$J,358.3,16314,1,4,0)
+ ;;=4^Z85.51
+ ;;^UTILITY(U,$J,358.3,16314,2)
+ ;;=^5063428
+ ;;^UTILITY(U,$J,358.3,16315,0)
+ ;;=Z85.830^^64^786^4
+ ;;^UTILITY(U,$J,358.3,16315,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16315,1,3,0)
+ ;;=3^Personal Hx Malig Neop Bone
+ ;;^UTILITY(U,$J,358.3,16315,1,4,0)
+ ;;=4^Z85.830
+ ;;^UTILITY(U,$J,358.3,16315,2)
+ ;;=^5063444
+ ;;^UTILITY(U,$J,358.3,16316,0)
+ ;;=Z85.841^^64^786^5

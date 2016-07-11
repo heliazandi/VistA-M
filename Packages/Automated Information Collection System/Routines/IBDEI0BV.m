@@ -1,136 +1,290 @@
-IBDEI0BV ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0BV ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,5107,0)
- ;;=R10.84^^40^352^4
- ;;^UTILITY(U,$J,358.3,5107,1,0)
+ ;;^UTILITY(U,$J,358.3,11893,2)
+ ;;=^267081
+ ;;^UTILITY(U,$J,358.3,11894,0)
+ ;;=C18.7^^56^640^78
+ ;;^UTILITY(U,$J,358.3,11894,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5107,1,3,0)
- ;;=3^Generalized Abdominal Pain
- ;;^UTILITY(U,$J,358.3,5107,1,4,0)
- ;;=4^R10.84
- ;;^UTILITY(U,$J,358.3,5107,2)
- ;;=^5019229
- ;;^UTILITY(U,$J,358.3,5108,0)
- ;;=R10.30^^40^352^7
- ;;^UTILITY(U,$J,358.3,5108,1,0)
+ ;;^UTILITY(U,$J,358.3,11894,1,3,0)
+ ;;=3^Malig Neop of Sigmoid Colon
+ ;;^UTILITY(U,$J,358.3,11894,1,4,0)
+ ;;=4^C18.7
+ ;;^UTILITY(U,$J,358.3,11894,2)
+ ;;=^267082
+ ;;^UTILITY(U,$J,358.3,11895,0)
+ ;;=C18.8^^56^640^67
+ ;;^UTILITY(U,$J,358.3,11895,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5108,1,3,0)
- ;;=3^Lower Abdominal Pain,Unspec
- ;;^UTILITY(U,$J,358.3,5108,1,4,0)
- ;;=4^R10.30
- ;;^UTILITY(U,$J,358.3,5108,2)
- ;;=^5019210
- ;;^UTILITY(U,$J,358.3,5109,0)
- ;;=R10.2^^40^352^8
- ;;^UTILITY(U,$J,358.3,5109,1,0)
+ ;;^UTILITY(U,$J,358.3,11895,1,3,0)
+ ;;=3^Malig Neop of Overlapping Sites of Colon
+ ;;^UTILITY(U,$J,358.3,11895,1,4,0)
+ ;;=4^C18.8
+ ;;^UTILITY(U,$J,358.3,11895,2)
+ ;;=^5000928
+ ;;^UTILITY(U,$J,358.3,11896,0)
+ ;;=C18.9^^56^640^56
+ ;;^UTILITY(U,$J,358.3,11896,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5109,1,3,0)
- ;;=3^Pelvic/Perineal Pain
- ;;^UTILITY(U,$J,358.3,5109,1,4,0)
- ;;=4^R10.2
- ;;^UTILITY(U,$J,358.3,5109,2)
- ;;=^5019209
- ;;^UTILITY(U,$J,358.3,5110,0)
- ;;=R10.10^^40^352^12
- ;;^UTILITY(U,$J,358.3,5110,1,0)
+ ;;^UTILITY(U,$J,358.3,11896,1,3,0)
+ ;;=3^Malig Neop of Colon,Unspec
+ ;;^UTILITY(U,$J,358.3,11896,1,4,0)
+ ;;=4^C18.9
+ ;;^UTILITY(U,$J,358.3,11896,2)
+ ;;=^5000929
+ ;;^UTILITY(U,$J,358.3,11897,0)
+ ;;=C19.^^56^640^76
+ ;;^UTILITY(U,$J,358.3,11897,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5110,1,3,0)
- ;;=3^Upper Abdominal Pain,Unspec
- ;;^UTILITY(U,$J,358.3,5110,1,4,0)
- ;;=4^R10.10
- ;;^UTILITY(U,$J,358.3,5110,2)
- ;;=^5019205
- ;;^UTILITY(U,$J,358.3,5111,0)
- ;;=Z48.00^^40^353^12
- ;;^UTILITY(U,$J,358.3,5111,1,0)
+ ;;^UTILITY(U,$J,358.3,11897,1,3,0)
+ ;;=3^Malig Neop of Rectosigmoid Junction
+ ;;^UTILITY(U,$J,358.3,11897,1,4,0)
+ ;;=4^C19.
+ ;;^UTILITY(U,$J,358.3,11897,2)
+ ;;=^267089
+ ;;^UTILITY(U,$J,358.3,11898,0)
+ ;;=C20.^^56^640^77
+ ;;^UTILITY(U,$J,358.3,11898,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5111,1,3,0)
- ;;=3^Change/Removal Nonsurgical Wound Dressing
- ;;^UTILITY(U,$J,358.3,5111,1,4,0)
- ;;=4^Z48.00
- ;;^UTILITY(U,$J,358.3,5111,2)
- ;;=^5063033
- ;;^UTILITY(U,$J,358.3,5112,0)
- ;;=Z48.01^^40^353^13
- ;;^UTILITY(U,$J,358.3,5112,1,0)
+ ;;^UTILITY(U,$J,358.3,11898,1,3,0)
+ ;;=3^Malig Neop of Rectum
+ ;;^UTILITY(U,$J,358.3,11898,1,4,0)
+ ;;=4^C20.
+ ;;^UTILITY(U,$J,358.3,11898,2)
+ ;;=^267090
+ ;;^UTILITY(U,$J,358.3,11899,0)
+ ;;=C25.0^^56^640^62
+ ;;^UTILITY(U,$J,358.3,11899,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5112,1,3,0)
- ;;=3^Change/Removal Surgical Wound Dressing
- ;;^UTILITY(U,$J,358.3,5112,1,4,0)
- ;;=4^Z48.01
- ;;^UTILITY(U,$J,358.3,5112,2)
- ;;=^5063034
- ;;^UTILITY(U,$J,358.3,5113,0)
- ;;=Z48.02^^40^353^16
- ;;^UTILITY(U,$J,358.3,5113,1,0)
+ ;;^UTILITY(U,$J,358.3,11899,1,3,0)
+ ;;=3^Malig Neop of Head of Pancreas
+ ;;^UTILITY(U,$J,358.3,11899,1,4,0)
+ ;;=4^C25.0
+ ;;^UTILITY(U,$J,358.3,11899,2)
+ ;;=^267104
+ ;;^UTILITY(U,$J,358.3,11900,0)
+ ;;=C25.1^^56^640^52
+ ;;^UTILITY(U,$J,358.3,11900,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5113,1,3,0)
- ;;=3^Removal of Sutures
- ;;^UTILITY(U,$J,358.3,5113,1,4,0)
- ;;=4^Z48.02
- ;;^UTILITY(U,$J,358.3,5113,2)
- ;;=^5063035
- ;;^UTILITY(U,$J,358.3,5114,0)
- ;;=Z48.3^^40^353^4
- ;;^UTILITY(U,$J,358.3,5114,1,0)
+ ;;^UTILITY(U,$J,358.3,11900,1,3,0)
+ ;;=3^Malig Neop of Body of Pancreas
+ ;;^UTILITY(U,$J,358.3,11900,1,4,0)
+ ;;=4^C25.1
+ ;;^UTILITY(U,$J,358.3,11900,2)
+ ;;=^267105
+ ;;^UTILITY(U,$J,358.3,11901,0)
+ ;;=C25.2^^56^640^81
+ ;;^UTILITY(U,$J,358.3,11901,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5114,1,3,0)
- ;;=3^Aftercare Following Neoplasm Surgery
- ;;^UTILITY(U,$J,358.3,5114,1,4,0)
- ;;=4^Z48.3
- ;;^UTILITY(U,$J,358.3,5114,2)
- ;;=^5063046
- ;;^UTILITY(U,$J,358.3,5115,0)
- ;;=Z48.810^^40^353^7
- ;;^UTILITY(U,$J,358.3,5115,1,0)
+ ;;^UTILITY(U,$J,358.3,11901,1,3,0)
+ ;;=3^Malig Neop of Tail of Pancreas
+ ;;^UTILITY(U,$J,358.3,11901,1,4,0)
+ ;;=4^C25.2
+ ;;^UTILITY(U,$J,358.3,11901,2)
+ ;;=^267106
+ ;;^UTILITY(U,$J,358.3,11902,0)
+ ;;=C25.3^^56^640^73
+ ;;^UTILITY(U,$J,358.3,11902,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5115,1,3,0)
- ;;=3^Aftercare Following Sense Organ Surgery
- ;;^UTILITY(U,$J,358.3,5115,1,4,0)
- ;;=4^Z48.810
- ;;^UTILITY(U,$J,358.3,5115,2)
- ;;=^5063047
- ;;^UTILITY(U,$J,358.3,5116,0)
- ;;=Z48.811^^40^353^5
- ;;^UTILITY(U,$J,358.3,5116,1,0)
+ ;;^UTILITY(U,$J,358.3,11902,1,3,0)
+ ;;=3^Malig Neop of Pancreatic Duct
+ ;;^UTILITY(U,$J,358.3,11902,1,4,0)
+ ;;=4^C25.3
+ ;;^UTILITY(U,$J,358.3,11902,2)
+ ;;=^267107
+ ;;^UTILITY(U,$J,358.3,11903,0)
+ ;;=C25.4^^56^640^58
+ ;;^UTILITY(U,$J,358.3,11903,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5116,1,3,0)
- ;;=3^Aftercare Following Nervous System Surgery
- ;;^UTILITY(U,$J,358.3,5116,1,4,0)
- ;;=4^Z48.811
- ;;^UTILITY(U,$J,358.3,5116,2)
- ;;=^5063048
- ;;^UTILITY(U,$J,358.3,5117,0)
- ;;=Z48.812^^40^353^1
- ;;^UTILITY(U,$J,358.3,5117,1,0)
+ ;;^UTILITY(U,$J,358.3,11903,1,3,0)
+ ;;=3^Malig Neop of Endocrine Pancreas
+ ;;^UTILITY(U,$J,358.3,11903,1,4,0)
+ ;;=4^C25.4
+ ;;^UTILITY(U,$J,358.3,11903,2)
+ ;;=^5000943
+ ;;^UTILITY(U,$J,358.3,11904,0)
+ ;;=C25.7^^56^640^71
+ ;;^UTILITY(U,$J,358.3,11904,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5117,1,3,0)
- ;;=3^Aftercare Following Circulatory System Surgery
- ;;^UTILITY(U,$J,358.3,5117,1,4,0)
- ;;=4^Z48.812
- ;;^UTILITY(U,$J,358.3,5117,2)
- ;;=^5063049
- ;;^UTILITY(U,$J,358.3,5118,0)
- ;;=Z48.813^^40^353^6
- ;;^UTILITY(U,$J,358.3,5118,1,0)
+ ;;^UTILITY(U,$J,358.3,11904,1,3,0)
+ ;;=3^Malig Neop of Pancreas NEC
+ ;;^UTILITY(U,$J,358.3,11904,1,4,0)
+ ;;=4^C25.7
+ ;;^UTILITY(U,$J,358.3,11904,2)
+ ;;=^5000944
+ ;;^UTILITY(U,$J,358.3,11905,0)
+ ;;=C25.8^^56^640^69
+ ;;^UTILITY(U,$J,358.3,11905,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5118,1,3,0)
- ;;=3^Aftercare Following Respiratory System Surgery
- ;;^UTILITY(U,$J,358.3,5118,1,4,0)
- ;;=4^Z48.813
- ;;^UTILITY(U,$J,358.3,5118,2)
- ;;=^5063050
- ;;^UTILITY(U,$J,358.3,5119,0)
- ;;=Z48.814^^40^353^10
- ;;^UTILITY(U,$J,358.3,5119,1,0)
+ ;;^UTILITY(U,$J,358.3,11905,1,3,0)
+ ;;=3^Malig Neop of Overlapping Sites of Pancreas
+ ;;^UTILITY(U,$J,358.3,11905,1,4,0)
+ ;;=4^C25.8
+ ;;^UTILITY(U,$J,358.3,11905,2)
+ ;;=^5000945
+ ;;^UTILITY(U,$J,358.3,11906,0)
+ ;;=C25.9^^56^640^72
+ ;;^UTILITY(U,$J,358.3,11906,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5119,1,3,0)
- ;;=3^Aftercare Following Teeth/Oral Cavity Surgery
- ;;^UTILITY(U,$J,358.3,5119,1,4,0)
- ;;=4^Z48.814
- ;;^UTILITY(U,$J,358.3,5119,2)
- ;;=^5063051
- ;;^UTILITY(U,$J,358.3,5120,0)
- ;;=Z48.815^^40^353^2
+ ;;^UTILITY(U,$J,358.3,11906,1,3,0)
+ ;;=3^Malig Neop of Pancreas,Unspec
+ ;;^UTILITY(U,$J,358.3,11906,1,4,0)
+ ;;=4^C25.9
+ ;;^UTILITY(U,$J,358.3,11906,2)
+ ;;=^5000946
+ ;;^UTILITY(U,$J,358.3,11907,0)
+ ;;=D12.0^^56^640^8
+ ;;^UTILITY(U,$J,358.3,11907,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11907,1,3,0)
+ ;;=3^Benign Neop of Cecum
+ ;;^UTILITY(U,$J,358.3,11907,1,4,0)
+ ;;=4^D12.0
+ ;;^UTILITY(U,$J,358.3,11907,2)
+ ;;=^5001963
+ ;;^UTILITY(U,$J,358.3,11908,0)
+ ;;=D12.1^^56^640^6
+ ;;^UTILITY(U,$J,358.3,11908,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11908,1,3,0)
+ ;;=3^Benign Neop of Appendix
+ ;;^UTILITY(U,$J,358.3,11908,1,4,0)
+ ;;=4^D12.1
+ ;;^UTILITY(U,$J,358.3,11908,2)
+ ;;=^5001964
+ ;;^UTILITY(U,$J,358.3,11909,0)
+ ;;=D12.2^^56^640^7
+ ;;^UTILITY(U,$J,358.3,11909,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11909,1,3,0)
+ ;;=3^Benign Neop of Ascending Colon
+ ;;^UTILITY(U,$J,358.3,11909,1,4,0)
+ ;;=4^D12.2
+ ;;^UTILITY(U,$J,358.3,11909,2)
+ ;;=^5001965
+ ;;^UTILITY(U,$J,358.3,11910,0)
+ ;;=D12.3^^56^640^12
+ ;;^UTILITY(U,$J,358.3,11910,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11910,1,3,0)
+ ;;=3^Benign Neop of Transverse Colon
+ ;;^UTILITY(U,$J,358.3,11910,1,4,0)
+ ;;=4^D12.3
+ ;;^UTILITY(U,$J,358.3,11910,2)
+ ;;=^5001966
+ ;;^UTILITY(U,$J,358.3,11911,0)
+ ;;=D12.4^^56^640^10
+ ;;^UTILITY(U,$J,358.3,11911,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11911,1,3,0)
+ ;;=3^Benign Neop of Descending Colon
+ ;;^UTILITY(U,$J,358.3,11911,1,4,0)
+ ;;=4^D12.4
+ ;;^UTILITY(U,$J,358.3,11911,2)
+ ;;=^5001967
+ ;;^UTILITY(U,$J,358.3,11912,0)
+ ;;=D12.5^^56^640^11
+ ;;^UTILITY(U,$J,358.3,11912,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11912,1,3,0)
+ ;;=3^Benign Neop of Sigmoid Colon
+ ;;^UTILITY(U,$J,358.3,11912,1,4,0)
+ ;;=4^D12.5
+ ;;^UTILITY(U,$J,358.3,11912,2)
+ ;;=^5001968
+ ;;^UTILITY(U,$J,358.3,11913,0)
+ ;;=D12.6^^56^640^9
+ ;;^UTILITY(U,$J,358.3,11913,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11913,1,3,0)
+ ;;=3^Benign Neop of Colon,Unspec
+ ;;^UTILITY(U,$J,358.3,11913,1,4,0)
+ ;;=4^D12.6
+ ;;^UTILITY(U,$J,358.3,11913,2)
+ ;;=^5001969
+ ;;^UTILITY(U,$J,358.3,11914,0)
+ ;;=E66.01^^56^640^85
+ ;;^UTILITY(U,$J,358.3,11914,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11914,1,3,0)
+ ;;=3^Morbid Obesity d/t Excess Calories
+ ;;^UTILITY(U,$J,358.3,11914,1,4,0)
+ ;;=4^E66.01
+ ;;^UTILITY(U,$J,358.3,11914,2)
+ ;;=^5002826
+ ;;^UTILITY(U,$J,358.3,11915,0)
+ ;;=E66.9^^56^640^86
+ ;;^UTILITY(U,$J,358.3,11915,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11915,1,3,0)
+ ;;=3^Obesity,Unspec
+ ;;^UTILITY(U,$J,358.3,11915,1,4,0)
+ ;;=4^E66.9
+ ;;^UTILITY(U,$J,358.3,11915,2)
+ ;;=^5002832
+ ;;^UTILITY(U,$J,358.3,11916,0)
+ ;;=K21.9^^56^640^35
+ ;;^UTILITY(U,$J,358.3,11916,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11916,1,3,0)
+ ;;=3^Gastro-Esophageal Reflux Disease w/o Esophagitis
+ ;;^UTILITY(U,$J,358.3,11916,1,4,0)
+ ;;=4^K21.9
+ ;;^UTILITY(U,$J,358.3,11916,2)
+ ;;=^5008505
+ ;;^UTILITY(U,$J,358.3,11917,0)
+ ;;=K22.10^^56^640^32
+ ;;^UTILITY(U,$J,358.3,11917,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11917,1,3,0)
+ ;;=3^Esophagus Ulcer w/o Bleeding
+ ;;^UTILITY(U,$J,358.3,11917,1,4,0)
+ ;;=4^K22.10
+ ;;^UTILITY(U,$J,358.3,11917,2)
+ ;;=^329929
+ ;;^UTILITY(U,$J,358.3,11918,0)
+ ;;=K22.2^^56^640^31
+ ;;^UTILITY(U,$J,358.3,11918,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11918,1,3,0)
+ ;;=3^Esophageal Obstruction
+ ;;^UTILITY(U,$J,358.3,11918,1,4,0)
+ ;;=4^K22.2
+ ;;^UTILITY(U,$J,358.3,11918,2)
+ ;;=^5008507
+ ;;^UTILITY(U,$J,358.3,11919,0)
+ ;;=K25.9^^56^640^34
+ ;;^UTILITY(U,$J,358.3,11919,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11919,1,3,0)
+ ;;=3^Gastric Ulcer w/o Hemorrhage/Perforation
+ ;;^UTILITY(U,$J,358.3,11919,1,4,0)
+ ;;=4^K25.9
+ ;;^UTILITY(U,$J,358.3,11919,2)
+ ;;=^5008522
+ ;;^UTILITY(U,$J,358.3,11920,0)
+ ;;=K27.9^^56^640^87
+ ;;^UTILITY(U,$J,358.3,11920,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11920,1,3,0)
+ ;;=3^Peptic Ulcer w/o Hemorrhage/Perforation
+ ;;^UTILITY(U,$J,358.3,11920,1,4,0)
+ ;;=4^K27.9
+ ;;^UTILITY(U,$J,358.3,11920,2)
+ ;;=^5008536
+ ;;^UTILITY(U,$J,358.3,11921,0)
+ ;;=K40.20^^56^640^13
+ ;;^UTILITY(U,$J,358.3,11921,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11921,1,3,0)
+ ;;=3^Bilateral Inguinal Hernia
+ ;;^UTILITY(U,$J,358.3,11921,1,4,0)
+ ;;=4^K40.20
+ ;;^UTILITY(U,$J,358.3,11921,2)
+ ;;=^5008585
+ ;;^UTILITY(U,$J,358.3,11922,0)
+ ;;=K40.90^^56^640^94
+ ;;^UTILITY(U,$J,358.3,11922,1,0)
+ ;;=^358.31IA^4^2

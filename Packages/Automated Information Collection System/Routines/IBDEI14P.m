@@ -1,130 +1,278 @@
-IBDEI14P ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI14P ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18851,1,4,0)
- ;;=4^D59.2
- ;;^UTILITY(U,$J,358.3,18851,2)
- ;;=^5002325
- ;;^UTILITY(U,$J,358.3,18852,0)
- ;;=R59.9^^94^916^60
- ;;^UTILITY(U,$J,358.3,18852,1,0)
+ ;;^UTILITY(U,$J,358.3,40998,2)
+ ;;=^5007942
+ ;;^UTILITY(U,$J,358.3,40999,0)
+ ;;=I82.A12^^153^2003^11
+ ;;^UTILITY(U,$J,358.3,40999,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18852,1,3,0)
- ;;=3^Enlarged Lymph Nodes,Unspec
- ;;^UTILITY(U,$J,358.3,18852,1,4,0)
- ;;=4^R59.9
- ;;^UTILITY(U,$J,358.3,18852,2)
- ;;=^5019531
- ;;^UTILITY(U,$J,358.3,18853,0)
- ;;=D47.3^^94^916^61
- ;;^UTILITY(U,$J,358.3,18853,1,0)
+ ;;^UTILITY(U,$J,358.3,40999,1,3,0)
+ ;;=3^AC Embol & Thromb Lt Ax Vein
+ ;;^UTILITY(U,$J,358.3,40999,1,4,0)
+ ;;=4^I82.A12
+ ;;^UTILITY(U,$J,358.3,40999,2)
+ ;;=^5007943
+ ;;^UTILITY(U,$J,358.3,41000,0)
+ ;;=I82.A13^^153^2003^1
+ ;;^UTILITY(U,$J,358.3,41000,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18853,1,3,0)
- ;;=3^Essential Thrombocythemia
- ;;^UTILITY(U,$J,358.3,18853,1,4,0)
- ;;=4^D47.3
- ;;^UTILITY(U,$J,358.3,18853,2)
- ;;=^5002258
- ;;^UTILITY(U,$J,358.3,18854,0)
- ;;=C82.09^^94^916^62
- ;;^UTILITY(U,$J,358.3,18854,1,0)
+ ;;^UTILITY(U,$J,358.3,41000,1,3,0)
+ ;;=3^AC Embol & Thromb Bil Ax Vein
+ ;;^UTILITY(U,$J,358.3,41000,1,4,0)
+ ;;=4^I82.A13
+ ;;^UTILITY(U,$J,358.3,41000,2)
+ ;;=^5007944
+ ;;^UTILITY(U,$J,358.3,41001,0)
+ ;;=I82.B11^^153^2003^27
+ ;;^UTILITY(U,$J,358.3,41001,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18854,1,3,0)
- ;;=3^Follicular Lymphoma Grade I,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,18854,1,4,0)
- ;;=4^C82.09
- ;;^UTILITY(U,$J,358.3,18854,2)
- ;;=^5001470
- ;;^UTILITY(U,$J,358.3,18855,0)
- ;;=C82.00^^94^916^63
- ;;^UTILITY(U,$J,358.3,18855,1,0)
+ ;;^UTILITY(U,$J,358.3,41001,1,3,0)
+ ;;=3^AC Embol & Thromb Rt Subclav Vein
+ ;;^UTILITY(U,$J,358.3,41001,1,4,0)
+ ;;=4^I82.B11
+ ;;^UTILITY(U,$J,358.3,41001,2)
+ ;;=^5007950
+ ;;^UTILITY(U,$J,358.3,41002,0)
+ ;;=I82.B12^^153^2003^17
+ ;;^UTILITY(U,$J,358.3,41002,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18855,1,3,0)
- ;;=3^Follicular Lymphoma Grade I,Unspec Site
- ;;^UTILITY(U,$J,358.3,18855,1,4,0)
- ;;=4^C82.00
- ;;^UTILITY(U,$J,358.3,18855,2)
- ;;=^5001461
- ;;^UTILITY(U,$J,358.3,18856,0)
- ;;=C82.19^^94^916^64
- ;;^UTILITY(U,$J,358.3,18856,1,0)
+ ;;^UTILITY(U,$J,358.3,41002,1,3,0)
+ ;;=3^AC Embol & Thromb Lt Subclav Vein
+ ;;^UTILITY(U,$J,358.3,41002,1,4,0)
+ ;;=4^I82.B12
+ ;;^UTILITY(U,$J,358.3,41002,2)
+ ;;=^5007951
+ ;;^UTILITY(U,$J,358.3,41003,0)
+ ;;=I82.B13^^153^2003^7
+ ;;^UTILITY(U,$J,358.3,41003,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18856,1,3,0)
- ;;=3^Follicular Lymphoma Grade II,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,18856,1,4,0)
- ;;=4^C82.19
- ;;^UTILITY(U,$J,358.3,18856,2)
- ;;=^5001480
- ;;^UTILITY(U,$J,358.3,18857,0)
- ;;=C82.10^^94^916^65
- ;;^UTILITY(U,$J,358.3,18857,1,0)
+ ;;^UTILITY(U,$J,358.3,41003,1,3,0)
+ ;;=3^AC Embol & Thromb Bil Subclav Vein
+ ;;^UTILITY(U,$J,358.3,41003,1,4,0)
+ ;;=4^I82.B13
+ ;;^UTILITY(U,$J,358.3,41003,2)
+ ;;=^5007952
+ ;;^UTILITY(U,$J,358.3,41004,0)
+ ;;=I82.C11^^153^2003^24
+ ;;^UTILITY(U,$J,358.3,41004,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18857,1,3,0)
- ;;=3^Follicular Lymphoma Grade II,Unspec Site
- ;;^UTILITY(U,$J,358.3,18857,1,4,0)
- ;;=4^C82.10
- ;;^UTILITY(U,$J,358.3,18857,2)
- ;;=^5001471
- ;;^UTILITY(U,$J,358.3,18858,0)
- ;;=C82.29^^94^916^66
- ;;^UTILITY(U,$J,358.3,18858,1,0)
+ ;;^UTILITY(U,$J,358.3,41004,1,3,0)
+ ;;=3^AC Embol & Thromb Rt Int Jug Vein
+ ;;^UTILITY(U,$J,358.3,41004,1,4,0)
+ ;;=4^I82.C11
+ ;;^UTILITY(U,$J,358.3,41004,2)
+ ;;=^5007958
+ ;;^UTILITY(U,$J,358.3,41005,0)
+ ;;=I82.C12^^153^2003^14
+ ;;^UTILITY(U,$J,358.3,41005,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18858,1,3,0)
- ;;=3^Follicular Lymphoma Grade III,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,18858,1,4,0)
- ;;=4^C82.29
- ;;^UTILITY(U,$J,358.3,18858,2)
- ;;=^5001490
- ;;^UTILITY(U,$J,358.3,18859,0)
- ;;=C82.20^^94^916^67
- ;;^UTILITY(U,$J,358.3,18859,1,0)
+ ;;^UTILITY(U,$J,358.3,41005,1,3,0)
+ ;;=3^AC Embol & Thromb Lt Int Jug Vein
+ ;;^UTILITY(U,$J,358.3,41005,1,4,0)
+ ;;=4^I82.C12
+ ;;^UTILITY(U,$J,358.3,41005,2)
+ ;;=^5007959
+ ;;^UTILITY(U,$J,358.3,41006,0)
+ ;;=I82.C13^^153^2003^4
+ ;;^UTILITY(U,$J,358.3,41006,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18859,1,3,0)
- ;;=3^Follicular Lymphoma Grade III,Unspec Site
- ;;^UTILITY(U,$J,358.3,18859,1,4,0)
- ;;=4^C82.20
- ;;^UTILITY(U,$J,358.3,18859,2)
- ;;=^5001481
- ;;^UTILITY(U,$J,358.3,18860,0)
- ;;=C82.39^^94^916^68
- ;;^UTILITY(U,$J,358.3,18860,1,0)
+ ;;^UTILITY(U,$J,358.3,41006,1,3,0)
+ ;;=3^AC Embol & Thromb Bil Int Jug Vein
+ ;;^UTILITY(U,$J,358.3,41006,1,4,0)
+ ;;=4^I82.C13
+ ;;^UTILITY(U,$J,358.3,41006,2)
+ ;;=^5007960
+ ;;^UTILITY(U,$J,358.3,41007,0)
+ ;;=I82.890^^153^2003^31
+ ;;^UTILITY(U,$J,358.3,41007,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18860,1,3,0)
- ;;=3^Follicular Lymphoma Grade IIIa,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,18860,1,4,0)
- ;;=4^C82.39
- ;;^UTILITY(U,$J,358.3,18860,2)
- ;;=^5001500
- ;;^UTILITY(U,$J,358.3,18861,0)
- ;;=C82.30^^94^916^69
- ;;^UTILITY(U,$J,358.3,18861,1,0)
+ ;;^UTILITY(U,$J,358.3,41007,1,3,0)
+ ;;=3^AC Embol & Thromb oth Spec Veins
+ ;;^UTILITY(U,$J,358.3,41007,1,4,0)
+ ;;=4^I82.890
+ ;;^UTILITY(U,$J,358.3,41007,2)
+ ;;=^5007938
+ ;;^UTILITY(U,$J,358.3,41008,0)
+ ;;=I83.011^^153^2003^170
+ ;;^UTILITY(U,$J,358.3,41008,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18861,1,3,0)
- ;;=3^Follicular Lymphoma Grade IIIa,Unspec Site
- ;;^UTILITY(U,$J,358.3,18861,1,4,0)
- ;;=4^C82.30
- ;;^UTILITY(U,$J,358.3,18861,2)
- ;;=^5001491
- ;;^UTILITY(U,$J,358.3,18862,0)
- ;;=C82.49^^94^916^70
- ;;^UTILITY(U,$J,358.3,18862,1,0)
+ ;;^UTILITY(U,$J,358.3,41008,1,3,0)
+ ;;=3^Varic Veins RLE w/ Ulc of Thigh
+ ;;^UTILITY(U,$J,358.3,41008,1,4,0)
+ ;;=4^I83.011
+ ;;^UTILITY(U,$J,358.3,41008,2)
+ ;;=^5007973
+ ;;^UTILITY(U,$J,358.3,41009,0)
+ ;;=I83.012^^153^2003^166
+ ;;^UTILITY(U,$J,358.3,41009,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18862,1,3,0)
- ;;=3^Follicular Lymphoma Grade IIIb,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,18862,1,4,0)
- ;;=4^C82.49
- ;;^UTILITY(U,$J,358.3,18862,2)
- ;;=^5001510
- ;;^UTILITY(U,$J,358.3,18863,0)
- ;;=C82.40^^94^916^71
- ;;^UTILITY(U,$J,358.3,18863,1,0)
+ ;;^UTILITY(U,$J,358.3,41009,1,3,0)
+ ;;=3^Varic Veins RLE w/ Ulc of Calf
+ ;;^UTILITY(U,$J,358.3,41009,1,4,0)
+ ;;=4^I83.012
+ ;;^UTILITY(U,$J,358.3,41009,2)
+ ;;=^5007974
+ ;;^UTILITY(U,$J,358.3,41010,0)
+ ;;=I83.013^^153^2003^164
+ ;;^UTILITY(U,$J,358.3,41010,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18863,1,3,0)
- ;;=3^Follicular Lymphoma Grade IIIb,Unspec Site
- ;;^UTILITY(U,$J,358.3,18863,1,4,0)
- ;;=4^C82.40
- ;;^UTILITY(U,$J,358.3,18863,2)
- ;;=^5001501
- ;;^UTILITY(U,$J,358.3,18864,0)
- ;;=C82.99^^94^916^72
+ ;;^UTILITY(U,$J,358.3,41010,1,3,0)
+ ;;=3^Varic Veins RLE w/ Ulc of Ankle
+ ;;^UTILITY(U,$J,358.3,41010,1,4,0)
+ ;;=4^I83.013
+ ;;^UTILITY(U,$J,358.3,41010,2)
+ ;;=^5007975
+ ;;^UTILITY(U,$J,358.3,41011,0)
+ ;;=I83.014^^153^2003^167
+ ;;^UTILITY(U,$J,358.3,41011,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41011,1,3,0)
+ ;;=3^Varic Veins RLE w/ Ulc of Heel/Midfoot
+ ;;^UTILITY(U,$J,358.3,41011,1,4,0)
+ ;;=4^I83.014
+ ;;^UTILITY(U,$J,358.3,41011,2)
+ ;;=^5007976
+ ;;^UTILITY(U,$J,358.3,41012,0)
+ ;;=I83.015^^153^2003^169
+ ;;^UTILITY(U,$J,358.3,41012,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41012,1,3,0)
+ ;;=3^Varic Veins RLE w/ Ulc of Oth Part of Foot
+ ;;^UTILITY(U,$J,358.3,41012,1,4,0)
+ ;;=4^I83.015
+ ;;^UTILITY(U,$J,358.3,41012,2)
+ ;;=^5007977
+ ;;^UTILITY(U,$J,358.3,41013,0)
+ ;;=I83.023^^153^2003^149
+ ;;^UTILITY(U,$J,358.3,41013,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41013,1,3,0)
+ ;;=3^Varic Veins LLE w/ Ulc of Ankle
+ ;;^UTILITY(U,$J,358.3,41013,1,4,0)
+ ;;=4^I83.023
+ ;;^UTILITY(U,$J,358.3,41013,2)
+ ;;=^5007982
+ ;;^UTILITY(U,$J,358.3,41014,0)
+ ;;=I83.024^^153^2003^153
+ ;;^UTILITY(U,$J,358.3,41014,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41014,1,3,0)
+ ;;=3^Varic Veins LLE w/ Ulc of Heel/Midfoot
+ ;;^UTILITY(U,$J,358.3,41014,1,4,0)
+ ;;=4^I83.024
+ ;;^UTILITY(U,$J,358.3,41014,2)
+ ;;=^5007983
+ ;;^UTILITY(U,$J,358.3,41015,0)
+ ;;=I83.025^^153^2003^157
+ ;;^UTILITY(U,$J,358.3,41015,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41015,1,3,0)
+ ;;=3^Varic Veins LLE w/ Ulc of Oth Part of Foot
+ ;;^UTILITY(U,$J,358.3,41015,1,4,0)
+ ;;=4^I83.025
+ ;;^UTILITY(U,$J,358.3,41015,2)
+ ;;=^5007984
+ ;;^UTILITY(U,$J,358.3,41016,0)
+ ;;=I83.021^^153^2003^159
+ ;;^UTILITY(U,$J,358.3,41016,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41016,1,3,0)
+ ;;=3^Varic Veins LLE w/ Ulc of Thigh
+ ;;^UTILITY(U,$J,358.3,41016,1,4,0)
+ ;;=4^I83.021
+ ;;^UTILITY(U,$J,358.3,41016,2)
+ ;;=^5007980
+ ;;^UTILITY(U,$J,358.3,41017,0)
+ ;;=I83.022^^153^2003^151
+ ;;^UTILITY(U,$J,358.3,41017,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41017,1,3,0)
+ ;;=3^Varic Veins LLE w/ Ulc of Calf
+ ;;^UTILITY(U,$J,358.3,41017,1,4,0)
+ ;;=4^I83.022
+ ;;^UTILITY(U,$J,358.3,41017,2)
+ ;;=^5007981
+ ;;^UTILITY(U,$J,358.3,41018,0)
+ ;;=I83.028^^153^2003^156
+ ;;^UTILITY(U,$J,358.3,41018,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41018,1,3,0)
+ ;;=3^Varic Veins LLE w/ Ulc of Oth Part LL
+ ;;^UTILITY(U,$J,358.3,41018,1,4,0)
+ ;;=4^I83.028
+ ;;^UTILITY(U,$J,358.3,41018,2)
+ ;;=^5007985
+ ;;^UTILITY(U,$J,358.3,41019,0)
+ ;;=I83.11^^153^2003^161
+ ;;^UTILITY(U,$J,358.3,41019,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41019,1,3,0)
+ ;;=3^Varic Veins RLE w/ Inflam
+ ;;^UTILITY(U,$J,358.3,41019,1,4,0)
+ ;;=4^I83.11
+ ;;^UTILITY(U,$J,358.3,41019,2)
+ ;;=^5007988
+ ;;^UTILITY(U,$J,358.3,41020,0)
+ ;;=I83.12^^153^2003^148
+ ;;^UTILITY(U,$J,358.3,41020,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41020,1,3,0)
+ ;;=3^Varic Veins LLE w/ Inflammation
+ ;;^UTILITY(U,$J,358.3,41020,1,4,0)
+ ;;=4^I83.12
+ ;;^UTILITY(U,$J,358.3,41020,2)
+ ;;=^5007989
+ ;;^UTILITY(U,$J,358.3,41021,0)
+ ;;=I83.213^^153^2003^165
+ ;;^UTILITY(U,$J,358.3,41021,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41021,1,3,0)
+ ;;=3^Varic Veins RLE w/ Ulc of Ankle & Inflam
+ ;;^UTILITY(U,$J,358.3,41021,1,4,0)
+ ;;=4^I83.213
+ ;;^UTILITY(U,$J,358.3,41021,2)
+ ;;=^5007999
+ ;;^UTILITY(U,$J,358.3,41022,0)
+ ;;=I83.214^^153^2003^168
+ ;;^UTILITY(U,$J,358.3,41022,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41022,1,3,0)
+ ;;=3^Varic Veins RLE w/ Ulc of Heel/Midfoot & Inflam
+ ;;^UTILITY(U,$J,358.3,41022,1,4,0)
+ ;;=4^I83.214
+ ;;^UTILITY(U,$J,358.3,41022,2)
+ ;;=^5008000
+ ;;^UTILITY(U,$J,358.3,41023,0)
+ ;;=I83.215^^153^2003^163
+ ;;^UTILITY(U,$J,358.3,41023,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41023,1,3,0)
+ ;;=3^Varic Veins RLE w/ Ulc Oth Part of Ft & Inflam
+ ;;^UTILITY(U,$J,358.3,41023,1,4,0)
+ ;;=4^I83.215
+ ;;^UTILITY(U,$J,358.3,41023,2)
+ ;;=^5008001
+ ;;^UTILITY(U,$J,358.3,41024,0)
+ ;;=I83.218^^153^2003^162
+ ;;^UTILITY(U,$J,358.3,41024,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41024,1,3,0)
+ ;;=3^Varic Veins RLE w/ Ulc Oth Part LE & Inflam
+ ;;^UTILITY(U,$J,358.3,41024,1,4,0)
+ ;;=4^I83.218
+ ;;^UTILITY(U,$J,358.3,41024,2)
+ ;;=^5008002
+ ;;^UTILITY(U,$J,358.3,41025,0)
+ ;;=I83.221^^153^2003^160
+ ;;^UTILITY(U,$J,358.3,41025,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41025,1,3,0)
+ ;;=3^Varic Veins LLE w/ Ulc of Thigh & Inflam
+ ;;^UTILITY(U,$J,358.3,41025,1,4,0)
+ ;;=4^I83.221
+ ;;^UTILITY(U,$J,358.3,41025,2)
+ ;;=^5008004
+ ;;^UTILITY(U,$J,358.3,41026,0)
+ ;;=I83.222^^153^2003^152

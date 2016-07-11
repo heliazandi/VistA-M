@@ -1,134 +1,284 @@
-IBDEI0G8 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0G8 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7201,1,3,0)
- ;;=3^Mononeuropathy,Right Lower Limb,Unspec
- ;;^UTILITY(U,$J,358.3,7201,1,4,0)
- ;;=4^G57.91
- ;;^UTILITY(U,$J,358.3,7201,2)
- ;;=^5133369
- ;;^UTILITY(U,$J,358.3,7202,0)
- ;;=G57.92^^49^479^108
- ;;^UTILITY(U,$J,358.3,7202,1,0)
+ ;;^UTILITY(U,$J,358.3,16260,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7202,1,3,0)
- ;;=3^Mononeuropathy,Left Lower Limb,Unspec
- ;;^UTILITY(U,$J,358.3,7202,1,4,0)
- ;;=4^G57.92
- ;;^UTILITY(U,$J,358.3,7202,2)
- ;;=^5133370
- ;;^UTILITY(U,$J,358.3,7203,0)
- ;;=G58.9^^49^479^112
- ;;^UTILITY(U,$J,358.3,7203,1,0)
+ ;;^UTILITY(U,$J,358.3,16260,1,3,0)
+ ;;=3^Mycosis Fungoides,Extrnod & Solid Org Sites
+ ;;^UTILITY(U,$J,358.3,16260,1,4,0)
+ ;;=4^C84.09
+ ;;^UTILITY(U,$J,358.3,16260,2)
+ ;;=^5001630
+ ;;^UTILITY(U,$J,358.3,16261,0)
+ ;;=C79.71^^64^783^2
+ ;;^UTILITY(U,$J,358.3,16261,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7203,1,3,0)
- ;;=3^Mononeuropathy,Unspec
- ;;^UTILITY(U,$J,358.3,7203,1,4,0)
- ;;=4^G58.9
- ;;^UTILITY(U,$J,358.3,7203,2)
- ;;=^5004065
- ;;^UTILITY(U,$J,358.3,7204,0)
- ;;=L97.119^^49^479^126
- ;;^UTILITY(U,$J,358.3,7204,1,0)
+ ;;^UTILITY(U,$J,358.3,16261,1,3,0)
+ ;;=3^Malig Neop Adrenal Gland,Right,Secondary
+ ;;^UTILITY(U,$J,358.3,16261,1,4,0)
+ ;;=4^C79.71
+ ;;^UTILITY(U,$J,358.3,16261,2)
+ ;;=^5001356
+ ;;^UTILITY(U,$J,358.3,16262,0)
+ ;;=C79.72^^64^783^1
+ ;;^UTILITY(U,$J,358.3,16262,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7204,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Right Thigh
- ;;^UTILITY(U,$J,358.3,7204,1,4,0)
- ;;=4^L97.119
- ;;^UTILITY(U,$J,358.3,7204,2)
- ;;=^5009489
- ;;^UTILITY(U,$J,358.3,7205,0)
- ;;=L97.129^^49^479^120
- ;;^UTILITY(U,$J,358.3,7205,1,0)
+ ;;^UTILITY(U,$J,358.3,16262,1,3,0)
+ ;;=3^Malig Neop Adrenal Gland,Left,Secondary
+ ;;^UTILITY(U,$J,358.3,16262,1,4,0)
+ ;;=4^C79.72
+ ;;^UTILITY(U,$J,358.3,16262,2)
+ ;;=^5001357
+ ;;^UTILITY(U,$J,358.3,16263,0)
+ ;;=C79.51^^64^783^5
+ ;;^UTILITY(U,$J,358.3,16263,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7205,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Left Thigh
- ;;^UTILITY(U,$J,358.3,7205,1,4,0)
- ;;=4^L97.129
- ;;^UTILITY(U,$J,358.3,7205,2)
- ;;=^5009494
- ;;^UTILITY(U,$J,358.3,7206,0)
- ;;=L97.219^^49^479^122
- ;;^UTILITY(U,$J,358.3,7206,1,0)
+ ;;^UTILITY(U,$J,358.3,16263,1,3,0)
+ ;;=3^Malig Neop Bone,Secondary
+ ;;^UTILITY(U,$J,358.3,16263,1,4,0)
+ ;;=4^C79.51
+ ;;^UTILITY(U,$J,358.3,16263,2)
+ ;;=^5001350
+ ;;^UTILITY(U,$J,358.3,16264,0)
+ ;;=C79.52^^64^783^4
+ ;;^UTILITY(U,$J,358.3,16264,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7206,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Right Calf
- ;;^UTILITY(U,$J,358.3,7206,1,4,0)
- ;;=4^L97.219
- ;;^UTILITY(U,$J,358.3,7206,2)
- ;;=^5009504
- ;;^UTILITY(U,$J,358.3,7207,0)
- ;;=L97.229^^49^479^116
- ;;^UTILITY(U,$J,358.3,7207,1,0)
+ ;;^UTILITY(U,$J,358.3,16264,1,3,0)
+ ;;=3^Malig Neop Bone Marrow,Secondary
+ ;;^UTILITY(U,$J,358.3,16264,1,4,0)
+ ;;=4^C79.52
+ ;;^UTILITY(U,$J,358.3,16264,2)
+ ;;=^5001351
+ ;;^UTILITY(U,$J,358.3,16265,0)
+ ;;=C79.31^^64^783^6
+ ;;^UTILITY(U,$J,358.3,16265,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7207,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Left Calf
- ;;^UTILITY(U,$J,358.3,7207,1,4,0)
- ;;=4^L97.229
- ;;^UTILITY(U,$J,358.3,7207,2)
- ;;=^5009509
- ;;^UTILITY(U,$J,358.3,7208,0)
- ;;=L97.319^^49^479^121
- ;;^UTILITY(U,$J,358.3,7208,1,0)
+ ;;^UTILITY(U,$J,358.3,16265,1,3,0)
+ ;;=3^Malig Neop Brain,Secondary
+ ;;^UTILITY(U,$J,358.3,16265,1,4,0)
+ ;;=4^C79.31
+ ;;^UTILITY(U,$J,358.3,16265,2)
+ ;;=^5001347
+ ;;^UTILITY(U,$J,358.3,16266,0)
+ ;;=C79.32^^64^783^7
+ ;;^UTILITY(U,$J,358.3,16266,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7208,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Right Ankle
- ;;^UTILITY(U,$J,358.3,7208,1,4,0)
- ;;=4^L97.319
- ;;^UTILITY(U,$J,358.3,7208,2)
- ;;=^5009519
- ;;^UTILITY(U,$J,358.3,7209,0)
- ;;=L97.329^^49^479^115
- ;;^UTILITY(U,$J,358.3,7209,1,0)
+ ;;^UTILITY(U,$J,358.3,16266,1,3,0)
+ ;;=3^Malig Neop Cerebral Meninges,Secondary
+ ;;^UTILITY(U,$J,358.3,16266,1,4,0)
+ ;;=4^C79.32
+ ;;^UTILITY(U,$J,358.3,16266,2)
+ ;;=^5001348
+ ;;^UTILITY(U,$J,358.3,16267,0)
+ ;;=C78.7^^64^783^11
+ ;;^UTILITY(U,$J,358.3,16267,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7209,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Left Ankle
- ;;^UTILITY(U,$J,358.3,7209,1,4,0)
- ;;=4^L97.329
- ;;^UTILITY(U,$J,358.3,7209,2)
- ;;=^5009524
- ;;^UTILITY(U,$J,358.3,7210,0)
- ;;=L97.419^^49^479^124
- ;;^UTILITY(U,$J,358.3,7210,1,0)
+ ;;^UTILITY(U,$J,358.3,16267,1,3,0)
+ ;;=3^Malig Neop Liver/Intrahepatic Bile Duct,Secondary
+ ;;^UTILITY(U,$J,358.3,16267,1,4,0)
+ ;;=4^C78.7
+ ;;^UTILITY(U,$J,358.3,16267,2)
+ ;;=^5001339
+ ;;^UTILITY(U,$J,358.3,16268,0)
+ ;;=C78.01^^64^783^13
+ ;;^UTILITY(U,$J,358.3,16268,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7210,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Right Heel/Midfoot
- ;;^UTILITY(U,$J,358.3,7210,1,4,0)
- ;;=4^L97.419
- ;;^UTILITY(U,$J,358.3,7210,2)
- ;;=^5009534
- ;;^UTILITY(U,$J,358.3,7211,0)
- ;;=L97.429^^49^479^118
- ;;^UTILITY(U,$J,358.3,7211,1,0)
+ ;;^UTILITY(U,$J,358.3,16268,1,3,0)
+ ;;=3^Malig Neop Lung,Right,Secondary
+ ;;^UTILITY(U,$J,358.3,16268,1,4,0)
+ ;;=4^C78.01
+ ;;^UTILITY(U,$J,358.3,16268,2)
+ ;;=^5001335
+ ;;^UTILITY(U,$J,358.3,16269,0)
+ ;;=C78.02^^64^783^12
+ ;;^UTILITY(U,$J,358.3,16269,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7211,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Left Heel/Midfoot
- ;;^UTILITY(U,$J,358.3,7211,1,4,0)
- ;;=4^L97.429
- ;;^UTILITY(U,$J,358.3,7211,2)
- ;;=^5009539
- ;;^UTILITY(U,$J,358.3,7212,0)
- ;;=L97.519^^49^479^123
- ;;^UTILITY(U,$J,358.3,7212,1,0)
+ ;;^UTILITY(U,$J,358.3,16269,1,3,0)
+ ;;=3^Malig Neop Lung,Left,Secondary
+ ;;^UTILITY(U,$J,358.3,16269,1,4,0)
+ ;;=4^C78.02
+ ;;^UTILITY(U,$J,358.3,16269,2)
+ ;;=^5001336
+ ;;^UTILITY(U,$J,358.3,16270,0)
+ ;;=C77.2^^64^783^9
+ ;;^UTILITY(U,$J,358.3,16270,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7212,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Right Foot Oth Part
- ;;^UTILITY(U,$J,358.3,7212,1,4,0)
- ;;=4^L97.519
- ;;^UTILITY(U,$J,358.3,7212,2)
- ;;=^5009549
- ;;^UTILITY(U,$J,358.3,7213,0)
- ;;=L97.529^^49^479^117
- ;;^UTILITY(U,$J,358.3,7213,1,0)
+ ;;^UTILITY(U,$J,358.3,16270,1,3,0)
+ ;;=3^Malig Neop Intra-Abdominal Lymph Nodes,Secondary
+ ;;^UTILITY(U,$J,358.3,16270,1,4,0)
+ ;;=4^C77.2
+ ;;^UTILITY(U,$J,358.3,16270,2)
+ ;;=^267316
+ ;;^UTILITY(U,$J,358.3,16271,0)
+ ;;=C77.3^^64^783^3
+ ;;^UTILITY(U,$J,358.3,16271,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7213,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer,Left Foot Oth Part
- ;;^UTILITY(U,$J,358.3,7213,1,4,0)
- ;;=4^L97.529
- ;;^UTILITY(U,$J,358.3,7213,2)
- ;;=^5009554
- ;;^UTILITY(U,$J,358.3,7214,0)
- ;;=L97.819^^49^479^125
- ;;^UTILITY(U,$J,358.3,7214,1,0)
+ ;;^UTILITY(U,$J,358.3,16271,1,3,0)
+ ;;=3^Malig Neop Axilla/Upper Limb Lymph Nodes,Secondary
+ ;;^UTILITY(U,$J,358.3,16271,1,4,0)
+ ;;=4^C77.3
+ ;;^UTILITY(U,$J,358.3,16271,2)
+ ;;=^5001330
+ ;;^UTILITY(U,$J,358.3,16272,0)
+ ;;=C77.0^^64^783^8
+ ;;^UTILITY(U,$J,358.3,16272,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16272,1,3,0)
+ ;;=3^Malig Neop Head/Face/Neck,Secondary
+ ;;^UTILITY(U,$J,358.3,16272,1,4,0)
+ ;;=4^C77.0
+ ;;^UTILITY(U,$J,358.3,16272,2)
+ ;;=^5001329
+ ;;^UTILITY(U,$J,358.3,16273,0)
+ ;;=C77.1^^64^783^10
+ ;;^UTILITY(U,$J,358.3,16273,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16273,1,3,0)
+ ;;=3^Malig Neop Intrathoracic Lymph Nodes,Secondary
+ ;;^UTILITY(U,$J,358.3,16273,1,4,0)
+ ;;=4^C77.1
+ ;;^UTILITY(U,$J,358.3,16273,2)
+ ;;=^267315
+ ;;^UTILITY(U,$J,358.3,16274,0)
+ ;;=C77.8^^64^783^14
+ ;;^UTILITY(U,$J,358.3,16274,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16274,1,3,0)
+ ;;=3^Malig Neop Lymph Nodes,Multiple Regions,Secondary
+ ;;^UTILITY(U,$J,358.3,16274,1,4,0)
+ ;;=4^C77.8
+ ;;^UTILITY(U,$J,358.3,16274,2)
+ ;;=^5001332
+ ;;^UTILITY(U,$J,358.3,16275,0)
+ ;;=C79.2^^64^783^15
+ ;;^UTILITY(U,$J,358.3,16275,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16275,1,3,0)
+ ;;=3^Malig Neop Skin,Secondary
+ ;;^UTILITY(U,$J,358.3,16275,1,4,0)
+ ;;=4^C79.2
+ ;;^UTILITY(U,$J,358.3,16275,2)
+ ;;=^267333
+ ;;^UTILITY(U,$J,358.3,16276,0)
+ ;;=C74.91^^64^784^9
+ ;;^UTILITY(U,$J,358.3,16276,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16276,1,3,0)
+ ;;=3^Malig Neop Adrenal Gland,Right,Unspec Part
+ ;;^UTILITY(U,$J,358.3,16276,1,4,0)
+ ;;=4^C74.91
+ ;;^UTILITY(U,$J,358.3,16276,2)
+ ;;=^5001318
+ ;;^UTILITY(U,$J,358.3,16277,0)
+ ;;=C74.92^^64^784^8
+ ;;^UTILITY(U,$J,358.3,16277,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16277,1,3,0)
+ ;;=3^Malig Neop Adrenal Gland,Left,Unspec Part
+ ;;^UTILITY(U,$J,358.3,16277,1,4,0)
+ ;;=4^C74.92
+ ;;^UTILITY(U,$J,358.3,16277,2)
+ ;;=^5001319
+ ;;^UTILITY(U,$J,358.3,16278,0)
+ ;;=C74.01^^64^784^5
+ ;;^UTILITY(U,$J,358.3,16278,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16278,1,3,0)
+ ;;=3^Malig Neop Adrenal Gland Cortex,Right
+ ;;^UTILITY(U,$J,358.3,16278,1,4,0)
+ ;;=4^C74.01
+ ;;^UTILITY(U,$J,358.3,16278,2)
+ ;;=^5001312
+ ;;^UTILITY(U,$J,358.3,16279,0)
+ ;;=C74.02^^64^784^4
+ ;;^UTILITY(U,$J,358.3,16279,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16279,1,3,0)
+ ;;=3^Malig Neop Adrenal Gland Cortex,Left
+ ;;^UTILITY(U,$J,358.3,16279,1,4,0)
+ ;;=4^C74.02
+ ;;^UTILITY(U,$J,358.3,16279,2)
+ ;;=^5001313
+ ;;^UTILITY(U,$J,358.3,16280,0)
+ ;;=C74.11^^64^784^7
+ ;;^UTILITY(U,$J,358.3,16280,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16280,1,3,0)
+ ;;=3^Malig Neop Adrenal Gland Medulla,Right
+ ;;^UTILITY(U,$J,358.3,16280,1,4,0)
+ ;;=4^C74.11
+ ;;^UTILITY(U,$J,358.3,16280,2)
+ ;;=^5001315
+ ;;^UTILITY(U,$J,358.3,16281,0)
+ ;;=C74.12^^64^784^6
+ ;;^UTILITY(U,$J,358.3,16281,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16281,1,3,0)
+ ;;=3^Malig Neop Adrenal Gland Medulla,Left
+ ;;^UTILITY(U,$J,358.3,16281,1,4,0)
+ ;;=4^C74.12
+ ;;^UTILITY(U,$J,358.3,16281,2)
+ ;;=^5001316
+ ;;^UTILITY(U,$J,358.3,16282,0)
+ ;;=C44.91^^64^784^1
+ ;;^UTILITY(U,$J,358.3,16282,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16282,1,3,0)
+ ;;=3^BCC of Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,16282,1,4,0)
+ ;;=4^C44.91
+ ;;^UTILITY(U,$J,358.3,16282,2)
+ ;;=^5001092
+ ;;^UTILITY(U,$J,358.3,16283,0)
+ ;;=C41.9^^64^784^10
+ ;;^UTILITY(U,$J,358.3,16283,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16283,1,3,0)
+ ;;=3^Malig Neop Bone & Articular Cartilage,Unspec
+ ;;^UTILITY(U,$J,358.3,16283,1,4,0)
+ ;;=4^C41.9
+ ;;^UTILITY(U,$J,358.3,16283,2)
+ ;;=^5000993
+ ;;^UTILITY(U,$J,358.3,16284,0)
+ ;;=C71.9^^64^784^11
+ ;;^UTILITY(U,$J,358.3,16284,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16284,1,3,0)
+ ;;=3^Malig Neop Brain,Unspec
+ ;;^UTILITY(U,$J,358.3,16284,1,4,0)
+ ;;=4^C71.9
+ ;;^UTILITY(U,$J,358.3,16284,2)
+ ;;=^5001297
+ ;;^UTILITY(U,$J,358.3,16285,0)
+ ;;=C46.9^^64^784^2
+ ;;^UTILITY(U,$J,358.3,16285,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16285,1,3,0)
+ ;;=3^Kaposi's Sarcoma,Unspec
+ ;;^UTILITY(U,$J,358.3,16285,1,4,0)
+ ;;=4^C46.9
+ ;;^UTILITY(U,$J,358.3,16285,2)
+ ;;=^5001108
+ ;;^UTILITY(U,$J,358.3,16286,0)
+ ;;=C43.9^^64^784^3
+ ;;^UTILITY(U,$J,358.3,16286,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16286,1,3,0)
+ ;;=3^Malig Melanoma Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,16286,1,4,0)
+ ;;=4^C43.9
+ ;;^UTILITY(U,$J,358.3,16286,2)
+ ;;=^5001015
+ ;;^UTILITY(U,$J,358.3,16287,0)
+ ;;=D03.9^^64^784^18
+ ;;^UTILITY(U,$J,358.3,16287,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16287,1,3,0)
+ ;;=3^Melanoma in Situ,Unspec
+ ;;^UTILITY(U,$J,358.3,16287,1,4,0)
+ ;;=4^D03.9
+ ;;^UTILITY(U,$J,358.3,16287,2)
+ ;;=^5001908
+ ;;^UTILITY(U,$J,358.3,16288,0)
+ ;;=C44.99^^64^784^16

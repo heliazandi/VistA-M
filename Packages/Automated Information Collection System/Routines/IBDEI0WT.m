@@ -1,136 +1,286 @@
-IBDEI0WT ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0WT ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15126,1,3,0)
- ;;=3^Benign Neop of Descending Colon
- ;;^UTILITY(U,$J,358.3,15126,1,4,0)
- ;;=4^D12.4
- ;;^UTILITY(U,$J,358.3,15126,2)
- ;;=^5001967
- ;;^UTILITY(U,$J,358.3,15127,0)
- ;;=D12.5^^85^809^11
- ;;^UTILITY(U,$J,358.3,15127,1,0)
+ ;;^UTILITY(U,$J,358.3,33006,1,4,0)
+ ;;=4^G57.10
+ ;;^UTILITY(U,$J,358.3,33006,2)
+ ;;=^5004041
+ ;;^UTILITY(U,$J,358.3,33007,0)
+ ;;=G57.12^^119^1571^23
+ ;;^UTILITY(U,$J,358.3,33007,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15127,1,3,0)
- ;;=3^Benign Neop of Sigmoid Colon
- ;;^UTILITY(U,$J,358.3,15127,1,4,0)
- ;;=4^D12.5
- ;;^UTILITY(U,$J,358.3,15127,2)
- ;;=^5001968
- ;;^UTILITY(U,$J,358.3,15128,0)
- ;;=D12.6^^85^809^9
- ;;^UTILITY(U,$J,358.3,15128,1,0)
+ ;;^UTILITY(U,$J,358.3,33007,1,3,0)
+ ;;=3^Meralgia Paresthetica,Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,33007,1,4,0)
+ ;;=4^G57.12
+ ;;^UTILITY(U,$J,358.3,33007,2)
+ ;;=^5004043
+ ;;^UTILITY(U,$J,358.3,33008,0)
+ ;;=G57.11^^119^1571^24
+ ;;^UTILITY(U,$J,358.3,33008,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15128,1,3,0)
- ;;=3^Benign Neop of Colon,Unspec
- ;;^UTILITY(U,$J,358.3,15128,1,4,0)
- ;;=4^D12.6
- ;;^UTILITY(U,$J,358.3,15128,2)
- ;;=^5001969
- ;;^UTILITY(U,$J,358.3,15129,0)
- ;;=E66.01^^85^809^85
- ;;^UTILITY(U,$J,358.3,15129,1,0)
+ ;;^UTILITY(U,$J,358.3,33008,1,3,0)
+ ;;=3^Meralgia Paresthetica,Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,33008,1,4,0)
+ ;;=4^G57.11
+ ;;^UTILITY(U,$J,358.3,33008,2)
+ ;;=^5004042
+ ;;^UTILITY(U,$J,358.3,33009,0)
+ ;;=G60.8^^119^1571^32
+ ;;^UTILITY(U,$J,358.3,33009,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15129,1,3,0)
- ;;=3^Morbid Obesity d/t Excess Calories
- ;;^UTILITY(U,$J,358.3,15129,1,4,0)
- ;;=4^E66.01
- ;;^UTILITY(U,$J,358.3,15129,2)
- ;;=^5002826
- ;;^UTILITY(U,$J,358.3,15130,0)
- ;;=E66.9^^85^809^86
- ;;^UTILITY(U,$J,358.3,15130,1,0)
+ ;;^UTILITY(U,$J,358.3,33009,1,3,0)
+ ;;=3^Neuropathies,Oth Hereditary and Idiopathic
+ ;;^UTILITY(U,$J,358.3,33009,1,4,0)
+ ;;=4^G60.8
+ ;;^UTILITY(U,$J,358.3,33009,2)
+ ;;=^5004070
+ ;;^UTILITY(U,$J,358.3,33010,0)
+ ;;=G60.9^^119^1571^33
+ ;;^UTILITY(U,$J,358.3,33010,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15130,1,3,0)
- ;;=3^Obesity,Unspec
- ;;^UTILITY(U,$J,358.3,15130,1,4,0)
- ;;=4^E66.9
- ;;^UTILITY(U,$J,358.3,15130,2)
- ;;=^5002832
- ;;^UTILITY(U,$J,358.3,15131,0)
- ;;=K21.9^^85^809^35
- ;;^UTILITY(U,$J,358.3,15131,1,0)
+ ;;^UTILITY(U,$J,358.3,33010,1,3,0)
+ ;;=3^Neuropathy,Hereditary and Idiopathic Unspec
+ ;;^UTILITY(U,$J,358.3,33010,1,4,0)
+ ;;=4^G60.9
+ ;;^UTILITY(U,$J,358.3,33010,2)
+ ;;=^5004071
+ ;;^UTILITY(U,$J,358.3,33011,0)
+ ;;=I69.959^^119^1571^18
+ ;;^UTILITY(U,$J,358.3,33011,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15131,1,3,0)
- ;;=3^Gastro-Esophageal Reflux Disease w/o Esophagitis
- ;;^UTILITY(U,$J,358.3,15131,1,4,0)
- ;;=4^K21.9
- ;;^UTILITY(U,$J,358.3,15131,2)
- ;;=^5008505
- ;;^UTILITY(U,$J,358.3,15132,0)
- ;;=K22.10^^85^809^32
- ;;^UTILITY(U,$J,358.3,15132,1,0)
+ ;;^UTILITY(U,$J,358.3,33011,1,3,0)
+ ;;=3^Hemplg/Hemprs d/t Cerebvasc Diz Aff Unspec Side
+ ;;^UTILITY(U,$J,358.3,33011,1,4,0)
+ ;;=4^I69.959
+ ;;^UTILITY(U,$J,358.3,33011,2)
+ ;;=^5007563
+ ;;^UTILITY(U,$J,358.3,33012,0)
+ ;;=I69.359^^119^1571^19
+ ;;^UTILITY(U,$J,358.3,33012,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15132,1,3,0)
- ;;=3^Esophagus Ulcer w/o Bleeding
- ;;^UTILITY(U,$J,358.3,15132,1,4,0)
- ;;=4^K22.10
- ;;^UTILITY(U,$J,358.3,15132,2)
- ;;=^329929
- ;;^UTILITY(U,$J,358.3,15133,0)
- ;;=K22.2^^85^809^31
- ;;^UTILITY(U,$J,358.3,15133,1,0)
+ ;;^UTILITY(U,$J,358.3,33012,1,3,0)
+ ;;=3^Hemplg/Hemprs d/t Cerebvasc Infrc Aff Unspec Side
+ ;;^UTILITY(U,$J,358.3,33012,1,4,0)
+ ;;=4^I69.359
+ ;;^UTILITY(U,$J,358.3,33012,2)
+ ;;=^5007508
+ ;;^UTILITY(U,$J,358.3,33013,0)
+ ;;=S14.109S^^119^1571^39
+ ;;^UTILITY(U,$J,358.3,33013,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15133,1,3,0)
- ;;=3^Esophageal Obstruction
- ;;^UTILITY(U,$J,358.3,15133,1,4,0)
- ;;=4^K22.2
- ;;^UTILITY(U,$J,358.3,15133,2)
- ;;=^5008507
- ;;^UTILITY(U,$J,358.3,15134,0)
- ;;=K25.9^^85^809^34
- ;;^UTILITY(U,$J,358.3,15134,1,0)
+ ;;^UTILITY(U,$J,358.3,33013,1,3,0)
+ ;;=3^Sequela of Unspec Injury to Cervical Spinal Cord
+ ;;^UTILITY(U,$J,358.3,33013,1,4,0)
+ ;;=4^S14.109S
+ ;;^UTILITY(U,$J,358.3,33013,2)
+ ;;=^5134243
+ ;;^UTILITY(U,$J,358.3,33014,0)
+ ;;=S34.109S^^119^1571^40
+ ;;^UTILITY(U,$J,358.3,33014,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15134,1,3,0)
- ;;=3^Gastric Ulcer w/o Hemorrhage/Perforation
- ;;^UTILITY(U,$J,358.3,15134,1,4,0)
- ;;=4^K25.9
- ;;^UTILITY(U,$J,358.3,15134,2)
- ;;=^5008522
- ;;^UTILITY(U,$J,358.3,15135,0)
- ;;=K27.9^^85^809^87
- ;;^UTILITY(U,$J,358.3,15135,1,0)
+ ;;^UTILITY(U,$J,358.3,33014,1,3,0)
+ ;;=3^Sequela of Unspec Injury to Lumbar Spinal Cord
+ ;;^UTILITY(U,$J,358.3,33014,1,4,0)
+ ;;=4^S34.109S
+ ;;^UTILITY(U,$J,358.3,33014,2)
+ ;;=^5134570
+ ;;^UTILITY(U,$J,358.3,33015,0)
+ ;;=S24.109S^^119^1571^41
+ ;;^UTILITY(U,$J,358.3,33015,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15135,1,3,0)
- ;;=3^Peptic Ulcer w/o Hemorrhage/Perforation
- ;;^UTILITY(U,$J,358.3,15135,1,4,0)
- ;;=4^K27.9
- ;;^UTILITY(U,$J,358.3,15135,2)
- ;;=^5008536
- ;;^UTILITY(U,$J,358.3,15136,0)
- ;;=K40.20^^85^809^13
- ;;^UTILITY(U,$J,358.3,15136,1,0)
+ ;;^UTILITY(U,$J,358.3,33015,1,3,0)
+ ;;=3^Sequela of Unspec Injury to Thoracic Spinal Cord
+ ;;^UTILITY(U,$J,358.3,33015,1,4,0)
+ ;;=4^S24.109S
+ ;;^UTILITY(U,$J,358.3,33015,2)
+ ;;=^5134384
+ ;;^UTILITY(U,$J,358.3,33016,0)
+ ;;=G89.0^^119^1572^1
+ ;;^UTILITY(U,$J,358.3,33016,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15136,1,3,0)
- ;;=3^Bilateral Inguinal Hernia
- ;;^UTILITY(U,$J,358.3,15136,1,4,0)
- ;;=4^K40.20
- ;;^UTILITY(U,$J,358.3,15136,2)
- ;;=^5008585
- ;;^UTILITY(U,$J,358.3,15137,0)
- ;;=K40.90^^85^809^94
- ;;^UTILITY(U,$J,358.3,15137,1,0)
+ ;;^UTILITY(U,$J,358.3,33016,1,3,0)
+ ;;=3^Central Pain Syndrome
+ ;;^UTILITY(U,$J,358.3,33016,1,4,0)
+ ;;=4^G89.0
+ ;;^UTILITY(U,$J,358.3,33016,2)
+ ;;=^334189
+ ;;^UTILITY(U,$J,358.3,33017,0)
+ ;;=G89.11^^119^1572^10
+ ;;^UTILITY(U,$J,358.3,33017,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15137,1,3,0)
- ;;=3^Unilateral Inguinal Hernia
- ;;^UTILITY(U,$J,358.3,15137,1,4,0)
- ;;=4^K40.90
- ;;^UTILITY(U,$J,358.3,15137,2)
- ;;=^5008591
- ;;^UTILITY(U,$J,358.3,15138,0)
- ;;=K42.9^^85^809^93
- ;;^UTILITY(U,$J,358.3,15138,1,0)
+ ;;^UTILITY(U,$J,358.3,33017,1,3,0)
+ ;;=3^Pain d/t Trauma,Acute
+ ;;^UTILITY(U,$J,358.3,33017,1,4,0)
+ ;;=4^G89.11
+ ;;^UTILITY(U,$J,358.3,33017,2)
+ ;;=^5004152
+ ;;^UTILITY(U,$J,358.3,33018,0)
+ ;;=G89.12^^119^1572^14
+ ;;^UTILITY(U,$J,358.3,33018,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15138,1,3,0)
- ;;=3^Umbilical Hernia w/o Obstruction/Gangrene
- ;;^UTILITY(U,$J,358.3,15138,1,4,0)
- ;;=4^K42.9
- ;;^UTILITY(U,$J,358.3,15138,2)
- ;;=^5008606
- ;;^UTILITY(U,$J,358.3,15139,0)
- ;;=K43.9^^85^809^95
- ;;^UTILITY(U,$J,358.3,15139,1,0)
+ ;;^UTILITY(U,$J,358.3,33018,1,3,0)
+ ;;=3^Post-Thoracotomy Pain,Acute
+ ;;^UTILITY(U,$J,358.3,33018,1,4,0)
+ ;;=4^G89.12
+ ;;^UTILITY(U,$J,358.3,33018,2)
+ ;;=^5004153
+ ;;^UTILITY(U,$J,358.3,33019,0)
+ ;;=G89.18^^119^1572^16
+ ;;^UTILITY(U,$J,358.3,33019,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15139,1,3,0)
- ;;=3^Ventral Hernia w/o Obstruction/Gangrene
+ ;;^UTILITY(U,$J,358.3,33019,1,3,0)
+ ;;=3^Postprocedural Pain,Oth Acute
+ ;;^UTILITY(U,$J,358.3,33019,1,4,0)
+ ;;=4^G89.18
+ ;;^UTILITY(U,$J,358.3,33019,2)
+ ;;=^5004154
+ ;;^UTILITY(U,$J,358.3,33020,0)
+ ;;=R52.^^119^1572^12
+ ;;^UTILITY(U,$J,358.3,33020,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33020,1,3,0)
+ ;;=3^Pain,Unspec
+ ;;^UTILITY(U,$J,358.3,33020,1,4,0)
+ ;;=4^R52.
+ ;;^UTILITY(U,$J,358.3,33020,2)
+ ;;=^5019514
+ ;;^UTILITY(U,$J,358.3,33021,0)
+ ;;=G89.21^^119^1572^11
+ ;;^UTILITY(U,$J,358.3,33021,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33021,1,3,0)
+ ;;=3^Pain d/t Trauma,Chronic
+ ;;^UTILITY(U,$J,358.3,33021,1,4,0)
+ ;;=4^G89.21
+ ;;^UTILITY(U,$J,358.3,33021,2)
+ ;;=^5004155
+ ;;^UTILITY(U,$J,358.3,33022,0)
+ ;;=G89.22^^119^1572^15
+ ;;^UTILITY(U,$J,358.3,33022,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33022,1,3,0)
+ ;;=3^Post-Thoracotomy Pain,Chronic
+ ;;^UTILITY(U,$J,358.3,33022,1,4,0)
+ ;;=4^G89.22
+ ;;^UTILITY(U,$J,358.3,33022,2)
+ ;;=^5004156
+ ;;^UTILITY(U,$J,358.3,33023,0)
+ ;;=G89.28^^119^1572^17
+ ;;^UTILITY(U,$J,358.3,33023,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33023,1,3,0)
+ ;;=3^Postprocedural Pain,Oth Chronic
+ ;;^UTILITY(U,$J,358.3,33023,1,4,0)
+ ;;=4^G89.28
+ ;;^UTILITY(U,$J,358.3,33023,2)
+ ;;=^5004157
+ ;;^UTILITY(U,$J,358.3,33024,0)
+ ;;=G89.3^^119^1572^9
+ ;;^UTILITY(U,$J,358.3,33024,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33024,1,3,0)
+ ;;=3^Neoplasm Related Pain,Acute/Chronic
+ ;;^UTILITY(U,$J,358.3,33024,1,4,0)
+ ;;=4^G89.3
+ ;;^UTILITY(U,$J,358.3,33024,2)
+ ;;=^5004159
+ ;;^UTILITY(U,$J,358.3,33025,0)
+ ;;=G89.4^^119^1572^2
+ ;;^UTILITY(U,$J,358.3,33025,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33025,1,3,0)
+ ;;=3^Chronic Pain Syndrome
+ ;;^UTILITY(U,$J,358.3,33025,1,4,0)
+ ;;=4^G89.4
+ ;;^UTILITY(U,$J,358.3,33025,2)
+ ;;=^334079
+ ;;^UTILITY(U,$J,358.3,33026,0)
+ ;;=M27.0^^119^1572^3
+ ;;^UTILITY(U,$J,358.3,33026,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33026,1,3,0)
+ ;;=3^Developmental Disorder of Jaws
+ ;;^UTILITY(U,$J,358.3,33026,1,4,0)
+ ;;=4^M27.0
+ ;;^UTILITY(U,$J,358.3,33026,2)
+ ;;=^5011722
+ ;;^UTILITY(U,$J,358.3,33027,0)
+ ;;=M27.9^^119^1572^4
+ ;;^UTILITY(U,$J,358.3,33027,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33027,1,3,0)
+ ;;=3^Disease of Jaws,Unspec
+ ;;^UTILITY(U,$J,358.3,33027,1,4,0)
+ ;;=4^M27.9
+ ;;^UTILITY(U,$J,358.3,33027,2)
+ ;;=^5011737
+ ;;^UTILITY(U,$J,358.3,33028,0)
+ ;;=R68.84^^119^1572^8
+ ;;^UTILITY(U,$J,358.3,33028,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33028,1,3,0)
+ ;;=3^Jaw Pain
+ ;;^UTILITY(U,$J,358.3,33028,1,4,0)
+ ;;=4^R68.84
+ ;;^UTILITY(U,$J,358.3,33028,2)
+ ;;=^5019556
+ ;;^UTILITY(U,$J,358.3,33029,0)
+ ;;=N48.9^^119^1572^6
+ ;;^UTILITY(U,$J,358.3,33029,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33029,1,3,0)
+ ;;=3^Disorder of Penis,Unspec
+ ;;^UTILITY(U,$J,358.3,33029,1,4,0)
+ ;;=4^N48.9
+ ;;^UTILITY(U,$J,358.3,33029,2)
+ ;;=^5015743
+ ;;^UTILITY(U,$J,358.3,33030,0)
+ ;;=N50.9^^119^1572^5
+ ;;^UTILITY(U,$J,358.3,33030,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33030,1,3,0)
+ ;;=3^Disorder of Male Genital Organs,Unspec
+ ;;^UTILITY(U,$J,358.3,33030,1,4,0)
+ ;;=4^N50.9
+ ;;^UTILITY(U,$J,358.3,33030,2)
+ ;;=^5015751
+ ;;^UTILITY(U,$J,358.3,33031,0)
+ ;;=R10.2^^119^1572^13
+ ;;^UTILITY(U,$J,358.3,33031,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33031,1,3,0)
+ ;;=3^Pelvic/Perineal Pain
+ ;;^UTILITY(U,$J,358.3,33031,1,4,0)
+ ;;=4^R10.2
+ ;;^UTILITY(U,$J,358.3,33031,2)
+ ;;=^5019209
+ ;;^UTILITY(U,$J,358.3,33032,0)
+ ;;=N94.89^^119^1572^7
+ ;;^UTILITY(U,$J,358.3,33032,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33032,1,3,0)
+ ;;=3^Female Genital Organs/Menstrual Cycle,Oth Cond
+ ;;^UTILITY(U,$J,358.3,33032,1,4,0)
+ ;;=4^N94.89
+ ;;^UTILITY(U,$J,358.3,33032,2)
+ ;;=^5015925
+ ;;^UTILITY(U,$J,358.3,33033,0)
+ ;;=N23.^^119^1572^18
+ ;;^UTILITY(U,$J,358.3,33033,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33033,1,3,0)
+ ;;=3^Renal Colic,Unspec
+ ;;^UTILITY(U,$J,358.3,33033,1,4,0)
+ ;;=4^N23.
+ ;;^UTILITY(U,$J,358.3,33033,2)
+ ;;=^5015615
+ ;;^UTILITY(U,$J,358.3,33034,0)
+ ;;=Z71.89^^119^1573^1
+ ;;^UTILITY(U,$J,358.3,33034,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,33034,1,3,0)
+ ;;=3^Activity/Exercise Counseling
+ ;;^UTILITY(U,$J,358.3,33034,1,4,0)
+ ;;=4^Z71.89

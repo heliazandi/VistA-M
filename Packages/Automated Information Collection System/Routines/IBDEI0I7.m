@@ -1,130 +1,272 @@
-IBDEI0I7 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0I7 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8166,1,0)
+ ;;^UTILITY(U,$J,358.3,18322,1,4,0)
+ ;;=4^36215
+ ;;^UTILITY(U,$J,358.3,18323,0)
+ ;;=36245^^82^951^39^^^^1
+ ;;^UTILITY(U,$J,358.3,18323,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8166,1,3,0)
- ;;=3^Esophagitis, unspecified
- ;;^UTILITY(U,$J,358.3,8166,1,4,0)
- ;;=4^K20.9
- ;;^UTILITY(U,$J,358.3,8166,2)
- ;;=^295809
- ;;^UTILITY(U,$J,358.3,8167,0)
- ;;=K21.0^^55^536^54
- ;;^UTILITY(U,$J,358.3,8167,1,0)
+ ;;^UTILITY(U,$J,358.3,18323,1,2,0)
+ ;;=2^Select Cath 1st Order Abd/Pelv/Le Artery
+ ;;^UTILITY(U,$J,358.3,18323,1,4,0)
+ ;;=4^36245
+ ;;^UTILITY(U,$J,358.3,18324,0)
+ ;;=36247^^82^951^41^^^^1
+ ;;^UTILITY(U,$J,358.3,18324,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8167,1,3,0)
- ;;=3^Gastro-esophageal reflux disease with esophagitis
- ;;^UTILITY(U,$J,358.3,8167,1,4,0)
- ;;=4^K21.0
- ;;^UTILITY(U,$J,358.3,8167,2)
- ;;=^5008504
- ;;^UTILITY(U,$J,358.3,8168,0)
- ;;=K22.10^^55^536^97
- ;;^UTILITY(U,$J,358.3,8168,1,0)
+ ;;^UTILITY(U,$J,358.3,18324,1,2,0)
+ ;;=2^Select Cath 3rd Order Abd/Pelv/Le Artery
+ ;;^UTILITY(U,$J,358.3,18324,1,4,0)
+ ;;=4^36247
+ ;;^UTILITY(U,$J,358.3,18325,0)
+ ;;=36251^^82^951^38^^^^1
+ ;;^UTILITY(U,$J,358.3,18325,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8168,1,3,0)
- ;;=3^Ulcer of esophagus without bleeding
- ;;^UTILITY(U,$J,358.3,8168,1,4,0)
- ;;=4^K22.10
- ;;^UTILITY(U,$J,358.3,8168,2)
- ;;=^329929
- ;;^UTILITY(U,$J,358.3,8169,0)
- ;;=K22.11^^55^536^96
- ;;^UTILITY(U,$J,358.3,8169,1,0)
+ ;;^UTILITY(U,$J,358.3,18325,1,2,0)
+ ;;=2^Select Cath 1st Main Ren&Access Art
+ ;;^UTILITY(U,$J,358.3,18325,1,4,0)
+ ;;=4^36251
+ ;;^UTILITY(U,$J,358.3,18326,0)
+ ;;=36252^^82^951^37^^^^1
+ ;;^UTILITY(U,$J,358.3,18326,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8169,1,3,0)
- ;;=3^Ulcer of esophagus with bleeding
- ;;^UTILITY(U,$J,358.3,8169,1,4,0)
- ;;=4^K22.11
- ;;^UTILITY(U,$J,358.3,8169,2)
- ;;=^329930
- ;;^UTILITY(U,$J,358.3,8170,0)
- ;;=K21.9^^55^536^55
- ;;^UTILITY(U,$J,358.3,8170,1,0)
+ ;;^UTILITY(U,$J,358.3,18326,1,2,0)
+ ;;=2^Select Cath 1st Main Ren&Acc Art,Bilat
+ ;;^UTILITY(U,$J,358.3,18326,1,4,0)
+ ;;=4^36252
+ ;;^UTILITY(U,$J,358.3,18327,0)
+ ;;=36254^^82^951^48^^^^1
+ ;;^UTILITY(U,$J,358.3,18327,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8170,1,3,0)
- ;;=3^Gastro-esophageal reflux disease without esophagitis
- ;;^UTILITY(U,$J,358.3,8170,1,4,0)
- ;;=4^K21.9
- ;;^UTILITY(U,$J,358.3,8170,2)
- ;;=^5008505
- ;;^UTILITY(U,$J,358.3,8171,0)
- ;;=K22.70^^55^536^14
- ;;^UTILITY(U,$J,358.3,8171,1,0)
+ ;;^UTILITY(U,$J,358.3,18327,1,2,0)
+ ;;=2^Superselect Cath Ren Art&Access Art,Bilateral
+ ;;^UTILITY(U,$J,358.3,18327,1,4,0)
+ ;;=4^36254
+ ;;^UTILITY(U,$J,358.3,18328,0)
+ ;;=37191^^82^951^31^^^^1
+ ;;^UTILITY(U,$J,358.3,18328,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8171,1,3,0)
- ;;=3^Barrett's esophagus without dysplasia
- ;;^UTILITY(U,$J,358.3,8171,1,4,0)
- ;;=4^K22.70
- ;;^UTILITY(U,$J,358.3,8171,2)
- ;;=^5008511
- ;;^UTILITY(U,$J,358.3,8172,0)
- ;;=K22.710^^55^536^13
- ;;^UTILITY(U,$J,358.3,8172,1,0)
+ ;;^UTILITY(U,$J,358.3,18328,1,2,0)
+ ;;=2^Insert Intravas Vena Cava Filter,Endovas
+ ;;^UTILITY(U,$J,358.3,18328,1,4,0)
+ ;;=4^37191
+ ;;^UTILITY(U,$J,358.3,18329,0)
+ ;;=37220^^82^951^30^^^^1
+ ;;^UTILITY(U,$J,358.3,18329,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8172,1,3,0)
- ;;=3^Barrett's esophagus with low grade dysplasia
- ;;^UTILITY(U,$J,358.3,8172,1,4,0)
- ;;=4^K22.710
- ;;^UTILITY(U,$J,358.3,8172,2)
- ;;=^5008512
- ;;^UTILITY(U,$J,358.3,8173,0)
- ;;=K22.711^^55^536^12
- ;;^UTILITY(U,$J,358.3,8173,1,0)
+ ;;^UTILITY(U,$J,358.3,18329,1,2,0)
+ ;;=2^Iliac Revasc,Unilat,1st Vessel
+ ;;^UTILITY(U,$J,358.3,18329,1,4,0)
+ ;;=4^37220
+ ;;^UTILITY(U,$J,358.3,18330,0)
+ ;;=37221^^82^951^27^^^^1
+ ;;^UTILITY(U,$J,358.3,18330,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8173,1,3,0)
- ;;=3^Barrett's esophagus with high grade dysplasia
- ;;^UTILITY(U,$J,358.3,8173,1,4,0)
- ;;=4^K22.711
- ;;^UTILITY(U,$J,358.3,8173,2)
- ;;=^5008513
- ;;^UTILITY(U,$J,358.3,8174,0)
- ;;=K22.719^^55^536^11
- ;;^UTILITY(U,$J,358.3,8174,1,0)
+ ;;^UTILITY(U,$J,358.3,18330,1,2,0)
+ ;;=2^Iliac Revasc w/ Stent
+ ;;^UTILITY(U,$J,358.3,18330,1,4,0)
+ ;;=4^37221
+ ;;^UTILITY(U,$J,358.3,18331,0)
+ ;;=37223^^82^951^28^^^^1
+ ;;^UTILITY(U,$J,358.3,18331,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8174,1,3,0)
- ;;=3^Barrett's esophagus with dysplasia, unspecified
- ;;^UTILITY(U,$J,358.3,8174,1,4,0)
- ;;=4^K22.719
- ;;^UTILITY(U,$J,358.3,8174,2)
- ;;=^5008514
- ;;^UTILITY(U,$J,358.3,8175,0)
- ;;=K25.7^^55^536^22
- ;;^UTILITY(U,$J,358.3,8175,1,0)
+ ;;^UTILITY(U,$J,358.3,18331,1,2,0)
+ ;;=2^Iliac Revasc w/ Stent,Add-on
+ ;;^UTILITY(U,$J,358.3,18331,1,4,0)
+ ;;=4^37223
+ ;;^UTILITY(U,$J,358.3,18332,0)
+ ;;=37222^^82^951^29^^^^1
+ ;;^UTILITY(U,$J,358.3,18332,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8175,1,3,0)
- ;;=3^Chronic gastric ulcer without hemorrhage or perforation
- ;;^UTILITY(U,$J,358.3,8175,1,4,0)
- ;;=4^K25.7
- ;;^UTILITY(U,$J,358.3,8175,2)
- ;;=^5008521
- ;;^UTILITY(U,$J,358.3,8176,0)
- ;;=K25.9^^55^536^52
- ;;^UTILITY(U,$J,358.3,8176,1,0)
+ ;;^UTILITY(U,$J,358.3,18332,1,2,0)
+ ;;=2^Iliac Revasc,Ea Addl Vessel
+ ;;^UTILITY(U,$J,358.3,18332,1,4,0)
+ ;;=4^37222
+ ;;^UTILITY(U,$J,358.3,18333,0)
+ ;;=37224^^82^951^24^^^^1
+ ;;^UTILITY(U,$J,358.3,18333,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8176,1,3,0)
- ;;=3^Gastric ulcer, unsp as acute or chronic, w/o hemor or perf
- ;;^UTILITY(U,$J,358.3,8176,1,4,0)
- ;;=4^K25.9
- ;;^UTILITY(U,$J,358.3,8176,2)
- ;;=^5008522
- ;;^UTILITY(U,$J,358.3,8177,0)
- ;;=K26.9^^55^536^36
- ;;^UTILITY(U,$J,358.3,8177,1,0)
+ ;;^UTILITY(U,$J,358.3,18333,1,2,0)
+ ;;=2^Fem/Popl Revas w/ TLA 1st Vessel
+ ;;^UTILITY(U,$J,358.3,18333,1,4,0)
+ ;;=4^37224
+ ;;^UTILITY(U,$J,358.3,18334,0)
+ ;;=37225^^82^951^23^^^^1
+ ;;^UTILITY(U,$J,358.3,18334,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8177,1,3,0)
- ;;=3^Duodenal ulcer, unsp as acute or chronic, w/o hemor or perf
- ;;^UTILITY(U,$J,358.3,8177,1,4,0)
- ;;=4^K26.9
- ;;^UTILITY(U,$J,358.3,8177,2)
- ;;=^5008527
- ;;^UTILITY(U,$J,358.3,8178,0)
- ;;=K27.9^^55^536^78
- ;;^UTILITY(U,$J,358.3,8178,1,0)
+ ;;^UTILITY(U,$J,358.3,18334,1,2,0)
+ ;;=2^Fem/Popl Revas w/ Ather
+ ;;^UTILITY(U,$J,358.3,18334,1,4,0)
+ ;;=4^37225
+ ;;^UTILITY(U,$J,358.3,18335,0)
+ ;;=37226^^82^951^25^^^^1
+ ;;^UTILITY(U,$J,358.3,18335,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8178,1,3,0)
- ;;=3^Peptic ulc, site unsp, unsp as ac or chr, w/o hemor or perf
- ;;^UTILITY(U,$J,358.3,8178,1,4,0)
- ;;=4^K27.9
+ ;;^UTILITY(U,$J,358.3,18335,1,2,0)
+ ;;=2^Fem/Popl Revasc w/ Stent
+ ;;^UTILITY(U,$J,358.3,18335,1,4,0)
+ ;;=4^37226
+ ;;^UTILITY(U,$J,358.3,18336,0)
+ ;;=37227^^82^951^26^^^^1
+ ;;^UTILITY(U,$J,358.3,18336,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18336,1,2,0)
+ ;;=2^Fem/Popl Revasc w/ Stent&Ather
+ ;;^UTILITY(U,$J,358.3,18336,1,4,0)
+ ;;=4^37227
+ ;;^UTILITY(U,$J,358.3,18337,0)
+ ;;=37228^^82^951^55^^^^1
+ ;;^UTILITY(U,$J,358.3,18337,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18337,1,2,0)
+ ;;=2^TIB/Per Revasc w/ TLA, 1st Vessel
+ ;;^UTILITY(U,$J,358.3,18337,1,4,0)
+ ;;=4^37228
+ ;;^UTILITY(U,$J,358.3,18338,0)
+ ;;=37229^^82^951^50^^^^1
+ ;;^UTILITY(U,$J,358.3,18338,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18338,1,2,0)
+ ;;=2^TIB/Per Revasc w/ Ather
+ ;;^UTILITY(U,$J,358.3,18338,1,4,0)
+ ;;=4^37229
+ ;;^UTILITY(U,$J,358.3,18339,0)
+ ;;=37230^^82^951^52^^^^1
+ ;;^UTILITY(U,$J,358.3,18339,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18339,1,2,0)
+ ;;=2^TIB/Per Revasc w/ Stent
+ ;;^UTILITY(U,$J,358.3,18339,1,4,0)
+ ;;=4^37230
+ ;;^UTILITY(U,$J,358.3,18340,0)
+ ;;=37231^^82^951^49^^^^1
+ ;;^UTILITY(U,$J,358.3,18340,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18340,1,2,0)
+ ;;=2^TIB/Per Revasc Stent&Ather
+ ;;^UTILITY(U,$J,358.3,18340,1,4,0)
+ ;;=4^37231
+ ;;^UTILITY(U,$J,358.3,18341,0)
+ ;;=37232^^82^951^56^^^^1
+ ;;^UTILITY(U,$J,358.3,18341,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18341,1,2,0)
+ ;;=2^TIB/Per Revasc,Ea Addl Vessel
+ ;;^UTILITY(U,$J,358.3,18341,1,4,0)
+ ;;=4^37232
+ ;;^UTILITY(U,$J,358.3,18342,0)
+ ;;=37233^^82^951^51^^^^1
+ ;;^UTILITY(U,$J,358.3,18342,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18342,1,2,0)
+ ;;=2^TIB/Per Revasc w/ Ather,Ea Addl Vessel
+ ;;^UTILITY(U,$J,358.3,18342,1,4,0)
+ ;;=4^37233
+ ;;^UTILITY(U,$J,358.3,18343,0)
+ ;;=37234^^82^951^54^^^^1
+ ;;^UTILITY(U,$J,358.3,18343,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18343,1,2,0)
+ ;;=2^TIB/Per Revasc w/ Stent,Ea Addl Vessel
+ ;;^UTILITY(U,$J,358.3,18343,1,4,0)
+ ;;=4^37234
+ ;;^UTILITY(U,$J,358.3,18344,0)
+ ;;=37235^^82^951^53^^^^1
+ ;;^UTILITY(U,$J,358.3,18344,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18344,1,2,0)
+ ;;=2^TIB/Per Revasc w/ Stent&Ather,Add Vessel
+ ;;^UTILITY(U,$J,358.3,18344,1,4,0)
+ ;;=4^37235
+ ;;^UTILITY(U,$J,358.3,18345,0)
+ ;;=75605^^82^951^3^^^^1
+ ;;^UTILITY(U,$J,358.3,18345,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18345,1,2,0)
+ ;;=2^AO Thoracic w/ Serialography
+ ;;^UTILITY(U,$J,358.3,18345,1,4,0)
+ ;;=4^75605
+ ;;^UTILITY(U,$J,358.3,18346,0)
+ ;;=37619^^82^951^34^^^^1
+ ;;^UTILITY(U,$J,358.3,18346,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18346,1,2,0)
+ ;;=2^Open Inferior Vena Cava Filter Plmnt
+ ;;^UTILITY(U,$J,358.3,18346,1,4,0)
+ ;;=4^37619
+ ;;^UTILITY(U,$J,358.3,18347,0)
+ ;;=75625^^82^951^2^^^^1
+ ;;^UTILITY(U,$J,358.3,18347,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18347,1,2,0)
+ ;;=2^AO Abd w/o Runoff
+ ;;^UTILITY(U,$J,358.3,18347,1,4,0)
+ ;;=4^75625
+ ;;^UTILITY(U,$J,358.3,18348,0)
+ ;;=75630^^82^951^1^^^^1
+ ;;^UTILITY(U,$J,358.3,18348,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18348,1,2,0)
+ ;;=2^AO Abd w/ Bilat Iliacs
+ ;;^UTILITY(U,$J,358.3,18348,1,4,0)
+ ;;=4^75630
+ ;;^UTILITY(U,$J,358.3,18349,0)
+ ;;=75635^^82^951^20^^^^1
+ ;;^UTILITY(U,$J,358.3,18349,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18349,1,2,0)
+ ;;=2^CT Angio Abd Art w/ Contrast
+ ;;^UTILITY(U,$J,358.3,18349,1,4,0)
+ ;;=4^75635
+ ;;^UTILITY(U,$J,358.3,18350,0)
+ ;;=75658^^82^951^7^^^^1
+ ;;^UTILITY(U,$J,358.3,18350,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18350,1,2,0)
+ ;;=2^Angiography,Brachial,Retrograd,Rad S&I
+ ;;^UTILITY(U,$J,358.3,18350,1,4,0)
+ ;;=4^75658
+ ;;^UTILITY(U,$J,358.3,18351,0)
+ ;;=75705^^82^951^14^^^^1
+ ;;^UTILITY(U,$J,358.3,18351,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18351,1,2,0)
+ ;;=2^Angiography,Spinal Seletive
+ ;;^UTILITY(U,$J,358.3,18351,1,4,0)
+ ;;=4^75705
+ ;;^UTILITY(U,$J,358.3,18352,0)
+ ;;=75710^^82^951^16^^^^1
+ ;;^UTILITY(U,$J,358.3,18352,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18352,1,2,0)
+ ;;=2^Angiography,UE/LE Unilateral
+ ;;^UTILITY(U,$J,358.3,18352,1,4,0)
+ ;;=4^75710
+ ;;^UTILITY(U,$J,358.3,18353,0)
+ ;;=75716^^82^951^15^^^^1
+ ;;^UTILITY(U,$J,358.3,18353,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18353,1,2,0)
+ ;;=2^Angiography,UE/LE Bilateral
+ ;;^UTILITY(U,$J,358.3,18353,1,4,0)
+ ;;=4^75716
+ ;;^UTILITY(U,$J,358.3,18354,0)
+ ;;=75726^^82^951^17^^^^1
+ ;;^UTILITY(U,$J,358.3,18354,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18354,1,2,0)
+ ;;=2^Angiography,Visceral Selective
+ ;;^UTILITY(U,$J,358.3,18354,1,4,0)
+ ;;=4^75726
+ ;;^UTILITY(U,$J,358.3,18355,0)
+ ;;=75731^^82^951^5^^^^1
+ ;;^UTILITY(U,$J,358.3,18355,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18355,1,2,0)
+ ;;=2^Angiography,Adrenal Unilat Selective
+ ;;^UTILITY(U,$J,358.3,18355,1,4,0)
+ ;;=4^75731
+ ;;^UTILITY(U,$J,358.3,18356,0)
+ ;;=75733^^82^951^4^^^^1

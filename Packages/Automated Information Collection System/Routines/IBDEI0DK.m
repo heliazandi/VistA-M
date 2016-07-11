@@ -1,138 +1,258 @@
-IBDEI0DK ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0DK ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,5907,1,3,0)
- ;;=3^Cutaneous Abscess of Right Upper Limb
- ;;^UTILITY(U,$J,358.3,5907,1,4,0)
- ;;=4^L02.413
- ;;^UTILITY(U,$J,358.3,5907,2)
- ;;=^5008976
- ;;^UTILITY(U,$J,358.3,5908,0)
- ;;=L02.219^^40^379^77
- ;;^UTILITY(U,$J,358.3,5908,1,0)
+ ;;^UTILITY(U,$J,358.3,13550,1,4,0)
+ ;;=4^F15.99
+ ;;^UTILITY(U,$J,358.3,13550,2)
+ ;;=^5133358
+ ;;^UTILITY(U,$J,358.3,13551,0)
+ ;;=R45.851^^58^711^1
+ ;;^UTILITY(U,$J,358.3,13551,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5908,1,3,0)
- ;;=3^Cutaneous Abscess of Trunk,Unspec
- ;;^UTILITY(U,$J,358.3,5908,1,4,0)
- ;;=4^L02.219
- ;;^UTILITY(U,$J,358.3,5908,2)
- ;;=^5008956
- ;;^UTILITY(U,$J,358.3,5909,0)
- ;;=L02.216^^40^379^78
- ;;^UTILITY(U,$J,358.3,5909,1,0)
+ ;;^UTILITY(U,$J,358.3,13551,1,3,0)
+ ;;=3^Suicidal Ideations
+ ;;^UTILITY(U,$J,358.3,13551,1,4,0)
+ ;;=4^R45.851
+ ;;^UTILITY(U,$J,358.3,13551,2)
+ ;;=^5019474
+ ;;^UTILITY(U,$J,358.3,13552,0)
+ ;;=F19.14^^58^712^1
+ ;;^UTILITY(U,$J,358.3,13552,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5909,1,3,0)
- ;;=3^Cutaneous Abscess of Umbilicus
- ;;^UTILITY(U,$J,358.3,5909,1,4,0)
- ;;=4^L02.216
- ;;^UTILITY(U,$J,358.3,5909,2)
- ;;=^5008955
- ;;^UTILITY(U,$J,358.3,5910,0)
- ;;=L02.91^^40^379^79
- ;;^UTILITY(U,$J,358.3,5910,1,0)
+ ;;^UTILITY(U,$J,358.3,13552,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Depressive D/O w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,13552,1,4,0)
+ ;;=4^F19.14
+ ;;^UTILITY(U,$J,358.3,13552,2)
+ ;;=^5003421
+ ;;^UTILITY(U,$J,358.3,13553,0)
+ ;;=F19.24^^58^712^2
+ ;;^UTILITY(U,$J,358.3,13553,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5910,1,3,0)
- ;;=3^Cutaneous Abscess,Unspec
- ;;^UTILITY(U,$J,358.3,5910,1,4,0)
- ;;=4^L02.91
- ;;^UTILITY(U,$J,358.3,5910,2)
- ;;=^5009016
- ;;^UTILITY(U,$J,358.3,5911,0)
- ;;=L98.3^^40^379^82
- ;;^UTILITY(U,$J,358.3,5911,1,0)
+ ;;^UTILITY(U,$J,358.3,13553,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Depressive D/O w/ Mod-Sev Use D/O
+ ;;^UTILITY(U,$J,358.3,13553,1,4,0)
+ ;;=4^F19.24
+ ;;^UTILITY(U,$J,358.3,13553,2)
+ ;;=^5003441
+ ;;^UTILITY(U,$J,358.3,13554,0)
+ ;;=F19.94^^58^712^3
+ ;;^UTILITY(U,$J,358.3,13554,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5911,1,3,0)
- ;;=3^Eosinophilic Cellulitis,Skin/Subcutaneous
- ;;^UTILITY(U,$J,358.3,5911,1,4,0)
- ;;=4^L98.3
- ;;^UTILITY(U,$J,358.3,5911,2)
- ;;=^5009576
- ;;^UTILITY(U,$J,358.3,5912,0)
- ;;=L72.0^^40^379^83
- ;;^UTILITY(U,$J,358.3,5912,1,0)
+ ;;^UTILITY(U,$J,358.3,13554,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Depressive D/O w/o Use D/O
+ ;;^UTILITY(U,$J,358.3,13554,1,4,0)
+ ;;=4^F19.94
+ ;;^UTILITY(U,$J,358.3,13554,2)
+ ;;=^5003460
+ ;;^UTILITY(U,$J,358.3,13555,0)
+ ;;=F19.17^^58^712^4
+ ;;^UTILITY(U,$J,358.3,13555,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5912,1,3,0)
- ;;=3^Epidermal Cyst
- ;;^UTILITY(U,$J,358.3,5912,1,4,0)
- ;;=4^L72.0
- ;;^UTILITY(U,$J,358.3,5912,2)
- ;;=^5009277
- ;;^UTILITY(U,$J,358.3,5913,0)
- ;;=L72.9^^40^379^84
- ;;^UTILITY(U,$J,358.3,5913,1,0)
+ ;;^UTILITY(U,$J,358.3,13555,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Maj Neurocog D/O w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,13555,1,4,0)
+ ;;=4^F19.17
+ ;;^UTILITY(U,$J,358.3,13555,2)
+ ;;=^5003426
+ ;;^UTILITY(U,$J,358.3,13556,0)
+ ;;=F19.27^^58^712^5
+ ;;^UTILITY(U,$J,358.3,13556,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5913,1,3,0)
- ;;=3^Follicular Cyst of Skin/Subcutaneous Tissue,Unspec
- ;;^UTILITY(U,$J,358.3,5913,1,4,0)
- ;;=4^L72.9
- ;;^UTILITY(U,$J,358.3,5913,2)
- ;;=^5009283
- ;;^UTILITY(U,$J,358.3,5914,0)
- ;;=L60.0^^40^379^86
- ;;^UTILITY(U,$J,358.3,5914,1,0)
+ ;;^UTILITY(U,$J,358.3,13556,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Maj Neurocog D/O w/ Mod-Sev Use D/O
+ ;;^UTILITY(U,$J,358.3,13556,1,4,0)
+ ;;=4^F19.27
+ ;;^UTILITY(U,$J,358.3,13556,2)
+ ;;=^5003446
+ ;;^UTILITY(U,$J,358.3,13557,0)
+ ;;=F19.97^^58^712^6
+ ;;^UTILITY(U,$J,358.3,13557,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5914,1,3,0)
- ;;=3^Ingrowing Nail
- ;;^UTILITY(U,$J,358.3,5914,1,4,0)
- ;;=4^L60.0
- ;;^UTILITY(U,$J,358.3,5914,2)
- ;;=^5009234
- ;;^UTILITY(U,$J,358.3,5915,0)
- ;;=C43.9^^40^379^87
- ;;^UTILITY(U,$J,358.3,5915,1,0)
+ ;;^UTILITY(U,$J,358.3,13557,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Maj Neurocog D/O w/o Use D/O
+ ;;^UTILITY(U,$J,358.3,13557,1,4,0)
+ ;;=4^F19.97
+ ;;^UTILITY(U,$J,358.3,13557,2)
+ ;;=^5003465
+ ;;^UTILITY(U,$J,358.3,13558,0)
+ ;;=F19.188^^58^712^7
+ ;;^UTILITY(U,$J,358.3,13558,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5915,1,3,0)
- ;;=3^Malig Melanoma of Skin,Unspec
- ;;^UTILITY(U,$J,358.3,5915,1,4,0)
- ;;=4^C43.9
- ;;^UTILITY(U,$J,358.3,5915,2)
- ;;=^5001015
- ;;^UTILITY(U,$J,358.3,5916,0)
- ;;=D03.9^^40^379^91
- ;;^UTILITY(U,$J,358.3,5916,1,0)
+ ;;^UTILITY(U,$J,358.3,13558,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Mild Neurocog D/O w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,13558,1,4,0)
+ ;;=4^F19.188
+ ;;^UTILITY(U,$J,358.3,13558,2)
+ ;;=^5133361
+ ;;^UTILITY(U,$J,358.3,13559,0)
+ ;;=F19.288^^58^712^8
+ ;;^UTILITY(U,$J,358.3,13559,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5916,1,3,0)
- ;;=3^Melanoma in Situ,Unspec
- ;;^UTILITY(U,$J,358.3,5916,1,4,0)
- ;;=4^D03.9
- ;;^UTILITY(U,$J,358.3,5916,2)
- ;;=^5001908
- ;;^UTILITY(U,$J,358.3,5917,0)
- ;;=L72.8^^40^379^85
- ;;^UTILITY(U,$J,358.3,5917,1,0)
+ ;;^UTILITY(U,$J,358.3,13559,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Mild Neurocog D/O w/ Mod-Sev Use D/O
+ ;;^UTILITY(U,$J,358.3,13559,1,4,0)
+ ;;=4^F19.288
+ ;;^UTILITY(U,$J,358.3,13559,2)
+ ;;=^5133362
+ ;;^UTILITY(U,$J,358.3,13560,0)
+ ;;=F19.988^^58^712^9
+ ;;^UTILITY(U,$J,358.3,13560,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5917,1,3,0)
- ;;=3^Follicular Cyst of Skin/Subcutaneous Tissue NEC
- ;;^UTILITY(U,$J,358.3,5917,1,4,0)
- ;;=4^L72.8
- ;;^UTILITY(U,$J,358.3,5917,2)
- ;;=^5009282
- ;;^UTILITY(U,$J,358.3,5918,0)
- ;;=L72.2^^40^379^92
- ;;^UTILITY(U,$J,358.3,5918,1,0)
+ ;;^UTILITY(U,$J,358.3,13560,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Mild Neurocog D/O w/o Use D/O
+ ;;^UTILITY(U,$J,358.3,13560,1,4,0)
+ ;;=4^F19.988
+ ;;^UTILITY(U,$J,358.3,13560,2)
+ ;;=^5133363
+ ;;^UTILITY(U,$J,358.3,13561,0)
+ ;;=F19.188^^58^712^10
+ ;;^UTILITY(U,$J,358.3,13561,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5918,1,3,0)
- ;;=3^Steatocystoma Multiplex
- ;;^UTILITY(U,$J,358.3,5918,1,4,0)
- ;;=4^L72.2
- ;;^UTILITY(U,$J,358.3,5918,2)
- ;;=^5009280
- ;;^UTILITY(U,$J,358.3,5919,0)
- ;;=L72.12^^40^379^93
- ;;^UTILITY(U,$J,358.3,5919,1,0)
+ ;;^UTILITY(U,$J,358.3,13561,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Obsess-Compul & Rel D/O w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,13561,1,4,0)
+ ;;=4^F19.188
+ ;;^UTILITY(U,$J,358.3,13561,2)
+ ;;=^5133361
+ ;;^UTILITY(U,$J,358.3,13562,0)
+ ;;=F19.288^^58^712^11
+ ;;^UTILITY(U,$J,358.3,13562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5919,1,3,0)
- ;;=3^Trichodermal Cyst
- ;;^UTILITY(U,$J,358.3,5919,1,4,0)
- ;;=4^L72.12
- ;;^UTILITY(U,$J,358.3,5919,2)
- ;;=^5009279
- ;;^UTILITY(U,$J,358.3,5920,0)
- ;;=E11.621^^40^379^81
- ;;^UTILITY(U,$J,358.3,5920,1,0)
+ ;;^UTILITY(U,$J,358.3,13562,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Obsess-Compul & Rel D/O w/ Mod-Sev Use D/O
+ ;;^UTILITY(U,$J,358.3,13562,1,4,0)
+ ;;=4^F19.288
+ ;;^UTILITY(U,$J,358.3,13562,2)
+ ;;=^5133362
+ ;;^UTILITY(U,$J,358.3,13563,0)
+ ;;=F19.988^^58^712^12
+ ;;^UTILITY(U,$J,358.3,13563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5920,1,3,0)
- ;;=3^Diabetes Type 2 w/ Foot Ulcer
- ;;^UTILITY(U,$J,358.3,5920,1,4,0)
- ;;=4^E11.621
+ ;;^UTILITY(U,$J,358.3,13563,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Obsess-Compul & Rel D/O w/o Use D/O
+ ;;^UTILITY(U,$J,358.3,13563,1,4,0)
+ ;;=4^F19.988
+ ;;^UTILITY(U,$J,358.3,13563,2)
+ ;;=^5133363
+ ;;^UTILITY(U,$J,358.3,13564,0)
+ ;;=F19.159^^58^712^13
+ ;;^UTILITY(U,$J,358.3,13564,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13564,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Psychotic D/O w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,13564,1,4,0)
+ ;;=4^F19.159
+ ;;^UTILITY(U,$J,358.3,13564,2)
+ ;;=^5003424
+ ;;^UTILITY(U,$J,358.3,13565,0)
+ ;;=F19.259^^58^712^14
+ ;;^UTILITY(U,$J,358.3,13565,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13565,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Psychotic D/O w/ Mod-Sev Use D/O
+ ;;^UTILITY(U,$J,358.3,13565,1,4,0)
+ ;;=4^F19.259
+ ;;^UTILITY(U,$J,358.3,13565,2)
+ ;;=^5003444
+ ;;^UTILITY(U,$J,358.3,13566,0)
+ ;;=F19.959^^58^712^15
+ ;;^UTILITY(U,$J,358.3,13566,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13566,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Psychotic D/O w/o Use D/O
+ ;;^UTILITY(U,$J,358.3,13566,1,4,0)
+ ;;=4^F19.959
+ ;;^UTILITY(U,$J,358.3,13566,2)
+ ;;=^5003463
+ ;;^UTILITY(U,$J,358.3,13567,0)
+ ;;=F19.181^^58^712^16
+ ;;^UTILITY(U,$J,358.3,13567,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13567,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Sexual Dysfunction w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,13567,1,4,0)
+ ;;=4^F19.181
+ ;;^UTILITY(U,$J,358.3,13567,2)
+ ;;=^5003428
+ ;;^UTILITY(U,$J,358.3,13568,0)
+ ;;=F19.281^^58^712^17
+ ;;^UTILITY(U,$J,358.3,13568,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13568,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Sexual Dysfunction w/ Mod-Sev Use D/O
+ ;;^UTILITY(U,$J,358.3,13568,1,4,0)
+ ;;=4^F19.281
+ ;;^UTILITY(U,$J,358.3,13568,2)
+ ;;=^5003448
+ ;;^UTILITY(U,$J,358.3,13569,0)
+ ;;=F19.981^^58^712^18
+ ;;^UTILITY(U,$J,358.3,13569,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13569,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Sexual Dysfunction w/ o Use D/O
+ ;;^UTILITY(U,$J,358.3,13569,1,4,0)
+ ;;=4^F19.981
+ ;;^UTILITY(U,$J,358.3,13569,2)
+ ;;=^5003467
+ ;;^UTILITY(U,$J,358.3,13570,0)
+ ;;=F19.182^^58^712^19
+ ;;^UTILITY(U,$J,358.3,13570,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13570,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Sleep D/O w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,13570,1,4,0)
+ ;;=4^F19.182
+ ;;^UTILITY(U,$J,358.3,13570,2)
+ ;;=^5003429
+ ;;^UTILITY(U,$J,358.3,13571,0)
+ ;;=F19.282^^58^712^20
+ ;;^UTILITY(U,$J,358.3,13571,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13571,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Sleep D/O w/ Mod-Sev Use D/O
+ ;;^UTILITY(U,$J,358.3,13571,1,4,0)
+ ;;=4^F19.282
+ ;;^UTILITY(U,$J,358.3,13571,2)
+ ;;=^5003449
+ ;;^UTILITY(U,$J,358.3,13572,0)
+ ;;=F19.982^^58^712^21
+ ;;^UTILITY(U,$J,358.3,13572,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13572,1,3,0)
+ ;;=3^Other/Unknown Substance Induced Sleep D/O w/o Use D/O
+ ;;^UTILITY(U,$J,358.3,13572,1,4,0)
+ ;;=4^F19.982
+ ;;^UTILITY(U,$J,358.3,13572,2)
+ ;;=^5003468
+ ;;^UTILITY(U,$J,358.3,13573,0)
+ ;;=F19.129^^58^712^25
+ ;;^UTILITY(U,$J,358.3,13573,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13573,1,3,0)
+ ;;=3^Other/Unknown Substance Intoxication w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,13573,1,4,0)
+ ;;=4^F19.129
+ ;;^UTILITY(U,$J,358.3,13573,2)
+ ;;=^5003420
+ ;;^UTILITY(U,$J,358.3,13574,0)
+ ;;=F19.229^^58^712^26
+ ;;^UTILITY(U,$J,358.3,13574,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13574,1,3,0)
+ ;;=3^Other/Unknown Substance Intoxication w/ Mod-Sev Use D/O
+ ;;^UTILITY(U,$J,358.3,13574,1,4,0)
+ ;;=4^F19.229
+ ;;^UTILITY(U,$J,358.3,13574,2)
+ ;;=^5003436
+ ;;^UTILITY(U,$J,358.3,13575,0)
+ ;;=F19.929^^58^712^27
+ ;;^UTILITY(U,$J,358.3,13575,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13575,1,3,0)
+ ;;=3^Other/Unknown Substance Intoxication w/o Use D/O
+ ;;^UTILITY(U,$J,358.3,13575,1,4,0)
+ ;;=4^F19.929
+ ;;^UTILITY(U,$J,358.3,13575,2)
+ ;;=^5003455

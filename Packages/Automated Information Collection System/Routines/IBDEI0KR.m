@@ -1,130 +1,284 @@
-IBDEI0KR ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0KR ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,9392,1,2,0)
- ;;=2^EEG,Over 1 Hour
- ;;^UTILITY(U,$J,358.3,9392,1,3,0)
- ;;=3^95813
- ;;^UTILITY(U,$J,358.3,9393,0)
- ;;=95816^^62^601^3^^^^1
- ;;^UTILITY(U,$J,358.3,9393,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9393,1,2,0)
- ;;=2^EEG,Awake and Drowsy
- ;;^UTILITY(U,$J,358.3,9393,1,3,0)
- ;;=3^95816
- ;;^UTILITY(U,$J,358.3,9394,0)
- ;;=95819^^62^601^4^^^^1
- ;;^UTILITY(U,$J,358.3,9394,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9394,1,2,0)
- ;;=2^EEG,Awake and Asleep
- ;;^UTILITY(U,$J,358.3,9394,1,3,0)
- ;;=3^95819
- ;;^UTILITY(U,$J,358.3,9395,0)
- ;;=95822^^62^601^5^^^^1
- ;;^UTILITY(U,$J,358.3,9395,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9395,1,2,0)
- ;;=2^EEG,Sleep or Coma Only
- ;;^UTILITY(U,$J,358.3,9395,1,3,0)
- ;;=3^95822
- ;;^UTILITY(U,$J,358.3,9396,0)
- ;;=3650F^^62^601^6^^^^1
- ;;^UTILITY(U,$J,358.3,9396,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9396,1,2,0)
- ;;=2^EEG Store and Forward
- ;;^UTILITY(U,$J,358.3,9396,1,3,0)
- ;;=3^3650F
- ;;^UTILITY(U,$J,358.3,9397,0)
- ;;=95926^^62^602^4^^^^1
- ;;^UTILITY(U,$J,358.3,9397,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9397,1,2,0)
- ;;=2^Short Latency SSEP,Periph Nerve,Lower
- ;;^UTILITY(U,$J,358.3,9397,1,3,0)
- ;;=3^95926
- ;;^UTILITY(U,$J,358.3,9398,0)
- ;;=95925^^62^602^5^^^^1
- ;;^UTILITY(U,$J,358.3,9398,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9398,1,2,0)
- ;;=2^Short Latency SSEP,Periph Nerve,Upper
- ;;^UTILITY(U,$J,358.3,9398,1,3,0)
- ;;=3^95925
- ;;^UTILITY(U,$J,358.3,9399,0)
- ;;=95938^^62^602^6^^^^1
- ;;^UTILITY(U,$J,358.3,9399,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9399,1,2,0)
- ;;=2^Short Latency SSEP,Periph Nerve,Uppr&Lwr
- ;;^UTILITY(U,$J,358.3,9399,1,3,0)
- ;;=3^95938
- ;;^UTILITY(U,$J,358.3,9400,0)
- ;;=95928^^62^602^2^^^^1
- ;;^UTILITY(U,$J,358.3,9400,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9400,1,2,0)
- ;;=2^C Motor Evoked Upper Limbs
- ;;^UTILITY(U,$J,358.3,9400,1,3,0)
- ;;=3^95928
- ;;^UTILITY(U,$J,358.3,9401,0)
- ;;=95929^^62^602^1^^^^1
- ;;^UTILITY(U,$J,358.3,9401,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9401,1,2,0)
- ;;=2^C Motor Evoked Lower Limbs
- ;;^UTILITY(U,$J,358.3,9401,1,3,0)
- ;;=3^95929
- ;;^UTILITY(U,$J,358.3,9402,0)
- ;;=95939^^62^602^3^^^^1
- ;;^UTILITY(U,$J,358.3,9402,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9402,1,2,0)
- ;;=2^C Motor Evoked Uppr&Lwr Limbs
- ;;^UTILITY(U,$J,358.3,9402,1,3,0)
- ;;=3^95939
- ;;^UTILITY(U,$J,358.3,9403,0)
- ;;=95974^^62^603^1^^^^1
- ;;^UTILITY(U,$J,358.3,9403,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9403,1,2,0)
- ;;=2^VNS Analysis/Program,1st Hr
- ;;^UTILITY(U,$J,358.3,9403,1,3,0)
- ;;=3^95974
- ;;^UTILITY(U,$J,358.3,9404,0)
- ;;=95975^^62^603^2^^^^1
- ;;^UTILITY(U,$J,358.3,9404,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9404,1,2,0)
- ;;=2^VNS Analysis/Program,Ea Add 30min
- ;;^UTILITY(U,$J,358.3,9404,1,3,0)
- ;;=3^95975
- ;;^UTILITY(U,$J,358.3,9405,0)
- ;;=G40.A01^^63^604^3
- ;;^UTILITY(U,$J,358.3,9405,1,0)
+ ;;^UTILITY(U,$J,358.3,20919,1,4,0)
+ ;;=4^N91.4
+ ;;^UTILITY(U,$J,358.3,20919,2)
+ ;;=^5015906
+ ;;^UTILITY(U,$J,358.3,20920,0)
+ ;;=N91.5^^86^1010^77
+ ;;^UTILITY(U,$J,358.3,20920,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9405,1,3,0)
- ;;=3^Absence Seizures Not Intractable w/ Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9405,1,4,0)
- ;;=4^G40.A01
- ;;^UTILITY(U,$J,358.3,9405,2)
- ;;=^5003868
- ;;^UTILITY(U,$J,358.3,9406,0)
- ;;=G40.A09^^63^604^4
- ;;^UTILITY(U,$J,358.3,9406,1,0)
+ ;;^UTILITY(U,$J,358.3,20920,1,3,0)
+ ;;=3^Oligomenorrhea,Unspec
+ ;;^UTILITY(U,$J,358.3,20920,1,4,0)
+ ;;=4^N91.5
+ ;;^UTILITY(U,$J,358.3,20920,2)
+ ;;=^5015907
+ ;;^UTILITY(U,$J,358.3,20921,0)
+ ;;=N92.0^^86^1010^41
+ ;;^UTILITY(U,$J,358.3,20921,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9406,1,3,0)
- ;;=3^Absence Seizures Not Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9406,1,4,0)
- ;;=4^G40.A09
- ;;^UTILITY(U,$J,358.3,9406,2)
- ;;=^5003869
- ;;^UTILITY(U,$J,358.3,9407,0)
- ;;=G40.A11^^63^604^1
- ;;^UTILITY(U,$J,358.3,9407,1,0)
+ ;;^UTILITY(U,$J,358.3,20921,1,3,0)
+ ;;=3^Excessive/Frequent Menstruation w/ Regular Cycle
+ ;;^UTILITY(U,$J,358.3,20921,1,4,0)
+ ;;=4^N92.0
+ ;;^UTILITY(U,$J,358.3,20921,2)
+ ;;=^5015908
+ ;;^UTILITY(U,$J,358.3,20922,0)
+ ;;=N92.6^^86^1010^63
+ ;;^UTILITY(U,$J,358.3,20922,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9407,1,3,0)
- ;;=3^Absence Seizures Intractable w/ Status Epilepticus
+ ;;^UTILITY(U,$J,358.3,20922,1,3,0)
+ ;;=3^Irregular Menstruation,Unspec
+ ;;^UTILITY(U,$J,358.3,20922,1,4,0)
+ ;;=4^N92.6
+ ;;^UTILITY(U,$J,358.3,20922,2)
+ ;;=^5015913
+ ;;^UTILITY(U,$J,358.3,20923,0)
+ ;;=N92.5^^86^1010^62
+ ;;^UTILITY(U,$J,358.3,20923,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20923,1,3,0)
+ ;;=3^Irregular Menstruation,Other Spec
+ ;;^UTILITY(U,$J,358.3,20923,1,4,0)
+ ;;=4^N92.5
+ ;;^UTILITY(U,$J,358.3,20923,2)
+ ;;=^5015912
+ ;;^UTILITY(U,$J,358.3,20924,0)
+ ;;=N92.3^^86^1010^80
+ ;;^UTILITY(U,$J,358.3,20924,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20924,1,3,0)
+ ;;=3^Ovulation Bleeding
+ ;;^UTILITY(U,$J,358.3,20924,1,4,0)
+ ;;=4^N92.3
+ ;;^UTILITY(U,$J,358.3,20924,2)
+ ;;=^270570
+ ;;^UTILITY(U,$J,358.3,20925,0)
+ ;;=N89.7^^86^1010^55
+ ;;^UTILITY(U,$J,358.3,20925,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20925,1,3,0)
+ ;;=3^Hematocolpos
+ ;;^UTILITY(U,$J,358.3,20925,1,4,0)
+ ;;=4^N89.7
+ ;;^UTILITY(U,$J,358.3,20925,2)
+ ;;=^5015889
+ ;;^UTILITY(U,$J,358.3,20926,0)
+ ;;=N93.8^^86^1010^5
+ ;;^UTILITY(U,$J,358.3,20926,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20926,1,3,0)
+ ;;=3^Abnormal Uterine/Vaginal Bleeding,Other Spec
+ ;;^UTILITY(U,$J,358.3,20926,1,4,0)
+ ;;=4^N93.8
+ ;;^UTILITY(U,$J,358.3,20926,2)
+ ;;=^5015915
+ ;;^UTILITY(U,$J,358.3,20927,0)
+ ;;=N93.9^^86^1010^6
+ ;;^UTILITY(U,$J,358.3,20927,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20927,1,3,0)
+ ;;=3^Abnormal Uterine/Vaginal Bleeding,Unspec
+ ;;^UTILITY(U,$J,358.3,20927,1,4,0)
+ ;;=4^N93.9
+ ;;^UTILITY(U,$J,358.3,20927,2)
+ ;;=^5015916
+ ;;^UTILITY(U,$J,358.3,20928,0)
+ ;;=N92.4^^86^1010^39
+ ;;^UTILITY(U,$J,358.3,20928,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20928,1,3,0)
+ ;;=3^Excessive Bleeding in Premenopausal Period
+ ;;^UTILITY(U,$J,358.3,20928,1,4,0)
+ ;;=4^N92.4
+ ;;^UTILITY(U,$J,358.3,20928,2)
+ ;;=^5015911
+ ;;^UTILITY(U,$J,358.3,20929,0)
+ ;;=N95.0^^86^1010^89
+ ;;^UTILITY(U,$J,358.3,20929,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20929,1,3,0)
+ ;;=3^Postmenopausal Bleeding
+ ;;^UTILITY(U,$J,358.3,20929,1,4,0)
+ ;;=4^N95.0
+ ;;^UTILITY(U,$J,358.3,20929,2)
+ ;;=^97040
+ ;;^UTILITY(U,$J,358.3,20930,0)
+ ;;=N95.1^^86^1010^71
+ ;;^UTILITY(U,$J,358.3,20930,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20930,1,3,0)
+ ;;=3^Menopausal/Female Climacteric States
+ ;;^UTILITY(U,$J,358.3,20930,1,4,0)
+ ;;=4^N95.1
+ ;;^UTILITY(U,$J,358.3,20930,2)
+ ;;=^5015927
+ ;;^UTILITY(U,$J,358.3,20931,0)
+ ;;=N97.0^^86^1010^46
+ ;;^UTILITY(U,$J,358.3,20931,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20931,1,3,0)
+ ;;=3^Female Infertility Associated w/ Anovulation
+ ;;^UTILITY(U,$J,358.3,20931,1,4,0)
+ ;;=4^N97.0
+ ;;^UTILITY(U,$J,358.3,20931,2)
+ ;;=^5015931
+ ;;^UTILITY(U,$J,358.3,20932,0)
+ ;;=N97.9^^86^1010^47
+ ;;^UTILITY(U,$J,358.3,20932,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20932,1,3,0)
+ ;;=3^Female Infertility,Unspec
+ ;;^UTILITY(U,$J,358.3,20932,1,4,0)
+ ;;=4^N97.9
+ ;;^UTILITY(U,$J,358.3,20932,2)
+ ;;=^5015935
+ ;;^UTILITY(U,$J,358.3,20933,0)
+ ;;=L29.2^^86^1010^96
+ ;;^UTILITY(U,$J,358.3,20933,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20933,1,3,0)
+ ;;=3^Pruritus Vulvae
+ ;;^UTILITY(U,$J,358.3,20933,1,4,0)
+ ;;=4^L29.2
+ ;;^UTILITY(U,$J,358.3,20933,2)
+ ;;=^100075
+ ;;^UTILITY(U,$J,358.3,20934,0)
+ ;;=R92.8^^86^1010^7
+ ;;^UTILITY(U,$J,358.3,20934,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20934,1,3,0)
+ ;;=3^Abnormal/Inconclusive Findings on Dx Imaging of Breast
+ ;;^UTILITY(U,$J,358.3,20934,1,4,0)
+ ;;=4^R92.8
+ ;;^UTILITY(U,$J,358.3,20934,2)
+ ;;=^5019712
+ ;;^UTILITY(U,$J,358.3,20935,0)
+ ;;=R87.619^^86^1010^4
+ ;;^UTILITY(U,$J,358.3,20935,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20935,1,3,0)
+ ;;=3^Abnormal Cytology Findings in Specimen of Cervix Uteri,Unspec
+ ;;^UTILITY(U,$J,358.3,20935,1,4,0)
+ ;;=4^R87.619
+ ;;^UTILITY(U,$J,358.3,20935,2)
+ ;;=^5019676
+ ;;^UTILITY(U,$J,358.3,20936,0)
+ ;;=Z79.890^^86^1010^57
+ ;;^UTILITY(U,$J,358.3,20936,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20936,1,3,0)
+ ;;=3^Hormone Replacement Therapy,Postmenopausal
+ ;;^UTILITY(U,$J,358.3,20936,1,4,0)
+ ;;=4^Z79.890
+ ;;^UTILITY(U,$J,358.3,20936,2)
+ ;;=^331975
+ ;;^UTILITY(U,$J,358.3,20937,0)
+ ;;=Z33.1^^86^1010^94
+ ;;^UTILITY(U,$J,358.3,20937,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20937,1,3,0)
+ ;;=3^Pregnant State,Incidental
+ ;;^UTILITY(U,$J,358.3,20937,1,4,0)
+ ;;=4^Z33.1
+ ;;^UTILITY(U,$J,358.3,20937,2)
+ ;;=^5062853
+ ;;^UTILITY(U,$J,358.3,20938,0)
+ ;;=Z39.2^^86^1010^90
+ ;;^UTILITY(U,$J,358.3,20938,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20938,1,3,0)
+ ;;=3^Postpartum Follow-up Routine Encounter
+ ;;^UTILITY(U,$J,358.3,20938,1,4,0)
+ ;;=4^Z39.2
+ ;;^UTILITY(U,$J,358.3,20938,2)
+ ;;=^5062906
+ ;;^UTILITY(U,$J,358.3,20939,0)
+ ;;=Z30.09^^86^1010^25
+ ;;^UTILITY(U,$J,358.3,20939,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20939,1,3,0)
+ ;;=3^Counsel/Advice on Contraception Encounter
+ ;;^UTILITY(U,$J,358.3,20939,1,4,0)
+ ;;=4^Z30.09
+ ;;^UTILITY(U,$J,358.3,20939,2)
+ ;;=^5062817
+ ;;^UTILITY(U,$J,358.3,20940,0)
+ ;;=Z30.9^^86^1010^24
+ ;;^UTILITY(U,$J,358.3,20940,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20940,1,3,0)
+ ;;=3^Contraceptive Management Encounter
+ ;;^UTILITY(U,$J,358.3,20940,1,4,0)
+ ;;=4^Z30.9
+ ;;^UTILITY(U,$J,358.3,20940,2)
+ ;;=^5062828
+ ;;^UTILITY(U,$J,358.3,20941,0)
+ ;;=N64.3^^86^1010^53
+ ;;^UTILITY(U,$J,358.3,20941,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20941,1,3,0)
+ ;;=3^Galactorrhea Not Associated w/ Childbirth
+ ;;^UTILITY(U,$J,358.3,20941,1,4,0)
+ ;;=4^N64.3
+ ;;^UTILITY(U,$J,358.3,20941,2)
+ ;;=^270460
+ ;;^UTILITY(U,$J,358.3,20942,0)
+ ;;=R92.2^^86^1010^60
+ ;;^UTILITY(U,$J,358.3,20942,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20942,1,3,0)
+ ;;=3^Inconclusive Mammogram
+ ;;^UTILITY(U,$J,358.3,20942,1,4,0)
+ ;;=4^R92.2
+ ;;^UTILITY(U,$J,358.3,20942,2)
+ ;;=^5019711
+ ;;^UTILITY(U,$J,358.3,20943,0)
+ ;;=Z30.432^^86^1010^98
+ ;;^UTILITY(U,$J,358.3,20943,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20943,1,3,0)
+ ;;=3^Removal of IUD
+ ;;^UTILITY(U,$J,358.3,20943,1,4,0)
+ ;;=4^Z30.432
+ ;;^UTILITY(U,$J,358.3,20943,2)
+ ;;=^5062824
+ ;;^UTILITY(U,$J,358.3,20944,0)
+ ;;=Z90.710^^86^1010^12
+ ;;^UTILITY(U,$J,358.3,20944,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20944,1,3,0)
+ ;;=3^Acquired Absence of Cervix & Uterus
+ ;;^UTILITY(U,$J,358.3,20944,1,4,0)
+ ;;=4^Z90.710
+ ;;^UTILITY(U,$J,358.3,20944,2)
+ ;;=^5063591
+ ;;^UTILITY(U,$J,358.3,20945,0)
+ ;;=Z90.13^^86^1010^11
+ ;;^UTILITY(U,$J,358.3,20945,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20945,1,3,0)
+ ;;=3^Acquired Absence of Breasts,Bilateral
+ ;;^UTILITY(U,$J,358.3,20945,1,4,0)
+ ;;=4^Z90.13
+ ;;^UTILITY(U,$J,358.3,20945,2)
+ ;;=^5063584
+ ;;^UTILITY(U,$J,358.3,20946,0)
+ ;;=Z90.12^^86^1010^9
+ ;;^UTILITY(U,$J,358.3,20946,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20946,1,3,0)
+ ;;=3^Acquired Absence of Breast,Left
+ ;;^UTILITY(U,$J,358.3,20946,1,4,0)
+ ;;=4^Z90.12
+ ;;^UTILITY(U,$J,358.3,20946,2)
+ ;;=^5063583
+ ;;^UTILITY(U,$J,358.3,20947,0)
+ ;;=Z90.11^^86^1010^10
+ ;;^UTILITY(U,$J,358.3,20947,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20947,1,3,0)
+ ;;=3^Acquired Absence of Breast,Right

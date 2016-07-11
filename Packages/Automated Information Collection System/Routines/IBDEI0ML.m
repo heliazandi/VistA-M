@@ -1,126 +1,286 @@
-IBDEI0ML ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0ML ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10312,0)
- ;;=I70.733^^68^664^82
- ;;^UTILITY(U,$J,358.3,10312,1,0)
+ ;;^UTILITY(U,$J,358.3,22778,1,4,0)
+ ;;=4^M87.111
+ ;;^UTILITY(U,$J,358.3,22778,2)
+ ;;=^5014701
+ ;;^UTILITY(U,$J,358.3,22779,0)
+ ;;=M87.112^^89^1052^71
+ ;;^UTILITY(U,$J,358.3,22779,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10312,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Ankle Ulcer
- ;;^UTILITY(U,$J,358.3,10312,1,4,0)
- ;;=4^I70.733
- ;;^UTILITY(U,$J,358.3,10312,2)
- ;;=^5007771
- ;;^UTILITY(U,$J,358.3,10313,0)
- ;;=I70.734^^68^664^83
- ;;^UTILITY(U,$J,358.3,10313,1,0)
+ ;;^UTILITY(U,$J,358.3,22779,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22779,1,4,0)
+ ;;=4^M87.112
+ ;;^UTILITY(U,$J,358.3,22779,2)
+ ;;=^5014702
+ ;;^UTILITY(U,$J,358.3,22780,0)
+ ;;=M87.150^^89^1052^72
+ ;;^UTILITY(U,$J,358.3,22780,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10313,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Heel/Midfoot Ulcer
- ;;^UTILITY(U,$J,358.3,10313,1,4,0)
- ;;=4^I70.734
- ;;^UTILITY(U,$J,358.3,10313,2)
- ;;=^5007772
- ;;^UTILITY(U,$J,358.3,10314,0)
- ;;=I70.735^^68^664^84
- ;;^UTILITY(U,$J,358.3,10314,1,0)
+ ;;^UTILITY(U,$J,358.3,22780,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Pelvis
+ ;;^UTILITY(U,$J,358.3,22780,1,4,0)
+ ;;=4^M87.150
+ ;;^UTILITY(U,$J,358.3,22780,2)
+ ;;=^5014722
+ ;;^UTILITY(U,$J,358.3,22781,0)
+ ;;=M87.151^^89^1052^73
+ ;;^UTILITY(U,$J,358.3,22781,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10314,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Oth Part Foot Ulcer
- ;;^UTILITY(U,$J,358.3,10314,1,4,0)
- ;;=4^I70.735
- ;;^UTILITY(U,$J,358.3,10314,2)
- ;;=^5007773
- ;;^UTILITY(U,$J,358.3,10315,0)
- ;;=I70.741^^68^664^79
- ;;^UTILITY(U,$J,358.3,10315,1,0)
+ ;;^UTILITY(U,$J,358.3,22781,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Right Femur
+ ;;^UTILITY(U,$J,358.3,22781,1,4,0)
+ ;;=4^M87.151
+ ;;^UTILITY(U,$J,358.3,22781,2)
+ ;;=^5014723
+ ;;^UTILITY(U,$J,358.3,22782,0)
+ ;;=M87.152^^89^1052^70
+ ;;^UTILITY(U,$J,358.3,22782,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10315,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Thigh Ulcer
- ;;^UTILITY(U,$J,358.3,10315,1,4,0)
- ;;=4^I70.741
- ;;^UTILITY(U,$J,358.3,10315,2)
- ;;=^5133601
- ;;^UTILITY(U,$J,358.3,10316,0)
- ;;=I70.742^^68^664^76
- ;;^UTILITY(U,$J,358.3,10316,1,0)
+ ;;^UTILITY(U,$J,358.3,22782,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Left Femur
+ ;;^UTILITY(U,$J,358.3,22782,1,4,0)
+ ;;=4^M87.152
+ ;;^UTILITY(U,$J,358.3,22782,2)
+ ;;=^5014724
+ ;;^UTILITY(U,$J,358.3,22783,0)
+ ;;=M87.180^^89^1052^69
+ ;;^UTILITY(U,$J,358.3,22783,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10316,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Calf Ulcer
- ;;^UTILITY(U,$J,358.3,10316,1,4,0)
- ;;=4^I70.742
- ;;^UTILITY(U,$J,358.3,10316,2)
- ;;=^5133602
- ;;^UTILITY(U,$J,358.3,10317,0)
- ;;=I70.743^^68^664^75
- ;;^UTILITY(U,$J,358.3,10317,1,0)
+ ;;^UTILITY(U,$J,358.3,22783,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Jaw
+ ;;^UTILITY(U,$J,358.3,22783,1,4,0)
+ ;;=4^M87.180
+ ;;^UTILITY(U,$J,358.3,22783,2)
+ ;;=^5014741
+ ;;^UTILITY(U,$J,358.3,22784,0)
+ ;;=M87.311^^89^1052^168
+ ;;^UTILITY(U,$J,358.3,22784,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10317,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Ankle Ulcer
- ;;^UTILITY(U,$J,358.3,10317,1,4,0)
- ;;=4^I70.743
- ;;^UTILITY(U,$J,358.3,10317,2)
- ;;=^5133603
- ;;^UTILITY(U,$J,358.3,10318,0)
- ;;=I70.744^^68^664^77
- ;;^UTILITY(U,$J,358.3,10318,1,0)
+ ;;^UTILITY(U,$J,358.3,22784,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22784,1,4,0)
+ ;;=4^M87.311
+ ;;^UTILITY(U,$J,358.3,22784,2)
+ ;;=^5014788
+ ;;^UTILITY(U,$J,358.3,22785,0)
+ ;;=M87.312^^89^1052^165
+ ;;^UTILITY(U,$J,358.3,22785,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10318,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Heel/Midfoot Ulcer
- ;;^UTILITY(U,$J,358.3,10318,1,4,0)
- ;;=4^I70.744
- ;;^UTILITY(U,$J,358.3,10318,2)
- ;;=^5133604
- ;;^UTILITY(U,$J,358.3,10319,0)
- ;;=I70.745^^68^664^78
- ;;^UTILITY(U,$J,358.3,10319,1,0)
+ ;;^UTILITY(U,$J,358.3,22785,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22785,1,4,0)
+ ;;=4^M87.312
+ ;;^UTILITY(U,$J,358.3,22785,2)
+ ;;=^5014789
+ ;;^UTILITY(U,$J,358.3,22786,0)
+ ;;=M87.350^^89^1052^166
+ ;;^UTILITY(U,$J,358.3,22786,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10319,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Oth Part Foot Ulcer
- ;;^UTILITY(U,$J,358.3,10319,1,4,0)
- ;;=4^I70.745
- ;;^UTILITY(U,$J,358.3,10319,2)
- ;;=^5133605
- ;;^UTILITY(U,$J,358.3,10320,0)
- ;;=I83.009^^68^664^287
- ;;^UTILITY(U,$J,358.3,10320,1,0)
+ ;;^UTILITY(U,$J,358.3,22786,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Pelvis
+ ;;^UTILITY(U,$J,358.3,22786,1,4,0)
+ ;;=4^M87.350
+ ;;^UTILITY(U,$J,358.3,22786,2)
+ ;;=^5014809
+ ;;^UTILITY(U,$J,358.3,22787,0)
+ ;;=M87.351^^89^1052^167
+ ;;^UTILITY(U,$J,358.3,22787,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10320,1,3,0)
- ;;=3^Varicose Veins of Lower Extremity w/ Ulcer
- ;;^UTILITY(U,$J,358.3,10320,1,4,0)
- ;;=4^I83.009
- ;;^UTILITY(U,$J,358.3,10320,2)
- ;;=^5007972
- ;;^UTILITY(U,$J,358.3,10321,0)
- ;;=H65.03^^68^665^3
- ;;^UTILITY(U,$J,358.3,10321,1,0)
+ ;;^UTILITY(U,$J,358.3,22787,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Right Femur
+ ;;^UTILITY(U,$J,358.3,22787,1,4,0)
+ ;;=4^M87.351
+ ;;^UTILITY(U,$J,358.3,22787,2)
+ ;;=^5014810
+ ;;^UTILITY(U,$J,358.3,22788,0)
+ ;;=M87.352^^89^1052^164
+ ;;^UTILITY(U,$J,358.3,22788,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10321,1,3,0)
- ;;=3^Acute Serous Otitis Media,Bilateral
- ;;^UTILITY(U,$J,358.3,10321,1,4,0)
- ;;=4^H65.03
- ;;^UTILITY(U,$J,358.3,10321,2)
- ;;=^5006572
- ;;^UTILITY(U,$J,358.3,10322,0)
- ;;=H65.01^^68^665^5
- ;;^UTILITY(U,$J,358.3,10322,1,0)
+ ;;^UTILITY(U,$J,358.3,22788,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Left Femur
+ ;;^UTILITY(U,$J,358.3,22788,1,4,0)
+ ;;=4^M87.352
+ ;;^UTILITY(U,$J,358.3,22788,2)
+ ;;=^5014811
+ ;;^UTILITY(U,$J,358.3,22789,0)
+ ;;=M87.811^^89^1052^79
+ ;;^UTILITY(U,$J,358.3,22789,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10322,1,3,0)
- ;;=3^Acute Serous Otitis Media,Right Ear
- ;;^UTILITY(U,$J,358.3,10322,1,4,0)
- ;;=4^H65.01
- ;;^UTILITY(U,$J,358.3,10322,2)
- ;;=^5006570
- ;;^UTILITY(U,$J,358.3,10323,0)
- ;;=H65.23^^68^665^15
- ;;^UTILITY(U,$J,358.3,10323,1,0)
+ ;;^UTILITY(U,$J,358.3,22789,1,3,0)
+ ;;=3^Osteonecrosis,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22789,1,4,0)
+ ;;=4^M87.811
+ ;;^UTILITY(U,$J,358.3,22789,2)
+ ;;=^5014831
+ ;;^UTILITY(U,$J,358.3,22790,0)
+ ;;=M87.812^^89^1052^76
+ ;;^UTILITY(U,$J,358.3,22790,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10323,1,3,0)
- ;;=3^Chronic Serous Otitis Media,Bilateral
- ;;^UTILITY(U,$J,358.3,10323,1,4,0)
- ;;=4^H65.23
- ;;^UTILITY(U,$J,358.3,10323,2)
- ;;=^5006596
- ;;^UTILITY(U,$J,358.3,10324,0)
- ;;=H65.22^^68^665^16
+ ;;^UTILITY(U,$J,358.3,22790,1,3,0)
+ ;;=3^Osteonecrosis,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22790,1,4,0)
+ ;;=4^M87.812
+ ;;^UTILITY(U,$J,358.3,22790,2)
+ ;;=^5014832
+ ;;^UTILITY(U,$J,358.3,22791,0)
+ ;;=M87.850^^89^1052^77
+ ;;^UTILITY(U,$J,358.3,22791,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22791,1,3,0)
+ ;;=3^Osteonecrosis,Pelvis
+ ;;^UTILITY(U,$J,358.3,22791,1,4,0)
+ ;;=4^M87.850
+ ;;^UTILITY(U,$J,358.3,22791,2)
+ ;;=^5014852
+ ;;^UTILITY(U,$J,358.3,22792,0)
+ ;;=M87.851^^89^1052^78
+ ;;^UTILITY(U,$J,358.3,22792,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22792,1,3,0)
+ ;;=3^Osteonecrosis,Right Femur
+ ;;^UTILITY(U,$J,358.3,22792,1,4,0)
+ ;;=4^M87.851
+ ;;^UTILITY(U,$J,358.3,22792,2)
+ ;;=^5014853
+ ;;^UTILITY(U,$J,358.3,22793,0)
+ ;;=M87.852^^89^1052^75
+ ;;^UTILITY(U,$J,358.3,22793,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22793,1,3,0)
+ ;;=3^Osteonecrosis,Left Femur
+ ;;^UTILITY(U,$J,358.3,22793,1,4,0)
+ ;;=4^M87.852
+ ;;^UTILITY(U,$J,358.3,22793,2)
+ ;;=^5014854
+ ;;^UTILITY(U,$J,358.3,22794,0)
+ ;;=M88.0^^89^1052^66
+ ;;^UTILITY(U,$J,358.3,22794,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22794,1,3,0)
+ ;;=3^Osteitis Deformans of Skull
+ ;;^UTILITY(U,$J,358.3,22794,1,4,0)
+ ;;=4^M88.0
+ ;;^UTILITY(U,$J,358.3,22794,2)
+ ;;=^5014874
+ ;;^UTILITY(U,$J,358.3,22795,0)
+ ;;=M88.1^^89^1052^67
+ ;;^UTILITY(U,$J,358.3,22795,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22795,1,3,0)
+ ;;=3^Osteitis Deformans of Vertebrae
+ ;;^UTILITY(U,$J,358.3,22795,1,4,0)
+ ;;=4^M88.1
+ ;;^UTILITY(U,$J,358.3,22795,2)
+ ;;=^5014875
+ ;;^UTILITY(U,$J,358.3,22796,0)
+ ;;=M88.89^^89^1052^65
+ ;;^UTILITY(U,$J,358.3,22796,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22796,1,3,0)
+ ;;=3^Osteitis Deformans of Mult Sites
+ ;;^UTILITY(U,$J,358.3,22796,1,4,0)
+ ;;=4^M88.89
+ ;;^UTILITY(U,$J,358.3,22796,2)
+ ;;=^5014898
+ ;;^UTILITY(U,$J,358.3,22797,0)
+ ;;=M94.0^^89^1052^15
+ ;;^UTILITY(U,$J,358.3,22797,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22797,1,3,0)
+ ;;=3^Chondrocostal Junction Syndrome/Costochondritis
+ ;;^UTILITY(U,$J,358.3,22797,1,4,0)
+ ;;=4^M94.0
+ ;;^UTILITY(U,$J,358.3,22797,2)
+ ;;=^5015327
+ ;;^UTILITY(U,$J,358.3,22798,0)
+ ;;=M94.20^^89^1052^18
+ ;;^UTILITY(U,$J,358.3,22798,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22798,1,3,0)
+ ;;=3^Chondromalacia,Unspec Site
+ ;;^UTILITY(U,$J,358.3,22798,1,4,0)
+ ;;=4^M94.20
+ ;;^UTILITY(U,$J,358.3,22798,2)
+ ;;=^5015329
+ ;;^UTILITY(U,$J,358.3,22799,0)
+ ;;=M94.261^^89^1052^17
+ ;;^UTILITY(U,$J,358.3,22799,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22799,1,3,0)
+ ;;=3^Chondromalacia,Right Knee
+ ;;^UTILITY(U,$J,358.3,22799,1,4,0)
+ ;;=4^M94.261
+ ;;^UTILITY(U,$J,358.3,22799,2)
+ ;;=^5015345
+ ;;^UTILITY(U,$J,358.3,22800,0)
+ ;;=M94.262^^89^1052^16
+ ;;^UTILITY(U,$J,358.3,22800,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22800,1,3,0)
+ ;;=3^Chondromalacia,Left Knee
+ ;;^UTILITY(U,$J,358.3,22800,1,4,0)
+ ;;=4^M94.262
+ ;;^UTILITY(U,$J,358.3,22800,2)
+ ;;=^5015346
+ ;;^UTILITY(U,$J,358.3,22801,0)
+ ;;=R25.2^^89^1052^36
+ ;;^UTILITY(U,$J,358.3,22801,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22801,1,3,0)
+ ;;=3^Cramp and Spasm
+ ;;^UTILITY(U,$J,358.3,22801,1,4,0)
+ ;;=4^R25.2
+ ;;^UTILITY(U,$J,358.3,22801,2)
+ ;;=^5019301
+ ;;^UTILITY(U,$J,358.3,22802,0)
+ ;;=R70.0^^89^1052^38
+ ;;^UTILITY(U,$J,358.3,22802,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22802,1,3,0)
+ ;;=3^Elevated Erythrocyte Sedimentation Rate
+ ;;^UTILITY(U,$J,358.3,22802,1,4,0)
+ ;;=4^R70.0
+ ;;^UTILITY(U,$J,358.3,22802,2)
+ ;;=^5019559
+ ;;^UTILITY(U,$J,358.3,22803,0)
+ ;;=M25.511^^89^1052^115
+ ;;^UTILITY(U,$J,358.3,22803,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22803,1,3,0)
+ ;;=3^Pain in Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22803,1,4,0)
+ ;;=4^M25.511
+ ;;^UTILITY(U,$J,358.3,22803,2)
+ ;;=^5011602
+ ;;^UTILITY(U,$J,358.3,22804,0)
+ ;;=M25.512^^89^1052^105
+ ;;^UTILITY(U,$J,358.3,22804,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22804,1,3,0)
+ ;;=3^Pain in Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22804,1,4,0)
+ ;;=4^M25.512
+ ;;^UTILITY(U,$J,358.3,22804,2)
+ ;;=^5011603
+ ;;^UTILITY(U,$J,358.3,22805,0)
+ ;;=M25.521^^89^1052^109
+ ;;^UTILITY(U,$J,358.3,22805,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22805,1,3,0)
+ ;;=3^Pain in Right Elbow
+ ;;^UTILITY(U,$J,358.3,22805,1,4,0)
+ ;;=4^M25.521
+ ;;^UTILITY(U,$J,358.3,22805,2)
+ ;;=^5011605
+ ;;^UTILITY(U,$J,358.3,22806,0)
+ ;;=M25.522^^89^1052^99
+ ;;^UTILITY(U,$J,358.3,22806,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22806,1,3,0)
+ ;;=3^Pain in Left Elbow
+ ;;^UTILITY(U,$J,358.3,22806,1,4,0)
+ ;;=4^M25.522

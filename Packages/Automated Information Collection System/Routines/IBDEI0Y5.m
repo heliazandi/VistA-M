@@ -1,124 +1,286 @@
-IBDEI0Y5 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0Y5 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15734,1,4,0)
- ;;=4^L97.211
- ;;^UTILITY(U,$J,358.3,15734,2)
- ;;=^5009500
- ;;^UTILITY(U,$J,358.3,15735,0)
- ;;=L97.212^^85^825^123
- ;;^UTILITY(U,$J,358.3,15735,1,0)
+ ;;^UTILITY(U,$J,358.3,34367,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15735,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Right Calf,Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,15735,1,4,0)
- ;;=4^L97.212
- ;;^UTILITY(U,$J,358.3,15735,2)
- ;;=^5009501
- ;;^UTILITY(U,$J,358.3,15736,0)
- ;;=L97.213^^85^825^124
- ;;^UTILITY(U,$J,358.3,15736,1,0)
+ ;;^UTILITY(U,$J,358.3,34367,1,3,0)
+ ;;=3^Pulmonary Hypertension,Secondary
+ ;;^UTILITY(U,$J,358.3,34367,1,4,0)
+ ;;=4^I27.2
+ ;;^UTILITY(U,$J,358.3,34367,2)
+ ;;=^5007151
+ ;;^UTILITY(U,$J,358.3,34368,0)
+ ;;=I26.01^^125^1629^93
+ ;;^UTILITY(U,$J,358.3,34368,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15736,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Right Calf,Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,15736,1,4,0)
- ;;=4^L97.213
- ;;^UTILITY(U,$J,358.3,15736,2)
- ;;=^5009502
- ;;^UTILITY(U,$J,358.3,15737,0)
- ;;=L97.214^^85^825^125
- ;;^UTILITY(U,$J,358.3,15737,1,0)
+ ;;^UTILITY(U,$J,358.3,34368,1,3,0)
+ ;;=3^Septic Pulmonary Embolism w/ Acute Cor Pulmonale
+ ;;^UTILITY(U,$J,358.3,34368,1,4,0)
+ ;;=4^I26.01
+ ;;^UTILITY(U,$J,358.3,34368,2)
+ ;;=^5007145
+ ;;^UTILITY(U,$J,358.3,34369,0)
+ ;;=I26.90^^125^1629^94
+ ;;^UTILITY(U,$J,358.3,34369,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15737,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Right Calf,Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,15737,1,4,0)
- ;;=4^L97.214
- ;;^UTILITY(U,$J,358.3,15737,2)
- ;;=^5009503
- ;;^UTILITY(U,$J,358.3,15738,0)
- ;;=L97.219^^85^825^126
- ;;^UTILITY(U,$J,358.3,15738,1,0)
+ ;;^UTILITY(U,$J,358.3,34369,1,3,0)
+ ;;=3^Septic Pulmonary Embolism w/o Acute Cor Pulmonale
+ ;;^UTILITY(U,$J,358.3,34369,1,4,0)
+ ;;=4^I26.90
+ ;;^UTILITY(U,$J,358.3,34369,2)
+ ;;=^5007148
+ ;;^UTILITY(U,$J,358.3,34370,0)
+ ;;=J06.9^^125^1629^1
+ ;;^UTILITY(U,$J,358.3,34370,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15738,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Right Calf,Unspec Severity
- ;;^UTILITY(U,$J,358.3,15738,1,4,0)
- ;;=4^L97.219
- ;;^UTILITY(U,$J,358.3,15738,2)
- ;;=^5009504
- ;;^UTILITY(U,$J,358.3,15739,0)
- ;;=L97.311^^85^825^117
- ;;^UTILITY(U,$J,358.3,15739,1,0)
+ ;;^UTILITY(U,$J,358.3,34370,1,3,0)
+ ;;=3^AC Upper Respiratory Infection,Unspec
+ ;;^UTILITY(U,$J,358.3,34370,1,4,0)
+ ;;=4^J06.9
+ ;;^UTILITY(U,$J,358.3,34370,2)
+ ;;=^5008143
+ ;;^UTILITY(U,$J,358.3,34371,0)
+ ;;=E66.01^^125^1629^52
+ ;;^UTILITY(U,$J,358.3,34371,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15739,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Right Ankle,Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,15739,1,4,0)
- ;;=4^L97.311
- ;;^UTILITY(U,$J,358.3,15739,2)
- ;;=^5009515
- ;;^UTILITY(U,$J,358.3,15740,0)
- ;;=L97.312^^85^825^118
- ;;^UTILITY(U,$J,358.3,15740,1,0)
+ ;;^UTILITY(U,$J,358.3,34371,1,3,0)
+ ;;=3^Morbid Obesity
+ ;;^UTILITY(U,$J,358.3,34371,1,4,0)
+ ;;=4^E66.01
+ ;;^UTILITY(U,$J,358.3,34371,2)
+ ;;=^5002826
+ ;;^UTILITY(U,$J,358.3,34372,0)
+ ;;=E66.2^^125^1629^53
+ ;;^UTILITY(U,$J,358.3,34372,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15740,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Right Ankle,Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,15740,1,4,0)
- ;;=4^L97.312
- ;;^UTILITY(U,$J,358.3,15740,2)
- ;;=^5009516
- ;;^UTILITY(U,$J,358.3,15741,0)
- ;;=L97.313^^85^825^119
- ;;^UTILITY(U,$J,358.3,15741,1,0)
+ ;;^UTILITY(U,$J,358.3,34372,1,3,0)
+ ;;=3^Morbid Obesity w/ Alveolar Hypoventilation
+ ;;^UTILITY(U,$J,358.3,34372,1,4,0)
+ ;;=4^E66.2
+ ;;^UTILITY(U,$J,358.3,34372,2)
+ ;;=^5002829
+ ;;^UTILITY(U,$J,358.3,34373,0)
+ ;;=J96.01^^125^1629^5
+ ;;^UTILITY(U,$J,358.3,34373,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15741,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Right Ankle,Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,15741,1,4,0)
- ;;=4^L97.313
- ;;^UTILITY(U,$J,358.3,15741,2)
- ;;=^5009517
- ;;^UTILITY(U,$J,358.3,15742,0)
- ;;=L97.314^^85^825^120
- ;;^UTILITY(U,$J,358.3,15742,1,0)
+ ;;^UTILITY(U,$J,358.3,34373,1,3,0)
+ ;;=3^Acute Respiratory Failure w/ Hypoxia
+ ;;^UTILITY(U,$J,358.3,34373,1,4,0)
+ ;;=4^J96.01
+ ;;^UTILITY(U,$J,358.3,34373,2)
+ ;;=^5008348
+ ;;^UTILITY(U,$J,358.3,34374,0)
+ ;;=J96.02^^125^1629^4
+ ;;^UTILITY(U,$J,358.3,34374,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15742,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Right Ankle,Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,15742,1,4,0)
- ;;=4^L97.314
- ;;^UTILITY(U,$J,358.3,15742,2)
- ;;=^5009518
- ;;^UTILITY(U,$J,358.3,15743,0)
- ;;=L97.319^^85^825^121
- ;;^UTILITY(U,$J,358.3,15743,1,0)
+ ;;^UTILITY(U,$J,358.3,34374,1,3,0)
+ ;;=3^Acute Respiratory Failure w/ Hypercapnia
+ ;;^UTILITY(U,$J,358.3,34374,1,4,0)
+ ;;=4^J96.02
+ ;;^UTILITY(U,$J,358.3,34374,2)
+ ;;=^5008349
+ ;;^UTILITY(U,$J,358.3,34375,0)
+ ;;=J96.10^^125^1629^25
+ ;;^UTILITY(U,$J,358.3,34375,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15743,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Right Ankle,Unspec Severity
- ;;^UTILITY(U,$J,358.3,15743,1,4,0)
- ;;=4^L97.319
- ;;^UTILITY(U,$J,358.3,15743,2)
- ;;=^5009519
- ;;^UTILITY(U,$J,358.3,15744,0)
- ;;=L97.411^^85^825^132
- ;;^UTILITY(U,$J,358.3,15744,1,0)
+ ;;^UTILITY(U,$J,358.3,34375,1,3,0)
+ ;;=3^Chr Respiratory Failure
+ ;;^UTILITY(U,$J,358.3,34375,1,4,0)
+ ;;=4^J96.10
+ ;;^UTILITY(U,$J,358.3,34375,2)
+ ;;=^5008350
+ ;;^UTILITY(U,$J,358.3,34376,0)
+ ;;=J96.11^^125^1629^27
+ ;;^UTILITY(U,$J,358.3,34376,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15744,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Right Heel/Midfoot,Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,15744,1,4,0)
- ;;=4^L97.411
- ;;^UTILITY(U,$J,358.3,15744,2)
- ;;=^5009530
- ;;^UTILITY(U,$J,358.3,15745,0)
- ;;=L97.412^^85^825^133
- ;;^UTILITY(U,$J,358.3,15745,1,0)
+ ;;^UTILITY(U,$J,358.3,34376,1,3,0)
+ ;;=3^Chr Respiratory Failure w/ Hypoxia
+ ;;^UTILITY(U,$J,358.3,34376,1,4,0)
+ ;;=4^J96.11
+ ;;^UTILITY(U,$J,358.3,34376,2)
+ ;;=^5008351
+ ;;^UTILITY(U,$J,358.3,34377,0)
+ ;;=J96.12^^125^1629^26
+ ;;^UTILITY(U,$J,358.3,34377,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15745,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Right Heel/Midfoot,Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,15745,1,4,0)
- ;;=4^L97.412
- ;;^UTILITY(U,$J,358.3,15745,2)
- ;;=^5009531
- ;;^UTILITY(U,$J,358.3,15746,0)
- ;;=L97.413^^85^825^134
- ;;^UTILITY(U,$J,358.3,15746,1,0)
+ ;;^UTILITY(U,$J,358.3,34377,1,3,0)
+ ;;=3^Chr Respiratory Failure w/ Hypercapnia
+ ;;^UTILITY(U,$J,358.3,34377,1,4,0)
+ ;;=4^J96.12
+ ;;^UTILITY(U,$J,358.3,34377,2)
+ ;;=^5008352
+ ;;^UTILITY(U,$J,358.3,34378,0)
+ ;;=J96.20^^125^1629^7
+ ;;^UTILITY(U,$J,358.3,34378,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15746,1,3,0)
- ;;=3^Nonpressure Chr Ulcer of Right Heel/Midfoot,Necrosis of Muscle
+ ;;^UTILITY(U,$J,358.3,34378,1,3,0)
+ ;;=3^Acute and Chr Respiratory Failure
+ ;;^UTILITY(U,$J,358.3,34378,1,4,0)
+ ;;=4^J96.20
+ ;;^UTILITY(U,$J,358.3,34378,2)
+ ;;=^5008353
+ ;;^UTILITY(U,$J,358.3,34379,0)
+ ;;=J96.21^^125^1629^8
+ ;;^UTILITY(U,$J,358.3,34379,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34379,1,3,0)
+ ;;=3^Acute and Chr Respiratory Failure w/ Hypoxia
+ ;;^UTILITY(U,$J,358.3,34379,1,4,0)
+ ;;=4^J96.21
+ ;;^UTILITY(U,$J,358.3,34379,2)
+ ;;=^5008354
+ ;;^UTILITY(U,$J,358.3,34380,0)
+ ;;=J96.22^^125^1629^9
+ ;;^UTILITY(U,$J,358.3,34380,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34380,1,3,0)
+ ;;=3^Acute and Chr Respiratory Failure w/ Hypercapnia
+ ;;^UTILITY(U,$J,358.3,34380,1,4,0)
+ ;;=4^J96.22
+ ;;^UTILITY(U,$J,358.3,34380,2)
+ ;;=^5008355
+ ;;^UTILITY(U,$J,358.3,34381,0)
+ ;;=D86.0^^125^1629^92
+ ;;^UTILITY(U,$J,358.3,34381,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34381,1,3,0)
+ ;;=3^Sarcoidosis of the Lung
+ ;;^UTILITY(U,$J,358.3,34381,1,4,0)
+ ;;=4^D86.0
+ ;;^UTILITY(U,$J,358.3,34381,2)
+ ;;=^5002442
+ ;;^UTILITY(U,$J,358.3,34382,0)
+ ;;=E66.9^^125^1630^6
+ ;;^UTILITY(U,$J,358.3,34382,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34382,1,3,0)
+ ;;=3^Obesity,Unspec
+ ;;^UTILITY(U,$J,358.3,34382,1,4,0)
+ ;;=4^E66.9
+ ;;^UTILITY(U,$J,358.3,34382,2)
+ ;;=^5002832
+ ;;^UTILITY(U,$J,358.3,34383,0)
+ ;;=E66.01^^125^1630^4
+ ;;^UTILITY(U,$J,358.3,34383,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34383,1,3,0)
+ ;;=3^Morbid Obesity d/t Excess Calories
+ ;;^UTILITY(U,$J,358.3,34383,1,4,0)
+ ;;=4^E66.01
+ ;;^UTILITY(U,$J,358.3,34383,2)
+ ;;=^5002826
+ ;;^UTILITY(U,$J,358.3,34384,0)
+ ;;=G25.9^^125^1630^1
+ ;;^UTILITY(U,$J,358.3,34384,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34384,1,3,0)
+ ;;=3^Extrapyramidal & Movement Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,34384,1,4,0)
+ ;;=4^G25.9
+ ;;^UTILITY(U,$J,358.3,34384,2)
+ ;;=^5003803
+ ;;^UTILITY(U,$J,358.3,34385,0)
+ ;;=G25.81^^125^1630^9
+ ;;^UTILITY(U,$J,358.3,34385,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34385,1,3,0)
+ ;;=3^Restless Legs Syndrome
+ ;;^UTILITY(U,$J,358.3,34385,1,4,0)
+ ;;=4^G25.81
+ ;;^UTILITY(U,$J,358.3,34385,2)
+ ;;=^5003801
+ ;;^UTILITY(U,$J,358.3,34386,0)
+ ;;=G47.30^^125^1630^10
+ ;;^UTILITY(U,$J,358.3,34386,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34386,1,3,0)
+ ;;=3^Sleep Apnea,Unspec
+ ;;^UTILITY(U,$J,358.3,34386,1,4,0)
+ ;;=4^G47.30
+ ;;^UTILITY(U,$J,358.3,34386,2)
+ ;;=^5003977
+ ;;^UTILITY(U,$J,358.3,34387,0)
+ ;;=G47.00^^125^1630^3
+ ;;^UTILITY(U,$J,358.3,34387,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34387,1,3,0)
+ ;;=3^Insomnia,Unspec
+ ;;^UTILITY(U,$J,358.3,34387,1,4,0)
+ ;;=4^G47.00
+ ;;^UTILITY(U,$J,358.3,34387,2)
+ ;;=^332924
+ ;;^UTILITY(U,$J,358.3,34388,0)
+ ;;=G47.10^^125^1630^2
+ ;;^UTILITY(U,$J,358.3,34388,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34388,1,3,0)
+ ;;=3^Hypersomnia,Unspec
+ ;;^UTILITY(U,$J,358.3,34388,1,4,0)
+ ;;=4^G47.10
+ ;;^UTILITY(U,$J,358.3,34388,2)
+ ;;=^332926
+ ;;^UTILITY(U,$J,358.3,34389,0)
+ ;;=G47.52^^125^1630^8
+ ;;^UTILITY(U,$J,358.3,34389,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34389,1,3,0)
+ ;;=3^REM Sleep Behavior Disorder
+ ;;^UTILITY(U,$J,358.3,34389,1,4,0)
+ ;;=4^G47.52
+ ;;^UTILITY(U,$J,358.3,34389,2)
+ ;;=^332778
+ ;;^UTILITY(U,$J,358.3,34390,0)
+ ;;=R06.83^^125^1630^11
+ ;;^UTILITY(U,$J,358.3,34390,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34390,1,3,0)
+ ;;=3^Snoring
+ ;;^UTILITY(U,$J,358.3,34390,1,4,0)
+ ;;=4^R06.83
+ ;;^UTILITY(U,$J,358.3,34390,2)
+ ;;=^5019192
+ ;;^UTILITY(U,$J,358.3,34391,0)
+ ;;=E66.2^^125^1630^5
+ ;;^UTILITY(U,$J,358.3,34391,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34391,1,3,0)
+ ;;=3^Morbid Obesity w/ Alveolar Hypoventilation
+ ;;^UTILITY(U,$J,358.3,34391,1,4,0)
+ ;;=4^E66.2
+ ;;^UTILITY(U,$J,358.3,34391,2)
+ ;;=^5002829
+ ;;^UTILITY(U,$J,358.3,34392,0)
+ ;;=G47.33^^125^1630^7
+ ;;^UTILITY(U,$J,358.3,34392,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34392,1,3,0)
+ ;;=3^Obstructive Sleep Apnea
+ ;;^UTILITY(U,$J,358.3,34392,1,4,0)
+ ;;=4^G47.33
+ ;;^UTILITY(U,$J,358.3,34392,2)
+ ;;=^332763
+ ;;^UTILITY(U,$J,358.3,34393,0)
+ ;;=G47.31^^125^1631^1
+ ;;^UTILITY(U,$J,358.3,34393,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34393,1,3,0)
+ ;;=3^Central Sleep Apnea,Primary
+ ;;^UTILITY(U,$J,358.3,34393,1,4,0)
+ ;;=4^G47.31
+ ;;^UTILITY(U,$J,358.3,34393,2)
+ ;;=^332761
+ ;;^UTILITY(U,$J,358.3,34394,0)
+ ;;=G47.36^^125^1631^2
+ ;;^UTILITY(U,$J,358.3,34394,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34394,1,3,0)
+ ;;=3^Hypoventilation,Sleep Related
+ ;;^UTILITY(U,$J,358.3,34394,1,4,0)
+ ;;=4^G47.36
+ ;;^UTILITY(U,$J,358.3,34394,2)
+ ;;=^5003979
+ ;;^UTILITY(U,$J,358.3,34395,0)
+ ;;=G47.33^^125^1631^3
+ ;;^UTILITY(U,$J,358.3,34395,1,0)
+ ;;=^358.31IA^4^2

@@ -1,128 +1,282 @@
-IBDEI0B4 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0B4 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,4716,0)
- ;;=I63.522^^37^315^5
- ;;^UTILITY(U,$J,358.3,4716,1,0)
+ ;;^UTILITY(U,$J,358.3,11123,2)
+ ;;=^5002447
+ ;;^UTILITY(U,$J,358.3,11124,0)
+ ;;=H49.883^^53^607^38
+ ;;^UTILITY(U,$J,358.3,11124,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4716,1,3,0)
- ;;=3^Cerebral Infarction d/t Occls/Stenosis of Left Ant Cerebral Artery
- ;;^UTILITY(U,$J,358.3,4716,1,4,0)
- ;;=4^I63.522
- ;;^UTILITY(U,$J,358.3,4716,2)
- ;;=^5007347
- ;;^UTILITY(U,$J,358.3,4717,0)
- ;;=I63.531^^37^315^6
- ;;^UTILITY(U,$J,358.3,4717,1,0)
+ ;;^UTILITY(U,$J,358.3,11124,1,3,0)
+ ;;=3^Paralytic Strabismus,Bilateral
+ ;;^UTILITY(U,$J,358.3,11124,1,4,0)
+ ;;=4^H49.883
+ ;;^UTILITY(U,$J,358.3,11124,2)
+ ;;=^5006205
+ ;;^UTILITY(U,$J,358.3,11125,0)
+ ;;=H49.23^^53^607^44
+ ;;^UTILITY(U,$J,358.3,11125,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4717,1,3,0)
- ;;=3^Cerebral Infarction d/t Occls/Stenosis of Right Post Cerebral Artery
- ;;^UTILITY(U,$J,358.3,4717,1,4,0)
- ;;=4^I63.531
- ;;^UTILITY(U,$J,358.3,4717,2)
- ;;=^5007348
- ;;^UTILITY(U,$J,358.3,4718,0)
- ;;=I63.532^^37^315^7
- ;;^UTILITY(U,$J,358.3,4718,1,0)
+ ;;^UTILITY(U,$J,358.3,11125,1,3,0)
+ ;;=3^Sixth Abducent Nerve Palsy,Bilateral
+ ;;^UTILITY(U,$J,358.3,11125,1,4,0)
+ ;;=4^H49.23
+ ;;^UTILITY(U,$J,358.3,11125,2)
+ ;;=^5006190
+ ;;^UTILITY(U,$J,358.3,11126,0)
+ ;;=H49.03^^53^607^48
+ ;;^UTILITY(U,$J,358.3,11126,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4718,1,3,0)
- ;;=3^Cerebral Infarction d/t Occls/Stenosis of Left Post Cerebral Artery
- ;;^UTILITY(U,$J,358.3,4718,1,4,0)
- ;;=4^I63.532
- ;;^UTILITY(U,$J,358.3,4718,2)
- ;;=^5007349
- ;;^UTILITY(U,$J,358.3,4719,0)
- ;;=I63.541^^37^315^8
- ;;^UTILITY(U,$J,358.3,4719,1,0)
+ ;;^UTILITY(U,$J,358.3,11126,1,3,0)
+ ;;=3^Third Oculomotor Nerve Palsy,Bilateral
+ ;;^UTILITY(U,$J,358.3,11126,1,4,0)
+ ;;=4^H49.03
+ ;;^UTILITY(U,$J,358.3,11126,2)
+ ;;=^5006182
+ ;;^UTILITY(U,$J,358.3,11127,0)
+ ;;=H34.03^^53^607^51
+ ;;^UTILITY(U,$J,358.3,11127,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4719,1,3,0)
- ;;=3^Cerebral Infarction d/t Occls/Stenosis of Right Cereblr Artery
- ;;^UTILITY(U,$J,358.3,4719,1,4,0)
- ;;=4^I63.541
- ;;^UTILITY(U,$J,358.3,4719,2)
- ;;=^5007350
- ;;^UTILITY(U,$J,358.3,4720,0)
- ;;=I63.542^^37^315^9
- ;;^UTILITY(U,$J,358.3,4720,1,0)
+ ;;^UTILITY(U,$J,358.3,11127,1,3,0)
+ ;;=3^Transient Retinal Artery Occlusion,Bilateral
+ ;;^UTILITY(U,$J,358.3,11127,1,4,0)
+ ;;=4^H34.03
+ ;;^UTILITY(U,$J,358.3,11127,2)
+ ;;=^5005555
+ ;;^UTILITY(U,$J,358.3,11128,0)
+ ;;=Z90.01^^53^608^1
+ ;;^UTILITY(U,$J,358.3,11128,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4720,1,3,0)
- ;;=3^Cerebral Infarction d/t Occls/Stenosis of Left Cereblr Artery
- ;;^UTILITY(U,$J,358.3,4720,1,4,0)
- ;;=4^I63.542
- ;;^UTILITY(U,$J,358.3,4720,2)
- ;;=^5007351
- ;;^UTILITY(U,$J,358.3,4721,0)
- ;;=I63.59^^37^315^10
- ;;^UTILITY(U,$J,358.3,4721,1,0)
+ ;;^UTILITY(U,$J,358.3,11128,1,3,0)
+ ;;=3^Acquired Absence of Eye
+ ;;^UTILITY(U,$J,358.3,11128,1,4,0)
+ ;;=4^Z90.01
+ ;;^UTILITY(U,$J,358.3,11128,2)
+ ;;=^322068
+ ;;^UTILITY(U,$J,358.3,11129,0)
+ ;;=H04.552^^53^608^2
+ ;;^UTILITY(U,$J,358.3,11129,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4721,1,3,0)
- ;;=3^Cerebral Infarction d/t Occls/Stenosis of Cerebral Artery
- ;;^UTILITY(U,$J,358.3,4721,1,4,0)
- ;;=4^I63.59
- ;;^UTILITY(U,$J,358.3,4721,2)
- ;;=^5007352
- ;;^UTILITY(U,$J,358.3,4722,0)
- ;;=I63.9^^37^315^11
- ;;^UTILITY(U,$J,358.3,4722,1,0)
+ ;;^UTILITY(U,$J,358.3,11129,1,3,0)
+ ;;=3^Acquired Stenosis of Left Nasolacrimal Duct
+ ;;^UTILITY(U,$J,358.3,11129,1,4,0)
+ ;;=4^H04.552
+ ;;^UTILITY(U,$J,358.3,11129,2)
+ ;;=^5004539
+ ;;^UTILITY(U,$J,358.3,11130,0)
+ ;;=H04.551^^53^608^3
+ ;;^UTILITY(U,$J,358.3,11130,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4722,1,3,0)
- ;;=3^Cerebral Infarction,Unspec
- ;;^UTILITY(U,$J,358.3,4722,1,4,0)
- ;;=4^I63.9
- ;;^UTILITY(U,$J,358.3,4722,2)
- ;;=^5007355
- ;;^UTILITY(U,$J,358.3,4723,0)
- ;;=I61.9^^37^315^13
- ;;^UTILITY(U,$J,358.3,4723,1,0)
+ ;;^UTILITY(U,$J,358.3,11130,1,3,0)
+ ;;=3^Acquired Stenosis of Right Nasolacrimal Duct
+ ;;^UTILITY(U,$J,358.3,11130,1,4,0)
+ ;;=4^H04.551
+ ;;^UTILITY(U,$J,358.3,11130,2)
+ ;;=^5004538
+ ;;^UTILITY(U,$J,358.3,11131,0)
+ ;;=H01.115^^53^608^4
+ ;;^UTILITY(U,$J,358.3,11131,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4723,1,3,0)
- ;;=3^Nontraumatic Intracerebral Hemorrhage,Unspec
- ;;^UTILITY(U,$J,358.3,4723,1,4,0)
- ;;=4^I61.9
- ;;^UTILITY(U,$J,358.3,4723,2)
- ;;=^5007288
- ;;^UTILITY(U,$J,358.3,4724,0)
- ;;=I65.21^^37^315^17
- ;;^UTILITY(U,$J,358.3,4724,1,0)
+ ;;^UTILITY(U,$J,358.3,11131,1,3,0)
+ ;;=3^Allergic Dermatitis of Left Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,11131,1,4,0)
+ ;;=4^H01.115
+ ;;^UTILITY(U,$J,358.3,11131,2)
+ ;;=^5133386
+ ;;^UTILITY(U,$J,358.3,11132,0)
+ ;;=H01.114^^53^608^5
+ ;;^UTILITY(U,$J,358.3,11132,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4724,1,3,0)
- ;;=3^Occlusion/Stenosis of Right Carotid Artery
- ;;^UTILITY(U,$J,358.3,4724,1,4,0)
- ;;=4^I65.21
- ;;^UTILITY(U,$J,358.3,4724,2)
- ;;=^5007360
- ;;^UTILITY(U,$J,358.3,4725,0)
- ;;=I65.22^^37^315^16
- ;;^UTILITY(U,$J,358.3,4725,1,0)
+ ;;^UTILITY(U,$J,358.3,11132,1,3,0)
+ ;;=3^Allergic Dermatitis of Left Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,11132,1,4,0)
+ ;;=4^H01.114
+ ;;^UTILITY(U,$J,358.3,11132,2)
+ ;;=^5004256
+ ;;^UTILITY(U,$J,358.3,11133,0)
+ ;;=H01.112^^53^608^6
+ ;;^UTILITY(U,$J,358.3,11133,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4725,1,3,0)
- ;;=3^Occlusion/Stenosis of Left Carotid Artery
- ;;^UTILITY(U,$J,358.3,4725,1,4,0)
- ;;=4^I65.22
- ;;^UTILITY(U,$J,358.3,4725,2)
- ;;=^5007361
- ;;^UTILITY(U,$J,358.3,4726,0)
- ;;=I65.23^^37^315^15
- ;;^UTILITY(U,$J,358.3,4726,1,0)
+ ;;^UTILITY(U,$J,358.3,11133,1,3,0)
+ ;;=3^Allergic Dermatitis of Right Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,11133,1,4,0)
+ ;;=4^H01.112
+ ;;^UTILITY(U,$J,358.3,11133,2)
+ ;;=^5004254
+ ;;^UTILITY(U,$J,358.3,11134,0)
+ ;;=H01.111^^53^608^7
+ ;;^UTILITY(U,$J,358.3,11134,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4726,1,3,0)
- ;;=3^Occlusion/Stenosis of Bilateral Carotid Arteries
- ;;^UTILITY(U,$J,358.3,4726,1,4,0)
- ;;=4^I65.23
- ;;^UTILITY(U,$J,358.3,4726,2)
- ;;=^5007362
- ;;^UTILITY(U,$J,358.3,4727,0)
- ;;=G45.9^^37^315^20
- ;;^UTILITY(U,$J,358.3,4727,1,0)
+ ;;^UTILITY(U,$J,358.3,11134,1,3,0)
+ ;;=3^Allergic Dermatitis of Right Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,11134,1,4,0)
+ ;;=4^H01.111
+ ;;^UTILITY(U,$J,358.3,11134,2)
+ ;;=^5004253
+ ;;^UTILITY(U,$J,358.3,11135,0)
+ ;;=H44.522^^53^608^8
+ ;;^UTILITY(U,$J,358.3,11135,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4727,1,3,0)
- ;;=3^Transient Cerebral Ischemic Attack,Unspec
- ;;^UTILITY(U,$J,358.3,4727,1,4,0)
- ;;=4^G45.9
- ;;^UTILITY(U,$J,358.3,4727,2)
- ;;=^5003959
- ;;^UTILITY(U,$J,358.3,4728,0)
- ;;=I62.00^^37^315^14
- ;;^UTILITY(U,$J,358.3,4728,1,0)
+ ;;^UTILITY(U,$J,358.3,11135,1,3,0)
+ ;;=3^Atrophy of Globe,Left Eye
+ ;;^UTILITY(U,$J,358.3,11135,1,4,0)
+ ;;=4^H44.522
+ ;;^UTILITY(U,$J,358.3,11135,2)
+ ;;=^5006026
+ ;;^UTILITY(U,$J,358.3,11136,0)
+ ;;=H44.521^^53^608^9
+ ;;^UTILITY(U,$J,358.3,11136,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11136,1,3,0)
+ ;;=3^Atrophy of Globe,Right Eye
+ ;;^UTILITY(U,$J,358.3,11136,1,4,0)
+ ;;=4^H44.521
+ ;;^UTILITY(U,$J,358.3,11136,2)
+ ;;=^5006025
+ ;;^UTILITY(U,$J,358.3,11137,0)
+ ;;=C44.119^^53^608^10
+ ;;^UTILITY(U,$J,358.3,11137,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11137,1,3,0)
+ ;;=3^BCC Skin of Left Eyelid
+ ;;^UTILITY(U,$J,358.3,11137,1,4,0)
+ ;;=4^C44.119
+ ;;^UTILITY(U,$J,358.3,11137,2)
+ ;;=^5001021
+ ;;^UTILITY(U,$J,358.3,11138,0)
+ ;;=C44.112^^53^608^11
+ ;;^UTILITY(U,$J,358.3,11138,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11138,1,3,0)
+ ;;=3^BCC Skin of Right Eyelid
+ ;;^UTILITY(U,$J,358.3,11138,1,4,0)
+ ;;=4^C44.112
+ ;;^UTILITY(U,$J,358.3,11138,2)
+ ;;=^5001020
+ ;;^UTILITY(U,$J,358.3,11139,0)
+ ;;=H00.15^^53^608^12
+ ;;^UTILITY(U,$J,358.3,11139,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11139,1,3,0)
+ ;;=3^Chalazion Left Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,11139,1,4,0)
+ ;;=4^H00.15
+ ;;^UTILITY(U,$J,358.3,11139,2)
+ ;;=^5133378
+ ;;^UTILITY(U,$J,358.3,11140,0)
+ ;;=H00.14^^53^608^13
+ ;;^UTILITY(U,$J,358.3,11140,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11140,1,3,0)
+ ;;=3^Chalazion Left Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,11140,1,4,0)
+ ;;=4^H00.14
+ ;;^UTILITY(U,$J,358.3,11140,2)
+ ;;=^5004236
+ ;;^UTILITY(U,$J,358.3,11141,0)
+ ;;=H00.12^^53^608^14
+ ;;^UTILITY(U,$J,358.3,11141,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11141,1,3,0)
+ ;;=3^Chalazion Right Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,11141,1,4,0)
+ ;;=4^H00.12
+ ;;^UTILITY(U,$J,358.3,11141,2)
+ ;;=^5004234
+ ;;^UTILITY(U,$J,358.3,11142,0)
+ ;;=H00.11^^53^608^15
+ ;;^UTILITY(U,$J,358.3,11142,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11142,1,3,0)
+ ;;=3^Chalazion Right Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,11142,1,4,0)
+ ;;=4^H00.11
+ ;;^UTILITY(U,$J,358.3,11142,2)
+ ;;=^5004233
+ ;;^UTILITY(U,$J,358.3,11143,0)
+ ;;=H02.115^^53^608^17
+ ;;^UTILITY(U,$J,358.3,11143,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11143,1,3,0)
+ ;;=3^Cicatricial Ectropion Left Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,11143,1,4,0)
+ ;;=4^H02.115
+ ;;^UTILITY(U,$J,358.3,11143,2)
+ ;;=^5133410
+ ;;^UTILITY(U,$J,358.3,11144,0)
+ ;;=H02.114^^53^608^18
+ ;;^UTILITY(U,$J,358.3,11144,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11144,1,3,0)
+ ;;=3^Cicatricial Ectropion Left Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,11144,1,4,0)
+ ;;=4^H02.114
+ ;;^UTILITY(U,$J,358.3,11144,2)
+ ;;=^5004310
+ ;;^UTILITY(U,$J,358.3,11145,0)
+ ;;=H02.112^^53^608^19
+ ;;^UTILITY(U,$J,358.3,11145,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11145,1,3,0)
+ ;;=3^Cicatricial Ectropion Right Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,11145,1,4,0)
+ ;;=4^H02.112
+ ;;^UTILITY(U,$J,358.3,11145,2)
+ ;;=^5004308
+ ;;^UTILITY(U,$J,358.3,11146,0)
+ ;;=H02.111^^53^608^20
+ ;;^UTILITY(U,$J,358.3,11146,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11146,1,3,0)
+ ;;=3^Cicatricial Ectropion Right Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,11146,1,4,0)
+ ;;=4^H02.111
+ ;;^UTILITY(U,$J,358.3,11146,2)
+ ;;=^5004307
+ ;;^UTILITY(U,$J,358.3,11147,0)
+ ;;=H02.015^^53^608^21
+ ;;^UTILITY(U,$J,358.3,11147,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11147,1,3,0)
+ ;;=3^Cicatricial Entropion Left Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,11147,1,4,0)
+ ;;=4^H02.015
+ ;;^UTILITY(U,$J,358.3,11147,2)
+ ;;=^5133397
+ ;;^UTILITY(U,$J,358.3,11148,0)
+ ;;=H02.014^^53^608^22
+ ;;^UTILITY(U,$J,358.3,11148,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11148,1,3,0)
+ ;;=3^Cicatricial Entropion Left Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,11148,1,4,0)
+ ;;=4^H02.014
+ ;;^UTILITY(U,$J,358.3,11148,2)
+ ;;=^5004281
+ ;;^UTILITY(U,$J,358.3,11149,0)
+ ;;=H02.012^^53^608^23
+ ;;^UTILITY(U,$J,358.3,11149,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11149,1,3,0)
+ ;;=3^Cicatricial Entropion Right Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,11149,1,4,0)
+ ;;=4^H02.012
+ ;;^UTILITY(U,$J,358.3,11149,2)
+ ;;=^5004279
+ ;;^UTILITY(U,$J,358.3,11150,0)
+ ;;=H02.011^^53^608^24
+ ;;^UTILITY(U,$J,358.3,11150,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11150,1,3,0)
+ ;;=3^Cicatricial Entropion Right Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,11150,1,4,0)
+ ;;=4^H02.011
+ ;;^UTILITY(U,$J,358.3,11150,2)
+ ;;=^5004278
+ ;;^UTILITY(U,$J,358.3,11151,0)
+ ;;=S00.12XA^^53^608^25
+ ;;^UTILITY(U,$J,358.3,11151,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11151,1,3,0)
+ ;;=3^Contusion Left Eyelid/Pericocular Area,Init Encntr

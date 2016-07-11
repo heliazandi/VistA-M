@@ -1,138 +1,282 @@
-IBDEI13H ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI13H ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,18279,1,0)
+ ;;^UTILITY(U,$J,358.3,39744,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18279,1,3,0)
- ;;=3^Atopic Dermatitis,Unspec
- ;;^UTILITY(U,$J,358.3,18279,1,4,0)
- ;;=4^L20.9
- ;;^UTILITY(U,$J,358.3,18279,2)
- ;;=^5009113
- ;;^UTILITY(U,$J,358.3,18280,0)
- ;;=L21.8^^94^905^262
- ;;^UTILITY(U,$J,358.3,18280,1,0)
+ ;;^UTILITY(U,$J,358.3,39744,1,3,0)
+ ;;=3^Osteopenia,Right Foot & Ankle
+ ;;^UTILITY(U,$J,358.3,39744,1,4,0)
+ ;;=4^M85.871
+ ;;^UTILITY(U,$J,358.3,39744,2)
+ ;;=^5014492
+ ;;^UTILITY(U,$J,358.3,39745,0)
+ ;;=M85.831^^148^1953^90
+ ;;^UTILITY(U,$J,358.3,39745,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18280,1,3,0)
- ;;=3^Seborrheic Dermatitis NEC
- ;;^UTILITY(U,$J,358.3,18280,1,4,0)
- ;;=4^L21.8
- ;;^UTILITY(U,$J,358.3,18280,2)
- ;;=^303310
- ;;^UTILITY(U,$J,358.3,18281,0)
- ;;=L21.9^^94^905^263
- ;;^UTILITY(U,$J,358.3,18281,1,0)
+ ;;^UTILITY(U,$J,358.3,39745,1,3,0)
+ ;;=3^Osteopenia,Right Forearm
+ ;;^UTILITY(U,$J,358.3,39745,1,4,0)
+ ;;=4^M85.831
+ ;;^UTILITY(U,$J,358.3,39745,2)
+ ;;=^5014480
+ ;;^UTILITY(U,$J,358.3,39746,0)
+ ;;=M85.841^^148^1953^91
+ ;;^UTILITY(U,$J,358.3,39746,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18281,1,3,0)
- ;;=3^Seborrheic Dermatitis,Unspec
- ;;^UTILITY(U,$J,358.3,18281,1,4,0)
- ;;=4^L21.9
- ;;^UTILITY(U,$J,358.3,18281,2)
- ;;=^188703
- ;;^UTILITY(U,$J,358.3,18282,0)
- ;;=L23.7^^94^905^30
- ;;^UTILITY(U,$J,358.3,18282,1,0)
+ ;;^UTILITY(U,$J,358.3,39746,1,3,0)
+ ;;=3^Osteopenia,Right Hand
+ ;;^UTILITY(U,$J,358.3,39746,1,4,0)
+ ;;=4^M85.841
+ ;;^UTILITY(U,$J,358.3,39746,2)
+ ;;=^5014483
+ ;;^UTILITY(U,$J,358.3,39747,0)
+ ;;=M85.861^^148^1953^92
+ ;;^UTILITY(U,$J,358.3,39747,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18282,1,3,0)
- ;;=3^Allergic Contact Dermatitis d/t Plants
- ;;^UTILITY(U,$J,358.3,18282,1,4,0)
- ;;=4^L23.7
- ;;^UTILITY(U,$J,358.3,18282,2)
- ;;=^5009122
- ;;^UTILITY(U,$J,358.3,18283,0)
- ;;=L23.9^^94^905^31
- ;;^UTILITY(U,$J,358.3,18283,1,0)
+ ;;^UTILITY(U,$J,358.3,39747,1,3,0)
+ ;;=3^Osteopenia,Right Lower Leg
+ ;;^UTILITY(U,$J,358.3,39747,1,4,0)
+ ;;=4^M85.861
+ ;;^UTILITY(U,$J,358.3,39747,2)
+ ;;=^5014489
+ ;;^UTILITY(U,$J,358.3,39748,0)
+ ;;=M85.811^^148^1953^93
+ ;;^UTILITY(U,$J,358.3,39748,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18283,1,3,0)
- ;;=3^Allergic Contact Dermatitis,Unspec
- ;;^UTILITY(U,$J,358.3,18283,1,4,0)
- ;;=4^L23.9
- ;;^UTILITY(U,$J,358.3,18283,2)
- ;;=^5009125
- ;;^UTILITY(U,$J,358.3,18284,0)
- ;;=L24.9^^94^905^163
- ;;^UTILITY(U,$J,358.3,18284,1,0)
+ ;;^UTILITY(U,$J,358.3,39748,1,3,0)
+ ;;=3^Osteopenia,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,39748,1,4,0)
+ ;;=4^M85.811
+ ;;^UTILITY(U,$J,358.3,39748,2)
+ ;;=^5014474
+ ;;^UTILITY(U,$J,358.3,39749,0)
+ ;;=M85.851^^148^1953^94
+ ;;^UTILITY(U,$J,358.3,39749,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18284,1,3,0)
- ;;=3^Irritant Contact Dermatitis,Unspec
- ;;^UTILITY(U,$J,358.3,18284,1,4,0)
- ;;=4^L24.9
- ;;^UTILITY(U,$J,358.3,18284,2)
- ;;=^5009136
- ;;^UTILITY(U,$J,358.3,18285,0)
- ;;=L25.9^^94^905^115
- ;;^UTILITY(U,$J,358.3,18285,1,0)
+ ;;^UTILITY(U,$J,358.3,39749,1,3,0)
+ ;;=3^Osteopenia,Right Thigh
+ ;;^UTILITY(U,$J,358.3,39749,1,4,0)
+ ;;=4^M85.851
+ ;;^UTILITY(U,$J,358.3,39749,2)
+ ;;=^5014486
+ ;;^UTILITY(U,$J,358.3,39750,0)
+ ;;=M85.821^^148^1953^95
+ ;;^UTILITY(U,$J,358.3,39750,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18285,1,3,0)
- ;;=3^Contact Dermatitis,Unspec
- ;;^UTILITY(U,$J,358.3,18285,1,4,0)
- ;;=4^L25.9
- ;;^UTILITY(U,$J,358.3,18285,2)
- ;;=^5133647
- ;;^UTILITY(U,$J,358.3,18286,0)
- ;;=L26.^^94^905^148
- ;;^UTILITY(U,$J,358.3,18286,1,0)
+ ;;^UTILITY(U,$J,358.3,39750,1,3,0)
+ ;;=3^Osteopenia,Right Upper Arm
+ ;;^UTILITY(U,$J,358.3,39750,1,4,0)
+ ;;=4^M85.821
+ ;;^UTILITY(U,$J,358.3,39750,2)
+ ;;=^5014477
+ ;;^UTILITY(U,$J,358.3,39751,0)
+ ;;=M85.80^^148^1953^96
+ ;;^UTILITY(U,$J,358.3,39751,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18286,1,3,0)
- ;;=3^Exfoliative Dermatitis
- ;;^UTILITY(U,$J,358.3,18286,1,4,0)
- ;;=4^L26.
- ;;^UTILITY(U,$J,358.3,18286,2)
- ;;=^263886
- ;;^UTILITY(U,$J,358.3,18287,0)
- ;;=L27.0^^94^905^265
- ;;^UTILITY(U,$J,358.3,18287,1,0)
+ ;;^UTILITY(U,$J,358.3,39751,1,3,0)
+ ;;=3^Osteopenia,Unspec Site
+ ;;^UTILITY(U,$J,358.3,39751,1,4,0)
+ ;;=4^M85.80
+ ;;^UTILITY(U,$J,358.3,39751,2)
+ ;;=^5014473
+ ;;^UTILITY(U,$J,358.3,39752,0)
+ ;;=B02.0^^148^1954^46
+ ;;^UTILITY(U,$J,358.3,39752,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18287,1,3,0)
- ;;=3^Skin Eruption d/t Drugs/Meds,Generalized
- ;;^UTILITY(U,$J,358.3,18287,1,4,0)
- ;;=4^L27.0
- ;;^UTILITY(U,$J,358.3,18287,2)
- ;;=^5009144
- ;;^UTILITY(U,$J,358.3,18288,0)
- ;;=L27.1^^94^905^266
- ;;^UTILITY(U,$J,358.3,18288,1,0)
+ ;;^UTILITY(U,$J,358.3,39752,1,3,0)
+ ;;=3^Zoster Encephalitis
+ ;;^UTILITY(U,$J,358.3,39752,1,4,0)
+ ;;=4^B02.0
+ ;;^UTILITY(U,$J,358.3,39752,2)
+ ;;=^5000488
+ ;;^UTILITY(U,$J,358.3,39753,0)
+ ;;=B02.29^^148^1954^36
+ ;;^UTILITY(U,$J,358.3,39753,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18288,1,3,0)
- ;;=3^Skin Eruption d/t Drugs/Meds,Localized
- ;;^UTILITY(U,$J,358.3,18288,1,4,0)
- ;;=4^L27.1
- ;;^UTILITY(U,$J,358.3,18288,2)
- ;;=^5009145
- ;;^UTILITY(U,$J,358.3,18289,0)
- ;;=L29.0^^94^905^250
- ;;^UTILITY(U,$J,358.3,18289,1,0)
+ ;;^UTILITY(U,$J,358.3,39753,1,3,0)
+ ;;=3^Postherpetic Nervous System Involvement,Other
+ ;;^UTILITY(U,$J,358.3,39753,1,4,0)
+ ;;=4^B02.29
+ ;;^UTILITY(U,$J,358.3,39753,2)
+ ;;=^5000492
+ ;;^UTILITY(U,$J,358.3,39754,0)
+ ;;=F03.90^^148^1954^10
+ ;;^UTILITY(U,$J,358.3,39754,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18289,1,3,0)
- ;;=3^Pruritus Ani
- ;;^UTILITY(U,$J,358.3,18289,1,4,0)
- ;;=4^L29.0
- ;;^UTILITY(U,$J,358.3,18289,2)
- ;;=^100061
- ;;^UTILITY(U,$J,358.3,18290,0)
- ;;=L29.9^^94^905^251
- ;;^UTILITY(U,$J,358.3,18290,1,0)
+ ;;^UTILITY(U,$J,358.3,39754,1,3,0)
+ ;;=3^Dementia w/o Behavioral Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,39754,1,4,0)
+ ;;=4^F03.90
+ ;;^UTILITY(U,$J,358.3,39754,2)
+ ;;=^5003050
+ ;;^UTILITY(U,$J,358.3,39755,0)
+ ;;=F03.91^^148^1954^9
+ ;;^UTILITY(U,$J,358.3,39755,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18290,1,3,0)
- ;;=3^Pruritus,Unspec
- ;;^UTILITY(U,$J,358.3,18290,1,4,0)
- ;;=4^L29.9
- ;;^UTILITY(U,$J,358.3,18290,2)
- ;;=^5009153
- ;;^UTILITY(U,$J,358.3,18291,0)
- ;;=L30.0^^94^905^232
- ;;^UTILITY(U,$J,358.3,18291,1,0)
+ ;;^UTILITY(U,$J,358.3,39755,1,3,0)
+ ;;=3^Dementia w/ Behavioral Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,39755,1,4,0)
+ ;;=4^F03.91
+ ;;^UTILITY(U,$J,358.3,39755,2)
+ ;;=^5133350
+ ;;^UTILITY(U,$J,358.3,39756,0)
+ ;;=F01.50^^148^1954^12
+ ;;^UTILITY(U,$J,358.3,39756,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18291,1,3,0)
- ;;=3^Nummular Dermatitis
- ;;^UTILITY(U,$J,358.3,18291,1,4,0)
- ;;=4^L30.0
- ;;^UTILITY(U,$J,358.3,18291,2)
- ;;=^186823
- ;;^UTILITY(U,$J,358.3,18292,0)
- ;;=L30.1^^94^905^140
- ;;^UTILITY(U,$J,358.3,18292,1,0)
+ ;;^UTILITY(U,$J,358.3,39756,1,3,0)
+ ;;=3^Dementia,Vascular w/o Behavioral Disturbance
+ ;;^UTILITY(U,$J,358.3,39756,1,4,0)
+ ;;=4^F01.50
+ ;;^UTILITY(U,$J,358.3,39756,2)
+ ;;=^5003046
+ ;;^UTILITY(U,$J,358.3,39757,0)
+ ;;=F10.27^^148^1954^11
+ ;;^UTILITY(U,$J,358.3,39757,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,18292,1,3,0)
- ;;=3^Dyshidrosis
+ ;;^UTILITY(U,$J,358.3,39757,1,3,0)
+ ;;=3^Dementia,Alcohol-Induced/Persist w/ Alcohol Dependence
+ ;;^UTILITY(U,$J,358.3,39757,1,4,0)
+ ;;=4^F10.27
+ ;;^UTILITY(U,$J,358.3,39757,2)
+ ;;=^5003095
+ ;;^UTILITY(U,$J,358.3,39758,0)
+ ;;=F06.1^^148^1954^6
+ ;;^UTILITY(U,$J,358.3,39758,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39758,1,3,0)
+ ;;=3^Catatonic Disorder d/t Known Physiological Condition
+ ;;^UTILITY(U,$J,358.3,39758,1,4,0)
+ ;;=4^F06.1
+ ;;^UTILITY(U,$J,358.3,39758,2)
+ ;;=^5003054
+ ;;^UTILITY(U,$J,358.3,39759,0)
+ ;;=F06.8^^148^1954^21
+ ;;^UTILITY(U,$J,358.3,39759,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39759,1,3,0)
+ ;;=3^Mental Disorders d/t Known Physiological Condition,Other
+ ;;^UTILITY(U,$J,358.3,39759,1,4,0)
+ ;;=4^F06.8
+ ;;^UTILITY(U,$J,358.3,39759,2)
+ ;;=^5003062
+ ;;^UTILITY(U,$J,358.3,39760,0)
+ ;;=F06.0^^148^1954^37
+ ;;^UTILITY(U,$J,358.3,39760,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39760,1,3,0)
+ ;;=3^Psychotic Disorder w/ Hallucin d/t Known Physiol Condition
+ ;;^UTILITY(U,$J,358.3,39760,1,4,0)
+ ;;=4^F06.0
+ ;;^UTILITY(U,$J,358.3,39760,2)
+ ;;=^5003053
+ ;;^UTILITY(U,$J,358.3,39761,0)
+ ;;=G44.209^^148^1954^42
+ ;;^UTILITY(U,$J,358.3,39761,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39761,1,3,0)
+ ;;=3^Tension-Type Headache,Not Intractable,Unspec
+ ;;^UTILITY(U,$J,358.3,39761,1,4,0)
+ ;;=4^G44.209
+ ;;^UTILITY(U,$J,358.3,39761,2)
+ ;;=^5003936
+ ;;^UTILITY(U,$J,358.3,39762,0)
+ ;;=F09.^^148^1954^20
+ ;;^UTILITY(U,$J,358.3,39762,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39762,1,3,0)
+ ;;=3^Mental Disorder d/t Known Physiological Condition,Unspec
+ ;;^UTILITY(U,$J,358.3,39762,1,4,0)
+ ;;=4^F09.
+ ;;^UTILITY(U,$J,358.3,39762,2)
+ ;;=^5003067
+ ;;^UTILITY(U,$J,358.3,39763,0)
+ ;;=F07.9^^148^1954^35
+ ;;^UTILITY(U,$J,358.3,39763,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39763,1,3,0)
+ ;;=3^Personality & Behavrl Disorder d/t Known Physiol Cond,Unspec
+ ;;^UTILITY(U,$J,358.3,39763,1,4,0)
+ ;;=4^F07.9
+ ;;^UTILITY(U,$J,358.3,39763,2)
+ ;;=^5003066
+ ;;^UTILITY(U,$J,358.3,39764,0)
+ ;;=G30.0^^148^1954^1
+ ;;^UTILITY(U,$J,358.3,39764,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39764,1,3,0)
+ ;;=3^Alzheimer's Disease w/ Early Onset
+ ;;^UTILITY(U,$J,358.3,39764,1,4,0)
+ ;;=4^G30.0
+ ;;^UTILITY(U,$J,358.3,39764,2)
+ ;;=^5003805
+ ;;^UTILITY(U,$J,358.3,39765,0)
+ ;;=G30.8^^148^1954^3
+ ;;^UTILITY(U,$J,358.3,39765,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39765,1,3,0)
+ ;;=3^Alzheimer's Disease,Other
+ ;;^UTILITY(U,$J,358.3,39765,1,4,0)
+ ;;=4^G30.8
+ ;;^UTILITY(U,$J,358.3,39765,2)
+ ;;=^5003807
+ ;;^UTILITY(U,$J,358.3,39766,0)
+ ;;=G30.1^^148^1954^2
+ ;;^UTILITY(U,$J,358.3,39766,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39766,1,3,0)
+ ;;=3^Alzheimer's Disease w/ Late Onset
+ ;;^UTILITY(U,$J,358.3,39766,1,4,0)
+ ;;=4^G30.1
+ ;;^UTILITY(U,$J,358.3,39766,2)
+ ;;=^5003806
+ ;;^UTILITY(U,$J,358.3,39767,0)
+ ;;=G30.9^^148^1954^4
+ ;;^UTILITY(U,$J,358.3,39767,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39767,1,3,0)
+ ;;=3^Alzheimer's Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,39767,1,4,0)
+ ;;=4^G30.9
+ ;;^UTILITY(U,$J,358.3,39767,2)
+ ;;=^5003808
+ ;;^UTILITY(U,$J,358.3,39768,0)
+ ;;=G21.4^^148^1954^45
+ ;;^UTILITY(U,$J,358.3,39768,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39768,1,3,0)
+ ;;=3^Vascular Parkinsonism
+ ;;^UTILITY(U,$J,358.3,39768,1,4,0)
+ ;;=4^G21.4
+ ;;^UTILITY(U,$J,358.3,39768,2)
+ ;;=^5003776
+ ;;^UTILITY(U,$J,358.3,39769,0)
+ ;;=G20.^^148^1954^34
+ ;;^UTILITY(U,$J,358.3,39769,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39769,1,3,0)
+ ;;=3^Parkinson's Disease
+ ;;^UTILITY(U,$J,358.3,39769,1,4,0)
+ ;;=4^G20.
+ ;;^UTILITY(U,$J,358.3,39769,2)
+ ;;=^5003770
+ ;;^UTILITY(U,$J,358.3,39770,0)
+ ;;=G25.0^^148^1954^15
+ ;;^UTILITY(U,$J,358.3,39770,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39770,1,3,0)
+ ;;=3^Essential Tremor
+ ;;^UTILITY(U,$J,358.3,39770,1,4,0)
+ ;;=4^G25.0
+ ;;^UTILITY(U,$J,358.3,39770,2)
+ ;;=^5003791
+ ;;^UTILITY(U,$J,358.3,39771,0)
+ ;;=G25.2^^148^1954^44
+ ;;^UTILITY(U,$J,358.3,39771,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39771,1,3,0)
+ ;;=3^Tremor,Other Spec Forms
+ ;;^UTILITY(U,$J,358.3,39771,1,4,0)
+ ;;=4^G25.2
+ ;;^UTILITY(U,$J,358.3,39771,2)
+ ;;=^5003793

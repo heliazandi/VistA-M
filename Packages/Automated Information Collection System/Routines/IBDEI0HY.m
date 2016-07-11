@@ -1,134 +1,290 @@
-IBDEI0HY ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0HY ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8044,2)
- ;;=^5006571
- ;;^UTILITY(U,$J,358.3,8045,0)
- ;;=H65.01^^55^534^11
- ;;^UTILITY(U,$J,358.3,8045,1,0)
+ ;;^UTILITY(U,$J,358.3,18058,1,3,0)
+ ;;=3^Pelvic Inflammatory Disease
+ ;;^UTILITY(U,$J,358.3,18058,1,4,0)
+ ;;=4^N73.9
+ ;;^UTILITY(U,$J,358.3,18058,2)
+ ;;=^5015820
+ ;;^UTILITY(U,$J,358.3,18059,0)
+ ;;=K65.2^^81^946^179
+ ;;^UTILITY(U,$J,358.3,18059,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8045,1,3,0)
- ;;=3^Acute serous otitis media, right ear
- ;;^UTILITY(U,$J,358.3,8045,1,4,0)
- ;;=4^H65.01
- ;;^UTILITY(U,$J,358.3,8045,2)
- ;;=^5006570
- ;;^UTILITY(U,$J,358.3,8046,0)
- ;;=H65.23^^55^534^46
- ;;^UTILITY(U,$J,358.3,8046,1,0)
+ ;;^UTILITY(U,$J,358.3,18059,1,3,0)
+ ;;=3^Peritonitis, bacterial
+ ;;^UTILITY(U,$J,358.3,18059,1,4,0)
+ ;;=4^K65.2
+ ;;^UTILITY(U,$J,358.3,18059,2)
+ ;;=^332801
+ ;;^UTILITY(U,$J,358.3,18060,0)
+ ;;=J02.9^^81^946^182
+ ;;^UTILITY(U,$J,358.3,18060,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8046,1,3,0)
- ;;=3^Chronic serous otitis media, bilateral
- ;;^UTILITY(U,$J,358.3,8046,1,4,0)
- ;;=4^H65.23
- ;;^UTILITY(U,$J,358.3,8046,2)
- ;;=^5006596
- ;;^UTILITY(U,$J,358.3,8047,0)
- ;;=H65.22^^55^534^47
- ;;^UTILITY(U,$J,358.3,8047,1,0)
+ ;;^UTILITY(U,$J,358.3,18060,1,3,0)
+ ;;=3^Pharyngitis
+ ;;^UTILITY(U,$J,358.3,18060,1,4,0)
+ ;;=4^J02.9
+ ;;^UTILITY(U,$J,358.3,18060,2)
+ ;;=^5008130
+ ;;^UTILITY(U,$J,358.3,18061,0)
+ ;;=J18.9^^81^946^186
+ ;;^UTILITY(U,$J,358.3,18061,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8047,1,3,0)
- ;;=3^Chronic serous otitis media, left ear
- ;;^UTILITY(U,$J,358.3,8047,1,4,0)
- ;;=4^H65.22
- ;;^UTILITY(U,$J,358.3,8047,2)
- ;;=^5006595
- ;;^UTILITY(U,$J,358.3,8048,0)
- ;;=H65.21^^55^534^48
- ;;^UTILITY(U,$J,358.3,8048,1,0)
+ ;;^UTILITY(U,$J,358.3,18061,1,3,0)
+ ;;=3^Pneumonia, NOS
+ ;;^UTILITY(U,$J,358.3,18061,1,4,0)
+ ;;=4^J18.9
+ ;;^UTILITY(U,$J,358.3,18061,2)
+ ;;=^95632
+ ;;^UTILITY(U,$J,358.3,18062,0)
+ ;;=J13.^^81^946^187
+ ;;^UTILITY(U,$J,358.3,18062,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8048,1,3,0)
- ;;=3^Chronic serous otitis media, right ear
- ;;^UTILITY(U,$J,358.3,8048,1,4,0)
- ;;=4^H65.21
- ;;^UTILITY(U,$J,358.3,8048,2)
- ;;=^5006594
- ;;^UTILITY(U,$J,358.3,8049,0)
- ;;=H66.013^^55^534^14
- ;;^UTILITY(U,$J,358.3,8049,1,0)
+ ;;^UTILITY(U,$J,358.3,18062,1,3,0)
+ ;;=3^Pneumonia, Streptococcus pneumoniae
+ ;;^UTILITY(U,$J,358.3,18062,1,4,0)
+ ;;=4^J13.
+ ;;^UTILITY(U,$J,358.3,18062,2)
+ ;;=^5008170
+ ;;^UTILITY(U,$J,358.3,18063,0)
+ ;;=J15.7^^81^946^185
+ ;;^UTILITY(U,$J,358.3,18063,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8049,1,3,0)
- ;;=3^Acute suppr otitis media w spon rupt ear drum, bilateral
- ;;^UTILITY(U,$J,358.3,8049,1,4,0)
- ;;=4^H66.013
- ;;^UTILITY(U,$J,358.3,8049,2)
- ;;=^5006622
- ;;^UTILITY(U,$J,358.3,8050,0)
- ;;=H66.012^^55^534^15
- ;;^UTILITY(U,$J,358.3,8050,1,0)
+ ;;^UTILITY(U,$J,358.3,18063,1,3,0)
+ ;;=3^Pneumonia, Mycoplasma
+ ;;^UTILITY(U,$J,358.3,18063,1,4,0)
+ ;;=4^J15.7
+ ;;^UTILITY(U,$J,358.3,18063,2)
+ ;;=^5008177
+ ;;^UTILITY(U,$J,358.3,18064,0)
+ ;;=J16.0^^81^946^184
+ ;;^UTILITY(U,$J,358.3,18064,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8050,1,3,0)
- ;;=3^Acute suppr otitis media w spon rupt ear drum, left ear
- ;;^UTILITY(U,$J,358.3,8050,1,4,0)
- ;;=4^H66.012
- ;;^UTILITY(U,$J,358.3,8050,2)
- ;;=^5133534
- ;;^UTILITY(U,$J,358.3,8051,0)
- ;;=H66.011^^55^534^16
- ;;^UTILITY(U,$J,358.3,8051,1,0)
+ ;;^UTILITY(U,$J,358.3,18064,1,3,0)
+ ;;=3^Pneumonia, Chlamydia/Chlamydophila
+ ;;^UTILITY(U,$J,358.3,18064,1,4,0)
+ ;;=4^J16.0
+ ;;^UTILITY(U,$J,358.3,18064,2)
+ ;;=^5008179
+ ;;^UTILITY(U,$J,358.3,18065,0)
+ ;;=R76.11^^81^946^190
+ ;;^UTILITY(U,$J,358.3,18065,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8051,1,3,0)
- ;;=3^Acute suppr otitis media w spon rupt ear drum, right ear
- ;;^UTILITY(U,$J,358.3,8051,1,4,0)
- ;;=4^H66.011
- ;;^UTILITY(U,$J,358.3,8051,2)
- ;;=^5006621
- ;;^UTILITY(U,$J,358.3,8052,0)
- ;;=H66.91^^55^534^107
- ;;^UTILITY(U,$J,358.3,8052,1,0)
+ ;;^UTILITY(U,$J,358.3,18065,1,3,0)
+ ;;=3^Positive PPD/Tuberculin skin test
+ ;;^UTILITY(U,$J,358.3,18065,1,4,0)
+ ;;=4^R76.11
+ ;;^UTILITY(U,$J,358.3,18065,2)
+ ;;=^5019570
+ ;;^UTILITY(U,$J,358.3,18066,0)
+ ;;=R76.12^^81^946^189
+ ;;^UTILITY(U,$J,358.3,18066,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8052,1,3,0)
- ;;=3^Otitis Media,Right Ear,Unspec
- ;;^UTILITY(U,$J,358.3,8052,1,4,0)
- ;;=4^H66.91
- ;;^UTILITY(U,$J,358.3,8052,2)
- ;;=^5006640
- ;;^UTILITY(U,$J,358.3,8053,0)
- ;;=H66.92^^55^534^106
- ;;^UTILITY(U,$J,358.3,8053,1,0)
+ ;;^UTILITY(U,$J,358.3,18066,1,3,0)
+ ;;=3^Positive IGRA test for tuberculosis
+ ;;^UTILITY(U,$J,358.3,18066,1,4,0)
+ ;;=4^R76.12
+ ;;^UTILITY(U,$J,358.3,18066,2)
+ ;;=^5019571
+ ;;^UTILITY(U,$J,358.3,18067,0)
+ ;;=R76.8^^81^946^191
+ ;;^UTILITY(U,$J,358.3,18067,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8053,1,3,0)
- ;;=3^Otitis Media,Left Ear,Unspec
- ;;^UTILITY(U,$J,358.3,8053,1,4,0)
- ;;=4^H66.92
- ;;^UTILITY(U,$J,358.3,8053,2)
- ;;=^5006641
- ;;^UTILITY(U,$J,358.3,8054,0)
- ;;=H66.93^^55^534^105
- ;;^UTILITY(U,$J,358.3,8054,1,0)
+ ;;^UTILITY(U,$J,358.3,18067,1,3,0)
+ ;;=3^Positive RPR
+ ;;^UTILITY(U,$J,358.3,18067,1,4,0)
+ ;;=4^R76.8
+ ;;^UTILITY(U,$J,358.3,18067,2)
+ ;;=^5019572
+ ;;^UTILITY(U,$J,358.3,18068,0)
+ ;;=N41.9^^81^946^192
+ ;;^UTILITY(U,$J,358.3,18068,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8054,1,3,0)
- ;;=3^Otitis Media,Bilateral,Unspec
- ;;^UTILITY(U,$J,358.3,8054,1,4,0)
- ;;=4^H66.93
- ;;^UTILITY(U,$J,358.3,8054,2)
- ;;=^5006642
- ;;^UTILITY(U,$J,358.3,8055,0)
- ;;=H81.01^^55^534^93
- ;;^UTILITY(U,$J,358.3,8055,1,0)
+ ;;^UTILITY(U,$J,358.3,18068,1,3,0)
+ ;;=3^Prostatitis
+ ;;^UTILITY(U,$J,358.3,18068,1,4,0)
+ ;;=4^N41.9
+ ;;^UTILITY(U,$J,358.3,18068,2)
+ ;;=^5015694
+ ;;^UTILITY(U,$J,358.3,18069,0)
+ ;;=T84.52XA^^81^946^194
+ ;;^UTILITY(U,$J,358.3,18069,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8055,1,3,0)
- ;;=3^Meniere's disease, right ear
- ;;^UTILITY(U,$J,358.3,8055,1,4,0)
- ;;=4^H81.01
- ;;^UTILITY(U,$J,358.3,8055,2)
- ;;=^5006860
- ;;^UTILITY(U,$J,358.3,8056,0)
- ;;=H81.02^^55^534^92
- ;;^UTILITY(U,$J,358.3,8056,1,0)
+ ;;^UTILITY(U,$J,358.3,18069,1,3,0)
+ ;;=3^Prosthetic Left Hip Joint Infection,Init Encntr
+ ;;^UTILITY(U,$J,358.3,18069,1,4,0)
+ ;;=4^T84.52XA
+ ;;^UTILITY(U,$J,358.3,18069,2)
+ ;;=^5055388
+ ;;^UTILITY(U,$J,358.3,18070,0)
+ ;;=T84.51XA^^81^946^196
+ ;;^UTILITY(U,$J,358.3,18070,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8056,1,3,0)
- ;;=3^Meniere's disease, left ear
- ;;^UTILITY(U,$J,358.3,8056,1,4,0)
- ;;=4^H81.02
- ;;^UTILITY(U,$J,358.3,8056,2)
- ;;=^5006861
- ;;^UTILITY(U,$J,358.3,8057,0)
- ;;=H81.03^^55^534^91
- ;;^UTILITY(U,$J,358.3,8057,1,0)
+ ;;^UTILITY(U,$J,358.3,18070,1,3,0)
+ ;;=3^Prosthetic Right Hip Joint Infection,Init Encntr
+ ;;^UTILITY(U,$J,358.3,18070,1,4,0)
+ ;;=4^T84.51XA
+ ;;^UTILITY(U,$J,358.3,18070,2)
+ ;;=^5055385
+ ;;^UTILITY(U,$J,358.3,18071,0)
+ ;;=T84.54XA^^81^946^195
+ ;;^UTILITY(U,$J,358.3,18071,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8057,1,3,0)
- ;;=3^Meniere's disease, bilateral
- ;;^UTILITY(U,$J,358.3,8057,1,4,0)
- ;;=4^H81.03
+ ;;^UTILITY(U,$J,358.3,18071,1,3,0)
+ ;;=3^Prosthetic Left Knee Joint Infection,Init Encntr
+ ;;^UTILITY(U,$J,358.3,18071,1,4,0)
+ ;;=4^T84.54XA
+ ;;^UTILITY(U,$J,358.3,18071,2)
+ ;;=^5055394
+ ;;^UTILITY(U,$J,358.3,18072,0)
+ ;;=T84.53XA^^81^946^197
+ ;;^UTILITY(U,$J,358.3,18072,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18072,1,3,0)
+ ;;=3^Prosthetic Right Knee Joint Infection,Init Encntr
+ ;;^UTILITY(U,$J,358.3,18072,1,4,0)
+ ;;=4^T84.53XA
+ ;;^UTILITY(U,$J,358.3,18072,2)
+ ;;=^5055391
+ ;;^UTILITY(U,$J,358.3,18073,0)
+ ;;=T84.59XA^^81^946^198
+ ;;^UTILITY(U,$J,358.3,18073,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18073,1,3,0)
+ ;;=3^Prosthetic Shoulder Joint Infection,Init Encntr
+ ;;^UTILITY(U,$J,358.3,18073,1,4,0)
+ ;;=4^T84.59XA
+ ;;^UTILITY(U,$J,358.3,18073,2)
+ ;;=^5055397
+ ;;^UTILITY(U,$J,358.3,18074,0)
+ ;;=T82.6XXA^^81^946^193
+ ;;^UTILITY(U,$J,358.3,18074,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18074,1,3,0)
+ ;;=3^Prosthetic Heart Valve Infection, initial encounter
+ ;;^UTILITY(U,$J,358.3,18074,1,4,0)
+ ;;=4^T82.6XXA
+ ;;^UTILITY(U,$J,358.3,18074,2)
+ ;;=^5054908
+ ;;^UTILITY(U,$J,358.3,18075,0)
+ ;;=N12.^^81^946^201
+ ;;^UTILITY(U,$J,358.3,18075,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18075,1,3,0)
+ ;;=3^Pyelonephritis
+ ;;^UTILITY(U,$J,358.3,18075,1,4,0)
+ ;;=4^N12.
+ ;;^UTILITY(U,$J,358.3,18075,2)
+ ;;=^5015575
+ ;;^UTILITY(U,$J,358.3,18076,0)
+ ;;=J30.9^^81^946^204
+ ;;^UTILITY(U,$J,358.3,18076,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18076,1,3,0)
+ ;;=3^Rhinitis, allergic
+ ;;^UTILITY(U,$J,358.3,18076,1,4,0)
+ ;;=4^J30.9
+ ;;^UTILITY(U,$J,358.3,18076,2)
+ ;;=^5008205
+ ;;^UTILITY(U,$J,358.3,18077,0)
+ ;;=B86.^^81^946^206
+ ;;^UTILITY(U,$J,358.3,18077,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18077,1,3,0)
+ ;;=3^Scabies
+ ;;^UTILITY(U,$J,358.3,18077,1,4,0)
+ ;;=4^B86.
+ ;;^UTILITY(U,$J,358.3,18077,2)
+ ;;=^108096
+ ;;^UTILITY(U,$J,358.3,18078,0)
+ ;;=M00.9^^81^946^210
+ ;;^UTILITY(U,$J,358.3,18078,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18078,1,3,0)
+ ;;=3^Septic Joint/Arthritis
+ ;;^UTILITY(U,$J,358.3,18078,1,4,0)
+ ;;=4^M00.9
+ ;;^UTILITY(U,$J,358.3,18078,2)
+ ;;=^5009693
+ ;;^UTILITY(U,$J,358.3,18079,0)
+ ;;=B02.9^^81^946^214
+ ;;^UTILITY(U,$J,358.3,18079,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18079,1,3,0)
+ ;;=3^Shingles/zoster
+ ;;^UTILITY(U,$J,358.3,18079,1,4,0)
+ ;;=4^B02.9
+ ;;^UTILITY(U,$J,358.3,18079,2)
+ ;;=^5000501
+ ;;^UTILITY(U,$J,358.3,18080,0)
+ ;;=J01.90^^81^946^215
+ ;;^UTILITY(U,$J,358.3,18080,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18080,1,3,0)
+ ;;=3^Sinusitis, acute
+ ;;^UTILITY(U,$J,358.3,18080,1,4,0)
+ ;;=4^J01.90
+ ;;^UTILITY(U,$J,358.3,18080,2)
+ ;;=^5008127
+ ;;^UTILITY(U,$J,358.3,18081,0)
+ ;;=J32.9^^81^946^216
+ ;;^UTILITY(U,$J,358.3,18081,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18081,1,3,0)
+ ;;=3^Sinusitis, chronic
+ ;;^UTILITY(U,$J,358.3,18081,1,4,0)
+ ;;=4^J32.9
+ ;;^UTILITY(U,$J,358.3,18081,2)
+ ;;=^5008207
+ ;;^UTILITY(U,$J,358.3,18082,0)
+ ;;=A49.01^^81^946^155
+ ;;^UTILITY(U,$J,358.3,18082,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18082,1,3,0)
+ ;;=3^Methicillin Susceptible Staphylococcus Aureus Infection
+ ;;^UTILITY(U,$J,358.3,18082,1,4,0)
+ ;;=4^A49.01
+ ;;^UTILITY(U,$J,358.3,18082,2)
+ ;;=^5000235
+ ;;^UTILITY(U,$J,358.3,18083,0)
+ ;;=R61.^^81^946^229
+ ;;^UTILITY(U,$J,358.3,18083,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18083,1,3,0)
+ ;;=3^Sweats/Night Sweats
+ ;;^UTILITY(U,$J,358.3,18083,1,4,0)
+ ;;=4^R61.
+ ;;^UTILITY(U,$J,358.3,18083,2)
+ ;;=^331970
+ ;;^UTILITY(U,$J,358.3,18084,0)
+ ;;=A51.0^^81^946^230
+ ;;^UTILITY(U,$J,358.3,18084,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18084,1,3,0)
+ ;;=3^Syphilis genital, primary
+ ;;^UTILITY(U,$J,358.3,18084,1,4,0)
+ ;;=4^A51.0
+ ;;^UTILITY(U,$J,358.3,18084,2)
+ ;;=^5000272
+ ;;^UTILITY(U,$J,358.3,18085,0)
+ ;;=A51.5^^81^946^231
+ ;;^UTILITY(U,$J,358.3,18085,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18085,1,3,0)
+ ;;=3^Syphilis,Early Latent
+ ;;^UTILITY(U,$J,358.3,18085,1,4,0)
+ ;;=4^A51.5
+ ;;^UTILITY(U,$J,358.3,18085,2)
+ ;;=^266730
+ ;;^UTILITY(U,$J,358.3,18086,0)
+ ;;=A52.8^^81^946^232
+ ;;^UTILITY(U,$J,358.3,18086,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,18086,1,3,0)
+ ;;=3^Syphilis,Late Latent
+ ;;^UTILITY(U,$J,358.3,18086,1,4,0)
+ ;;=4^A52.8
+ ;;^UTILITY(U,$J,358.3,18086,2)
+ ;;=^266779

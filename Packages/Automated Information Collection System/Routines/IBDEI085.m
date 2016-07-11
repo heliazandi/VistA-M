@@ -1,132 +1,292 @@
-IBDEI085 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI085 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3252,0)
- ;;=Z98.62^^28^249^58
- ;;^UTILITY(U,$J,358.3,3252,1,0)
+ ;;^UTILITY(U,$J,358.3,8079,1,4,0)
+ ;;=4^M25.571
+ ;;^UTILITY(U,$J,358.3,8079,2)
+ ;;=^5011617
+ ;;^UTILITY(U,$J,358.3,8080,0)
+ ;;=M25.572^^42^504^80
+ ;;^UTILITY(U,$J,358.3,8080,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3252,1,3,0)
- ;;=3^Postprocedural State,Peripheral Vascular Angioplasty
- ;;^UTILITY(U,$J,358.3,3252,1,4,0)
- ;;=4^Z98.62
- ;;^UTILITY(U,$J,358.3,3252,2)
- ;;=^5063743
- ;;^UTILITY(U,$J,358.3,3253,0)
- ;;=Z95.810^^28^249^59
- ;;^UTILITY(U,$J,358.3,3253,1,0)
+ ;;^UTILITY(U,$J,358.3,8080,1,3,0)
+ ;;=3^Pain in Left Ankle
+ ;;^UTILITY(U,$J,358.3,8080,1,4,0)
+ ;;=4^M25.572
+ ;;^UTILITY(U,$J,358.3,8080,2)
+ ;;=^5011618
+ ;;^UTILITY(U,$J,358.3,8081,0)
+ ;;=M79.601^^42^504^95
+ ;;^UTILITY(U,$J,358.3,8081,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3253,1,3,0)
- ;;=3^Presence of Automatic Cardiac Defibrillator
- ;;^UTILITY(U,$J,358.3,3253,1,4,0)
- ;;=4^Z95.810
- ;;^UTILITY(U,$J,358.3,3253,2)
- ;;=^5063674
- ;;^UTILITY(U,$J,358.3,3254,0)
- ;;=Z95.5^^28^249^62
- ;;^UTILITY(U,$J,358.3,3254,1,0)
+ ;;^UTILITY(U,$J,358.3,8081,1,3,0)
+ ;;=3^Pain in Right Arm
+ ;;^UTILITY(U,$J,358.3,8081,1,4,0)
+ ;;=4^M79.601
+ ;;^UTILITY(U,$J,358.3,8081,2)
+ ;;=^5013325
+ ;;^UTILITY(U,$J,358.3,8082,0)
+ ;;=M79.602^^42^504^81
+ ;;^UTILITY(U,$J,358.3,8082,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3254,1,3,0)
- ;;=3^Presence of Coronary Angioplasty Implant & Graft
- ;;^UTILITY(U,$J,358.3,3254,1,4,0)
- ;;=4^Z95.5
- ;;^UTILITY(U,$J,358.3,3254,2)
- ;;=^5063673
- ;;^UTILITY(U,$J,358.3,3255,0)
- ;;=Z95.811^^28^249^64
- ;;^UTILITY(U,$J,358.3,3255,1,0)
+ ;;^UTILITY(U,$J,358.3,8082,1,3,0)
+ ;;=3^Pain in Left Arm
+ ;;^UTILITY(U,$J,358.3,8082,1,4,0)
+ ;;=4^M79.602
+ ;;^UTILITY(U,$J,358.3,8082,2)
+ ;;=^5013326
+ ;;^UTILITY(U,$J,358.3,8083,0)
+ ;;=M79.604^^42^504^102
+ ;;^UTILITY(U,$J,358.3,8083,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3255,1,3,0)
- ;;=3^Presence of Heart Assist Device
- ;;^UTILITY(U,$J,358.3,3255,1,4,0)
- ;;=4^Z95.811
- ;;^UTILITY(U,$J,358.3,3255,2)
- ;;=^5063675
- ;;^UTILITY(U,$J,358.3,3256,0)
- ;;=Z95.812^^28^249^63
- ;;^UTILITY(U,$J,358.3,3256,1,0)
+ ;;^UTILITY(U,$J,358.3,8083,1,3,0)
+ ;;=3^Pain in Right Leg
+ ;;^UTILITY(U,$J,358.3,8083,1,4,0)
+ ;;=4^M79.604
+ ;;^UTILITY(U,$J,358.3,8083,2)
+ ;;=^5013328
+ ;;^UTILITY(U,$J,358.3,8084,0)
+ ;;=M79.605^^42^504^88
+ ;;^UTILITY(U,$J,358.3,8084,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3256,1,3,0)
- ;;=3^Presence of Fully Implantable Artificial Heart
- ;;^UTILITY(U,$J,358.3,3256,1,4,0)
- ;;=4^Z95.812
- ;;^UTILITY(U,$J,358.3,3256,2)
- ;;=^5063676
- ;;^UTILITY(U,$J,358.3,3257,0)
- ;;=Z95.818^^28^249^60
- ;;^UTILITY(U,$J,358.3,3257,1,0)
+ ;;^UTILITY(U,$J,358.3,8084,1,3,0)
+ ;;=3^Pain in Left Leg
+ ;;^UTILITY(U,$J,358.3,8084,1,4,0)
+ ;;=4^M79.605
+ ;;^UTILITY(U,$J,358.3,8084,2)
+ ;;=^5013329
+ ;;^UTILITY(U,$J,358.3,8085,0)
+ ;;=M79.641^^42^504^99
+ ;;^UTILITY(U,$J,358.3,8085,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3257,1,3,0)
- ;;=3^Presence of Cardiac Implants & Grafts,Other
- ;;^UTILITY(U,$J,358.3,3257,1,4,0)
- ;;=4^Z95.818
- ;;^UTILITY(U,$J,358.3,3257,2)
- ;;=^5063677
- ;;^UTILITY(U,$J,358.3,3258,0)
- ;;=Z95.820^^28^249^65
- ;;^UTILITY(U,$J,358.3,3258,1,0)
+ ;;^UTILITY(U,$J,358.3,8085,1,3,0)
+ ;;=3^Pain in Right Hand
+ ;;^UTILITY(U,$J,358.3,8085,1,4,0)
+ ;;=4^M79.641
+ ;;^UTILITY(U,$J,358.3,8085,2)
+ ;;=^5013338
+ ;;^UTILITY(U,$J,358.3,8086,0)
+ ;;=M79.642^^42^504^85
+ ;;^UTILITY(U,$J,358.3,8086,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3258,1,3,0)
- ;;=3^Presence of Peripheral Vasc Angioplasty w/ Implants & Grafts
- ;;^UTILITY(U,$J,358.3,3258,1,4,0)
- ;;=4^Z95.820
- ;;^UTILITY(U,$J,358.3,3258,2)
- ;;=^5063678
- ;;^UTILITY(U,$J,358.3,3259,0)
- ;;=Z95.828^^28^249^67
- ;;^UTILITY(U,$J,358.3,3259,1,0)
+ ;;^UTILITY(U,$J,358.3,8086,1,3,0)
+ ;;=3^Pain in Left Hand
+ ;;^UTILITY(U,$J,358.3,8086,1,4,0)
+ ;;=4^M79.642
+ ;;^UTILITY(U,$J,358.3,8086,2)
+ ;;=^5013339
+ ;;^UTILITY(U,$J,358.3,8087,0)
+ ;;=M79.671^^42^504^97
+ ;;^UTILITY(U,$J,358.3,8087,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3259,1,3,0)
- ;;=3^Presence of Vascular Implants & Grafts,Other
- ;;^UTILITY(U,$J,358.3,3259,1,4,0)
- ;;=4^Z95.828
- ;;^UTILITY(U,$J,358.3,3259,2)
- ;;=^5063679
- ;;^UTILITY(U,$J,358.3,3260,0)
- ;;=Z95.2^^28^249^66
- ;;^UTILITY(U,$J,358.3,3260,1,0)
+ ;;^UTILITY(U,$J,358.3,8087,1,3,0)
+ ;;=3^Pain in Right Foot
+ ;;^UTILITY(U,$J,358.3,8087,1,4,0)
+ ;;=4^M79.671
+ ;;^UTILITY(U,$J,358.3,8087,2)
+ ;;=^5013350
+ ;;^UTILITY(U,$J,358.3,8088,0)
+ ;;=M79.672^^42^504^83
+ ;;^UTILITY(U,$J,358.3,8088,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3260,1,3,0)
- ;;=3^Presence of Prostetic Heart Valve
- ;;^UTILITY(U,$J,358.3,3260,1,4,0)
- ;;=4^Z95.2
- ;;^UTILITY(U,$J,358.3,3260,2)
- ;;=^5063670
- ;;^UTILITY(U,$J,358.3,3261,0)
- ;;=Z95.3^^28^249^68
- ;;^UTILITY(U,$J,358.3,3261,1,0)
+ ;;^UTILITY(U,$J,358.3,8088,1,3,0)
+ ;;=3^Pain in Left Foot
+ ;;^UTILITY(U,$J,358.3,8088,1,4,0)
+ ;;=4^M79.672
+ ;;^UTILITY(U,$J,358.3,8088,2)
+ ;;=^5013351
+ ;;^UTILITY(U,$J,358.3,8089,0)
+ ;;=M54.9^^42^504^8
+ ;;^UTILITY(U,$J,358.3,8089,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3261,1,3,0)
- ;;=3^Presence of Xenogenic Heart Valve
- ;;^UTILITY(U,$J,358.3,3261,1,4,0)
- ;;=4^Z95.3
- ;;^UTILITY(U,$J,358.3,3261,2)
- ;;=^5063671
- ;;^UTILITY(U,$J,358.3,3262,0)
- ;;=I27.9^^28^249^69
- ;;^UTILITY(U,$J,358.3,3262,1,0)
+ ;;^UTILITY(U,$J,358.3,8089,1,3,0)
+ ;;=3^Backache/Dorsalgia
+ ;;^UTILITY(U,$J,358.3,8089,1,4,0)
+ ;;=4^M54.9
+ ;;^UTILITY(U,$J,358.3,8089,2)
+ ;;=^5012314
+ ;;^UTILITY(U,$J,358.3,8090,0)
+ ;;=M48.52XG^^42^504^19
+ ;;^UTILITY(U,$J,358.3,8090,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3262,1,3,0)
- ;;=3^Pulmonary Heart Disease,Unspec
- ;;^UTILITY(U,$J,358.3,3262,1,4,0)
- ;;=4^I27.9
- ;;^UTILITY(U,$J,358.3,3262,2)
- ;;=^5007154
- ;;^UTILITY(U,$J,358.3,3263,0)
- ;;=I27.0^^28^249^70
- ;;^UTILITY(U,$J,358.3,3263,1,0)
+ ;;^UTILITY(U,$J,358.3,8090,1,3,0)
+ ;;=3^Collapsed Vertabra,Cervical Region,Subs Encntr,Del Healing
+ ;;^UTILITY(U,$J,358.3,8090,1,4,0)
+ ;;=4^M48.52XG
+ ;;^UTILITY(U,$J,358.3,8090,2)
+ ;;=^5012169
+ ;;^UTILITY(U,$J,358.3,8091,0)
+ ;;=M48.52XS^^42^504^20
+ ;;^UTILITY(U,$J,358.3,8091,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3263,1,3,0)
- ;;=3^Pulmonary Hypertension,Primary
- ;;^UTILITY(U,$J,358.3,3263,1,4,0)
- ;;=4^I27.0
- ;;^UTILITY(U,$J,358.3,3263,2)
- ;;=^265310
- ;;^UTILITY(U,$J,358.3,3264,0)
- ;;=I73.00^^28^249^71
- ;;^UTILITY(U,$J,358.3,3264,1,0)
+ ;;^UTILITY(U,$J,358.3,8091,1,3,0)
+ ;;=3^Collapsed Vertabra,Cervical Region,Subs Encntr,Sequela
+ ;;^UTILITY(U,$J,358.3,8091,1,4,0)
+ ;;=4^M48.52XS
+ ;;^UTILITY(U,$J,358.3,8091,2)
+ ;;=^5012170
+ ;;^UTILITY(U,$J,358.3,8092,0)
+ ;;=M48.57XG^^42^504^27
+ ;;^UTILITY(U,$J,358.3,8092,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3264,1,3,0)
- ;;=3^Raynaud's Syndrome w/o Gangrene
- ;;^UTILITY(U,$J,358.3,3264,1,4,0)
- ;;=4^I73.00
+ ;;^UTILITY(U,$J,358.3,8092,1,3,0)
+ ;;=3^Collapsed Vertebra,Lumbosacral Region,Subs Encntr,Del Healing
+ ;;^UTILITY(U,$J,358.3,8092,1,4,0)
+ ;;=4^M48.57XG
+ ;;^UTILITY(U,$J,358.3,8092,2)
+ ;;=^5012189
+ ;;^UTILITY(U,$J,358.3,8093,0)
+ ;;=M48.57XS^^42^504^28
+ ;;^UTILITY(U,$J,358.3,8093,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8093,1,3,0)
+ ;;=3^Collapsed Vertebra,Lumbosacral Region,Subs Encntr,Sequela
+ ;;^UTILITY(U,$J,358.3,8093,1,4,0)
+ ;;=4^M48.57XS
+ ;;^UTILITY(U,$J,358.3,8093,2)
+ ;;=^5012190
+ ;;^UTILITY(U,$J,358.3,8094,0)
+ ;;=M48.54XD^^42^504^29
+ ;;^UTILITY(U,$J,358.3,8094,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8094,1,3,0)
+ ;;=3^Collapsed Vertebra,Thoracic Region,Subs Encntr,Rt Healing
+ ;;^UTILITY(U,$J,358.3,8094,1,4,0)
+ ;;=4^M48.54XD
+ ;;^UTILITY(U,$J,358.3,8094,2)
+ ;;=^5012176
+ ;;^UTILITY(U,$J,358.3,8095,0)
+ ;;=M48.57XG^^42^504^30
+ ;;^UTILITY(U,$J,358.3,8095,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8095,1,3,0)
+ ;;=3^Collapsed Vertebra,Thoracic Region,Subs Encntr,Del Healing
+ ;;^UTILITY(U,$J,358.3,8095,1,4,0)
+ ;;=4^M48.57XG
+ ;;^UTILITY(U,$J,358.3,8095,2)
+ ;;=^5012189
+ ;;^UTILITY(U,$J,358.3,8096,0)
+ ;;=M48.54XS^^42^504^31
+ ;;^UTILITY(U,$J,358.3,8096,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8096,1,3,0)
+ ;;=3^Collapsed Vertebra,Thoracic Region,Subs Encntr,Sequela
+ ;;^UTILITY(U,$J,358.3,8096,1,4,0)
+ ;;=4^M48.54XS
+ ;;^UTILITY(U,$J,358.3,8096,2)
+ ;;=^5012178
+ ;;^UTILITY(U,$J,358.3,8097,0)
+ ;;=M62.830^^42^504^59
+ ;;^UTILITY(U,$J,358.3,8097,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8097,1,3,0)
+ ;;=3^Muscle Spasm of Back
+ ;;^UTILITY(U,$J,358.3,8097,1,4,0)
+ ;;=4^M62.830
+ ;;^UTILITY(U,$J,358.3,8097,2)
+ ;;=^5012680
+ ;;^UTILITY(U,$J,358.3,8098,0)
+ ;;=M19.92^^42^504^111
+ ;;^UTILITY(U,$J,358.3,8098,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8098,1,3,0)
+ ;;=3^Post-Traumatic Osteoarthritis,Unspec Site
+ ;;^UTILITY(U,$J,358.3,8098,1,4,0)
+ ;;=4^M19.92
+ ;;^UTILITY(U,$J,358.3,8098,2)
+ ;;=^5010855
+ ;;^UTILITY(U,$J,358.3,8099,0)
+ ;;=M79.632^^42^504^84
+ ;;^UTILITY(U,$J,358.3,8099,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8099,1,3,0)
+ ;;=3^Pain in Left Forearm
+ ;;^UTILITY(U,$J,358.3,8099,1,4,0)
+ ;;=4^M79.632
+ ;;^UTILITY(U,$J,358.3,8099,2)
+ ;;=^5013336
+ ;;^UTILITY(U,$J,358.3,8100,0)
+ ;;=M79.662^^42^504^89
+ ;;^UTILITY(U,$J,358.3,8100,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8100,1,3,0)
+ ;;=3^Pain in Left Lower Leg
+ ;;^UTILITY(U,$J,358.3,8100,1,4,0)
+ ;;=4^M79.662
+ ;;^UTILITY(U,$J,358.3,8100,2)
+ ;;=^5013348
+ ;;^UTILITY(U,$J,358.3,8101,0)
+ ;;=M79.652^^42^504^91
+ ;;^UTILITY(U,$J,358.3,8101,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8101,1,3,0)
+ ;;=3^Pain in Left Thigh
+ ;;^UTILITY(U,$J,358.3,8101,1,4,0)
+ ;;=4^M79.652
+ ;;^UTILITY(U,$J,358.3,8101,2)
+ ;;=^5013345
+ ;;^UTILITY(U,$J,358.3,8102,0)
+ ;;=M79.622^^42^504^92
+ ;;^UTILITY(U,$J,358.3,8102,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8102,1,3,0)
+ ;;=3^Pain in Left Upper Arm
+ ;;^UTILITY(U,$J,358.3,8102,1,4,0)
+ ;;=4^M79.622
+ ;;^UTILITY(U,$J,358.3,8102,2)
+ ;;=^5013333
+ ;;^UTILITY(U,$J,358.3,8103,0)
+ ;;=M79.621^^42^504^106
+ ;;^UTILITY(U,$J,358.3,8103,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8103,1,3,0)
+ ;;=3^Pain in Right Upper Arm
+ ;;^UTILITY(U,$J,358.3,8103,1,4,0)
+ ;;=4^M79.621
+ ;;^UTILITY(U,$J,358.3,8103,2)
+ ;;=^5013332
+ ;;^UTILITY(U,$J,358.3,8104,0)
+ ;;=M79.631^^42^504^98
+ ;;^UTILITY(U,$J,358.3,8104,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8104,1,3,0)
+ ;;=3^Pain in Right Forearm
+ ;;^UTILITY(U,$J,358.3,8104,1,4,0)
+ ;;=4^M79.631
+ ;;^UTILITY(U,$J,358.3,8104,2)
+ ;;=^5013335
+ ;;^UTILITY(U,$J,358.3,8105,0)
+ ;;=M79.661^^42^504^103
+ ;;^UTILITY(U,$J,358.3,8105,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8105,1,3,0)
+ ;;=3^Pain in Right Lower Leg
+ ;;^UTILITY(U,$J,358.3,8105,1,4,0)
+ ;;=4^M79.661
+ ;;^UTILITY(U,$J,358.3,8105,2)
+ ;;=^5013347
+ ;;^UTILITY(U,$J,358.3,8106,0)
+ ;;=M79.651^^42^504^105
+ ;;^UTILITY(U,$J,358.3,8106,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8106,1,3,0)
+ ;;=3^Pain in Right Thigh
+ ;;^UTILITY(U,$J,358.3,8106,1,4,0)
+ ;;=4^M79.651
+ ;;^UTILITY(U,$J,358.3,8106,2)
+ ;;=^5013344
+ ;;^UTILITY(U,$J,358.3,8107,0)
+ ;;=B02.0^^42^505^45
+ ;;^UTILITY(U,$J,358.3,8107,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8107,1,3,0)
+ ;;=3^Zoster Encephalitis
+ ;;^UTILITY(U,$J,358.3,8107,1,4,0)
+ ;;=4^B02.0
+ ;;^UTILITY(U,$J,358.3,8107,2)
+ ;;=^5000488
+ ;;^UTILITY(U,$J,358.3,8108,0)
+ ;;=B02.29^^42^505^37
+ ;;^UTILITY(U,$J,358.3,8108,1,0)
+ ;;=^358.31IA^4^2

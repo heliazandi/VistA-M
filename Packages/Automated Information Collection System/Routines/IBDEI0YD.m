@@ -1,126 +1,286 @@
-IBDEI0YD ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0YD ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15834,1,0)
+ ;;^UTILITY(U,$J,358.3,34588,0)
+ ;;=J20.9^^125^1641^16
+ ;;^UTILITY(U,$J,358.3,34588,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15834,1,3,0)
- ;;=3^Varicose Veins of Right Lower Extrem w/ Foot Ulcer
- ;;^UTILITY(U,$J,358.3,15834,1,4,0)
- ;;=4^I83.015
- ;;^UTILITY(U,$J,358.3,15834,2)
- ;;=^5007977
- ;;^UTILITY(U,$J,358.3,15835,0)
- ;;=I83.019^^85^827^19
- ;;^UTILITY(U,$J,358.3,15835,1,0)
+ ;;^UTILITY(U,$J,358.3,34588,1,3,0)
+ ;;=3^AC Bronchitis,Unspec
+ ;;^UTILITY(U,$J,358.3,34588,1,4,0)
+ ;;=4^J20.9
+ ;;^UTILITY(U,$J,358.3,34588,2)
+ ;;=^5008195
+ ;;^UTILITY(U,$J,358.3,34589,0)
+ ;;=H60.523^^125^1641^17
+ ;;^UTILITY(U,$J,358.3,34589,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15835,1,3,0)
- ;;=3^Varicose Veins of Right Lower Extrem w/ Ulcer,Unspec Site
- ;;^UTILITY(U,$J,358.3,15835,1,4,0)
- ;;=4^I83.019
- ;;^UTILITY(U,$J,358.3,15835,2)
- ;;=^5007979
- ;;^UTILITY(U,$J,358.3,15836,0)
- ;;=I83.11^^85^827^20
- ;;^UTILITY(U,$J,358.3,15836,1,0)
+ ;;^UTILITY(U,$J,358.3,34589,1,3,0)
+ ;;=3^AC Chemical Otitis Externa,Bilateral
+ ;;^UTILITY(U,$J,358.3,34589,1,4,0)
+ ;;=4^H60.523
+ ;;^UTILITY(U,$J,358.3,34589,2)
+ ;;=^5006476
+ ;;^UTILITY(U,$J,358.3,34590,0)
+ ;;=H60.522^^125^1641^18
+ ;;^UTILITY(U,$J,358.3,34590,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15836,1,3,0)
- ;;=3^Varicose Veins of Right Lower Extrem w/ Inflammation
- ;;^UTILITY(U,$J,358.3,15836,1,4,0)
- ;;=4^I83.11
- ;;^UTILITY(U,$J,358.3,15836,2)
- ;;=^5007988
- ;;^UTILITY(U,$J,358.3,15837,0)
- ;;=I83.91^^85^827^3
- ;;^UTILITY(U,$J,358.3,15837,1,0)
+ ;;^UTILITY(U,$J,358.3,34590,1,3,0)
+ ;;=3^AC Chemical Otitis Externa,Left Ear
+ ;;^UTILITY(U,$J,358.3,34590,1,4,0)
+ ;;=4^H60.522
+ ;;^UTILITY(U,$J,358.3,34590,2)
+ ;;=^5006475
+ ;;^UTILITY(U,$J,358.3,34591,0)
+ ;;=H60.521^^125^1641^19
+ ;;^UTILITY(U,$J,358.3,34591,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15837,1,3,0)
- ;;=3^Asymptomatic Varicose Veins of Right Lower Extrem 
- ;;^UTILITY(U,$J,358.3,15837,1,4,0)
- ;;=4^I83.91
- ;;^UTILITY(U,$J,358.3,15837,2)
- ;;=^5008020
- ;;^UTILITY(U,$J,358.3,15838,0)
- ;;=I83.029^^85^827^4
- ;;^UTILITY(U,$J,358.3,15838,1,0)
+ ;;^UTILITY(U,$J,358.3,34591,1,3,0)
+ ;;=3^AC Chemical Otitis Externa,Right Ear
+ ;;^UTILITY(U,$J,358.3,34591,1,4,0)
+ ;;=4^H60.521
+ ;;^UTILITY(U,$J,358.3,34591,2)
+ ;;=^5006474
+ ;;^UTILITY(U,$J,358.3,34592,0)
+ ;;=H60.543^^125^1641^20
+ ;;^UTILITY(U,$J,358.3,34592,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15838,1,3,0)
- ;;=3^Varicose Veins of Left Lower Extrem w/ Ulcer,Unspec Site
- ;;^UTILITY(U,$J,358.3,15838,1,4,0)
- ;;=4^I83.029
- ;;^UTILITY(U,$J,358.3,15838,2)
- ;;=^5007986
- ;;^UTILITY(U,$J,358.3,15839,0)
- ;;=I83.025^^85^827^5
- ;;^UTILITY(U,$J,358.3,15839,1,0)
+ ;;^UTILITY(U,$J,358.3,34592,1,3,0)
+ ;;=3^AC Eczematoid Otitis Externa,Bilateral
+ ;;^UTILITY(U,$J,358.3,34592,1,4,0)
+ ;;=4^H60.543
+ ;;^UTILITY(U,$J,358.3,34592,2)
+ ;;=^5006484
+ ;;^UTILITY(U,$J,358.3,34593,0)
+ ;;=H60.542^^125^1641^21
+ ;;^UTILITY(U,$J,358.3,34593,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15839,1,3,0)
- ;;=3^Varicose Veins of Left Lower Extrem w/ Foot Ulcer
- ;;^UTILITY(U,$J,358.3,15839,1,4,0)
- ;;=4^I83.025
- ;;^UTILITY(U,$J,358.3,15839,2)
- ;;=^5007984
- ;;^UTILITY(U,$J,358.3,15840,0)
- ;;=I83.024^^85^827^6
- ;;^UTILITY(U,$J,358.3,15840,1,0)
+ ;;^UTILITY(U,$J,358.3,34593,1,3,0)
+ ;;=3^AC Eczematoid Otitis Externa,Left Ear
+ ;;^UTILITY(U,$J,358.3,34593,1,4,0)
+ ;;=4^H60.542
+ ;;^UTILITY(U,$J,358.3,34593,2)
+ ;;=^5006483
+ ;;^UTILITY(U,$J,358.3,34594,0)
+ ;;=H60.541^^125^1641^22
+ ;;^UTILITY(U,$J,358.3,34594,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15840,1,3,0)
- ;;=3^Varicose Veins of Left Lower Extrem w/ Heel/Midfoot Ulcer
- ;;^UTILITY(U,$J,358.3,15840,1,4,0)
- ;;=4^I83.024
- ;;^UTILITY(U,$J,358.3,15840,2)
- ;;=^5007983
- ;;^UTILITY(U,$J,358.3,15841,0)
- ;;=I83.028^^85^827^7
- ;;^UTILITY(U,$J,358.3,15841,1,0)
+ ;;^UTILITY(U,$J,358.3,34594,1,3,0)
+ ;;=3^AC Eczematoid Otitis Externa,Right Ear
+ ;;^UTILITY(U,$J,358.3,34594,1,4,0)
+ ;;=4^H60.541
+ ;;^UTILITY(U,$J,358.3,34594,2)
+ ;;=^5006482
+ ;;^UTILITY(U,$J,358.3,34595,0)
+ ;;=J04.0^^125^1641^23
+ ;;^UTILITY(U,$J,358.3,34595,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15841,1,3,0)
- ;;=3^Varicose Veins of Left Lower Extrem w/ Lower Leg Ulcer
- ;;^UTILITY(U,$J,358.3,15841,1,4,0)
- ;;=4^I83.028
- ;;^UTILITY(U,$J,358.3,15841,2)
- ;;=^5007985
- ;;^UTILITY(U,$J,358.3,15842,0)
- ;;=I83.023^^85^827^8
- ;;^UTILITY(U,$J,358.3,15842,1,0)
+ ;;^UTILITY(U,$J,358.3,34595,1,3,0)
+ ;;=3^AC Laryngitis
+ ;;^UTILITY(U,$J,358.3,34595,1,4,0)
+ ;;=4^J04.0
+ ;;^UTILITY(U,$J,358.3,34595,2)
+ ;;=^5008137
+ ;;^UTILITY(U,$J,358.3,34596,0)
+ ;;=J04.2^^125^1641^24
+ ;;^UTILITY(U,$J,358.3,34596,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15842,1,3,0)
- ;;=3^Varicose Veins of Left Lower Extrem w/ Ankle Ulcer
- ;;^UTILITY(U,$J,358.3,15842,1,4,0)
- ;;=4^I83.023
- ;;^UTILITY(U,$J,358.3,15842,2)
- ;;=^5007982
- ;;^UTILITY(U,$J,358.3,15843,0)
- ;;=I83.022^^85^827^9
- ;;^UTILITY(U,$J,358.3,15843,1,0)
+ ;;^UTILITY(U,$J,358.3,34596,1,3,0)
+ ;;=3^AC Laryngotracheitis
+ ;;^UTILITY(U,$J,358.3,34596,1,4,0)
+ ;;=4^J04.2
+ ;;^UTILITY(U,$J,358.3,34596,2)
+ ;;=^269868
+ ;;^UTILITY(U,$J,358.3,34597,0)
+ ;;=J00.^^125^1641^25
+ ;;^UTILITY(U,$J,358.3,34597,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15843,1,3,0)
- ;;=3^Varicose Veins of Left Lower Extrem w/ Calf Ulcer
- ;;^UTILITY(U,$J,358.3,15843,1,4,0)
- ;;=4^I83.022
- ;;^UTILITY(U,$J,358.3,15843,2)
- ;;=^5007981
- ;;^UTILITY(U,$J,358.3,15844,0)
- ;;=I83.021^^85^827^10
- ;;^UTILITY(U,$J,358.3,15844,1,0)
+ ;;^UTILITY(U,$J,358.3,34597,1,3,0)
+ ;;=3^AC Nasopharyngitis
+ ;;^UTILITY(U,$J,358.3,34597,1,4,0)
+ ;;=4^J00.
+ ;;^UTILITY(U,$J,358.3,34597,2)
+ ;;=^5008115
+ ;;^UTILITY(U,$J,358.3,34598,0)
+ ;;=J02.8^^125^1641^29
+ ;;^UTILITY(U,$J,358.3,34598,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15844,1,3,0)
- ;;=3^Varicose Veins of Left Lower Extrem w/ Thigh Ulcer
- ;;^UTILITY(U,$J,358.3,15844,1,4,0)
- ;;=4^I83.021
- ;;^UTILITY(U,$J,358.3,15844,2)
- ;;=^5007980
- ;;^UTILITY(U,$J,358.3,15845,0)
- ;;=I83.12^^85^827^11
- ;;^UTILITY(U,$J,358.3,15845,1,0)
+ ;;^UTILITY(U,$J,358.3,34598,1,3,0)
+ ;;=3^AC Pharyngitis d/t Specified Organisms
+ ;;^UTILITY(U,$J,358.3,34598,1,4,0)
+ ;;=4^J02.8
+ ;;^UTILITY(U,$J,358.3,34598,2)
+ ;;=^5008129
+ ;;^UTILITY(U,$J,358.3,34599,0)
+ ;;=J02.9^^125^1641^30
+ ;;^UTILITY(U,$J,358.3,34599,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15845,1,3,0)
- ;;=3^Varicose Veins of Left Lower Extrem w/ Inflammation
- ;;^UTILITY(U,$J,358.3,15845,1,4,0)
- ;;=4^I83.12
- ;;^UTILITY(U,$J,358.3,15845,2)
- ;;=^5007989
- ;;^UTILITY(U,$J,358.3,15846,0)
- ;;=I83.93^^85^827^1
- ;;^UTILITY(U,$J,358.3,15846,1,0)
+ ;;^UTILITY(U,$J,358.3,34599,1,3,0)
+ ;;=3^AC Pharyngitis,Unspec
+ ;;^UTILITY(U,$J,358.3,34599,1,4,0)
+ ;;=4^J02.9
+ ;;^UTILITY(U,$J,358.3,34599,2)
+ ;;=^5008130
+ ;;^UTILITY(U,$J,358.3,34600,0)
+ ;;=B40.0^^125^1641^31
+ ;;^UTILITY(U,$J,358.3,34600,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34600,1,3,0)
+ ;;=3^AC Pulmonary Blastomycosis
+ ;;^UTILITY(U,$J,358.3,34600,1,4,0)
+ ;;=4^B40.0
+ ;;^UTILITY(U,$J,358.3,34600,2)
+ ;;=^5000639
+ ;;^UTILITY(U,$J,358.3,34601,0)
+ ;;=H60.553^^125^1641^32
+ ;;^UTILITY(U,$J,358.3,34601,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34601,1,3,0)
+ ;;=3^AC Reactive Otitis Externa,Bilateral
+ ;;^UTILITY(U,$J,358.3,34601,1,4,0)
+ ;;=4^H60.553
+ ;;^UTILITY(U,$J,358.3,34601,2)
+ ;;=^5006488
+ ;;^UTILITY(U,$J,358.3,34602,0)
+ ;;=H60.552^^125^1641^33
+ ;;^UTILITY(U,$J,358.3,34602,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34602,1,3,0)
+ ;;=3^AC Reactive Otitis Externa,Left Ear
+ ;;^UTILITY(U,$J,358.3,34602,1,4,0)
+ ;;=4^H60.552
+ ;;^UTILITY(U,$J,358.3,34602,2)
+ ;;=^5006487
+ ;;^UTILITY(U,$J,358.3,34603,0)
+ ;;=H60.551^^125^1641^34
+ ;;^UTILITY(U,$J,358.3,34603,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34603,1,3,0)
+ ;;=3^AC Reactive Otitis Externa,Right Ear
+ ;;^UTILITY(U,$J,358.3,34603,1,4,0)
+ ;;=4^H60.551
+ ;;^UTILITY(U,$J,358.3,34603,2)
+ ;;=^5006486
+ ;;^UTILITY(U,$J,358.3,34604,0)
+ ;;=J01.91^^125^1641^35
+ ;;^UTILITY(U,$J,358.3,34604,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34604,1,3,0)
+ ;;=3^AC Recurrent Sinusitis,Unspec
+ ;;^UTILITY(U,$J,358.3,34604,1,4,0)
+ ;;=4^J01.91
+ ;;^UTILITY(U,$J,358.3,34604,2)
+ ;;=^5008128
+ ;;^UTILITY(U,$J,358.3,34605,0)
+ ;;=J03.81^^125^1641^36
+ ;;^UTILITY(U,$J,358.3,34605,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34605,1,3,0)
+ ;;=3^AC Recurrent Tonsillitis d/t Specified Organisms
+ ;;^UTILITY(U,$J,358.3,34605,1,4,0)
+ ;;=4^J03.81
+ ;;^UTILITY(U,$J,358.3,34605,2)
+ ;;=^5008134
+ ;;^UTILITY(U,$J,358.3,34606,0)
+ ;;=J03.91^^125^1641^37
+ ;;^UTILITY(U,$J,358.3,34606,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34606,1,3,0)
+ ;;=3^AC Recurrent Tonsillitis,Unspec
+ ;;^UTILITY(U,$J,358.3,34606,1,4,0)
+ ;;=4^J03.91
+ ;;^UTILITY(U,$J,358.3,34606,2)
+ ;;=^5008136
+ ;;^UTILITY(U,$J,358.3,34607,0)
+ ;;=J01.90^^125^1641^38
+ ;;^UTILITY(U,$J,358.3,34607,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34607,1,3,0)
+ ;;=3^AC Sinusitis,Unspec
+ ;;^UTILITY(U,$J,358.3,34607,1,4,0)
+ ;;=4^J01.90
+ ;;^UTILITY(U,$J,358.3,34607,2)
+ ;;=^5008127
+ ;;^UTILITY(U,$J,358.3,34608,0)
+ ;;=J03.80^^125^1641^39
+ ;;^UTILITY(U,$J,358.3,34608,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34608,1,3,0)
+ ;;=3^AC Tonsillitis d/t Specified Organisms
+ ;;^UTILITY(U,$J,358.3,34608,1,4,0)
+ ;;=4^J03.80
+ ;;^UTILITY(U,$J,358.3,34608,2)
+ ;;=^5008133
+ ;;^UTILITY(U,$J,358.3,34609,0)
+ ;;=J03.90^^125^1641^40
+ ;;^UTILITY(U,$J,358.3,34609,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34609,1,3,0)
+ ;;=3^AC Tonsillitis,Unspec
+ ;;^UTILITY(U,$J,358.3,34609,1,4,0)
+ ;;=4^J03.90
+ ;;^UTILITY(U,$J,358.3,34609,2)
+ ;;=^5008135
+ ;;^UTILITY(U,$J,358.3,34610,0)
+ ;;=B44.81^^125^1641^43
+ ;;^UTILITY(U,$J,358.3,34610,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34610,1,3,0)
+ ;;=3^Allergic Bronchopulmonary Aspergillosis
+ ;;^UTILITY(U,$J,358.3,34610,1,4,0)
+ ;;=4^B44.81
+ ;;^UTILITY(U,$J,358.3,34610,2)
+ ;;=^10945
+ ;;^UTILITY(U,$J,358.3,34611,0)
+ ;;=B44.9^^125^1641^45
+ ;;^UTILITY(U,$J,358.3,34611,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34611,1,3,0)
+ ;;=3^Aspergillosis,Unspec
+ ;;^UTILITY(U,$J,358.3,34611,1,4,0)
+ ;;=4^B44.9
+ ;;^UTILITY(U,$J,358.3,34611,2)
+ ;;=^5000668
+ ;;^UTILITY(U,$J,358.3,34612,0)
+ ;;=B40.9^^125^1641^47
+ ;;^UTILITY(U,$J,358.3,34612,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34612,1,3,0)
+ ;;=3^Blastomycosis,Unspec
+ ;;^UTILITY(U,$J,358.3,34612,1,4,0)
+ ;;=4^B40.9
+ ;;^UTILITY(U,$J,358.3,34612,2)
+ ;;=^5000646
+ ;;^UTILITY(U,$J,358.3,34613,0)
+ ;;=J18.0^^125^1641^48
+ ;;^UTILITY(U,$J,358.3,34613,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34613,1,3,0)
+ ;;=3^Bronchopneumonia,Unspec Organism
+ ;;^UTILITY(U,$J,358.3,34613,1,4,0)
+ ;;=4^J18.0
+ ;;^UTILITY(U,$J,358.3,34613,2)
+ ;;=^5008182
+ ;;^UTILITY(U,$J,358.3,34614,0)
+ ;;=B45.1^^125^1641^49
+ ;;^UTILITY(U,$J,358.3,34614,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34614,1,3,0)
+ ;;=3^Cerebral Cryptococcosis
+ ;;^UTILITY(U,$J,358.3,34614,1,4,0)
+ ;;=4^B45.1
+ ;;^UTILITY(U,$J,358.3,34614,2)
+ ;;=^5000670
+ ;;^UTILITY(U,$J,358.3,34615,0)
+ ;;=J16.0^^125^1641^50
+ ;;^UTILITY(U,$J,358.3,34615,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34615,1,3,0)
+ ;;=3^Chlamydial Pneumonia
+ ;;^UTILITY(U,$J,358.3,34615,1,4,0)
+ ;;=4^J16.0
+ ;;^UTILITY(U,$J,358.3,34615,2)
+ ;;=^5008179
+ ;;^UTILITY(U,$J,358.3,34616,0)
+ ;;=B40.1^^125^1641^51

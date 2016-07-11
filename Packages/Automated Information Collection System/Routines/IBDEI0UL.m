@@ -1,122 +1,266 @@
-IBDEI0UL ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0UL ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14078,2)
- ;;=^5005898
- ;;^UTILITY(U,$J,358.3,14079,0)
- ;;=H40.53X3^^82^770^47
- ;;^UTILITY(U,$J,358.3,14079,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14079,1,3,0)
- ;;=3^Glaucoma Sec to Oth Eye Disorder,Bilateral,Severe Stage
- ;;^UTILITY(U,$J,358.3,14079,1,4,0)
- ;;=4^H40.53X3
- ;;^UTILITY(U,$J,358.3,14079,2)
- ;;=^5005899
- ;;^UTILITY(U,$J,358.3,14080,0)
- ;;=H40.53X4^^82^770^48
- ;;^UTILITY(U,$J,358.3,14080,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14080,1,3,0)
- ;;=3^Glaucoma Sec to Oth Eye Disorder,Bilateral,Indeterminate Stage
- ;;^UTILITY(U,$J,358.3,14080,1,4,0)
- ;;=4^H40.53X4
- ;;^UTILITY(U,$J,358.3,14080,2)
- ;;=^5005900
- ;;^UTILITY(U,$J,358.3,14081,0)
- ;;=H40.1411^^82^770^8
- ;;^UTILITY(U,$J,358.3,14081,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14081,1,3,0)
- ;;=3^Capsular Glaucoma w/ Pseudoxf Lens,Right Eye,Mild Stage
- ;;^UTILITY(U,$J,358.3,14081,1,4,0)
- ;;=4^H40.1411
- ;;^UTILITY(U,$J,358.3,14081,2)
- ;;=^5138018
- ;;^UTILITY(U,$J,358.3,14082,0)
- ;;=H40.1412^^82^770^9
- ;;^UTILITY(U,$J,358.3,14082,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14082,1,3,0)
- ;;=3^Capsular Glaucoma w/ Pseudoxf Lens,Right Eye,Moderate Stage
- ;;^UTILITY(U,$J,358.3,14082,1,4,0)
- ;;=4^H40.1412
- ;;^UTILITY(U,$J,358.3,14082,2)
- ;;=^5138019
- ;;^UTILITY(U,$J,358.3,14083,0)
- ;;=H40.1413^^82^770^10
- ;;^UTILITY(U,$J,358.3,14083,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14083,1,3,0)
- ;;=3^Capsular Glaucoma w/ Pseudoxf Lens,Right Eye,Severe Stage
- ;;^UTILITY(U,$J,358.3,14083,1,4,0)
- ;;=4^H40.1413
- ;;^UTILITY(U,$J,358.3,14083,2)
- ;;=^5138020
- ;;^UTILITY(U,$J,358.3,14084,0)
- ;;=H40.1414^^82^770^11
- ;;^UTILITY(U,$J,358.3,14084,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14084,1,3,0)
- ;;=3^Capsular Glaucoma w/ Pseudoxf Lens,Right Eye,Indeterminate Stage
- ;;^UTILITY(U,$J,358.3,14084,1,4,0)
- ;;=4^H40.1414
- ;;^UTILITY(U,$J,358.3,14084,2)
- ;;=^5138021
- ;;^UTILITY(U,$J,358.3,14085,0)
- ;;=H40.1421^^82^770^4
- ;;^UTILITY(U,$J,358.3,14085,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14085,1,3,0)
- ;;=3^Capsular Glaucoma w/ Pseudoxf Lens,Left Eye,Mild Stage
- ;;^UTILITY(U,$J,358.3,14085,1,4,0)
- ;;=4^H40.1421
- ;;^UTILITY(U,$J,358.3,14085,2)
- ;;=^5138023
- ;;^UTILITY(U,$J,358.3,14086,0)
- ;;=H40.1422^^82^770^5
- ;;^UTILITY(U,$J,358.3,14086,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14086,1,3,0)
- ;;=3^Capsular Glaucoma w/ Pseudoxf Lens,Left Eye,Moderate Stage
- ;;^UTILITY(U,$J,358.3,14086,1,4,0)
- ;;=4^H40.1422
- ;;^UTILITY(U,$J,358.3,14086,2)
- ;;=^5138024
- ;;^UTILITY(U,$J,358.3,14087,0)
- ;;=H40.1423^^82^770^6
- ;;^UTILITY(U,$J,358.3,14087,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14087,1,3,0)
- ;;=3^Capsular Glaucoma w/ Pseudoxf Lens,Left Eye,Severe Stage
- ;;^UTILITY(U,$J,358.3,14087,1,4,0)
- ;;=4^H40.1423
- ;;^UTILITY(U,$J,358.3,14087,2)
- ;;=^5138025
- ;;^UTILITY(U,$J,358.3,14088,0)
- ;;=H40.1424^^82^770^7
- ;;^UTILITY(U,$J,358.3,14088,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14088,1,3,0)
- ;;=3^Capsular Glaucoma w/ Pseudoxf Lens,Left Eye,Indeterminate Stage
- ;;^UTILITY(U,$J,358.3,14088,1,4,0)
- ;;=4^H40.1424
- ;;^UTILITY(U,$J,358.3,14088,2)
- ;;=^5138026
- ;;^UTILITY(U,$J,358.3,14089,0)
- ;;=H40.31X0^^82^770^138
- ;;^UTILITY(U,$J,358.3,14089,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14089,1,3,0)
- ;;=3^Traumatic Glaucoma,Right Eye,Unspec Stage
- ;;^UTILITY(U,$J,358.3,14089,1,4,0)
- ;;=4^H40.31X0
- ;;^UTILITY(U,$J,358.3,14089,2)
- ;;=^5005852
- ;;^UTILITY(U,$J,358.3,14090,0)
- ;;=H40.31X1^^82^770^135
- ;;^UTILITY(U,$J,358.3,14090,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14090,1,3,0)
- ;;=3^Traumatic Glaucoma,Right Eye,Mild Stage
+ ;;^UTILITY(U,$J,358.3,30743,1,3,0)
+ ;;=3^Dest Mal Lesion Tnk/Arm/Leg,3.1-4.0cm
+ ;;^UTILITY(U,$J,358.3,30744,0)
+ ;;=17266^^115^1489^6^^^^1
+ ;;^UTILITY(U,$J,358.3,30744,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30744,1,2,0)
+ ;;=2^17266
+ ;;^UTILITY(U,$J,358.3,30744,1,3,0)
+ ;;=3^Dest Mal Lesion Tnk/Arm/Leg > 4.0cm
+ ;;^UTILITY(U,$J,358.3,30745,0)
+ ;;=11400^^115^1490^1^^^^1
+ ;;^UTILITY(U,$J,358.3,30745,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30745,1,2,0)
+ ;;=2^11400
+ ;;^UTILITY(U,$J,358.3,30745,1,3,0)
+ ;;=3^Exc Ben Lesion Tnk/Arm/Leg,0.5cm or <
+ ;;^UTILITY(U,$J,358.3,30746,0)
+ ;;=11401^^115^1490^2^^^^1
+ ;;^UTILITY(U,$J,358.3,30746,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30746,1,2,0)
+ ;;=2^11401
+ ;;^UTILITY(U,$J,358.3,30746,1,3,0)
+ ;;=3^Exc Ben Lesion Tnk/Arm/Leg,0.6-1.0cm
+ ;;^UTILITY(U,$J,358.3,30747,0)
+ ;;=11402^^115^1490^3^^^^1
+ ;;^UTILITY(U,$J,358.3,30747,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30747,1,2,0)
+ ;;=2^11402
+ ;;^UTILITY(U,$J,358.3,30747,1,3,0)
+ ;;=3^Exc Ben Lesion Tnk/Arm/Leg,1.1-2.0cm
+ ;;^UTILITY(U,$J,358.3,30748,0)
+ ;;=11403^^115^1490^4^^^^1
+ ;;^UTILITY(U,$J,358.3,30748,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30748,1,2,0)
+ ;;=2^11403
+ ;;^UTILITY(U,$J,358.3,30748,1,3,0)
+ ;;=3^Exc Ben Lesion Tnk/Arm/Leg,2.1-3.0cm
+ ;;^UTILITY(U,$J,358.3,30749,0)
+ ;;=11404^^115^1490^5^^^^1
+ ;;^UTILITY(U,$J,358.3,30749,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30749,1,2,0)
+ ;;=2^11404
+ ;;^UTILITY(U,$J,358.3,30749,1,3,0)
+ ;;=3^Exc Ben Lesion Tnk/Arm/Leg,3.1-4.0cm
+ ;;^UTILITY(U,$J,358.3,30750,0)
+ ;;=11406^^115^1490^6^^^^1
+ ;;^UTILITY(U,$J,358.3,30750,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30750,1,2,0)
+ ;;=2^11406
+ ;;^UTILITY(U,$J,358.3,30750,1,3,0)
+ ;;=3^Exc Ben Lesion Tnk/Arm/Leg > 4.0cm
+ ;;^UTILITY(U,$J,358.3,30751,0)
+ ;;=11600^^115^1491^1^^^^1
+ ;;^UTILITY(U,$J,358.3,30751,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30751,1,2,0)
+ ;;=2^11600
+ ;;^UTILITY(U,$J,358.3,30751,1,3,0)
+ ;;=3^Exc Mal Lesion Tnk/Arm/Leg,0.5cm or <
+ ;;^UTILITY(U,$J,358.3,30752,0)
+ ;;=11601^^115^1491^2^^^^1
+ ;;^UTILITY(U,$J,358.3,30752,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30752,1,2,0)
+ ;;=2^11601
+ ;;^UTILITY(U,$J,358.3,30752,1,3,0)
+ ;;=3^Exc Mal Lesion Tnk/Arm/Leg,0.6-1.0cm
+ ;;^UTILITY(U,$J,358.3,30753,0)
+ ;;=11602^^115^1491^3^^^^1
+ ;;^UTILITY(U,$J,358.3,30753,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30753,1,2,0)
+ ;;=2^11602
+ ;;^UTILITY(U,$J,358.3,30753,1,3,0)
+ ;;=3^Exc Mal Lesion Tnk/Arm/Leg,1.1-2.0cm
+ ;;^UTILITY(U,$J,358.3,30754,0)
+ ;;=11603^^115^1491^4^^^^1
+ ;;^UTILITY(U,$J,358.3,30754,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30754,1,2,0)
+ ;;=2^11603
+ ;;^UTILITY(U,$J,358.3,30754,1,3,0)
+ ;;=3^Exc Mal Lesion Tnk/Arm/Leg,2.1-3.0cm
+ ;;^UTILITY(U,$J,358.3,30755,0)
+ ;;=11604^^115^1491^5^^^^1
+ ;;^UTILITY(U,$J,358.3,30755,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30755,1,2,0)
+ ;;=2^11604
+ ;;^UTILITY(U,$J,358.3,30755,1,3,0)
+ ;;=3^Exc Mal Lesion Tnk/Arm/Leg,3.1-4.0cm
+ ;;^UTILITY(U,$J,358.3,30756,0)
+ ;;=11606^^115^1491^6^^^^1
+ ;;^UTILITY(U,$J,358.3,30756,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30756,1,2,0)
+ ;;=2^11606
+ ;;^UTILITY(U,$J,358.3,30756,1,3,0)
+ ;;=3^Exc Mal Lesion Tnk/Arm/Leg > 4.0cm
+ ;;^UTILITY(U,$J,358.3,30757,0)
+ ;;=10040^^115^1492^1^^^^1
+ ;;^UTILITY(U,$J,358.3,30757,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30757,1,2,0)
+ ;;=2^10040
+ ;;^UTILITY(U,$J,358.3,30757,1,3,0)
+ ;;=3^Acne Surgery
+ ;;^UTILITY(U,$J,358.3,30758,0)
+ ;;=10060^^115^1492^4^^^^1
+ ;;^UTILITY(U,$J,358.3,30758,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30758,1,2,0)
+ ;;=2^10060
+ ;;^UTILITY(U,$J,358.3,30758,1,3,0)
+ ;;=3^I&D of abscess; simple or single
+ ;;^UTILITY(U,$J,358.3,30759,0)
+ ;;=10061^^115^1492^3^^^^1
+ ;;^UTILITY(U,$J,358.3,30759,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30759,1,2,0)
+ ;;=2^10061
+ ;;^UTILITY(U,$J,358.3,30759,1,3,0)
+ ;;=3^I&D of abscess; complicated
+ ;;^UTILITY(U,$J,358.3,30760,0)
+ ;;=10080^^115^1492^6^^^^1
+ ;;^UTILITY(U,$J,358.3,30760,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30760,1,2,0)
+ ;;=2^10080
+ ;;^UTILITY(U,$J,358.3,30760,1,3,0)
+ ;;=3^I&D of pilonidal cyst; simple
+ ;;^UTILITY(U,$J,358.3,30761,0)
+ ;;=10081^^115^1492^5^^^^1
+ ;;^UTILITY(U,$J,358.3,30761,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30761,1,2,0)
+ ;;=2^10081
+ ;;^UTILITY(U,$J,358.3,30761,1,3,0)
+ ;;=3^I&D of pilonidal cyst; complicated
+ ;;^UTILITY(U,$J,358.3,30762,0)
+ ;;=10120^^115^1492^7^^^^1
+ ;;^UTILITY(U,$J,358.3,30762,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30762,1,2,0)
+ ;;=2^10120
+ ;;^UTILITY(U,$J,358.3,30762,1,3,0)
+ ;;=3^Incision & Removal Foreign Body,SQ
+ ;;^UTILITY(U,$J,358.3,30763,0)
+ ;;=10121^^115^1492^9^^^^1
+ ;;^UTILITY(U,$J,358.3,30763,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30763,1,2,0)
+ ;;=2^10121
+ ;;^UTILITY(U,$J,358.3,30763,1,3,0)
+ ;;=3^Removal of Foreign Body, SQ, Complicated
+ ;;^UTILITY(U,$J,358.3,30764,0)
+ ;;=10140^^115^1492^2^^^^1
+ ;;^UTILITY(U,$J,358.3,30764,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30764,1,2,0)
+ ;;=2^10140
+ ;;^UTILITY(U,$J,358.3,30764,1,3,0)
+ ;;=3^Drainage of Hematoma/Fluid
+ ;;^UTILITY(U,$J,358.3,30765,0)
+ ;;=10160^^115^1492^8^^^^1
+ ;;^UTILITY(U,$J,358.3,30765,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30765,1,2,0)
+ ;;=2^10160
+ ;;^UTILITY(U,$J,358.3,30765,1,3,0)
+ ;;=3^Puncture Drainage of Lesion
+ ;;^UTILITY(U,$J,358.3,30766,0)
+ ;;=11200^^115^1493^7^^^^1
+ ;;^UTILITY(U,$J,358.3,30766,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30766,1,2,0)
+ ;;=2^11200
+ ;;^UTILITY(U,$J,358.3,30766,1,3,0)
+ ;;=3^Removal of Skin Tags,</=15 tags
+ ;;^UTILITY(U,$J,358.3,30767,0)
+ ;;=11201^^115^1493^8^^^^1
+ ;;^UTILITY(U,$J,358.3,30767,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30767,1,2,0)
+ ;;=2^11201
+ ;;^UTILITY(U,$J,358.3,30767,1,3,0)
+ ;;=3^Removal of Skin Tags,Ea Add 10 tags
+ ;;^UTILITY(U,$J,358.3,30768,0)
+ ;;=11900^^115^1493^4^^^^1
+ ;;^UTILITY(U,$J,358.3,30768,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30768,1,2,0)
+ ;;=2^11900
+ ;;^UTILITY(U,$J,358.3,30768,1,3,0)
+ ;;=3^INJ,Intralesional;<8 lesions
+ ;;^UTILITY(U,$J,358.3,30769,0)
+ ;;=11901^^115^1493^5^^^^1
+ ;;^UTILITY(U,$J,358.3,30769,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30769,1,2,0)
+ ;;=2^11901
+ ;;^UTILITY(U,$J,358.3,30769,1,3,0)
+ ;;=3^INJ,intralesional;>7 lesions
+ ;;^UTILITY(U,$J,358.3,30770,0)
+ ;;=10030^^115^1493^6^^^^1
+ ;;^UTILITY(U,$J,358.3,30770,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30770,1,2,0)
+ ;;=2^10030
+ ;;^UTILITY(U,$J,358.3,30770,1,3,0)
+ ;;=3^Image Guided Fluid Collect by Cath Percut
+ ;;^UTILITY(U,$J,358.3,30771,0)
+ ;;=11770^^115^1493^3^^^^1
+ ;;^UTILITY(U,$J,358.3,30771,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30771,1,2,0)
+ ;;=2^11770
+ ;;^UTILITY(U,$J,358.3,30771,1,3,0)
+ ;;=3^Exc Pilonidal Cyst/Sinus;Simple
+ ;;^UTILITY(U,$J,358.3,30772,0)
+ ;;=11771^^115^1493^2^^^^1
+ ;;^UTILITY(U,$J,358.3,30772,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30772,1,2,0)
+ ;;=2^11771
+ ;;^UTILITY(U,$J,358.3,30772,1,3,0)
+ ;;=3^Exc Pilonidal Cyst/Sinus;Extensive
+ ;;^UTILITY(U,$J,358.3,30773,0)
+ ;;=11772^^115^1493^1^^^^1
+ ;;^UTILITY(U,$J,358.3,30773,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30773,1,2,0)
+ ;;=2^11772
+ ;;^UTILITY(U,$J,358.3,30773,1,3,0)
+ ;;=3^Exc Pilonidal Cyst/Sinus;Compl
+ ;;^UTILITY(U,$J,358.3,30774,0)
+ ;;=11719^^115^1494^1^^^^1
+ ;;^UTILITY(U,$J,358.3,30774,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30774,1,2,0)
+ ;;=2^11719
+ ;;^UTILITY(U,$J,358.3,30774,1,3,0)
+ ;;=3^Trim nondystrophic nails, any number
+ ;;^UTILITY(U,$J,358.3,30775,0)
+ ;;=11720^^115^1494^2^^^^1
+ ;;^UTILITY(U,$J,358.3,30775,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,30775,1,2,0)
+ ;;=2^11720
+ ;;^UTILITY(U,$J,358.3,30775,1,3,0)
+ ;;=3^Debride of nail(s) any method;1-5
+ ;;^UTILITY(U,$J,358.3,30776,0)
+ ;;=11721^^115^1494^3^^^^1
+ ;;^UTILITY(U,$J,358.3,30776,1,0)
+ ;;=^358.31IA^3^2

@@ -1,128 +1,286 @@
-IBDEI0DS ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0DS ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6011,1,0)
+ ;;^UTILITY(U,$J,358.3,13781,1,4,0)
+ ;;=4^F43.10
+ ;;^UTILITY(U,$J,358.3,13781,2)
+ ;;=^5003570
+ ;;^UTILITY(U,$J,358.3,13782,0)
+ ;;=F43.11^^61^724^45
+ ;;^UTILITY(U,$J,358.3,13782,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6011,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Foot Ulcer
- ;;^UTILITY(U,$J,358.3,6011,1,4,0)
- ;;=4^I70.335
- ;;^UTILITY(U,$J,358.3,6011,2)
- ;;=^5007630
- ;;^UTILITY(U,$J,358.3,6012,0)
- ;;=I70.338^^40^383^69
- ;;^UTILITY(U,$J,358.3,6012,1,0)
+ ;;^UTILITY(U,$J,358.3,13782,1,3,0)
+ ;;=3^PTSD,Acute
+ ;;^UTILITY(U,$J,358.3,13782,1,4,0)
+ ;;=4^F43.11
+ ;;^UTILITY(U,$J,358.3,13782,2)
+ ;;=^5003571
+ ;;^UTILITY(U,$J,358.3,13783,0)
+ ;;=F43.12^^61^724^46
+ ;;^UTILITY(U,$J,358.3,13783,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6012,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Lower Leg Ulcer
- ;;^UTILITY(U,$J,358.3,6012,1,4,0)
- ;;=4^I70.338
- ;;^UTILITY(U,$J,358.3,6012,2)
- ;;=^5007631
- ;;^UTILITY(U,$J,358.3,6013,0)
- ;;=I70.339^^40^383^70
- ;;^UTILITY(U,$J,358.3,6013,1,0)
+ ;;^UTILITY(U,$J,358.3,13783,1,3,0)
+ ;;=3^PTSD,Chronic
+ ;;^UTILITY(U,$J,358.3,13783,1,4,0)
+ ;;=4^F43.12
+ ;;^UTILITY(U,$J,358.3,13783,2)
+ ;;=^5003572
+ ;;^UTILITY(U,$J,358.3,13784,0)
+ ;;=I25.119^^61^724^5
+ ;;^UTILITY(U,$J,358.3,13784,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6013,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Ulcer,Unspec Site
- ;;^UTILITY(U,$J,358.3,6013,1,4,0)
- ;;=4^I70.339
- ;;^UTILITY(U,$J,358.3,6013,2)
- ;;=^5007632
- ;;^UTILITY(U,$J,358.3,6014,0)
- ;;=I70.341^^40^383^62
- ;;^UTILITY(U,$J,358.3,6014,1,0)
+ ;;^UTILITY(U,$J,358.3,13784,1,3,0)
+ ;;=3^Athscl Hrt Dis of Native Cor Art w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,13784,1,4,0)
+ ;;=4^I25.119
+ ;;^UTILITY(U,$J,358.3,13784,2)
+ ;;=^5007111
+ ;;^UTILITY(U,$J,358.3,13785,0)
+ ;;=I25.10^^61^724^7
+ ;;^UTILITY(U,$J,358.3,13785,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6014,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Thigh Ulcer
- ;;^UTILITY(U,$J,358.3,6014,1,4,0)
- ;;=4^I70.341
- ;;^UTILITY(U,$J,358.3,6014,2)
- ;;=^5007633
- ;;^UTILITY(U,$J,358.3,6015,0)
- ;;=I70.342^^40^383^58
- ;;^UTILITY(U,$J,358.3,6015,1,0)
+ ;;^UTILITY(U,$J,358.3,13785,1,3,0)
+ ;;=3^Athscl Hrt Dis of Native Cor Art w/o Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,13785,1,4,0)
+ ;;=4^I25.10
+ ;;^UTILITY(U,$J,358.3,13785,2)
+ ;;=^5007107
+ ;;^UTILITY(U,$J,358.3,13786,0)
+ ;;=I25.110^^61^724^6
+ ;;^UTILITY(U,$J,358.3,13786,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6015,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Calf Ulcer
- ;;^UTILITY(U,$J,358.3,6015,1,4,0)
- ;;=4^I70.342
- ;;^UTILITY(U,$J,358.3,6015,2)
- ;;=^5007634
- ;;^UTILITY(U,$J,358.3,6016,0)
- ;;=I70.343^^40^383^57
- ;;^UTILITY(U,$J,358.3,6016,1,0)
+ ;;^UTILITY(U,$J,358.3,13786,1,3,0)
+ ;;=3^Athscl Hrt Dis of Native Cor Art w/ Unstable Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,13786,1,4,0)
+ ;;=4^I25.110
+ ;;^UTILITY(U,$J,358.3,13786,2)
+ ;;=^5007108
+ ;;^UTILITY(U,$J,358.3,13787,0)
+ ;;=F17.219^^61^724^39
+ ;;^UTILITY(U,$J,358.3,13787,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6016,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Ankle Ulcer
- ;;^UTILITY(U,$J,358.3,6016,1,4,0)
- ;;=4^I70.343
- ;;^UTILITY(U,$J,358.3,6016,2)
- ;;=^5007635
- ;;^UTILITY(U,$J,358.3,6017,0)
- ;;=I70.344^^40^383^60
- ;;^UTILITY(U,$J,358.3,6017,1,0)
+ ;;^UTILITY(U,$J,358.3,13787,1,3,0)
+ ;;=3^Nicotine Dependence,Cigarettes
+ ;;^UTILITY(U,$J,358.3,13787,1,4,0)
+ ;;=4^F17.219
+ ;;^UTILITY(U,$J,358.3,13787,2)
+ ;;=^5003369
+ ;;^UTILITY(U,$J,358.3,13788,0)
+ ;;=F17.299^^61^724^40
+ ;;^UTILITY(U,$J,358.3,13788,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6017,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Heel/Midfoot Ulcer
- ;;^UTILITY(U,$J,358.3,6017,1,4,0)
- ;;=4^I70.344
- ;;^UTILITY(U,$J,358.3,6017,2)
- ;;=^5007636
- ;;^UTILITY(U,$J,358.3,6018,0)
- ;;=I70.345^^40^383^59
- ;;^UTILITY(U,$J,358.3,6018,1,0)
+ ;;^UTILITY(U,$J,358.3,13788,1,3,0)
+ ;;=3^Nicotine Dependence,E-Cigarettes
+ ;;^UTILITY(U,$J,358.3,13788,1,4,0)
+ ;;=4^F17.299
+ ;;^UTILITY(U,$J,358.3,13788,2)
+ ;;=^5003379
+ ;;^UTILITY(U,$J,358.3,13789,0)
+ ;;=Z51.5^^61^724^48
+ ;;^UTILITY(U,$J,358.3,13789,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6018,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Foot Ulcer
- ;;^UTILITY(U,$J,358.3,6018,1,4,0)
- ;;=4^I70.345
- ;;^UTILITY(U,$J,358.3,6018,2)
- ;;=^5007637
- ;;^UTILITY(U,$J,358.3,6019,0)
- ;;=I70.348^^40^383^61
- ;;^UTILITY(U,$J,358.3,6019,1,0)
+ ;;^UTILITY(U,$J,358.3,13789,1,3,0)
+ ;;=3^Palliative Care Encounter
+ ;;^UTILITY(U,$J,358.3,13789,1,4,0)
+ ;;=4^Z51.5
+ ;;^UTILITY(U,$J,358.3,13789,2)
+ ;;=^5063063
+ ;;^UTILITY(U,$J,358.3,13790,0)
+ ;;=Z51.81^^61^725^17
+ ;;^UTILITY(U,$J,358.3,13790,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6019,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Lower Leg Ulcer
- ;;^UTILITY(U,$J,358.3,6019,1,4,0)
- ;;=4^I70.348
- ;;^UTILITY(U,$J,358.3,6019,2)
- ;;=^5007638
- ;;^UTILITY(U,$J,358.3,6020,0)
- ;;=I70.349^^40^383^63
- ;;^UTILITY(U,$J,358.3,6020,1,0)
+ ;;^UTILITY(U,$J,358.3,13790,1,3,0)
+ ;;=3^Therapeutic Drug Level Monitoring
+ ;;^UTILITY(U,$J,358.3,13790,1,4,0)
+ ;;=4^Z51.81
+ ;;^UTILITY(U,$J,358.3,13790,2)
+ ;;=^5063064
+ ;;^UTILITY(U,$J,358.3,13791,0)
+ ;;=Z02.79^^61^725^11
+ ;;^UTILITY(U,$J,358.3,13791,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6020,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Ulcer,Unspec Site
- ;;^UTILITY(U,$J,358.3,6020,1,4,0)
- ;;=4^I70.349
- ;;^UTILITY(U,$J,358.3,6020,2)
- ;;=^5007639
- ;;^UTILITY(U,$J,358.3,6021,0)
- ;;=I70.431^^40^383^8
- ;;^UTILITY(U,$J,358.3,6021,1,0)
+ ;;^UTILITY(U,$J,358.3,13791,1,3,0)
+ ;;=3^Issue of Medical Certificate NEC
+ ;;^UTILITY(U,$J,358.3,13791,1,4,0)
+ ;;=4^Z02.79
+ ;;^UTILITY(U,$J,358.3,13791,2)
+ ;;=^5062641
+ ;;^UTILITY(U,$J,358.3,13792,0)
+ ;;=Z76.0^^61^725^12
+ ;;^UTILITY(U,$J,358.3,13792,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6021,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Right Leg w/ Thigh Ulcer
- ;;^UTILITY(U,$J,358.3,6021,1,4,0)
- ;;=4^I70.431
- ;;^UTILITY(U,$J,358.3,6021,2)
- ;;=^5007664
- ;;^UTILITY(U,$J,358.3,6022,0)
- ;;=I70.432^^40^383^9
- ;;^UTILITY(U,$J,358.3,6022,1,0)
+ ;;^UTILITY(U,$J,358.3,13792,1,3,0)
+ ;;=3^Issue of Repeat Prescription
+ ;;^UTILITY(U,$J,358.3,13792,1,4,0)
+ ;;=4^Z76.0
+ ;;^UTILITY(U,$J,358.3,13792,2)
+ ;;=^5063297
+ ;;^UTILITY(U,$J,358.3,13793,0)
+ ;;=Z04.9^^61^725^3
+ ;;^UTILITY(U,$J,358.3,13793,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6022,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Right Leg w/ Calf Ulcer
- ;;^UTILITY(U,$J,358.3,6022,1,4,0)
- ;;=4^I70.432
- ;;^UTILITY(U,$J,358.3,6022,2)
- ;;=^5007665
- ;;^UTILITY(U,$J,358.3,6023,0)
- ;;=I70.433^^40^383^10
- ;;^UTILITY(U,$J,358.3,6023,1,0)
+ ;;^UTILITY(U,$J,358.3,13793,1,3,0)
+ ;;=3^Exam & Observation for Unsp Reason
+ ;;^UTILITY(U,$J,358.3,13793,1,4,0)
+ ;;=4^Z04.9
+ ;;^UTILITY(U,$J,358.3,13793,2)
+ ;;=^5062666
+ ;;^UTILITY(U,$J,358.3,13794,0)
+ ;;=Z02.2^^61^725^4
+ ;;^UTILITY(U,$J,358.3,13794,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6023,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Right Leg w/ Ankle Ulcer
+ ;;^UTILITY(U,$J,358.3,13794,1,3,0)
+ ;;=3^Exam for Admission to Residential Institution
+ ;;^UTILITY(U,$J,358.3,13794,1,4,0)
+ ;;=4^Z02.2
+ ;;^UTILITY(U,$J,358.3,13794,2)
+ ;;=^5062635
+ ;;^UTILITY(U,$J,358.3,13795,0)
+ ;;=Z02.4^^61^725^5
+ ;;^UTILITY(U,$J,358.3,13795,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13795,1,3,0)
+ ;;=3^Exam for Driving License
+ ;;^UTILITY(U,$J,358.3,13795,1,4,0)
+ ;;=4^Z02.4
+ ;;^UTILITY(U,$J,358.3,13795,2)
+ ;;=^5062637
+ ;;^UTILITY(U,$J,358.3,13796,0)
+ ;;=Z00.5^^61^725^7
+ ;;^UTILITY(U,$J,358.3,13796,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13796,1,3,0)
+ ;;=3^Exam of Potential Donor of Organ/Tissue
+ ;;^UTILITY(U,$J,358.3,13796,1,4,0)
+ ;;=4^Z00.5
+ ;;^UTILITY(U,$J,358.3,13796,2)
+ ;;=^5062607
+ ;;^UTILITY(U,$J,358.3,13797,0)
+ ;;=Z02.3^^61^725^6
+ ;;^UTILITY(U,$J,358.3,13797,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13797,1,3,0)
+ ;;=3^Exam for Recruitment to Armed Forces
+ ;;^UTILITY(U,$J,358.3,13797,1,4,0)
+ ;;=4^Z02.3
+ ;;^UTILITY(U,$J,358.3,13797,2)
+ ;;=^5062636
+ ;;^UTILITY(U,$J,358.3,13798,0)
+ ;;=Z02.89^^61^725^1
+ ;;^UTILITY(U,$J,358.3,13798,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13798,1,3,0)
+ ;;=3^Admin Exam NEC
+ ;;^UTILITY(U,$J,358.3,13798,1,4,0)
+ ;;=4^Z02.89
+ ;;^UTILITY(U,$J,358.3,13798,2)
+ ;;=^5062645
+ ;;^UTILITY(U,$J,358.3,13799,0)
+ ;;=Z00.8^^61^725^8
+ ;;^UTILITY(U,$J,358.3,13799,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13799,1,3,0)
+ ;;=3^General Exam NEC
+ ;;^UTILITY(U,$J,358.3,13799,1,4,0)
+ ;;=4^Z00.8
+ ;;^UTILITY(U,$J,358.3,13799,2)
+ ;;=^5062611
+ ;;^UTILITY(U,$J,358.3,13800,0)
+ ;;=Z02.1^^61^725^14
+ ;;^UTILITY(U,$J,358.3,13800,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13800,1,3,0)
+ ;;=3^Pre-Employment Exam
+ ;;^UTILITY(U,$J,358.3,13800,1,4,0)
+ ;;=4^Z02.1
+ ;;^UTILITY(U,$J,358.3,13800,2)
+ ;;=^5062634
+ ;;^UTILITY(U,$J,358.3,13801,0)
+ ;;=Z01.810^^61^725^2
+ ;;^UTILITY(U,$J,358.3,13801,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13801,1,3,0)
+ ;;=3^Cardiovascular Preprocedural Exam
+ ;;^UTILITY(U,$J,358.3,13801,1,4,0)
+ ;;=4^Z01.810
+ ;;^UTILITY(U,$J,358.3,13801,2)
+ ;;=^5062625
+ ;;^UTILITY(U,$J,358.3,13802,0)
+ ;;=Z01.811^^61^725^16
+ ;;^UTILITY(U,$J,358.3,13802,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13802,1,3,0)
+ ;;=3^Respiratory Preprocedural Exam
+ ;;^UTILITY(U,$J,358.3,13802,1,4,0)
+ ;;=4^Z01.811
+ ;;^UTILITY(U,$J,358.3,13802,2)
+ ;;=^5062626
+ ;;^UTILITY(U,$J,358.3,13803,0)
+ ;;=Z01.812^^61^725^13
+ ;;^UTILITY(U,$J,358.3,13803,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13803,1,3,0)
+ ;;=3^Lab Preprocedural Exam
+ ;;^UTILITY(U,$J,358.3,13803,1,4,0)
+ ;;=4^Z01.812
+ ;;^UTILITY(U,$J,358.3,13803,2)
+ ;;=^5062627
+ ;;^UTILITY(U,$J,358.3,13804,0)
+ ;;=Z01.818^^61^725^15
+ ;;^UTILITY(U,$J,358.3,13804,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13804,1,3,0)
+ ;;=3^Preprocedural Exam NEC
+ ;;^UTILITY(U,$J,358.3,13804,1,4,0)
+ ;;=4^Z01.818
+ ;;^UTILITY(U,$J,358.3,13804,2)
+ ;;=^5062628
+ ;;^UTILITY(U,$J,358.3,13805,0)
+ ;;=Z71.0^^61^725^9
+ ;;^UTILITY(U,$J,358.3,13805,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13805,1,3,0)
+ ;;=3^Hlth Service to Consult on Behalf of Another
+ ;;^UTILITY(U,$J,358.3,13805,1,4,0)
+ ;;=4^Z71.0
+ ;;^UTILITY(U,$J,358.3,13805,2)
+ ;;=^5063242
+ ;;^UTILITY(U,$J,358.3,13806,0)
+ ;;=Z59.8^^61^725^10
+ ;;^UTILITY(U,$J,358.3,13806,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13806,1,3,0)
+ ;;=3^Housing/Economic Circumstance Problems
+ ;;^UTILITY(U,$J,358.3,13806,1,4,0)
+ ;;=4^Z59.8
+ ;;^UTILITY(U,$J,358.3,13806,2)
+ ;;=^5063137
+ ;;^UTILITY(U,$J,358.3,13807,0)
+ ;;=I20.0^^61^726^14
+ ;;^UTILITY(U,$J,358.3,13807,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13807,1,3,0)
+ ;;=3^Unstable Angina
+ ;;^UTILITY(U,$J,358.3,13807,1,4,0)
+ ;;=4^I20.0
+ ;;^UTILITY(U,$J,358.3,13807,2)
+ ;;=^5007076
+ ;;^UTILITY(U,$J,358.3,13808,0)
+ ;;=I25.110^^61^726^7
+ ;;^UTILITY(U,$J,358.3,13808,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13808,1,3,0)
+ ;;=3^Athscl Hrt Dis of Native Cor Art w/ Unstable Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,13808,1,4,0)
+ ;;=4^I25.110
+ ;;^UTILITY(U,$J,358.3,13808,2)
+ ;;=^5007108
+ ;;^UTILITY(U,$J,358.3,13809,0)
+ ;;=I25.700^^61^726^12
+ ;;^UTILITY(U,$J,358.3,13809,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13809,1,3,0)
+ ;;=3^Athscl of CABG,Unspec w/ Unstable Angina Pectoris
+ ;;^UTILITY(U,$J,358.3,13809,1,4,0)
+ ;;=4^I25.700

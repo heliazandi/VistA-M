@@ -1,124 +1,288 @@
-IBDEI0YE ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0YE ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15846,1,3,0)
- ;;=3^Asymptomatic Varicose Veins of Bilateral Lower Extrem
- ;;^UTILITY(U,$J,358.3,15846,1,4,0)
- ;;=4^I83.93
- ;;^UTILITY(U,$J,358.3,15846,2)
- ;;=^5008022
- ;;^UTILITY(U,$J,358.3,15847,0)
- ;;=I83.92^^85^827^2
- ;;^UTILITY(U,$J,358.3,15847,1,0)
+ ;;^UTILITY(U,$J,358.3,34616,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15847,1,3,0)
- ;;=3^Asymptomatic Varicose Veins of Left Lower Extrem
- ;;^UTILITY(U,$J,358.3,15847,1,4,0)
- ;;=4^I83.92
- ;;^UTILITY(U,$J,358.3,15847,2)
- ;;=^5008021
- ;;^UTILITY(U,$J,358.3,15848,0)
- ;;=G97.32^^85^828^35
- ;;^UTILITY(U,$J,358.3,15848,1,0)
+ ;;^UTILITY(U,$J,358.3,34616,1,3,0)
+ ;;=3^Chr Pulmonary Blastomycosis
+ ;;^UTILITY(U,$J,358.3,34616,1,4,0)
+ ;;=4^B40.1
+ ;;^UTILITY(U,$J,358.3,34616,2)
+ ;;=^5000640
+ ;;^UTILITY(U,$J,358.3,34617,0)
+ ;;=J32.9^^125^1641^52
+ ;;^UTILITY(U,$J,358.3,34617,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15848,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Nervous System Organ/Sturcture
- ;;^UTILITY(U,$J,358.3,15848,1,4,0)
- ;;=4^G97.32
- ;;^UTILITY(U,$J,358.3,15848,2)
- ;;=^5004205
- ;;^UTILITY(U,$J,358.3,15849,0)
- ;;=D78.02^^85^828^38
- ;;^UTILITY(U,$J,358.3,15849,1,0)
+ ;;^UTILITY(U,$J,358.3,34617,1,3,0)
+ ;;=3^Chr Sinusitis,Unspec
+ ;;^UTILITY(U,$J,358.3,34617,1,4,0)
+ ;;=4^J32.9
+ ;;^UTILITY(U,$J,358.3,34617,2)
+ ;;=^5008207
+ ;;^UTILITY(U,$J,358.3,34618,0)
+ ;;=B45.9^^125^1641^54
+ ;;^UTILITY(U,$J,358.3,34618,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15849,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Spleen
- ;;^UTILITY(U,$J,358.3,15849,1,4,0)
- ;;=4^D78.02
- ;;^UTILITY(U,$J,358.3,15849,2)
- ;;=^5002398
- ;;^UTILITY(U,$J,358.3,15850,0)
- ;;=E36.01^^85^828^29
- ;;^UTILITY(U,$J,358.3,15850,1,0)
+ ;;^UTILITY(U,$J,358.3,34618,1,3,0)
+ ;;=3^Cryptococcosis,Unspec
+ ;;^UTILITY(U,$J,358.3,34618,1,4,0)
+ ;;=4^B45.9
+ ;;^UTILITY(U,$J,358.3,34618,2)
+ ;;=^5000675
+ ;;^UTILITY(U,$J,358.3,34619,0)
+ ;;=B45.2^^125^1641^55
+ ;;^UTILITY(U,$J,358.3,34619,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15850,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Endocrine System Organ/Structure
- ;;^UTILITY(U,$J,358.3,15850,1,4,0)
- ;;=4^E36.01
- ;;^UTILITY(U,$J,358.3,15850,2)
- ;;=^5002779
- ;;^UTILITY(U,$J,358.3,15851,0)
- ;;=I97.711^^85^828^12
- ;;^UTILITY(U,$J,358.3,15851,1,0)
+ ;;^UTILITY(U,$J,358.3,34619,1,3,0)
+ ;;=3^Cutaneous Cryptococcosis
+ ;;^UTILITY(U,$J,358.3,34619,1,4,0)
+ ;;=4^B45.2
+ ;;^UTILITY(U,$J,358.3,34619,2)
+ ;;=^5000671
+ ;;^UTILITY(U,$J,358.3,34620,0)
+ ;;=B44.7^^125^1641^56
+ ;;^UTILITY(U,$J,358.3,34620,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15851,1,3,0)
- ;;=3^Intraoperative Cardiac Arrest During Surgery
- ;;^UTILITY(U,$J,358.3,15851,1,4,0)
- ;;=4^I97.711
- ;;^UTILITY(U,$J,358.3,15851,2)
- ;;=^5008104
- ;;^UTILITY(U,$J,358.3,15852,0)
- ;;=I97.791^^85^828^13
- ;;^UTILITY(U,$J,358.3,15852,1,0)
+ ;;^UTILITY(U,$J,358.3,34620,1,3,0)
+ ;;=3^Disseminated Aspergillosis
+ ;;^UTILITY(U,$J,358.3,34620,1,4,0)
+ ;;=4^B44.7
+ ;;^UTILITY(U,$J,358.3,34620,2)
+ ;;=^5000666
+ ;;^UTILITY(U,$J,358.3,34621,0)
+ ;;=B45.7^^125^1641^57
+ ;;^UTILITY(U,$J,358.3,34621,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15852,1,3,0)
- ;;=3^Intraoperative Cardiac Functional Disturbance During Surgery
- ;;^UTILITY(U,$J,358.3,15852,1,4,0)
- ;;=4^I97.791
- ;;^UTILITY(U,$J,358.3,15852,2)
- ;;=^5008106
- ;;^UTILITY(U,$J,358.3,15853,0)
- ;;=I97.411^^85^828^25
- ;;^UTILITY(U,$J,358.3,15853,1,0)
+ ;;^UTILITY(U,$J,358.3,34621,1,3,0)
+ ;;=3^Disseminated Cryptococcosis
+ ;;^UTILITY(U,$J,358.3,34621,1,4,0)
+ ;;=4^B45.7
+ ;;^UTILITY(U,$J,358.3,34621,2)
+ ;;=^5000673
+ ;;^UTILITY(U,$J,358.3,34622,0)
+ ;;=B39.9^^125^1641^59
+ ;;^UTILITY(U,$J,358.3,34622,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15853,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Circ System During Cardiac Bypass
- ;;^UTILITY(U,$J,358.3,15853,1,4,0)
- ;;=4^I97.411
- ;;^UTILITY(U,$J,358.3,15853,2)
- ;;=^5008094
- ;;^UTILITY(U,$J,358.3,15854,0)
- ;;=I97.410^^85^828^26
- ;;^UTILITY(U,$J,358.3,15854,1,0)
+ ;;^UTILITY(U,$J,358.3,34622,1,3,0)
+ ;;=3^Histoplasmosis,Unspec
+ ;;^UTILITY(U,$J,358.3,34622,1,4,0)
+ ;;=4^B39.9
+ ;;^UTILITY(U,$J,358.3,34622,2)
+ ;;=^5000638
+ ;;^UTILITY(U,$J,358.3,34623,0)
+ ;;=J18.2^^125^1641^60
+ ;;^UTILITY(U,$J,358.3,34623,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15854,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Circ System During Cardiac Cath
- ;;^UTILITY(U,$J,358.3,15854,1,4,0)
- ;;=4^I97.410
- ;;^UTILITY(U,$J,358.3,15854,2)
- ;;=^5008093
- ;;^UTILITY(U,$J,358.3,15855,0)
- ;;=I97.42^^85^828^27
- ;;^UTILITY(U,$J,358.3,15855,1,0)
+ ;;^UTILITY(U,$J,358.3,34623,1,3,0)
+ ;;=3^Hypostatic Pneumonia,Unspec Organism
+ ;;^UTILITY(U,$J,358.3,34623,1,4,0)
+ ;;=4^J18.2
+ ;;^UTILITY(U,$J,358.3,34623,2)
+ ;;=^5008184
+ ;;^UTILITY(U,$J,358.3,34624,0)
+ ;;=B44.0^^125^1641^61
+ ;;^UTILITY(U,$J,358.3,34624,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15855,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Circ System
- ;;^UTILITY(U,$J,358.3,15855,1,4,0)
- ;;=4^I97.42
- ;;^UTILITY(U,$J,358.3,15855,2)
- ;;=^5008096
- ;;^UTILITY(U,$J,358.3,15856,0)
- ;;=K91.62^^85^828^28
- ;;^UTILITY(U,$J,358.3,15856,1,0)
+ ;;^UTILITY(U,$J,358.3,34624,1,3,0)
+ ;;=3^Invasive Pulmonary Aspergillosis
+ ;;^UTILITY(U,$J,358.3,34624,1,4,0)
+ ;;=4^B44.0
+ ;;^UTILITY(U,$J,358.3,34624,2)
+ ;;=^5000663
+ ;;^UTILITY(U,$J,358.3,34625,0)
+ ;;=J18.1^^125^1641^62
+ ;;^UTILITY(U,$J,358.3,34625,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15856,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Digestive System
- ;;^UTILITY(U,$J,358.3,15856,1,4,0)
- ;;=4^K91.62
- ;;^UTILITY(U,$J,358.3,15856,2)
- ;;=^5008904
- ;;^UTILITY(U,$J,358.3,15857,0)
- ;;=H95.22^^85^828^30
- ;;^UTILITY(U,$J,358.3,15857,1,0)
+ ;;^UTILITY(U,$J,358.3,34625,1,3,0)
+ ;;=3^Lobar Pneumonia,Unspec Organism
+ ;;^UTILITY(U,$J,358.3,34625,1,4,0)
+ ;;=4^J18.1
+ ;;^UTILITY(U,$J,358.3,34625,2)
+ ;;=^5008183
+ ;;^UTILITY(U,$J,358.3,34626,0)
+ ;;=A19.9^^125^1641^63
+ ;;^UTILITY(U,$J,358.3,34626,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15857,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Ear/Mastoid
- ;;^UTILITY(U,$J,358.3,15857,1,4,0)
- ;;=4^H95.22
- ;;^UTILITY(U,$J,358.3,15857,2)
- ;;=^5007027
- ;;^UTILITY(U,$J,358.3,15858,0)
- ;;=E36.02^^85^828^31
- ;;^UTILITY(U,$J,358.3,15858,1,0)
+ ;;^UTILITY(U,$J,358.3,34626,1,3,0)
+ ;;=3^Miliary Tuberculosis,Unspec
+ ;;^UTILITY(U,$J,358.3,34626,1,4,0)
+ ;;=4^A19.9
+ ;;^UTILITY(U,$J,358.3,34626,2)
+ ;;=^5000104
+ ;;^UTILITY(U,$J,358.3,34627,0)
+ ;;=R76.11^^125^1641^82
+ ;;^UTILITY(U,$J,358.3,34627,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34627,1,3,0)
+ ;;=3^Reaction to Skin Test w/o Active TB
+ ;;^UTILITY(U,$J,358.3,34627,1,4,0)
+ ;;=4^R76.11
+ ;;^UTILITY(U,$J,358.3,34627,2)
+ ;;=^5019570
+ ;;^UTILITY(U,$J,358.3,34628,0)
+ ;;=B45.3^^125^1641^67
+ ;;^UTILITY(U,$J,358.3,34628,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34628,1,3,0)
+ ;;=3^Osseous Cryptococcosis
+ ;;^UTILITY(U,$J,358.3,34628,1,4,0)
+ ;;=4^B45.3
+ ;;^UTILITY(U,$J,358.3,34628,2)
+ ;;=^5000672
+ ;;^UTILITY(U,$J,358.3,34629,0)
+ ;;=B44.89^^125^1641^44
+ ;;^UTILITY(U,$J,358.3,34629,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34629,1,3,0)
+ ;;=3^Aspergillosis NEC
+ ;;^UTILITY(U,$J,358.3,34629,1,4,0)
+ ;;=4^B44.89
+ ;;^UTILITY(U,$J,358.3,34629,2)
+ ;;=^5000667
+ ;;^UTILITY(U,$J,358.3,34630,0)
+ ;;=B45.8^^125^1641^53
+ ;;^UTILITY(U,$J,358.3,34630,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34630,1,3,0)
+ ;;=3^Cryptococcosis NEC
+ ;;^UTILITY(U,$J,358.3,34630,1,4,0)
+ ;;=4^B45.8
+ ;;^UTILITY(U,$J,358.3,34630,2)
+ ;;=^5000674
+ ;;^UTILITY(U,$J,358.3,34631,0)
+ ;;=H60.593^^125^1641^64
+ ;;^UTILITY(U,$J,358.3,34631,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34631,1,3,0)
+ ;;=3^Noninfective AC Otitis Externa,Bilateral NEC
+ ;;^UTILITY(U,$J,358.3,34631,1,4,0)
+ ;;=4^H60.593
+ ;;^UTILITY(U,$J,358.3,34631,2)
+ ;;=^5006491
+ ;;^UTILITY(U,$J,358.3,34632,0)
+ ;;=H60.592^^125^1641^65
+ ;;^UTILITY(U,$J,358.3,34632,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34632,1,3,0)
+ ;;=3^Noninfective AC Otitis Externa,Left Ear NEC
+ ;;^UTILITY(U,$J,358.3,34632,1,4,0)
+ ;;=4^H60.592
+ ;;^UTILITY(U,$J,358.3,34632,2)
+ ;;=^5133527
+ ;;^UTILITY(U,$J,358.3,34633,0)
+ ;;=H60.591^^125^1641^66
+ ;;^UTILITY(U,$J,358.3,34633,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34633,1,3,0)
+ ;;=3^Noninfective AC Otitis Externa,Right Ear NEC
+ ;;^UTILITY(U,$J,358.3,34633,1,4,0)
+ ;;=4^H60.591
+ ;;^UTILITY(U,$J,358.3,34633,2)
+ ;;=^5006490
+ ;;^UTILITY(U,$J,358.3,34634,0)
+ ;;=J18.8^^125^1641^73
+ ;;^UTILITY(U,$J,358.3,34634,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34634,1,3,0)
+ ;;=3^Pneumonia,Unspec Organism NEC
+ ;;^UTILITY(U,$J,358.3,34634,1,4,0)
+ ;;=4^J18.8
+ ;;^UTILITY(U,$J,358.3,34634,2)
+ ;;=^5008185
+ ;;^UTILITY(U,$J,358.3,34635,0)
+ ;;=B44.1^^125^1641^76
+ ;;^UTILITY(U,$J,358.3,34635,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34635,1,3,0)
+ ;;=3^Pulmonary Aspergillosis NEC
+ ;;^UTILITY(U,$J,358.3,34635,1,4,0)
+ ;;=4^B44.1
+ ;;^UTILITY(U,$J,358.3,34635,2)
+ ;;=^5000664
+ ;;^UTILITY(U,$J,358.3,34636,0)
+ ;;=B48.4^^125^1641^68
+ ;;^UTILITY(U,$J,358.3,34636,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34636,1,3,0)
+ ;;=3^Penicillosis
+ ;;^UTILITY(U,$J,358.3,34636,1,4,0)
+ ;;=4^B48.4
+ ;;^UTILITY(U,$J,358.3,34636,2)
+ ;;=^5000688
+ ;;^UTILITY(U,$J,358.3,34637,0)
+ ;;=J14.^^125^1641^69
+ ;;^UTILITY(U,$J,358.3,34637,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34637,1,3,0)
+ ;;=3^Pneumonia d/t Hemophilus Influenzae
+ ;;^UTILITY(U,$J,358.3,34637,1,4,0)
+ ;;=4^J14.
+ ;;^UTILITY(U,$J,358.3,34637,2)
+ ;;=^5008171
+ ;;^UTILITY(U,$J,358.3,34638,0)
+ ;;=J13.^^125^1641^70
+ ;;^UTILITY(U,$J,358.3,34638,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34638,1,3,0)
+ ;;=3^Pneumonia d/t Streptococcus Pneumoniae
+ ;;^UTILITY(U,$J,358.3,34638,1,4,0)
+ ;;=4^J13.
+ ;;^UTILITY(U,$J,358.3,34638,2)
+ ;;=^5008170
+ ;;^UTILITY(U,$J,358.3,34639,0)
+ ;;=J17.^^125^1641^71
+ ;;^UTILITY(U,$J,358.3,34639,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34639,1,3,0)
+ ;;=3^Pneumonia in Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,34639,1,4,0)
+ ;;=4^J17.
+ ;;^UTILITY(U,$J,358.3,34639,2)
+ ;;=^5008181
+ ;;^UTILITY(U,$J,358.3,34640,0)
+ ;;=J18.9^^125^1641^72
+ ;;^UTILITY(U,$J,358.3,34640,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34640,1,3,0)
+ ;;=3^Pneumonia,Unspec Organism
+ ;;^UTILITY(U,$J,358.3,34640,1,4,0)
+ ;;=4^J18.9
+ ;;^UTILITY(U,$J,358.3,34640,2)
+ ;;=^95632
+ ;;^UTILITY(U,$J,358.3,34641,0)
+ ;;=A15.7^^125^1641^74
+ ;;^UTILITY(U,$J,358.3,34641,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34641,1,3,0)
+ ;;=3^Primary Respiratory TB
+ ;;^UTILITY(U,$J,358.3,34641,1,4,0)
+ ;;=4^A15.7
+ ;;^UTILITY(U,$J,358.3,34641,2)
+ ;;=^5000065
+ ;;^UTILITY(U,$J,358.3,34642,0)
+ ;;=A42.0^^125^1641^75
+ ;;^UTILITY(U,$J,358.3,34642,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34642,1,3,0)
+ ;;=3^Pulmonary Actinomycosis
+ ;;^UTILITY(U,$J,358.3,34642,1,4,0)
+ ;;=4^A42.0
+ ;;^UTILITY(U,$J,358.3,34642,2)
+ ;;=^5000215
+ ;;^UTILITY(U,$J,358.3,34643,0)
+ ;;=B40.2^^125^1641^77
+ ;;^UTILITY(U,$J,358.3,34643,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34643,1,3,0)
+ ;;=3^Pulmonary Blastomycosis,Unspec
+ ;;^UTILITY(U,$J,358.3,34643,1,4,0)
+ ;;=4^B40.2
+ ;;^UTILITY(U,$J,358.3,34643,2)
+ ;;=^5000641
+ ;;^UTILITY(U,$J,358.3,34644,0)
+ ;;=B38.2^^125^1641^78
+ ;;^UTILITY(U,$J,358.3,34644,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,34644,1,3,0)
+ ;;=3^Pulmonary Coccidiodomycosis,Unspec

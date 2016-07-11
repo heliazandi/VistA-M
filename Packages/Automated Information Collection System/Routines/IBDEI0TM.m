@@ -1,134 +1,260 @@
-IBDEI0TM ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0TM ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,13623,2)
- ;;=^5002122
- ;;^UTILITY(U,$J,358.3,13624,0)
- ;;=H35.81^^80^763^82
- ;;^UTILITY(U,$J,358.3,13624,1,0)
+ ;;^UTILITY(U,$J,358.3,29802,2)
+ ;;=^5013347
+ ;;^UTILITY(U,$J,358.3,29803,0)
+ ;;=M79.651^^111^1433^29
+ ;;^UTILITY(U,$J,358.3,29803,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13624,1,3,0)
- ;;=3^Retinal Edema
- ;;^UTILITY(U,$J,358.3,13624,1,4,0)
- ;;=4^H35.81
- ;;^UTILITY(U,$J,358.3,13624,2)
- ;;=^5005715
- ;;^UTILITY(U,$J,358.3,13625,0)
- ;;=H44.21^^80^763^38
- ;;^UTILITY(U,$J,358.3,13625,1,0)
+ ;;^UTILITY(U,$J,358.3,29803,1,3,0)
+ ;;=3^Pain in right thigh
+ ;;^UTILITY(U,$J,358.3,29803,1,4,0)
+ ;;=4^M79.651
+ ;;^UTILITY(U,$J,358.3,29803,2)
+ ;;=^5013344
+ ;;^UTILITY(U,$J,358.3,29804,0)
+ ;;=M79.674^^111^1433^30
+ ;;^UTILITY(U,$J,358.3,29804,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13625,1,3,0)
- ;;=3^Degenerative Myopia,Right Eye
- ;;^UTILITY(U,$J,358.3,13625,1,4,0)
- ;;=4^H44.21
- ;;^UTILITY(U,$J,358.3,13625,2)
- ;;=^5005987
- ;;^UTILITY(U,$J,358.3,13626,0)
- ;;=H44.22^^80^763^37
- ;;^UTILITY(U,$J,358.3,13626,1,0)
+ ;;^UTILITY(U,$J,358.3,29804,1,3,0)
+ ;;=3^Pain in right toe(s)
+ ;;^UTILITY(U,$J,358.3,29804,1,4,0)
+ ;;=4^M79.674
+ ;;^UTILITY(U,$J,358.3,29804,2)
+ ;;=^5013353
+ ;;^UTILITY(U,$J,358.3,29805,0)
+ ;;=M84.464A^^111^1433^31
+ ;;^UTILITY(U,$J,358.3,29805,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13626,1,3,0)
- ;;=3^Degenerative Myopia,Left Eye
- ;;^UTILITY(U,$J,358.3,13626,1,4,0)
- ;;=4^H44.22
- ;;^UTILITY(U,$J,358.3,13626,2)
- ;;=^5005988
- ;;^UTILITY(U,$J,358.3,13627,0)
- ;;=H33.001^^80^763^78
- ;;^UTILITY(U,$J,358.3,13627,1,0)
+ ;;^UTILITY(U,$J,358.3,29805,1,3,0)
+ ;;=3^Pathological fracture, left fibula, init encntr for fracture
+ ;;^UTILITY(U,$J,358.3,29805,1,4,0)
+ ;;=4^M84.464A
+ ;;^UTILITY(U,$J,358.3,29805,2)
+ ;;=^5013950
+ ;;^UTILITY(U,$J,358.3,29806,0)
+ ;;=M84.463A^^111^1433^35
+ ;;^UTILITY(U,$J,358.3,29806,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13627,1,3,0)
- ;;=3^Retinal Detachment w/ Retinal Break,Right Eye
- ;;^UTILITY(U,$J,358.3,13627,1,4,0)
- ;;=4^H33.001
- ;;^UTILITY(U,$J,358.3,13627,2)
- ;;=^5005490
- ;;^UTILITY(U,$J,358.3,13628,0)
- ;;=H33.002^^80^763^77
- ;;^UTILITY(U,$J,358.3,13628,1,0)
+ ;;^UTILITY(U,$J,358.3,29806,1,3,0)
+ ;;=3^Pathological fracture, right fibula, init for fx
+ ;;^UTILITY(U,$J,358.3,29806,1,4,0)
+ ;;=4^M84.463A
+ ;;^UTILITY(U,$J,358.3,29806,2)
+ ;;=^5013944
+ ;;^UTILITY(U,$J,358.3,29807,0)
+ ;;=M84.461A^^111^1433^37
+ ;;^UTILITY(U,$J,358.3,29807,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13628,1,3,0)
- ;;=3^Retinal Detachment w/ Retinal Break,Left Eye
- ;;^UTILITY(U,$J,358.3,13628,1,4,0)
- ;;=4^H33.002
- ;;^UTILITY(U,$J,358.3,13628,2)
- ;;=^5005491
- ;;^UTILITY(U,$J,358.3,13629,0)
- ;;=H33.011^^80^763^80
- ;;^UTILITY(U,$J,358.3,13629,1,0)
+ ;;^UTILITY(U,$J,358.3,29807,1,3,0)
+ ;;=3^Pathological fracture, right tibia, init encntr for fracture
+ ;;^UTILITY(U,$J,358.3,29807,1,4,0)
+ ;;=4^M84.461A
+ ;;^UTILITY(U,$J,358.3,29807,2)
+ ;;=^5013932
+ ;;^UTILITY(U,$J,358.3,29808,0)
+ ;;=T79.A22A^^111^1433^41
+ ;;^UTILITY(U,$J,358.3,29808,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13629,1,3,0)
- ;;=3^Retinal Detachment w/ Single Break,Right Eye
- ;;^UTILITY(U,$J,358.3,13629,1,4,0)
- ;;=4^H33.011
- ;;^UTILITY(U,$J,358.3,13629,2)
- ;;=^5005493
- ;;^UTILITY(U,$J,358.3,13630,0)
- ;;=H33.012^^80^763^79
- ;;^UTILITY(U,$J,358.3,13630,1,0)
+ ;;^UTILITY(U,$J,358.3,29808,1,3,0)
+ ;;=3^Traumatic compartment syndrome of left lower extremity, init
+ ;;^UTILITY(U,$J,358.3,29808,1,4,0)
+ ;;=4^T79.A22A
+ ;;^UTILITY(U,$J,358.3,29808,2)
+ ;;=^5137969
+ ;;^UTILITY(U,$J,358.3,29809,0)
+ ;;=T79.A21A^^111^1433^42
+ ;;^UTILITY(U,$J,358.3,29809,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13630,1,3,0)
- ;;=3^Retinal Detachment w/ Single Break,Left Eye
- ;;^UTILITY(U,$J,358.3,13630,1,4,0)
- ;;=4^H33.012
- ;;^UTILITY(U,$J,358.3,13630,2)
- ;;=^5005494
- ;;^UTILITY(U,$J,358.3,13631,0)
- ;;=H33.051^^80^763^106
- ;;^UTILITY(U,$J,358.3,13631,1,0)
+ ;;^UTILITY(U,$J,358.3,29809,1,3,0)
+ ;;=3^Traumatic compartment syndrome of r low extrem, init
+ ;;^UTILITY(U,$J,358.3,29809,1,4,0)
+ ;;=4^T79.A21A
+ ;;^UTILITY(U,$J,358.3,29809,2)
+ ;;=^5054335
+ ;;^UTILITY(U,$J,358.3,29810,0)
+ ;;=S82.102A^^111^1433^11
+ ;;^UTILITY(U,$J,358.3,29810,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13631,1,3,0)
- ;;=3^Total Retinal Detachment,Right Eye
- ;;^UTILITY(U,$J,358.3,13631,1,4,0)
- ;;=4^H33.051
- ;;^UTILITY(U,$J,358.3,13631,2)
- ;;=^5005509
- ;;^UTILITY(U,$J,358.3,13632,0)
- ;;=H33.052^^80^763^105
- ;;^UTILITY(U,$J,358.3,13632,1,0)
+ ;;^UTILITY(U,$J,358.3,29810,1,3,0)
+ ;;=3^Fracture of upper end of left tibia, init for clos fx,Unspec
+ ;;^UTILITY(U,$J,358.3,29810,1,4,0)
+ ;;=4^S82.102A
+ ;;^UTILITY(U,$J,358.3,29810,2)
+ ;;=^5040562
+ ;;^UTILITY(U,$J,358.3,29811,0)
+ ;;=S82.101A^^111^1433^12
+ ;;^UTILITY(U,$J,358.3,29811,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13632,1,3,0)
- ;;=3^Total Retinal Detachment,Left Eye
- ;;^UTILITY(U,$J,358.3,13632,1,4,0)
- ;;=4^H33.052
- ;;^UTILITY(U,$J,358.3,13632,2)
- ;;=^5005510
- ;;^UTILITY(U,$J,358.3,13633,0)
- ;;=H33.8^^80^763^81
- ;;^UTILITY(U,$J,358.3,13633,1,0)
+ ;;^UTILITY(U,$J,358.3,29811,1,3,0)
+ ;;=3^Fracture of upper end of right tibia, init for clos fx,Unspec
+ ;;^UTILITY(U,$J,358.3,29811,1,4,0)
+ ;;=4^S82.101A
+ ;;^UTILITY(U,$J,358.3,29811,2)
+ ;;=^5040546
+ ;;^UTILITY(U,$J,358.3,29812,0)
+ ;;=M80.072D^^111^1433^1
+ ;;^UTILITY(U,$J,358.3,29812,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13633,1,3,0)
- ;;=3^Retinal Detachments NEC
- ;;^UTILITY(U,$J,358.3,13633,1,4,0)
- ;;=4^H33.8
- ;;^UTILITY(U,$J,358.3,13633,2)
- ;;=^5005551
- ;;^UTILITY(U,$J,358.3,13634,0)
- ;;=H33.101^^80^763^97
- ;;^UTILITY(U,$J,358.3,13634,1,0)
+ ;;^UTILITY(U,$J,358.3,29812,1,3,0)
+ ;;=3^Age-rel osteopor w crnt path fx, l ank/ft, subs encntr
+ ;;^UTILITY(U,$J,358.3,29812,1,4,0)
+ ;;=4^M80.072D
+ ;;^UTILITY(U,$J,358.3,29812,2)
+ ;;=^5013484
+ ;;^UTILITY(U,$J,358.3,29813,0)
+ ;;=M80.071D^^111^1433^2
+ ;;^UTILITY(U,$J,358.3,29813,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13634,1,3,0)
- ;;=3^Retinoschisis,Right Eye,Unspec
- ;;^UTILITY(U,$J,358.3,13634,1,4,0)
- ;;=4^H33.101
- ;;^UTILITY(U,$J,358.3,13634,2)
- ;;=^5005513
- ;;^UTILITY(U,$J,358.3,13635,0)
- ;;=H33.102^^80^763^96
- ;;^UTILITY(U,$J,358.3,13635,1,0)
+ ;;^UTILITY(U,$J,358.3,29813,1,3,0)
+ ;;=3^Age-rel osteopor w crnt path fx, r ank/ft, subs encntr
+ ;;^UTILITY(U,$J,358.3,29813,1,4,0)
+ ;;=4^M80.071D
+ ;;^UTILITY(U,$J,358.3,29813,2)
+ ;;=^5013478
+ ;;^UTILITY(U,$J,358.3,29814,0)
+ ;;=S80.12XD^^111^1433^6
+ ;;^UTILITY(U,$J,358.3,29814,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13635,1,3,0)
- ;;=3^Retinoschisis,Left Eye,Unspec
- ;;^UTILITY(U,$J,358.3,13635,1,4,0)
- ;;=4^H33.102
- ;;^UTILITY(U,$J,358.3,13635,2)
- ;;=^5005514
- ;;^UTILITY(U,$J,358.3,13636,0)
- ;;=H33.321^^80^763^99
- ;;^UTILITY(U,$J,358.3,13636,1,0)
+ ;;^UTILITY(U,$J,358.3,29814,1,3,0)
+ ;;=3^Contusion of left lower leg, subsequent encounter
+ ;;^UTILITY(U,$J,358.3,29814,1,4,0)
+ ;;=4^S80.12XD
+ ;;^UTILITY(U,$J,358.3,29814,2)
+ ;;=^5039904
+ ;;^UTILITY(U,$J,358.3,29815,0)
+ ;;=S80.11XD^^111^1433^8
+ ;;^UTILITY(U,$J,358.3,29815,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13636,1,3,0)
- ;;=3^Round Hole,Right Eye
- ;;^UTILITY(U,$J,358.3,13636,1,4,0)
- ;;=4^H33.321
+ ;;^UTILITY(U,$J,358.3,29815,1,3,0)
+ ;;=3^Contusion of right lower leg, subsequent encounter
+ ;;^UTILITY(U,$J,358.3,29815,1,4,0)
+ ;;=4^S80.11XD
+ ;;^UTILITY(U,$J,358.3,29815,2)
+ ;;=^5039901
+ ;;^UTILITY(U,$J,358.3,29816,0)
+ ;;=S82.292D^^111^1433^13
+ ;;^UTILITY(U,$J,358.3,29816,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29816,1,3,0)
+ ;;=3^Fx shaft of left tibia, subs for clos fx w routn heal
+ ;;^UTILITY(U,$J,358.3,29816,1,4,0)
+ ;;=4^S82.292D
+ ;;^UTILITY(U,$J,358.3,29816,2)
+ ;;=^5136803
+ ;;^UTILITY(U,$J,358.3,29817,0)
+ ;;=S82.291D^^111^1433^14
+ ;;^UTILITY(U,$J,358.3,29817,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29817,1,3,0)
+ ;;=3^Fx shaft of right tibia, subs for clos fx w routn heal
+ ;;^UTILITY(U,$J,358.3,29817,1,4,0)
+ ;;=4^S82.291D
+ ;;^UTILITY(U,$J,358.3,29817,2)
+ ;;=^5041622
+ ;;^UTILITY(U,$J,358.3,29818,0)
+ ;;=S82.102D^^111^1433^15
+ ;;^UTILITY(U,$J,358.3,29818,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29818,1,3,0)
+ ;;=3^Fx upper end of l tibia, subs for clos fx w routn heal
+ ;;^UTILITY(U,$J,358.3,29818,1,4,0)
+ ;;=4^S82.102D
+ ;;^UTILITY(U,$J,358.3,29818,2)
+ ;;=^5040565
+ ;;^UTILITY(U,$J,358.3,29819,0)
+ ;;=S82.101D^^111^1433^16
+ ;;^UTILITY(U,$J,358.3,29819,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29819,1,3,0)
+ ;;=3^Fx upper end of r tibia, subs for clos fx w routn heal
+ ;;^UTILITY(U,$J,358.3,29819,1,4,0)
+ ;;=4^S82.101D
+ ;;^UTILITY(U,$J,358.3,29819,2)
+ ;;=^5040549
+ ;;^UTILITY(U,$J,358.3,29820,0)
+ ;;=S82.425D^^111^1433^19
+ ;;^UTILITY(U,$J,358.3,29820,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29820,1,3,0)
+ ;;=3^Nondisp transverse fx shaft of l fibula, subs encntr
+ ;;^UTILITY(U,$J,358.3,29820,1,4,0)
+ ;;=4^S82.425D
+ ;;^UTILITY(U,$J,358.3,29820,2)
+ ;;=^5041781
+ ;;^UTILITY(U,$J,358.3,29821,0)
+ ;;=S82.424D^^111^1433^20
+ ;;^UTILITY(U,$J,358.3,29821,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29821,1,3,0)
+ ;;=3^Nondisp transverse fx shaft of r fibula, subs encntr
+ ;;^UTILITY(U,$J,358.3,29821,1,4,0)
+ ;;=4^S82.424D
+ ;;^UTILITY(U,$J,358.3,29821,2)
+ ;;=^5041765
+ ;;^UTILITY(U,$J,358.3,29822,0)
+ ;;=M84.464D^^111^1433^32
+ ;;^UTILITY(U,$J,358.3,29822,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29822,1,3,0)
+ ;;=3^Pathological fracture, left fibula, subs for fx w routn heal
+ ;;^UTILITY(U,$J,358.3,29822,1,4,0)
+ ;;=4^M84.464D
+ ;;^UTILITY(U,$J,358.3,29822,2)
+ ;;=^5013951
+ ;;^UTILITY(U,$J,358.3,29823,0)
+ ;;=M84.461D^^111^1433^38
+ ;;^UTILITY(U,$J,358.3,29823,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29823,1,3,0)
+ ;;=3^Pathological fracture, right tibia, subs for fx w routn heal
+ ;;^UTILITY(U,$J,358.3,29823,1,4,0)
+ ;;=4^M84.461D
+ ;;^UTILITY(U,$J,358.3,29823,2)
+ ;;=^5013933
+ ;;^UTILITY(U,$J,358.3,29824,0)
+ ;;=M84.462A^^111^1433^33
+ ;;^UTILITY(U,$J,358.3,29824,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29824,1,3,0)
+ ;;=3^Pathological fracture, left tibia, init encntr for fracture
+ ;;^UTILITY(U,$J,358.3,29824,1,4,0)
+ ;;=4^M84.462A
+ ;;^UTILITY(U,$J,358.3,29824,2)
+ ;;=^5013938
+ ;;^UTILITY(U,$J,358.3,29825,0)
+ ;;=M84.462D^^111^1433^34
+ ;;^UTILITY(U,$J,358.3,29825,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29825,1,3,0)
+ ;;=3^Pathological fracture, left tibia, subs for fx w routn heal
+ ;;^UTILITY(U,$J,358.3,29825,1,4,0)
+ ;;=4^M84.462D
+ ;;^UTILITY(U,$J,358.3,29825,2)
+ ;;=^5013939
+ ;;^UTILITY(U,$J,358.3,29826,0)
+ ;;=M84.469A^^111^1433^39
+ ;;^UTILITY(U,$J,358.3,29826,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29826,1,3,0)
+ ;;=3^Pathological fracture, unsp tibia and fibula, init for fx
+ ;;^UTILITY(U,$J,358.3,29826,1,4,0)
+ ;;=4^M84.469A
+ ;;^UTILITY(U,$J,358.3,29826,2)
+ ;;=^5013956
+ ;;^UTILITY(U,$J,358.3,29827,0)
+ ;;=M84.469D^^111^1433^40
+ ;;^UTILITY(U,$J,358.3,29827,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29827,1,3,0)
+ ;;=3^Pathological fracture, unsp tibia and fibula, subs for fx w routn heal
+ ;;^UTILITY(U,$J,358.3,29827,1,4,0)
+ ;;=4^M84.469D
+ ;;^UTILITY(U,$J,358.3,29827,2)
+ ;;=^5013957
+ ;;^UTILITY(U,$J,358.3,29828,0)
+ ;;=M84.463D^^111^1433^36
+ ;;^UTILITY(U,$J,358.3,29828,1,0)
+ ;;=^358.31IA^4^2

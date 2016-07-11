@@ -1,126 +1,296 @@
-IBDEI01V ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI01V ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,100,0)
- ;;=99343^^2^21^3
- ;;^UTILITY(U,$J,358.3,100,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,100,1,1,0)
- ;;=1^DETAILED HX & EXAM;LOW COMPLEX MDM
- ;;^UTILITY(U,$J,358.3,100,1,2,0)
- ;;=2^99343
- ;;^UTILITY(U,$J,358.3,101,0)
- ;;=99344^^2^21^4
- ;;^UTILITY(U,$J,358.3,101,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,101,1,1,0)
- ;;=1^COMPREH HX & EXAM;MOD COMPLEX MDM
- ;;^UTILITY(U,$J,358.3,101,1,2,0)
- ;;=2^99344
- ;;^UTILITY(U,$J,358.3,102,0)
- ;;=99345^^2^21^5
- ;;^UTILITY(U,$J,358.3,102,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,102,1,1,0)
- ;;=1^COMPREH HX & EXAM;HIGH COMPLEX MDM
- ;;^UTILITY(U,$J,358.3,102,1,2,0)
- ;;=2^99345
- ;;^UTILITY(U,$J,358.3,103,0)
- ;;=99366^^2^22^1
- ;;^UTILITY(U,$J,358.3,103,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,103,1,1,0)
- ;;=1^Interdisc Tm Conf w/ Pt/Fam,30+min,Non-Phys
- ;;^UTILITY(U,$J,358.3,103,1,2,0)
- ;;=2^99366
- ;;^UTILITY(U,$J,358.3,104,0)
- ;;=99367^^2^22^3
- ;;^UTILITY(U,$J,358.3,104,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,104,1,1,0)
- ;;=1^Interdisc Tm Conf w/o Pt/Fam,30+min,Physician
- ;;^UTILITY(U,$J,358.3,104,1,2,0)
- ;;=2^99367
- ;;^UTILITY(U,$J,358.3,105,0)
- ;;=99368^^2^22^2
- ;;^UTILITY(U,$J,358.3,105,1,0)
- ;;=^358.31IA^2^2
- ;;^UTILITY(U,$J,358.3,105,1,1,0)
- ;;=1^Interdisc Tm Conf w/o Pt/Fam,30+min,Non-Phys
- ;;^UTILITY(U,$J,358.3,105,1,2,0)
- ;;=2^99368
- ;;^UTILITY(U,$J,358.3,106,0)
- ;;=T74.11XA^^3^23^8
- ;;^UTILITY(U,$J,358.3,106,1,0)
+ ;;^UTILITY(U,$J,358.3,1382,1,4,0)
+ ;;=4^L40.4
+ ;;^UTILITY(U,$J,358.3,1382,2)
+ ;;=^5009164
+ ;;^UTILITY(U,$J,358.3,1383,0)
+ ;;=L40.8^^9^119^39
+ ;;^UTILITY(U,$J,358.3,1383,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,106,1,3,0)
- ;;=3^Spouse/Partner or Nonspouse/Nonpartner Violence,Physical,Confirmed,Initial Encounter
- ;;^UTILITY(U,$J,358.3,106,1,4,0)
- ;;=4^T74.11XA
- ;;^UTILITY(U,$J,358.3,106,2)
- ;;=^5054146
- ;;^UTILITY(U,$J,358.3,107,0)
- ;;=T74.11XD^^3^23^9
- ;;^UTILITY(U,$J,358.3,107,1,0)
+ ;;^UTILITY(U,$J,358.3,1383,1,3,0)
+ ;;=3^Psoriasis,Other
+ ;;^UTILITY(U,$J,358.3,1383,1,4,0)
+ ;;=4^L40.8
+ ;;^UTILITY(U,$J,358.3,1383,2)
+ ;;=^271917
+ ;;^UTILITY(U,$J,358.3,1384,0)
+ ;;=L29.9^^9^119^36
+ ;;^UTILITY(U,$J,358.3,1384,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,107,1,3,0)
- ;;=3^Spouse/Partner or Nonspouse/Nonpartner Violence,Physical,Confirmed,Subsequent Encounter
- ;;^UTILITY(U,$J,358.3,107,1,4,0)
- ;;=4^T74.11XD
- ;;^UTILITY(U,$J,358.3,107,2)
- ;;=^5054147
- ;;^UTILITY(U,$J,358.3,108,0)
- ;;=T76.11XA^^3^23^10
- ;;^UTILITY(U,$J,358.3,108,1,0)
+ ;;^UTILITY(U,$J,358.3,1384,1,3,0)
+ ;;=3^Pruritus,Unspec
+ ;;^UTILITY(U,$J,358.3,1384,1,4,0)
+ ;;=4^L29.9
+ ;;^UTILITY(U,$J,358.3,1384,2)
+ ;;=^5009153
+ ;;^UTILITY(U,$J,358.3,1385,0)
+ ;;=M25.511^^9^119^15
+ ;;^UTILITY(U,$J,358.3,1385,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,108,1,3,0)
- ;;=3^Spouse/Partner or Nonspouse/Nonpartner Violence,Physical,Suspected,Initial Encounter
- ;;^UTILITY(U,$J,358.3,108,1,4,0)
- ;;=4^T76.11XA
- ;;^UTILITY(U,$J,358.3,108,2)
- ;;=^5054221
- ;;^UTILITY(U,$J,358.3,109,0)
- ;;=T76.11XD^^3^23^11
- ;;^UTILITY(U,$J,358.3,109,1,0)
+ ;;^UTILITY(U,$J,358.3,1385,1,3,0)
+ ;;=3^Pain Right Shoulder
+ ;;^UTILITY(U,$J,358.3,1385,1,4,0)
+ ;;=4^M25.511
+ ;;^UTILITY(U,$J,358.3,1385,2)
+ ;;=^5011602
+ ;;^UTILITY(U,$J,358.3,1386,0)
+ ;;=M25.512^^9^119^9
+ ;;^UTILITY(U,$J,358.3,1386,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,109,1,3,0)
- ;;=3^Spouse/Partner or Nonspouse/Nonpartner Violence,Physical,Suspected,Subsequent Encounter
- ;;^UTILITY(U,$J,358.3,109,1,4,0)
- ;;=4^T76.11XD
- ;;^UTILITY(U,$J,358.3,109,2)
- ;;=^5054222
- ;;^UTILITY(U,$J,358.3,110,0)
- ;;=Z69.11^^3^23^4
- ;;^UTILITY(U,$J,358.3,110,1,0)
+ ;;^UTILITY(U,$J,358.3,1386,1,3,0)
+ ;;=3^Pain Left Shoulder
+ ;;^UTILITY(U,$J,358.3,1386,1,4,0)
+ ;;=4^M25.512
+ ;;^UTILITY(U,$J,358.3,1386,2)
+ ;;=^5011603
+ ;;^UTILITY(U,$J,358.3,1387,0)
+ ;;=M25.521^^9^119^11
+ ;;^UTILITY(U,$J,358.3,1387,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,110,1,3,0)
- ;;=3^MH Svc for Victim of Spousal/Partner Abuse/Neglect
- ;;^UTILITY(U,$J,358.3,110,1,4,0)
- ;;=4^Z69.11
- ;;^UTILITY(U,$J,358.3,110,2)
- ;;=^5063232
- ;;^UTILITY(U,$J,358.3,111,0)
- ;;=Z91.410^^3^23^5
- ;;^UTILITY(U,$J,358.3,111,1,0)
+ ;;^UTILITY(U,$J,358.3,1387,1,3,0)
+ ;;=3^Pain Right Elbow
+ ;;^UTILITY(U,$J,358.3,1387,1,4,0)
+ ;;=4^M25.521
+ ;;^UTILITY(U,$J,358.3,1387,2)
+ ;;=^5011605
+ ;;^UTILITY(U,$J,358.3,1388,0)
+ ;;=M25.522^^9^119^5
+ ;;^UTILITY(U,$J,358.3,1388,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,111,1,3,0)
- ;;=3^Past Hx of Spouse/Partner Violence,Physical or Sexual
- ;;^UTILITY(U,$J,358.3,111,1,4,0)
- ;;=4^Z91.410
- ;;^UTILITY(U,$J,358.3,111,2)
- ;;=^5063619
- ;;^UTILITY(U,$J,358.3,112,0)
- ;;=Z69.12^^3^23^2
- ;;^UTILITY(U,$J,358.3,112,1,0)
+ ;;^UTILITY(U,$J,358.3,1388,1,3,0)
+ ;;=3^Pain Left Elbow
+ ;;^UTILITY(U,$J,358.3,1388,1,4,0)
+ ;;=4^M25.522
+ ;;^UTILITY(U,$J,358.3,1388,2)
+ ;;=^5011606
+ ;;^UTILITY(U,$J,358.3,1389,0)
+ ;;=M79.641^^9^119^12
+ ;;^UTILITY(U,$J,358.3,1389,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,112,1,3,0)
- ;;=3^MH Svc for Perpetrator of Spousal/Partner Abuse-Physical,Sexual or Psychological
- ;;^UTILITY(U,$J,358.3,112,1,4,0)
- ;;=4^Z69.12
- ;;^UTILITY(U,$J,358.3,112,2)
- ;;=^5063233
- ;;^UTILITY(U,$J,358.3,113,0)
- ;;=T74.21XA^^3^23^12
- ;;^UTILITY(U,$J,358.3,113,1,0)
+ ;;^UTILITY(U,$J,358.3,1389,1,3,0)
+ ;;=3^Pain Right Hand
+ ;;^UTILITY(U,$J,358.3,1389,1,4,0)
+ ;;=4^M79.641
+ ;;^UTILITY(U,$J,358.3,1389,2)
+ ;;=^5013338
+ ;;^UTILITY(U,$J,358.3,1390,0)
+ ;;=M79.642^^9^119^6
+ ;;^UTILITY(U,$J,358.3,1390,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1390,1,3,0)
+ ;;=3^Pain Left Hand
+ ;;^UTILITY(U,$J,358.3,1390,1,4,0)
+ ;;=4^M79.642
+ ;;^UTILITY(U,$J,358.3,1390,2)
+ ;;=^5013339
+ ;;^UTILITY(U,$J,358.3,1391,0)
+ ;;=M25.551^^9^119^13
+ ;;^UTILITY(U,$J,358.3,1391,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1391,1,3,0)
+ ;;=3^Pain Right Hip
+ ;;^UTILITY(U,$J,358.3,1391,1,4,0)
+ ;;=4^M25.551
+ ;;^UTILITY(U,$J,358.3,1391,2)
+ ;;=^5011611
+ ;;^UTILITY(U,$J,358.3,1392,0)
+ ;;=M25.552^^9^119^7
+ ;;^UTILITY(U,$J,358.3,1392,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1392,1,3,0)
+ ;;=3^Pain Left Hip
+ ;;^UTILITY(U,$J,358.3,1392,1,4,0)
+ ;;=4^M25.552
+ ;;^UTILITY(U,$J,358.3,1392,2)
+ ;;=^5011612
+ ;;^UTILITY(U,$J,358.3,1393,0)
+ ;;=M25.561^^9^119^14
+ ;;^UTILITY(U,$J,358.3,1393,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1393,1,3,0)
+ ;;=3^Pain Right Knee
+ ;;^UTILITY(U,$J,358.3,1393,1,4,0)
+ ;;=4^M25.561
+ ;;^UTILITY(U,$J,358.3,1393,2)
+ ;;=^5011614
+ ;;^UTILITY(U,$J,358.3,1394,0)
+ ;;=M25.562^^9^119^8
+ ;;^UTILITY(U,$J,358.3,1394,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1394,1,3,0)
+ ;;=3^Pain Left Knee
+ ;;^UTILITY(U,$J,358.3,1394,1,4,0)
+ ;;=4^M25.562
+ ;;^UTILITY(U,$J,358.3,1394,2)
+ ;;=^5011615
+ ;;^UTILITY(U,$J,358.3,1395,0)
+ ;;=M25.571^^9^119^10
+ ;;^UTILITY(U,$J,358.3,1395,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1395,1,3,0)
+ ;;=3^Pain Right Ankle & Joints Right Foot
+ ;;^UTILITY(U,$J,358.3,1395,1,4,0)
+ ;;=4^M25.571
+ ;;^UTILITY(U,$J,358.3,1395,2)
+ ;;=^5011617
+ ;;^UTILITY(U,$J,358.3,1396,0)
+ ;;=M25.572^^9^119^4
+ ;;^UTILITY(U,$J,358.3,1396,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1396,1,3,0)
+ ;;=3^Pain Left Ankle & Joints Left Foot
+ ;;^UTILITY(U,$J,358.3,1396,1,4,0)
+ ;;=4^M25.572
+ ;;^UTILITY(U,$J,358.3,1396,2)
+ ;;=^5011618
+ ;;^UTILITY(U,$J,358.3,1397,0)
+ ;;=R10.2^^9^119^19
+ ;;^UTILITY(U,$J,358.3,1397,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1397,1,3,0)
+ ;;=3^Pelvic & Perineal Pain
+ ;;^UTILITY(U,$J,358.3,1397,1,4,0)
+ ;;=4^R10.2
+ ;;^UTILITY(U,$J,358.3,1397,2)
+ ;;=^5019209
+ ;;^UTILITY(U,$J,358.3,1398,0)
+ ;;=Z51.5^^9^119^16
+ ;;^UTILITY(U,$J,358.3,1398,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1398,1,3,0)
+ ;;=3^Palliative Care Encounter
+ ;;^UTILITY(U,$J,358.3,1398,1,4,0)
+ ;;=4^Z51.5
+ ;;^UTILITY(U,$J,358.3,1398,2)
+ ;;=^5063063
+ ;;^UTILITY(U,$J,358.3,1399,0)
+ ;;=Z95.3^^9^119^35
+ ;;^UTILITY(U,$J,358.3,1399,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1399,1,3,0)
+ ;;=3^Presence of Xenogenic Heart Valve
+ ;;^UTILITY(U,$J,358.3,1399,1,4,0)
+ ;;=4^Z95.3
+ ;;^UTILITY(U,$J,358.3,1399,2)
+ ;;=^5063671
+ ;;^UTILITY(U,$J,358.3,1400,0)
+ ;;=Z95.1^^9^119^34
+ ;;^UTILITY(U,$J,358.3,1400,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1400,1,3,0)
+ ;;=3^Presence of Aortocoronary Bypass Graft
+ ;;^UTILITY(U,$J,358.3,1400,1,4,0)
+ ;;=4^Z95.1
+ ;;^UTILITY(U,$J,358.3,1400,2)
+ ;;=^5063669
+ ;;^UTILITY(U,$J,358.3,1401,0)
+ ;;=Z98.89^^9^119^33
+ ;;^UTILITY(U,$J,358.3,1401,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1401,1,3,0)
+ ;;=3^Postprocedural States,Other Specified
+ ;;^UTILITY(U,$J,358.3,1401,1,4,0)
+ ;;=4^Z98.89
+ ;;^UTILITY(U,$J,358.3,1401,2)
+ ;;=^5063754
+ ;;^UTILITY(U,$J,358.3,1402,0)
+ ;;=I80.201^^9^119^23
+ ;;^UTILITY(U,$J,358.3,1402,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1402,1,3,0)
+ ;;=3^Phlebitis & Thrombophlebitis Deep Vessels Right Lower Extremity
+ ;;^UTILITY(U,$J,358.3,1402,1,4,0)
+ ;;=4^I80.201
+ ;;^UTILITY(U,$J,358.3,1402,2)
+ ;;=^5007828
+ ;;^UTILITY(U,$J,358.3,1403,0)
+ ;;=I80.202^^9^119^24
+ ;;^UTILITY(U,$J,358.3,1403,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1403,1,3,0)
+ ;;=3^Phlebitis & Thrombophlebitis Deep Vessels Left Lower Extremity
+ ;;^UTILITY(U,$J,358.3,1403,1,4,0)
+ ;;=4^I80.202
+ ;;^UTILITY(U,$J,358.3,1403,2)
+ ;;=^5007829
+ ;;^UTILITY(U,$J,358.3,1404,0)
+ ;;=I80.203^^9^119^25
+ ;;^UTILITY(U,$J,358.3,1404,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1404,1,3,0)
+ ;;=3^Phlebitis & Thrombophlebitis Deep Vessels Bilateral Lower Extremity
+ ;;^UTILITY(U,$J,358.3,1404,1,4,0)
+ ;;=4^I80.203
+ ;;^UTILITY(U,$J,358.3,1404,2)
+ ;;=^5007830
+ ;;^UTILITY(U,$J,358.3,1405,0)
+ ;;=K27.9^^9^119^20
+ ;;^UTILITY(U,$J,358.3,1405,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1405,1,3,0)
+ ;;=3^Peptic Ulcer w/o Hemorrhage/Perforation
+ ;;^UTILITY(U,$J,358.3,1405,1,4,0)
+ ;;=4^K27.9
+ ;;^UTILITY(U,$J,358.3,1405,2)
+ ;;=^5008536
+ ;;^UTILITY(U,$J,358.3,1406,0)
+ ;;=G89.18^^9^119^32
+ ;;^UTILITY(U,$J,358.3,1406,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1406,1,3,0)
+ ;;=3^Postprocedural Pain,Acute
+ ;;^UTILITY(U,$J,358.3,1406,1,4,0)
+ ;;=4^G89.18
+ ;;^UTILITY(U,$J,358.3,1406,2)
+ ;;=^5004154
+ ;;^UTILITY(U,$J,358.3,1407,0)
+ ;;=J31.0^^9^120^15
+ ;;^UTILITY(U,$J,358.3,1407,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1407,1,3,0)
+ ;;=3^Rhinitis,Chronic
+ ;;^UTILITY(U,$J,358.3,1407,1,4,0)
+ ;;=4^J31.0
+ ;;^UTILITY(U,$J,358.3,1407,2)
+ ;;=^24434
+ ;;^UTILITY(U,$J,358.3,1408,0)
+ ;;=M06.9^^9^120^14
+ ;;^UTILITY(U,$J,358.3,1408,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1408,1,3,0)
+ ;;=3^Rheumatoid Arthritis,Unspec
+ ;;^UTILITY(U,$J,358.3,1408,1,4,0)
+ ;;=4^M06.9
+ ;;^UTILITY(U,$J,358.3,1408,2)
+ ;;=^5010145
+ ;;^UTILITY(U,$J,358.3,1409,0)
+ ;;=M54.10^^9^120^1
+ ;;^UTILITY(U,$J,358.3,1409,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1409,1,3,0)
+ ;;=3^Radiculopathy,Site Unspec
+ ;;^UTILITY(U,$J,358.3,1409,1,4,0)
+ ;;=4^M54.10
+ ;;^UTILITY(U,$J,358.3,1409,2)
+ ;;=^5012295
+ ;;^UTILITY(U,$J,358.3,1410,0)
+ ;;=R21.^^9^120^2
+ ;;^UTILITY(U,$J,358.3,1410,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1410,1,3,0)
+ ;;=3^Rash & Oth Nonspecific Skin Eruption
+ ;;^UTILITY(U,$J,358.3,1410,1,4,0)
+ ;;=4^R21.
+ ;;^UTILITY(U,$J,358.3,1410,2)
+ ;;=^5019283
+ ;;^UTILITY(U,$J,358.3,1411,0)
+ ;;=J96.90^^9^120^13
+ ;;^UTILITY(U,$J,358.3,1411,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,1411,1,3,0)
+ ;;=3^Resp Failure,Unspec whether w/ Hypoxia or Hypercapnia
+ ;;^UTILITY(U,$J,358.3,1411,1,4,0)
+ ;;=4^J96.90

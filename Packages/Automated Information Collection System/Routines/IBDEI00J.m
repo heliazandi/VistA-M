@@ -1,70 +1,64 @@
-IBDEI00J ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQR(358.1)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI00J ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
+ Q:'DIFQ(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.1,231,0)
- ;;=PRIMARY CARE ICD-10^48^^101^0^132^2197^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^
- ;;^UTILITY(U,$J,358.1,232,0)
- ;;=CPT CODES (3 COL)^49^^47^0^132^87^^^1^PLEASE CHECK OFF PROCEDURES PERFORMED THIS VISIT^BCU^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,233,0)
- ;;=HEADER^49^^1^58^17^1^^^2
- ;;^UTILITY(U,$J,358.1,234,0)
- ;;=PATIENT INFORMATION^49^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,235,0)
- ;;=TYPE OF VISIT - 1994 CODES^49^^6^0^132^40^^^1^^^Selection list - visit types with their CPT codes^0
- ;;^UTILITY(U,$J,358.1,236,0)
- ;;=MENTAL HEALTH ICD-10^49^^136^0^132^434^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^
- ;;^UTILITY(U,$J,358.1,237,0)
- ;;=CPT CODES (3 COL)^50^^14^0^132^33^^^1^PLEASE CHECK OFF PROCEDURES PERFORMED THIS VISIT^BCU^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,238,0)
- ;;=HEADER^50^^1^49^30^1^^^2
- ;;^UTILITY(U,$J,358.1,239,0)
- ;;=PATIENT INFORMATION^50^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,240,0)
- ;;=1995 VISIT TYPES (V2.1)^50^^7^0^132^6^^^1^TYPE OF VISIT^CR^1995 visit types^0
- ;;^UTILITY(U,$J,358.1,241,0)
- ;;=MENTAL HEALTH ICD-10^50^^48^0^132^434^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^
- ;;^UTILITY(U,$J,358.1,242,0)
- ;;=HEADER^51^^1^57^42^1^^^2
- ;;^UTILITY(U,$J,358.1,243,0)
- ;;=PATIENT INFORMATION^51^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,244,0)
- ;;=PROCEDURES (V2.1)^51^^7^0^133^8^^^1^MANAGEMENT OF MEDICATION THERAPY^CR^Common CPT-4 procedures^0
- ;;^UTILITY(U,$J,358.1,245,0)
- ;;=MENTAL HEALTH ICD-10^51^^16^0^132^434^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^
- ;;^UTILITY(U,$J,358.1,246,0)
- ;;=CPT CODES (3 COL)^52^^41^0^132^47^^^1^PLEASE CHECK OFF PROCEDURES PERFORMED THIS VISIT^BCU^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,247,0)
- ;;=HEADER^52^^1^55^22^1^^^2
- ;;^UTILITY(U,$J,358.1,248,0)
- ;;=PATIENT INFORMATION^52^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,249,0)
- ;;=TYPE OF VISIT - 1994 CODES^52^^6^0^132^34^^^1^^^Selection list - visit types with their CPT codes^0
- ;;^UTILITY(U,$J,358.1,250,0)
- ;;=MENTAL HEALTH ICD-10^52^^89^0^132^434^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^
- ;;^UTILITY(U,$J,358.1,251,0)
- ;;=CPT CODES (3 COL)^53^^7^0^132^43^^^1^PLEASE CHECK OFF PROCEDURES PERFORMED THIS VISIT^BCU^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,252,0)
- ;;=HEADER^53^^1^49^37^1^^^2
- ;;^UTILITY(U,$J,358.1,253,0)
- ;;=PATIENT INFORMATION^53^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,254,0)
- ;;=MENTAL HEALTH ICD-10^53^^51^0^132^434^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^
- ;;^UTILITY(U,$J,358.1,255,0)
- ;;=HEADER^54^^1^59^14^1^^^2
- ;;^UTILITY(U,$J,358.1,256,0)
- ;;=CPT CODES^54^^16^0^132^18^^^1^FILL IN BUBBLE FOR PROCEDURES PERFORMED^UBRC^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,257,0)
- ;;=PATIENT INFORMATION^54^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,258,0)
- ;;=1995 VISIT TYPE CODES (V2.1)^54^^6^0^132^9^^^1^TYPE OF VISIT^CR^1995 visit types WITH CODES SHOWN^0
- ;;^UTILITY(U,$J,358.1,259,0)
- ;;=MOVE! ICD-10^54^^35^0^132^48^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^0
- ;;^UTILITY(U,$J,358.1,260,0)
- ;;=1995 VISIT TYPE CODES (V2.1)^55^^5^0^132^30^^^1^TYPE OF VISIT^CR^1995 visit types WITH CODES SHOWN^0
- ;;^UTILITY(U,$J,358.1,261,0)
- ;;=PATIENT INFORMATION^55^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,262,0)
- ;;=HEADER^55^^1^49^19^1^^^2
- ;;^UTILITY(U,$J,358.1,263,0)
- ;;=PROCEDURES (V2.1)^55^^36^0^133^24^^^1^PROCEDURES^CR^Common CPT-4 procedures^0
+ ;;^DIC(358.3,0,"GL")
+ ;;=^IBE(358.3,
+ ;;^DIC("B","IMP/EXP SELECTION",358.3)
+ ;;=
+ ;;^DIC(358.3,"%D",0)
+ ;;=^^4^4^2940217^
+ ;;^DIC(358.3,"%D",1,0)
+ ;;= 
+ ;;^DIC(358.3,"%D",2,0)
+ ;;=This file is nearly identical to file #357.3. It is used by the
+ ;;^DIC(358.3,"%D",3,0)
+ ;;=Import/Export Utility as a temporary staging area for data from that file
+ ;;^DIC(358.3,"%D",4,0)
+ ;;=that is being imported or exported.
+ ;;^DD(358.3,0)
+ ;;=FIELD^^3^15
+ ;;^DD(358.3,0,"DDA")
+ ;;=N
+ ;;^DD(358.3,0,"DT")
+ ;;=2961031
+ ;;^DD(358.3,0,"ID",.03)
+ ;;=S %I=Y,Y=$S('$D(^(0)):"",$D(^IBE(358.2,+$P(^(0),U,3),0))#2:$P(^(0),U,1),1:""),C=$P(^DD(358.2,.01,0),U,2) D Y^DIQ:Y]"" W "   ",Y,@("$E("_DIC_"%I,0),0)") S Y=%I K %I
+ ;;^DD(358.3,0,"ID",.04)
+ ;;=S %I=Y,Y=$S('$D(^(0)):"",$D(^IBE(358.4,+$P(^(0),U,4),0))#2:$P(^(0),U,1),1:""),C=$P(^DD(358.4,.01,0),U,2) D Y^DIQ:Y]"" W "   ",Y,@("$E("_DIC_"%I,0),0)") S Y=%I K %I
+ ;;^DD(358.3,0,"IX","APO",358.3,.03)
+ ;;=
+ ;;^DD(358.3,0,"IX","APO1",358.3,.04)
+ ;;=
+ ;;^DD(358.3,0,"IX","APO2",358.3,.05)
+ ;;=
+ ;;^DD(358.3,0,"IX","B",358.3,.01)
+ ;;=
+ ;;^DD(358.3,0,"IX","C",358.3,.03)
+ ;;=
+ ;;^DD(358.3,0,"IX","D",358.3,.04)
+ ;;=
+ ;;^DD(358.3,0,"NM","IMP/EXP SELECTION")
+ ;;=
+ ;;^DD(358.3,0,"VRPK")
+ ;;=IBD
+ ;;^DD(358.3,.01,0)
+ ;;=SELECTION ID^RF^^0;1^K:$L(X)>30!($L(X)<3)!'(X'?1P.E) X
+ ;;^DD(358.3,.01,1,0)
+ ;;=^.1
+ ;;^DD(358.3,.01,1,1,0)
+ ;;=358.3^B
+ ;;^DD(358.3,.01,1,1,1)
+ ;;=S ^IBE(358.3,"B",$E(X,1,30),DA)=""
+ ;;^DD(358.3,.01,1,1,2)
+ ;;=K ^IBE(358.3,"B",$E(X,1,30),DA)
+ ;;^DD(358.3,.01,3)
+ ;;=Answer must be 3-30 characters in length.
+ ;;^DD(358.3,.01,21,0)
+ ;;=^^2^2^2930309^
+ ;;^DD(358.3,.01,21,1,0)
+ ;;= 
+ ;;^DD(358.3,.01,21,2,0)
+ ;;=The ID passed by the package.
+ ;;^DD(358.3,.01,"DT")
+ ;;=2921119

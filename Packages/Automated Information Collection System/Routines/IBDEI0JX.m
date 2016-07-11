@@ -1,130 +1,288 @@
-IBDEI0JX ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0JX ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8979,1,4,0)
- ;;=4^E08.65
- ;;^UTILITY(U,$J,358.3,8979,2)
- ;;=^5002541
- ;;^UTILITY(U,$J,358.3,8980,0)
- ;;=E08.69^^55^555^29
- ;;^UTILITY(U,$J,358.3,8980,1,0)
+ ;;^UTILITY(U,$J,358.3,20077,2)
+ ;;=^5063644
+ ;;^UTILITY(U,$J,358.3,20078,0)
+ ;;=Z93.3^^86^995^15
+ ;;^UTILITY(U,$J,358.3,20078,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8980,1,3,0)
- ;;=3^Diabetes due to underlying condition w oth complication
- ;;^UTILITY(U,$J,358.3,8980,1,4,0)
- ;;=4^E08.69
- ;;^UTILITY(U,$J,358.3,8980,2)
- ;;=^5002542
- ;;^UTILITY(U,$J,358.3,8981,0)
- ;;=E09.618^^55^555^50
- ;;^UTILITY(U,$J,358.3,8981,1,0)
+ ;;^UTILITY(U,$J,358.3,20078,1,3,0)
+ ;;=3^Colostomy Status
+ ;;^UTILITY(U,$J,358.3,20078,1,4,0)
+ ;;=4^Z93.3
+ ;;^UTILITY(U,$J,358.3,20078,2)
+ ;;=^5063645
+ ;;^UTILITY(U,$J,358.3,20079,0)
+ ;;=Z94.0^^86^995^63
+ ;;^UTILITY(U,$J,358.3,20079,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8981,1,3,0)
- ;;=3^Drug/chem diabetes w oth diabetic arthropathy
- ;;^UTILITY(U,$J,358.3,8981,1,4,0)
- ;;=4^E09.618
- ;;^UTILITY(U,$J,358.3,8981,2)
- ;;=^5002574
- ;;^UTILITY(U,$J,358.3,8982,0)
- ;;=E09.620^^55^555^33
- ;;^UTILITY(U,$J,358.3,8982,1,0)
+ ;;^UTILITY(U,$J,358.3,20079,1,3,0)
+ ;;=3^Kidney Transplant Status
+ ;;^UTILITY(U,$J,358.3,20079,1,4,0)
+ ;;=4^Z94.0
+ ;;^UTILITY(U,$J,358.3,20079,2)
+ ;;=^5063654
+ ;;^UTILITY(U,$J,358.3,20080,0)
+ ;;=Z94.1^^86^995^56
+ ;;^UTILITY(U,$J,358.3,20080,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8982,1,3,0)
- ;;=3^Drug/chem diabetes w diabetic dermatitis
- ;;^UTILITY(U,$J,358.3,8982,1,4,0)
- ;;=4^E09.620
- ;;^UTILITY(U,$J,358.3,8982,2)
- ;;=^5002575
- ;;^UTILITY(U,$J,358.3,8983,0)
- ;;=E09.622^^55^555^60
- ;;^UTILITY(U,$J,358.3,8983,1,0)
+ ;;^UTILITY(U,$J,358.3,20080,1,3,0)
+ ;;=3^Heart Transplant Status
+ ;;^UTILITY(U,$J,358.3,20080,1,4,0)
+ ;;=4^Z94.1
+ ;;^UTILITY(U,$J,358.3,20080,2)
+ ;;=^5063655
+ ;;^UTILITY(U,$J,358.3,20081,0)
+ ;;=Z94.2^^86^995^66
+ ;;^UTILITY(U,$J,358.3,20081,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8983,1,3,0)
- ;;=3^Drug/chem induced diabetes mellitus w oth skin ulcer
- ;;^UTILITY(U,$J,358.3,8983,1,4,0)
- ;;=4^E09.622
- ;;^UTILITY(U,$J,358.3,8983,2)
- ;;=^5002577
- ;;^UTILITY(U,$J,358.3,8984,0)
- ;;=E09.621^^55^555^62
- ;;^UTILITY(U,$J,358.3,8984,1,0)
+ ;;^UTILITY(U,$J,358.3,20081,1,3,0)
+ ;;=3^Lung Transplant Status
+ ;;^UTILITY(U,$J,358.3,20081,1,4,0)
+ ;;=4^Z94.2
+ ;;^UTILITY(U,$J,358.3,20081,2)
+ ;;=^5063656
+ ;;^UTILITY(U,$J,358.3,20082,0)
+ ;;=Z94.3^^86^995^55
+ ;;^UTILITY(U,$J,358.3,20082,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8984,1,3,0)
- ;;=3^Drug/chem induced diabetes mellitus with foot ulcer
- ;;^UTILITY(U,$J,358.3,8984,1,4,0)
- ;;=4^E09.621
- ;;^UTILITY(U,$J,358.3,8984,2)
- ;;=^5002576
- ;;^UTILITY(U,$J,358.3,8985,0)
- ;;=E09.628^^55^555^53
- ;;^UTILITY(U,$J,358.3,8985,1,0)
+ ;;^UTILITY(U,$J,358.3,20082,1,3,0)
+ ;;=3^Heart & Lungs Transplant Status
+ ;;^UTILITY(U,$J,358.3,20082,1,4,0)
+ ;;=4^Z94.3
+ ;;^UTILITY(U,$J,358.3,20082,2)
+ ;;=^5063657
+ ;;^UTILITY(U,$J,358.3,20083,0)
+ ;;=Z94.4^^86^995^65
+ ;;^UTILITY(U,$J,358.3,20083,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8985,1,3,0)
- ;;=3^Drug/chem diabetes w oth skin complications
- ;;^UTILITY(U,$J,358.3,8985,1,4,0)
- ;;=4^E09.628
- ;;^UTILITY(U,$J,358.3,8985,2)
- ;;=^5002578
- ;;^UTILITY(U,$J,358.3,8986,0)
- ;;=E09.630^^55^555^54
- ;;^UTILITY(U,$J,358.3,8986,1,0)
+ ;;^UTILITY(U,$J,358.3,20083,1,3,0)
+ ;;=3^Liver Transplant Status
+ ;;^UTILITY(U,$J,358.3,20083,1,4,0)
+ ;;=4^Z94.4
+ ;;^UTILITY(U,$J,358.3,20083,2)
+ ;;=^5063658
+ ;;^UTILITY(U,$J,358.3,20084,0)
+ ;;=Z94.84^^86^995^143
+ ;;^UTILITY(U,$J,358.3,20084,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8986,1,3,0)
- ;;=3^Drug/chem diabetes w periodontal disease
- ;;^UTILITY(U,$J,358.3,8986,1,4,0)
- ;;=4^E09.630
- ;;^UTILITY(U,$J,358.3,8986,2)
- ;;=^5002579
- ;;^UTILITY(U,$J,358.3,8987,0)
- ;;=E09.638^^55^555^52
- ;;^UTILITY(U,$J,358.3,8987,1,0)
+ ;;^UTILITY(U,$J,358.3,20084,1,3,0)
+ ;;=3^Stem Cell Transplant Status
+ ;;^UTILITY(U,$J,358.3,20084,1,4,0)
+ ;;=4^Z94.84
+ ;;^UTILITY(U,$J,358.3,20084,2)
+ ;;=^5063665
+ ;;^UTILITY(U,$J,358.3,20085,0)
+ ;;=Z96.21^^86^995^14
+ ;;^UTILITY(U,$J,358.3,20085,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8987,1,3,0)
- ;;=3^Drug/chem diabetes w oth oral complications
- ;;^UTILITY(U,$J,358.3,8987,1,4,0)
- ;;=4^E09.638
- ;;^UTILITY(U,$J,358.3,8987,2)
- ;;=^5002580
- ;;^UTILITY(U,$J,358.3,8988,0)
- ;;=E09.65^^55^555^59
- ;;^UTILITY(U,$J,358.3,8988,1,0)
+ ;;^UTILITY(U,$J,358.3,20085,1,3,0)
+ ;;=3^Cochlear Implant Status
+ ;;^UTILITY(U,$J,358.3,20085,1,4,0)
+ ;;=4^Z96.21
+ ;;^UTILITY(U,$J,358.3,20085,2)
+ ;;=^5063684
+ ;;^UTILITY(U,$J,358.3,20086,0)
+ ;;=Z96.41^^86^995^126
+ ;;^UTILITY(U,$J,358.3,20086,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8988,1,3,0)
- ;;=3^Drug/chem induced diabetes mellitus w hyperglycemia
- ;;^UTILITY(U,$J,358.3,8988,1,4,0)
- ;;=4^E09.65
- ;;^UTILITY(U,$J,358.3,8988,2)
- ;;=^5002583
- ;;^UTILITY(U,$J,358.3,8989,0)
- ;;=E09.69^^55^555^49
- ;;^UTILITY(U,$J,358.3,8989,1,0)
+ ;;^UTILITY(U,$J,358.3,20086,1,3,0)
+ ;;=3^Presence of Insulin Pump
+ ;;^UTILITY(U,$J,358.3,20086,1,4,0)
+ ;;=4^Z96.41
+ ;;^UTILITY(U,$J,358.3,20086,2)
+ ;;=^5063688
+ ;;^UTILITY(U,$J,358.3,20087,0)
+ ;;=Z96.641^^86^995^134
+ ;;^UTILITY(U,$J,358.3,20087,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8989,1,3,0)
- ;;=3^Drug/chem diabetes w oth complication
- ;;^UTILITY(U,$J,358.3,8989,1,4,0)
- ;;=4^E09.69
- ;;^UTILITY(U,$J,358.3,8989,2)
- ;;=^5002584
- ;;^UTILITY(U,$J,358.3,8990,0)
- ;;=E09.649^^55^555^39
- ;;^UTILITY(U,$J,358.3,8990,1,0)
+ ;;^UTILITY(U,$J,358.3,20087,1,3,0)
+ ;;=3^Presence of Right Artificial Hip Jt
+ ;;^UTILITY(U,$J,358.3,20087,1,4,0)
+ ;;=4^Z96.641
+ ;;^UTILITY(U,$J,358.3,20087,2)
+ ;;=^5063701
+ ;;^UTILITY(U,$J,358.3,20088,0)
+ ;;=Z96.642^^86^995^129
+ ;;^UTILITY(U,$J,358.3,20088,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8990,1,3,0)
- ;;=3^Drug/chem diabetes w hypoglycemia w/o coma
- ;;^UTILITY(U,$J,358.3,8990,1,4,0)
- ;;=4^E09.649
- ;;^UTILITY(U,$J,358.3,8990,2)
- ;;=^5002582
- ;;^UTILITY(U,$J,358.3,8991,0)
- ;;=E08.8^^55^555^30
- ;;^UTILITY(U,$J,358.3,8991,1,0)
+ ;;^UTILITY(U,$J,358.3,20088,1,3,0)
+ ;;=3^Presence of Left Artificial Hip Jt
+ ;;^UTILITY(U,$J,358.3,20088,1,4,0)
+ ;;=4^Z96.642
+ ;;^UTILITY(U,$J,358.3,20088,2)
+ ;;=^5063702
+ ;;^UTILITY(U,$J,358.3,20089,0)
+ ;;=Z96.643^^86^995^121
+ ;;^UTILITY(U,$J,358.3,20089,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8991,1,3,0)
- ;;=3^Diabetes due to underlying condition w unsp complications
- ;;^UTILITY(U,$J,358.3,8991,1,4,0)
- ;;=4^E08.8
- ;;^UTILITY(U,$J,358.3,8991,2)
- ;;=^5002543
- ;;^UTILITY(U,$J,358.3,8992,0)
- ;;=E09.8^^55^555^55
+ ;;^UTILITY(U,$J,358.3,20089,1,3,0)
+ ;;=3^Presence of Artificial Hip Jt,Bilateral
+ ;;^UTILITY(U,$J,358.3,20089,1,4,0)
+ ;;=4^Z96.643
+ ;;^UTILITY(U,$J,358.3,20089,2)
+ ;;=^5063703
+ ;;^UTILITY(U,$J,358.3,20090,0)
+ ;;=Z96.651^^86^995^135
+ ;;^UTILITY(U,$J,358.3,20090,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20090,1,3,0)
+ ;;=3^Presence of Right Artificial Knee Jt
+ ;;^UTILITY(U,$J,358.3,20090,1,4,0)
+ ;;=4^Z96.651
+ ;;^UTILITY(U,$J,358.3,20090,2)
+ ;;=^5063705
+ ;;^UTILITY(U,$J,358.3,20091,0)
+ ;;=Z96.652^^86^995^130
+ ;;^UTILITY(U,$J,358.3,20091,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20091,1,3,0)
+ ;;=3^Presence of Left Artificial Knee Jt
+ ;;^UTILITY(U,$J,358.3,20091,1,4,0)
+ ;;=4^Z96.652
+ ;;^UTILITY(U,$J,358.3,20091,2)
+ ;;=^5063706
+ ;;^UTILITY(U,$J,358.3,20092,0)
+ ;;=Z96.653^^86^995^122
+ ;;^UTILITY(U,$J,358.3,20092,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20092,1,3,0)
+ ;;=3^Presence of Artificial Knee Jt,Bilateral
+ ;;^UTILITY(U,$J,358.3,20092,1,4,0)
+ ;;=4^Z96.653
+ ;;^UTILITY(U,$J,358.3,20092,2)
+ ;;=^5063707
+ ;;^UTILITY(U,$J,358.3,20093,0)
+ ;;=Z96.7^^86^995^125
+ ;;^UTILITY(U,$J,358.3,20093,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20093,1,3,0)
+ ;;=3^Presence of Bone/Tendon Implants NEC
+ ;;^UTILITY(U,$J,358.3,20093,1,4,0)
+ ;;=4^Z96.7
+ ;;^UTILITY(U,$J,358.3,20093,2)
+ ;;=^5063716
+ ;;^UTILITY(U,$J,358.3,20094,0)
+ ;;=Z97.11^^86^995^133
+ ;;^UTILITY(U,$J,358.3,20094,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20094,1,3,0)
+ ;;=3^Presence of Right Artificial Arm
+ ;;^UTILITY(U,$J,358.3,20094,1,4,0)
+ ;;=4^Z97.11
+ ;;^UTILITY(U,$J,358.3,20094,2)
+ ;;=^5063722
+ ;;^UTILITY(U,$J,358.3,20095,0)
+ ;;=Z97.12^^86^995^128
+ ;;^UTILITY(U,$J,358.3,20095,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20095,1,3,0)
+ ;;=3^Presence of Left Artificial Arm
+ ;;^UTILITY(U,$J,358.3,20095,1,4,0)
+ ;;=4^Z97.12
+ ;;^UTILITY(U,$J,358.3,20095,2)
+ ;;=^5063723
+ ;;^UTILITY(U,$J,358.3,20096,0)
+ ;;=Z97.13^^86^995^136
+ ;;^UTILITY(U,$J,358.3,20096,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20096,1,3,0)
+ ;;=3^Presence of Right Artificial Leg
+ ;;^UTILITY(U,$J,358.3,20096,1,4,0)
+ ;;=4^Z97.13
+ ;;^UTILITY(U,$J,358.3,20096,2)
+ ;;=^5063724
+ ;;^UTILITY(U,$J,358.3,20097,0)
+ ;;=Z97.14^^86^995^131
+ ;;^UTILITY(U,$J,358.3,20097,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20097,1,3,0)
+ ;;=3^Presence of Left Artificial Leg
+ ;;^UTILITY(U,$J,358.3,20097,1,4,0)
+ ;;=4^Z97.14
+ ;;^UTILITY(U,$J,358.3,20097,2)
+ ;;=^5063725
+ ;;^UTILITY(U,$J,358.3,20098,0)
+ ;;=Z97.15^^86^995^123
+ ;;^UTILITY(U,$J,358.3,20098,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20098,1,3,0)
+ ;;=3^Presence of Bilateral Artificial Arms
+ ;;^UTILITY(U,$J,358.3,20098,1,4,0)
+ ;;=4^Z97.15
+ ;;^UTILITY(U,$J,358.3,20098,2)
+ ;;=^5063726
+ ;;^UTILITY(U,$J,358.3,20099,0)
+ ;;=Z97.16^^86^995^124
+ ;;^UTILITY(U,$J,358.3,20099,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20099,1,3,0)
+ ;;=3^Presence of Bilateral Artificial Legs
+ ;;^UTILITY(U,$J,358.3,20099,1,4,0)
+ ;;=4^Z97.16
+ ;;^UTILITY(U,$J,358.3,20099,2)
+ ;;=^5063727
+ ;;^UTILITY(U,$J,358.3,20100,0)
+ ;;=Z98.61^^86^995^17
+ ;;^UTILITY(U,$J,358.3,20100,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20100,1,3,0)
+ ;;=3^Coronary Angioplasty Status
+ ;;^UTILITY(U,$J,358.3,20100,1,4,0)
+ ;;=4^Z98.61
+ ;;^UTILITY(U,$J,358.3,20100,2)
+ ;;=^5063742
+ ;;^UTILITY(U,$J,358.3,20101,0)
+ ;;=Z98.62^^86^995^73
+ ;;^UTILITY(U,$J,358.3,20101,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20101,1,3,0)
+ ;;=3^Peripheral Vascular Angioplasty Status
+ ;;^UTILITY(U,$J,358.3,20101,1,4,0)
+ ;;=4^Z98.62
+ ;;^UTILITY(U,$J,358.3,20101,2)
+ ;;=^5063743
+ ;;^UTILITY(U,$J,358.3,20102,0)
+ ;;=Z98.84^^86^995^12
+ ;;^UTILITY(U,$J,358.3,20102,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20102,1,3,0)
+ ;;=3^Bariatric Surgery Status
+ ;;^UTILITY(U,$J,358.3,20102,1,4,0)
+ ;;=4^Z98.84
+ ;;^UTILITY(U,$J,358.3,20102,2)
+ ;;=^5063749
+ ;;^UTILITY(U,$J,358.3,20103,0)
+ ;;=Z99.2^^86^995^141
+ ;;^UTILITY(U,$J,358.3,20103,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20103,1,3,0)
+ ;;=3^Renal Dialysis Dependence
+ ;;^UTILITY(U,$J,358.3,20103,1,4,0)
+ ;;=4^Z99.2
+ ;;^UTILITY(U,$J,358.3,20103,2)
+ ;;=^5063758
+ ;;^UTILITY(U,$J,358.3,20104,0)
+ ;;=Z99.81^^86^995^144
+ ;;^UTILITY(U,$J,358.3,20104,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20104,1,3,0)
+ ;;=3^Supplemental Oxygen Dependence
+ ;;^UTILITY(U,$J,358.3,20104,1,4,0)
+ ;;=4^Z99.81
+ ;;^UTILITY(U,$J,358.3,20104,2)
+ ;;=^5063760
+ ;;^UTILITY(U,$J,358.3,20105,0)
+ ;;=Z90.79^^86^995^2
+ ;;^UTILITY(U,$J,358.3,20105,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20105,1,3,0)
+ ;;=3^Acquired Absence of Genital Organs NEC
+ ;;^UTILITY(U,$J,358.3,20105,1,4,0)
+ ;;=4^Z90.79
+ ;;^UTILITY(U,$J,358.3,20105,2)
+ ;;=^5063596
+ ;;^UTILITY(U,$J,358.3,20106,0)
+ ;;=Z90.5^^86^995^3

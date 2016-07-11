@@ -1,126 +1,288 @@
-IBDEI0E7 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0E7 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6198,0)
- ;;=E36.01^^40^386^29
- ;;^UTILITY(U,$J,358.3,6198,1,0)
+ ;;^UTILITY(U,$J,358.3,14196,1,3,0)
+ ;;=3^Chronic Maxillary Sinusitis
+ ;;^UTILITY(U,$J,358.3,14196,1,4,0)
+ ;;=4^J32.0
+ ;;^UTILITY(U,$J,358.3,14196,2)
+ ;;=^24407
+ ;;^UTILITY(U,$J,358.3,14197,0)
+ ;;=J32.1^^61^731^14
+ ;;^UTILITY(U,$J,358.3,14197,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6198,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Endocrine System Organ/Structure
- ;;^UTILITY(U,$J,358.3,6198,1,4,0)
- ;;=4^E36.01
- ;;^UTILITY(U,$J,358.3,6198,2)
- ;;=^5002779
- ;;^UTILITY(U,$J,358.3,6199,0)
- ;;=I97.711^^40^386^12
- ;;^UTILITY(U,$J,358.3,6199,1,0)
+ ;;^UTILITY(U,$J,358.3,14197,1,3,0)
+ ;;=3^Chronic Frontal Sinusitis
+ ;;^UTILITY(U,$J,358.3,14197,1,4,0)
+ ;;=4^J32.1
+ ;;^UTILITY(U,$J,358.3,14197,2)
+ ;;=^24380
+ ;;^UTILITY(U,$J,358.3,14198,0)
+ ;;=J32.9^^61^731^16
+ ;;^UTILITY(U,$J,358.3,14198,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6199,1,3,0)
- ;;=3^Intraoperative Cardiac Arrest During Surgery
- ;;^UTILITY(U,$J,358.3,6199,1,4,0)
- ;;=4^I97.711
- ;;^UTILITY(U,$J,358.3,6199,2)
- ;;=^5008104
- ;;^UTILITY(U,$J,358.3,6200,0)
- ;;=I97.791^^40^386^13
- ;;^UTILITY(U,$J,358.3,6200,1,0)
+ ;;^UTILITY(U,$J,358.3,14198,1,3,0)
+ ;;=3^Chronic Sinusitis,Unspec
+ ;;^UTILITY(U,$J,358.3,14198,1,4,0)
+ ;;=4^J32.9
+ ;;^UTILITY(U,$J,358.3,14198,2)
+ ;;=^5008207
+ ;;^UTILITY(U,$J,358.3,14199,0)
+ ;;=J30.9^^61^731^11
+ ;;^UTILITY(U,$J,358.3,14199,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6200,1,3,0)
- ;;=3^Intraoperative Cardiac Functional Disturbance During Surgery
- ;;^UTILITY(U,$J,358.3,6200,1,4,0)
- ;;=4^I97.791
- ;;^UTILITY(U,$J,358.3,6200,2)
- ;;=^5008106
- ;;^UTILITY(U,$J,358.3,6201,0)
- ;;=I97.411^^40^386^25
- ;;^UTILITY(U,$J,358.3,6201,1,0)
+ ;;^UTILITY(U,$J,358.3,14199,1,3,0)
+ ;;=3^Allergic Rhinitis,Unspec
+ ;;^UTILITY(U,$J,358.3,14199,1,4,0)
+ ;;=4^J30.9
+ ;;^UTILITY(U,$J,358.3,14199,2)
+ ;;=^5008205
+ ;;^UTILITY(U,$J,358.3,14200,0)
+ ;;=J30.0^^61^731^24
+ ;;^UTILITY(U,$J,358.3,14200,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6201,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Circ System During Cardiac Bypass
- ;;^UTILITY(U,$J,358.3,6201,1,4,0)
- ;;=4^I97.411
- ;;^UTILITY(U,$J,358.3,6201,2)
- ;;=^5008094
- ;;^UTILITY(U,$J,358.3,6202,0)
- ;;=I97.410^^40^386^26
- ;;^UTILITY(U,$J,358.3,6202,1,0)
+ ;;^UTILITY(U,$J,358.3,14200,1,3,0)
+ ;;=3^Vasomotor Rhinitis
+ ;;^UTILITY(U,$J,358.3,14200,1,4,0)
+ ;;=4^J30.0
+ ;;^UTILITY(U,$J,358.3,14200,2)
+ ;;=^5008201
+ ;;^UTILITY(U,$J,358.3,14201,0)
+ ;;=K05.00^^61^731^2
+ ;;^UTILITY(U,$J,358.3,14201,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6202,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Circ System During Cardiac Cath
- ;;^UTILITY(U,$J,358.3,6202,1,4,0)
- ;;=4^I97.410
- ;;^UTILITY(U,$J,358.3,6202,2)
- ;;=^5008093
- ;;^UTILITY(U,$J,358.3,6203,0)
- ;;=I97.42^^40^386^27
- ;;^UTILITY(U,$J,358.3,6203,1,0)
+ ;;^UTILITY(U,$J,358.3,14201,1,3,0)
+ ;;=3^Acute Gingivitis,Plaque Induced
+ ;;^UTILITY(U,$J,358.3,14201,1,4,0)
+ ;;=4^K05.00
+ ;;^UTILITY(U,$J,358.3,14201,2)
+ ;;=^334192
+ ;;^UTILITY(U,$J,358.3,14202,0)
+ ;;=R04.0^^61^731^17
+ ;;^UTILITY(U,$J,358.3,14202,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6203,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Circ System
- ;;^UTILITY(U,$J,358.3,6203,1,4,0)
- ;;=4^I97.42
- ;;^UTILITY(U,$J,358.3,6203,2)
- ;;=^5008096
- ;;^UTILITY(U,$J,358.3,6204,0)
- ;;=K91.62^^40^386^28
- ;;^UTILITY(U,$J,358.3,6204,1,0)
+ ;;^UTILITY(U,$J,358.3,14202,1,3,0)
+ ;;=3^Epistaxis
+ ;;^UTILITY(U,$J,358.3,14202,1,4,0)
+ ;;=4^R04.0
+ ;;^UTILITY(U,$J,358.3,14202,2)
+ ;;=^5019173
+ ;;^UTILITY(U,$J,358.3,14203,0)
+ ;;=R09.82^^61^731^21
+ ;;^UTILITY(U,$J,358.3,14203,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6204,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Digestive System
- ;;^UTILITY(U,$J,358.3,6204,1,4,0)
- ;;=4^K91.62
- ;;^UTILITY(U,$J,358.3,6204,2)
- ;;=^5008904
- ;;^UTILITY(U,$J,358.3,6205,0)
- ;;=H95.22^^40^386^30
- ;;^UTILITY(U,$J,358.3,6205,1,0)
+ ;;^UTILITY(U,$J,358.3,14203,1,3,0)
+ ;;=3^Postnasal Drip
+ ;;^UTILITY(U,$J,358.3,14203,1,4,0)
+ ;;=4^R09.82
+ ;;^UTILITY(U,$J,358.3,14203,2)
+ ;;=^97058
+ ;;^UTILITY(U,$J,358.3,14204,0)
+ ;;=K12.30^^61^731^20
+ ;;^UTILITY(U,$J,358.3,14204,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6205,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Ear/Mastoid
- ;;^UTILITY(U,$J,358.3,6205,1,4,0)
- ;;=4^H95.22
- ;;^UTILITY(U,$J,358.3,6205,2)
- ;;=^5007027
- ;;^UTILITY(U,$J,358.3,6206,0)
- ;;=E36.02^^40^386^31
- ;;^UTILITY(U,$J,358.3,6206,1,0)
+ ;;^UTILITY(U,$J,358.3,14204,1,3,0)
+ ;;=3^Oral Mucositis,Unspec
+ ;;^UTILITY(U,$J,358.3,14204,1,4,0)
+ ;;=4^K12.30
+ ;;^UTILITY(U,$J,358.3,14204,2)
+ ;;=^5008486
+ ;;^UTILITY(U,$J,358.3,14205,0)
+ ;;=J30.1^^61^731^10
+ ;;^UTILITY(U,$J,358.3,14205,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6206,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Endocrine System
- ;;^UTILITY(U,$J,358.3,6206,1,4,0)
- ;;=4^E36.02
- ;;^UTILITY(U,$J,358.3,6206,2)
- ;;=^5002780
- ;;^UTILITY(U,$J,358.3,6207,0)
- ;;=H59.121^^40^386^36
- ;;^UTILITY(U,$J,358.3,6207,1,0)
+ ;;^UTILITY(U,$J,358.3,14205,1,3,0)
+ ;;=3^Allergic Rhinitis d/t Pollen
+ ;;^UTILITY(U,$J,358.3,14205,1,4,0)
+ ;;=4^J30.1
+ ;;^UTILITY(U,$J,358.3,14205,2)
+ ;;=^269906
+ ;;^UTILITY(U,$J,358.3,14206,0)
+ ;;=R09.81^^61^731^18
+ ;;^UTILITY(U,$J,358.3,14206,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6207,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Right Eye/Adnexa
- ;;^UTILITY(U,$J,358.3,6207,1,4,0)
- ;;=4^H59.121
- ;;^UTILITY(U,$J,358.3,6207,2)
- ;;=^5006405
- ;;^UTILITY(U,$J,358.3,6208,0)
- ;;=H59.122^^40^386^33
- ;;^UTILITY(U,$J,358.3,6208,1,0)
+ ;;^UTILITY(U,$J,358.3,14206,1,3,0)
+ ;;=3^Nasal Congestion
+ ;;^UTILITY(U,$J,358.3,14206,1,4,0)
+ ;;=4^R09.81
+ ;;^UTILITY(U,$J,358.3,14206,2)
+ ;;=^5019203
+ ;;^UTILITY(U,$J,358.3,14207,0)
+ ;;=I69.928^^61^731^22
+ ;;^UTILITY(U,$J,358.3,14207,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6208,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Left Eye/Adnexa
- ;;^UTILITY(U,$J,358.3,6208,1,4,0)
- ;;=4^H59.122
- ;;^UTILITY(U,$J,358.3,6208,2)
- ;;=^5006406
- ;;^UTILITY(U,$J,358.3,6209,0)
- ;;=H59.123^^40^386^24
- ;;^UTILITY(U,$J,358.3,6209,1,0)
+ ;;^UTILITY(U,$J,358.3,14207,1,3,0)
+ ;;=3^Speech/Lang Deficit Following Cerebvasc Disease
+ ;;^UTILITY(U,$J,358.3,14207,1,4,0)
+ ;;=4^I69.928
+ ;;^UTILITY(U,$J,358.3,14207,2)
+ ;;=^5007557
+ ;;^UTILITY(U,$J,358.3,14208,0)
+ ;;=I69.328^^61^731^23
+ ;;^UTILITY(U,$J,358.3,14208,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6209,1,3,0)
- ;;=3^Intraoperative Hemorrhage/Hematoma of Bilateral Eyes/Adnexa
- ;;^UTILITY(U,$J,358.3,6209,1,4,0)
- ;;=4^H59.123
- ;;^UTILITY(U,$J,358.3,6209,2)
- ;;=^5006407
- ;;^UTILITY(U,$J,358.3,6210,0)
- ;;=N99.62^^40^386^32
+ ;;^UTILITY(U,$J,358.3,14208,1,3,0)
+ ;;=3^Speech/Lang Deficit Following Cerebvasc Infarc
+ ;;^UTILITY(U,$J,358.3,14208,1,4,0)
+ ;;=4^I69.328
+ ;;^UTILITY(U,$J,358.3,14208,2)
+ ;;=^5007495
+ ;;^UTILITY(U,$J,358.3,14209,0)
+ ;;=E04.0^^61^732^39
+ ;;^UTILITY(U,$J,358.3,14209,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14209,1,3,0)
+ ;;=3^Nontoxic Diffuse Goiter
+ ;;^UTILITY(U,$J,358.3,14209,1,4,0)
+ ;;=4^E04.0
+ ;;^UTILITY(U,$J,358.3,14209,2)
+ ;;=^5002477
+ ;;^UTILITY(U,$J,358.3,14210,0)
+ ;;=E04.1^^61^732^41
+ ;;^UTILITY(U,$J,358.3,14210,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14210,1,3,0)
+ ;;=3^Nontoxic Single Thyroid Nodule
+ ;;^UTILITY(U,$J,358.3,14210,1,4,0)
+ ;;=4^E04.1
+ ;;^UTILITY(U,$J,358.3,14210,2)
+ ;;=^5002478
+ ;;^UTILITY(U,$J,358.3,14211,0)
+ ;;=E04.2^^61^732^40
+ ;;^UTILITY(U,$J,358.3,14211,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14211,1,3,0)
+ ;;=3^Nontoxic Multinodular Goiter
+ ;;^UTILITY(U,$J,358.3,14211,1,4,0)
+ ;;=4^E04.2
+ ;;^UTILITY(U,$J,358.3,14211,2)
+ ;;=^267790
+ ;;^UTILITY(U,$J,358.3,14212,0)
+ ;;=E01.1^^61^732^36
+ ;;^UTILITY(U,$J,358.3,14212,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14212,1,3,0)
+ ;;=3^Iodine-Deficiency Related Multinodular (Endemic) Goiter
+ ;;^UTILITY(U,$J,358.3,14212,1,4,0)
+ ;;=4^E01.1
+ ;;^UTILITY(U,$J,358.3,14212,2)
+ ;;=^5002465
+ ;;^UTILITY(U,$J,358.3,14213,0)
+ ;;=E05.00^^61^732^56
+ ;;^UTILITY(U,$J,358.3,14213,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14213,1,3,0)
+ ;;=3^Thyrotoxicosis w/ Diffuse Goiter w/o Thyrotoxic Crisis
+ ;;^UTILITY(U,$J,358.3,14213,1,4,0)
+ ;;=4^E05.00
+ ;;^UTILITY(U,$J,358.3,14213,2)
+ ;;=^5002481
+ ;;^UTILITY(U,$J,358.3,14214,0)
+ ;;=E05.01^^61^732^55
+ ;;^UTILITY(U,$J,358.3,14214,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14214,1,3,0)
+ ;;=3^Thyrotoxicosis w/ Diffuse Goiter w/ Thyrotoxic Crisis/Storm
+ ;;^UTILITY(U,$J,358.3,14214,1,4,0)
+ ;;=4^E05.01
+ ;;^UTILITY(U,$J,358.3,14214,2)
+ ;;=^5002482
+ ;;^UTILITY(U,$J,358.3,14215,0)
+ ;;=E05.90^^61^732^58
+ ;;^UTILITY(U,$J,358.3,14215,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14215,1,3,0)
+ ;;=3^Thyrotoxicosis,Unspec w/o Thyrotoxic Crisis/Storm
+ ;;^UTILITY(U,$J,358.3,14215,1,4,0)
+ ;;=4^E05.90
+ ;;^UTILITY(U,$J,358.3,14215,2)
+ ;;=^5002492
+ ;;^UTILITY(U,$J,358.3,14216,0)
+ ;;=E05.91^^61^732^57
+ ;;^UTILITY(U,$J,358.3,14216,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14216,1,3,0)
+ ;;=3^Thyrotoxicosis,Unspec w/ Thyrotoxic Crisis/Storm
+ ;;^UTILITY(U,$J,358.3,14216,1,4,0)
+ ;;=4^E05.91
+ ;;^UTILITY(U,$J,358.3,14216,2)
+ ;;=^5002493
+ ;;^UTILITY(U,$J,358.3,14217,0)
+ ;;=E89.0^^61^732^50
+ ;;^UTILITY(U,$J,358.3,14217,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14217,1,3,0)
+ ;;=3^Postprocedural Hypothyroidism
+ ;;^UTILITY(U,$J,358.3,14217,1,4,0)
+ ;;=4^E89.0
+ ;;^UTILITY(U,$J,358.3,14217,2)
+ ;;=^5003035
+ ;;^UTILITY(U,$J,358.3,14218,0)
+ ;;=E03.2^^61^732^32
+ ;;^UTILITY(U,$J,358.3,14218,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14218,1,3,0)
+ ;;=3^Hypothyroidism d/t Meds/Oth Exogenous Substances
+ ;;^UTILITY(U,$J,358.3,14218,1,4,0)
+ ;;=4^E03.2
+ ;;^UTILITY(U,$J,358.3,14218,2)
+ ;;=^5002471
+ ;;^UTILITY(U,$J,358.3,14219,0)
+ ;;=E03.9^^61^732^33
+ ;;^UTILITY(U,$J,358.3,14219,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14219,1,3,0)
+ ;;=3^Hypothyroidism,Unspec
+ ;;^UTILITY(U,$J,358.3,14219,1,4,0)
+ ;;=4^E03.9
+ ;;^UTILITY(U,$J,358.3,14219,2)
+ ;;=^5002476
+ ;;^UTILITY(U,$J,358.3,14220,0)
+ ;;=E06.0^^61^732^53
+ ;;^UTILITY(U,$J,358.3,14220,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14220,1,3,0)
+ ;;=3^Thyroiditis,Acute
+ ;;^UTILITY(U,$J,358.3,14220,1,4,0)
+ ;;=4^E06.0
+ ;;^UTILITY(U,$J,358.3,14220,2)
+ ;;=^2692
+ ;;^UTILITY(U,$J,358.3,14221,0)
+ ;;=E06.1^^61^732^54
+ ;;^UTILITY(U,$J,358.3,14221,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14221,1,3,0)
+ ;;=3^Thyroiditis,Subacute
+ ;;^UTILITY(U,$J,358.3,14221,1,4,0)
+ ;;=4^E06.1
+ ;;^UTILITY(U,$J,358.3,14221,2)
+ ;;=^119376
+ ;;^UTILITY(U,$J,358.3,14222,0)
+ ;;=C73.^^61^732^37
+ ;;^UTILITY(U,$J,358.3,14222,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14222,1,3,0)
+ ;;=3^Malig Neop of Thyroid Gland
+ ;;^UTILITY(U,$J,358.3,14222,1,4,0)
+ ;;=4^C73.
+ ;;^UTILITY(U,$J,358.3,14222,2)
+ ;;=^267296
+ ;;^UTILITY(U,$J,358.3,14223,0)
+ ;;=E10.21^^61^732^8
+ ;;^UTILITY(U,$J,358.3,14223,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14223,1,3,0)
+ ;;=3^DM Type 1 w/ Diabetic Nephropathy
+ ;;^UTILITY(U,$J,358.3,14223,1,4,0)
+ ;;=4^E10.21
+ ;;^UTILITY(U,$J,358.3,14223,2)
+ ;;=^5002589
+ ;;^UTILITY(U,$J,358.3,14224,0)
+ ;;=E10.9^^61^732^12
+ ;;^UTILITY(U,$J,358.3,14224,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14224,1,3,0)
+ ;;=3^DM Type 1 w/o Complications
+ ;;^UTILITY(U,$J,358.3,14224,1,4,0)
+ ;;=4^E10.9

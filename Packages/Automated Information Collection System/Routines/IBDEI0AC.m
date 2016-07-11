@@ -1,134 +1,286 @@
-IBDEI0AC ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0AC ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,4309,2)
- ;;=^5059820
- ;;^UTILITY(U,$J,358.3,4310,0)
- ;;=W10.9XXD^^28^265^20
- ;;^UTILITY(U,$J,358.3,4310,1,0)
+ ;;^UTILITY(U,$J,358.3,10344,1,4,0)
+ ;;=4^H53.33
+ ;;^UTILITY(U,$J,358.3,10344,2)
+ ;;=^268841
+ ;;^UTILITY(U,$J,358.3,10345,0)
+ ;;=H52.531^^51^591^37
+ ;;^UTILITY(U,$J,358.3,10345,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4310,1,3,0)
- ;;=3^Fall from Stairs/Steps,Subsequent
- ;;^UTILITY(U,$J,358.3,4310,1,4,0)
- ;;=4^W10.9XXD
- ;;^UTILITY(U,$J,358.3,4310,2)
- ;;=^5059593
- ;;^UTILITY(U,$J,358.3,4311,0)
- ;;=W10.0XXD^^28^265^11
- ;;^UTILITY(U,$J,358.3,4311,1,0)
+ ;;^UTILITY(U,$J,358.3,10345,1,3,0)
+ ;;=3^Spasm of Accommodation,Right eye
+ ;;^UTILITY(U,$J,358.3,10345,1,4,0)
+ ;;=4^H52.531
+ ;;^UTILITY(U,$J,358.3,10345,2)
+ ;;=^5006286
+ ;;^UTILITY(U,$J,358.3,10346,0)
+ ;;=H52.532^^51^591^36
+ ;;^UTILITY(U,$J,358.3,10346,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4311,1,3,0)
- ;;=3^Fall from Escalator,Subsequent
- ;;^UTILITY(U,$J,358.3,4311,1,4,0)
- ;;=4^W10.0XXD
- ;;^UTILITY(U,$J,358.3,4311,2)
- ;;=^5059581
- ;;^UTILITY(U,$J,358.3,4312,0)
- ;;=W10.2XXD^^28^265^13
- ;;^UTILITY(U,$J,358.3,4312,1,0)
+ ;;^UTILITY(U,$J,358.3,10346,1,3,0)
+ ;;=3^Spasm of Accommodation,Left eye
+ ;;^UTILITY(U,$J,358.3,10346,1,4,0)
+ ;;=4^H52.532
+ ;;^UTILITY(U,$J,358.3,10346,2)
+ ;;=^5006287
+ ;;^UTILITY(U,$J,358.3,10347,0)
+ ;;=H52.533^^51^591^35
+ ;;^UTILITY(U,$J,358.3,10347,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4312,1,3,0)
- ;;=3^Fall from Incline,Subsequent
- ;;^UTILITY(U,$J,358.3,4312,1,4,0)
- ;;=4^W10.2XXD
- ;;^UTILITY(U,$J,358.3,4312,2)
- ;;=^5059587
- ;;^UTILITY(U,$J,358.3,4313,0)
- ;;=W10.1XXD^^28^265^19
- ;;^UTILITY(U,$J,358.3,4313,1,0)
+ ;;^UTILITY(U,$J,358.3,10347,1,3,0)
+ ;;=3^Spasm of Accommodation,Bilateral
+ ;;^UTILITY(U,$J,358.3,10347,1,4,0)
+ ;;=4^H52.533
+ ;;^UTILITY(U,$J,358.3,10347,2)
+ ;;=^5006288
+ ;;^UTILITY(U,$J,358.3,10348,0)
+ ;;=H53.033^^51^591^38
+ ;;^UTILITY(U,$J,358.3,10348,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4313,1,3,0)
- ;;=3^Fall from Sidewalk/Curb,Subsequent
- ;;^UTILITY(U,$J,358.3,4313,1,4,0)
- ;;=4^W10.1XXD
- ;;^UTILITY(U,$J,358.3,4313,2)
- ;;=^5059584
- ;;^UTILITY(U,$J,358.3,4314,0)
- ;;=W06.XXXD^^28^265^9
- ;;^UTILITY(U,$J,358.3,4314,1,0)
+ ;;^UTILITY(U,$J,358.3,10348,1,3,0)
+ ;;=3^Strabismic Amblyopia,Bilateral
+ ;;^UTILITY(U,$J,358.3,10348,1,4,0)
+ ;;=4^H53.033
+ ;;^UTILITY(U,$J,358.3,10348,2)
+ ;;=^5006305
+ ;;^UTILITY(U,$J,358.3,10349,0)
+ ;;=H53.031^^51^591^40
+ ;;^UTILITY(U,$J,358.3,10349,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4314,1,3,0)
- ;;=3^Fall from Bed,Subsequent
- ;;^UTILITY(U,$J,358.3,4314,1,4,0)
- ;;=4^W06.XXXD
- ;;^UTILITY(U,$J,358.3,4314,2)
- ;;=^5059560
- ;;^UTILITY(U,$J,358.3,4315,0)
- ;;=W07.XXXD^^28^265^10
- ;;^UTILITY(U,$J,358.3,4315,1,0)
+ ;;^UTILITY(U,$J,358.3,10349,1,3,0)
+ ;;=3^Strabismic Amblyopia,Right Eye
+ ;;^UTILITY(U,$J,358.3,10349,1,4,0)
+ ;;=4^H53.031
+ ;;^UTILITY(U,$J,358.3,10349,2)
+ ;;=^5006303
+ ;;^UTILITY(U,$J,358.3,10350,0)
+ ;;=H53.032^^51^591^39
+ ;;^UTILITY(U,$J,358.3,10350,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4315,1,3,0)
- ;;=3^Fall from Chair,Subsequent
- ;;^UTILITY(U,$J,358.3,4315,1,4,0)
- ;;=4^W07.XXXD
- ;;^UTILITY(U,$J,358.3,4315,2)
- ;;=^5059563
- ;;^UTILITY(U,$J,358.3,4316,0)
- ;;=W05.2XXD^^28^265^15
- ;;^UTILITY(U,$J,358.3,4316,1,0)
+ ;;^UTILITY(U,$J,358.3,10350,1,3,0)
+ ;;=3^Strabismic Amblyopia,Left Eye
+ ;;^UTILITY(U,$J,358.3,10350,1,4,0)
+ ;;=4^H53.032
+ ;;^UTILITY(U,$J,358.3,10350,2)
+ ;;=^5006304
+ ;;^UTILITY(U,$J,358.3,10351,0)
+ ;;=H50.69^^51^591^41
+ ;;^UTILITY(U,$J,358.3,10351,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4316,1,3,0)
- ;;=3^Fall from Non-Moving Motorized Scooter,Subsequent
- ;;^UTILITY(U,$J,358.3,4316,1,4,0)
- ;;=4^W05.2XXD
- ;;^UTILITY(U,$J,358.3,4316,2)
- ;;=^5059557
- ;;^UTILITY(U,$J,358.3,4317,0)
- ;;=W05.1XXD^^28^265^16
- ;;^UTILITY(U,$J,358.3,4317,1,0)
+ ;;^UTILITY(U,$J,358.3,10351,1,3,0)
+ ;;=3^Strabismus,Mechanical NEC
+ ;;^UTILITY(U,$J,358.3,10351,1,4,0)
+ ;;=4^H50.69
+ ;;^UTILITY(U,$J,358.3,10351,2)
+ ;;=^5006246
+ ;;^UTILITY(U,$J,358.3,10352,0)
+ ;;=H50.89^^51^591^42
+ ;;^UTILITY(U,$J,358.3,10352,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4317,1,3,0)
- ;;=3^Fall from Non-Moving Nonmotorized Scooter,Subsequent
- ;;^UTILITY(U,$J,358.3,4317,1,4,0)
- ;;=4^W05.1XXD
- ;;^UTILITY(U,$J,358.3,4317,2)
- ;;=^5059554
- ;;^UTILITY(U,$J,358.3,4318,0)
- ;;=W05.0XXD^^28^265^17
- ;;^UTILITY(U,$J,358.3,4318,1,0)
+ ;;^UTILITY(U,$J,358.3,10352,1,3,0)
+ ;;=3^Strabismus,Oth Specified
+ ;;^UTILITY(U,$J,358.3,10352,1,4,0)
+ ;;=4^H50.89
+ ;;^UTILITY(U,$J,358.3,10352,2)
+ ;;=^88142
+ ;;^UTILITY(U,$J,358.3,10353,0)
+ ;;=H49.883^^51^591^43
+ ;;^UTILITY(U,$J,358.3,10353,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4318,1,3,0)
- ;;=3^Fall from Non-Moving Wheelchair,Subsequent
- ;;^UTILITY(U,$J,358.3,4318,1,4,0)
- ;;=4^W05.0XXD
- ;;^UTILITY(U,$J,358.3,4318,2)
- ;;=^5059551
- ;;^UTILITY(U,$J,358.3,4319,0)
- ;;=W18.12XD^^28^265^21
- ;;^UTILITY(U,$J,358.3,4319,1,0)
+ ;;^UTILITY(U,$J,358.3,10353,1,3,0)
+ ;;=3^Strabismus,Paralytic,Bilateral NEC
+ ;;^UTILITY(U,$J,358.3,10353,1,4,0)
+ ;;=4^H49.883
+ ;;^UTILITY(U,$J,358.3,10353,2)
+ ;;=^5006205
+ ;;^UTILITY(U,$J,358.3,10354,0)
+ ;;=H49.881^^51^591^45
+ ;;^UTILITY(U,$J,358.3,10354,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4319,1,3,0)
- ;;=3^Fall from Toilet w/ Strike Against Object,Subsequent
- ;;^UTILITY(U,$J,358.3,4319,1,4,0)
- ;;=4^W18.12XD
- ;;^UTILITY(U,$J,358.3,4319,2)
- ;;=^5137984
- ;;^UTILITY(U,$J,358.3,4320,0)
- ;;=W18.11XD^^28^265^22
- ;;^UTILITY(U,$J,358.3,4320,1,0)
+ ;;^UTILITY(U,$J,358.3,10354,1,3,0)
+ ;;=3^Strabismus,Paralytic,Right Eye NEC
+ ;;^UTILITY(U,$J,358.3,10354,1,4,0)
+ ;;=4^H49.881
+ ;;^UTILITY(U,$J,358.3,10354,2)
+ ;;=^5006203
+ ;;^UTILITY(U,$J,358.3,10355,0)
+ ;;=H49.882^^51^591^44
+ ;;^UTILITY(U,$J,358.3,10355,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4320,1,3,0)
- ;;=3^Fall from Toilet,Subsequent
- ;;^UTILITY(U,$J,358.3,4320,1,4,0)
- ;;=4^W18.11XD
- ;;^UTILITY(U,$J,358.3,4320,2)
- ;;=^5059802
- ;;^UTILITY(U,$J,358.3,4321,0)
- ;;=W08.XXXD^^28^265^12
- ;;^UTILITY(U,$J,358.3,4321,1,0)
+ ;;^UTILITY(U,$J,358.3,10355,1,3,0)
+ ;;=3^Strabismus,Paralytic,Left Eye
+ ;;^UTILITY(U,$J,358.3,10355,1,4,0)
+ ;;=4^H49.882
+ ;;^UTILITY(U,$J,358.3,10355,2)
+ ;;=^5006204
+ ;;^UTILITY(U,$J,358.3,10356,0)
+ ;;=H50.21^^51^591^47
+ ;;^UTILITY(U,$J,358.3,10356,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4321,1,3,0)
- ;;=3^Fall from Furniture,Subsequent
- ;;^UTILITY(U,$J,358.3,4321,1,4,0)
- ;;=4^W08.XXXD
- ;;^UTILITY(U,$J,358.3,4321,2)
- ;;=^5059566
- ;;^UTILITY(U,$J,358.3,4322,0)
- ;;=W18.2XXD^^28^265^23
- ;;^UTILITY(U,$J,358.3,4322,1,0)
+ ;;^UTILITY(U,$J,358.3,10356,1,3,0)
+ ;;=3^Strabismus,Vertical,Right Eye
+ ;;^UTILITY(U,$J,358.3,10356,1,4,0)
+ ;;=4^H50.21
+ ;;^UTILITY(U,$J,358.3,10356,2)
+ ;;=^5006228
+ ;;^UTILITY(U,$J,358.3,10357,0)
+ ;;=H50.22^^51^591^46
+ ;;^UTILITY(U,$J,358.3,10357,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4322,1,3,0)
- ;;=3^Fall in Shower/Bathtub,Subsequent
- ;;^UTILITY(U,$J,358.3,4322,1,4,0)
- ;;=4^W18.2XXD
+ ;;^UTILITY(U,$J,358.3,10357,1,3,0)
+ ;;=3^Strabismus,Vertical,Left Eye
+ ;;^UTILITY(U,$J,358.3,10357,1,4,0)
+ ;;=4^H50.22
+ ;;^UTILITY(U,$J,358.3,10357,2)
+ ;;=^5006229
+ ;;^UTILITY(U,$J,358.3,10358,0)
+ ;;=H53.141^^51^591^50
+ ;;^UTILITY(U,$J,358.3,10358,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10358,1,3,0)
+ ;;=3^Visual Discomfort,Right Eye
+ ;;^UTILITY(U,$J,358.3,10358,1,4,0)
+ ;;=4^H53.141
+ ;;^UTILITY(U,$J,358.3,10358,2)
+ ;;=^5006317
+ ;;^UTILITY(U,$J,358.3,10359,0)
+ ;;=H53.142^^51^591^49
+ ;;^UTILITY(U,$J,358.3,10359,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10359,1,3,0)
+ ;;=3^Visual Discomfort,Left Eye
+ ;;^UTILITY(U,$J,358.3,10359,1,4,0)
+ ;;=4^H53.142
+ ;;^UTILITY(U,$J,358.3,10359,2)
+ ;;=^5006318
+ ;;^UTILITY(U,$J,358.3,10360,0)
+ ;;=H53.143^^51^591^48
+ ;;^UTILITY(U,$J,358.3,10360,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10360,1,3,0)
+ ;;=3^Visual Discomfort,Bilateral
+ ;;^UTILITY(U,$J,358.3,10360,1,4,0)
+ ;;=4^H53.143
+ ;;^UTILITY(U,$J,358.3,10360,2)
+ ;;=^5006319
+ ;;^UTILITY(U,$J,358.3,10361,0)
+ ;;=H53.8^^51^591^51
+ ;;^UTILITY(U,$J,358.3,10361,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10361,1,3,0)
+ ;;=3^Visual Disturbance NEC
+ ;;^UTILITY(U,$J,358.3,10361,1,4,0)
+ ;;=4^H53.8
+ ;;^UTILITY(U,$J,358.3,10361,2)
+ ;;=^5006356
+ ;;^UTILITY(U,$J,358.3,10362,0)
+ ;;=H53.16^^51^591^52
+ ;;^UTILITY(U,$J,358.3,10362,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10362,1,3,0)
+ ;;=3^Visual Disturbance,Psychophysical
+ ;;^UTILITY(U,$J,358.3,10362,1,4,0)
+ ;;=4^H53.16
+ ;;^UTILITY(U,$J,358.3,10362,2)
+ ;;=^268838
+ ;;^UTILITY(U,$J,358.3,10363,0)
+ ;;=H53.10^^51^591^54
+ ;;^UTILITY(U,$J,358.3,10363,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10363,1,3,0)
+ ;;=3^Visual Disturbance,Subjective,Unspec
+ ;;^UTILITY(U,$J,358.3,10363,1,4,0)
+ ;;=4^H53.10
+ ;;^UTILITY(U,$J,358.3,10363,2)
+ ;;=^5006307
+ ;;^UTILITY(U,$J,358.3,10364,0)
+ ;;=H53.9^^51^591^55
+ ;;^UTILITY(U,$J,358.3,10364,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10364,1,3,0)
+ ;;=3^Visual Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,10364,1,4,0)
+ ;;=4^H53.9
+ ;;^UTILITY(U,$J,358.3,10364,2)
+ ;;=^124001
+ ;;^UTILITY(U,$J,358.3,10365,0)
+ ;;=H53.19^^51^591^53
+ ;;^UTILITY(U,$J,358.3,10365,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10365,1,3,0)
+ ;;=3^Visual Disturbance,Subjective NEC
+ ;;^UTILITY(U,$J,358.3,10365,1,4,0)
+ ;;=4^H53.19
+ ;;^UTILITY(U,$J,358.3,10365,2)
+ ;;=^5006321
+ ;;^UTILITY(U,$J,358.3,10366,0)
+ ;;=H53.451^^51^591^58
+ ;;^UTILITY(U,$J,358.3,10366,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10366,1,3,0)
+ ;;=3^Visual Field Defect,Localized,Right Eye NEC
+ ;;^UTILITY(U,$J,358.3,10366,1,4,0)
+ ;;=4^H53.451
+ ;;^UTILITY(U,$J,358.3,10366,2)
+ ;;=^5006337
+ ;;^UTILITY(U,$J,358.3,10367,0)
+ ;;=H53.452^^51^591^57
+ ;;^UTILITY(U,$J,358.3,10367,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10367,1,3,0)
+ ;;=3^Visual Field Defect,Localized,Left Eye NEC
+ ;;^UTILITY(U,$J,358.3,10367,1,4,0)
+ ;;=4^H53.452
+ ;;^UTILITY(U,$J,358.3,10367,2)
+ ;;=^5006338
+ ;;^UTILITY(U,$J,358.3,10368,0)
+ ;;=H53.453^^51^591^56
+ ;;^UTILITY(U,$J,358.3,10368,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10368,1,3,0)
+ ;;=3^Visual Field Defect,Localized,Bilateral NEC
+ ;;^UTILITY(U,$J,358.3,10368,1,4,0)
+ ;;=4^H53.453
+ ;;^UTILITY(U,$J,358.3,10368,2)
+ ;;=^5006339
+ ;;^UTILITY(U,$J,358.3,10369,0)
+ ;;=C69.31^^51^592^59
+ ;;^UTILITY(U,$J,358.3,10369,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10369,1,3,0)
+ ;;=3^Malig Neop of Right Choroid
+ ;;^UTILITY(U,$J,358.3,10369,1,4,0)
+ ;;=4^C69.31
+ ;;^UTILITY(U,$J,358.3,10369,2)
+ ;;=^5001276
+ ;;^UTILITY(U,$J,358.3,10370,0)
+ ;;=C69.32^^51^592^58
+ ;;^UTILITY(U,$J,358.3,10370,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10370,1,3,0)
+ ;;=3^Malig Neop of Left Choroid
+ ;;^UTILITY(U,$J,358.3,10370,1,4,0)
+ ;;=4^C69.32
+ ;;^UTILITY(U,$J,358.3,10370,2)
+ ;;=^5001277
+ ;;^UTILITY(U,$J,358.3,10371,0)
+ ;;=D31.31^^51^592^5
+ ;;^UTILITY(U,$J,358.3,10371,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10371,1,3,0)
+ ;;=3^Benign Neop of Right Choroid
+ ;;^UTILITY(U,$J,358.3,10371,1,4,0)
+ ;;=4^D31.31
+ ;;^UTILITY(U,$J,358.3,10371,2)
+ ;;=^5002121
+ ;;^UTILITY(U,$J,358.3,10372,0)
+ ;;=D31.32^^51^592^4
+ ;;^UTILITY(U,$J,358.3,10372,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10372,1,3,0)
+ ;;=3^Benign Neop of Left Choroid
+ ;;^UTILITY(U,$J,358.3,10372,1,4,0)
+ ;;=4^D31.32

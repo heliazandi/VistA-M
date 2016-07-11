@@ -1,138 +1,270 @@
-IBDEI0V2 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0V2 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14292,2)
- ;;=^5006317
- ;;^UTILITY(U,$J,358.3,14293,0)
- ;;=C72.31^^82^776^31
- ;;^UTILITY(U,$J,358.3,14293,1,0)
+ ;;^UTILITY(U,$J,358.3,31232,1,4,0)
+ ;;=4^S63.257A
+ ;;^UTILITY(U,$J,358.3,31232,2)
+ ;;=^5035286
+ ;;^UTILITY(U,$J,358.3,31233,0)
+ ;;=S63.253A^^116^1526^151
+ ;;^UTILITY(U,$J,358.3,31233,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14293,1,3,0)
- ;;=3^Malig Neop of Right Optic Nerve
- ;;^UTILITY(U,$J,358.3,14293,1,4,0)
- ;;=4^C72.31
- ;;^UTILITY(U,$J,358.3,14293,2)
- ;;=^5001303
- ;;^UTILITY(U,$J,358.3,14294,0)
- ;;=C72.32^^82^776^30
- ;;^UTILITY(U,$J,358.3,14294,1,0)
+ ;;^UTILITY(U,$J,358.3,31233,1,3,0)
+ ;;=3^Dislocation Left Middle Finger,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31233,1,4,0)
+ ;;=4^S63.253A
+ ;;^UTILITY(U,$J,358.3,31233,2)
+ ;;=^5035274
+ ;;^UTILITY(U,$J,358.3,31234,0)
+ ;;=S63.255A^^116^1526^152
+ ;;^UTILITY(U,$J,358.3,31234,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14294,1,3,0)
- ;;=3^Malig Neop of Left Optic Nerve
- ;;^UTILITY(U,$J,358.3,14294,1,4,0)
- ;;=4^C72.32
- ;;^UTILITY(U,$J,358.3,14294,2)
- ;;=^5001304
- ;;^UTILITY(U,$J,358.3,14295,0)
- ;;=D33.3^^82^776^5
- ;;^UTILITY(U,$J,358.3,14295,1,0)
+ ;;^UTILITY(U,$J,358.3,31234,1,3,0)
+ ;;=3^Dislocation Left Ring Finger,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31234,1,4,0)
+ ;;=4^S63.255A
+ ;;^UTILITY(U,$J,358.3,31234,2)
+ ;;=^5035280
+ ;;^UTILITY(U,$J,358.3,31235,0)
+ ;;=S63.105A^^116^1526^153
+ ;;^UTILITY(U,$J,358.3,31235,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14295,1,3,0)
- ;;=3^Benigh Neop of Cranial Nerves
- ;;^UTILITY(U,$J,358.3,14295,1,4,0)
- ;;=4^D33.3
- ;;^UTILITY(U,$J,358.3,14295,2)
- ;;=^13298
- ;;^UTILITY(U,$J,358.3,14296,0)
- ;;=G24.5^^82^776^8
- ;;^UTILITY(U,$J,358.3,14296,1,0)
+ ;;^UTILITY(U,$J,358.3,31235,1,3,0)
+ ;;=3^Dislocation Left Thumb,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31235,1,4,0)
+ ;;=4^S63.105A
+ ;;^UTILITY(U,$J,358.3,31235,2)
+ ;;=^5035046
+ ;;^UTILITY(U,$J,358.3,31236,0)
+ ;;=S63.250A^^116^1526^154
+ ;;^UTILITY(U,$J,358.3,31236,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14296,1,3,0)
- ;;=3^Blepharospasm
- ;;^UTILITY(U,$J,358.3,14296,1,4,0)
- ;;=4^G24.5
- ;;^UTILITY(U,$J,358.3,14296,2)
- ;;=^15293
- ;;^UTILITY(U,$J,358.3,14297,0)
- ;;=G43.909^^82^776^32
- ;;^UTILITY(U,$J,358.3,14297,1,0)
+ ;;^UTILITY(U,$J,358.3,31236,1,3,0)
+ ;;=3^Dislocation Right Index Finger,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31236,1,4,0)
+ ;;=4^S63.250A
+ ;;^UTILITY(U,$J,358.3,31236,2)
+ ;;=^5035265
+ ;;^UTILITY(U,$J,358.3,31237,0)
+ ;;=S63.256A^^116^1526^155
+ ;;^UTILITY(U,$J,358.3,31237,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14297,1,3,0)
- ;;=3^Migraine Not Intractable w/o Status Migrainosus
- ;;^UTILITY(U,$J,358.3,14297,1,4,0)
- ;;=4^G43.909
- ;;^UTILITY(U,$J,358.3,14297,2)
- ;;=^5003909
- ;;^UTILITY(U,$J,358.3,14298,0)
- ;;=G93.2^^82^776^6
- ;;^UTILITY(U,$J,358.3,14298,1,0)
+ ;;^UTILITY(U,$J,358.3,31237,1,3,0)
+ ;;=3^Dislocation Right Little Finger,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31237,1,4,0)
+ ;;=4^S63.256A
+ ;;^UTILITY(U,$J,358.3,31237,2)
+ ;;=^5035283
+ ;;^UTILITY(U,$J,358.3,31238,0)
+ ;;=S63.252A^^116^1526^156
+ ;;^UTILITY(U,$J,358.3,31238,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14298,1,3,0)
- ;;=3^Benign Intracranial Hypertension
- ;;^UTILITY(U,$J,358.3,14298,1,4,0)
- ;;=4^G93.2
- ;;^UTILITY(U,$J,358.3,14298,2)
- ;;=^5004180
- ;;^UTILITY(U,$J,358.3,14299,0)
- ;;=G50.9^^82^776^55
- ;;^UTILITY(U,$J,358.3,14299,1,0)
+ ;;^UTILITY(U,$J,358.3,31238,1,3,0)
+ ;;=3^Dislocation Right Middle Finger,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31238,1,4,0)
+ ;;=4^S63.252A
+ ;;^UTILITY(U,$J,358.3,31238,2)
+ ;;=^5035271
+ ;;^UTILITY(U,$J,358.3,31239,0)
+ ;;=S63.254A^^116^1526^157
+ ;;^UTILITY(U,$J,358.3,31239,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14299,1,3,0)
- ;;=3^Trigeminal Nerve Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,14299,1,4,0)
- ;;=4^G50.9
- ;;^UTILITY(U,$J,358.3,14299,2)
- ;;=^5003993
- ;;^UTILITY(U,$J,358.3,14300,0)
- ;;=G51.0^^82^776^4
- ;;^UTILITY(U,$J,358.3,14300,1,0)
+ ;;^UTILITY(U,$J,358.3,31239,1,3,0)
+ ;;=3^Dislocation Right Ring Finger,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31239,1,4,0)
+ ;;=4^S63.254A
+ ;;^UTILITY(U,$J,358.3,31239,2)
+ ;;=^5035277
+ ;;^UTILITY(U,$J,358.3,31240,0)
+ ;;=S63.104A^^116^1526^158
+ ;;^UTILITY(U,$J,358.3,31240,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14300,1,3,0)
- ;;=3^Bell's Palsy
- ;;^UTILITY(U,$J,358.3,14300,1,4,0)
- ;;=4^G51.0
- ;;^UTILITY(U,$J,358.3,14300,2)
- ;;=^13238
- ;;^UTILITY(U,$J,358.3,14301,0)
- ;;=G51.3^^82^776^10
- ;;^UTILITY(U,$J,358.3,14301,1,0)
+ ;;^UTILITY(U,$J,358.3,31240,1,3,0)
+ ;;=3^Dislocation Right Thumb,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31240,1,4,0)
+ ;;=4^S63.104A
+ ;;^UTILITY(U,$J,358.3,31240,2)
+ ;;=^5035043
+ ;;^UTILITY(U,$J,358.3,31241,0)
+ ;;=H02.105^^116^1526^160
+ ;;^UTILITY(U,$J,358.3,31241,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14301,1,3,0)
- ;;=3^Clonic Hemifacial Spasm
- ;;^UTILITY(U,$J,358.3,14301,1,4,0)
- ;;=4^G51.3
- ;;^UTILITY(U,$J,358.3,14301,2)
- ;;=^5003995
- ;;^UTILITY(U,$J,358.3,14302,0)
- ;;=G51.4^^82^776^16
- ;;^UTILITY(U,$J,358.3,14302,1,0)
+ ;;^UTILITY(U,$J,358.3,31241,1,3,0)
+ ;;=3^Ectropion Left Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,31241,1,4,0)
+ ;;=4^H02.105
+ ;;^UTILITY(U,$J,358.3,31241,2)
+ ;;=^5133409
+ ;;^UTILITY(U,$J,358.3,31242,0)
+ ;;=H02.104^^116^1526^161
+ ;;^UTILITY(U,$J,358.3,31242,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14302,1,3,0)
- ;;=3^Facial Myokymia
- ;;^UTILITY(U,$J,358.3,14302,1,4,0)
- ;;=4^G51.4
- ;;^UTILITY(U,$J,358.3,14302,2)
- ;;=^5003996
- ;;^UTILITY(U,$J,358.3,14303,0)
- ;;=G51.8^^82^776^17
- ;;^UTILITY(U,$J,358.3,14303,1,0)
+ ;;^UTILITY(U,$J,358.3,31242,1,3,0)
+ ;;=3^Ectropion Left Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,31242,1,4,0)
+ ;;=4^H02.104
+ ;;^UTILITY(U,$J,358.3,31242,2)
+ ;;=^5004305
+ ;;^UTILITY(U,$J,358.3,31243,0)
+ ;;=H02.102^^116^1526^162
+ ;;^UTILITY(U,$J,358.3,31243,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14303,1,3,0)
- ;;=3^Facial Nerve Disorders NEC
- ;;^UTILITY(U,$J,358.3,14303,1,4,0)
- ;;=4^G51.8
- ;;^UTILITY(U,$J,358.3,14303,2)
- ;;=^5003997
- ;;^UTILITY(U,$J,358.3,14304,0)
- ;;=H34.01^^82^776^53
- ;;^UTILITY(U,$J,358.3,14304,1,0)
+ ;;^UTILITY(U,$J,358.3,31243,1,3,0)
+ ;;=3^Ectropion Right Lower Eyelid
+ ;;^UTILITY(U,$J,358.3,31243,1,4,0)
+ ;;=4^H02.102
+ ;;^UTILITY(U,$J,358.3,31243,2)
+ ;;=^5133407
+ ;;^UTILITY(U,$J,358.3,31244,0)
+ ;;=H02.101^^116^1526^163
+ ;;^UTILITY(U,$J,358.3,31244,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14304,1,3,0)
- ;;=3^Transient Retinal Artery Occlusion,Right Eye
- ;;^UTILITY(U,$J,358.3,14304,1,4,0)
- ;;=4^H34.01
- ;;^UTILITY(U,$J,358.3,14304,2)
- ;;=^5005553
- ;;^UTILITY(U,$J,358.3,14305,0)
- ;;=H34.02^^82^776^52
- ;;^UTILITY(U,$J,358.3,14305,1,0)
+ ;;^UTILITY(U,$J,358.3,31244,1,3,0)
+ ;;=3^Ectropion Right Upper Eyelid
+ ;;^UTILITY(U,$J,358.3,31244,1,4,0)
+ ;;=4^H02.101
+ ;;^UTILITY(U,$J,358.3,31244,2)
+ ;;=^5004303
+ ;;^UTILITY(U,$J,358.3,31245,0)
+ ;;=S62.307A^^116^1526^169
+ ;;^UTILITY(U,$J,358.3,31245,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14305,1,3,0)
- ;;=3^Transient Retinal Artery Occlusion,Left Eye
- ;;^UTILITY(U,$J,358.3,14305,1,4,0)
- ;;=4^H34.02
- ;;^UTILITY(U,$J,358.3,14305,2)
- ;;=^5005554
- ;;^UTILITY(U,$J,358.3,14306,0)
- ;;=G45.3^^82^776^3
+ ;;^UTILITY(U,$J,358.3,31245,1,3,0)
+ ;;=3^Fx Fifth Metacarpal Bone,Left Hand,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31245,1,4,0)
+ ;;=4^S62.307A
+ ;;^UTILITY(U,$J,358.3,31245,2)
+ ;;=^5033808
+ ;;^UTILITY(U,$J,358.3,31246,0)
+ ;;=S62.306A^^116^1526^170
+ ;;^UTILITY(U,$J,358.3,31246,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31246,1,3,0)
+ ;;=3^Fx Fifth Metacarpal Bone,Right Hand,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31246,1,4,0)
+ ;;=4^S62.306A
+ ;;^UTILITY(U,$J,358.3,31246,2)
+ ;;=^5033801
+ ;;^UTILITY(U,$J,358.3,31247,0)
+ ;;=S62.305A^^116^1526^171
+ ;;^UTILITY(U,$J,358.3,31247,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31247,1,3,0)
+ ;;=3^Fx Fourth Metacarpal Bone,Left Hand,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31247,1,4,0)
+ ;;=4^S62.305A
+ ;;^UTILITY(U,$J,358.3,31247,2)
+ ;;=^5033794
+ ;;^UTILITY(U,$J,358.3,31248,0)
+ ;;=S62.304A^^116^1526^172
+ ;;^UTILITY(U,$J,358.3,31248,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31248,1,3,0)
+ ;;=3^Fx Fourth Metacarpal Bone,Right Hand,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31248,1,4,0)
+ ;;=4^S62.304A
+ ;;^UTILITY(U,$J,358.3,31248,2)
+ ;;=^5033787
+ ;;^UTILITY(U,$J,358.3,31249,0)
+ ;;=S62.002A^^116^1526^177
+ ;;^UTILITY(U,$J,358.3,31249,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31249,1,3,0)
+ ;;=3^Fx Navicular Bone,Left Wrist,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31249,1,4,0)
+ ;;=4^S62.002A
+ ;;^UTILITY(U,$J,358.3,31249,2)
+ ;;=^5033066
+ ;;^UTILITY(U,$J,358.3,31250,0)
+ ;;=S62.001A^^116^1526^178
+ ;;^UTILITY(U,$J,358.3,31250,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31250,1,3,0)
+ ;;=3^Fx Navicular Bone,Right Wrist,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31250,1,4,0)
+ ;;=4^S62.001A
+ ;;^UTILITY(U,$J,358.3,31250,2)
+ ;;=^5033059
+ ;;^UTILITY(U,$J,358.3,31251,0)
+ ;;=S62.301A^^116^1526^190
+ ;;^UTILITY(U,$J,358.3,31251,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31251,1,3,0)
+ ;;=3^Fx Second Metacarpal Bone,Left Hand,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31251,1,4,0)
+ ;;=4^S62.301A
+ ;;^UTILITY(U,$J,358.3,31251,2)
+ ;;=^5033766
+ ;;^UTILITY(U,$J,358.3,31252,0)
+ ;;=S62.300A^^116^1526^191
+ ;;^UTILITY(U,$J,358.3,31252,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31252,1,3,0)
+ ;;=3^Fx Second Metacarpal Bone,Right Hand,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31252,1,4,0)
+ ;;=4^S62.300A
+ ;;^UTILITY(U,$J,358.3,31252,2)
+ ;;=^5033759
+ ;;^UTILITY(U,$J,358.3,31253,0)
+ ;;=S62.303A^^116^1526^192
+ ;;^UTILITY(U,$J,358.3,31253,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31253,1,3,0)
+ ;;=3^Fx Third Metacarpal Bone,Left Hand,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31253,1,4,0)
+ ;;=4^S62.303A
+ ;;^UTILITY(U,$J,358.3,31253,2)
+ ;;=^5033780
+ ;;^UTILITY(U,$J,358.3,31254,0)
+ ;;=S62.302A^^116^1526^193
+ ;;^UTILITY(U,$J,358.3,31254,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31254,1,3,0)
+ ;;=3^Fx Third Metacarpal Bone,Right Hand,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31254,1,4,0)
+ ;;=4^S62.302A
+ ;;^UTILITY(U,$J,358.3,31254,2)
+ ;;=^5033773
+ ;;^UTILITY(U,$J,358.3,31255,0)
+ ;;=S65.509A^^116^1526^211
+ ;;^UTILITY(U,$J,358.3,31255,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31255,1,3,0)
+ ;;=3^Injury Blood Vessel Finger Unspec,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31255,1,4,0)
+ ;;=4^S65.509A
+ ;;^UTILITY(U,$J,358.3,31255,2)
+ ;;=^5035982
+ ;;^UTILITY(U,$J,358.3,31256,0)
+ ;;=S65.402A^^116^1526^212
+ ;;^UTILITY(U,$J,358.3,31256,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31256,1,3,0)
+ ;;=3^Injury Blood Vessel Left Thumb,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31256,1,4,0)
+ ;;=4^S65.402A
+ ;;^UTILITY(U,$J,358.3,31256,2)
+ ;;=^5035934
+ ;;^UTILITY(U,$J,358.3,31257,0)
+ ;;=S65.401A^^116^1526^213
+ ;;^UTILITY(U,$J,358.3,31257,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31257,1,3,0)
+ ;;=3^Injury Blood Vessel Right Thumb,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31257,1,4,0)
+ ;;=4^S65.401A
+ ;;^UTILITY(U,$J,358.3,31257,2)
+ ;;=^5035931
+ ;;^UTILITY(U,$J,358.3,31258,0)
+ ;;=S69.92XA^^116^1526^258
+ ;;^UTILITY(U,$J,358.3,31258,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,31258,1,3,0)
+ ;;=3^Injury,Left Wrist/Hand/Finger,Init Encntr
+ ;;^UTILITY(U,$J,358.3,31258,1,4,0)
+ ;;=4^S69.92XA
+ ;;^UTILITY(U,$J,358.3,31258,2)
+ ;;=^5036828
+ ;;^UTILITY(U,$J,358.3,31259,0)
+ ;;=S69.91XA^^116^1526^259

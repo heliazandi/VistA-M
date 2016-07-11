@@ -1,126 +1,266 @@
-IBDEI0QN ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0QN ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,12208,1,0)
+ ;;^UTILITY(U,$J,358.3,26781,1,4,0)
+ ;;=4^F43.9
+ ;;^UTILITY(U,$J,358.3,26781,2)
+ ;;=^5003576
+ ;;^UTILITY(U,$J,358.3,26782,0)
+ ;;=F94.1^^100^1292^10
+ ;;^UTILITY(U,$J,358.3,26782,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12208,1,3,0)
- ;;=3^Fx of left fibula shaft unspec, init for clos fx
- ;;^UTILITY(U,$J,358.3,12208,1,4,0)
- ;;=4^S82.402A
- ;;^UTILITY(U,$J,358.3,12208,2)
- ;;=^5041693
- ;;^UTILITY(U,$J,358.3,12209,0)
- ;;=S62.600A^^71^708^101
- ;;^UTILITY(U,$J,358.3,12209,1,0)
+ ;;^UTILITY(U,$J,358.3,26782,1,3,0)
+ ;;=3^Reactive Attachment Disorder
+ ;;^UTILITY(U,$J,358.3,26782,1,4,0)
+ ;;=4^F94.1
+ ;;^UTILITY(U,$J,358.3,26782,2)
+ ;;=^5003705
+ ;;^UTILITY(U,$J,358.3,26783,0)
+ ;;=F94.2^^100^1292^8
+ ;;^UTILITY(U,$J,358.3,26783,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12209,1,3,0)
- ;;=3^Fx of unsp phalanx of right index finger, init
- ;;^UTILITY(U,$J,358.3,12209,1,4,0)
- ;;=4^S62.600A
- ;;^UTILITY(U,$J,358.3,12209,2)
- ;;=^5034382
- ;;^UTILITY(U,$J,358.3,12210,0)
- ;;=S62.601A^^71^708^96
- ;;^UTILITY(U,$J,358.3,12210,1,0)
+ ;;^UTILITY(U,$J,358.3,26783,1,3,0)
+ ;;=3^Disinhibited Social Engagement Disorder
+ ;;^UTILITY(U,$J,358.3,26783,1,4,0)
+ ;;=4^F94.2
+ ;;^UTILITY(U,$J,358.3,26783,2)
+ ;;=^5003706
+ ;;^UTILITY(U,$J,358.3,26784,0)
+ ;;=F43.8^^100^1292^11
+ ;;^UTILITY(U,$J,358.3,26784,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12210,1,3,0)
- ;;=3^Fx of unsp phalanx of left index finger, init
- ;;^UTILITY(U,$J,358.3,12210,1,4,0)
- ;;=4^S62.601A
- ;;^UTILITY(U,$J,358.3,12210,2)
- ;;=^5034389
- ;;^UTILITY(U,$J,358.3,12211,0)
- ;;=S62.602A^^71^708^103
- ;;^UTILITY(U,$J,358.3,12211,1,0)
+ ;;^UTILITY(U,$J,358.3,26784,1,3,0)
+ ;;=3^Trauma/Stressor-Related Disorder,Other Specified
+ ;;^UTILITY(U,$J,358.3,26784,1,4,0)
+ ;;=4^F43.8
+ ;;^UTILITY(U,$J,358.3,26784,2)
+ ;;=^5003575
+ ;;^UTILITY(U,$J,358.3,26785,0)
+ ;;=F43.10^^100^1292^9
+ ;;^UTILITY(U,$J,358.3,26785,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12211,1,3,0)
- ;;=3^Fx of unsp phalanx of right middle finger, init
- ;;^UTILITY(U,$J,358.3,12211,1,4,0)
- ;;=4^S62.602A
- ;;^UTILITY(U,$J,358.3,12211,2)
- ;;=^5034396
- ;;^UTILITY(U,$J,358.3,12212,0)
- ;;=S62.603A^^71^708^98
- ;;^UTILITY(U,$J,358.3,12212,1,0)
+ ;;^UTILITY(U,$J,358.3,26785,1,3,0)
+ ;;=3^Post-traumatic Stress Disorder
+ ;;^UTILITY(U,$J,358.3,26785,1,4,0)
+ ;;=4^F43.10
+ ;;^UTILITY(U,$J,358.3,26785,2)
+ ;;=^5003570
+ ;;^UTILITY(U,$J,358.3,26786,0)
+ ;;=F18.10^^100^1293^23
+ ;;^UTILITY(U,$J,358.3,26786,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12212,1,3,0)
- ;;=3^Fx of unsp phalanx of left middle finger, init
- ;;^UTILITY(U,$J,358.3,12212,1,4,0)
- ;;=4^S62.603A
- ;;^UTILITY(U,$J,358.3,12212,2)
- ;;=^5034403
- ;;^UTILITY(U,$J,358.3,12213,0)
- ;;=S62.604A^^71^708^104
- ;;^UTILITY(U,$J,358.3,12213,1,0)
+ ;;^UTILITY(U,$J,358.3,26786,1,3,0)
+ ;;=3^Inhalant Use Disorder,Mild
+ ;;^UTILITY(U,$J,358.3,26786,1,4,0)
+ ;;=4^F18.10
+ ;;^UTILITY(U,$J,358.3,26786,2)
+ ;;=^5003380
+ ;;^UTILITY(U,$J,358.3,26787,0)
+ ;;=F18.20^^100^1293^24
+ ;;^UTILITY(U,$J,358.3,26787,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12213,1,3,0)
- ;;=3^Fx of unsp phalanx of right ring finger, init
- ;;^UTILITY(U,$J,358.3,12213,1,4,0)
- ;;=4^S62.604A
- ;;^UTILITY(U,$J,358.3,12213,2)
- ;;=^5034410
- ;;^UTILITY(U,$J,358.3,12214,0)
- ;;=S62.605A^^71^708^99
- ;;^UTILITY(U,$J,358.3,12214,1,0)
+ ;;^UTILITY(U,$J,358.3,26787,1,3,0)
+ ;;=3^Inhalant Use Disorder,Moderate
+ ;;^UTILITY(U,$J,358.3,26787,1,4,0)
+ ;;=4^F18.20
+ ;;^UTILITY(U,$J,358.3,26787,2)
+ ;;=^5003392
+ ;;^UTILITY(U,$J,358.3,26788,0)
+ ;;=F18.14^^100^1293^4
+ ;;^UTILITY(U,$J,358.3,26788,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12214,1,3,0)
- ;;=3^Fx of unsp phalanx of left ring finger, init
- ;;^UTILITY(U,$J,358.3,12214,1,4,0)
- ;;=4^S62.605A
- ;;^UTILITY(U,$J,358.3,12214,2)
- ;;=^5034417
- ;;^UTILITY(U,$J,358.3,12215,0)
- ;;=S62.606A^^71^708^102
- ;;^UTILITY(U,$J,358.3,12215,1,0)
+ ;;^UTILITY(U,$J,358.3,26788,1,3,0)
+ ;;=3^Inhalant Induced Depressive Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26788,1,4,0)
+ ;;=4^F18.14
+ ;;^UTILITY(U,$J,358.3,26788,2)
+ ;;=^5003384
+ ;;^UTILITY(U,$J,358.3,26789,0)
+ ;;=F18.24^^100^1293^5
+ ;;^UTILITY(U,$J,358.3,26789,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12215,1,3,0)
- ;;=3^Fx of unsp phalanx of right little finger, init
- ;;^UTILITY(U,$J,358.3,12215,1,4,0)
- ;;=4^S62.606A
- ;;^UTILITY(U,$J,358.3,12215,2)
- ;;=^5034424
- ;;^UTILITY(U,$J,358.3,12216,0)
- ;;=S62.607A^^71^708^97
- ;;^UTILITY(U,$J,358.3,12216,1,0)
+ ;;^UTILITY(U,$J,358.3,26789,1,3,0)
+ ;;=3^Inhalant Induced Depressive Disorder w/ Moderate to Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26789,1,4,0)
+ ;;=4^F18.24
+ ;;^UTILITY(U,$J,358.3,26789,2)
+ ;;=^5003397
+ ;;^UTILITY(U,$J,358.3,26790,0)
+ ;;=F18.121^^100^1293^16
+ ;;^UTILITY(U,$J,358.3,26790,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12216,1,3,0)
- ;;=3^Fx of unsp phalanx of left little finger, init
- ;;^UTILITY(U,$J,358.3,12216,1,4,0)
- ;;=4^S62.607A
- ;;^UTILITY(U,$J,358.3,12216,2)
- ;;=^5034431
- ;;^UTILITY(U,$J,358.3,12217,0)
- ;;=S92.901A^^71^708^79
- ;;^UTILITY(U,$J,358.3,12217,1,0)
+ ;;^UTILITY(U,$J,358.3,26790,1,3,0)
+ ;;=3^Inhalant Intoxication Delirium w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26790,1,4,0)
+ ;;=4^F18.121
+ ;;^UTILITY(U,$J,358.3,26790,2)
+ ;;=^5003382
+ ;;^UTILITY(U,$J,358.3,26791,0)
+ ;;=F18.221^^100^1293^17
+ ;;^UTILITY(U,$J,358.3,26791,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12217,1,3,0)
- ;;=3^Fx of right foot unspec, init encntr for closed fra
- ;;^UTILITY(U,$J,358.3,12217,1,4,0)
- ;;=4^S92.901A
- ;;^UTILITY(U,$J,358.3,12217,2)
- ;;=^5045578
- ;;^UTILITY(U,$J,358.3,12218,0)
- ;;=S92.902A^^71^708^66
- ;;^UTILITY(U,$J,358.3,12218,1,0)
+ ;;^UTILITY(U,$J,358.3,26791,1,3,0)
+ ;;=3^Inhalant Intoxication Delirium w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26791,1,4,0)
+ ;;=4^F18.221
+ ;;^UTILITY(U,$J,358.3,26791,2)
+ ;;=^5003395
+ ;;^UTILITY(U,$J,358.3,26792,0)
+ ;;=F18.921^^100^1293^18
+ ;;^UTILITY(U,$J,358.3,26792,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12218,1,3,0)
- ;;=3^Fx of left foot unspec, init encntr for closed fx
- ;;^UTILITY(U,$J,358.3,12218,1,4,0)
- ;;=4^S92.902A
- ;;^UTILITY(U,$J,358.3,12218,2)
- ;;=^5045585
- ;;^UTILITY(U,$J,358.3,12219,0)
- ;;=S42.301A^^71^708^81
- ;;^UTILITY(U,$J,358.3,12219,1,0)
+ ;;^UTILITY(U,$J,358.3,26792,1,3,0)
+ ;;=3^Inhalant Intoxication Delirium w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26792,1,4,0)
+ ;;=4^F18.921
+ ;;^UTILITY(U,$J,358.3,26792,2)
+ ;;=^5003407
+ ;;^UTILITY(U,$J,358.3,26793,0)
+ ;;=F18.129^^100^1293^19
+ ;;^UTILITY(U,$J,358.3,26793,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12219,1,3,0)
- ;;=3^Fx of right humerus shaft humerus unspec, init for clos fx
- ;;^UTILITY(U,$J,358.3,12219,1,4,0)
- ;;=4^S42.301A
- ;;^UTILITY(U,$J,358.3,12219,2)
- ;;=^5027031
- ;;^UTILITY(U,$J,358.3,12220,0)
- ;;=S42.302A^^71^708^68
- ;;^UTILITY(U,$J,358.3,12220,1,0)
+ ;;^UTILITY(U,$J,358.3,26793,1,3,0)
+ ;;=3^Inhalant Intoxication w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26793,1,4,0)
+ ;;=4^F18.129
+ ;;^UTILITY(U,$J,358.3,26793,2)
+ ;;=^5003383
+ ;;^UTILITY(U,$J,358.3,26794,0)
+ ;;=F18.229^^100^1293^20
+ ;;^UTILITY(U,$J,358.3,26794,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26794,1,3,0)
+ ;;=3^Inhalant Intoxication w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26794,1,4,0)
+ ;;=4^F18.229
+ ;;^UTILITY(U,$J,358.3,26794,2)
+ ;;=^5003396
+ ;;^UTILITY(U,$J,358.3,26795,0)
+ ;;=F18.929^^100^1293^21
+ ;;^UTILITY(U,$J,358.3,26795,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26795,1,3,0)
+ ;;=3^Inhalant Intoxication w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26795,1,4,0)
+ ;;=4^F18.929
+ ;;^UTILITY(U,$J,358.3,26795,2)
+ ;;=^5003408
+ ;;^UTILITY(U,$J,358.3,26796,0)
+ ;;=F18.180^^100^1293^1
+ ;;^UTILITY(U,$J,358.3,26796,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26796,1,3,0)
+ ;;=3^Inhalant Induced Anxiety Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26796,1,4,0)
+ ;;=4^F18.180
+ ;;^UTILITY(U,$J,358.3,26796,2)
+ ;;=^5003389
+ ;;^UTILITY(U,$J,358.3,26797,0)
+ ;;=F18.280^^100^1293^2
+ ;;^UTILITY(U,$J,358.3,26797,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26797,1,3,0)
+ ;;=3^Inhalant Induced Anxiety Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26797,1,4,0)
+ ;;=4^F18.280
+ ;;^UTILITY(U,$J,358.3,26797,2)
+ ;;=^5003402
+ ;;^UTILITY(U,$J,358.3,26798,0)
+ ;;=F18.980^^100^1293^3
+ ;;^UTILITY(U,$J,358.3,26798,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26798,1,3,0)
+ ;;=3^Inhalant Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26798,1,4,0)
+ ;;=4^F18.980
+ ;;^UTILITY(U,$J,358.3,26798,2)
+ ;;=^5003414
+ ;;^UTILITY(U,$J,358.3,26799,0)
+ ;;=F18.94^^100^1293^6
+ ;;^UTILITY(U,$J,358.3,26799,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26799,1,3,0)
+ ;;=3^Inhalant Induced Depressive Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26799,1,4,0)
+ ;;=4^F18.94
+ ;;^UTILITY(U,$J,358.3,26799,2)
+ ;;=^5003409
+ ;;^UTILITY(U,$J,358.3,26800,0)
+ ;;=F18.17^^100^1293^7
+ ;;^UTILITY(U,$J,358.3,26800,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26800,1,3,0)
+ ;;=3^Inhalant Induced Major Neurocog Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26800,1,4,0)
+ ;;=4^F18.17
+ ;;^UTILITY(U,$J,358.3,26800,2)
+ ;;=^5003388
+ ;;^UTILITY(U,$J,358.3,26801,0)
+ ;;=F18.27^^100^1293^8
+ ;;^UTILITY(U,$J,358.3,26801,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26801,1,3,0)
+ ;;=3^Inhalant Induced Major Neurocog Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26801,1,4,0)
+ ;;=4^F18.27
+ ;;^UTILITY(U,$J,358.3,26801,2)
+ ;;=^5003401
+ ;;^UTILITY(U,$J,358.3,26802,0)
+ ;;=F18.97^^100^1293^9
+ ;;^UTILITY(U,$J,358.3,26802,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26802,1,3,0)
+ ;;=3^Inhalant Induced Major Neurocog Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26802,1,4,0)
+ ;;=4^F18.97
+ ;;^UTILITY(U,$J,358.3,26802,2)
+ ;;=^5003413
+ ;;^UTILITY(U,$J,358.3,26803,0)
+ ;;=F18.188^^100^1293^10
+ ;;^UTILITY(U,$J,358.3,26803,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26803,1,3,0)
+ ;;=3^Inhalant Induced Mild Neurocog Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26803,1,4,0)
+ ;;=4^F18.188
+ ;;^UTILITY(U,$J,358.3,26803,2)
+ ;;=^5003390
+ ;;^UTILITY(U,$J,358.3,26804,0)
+ ;;=F18.288^^100^1293^11
+ ;;^UTILITY(U,$J,358.3,26804,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26804,1,3,0)
+ ;;=3^Inhalant Induced Mild Neurocog Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26804,1,4,0)
+ ;;=4^F18.288
+ ;;^UTILITY(U,$J,358.3,26804,2)
+ ;;=^5003403
+ ;;^UTILITY(U,$J,358.3,26805,0)
+ ;;=F18.988^^100^1293^12
+ ;;^UTILITY(U,$J,358.3,26805,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26805,1,3,0)
+ ;;=3^Inhalant Induced Mild Neurocog Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,26805,1,4,0)
+ ;;=4^F18.988
+ ;;^UTILITY(U,$J,358.3,26805,2)
+ ;;=^5003415
+ ;;^UTILITY(U,$J,358.3,26806,0)
+ ;;=F18.159^^100^1293^13
+ ;;^UTILITY(U,$J,358.3,26806,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26806,1,3,0)
+ ;;=3^Inhalant Induced Psychotic Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,26806,1,4,0)
+ ;;=4^F18.159
+ ;;^UTILITY(U,$J,358.3,26806,2)
+ ;;=^5003387
+ ;;^UTILITY(U,$J,358.3,26807,0)
+ ;;=F18.259^^100^1293^14
+ ;;^UTILITY(U,$J,358.3,26807,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26807,1,3,0)
+ ;;=3^Inhalant Induced Psychotic Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,26807,1,4,0)
+ ;;=4^F18.259

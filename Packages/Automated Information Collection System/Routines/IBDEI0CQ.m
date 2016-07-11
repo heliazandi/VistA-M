@@ -1,140 +1,262 @@
-IBDEI0CQ ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0CQ ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,5519,2)
- ;;=^5019276
- ;;^UTILITY(U,$J,358.3,5520,0)
- ;;=K43.2^^40^367^44
- ;;^UTILITY(U,$J,358.3,5520,1,0)
+ ;;^UTILITY(U,$J,358.3,12733,1,3,0)
+ ;;=3^Open Bite of Neck,Unspec Part,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12733,1,4,0)
+ ;;=4^S11.95XA
+ ;;^UTILITY(U,$J,358.3,12733,2)
+ ;;=^5021542
+ ;;^UTILITY(U,$J,358.3,12734,0)
+ ;;=S01.03XA^^56^661^64
+ ;;^UTILITY(U,$J,358.3,12734,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5520,1,3,0)
- ;;=3^Incisional Hernia w/o Obstruction/Gangrene
- ;;^UTILITY(U,$J,358.3,5520,1,4,0)
- ;;=4^K43.2
- ;;^UTILITY(U,$J,358.3,5520,2)
- ;;=^5008609
- ;;^UTILITY(U,$J,358.3,5521,0)
- ;;=K85.8^^40^367^1
- ;;^UTILITY(U,$J,358.3,5521,1,0)
+ ;;^UTILITY(U,$J,358.3,12734,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Scalp,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12734,1,4,0)
+ ;;=4^S01.03XA
+ ;;^UTILITY(U,$J,358.3,12734,2)
+ ;;=^5020042
+ ;;^UTILITY(U,$J,358.3,12735,0)
+ ;;=S01.331A^^56^661^40
+ ;;^UTILITY(U,$J,358.3,12735,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5521,1,3,0)
- ;;=3^Acute Pancreatitis NEC
- ;;^UTILITY(U,$J,358.3,5521,1,4,0)
- ;;=4^K85.8
- ;;^UTILITY(U,$J,358.3,5521,2)
- ;;=^5008886
- ;;^UTILITY(U,$J,358.3,5522,0)
- ;;=K85.9^^40^367^2
- ;;^UTILITY(U,$J,358.3,5522,1,0)
+ ;;^UTILITY(U,$J,358.3,12735,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Right Ear,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12735,1,4,0)
+ ;;=4^S01.331A
+ ;;^UTILITY(U,$J,358.3,12735,2)
+ ;;=^5020126
+ ;;^UTILITY(U,$J,358.3,12736,0)
+ ;;=S01.332A^^56^661^8
+ ;;^UTILITY(U,$J,358.3,12736,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5522,1,3,0)
- ;;=3^Acute Pancreatitis,Unspec
- ;;^UTILITY(U,$J,358.3,5522,1,4,0)
- ;;=4^K85.9
- ;;^UTILITY(U,$J,358.3,5522,2)
- ;;=^5008887
- ;;^UTILITY(U,$J,358.3,5523,0)
- ;;=B25.2^^40^367^23
- ;;^UTILITY(U,$J,358.3,5523,1,0)
+ ;;^UTILITY(U,$J,358.3,12736,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Left Ear,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12736,1,4,0)
+ ;;=4^S01.332A
+ ;;^UTILITY(U,$J,358.3,12736,2)
+ ;;=^5020129
+ ;;^UTILITY(U,$J,358.3,12737,0)
+ ;;=S01.23XA^^56^661^34
+ ;;^UTILITY(U,$J,358.3,12737,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5523,1,3,0)
- ;;=3^Cytomegaloviral Pancreatitis
- ;;^UTILITY(U,$J,358.3,5523,1,4,0)
- ;;=4^B25.2
- ;;^UTILITY(U,$J,358.3,5523,2)
- ;;=^5000558
- ;;^UTILITY(U,$J,358.3,5524,0)
- ;;=K85.3^^40^367^26
- ;;^UTILITY(U,$J,358.3,5524,1,0)
+ ;;^UTILITY(U,$J,358.3,12737,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Nose,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12737,1,4,0)
+ ;;=4^S01.23XA
+ ;;^UTILITY(U,$J,358.3,12737,2)
+ ;;=^5020099
+ ;;^UTILITY(U,$J,358.3,12738,0)
+ ;;=S01.432A^^56^661^7
+ ;;^UTILITY(U,$J,358.3,12738,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5524,1,3,0)
- ;;=3^Drug Induced Acute Pancreatitis
- ;;^UTILITY(U,$J,358.3,5524,1,4,0)
- ;;=4^K85.3
- ;;^UTILITY(U,$J,358.3,5524,2)
- ;;=^5008885
- ;;^UTILITY(U,$J,358.3,5525,0)
- ;;=K85.0^^40^367^42
- ;;^UTILITY(U,$J,358.3,5525,1,0)
+ ;;^UTILITY(U,$J,358.3,12738,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Left Cheek/TMJ Area,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12738,1,4,0)
+ ;;=4^S01.432A
+ ;;^UTILITY(U,$J,358.3,12738,2)
+ ;;=^5020168
+ ;;^UTILITY(U,$J,358.3,12739,0)
+ ;;=S01.431A^^56^661^39
+ ;;^UTILITY(U,$J,358.3,12739,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5525,1,3,0)
- ;;=3^Idiopathic Acute Pancreatitis
- ;;^UTILITY(U,$J,358.3,5525,1,4,0)
- ;;=4^K85.0
- ;;^UTILITY(U,$J,358.3,5525,2)
- ;;=^5008882
- ;;^UTILITY(U,$J,358.3,5526,0)
- ;;=C21.0^^40^367^49
- ;;^UTILITY(U,$J,358.3,5526,1,0)
+ ;;^UTILITY(U,$J,358.3,12739,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Right Cheek/TMJ Area,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12739,1,4,0)
+ ;;=4^S01.431A
+ ;;^UTILITY(U,$J,358.3,12739,2)
+ ;;=^5020165
+ ;;^UTILITY(U,$J,358.3,12740,0)
+ ;;=S01.83XA^^56^661^1
+ ;;^UTILITY(U,$J,358.3,12740,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5526,1,3,0)
- ;;=3^Malig Neop of Anus,Unspec
- ;;^UTILITY(U,$J,358.3,5526,1,4,0)
- ;;=4^C21.0
- ;;^UTILITY(U,$J,358.3,5526,2)
- ;;=^5000930
- ;;^UTILITY(U,$J,358.3,5527,0)
- ;;=C15.8^^40^367^68
- ;;^UTILITY(U,$J,358.3,5527,1,0)
+ ;;^UTILITY(U,$J,358.3,12740,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Head,Oth Part,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12740,1,4,0)
+ ;;=4^S01.83XA
+ ;;^UTILITY(U,$J,358.3,12740,2)
+ ;;=^5020231
+ ;;^UTILITY(U,$J,358.3,12741,0)
+ ;;=S01.93XA^^56^661^2
+ ;;^UTILITY(U,$J,358.3,12741,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5527,1,3,0)
- ;;=3^Malig Neop of Overlapping Sites of Esophagus
- ;;^UTILITY(U,$J,358.3,5527,1,4,0)
- ;;=4^C15.8
- ;;^UTILITY(U,$J,358.3,5527,2)
- ;;=^5000918
- ;;^UTILITY(U,$J,358.3,5528,0)
- ;;=C78.4^^40^367^92
- ;;^UTILITY(U,$J,358.3,5528,1,0)
+ ;;^UTILITY(U,$J,358.3,12741,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Head,Unspec Part,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12741,1,4,0)
+ ;;=4^S01.93XA
+ ;;^UTILITY(U,$J,358.3,12741,2)
+ ;;=^5020246
+ ;;^UTILITY(U,$J,358.3,12742,0)
+ ;;=S11.83XA^^56^661^32
+ ;;^UTILITY(U,$J,358.3,12742,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5528,1,3,0)
- ;;=3^Secondary Malig Neop of Small Intestine
- ;;^UTILITY(U,$J,358.3,5528,1,4,0)
- ;;=4^C78.4
- ;;^UTILITY(U,$J,358.3,5528,2)
- ;;=^5001338
- ;;^UTILITY(U,$J,358.3,5529,0)
- ;;=C44.500^^40^368^12
- ;;^UTILITY(U,$J,358.3,5529,1,0)
+ ;;^UTILITY(U,$J,358.3,12742,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Neck,Oth Part,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12742,1,4,0)
+ ;;=4^S11.83XA
+ ;;^UTILITY(U,$J,358.3,12742,2)
+ ;;=^5021515
+ ;;^UTILITY(U,$J,358.3,12743,0)
+ ;;=S11.93XA^^56^661^33
+ ;;^UTILITY(U,$J,358.3,12743,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5529,1,3,0)
- ;;=3^Malig Neop Anal Skin
- ;;^UTILITY(U,$J,358.3,5529,1,4,0)
- ;;=4^C44.500
- ;;^UTILITY(U,$J,358.3,5529,2)
- ;;=^5001051
- ;;^UTILITY(U,$J,358.3,5530,0)
- ;;=C44.509^^40^368^15
- ;;^UTILITY(U,$J,358.3,5530,1,0)
+ ;;^UTILITY(U,$J,358.3,12743,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Neck,Unspec Part,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12743,1,4,0)
+ ;;=4^S11.93XA
+ ;;^UTILITY(U,$J,358.3,12743,2)
+ ;;=^5021536
+ ;;^UTILITY(U,$J,358.3,12744,0)
+ ;;=S31.813A^^56^661^38
+ ;;^UTILITY(U,$J,358.3,12744,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5530,1,3,0)
- ;;=3^Malig Neop of Skin of Trunk NEC
- ;;^UTILITY(U,$J,358.3,5530,1,4,0)
- ;;=4^C44.509
- ;;^UTILITY(U,$J,358.3,5530,2)
- ;;=^5001053
- ;;^UTILITY(U,$J,358.3,5531,0)
- ;;=D25.9^^40^368^11
- ;;^UTILITY(U,$J,358.3,5531,1,0)
+ ;;^UTILITY(U,$J,358.3,12744,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Right Buttock,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12744,1,4,0)
+ ;;=4^S31.813A
+ ;;^UTILITY(U,$J,358.3,12744,2)
+ ;;=^5024302
+ ;;^UTILITY(U,$J,358.3,12745,0)
+ ;;=S31.133A^^56^661^35
+ ;;^UTILITY(U,$J,358.3,12745,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5531,1,3,0)
- ;;=3^Leiomyoma of Uterus,Unspec
- ;;^UTILITY(U,$J,358.3,5531,1,4,0)
- ;;=4^D25.9
- ;;^UTILITY(U,$J,358.3,5531,2)
- ;;=^5002081
- ;;^UTILITY(U,$J,358.3,5532,0)
- ;;=N39.3^^40^368^20
- ;;^UTILITY(U,$J,358.3,5532,1,0)
+ ;;^UTILITY(U,$J,358.3,12745,1,3,0)
+ ;;=3^Puncture Wound w/o FB of RLQ of Abd Wall w/o Penet Perit Cav,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12745,1,4,0)
+ ;;=4^S31.133A
+ ;;^UTILITY(U,$J,358.3,12745,2)
+ ;;=^5024080
+ ;;^UTILITY(U,$J,358.3,12746,0)
+ ;;=S31.134A^^56^661^3
+ ;;^UTILITY(U,$J,358.3,12746,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5532,1,3,0)
- ;;=3^Stress Incontinence
- ;;^UTILITY(U,$J,358.3,5532,1,4,0)
- ;;=4^N39.3
- ;;^UTILITY(U,$J,358.3,5532,2)
- ;;=^5015679
- ;;^UTILITY(U,$J,358.3,5533,0)
- ;;=N76.0^^40^368^3
- ;;^UTILITY(U,$J,358.3,5533,1,0)
+ ;;^UTILITY(U,$J,358.3,12746,1,3,0)
+ ;;=3^Puncture Wound w/o FB of LLQ of Abd Wall w/o Penet Perit Cav,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12746,1,4,0)
+ ;;=4^S31.134A
+ ;;^UTILITY(U,$J,358.3,12746,2)
+ ;;=^5134457
+ ;;^UTILITY(U,$J,358.3,12747,0)
+ ;;=S31.823A^^56^661^6
+ ;;^UTILITY(U,$J,358.3,12747,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12747,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Left Buttock,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12747,1,4,0)
+ ;;=4^S31.823A
+ ;;^UTILITY(U,$J,358.3,12747,2)
+ ;;=^5024314
+ ;;^UTILITY(U,$J,358.3,12748,0)
+ ;;=S31.130A^^56^661^36
+ ;;^UTILITY(U,$J,358.3,12748,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12748,1,3,0)
+ ;;=3^Puncture Wound w/o FB of RUQ of Abd Wall w/o Penet Perit Cav,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12748,1,4,0)
+ ;;=4^S31.130A
+ ;;^UTILITY(U,$J,358.3,12748,2)
+ ;;=^5024071
+ ;;^UTILITY(U,$J,358.3,12749,0)
+ ;;=S31.131A^^56^661^4
+ ;;^UTILITY(U,$J,358.3,12749,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12749,1,3,0)
+ ;;=3^Puncture Wound w/o FB of LUQ of Abd Wall w/o Penet Perit Cav,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12749,1,4,0)
+ ;;=4^S31.131A
+ ;;^UTILITY(U,$J,358.3,12749,2)
+ ;;=^5024074
+ ;;^UTILITY(U,$J,358.3,12750,0)
+ ;;=S41.031A^^56^661^59
+ ;;^UTILITY(U,$J,358.3,12750,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12750,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Right Shoulder,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12750,1,4,0)
+ ;;=4^S41.031A
+ ;;^UTILITY(U,$J,358.3,12750,2)
+ ;;=^5026309
+ ;;^UTILITY(U,$J,358.3,12751,0)
+ ;;=S41.032A^^56^661^27
+ ;;^UTILITY(U,$J,358.3,12751,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12751,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Left Shoulder,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12751,1,4,0)
+ ;;=4^S41.032A
+ ;;^UTILITY(U,$J,358.3,12751,2)
+ ;;=^5026312
+ ;;^UTILITY(U,$J,358.3,12752,0)
+ ;;=S51.031A^^56^661^41
+ ;;^UTILITY(U,$J,358.3,12752,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12752,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Right Elbow,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12752,1,4,0)
+ ;;=4^S51.031A
+ ;;^UTILITY(U,$J,358.3,12752,2)
+ ;;=^5028638
+ ;;^UTILITY(U,$J,358.3,12753,0)
+ ;;=S51.032A^^56^661^9
+ ;;^UTILITY(U,$J,358.3,12753,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12753,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Left Elbow,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12753,1,4,0)
+ ;;=4^S51.032A
+ ;;^UTILITY(U,$J,358.3,12753,2)
+ ;;=^5028641
+ ;;^UTILITY(U,$J,358.3,12754,0)
+ ;;=S61.531A^^56^661^63
+ ;;^UTILITY(U,$J,358.3,12754,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12754,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Right Wrist,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12754,1,4,0)
+ ;;=4^S61.531A
+ ;;^UTILITY(U,$J,358.3,12754,2)
+ ;;=^5033038
+ ;;^UTILITY(U,$J,358.3,12755,0)
+ ;;=S61.532A^^56^661^31
+ ;;^UTILITY(U,$J,358.3,12755,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12755,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Left Wrist,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12755,1,4,0)
+ ;;=4^S61.532A
+ ;;^UTILITY(U,$J,358.3,12755,2)
+ ;;=^5033041
+ ;;^UTILITY(U,$J,358.3,12756,0)
+ ;;=S61.432A^^56^661^13
+ ;;^UTILITY(U,$J,358.3,12756,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12756,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Left Hand,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12756,1,4,0)
+ ;;=4^S61.432A
+ ;;^UTILITY(U,$J,358.3,12756,2)
+ ;;=^5033002
+ ;;^UTILITY(U,$J,358.3,12757,0)
+ ;;=S61.431A^^56^661^45
+ ;;^UTILITY(U,$J,358.3,12757,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12757,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Right Hand,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12757,1,4,0)
+ ;;=4^S61.431A
+ ;;^UTILITY(U,$J,358.3,12757,2)
+ ;;=^5032999
+ ;;^UTILITY(U,$J,358.3,12758,0)
+ ;;=S61.031A^^56^661^61
+ ;;^UTILITY(U,$J,358.3,12758,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12758,1,3,0)
+ ;;=3^Puncture Wound w/o FB of Right Thumb w/o Nail Damage,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12758,1,4,0)
+ ;;=4^S61.031A
+ ;;^UTILITY(U,$J,358.3,12758,2)
+ ;;=^5032702
+ ;;^UTILITY(U,$J,358.3,12759,0)
+ ;;=S61.032A^^56^661^30

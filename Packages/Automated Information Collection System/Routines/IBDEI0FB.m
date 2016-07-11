@@ -1,132 +1,292 @@
-IBDEI0FB ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0FB ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6747,1,3,0)
- ;;=3^Erythema Toxic
- ;;^UTILITY(U,$J,358.3,6747,1,4,0)
- ;;=4^L53.0
- ;;^UTILITY(U,$J,358.3,6747,2)
- ;;=^5009207
- ;;^UTILITY(U,$J,358.3,6748,0)
- ;;=L53.1^^46^447^8
- ;;^UTILITY(U,$J,358.3,6748,1,0)
+ ;;^UTILITY(U,$J,358.3,15319,1,3,0)
+ ;;=3^Pyothorax w/o Fistula
+ ;;^UTILITY(U,$J,358.3,15319,1,4,0)
+ ;;=4^J86.9
+ ;;^UTILITY(U,$J,358.3,15319,2)
+ ;;=^5008309
+ ;;^UTILITY(U,$J,358.3,15320,0)
+ ;;=J91.8^^61^750^35
+ ;;^UTILITY(U,$J,358.3,15320,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6748,1,3,0)
- ;;=3^Erythema Annulare Centrifugum
- ;;^UTILITY(U,$J,358.3,6748,1,4,0)
- ;;=4^L53.1
- ;;^UTILITY(U,$J,358.3,6748,2)
- ;;=^5009208
- ;;^UTILITY(U,$J,358.3,6749,0)
- ;;=L51.9^^46^447^11
- ;;^UTILITY(U,$J,358.3,6749,1,0)
+ ;;^UTILITY(U,$J,358.3,15320,1,3,0)
+ ;;=3^Pleural Effusion in Other Conditions
+ ;;^UTILITY(U,$J,358.3,15320,1,4,0)
+ ;;=4^J91.8
+ ;;^UTILITY(U,$J,358.3,15320,2)
+ ;;=^5008311
+ ;;^UTILITY(U,$J,358.3,15321,0)
+ ;;=J84.9^^61^750^29
+ ;;^UTILITY(U,$J,358.3,15321,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6749,1,3,0)
- ;;=3^Erythema Multiforme,Unspec
- ;;^UTILITY(U,$J,358.3,6749,1,4,0)
- ;;=4^L51.9
- ;;^UTILITY(U,$J,358.3,6749,2)
- ;;=^336759
- ;;^UTILITY(U,$J,358.3,6750,0)
- ;;=L12.35^^46^447^7
- ;;^UTILITY(U,$J,358.3,6750,1,0)
+ ;;^UTILITY(U,$J,358.3,15321,1,3,0)
+ ;;=3^Interstitial Pulmonary Disease/Pneumonia,Unspec
+ ;;^UTILITY(U,$J,358.3,15321,1,4,0)
+ ;;=4^J84.9
+ ;;^UTILITY(U,$J,358.3,15321,2)
+ ;;=^5008304
+ ;;^UTILITY(U,$J,358.3,15322,0)
+ ;;=J98.01^^61^750^11
+ ;;^UTILITY(U,$J,358.3,15322,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6750,1,3,0)
- ;;=3^Epidermolysis Bullosa,Acquired
- ;;^UTILITY(U,$J,358.3,6750,1,4,0)
- ;;=4^L12.35
- ;;^UTILITY(U,$J,358.3,6750,2)
- ;;=^5009100
- ;;^UTILITY(U,$J,358.3,6751,0)
- ;;=L52.^^46^447^12
- ;;^UTILITY(U,$J,358.3,6751,1,0)
+ ;;^UTILITY(U,$J,358.3,15322,1,3,0)
+ ;;=3^Bronchospasm,Acute
+ ;;^UTILITY(U,$J,358.3,15322,1,4,0)
+ ;;=4^J98.01
+ ;;^UTILITY(U,$J,358.3,15322,2)
+ ;;=^334092
+ ;;^UTILITY(U,$J,358.3,15323,0)
+ ;;=G47.30^^61^750^53
+ ;;^UTILITY(U,$J,358.3,15323,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6751,1,3,0)
- ;;=3^Erythema Nodosum
- ;;^UTILITY(U,$J,358.3,6751,1,4,0)
- ;;=4^L52.
- ;;^UTILITY(U,$J,358.3,6751,2)
- ;;=^42065
- ;;^UTILITY(U,$J,358.3,6752,0)
- ;;=L49.0^^46^447^24
- ;;^UTILITY(U,$J,358.3,6752,1,0)
+ ;;^UTILITY(U,$J,358.3,15323,1,3,0)
+ ;;=3^Sleep Apnea,Unspec
+ ;;^UTILITY(U,$J,358.3,15323,1,4,0)
+ ;;=4^G47.30
+ ;;^UTILITY(U,$J,358.3,15323,2)
+ ;;=^5003977
+ ;;^UTILITY(U,$J,358.3,15324,0)
+ ;;=R06.02^^61^750^52
+ ;;^UTILITY(U,$J,358.3,15324,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6752,1,3,0)
- ;;=3^Exfoliation d/t Erythematous Cond w/ < 10% Body Surface
- ;;^UTILITY(U,$J,358.3,6752,1,4,0)
- ;;=4^L49.0
- ;;^UTILITY(U,$J,358.3,6752,2)
- ;;=^5009190
- ;;^UTILITY(U,$J,358.3,6753,0)
- ;;=L49.1^^46^447^15
- ;;^UTILITY(U,$J,358.3,6753,1,0)
+ ;;^UTILITY(U,$J,358.3,15324,1,3,0)
+ ;;=3^Shortness of Breath
+ ;;^UTILITY(U,$J,358.3,15324,1,4,0)
+ ;;=4^R06.02
+ ;;^UTILITY(U,$J,358.3,15324,2)
+ ;;=^5019181
+ ;;^UTILITY(U,$J,358.3,15325,0)
+ ;;=R06.09^^61^750^17
+ ;;^UTILITY(U,$J,358.3,15325,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6753,1,3,0)
- ;;=3^Exfoliation d/t Erythematous Cond w/ 10-19% Body Surface
- ;;^UTILITY(U,$J,358.3,6753,1,4,0)
- ;;=4^L49.1
- ;;^UTILITY(U,$J,358.3,6753,2)
- ;;=^5009191
- ;;^UTILITY(U,$J,358.3,6754,0)
- ;;=L49.2^^46^447^16
- ;;^UTILITY(U,$J,358.3,6754,1,0)
+ ;;^UTILITY(U,$J,358.3,15325,1,3,0)
+ ;;=3^Dyspnea,Other Forms
+ ;;^UTILITY(U,$J,358.3,15325,1,4,0)
+ ;;=4^R06.09
+ ;;^UTILITY(U,$J,358.3,15325,2)
+ ;;=^5019182
+ ;;^UTILITY(U,$J,358.3,15326,0)
+ ;;=R06.00^^61^750^18
+ ;;^UTILITY(U,$J,358.3,15326,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6754,1,3,0)
- ;;=3^Exfoliation d/t Erythematous Cond w/ 20-29% Body Surface
- ;;^UTILITY(U,$J,358.3,6754,1,4,0)
- ;;=4^L49.2
- ;;^UTILITY(U,$J,358.3,6754,2)
- ;;=^5009192
- ;;^UTILITY(U,$J,358.3,6755,0)
- ;;=L49.3^^46^447^17
- ;;^UTILITY(U,$J,358.3,6755,1,0)
+ ;;^UTILITY(U,$J,358.3,15326,1,3,0)
+ ;;=3^Dyspnea,Unspec
+ ;;^UTILITY(U,$J,358.3,15326,1,4,0)
+ ;;=4^R06.00
+ ;;^UTILITY(U,$J,358.3,15326,2)
+ ;;=^5019180
+ ;;^UTILITY(U,$J,358.3,15327,0)
+ ;;=R06.89^^61^750^6
+ ;;^UTILITY(U,$J,358.3,15327,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6755,1,3,0)
- ;;=3^Exfoliation d/t Erythematous Cond w/ 30-39% Body Surface
- ;;^UTILITY(U,$J,358.3,6755,1,4,0)
- ;;=4^L49.3
- ;;^UTILITY(U,$J,358.3,6755,2)
- ;;=^5009193
- ;;^UTILITY(U,$J,358.3,6756,0)
- ;;=L49.4^^46^447^18
- ;;^UTILITY(U,$J,358.3,6756,1,0)
+ ;;^UTILITY(U,$J,358.3,15327,1,3,0)
+ ;;=3^Breathing Abnormalities,Other
+ ;;^UTILITY(U,$J,358.3,15327,1,4,0)
+ ;;=4^R06.89
+ ;;^UTILITY(U,$J,358.3,15327,2)
+ ;;=^5019193
+ ;;^UTILITY(U,$J,358.3,15328,0)
+ ;;=R06.83^^61^750^54
+ ;;^UTILITY(U,$J,358.3,15328,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6756,1,3,0)
- ;;=3^Exfoliation d/t Erythematous Cond w/ 40-49% Body Surface
- ;;^UTILITY(U,$J,358.3,6756,1,4,0)
- ;;=4^L49.4
- ;;^UTILITY(U,$J,358.3,6756,2)
- ;;=^5009194
- ;;^UTILITY(U,$J,358.3,6757,0)
- ;;=L49.5^^46^447^19
- ;;^UTILITY(U,$J,358.3,6757,1,0)
+ ;;^UTILITY(U,$J,358.3,15328,1,3,0)
+ ;;=3^Snoring
+ ;;^UTILITY(U,$J,358.3,15328,1,4,0)
+ ;;=4^R06.83
+ ;;^UTILITY(U,$J,358.3,15328,2)
+ ;;=^5019192
+ ;;^UTILITY(U,$J,358.3,15329,0)
+ ;;=R06.3^^61^750^32
+ ;;^UTILITY(U,$J,358.3,15329,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6757,1,3,0)
- ;;=3^Exfoliation d/t Erythematous Cond w/ 50-59% Body Surface
- ;;^UTILITY(U,$J,358.3,6757,1,4,0)
- ;;=4^L49.5
- ;;^UTILITY(U,$J,358.3,6757,2)
- ;;=^5009195
- ;;^UTILITY(U,$J,358.3,6758,0)
- ;;=L49.6^^46^447^20
- ;;^UTILITY(U,$J,358.3,6758,1,0)
+ ;;^UTILITY(U,$J,358.3,15329,1,3,0)
+ ;;=3^Periodic Breathing
+ ;;^UTILITY(U,$J,358.3,15329,1,4,0)
+ ;;=4^R06.3
+ ;;^UTILITY(U,$J,358.3,15329,2)
+ ;;=^5019185
+ ;;^UTILITY(U,$J,358.3,15330,0)
+ ;;=R06.1^^61^750^56
+ ;;^UTILITY(U,$J,358.3,15330,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6758,1,3,0)
- ;;=3^Exfoliation d/t Erythematous Cond w/ 60-69% Body Surface
- ;;^UTILITY(U,$J,358.3,6758,1,4,0)
- ;;=4^L49.6
- ;;^UTILITY(U,$J,358.3,6758,2)
- ;;=^5009196
- ;;^UTILITY(U,$J,358.3,6759,0)
- ;;=L49.7^^46^447^21
- ;;^UTILITY(U,$J,358.3,6759,1,0)
+ ;;^UTILITY(U,$J,358.3,15330,1,3,0)
+ ;;=3^Stridor
+ ;;^UTILITY(U,$J,358.3,15330,1,4,0)
+ ;;=4^R06.1
+ ;;^UTILITY(U,$J,358.3,15330,2)
+ ;;=^5019183
+ ;;^UTILITY(U,$J,358.3,15331,0)
+ ;;=R05.^^61^750^15
+ ;;^UTILITY(U,$J,358.3,15331,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6759,1,3,0)
- ;;=3^Exfoliation d/t Erythematous Cond w/ 70-79% Body Surface
- ;;^UTILITY(U,$J,358.3,6759,1,4,0)
- ;;=4^L49.7
- ;;^UTILITY(U,$J,358.3,6759,2)
- ;;=^5009197
- ;;^UTILITY(U,$J,358.3,6760,0)
- ;;=L49.8^^46^447^22
+ ;;^UTILITY(U,$J,358.3,15331,1,3,0)
+ ;;=3^Cough
+ ;;^UTILITY(U,$J,358.3,15331,1,4,0)
+ ;;=4^R05.
+ ;;^UTILITY(U,$J,358.3,15331,2)
+ ;;=^5019179
+ ;;^UTILITY(U,$J,358.3,15332,0)
+ ;;=R04.2^^61^750^24
+ ;;^UTILITY(U,$J,358.3,15332,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15332,1,3,0)
+ ;;=3^Hemoptysis
+ ;;^UTILITY(U,$J,358.3,15332,1,4,0)
+ ;;=4^R04.2
+ ;;^UTILITY(U,$J,358.3,15332,2)
+ ;;=^5019175
+ ;;^UTILITY(U,$J,358.3,15333,0)
+ ;;=R91.8^^61^750^1
+ ;;^UTILITY(U,$J,358.3,15333,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15333,1,3,0)
+ ;;=3^Abnormal Finding of Lung Field,Other Nonspecific
+ ;;^UTILITY(U,$J,358.3,15333,1,4,0)
+ ;;=4^R91.8
+ ;;^UTILITY(U,$J,358.3,15333,2)
+ ;;=^5019708
+ ;;^UTILITY(U,$J,358.3,15334,0)
+ ;;=R06.2^^61^750^57
+ ;;^UTILITY(U,$J,358.3,15334,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15334,1,3,0)
+ ;;=3^Wheezing
+ ;;^UTILITY(U,$J,358.3,15334,1,4,0)
+ ;;=4^R06.2
+ ;;^UTILITY(U,$J,358.3,15334,2)
+ ;;=^5019184
+ ;;^UTILITY(U,$J,358.3,15335,0)
+ ;;=J44.0^^61^750^13
+ ;;^UTILITY(U,$J,358.3,15335,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15335,1,3,0)
+ ;;=3^COPD w/ Acute Lower Respiratory Infection
+ ;;^UTILITY(U,$J,358.3,15335,1,4,0)
+ ;;=4^J44.0
+ ;;^UTILITY(U,$J,358.3,15335,2)
+ ;;=^5008239
+ ;;^UTILITY(U,$J,358.3,15336,0)
+ ;;=J94.1^^61^750^23
+ ;;^UTILITY(U,$J,358.3,15336,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15336,1,3,0)
+ ;;=3^Fibrothorax
+ ;;^UTILITY(U,$J,358.3,15336,1,4,0)
+ ;;=4^J94.1
+ ;;^UTILITY(U,$J,358.3,15336,2)
+ ;;=^5008317
+ ;;^UTILITY(U,$J,358.3,15337,0)
+ ;;=G47.33^^61^750^31
+ ;;^UTILITY(U,$J,358.3,15337,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15337,1,3,0)
+ ;;=3^Obstructive Sleep Apnea
+ ;;^UTILITY(U,$J,358.3,15337,1,4,0)
+ ;;=4^G47.33
+ ;;^UTILITY(U,$J,358.3,15337,2)
+ ;;=^332763
+ ;;^UTILITY(U,$J,358.3,15338,0)
+ ;;=R91.1^^61^750^55
+ ;;^UTILITY(U,$J,358.3,15338,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15338,1,3,0)
+ ;;=3^Solitary Pulmonary Nodule
+ ;;^UTILITY(U,$J,358.3,15338,1,4,0)
+ ;;=4^R91.1
+ ;;^UTILITY(U,$J,358.3,15338,2)
+ ;;=^5019707
+ ;;^UTILITY(U,$J,358.3,15339,0)
+ ;;=T74.21XA^^61^751^1
+ ;;^UTILITY(U,$J,358.3,15339,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15339,1,3,0)
+ ;;=3^Adult Sexual Abuse,Confirmed,Init Encntr
+ ;;^UTILITY(U,$J,358.3,15339,1,4,0)
+ ;;=4^T74.21XA
+ ;;^UTILITY(U,$J,358.3,15339,2)
+ ;;=^5054152
+ ;;^UTILITY(U,$J,358.3,15340,0)
+ ;;=T76.21XA^^61^751^4
+ ;;^UTILITY(U,$J,358.3,15340,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15340,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Init Encntr
+ ;;^UTILITY(U,$J,358.3,15340,1,4,0)
+ ;;=4^T76.21XA
+ ;;^UTILITY(U,$J,358.3,15340,2)
+ ;;=^5054227
+ ;;^UTILITY(U,$J,358.3,15341,0)
+ ;;=Y07.9^^61^751^9
+ ;;^UTILITY(U,$J,358.3,15341,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15341,1,3,0)
+ ;;=3^Perpetrator of Maltreatment/Neglect,Unspec
+ ;;^UTILITY(U,$J,358.3,15341,1,4,0)
+ ;;=4^Y07.9
+ ;;^UTILITY(U,$J,358.3,15341,2)
+ ;;=^5061209
+ ;;^UTILITY(U,$J,358.3,15342,0)
+ ;;=T74.21XD^^61^751^3
+ ;;^UTILITY(U,$J,358.3,15342,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15342,1,3,0)
+ ;;=3^Adult Sexual Abuse,Confirmed,Sub Encntr
+ ;;^UTILITY(U,$J,358.3,15342,1,4,0)
+ ;;=4^T74.21XD
+ ;;^UTILITY(U,$J,358.3,15342,2)
+ ;;=^5054153
+ ;;^UTILITY(U,$J,358.3,15343,0)
+ ;;=T74.21XS^^61^751^2
+ ;;^UTILITY(U,$J,358.3,15343,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15343,1,3,0)
+ ;;=3^Adult Sexual Abuse,Confirmed,Sequela
+ ;;^UTILITY(U,$J,358.3,15343,1,4,0)
+ ;;=4^T74.21XS
+ ;;^UTILITY(U,$J,358.3,15343,2)
+ ;;=^5054154
+ ;;^UTILITY(U,$J,358.3,15344,0)
+ ;;=T76.21XD^^61^751^6
+ ;;^UTILITY(U,$J,358.3,15344,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15344,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Sub Encntr
+ ;;^UTILITY(U,$J,358.3,15344,1,4,0)
+ ;;=4^T76.21XD
+ ;;^UTILITY(U,$J,358.3,15344,2)
+ ;;=^5054228
+ ;;^UTILITY(U,$J,358.3,15345,0)
+ ;;=T76.21XS^^61^751^5
+ ;;^UTILITY(U,$J,358.3,15345,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15345,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Sequela
+ ;;^UTILITY(U,$J,358.3,15345,1,4,0)
+ ;;=4^T76.21XS
+ ;;^UTILITY(U,$J,358.3,15345,2)
+ ;;=^5054229
+ ;;^UTILITY(U,$J,358.3,15346,0)
+ ;;=Y07.53^^61^751^7
+ ;;^UTILITY(U,$J,358.3,15346,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15346,1,3,0)
+ ;;=3^Instructor,Perpetrator of MST
+ ;;^UTILITY(U,$J,358.3,15346,1,4,0)
+ ;;=4^Y07.53
+ ;;^UTILITY(U,$J,358.3,15346,2)
+ ;;=^5061207
+ ;;^UTILITY(U,$J,358.3,15347,0)
+ ;;=Y07.59^^61^751^8
+ ;;^UTILITY(U,$J,358.3,15347,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,15347,1,3,0)
+ ;;=3^Non-Family Member,Perpetrator of MST/Abuse NEC
+ ;;^UTILITY(U,$J,358.3,15347,1,4,0)
+ ;;=4^Y07.59
+ ;;^UTILITY(U,$J,358.3,15347,2)
+ ;;=^5061208
+ ;;^UTILITY(U,$J,358.3,15348,0)
+ ;;=E66.01^^61^752^120

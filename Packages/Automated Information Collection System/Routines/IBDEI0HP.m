@@ -1,128 +1,290 @@
-IBDEI0HP ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0HP ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7930,1,4,0)
- ;;=4^L97.222
- ;;^UTILITY(U,$J,358.3,7930,2)
- ;;=^5009506
- ;;^UTILITY(U,$J,358.3,7931,0)
- ;;=L97.221^^55^531^71
- ;;^UTILITY(U,$J,358.3,7931,1,0)
+ ;;^UTILITY(U,$J,358.3,17793,1,4,0)
+ ;;=4^Z86.59
+ ;;^UTILITY(U,$J,358.3,17793,2)
+ ;;=^5063471
+ ;;^UTILITY(U,$J,358.3,17794,0)
+ ;;=F48.9^^78^925^3
+ ;;^UTILITY(U,$J,358.3,17794,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7931,1,3,0)
- ;;=3^Non-prs chr ulcer of left calf limited to brkdwn skin
- ;;^UTILITY(U,$J,358.3,7931,1,4,0)
- ;;=4^L97.221
- ;;^UTILITY(U,$J,358.3,7931,2)
- ;;=^5009505
- ;;^UTILITY(U,$J,358.3,7932,0)
- ;;=L97.219^^55^531^95
- ;;^UTILITY(U,$J,358.3,7932,1,0)
+ ;;^UTILITY(U,$J,358.3,17794,1,3,0)
+ ;;=3^Nonpsychotic Mental Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,17794,1,4,0)
+ ;;=4^F48.9
+ ;;^UTILITY(U,$J,358.3,17794,2)
+ ;;=^5003596
+ ;;^UTILITY(U,$J,358.3,17795,0)
+ ;;=Z91.83^^78^925^5
+ ;;^UTILITY(U,$J,358.3,17795,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7932,1,3,0)
- ;;=3^Non-prs chr ulcer of right calf with unsp severity
- ;;^UTILITY(U,$J,358.3,7932,1,4,0)
- ;;=4^L97.219
- ;;^UTILITY(U,$J,358.3,7932,2)
- ;;=^5009504
- ;;^UTILITY(U,$J,358.3,7933,0)
- ;;=L97.214^^55^531^93
- ;;^UTILITY(U,$J,358.3,7933,1,0)
+ ;;^UTILITY(U,$J,358.3,17795,1,3,0)
+ ;;=3^Wandering in Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,17795,1,4,0)
+ ;;=4^Z91.83
+ ;;^UTILITY(U,$J,358.3,17795,2)
+ ;;=^5063627
+ ;;^UTILITY(U,$J,358.3,17796,0)
+ ;;=F69.^^78^925^1
+ ;;^UTILITY(U,$J,358.3,17796,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7933,1,3,0)
- ;;=3^Non-prs chr ulcer of right calf w necrosis of bone
- ;;^UTILITY(U,$J,358.3,7933,1,4,0)
- ;;=4^L97.214
- ;;^UTILITY(U,$J,358.3,7933,2)
- ;;=^5009503
- ;;^UTILITY(U,$J,358.3,7934,0)
- ;;=L97.211^^55^531^91
- ;;^UTILITY(U,$J,358.3,7934,1,0)
+ ;;^UTILITY(U,$J,358.3,17796,1,3,0)
+ ;;=3^Adult Personality/Behavior Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,17796,1,4,0)
+ ;;=4^F69.
+ ;;^UTILITY(U,$J,358.3,17796,2)
+ ;;=^5003667
+ ;;^UTILITY(U,$J,358.3,17797,0)
+ ;;=Z94.0^^78^926^6
+ ;;^UTILITY(U,$J,358.3,17797,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7934,1,3,0)
- ;;=3^Non-prs chr ulcer of right calf limited to brkdwn skin
- ;;^UTILITY(U,$J,358.3,7934,1,4,0)
- ;;=4^L97.211
- ;;^UTILITY(U,$J,358.3,7934,2)
- ;;=^5009500
- ;;^UTILITY(U,$J,358.3,7935,0)
- ;;=L97.213^^55^531^94
- ;;^UTILITY(U,$J,358.3,7935,1,0)
+ ;;^UTILITY(U,$J,358.3,17797,1,3,0)
+ ;;=3^Kidney Transplant Status
+ ;;^UTILITY(U,$J,358.3,17797,1,4,0)
+ ;;=4^Z94.0
+ ;;^UTILITY(U,$J,358.3,17797,2)
+ ;;=^5063654
+ ;;^UTILITY(U,$J,358.3,17798,0)
+ ;;=Z94.1^^78^926^4
+ ;;^UTILITY(U,$J,358.3,17798,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7935,1,3,0)
- ;;=3^Non-prs chr ulcer of right calf w necrosis of muscle
- ;;^UTILITY(U,$J,358.3,7935,1,4,0)
- ;;=4^L97.213
- ;;^UTILITY(U,$J,358.3,7935,2)
- ;;=^5009502
- ;;^UTILITY(U,$J,358.3,7936,0)
- ;;=L97.212^^55^531^92
- ;;^UTILITY(U,$J,358.3,7936,1,0)
+ ;;^UTILITY(U,$J,358.3,17798,1,3,0)
+ ;;=3^Heart Transplant Status
+ ;;^UTILITY(U,$J,358.3,17798,1,4,0)
+ ;;=4^Z94.1
+ ;;^UTILITY(U,$J,358.3,17798,2)
+ ;;=^5063655
+ ;;^UTILITY(U,$J,358.3,17799,0)
+ ;;=Z95.3^^78^926^10
+ ;;^UTILITY(U,$J,358.3,17799,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7936,1,3,0)
- ;;=3^Non-prs chr ulcer of right calf w fat layer exposed
- ;;^UTILITY(U,$J,358.3,7936,1,4,0)
- ;;=4^L97.212
- ;;^UTILITY(U,$J,358.3,7936,2)
- ;;=^5009501
- ;;^UTILITY(U,$J,358.3,7937,0)
- ;;=L97.229^^55^531^75
- ;;^UTILITY(U,$J,358.3,7937,1,0)
+ ;;^UTILITY(U,$J,358.3,17799,1,3,0)
+ ;;=3^Presence of Xenogenic Heart Valve
+ ;;^UTILITY(U,$J,358.3,17799,1,4,0)
+ ;;=4^Z95.3
+ ;;^UTILITY(U,$J,358.3,17799,2)
+ ;;=^5063671
+ ;;^UTILITY(U,$J,358.3,17800,0)
+ ;;=Z94.5^^78^926^11
+ ;;^UTILITY(U,$J,358.3,17800,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7937,1,3,0)
- ;;=3^Non-prs chr ulcer of left calf with unsp severity
- ;;^UTILITY(U,$J,358.3,7937,1,4,0)
- ;;=4^L97.229
- ;;^UTILITY(U,$J,358.3,7937,2)
- ;;=^5009509
- ;;^UTILITY(U,$J,358.3,7938,0)
- ;;=L97.224^^55^531^74
- ;;^UTILITY(U,$J,358.3,7938,1,0)
+ ;;^UTILITY(U,$J,358.3,17800,1,3,0)
+ ;;=3^Skin Transplant Status
+ ;;^UTILITY(U,$J,358.3,17800,1,4,0)
+ ;;=4^Z94.5
+ ;;^UTILITY(U,$J,358.3,17800,2)
+ ;;=^5063659
+ ;;^UTILITY(U,$J,358.3,17801,0)
+ ;;=Z94.6^^78^926^2
+ ;;^UTILITY(U,$J,358.3,17801,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7938,1,3,0)
- ;;=3^Non-prs chr ulcer of left calf w necrosis of bone
- ;;^UTILITY(U,$J,358.3,7938,1,4,0)
- ;;=4^L97.224
- ;;^UTILITY(U,$J,358.3,7938,2)
- ;;=^5009508
- ;;^UTILITY(U,$J,358.3,7939,0)
- ;;=L97.324^^55^531^68
- ;;^UTILITY(U,$J,358.3,7939,1,0)
+ ;;^UTILITY(U,$J,358.3,17801,1,3,0)
+ ;;=3^Bone Transplant Status
+ ;;^UTILITY(U,$J,358.3,17801,1,4,0)
+ ;;=4^Z94.6
+ ;;^UTILITY(U,$J,358.3,17801,2)
+ ;;=^5063660
+ ;;^UTILITY(U,$J,358.3,17802,0)
+ ;;=Z94.7^^78^926^3
+ ;;^UTILITY(U,$J,358.3,17802,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7939,1,3,0)
- ;;=3^Non-prs chr ulcer of left ankle w necrosis of bone
- ;;^UTILITY(U,$J,358.3,7939,1,4,0)
- ;;=4^L97.324
- ;;^UTILITY(U,$J,358.3,7939,2)
- ;;=^5009523
- ;;^UTILITY(U,$J,358.3,7940,0)
- ;;=L97.329^^55^531^70
- ;;^UTILITY(U,$J,358.3,7940,1,0)
+ ;;^UTILITY(U,$J,358.3,17802,1,3,0)
+ ;;=3^Corneal Transplant Status
+ ;;^UTILITY(U,$J,358.3,17802,1,4,0)
+ ;;=4^Z94.7
+ ;;^UTILITY(U,$J,358.3,17802,2)
+ ;;=^5063661
+ ;;^UTILITY(U,$J,358.3,17803,0)
+ ;;=Z94.2^^78^926^8
+ ;;^UTILITY(U,$J,358.3,17803,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7940,1,3,0)
- ;;=3^Non-prs chr ulcer of left ankle with unsp severity
- ;;^UTILITY(U,$J,358.3,7940,1,4,0)
- ;;=4^L97.329
- ;;^UTILITY(U,$J,358.3,7940,2)
- ;;=^5009524
- ;;^UTILITY(U,$J,358.3,7941,0)
- ;;=L97.323^^55^531^69
- ;;^UTILITY(U,$J,358.3,7941,1,0)
+ ;;^UTILITY(U,$J,358.3,17803,1,3,0)
+ ;;=3^Lung Transplant Status
+ ;;^UTILITY(U,$J,358.3,17803,1,4,0)
+ ;;=4^Z94.2
+ ;;^UTILITY(U,$J,358.3,17803,2)
+ ;;=^5063656
+ ;;^UTILITY(U,$J,358.3,17804,0)
+ ;;=Z94.4^^78^926^7
+ ;;^UTILITY(U,$J,358.3,17804,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7941,1,3,0)
- ;;=3^Non-prs chr ulcer of left ankle w necrosis of muscle
- ;;^UTILITY(U,$J,358.3,7941,1,4,0)
- ;;=4^L97.323
- ;;^UTILITY(U,$J,358.3,7941,2)
- ;;=^5009522
- ;;^UTILITY(U,$J,358.3,7942,0)
- ;;=L97.322^^55^531^67
- ;;^UTILITY(U,$J,358.3,7942,1,0)
+ ;;^UTILITY(U,$J,358.3,17804,1,3,0)
+ ;;=3^Liver Transplant Status
+ ;;^UTILITY(U,$J,358.3,17804,1,4,0)
+ ;;=4^Z94.4
+ ;;^UTILITY(U,$J,358.3,17804,2)
+ ;;=^5063658
+ ;;^UTILITY(U,$J,358.3,17805,0)
+ ;;=Z94.81^^78^926^1
+ ;;^UTILITY(U,$J,358.3,17805,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7942,1,3,0)
- ;;=3^Non-prs chr ulcer of left ankle w fat layer exposed
- ;;^UTILITY(U,$J,358.3,7942,1,4,0)
- ;;=4^L97.322
- ;;^UTILITY(U,$J,358.3,7942,2)
- ;;=^5009521
+ ;;^UTILITY(U,$J,358.3,17805,1,3,0)
+ ;;=3^Bone Marrow Transplant Status
+ ;;^UTILITY(U,$J,358.3,17805,1,4,0)
+ ;;=4^Z94.81
+ ;;^UTILITY(U,$J,358.3,17805,2)
+ ;;=^5063662
+ ;;^UTILITY(U,$J,358.3,17806,0)
+ ;;=Z94.84^^78^926^12
+ ;;^UTILITY(U,$J,358.3,17806,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17806,1,3,0)
+ ;;=3^Stem Cells Transplant Status
+ ;;^UTILITY(U,$J,358.3,17806,1,4,0)
+ ;;=4^Z94.84
+ ;;^UTILITY(U,$J,358.3,17806,2)
+ ;;=^5063665
+ ;;^UTILITY(U,$J,358.3,17807,0)
+ ;;=Z94.83^^78^926^9
+ ;;^UTILITY(U,$J,358.3,17807,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17807,1,3,0)
+ ;;=3^Pancreas Transplant Status
+ ;;^UTILITY(U,$J,358.3,17807,1,4,0)
+ ;;=4^Z94.83
+ ;;^UTILITY(U,$J,358.3,17807,2)
+ ;;=^5063664
+ ;;^UTILITY(U,$J,358.3,17808,0)
+ ;;=Z94.82^^78^926^5
+ ;;^UTILITY(U,$J,358.3,17808,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17808,1,3,0)
+ ;;=3^Intestine Transplant Status
+ ;;^UTILITY(U,$J,358.3,17808,1,4,0)
+ ;;=4^Z94.82
+ ;;^UTILITY(U,$J,358.3,17808,2)
+ ;;=^5063663
+ ;;^UTILITY(U,$J,358.3,17809,0)
+ ;;=Z94.9^^78^926^13
+ ;;^UTILITY(U,$J,358.3,17809,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17809,1,3,0)
+ ;;=3^Transplanted Organ/Tissue Status,Unspec
+ ;;^UTILITY(U,$J,358.3,17809,1,4,0)
+ ;;=4^Z94.9
+ ;;^UTILITY(U,$J,358.3,17809,2)
+ ;;=^5063667
+ ;;^UTILITY(U,$J,358.3,17810,0)
+ ;;=Z99.2^^78^927^1
+ ;;^UTILITY(U,$J,358.3,17810,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17810,1,3,0)
+ ;;=3^Dependence on Renal Dialysis
+ ;;^UTILITY(U,$J,358.3,17810,1,4,0)
+ ;;=4^Z99.2
+ ;;^UTILITY(U,$J,358.3,17810,2)
+ ;;=^5063758
+ ;;^UTILITY(U,$J,358.3,17811,0)
+ ;;=Z98.89^^78^927^3
+ ;;^UTILITY(U,$J,358.3,17811,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17811,1,3,0)
+ ;;=3^Postprocedural States,Oth Spec
+ ;;^UTILITY(U,$J,358.3,17811,1,4,0)
+ ;;=4^Z98.89
+ ;;^UTILITY(U,$J,358.3,17811,2)
+ ;;=^5063754
+ ;;^UTILITY(U,$J,358.3,17812,0)
+ ;;=Z91.15^^78^927^2
+ ;;^UTILITY(U,$J,358.3,17812,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17812,1,3,0)
+ ;;=3^Noncompliance w/ Renal Dialysis
+ ;;^UTILITY(U,$J,358.3,17812,1,4,0)
+ ;;=4^Z91.15
+ ;;^UTILITY(U,$J,358.3,17812,2)
+ ;;=^5063617
+ ;;^UTILITY(U,$J,358.3,17813,0)
+ ;;=Z56.0^^78^928^14
+ ;;^UTILITY(U,$J,358.3,17813,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17813,1,3,0)
+ ;;=3^Unemployment,Unspec
+ ;;^UTILITY(U,$J,358.3,17813,1,4,0)
+ ;;=4^Z56.0
+ ;;^UTILITY(U,$J,358.3,17813,2)
+ ;;=^5063107
+ ;;^UTILITY(U,$J,358.3,17814,0)
+ ;;=Z65.5^^78^928^4
+ ;;^UTILITY(U,$J,358.3,17814,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17814,1,3,0)
+ ;;=3^Disaster/War/Hostility Exposure
+ ;;^UTILITY(U,$J,358.3,17814,1,4,0)
+ ;;=4^Z65.5
+ ;;^UTILITY(U,$J,358.3,17814,2)
+ ;;=^5063184
+ ;;^UTILITY(U,$J,358.3,17815,0)
+ ;;=Z56.1^^78^928^2
+ ;;^UTILITY(U,$J,358.3,17815,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17815,1,3,0)
+ ;;=3^Change of Job
+ ;;^UTILITY(U,$J,358.3,17815,1,4,0)
+ ;;=4^Z56.1
+ ;;^UTILITY(U,$J,358.3,17815,2)
+ ;;=^5063108
+ ;;^UTILITY(U,$J,358.3,17816,0)
+ ;;=Z55.9^^78^928^5
+ ;;^UTILITY(U,$J,358.3,17816,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17816,1,3,0)
+ ;;=3^Education/Literacy Problems,Unspec
+ ;;^UTILITY(U,$J,358.3,17816,1,4,0)
+ ;;=4^Z55.9
+ ;;^UTILITY(U,$J,358.3,17816,2)
+ ;;=^5063106
+ ;;^UTILITY(U,$J,358.3,17817,0)
+ ;;=Z60.3^^78^928^1
+ ;;^UTILITY(U,$J,358.3,17817,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17817,1,3,0)
+ ;;=3^Acculturation Difficulty
+ ;;^UTILITY(U,$J,358.3,17817,1,4,0)
+ ;;=4^Z60.3
+ ;;^UTILITY(U,$J,358.3,17817,2)
+ ;;=^5063141
+ ;;^UTILITY(U,$J,358.3,17818,0)
+ ;;=Z65.3^^78^928^8
+ ;;^UTILITY(U,$J,358.3,17818,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17818,1,3,0)
+ ;;=3^Legal Circumstance Problems
+ ;;^UTILITY(U,$J,358.3,17818,1,4,0)
+ ;;=4^Z65.3
+ ;;^UTILITY(U,$J,358.3,17818,2)
+ ;;=^5063182
+ ;;^UTILITY(U,$J,358.3,17819,0)
+ ;;=Z53.1^^78^928^11
+ ;;^UTILITY(U,$J,358.3,17819,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17819,1,3,0)
+ ;;=3^Procedure/Treatment not Done d/t Pt Belief/Group Pressure
+ ;;^UTILITY(U,$J,358.3,17819,1,4,0)
+ ;;=4^Z53.1
+ ;;^UTILITY(U,$J,358.3,17819,2)
+ ;;=^5063094
+ ;;^UTILITY(U,$J,358.3,17820,0)
+ ;;=Z63.4^^78^928^3
+ ;;^UTILITY(U,$J,358.3,17820,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17820,1,3,0)
+ ;;=3^Disappearance/Death of Family Member
+ ;;^UTILITY(U,$J,358.3,17820,1,4,0)
+ ;;=4^Z63.4
+ ;;^UTILITY(U,$J,358.3,17820,2)
+ ;;=^5063168
+ ;;^UTILITY(U,$J,358.3,17821,0)
+ ;;=Z69.021^^78^928^10
+ ;;^UTILITY(U,$J,358.3,17821,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17821,1,3,0)
+ ;;=3^Mental Hlth Svc for Perpetrator of Non-Parental Child Abuse
+ ;;^UTILITY(U,$J,358.3,17821,1,4,0)
+ ;;=4^Z69.021
+ ;;^UTILITY(U,$J,358.3,17821,2)
+ ;;=^5063231
+ ;;^UTILITY(U,$J,358.3,17822,0)
+ ;;=Z69.82^^78^928^9

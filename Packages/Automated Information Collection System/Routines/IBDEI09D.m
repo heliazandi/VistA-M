@@ -1,128 +1,296 @@
-IBDEI09D ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI09D ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3840,2)
- ;;=^5007558
- ;;^UTILITY(U,$J,358.3,3841,0)
- ;;=I69.933^^28^259^35
- ;;^UTILITY(U,$J,358.3,3841,1,0)
+ ;;^UTILITY(U,$J,358.3,9334,1,4,0)
+ ;;=4^C31.9
+ ;;^UTILITY(U,$J,358.3,9334,2)
+ ;;=^5000953
+ ;;^UTILITY(U,$J,358.3,9335,0)
+ ;;=C32.0^^48^554^15
+ ;;^UTILITY(U,$J,358.3,9335,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3841,1,3,0)
- ;;=3^Cerebrovascular Disease,Monoplegia,Rt Upper Nondominant Side
- ;;^UTILITY(U,$J,358.3,3841,1,4,0)
- ;;=4^I69.933
- ;;^UTILITY(U,$J,358.3,3841,2)
- ;;=^5007559
- ;;^UTILITY(U,$J,358.3,3842,0)
- ;;=I69.998^^28^259^42
- ;;^UTILITY(U,$J,358.3,3842,1,0)
+ ;;^UTILITY(U,$J,358.3,9335,1,3,0)
+ ;;=3^Malignant neoplasm of glottis
+ ;;^UTILITY(U,$J,358.3,9335,1,4,0)
+ ;;=4^C32.0
+ ;;^UTILITY(U,$J,358.3,9335,2)
+ ;;=^267129
+ ;;^UTILITY(U,$J,358.3,9336,0)
+ ;;=C32.1^^48^554^28
+ ;;^UTILITY(U,$J,358.3,9336,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3842,1,3,0)
- ;;=3^Cerebrovascular Disease,Sequelae,Unspec
- ;;^UTILITY(U,$J,358.3,3842,1,4,0)
- ;;=4^I69.998
- ;;^UTILITY(U,$J,358.3,3842,2)
- ;;=^5007572
- ;;^UTILITY(U,$J,358.3,3843,0)
- ;;=I69.928^^28^259^43
- ;;^UTILITY(U,$J,358.3,3843,1,0)
+ ;;^UTILITY(U,$J,358.3,9336,1,3,0)
+ ;;=3^Malignant neoplasm of supraglottis
+ ;;^UTILITY(U,$J,358.3,9336,1,4,0)
+ ;;=4^C32.1
+ ;;^UTILITY(U,$J,358.3,9336,2)
+ ;;=^267130
+ ;;^UTILITY(U,$J,358.3,9337,0)
+ ;;=C32.2^^48^554^26
+ ;;^UTILITY(U,$J,358.3,9337,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3843,1,3,0)
- ;;=3^Cerebrovascular Disease,Speech/Language Deficits,Unspec
- ;;^UTILITY(U,$J,358.3,3843,1,4,0)
- ;;=4^I69.928
- ;;^UTILITY(U,$J,358.3,3843,2)
- ;;=^5007557
- ;;^UTILITY(U,$J,358.3,3844,0)
- ;;=I69.965^^28^259^37
- ;;^UTILITY(U,$J,358.3,3844,1,0)
+ ;;^UTILITY(U,$J,358.3,9337,1,3,0)
+ ;;=3^Malignant neoplasm of subglottis
+ ;;^UTILITY(U,$J,358.3,9337,1,4,0)
+ ;;=4^C32.2
+ ;;^UTILITY(U,$J,358.3,9337,2)
+ ;;=^267131
+ ;;^UTILITY(U,$J,358.3,9338,0)
+ ;;=C44.212^^48^554^3
+ ;;^UTILITY(U,$J,358.3,9338,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3844,1,3,0)
- ;;=3^Cerebrovascular Disease,Paralytic Syndrome,Bilateral,Unspec
- ;;^UTILITY(U,$J,358.3,3844,1,4,0)
- ;;=4^I69.965
- ;;^UTILITY(U,$J,358.3,3844,2)
- ;;=^5007566
- ;;^UTILITY(U,$J,358.3,3845,0)
- ;;=I69.962^^28^259^38
- ;;^UTILITY(U,$J,358.3,3845,1,0)
+ ;;^UTILITY(U,$J,358.3,9338,1,3,0)
+ ;;=3^BC CA Skin RIGHT Ear and EAC
+ ;;^UTILITY(U,$J,358.3,9338,1,4,0)
+ ;;=4^C44.212
+ ;;^UTILITY(U,$J,358.3,9338,2)
+ ;;=^5001032
+ ;;^UTILITY(U,$J,358.3,9339,0)
+ ;;=C44.219^^48^554^2
+ ;;^UTILITY(U,$J,358.3,9339,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3845,1,3,0)
- ;;=3^Cerebrovascular Disease,Paralytic Syndrome,Lt Dominant Side
- ;;^UTILITY(U,$J,358.3,3845,1,4,0)
- ;;=4^I69.962
- ;;^UTILITY(U,$J,358.3,3845,2)
- ;;=^5133588
- ;;^UTILITY(U,$J,358.3,3846,0)
- ;;=I69.964^^28^259^39
- ;;^UTILITY(U,$J,358.3,3846,1,0)
+ ;;^UTILITY(U,$J,358.3,9339,1,3,0)
+ ;;=3^BC CA Skin LEFT Ear and EAC
+ ;;^UTILITY(U,$J,358.3,9339,1,4,0)
+ ;;=4^C44.219
+ ;;^UTILITY(U,$J,358.3,9339,2)
+ ;;=^5001033
+ ;;^UTILITY(U,$J,358.3,9340,0)
+ ;;=C44.222^^48^554^35
+ ;;^UTILITY(U,$J,358.3,9340,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3846,1,3,0)
- ;;=3^Cerebrovascular Disease,Paralytic Syndrome,Lt Nondominant Side
- ;;^UTILITY(U,$J,358.3,3846,1,4,0)
- ;;=4^I69.964
- ;;^UTILITY(U,$J,358.3,3846,2)
- ;;=^5133589
- ;;^UTILITY(U,$J,358.3,3847,0)
- ;;=I69.961^^28^259^40
- ;;^UTILITY(U,$J,358.3,3847,1,0)
+ ;;^UTILITY(U,$J,358.3,9340,1,3,0)
+ ;;=3^SC CA Skin RIGHT Ear and EAC
+ ;;^UTILITY(U,$J,358.3,9340,1,4,0)
+ ;;=4^C44.222
+ ;;^UTILITY(U,$J,358.3,9340,2)
+ ;;=^5001035
+ ;;^UTILITY(U,$J,358.3,9341,0)
+ ;;=C44.229^^48^554^34
+ ;;^UTILITY(U,$J,358.3,9341,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3847,1,3,0)
- ;;=3^Cerebrovascular Disease,Paralytic Syndrome,Rt Dominant Side
- ;;^UTILITY(U,$J,358.3,3847,1,4,0)
- ;;=4^I69.961
- ;;^UTILITY(U,$J,358.3,3847,2)
- ;;=^5007564
- ;;^UTILITY(U,$J,358.3,3848,0)
- ;;=I69.963^^28^259^41
- ;;^UTILITY(U,$J,358.3,3848,1,0)
+ ;;^UTILITY(U,$J,358.3,9341,1,3,0)
+ ;;=3^SC CA Skin LEFT Ear and EAC
+ ;;^UTILITY(U,$J,358.3,9341,1,4,0)
+ ;;=4^C44.229
+ ;;^UTILITY(U,$J,358.3,9341,2)
+ ;;=^5001036
+ ;;^UTILITY(U,$J,358.3,9342,0)
+ ;;=C44.310^^48^554^4
+ ;;^UTILITY(U,$J,358.3,9342,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3848,1,3,0)
- ;;=3^Cerebrovascular Disease,Paralytic Syndrome,Rt Nondominant Side
- ;;^UTILITY(U,$J,358.3,3848,1,4,0)
- ;;=4^I69.963
- ;;^UTILITY(U,$J,358.3,3848,2)
- ;;=^5007565
- ;;^UTILITY(U,$J,358.3,3849,0)
- ;;=G90.50^^28^259^44
- ;;^UTILITY(U,$J,358.3,3849,1,0)
+ ;;^UTILITY(U,$J,358.3,9342,1,3,0)
+ ;;=3^BC CA Skin UNSPEC Parts of Face
+ ;;^UTILITY(U,$J,358.3,9342,1,4,0)
+ ;;=4^C44.310
+ ;;^UTILITY(U,$J,358.3,9342,2)
+ ;;=^5001043
+ ;;^UTILITY(U,$J,358.3,9343,0)
+ ;;=C44.320^^48^554^36
+ ;;^UTILITY(U,$J,358.3,9343,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3849,1,3,0)
- ;;=3^Complex Regional Pain Syndrome I,Unspec
- ;;^UTILITY(U,$J,358.3,3849,1,4,0)
- ;;=4^G90.50
- ;;^UTILITY(U,$J,358.3,3849,2)
- ;;=^5004163
- ;;^UTILITY(U,$J,358.3,3850,0)
- ;;=R56.9^^28^259^45
- ;;^UTILITY(U,$J,358.3,3850,1,0)
+ ;;^UTILITY(U,$J,358.3,9343,1,3,0)
+ ;;=3^SC CA Skin UNSPEC Parts of Face
+ ;;^UTILITY(U,$J,358.3,9343,1,4,0)
+ ;;=4^C44.320
+ ;;^UTILITY(U,$J,358.3,9343,2)
+ ;;=^5001046
+ ;;^UTILITY(U,$J,358.3,9344,0)
+ ;;=C44.41^^48^554^1
+ ;;^UTILITY(U,$J,358.3,9344,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3850,1,3,0)
- ;;=3^Convulsions,Unspec
- ;;^UTILITY(U,$J,358.3,3850,1,4,0)
- ;;=4^R56.9
- ;;^UTILITY(U,$J,358.3,3850,2)
- ;;=^5019524
- ;;^UTILITY(U,$J,358.3,3851,0)
- ;;=G37.9^^28^259^46
- ;;^UTILITY(U,$J,358.3,3851,1,0)
+ ;;^UTILITY(U,$J,358.3,9344,1,3,0)
+ ;;=3^BC CA SCALP and Skin of Neck
+ ;;^UTILITY(U,$J,358.3,9344,1,4,0)
+ ;;=4^C44.41
+ ;;^UTILITY(U,$J,358.3,9344,2)
+ ;;=^340476
+ ;;^UTILITY(U,$J,358.3,9345,0)
+ ;;=C44.42^^48^554^33
+ ;;^UTILITY(U,$J,358.3,9345,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3851,1,3,0)
- ;;=3^Demyelinating Disease of Central Nervous System,Unspec
- ;;^UTILITY(U,$J,358.3,3851,1,4,0)
- ;;=4^G37.9
- ;;^UTILITY(U,$J,358.3,3851,2)
- ;;=^5003828
- ;;^UTILITY(U,$J,358.3,3852,0)
- ;;=G36.9^^28^259^47
- ;;^UTILITY(U,$J,358.3,3852,1,0)
+ ;;^UTILITY(U,$J,358.3,9345,1,3,0)
+ ;;=3^SC CA SCALP and Skin of Neck
+ ;;^UTILITY(U,$J,358.3,9345,1,4,0)
+ ;;=4^C44.42
+ ;;^UTILITY(U,$J,358.3,9345,2)
+ ;;=^340477
+ ;;^UTILITY(U,$J,358.3,9346,0)
+ ;;=C44.91^^48^554^5
+ ;;^UTILITY(U,$J,358.3,9346,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3852,1,3,0)
- ;;=3^Demyelination,Disseminated,Acute,Unspec
- ;;^UTILITY(U,$J,358.3,3852,1,4,0)
- ;;=4^G36.9
- ;;^UTILITY(U,$J,358.3,3852,2)
- ;;=^5003820
- ;;^UTILITY(U,$J,358.3,3853,0)
- ;;=R42.^^28^259^48
+ ;;^UTILITY(U,$J,358.3,9346,1,3,0)
+ ;;=3^BC CA Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,9346,1,4,0)
+ ;;=4^C44.91
+ ;;^UTILITY(U,$J,358.3,9346,2)
+ ;;=^5001092
+ ;;^UTILITY(U,$J,358.3,9347,0)
+ ;;=C44.92^^48^554^37
+ ;;^UTILITY(U,$J,358.3,9347,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9347,1,3,0)
+ ;;=3^SC CA Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,9347,1,4,0)
+ ;;=4^C44.92
+ ;;^UTILITY(U,$J,358.3,9347,2)
+ ;;=^5001093
+ ;;^UTILITY(U,$J,358.3,9348,0)
+ ;;=C73.^^48^554^29
+ ;;^UTILITY(U,$J,358.3,9348,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9348,1,3,0)
+ ;;=3^Malignant neoplasm of thyroid gland
+ ;;^UTILITY(U,$J,358.3,9348,1,4,0)
+ ;;=4^C73.
+ ;;^UTILITY(U,$J,358.3,9348,2)
+ ;;=^267296
+ ;;^UTILITY(U,$J,358.3,9349,0)
+ ;;=C76.0^^48^554^17
+ ;;^UTILITY(U,$J,358.3,9349,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9349,1,3,0)
+ ;;=3^Malignant neoplasm of head, face and neck
+ ;;^UTILITY(U,$J,358.3,9349,1,4,0)
+ ;;=4^C76.0
+ ;;^UTILITY(U,$J,358.3,9349,2)
+ ;;=^5001324
+ ;;^UTILITY(U,$J,358.3,9350,0)
+ ;;=C96.9^^48^554^19
+ ;;^UTILITY(U,$J,358.3,9350,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9350,1,3,0)
+ ;;=3^Malignant neoplasm of lymphoid, hematpoetc and rel tissue, unsp
+ ;;^UTILITY(U,$J,358.3,9350,1,4,0)
+ ;;=4^C96.9
+ ;;^UTILITY(U,$J,358.3,9350,2)
+ ;;=^5001864
+ ;;^UTILITY(U,$J,358.3,9351,0)
+ ;;=D10.0^^48^554^7
+ ;;^UTILITY(U,$J,358.3,9351,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9351,1,3,0)
+ ;;=3^Benign neoplasm of lip
+ ;;^UTILITY(U,$J,358.3,9351,1,4,0)
+ ;;=4^D10.0
+ ;;^UTILITY(U,$J,358.3,9351,2)
+ ;;=^267578
+ ;;^UTILITY(U,$J,358.3,9352,0)
+ ;;=D10.1^^48^554^11
+ ;;^UTILITY(U,$J,358.3,9352,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9352,1,3,0)
+ ;;=3^Benign neoplasm of tongue
+ ;;^UTILITY(U,$J,358.3,9352,1,4,0)
+ ;;=4^D10.1
+ ;;^UTILITY(U,$J,358.3,9352,2)
+ ;;=^267579
+ ;;^UTILITY(U,$J,358.3,9353,0)
+ ;;=D11.0^^48^554^9
+ ;;^UTILITY(U,$J,358.3,9353,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9353,1,3,0)
+ ;;=3^Benign neoplasm of parotid gland
+ ;;^UTILITY(U,$J,358.3,9353,1,4,0)
+ ;;=4^D11.0
+ ;;^UTILITY(U,$J,358.3,9353,2)
+ ;;=^5001960
+ ;;^UTILITY(U,$J,358.3,9354,0)
+ ;;=D11.7^^48^554^8
+ ;;^UTILITY(U,$J,358.3,9354,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9354,1,3,0)
+ ;;=3^Benign neoplasm of other major salivary glands
+ ;;^UTILITY(U,$J,358.3,9354,1,4,0)
+ ;;=4^D11.7
+ ;;^UTILITY(U,$J,358.3,9354,2)
+ ;;=^5001961
+ ;;^UTILITY(U,$J,358.3,9355,0)
+ ;;=D33.3^^48^554^6
+ ;;^UTILITY(U,$J,358.3,9355,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9355,1,3,0)
+ ;;=3^Benign neoplasm of cranial nerves/Vestibular Schwannoma
+ ;;^UTILITY(U,$J,358.3,9355,1,4,0)
+ ;;=4^D33.3
+ ;;^UTILITY(U,$J,358.3,9355,2)
+ ;;=^13298
+ ;;^UTILITY(U,$J,358.3,9356,0)
+ ;;=D34.^^48^554^10
+ ;;^UTILITY(U,$J,358.3,9356,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9356,1,3,0)
+ ;;=3^Benign neoplasm of thyroid gland
+ ;;^UTILITY(U,$J,358.3,9356,1,4,0)
+ ;;=4^D34.
+ ;;^UTILITY(U,$J,358.3,9356,2)
+ ;;=^5002141
+ ;;^UTILITY(U,$J,358.3,9357,0)
+ ;;=J34.2^^48^555^11
+ ;;^UTILITY(U,$J,358.3,9357,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9357,1,3,0)
+ ;;=3^Deviated nasal septum
+ ;;^UTILITY(U,$J,358.3,9357,1,4,0)
+ ;;=4^J34.2
+ ;;^UTILITY(U,$J,358.3,9357,2)
+ ;;=^259087
+ ;;^UTILITY(U,$J,358.3,9358,0)
+ ;;=J33.0^^48^555^20
+ ;;^UTILITY(U,$J,358.3,9358,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9358,1,3,0)
+ ;;=3^Polyp of nasal cavity
+ ;;^UTILITY(U,$J,358.3,9358,1,4,0)
+ ;;=4^J33.0
+ ;;^UTILITY(U,$J,358.3,9358,2)
+ ;;=^269880
+ ;;^UTILITY(U,$J,358.3,9359,0)
+ ;;=J33.8^^48^555^21
+ ;;^UTILITY(U,$J,358.3,9359,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9359,1,3,0)
+ ;;=3^Polyp of sinus NEC
+ ;;^UTILITY(U,$J,358.3,9359,1,4,0)
+ ;;=4^J33.8
+ ;;^UTILITY(U,$J,358.3,9359,2)
+ ;;=^269884
+ ;;^UTILITY(U,$J,358.3,9360,0)
+ ;;=J31.0^^48^555^8
+ ;;^UTILITY(U,$J,358.3,9360,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9360,1,3,0)
+ ;;=3^Chronic rhinitis
+ ;;^UTILITY(U,$J,358.3,9360,1,4,0)
+ ;;=4^J31.0
+ ;;^UTILITY(U,$J,358.3,9360,2)
+ ;;=^24434
+ ;;^UTILITY(U,$J,358.3,9361,0)
+ ;;=J31.2^^48^555^7
+ ;;^UTILITY(U,$J,358.3,9361,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9361,1,3,0)
+ ;;=3^Chronic pharyngitis
+ ;;^UTILITY(U,$J,358.3,9361,1,4,0)
+ ;;=4^J31.2
+ ;;^UTILITY(U,$J,358.3,9361,2)
+ ;;=^269886
+ ;;^UTILITY(U,$J,358.3,9362,0)
+ ;;=J31.1^^48^555^5
+ ;;^UTILITY(U,$J,358.3,9362,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9362,1,3,0)
+ ;;=3^Chronic nasopharyngitis
+ ;;^UTILITY(U,$J,358.3,9362,1,4,0)
+ ;;=4^J31.1
+ ;;^UTILITY(U,$J,358.3,9362,2)
+ ;;=^269888
+ ;;^UTILITY(U,$J,358.3,9363,0)
+ ;;=J32.9^^48^555^9
+ ;;^UTILITY(U,$J,358.3,9363,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9363,1,3,0)
+ ;;=3^Chronic sinusitis, unspecified
+ ;;^UTILITY(U,$J,358.3,9363,1,4,0)
+ ;;=4^J32.9

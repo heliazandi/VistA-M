@@ -1,130 +1,282 @@
-IBDEI0EO ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0EO ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6412,1,4,0)
- ;;=4^F14.151
- ;;^UTILITY(U,$J,358.3,6412,2)
- ;;=^5003246
- ;;^UTILITY(U,$J,358.3,6413,0)
- ;;=F19.24^^43^397^20
- ;;^UTILITY(U,$J,358.3,6413,1,0)
+ ;;^UTILITY(U,$J,358.3,14673,1,4,0)
+ ;;=4^C77.0
+ ;;^UTILITY(U,$J,358.3,14673,2)
+ ;;=^5001329
+ ;;^UTILITY(U,$J,358.3,14674,0)
+ ;;=C77.8^^61^740^143
+ ;;^UTILITY(U,$J,358.3,14674,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6413,1,3,0)
- ;;=3^Psychoactive Subs Dependence w/ Mood Disorder
- ;;^UTILITY(U,$J,358.3,6413,1,4,0)
- ;;=4^F19.24
- ;;^UTILITY(U,$J,358.3,6413,2)
- ;;=^5003441
- ;;^UTILITY(U,$J,358.3,6414,0)
- ;;=F11.24^^43^397^13
- ;;^UTILITY(U,$J,358.3,6414,1,0)
+ ;;^UTILITY(U,$J,358.3,14674,1,3,0)
+ ;;=3^Malig Neop Nodes of Multiple Regions,Sec and Unspec
+ ;;^UTILITY(U,$J,358.3,14674,1,4,0)
+ ;;=4^C77.8
+ ;;^UTILITY(U,$J,358.3,14674,2)
+ ;;=^5001332
+ ;;^UTILITY(U,$J,358.3,14675,0)
+ ;;=C79.51^^61^740^113
+ ;;^UTILITY(U,$J,358.3,14675,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6414,1,3,0)
- ;;=3^Opioid Dependence w/ Mood Disorder
- ;;^UTILITY(U,$J,358.3,6414,1,4,0)
- ;;=4^F11.24
- ;;^UTILITY(U,$J,358.3,6414,2)
- ;;=^5003134
- ;;^UTILITY(U,$J,358.3,6415,0)
- ;;=F19.96^^43^397^26
- ;;^UTILITY(U,$J,358.3,6415,1,0)
+ ;;^UTILITY(U,$J,358.3,14675,1,3,0)
+ ;;=3^Malig Neop Bone,Secondary
+ ;;^UTILITY(U,$J,358.3,14675,1,4,0)
+ ;;=4^C79.51
+ ;;^UTILITY(U,$J,358.3,14675,2)
+ ;;=^5001350
+ ;;^UTILITY(U,$J,358.3,14676,0)
+ ;;=C79.52^^61^740^112
+ ;;^UTILITY(U,$J,358.3,14676,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6415,1,3,0)
- ;;=3^Psychoactive Subs Use w/ Persisting Amnestic Disorder
- ;;^UTILITY(U,$J,358.3,6415,1,4,0)
- ;;=4^F19.96
- ;;^UTILITY(U,$J,358.3,6415,2)
- ;;=^5003464
- ;;^UTILITY(U,$J,358.3,6416,0)
- ;;=F13.26^^43^397^34
- ;;^UTILITY(U,$J,358.3,6416,1,0)
+ ;;^UTILITY(U,$J,358.3,14676,1,3,0)
+ ;;=3^Malig Neop Bone Marrow,Secondary
+ ;;^UTILITY(U,$J,358.3,14676,1,4,0)
+ ;;=4^C79.52
+ ;;^UTILITY(U,$J,358.3,14676,2)
+ ;;=^5001351
+ ;;^UTILITY(U,$J,358.3,14677,0)
+ ;;=C79.31^^61^740^114
+ ;;^UTILITY(U,$J,358.3,14677,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6416,1,3,0)
- ;;=3^Sedatv/Hyp/Anxiolytc Dependence w/ Persisting Amnestic Disorder
- ;;^UTILITY(U,$J,358.3,6416,1,4,0)
- ;;=4^F13.26
- ;;^UTILITY(U,$J,358.3,6416,2)
- ;;=^5003214
- ;;^UTILITY(U,$J,358.3,6417,0)
- ;;=F19.16^^43^397^16
- ;;^UTILITY(U,$J,358.3,6417,1,0)
+ ;;^UTILITY(U,$J,358.3,14677,1,3,0)
+ ;;=3^Malig Neop Brain,Secondary
+ ;;^UTILITY(U,$J,358.3,14677,1,4,0)
+ ;;=4^C79.31
+ ;;^UTILITY(U,$J,358.3,14677,2)
+ ;;=^5001347
+ ;;^UTILITY(U,$J,358.3,14678,0)
+ ;;=C79.72^^61^740^129
+ ;;^UTILITY(U,$J,358.3,14678,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6417,1,3,0)
- ;;=3^Psychoactive Subs Abuse w/ Persisting Amnestic Disorder
- ;;^UTILITY(U,$J,358.3,6417,1,4,0)
- ;;=4^F19.16
- ;;^UTILITY(U,$J,358.3,6417,2)
- ;;=^5003425
- ;;^UTILITY(U,$J,358.3,6418,0)
- ;;=F19.97^^43^397^27
- ;;^UTILITY(U,$J,358.3,6418,1,0)
+ ;;^UTILITY(U,$J,358.3,14678,1,3,0)
+ ;;=3^Malig Neop Left Adrenal Gland,Secondary
+ ;;^UTILITY(U,$J,358.3,14678,1,4,0)
+ ;;=4^C79.72
+ ;;^UTILITY(U,$J,358.3,14678,2)
+ ;;=^5001357
+ ;;^UTILITY(U,$J,358.3,14679,0)
+ ;;=C78.02^^61^740^133
+ ;;^UTILITY(U,$J,358.3,14679,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6418,1,3,0)
- ;;=3^Psychoactive Subs Use w/ Persisting Dementia
- ;;^UTILITY(U,$J,358.3,6418,1,4,0)
- ;;=4^F19.97
- ;;^UTILITY(U,$J,358.3,6418,2)
- ;;=^5003465
- ;;^UTILITY(U,$J,358.3,6419,0)
- ;;=F19.17^^43^397^17
- ;;^UTILITY(U,$J,358.3,6419,1,0)
+ ;;^UTILITY(U,$J,358.3,14679,1,3,0)
+ ;;=3^Malig Neop Left Lung,Secondary
+ ;;^UTILITY(U,$J,358.3,14679,1,4,0)
+ ;;=4^C78.02
+ ;;^UTILITY(U,$J,358.3,14679,2)
+ ;;=^5001336
+ ;;^UTILITY(U,$J,358.3,14680,0)
+ ;;=C78.7^^61^740^138
+ ;;^UTILITY(U,$J,358.3,14680,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6419,1,3,0)
- ;;=3^Psychoactive Subs Abuse w/ Persisting Dementia
- ;;^UTILITY(U,$J,358.3,6419,1,4,0)
- ;;=4^F19.17
- ;;^UTILITY(U,$J,358.3,6419,2)
- ;;=^5003426
- ;;^UTILITY(U,$J,358.3,6420,0)
- ;;=F19.27^^43^397^21
- ;;^UTILITY(U,$J,358.3,6420,1,0)
+ ;;^UTILITY(U,$J,358.3,14680,1,3,0)
+ ;;=3^Malig Neop Liver/Intrahepatic Bile Duct,Secondary
+ ;;^UTILITY(U,$J,358.3,14680,1,4,0)
+ ;;=4^C78.7
+ ;;^UTILITY(U,$J,358.3,14680,2)
+ ;;=^5001339
+ ;;^UTILITY(U,$J,358.3,14681,0)
+ ;;=C79.71^^61^740^151
+ ;;^UTILITY(U,$J,358.3,14681,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6420,1,3,0)
- ;;=3^Psychoactive Subs Dependence w/ Persisting Dementia
- ;;^UTILITY(U,$J,358.3,6420,1,4,0)
- ;;=4^F19.27
- ;;^UTILITY(U,$J,358.3,6420,2)
- ;;=^5003446
- ;;^UTILITY(U,$J,358.3,6421,0)
- ;;=F19.950^^43^397^28
- ;;^UTILITY(U,$J,358.3,6421,1,0)
+ ;;^UTILITY(U,$J,358.3,14681,1,3,0)
+ ;;=3^Malig Neop Right Adrenal Gland,Secondary
+ ;;^UTILITY(U,$J,358.3,14681,1,4,0)
+ ;;=4^C79.71
+ ;;^UTILITY(U,$J,358.3,14681,2)
+ ;;=^5001356
+ ;;^UTILITY(U,$J,358.3,14682,0)
+ ;;=C78.01^^61^740^155
+ ;;^UTILITY(U,$J,358.3,14682,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6421,1,3,0)
- ;;=3^Psychoactive Subs Use w/ Psych Disorder w/ Delusions
- ;;^UTILITY(U,$J,358.3,6421,1,4,0)
- ;;=4^F19.950
- ;;^UTILITY(U,$J,358.3,6421,2)
- ;;=^5003461
- ;;^UTILITY(U,$J,358.3,6422,0)
- ;;=F15.250^^43^397^44
- ;;^UTILITY(U,$J,358.3,6422,1,0)
+ ;;^UTILITY(U,$J,358.3,14682,1,3,0)
+ ;;=3^Malig Neop Right Lung,Secondary
+ ;;^UTILITY(U,$J,358.3,14682,1,4,0)
+ ;;=4^C78.01
+ ;;^UTILITY(U,$J,358.3,14682,2)
+ ;;=^5001335
+ ;;^UTILITY(U,$J,358.3,14683,0)
+ ;;=C79.70^^61^740^106
+ ;;^UTILITY(U,$J,358.3,14683,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6422,1,3,0)
- ;;=3^Stimulant Dependence w/ Psych Disorder w/ Delusions
- ;;^UTILITY(U,$J,358.3,6422,1,4,0)
- ;;=4^F15.250
- ;;^UTILITY(U,$J,358.3,6422,2)
- ;;=^5003303
- ;;^UTILITY(U,$J,358.3,6423,0)
- ;;=F15.150^^43^397^40
- ;;^UTILITY(U,$J,358.3,6423,1,0)
+ ;;^UTILITY(U,$J,358.3,14683,1,3,0)
+ ;;=3^Malig Neop Adrenal Gland Unspec,Secondary
+ ;;^UTILITY(U,$J,358.3,14683,1,4,0)
+ ;;=4^C79.70
+ ;;^UTILITY(U,$J,358.3,14683,2)
+ ;;=^5001355
+ ;;^UTILITY(U,$J,358.3,14684,0)
+ ;;=C78.00^^61^740^139
+ ;;^UTILITY(U,$J,358.3,14684,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6423,1,3,0)
- ;;=3^Stimulant Abuse w/ Psych Disorder w/ Delusions
- ;;^UTILITY(U,$J,358.3,6423,1,4,0)
- ;;=4^F15.150
- ;;^UTILITY(U,$J,358.3,6423,2)
- ;;=^5003288
- ;;^UTILITY(U,$J,358.3,6424,0)
- ;;=F13.250^^43^397^36
- ;;^UTILITY(U,$J,358.3,6424,1,0)
+ ;;^UTILITY(U,$J,358.3,14684,1,3,0)
+ ;;=3^Malig Neop Lung Unspec,Secondary
+ ;;^UTILITY(U,$J,358.3,14684,1,4,0)
+ ;;=4^C78.00
+ ;;^UTILITY(U,$J,358.3,14684,2)
+ ;;=^5001334
+ ;;^UTILITY(U,$J,358.3,14685,0)
+ ;;=D57.1^^61^740^182
+ ;;^UTILITY(U,$J,358.3,14685,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6424,1,3,0)
- ;;=3^Sedatv/Hyp/Anxiolytc Dependence w/ Psych Disorder w/ Delusions
- ;;^UTILITY(U,$J,358.3,6424,1,4,0)
- ;;=4^F13.250
- ;;^UTILITY(U,$J,358.3,6424,2)
- ;;=^5003211
- ;;^UTILITY(U,$J,358.3,6425,0)
- ;;=F13.150^^43^397^30
+ ;;^UTILITY(U,$J,358.3,14685,1,3,0)
+ ;;=3^Sickle-Cell Disease w/o Crisis
+ ;;^UTILITY(U,$J,358.3,14685,1,4,0)
+ ;;=4^D57.1
+ ;;^UTILITY(U,$J,358.3,14685,2)
+ ;;=^5002309
+ ;;^UTILITY(U,$J,358.3,14686,0)
+ ;;=D75.1^^61^740^180
+ ;;^UTILITY(U,$J,358.3,14686,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14686,1,3,0)
+ ;;=3^Polycythemia,Secondary
+ ;;^UTILITY(U,$J,358.3,14686,1,4,0)
+ ;;=4^D75.1
+ ;;^UTILITY(U,$J,358.3,14686,2)
+ ;;=^186856
+ ;;^UTILITY(U,$J,358.3,14687,0)
+ ;;=C90.30^^61^740^183
+ ;;^UTILITY(U,$J,358.3,14687,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14687,1,3,0)
+ ;;=3^Solitary Plasmacytoma,Not in Remission
+ ;;^UTILITY(U,$J,358.3,14687,1,4,0)
+ ;;=4^C90.30
+ ;;^UTILITY(U,$J,358.3,14687,2)
+ ;;=^5001759
+ ;;^UTILITY(U,$J,358.3,14688,0)
+ ;;=D56.3^^61^740^184
+ ;;^UTILITY(U,$J,358.3,14688,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14688,1,3,0)
+ ;;=3^Thalassemia Minor
+ ;;^UTILITY(U,$J,358.3,14688,1,4,0)
+ ;;=4^D56.3
+ ;;^UTILITY(U,$J,358.3,14688,2)
+ ;;=^340497
+ ;;^UTILITY(U,$J,358.3,14689,0)
+ ;;=D56.9^^61^740^185
+ ;;^UTILITY(U,$J,358.3,14689,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14689,1,3,0)
+ ;;=3^Thalassemia,Unspec
+ ;;^UTILITY(U,$J,358.3,14689,1,4,0)
+ ;;=4^D56.9
+ ;;^UTILITY(U,$J,358.3,14689,2)
+ ;;=^340606
+ ;;^UTILITY(U,$J,358.3,14690,0)
+ ;;=M31.1^^61^740^187
+ ;;^UTILITY(U,$J,358.3,14690,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14690,1,3,0)
+ ;;=3^Thrombotic Microangiopathy
+ ;;^UTILITY(U,$J,358.3,14690,1,4,0)
+ ;;=4^M31.1
+ ;;^UTILITY(U,$J,358.3,14690,2)
+ ;;=^119061
+ ;;^UTILITY(U,$J,358.3,14691,0)
+ ;;=D51.2^^61^740^188
+ ;;^UTILITY(U,$J,358.3,14691,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14691,1,3,0)
+ ;;=3^Transcobalamin II Deficiency
+ ;;^UTILITY(U,$J,358.3,14691,1,4,0)
+ ;;=4^D51.2
+ ;;^UTILITY(U,$J,358.3,14691,2)
+ ;;=^5002286
+ ;;^UTILITY(U,$J,358.3,14692,0)
+ ;;=D05.92^^61^740^35
+ ;;^UTILITY(U,$J,358.3,14692,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14692,1,3,0)
+ ;;=3^Carcinoma in Situ Left Breast,Unspec Type
+ ;;^UTILITY(U,$J,358.3,14692,1,4,0)
+ ;;=4^D05.92
+ ;;^UTILITY(U,$J,358.3,14692,2)
+ ;;=^5001937
+ ;;^UTILITY(U,$J,358.3,14693,0)
+ ;;=D05.91^^61^740^37
+ ;;^UTILITY(U,$J,358.3,14693,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14693,1,3,0)
+ ;;=3^Carcinoma in Situ Right Breast,Unspec Type
+ ;;^UTILITY(U,$J,358.3,14693,1,4,0)
+ ;;=4^D05.91
+ ;;^UTILITY(U,$J,358.3,14693,2)
+ ;;=^5001936
+ ;;^UTILITY(U,$J,358.3,14694,0)
+ ;;=D05.90^^61^740^33
+ ;;^UTILITY(U,$J,358.3,14694,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14694,1,3,0)
+ ;;=3^Carcinoma in Situ Breast Unspec,Unspec Type
+ ;;^UTILITY(U,$J,358.3,14694,1,4,0)
+ ;;=4^D05.90
+ ;;^UTILITY(U,$J,358.3,14694,2)
+ ;;=^5001935
+ ;;^UTILITY(U,$J,358.3,14695,0)
+ ;;=D51.0^^61^740^189
+ ;;^UTILITY(U,$J,358.3,14695,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14695,1,3,0)
+ ;;=3^Vitamin B12 Deficiency Anemia d/t Intrinsic Factor Deficiency
+ ;;^UTILITY(U,$J,358.3,14695,1,4,0)
+ ;;=4^D51.0
+ ;;^UTILITY(U,$J,358.3,14695,2)
+ ;;=^5002284
+ ;;^UTILITY(U,$J,358.3,14696,0)
+ ;;=D51.1^^61^740^190
+ ;;^UTILITY(U,$J,358.3,14696,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14696,1,3,0)
+ ;;=3^Vitamin B12 Deficiency Anemia d/t Selective Vit B12 Malabsorp w/ Proteinuria
+ ;;^UTILITY(U,$J,358.3,14696,1,4,0)
+ ;;=4^D51.1
+ ;;^UTILITY(U,$J,358.3,14696,2)
+ ;;=^5002285
+ ;;^UTILITY(U,$J,358.3,14697,0)
+ ;;=D51.9^^61^740^192
+ ;;^UTILITY(U,$J,358.3,14697,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14697,1,3,0)
+ ;;=3^Vitamin B12 Deficiency Anemia,Unspec
+ ;;^UTILITY(U,$J,358.3,14697,1,4,0)
+ ;;=4^D51.9
+ ;;^UTILITY(U,$J,358.3,14697,2)
+ ;;=^5002289
+ ;;^UTILITY(U,$J,358.3,14698,0)
+ ;;=D68.0^^61^740^194
+ ;;^UTILITY(U,$J,358.3,14698,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14698,1,3,0)
+ ;;=3^Von Willebrand's Disease
+ ;;^UTILITY(U,$J,358.3,14698,1,4,0)
+ ;;=4^D68.0
+ ;;^UTILITY(U,$J,358.3,14698,2)
+ ;;=^127267
+ ;;^UTILITY(U,$J,358.3,14699,0)
+ ;;=C88.0^^61^740^195
+ ;;^UTILITY(U,$J,358.3,14699,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14699,1,3,0)
+ ;;=3^Waldenstrom Macroglobulinemia
+ ;;^UTILITY(U,$J,358.3,14699,1,4,0)
+ ;;=4^C88.0
+ ;;^UTILITY(U,$J,358.3,14699,2)
+ ;;=^5001748
+ ;;^UTILITY(U,$J,358.3,14700,0)
+ ;;=C91.02^^61^740^3
+ ;;^UTILITY(U,$J,358.3,14700,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14700,1,3,0)
+ ;;=3^Acute Lymphoblastic Leukemia,In Relapse
+ ;;^UTILITY(U,$J,358.3,14700,1,4,0)
+ ;;=4^C91.02
+ ;;^UTILITY(U,$J,358.3,14700,2)
+ ;;=^5001764
+ ;;^UTILITY(U,$J,358.3,14701,0)
+ ;;=C92.02^^61^740^6
+ ;;^UTILITY(U,$J,358.3,14701,1,0)
+ ;;=^358.31IA^4^2

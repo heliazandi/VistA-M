@@ -1,136 +1,260 @@
-IBDEI0ZR ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0ZR ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16481,1,4,0)
- ;;=4^I83.019
- ;;^UTILITY(U,$J,358.3,16481,2)
- ;;=^5007979
- ;;^UTILITY(U,$J,358.3,16482,0)
- ;;=I83.899^^88^847^79
- ;;^UTILITY(U,$J,358.3,16482,1,0)
+ ;;^UTILITY(U,$J,358.3,35975,1,3,0)
+ ;;=3^Other/Unknown Substance Use D/O w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,35975,1,4,0)
+ ;;=4^F19.10
+ ;;^UTILITY(U,$J,358.3,35975,2)
+ ;;=^5003416
+ ;;^UTILITY(U,$J,358.3,35976,0)
+ ;;=F19.20^^130^1736^30
+ ;;^UTILITY(U,$J,358.3,35976,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16482,1,3,0)
- ;;=3^Varicose Veins Lower Extrem w/ Other Complications
- ;;^UTILITY(U,$J,358.3,16482,1,4,0)
- ;;=4^I83.899
- ;;^UTILITY(U,$J,358.3,16482,2)
- ;;=^5008018
- ;;^UTILITY(U,$J,358.3,16483,0)
- ;;=I83.90^^88^847^80
- ;;^UTILITY(U,$J,358.3,16483,1,0)
+ ;;^UTILITY(U,$J,358.3,35976,1,3,0)
+ ;;=3^Other/Unknown Substance Use D/O w/ Moderate Use D/O
+ ;;^UTILITY(U,$J,358.3,35976,1,4,0)
+ ;;=4^F19.20
+ ;;^UTILITY(U,$J,358.3,35976,2)
+ ;;=^5003431
+ ;;^UTILITY(U,$J,358.3,35977,0)
+ ;;=F19.20^^130^1736^31
+ ;;^UTILITY(U,$J,358.3,35977,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16483,1,3,0)
- ;;=3^Varicose Veins Lower Extrem,Asymptomatic
- ;;^UTILITY(U,$J,358.3,16483,1,4,0)
- ;;=4^I83.90
- ;;^UTILITY(U,$J,358.3,16483,2)
- ;;=^5008019
- ;;^UTILITY(U,$J,358.3,16484,0)
- ;;=I87.2^^88^847^82
- ;;^UTILITY(U,$J,358.3,16484,1,0)
+ ;;^UTILITY(U,$J,358.3,35977,1,3,0)
+ ;;=3^Other/Unknown Substance Use D/O w/ Severe Use D/O
+ ;;^UTILITY(U,$J,358.3,35977,1,4,0)
+ ;;=4^F19.20
+ ;;^UTILITY(U,$J,358.3,35977,2)
+ ;;=^5003431
+ ;;^UTILITY(U,$J,358.3,35978,0)
+ ;;=F19.239^^130^1736^32
+ ;;^UTILITY(U,$J,358.3,35978,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16484,1,3,0)
- ;;=3^Venous Insufficiency
- ;;^UTILITY(U,$J,358.3,16484,1,4,0)
- ;;=4^I87.2
- ;;^UTILITY(U,$J,358.3,16484,2)
- ;;=^5008047
- ;;^UTILITY(U,$J,358.3,16485,0)
- ;;=H61.23^^88^848^1
- ;;^UTILITY(U,$J,358.3,16485,1,0)
+ ;;^UTILITY(U,$J,358.3,35978,1,3,0)
+ ;;=3^Other/Unknown Substance Withdrawal
+ ;;^UTILITY(U,$J,358.3,35978,1,4,0)
+ ;;=4^F19.239
+ ;;^UTILITY(U,$J,358.3,35978,2)
+ ;;=^5003440
+ ;;^UTILITY(U,$J,358.3,35979,0)
+ ;;=F19.231^^130^1736^33
+ ;;^UTILITY(U,$J,358.3,35979,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16485,1,3,0)
- ;;=3^Cerumen Impaction,Bilateral
- ;;^UTILITY(U,$J,358.3,16485,1,4,0)
- ;;=4^H61.23
- ;;^UTILITY(U,$J,358.3,16485,2)
- ;;=^5006533
- ;;^UTILITY(U,$J,358.3,16486,0)
- ;;=H61.22^^88^848^2
- ;;^UTILITY(U,$J,358.3,16486,1,0)
+ ;;^UTILITY(U,$J,358.3,35979,1,3,0)
+ ;;=3^Other/Unknown Substance Withdrawal Delirium
+ ;;^UTILITY(U,$J,358.3,35979,1,4,0)
+ ;;=4^F19.231
+ ;;^UTILITY(U,$J,358.3,35979,2)
+ ;;=^5003438
+ ;;^UTILITY(U,$J,358.3,35980,0)
+ ;;=F19.99^^130^1736^28
+ ;;^UTILITY(U,$J,358.3,35980,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16486,1,3,0)
- ;;=3^Cerumen Impaction,Left Ear
- ;;^UTILITY(U,$J,358.3,16486,1,4,0)
- ;;=4^H61.22
- ;;^UTILITY(U,$J,358.3,16486,2)
- ;;=^5006532
- ;;^UTILITY(U,$J,358.3,16487,0)
- ;;=H61.21^^88^848^3
- ;;^UTILITY(U,$J,358.3,16487,1,0)
+ ;;^UTILITY(U,$J,358.3,35980,1,3,0)
+ ;;=3^Other/Unknown Substance Related D/O,Unspec
+ ;;^UTILITY(U,$J,358.3,35980,1,4,0)
+ ;;=4^F19.99
+ ;;^UTILITY(U,$J,358.3,35980,2)
+ ;;=^5133364
+ ;;^UTILITY(U,$J,358.3,35981,0)
+ ;;=F15.10^^130^1737^72
+ ;;^UTILITY(U,$J,358.3,35981,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16487,1,3,0)
- ;;=3^Cerumen Impaction,Right Ear
- ;;^UTILITY(U,$J,358.3,16487,1,4,0)
- ;;=4^H61.21
- ;;^UTILITY(U,$J,358.3,16487,2)
- ;;=^5006531
- ;;^UTILITY(U,$J,358.3,16488,0)
- ;;=Z97.4^^88^848^10
- ;;^UTILITY(U,$J,358.3,16488,1,0)
+ ;;^UTILITY(U,$J,358.3,35981,1,3,0)
+ ;;=3^Other or Unspecified Stimulant Use D/O, Mild
+ ;;^UTILITY(U,$J,358.3,35981,1,4,0)
+ ;;=4^F15.10
+ ;;^UTILITY(U,$J,358.3,35981,2)
+ ;;=^5003282
+ ;;^UTILITY(U,$J,358.3,35982,0)
+ ;;=F15.20^^130^1737^73
+ ;;^UTILITY(U,$J,358.3,35982,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16488,1,3,0)
- ;;=3^Hearing-aid,External
- ;;^UTILITY(U,$J,358.3,16488,1,4,0)
- ;;=4^Z97.4
- ;;^UTILITY(U,$J,358.3,16488,2)
- ;;=^5063730
- ;;^UTILITY(U,$J,358.3,16489,0)
- ;;=H90.2^^88^848^5
- ;;^UTILITY(U,$J,358.3,16489,1,0)
+ ;;^UTILITY(U,$J,358.3,35982,1,3,0)
+ ;;=3^Other or Unspecified Stimulant Use D/O, Moderate
+ ;;^UTILITY(U,$J,358.3,35982,1,4,0)
+ ;;=4^F15.20
+ ;;^UTILITY(U,$J,358.3,35982,2)
+ ;;=^5003295
+ ;;^UTILITY(U,$J,358.3,35983,0)
+ ;;=F15.20^^130^1737^74
+ ;;^UTILITY(U,$J,358.3,35983,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16489,1,3,0)
- ;;=3^Hearing Loss,Conductive,Unspec
- ;;^UTILITY(U,$J,358.3,16489,1,4,0)
- ;;=4^H90.2
- ;;^UTILITY(U,$J,358.3,16489,2)
- ;;=^5006920
- ;;^UTILITY(U,$J,358.3,16490,0)
- ;;=H90.8^^88^848^7
- ;;^UTILITY(U,$J,358.3,16490,1,0)
+ ;;^UTILITY(U,$J,358.3,35983,1,3,0)
+ ;;=3^Other or Unspecified Stimulant Use D/O, Severe
+ ;;^UTILITY(U,$J,358.3,35983,1,4,0)
+ ;;=4^F15.20
+ ;;^UTILITY(U,$J,358.3,35983,2)
+ ;;=^5003295
+ ;;^UTILITY(U,$J,358.3,35984,0)
+ ;;=F15.99^^130^1737^35
+ ;;^UTILITY(U,$J,358.3,35984,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16490,1,3,0)
- ;;=3^Hearing Loss,Mixed Conductive & Sensorineural,Unspec
- ;;^UTILITY(U,$J,358.3,16490,1,4,0)
- ;;=4^H90.8
- ;;^UTILITY(U,$J,358.3,16490,2)
- ;;=^5006927
- ;;^UTILITY(U,$J,358.3,16491,0)
- ;;=H90.5^^88^848^9
- ;;^UTILITY(U,$J,358.3,16491,1,0)
+ ;;^UTILITY(U,$J,358.3,35984,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Related D/O,Unspec
+ ;;^UTILITY(U,$J,358.3,35984,1,4,0)
+ ;;=4^F15.99
+ ;;^UTILITY(U,$J,358.3,35984,2)
+ ;;=^5133358
+ ;;^UTILITY(U,$J,358.3,35985,0)
+ ;;=F14.99^^130^1737^67
+ ;;^UTILITY(U,$J,358.3,35985,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16491,1,3,0)
- ;;=3^Hearing Loss,Sensorineural,Unspec
- ;;^UTILITY(U,$J,358.3,16491,1,4,0)
- ;;=4^H90.5
- ;;^UTILITY(U,$J,358.3,16491,2)
- ;;=^5006923
- ;;^UTILITY(U,$J,358.3,16492,0)
- ;;=H91.93^^88^848^4
- ;;^UTILITY(U,$J,358.3,16492,1,0)
+ ;;^UTILITY(U,$J,358.3,35985,1,3,0)
+ ;;=3^Cocaine Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,35985,1,4,0)
+ ;;=4^F14.99
+ ;;^UTILITY(U,$J,358.3,35985,2)
+ ;;=^5133354
+ ;;^UTILITY(U,$J,358.3,35986,0)
+ ;;=F14.99^^130^1737^75
+ ;;^UTILITY(U,$J,358.3,35986,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16492,1,3,0)
- ;;=3^Hearing Loss,Bilateral,Unspec
- ;;^UTILITY(U,$J,358.3,16492,1,4,0)
- ;;=4^H91.93
- ;;^UTILITY(U,$J,358.3,16492,2)
- ;;=^5006944
- ;;^UTILITY(U,$J,358.3,16493,0)
- ;;=H91.92^^88^848^6
- ;;^UTILITY(U,$J,358.3,16493,1,0)
+ ;;^UTILITY(U,$J,358.3,35986,1,3,0)
+ ;;=3^Stimulant Related Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,35986,1,4,0)
+ ;;=4^F14.99
+ ;;^UTILITY(U,$J,358.3,35986,2)
+ ;;=^5133354
+ ;;^UTILITY(U,$J,358.3,35987,0)
+ ;;=F15.180^^130^1737^4
+ ;;^UTILITY(U,$J,358.3,35987,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16493,1,3,0)
- ;;=3^Hearing Loss,Left Ear,Unspec
- ;;^UTILITY(U,$J,358.3,16493,1,4,0)
- ;;=4^H91.92
- ;;^UTILITY(U,$J,358.3,16493,2)
- ;;=^5133554
- ;;^UTILITY(U,$J,358.3,16494,0)
- ;;=H91.91^^88^848^8
- ;;^UTILITY(U,$J,358.3,16494,1,0)
+ ;;^UTILITY(U,$J,358.3,35987,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Anxiety D/O w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,35987,1,4,0)
+ ;;=4^F15.180
+ ;;^UTILITY(U,$J,358.3,35987,2)
+ ;;=^5003291
+ ;;^UTILITY(U,$J,358.3,35988,0)
+ ;;=F15.280^^130^1737^5
+ ;;^UTILITY(U,$J,358.3,35988,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16494,1,3,0)
- ;;=3^Hearing Loss,Right Ear,Unspec
- ;;^UTILITY(U,$J,358.3,16494,1,4,0)
- ;;=4^H91.91
+ ;;^UTILITY(U,$J,358.3,35988,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Anxiety D/O w/ Mod-Sev Use D/O
+ ;;^UTILITY(U,$J,358.3,35988,1,4,0)
+ ;;=4^F15.280
+ ;;^UTILITY(U,$J,358.3,35988,2)
+ ;;=^5003306
+ ;;^UTILITY(U,$J,358.3,35989,0)
+ ;;=F15.980^^130^1737^6
+ ;;^UTILITY(U,$J,358.3,35989,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35989,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Anxiety D/O w/o Use D/O
+ ;;^UTILITY(U,$J,358.3,35989,1,4,0)
+ ;;=4^F15.980
+ ;;^UTILITY(U,$J,358.3,35989,2)
+ ;;=^5003320
+ ;;^UTILITY(U,$J,358.3,35990,0)
+ ;;=F15.14^^130^1737^7
+ ;;^UTILITY(U,$J,358.3,35990,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35990,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Bipolar & Rel D/O w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,35990,1,4,0)
+ ;;=4^F15.14
+ ;;^UTILITY(U,$J,358.3,35990,2)
+ ;;=^5003287
+ ;;^UTILITY(U,$J,358.3,35991,0)
+ ;;=F15.24^^130^1737^8
+ ;;^UTILITY(U,$J,358.3,35991,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35991,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Bipolar & Rel D/O w/ Mod-Sev Use D/O
+ ;;^UTILITY(U,$J,358.3,35991,1,4,0)
+ ;;=4^F15.24
+ ;;^UTILITY(U,$J,358.3,35991,2)
+ ;;=^5003302
+ ;;^UTILITY(U,$J,358.3,35992,0)
+ ;;=F15.94^^130^1737^9
+ ;;^UTILITY(U,$J,358.3,35992,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35992,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Bipolar & Rel D/O w/o Use D/O
+ ;;^UTILITY(U,$J,358.3,35992,1,4,0)
+ ;;=4^F15.94
+ ;;^UTILITY(U,$J,358.3,35992,2)
+ ;;=^5003316
+ ;;^UTILITY(U,$J,358.3,35993,0)
+ ;;=F15.921^^130^1737^10
+ ;;^UTILITY(U,$J,358.3,35993,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35993,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Delirium
+ ;;^UTILITY(U,$J,358.3,35993,1,4,0)
+ ;;=4^F15.921
+ ;;^UTILITY(U,$J,358.3,35993,2)
+ ;;=^5003312
+ ;;^UTILITY(U,$J,358.3,35994,0)
+ ;;=F15.14^^130^1737^11
+ ;;^UTILITY(U,$J,358.3,35994,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35994,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Depressive D/O w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,35994,1,4,0)
+ ;;=4^F15.14
+ ;;^UTILITY(U,$J,358.3,35994,2)
+ ;;=^5003287
+ ;;^UTILITY(U,$J,358.3,35995,0)
+ ;;=F15.24^^130^1737^12
+ ;;^UTILITY(U,$J,358.3,35995,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35995,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Depressive D/O w/ Mod-Sev Use D/O
+ ;;^UTILITY(U,$J,358.3,35995,1,4,0)
+ ;;=4^F15.24
+ ;;^UTILITY(U,$J,358.3,35995,2)
+ ;;=^5003302
+ ;;^UTILITY(U,$J,358.3,35996,0)
+ ;;=F15.94^^130^1737^13
+ ;;^UTILITY(U,$J,358.3,35996,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35996,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Depressive D/O w/o Use D/O
+ ;;^UTILITY(U,$J,358.3,35996,1,4,0)
+ ;;=4^F15.94
+ ;;^UTILITY(U,$J,358.3,35996,2)
+ ;;=^5003316
+ ;;^UTILITY(U,$J,358.3,35997,0)
+ ;;=F15.188^^130^1737^14
+ ;;^UTILITY(U,$J,358.3,35997,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35997,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Obess-Compul & Rel D/O w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,35997,1,4,0)
+ ;;=4^F15.188
+ ;;^UTILITY(U,$J,358.3,35997,2)
+ ;;=^5133355
+ ;;^UTILITY(U,$J,358.3,35998,0)
+ ;;=F15.288^^130^1737^15
+ ;;^UTILITY(U,$J,358.3,35998,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35998,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Obess-Compul & Rel D/O w/ Mod-Sev Use D/O
+ ;;^UTILITY(U,$J,358.3,35998,1,4,0)
+ ;;=4^F15.288
+ ;;^UTILITY(U,$J,358.3,35998,2)
+ ;;=^5133356
+ ;;^UTILITY(U,$J,358.3,35999,0)
+ ;;=F15.988^^130^1737^16
+ ;;^UTILITY(U,$J,358.3,35999,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35999,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Obess-Compul & Rel D/O w/o Use D/O
+ ;;^UTILITY(U,$J,358.3,35999,1,4,0)
+ ;;=4^F15.988
+ ;;^UTILITY(U,$J,358.3,35999,2)
+ ;;=^5133357
+ ;;^UTILITY(U,$J,358.3,36000,0)
+ ;;=F15.159^^130^1737^17
+ ;;^UTILITY(U,$J,358.3,36000,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36000,1,3,0)
+ ;;=3^Amphetamine/Other Stimulant Induced Psychotic D/O w/ Mild Use D/O
+ ;;^UTILITY(U,$J,358.3,36000,1,4,0)
+ ;;=4^F15.159
+ ;;^UTILITY(U,$J,358.3,36000,2)
+ ;;=^5003290

@@ -1,130 +1,286 @@
-IBDEI0ZV ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0ZV ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16534,1,0)
+ ;;^UTILITY(U,$J,358.3,36080,1,4,0)
+ ;;=4^Z63.6
+ ;;^UTILITY(U,$J,358.3,36080,2)
+ ;;=^5063170
+ ;;^UTILITY(U,$J,358.3,36081,0)
+ ;;=Z59.0^^130^1742^4
+ ;;^UTILITY(U,$J,358.3,36081,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16534,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Amyotrophy
- ;;^UTILITY(U,$J,358.3,16534,1,4,0)
- ;;=4^E11.44
- ;;^UTILITY(U,$J,358.3,16534,2)
- ;;=^5002648
- ;;^UTILITY(U,$J,358.3,16535,0)
- ;;=E11.59^^88^850^7
- ;;^UTILITY(U,$J,358.3,16535,1,0)
+ ;;^UTILITY(U,$J,358.3,36081,1,3,0)
+ ;;=3^Homelessness
+ ;;^UTILITY(U,$J,358.3,36081,1,4,0)
+ ;;=4^Z59.0
+ ;;^UTILITY(U,$J,358.3,36081,2)
+ ;;=^5063129
+ ;;^UTILITY(U,$J,358.3,36082,0)
+ ;;=Z59.1^^130^1742^6
+ ;;^UTILITY(U,$J,358.3,36082,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16535,1,3,0)
- ;;=3^Diabetes Type 2 w/ Circulatory Complications
- ;;^UTILITY(U,$J,358.3,16535,1,4,0)
- ;;=4^E11.59
- ;;^UTILITY(U,$J,358.3,16535,2)
- ;;=^5002652
- ;;^UTILITY(U,$J,358.3,16536,0)
- ;;=E11.638^^88^850^25
- ;;^UTILITY(U,$J,358.3,16536,1,0)
+ ;;^UTILITY(U,$J,358.3,36082,1,3,0)
+ ;;=3^Inadequate Housing
+ ;;^UTILITY(U,$J,358.3,36082,1,4,0)
+ ;;=4^Z59.1
+ ;;^UTILITY(U,$J,358.3,36082,2)
+ ;;=^5063130
+ ;;^UTILITY(U,$J,358.3,36083,0)
+ ;;=Z59.5^^130^1742^2
+ ;;^UTILITY(U,$J,358.3,36083,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16536,1,3,0)
- ;;=3^Diabetes Type 2 w/ Oral Complications
- ;;^UTILITY(U,$J,358.3,16536,1,4,0)
- ;;=4^E11.638
- ;;^UTILITY(U,$J,358.3,16536,2)
- ;;=^5002660
- ;;^UTILITY(U,$J,358.3,16537,0)
- ;;=E11.628^^88^850^27
- ;;^UTILITY(U,$J,358.3,16537,1,0)
+ ;;^UTILITY(U,$J,358.3,36083,1,3,0)
+ ;;=3^Extreme Poverty
+ ;;^UTILITY(U,$J,358.3,36083,1,4,0)
+ ;;=4^Z59.5
+ ;;^UTILITY(U,$J,358.3,36083,2)
+ ;;=^5063134
+ ;;^UTILITY(U,$J,358.3,36084,0)
+ ;;=Z60.2^^130^1742^8
+ ;;^UTILITY(U,$J,358.3,36084,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16537,1,3,0)
- ;;=3^Diabetes Type 2 w/ Skin Complications
- ;;^UTILITY(U,$J,358.3,16537,1,4,0)
- ;;=4^E11.628
- ;;^UTILITY(U,$J,358.3,16537,2)
- ;;=^5002658
- ;;^UTILITY(U,$J,358.3,16538,0)
- ;;=E11.630^^88^850^26
- ;;^UTILITY(U,$J,358.3,16538,1,0)
+ ;;^UTILITY(U,$J,358.3,36084,1,3,0)
+ ;;=3^Problems Related to Living Alone
+ ;;^UTILITY(U,$J,358.3,36084,1,4,0)
+ ;;=4^Z60.2
+ ;;^UTILITY(U,$J,358.3,36084,2)
+ ;;=^5063140
+ ;;^UTILITY(U,$J,358.3,36085,0)
+ ;;=Z74.2^^130^1742^1
+ ;;^UTILITY(U,$J,358.3,36085,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16538,1,3,0)
- ;;=3^Diabetes Type 2 w/ Periodontal Disease
- ;;^UTILITY(U,$J,358.3,16538,1,4,0)
- ;;=4^E11.630
- ;;^UTILITY(U,$J,358.3,16538,2)
- ;;=^5002659
- ;;^UTILITY(U,$J,358.3,16539,0)
- ;;=E11.8^^88^850^28
- ;;^UTILITY(U,$J,358.3,16539,1,0)
+ ;;^UTILITY(U,$J,358.3,36085,1,3,0)
+ ;;=3^Assistance at Home Needed
+ ;;^UTILITY(U,$J,358.3,36085,1,4,0)
+ ;;=4^Z74.2
+ ;;^UTILITY(U,$J,358.3,36085,2)
+ ;;=^5063285
+ ;;^UTILITY(U,$J,358.3,36086,0)
+ ;;=Z75.5^^130^1742^3
+ ;;^UTILITY(U,$J,358.3,36086,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16539,1,3,0)
- ;;=3^Diabetes Type 2 w/ Unspec Complications
- ;;^UTILITY(U,$J,358.3,16539,1,4,0)
- ;;=4^E11.8
- ;;^UTILITY(U,$J,358.3,16539,2)
- ;;=^5002665
- ;;^UTILITY(U,$J,358.3,16540,0)
- ;;=E11.9^^88^850^29
- ;;^UTILITY(U,$J,358.3,16540,1,0)
+ ;;^UTILITY(U,$J,358.3,36086,1,3,0)
+ ;;=3^Holiday Relief Care
+ ;;^UTILITY(U,$J,358.3,36086,1,4,0)
+ ;;=4^Z75.5
+ ;;^UTILITY(U,$J,358.3,36086,2)
+ ;;=^5063294
+ ;;^UTILITY(U,$J,358.3,36087,0)
+ ;;=Z59.3^^130^1742^9
+ ;;^UTILITY(U,$J,358.3,36087,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16540,1,3,0)
- ;;=3^Diabetes Type 2 w/o Complications
- ;;^UTILITY(U,$J,358.3,16540,1,4,0)
- ;;=4^E11.9
- ;;^UTILITY(U,$J,358.3,16540,2)
- ;;=^5002666
- ;;^UTILITY(U,$J,358.3,16541,0)
- ;;=E11.36^^88^850^9
- ;;^UTILITY(U,$J,358.3,16541,1,0)
+ ;;^UTILITY(U,$J,358.3,36087,1,3,0)
+ ;;=3^Problems Related to Living in Residential Institution
+ ;;^UTILITY(U,$J,358.3,36087,1,4,0)
+ ;;=4^Z59.3
+ ;;^UTILITY(U,$J,358.3,36087,2)
+ ;;=^5063132
+ ;;^UTILITY(U,$J,358.3,36088,0)
+ ;;=Z63.8^^130^1742^7
+ ;;^UTILITY(U,$J,358.3,36088,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16541,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Cataract
- ;;^UTILITY(U,$J,358.3,16541,1,4,0)
- ;;=4^E11.36
- ;;^UTILITY(U,$J,358.3,16541,2)
- ;;=^5002642
- ;;^UTILITY(U,$J,358.3,16542,0)
- ;;=E11.22^^88^850^10
- ;;^UTILITY(U,$J,358.3,16542,1,0)
+ ;;^UTILITY(U,$J,358.3,36088,1,3,0)
+ ;;=3^Primary Support Group Problems
+ ;;^UTILITY(U,$J,358.3,36088,1,4,0)
+ ;;=4^Z63.8
+ ;;^UTILITY(U,$J,358.3,36088,2)
+ ;;=^5063174
+ ;;^UTILITY(U,$J,358.3,36089,0)
+ ;;=Z59.8^^130^1742^5
+ ;;^UTILITY(U,$J,358.3,36089,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16542,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Chronic Kidney Disease
- ;;^UTILITY(U,$J,358.3,16542,1,4,0)
- ;;=4^E11.22
- ;;^UTILITY(U,$J,358.3,16542,2)
- ;;=^5002630
- ;;^UTILITY(U,$J,358.3,16543,0)
- ;;=E11.29^^88^850^12
- ;;^UTILITY(U,$J,358.3,16543,1,0)
+ ;;^UTILITY(U,$J,358.3,36089,1,3,0)
+ ;;=3^Housing/Economic Circumstance Problems
+ ;;^UTILITY(U,$J,358.3,36089,1,4,0)
+ ;;=4^Z59.8
+ ;;^UTILITY(U,$J,358.3,36089,2)
+ ;;=^5063137
+ ;;^UTILITY(U,$J,358.3,36090,0)
+ ;;=Z72.51^^130^1743^2
+ ;;^UTILITY(U,$J,358.3,36090,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16543,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Kidney Complication
- ;;^UTILITY(U,$J,358.3,16543,1,4,0)
- ;;=4^E11.29
- ;;^UTILITY(U,$J,358.3,16543,2)
- ;;=^5002631
- ;;^UTILITY(U,$J,358.3,16544,0)
- ;;=E11.21^^88^850^13
- ;;^UTILITY(U,$J,358.3,16544,1,0)
+ ;;^UTILITY(U,$J,358.3,36090,1,3,0)
+ ;;=3^High Risk Heterosexual Behavior
+ ;;^UTILITY(U,$J,358.3,36090,1,4,0)
+ ;;=4^Z72.51
+ ;;^UTILITY(U,$J,358.3,36090,2)
+ ;;=^5063258
+ ;;^UTILITY(U,$J,358.3,36091,0)
+ ;;=Z72.6^^130^1743^1
+ ;;^UTILITY(U,$J,358.3,36091,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16544,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Nephropathy
- ;;^UTILITY(U,$J,358.3,16544,1,4,0)
- ;;=4^E11.21
- ;;^UTILITY(U,$J,358.3,16544,2)
- ;;=^5002629
- ;;^UTILITY(U,$J,358.3,16545,0)
- ;;=E11.39^^88^850^16
- ;;^UTILITY(U,$J,358.3,16545,1,0)
+ ;;^UTILITY(U,$J,358.3,36091,1,3,0)
+ ;;=3^Gambling/Betting
+ ;;^UTILITY(U,$J,358.3,36091,1,4,0)
+ ;;=4^Z72.6
+ ;;^UTILITY(U,$J,358.3,36091,2)
+ ;;=^5063261
+ ;;^UTILITY(U,$J,358.3,36092,0)
+ ;;=Z72.3^^130^1743^4
+ ;;^UTILITY(U,$J,358.3,36092,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16545,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Ophthalmic Complication
- ;;^UTILITY(U,$J,358.3,16545,1,4,0)
- ;;=4^E11.39
- ;;^UTILITY(U,$J,358.3,16545,2)
- ;;=^5002643
- ;;^UTILITY(U,$J,358.3,16546,0)
- ;;=E11.311^^88^850^20
- ;;^UTILITY(U,$J,358.3,16546,1,0)
+ ;;^UTILITY(U,$J,358.3,36092,1,3,0)
+ ;;=3^Lack of Physical Exercise
+ ;;^UTILITY(U,$J,358.3,36092,1,4,0)
+ ;;=4^Z72.3
+ ;;^UTILITY(U,$J,358.3,36092,2)
+ ;;=^5063256
+ ;;^UTILITY(U,$J,358.3,36093,0)
+ ;;=Z72.4^^130^1743^3
+ ;;^UTILITY(U,$J,358.3,36093,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16546,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,16546,1,4,0)
- ;;=4^E11.311
+ ;;^UTILITY(U,$J,358.3,36093,1,3,0)
+ ;;=3^Inappropriate Diet/Eating Habits
+ ;;^UTILITY(U,$J,358.3,36093,1,4,0)
+ ;;=4^Z72.4
+ ;;^UTILITY(U,$J,358.3,36093,2)
+ ;;=^5063257
+ ;;^UTILITY(U,$J,358.3,36094,0)
+ ;;=Z72.820^^130^1743^6
+ ;;^UTILITY(U,$J,358.3,36094,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36094,1,3,0)
+ ;;=3^Sleep Deprivation
+ ;;^UTILITY(U,$J,358.3,36094,1,4,0)
+ ;;=4^Z72.820
+ ;;^UTILITY(U,$J,358.3,36094,2)
+ ;;=^5063264
+ ;;^UTILITY(U,$J,358.3,36095,0)
+ ;;=Z72.9^^130^1743^5
+ ;;^UTILITY(U,$J,358.3,36095,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36095,1,3,0)
+ ;;=3^Lifestyle Related Problems,Unspec
+ ;;^UTILITY(U,$J,358.3,36095,1,4,0)
+ ;;=4^Z72.9
+ ;;^UTILITY(U,$J,358.3,36095,2)
+ ;;=^5063267
+ ;;^UTILITY(U,$J,358.3,36096,0)
+ ;;=Z89.411^^130^1744^10
+ ;;^UTILITY(U,$J,358.3,36096,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36096,1,3,0)
+ ;;=3^Acquired Absence of Right Great Toe
+ ;;^UTILITY(U,$J,358.3,36096,1,4,0)
+ ;;=4^Z89.411
+ ;;^UTILITY(U,$J,358.3,36096,2)
+ ;;=^5063554
+ ;;^UTILITY(U,$J,358.3,36097,0)
+ ;;=Z89.412^^130^1744^3
+ ;;^UTILITY(U,$J,358.3,36097,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36097,1,3,0)
+ ;;=3^Acquired Absence of Left Great Toe
+ ;;^UTILITY(U,$J,358.3,36097,1,4,0)
+ ;;=4^Z89.412
+ ;;^UTILITY(U,$J,358.3,36097,2)
+ ;;=^5063555
+ ;;^UTILITY(U,$J,358.3,36098,0)
+ ;;=Z89.421^^130^1744^14
+ ;;^UTILITY(U,$J,358.3,36098,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36098,1,3,0)
+ ;;=3^Acquired Absence of Right Toe(s)
+ ;;^UTILITY(U,$J,358.3,36098,1,4,0)
+ ;;=4^Z89.421
+ ;;^UTILITY(U,$J,358.3,36098,2)
+ ;;=^5063557
+ ;;^UTILITY(U,$J,358.3,36099,0)
+ ;;=Z89.422^^130^1744^7
+ ;;^UTILITY(U,$J,358.3,36099,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36099,1,3,0)
+ ;;=3^Acquired Absence of Left Toe(s)
+ ;;^UTILITY(U,$J,358.3,36099,1,4,0)
+ ;;=4^Z89.422
+ ;;^UTILITY(U,$J,358.3,36099,2)
+ ;;=^5063558
+ ;;^UTILITY(U,$J,358.3,36100,0)
+ ;;=Z89.431^^130^1744^9
+ ;;^UTILITY(U,$J,358.3,36100,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36100,1,3,0)
+ ;;=3^Acquired Absence of Right Foot
+ ;;^UTILITY(U,$J,358.3,36100,1,4,0)
+ ;;=4^Z89.431
+ ;;^UTILITY(U,$J,358.3,36100,2)
+ ;;=^5063560
+ ;;^UTILITY(U,$J,358.3,36101,0)
+ ;;=Z89.432^^130^1744^2
+ ;;^UTILITY(U,$J,358.3,36101,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36101,1,3,0)
+ ;;=3^Acquired Absence of Left Foot
+ ;;^UTILITY(U,$J,358.3,36101,1,4,0)
+ ;;=4^Z89.432
+ ;;^UTILITY(U,$J,358.3,36101,2)
+ ;;=^5063561
+ ;;^UTILITY(U,$J,358.3,36102,0)
+ ;;=Z89.441^^130^1744^8
+ ;;^UTILITY(U,$J,358.3,36102,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36102,1,3,0)
+ ;;=3^Acquired Absence of Right Ankle
+ ;;^UTILITY(U,$J,358.3,36102,1,4,0)
+ ;;=4^Z89.441
+ ;;^UTILITY(U,$J,358.3,36102,2)
+ ;;=^5063563
+ ;;^UTILITY(U,$J,358.3,36103,0)
+ ;;=Z89.442^^130^1744^1
+ ;;^UTILITY(U,$J,358.3,36103,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36103,1,3,0)
+ ;;=3^Acquired Absence of Left Ankle
+ ;;^UTILITY(U,$J,358.3,36103,1,4,0)
+ ;;=4^Z89.442
+ ;;^UTILITY(U,$J,358.3,36103,2)
+ ;;=^5063564
+ ;;^UTILITY(U,$J,358.3,36104,0)
+ ;;=Z89.511^^130^1744^13
+ ;;^UTILITY(U,$J,358.3,36104,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36104,1,3,0)
+ ;;=3^Acquired Absence of Right Leg Below Knee
+ ;;^UTILITY(U,$J,358.3,36104,1,4,0)
+ ;;=4^Z89.511
+ ;;^UTILITY(U,$J,358.3,36104,2)
+ ;;=^5063566
+ ;;^UTILITY(U,$J,358.3,36105,0)
+ ;;=Z89.512^^130^1744^6
+ ;;^UTILITY(U,$J,358.3,36105,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36105,1,3,0)
+ ;;=3^Acquired Absence of Left Leg Below Knee
+ ;;^UTILITY(U,$J,358.3,36105,1,4,0)
+ ;;=4^Z89.512
+ ;;^UTILITY(U,$J,358.3,36105,2)
+ ;;=^5063567
+ ;;^UTILITY(U,$J,358.3,36106,0)
+ ;;=Z89.611^^130^1744^12
+ ;;^UTILITY(U,$J,358.3,36106,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36106,1,3,0)
+ ;;=3^Acquired Absence of Right Leg Above Knee
+ ;;^UTILITY(U,$J,358.3,36106,1,4,0)
+ ;;=4^Z89.611
+ ;;^UTILITY(U,$J,358.3,36106,2)
+ ;;=^5063572
+ ;;^UTILITY(U,$J,358.3,36107,0)
+ ;;=Z89.612^^130^1744^5
+ ;;^UTILITY(U,$J,358.3,36107,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36107,1,3,0)
+ ;;=3^Acquired Absence of Left Leg Above Knee
+ ;;^UTILITY(U,$J,358.3,36107,1,4,0)
+ ;;=4^Z89.612
+ ;;^UTILITY(U,$J,358.3,36107,2)
+ ;;=^5063573
+ ;;^UTILITY(U,$J,358.3,36108,0)
+ ;;=Z89.621^^130^1744^11
+ ;;^UTILITY(U,$J,358.3,36108,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36108,1,3,0)
+ ;;=3^Acquired Absence of Right Hip Joint
+ ;;^UTILITY(U,$J,358.3,36108,1,4,0)
+ ;;=4^Z89.621

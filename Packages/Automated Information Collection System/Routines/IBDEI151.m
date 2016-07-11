@@ -1,132 +1,282 @@
-IBDEI151 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI151 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,19006,1,3,0)
- ;;=3^Personal Hx of Malig Neop of Larynx
- ;;^UTILITY(U,$J,358.3,19006,1,4,0)
- ;;=4^Z85.21
- ;;^UTILITY(U,$J,358.3,19006,2)
- ;;=^5063411
- ;;^UTILITY(U,$J,358.3,19007,0)
- ;;=Z85.3^^94^917^85
- ;;^UTILITY(U,$J,358.3,19007,1,0)
+ ;;^UTILITY(U,$J,358.3,41349,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19007,1,3,0)
- ;;=3^Personal Hx of Malig Neop of Breast
- ;;^UTILITY(U,$J,358.3,19007,1,4,0)
- ;;=4^Z85.3
- ;;^UTILITY(U,$J,358.3,19007,2)
- ;;=^5063416
- ;;^UTILITY(U,$J,358.3,19008,0)
- ;;=Z85.41^^94^917^87
- ;;^UTILITY(U,$J,358.3,19008,1,0)
+ ;;^UTILITY(U,$J,358.3,41349,1,3,0)
+ ;;=3^Thoracic Aortic Aneurysm w/o Rupture
+ ;;^UTILITY(U,$J,358.3,41349,1,4,0)
+ ;;=4^I71.2
+ ;;^UTILITY(U,$J,358.3,41349,2)
+ ;;=^5007787
+ ;;^UTILITY(U,$J,358.3,41350,0)
+ ;;=I71.3^^156^2021^33
+ ;;^UTILITY(U,$J,358.3,41350,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19008,1,3,0)
- ;;=3^Personal Hx of Malig Neop of Cervix Uteri
- ;;^UTILITY(U,$J,358.3,19008,1,4,0)
- ;;=4^Z85.41
- ;;^UTILITY(U,$J,358.3,19008,2)
- ;;=^5063418
- ;;^UTILITY(U,$J,358.3,19009,0)
- ;;=Z85.43^^94^917^95
- ;;^UTILITY(U,$J,358.3,19009,1,0)
+ ;;^UTILITY(U,$J,358.3,41350,1,3,0)
+ ;;=3^Abdominal Aortic Aneurysm w/ Rupture
+ ;;^UTILITY(U,$J,358.3,41350,1,4,0)
+ ;;=4^I71.3
+ ;;^UTILITY(U,$J,358.3,41350,2)
+ ;;=^5007788
+ ;;^UTILITY(U,$J,358.3,41351,0)
+ ;;=I71.4^^156^2021^34
+ ;;^UTILITY(U,$J,358.3,41351,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19009,1,3,0)
- ;;=3^Personal Hx of Malig Neop of Ovary
- ;;^UTILITY(U,$J,358.3,19009,1,4,0)
- ;;=4^Z85.43
- ;;^UTILITY(U,$J,358.3,19009,2)
- ;;=^5063420
- ;;^UTILITY(U,$J,358.3,19010,0)
- ;;=Z85.46^^94^917^96
- ;;^UTILITY(U,$J,358.3,19010,1,0)
+ ;;^UTILITY(U,$J,358.3,41351,1,3,0)
+ ;;=3^Abdominal Aortic Aneurysm w/o Rupture
+ ;;^UTILITY(U,$J,358.3,41351,1,4,0)
+ ;;=4^I71.4
+ ;;^UTILITY(U,$J,358.3,41351,2)
+ ;;=^5007789
+ ;;^UTILITY(U,$J,358.3,41352,0)
+ ;;=I71.5^^156^2021^146
+ ;;^UTILITY(U,$J,358.3,41352,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19010,1,3,0)
- ;;=3^Personal Hx of Malig Neop of Prostate
- ;;^UTILITY(U,$J,358.3,19010,1,4,0)
- ;;=4^Z85.46
- ;;^UTILITY(U,$J,358.3,19010,2)
- ;;=^5063423
- ;;^UTILITY(U,$J,358.3,19011,0)
- ;;=Z85.47^^94^917^100
- ;;^UTILITY(U,$J,358.3,19011,1,0)
+ ;;^UTILITY(U,$J,358.3,41352,1,3,0)
+ ;;=3^Thoracoabd Aortic Aneurysm w/ Rupture
+ ;;^UTILITY(U,$J,358.3,41352,1,4,0)
+ ;;=4^I71.5
+ ;;^UTILITY(U,$J,358.3,41352,2)
+ ;;=^5007790
+ ;;^UTILITY(U,$J,358.3,41353,0)
+ ;;=I71.6^^156^2021^147
+ ;;^UTILITY(U,$J,358.3,41353,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19011,1,3,0)
- ;;=3^Personal Hx of Malig Neop of Testis
- ;;^UTILITY(U,$J,358.3,19011,1,4,0)
- ;;=4^Z85.47
- ;;^UTILITY(U,$J,358.3,19011,2)
- ;;=^5063424
- ;;^UTILITY(U,$J,358.3,19012,0)
- ;;=Z85.51^^94^917^84
- ;;^UTILITY(U,$J,358.3,19012,1,0)
+ ;;^UTILITY(U,$J,358.3,41353,1,3,0)
+ ;;=3^Thoracoabd Aortic Aneurysm w/o Rupture
+ ;;^UTILITY(U,$J,358.3,41353,1,4,0)
+ ;;=4^I71.6
+ ;;^UTILITY(U,$J,358.3,41353,2)
+ ;;=^5007791
+ ;;^UTILITY(U,$J,358.3,41354,0)
+ ;;=I72.2^^156^2021^41
+ ;;^UTILITY(U,$J,358.3,41354,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19012,1,3,0)
- ;;=3^Personal Hx of Malig Neop of Bladder
- ;;^UTILITY(U,$J,358.3,19012,1,4,0)
- ;;=4^Z85.51
- ;;^UTILITY(U,$J,358.3,19012,2)
- ;;=^5063428
- ;;^UTILITY(U,$J,358.3,19013,0)
- ;;=Z85.528^^94^917^89
- ;;^UTILITY(U,$J,358.3,19013,1,0)
+ ;;^UTILITY(U,$J,358.3,41354,1,3,0)
+ ;;=3^Aneurysm of Renal Artery
+ ;;^UTILITY(U,$J,358.3,41354,1,4,0)
+ ;;=4^I72.2
+ ;;^UTILITY(U,$J,358.3,41354,2)
+ ;;=^269773
+ ;;^UTILITY(U,$J,358.3,41355,0)
+ ;;=I72.3^^156^2021^38
+ ;;^UTILITY(U,$J,358.3,41355,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19013,1,3,0)
- ;;=3^Personal Hx of Malig Neop of Kidney
- ;;^UTILITY(U,$J,358.3,19013,1,4,0)
- ;;=4^Z85.528
- ;;^UTILITY(U,$J,358.3,19013,2)
- ;;=^5063430
- ;;^UTILITY(U,$J,358.3,19014,0)
- ;;=Z85.6^^94^917^80
- ;;^UTILITY(U,$J,358.3,19014,1,0)
+ ;;^UTILITY(U,$J,358.3,41355,1,3,0)
+ ;;=3^Aneurysm of Iliac Artery
+ ;;^UTILITY(U,$J,358.3,41355,1,4,0)
+ ;;=4^I72.3
+ ;;^UTILITY(U,$J,358.3,41355,2)
+ ;;=^269775
+ ;;^UTILITY(U,$J,358.3,41356,0)
+ ;;=I72.4^^156^2021^39
+ ;;^UTILITY(U,$J,358.3,41356,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19014,1,3,0)
- ;;=3^Personal Hx of Leukemia
- ;;^UTILITY(U,$J,358.3,19014,1,4,0)
- ;;=4^Z85.6
- ;;^UTILITY(U,$J,358.3,19014,2)
- ;;=^5063434
- ;;^UTILITY(U,$J,358.3,19015,0)
- ;;=Z85.72^^94^917^104
- ;;^UTILITY(U,$J,358.3,19015,1,0)
+ ;;^UTILITY(U,$J,358.3,41356,1,3,0)
+ ;;=3^Aneurysm of Lower Extremity Artery
+ ;;^UTILITY(U,$J,358.3,41356,1,4,0)
+ ;;=4^I72.4
+ ;;^UTILITY(U,$J,358.3,41356,2)
+ ;;=^269777
+ ;;^UTILITY(U,$J,358.3,41357,0)
+ ;;=I72.0^^156^2021^37
+ ;;^UTILITY(U,$J,358.3,41357,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19015,1,3,0)
- ;;=3^Personal Hx of Non-Hodgkin Lymphomas
- ;;^UTILITY(U,$J,358.3,19015,1,4,0)
- ;;=4^Z85.72
- ;;^UTILITY(U,$J,358.3,19015,2)
- ;;=^5063436
- ;;^UTILITY(U,$J,358.3,19016,0)
- ;;=Z85.79^^94^917^94
- ;;^UTILITY(U,$J,358.3,19016,1,0)
+ ;;^UTILITY(U,$J,358.3,41357,1,3,0)
+ ;;=3^Aneurysm of Carotid Artery
+ ;;^UTILITY(U,$J,358.3,41357,1,4,0)
+ ;;=4^I72.0
+ ;;^UTILITY(U,$J,358.3,41357,2)
+ ;;=^5007793
+ ;;^UTILITY(U,$J,358.3,41358,0)
+ ;;=I73.00^^156^2021^142
+ ;;^UTILITY(U,$J,358.3,41358,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19016,1,3,0)
- ;;=3^Personal Hx of Malig Neop of Lymphoid,Hematpoetc & Rel Tissue
- ;;^UTILITY(U,$J,358.3,19016,1,4,0)
- ;;=4^Z85.79
- ;;^UTILITY(U,$J,358.3,19016,2)
- ;;=^5063437
- ;;^UTILITY(U,$J,358.3,19017,0)
- ;;=Z85.820^^94^917^83
- ;;^UTILITY(U,$J,358.3,19017,1,0)
+ ;;^UTILITY(U,$J,358.3,41358,1,3,0)
+ ;;=3^Raynaud's Syndrome w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,41358,1,4,0)
+ ;;=4^I73.00
+ ;;^UTILITY(U,$J,358.3,41358,2)
+ ;;=^5007796
+ ;;^UTILITY(U,$J,358.3,41359,0)
+ ;;=I73.9^^156^2021^132
+ ;;^UTILITY(U,$J,358.3,41359,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19017,1,3,0)
- ;;=3^Personal Hx of Malig Melanoma of Skin
- ;;^UTILITY(U,$J,358.3,19017,1,4,0)
- ;;=4^Z85.820
- ;;^UTILITY(U,$J,358.3,19017,2)
- ;;=^5063441
- ;;^UTILITY(U,$J,358.3,19018,0)
- ;;=Z85.828^^94^917^98
- ;;^UTILITY(U,$J,358.3,19018,1,0)
+ ;;^UTILITY(U,$J,358.3,41359,1,3,0)
+ ;;=3^Peripheral Vascular Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,41359,1,4,0)
+ ;;=4^I73.9
+ ;;^UTILITY(U,$J,358.3,41359,2)
+ ;;=^184182
+ ;;^UTILITY(U,$J,358.3,41360,0)
+ ;;=I74.2^^156^2021^107
+ ;;^UTILITY(U,$J,358.3,41360,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,19018,1,3,0)
- ;;=3^Personal Hx of Malig Neop of Skin
- ;;^UTILITY(U,$J,358.3,19018,1,4,0)
- ;;=4^Z85.828
- ;;^UTILITY(U,$J,358.3,19018,2)
- ;;=^5063443
- ;;^UTILITY(U,$J,358.3,19019,0)
- ;;=Z85.71^^94^917^78
+ ;;^UTILITY(U,$J,358.3,41360,1,3,0)
+ ;;=3^Embolism & Thrombosis UE Arteries
+ ;;^UTILITY(U,$J,358.3,41360,1,4,0)
+ ;;=4^I74.2
+ ;;^UTILITY(U,$J,358.3,41360,2)
+ ;;=^5007801
+ ;;^UTILITY(U,$J,358.3,41361,0)
+ ;;=I74.3^^156^2021^106
+ ;;^UTILITY(U,$J,358.3,41361,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41361,1,3,0)
+ ;;=3^Embolism & Thrombosis LE Arteries
+ ;;^UTILITY(U,$J,358.3,41361,1,4,0)
+ ;;=4^I74.3
+ ;;^UTILITY(U,$J,358.3,41361,2)
+ ;;=^5007802
+ ;;^UTILITY(U,$J,358.3,41362,0)
+ ;;=I80.11^^156^2021^139
+ ;;^UTILITY(U,$J,358.3,41362,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41362,1,3,0)
+ ;;=3^Phleb & Thrombphleb Rt Femoral Vein
+ ;;^UTILITY(U,$J,358.3,41362,1,4,0)
+ ;;=4^I80.11
+ ;;^UTILITY(U,$J,358.3,41362,2)
+ ;;=^5007825
+ ;;^UTILITY(U,$J,358.3,41363,0)
+ ;;=I80.211^^156^2021^140
+ ;;^UTILITY(U,$J,358.3,41363,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41363,1,3,0)
+ ;;=3^Phleb & Thrombphleb Rt Iliac Vein
+ ;;^UTILITY(U,$J,358.3,41363,1,4,0)
+ ;;=4^I80.211
+ ;;^UTILITY(U,$J,358.3,41363,2)
+ ;;=^5007831
+ ;;^UTILITY(U,$J,358.3,41364,0)
+ ;;=I80.12^^156^2021^136
+ ;;^UTILITY(U,$J,358.3,41364,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41364,1,3,0)
+ ;;=3^Phleb & Thrombphleb Lt Femoral Vein
+ ;;^UTILITY(U,$J,358.3,41364,1,4,0)
+ ;;=4^I80.12
+ ;;^UTILITY(U,$J,358.3,41364,2)
+ ;;=^5007826
+ ;;^UTILITY(U,$J,358.3,41365,0)
+ ;;=I80.13^^156^2021^133
+ ;;^UTILITY(U,$J,358.3,41365,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41365,1,3,0)
+ ;;=3^Phleb & Thrombphleb Bil Femoral Vein
+ ;;^UTILITY(U,$J,358.3,41365,1,4,0)
+ ;;=4^I80.13
+ ;;^UTILITY(U,$J,358.3,41365,2)
+ ;;=^5007827
+ ;;^UTILITY(U,$J,358.3,41366,0)
+ ;;=I80.202^^156^2021^138
+ ;;^UTILITY(U,$J,358.3,41366,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41366,1,3,0)
+ ;;=3^Phleb & Thrombphleb Lt LE Deep Vessels
+ ;;^UTILITY(U,$J,358.3,41366,1,4,0)
+ ;;=4^I80.202
+ ;;^UTILITY(U,$J,358.3,41366,2)
+ ;;=^5007829
+ ;;^UTILITY(U,$J,358.3,41367,0)
+ ;;=I80.201^^156^2021^141
+ ;;^UTILITY(U,$J,358.3,41367,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41367,1,3,0)
+ ;;=3^Phleb & Thrombphleb Rt LE Deep Vessels
+ ;;^UTILITY(U,$J,358.3,41367,1,4,0)
+ ;;=4^I80.201
+ ;;^UTILITY(U,$J,358.3,41367,2)
+ ;;=^5007828
+ ;;^UTILITY(U,$J,358.3,41368,0)
+ ;;=I80.203^^156^2021^135
+ ;;^UTILITY(U,$J,358.3,41368,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41368,1,3,0)
+ ;;=3^Phleb & Thrombphleb Bil LE Deep Vessels
+ ;;^UTILITY(U,$J,358.3,41368,1,4,0)
+ ;;=4^I80.203
+ ;;^UTILITY(U,$J,358.3,41368,2)
+ ;;=^5007830
+ ;;^UTILITY(U,$J,358.3,41369,0)
+ ;;=I80.212^^156^2021^137
+ ;;^UTILITY(U,$J,358.3,41369,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41369,1,3,0)
+ ;;=3^Phleb & Thrombphleb Lt Iliac Vein
+ ;;^UTILITY(U,$J,358.3,41369,1,4,0)
+ ;;=4^I80.212
+ ;;^UTILITY(U,$J,358.3,41369,2)
+ ;;=^5007832
+ ;;^UTILITY(U,$J,358.3,41370,0)
+ ;;=I80.213^^156^2021^134
+ ;;^UTILITY(U,$J,358.3,41370,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41370,1,3,0)
+ ;;=3^Phleb & Thrombphleb Bil Iliac Vein
+ ;;^UTILITY(U,$J,358.3,41370,1,4,0)
+ ;;=4^I80.213
+ ;;^UTILITY(U,$J,358.3,41370,2)
+ ;;=^5007833
+ ;;^UTILITY(U,$J,358.3,41371,0)
+ ;;=I82.411^^156^2021^22
+ ;;^UTILITY(U,$J,358.3,41371,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41371,1,3,0)
+ ;;=3^AC Embol & Thromb Rt Fem Vein
+ ;;^UTILITY(U,$J,358.3,41371,1,4,0)
+ ;;=4^I82.411
+ ;;^UTILITY(U,$J,358.3,41371,2)
+ ;;=^5007857
+ ;;^UTILITY(U,$J,358.3,41372,0)
+ ;;=I82.412^^156^2021^12
+ ;;^UTILITY(U,$J,358.3,41372,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41372,1,3,0)
+ ;;=3^AC Embol & Thromb Lt Fem Vein
+ ;;^UTILITY(U,$J,358.3,41372,1,4,0)
+ ;;=4^I82.412
+ ;;^UTILITY(U,$J,358.3,41372,2)
+ ;;=^5007858
+ ;;^UTILITY(U,$J,358.3,41373,0)
+ ;;=I82.413^^156^2021^2
+ ;;^UTILITY(U,$J,358.3,41373,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41373,1,3,0)
+ ;;=3^AC Embol & Thromb Bil Fem Vein
+ ;;^UTILITY(U,$J,358.3,41373,1,4,0)
+ ;;=4^I82.413
+ ;;^UTILITY(U,$J,358.3,41373,2)
+ ;;=^5007859
+ ;;^UTILITY(U,$J,358.3,41374,0)
+ ;;=I82.421^^156^2021^23
+ ;;^UTILITY(U,$J,358.3,41374,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41374,1,3,0)
+ ;;=3^AC Embol & Thromb Rt Iliac Vein
+ ;;^UTILITY(U,$J,358.3,41374,1,4,0)
+ ;;=4^I82.421
+ ;;^UTILITY(U,$J,358.3,41374,2)
+ ;;=^5007861
+ ;;^UTILITY(U,$J,358.3,41375,0)
+ ;;=I82.422^^156^2021^13
+ ;;^UTILITY(U,$J,358.3,41375,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41375,1,3,0)
+ ;;=3^AC Embol & Thromb Lt Iliac Vein
+ ;;^UTILITY(U,$J,358.3,41375,1,4,0)
+ ;;=4^I82.422
+ ;;^UTILITY(U,$J,358.3,41375,2)
+ ;;=^5007862
+ ;;^UTILITY(U,$J,358.3,41376,0)
+ ;;=I82.423^^156^2021^3
+ ;;^UTILITY(U,$J,358.3,41376,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41376,1,3,0)
+ ;;=3^AC Embol & Thromb Bil Iliac Vein
+ ;;^UTILITY(U,$J,358.3,41376,1,4,0)
+ ;;=4^I82.423
+ ;;^UTILITY(U,$J,358.3,41376,2)
+ ;;=^5007863

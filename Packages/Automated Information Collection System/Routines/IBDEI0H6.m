@@ -1,128 +1,282 @@
-IBDEI0H6 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0H6 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7680,1,0)
+ ;;^UTILITY(U,$J,358.3,17247,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7680,1,3,0)
- ;;=3^Rapidly progr neph synd w/ diffus endocaplry prolif glomrlneph
- ;;^UTILITY(U,$J,358.3,7680,1,4,0)
- ;;=4^N01.4
- ;;^UTILITY(U,$J,358.3,7680,2)
- ;;=^5015505
- ;;^UTILITY(U,$J,358.3,7681,0)
- ;;=N01.5^^52^518^68
- ;;^UTILITY(U,$J,358.3,7681,1,0)
+ ;;^UTILITY(U,$J,358.3,17247,1,3,0)
+ ;;=3^Encntr for mntl hlth serv for perp of prntl child abuse
+ ;;^UTILITY(U,$J,358.3,17247,1,4,0)
+ ;;=4^Z69.011
+ ;;^UTILITY(U,$J,358.3,17247,2)
+ ;;=^5063229
+ ;;^UTILITY(U,$J,358.3,17248,0)
+ ;;=Z91.120^^73^872^38
+ ;;^UTILITY(U,$J,358.3,17248,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7681,1,3,0)
- ;;=3^Rapidly progr neph synd w/ diffuse mesangiocap glomrlneph
- ;;^UTILITY(U,$J,358.3,7681,1,4,0)
- ;;=4^N01.5
- ;;^UTILITY(U,$J,358.3,7681,2)
- ;;=^5015506
- ;;^UTILITY(U,$J,358.3,7682,0)
- ;;=N01.6^^52^518^63
- ;;^UTILITY(U,$J,358.3,7682,1,0)
+ ;;^UTILITY(U,$J,358.3,17248,1,3,0)
+ ;;=3^Pt's intent underdose of meds d/t financial hardship
+ ;;^UTILITY(U,$J,358.3,17248,1,4,0)
+ ;;=4^Z91.120
+ ;;^UTILITY(U,$J,358.3,17248,2)
+ ;;=^5063612
+ ;;^UTILITY(U,$J,358.3,17249,0)
+ ;;=Z91.128^^73^872^39
+ ;;^UTILITY(U,$J,358.3,17249,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7682,1,3,0)
- ;;=3^Rapidly progr neph synd w/ dense deposit disease
- ;;^UTILITY(U,$J,358.3,7682,1,4,0)
- ;;=4^N01.6
- ;;^UTILITY(U,$J,358.3,7682,2)
- ;;=^5015507
- ;;^UTILITY(U,$J,358.3,7683,0)
- ;;=N01.7^^52^518^66
- ;;^UTILITY(U,$J,358.3,7683,1,0)
+ ;;^UTILITY(U,$J,358.3,17249,1,3,0)
+ ;;=3^Pt's intent underdose of meds d/t oth reasons
+ ;;^UTILITY(U,$J,358.3,17249,1,4,0)
+ ;;=4^Z91.128
+ ;;^UTILITY(U,$J,358.3,17249,2)
+ ;;=^5063613
+ ;;^UTILITY(U,$J,358.3,17250,0)
+ ;;=Z63.71^^73^872^44
+ ;;^UTILITY(U,$J,358.3,17250,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7683,1,3,0)
- ;;=3^Rapidly progr neph synd w/ diffuse crescentic glomrlneph
- ;;^UTILITY(U,$J,358.3,7683,1,4,0)
- ;;=4^N01.7
- ;;^UTILITY(U,$J,358.3,7683,2)
- ;;=^5015508
- ;;^UTILITY(U,$J,358.3,7684,0)
- ;;=N01.8^^52^518^71
- ;;^UTILITY(U,$J,358.3,7684,1,0)
+ ;;^UTILITY(U,$J,358.3,17250,1,3,0)
+ ;;=3^Stress on family d/t rtrn of family member from deployment
+ ;;^UTILITY(U,$J,358.3,17250,1,4,0)
+ ;;=4^Z63.71
+ ;;^UTILITY(U,$J,358.3,17250,2)
+ ;;=^5063171
+ ;;^UTILITY(U,$J,358.3,17251,0)
+ ;;=Z03.89^^73^873^1
+ ;;^UTILITY(U,$J,358.3,17251,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7684,1,3,0)
- ;;=3^Rapidly progr neph synd w/ oth morphologic changes
- ;;^UTILITY(U,$J,358.3,7684,1,4,0)
- ;;=4^N01.8
- ;;^UTILITY(U,$J,358.3,7684,2)
- ;;=^5015509
- ;;^UTILITY(U,$J,358.3,7685,0)
- ;;=N01.9^^52^518^72
- ;;^UTILITY(U,$J,358.3,7685,1,0)
+ ;;^UTILITY(U,$J,358.3,17251,1,3,0)
+ ;;=3^Observation for Suspected Diseases & Condition Ruled Out
+ ;;^UTILITY(U,$J,358.3,17251,1,4,0)
+ ;;=4^Z03.89
+ ;;^UTILITY(U,$J,358.3,17251,2)
+ ;;=^5062656
+ ;;^UTILITY(U,$J,358.3,17252,0)
+ ;;=E11.9^^73^874^11
+ ;;^UTILITY(U,$J,358.3,17252,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7685,1,3,0)
- ;;=3^Rapidly progr neph synd w/ unsp morphologic changes
- ;;^UTILITY(U,$J,358.3,7685,1,4,0)
- ;;=4^N01.9
- ;;^UTILITY(U,$J,358.3,7685,2)
- ;;=^5015510
- ;;^UTILITY(U,$J,358.3,7686,0)
- ;;=N02.0^^52^518^80
- ;;^UTILITY(U,$J,358.3,7686,1,0)
+ ;;^UTILITY(U,$J,358.3,17252,1,3,0)
+ ;;=3^Type 2 DM w/o Complications
+ ;;^UTILITY(U,$J,358.3,17252,1,4,0)
+ ;;=4^E11.9
+ ;;^UTILITY(U,$J,358.3,17252,2)
+ ;;=^5002666
+ ;;^UTILITY(U,$J,358.3,17253,0)
+ ;;=E11.65^^73^874^9
+ ;;^UTILITY(U,$J,358.3,17253,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7686,1,3,0)
- ;;=3^Recurrent & perst hematur w/ minor glomerular abnlt
- ;;^UTILITY(U,$J,358.3,7686,1,4,0)
- ;;=4^N02.0
- ;;^UTILITY(U,$J,358.3,7686,2)
- ;;=^5015511
- ;;^UTILITY(U,$J,358.3,7687,0)
- ;;=N02.1^^52^518^79
- ;;^UTILITY(U,$J,358.3,7687,1,0)
+ ;;^UTILITY(U,$J,358.3,17253,1,3,0)
+ ;;=3^Type 2 DM w/ Hyperglycemia
+ ;;^UTILITY(U,$J,358.3,17253,1,4,0)
+ ;;=4^E11.65
+ ;;^UTILITY(U,$J,358.3,17253,2)
+ ;;=^5002663
+ ;;^UTILITY(U,$J,358.3,17254,0)
+ ;;=E10.9^^73^874^6
+ ;;^UTILITY(U,$J,358.3,17254,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7687,1,3,0)
- ;;=3^Recurrent & perst hematur w/ focal & seg glomerular lesions
- ;;^UTILITY(U,$J,358.3,7687,1,4,0)
- ;;=4^N02.1
- ;;^UTILITY(U,$J,358.3,7687,2)
- ;;=^5015512
- ;;^UTILITY(U,$J,358.3,7688,0)
- ;;=N02.2^^52^518^77
- ;;^UTILITY(U,$J,358.3,7688,1,0)
+ ;;^UTILITY(U,$J,358.3,17254,1,3,0)
+ ;;=3^Type 1 DM w/o Complications
+ ;;^UTILITY(U,$J,358.3,17254,1,4,0)
+ ;;=4^E10.9
+ ;;^UTILITY(U,$J,358.3,17254,2)
+ ;;=^5002626
+ ;;^UTILITY(U,$J,358.3,17255,0)
+ ;;=E10.65^^73^874^4
+ ;;^UTILITY(U,$J,358.3,17255,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7688,1,3,0)
- ;;=3^Recurrent & perst hematur w/ diffuse membranous glomrlneph
- ;;^UTILITY(U,$J,358.3,7688,1,4,0)
- ;;=4^N02.2
- ;;^UTILITY(U,$J,358.3,7688,2)
- ;;=^5015513
- ;;^UTILITY(U,$J,358.3,7689,0)
- ;;=N02.3^^52^518^74
- ;;^UTILITY(U,$J,358.3,7689,1,0)
+ ;;^UTILITY(U,$J,358.3,17255,1,3,0)
+ ;;=3^Type 1 DM w/ Hyperglycemia
+ ;;^UTILITY(U,$J,358.3,17255,1,4,0)
+ ;;=4^E10.65
+ ;;^UTILITY(U,$J,358.3,17255,2)
+ ;;=^5002623
+ ;;^UTILITY(U,$J,358.3,17256,0)
+ ;;=E11.42^^73^874^7
+ ;;^UTILITY(U,$J,358.3,17256,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7689,1,3,0)
- ;;=3^Recur & perst hematur w/ diffus mesangial prolif glomrlneph
- ;;^UTILITY(U,$J,358.3,7689,1,4,0)
- ;;=4^N02.3
- ;;^UTILITY(U,$J,358.3,7689,2)
- ;;=^5015514
- ;;^UTILITY(U,$J,358.3,7690,0)
- ;;=N02.4^^52^518^73
- ;;^UTILITY(U,$J,358.3,7690,1,0)
+ ;;^UTILITY(U,$J,358.3,17256,1,3,0)
+ ;;=3^Type 2 DM w/ Diabetic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,17256,1,4,0)
+ ;;=4^E11.42
+ ;;^UTILITY(U,$J,358.3,17256,2)
+ ;;=^5002646
+ ;;^UTILITY(U,$J,358.3,17257,0)
+ ;;=E10.42^^73^874^2
+ ;;^UTILITY(U,$J,358.3,17257,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7690,1,3,0)
- ;;=3^Recur & perst hematur w/ diffus endocaplry prolif glomrlneph
- ;;^UTILITY(U,$J,358.3,7690,1,4,0)
- ;;=4^N02.4
- ;;^UTILITY(U,$J,358.3,7690,2)
- ;;=^5015515
- ;;^UTILITY(U,$J,358.3,7691,0)
- ;;=N02.5^^52^518^78
- ;;^UTILITY(U,$J,358.3,7691,1,0)
+ ;;^UTILITY(U,$J,358.3,17257,1,3,0)
+ ;;=3^Type 1 DM w/ Diabetic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,17257,1,4,0)
+ ;;=4^E10.42
+ ;;^UTILITY(U,$J,358.3,17257,2)
+ ;;=^5002606
+ ;;^UTILITY(U,$J,358.3,17258,0)
+ ;;=E13.42^^73^874^1
+ ;;^UTILITY(U,$J,358.3,17258,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7691,1,3,0)
- ;;=3^Recurrent & perst hematur w/ diffuse mesangiocap glomrlneph
- ;;^UTILITY(U,$J,358.3,7691,1,4,0)
- ;;=4^N02.5
- ;;^UTILITY(U,$J,358.3,7691,2)
- ;;=^5015516
- ;;^UTILITY(U,$J,358.3,7692,0)
- ;;=N02.6^^52^518^75
- ;;^UTILITY(U,$J,358.3,7692,1,0)
+ ;;^UTILITY(U,$J,358.3,17258,1,3,0)
+ ;;=3^Secondary Type DM w/ Diabetic Polyneuropathy
+ ;;^UTILITY(U,$J,358.3,17258,1,4,0)
+ ;;=4^E13.42
+ ;;^UTILITY(U,$J,358.3,17258,2)
+ ;;=^5002686
+ ;;^UTILITY(U,$J,358.3,17259,0)
+ ;;=E10.621^^73^874^3
+ ;;^UTILITY(U,$J,358.3,17259,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7692,1,3,0)
- ;;=3^Recurrent & perst hematur w/ dense deposit disease
+ ;;^UTILITY(U,$J,358.3,17259,1,3,0)
+ ;;=3^Type 1 DM w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,17259,1,4,0)
+ ;;=4^E10.621
+ ;;^UTILITY(U,$J,358.3,17259,2)
+ ;;=^5002616
+ ;;^UTILITY(U,$J,358.3,17260,0)
+ ;;=E10.649^^73^874^5
+ ;;^UTILITY(U,$J,358.3,17260,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17260,1,3,0)
+ ;;=3^Type 1 DM w/ Hypoglycemia w/o Coma
+ ;;^UTILITY(U,$J,358.3,17260,1,4,0)
+ ;;=4^E10.649
+ ;;^UTILITY(U,$J,358.3,17260,2)
+ ;;=^5002622
+ ;;^UTILITY(U,$J,358.3,17261,0)
+ ;;=E11.621^^73^874^8
+ ;;^UTILITY(U,$J,358.3,17261,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17261,1,3,0)
+ ;;=3^Type 2 DM w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,17261,1,4,0)
+ ;;=4^E11.621
+ ;;^UTILITY(U,$J,358.3,17261,2)
+ ;;=^5002656
+ ;;^UTILITY(U,$J,358.3,17262,0)
+ ;;=E11.649^^73^874^10
+ ;;^UTILITY(U,$J,358.3,17262,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17262,1,3,0)
+ ;;=3^Type 2 DM w/ Hypoglycemia w/o Coma
+ ;;^UTILITY(U,$J,358.3,17262,1,4,0)
+ ;;=4^E11.649
+ ;;^UTILITY(U,$J,358.3,17262,2)
+ ;;=^5002662
+ ;;^UTILITY(U,$J,358.3,17263,0)
+ ;;=99211^^74^875^2
+ ;;^UTILITY(U,$J,358.3,17263,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,17263,1,1,0)
+ ;;=1^OFFICE VISIT
+ ;;^UTILITY(U,$J,358.3,17263,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,17264,0)
+ ;;=99211^^74^876^1
+ ;;^UTILITY(U,$J,358.3,17264,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,17264,1,1,0)
+ ;;=1^F-T-F INTERVENTION
+ ;;^UTILITY(U,$J,358.3,17264,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,17265,0)
+ ;;=99211^^74^877^1
+ ;;^UTILITY(U,$J,358.3,17265,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,17265,1,1,0)
+ ;;=1^CCHT VIDEO VISIT
+ ;;^UTILITY(U,$J,358.3,17265,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,17265,3,0)
+ ;;=^358.33^1^1
+ ;;^UTILITY(U,$J,358.3,17265,3,1,0)
+ ;;=GT
+ ;;^UTILITY(U,$J,358.3,17266,0)
+ ;;=99078^^75^878^3^^^^1
+ ;;^UTILITY(U,$J,358.3,17266,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17266,1,2,0)
+ ;;=2^99078
+ ;;^UTILITY(U,$J,358.3,17266,1,3,0)
+ ;;=3^GROUP HEALTH EDUCATION
+ ;;^UTILITY(U,$J,358.3,17267,0)
+ ;;=94760^^75^878^7^^^^1
+ ;;^UTILITY(U,$J,358.3,17267,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17267,1,2,0)
+ ;;=2^94760
+ ;;^UTILITY(U,$J,358.3,17267,1,3,0)
+ ;;=3^PULSE OXIMETRY
+ ;;^UTILITY(U,$J,358.3,17268,0)
+ ;;=99080^^75^878^9^^^^1
+ ;;^UTILITY(U,$J,358.3,17268,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17268,1,2,0)
+ ;;=2^99080
+ ;;^UTILITY(U,$J,358.3,17268,1,3,0)
+ ;;=3^SPECIAL REPORTS OR FORMS
+ ;;^UTILITY(U,$J,358.3,17269,0)
+ ;;=97535^^75^878^8^^^^1
+ ;;^UTILITY(U,$J,358.3,17269,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17269,1,2,0)
+ ;;=2^97535
+ ;;^UTILITY(U,$J,358.3,17269,1,3,0)
+ ;;=3^SELF CARE MNGMENT TRAINING
+ ;;^UTILITY(U,$J,358.3,17270,0)
+ ;;=99366^^75^878^10^^^^1
+ ;;^UTILITY(U,$J,358.3,17270,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17270,1,2,0)
+ ;;=2^99366
+ ;;^UTILITY(U,$J,358.3,17270,1,3,0)
+ ;;=3^TEAM CONF W/PAT BY HC PRO
+ ;;^UTILITY(U,$J,358.3,17271,0)
+ ;;=99499^^75^878^11^^^^1
+ ;;^UTILITY(U,$J,358.3,17271,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17271,1,2,0)
+ ;;=2^99499
+ ;;^UTILITY(U,$J,358.3,17271,1,3,0)
+ ;;=3^UNLISTED E&M SERVICE
+ ;;^UTILITY(U,$J,358.3,17272,0)
+ ;;=G0108^^75^878^2^^^^1
+ ;;^UTILITY(U,$J,358.3,17272,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17272,1,2,0)
+ ;;=2^G0108
+ ;;^UTILITY(U,$J,358.3,17272,1,3,0)
+ ;;=3^DM MGMT TRN PER INDIV PER 30MIN
+ ;;^UTILITY(U,$J,358.3,17273,0)
+ ;;=G0109^^75^878^1^^^^1
+ ;;^UTILITY(U,$J,358.3,17273,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17273,1,2,0)
+ ;;=2^G0109
+ ;;^UTILITY(U,$J,358.3,17273,1,3,0)
+ ;;=3^DM MGMT TRN GRP PER 30MIN
+ ;;^UTILITY(U,$J,358.3,17274,0)
+ ;;=A9279^^75^878^5^^^^1
+ ;;^UTILITY(U,$J,358.3,17274,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17274,1,2,0)
+ ;;=2^A9279
+ ;;^UTILITY(U,$J,358.3,17274,1,3,0)
+ ;;=3^MONITORING FEATURE/DEVICE NOC
+ ;;^UTILITY(U,$J,358.3,17275,0)
+ ;;=H0034^^75^878^4^^^^1
+ ;;^UTILITY(U,$J,358.3,17275,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17275,1,2,0)
+ ;;=2^H0034
+ ;;^UTILITY(U,$J,358.3,17275,1,3,0)
+ ;;=3^MED TRNG & SUPPORT PER 15MIN
+ ;;^UTILITY(U,$J,358.3,17276,0)
+ ;;=S9445^^75^878^6^^^^1
+ ;;^UTILITY(U,$J,358.3,17276,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,17276,1,2,0)
+ ;;=2^S9445
+ ;;^UTILITY(U,$J,358.3,17276,1,3,0)
+ ;;=3^PT EDUCATION-INDIVIDUAL
+ ;;^UTILITY(U,$J,358.3,17277,0)
+ ;;=93005^^75^879^1^^^^1
+ ;;^UTILITY(U,$J,358.3,17277,1,0)
+ ;;=^358.31IA^3^2

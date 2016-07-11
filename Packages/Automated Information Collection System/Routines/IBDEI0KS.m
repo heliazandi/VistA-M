@@ -1,124 +1,296 @@
-IBDEI0KS ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0KS ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,9407,1,4,0)
- ;;=4^G40.A11
- ;;^UTILITY(U,$J,358.3,9407,2)
- ;;=^5003870
- ;;^UTILITY(U,$J,358.3,9408,0)
- ;;=G40.A19^^63^604^2
- ;;^UTILITY(U,$J,358.3,9408,1,0)
+ ;;^UTILITY(U,$J,358.3,20947,1,4,0)
+ ;;=4^Z90.11
+ ;;^UTILITY(U,$J,358.3,20947,2)
+ ;;=^5063582
+ ;;^UTILITY(U,$J,358.3,20948,0)
+ ;;=A63.0^^86^1010^16
+ ;;^UTILITY(U,$J,358.3,20948,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9408,1,3,0)
- ;;=3^Absence Seizures Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9408,1,4,0)
- ;;=4^G40.A19
- ;;^UTILITY(U,$J,358.3,9408,2)
- ;;=^5003871
- ;;^UTILITY(U,$J,358.3,9409,0)
- ;;=G40.309^^63^604^16
- ;;^UTILITY(U,$J,358.3,9409,1,0)
+ ;;^UTILITY(U,$J,358.3,20948,1,3,0)
+ ;;=3^Anogenital Warts,Verereal
+ ;;^UTILITY(U,$J,358.3,20948,1,4,0)
+ ;;=4^A63.0
+ ;;^UTILITY(U,$J,358.3,20948,2)
+ ;;=^5000360
+ ;;^UTILITY(U,$J,358.3,20949,0)
+ ;;=R63.0^^86^1010^17
+ ;;^UTILITY(U,$J,358.3,20949,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9409,1,3,0)
- ;;=3^Generalized Seizures Not Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9409,1,4,0)
- ;;=4^G40.309
- ;;^UTILITY(U,$J,358.3,9409,2)
- ;;=^5003842
- ;;^UTILITY(U,$J,358.3,9410,0)
- ;;=G40.311^^63^604^14
- ;;^UTILITY(U,$J,358.3,9410,1,0)
+ ;;^UTILITY(U,$J,358.3,20949,1,3,0)
+ ;;=3^Anorexia
+ ;;^UTILITY(U,$J,358.3,20949,1,4,0)
+ ;;=4^R63.0
+ ;;^UTILITY(U,$J,358.3,20949,2)
+ ;;=^7939
+ ;;^UTILITY(U,$J,358.3,20950,0)
+ ;;=R87.611^^86^1010^2
+ ;;^UTILITY(U,$J,358.3,20950,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9410,1,3,0)
- ;;=3^Generalized Seizures Intractable w/ Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9410,1,4,0)
- ;;=4^G40.311
- ;;^UTILITY(U,$J,358.3,9410,2)
- ;;=^5003843
- ;;^UTILITY(U,$J,358.3,9411,0)
- ;;=G40.319^^63^604^15
- ;;^UTILITY(U,$J,358.3,9411,1,0)
+ ;;^UTILITY(U,$J,358.3,20950,1,3,0)
+ ;;=3^ASC-H
+ ;;^UTILITY(U,$J,358.3,20950,1,4,0)
+ ;;=4^R87.611
+ ;;^UTILITY(U,$J,358.3,20950,2)
+ ;;=^5019669
+ ;;^UTILITY(U,$J,358.3,20951,0)
+ ;;=R87.610^^86^1010^3
+ ;;^UTILITY(U,$J,358.3,20951,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9411,1,3,0)
- ;;=3^Generalized Seizures Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9411,1,4,0)
- ;;=4^G40.319
- ;;^UTILITY(U,$J,358.3,9411,2)
- ;;=^5003844
- ;;^UTILITY(U,$J,358.3,9412,0)
- ;;=G40.409^^63^604^19
- ;;^UTILITY(U,$J,358.3,9412,1,0)
+ ;;^UTILITY(U,$J,358.3,20951,1,3,0)
+ ;;=3^ASC-US
+ ;;^UTILITY(U,$J,358.3,20951,1,4,0)
+ ;;=4^R87.610
+ ;;^UTILITY(U,$J,358.3,20951,2)
+ ;;=^5019668
+ ;;^UTILITY(U,$J,358.3,20952,0)
+ ;;=Z98.82^^86^1010^18
+ ;;^UTILITY(U,$J,358.3,20952,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9412,1,3,0)
- ;;=3^Generalized Seizures,Other, Not Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9412,1,4,0)
- ;;=4^G40.409
- ;;^UTILITY(U,$J,358.3,9412,2)
- ;;=^5003846
- ;;^UTILITY(U,$J,358.3,9413,0)
- ;;=G40.411^^63^604^17
- ;;^UTILITY(U,$J,358.3,9413,1,0)
+ ;;^UTILITY(U,$J,358.3,20952,1,3,0)
+ ;;=3^Breast Implant Status
+ ;;^UTILITY(U,$J,358.3,20952,1,4,0)
+ ;;=4^Z98.82
+ ;;^UTILITY(U,$J,358.3,20952,2)
+ ;;=^5063747
+ ;;^UTILITY(U,$J,358.3,20953,0)
+ ;;=B37.3^^86^1010^19
+ ;;^UTILITY(U,$J,358.3,20953,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9413,1,3,0)
- ;;=3^Generalized Seizures,Other, Intractable w/ Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9413,1,4,0)
- ;;=4^G40.411
- ;;^UTILITY(U,$J,358.3,9413,2)
- ;;=^5003847
- ;;^UTILITY(U,$J,358.3,9414,0)
- ;;=G40.419^^63^604^18
- ;;^UTILITY(U,$J,358.3,9414,1,0)
+ ;;^UTILITY(U,$J,358.3,20953,1,3,0)
+ ;;=3^Candidiasis of Vulva & Vagina
+ ;;^UTILITY(U,$J,358.3,20953,1,4,0)
+ ;;=4^B37.3
+ ;;^UTILITY(U,$J,358.3,20953,2)
+ ;;=^5000615
+ ;;^UTILITY(U,$J,358.3,20954,0)
+ ;;=D06.9^^86^1010^20
+ ;;^UTILITY(U,$J,358.3,20954,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9414,1,3,0)
- ;;=3^Generalized Seizures,Other, Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9414,1,4,0)
- ;;=4^G40.419
- ;;^UTILITY(U,$J,358.3,9414,2)
- ;;=^5003848
- ;;^UTILITY(U,$J,358.3,9415,0)
- ;;=G40.209^^63^604^7
- ;;^UTILITY(U,$J,358.3,9415,1,0)
+ ;;^UTILITY(U,$J,358.3,20954,1,3,0)
+ ;;=3^Carcinoma in Situ of Cervix,Unspec
+ ;;^UTILITY(U,$J,358.3,20954,1,4,0)
+ ;;=4^D06.9
+ ;;^UTILITY(U,$J,358.3,20954,2)
+ ;;=^5001941
+ ;;^UTILITY(U,$J,358.3,20955,0)
+ ;;=D06.0^^86^1010^21
+ ;;^UTILITY(U,$J,358.3,20955,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9415,1,3,0)
- ;;=3^Complex Partial Seizures Not Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9415,1,4,0)
- ;;=4^G40.209
- ;;^UTILITY(U,$J,358.3,9415,2)
- ;;=^5003838
- ;;^UTILITY(U,$J,358.3,9416,0)
- ;;=G40.211^^63^604^5
- ;;^UTILITY(U,$J,358.3,9416,1,0)
+ ;;^UTILITY(U,$J,358.3,20955,1,3,0)
+ ;;=3^Carcinoma in Situ of Endocervix
+ ;;^UTILITY(U,$J,358.3,20955,1,4,0)
+ ;;=4^D06.0
+ ;;^UTILITY(U,$J,358.3,20955,2)
+ ;;=^5001938
+ ;;^UTILITY(U,$J,358.3,20956,0)
+ ;;=D06.1^^86^1010^22
+ ;;^UTILITY(U,$J,358.3,20956,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9416,1,3,0)
- ;;=3^Complex Partial Seizures Intractable w/ Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9416,1,4,0)
- ;;=4^G40.211
- ;;^UTILITY(U,$J,358.3,9416,2)
- ;;=^5003839
- ;;^UTILITY(U,$J,358.3,9417,0)
- ;;=G40.219^^63^604^6
- ;;^UTILITY(U,$J,358.3,9417,1,0)
+ ;;^UTILITY(U,$J,358.3,20956,1,3,0)
+ ;;=3^Carcinoma in Situ of Exocervix
+ ;;^UTILITY(U,$J,358.3,20956,1,4,0)
+ ;;=4^D06.1
+ ;;^UTILITY(U,$J,358.3,20956,2)
+ ;;=^5001939
+ ;;^UTILITY(U,$J,358.3,20957,0)
+ ;;=A56.02^^86^1010^23
+ ;;^UTILITY(U,$J,358.3,20957,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9417,1,3,0)
- ;;=3^Complex Partial Seizures Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9417,1,4,0)
- ;;=4^G40.219
- ;;^UTILITY(U,$J,358.3,9417,2)
- ;;=^5003840
- ;;^UTILITY(U,$J,358.3,9418,0)
- ;;=G40.109^^63^604^27
- ;;^UTILITY(U,$J,358.3,9418,1,0)
+ ;;^UTILITY(U,$J,358.3,20957,1,3,0)
+ ;;=3^Chlamydial Vulvovaginitis
+ ;;^UTILITY(U,$J,358.3,20957,1,4,0)
+ ;;=4^A56.02
+ ;;^UTILITY(U,$J,358.3,20957,2)
+ ;;=^5000340
+ ;;^UTILITY(U,$J,358.3,20958,0)
+ ;;=N81.12^^86^1010^26
+ ;;^UTILITY(U,$J,358.3,20958,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9418,1,3,0)
- ;;=3^Simple Partial Seizures Not Intractable w/o Status Epilepticus
- ;;^UTILITY(U,$J,358.3,9418,1,4,0)
- ;;=4^G40.109
- ;;^UTILITY(U,$J,358.3,9418,2)
- ;;=^5003834
- ;;^UTILITY(U,$J,358.3,9419,0)
- ;;=G40.111^^63^604^25
- ;;^UTILITY(U,$J,358.3,9419,1,0)
+ ;;^UTILITY(U,$J,358.3,20958,1,3,0)
+ ;;=3^Cystocele,Lateral
+ ;;^UTILITY(U,$J,358.3,20958,1,4,0)
+ ;;=4^N81.12
+ ;;^UTILITY(U,$J,358.3,20958,2)
+ ;;=^331535
+ ;;^UTILITY(U,$J,358.3,20959,0)
+ ;;=N81.11^^86^1010^27
+ ;;^UTILITY(U,$J,358.3,20959,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,9419,1,3,0)
- ;;=3^Simple Partial Seizures Intractable w/ Status Epilepticus
+ ;;^UTILITY(U,$J,358.3,20959,1,3,0)
+ ;;=3^Cystocele,Midline
+ ;;^UTILITY(U,$J,358.3,20959,1,4,0)
+ ;;=4^N81.11
+ ;;^UTILITY(U,$J,358.3,20959,2)
+ ;;=^331534
+ ;;^UTILITY(U,$J,358.3,20960,0)
+ ;;=N81.10^^86^1010^28
+ ;;^UTILITY(U,$J,358.3,20960,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20960,1,3,0)
+ ;;=3^Cystocele,Unspec
+ ;;^UTILITY(U,$J,358.3,20960,1,4,0)
+ ;;=4^N81.10
+ ;;^UTILITY(U,$J,358.3,20960,2)
+ ;;=^5015838
+ ;;^UTILITY(U,$J,358.3,20961,0)
+ ;;=R87.614^^86^1010^29
+ ;;^UTILITY(U,$J,358.3,20961,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20961,1,3,0)
+ ;;=3^Cytologic Evidence of Malig on Smear of Cervix
+ ;;^UTILITY(U,$J,358.3,20961,1,4,0)
+ ;;=4^R87.614
+ ;;^UTILITY(U,$J,358.3,20961,2)
+ ;;=^5019672
+ ;;^UTILITY(U,$J,358.3,20962,0)
+ ;;=N87.9^^86^1010^36
+ ;;^UTILITY(U,$J,358.3,20962,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20962,1,3,0)
+ ;;=3^Dysplasia of Cervix Uteri,Unspec
+ ;;^UTILITY(U,$J,358.3,20962,1,4,0)
+ ;;=4^N87.9
+ ;;^UTILITY(U,$J,358.3,20962,2)
+ ;;=^5015877
+ ;;^UTILITY(U,$J,358.3,20963,0)
+ ;;=R30.0^^86^1010^37
+ ;;^UTILITY(U,$J,358.3,20963,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20963,1,3,0)
+ ;;=3^Dysuria
+ ;;^UTILITY(U,$J,358.3,20963,1,4,0)
+ ;;=4^R30.0
+ ;;^UTILITY(U,$J,358.3,20963,2)
+ ;;=^5019322
+ ;;^UTILITY(U,$J,358.3,20964,0)
+ ;;=N92.1^^86^1010^40
+ ;;^UTILITY(U,$J,358.3,20964,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20964,1,3,0)
+ ;;=3^Excessive/Frequent Menstruation w/ Irregular Cycle
+ ;;^UTILITY(U,$J,358.3,20964,1,4,0)
+ ;;=4^N92.1
+ ;;^UTILITY(U,$J,358.3,20964,2)
+ ;;=^5015909
+ ;;^UTILITY(U,$J,358.3,20965,0)
+ ;;=Z08.^^86^1010^42
+ ;;^UTILITY(U,$J,358.3,20965,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20965,1,3,0)
+ ;;=3^F/U Exam After Malig Neop Treatment
+ ;;^UTILITY(U,$J,358.3,20965,1,4,0)
+ ;;=4^Z08.
+ ;;^UTILITY(U,$J,358.3,20965,2)
+ ;;=^5062667
+ ;;^UTILITY(U,$J,358.3,20966,0)
+ ;;=Z80.3^^86^1010^43
+ ;;^UTILITY(U,$J,358.3,20966,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20966,1,3,0)
+ ;;=3^Family Hx of Breast CA
+ ;;^UTILITY(U,$J,358.3,20966,1,4,0)
+ ;;=4^Z80.3
+ ;;^UTILITY(U,$J,358.3,20966,2)
+ ;;=^5063347
+ ;;^UTILITY(U,$J,358.3,20967,0)
+ ;;=Z80.49^^86^1010^44
+ ;;^UTILITY(U,$J,358.3,20967,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20967,1,3,0)
+ ;;=3^Family Hx of Genital Organ CA
+ ;;^UTILITY(U,$J,358.3,20967,1,4,0)
+ ;;=4^Z80.49
+ ;;^UTILITY(U,$J,358.3,20967,2)
+ ;;=^5063351
+ ;;^UTILITY(U,$J,358.3,20968,0)
+ ;;=Z80.41^^86^1010^45
+ ;;^UTILITY(U,$J,358.3,20968,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20968,1,3,0)
+ ;;=3^Family Hx of Ovarian CA
+ ;;^UTILITY(U,$J,358.3,20968,1,4,0)
+ ;;=4^Z80.41
+ ;;^UTILITY(U,$J,358.3,20968,2)
+ ;;=^5063348
+ ;;^UTILITY(U,$J,358.3,20969,0)
+ ;;=N73.9^^86^1010^48
+ ;;^UTILITY(U,$J,358.3,20969,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20969,1,3,0)
+ ;;=3^Female Pelvic Inflammatory Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,20969,1,4,0)
+ ;;=4^N73.9
+ ;;^UTILITY(U,$J,358.3,20969,2)
+ ;;=^5015820
+ ;;^UTILITY(U,$J,358.3,20970,0)
+ ;;=N60.32^^86^1010^49
+ ;;^UTILITY(U,$J,358.3,20970,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20970,1,3,0)
+ ;;=3^Fibrosclerosis,Left Breast
+ ;;^UTILITY(U,$J,358.3,20970,1,4,0)
+ ;;=4^N60.32
+ ;;^UTILITY(U,$J,358.3,20970,2)
+ ;;=^5015780
+ ;;^UTILITY(U,$J,358.3,20971,0)
+ ;;=N60.31^^86^1010^50
+ ;;^UTILITY(U,$J,358.3,20971,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20971,1,3,0)
+ ;;=3^Fibrosclerosis,Right Breast
+ ;;^UTILITY(U,$J,358.3,20971,1,4,0)
+ ;;=4^N60.31
+ ;;^UTILITY(U,$J,358.3,20971,2)
+ ;;=^5015779
+ ;;^UTILITY(U,$J,358.3,20972,0)
+ ;;=Z01.411^^86^1010^51
+ ;;^UTILITY(U,$J,358.3,20972,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20972,1,3,0)
+ ;;=3^GYN Exam w/ Abnormal Findings
+ ;;^UTILITY(U,$J,358.3,20972,1,4,0)
+ ;;=4^Z01.411
+ ;;^UTILITY(U,$J,358.3,20972,2)
+ ;;=^5062622
+ ;;^UTILITY(U,$J,358.3,20973,0)
+ ;;=Z01.419^^86^1010^1
+ ;;^UTILITY(U,$J,358.3,20973,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20973,1,3,0)
+ ;;=3
+ ;;^UTILITY(U,$J,358.3,20973,1,4,0)
+ ;;=4^Z01.419
+ ;;^UTILITY(U,$J,358.3,20973,2)
+ ;;=^5062623
+ ;;^UTILITY(U,$J,358.3,20974,0)
+ ;;=Z01.419^^86^1010^52
+ ;;^UTILITY(U,$J,358.3,20974,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20974,1,3,0)
+ ;;=3^GYN Exam w/ Normal Findings
+ ;;^UTILITY(U,$J,358.3,20974,1,4,0)
+ ;;=4^Z01.419
+ ;;^UTILITY(U,$J,358.3,20974,2)
+ ;;=^5062623
+ ;;^UTILITY(U,$J,358.3,20975,0)
+ ;;=R87.613^^86^1010^54
+ ;;^UTILITY(U,$J,358.3,20975,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20975,1,3,0)
+ ;;=3^HGSIL
+ ;;^UTILITY(U,$J,358.3,20975,1,4,0)
+ ;;=4^R87.613
+ ;;^UTILITY(U,$J,358.3,20975,2)
+ ;;=^5019671
+ ;;^UTILITY(U,$J,358.3,20976,0)
+ ;;=R87.612^^86^1010^64
+ ;;^UTILITY(U,$J,358.3,20976,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,20976,1,3,0)
+ ;;=3^LGSIL
+ ;;^UTILITY(U,$J,358.3,20976,1,4,0)
+ ;;=4^R87.612

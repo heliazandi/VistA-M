@@ -1,128 +1,292 @@
-IBDEI0CD ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0CD ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,5342,1,0)
+ ;;^UTILITY(U,$J,358.3,12389,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5342,1,3,0)
- ;;=3^Athscl of Bypass Graft,Left Leg w/ Gangrene
- ;;^UTILITY(U,$J,358.3,5342,1,4,0)
- ;;=4^I70.762
- ;;^UTILITY(U,$J,358.3,5342,2)
- ;;=^5133608
- ;;^UTILITY(U,$J,358.3,5343,0)
- ;;=I70.761^^40^365^6
- ;;^UTILITY(U,$J,358.3,5343,1,0)
+ ;;^UTILITY(U,$J,358.3,12389,1,3,0)
+ ;;=3^Malig Neop of Left Bronchus/Lung
+ ;;^UTILITY(U,$J,358.3,12389,1,4,0)
+ ;;=4^C34.92
+ ;;^UTILITY(U,$J,358.3,12389,2)
+ ;;=^5000968
+ ;;^UTILITY(U,$J,358.3,12390,0)
+ ;;=J20.9^^56^654^10
+ ;;^UTILITY(U,$J,358.3,12390,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5343,1,3,0)
- ;;=3^Athscl of Bypass Graft,Right Leg w/ Gangrene
- ;;^UTILITY(U,$J,358.3,5343,1,4,0)
- ;;=4^I70.761
- ;;^UTILITY(U,$J,358.3,5343,2)
- ;;=^5007777
- ;;^UTILITY(U,$J,358.3,5344,0)
- ;;=I70.663^^40^365^10
- ;;^UTILITY(U,$J,358.3,5344,1,0)
+ ;;^UTILITY(U,$J,358.3,12390,1,3,0)
+ ;;=3^Acute Bronchitis,Unspec
+ ;;^UTILITY(U,$J,358.3,12390,1,4,0)
+ ;;=4^J20.9
+ ;;^UTILITY(U,$J,358.3,12390,2)
+ ;;=^5008195
+ ;;^UTILITY(U,$J,358.3,12391,0)
+ ;;=J20.8^^56^654^5
+ ;;^UTILITY(U,$J,358.3,12391,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5344,1,3,0)
- ;;=3^Athscl of Nonbiol Bypass,Bilateral Legs w/ Gangrene
- ;;^UTILITY(U,$J,358.3,5344,1,4,0)
- ;;=4^I70.663
- ;;^UTILITY(U,$J,358.3,5344,2)
- ;;=^5007757
- ;;^UTILITY(U,$J,358.3,5345,0)
- ;;=I70.662^^40^365^11
- ;;^UTILITY(U,$J,358.3,5345,1,0)
+ ;;^UTILITY(U,$J,358.3,12391,1,3,0)
+ ;;=3^Acute Bronchitis d/t Organisms NEC
+ ;;^UTILITY(U,$J,358.3,12391,1,4,0)
+ ;;=4^J20.8
+ ;;^UTILITY(U,$J,358.3,12391,2)
+ ;;=^5008194
+ ;;^UTILITY(U,$J,358.3,12392,0)
+ ;;=J20.5^^56^654^7
+ ;;^UTILITY(U,$J,358.3,12392,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5345,1,3,0)
- ;;=3^Athscl of Nonbiol Bypass,Left Leg w/ Gangrene
- ;;^UTILITY(U,$J,358.3,5345,1,4,0)
- ;;=4^I70.662
- ;;^UTILITY(U,$J,358.3,5345,2)
- ;;=^5007756
- ;;^UTILITY(U,$J,358.3,5346,0)
- ;;=I70.661^^40^365^12
- ;;^UTILITY(U,$J,358.3,5346,1,0)
+ ;;^UTILITY(U,$J,358.3,12392,1,3,0)
+ ;;=3^Acute Bronchitis d/t Respiratory Syncytial Virus
+ ;;^UTILITY(U,$J,358.3,12392,1,4,0)
+ ;;=4^J20.5
+ ;;^UTILITY(U,$J,358.3,12392,2)
+ ;;=^5008191
+ ;;^UTILITY(U,$J,358.3,12393,0)
+ ;;=J20.6^^56^654^8
+ ;;^UTILITY(U,$J,358.3,12393,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5346,1,3,0)
- ;;=3^Athscl of Nonbiol Bypass,Right Leg w/ Gangrene
- ;;^UTILITY(U,$J,358.3,5346,1,4,0)
- ;;=4^I70.661
- ;;^UTILITY(U,$J,358.3,5346,2)
- ;;=^5007755
- ;;^UTILITY(U,$J,358.3,5347,0)
- ;;=I70.561^^40^365^9
- ;;^UTILITY(U,$J,358.3,5347,1,0)
+ ;;^UTILITY(U,$J,358.3,12393,1,3,0)
+ ;;=3^Acute Bronchitis d/t Rhinovirus
+ ;;^UTILITY(U,$J,358.3,12393,1,4,0)
+ ;;=4^J20.6
+ ;;^UTILITY(U,$J,358.3,12393,2)
+ ;;=^5008192
+ ;;^UTILITY(U,$J,358.3,12394,0)
+ ;;=J20.2^^56^654^9
+ ;;^UTILITY(U,$J,358.3,12394,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5347,1,3,0)
- ;;=3^Athscl of Nonaut Bio Bypass,Right Leg w/ Gangrene
- ;;^UTILITY(U,$J,358.3,5347,1,4,0)
- ;;=4^I70.561
- ;;^UTILITY(U,$J,358.3,5347,2)
- ;;=^5007717
- ;;^UTILITY(U,$J,358.3,5348,0)
- ;;=I70.562^^40^365^8
- ;;^UTILITY(U,$J,358.3,5348,1,0)
+ ;;^UTILITY(U,$J,358.3,12394,1,3,0)
+ ;;=3^Acute Bronchitis d/t Streptococcus
+ ;;^UTILITY(U,$J,358.3,12394,1,4,0)
+ ;;=4^J20.2
+ ;;^UTILITY(U,$J,358.3,12394,2)
+ ;;=^5008188
+ ;;^UTILITY(U,$J,358.3,12395,0)
+ ;;=J20.4^^56^654^6
+ ;;^UTILITY(U,$J,358.3,12395,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5348,1,3,0)
- ;;=3^Athscl of Nonaut Bio Bypass,Left Leg w/ Gangrene
- ;;^UTILITY(U,$J,358.3,5348,1,4,0)
- ;;=4^I70.562
- ;;^UTILITY(U,$J,358.3,5348,2)
- ;;=^5007718
- ;;^UTILITY(U,$J,358.3,5349,0)
- ;;=I70.563^^40^365^7
- ;;^UTILITY(U,$J,358.3,5349,1,0)
+ ;;^UTILITY(U,$J,358.3,12395,1,3,0)
+ ;;=3^Acute Bronchitis d/t Parainfluenza Virus
+ ;;^UTILITY(U,$J,358.3,12395,1,4,0)
+ ;;=4^J20.4
+ ;;^UTILITY(U,$J,358.3,12395,2)
+ ;;=^5008190
+ ;;^UTILITY(U,$J,358.3,12396,0)
+ ;;=J20.3^^56^654^2
+ ;;^UTILITY(U,$J,358.3,12396,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5349,1,3,0)
- ;;=3^Athscl of Nonaut Bio Bypass,Bilateral Legs w/ Gangrene
- ;;^UTILITY(U,$J,358.3,5349,1,4,0)
- ;;=4^I70.563
- ;;^UTILITY(U,$J,358.3,5349,2)
- ;;=^5007719
- ;;^UTILITY(U,$J,358.3,5350,0)
- ;;=I70.462^^40^365^2
- ;;^UTILITY(U,$J,358.3,5350,1,0)
+ ;;^UTILITY(U,$J,358.3,12396,1,3,0)
+ ;;=3^Acute Bronchitis d/t Coxsackievirus
+ ;;^UTILITY(U,$J,358.3,12396,1,4,0)
+ ;;=4^J20.3
+ ;;^UTILITY(U,$J,358.3,12396,2)
+ ;;=^5008189
+ ;;^UTILITY(U,$J,358.3,12397,0)
+ ;;=J20.1^^56^654^3
+ ;;^UTILITY(U,$J,358.3,12397,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5350,1,3,0)
- ;;=3^Athscl Autol Vein Bypass,Left Leg w/ Gangrene
- ;;^UTILITY(U,$J,358.3,5350,1,4,0)
- ;;=4^I70.462
- ;;^UTILITY(U,$J,358.3,5350,2)
- ;;=^5007680
- ;;^UTILITY(U,$J,358.3,5351,0)
- ;;=I70.461^^40^365^3
- ;;^UTILITY(U,$J,358.3,5351,1,0)
+ ;;^UTILITY(U,$J,358.3,12397,1,3,0)
+ ;;=3^Acute Bronchitis d/t Hemophilus Influenzae
+ ;;^UTILITY(U,$J,358.3,12397,1,4,0)
+ ;;=4^J20.1
+ ;;^UTILITY(U,$J,358.3,12397,2)
+ ;;=^5008187
+ ;;^UTILITY(U,$J,358.3,12398,0)
+ ;;=J20.0^^56^654^4
+ ;;^UTILITY(U,$J,358.3,12398,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5351,1,3,0)
- ;;=3^Athscl Autol Vein Bypass,Right Leg w/ Gangrene
- ;;^UTILITY(U,$J,358.3,5351,1,4,0)
- ;;=4^I70.461
- ;;^UTILITY(U,$J,358.3,5351,2)
- ;;=^5007679
- ;;^UTILITY(U,$J,358.3,5352,0)
- ;;=I70.463^^40^365^1
- ;;^UTILITY(U,$J,358.3,5352,1,0)
+ ;;^UTILITY(U,$J,358.3,12398,1,3,0)
+ ;;=3^Acute Bronchitis d/t Mycoplasma Pneumoniae
+ ;;^UTILITY(U,$J,358.3,12398,1,4,0)
+ ;;=4^J20.0
+ ;;^UTILITY(U,$J,358.3,12398,2)
+ ;;=^5008186
+ ;;^UTILITY(U,$J,358.3,12399,0)
+ ;;=J42.^^56^654^16
+ ;;^UTILITY(U,$J,358.3,12399,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5352,1,3,0)
- ;;=3^Athscl Autol Vein Bypass,Bilateral Legs w/ Gangrene
- ;;^UTILITY(U,$J,358.3,5352,1,4,0)
- ;;=4^I70.463
- ;;^UTILITY(U,$J,358.3,5352,2)
- ;;=^5007681
- ;;^UTILITY(U,$J,358.3,5353,0)
- ;;=I70.361^^40^365^15
- ;;^UTILITY(U,$J,358.3,5353,1,0)
+ ;;^UTILITY(U,$J,358.3,12399,1,3,0)
+ ;;=3^Chronic Bronchitis,Unspec
+ ;;^UTILITY(U,$J,358.3,12399,1,4,0)
+ ;;=4^J42.
+ ;;^UTILITY(U,$J,358.3,12399,2)
+ ;;=^5008234
+ ;;^UTILITY(U,$J,358.3,12400,0)
+ ;;=J45.998^^56^654^11
+ ;;^UTILITY(U,$J,358.3,12400,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5353,1,3,0)
- ;;=3^Athscl of Unspec Bypass,Right Leg w/ Gangrene
- ;;^UTILITY(U,$J,358.3,5353,1,4,0)
- ;;=4^I70.361
- ;;^UTILITY(U,$J,358.3,5353,2)
- ;;=^5007641
- ;;^UTILITY(U,$J,358.3,5354,0)
- ;;=I70.362^^40^365^14
- ;;^UTILITY(U,$J,358.3,5354,1,0)
+ ;;^UTILITY(U,$J,358.3,12400,1,3,0)
+ ;;=3^Asthma NEC
+ ;;^UTILITY(U,$J,358.3,12400,1,4,0)
+ ;;=4^J45.998
+ ;;^UTILITY(U,$J,358.3,12400,2)
+ ;;=^5008257
+ ;;^UTILITY(U,$J,358.3,12401,0)
+ ;;=J45.909^^56^654^13
+ ;;^UTILITY(U,$J,358.3,12401,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5354,1,3,0)
- ;;=3^Athscl of Unspec Bypass,Left Leg w/ Gangrene
+ ;;^UTILITY(U,$J,358.3,12401,1,3,0)
+ ;;=3^Asthma,Uncomplicated,Unspec
+ ;;^UTILITY(U,$J,358.3,12401,1,4,0)
+ ;;=4^J45.909
+ ;;^UTILITY(U,$J,358.3,12401,2)
+ ;;=^5008256
+ ;;^UTILITY(U,$J,358.3,12402,0)
+ ;;=J45.902^^56^654^12
+ ;;^UTILITY(U,$J,358.3,12402,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12402,1,3,0)
+ ;;=3^Asthma w/ Status Asthmaticus,Unspec
+ ;;^UTILITY(U,$J,358.3,12402,1,4,0)
+ ;;=4^J45.902
+ ;;^UTILITY(U,$J,358.3,12402,2)
+ ;;=^5008255
+ ;;^UTILITY(U,$J,358.3,12403,0)
+ ;;=J44.9^^56^654^15
+ ;;^UTILITY(U,$J,358.3,12403,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12403,1,3,0)
+ ;;=3^COPD,Unspec
+ ;;^UTILITY(U,$J,358.3,12403,1,4,0)
+ ;;=4^J44.9
+ ;;^UTILITY(U,$J,358.3,12403,2)
+ ;;=^5008241
+ ;;^UTILITY(U,$J,358.3,12404,0)
+ ;;=J61.^^56^654^24
+ ;;^UTILITY(U,$J,358.3,12404,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12404,1,3,0)
+ ;;=3^Pneumoconiosis d/t Asbestos/Oth Mineral Fibers
+ ;;^UTILITY(U,$J,358.3,12404,1,4,0)
+ ;;=4^J61.
+ ;;^UTILITY(U,$J,358.3,12404,2)
+ ;;=^5008262
+ ;;^UTILITY(U,$J,358.3,12405,0)
+ ;;=R09.1^^56^654^23
+ ;;^UTILITY(U,$J,358.3,12405,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12405,1,3,0)
+ ;;=3^Pleurisy
+ ;;^UTILITY(U,$J,358.3,12405,1,4,0)
+ ;;=4^R09.1
+ ;;^UTILITY(U,$J,358.3,12405,2)
+ ;;=^95428
+ ;;^UTILITY(U,$J,358.3,12406,0)
+ ;;=J84.17^^56^654^19
+ ;;^UTILITY(U,$J,358.3,12406,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12406,1,3,0)
+ ;;=3^Interstitial Pulmonary Disease w/ Fibrosis NEC
+ ;;^UTILITY(U,$J,358.3,12406,1,4,0)
+ ;;=4^J84.17
+ ;;^UTILITY(U,$J,358.3,12406,2)
+ ;;=^5008301
+ ;;^UTILITY(U,$J,358.3,12407,0)
+ ;;=J98.4^^56^654^20
+ ;;^UTILITY(U,$J,358.3,12407,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12407,1,3,0)
+ ;;=3^Lung Disorders NEC
+ ;;^UTILITY(U,$J,358.3,12407,1,4,0)
+ ;;=4^J98.4
+ ;;^UTILITY(U,$J,358.3,12407,2)
+ ;;=^5008362
+ ;;^UTILITY(U,$J,358.3,12408,0)
+ ;;=G47.30^^56^654^26
+ ;;^UTILITY(U,$J,358.3,12408,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12408,1,3,0)
+ ;;=3^Sleep Apnea,Unspec
+ ;;^UTILITY(U,$J,358.3,12408,1,4,0)
+ ;;=4^G47.30
+ ;;^UTILITY(U,$J,358.3,12408,2)
+ ;;=^5003977
+ ;;^UTILITY(U,$J,358.3,12409,0)
+ ;;=R06.02^^56^654^25
+ ;;^UTILITY(U,$J,358.3,12409,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12409,1,3,0)
+ ;;=3^Shortness of Breath
+ ;;^UTILITY(U,$J,358.3,12409,1,4,0)
+ ;;=4^R06.02
+ ;;^UTILITY(U,$J,358.3,12409,2)
+ ;;=^5019181
+ ;;^UTILITY(U,$J,358.3,12410,0)
+ ;;=R06.83^^56^654^27
+ ;;^UTILITY(U,$J,358.3,12410,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12410,1,3,0)
+ ;;=3^Snoring
+ ;;^UTILITY(U,$J,358.3,12410,1,4,0)
+ ;;=4^R06.83
+ ;;^UTILITY(U,$J,358.3,12410,2)
+ ;;=^5019192
+ ;;^UTILITY(U,$J,358.3,12411,0)
+ ;;=R06.00^^56^654^18
+ ;;^UTILITY(U,$J,358.3,12411,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12411,1,3,0)
+ ;;=3^Dyspnea,Unspec
+ ;;^UTILITY(U,$J,358.3,12411,1,4,0)
+ ;;=4^R06.00
+ ;;^UTILITY(U,$J,358.3,12411,2)
+ ;;=^5019180
+ ;;^UTILITY(U,$J,358.3,12412,0)
+ ;;=R06.09^^56^654^17
+ ;;^UTILITY(U,$J,358.3,12412,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12412,1,3,0)
+ ;;=3^Dyspnea NEC
+ ;;^UTILITY(U,$J,358.3,12412,1,4,0)
+ ;;=4^R06.09
+ ;;^UTILITY(U,$J,358.3,12412,2)
+ ;;=^5019182
+ ;;^UTILITY(U,$J,358.3,12413,0)
+ ;;=R06.89^^56^654^14
+ ;;^UTILITY(U,$J,358.3,12413,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12413,1,3,0)
+ ;;=3^Breathing Abnormalities NEC
+ ;;^UTILITY(U,$J,358.3,12413,1,4,0)
+ ;;=4^R06.89
+ ;;^UTILITY(U,$J,358.3,12413,2)
+ ;;=^5019193
+ ;;^UTILITY(U,$J,358.3,12414,0)
+ ;;=R22.2^^56^654^29
+ ;;^UTILITY(U,$J,358.3,12414,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12414,1,3,0)
+ ;;=3^Swelling/Mass/Lump,Trunk,Localized
+ ;;^UTILITY(U,$J,358.3,12414,1,4,0)
+ ;;=4^R22.2
+ ;;^UTILITY(U,$J,358.3,12414,2)
+ ;;=^5019286
+ ;;^UTILITY(U,$J,358.3,12415,0)
+ ;;=R91.8^^56^654^1
+ ;;^UTILITY(U,$J,358.3,12415,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12415,1,3,0)
+ ;;=3^Abnormal Finding of Lung Field
+ ;;^UTILITY(U,$J,358.3,12415,1,4,0)
+ ;;=4^R91.8
+ ;;^UTILITY(U,$J,358.3,12415,2)
+ ;;=^5019708
+ ;;^UTILITY(U,$J,358.3,12416,0)
+ ;;=R91.1^^56^654^28
+ ;;^UTILITY(U,$J,358.3,12416,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12416,1,3,0)
+ ;;=3^Solitary Pulmonary Nodule
+ ;;^UTILITY(U,$J,358.3,12416,1,4,0)
+ ;;=4^R91.1
+ ;;^UTILITY(U,$J,358.3,12416,2)
+ ;;=^5019707
+ ;;^UTILITY(U,$J,358.3,12417,0)
+ ;;=L98.9^^56^655^1
+ ;;^UTILITY(U,$J,358.3,12417,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12417,1,3,0)
+ ;;=3^Skin/Subcutaneous Tissue Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,12417,1,4,0)
+ ;;=4^L98.9
+ ;;^UTILITY(U,$J,358.3,12417,2)
+ ;;=^5009595

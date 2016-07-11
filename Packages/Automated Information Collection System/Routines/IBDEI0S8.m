@@ -1,130 +1,272 @@
-IBDEI0S8 ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0S8 ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,12989,0)
- ;;=H10.022^^80^753^119
- ;;^UTILITY(U,$J,358.3,12989,1,0)
+ ;;^UTILITY(U,$J,358.3,28377,2)
+ ;;=^5001015
+ ;;^UTILITY(U,$J,358.3,28378,0)
+ ;;=D03.9^^105^1380^29
+ ;;^UTILITY(U,$J,358.3,28378,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12989,1,3,0)
- ;;=3^Mucopurulent Conjunctivitis,Left Eye NEC
- ;;^UTILITY(U,$J,358.3,12989,1,4,0)
- ;;=4^H10.022
- ;;^UTILITY(U,$J,358.3,12989,2)
- ;;=^5004661
- ;;^UTILITY(U,$J,358.3,12990,0)
- ;;=H10.11^^80^753^11
- ;;^UTILITY(U,$J,358.3,12990,1,0)
+ ;;^UTILITY(U,$J,358.3,28378,1,3,0)
+ ;;=3^Melanoma in situ, unspecified
+ ;;^UTILITY(U,$J,358.3,28378,1,4,0)
+ ;;=4^D03.9
+ ;;^UTILITY(U,$J,358.3,28378,2)
+ ;;=^5001908
+ ;;^UTILITY(U,$J,358.3,28379,0)
+ ;;=C44.01^^105^1380^5
+ ;;^UTILITY(U,$J,358.3,28379,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12990,1,3,0)
- ;;=3^Atopic Conjuntivitis,Right Eye,Acute
- ;;^UTILITY(U,$J,358.3,12990,1,4,0)
- ;;=4^H10.11
- ;;^UTILITY(U,$J,358.3,12990,2)
- ;;=^5004665
- ;;^UTILITY(U,$J,358.3,12991,0)
- ;;=H10.12^^80^753^10
- ;;^UTILITY(U,$J,358.3,12991,1,0)
+ ;;^UTILITY(U,$J,358.3,28379,1,3,0)
+ ;;=3^Basal cell carcinoma of skin of lip
+ ;;^UTILITY(U,$J,358.3,28379,1,4,0)
+ ;;=4^C44.01
+ ;;^UTILITY(U,$J,358.3,28379,2)
+ ;;=^340464
+ ;;^UTILITY(U,$J,358.3,28380,0)
+ ;;=C44.02^^105^1380^35
+ ;;^UTILITY(U,$J,358.3,28380,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12991,1,3,0)
- ;;=3^Atopic Conjuntivitis,Left Eye,Acute
- ;;^UTILITY(U,$J,358.3,12991,1,4,0)
- ;;=4^H10.12
- ;;^UTILITY(U,$J,358.3,12991,2)
- ;;=^5004666
- ;;^UTILITY(U,$J,358.3,12992,0)
- ;;=H10.13^^80^753^9
- ;;^UTILITY(U,$J,358.3,12992,1,0)
+ ;;^UTILITY(U,$J,358.3,28380,1,3,0)
+ ;;=3^Squamous cell carcinoma of skin of lip
+ ;;^UTILITY(U,$J,358.3,28380,1,4,0)
+ ;;=4^C44.02
+ ;;^UTILITY(U,$J,358.3,28380,2)
+ ;;=^340465
+ ;;^UTILITY(U,$J,358.3,28381,0)
+ ;;=C44.310^^105^1380^11
+ ;;^UTILITY(U,$J,358.3,28381,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12992,1,3,0)
- ;;=3^Atopic Conjuntivitis,Bilateral,Acute
- ;;^UTILITY(U,$J,358.3,12992,1,4,0)
- ;;=4^H10.13
- ;;^UTILITY(U,$J,358.3,12992,2)
- ;;=^5004667
- ;;^UTILITY(U,$J,358.3,12993,0)
- ;;=H10.211^^80^753^159
- ;;^UTILITY(U,$J,358.3,12993,1,0)
+ ;;^UTILITY(U,$J,358.3,28381,1,3,0)
+ ;;=3^Basal cell carcinoma of skin of unspecified parts of face
+ ;;^UTILITY(U,$J,358.3,28381,1,4,0)
+ ;;=4^C44.310
+ ;;^UTILITY(U,$J,358.3,28381,2)
+ ;;=^5001043
+ ;;^UTILITY(U,$J,358.3,28382,0)
+ ;;=C44.311^^105^1380^6
+ ;;^UTILITY(U,$J,358.3,28382,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12993,1,3,0)
- ;;=3^Toxic Conjunctivitis,Right Eye,Acute
- ;;^UTILITY(U,$J,358.3,12993,1,4,0)
- ;;=4^H10.211
- ;;^UTILITY(U,$J,358.3,12993,2)
- ;;=^5004668
- ;;^UTILITY(U,$J,358.3,12994,0)
- ;;=H10.212^^80^753^158
- ;;^UTILITY(U,$J,358.3,12994,1,0)
+ ;;^UTILITY(U,$J,358.3,28382,1,3,0)
+ ;;=3^Basal cell carcinoma of skin of nose
+ ;;^UTILITY(U,$J,358.3,28382,1,4,0)
+ ;;=4^C44.311
+ ;;^UTILITY(U,$J,358.3,28382,2)
+ ;;=^5001044
+ ;;^UTILITY(U,$J,358.3,28383,0)
+ ;;=C44.319^^105^1380^7
+ ;;^UTILITY(U,$J,358.3,28383,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12994,1,3,0)
- ;;=3^Toxic Conjunctivitis,Left Eye,Acute
- ;;^UTILITY(U,$J,358.3,12994,1,4,0)
- ;;=4^H10.212
- ;;^UTILITY(U,$J,358.3,12994,2)
- ;;=^5004669
- ;;^UTILITY(U,$J,358.3,12995,0)
- ;;=H10.401^^80^753^46
- ;;^UTILITY(U,$J,358.3,12995,1,0)
+ ;;^UTILITY(U,$J,358.3,28383,1,3,0)
+ ;;=3^Basal cell carcinoma of skin of other parts of face
+ ;;^UTILITY(U,$J,358.3,28383,1,4,0)
+ ;;=4^C44.319
+ ;;^UTILITY(U,$J,358.3,28383,2)
+ ;;=^5001045
+ ;;^UTILITY(U,$J,358.3,28384,0)
+ ;;=C44.320^^105^1380^42
+ ;;^UTILITY(U,$J,358.3,28384,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12995,1,3,0)
- ;;=3^Conjunctivitis,Right Eye,Chronic
- ;;^UTILITY(U,$J,358.3,12995,1,4,0)
- ;;=4^H10.401
- ;;^UTILITY(U,$J,358.3,12995,2)
- ;;=^5004681
- ;;^UTILITY(U,$J,358.3,12996,0)
- ;;=H10.402^^80^753^45
- ;;^UTILITY(U,$J,358.3,12996,1,0)
+ ;;^UTILITY(U,$J,358.3,28384,1,3,0)
+ ;;=3^Squamous cell carcinoma of skin of unspecified parts of face
+ ;;^UTILITY(U,$J,358.3,28384,1,4,0)
+ ;;=4^C44.320
+ ;;^UTILITY(U,$J,358.3,28384,2)
+ ;;=^5001046
+ ;;^UTILITY(U,$J,358.3,28385,0)
+ ;;=C44.321^^105^1380^36
+ ;;^UTILITY(U,$J,358.3,28385,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12996,1,3,0)
- ;;=3^Conjunctivitis,Left Eye,Chronic
- ;;^UTILITY(U,$J,358.3,12996,1,4,0)
- ;;=4^H10.402
- ;;^UTILITY(U,$J,358.3,12996,2)
- ;;=^5004682
- ;;^UTILITY(U,$J,358.3,12997,0)
- ;;=H10.411^^80^753^79
- ;;^UTILITY(U,$J,358.3,12997,1,0)
+ ;;^UTILITY(U,$J,358.3,28385,1,3,0)
+ ;;=3^Squamous cell carcinoma of skin of nose
+ ;;^UTILITY(U,$J,358.3,28385,1,4,0)
+ ;;=4^C44.321
+ ;;^UTILITY(U,$J,358.3,28385,2)
+ ;;=^5001047
+ ;;^UTILITY(U,$J,358.3,28386,0)
+ ;;=C44.329^^105^1380^37
+ ;;^UTILITY(U,$J,358.3,28386,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12997,1,3,0)
- ;;=3^Giant Papillary Conjunctivitis,Right Eye,Chronic
- ;;^UTILITY(U,$J,358.3,12997,1,4,0)
- ;;=4^H10.411
- ;;^UTILITY(U,$J,358.3,12997,2)
- ;;=^5004684
- ;;^UTILITY(U,$J,358.3,12998,0)
- ;;=H10.412^^80^753^78
- ;;^UTILITY(U,$J,358.3,12998,1,0)
+ ;;^UTILITY(U,$J,358.3,28386,1,3,0)
+ ;;=3^Squamous cell carcinoma of skin of other parts of face
+ ;;^UTILITY(U,$J,358.3,28386,1,4,0)
+ ;;=4^C44.329
+ ;;^UTILITY(U,$J,358.3,28386,2)
+ ;;=^5001048
+ ;;^UTILITY(U,$J,358.3,28387,0)
+ ;;=C44.41^^105^1380^10
+ ;;^UTILITY(U,$J,358.3,28387,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12998,1,3,0)
- ;;=3^Giant Papillary Conjunctivitis,Left Eye,Chronic
- ;;^UTILITY(U,$J,358.3,12998,1,4,0)
- ;;=4^H10.412
- ;;^UTILITY(U,$J,358.3,12998,2)
- ;;=^5004685
- ;;^UTILITY(U,$J,358.3,12999,0)
- ;;=H10.45^^80^753^1
- ;;^UTILITY(U,$J,358.3,12999,1,0)
+ ;;^UTILITY(U,$J,358.3,28387,1,3,0)
+ ;;=3^Basal cell carcinoma of skin of scalp and neck
+ ;;^UTILITY(U,$J,358.3,28387,1,4,0)
+ ;;=4^C44.41
+ ;;^UTILITY(U,$J,358.3,28387,2)
+ ;;=^340476
+ ;;^UTILITY(U,$J,358.3,28388,0)
+ ;;=C44.42^^105^1380^41
+ ;;^UTILITY(U,$J,358.3,28388,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12999,1,3,0)
- ;;=3^Allergic Conjunctivitis,Chronic NEC
- ;;^UTILITY(U,$J,358.3,12999,1,4,0)
- ;;=4^H10.45
- ;;^UTILITY(U,$J,358.3,12999,2)
- ;;=^87396
- ;;^UTILITY(U,$J,358.3,13000,0)
- ;;=H10.501^^80^753^21
- ;;^UTILITY(U,$J,358.3,13000,1,0)
+ ;;^UTILITY(U,$J,358.3,28388,1,3,0)
+ ;;=3^Squamous cell carcinoma of skin of scalp and neck
+ ;;^UTILITY(U,$J,358.3,28388,1,4,0)
+ ;;=4^C44.42
+ ;;^UTILITY(U,$J,358.3,28388,2)
+ ;;=^340477
+ ;;^UTILITY(U,$J,358.3,28389,0)
+ ;;=C44.510^^105^1380^1
+ ;;^UTILITY(U,$J,358.3,28389,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13000,1,3,0)
- ;;=3^Blepharoconjunctivitis,Right Eye,Unspec
- ;;^UTILITY(U,$J,358.3,13000,1,4,0)
- ;;=4^H10.501
- ;;^UTILITY(U,$J,358.3,13000,2)
- ;;=^5004697
- ;;^UTILITY(U,$J,358.3,13001,0)
- ;;=H10.502^^80^753^20
- ;;^UTILITY(U,$J,358.3,13001,1,0)
+ ;;^UTILITY(U,$J,358.3,28389,1,3,0)
+ ;;=3^Basal cell carcinoma of anal skin
+ ;;^UTILITY(U,$J,358.3,28389,1,4,0)
+ ;;=4^C44.510
+ ;;^UTILITY(U,$J,358.3,28389,2)
+ ;;=^5001054
+ ;;^UTILITY(U,$J,358.3,28390,0)
+ ;;=C44.511^^105^1380^2
+ ;;^UTILITY(U,$J,358.3,28390,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13001,1,3,0)
- ;;=3^Blepharoconjunctivitis,Left Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,28390,1,3,0)
+ ;;=3^Basal cell carcinoma of skin of breast
+ ;;^UTILITY(U,$J,358.3,28390,1,4,0)
+ ;;=4^C44.511
+ ;;^UTILITY(U,$J,358.3,28390,2)
+ ;;=^5001055
+ ;;^UTILITY(U,$J,358.3,28391,0)
+ ;;=C44.519^^105^1380^8
+ ;;^UTILITY(U,$J,358.3,28391,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28391,1,3,0)
+ ;;=3^Basal cell carcinoma of skin of other part of trunk
+ ;;^UTILITY(U,$J,358.3,28391,1,4,0)
+ ;;=4^C44.519
+ ;;^UTILITY(U,$J,358.3,28391,2)
+ ;;=^5001056
+ ;;^UTILITY(U,$J,358.3,28392,0)
+ ;;=C44.520^^105^1380^31
+ ;;^UTILITY(U,$J,358.3,28392,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28392,1,3,0)
+ ;;=3^Squamous cell carcinoma of anal skin
+ ;;^UTILITY(U,$J,358.3,28392,1,4,0)
+ ;;=4^C44.520
+ ;;^UTILITY(U,$J,358.3,28392,2)
+ ;;=^5001057
+ ;;^UTILITY(U,$J,358.3,28393,0)
+ ;;=C44.521^^105^1380^32
+ ;;^UTILITY(U,$J,358.3,28393,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28393,1,3,0)
+ ;;=3^Squamous cell carcinoma of skin of breast
+ ;;^UTILITY(U,$J,358.3,28393,1,4,0)
+ ;;=4^C44.521
+ ;;^UTILITY(U,$J,358.3,28393,2)
+ ;;=^5001058
+ ;;^UTILITY(U,$J,358.3,28394,0)
+ ;;=C44.529^^105^1380^38
+ ;;^UTILITY(U,$J,358.3,28394,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28394,1,3,0)
+ ;;=3^Squamous cell carcinoma of skin of other part of trunk
+ ;;^UTILITY(U,$J,358.3,28394,1,4,0)
+ ;;=4^C44.529
+ ;;^UTILITY(U,$J,358.3,28394,2)
+ ;;=^5001059
+ ;;^UTILITY(U,$J,358.3,28395,0)
+ ;;=C46.9^^105^1380^13
+ ;;^UTILITY(U,$J,358.3,28395,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28395,1,3,0)
+ ;;=3^Kaposi's sarcoma, unspecified
+ ;;^UTILITY(U,$J,358.3,28395,1,4,0)
+ ;;=4^C46.9
+ ;;^UTILITY(U,$J,358.3,28395,2)
+ ;;=^5001108
+ ;;^UTILITY(U,$J,358.3,28396,0)
+ ;;=C71.9^^105^1380^17
+ ;;^UTILITY(U,$J,358.3,28396,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28396,1,3,0)
+ ;;=3^Malignant neoplasm of brain, unspecified
+ ;;^UTILITY(U,$J,358.3,28396,1,4,0)
+ ;;=4^C71.9
+ ;;^UTILITY(U,$J,358.3,28396,2)
+ ;;=^5001297
+ ;;^UTILITY(U,$J,358.3,28397,0)
+ ;;=C72.1^^105^1380^18
+ ;;^UTILITY(U,$J,358.3,28397,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28397,1,3,0)
+ ;;=3^Malignant neoplasm of cauda equina
+ ;;^UTILITY(U,$J,358.3,28397,1,4,0)
+ ;;=4^C72.1
+ ;;^UTILITY(U,$J,358.3,28397,2)
+ ;;=^5001298
+ ;;^UTILITY(U,$J,358.3,28398,0)
+ ;;=C72.0^^105^1380^26
+ ;;^UTILITY(U,$J,358.3,28398,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28398,1,3,0)
+ ;;=3^Malignant neoplasm of spinal cord
+ ;;^UTILITY(U,$J,358.3,28398,1,4,0)
+ ;;=4^C72.0
+ ;;^UTILITY(U,$J,358.3,28398,2)
+ ;;=^267292
+ ;;^UTILITY(U,$J,358.3,28399,0)
+ ;;=C74.01^^105^1380^21
+ ;;^UTILITY(U,$J,358.3,28399,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28399,1,3,0)
+ ;;=3^Malignant neoplasm of cortex of right adrenal gland
+ ;;^UTILITY(U,$J,358.3,28399,1,4,0)
+ ;;=4^C74.01
+ ;;^UTILITY(U,$J,358.3,28399,2)
+ ;;=^5001312
+ ;;^UTILITY(U,$J,358.3,28400,0)
+ ;;=C74.02^^105^1380^20
+ ;;^UTILITY(U,$J,358.3,28400,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28400,1,3,0)
+ ;;=3^Malignant neoplasm of cortex of left adrenal gland
+ ;;^UTILITY(U,$J,358.3,28400,1,4,0)
+ ;;=4^C74.02
+ ;;^UTILITY(U,$J,358.3,28400,2)
+ ;;=^5001313
+ ;;^UTILITY(U,$J,358.3,28401,0)
+ ;;=C74.11^^105^1380^23
+ ;;^UTILITY(U,$J,358.3,28401,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28401,1,3,0)
+ ;;=3^Malignant neoplasm of medulla of right adrenal gland
+ ;;^UTILITY(U,$J,358.3,28401,1,4,0)
+ ;;=4^C74.11
+ ;;^UTILITY(U,$J,358.3,28401,2)
+ ;;=^5001315
+ ;;^UTILITY(U,$J,358.3,28402,0)
+ ;;=C74.12^^105^1380^22
+ ;;^UTILITY(U,$J,358.3,28402,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28402,1,3,0)
+ ;;=3^Malignant neoplasm of medulla of left adrenal gland
+ ;;^UTILITY(U,$J,358.3,28402,1,4,0)
+ ;;=4^C74.12
+ ;;^UTILITY(U,$J,358.3,28402,2)
+ ;;=^5001316
+ ;;^UTILITY(U,$J,358.3,28403,0)
+ ;;=C74.91^^105^1380^28
+ ;;^UTILITY(U,$J,358.3,28403,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28403,1,3,0)
+ ;;=3^Malignant neoplasm of unsp part of right adrenal gland
+ ;;^UTILITY(U,$J,358.3,28403,1,4,0)
+ ;;=4^C74.91
+ ;;^UTILITY(U,$J,358.3,28403,2)
+ ;;=^5001318
+ ;;^UTILITY(U,$J,358.3,28404,0)
+ ;;=C74.92^^105^1380^27
+ ;;^UTILITY(U,$J,358.3,28404,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28404,1,3,0)
+ ;;=3^Malignant neoplasm of unsp part of left adrenal gland

@@ -1,134 +1,274 @@
-IBDEI0NB ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0NB ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10652,2)
- ;;=^5003941
- ;;^UTILITY(U,$J,358.3,10653,0)
- ;;=G44.209^^68^672^8
- ;;^UTILITY(U,$J,358.3,10653,1,0)
+ ;;^UTILITY(U,$J,358.3,23504,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10653,1,3,0)
- ;;=3^Tension-Type Headache,Unspec,Not Intractable
- ;;^UTILITY(U,$J,358.3,10653,1,4,0)
- ;;=4^G44.209
- ;;^UTILITY(U,$J,358.3,10653,2)
- ;;=^5003936
- ;;^UTILITY(U,$J,358.3,10654,0)
- ;;=I50.32^^68^673^5
- ;;^UTILITY(U,$J,358.3,10654,1,0)
+ ;;^UTILITY(U,$J,358.3,23504,1,3,0)
+ ;;=3^Fall from/through Window,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23504,1,4,0)
+ ;;=4^W13.4XXA
+ ;;^UTILITY(U,$J,358.3,23504,2)
+ ;;=^5059613
+ ;;^UTILITY(U,$J,358.3,23505,0)
+ ;;=W13.4XXD^^89^1065^72
+ ;;^UTILITY(U,$J,358.3,23505,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10654,1,3,0)
- ;;=3^Diastolic Heart Failure,Chronic
- ;;^UTILITY(U,$J,358.3,10654,1,4,0)
- ;;=4^I50.32
- ;;^UTILITY(U,$J,358.3,10654,2)
- ;;=^5007245
- ;;^UTILITY(U,$J,358.3,10655,0)
- ;;=I50.33^^68^673^4
- ;;^UTILITY(U,$J,358.3,10655,1,0)
+ ;;^UTILITY(U,$J,358.3,23505,1,3,0)
+ ;;=3^Fall from/through Window,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23505,1,4,0)
+ ;;=4^W13.4XXD
+ ;;^UTILITY(U,$J,358.3,23505,2)
+ ;;=^5059614
+ ;;^UTILITY(U,$J,358.3,23506,0)
+ ;;=W13.8XXA^^89^1065^35
+ ;;^UTILITY(U,$J,358.3,23506,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10655,1,3,0)
- ;;=3^Diastolic Heart Failure,Acute on Chronic
- ;;^UTILITY(U,$J,358.3,10655,1,4,0)
- ;;=4^I50.33
- ;;^UTILITY(U,$J,358.3,10655,2)
- ;;=^5007246
- ;;^UTILITY(U,$J,358.3,10656,0)
- ;;=I50.40^^68^673^9
- ;;^UTILITY(U,$J,358.3,10656,1,0)
+ ;;^UTILITY(U,$J,358.3,23506,1,3,0)
+ ;;=3^Fall from Building/Structure,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23506,1,4,0)
+ ;;=4^W13.8XXA
+ ;;^UTILITY(U,$J,358.3,23506,2)
+ ;;=^5059616
+ ;;^UTILITY(U,$J,358.3,23507,0)
+ ;;=W13.8XXD^^89^1065^36
+ ;;^UTILITY(U,$J,358.3,23507,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10656,1,3,0)
- ;;=3^Systolic & Diastolic Congestive Heart Failure,Combined Unspec
- ;;^UTILITY(U,$J,358.3,10656,1,4,0)
- ;;=4^I50.40
- ;;^UTILITY(U,$J,358.3,10656,2)
- ;;=^5007247
- ;;^UTILITY(U,$J,358.3,10657,0)
- ;;=I51.7^^68^673^2
- ;;^UTILITY(U,$J,358.3,10657,1,0)
+ ;;^UTILITY(U,$J,358.3,23507,1,3,0)
+ ;;=3^Fall from Building/Structure,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23507,1,4,0)
+ ;;=4^W13.8XXD
+ ;;^UTILITY(U,$J,358.3,23507,2)
+ ;;=^5059617
+ ;;^UTILITY(U,$J,358.3,23508,0)
+ ;;=W13.9XXA^^89^1065^33
+ ;;^UTILITY(U,$J,358.3,23508,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10657,1,3,0)
- ;;=3^Cardiomegaly
- ;;^UTILITY(U,$J,358.3,10657,1,4,0)
- ;;=4^I51.7
- ;;^UTILITY(U,$J,358.3,10657,2)
- ;;=^5007257
- ;;^UTILITY(U,$J,358.3,10658,0)
- ;;=I42.6^^68^673^1
- ;;^UTILITY(U,$J,358.3,10658,1,0)
+ ;;^UTILITY(U,$J,358.3,23508,1,3,0)
+ ;;=3^Fall from Building NOS,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23508,1,4,0)
+ ;;=4^W13.9XXA
+ ;;^UTILITY(U,$J,358.3,23508,2)
+ ;;=^5059619
+ ;;^UTILITY(U,$J,358.3,23509,0)
+ ;;=W13.9XXD^^89^1065^34
+ ;;^UTILITY(U,$J,358.3,23509,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10658,1,3,0)
- ;;=3^Alcoholic Cardiomyopathy
- ;;^UTILITY(U,$J,358.3,10658,1,4,0)
- ;;=4^I42.6
- ;;^UTILITY(U,$J,358.3,10658,2)
- ;;=^5007197
- ;;^UTILITY(U,$J,358.3,10659,0)
- ;;=I50.1^^68^673^8
- ;;^UTILITY(U,$J,358.3,10659,1,0)
+ ;;^UTILITY(U,$J,358.3,23509,1,3,0)
+ ;;=3^Fall from Building NOS,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23509,1,4,0)
+ ;;=4^W13.9XXD
+ ;;^UTILITY(U,$J,358.3,23509,2)
+ ;;=^5059620
+ ;;^UTILITY(U,$J,358.3,23510,0)
+ ;;=W14.XXXA^^89^1065^65
+ ;;^UTILITY(U,$J,358.3,23510,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10659,1,3,0)
- ;;=3^Left Ventricular Failure
- ;;^UTILITY(U,$J,358.3,10659,1,4,0)
- ;;=4^I50.1
- ;;^UTILITY(U,$J,358.3,10659,2)
- ;;=^5007238
- ;;^UTILITY(U,$J,358.3,10660,0)
- ;;=I50.20^^68^673^13
- ;;^UTILITY(U,$J,358.3,10660,1,0)
+ ;;^UTILITY(U,$J,358.3,23510,1,3,0)
+ ;;=3^Fall from Tree,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23510,1,4,0)
+ ;;=4^W14.XXXA
+ ;;^UTILITY(U,$J,358.3,23510,2)
+ ;;=^5059622
+ ;;^UTILITY(U,$J,358.3,23511,0)
+ ;;=W14.XXXD^^89^1065^66
+ ;;^UTILITY(U,$J,358.3,23511,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10660,1,3,0)
- ;;=3^Systolic Heart Failure,Unspec
- ;;^UTILITY(U,$J,358.3,10660,1,4,0)
- ;;=4^I50.20
- ;;^UTILITY(U,$J,358.3,10660,2)
- ;;=^5007239
- ;;^UTILITY(U,$J,358.3,10661,0)
- ;;=I50.21^^68^673^10
- ;;^UTILITY(U,$J,358.3,10661,1,0)
+ ;;^UTILITY(U,$J,358.3,23511,1,3,0)
+ ;;=3^Fall from Tree,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23511,1,4,0)
+ ;;=4^W14.XXXD
+ ;;^UTILITY(U,$J,358.3,23511,2)
+ ;;=^5059623
+ ;;^UTILITY(U,$J,358.3,23512,0)
+ ;;=W17.2XXA^^89^1065^77
+ ;;^UTILITY(U,$J,358.3,23512,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10661,1,3,0)
- ;;=3^Systolic Heart Failure,Acute
- ;;^UTILITY(U,$J,358.3,10661,1,4,0)
- ;;=4^I50.21
- ;;^UTILITY(U,$J,358.3,10661,2)
- ;;=^5007240
- ;;^UTILITY(U,$J,358.3,10662,0)
- ;;=I50.22^^68^673^12
- ;;^UTILITY(U,$J,358.3,10662,1,0)
+ ;;^UTILITY(U,$J,358.3,23512,1,3,0)
+ ;;=3^Fall into Hole,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23512,1,4,0)
+ ;;=4^W17.2XXA
+ ;;^UTILITY(U,$J,358.3,23512,2)
+ ;;=^5059772
+ ;;^UTILITY(U,$J,358.3,23513,0)
+ ;;=W17.2XXD^^89^1065^78
+ ;;^UTILITY(U,$J,358.3,23513,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10662,1,3,0)
- ;;=3^Systolic Heart Failure,Chronic
- ;;^UTILITY(U,$J,358.3,10662,1,4,0)
- ;;=4^I50.22
- ;;^UTILITY(U,$J,358.3,10662,2)
- ;;=^5007241
- ;;^UTILITY(U,$J,358.3,10663,0)
- ;;=I50.23^^68^673^11
- ;;^UTILITY(U,$J,358.3,10663,1,0)
+ ;;^UTILITY(U,$J,358.3,23513,1,3,0)
+ ;;=3^Fall into Hole,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23513,1,4,0)
+ ;;=4^W17.2XXD
+ ;;^UTILITY(U,$J,358.3,23513,2)
+ ;;=^5059773
+ ;;^UTILITY(U,$J,358.3,23514,0)
+ ;;=W17.3XXA^^89^1065^75
+ ;;^UTILITY(U,$J,358.3,23514,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10663,1,3,0)
- ;;=3^Systolic Heart Failure,Acute on Chronic
- ;;^UTILITY(U,$J,358.3,10663,1,4,0)
- ;;=4^I50.23
- ;;^UTILITY(U,$J,358.3,10663,2)
- ;;=^5007242
- ;;^UTILITY(U,$J,358.3,10664,0)
- ;;=I50.30^^68^673^6
- ;;^UTILITY(U,$J,358.3,10664,1,0)
+ ;;^UTILITY(U,$J,358.3,23514,1,3,0)
+ ;;=3^Fall into Empty Swimming Pool,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23514,1,4,0)
+ ;;=4^W17.3XXA
+ ;;^UTILITY(U,$J,358.3,23514,2)
+ ;;=^5059775
+ ;;^UTILITY(U,$J,358.3,23515,0)
+ ;;=W17.3XXD^^89^1065^76
+ ;;^UTILITY(U,$J,358.3,23515,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10664,1,3,0)
- ;;=3^Diastolic Heart Failure,Unspec
- ;;^UTILITY(U,$J,358.3,10664,1,4,0)
- ;;=4^I50.30
- ;;^UTILITY(U,$J,358.3,10664,2)
- ;;=^5007243
- ;;^UTILITY(U,$J,358.3,10665,0)
- ;;=I50.9^^68^673^7
- ;;^UTILITY(U,$J,358.3,10665,1,0)
+ ;;^UTILITY(U,$J,358.3,23515,1,3,0)
+ ;;=3^Fall into Empty Swimming Pool,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23515,1,4,0)
+ ;;=4^W17.3XXD
+ ;;^UTILITY(U,$J,358.3,23515,2)
+ ;;=^5059776
+ ;;^UTILITY(U,$J,358.3,23516,0)
+ ;;=W17.4XXA^^89^1065^39
+ ;;^UTILITY(U,$J,358.3,23516,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10665,1,3,0)
- ;;=3^Heart Failure,Unspec (CHF Unspec)
- ;;^UTILITY(U,$J,358.3,10665,1,4,0)
- ;;=4^I50.9
+ ;;^UTILITY(U,$J,358.3,23516,1,3,0)
+ ;;=3^Fall from Dock,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23516,1,4,0)
+ ;;=4^W17.4XXA
+ ;;^UTILITY(U,$J,358.3,23516,2)
+ ;;=^5059778
+ ;;^UTILITY(U,$J,358.3,23517,0)
+ ;;=W17.4XXD^^89^1065^40
+ ;;^UTILITY(U,$J,358.3,23517,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23517,1,3,0)
+ ;;=3^Fall from Dock,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23517,1,4,0)
+ ;;=4^W17.4XXD
+ ;;^UTILITY(U,$J,358.3,23517,2)
+ ;;=^5059779
+ ;;^UTILITY(U,$J,358.3,23518,0)
+ ;;=W17.81XA^^89^1065^27
+ ;;^UTILITY(U,$J,358.3,23518,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23518,1,3,0)
+ ;;=3^Fall down Embankment,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23518,1,4,0)
+ ;;=4^W17.81XA
+ ;;^UTILITY(U,$J,358.3,23518,2)
+ ;;=^5059781
+ ;;^UTILITY(U,$J,358.3,23519,0)
+ ;;=W17.81XD^^89^1065^28
+ ;;^UTILITY(U,$J,358.3,23519,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23519,1,3,0)
+ ;;=3^Fall down Embankment,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23519,1,4,0)
+ ;;=4^W17.81XD
+ ;;^UTILITY(U,$J,358.3,23519,2)
+ ;;=^5059782
+ ;;^UTILITY(U,$J,358.3,23520,0)
+ ;;=W17.89XA^^89^1065^55
+ ;;^UTILITY(U,$J,358.3,23520,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23520,1,3,0)
+ ;;=3^Fall from One level to Another,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23520,1,4,0)
+ ;;=4^W17.89XA
+ ;;^UTILITY(U,$J,358.3,23520,2)
+ ;;=^5059787
+ ;;^UTILITY(U,$J,358.3,23521,0)
+ ;;=W17.89XD^^89^1065^56
+ ;;^UTILITY(U,$J,358.3,23521,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23521,1,3,0)
+ ;;=3^Fall from One level to Another,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23521,1,4,0)
+ ;;=4^W17.89XD
+ ;;^UTILITY(U,$J,358.3,23521,2)
+ ;;=^5059788
+ ;;^UTILITY(U,$J,358.3,23522,0)
+ ;;=W18.11XA^^89^1065^63
+ ;;^UTILITY(U,$J,358.3,23522,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23522,1,3,0)
+ ;;=3^Fall from Toilet w/o Strike Against Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23522,1,4,0)
+ ;;=4^W18.11XA
+ ;;^UTILITY(U,$J,358.3,23522,2)
+ ;;=^5059801
+ ;;^UTILITY(U,$J,358.3,23523,0)
+ ;;=W18.11XD^^89^1065^64
+ ;;^UTILITY(U,$J,358.3,23523,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23523,1,3,0)
+ ;;=3^Fall from Toilet w/o Strike Against Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23523,1,4,0)
+ ;;=4^W18.11XD
+ ;;^UTILITY(U,$J,358.3,23523,2)
+ ;;=^5059802
+ ;;^UTILITY(U,$J,358.3,23524,0)
+ ;;=W18.12XA^^89^1065^61
+ ;;^UTILITY(U,$J,358.3,23524,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23524,1,3,0)
+ ;;=3^Fall from Toilet w/ Strike Against Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23524,1,4,0)
+ ;;=4^W18.12XA
+ ;;^UTILITY(U,$J,358.3,23524,2)
+ ;;=^5059804
+ ;;^UTILITY(U,$J,358.3,23525,0)
+ ;;=W18.12XD^^89^1065^62
+ ;;^UTILITY(U,$J,358.3,23525,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23525,1,3,0)
+ ;;=3^Fall from Toilet w/ Strike Against Obj,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23525,1,4,0)
+ ;;=4^W18.12XD
+ ;;^UTILITY(U,$J,358.3,23525,2)
+ ;;=^5137984
+ ;;^UTILITY(U,$J,358.3,23526,0)
+ ;;=W18.2XXA^^89^1065^73
+ ;;^UTILITY(U,$J,358.3,23526,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23526,1,3,0)
+ ;;=3^Fall in Empty Shower/Bathtub,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23526,1,4,0)
+ ;;=4^W18.2XXA
+ ;;^UTILITY(U,$J,358.3,23526,2)
+ ;;=^5059806
+ ;;^UTILITY(U,$J,358.3,23527,0)
+ ;;=W18.2XXD^^89^1065^74
+ ;;^UTILITY(U,$J,358.3,23527,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23527,1,3,0)
+ ;;=3^Fall in Empty Shower/Bathtub,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23527,1,4,0)
+ ;;=4^W18.2XXD
+ ;;^UTILITY(U,$J,358.3,23527,2)
+ ;;=^5059807
+ ;;^UTILITY(U,$J,358.3,23528,0)
+ ;;=W18.40XA^^89^1065^105
+ ;;^UTILITY(U,$J,358.3,23528,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23528,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23528,1,4,0)
+ ;;=4^W18.40XA
+ ;;^UTILITY(U,$J,358.3,23528,2)
+ ;;=^5059818
+ ;;^UTILITY(U,$J,358.3,23529,0)
+ ;;=W18.40XD^^89^1065^106
+ ;;^UTILITY(U,$J,358.3,23529,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23529,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,23529,1,4,0)
+ ;;=4^W18.40XD
+ ;;^UTILITY(U,$J,358.3,23529,2)
+ ;;=^5059819
+ ;;^UTILITY(U,$J,358.3,23530,0)
+ ;;=W18.41XA^^89^1065^107
+ ;;^UTILITY(U,$J,358.3,23530,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,23530,1,3,0)
+ ;;=3^Slipping/Tripping/Stumbling w/o Falling d/t Stepping on Obj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,23530,1,4,0)
+ ;;=4^W18.41XA
+ ;;^UTILITY(U,$J,358.3,23530,2)
+ ;;=^5059821
+ ;;^UTILITY(U,$J,358.3,23531,0)
+ ;;=W18.41XD^^89^1065^108

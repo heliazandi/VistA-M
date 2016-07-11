@@ -1,128 +1,298 @@
-IBDEI0HU ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0HU ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7992,1,4,0)
- ;;=4^E11.349
- ;;^UTILITY(U,$J,358.3,7992,2)
- ;;=^5002639
- ;;^UTILITY(U,$J,358.3,7993,0)
- ;;=E10.321^^55^532^5
- ;;^UTILITY(U,$J,358.3,7993,1,0)
+ ;;^UTILITY(U,$J,358.3,17942,1,4,0)
+ ;;=4^K61.1
+ ;;^UTILITY(U,$J,358.3,17942,2)
+ ;;=^259588
+ ;;^UTILITY(U,$J,358.3,17943,0)
+ ;;=N15.1^^81^946^9
+ ;;^UTILITY(U,$J,358.3,17943,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7993,1,3,0)
- ;;=3^Type 1 diab w mild nonprlf diabetic rtnop w macular edema
- ;;^UTILITY(U,$J,358.3,7993,1,4,0)
- ;;=4^E10.321
- ;;^UTILITY(U,$J,358.3,7993,2)
- ;;=^5002594
- ;;^UTILITY(U,$J,358.3,7994,0)
- ;;=E10.329^^55^532^6
- ;;^UTILITY(U,$J,358.3,7994,1,0)
+ ;;^UTILITY(U,$J,358.3,17943,1,3,0)
+ ;;=3^Abscess, perinephric and renal
+ ;;^UTILITY(U,$J,358.3,17943,1,4,0)
+ ;;=4^N15.1
+ ;;^UTILITY(U,$J,358.3,17943,2)
+ ;;=^270371
+ ;;^UTILITY(U,$J,358.3,17944,0)
+ ;;=G06.0^^81^946^6
+ ;;^UTILITY(U,$J,358.3,17944,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7994,1,3,0)
- ;;=3^Type 1 diab w mild nonprlf diabetic rtnop w/o macular edema
- ;;^UTILITY(U,$J,358.3,7994,1,4,0)
- ;;=4^E10.329
- ;;^UTILITY(U,$J,358.3,7994,2)
- ;;=^5002595
- ;;^UTILITY(U,$J,358.3,7995,0)
- ;;=E10.331^^55^532^7
- ;;^UTILITY(U,$J,358.3,7995,1,0)
+ ;;^UTILITY(U,$J,358.3,17944,1,3,0)
+ ;;=3^Abscess, intracranial with granuloma
+ ;;^UTILITY(U,$J,358.3,17944,1,4,0)
+ ;;=4^G06.0
+ ;;^UTILITY(U,$J,358.3,17944,2)
+ ;;=^5003745
+ ;;^UTILITY(U,$J,358.3,17945,0)
+ ;;=L02.91^^81^946^11
+ ;;^UTILITY(U,$J,358.3,17945,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7995,1,3,0)
- ;;=3^Type 1 diab w moderate nonprlf diab rtnop w macular edema
- ;;^UTILITY(U,$J,358.3,7995,1,4,0)
- ;;=4^E10.331
- ;;^UTILITY(U,$J,358.3,7995,2)
- ;;=^5002596
- ;;^UTILITY(U,$J,358.3,7996,0)
- ;;=E10.339^^55^532^8
- ;;^UTILITY(U,$J,358.3,7996,1,0)
+ ;;^UTILITY(U,$J,358.3,17945,1,3,0)
+ ;;=3^Abscess, skin and soft tissue
+ ;;^UTILITY(U,$J,358.3,17945,1,4,0)
+ ;;=4^L02.91
+ ;;^UTILITY(U,$J,358.3,17945,2)
+ ;;=^5009016
+ ;;^UTILITY(U,$J,358.3,17946,0)
+ ;;=L02.818^^81^946^5
+ ;;^UTILITY(U,$J,358.3,17946,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7996,1,3,0)
- ;;=3^Type 1 diab w moderate nonprlf diab rtnop w/o macular edema
- ;;^UTILITY(U,$J,358.3,7996,1,4,0)
- ;;=4^E10.339
- ;;^UTILITY(U,$J,358.3,7996,2)
- ;;=^5002597
- ;;^UTILITY(U,$J,358.3,7997,0)
- ;;=E10.311^^55^532^11
- ;;^UTILITY(U,$J,358.3,7997,1,0)
+ ;;^UTILITY(U,$J,358.3,17946,1,3,0)
+ ;;=3^Abscess, cutaneous of other sites
+ ;;^UTILITY(U,$J,358.3,17946,1,4,0)
+ ;;=4^L02.818
+ ;;^UTILITY(U,$J,358.3,17946,2)
+ ;;=^5009011
+ ;;^UTILITY(U,$J,358.3,17947,0)
+ ;;=B20.^^81^946^14
+ ;;^UTILITY(U,$J,358.3,17947,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7997,1,3,0)
- ;;=3^Type 1 diab w unsp diabetic retinopathy w macular edema
- ;;^UTILITY(U,$J,358.3,7997,1,4,0)
- ;;=4^E10.311
- ;;^UTILITY(U,$J,358.3,7997,2)
- ;;=^5002592
- ;;^UTILITY(U,$J,358.3,7998,0)
- ;;=E10.319^^55^532^12
- ;;^UTILITY(U,$J,358.3,7998,1,0)
+ ;;^UTILITY(U,$J,358.3,17947,1,3,0)
+ ;;=3^Acquired Immunodeficiency Syndrome (AIDS)
+ ;;^UTILITY(U,$J,358.3,17947,1,4,0)
+ ;;=4^B20.
+ ;;^UTILITY(U,$J,358.3,17947,2)
+ ;;=^5000555
+ ;;^UTILITY(U,$J,358.3,17948,0)
+ ;;=B44.1^^81^946^20
+ ;;^UTILITY(U,$J,358.3,17948,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7998,1,3,0)
- ;;=3^Type 1 diab w unsp diabetic rtnop w/o macular edema
- ;;^UTILITY(U,$J,358.3,7998,1,4,0)
- ;;=4^E10.319
- ;;^UTILITY(U,$J,358.3,7998,2)
- ;;=^5002593
- ;;^UTILITY(U,$J,358.3,7999,0)
- ;;=E10.341^^55^532^10
- ;;^UTILITY(U,$J,358.3,7999,1,0)
+ ;;^UTILITY(U,$J,358.3,17948,1,3,0)
+ ;;=3^Aspergillosis,Pulmonary
+ ;;^UTILITY(U,$J,358.3,17948,1,4,0)
+ ;;=4^B44.1
+ ;;^UTILITY(U,$J,358.3,17948,2)
+ ;;=^5000664
+ ;;^UTILITY(U,$J,358.3,17949,0)
+ ;;=B44.89^^81^946^19
+ ;;^UTILITY(U,$J,358.3,17949,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7999,1,3,0)
- ;;=3^Type 1 diab w severe nonprlf diabetic rtnop w macular edema
- ;;^UTILITY(U,$J,358.3,7999,1,4,0)
- ;;=4^E10.341
- ;;^UTILITY(U,$J,358.3,7999,2)
- ;;=^5002598
- ;;^UTILITY(U,$J,358.3,8000,0)
- ;;=E10.349^^55^532^9
- ;;^UTILITY(U,$J,358.3,8000,1,0)
+ ;;^UTILITY(U,$J,358.3,17949,1,3,0)
+ ;;=3^Aspergillosis NEC
+ ;;^UTILITY(U,$J,358.3,17949,1,4,0)
+ ;;=4^B44.89
+ ;;^UTILITY(U,$J,358.3,17949,2)
+ ;;=^5000667
+ ;;^UTILITY(U,$J,358.3,17950,0)
+ ;;=R78.81^^81^946^23
+ ;;^UTILITY(U,$J,358.3,17950,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8000,1,3,0)
- ;;=3^Type 1 diab w severe nonprlf diab rtnop w/o macular edema
- ;;^UTILITY(U,$J,358.3,8000,1,4,0)
- ;;=4^E10.349
- ;;^UTILITY(U,$J,358.3,8000,2)
- ;;=^5002599
- ;;^UTILITY(U,$J,358.3,8001,0)
- ;;=E11.40^^55^532^14
- ;;^UTILITY(U,$J,358.3,8001,1,0)
+ ;;^UTILITY(U,$J,358.3,17950,1,3,0)
+ ;;=3^Bacteremia
+ ;;^UTILITY(U,$J,358.3,17950,1,4,0)
+ ;;=4^R78.81
+ ;;^UTILITY(U,$J,358.3,17950,2)
+ ;;=^12280
+ ;;^UTILITY(U,$J,358.3,17951,0)
+ ;;=T80.219A^^81^946^24
+ ;;^UTILITY(U,$J,358.3,17951,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8001,1,3,0)
- ;;=3^Type 2 diab w diabetic neuropathy, unsp
- ;;^UTILITY(U,$J,358.3,8001,1,4,0)
- ;;=4^E11.40
- ;;^UTILITY(U,$J,358.3,8001,2)
- ;;=^5002644
- ;;^UTILITY(U,$J,358.3,8002,0)
- ;;=E10.40^^55^532^2
- ;;^UTILITY(U,$J,358.3,8002,1,0)
+ ;;^UTILITY(U,$J,358.3,17951,1,3,0)
+ ;;=3^Bacteremia, associated w/ central venous cath, init encntr
+ ;;^UTILITY(U,$J,358.3,17951,1,4,0)
+ ;;=4^T80.219A
+ ;;^UTILITY(U,$J,358.3,17951,2)
+ ;;=^5054359
+ ;;^UTILITY(U,$J,358.3,17952,0)
+ ;;=B40.2^^81^946^26
+ ;;^UTILITY(U,$J,358.3,17952,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8002,1,3,0)
- ;;=3^Type 1 diab w diabetic neuropathy, unsp
- ;;^UTILITY(U,$J,358.3,8002,1,4,0)
- ;;=4^E10.40
- ;;^UTILITY(U,$J,358.3,8002,2)
- ;;=^5002604
- ;;^UTILITY(U,$J,358.3,8003,0)
- ;;=E11.51^^55^532^15
- ;;^UTILITY(U,$J,358.3,8003,1,0)
+ ;;^UTILITY(U,$J,358.3,17952,1,3,0)
+ ;;=3^Blastomycosis,Pulmonary
+ ;;^UTILITY(U,$J,358.3,17952,1,4,0)
+ ;;=4^B40.2
+ ;;^UTILITY(U,$J,358.3,17952,2)
+ ;;=^5000641
+ ;;^UTILITY(U,$J,358.3,17953,0)
+ ;;=B40.3^^81^946^27
+ ;;^UTILITY(U,$J,358.3,17953,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8003,1,3,0)
- ;;=3^Type 2 diab w diabetic peripheral angiopath w/o gangrene
- ;;^UTILITY(U,$J,358.3,8003,1,4,0)
- ;;=4^E11.51
- ;;^UTILITY(U,$J,358.3,8003,2)
- ;;=^5002650
- ;;^UTILITY(U,$J,358.3,8004,0)
- ;;=E11.52^^55^532^16
- ;;^UTILITY(U,$J,358.3,8004,1,0)
+ ;;^UTILITY(U,$J,358.3,17953,1,3,0)
+ ;;=3^Blastomycosis,Skin and soft tissue
+ ;;^UTILITY(U,$J,358.3,17953,1,4,0)
+ ;;=4^B40.3
+ ;;^UTILITY(U,$J,358.3,17953,2)
+ ;;=^5000642
+ ;;^UTILITY(U,$J,358.3,17954,0)
+ ;;=B40.89^^81^946^25
+ ;;^UTILITY(U,$J,358.3,17954,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8004,1,3,0)
- ;;=3^Type 2 diab w diabetic peripheral angiopathy w gangrene
- ;;^UTILITY(U,$J,358.3,8004,1,4,0)
- ;;=4^E11.52
- ;;^UTILITY(U,$J,358.3,8004,2)
- ;;=^5002651
+ ;;^UTILITY(U,$J,358.3,17954,1,3,0)
+ ;;=3^Blastomycosis NEC
+ ;;^UTILITY(U,$J,358.3,17954,1,4,0)
+ ;;=4^B40.89
+ ;;^UTILITY(U,$J,358.3,17954,2)
+ ;;=^5000645
+ ;;^UTILITY(U,$J,358.3,17955,0)
+ ;;=J20.9^^81^946^29
+ ;;^UTILITY(U,$J,358.3,17955,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17955,1,3,0)
+ ;;=3^Bronchitis, Acute
+ ;;^UTILITY(U,$J,358.3,17955,1,4,0)
+ ;;=4^J20.9
+ ;;^UTILITY(U,$J,358.3,17955,2)
+ ;;=^5008195
+ ;;^UTILITY(U,$J,358.3,17956,0)
+ ;;=B37.42^^81^946^31
+ ;;^UTILITY(U,$J,358.3,17956,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17956,1,3,0)
+ ;;=3^Candidal Balanitis
+ ;;^UTILITY(U,$J,358.3,17956,1,4,0)
+ ;;=4^B37.42
+ ;;^UTILITY(U,$J,358.3,17956,2)
+ ;;=^5000617
+ ;;^UTILITY(U,$J,358.3,17957,0)
+ ;;=B37.3^^81^946^38
+ ;;^UTILITY(U,$J,358.3,17957,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17957,1,3,0)
+ ;;=3^Candidiasis,Vulvovaginal
+ ;;^UTILITY(U,$J,358.3,17957,1,4,0)
+ ;;=4^B37.3
+ ;;^UTILITY(U,$J,358.3,17957,2)
+ ;;=^5000615
+ ;;^UTILITY(U,$J,358.3,17958,0)
+ ;;=B37.2^^81^946^35
+ ;;^UTILITY(U,$J,358.3,17958,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17958,1,3,0)
+ ;;=3^Candidiasis,Intertriginal
+ ;;^UTILITY(U,$J,358.3,17958,1,4,0)
+ ;;=4^B37.2
+ ;;^UTILITY(U,$J,358.3,17958,2)
+ ;;=^5000614
+ ;;^UTILITY(U,$J,358.3,17959,0)
+ ;;=B37.81^^81^946^34
+ ;;^UTILITY(U,$J,358.3,17959,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17959,1,3,0)
+ ;;=3^Candidiasis,Esophageal
+ ;;^UTILITY(U,$J,358.3,17959,1,4,0)
+ ;;=4^B37.81
+ ;;^UTILITY(U,$J,358.3,17959,2)
+ ;;=b377^5000620
+ ;;^UTILITY(U,$J,358.3,17960,0)
+ ;;=B37.7^^81^946^32
+ ;;^UTILITY(U,$J,358.3,17960,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17960,1,3,0)
+ ;;=3^Candidal Sepsis
+ ;;^UTILITY(U,$J,358.3,17960,1,4,0)
+ ;;=4^B37.7
+ ;;^UTILITY(U,$J,358.3,17960,2)
+ ;;=^5000619
+ ;;^UTILITY(U,$J,358.3,17961,0)
+ ;;=B37.0^^81^946^36
+ ;;^UTILITY(U,$J,358.3,17961,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17961,1,3,0)
+ ;;=3^Candidiasis,Oral
+ ;;^UTILITY(U,$J,358.3,17961,1,4,0)
+ ;;=4^B37.0
+ ;;^UTILITY(U,$J,358.3,17961,2)
+ ;;=^5000612
+ ;;^UTILITY(U,$J,358.3,17962,0)
+ ;;=B37.89^^81^946^33
+ ;;^UTILITY(U,$J,358.3,17962,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17962,1,3,0)
+ ;;=3^Candidiasis NEC
+ ;;^UTILITY(U,$J,358.3,17962,1,4,0)
+ ;;=4^B37.89
+ ;;^UTILITY(U,$J,358.3,17962,2)
+ ;;=^5000623
+ ;;^UTILITY(U,$J,358.3,17963,0)
+ ;;=L03.90^^81^946^39
+ ;;^UTILITY(U,$J,358.3,17963,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17963,1,3,0)
+ ;;=3^Cellulitis, unspecified
+ ;;^UTILITY(U,$J,358.3,17963,1,4,0)
+ ;;=4^L03.90
+ ;;^UTILITY(U,$J,358.3,17963,2)
+ ;;=^5009067
+ ;;^UTILITY(U,$J,358.3,17964,0)
+ ;;=N72.^^81^946^40
+ ;;^UTILITY(U,$J,358.3,17964,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17964,1,3,0)
+ ;;=3^Cervicitis
+ ;;^UTILITY(U,$J,358.3,17964,1,4,0)
+ ;;=4^N72.
+ ;;^UTILITY(U,$J,358.3,17964,2)
+ ;;=^5015812
+ ;;^UTILITY(U,$J,358.3,17965,0)
+ ;;=N81.9^^81^946^1
+ ;;^UTILITY(U,$J,358.3,17965,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17965,1,3,0)
+ ;;=3
+ ;;^UTILITY(U,$J,358.3,17965,1,4,0)
+ ;;=4^N81.9
+ ;;^UTILITY(U,$J,358.3,17965,2)
+ ;;=^5015845
+ ;;^UTILITY(U,$J,358.3,17966,0)
+ ;;=K81.0^^81^946^15
+ ;;^UTILITY(U,$J,358.3,17966,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17966,1,3,0)
+ ;;=3^Acute cholecystitis
+ ;;^UTILITY(U,$J,358.3,17966,1,4,0)
+ ;;=4^K81.0
+ ;;^UTILITY(U,$J,358.3,17966,2)
+ ;;=^259097
+ ;;^UTILITY(U,$J,358.3,17967,0)
+ ;;=A04.7^^81^946^42
+ ;;^UTILITY(U,$J,358.3,17967,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17967,1,3,0)
+ ;;=3^Clostridium difficile colitis
+ ;;^UTILITY(U,$J,358.3,17967,1,4,0)
+ ;;=4^A04.7
+ ;;^UTILITY(U,$J,358.3,17967,2)
+ ;;=^5000029
+ ;;^UTILITY(U,$J,358.3,17968,0)
+ ;;=B38.2^^81^946^45
+ ;;^UTILITY(U,$J,358.3,17968,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17968,1,3,0)
+ ;;=3^Coccidioides,Pulmonary
+ ;;^UTILITY(U,$J,358.3,17968,1,4,0)
+ ;;=4^B38.2
+ ;;^UTILITY(U,$J,358.3,17968,2)
+ ;;=^295703
+ ;;^UTILITY(U,$J,358.3,17969,0)
+ ;;=B38.4^^81^946^44
+ ;;^UTILITY(U,$J,358.3,17969,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17969,1,3,0)
+ ;;=3^Coccidioides,Meningitis/CNS
+ ;;^UTILITY(U,$J,358.3,17969,1,4,0)
+ ;;=4^B38.4
+ ;;^UTILITY(U,$J,358.3,17969,2)
+ ;;=^5000627
+ ;;^UTILITY(U,$J,358.3,17970,0)
+ ;;=B38.89^^81^946^43
+ ;;^UTILITY(U,$J,358.3,17970,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17970,1,3,0)
+ ;;=3^Coccidioides NEC
+ ;;^UTILITY(U,$J,358.3,17970,1,4,0)
+ ;;=4^B38.89
+ ;;^UTILITY(U,$J,358.3,17970,2)
+ ;;=^5000630
+ ;;^UTILITY(U,$J,358.3,17971,0)
+ ;;=H10.9^^81^946^47
+ ;;^UTILITY(U,$J,358.3,17971,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17971,1,3,0)
+ ;;=3^Conjunctivitis,Unspec
+ ;;^UTILITY(U,$J,358.3,17971,1,4,0)
+ ;;=4^H10.9
+ ;;^UTILITY(U,$J,358.3,17971,2)
+ ;;=^5004716

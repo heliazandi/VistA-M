@@ -1,134 +1,296 @@
-IBDEI08B ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI08B ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3331,1,4,0)
- ;;=4^E11.8
- ;;^UTILITY(U,$J,358.3,3331,2)
- ;;=^5002665
- ;;^UTILITY(U,$J,358.3,3332,0)
- ;;=E11.9^^28^252^29
- ;;^UTILITY(U,$J,358.3,3332,1,0)
+ ;;^UTILITY(U,$J,358.3,8253,2)
+ ;;=^5054153
+ ;;^UTILITY(U,$J,358.3,8254,0)
+ ;;=T74.21XS^^42^509^2
+ ;;^UTILITY(U,$J,358.3,8254,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3332,1,3,0)
- ;;=3^Diabetes Type 2 w/o Complications
- ;;^UTILITY(U,$J,358.3,3332,1,4,0)
- ;;=4^E11.9
- ;;^UTILITY(U,$J,358.3,3332,2)
- ;;=^5002666
- ;;^UTILITY(U,$J,358.3,3333,0)
- ;;=E11.36^^28^252^9
- ;;^UTILITY(U,$J,358.3,3333,1,0)
+ ;;^UTILITY(U,$J,358.3,8254,1,3,0)
+ ;;=3^Adult Sexual Abuse,Confirmed,Sequela
+ ;;^UTILITY(U,$J,358.3,8254,1,4,0)
+ ;;=4^T74.21XS
+ ;;^UTILITY(U,$J,358.3,8254,2)
+ ;;=^5054154
+ ;;^UTILITY(U,$J,358.3,8255,0)
+ ;;=T76.21XD^^42^509^6
+ ;;^UTILITY(U,$J,358.3,8255,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3333,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Cataract
- ;;^UTILITY(U,$J,358.3,3333,1,4,0)
- ;;=4^E11.36
- ;;^UTILITY(U,$J,358.3,3333,2)
- ;;=^5002642
- ;;^UTILITY(U,$J,358.3,3334,0)
- ;;=E11.22^^28^252^10
- ;;^UTILITY(U,$J,358.3,3334,1,0)
+ ;;^UTILITY(U,$J,358.3,8255,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Sub Encntr
+ ;;^UTILITY(U,$J,358.3,8255,1,4,0)
+ ;;=4^T76.21XD
+ ;;^UTILITY(U,$J,358.3,8255,2)
+ ;;=^5054228
+ ;;^UTILITY(U,$J,358.3,8256,0)
+ ;;=T76.21XS^^42^509^5
+ ;;^UTILITY(U,$J,358.3,8256,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3334,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Chronic Kidney Disease
- ;;^UTILITY(U,$J,358.3,3334,1,4,0)
- ;;=4^E11.22
- ;;^UTILITY(U,$J,358.3,3334,2)
- ;;=^5002630
- ;;^UTILITY(U,$J,358.3,3335,0)
- ;;=E11.29^^28^252^12
- ;;^UTILITY(U,$J,358.3,3335,1,0)
+ ;;^UTILITY(U,$J,358.3,8256,1,3,0)
+ ;;=3^Adult Sexual Abuse,Suspected,Sequela
+ ;;^UTILITY(U,$J,358.3,8256,1,4,0)
+ ;;=4^T76.21XS
+ ;;^UTILITY(U,$J,358.3,8256,2)
+ ;;=^5054229
+ ;;^UTILITY(U,$J,358.3,8257,0)
+ ;;=Y07.53^^42^509^7
+ ;;^UTILITY(U,$J,358.3,8257,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3335,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Kidney Complication
- ;;^UTILITY(U,$J,358.3,3335,1,4,0)
- ;;=4^E11.29
- ;;^UTILITY(U,$J,358.3,3335,2)
- ;;=^5002631
- ;;^UTILITY(U,$J,358.3,3336,0)
- ;;=E11.21^^28^252^13
- ;;^UTILITY(U,$J,358.3,3336,1,0)
+ ;;^UTILITY(U,$J,358.3,8257,1,3,0)
+ ;;=3^Instructor,Perpetrator of MST
+ ;;^UTILITY(U,$J,358.3,8257,1,4,0)
+ ;;=4^Y07.53
+ ;;^UTILITY(U,$J,358.3,8257,2)
+ ;;=^5061207
+ ;;^UTILITY(U,$J,358.3,8258,0)
+ ;;=Y07.59^^42^509^8
+ ;;^UTILITY(U,$J,358.3,8258,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3336,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Nephropathy
- ;;^UTILITY(U,$J,358.3,3336,1,4,0)
- ;;=4^E11.21
- ;;^UTILITY(U,$J,358.3,3336,2)
- ;;=^5002629
- ;;^UTILITY(U,$J,358.3,3337,0)
- ;;=E11.39^^28^252^16
- ;;^UTILITY(U,$J,358.3,3337,1,0)
+ ;;^UTILITY(U,$J,358.3,8258,1,3,0)
+ ;;=3^Non-Family Member,Perpetrator of MST/Abuse NEC
+ ;;^UTILITY(U,$J,358.3,8258,1,4,0)
+ ;;=4^Y07.59
+ ;;^UTILITY(U,$J,358.3,8258,2)
+ ;;=^5061208
+ ;;^UTILITY(U,$J,358.3,8259,0)
+ ;;=E66.01^^42^510^127
+ ;;^UTILITY(U,$J,358.3,8259,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3337,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Ophthalmic Complication
- ;;^UTILITY(U,$J,358.3,3337,1,4,0)
- ;;=4^E11.39
- ;;^UTILITY(U,$J,358.3,3337,2)
- ;;=^5002643
- ;;^UTILITY(U,$J,358.3,3338,0)
- ;;=E11.311^^28^252^20
- ;;^UTILITY(U,$J,358.3,3338,1,0)
+ ;;^UTILITY(U,$J,358.3,8259,1,3,0)
+ ;;=3^Morbid Obesity
+ ;;^UTILITY(U,$J,358.3,8259,1,4,0)
+ ;;=4^E66.01
+ ;;^UTILITY(U,$J,358.3,8259,2)
+ ;;=^5002826
+ ;;^UTILITY(U,$J,358.3,8260,0)
+ ;;=F18.10^^42^510^102
+ ;;^UTILITY(U,$J,358.3,8260,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3338,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,3338,1,4,0)
- ;;=4^E11.311
- ;;^UTILITY(U,$J,358.3,3338,2)
- ;;=^5002632
- ;;^UTILITY(U,$J,358.3,3339,0)
- ;;=E11.319^^28^252^19
- ;;^UTILITY(U,$J,358.3,3339,1,0)
+ ;;^UTILITY(U,$J,358.3,8260,1,3,0)
+ ;;=3^Inhalant Abuse,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,8260,1,4,0)
+ ;;=4^F18.10
+ ;;^UTILITY(U,$J,358.3,8260,2)
+ ;;=^5003380
+ ;;^UTILITY(U,$J,358.3,8261,0)
+ ;;=F55.0^^42^510^38
+ ;;^UTILITY(U,$J,358.3,8261,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3339,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Reinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,3339,1,4,0)
- ;;=4^E11.319
- ;;^UTILITY(U,$J,358.3,3339,2)
- ;;=^5002633
- ;;^UTILITY(U,$J,358.3,3340,0)
- ;;=Z72.4^^28^252^30
- ;;^UTILITY(U,$J,358.3,3340,1,0)
+ ;;^UTILITY(U,$J,358.3,8261,1,3,0)
+ ;;=3^Antacid Abuse
+ ;;^UTILITY(U,$J,358.3,8261,1,4,0)
+ ;;=4^F55.0
+ ;;^UTILITY(U,$J,358.3,8261,2)
+ ;;=^5003628
+ ;;^UTILITY(U,$J,358.3,8262,0)
+ ;;=F18.90^^42^510^103
+ ;;^UTILITY(U,$J,358.3,8262,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3340,1,3,0)
- ;;=3^Diet & Eating Habits,Inappropriate
- ;;^UTILITY(U,$J,358.3,3340,1,4,0)
- ;;=4^Z72.4
- ;;^UTILITY(U,$J,358.3,3340,2)
- ;;=^5063257
- ;;^UTILITY(U,$J,358.3,3341,0)
- ;;=R68.81^^28^252^31
- ;;^UTILITY(U,$J,358.3,3341,1,0)
+ ;;^UTILITY(U,$J,358.3,8262,1,3,0)
+ ;;=3^Inhalant Use Uncomplicated,Unspec
+ ;;^UTILITY(U,$J,358.3,8262,1,4,0)
+ ;;=4^F18.90
+ ;;^UTILITY(U,$J,358.3,8262,2)
+ ;;=^5003405
+ ;;^UTILITY(U,$J,358.3,8263,0)
+ ;;=F55.2^^42^510^109
+ ;;^UTILITY(U,$J,358.3,8263,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3341,1,3,0)
- ;;=3^Early Satiety
- ;;^UTILITY(U,$J,358.3,3341,1,4,0)
- ;;=4^R68.81
- ;;^UTILITY(U,$J,358.3,3341,2)
- ;;=^5019554
- ;;^UTILITY(U,$J,358.3,3342,0)
- ;;=E34.9^^28^252^32
- ;;^UTILITY(U,$J,358.3,3342,1,0)
+ ;;^UTILITY(U,$J,358.3,8263,1,3,0)
+ ;;=3^Laxative Abuse
+ ;;^UTILITY(U,$J,358.3,8263,1,4,0)
+ ;;=4^F55.2
+ ;;^UTILITY(U,$J,358.3,8263,2)
+ ;;=^5003630
+ ;;^UTILITY(U,$J,358.3,8264,0)
+ ;;=F55.1^^42^510^88
+ ;;^UTILITY(U,$J,358.3,8264,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3342,1,3,0)
- ;;=3^Endocrine Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,3342,1,4,0)
- ;;=4^E34.9
- ;;^UTILITY(U,$J,358.3,3342,2)
- ;;=^5002777
- ;;^UTILITY(U,$J,358.3,3343,0)
- ;;=R62.7^^28^252^33
- ;;^UTILITY(U,$J,358.3,3343,1,0)
+ ;;^UTILITY(U,$J,358.3,8264,1,3,0)
+ ;;=3^Herbal/Folk Remedy Abuse
+ ;;^UTILITY(U,$J,358.3,8264,1,4,0)
+ ;;=4^F55.1
+ ;;^UTILITY(U,$J,358.3,8264,2)
+ ;;=^5003629
+ ;;^UTILITY(U,$J,358.3,8265,0)
+ ;;=F55.8^^42^510^132
+ ;;^UTILITY(U,$J,358.3,8265,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3343,1,3,0)
- ;;=3^Failure to Thrive,Adult
- ;;^UTILITY(U,$J,358.3,3343,1,4,0)
- ;;=4^R62.7
- ;;^UTILITY(U,$J,358.3,3343,2)
- ;;=^322019
- ;;^UTILITY(U,$J,358.3,3344,0)
- ;;=R63.3^^28^252^34
- ;;^UTILITY(U,$J,358.3,3344,1,0)
+ ;;^UTILITY(U,$J,358.3,8265,1,3,0)
+ ;;=3^Non-Psychoactive Substance Abuse
+ ;;^UTILITY(U,$J,358.3,8265,1,4,0)
+ ;;=4^F55.8
+ ;;^UTILITY(U,$J,358.3,8265,2)
+ ;;=^5003633
+ ;;^UTILITY(U,$J,358.3,8266,0)
+ ;;=F55.4^^42^510^169
+ ;;^UTILITY(U,$J,358.3,8266,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3344,1,3,0)
- ;;=3^Feeding Difficulty
+ ;;^UTILITY(U,$J,358.3,8266,1,3,0)
+ ;;=3^Vitamin Abuse
+ ;;^UTILITY(U,$J,358.3,8266,1,4,0)
+ ;;=4^F55.4
+ ;;^UTILITY(U,$J,358.3,8266,2)
+ ;;=^5003632
+ ;;^UTILITY(U,$J,358.3,8267,0)
+ ;;=F55.3^^42^510^159
+ ;;^UTILITY(U,$J,358.3,8267,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8267,1,3,0)
+ ;;=3^Steroid/Hormone Abuse
+ ;;^UTILITY(U,$J,358.3,8267,1,4,0)
+ ;;=4^F55.3
+ ;;^UTILITY(U,$J,358.3,8267,2)
+ ;;=^5003631
+ ;;^UTILITY(U,$J,358.3,8268,0)
+ ;;=F51.09^^42^510^104
+ ;;^UTILITY(U,$J,358.3,8268,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8268,1,3,0)
+ ;;=3^Insomnia not d/t Substance/Known Physiol Condition
+ ;;^UTILITY(U,$J,358.3,8268,1,4,0)
+ ;;=4^F51.09
+ ;;^UTILITY(U,$J,358.3,8268,2)
+ ;;=^5003608
+ ;;^UTILITY(U,$J,358.3,8269,0)
+ ;;=H53.9^^42^510^167
+ ;;^UTILITY(U,$J,358.3,8269,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8269,1,3,0)
+ ;;=3^Visual Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,8269,1,4,0)
+ ;;=4^H53.9
+ ;;^UTILITY(U,$J,358.3,8269,2)
+ ;;=^124001
+ ;;^UTILITY(U,$J,358.3,8270,0)
+ ;;=I89.0^^42^510^120
+ ;;^UTILITY(U,$J,358.3,8270,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8270,1,3,0)
+ ;;=3^Lymphedema NEC
+ ;;^UTILITY(U,$J,358.3,8270,1,4,0)
+ ;;=4^I89.0
+ ;;^UTILITY(U,$J,358.3,8270,2)
+ ;;=^5008073
+ ;;^UTILITY(U,$J,358.3,8271,0)
+ ;;=I87.1^^42^510^166
+ ;;^UTILITY(U,$J,358.3,8271,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8271,1,3,0)
+ ;;=3^Vein Compression
+ ;;^UTILITY(U,$J,358.3,8271,1,4,0)
+ ;;=4^I87.1
+ ;;^UTILITY(U,$J,358.3,8271,2)
+ ;;=^269850
+ ;;^UTILITY(U,$J,358.3,8272,0)
+ ;;=K08.8^^42^510^64
+ ;;^UTILITY(U,$J,358.3,8272,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8272,1,3,0)
+ ;;=3^Disorder of Teeth/Supporting Structures,Oth Specified
+ ;;^UTILITY(U,$J,358.3,8272,1,4,0)
+ ;;=4^K08.8
+ ;;^UTILITY(U,$J,358.3,8272,2)
+ ;;=^5008467
+ ;;^UTILITY(U,$J,358.3,8273,0)
+ ;;=N39.3^^42^510^160
+ ;;^UTILITY(U,$J,358.3,8273,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8273,1,3,0)
+ ;;=3^Stress Incontinence (Female/Male)
+ ;;^UTILITY(U,$J,358.3,8273,1,4,0)
+ ;;=4^N39.3
+ ;;^UTILITY(U,$J,358.3,8273,2)
+ ;;=^5015679
+ ;;^UTILITY(U,$J,358.3,8274,0)
+ ;;=R26.2^^42^510^62
+ ;;^UTILITY(U,$J,358.3,8274,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8274,1,3,0)
+ ;;=3^Difficulty in Walking NEC
+ ;;^UTILITY(U,$J,358.3,8274,1,4,0)
+ ;;=4^R26.2
+ ;;^UTILITY(U,$J,358.3,8274,2)
+ ;;=^5019306
+ ;;^UTILITY(U,$J,358.3,8275,0)
+ ;;=M54.6^^42^510^162
+ ;;^UTILITY(U,$J,358.3,8275,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8275,1,3,0)
+ ;;=3^Thoracic Spine Pain
+ ;;^UTILITY(U,$J,358.3,8275,1,4,0)
+ ;;=4^M54.6
+ ;;^UTILITY(U,$J,358.3,8275,2)
+ ;;=^272507
+ ;;^UTILITY(U,$J,358.3,8276,0)
+ ;;=E66.8^^42^510^133
+ ;;^UTILITY(U,$J,358.3,8276,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8276,1,3,0)
+ ;;=3^Obesity NEC
+ ;;^UTILITY(U,$J,358.3,8276,1,4,0)
+ ;;=4^E66.8
+ ;;^UTILITY(U,$J,358.3,8276,2)
+ ;;=^5002831
+ ;;^UTILITY(U,$J,358.3,8277,0)
+ ;;=E66.9^^42^510^134
+ ;;^UTILITY(U,$J,358.3,8277,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8277,1,3,0)
+ ;;=3^Obesity,Unspec
+ ;;^UTILITY(U,$J,358.3,8277,1,4,0)
+ ;;=4^E66.9
+ ;;^UTILITY(U,$J,358.3,8277,2)
+ ;;=^5002832
+ ;;^UTILITY(U,$J,358.3,8278,0)
+ ;;=F18.120^^42^510^101
+ ;;^UTILITY(U,$J,358.3,8278,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8278,1,3,0)
+ ;;=3^Inhalant Abuse w/ Intoxication,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,8278,1,4,0)
+ ;;=4^F18.120
+ ;;^UTILITY(U,$J,358.3,8278,2)
+ ;;=^5003381
+ ;;^UTILITY(U,$J,358.3,8279,0)
+ ;;=G44.1^^42^510^165
+ ;;^UTILITY(U,$J,358.3,8279,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8279,1,3,0)
+ ;;=3^Vascular Headache NEC
+ ;;^UTILITY(U,$J,358.3,8279,1,4,0)
+ ;;=4^G44.1
+ ;;^UTILITY(U,$J,358.3,8279,2)
+ ;;=^5003934
+ ;;^UTILITY(U,$J,358.3,8280,0)
+ ;;=G93.3^^42^510^152
+ ;;^UTILITY(U,$J,358.3,8280,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8280,1,3,0)
+ ;;=3^Postviral Fatigue Syndrome
+ ;;^UTILITY(U,$J,358.3,8280,1,4,0)
+ ;;=4^G93.3
+ ;;^UTILITY(U,$J,358.3,8280,2)
+ ;;=^5004181
+ ;;^UTILITY(U,$J,358.3,8281,0)
+ ;;=K08.101^^42^510^53
+ ;;^UTILITY(U,$J,358.3,8281,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8281,1,3,0)
+ ;;=3^Complete Loss of Teeth,Unspec,Class I
+ ;;^UTILITY(U,$J,358.3,8281,1,4,0)
+ ;;=4^K08.101
+ ;;^UTILITY(U,$J,358.3,8281,2)
+ ;;=^5008406
+ ;;^UTILITY(U,$J,358.3,8282,0)
+ ;;=K08.102^^42^510^54
+ ;;^UTILITY(U,$J,358.3,8282,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8282,1,3,0)
+ ;;=3^Complete Loss of Teeth,Unspec,Class II
+ ;;^UTILITY(U,$J,358.3,8282,1,4,0)
+ ;;=4^K08.102
+ ;;^UTILITY(U,$J,358.3,8282,2)
+ ;;=^5008407

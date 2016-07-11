@@ -1,126 +1,272 @@
-IBDEI0SP ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0SP ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,13201,2)
- ;;=^5005859
- ;;^UTILITY(U,$J,358.3,13202,0)
- ;;=H40.33X0^^80^754^128
- ;;^UTILITY(U,$J,358.3,13202,1,0)
+ ;;^UTILITY(U,$J,358.3,28865,0)
+ ;;=H25.093^^108^1401^6
+ ;;^UTILITY(U,$J,358.3,28865,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13202,1,3,0)
- ;;=3^Traumatic Glaucoma,Bilateral,Unspec Stage
- ;;^UTILITY(U,$J,358.3,13202,1,4,0)
- ;;=4^H40.33X0
- ;;^UTILITY(U,$J,358.3,13202,2)
- ;;=^5005860
- ;;^UTILITY(U,$J,358.3,13203,0)
- ;;=H40.33X1^^80^754^125
- ;;^UTILITY(U,$J,358.3,13203,1,0)
+ ;;^UTILITY(U,$J,358.3,28865,1,3,0)
+ ;;=3^Incipient Cataract,Other Age-Related,Bilateral
+ ;;^UTILITY(U,$J,358.3,28865,1,4,0)
+ ;;=4^H25.093
+ ;;^UTILITY(U,$J,358.3,28865,2)
+ ;;=^5005281
+ ;;^UTILITY(U,$J,358.3,28866,0)
+ ;;=H25.041^^108^1401^10
+ ;;^UTILITY(U,$J,358.3,28866,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13203,1,3,0)
- ;;=3^Traumatic Glaucoma,Bilateral,Mild Stage
- ;;^UTILITY(U,$J,358.3,13203,1,4,0)
- ;;=4^H40.33X1
- ;;^UTILITY(U,$J,358.3,13203,2)
- ;;=^5005861
- ;;^UTILITY(U,$J,358.3,13204,0)
- ;;=H40.33X2^^80^754^126
- ;;^UTILITY(U,$J,358.3,13204,1,0)
+ ;;^UTILITY(U,$J,358.3,28866,1,3,0)
+ ;;=3^Posterior Subcapsular Polar Age-Related Cataract,Right Eye
+ ;;^UTILITY(U,$J,358.3,28866,1,4,0)
+ ;;=4^H25.041
+ ;;^UTILITY(U,$J,358.3,28866,2)
+ ;;=^5005275
+ ;;^UTILITY(U,$J,358.3,28867,0)
+ ;;=H25.042^^108^1401^11
+ ;;^UTILITY(U,$J,358.3,28867,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13204,1,3,0)
- ;;=3^Traumatic Glaucoma,Bilateral,Moderate Stage
- ;;^UTILITY(U,$J,358.3,13204,1,4,0)
- ;;=4^H40.33X2
- ;;^UTILITY(U,$J,358.3,13204,2)
- ;;=^5005862
- ;;^UTILITY(U,$J,358.3,13205,0)
- ;;=H40.33X3^^80^754^127
- ;;^UTILITY(U,$J,358.3,13205,1,0)
+ ;;^UTILITY(U,$J,358.3,28867,1,3,0)
+ ;;=3^Posterior Subcapsular Polar Age-Related Cataract,Left Eye
+ ;;^UTILITY(U,$J,358.3,28867,1,4,0)
+ ;;=4^H25.042
+ ;;^UTILITY(U,$J,358.3,28867,2)
+ ;;=^5005276
+ ;;^UTILITY(U,$J,358.3,28868,0)
+ ;;=H25.043^^108^1401^12
+ ;;^UTILITY(U,$J,358.3,28868,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13205,1,3,0)
- ;;=3^Traumatic Glaucoma,Bilateral,Severe Stage
- ;;^UTILITY(U,$J,358.3,13205,1,4,0)
- ;;=4^H40.33X3
- ;;^UTILITY(U,$J,358.3,13205,2)
- ;;=^5005863
- ;;^UTILITY(U,$J,358.3,13206,0)
- ;;=H40.33X4^^80^754^124
- ;;^UTILITY(U,$J,358.3,13206,1,0)
+ ;;^UTILITY(U,$J,358.3,28868,1,3,0)
+ ;;=3^Posterior Subcapsular Polar Age-Related Cataract,Bilateral
+ ;;^UTILITY(U,$J,358.3,28868,1,4,0)
+ ;;=4^H25.043
+ ;;^UTILITY(U,$J,358.3,28868,2)
+ ;;=^5005277
+ ;;^UTILITY(U,$J,358.3,28869,0)
+ ;;=H25.011^^108^1401^1
+ ;;^UTILITY(U,$J,358.3,28869,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13206,1,3,0)
- ;;=3^Traumatic Glaucoma,Bilateral,Indeterminate Stage
- ;;^UTILITY(U,$J,358.3,13206,1,4,0)
- ;;=4^H40.33X4
- ;;^UTILITY(U,$J,358.3,13206,2)
- ;;=^5005864
- ;;^UTILITY(U,$J,358.3,13207,0)
- ;;=H21.233^^80^754^26
- ;;^UTILITY(U,$J,358.3,13207,1,0)
+ ;;^UTILITY(U,$J,358.3,28869,1,3,0)
+ ;;=3^Cortical Age-Related Cataract,Right Eye
+ ;;^UTILITY(U,$J,358.3,28869,1,4,0)
+ ;;=4^H25.011
+ ;;^UTILITY(U,$J,358.3,28869,2)
+ ;;=^5005267
+ ;;^UTILITY(U,$J,358.3,28870,0)
+ ;;=H25.012^^108^1401^2
+ ;;^UTILITY(U,$J,358.3,28870,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13207,1,3,0)
- ;;=3^Degeneration of Iris,Bilateral
- ;;^UTILITY(U,$J,358.3,13207,1,4,0)
- ;;=4^H21.233
- ;;^UTILITY(U,$J,358.3,13207,2)
- ;;=^5005189
- ;;^UTILITY(U,$J,358.3,13208,0)
- ;;=H40.61X1^^80^754^40
- ;;^UTILITY(U,$J,358.3,13208,1,0)
+ ;;^UTILITY(U,$J,358.3,28870,1,3,0)
+ ;;=3^Cortical Age-Related Cataract,Left Eye
+ ;;^UTILITY(U,$J,358.3,28870,1,4,0)
+ ;;=4^H25.012
+ ;;^UTILITY(U,$J,358.3,28870,2)
+ ;;=^5005268
+ ;;^UTILITY(U,$J,358.3,28871,0)
+ ;;=H25.013^^108^1401^3
+ ;;^UTILITY(U,$J,358.3,28871,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13208,1,3,0)
- ;;=3^Drug-Induced Glaucoma,Right Eye,Mild Stage
- ;;^UTILITY(U,$J,358.3,13208,1,4,0)
- ;;=4^H40.61X1
- ;;^UTILITY(U,$J,358.3,13208,2)
- ;;=^5005907
- ;;^UTILITY(U,$J,358.3,13209,0)
- ;;=H40.013^^80^754^59
- ;;^UTILITY(U,$J,358.3,13209,1,0)
+ ;;^UTILITY(U,$J,358.3,28871,1,3,0)
+ ;;=3^Cortical Age-Related Cataract,Bilateral
+ ;;^UTILITY(U,$J,358.3,28871,1,4,0)
+ ;;=4^H25.013
+ ;;^UTILITY(U,$J,358.3,28871,2)
+ ;;=^5005269
+ ;;^UTILITY(U,$J,358.3,28872,0)
+ ;;=H25.13^^108^1401^9
+ ;;^UTILITY(U,$J,358.3,28872,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13209,1,3,0)
- ;;=3^Glaucoma Suspect/Open Angle w/ Borderline Findings,Low Risk,Bilateral
- ;;^UTILITY(U,$J,358.3,13209,1,4,0)
- ;;=4^H40.013
- ;;^UTILITY(U,$J,358.3,13209,2)
- ;;=^5005726
- ;;^UTILITY(U,$J,358.3,13210,0)
- ;;=H40.012^^80^754^60
- ;;^UTILITY(U,$J,358.3,13210,1,0)
+ ;;^UTILITY(U,$J,358.3,28872,1,3,0)
+ ;;=3^Nuclear Age-Related Cataract,Bilateral
+ ;;^UTILITY(U,$J,358.3,28872,1,4,0)
+ ;;=4^H25.13
+ ;;^UTILITY(U,$J,358.3,28872,2)
+ ;;=^5005286
+ ;;^UTILITY(U,$J,358.3,28873,0)
+ ;;=H25.12^^108^1401^8
+ ;;^UTILITY(U,$J,358.3,28873,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13210,1,3,0)
- ;;=3^Glaucoma Suspect/Open Angle w/ Borderline Findings,Low Risk,Left Eye
- ;;^UTILITY(U,$J,358.3,13210,1,4,0)
- ;;=4^H40.012
- ;;^UTILITY(U,$J,358.3,13210,2)
- ;;=^5005725
- ;;^UTILITY(U,$J,358.3,13211,0)
- ;;=H40.011^^80^754^61
- ;;^UTILITY(U,$J,358.3,13211,1,0)
+ ;;^UTILITY(U,$J,358.3,28873,1,3,0)
+ ;;=3^Nuclear Age-Related Cataract,Left Eye
+ ;;^UTILITY(U,$J,358.3,28873,1,4,0)
+ ;;=4^H25.12
+ ;;^UTILITY(U,$J,358.3,28873,2)
+ ;;=^5005285
+ ;;^UTILITY(U,$J,358.3,28874,0)
+ ;;=H25.11^^108^1401^7
+ ;;^UTILITY(U,$J,358.3,28874,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13211,1,3,0)
- ;;=3^Glaucoma Suspect/Open Angle w/ Borderline Findings,Low Risk,Right Eye
- ;;^UTILITY(U,$J,358.3,13211,1,4,0)
- ;;=4^H40.011
- ;;^UTILITY(U,$J,358.3,13211,2)
- ;;=^5005724
- ;;^UTILITY(U,$J,358.3,13212,0)
- ;;=H40.023^^80^754^84
- ;;^UTILITY(U,$J,358.3,13212,1,0)
+ ;;^UTILITY(U,$J,358.3,28874,1,3,0)
+ ;;=3^Nuclear Age-Related Cataract,Right Eye
+ ;;^UTILITY(U,$J,358.3,28874,1,4,0)
+ ;;=4^H25.11
+ ;;^UTILITY(U,$J,358.3,28874,2)
+ ;;=^5005284
+ ;;^UTILITY(U,$J,358.3,28875,0)
+ ;;=H26.492^^108^1401^14
+ ;;^UTILITY(U,$J,358.3,28875,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13212,1,3,0)
- ;;=3^Open-Angle w/ Borderline Findings,Hi Risk,Bilateral
- ;;^UTILITY(U,$J,358.3,13212,1,4,0)
- ;;=4^H40.023
- ;;^UTILITY(U,$J,358.3,13212,2)
- ;;=^5005730
- ;;^UTILITY(U,$J,358.3,13213,0)
- ;;=H40.063^^80^754^108
- ;;^UTILITY(U,$J,358.3,13213,1,0)
+ ;;^UTILITY(U,$J,358.3,28875,1,3,0)
+ ;;=3^Secondary Cataract,Left Eye
+ ;;^UTILITY(U,$J,358.3,28875,1,4,0)
+ ;;=4^H26.492
+ ;;^UTILITY(U,$J,358.3,28875,2)
+ ;;=^5005359
+ ;;^UTILITY(U,$J,358.3,28876,0)
+ ;;=H26.491^^108^1401^13
+ ;;^UTILITY(U,$J,358.3,28876,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13213,1,3,0)
- ;;=3^Primary Angle-Closure w/o Glaucoma Damage,Bilateral
- ;;^UTILITY(U,$J,358.3,13213,1,4,0)
- ;;=4^H40.063
- ;;^UTILITY(U,$J,358.3,13213,2)
- ;;=^5005746
+ ;;^UTILITY(U,$J,358.3,28876,1,3,0)
+ ;;=3^Secondary Cataract,Right Eye
+ ;;^UTILITY(U,$J,358.3,28876,1,4,0)
+ ;;=4^H26.491
+ ;;^UTILITY(U,$J,358.3,28876,2)
+ ;;=^5005358
+ ;;^UTILITY(U,$J,358.3,28877,0)
+ ;;=H26.493^^108^1401^15
+ ;;^UTILITY(U,$J,358.3,28877,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28877,1,3,0)
+ ;;=3^Secondary Cataract,Bilateral
+ ;;^UTILITY(U,$J,358.3,28877,1,4,0)
+ ;;=4^H26.493
+ ;;^UTILITY(U,$J,358.3,28877,2)
+ ;;=^5005360
+ ;;^UTILITY(U,$J,358.3,28878,0)
+ ;;=H43.811^^108^1401^25
+ ;;^UTILITY(U,$J,358.3,28878,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28878,1,3,0)
+ ;;=3^Vit DEGENERATION of Vitreous,Right Eye
+ ;;^UTILITY(U,$J,358.3,28878,1,4,0)
+ ;;=4^H43.811
+ ;;^UTILITY(U,$J,358.3,28878,2)
+ ;;=^5005953
+ ;;^UTILITY(U,$J,358.3,28879,0)
+ ;;=H43.812^^108^1401^26
+ ;;^UTILITY(U,$J,358.3,28879,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28879,1,3,0)
+ ;;=3^Vit DEGENERATION of Vitreous,Left Eye
+ ;;^UTILITY(U,$J,358.3,28879,1,4,0)
+ ;;=4^H43.812
+ ;;^UTILITY(U,$J,358.3,28879,2)
+ ;;=^5005954
+ ;;^UTILITY(U,$J,358.3,28880,0)
+ ;;=H43.813^^108^1401^27
+ ;;^UTILITY(U,$J,358.3,28880,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28880,1,3,0)
+ ;;=3^Vit DEGENERATION of Vitreous,Bilateral
+ ;;^UTILITY(U,$J,358.3,28880,1,4,0)
+ ;;=4^H43.813
+ ;;^UTILITY(U,$J,358.3,28880,2)
+ ;;=^5005955
+ ;;^UTILITY(U,$J,358.3,28881,0)
+ ;;=H43.23^^108^1401^24
+ ;;^UTILITY(U,$J,358.3,28881,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28881,1,3,0)
+ ;;=3^Vit CRYSTALLINE Deposits in Vitreous Body,Bilateral
+ ;;^UTILITY(U,$J,358.3,28881,1,4,0)
+ ;;=4^H43.23
+ ;;^UTILITY(U,$J,358.3,28881,2)
+ ;;=^5005944
+ ;;^UTILITY(U,$J,358.3,28882,0)
+ ;;=H43.21^^108^1401^22
+ ;;^UTILITY(U,$J,358.3,28882,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28882,1,3,0)
+ ;;=3^Vit CRYSTALLINE Deposits in Vitreous Body,Right Eye
+ ;;^UTILITY(U,$J,358.3,28882,1,4,0)
+ ;;=4^H43.21
+ ;;^UTILITY(U,$J,358.3,28882,2)
+ ;;=^5005942
+ ;;^UTILITY(U,$J,358.3,28883,0)
+ ;;=H43.22^^108^1401^23
+ ;;^UTILITY(U,$J,358.3,28883,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28883,1,3,0)
+ ;;=3^Vit CRYSTALLINE Deposits in Vitreous Body,Left Eye
+ ;;^UTILITY(U,$J,358.3,28883,1,4,0)
+ ;;=4^H43.22
+ ;;^UTILITY(U,$J,358.3,28883,2)
+ ;;=^5005943
+ ;;^UTILITY(U,$J,358.3,28884,0)
+ ;;=H43.12^^108^1401^29
+ ;;^UTILITY(U,$J,358.3,28884,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28884,1,3,0)
+ ;;=3^Vit HEMORRHAGE,Vitreous,Left Eye
+ ;;^UTILITY(U,$J,358.3,28884,1,4,0)
+ ;;=4^H43.12
+ ;;^UTILITY(U,$J,358.3,28884,2)
+ ;;=^5005939
+ ;;^UTILITY(U,$J,358.3,28885,0)
+ ;;=H43.11^^108^1401^28
+ ;;^UTILITY(U,$J,358.3,28885,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28885,1,3,0)
+ ;;=3^Vit HEMORRHAGE,Vitreous,Right Eye
+ ;;^UTILITY(U,$J,358.3,28885,1,4,0)
+ ;;=4^H43.11
+ ;;^UTILITY(U,$J,358.3,28885,2)
+ ;;=^5005938
+ ;;^UTILITY(U,$J,358.3,28886,0)
+ ;;=H43.393^^108^1401^35
+ ;;^UTILITY(U,$J,358.3,28886,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28886,1,3,0)
+ ;;=3^Vit OPACITIES,Vitreous,Other,Bilateral
+ ;;^UTILITY(U,$J,358.3,28886,1,4,0)
+ ;;=4^H43.393
+ ;;^UTILITY(U,$J,358.3,28886,2)
+ ;;=^5005951
+ ;;^UTILITY(U,$J,358.3,28887,0)
+ ;;=H43.391^^108^1401^33
+ ;;^UTILITY(U,$J,358.3,28887,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28887,1,3,0)
+ ;;=3^Vit OPACITIES,Vitreous,Other,Right Eye
+ ;;^UTILITY(U,$J,358.3,28887,1,4,0)
+ ;;=4^H43.391
+ ;;^UTILITY(U,$J,358.3,28887,2)
+ ;;=Vit OPACITIES,Vitreous,Other,^5005949
+ ;;^UTILITY(U,$J,358.3,28888,0)
+ ;;=H43.392^^108^1401^34
+ ;;^UTILITY(U,$J,358.3,28888,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28888,1,3,0)
+ ;;=3^Vit OPACITIES,Vitreous,Other,Left Eye
+ ;;^UTILITY(U,$J,358.3,28888,1,4,0)
+ ;;=4^H43.392
+ ;;^UTILITY(U,$J,358.3,28888,2)
+ ;;=^5005950
+ ;;^UTILITY(U,$J,358.3,28889,0)
+ ;;=H43.311^^108^1401^30
+ ;;^UTILITY(U,$J,358.3,28889,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28889,1,3,0)
+ ;;=3^Vit MEMBRANES/STRANDS of Vitreous,Right Eye
+ ;;^UTILITY(U,$J,358.3,28889,1,4,0)
+ ;;=4^H43.311
+ ;;^UTILITY(U,$J,358.3,28889,2)
+ ;;=^5005945
+ ;;^UTILITY(U,$J,358.3,28890,0)
+ ;;=H43.312^^108^1401^31
+ ;;^UTILITY(U,$J,358.3,28890,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28890,1,3,0)
+ ;;=3^Vit MEMBRANES/STRANDS of Vitreous,Left Eye
+ ;;^UTILITY(U,$J,358.3,28890,1,4,0)
+ ;;=4^H43.312
+ ;;^UTILITY(U,$J,358.3,28890,2)
+ ;;=^5005946
+ ;;^UTILITY(U,$J,358.3,28891,0)
+ ;;=H43.313^^108^1401^32
+ ;;^UTILITY(U,$J,358.3,28891,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28891,1,3,0)
+ ;;=3^Vit MEMBRANES/STRANDS of Vitreous,Bilateral
+ ;;^UTILITY(U,$J,358.3,28891,1,4,0)
+ ;;=4^H43.313

@@ -1,134 +1,286 @@
-IBDEI0BY ; ; 19-NOV-2015
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0BY ; ; 12-MAY-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,5147,0)
- ;;=D22.72^^40^354^18
- ;;^UTILITY(U,$J,358.3,5147,1,0)
+ ;;^UTILITY(U,$J,358.3,11980,1,3,0)
+ ;;=3^Abnormal Uterine/Vaginal Bleeding NEC
+ ;;^UTILITY(U,$J,358.3,11980,1,4,0)
+ ;;=4^N93.8
+ ;;^UTILITY(U,$J,358.3,11980,2)
+ ;;=^5015915
+ ;;^UTILITY(U,$J,358.3,11981,0)
+ ;;=N94.4^^56^641^17
+ ;;^UTILITY(U,$J,358.3,11981,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5147,1,3,0)
- ;;=3^Melanocytic Nevi of Left Lower Limb
- ;;^UTILITY(U,$J,358.3,5147,1,4,0)
- ;;=4^D22.72
- ;;^UTILITY(U,$J,358.3,5147,2)
- ;;=^5002057
- ;;^UTILITY(U,$J,358.3,5148,0)
- ;;=D22.71^^40^354^23
- ;;^UTILITY(U,$J,358.3,5148,1,0)
+ ;;^UTILITY(U,$J,358.3,11981,1,3,0)
+ ;;=3^Primary Dysmenorrhea
+ ;;^UTILITY(U,$J,358.3,11981,1,4,0)
+ ;;=4^N94.4
+ ;;^UTILITY(U,$J,358.3,11981,2)
+ ;;=^5015920
+ ;;^UTILITY(U,$J,358.3,11982,0)
+ ;;=N94.5^^56^641^19
+ ;;^UTILITY(U,$J,358.3,11982,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5148,1,3,0)
- ;;=3^Melanocytic Nevi of Right Lower Limb
- ;;^UTILITY(U,$J,358.3,5148,1,4,0)
- ;;=4^D22.71
- ;;^UTILITY(U,$J,358.3,5148,2)
- ;;=^5002056
- ;;^UTILITY(U,$J,358.3,5149,0)
- ;;=D22.9^^40^354^27
- ;;^UTILITY(U,$J,358.3,5149,1,0)
+ ;;^UTILITY(U,$J,358.3,11982,1,3,0)
+ ;;=3^Secondary Dysmenorrhea
+ ;;^UTILITY(U,$J,358.3,11982,1,4,0)
+ ;;=4^N94.5
+ ;;^UTILITY(U,$J,358.3,11982,2)
+ ;;=^5015921
+ ;;^UTILITY(U,$J,358.3,11983,0)
+ ;;=N94.6^^56^641^5
+ ;;^UTILITY(U,$J,358.3,11983,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5149,1,3,0)
- ;;=3^Melanocytic Nevi,Unspec
- ;;^UTILITY(U,$J,358.3,5149,1,4,0)
- ;;=4^D22.9
- ;;^UTILITY(U,$J,358.3,5149,2)
- ;;=^5002058
- ;;^UTILITY(U,$J,358.3,5150,0)
- ;;=D23.72^^40^354^4
- ;;^UTILITY(U,$J,358.3,5150,1,0)
+ ;;^UTILITY(U,$J,358.3,11983,1,3,0)
+ ;;=3^Dysmenorrhea,Unspec
+ ;;^UTILITY(U,$J,358.3,11983,1,4,0)
+ ;;=4^N94.6
+ ;;^UTILITY(U,$J,358.3,11983,2)
+ ;;=^5015922
+ ;;^UTILITY(U,$J,358.3,11984,0)
+ ;;=N95.0^^56^641^16
+ ;;^UTILITY(U,$J,358.3,11984,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5150,1,3,0)
- ;;=3^Benign Neop of Left Lower Limb
- ;;^UTILITY(U,$J,358.3,5150,1,4,0)
- ;;=4^D23.72
- ;;^UTILITY(U,$J,358.3,5150,2)
- ;;=^5002075
- ;;^UTILITY(U,$J,358.3,5151,0)
- ;;=D23.71^^40^354^8
- ;;^UTILITY(U,$J,358.3,5151,1,0)
+ ;;^UTILITY(U,$J,358.3,11984,1,3,0)
+ ;;=3^Postmenopausal Bleeding
+ ;;^UTILITY(U,$J,358.3,11984,1,4,0)
+ ;;=4^N95.0
+ ;;^UTILITY(U,$J,358.3,11984,2)
+ ;;=^97040
+ ;;^UTILITY(U,$J,358.3,11985,0)
+ ;;=R87.619^^56^641^1
+ ;;^UTILITY(U,$J,358.3,11985,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5151,1,3,0)
- ;;=3^Benign Neop of Right Lower Limb
- ;;^UTILITY(U,$J,358.3,5151,1,4,0)
- ;;=4^D23.71
- ;;^UTILITY(U,$J,358.3,5151,2)
- ;;=^5002074
- ;;^UTILITY(U,$J,358.3,5152,0)
- ;;=D23.9^^40^354^12
- ;;^UTILITY(U,$J,358.3,5152,1,0)
+ ;;^UTILITY(U,$J,358.3,11985,1,3,0)
+ ;;=3^Abnormal Cytology Findings in Cervix Uteri Specimen,Unspec
+ ;;^UTILITY(U,$J,358.3,11985,1,4,0)
+ ;;=4^R87.619
+ ;;^UTILITY(U,$J,358.3,11985,2)
+ ;;=^5019676
+ ;;^UTILITY(U,$J,358.3,11986,0)
+ ;;=Z12.39^^56^641^18
+ ;;^UTILITY(U,$J,358.3,11986,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5152,1,3,0)
- ;;=3^Benign Neop of Skin,Unspec
- ;;^UTILITY(U,$J,358.3,5152,1,4,0)
- ;;=4^D23.9
- ;;^UTILITY(U,$J,358.3,5152,2)
- ;;=^5002076
- ;;^UTILITY(U,$J,358.3,5153,0)
- ;;=D22.21^^40^354^21
- ;;^UTILITY(U,$J,358.3,5153,1,0)
+ ;;^UTILITY(U,$J,358.3,11986,1,3,0)
+ ;;=3^Screening for Malig Neop of Breast
+ ;;^UTILITY(U,$J,358.3,11986,1,4,0)
+ ;;=4^Z12.39
+ ;;^UTILITY(U,$J,358.3,11986,2)
+ ;;=^5062686
+ ;;^UTILITY(U,$J,358.3,11987,0)
+ ;;=C53.9^^56^641^13
+ ;;^UTILITY(U,$J,358.3,11987,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5153,1,3,0)
- ;;=3^Melanocytic Nevi of Right Ear/External Auric Canal
- ;;^UTILITY(U,$J,358.3,5153,1,4,0)
- ;;=4^D22.21
- ;;^UTILITY(U,$J,358.3,5153,2)
- ;;=^5002046
- ;;^UTILITY(U,$J,358.3,5154,0)
- ;;=C44.501^^40^355^23
- ;;^UTILITY(U,$J,358.3,5154,1,0)
+ ;;^UTILITY(U,$J,358.3,11987,1,3,0)
+ ;;=3^Malig Neop Cervix Uteri
+ ;;^UTILITY(U,$J,358.3,11987,1,4,0)
+ ;;=4^C53.9
+ ;;^UTILITY(U,$J,358.3,11987,2)
+ ;;=^5001204
+ ;;^UTILITY(U,$J,358.3,11988,0)
+ ;;=C56.9^^56^641^14
+ ;;^UTILITY(U,$J,358.3,11988,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5154,1,3,0)
- ;;=3^Malig Neop of Skin of Breast
- ;;^UTILITY(U,$J,358.3,5154,1,4,0)
- ;;=4^C44.501
- ;;^UTILITY(U,$J,358.3,5154,2)
- ;;=^5001052
- ;;^UTILITY(U,$J,358.3,5155,0)
- ;;=C50.011^^40^355^19
- ;;^UTILITY(U,$J,358.3,5155,1,0)
+ ;;^UTILITY(U,$J,358.3,11988,1,3,0)
+ ;;=3^Malig Neop Ovary,Unspec
+ ;;^UTILITY(U,$J,358.3,11988,1,4,0)
+ ;;=4^C56.9
+ ;;^UTILITY(U,$J,358.3,11988,2)
+ ;;=^5001214
+ ;;^UTILITY(U,$J,358.3,11989,0)
+ ;;=K64.8^^56^642^6
+ ;;^UTILITY(U,$J,358.3,11989,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5155,1,3,0)
- ;;=3^Malig Neop of Nipple/Areola,Right Breast
- ;;^UTILITY(U,$J,358.3,5155,1,4,0)
- ;;=4^C50.011
- ;;^UTILITY(U,$J,358.3,5155,2)
- ;;=^5001159
- ;;^UTILITY(U,$J,358.3,5156,0)
- ;;=C50.012^^40^355^18
- ;;^UTILITY(U,$J,358.3,5156,1,0)
+ ;;^UTILITY(U,$J,358.3,11989,1,3,0)
+ ;;=3^Hemorrhoids,Internal
+ ;;^UTILITY(U,$J,358.3,11989,1,4,0)
+ ;;=4^K64.8
+ ;;^UTILITY(U,$J,358.3,11989,2)
+ ;;=^5008774
+ ;;^UTILITY(U,$J,358.3,11990,0)
+ ;;=K64.9^^56^642^7
+ ;;^UTILITY(U,$J,358.3,11990,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5156,1,3,0)
- ;;=3^Malig Neop of Nipple/Areola,Left Breast
- ;;^UTILITY(U,$J,358.3,5156,1,4,0)
- ;;=4^C50.012
- ;;^UTILITY(U,$J,358.3,5156,2)
- ;;=^5001160
- ;;^UTILITY(U,$J,358.3,5157,0)
- ;;=C50.111^^40^355^12
- ;;^UTILITY(U,$J,358.3,5157,1,0)
+ ;;^UTILITY(U,$J,358.3,11990,1,3,0)
+ ;;=3^Hemorrhoids,Unspec
+ ;;^UTILITY(U,$J,358.3,11990,1,4,0)
+ ;;=4^K64.9
+ ;;^UTILITY(U,$J,358.3,11990,2)
+ ;;=^5008775
+ ;;^UTILITY(U,$J,358.3,11991,0)
+ ;;=K64.0^^56^642^1
+ ;;^UTILITY(U,$J,358.3,11991,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5157,1,3,0)
- ;;=3^Malig Neop of Central Portion of Right Breast
- ;;^UTILITY(U,$J,358.3,5157,1,4,0)
- ;;=4^C50.111
- ;;^UTILITY(U,$J,358.3,5157,2)
- ;;=^5001165
- ;;^UTILITY(U,$J,358.3,5158,0)
- ;;=C50.112^^40^355^11
- ;;^UTILITY(U,$J,358.3,5158,1,0)
+ ;;^UTILITY(U,$J,358.3,11991,1,3,0)
+ ;;=3^First Degree Hemorrhoids
+ ;;^UTILITY(U,$J,358.3,11991,1,4,0)
+ ;;=4^K64.0
+ ;;^UTILITY(U,$J,358.3,11991,2)
+ ;;=^5008769
+ ;;^UTILITY(U,$J,358.3,11992,0)
+ ;;=K64.1^^56^642^2
+ ;;^UTILITY(U,$J,358.3,11992,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5158,1,3,0)
- ;;=3^Malig Neop of Central Portion of Left Breast
- ;;^UTILITY(U,$J,358.3,5158,1,4,0)
- ;;=4^C50.112
- ;;^UTILITY(U,$J,358.3,5158,2)
- ;;=^5001166
- ;;^UTILITY(U,$J,358.3,5159,0)
- ;;=C50.211^^40^355^25
- ;;^UTILITY(U,$J,358.3,5159,1,0)
+ ;;^UTILITY(U,$J,358.3,11992,1,3,0)
+ ;;=3^Second Degree Hemorrhoids
+ ;;^UTILITY(U,$J,358.3,11992,1,4,0)
+ ;;=4^K64.1
+ ;;^UTILITY(U,$J,358.3,11992,2)
+ ;;=^5008770
+ ;;^UTILITY(U,$J,358.3,11993,0)
+ ;;=K64.2^^56^642^3
+ ;;^UTILITY(U,$J,358.3,11993,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5159,1,3,0)
- ;;=3^Malig Neop of Upper-Inner Quadrant of Right Breast
- ;;^UTILITY(U,$J,358.3,5159,1,4,0)
- ;;=4^C50.211
- ;;^UTILITY(U,$J,358.3,5159,2)
- ;;=^5001171
+ ;;^UTILITY(U,$J,358.3,11993,1,3,0)
+ ;;=3^Third Degree Hemorrhoids
+ ;;^UTILITY(U,$J,358.3,11993,1,4,0)
+ ;;=4^K64.2
+ ;;^UTILITY(U,$J,358.3,11993,2)
+ ;;=^5008771
+ ;;^UTILITY(U,$J,358.3,11994,0)
+ ;;=K64.3^^56^642^4
+ ;;^UTILITY(U,$J,358.3,11994,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11994,1,3,0)
+ ;;=3^Fourth Degree Hemorrhoids
+ ;;^UTILITY(U,$J,358.3,11994,1,4,0)
+ ;;=4^K64.3
+ ;;^UTILITY(U,$J,358.3,11994,2)
+ ;;=^5008772
+ ;;^UTILITY(U,$J,358.3,11995,0)
+ ;;=K64.4^^56^642^5
+ ;;^UTILITY(U,$J,358.3,11995,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11995,1,3,0)
+ ;;=3^Hemorrhoids,External
+ ;;^UTILITY(U,$J,358.3,11995,1,4,0)
+ ;;=4^K64.4
+ ;;^UTILITY(U,$J,358.3,11995,2)
+ ;;=^269834
+ ;;^UTILITY(U,$J,358.3,11996,0)
+ ;;=K64.5^^56^642^8
+ ;;^UTILITY(U,$J,358.3,11996,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11996,1,3,0)
+ ;;=3^Perianal venous thrombosis
+ ;;^UTILITY(U,$J,358.3,11996,1,4,0)
+ ;;=4^K64.5
+ ;;^UTILITY(U,$J,358.3,11996,2)
+ ;;=^5008773
+ ;;^UTILITY(U,$J,358.3,11997,0)
+ ;;=K61.0^^56^643^1
+ ;;^UTILITY(U,$J,358.3,11997,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11997,1,3,0)
+ ;;=3^Anal Abscess
+ ;;^UTILITY(U,$J,358.3,11997,1,4,0)
+ ;;=4^K61.0
+ ;;^UTILITY(U,$J,358.3,11997,2)
+ ;;=^5008749
+ ;;^UTILITY(U,$J,358.3,11998,0)
+ ;;=K61.1^^56^643^5
+ ;;^UTILITY(U,$J,358.3,11998,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11998,1,3,0)
+ ;;=3^Rectal Abscess
+ ;;^UTILITY(U,$J,358.3,11998,1,4,0)
+ ;;=4^K61.1
+ ;;^UTILITY(U,$J,358.3,11998,2)
+ ;;=^259588
+ ;;^UTILITY(U,$J,358.3,11999,0)
+ ;;=K61.3^^56^643^4
+ ;;^UTILITY(U,$J,358.3,11999,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11999,1,3,0)
+ ;;=3^Ischiorectal Abscess
+ ;;^UTILITY(U,$J,358.3,11999,1,4,0)
+ ;;=4^K61.3
+ ;;^UTILITY(U,$J,358.3,11999,2)
+ ;;=^5008751
+ ;;^UTILITY(U,$J,358.3,12000,0)
+ ;;=K61.4^^56^643^3
+ ;;^UTILITY(U,$J,358.3,12000,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12000,1,3,0)
+ ;;=3^Intrasphincteric Abscess
+ ;;^UTILITY(U,$J,358.3,12000,1,4,0)
+ ;;=4^K61.4
+ ;;^UTILITY(U,$J,358.3,12000,2)
+ ;;=^5008752
+ ;;^UTILITY(U,$J,358.3,12001,0)
+ ;;=K61.2^^56^643^2
+ ;;^UTILITY(U,$J,358.3,12001,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12001,1,3,0)
+ ;;=3^Anorectal Abscess
+ ;;^UTILITY(U,$J,358.3,12001,1,4,0)
+ ;;=4^K61.2
+ ;;^UTILITY(U,$J,358.3,12001,2)
+ ;;=^5008750
+ ;;^UTILITY(U,$J,358.3,12002,0)
+ ;;=S09.12XA^^56^644^2
+ ;;^UTILITY(U,$J,358.3,12002,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12002,1,3,0)
+ ;;=3^Laceration of Muscle/Tendon of Head,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12002,1,4,0)
+ ;;=4^S09.12XA
+ ;;^UTILITY(U,$J,358.3,12002,2)
+ ;;=^5021287
+ ;;^UTILITY(U,$J,358.3,12003,0)
+ ;;=S16.2XXA^^56^644^1
+ ;;^UTILITY(U,$J,358.3,12003,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12003,1,3,0)
+ ;;=3^Laceration of Muscle/Fascia/Tendon at Neck Level,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12003,1,4,0)
+ ;;=4^S16.2XXA
+ ;;^UTILITY(U,$J,358.3,12003,2)
+ ;;=^5022361
+ ;;^UTILITY(U,$J,358.3,12004,0)
+ ;;=S31.114A^^56^644^5
+ ;;^UTILITY(U,$J,358.3,12004,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12004,1,3,0)
+ ;;=3^Laceration w/o FB of LLQ of Abd Wall w/o Penet Perit Cav,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12004,1,4,0)
+ ;;=4^S31.114A
+ ;;^UTILITY(U,$J,358.3,12004,2)
+ ;;=^5134427
+ ;;^UTILITY(U,$J,358.3,12005,0)
+ ;;=S31.111A^^56^644^6
+ ;;^UTILITY(U,$J,358.3,12005,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12005,1,3,0)
+ ;;=3^Laceration w/o FB of LUQ of Abd Wall w/o Penet Perit Cav,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12005,1,4,0)
+ ;;=4^S31.111A
+ ;;^UTILITY(U,$J,358.3,12005,2)
+ ;;=^5024044
+ ;;^UTILITY(U,$J,358.3,12006,0)
+ ;;=S31.113A^^56^644^37
+ ;;^UTILITY(U,$J,358.3,12006,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12006,1,3,0)
+ ;;=3^Laceration w/o FB of RLQ of Abd Wall w/o Penet Perit Cav,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12006,1,4,0)
+ ;;=4^S31.113A
+ ;;^UTILITY(U,$J,358.3,12006,2)
+ ;;=^5024050
+ ;;^UTILITY(U,$J,358.3,12007,0)
+ ;;=S31.110A^^56^644^38
+ ;;^UTILITY(U,$J,358.3,12007,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12007,1,3,0)
+ ;;=3^Laceration w/o FB of RUQ of Abd Wall w/o Penet Perit Cav,Init Encntr
+ ;;^UTILITY(U,$J,358.3,12007,1,4,0)
+ ;;=4^S31.110A
+ ;;^UTILITY(U,$J,358.3,12007,2)
+ ;;=^5024041
+ ;;^UTILITY(U,$J,358.3,12008,0)
+ ;;=S31.821A^^56^644^8
+ ;;^UTILITY(U,$J,358.3,12008,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,12008,1,3,0)
+ ;;=3^Laceration w/o FB of Left Buttock,Init Encntr
