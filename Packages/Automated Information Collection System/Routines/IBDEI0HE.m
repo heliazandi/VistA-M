@@ -1,128 +1,364 @@
-IBDEI0HE ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0HE ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8050,2)
- ;;=^5136471
- ;;^UTILITY(U,$J,358.3,8051,0)
- ;;=S72.92XA^^33^431^64
- ;;^UTILITY(U,$J,358.3,8051,1,0)
+ ;;^UTILITY(U,$J,358.3,22042,0)
+ ;;=F43.21^^58^844^10
+ ;;^UTILITY(U,$J,358.3,22042,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8051,1,3,0)
- ;;=3^Fx of left femur unspec, init encntr for closed fx
- ;;^UTILITY(U,$J,358.3,8051,1,4,0)
- ;;=4^S72.92XA
- ;;^UTILITY(U,$J,358.3,8051,2)
- ;;=^5136472
- ;;^UTILITY(U,$J,358.3,8052,0)
- ;;=S82.401A^^33^431^78
- ;;^UTILITY(U,$J,358.3,8052,1,0)
+ ;;^UTILITY(U,$J,358.3,22042,1,3,0)
+ ;;=3^Grief Reaction
+ ;;^UTILITY(U,$J,358.3,22042,1,4,0)
+ ;;=4^F43.21
+ ;;^UTILITY(U,$J,358.3,22042,2)
+ ;;=^331948
+ ;;^UTILITY(U,$J,358.3,22043,0)
+ ;;=F43.10^^58^844^16
+ ;;^UTILITY(U,$J,358.3,22043,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8052,1,3,0)
- ;;=3^Fx of right fibula shaft unspec, init for clos fx
- ;;^UTILITY(U,$J,358.3,8052,1,4,0)
- ;;=4^S82.401A
- ;;^UTILITY(U,$J,358.3,8052,2)
- ;;=^5041677
- ;;^UTILITY(U,$J,358.3,8053,0)
- ;;=S82.402A^^33^431^65
- ;;^UTILITY(U,$J,358.3,8053,1,0)
+ ;;^UTILITY(U,$J,358.3,22043,1,3,0)
+ ;;=3^PTSD,Unspec
+ ;;^UTILITY(U,$J,358.3,22043,1,4,0)
+ ;;=4^F43.10
+ ;;^UTILITY(U,$J,358.3,22043,2)
+ ;;=^5003570
+ ;;^UTILITY(U,$J,358.3,22044,0)
+ ;;=F43.11^^58^844^14
+ ;;^UTILITY(U,$J,358.3,22044,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8053,1,3,0)
- ;;=3^Fx of left fibula shaft unspec, init for clos fx
- ;;^UTILITY(U,$J,358.3,8053,1,4,0)
- ;;=4^S82.402A
- ;;^UTILITY(U,$J,358.3,8053,2)
- ;;=^5041693
- ;;^UTILITY(U,$J,358.3,8054,0)
- ;;=S62.600A^^33^431^101
- ;;^UTILITY(U,$J,358.3,8054,1,0)
+ ;;^UTILITY(U,$J,358.3,22044,1,3,0)
+ ;;=3^PTSD,Acute
+ ;;^UTILITY(U,$J,358.3,22044,1,4,0)
+ ;;=4^F43.11
+ ;;^UTILITY(U,$J,358.3,22044,2)
+ ;;=^5003571
+ ;;^UTILITY(U,$J,358.3,22045,0)
+ ;;=F43.12^^58^844^15
+ ;;^UTILITY(U,$J,358.3,22045,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8054,1,3,0)
- ;;=3^Fx of unsp phalanx of right index finger, init
- ;;^UTILITY(U,$J,358.3,8054,1,4,0)
- ;;=4^S62.600A
- ;;^UTILITY(U,$J,358.3,8054,2)
- ;;=^5034382
- ;;^UTILITY(U,$J,358.3,8055,0)
- ;;=S62.601A^^33^431^96
- ;;^UTILITY(U,$J,358.3,8055,1,0)
+ ;;^UTILITY(U,$J,358.3,22045,1,3,0)
+ ;;=3^PTSD,Chronic
+ ;;^UTILITY(U,$J,358.3,22045,1,4,0)
+ ;;=4^F43.12
+ ;;^UTILITY(U,$J,358.3,22045,2)
+ ;;=^5003572
+ ;;^UTILITY(U,$J,358.3,22046,0)
+ ;;=F43.21^^58^844^1
+ ;;^UTILITY(U,$J,358.3,22046,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8055,1,3,0)
- ;;=3^Fx of unsp phalanx of left index finger, init
- ;;^UTILITY(U,$J,358.3,8055,1,4,0)
- ;;=4^S62.601A
- ;;^UTILITY(U,$J,358.3,8055,2)
- ;;=^5034389
- ;;^UTILITY(U,$J,358.3,8056,0)
- ;;=S62.602A^^33^431^103
- ;;^UTILITY(U,$J,358.3,8056,1,0)
+ ;;^UTILITY(U,$J,358.3,22046,1,3,0)
+ ;;=3^Adjustment Disorder w/ Depressed Mood
+ ;;^UTILITY(U,$J,358.3,22046,1,4,0)
+ ;;=4^F43.21
+ ;;^UTILITY(U,$J,358.3,22046,2)
+ ;;=^331948
+ ;;^UTILITY(U,$J,358.3,22047,0)
+ ;;=F45.9^^58^844^24
+ ;;^UTILITY(U,$J,358.3,22047,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8056,1,3,0)
- ;;=3^Fx of unsp phalanx of right middle finger, init
- ;;^UTILITY(U,$J,358.3,8056,1,4,0)
- ;;=4^S62.602A
- ;;^UTILITY(U,$J,358.3,8056,2)
- ;;=^5034396
- ;;^UTILITY(U,$J,358.3,8057,0)
- ;;=S62.603A^^33^431^98
- ;;^UTILITY(U,$J,358.3,8057,1,0)
+ ;;^UTILITY(U,$J,358.3,22047,1,3,0)
+ ;;=3^Somatoform Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,22047,1,4,0)
+ ;;=4^F45.9
+ ;;^UTILITY(U,$J,358.3,22047,2)
+ ;;=^5003592
+ ;;^UTILITY(U,$J,358.3,22048,0)
+ ;;=F48.2^^58^844^18
+ ;;^UTILITY(U,$J,358.3,22048,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8057,1,3,0)
- ;;=3^Fx of unsp phalanx of left middle finger, init
- ;;^UTILITY(U,$J,358.3,8057,1,4,0)
- ;;=4^S62.603A
- ;;^UTILITY(U,$J,358.3,8057,2)
- ;;=^5034403
- ;;^UTILITY(U,$J,358.3,8058,0)
- ;;=S62.604A^^33^431^104
- ;;^UTILITY(U,$J,358.3,8058,1,0)
+ ;;^UTILITY(U,$J,358.3,22048,1,3,0)
+ ;;=3^Pseudobulbar Affect
+ ;;^UTILITY(U,$J,358.3,22048,1,4,0)
+ ;;=4^F48.2
+ ;;^UTILITY(U,$J,358.3,22048,2)
+ ;;=^5003594
+ ;;^UTILITY(U,$J,358.3,22049,0)
+ ;;=G47.00^^58^844^11
+ ;;^UTILITY(U,$J,358.3,22049,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8058,1,3,0)
- ;;=3^Fx of unsp phalanx of right ring finger, init
- ;;^UTILITY(U,$J,358.3,8058,1,4,0)
- ;;=4^S62.604A
- ;;^UTILITY(U,$J,358.3,8058,2)
- ;;=^5034410
- ;;^UTILITY(U,$J,358.3,8059,0)
- ;;=S62.605A^^33^431^99
- ;;^UTILITY(U,$J,358.3,8059,1,0)
+ ;;^UTILITY(U,$J,358.3,22049,1,3,0)
+ ;;=3^Insomnia,Unspec
+ ;;^UTILITY(U,$J,358.3,22049,1,4,0)
+ ;;=4^G47.00
+ ;;^UTILITY(U,$J,358.3,22049,2)
+ ;;=^332924
+ ;;^UTILITY(U,$J,358.3,22050,0)
+ ;;=F40.11^^58^844^22
+ ;;^UTILITY(U,$J,358.3,22050,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8059,1,3,0)
- ;;=3^Fx of unsp phalanx of left ring finger, init
- ;;^UTILITY(U,$J,358.3,8059,1,4,0)
- ;;=4^S62.605A
- ;;^UTILITY(U,$J,358.3,8059,2)
- ;;=^5034417
- ;;^UTILITY(U,$J,358.3,8060,0)
- ;;=S62.606A^^33^431^102
- ;;^UTILITY(U,$J,358.3,8060,1,0)
+ ;;^UTILITY(U,$J,358.3,22050,1,3,0)
+ ;;=3^Social Phobia,Generalized
+ ;;^UTILITY(U,$J,358.3,22050,1,4,0)
+ ;;=4^F40.11
+ ;;^UTILITY(U,$J,358.3,22050,2)
+ ;;=^5003545
+ ;;^UTILITY(U,$J,358.3,22051,0)
+ ;;=R56.00^^58^845^6
+ ;;^UTILITY(U,$J,358.3,22051,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8060,1,3,0)
- ;;=3^Fx of unsp phalanx of right little finger, init
- ;;^UTILITY(U,$J,358.3,8060,1,4,0)
- ;;=4^S62.606A
- ;;^UTILITY(U,$J,358.3,8060,2)
- ;;=^5034424
- ;;^UTILITY(U,$J,358.3,8061,0)
- ;;=S62.607A^^33^431^97
- ;;^UTILITY(U,$J,358.3,8061,1,0)
+ ;;^UTILITY(U,$J,358.3,22051,1,3,0)
+ ;;=3^Simple Febrile Convulsions
+ ;;^UTILITY(U,$J,358.3,22051,1,4,0)
+ ;;=4^R56.00
+ ;;^UTILITY(U,$J,358.3,22051,2)
+ ;;=^5019522
+ ;;^UTILITY(U,$J,358.3,22052,0)
+ ;;=R56.9^^58^845^4
+ ;;^UTILITY(U,$J,358.3,22052,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8061,1,3,0)
- ;;=3^Fx of unsp phalanx of left little finger, init
- ;;^UTILITY(U,$J,358.3,8061,1,4,0)
- ;;=4^S62.607A
- ;;^UTILITY(U,$J,358.3,8061,2)
- ;;=^5034431
- ;;^UTILITY(U,$J,358.3,8062,0)
- ;;=S92.901A^^33^431^79
- ;;^UTILITY(U,$J,358.3,8062,1,0)
+ ;;^UTILITY(U,$J,358.3,22052,1,3,0)
+ ;;=3^Convulsions,Unspec
+ ;;^UTILITY(U,$J,358.3,22052,1,4,0)
+ ;;=4^R56.9
+ ;;^UTILITY(U,$J,358.3,22052,2)
+ ;;=^5019524
+ ;;^UTILITY(U,$J,358.3,22053,0)
+ ;;=R25.0^^58^845^1
+ ;;^UTILITY(U,$J,358.3,22053,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8062,1,3,0)
- ;;=3^Fx of right foot unspec, init encntr for closed fra
- ;;^UTILITY(U,$J,358.3,8062,1,4,0)
- ;;=4^S92.901A
- ;;^UTILITY(U,$J,358.3,8062,2)
- ;;=^5045578
- ;;^UTILITY(U,$J,358.3,8063,0)
- ;;=S92.902A^^33^431^66
+ ;;^UTILITY(U,$J,358.3,22053,1,3,0)
+ ;;=3^Abnormal Head Movements
+ ;;^UTILITY(U,$J,358.3,22053,1,4,0)
+ ;;=4^R25.0
+ ;;^UTILITY(U,$J,358.3,22053,2)
+ ;;=^5019299
+ ;;^UTILITY(U,$J,358.3,22054,0)
+ ;;=R25.1^^58^845^7
+ ;;^UTILITY(U,$J,358.3,22054,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22054,1,3,0)
+ ;;=3^Tremor,Unspec
+ ;;^UTILITY(U,$J,358.3,22054,1,4,0)
+ ;;=4^R25.1
+ ;;^UTILITY(U,$J,358.3,22054,2)
+ ;;=^5019300
+ ;;^UTILITY(U,$J,358.3,22055,0)
+ ;;=R25.9^^58^845^3
+ ;;^UTILITY(U,$J,358.3,22055,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22055,1,3,0)
+ ;;=3^Abnormal Involuntary Movements,Unspec
+ ;;^UTILITY(U,$J,358.3,22055,1,4,0)
+ ;;=4^R25.9
+ ;;^UTILITY(U,$J,358.3,22055,2)
+ ;;=^5019303
+ ;;^UTILITY(U,$J,358.3,22056,0)
+ ;;=R25.3^^58^845^5
+ ;;^UTILITY(U,$J,358.3,22056,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22056,1,3,0)
+ ;;=3^Fasciculation/Twitching
+ ;;^UTILITY(U,$J,358.3,22056,1,4,0)
+ ;;=4^R25.3
+ ;;^UTILITY(U,$J,358.3,22056,2)
+ ;;=^44985
+ ;;^UTILITY(U,$J,358.3,22057,0)
+ ;;=R25.8^^58^845^2
+ ;;^UTILITY(U,$J,358.3,22057,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22057,1,3,0)
+ ;;=3^Abnormal Involuntary Movements,Other
+ ;;^UTILITY(U,$J,358.3,22057,1,4,0)
+ ;;=4^R25.8
+ ;;^UTILITY(U,$J,358.3,22057,2)
+ ;;=^5019302
+ ;;^UTILITY(U,$J,358.3,22058,0)
+ ;;=M02.30^^58^846^141
+ ;;^UTILITY(U,$J,358.3,22058,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22058,1,3,0)
+ ;;=3^Reiter's Disease,Unspec Site
+ ;;^UTILITY(U,$J,358.3,22058,1,4,0)
+ ;;=4^M02.30
+ ;;^UTILITY(U,$J,358.3,22058,2)
+ ;;=^5009790
+ ;;^UTILITY(U,$J,358.3,22059,0)
+ ;;=M10.9^^58^846^40
+ ;;^UTILITY(U,$J,358.3,22059,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22059,1,3,0)
+ ;;=3^Gout,Unspec
+ ;;^UTILITY(U,$J,358.3,22059,1,4,0)
+ ;;=4^M10.9
+ ;;^UTILITY(U,$J,358.3,22059,2)
+ ;;=^5010404
+ ;;^UTILITY(U,$J,358.3,22060,0)
+ ;;=G90.59^^58^846^34
+ ;;^UTILITY(U,$J,358.3,22060,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22060,1,3,0)
+ ;;=3^Complex Regional Pain Syndrome I,Unspec
+ ;;^UTILITY(U,$J,358.3,22060,1,4,0)
+ ;;=4^G90.59
+ ;;^UTILITY(U,$J,358.3,22060,2)
+ ;;=^5004171
+ ;;^UTILITY(U,$J,358.3,22061,0)
+ ;;=G56.01^^58^846^12
+ ;;^UTILITY(U,$J,358.3,22061,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22061,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,22061,1,4,0)
+ ;;=4^G56.01
+ ;;^UTILITY(U,$J,358.3,22061,2)
+ ;;=^5004018
+ ;;^UTILITY(U,$J,358.3,22062,0)
+ ;;=G56.02^^58^846^11
+ ;;^UTILITY(U,$J,358.3,22062,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22062,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,22062,1,4,0)
+ ;;=4^G56.02
+ ;;^UTILITY(U,$J,358.3,22062,2)
+ ;;=^5004019
+ ;;^UTILITY(U,$J,358.3,22063,0)
+ ;;=G56.21^^58^846^56
+ ;;^UTILITY(U,$J,358.3,22063,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22063,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,22063,1,4,0)
+ ;;=4^G56.21
+ ;;^UTILITY(U,$J,358.3,22063,2)
+ ;;=^5004024
+ ;;^UTILITY(U,$J,358.3,22064,0)
+ ;;=G56.22^^58^846^55
+ ;;^UTILITY(U,$J,358.3,22064,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22064,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,22064,1,4,0)
+ ;;=4^G56.22
+ ;;^UTILITY(U,$J,358.3,22064,2)
+ ;;=^5004025
+ ;;^UTILITY(U,$J,358.3,22065,0)
+ ;;=M26.60^^58^846^180
+ ;;^UTILITY(U,$J,358.3,22065,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22065,1,3,0)
+ ;;=3^Temporomandibular Joint Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,22065,1,4,0)
+ ;;=4^M26.60
+ ;;^UTILITY(U,$J,358.3,22065,2)
+ ;;=^5011714
+ ;;^UTILITY(U,$J,358.3,22066,0)
+ ;;=L40.52^^58^846^137
+ ;;^UTILITY(U,$J,358.3,22066,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22066,1,3,0)
+ ;;=3^Psoriatic Arthritis Mutilans
+ ;;^UTILITY(U,$J,358.3,22066,1,4,0)
+ ;;=4^L40.52
+ ;;^UTILITY(U,$J,358.3,22066,2)
+ ;;=^5009167
+ ;;^UTILITY(U,$J,358.3,22067,0)
+ ;;=L40.53^^58^846^138
+ ;;^UTILITY(U,$J,358.3,22067,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22067,1,3,0)
+ ;;=3^Psoriatic Spondylitis
+ ;;^UTILITY(U,$J,358.3,22067,1,4,0)
+ ;;=4^L40.53
+ ;;^UTILITY(U,$J,358.3,22067,2)
+ ;;=^5009168
+ ;;^UTILITY(U,$J,358.3,22068,0)
+ ;;=M32.9^^58^846^179
+ ;;^UTILITY(U,$J,358.3,22068,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22068,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Unspec
+ ;;^UTILITY(U,$J,358.3,22068,1,4,0)
+ ;;=4^M32.9
+ ;;^UTILITY(U,$J,358.3,22068,2)
+ ;;=^5011761
+ ;;^UTILITY(U,$J,358.3,22069,0)
+ ;;=M32.0^^58^846^175
+ ;;^UTILITY(U,$J,358.3,22069,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22069,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Drug-Induced
+ ;;^UTILITY(U,$J,358.3,22069,1,4,0)
+ ;;=4^M32.0
+ ;;^UTILITY(U,$J,358.3,22069,2)
+ ;;=^5011752
+ ;;^UTILITY(U,$J,358.3,22070,0)
+ ;;=M32.13^^58^846^177
+ ;;^UTILITY(U,$J,358.3,22070,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22070,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Lung Involvement
+ ;;^UTILITY(U,$J,358.3,22070,1,4,0)
+ ;;=4^M32.13
+ ;;^UTILITY(U,$J,358.3,22070,2)
+ ;;=^5011756
+ ;;^UTILITY(U,$J,358.3,22071,0)
+ ;;=M32.14^^58^846^176
+ ;;^UTILITY(U,$J,358.3,22071,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22071,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Glomerular Disease
+ ;;^UTILITY(U,$J,358.3,22071,1,4,0)
+ ;;=4^M32.14
+ ;;^UTILITY(U,$J,358.3,22071,2)
+ ;;=^5011757
+ ;;^UTILITY(U,$J,358.3,22072,0)
+ ;;=M32.12^^58^846^178
+ ;;^UTILITY(U,$J,358.3,22072,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22072,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Pericarditis
+ ;;^UTILITY(U,$J,358.3,22072,1,4,0)
+ ;;=4^M32.12
+ ;;^UTILITY(U,$J,358.3,22072,2)
+ ;;=^5011755
+ ;;^UTILITY(U,$J,358.3,22073,0)
+ ;;=M05.59^^58^846^159
+ ;;^UTILITY(U,$J,358.3,22073,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22073,1,3,0)
+ ;;=3^Rheumatoid Polyneuropathy w/ Rheumatoid Arthritis of Mult Sites
+ ;;^UTILITY(U,$J,358.3,22073,1,4,0)
+ ;;=4^M05.59
+ ;;^UTILITY(U,$J,358.3,22073,2)
+ ;;=^5009976
+ ;;^UTILITY(U,$J,358.3,22074,0)
+ ;;=M05.711^^58^846^153
+ ;;^UTILITY(U,$J,358.3,22074,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22074,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22074,1,4,0)
+ ;;=4^M05.711
+ ;;^UTILITY(U,$J,358.3,22074,2)
+ ;;=^5010001
+ ;;^UTILITY(U,$J,358.3,22075,0)
+ ;;=M05.712^^58^846^146
+ ;;^UTILITY(U,$J,358.3,22075,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22075,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22075,1,4,0)
+ ;;=4^M05.712
+ ;;^UTILITY(U,$J,358.3,22075,2)
+ ;;=^5010002
+ ;;^UTILITY(U,$J,358.3,22076,0)
+ ;;=M05.731^^58^846^154
+ ;;^UTILITY(U,$J,358.3,22076,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22076,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Wrist
+ ;;^UTILITY(U,$J,358.3,22076,1,4,0)
+ ;;=4^M05.731
+ ;;^UTILITY(U,$J,358.3,22076,2)
+ ;;=^5010007
+ ;;^UTILITY(U,$J,358.3,22077,0)
+ ;;=M05.732^^58^846^147
+ ;;^UTILITY(U,$J,358.3,22077,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22077,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Wrist
+ ;;^UTILITY(U,$J,358.3,22077,1,4,0)
+ ;;=4^M05.732
+ ;;^UTILITY(U,$J,358.3,22077,2)
+ ;;=^5010008

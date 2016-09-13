@@ -1,122 +1,356 @@
-IBDEI0RN ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0RN ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,12966,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Foot w/ Unspec Severity
- ;;^UTILITY(U,$J,358.3,12966,1,4,0)
- ;;=4^L97.519
- ;;^UTILITY(U,$J,358.3,12966,2)
- ;;=^5009549
- ;;^UTILITY(U,$J,358.3,12967,0)
- ;;=L97.521^^53^582^181
- ;;^UTILITY(U,$J,358.3,12967,1,0)
+ ;;^UTILITY(U,$J,358.3,36524,1,4,0)
+ ;;=4^N06.0
+ ;;^UTILITY(U,$J,358.3,36524,2)
+ ;;=^5015549
+ ;;^UTILITY(U,$J,358.3,36525,0)
+ ;;=N06.8^^103^1553^15
+ ;;^UTILITY(U,$J,358.3,36525,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12967,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Foot w/ Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,12967,1,4,0)
- ;;=4^L97.521
- ;;^UTILITY(U,$J,358.3,12967,2)
- ;;=^5009550
- ;;^UTILITY(U,$J,358.3,12968,0)
- ;;=L97.522^^53^582^182
- ;;^UTILITY(U,$J,358.3,12968,1,0)
+ ;;^UTILITY(U,$J,358.3,36525,1,3,0)
+ ;;=3^Isolated Proteinuria w/ Morphologic Lesion
+ ;;^UTILITY(U,$J,358.3,36525,1,4,0)
+ ;;=4^N06.8
+ ;;^UTILITY(U,$J,358.3,36525,2)
+ ;;=^5015557
+ ;;^UTILITY(U,$J,358.3,36526,0)
+ ;;=N14.3^^103^1553^24
+ ;;^UTILITY(U,$J,358.3,36526,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12968,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Foot w/ Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,12968,1,4,0)
- ;;=4^L97.522
- ;;^UTILITY(U,$J,358.3,12968,2)
- ;;=^5009551
- ;;^UTILITY(U,$J,358.3,12969,0)
- ;;=L97.523^^53^582^183
- ;;^UTILITY(U,$J,358.3,12969,1,0)
+ ;;^UTILITY(U,$J,358.3,36526,1,3,0)
+ ;;=3^Nephropathy Induced by Heavy Metals
+ ;;^UTILITY(U,$J,358.3,36526,1,4,0)
+ ;;=4^N14.3
+ ;;^UTILITY(U,$J,358.3,36526,2)
+ ;;=^5015593
+ ;;^UTILITY(U,$J,358.3,36527,0)
+ ;;=N14.1^^103^1553^23
+ ;;^UTILITY(U,$J,358.3,36527,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12969,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Foot w/ Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,12969,1,4,0)
- ;;=4^L97.523
- ;;^UTILITY(U,$J,358.3,12969,2)
- ;;=^5009552
- ;;^UTILITY(U,$J,358.3,12970,0)
- ;;=L97.524^^53^582^184
- ;;^UTILITY(U,$J,358.3,12970,1,0)
+ ;;^UTILITY(U,$J,358.3,36527,1,3,0)
+ ;;=3^Nephropathy Induced by Drug/Meds/Biol Subst
+ ;;^UTILITY(U,$J,358.3,36527,1,4,0)
+ ;;=4^N14.1
+ ;;^UTILITY(U,$J,358.3,36527,2)
+ ;;=^5015591
+ ;;^UTILITY(U,$J,358.3,36528,0)
+ ;;=N29.^^103^1553^16
+ ;;^UTILITY(U,$J,358.3,36528,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12970,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Foot w/ Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,12970,1,4,0)
- ;;=4^L97.524
- ;;^UTILITY(U,$J,358.3,12970,2)
- ;;=^5009553
- ;;^UTILITY(U,$J,358.3,12971,0)
- ;;=L97.529^^53^582^185
- ;;^UTILITY(U,$J,358.3,12971,1,0)
+ ;;^UTILITY(U,$J,358.3,36528,1,3,0)
+ ;;=3^Kidney and Ureter Disorders in Diseases Classd Elsewhr
+ ;;^UTILITY(U,$J,358.3,36528,1,4,0)
+ ;;=4^N29.
+ ;;^UTILITY(U,$J,358.3,36528,2)
+ ;;=^5015631
+ ;;^UTILITY(U,$J,358.3,36529,0)
+ ;;=N15.8^^103^1553^25
+ ;;^UTILITY(U,$J,358.3,36529,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12971,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Foot w/ Unspec Severity
- ;;^UTILITY(U,$J,358.3,12971,1,4,0)
- ;;=4^L97.529
- ;;^UTILITY(U,$J,358.3,12971,2)
- ;;=^5009554
- ;;^UTILITY(U,$J,358.3,12972,0)
- ;;=L97.911^^53^582^221
- ;;^UTILITY(U,$J,358.3,12972,1,0)
+ ;;^UTILITY(U,$J,358.3,36529,1,3,0)
+ ;;=3^Renal Tubulo-Interstitial Diseases
+ ;;^UTILITY(U,$J,358.3,36529,1,4,0)
+ ;;=4^N15.8
+ ;;^UTILITY(U,$J,358.3,36529,2)
+ ;;=^5015595
+ ;;^UTILITY(U,$J,358.3,36530,0)
+ ;;=N14.4^^103^1553^26
+ ;;^UTILITY(U,$J,358.3,36530,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12972,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,12972,1,4,0)
- ;;=4^L97.911
- ;;^UTILITY(U,$J,358.3,12972,2)
- ;;=^5133679
- ;;^UTILITY(U,$J,358.3,12973,0)
- ;;=L97.912^^53^582^222
- ;;^UTILITY(U,$J,358.3,12973,1,0)
+ ;;^UTILITY(U,$J,358.3,36530,1,3,0)
+ ;;=3^Toxic Nephropathy NEC
+ ;;^UTILITY(U,$J,358.3,36530,1,4,0)
+ ;;=4^N14.4
+ ;;^UTILITY(U,$J,358.3,36530,2)
+ ;;=^5015594
+ ;;^UTILITY(U,$J,358.3,36531,0)
+ ;;=N05.6^^103^1553^18
+ ;;^UTILITY(U,$J,358.3,36531,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12973,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,12973,1,4,0)
- ;;=4^L97.912
- ;;^UTILITY(U,$J,358.3,12973,2)
- ;;=^5133681
- ;;^UTILITY(U,$J,358.3,12974,0)
- ;;=L97.913^^53^582^223
- ;;^UTILITY(U,$J,358.3,12974,1,0)
+ ;;^UTILITY(U,$J,358.3,36531,1,3,0)
+ ;;=3^Nephritic Syndrome w/ Dense Deposit Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,36531,1,4,0)
+ ;;=4^N05.6
+ ;;^UTILITY(U,$J,358.3,36531,2)
+ ;;=^5015547
+ ;;^UTILITY(U,$J,358.3,36532,0)
+ ;;=N05.7^^103^1553^19
+ ;;^UTILITY(U,$J,358.3,36532,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12974,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,12974,1,4,0)
- ;;=4^L97.913
- ;;^UTILITY(U,$J,358.3,12974,2)
- ;;=^5133683
- ;;^UTILITY(U,$J,358.3,12975,0)
- ;;=L97.914^^53^582^224
- ;;^UTILITY(U,$J,358.3,12975,1,0)
+ ;;^UTILITY(U,$J,358.3,36532,1,3,0)
+ ;;=3^Nephritic Syndrome w/ Diffuse Crescentic Glomerulonephritis,Unspec
+ ;;^UTILITY(U,$J,358.3,36532,1,4,0)
+ ;;=4^N05.7
+ ;;^UTILITY(U,$J,358.3,36532,2)
+ ;;=^5015548
+ ;;^UTILITY(U,$J,358.3,36533,0)
+ ;;=N05.1^^103^1553^20
+ ;;^UTILITY(U,$J,358.3,36533,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12975,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,12975,1,4,0)
- ;;=4^L97.914
- ;;^UTILITY(U,$J,358.3,12975,2)
- ;;=^5133685
- ;;^UTILITY(U,$J,358.3,12976,0)
- ;;=L97.919^^53^582^225
- ;;^UTILITY(U,$J,358.3,12976,1,0)
+ ;;^UTILITY(U,$J,358.3,36533,1,3,0)
+ ;;=3^Nephritic Syndrome w/ Focal/Segmental Glomerular Lesions,Unspec
+ ;;^UTILITY(U,$J,358.3,36533,1,4,0)
+ ;;=4^N05.1
+ ;;^UTILITY(U,$J,358.3,36533,2)
+ ;;=^5015542
+ ;;^UTILITY(U,$J,358.3,36534,0)
+ ;;=N05.0^^103^1553^21
+ ;;^UTILITY(U,$J,358.3,36534,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12976,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Lower Leg w/ Unspec Severity
- ;;^UTILITY(U,$J,358.3,12976,1,4,0)
- ;;=4^L97.919
- ;;^UTILITY(U,$J,358.3,12976,2)
- ;;=^5133688
- ;;^UTILITY(U,$J,358.3,12977,0)
- ;;=L97.921^^53^582^191
- ;;^UTILITY(U,$J,358.3,12977,1,0)
+ ;;^UTILITY(U,$J,358.3,36534,1,3,0)
+ ;;=3^Nephritic Syndrome w/ Minor Glomerular Abnormality,Unspec
+ ;;^UTILITY(U,$J,358.3,36534,1,4,0)
+ ;;=4^N05.0
+ ;;^UTILITY(U,$J,358.3,36534,2)
+ ;;=^5015541
+ ;;^UTILITY(U,$J,358.3,36535,0)
+ ;;=N05.8^^103^1553^22
+ ;;^UTILITY(U,$J,358.3,36535,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12977,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Lower Leg w/ Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,12977,1,4,0)
- ;;=4^L97.921
- ;;^UTILITY(U,$J,358.3,12977,2)
- ;;=^5133680
- ;;^UTILITY(U,$J,358.3,12978,0)
- ;;=L97.922^^53^582^192
+ ;;^UTILITY(U,$J,358.3,36535,1,3,0)
+ ;;=3^Nephritic Syndrome w/ Morphologic Changes,Unspec
+ ;;^UTILITY(U,$J,358.3,36535,1,4,0)
+ ;;=4^N05.8
+ ;;^UTILITY(U,$J,358.3,36535,2)
+ ;;=^5134085
+ ;;^UTILITY(U,$J,358.3,36536,0)
+ ;;=R59.9^^103^1554^4
+ ;;^UTILITY(U,$J,358.3,36536,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36536,1,3,0)
+ ;;=3^Enlarged Lymph Nodes,Unspec
+ ;;^UTILITY(U,$J,358.3,36536,1,4,0)
+ ;;=4^R59.9
+ ;;^UTILITY(U,$J,358.3,36536,2)
+ ;;=^5019531
+ ;;^UTILITY(U,$J,358.3,36537,0)
+ ;;=R59.1^^103^1554^2
+ ;;^UTILITY(U,$J,358.3,36537,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36537,1,3,0)
+ ;;=3^Enlarged Lymph Nodes,Generalized
+ ;;^UTILITY(U,$J,358.3,36537,1,4,0)
+ ;;=4^R59.1
+ ;;^UTILITY(U,$J,358.3,36537,2)
+ ;;=^5019530
+ ;;^UTILITY(U,$J,358.3,36538,0)
+ ;;=R59.0^^103^1554^3
+ ;;^UTILITY(U,$J,358.3,36538,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36538,1,3,0)
+ ;;=3^Enlarged Lymph Nodes,Localized
+ ;;^UTILITY(U,$J,358.3,36538,1,4,0)
+ ;;=4^R59.0
+ ;;^UTILITY(U,$J,358.3,36538,2)
+ ;;=^5019529
+ ;;^UTILITY(U,$J,358.3,36539,0)
+ ;;=D64.9^^103^1554^1
+ ;;^UTILITY(U,$J,358.3,36539,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36539,1,3,0)
+ ;;=3^Anemia,Unspec
+ ;;^UTILITY(U,$J,358.3,36539,1,4,0)
+ ;;=4^D64.9
+ ;;^UTILITY(U,$J,358.3,36539,2)
+ ;;=^5002351
+ ;;^UTILITY(U,$J,358.3,36540,0)
+ ;;=R79.9^^103^1555^1
+ ;;^UTILITY(U,$J,358.3,36540,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36540,1,3,0)
+ ;;=3^Abnormal Finding of Blood Chemistry,Unspec
+ ;;^UTILITY(U,$J,358.3,36540,1,4,0)
+ ;;=4^R79.9
+ ;;^UTILITY(U,$J,358.3,36540,2)
+ ;;=^5019594
+ ;;^UTILITY(U,$J,358.3,36541,0)
+ ;;=R78.71^^103^1555^2
+ ;;^UTILITY(U,$J,358.3,36541,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36541,1,3,0)
+ ;;=3^Abnormal Lead Level in Blood
+ ;;^UTILITY(U,$J,358.3,36541,1,4,0)
+ ;;=4^R78.71
+ ;;^UTILITY(U,$J,358.3,36541,2)
+ ;;=^5019586
+ ;;^UTILITY(U,$J,358.3,36542,0)
+ ;;=R79.0^^103^1555^3
+ ;;^UTILITY(U,$J,358.3,36542,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36542,1,3,0)
+ ;;=3^Abnormal Level of Blood Mineral
+ ;;^UTILITY(U,$J,358.3,36542,1,4,0)
+ ;;=4^R79.0
+ ;;^UTILITY(U,$J,358.3,36542,2)
+ ;;=^5019590
+ ;;^UTILITY(U,$J,358.3,36543,0)
+ ;;=R78.79^^103^1555^4
+ ;;^UTILITY(U,$J,358.3,36543,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36543,1,3,0)
+ ;;=3^Abnormal Level of Heavy Metals in Blood
+ ;;^UTILITY(U,$J,358.3,36543,1,4,0)
+ ;;=4^R78.79
+ ;;^UTILITY(U,$J,358.3,36543,2)
+ ;;=^5019587
+ ;;^UTILITY(U,$J,358.3,36544,0)
+ ;;=K74.0^^103^1555^7
+ ;;^UTILITY(U,$J,358.3,36544,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36544,1,3,0)
+ ;;=3^Hepatic Fibrosis
+ ;;^UTILITY(U,$J,358.3,36544,1,4,0)
+ ;;=4^K74.0
+ ;;^UTILITY(U,$J,358.3,36544,2)
+ ;;=^5008816
+ ;;^UTILITY(U,$J,358.3,36545,0)
+ ;;=E79.0^^103^1555^8
+ ;;^UTILITY(U,$J,358.3,36545,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36545,1,3,0)
+ ;;=3^Hyperuricemia w/o Signs of Inflam Arthrit/Tophaceous Disease
+ ;;^UTILITY(U,$J,358.3,36545,1,4,0)
+ ;;=4^E79.0
+ ;;^UTILITY(U,$J,358.3,36545,2)
+ ;;=^5002978
+ ;;^UTILITY(U,$J,358.3,36546,0)
+ ;;=K74.69^^103^1555^5
+ ;;^UTILITY(U,$J,358.3,36546,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36546,1,3,0)
+ ;;=3^Cirrhosis of Liver NEC
+ ;;^UTILITY(U,$J,358.3,36546,1,4,0)
+ ;;=4^K74.69
+ ;;^UTILITY(U,$J,358.3,36546,2)
+ ;;=^5008823
+ ;;^UTILITY(U,$J,358.3,36547,0)
+ ;;=K74.60^^103^1555^6
+ ;;^UTILITY(U,$J,358.3,36547,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36547,1,3,0)
+ ;;=3^Cirrhosis of Liver,Unspec
+ ;;^UTILITY(U,$J,358.3,36547,1,4,0)
+ ;;=4^K74.60
+ ;;^UTILITY(U,$J,358.3,36547,2)
+ ;;=^5008822
+ ;;^UTILITY(U,$J,358.3,36548,0)
+ ;;=J85.1^^103^1556^41
+ ;;^UTILITY(U,$J,358.3,36548,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36548,1,3,0)
+ ;;=3^Abscess of Lung w/ Pneumonia
+ ;;^UTILITY(U,$J,358.3,36548,1,4,0)
+ ;;=4^J85.1
+ ;;^UTILITY(U,$J,358.3,36548,2)
+ ;;=^5008306
+ ;;^UTILITY(U,$J,358.3,36549,0)
+ ;;=J85.2^^103^1556^42
+ ;;^UTILITY(U,$J,358.3,36549,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36549,1,3,0)
+ ;;=3^Abscess of Lung w/o Pneumonia
+ ;;^UTILITY(U,$J,358.3,36549,1,4,0)
+ ;;=4^J85.2
+ ;;^UTILITY(U,$J,358.3,36549,2)
+ ;;=^5008307
+ ;;^UTILITY(U,$J,358.3,36550,0)
+ ;;=H60.513^^103^1556^1
+ ;;^UTILITY(U,$J,358.3,36550,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36550,1,3,0)
+ ;;=3^AC Actinic Otitis Externa,Bilateral
+ ;;^UTILITY(U,$J,358.3,36550,1,4,0)
+ ;;=4^H60.513
+ ;;^UTILITY(U,$J,358.3,36550,2)
+ ;;=^5006472
+ ;;^UTILITY(U,$J,358.3,36551,0)
+ ;;=H60.512^^103^1556^2
+ ;;^UTILITY(U,$J,358.3,36551,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36551,1,3,0)
+ ;;=3^AC Actinic Otitis Externa,Left Ear
+ ;;^UTILITY(U,$J,358.3,36551,1,4,0)
+ ;;=4^H60.512
+ ;;^UTILITY(U,$J,358.3,36551,2)
+ ;;=^5006471
+ ;;^UTILITY(U,$J,358.3,36552,0)
+ ;;=H60.511^^103^1556^3
+ ;;^UTILITY(U,$J,358.3,36552,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36552,1,3,0)
+ ;;=3^AC Actinic Otitis Externa,Right Ear
+ ;;^UTILITY(U,$J,358.3,36552,1,4,0)
+ ;;=4^H60.511
+ ;;^UTILITY(U,$J,358.3,36552,2)
+ ;;=^5006470
+ ;;^UTILITY(U,$J,358.3,36553,0)
+ ;;=J21.1^^103^1556^5
+ ;;^UTILITY(U,$J,358.3,36553,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36553,1,3,0)
+ ;;=3^AC Bronchiolitis d/t Human Metapneumovirus
+ ;;^UTILITY(U,$J,358.3,36553,1,4,0)
+ ;;=4^J21.1
+ ;;^UTILITY(U,$J,358.3,36553,2)
+ ;;=^5008197
+ ;;^UTILITY(U,$J,358.3,36554,0)
+ ;;=J21.8^^103^1556^6
+ ;;^UTILITY(U,$J,358.3,36554,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36554,1,3,0)
+ ;;=3^AC Bronchiolitis d/t Specified Organisms
+ ;;^UTILITY(U,$J,358.3,36554,1,4,0)
+ ;;=4^J21.8
+ ;;^UTILITY(U,$J,358.3,36554,2)
+ ;;=^5008198
+ ;;^UTILITY(U,$J,358.3,36555,0)
+ ;;=J21.9^^103^1556^4
+ ;;^UTILITY(U,$J,358.3,36555,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36555,1,3,0)
+ ;;=3^AC Bronchilitis,Unspec
+ ;;^UTILITY(U,$J,358.3,36555,1,4,0)
+ ;;=4^J21.9
+ ;;^UTILITY(U,$J,358.3,36555,2)
+ ;;=^5008199
+ ;;^UTILITY(U,$J,358.3,36556,0)
+ ;;=J20.3^^103^1556^7
+ ;;^UTILITY(U,$J,358.3,36556,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36556,1,3,0)
+ ;;=3^AC Bronchitis d/t Coxsackievirus
+ ;;^UTILITY(U,$J,358.3,36556,1,4,0)
+ ;;=4^J20.3
+ ;;^UTILITY(U,$J,358.3,36556,2)
+ ;;=^5008189
+ ;;^UTILITY(U,$J,358.3,36557,0)
+ ;;=J20.7^^103^1556^8
+ ;;^UTILITY(U,$J,358.3,36557,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36557,1,3,0)
+ ;;=3^AC Bronchitis d/t Echovirus
+ ;;^UTILITY(U,$J,358.3,36557,1,4,0)
+ ;;=4^J20.7
+ ;;^UTILITY(U,$J,358.3,36557,2)
+ ;;=^5008193
+ ;;^UTILITY(U,$J,358.3,36558,0)
+ ;;=J20.1^^103^1556^9
+ ;;^UTILITY(U,$J,358.3,36558,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36558,1,3,0)
+ ;;=3^AC Bronchitis d/t Hemophilus Influenzae
+ ;;^UTILITY(U,$J,358.3,36558,1,4,0)
+ ;;=4^J20.1
+ ;;^UTILITY(U,$J,358.3,36558,2)
+ ;;=^5008187
+ ;;^UTILITY(U,$J,358.3,36559,0)
+ ;;=J20.0^^103^1556^10
+ ;;^UTILITY(U,$J,358.3,36559,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36559,1,3,0)
+ ;;=3^AC Bronchitis d/t Mycoplasma Pneumoniae
+ ;;^UTILITY(U,$J,358.3,36559,1,4,0)
+ ;;=4^J20.0

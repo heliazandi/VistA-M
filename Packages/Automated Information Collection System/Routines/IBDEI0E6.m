@@ -1,132 +1,372 @@
-IBDEI0E6 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0E6 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6518,1,0)
+ ;;^UTILITY(U,$J,358.3,17893,1,3,0)
+ ;;=3^Fatty Liver NEC
+ ;;^UTILITY(U,$J,358.3,17893,1,4,0)
+ ;;=4^K76.0
+ ;;^UTILITY(U,$J,358.3,17893,2)
+ ;;=^5008831
+ ;;^UTILITY(U,$J,358.3,17894,0)
+ ;;=K75.9^^53^750^16
+ ;;^UTILITY(U,$J,358.3,17894,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6518,1,3,0)
- ;;=3^Delta-Beta Thalassemia
- ;;^UTILITY(U,$J,358.3,6518,1,4,0)
- ;;=4^D56.2
- ;;^UTILITY(U,$J,358.3,6518,2)
- ;;=^340496
- ;;^UTILITY(U,$J,358.3,6519,0)
- ;;=D75.9^^30^396^53
- ;;^UTILITY(U,$J,358.3,6519,1,0)
+ ;;^UTILITY(U,$J,358.3,17894,1,3,0)
+ ;;=3^Inflammatory Liver Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,17894,1,4,0)
+ ;;=4^K75.9
+ ;;^UTILITY(U,$J,358.3,17894,2)
+ ;;=^5008830
+ ;;^UTILITY(U,$J,358.3,17895,0)
+ ;;=K86.1^^53^750^27
+ ;;^UTILITY(U,$J,358.3,17895,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6519,1,3,0)
- ;;=3^Disease of Blood/Blood-Forming Organs,Unspec
- ;;^UTILITY(U,$J,358.3,6519,1,4,0)
- ;;=4^D75.9
- ;;^UTILITY(U,$J,358.3,6519,2)
- ;;=^5002393
- ;;^UTILITY(U,$J,358.3,6520,0)
- ;;=D59.0^^30^396^56
- ;;^UTILITY(U,$J,358.3,6520,1,0)
+ ;;^UTILITY(U,$J,358.3,17895,1,3,0)
+ ;;=3^Pancreatitis,Chronic
+ ;;^UTILITY(U,$J,358.3,17895,1,4,0)
+ ;;=4^K86.1
+ ;;^UTILITY(U,$J,358.3,17895,2)
+ ;;=^5008889
+ ;;^UTILITY(U,$J,358.3,17896,0)
+ ;;=K92.1^^53^750^23
+ ;;^UTILITY(U,$J,358.3,17896,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6520,1,3,0)
- ;;=3^Drug-Induced Autoimmune Hemolytic Anemia
- ;;^UTILITY(U,$J,358.3,6520,1,4,0)
- ;;=4^D59.0
- ;;^UTILITY(U,$J,358.3,6520,2)
- ;;=^5002323
- ;;^UTILITY(U,$J,358.3,6521,0)
- ;;=D59.2^^30^396^57
- ;;^UTILITY(U,$J,358.3,6521,1,0)
+ ;;^UTILITY(U,$J,358.3,17896,1,3,0)
+ ;;=3^Melena
+ ;;^UTILITY(U,$J,358.3,17896,1,4,0)
+ ;;=4^K92.1
+ ;;^UTILITY(U,$J,358.3,17896,2)
+ ;;=^5008914
+ ;;^UTILITY(U,$J,358.3,17897,0)
+ ;;=K92.2^^53^750^15
+ ;;^UTILITY(U,$J,358.3,17897,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6521,1,3,0)
- ;;=3^Drug-Induced Nonautoimmune Hemolytic Anemia
- ;;^UTILITY(U,$J,358.3,6521,1,4,0)
- ;;=4^D59.2
- ;;^UTILITY(U,$J,358.3,6521,2)
- ;;=^5002325
- ;;^UTILITY(U,$J,358.3,6522,0)
- ;;=R59.9^^30^396^60
- ;;^UTILITY(U,$J,358.3,6522,1,0)
+ ;;^UTILITY(U,$J,358.3,17897,1,3,0)
+ ;;=3^Gastrointestinal Hemorrhage,Unspec
+ ;;^UTILITY(U,$J,358.3,17897,1,4,0)
+ ;;=4^K92.2
+ ;;^UTILITY(U,$J,358.3,17897,2)
+ ;;=^5008915
+ ;;^UTILITY(U,$J,358.3,17898,0)
+ ;;=R09.89^^53^750^2
+ ;;^UTILITY(U,$J,358.3,17898,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6522,1,3,0)
- ;;=3^Enlarged Lymph Nodes,Unspec
- ;;^UTILITY(U,$J,358.3,6522,1,4,0)
- ;;=4^R59.9
- ;;^UTILITY(U,$J,358.3,6522,2)
- ;;=^5019531
- ;;^UTILITY(U,$J,358.3,6523,0)
- ;;=D47.3^^30^396^61
- ;;^UTILITY(U,$J,358.3,6523,1,0)
+ ;;^UTILITY(U,$J,358.3,17898,1,3,0)
+ ;;=3^Circulatory/Respiratory Systems Symptoms/Signs
+ ;;^UTILITY(U,$J,358.3,17898,1,4,0)
+ ;;=4^R09.89
+ ;;^UTILITY(U,$J,358.3,17898,2)
+ ;;=^5019204
+ ;;^UTILITY(U,$J,358.3,17899,0)
+ ;;=R18.0^^53^750^17
+ ;;^UTILITY(U,$J,358.3,17899,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6523,1,3,0)
- ;;=3^Essential Thrombocythemia
- ;;^UTILITY(U,$J,358.3,6523,1,4,0)
- ;;=4^D47.3
- ;;^UTILITY(U,$J,358.3,6523,2)
- ;;=^5002258
- ;;^UTILITY(U,$J,358.3,6524,0)
- ;;=C82.09^^30^396^62
- ;;^UTILITY(U,$J,358.3,6524,1,0)
+ ;;^UTILITY(U,$J,358.3,17899,1,3,0)
+ ;;=3^Malignant Ascites
+ ;;^UTILITY(U,$J,358.3,17899,1,4,0)
+ ;;=4^R18.0
+ ;;^UTILITY(U,$J,358.3,17899,2)
+ ;;=^5019252
+ ;;^UTILITY(U,$J,358.3,17900,0)
+ ;;=R10.819^^53^750^1
+ ;;^UTILITY(U,$J,358.3,17900,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6524,1,3,0)
- ;;=3^Follicular Lymphoma Grade I,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,6524,1,4,0)
- ;;=4^C82.09
- ;;^UTILITY(U,$J,358.3,6524,2)
- ;;=^5001470
- ;;^UTILITY(U,$J,358.3,6525,0)
- ;;=C82.00^^30^396^63
- ;;^UTILITY(U,$J,358.3,6525,1,0)
+ ;;^UTILITY(U,$J,358.3,17900,1,3,0)
+ ;;=3^Abdominal Tenderness,Unspec Site
+ ;;^UTILITY(U,$J,358.3,17900,1,4,0)
+ ;;=4^R10.819
+ ;;^UTILITY(U,$J,358.3,17900,2)
+ ;;=^5019220
+ ;;^UTILITY(U,$J,358.3,17901,0)
+ ;;=R10.829^^53^750^29
+ ;;^UTILITY(U,$J,358.3,17901,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6525,1,3,0)
- ;;=3^Follicular Lymphoma Grade I,Unspec Site
- ;;^UTILITY(U,$J,358.3,6525,1,4,0)
- ;;=4^C82.00
- ;;^UTILITY(U,$J,358.3,6525,2)
- ;;=^5001461
- ;;^UTILITY(U,$J,358.3,6526,0)
- ;;=C82.19^^30^396^64
- ;;^UTILITY(U,$J,358.3,6526,1,0)
+ ;;^UTILITY(U,$J,358.3,17901,1,3,0)
+ ;;=3^Rebound Abdominal Tenderness,Unspec Site
+ ;;^UTILITY(U,$J,358.3,17901,1,4,0)
+ ;;=4^R10.829
+ ;;^UTILITY(U,$J,358.3,17901,2)
+ ;;=^5019227
+ ;;^UTILITY(U,$J,358.3,17902,0)
+ ;;=R19.5^^53^750^12
+ ;;^UTILITY(U,$J,358.3,17902,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6526,1,3,0)
- ;;=3^Follicular Lymphoma Grade II,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,6526,1,4,0)
- ;;=4^C82.19
- ;;^UTILITY(U,$J,358.3,6526,2)
- ;;=^5001480
- ;;^UTILITY(U,$J,358.3,6527,0)
- ;;=C82.10^^30^396^65
- ;;^UTILITY(U,$J,358.3,6527,1,0)
+ ;;^UTILITY(U,$J,358.3,17902,1,3,0)
+ ;;=3^Fecal Abnormalities NEC
+ ;;^UTILITY(U,$J,358.3,17902,1,4,0)
+ ;;=4^R19.5
+ ;;^UTILITY(U,$J,358.3,17902,2)
+ ;;=^5019274
+ ;;^UTILITY(U,$J,358.3,17903,0)
+ ;;=E46.^^53^750^20
+ ;;^UTILITY(U,$J,358.3,17903,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6527,1,3,0)
- ;;=3^Follicular Lymphoma Grade II,Unspec Site
- ;;^UTILITY(U,$J,358.3,6527,1,4,0)
- ;;=4^C82.10
- ;;^UTILITY(U,$J,358.3,6527,2)
- ;;=^5001471
- ;;^UTILITY(U,$J,358.3,6528,0)
- ;;=C82.29^^30^396^66
- ;;^UTILITY(U,$J,358.3,6528,1,0)
+ ;;^UTILITY(U,$J,358.3,17903,1,3,0)
+ ;;=3^Malnutrition,Unspec Protein Calorie
+ ;;^UTILITY(U,$J,358.3,17903,1,4,0)
+ ;;=4^E46.
+ ;;^UTILITY(U,$J,358.3,17903,2)
+ ;;=^5002790
+ ;;^UTILITY(U,$J,358.3,17904,0)
+ ;;=E44.1^^53^750^18
+ ;;^UTILITY(U,$J,358.3,17904,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6528,1,3,0)
- ;;=3^Follicular Lymphoma Grade III,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,6528,1,4,0)
- ;;=4^C82.29
- ;;^UTILITY(U,$J,358.3,6528,2)
- ;;=^5001490
- ;;^UTILITY(U,$J,358.3,6529,0)
- ;;=C82.20^^30^396^67
- ;;^UTILITY(U,$J,358.3,6529,1,0)
+ ;;^UTILITY(U,$J,358.3,17904,1,3,0)
+ ;;=3^Malnutrition,Mild Protein Calorie
+ ;;^UTILITY(U,$J,358.3,17904,1,4,0)
+ ;;=4^E44.1
+ ;;^UTILITY(U,$J,358.3,17904,2)
+ ;;=^5002788
+ ;;^UTILITY(U,$J,358.3,17905,0)
+ ;;=E44.0^^53^750^19
+ ;;^UTILITY(U,$J,358.3,17905,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6529,1,3,0)
- ;;=3^Follicular Lymphoma Grade III,Unspec Site
- ;;^UTILITY(U,$J,358.3,6529,1,4,0)
- ;;=4^C82.20
- ;;^UTILITY(U,$J,358.3,6529,2)
- ;;=^5001481
- ;;^UTILITY(U,$J,358.3,6530,0)
- ;;=C82.39^^30^396^68
- ;;^UTILITY(U,$J,358.3,6530,1,0)
+ ;;^UTILITY(U,$J,358.3,17905,1,3,0)
+ ;;=3^Malnutrition,Moderate Protein Calorie
+ ;;^UTILITY(U,$J,358.3,17905,1,4,0)
+ ;;=4^E44.0
+ ;;^UTILITY(U,$J,358.3,17905,2)
+ ;;=^5002787
+ ;;^UTILITY(U,$J,358.3,17906,0)
+ ;;=E43.^^53^750^21
+ ;;^UTILITY(U,$J,358.3,17906,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6530,1,3,0)
- ;;=3^Follicular Lymphoma Grade IIIa,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,6530,1,4,0)
- ;;=4^C82.39
- ;;^UTILITY(U,$J,358.3,6530,2)
- ;;=^5001500
+ ;;^UTILITY(U,$J,358.3,17906,1,3,0)
+ ;;=3^Malnutrition,Unspec Severe Protein Calorie
+ ;;^UTILITY(U,$J,358.3,17906,1,4,0)
+ ;;=4^E43.
+ ;;^UTILITY(U,$J,358.3,17906,2)
+ ;;=^5002786
+ ;;^UTILITY(U,$J,358.3,17907,0)
+ ;;=E42.^^53^750^22
+ ;;^UTILITY(U,$J,358.3,17907,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17907,1,3,0)
+ ;;=3^Marasmic Kwashiorkor
+ ;;^UTILITY(U,$J,358.3,17907,1,4,0)
+ ;;=4^E42.
+ ;;^UTILITY(U,$J,358.3,17907,2)
+ ;;=^5002785
+ ;;^UTILITY(U,$J,358.3,17908,0)
+ ;;=E41.^^53^750^26
+ ;;^UTILITY(U,$J,358.3,17908,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17908,1,3,0)
+ ;;=3^Nutritional Marasmus
+ ;;^UTILITY(U,$J,358.3,17908,1,4,0)
+ ;;=4^E41.
+ ;;^UTILITY(U,$J,358.3,17908,2)
+ ;;=^5002784
+ ;;^UTILITY(U,$J,358.3,17909,0)
+ ;;=N04.9^^53^751^17
+ ;;^UTILITY(U,$J,358.3,17909,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17909,1,3,0)
+ ;;=3^Nephrotic Syndrome w/ Unspec Morphologic Changes
+ ;;^UTILITY(U,$J,358.3,17909,1,4,0)
+ ;;=4^N04.9
+ ;;^UTILITY(U,$J,358.3,17909,2)
+ ;;=^5015540
+ ;;^UTILITY(U,$J,358.3,17910,0)
+ ;;=N17.9^^53^751^15
+ ;;^UTILITY(U,$J,358.3,17910,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17910,1,3,0)
+ ;;=3^Kidney Failure,Acute,Unspec
+ ;;^UTILITY(U,$J,358.3,17910,1,4,0)
+ ;;=4^N17.9
+ ;;^UTILITY(U,$J,358.3,17910,2)
+ ;;=^338532
+ ;;^UTILITY(U,$J,358.3,17911,0)
+ ;;=N18.6^^53^751^10
+ ;;^UTILITY(U,$J,358.3,17911,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17911,1,3,0)
+ ;;=3^ESRD
+ ;;^UTILITY(U,$J,358.3,17911,1,4,0)
+ ;;=4^N18.6
+ ;;^UTILITY(U,$J,358.3,17911,2)
+ ;;=^303986
+ ;;^UTILITY(U,$J,358.3,17912,0)
+ ;;=N20.0^^53^751^7
+ ;;^UTILITY(U,$J,358.3,17912,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17912,1,3,0)
+ ;;=3^Calculus of Kidney
+ ;;^UTILITY(U,$J,358.3,17912,1,4,0)
+ ;;=4^N20.0
+ ;;^UTILITY(U,$J,358.3,17912,2)
+ ;;=^67056
+ ;;^UTILITY(U,$J,358.3,17913,0)
+ ;;=N11.0^^53^751^20
+ ;;^UTILITY(U,$J,358.3,17913,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17913,1,3,0)
+ ;;=3^Nonobstructive Reflux-Associated Chronic Pyelonephritis
+ ;;^UTILITY(U,$J,358.3,17913,1,4,0)
+ ;;=4^N11.0
+ ;;^UTILITY(U,$J,358.3,17913,2)
+ ;;=^5015571
+ ;;^UTILITY(U,$J,358.3,17914,0)
+ ;;=N11.8^^53^751^23
+ ;;^UTILITY(U,$J,358.3,17914,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17914,1,3,0)
+ ;;=3^Tubulo-Interstitial Nephritis,Chronic NEC
+ ;;^UTILITY(U,$J,358.3,17914,1,4,0)
+ ;;=4^N11.8
+ ;;^UTILITY(U,$J,358.3,17914,2)
+ ;;=^5015573
+ ;;^UTILITY(U,$J,358.3,17915,0)
+ ;;=N30.90^^53^751^8
+ ;;^UTILITY(U,$J,358.3,17915,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17915,1,3,0)
+ ;;=3^Cystitis w/o Hematuria,Unspec
+ ;;^UTILITY(U,$J,358.3,17915,1,4,0)
+ ;;=4^N30.90
+ ;;^UTILITY(U,$J,358.3,17915,2)
+ ;;=^5015642
+ ;;^UTILITY(U,$J,358.3,17916,0)
+ ;;=N32.0^^53^751^1
+ ;;^UTILITY(U,$J,358.3,17916,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17916,1,3,0)
+ ;;=3^Bladder-Neck Obstruction
+ ;;^UTILITY(U,$J,358.3,17916,1,4,0)
+ ;;=4^N32.0
+ ;;^UTILITY(U,$J,358.3,17916,2)
+ ;;=^5015649
+ ;;^UTILITY(U,$J,358.3,17917,0)
+ ;;=N31.9^^53^751^18
+ ;;^UTILITY(U,$J,358.3,17917,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17917,1,3,0)
+ ;;=3^Neuromuscular Bladder Dysfunction,Unspec
+ ;;^UTILITY(U,$J,358.3,17917,1,4,0)
+ ;;=4^N31.9
+ ;;^UTILITY(U,$J,358.3,17917,2)
+ ;;=^5015648
+ ;;^UTILITY(U,$J,358.3,17918,0)
+ ;;=N40.0^^53^751^12
+ ;;^UTILITY(U,$J,358.3,17918,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17918,1,3,0)
+ ;;=3^Enlarged Prostate w/o Lower Urinary Tract Symptoms
+ ;;^UTILITY(U,$J,358.3,17918,1,4,0)
+ ;;=4^N40.0
+ ;;^UTILITY(U,$J,358.3,17918,2)
+ ;;=^5015689
+ ;;^UTILITY(U,$J,358.3,17919,0)
+ ;;=N40.1^^53^751^11
+ ;;^UTILITY(U,$J,358.3,17919,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17919,1,3,0)
+ ;;=3^Enlarged Prostate w/ Lower Urinary Tract Symptoms
+ ;;^UTILITY(U,$J,358.3,17919,1,4,0)
+ ;;=4^N40.1
+ ;;^UTILITY(U,$J,358.3,17919,2)
+ ;;=^5015690
+ ;;^UTILITY(U,$J,358.3,17920,0)
+ ;;=N45.1^^53^751^13
+ ;;^UTILITY(U,$J,358.3,17920,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17920,1,3,0)
+ ;;=3^Epididymitis
+ ;;^UTILITY(U,$J,358.3,17920,1,4,0)
+ ;;=4^N45.1
+ ;;^UTILITY(U,$J,358.3,17920,2)
+ ;;=^41396
+ ;;^UTILITY(U,$J,358.3,17921,0)
+ ;;=N45.2^^53^751^21
+ ;;^UTILITY(U,$J,358.3,17921,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17921,1,3,0)
+ ;;=3^Orchitis
+ ;;^UTILITY(U,$J,358.3,17921,1,4,0)
+ ;;=4^N45.2
+ ;;^UTILITY(U,$J,358.3,17921,2)
+ ;;=^86174
+ ;;^UTILITY(U,$J,358.3,17922,0)
+ ;;=N45.3^^53^751^14
+ ;;^UTILITY(U,$J,358.3,17922,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17922,1,3,0)
+ ;;=3^Epididymo-Orchitis
+ ;;^UTILITY(U,$J,358.3,17922,1,4,0)
+ ;;=4^N45.3
+ ;;^UTILITY(U,$J,358.3,17922,2)
+ ;;=^5015707
+ ;;^UTILITY(U,$J,358.3,17923,0)
+ ;;=Q61.3^^53^751^22
+ ;;^UTILITY(U,$J,358.3,17923,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17923,1,3,0)
+ ;;=3^Polycystic Kidney,Unspec
+ ;;^UTILITY(U,$J,358.3,17923,1,4,0)
+ ;;=4^Q61.3
+ ;;^UTILITY(U,$J,358.3,17923,2)
+ ;;=^5018797
+ ;;^UTILITY(U,$J,358.3,17924,0)
+ ;;=R30.0^^53^751^9
+ ;;^UTILITY(U,$J,358.3,17924,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17924,1,3,0)
+ ;;=3^Dysuria
+ ;;^UTILITY(U,$J,358.3,17924,1,4,0)
+ ;;=4^R30.0
+ ;;^UTILITY(U,$J,358.3,17924,2)
+ ;;=^5019322
+ ;;^UTILITY(U,$J,358.3,17925,0)
+ ;;=R33.9^^53^751^25
+ ;;^UTILITY(U,$J,358.3,17925,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17925,1,3,0)
+ ;;=3^Urine Retention,Unspec
+ ;;^UTILITY(U,$J,358.3,17925,1,4,0)
+ ;;=4^R33.9
+ ;;^UTILITY(U,$J,358.3,17925,2)
+ ;;=^5019332
+ ;;^UTILITY(U,$J,358.3,17926,0)
+ ;;=R32.^^53^751^24
+ ;;^UTILITY(U,$J,358.3,17926,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17926,1,3,0)
+ ;;=3^Urinary Incontinence,Unspec
+ ;;^UTILITY(U,$J,358.3,17926,1,4,0)
+ ;;=4^R32.
+ ;;^UTILITY(U,$J,358.3,17926,2)
+ ;;=^5019329
+ ;;^UTILITY(U,$J,358.3,17927,0)
+ ;;=R35.0^^53^751^16
+ ;;^UTILITY(U,$J,358.3,17927,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17927,1,3,0)
+ ;;=3^Micturition Frequency
+ ;;^UTILITY(U,$J,358.3,17927,1,4,0)
+ ;;=4^R35.0
+ ;;^UTILITY(U,$J,358.3,17927,2)
+ ;;=^5019334
+ ;;^UTILITY(U,$J,358.3,17928,0)
+ ;;=R35.1^^53^751^19
+ ;;^UTILITY(U,$J,358.3,17928,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17928,1,3,0)
+ ;;=3^Nocturia
+ ;;^UTILITY(U,$J,358.3,17928,1,4,0)
+ ;;=4^R35.1
+ ;;^UTILITY(U,$J,358.3,17928,2)
+ ;;=^5019335
+ ;;^UTILITY(U,$J,358.3,17929,0)
+ ;;=N18.1^^53^751^2
+ ;;^UTILITY(U,$J,358.3,17929,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17929,1,3,0)
+ ;;=3^CKD,Stage 1
+ ;;^UTILITY(U,$J,358.3,17929,1,4,0)
+ ;;=4^N18.1
+ ;;^UTILITY(U,$J,358.3,17929,2)
+ ;;=^5015602
+ ;;^UTILITY(U,$J,358.3,17930,0)
+ ;;=N18.2^^53^751^3

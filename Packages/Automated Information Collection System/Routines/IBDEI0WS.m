@@ -1,126 +1,354 @@
-IBDEI0WS ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0WS ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15384,0)
- ;;=F05.^^58^661^4
- ;;^UTILITY(U,$J,358.3,15384,1,0)
+ ;;^UTILITY(U,$J,358.3,43033,1,4,0)
+ ;;=4^Z85.820
+ ;;^UTILITY(U,$J,358.3,43033,2)
+ ;;=^5063441
+ ;;^UTILITY(U,$J,358.3,43034,0)
+ ;;=Z85.828^^127^1856^98
+ ;;^UTILITY(U,$J,358.3,43034,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15384,1,3,0)
- ;;=3^Delirium d/t Another Medical Condition
- ;;^UTILITY(U,$J,358.3,15384,1,4,0)
- ;;=4^F05.
- ;;^UTILITY(U,$J,358.3,15384,2)
- ;;=^5003052
- ;;^UTILITY(U,$J,358.3,15385,0)
- ;;=F05.^^58^661^5
- ;;^UTILITY(U,$J,358.3,15385,1,0)
+ ;;^UTILITY(U,$J,358.3,43034,1,3,0)
+ ;;=3^Personal Hx of Malig Neop of Skin
+ ;;^UTILITY(U,$J,358.3,43034,1,4,0)
+ ;;=4^Z85.828
+ ;;^UTILITY(U,$J,358.3,43034,2)
+ ;;=^5063443
+ ;;^UTILITY(U,$J,358.3,43035,0)
+ ;;=Z85.71^^127^1856^78
+ ;;^UTILITY(U,$J,358.3,43035,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15385,1,3,0)
- ;;=3^Delirium d/t Multiple Etiologies
- ;;^UTILITY(U,$J,358.3,15385,1,4,0)
- ;;=4^F05.
- ;;^UTILITY(U,$J,358.3,15385,2)
- ;;=^5003052
- ;;^UTILITY(U,$J,358.3,15386,0)
- ;;=A81.00^^58^662^9
- ;;^UTILITY(U,$J,358.3,15386,1,0)
+ ;;^UTILITY(U,$J,358.3,43035,1,3,0)
+ ;;=3^Personal Hx of Hodgkin Lymphoma
+ ;;^UTILITY(U,$J,358.3,43035,1,4,0)
+ ;;=4^Z85.71
+ ;;^UTILITY(U,$J,358.3,43035,2)
+ ;;=^5063435
+ ;;^UTILITY(U,$J,358.3,43036,0)
+ ;;=Z65.8^^127^1856^138
+ ;;^UTILITY(U,$J,358.3,43036,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15386,1,3,0)
- ;;=3^Creutzfeldt-Jakob Disease,Unspec
- ;;^UTILITY(U,$J,358.3,15386,1,4,0)
- ;;=4^A81.00
- ;;^UTILITY(U,$J,358.3,15386,2)
- ;;=^5000409
- ;;^UTILITY(U,$J,358.3,15387,0)
- ;;=A81.01^^58^662^38
- ;;^UTILITY(U,$J,358.3,15387,1,0)
+ ;;^UTILITY(U,$J,358.3,43036,1,3,0)
+ ;;=3^Psychosocial Circumstance Related Problems
+ ;;^UTILITY(U,$J,358.3,43036,1,4,0)
+ ;;=4^Z65.8
+ ;;^UTILITY(U,$J,358.3,43036,2)
+ ;;=^5063185
+ ;;^UTILITY(U,$J,358.3,43037,0)
+ ;;=Z86.11^^127^1856^115
+ ;;^UTILITY(U,$J,358.3,43037,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15387,1,3,0)
- ;;=3^Variant Creutzfeldt-Jakob Disease
- ;;^UTILITY(U,$J,358.3,15387,1,4,0)
- ;;=4^A81.01
- ;;^UTILITY(U,$J,358.3,15387,2)
- ;;=^336701
- ;;^UTILITY(U,$J,358.3,15388,0)
- ;;=A81.09^^58^662^8
- ;;^UTILITY(U,$J,358.3,15388,1,0)
+ ;;^UTILITY(U,$J,358.3,43037,1,3,0)
+ ;;=3^Personal Hx of Tuberculosis
+ ;;^UTILITY(U,$J,358.3,43037,1,4,0)
+ ;;=4^Z86.11
+ ;;^UTILITY(U,$J,358.3,43037,2)
+ ;;=^5063461
+ ;;^UTILITY(U,$J,358.3,43038,0)
+ ;;=Z86.13^^127^1856^82
+ ;;^UTILITY(U,$J,358.3,43038,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15388,1,3,0)
- ;;=3^Creutzfeldt-Jakob Disease,Other
- ;;^UTILITY(U,$J,358.3,15388,1,4,0)
- ;;=4^A81.09
- ;;^UTILITY(U,$J,358.3,15388,2)
- ;;=^5000410
- ;;^UTILITY(U,$J,358.3,15389,0)
- ;;=A81.2^^58^662^33
- ;;^UTILITY(U,$J,358.3,15389,1,0)
+ ;;^UTILITY(U,$J,358.3,43038,1,3,0)
+ ;;=3^Personal Hx of Malaria
+ ;;^UTILITY(U,$J,358.3,43038,1,4,0)
+ ;;=4^Z86.13
+ ;;^UTILITY(U,$J,358.3,43038,2)
+ ;;=^5063463
+ ;;^UTILITY(U,$J,358.3,43039,0)
+ ;;=Z86.73^^127^1856^112
+ ;;^UTILITY(U,$J,358.3,43039,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15389,1,3,0)
- ;;=3^Progressive Multifocal Leukoencephalopathy
- ;;^UTILITY(U,$J,358.3,15389,1,4,0)
- ;;=4^A81.2
- ;;^UTILITY(U,$J,358.3,15389,2)
- ;;=^5000411
- ;;^UTILITY(U,$J,358.3,15390,0)
- ;;=F01.50^^58^662^31
- ;;^UTILITY(U,$J,358.3,15390,1,0)
+ ;;^UTILITY(U,$J,358.3,43039,1,3,0)
+ ;;=3^Personal Hx of TIA & Cereb Infrc w/o Residual Deficits
+ ;;^UTILITY(U,$J,358.3,43039,1,4,0)
+ ;;=4^Z86.73
+ ;;^UTILITY(U,$J,358.3,43039,2)
+ ;;=^5063477
+ ;;^UTILITY(U,$J,358.3,43040,0)
+ ;;=Z86.79^^127^1856^75
+ ;;^UTILITY(U,$J,358.3,43040,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15390,1,3,0)
- ;;=3^Probable Major Vascular Neurocognitive Disorder w/o Behavioral Disturbance
- ;;^UTILITY(U,$J,358.3,15390,1,4,0)
- ;;=4^F01.50
- ;;^UTILITY(U,$J,358.3,15390,2)
- ;;=^5003046
- ;;^UTILITY(U,$J,358.3,15391,0)
- ;;=F01.51^^58^662^32
- ;;^UTILITY(U,$J,358.3,15391,1,0)
+ ;;^UTILITY(U,$J,358.3,43040,1,3,0)
+ ;;=3^Personal Hx of Circulatory System Diseases
+ ;;^UTILITY(U,$J,358.3,43040,1,4,0)
+ ;;=4^Z86.79
+ ;;^UTILITY(U,$J,358.3,43040,2)
+ ;;=^5063479
+ ;;^UTILITY(U,$J,358.3,43041,0)
+ ;;=Z91.040^^127^1856^64
+ ;;^UTILITY(U,$J,358.3,43041,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15391,1,3,0)
- ;;=3^Probable Major Vascular Neurocognitive Disorder w/ Behavioral Disturbance
- ;;^UTILITY(U,$J,358.3,15391,1,4,0)
- ;;=4^F01.51
- ;;^UTILITY(U,$J,358.3,15391,2)
- ;;=^5003047
- ;;^UTILITY(U,$J,358.3,15392,0)
- ;;=F10.27^^58^662^1
- ;;^UTILITY(U,$J,358.3,15392,1,0)
+ ;;^UTILITY(U,$J,358.3,43041,1,3,0)
+ ;;=3^Latex Allergy Status
+ ;;^UTILITY(U,$J,358.3,43041,1,4,0)
+ ;;=4^Z91.040
+ ;;^UTILITY(U,$J,358.3,43041,2)
+ ;;=^5063607
+ ;;^UTILITY(U,$J,358.3,43042,0)
+ ;;=Z98.89^^127^1856^120
+ ;;^UTILITY(U,$J,358.3,43042,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15392,1,3,0)
- ;;=3^Alcohol-Induced Major Neurocognitive Disorder,Nonamnestic Confabulatory Type
- ;;^UTILITY(U,$J,358.3,15392,1,4,0)
- ;;=4^F10.27
- ;;^UTILITY(U,$J,358.3,15392,2)
- ;;=^5003095
- ;;^UTILITY(U,$J,358.3,15393,0)
- ;;=F19.97^^58^662^37
- ;;^UTILITY(U,$J,358.3,15393,1,0)
+ ;;^UTILITY(U,$J,358.3,43042,1,3,0)
+ ;;=3^Postprocedural States/Hx of Surgery NEC
+ ;;^UTILITY(U,$J,358.3,43042,1,4,0)
+ ;;=4^Z98.89
+ ;;^UTILITY(U,$J,358.3,43042,2)
+ ;;=^5063754
+ ;;^UTILITY(U,$J,358.3,43043,0)
+ ;;=Z92.3^^127^1856^79
+ ;;^UTILITY(U,$J,358.3,43043,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15393,1,3,0)
- ;;=3^Substance-Induced Major Neurocognitive Disorder NEC
- ;;^UTILITY(U,$J,358.3,15393,1,4,0)
- ;;=4^F19.97
- ;;^UTILITY(U,$J,358.3,15393,2)
- ;;=^5003465
- ;;^UTILITY(U,$J,358.3,15394,0)
- ;;=F02.80^^58^662^13
- ;;^UTILITY(U,$J,358.3,15394,1,0)
+ ;;^UTILITY(U,$J,358.3,43043,1,3,0)
+ ;;=3^Personal Hx of Irradiation
+ ;;^UTILITY(U,$J,358.3,43043,1,4,0)
+ ;;=4^Z92.3
+ ;;^UTILITY(U,$J,358.3,43043,2)
+ ;;=^5063637
+ ;;^UTILITY(U,$J,358.3,43044,0)
+ ;;=Z91.120^^127^1856^60
+ ;;^UTILITY(U,$J,358.3,43044,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15394,1,3,0)
- ;;=3^Dementia in Oth Diseases Classified Elsewhere w/o Behavorial Disturbance
- ;;^UTILITY(U,$J,358.3,15394,1,4,0)
- ;;=4^F02.80
- ;;^UTILITY(U,$J,358.3,15394,2)
- ;;=^5003048
- ;;^UTILITY(U,$J,358.3,15395,0)
- ;;=F02.81^^58^662^14
- ;;^UTILITY(U,$J,358.3,15395,1,0)
+ ;;^UTILITY(U,$J,358.3,43044,1,3,0)
+ ;;=3^Intentional Underdose of Meds d/t Financial Hardship
+ ;;^UTILITY(U,$J,358.3,43044,1,4,0)
+ ;;=4^Z91.120
+ ;;^UTILITY(U,$J,358.3,43044,2)
+ ;;=^5063612
+ ;;^UTILITY(U,$J,358.3,43045,0)
+ ;;=Z91.11^^127^1856^69
+ ;;^UTILITY(U,$J,358.3,43045,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15395,1,3,0)
- ;;=3^Dementia in Oth Diseases Classified Elsewhere w/ Behavioral Disturbance
- ;;^UTILITY(U,$J,358.3,15395,1,4,0)
- ;;=4^F02.81
- ;;^UTILITY(U,$J,358.3,15395,2)
- ;;=^5003049
- ;;^UTILITY(U,$J,358.3,15396,0)
- ;;=F06.8^^58^662^24
+ ;;^UTILITY(U,$J,358.3,43045,1,3,0)
+ ;;=3^Noncompliance w/ Dietary Regimen
+ ;;^UTILITY(U,$J,358.3,43045,1,4,0)
+ ;;=4^Z91.11
+ ;;^UTILITY(U,$J,358.3,43045,2)
+ ;;=^5063611
+ ;;^UTILITY(U,$J,358.3,43046,0)
+ ;;=Z87.891^^127^1856^103
+ ;;^UTILITY(U,$J,358.3,43046,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43046,1,3,0)
+ ;;=3^Personal Hx of Nicotine Dependence
+ ;;^UTILITY(U,$J,358.3,43046,1,4,0)
+ ;;=4^Z87.891
+ ;;^UTILITY(U,$J,358.3,43046,2)
+ ;;=^5063518
+ ;;^UTILITY(U,$J,358.3,43047,0)
+ ;;=Z77.090^^127^1856^11
+ ;;^UTILITY(U,$J,358.3,43047,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43047,1,3,0)
+ ;;=3^Asbestos Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,43047,1,4,0)
+ ;;=4^Z77.090
+ ;;^UTILITY(U,$J,358.3,43047,2)
+ ;;=^5063312
+ ;;^UTILITY(U,$J,358.3,43048,0)
+ ;;=Z57.8^^127^1856^72
+ ;;^UTILITY(U,$J,358.3,43048,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43048,1,3,0)
+ ;;=3^Occupational Exposure to Other Risk Factors
+ ;;^UTILITY(U,$J,358.3,43048,1,4,0)
+ ;;=4^Z57.8
+ ;;^UTILITY(U,$J,358.3,43048,2)
+ ;;=^5063127
+ ;;^UTILITY(U,$J,358.3,43049,0)
+ ;;=Z77.21^^127^1856^53
+ ;;^UTILITY(U,$J,358.3,43049,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43049,1,3,0)
+ ;;=3^Hazardous Body Fluid Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,43049,1,4,0)
+ ;;=4^Z77.21
+ ;;^UTILITY(U,$J,358.3,43049,2)
+ ;;=^5063323
+ ;;^UTILITY(U,$J,358.3,43050,0)
+ ;;=Z91.81^^127^1856^57
+ ;;^UTILITY(U,$J,358.3,43050,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43050,1,3,0)
+ ;;=3^History of Falling
+ ;;^UTILITY(U,$J,358.3,43050,1,4,0)
+ ;;=4^Z91.81
+ ;;^UTILITY(U,$J,358.3,43050,2)
+ ;;=^5063625
+ ;;^UTILITY(U,$J,358.3,43051,0)
+ ;;=Z91.89^^127^1856^118
+ ;;^UTILITY(U,$J,358.3,43051,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43051,1,3,0)
+ ;;=3^Personal Risk Factors NEC
+ ;;^UTILITY(U,$J,358.3,43051,1,4,0)
+ ;;=4^Z91.89
+ ;;^UTILITY(U,$J,358.3,43051,2)
+ ;;=^5063628
+ ;;^UTILITY(U,$J,358.3,43052,0)
+ ;;=Z92.89^^127^1856^106
+ ;;^UTILITY(U,$J,358.3,43052,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43052,1,3,0)
+ ;;=3^Personal Hx of Other Medical Treatment
+ ;;^UTILITY(U,$J,358.3,43052,1,4,0)
+ ;;=4^Z92.89
+ ;;^UTILITY(U,$J,358.3,43052,2)
+ ;;=^5063641
+ ;;^UTILITY(U,$J,358.3,43053,0)
+ ;;=Z77.110^^127^1856^9
+ ;;^UTILITY(U,$J,358.3,43053,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43053,1,3,0)
+ ;;=3^Air Pollution Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,43053,1,4,0)
+ ;;=4^Z77.110
+ ;;^UTILITY(U,$J,358.3,43053,2)
+ ;;=^5063314
+ ;;^UTILITY(U,$J,358.3,43054,0)
+ ;;=Z77.112^^127^1856^142
+ ;;^UTILITY(U,$J,358.3,43054,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43054,1,3,0)
+ ;;=3^Soil Pollution Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,43054,1,4,0)
+ ;;=4^Z77.112
+ ;;^UTILITY(U,$J,358.3,43054,2)
+ ;;=^5063316
+ ;;^UTILITY(U,$J,358.3,43055,0)
+ ;;=Z77.111^^127^1856^148
+ ;;^UTILITY(U,$J,358.3,43055,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43055,1,3,0)
+ ;;=3^Water Pollution Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,43055,1,4,0)
+ ;;=4^Z77.111
+ ;;^UTILITY(U,$J,358.3,43055,2)
+ ;;=^5063315
+ ;;^UTILITY(U,$J,358.3,43056,0)
+ ;;=Z77.128^^127^1856^119
+ ;;^UTILITY(U,$J,358.3,43056,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43056,1,3,0)
+ ;;=3^Physical Environment Hazards Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,43056,1,4,0)
+ ;;=4^Z77.128
+ ;;^UTILITY(U,$J,358.3,43056,2)
+ ;;=^5063322
+ ;;^UTILITY(U,$J,358.3,43057,0)
+ ;;=Z77.123^^127^1856^140
+ ;;^UTILITY(U,$J,358.3,43057,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43057,1,3,0)
+ ;;=3^Radon/Radiation Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,43057,1,4,0)
+ ;;=4^Z77.123
+ ;;^UTILITY(U,$J,358.3,43057,2)
+ ;;=^5063321
+ ;;^UTILITY(U,$J,358.3,43058,0)
+ ;;=Z77.122^^127^1856^68
+ ;;^UTILITY(U,$J,358.3,43058,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43058,1,3,0)
+ ;;=3^Noise Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,43058,1,4,0)
+ ;;=4^Z77.122
+ ;;^UTILITY(U,$J,358.3,43058,2)
+ ;;=^5063320
+ ;;^UTILITY(U,$J,358.3,43059,0)
+ ;;=Z77.118^^127^1856^19
+ ;;^UTILITY(U,$J,358.3,43059,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43059,1,3,0)
+ ;;=3^Environmental Pollution Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,43059,1,4,0)
+ ;;=4^Z77.118
+ ;;^UTILITY(U,$J,358.3,43059,2)
+ ;;=^5063317
+ ;;^UTILITY(U,$J,358.3,43060,0)
+ ;;=Z77.9^^127^1856^54
+ ;;^UTILITY(U,$J,358.3,43060,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43060,1,3,0)
+ ;;=3^Health Hazard Contact/Exposure
+ ;;^UTILITY(U,$J,358.3,43060,1,4,0)
+ ;;=4^Z77.9
+ ;;^UTILITY(U,$J,358.3,43060,2)
+ ;;=^5063326
+ ;;^UTILITY(U,$J,358.3,43061,0)
+ ;;=Z77.22^^127^1856^18
+ ;;^UTILITY(U,$J,358.3,43061,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43061,1,3,0)
+ ;;=3^Environmental Exposure Tobacco Smoke/Second-Hand Smoke
+ ;;^UTILITY(U,$J,358.3,43061,1,4,0)
+ ;;=4^Z77.22
+ ;;^UTILITY(U,$J,358.3,43061,2)
+ ;;=^5063324
+ ;;^UTILITY(U,$J,358.3,43062,0)
+ ;;=Z80.0^^127^1856^35
+ ;;^UTILITY(U,$J,358.3,43062,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43062,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Digestive Organs
+ ;;^UTILITY(U,$J,358.3,43062,1,4,0)
+ ;;=4^Z80.0
+ ;;^UTILITY(U,$J,358.3,43062,2)
+ ;;=^5063344
+ ;;^UTILITY(U,$J,358.3,43063,0)
+ ;;=Z80.1^^127^1856^41
+ ;;^UTILITY(U,$J,358.3,43063,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43063,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Trachea,Bronc & Lung
+ ;;^UTILITY(U,$J,358.3,43063,1,4,0)
+ ;;=4^Z80.1
+ ;;^UTILITY(U,$J,358.3,43063,2)
+ ;;=^5063345
+ ;;^UTILITY(U,$J,358.3,43064,0)
+ ;;=Z80.3^^127^1856^34
+ ;;^UTILITY(U,$J,358.3,43064,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43064,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Breast
+ ;;^UTILITY(U,$J,358.3,43064,1,4,0)
+ ;;=4^Z80.3
+ ;;^UTILITY(U,$J,358.3,43064,2)
+ ;;=^5063347
+ ;;^UTILITY(U,$J,358.3,43065,0)
+ ;;=Z80.41^^127^1856^38
+ ;;^UTILITY(U,$J,358.3,43065,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43065,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Ovary
+ ;;^UTILITY(U,$J,358.3,43065,1,4,0)
+ ;;=4^Z80.41
+ ;;^UTILITY(U,$J,358.3,43065,2)
+ ;;=^5063348
+ ;;^UTILITY(U,$J,358.3,43066,0)
+ ;;=Z80.42^^127^1856^39
+ ;;^UTILITY(U,$J,358.3,43066,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43066,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Prostate
+ ;;^UTILITY(U,$J,358.3,43066,1,4,0)
+ ;;=4^Z80.42
+ ;;^UTILITY(U,$J,358.3,43066,2)
+ ;;=^5063349
+ ;;^UTILITY(U,$J,358.3,43067,0)
+ ;;=Z80.43^^127^1856^40
+ ;;^UTILITY(U,$J,358.3,43067,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43067,1,3,0)
+ ;;=3^Family Hx of Malig Neop of Testis
+ ;;^UTILITY(U,$J,358.3,43067,1,4,0)
+ ;;=4^Z80.43
+ ;;^UTILITY(U,$J,358.3,43067,2)
+ ;;=^5063350
+ ;;^UTILITY(U,$J,358.3,43068,0)
+ ;;=Z80.6^^127^1856^32
+ ;;^UTILITY(U,$J,358.3,43068,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43068,1,3,0)
+ ;;=3^Family Hx of Leukemia

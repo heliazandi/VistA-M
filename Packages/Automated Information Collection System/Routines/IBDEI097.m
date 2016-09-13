@@ -1,130 +1,366 @@
-IBDEI097 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI097 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,4020,1,0)
+ ;;^UTILITY(U,$J,358.3,11635,1,4,0)
+ ;;=4^B82.9
+ ;;^UTILITY(U,$J,358.3,11635,2)
+ ;;=^5000798
+ ;;^UTILITY(U,$J,358.3,11636,0)
+ ;;=A49.02^^40^587^11
+ ;;^UTILITY(U,$J,358.3,11636,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4020,1,3,0)
- ;;=3^Fall from Non-Moving Motorized Scooter,Subsequent
- ;;^UTILITY(U,$J,358.3,4020,1,4,0)
- ;;=4^W05.2XXD
- ;;^UTILITY(U,$J,358.3,4020,2)
- ;;=^5059557
- ;;^UTILITY(U,$J,358.3,4021,0)
- ;;=W05.1XXD^^18^226^16
- ;;^UTILITY(U,$J,358.3,4021,1,0)
+ ;;^UTILITY(U,$J,358.3,11636,1,3,0)
+ ;;=3^Infection,MRSA,Unspec Site
+ ;;^UTILITY(U,$J,358.3,11636,1,4,0)
+ ;;=4^A49.02
+ ;;^UTILITY(U,$J,358.3,11636,2)
+ ;;=^5000236
+ ;;^UTILITY(U,$J,358.3,11637,0)
+ ;;=A49.3^^40^587^12
+ ;;^UTILITY(U,$J,358.3,11637,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4021,1,3,0)
- ;;=3^Fall from Non-Moving Nonmotorized Scooter,Subsequent
- ;;^UTILITY(U,$J,358.3,4021,1,4,0)
- ;;=4^W05.1XXD
- ;;^UTILITY(U,$J,358.3,4021,2)
- ;;=^5059554
- ;;^UTILITY(U,$J,358.3,4022,0)
- ;;=W05.0XXD^^18^226^17
- ;;^UTILITY(U,$J,358.3,4022,1,0)
+ ;;^UTILITY(U,$J,358.3,11637,1,3,0)
+ ;;=3^Infection,Mycoplasma,Unspec Site
+ ;;^UTILITY(U,$J,358.3,11637,1,4,0)
+ ;;=4^A49.3
+ ;;^UTILITY(U,$J,358.3,11637,2)
+ ;;=^5000239
+ ;;^UTILITY(U,$J,358.3,11638,0)
+ ;;=B49.^^40^587^13
+ ;;^UTILITY(U,$J,358.3,11638,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4022,1,3,0)
- ;;=3^Fall from Non-Moving Wheelchair,Subsequent
- ;;^UTILITY(U,$J,358.3,4022,1,4,0)
- ;;=4^W05.0XXD
- ;;^UTILITY(U,$J,358.3,4022,2)
- ;;=^5059551
- ;;^UTILITY(U,$J,358.3,4023,0)
- ;;=W18.12XD^^18^226^21
- ;;^UTILITY(U,$J,358.3,4023,1,0)
+ ;;^UTILITY(U,$J,358.3,11638,1,3,0)
+ ;;=3^Infection,Mycoses,Unspec
+ ;;^UTILITY(U,$J,358.3,11638,1,4,0)
+ ;;=4^B49.
+ ;;^UTILITY(U,$J,358.3,11638,2)
+ ;;=^5000690
+ ;;^UTILITY(U,$J,358.3,11639,0)
+ ;;=B89.^^40^587^14
+ ;;^UTILITY(U,$J,358.3,11639,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4023,1,3,0)
- ;;=3^Fall from Toilet w/ Strike Against Object,Subsequent
- ;;^UTILITY(U,$J,358.3,4023,1,4,0)
- ;;=4^W18.12XD
- ;;^UTILITY(U,$J,358.3,4023,2)
- ;;=^5137984
- ;;^UTILITY(U,$J,358.3,4024,0)
- ;;=W18.11XD^^18^226^22
- ;;^UTILITY(U,$J,358.3,4024,1,0)
+ ;;^UTILITY(U,$J,358.3,11639,1,3,0)
+ ;;=3^Infection,Parasitic Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,11639,1,4,0)
+ ;;=4^B89.
+ ;;^UTILITY(U,$J,358.3,11639,2)
+ ;;=^5000822
+ ;;^UTILITY(U,$J,358.3,11640,0)
+ ;;=B64.^^40^587^15
+ ;;^UTILITY(U,$J,358.3,11640,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4024,1,3,0)
- ;;=3^Fall from Toilet,Subsequent
- ;;^UTILITY(U,$J,358.3,4024,1,4,0)
- ;;=4^W18.11XD
- ;;^UTILITY(U,$J,358.3,4024,2)
- ;;=^5059802
- ;;^UTILITY(U,$J,358.3,4025,0)
- ;;=W08.XXXD^^18^226^12
- ;;^UTILITY(U,$J,358.3,4025,1,0)
+ ;;^UTILITY(U,$J,358.3,11640,1,3,0)
+ ;;=3^Infection,Protozoal Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,11640,1,4,0)
+ ;;=4^B64.
+ ;;^UTILITY(U,$J,358.3,11640,2)
+ ;;=^5000742
+ ;;^UTILITY(U,$J,358.3,11641,0)
+ ;;=A77.9^^40^587^17
+ ;;^UTILITY(U,$J,358.3,11641,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4025,1,3,0)
- ;;=3^Fall from Furniture,Subsequent
- ;;^UTILITY(U,$J,358.3,4025,1,4,0)
- ;;=4^W08.XXXD
- ;;^UTILITY(U,$J,358.3,4025,2)
- ;;=^5059566
- ;;^UTILITY(U,$J,358.3,4026,0)
- ;;=W18.2XXD^^18^226^23
- ;;^UTILITY(U,$J,358.3,4026,1,0)
+ ;;^UTILITY(U,$J,358.3,11641,1,3,0)
+ ;;=3^Infection,Spotted Fever,Unspec
+ ;;^UTILITY(U,$J,358.3,11641,1,4,0)
+ ;;=4^A77.9
+ ;;^UTILITY(U,$J,358.3,11641,2)
+ ;;=^5000399
+ ;;^UTILITY(U,$J,358.3,11642,0)
+ ;;=A64.^^40^587^16
+ ;;^UTILITY(U,$J,358.3,11642,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4026,1,3,0)
- ;;=3^Fall in Shower/Bathtub,Subsequent
- ;;^UTILITY(U,$J,358.3,4026,1,4,0)
- ;;=4^W18.2XXD
- ;;^UTILITY(U,$J,358.3,4026,2)
- ;;=^5059807
- ;;^UTILITY(U,$J,358.3,4027,0)
- ;;=W11.XXXD^^18^226^14
- ;;^UTILITY(U,$J,358.3,4027,1,0)
+ ;;^UTILITY(U,$J,358.3,11642,1,3,0)
+ ;;=3^Infection,Sexually Transmitted Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,11642,1,4,0)
+ ;;=4^A64.
+ ;;^UTILITY(U,$J,358.3,11642,2)
+ ;;=^5000362
+ ;;^UTILITY(U,$J,358.3,11643,0)
+ ;;=A49.1^^40^587^18
+ ;;^UTILITY(U,$J,358.3,11643,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4027,1,3,0)
- ;;=3^Fall from Ladder,Subsequent
- ;;^UTILITY(U,$J,358.3,4027,1,4,0)
- ;;=4^W11.XXXD
- ;;^UTILITY(U,$J,358.3,4027,2)
- ;;=^5059596
- ;;^UTILITY(U,$J,358.3,4028,0)
- ;;=W01.10XD^^18^226^2
- ;;^UTILITY(U,$J,358.3,4028,1,0)
+ ;;^UTILITY(U,$J,358.3,11643,1,3,0)
+ ;;=3^Infection,Streptococcal,Unspec Site
+ ;;^UTILITY(U,$J,358.3,11643,1,4,0)
+ ;;=4^A49.1
+ ;;^UTILITY(U,$J,358.3,11643,2)
+ ;;=^5000237
+ ;;^UTILITY(U,$J,358.3,11644,0)
+ ;;=A15.9^^40^587^19
+ ;;^UTILITY(U,$J,358.3,11644,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4028,1,3,0)
- ;;=3^Fall Same Level w/ Strike Against Object,Subsequent
- ;;^UTILITY(U,$J,358.3,4028,1,4,0)
- ;;=4^W01.10XD
- ;;^UTILITY(U,$J,358.3,4028,2)
- ;;=^5059526
- ;;^UTILITY(U,$J,358.3,4029,0)
- ;;=W01.0XXD^^18^226^3
- ;;^UTILITY(U,$J,358.3,4029,1,0)
+ ;;^UTILITY(U,$J,358.3,11644,1,3,0)
+ ;;=3^Infection,Tuberculosis,Respiratory,Unspec
+ ;;^UTILITY(U,$J,358.3,11644,1,4,0)
+ ;;=4^A15.9
+ ;;^UTILITY(U,$J,358.3,11644,2)
+ ;;=^5000066
+ ;;^UTILITY(U,$J,358.3,11645,0)
+ ;;=B01.9^^40^587^20
+ ;;^UTILITY(U,$J,358.3,11645,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4029,1,3,0)
- ;;=3^Fall Same Level w/o Strike Against Object,Subsequent
- ;;^UTILITY(U,$J,358.3,4029,1,4,0)
- ;;=4^W01.0XXD
- ;;^UTILITY(U,$J,358.3,4029,2)
- ;;=^5059523
- ;;^UTILITY(U,$J,358.3,4030,0)
- ;;=W18.30XD^^18^226^4
- ;;^UTILITY(U,$J,358.3,4030,1,0)
+ ;;^UTILITY(U,$J,358.3,11645,1,3,0)
+ ;;=3^Infection,Varicella w/o Complication
+ ;;^UTILITY(U,$J,358.3,11645,1,4,0)
+ ;;=4^B01.9
+ ;;^UTILITY(U,$J,358.3,11645,2)
+ ;;=^5000487
+ ;;^UTILITY(U,$J,358.3,11646,0)
+ ;;=A86.^^40^587^21
+ ;;^UTILITY(U,$J,358.3,11646,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4030,1,3,0)
- ;;=3^Fall Same Level,Unspec,Subsequent
- ;;^UTILITY(U,$J,358.3,4030,1,4,0)
- ;;=4^W18.30XD
- ;;^UTILITY(U,$J,358.3,4030,2)
- ;;=^5059810
- ;;^UTILITY(U,$J,358.3,4031,0)
- ;;=W04.XXXD^^18^226^6
- ;;^UTILITY(U,$J,358.3,4031,1,0)
+ ;;^UTILITY(U,$J,358.3,11646,1,3,0)
+ ;;=3^Infection,Viral Encephalitis,Unspec
+ ;;^UTILITY(U,$J,358.3,11646,1,4,0)
+ ;;=4^A86.
+ ;;^UTILITY(U,$J,358.3,11646,2)
+ ;;=^5000431
+ ;;^UTILITY(U,$J,358.3,11647,0)
+ ;;=B19.9^^40^587^22
+ ;;^UTILITY(U,$J,358.3,11647,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4031,1,3,0)
- ;;=3^Fall While Being Carried by Oth Persons,Subsequent
- ;;^UTILITY(U,$J,358.3,4031,1,4,0)
- ;;=4^W04.XXXD
- ;;^UTILITY(U,$J,358.3,4031,2)
- ;;=^5059548
- ;;^UTILITY(U,$J,358.3,4032,0)
- ;;=W17.89XD^^18^226^18
- ;;^UTILITY(U,$J,358.3,4032,1,0)
+ ;;^UTILITY(U,$J,358.3,11647,1,3,0)
+ ;;=3^Infection,Viral Hepatitis w/o Hepatic Coma
+ ;;^UTILITY(U,$J,358.3,11647,1,4,0)
+ ;;=4^B19.9
+ ;;^UTILITY(U,$J,358.3,11647,2)
+ ;;=^5000554
+ ;;^UTILITY(U,$J,358.3,11648,0)
+ ;;=A87.9^^40^587^23
+ ;;^UTILITY(U,$J,358.3,11648,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4032,1,3,0)
- ;;=3^Fall from One Level to Another,Subsequent
- ;;^UTILITY(U,$J,358.3,4032,1,4,0)
- ;;=4^W17.89XD
+ ;;^UTILITY(U,$J,358.3,11648,1,3,0)
+ ;;=3^Infection,Viral Meningitis,Unspec
+ ;;^UTILITY(U,$J,358.3,11648,1,4,0)
+ ;;=4^A87.9
+ ;;^UTILITY(U,$J,358.3,11648,2)
+ ;;=^5000435
+ ;;^UTILITY(U,$J,358.3,11649,0)
+ ;;=B34.9^^40^587^24
+ ;;^UTILITY(U,$J,358.3,11649,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11649,1,3,0)
+ ;;=3^Infection,Viral,Unspec
+ ;;^UTILITY(U,$J,358.3,11649,1,4,0)
+ ;;=4^B34.9
+ ;;^UTILITY(U,$J,358.3,11649,2)
+ ;;=^5000603
+ ;;^UTILITY(U,$J,358.3,11650,0)
+ ;;=B02.9^^40^587^25
+ ;;^UTILITY(U,$J,358.3,11650,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11650,1,3,0)
+ ;;=3^Infection,Zoster w/o Complications
+ ;;^UTILITY(U,$J,358.3,11650,1,4,0)
+ ;;=4^B02.9
+ ;;^UTILITY(U,$J,358.3,11650,2)
+ ;;=^5000501
+ ;;^UTILITY(U,$J,358.3,11651,0)
+ ;;=Z87.01^^40^587^26
+ ;;^UTILITY(U,$J,358.3,11651,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11651,1,3,0)
+ ;;=3^Person Hx of Pneumonia
+ ;;^UTILITY(U,$J,358.3,11651,1,4,0)
+ ;;=4^Z87.01
+ ;;^UTILITY(U,$J,358.3,11651,2)
+ ;;=^5063480
+ ;;^UTILITY(U,$J,358.3,11652,0)
+ ;;=Z86.11^^40^587^29
+ ;;^UTILITY(U,$J,358.3,11652,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11652,1,3,0)
+ ;;=3^Personal Hx of Tuberculosis
+ ;;^UTILITY(U,$J,358.3,11652,1,4,0)
+ ;;=4^Z86.11
+ ;;^UTILITY(U,$J,358.3,11652,2)
+ ;;=^5063461
+ ;;^UTILITY(U,$J,358.3,11653,0)
+ ;;=Z86.13^^40^587^28
+ ;;^UTILITY(U,$J,358.3,11653,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11653,1,3,0)
+ ;;=3^Personal Hx of Malaria
+ ;;^UTILITY(U,$J,358.3,11653,1,4,0)
+ ;;=4^Z86.13
+ ;;^UTILITY(U,$J,358.3,11653,2)
+ ;;=^5063463
+ ;;^UTILITY(U,$J,358.3,11654,0)
+ ;;=Z86.14^^40^587^27
+ ;;^UTILITY(U,$J,358.3,11654,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11654,1,3,0)
+ ;;=3^Personal Hx of MRSA
+ ;;^UTILITY(U,$J,358.3,11654,1,4,0)
+ ;;=4^Z86.14
+ ;;^UTILITY(U,$J,358.3,11654,2)
+ ;;=^5063464
+ ;;^UTILITY(U,$J,358.3,11655,0)
+ ;;=B94.9^^40^587^30
+ ;;^UTILITY(U,$J,358.3,11655,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11655,1,3,0)
+ ;;=3^Sequelae of Infectious/Parasitic Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,11655,1,4,0)
+ ;;=4^B94.9
+ ;;^UTILITY(U,$J,358.3,11655,2)
+ ;;=^5000834
+ ;;^UTILITY(U,$J,358.3,11656,0)
+ ;;=B91.^^40^587^31
+ ;;^UTILITY(U,$J,358.3,11656,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11656,1,3,0)
+ ;;=3^Sequelae of Poliomyelitis
+ ;;^UTILITY(U,$J,358.3,11656,1,4,0)
+ ;;=4^B91.
+ ;;^UTILITY(U,$J,358.3,11656,2)
+ ;;=^5000828
+ ;;^UTILITY(U,$J,358.3,11657,0)
+ ;;=B90.9^^40^587^32
+ ;;^UTILITY(U,$J,358.3,11657,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11657,1,3,0)
+ ;;=3^Sequelae of Tuberculosis,Respiratory & Unspec
+ ;;^UTILITY(U,$J,358.3,11657,1,4,0)
+ ;;=4^B90.9
+ ;;^UTILITY(U,$J,358.3,11657,2)
+ ;;=^5000827
+ ;;^UTILITY(U,$J,358.3,11658,0)
+ ;;=Z90.5^^40^588^1
+ ;;^UTILITY(U,$J,358.3,11658,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11658,1,3,0)
+ ;;=3^Acquired Absence of Kidney
+ ;;^UTILITY(U,$J,358.3,11658,1,4,0)
+ ;;=4^Z90.5
+ ;;^UTILITY(U,$J,358.3,11658,2)
+ ;;=^5063590
+ ;;^UTILITY(U,$J,358.3,11659,0)
+ ;;=N20.2^^40^588^2
+ ;;^UTILITY(U,$J,358.3,11659,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11659,1,3,0)
+ ;;=3^Calculus of Kidney w/ Calculus of Ureter
+ ;;^UTILITY(U,$J,358.3,11659,1,4,0)
+ ;;=4^N20.2
+ ;;^UTILITY(U,$J,358.3,11659,2)
+ ;;=^5015609
+ ;;^UTILITY(U,$J,358.3,11660,0)
+ ;;=N21.9^^40^588^3
+ ;;^UTILITY(U,$J,358.3,11660,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11660,1,3,0)
+ ;;=3^Calculus of Lower Urinary Tract,Unspec
+ ;;^UTILITY(U,$J,358.3,11660,1,4,0)
+ ;;=4^N21.9
+ ;;^UTILITY(U,$J,358.3,11660,2)
+ ;;=^5015613
+ ;;^UTILITY(U,$J,358.3,11661,0)
+ ;;=N20.9^^40^588^4
+ ;;^UTILITY(U,$J,358.3,11661,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11661,1,3,0)
+ ;;=3^Calculus,Urinary,Unspec
+ ;;^UTILITY(U,$J,358.3,11661,1,4,0)
+ ;;=4^N20.9
+ ;;^UTILITY(U,$J,358.3,11661,2)
+ ;;=^5015610
+ ;;^UTILITY(U,$J,358.3,11662,0)
+ ;;=N28.9^^40^588^6
+ ;;^UTILITY(U,$J,358.3,11662,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11662,1,3,0)
+ ;;=3^Kidney & Ureter Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,11662,1,4,0)
+ ;;=4^N28.9
+ ;;^UTILITY(U,$J,358.3,11662,2)
+ ;;=^5015630
+ ;;^UTILITY(U,$J,358.3,11663,0)
+ ;;=I12.9^^40^588^7
+ ;;^UTILITY(U,$J,358.3,11663,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11663,1,3,0)
+ ;;=3^Kidney Disease,Chr,Hypertensive w/ Stage 1-4 or UNSPEC
+ ;;^UTILITY(U,$J,358.3,11663,1,4,0)
+ ;;=4^I12.9
+ ;;^UTILITY(U,$J,358.3,11663,2)
+ ;;=^5007066
+ ;;^UTILITY(U,$J,358.3,11664,0)
+ ;;=N18.1^^40^588^8
+ ;;^UTILITY(U,$J,358.3,11664,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11664,1,3,0)
+ ;;=3^Kidney Disease,Chr,Stage 1
+ ;;^UTILITY(U,$J,358.3,11664,1,4,0)
+ ;;=4^N18.1
+ ;;^UTILITY(U,$J,358.3,11664,2)
+ ;;=^5015602
+ ;;^UTILITY(U,$J,358.3,11665,0)
+ ;;=N18.2^^40^588^9
+ ;;^UTILITY(U,$J,358.3,11665,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11665,1,3,0)
+ ;;=3^Kidney Disease,Chr,Stage 2
+ ;;^UTILITY(U,$J,358.3,11665,1,4,0)
+ ;;=4^N18.2
+ ;;^UTILITY(U,$J,358.3,11665,2)
+ ;;=^5015603
+ ;;^UTILITY(U,$J,358.3,11666,0)
+ ;;=N18.3^^40^588^10
+ ;;^UTILITY(U,$J,358.3,11666,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11666,1,3,0)
+ ;;=3^Kidney Disease,Chr,Stage 3
+ ;;^UTILITY(U,$J,358.3,11666,1,4,0)
+ ;;=4^N18.3
+ ;;^UTILITY(U,$J,358.3,11666,2)
+ ;;=^5015604
+ ;;^UTILITY(U,$J,358.3,11667,0)
+ ;;=N18.4^^40^588^11
+ ;;^UTILITY(U,$J,358.3,11667,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11667,1,3,0)
+ ;;=3^Kidney Disease,Chr,Stage 4
+ ;;^UTILITY(U,$J,358.3,11667,1,4,0)
+ ;;=4^N18.4
+ ;;^UTILITY(U,$J,358.3,11667,2)
+ ;;=^5015605
+ ;;^UTILITY(U,$J,358.3,11668,0)
+ ;;=N18.5^^40^588^12
+ ;;^UTILITY(U,$J,358.3,11668,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11668,1,3,0)
+ ;;=3^Kidney Disease,Chr,Stage 5
+ ;;^UTILITY(U,$J,358.3,11668,1,4,0)
+ ;;=4^N18.5
+ ;;^UTILITY(U,$J,358.3,11668,2)
+ ;;=^5015606
+ ;;^UTILITY(U,$J,358.3,11669,0)
+ ;;=N18.9^^40^588^13
+ ;;^UTILITY(U,$J,358.3,11669,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11669,1,3,0)
+ ;;=3^Kidney Disease,Chr,Unspec
+ ;;^UTILITY(U,$J,358.3,11669,1,4,0)
+ ;;=4^N18.9
+ ;;^UTILITY(U,$J,358.3,11669,2)
+ ;;=^332812
+ ;;^UTILITY(U,$J,358.3,11670,0)
+ ;;=N18.6^^40^588^5
+ ;;^UTILITY(U,$J,358.3,11670,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11670,1,3,0)
+ ;;=3^ESRD
+ ;;^UTILITY(U,$J,358.3,11670,1,4,0)
+ ;;=4^N18.6
+ ;;^UTILITY(U,$J,358.3,11670,2)
+ ;;=^303986
+ ;;^UTILITY(U,$J,358.3,11671,0)
+ ;;=N17.9^^40^588^14
+ ;;^UTILITY(U,$J,358.3,11671,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11671,1,3,0)
+ ;;=3^Kidney Failure,Acute,Unspec
+ ;;^UTILITY(U,$J,358.3,11671,1,4,0)
+ ;;=4^N17.9

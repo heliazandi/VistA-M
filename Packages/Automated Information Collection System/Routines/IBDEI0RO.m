@@ -1,124 +1,362 @@
-IBDEI0RO ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0RO ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,12978,1,0)
+ ;;^UTILITY(U,$J,358.3,36559,2)
+ ;;=^5008186
+ ;;^UTILITY(U,$J,358.3,36560,0)
+ ;;=J20.8^^103^1556^14
+ ;;^UTILITY(U,$J,358.3,36560,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12978,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Lower Leg w/ Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,12978,1,4,0)
- ;;=4^L97.922
- ;;^UTILITY(U,$J,358.3,12978,2)
- ;;=^5133682
- ;;^UTILITY(U,$J,358.3,12979,0)
- ;;=L97.923^^53^582^193
- ;;^UTILITY(U,$J,358.3,12979,1,0)
+ ;;^UTILITY(U,$J,358.3,36560,1,3,0)
+ ;;=3^AC Bronchitis d/t Specified Organisms
+ ;;^UTILITY(U,$J,358.3,36560,1,4,0)
+ ;;=4^J20.8
+ ;;^UTILITY(U,$J,358.3,36560,2)
+ ;;=^5008194
+ ;;^UTILITY(U,$J,358.3,36561,0)
+ ;;=J20.4^^103^1556^11
+ ;;^UTILITY(U,$J,358.3,36561,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12979,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Lower Leg w/ Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,12979,1,4,0)
- ;;=4^L97.923
- ;;^UTILITY(U,$J,358.3,12979,2)
- ;;=^5133684
- ;;^UTILITY(U,$J,358.3,12980,0)
- ;;=L97.924^^53^582^194
- ;;^UTILITY(U,$J,358.3,12980,1,0)
+ ;;^UTILITY(U,$J,358.3,36561,1,3,0)
+ ;;=3^AC Bronchitis d/t Parainfluenza Virus
+ ;;^UTILITY(U,$J,358.3,36561,1,4,0)
+ ;;=4^J20.4
+ ;;^UTILITY(U,$J,358.3,36561,2)
+ ;;=^5008190
+ ;;^UTILITY(U,$J,358.3,36562,0)
+ ;;=J20.5^^103^1556^12
+ ;;^UTILITY(U,$J,358.3,36562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12980,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Lower Leg w/ Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,12980,1,4,0)
- ;;=4^L97.924
- ;;^UTILITY(U,$J,358.3,12980,2)
- ;;=^5133686
- ;;^UTILITY(U,$J,358.3,12981,0)
- ;;=L97.929^^53^582^195
- ;;^UTILITY(U,$J,358.3,12981,1,0)
+ ;;^UTILITY(U,$J,358.3,36562,1,3,0)
+ ;;=3^AC Bronchitis d/t Respiratory Syncytial Virus
+ ;;^UTILITY(U,$J,358.3,36562,1,4,0)
+ ;;=4^J20.5
+ ;;^UTILITY(U,$J,358.3,36562,2)
+ ;;=^5008191
+ ;;^UTILITY(U,$J,358.3,36563,0)
+ ;;=J20.6^^103^1556^13
+ ;;^UTILITY(U,$J,358.3,36563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12981,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Lower Leg w/ Unspec Severity
- ;;^UTILITY(U,$J,358.3,12981,1,4,0)
- ;;=4^L97.929
- ;;^UTILITY(U,$J,358.3,12981,2)
- ;;=^5133689
- ;;^UTILITY(U,$J,358.3,12982,0)
- ;;=L98.2^^53^582^149
- ;;^UTILITY(U,$J,358.3,12982,1,0)
+ ;;^UTILITY(U,$J,358.3,36563,1,3,0)
+ ;;=3^AC Bronchitis d/t Rhinovirus
+ ;;^UTILITY(U,$J,358.3,36563,1,4,0)
+ ;;=4^J20.6
+ ;;^UTILITY(U,$J,358.3,36563,2)
+ ;;=^5008192
+ ;;^UTILITY(U,$J,358.3,36564,0)
+ ;;=J20.2^^103^1556^15
+ ;;^UTILITY(U,$J,358.3,36564,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12982,1,3,0)
- ;;=3^Febrile Neutrophilic Dermatosis
- ;;^UTILITY(U,$J,358.3,12982,1,4,0)
- ;;=4^L98.2
- ;;^UTILITY(U,$J,358.3,12982,2)
- ;;=^5009575
- ;;^UTILITY(U,$J,358.3,12983,0)
- ;;=L98.9^^53^582^267
- ;;^UTILITY(U,$J,358.3,12983,1,0)
+ ;;^UTILITY(U,$J,358.3,36564,1,3,0)
+ ;;=3^AC Bronchitis d/t Streptococcus
+ ;;^UTILITY(U,$J,358.3,36564,1,4,0)
+ ;;=4^J20.2
+ ;;^UTILITY(U,$J,358.3,36564,2)
+ ;;=^5008188
+ ;;^UTILITY(U,$J,358.3,36565,0)
+ ;;=J20.9^^103^1556^16
+ ;;^UTILITY(U,$J,358.3,36565,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12983,1,3,0)
- ;;=3^Skin/Subcutaneous Tissue Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,12983,1,4,0)
- ;;=4^L98.9
- ;;^UTILITY(U,$J,358.3,12983,2)
- ;;=^5009595
- ;;^UTILITY(U,$J,358.3,12984,0)
- ;;=I70.731^^53^582^80
- ;;^UTILITY(U,$J,358.3,12984,1,0)
+ ;;^UTILITY(U,$J,358.3,36565,1,3,0)
+ ;;=3^AC Bronchitis,Unspec
+ ;;^UTILITY(U,$J,358.3,36565,1,4,0)
+ ;;=4^J20.9
+ ;;^UTILITY(U,$J,358.3,36565,2)
+ ;;=^5008195
+ ;;^UTILITY(U,$J,358.3,36566,0)
+ ;;=H60.523^^103^1556^17
+ ;;^UTILITY(U,$J,358.3,36566,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12984,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Thigh Ulcer
- ;;^UTILITY(U,$J,358.3,12984,1,4,0)
- ;;=4^I70.731
- ;;^UTILITY(U,$J,358.3,12984,2)
- ;;=^5007769
- ;;^UTILITY(U,$J,358.3,12985,0)
- ;;=I70.732^^53^582^81
- ;;^UTILITY(U,$J,358.3,12985,1,0)
+ ;;^UTILITY(U,$J,358.3,36566,1,3,0)
+ ;;=3^AC Chemical Otitis Externa,Bilateral
+ ;;^UTILITY(U,$J,358.3,36566,1,4,0)
+ ;;=4^H60.523
+ ;;^UTILITY(U,$J,358.3,36566,2)
+ ;;=^5006476
+ ;;^UTILITY(U,$J,358.3,36567,0)
+ ;;=H60.522^^103^1556^18
+ ;;^UTILITY(U,$J,358.3,36567,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12985,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Calf Ulcer
- ;;^UTILITY(U,$J,358.3,12985,1,4,0)
- ;;=4^I70.732
- ;;^UTILITY(U,$J,358.3,12985,2)
- ;;=^5007770
- ;;^UTILITY(U,$J,358.3,12986,0)
- ;;=I70.733^^53^582^82
- ;;^UTILITY(U,$J,358.3,12986,1,0)
+ ;;^UTILITY(U,$J,358.3,36567,1,3,0)
+ ;;=3^AC Chemical Otitis Externa,Left Ear
+ ;;^UTILITY(U,$J,358.3,36567,1,4,0)
+ ;;=4^H60.522
+ ;;^UTILITY(U,$J,358.3,36567,2)
+ ;;=^5006475
+ ;;^UTILITY(U,$J,358.3,36568,0)
+ ;;=H60.521^^103^1556^19
+ ;;^UTILITY(U,$J,358.3,36568,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12986,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Ankle Ulcer
- ;;^UTILITY(U,$J,358.3,12986,1,4,0)
- ;;=4^I70.733
- ;;^UTILITY(U,$J,358.3,12986,2)
- ;;=^5007771
- ;;^UTILITY(U,$J,358.3,12987,0)
- ;;=I70.734^^53^582^83
- ;;^UTILITY(U,$J,358.3,12987,1,0)
+ ;;^UTILITY(U,$J,358.3,36568,1,3,0)
+ ;;=3^AC Chemical Otitis Externa,Right Ear
+ ;;^UTILITY(U,$J,358.3,36568,1,4,0)
+ ;;=4^H60.521
+ ;;^UTILITY(U,$J,358.3,36568,2)
+ ;;=^5006474
+ ;;^UTILITY(U,$J,358.3,36569,0)
+ ;;=H60.543^^103^1556^20
+ ;;^UTILITY(U,$J,358.3,36569,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12987,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Heel/Midfoot Ulcer
- ;;^UTILITY(U,$J,358.3,12987,1,4,0)
- ;;=4^I70.734
- ;;^UTILITY(U,$J,358.3,12987,2)
- ;;=^5007772
- ;;^UTILITY(U,$J,358.3,12988,0)
- ;;=I70.735^^53^582^84
- ;;^UTILITY(U,$J,358.3,12988,1,0)
+ ;;^UTILITY(U,$J,358.3,36569,1,3,0)
+ ;;=3^AC Eczematoid Otitis Externa,Bilateral
+ ;;^UTILITY(U,$J,358.3,36569,1,4,0)
+ ;;=4^H60.543
+ ;;^UTILITY(U,$J,358.3,36569,2)
+ ;;=^5006484
+ ;;^UTILITY(U,$J,358.3,36570,0)
+ ;;=H60.542^^103^1556^21
+ ;;^UTILITY(U,$J,358.3,36570,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12988,1,3,0)
- ;;=3^Athscl of Bypass Graft of Right Leg w/ Oth Part Foot Ulcer
- ;;^UTILITY(U,$J,358.3,12988,1,4,0)
- ;;=4^I70.735
- ;;^UTILITY(U,$J,358.3,12988,2)
- ;;=^5007773
- ;;^UTILITY(U,$J,358.3,12989,0)
- ;;=I70.741^^53^582^79
- ;;^UTILITY(U,$J,358.3,12989,1,0)
+ ;;^UTILITY(U,$J,358.3,36570,1,3,0)
+ ;;=3^AC Eczematoid Otitis Externa,Left Ear
+ ;;^UTILITY(U,$J,358.3,36570,1,4,0)
+ ;;=4^H60.542
+ ;;^UTILITY(U,$J,358.3,36570,2)
+ ;;=^5006483
+ ;;^UTILITY(U,$J,358.3,36571,0)
+ ;;=H60.541^^103^1556^22
+ ;;^UTILITY(U,$J,358.3,36571,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12989,1,3,0)
- ;;=3^Athscl of Bypass Graft of Left Leg w/ Thigh Ulcer
- ;;^UTILITY(U,$J,358.3,12989,1,4,0)
- ;;=4^I70.741
- ;;^UTILITY(U,$J,358.3,12989,2)
- ;;=^5133601
- ;;^UTILITY(U,$J,358.3,12990,0)
- ;;=I70.742^^53^582^76
+ ;;^UTILITY(U,$J,358.3,36571,1,3,0)
+ ;;=3^AC Eczematoid Otitis Externa,Right Ear
+ ;;^UTILITY(U,$J,358.3,36571,1,4,0)
+ ;;=4^H60.541
+ ;;^UTILITY(U,$J,358.3,36571,2)
+ ;;=^5006482
+ ;;^UTILITY(U,$J,358.3,36572,0)
+ ;;=J04.0^^103^1556^23
+ ;;^UTILITY(U,$J,358.3,36572,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36572,1,3,0)
+ ;;=3^AC Laryngitis
+ ;;^UTILITY(U,$J,358.3,36572,1,4,0)
+ ;;=4^J04.0
+ ;;^UTILITY(U,$J,358.3,36572,2)
+ ;;=^5008137
+ ;;^UTILITY(U,$J,358.3,36573,0)
+ ;;=J04.2^^103^1556^24
+ ;;^UTILITY(U,$J,358.3,36573,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36573,1,3,0)
+ ;;=3^AC Laryngotracheitis
+ ;;^UTILITY(U,$J,358.3,36573,1,4,0)
+ ;;=4^J04.2
+ ;;^UTILITY(U,$J,358.3,36573,2)
+ ;;=^269868
+ ;;^UTILITY(U,$J,358.3,36574,0)
+ ;;=J00.^^103^1556^25
+ ;;^UTILITY(U,$J,358.3,36574,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36574,1,3,0)
+ ;;=3^AC Nasopharyngitis
+ ;;^UTILITY(U,$J,358.3,36574,1,4,0)
+ ;;=4^J00.
+ ;;^UTILITY(U,$J,358.3,36574,2)
+ ;;=^5008115
+ ;;^UTILITY(U,$J,358.3,36575,0)
+ ;;=J02.8^^103^1556^29
+ ;;^UTILITY(U,$J,358.3,36575,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36575,1,3,0)
+ ;;=3^AC Pharyngitis d/t Specified Organisms
+ ;;^UTILITY(U,$J,358.3,36575,1,4,0)
+ ;;=4^J02.8
+ ;;^UTILITY(U,$J,358.3,36575,2)
+ ;;=^5008129
+ ;;^UTILITY(U,$J,358.3,36576,0)
+ ;;=J02.9^^103^1556^30
+ ;;^UTILITY(U,$J,358.3,36576,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36576,1,3,0)
+ ;;=3^AC Pharyngitis,Unspec
+ ;;^UTILITY(U,$J,358.3,36576,1,4,0)
+ ;;=4^J02.9
+ ;;^UTILITY(U,$J,358.3,36576,2)
+ ;;=^5008130
+ ;;^UTILITY(U,$J,358.3,36577,0)
+ ;;=B40.0^^103^1556^31
+ ;;^UTILITY(U,$J,358.3,36577,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36577,1,3,0)
+ ;;=3^AC Pulmonary Blastomycosis
+ ;;^UTILITY(U,$J,358.3,36577,1,4,0)
+ ;;=4^B40.0
+ ;;^UTILITY(U,$J,358.3,36577,2)
+ ;;=^5000639
+ ;;^UTILITY(U,$J,358.3,36578,0)
+ ;;=H60.553^^103^1556^32
+ ;;^UTILITY(U,$J,358.3,36578,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36578,1,3,0)
+ ;;=3^AC Reactive Otitis Externa,Bilateral
+ ;;^UTILITY(U,$J,358.3,36578,1,4,0)
+ ;;=4^H60.553
+ ;;^UTILITY(U,$J,358.3,36578,2)
+ ;;=^5006488
+ ;;^UTILITY(U,$J,358.3,36579,0)
+ ;;=H60.552^^103^1556^33
+ ;;^UTILITY(U,$J,358.3,36579,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36579,1,3,0)
+ ;;=3^AC Reactive Otitis Externa,Left Ear
+ ;;^UTILITY(U,$J,358.3,36579,1,4,0)
+ ;;=4^H60.552
+ ;;^UTILITY(U,$J,358.3,36579,2)
+ ;;=^5006487
+ ;;^UTILITY(U,$J,358.3,36580,0)
+ ;;=H60.551^^103^1556^34
+ ;;^UTILITY(U,$J,358.3,36580,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36580,1,3,0)
+ ;;=3^AC Reactive Otitis Externa,Right Ear
+ ;;^UTILITY(U,$J,358.3,36580,1,4,0)
+ ;;=4^H60.551
+ ;;^UTILITY(U,$J,358.3,36580,2)
+ ;;=^5006486
+ ;;^UTILITY(U,$J,358.3,36581,0)
+ ;;=J01.91^^103^1556^35
+ ;;^UTILITY(U,$J,358.3,36581,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36581,1,3,0)
+ ;;=3^AC Recurrent Sinusitis,Unspec
+ ;;^UTILITY(U,$J,358.3,36581,1,4,0)
+ ;;=4^J01.91
+ ;;^UTILITY(U,$J,358.3,36581,2)
+ ;;=^5008128
+ ;;^UTILITY(U,$J,358.3,36582,0)
+ ;;=J03.81^^103^1556^36
+ ;;^UTILITY(U,$J,358.3,36582,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36582,1,3,0)
+ ;;=3^AC Recurrent Tonsillitis d/t Specified Organisms
+ ;;^UTILITY(U,$J,358.3,36582,1,4,0)
+ ;;=4^J03.81
+ ;;^UTILITY(U,$J,358.3,36582,2)
+ ;;=^5008134
+ ;;^UTILITY(U,$J,358.3,36583,0)
+ ;;=J03.91^^103^1556^37
+ ;;^UTILITY(U,$J,358.3,36583,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36583,1,3,0)
+ ;;=3^AC Recurrent Tonsillitis,Unspec
+ ;;^UTILITY(U,$J,358.3,36583,1,4,0)
+ ;;=4^J03.91
+ ;;^UTILITY(U,$J,358.3,36583,2)
+ ;;=^5008136
+ ;;^UTILITY(U,$J,358.3,36584,0)
+ ;;=J01.90^^103^1556^38
+ ;;^UTILITY(U,$J,358.3,36584,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36584,1,3,0)
+ ;;=3^AC Sinusitis,Unspec
+ ;;^UTILITY(U,$J,358.3,36584,1,4,0)
+ ;;=4^J01.90
+ ;;^UTILITY(U,$J,358.3,36584,2)
+ ;;=^5008127
+ ;;^UTILITY(U,$J,358.3,36585,0)
+ ;;=J03.80^^103^1556^39
+ ;;^UTILITY(U,$J,358.3,36585,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36585,1,3,0)
+ ;;=3^AC Tonsillitis d/t Specified Organisms
+ ;;^UTILITY(U,$J,358.3,36585,1,4,0)
+ ;;=4^J03.80
+ ;;^UTILITY(U,$J,358.3,36585,2)
+ ;;=^5008133
+ ;;^UTILITY(U,$J,358.3,36586,0)
+ ;;=J03.90^^103^1556^40
+ ;;^UTILITY(U,$J,358.3,36586,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36586,1,3,0)
+ ;;=3^AC Tonsillitis,Unspec
+ ;;^UTILITY(U,$J,358.3,36586,1,4,0)
+ ;;=4^J03.90
+ ;;^UTILITY(U,$J,358.3,36586,2)
+ ;;=^5008135
+ ;;^UTILITY(U,$J,358.3,36587,0)
+ ;;=B44.81^^103^1556^43
+ ;;^UTILITY(U,$J,358.3,36587,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36587,1,3,0)
+ ;;=3^Allergic Bronchopulmonary Aspergillosis
+ ;;^UTILITY(U,$J,358.3,36587,1,4,0)
+ ;;=4^B44.81
+ ;;^UTILITY(U,$J,358.3,36587,2)
+ ;;=^10945
+ ;;^UTILITY(U,$J,358.3,36588,0)
+ ;;=B44.9^^103^1556^45
+ ;;^UTILITY(U,$J,358.3,36588,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36588,1,3,0)
+ ;;=3^Aspergillosis,Unspec
+ ;;^UTILITY(U,$J,358.3,36588,1,4,0)
+ ;;=4^B44.9
+ ;;^UTILITY(U,$J,358.3,36588,2)
+ ;;=^5000668
+ ;;^UTILITY(U,$J,358.3,36589,0)
+ ;;=B40.9^^103^1556^47
+ ;;^UTILITY(U,$J,358.3,36589,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36589,1,3,0)
+ ;;=3^Blastomycosis,Unspec
+ ;;^UTILITY(U,$J,358.3,36589,1,4,0)
+ ;;=4^B40.9
+ ;;^UTILITY(U,$J,358.3,36589,2)
+ ;;=^5000646
+ ;;^UTILITY(U,$J,358.3,36590,0)
+ ;;=J18.0^^103^1556^48
+ ;;^UTILITY(U,$J,358.3,36590,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36590,1,3,0)
+ ;;=3^Bronchopneumonia,Unspec Organism
+ ;;^UTILITY(U,$J,358.3,36590,1,4,0)
+ ;;=4^J18.0
+ ;;^UTILITY(U,$J,358.3,36590,2)
+ ;;=^5008182
+ ;;^UTILITY(U,$J,358.3,36591,0)
+ ;;=B45.1^^103^1556^49
+ ;;^UTILITY(U,$J,358.3,36591,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36591,1,3,0)
+ ;;=3^Cerebral Cryptococcosis
+ ;;^UTILITY(U,$J,358.3,36591,1,4,0)
+ ;;=4^B45.1
+ ;;^UTILITY(U,$J,358.3,36591,2)
+ ;;=^5000670
+ ;;^UTILITY(U,$J,358.3,36592,0)
+ ;;=J16.0^^103^1556^50
+ ;;^UTILITY(U,$J,358.3,36592,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36592,1,3,0)
+ ;;=3^Chlamydial Pneumonia
+ ;;^UTILITY(U,$J,358.3,36592,1,4,0)
+ ;;=4^J16.0
+ ;;^UTILITY(U,$J,358.3,36592,2)
+ ;;=^5008179
+ ;;^UTILITY(U,$J,358.3,36593,0)
+ ;;=B40.1^^103^1556^51
+ ;;^UTILITY(U,$J,358.3,36593,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36593,1,3,0)
+ ;;=3^Chr Pulmonary Blastomycosis
+ ;;^UTILITY(U,$J,358.3,36593,1,4,0)
+ ;;=4^B40.1
+ ;;^UTILITY(U,$J,358.3,36593,2)
+ ;;=^5000640
+ ;;^UTILITY(U,$J,358.3,36594,0)
+ ;;=J32.9^^103^1556^52
+ ;;^UTILITY(U,$J,358.3,36594,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36594,1,3,0)
+ ;;=3^Chr Sinusitis,Unspec
+ ;;^UTILITY(U,$J,358.3,36594,1,4,0)
+ ;;=4^J32.9
+ ;;^UTILITY(U,$J,358.3,36594,2)
+ ;;=^5008207
+ ;;^UTILITY(U,$J,358.3,36595,0)
+ ;;=B45.9^^103^1556^54
+ ;;^UTILITY(U,$J,358.3,36595,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36595,1,3,0)
+ ;;=3^Cryptococcosis,Unspec

@@ -1,136 +1,58 @@
-IBDEI11H ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI11H ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
+ Q:'DIFQ(358.7)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,17640,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,17640,1,2,0)
- ;;=2^99402
- ;;^UTILITY(U,$J,358.3,17640,1,3,0)
- ;;=3^Preventive Counseling,Ind,30Min
- ;;^UTILITY(U,$J,358.3,17641,0)
- ;;=99354^^75^857^1^^^^1
- ;;^UTILITY(U,$J,358.3,17641,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,17641,1,2,0)
- ;;=2^99354
- ;;^UTILITY(U,$J,358.3,17641,1,3,0)
- ;;=3^Prolonged Svc w/ Pt,1st Hr
- ;;^UTILITY(U,$J,358.3,17642,0)
- ;;=99355^^75^857^2^^^^1
- ;;^UTILITY(U,$J,358.3,17642,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,17642,1,2,0)
- ;;=2^99355
- ;;^UTILITY(U,$J,358.3,17642,1,3,0)
- ;;=3^Prolonged Svc w/ Pt,Ea Addl 30Min
- ;;^UTILITY(U,$J,358.3,17643,0)
- ;;=99358^^75^857^3^^^^1
- ;;^UTILITY(U,$J,358.3,17643,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,17643,1,2,0)
- ;;=2^99358
- ;;^UTILITY(U,$J,358.3,17643,1,3,0)
- ;;=3^Prolonged Svc w/o Pt,1st Hr
- ;;^UTILITY(U,$J,358.3,17644,0)
- ;;=99359^^75^857^4^^^^1
- ;;^UTILITY(U,$J,358.3,17644,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,17644,1,2,0)
- ;;=2^99359
- ;;^UTILITY(U,$J,358.3,17644,1,3,0)
- ;;=3^Prolonged Svc w/o Pt,Ea Addl 30Min
- ;;^UTILITY(U,$J,358.3,17645,0)
- ;;=J85.2^^76^858^8
- ;;^UTILITY(U,$J,358.3,17645,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17645,1,3,0)
- ;;=3^Abscess, lung without pneumonia
- ;;^UTILITY(U,$J,358.3,17645,1,4,0)
- ;;=4^J85.2
- ;;^UTILITY(U,$J,358.3,17645,2)
- ;;=^5008307
- ;;^UTILITY(U,$J,358.3,17646,0)
- ;;=K75.0^^76^858^7
- ;;^UTILITY(U,$J,358.3,17646,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17646,1,3,0)
- ;;=3^Abscess, liver
- ;;^UTILITY(U,$J,358.3,17646,1,4,0)
- ;;=4^K75.0
- ;;^UTILITY(U,$J,358.3,17646,2)
- ;;=^5008824
- ;;^UTILITY(U,$J,358.3,17647,0)
- ;;=K61.1^^76^858^10
- ;;^UTILITY(U,$J,358.3,17647,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17647,1,3,0)
- ;;=3^Abscess, rectal
- ;;^UTILITY(U,$J,358.3,17647,1,4,0)
- ;;=4^K61.1
- ;;^UTILITY(U,$J,358.3,17647,2)
- ;;=^259588
- ;;^UTILITY(U,$J,358.3,17648,0)
- ;;=N15.1^^76^858^9
- ;;^UTILITY(U,$J,358.3,17648,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17648,1,3,0)
- ;;=3^Abscess, perinephric and renal
- ;;^UTILITY(U,$J,358.3,17648,1,4,0)
- ;;=4^N15.1
- ;;^UTILITY(U,$J,358.3,17648,2)
- ;;=^270371
- ;;^UTILITY(U,$J,358.3,17649,0)
- ;;=G06.0^^76^858^6
- ;;^UTILITY(U,$J,358.3,17649,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17649,1,3,0)
- ;;=3^Abscess, intracranial with granuloma
- ;;^UTILITY(U,$J,358.3,17649,1,4,0)
- ;;=4^G06.0
- ;;^UTILITY(U,$J,358.3,17649,2)
- ;;=^5003745
- ;;^UTILITY(U,$J,358.3,17650,0)
- ;;=L02.91^^76^858^11
- ;;^UTILITY(U,$J,358.3,17650,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17650,1,3,0)
- ;;=3^Abscess, skin and soft tissue
- ;;^UTILITY(U,$J,358.3,17650,1,4,0)
- ;;=4^L02.91
- ;;^UTILITY(U,$J,358.3,17650,2)
- ;;=^5009016
- ;;^UTILITY(U,$J,358.3,17651,0)
- ;;=L02.818^^76^858^5
- ;;^UTILITY(U,$J,358.3,17651,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17651,1,3,0)
- ;;=3^Abscess, cutaneous of other sites
- ;;^UTILITY(U,$J,358.3,17651,1,4,0)
- ;;=4^L02.818
- ;;^UTILITY(U,$J,358.3,17651,2)
- ;;=^5009011
- ;;^UTILITY(U,$J,358.3,17652,0)
- ;;=B20.^^76^858^13
- ;;^UTILITY(U,$J,358.3,17652,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17652,1,3,0)
- ;;=3^Acquired Immunodeficiency Syndrome (AIDS)
- ;;^UTILITY(U,$J,358.3,17652,1,4,0)
- ;;=4^B20.
- ;;^UTILITY(U,$J,358.3,17652,2)
- ;;=^5000555
- ;;^UTILITY(U,$J,358.3,17653,0)
- ;;=B44.1^^76^858^19
- ;;^UTILITY(U,$J,358.3,17653,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17653,1,3,0)
- ;;=3^Aspergillosis,Pulmonary
- ;;^UTILITY(U,$J,358.3,17653,1,4,0)
- ;;=4^B44.1
- ;;^UTILITY(U,$J,358.3,17653,2)
- ;;=^5000664
- ;;^UTILITY(U,$J,358.3,17654,0)
- ;;=B44.89^^76^858^18
- ;;^UTILITY(U,$J,358.3,17654,1,0)
- ;;=^358.31IA^4^2
+ ;;^DIC(358.7,0,"GL")
+ ;;=^IBE(358.7,
+ ;;^DIC("B","IMP/EXP FORM LINE",358.7)
+ ;;=
+ ;;^DIC(358.7,"%D",0)
+ ;;=^^3^3^2940217^
+ ;;^DIC(358.7,"%D",1,0)
+ ;;=This file is nearly identical to file #357.7. It is used by the
+ ;;^DIC(358.7,"%D",2,0)
+ ;;=Import/Export Utility as a temporary staging area for data from that file
+ ;;^DIC(358.7,"%D",3,0)
+ ;;=that is being imported or exported.
+ ;;^DD(358.7,0)
+ ;;=FIELD^^.08^8
+ ;;^DD(358.7,0,"DDA")
+ ;;=N
+ ;;^DD(358.7,0,"DT")
+ ;;=2950717
+ ;;^DD(358.7,0,"ID",.02)
+ ;;=W " STARTING COL=",$P(^(0),U,2)+1
+ ;;^DD(358.7,0,"ID",.03)
+ ;;=W " STARTING ROW=",$P(^(0),U,3)+1
+ ;;^DD(358.7,0,"ID",.06)
+ ;;=W ""
+ ;;^DD(358.7,0,"IX","B",358.7,.01)
+ ;;=
+ ;;^DD(358.7,0,"IX","C",358.7,.06)
+ ;;=
+ ;;^DD(358.7,0,"NM","IMP/EXP FORM LINE")
+ ;;=
+ ;;^DD(358.7,0,"VRPK")
+ ;;=IBD
+ ;;^DD(358.7,.01,0)
+ ;;=NAME^RF^^0;1^K:$L(X)>30!(X?.N)!($L(X)<3)!'(X'?1P.E) X
+ ;;^DD(358.7,.01,1,0)
+ ;;=^.1
+ ;;^DD(358.7,.01,1,1,0)
+ ;;=358.7^B
+ ;;^DD(358.7,.01,1,1,1)
+ ;;=S ^IBE(358.7,"B",$E(X,1,30),DA)=""
+ ;;^DD(358.7,.01,1,1,2)
+ ;;=K ^IBE(358.7,"B",$E(X,1,30),DA)
+ ;;^DD(358.7,.01,3)
+ ;;=NAME MUST BE 3-30 CHARACTERS, NOT NUMERIC OR STARTING WITH PUNCTUATION
+ ;;^DD(358.7,.01,21,0)
+ ;;=^^4^4^2930527^
+ ;;^DD(358.7,.01,21,1,0)
+ ;;= 
+ ;;^DD(358.7,.01,21,2,0)
+ ;;=The name given to the line. Lines should be given names that will allow
+ ;;^DD(358.7,.01,21,3,0)
+ ;;=them to be identifies, such as V(1,1), meaning a vertical line starting at
+ ;;^DD(358.7,.01,21,4,0)
+ ;;=coordinates (1,1).

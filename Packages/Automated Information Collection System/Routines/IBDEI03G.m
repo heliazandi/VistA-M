@@ -1,126 +1,370 @@
-IBDEI03G ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI03G ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1181,1,2,0)
- ;;=2^69200
- ;;^UTILITY(U,$J,358.3,1181,1,3,0)
- ;;=3^Remove Foreign Body, External Canal
- ;;^UTILITY(U,$J,358.3,1182,0)
- ;;=69210^^7^120^3^^^^1
- ;;^UTILITY(U,$J,358.3,1182,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1182,1,2,0)
- ;;=2^69210
- ;;^UTILITY(U,$J,358.3,1182,1,3,0)
- ;;=3^Remove Impacted Cerumen,Req Instrument,Unilateral
- ;;^UTILITY(U,$J,358.3,1183,0)
- ;;=69209^^7^120^2^^^^1
- ;;^UTILITY(U,$J,358.3,1183,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1183,1,2,0)
- ;;=2^69209
- ;;^UTILITY(U,$J,358.3,1183,1,3,0)
- ;;=3^Remove Impacted Cerumen,Lavage,Unilateral
- ;;^UTILITY(U,$J,358.3,1184,0)
- ;;=92548^^7^121^4^^^^1
- ;;^UTILITY(U,$J,358.3,1184,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1184,1,2,0)
- ;;=2^92548
- ;;^UTILITY(U,$J,358.3,1184,1,3,0)
- ;;=3^Computerized Dynamic Posturography
- ;;^UTILITY(U,$J,358.3,1185,0)
- ;;=92544^^7^121^5^^^^1
- ;;^UTILITY(U,$J,358.3,1185,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1185,1,2,0)
- ;;=2^92544
- ;;^UTILITY(U,$J,358.3,1185,1,3,0)
- ;;=3^Optokinetic Nystagmus Test Bidirec,w/Recording
- ;;^UTILITY(U,$J,358.3,1186,0)
- ;;=92545^^7^121^6^^^^1
- ;;^UTILITY(U,$J,358.3,1186,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1186,1,2,0)
- ;;=2^92545
- ;;^UTILITY(U,$J,358.3,1186,1,3,0)
- ;;=3^Oscillating Tracking Test W/Recording
- ;;^UTILITY(U,$J,358.3,1187,0)
- ;;=92542^^7^121^7^^^^1
- ;;^UTILITY(U,$J,358.3,1187,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1187,1,2,0)
- ;;=2^92542
- ;;^UTILITY(U,$J,358.3,1187,1,3,0)
- ;;=3^Positional Nystagmus Test min 4 pos w/Recording
- ;;^UTILITY(U,$J,358.3,1188,0)
- ;;=92546^^7^121^8^^^^1
- ;;^UTILITY(U,$J,358.3,1188,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1188,1,2,0)
- ;;=2^92546
- ;;^UTILITY(U,$J,358.3,1188,1,3,0)
- ;;=3^Sinusiodal Vertical Axis Rotation
- ;;^UTILITY(U,$J,358.3,1189,0)
- ;;=92547^^7^121^10^^^^1
- ;;^UTILITY(U,$J,358.3,1189,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1189,1,2,0)
- ;;=2^92547
- ;;^UTILITY(U,$J,358.3,1189,1,3,0)
- ;;=3^Vertical Channel (Add On To Each Eng Code)
- ;;^UTILITY(U,$J,358.3,1190,0)
- ;;=92541^^7^121^9^^^^1
- ;;^UTILITY(U,$J,358.3,1190,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1190,1,2,0)
- ;;=2^92541
- ;;^UTILITY(U,$J,358.3,1190,1,3,0)
- ;;=3^Spontaneous Nystagmus Test W/Recording
- ;;^UTILITY(U,$J,358.3,1191,0)
- ;;=92540^^7^121^1^^^^1
- ;;^UTILITY(U,$J,358.3,1191,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1191,1,2,0)
- ;;=2^92540
- ;;^UTILITY(U,$J,358.3,1191,1,3,0)
- ;;=3^Basic Vestibular Eval w/Recordings
- ;;^UTILITY(U,$J,358.3,1192,0)
- ;;=92537^^7^121^2^^^^1
- ;;^UTILITY(U,$J,358.3,1192,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1192,1,2,0)
- ;;=2^92537
- ;;^UTILITY(U,$J,358.3,1192,1,3,0)
- ;;=3^Caloric Vstblr Test w/ Rec,Bilat;Bithermal
- ;;^UTILITY(U,$J,358.3,1193,0)
- ;;=92538^^7^121^3^^^^1
- ;;^UTILITY(U,$J,358.3,1193,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1193,1,2,0)
- ;;=2^92538
- ;;^UTILITY(U,$J,358.3,1193,1,3,0)
- ;;=3^Caloric Vstblr Test w/ Rec,Bilat;Monothermal
- ;;^UTILITY(U,$J,358.3,1194,0)
- ;;=92531^^7^122^1^^^^1
- ;;^UTILITY(U,$J,358.3,1194,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1194,1,2,0)
- ;;=2^92531
- ;;^UTILITY(U,$J,358.3,1194,1,3,0)
- ;;=3^Spontaneous Nystagmus Test, W/O Recording
- ;;^UTILITY(U,$J,358.3,1195,0)
- ;;=92532^^7^122^2^^^^1
- ;;^UTILITY(U,$J,358.3,1195,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1195,1,2,0)
- ;;=2^92532
- ;;^UTILITY(U,$J,358.3,1195,1,3,0)
- ;;=3^Positional Nystagmus Test, W/O Recording
- ;;^UTILITY(U,$J,358.3,1196,0)
- ;;=92533^^7^122^3^^^^1
- ;;^UTILITY(U,$J,358.3,1196,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,1196,1,2,0)
- ;;=2^92533
+ ;;^UTILITY(U,$J,358.3,4081,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4081,1,3,0)
+ ;;=3^Right Forearm Pain
+ ;;^UTILITY(U,$J,358.3,4081,1,4,0)
+ ;;=4^M79.631
+ ;;^UTILITY(U,$J,358.3,4081,2)
+ ;;=^5013335
+ ;;^UTILITY(U,$J,358.3,4082,0)
+ ;;=M79.632^^20^276^4
+ ;;^UTILITY(U,$J,358.3,4082,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4082,1,3,0)
+ ;;=3^Left Forearm Pain
+ ;;^UTILITY(U,$J,358.3,4082,1,4,0)
+ ;;=4^M79.632
+ ;;^UTILITY(U,$J,358.3,4082,2)
+ ;;=^5013336
+ ;;^UTILITY(U,$J,358.3,4083,0)
+ ;;=M79.641^^20^276^15
+ ;;^UTILITY(U,$J,358.3,4083,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4083,1,3,0)
+ ;;=3^Right Hand Pain
+ ;;^UTILITY(U,$J,358.3,4083,1,4,0)
+ ;;=4^M79.641
+ ;;^UTILITY(U,$J,358.3,4083,2)
+ ;;=^5013338
+ ;;^UTILITY(U,$J,358.3,4084,0)
+ ;;=M79.642^^20^276^5
+ ;;^UTILITY(U,$J,358.3,4084,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4084,1,3,0)
+ ;;=3^Left Hand Pain
+ ;;^UTILITY(U,$J,358.3,4084,1,4,0)
+ ;;=4^M79.642
+ ;;^UTILITY(U,$J,358.3,4084,2)
+ ;;=^5013339
+ ;;^UTILITY(U,$J,358.3,4085,0)
+ ;;=M79.644^^20^276^12
+ ;;^UTILITY(U,$J,358.3,4085,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4085,1,3,0)
+ ;;=3^Right Finger(s) Pain
+ ;;^UTILITY(U,$J,358.3,4085,1,4,0)
+ ;;=4^M79.644
+ ;;^UTILITY(U,$J,358.3,4085,2)
+ ;;=^5013341
+ ;;^UTILITY(U,$J,358.3,4086,0)
+ ;;=M79.645^^20^276^2
+ ;;^UTILITY(U,$J,358.3,4086,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4086,1,3,0)
+ ;;=3^Left Finger(s) Pain
+ ;;^UTILITY(U,$J,358.3,4086,1,4,0)
+ ;;=4^M79.645
+ ;;^UTILITY(U,$J,358.3,4086,2)
+ ;;=^5013342
+ ;;^UTILITY(U,$J,358.3,4087,0)
+ ;;=M79.601^^20^276^11
+ ;;^UTILITY(U,$J,358.3,4087,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4087,1,3,0)
+ ;;=3^Right Arm Pain
+ ;;^UTILITY(U,$J,358.3,4087,1,4,0)
+ ;;=4^M79.601
+ ;;^UTILITY(U,$J,358.3,4087,2)
+ ;;=^5013325
+ ;;^UTILITY(U,$J,358.3,4088,0)
+ ;;=M79.602^^20^276^1
+ ;;^UTILITY(U,$J,358.3,4088,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4088,1,3,0)
+ ;;=3^Left Arm Pain
+ ;;^UTILITY(U,$J,358.3,4088,1,4,0)
+ ;;=4^M79.602
+ ;;^UTILITY(U,$J,358.3,4088,2)
+ ;;=^5013326
+ ;;^UTILITY(U,$J,358.3,4089,0)
+ ;;=M79.604^^20^276^16
+ ;;^UTILITY(U,$J,358.3,4089,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4089,1,3,0)
+ ;;=3^Right Leg Pain
+ ;;^UTILITY(U,$J,358.3,4089,1,4,0)
+ ;;=4^M79.604
+ ;;^UTILITY(U,$J,358.3,4089,2)
+ ;;=^5013328
+ ;;^UTILITY(U,$J,358.3,4090,0)
+ ;;=L03.321^^20^277^1
+ ;;^UTILITY(U,$J,358.3,4090,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4090,1,3,0)
+ ;;=3^Acute Lymphangitis of Abdominal Wall
+ ;;^UTILITY(U,$J,358.3,4090,1,4,0)
+ ;;=4^L03.321
+ ;;^UTILITY(U,$J,358.3,4090,2)
+ ;;=^5009055
+ ;;^UTILITY(U,$J,358.3,4091,0)
+ ;;=L03.322^^20^277^2
+ ;;^UTILITY(U,$J,358.3,4091,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4091,1,3,0)
+ ;;=3^Acute Lymphangitis of Back
+ ;;^UTILITY(U,$J,358.3,4091,1,4,0)
+ ;;=4^L03.322
+ ;;^UTILITY(U,$J,358.3,4091,2)
+ ;;=^5009056
+ ;;^UTILITY(U,$J,358.3,4092,0)
+ ;;=L03.327^^20^277^3
+ ;;^UTILITY(U,$J,358.3,4092,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4092,1,3,0)
+ ;;=3^Acute Lymphangitis of Buttock
+ ;;^UTILITY(U,$J,358.3,4092,1,4,0)
+ ;;=4^L03.327
+ ;;^UTILITY(U,$J,358.3,4092,2)
+ ;;=^5009061
+ ;;^UTILITY(U,$J,358.3,4093,0)
+ ;;=L03.323^^20^277^4
+ ;;^UTILITY(U,$J,358.3,4093,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4093,1,3,0)
+ ;;=3^Acute Lymphangitis of Chest Wall
+ ;;^UTILITY(U,$J,358.3,4093,1,4,0)
+ ;;=4^L03.323
+ ;;^UTILITY(U,$J,358.3,4093,2)
+ ;;=^5009057
+ ;;^UTILITY(U,$J,358.3,4094,0)
+ ;;=L03.212^^20^277^5
+ ;;^UTILITY(U,$J,358.3,4094,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4094,1,3,0)
+ ;;=3^Acute Lymphangitis of Face
+ ;;^UTILITY(U,$J,358.3,4094,1,4,0)
+ ;;=4^L03.212
+ ;;^UTILITY(U,$J,358.3,4094,2)
+ ;;=^5009044
+ ;;^UTILITY(U,$J,358.3,4095,0)
+ ;;=L03.324^^20^277^6
+ ;;^UTILITY(U,$J,358.3,4095,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4095,1,3,0)
+ ;;=3^Acute Lymphangitis of Groin
+ ;;^UTILITY(U,$J,358.3,4095,1,4,0)
+ ;;=4^L03.324
+ ;;^UTILITY(U,$J,358.3,4095,2)
+ ;;=^5009058
+ ;;^UTILITY(U,$J,358.3,4096,0)
+ ;;=L03.891^^20^277^7
+ ;;^UTILITY(U,$J,358.3,4096,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4096,1,3,0)
+ ;;=3^Acute Lymphangitis of Head
+ ;;^UTILITY(U,$J,358.3,4096,1,4,0)
+ ;;=4^L03.891
+ ;;^UTILITY(U,$J,358.3,4096,2)
+ ;;=^5009065
+ ;;^UTILITY(U,$J,358.3,4097,0)
+ ;;=L03.122^^20^277^8
+ ;;^UTILITY(U,$J,358.3,4097,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4097,1,3,0)
+ ;;=3^Acute Lymphangitis of Left Axilla
+ ;;^UTILITY(U,$J,358.3,4097,1,4,0)
+ ;;=4^L03.122
+ ;;^UTILITY(U,$J,358.3,4097,2)
+ ;;=^5009038
+ ;;^UTILITY(U,$J,358.3,4098,0)
+ ;;=L03.022^^20^277^9
+ ;;^UTILITY(U,$J,358.3,4098,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4098,1,3,0)
+ ;;=3^Acute Lymphangitis of Left Finger
+ ;;^UTILITY(U,$J,358.3,4098,1,4,0)
+ ;;=4^L03.022
+ ;;^UTILITY(U,$J,358.3,4098,2)
+ ;;=^5009023
+ ;;^UTILITY(U,$J,358.3,4099,0)
+ ;;=L03.126^^20^277^10
+ ;;^UTILITY(U,$J,358.3,4099,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4099,1,3,0)
+ ;;=3^Acute Lymphangitis of Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,4099,1,4,0)
+ ;;=4^L03.126
+ ;;^UTILITY(U,$J,358.3,4099,2)
+ ;;=^5133646
+ ;;^UTILITY(U,$J,358.3,4100,0)
+ ;;=L03.042^^20^277^11
+ ;;^UTILITY(U,$J,358.3,4100,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4100,1,3,0)
+ ;;=3^Acute Lymphangitis of Left Toe
+ ;;^UTILITY(U,$J,358.3,4100,1,4,0)
+ ;;=4^L03.042
+ ;;^UTILITY(U,$J,358.3,4100,2)
+ ;;=^5009029
+ ;;^UTILITY(U,$J,358.3,4101,0)
+ ;;=L03.124^^20^277^12
+ ;;^UTILITY(U,$J,358.3,4101,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4101,1,3,0)
+ ;;=3^Acute Lymphangitis of Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,4101,1,4,0)
+ ;;=4^L03.124
+ ;;^UTILITY(U,$J,358.3,4101,2)
+ ;;=^5009040
+ ;;^UTILITY(U,$J,358.3,4102,0)
+ ;;=L03.222^^20^277^14
+ ;;^UTILITY(U,$J,358.3,4102,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4102,1,3,0)
+ ;;=3^Acute Lymphangitis of Neck
+ ;;^UTILITY(U,$J,358.3,4102,1,4,0)
+ ;;=4^L03.222
+ ;;^UTILITY(U,$J,358.3,4102,2)
+ ;;=^5009046
+ ;;^UTILITY(U,$J,358.3,4103,0)
+ ;;=L03.898^^20^277^15
+ ;;^UTILITY(U,$J,358.3,4103,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4103,1,3,0)
+ ;;=3^Acute Lymphangitis of Other Sites
+ ;;^UTILITY(U,$J,358.3,4103,1,4,0)
+ ;;=4^L03.898
+ ;;^UTILITY(U,$J,358.3,4103,2)
+ ;;=^5009066
+ ;;^UTILITY(U,$J,358.3,4104,0)
+ ;;=L03.325^^20^277^16
+ ;;^UTILITY(U,$J,358.3,4104,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4104,1,3,0)
+ ;;=3^Acute Lymphangitis of Perineum
+ ;;^UTILITY(U,$J,358.3,4104,1,4,0)
+ ;;=4^L03.325
+ ;;^UTILITY(U,$J,358.3,4104,2)
+ ;;=^5009059
+ ;;^UTILITY(U,$J,358.3,4105,0)
+ ;;=L03.121^^20^277^17
+ ;;^UTILITY(U,$J,358.3,4105,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4105,1,3,0)
+ ;;=3^Acute Lymphangitis of Right Axilla
+ ;;^UTILITY(U,$J,358.3,4105,1,4,0)
+ ;;=4^L03.121
+ ;;^UTILITY(U,$J,358.3,4105,2)
+ ;;=^5009037
+ ;;^UTILITY(U,$J,358.3,4106,0)
+ ;;=L03.021^^20^277^18
+ ;;^UTILITY(U,$J,358.3,4106,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4106,1,3,0)
+ ;;=3^Acute Lymphangitis of Right Finger
+ ;;^UTILITY(U,$J,358.3,4106,1,4,0)
+ ;;=4^L03.021
+ ;;^UTILITY(U,$J,358.3,4106,2)
+ ;;=^5009022
+ ;;^UTILITY(U,$J,358.3,4107,0)
+ ;;=L03.125^^20^277^19
+ ;;^UTILITY(U,$J,358.3,4107,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4107,1,3,0)
+ ;;=3^Acute Lymphangitis of Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,4107,1,4,0)
+ ;;=4^L03.125
+ ;;^UTILITY(U,$J,358.3,4107,2)
+ ;;=^5009041
+ ;;^UTILITY(U,$J,358.3,4108,0)
+ ;;=L03.041^^20^277^20
+ ;;^UTILITY(U,$J,358.3,4108,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4108,1,3,0)
+ ;;=3^Acute Lymphangitis of Right Toe
+ ;;^UTILITY(U,$J,358.3,4108,1,4,0)
+ ;;=4^L03.041
+ ;;^UTILITY(U,$J,358.3,4108,2)
+ ;;=^5009028
+ ;;^UTILITY(U,$J,358.3,4109,0)
+ ;;=L03.123^^20^277^21
+ ;;^UTILITY(U,$J,358.3,4109,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4109,1,3,0)
+ ;;=3^Acute Lymphangitis of Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,4109,1,4,0)
+ ;;=4^L03.123
+ ;;^UTILITY(U,$J,358.3,4109,2)
+ ;;=^5009039
+ ;;^UTILITY(U,$J,358.3,4110,0)
+ ;;=L03.329^^20^277^22
+ ;;^UTILITY(U,$J,358.3,4110,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4110,1,3,0)
+ ;;=3^Acute Lymphangitis of Trunk,Unspec
+ ;;^UTILITY(U,$J,358.3,4110,1,4,0)
+ ;;=4^L03.329
+ ;;^UTILITY(U,$J,358.3,4110,2)
+ ;;=^5009062
+ ;;^UTILITY(U,$J,358.3,4111,0)
+ ;;=L03.326^^20^277^23
+ ;;^UTILITY(U,$J,358.3,4111,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4111,1,3,0)
+ ;;=3^Acute Lymphangitis of Umbilicus
+ ;;^UTILITY(U,$J,358.3,4111,1,4,0)
+ ;;=4^L03.326
+ ;;^UTILITY(U,$J,358.3,4111,2)
+ ;;=^5009060
+ ;;^UTILITY(U,$J,358.3,4112,0)
+ ;;=L03.129^^20^277^13
+ ;;^UTILITY(U,$J,358.3,4112,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4112,1,3,0)
+ ;;=3^Acute Lymphangitis of Limb,Unspec Part
+ ;;^UTILITY(U,$J,358.3,4112,1,4,0)
+ ;;=4^L03.129
+ ;;^UTILITY(U,$J,358.3,4112,2)
+ ;;=^5009042
+ ;;^UTILITY(U,$J,358.3,4113,0)
+ ;;=L03.91^^20^277^24
+ ;;^UTILITY(U,$J,358.3,4113,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4113,1,3,0)
+ ;;=3^Acute Lymphangitis,Unspec
+ ;;^UTILITY(U,$J,358.3,4113,1,4,0)
+ ;;=4^L03.91
+ ;;^UTILITY(U,$J,358.3,4113,2)
+ ;;=^5009068
+ ;;^UTILITY(U,$J,358.3,4114,0)
+ ;;=D17.0^^20^277^26
+ ;;^UTILITY(U,$J,358.3,4114,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4114,1,3,0)
+ ;;=3^Benign Lipomatous Neop of Skin of Head/Face/Neck
+ ;;^UTILITY(U,$J,358.3,4114,1,4,0)
+ ;;=4^D17.0
+ ;;^UTILITY(U,$J,358.3,4114,2)
+ ;;=^5002005
+ ;;^UTILITY(U,$J,358.3,4115,0)
+ ;;=D17.22^^20^277^27
+ ;;^UTILITY(U,$J,358.3,4115,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4115,1,3,0)
+ ;;=3^Benign Lipomatous Neop of Skin of Left Arm
+ ;;^UTILITY(U,$J,358.3,4115,1,4,0)
+ ;;=4^D17.22
+ ;;^UTILITY(U,$J,358.3,4115,2)
+ ;;=^5002009
+ ;;^UTILITY(U,$J,358.3,4116,0)
+ ;;=D17.24^^20^277^28
+ ;;^UTILITY(U,$J,358.3,4116,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4116,1,3,0)
+ ;;=3^Benign Lipomatous Neop of Skin of Left Leg
+ ;;^UTILITY(U,$J,358.3,4116,1,4,0)
+ ;;=4^D17.24
+ ;;^UTILITY(U,$J,358.3,4116,2)
+ ;;=^5002011
+ ;;^UTILITY(U,$J,358.3,4117,0)
+ ;;=D17.39^^20^277^25
+ ;;^UTILITY(U,$J,358.3,4117,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4117,1,3,0)
+ ;;=3^Benign Lipomatous Neop of Skin NEC
+ ;;^UTILITY(U,$J,358.3,4117,1,4,0)
+ ;;=4^D17.39

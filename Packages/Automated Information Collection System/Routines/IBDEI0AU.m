@@ -1,128 +1,356 @@
-IBDEI0AU ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0AU ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,4854,1,0)
+ ;;^UTILITY(U,$J,358.3,13749,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4854,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Ophthalmic Complication NEC
- ;;^UTILITY(U,$J,358.3,4854,1,4,0)
- ;;=4^E11.39
- ;;^UTILITY(U,$J,358.3,4854,2)
- ;;=^5002643
- ;;^UTILITY(U,$J,358.3,4855,0)
- ;;=E11.41^^24^305^63
- ;;^UTILITY(U,$J,358.3,4855,1,0)
+ ;;^UTILITY(U,$J,358.3,13749,1,3,0)
+ ;;=3^Tremor,Unspec
+ ;;^UTILITY(U,$J,358.3,13749,1,4,0)
+ ;;=4^R25.1
+ ;;^UTILITY(U,$J,358.3,13749,2)
+ ;;=^5019300
+ ;;^UTILITY(U,$J,358.3,13750,0)
+ ;;=R25.9^^43^629^3
+ ;;^UTILITY(U,$J,358.3,13750,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4855,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Mononueuropathy
- ;;^UTILITY(U,$J,358.3,4855,1,4,0)
- ;;=4^E11.41
- ;;^UTILITY(U,$J,358.3,4855,2)
- ;;=^5002645
- ;;^UTILITY(U,$J,358.3,4856,0)
- ;;=E11.42^^24^305^66
- ;;^UTILITY(U,$J,358.3,4856,1,0)
+ ;;^UTILITY(U,$J,358.3,13750,1,3,0)
+ ;;=3^Abnormal Involuntary Movements,Unspec
+ ;;^UTILITY(U,$J,358.3,13750,1,4,0)
+ ;;=4^R25.9
+ ;;^UTILITY(U,$J,358.3,13750,2)
+ ;;=^5019303
+ ;;^UTILITY(U,$J,358.3,13751,0)
+ ;;=R25.3^^43^629^5
+ ;;^UTILITY(U,$J,358.3,13751,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4856,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Polyneuropathy
- ;;^UTILITY(U,$J,358.3,4856,1,4,0)
- ;;=4^E11.42
- ;;^UTILITY(U,$J,358.3,4856,2)
- ;;=^5002646
- ;;^UTILITY(U,$J,358.3,4857,0)
- ;;=E11.43^^24^305^62
- ;;^UTILITY(U,$J,358.3,4857,1,0)
+ ;;^UTILITY(U,$J,358.3,13751,1,3,0)
+ ;;=3^Fasciculation/Twitching
+ ;;^UTILITY(U,$J,358.3,13751,1,4,0)
+ ;;=4^R25.3
+ ;;^UTILITY(U,$J,358.3,13751,2)
+ ;;=^44985
+ ;;^UTILITY(U,$J,358.3,13752,0)
+ ;;=R25.8^^43^629^2
+ ;;^UTILITY(U,$J,358.3,13752,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4857,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Autonomic Polyneuropathy
- ;;^UTILITY(U,$J,358.3,4857,1,4,0)
- ;;=4^E11.43
- ;;^UTILITY(U,$J,358.3,4857,2)
- ;;=^5002647
- ;;^UTILITY(U,$J,358.3,4858,0)
- ;;=E11.44^^24^305^61
- ;;^UTILITY(U,$J,358.3,4858,1,0)
+ ;;^UTILITY(U,$J,358.3,13752,1,3,0)
+ ;;=3^Abnormal Involuntary Movements,Other
+ ;;^UTILITY(U,$J,358.3,13752,1,4,0)
+ ;;=4^R25.8
+ ;;^UTILITY(U,$J,358.3,13752,2)
+ ;;=^5019302
+ ;;^UTILITY(U,$J,358.3,13753,0)
+ ;;=M02.30^^43^630^141
+ ;;^UTILITY(U,$J,358.3,13753,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4858,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Amyotrophy
- ;;^UTILITY(U,$J,358.3,4858,1,4,0)
- ;;=4^E11.44
- ;;^UTILITY(U,$J,358.3,4858,2)
- ;;=^5002648
- ;;^UTILITY(U,$J,358.3,4859,0)
- ;;=E11.49^^24^305^64
- ;;^UTILITY(U,$J,358.3,4859,1,0)
+ ;;^UTILITY(U,$J,358.3,13753,1,3,0)
+ ;;=3^Reiter's Disease,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13753,1,4,0)
+ ;;=4^M02.30
+ ;;^UTILITY(U,$J,358.3,13753,2)
+ ;;=^5009790
+ ;;^UTILITY(U,$J,358.3,13754,0)
+ ;;=M10.9^^43^630^40
+ ;;^UTILITY(U,$J,358.3,13754,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4859,1,3,0)
- ;;=3^Diabetes Type 2 w/ Diabetic Neurological Complication NEC
- ;;^UTILITY(U,$J,358.3,4859,1,4,0)
- ;;=4^E11.49
- ;;^UTILITY(U,$J,358.3,4859,2)
- ;;=^5002649
- ;;^UTILITY(U,$J,358.3,4860,0)
- ;;=E10.39^^24^305^26
- ;;^UTILITY(U,$J,358.3,4860,1,0)
+ ;;^UTILITY(U,$J,358.3,13754,1,3,0)
+ ;;=3^Gout,Unspec
+ ;;^UTILITY(U,$J,358.3,13754,1,4,0)
+ ;;=4^M10.9
+ ;;^UTILITY(U,$J,358.3,13754,2)
+ ;;=^5010404
+ ;;^UTILITY(U,$J,358.3,13755,0)
+ ;;=G90.59^^43^630^34
+ ;;^UTILITY(U,$J,358.3,13755,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4860,1,3,0)
- ;;=3^Diabetes Type 1 w/ Diabetic Ophthalmic Complication NEC
- ;;^UTILITY(U,$J,358.3,4860,1,4,0)
- ;;=4^E10.39
- ;;^UTILITY(U,$J,358.3,4860,2)
- ;;=^5002603
- ;;^UTILITY(U,$J,358.3,4861,0)
- ;;=E10.10^^24^305^37
- ;;^UTILITY(U,$J,358.3,4861,1,0)
+ ;;^UTILITY(U,$J,358.3,13755,1,3,0)
+ ;;=3^Complex Regional Pain Syndrome I,Unspec
+ ;;^UTILITY(U,$J,358.3,13755,1,4,0)
+ ;;=4^G90.59
+ ;;^UTILITY(U,$J,358.3,13755,2)
+ ;;=^5004171
+ ;;^UTILITY(U,$J,358.3,13756,0)
+ ;;=G56.01^^43^630^12
+ ;;^UTILITY(U,$J,358.3,13756,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4861,1,3,0)
- ;;=3^Diabetes Type 1 w/ Ketoacidosis w/o Coma
- ;;^UTILITY(U,$J,358.3,4861,1,4,0)
- ;;=4^E10.10
- ;;^UTILITY(U,$J,358.3,4861,2)
- ;;=^5002587
- ;;^UTILITY(U,$J,358.3,4862,0)
- ;;=E10.21^^24^305^22
- ;;^UTILITY(U,$J,358.3,4862,1,0)
+ ;;^UTILITY(U,$J,358.3,13756,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,13756,1,4,0)
+ ;;=4^G56.01
+ ;;^UTILITY(U,$J,358.3,13756,2)
+ ;;=^5004018
+ ;;^UTILITY(U,$J,358.3,13757,0)
+ ;;=G56.02^^43^630^11
+ ;;^UTILITY(U,$J,358.3,13757,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4862,1,3,0)
- ;;=3^Diabetes Type 1 w/ Diabetic Nephropathy
- ;;^UTILITY(U,$J,358.3,4862,1,4,0)
- ;;=4^E10.21
- ;;^UTILITY(U,$J,358.3,4862,2)
- ;;=^5002589
- ;;^UTILITY(U,$J,358.3,4863,0)
- ;;=E10.311^^24^305^30
- ;;^UTILITY(U,$J,358.3,4863,1,0)
+ ;;^UTILITY(U,$J,358.3,13757,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,13757,1,4,0)
+ ;;=4^G56.02
+ ;;^UTILITY(U,$J,358.3,13757,2)
+ ;;=^5004019
+ ;;^UTILITY(U,$J,358.3,13758,0)
+ ;;=G56.21^^43^630^56
+ ;;^UTILITY(U,$J,358.3,13758,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4863,1,3,0)
- ;;=3^Diabetes Type 1 w/ Diabetic Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,4863,1,4,0)
- ;;=4^E10.311
- ;;^UTILITY(U,$J,358.3,4863,2)
- ;;=^5002592
- ;;^UTILITY(U,$J,358.3,4864,0)
- ;;=E10.319^^24^305^31
- ;;^UTILITY(U,$J,358.3,4864,1,0)
+ ;;^UTILITY(U,$J,358.3,13758,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,13758,1,4,0)
+ ;;=4^G56.21
+ ;;^UTILITY(U,$J,358.3,13758,2)
+ ;;=^5004024
+ ;;^UTILITY(U,$J,358.3,13759,0)
+ ;;=G56.22^^43^630^55
+ ;;^UTILITY(U,$J,358.3,13759,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4864,1,3,0)
- ;;=3^Diabetes Type 1 w/ Diabetic Retinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,4864,1,4,0)
- ;;=4^E10.319
- ;;^UTILITY(U,$J,358.3,4864,2)
- ;;=^5002593
- ;;^UTILITY(U,$J,358.3,4865,0)
- ;;=E10.321^^24^305^38
- ;;^UTILITY(U,$J,358.3,4865,1,0)
+ ;;^UTILITY(U,$J,358.3,13759,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,13759,1,4,0)
+ ;;=4^G56.22
+ ;;^UTILITY(U,$J,358.3,13759,2)
+ ;;=^5004025
+ ;;^UTILITY(U,$J,358.3,13760,0)
+ ;;=M26.60^^43^630^180
+ ;;^UTILITY(U,$J,358.3,13760,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4865,1,3,0)
- ;;=3^Diabetes Type 1 w/ Mild Nonprlf Diabetic Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,4865,1,4,0)
- ;;=4^E10.321
- ;;^UTILITY(U,$J,358.3,4865,2)
- ;;=^5002594
- ;;^UTILITY(U,$J,358.3,4866,0)
- ;;=E10.329^^24^305^39
- ;;^UTILITY(U,$J,358.3,4866,1,0)
+ ;;^UTILITY(U,$J,358.3,13760,1,3,0)
+ ;;=3^Temporomandibular Joint Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,13760,1,4,0)
+ ;;=4^M26.60
+ ;;^UTILITY(U,$J,358.3,13760,2)
+ ;;=^5011714
+ ;;^UTILITY(U,$J,358.3,13761,0)
+ ;;=L40.52^^43^630^137
+ ;;^UTILITY(U,$J,358.3,13761,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4866,1,3,0)
- ;;=3^Diabetes Type 1 w/ Mild Nonprlf Diabetic Retinopathy w/o Macular Edema
+ ;;^UTILITY(U,$J,358.3,13761,1,3,0)
+ ;;=3^Psoriatic Arthritis Mutilans
+ ;;^UTILITY(U,$J,358.3,13761,1,4,0)
+ ;;=4^L40.52
+ ;;^UTILITY(U,$J,358.3,13761,2)
+ ;;=^5009167
+ ;;^UTILITY(U,$J,358.3,13762,0)
+ ;;=L40.53^^43^630^138
+ ;;^UTILITY(U,$J,358.3,13762,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13762,1,3,0)
+ ;;=3^Psoriatic Spondylitis
+ ;;^UTILITY(U,$J,358.3,13762,1,4,0)
+ ;;=4^L40.53
+ ;;^UTILITY(U,$J,358.3,13762,2)
+ ;;=^5009168
+ ;;^UTILITY(U,$J,358.3,13763,0)
+ ;;=M32.9^^43^630^179
+ ;;^UTILITY(U,$J,358.3,13763,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13763,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Unspec
+ ;;^UTILITY(U,$J,358.3,13763,1,4,0)
+ ;;=4^M32.9
+ ;;^UTILITY(U,$J,358.3,13763,2)
+ ;;=^5011761
+ ;;^UTILITY(U,$J,358.3,13764,0)
+ ;;=M32.0^^43^630^175
+ ;;^UTILITY(U,$J,358.3,13764,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13764,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Drug-Induced
+ ;;^UTILITY(U,$J,358.3,13764,1,4,0)
+ ;;=4^M32.0
+ ;;^UTILITY(U,$J,358.3,13764,2)
+ ;;=^5011752
+ ;;^UTILITY(U,$J,358.3,13765,0)
+ ;;=M32.13^^43^630^177
+ ;;^UTILITY(U,$J,358.3,13765,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13765,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Lung Involvement
+ ;;^UTILITY(U,$J,358.3,13765,1,4,0)
+ ;;=4^M32.13
+ ;;^UTILITY(U,$J,358.3,13765,2)
+ ;;=^5011756
+ ;;^UTILITY(U,$J,358.3,13766,0)
+ ;;=M32.14^^43^630^176
+ ;;^UTILITY(U,$J,358.3,13766,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13766,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Glomerular Disease
+ ;;^UTILITY(U,$J,358.3,13766,1,4,0)
+ ;;=4^M32.14
+ ;;^UTILITY(U,$J,358.3,13766,2)
+ ;;=^5011757
+ ;;^UTILITY(U,$J,358.3,13767,0)
+ ;;=M32.12^^43^630^178
+ ;;^UTILITY(U,$J,358.3,13767,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13767,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Pericarditis
+ ;;^UTILITY(U,$J,358.3,13767,1,4,0)
+ ;;=4^M32.12
+ ;;^UTILITY(U,$J,358.3,13767,2)
+ ;;=^5011755
+ ;;^UTILITY(U,$J,358.3,13768,0)
+ ;;=M05.59^^43^630^159
+ ;;^UTILITY(U,$J,358.3,13768,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13768,1,3,0)
+ ;;=3^Rheumatoid Polyneuropathy w/ Rheumatoid Arthritis of Mult Sites
+ ;;^UTILITY(U,$J,358.3,13768,1,4,0)
+ ;;=4^M05.59
+ ;;^UTILITY(U,$J,358.3,13768,2)
+ ;;=^5009976
+ ;;^UTILITY(U,$J,358.3,13769,0)
+ ;;=M05.711^^43^630^153
+ ;;^UTILITY(U,$J,358.3,13769,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13769,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Shoulder
+ ;;^UTILITY(U,$J,358.3,13769,1,4,0)
+ ;;=4^M05.711
+ ;;^UTILITY(U,$J,358.3,13769,2)
+ ;;=^5010001
+ ;;^UTILITY(U,$J,358.3,13770,0)
+ ;;=M05.712^^43^630^146
+ ;;^UTILITY(U,$J,358.3,13770,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13770,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Shoulder
+ ;;^UTILITY(U,$J,358.3,13770,1,4,0)
+ ;;=4^M05.712
+ ;;^UTILITY(U,$J,358.3,13770,2)
+ ;;=^5010002
+ ;;^UTILITY(U,$J,358.3,13771,0)
+ ;;=M05.731^^43^630^154
+ ;;^UTILITY(U,$J,358.3,13771,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13771,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Wrist
+ ;;^UTILITY(U,$J,358.3,13771,1,4,0)
+ ;;=4^M05.731
+ ;;^UTILITY(U,$J,358.3,13771,2)
+ ;;=^5010007
+ ;;^UTILITY(U,$J,358.3,13772,0)
+ ;;=M05.732^^43^630^147
+ ;;^UTILITY(U,$J,358.3,13772,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13772,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Wrist
+ ;;^UTILITY(U,$J,358.3,13772,1,4,0)
+ ;;=4^M05.732
+ ;;^UTILITY(U,$J,358.3,13772,2)
+ ;;=^5010008
+ ;;^UTILITY(U,$J,358.3,13773,0)
+ ;;=M05.741^^43^630^150
+ ;;^UTILITY(U,$J,358.3,13773,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13773,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Hand
+ ;;^UTILITY(U,$J,358.3,13773,1,4,0)
+ ;;=4^M05.741
+ ;;^UTILITY(U,$J,358.3,13773,2)
+ ;;=^5010010
+ ;;^UTILITY(U,$J,358.3,13774,0)
+ ;;=M05.742^^43^630^143
+ ;;^UTILITY(U,$J,358.3,13774,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13774,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Hand
+ ;;^UTILITY(U,$J,358.3,13774,1,4,0)
+ ;;=4^M05.742
+ ;;^UTILITY(U,$J,358.3,13774,2)
+ ;;=^5010011
+ ;;^UTILITY(U,$J,358.3,13775,0)
+ ;;=M05.751^^43^630^151
+ ;;^UTILITY(U,$J,358.3,13775,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13775,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Hip
+ ;;^UTILITY(U,$J,358.3,13775,1,4,0)
+ ;;=4^M05.751
+ ;;^UTILITY(U,$J,358.3,13775,2)
+ ;;=^5010013
+ ;;^UTILITY(U,$J,358.3,13776,0)
+ ;;=M05.752^^43^630^144
+ ;;^UTILITY(U,$J,358.3,13776,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13776,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Hip
+ ;;^UTILITY(U,$J,358.3,13776,1,4,0)
+ ;;=4^M05.752
+ ;;^UTILITY(U,$J,358.3,13776,2)
+ ;;=^5010014
+ ;;^UTILITY(U,$J,358.3,13777,0)
+ ;;=M05.761^^43^630^152
+ ;;^UTILITY(U,$J,358.3,13777,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13777,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Knee
+ ;;^UTILITY(U,$J,358.3,13777,1,4,0)
+ ;;=4^M05.761
+ ;;^UTILITY(U,$J,358.3,13777,2)
+ ;;=^5010016
+ ;;^UTILITY(U,$J,358.3,13778,0)
+ ;;=M05.762^^43^630^145
+ ;;^UTILITY(U,$J,358.3,13778,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13778,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Knee
+ ;;^UTILITY(U,$J,358.3,13778,1,4,0)
+ ;;=4^M05.762
+ ;;^UTILITY(U,$J,358.3,13778,2)
+ ;;=^5010017
+ ;;^UTILITY(U,$J,358.3,13779,0)
+ ;;=M05.771^^43^630^149
+ ;;^UTILITY(U,$J,358.3,13779,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13779,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Ankle
+ ;;^UTILITY(U,$J,358.3,13779,1,4,0)
+ ;;=4^M05.771
+ ;;^UTILITY(U,$J,358.3,13779,2)
+ ;;=^5010019
+ ;;^UTILITY(U,$J,358.3,13780,0)
+ ;;=M05.772^^43^630^142
+ ;;^UTILITY(U,$J,358.3,13780,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13780,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Ankle
+ ;;^UTILITY(U,$J,358.3,13780,1,4,0)
+ ;;=4^M05.772
+ ;;^UTILITY(U,$J,358.3,13780,2)
+ ;;=^5010020
+ ;;^UTILITY(U,$J,358.3,13781,0)
+ ;;=M05.79^^43^630^148
+ ;;^UTILITY(U,$J,358.3,13781,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13781,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Multiple Sites
+ ;;^UTILITY(U,$J,358.3,13781,1,4,0)
+ ;;=4^M05.79
+ ;;^UTILITY(U,$J,358.3,13781,2)
+ ;;=^5010022
+ ;;^UTILITY(U,$J,358.3,13782,0)
+ ;;=M06.00^^43^630^155
+ ;;^UTILITY(U,$J,358.3,13782,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13782,1,3,0)
+ ;;=3^Rheumatoid Arthritis w/o Rhematoid Factor,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13782,1,4,0)
+ ;;=4^M06.00
+ ;;^UTILITY(U,$J,358.3,13782,2)
+ ;;=^5010047
+ ;;^UTILITY(U,$J,358.3,13783,0)
+ ;;=M06.30^^43^630^158
+ ;;^UTILITY(U,$J,358.3,13783,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13783,1,3,0)
+ ;;=3^Rheumatoid Nodule,Unspec Site
+ ;;^UTILITY(U,$J,358.3,13783,1,4,0)
+ ;;=4^M06.30
+ ;;^UTILITY(U,$J,358.3,13783,2)
+ ;;=^5010096
+ ;;^UTILITY(U,$J,358.3,13784,0)
+ ;;=M06.4^^43^630^48
+ ;;^UTILITY(U,$J,358.3,13784,1,0)
+ ;;=^358.31IA^4^2

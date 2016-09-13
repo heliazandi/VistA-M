@@ -1,140 +1,354 @@
-IBDEI0YB ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0YB ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16111,2)
- ;;=^5000967
- ;;^UTILITY(U,$J,358.3,16112,0)
- ;;=C34.92^^61^722^1
- ;;^UTILITY(U,$J,358.3,16112,1,0)
+ ;;^UTILITY(U,$J,358.3,45017,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16112,1,3,0)
- ;;=3^Malig Neop Bronchus/Lung,Left,Unspec Part
- ;;^UTILITY(U,$J,358.3,16112,1,4,0)
- ;;=4^C34.92
- ;;^UTILITY(U,$J,358.3,16112,2)
- ;;=^5000968
- ;;^UTILITY(U,$J,358.3,16113,0)
- ;;=C76.0^^61^722^3
- ;;^UTILITY(U,$J,358.3,16113,1,0)
+ ;;^UTILITY(U,$J,358.3,45017,1,3,0)
+ ;;=3^Nicotine Dependence,Cigarettes,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,45017,1,4,0)
+ ;;=4^F17.210
+ ;;^UTILITY(U,$J,358.3,45017,2)
+ ;;=^5003365
+ ;;^UTILITY(U,$J,358.3,45018,0)
+ ;;=F17.219^^136^1927^20
+ ;;^UTILITY(U,$J,358.3,45018,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16113,1,3,0)
- ;;=3^Malig Neop Head/Face/Neck
- ;;^UTILITY(U,$J,358.3,16113,1,4,0)
- ;;=4^C76.0
- ;;^UTILITY(U,$J,358.3,16113,2)
- ;;=^5001324
- ;;^UTILITY(U,$J,358.3,16114,0)
- ;;=C06.9^^61^722^6
- ;;^UTILITY(U,$J,358.3,16114,1,0)
+ ;;^UTILITY(U,$J,358.3,45018,1,3,0)
+ ;;=3^Nicotine Dependence,Cigarettes w/ Unspec Disorders
+ ;;^UTILITY(U,$J,358.3,45018,1,4,0)
+ ;;=4^F17.219
+ ;;^UTILITY(U,$J,358.3,45018,2)
+ ;;=^5003369
+ ;;^UTILITY(U,$J,358.3,45019,0)
+ ;;=F17.213^^136^1927^21
+ ;;^UTILITY(U,$J,358.3,45019,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16114,1,3,0)
- ;;=3^Malig Neop Mouth,Unspec
- ;;^UTILITY(U,$J,358.3,16114,1,4,0)
- ;;=4^C06.9
- ;;^UTILITY(U,$J,358.3,16114,2)
- ;;=^5000901
- ;;^UTILITY(U,$J,358.3,16115,0)
- ;;=C11.9^^61^722^7
- ;;^UTILITY(U,$J,358.3,16115,1,0)
+ ;;^UTILITY(U,$J,358.3,45019,1,3,0)
+ ;;=3^Nicotine Dependence,Cigarettes w/ Withdrawal
+ ;;^UTILITY(U,$J,358.3,45019,1,4,0)
+ ;;=4^F17.213
+ ;;^UTILITY(U,$J,358.3,45019,2)
+ ;;=^5003367
+ ;;^UTILITY(U,$J,358.3,45020,0)
+ ;;=F17.291^^136^1927^24
+ ;;^UTILITY(U,$J,358.3,45020,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16115,1,3,0)
- ;;=3^Malig Neop Nasopharynx,Unspec
- ;;^UTILITY(U,$J,358.3,16115,1,4,0)
- ;;=4^C11.9
- ;;^UTILITY(U,$J,358.3,16115,2)
- ;;=^5000911
- ;;^UTILITY(U,$J,358.3,16116,0)
- ;;=C10.9^^61^722^8
- ;;^UTILITY(U,$J,358.3,16116,1,0)
+ ;;^UTILITY(U,$J,358.3,45020,1,3,0)
+ ;;=3^Nicotine Dependence,Oth Tobacco Product,in Remission
+ ;;^UTILITY(U,$J,358.3,45020,1,4,0)
+ ;;=4^F17.291
+ ;;^UTILITY(U,$J,358.3,45020,2)
+ ;;=^5003376
+ ;;^UTILITY(U,$J,358.3,45021,0)
+ ;;=F17.290^^136^1927^25
+ ;;^UTILITY(U,$J,358.3,45021,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16116,1,3,0)
- ;;=3^Malig Neop Oropharynx,Unspec
- ;;^UTILITY(U,$J,358.3,16116,1,4,0)
- ;;=4^C10.9
- ;;^UTILITY(U,$J,358.3,16116,2)
- ;;=^5000909
- ;;^UTILITY(U,$J,358.3,16117,0)
- ;;=C38.4^^61^722^9
- ;;^UTILITY(U,$J,358.3,16117,1,0)
+ ;;^UTILITY(U,$J,358.3,45021,1,3,0)
+ ;;=3^Nicotine Dependence,Oth Tobacco Product,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,45021,1,4,0)
+ ;;=4^F17.290
+ ;;^UTILITY(U,$J,358.3,45021,2)
+ ;;=^5003375
+ ;;^UTILITY(U,$J,358.3,45022,0)
+ ;;=F17.299^^136^1927^26
+ ;;^UTILITY(U,$J,358.3,45022,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16117,1,3,0)
- ;;=3^Malig Neop Pleura
- ;;^UTILITY(U,$J,358.3,16117,1,4,0)
- ;;=4^C38.4
- ;;^UTILITY(U,$J,358.3,16117,2)
- ;;=^267140
- ;;^UTILITY(U,$J,358.3,16118,0)
- ;;=C45.0^^61^722^15
- ;;^UTILITY(U,$J,358.3,16118,1,0)
+ ;;^UTILITY(U,$J,358.3,45022,1,3,0)
+ ;;=3^Nicotine Dependence,Oth Tobacco Product w/ Unspec Disorders
+ ;;^UTILITY(U,$J,358.3,45022,1,4,0)
+ ;;=4^F17.299
+ ;;^UTILITY(U,$J,358.3,45022,2)
+ ;;=^5003379
+ ;;^UTILITY(U,$J,358.3,45023,0)
+ ;;=F17.293^^136^1927^27
+ ;;^UTILITY(U,$J,358.3,45023,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16118,1,3,0)
- ;;=3^Mesothelioma of Pleura
- ;;^UTILITY(U,$J,358.3,16118,1,4,0)
- ;;=4^C45.0
- ;;^UTILITY(U,$J,358.3,16118,2)
- ;;=^5001095
- ;;^UTILITY(U,$J,358.3,16119,0)
- ;;=C73.^^61^722^11
- ;;^UTILITY(U,$J,358.3,16119,1,0)
+ ;;^UTILITY(U,$J,358.3,45023,1,3,0)
+ ;;=3^Nicotine Dependence,Oth Tobacco Product w/ Withdrawal
+ ;;^UTILITY(U,$J,358.3,45023,1,4,0)
+ ;;=4^F17.293
+ ;;^UTILITY(U,$J,358.3,45023,2)
+ ;;=^5003377
+ ;;^UTILITY(U,$J,358.3,45024,0)
+ ;;=F17.201^^136^1927^31
+ ;;^UTILITY(U,$J,358.3,45024,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16119,1,3,0)
- ;;=3^Malig Neop Thyroid Gland
- ;;^UTILITY(U,$J,358.3,16119,1,4,0)
- ;;=4^C73.
- ;;^UTILITY(U,$J,358.3,16119,2)
- ;;=^267296
- ;;^UTILITY(U,$J,358.3,16120,0)
- ;;=C02.9^^61^722^13
- ;;^UTILITY(U,$J,358.3,16120,1,0)
+ ;;^UTILITY(U,$J,358.3,45024,1,3,0)
+ ;;=3^Nicotine Dependence,Unspec,in Remission
+ ;;^UTILITY(U,$J,358.3,45024,1,4,0)
+ ;;=4^F17.201
+ ;;^UTILITY(U,$J,358.3,45024,2)
+ ;;=^5003361
+ ;;^UTILITY(U,$J,358.3,45025,0)
+ ;;=F17.200^^136^1927^30
+ ;;^UTILITY(U,$J,358.3,45025,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16120,1,3,0)
- ;;=3^Malig Neop Tongue,Unspec
- ;;^UTILITY(U,$J,358.3,16120,1,4,0)
- ;;=4^C02.9
- ;;^UTILITY(U,$J,358.3,16120,2)
- ;;=^5000891
- ;;^UTILITY(U,$J,358.3,16121,0)
- ;;=C33.^^61^722^14
- ;;^UTILITY(U,$J,358.3,16121,1,0)
+ ;;^UTILITY(U,$J,358.3,45025,1,3,0)
+ ;;=3^Nicotine Dependence,Unspec,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,45025,1,4,0)
+ ;;=4^F17.200
+ ;;^UTILITY(U,$J,358.3,45025,2)
+ ;;=^5003360
+ ;;^UTILITY(U,$J,358.3,45026,0)
+ ;;=F17.209^^136^1927^28
+ ;;^UTILITY(U,$J,358.3,45026,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16121,1,3,0)
- ;;=3^Malig Neop Trachea
- ;;^UTILITY(U,$J,358.3,16121,1,4,0)
- ;;=4^C33.
- ;;^UTILITY(U,$J,358.3,16121,2)
- ;;=^267135
- ;;^UTILITY(U,$J,358.3,16122,0)
- ;;=D70.9^^61^723^3
- ;;^UTILITY(U,$J,358.3,16122,1,0)
+ ;;^UTILITY(U,$J,358.3,45026,1,3,0)
+ ;;=3^Nicotine Dependence,Unspec w/ Unspec Disorders
+ ;;^UTILITY(U,$J,358.3,45026,1,4,0)
+ ;;=4^F17.209
+ ;;^UTILITY(U,$J,358.3,45026,2)
+ ;;=^5003364
+ ;;^UTILITY(U,$J,358.3,45027,0)
+ ;;=F17.203^^136^1927^29
+ ;;^UTILITY(U,$J,358.3,45027,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16122,1,3,0)
- ;;=3^Neutropenia,Unspec
- ;;^UTILITY(U,$J,358.3,16122,1,4,0)
- ;;=4^D70.9
- ;;^UTILITY(U,$J,358.3,16122,2)
- ;;=^334186
- ;;^UTILITY(U,$J,358.3,16123,0)
- ;;=D57.1^^61^723^4
- ;;^UTILITY(U,$J,358.3,16123,1,0)
+ ;;^UTILITY(U,$J,358.3,45027,1,3,0)
+ ;;=3^Nicotine Dependence,Unspec w/ Withdrawal
+ ;;^UTILITY(U,$J,358.3,45027,1,4,0)
+ ;;=4^F17.203
+ ;;^UTILITY(U,$J,358.3,45027,2)
+ ;;=^5003362
+ ;;^UTILITY(U,$J,358.3,45028,0)
+ ;;=F07.0^^136^1927^35
+ ;;^UTILITY(U,$J,358.3,45028,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16123,1,3,0)
- ;;=3^Sickle-Cell Disease w/o Crisis
- ;;^UTILITY(U,$J,358.3,16123,1,4,0)
- ;;=4^D57.1
- ;;^UTILITY(U,$J,358.3,16123,2)
- ;;=^5002309
- ;;^UTILITY(U,$J,358.3,16124,0)
- ;;=D57.00^^61^723^1
- ;;^UTILITY(U,$J,358.3,16124,1,0)
+ ;;^UTILITY(U,$J,358.3,45028,1,3,0)
+ ;;=3^Personality Changed d/t Physiological Condition
+ ;;^UTILITY(U,$J,358.3,45028,1,4,0)
+ ;;=4^F07.0
+ ;;^UTILITY(U,$J,358.3,45028,2)
+ ;;=^5003063
+ ;;^UTILITY(U,$J,358.3,45029,0)
+ ;;=F20.0^^136^1927^38
+ ;;^UTILITY(U,$J,358.3,45029,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16124,1,3,0)
- ;;=3^Hb-SS Disease w/ Crisis,Unspec
- ;;^UTILITY(U,$J,358.3,16124,1,4,0)
- ;;=4^D57.00
- ;;^UTILITY(U,$J,358.3,16124,2)
- ;;=^5002306
- ;;^UTILITY(U,$J,358.3,16125,0)
- ;;=D73.1^^61^723^2
- ;;^UTILITY(U,$J,358.3,16125,1,0)
+ ;;^UTILITY(U,$J,358.3,45029,1,3,0)
+ ;;=3^Schizophrenia,Paranoid
+ ;;^UTILITY(U,$J,358.3,45029,1,4,0)
+ ;;=4^F20.0
+ ;;^UTILITY(U,$J,358.3,45029,2)
+ ;;=^5003469
+ ;;^UTILITY(U,$J,358.3,45030,0)
+ ;;=R45.851^^136^1927^40
+ ;;^UTILITY(U,$J,358.3,45030,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45030,1,3,0)
+ ;;=3^Suicidal Ideations
+ ;;^UTILITY(U,$J,358.3,45030,1,4,0)
+ ;;=4^R45.851
+ ;;^UTILITY(U,$J,358.3,45030,2)
+ ;;=^5019474
+ ;;^UTILITY(U,$J,358.3,45031,0)
+ ;;=Z87.820^^136^1927^34
+ ;;^UTILITY(U,$J,358.3,45031,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45031,1,3,0)
+ ;;=3^Personal Hx of TBI
+ ;;^UTILITY(U,$J,358.3,45031,1,4,0)
+ ;;=4^Z87.820
+ ;;^UTILITY(U,$J,358.3,45031,2)
+ ;;=^5063514
+ ;;^UTILITY(U,$J,358.3,45032,0)
+ ;;=R14.0^^136^1928^1
+ ;;^UTILITY(U,$J,358.3,45032,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45032,1,3,0)
+ ;;=3^Abdominal Distension
+ ;;^UTILITY(U,$J,358.3,45032,1,4,0)
+ ;;=4^R14.0
+ ;;^UTILITY(U,$J,358.3,45032,2)
+ ;;=^5019240
+ ;;^UTILITY(U,$J,358.3,45033,0)
+ ;;=Z90.81^^136^1928^2
+ ;;^UTILITY(U,$J,358.3,45033,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45033,1,3,0)
+ ;;=3^Acquired Absence of Spleen
+ ;;^UTILITY(U,$J,358.3,45033,1,4,0)
+ ;;=4^Z90.81
+ ;;^UTILITY(U,$J,358.3,45033,2)
+ ;;=^5063597
+ ;;^UTILITY(U,$J,358.3,45034,0)
+ ;;=K62.9^^136^1928^3
+ ;;^UTILITY(U,$J,358.3,45034,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45034,1,3,0)
+ ;;=3^Anus & Rectum Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,45034,1,4,0)
+ ;;=4^K62.9
+ ;;^UTILITY(U,$J,358.3,45034,2)
+ ;;=^5008760
+ ;;^UTILITY(U,$J,358.3,45035,0)
+ ;;=Z93.3^^136^1928^4
+ ;;^UTILITY(U,$J,358.3,45035,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45035,1,3,0)
+ ;;=3^Artificial Opening,Colostomy Status
+ ;;^UTILITY(U,$J,358.3,45035,1,4,0)
+ ;;=4^Z93.3
+ ;;^UTILITY(U,$J,358.3,45035,2)
+ ;;=^5063645
+ ;;^UTILITY(U,$J,358.3,45036,0)
+ ;;=Z93.4^^136^1928^5
+ ;;^UTILITY(U,$J,358.3,45036,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45036,1,3,0)
+ ;;=3^Artificial Opening,GI Tract
+ ;;^UTILITY(U,$J,358.3,45036,1,4,0)
+ ;;=4^Z93.4
+ ;;^UTILITY(U,$J,358.3,45036,2)
+ ;;=^5063646
+ ;;^UTILITY(U,$J,358.3,45037,0)
+ ;;=Z93.1^^136^1928^6
+ ;;^UTILITY(U,$J,358.3,45037,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45037,1,3,0)
+ ;;=3^Artificial Opening,Gastrostomy Status
+ ;;^UTILITY(U,$J,358.3,45037,1,4,0)
+ ;;=4^Z93.1
+ ;;^UTILITY(U,$J,358.3,45037,2)
+ ;;=^5063643
+ ;;^UTILITY(U,$J,358.3,45038,0)
+ ;;=Z93.2^^136^1928^7
+ ;;^UTILITY(U,$J,358.3,45038,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45038,1,3,0)
+ ;;=3^Artificial Opening,Ileostomy Status
+ ;;^UTILITY(U,$J,358.3,45038,1,4,0)
+ ;;=4^Z93.2
+ ;;^UTILITY(U,$J,358.3,45038,2)
+ ;;=^5063644
+ ;;^UTILITY(U,$J,358.3,45039,0)
+ ;;=K83.9^^136^1928^8
+ ;;^UTILITY(U,$J,358.3,45039,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45039,1,3,0)
+ ;;=3^Biliary Tract Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,45039,1,4,0)
+ ;;=4^K83.9
+ ;;^UTILITY(U,$J,358.3,45039,2)
+ ;;=^5008881
+ ;;^UTILITY(U,$J,358.3,45040,0)
+ ;;=R14.2^^136^1928^9
+ ;;^UTILITY(U,$J,358.3,45040,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45040,1,3,0)
+ ;;=3^Burping-Belching
+ ;;^UTILITY(U,$J,358.3,45040,1,4,0)
+ ;;=4^R14.2
+ ;;^UTILITY(U,$J,358.3,45040,2)
+ ;;=^5019242
+ ;;^UTILITY(U,$J,358.3,45041,0)
+ ;;=K90.0^^136^1928^10
+ ;;^UTILITY(U,$J,358.3,45041,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45041,1,3,0)
+ ;;=3^Celiac Disease
+ ;;^UTILITY(U,$J,358.3,45041,1,4,0)
+ ;;=4^K90.0
+ ;;^UTILITY(U,$J,358.3,45041,2)
+ ;;=^20828
+ ;;^UTILITY(U,$J,358.3,45042,0)
+ ;;=K51.00^^136^1928^12
+ ;;^UTILITY(U,$J,358.3,45042,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45042,1,3,0)
+ ;;=3^Colitis,Ulcerative
+ ;;^UTILITY(U,$J,358.3,45042,1,4,0)
+ ;;=4^K51.00
+ ;;^UTILITY(U,$J,358.3,45042,2)
+ ;;=^5008652
+ ;;^UTILITY(U,$J,358.3,45043,0)
+ ;;=K94.00^^136^1928^13
+ ;;^UTILITY(U,$J,358.3,45043,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45043,1,3,0)
+ ;;=3^Complication of Colostomy,Unspec
+ ;;^UTILITY(U,$J,358.3,45043,1,4,0)
+ ;;=4^K94.00
+ ;;^UTILITY(U,$J,358.3,45043,2)
+ ;;=^5008918
+ ;;^UTILITY(U,$J,358.3,45044,0)
+ ;;=K94.10^^136^1928^14
+ ;;^UTILITY(U,$J,358.3,45044,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45044,1,3,0)
+ ;;=3^Complication of Enterostomy,Unspec
+ ;;^UTILITY(U,$J,358.3,45044,1,4,0)
+ ;;=4^K94.10
+ ;;^UTILITY(U,$J,358.3,45044,2)
+ ;;=^5008923
+ ;;^UTILITY(U,$J,358.3,45045,0)
+ ;;=K94.30^^136^1928^15
+ ;;^UTILITY(U,$J,358.3,45045,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45045,1,3,0)
+ ;;=3^Complication of Esophagostomy,Unspec
+ ;;^UTILITY(U,$J,358.3,45045,1,4,0)
+ ;;=4^K94.30
+ ;;^UTILITY(U,$J,358.3,45045,2)
+ ;;=^5008933
+ ;;^UTILITY(U,$J,358.3,45046,0)
+ ;;=K94.20^^136^1928^16
+ ;;^UTILITY(U,$J,358.3,45046,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45046,1,3,0)
+ ;;=3^Complication of Gastrostomy,Unspec
+ ;;^UTILITY(U,$J,358.3,45046,1,4,0)
+ ;;=4^K94.20
+ ;;^UTILITY(U,$J,358.3,45046,2)
+ ;;=^5008928
+ ;;^UTILITY(U,$J,358.3,45047,0)
+ ;;=K59.00^^136^1928^17
+ ;;^UTILITY(U,$J,358.3,45047,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45047,1,3,0)
+ ;;=3^Constipation,Unspec
+ ;;^UTILITY(U,$J,358.3,45047,1,4,0)
+ ;;=4^K59.00
+ ;;^UTILITY(U,$J,358.3,45047,2)
+ ;;=^323537
+ ;;^UTILITY(U,$J,358.3,45048,0)
+ ;;=K50.00^^136^1928^18
+ ;;^UTILITY(U,$J,358.3,45048,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45048,1,3,0)
+ ;;=3^Crohn's Disease,Small Intestine w/o Complications
+ ;;^UTILITY(U,$J,358.3,45048,1,4,0)
+ ;;=4^K50.00
+ ;;^UTILITY(U,$J,358.3,45048,2)
+ ;;=^5008624
+ ;;^UTILITY(U,$J,358.3,45049,0)
+ ;;=K92.9^^136^1928^19
+ ;;^UTILITY(U,$J,358.3,45049,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45049,1,3,0)
+ ;;=3^Digestive System Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,45049,1,4,0)
+ ;;=4^K92.9
+ ;;^UTILITY(U,$J,358.3,45049,2)
+ ;;=^5008917
+ ;;^UTILITY(U,$J,358.3,45050,0)
+ ;;=K57.93^^136^1928^22
+ ;;^UTILITY(U,$J,358.3,45050,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45050,1,3,0)
+ ;;=3^Dvtrcli of Intest w/o Perf/Abscess w/ Bleeding
+ ;;^UTILITY(U,$J,358.3,45050,1,4,0)
+ ;;=4^K57.93
+ ;;^UTILITY(U,$J,358.3,45050,2)
+ ;;=^5008738
+ ;;^UTILITY(U,$J,358.3,45051,0)
+ ;;=K57.92^^136^1928^23
+ ;;^UTILITY(U,$J,358.3,45051,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45051,1,3,0)
+ ;;=3^Dvtrcli of Intest w/o Perf/Abscess w/o Bleeding
+ ;;^UTILITY(U,$J,358.3,45051,1,4,0)
+ ;;=4^K57.92
+ ;;^UTILITY(U,$J,358.3,45051,2)
+ ;;=^5008737
+ ;;^UTILITY(U,$J,358.3,45052,0)
+ ;;=K57.91^^136^1928^20

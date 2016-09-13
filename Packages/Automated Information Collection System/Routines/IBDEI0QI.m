@@ -1,128 +1,356 @@
-IBDEI0QI ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0QI ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,12421,1,0)
+ ;;^UTILITY(U,$J,358.3,35067,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12421,1,3,0)
- ;;=3^Congenital lactase deficiency
- ;;^UTILITY(U,$J,358.3,12421,1,4,0)
- ;;=4^E73.0
- ;;^UTILITY(U,$J,358.3,12421,2)
- ;;=^5002911
- ;;^UTILITY(U,$J,358.3,12422,0)
- ;;=E73.1^^50^562^13
- ;;^UTILITY(U,$J,358.3,12422,1,0)
+ ;;^UTILITY(U,$J,358.3,35067,1,3,0)
+ ;;=3^Labyrinthitis,Right Ear
+ ;;^UTILITY(U,$J,358.3,35067,1,4,0)
+ ;;=4^H83.01
+ ;;^UTILITY(U,$J,358.3,35067,2)
+ ;;=^5006894
+ ;;^UTILITY(U,$J,358.3,35068,0)
+ ;;=H83.03^^100^1509^45
+ ;;^UTILITY(U,$J,358.3,35068,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12422,1,3,0)
- ;;=3^Secondary lactase deficiency
- ;;^UTILITY(U,$J,358.3,12422,1,4,0)
- ;;=4^E73.1
- ;;^UTILITY(U,$J,358.3,12422,2)
- ;;=^5002912
- ;;^UTILITY(U,$J,358.3,12423,0)
- ;;=E73.8^^50^562^11
- ;;^UTILITY(U,$J,358.3,12423,1,0)
+ ;;^UTILITY(U,$J,358.3,35068,1,3,0)
+ ;;=3^Labyrinthitis,Bilateral
+ ;;^UTILITY(U,$J,358.3,35068,1,4,0)
+ ;;=4^H83.03
+ ;;^UTILITY(U,$J,358.3,35068,2)
+ ;;=^5006896
+ ;;^UTILITY(U,$J,358.3,35069,0)
+ ;;=H83.02^^100^1509^46
+ ;;^UTILITY(U,$J,358.3,35069,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12423,1,3,0)
- ;;=3^Lactose intolerance NEC
- ;;^UTILITY(U,$J,358.3,12423,1,4,0)
- ;;=4^E73.8
- ;;^UTILITY(U,$J,358.3,12423,2)
- ;;=^5002913
- ;;^UTILITY(U,$J,358.3,12424,0)
- ;;=E73.9^^50^562^12
- ;;^UTILITY(U,$J,358.3,12424,1,0)
+ ;;^UTILITY(U,$J,358.3,35069,1,3,0)
+ ;;=3^Labyrinthitis,Left Ear
+ ;;^UTILITY(U,$J,358.3,35069,1,4,0)
+ ;;=4^H83.02
+ ;;^UTILITY(U,$J,358.3,35069,2)
+ ;;=^5006895
+ ;;^UTILITY(U,$J,358.3,35070,0)
+ ;;=J01.91^^100^1509^76
+ ;;^UTILITY(U,$J,358.3,35070,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12424,1,3,0)
- ;;=3^Lactose intolerance, unspecified
- ;;^UTILITY(U,$J,358.3,12424,1,4,0)
- ;;=4^E73.9
- ;;^UTILITY(U,$J,358.3,12424,2)
- ;;=^5002914
- ;;^UTILITY(U,$J,358.3,12425,0)
- ;;=K50.00^^50^562^4
- ;;^UTILITY(U,$J,358.3,12425,1,0)
+ ;;^UTILITY(U,$J,358.3,35070,1,3,0)
+ ;;=3^Sinusitis,Acute Recurrent Unspec
+ ;;^UTILITY(U,$J,358.3,35070,1,4,0)
+ ;;=4^J01.91
+ ;;^UTILITY(U,$J,358.3,35070,2)
+ ;;=^5008128
+ ;;^UTILITY(U,$J,358.3,35071,0)
+ ;;=J03.90^^100^1509^81
+ ;;^UTILITY(U,$J,358.3,35071,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12425,1,3,0)
- ;;=3^Crohn's disease of small intestine without complications
- ;;^UTILITY(U,$J,358.3,12425,1,4,0)
- ;;=4^K50.00
- ;;^UTILITY(U,$J,358.3,12425,2)
- ;;=^5008624
- ;;^UTILITY(U,$J,358.3,12426,0)
- ;;=K50.011^^50^562^5
- ;;^UTILITY(U,$J,358.3,12426,1,0)
+ ;;^UTILITY(U,$J,358.3,35071,1,3,0)
+ ;;=3^Tonsillitis,Acute Unspec
+ ;;^UTILITY(U,$J,358.3,35071,1,4,0)
+ ;;=4^J03.90
+ ;;^UTILITY(U,$J,358.3,35071,2)
+ ;;=^5008135
+ ;;^UTILITY(U,$J,358.3,35072,0)
+ ;;=J01.90^^100^1509^77
+ ;;^UTILITY(U,$J,358.3,35072,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12426,1,3,0)
- ;;=3^Crohn's disease of small intestine with rectal bleeding
- ;;^UTILITY(U,$J,358.3,12426,1,4,0)
- ;;=4^K50.011
- ;;^UTILITY(U,$J,358.3,12426,2)
- ;;=^5008625
- ;;^UTILITY(U,$J,358.3,12427,0)
- ;;=K50.012^^50^562^3
- ;;^UTILITY(U,$J,358.3,12427,1,0)
+ ;;^UTILITY(U,$J,358.3,35072,1,3,0)
+ ;;=3^Sinusitis,Acute Unspec
+ ;;^UTILITY(U,$J,358.3,35072,1,4,0)
+ ;;=4^J01.90
+ ;;^UTILITY(U,$J,358.3,35072,2)
+ ;;=^5008127
+ ;;^UTILITY(U,$J,358.3,35073,0)
+ ;;=J20.1^^100^1509^10
+ ;;^UTILITY(U,$J,358.3,35073,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12427,1,3,0)
- ;;=3^Crohn's disease of small intestine w intestinal obstruction
- ;;^UTILITY(U,$J,358.3,12427,1,4,0)
- ;;=4^K50.012
- ;;^UTILITY(U,$J,358.3,12427,2)
- ;;=^5008626
- ;;^UTILITY(U,$J,358.3,12428,0)
- ;;=K50.013^^50^562^6
- ;;^UTILITY(U,$J,358.3,12428,1,0)
+ ;;^UTILITY(U,$J,358.3,35073,1,3,0)
+ ;;=3^Bronchitis,Acute d/t Hemophilus Influenza
+ ;;^UTILITY(U,$J,358.3,35073,1,4,0)
+ ;;=4^J20.1
+ ;;^UTILITY(U,$J,358.3,35073,2)
+ ;;=^5008187
+ ;;^UTILITY(U,$J,358.3,35074,0)
+ ;;=J20.0^^100^1509^11
+ ;;^UTILITY(U,$J,358.3,35074,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12428,1,3,0)
- ;;=3^Crohn's disease of small intestine with fistula
- ;;^UTILITY(U,$J,358.3,12428,1,4,0)
- ;;=4^K50.013
- ;;^UTILITY(U,$J,358.3,12428,2)
- ;;=^5008627
- ;;^UTILITY(U,$J,358.3,12429,0)
- ;;=K50.014^^50^562^7
- ;;^UTILITY(U,$J,358.3,12429,1,0)
+ ;;^UTILITY(U,$J,358.3,35074,1,3,0)
+ ;;=3^Bronchitis,Acute d/t Mycoplasma Pneumonia
+ ;;^UTILITY(U,$J,358.3,35074,1,4,0)
+ ;;=4^J20.0
+ ;;^UTILITY(U,$J,358.3,35074,2)
+ ;;=^5008186
+ ;;^UTILITY(U,$J,358.3,35075,0)
+ ;;=J20.2^^100^1509^6
+ ;;^UTILITY(U,$J,358.3,35075,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12429,1,3,0)
- ;;=3^Crohn's disease of small intestine with abscess
- ;;^UTILITY(U,$J,358.3,12429,1,4,0)
- ;;=4^K50.014
- ;;^UTILITY(U,$J,358.3,12429,2)
- ;;=^5008628
- ;;^UTILITY(U,$J,358.3,12430,0)
- ;;=K50.018^^50^562^8
- ;;^UTILITY(U,$J,358.3,12430,1,0)
+ ;;^UTILITY(U,$J,358.3,35075,1,3,0)
+ ;;=3^Bonchitis,Acute d/t Streptococcus
+ ;;^UTILITY(U,$J,358.3,35075,1,4,0)
+ ;;=4^J20.2
+ ;;^UTILITY(U,$J,358.3,35075,2)
+ ;;=^5008188
+ ;;^UTILITY(U,$J,358.3,35076,0)
+ ;;=J20.4^^100^1509^13
+ ;;^UTILITY(U,$J,358.3,35076,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12430,1,3,0)
- ;;=3^Crohn's disease of small intestine with other complication
- ;;^UTILITY(U,$J,358.3,12430,1,4,0)
- ;;=4^K50.018
- ;;^UTILITY(U,$J,358.3,12430,2)
- ;;=^5008629
- ;;^UTILITY(U,$J,358.3,12431,0)
- ;;=K50.019^^50^562^9
- ;;^UTILITY(U,$J,358.3,12431,1,0)
+ ;;^UTILITY(U,$J,358.3,35076,1,3,0)
+ ;;=3^Bronchitis,Acute d/t Parainfluenza Virus
+ ;;^UTILITY(U,$J,358.3,35076,1,4,0)
+ ;;=4^J20.4
+ ;;^UTILITY(U,$J,358.3,35076,2)
+ ;;=^5008190
+ ;;^UTILITY(U,$J,358.3,35077,0)
+ ;;=J20.3^^100^1509^8
+ ;;^UTILITY(U,$J,358.3,35077,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12431,1,3,0)
- ;;=3^Crohn's disease of small intestine with unsp complications
- ;;^UTILITY(U,$J,358.3,12431,1,4,0)
- ;;=4^K50.019
- ;;^UTILITY(U,$J,358.3,12431,2)
- ;;=^5008630
- ;;^UTILITY(U,$J,358.3,12432,0)
- ;;=K56.5^^50^562^10
- ;;^UTILITY(U,$J,358.3,12432,1,0)
+ ;;^UTILITY(U,$J,358.3,35077,1,3,0)
+ ;;=3^Bronchitis,Acute d/t Coxsackievirus
+ ;;^UTILITY(U,$J,358.3,35077,1,4,0)
+ ;;=4^J20.3
+ ;;^UTILITY(U,$J,358.3,35077,2)
+ ;;=^5008189
+ ;;^UTILITY(U,$J,358.3,35078,0)
+ ;;=J20.9^^100^1509^7
+ ;;^UTILITY(U,$J,358.3,35078,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12432,1,3,0)
- ;;=3^Intestinal adhesions w obst (postprocedural) (postinfection)
- ;;^UTILITY(U,$J,358.3,12432,1,4,0)
- ;;=4^K56.5
- ;;^UTILITY(U,$J,358.3,12432,2)
- ;;=^5008712
- ;;^UTILITY(U,$J,358.3,12433,0)
- ;;=K90.0^^50^562^1
- ;;^UTILITY(U,$J,358.3,12433,1,0)
+ ;;^UTILITY(U,$J,358.3,35078,1,3,0)
+ ;;=3^Bronchitis,Acute Unspec
+ ;;^UTILITY(U,$J,358.3,35078,1,4,0)
+ ;;=4^J20.9
+ ;;^UTILITY(U,$J,358.3,35078,2)
+ ;;=^5008195
+ ;;^UTILITY(U,$J,358.3,35079,0)
+ ;;=J20.8^^100^1509^12
+ ;;^UTILITY(U,$J,358.3,35079,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12433,1,3,0)
- ;;=3^Celiac disease
+ ;;^UTILITY(U,$J,358.3,35079,1,3,0)
+ ;;=3^Bronchitis,Acute d/t Oth Spec Organisms
+ ;;^UTILITY(U,$J,358.3,35079,1,4,0)
+ ;;=4^J20.8
+ ;;^UTILITY(U,$J,358.3,35079,2)
+ ;;=^5008194
+ ;;^UTILITY(U,$J,358.3,35080,0)
+ ;;=J20.5^^100^1509^14
+ ;;^UTILITY(U,$J,358.3,35080,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35080,1,3,0)
+ ;;=3^Bronchitis,Acute d/t Respiratory Syncytial Virus
+ ;;^UTILITY(U,$J,358.3,35080,1,4,0)
+ ;;=4^J20.5
+ ;;^UTILITY(U,$J,358.3,35080,2)
+ ;;=^5008191
+ ;;^UTILITY(U,$J,358.3,35081,0)
+ ;;=J20.7^^100^1509^9
+ ;;^UTILITY(U,$J,358.3,35081,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35081,1,3,0)
+ ;;=3^Bronchitis,Acute d/t Echovirus
+ ;;^UTILITY(U,$J,358.3,35081,1,4,0)
+ ;;=4^J20.7
+ ;;^UTILITY(U,$J,358.3,35081,2)
+ ;;=^5008193
+ ;;^UTILITY(U,$J,358.3,35082,0)
+ ;;=J20.6^^100^1509^15
+ ;;^UTILITY(U,$J,358.3,35082,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35082,1,3,0)
+ ;;=3^Bronchitis,Acute d/t Rhinovirus
+ ;;^UTILITY(U,$J,358.3,35082,1,4,0)
+ ;;=4^J20.6
+ ;;^UTILITY(U,$J,358.3,35082,2)
+ ;;=^5008192
+ ;;^UTILITY(U,$J,358.3,35083,0)
+ ;;=J18.9^^100^1509^67
+ ;;^UTILITY(U,$J,358.3,35083,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35083,1,3,0)
+ ;;=3^Pneumonia,Unspec Organism
+ ;;^UTILITY(U,$J,358.3,35083,1,4,0)
+ ;;=4^J18.9
+ ;;^UTILITY(U,$J,358.3,35083,2)
+ ;;=^95632
+ ;;^UTILITY(U,$J,358.3,35084,0)
+ ;;=J18.8^^100^1509^68
+ ;;^UTILITY(U,$J,358.3,35084,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35084,1,3,0)
+ ;;=3^Pneumonia,Unspec Organism NEC
+ ;;^UTILITY(U,$J,358.3,35084,1,4,0)
+ ;;=4^J18.8
+ ;;^UTILITY(U,$J,358.3,35084,2)
+ ;;=^5008185
+ ;;^UTILITY(U,$J,358.3,35085,0)
+ ;;=J11.00^^100^1509^28
+ ;;^UTILITY(U,$J,358.3,35085,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35085,1,3,0)
+ ;;=3^Flu d/t Unidentified Flu Virus w/ Unspec Type Pneumonia
+ ;;^UTILITY(U,$J,358.3,35085,1,4,0)
+ ;;=4^J11.00
+ ;;^UTILITY(U,$J,358.3,35085,2)
+ ;;=^5008156
+ ;;^UTILITY(U,$J,358.3,35086,0)
+ ;;=J12.9^^100^1509^69
+ ;;^UTILITY(U,$J,358.3,35086,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35086,1,3,0)
+ ;;=3^Pneumonia,Viral Unspec
+ ;;^UTILITY(U,$J,358.3,35086,1,4,0)
+ ;;=4^J12.9
+ ;;^UTILITY(U,$J,358.3,35086,2)
+ ;;=^5008169
+ ;;^UTILITY(U,$J,358.3,35087,0)
+ ;;=J10.08^^100^1509^41
+ ;;^UTILITY(U,$J,358.3,35087,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35087,1,3,0)
+ ;;=3^Influenza d/t Oth ID'd Influenza Virus w/ Oth Pneumonia
+ ;;^UTILITY(U,$J,358.3,35087,1,4,0)
+ ;;=4^J10.08
+ ;;^UTILITY(U,$J,358.3,35087,2)
+ ;;=^5008150
+ ;;^UTILITY(U,$J,358.3,35088,0)
+ ;;=J10.00^^100^1509^40
+ ;;^UTILITY(U,$J,358.3,35088,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35088,1,3,0)
+ ;;=3^Influenza d/t Oth ID'd Flu Virus w/ Unspec Type Pneumonia
+ ;;^UTILITY(U,$J,358.3,35088,1,4,0)
+ ;;=4^J10.00
+ ;;^UTILITY(U,$J,358.3,35088,2)
+ ;;=^5008148
+ ;;^UTILITY(U,$J,358.3,35089,0)
+ ;;=J11.08^^100^1509^43
+ ;;^UTILITY(U,$J,358.3,35089,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35089,1,3,0)
+ ;;=3^Influenza d/t Unident Flu Virus w/ Spec Pneumonia
+ ;;^UTILITY(U,$J,358.3,35089,1,4,0)
+ ;;=4^J11.08
+ ;;^UTILITY(U,$J,358.3,35089,2)
+ ;;=^5008157
+ ;;^UTILITY(U,$J,358.3,35090,0)
+ ;;=J10.1^^100^1509^42
+ ;;^UTILITY(U,$J,358.3,35090,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35090,1,3,0)
+ ;;=3^Influenza d/t Oth ID'd Influenza Virus w/ Oth Resp Manifest
+ ;;^UTILITY(U,$J,358.3,35090,1,4,0)
+ ;;=4^J10.1
+ ;;^UTILITY(U,$J,358.3,35090,2)
+ ;;=^5008151
+ ;;^UTILITY(U,$J,358.3,35091,0)
+ ;;=J10.01^^100^1509^39
+ ;;^UTILITY(U,$J,358.3,35091,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35091,1,3,0)
+ ;;=3^Influenza d/t Oth ID'd Flu Virus w/ Same Oth ID'd Flu Virus Pneumonia
+ ;;^UTILITY(U,$J,358.3,35091,1,4,0)
+ ;;=4^J10.01
+ ;;^UTILITY(U,$J,358.3,35091,2)
+ ;;=^5008149
+ ;;^UTILITY(U,$J,358.3,35092,0)
+ ;;=J11.1^^100^1509^44
+ ;;^UTILITY(U,$J,358.3,35092,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35092,1,3,0)
+ ;;=3^Influenza d/t Unident Influenza Virus w/ Oth Resp Manifest
+ ;;^UTILITY(U,$J,358.3,35092,1,4,0)
+ ;;=4^J11.1
+ ;;^UTILITY(U,$J,358.3,35092,2)
+ ;;=^5008158
+ ;;^UTILITY(U,$J,358.3,35093,0)
+ ;;=N12.^^100^1509^85
+ ;;^UTILITY(U,$J,358.3,35093,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35093,1,3,0)
+ ;;=3^Tubulo-Interstitial Nephritis
+ ;;^UTILITY(U,$J,358.3,35093,1,4,0)
+ ;;=4^N12.
+ ;;^UTILITY(U,$J,358.3,35093,2)
+ ;;=^5015575
+ ;;^UTILITY(U,$J,358.3,35094,0)
+ ;;=N11.9^^100^1509^86
+ ;;^UTILITY(U,$J,358.3,35094,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35094,1,3,0)
+ ;;=3^Tubulo-Interstitial Nephritis,Chronic
+ ;;^UTILITY(U,$J,358.3,35094,1,4,0)
+ ;;=4^N11.9
+ ;;^UTILITY(U,$J,358.3,35094,2)
+ ;;=^5015574
+ ;;^UTILITY(U,$J,358.3,35095,0)
+ ;;=N13.6^^100^1509^73
+ ;;^UTILITY(U,$J,358.3,35095,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35095,1,3,0)
+ ;;=3^Pyonephrosis
+ ;;^UTILITY(U,$J,358.3,35095,1,4,0)
+ ;;=4^N13.6
+ ;;^UTILITY(U,$J,358.3,35095,2)
+ ;;=^101552
+ ;;^UTILITY(U,$J,358.3,35096,0)
+ ;;=N30.91^^100^1509^19
+ ;;^UTILITY(U,$J,358.3,35096,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35096,1,3,0)
+ ;;=3^Cystitis w/ Hematuria,Unspec
+ ;;^UTILITY(U,$J,358.3,35096,1,4,0)
+ ;;=4^N30.91
+ ;;^UTILITY(U,$J,358.3,35096,2)
+ ;;=^5015643
+ ;;^UTILITY(U,$J,358.3,35097,0)
+ ;;=N30.90^^100^1509^20
+ ;;^UTILITY(U,$J,358.3,35097,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35097,1,3,0)
+ ;;=3^Cystitis w/o Hematuria,Unspec
+ ;;^UTILITY(U,$J,358.3,35097,1,4,0)
+ ;;=4^N30.90
+ ;;^UTILITY(U,$J,358.3,35097,2)
+ ;;=^5015642
+ ;;^UTILITY(U,$J,358.3,35098,0)
+ ;;=N41.9^^100^1509^38
+ ;;^UTILITY(U,$J,358.3,35098,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35098,1,3,0)
+ ;;=3^Inflammatory Disease of Prostate,Unspec
+ ;;^UTILITY(U,$J,358.3,35098,1,4,0)
+ ;;=4^N41.9
+ ;;^UTILITY(U,$J,358.3,35098,2)
+ ;;=^5015694
+ ;;^UTILITY(U,$J,358.3,35099,0)
+ ;;=N70.91^^100^1509^75
+ ;;^UTILITY(U,$J,358.3,35099,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35099,1,3,0)
+ ;;=3^Salpingitis,Unspec
+ ;;^UTILITY(U,$J,358.3,35099,1,4,0)
+ ;;=4^N70.91
+ ;;^UTILITY(U,$J,358.3,35099,2)
+ ;;=^5015806
+ ;;^UTILITY(U,$J,358.3,35100,0)
+ ;;=N70.93^^100^1509^74
+ ;;^UTILITY(U,$J,358.3,35100,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35100,1,3,0)
+ ;;=3^Salpingitis & Oophoritis,Unspec
+ ;;^UTILITY(U,$J,358.3,35100,1,4,0)
+ ;;=4^N70.93
+ ;;^UTILITY(U,$J,358.3,35100,2)
+ ;;=^5015808
+ ;;^UTILITY(U,$J,358.3,35101,0)
+ ;;=N70.92^^100^1509^55
+ ;;^UTILITY(U,$J,358.3,35101,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35101,1,3,0)
+ ;;=3^Oophoritis,Unspec
+ ;;^UTILITY(U,$J,358.3,35101,1,4,0)
+ ;;=4^N70.92
+ ;;^UTILITY(U,$J,358.3,35101,2)
+ ;;=^5015807
+ ;;^UTILITY(U,$J,358.3,35102,0)
+ ;;=N73.9^^100^1509^37
+ ;;^UTILITY(U,$J,358.3,35102,1,0)
+ ;;=^358.31IA^4^2

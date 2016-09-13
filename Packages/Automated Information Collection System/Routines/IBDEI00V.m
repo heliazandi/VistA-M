@@ -1,136 +1,346 @@
-IBDEI00V ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQR(358.2)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI00V ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.2,105,2,3,0)
- ;;=1^ ^^2^^1^^1^^0
- ;;^UTILITY(U,$J,358.2,106,0)
- ;;=ICD-10 DIAGNOSES^180^^^^^4^0^SC^^8^0^1^0^^0^3^2
- ;;^UTILITY(U,$J,358.2,106,1,0)
- ;;=^358.21I^1^1
- ;;^UTILITY(U,$J,358.2,106,1,1,0)
- ;;=1^2^1
- ;;^UTILITY(U,$J,358.2,106,2,0)
- ;;=^358.22I^5^5
- ;;^UTILITY(U,$J,358.2,106,2,1,0)
- ;;=4^CODE^8^1^1^^0
- ;;^UTILITY(U,$J,358.2,106,2,2,0)
- ;;=3^DIAGNOSIS^95^1^2^^1
- ;;^UTILITY(U,$J,358.2,106,2,3,0)
- ;;=5^ADD^^2^^1^^1^7^0
- ;;^UTILITY(U,$J,358.2,106,2,4,0)
- ;;=1^P^^2^^1^^1^1^1
- ;;^UTILITY(U,$J,358.2,106,2,5,0)
- ;;=2^S^^2^^1^^1^2^0
- ;;^UTILITY(U,$J,358.2,107,0)
- ;;=VISIT TYPE^181^^^^^2^0^C^^6^0^^0^^0^3^2
- ;;^UTILITY(U,$J,358.2,107,2,0)
- ;;=^358.22I^4^3
- ;;^UTILITY(U,$J,358.2,107,2,1,0)
- ;;=3^ ^22^1^4^^1
- ;;^UTILITY(U,$J,358.2,107,2,3,0)
- ;;=1^ ^^2^^1^^1^^1
- ;;^UTILITY(U,$J,358.2,107,2,4,0)
- ;;=2^ ^5^1^1
- ;;^UTILITY(U,$J,358.2,108,0)
- ;;=CPT CODES^184^^^^^1^0^BC^^1^0^^0^^0^3^2
- ;;^UTILITY(U,$J,358.2,108,1,0)
- ;;=^358.21I^1^1
- ;;^UTILITY(U,$J,358.2,108,1,1,0)
- ;;=1^^0
- ;;^UTILITY(U,$J,358.2,108,2,0)
- ;;=^358.22I^3^3
- ;;^UTILITY(U,$J,358.2,108,2,1,0)
- ;;=1^ ^^2^^1^^1
- ;;^UTILITY(U,$J,358.2,108,2,2,0)
- ;;=2^ ^5^1^1^^1
- ;;^UTILITY(U,$J,358.2,108,2,3,0)
- ;;=3^ ^45^1^2^^1
- ;;^UTILITY(U,$J,358.2,109,0)
- ;;=ICD-10 DIAGNOSES^185^^^^^4^0^SC^^8^0^1^0^^0^3^2
- ;;^UTILITY(U,$J,358.2,109,1,0)
- ;;=^358.21I^1^1
- ;;^UTILITY(U,$J,358.2,109,1,1,0)
- ;;=1^2^1
- ;;^UTILITY(U,$J,358.2,109,2,0)
- ;;=^358.22I^5^5
- ;;^UTILITY(U,$J,358.2,109,2,1,0)
- ;;=4^CODE^8^1^1^^0
- ;;^UTILITY(U,$J,358.2,109,2,2,0)
- ;;=3^DIAGNOSIS^95^1^2^^1
- ;;^UTILITY(U,$J,358.2,109,2,3,0)
- ;;=5^ADD^^2^^1^^1^7^0
- ;;^UTILITY(U,$J,358.2,109,2,4,0)
- ;;=1^P^^2^^1^^1^1^1
- ;;^UTILITY(U,$J,358.2,109,2,5,0)
- ;;=2^S^^2^^1^^1^2^0
- ;;^UTILITY(U,$J,358.2,110,0)
- ;;=VISIT TYPE^188^^^^^2^0^C^^6^0^^0^^0^3^2
- ;;^UTILITY(U,$J,358.2,110,1,0)
- ;;=^358.21I^1^1
- ;;^UTILITY(U,$J,358.2,110,1,1,0)
- ;;=1^2
- ;;^UTILITY(U,$J,358.2,110,2,0)
- ;;=^358.22I^4^3
- ;;^UTILITY(U,$J,358.2,110,2,1,0)
- ;;=1^ ^28^1^2^^1
- ;;^UTILITY(U,$J,358.2,110,2,3,0)
- ;;=3^^^2^^1^^1^^1
- ;;^UTILITY(U,$J,358.2,110,2,4,0)
- ;;=2^ ^5^1^1
- ;;^UTILITY(U,$J,358.2,111,0)
- ;;=CPT CODES^189^^^^^1^0^SC^^1^0^^0^^0^3^2
- ;;^UTILITY(U,$J,358.2,111,1,0)
- ;;=^358.21I^2^2
- ;;^UTILITY(U,$J,358.2,111,1,1,0)
- ;;=1^2^2
- ;;^UTILITY(U,$J,358.2,111,1,2,0)
- ;;=2^2^54
- ;;^UTILITY(U,$J,358.2,111,2,0)
- ;;=^358.22I^3^3
- ;;^UTILITY(U,$J,358.2,111,2,1,0)
- ;;=2^ ^5^1^1^^0
- ;;^UTILITY(U,$J,358.2,111,2,2,0)
- ;;=3^ ^40^1^2^^1
- ;;^UTILITY(U,$J,358.2,111,2,3,0)
- ;;=1^ ^^2^^1^^1^^0
- ;;^UTILITY(U,$J,358.2,112,0)
- ;;=ICD-10 DIAGNOSES^190^^^^^4^0^SC^^8^0^1^0^^0^3^2
- ;;^UTILITY(U,$J,358.2,112,1,0)
- ;;=^358.21I^1^1
- ;;^UTILITY(U,$J,358.2,112,1,1,0)
- ;;=1^2^1
- ;;^UTILITY(U,$J,358.2,112,2,0)
- ;;=^358.22I^5^5
- ;;^UTILITY(U,$J,358.2,112,2,1,0)
- ;;=4^CODE^8^1^1^^0
- ;;^UTILITY(U,$J,358.2,112,2,2,0)
- ;;=3^DIAGNOSIS^95^1^2^^1
- ;;^UTILITY(U,$J,358.2,112,2,3,0)
- ;;=5^ADD^^2^^1^^1^7^0
- ;;^UTILITY(U,$J,358.2,112,2,4,0)
- ;;=1^P^^2^^1^^1^1^1
- ;;^UTILITY(U,$J,358.2,112,2,5,0)
- ;;=2^S^^2^^1^^1^2^0
- ;;^UTILITY(U,$J,358.2,113,0)
- ;;=CPT CODES^191^^R^^^1^0^BSC^^1^0^^0^^0^^2
- ;;^UTILITY(U,$J,358.2,113,1,0)
- ;;=^358.21I^1^1
- ;;^UTILITY(U,$J,358.2,113,1,1,0)
- ;;=1^3
- ;;^UTILITY(U,$J,358.2,113,2,0)
- ;;=^358.22I^3^3
- ;;^UTILITY(U,$J,358.2,113,2,1,0)
- ;;=1^x^5^2^1^1^0
- ;;^UTILITY(U,$J,358.2,113,2,2,0)
- ;;=2^CODE^5^1^1^^0
- ;;^UTILITY(U,$J,358.2,113,2,3,0)
- ;;=3^DESCRIPTION^45^1^2^2^1
- ;;^UTILITY(U,$J,358.2,114,0)
- ;;=VISIT TYPE^194^^^^^2^0^C^^6^0^^0^^0^3^2
- ;;^UTILITY(U,$J,358.2,114,1,0)
- ;;=^358.21I^1^1
- ;;^UTILITY(U,$J,358.2,114,1,1,0)
- ;;=1^2
- ;;^UTILITY(U,$J,358.2,114,2,0)
- ;;=^358.22I^4^3
+ ;;^UTILITY(U,$J,358.3,566,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,566,1,3,0)
+ ;;=3^Hallucinogen Induced Psychotic Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,566,1,4,0)
+ ;;=4^F16.159
+ ;;^UTILITY(U,$J,358.3,566,2)
+ ;;=^5003331
+ ;;^UTILITY(U,$J,358.3,567,0)
+ ;;=F16.259^^3^48^8
+ ;;^UTILITY(U,$J,358.3,567,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,567,1,3,0)
+ ;;=3^Hallucinogen Induced Psychotic Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,567,1,4,0)
+ ;;=4^F16.259
+ ;;^UTILITY(U,$J,358.3,567,2)
+ ;;=^5003344
+ ;;^UTILITY(U,$J,358.3,568,0)
+ ;;=F16.959^^3^48^9
+ ;;^UTILITY(U,$J,358.3,568,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,568,1,3,0)
+ ;;=3^Hallucinogen Induced Psychotic Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,568,1,4,0)
+ ;;=4^F16.959
+ ;;^UTILITY(U,$J,358.3,568,2)
+ ;;=^5003356
+ ;;^UTILITY(U,$J,358.3,569,0)
+ ;;=F16.99^^3^48^38
+ ;;^UTILITY(U,$J,358.3,569,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,569,1,3,0)
+ ;;=3^Phencyclidine Use Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,569,1,4,0)
+ ;;=4^F16.99
+ ;;^UTILITY(U,$J,358.3,569,2)
+ ;;=^5133359
+ ;;^UTILITY(U,$J,358.3,570,0)
+ ;;=F16.983^^3^48^16
+ ;;^UTILITY(U,$J,358.3,570,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,570,1,3,0)
+ ;;=3^Hallucinogen Persisting Perception Disorder
+ ;;^UTILITY(U,$J,358.3,570,1,4,0)
+ ;;=4^F16.983
+ ;;^UTILITY(U,$J,358.3,570,2)
+ ;;=^5003358
+ ;;^UTILITY(U,$J,358.3,571,0)
+ ;;=F16.20^^3^48^37
+ ;;^UTILITY(U,$J,358.3,571,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,571,1,3,0)
+ ;;=3^Phencyclidine Use Disorder,Severe
+ ;;^UTILITY(U,$J,358.3,571,1,4,0)
+ ;;=4^F16.20
+ ;;^UTILITY(U,$J,358.3,571,2)
+ ;;=^5003336
+ ;;^UTILITY(U,$J,358.3,572,0)
+ ;;=F16.180^^3^48^17
+ ;;^UTILITY(U,$J,358.3,572,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,572,1,3,0)
+ ;;=3^Phencyclidine Induced Anxiety Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,572,1,4,0)
+ ;;=4^F16.180
+ ;;^UTILITY(U,$J,358.3,572,2)
+ ;;=^5003332
+ ;;^UTILITY(U,$J,358.3,573,0)
+ ;;=F16.280^^3^48^18
+ ;;^UTILITY(U,$J,358.3,573,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,573,1,3,0)
+ ;;=3^Phencyclidine Induced Anxiety Disorder w/ Moderate/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,573,1,4,0)
+ ;;=4^F16.280
+ ;;^UTILITY(U,$J,358.3,573,2)
+ ;;=^5003345
+ ;;^UTILITY(U,$J,358.3,574,0)
+ ;;=F16.980^^3^48^19
+ ;;^UTILITY(U,$J,358.3,574,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,574,1,3,0)
+ ;;=3^Phencyclidine Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,574,1,4,0)
+ ;;=4^F16.980
+ ;;^UTILITY(U,$J,358.3,574,2)
+ ;;=^5003357
+ ;;^UTILITY(U,$J,358.3,575,0)
+ ;;=F16.14^^3^48^20
+ ;;^UTILITY(U,$J,358.3,575,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,575,1,3,0)
+ ;;=3^Phencyclidine Induced Bipolar & Related Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,575,1,4,0)
+ ;;=4^F16.14
+ ;;^UTILITY(U,$J,358.3,575,2)
+ ;;=^5003328
+ ;;^UTILITY(U,$J,358.3,576,0)
+ ;;=F16.24^^3^48^21
+ ;;^UTILITY(U,$J,358.3,576,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,576,1,3,0)
+ ;;=3^Phencyclidine Induced Bipolar & Related Disorder w/ Moderate/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,576,1,4,0)
+ ;;=4^F16.24
+ ;;^UTILITY(U,$J,358.3,576,2)
+ ;;=^5003341
+ ;;^UTILITY(U,$J,358.3,577,0)
+ ;;=F16.94^^3^48^22
+ ;;^UTILITY(U,$J,358.3,577,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,577,1,3,0)
+ ;;=3^Phencyclidine Induced Bipolar & Related Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,577,1,4,0)
+ ;;=4^F16.94
+ ;;^UTILITY(U,$J,358.3,577,2)
+ ;;=^5003353
+ ;;^UTILITY(U,$J,358.3,578,0)
+ ;;=F16.14^^3^48^23
+ ;;^UTILITY(U,$J,358.3,578,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,578,1,3,0)
+ ;;=3^Phencyclidine Induced Depressive Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,578,1,4,0)
+ ;;=4^F16.14
+ ;;^UTILITY(U,$J,358.3,578,2)
+ ;;=^5003328
+ ;;^UTILITY(U,$J,358.3,579,0)
+ ;;=F16.24^^3^48^24
+ ;;^UTILITY(U,$J,358.3,579,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,579,1,3,0)
+ ;;=3^Phencyclidine Induced Depressive Disorder w/ Moderate/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,579,1,4,0)
+ ;;=4^F16.24
+ ;;^UTILITY(U,$J,358.3,579,2)
+ ;;=^5003341
+ ;;^UTILITY(U,$J,358.3,580,0)
+ ;;=F16.94^^3^48^25
+ ;;^UTILITY(U,$J,358.3,580,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,580,1,3,0)
+ ;;=3^Phencyclidine Induced Depressive Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,580,1,4,0)
+ ;;=4^F16.94
+ ;;^UTILITY(U,$J,358.3,580,2)
+ ;;=^5003353
+ ;;^UTILITY(U,$J,358.3,581,0)
+ ;;=F16.159^^3^48^26
+ ;;^UTILITY(U,$J,358.3,581,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,581,1,3,0)
+ ;;=3^Phencyclidine Induced Psychotic Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,581,1,4,0)
+ ;;=4^F16.159
+ ;;^UTILITY(U,$J,358.3,581,2)
+ ;;=^5003331
+ ;;^UTILITY(U,$J,358.3,582,0)
+ ;;=F16.259^^3^48^27
+ ;;^UTILITY(U,$J,358.3,582,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,582,1,3,0)
+ ;;=3^Phencyclidine Induced Psychotic Disorder w/ Moderate/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,582,1,4,0)
+ ;;=4^F16.259
+ ;;^UTILITY(U,$J,358.3,582,2)
+ ;;=^5003344
+ ;;^UTILITY(U,$J,358.3,583,0)
+ ;;=F16.959^^3^48^28
+ ;;^UTILITY(U,$J,358.3,583,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,583,1,3,0)
+ ;;=3^Phencyclidine Induced Psychotic Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,583,1,4,0)
+ ;;=4^F16.959
+ ;;^UTILITY(U,$J,358.3,583,2)
+ ;;=^5003356
+ ;;^UTILITY(U,$J,358.3,584,0)
+ ;;=F16.129^^3^48^32
+ ;;^UTILITY(U,$J,358.3,584,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,584,1,3,0)
+ ;;=3^Phencyclidine Intoxication w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,584,1,4,0)
+ ;;=4^F16.129
+ ;;^UTILITY(U,$J,358.3,584,2)
+ ;;=^5003327
+ ;;^UTILITY(U,$J,358.3,585,0)
+ ;;=F16.229^^3^48^33
+ ;;^UTILITY(U,$J,358.3,585,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,585,1,3,0)
+ ;;=3^Phencyclidine Intoxication w/ Moderate/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,585,1,4,0)
+ ;;=4^F16.229
+ ;;^UTILITY(U,$J,358.3,585,2)
+ ;;=^5003340
+ ;;^UTILITY(U,$J,358.3,586,0)
+ ;;=F16.929^^3^48^34
+ ;;^UTILITY(U,$J,358.3,586,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,586,1,3,0)
+ ;;=3^Phencyclidine Intoxication w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,586,1,4,0)
+ ;;=4^F16.929
+ ;;^UTILITY(U,$J,358.3,586,2)
+ ;;=^5003352
+ ;;^UTILITY(U,$J,358.3,587,0)
+ ;;=F16.121^^3^48^29
+ ;;^UTILITY(U,$J,358.3,587,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,587,1,3,0)
+ ;;=3^Phencyclidine Intoxication Delirium w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,587,1,4,0)
+ ;;=4^F16.121
+ ;;^UTILITY(U,$J,358.3,587,2)
+ ;;=^5003325
+ ;;^UTILITY(U,$J,358.3,588,0)
+ ;;=F16.221^^3^48^30
+ ;;^UTILITY(U,$J,358.3,588,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,588,1,3,0)
+ ;;=3^Phencyclidine Intoxication Delirium w/ Moderate/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,588,1,4,0)
+ ;;=4^F16.221
+ ;;^UTILITY(U,$J,358.3,588,2)
+ ;;=^5003339
+ ;;^UTILITY(U,$J,358.3,589,0)
+ ;;=F16.921^^3^48^31
+ ;;^UTILITY(U,$J,358.3,589,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,589,1,3,0)
+ ;;=3^Phencyclidine Intoxication Delirium w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,589,1,4,0)
+ ;;=4^F16.921
+ ;;^UTILITY(U,$J,358.3,589,2)
+ ;;=^5003351
+ ;;^UTILITY(U,$J,358.3,590,0)
+ ;;=F11.10^^3^49^24
+ ;;^UTILITY(U,$J,358.3,590,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,590,1,3,0)
+ ;;=3^Opioid Use Disorder,Mild
+ ;;^UTILITY(U,$J,358.3,590,1,4,0)
+ ;;=4^F11.10
+ ;;^UTILITY(U,$J,358.3,590,2)
+ ;;=^5003114
+ ;;^UTILITY(U,$J,358.3,591,0)
+ ;;=F11.129^^3^49^20
+ ;;^UTILITY(U,$J,358.3,591,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,591,1,3,0)
+ ;;=3^Opioid Intoxication w/o Perceptual Disturbances w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,591,1,4,0)
+ ;;=4^F11.129
+ ;;^UTILITY(U,$J,358.3,591,2)
+ ;;=^5003118
+ ;;^UTILITY(U,$J,358.3,592,0)
+ ;;=F11.14^^3^49^5
+ ;;^UTILITY(U,$J,358.3,592,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,592,1,3,0)
+ ;;=3^Opioid Induced Depressive Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,592,1,4,0)
+ ;;=4^F11.14
+ ;;^UTILITY(U,$J,358.3,592,2)
+ ;;=^5003119
+ ;;^UTILITY(U,$J,358.3,593,0)
+ ;;=F11.182^^3^49^11
+ ;;^UTILITY(U,$J,358.3,593,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,593,1,3,0)
+ ;;=3^Opioid Induced Sleep Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,593,1,4,0)
+ ;;=4^F11.182
+ ;;^UTILITY(U,$J,358.3,593,2)
+ ;;=^5003124
+ ;;^UTILITY(U,$J,358.3,594,0)
+ ;;=F11.20^^3^49^25
+ ;;^UTILITY(U,$J,358.3,594,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,594,1,3,0)
+ ;;=3^Opioid Use Disorder,Moderate
+ ;;^UTILITY(U,$J,358.3,594,1,4,0)
+ ;;=4^F11.20
+ ;;^UTILITY(U,$J,358.3,594,2)
+ ;;=^5003127
+ ;;^UTILITY(U,$J,358.3,595,0)
+ ;;=F11.23^^3^49^27
+ ;;^UTILITY(U,$J,358.3,595,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,595,1,3,0)
+ ;;=3^Opioid Withdrawal
+ ;;^UTILITY(U,$J,358.3,595,1,4,0)
+ ;;=4^F11.23
+ ;;^UTILITY(U,$J,358.3,595,2)
+ ;;=^5003133
+ ;;^UTILITY(U,$J,358.3,596,0)
+ ;;=F11.24^^3^49^6
+ ;;^UTILITY(U,$J,358.3,596,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,596,1,3,0)
+ ;;=3^Opioid Induced Depressive Disorder w/ Moderate-Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,596,1,4,0)
+ ;;=4^F11.24
+ ;;^UTILITY(U,$J,358.3,596,2)
+ ;;=^5003134
+ ;;^UTILITY(U,$J,358.3,597,0)
+ ;;=F11.188^^3^49^1
+ ;;^UTILITY(U,$J,358.3,597,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,597,1,3,0)
+ ;;=3^Opioid Induced Anxiety Disorder w/ Mild Use Disorder
+ ;;^UTILITY(U,$J,358.3,597,1,4,0)
+ ;;=4^F11.188
+ ;;^UTILITY(U,$J,358.3,597,2)
+ ;;=^5003125
+ ;;^UTILITY(U,$J,358.3,598,0)
+ ;;=F11.288^^3^49^2
+ ;;^UTILITY(U,$J,358.3,598,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,598,1,3,0)
+ ;;=3^Opioid Induced Anxiety Disorder w/ Mod/Severe Use Disorder
+ ;;^UTILITY(U,$J,358.3,598,1,4,0)
+ ;;=4^F11.288
+ ;;^UTILITY(U,$J,358.3,598,2)
+ ;;=^5003140
+ ;;^UTILITY(U,$J,358.3,599,0)
+ ;;=F11.988^^3^49^3
+ ;;^UTILITY(U,$J,358.3,599,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,599,1,3,0)
+ ;;=3^Opioid Induced Anxiety Disorder w/o Use Disorder
+ ;;^UTILITY(U,$J,358.3,599,1,4,0)
+ ;;=4^F11.988
+ ;;^UTILITY(U,$J,358.3,599,2)
+ ;;=^5003154
+ ;;^UTILITY(U,$J,358.3,600,0)
+ ;;=F11.921^^3^49^4
+ ;;^UTILITY(U,$J,358.3,600,1,0)
+ ;;=^358.31IA^4^2

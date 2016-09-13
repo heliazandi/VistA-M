@@ -1,126 +1,360 @@
-IBDEI0YD ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0YD ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16138,1,3,0)
- ;;=3^Myeloid Leukemia,BCR/ABL-Positive,Chr,In Remission
- ;;^UTILITY(U,$J,358.3,16138,1,4,0)
- ;;=4^C92.11
- ;;^UTILITY(U,$J,358.3,16138,2)
- ;;=^5001793
- ;;^UTILITY(U,$J,358.3,16139,0)
- ;;=C92.10^^61^724^34
- ;;^UTILITY(U,$J,358.3,16139,1,0)
+ ;;^UTILITY(U,$J,358.3,45087,1,4,0)
+ ;;=4^K42.9
+ ;;^UTILITY(U,$J,358.3,45087,2)
+ ;;=^5008606
+ ;;^UTILITY(U,$J,358.3,45088,0)
+ ;;=K41.30^^136^1928^57
+ ;;^UTILITY(U,$J,358.3,45088,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16139,1,3,0)
- ;;=3^Myeloid Leukemia,BCR/ABL-Positive,Chr,Not in Remission
- ;;^UTILITY(U,$J,358.3,16139,1,4,0)
- ;;=4^C92.10
- ;;^UTILITY(U,$J,358.3,16139,2)
- ;;=^5001792
- ;;^UTILITY(U,$J,358.3,16140,0)
- ;;=C91.40^^61^724^7
- ;;^UTILITY(U,$J,358.3,16140,1,0)
+ ;;^UTILITY(U,$J,358.3,45088,1,3,0)
+ ;;=3^Hernia,Unil Femoral w/ Obstruction w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,45088,1,4,0)
+ ;;=4^K41.30
+ ;;^UTILITY(U,$J,358.3,45088,2)
+ ;;=^5008599
+ ;;^UTILITY(U,$J,358.3,45089,0)
+ ;;=K41.90^^136^1928^58
+ ;;^UTILITY(U,$J,358.3,45089,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16140,1,3,0)
- ;;=3^Hairy Cell Leukemia,Not in Remission
- ;;^UTILITY(U,$J,358.3,16140,1,4,0)
- ;;=4^C91.40
- ;;^UTILITY(U,$J,358.3,16140,2)
- ;;=^5001771
- ;;^UTILITY(U,$J,358.3,16141,0)
- ;;=C81.90^^61^724^19
- ;;^UTILITY(U,$J,358.3,16141,1,0)
+ ;;^UTILITY(U,$J,358.3,45089,1,3,0)
+ ;;=3^Hernia,Unil Femoral w/o Obstruction/Gangrene
+ ;;^UTILITY(U,$J,358.3,45089,1,4,0)
+ ;;=4^K41.90
+ ;;^UTILITY(U,$J,358.3,45089,2)
+ ;;=^5008603
+ ;;^UTILITY(U,$J,358.3,45090,0)
+ ;;=K40.30^^136^1928^59
+ ;;^UTILITY(U,$J,358.3,45090,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16141,1,3,0)
- ;;=3^Hodgkin Lymphoma,Unspec Site
- ;;^UTILITY(U,$J,358.3,16141,1,4,0)
- ;;=4^C81.90
- ;;^UTILITY(U,$J,358.3,16141,2)
- ;;=^5001451
- ;;^UTILITY(U,$J,358.3,16142,0)
- ;;=C81.99^^61^724^26
- ;;^UTILITY(U,$J,358.3,16142,1,0)
+ ;;^UTILITY(U,$J,358.3,45090,1,3,0)
+ ;;=3^Hernia,Unil Inguinal w/ Obstruction w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,45090,1,4,0)
+ ;;=4^K40.30
+ ;;^UTILITY(U,$J,358.3,45090,2)
+ ;;=^5008587
+ ;;^UTILITY(U,$J,358.3,45091,0)
+ ;;=K40.90^^136^1928^60
+ ;;^UTILITY(U,$J,358.3,45091,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16142,1,3,0)
- ;;=3^Lymphoma,Extrnod & Solid Org Sites,Unspec
- ;;^UTILITY(U,$J,358.3,16142,1,4,0)
- ;;=4^C81.99
- ;;^UTILITY(U,$J,358.3,16142,2)
- ;;=^5001460
- ;;^UTILITY(U,$J,358.3,16143,0)
- ;;=C81.00^^61^724^16
- ;;^UTILITY(U,$J,358.3,16143,1,0)
+ ;;^UTILITY(U,$J,358.3,45091,1,3,0)
+ ;;=3^Hernia,Unil Inguinal w/o Obstruction/Gangrene
+ ;;^UTILITY(U,$J,358.3,45091,1,4,0)
+ ;;=4^K40.90
+ ;;^UTILITY(U,$J,358.3,45091,2)
+ ;;=^5008591
+ ;;^UTILITY(U,$J,358.3,45092,0)
+ ;;=K43.9^^136^1928^61
+ ;;^UTILITY(U,$J,358.3,45092,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16143,1,3,0)
- ;;=3^Hodgkin Lymphoma,Nodular Lymphocyte,Unspec Site
- ;;^UTILITY(U,$J,358.3,16143,1,4,0)
- ;;=4^C81.00
- ;;^UTILITY(U,$J,358.3,16143,2)
- ;;=^5001391
- ;;^UTILITY(U,$J,358.3,16144,0)
- ;;=C81.09^^61^724^15
- ;;^UTILITY(U,$J,358.3,16144,1,0)
+ ;;^UTILITY(U,$J,358.3,45092,1,3,0)
+ ;;=3^Hernia,Ventral w/o Obstruction/Gangrene
+ ;;^UTILITY(U,$J,358.3,45092,1,4,0)
+ ;;=4^K43.9
+ ;;^UTILITY(U,$J,358.3,45092,2)
+ ;;=^5008615
+ ;;^UTILITY(U,$J,358.3,45093,0)
+ ;;=K59.9^^136^1928^65
+ ;;^UTILITY(U,$J,358.3,45093,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16144,1,3,0)
- ;;=3^Hodgkin Lymphoma,Nodular Lymphocyte,Extrnod & Solid Org Site
- ;;^UTILITY(U,$J,358.3,16144,1,4,0)
- ;;=4^C81.09
- ;;^UTILITY(U,$J,358.3,16144,2)
- ;;=^5001400
- ;;^UTILITY(U,$J,358.3,16145,0)
- ;;=C81.40^^61^724^12
- ;;^UTILITY(U,$J,358.3,16145,1,0)
+ ;;^UTILITY(U,$J,358.3,45093,1,3,0)
+ ;;=3^Intestinal Disorder,Functional,Unspec
+ ;;^UTILITY(U,$J,358.3,45093,1,4,0)
+ ;;=4^K59.9
+ ;;^UTILITY(U,$J,358.3,45093,2)
+ ;;=^5008744
+ ;;^UTILITY(U,$J,358.3,45094,0)
+ ;;=K63.9^^136^1928^64
+ ;;^UTILITY(U,$J,358.3,45094,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16145,1,3,0)
- ;;=3^Hodgkin Lymphoma,Lymphocyte-Rich,Unspec Site
- ;;^UTILITY(U,$J,358.3,16145,1,4,0)
- ;;=4^C81.40
- ;;^UTILITY(U,$J,358.3,16145,2)
- ;;=^5001431
- ;;^UTILITY(U,$J,358.3,16146,0)
- ;;=C81.49^^61^724^11
- ;;^UTILITY(U,$J,358.3,16146,1,0)
+ ;;^UTILITY(U,$J,358.3,45094,1,3,0)
+ ;;=3^Intestinal Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,45094,1,4,0)
+ ;;=4^K63.9
+ ;;^UTILITY(U,$J,358.3,45094,2)
+ ;;=^5008768
+ ;;^UTILITY(U,$J,358.3,45095,0)
+ ;;=K58.0^^136^1928^62
+ ;;^UTILITY(U,$J,358.3,45095,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16146,1,3,0)
- ;;=3^Hodgkin Lymphoma,Lymphocyte-Rich,Extrnod & Solid Org Sites
- ;;^UTILITY(U,$J,358.3,16146,1,4,0)
- ;;=4^C81.49
- ;;^UTILITY(U,$J,358.3,16146,2)
- ;;=^5001440
- ;;^UTILITY(U,$J,358.3,16147,0)
- ;;=C81.30^^61^724^10
- ;;^UTILITY(U,$J,358.3,16147,1,0)
+ ;;^UTILITY(U,$J,358.3,45095,1,3,0)
+ ;;=3^IBS w/ Diarrhea
+ ;;^UTILITY(U,$J,358.3,45095,1,4,0)
+ ;;=4^K58.0
+ ;;^UTILITY(U,$J,358.3,45095,2)
+ ;;=^5008739
+ ;;^UTILITY(U,$J,358.3,45096,0)
+ ;;=K58.9^^136^1928^63
+ ;;^UTILITY(U,$J,358.3,45096,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16147,1,3,0)
- ;;=3^Hodgkin Lymphoma,Lymphocyte Depleted,Unspec Site
- ;;^UTILITY(U,$J,358.3,16147,1,4,0)
- ;;=4^C81.30
- ;;^UTILITY(U,$J,358.3,16147,2)
- ;;=^5001421
- ;;^UTILITY(U,$J,358.3,16148,0)
- ;;=C81.39^^61^724^9
- ;;^UTILITY(U,$J,358.3,16148,1,0)
+ ;;^UTILITY(U,$J,358.3,45096,1,3,0)
+ ;;=3^IBS w/o Diarrhea
+ ;;^UTILITY(U,$J,358.3,45096,1,4,0)
+ ;;=4^K58.9
+ ;;^UTILITY(U,$J,358.3,45096,2)
+ ;;=^5008740
+ ;;^UTILITY(U,$J,358.3,45097,0)
+ ;;=K90.9^^136^1928^66
+ ;;^UTILITY(U,$J,358.3,45097,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16148,1,3,0)
- ;;=3^Hodgkin Lymphoma,Lymphocyte Depleted,Extrnod & Solid Org Site
- ;;^UTILITY(U,$J,358.3,16148,1,4,0)
- ;;=4^C81.39
- ;;^UTILITY(U,$J,358.3,16148,2)
- ;;=^5001430
- ;;^UTILITY(U,$J,358.3,16149,0)
- ;;=C81.20^^61^724^14
- ;;^UTILITY(U,$J,358.3,16149,1,0)
+ ;;^UTILITY(U,$J,358.3,45097,1,3,0)
+ ;;=3^Malabsorption,Intestinal,Unspec
+ ;;^UTILITY(U,$J,358.3,45097,1,4,0)
+ ;;=4^K90.9
+ ;;^UTILITY(U,$J,358.3,45097,2)
+ ;;=^5008899
+ ;;^UTILITY(U,$J,358.3,45098,0)
+ ;;=K86.9^^136^1928^67
+ ;;^UTILITY(U,$J,358.3,45098,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16149,1,3,0)
- ;;=3^Hodgkin Lymphoma,Mixed Cellularity,Unspec Site
- ;;^UTILITY(U,$J,358.3,16149,1,4,0)
- ;;=4^C81.20
- ;;^UTILITY(U,$J,358.3,16149,2)
- ;;=^5001411
- ;;^UTILITY(U,$J,358.3,16150,0)
- ;;=C81.29^^61^724^13
- ;;^UTILITY(U,$J,358.3,16150,1,0)
+ ;;^UTILITY(U,$J,358.3,45098,1,3,0)
+ ;;=3^Pancreas Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,45098,1,4,0)
+ ;;=4^K86.9
+ ;;^UTILITY(U,$J,358.3,45098,2)
+ ;;=^5008892
+ ;;^UTILITY(U,$J,358.3,45099,0)
+ ;;=K85.9^^136^1928^68
+ ;;^UTILITY(U,$J,358.3,45099,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16150,1,3,0)
- ;;=3^Hodgkin Lymphoma,Mixed Cellularity,Extrnod & Solid Org Sites
+ ;;^UTILITY(U,$J,358.3,45099,1,3,0)
+ ;;=3^Pancreatitis,Acute,Unspec
+ ;;^UTILITY(U,$J,358.3,45099,1,4,0)
+ ;;=4^K85.9
+ ;;^UTILITY(U,$J,358.3,45099,2)
+ ;;=^5008887
+ ;;^UTILITY(U,$J,358.3,45100,0)
+ ;;=Z87.11^^136^1928^69
+ ;;^UTILITY(U,$J,358.3,45100,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45100,1,3,0)
+ ;;=3^Personal Hx of PUD
+ ;;^UTILITY(U,$J,358.3,45100,1,4,0)
+ ;;=4^Z87.11
+ ;;^UTILITY(U,$J,358.3,45100,2)
+ ;;=^5063482
+ ;;^UTILITY(U,$J,358.3,45101,0)
+ ;;=D73.9^^136^1928^70
+ ;;^UTILITY(U,$J,358.3,45101,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45101,1,3,0)
+ ;;=3^Spleen Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,45101,1,4,0)
+ ;;=4^D73.9
+ ;;^UTILITY(U,$J,358.3,45101,2)
+ ;;=^5002386
+ ;;^UTILITY(U,$J,358.3,45102,0)
+ ;;=K26.7^^136^1928^71
+ ;;^UTILITY(U,$J,358.3,45102,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45102,1,3,0)
+ ;;=3^Ulcer,Chronic Duodenal w/o Hemorrhage/Perforation
+ ;;^UTILITY(U,$J,358.3,45102,1,4,0)
+ ;;=4^K26.7
+ ;;^UTILITY(U,$J,358.3,45102,2)
+ ;;=^5008526
+ ;;^UTILITY(U,$J,358.3,45103,0)
+ ;;=K25.7^^136^1928^72
+ ;;^UTILITY(U,$J,358.3,45103,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45103,1,3,0)
+ ;;=3^Ulcer,Chronic Gastric w/o Hemorrhage/Perforation
+ ;;^UTILITY(U,$J,358.3,45103,1,4,0)
+ ;;=4^K25.7
+ ;;^UTILITY(U,$J,358.3,45103,2)
+ ;;=^5008521
+ ;;^UTILITY(U,$J,358.3,45104,0)
+ ;;=K27.7^^136^1928^73
+ ;;^UTILITY(U,$J,358.3,45104,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45104,1,3,0)
+ ;;=3^Ulcer,Chronic Peptic w/o Hemorrhage/Perforation
+ ;;^UTILITY(U,$J,358.3,45104,1,4,0)
+ ;;=4^K27.7
+ ;;^UTILITY(U,$J,358.3,45104,2)
+ ;;=^5008535
+ ;;^UTILITY(U,$J,358.3,45105,0)
+ ;;=D55.9^^136^1929^1
+ ;;^UTILITY(U,$J,358.3,45105,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45105,1,3,0)
+ ;;=3^Anemia d/t Enzyme Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,45105,1,4,0)
+ ;;=4^D55.9
+ ;;^UTILITY(U,$J,358.3,45105,2)
+ ;;=^5002304
+ ;;^UTILITY(U,$J,358.3,45106,0)
+ ;;=D63.1^^136^1929^2
+ ;;^UTILITY(U,$J,358.3,45106,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45106,1,3,0)
+ ;;=3^Anemia in Chronic Kidney Disease
+ ;;^UTILITY(U,$J,358.3,45106,1,4,0)
+ ;;=4^D63.1
+ ;;^UTILITY(U,$J,358.3,45106,2)
+ ;;=^332908
+ ;;^UTILITY(U,$J,358.3,45107,0)
+ ;;=D63.0^^136^1929^3
+ ;;^UTILITY(U,$J,358.3,45107,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45107,1,3,0)
+ ;;=3^Anemia in Neoplastic Disease
+ ;;^UTILITY(U,$J,358.3,45107,1,4,0)
+ ;;=4^D63.0
+ ;;^UTILITY(U,$J,358.3,45107,2)
+ ;;=^321978
+ ;;^UTILITY(U,$J,358.3,45108,0)
+ ;;=D63.8^^136^1929^4
+ ;;^UTILITY(U,$J,358.3,45108,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45108,1,3,0)
+ ;;=3^Anemia in Chronic Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,45108,1,4,0)
+ ;;=4^D63.8
+ ;;^UTILITY(U,$J,358.3,45108,2)
+ ;;=^5002343
+ ;;^UTILITY(U,$J,358.3,45109,0)
+ ;;=D59.9^^136^1929^5
+ ;;^UTILITY(U,$J,358.3,45109,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45109,1,3,0)
+ ;;=3^Anemia,Acquired Hemolytic,Unspec
+ ;;^UTILITY(U,$J,358.3,45109,1,4,0)
+ ;;=4^D59.9
+ ;;^UTILITY(U,$J,358.3,45109,2)
+ ;;=^5002330
+ ;;^UTILITY(U,$J,358.3,45110,0)
+ ;;=D62.^^136^1929^6
+ ;;^UTILITY(U,$J,358.3,45110,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45110,1,3,0)
+ ;;=3^Anemia,Acute Posthemorrhagic
+ ;;^UTILITY(U,$J,358.3,45110,1,4,0)
+ ;;=4^D62.
+ ;;^UTILITY(U,$J,358.3,45110,2)
+ ;;=^267986
+ ;;^UTILITY(U,$J,358.3,45111,0)
+ ;;=D61.9^^136^1929^7
+ ;;^UTILITY(U,$J,358.3,45111,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45111,1,3,0)
+ ;;=3^Anemia,Aplastic,Unspec
+ ;;^UTILITY(U,$J,358.3,45111,1,4,0)
+ ;;=4^D61.9
+ ;;^UTILITY(U,$J,358.3,45111,2)
+ ;;=^5002342
+ ;;^UTILITY(U,$J,358.3,45112,0)
+ ;;=D52.9^^136^1929^8
+ ;;^UTILITY(U,$J,358.3,45112,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45112,1,3,0)
+ ;;=3^Anemia,Folate Deficiency,Unspec
+ ;;^UTILITY(U,$J,358.3,45112,1,4,0)
+ ;;=4^D52.9
+ ;;^UTILITY(U,$J,358.3,45112,2)
+ ;;=^5002293
+ ;;^UTILITY(U,$J,358.3,45113,0)
+ ;;=D58.9^^136^1929^9
+ ;;^UTILITY(U,$J,358.3,45113,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45113,1,3,0)
+ ;;=3^Anemia,Herediatary Hemolytic,Unspec
+ ;;^UTILITY(U,$J,358.3,45113,1,4,0)
+ ;;=4^D58.9
+ ;;^UTILITY(U,$J,358.3,45113,2)
+ ;;=^5002322
+ ;;^UTILITY(U,$J,358.3,45114,0)
+ ;;=D50.0^^136^1929^10
+ ;;^UTILITY(U,$J,358.3,45114,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45114,1,3,0)
+ ;;=3^Anemia,Iron Deficiency,Secondary to Blood Loss
+ ;;^UTILITY(U,$J,358.3,45114,1,4,0)
+ ;;=4^D50.0
+ ;;^UTILITY(U,$J,358.3,45114,2)
+ ;;=^267971
+ ;;^UTILITY(U,$J,358.3,45115,0)
+ ;;=D50.9^^136^1929^11
+ ;;^UTILITY(U,$J,358.3,45115,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45115,1,3,0)
+ ;;=3^Anemia,Iron Deficiency,Unspec
+ ;;^UTILITY(U,$J,358.3,45115,1,4,0)
+ ;;=4^D50.9
+ ;;^UTILITY(U,$J,358.3,45115,2)
+ ;;=^5002283
+ ;;^UTILITY(U,$J,358.3,45116,0)
+ ;;=D53.9^^136^1929^12
+ ;;^UTILITY(U,$J,358.3,45116,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45116,1,3,0)
+ ;;=3^Anemia,Nutritional,Unspec
+ ;;^UTILITY(U,$J,358.3,45116,1,4,0)
+ ;;=4^D53.9
+ ;;^UTILITY(U,$J,358.3,45116,2)
+ ;;=^5002298
+ ;;^UTILITY(U,$J,358.3,45117,0)
+ ;;=D51.0^^136^1929^13
+ ;;^UTILITY(U,$J,358.3,45117,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45117,1,3,0)
+ ;;=3^Anemia,Pernicious (Vitamin B12 Defic)
+ ;;^UTILITY(U,$J,358.3,45117,1,4,0)
+ ;;=4^D51.0
+ ;;^UTILITY(U,$J,358.3,45117,2)
+ ;;=^5002284
+ ;;^UTILITY(U,$J,358.3,45118,0)
+ ;;=D46.4^^136^1929^14
+ ;;^UTILITY(U,$J,358.3,45118,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45118,1,3,0)
+ ;;=3^Anemia,Refractory,Unspec
+ ;;^UTILITY(U,$J,358.3,45118,1,4,0)
+ ;;=4^D46.4
+ ;;^UTILITY(U,$J,358.3,45118,2)
+ ;;=^5002250
+ ;;^UTILITY(U,$J,358.3,45119,0)
+ ;;=D57.419^^136^1929^15
+ ;;^UTILITY(U,$J,358.3,45119,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45119,1,3,0)
+ ;;=3^Anemia,Sickle-Cell Thalassemia w/ Crisis,Unspec
+ ;;^UTILITY(U,$J,358.3,45119,1,4,0)
+ ;;=4^D57.419
+ ;;^UTILITY(U,$J,358.3,45119,2)
+ ;;=^5002316
+ ;;^UTILITY(U,$J,358.3,45120,0)
+ ;;=D57.40^^136^1929^16
+ ;;^UTILITY(U,$J,358.3,45120,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45120,1,3,0)
+ ;;=3^Anemia,Sickle-Cell Thalassemia w/o Crisis
+ ;;^UTILITY(U,$J,358.3,45120,1,4,0)
+ ;;=4^D57.40
+ ;;^UTILITY(U,$J,358.3,45120,2)
+ ;;=^329908
+ ;;^UTILITY(U,$J,358.3,45121,0)
+ ;;=D56.9^^136^1929^17
+ ;;^UTILITY(U,$J,358.3,45121,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45121,1,3,0)
+ ;;=3^Anemia,Thalassemia,Unspec
+ ;;^UTILITY(U,$J,358.3,45121,1,4,0)
+ ;;=4^D56.9
+ ;;^UTILITY(U,$J,358.3,45121,2)
+ ;;=^340606
+ ;;^UTILITY(U,$J,358.3,45122,0)
+ ;;=D64.9^^136^1929^18
+ ;;^UTILITY(U,$J,358.3,45122,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,45122,1,3,0)
+ ;;=3^Anemia,Unspec
+ ;;^UTILITY(U,$J,358.3,45122,1,4,0)
+ ;;=4^D64.9
+ ;;^UTILITY(U,$J,358.3,45122,2)
+ ;;=^5002351
+ ;;^UTILITY(U,$J,358.3,45123,0)
+ ;;=D51.9^^136^1929^19

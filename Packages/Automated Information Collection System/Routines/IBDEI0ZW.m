@@ -1,136 +1,346 @@
-IBDEI0ZW ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0ZW ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16878,1,3,0)
- ;;=3^Osteopor,age-rltd w/o curnt path fractr
- ;;^UTILITY(U,$J,358.3,16878,1,4,0)
- ;;=4^M81.0
- ;;^UTILITY(U,$J,358.3,16878,2)
- ;;=^5013555
- ;;^UTILITY(U,$J,358.3,16879,0)
- ;;=R11.2^^70^796^2
- ;;^UTILITY(U,$J,358.3,16879,1,0)
+ ;;^UTILITY(U,$J,358.3,47068,1,4,0)
+ ;;=4^L30.8
+ ;;^UTILITY(U,$J,358.3,47068,2)
+ ;;=^5009158
+ ;;^UTILITY(U,$J,358.3,47069,0)
+ ;;=S93.305A^^139^1982^66
+ ;;^UTILITY(U,$J,358.3,47069,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16879,1,3,0)
- ;;=3^Nausea w/ Vomiting,Unspec
- ;;^UTILITY(U,$J,358.3,16879,1,4,0)
- ;;=4^R11.2
- ;;^UTILITY(U,$J,358.3,16879,2)
- ;;=^5019237
- ;;^UTILITY(U,$J,358.3,16880,0)
- ;;=H60.321^^70^796^19
- ;;^UTILITY(U,$J,358.3,16880,1,0)
+ ;;^UTILITY(U,$J,358.3,47069,1,3,0)
+ ;;=3^Dislocation of lft ft, unspec, init enc
+ ;;^UTILITY(U,$J,358.3,47069,1,4,0)
+ ;;=4^S93.305A
+ ;;^UTILITY(U,$J,358.3,47069,2)
+ ;;=^5045729
+ ;;^UTILITY(U,$J,358.3,47070,0)
+ ;;=S93.304A^^139^1982^69
+ ;;^UTILITY(U,$J,358.3,47070,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16880,1,3,0)
- ;;=3^Otitis Externa Hemorrhagic,Right
- ;;^UTILITY(U,$J,358.3,16880,1,4,0)
- ;;=4^H60.321
- ;;^UTILITY(U,$J,358.3,16880,2)
- ;;=^5006451
- ;;^UTILITY(U,$J,358.3,16881,0)
- ;;=H60.322^^70^796^18
- ;;^UTILITY(U,$J,358.3,16881,1,0)
+ ;;^UTILITY(U,$J,358.3,47070,1,3,0)
+ ;;=3^Dislocation of rt ft, unspec, init enc
+ ;;^UTILITY(U,$J,358.3,47070,1,4,0)
+ ;;=4^S93.304A
+ ;;^UTILITY(U,$J,358.3,47070,2)
+ ;;=^5045726
+ ;;^UTILITY(U,$J,358.3,47071,0)
+ ;;=S93.325A^^139^1982^71
+ ;;^UTILITY(U,$J,358.3,47071,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16881,1,3,0)
- ;;=3^Otitis Externa Hemorrhagic,Left
- ;;^UTILITY(U,$J,358.3,16881,1,4,0)
- ;;=4^H60.322
- ;;^UTILITY(U,$J,358.3,16881,2)
- ;;=^5006452
- ;;^UTILITY(U,$J,358.3,16882,0)
- ;;=H60.323^^70^796^17
- ;;^UTILITY(U,$J,358.3,16882,1,0)
+ ;;^UTILITY(U,$J,358.3,47071,1,3,0)
+ ;;=3^Dislocation of tarsometatarsal jnt of lft ft, init enc
+ ;;^UTILITY(U,$J,358.3,47071,1,4,0)
+ ;;=4^S93.325A
+ ;;^UTILITY(U,$J,358.3,47071,2)
+ ;;=^5045762
+ ;;^UTILITY(U,$J,358.3,47072,0)
+ ;;=S93.324A^^139^1982^72
+ ;;^UTILITY(U,$J,358.3,47072,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16882,1,3,0)
- ;;=3^Otitis Externa Hemorrhagic, Bilateral
- ;;^UTILITY(U,$J,358.3,16882,1,4,0)
- ;;=4^H60.323
- ;;^UTILITY(U,$J,358.3,16882,2)
- ;;=^5006453
- ;;^UTILITY(U,$J,358.3,16883,0)
- ;;=H66.91^^70^796^25
- ;;^UTILITY(U,$J,358.3,16883,1,0)
+ ;;^UTILITY(U,$J,358.3,47072,1,3,0)
+ ;;=3^Dislocation of tarsometatarsal jnt of rt ft, init enc
+ ;;^UTILITY(U,$J,358.3,47072,1,4,0)
+ ;;=4^S93.324A
+ ;;^UTILITY(U,$J,358.3,47072,2)
+ ;;=^5045759
+ ;;^UTILITY(U,$J,358.3,47073,0)
+ ;;=S93.334A^^139^1982^68
+ ;;^UTILITY(U,$J,358.3,47073,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16883,1,3,0)
- ;;=3^Otitis Media, rt ear, unspec
- ;;^UTILITY(U,$J,358.3,16883,1,4,0)
- ;;=4^H66.91
- ;;^UTILITY(U,$J,358.3,16883,2)
- ;;=^5006640
- ;;^UTILITY(U,$J,358.3,16884,0)
- ;;=H66.92^^70^796^24
- ;;^UTILITY(U,$J,358.3,16884,1,0)
+ ;;^UTILITY(U,$J,358.3,47073,1,3,0)
+ ;;=3^Dislocation of rt ft, oth, init enc
+ ;;^UTILITY(U,$J,358.3,47073,1,4,0)
+ ;;=4^S93.334A
+ ;;^UTILITY(U,$J,358.3,47073,2)
+ ;;=^5045771
+ ;;^UTILITY(U,$J,358.3,47074,0)
+ ;;=S93.335A^^139^1982^65
+ ;;^UTILITY(U,$J,358.3,47074,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16884,1,3,0)
- ;;=3^Otitis Media, lft ear, unspec
- ;;^UTILITY(U,$J,358.3,16884,1,4,0)
- ;;=4^H66.92
- ;;^UTILITY(U,$J,358.3,16884,2)
- ;;=^5006641
- ;;^UTILITY(U,$J,358.3,16885,0)
- ;;=H66.93^^70^796^23
- ;;^UTILITY(U,$J,358.3,16885,1,0)
+ ;;^UTILITY(U,$J,358.3,47074,1,3,0)
+ ;;=3^Dislocation of lft ft, oth, init enc
+ ;;^UTILITY(U,$J,358.3,47074,1,4,0)
+ ;;=4^S93.335A
+ ;;^UTILITY(U,$J,358.3,47074,2)
+ ;;=^5137669
+ ;;^UTILITY(U,$J,358.3,47075,0)
+ ;;=S93.125A^^139^1982^58
+ ;;^UTILITY(U,$J,358.3,47075,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16885,1,3,0)
- ;;=3^Otitis Media, biltrl, unspec
- ;;^UTILITY(U,$J,358.3,16885,1,4,0)
- ;;=4^H66.93
- ;;^UTILITY(U,$J,358.3,16885,2)
- ;;=^5006642
- ;;^UTILITY(U,$J,358.3,16886,0)
- ;;=E66.01^^70^796^8
- ;;^UTILITY(U,$J,358.3,16886,1,0)
+ ;;^UTILITY(U,$J,358.3,47075,1,3,0)
+ ;;=3^Dislocation of MTP joint of lft lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,47075,1,4,0)
+ ;;=4^S93.125A
+ ;;^UTILITY(U,$J,358.3,47075,2)
+ ;;=^5045669
+ ;;^UTILITY(U,$J,358.3,47076,0)
+ ;;=S93.124A^^139^1982^60
+ ;;^UTILITY(U,$J,358.3,47076,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16886,1,3,0)
- ;;=3^Obesity, morbid d/t excess calories
- ;;^UTILITY(U,$J,358.3,16886,1,4,0)
- ;;=4^E66.01
- ;;^UTILITY(U,$J,358.3,16886,2)
- ;;=^5002826
- ;;^UTILITY(U,$J,358.3,16887,0)
- ;;=E66.9^^70^796^9
- ;;^UTILITY(U,$J,358.3,16887,1,0)
+ ;;^UTILITY(U,$J,358.3,47076,1,3,0)
+ ;;=3^Dislocation of MTP joint of rt lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,47076,1,4,0)
+ ;;=4^S93.124A
+ ;;^UTILITY(U,$J,358.3,47076,2)
+ ;;=^5045666
+ ;;^UTILITY(U,$J,358.3,47077,0)
+ ;;=S93.121A^^139^1982^59
+ ;;^UTILITY(U,$J,358.3,47077,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16887,1,3,0)
- ;;=3^Obesity, unspec
- ;;^UTILITY(U,$J,358.3,16887,1,4,0)
- ;;=4^E66.9
- ;;^UTILITY(U,$J,358.3,16887,2)
- ;;=^5002832
- ;;^UTILITY(U,$J,358.3,16888,0)
- ;;=M19.91^^70^796^11
- ;;^UTILITY(U,$J,358.3,16888,1,0)
+ ;;^UTILITY(U,$J,358.3,47077,1,3,0)
+ ;;=3^Dislocation of MTP joint of rt great toe, init
+ ;;^UTILITY(U,$J,358.3,47077,1,4,0)
+ ;;=4^S93.121A
+ ;;^UTILITY(U,$J,358.3,47077,2)
+ ;;=^5045657
+ ;;^UTILITY(U,$J,358.3,47078,0)
+ ;;=S93.122A^^139^1982^57
+ ;;^UTILITY(U,$J,358.3,47078,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16888,1,3,0)
- ;;=3^Osteoarth, prim, unspec site
- ;;^UTILITY(U,$J,358.3,16888,1,4,0)
- ;;=4^M19.91
- ;;^UTILITY(U,$J,358.3,16888,2)
- ;;=^5010854
- ;;^UTILITY(U,$J,358.3,16889,0)
- ;;=J00.^^70^796^1
- ;;^UTILITY(U,$J,358.3,16889,1,0)
+ ;;^UTILITY(U,$J,358.3,47078,1,3,0)
+ ;;=3^Dislocation of MTP joint of lft great toe, init
+ ;;^UTILITY(U,$J,358.3,47078,1,4,0)
+ ;;=4^S93.122A
+ ;;^UTILITY(U,$J,358.3,47078,2)
+ ;;=^5045660
+ ;;^UTILITY(U,$J,358.3,47079,0)
+ ;;=S93.111A^^139^1982^63
+ ;;^UTILITY(U,$J,358.3,47079,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16889,1,3,0)
- ;;=3^Nasopharyngitis,Acute
- ;;^UTILITY(U,$J,358.3,16889,1,4,0)
- ;;=4^J00.
- ;;^UTILITY(U,$J,358.3,16889,2)
- ;;=^5008115
- ;;^UTILITY(U,$J,358.3,16890,0)
- ;;=M79.2^^70^796^4
- ;;^UTILITY(U,$J,358.3,16890,1,0)
+ ;;^UTILITY(U,$J,358.3,47079,1,3,0)
+ ;;=3^Dislocation of interphaln joint of right grt toe, init
+ ;;^UTILITY(U,$J,358.3,47079,1,4,0)
+ ;;=4^S93.111A
+ ;;^UTILITY(U,$J,358.3,47079,2)
+ ;;=^5045636
+ ;;^UTILITY(U,$J,358.3,47080,0)
+ ;;=S93.112A^^139^1982^61
+ ;;^UTILITY(U,$J,358.3,47080,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16890,1,3,0)
- ;;=3^Neuralgia & Neuritis,Unspec
- ;;^UTILITY(U,$J,358.3,16890,1,4,0)
- ;;=4^M79.2
- ;;^UTILITY(U,$J,358.3,16890,2)
- ;;=^5013322
- ;;^UTILITY(U,$J,358.3,16891,0)
- ;;=I25.2^^70^796^10
- ;;^UTILITY(U,$J,358.3,16891,1,0)
+ ;;^UTILITY(U,$J,358.3,47080,1,3,0)
+ ;;=3^Dislocation of interphalangeal joint of lft grt toe, init
+ ;;^UTILITY(U,$J,358.3,47080,1,4,0)
+ ;;=4^S93.112A
+ ;;^UTILITY(U,$J,358.3,47080,2)
+ ;;=^5045639
+ ;;^UTILITY(U,$J,358.3,47081,0)
+ ;;=S93.114A^^139^1982^64
+ ;;^UTILITY(U,$J,358.3,47081,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16891,1,3,0)
- ;;=3^Old Myocardial Infarction
+ ;;^UTILITY(U,$J,358.3,47081,1,3,0)
+ ;;=3^Dislocation of interphaln joint of rt lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,47081,1,4,0)
+ ;;=4^S93.114A
+ ;;^UTILITY(U,$J,358.3,47081,2)
+ ;;=^5045645
+ ;;^UTILITY(U,$J,358.3,47082,0)
+ ;;=S93.115A^^139^1982^62
+ ;;^UTILITY(U,$J,358.3,47082,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47082,1,3,0)
+ ;;=3^Dislocation of interphaln joint of lft lsr toe(s), init
+ ;;^UTILITY(U,$J,358.3,47082,1,4,0)
+ ;;=4^S93.115A
+ ;;^UTILITY(U,$J,358.3,47082,2)
+ ;;=^5045648
+ ;;^UTILITY(U,$J,358.3,47083,0)
+ ;;=S93.104A^^139^1982^70
+ ;;^UTILITY(U,$J,358.3,47083,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47083,1,3,0)
+ ;;=3^Dislocation of rt toe(s), unspec, init enc
+ ;;^UTILITY(U,$J,358.3,47083,1,4,0)
+ ;;=4^S93.104A
+ ;;^UTILITY(U,$J,358.3,47083,2)
+ ;;=^5045630
+ ;;^UTILITY(U,$J,358.3,47084,0)
+ ;;=S93.105A^^139^1982^67
+ ;;^UTILITY(U,$J,358.3,47084,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47084,1,3,0)
+ ;;=3^Dislocation of lft toe(s), unspec, init enc
+ ;;^UTILITY(U,$J,358.3,47084,1,4,0)
+ ;;=4^S93.105A
+ ;;^UTILITY(U,$J,358.3,47084,2)
+ ;;=^5045633
+ ;;^UTILITY(U,$J,358.3,47085,0)
+ ;;=L30.9^^139^1982^56
+ ;;^UTILITY(U,$J,358.3,47085,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47085,1,3,0)
+ ;;=3^Dermatitis,Unspec
+ ;;^UTILITY(U,$J,358.3,47085,1,4,0)
+ ;;=4^L30.9
+ ;;^UTILITY(U,$J,358.3,47085,2)
+ ;;=^5009159
+ ;;^UTILITY(U,$J,358.3,47086,0)
+ ;;=M20.5X2^^139^1982^40
+ ;;^UTILITY(U,$J,358.3,47086,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47086,1,3,0)
+ ;;=3^Deformitis,Left Toe(s),Acquired
+ ;;^UTILITY(U,$J,358.3,47086,1,4,0)
+ ;;=4^M20.5X2
+ ;;^UTILITY(U,$J,358.3,47086,2)
+ ;;=^5011054
+ ;;^UTILITY(U,$J,358.3,47087,0)
+ ;;=M20.5X1^^139^1982^42
+ ;;^UTILITY(U,$J,358.3,47087,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47087,1,3,0)
+ ;;=3^Deformitis,Right Toe(s),Acquired
+ ;;^UTILITY(U,$J,358.3,47087,1,4,0)
+ ;;=4^M20.5X1
+ ;;^UTILITY(U,$J,358.3,47087,2)
+ ;;=^5011053
+ ;;^UTILITY(U,$J,358.3,47088,0)
+ ;;=M24.871^^139^1982^49
+ ;;^UTILITY(U,$J,358.3,47088,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47088,1,3,0)
+ ;;=3^Derangement,Right Ankle Joint NEC
+ ;;^UTILITY(U,$J,358.3,47088,1,4,0)
+ ;;=4^M24.871
+ ;;^UTILITY(U,$J,358.3,47088,2)
+ ;;=^5011468
+ ;;^UTILITY(U,$J,358.3,47089,0)
+ ;;=M24.875^^139^1982^48
+ ;;^UTILITY(U,$J,358.3,47089,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47089,1,3,0)
+ ;;=3^Derangement,Left Foot Joint NEC
+ ;;^UTILITY(U,$J,358.3,47089,1,4,0)
+ ;;=4^M24.875
+ ;;^UTILITY(U,$J,358.3,47089,2)
+ ;;=^5011472
+ ;;^UTILITY(U,$J,358.3,47090,0)
+ ;;=M24.874^^139^1982^50
+ ;;^UTILITY(U,$J,358.3,47090,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47090,1,3,0)
+ ;;=3^Derangement,Right Foot Joint NEC
+ ;;^UTILITY(U,$J,358.3,47090,1,4,0)
+ ;;=4^M24.874
+ ;;^UTILITY(U,$J,358.3,47090,2)
+ ;;=^5011471
+ ;;^UTILITY(U,$J,358.3,47091,0)
+ ;;=M24.872^^139^1982^47
+ ;;^UTILITY(U,$J,358.3,47091,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47091,1,3,0)
+ ;;=3^Derangement,Left Ankle Joint NEC
+ ;;^UTILITY(U,$J,358.3,47091,1,4,0)
+ ;;=4^M24.872
+ ;;^UTILITY(U,$J,358.3,47091,2)
+ ;;=^5011469
+ ;;^UTILITY(U,$J,358.3,47092,0)
+ ;;=L30.1^^139^1982^74
+ ;;^UTILITY(U,$J,358.3,47092,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47092,1,3,0)
+ ;;=3^Dyshidrosis [pompholyx]
+ ;;^UTILITY(U,$J,358.3,47092,1,4,0)
+ ;;=4^L30.1
+ ;;^UTILITY(U,$J,358.3,47092,2)
+ ;;=^5009154
+ ;;^UTILITY(U,$J,358.3,47093,0)
+ ;;=L98.9^^139^1982^73
+ ;;^UTILITY(U,$J,358.3,47093,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47093,1,3,0)
+ ;;=3^Disorder of skin and subcut tissue, unspec
+ ;;^UTILITY(U,$J,358.3,47093,1,4,0)
+ ;;=4^L98.9
+ ;;^UTILITY(U,$J,358.3,47093,2)
+ ;;=^5009595
+ ;;^UTILITY(U,$J,358.3,47094,0)
+ ;;=Q72.891^^139^1982^37
+ ;;^UTILITY(U,$J,358.3,47094,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47094,1,3,0)
+ ;;=3^Defects,Reduction Right Lower Limb NEC
+ ;;^UTILITY(U,$J,358.3,47094,1,4,0)
+ ;;=4^Q72.891
+ ;;^UTILITY(U,$J,358.3,47094,2)
+ ;;=^5018985
+ ;;^UTILITY(U,$J,358.3,47095,0)
+ ;;=Q72.892^^139^1982^36
+ ;;^UTILITY(U,$J,358.3,47095,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47095,1,3,0)
+ ;;=3^Defects,Reduction Left Lower Limb NEC
+ ;;^UTILITY(U,$J,358.3,47095,1,4,0)
+ ;;=4^Q72.892
+ ;;^UTILITY(U,$J,358.3,47095,2)
+ ;;=^5134172
+ ;;^UTILITY(U,$J,358.3,47096,0)
+ ;;=Q72.893^^139^1982^35
+ ;;^UTILITY(U,$J,358.3,47096,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47096,1,3,0)
+ ;;=3^Defects,Reduction Bilateral Lower Limb NEC
+ ;;^UTILITY(U,$J,358.3,47096,1,4,0)
+ ;;=4^Q72.893
+ ;;^UTILITY(U,$J,358.3,47096,2)
+ ;;=^5018986
+ ;;^UTILITY(U,$J,358.3,47097,0)
+ ;;=M21.962^^139^1982^43
+ ;;^UTILITY(U,$J,358.3,47097,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47097,1,3,0)
+ ;;=3^Deformity,Left Lower Leg,Acquired
+ ;;^UTILITY(U,$J,358.3,47097,1,4,0)
+ ;;=4^M21.962
+ ;;^UTILITY(U,$J,358.3,47097,2)
+ ;;=^5011172
+ ;;^UTILITY(U,$J,358.3,47098,0)
+ ;;=M21.961^^139^1982^44
+ ;;^UTILITY(U,$J,358.3,47098,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47098,1,3,0)
+ ;;=3^Deformity,Right Lower Leg,Acquired
+ ;;^UTILITY(U,$J,358.3,47098,1,4,0)
+ ;;=4^M21.961
+ ;;^UTILITY(U,$J,358.3,47098,2)
+ ;;=^5011171
+ ;;^UTILITY(U,$J,358.3,47099,0)
+ ;;=M21.072^^139^1982^45
+ ;;^UTILITY(U,$J,358.3,47099,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47099,1,3,0)
+ ;;=3^Deformity,Valgus Left Ankle NEC
+ ;;^UTILITY(U,$J,358.3,47099,1,4,0)
+ ;;=4^M21.072
+ ;;^UTILITY(U,$J,358.3,47099,2)
+ ;;=^5011070
+ ;;^UTILITY(U,$J,358.3,47100,0)
+ ;;=M21.071^^139^1982^46
+ ;;^UTILITY(U,$J,358.3,47100,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47100,1,3,0)
+ ;;=3^Deformity,Valgus Right Ankle NEC
+ ;;^UTILITY(U,$J,358.3,47100,1,4,0)
+ ;;=4^M21.071
+ ;;^UTILITY(U,$J,358.3,47100,2)
+ ;;=^5011069
+ ;;^UTILITY(U,$J,358.3,47101,0)
+ ;;=Q66.89^^139^1982^38
+ ;;^UTILITY(U,$J,358.3,47101,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47101,1,3,0)
+ ;;=3^Deformitis of Feet,Congenital NEC
+ ;;^UTILITY(U,$J,358.3,47101,1,4,0)
+ ;;=4^Q66.89
+ ;;^UTILITY(U,$J,358.3,47101,2)
+ ;;=^5018874
+ ;;^UTILITY(U,$J,358.3,47102,0)
+ ;;=E11.40^^139^1982^28
+ ;;^UTILITY(U,$J,358.3,47102,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,47102,1,3,0)
+ ;;=3^DM Type 2 w/ Diab Neuropathy,Unspec
+ ;;^UTILITY(U,$J,358.3,47102,1,4,0)
+ ;;=4^E11.40

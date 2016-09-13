@@ -1,134 +1,378 @@
-IBDEI04T ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI04T ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1826,1,4,0)
- ;;=4^T82.818A
- ;;^UTILITY(U,$J,358.3,1826,2)
- ;;=^5054917
- ;;^UTILITY(U,$J,358.3,1827,0)
- ;;=T82.828A^^11^156^74
- ;;^UTILITY(U,$J,358.3,1827,1,0)
+ ;;^UTILITY(U,$J,358.3,5922,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1827,1,3,0)
- ;;=3^Fibrosis of Vascular Prosthetic Device/Implant/Graft,Init Encntr
- ;;^UTILITY(U,$J,358.3,1827,1,4,0)
- ;;=4^T82.828A
- ;;^UTILITY(U,$J,358.3,1827,2)
- ;;=^5054923
- ;;^UTILITY(U,$J,358.3,1828,0)
- ;;=T82.868A^^11^156^93
- ;;^UTILITY(U,$J,358.3,1828,1,0)
+ ;;^UTILITY(U,$J,358.3,5922,1,3,0)
+ ;;=3^Nail Disorders NEC
+ ;;^UTILITY(U,$J,358.3,5922,1,4,0)
+ ;;=4^L60.8
+ ;;^UTILITY(U,$J,358.3,5922,2)
+ ;;=^5009239
+ ;;^UTILITY(U,$J,358.3,5923,0)
+ ;;=L62.^^26^391^169
+ ;;^UTILITY(U,$J,358.3,5923,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1828,1,3,0)
- ;;=3^Thrombosis of Vascular Prosthetic Device/Implant/Graft,Init Encntr
- ;;^UTILITY(U,$J,358.3,1828,1,4,0)
- ;;=4^T82.868A
- ;;^UTILITY(U,$J,358.3,1828,2)
- ;;=^5054947
- ;;^UTILITY(U,$J,358.3,1829,0)
- ;;=I08.0^^11^157^5
- ;;^UTILITY(U,$J,358.3,1829,1,0)
+ ;;^UTILITY(U,$J,358.3,5923,1,3,0)
+ ;;=3^Nail Disorders in Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,5923,1,4,0)
+ ;;=4^L62.
+ ;;^UTILITY(U,$J,358.3,5923,2)
+ ;;=^5009241
+ ;;^UTILITY(U,$J,358.3,5924,0)
+ ;;=L64.9^^26^391^33
+ ;;^UTILITY(U,$J,358.3,5924,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1829,1,3,0)
- ;;=3^Rheumatic Disorders of Mitral and Aortic Valves
- ;;^UTILITY(U,$J,358.3,1829,1,4,0)
- ;;=4^I08.0
- ;;^UTILITY(U,$J,358.3,1829,2)
- ;;=^5007052
- ;;^UTILITY(U,$J,358.3,1830,0)
- ;;=I05.0^^11^157^8
- ;;^UTILITY(U,$J,358.3,1830,1,0)
+ ;;^UTILITY(U,$J,358.3,5924,1,3,0)
+ ;;=3^Androgenic Alopecia,Unspec
+ ;;^UTILITY(U,$J,358.3,5924,1,4,0)
+ ;;=4^L64.9
+ ;;^UTILITY(U,$J,358.3,5924,2)
+ ;;=^5009249
+ ;;^UTILITY(U,$J,358.3,5925,0)
+ ;;=L65.9^^26^391^231
+ ;;^UTILITY(U,$J,358.3,5925,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1830,1,3,0)
- ;;=3^Rheumatic Mitral Stenosis
- ;;^UTILITY(U,$J,358.3,1830,1,4,0)
- ;;=4^I05.0
- ;;^UTILITY(U,$J,358.3,1830,2)
- ;;=^5007041
- ;;^UTILITY(U,$J,358.3,1831,0)
- ;;=I05.1^^11^157^7
- ;;^UTILITY(U,$J,358.3,1831,1,0)
+ ;;^UTILITY(U,$J,358.3,5925,1,3,0)
+ ;;=3^Nonscarring Hair Loss,Unspec
+ ;;^UTILITY(U,$J,358.3,5925,1,4,0)
+ ;;=4^L65.9
+ ;;^UTILITY(U,$J,358.3,5925,2)
+ ;;=^5009252
+ ;;^UTILITY(U,$J,358.3,5926,0)
+ ;;=L70.0^^26^391^6
+ ;;^UTILITY(U,$J,358.3,5926,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1831,1,3,0)
- ;;=3^Rheumatic Mitral Insufficiency
- ;;^UTILITY(U,$J,358.3,1831,1,4,0)
- ;;=4^I05.1
- ;;^UTILITY(U,$J,358.3,1831,2)
- ;;=^269568
- ;;^UTILITY(U,$J,358.3,1832,0)
- ;;=I05.2^^11^157^9
- ;;^UTILITY(U,$J,358.3,1832,1,0)
+ ;;^UTILITY(U,$J,358.3,5926,1,3,0)
+ ;;=3^Acne Vulgaris
+ ;;^UTILITY(U,$J,358.3,5926,1,4,0)
+ ;;=4^L70.0
+ ;;^UTILITY(U,$J,358.3,5926,2)
+ ;;=^5009268
+ ;;^UTILITY(U,$J,358.3,5927,0)
+ ;;=L70.1^^26^391^1
+ ;;^UTILITY(U,$J,358.3,5927,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1832,1,3,0)
- ;;=3^Rheumatic Mitral Stenosis w/ Insufficiency
- ;;^UTILITY(U,$J,358.3,1832,1,4,0)
- ;;=4^I05.2
- ;;^UTILITY(U,$J,358.3,1832,2)
- ;;=^5007042
- ;;^UTILITY(U,$J,358.3,1833,0)
- ;;=I05.8^^11^157^10
- ;;^UTILITY(U,$J,358.3,1833,1,0)
+ ;;^UTILITY(U,$J,358.3,5927,1,3,0)
+ ;;=3^Acne Conglobata
+ ;;^UTILITY(U,$J,358.3,5927,1,4,0)
+ ;;=4^L70.1
+ ;;^UTILITY(U,$J,358.3,5927,2)
+ ;;=^5009269
+ ;;^UTILITY(U,$J,358.3,5928,0)
+ ;;=L70.3^^26^391^5
+ ;;^UTILITY(U,$J,358.3,5928,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1833,1,3,0)
- ;;=3^Rheumatic Mitral Valve Diseases NEC
- ;;^UTILITY(U,$J,358.3,1833,1,4,0)
- ;;=4^I05.8
- ;;^UTILITY(U,$J,358.3,1833,2)
- ;;=^5007043
- ;;^UTILITY(U,$J,358.3,1834,0)
- ;;=I06.0^^11^157^2
- ;;^UTILITY(U,$J,358.3,1834,1,0)
+ ;;^UTILITY(U,$J,358.3,5928,1,3,0)
+ ;;=3^Acne Tropica
+ ;;^UTILITY(U,$J,358.3,5928,1,4,0)
+ ;;=4^L70.3
+ ;;^UTILITY(U,$J,358.3,5928,2)
+ ;;=^5009270
+ ;;^UTILITY(U,$J,358.3,5929,0)
+ ;;=L70.5^^26^391^2
+ ;;^UTILITY(U,$J,358.3,5929,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1834,1,3,0)
- ;;=3^Rheumatic Aortic Stenosis
- ;;^UTILITY(U,$J,358.3,1834,1,4,0)
- ;;=4^I06.0
- ;;^UTILITY(U,$J,358.3,1834,2)
- ;;=^269573
- ;;^UTILITY(U,$J,358.3,1835,0)
- ;;=I06.1^^11^157^1
- ;;^UTILITY(U,$J,358.3,1835,1,0)
+ ;;^UTILITY(U,$J,358.3,5929,1,3,0)
+ ;;=3^Acne Excoriee des Jeunes Filles
+ ;;^UTILITY(U,$J,358.3,5929,1,4,0)
+ ;;=4^L70.5
+ ;;^UTILITY(U,$J,358.3,5929,2)
+ ;;=^5009272
+ ;;^UTILITY(U,$J,358.3,5930,0)
+ ;;=L70.8^^26^391^4
+ ;;^UTILITY(U,$J,358.3,5930,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1835,1,3,0)
- ;;=3^Rheumatic Aortic Insufficiency
- ;;^UTILITY(U,$J,358.3,1835,1,4,0)
- ;;=4^I06.1
- ;;^UTILITY(U,$J,358.3,1835,2)
- ;;=^269575
- ;;^UTILITY(U,$J,358.3,1836,0)
- ;;=I06.2^^11^157^3
- ;;^UTILITY(U,$J,358.3,1836,1,0)
+ ;;^UTILITY(U,$J,358.3,5930,1,3,0)
+ ;;=3^Acne NEC
+ ;;^UTILITY(U,$J,358.3,5930,1,4,0)
+ ;;=4^L70.8
+ ;;^UTILITY(U,$J,358.3,5930,2)
+ ;;=^87239
+ ;;^UTILITY(U,$J,358.3,5931,0)
+ ;;=L70.9^^26^391^7
+ ;;^UTILITY(U,$J,358.3,5931,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1836,1,3,0)
- ;;=3^Rheumatic Aortic Stenosis w/ Insufficiency
- ;;^UTILITY(U,$J,358.3,1836,1,4,0)
- ;;=4^I06.2
- ;;^UTILITY(U,$J,358.3,1836,2)
- ;;=^269577
- ;;^UTILITY(U,$J,358.3,1837,0)
- ;;=I06.8^^11^157^4
- ;;^UTILITY(U,$J,358.3,1837,1,0)
+ ;;^UTILITY(U,$J,358.3,5931,1,3,0)
+ ;;=3^Acne,Unspec
+ ;;^UTILITY(U,$J,358.3,5931,1,4,0)
+ ;;=4^L70.9
+ ;;^UTILITY(U,$J,358.3,5931,2)
+ ;;=^5009273
+ ;;^UTILITY(U,$J,358.3,5932,0)
+ ;;=L71.0^^26^391^235
+ ;;^UTILITY(U,$J,358.3,5932,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1837,1,3,0)
- ;;=3^Rheumatic Aortic Valve Diseases NEC
- ;;^UTILITY(U,$J,358.3,1837,1,4,0)
- ;;=4^I06.8
- ;;^UTILITY(U,$J,358.3,1837,2)
- ;;=^5007045
- ;;^UTILITY(U,$J,358.3,1838,0)
- ;;=I09.89^^11^157^6
- ;;^UTILITY(U,$J,358.3,1838,1,0)
+ ;;^UTILITY(U,$J,358.3,5932,1,3,0)
+ ;;=3^Perioral Dermatitis
+ ;;^UTILITY(U,$J,358.3,5932,1,4,0)
+ ;;=4^L71.0
+ ;;^UTILITY(U,$J,358.3,5932,2)
+ ;;=^5009274
+ ;;^UTILITY(U,$J,358.3,5933,0)
+ ;;=L71.1^^26^391^259
+ ;;^UTILITY(U,$J,358.3,5933,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1838,1,3,0)
- ;;=3^Rheumatic Heart Diseases
- ;;^UTILITY(U,$J,358.3,1838,1,4,0)
- ;;=4^I09.89
- ;;^UTILITY(U,$J,358.3,1838,2)
- ;;=^5007060
- ;;^UTILITY(U,$J,358.3,1839,0)
- ;;=I08.8^^11^157^11
- ;;^UTILITY(U,$J,358.3,1839,1,0)
+ ;;^UTILITY(U,$J,358.3,5933,1,3,0)
+ ;;=3^Rhinophyma
+ ;;^UTILITY(U,$J,358.3,5933,1,4,0)
+ ;;=4^L71.1
+ ;;^UTILITY(U,$J,358.3,5933,2)
+ ;;=^106083
+ ;;^UTILITY(U,$J,358.3,5934,0)
+ ;;=L71.8^^26^391^260
+ ;;^UTILITY(U,$J,358.3,5934,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1839,1,3,0)
- ;;=3^Rheumatic Multiple Valve Dieases NEC
+ ;;^UTILITY(U,$J,358.3,5934,1,3,0)
+ ;;=3^Rosacea NEC
+ ;;^UTILITY(U,$J,358.3,5934,1,4,0)
+ ;;=4^L71.8
+ ;;^UTILITY(U,$J,358.3,5934,2)
+ ;;=^5009275
+ ;;^UTILITY(U,$J,358.3,5935,0)
+ ;;=L71.9^^26^391^261
+ ;;^UTILITY(U,$J,358.3,5935,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5935,1,3,0)
+ ;;=3^Rosacea,Unspec
+ ;;^UTILITY(U,$J,358.3,5935,1,4,0)
+ ;;=4^L71.9
+ ;;^UTILITY(U,$J,358.3,5935,2)
+ ;;=^5009276
+ ;;^UTILITY(U,$J,358.3,5936,0)
+ ;;=L72.0^^26^391^142
+ ;;^UTILITY(U,$J,358.3,5936,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5936,1,3,0)
+ ;;=3^Epidermal Cyst
+ ;;^UTILITY(U,$J,358.3,5936,1,4,0)
+ ;;=4^L72.0
+ ;;^UTILITY(U,$J,358.3,5936,2)
+ ;;=^5009277
+ ;;^UTILITY(U,$J,358.3,5937,0)
+ ;;=L72.12^^26^391^285
+ ;;^UTILITY(U,$J,358.3,5937,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5937,1,3,0)
+ ;;=3^Trichodermal Cyst
+ ;;^UTILITY(U,$J,358.3,5937,1,4,0)
+ ;;=4^L72.12
+ ;;^UTILITY(U,$J,358.3,5937,2)
+ ;;=^5009279
+ ;;^UTILITY(U,$J,358.3,5938,0)
+ ;;=L72.2^^26^391^270
+ ;;^UTILITY(U,$J,358.3,5938,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5938,1,3,0)
+ ;;=3^Steatocystoma Multiplex
+ ;;^UTILITY(U,$J,358.3,5938,1,4,0)
+ ;;=4^L72.2
+ ;;^UTILITY(U,$J,358.3,5938,2)
+ ;;=^5009280
+ ;;^UTILITY(U,$J,358.3,5939,0)
+ ;;=L72.8^^26^391^151
+ ;;^UTILITY(U,$J,358.3,5939,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5939,1,3,0)
+ ;;=3^Follicular Cysts of Skin/Subcutaneous Tissue NEC
+ ;;^UTILITY(U,$J,358.3,5939,1,4,0)
+ ;;=4^L72.8
+ ;;^UTILITY(U,$J,358.3,5939,2)
+ ;;=^5009282
+ ;;^UTILITY(U,$J,358.3,5940,0)
+ ;;=L72.9^^26^391^152
+ ;;^UTILITY(U,$J,358.3,5940,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5940,1,3,0)
+ ;;=3^Follicular Cysts of Skin/Subcutaneous Tissue,Unspec
+ ;;^UTILITY(U,$J,358.3,5940,1,4,0)
+ ;;=4^L72.9
+ ;;^UTILITY(U,$J,358.3,5940,2)
+ ;;=^5009283
+ ;;^UTILITY(U,$J,358.3,5941,0)
+ ;;=L73.0^^26^391^3
+ ;;^UTILITY(U,$J,358.3,5941,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5941,1,3,0)
+ ;;=3^Acne Keloid
+ ;;^UTILITY(U,$J,358.3,5941,1,4,0)
+ ;;=4^L73.0
+ ;;^UTILITY(U,$J,358.3,5941,2)
+ ;;=^2149
+ ;;^UTILITY(U,$J,358.3,5942,0)
+ ;;=L73.2^^26^391^159
+ ;;^UTILITY(U,$J,358.3,5942,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5942,1,3,0)
+ ;;=3^Hidradenitis Suppurativa
+ ;;^UTILITY(U,$J,358.3,5942,1,4,0)
+ ;;=4^L73.2
+ ;;^UTILITY(U,$J,358.3,5942,2)
+ ;;=^278979
+ ;;^UTILITY(U,$J,358.3,5943,0)
+ ;;=L73.9^^26^391^153
+ ;;^UTILITY(U,$J,358.3,5943,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5943,1,3,0)
+ ;;=3^Follicular Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,5943,1,4,0)
+ ;;=4^L73.9
+ ;;^UTILITY(U,$J,358.3,5943,2)
+ ;;=^5009286
+ ;;^UTILITY(U,$J,358.3,5944,0)
+ ;;=L82.0^^26^391^160
+ ;;^UTILITY(U,$J,358.3,5944,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5944,1,3,0)
+ ;;=3^Inflamed Seborrheic Keratosis
+ ;;^UTILITY(U,$J,358.3,5944,1,4,0)
+ ;;=4^L82.0
+ ;;^UTILITY(U,$J,358.3,5944,2)
+ ;;=^303311
+ ;;^UTILITY(U,$J,358.3,5945,0)
+ ;;=L82.1^^26^391^264
+ ;;^UTILITY(U,$J,358.3,5945,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5945,1,3,0)
+ ;;=3^Seborrheic Keratosis NEC
+ ;;^UTILITY(U,$J,358.3,5945,1,4,0)
+ ;;=4^L82.1
+ ;;^UTILITY(U,$J,358.3,5945,2)
+ ;;=^303312
+ ;;^UTILITY(U,$J,358.3,5946,0)
+ ;;=L84.^^26^391^116
+ ;;^UTILITY(U,$J,358.3,5946,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5946,1,3,0)
+ ;;=3^Corns and Callosities
+ ;;^UTILITY(U,$J,358.3,5946,1,4,0)
+ ;;=4^L84.
+ ;;^UTILITY(U,$J,358.3,5946,2)
+ ;;=^271920
+ ;;^UTILITY(U,$J,358.3,5947,0)
+ ;;=L85.0^^26^391^8
+ ;;^UTILITY(U,$J,358.3,5947,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5947,1,3,0)
+ ;;=3^Acquired Ichthyosis
+ ;;^UTILITY(U,$J,358.3,5947,1,4,0)
+ ;;=4^L85.0
+ ;;^UTILITY(U,$J,358.3,5947,2)
+ ;;=^5009320
+ ;;^UTILITY(U,$J,358.3,5948,0)
+ ;;=L85.1^^26^391^10
+ ;;^UTILITY(U,$J,358.3,5948,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5948,1,3,0)
+ ;;=3^Acquired Keratosis Palmaris et Plantaris
+ ;;^UTILITY(U,$J,358.3,5948,1,4,0)
+ ;;=4^L85.1
+ ;;^UTILITY(U,$J,358.3,5948,2)
+ ;;=^5009321
+ ;;^UTILITY(U,$J,358.3,5949,0)
+ ;;=L85.2^^26^391^166
+ ;;^UTILITY(U,$J,358.3,5949,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5949,1,3,0)
+ ;;=3^Keratosis Punctata
+ ;;^UTILITY(U,$J,358.3,5949,1,4,0)
+ ;;=4^L85.2
+ ;;^UTILITY(U,$J,358.3,5949,2)
+ ;;=^5009322
+ ;;^UTILITY(U,$J,358.3,5950,0)
+ ;;=L85.3^^26^391^289
+ ;;^UTILITY(U,$J,358.3,5950,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5950,1,3,0)
+ ;;=3^Xerosis Cutis
+ ;;^UTILITY(U,$J,358.3,5950,1,4,0)
+ ;;=4^L85.3
+ ;;^UTILITY(U,$J,358.3,5950,2)
+ ;;=^5009323
+ ;;^UTILITY(U,$J,358.3,5951,0)
+ ;;=L86.^^26^391^164
+ ;;^UTILITY(U,$J,358.3,5951,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5951,1,3,0)
+ ;;=3^Keratoderma in Diseases Classified Elsewhere
+ ;;^UTILITY(U,$J,358.3,5951,1,4,0)
+ ;;=4^L86.
+ ;;^UTILITY(U,$J,358.3,5951,2)
+ ;;=^5009326
+ ;;^UTILITY(U,$J,358.3,5952,0)
+ ;;=L87.0^^26^391^165
+ ;;^UTILITY(U,$J,358.3,5952,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5952,1,3,0)
+ ;;=3^Keratosis Follicularis et Parafollicularis in Cutem Penetrans
+ ;;^UTILITY(U,$J,358.3,5952,1,4,0)
+ ;;=4^L87.0
+ ;;^UTILITY(U,$J,358.3,5952,2)
+ ;;=^5009327
+ ;;^UTILITY(U,$J,358.3,5953,0)
+ ;;=L87.2^^26^391^141
+ ;;^UTILITY(U,$J,358.3,5953,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5953,1,3,0)
+ ;;=3^Elastosis Perforans Serpiginosa
+ ;;^UTILITY(U,$J,358.3,5953,1,4,0)
+ ;;=4^L87.2
+ ;;^UTILITY(U,$J,358.3,5953,2)
+ ;;=^5009329
+ ;;^UTILITY(U,$J,358.3,5954,0)
+ ;;=L89.300^^26^391^242
+ ;;^UTILITY(U,$J,358.3,5954,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5954,1,3,0)
+ ;;=3^Pressure Ulcer of Buttock,Unstageable
+ ;;^UTILITY(U,$J,358.3,5954,1,4,0)
+ ;;=4^L89.300
+ ;;^UTILITY(U,$J,358.3,5954,2)
+ ;;=^5009389
+ ;;^UTILITY(U,$J,358.3,5955,0)
+ ;;=L89.301^^26^391^237
+ ;;^UTILITY(U,$J,358.3,5955,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5955,1,3,0)
+ ;;=3^Pressure Ulcer of Buttock,Stage 1
+ ;;^UTILITY(U,$J,358.3,5955,1,4,0)
+ ;;=4^L89.301
+ ;;^UTILITY(U,$J,358.3,5955,2)
+ ;;=^5009390
+ ;;^UTILITY(U,$J,358.3,5956,0)
+ ;;=L89.302^^26^391^238
+ ;;^UTILITY(U,$J,358.3,5956,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5956,1,3,0)
+ ;;=3^Pressure Ulcer of Buttock,Stage 2
+ ;;^UTILITY(U,$J,358.3,5956,1,4,0)
+ ;;=4^L89.302
+ ;;^UTILITY(U,$J,358.3,5956,2)
+ ;;=^5009391
+ ;;^UTILITY(U,$J,358.3,5957,0)
+ ;;=L89.303^^26^391^239
+ ;;^UTILITY(U,$J,358.3,5957,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5957,1,3,0)
+ ;;=3^Pressure Ulcer of Buttock,Stage 3
+ ;;^UTILITY(U,$J,358.3,5957,1,4,0)
+ ;;=4^L89.303
+ ;;^UTILITY(U,$J,358.3,5957,2)
+ ;;=^5009392
+ ;;^UTILITY(U,$J,358.3,5958,0)
+ ;;=L89.304^^26^391^240
+ ;;^UTILITY(U,$J,358.3,5958,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5958,1,3,0)
+ ;;=3^Pressure Ulcer of Buttock,Stage 4
+ ;;^UTILITY(U,$J,358.3,5958,1,4,0)
+ ;;=4^L89.304
+ ;;^UTILITY(U,$J,358.3,5958,2)
+ ;;=^5009393
+ ;;^UTILITY(U,$J,358.3,5959,0)
+ ;;=L89.309^^26^391^241
+ ;;^UTILITY(U,$J,358.3,5959,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5959,1,3,0)
+ ;;=3^Pressure Ulcer of Buttock,Stage Unspec

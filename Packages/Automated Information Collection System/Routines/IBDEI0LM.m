@@ -1,120 +1,352 @@
-IBDEI0LM ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0LM ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10082,1,4,0)
- ;;=4^E10.349
- ;;^UTILITY(U,$J,358.3,10082,2)
- ;;=^5002599
- ;;^UTILITY(U,$J,358.3,10083,0)
- ;;=E10.351^^44^500^7
- ;;^UTILITY(U,$J,358.3,10083,1,0)
+ ;;^UTILITY(U,$J,358.3,27326,1,4,0)
+ ;;=4^Z91.120
+ ;;^UTILITY(U,$J,358.3,27326,2)
+ ;;=^5063612
+ ;;^UTILITY(U,$J,358.3,27327,0)
+ ;;=Z91.128^^71^1155^2
+ ;;^UTILITY(U,$J,358.3,27327,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10083,1,3,0)
- ;;=3^DM Type 1 w/ Prolif Diab Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,10083,1,4,0)
- ;;=4^E10.351
- ;;^UTILITY(U,$J,358.3,10083,2)
- ;;=^5002600
- ;;^UTILITY(U,$J,358.3,10084,0)
- ;;=E10.359^^44^500^8
- ;;^UTILITY(U,$J,358.3,10084,1,0)
+ ;;^UTILITY(U,$J,358.3,27327,1,3,0)
+ ;;=3^Intentional Underdosing,Other Reasons
+ ;;^UTILITY(U,$J,358.3,27327,1,4,0)
+ ;;=4^Z91.128
+ ;;^UTILITY(U,$J,358.3,27327,2)
+ ;;=^5063613
+ ;;^UTILITY(U,$J,358.3,27328,0)
+ ;;=Z91.130^^71^1155^15
+ ;;^UTILITY(U,$J,358.3,27328,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10084,1,3,0)
- ;;=3^DM Type 1 w/ Prolif Diab Retinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,10084,1,4,0)
- ;;=4^E10.359
- ;;^UTILITY(U,$J,358.3,10084,2)
- ;;=^5002601
- ;;^UTILITY(U,$J,358.3,10085,0)
- ;;=E08.311^^44^500^39
- ;;^UTILITY(U,$J,358.3,10085,1,0)
+ ;;^UTILITY(U,$J,358.3,27328,1,3,0)
+ ;;=3^Unintented Underdosing d/t Age-Related Disability
+ ;;^UTILITY(U,$J,358.3,27328,1,4,0)
+ ;;=4^Z91.130
+ ;;^UTILITY(U,$J,358.3,27328,2)
+ ;;=^5063614
+ ;;^UTILITY(U,$J,358.3,27329,0)
+ ;;=Z91.138^^71^1155^16
+ ;;^UTILITY(U,$J,358.3,27329,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10085,1,3,0)
- ;;=3^Diab d/t Undrl Cond w/ Diab Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,10085,1,4,0)
- ;;=4^E08.311
- ;;^UTILITY(U,$J,358.3,10085,2)
- ;;=^5002510
- ;;^UTILITY(U,$J,358.3,10086,0)
- ;;=E08.319^^44^500^40
- ;;^UTILITY(U,$J,358.3,10086,1,0)
+ ;;^UTILITY(U,$J,358.3,27329,1,3,0)
+ ;;=3^Unintented Underdosing,Other Reasons
+ ;;^UTILITY(U,$J,358.3,27329,1,4,0)
+ ;;=4^Z91.138
+ ;;^UTILITY(U,$J,358.3,27329,2)
+ ;;=^5063615
+ ;;^UTILITY(U,$J,358.3,27330,0)
+ ;;=T38.3X6A^^71^1155^3
+ ;;^UTILITY(U,$J,358.3,27330,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10086,1,3,0)
- ;;=3^Diab d/t Undrl Cond w/ Diab Retinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,10086,1,4,0)
- ;;=4^E08.319
- ;;^UTILITY(U,$J,358.3,10086,2)
- ;;=^5002511
- ;;^UTILITY(U,$J,358.3,10087,0)
- ;;=E08.321^^44^500^41
- ;;^UTILITY(U,$J,358.3,10087,1,0)
+ ;;^UTILITY(U,$J,358.3,27330,1,3,0)
+ ;;=3^Underdosing Insulin/Hypoglycemic Drugs,Init Encntr
+ ;;^UTILITY(U,$J,358.3,27330,1,4,0)
+ ;;=4^T38.3X6A
+ ;;^UTILITY(U,$J,358.3,27330,2)
+ ;;=^5049649
+ ;;^UTILITY(U,$J,358.3,27331,0)
+ ;;=T38.3X6S^^71^1155^4
+ ;;^UTILITY(U,$J,358.3,27331,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10087,1,3,0)
- ;;=3^Diab d/t Undrl Cond w/ Mild Nonprolif Diab Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,10087,1,4,0)
- ;;=4^E08.321
- ;;^UTILITY(U,$J,358.3,10087,2)
- ;;=^5002512
- ;;^UTILITY(U,$J,358.3,10088,0)
- ;;=E08.329^^44^500^42
- ;;^UTILITY(U,$J,358.3,10088,1,0)
+ ;;^UTILITY(U,$J,358.3,27331,1,3,0)
+ ;;=3^Underdosing Insulin/Hypoglycemic Drugs,Sequela
+ ;;^UTILITY(U,$J,358.3,27331,1,4,0)
+ ;;=4^T38.3X6S
+ ;;^UTILITY(U,$J,358.3,27331,2)
+ ;;=^5049651
+ ;;^UTILITY(U,$J,358.3,27332,0)
+ ;;=T38.3X6D^^71^1155^5
+ ;;^UTILITY(U,$J,358.3,27332,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10088,1,3,0)
- ;;=3^Diab d/t Undrl Cond w/ Mild Nonprolif Diab Retinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,10088,1,4,0)
- ;;=4^E08.329
- ;;^UTILITY(U,$J,358.3,10088,2)
- ;;=^5002513
- ;;^UTILITY(U,$J,358.3,10089,0)
- ;;=E08.331^^44^500^43
- ;;^UTILITY(U,$J,358.3,10089,1,0)
+ ;;^UTILITY(U,$J,358.3,27332,1,3,0)
+ ;;=3^Underdosing Insulin/Hypoglycemic Drugs,Sub Encntr
+ ;;^UTILITY(U,$J,358.3,27332,1,4,0)
+ ;;=4^T38.3X6D
+ ;;^UTILITY(U,$J,358.3,27332,2)
+ ;;=^5049650
+ ;;^UTILITY(U,$J,358.3,27333,0)
+ ;;=T46.5X6A^^71^1155^9
+ ;;^UTILITY(U,$J,358.3,27333,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10089,1,3,0)
- ;;=3^Diab d/t Undrl Cond w/ Moderate Nonprolif Diab Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,10089,1,4,0)
- ;;=4^E08.331
- ;;^UTILITY(U,$J,358.3,10089,2)
- ;;=^5002514
- ;;^UTILITY(U,$J,358.3,10090,0)
- ;;=E08.339^^44^500^44
- ;;^UTILITY(U,$J,358.3,10090,1,0)
+ ;;^UTILITY(U,$J,358.3,27333,1,3,0)
+ ;;=3^Underdosing of Antihypertensive Drugs,Init Encntr
+ ;;^UTILITY(U,$J,358.3,27333,1,4,0)
+ ;;=4^T46.5X6A
+ ;;^UTILITY(U,$J,358.3,27333,2)
+ ;;=^5051353
+ ;;^UTILITY(U,$J,358.3,27334,0)
+ ;;=T46.5X6D^^71^1155^10
+ ;;^UTILITY(U,$J,358.3,27334,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10090,1,3,0)
- ;;=3^Diab d/t Undrl Cond w/ Moderate Nonprolif Diab Retinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,10090,1,4,0)
- ;;=4^E08.339
- ;;^UTILITY(U,$J,358.3,10090,2)
- ;;=^5002515
- ;;^UTILITY(U,$J,358.3,10091,0)
- ;;=E08.341^^44^500^47
- ;;^UTILITY(U,$J,358.3,10091,1,0)
+ ;;^UTILITY(U,$J,358.3,27334,1,3,0)
+ ;;=3^Underdosing of Antihypertensive Drugs,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,27334,1,4,0)
+ ;;=4^T46.5X6D
+ ;;^UTILITY(U,$J,358.3,27334,2)
+ ;;=^5051354
+ ;;^UTILITY(U,$J,358.3,27335,0)
+ ;;=T46.5X6S^^71^1155^11
+ ;;^UTILITY(U,$J,358.3,27335,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10091,1,3,0)
- ;;=3^Diab d/t Undrl Cond w/ Severe Nonprolif Diab Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,10091,1,4,0)
- ;;=4^E08.341
- ;;^UTILITY(U,$J,358.3,10091,2)
- ;;=^5002516
- ;;^UTILITY(U,$J,358.3,10092,0)
- ;;=E08.349^^44^500^48
- ;;^UTILITY(U,$J,358.3,10092,1,0)
+ ;;^UTILITY(U,$J,358.3,27335,1,3,0)
+ ;;=3^Underdosing of Antihypertensive Drugs,Sequela
+ ;;^UTILITY(U,$J,358.3,27335,1,4,0)
+ ;;=4^T46.5X6S
+ ;;^UTILITY(U,$J,358.3,27335,2)
+ ;;=^5051355
+ ;;^UTILITY(U,$J,358.3,27336,0)
+ ;;=T43.206A^^71^1155^6
+ ;;^UTILITY(U,$J,358.3,27336,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10092,1,3,0)
- ;;=3^Diab d/t Undrl Cond w/ Severe Nonprolif Diab Retinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,10092,1,4,0)
- ;;=4^E08.349
- ;;^UTILITY(U,$J,358.3,10092,2)
- ;;=^5002517
- ;;^UTILITY(U,$J,358.3,10093,0)
- ;;=E09.311^^44^500^37
- ;;^UTILITY(U,$J,358.3,10093,1,0)
+ ;;^UTILITY(U,$J,358.3,27336,1,3,0)
+ ;;=3^Underdosing of Antidepressants,Init Encntr
+ ;;^UTILITY(U,$J,358.3,27336,1,4,0)
+ ;;=4^T43.206A
+ ;;^UTILITY(U,$J,358.3,27336,2)
+ ;;=^5050543
+ ;;^UTILITY(U,$J,358.3,27337,0)
+ ;;=T43.206S^^71^1155^7
+ ;;^UTILITY(U,$J,358.3,27337,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10093,1,3,0)
- ;;=3^Diab d/t Drug/Chem w/ Unspec Diab Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,10093,1,4,0)
- ;;=4^E09.311
- ;;^UTILITY(U,$J,358.3,10093,2)
- ;;=^5002552
- ;;^UTILITY(U,$J,358.3,10094,0)
- ;;=E09.319^^44^500^38
+ ;;^UTILITY(U,$J,358.3,27337,1,3,0)
+ ;;=3^Underdosing of Antidepressants,Sequela
+ ;;^UTILITY(U,$J,358.3,27337,1,4,0)
+ ;;=4^T43.206S
+ ;;^UTILITY(U,$J,358.3,27337,2)
+ ;;=^5050545
+ ;;^UTILITY(U,$J,358.3,27338,0)
+ ;;=T43.206D^^71^1155^8
+ ;;^UTILITY(U,$J,358.3,27338,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27338,1,3,0)
+ ;;=3^Underdosing of Antidepressants,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,27338,1,4,0)
+ ;;=4^T43.206D
+ ;;^UTILITY(U,$J,358.3,27338,2)
+ ;;=^5050544
+ ;;^UTILITY(U,$J,358.3,27339,0)
+ ;;=T43.506A^^71^1155^12
+ ;;^UTILITY(U,$J,358.3,27339,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27339,1,3,0)
+ ;;=3^Underdosing of Antipsychotics & Neuroleptics,Init Encntr
+ ;;^UTILITY(U,$J,358.3,27339,1,4,0)
+ ;;=4^T43.506A
+ ;;^UTILITY(U,$J,358.3,27339,2)
+ ;;=^5050651
+ ;;^UTILITY(U,$J,358.3,27340,0)
+ ;;=T43.506S^^71^1155^13
+ ;;^UTILITY(U,$J,358.3,27340,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27340,1,3,0)
+ ;;=3^Underdosing of Antipsychotics & Neuroleptics,Sequela
+ ;;^UTILITY(U,$J,358.3,27340,1,4,0)
+ ;;=4^T43.506S
+ ;;^UTILITY(U,$J,358.3,27340,2)
+ ;;=^5050653
+ ;;^UTILITY(U,$J,358.3,27341,0)
+ ;;=T43.506D^^71^1155^14
+ ;;^UTILITY(U,$J,358.3,27341,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27341,1,3,0)
+ ;;=3^Underdosing of Antipsychotics & Neuroleptics,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,27341,1,4,0)
+ ;;=4^T43.506D
+ ;;^UTILITY(U,$J,358.3,27341,2)
+ ;;=^5050652
+ ;;^UTILITY(U,$J,358.3,27342,0)
+ ;;=99211^^72^1156^1
+ ;;^UTILITY(U,$J,358.3,27342,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27342,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,27342,1,3,0)
+ ;;=3^RN/LPN Visit
+ ;;^UTILITY(U,$J,358.3,27343,0)
+ ;;=99212^^72^1156^2
+ ;;^UTILITY(U,$J,358.3,27343,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27343,1,2,0)
+ ;;=2^99212
+ ;;^UTILITY(U,$J,358.3,27343,1,3,0)
+ ;;=3^Problem Focused
+ ;;^UTILITY(U,$J,358.3,27344,0)
+ ;;=99213^^72^1156^3
+ ;;^UTILITY(U,$J,358.3,27344,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27344,1,2,0)
+ ;;=2^99213
+ ;;^UTILITY(U,$J,358.3,27344,1,3,0)
+ ;;=3^Exp Prob Focused
+ ;;^UTILITY(U,$J,358.3,27345,0)
+ ;;=99214^^72^1156^4
+ ;;^UTILITY(U,$J,358.3,27345,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27345,1,2,0)
+ ;;=2^99214
+ ;;^UTILITY(U,$J,358.3,27345,1,3,0)
+ ;;=3^Detailed
+ ;;^UTILITY(U,$J,358.3,27346,0)
+ ;;=99215^^72^1156^5
+ ;;^UTILITY(U,$J,358.3,27346,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27346,1,2,0)
+ ;;=2^99215
+ ;;^UTILITY(U,$J,358.3,27346,1,3,0)
+ ;;=3^Comprehensive
+ ;;^UTILITY(U,$J,358.3,27347,0)
+ ;;=99241^^72^1157^1
+ ;;^UTILITY(U,$J,358.3,27347,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27347,1,2,0)
+ ;;=2^99241
+ ;;^UTILITY(U,$J,358.3,27347,1,3,0)
+ ;;=3^Prob Focused
+ ;;^UTILITY(U,$J,358.3,27348,0)
+ ;;=99242^^72^1157^2
+ ;;^UTILITY(U,$J,358.3,27348,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27348,1,2,0)
+ ;;=2^99242
+ ;;^UTILITY(U,$J,358.3,27348,1,3,0)
+ ;;=3^Exp Problem Focused
+ ;;^UTILITY(U,$J,358.3,27349,0)
+ ;;=99243^^72^1157^3
+ ;;^UTILITY(U,$J,358.3,27349,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27349,1,2,0)
+ ;;=2^99243
+ ;;^UTILITY(U,$J,358.3,27349,1,3,0)
+ ;;=3^Detailed
+ ;;^UTILITY(U,$J,358.3,27350,0)
+ ;;=99244^^72^1157^4
+ ;;^UTILITY(U,$J,358.3,27350,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27350,1,2,0)
+ ;;=2^99244
+ ;;^UTILITY(U,$J,358.3,27350,1,3,0)
+ ;;=3^Comprehensive, Mod Cmplx
+ ;;^UTILITY(U,$J,358.3,27351,0)
+ ;;=99245^^72^1157^5
+ ;;^UTILITY(U,$J,358.3,27351,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27351,1,2,0)
+ ;;=2^99245
+ ;;^UTILITY(U,$J,358.3,27351,1,3,0)
+ ;;=3^Comprehensive, High Cmplx
+ ;;^UTILITY(U,$J,358.3,27352,0)
+ ;;=99201^^72^1158^1
+ ;;^UTILITY(U,$J,358.3,27352,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27352,1,2,0)
+ ;;=2^99201
+ ;;^UTILITY(U,$J,358.3,27352,1,3,0)
+ ;;=3^Prob Focused
+ ;;^UTILITY(U,$J,358.3,27353,0)
+ ;;=99202^^72^1158^2
+ ;;^UTILITY(U,$J,358.3,27353,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27353,1,2,0)
+ ;;=2^99202
+ ;;^UTILITY(U,$J,358.3,27353,1,3,0)
+ ;;=3^Expanded Prob Focus
+ ;;^UTILITY(U,$J,358.3,27354,0)
+ ;;=99203^^72^1158^3
+ ;;^UTILITY(U,$J,358.3,27354,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27354,1,2,0)
+ ;;=2^99203
+ ;;^UTILITY(U,$J,358.3,27354,1,3,0)
+ ;;=3^Detailed
+ ;;^UTILITY(U,$J,358.3,27355,0)
+ ;;=99204^^72^1158^4
+ ;;^UTILITY(U,$J,358.3,27355,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27355,1,2,0)
+ ;;=2^99204
+ ;;^UTILITY(U,$J,358.3,27355,1,3,0)
+ ;;=3^Comprehensive, Moderate
+ ;;^UTILITY(U,$J,358.3,27356,0)
+ ;;=99205^^72^1158^5
+ ;;^UTILITY(U,$J,358.3,27356,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27356,1,2,0)
+ ;;=2^99205
+ ;;^UTILITY(U,$J,358.3,27356,1,3,0)
+ ;;=3^Comprehensive, High Complx
+ ;;^UTILITY(U,$J,358.3,27357,0)
+ ;;=92532^^73^1159^19
+ ;;^UTILITY(U,$J,358.3,27357,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27357,1,2,0)
+ ;;=2^92532
+ ;;^UTILITY(U,$J,358.3,27357,1,3,0)
+ ;;=3^Positional Nystagmus Study
+ ;;^UTILITY(U,$J,358.3,27358,0)
+ ;;=95857^^73^1159^25
+ ;;^UTILITY(U,$J,358.3,27358,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27358,1,2,0)
+ ;;=2^95857
+ ;;^UTILITY(U,$J,358.3,27358,1,3,0)
+ ;;=3^Tensilon Test
+ ;;^UTILITY(U,$J,358.3,27359,0)
+ ;;=64612^^73^1159^4^^^^1
+ ;;^UTILITY(U,$J,358.3,27359,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27359,1,2,0)
+ ;;=2^64612
+ ;;^UTILITY(U,$J,358.3,27359,1,3,0)
+ ;;=3^Chemodenervation Face Muscle,Unilateral
+ ;;^UTILITY(U,$J,358.3,27360,0)
+ ;;=J0585^^73^1159^8^^^^1
+ ;;^UTILITY(U,$J,358.3,27360,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27360,1,2,0)
+ ;;=2^J0585
+ ;;^UTILITY(U,$J,358.3,27360,1,3,0)
+ ;;=3^Chemodenervation Supply per unit
+ ;;^UTILITY(U,$J,358.3,27361,0)
+ ;;=20552^^73^1159^27^^^^1
+ ;;^UTILITY(U,$J,358.3,27361,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27361,1,2,0)
+ ;;=2^20552
+ ;;^UTILITY(U,$J,358.3,27361,1,3,0)
+ ;;=3^Trigger Point, 1 or 2 muscles
+ ;;^UTILITY(U,$J,358.3,27362,0)
+ ;;=20553^^73^1159^28^^^^1
+ ;;^UTILITY(U,$J,358.3,27362,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27362,1,2,0)
+ ;;=2^20553
+ ;;^UTILITY(U,$J,358.3,27362,1,3,0)
+ ;;=3^Trigger Point, 3 or more muscles
+ ;;^UTILITY(U,$J,358.3,27363,0)
+ ;;=20612^^73^1159^14^^^^1
+ ;;^UTILITY(U,$J,358.3,27363,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27363,1,2,0)
+ ;;=2^20612
+ ;;^UTILITY(U,$J,358.3,27363,1,3,0)
+ ;;=3^Ganglion Cyst Aspriation/Injection
+ ;;^UTILITY(U,$J,358.3,27364,0)
+ ;;=64550^^73^1159^24^^^^1
+ ;;^UTILITY(U,$J,358.3,27364,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27364,1,2,0)
+ ;;=2^64550
+ ;;^UTILITY(U,$J,358.3,27364,1,3,0)
+ ;;=3^TENS Device Training and Issue
+ ;;^UTILITY(U,$J,358.3,27365,0)
+ ;;=64450^^73^1159^16^^^^1
+ ;;^UTILITY(U,$J,358.3,27365,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27365,1,2,0)
+ ;;=2^64450
+ ;;^UTILITY(U,$J,358.3,27365,1,3,0)
+ ;;=3^Nerve Block, peripheral nerve
+ ;;^UTILITY(U,$J,358.3,27366,0)
+ ;;=95990^^73^1159^21^^^^1

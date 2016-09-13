@@ -1,126 +1,380 @@
-IBDEI03Z ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI03Z ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1429,1,0)
+ ;;^UTILITY(U,$J,358.3,4746,0)
+ ;;=L30.9^^22^295^5
+ ;;^UTILITY(U,$J,358.3,4746,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1429,1,3,0)
- ;;=3^Underdosing of aminoglycosides, initial encounter
- ;;^UTILITY(U,$J,358.3,1429,1,4,0)
- ;;=4^T36.5X6A
- ;;^UTILITY(U,$J,358.3,1429,2)
- ;;=^5049361
- ;;^UTILITY(U,$J,358.3,1430,0)
- ;;=T36.5X6D^^8^135^79
- ;;^UTILITY(U,$J,358.3,1430,1,0)
+ ;;^UTILITY(U,$J,358.3,4746,1,3,0)
+ ;;=3^Eczema,Unspec
+ ;;^UTILITY(U,$J,358.3,4746,1,4,0)
+ ;;=4^L30.9
+ ;;^UTILITY(U,$J,358.3,4746,2)
+ ;;=^5009159
+ ;;^UTILITY(U,$J,358.3,4747,0)
+ ;;=L23.9^^22^295^2
+ ;;^UTILITY(U,$J,358.3,4747,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1430,1,3,0)
- ;;=3^Underdosing of aminoglycosides, subsequent encounter
- ;;^UTILITY(U,$J,358.3,1430,1,4,0)
- ;;=4^T36.5X6D
- ;;^UTILITY(U,$J,358.3,1430,2)
- ;;=^5049362
- ;;^UTILITY(U,$J,358.3,1431,0)
- ;;=T36.5X6S^^8^135^78
- ;;^UTILITY(U,$J,358.3,1431,1,0)
+ ;;^UTILITY(U,$J,358.3,4747,1,3,0)
+ ;;=3^Eczema,Allergic Contact,Unspec
+ ;;^UTILITY(U,$J,358.3,4747,1,4,0)
+ ;;=4^L23.9
+ ;;^UTILITY(U,$J,358.3,4747,2)
+ ;;=^5009125
+ ;;^UTILITY(U,$J,358.3,4748,0)
+ ;;=L20.82^^22^295^3
+ ;;^UTILITY(U,$J,358.3,4748,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1431,1,3,0)
- ;;=3^Underdosing of aminoglycosides, sequela
- ;;^UTILITY(U,$J,358.3,1431,1,4,0)
- ;;=4^T36.5X6S
- ;;^UTILITY(U,$J,358.3,1431,2)
- ;;=^5049363
- ;;^UTILITY(U,$J,358.3,1432,0)
- ;;=T45.1X6A^^8^135^80
- ;;^UTILITY(U,$J,358.3,1432,1,0)
+ ;;^UTILITY(U,$J,358.3,4748,1,3,0)
+ ;;=3^Eczema,Flexural
+ ;;^UTILITY(U,$J,358.3,4748,1,4,0)
+ ;;=4^L20.82
+ ;;^UTILITY(U,$J,358.3,4748,2)
+ ;;=^5009109
+ ;;^UTILITY(U,$J,358.3,4749,0)
+ ;;=L20.84^^22^295^4
+ ;;^UTILITY(U,$J,358.3,4749,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1432,1,3,0)
- ;;=3^Underdosing of antineoplastic and immunosup drugs, init
- ;;^UTILITY(U,$J,358.3,1432,1,4,0)
- ;;=4^T45.1X6A
- ;;^UTILITY(U,$J,358.3,1432,2)
- ;;=^5051029
- ;;^UTILITY(U,$J,358.3,1433,0)
- ;;=T45.1X6D^^8^135^81
- ;;^UTILITY(U,$J,358.3,1433,1,0)
+ ;;^UTILITY(U,$J,358.3,4749,1,3,0)
+ ;;=3^Eczema,Intrinsic
+ ;;^UTILITY(U,$J,358.3,4749,1,4,0)
+ ;;=4^L20.84
+ ;;^UTILITY(U,$J,358.3,4749,2)
+ ;;=^5009111
+ ;;^UTILITY(U,$J,358.3,4750,0)
+ ;;=L51.8^^22^295^10
+ ;;^UTILITY(U,$J,358.3,4750,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1433,1,3,0)
- ;;=3^Underdosing of antineoplastic and immunosup drugs, subs
- ;;^UTILITY(U,$J,358.3,1433,1,4,0)
- ;;=4^T45.1X6D
- ;;^UTILITY(U,$J,358.3,1433,2)
- ;;=^5051030
- ;;^UTILITY(U,$J,358.3,1434,0)
- ;;=T45.1X6S^^8^135^82
- ;;^UTILITY(U,$J,358.3,1434,1,0)
+ ;;^UTILITY(U,$J,358.3,4750,1,3,0)
+ ;;=3^Erythema Multiforme,Other
+ ;;^UTILITY(U,$J,358.3,4750,1,4,0)
+ ;;=4^L51.8
+ ;;^UTILITY(U,$J,358.3,4750,2)
+ ;;=^336639
+ ;;^UTILITY(U,$J,358.3,4751,0)
+ ;;=R23.4^^22^295^14
+ ;;^UTILITY(U,$J,358.3,4751,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1434,1,3,0)
- ;;=3^Underdosing of antineoplastic and immunosup drugs, sequela
- ;;^UTILITY(U,$J,358.3,1434,1,4,0)
- ;;=4^T45.1X6S
- ;;^UTILITY(U,$J,358.3,1434,2)
- ;;=^5051031
- ;;^UTILITY(U,$J,358.3,1435,0)
- ;;=T36.8X6A^^8^135^83
- ;;^UTILITY(U,$J,358.3,1435,1,0)
+ ;;^UTILITY(U,$J,358.3,4751,1,3,0)
+ ;;=3^Eschar/Desquamination of Skin
+ ;;^UTILITY(U,$J,358.3,4751,1,4,0)
+ ;;=4^R23.4
+ ;;^UTILITY(U,$J,358.3,4751,2)
+ ;;=^5019296
+ ;;^UTILITY(U,$J,358.3,4752,0)
+ ;;=L49.9^^22^295^23
+ ;;^UTILITY(U,$J,358.3,4752,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1435,1,3,0)
- ;;=3^Underdosing of other systemic antibiotics, initial encounter
- ;;^UTILITY(U,$J,358.3,1435,1,4,0)
- ;;=4^T36.8X6A
- ;;^UTILITY(U,$J,358.3,1435,2)
- ;;=^5049415
- ;;^UTILITY(U,$J,358.3,1436,0)
- ;;=T36.8X6D^^8^135^84
- ;;^UTILITY(U,$J,358.3,1436,1,0)
+ ;;^UTILITY(U,$J,358.3,4752,1,3,0)
+ ;;=3^Exfoliation d/t Erythematous Cond w/ 90% or More Body Surface
+ ;;^UTILITY(U,$J,358.3,4752,1,4,0)
+ ;;=4^L49.9
+ ;;^UTILITY(U,$J,358.3,4752,2)
+ ;;=^5009199
+ ;;^UTILITY(U,$J,358.3,4753,0)
+ ;;=L74.9^^22^295^1
+ ;;^UTILITY(U,$J,358.3,4753,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1436,1,3,0)
- ;;=3^Underdosing of other systemic antibiotics, subs encntr
- ;;^UTILITY(U,$J,358.3,1436,1,4,0)
- ;;=4^T36.8X6D
- ;;^UTILITY(U,$J,358.3,1436,2)
- ;;=^5049416
- ;;^UTILITY(U,$J,358.3,1437,0)
- ;;=T36.8X6S^^8^135^85
- ;;^UTILITY(U,$J,358.3,1437,1,0)
+ ;;^UTILITY(U,$J,358.3,4753,1,3,0)
+ ;;=3^Eccrine Sweat Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,4753,1,4,0)
+ ;;=4^L74.9
+ ;;^UTILITY(U,$J,358.3,4753,2)
+ ;;=^5009296
+ ;;^UTILITY(U,$J,358.3,4754,0)
+ ;;=L92.3^^22^296^1
+ ;;^UTILITY(U,$J,358.3,4754,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1437,1,3,0)
- ;;=3^Underdosing of other systemic antibiotics, sequela
- ;;^UTILITY(U,$J,358.3,1437,1,4,0)
- ;;=4^T36.8X6S
- ;;^UTILITY(U,$J,358.3,1437,2)
- ;;=^5049417
- ;;^UTILITY(U,$J,358.3,1438,0)
- ;;=T49.6X6A^^8^135^86
- ;;^UTILITY(U,$J,358.3,1438,1,0)
+ ;;^UTILITY(U,$J,358.3,4754,1,3,0)
+ ;;=3^FB Granuloma Skin/Subcutaneous Tissue
+ ;;^UTILITY(U,$J,358.3,4754,1,4,0)
+ ;;=4^L92.3
+ ;;^UTILITY(U,$J,358.3,4754,2)
+ ;;=^5009464
+ ;;^UTILITY(U,$J,358.3,4755,0)
+ ;;=L66.2^^22^296^4
+ ;;^UTILITY(U,$J,358.3,4755,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1438,1,3,0)
- ;;=3^Underdosing of otorhino drugs and preparations, init
- ;;^UTILITY(U,$J,358.3,1438,1,4,0)
- ;;=4^T49.6X6A
- ;;^UTILITY(U,$J,358.3,1438,2)
- ;;=^5051929
- ;;^UTILITY(U,$J,358.3,1439,0)
- ;;=T49.6X6D^^8^135^87
- ;;^UTILITY(U,$J,358.3,1439,1,0)
+ ;;^UTILITY(U,$J,358.3,4755,1,3,0)
+ ;;=3^Folliculitis Decalvans
+ ;;^UTILITY(U,$J,358.3,4755,1,4,0)
+ ;;=4^L66.2
+ ;;^UTILITY(U,$J,358.3,4755,2)
+ ;;=^5009254
+ ;;^UTILITY(U,$J,358.3,4756,0)
+ ;;=L73.9^^22^296^3
+ ;;^UTILITY(U,$J,358.3,4756,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1439,1,3,0)
- ;;=3^Underdosing of otorhino drugs and preparations, subs
- ;;^UTILITY(U,$J,358.3,1439,1,4,0)
- ;;=4^T49.6X6D
- ;;^UTILITY(U,$J,358.3,1439,2)
- ;;=^5051930
- ;;^UTILITY(U,$J,358.3,1440,0)
- ;;=T49.6X6S^^8^135^88
- ;;^UTILITY(U,$J,358.3,1440,1,0)
+ ;;^UTILITY(U,$J,358.3,4756,1,3,0)
+ ;;=3^Follicular Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,4756,1,4,0)
+ ;;=4^L73.9
+ ;;^UTILITY(U,$J,358.3,4756,2)
+ ;;=^5009286
+ ;;^UTILITY(U,$J,358.3,4757,0)
+ ;;=L02.221^^22^296^5
+ ;;^UTILITY(U,$J,358.3,4757,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1440,1,3,0)
- ;;=3^Underdosing of otorhino drugs and preparations, sequela
- ;;^UTILITY(U,$J,358.3,1440,1,4,0)
- ;;=4^T49.6X6S
- ;;^UTILITY(U,$J,358.3,1440,2)
- ;;=^5051931
- ;;^UTILITY(U,$J,358.3,1441,0)
- ;;=T36.96XA^^8^135^89
- ;;^UTILITY(U,$J,358.3,1441,1,0)
+ ;;^UTILITY(U,$J,358.3,4757,1,3,0)
+ ;;=3^Furuncle,Abdominal Wall
+ ;;^UTILITY(U,$J,358.3,4757,1,4,0)
+ ;;=4^L02.221
+ ;;^UTILITY(U,$J,358.3,4757,2)
+ ;;=^5008957
+ ;;^UTILITY(U,$J,358.3,4758,0)
+ ;;=L02.222^^22^296^6
+ ;;^UTILITY(U,$J,358.3,4758,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4758,1,3,0)
+ ;;=3^Furuncle,Back
+ ;;^UTILITY(U,$J,358.3,4758,1,4,0)
+ ;;=4^L02.222
+ ;;^UTILITY(U,$J,358.3,4758,2)
+ ;;=^5008958
+ ;;^UTILITY(U,$J,358.3,4759,0)
+ ;;=L02.223^^22^296^7
+ ;;^UTILITY(U,$J,358.3,4759,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4759,1,3,0)
+ ;;=3^Furuncle,Chest Wall
+ ;;^UTILITY(U,$J,358.3,4759,1,4,0)
+ ;;=4^L02.223
+ ;;^UTILITY(U,$J,358.3,4759,2)
+ ;;=^5008959
+ ;;^UTILITY(U,$J,358.3,4760,0)
+ ;;=L02.224^^22^296^8
+ ;;^UTILITY(U,$J,358.3,4760,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4760,1,3,0)
+ ;;=3^Furuncle,Groin
+ ;;^UTILITY(U,$J,358.3,4760,1,4,0)
+ ;;=4^L02.224
+ ;;^UTILITY(U,$J,358.3,4760,2)
+ ;;=^5008960
+ ;;^UTILITY(U,$J,358.3,4761,0)
+ ;;=L02.422^^22^296^9
+ ;;^UTILITY(U,$J,358.3,4761,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4761,1,3,0)
+ ;;=3^Furuncle,Left Axilla
+ ;;^UTILITY(U,$J,358.3,4761,1,4,0)
+ ;;=4^L02.422
+ ;;^UTILITY(U,$J,358.3,4761,2)
+ ;;=^5008981
+ ;;^UTILITY(U,$J,358.3,4762,0)
+ ;;=L02.421^^22^296^12
+ ;;^UTILITY(U,$J,358.3,4762,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4762,1,3,0)
+ ;;=3^Furuncle,Right Axilla
+ ;;^UTILITY(U,$J,358.3,4762,1,4,0)
+ ;;=4^L02.421
+ ;;^UTILITY(U,$J,358.3,4762,2)
+ ;;=^5008980
+ ;;^UTILITY(U,$J,358.3,4763,0)
+ ;;=L02.426^^22^296^10
+ ;;^UTILITY(U,$J,358.3,4763,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4763,1,3,0)
+ ;;=3^Furuncle,Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,4763,1,4,0)
+ ;;=4^L02.426
+ ;;^UTILITY(U,$J,358.3,4763,2)
+ ;;=^5133643
+ ;;^UTILITY(U,$J,358.3,4764,0)
+ ;;=L02.425^^22^296^13
+ ;;^UTILITY(U,$J,358.3,4764,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4764,1,3,0)
+ ;;=3^Furuncle,Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,4764,1,4,0)
+ ;;=4^L02.425
+ ;;^UTILITY(U,$J,358.3,4764,2)
+ ;;=^5008984
+ ;;^UTILITY(U,$J,358.3,4765,0)
+ ;;=L02.424^^22^296^11
+ ;;^UTILITY(U,$J,358.3,4765,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4765,1,3,0)
+ ;;=3^Furuncle,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,4765,1,4,0)
+ ;;=4^L02.424
+ ;;^UTILITY(U,$J,358.3,4765,2)
+ ;;=^5008983
+ ;;^UTILITY(U,$J,358.3,4766,0)
+ ;;=L02.423^^22^296^14
+ ;;^UTILITY(U,$J,358.3,4766,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4766,1,3,0)
+ ;;=3^Furuncle,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,4766,1,4,0)
+ ;;=4^L02.423
+ ;;^UTILITY(U,$J,358.3,4766,2)
+ ;;=^5008982
+ ;;^UTILITY(U,$J,358.3,4767,0)
+ ;;=L73.8^^22^296^2
+ ;;^UTILITY(U,$J,358.3,4767,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4767,1,3,0)
+ ;;=3^Follicular Disorder,Oth Specified
+ ;;^UTILITY(U,$J,358.3,4767,1,4,0)
+ ;;=4^L73.8
+ ;;^UTILITY(U,$J,358.3,4767,2)
+ ;;=^5009285
+ ;;^UTILITY(U,$J,358.3,4768,0)
+ ;;=B09.^^22^297^4
+ ;;^UTILITY(U,$J,358.3,4768,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4768,1,3,0)
+ ;;=3^Infection,Viral w/ Skin/Mucous Membrane Lesions
+ ;;^UTILITY(U,$J,358.3,4768,1,4,0)
+ ;;=4^B09.
+ ;;^UTILITY(U,$J,358.3,4768,2)
+ ;;=^5000534
+ ;;^UTILITY(U,$J,358.3,4769,0)
+ ;;=L08.9^^22^297^3
+ ;;^UTILITY(U,$J,358.3,4769,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4769,1,3,0)
+ ;;=3^Infection Local of Skin/Subcutaneous Tissue,Unspec
+ ;;^UTILITY(U,$J,358.3,4769,1,4,0)
+ ;;=4^L08.9
+ ;;^UTILITY(U,$J,358.3,4769,2)
+ ;;=^5009082
+ ;;^UTILITY(U,$J,358.3,4770,0)
+ ;;=Q80.0^^22^297^1
+ ;;^UTILITY(U,$J,358.3,4770,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4770,1,3,0)
+ ;;=3^Ichthyosis Vulgaris
+ ;;^UTILITY(U,$J,358.3,4770,1,4,0)
+ ;;=4^Q80.0
+ ;;^UTILITY(U,$J,358.3,4770,2)
+ ;;=^175407
+ ;;^UTILITY(U,$J,358.3,4771,0)
+ ;;=Q80.1^^22^297^2
+ ;;^UTILITY(U,$J,358.3,4771,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4771,1,3,0)
+ ;;=3^Ichthyosis,X-Linked
+ ;;^UTILITY(U,$J,358.3,4771,1,4,0)
+ ;;=4^Q80.1
+ ;;^UTILITY(U,$J,358.3,4771,2)
+ ;;=^5019041
+ ;;^UTILITY(U,$J,358.3,4772,0)
+ ;;=L76.01^^22^297^6
+ ;;^UTILITY(U,$J,358.3,4772,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4772,1,3,0)
+ ;;=3^Intraop Hemor/Hemtom Skin/SQ Tissue,Comp Derm Procedure
+ ;;^UTILITY(U,$J,358.3,4772,1,4,0)
+ ;;=4^L76.01
+ ;;^UTILITY(U,$J,358.3,4772,2)
+ ;;=^5009302
+ ;;^UTILITY(U,$J,358.3,4773,0)
+ ;;=L76.02^^22^297^7
+ ;;^UTILITY(U,$J,358.3,4773,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4773,1,3,0)
+ ;;=3^Intraop Hemor/Hemtom Skin/SQ Tissue,Comp Oth Procedure
+ ;;^UTILITY(U,$J,358.3,4773,1,4,0)
+ ;;=4^L76.02
+ ;;^UTILITY(U,$J,358.3,4773,2)
+ ;;=^5009303
+ ;;^UTILITY(U,$J,358.3,4774,0)
+ ;;=L60.0^^22^297^5
+ ;;^UTILITY(U,$J,358.3,4774,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4774,1,3,0)
+ ;;=3^Ingrown Nail
+ ;;^UTILITY(U,$J,358.3,4774,1,4,0)
+ ;;=4^L60.0
+ ;;^UTILITY(U,$J,358.3,4774,2)
+ ;;=^5009234
+ ;;^UTILITY(U,$J,358.3,4775,0)
+ ;;=L11.0^^22^298^4
+ ;;^UTILITY(U,$J,358.3,4775,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4775,1,3,0)
+ ;;=3^Keratosis,Follicularis,Acquired
+ ;;^UTILITY(U,$J,358.3,4775,1,4,0)
+ ;;=4^L11.0
+ ;;^UTILITY(U,$J,358.3,4775,2)
+ ;;=^5009091
+ ;;^UTILITY(U,$J,358.3,4776,0)
+ ;;=L57.0^^22^298^3
+ ;;^UTILITY(U,$J,358.3,4776,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4776,1,3,0)
+ ;;=3^Keratosis,Actinic
+ ;;^UTILITY(U,$J,358.3,4776,1,4,0)
+ ;;=4^L57.0
+ ;;^UTILITY(U,$J,358.3,4776,2)
+ ;;=^66900
+ ;;^UTILITY(U,$J,358.3,4777,0)
+ ;;=L82.0^^22^298^5
+ ;;^UTILITY(U,$J,358.3,4777,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4777,1,3,0)
+ ;;=3^Keratosis,Inflamed Seborrheic
+ ;;^UTILITY(U,$J,358.3,4777,1,4,0)
+ ;;=4^L82.0
+ ;;^UTILITY(U,$J,358.3,4777,2)
+ ;;=^303311
+ ;;^UTILITY(U,$J,358.3,4778,0)
+ ;;=L82.1^^22^298^6
+ ;;^UTILITY(U,$J,358.3,4778,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4778,1,3,0)
+ ;;=3^Keratosis,Seborrheic
+ ;;^UTILITY(U,$J,358.3,4778,1,4,0)
+ ;;=4^L82.1
+ ;;^UTILITY(U,$J,358.3,4778,2)
+ ;;=^303312
+ ;;^UTILITY(U,$J,358.3,4779,0)
+ ;;=L91.0^^22^298^1
+ ;;^UTILITY(U,$J,358.3,4779,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4779,1,3,0)
+ ;;=3^Keloid
+ ;;^UTILITY(U,$J,358.3,4779,1,4,0)
+ ;;=4^L91.0
+ ;;^UTILITY(U,$J,358.3,4779,2)
+ ;;=^5009459
+ ;;^UTILITY(U,$J,358.3,4780,0)
+ ;;=L85.8^^22^298^2
+ ;;^UTILITY(U,$J,358.3,4780,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4780,1,3,0)
+ ;;=3^Keratoacantoma (Benign)
+ ;;^UTILITY(U,$J,358.3,4780,1,4,0)
+ ;;=4^L85.8
+ ;;^UTILITY(U,$J,358.3,4780,2)
+ ;;=^5009324
+ ;;^UTILITY(U,$J,358.3,4781,0)
+ ;;=B08.1^^22^299^81
+ ;;^UTILITY(U,$J,358.3,4781,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4781,1,3,0)
+ ;;=3^Molluscum Contagiosum
+ ;;^UTILITY(U,$J,358.3,4781,1,4,0)
+ ;;=4^B08.1
+ ;;^UTILITY(U,$J,358.3,4781,2)
+ ;;=^78675
+ ;;^UTILITY(U,$J,358.3,4782,0)
+ ;;=L74.0^^22^299^79
+ ;;^UTILITY(U,$J,358.3,4782,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4782,1,3,0)
+ ;;=3^Miliaria Rubra
+ ;;^UTILITY(U,$J,358.3,4782,1,4,0)
+ ;;=4^L74.0
+ ;;^UTILITY(U,$J,358.3,4782,2)
+ ;;=^277258
+ ;;^UTILITY(U,$J,358.3,4783,0)
+ ;;=D22.9^^22^299^46
+ ;;^UTILITY(U,$J,358.3,4783,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4783,1,3,0)
+ ;;=3^Melanocytic Nevi,Unspec

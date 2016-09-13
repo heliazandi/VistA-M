@@ -1,134 +1,364 @@
-IBDEI0MJ ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0MJ ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10504,1,4,0)
- ;;=4^H43.22
- ;;^UTILITY(U,$J,358.3,10504,2)
- ;;=^5005943
- ;;^UTILITY(U,$J,358.3,10505,0)
- ;;=H43.23^^44^505^28
- ;;^UTILITY(U,$J,358.3,10505,1,0)
+ ;;^UTILITY(U,$J,358.3,28557,1,4,0)
+ ;;=4^Z43.0
+ ;;^UTILITY(U,$J,358.3,28557,2)
+ ;;=^5062958
+ ;;^UTILITY(U,$J,358.3,28558,0)
+ ;;=Z43.1^^80^1232^8
+ ;;^UTILITY(U,$J,358.3,28558,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10505,1,3,0)
- ;;=3^Crystalline Deposits in Vitreous Body,Bilateral
- ;;^UTILITY(U,$J,358.3,10505,1,4,0)
- ;;=4^H43.23
- ;;^UTILITY(U,$J,358.3,10505,2)
- ;;=^5005944
- ;;^UTILITY(U,$J,358.3,10506,0)
- ;;=H43.11^^44^505^119
- ;;^UTILITY(U,$J,358.3,10506,1,0)
+ ;;^UTILITY(U,$J,358.3,28558,1,3,0)
+ ;;=3^Attention to Gastrostomy
+ ;;^UTILITY(U,$J,358.3,28558,1,4,0)
+ ;;=4^Z43.1
+ ;;^UTILITY(U,$J,358.3,28558,2)
+ ;;=^5062959
+ ;;^UTILITY(U,$J,358.3,28559,0)
+ ;;=Z43.2^^80^1232^9
+ ;;^UTILITY(U,$J,358.3,28559,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10506,1,3,0)
- ;;=3^Vitreous Hemorrhage,Right Eye
- ;;^UTILITY(U,$J,358.3,10506,1,4,0)
- ;;=4^H43.11
- ;;^UTILITY(U,$J,358.3,10506,2)
- ;;=^5005938
- ;;^UTILITY(U,$J,358.3,10507,0)
- ;;=H43.12^^44^505^118
- ;;^UTILITY(U,$J,358.3,10507,1,0)
+ ;;^UTILITY(U,$J,358.3,28559,1,3,0)
+ ;;=3^Attention to Ileostomy
+ ;;^UTILITY(U,$J,358.3,28559,1,4,0)
+ ;;=4^Z43.2
+ ;;^UTILITY(U,$J,358.3,28559,2)
+ ;;=^5062960
+ ;;^UTILITY(U,$J,358.3,28560,0)
+ ;;=Z43.3^^80^1232^6
+ ;;^UTILITY(U,$J,358.3,28560,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10507,1,3,0)
- ;;=3^Vitreous Hemorrhage,Left Eye
- ;;^UTILITY(U,$J,358.3,10507,1,4,0)
- ;;=4^H43.12
- ;;^UTILITY(U,$J,358.3,10507,2)
- ;;=^5005939
- ;;^UTILITY(U,$J,358.3,10508,0)
- ;;=H43.391^^44^505^122
- ;;^UTILITY(U,$J,358.3,10508,1,0)
+ ;;^UTILITY(U,$J,358.3,28560,1,3,0)
+ ;;=3^Attention to Colostomy
+ ;;^UTILITY(U,$J,358.3,28560,1,4,0)
+ ;;=4^Z43.3
+ ;;^UTILITY(U,$J,358.3,28560,2)
+ ;;=^5062961
+ ;;^UTILITY(U,$J,358.3,28561,0)
+ ;;=Z43.4^^80^1232^4
+ ;;^UTILITY(U,$J,358.3,28561,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10508,1,3,0)
- ;;=3^Vitreous Opacities,Right Eye NEC
- ;;^UTILITY(U,$J,358.3,10508,1,4,0)
- ;;=4^H43.391
- ;;^UTILITY(U,$J,358.3,10508,2)
- ;;=^5005949
- ;;^UTILITY(U,$J,358.3,10509,0)
- ;;=H43.392^^44^505^121
- ;;^UTILITY(U,$J,358.3,10509,1,0)
+ ;;^UTILITY(U,$J,358.3,28561,1,3,0)
+ ;;=3^Attention to Artif Opening of Digestive Tract NEC
+ ;;^UTILITY(U,$J,358.3,28561,1,4,0)
+ ;;=4^Z43.4
+ ;;^UTILITY(U,$J,358.3,28561,2)
+ ;;=^5062962
+ ;;^UTILITY(U,$J,358.3,28562,0)
+ ;;=Z43.5^^80^1232^7
+ ;;^UTILITY(U,$J,358.3,28562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10509,1,3,0)
- ;;=3^Vitreous Opacities,Left Eye NEC
- ;;^UTILITY(U,$J,358.3,10509,1,4,0)
- ;;=4^H43.392
- ;;^UTILITY(U,$J,358.3,10509,2)
- ;;=^5005950
- ;;^UTILITY(U,$J,358.3,10510,0)
- ;;=H43.393^^44^505^120
- ;;^UTILITY(U,$J,358.3,10510,1,0)
+ ;;^UTILITY(U,$J,358.3,28562,1,3,0)
+ ;;=3^Attention to Cystostomy
+ ;;^UTILITY(U,$J,358.3,28562,1,4,0)
+ ;;=4^Z43.5
+ ;;^UTILITY(U,$J,358.3,28562,2)
+ ;;=^5062963
+ ;;^UTILITY(U,$J,358.3,28563,0)
+ ;;=Z43.6^^80^1232^5
+ ;;^UTILITY(U,$J,358.3,28563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10510,1,3,0)
- ;;=3^Vitreous Opacities,Bilateral NEC
- ;;^UTILITY(U,$J,358.3,10510,1,4,0)
- ;;=4^H43.393
- ;;^UTILITY(U,$J,358.3,10510,2)
- ;;=^5005951
- ;;^UTILITY(U,$J,358.3,10511,0)
- ;;=H43.01^^44^505^125
- ;;^UTILITY(U,$J,358.3,10511,1,0)
+ ;;^UTILITY(U,$J,358.3,28563,1,3,0)
+ ;;=3^Attention to Artif Opening of Urinary Tract NEC
+ ;;^UTILITY(U,$J,358.3,28563,1,4,0)
+ ;;=4^Z43.6
+ ;;^UTILITY(U,$J,358.3,28563,2)
+ ;;=^5062964
+ ;;^UTILITY(U,$J,358.3,28564,0)
+ ;;=Z48.00^^80^1232^12
+ ;;^UTILITY(U,$J,358.3,28564,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10511,1,3,0)
- ;;=3^Vitreous Prolapse,Right Eye
- ;;^UTILITY(U,$J,358.3,10511,1,4,0)
- ;;=4^H43.01
- ;;^UTILITY(U,$J,358.3,10511,2)
- ;;=^5005934
- ;;^UTILITY(U,$J,358.3,10512,0)
- ;;=H43.02^^44^505^124
- ;;^UTILITY(U,$J,358.3,10512,1,0)
+ ;;^UTILITY(U,$J,358.3,28564,1,3,0)
+ ;;=3^Change or Removal of Nonsurg Wound Dressing
+ ;;^UTILITY(U,$J,358.3,28564,1,4,0)
+ ;;=4^Z48.00
+ ;;^UTILITY(U,$J,358.3,28564,2)
+ ;;=^5063033
+ ;;^UTILITY(U,$J,358.3,28565,0)
+ ;;=Z48.01^^80^1232^13
+ ;;^UTILITY(U,$J,358.3,28565,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10512,1,3,0)
- ;;=3^Vitreous Prolapse,Left Eye
- ;;^UTILITY(U,$J,358.3,10512,1,4,0)
- ;;=4^H43.02
- ;;^UTILITY(U,$J,358.3,10512,2)
- ;;=^5005935
- ;;^UTILITY(U,$J,358.3,10513,0)
- ;;=H43.03^^44^505^123
- ;;^UTILITY(U,$J,358.3,10513,1,0)
+ ;;^UTILITY(U,$J,358.3,28565,1,3,0)
+ ;;=3^Change or Removal of Surg Wound Dressing
+ ;;^UTILITY(U,$J,358.3,28565,1,4,0)
+ ;;=4^Z48.01
+ ;;^UTILITY(U,$J,358.3,28565,2)
+ ;;=^5063034
+ ;;^UTILITY(U,$J,358.3,28566,0)
+ ;;=Z48.02^^80^1232^23
+ ;;^UTILITY(U,$J,358.3,28566,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10513,1,3,0)
- ;;=3^Vitreous Prolapse,Bilateral
- ;;^UTILITY(U,$J,358.3,10513,1,4,0)
- ;;=4^H43.03
- ;;^UTILITY(U,$J,358.3,10513,2)
- ;;=^5005936
- ;;^UTILITY(U,$J,358.3,10514,0)
- ;;=H43.821^^44^505^114
- ;;^UTILITY(U,$J,358.3,10514,1,0)
+ ;;^UTILITY(U,$J,358.3,28566,1,3,0)
+ ;;=3^Suture Removal
+ ;;^UTILITY(U,$J,358.3,28566,1,4,0)
+ ;;=4^Z48.02
+ ;;^UTILITY(U,$J,358.3,28566,2)
+ ;;=^5063035
+ ;;^UTILITY(U,$J,358.3,28567,0)
+ ;;=Z48.03^^80^1232^11
+ ;;^UTILITY(U,$J,358.3,28567,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10514,1,3,0)
- ;;=3^Vitreomacular Adhesion,Right Eye
- ;;^UTILITY(U,$J,358.3,10514,1,4,0)
- ;;=4^H43.821
- ;;^UTILITY(U,$J,358.3,10514,2)
- ;;=^5005957
- ;;^UTILITY(U,$J,358.3,10515,0)
- ;;=H43.822^^44^505^113
- ;;^UTILITY(U,$J,358.3,10515,1,0)
+ ;;^UTILITY(U,$J,358.3,28567,1,3,0)
+ ;;=3^Change or Removal of Drains
+ ;;^UTILITY(U,$J,358.3,28567,1,4,0)
+ ;;=4^Z48.03
+ ;;^UTILITY(U,$J,358.3,28567,2)
+ ;;=^5063036
+ ;;^UTILITY(U,$J,358.3,28568,0)
+ ;;=Z48.89^^80^1232^22
+ ;;^UTILITY(U,$J,358.3,28568,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10515,1,3,0)
- ;;=3^Vitreomacular Adhesion,Left Eye
- ;;^UTILITY(U,$J,358.3,10515,1,4,0)
- ;;=4^H43.822
- ;;^UTILITY(U,$J,358.3,10515,2)
- ;;=^5005958
- ;;^UTILITY(U,$J,358.3,10516,0)
- ;;=H43.823^^44^505^112
- ;;^UTILITY(U,$J,358.3,10516,1,0)
+ ;;^UTILITY(U,$J,358.3,28568,1,3,0)
+ ;;=3^Surgical Aftercare NEC
+ ;;^UTILITY(U,$J,358.3,28568,1,4,0)
+ ;;=4^Z48.89
+ ;;^UTILITY(U,$J,358.3,28568,2)
+ ;;=^5063055
+ ;;^UTILITY(U,$J,358.3,28569,0)
+ ;;=Z45.2^^80^1232^1
+ ;;^UTILITY(U,$J,358.3,28569,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10516,1,3,0)
- ;;=3^Vitreomacular Adhesion,Bilateral
- ;;^UTILITY(U,$J,358.3,10516,1,4,0)
- ;;=4^H43.823
- ;;^UTILITY(U,$J,358.3,10516,2)
- ;;=^5005959
- ;;^UTILITY(U,$J,358.3,10517,0)
- ;;=H35.353^^44^505^31
- ;;^UTILITY(U,$J,358.3,10517,1,0)
+ ;;^UTILITY(U,$J,358.3,28569,1,3,0)
+ ;;=3^Adjustment/Management of VAD
+ ;;^UTILITY(U,$J,358.3,28569,1,4,0)
+ ;;=4^Z45.2
+ ;;^UTILITY(U,$J,358.3,28569,2)
+ ;;=^5062999
+ ;;^UTILITY(U,$J,358.3,28570,0)
+ ;;=Z46.82^^80^1232^17
+ ;;^UTILITY(U,$J,358.3,28570,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10517,1,3,0)
- ;;=3^Cystoid Macular Degeneration,Bilateral
+ ;;^UTILITY(U,$J,358.3,28570,1,3,0)
+ ;;=3^Fitting/Adjustment of Non-Vascular Catheter
+ ;;^UTILITY(U,$J,358.3,28570,1,4,0)
+ ;;=4^Z46.82
+ ;;^UTILITY(U,$J,358.3,28570,2)
+ ;;=^5063022
+ ;;^UTILITY(U,$J,358.3,28571,0)
+ ;;=Z51.11^^80^1232^3
+ ;;^UTILITY(U,$J,358.3,28571,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28571,1,3,0)
+ ;;=3^Antineoplastic Chemotherapy
+ ;;^UTILITY(U,$J,358.3,28571,1,4,0)
+ ;;=4^Z51.11
+ ;;^UTILITY(U,$J,358.3,28571,2)
+ ;;=^5063061
+ ;;^UTILITY(U,$J,358.3,28572,0)
+ ;;=Z71.9^^80^1232^14
+ ;;^UTILITY(U,$J,358.3,28572,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28572,1,3,0)
+ ;;=3^Counseling,Unspec
+ ;;^UTILITY(U,$J,358.3,28572,1,4,0)
+ ;;=4^Z71.9
+ ;;^UTILITY(U,$J,358.3,28572,2)
+ ;;=^5063254
+ ;;^UTILITY(U,$J,358.3,28573,0)
+ ;;=Z76.0^^80^1232^19
+ ;;^UTILITY(U,$J,358.3,28573,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28573,1,3,0)
+ ;;=3^Issue of Repeat Prescription
+ ;;^UTILITY(U,$J,358.3,28573,1,4,0)
+ ;;=4^Z76.0
+ ;;^UTILITY(U,$J,358.3,28573,2)
+ ;;=^5063297
+ ;;^UTILITY(U,$J,358.3,28574,0)
+ ;;=Z02.9^^80^1232^2
+ ;;^UTILITY(U,$J,358.3,28574,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28574,1,3,0)
+ ;;=3^Administrative Exam,Unspec
+ ;;^UTILITY(U,$J,358.3,28574,1,4,0)
+ ;;=4^Z02.9
+ ;;^UTILITY(U,$J,358.3,28574,2)
+ ;;=^5062646
+ ;;^UTILITY(U,$J,358.3,28575,0)
+ ;;=Z59.0^^80^1232^18
+ ;;^UTILITY(U,$J,358.3,28575,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28575,1,3,0)
+ ;;=3^Homelessness
+ ;;^UTILITY(U,$J,358.3,28575,1,4,0)
+ ;;=4^Z59.0
+ ;;^UTILITY(U,$J,358.3,28575,2)
+ ;;=^5063129
+ ;;^UTILITY(U,$J,358.3,28576,0)
+ ;;=Z71.0^^80^1232^20
+ ;;^UTILITY(U,$J,358.3,28576,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28576,1,3,0)
+ ;;=3^Persons Consulting on Behalf of Another Person
+ ;;^UTILITY(U,$J,358.3,28576,1,4,0)
+ ;;=4^Z71.0
+ ;;^UTILITY(U,$J,358.3,28576,2)
+ ;;=^5063242
+ ;;^UTILITY(U,$J,358.3,28577,0)
+ ;;=Z01.818^^80^1232^21
+ ;;^UTILITY(U,$J,358.3,28577,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28577,1,3,0)
+ ;;=3^Preprocedural Exam NEC
+ ;;^UTILITY(U,$J,358.3,28577,1,4,0)
+ ;;=4^Z01.818
+ ;;^UTILITY(U,$J,358.3,28577,2)
+ ;;=^5062628
+ ;;^UTILITY(U,$J,358.3,28578,0)
+ ;;=Z04.9^^80^1232^15
+ ;;^UTILITY(U,$J,358.3,28578,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28578,1,3,0)
+ ;;=3^Exam/Observation for Unspec Reason
+ ;;^UTILITY(U,$J,358.3,28578,1,4,0)
+ ;;=4^Z04.9
+ ;;^UTILITY(U,$J,358.3,28578,2)
+ ;;=^5062666
+ ;;^UTILITY(U,$J,358.3,28579,0)
+ ;;=Z49.01^^80^1232^16
+ ;;^UTILITY(U,$J,358.3,28579,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28579,1,3,0)
+ ;;=3^Fitting/Adjustment of Extracorpeal Dialysis Catheter
+ ;;^UTILITY(U,$J,358.3,28579,1,4,0)
+ ;;=4^Z49.01
+ ;;^UTILITY(U,$J,358.3,28579,2)
+ ;;=^5063056
+ ;;^UTILITY(U,$J,358.3,28580,0)
+ ;;=Z71.3^^80^1233^3
+ ;;^UTILITY(U,$J,358.3,28580,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28580,1,3,0)
+ ;;=3^Dietary Counseling/Surveillance
+ ;;^UTILITY(U,$J,358.3,28580,1,4,0)
+ ;;=4^Z71.3
+ ;;^UTILITY(U,$J,358.3,28580,2)
+ ;;=^5063245
+ ;;^UTILITY(U,$J,358.3,28581,0)
+ ;;=Z00.00^^80^1233^6
+ ;;^UTILITY(U,$J,358.3,28581,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28581,1,3,0)
+ ;;=3^General Adult Medical Exam w/o Abnormal Findings
+ ;;^UTILITY(U,$J,358.3,28581,1,4,0)
+ ;;=4^Z00.00
+ ;;^UTILITY(U,$J,358.3,28581,2)
+ ;;=^5062599
+ ;;^UTILITY(U,$J,358.3,28582,0)
+ ;;=Z01.89^^80^1233^12
+ ;;^UTILITY(U,$J,358.3,28582,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28582,1,3,0)
+ ;;=3^Special Exam NEC
+ ;;^UTILITY(U,$J,358.3,28582,1,4,0)
+ ;;=4^Z01.89
+ ;;^UTILITY(U,$J,358.3,28582,2)
+ ;;=^5062632
+ ;;^UTILITY(U,$J,358.3,28583,0)
+ ;;=Z11.59^^80^1233^13
+ ;;^UTILITY(U,$J,358.3,28583,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28583,1,3,0)
+ ;;=3^Viral Disease Screening NEC
+ ;;^UTILITY(U,$J,358.3,28583,1,4,0)
+ ;;=4^Z11.59
+ ;;^UTILITY(U,$J,358.3,28583,2)
+ ;;=^5062675
+ ;;^UTILITY(U,$J,358.3,28584,0)
+ ;;=Z12.39^^80^1233^8
+ ;;^UTILITY(U,$J,358.3,28584,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28584,1,3,0)
+ ;;=3^Malig Neop of Breast Screening NEC
+ ;;^UTILITY(U,$J,358.3,28584,1,4,0)
+ ;;=4^Z12.39
+ ;;^UTILITY(U,$J,358.3,28584,2)
+ ;;=^5062686
+ ;;^UTILITY(U,$J,358.3,28585,0)
+ ;;=Z12.12^^80^1233^10
+ ;;^UTILITY(U,$J,358.3,28585,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28585,1,3,0)
+ ;;=3^Malig Neop of Rectum Screening
+ ;;^UTILITY(U,$J,358.3,28585,1,4,0)
+ ;;=4^Z12.12
+ ;;^UTILITY(U,$J,358.3,28585,2)
+ ;;=^5062682
+ ;;^UTILITY(U,$J,358.3,28586,0)
+ ;;=Z12.5^^80^1233^9
+ ;;^UTILITY(U,$J,358.3,28586,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28586,1,3,0)
+ ;;=3^Malig Neop of Prostate Screening
+ ;;^UTILITY(U,$J,358.3,28586,1,4,0)
+ ;;=4^Z12.5
+ ;;^UTILITY(U,$J,358.3,28586,2)
+ ;;=^5062688
+ ;;^UTILITY(U,$J,358.3,28587,0)
+ ;;=Z13.5^^80^1233^4
+ ;;^UTILITY(U,$J,358.3,28587,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28587,1,3,0)
+ ;;=3^Eye and Ear Disorder Screening
+ ;;^UTILITY(U,$J,358.3,28587,1,4,0)
+ ;;=4^Z13.5
+ ;;^UTILITY(U,$J,358.3,28587,2)
+ ;;=^5062706
+ ;;^UTILITY(U,$J,358.3,28588,0)
+ ;;=Z13.1^^80^1233^2
+ ;;^UTILITY(U,$J,358.3,28588,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28588,1,3,0)
+ ;;=3^Diabetes Mellitus Screening
+ ;;^UTILITY(U,$J,358.3,28588,1,4,0)
+ ;;=4^Z13.1
+ ;;^UTILITY(U,$J,358.3,28588,2)
+ ;;=^5062700
+ ;;^UTILITY(U,$J,358.3,28589,0)
+ ;;=Z13.220^^80^1233^7
+ ;;^UTILITY(U,$J,358.3,28589,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28589,1,3,0)
+ ;;=3^Lipoid Disorder Screening
+ ;;^UTILITY(U,$J,358.3,28589,1,4,0)
+ ;;=4^Z13.220
+ ;;^UTILITY(U,$J,358.3,28589,2)
+ ;;=^5062702
+ ;;^UTILITY(U,$J,358.3,28590,0)
+ ;;=Z11.1^^80^1233^11
+ ;;^UTILITY(U,$J,358.3,28590,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28590,1,3,0)
+ ;;=3^Respiratory Tuberculosis Screening
+ ;;^UTILITY(U,$J,358.3,28590,1,4,0)
+ ;;=4^Z11.1
+ ;;^UTILITY(U,$J,358.3,28590,2)
+ ;;=^5062670
+ ;;^UTILITY(U,$J,358.3,28591,0)
+ ;;=Z13.6^^80^1233^1
+ ;;^UTILITY(U,$J,358.3,28591,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28591,1,3,0)
+ ;;=3^Cardiovascular Disorder Screening
+ ;;^UTILITY(U,$J,358.3,28591,1,4,0)
+ ;;=4^Z13.6
+ ;;^UTILITY(U,$J,358.3,28591,2)
+ ;;=^5062707
+ ;;^UTILITY(U,$J,358.3,28592,0)
+ ;;=Z00.01^^80^1233^5
+ ;;^UTILITY(U,$J,358.3,28592,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28592,1,3,0)
+ ;;=3^General Adult Medical Exam w/ Abnormal Findings
+ ;;^UTILITY(U,$J,358.3,28592,1,4,0)
+ ;;=4^Z00.01
+ ;;^UTILITY(U,$J,358.3,28592,2)
+ ;;=^5062600
+ ;;^UTILITY(U,$J,358.3,28593,0)
+ ;;=C34.91^^80^1234^10
+ ;;^UTILITY(U,$J,358.3,28593,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,28593,1,3,0)
+ ;;=3^Malig Neop of Right Bronchus/Lung,Unspec Part

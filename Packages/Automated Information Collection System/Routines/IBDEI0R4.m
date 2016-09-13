@@ -1,126 +1,364 @@
-IBDEI0R4 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0R4 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,12722,1,3,0)
- ;;=3^Cellulitis of Bilateral Orbits
- ;;^UTILITY(U,$J,358.3,12722,1,4,0)
- ;;=4^H05.013
- ;;^UTILITY(U,$J,358.3,12722,2)
- ;;=^5004562
- ;;^UTILITY(U,$J,358.3,12723,0)
- ;;=I70.331^^53^582^50
- ;;^UTILITY(U,$J,358.3,12723,1,0)
+ ;;^UTILITY(U,$J,358.3,35844,1,4,0)
+ ;;=4^N92.4
+ ;;^UTILITY(U,$J,358.3,35844,2)
+ ;;=^5015911
+ ;;^UTILITY(U,$J,358.3,35845,0)
+ ;;=N95.0^^100^1523^89
+ ;;^UTILITY(U,$J,358.3,35845,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12723,1,3,0)
- ;;=3^Athscl Bypass of Right Leg w/ Ulcer of Thigh
- ;;^UTILITY(U,$J,358.3,12723,1,4,0)
- ;;=4^I70.331
- ;;^UTILITY(U,$J,358.3,12723,2)
- ;;=^5007626
- ;;^UTILITY(U,$J,358.3,12724,0)
- ;;=I70.332^^53^582^51
- ;;^UTILITY(U,$J,358.3,12724,1,0)
+ ;;^UTILITY(U,$J,358.3,35845,1,3,0)
+ ;;=3^Postmenopausal Bleeding
+ ;;^UTILITY(U,$J,358.3,35845,1,4,0)
+ ;;=4^N95.0
+ ;;^UTILITY(U,$J,358.3,35845,2)
+ ;;=^97040
+ ;;^UTILITY(U,$J,358.3,35846,0)
+ ;;=N95.1^^100^1523^71
+ ;;^UTILITY(U,$J,358.3,35846,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12724,1,3,0)
- ;;=3^Athscl Bypass of Right Leg w/ Ulcer of Calf
- ;;^UTILITY(U,$J,358.3,12724,1,4,0)
- ;;=4^I70.332
- ;;^UTILITY(U,$J,358.3,12724,2)
- ;;=^5007627
- ;;^UTILITY(U,$J,358.3,12725,0)
- ;;=I70.333^^53^582^52
- ;;^UTILITY(U,$J,358.3,12725,1,0)
+ ;;^UTILITY(U,$J,358.3,35846,1,3,0)
+ ;;=3^Menopausal/Female Climacteric States
+ ;;^UTILITY(U,$J,358.3,35846,1,4,0)
+ ;;=4^N95.1
+ ;;^UTILITY(U,$J,358.3,35846,2)
+ ;;=^5015927
+ ;;^UTILITY(U,$J,358.3,35847,0)
+ ;;=N97.0^^100^1523^46
+ ;;^UTILITY(U,$J,358.3,35847,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12725,1,3,0)
- ;;=3^Athscl Bypass of Right Leg w/ Ulcer of Ankle
- ;;^UTILITY(U,$J,358.3,12725,1,4,0)
- ;;=4^I70.333
- ;;^UTILITY(U,$J,358.3,12725,2)
- ;;=^5007628
- ;;^UTILITY(U,$J,358.3,12726,0)
- ;;=I70.334^^53^582^53
- ;;^UTILITY(U,$J,358.3,12726,1,0)
+ ;;^UTILITY(U,$J,358.3,35847,1,3,0)
+ ;;=3^Female Infertility Associated w/ Anovulation
+ ;;^UTILITY(U,$J,358.3,35847,1,4,0)
+ ;;=4^N97.0
+ ;;^UTILITY(U,$J,358.3,35847,2)
+ ;;=^5015931
+ ;;^UTILITY(U,$J,358.3,35848,0)
+ ;;=N97.9^^100^1523^47
+ ;;^UTILITY(U,$J,358.3,35848,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12726,1,3,0)
- ;;=3^Athscl Bypass of Right Leg w/ Ulcer of Heel/Midfoot
- ;;^UTILITY(U,$J,358.3,12726,1,4,0)
- ;;=4^I70.334
- ;;^UTILITY(U,$J,358.3,12726,2)
- ;;=^5007629
- ;;^UTILITY(U,$J,358.3,12727,0)
- ;;=I70.335^^53^582^54
- ;;^UTILITY(U,$J,358.3,12727,1,0)
+ ;;^UTILITY(U,$J,358.3,35848,1,3,0)
+ ;;=3^Female Infertility,Unspec
+ ;;^UTILITY(U,$J,358.3,35848,1,4,0)
+ ;;=4^N97.9
+ ;;^UTILITY(U,$J,358.3,35848,2)
+ ;;=^5015935
+ ;;^UTILITY(U,$J,358.3,35849,0)
+ ;;=L29.2^^100^1523^96
+ ;;^UTILITY(U,$J,358.3,35849,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12727,1,3,0)
- ;;=3^Athscl Bypass of Right Leg w/ Ulcer of Oth Part of Foot
- ;;^UTILITY(U,$J,358.3,12727,1,4,0)
- ;;=4^I70.335
- ;;^UTILITY(U,$J,358.3,12727,2)
- ;;=^5007630
- ;;^UTILITY(U,$J,358.3,12728,0)
- ;;=I70.341^^53^582^49
- ;;^UTILITY(U,$J,358.3,12728,1,0)
+ ;;^UTILITY(U,$J,358.3,35849,1,3,0)
+ ;;=3^Pruritus Vulvae
+ ;;^UTILITY(U,$J,358.3,35849,1,4,0)
+ ;;=4^L29.2
+ ;;^UTILITY(U,$J,358.3,35849,2)
+ ;;=^100075
+ ;;^UTILITY(U,$J,358.3,35850,0)
+ ;;=R92.8^^100^1523^7
+ ;;^UTILITY(U,$J,358.3,35850,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12728,1,3,0)
- ;;=3^Athscl Bypass of Left Leg w/ Ulcer of Thigh
- ;;^UTILITY(U,$J,358.3,12728,1,4,0)
- ;;=4^I70.341
- ;;^UTILITY(U,$J,358.3,12728,2)
- ;;=^5007633
- ;;^UTILITY(U,$J,358.3,12729,0)
- ;;=I70.342^^53^582^46
- ;;^UTILITY(U,$J,358.3,12729,1,0)
+ ;;^UTILITY(U,$J,358.3,35850,1,3,0)
+ ;;=3^Abnormal/Inconclusive Findings on Dx Imaging of Breast
+ ;;^UTILITY(U,$J,358.3,35850,1,4,0)
+ ;;=4^R92.8
+ ;;^UTILITY(U,$J,358.3,35850,2)
+ ;;=^5019712
+ ;;^UTILITY(U,$J,358.3,35851,0)
+ ;;=R87.619^^100^1523^4
+ ;;^UTILITY(U,$J,358.3,35851,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12729,1,3,0)
- ;;=3^Athscl Bypass of Left Leg w/ Ulcer of Calf
- ;;^UTILITY(U,$J,358.3,12729,1,4,0)
- ;;=4^I70.342
- ;;^UTILITY(U,$J,358.3,12729,2)
- ;;=^5007634
- ;;^UTILITY(U,$J,358.3,12730,0)
- ;;=I70.343^^53^582^45
- ;;^UTILITY(U,$J,358.3,12730,1,0)
+ ;;^UTILITY(U,$J,358.3,35851,1,3,0)
+ ;;=3^Abnormal Cytology Findings in Specimen of Cervix Uteri,Unspec
+ ;;^UTILITY(U,$J,358.3,35851,1,4,0)
+ ;;=4^R87.619
+ ;;^UTILITY(U,$J,358.3,35851,2)
+ ;;=^5019676
+ ;;^UTILITY(U,$J,358.3,35852,0)
+ ;;=Z79.890^^100^1523^57
+ ;;^UTILITY(U,$J,358.3,35852,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12730,1,3,0)
- ;;=3^Athscl Bypass of Left Leg w/ Ulcer of Ankle
- ;;^UTILITY(U,$J,358.3,12730,1,4,0)
- ;;=4^I70.343
- ;;^UTILITY(U,$J,358.3,12730,2)
- ;;=^5007635
- ;;^UTILITY(U,$J,358.3,12731,0)
- ;;=I70.344^^53^582^47
- ;;^UTILITY(U,$J,358.3,12731,1,0)
+ ;;^UTILITY(U,$J,358.3,35852,1,3,0)
+ ;;=3^Hormone Replacement Therapy,Postmenopausal
+ ;;^UTILITY(U,$J,358.3,35852,1,4,0)
+ ;;=4^Z79.890
+ ;;^UTILITY(U,$J,358.3,35852,2)
+ ;;=^331975
+ ;;^UTILITY(U,$J,358.3,35853,0)
+ ;;=Z33.1^^100^1523^94
+ ;;^UTILITY(U,$J,358.3,35853,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12731,1,3,0)
- ;;=3^Athscl Bypass of Left Leg w/ Ulcer of Heel/Midfoot
- ;;^UTILITY(U,$J,358.3,12731,1,4,0)
- ;;=4^I70.344
- ;;^UTILITY(U,$J,358.3,12731,2)
- ;;=^5007636
- ;;^UTILITY(U,$J,358.3,12732,0)
- ;;=I70.345^^53^582^48
- ;;^UTILITY(U,$J,358.3,12732,1,0)
+ ;;^UTILITY(U,$J,358.3,35853,1,3,0)
+ ;;=3^Pregnant State,Incidental
+ ;;^UTILITY(U,$J,358.3,35853,1,4,0)
+ ;;=4^Z33.1
+ ;;^UTILITY(U,$J,358.3,35853,2)
+ ;;=^5062853
+ ;;^UTILITY(U,$J,358.3,35854,0)
+ ;;=Z39.2^^100^1523^90
+ ;;^UTILITY(U,$J,358.3,35854,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12732,1,3,0)
- ;;=3^Athscl Bypass of Left Leg w/ Ulcer of Oth Part of Foot
- ;;^UTILITY(U,$J,358.3,12732,1,4,0)
- ;;=4^I70.345
- ;;^UTILITY(U,$J,358.3,12732,2)
- ;;=^5007637
- ;;^UTILITY(U,$J,358.3,12733,0)
- ;;=I70.431^^53^582^40
- ;;^UTILITY(U,$J,358.3,12733,1,0)
+ ;;^UTILITY(U,$J,358.3,35854,1,3,0)
+ ;;=3^Postpartum Follow-up Routine Encounter
+ ;;^UTILITY(U,$J,358.3,35854,1,4,0)
+ ;;=4^Z39.2
+ ;;^UTILITY(U,$J,358.3,35854,2)
+ ;;=^5062906
+ ;;^UTILITY(U,$J,358.3,35855,0)
+ ;;=Z30.09^^100^1523^25
+ ;;^UTILITY(U,$J,358.3,35855,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12733,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Right Leg w/ Ulcer of Thigh
- ;;^UTILITY(U,$J,358.3,12733,1,4,0)
- ;;=4^I70.431
- ;;^UTILITY(U,$J,358.3,12733,2)
- ;;=^5007664
- ;;^UTILITY(U,$J,358.3,12734,0)
- ;;=I70.432^^53^582^41
- ;;^UTILITY(U,$J,358.3,12734,1,0)
+ ;;^UTILITY(U,$J,358.3,35855,1,3,0)
+ ;;=3^Counsel/Advice on Contraception Encounter
+ ;;^UTILITY(U,$J,358.3,35855,1,4,0)
+ ;;=4^Z30.09
+ ;;^UTILITY(U,$J,358.3,35855,2)
+ ;;=^5062817
+ ;;^UTILITY(U,$J,358.3,35856,0)
+ ;;=Z30.9^^100^1523^24
+ ;;^UTILITY(U,$J,358.3,35856,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12734,1,3,0)
- ;;=3^Athscl Autol Vein Bypass of Right Leg w/ Ulcer of Calf
+ ;;^UTILITY(U,$J,358.3,35856,1,3,0)
+ ;;=3^Contraceptive Management Encounter
+ ;;^UTILITY(U,$J,358.3,35856,1,4,0)
+ ;;=4^Z30.9
+ ;;^UTILITY(U,$J,358.3,35856,2)
+ ;;=^5062828
+ ;;^UTILITY(U,$J,358.3,35857,0)
+ ;;=N64.3^^100^1523^53
+ ;;^UTILITY(U,$J,358.3,35857,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35857,1,3,0)
+ ;;=3^Galactorrhea Not Associated w/ Childbirth
+ ;;^UTILITY(U,$J,358.3,35857,1,4,0)
+ ;;=4^N64.3
+ ;;^UTILITY(U,$J,358.3,35857,2)
+ ;;=^270460
+ ;;^UTILITY(U,$J,358.3,35858,0)
+ ;;=R92.2^^100^1523^60
+ ;;^UTILITY(U,$J,358.3,35858,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35858,1,3,0)
+ ;;=3^Inconclusive Mammogram
+ ;;^UTILITY(U,$J,358.3,35858,1,4,0)
+ ;;=4^R92.2
+ ;;^UTILITY(U,$J,358.3,35858,2)
+ ;;=^5019711
+ ;;^UTILITY(U,$J,358.3,35859,0)
+ ;;=Z30.432^^100^1523^98
+ ;;^UTILITY(U,$J,358.3,35859,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35859,1,3,0)
+ ;;=3^Removal of IUD
+ ;;^UTILITY(U,$J,358.3,35859,1,4,0)
+ ;;=4^Z30.432
+ ;;^UTILITY(U,$J,358.3,35859,2)
+ ;;=^5062824
+ ;;^UTILITY(U,$J,358.3,35860,0)
+ ;;=Z90.710^^100^1523^12
+ ;;^UTILITY(U,$J,358.3,35860,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35860,1,3,0)
+ ;;=3^Acquired Absence of Cervix & Uterus
+ ;;^UTILITY(U,$J,358.3,35860,1,4,0)
+ ;;=4^Z90.710
+ ;;^UTILITY(U,$J,358.3,35860,2)
+ ;;=^5063591
+ ;;^UTILITY(U,$J,358.3,35861,0)
+ ;;=Z90.13^^100^1523^11
+ ;;^UTILITY(U,$J,358.3,35861,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35861,1,3,0)
+ ;;=3^Acquired Absence of Breasts,Bilateral
+ ;;^UTILITY(U,$J,358.3,35861,1,4,0)
+ ;;=4^Z90.13
+ ;;^UTILITY(U,$J,358.3,35861,2)
+ ;;=^5063584
+ ;;^UTILITY(U,$J,358.3,35862,0)
+ ;;=Z90.12^^100^1523^9
+ ;;^UTILITY(U,$J,358.3,35862,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35862,1,3,0)
+ ;;=3^Acquired Absence of Breast,Left
+ ;;^UTILITY(U,$J,358.3,35862,1,4,0)
+ ;;=4^Z90.12
+ ;;^UTILITY(U,$J,358.3,35862,2)
+ ;;=^5063583
+ ;;^UTILITY(U,$J,358.3,35863,0)
+ ;;=Z90.11^^100^1523^10
+ ;;^UTILITY(U,$J,358.3,35863,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35863,1,3,0)
+ ;;=3^Acquired Absence of Breast,Right
+ ;;^UTILITY(U,$J,358.3,35863,1,4,0)
+ ;;=4^Z90.11
+ ;;^UTILITY(U,$J,358.3,35863,2)
+ ;;=^5063582
+ ;;^UTILITY(U,$J,358.3,35864,0)
+ ;;=A63.0^^100^1523^16
+ ;;^UTILITY(U,$J,358.3,35864,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35864,1,3,0)
+ ;;=3^Anogenital Warts,Verereal
+ ;;^UTILITY(U,$J,358.3,35864,1,4,0)
+ ;;=4^A63.0
+ ;;^UTILITY(U,$J,358.3,35864,2)
+ ;;=^5000360
+ ;;^UTILITY(U,$J,358.3,35865,0)
+ ;;=R63.0^^100^1523^17
+ ;;^UTILITY(U,$J,358.3,35865,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35865,1,3,0)
+ ;;=3^Anorexia
+ ;;^UTILITY(U,$J,358.3,35865,1,4,0)
+ ;;=4^R63.0
+ ;;^UTILITY(U,$J,358.3,35865,2)
+ ;;=^7939
+ ;;^UTILITY(U,$J,358.3,35866,0)
+ ;;=R87.611^^100^1523^2
+ ;;^UTILITY(U,$J,358.3,35866,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35866,1,3,0)
+ ;;=3^ASC-H
+ ;;^UTILITY(U,$J,358.3,35866,1,4,0)
+ ;;=4^R87.611
+ ;;^UTILITY(U,$J,358.3,35866,2)
+ ;;=^5019669
+ ;;^UTILITY(U,$J,358.3,35867,0)
+ ;;=R87.610^^100^1523^3
+ ;;^UTILITY(U,$J,358.3,35867,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35867,1,3,0)
+ ;;=3^ASC-US
+ ;;^UTILITY(U,$J,358.3,35867,1,4,0)
+ ;;=4^R87.610
+ ;;^UTILITY(U,$J,358.3,35867,2)
+ ;;=^5019668
+ ;;^UTILITY(U,$J,358.3,35868,0)
+ ;;=Z98.82^^100^1523^18
+ ;;^UTILITY(U,$J,358.3,35868,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35868,1,3,0)
+ ;;=3^Breast Implant Status
+ ;;^UTILITY(U,$J,358.3,35868,1,4,0)
+ ;;=4^Z98.82
+ ;;^UTILITY(U,$J,358.3,35868,2)
+ ;;=^5063747
+ ;;^UTILITY(U,$J,358.3,35869,0)
+ ;;=B37.3^^100^1523^19
+ ;;^UTILITY(U,$J,358.3,35869,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35869,1,3,0)
+ ;;=3^Candidiasis of Vulva & Vagina
+ ;;^UTILITY(U,$J,358.3,35869,1,4,0)
+ ;;=4^B37.3
+ ;;^UTILITY(U,$J,358.3,35869,2)
+ ;;=^5000615
+ ;;^UTILITY(U,$J,358.3,35870,0)
+ ;;=D06.9^^100^1523^20
+ ;;^UTILITY(U,$J,358.3,35870,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35870,1,3,0)
+ ;;=3^Carcinoma in Situ of Cervix,Unspec
+ ;;^UTILITY(U,$J,358.3,35870,1,4,0)
+ ;;=4^D06.9
+ ;;^UTILITY(U,$J,358.3,35870,2)
+ ;;=^5001941
+ ;;^UTILITY(U,$J,358.3,35871,0)
+ ;;=D06.0^^100^1523^21
+ ;;^UTILITY(U,$J,358.3,35871,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35871,1,3,0)
+ ;;=3^Carcinoma in Situ of Endocervix
+ ;;^UTILITY(U,$J,358.3,35871,1,4,0)
+ ;;=4^D06.0
+ ;;^UTILITY(U,$J,358.3,35871,2)
+ ;;=^5001938
+ ;;^UTILITY(U,$J,358.3,35872,0)
+ ;;=D06.1^^100^1523^22
+ ;;^UTILITY(U,$J,358.3,35872,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35872,1,3,0)
+ ;;=3^Carcinoma in Situ of Exocervix
+ ;;^UTILITY(U,$J,358.3,35872,1,4,0)
+ ;;=4^D06.1
+ ;;^UTILITY(U,$J,358.3,35872,2)
+ ;;=^5001939
+ ;;^UTILITY(U,$J,358.3,35873,0)
+ ;;=A56.02^^100^1523^23
+ ;;^UTILITY(U,$J,358.3,35873,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35873,1,3,0)
+ ;;=3^Chlamydial Vulvovaginitis
+ ;;^UTILITY(U,$J,358.3,35873,1,4,0)
+ ;;=4^A56.02
+ ;;^UTILITY(U,$J,358.3,35873,2)
+ ;;=^5000340
+ ;;^UTILITY(U,$J,358.3,35874,0)
+ ;;=N81.12^^100^1523^26
+ ;;^UTILITY(U,$J,358.3,35874,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35874,1,3,0)
+ ;;=3^Cystocele,Lateral
+ ;;^UTILITY(U,$J,358.3,35874,1,4,0)
+ ;;=4^N81.12
+ ;;^UTILITY(U,$J,358.3,35874,2)
+ ;;=^331535
+ ;;^UTILITY(U,$J,358.3,35875,0)
+ ;;=N81.11^^100^1523^27
+ ;;^UTILITY(U,$J,358.3,35875,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35875,1,3,0)
+ ;;=3^Cystocele,Midline
+ ;;^UTILITY(U,$J,358.3,35875,1,4,0)
+ ;;=4^N81.11
+ ;;^UTILITY(U,$J,358.3,35875,2)
+ ;;=^331534
+ ;;^UTILITY(U,$J,358.3,35876,0)
+ ;;=N81.10^^100^1523^28
+ ;;^UTILITY(U,$J,358.3,35876,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35876,1,3,0)
+ ;;=3^Cystocele,Unspec
+ ;;^UTILITY(U,$J,358.3,35876,1,4,0)
+ ;;=4^N81.10
+ ;;^UTILITY(U,$J,358.3,35876,2)
+ ;;=^5015838
+ ;;^UTILITY(U,$J,358.3,35877,0)
+ ;;=R87.614^^100^1523^29
+ ;;^UTILITY(U,$J,358.3,35877,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35877,1,3,0)
+ ;;=3^Cytologic Evidence of Malig on Smear of Cervix
+ ;;^UTILITY(U,$J,358.3,35877,1,4,0)
+ ;;=4^R87.614
+ ;;^UTILITY(U,$J,358.3,35877,2)
+ ;;=^5019672
+ ;;^UTILITY(U,$J,358.3,35878,0)
+ ;;=N87.9^^100^1523^36
+ ;;^UTILITY(U,$J,358.3,35878,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35878,1,3,0)
+ ;;=3^Dysplasia of Cervix Uteri,Unspec
+ ;;^UTILITY(U,$J,358.3,35878,1,4,0)
+ ;;=4^N87.9
+ ;;^UTILITY(U,$J,358.3,35878,2)
+ ;;=^5015877
+ ;;^UTILITY(U,$J,358.3,35879,0)
+ ;;=R30.0^^100^1523^37
+ ;;^UTILITY(U,$J,358.3,35879,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35879,1,3,0)
+ ;;=3^Dysuria
+ ;;^UTILITY(U,$J,358.3,35879,1,4,0)
+ ;;=4^R30.0
+ ;;^UTILITY(U,$J,358.3,35879,2)
+ ;;=^5019322
+ ;;^UTILITY(U,$J,358.3,35880,0)
+ ;;=N92.1^^100^1523^40
+ ;;^UTILITY(U,$J,358.3,35880,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,35880,1,3,0)
+ ;;=3^Excessive/Frequent Menstruation w/ Irregular Cycle

@@ -1,124 +1,346 @@
-IBDEI0VE ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0VE ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14713,1,4,0)
- ;;=4^Y37.200A
- ;;^UTILITY(U,$J,358.3,14713,2)
- ;;=^5137997
- ;;^UTILITY(U,$J,358.3,14714,0)
- ;;=Y37.200D^^53^612^92
- ;;^UTILITY(U,$J,358.3,14714,1,0)
+ ;;^UTILITY(U,$J,358.3,41233,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14714,1,3,0)
- ;;=3^Miltary Op Inv Explosion/Fragments,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,14714,1,4,0)
- ;;=4^Y37.200D
- ;;^UTILITY(U,$J,358.3,14714,2)
- ;;=^5137999
- ;;^UTILITY(U,$J,358.3,14715,0)
- ;;=X00.1XXA^^53^612^13
- ;;^UTILITY(U,$J,358.3,14715,1,0)
+ ;;^UTILITY(U,$J,358.3,41233,1,3,0)
+ ;;=3^Vitreous Opacities,Right Eye NEC
+ ;;^UTILITY(U,$J,358.3,41233,1,4,0)
+ ;;=4^H43.391
+ ;;^UTILITY(U,$J,358.3,41233,2)
+ ;;=^5005949
+ ;;^UTILITY(U,$J,358.3,41234,0)
+ ;;=H43.392^^121^1770^2
+ ;;^UTILITY(U,$J,358.3,41234,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14715,1,3,0)
- ;;=3^Exp to Smoke in Uncontrolled Bldg Fire,Init Encntr
- ;;^UTILITY(U,$J,358.3,14715,1,4,0)
- ;;=4^X00.1XXA
- ;;^UTILITY(U,$J,358.3,14715,2)
- ;;=^5060664
- ;;^UTILITY(U,$J,358.3,14716,0)
- ;;=X00.1XXD^^53^612^14
- ;;^UTILITY(U,$J,358.3,14716,1,0)
+ ;;^UTILITY(U,$J,358.3,41234,1,3,0)
+ ;;=3^Vitreous Opacities,Left Eye NEC
+ ;;^UTILITY(U,$J,358.3,41234,1,4,0)
+ ;;=4^H43.392
+ ;;^UTILITY(U,$J,358.3,41234,2)
+ ;;=^5005950
+ ;;^UTILITY(U,$J,358.3,41235,0)
+ ;;=H43.393^^121^1770^3
+ ;;^UTILITY(U,$J,358.3,41235,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14716,1,3,0)
- ;;=3^Exp to Smoke in Uncontrolled Bldg Fire,Subs Encntr
- ;;^UTILITY(U,$J,358.3,14716,1,4,0)
- ;;=4^X00.1XXD
- ;;^UTILITY(U,$J,358.3,14716,2)
- ;;=^5060665
- ;;^UTILITY(U,$J,358.3,14717,0)
- ;;=Y36.820S^^53^612^21
- ;;^UTILITY(U,$J,358.3,14717,1,0)
+ ;;^UTILITY(U,$J,358.3,41235,1,3,0)
+ ;;=3^Vitreous Opacities,Bilateral 
+ ;;^UTILITY(U,$J,358.3,41235,1,4,0)
+ ;;=4^H43.393
+ ;;^UTILITY(U,$J,358.3,41235,2)
+ ;;=^5005951
+ ;;^UTILITY(U,$J,358.3,41236,0)
+ ;;=H43.01^^121^1770^13
+ ;;^UTILITY(U,$J,358.3,41236,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14717,1,3,0)
- ;;=3^Explosn of Bomb Placed During War Op but Expld After,Milt,Sequela
- ;;^UTILITY(U,$J,358.3,14717,1,4,0)
- ;;=4^Y36.820S
- ;;^UTILITY(U,$J,358.3,14717,2)
- ;;=^5061795
- ;;^UTILITY(U,$J,358.3,14718,0)
- ;;=Y36.810S^^53^612^24
- ;;^UTILITY(U,$J,358.3,14718,1,0)
+ ;;^UTILITY(U,$J,358.3,41236,1,3,0)
+ ;;=3^Vitreous Prolapse,Right Eye
+ ;;^UTILITY(U,$J,358.3,41236,1,4,0)
+ ;;=4^H43.01
+ ;;^UTILITY(U,$J,358.3,41236,2)
+ ;;=^5005934
+ ;;^UTILITY(U,$J,358.3,41237,0)
+ ;;=H43.02^^121^1770^14
+ ;;^UTILITY(U,$J,358.3,41237,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14718,1,3,0)
- ;;=3^Explosn of Mine Placed During War Op but Expld After,Milt,Sequela
- ;;^UTILITY(U,$J,358.3,14718,1,4,0)
- ;;=4^Y36.810S
- ;;^UTILITY(U,$J,358.3,14718,2)
- ;;=^5061789
- ;;^UTILITY(U,$J,358.3,14719,0)
- ;;=Y36.6X0S^^53^612^114
- ;;^UTILITY(U,$J,358.3,14719,1,0)
+ ;;^UTILITY(U,$J,358.3,41237,1,3,0)
+ ;;=3^Vitreous Prolapse,Left Eye
+ ;;^UTILITY(U,$J,358.3,41237,1,4,0)
+ ;;=4^H43.02
+ ;;^UTILITY(U,$J,358.3,41237,2)
+ ;;=^5005935
+ ;;^UTILITY(U,$J,358.3,41238,0)
+ ;;=H43.813^^121^1770^17
+ ;;^UTILITY(U,$J,358.3,41238,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14719,1,3,0)
- ;;=3^War Op Inv Biological Weapons,Milt,Sequela
- ;;^UTILITY(U,$J,358.3,14719,1,4,0)
- ;;=4^Y36.6X0S
- ;;^UTILITY(U,$J,358.3,14719,2)
- ;;=^5061777
- ;;^UTILITY(U,$J,358.3,14720,0)
- ;;=Y36.410S^^53^612^122
- ;;^UTILITY(U,$J,358.3,14720,1,0)
+ ;;^UTILITY(U,$J,358.3,41238,1,3,0)
+ ;;=3^Vitreous Degeneration (PVD),Bilateral
+ ;;^UTILITY(U,$J,358.3,41238,1,4,0)
+ ;;=4^H43.813
+ ;;^UTILITY(U,$J,358.3,41238,2)
+ ;;=^5005955
+ ;;^UTILITY(U,$J,358.3,41239,0)
+ ;;=H43.812^^121^1770^16
+ ;;^UTILITY(U,$J,358.3,41239,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14720,1,3,0)
- ;;=3^War Op Inv Rubber Bullets,Milt,Sequela
- ;;^UTILITY(U,$J,358.3,14720,1,4,0)
- ;;=4^Y36.410S
- ;;^UTILITY(U,$J,358.3,14720,2)
- ;;=^5061693
- ;;^UTILITY(U,$J,358.3,14721,0)
- ;;=Y36.200S^^53^612^119
- ;;^UTILITY(U,$J,358.3,14721,1,0)
+ ;;^UTILITY(U,$J,358.3,41239,1,3,0)
+ ;;=3^Vitreous Degeneration (PVD),Left Eye
+ ;;^UTILITY(U,$J,358.3,41239,1,4,0)
+ ;;=4^H43.812
+ ;;^UTILITY(U,$J,358.3,41239,2)
+ ;;=^5005954
+ ;;^UTILITY(U,$J,358.3,41240,0)
+ ;;=H43.811^^121^1770^15
+ ;;^UTILITY(U,$J,358.3,41240,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14721,1,3,0)
- ;;=3^War Op Inv Explosion/Fragments,Unspec,Milt,Sequela
- ;;^UTILITY(U,$J,358.3,14721,1,4,0)
- ;;=4^Y36.200S
- ;;^UTILITY(U,$J,358.3,14721,2)
- ;;=^5061609
- ;;^UTILITY(U,$J,358.3,14722,0)
- ;;=Y36.300S^^53^612^120
- ;;^UTILITY(U,$J,358.3,14722,1,0)
+ ;;^UTILITY(U,$J,358.3,41240,1,3,0)
+ ;;=3^Vitreous Degeneration (PVD),Right Eye
+ ;;^UTILITY(U,$J,358.3,41240,1,4,0)
+ ;;=4^H43.811
+ ;;^UTILITY(U,$J,358.3,41240,2)
+ ;;=^5005953
+ ;;^UTILITY(U,$J,358.3,41241,0)
+ ;;=H43.13^^121^1770^9
+ ;;^UTILITY(U,$J,358.3,41241,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14722,1,3,0)
- ;;=3^War Op Inv Fire/Conflagr/Hot Subst,Unspec,Milt,Sequela
- ;;^UTILITY(U,$J,358.3,14722,1,4,0)
- ;;=4^Y36.300S
- ;;^UTILITY(U,$J,358.3,14722,2)
- ;;=^5061663
- ;;^UTILITY(U,$J,358.3,14723,0)
- ;;=Y36.230A^^53^612^116
- ;;^UTILITY(U,$J,358.3,14723,1,0)
+ ;;^UTILITY(U,$J,358.3,41241,1,3,0)
+ ;;=3^Vitreous Hemorrhage,Bilateral
+ ;;^UTILITY(U,$J,358.3,41241,1,4,0)
+ ;;=4^H43.13
+ ;;^UTILITY(U,$J,358.3,41241,2)
+ ;;=^5005940
+ ;;^UTILITY(U,$J,358.3,41242,0)
+ ;;=H43.821^^121^1770^10
+ ;;^UTILITY(U,$J,358.3,41242,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14723,1,3,0)
- ;;=3^War Op Inv Explosion of IED,Milt Pers,Init Encntr
- ;;^UTILITY(U,$J,358.3,14723,1,4,0)
- ;;=4^Y36.230A
- ;;^UTILITY(U,$J,358.3,14723,2)
- ;;=^5061625
- ;;^UTILITY(U,$J,358.3,14724,0)
- ;;=Y36.230D^^53^612^117
- ;;^UTILITY(U,$J,358.3,14724,1,0)
+ ;;^UTILITY(U,$J,358.3,41242,1,3,0)
+ ;;=3^Vitreomacular Adhesion,Right Eye
+ ;;^UTILITY(U,$J,358.3,41242,1,4,0)
+ ;;=4^H43.821
+ ;;^UTILITY(U,$J,358.3,41242,2)
+ ;;=^5005957
+ ;;^UTILITY(U,$J,358.3,41243,0)
+ ;;=H43.822^^121^1770^11
+ ;;^UTILITY(U,$J,358.3,41243,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14724,1,3,0)
- ;;=3^War Op Inv Explosion of IED,Milt Pers,Subs Encntr
- ;;^UTILITY(U,$J,358.3,14724,1,4,0)
- ;;=4^Y36.230D
- ;;^UTILITY(U,$J,358.3,14724,2)
- ;;=^5061626
- ;;^UTILITY(U,$J,358.3,14725,0)
- ;;=Y36.230S^^53^612^118
- ;;^UTILITY(U,$J,358.3,14725,1,0)
+ ;;^UTILITY(U,$J,358.3,41243,1,3,0)
+ ;;=3^Vitreomacular Adhesion,Left Eye
+ ;;^UTILITY(U,$J,358.3,41243,1,4,0)
+ ;;=4^H43.822
+ ;;^UTILITY(U,$J,358.3,41243,2)
+ ;;=^5005958
+ ;;^UTILITY(U,$J,358.3,41244,0)
+ ;;=H43.823^^121^1770^12
+ ;;^UTILITY(U,$J,358.3,41244,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14725,1,3,0)
- ;;=3^War Op Inv Explosion of IED,Milt Pers,Sequela
+ ;;^UTILITY(U,$J,358.3,41244,1,3,0)
+ ;;=3^Vitreomacular Adhesion,Bilateral
+ ;;^UTILITY(U,$J,358.3,41244,1,4,0)
+ ;;=4^H43.823
+ ;;^UTILITY(U,$J,358.3,41244,2)
+ ;;=^5005959
+ ;;^UTILITY(U,$J,358.3,41245,0)
+ ;;=S05.31XA^^121^1771^1
+ ;;^UTILITY(U,$J,358.3,41245,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41245,1,3,0)
+ ;;=3^Ocular Laceration w/o Loss of Intraoc Tissue,Right Eye,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41245,1,4,0)
+ ;;=4^S05.31XA
+ ;;^UTILITY(U,$J,358.3,41245,2)
+ ;;=^5020606
+ ;;^UTILITY(U,$J,358.3,41246,0)
+ ;;=S05.32XA^^121^1771^2
+ ;;^UTILITY(U,$J,358.3,41246,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41246,1,3,0)
+ ;;=3^Ocular Laceration w/o Loss of Intraoc Tissue,Left Eye,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41246,1,4,0)
+ ;;=4^S05.32XA
+ ;;^UTILITY(U,$J,358.3,41246,2)
+ ;;=^5020609
+ ;;^UTILITY(U,$J,358.3,41247,0)
+ ;;=S01.121A^^121^1771^3
+ ;;^UTILITY(U,$J,358.3,41247,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41247,1,3,0)
+ ;;=3^Laceration w/ FB,Right Eyelid,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41247,1,4,0)
+ ;;=4^S01.121A
+ ;;^UTILITY(U,$J,358.3,41247,2)
+ ;;=^5020066
+ ;;^UTILITY(U,$J,358.3,41248,0)
+ ;;=S01.122A^^121^1771^4
+ ;;^UTILITY(U,$J,358.3,41248,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41248,1,3,0)
+ ;;=3^Laceration w/ FB,Left Eyelid,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41248,1,4,0)
+ ;;=4^S01.122A
+ ;;^UTILITY(U,$J,358.3,41248,2)
+ ;;=^5134190
+ ;;^UTILITY(U,$J,358.3,41249,0)
+ ;;=S01.111A^^121^1771^5
+ ;;^UTILITY(U,$J,358.3,41249,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41249,1,3,0)
+ ;;=3^Laceration w/o FB,Right Eyelid,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41249,1,4,0)
+ ;;=4^S01.111A
+ ;;^UTILITY(U,$J,358.3,41249,2)
+ ;;=^5020057
+ ;;^UTILITY(U,$J,358.3,41250,0)
+ ;;=S01.112A^^121^1771^6
+ ;;^UTILITY(U,$J,358.3,41250,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41250,1,3,0)
+ ;;=3^Laceration w/o FB,Left Eyelid,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41250,1,4,0)
+ ;;=4^S01.112A
+ ;;^UTILITY(U,$J,358.3,41250,2)
+ ;;=^5020060
+ ;;^UTILITY(U,$J,358.3,41251,0)
+ ;;=S01.141A^^121^1771^7
+ ;;^UTILITY(U,$J,358.3,41251,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41251,1,3,0)
+ ;;=3^Puncture Wound w/ FB,Right Eyelid,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41251,1,4,0)
+ ;;=4^S01.141A
+ ;;^UTILITY(U,$J,358.3,41251,2)
+ ;;=^5020078
+ ;;^UTILITY(U,$J,358.3,41252,0)
+ ;;=S01.142A^^121^1771^8
+ ;;^UTILITY(U,$J,358.3,41252,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41252,1,3,0)
+ ;;=3^Puncture Wound w/ FB,Left Eyelid,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41252,1,4,0)
+ ;;=4^S01.142A
+ ;;^UTILITY(U,$J,358.3,41252,2)
+ ;;=^5134196
+ ;;^UTILITY(U,$J,358.3,41253,0)
+ ;;=S01.131A^^121^1771^9
+ ;;^UTILITY(U,$J,358.3,41253,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41253,1,3,0)
+ ;;=3^Puncture Wound w/o FB,Right Eyelid,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41253,1,4,0)
+ ;;=4^S01.131A
+ ;;^UTILITY(U,$J,358.3,41253,2)
+ ;;=^5020069
+ ;;^UTILITY(U,$J,358.3,41254,0)
+ ;;=S01.132A^^121^1771^10
+ ;;^UTILITY(U,$J,358.3,41254,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41254,1,3,0)
+ ;;=3^Puncture Wound w/o FB,Left Eyelid,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41254,1,4,0)
+ ;;=4^S01.132A
+ ;;^UTILITY(U,$J,358.3,41254,2)
+ ;;=^5020072
+ ;;^UTILITY(U,$J,358.3,41255,0)
+ ;;=S05.41XA^^121^1771^11
+ ;;^UTILITY(U,$J,358.3,41255,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41255,1,3,0)
+ ;;=3^Penetrating Orbital Wound,Right Eye,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41255,1,4,0)
+ ;;=4^S05.41XA
+ ;;^UTILITY(U,$J,358.3,41255,2)
+ ;;=^5020615
+ ;;^UTILITY(U,$J,358.3,41256,0)
+ ;;=S05.42XA^^121^1771^12
+ ;;^UTILITY(U,$J,358.3,41256,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41256,1,3,0)
+ ;;=3^Penetrating Orbital Wound,Left Eye,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41256,1,4,0)
+ ;;=4^S05.42XA
+ ;;^UTILITY(U,$J,358.3,41256,2)
+ ;;=^5020618
+ ;;^UTILITY(U,$J,358.3,41257,0)
+ ;;=S02.8XXA^^121^1771^13
+ ;;^UTILITY(U,$J,358.3,41257,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41257,1,3,0)
+ ;;=3^Fx of Skull/Facial Bones,Init Encntr for Closed Fx
+ ;;^UTILITY(U,$J,358.3,41257,1,4,0)
+ ;;=4^S02.8XXA
+ ;;^UTILITY(U,$J,358.3,41257,2)
+ ;;=^5020426
+ ;;^UTILITY(U,$J,358.3,41258,0)
+ ;;=S02.3XXA^^121^1771^14
+ ;;^UTILITY(U,$J,358.3,41258,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41258,1,3,0)
+ ;;=3^Fx of Orbital Floor,Init Encntr for Closed Fx
+ ;;^UTILITY(U,$J,358.3,41258,1,4,0)
+ ;;=4^S02.3XXA
+ ;;^UTILITY(U,$J,358.3,41258,2)
+ ;;=^5020312
+ ;;^UTILITY(U,$J,358.3,41259,0)
+ ;;=S02.42XA^^121^1771^15
+ ;;^UTILITY(U,$J,358.3,41259,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41259,1,3,0)
+ ;;=3^Fx of Alveoulus of Maxilla,Init Encntr for Closed Fx
+ ;;^UTILITY(U,$J,358.3,41259,1,4,0)
+ ;;=4^S02.42XA
+ ;;^UTILITY(U,$J,358.3,41259,2)
+ ;;=^5020354
+ ;;^UTILITY(U,$J,358.3,41260,0)
+ ;;=S00.11XA^^121^1771^16
+ ;;^UTILITY(U,$J,358.3,41260,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41260,1,3,0)
+ ;;=3^Contusion,Right Eyelid,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41260,1,4,0)
+ ;;=4^S00.11XA
+ ;;^UTILITY(U,$J,358.3,41260,2)
+ ;;=^5019778
+ ;;^UTILITY(U,$J,358.3,41261,0)
+ ;;=S00.12XA^^121^1771^17
+ ;;^UTILITY(U,$J,358.3,41261,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41261,1,3,0)
+ ;;=3^Contusion,Left Eyelid,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41261,1,4,0)
+ ;;=4^S00.12XA
+ ;;^UTILITY(U,$J,358.3,41261,2)
+ ;;=^5019781
+ ;;^UTILITY(U,$J,358.3,41262,0)
+ ;;=S01.151A^^121^1771^18
+ ;;^UTILITY(U,$J,358.3,41262,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41262,1,3,0)
+ ;;=3^Open Bite,Right Eyelid,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41262,1,4,0)
+ ;;=4^S01.151A
+ ;;^UTILITY(U,$J,358.3,41262,2)
+ ;;=^5020081
+ ;;^UTILITY(U,$J,358.3,41263,0)
+ ;;=S01.152A^^121^1771^19
+ ;;^UTILITY(U,$J,358.3,41263,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41263,1,3,0)
+ ;;=3^Open Bite,Left Eyelid,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41263,1,4,0)
+ ;;=4^S01.152A
+ ;;^UTILITY(U,$J,358.3,41263,2)
+ ;;=^5020084
+ ;;^UTILITY(U,$J,358.3,41264,0)
+ ;;=H04.123^^121^1772^1
+ ;;^UTILITY(U,$J,358.3,41264,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41264,1,3,0)
+ ;;=3^Dry Eye Syndrome,Bilateral Lacrimal Glands
+ ;;^UTILITY(U,$J,358.3,41264,1,4,0)
+ ;;=4^H04.123
+ ;;^UTILITY(U,$J,358.3,41264,2)
+ ;;=^5004465
+ ;;^UTILITY(U,$J,358.3,41265,0)
+ ;;=M35.01^^121^1772^2
+ ;;^UTILITY(U,$J,358.3,41265,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41265,1,3,0)
+ ;;=3^Sicca Syndrome w/ Keratoconjunctivitis
+ ;;^UTILITY(U,$J,358.3,41265,1,4,0)
+ ;;=4^M35.01
+ ;;^UTILITY(U,$J,358.3,41265,2)
+ ;;=^5011787
+ ;;^UTILITY(U,$J,358.3,41266,0)
+ ;;=H10.503^^121^1772^3
+ ;;^UTILITY(U,$J,358.3,41266,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41266,1,3,0)
+ ;;=3^Blepharoconjunctivitis,Bilateral
+ ;;^UTILITY(U,$J,358.3,41266,1,4,0)
+ ;;=4^H10.503
+ ;;^UTILITY(U,$J,358.3,41266,2)
+ ;;=^5004699
+ ;;^UTILITY(U,$J,358.3,41267,0)
+ ;;=H01.001^^121^1772^4
+ ;;^UTILITY(U,$J,358.3,41267,1,0)
+ ;;=^358.31IA^4^2

@@ -1,6 +1,6 @@
 PSGOD ;BIR/CML3-CREATES NEW ORDER FROM OLD ONE ;22 SEP 97 / 2:56 PM 
- ;;5.0;INPATIENT MEDICATIONS;**67,58,111,133,181,286**;16 DEC 97;Build 1
- ;
+ ;;5.0;INPATIENT MEDICATIONS;**67,58,111,133,181,286,281,315**;16 DEC 97;Build 73
+ ;;Per VHA Directive 2004-038, this routine should not be modified.
  ; Reference to ^PS(55 is supported by DBIA 2191.
  ;
  ;*286 - Do not allow copied Unit Dose orders for outpatients
@@ -12,12 +12,13 @@ PSGOD ;BIR/CML3-CREATES NEW ORDER FROM OLD ONE ;22 SEP 97 / 2:56 PM
  ;
  W !!,"...copying..." N OLDON
  K PSGORQF
- N PSGPDRG
- S PSGOEPR=$P($G(^PS(55,PSGP,5.1)),"^",2),OLDON=PSGORD
- ;K PSGODN S F=$S((PSGORD["N")!(PSGORD["P"):"^PS(53.1,"_+PSGORD_",",1:"^PS(55,"_PSGP_",5,"_+PSGORD_",") F N=0,.2,2,6 S PSGODN(N)=$G(@(F_N_")"))
- K PSGODN S F=$S(PSGORD["P":"^PS(53.1,"_+PSGORD_",",1:"^PS(55,"_PSGP_",5,"_+PSGORD_",") F N=0,.2,2,6 S PSGODN(N)=$G(@(F_N_")"))
+ N PSGPDRG,Q
+ S PSGOEPR=$P($G(^PS(55,PSGP,5.1)),"^",2),OLDON=PSGORD,Q=""
+ K PSGODN S F=$S(PSGORD["P":"^PS(53.1,"_+PSGORD_",",1:"^PS(55,"_PSGP_",5,"_+PSGORD_",") F N=0,.2,2,2.1,6 S PSGODN(N)=$G(@(F_N_")"))
  S PSGPR=$P(PSGODN(0),"^",2),PSGMR=$P(PSGODN(0),"^",3),PSGSM=$P(PSGODN(0),"^",5),PSGHSM=$P(PSGODN(0),"^",6),PSGST=$P(PSGODN(0),"^",7)
  S PSGPDRG=+PSGODN(.2),PSGDO=$P(PSGODN(.2),"^",2)
+ ;*315
+ S:$G(PSGODN(2.1))]"" PSGDUR=+PSGODN(2.1),PSGRMVT=$P(PSGODN(2.1),U,2),PSGRMV=$P(PSGODN(2.1),U,3),PSGRF=$P(PSGODN(2.1),U,4)
  S PSGSI=PSGODN(6)
  ; The naked reference below refers to the full reference inside indirection to ^PS(55,PSGP,5,+PSGORD, or ^PS(55,PSGP,"IV",+PSGORD, or ^PS(53.1,+PSGORD
  S PSGODN(3)=0 F Q=0:0 S Q=$O(@(F_"3,"_Q_")")) Q:'Q  I $D(^(Q,0)) S PSGODN(3,Q)=^(0),PSGODN(3)=PSGODN(3)+1 S ^PS(53.45,PSJSYSP,1,Q,0)=^(0)
@@ -41,11 +42,14 @@ PSGOD ;BIR/CML3-CREATES NEW ORDER FROM OLD ONE ;22 SEP 97 / 2:56 PM
  S PSGSD=PSGNESD,PSGFD=PSGNEFD
  K PSJACEPT S VALMBCK="Q" D:$D(Y) EN^VALM("PSJU LM ACCEPT")
  I $G(PSJACEPT)=1 D OC S:$D(PSGORQF) PSJACEPT=0 S:$G(PSJACEPT)=1 VALMBCK="",PSJNOO=$$ENNOO^PSJUTL5("N")
- I '$G(PSJACEPT)!($G(PSJNOO)<0) W !!,"Order not copied." D PAUSE^VALM1 G ORIG
+ I '$G(PSJACEPT)!($G(PSJNOO)<0) W:'$G(PSJCOFLG) !!,"Order not copied." D PAUSE^VALM1:'$G(PSJCOFLG) G ORIG    ;PSJCOFLG set in PSODGAL1 for allergies
  S PSGNESD=PSGSD,PSGNEFD=PSGFD
  K PSGOEE D ^PSGOETO S PSJORD=PSGORD I PSGOEAV D
  .I '$D(PSGOEE),+PSJSYSU=3 D EN^PSGPEN(PSGORD)
+ .D SETOC^PSJNEWOC(PSGORD) ;RTC 178789 Store allergy if auto vf is on
  D GETUD^PSJLMGUD(PSGP,PSGORD),ENSFE^PSGOEE0(PSGP,PSGORD),^PSGOE1,EN^VALM("PSJ LM UD ACTION")
+ ;RTC 178789 - store allery if not verified the newly copied order
+ I ($G(PSGORD)["P"),($P($G(^PS(53.1,+PSGORD,0)),U,9)="N"),($G(PSJOCFG)="COPY UD") D SETOC^PSJNEWOC(PSGORD)
  ;
  S PSGCANFL=0,(PSGORD,PSJORD)=OLDON W !!,"You are finished with the new order.",!,"The following ACTION prompt is for the original order."
  K DIR S DIR(0)="E" D ^DIR K DIR

@@ -1,140 +1,48 @@
-IBDEI11K ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI11K ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
+ Q:'DIFQ(358.91)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,17681,2)
- ;;=^5000439
- ;;^UTILITY(U,$J,358.3,17682,0)
- ;;=B35.4^^76^858^59
- ;;^UTILITY(U,$J,358.3,17682,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17682,1,3,0)
- ;;=3^Dermatophytosis,Body
- ;;^UTILITY(U,$J,358.3,17682,1,4,0)
- ;;=4^B35.4
- ;;^UTILITY(U,$J,358.3,17682,2)
- ;;=^119704
- ;;^UTILITY(U,$J,358.3,17683,0)
- ;;=B35.3^^76^858^60
- ;;^UTILITY(U,$J,358.3,17683,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17683,1,3,0)
- ;;=3^Dermatophytosis,Foot
- ;;^UTILITY(U,$J,358.3,17683,1,4,0)
- ;;=4^B35.3
- ;;^UTILITY(U,$J,358.3,17683,2)
- ;;=^119732
- ;;^UTILITY(U,$J,358.3,17684,0)
- ;;=B35.1^^76^858^58
- ;;^UTILITY(U,$J,358.3,17684,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17684,1,3,0)
- ;;=3^Dermathphytosis,Nail
- ;;^UTILITY(U,$J,358.3,17684,1,4,0)
- ;;=4^B35.1
- ;;^UTILITY(U,$J,358.3,17684,2)
- ;;=^119748
- ;;^UTILITY(U,$J,358.3,17685,0)
- ;;=E11.9^^76^858^63
- ;;^UTILITY(U,$J,358.3,17685,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17685,1,3,0)
- ;;=3^Diabetes, type II controlled
- ;;^UTILITY(U,$J,358.3,17685,1,4,0)
- ;;=4^E11.9
- ;;^UTILITY(U,$J,358.3,17685,2)
- ;;=^5002666
- ;;^UTILITY(U,$J,358.3,17686,0)
- ;;=E11.65^^76^858^64
- ;;^UTILITY(U,$J,358.3,17686,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17686,1,3,0)
- ;;=3^Diabetes, type II uncontrolled
- ;;^UTILITY(U,$J,358.3,17686,1,4,0)
- ;;=4^E11.65
- ;;^UTILITY(U,$J,358.3,17686,2)
- ;;=^5002663
- ;;^UTILITY(U,$J,358.3,17687,0)
- ;;=E10.9^^76^858^62
- ;;^UTILITY(U,$J,358.3,17687,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17687,1,3,0)
- ;;=3^Diabetes, type I
- ;;^UTILITY(U,$J,358.3,17687,1,4,0)
- ;;=4^E10.9
- ;;^UTILITY(U,$J,358.3,17687,2)
- ;;=^5002626
- ;;^UTILITY(U,$J,358.3,17688,0)
- ;;=R19.7^^76^858^66
- ;;^UTILITY(U,$J,358.3,17688,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17688,1,3,0)
- ;;=3^Diarrhea, unspecified
- ;;^UTILITY(U,$J,358.3,17688,1,4,0)
- ;;=4^R19.7
- ;;^UTILITY(U,$J,358.3,17688,2)
- ;;=^5019276
- ;;^UTILITY(U,$J,358.3,17689,0)
- ;;=A09.^^76^858^65
- ;;^UTILITY(U,$J,358.3,17689,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17689,1,3,0)
- ;;=3^Diarrhea, infectious
- ;;^UTILITY(U,$J,358.3,17689,1,4,0)
- ;;=4^A09.
- ;;^UTILITY(U,$J,358.3,17689,2)
- ;;=^5000061
- ;;^UTILITY(U,$J,358.3,17690,0)
- ;;=K57.92^^76^858^68
- ;;^UTILITY(U,$J,358.3,17690,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17690,1,3,0)
- ;;=3^Diverticulitis
- ;;^UTILITY(U,$J,358.3,17690,1,4,0)
- ;;=4^K57.92
- ;;^UTILITY(U,$J,358.3,17690,2)
- ;;=^5008737
- ;;^UTILITY(U,$J,358.3,17691,0)
- ;;=R42.^^76^858^69
- ;;^UTILITY(U,$J,358.3,17691,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17691,1,3,0)
- ;;=3^Dizziness/light-headedness
- ;;^UTILITY(U,$J,358.3,17691,1,4,0)
- ;;=4^R42.
- ;;^UTILITY(U,$J,358.3,17691,2)
- ;;=^5019450
- ;;^UTILITY(U,$J,358.3,17692,0)
- ;;=G04.90^^76^858^73
- ;;^UTILITY(U,$J,358.3,17692,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17692,1,3,0)
- ;;=3^Encephalitis and encephalomyelitis, unsp
- ;;^UTILITY(U,$J,358.3,17692,1,4,0)
- ;;=4^G04.90
- ;;^UTILITY(U,$J,358.3,17692,2)
- ;;=^5003741
- ;;^UTILITY(U,$J,358.3,17693,0)
- ;;=I38.^^76^858^75
- ;;^UTILITY(U,$J,358.3,17693,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17693,1,3,0)
- ;;=3^Endocarditis
- ;;^UTILITY(U,$J,358.3,17693,1,4,0)
- ;;=4^I38.
- ;;^UTILITY(U,$J,358.3,17693,2)
- ;;=^40327
- ;;^UTILITY(U,$J,358.3,17694,0)
- ;;=T82.6XXA^^76^858^76
- ;;^UTILITY(U,$J,358.3,17694,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,17694,1,3,0)
- ;;=3^Endocarditis, prosthetic valve
- ;;^UTILITY(U,$J,358.3,17694,1,4,0)
- ;;=4^T82.6XXA
- ;;^UTILITY(U,$J,358.3,17694,2)
- ;;=^5054908
- ;;^UTILITY(U,$J,358.3,17695,0)
- ;;=N45.1^^76^858^79
- ;;^UTILITY(U,$J,358.3,17695,1,0)
- ;;=^358.31IA^4^2
+ ;;^DIC(358.91,0,"GL")
+ ;;=^IBE(358.91,
+ ;;^DIC("B","IMP/EXP MARKING AREA",358.91)
+ ;;=
+ ;;^DIC(358.91,"%D",0)
+ ;;=^^4^4^2940217^
+ ;;^DIC(358.91,"%D",1,0)
+ ;;= 
+ ;;^DIC(358.91,"%D",2,0)
+ ;;=This file is nearly identical to file #357.91. It is used by the
+ ;;^DIC(358.91,"%D",3,0)
+ ;;=Import/Export Utility as a temporary staging area for data from that file
+ ;;^DIC(358.91,"%D",4,0)
+ ;;=that is being imported or exported.
+ ;;^DD(358.91,0)
+ ;;=FIELD^^.04^4
+ ;;^DD(358.91,0,"DDA")
+ ;;=N
+ ;;^DD(358.91,0,"DT")
+ ;;=2960123
+ ;;^DD(358.91,0,"IX","B",358.91,.01)
+ ;;=
+ ;;^DD(358.91,0,"NM","IMP/EXP MARKING AREA")
+ ;;=
+ ;;^DD(358.91,0,"PT",358.22,.06)
+ ;;=
+ ;;^DD(358.91,0,"VRPK")
+ ;;=IBD
+ ;;^DD(358.91,.01,0)
+ ;;=NAME^RFX^^0;1^K:$L(X)>30 X
+ ;;^DD(358.91,.01,1,0)
+ ;;=^.1
+ ;;^DD(358.91,.01,1,1,0)
+ ;;=358.91^B
+ ;;^DD(358.91,.01,1,1,1)
+ ;;=S ^IBE(358.91,"B",$E(X,1,30),DA)=""
+ ;;^DD(358.91,.01,1,1,2)
+ ;;=K ^IBE(358.91,"B",$E(X,1,30),DA)
+ ;;^DD(358.91,.01,3)
+ ;;=NAME MUST BE UNDER 31 CHARACTERS
+ ;;^DD(358.91,.01,21,0)
+ ;;=^^1^1^2930608^
+ ;;^DD(358.91,.01,21,1,0)
+ ;;=The name should describe the appearance of the marking area on the form.

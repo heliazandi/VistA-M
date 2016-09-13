@@ -1,126 +1,360 @@
-IBDEI0WU ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0WU ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,15408,2)
- ;;=^5003806
- ;;^UTILITY(U,$J,358.3,15409,0)
- ;;=B20.^^58^662^18
- ;;^UTILITY(U,$J,358.3,15409,1,0)
+ ;;^UTILITY(U,$J,358.3,43103,1,4,0)
+ ;;=4^Z89.512
+ ;;^UTILITY(U,$J,358.3,43103,2)
+ ;;=^5063567
+ ;;^UTILITY(U,$J,358.3,43104,0)
+ ;;=Z89.611^^127^1856^7
+ ;;^UTILITY(U,$J,358.3,43104,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15409,1,3,0)
- ;;=3^HIV Disease w/ Dementia w/ Behavioral Disturbances
- ;;^UTILITY(U,$J,358.3,15409,1,4,0)
- ;;=4^B20.
- ;;^UTILITY(U,$J,358.3,15409,2)
- ;;=^5000555^F02.81
- ;;^UTILITY(U,$J,358.3,15410,0)
- ;;=B20.^^58^662^19
- ;;^UTILITY(U,$J,358.3,15410,1,0)
+ ;;^UTILITY(U,$J,358.3,43104,1,3,0)
+ ;;=3^Acquired Absence of Right Leg Above Knee
+ ;;^UTILITY(U,$J,358.3,43104,1,4,0)
+ ;;=4^Z89.611
+ ;;^UTILITY(U,$J,358.3,43104,2)
+ ;;=^5063572
+ ;;^UTILITY(U,$J,358.3,43105,0)
+ ;;=Z89.612^^127^1856^4
+ ;;^UTILITY(U,$J,358.3,43105,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15410,1,3,0)
- ;;=3^HIV Disease w/ Dementia w/o Behavioral Disturbances
- ;;^UTILITY(U,$J,358.3,15410,1,4,0)
- ;;=4^B20.
- ;;^UTILITY(U,$J,358.3,15410,2)
- ;;=^5000555^F02.80
- ;;^UTILITY(U,$J,358.3,15411,0)
- ;;=G10.^^58^662^20
- ;;^UTILITY(U,$J,358.3,15411,1,0)
+ ;;^UTILITY(U,$J,358.3,43105,1,3,0)
+ ;;=3^Acquired Absence of Left Leg Above Knee
+ ;;^UTILITY(U,$J,358.3,43105,1,4,0)
+ ;;=4^Z89.612
+ ;;^UTILITY(U,$J,358.3,43105,2)
+ ;;=^5063573
+ ;;^UTILITY(U,$J,358.3,43106,0)
+ ;;=Z90.710^^127^1856^1
+ ;;^UTILITY(U,$J,358.3,43106,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15411,1,3,0)
- ;;=3^Huntington's Disease w/ Dementia w/ Behavioral Disturbances
- ;;^UTILITY(U,$J,358.3,15411,1,4,0)
- ;;=4^G10.
- ;;^UTILITY(U,$J,358.3,15411,2)
- ;;=^5003751^F02.81
- ;;^UTILITY(U,$J,358.3,15412,0)
- ;;=G10.^^58^662^21
- ;;^UTILITY(U,$J,358.3,15412,1,0)
+ ;;^UTILITY(U,$J,358.3,43106,1,3,0)
+ ;;=3^Acquired Absence of Cervix & Uterus
+ ;;^UTILITY(U,$J,358.3,43106,1,4,0)
+ ;;=4^Z90.710
+ ;;^UTILITY(U,$J,358.3,43106,2)
+ ;;=^5063591
+ ;;^UTILITY(U,$J,358.3,43107,0)
+ ;;=Z91.030^^127^1856^13
+ ;;^UTILITY(U,$J,358.3,43107,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15412,1,3,0)
- ;;=3^Huntington's Disease w/ Dementia w/o Behavioral Disturbances
- ;;^UTILITY(U,$J,358.3,15412,1,4,0)
- ;;=4^G10.
- ;;^UTILITY(U,$J,358.3,15412,2)
- ;;=^5003751^F02.80
- ;;^UTILITY(U,$J,358.3,15413,0)
- ;;=G90.3^^58^662^25
- ;;^UTILITY(U,$J,358.3,15413,1,0)
+ ;;^UTILITY(U,$J,358.3,43107,1,3,0)
+ ;;=3^Bee Allergy
+ ;;^UTILITY(U,$J,358.3,43107,1,4,0)
+ ;;=4^Z91.030
+ ;;^UTILITY(U,$J,358.3,43107,2)
+ ;;=^5063605
+ ;;^UTILITY(U,$J,358.3,43108,0)
+ ;;=Z91.038^^127^1856^59
+ ;;^UTILITY(U,$J,358.3,43108,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15413,1,3,0)
- ;;=3^Multi-System Degeneration of the Autonomic Nervous System
- ;;^UTILITY(U,$J,358.3,15413,1,4,0)
- ;;=4^G90.3
- ;;^UTILITY(U,$J,358.3,15413,2)
- ;;=^5004162
- ;;^UTILITY(U,$J,358.3,15414,0)
- ;;=G91.2^^58^662^26
- ;;^UTILITY(U,$J,358.3,15414,1,0)
+ ;;^UTILITY(U,$J,358.3,43108,1,3,0)
+ ;;=3^Insect Allergy NEC
+ ;;^UTILITY(U,$J,358.3,43108,1,4,0)
+ ;;=4^Z91.038
+ ;;^UTILITY(U,$J,358.3,43108,2)
+ ;;=^5063606
+ ;;^UTILITY(U,$J,358.3,43109,0)
+ ;;=Z91.041^^127^1856^139
+ ;;^UTILITY(U,$J,358.3,43109,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15414,1,3,0)
- ;;=3^NPH w/ Dementia w/ Behavioral Disturbances
- ;;^UTILITY(U,$J,358.3,15414,1,4,0)
- ;;=4^G91.2
- ;;^UTILITY(U,$J,358.3,15414,2)
- ;;=^5004174^F02.81
- ;;^UTILITY(U,$J,358.3,15415,0)
- ;;=G91.2^^58^662^27
- ;;^UTILITY(U,$J,358.3,15415,1,0)
+ ;;^UTILITY(U,$J,358.3,43109,1,3,0)
+ ;;=3^Radiographic Dye Allergy
+ ;;^UTILITY(U,$J,358.3,43109,1,4,0)
+ ;;=4^Z91.041
+ ;;^UTILITY(U,$J,358.3,43109,2)
+ ;;=^5063608
+ ;;^UTILITY(U,$J,358.3,43110,0)
+ ;;=Z91.130^^127^1856^146
+ ;;^UTILITY(U,$J,358.3,43110,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15415,1,3,0)
- ;;=3^NPH w/ Dementia w/o Behavorial Disturbances
- ;;^UTILITY(U,$J,358.3,15415,1,4,0)
- ;;=4^G91.2
- ;;^UTILITY(U,$J,358.3,15415,2)
- ;;=^5004174^F02.80
- ;;^UTILITY(U,$J,358.3,15416,0)
- ;;=G30.8^^58^662^2
- ;;^UTILITY(U,$J,358.3,15416,1,0)
+ ;;^UTILITY(U,$J,358.3,43110,1,3,0)
+ ;;=3^Underdose of Med Regiment d/t Age-Related Debility
+ ;;^UTILITY(U,$J,358.3,43110,1,4,0)
+ ;;=4^Z91.130
+ ;;^UTILITY(U,$J,358.3,43110,2)
+ ;;=^5063614
+ ;;^UTILITY(U,$J,358.3,43111,0)
+ ;;=Z91.138^^127^1856^147
+ ;;^UTILITY(U,$J,358.3,43111,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15416,1,3,0)
- ;;=3^Alzheimer's Disease NEC
- ;;^UTILITY(U,$J,358.3,15416,1,4,0)
- ;;=4^G30.8
- ;;^UTILITY(U,$J,358.3,15416,2)
- ;;=^5003807
- ;;^UTILITY(U,$J,358.3,15417,0)
- ;;=A81.89^^58^662^6
- ;;^UTILITY(U,$J,358.3,15417,1,0)
+ ;;^UTILITY(U,$J,358.3,43111,1,3,0)
+ ;;=3^Underdose of Med Regiment for Other Reason
+ ;;^UTILITY(U,$J,358.3,43111,1,4,0)
+ ;;=4^Z91.138
+ ;;^UTILITY(U,$J,358.3,43111,2)
+ ;;=^5063615
+ ;;^UTILITY(U,$J,358.3,43112,0)
+ ;;=Z91.14^^127^1856^71
+ ;;^UTILITY(U,$J,358.3,43112,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15417,1,3,0)
- ;;=3^Atypical Virus Infections of CNS NEC
- ;;^UTILITY(U,$J,358.3,15417,1,4,0)
- ;;=4^A81.89
- ;;^UTILITY(U,$J,358.3,15417,2)
- ;;=^5000413
- ;;^UTILITY(U,$J,358.3,15418,0)
- ;;=F19.97^^58^662^35
- ;;^UTILITY(U,$J,358.3,15418,1,0)
+ ;;^UTILITY(U,$J,358.3,43112,1,3,0)
+ ;;=3^Noncompliance w/ Medication Regimen
+ ;;^UTILITY(U,$J,358.3,43112,1,4,0)
+ ;;=4^Z91.14
+ ;;^UTILITY(U,$J,358.3,43112,2)
+ ;;=^5063616
+ ;;^UTILITY(U,$J,358.3,43113,0)
+ ;;=Z91.19^^127^1856^70
+ ;;^UTILITY(U,$J,358.3,43113,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15418,1,3,0)
- ;;=3^Psychoactive Substance Use w/ Persisting Dementia NEC
- ;;^UTILITY(U,$J,358.3,15418,1,4,0)
- ;;=4^F19.97
- ;;^UTILITY(U,$J,358.3,15418,2)
- ;;=^5003465
- ;;^UTILITY(U,$J,358.3,15419,0)
- ;;=G20.^^58^662^28
- ;;^UTILITY(U,$J,358.3,15419,1,0)
+ ;;^UTILITY(U,$J,358.3,43113,1,3,0)
+ ;;=3^Noncompliance w/ Medical Treatment & Regimen
+ ;;^UTILITY(U,$J,358.3,43113,1,4,0)
+ ;;=4^Z91.19
+ ;;^UTILITY(U,$J,358.3,43113,2)
+ ;;=^5063618
+ ;;^UTILITY(U,$J,358.3,43114,0)
+ ;;=Z93.1^^127^1856^52
+ ;;^UTILITY(U,$J,358.3,43114,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15419,1,3,0)
- ;;=3^Parkinson's Disease w/ Dementia w/ Behavioral Disturbances
- ;;^UTILITY(U,$J,358.3,15419,1,4,0)
- ;;=4^G20.
- ;;^UTILITY(U,$J,358.3,15419,2)
- ;;=^5003770^F02.81
- ;;^UTILITY(U,$J,358.3,15420,0)
- ;;=G20.^^58^662^29
- ;;^UTILITY(U,$J,358.3,15420,1,0)
+ ;;^UTILITY(U,$J,358.3,43114,1,3,0)
+ ;;=3^Gastrostomy Status
+ ;;^UTILITY(U,$J,358.3,43114,1,4,0)
+ ;;=4^Z93.1
+ ;;^UTILITY(U,$J,358.3,43114,2)
+ ;;=^5063643
+ ;;^UTILITY(U,$J,358.3,43115,0)
+ ;;=Z93.2^^127^1856^58
+ ;;^UTILITY(U,$J,358.3,43115,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,15420,1,3,0)
- ;;=3^Parkinson's Disease w/ Dementia w/o Behavioral Disturbances
- ;;^UTILITY(U,$J,358.3,15420,1,4,0)
- ;;=4^G20.
- ;;^UTILITY(U,$J,358.3,15420,2)
- ;;=^5003770^F02.80
+ ;;^UTILITY(U,$J,358.3,43115,1,3,0)
+ ;;=3^Ileostomy Status
+ ;;^UTILITY(U,$J,358.3,43115,1,4,0)
+ ;;=4^Z93.2
+ ;;^UTILITY(U,$J,358.3,43115,2)
+ ;;=^5063644
+ ;;^UTILITY(U,$J,358.3,43116,0)
+ ;;=Z93.3^^127^1856^15
+ ;;^UTILITY(U,$J,358.3,43116,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43116,1,3,0)
+ ;;=3^Colostomy Status
+ ;;^UTILITY(U,$J,358.3,43116,1,4,0)
+ ;;=4^Z93.3
+ ;;^UTILITY(U,$J,358.3,43116,2)
+ ;;=^5063645
+ ;;^UTILITY(U,$J,358.3,43117,0)
+ ;;=Z94.0^^127^1856^63
+ ;;^UTILITY(U,$J,358.3,43117,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43117,1,3,0)
+ ;;=3^Kidney Transplant Status
+ ;;^UTILITY(U,$J,358.3,43117,1,4,0)
+ ;;=4^Z94.0
+ ;;^UTILITY(U,$J,358.3,43117,2)
+ ;;=^5063654
+ ;;^UTILITY(U,$J,358.3,43118,0)
+ ;;=Z94.1^^127^1856^56
+ ;;^UTILITY(U,$J,358.3,43118,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43118,1,3,0)
+ ;;=3^Heart Transplant Status
+ ;;^UTILITY(U,$J,358.3,43118,1,4,0)
+ ;;=4^Z94.1
+ ;;^UTILITY(U,$J,358.3,43118,2)
+ ;;=^5063655
+ ;;^UTILITY(U,$J,358.3,43119,0)
+ ;;=Z94.2^^127^1856^66
+ ;;^UTILITY(U,$J,358.3,43119,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43119,1,3,0)
+ ;;=3^Lung Transplant Status
+ ;;^UTILITY(U,$J,358.3,43119,1,4,0)
+ ;;=4^Z94.2
+ ;;^UTILITY(U,$J,358.3,43119,2)
+ ;;=^5063656
+ ;;^UTILITY(U,$J,358.3,43120,0)
+ ;;=Z94.3^^127^1856^55
+ ;;^UTILITY(U,$J,358.3,43120,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43120,1,3,0)
+ ;;=3^Heart & Lungs Transplant Status
+ ;;^UTILITY(U,$J,358.3,43120,1,4,0)
+ ;;=4^Z94.3
+ ;;^UTILITY(U,$J,358.3,43120,2)
+ ;;=^5063657
+ ;;^UTILITY(U,$J,358.3,43121,0)
+ ;;=Z94.4^^127^1856^65
+ ;;^UTILITY(U,$J,358.3,43121,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43121,1,3,0)
+ ;;=3^Liver Transplant Status
+ ;;^UTILITY(U,$J,358.3,43121,1,4,0)
+ ;;=4^Z94.4
+ ;;^UTILITY(U,$J,358.3,43121,2)
+ ;;=^5063658
+ ;;^UTILITY(U,$J,358.3,43122,0)
+ ;;=Z94.84^^127^1856^143
+ ;;^UTILITY(U,$J,358.3,43122,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43122,1,3,0)
+ ;;=3^Stem Cell Transplant Status
+ ;;^UTILITY(U,$J,358.3,43122,1,4,0)
+ ;;=4^Z94.84
+ ;;^UTILITY(U,$J,358.3,43122,2)
+ ;;=^5063665
+ ;;^UTILITY(U,$J,358.3,43123,0)
+ ;;=Z96.21^^127^1856^14
+ ;;^UTILITY(U,$J,358.3,43123,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43123,1,3,0)
+ ;;=3^Cochlear Implant Status
+ ;;^UTILITY(U,$J,358.3,43123,1,4,0)
+ ;;=4^Z96.21
+ ;;^UTILITY(U,$J,358.3,43123,2)
+ ;;=^5063684
+ ;;^UTILITY(U,$J,358.3,43124,0)
+ ;;=Z96.41^^127^1856^126
+ ;;^UTILITY(U,$J,358.3,43124,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43124,1,3,0)
+ ;;=3^Presence of Insulin Pump
+ ;;^UTILITY(U,$J,358.3,43124,1,4,0)
+ ;;=4^Z96.41
+ ;;^UTILITY(U,$J,358.3,43124,2)
+ ;;=^5063688
+ ;;^UTILITY(U,$J,358.3,43125,0)
+ ;;=Z96.641^^127^1856^134
+ ;;^UTILITY(U,$J,358.3,43125,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43125,1,3,0)
+ ;;=3^Presence of Right Artificial Hip Jt
+ ;;^UTILITY(U,$J,358.3,43125,1,4,0)
+ ;;=4^Z96.641
+ ;;^UTILITY(U,$J,358.3,43125,2)
+ ;;=^5063701
+ ;;^UTILITY(U,$J,358.3,43126,0)
+ ;;=Z96.642^^127^1856^129
+ ;;^UTILITY(U,$J,358.3,43126,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43126,1,3,0)
+ ;;=3^Presence of Left Artificial Hip Jt
+ ;;^UTILITY(U,$J,358.3,43126,1,4,0)
+ ;;=4^Z96.642
+ ;;^UTILITY(U,$J,358.3,43126,2)
+ ;;=^5063702
+ ;;^UTILITY(U,$J,358.3,43127,0)
+ ;;=Z96.643^^127^1856^121
+ ;;^UTILITY(U,$J,358.3,43127,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43127,1,3,0)
+ ;;=3^Presence of Artificial Hip Jt,Bilateral
+ ;;^UTILITY(U,$J,358.3,43127,1,4,0)
+ ;;=4^Z96.643
+ ;;^UTILITY(U,$J,358.3,43127,2)
+ ;;=^5063703
+ ;;^UTILITY(U,$J,358.3,43128,0)
+ ;;=Z96.651^^127^1856^135
+ ;;^UTILITY(U,$J,358.3,43128,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43128,1,3,0)
+ ;;=3^Presence of Right Artificial Knee Jt
+ ;;^UTILITY(U,$J,358.3,43128,1,4,0)
+ ;;=4^Z96.651
+ ;;^UTILITY(U,$J,358.3,43128,2)
+ ;;=^5063705
+ ;;^UTILITY(U,$J,358.3,43129,0)
+ ;;=Z96.652^^127^1856^130
+ ;;^UTILITY(U,$J,358.3,43129,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43129,1,3,0)
+ ;;=3^Presence of Left Artificial Knee Jt
+ ;;^UTILITY(U,$J,358.3,43129,1,4,0)
+ ;;=4^Z96.652
+ ;;^UTILITY(U,$J,358.3,43129,2)
+ ;;=^5063706
+ ;;^UTILITY(U,$J,358.3,43130,0)
+ ;;=Z96.653^^127^1856^122
+ ;;^UTILITY(U,$J,358.3,43130,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43130,1,3,0)
+ ;;=3^Presence of Artificial Knee Jt,Bilateral
+ ;;^UTILITY(U,$J,358.3,43130,1,4,0)
+ ;;=4^Z96.653
+ ;;^UTILITY(U,$J,358.3,43130,2)
+ ;;=^5063707
+ ;;^UTILITY(U,$J,358.3,43131,0)
+ ;;=Z96.7^^127^1856^125
+ ;;^UTILITY(U,$J,358.3,43131,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43131,1,3,0)
+ ;;=3^Presence of Bone/Tendon Implants NEC
+ ;;^UTILITY(U,$J,358.3,43131,1,4,0)
+ ;;=4^Z96.7
+ ;;^UTILITY(U,$J,358.3,43131,2)
+ ;;=^5063716
+ ;;^UTILITY(U,$J,358.3,43132,0)
+ ;;=Z97.11^^127^1856^133
+ ;;^UTILITY(U,$J,358.3,43132,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43132,1,3,0)
+ ;;=3^Presence of Right Artificial Arm
+ ;;^UTILITY(U,$J,358.3,43132,1,4,0)
+ ;;=4^Z97.11
+ ;;^UTILITY(U,$J,358.3,43132,2)
+ ;;=^5063722
+ ;;^UTILITY(U,$J,358.3,43133,0)
+ ;;=Z97.12^^127^1856^128
+ ;;^UTILITY(U,$J,358.3,43133,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43133,1,3,0)
+ ;;=3^Presence of Left Artificial Arm
+ ;;^UTILITY(U,$J,358.3,43133,1,4,0)
+ ;;=4^Z97.12
+ ;;^UTILITY(U,$J,358.3,43133,2)
+ ;;=^5063723
+ ;;^UTILITY(U,$J,358.3,43134,0)
+ ;;=Z97.13^^127^1856^136
+ ;;^UTILITY(U,$J,358.3,43134,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43134,1,3,0)
+ ;;=3^Presence of Right Artificial Leg
+ ;;^UTILITY(U,$J,358.3,43134,1,4,0)
+ ;;=4^Z97.13
+ ;;^UTILITY(U,$J,358.3,43134,2)
+ ;;=^5063724
+ ;;^UTILITY(U,$J,358.3,43135,0)
+ ;;=Z97.14^^127^1856^131
+ ;;^UTILITY(U,$J,358.3,43135,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43135,1,3,0)
+ ;;=3^Presence of Left Artificial Leg
+ ;;^UTILITY(U,$J,358.3,43135,1,4,0)
+ ;;=4^Z97.14
+ ;;^UTILITY(U,$J,358.3,43135,2)
+ ;;=^5063725
+ ;;^UTILITY(U,$J,358.3,43136,0)
+ ;;=Z97.15^^127^1856^123
+ ;;^UTILITY(U,$J,358.3,43136,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43136,1,3,0)
+ ;;=3^Presence of Bilateral Artificial Arms
+ ;;^UTILITY(U,$J,358.3,43136,1,4,0)
+ ;;=4^Z97.15
+ ;;^UTILITY(U,$J,358.3,43136,2)
+ ;;=^5063726
+ ;;^UTILITY(U,$J,358.3,43137,0)
+ ;;=Z97.16^^127^1856^124
+ ;;^UTILITY(U,$J,358.3,43137,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43137,1,3,0)
+ ;;=3^Presence of Bilateral Artificial Legs
+ ;;^UTILITY(U,$J,358.3,43137,1,4,0)
+ ;;=4^Z97.16
+ ;;^UTILITY(U,$J,358.3,43137,2)
+ ;;=^5063727
+ ;;^UTILITY(U,$J,358.3,43138,0)
+ ;;=Z98.61^^127^1856^17
+ ;;^UTILITY(U,$J,358.3,43138,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,43138,1,3,0)
+ ;;=3^Coronary Angioplasty Status
+ ;;^UTILITY(U,$J,358.3,43138,1,4,0)
+ ;;=4^Z98.61
+ ;;^UTILITY(U,$J,358.3,43138,2)
+ ;;=^5063742
+ ;;^UTILITY(U,$J,358.3,43139,0)
+ ;;=Z98.62^^127^1856^73

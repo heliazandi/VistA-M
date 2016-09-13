@@ -1,138 +1,360 @@
-IBDEI0E4 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0E4 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6492,0)
- ;;=C94.41^^30^396^16
- ;;^UTILITY(U,$J,358.3,6492,1,0)
+ ;;^UTILITY(U,$J,358.3,17822,0)
+ ;;=I25.118^^53^748^13
+ ;;^UTILITY(U,$J,358.3,17822,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6492,1,3,0)
- ;;=3^Acute Panmyelosis w/ Myelofibrosis,In Remission
- ;;^UTILITY(U,$J,358.3,6492,1,4,0)
- ;;=4^C94.41
- ;;^UTILITY(U,$J,358.3,6492,2)
- ;;=^5001844
- ;;^UTILITY(U,$J,358.3,6493,0)
- ;;=D62.^^30^396^18
- ;;^UTILITY(U,$J,358.3,6493,1,0)
+ ;;^UTILITY(U,$J,358.3,17822,1,3,0)
+ ;;=3^Athscl Hrt Disease of native Coronary Artery w/ Oth Forms Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,17822,1,4,0)
+ ;;=4^I25.118
+ ;;^UTILITY(U,$J,358.3,17822,2)
+ ;;=^5007110
+ ;;^UTILITY(U,$J,358.3,17823,0)
+ ;;=I42.6^^53^748^9
+ ;;^UTILITY(U,$J,358.3,17823,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6493,1,3,0)
- ;;=3^Acute Posthemorrhagic Anemia
- ;;^UTILITY(U,$J,358.3,6493,1,4,0)
- ;;=4^D62.
- ;;^UTILITY(U,$J,358.3,6493,2)
- ;;=^267986
- ;;^UTILITY(U,$J,358.3,6494,0)
- ;;=C92.41^^30^396^19
- ;;^UTILITY(U,$J,358.3,6494,1,0)
+ ;;^UTILITY(U,$J,358.3,17823,1,3,0)
+ ;;=3^Alcoholic Cardiomyopathy
+ ;;^UTILITY(U,$J,358.3,17823,1,4,0)
+ ;;=4^I42.6
+ ;;^UTILITY(U,$J,358.3,17823,2)
+ ;;=^5007197
+ ;;^UTILITY(U,$J,358.3,17824,0)
+ ;;=I42.0^^53^748^20
+ ;;^UTILITY(U,$J,358.3,17824,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6494,1,3,0)
- ;;=3^Acute Promyelocytic Leukemia,In Remission
- ;;^UTILITY(U,$J,358.3,6494,1,4,0)
- ;;=4^C92.41
- ;;^UTILITY(U,$J,358.3,6494,2)
- ;;=^5001802
- ;;^UTILITY(U,$J,358.3,6495,0)
- ;;=C92.40^^30^396^20
- ;;^UTILITY(U,$J,358.3,6495,1,0)
+ ;;^UTILITY(U,$J,358.3,17824,1,3,0)
+ ;;=3^Dilated Cardiomyopathy
+ ;;^UTILITY(U,$J,358.3,17824,1,4,0)
+ ;;=4^I42.0
+ ;;^UTILITY(U,$J,358.3,17824,2)
+ ;;=^5007194
+ ;;^UTILITY(U,$J,358.3,17825,0)
+ ;;=I50.21^^53^748^5
+ ;;^UTILITY(U,$J,358.3,17825,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6495,1,3,0)
- ;;=3^Acute Promyelocytic Leukemia,Not in Remission
- ;;^UTILITY(U,$J,358.3,6495,1,4,0)
- ;;=4^C92.40
- ;;^UTILITY(U,$J,358.3,6495,2)
- ;;=^5001801
- ;;^UTILITY(U,$J,358.3,6496,0)
- ;;=D56.0^^30^396^21
- ;;^UTILITY(U,$J,358.3,6496,1,0)
+ ;;^UTILITY(U,$J,358.3,17825,1,3,0)
+ ;;=3^Acute Systolic Congestive Heart Failure
+ ;;^UTILITY(U,$J,358.3,17825,1,4,0)
+ ;;=4^I50.21
+ ;;^UTILITY(U,$J,358.3,17825,2)
+ ;;=^5007240
+ ;;^UTILITY(U,$J,358.3,17826,0)
+ ;;=I50.22^^53^748^19
+ ;;^UTILITY(U,$J,358.3,17826,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6496,1,3,0)
- ;;=3^Alpha Thalassemia
- ;;^UTILITY(U,$J,358.3,6496,1,4,0)
- ;;=4^D56.0
- ;;^UTILITY(U,$J,358.3,6496,2)
- ;;=^340494
- ;;^UTILITY(U,$J,358.3,6497,0)
- ;;=D63.1^^30^396^23
- ;;^UTILITY(U,$J,358.3,6497,1,0)
+ ;;^UTILITY(U,$J,358.3,17826,1,3,0)
+ ;;=3^Chronic Systolic Congestive Heart Failure
+ ;;^UTILITY(U,$J,358.3,17826,1,4,0)
+ ;;=4^I50.22
+ ;;^UTILITY(U,$J,358.3,17826,2)
+ ;;=^5007241
+ ;;^UTILITY(U,$J,358.3,17827,0)
+ ;;=I50.23^^53^748^8
+ ;;^UTILITY(U,$J,358.3,17827,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6497,1,3,0)
- ;;=3^Anemia in Chronic Kidney Disease
- ;;^UTILITY(U,$J,358.3,6497,1,4,0)
- ;;=4^D63.1
- ;;^UTILITY(U,$J,358.3,6497,2)
- ;;=^332908
- ;;^UTILITY(U,$J,358.3,6498,0)
- ;;=D63.0^^30^396^24
- ;;^UTILITY(U,$J,358.3,6498,1,0)
+ ;;^UTILITY(U,$J,358.3,17827,1,3,0)
+ ;;=3^Acute on Chronic Systolic Congestive Heart Failure
+ ;;^UTILITY(U,$J,358.3,17827,1,4,0)
+ ;;=4^I50.23
+ ;;^UTILITY(U,$J,358.3,17827,2)
+ ;;=^5007242
+ ;;^UTILITY(U,$J,358.3,17828,0)
+ ;;=I50.31^^53^748^4
+ ;;^UTILITY(U,$J,358.3,17828,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6498,1,3,0)
- ;;=3^Anemia in Neoplastic Disease
- ;;^UTILITY(U,$J,358.3,6498,1,4,0)
- ;;=4^D63.0
- ;;^UTILITY(U,$J,358.3,6498,2)
- ;;=^321978
- ;;^UTILITY(U,$J,358.3,6499,0)
- ;;=D63.8^^30^396^22
- ;;^UTILITY(U,$J,358.3,6499,1,0)
+ ;;^UTILITY(U,$J,358.3,17828,1,3,0)
+ ;;=3^Acute Diastolic Congestive Heart Failure
+ ;;^UTILITY(U,$J,358.3,17828,1,4,0)
+ ;;=4^I50.31
+ ;;^UTILITY(U,$J,358.3,17828,2)
+ ;;=^5007244
+ ;;^UTILITY(U,$J,358.3,17829,0)
+ ;;=I50.32^^53^748^18
+ ;;^UTILITY(U,$J,358.3,17829,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6499,1,3,0)
- ;;=3^Anemia in Chronic Diseases Classified Elsewhere
- ;;^UTILITY(U,$J,358.3,6499,1,4,0)
- ;;=4^D63.8
- ;;^UTILITY(U,$J,358.3,6499,2)
- ;;=^5002343
- ;;^UTILITY(U,$J,358.3,6500,0)
- ;;=C22.3^^30^396^25
- ;;^UTILITY(U,$J,358.3,6500,1,0)
+ ;;^UTILITY(U,$J,358.3,17829,1,3,0)
+ ;;=3^Chronic Diastolic Congestive Heart Failure
+ ;;^UTILITY(U,$J,358.3,17829,1,4,0)
+ ;;=4^I50.32
+ ;;^UTILITY(U,$J,358.3,17829,2)
+ ;;=^5007245
+ ;;^UTILITY(U,$J,358.3,17830,0)
+ ;;=I50.33^^53^748^7
+ ;;^UTILITY(U,$J,358.3,17830,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6500,1,3,0)
- ;;=3^Angiosarcoma of Liver
- ;;^UTILITY(U,$J,358.3,6500,1,4,0)
- ;;=4^C22.3
- ;;^UTILITY(U,$J,358.3,6500,2)
- ;;=^5000936
- ;;^UTILITY(U,$J,358.3,6501,0)
- ;;=D61.9^^30^396^26
- ;;^UTILITY(U,$J,358.3,6501,1,0)
+ ;;^UTILITY(U,$J,358.3,17830,1,3,0)
+ ;;=3^Acute on Chronic Diastolic Congestive Heart Failure
+ ;;^UTILITY(U,$J,358.3,17830,1,4,0)
+ ;;=4^I50.33
+ ;;^UTILITY(U,$J,358.3,17830,2)
+ ;;=^5007246
+ ;;^UTILITY(U,$J,358.3,17831,0)
+ ;;=I50.41^^53^748^3
+ ;;^UTILITY(U,$J,358.3,17831,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6501,1,3,0)
- ;;=3^Aplastic Anemia,Unspec
- ;;^UTILITY(U,$J,358.3,6501,1,4,0)
- ;;=4^D61.9
- ;;^UTILITY(U,$J,358.3,6501,2)
- ;;=^5002342
- ;;^UTILITY(U,$J,358.3,6502,0)
- ;;=D56.1^^30^396^28
- ;;^UTILITY(U,$J,358.3,6502,1,0)
+ ;;^UTILITY(U,$J,358.3,17831,1,3,0)
+ ;;=3^Acute Combined Systolic & Diastolic Congestive Heart Failure
+ ;;^UTILITY(U,$J,358.3,17831,1,4,0)
+ ;;=4^I50.41
+ ;;^UTILITY(U,$J,358.3,17831,2)
+ ;;=^5007248
+ ;;^UTILITY(U,$J,358.3,17832,0)
+ ;;=I50.42^^53^748^17
+ ;;^UTILITY(U,$J,358.3,17832,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6502,1,3,0)
- ;;=3^Beta Thalassemia
- ;;^UTILITY(U,$J,358.3,6502,1,4,0)
- ;;=4^D56.1
- ;;^UTILITY(U,$J,358.3,6502,2)
- ;;=^340495
- ;;^UTILITY(U,$J,358.3,6503,0)
- ;;=C83.79^^30^396^29
- ;;^UTILITY(U,$J,358.3,6503,1,0)
+ ;;^UTILITY(U,$J,358.3,17832,1,3,0)
+ ;;=3^Chronic Combined Systolic & Diastolic Heart Failure
+ ;;^UTILITY(U,$J,358.3,17832,1,4,0)
+ ;;=4^I50.42
+ ;;^UTILITY(U,$J,358.3,17832,2)
+ ;;=^5007249
+ ;;^UTILITY(U,$J,358.3,17833,0)
+ ;;=I50.43^^53^748^6
+ ;;^UTILITY(U,$J,358.3,17833,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6503,1,3,0)
- ;;=3^Burkitt Lymphoma,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,6503,1,4,0)
- ;;=4^C83.79
- ;;^UTILITY(U,$J,358.3,6503,2)
- ;;=^5001600
- ;;^UTILITY(U,$J,358.3,6504,0)
- ;;=C83.70^^30^396^30
- ;;^UTILITY(U,$J,358.3,6504,1,0)
+ ;;^UTILITY(U,$J,358.3,17833,1,3,0)
+ ;;=3^Acute on Chronic Combined Systolic & Diastolic Heart Failure
+ ;;^UTILITY(U,$J,358.3,17833,1,4,0)
+ ;;=4^I50.43
+ ;;^UTILITY(U,$J,358.3,17833,2)
+ ;;=^5007250
+ ;;^UTILITY(U,$J,358.3,17834,0)
+ ;;=I21.3^^53^748^47
+ ;;^UTILITY(U,$J,358.3,17834,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6504,1,3,0)
- ;;=3^Burkitt Lymphoma,Unspec Site
- ;;^UTILITY(U,$J,358.3,6504,1,4,0)
- ;;=4^C83.70
- ;;^UTILITY(U,$J,358.3,6504,2)
- ;;=^5001591
- ;;^UTILITY(U,$J,358.3,6505,0)
- ;;=D09.0^^30^396^37
- ;;^UTILITY(U,$J,358.3,6505,1,0)
+ ;;^UTILITY(U,$J,358.3,17834,1,3,0)
+ ;;=3^STEMI,Unspec Site,Initial
+ ;;^UTILITY(U,$J,358.3,17834,1,4,0)
+ ;;=4^I21.3
+ ;;^UTILITY(U,$J,358.3,17834,2)
+ ;;=^5007087
+ ;;^UTILITY(U,$J,358.3,17835,0)
+ ;;=I21.4^^53^748^23
+ ;;^UTILITY(U,$J,358.3,17835,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17835,1,3,0)
+ ;;=3^NSTEMI,Initial
+ ;;^UTILITY(U,$J,358.3,17835,1,4,0)
+ ;;=4^I21.4
+ ;;^UTILITY(U,$J,358.3,17835,2)
+ ;;=^5007088
+ ;;^UTILITY(U,$J,358.3,17836,0)
+ ;;=I21.01^^53^748^42
+ ;;^UTILITY(U,$J,358.3,17836,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17836,1,3,0)
+ ;;=3^STEMI,Lt Main Coronary Artery,Initial
+ ;;^UTILITY(U,$J,358.3,17836,1,4,0)
+ ;;=4^I21.01
+ ;;^UTILITY(U,$J,358.3,17836,2)
+ ;;=^5007080
+ ;;^UTILITY(U,$J,358.3,17837,0)
+ ;;=I21.02^^53^748^40
+ ;;^UTILITY(U,$J,358.3,17837,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17837,1,3,0)
+ ;;=3^STEMI,Lt Anterior Descending Coronary Artery,Initial
+ ;;^UTILITY(U,$J,358.3,17837,1,4,0)
+ ;;=4^I21.02
+ ;;^UTILITY(U,$J,358.3,17837,2)
+ ;;=^5007081
+ ;;^UTILITY(U,$J,358.3,17838,0)
+ ;;=I21.09^^53^748^44
+ ;;^UTILITY(U,$J,358.3,17838,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17838,1,3,0)
+ ;;=3^STEMI,Oth Coronary Artery of Anterior Wall,Initial
+ ;;^UTILITY(U,$J,358.3,17838,1,4,0)
+ ;;=4^I21.09
+ ;;^UTILITY(U,$J,358.3,17838,2)
+ ;;=^5007082
+ ;;^UTILITY(U,$J,358.3,17839,0)
+ ;;=I21.11^^53^748^46
+ ;;^UTILITY(U,$J,358.3,17839,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17839,1,3,0)
+ ;;=3^STEMI,Rt Coronary Artery,Initial
+ ;;^UTILITY(U,$J,358.3,17839,1,4,0)
+ ;;=4^I21.11
+ ;;^UTILITY(U,$J,358.3,17839,2)
+ ;;=^5007083
+ ;;^UTILITY(U,$J,358.3,17840,0)
+ ;;=I21.19^^53^748^43
+ ;;^UTILITY(U,$J,358.3,17840,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17840,1,3,0)
+ ;;=3^STEMI,Oth Coronary Artery Inferior Wall,Initial
+ ;;^UTILITY(U,$J,358.3,17840,1,4,0)
+ ;;=4^I21.19
+ ;;^UTILITY(U,$J,358.3,17840,2)
+ ;;=^5007084
+ ;;^UTILITY(U,$J,358.3,17841,0)
+ ;;=I21.21^^53^748^41
+ ;;^UTILITY(U,$J,358.3,17841,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17841,1,3,0)
+ ;;=3^STEMI,Lt Circumflex Coronary Artery,Initial
+ ;;^UTILITY(U,$J,358.3,17841,1,4,0)
+ ;;=4^I21.21
+ ;;^UTILITY(U,$J,358.3,17841,2)
+ ;;=^5007085
+ ;;^UTILITY(U,$J,358.3,17842,0)
+ ;;=I21.29^^53^748^45
+ ;;^UTILITY(U,$J,358.3,17842,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17842,1,3,0)
+ ;;=3^STEMI,Oth Sites,Initial
+ ;;^UTILITY(U,$J,358.3,17842,1,4,0)
+ ;;=4^I21.29
+ ;;^UTILITY(U,$J,358.3,17842,2)
+ ;;=^5007086
+ ;;^UTILITY(U,$J,358.3,17843,0)
+ ;;=I22.0^^53^748^50
+ ;;^UTILITY(U,$J,358.3,17843,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17843,1,3,0)
+ ;;=3^Subseq STEMI of Anterior Wall
+ ;;^UTILITY(U,$J,358.3,17843,1,4,0)
+ ;;=4^I22.0
+ ;;^UTILITY(U,$J,358.3,17843,2)
+ ;;=^5007089
+ ;;^UTILITY(U,$J,358.3,17844,0)
+ ;;=I22.1^^53^748^51
+ ;;^UTILITY(U,$J,358.3,17844,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17844,1,3,0)
+ ;;=3^Subseq STEMI of Inferior Wall
+ ;;^UTILITY(U,$J,358.3,17844,1,4,0)
+ ;;=4^I22.1
+ ;;^UTILITY(U,$J,358.3,17844,2)
+ ;;=^5007090
+ ;;^UTILITY(U,$J,358.3,17845,0)
+ ;;=I22.8^^53^748^52
+ ;;^UTILITY(U,$J,358.3,17845,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17845,1,3,0)
+ ;;=3^Subseq STEMI of Oth Sites
+ ;;^UTILITY(U,$J,358.3,17845,1,4,0)
+ ;;=4^I22.8
+ ;;^UTILITY(U,$J,358.3,17845,2)
+ ;;=^5007092
+ ;;^UTILITY(U,$J,358.3,17846,0)
+ ;;=I22.9^^53^748^53
+ ;;^UTILITY(U,$J,358.3,17846,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17846,1,3,0)
+ ;;=3^Subseq STEMI of Unspec Site
+ ;;^UTILITY(U,$J,358.3,17846,1,4,0)
+ ;;=4^I22.9
+ ;;^UTILITY(U,$J,358.3,17846,2)
+ ;;=^5007093
+ ;;^UTILITY(U,$J,358.3,17847,0)
+ ;;=I22.2^^53^748^49
+ ;;^UTILITY(U,$J,358.3,17847,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17847,1,3,0)
+ ;;=3^Subseq NSTEMI
+ ;;^UTILITY(U,$J,358.3,17847,1,4,0)
+ ;;=4^I22.2
+ ;;^UTILITY(U,$J,358.3,17847,2)
+ ;;=^5007091
+ ;;^UTILITY(U,$J,358.3,17848,0)
+ ;;=I71.1^^53^748^54
+ ;;^UTILITY(U,$J,358.3,17848,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17848,1,3,0)
+ ;;=3^Thoracic Aortic Aneurysm w/ Rupture
+ ;;^UTILITY(U,$J,358.3,17848,1,4,0)
+ ;;=4^I71.1
+ ;;^UTILITY(U,$J,358.3,17848,2)
+ ;;=^5007786
+ ;;^UTILITY(U,$J,358.3,17849,0)
+ ;;=A15.0^^53^749^31
+ ;;^UTILITY(U,$J,358.3,17849,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17849,1,3,0)
+ ;;=3^Tuberculosis of Lung
+ ;;^UTILITY(U,$J,358.3,17849,1,4,0)
+ ;;=4^A15.0
+ ;;^UTILITY(U,$J,358.3,17849,2)
+ ;;=^5000062
+ ;;^UTILITY(U,$J,358.3,17850,0)
+ ;;=D86.9^^53^749^28
+ ;;^UTILITY(U,$J,358.3,17850,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17850,1,3,0)
+ ;;=3^Sarcoidosis,Unspec
+ ;;^UTILITY(U,$J,358.3,17850,1,4,0)
+ ;;=4^D86.9
+ ;;^UTILITY(U,$J,358.3,17850,2)
+ ;;=^5002454
+ ;;^UTILITY(U,$J,358.3,17851,0)
+ ;;=E88.01^^53^749^6
+ ;;^UTILITY(U,$J,358.3,17851,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17851,1,3,0)
+ ;;=3^Alpha-1 Antitrypsin Deficiency
+ ;;^UTILITY(U,$J,358.3,17851,1,4,0)
+ ;;=4^E88.01
+ ;;^UTILITY(U,$J,358.3,17851,2)
+ ;;=^331442
+ ;;^UTILITY(U,$J,358.3,17852,0)
+ ;;=J18.9^^53^749^21
+ ;;^UTILITY(U,$J,358.3,17852,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17852,1,3,0)
+ ;;=3^Pneumonia,Unspec Organism
+ ;;^UTILITY(U,$J,358.3,17852,1,4,0)
+ ;;=4^J18.9
+ ;;^UTILITY(U,$J,358.3,17852,2)
+ ;;=^95632
+ ;;^UTILITY(U,$J,358.3,17853,0)
+ ;;=J40.^^53^749^10
+ ;;^UTILITY(U,$J,358.3,17853,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17853,1,3,0)
+ ;;=3^Bronchitis
+ ;;^UTILITY(U,$J,358.3,17853,1,4,0)
+ ;;=4^J40.
+ ;;^UTILITY(U,$J,358.3,17853,2)
+ ;;=^17164
+ ;;^UTILITY(U,$J,358.3,17854,0)
+ ;;=J43.9^^53^749^17
+ ;;^UTILITY(U,$J,358.3,17854,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17854,1,3,0)
+ ;;=3^Emphysema,Unspec
+ ;;^UTILITY(U,$J,358.3,17854,1,4,0)
+ ;;=4^J43.9
+ ;;^UTILITY(U,$J,358.3,17854,2)
+ ;;=^5008238
+ ;;^UTILITY(U,$J,358.3,17855,0)
+ ;;=J45.909^^53^749^7
+ ;;^UTILITY(U,$J,358.3,17855,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17855,1,3,0)
+ ;;=3^Asthma,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,17855,1,4,0)
+ ;;=4^J45.909
+ ;;^UTILITY(U,$J,358.3,17855,2)
+ ;;=^5008256
+ ;;^UTILITY(U,$J,358.3,17856,0)
+ ;;=J47.9^^53^749^9
+ ;;^UTILITY(U,$J,358.3,17856,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17856,1,3,0)
+ ;;=3^Bronchiectasis,Uncomplicated
+ ;;^UTILITY(U,$J,358.3,17856,1,4,0)
+ ;;=4^J47.9
+ ;;^UTILITY(U,$J,358.3,17856,2)
+ ;;=^5008260
+ ;;^UTILITY(U,$J,358.3,17857,0)
+ ;;=J44.9^^53^749^11
+ ;;^UTILITY(U,$J,358.3,17857,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17857,1,3,0)
+ ;;=3^COPD,Unspec

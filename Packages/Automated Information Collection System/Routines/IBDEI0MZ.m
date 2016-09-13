@@ -1,134 +1,324 @@
-IBDEI0MZ ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0MZ ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10719,1,4,0)
- ;;=4^K50.00
- ;;^UTILITY(U,$J,358.3,10719,2)
- ;;=^5008624
- ;;^UTILITY(U,$J,358.3,10720,0)
- ;;=K92.9^^47^520^19
- ;;^UTILITY(U,$J,358.3,10720,1,0)
+ ;;^UTILITY(U,$J,358.3,29119,1,4,0)
+ ;;=4^O36.0932
+ ;;^UTILITY(U,$J,358.3,29119,2)
+ ;;=^5016884
+ ;;^UTILITY(U,$J,358.3,29120,0)
+ ;;=O36.0933^^83^1258^197
+ ;;^UTILITY(U,$J,358.3,29120,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10720,1,3,0)
- ;;=3^Digestive System Disease,Unspec
- ;;^UTILITY(U,$J,358.3,10720,1,4,0)
- ;;=4^K92.9
- ;;^UTILITY(U,$J,358.3,10720,2)
- ;;=^5008917
- ;;^UTILITY(U,$J,358.3,10721,0)
- ;;=K57.93^^47^520^22
- ;;^UTILITY(U,$J,358.3,10721,1,0)
+ ;;^UTILITY(U,$J,358.3,29120,1,3,0)
+ ;;=3^Maternal care for oth rhesus isoimmun, third tri, fetus 3
+ ;;^UTILITY(U,$J,358.3,29120,1,4,0)
+ ;;=4^O36.0933
+ ;;^UTILITY(U,$J,358.3,29120,2)
+ ;;=^5016885
+ ;;^UTILITY(U,$J,358.3,29121,0)
+ ;;=O36.0934^^83^1258^198
+ ;;^UTILITY(U,$J,358.3,29121,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10721,1,3,0)
- ;;=3^Dvtrcli of Intest w/o Perf/Abscess w/ Bleeding
- ;;^UTILITY(U,$J,358.3,10721,1,4,0)
- ;;=4^K57.93
- ;;^UTILITY(U,$J,358.3,10721,2)
- ;;=^5008738
- ;;^UTILITY(U,$J,358.3,10722,0)
- ;;=K57.92^^47^520^23
- ;;^UTILITY(U,$J,358.3,10722,1,0)
+ ;;^UTILITY(U,$J,358.3,29121,1,3,0)
+ ;;=3^Maternal care for oth rhesus isoimmun, third tri, fetus 4
+ ;;^UTILITY(U,$J,358.3,29121,1,4,0)
+ ;;=4^O36.0934
+ ;;^UTILITY(U,$J,358.3,29121,2)
+ ;;=^5016886
+ ;;^UTILITY(U,$J,358.3,29122,0)
+ ;;=O36.0935^^83^1258^199
+ ;;^UTILITY(U,$J,358.3,29122,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10722,1,3,0)
- ;;=3^Dvtrcli of Intest w/o Perf/Abscess w/o Bleeding
- ;;^UTILITY(U,$J,358.3,10722,1,4,0)
- ;;=4^K57.92
- ;;^UTILITY(U,$J,358.3,10722,2)
- ;;=^5008737
- ;;^UTILITY(U,$J,358.3,10723,0)
- ;;=K57.91^^47^520^20
- ;;^UTILITY(U,$J,358.3,10723,1,0)
+ ;;^UTILITY(U,$J,358.3,29122,1,3,0)
+ ;;=3^Maternal care for oth rhesus isoimmun, third tri, fetus 5
+ ;;^UTILITY(U,$J,358.3,29122,1,4,0)
+ ;;=4^O36.0935
+ ;;^UTILITY(U,$J,358.3,29122,2)
+ ;;=^5016887
+ ;;^UTILITY(U,$J,358.3,29123,0)
+ ;;=O36.1110^^83^1258^19
+ ;;^UTILITY(U,$J,358.3,29123,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10723,1,3,0)
- ;;=3^Dvrtclos of Intest w/o Perf/Abscess w/ Bleed
- ;;^UTILITY(U,$J,358.3,10723,1,4,0)
- ;;=4^K57.91
- ;;^UTILITY(U,$J,358.3,10723,2)
- ;;=^5008736
- ;;^UTILITY(U,$J,358.3,10724,0)
- ;;=K57.90^^47^520^21
- ;;^UTILITY(U,$J,358.3,10724,1,0)
+ ;;^UTILITY(U,$J,358.3,29123,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, first tri, unsp
+ ;;^UTILITY(U,$J,358.3,29123,1,4,0)
+ ;;=4^O36.1110
+ ;;^UTILITY(U,$J,358.3,29123,2)
+ ;;=^5016893
+ ;;^UTILITY(U,$J,358.3,29124,0)
+ ;;=O36.1111^^83^1258^20
+ ;;^UTILITY(U,$J,358.3,29124,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10724,1,3,0)
- ;;=3^Dvrtclos of Intest w/o Perf/Abscess w/o Bleed
- ;;^UTILITY(U,$J,358.3,10724,1,4,0)
- ;;=4^K57.90
- ;;^UTILITY(U,$J,358.3,10724,2)
- ;;=^5008735
- ;;^UTILITY(U,$J,358.3,10725,0)
- ;;=K30.^^47^520^24
- ;;^UTILITY(U,$J,358.3,10725,1,0)
+ ;;^UTILITY(U,$J,358.3,29124,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, first tri, fetus 1
+ ;;^UTILITY(U,$J,358.3,29124,1,4,0)
+ ;;=4^O36.1111
+ ;;^UTILITY(U,$J,358.3,29124,2)
+ ;;=^5016894
+ ;;^UTILITY(U,$J,358.3,29125,0)
+ ;;=O36.1112^^83^1258^21
+ ;;^UTILITY(U,$J,358.3,29125,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10725,1,3,0)
- ;;=3^Dyspepsia,Functional
- ;;^UTILITY(U,$J,358.3,10725,1,4,0)
- ;;=4^K30.
- ;;^UTILITY(U,$J,358.3,10725,2)
- ;;=^5008558
- ;;^UTILITY(U,$J,358.3,10726,0)
- ;;=K08.109^^47^520^25
- ;;^UTILITY(U,$J,358.3,10726,1,0)
+ ;;^UTILITY(U,$J,358.3,29125,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, first tri, fetus 2
+ ;;^UTILITY(U,$J,358.3,29125,1,4,0)
+ ;;=4^O36.1112
+ ;;^UTILITY(U,$J,358.3,29125,2)
+ ;;=^5016895
+ ;;^UTILITY(U,$J,358.3,29126,0)
+ ;;=O36.1113^^83^1258^22
+ ;;^UTILITY(U,$J,358.3,29126,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10726,1,3,0)
- ;;=3^Edentulous
- ;;^UTILITY(U,$J,358.3,10726,1,4,0)
- ;;=4^K08.109
- ;;^UTILITY(U,$J,358.3,10726,2)
- ;;=^5008410
- ;;^UTILITY(U,$J,358.3,10727,0)
- ;;=K22.9^^47^520^26
- ;;^UTILITY(U,$J,358.3,10727,1,0)
+ ;;^UTILITY(U,$J,358.3,29126,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, first tri, fetus 3
+ ;;^UTILITY(U,$J,358.3,29126,1,4,0)
+ ;;=4^O36.1113
+ ;;^UTILITY(U,$J,358.3,29126,2)
+ ;;=^5016896
+ ;;^UTILITY(U,$J,358.3,29127,0)
+ ;;=O36.1114^^83^1258^23
+ ;;^UTILITY(U,$J,358.3,29127,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10727,1,3,0)
- ;;=3^Esophagus Disease,Unspec
- ;;^UTILITY(U,$J,358.3,10727,1,4,0)
- ;;=4^K22.9
- ;;^UTILITY(U,$J,358.3,10727,2)
- ;;=^5008516
- ;;^UTILITY(U,$J,358.3,10728,0)
- ;;=R14.3^^47^520^27
- ;;^UTILITY(U,$J,358.3,10728,1,0)
+ ;;^UTILITY(U,$J,358.3,29127,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, first tri, fetus 4
+ ;;^UTILITY(U,$J,358.3,29127,1,4,0)
+ ;;=4^O36.1114
+ ;;^UTILITY(U,$J,358.3,29127,2)
+ ;;=^5016897
+ ;;^UTILITY(U,$J,358.3,29128,0)
+ ;;=O36.1115^^83^1258^24
+ ;;^UTILITY(U,$J,358.3,29128,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10728,1,3,0)
- ;;=3^Flatulence
- ;;^UTILITY(U,$J,358.3,10728,1,4,0)
- ;;=4^R14.3
- ;;^UTILITY(U,$J,358.3,10728,2)
- ;;=^5019243
- ;;^UTILITY(U,$J,358.3,10729,0)
- ;;=K81.9^^47^520^11
- ;;^UTILITY(U,$J,358.3,10729,1,0)
+ ;;^UTILITY(U,$J,358.3,29128,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, first tri, fetus 5
+ ;;^UTILITY(U,$J,358.3,29128,1,4,0)
+ ;;=4^O36.1115
+ ;;^UTILITY(U,$J,358.3,29128,2)
+ ;;=^5016898
+ ;;^UTILITY(U,$J,358.3,29129,0)
+ ;;=O36.1120^^83^1258^25
+ ;;^UTILITY(U,$J,358.3,29129,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10729,1,3,0)
- ;;=3^Cholecystitis,Unspec
- ;;^UTILITY(U,$J,358.3,10729,1,4,0)
- ;;=4^K81.9
- ;;^UTILITY(U,$J,358.3,10729,2)
- ;;=^87388
- ;;^UTILITY(U,$J,358.3,10730,0)
- ;;=K80.70^^47^520^28
- ;;^UTILITY(U,$J,358.3,10730,1,0)
+ ;;^UTILITY(U,$J,358.3,29129,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, second tri, unsp
+ ;;^UTILITY(U,$J,358.3,29129,1,4,0)
+ ;;=4^O36.1120
+ ;;^UTILITY(U,$J,358.3,29129,2)
+ ;;=^5016900
+ ;;^UTILITY(U,$J,358.3,29130,0)
+ ;;=O36.1121^^83^1258^26
+ ;;^UTILITY(U,$J,358.3,29130,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10730,1,3,0)
- ;;=3^GB & Bile Duct Calculus w/o Cholecyst or Obstruction
- ;;^UTILITY(U,$J,358.3,10730,1,4,0)
- ;;=4^K80.70
- ;;^UTILITY(U,$J,358.3,10730,2)
- ;;=^5008870
- ;;^UTILITY(U,$J,358.3,10731,0)
- ;;=K80.71^^47^520^29
- ;;^UTILITY(U,$J,358.3,10731,1,0)
+ ;;^UTILITY(U,$J,358.3,29130,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, second tri, fetus 1
+ ;;^UTILITY(U,$J,358.3,29130,1,4,0)
+ ;;=4^O36.1121
+ ;;^UTILITY(U,$J,358.3,29130,2)
+ ;;=^5016901
+ ;;^UTILITY(U,$J,358.3,29131,0)
+ ;;=O36.1122^^83^1258^27
+ ;;^UTILITY(U,$J,358.3,29131,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10731,1,3,0)
- ;;=3^GB & Bile Duct Calculus w/o Cholecyst w/ Obstruction
- ;;^UTILITY(U,$J,358.3,10731,1,4,0)
- ;;=4^K80.71
- ;;^UTILITY(U,$J,358.3,10731,2)
- ;;=^5133640
- ;;^UTILITY(U,$J,358.3,10732,0)
- ;;=K82.9^^47^520^32
- ;;^UTILITY(U,$J,358.3,10732,1,0)
+ ;;^UTILITY(U,$J,358.3,29131,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, second tri, fetus 2
+ ;;^UTILITY(U,$J,358.3,29131,1,4,0)
+ ;;=4^O36.1122
+ ;;^UTILITY(U,$J,358.3,29131,2)
+ ;;=^5016902
+ ;;^UTILITY(U,$J,358.3,29132,0)
+ ;;=O36.1123^^83^1258^28
+ ;;^UTILITY(U,$J,358.3,29132,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10732,1,3,0)
- ;;=3^Gallbladder Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,29132,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, second tri, fetus 3
+ ;;^UTILITY(U,$J,358.3,29132,1,4,0)
+ ;;=4^O36.1123
+ ;;^UTILITY(U,$J,358.3,29132,2)
+ ;;=^5016903
+ ;;^UTILITY(U,$J,358.3,29133,0)
+ ;;=O36.1124^^83^1258^29
+ ;;^UTILITY(U,$J,358.3,29133,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29133,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, second tri, fetus 4
+ ;;^UTILITY(U,$J,358.3,29133,1,4,0)
+ ;;=4^O36.1124
+ ;;^UTILITY(U,$J,358.3,29133,2)
+ ;;=^5016904
+ ;;^UTILITY(U,$J,358.3,29134,0)
+ ;;=O36.1125^^83^1258^30
+ ;;^UTILITY(U,$J,358.3,29134,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29134,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, second tri, fetus 5
+ ;;^UTILITY(U,$J,358.3,29134,1,4,0)
+ ;;=4^O36.1125
+ ;;^UTILITY(U,$J,358.3,29134,2)
+ ;;=^5016905
+ ;;^UTILITY(U,$J,358.3,29135,0)
+ ;;=O36.1130^^83^1258^31
+ ;;^UTILITY(U,$J,358.3,29135,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29135,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, third tri, unsp
+ ;;^UTILITY(U,$J,358.3,29135,1,4,0)
+ ;;=4^O36.1130
+ ;;^UTILITY(U,$J,358.3,29135,2)
+ ;;=^5016907
+ ;;^UTILITY(U,$J,358.3,29136,0)
+ ;;=O36.1131^^83^1258^32
+ ;;^UTILITY(U,$J,358.3,29136,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29136,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, third tri, fetus 1
+ ;;^UTILITY(U,$J,358.3,29136,1,4,0)
+ ;;=4^O36.1131
+ ;;^UTILITY(U,$J,358.3,29136,2)
+ ;;=^5016908
+ ;;^UTILITY(U,$J,358.3,29137,0)
+ ;;=O36.1132^^83^1258^33
+ ;;^UTILITY(U,$J,358.3,29137,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29137,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, third tri, fetus 2
+ ;;^UTILITY(U,$J,358.3,29137,1,4,0)
+ ;;=4^O36.1132
+ ;;^UTILITY(U,$J,358.3,29137,2)
+ ;;=^5016909
+ ;;^UTILITY(U,$J,358.3,29138,0)
+ ;;=O36.1133^^83^1258^34
+ ;;^UTILITY(U,$J,358.3,29138,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29138,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, third tri, fetus 3
+ ;;^UTILITY(U,$J,358.3,29138,1,4,0)
+ ;;=4^O36.1133
+ ;;^UTILITY(U,$J,358.3,29138,2)
+ ;;=^5016910
+ ;;^UTILITY(U,$J,358.3,29139,0)
+ ;;=O36.1134^^83^1258^35
+ ;;^UTILITY(U,$J,358.3,29139,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29139,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, third tri, fetus 4
+ ;;^UTILITY(U,$J,358.3,29139,1,4,0)
+ ;;=4^O36.1134
+ ;;^UTILITY(U,$J,358.3,29139,2)
+ ;;=^5016911
+ ;;^UTILITY(U,$J,358.3,29140,0)
+ ;;=O36.1135^^83^1258^36
+ ;;^UTILITY(U,$J,358.3,29140,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29140,1,3,0)
+ ;;=3^Maternal care for Anti-A sensitization, third tri, fetus 5
+ ;;^UTILITY(U,$J,358.3,29140,1,4,0)
+ ;;=4^O36.1135
+ ;;^UTILITY(U,$J,358.3,29140,2)
+ ;;=^5016912
+ ;;^UTILITY(U,$J,358.3,29141,0)
+ ;;=O36.1910^^83^1258^146
+ ;;^UTILITY(U,$J,358.3,29141,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29141,1,3,0)
+ ;;=3^Maternal care for oth isoimmun, first trimester, unsp
+ ;;^UTILITY(U,$J,358.3,29141,1,4,0)
+ ;;=4^O36.1910
+ ;;^UTILITY(U,$J,358.3,29141,2)
+ ;;=^5016919
+ ;;^UTILITY(U,$J,358.3,29142,0)
+ ;;=O36.1911^^83^1258^147
+ ;;^UTILITY(U,$J,358.3,29142,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29142,1,3,0)
+ ;;=3^Maternal care for oth isoimmun, first trimester, fetus 1
+ ;;^UTILITY(U,$J,358.3,29142,1,4,0)
+ ;;=4^O36.1911
+ ;;^UTILITY(U,$J,358.3,29142,2)
+ ;;=^5016920
+ ;;^UTILITY(U,$J,358.3,29143,0)
+ ;;=O36.1912^^83^1258^148
+ ;;^UTILITY(U,$J,358.3,29143,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29143,1,3,0)
+ ;;=3^Maternal care for oth isoimmun, first trimester, fetus 2
+ ;;^UTILITY(U,$J,358.3,29143,1,4,0)
+ ;;=4^O36.1912
+ ;;^UTILITY(U,$J,358.3,29143,2)
+ ;;=^5016921
+ ;;^UTILITY(U,$J,358.3,29144,0)
+ ;;=O36.1913^^83^1258^149
+ ;;^UTILITY(U,$J,358.3,29144,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29144,1,3,0)
+ ;;=3^Maternal care for oth isoimmun, first trimester, fetus 3
+ ;;^UTILITY(U,$J,358.3,29144,1,4,0)
+ ;;=4^O36.1913
+ ;;^UTILITY(U,$J,358.3,29144,2)
+ ;;=^5016922
+ ;;^UTILITY(U,$J,358.3,29145,0)
+ ;;=O36.1914^^83^1258^150
+ ;;^UTILITY(U,$J,358.3,29145,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29145,1,3,0)
+ ;;=3^Maternal care for oth isoimmun, first trimester, fetus 4
+ ;;^UTILITY(U,$J,358.3,29145,1,4,0)
+ ;;=4^O36.1914
+ ;;^UTILITY(U,$J,358.3,29145,2)
+ ;;=^5016923
+ ;;^UTILITY(U,$J,358.3,29146,0)
+ ;;=O36.1915^^83^1258^151
+ ;;^UTILITY(U,$J,358.3,29146,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29146,1,3,0)
+ ;;=3^Maternal care for oth isoimmun, first trimester, fetus 5
+ ;;^UTILITY(U,$J,358.3,29146,1,4,0)
+ ;;=4^O36.1915
+ ;;^UTILITY(U,$J,358.3,29146,2)
+ ;;=^5016924
+ ;;^UTILITY(U,$J,358.3,29147,0)
+ ;;=O36.1920^^83^1258^152
+ ;;^UTILITY(U,$J,358.3,29147,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29147,1,3,0)
+ ;;=3^Maternal care for oth isoimmun, second trimester, unsp
+ ;;^UTILITY(U,$J,358.3,29147,1,4,0)
+ ;;=4^O36.1920
+ ;;^UTILITY(U,$J,358.3,29147,2)
+ ;;=^5016925
+ ;;^UTILITY(U,$J,358.3,29148,0)
+ ;;=O36.1921^^83^1258^153
+ ;;^UTILITY(U,$J,358.3,29148,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29148,1,3,0)
+ ;;=3^Maternal care for oth isoimmun, second trimester, fetus 1
+ ;;^UTILITY(U,$J,358.3,29148,1,4,0)
+ ;;=4^O36.1921
+ ;;^UTILITY(U,$J,358.3,29148,2)
+ ;;=^5016926
+ ;;^UTILITY(U,$J,358.3,29149,0)
+ ;;=O36.1922^^83^1258^154
+ ;;^UTILITY(U,$J,358.3,29149,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29149,1,3,0)
+ ;;=3^Maternal care for oth isoimmun, second trimester, fetus 2
+ ;;^UTILITY(U,$J,358.3,29149,1,4,0)
+ ;;=4^O36.1922
+ ;;^UTILITY(U,$J,358.3,29149,2)
+ ;;=^5016927
+ ;;^UTILITY(U,$J,358.3,29150,0)
+ ;;=O36.1923^^83^1258^155
+ ;;^UTILITY(U,$J,358.3,29150,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29150,1,3,0)
+ ;;=3^Maternal care for oth isoimmun, second trimester, fetus 3
+ ;;^UTILITY(U,$J,358.3,29150,1,4,0)
+ ;;=4^O36.1923
+ ;;^UTILITY(U,$J,358.3,29150,2)
+ ;;=^5016928
+ ;;^UTILITY(U,$J,358.3,29151,0)
+ ;;=O36.1924^^83^1258^156
+ ;;^UTILITY(U,$J,358.3,29151,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,29151,1,3,0)
+ ;;=3^Maternal care for oth isoimmun, second trimester, fetus 4

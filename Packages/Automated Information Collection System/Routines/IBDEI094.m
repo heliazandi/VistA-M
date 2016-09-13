@@ -1,132 +1,370 @@
-IBDEI094 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI094 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3981,1,3,0)
- ;;=3^Problems Related to Adverse Discrimination/Persecution
- ;;^UTILITY(U,$J,358.3,3981,1,4,0)
- ;;=4^Z60.5
- ;;^UTILITY(U,$J,358.3,3981,2)
- ;;=^5063143
- ;;^UTILITY(U,$J,358.3,3982,0)
- ;;=Z75.3^^18^224^158
- ;;^UTILITY(U,$J,358.3,3982,1,0)
+ ;;^UTILITY(U,$J,358.3,11526,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3982,1,3,0)
- ;;=3^Problems Related to Unavailability/Inaccessibility of Health-Care Facilities
- ;;^UTILITY(U,$J,358.3,3982,1,4,0)
- ;;=4^Z75.3
- ;;^UTILITY(U,$J,358.3,3982,2)
- ;;=^5063292
- ;;^UTILITY(U,$J,358.3,3983,0)
- ;;=Z75.4^^18^224^159
- ;;^UTILITY(U,$J,358.3,3983,1,0)
+ ;;^UTILITY(U,$J,358.3,11526,1,3,0)
+ ;;=3^Calculus of Lower Urinary Tract,Unspec
+ ;;^UTILITY(U,$J,358.3,11526,1,4,0)
+ ;;=4^N21.9
+ ;;^UTILITY(U,$J,358.3,11526,2)
+ ;;=^5015613
+ ;;^UTILITY(U,$J,358.3,11527,0)
+ ;;=N20.1^^40^586^15
+ ;;^UTILITY(U,$J,358.3,11527,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3983,1,3,0)
- ;;=3^Problems Related to Unavailability/Inaccessibility of Helping Agencies
- ;;^UTILITY(U,$J,358.3,3983,1,4,0)
- ;;=4^Z75.4
- ;;^UTILITY(U,$J,358.3,3983,2)
- ;;=^5063293
- ;;^UTILITY(U,$J,358.3,3984,0)
- ;;=Z65.9^^18^224^153
- ;;^UTILITY(U,$J,358.3,3984,1,0)
+ ;;^UTILITY(U,$J,358.3,11527,1,3,0)
+ ;;=3^Calculus of Ureter
+ ;;^UTILITY(U,$J,358.3,11527,1,4,0)
+ ;;=4^N20.1
+ ;;^UTILITY(U,$J,358.3,11527,2)
+ ;;=^5015608
+ ;;^UTILITY(U,$J,358.3,11528,0)
+ ;;=N20.9^^40^586^16
+ ;;^UTILITY(U,$J,358.3,11528,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3984,1,3,0)
- ;;=3^Problems Related to Psychosocial Circumstances
- ;;^UTILITY(U,$J,358.3,3984,1,4,0)
- ;;=4^Z65.9
- ;;^UTILITY(U,$J,358.3,3984,2)
- ;;=^5063186
- ;;^UTILITY(U,$J,358.3,3985,0)
- ;;=Z75.2^^18^224^160
- ;;^UTILITY(U,$J,358.3,3985,1,0)
+ ;;^UTILITY(U,$J,358.3,11528,1,3,0)
+ ;;=3^Calculus,Urinary,Unspec
+ ;;^UTILITY(U,$J,358.3,11528,1,4,0)
+ ;;=4^N20.9
+ ;;^UTILITY(U,$J,358.3,11528,2)
+ ;;=^5015610
+ ;;^UTILITY(U,$J,358.3,11529,0)
+ ;;=Z87.410^^40^586^55
+ ;;^UTILITY(U,$J,358.3,11529,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3985,1,3,0)
- ;;=3^Problems Related to Waiting Period for Investigation/Treatment
- ;;^UTILITY(U,$J,358.3,3985,1,4,0)
- ;;=4^Z75.2
- ;;^UTILITY(U,$J,358.3,3985,2)
- ;;=^5063291
- ;;^UTILITY(U,$J,358.3,3986,0)
- ;;=Z75.5^^18^224^161
- ;;^UTILITY(U,$J,358.3,3986,1,0)
+ ;;^UTILITY(U,$J,358.3,11529,1,3,0)
+ ;;=3^Personal Hx of Cervical Dysplasia
+ ;;^UTILITY(U,$J,358.3,11529,1,4,0)
+ ;;=4^Z87.410
+ ;;^UTILITY(U,$J,358.3,11529,2)
+ ;;=^5063489
+ ;;^UTILITY(U,$J,358.3,11530,0)
+ ;;=N87.9^^40^586^17
+ ;;^UTILITY(U,$J,358.3,11530,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3986,1,3,0)
- ;;=3^Respite/Holiday Relief Care
- ;;^UTILITY(U,$J,358.3,3986,1,4,0)
- ;;=4^Z75.5
- ;;^UTILITY(U,$J,358.3,3986,2)
- ;;=^5063294
- ;;^UTILITY(U,$J,358.3,3987,0)
- ;;=R68.89^^18^224^165
- ;;^UTILITY(U,$J,358.3,3987,1,0)
+ ;;^UTILITY(U,$J,358.3,11530,1,3,0)
+ ;;=3^Cervix Uteri,Dysplasia,Unspec
+ ;;^UTILITY(U,$J,358.3,11530,1,4,0)
+ ;;=4^N87.9
+ ;;^UTILITY(U,$J,358.3,11530,2)
+ ;;=^5015877
+ ;;^UTILITY(U,$J,358.3,11531,0)
+ ;;=N86.^^40^586^18
+ ;;^UTILITY(U,$J,358.3,11531,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3987,1,3,0)
- ;;=3^Symptoms/Signs,General,Other
- ;;^UTILITY(U,$J,358.3,3987,1,4,0)
- ;;=4^R68.89
- ;;^UTILITY(U,$J,358.3,3987,2)
- ;;=^5019557
- ;;^UTILITY(U,$J,358.3,3988,0)
- ;;=Z72.0^^18^224^168
- ;;^UTILITY(U,$J,358.3,3988,1,0)
+ ;;^UTILITY(U,$J,358.3,11531,1,3,0)
+ ;;=3^Cervix Uteri,Erosion & Ectropion
+ ;;^UTILITY(U,$J,358.3,11531,1,4,0)
+ ;;=4^N86.
+ ;;^UTILITY(U,$J,358.3,11531,2)
+ ;;=^5015874
+ ;;^UTILITY(U,$J,358.3,11532,0)
+ ;;=N72.^^40^586^19
+ ;;^UTILITY(U,$J,358.3,11532,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3988,1,3,0)
- ;;=3^Tobacco Use
- ;;^UTILITY(U,$J,358.3,3988,1,4,0)
- ;;=4^Z72.0
- ;;^UTILITY(U,$J,358.3,3988,2)
- ;;=^5063255
- ;;^UTILITY(U,$J,358.3,3989,0)
- ;;=Z94.9^^18^224^169
- ;;^UTILITY(U,$J,358.3,3989,1,0)
+ ;;^UTILITY(U,$J,358.3,11532,1,3,0)
+ ;;=3^Cervix Uteri,Inflammatory Disease
+ ;;^UTILITY(U,$J,358.3,11532,1,4,0)
+ ;;=4^N72.
+ ;;^UTILITY(U,$J,358.3,11532,2)
+ ;;=^5015812
+ ;;^UTILITY(U,$J,358.3,11533,0)
+ ;;=N88.9^^40^586^20
+ ;;^UTILITY(U,$J,358.3,11533,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3989,1,3,0)
- ;;=3^Transplanted Organ/Tissue Status,Unspec
- ;;^UTILITY(U,$J,358.3,3989,1,4,0)
- ;;=4^Z94.9
- ;;^UTILITY(U,$J,358.3,3989,2)
- ;;=^5063667
- ;;^UTILITY(U,$J,358.3,3990,0)
- ;;=R76.11^^18^224^166
- ;;^UTILITY(U,$J,358.3,3990,1,0)
+ ;;^UTILITY(U,$J,358.3,11533,1,3,0)
+ ;;=3^Cervix Uteri,Noninflammatory Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,11533,1,4,0)
+ ;;=4^N88.9
+ ;;^UTILITY(U,$J,358.3,11533,2)
+ ;;=^5015884
+ ;;^UTILITY(U,$J,358.3,11534,0)
+ ;;=N30.91^^40^586^21
+ ;;^UTILITY(U,$J,358.3,11534,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3990,1,3,0)
- ;;=3^TB Skin Test,Nonspecific Reaction w/o Active Tuberculosis
- ;;^UTILITY(U,$J,358.3,3990,1,4,0)
- ;;=4^R76.11
- ;;^UTILITY(U,$J,358.3,3990,2)
- ;;=^5019570
- ;;^UTILITY(U,$J,358.3,3991,0)
- ;;=W10.9XXS^^18^225^18
- ;;^UTILITY(U,$J,358.3,3991,1,0)
+ ;;^UTILITY(U,$J,358.3,11534,1,3,0)
+ ;;=3^Cystitis w/ Hematuria,Unspec
+ ;;^UTILITY(U,$J,358.3,11534,1,4,0)
+ ;;=4^N30.91
+ ;;^UTILITY(U,$J,358.3,11534,2)
+ ;;=^5015643
+ ;;^UTILITY(U,$J,358.3,11535,0)
+ ;;=N30.90^^40^586^22
+ ;;^UTILITY(U,$J,358.3,11535,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3991,1,3,0)
- ;;=3^Fall from Stairs/Steps,Sequela
- ;;^UTILITY(U,$J,358.3,3991,1,4,0)
- ;;=4^W10.9XXS
- ;;^UTILITY(U,$J,358.3,3991,2)
- ;;=^5059594
- ;;^UTILITY(U,$J,358.3,3992,0)
- ;;=W10.0XXS^^18^225^9
- ;;^UTILITY(U,$J,358.3,3992,1,0)
+ ;;^UTILITY(U,$J,358.3,11535,1,3,0)
+ ;;=3^Cystitis w/o Hematuria,Unspec
+ ;;^UTILITY(U,$J,358.3,11535,1,4,0)
+ ;;=4^N30.90
+ ;;^UTILITY(U,$J,358.3,11535,2)
+ ;;=^5015642
+ ;;^UTILITY(U,$J,358.3,11536,0)
+ ;;=R30.0^^40^586^24
+ ;;^UTILITY(U,$J,358.3,11536,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3992,1,3,0)
- ;;=3^Fall from Escalator,Sequela
- ;;^UTILITY(U,$J,358.3,3992,1,4,0)
- ;;=4^W10.0XXS
- ;;^UTILITY(U,$J,358.3,3992,2)
- ;;=^5059582
- ;;^UTILITY(U,$J,358.3,3993,0)
- ;;=W10.2XXS^^18^225^11
- ;;^UTILITY(U,$J,358.3,3993,1,0)
+ ;;^UTILITY(U,$J,358.3,11536,1,3,0)
+ ;;=3^Dysuria
+ ;;^UTILITY(U,$J,358.3,11536,1,4,0)
+ ;;=4^R30.0
+ ;;^UTILITY(U,$J,358.3,11536,2)
+ ;;=^5019322
+ ;;^UTILITY(U,$J,358.3,11537,0)
+ ;;=N80.9^^40^586^26
+ ;;^UTILITY(U,$J,358.3,11537,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3993,1,3,0)
- ;;=3^Fall from Incline,Sequela
- ;;^UTILITY(U,$J,358.3,3993,1,4,0)
- ;;=4^W10.2XXS
- ;;^UTILITY(U,$J,358.3,3993,2)
- ;;=^5059588
- ;;^UTILITY(U,$J,358.3,3994,0)
- ;;=W10.1XXS^^18^225^17
+ ;;^UTILITY(U,$J,358.3,11537,1,3,0)
+ ;;=3^Endometriosis,Unspec
+ ;;^UTILITY(U,$J,358.3,11537,1,4,0)
+ ;;=4^N80.9
+ ;;^UTILITY(U,$J,358.3,11537,2)
+ ;;=^5015837
+ ;;^UTILITY(U,$J,358.3,11538,0)
+ ;;=N45.1^^40^586^27
+ ;;^UTILITY(U,$J,358.3,11538,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11538,1,3,0)
+ ;;=3^Epididymitis
+ ;;^UTILITY(U,$J,358.3,11538,1,4,0)
+ ;;=4^N45.1
+ ;;^UTILITY(U,$J,358.3,11538,2)
+ ;;=^41396
+ ;;^UTILITY(U,$J,358.3,11539,0)
+ ;;=N45.3^^40^586^29
+ ;;^UTILITY(U,$J,358.3,11539,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11539,1,3,0)
+ ;;=3^Epididymo-orchitis
+ ;;^UTILITY(U,$J,358.3,11539,1,4,0)
+ ;;=4^N45.3
+ ;;^UTILITY(U,$J,358.3,11539,2)
+ ;;=^5015707
+ ;;^UTILITY(U,$J,358.3,11540,0)
+ ;;=N52.9^^40^586^30
+ ;;^UTILITY(U,$J,358.3,11540,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11540,1,3,0)
+ ;;=3^Erectile Dysfunction,Male,Unspec
+ ;;^UTILITY(U,$J,358.3,11540,1,4,0)
+ ;;=4^N52.9
+ ;;^UTILITY(U,$J,358.3,11540,2)
+ ;;=^5015763
+ ;;^UTILITY(U,$J,358.3,11541,0)
+ ;;=N83.9^^40^586^31
+ ;;^UTILITY(U,$J,358.3,11541,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11541,1,3,0)
+ ;;=3^Fallopion & Broad Ligament Noninflammatory Disorder of Ovary,Unspec
+ ;;^UTILITY(U,$J,358.3,11541,1,4,0)
+ ;;=4^N83.9
+ ;;^UTILITY(U,$J,358.3,11541,2)
+ ;;=^5015865
+ ;;^UTILITY(U,$J,358.3,11542,0)
+ ;;=N82.9^^40^586^32
+ ;;^UTILITY(U,$J,358.3,11542,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11542,1,3,0)
+ ;;=3^Fistulae,Female Genital Tract,Unspec
+ ;;^UTILITY(U,$J,358.3,11542,1,4,0)
+ ;;=4^N82.9
+ ;;^UTILITY(U,$J,358.3,11542,2)
+ ;;=^5015853
+ ;;^UTILITY(U,$J,358.3,11543,0)
+ ;;=N49.9^^40^586^34
+ ;;^UTILITY(U,$J,358.3,11543,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11543,1,3,0)
+ ;;=3^Genital Organ Inflammatory Disorder,Male,Unspec
+ ;;^UTILITY(U,$J,358.3,11543,1,4,0)
+ ;;=4^N49.9
+ ;;^UTILITY(U,$J,358.3,11543,2)
+ ;;=^5015749
+ ;;^UTILITY(U,$J,358.3,11544,0)
+ ;;=N50.9^^40^586^33
+ ;;^UTILITY(U,$J,358.3,11544,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11544,1,3,0)
+ ;;=3^Genital Organ Disorder,Male,Unspec
+ ;;^UTILITY(U,$J,358.3,11544,1,4,0)
+ ;;=4^N50.9
+ ;;^UTILITY(U,$J,358.3,11544,2)
+ ;;=^5015751
+ ;;^UTILITY(U,$J,358.3,11545,0)
+ ;;=N81.10^^40^586^23
+ ;;^UTILITY(U,$J,358.3,11545,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11545,1,3,0)
+ ;;=3^Cystocele,Unspec
+ ;;^UTILITY(U,$J,358.3,11545,1,4,0)
+ ;;=4^N81.10
+ ;;^UTILITY(U,$J,358.3,11545,2)
+ ;;=^5015838
+ ;;^UTILITY(U,$J,358.3,11546,0)
+ ;;=R39.9^^40^586^35
+ ;;^UTILITY(U,$J,358.3,11546,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11546,1,3,0)
+ ;;=3^Genitourinary System,Unspec Signs/Symptoms
+ ;;^UTILITY(U,$J,358.3,11546,1,4,0)
+ ;;=4^R39.9
+ ;;^UTILITY(U,$J,358.3,11546,2)
+ ;;=^5019351
+ ;;^UTILITY(U,$J,358.3,11547,0)
+ ;;=R31.9^^40^586^36
+ ;;^UTILITY(U,$J,358.3,11547,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11547,1,3,0)
+ ;;=3^Hematuria,Unspec
+ ;;^UTILITY(U,$J,358.3,11547,1,4,0)
+ ;;=4^R31.9
+ ;;^UTILITY(U,$J,358.3,11547,2)
+ ;;=^5019328
+ ;;^UTILITY(U,$J,358.3,11548,0)
+ ;;=R39.11^^40^586^37
+ ;;^UTILITY(U,$J,358.3,11548,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11548,1,3,0)
+ ;;=3^Hesitancy of Micturition
+ ;;^UTILITY(U,$J,358.3,11548,1,4,0)
+ ;;=4^R39.11
+ ;;^UTILITY(U,$J,358.3,11548,2)
+ ;;=^5019341
+ ;;^UTILITY(U,$J,358.3,11549,0)
+ ;;=N43.3^^40^586^38
+ ;;^UTILITY(U,$J,358.3,11549,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11549,1,3,0)
+ ;;=3^Hydrocele,Unspec
+ ;;^UTILITY(U,$J,358.3,11549,1,4,0)
+ ;;=4^N43.3
+ ;;^UTILITY(U,$J,358.3,11549,2)
+ ;;=^5015700
+ ;;^UTILITY(U,$J,358.3,11550,0)
+ ;;=N95.1^^40^586^39
+ ;;^UTILITY(U,$J,358.3,11550,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11550,1,3,0)
+ ;;=3^Menopausal & Female Climacteric States
+ ;;^UTILITY(U,$J,358.3,11550,1,4,0)
+ ;;=4^N95.1
+ ;;^UTILITY(U,$J,358.3,11550,2)
+ ;;=^5015927
+ ;;^UTILITY(U,$J,358.3,11551,0)
+ ;;=N95.9^^40^586^40
+ ;;^UTILITY(U,$J,358.3,11551,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11551,1,3,0)
+ ;;=3^Menopausal & Perimenopausal Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,11551,1,4,0)
+ ;;=4^N95.9
+ ;;^UTILITY(U,$J,358.3,11551,2)
+ ;;=^5015929
+ ;;^UTILITY(U,$J,358.3,11552,0)
+ ;;=R35.1^^40^586^41
+ ;;^UTILITY(U,$J,358.3,11552,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11552,1,3,0)
+ ;;=3^Nocturia
+ ;;^UTILITY(U,$J,358.3,11552,1,4,0)
+ ;;=4^R35.1
+ ;;^UTILITY(U,$J,358.3,11552,2)
+ ;;=^5019335
+ ;;^UTILITY(U,$J,358.3,11553,0)
+ ;;=N45.2^^40^586^42
+ ;;^UTILITY(U,$J,358.3,11553,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11553,1,3,0)
+ ;;=3^Orchitis
+ ;;^UTILITY(U,$J,358.3,11553,1,4,0)
+ ;;=4^N45.2
+ ;;^UTILITY(U,$J,358.3,11553,2)
+ ;;=^86174
+ ;;^UTILITY(U,$J,358.3,11554,0)
+ ;;=N45.1^^40^586^28
+ ;;^UTILITY(U,$J,358.3,11554,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11554,1,3,0)
+ ;;=3^Epididymitis
+ ;;^UTILITY(U,$J,358.3,11554,1,4,0)
+ ;;=4^N45.1
+ ;;^UTILITY(U,$J,358.3,11554,2)
+ ;;=^41396
+ ;;^UTILITY(U,$J,358.3,11555,0)
+ ;;=R30.9^^40^586^43
+ ;;^UTILITY(U,$J,358.3,11555,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11555,1,3,0)
+ ;;=3^Painful Micturition,Unspec
+ ;;^UTILITY(U,$J,358.3,11555,1,4,0)
+ ;;=4^R30.9
+ ;;^UTILITY(U,$J,358.3,11555,2)
+ ;;=^5019324
+ ;;^UTILITY(U,$J,358.3,11556,0)
+ ;;=N73.9^^40^586^44
+ ;;^UTILITY(U,$J,358.3,11556,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11556,1,3,0)
+ ;;=3^Pelvic Inflammatory Disease,Female,Unspec
+ ;;^UTILITY(U,$J,358.3,11556,1,4,0)
+ ;;=4^N73.9
+ ;;^UTILITY(U,$J,358.3,11556,2)
+ ;;=^5015820
+ ;;^UTILITY(U,$J,358.3,11557,0)
+ ;;=N47.5^^40^586^46
+ ;;^UTILITY(U,$J,358.3,11557,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11557,1,3,0)
+ ;;=3^Penis,Adhesions of Prepuce & Glans
+ ;;^UTILITY(U,$J,358.3,11557,1,4,0)
+ ;;=4^N47.5
+ ;;^UTILITY(U,$J,358.3,11557,2)
+ ;;=^5015728
+ ;;^UTILITY(U,$J,358.3,11558,0)
+ ;;=N48.1^^40^586^47
+ ;;^UTILITY(U,$J,358.3,11558,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11558,1,3,0)
+ ;;=3^Penis,Balanitis
+ ;;^UTILITY(U,$J,358.3,11558,1,4,0)
+ ;;=4^N48.1
+ ;;^UTILITY(U,$J,358.3,11558,2)
+ ;;=^12525
+ ;;^UTILITY(U,$J,358.3,11559,0)
+ ;;=N47.6^^40^586^48
+ ;;^UTILITY(U,$J,358.3,11559,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11559,1,3,0)
+ ;;=3^Penis,Balanoposthitis
+ ;;^UTILITY(U,$J,358.3,11559,1,4,0)
+ ;;=4^N47.6
+ ;;^UTILITY(U,$J,358.3,11559,2)
+ ;;=^12530
+ ;;^UTILITY(U,$J,358.3,11560,0)
+ ;;=N48.9^^40^586^45
+ ;;^UTILITY(U,$J,358.3,11560,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11560,1,3,0)
+ ;;=3^Penis Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,11560,1,4,0)
+ ;;=4^N48.9
+ ;;^UTILITY(U,$J,358.3,11560,2)
+ ;;=^5015743
+ ;;^UTILITY(U,$J,358.3,11561,0)
+ ;;=N47.3^^40^586^49
+ ;;^UTILITY(U,$J,358.3,11561,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11561,1,3,0)
+ ;;=3^Penis,Deficient Foreskin
+ ;;^UTILITY(U,$J,358.3,11561,1,4,0)
+ ;;=4^N47.3
+ ;;^UTILITY(U,$J,358.3,11561,2)
+ ;;=^5015726
+ ;;^UTILITY(U,$J,358.3,11562,0)
+ ;;=N48.0^^40^586^50
+ ;;^UTILITY(U,$J,358.3,11562,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11562,1,3,0)
+ ;;=3^Penis,Leukoplakia
+ ;;^UTILITY(U,$J,358.3,11562,1,4,0)
+ ;;=4^N48.0

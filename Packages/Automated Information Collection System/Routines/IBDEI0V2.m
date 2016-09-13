@@ -1,124 +1,358 @@
-IBDEI0V2 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0V2 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14566,1,3,0)
- ;;=3^Coma Scale,Eyes Open,to Pain,24+ Hrs
- ;;^UTILITY(U,$J,358.3,14566,1,4,0)
- ;;=4^R40.2124
- ;;^UTILITY(U,$J,358.3,14566,2)
- ;;=^5019364
- ;;^UTILITY(U,$J,358.3,14567,0)
- ;;=R40.2211^^53^611^17
- ;;^UTILITY(U,$J,358.3,14567,1,0)
+ ;;^UTILITY(U,$J,358.3,40801,1,4,0)
+ ;;=4^C4A.22
+ ;;^UTILITY(U,$J,358.3,40801,2)
+ ;;=^5001143
+ ;;^UTILITY(U,$J,358.3,40802,0)
+ ;;=C4A.0^^119^1747^69
+ ;;^UTILITY(U,$J,358.3,40802,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14567,1,3,0)
- ;;=3^Coma Scale,Best Verbal Response,None,in the Field
- ;;^UTILITY(U,$J,358.3,14567,1,4,0)
- ;;=4^R40.2211
- ;;^UTILITY(U,$J,358.3,14567,2)
- ;;=^5019376
- ;;^UTILITY(U,$J,358.3,14568,0)
- ;;=R40.2210^^53^611^16
- ;;^UTILITY(U,$J,358.3,14568,1,0)
+ ;;^UTILITY(U,$J,358.3,40802,1,3,0)
+ ;;=3^Merkle Cell CA,Lip
+ ;;^UTILITY(U,$J,358.3,40802,1,4,0)
+ ;;=4^C4A.0
+ ;;^UTILITY(U,$J,358.3,40802,2)
+ ;;=^5001137
+ ;;^UTILITY(U,$J,358.3,40803,0)
+ ;;=C4A.21^^119^1747^74
+ ;;^UTILITY(U,$J,358.3,40803,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14568,1,3,0)
- ;;=3^Coma Scale,Best Verbal Response,None,Unspec Time
- ;;^UTILITY(U,$J,358.3,14568,1,4,0)
- ;;=4^R40.2210
- ;;^UTILITY(U,$J,358.3,14568,2)
- ;;=^5019375
- ;;^UTILITY(U,$J,358.3,14569,0)
- ;;=R40.2224^^53^611^18
- ;;^UTILITY(U,$J,358.3,14569,1,0)
+ ;;^UTILITY(U,$J,358.3,40803,1,3,0)
+ ;;=3^Merkle Cell CA,Right Ear & Ext Auricular Canal
+ ;;^UTILITY(U,$J,358.3,40803,1,4,0)
+ ;;=4^C4A.21
+ ;;^UTILITY(U,$J,358.3,40803,2)
+ ;;=^5001142
+ ;;^UTILITY(U,$J,358.3,40804,0)
+ ;;=C4A.12^^119^1747^66
+ ;;^UTILITY(U,$J,358.3,40804,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14569,1,3,0)
- ;;=3^Coma Scale,Best Verbal,Incomprehensible Words,24+ Hrs
- ;;^UTILITY(U,$J,358.3,14569,1,4,0)
- ;;=4^R40.2224
- ;;^UTILITY(U,$J,358.3,14569,2)
- ;;=^5019384
- ;;^UTILITY(U,$J,358.3,14570,0)
- ;;=R40.2223^^53^611^19
- ;;^UTILITY(U,$J,358.3,14570,1,0)
+ ;;^UTILITY(U,$J,358.3,40804,1,3,0)
+ ;;=3^Merkle Cell CA,Left Eyelid,Incl Canthus
+ ;;^UTILITY(U,$J,358.3,40804,1,4,0)
+ ;;=4^C4A.12
+ ;;^UTILITY(U,$J,358.3,40804,2)
+ ;;=^5001140
+ ;;^UTILITY(U,$J,358.3,40805,0)
+ ;;=C4A.11^^119^1747^75
+ ;;^UTILITY(U,$J,358.3,40805,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14570,1,3,0)
- ;;=3^Coma Scale,Best Verbal,Incomprehensible Words,at Hospital Admission
- ;;^UTILITY(U,$J,358.3,14570,1,4,0)
- ;;=4^R40.2223
- ;;^UTILITY(U,$J,358.3,14570,2)
- ;;=^5019383
- ;;^UTILITY(U,$J,358.3,14571,0)
- ;;=R40.2222^^53^611^20
- ;;^UTILITY(U,$J,358.3,14571,1,0)
+ ;;^UTILITY(U,$J,358.3,40805,1,3,0)
+ ;;=3^Merkle Cell CA,Right Eyelid,Incl Canthus
+ ;;^UTILITY(U,$J,358.3,40805,1,4,0)
+ ;;=4^C4A.11
+ ;;^UTILITY(U,$J,358.3,40805,2)
+ ;;=^5001139
+ ;;^UTILITY(U,$J,358.3,40806,0)
+ ;;=C4A.72^^119^1747^67
+ ;;^UTILITY(U,$J,358.3,40806,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14571,1,3,0)
- ;;=3^Coma Scale,Best Verbal,Incomprehensible Words,Emger Dept
- ;;^UTILITY(U,$J,358.3,14571,1,4,0)
- ;;=4^R40.2222
- ;;^UTILITY(U,$J,358.3,14571,2)
- ;;=^5019382
- ;;^UTILITY(U,$J,358.3,14572,0)
- ;;=R40.2221^^53^611^21
- ;;^UTILITY(U,$J,358.3,14572,1,0)
+ ;;^UTILITY(U,$J,358.3,40806,1,3,0)
+ ;;=3^Merkle Cell CA,Left Lower Limb,Incl Hip
+ ;;^UTILITY(U,$J,358.3,40806,1,4,0)
+ ;;=4^C4A.72
+ ;;^UTILITY(U,$J,358.3,40806,2)
+ ;;=^5001156
+ ;;^UTILITY(U,$J,358.3,40807,0)
+ ;;=C4A.62^^119^1747^68
+ ;;^UTILITY(U,$J,358.3,40807,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14572,1,3,0)
- ;;=3^Coma Scale,Best Verbal,Incomprehensible Words,in the Field
- ;;^UTILITY(U,$J,358.3,14572,1,4,0)
- ;;=4^R40.2221
- ;;^UTILITY(U,$J,358.3,14572,2)
- ;;=^5019381
- ;;^UTILITY(U,$J,358.3,14573,0)
- ;;=R40.2220^^53^611^22
- ;;^UTILITY(U,$J,358.3,14573,1,0)
+ ;;^UTILITY(U,$J,358.3,40807,1,3,0)
+ ;;=3^Merkle Cell CA,Left Upper Limb,Incl Shoulder
+ ;;^UTILITY(U,$J,358.3,40807,1,4,0)
+ ;;=4^C4A.62
+ ;;^UTILITY(U,$J,358.3,40807,2)
+ ;;=^5001153
+ ;;^UTILITY(U,$J,358.3,40808,0)
+ ;;=C4A.71^^119^1747^76
+ ;;^UTILITY(U,$J,358.3,40808,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14573,1,3,0)
- ;;=3^Coma Scale,Best Verbal,Incomprehensible Words,Unspec Time
- ;;^UTILITY(U,$J,358.3,14573,1,4,0)
- ;;=4^R40.2220
- ;;^UTILITY(U,$J,358.3,14573,2)
- ;;=^5019380
- ;;^UTILITY(U,$J,358.3,14574,0)
- ;;=R40.2214^^53^611^23
- ;;^UTILITY(U,$J,358.3,14574,1,0)
+ ;;^UTILITY(U,$J,358.3,40808,1,3,0)
+ ;;=3^Merkle Cell CA,Right Lower Limb,Incl Hip
+ ;;^UTILITY(U,$J,358.3,40808,1,4,0)
+ ;;=4^C4A.71
+ ;;^UTILITY(U,$J,358.3,40808,2)
+ ;;=^5001155
+ ;;^UTILITY(U,$J,358.3,40809,0)
+ ;;=C4A.61^^119^1747^77
+ ;;^UTILITY(U,$J,358.3,40809,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14574,1,3,0)
- ;;=3^Coma Scale,Best Verbal,None,24+ Hrs
- ;;^UTILITY(U,$J,358.3,14574,1,4,0)
- ;;=4^R40.2214
- ;;^UTILITY(U,$J,358.3,14574,2)
- ;;=^5019379
- ;;^UTILITY(U,$J,358.3,14575,0)
- ;;=R40.2213^^53^611^25
- ;;^UTILITY(U,$J,358.3,14575,1,0)
+ ;;^UTILITY(U,$J,358.3,40809,1,3,0)
+ ;;=3^Merkle Cell CA,Right Upper Limb,Incl Shoulder
+ ;;^UTILITY(U,$J,358.3,40809,1,4,0)
+ ;;=4^C4A.61
+ ;;^UTILITY(U,$J,358.3,40809,2)
+ ;;=^5001152
+ ;;^UTILITY(U,$J,358.3,40810,0)
+ ;;=C4A.31^^119^1747^70
+ ;;^UTILITY(U,$J,358.3,40810,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14575,1,3,0)
- ;;=3^Coma Scale,Best Verbal,None,at Hospital Admission
- ;;^UTILITY(U,$J,358.3,14575,1,4,0)
- ;;=4^R40.2213
- ;;^UTILITY(U,$J,358.3,14575,2)
- ;;=^5019378
- ;;^UTILITY(U,$J,358.3,14576,0)
- ;;=R40.2212^^53^611^24
- ;;^UTILITY(U,$J,358.3,14576,1,0)
+ ;;^UTILITY(U,$J,358.3,40810,1,3,0)
+ ;;=3^Merkle Cell CA,Nose
+ ;;^UTILITY(U,$J,358.3,40810,1,4,0)
+ ;;=4^C4A.31
+ ;;^UTILITY(U,$J,358.3,40810,2)
+ ;;=^5001145
+ ;;^UTILITY(U,$J,358.3,40811,0)
+ ;;=C4A.39^^119^1747^72
+ ;;^UTILITY(U,$J,358.3,40811,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14576,1,3,0)
- ;;=3^Coma Scale,Best Verbal,None,Emger Dept
- ;;^UTILITY(U,$J,358.3,14576,1,4,0)
- ;;=4^R40.2212
- ;;^UTILITY(U,$J,358.3,14576,2)
- ;;=^5019377
- ;;^UTILITY(U,$J,358.3,14577,0)
- ;;=R40.2344^^53^611^6
- ;;^UTILITY(U,$J,358.3,14577,1,0)
+ ;;^UTILITY(U,$J,358.3,40811,1,3,0)
+ ;;=3^Merkle Cell CA,Parts of Face,Other
+ ;;^UTILITY(U,$J,358.3,40811,1,4,0)
+ ;;=4^C4A.39
+ ;;^UTILITY(U,$J,358.3,40811,2)
+ ;;=^5001146
+ ;;^UTILITY(U,$J,358.3,40812,0)
+ ;;=C4A.59^^119^1747^73
+ ;;^UTILITY(U,$J,358.3,40812,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14577,1,3,0)
- ;;=3^Coma Scale,Best Motor Resp,Flexion Withdrawal,24+ Hrs
- ;;^UTILITY(U,$J,358.3,14577,1,4,0)
- ;;=4^R40.2344
- ;;^UTILITY(U,$J,358.3,14577,2)
- ;;=^5019419
- ;;^UTILITY(U,$J,358.3,14578,0)
- ;;=R40.2343^^53^611^7
- ;;^UTILITY(U,$J,358.3,14578,1,0)
+ ;;^UTILITY(U,$J,358.3,40812,1,3,0)
+ ;;=3^Merkle Cell CA,Parts of Trunk,Other
+ ;;^UTILITY(U,$J,358.3,40812,1,4,0)
+ ;;=4^C4A.59
+ ;;^UTILITY(U,$J,358.3,40812,2)
+ ;;=^5001150
+ ;;^UTILITY(U,$J,358.3,40813,0)
+ ;;=C4A.8^^119^1747^71
+ ;;^UTILITY(U,$J,358.3,40813,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40813,1,3,0)
+ ;;=3^Merkle Cell CA,Overlapping Sites
+ ;;^UTILITY(U,$J,358.3,40813,1,4,0)
+ ;;=4^C4A.8
+ ;;^UTILITY(U,$J,358.3,40813,2)
+ ;;=^5001157
+ ;;^UTILITY(U,$J,358.3,40814,0)
+ ;;=C4A.9^^119^1747^78
+ ;;^UTILITY(U,$J,358.3,40814,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40814,1,3,0)
+ ;;=3^Merkle Cell CA,Unspec
+ ;;^UTILITY(U,$J,358.3,40814,1,4,0)
+ ;;=4^C4A.9
+ ;;^UTILITY(U,$J,358.3,40814,2)
+ ;;=^5001158
+ ;;^UTILITY(U,$J,358.3,40815,0)
+ ;;=C84.09^^119^1747^83
+ ;;^UTILITY(U,$J,358.3,40815,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40815,1,3,0)
+ ;;=3^Mycosis Fungoides,Extranodal/Solid Organ Sites
+ ;;^UTILITY(U,$J,358.3,40815,1,4,0)
+ ;;=4^C84.09
+ ;;^UTILITY(U,$J,358.3,40815,2)
+ ;;=^5001630
+ ;;^UTILITY(U,$J,358.3,40816,0)
+ ;;=C84.03^^119^1747^86
+ ;;^UTILITY(U,$J,358.3,40816,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40816,1,3,0)
+ ;;=3^Mycosis Fungoides,Intra-Abdominal Lymph Nodes
+ ;;^UTILITY(U,$J,358.3,40816,1,4,0)
+ ;;=4^C84.03
+ ;;^UTILITY(U,$J,358.3,40816,2)
+ ;;=^5001624
+ ;;^UTILITY(U,$J,358.3,40817,0)
+ ;;=C84.06^^119^1747^87
+ ;;^UTILITY(U,$J,358.3,40817,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40817,1,3,0)
+ ;;=3^Mycosis Fungoides,Intrapelvic Lymph Nodes
+ ;;^UTILITY(U,$J,358.3,40817,1,4,0)
+ ;;=4^C84.06
+ ;;^UTILITY(U,$J,358.3,40817,2)
+ ;;=^5001627
+ ;;^UTILITY(U,$J,358.3,40818,0)
+ ;;=C84.02^^119^1747^88
+ ;;^UTILITY(U,$J,358.3,40818,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40818,1,3,0)
+ ;;=3^Mycosis Fungoides,Intrathoracic Lymph Nodes
+ ;;^UTILITY(U,$J,358.3,40818,1,4,0)
+ ;;=4^C84.02
+ ;;^UTILITY(U,$J,358.3,40818,2)
+ ;;=^5001623
+ ;;^UTILITY(U,$J,358.3,40819,0)
+ ;;=C84.04^^119^1747^82
+ ;;^UTILITY(U,$J,358.3,40819,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40819,1,3,0)
+ ;;=3^Mycosis Fungoides,Axilla/Upper Limb Lymph Nodes
+ ;;^UTILITY(U,$J,358.3,40819,1,4,0)
+ ;;=4^C84.04
+ ;;^UTILITY(U,$J,358.3,40819,2)
+ ;;=^5001625
+ ;;^UTILITY(U,$J,358.3,40820,0)
+ ;;=C84.01^^119^1747^84
+ ;;^UTILITY(U,$J,358.3,40820,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40820,1,3,0)
+ ;;=3^Mycosis Fungoides,Head/Face/Neck Lymph Nodes
+ ;;^UTILITY(U,$J,358.3,40820,1,4,0)
+ ;;=4^C84.01
+ ;;^UTILITY(U,$J,358.3,40820,2)
+ ;;=^5001622
+ ;;^UTILITY(U,$J,358.3,40821,0)
+ ;;=C84.05^^119^1747^85
+ ;;^UTILITY(U,$J,358.3,40821,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40821,1,3,0)
+ ;;=3^Mycosis Fungoides,Inguinal Region/LE Lymph Nodes
+ ;;^UTILITY(U,$J,358.3,40821,1,4,0)
+ ;;=4^C84.05
+ ;;^UTILITY(U,$J,358.3,40821,2)
+ ;;=^5001626
+ ;;^UTILITY(U,$J,358.3,40822,0)
+ ;;=C84.08^^119^1747^89
+ ;;^UTILITY(U,$J,358.3,40822,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40822,1,3,0)
+ ;;=3^Mycosis Fungoides,Multiple Site Lymph Nodes
+ ;;^UTILITY(U,$J,358.3,40822,1,4,0)
+ ;;=4^C84.08
+ ;;^UTILITY(U,$J,358.3,40822,2)
+ ;;=^5001629
+ ;;^UTILITY(U,$J,358.3,40823,0)
+ ;;=C84.07^^119^1747^90
+ ;;^UTILITY(U,$J,358.3,40823,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40823,1,3,0)
+ ;;=3^Mycosis Fungoides,Spleen
+ ;;^UTILITY(U,$J,358.3,40823,1,4,0)
+ ;;=4^C84.07
+ ;;^UTILITY(U,$J,358.3,40823,2)
+ ;;=^5001628
+ ;;^UTILITY(U,$J,358.3,40824,0)
+ ;;=C84.00^^119^1747^91
+ ;;^UTILITY(U,$J,358.3,40824,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40824,1,3,0)
+ ;;=3^Mycosis Fungoides,Unspec Site
+ ;;^UTILITY(U,$J,358.3,40824,1,4,0)
+ ;;=4^C84.00
+ ;;^UTILITY(U,$J,358.3,40824,2)
+ ;;=^5001621
+ ;;^UTILITY(U,$J,358.3,40825,0)
+ ;;=I78.1^^119^1748^8
+ ;;^UTILITY(U,$J,358.3,40825,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40825,1,3,0)
+ ;;=3^Nevus,Non-Neoplastic
+ ;;^UTILITY(U,$J,358.3,40825,1,4,0)
+ ;;=4^I78.1
+ ;;^UTILITY(U,$J,358.3,40825,2)
+ ;;=^269807
+ ;;^UTILITY(U,$J,358.3,40826,0)
+ ;;=L60.3^^119^1748^2
+ ;;^UTILITY(U,$J,358.3,40826,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40826,1,3,0)
+ ;;=3^Nail Dystrophy
+ ;;^UTILITY(U,$J,358.3,40826,1,4,0)
+ ;;=4^L60.3
+ ;;^UTILITY(U,$J,358.3,40826,2)
+ ;;=^5009236
+ ;;^UTILITY(U,$J,358.3,40827,0)
+ ;;=L92.1^^119^1748^4
+ ;;^UTILITY(U,$J,358.3,40827,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40827,1,3,0)
+ ;;=3^Necrobiosis Lipoidica NEC
+ ;;^UTILITY(U,$J,358.3,40827,1,4,0)
+ ;;=4^L92.1
+ ;;^UTILITY(U,$J,358.3,40827,2)
+ ;;=^5009462
+ ;;^UTILITY(U,$J,358.3,40828,0)
+ ;;=L20.81^^119^1748^7
+ ;;^UTILITY(U,$J,358.3,40828,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40828,1,3,0)
+ ;;=3^Neurodermatitis,Atopic
+ ;;^UTILITY(U,$J,358.3,40828,1,4,0)
+ ;;=4^L20.81
+ ;;^UTILITY(U,$J,358.3,40828,2)
+ ;;=^5009108
+ ;;^UTILITY(U,$J,358.3,40829,0)
+ ;;=D48.5^^119^1748^6
+ ;;^UTILITY(U,$J,358.3,40829,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40829,1,3,0)
+ ;;=3^Neoplasm,Skin,Uncertain Behavior
+ ;;^UTILITY(U,$J,358.3,40829,1,4,0)
+ ;;=4^D48.5
+ ;;^UTILITY(U,$J,358.3,40829,2)
+ ;;=^267777
+ ;;^UTILITY(U,$J,358.3,40830,0)
+ ;;=D49.2^^119^1748^5
+ ;;^UTILITY(U,$J,358.3,40830,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40830,1,3,0)
+ ;;=3^Neoplasm,Bone/Soft Tissue/Skin,Unspec Behavior
+ ;;^UTILITY(U,$J,358.3,40830,1,4,0)
+ ;;=4^D49.2
+ ;;^UTILITY(U,$J,358.3,40830,2)
+ ;;=^5002272
+ ;;^UTILITY(U,$J,358.3,40831,0)
+ ;;=L60.0^^119^1748^3
+ ;;^UTILITY(U,$J,358.3,40831,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40831,1,3,0)
+ ;;=3^Nail,Ingrowing
+ ;;^UTILITY(U,$J,358.3,40831,1,4,0)
+ ;;=4^L60.0
+ ;;^UTILITY(U,$J,358.3,40831,2)
+ ;;=^5009234
+ ;;^UTILITY(U,$J,358.3,40832,0)
+ ;;=L60.9^^119^1748^1
+ ;;^UTILITY(U,$J,358.3,40832,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40832,1,3,0)
+ ;;=3^Nail Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,40832,1,4,0)
+ ;;=4^L60.9
+ ;;^UTILITY(U,$J,358.3,40832,2)
+ ;;=^5009240
+ ;;^UTILITY(U,$J,358.3,40833,0)
+ ;;=Z91.19^^119^1748^9
+ ;;^UTILITY(U,$J,358.3,40833,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40833,1,3,0)
+ ;;=3^Noncompliance w/ Medical Treatment/Regimen
+ ;;^UTILITY(U,$J,358.3,40833,1,4,0)
+ ;;=4^Z91.19
+ ;;^UTILITY(U,$J,358.3,40833,2)
+ ;;=^5063618
+ ;;^UTILITY(U,$J,358.3,40834,0)
+ ;;=E80.1^^119^1749^21
+ ;;^UTILITY(U,$J,358.3,40834,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40834,1,3,0)
+ ;;=3^Porphyria Cutanea Tarda
+ ;;^UTILITY(U,$J,358.3,40834,1,4,0)
+ ;;=4^E80.1
+ ;;^UTILITY(U,$J,358.3,40834,2)
+ ;;=^5002982
+ ;;^UTILITY(U,$J,358.3,40835,0)
+ ;;=L56.4^^119^1749^20
+ ;;^UTILITY(U,$J,358.3,40835,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40835,1,3,0)
+ ;;=3^Polymorphous Light Eruption
+ ;;^UTILITY(U,$J,358.3,40835,1,4,0)
+ ;;=4^L56.4
+ ;;^UTILITY(U,$J,358.3,40835,2)
+ ;;=^5009218
+ ;;^UTILITY(U,$J,358.3,40836,0)
+ ;;=L10.0^^119^1749^4
+ ;;^UTILITY(U,$J,358.3,40836,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,40836,1,3,0)
+ ;;=3^Pemphigus Vulgaris
+ ;;^UTILITY(U,$J,358.3,40836,1,4,0)
+ ;;=4^L10.0
+ ;;^UTILITY(U,$J,358.3,40836,2)
+ ;;=^91129

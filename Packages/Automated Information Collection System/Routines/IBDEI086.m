@@ -1,128 +1,358 @@
-IBDEI086 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI086 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3526,1,3,0)
- ;;=3^Cerebrovascular Disease,Apraxia,Unspec
- ;;^UTILITY(U,$J,358.3,3526,1,4,0)
- ;;=4^I69.990
- ;;^UTILITY(U,$J,358.3,3526,2)
- ;;=^5007568
- ;;^UTILITY(U,$J,358.3,3527,0)
- ;;=I69.993^^18^220^17
- ;;^UTILITY(U,$J,358.3,3527,1,0)
+ ;;^UTILITY(U,$J,358.3,10330,2)
+ ;;=^5009010
+ ;;^UTILITY(U,$J,358.3,10331,0)
+ ;;=L02.412^^37^551^64
+ ;;^UTILITY(U,$J,358.3,10331,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3527,1,3,0)
- ;;=3^Cerebrovascular Disease,Ataxia,Unspec
- ;;^UTILITY(U,$J,358.3,3527,1,4,0)
- ;;=4^I69.993
- ;;^UTILITY(U,$J,358.3,3527,2)
- ;;=^5007571
- ;;^UTILITY(U,$J,358.3,3528,0)
- ;;=I69.91^^18^220^18
- ;;^UTILITY(U,$J,358.3,3528,1,0)
+ ;;^UTILITY(U,$J,358.3,10331,1,3,0)
+ ;;=3^Cutaneous Abscess of Left Axilla
+ ;;^UTILITY(U,$J,358.3,10331,1,4,0)
+ ;;=4^L02.412
+ ;;^UTILITY(U,$J,358.3,10331,2)
+ ;;=^5008975
+ ;;^UTILITY(U,$J,358.3,10332,0)
+ ;;=L02.612^^37^551^65
+ ;;^UTILITY(U,$J,358.3,10332,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3528,1,3,0)
- ;;=3^Cerebrovascular Disease,Cognitive Deficits,Unspec
- ;;^UTILITY(U,$J,358.3,3528,1,4,0)
- ;;=4^I69.91
- ;;^UTILITY(U,$J,358.3,3528,2)
- ;;=^5007552
- ;;^UTILITY(U,$J,358.3,3529,0)
- ;;=I69.922^^18^220^19
- ;;^UTILITY(U,$J,358.3,3529,1,0)
+ ;;^UTILITY(U,$J,358.3,10332,1,3,0)
+ ;;=3^Cutaneous Abscess of Left Foot
+ ;;^UTILITY(U,$J,358.3,10332,1,4,0)
+ ;;=4^L02.612
+ ;;^UTILITY(U,$J,358.3,10332,2)
+ ;;=^5009002
+ ;;^UTILITY(U,$J,358.3,10333,0)
+ ;;=L02.512^^37^551^66
+ ;;^UTILITY(U,$J,358.3,10333,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3529,1,3,0)
- ;;=3^Cerebrovascular Disease,Dysarthria,Unspec
- ;;^UTILITY(U,$J,358.3,3529,1,4,0)
- ;;=4^I69.922
- ;;^UTILITY(U,$J,358.3,3529,2)
- ;;=^5007555
- ;;^UTILITY(U,$J,358.3,3530,0)
- ;;=I69.991^^18^220^20
- ;;^UTILITY(U,$J,358.3,3530,1,0)
+ ;;^UTILITY(U,$J,358.3,10333,1,3,0)
+ ;;=3^Cutaneous Abscess of Left Hand
+ ;;^UTILITY(U,$J,358.3,10333,1,4,0)
+ ;;=4^L02.512
+ ;;^UTILITY(U,$J,358.3,10333,2)
+ ;;=^5008993
+ ;;^UTILITY(U,$J,358.3,10334,0)
+ ;;=L02.416^^37^551^67
+ ;;^UTILITY(U,$J,358.3,10334,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3530,1,3,0)
- ;;=3^Cerebrovascular Disease,Dysphagia
- ;;^UTILITY(U,$J,358.3,3530,1,4,0)
- ;;=4^I69.991
- ;;^UTILITY(U,$J,358.3,3530,2)
- ;;=^5007569
- ;;^UTILITY(U,$J,358.3,3531,0)
- ;;=I69.921^^18^220^21
- ;;^UTILITY(U,$J,358.3,3531,1,0)
+ ;;^UTILITY(U,$J,358.3,10334,1,3,0)
+ ;;=3^Cutaneous Abscess of Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,10334,1,4,0)
+ ;;=4^L02.416
+ ;;^UTILITY(U,$J,358.3,10334,2)
+ ;;=^5133642
+ ;;^UTILITY(U,$J,358.3,10335,0)
+ ;;=L02.414^^37^551^68
+ ;;^UTILITY(U,$J,358.3,10335,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3531,1,3,0)
- ;;=3^Cerebrovascular Disease,Dysphasia
- ;;^UTILITY(U,$J,358.3,3531,1,4,0)
- ;;=4^I69.921
- ;;^UTILITY(U,$J,358.3,3531,2)
- ;;=^5007554
- ;;^UTILITY(U,$J,358.3,3532,0)
- ;;=I69.992^^18^220^22
- ;;^UTILITY(U,$J,358.3,3532,1,0)
+ ;;^UTILITY(U,$J,358.3,10335,1,3,0)
+ ;;=3^Cutaneous Abscess of Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,10335,1,4,0)
+ ;;=4^L02.414
+ ;;^UTILITY(U,$J,358.3,10335,2)
+ ;;=^5008977
+ ;;^UTILITY(U,$J,358.3,10336,0)
+ ;;=L02.11^^37^551^69
+ ;;^UTILITY(U,$J,358.3,10336,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3532,1,3,0)
- ;;=3^Cerebrovascular Disease,Facial Weakness
- ;;^UTILITY(U,$J,358.3,3532,1,4,0)
- ;;=4^I69.992
- ;;^UTILITY(U,$J,358.3,3532,2)
- ;;=^5007570
- ;;^UTILITY(U,$J,358.3,3533,0)
- ;;=I69.923^^18^220^23
- ;;^UTILITY(U,$J,358.3,3533,1,0)
+ ;;^UTILITY(U,$J,358.3,10336,1,3,0)
+ ;;=3^Cutaneous Abscess of Neck
+ ;;^UTILITY(U,$J,358.3,10336,1,4,0)
+ ;;=4^L02.11
+ ;;^UTILITY(U,$J,358.3,10336,2)
+ ;;=^5008947
+ ;;^UTILITY(U,$J,358.3,10337,0)
+ ;;=L02.818^^37^551^70
+ ;;^UTILITY(U,$J,358.3,10337,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3533,1,3,0)
- ;;=3^Cerebrovascular Disease,Fluency Disorder
- ;;^UTILITY(U,$J,358.3,3533,1,4,0)
- ;;=4^I69.923
- ;;^UTILITY(U,$J,358.3,3533,2)
- ;;=^5007556
- ;;^UTILITY(U,$J,358.3,3534,0)
- ;;=I69.952^^18^220^24
- ;;^UTILITY(U,$J,358.3,3534,1,0)
+ ;;^UTILITY(U,$J,358.3,10337,1,3,0)
+ ;;=3^Cutaneous Abscess of Other Sites
+ ;;^UTILITY(U,$J,358.3,10337,1,4,0)
+ ;;=4^L02.818
+ ;;^UTILITY(U,$J,358.3,10337,2)
+ ;;=^5009011
+ ;;^UTILITY(U,$J,358.3,10338,0)
+ ;;=L02.215^^37^551^71
+ ;;^UTILITY(U,$J,358.3,10338,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3534,1,3,0)
- ;;=3^Cerebrovascular Disease,Hemiplegia/Hemiparesis,Left Dominant Side
- ;;^UTILITY(U,$J,358.3,3534,1,4,0)
- ;;=4^I69.952
- ;;^UTILITY(U,$J,358.3,3534,2)
- ;;=^5133586
- ;;^UTILITY(U,$J,358.3,3535,0)
- ;;=I69.954^^18^220^25
- ;;^UTILITY(U,$J,358.3,3535,1,0)
+ ;;^UTILITY(U,$J,358.3,10338,1,3,0)
+ ;;=3^Cutaneous Abscess of Perineum
+ ;;^UTILITY(U,$J,358.3,10338,1,4,0)
+ ;;=4^L02.215
+ ;;^UTILITY(U,$J,358.3,10338,2)
+ ;;=^5008954
+ ;;^UTILITY(U,$J,358.3,10339,0)
+ ;;=L02.411^^37^551^72
+ ;;^UTILITY(U,$J,358.3,10339,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3535,1,3,0)
- ;;=3^Cerebrovascular Disease,Hemiplegia/Hemiparesis,Left Nondominant Side
- ;;^UTILITY(U,$J,358.3,3535,1,4,0)
- ;;=4^I69.954
- ;;^UTILITY(U,$J,358.3,3535,2)
- ;;=^5133587
- ;;^UTILITY(U,$J,358.3,3536,0)
- ;;=I69.951^^18^220^26
- ;;^UTILITY(U,$J,358.3,3536,1,0)
+ ;;^UTILITY(U,$J,358.3,10339,1,3,0)
+ ;;=3^Cutaneous Abscess of Right Axilla
+ ;;^UTILITY(U,$J,358.3,10339,1,4,0)
+ ;;=4^L02.411
+ ;;^UTILITY(U,$J,358.3,10339,2)
+ ;;=^5008974
+ ;;^UTILITY(U,$J,358.3,10340,0)
+ ;;=L02.611^^37^551^73
+ ;;^UTILITY(U,$J,358.3,10340,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3536,1,3,0)
- ;;=3^Cerebrovascular Disease,Hemiplegia/Hemiparesis,Right Dominant Side
- ;;^UTILITY(U,$J,358.3,3536,1,4,0)
- ;;=4^I69.951
- ;;^UTILITY(U,$J,358.3,3536,2)
- ;;=^5007561
- ;;^UTILITY(U,$J,358.3,3537,0)
- ;;=I69.953^^18^220^27
- ;;^UTILITY(U,$J,358.3,3537,1,0)
+ ;;^UTILITY(U,$J,358.3,10340,1,3,0)
+ ;;=3^Cutaneous Abscess of Right Foot
+ ;;^UTILITY(U,$J,358.3,10340,1,4,0)
+ ;;=4^L02.611
+ ;;^UTILITY(U,$J,358.3,10340,2)
+ ;;=^5009001
+ ;;^UTILITY(U,$J,358.3,10341,0)
+ ;;=L02.511^^37^551^74
+ ;;^UTILITY(U,$J,358.3,10341,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3537,1,3,0)
- ;;=3^Cerebrovascular Disease,Hemiplegia/Hemiparesis,Right Nondominant Side
- ;;^UTILITY(U,$J,358.3,3537,1,4,0)
- ;;=4^I69.953
- ;;^UTILITY(U,$J,358.3,3537,2)
- ;;=^5007562
- ;;^UTILITY(U,$J,358.3,3538,0)
- ;;=I69.942^^18^220^28
- ;;^UTILITY(U,$J,358.3,3538,1,0)
+ ;;^UTILITY(U,$J,358.3,10341,1,3,0)
+ ;;=3^Cutaneous Abscess of Right Hand
+ ;;^UTILITY(U,$J,358.3,10341,1,4,0)
+ ;;=4^L02.511
+ ;;^UTILITY(U,$J,358.3,10341,2)
+ ;;=^5008992
+ ;;^UTILITY(U,$J,358.3,10342,0)
+ ;;=L02.415^^37^551^75
+ ;;^UTILITY(U,$J,358.3,10342,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3538,1,3,0)
- ;;=3^Cerebrovascular Disease,Monoplegia,Lt Lower Dominant Side
- ;;^UTILITY(U,$J,358.3,3538,1,4,0)
- ;;=4^I69.942
+ ;;^UTILITY(U,$J,358.3,10342,1,3,0)
+ ;;=3^Cutaneous Abscess of Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,10342,1,4,0)
+ ;;=4^L02.415
+ ;;^UTILITY(U,$J,358.3,10342,2)
+ ;;=^5008978
+ ;;^UTILITY(U,$J,358.3,10343,0)
+ ;;=L02.413^^37^551^76
+ ;;^UTILITY(U,$J,358.3,10343,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10343,1,3,0)
+ ;;=3^Cutaneous Abscess of Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,10343,1,4,0)
+ ;;=4^L02.413
+ ;;^UTILITY(U,$J,358.3,10343,2)
+ ;;=^5008976
+ ;;^UTILITY(U,$J,358.3,10344,0)
+ ;;=L02.219^^37^551^77
+ ;;^UTILITY(U,$J,358.3,10344,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10344,1,3,0)
+ ;;=3^Cutaneous Abscess of Trunk,Unspec
+ ;;^UTILITY(U,$J,358.3,10344,1,4,0)
+ ;;=4^L02.219
+ ;;^UTILITY(U,$J,358.3,10344,2)
+ ;;=^5008956
+ ;;^UTILITY(U,$J,358.3,10345,0)
+ ;;=L02.216^^37^551^78
+ ;;^UTILITY(U,$J,358.3,10345,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10345,1,3,0)
+ ;;=3^Cutaneous Abscess of Umbilicus
+ ;;^UTILITY(U,$J,358.3,10345,1,4,0)
+ ;;=4^L02.216
+ ;;^UTILITY(U,$J,358.3,10345,2)
+ ;;=^5008955
+ ;;^UTILITY(U,$J,358.3,10346,0)
+ ;;=L02.91^^37^551^79
+ ;;^UTILITY(U,$J,358.3,10346,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10346,1,3,0)
+ ;;=3^Cutaneous Abscess,Unspec
+ ;;^UTILITY(U,$J,358.3,10346,1,4,0)
+ ;;=4^L02.91
+ ;;^UTILITY(U,$J,358.3,10346,2)
+ ;;=^5009016
+ ;;^UTILITY(U,$J,358.3,10347,0)
+ ;;=L98.3^^37^551^82
+ ;;^UTILITY(U,$J,358.3,10347,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10347,1,3,0)
+ ;;=3^Eosinophilic Cellulitis,Skin/Subcutaneous
+ ;;^UTILITY(U,$J,358.3,10347,1,4,0)
+ ;;=4^L98.3
+ ;;^UTILITY(U,$J,358.3,10347,2)
+ ;;=^5009576
+ ;;^UTILITY(U,$J,358.3,10348,0)
+ ;;=L72.0^^37^551^83
+ ;;^UTILITY(U,$J,358.3,10348,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10348,1,3,0)
+ ;;=3^Epidermal Cyst
+ ;;^UTILITY(U,$J,358.3,10348,1,4,0)
+ ;;=4^L72.0
+ ;;^UTILITY(U,$J,358.3,10348,2)
+ ;;=^5009277
+ ;;^UTILITY(U,$J,358.3,10349,0)
+ ;;=L72.9^^37^551^84
+ ;;^UTILITY(U,$J,358.3,10349,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10349,1,3,0)
+ ;;=3^Follicular Cyst of Skin/Subcutaneous Tissue,Unspec
+ ;;^UTILITY(U,$J,358.3,10349,1,4,0)
+ ;;=4^L72.9
+ ;;^UTILITY(U,$J,358.3,10349,2)
+ ;;=^5009283
+ ;;^UTILITY(U,$J,358.3,10350,0)
+ ;;=L60.0^^37^551^86
+ ;;^UTILITY(U,$J,358.3,10350,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10350,1,3,0)
+ ;;=3^Ingrowing Nail
+ ;;^UTILITY(U,$J,358.3,10350,1,4,0)
+ ;;=4^L60.0
+ ;;^UTILITY(U,$J,358.3,10350,2)
+ ;;=^5009234
+ ;;^UTILITY(U,$J,358.3,10351,0)
+ ;;=C43.9^^37^551^87
+ ;;^UTILITY(U,$J,358.3,10351,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10351,1,3,0)
+ ;;=3^Malig Melanoma of Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,10351,1,4,0)
+ ;;=4^C43.9
+ ;;^UTILITY(U,$J,358.3,10351,2)
+ ;;=^5001015
+ ;;^UTILITY(U,$J,358.3,10352,0)
+ ;;=D03.9^^37^551^91
+ ;;^UTILITY(U,$J,358.3,10352,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10352,1,3,0)
+ ;;=3^Melanoma in Situ,Unspec
+ ;;^UTILITY(U,$J,358.3,10352,1,4,0)
+ ;;=4^D03.9
+ ;;^UTILITY(U,$J,358.3,10352,2)
+ ;;=^5001908
+ ;;^UTILITY(U,$J,358.3,10353,0)
+ ;;=L72.8^^37^551^85
+ ;;^UTILITY(U,$J,358.3,10353,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10353,1,3,0)
+ ;;=3^Follicular Cyst of Skin/Subcutaneous Tissue NEC
+ ;;^UTILITY(U,$J,358.3,10353,1,4,0)
+ ;;=4^L72.8
+ ;;^UTILITY(U,$J,358.3,10353,2)
+ ;;=^5009282
+ ;;^UTILITY(U,$J,358.3,10354,0)
+ ;;=L72.2^^37^551^92
+ ;;^UTILITY(U,$J,358.3,10354,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10354,1,3,0)
+ ;;=3^Steatocystoma Multiplex
+ ;;^UTILITY(U,$J,358.3,10354,1,4,0)
+ ;;=4^L72.2
+ ;;^UTILITY(U,$J,358.3,10354,2)
+ ;;=^5009280
+ ;;^UTILITY(U,$J,358.3,10355,0)
+ ;;=L72.12^^37^551^93
+ ;;^UTILITY(U,$J,358.3,10355,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10355,1,3,0)
+ ;;=3^Trichodermal Cyst
+ ;;^UTILITY(U,$J,358.3,10355,1,4,0)
+ ;;=4^L72.12
+ ;;^UTILITY(U,$J,358.3,10355,2)
+ ;;=^5009279
+ ;;^UTILITY(U,$J,358.3,10356,0)
+ ;;=E11.621^^37^551^81
+ ;;^UTILITY(U,$J,358.3,10356,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10356,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,10356,1,4,0)
+ ;;=4^E11.621
+ ;;^UTILITY(U,$J,358.3,10356,2)
+ ;;=^5002656
+ ;;^UTILITY(U,$J,358.3,10357,0)
+ ;;=C44.309^^37^551^88
+ ;;^UTILITY(U,$J,358.3,10357,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10357,1,3,0)
+ ;;=3^Malig Neop of Skin of Face,Other Parts
+ ;;^UTILITY(U,$J,358.3,10357,1,4,0)
+ ;;=4^C44.309
+ ;;^UTILITY(U,$J,358.3,10357,2)
+ ;;=^5001042
+ ;;^UTILITY(U,$J,358.3,10358,0)
+ ;;=C44.300^^37^551^89
+ ;;^UTILITY(U,$J,358.3,10358,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10358,1,3,0)
+ ;;=3^Malig Neop of Skin of Face,Unspec Part
+ ;;^UTILITY(U,$J,358.3,10358,1,4,0)
+ ;;=4^C44.300
+ ;;^UTILITY(U,$J,358.3,10358,2)
+ ;;=^5001040
+ ;;^UTILITY(U,$J,358.3,10359,0)
+ ;;=C44.301^^37^551^90
+ ;;^UTILITY(U,$J,358.3,10359,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10359,1,3,0)
+ ;;=3^Malig Neop of Skin of Nose
+ ;;^UTILITY(U,$J,358.3,10359,1,4,0)
+ ;;=4^C44.301
+ ;;^UTILITY(U,$J,358.3,10359,2)
+ ;;=^5001041
+ ;;^UTILITY(U,$J,358.3,10360,0)
+ ;;=E10.621^^37^551^80
+ ;;^UTILITY(U,$J,358.3,10360,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10360,1,3,0)
+ ;;=3^Diabetes Type 1 w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,10360,1,4,0)
+ ;;=4^E10.621
+ ;;^UTILITY(U,$J,358.3,10360,2)
+ ;;=^5002616
+ ;;^UTILITY(U,$J,358.3,10361,0)
+ ;;=T81.31XA^^37^552^3
+ ;;^UTILITY(U,$J,358.3,10361,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10361,1,3,0)
+ ;;=3^Disruption of External Surgical Wound,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10361,1,4,0)
+ ;;=4^T81.31XA
+ ;;^UTILITY(U,$J,358.3,10361,2)
+ ;;=^5054470
+ ;;^UTILITY(U,$J,358.3,10362,0)
+ ;;=T81.33XA^^37^552^4
+ ;;^UTILITY(U,$J,358.3,10362,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10362,1,3,0)
+ ;;=3^Disruption of Traumatic Injury Wound Repair,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10362,1,4,0)
+ ;;=4^T81.33XA
+ ;;^UTILITY(U,$J,358.3,10362,2)
+ ;;=^5054476
+ ;;^UTILITY(U,$J,358.3,10363,0)
+ ;;=T81.4XXA^^37^552^5
+ ;;^UTILITY(U,$J,358.3,10363,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10363,1,3,0)
+ ;;=3^Infection Following a Procedure,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10363,1,4,0)
+ ;;=4^T81.4XXA
+ ;;^UTILITY(U,$J,358.3,10363,2)
+ ;;=^5054479
+ ;;^UTILITY(U,$J,358.3,10364,0)
+ ;;=T81.89XA^^37^552^1
+ ;;^UTILITY(U,$J,358.3,10364,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10364,1,3,0)
+ ;;=3^Complications of Procedures NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10364,1,4,0)
+ ;;=4^T81.89XA
+ ;;^UTILITY(U,$J,358.3,10364,2)
+ ;;=^5054662
+ ;;^UTILITY(U,$J,358.3,10365,0)
+ ;;=K91.89^^37^552^7
+ ;;^UTILITY(U,$J,358.3,10365,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10365,1,3,0)
+ ;;=3^Postprocedural Complications/Disorders of Digestive System
+ ;;^UTILITY(U,$J,358.3,10365,1,4,0)
+ ;;=4^K91.89
+ ;;^UTILITY(U,$J,358.3,10365,2)
+ ;;=^5008912
+ ;;^UTILITY(U,$J,358.3,10366,0)
+ ;;=T88.8XXA^^37^552^2

@@ -1,132 +1,358 @@
-IBDEI0LR ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0LR ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10143,2)
- ;;=^5005659
- ;;^UTILITY(U,$J,358.3,10144,0)
- ;;=H35.361^^44^501^20
- ;;^UTILITY(U,$J,358.3,10144,1,0)
+ ;;^UTILITY(U,$J,358.3,27521,1,4,0)
+ ;;=4^G43.109
+ ;;^UTILITY(U,$J,358.3,27521,2)
+ ;;=^5003881
+ ;;^UTILITY(U,$J,358.3,27522,0)
+ ;;=G43.119^^74^1173^11
+ ;;^UTILITY(U,$J,358.3,27522,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10144,1,3,0)
- ;;=3^Drusen of Macular,Right Eye
- ;;^UTILITY(U,$J,358.3,10144,1,4,0)
- ;;=4^H35.361
- ;;^UTILITY(U,$J,358.3,10144,2)
- ;;=^5005658
- ;;^UTILITY(U,$J,358.3,10145,0)
- ;;=H04.123^^44^501^21
- ;;^UTILITY(U,$J,358.3,10145,1,0)
+ ;;^UTILITY(U,$J,358.3,27522,1,3,0)
+ ;;=3^Migraine w/ Aura Intractable
+ ;;^UTILITY(U,$J,358.3,27522,1,4,0)
+ ;;=4^G43.119
+ ;;^UTILITY(U,$J,358.3,27522,2)
+ ;;=^5003883
+ ;;^UTILITY(U,$J,358.3,27523,0)
+ ;;=G43.909^^74^1173^10
+ ;;^UTILITY(U,$J,358.3,27523,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10145,1,3,0)
- ;;=3^Dry Eye Syndrome,Bilateral Lacrimal Glands
- ;;^UTILITY(U,$J,358.3,10145,1,4,0)
- ;;=4^H04.123
- ;;^UTILITY(U,$J,358.3,10145,2)
- ;;=^5004465
- ;;^UTILITY(U,$J,358.3,10146,0)
- ;;=H35.32^^44^501^28
- ;;^UTILITY(U,$J,358.3,10146,1,0)
+ ;;^UTILITY(U,$J,358.3,27523,1,3,0)
+ ;;=3^Migraine Not Intractable w/o Status Migrainosus,Unspec
+ ;;^UTILITY(U,$J,358.3,27523,1,4,0)
+ ;;=4^G43.909
+ ;;^UTILITY(U,$J,358.3,27523,2)
+ ;;=^5003909
+ ;;^UTILITY(U,$J,358.3,27524,0)
+ ;;=G44.209^^74^1173^22
+ ;;^UTILITY(U,$J,358.3,27524,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10146,1,3,0)
- ;;=3^Exudative Age-Related Macular Degeneration
- ;;^UTILITY(U,$J,358.3,10146,1,4,0)
- ;;=4^H35.32
- ;;^UTILITY(U,$J,358.3,10146,2)
- ;;=^5005648
- ;;^UTILITY(U,$J,358.3,10147,0)
- ;;=H35.023^^44^501^29
- ;;^UTILITY(U,$J,358.3,10147,1,0)
+ ;;^UTILITY(U,$J,358.3,27524,1,3,0)
+ ;;=3^Tension-Type Headache Not Intractable,Unspec
+ ;;^UTILITY(U,$J,358.3,27524,1,4,0)
+ ;;=4^G44.209
+ ;;^UTILITY(U,$J,358.3,27524,2)
+ ;;=^5003936
+ ;;^UTILITY(U,$J,358.3,27525,0)
+ ;;=R51.^^74^1173^5
+ ;;^UTILITY(U,$J,358.3,27525,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10147,1,3,0)
- ;;=3^Exudative Retinopathy,Bilateral
- ;;^UTILITY(U,$J,358.3,10147,1,4,0)
- ;;=4^H35.023
- ;;^UTILITY(U,$J,358.3,10147,2)
- ;;=^5005588
- ;;^UTILITY(U,$J,358.3,10148,0)
- ;;=H35.022^^44^501^30
- ;;^UTILITY(U,$J,358.3,10148,1,0)
+ ;;^UTILITY(U,$J,358.3,27525,1,3,0)
+ ;;=3^Headache
+ ;;^UTILITY(U,$J,358.3,27525,1,4,0)
+ ;;=4^R51.
+ ;;^UTILITY(U,$J,358.3,27525,2)
+ ;;=^5019513
+ ;;^UTILITY(U,$J,358.3,27526,0)
+ ;;=G43.011^^74^1173^16
+ ;;^UTILITY(U,$J,358.3,27526,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10148,1,3,0)
- ;;=3^Exudative Retinopathy,Left Eye
- ;;^UTILITY(U,$J,358.3,10148,1,4,0)
- ;;=4^H35.022
- ;;^UTILITY(U,$J,358.3,10148,2)
- ;;=^5005587
- ;;^UTILITY(U,$J,358.3,10149,0)
- ;;=H35.021^^44^501^31
- ;;^UTILITY(U,$J,358.3,10149,1,0)
+ ;;^UTILITY(U,$J,358.3,27526,1,3,0)
+ ;;=3^Migraine w/o Aura Intractable w/ Status Migrainosus
+ ;;^UTILITY(U,$J,358.3,27526,1,4,0)
+ ;;=4^G43.011
+ ;;^UTILITY(U,$J,358.3,27526,2)
+ ;;=^5003878
+ ;;^UTILITY(U,$J,358.3,27527,0)
+ ;;=G43.111^^74^1173^12
+ ;;^UTILITY(U,$J,358.3,27527,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10149,1,3,0)
- ;;=3^Exudative Retinopathy,Right Eye
- ;;^UTILITY(U,$J,358.3,10149,1,4,0)
- ;;=4^H35.021
- ;;^UTILITY(U,$J,358.3,10149,2)
- ;;=^5005586
- ;;^UTILITY(U,$J,358.3,10150,0)
- ;;=H40.013^^44^501^32
- ;;^UTILITY(U,$J,358.3,10150,1,0)
+ ;;^UTILITY(U,$J,358.3,27527,1,3,0)
+ ;;=3^Migraine w/ Aura Intractable w/ Status Migrainosus
+ ;;^UTILITY(U,$J,358.3,27527,1,4,0)
+ ;;=4^G43.111
+ ;;^UTILITY(U,$J,358.3,27527,2)
+ ;;=^5003882
+ ;;^UTILITY(U,$J,358.3,27528,0)
+ ;;=G43.911^^74^1173^7
+ ;;^UTILITY(U,$J,358.3,27528,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10150,1,3,0)
- ;;=3^Glaucoma Suspect,Open Angle w/ Borderline Findings,Low Risk,Bilateral
- ;;^UTILITY(U,$J,358.3,10150,1,4,0)
- ;;=4^H40.013
- ;;^UTILITY(U,$J,358.3,10150,2)
- ;;=^5005726
- ;;^UTILITY(U,$J,358.3,10151,0)
- ;;=H40.012^^44^501^33
- ;;^UTILITY(U,$J,358.3,10151,1,0)
+ ;;^UTILITY(U,$J,358.3,27528,1,3,0)
+ ;;=3^Migraine Intractable w/ Status Migrainosus,Unspec
+ ;;^UTILITY(U,$J,358.3,27528,1,4,0)
+ ;;=4^G43.911
+ ;;^UTILITY(U,$J,358.3,27528,2)
+ ;;=^5003910
+ ;;^UTILITY(U,$J,358.3,27529,0)
+ ;;=G43.919^^74^1173^8
+ ;;^UTILITY(U,$J,358.3,27529,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10151,1,3,0)
- ;;=3^Glaucoma Suspect,Open Angle w/ Borderline Findings,Low Risk,Left Eye
- ;;^UTILITY(U,$J,358.3,10151,1,4,0)
- ;;=4^H40.012
- ;;^UTILITY(U,$J,358.3,10151,2)
- ;;=^5005725
- ;;^UTILITY(U,$J,358.3,10152,0)
- ;;=H40.011^^44^501^34
- ;;^UTILITY(U,$J,358.3,10152,1,0)
+ ;;^UTILITY(U,$J,358.3,27529,1,3,0)
+ ;;=3^Migraine Intractable w/o Status Migrainosus,Unspec
+ ;;^UTILITY(U,$J,358.3,27529,1,4,0)
+ ;;=4^G43.919
+ ;;^UTILITY(U,$J,358.3,27529,2)
+ ;;=^5003911
+ ;;^UTILITY(U,$J,358.3,27530,0)
+ ;;=G44.001^^74^1173^1
+ ;;^UTILITY(U,$J,358.3,27530,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10152,1,3,0)
- ;;=3^Glaucoma Suspect,Open Angle w/ Borderline Findings,Low Risk,Right Eye
- ;;^UTILITY(U,$J,358.3,10152,1,4,0)
- ;;=4^H40.011
- ;;^UTILITY(U,$J,358.3,10152,2)
- ;;=^5005724
- ;;^UTILITY(U,$J,358.3,10153,0)
- ;;=H52.03^^44^501^41
- ;;^UTILITY(U,$J,358.3,10153,1,0)
+ ;;^UTILITY(U,$J,358.3,27530,1,3,0)
+ ;;=3^Cluster Headache Syndrome Intractable,Unspec
+ ;;^UTILITY(U,$J,358.3,27530,1,4,0)
+ ;;=4^G44.001
+ ;;^UTILITY(U,$J,358.3,27530,2)
+ ;;=^5003920
+ ;;^UTILITY(U,$J,358.3,27531,0)
+ ;;=G44.009^^74^1173^2
+ ;;^UTILITY(U,$J,358.3,27531,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10153,1,3,0)
- ;;=3^Hypermetropia,Bilateral
- ;;^UTILITY(U,$J,358.3,10153,1,4,0)
- ;;=4^H52.03
- ;;^UTILITY(U,$J,358.3,10153,2)
- ;;=^5006262
- ;;^UTILITY(U,$J,358.3,10154,0)
- ;;=H52.02^^44^501^42
- ;;^UTILITY(U,$J,358.3,10154,1,0)
+ ;;^UTILITY(U,$J,358.3,27531,1,3,0)
+ ;;=3^Cluster Headache Syndrome Not Intractable,Unspec
+ ;;^UTILITY(U,$J,358.3,27531,1,4,0)
+ ;;=4^G44.009
+ ;;^UTILITY(U,$J,358.3,27531,2)
+ ;;=^5003921
+ ;;^UTILITY(U,$J,358.3,27532,0)
+ ;;=G44.301^^74^1173^19
+ ;;^UTILITY(U,$J,358.3,27532,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10154,1,3,0)
- ;;=3^Hypermetropia,Left Eye
- ;;^UTILITY(U,$J,358.3,10154,1,4,0)
- ;;=4^H52.02
- ;;^UTILITY(U,$J,358.3,10154,2)
- ;;=^5006261
- ;;^UTILITY(U,$J,358.3,10155,0)
- ;;=H52.01^^44^501^43
- ;;^UTILITY(U,$J,358.3,10155,1,0)
+ ;;^UTILITY(U,$J,358.3,27532,1,3,0)
+ ;;=3^Post-Traumatic Headache Intractable,Unspec
+ ;;^UTILITY(U,$J,358.3,27532,1,4,0)
+ ;;=4^G44.301
+ ;;^UTILITY(U,$J,358.3,27532,2)
+ ;;=^5003941
+ ;;^UTILITY(U,$J,358.3,27533,0)
+ ;;=G44.41^^74^1173^3
+ ;;^UTILITY(U,$J,358.3,27533,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10155,1,3,0)
- ;;=3^Hypermetropia,Right Eye
- ;;^UTILITY(U,$J,358.3,10155,1,4,0)
- ;;=4^H52.01
- ;;^UTILITY(U,$J,358.3,10155,2)
- ;;=^5006260
- ;;^UTILITY(U,$J,358.3,10156,0)
- ;;=H59.41^^44^501^44
- ;;^UTILITY(U,$J,358.3,10156,1,0)
+ ;;^UTILITY(U,$J,358.3,27533,1,3,0)
+ ;;=3^Drug-Induced Headache Intractable NEC
+ ;;^UTILITY(U,$J,358.3,27533,1,4,0)
+ ;;=4^G44.41
+ ;;^UTILITY(U,$J,358.3,27533,2)
+ ;;=^5003948
+ ;;^UTILITY(U,$J,358.3,27534,0)
+ ;;=G44.51^^74^1173^6
+ ;;^UTILITY(U,$J,358.3,27534,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10156,1,3,0)
- ;;=3^Inflammation of Postprocedural Bleb,Stage 1
+ ;;^UTILITY(U,$J,358.3,27534,1,3,0)
+ ;;=3^Hemicrania Continua
+ ;;^UTILITY(U,$J,358.3,27534,1,4,0)
+ ;;=4^G44.51
+ ;;^UTILITY(U,$J,358.3,27534,2)
+ ;;=^5003949
+ ;;^UTILITY(U,$J,358.3,27535,0)
+ ;;=G50.0^^74^1173^23
+ ;;^UTILITY(U,$J,358.3,27535,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27535,1,3,0)
+ ;;=3^Trigeminal Neuralgia
+ ;;^UTILITY(U,$J,358.3,27535,1,4,0)
+ ;;=4^G50.0
+ ;;^UTILITY(U,$J,358.3,27535,2)
+ ;;=^121978
+ ;;^UTILITY(U,$J,358.3,27536,0)
+ ;;=G44.40^^74^1173^4
+ ;;^UTILITY(U,$J,358.3,27536,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27536,1,3,0)
+ ;;=3^Drug-Induced Headache Not Intractable NEC
+ ;;^UTILITY(U,$J,358.3,27536,1,4,0)
+ ;;=4^G44.40
+ ;;^UTILITY(U,$J,358.3,27536,2)
+ ;;=^5003947
+ ;;^UTILITY(U,$J,358.3,27537,0)
+ ;;=G43.901^^74^1173^9
+ ;;^UTILITY(U,$J,358.3,27537,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27537,1,3,0)
+ ;;=3^Migraine Not Intractable w/ Status Migrainosus
+ ;;^UTILITY(U,$J,358.3,27537,1,4,0)
+ ;;=4^G43.901
+ ;;^UTILITY(U,$J,358.3,27537,2)
+ ;;=^5003908
+ ;;^UTILITY(U,$J,358.3,27538,0)
+ ;;=G43.101^^74^1173^14
+ ;;^UTILITY(U,$J,358.3,27538,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27538,1,3,0)
+ ;;=3^Migraine w/ Aura Not Intractable w/ Status Migrainosus
+ ;;^UTILITY(U,$J,358.3,27538,1,4,0)
+ ;;=4^G43.101
+ ;;^UTILITY(U,$J,358.3,27538,2)
+ ;;=^5003880
+ ;;^UTILITY(U,$J,358.3,27539,0)
+ ;;=G43.001^^74^1173^18
+ ;;^UTILITY(U,$J,358.3,27539,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27539,1,3,0)
+ ;;=3^Migraine w/o Aura Not Intractable w/ Status Migrainosus
+ ;;^UTILITY(U,$J,358.3,27539,1,4,0)
+ ;;=4^G43.001
+ ;;^UTILITY(U,$J,358.3,27539,2)
+ ;;=^5003876
+ ;;^UTILITY(U,$J,358.3,27540,0)
+ ;;=G44.309^^74^1173^20
+ ;;^UTILITY(U,$J,358.3,27540,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27540,1,3,0)
+ ;;=3^Post-Traumatic Headache Not Intractable,Unspec
+ ;;^UTILITY(U,$J,358.3,27540,1,4,0)
+ ;;=4^G44.309
+ ;;^UTILITY(U,$J,358.3,27540,2)
+ ;;=^5003942
+ ;;^UTILITY(U,$J,358.3,27541,0)
+ ;;=G44.201^^74^1173^21
+ ;;^UTILITY(U,$J,358.3,27541,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27541,1,3,0)
+ ;;=3^Tension-Type Headache Intractable,Unspec
+ ;;^UTILITY(U,$J,358.3,27541,1,4,0)
+ ;;=4^G44.201
+ ;;^UTILITY(U,$J,358.3,27541,2)
+ ;;=^5003935
+ ;;^UTILITY(U,$J,358.3,27542,0)
+ ;;=G20.^^74^1174^13
+ ;;^UTILITY(U,$J,358.3,27542,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27542,1,3,0)
+ ;;=3^Parkinson's Disease
+ ;;^UTILITY(U,$J,358.3,27542,1,4,0)
+ ;;=4^G20.
+ ;;^UTILITY(U,$J,358.3,27542,2)
+ ;;=^5003770
+ ;;^UTILITY(U,$J,358.3,27543,0)
+ ;;=G21.8^^74^1174^18
+ ;;^UTILITY(U,$J,358.3,27543,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27543,1,3,0)
+ ;;=3^Secondary Parkinsonism,Other
+ ;;^UTILITY(U,$J,358.3,27543,1,4,0)
+ ;;=4^G21.8
+ ;;^UTILITY(U,$J,358.3,27543,2)
+ ;;=^5003777
+ ;;^UTILITY(U,$J,358.3,27544,0)
+ ;;=G25.0^^74^1174^8
+ ;;^UTILITY(U,$J,358.3,27544,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27544,1,3,0)
+ ;;=3^Essential Tremor
+ ;;^UTILITY(U,$J,358.3,27544,1,4,0)
+ ;;=4^G25.0
+ ;;^UTILITY(U,$J,358.3,27544,2)
+ ;;=^5003791
+ ;;^UTILITY(U,$J,358.3,27545,0)
+ ;;=G25.1^^74^1174^6
+ ;;^UTILITY(U,$J,358.3,27545,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27545,1,3,0)
+ ;;=3^Drug-Induced Tremor
+ ;;^UTILITY(U,$J,358.3,27545,1,4,0)
+ ;;=4^G25.1
+ ;;^UTILITY(U,$J,358.3,27545,2)
+ ;;=^5003792
+ ;;^UTILITY(U,$J,358.3,27546,0)
+ ;;=G25.2^^74^1174^22
+ ;;^UTILITY(U,$J,358.3,27546,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27546,1,3,0)
+ ;;=3^Tremor,Other Spec Forms
+ ;;^UTILITY(U,$J,358.3,27546,1,4,0)
+ ;;=4^G25.2
+ ;;^UTILITY(U,$J,358.3,27546,2)
+ ;;=^5003793
+ ;;^UTILITY(U,$J,358.3,27547,0)
+ ;;=G25.3^^74^1174^11
+ ;;^UTILITY(U,$J,358.3,27547,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27547,1,3,0)
+ ;;=3^Myoclonus
+ ;;^UTILITY(U,$J,358.3,27547,1,4,0)
+ ;;=4^G25.3
+ ;;^UTILITY(U,$J,358.3,27547,2)
+ ;;=^80620
+ ;;^UTILITY(U,$J,358.3,27548,0)
+ ;;=G25.69^^74^1174^20
+ ;;^UTILITY(U,$J,358.3,27548,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27548,1,3,0)
+ ;;=3^Tics,Organic Origin,Other
+ ;;^UTILITY(U,$J,358.3,27548,1,4,0)
+ ;;=4^G25.69
+ ;;^UTILITY(U,$J,358.3,27548,2)
+ ;;=^5003797
+ ;;^UTILITY(U,$J,358.3,27549,0)
+ ;;=G25.61^^74^1174^5
+ ;;^UTILITY(U,$J,358.3,27549,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27549,1,3,0)
+ ;;=3^Drug-Induced Tics
+ ;;^UTILITY(U,$J,358.3,27549,1,4,0)
+ ;;=4^G25.61
+ ;;^UTILITY(U,$J,358.3,27549,2)
+ ;;=^5003796
+ ;;^UTILITY(U,$J,358.3,27550,0)
+ ;;=G25.81^^74^1174^17
+ ;;^UTILITY(U,$J,358.3,27550,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27550,1,3,0)
+ ;;=3^Restless Legs Syndrome
+ ;;^UTILITY(U,$J,358.3,27550,1,4,0)
+ ;;=4^G25.81
+ ;;^UTILITY(U,$J,358.3,27550,2)
+ ;;=^5003801
+ ;;^UTILITY(U,$J,358.3,27551,0)
+ ;;=R27.0^^74^1174^2
+ ;;^UTILITY(U,$J,358.3,27551,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27551,1,3,0)
+ ;;=3^Ataxia,Unspec
+ ;;^UTILITY(U,$J,358.3,27551,1,4,0)
+ ;;=4^R27.0
+ ;;^UTILITY(U,$J,358.3,27551,2)
+ ;;=^5019310
+ ;;^UTILITY(U,$J,358.3,27552,0)
+ ;;=G24.9^^74^1174^7
+ ;;^UTILITY(U,$J,358.3,27552,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27552,1,3,0)
+ ;;=3^Dystonia,Unspec
+ ;;^UTILITY(U,$J,358.3,27552,1,4,0)
+ ;;=4^G24.9
+ ;;^UTILITY(U,$J,358.3,27552,2)
+ ;;=^5003790
+ ;;^UTILITY(U,$J,358.3,27553,0)
+ ;;=G23.0^^74^1174^9
+ ;;^UTILITY(U,$J,358.3,27553,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27553,1,3,0)
+ ;;=3^Hallervorden-Spatz Disease
+ ;;^UTILITY(U,$J,358.3,27553,1,4,0)
+ ;;=4^G23.0
+ ;;^UTILITY(U,$J,358.3,27553,2)
+ ;;=^5003779
+ ;;^UTILITY(U,$J,358.3,27554,0)
+ ;;=G90.3^^74^1174^10
+ ;;^UTILITY(U,$J,358.3,27554,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27554,1,3,0)
+ ;;=3^Multi-Syst Degeneration of Autonomic Nervous System
+ ;;^UTILITY(U,$J,358.3,27554,1,4,0)
+ ;;=4^G90.3
+ ;;^UTILITY(U,$J,358.3,27554,2)
+ ;;=^5004162
+ ;;^UTILITY(U,$J,358.3,27555,0)
+ ;;=G21.11^^74^1174^12
+ ;;^UTILITY(U,$J,358.3,27555,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27555,1,3,0)
+ ;;=3^Neuroleptic Induced Parkinsonism
+ ;;^UTILITY(U,$J,358.3,27555,1,4,0)
+ ;;=4^G21.11
+ ;;^UTILITY(U,$J,358.3,27555,2)
+ ;;=^5003772
+ ;;^UTILITY(U,$J,358.3,27556,0)
+ ;;=G21.19^^74^1174^4
+ ;;^UTILITY(U,$J,358.3,27556,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,27556,1,3,0)
+ ;;=3^Drug-Induced Secondary Parkinsonism
+ ;;^UTILITY(U,$J,358.3,27556,1,4,0)
+ ;;=4^G21.19
+ ;;^UTILITY(U,$J,358.3,27556,2)
+ ;;=^5003773

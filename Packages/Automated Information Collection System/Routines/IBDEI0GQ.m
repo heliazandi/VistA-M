@@ -1,128 +1,366 @@
-IBDEI0GQ ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0GQ ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,7735,1,4,0)
- ;;=4^V00.832A
- ;;^UTILITY(U,$J,358.3,7735,2)
- ;;=^5055958
- ;;^UTILITY(U,$J,358.3,7736,0)
- ;;=V00.832D^^30^415^96
- ;;^UTILITY(U,$J,358.3,7736,1,0)
+ ;;^UTILITY(U,$J,358.3,21186,1,4,0)
+ ;;=4^H65.21
+ ;;^UTILITY(U,$J,358.3,21186,2)
+ ;;=^5006594
+ ;;^UTILITY(U,$J,358.3,21187,0)
+ ;;=H66.012^^58^830^6
+ ;;^UTILITY(U,$J,358.3,21187,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7736,1,3,0)
- ;;=3^Mobility Scooter Colliding w/ Stationary Obj,Subs Encntr
- ;;^UTILITY(U,$J,358.3,7736,1,4,0)
- ;;=4^V00.832D
- ;;^UTILITY(U,$J,358.3,7736,2)
- ;;=^5055959
- ;;^UTILITY(U,$J,358.3,7737,0)
- ;;=V00.838A^^30^415^93
- ;;^UTILITY(U,$J,358.3,7737,1,0)
+ ;;^UTILITY(U,$J,358.3,21187,1,3,0)
+ ;;=3^Acute Suppr Otitis Media w/ Spon Rupt Ear Drum,Left Ear
+ ;;^UTILITY(U,$J,358.3,21187,1,4,0)
+ ;;=4^H66.012
+ ;;^UTILITY(U,$J,358.3,21187,2)
+ ;;=^5133534
+ ;;^UTILITY(U,$J,358.3,21188,0)
+ ;;=H66.011^^58^830^7
+ ;;^UTILITY(U,$J,358.3,21188,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7737,1,3,0)
- ;;=3^Mobility Scooter Accident NEC,Init Encntr
- ;;^UTILITY(U,$J,358.3,7737,1,4,0)
- ;;=4^V00.838A
- ;;^UTILITY(U,$J,358.3,7737,2)
- ;;=^5055961
- ;;^UTILITY(U,$J,358.3,7738,0)
- ;;=V00.838D^^30^415^94
- ;;^UTILITY(U,$J,358.3,7738,1,0)
+ ;;^UTILITY(U,$J,358.3,21188,1,3,0)
+ ;;=3^Acute Suppr Otitis Media w/ Spon Rupt Ear Drum,Right Ear
+ ;;^UTILITY(U,$J,358.3,21188,1,4,0)
+ ;;=4^H66.011
+ ;;^UTILITY(U,$J,358.3,21188,2)
+ ;;=^5006621
+ ;;^UTILITY(U,$J,358.3,21189,0)
+ ;;=H66.91^^58^830^36
+ ;;^UTILITY(U,$J,358.3,21189,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7738,1,3,0)
- ;;=3^Mobility Scooter Accident NEC,Subs Encntr
- ;;^UTILITY(U,$J,358.3,7738,1,4,0)
- ;;=4^V00.838D
- ;;^UTILITY(U,$J,358.3,7738,2)
- ;;=^5055962
- ;;^UTILITY(U,$J,358.3,7739,0)
- ;;=V00.891A^^30^415^57
- ;;^UTILITY(U,$J,358.3,7739,1,0)
+ ;;^UTILITY(U,$J,358.3,21189,1,3,0)
+ ;;=3^Otitis Media,Unspec,Right Ear
+ ;;^UTILITY(U,$J,358.3,21189,1,4,0)
+ ;;=4^H66.91
+ ;;^UTILITY(U,$J,358.3,21189,2)
+ ;;=^5006640
+ ;;^UTILITY(U,$J,358.3,21190,0)
+ ;;=H66.92^^58^830^35
+ ;;^UTILITY(U,$J,358.3,21190,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7739,1,3,0)
- ;;=3^Fall from Pedestrian Conveyance,Init Encntr
- ;;^UTILITY(U,$J,358.3,7739,1,4,0)
- ;;=4^V00.891A
- ;;^UTILITY(U,$J,358.3,7739,2)
- ;;=^5055964
- ;;^UTILITY(U,$J,358.3,7740,0)
- ;;=V00.891D^^30^415^58
- ;;^UTILITY(U,$J,358.3,7740,1,0)
+ ;;^UTILITY(U,$J,358.3,21190,1,3,0)
+ ;;=3^Otitis Media,Unspec,Left Ear
+ ;;^UTILITY(U,$J,358.3,21190,1,4,0)
+ ;;=4^H66.92
+ ;;^UTILITY(U,$J,358.3,21190,2)
+ ;;=^5006641
+ ;;^UTILITY(U,$J,358.3,21191,0)
+ ;;=H66.93^^58^830^34
+ ;;^UTILITY(U,$J,358.3,21191,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7740,1,3,0)
- ;;=3^Fall from Pedestrian Conveyance,Subs Encntr
- ;;^UTILITY(U,$J,358.3,7740,1,4,0)
- ;;=4^V00.891D
- ;;^UTILITY(U,$J,358.3,7740,2)
- ;;=^5055965
- ;;^UTILITY(U,$J,358.3,7741,0)
- ;;=V00.892A^^30^415^99
- ;;^UTILITY(U,$J,358.3,7741,1,0)
+ ;;^UTILITY(U,$J,358.3,21191,1,3,0)
+ ;;=3^Otitis Media,Unspec,Bilateral
+ ;;^UTILITY(U,$J,358.3,21191,1,4,0)
+ ;;=4^H66.93
+ ;;^UTILITY(U,$J,358.3,21191,2)
+ ;;=^5006642
+ ;;^UTILITY(U,$J,358.3,21192,0)
+ ;;=H81.10^^58^830^37
+ ;;^UTILITY(U,$J,358.3,21192,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7741,1,3,0)
- ;;=3^Pedestrian Conveyance Colliding w/ Stationary Obj,Init Encntr
- ;;^UTILITY(U,$J,358.3,7741,1,4,0)
- ;;=4^V00.892A
- ;;^UTILITY(U,$J,358.3,7741,2)
- ;;=^5055967
- ;;^UTILITY(U,$J,358.3,7742,0)
- ;;=V00.892D^^30^415^100
- ;;^UTILITY(U,$J,358.3,7742,1,0)
+ ;;^UTILITY(U,$J,358.3,21192,1,3,0)
+ ;;=3^Paroxysmal Veritgo,Benign,Unspec Ear
+ ;;^UTILITY(U,$J,358.3,21192,1,4,0)
+ ;;=4^H81.10
+ ;;^UTILITY(U,$J,358.3,21192,2)
+ ;;=^5006864
+ ;;^UTILITY(U,$J,358.3,21193,0)
+ ;;=H93.13^^58^830^38
+ ;;^UTILITY(U,$J,358.3,21193,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7742,1,3,0)
- ;;=3^Pedestrian Conveyance Colliding w/ Stationary Obj,Subs Encntr
- ;;^UTILITY(U,$J,358.3,7742,1,4,0)
- ;;=4^V00.892D
- ;;^UTILITY(U,$J,358.3,7742,2)
- ;;=^5055968
- ;;^UTILITY(U,$J,358.3,7743,0)
- ;;=V00.898A^^30^415^97
- ;;^UTILITY(U,$J,358.3,7743,1,0)
+ ;;^UTILITY(U,$J,358.3,21193,1,3,0)
+ ;;=3^Tinnitus,Bilateral
+ ;;^UTILITY(U,$J,358.3,21193,1,4,0)
+ ;;=4^H93.13
+ ;;^UTILITY(U,$J,358.3,21193,2)
+ ;;=^5006966
+ ;;^UTILITY(U,$J,358.3,21194,0)
+ ;;=H93.12^^58^830^39
+ ;;^UTILITY(U,$J,358.3,21194,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7743,1,3,0)
- ;;=3^Pedestrian Conveyance Accident NEC,Init Encntr
- ;;^UTILITY(U,$J,358.3,7743,1,4,0)
- ;;=4^V00.898A
- ;;^UTILITY(U,$J,358.3,7743,2)
- ;;=^5055970
- ;;^UTILITY(U,$J,358.3,7744,0)
- ;;=V00.898D^^30^415^98
- ;;^UTILITY(U,$J,358.3,7744,1,0)
+ ;;^UTILITY(U,$J,358.3,21194,1,3,0)
+ ;;=3^Tinnitus,Left Ear
+ ;;^UTILITY(U,$J,358.3,21194,1,4,0)
+ ;;=4^H93.12
+ ;;^UTILITY(U,$J,358.3,21194,2)
+ ;;=^5006965
+ ;;^UTILITY(U,$J,358.3,21195,0)
+ ;;=H93.11^^58^830^40
+ ;;^UTILITY(U,$J,358.3,21195,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7744,1,3,0)
- ;;=3^Pedestrian Conveyance Accident NEC,Subs Encntr
- ;;^UTILITY(U,$J,358.3,7744,1,4,0)
- ;;=4^V00.898D
- ;;^UTILITY(U,$J,358.3,7744,2)
- ;;=^5055971
- ;;^UTILITY(U,$J,358.3,7745,0)
- ;;=W00.0XXA^^30^415^79
- ;;^UTILITY(U,$J,358.3,7745,1,0)
+ ;;^UTILITY(U,$J,358.3,21195,1,3,0)
+ ;;=3^Tinnitus,Right Ear
+ ;;^UTILITY(U,$J,358.3,21195,1,4,0)
+ ;;=4^H93.11
+ ;;^UTILITY(U,$J,358.3,21195,2)
+ ;;=^5006964
+ ;;^UTILITY(U,$J,358.3,21196,0)
+ ;;=H92.01^^58^830^33
+ ;;^UTILITY(U,$J,358.3,21196,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7745,1,3,0)
- ;;=3^Fall on Same Level d/t Ice/Snow,Init Encntr
- ;;^UTILITY(U,$J,358.3,7745,1,4,0)
- ;;=4^W00.0XXA
- ;;^UTILITY(U,$J,358.3,7745,2)
- ;;=^5059510
- ;;^UTILITY(U,$J,358.3,7746,0)
- ;;=W00.0XXD^^30^415^80
- ;;^UTILITY(U,$J,358.3,7746,1,0)
+ ;;^UTILITY(U,$J,358.3,21196,1,3,0)
+ ;;=3^Otalgia,Right Ear
+ ;;^UTILITY(U,$J,358.3,21196,1,4,0)
+ ;;=4^H92.01
+ ;;^UTILITY(U,$J,358.3,21196,2)
+ ;;=^5006945
+ ;;^UTILITY(U,$J,358.3,21197,0)
+ ;;=H92.02^^58^830^32
+ ;;^UTILITY(U,$J,358.3,21197,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7746,1,3,0)
- ;;=3^Fall on Same Level d/t Ice/Snow,Subs Encntr
- ;;^UTILITY(U,$J,358.3,7746,1,4,0)
- ;;=4^W00.0XXD
- ;;^UTILITY(U,$J,358.3,7746,2)
- ;;=^5059511
- ;;^UTILITY(U,$J,358.3,7747,0)
- ;;=W00.1XXA^^30^415^59
- ;;^UTILITY(U,$J,358.3,7747,1,0)
+ ;;^UTILITY(U,$J,358.3,21197,1,3,0)
+ ;;=3^Otalgia,Left Ear
+ ;;^UTILITY(U,$J,358.3,21197,1,4,0)
+ ;;=4^H92.02
+ ;;^UTILITY(U,$J,358.3,21197,2)
+ ;;=^5006946
+ ;;^UTILITY(U,$J,358.3,21198,0)
+ ;;=H92.03^^58^830^31
+ ;;^UTILITY(U,$J,358.3,21198,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,7747,1,3,0)
- ;;=3^Fall from Stairs/Steps d/t Ice/Snow,Init Encntr
- ;;^UTILITY(U,$J,358.3,7747,1,4,0)
- ;;=4^W00.1XXA
- ;;^UTILITY(U,$J,358.3,7747,2)
- ;;=^5059513
+ ;;^UTILITY(U,$J,358.3,21198,1,3,0)
+ ;;=3^Otalgia,Bilateral
+ ;;^UTILITY(U,$J,358.3,21198,1,4,0)
+ ;;=4^H92.03
+ ;;^UTILITY(U,$J,358.3,21198,2)
+ ;;=^5006947
+ ;;^UTILITY(U,$J,358.3,21199,0)
+ ;;=H91.92^^58^830^22
+ ;;^UTILITY(U,$J,358.3,21199,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21199,1,3,0)
+ ;;=3^Hearing Loss,Unspec,Left Ear
+ ;;^UTILITY(U,$J,358.3,21199,1,4,0)
+ ;;=4^H91.92
+ ;;^UTILITY(U,$J,358.3,21199,2)
+ ;;=^5133554
+ ;;^UTILITY(U,$J,358.3,21200,0)
+ ;;=H91.93^^58^830^21
+ ;;^UTILITY(U,$J,358.3,21200,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21200,1,3,0)
+ ;;=3^Hearing Loss,Unspec,Bilateral
+ ;;^UTILITY(U,$J,358.3,21200,1,4,0)
+ ;;=4^H91.93
+ ;;^UTILITY(U,$J,358.3,21200,2)
+ ;;=^5006944
+ ;;^UTILITY(U,$J,358.3,21201,0)
+ ;;=H91.91^^58^830^23
+ ;;^UTILITY(U,$J,358.3,21201,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21201,1,3,0)
+ ;;=3^Hearing Loss,Unspec,Right Ear
+ ;;^UTILITY(U,$J,358.3,21201,1,4,0)
+ ;;=4^H91.91
+ ;;^UTILITY(U,$J,358.3,21201,2)
+ ;;=^5133553
+ ;;^UTILITY(U,$J,358.3,21202,0)
+ ;;=H65.02^^58^830^4
+ ;;^UTILITY(U,$J,358.3,21202,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21202,1,3,0)
+ ;;=3^Acute Serous Otitis Media,Left Ear
+ ;;^UTILITY(U,$J,358.3,21202,1,4,0)
+ ;;=4^H65.02
+ ;;^UTILITY(U,$J,358.3,21202,2)
+ ;;=^5006571
+ ;;^UTILITY(U,$J,358.3,21203,0)
+ ;;=H60.312^^58^830^19
+ ;;^UTILITY(U,$J,358.3,21203,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21203,1,3,0)
+ ;;=3^Diffuse Otitis Externa,Left Ear
+ ;;^UTILITY(U,$J,358.3,21203,1,4,0)
+ ;;=4^H60.312
+ ;;^UTILITY(U,$J,358.3,21203,2)
+ ;;=^5006448
+ ;;^UTILITY(U,$J,358.3,21204,0)
+ ;;=H60.311^^58^830^20
+ ;;^UTILITY(U,$J,358.3,21204,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21204,1,3,0)
+ ;;=3^Diffuse Otitis Externa,Right Ear
+ ;;^UTILITY(U,$J,358.3,21204,1,4,0)
+ ;;=4^H60.311
+ ;;^UTILITY(U,$J,358.3,21204,2)
+ ;;=^5006447
+ ;;^UTILITY(U,$J,358.3,21205,0)
+ ;;=H55.09^^58^830^30
+ ;;^UTILITY(U,$J,358.3,21205,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21205,1,3,0)
+ ;;=3^Nystagmus NEC
+ ;;^UTILITY(U,$J,358.3,21205,1,4,0)
+ ;;=4^H55.09
+ ;;^UTILITY(U,$J,358.3,21205,2)
+ ;;=^87599
+ ;;^UTILITY(U,$J,358.3,21206,0)
+ ;;=H60.01^^58^830^2
+ ;;^UTILITY(U,$J,358.3,21206,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21206,1,3,0)
+ ;;=3^Abscess External Ear,Right
+ ;;^UTILITY(U,$J,358.3,21206,1,4,0)
+ ;;=4^H60.01
+ ;;^UTILITY(U,$J,358.3,21206,2)
+ ;;=^5006436
+ ;;^UTILITY(U,$J,358.3,21207,0)
+ ;;=H60.02^^58^830^1
+ ;;^UTILITY(U,$J,358.3,21207,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21207,1,3,0)
+ ;;=3^Abscess External Ear,Left
+ ;;^UTILITY(U,$J,358.3,21207,1,4,0)
+ ;;=4^H60.02
+ ;;^UTILITY(U,$J,358.3,21207,2)
+ ;;=^5006437
+ ;;^UTILITY(U,$J,358.3,21208,0)
+ ;;=H60.12^^58^830^13
+ ;;^UTILITY(U,$J,358.3,21208,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21208,1,3,0)
+ ;;=3^Cellulitis External Ear,Left
+ ;;^UTILITY(U,$J,358.3,21208,1,4,0)
+ ;;=4^H60.12
+ ;;^UTILITY(U,$J,358.3,21208,2)
+ ;;=^5006441
+ ;;^UTILITY(U,$J,358.3,21209,0)
+ ;;=H60.11^^58^830^14
+ ;;^UTILITY(U,$J,358.3,21209,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21209,1,3,0)
+ ;;=3^Cellulitis External Ear,Right
+ ;;^UTILITY(U,$J,358.3,21209,1,4,0)
+ ;;=4^H60.11
+ ;;^UTILITY(U,$J,358.3,21209,2)
+ ;;=^5006440
+ ;;^UTILITY(U,$J,358.3,21210,0)
+ ;;=H61.21^^58^830^26
+ ;;^UTILITY(U,$J,358.3,21210,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21210,1,3,0)
+ ;;=3^Impacted Cerumen,Right Ear
+ ;;^UTILITY(U,$J,358.3,21210,1,4,0)
+ ;;=4^H61.21
+ ;;^UTILITY(U,$J,358.3,21210,2)
+ ;;=^5006531
+ ;;^UTILITY(U,$J,358.3,21211,0)
+ ;;=H61.22^^58^830^25
+ ;;^UTILITY(U,$J,358.3,21211,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21211,1,3,0)
+ ;;=3^Impacted Cerumen,Left Ear
+ ;;^UTILITY(U,$J,358.3,21211,1,4,0)
+ ;;=4^H61.22
+ ;;^UTILITY(U,$J,358.3,21211,2)
+ ;;=^5006532
+ ;;^UTILITY(U,$J,358.3,21212,0)
+ ;;=H61.23^^58^830^24
+ ;;^UTILITY(U,$J,358.3,21212,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21212,1,3,0)
+ ;;=3^Impacted Cerumen,Bilateral 
+ ;;^UTILITY(U,$J,358.3,21212,1,4,0)
+ ;;=4^H61.23
+ ;;^UTILITY(U,$J,358.3,21212,2)
+ ;;=^5006533
+ ;;^UTILITY(U,$J,358.3,21213,0)
+ ;;=H81.01^^58^830^29
+ ;;^UTILITY(U,$J,358.3,21213,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21213,1,3,0)
+ ;;=3^Meniere's Disease,Right Ear
+ ;;^UTILITY(U,$J,358.3,21213,1,4,0)
+ ;;=4^H81.01
+ ;;^UTILITY(U,$J,358.3,21213,2)
+ ;;=^5006860
+ ;;^UTILITY(U,$J,358.3,21214,0)
+ ;;=H81.02^^58^830^28
+ ;;^UTILITY(U,$J,358.3,21214,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21214,1,3,0)
+ ;;=3^Meniere's Disease,Left Ear
+ ;;^UTILITY(U,$J,358.3,21214,1,4,0)
+ ;;=4^H81.02
+ ;;^UTILITY(U,$J,358.3,21214,2)
+ ;;=^5006861
+ ;;^UTILITY(U,$J,358.3,21215,0)
+ ;;=H81.03^^58^830^27
+ ;;^UTILITY(U,$J,358.3,21215,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21215,1,3,0)
+ ;;=3^Meniere's Disease,Bilateral
+ ;;^UTILITY(U,$J,358.3,21215,1,4,0)
+ ;;=4^H81.03
+ ;;^UTILITY(U,$J,358.3,21215,2)
+ ;;=^5006862
+ ;;^UTILITY(U,$J,358.3,21216,0)
+ ;;=H81.12^^58^830^9
+ ;;^UTILITY(U,$J,358.3,21216,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21216,1,3,0)
+ ;;=3^Benign Paroxysmal Vertigo,Left Ear
+ ;;^UTILITY(U,$J,358.3,21216,1,4,0)
+ ;;=4^H81.12
+ ;;^UTILITY(U,$J,358.3,21216,2)
+ ;;=^5006866
+ ;;^UTILITY(U,$J,358.3,21217,0)
+ ;;=H81.11^^58^830^10
+ ;;^UTILITY(U,$J,358.3,21217,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21217,1,3,0)
+ ;;=3^Benign Paroxysmal Vertigo,Right Ear
+ ;;^UTILITY(U,$J,358.3,21217,1,4,0)
+ ;;=4^H81.11
+ ;;^UTILITY(U,$J,358.3,21217,2)
+ ;;=^5006865
+ ;;^UTILITY(U,$J,358.3,21218,0)
+ ;;=H81.13^^58^830^8
+ ;;^UTILITY(U,$J,358.3,21218,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21218,1,3,0)
+ ;;=3^Benign Paroxysmal Vertigo,Bilateral
+ ;;^UTILITY(U,$J,358.3,21218,1,4,0)
+ ;;=4^H81.13
+ ;;^UTILITY(U,$J,358.3,21218,2)
+ ;;=^5006867
+ ;;^UTILITY(U,$J,358.3,21219,0)
+ ;;=H81.10^^58^830^11
+ ;;^UTILITY(U,$J,358.3,21219,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21219,1,3,0)
+ ;;=3^Benign Paroxysmal Vertigo,Unspec Ear
+ ;;^UTILITY(U,$J,358.3,21219,1,4,0)
+ ;;=4^H81.10
+ ;;^UTILITY(U,$J,358.3,21219,2)
+ ;;=^5006864
+ ;;^UTILITY(U,$J,358.3,21220,0)
+ ;;=B37.84^^58^830^12
+ ;;^UTILITY(U,$J,358.3,21220,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21220,1,3,0)
+ ;;=3^Candidal Otitis Externa
+ ;;^UTILITY(U,$J,358.3,21220,1,4,0)
+ ;;=4^B37.84
+ ;;^UTILITY(U,$J,358.3,21220,2)
+ ;;=^266875
+ ;;^UTILITY(U,$J,358.3,21221,0)
+ ;;=H60.313^^58^830^18
+ ;;^UTILITY(U,$J,358.3,21221,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21221,1,3,0)
+ ;;=3^Diffuse Otitis Externa,Bilateral
+ ;;^UTILITY(U,$J,358.3,21221,1,4,0)
+ ;;=4^H60.313
+ ;;^UTILITY(U,$J,358.3,21221,2)
+ ;;=^5006449
+ ;;^UTILITY(U,$J,358.3,21222,0)
+ ;;=B37.0^^58^831^13
+ ;;^UTILITY(U,$J,358.3,21222,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,21222,1,3,0)
+ ;;=3^Candidal Stomatitis
+ ;;^UTILITY(U,$J,358.3,21222,1,4,0)
+ ;;=4^B37.0
