@@ -1,132 +1,362 @@
-IBDEI0E7 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0E7 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6531,0)
- ;;=C82.30^^30^396^69
- ;;^UTILITY(U,$J,358.3,6531,1,0)
+ ;;^UTILITY(U,$J,358.3,17930,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6531,1,3,0)
- ;;=3^Follicular Lymphoma Grade IIIa,Unspec Site
- ;;^UTILITY(U,$J,358.3,6531,1,4,0)
- ;;=4^C82.30
- ;;^UTILITY(U,$J,358.3,6531,2)
- ;;=^5001491
- ;;^UTILITY(U,$J,358.3,6532,0)
- ;;=C82.49^^30^396^70
- ;;^UTILITY(U,$J,358.3,6532,1,0)
+ ;;^UTILITY(U,$J,358.3,17930,1,3,0)
+ ;;=3^CKD,Stage 2
+ ;;^UTILITY(U,$J,358.3,17930,1,4,0)
+ ;;=4^N18.2
+ ;;^UTILITY(U,$J,358.3,17930,2)
+ ;;=^5015603
+ ;;^UTILITY(U,$J,358.3,17931,0)
+ ;;=N18.3^^53^751^4
+ ;;^UTILITY(U,$J,358.3,17931,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6532,1,3,0)
- ;;=3^Follicular Lymphoma Grade IIIb,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,6532,1,4,0)
- ;;=4^C82.49
- ;;^UTILITY(U,$J,358.3,6532,2)
- ;;=^5001510
- ;;^UTILITY(U,$J,358.3,6533,0)
- ;;=C82.40^^30^396^71
- ;;^UTILITY(U,$J,358.3,6533,1,0)
+ ;;^UTILITY(U,$J,358.3,17931,1,3,0)
+ ;;=3^CKD,Stage 3
+ ;;^UTILITY(U,$J,358.3,17931,1,4,0)
+ ;;=4^N18.3
+ ;;^UTILITY(U,$J,358.3,17931,2)
+ ;;=^5015604
+ ;;^UTILITY(U,$J,358.3,17932,0)
+ ;;=N18.4^^53^751^5
+ ;;^UTILITY(U,$J,358.3,17932,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6533,1,3,0)
- ;;=3^Follicular Lymphoma Grade IIIb,Unspec Site
- ;;^UTILITY(U,$J,358.3,6533,1,4,0)
- ;;=4^C82.40
- ;;^UTILITY(U,$J,358.3,6533,2)
- ;;=^5001501
- ;;^UTILITY(U,$J,358.3,6534,0)
- ;;=C82.99^^30^396^72
- ;;^UTILITY(U,$J,358.3,6534,1,0)
+ ;;^UTILITY(U,$J,358.3,17932,1,3,0)
+ ;;=3^CKD,Stage 4
+ ;;^UTILITY(U,$J,358.3,17932,1,4,0)
+ ;;=4^N18.4
+ ;;^UTILITY(U,$J,358.3,17932,2)
+ ;;=^5015605
+ ;;^UTILITY(U,$J,358.3,17933,0)
+ ;;=N18.5^^53^751^6
+ ;;^UTILITY(U,$J,358.3,17933,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6534,1,3,0)
- ;;=3^Follicular Lymphoma Unspec,Extranodal/Solid Organ Sites
- ;;^UTILITY(U,$J,358.3,6534,1,4,0)
- ;;=4^C82.99
- ;;^UTILITY(U,$J,358.3,6534,2)
- ;;=^5001550
- ;;^UTILITY(U,$J,358.3,6535,0)
- ;;=C82.90^^30^396^73
- ;;^UTILITY(U,$J,358.3,6535,1,0)
+ ;;^UTILITY(U,$J,358.3,17933,1,3,0)
+ ;;=3^CKD,Stage 5
+ ;;^UTILITY(U,$J,358.3,17933,1,4,0)
+ ;;=4^N18.5
+ ;;^UTILITY(U,$J,358.3,17933,2)
+ ;;=^5015606
+ ;;^UTILITY(U,$J,358.3,17934,0)
+ ;;=M02.30^^53^752^48
+ ;;^UTILITY(U,$J,358.3,17934,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6535,1,3,0)
- ;;=3^Follicular Lymphoma Unspec,Unspec Site
- ;;^UTILITY(U,$J,358.3,6535,1,4,0)
- ;;=4^C82.90
- ;;^UTILITY(U,$J,358.3,6535,2)
- ;;=^5001541
- ;;^UTILITY(U,$J,358.3,6536,0)
- ;;=R59.1^^30^396^58
- ;;^UTILITY(U,$J,358.3,6536,1,0)
+ ;;^UTILITY(U,$J,358.3,17934,1,3,0)
+ ;;=3^Reiter's Disease,Unspec Site
+ ;;^UTILITY(U,$J,358.3,17934,1,4,0)
+ ;;=4^M02.30
+ ;;^UTILITY(U,$J,358.3,17934,2)
+ ;;=^5009790
+ ;;^UTILITY(U,$J,358.3,17935,0)
+ ;;=M10.00^^53^752^12
+ ;;^UTILITY(U,$J,358.3,17935,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6536,1,3,0)
- ;;=3^Enlarged Lymph Nodes,Generalized
- ;;^UTILITY(U,$J,358.3,6536,1,4,0)
- ;;=4^R59.1
- ;;^UTILITY(U,$J,358.3,6536,2)
- ;;=^5019530
- ;;^UTILITY(U,$J,358.3,6537,0)
- ;;=C91.40^^30^396^77
- ;;^UTILITY(U,$J,358.3,6537,1,0)
+ ;;^UTILITY(U,$J,358.3,17935,1,3,0)
+ ;;=3^Idiopathic Gout,Unspec Site
+ ;;^UTILITY(U,$J,358.3,17935,1,4,0)
+ ;;=4^M10.00
+ ;;^UTILITY(U,$J,358.3,17935,2)
+ ;;=^5010284
+ ;;^UTILITY(U,$J,358.3,17936,0)
+ ;;=M10.9^^53^752^11
+ ;;^UTILITY(U,$J,358.3,17936,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6537,1,3,0)
- ;;=3^Hairy Cell Leukemia,Not in Remission
- ;;^UTILITY(U,$J,358.3,6537,1,4,0)
- ;;=4^C91.40
- ;;^UTILITY(U,$J,358.3,6537,2)
- ;;=^5001771
- ;;^UTILITY(U,$J,358.3,6538,0)
- ;;=C91.42^^30^396^75
- ;;^UTILITY(U,$J,358.3,6538,1,0)
+ ;;^UTILITY(U,$J,358.3,17936,1,3,0)
+ ;;=3^Gout,Unspec
+ ;;^UTILITY(U,$J,358.3,17936,1,4,0)
+ ;;=4^M10.9
+ ;;^UTILITY(U,$J,358.3,17936,2)
+ ;;=^5010404
+ ;;^UTILITY(U,$J,358.3,17937,0)
+ ;;=L40.59^^53^752^46
+ ;;^UTILITY(U,$J,358.3,17937,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6538,1,3,0)
- ;;=3^Hairy Cell Leukemia,In Relapse
- ;;^UTILITY(U,$J,358.3,6538,1,4,0)
- ;;=4^C91.42
- ;;^UTILITY(U,$J,358.3,6538,2)
- ;;=^5001773
- ;;^UTILITY(U,$J,358.3,6539,0)
- ;;=C91.41^^30^396^76
- ;;^UTILITY(U,$J,358.3,6539,1,0)
+ ;;^UTILITY(U,$J,358.3,17937,1,3,0)
+ ;;=3^Psoriatic Arthropathy NEC
+ ;;^UTILITY(U,$J,358.3,17937,1,4,0)
+ ;;=4^L40.59
+ ;;^UTILITY(U,$J,358.3,17937,2)
+ ;;=^5009170
+ ;;^UTILITY(U,$J,358.3,17938,0)
+ ;;=M32.10^^53^752^74
+ ;;^UTILITY(U,$J,358.3,17938,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6539,1,3,0)
- ;;=3^Hairy Cell Leukemia,In Remission
- ;;^UTILITY(U,$J,358.3,6539,1,4,0)
- ;;=4^C91.41
- ;;^UTILITY(U,$J,358.3,6539,2)
- ;;=^5001772
- ;;^UTILITY(U,$J,358.3,6540,0)
- ;;=D57.01^^30^396^78
- ;;^UTILITY(U,$J,358.3,6540,1,0)
+ ;;^UTILITY(U,$J,358.3,17938,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus
+ ;;^UTILITY(U,$J,358.3,17938,1,4,0)
+ ;;=4^M32.10
+ ;;^UTILITY(U,$J,358.3,17938,2)
+ ;;=^5011753
+ ;;^UTILITY(U,$J,358.3,17939,0)
+ ;;=M06.9^^53^752^49
+ ;;^UTILITY(U,$J,358.3,17939,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6540,1,3,0)
- ;;=3^Hb-SS Disease w/ Acute Chest Syndrome
- ;;^UTILITY(U,$J,358.3,6540,1,4,0)
- ;;=4^D57.01
- ;;^UTILITY(U,$J,358.3,6540,2)
- ;;=^5002307
- ;;^UTILITY(U,$J,358.3,6541,0)
- ;;=D57.00^^30^396^79
- ;;^UTILITY(U,$J,358.3,6541,1,0)
+ ;;^UTILITY(U,$J,358.3,17939,1,3,0)
+ ;;=3^Rheumatoid Arthritis,Unspec
+ ;;^UTILITY(U,$J,358.3,17939,1,4,0)
+ ;;=4^M06.9
+ ;;^UTILITY(U,$J,358.3,17939,2)
+ ;;=^5010145
+ ;;^UTILITY(U,$J,358.3,17940,0)
+ ;;=M06.4^^53^752^13
+ ;;^UTILITY(U,$J,358.3,17940,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6541,1,3,0)
- ;;=3^Hb-SS Disease w/ Crisis,Unspec
- ;;^UTILITY(U,$J,358.3,6541,1,4,0)
- ;;=4^D57.00
- ;;^UTILITY(U,$J,358.3,6541,2)
- ;;=^5002306
- ;;^UTILITY(U,$J,358.3,6542,0)
- ;;=D57.02^^30^396^80
- ;;^UTILITY(U,$J,358.3,6542,1,0)
+ ;;^UTILITY(U,$J,358.3,17940,1,3,0)
+ ;;=3^Inflammatory Polyarthropathy
+ ;;^UTILITY(U,$J,358.3,17940,1,4,0)
+ ;;=4^M06.4
+ ;;^UTILITY(U,$J,358.3,17940,2)
+ ;;=^5010120
+ ;;^UTILITY(U,$J,358.3,17941,0)
+ ;;=M19.90^^53^752^18
+ ;;^UTILITY(U,$J,358.3,17941,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6542,1,3,0)
- ;;=3^Hb-SS Disease w/ Splenic Sequestration
- ;;^UTILITY(U,$J,358.3,6542,1,4,0)
- ;;=4^D57.02
- ;;^UTILITY(U,$J,358.3,6542,2)
- ;;=^5002308
- ;;^UTILITY(U,$J,358.3,6543,0)
- ;;=D68.32^^30^396^82
- ;;^UTILITY(U,$J,358.3,6543,1,0)
+ ;;^UTILITY(U,$J,358.3,17941,1,3,0)
+ ;;=3^Osteoarthritis,Unspec Site
+ ;;^UTILITY(U,$J,358.3,17941,1,4,0)
+ ;;=4^M19.90
+ ;;^UTILITY(U,$J,358.3,17941,2)
+ ;;=^5010853
+ ;;^UTILITY(U,$J,358.3,17942,0)
+ ;;=M19.011^^53^752^44
+ ;;^UTILITY(U,$J,358.3,17942,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6543,1,3,0)
- ;;=3^Hemorrhagic Disorder d/t Extrinsic Circulating Anticoagulants
- ;;^UTILITY(U,$J,358.3,6543,1,4,0)
- ;;=4^D68.32
+ ;;^UTILITY(U,$J,358.3,17942,1,3,0)
+ ;;=3^Primary Osteoarthritis,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,17942,1,4,0)
+ ;;=4^M19.011
+ ;;^UTILITY(U,$J,358.3,17942,2)
+ ;;=^5010808
+ ;;^UTILITY(U,$J,358.3,17943,0)
+ ;;=M19.012^^53^752^37
+ ;;^UTILITY(U,$J,358.3,17943,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17943,1,3,0)
+ ;;=3^Primary Osteoarthritis,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,17943,1,4,0)
+ ;;=4^M19.012
+ ;;^UTILITY(U,$J,358.3,17943,2)
+ ;;=^5010809
+ ;;^UTILITY(U,$J,358.3,17944,0)
+ ;;=M19.211^^53^752^68
+ ;;^UTILITY(U,$J,358.3,17944,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17944,1,3,0)
+ ;;=3^Secondary Osteoarthritis,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,17944,1,4,0)
+ ;;=4^M19.211
+ ;;^UTILITY(U,$J,358.3,17944,2)
+ ;;=^5010838
+ ;;^UTILITY(U,$J,358.3,17945,0)
+ ;;=M19.212^^53^752^64
+ ;;^UTILITY(U,$J,358.3,17945,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17945,1,3,0)
+ ;;=3^Secondary Osteoarthritis,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,17945,1,4,0)
+ ;;=4^M19.212
+ ;;^UTILITY(U,$J,358.3,17945,2)
+ ;;=^5010839
+ ;;^UTILITY(U,$J,358.3,17946,0)
+ ;;=M19.021^^53^752^40
+ ;;^UTILITY(U,$J,358.3,17946,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17946,1,3,0)
+ ;;=3^Primary Osteoarthritis,Right Elbow
+ ;;^UTILITY(U,$J,358.3,17946,1,4,0)
+ ;;=4^M19.021
+ ;;^UTILITY(U,$J,358.3,17946,2)
+ ;;=^5010811
+ ;;^UTILITY(U,$J,358.3,17947,0)
+ ;;=M19.022^^53^752^33
+ ;;^UTILITY(U,$J,358.3,17947,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17947,1,3,0)
+ ;;=3^Primary Osteoarthritis,Left Elbow
+ ;;^UTILITY(U,$J,358.3,17947,1,4,0)
+ ;;=4^M19.022
+ ;;^UTILITY(U,$J,358.3,17947,2)
+ ;;=^5010812
+ ;;^UTILITY(U,$J,358.3,17948,0)
+ ;;=M19.031^^53^752^45
+ ;;^UTILITY(U,$J,358.3,17948,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17948,1,3,0)
+ ;;=3^Primary Osteoarthritis,Right Wrist
+ ;;^UTILITY(U,$J,358.3,17948,1,4,0)
+ ;;=4^M19.031
+ ;;^UTILITY(U,$J,358.3,17948,2)
+ ;;=^5010814
+ ;;^UTILITY(U,$J,358.3,17949,0)
+ ;;=M19.032^^53^752^38
+ ;;^UTILITY(U,$J,358.3,17949,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17949,1,3,0)
+ ;;=3^Primary Osteoarthritis,Left Wrist
+ ;;^UTILITY(U,$J,358.3,17949,1,4,0)
+ ;;=4^M19.032
+ ;;^UTILITY(U,$J,358.3,17949,2)
+ ;;=^5010815
+ ;;^UTILITY(U,$J,358.3,17950,0)
+ ;;=M19.041^^53^752^41
+ ;;^UTILITY(U,$J,358.3,17950,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17950,1,3,0)
+ ;;=3^Primary Osteoarthritis,Right Hand
+ ;;^UTILITY(U,$J,358.3,17950,1,4,0)
+ ;;=4^M19.041
+ ;;^UTILITY(U,$J,358.3,17950,2)
+ ;;=^5010817
+ ;;^UTILITY(U,$J,358.3,17951,0)
+ ;;=M19.042^^53^752^34
+ ;;^UTILITY(U,$J,358.3,17951,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17951,1,3,0)
+ ;;=3^Primary Osteoarthritis,Left Hand
+ ;;^UTILITY(U,$J,358.3,17951,1,4,0)
+ ;;=4^M19.042
+ ;;^UTILITY(U,$J,358.3,17951,2)
+ ;;=^5010818
+ ;;^UTILITY(U,$J,358.3,17952,0)
+ ;;=M19.221^^53^752^66
+ ;;^UTILITY(U,$J,358.3,17952,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17952,1,3,0)
+ ;;=3^Secondary Osteoarthritis,Right Elbow
+ ;;^UTILITY(U,$J,358.3,17952,1,4,0)
+ ;;=4^M19.221
+ ;;^UTILITY(U,$J,358.3,17952,2)
+ ;;=^5010841
+ ;;^UTILITY(U,$J,358.3,17953,0)
+ ;;=M19.222^^53^752^62
+ ;;^UTILITY(U,$J,358.3,17953,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17953,1,3,0)
+ ;;=3^Secondary Osteoarthritis,Left Elbow
+ ;;^UTILITY(U,$J,358.3,17953,1,4,0)
+ ;;=4^M19.222
+ ;;^UTILITY(U,$J,358.3,17953,2)
+ ;;=^5010842
+ ;;^UTILITY(U,$J,358.3,17954,0)
+ ;;=M19.231^^53^752^69
+ ;;^UTILITY(U,$J,358.3,17954,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17954,1,3,0)
+ ;;=3^Secondary Osteoarthritis,Right Wrist
+ ;;^UTILITY(U,$J,358.3,17954,1,4,0)
+ ;;=4^M19.231
+ ;;^UTILITY(U,$J,358.3,17954,2)
+ ;;=^5010844
+ ;;^UTILITY(U,$J,358.3,17955,0)
+ ;;=M19.232^^53^752^65
+ ;;^UTILITY(U,$J,358.3,17955,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17955,1,3,0)
+ ;;=3^Secondary Osteoarthritis,Left Wrist
+ ;;^UTILITY(U,$J,358.3,17955,1,4,0)
+ ;;=4^M19.232
+ ;;^UTILITY(U,$J,358.3,17955,2)
+ ;;=^5010845
+ ;;^UTILITY(U,$J,358.3,17956,0)
+ ;;=M19.241^^53^752^67
+ ;;^UTILITY(U,$J,358.3,17956,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17956,1,3,0)
+ ;;=3^Secondary Osteoarthritis,Right Hand
+ ;;^UTILITY(U,$J,358.3,17956,1,4,0)
+ ;;=4^M19.241
+ ;;^UTILITY(U,$J,358.3,17956,2)
+ ;;=^5010847
+ ;;^UTILITY(U,$J,358.3,17957,0)
+ ;;=M19.242^^53^752^63
+ ;;^UTILITY(U,$J,358.3,17957,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17957,1,3,0)
+ ;;=3^Secondary Osteoarthritis,Left Hand
+ ;;^UTILITY(U,$J,358.3,17957,1,4,0)
+ ;;=4^M19.242
+ ;;^UTILITY(U,$J,358.3,17957,2)
+ ;;=^5010848
+ ;;^UTILITY(U,$J,358.3,17958,0)
+ ;;=M16.0^^53^752^30
+ ;;^UTILITY(U,$J,358.3,17958,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17958,1,3,0)
+ ;;=3^Primary Osteoarthritis,Bilateral Hips
+ ;;^UTILITY(U,$J,358.3,17958,1,4,0)
+ ;;=4^M16.0
+ ;;^UTILITY(U,$J,358.3,17958,2)
+ ;;=^5010769
+ ;;^UTILITY(U,$J,358.3,17959,0)
+ ;;=M16.11^^53^752^42
+ ;;^UTILITY(U,$J,358.3,17959,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17959,1,3,0)
+ ;;=3^Primary Osteoarthritis,Right Hip
+ ;;^UTILITY(U,$J,358.3,17959,1,4,0)
+ ;;=4^M16.11
+ ;;^UTILITY(U,$J,358.3,17959,2)
+ ;;=^5010771
+ ;;^UTILITY(U,$J,358.3,17960,0)
+ ;;=M16.12^^53^752^35
+ ;;^UTILITY(U,$J,358.3,17960,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17960,1,3,0)
+ ;;=3^Primary Osteoarthritis,Left Hip
+ ;;^UTILITY(U,$J,358.3,17960,1,4,0)
+ ;;=4^M16.12
+ ;;^UTILITY(U,$J,358.3,17960,2)
+ ;;=^5010772
+ ;;^UTILITY(U,$J,358.3,17961,0)
+ ;;=M17.11^^53^752^43
+ ;;^UTILITY(U,$J,358.3,17961,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17961,1,3,0)
+ ;;=3^Primary Osteoarthritis,Right Knee
+ ;;^UTILITY(U,$J,358.3,17961,1,4,0)
+ ;;=4^M17.11
+ ;;^UTILITY(U,$J,358.3,17961,2)
+ ;;=^5010786
+ ;;^UTILITY(U,$J,358.3,17962,0)
+ ;;=M17.12^^53^752^36
+ ;;^UTILITY(U,$J,358.3,17962,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17962,1,3,0)
+ ;;=3^Primary Osteoarthritis,Left Knee
+ ;;^UTILITY(U,$J,358.3,17962,1,4,0)
+ ;;=4^M17.12
+ ;;^UTILITY(U,$J,358.3,17962,2)
+ ;;=^5010787
+ ;;^UTILITY(U,$J,358.3,17963,0)
+ ;;=M19.071^^53^752^39
+ ;;^UTILITY(U,$J,358.3,17963,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17963,1,3,0)
+ ;;=3^Primary Osteoarthritis,Right Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,17963,1,4,0)
+ ;;=4^M19.071
+ ;;^UTILITY(U,$J,358.3,17963,2)
+ ;;=^5010820
+ ;;^UTILITY(U,$J,358.3,17964,0)
+ ;;=M19.072^^53^752^32
+ ;;^UTILITY(U,$J,358.3,17964,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17964,1,3,0)
+ ;;=3^Primary Osteoarthritis,Left Ankle/Foot
+ ;;^UTILITY(U,$J,358.3,17964,1,4,0)
+ ;;=4^M19.072
+ ;;^UTILITY(U,$J,358.3,17964,2)
+ ;;=^5010821
+ ;;^UTILITY(U,$J,358.3,17965,0)
+ ;;=M18.11^^53^752^27
+ ;;^UTILITY(U,$J,358.3,17965,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17965,1,3,0)
+ ;;=3^Primary Osteoarthritis,1st Carpometacarp Joint,Right Hand
+ ;;^UTILITY(U,$J,358.3,17965,1,4,0)
+ ;;=4^M18.11
+ ;;^UTILITY(U,$J,358.3,17965,2)
+ ;;=^5010797

@@ -1,134 +1,352 @@
-IBDEI01X ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI01X ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,410,1,4,0)
- ;;=4^G47.21
- ;;^UTILITY(U,$J,358.3,410,2)
- ;;=^332769
- ;;^UTILITY(U,$J,358.3,411,0)
- ;;=G47.22^^3^48^4
- ;;^UTILITY(U,$J,358.3,411,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,411,1,3,0)
- ;;=3^Circadian Rhythm Sleep-Wake Disorder;Advanced Sleep Phase Type
- ;;^UTILITY(U,$J,358.3,411,1,4,0)
- ;;=4^G47.22
- ;;^UTILITY(U,$J,358.3,411,2)
- ;;=^332770
- ;;^UTILITY(U,$J,358.3,412,0)
- ;;=G47.23^^3^48^6
- ;;^UTILITY(U,$J,358.3,412,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,412,1,3,0)
- ;;=3^Circadian Rhythm Sleep-Wake Disorder;Irregular Sleep Wake Type
- ;;^UTILITY(U,$J,358.3,412,1,4,0)
- ;;=4^G47.23
- ;;^UTILITY(U,$J,358.3,412,2)
- ;;=^5003975
- ;;^UTILITY(U,$J,358.3,413,0)
- ;;=G47.24^^3^48^7
- ;;^UTILITY(U,$J,358.3,413,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,413,1,3,0)
- ;;=3^Circadian Rhythm Sleep-Wake Disorder;Non-24 Hr Sleep Wake Type
- ;;^UTILITY(U,$J,358.3,413,1,4,0)
- ;;=4^G47.24
- ;;^UTILITY(U,$J,358.3,413,2)
- ;;=^5003976
- ;;^UTILITY(U,$J,358.3,414,0)
- ;;=G47.26^^3^48^8
- ;;^UTILITY(U,$J,358.3,414,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,414,1,3,0)
- ;;=3^Circadian Rhythm Sleep-Wake Disorder;Shift Work Type
- ;;^UTILITY(U,$J,358.3,414,1,4,0)
- ;;=4^G47.26
- ;;^UTILITY(U,$J,358.3,414,2)
- ;;=^332774
- ;;^UTILITY(U,$J,358.3,415,0)
- ;;=G47.20^^3^48^9
- ;;^UTILITY(U,$J,358.3,415,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,415,1,3,0)
- ;;=3^Circadian Rhythm Sleep-Wake Disorder;Unspec Type
- ;;^UTILITY(U,$J,358.3,415,1,4,0)
- ;;=4^G47.20
- ;;^UTILITY(U,$J,358.3,415,2)
- ;;=^5003974
- ;;^UTILITY(U,$J,358.3,416,0)
- ;;=F51.3^^3^48^19
- ;;^UTILITY(U,$J,358.3,416,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,416,1,3,0)
- ;;=3^Non-Rapid Eye Movement Sleep Arousal Disorder;Sleepwalking Type
- ;;^UTILITY(U,$J,358.3,416,1,4,0)
- ;;=4^F51.3
- ;;^UTILITY(U,$J,358.3,416,2)
- ;;=^5003613
- ;;^UTILITY(U,$J,358.3,417,0)
- ;;=F51.4^^3^48^20
- ;;^UTILITY(U,$J,358.3,417,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,417,1,3,0)
- ;;=3^Non-Rapid Eye Movement Sleep Arousal Disorder;Sleep Terror Type
- ;;^UTILITY(U,$J,358.3,417,1,4,0)
- ;;=4^F51.4
- ;;^UTILITY(U,$J,358.3,417,2)
- ;;=^5003614
- ;;^UTILITY(U,$J,358.3,418,0)
- ;;=F51.5^^3^48^18
- ;;^UTILITY(U,$J,358.3,418,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,418,1,3,0)
- ;;=3^Nightmare Disorder
- ;;^UTILITY(U,$J,358.3,418,1,4,0)
- ;;=4^F51.5
- ;;^UTILITY(U,$J,358.3,418,2)
- ;;=^5003615
- ;;^UTILITY(U,$J,358.3,419,0)
- ;;=G47.52^^3^48^22
- ;;^UTILITY(U,$J,358.3,419,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,419,1,3,0)
- ;;=3^Rapid Eye Movement Sleep Behavior Disorder
- ;;^UTILITY(U,$J,358.3,419,1,4,0)
- ;;=4^G47.52
- ;;^UTILITY(U,$J,358.3,419,2)
- ;;=^332778
- ;;^UTILITY(U,$J,358.3,420,0)
- ;;=G25.81^^3^48^23
- ;;^UTILITY(U,$J,358.3,420,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,420,1,3,0)
- ;;=3^Restless Legs Syndrome
- ;;^UTILITY(U,$J,358.3,420,1,4,0)
- ;;=4^G25.81
- ;;^UTILITY(U,$J,358.3,420,2)
- ;;=^5003801
- ;;^UTILITY(U,$J,358.3,421,0)
- ;;=G47.19^^3^48^11
- ;;^UTILITY(U,$J,358.3,421,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,421,1,3,0)
- ;;=3^Hypersomnolence Disorder NEC
- ;;^UTILITY(U,$J,358.3,421,1,4,0)
- ;;=4^G47.19
- ;;^UTILITY(U,$J,358.3,421,2)
- ;;=^5003973
- ;;^UTILITY(U,$J,358.3,422,0)
- ;;=G47.8^^3^48^27
- ;;^UTILITY(U,$J,358.3,422,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,422,1,3,0)
- ;;=3^Sleep-Wake Disorder NEC
- ;;^UTILITY(U,$J,358.3,422,1,4,0)
- ;;=4^G47.8
- ;;^UTILITY(U,$J,358.3,422,2)
- ;;=^5003989
- ;;^UTILITY(U,$J,358.3,423,0)
- ;;=G47.411^^3^48^16
- ;;^UTILITY(U,$J,358.3,423,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,423,1,3,0)
- ;;=3^Narcolepsy w/ Cataplexy w/o Hypocretin Deficiency
+ ;;^UTILITY(U,$J,358.3,2009,1,3,0)
+ ;;=3^ICD DEVICE PROGR EVAL W/ ADJSMT,MULTI
+ ;;^UTILITY(U,$J,358.3,2010,0)
+ ;;=93285^^9^142^6^^^^1
+ ;;^UTILITY(U,$J,358.3,2010,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2010,1,2,0)
+ ;;=2^93285
+ ;;^UTILITY(U,$J,358.3,2010,1,3,0)
+ ;;=3^ILR DEVICE EVAL PROGR W/ ADJSMT
+ ;;^UTILITY(U,$J,358.3,2011,0)
+ ;;=93286^^9^142^14^^^^1
+ ;;^UTILITY(U,$J,358.3,2011,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2011,1,2,0)
+ ;;=2^93286
+ ;;^UTILITY(U,$J,358.3,2011,1,3,0)
+ ;;=3^PRE-OP PM DEVICE EVAL
+ ;;^UTILITY(U,$J,358.3,2012,0)
+ ;;=93287^^9^142^13^^^^1
+ ;;^UTILITY(U,$J,358.3,2012,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2012,1,2,0)
+ ;;=2^93287
+ ;;^UTILITY(U,$J,358.3,2012,1,3,0)
+ ;;=3^PRE-OP ICD DEVICE EVAL
+ ;;^UTILITY(U,$J,358.3,2013,0)
+ ;;=93288^^9^142^7^^^^1
+ ;;^UTILITY(U,$J,358.3,2013,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2013,1,2,0)
+ ;;=2^93288
+ ;;^UTILITY(U,$J,358.3,2013,1,3,0)
+ ;;=3^PM DEVICE EVAL IN PERSON
+ ;;^UTILITY(U,$J,358.3,2014,0)
+ ;;=93289^^9^142^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2014,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2014,1,2,0)
+ ;;=2^93289
+ ;;^UTILITY(U,$J,358.3,2014,1,3,0)
+ ;;=3^ICD DEVICE INTERROGATE
+ ;;^UTILITY(U,$J,358.3,2015,0)
+ ;;=93293^^9^142^11^^^^1
+ ;;^UTILITY(U,$J,358.3,2015,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2015,1,2,0)
+ ;;=2^93293
+ ;;^UTILITY(U,$J,358.3,2015,1,3,0)
+ ;;=3^PM PHONE R-STRIP DEVICE EVAL
+ ;;^UTILITY(U,$J,358.3,2016,0)
+ ;;=93296^^9^142^12^^^^1
+ ;;^UTILITY(U,$J,358.3,2016,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2016,1,2,0)
+ ;;=2^93296
+ ;;^UTILITY(U,$J,358.3,2016,1,3,0)
+ ;;=3^PM/ICD REMOTE TECH SERV
+ ;;^UTILITY(U,$J,358.3,2017,0)
+ ;;=93745^^9^142^15^^^^1
+ ;;^UTILITY(U,$J,358.3,2017,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2017,1,2,0)
+ ;;=2^93745
+ ;;^UTILITY(U,$J,358.3,2017,1,3,0)
+ ;;=3^SET-UP CARDIOVERT-DEFIBRILL
+ ;;^UTILITY(U,$J,358.3,2018,0)
+ ;;=93640^^9^142^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2018,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2018,1,2,0)
+ ;;=2^93640
+ ;;^UTILITY(U,$J,358.3,2018,1,3,0)
+ ;;=3^EVALUATION HEART DEVICE
+ ;;^UTILITY(U,$J,358.3,2019,0)
+ ;;=93307^^9^143^17^^^^1
+ ;;^UTILITY(U,$J,358.3,2019,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2019,1,2,0)
+ ;;=2^93307
+ ;;^UTILITY(U,$J,358.3,2019,1,3,0)
+ ;;=3^Echo,TT,2D,M Mode
+ ;;^UTILITY(U,$J,358.3,2020,0)
+ ;;=93308^^9^143^5^^^^1
+ ;;^UTILITY(U,$J,358.3,2020,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2020,1,2,0)
+ ;;=2^93308
+ ;;^UTILITY(U,$J,358.3,2020,1,3,0)
+ ;;=3^Echo F/U Or Limited Study
+ ;;^UTILITY(U,$J,358.3,2021,0)
+ ;;=93320^^9^143^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2021,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2021,1,2,0)
+ ;;=2^93320
+ ;;^UTILITY(U,$J,358.3,2021,1,3,0)
+ ;;=3^Doppler Echo pulse wave
+ ;;^UTILITY(U,$J,358.3,2022,0)
+ ;;=93325^^9^143^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2022,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2022,1,2,0)
+ ;;=2^93325
+ ;;^UTILITY(U,$J,358.3,2022,1,3,0)
+ ;;=3^Doppler ECHO color flow velocity mapping
+ ;;^UTILITY(U,$J,358.3,2023,0)
+ ;;=93350^^9^143^15^^^^1
+ ;;^UTILITY(U,$J,358.3,2023,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2023,1,2,0)
+ ;;=2^93350
+ ;;^UTILITY(U,$J,358.3,2023,1,3,0)
+ ;;=3^Echo Transthoracic,Rest/Stress Test
+ ;;^UTILITY(U,$J,358.3,2024,0)
+ ;;=93306^^9^143^18^^^^1
+ ;;^UTILITY(U,$J,358.3,2024,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2024,1,2,0)
+ ;;=2^93306
+ ;;^UTILITY(U,$J,358.3,2024,1,3,0)
+ ;;=3^Echo,TT,2D,M Mode w/ Color Doppler
+ ;;^UTILITY(U,$J,358.3,2025,0)
+ ;;=93321^^9^143^4^^^^1
+ ;;^UTILITY(U,$J,358.3,2025,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2025,1,2,0)
+ ;;=2^93321
+ ;;^UTILITY(U,$J,358.3,2025,1,3,0)
+ ;;=3^Doppler Echo, Heart
+ ;;^UTILITY(U,$J,358.3,2026,0)
+ ;;=93351^^9^143^20^^^^1
+ ;;^UTILITY(U,$J,358.3,2026,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2026,1,2,0)
+ ;;=2^93351
+ ;;^UTILITY(U,$J,358.3,2026,1,3,0)
+ ;;=3^Stress TTE Complete
+ ;;^UTILITY(U,$J,358.3,2027,0)
+ ;;=93352^^9^143^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2027,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2027,1,2,0)
+ ;;=2^93352
+ ;;^UTILITY(U,$J,358.3,2027,1,3,0)
+ ;;=3^Admin ECHO Contrast Agent
+ ;;^UTILITY(U,$J,358.3,2028,0)
+ ;;=93312^^9^143^11^^^^1
+ ;;^UTILITY(U,$J,358.3,2028,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2028,1,2,0)
+ ;;=2^93312
+ ;;^UTILITY(U,$J,358.3,2028,1,3,0)
+ ;;=3^Echo Transesophageal w/wo M-mode record
+ ;;^UTILITY(U,$J,358.3,2029,0)
+ ;;=93313^^9^143^10^^^^1
+ ;;^UTILITY(U,$J,358.3,2029,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2029,1,2,0)
+ ;;=2^93313
+ ;;^UTILITY(U,$J,358.3,2029,1,3,0)
+ ;;=3^Echo Transesophageal w/ placement of probe
+ ;;^UTILITY(U,$J,358.3,2030,0)
+ ;;=93314^^9^143^9^^^^1
+ ;;^UTILITY(U,$J,358.3,2030,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2030,1,2,0)
+ ;;=2^93314
+ ;;^UTILITY(U,$J,358.3,2030,1,3,0)
+ ;;=3^Echo Transesophageal image interp and rpt
+ ;;^UTILITY(U,$J,358.3,2031,0)
+ ;;=93318^^9^143^19^^^^1
+ ;;^UTILITY(U,$J,358.3,2031,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2031,1,2,0)
+ ;;=2^93318
+ ;;^UTILITY(U,$J,358.3,2031,1,3,0)
+ ;;=3^Echo,Transesophageal Intraop
+ ;;^UTILITY(U,$J,358.3,2032,0)
+ ;;=93315^^9^143^12^^^^1
+ ;;^UTILITY(U,$J,358.3,2032,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2032,1,2,0)
+ ;;=2^93315
+ ;;^UTILITY(U,$J,358.3,2032,1,3,0)
+ ;;=3^Echo Transesophageal,Complete
+ ;;^UTILITY(U,$J,358.3,2033,0)
+ ;;=93316^^9^143^7^^^^1
+ ;;^UTILITY(U,$J,358.3,2033,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2033,1,2,0)
+ ;;=2^93316
+ ;;^UTILITY(U,$J,358.3,2033,1,3,0)
+ ;;=3^Echo Tranesophageal Placement Only
+ ;;^UTILITY(U,$J,358.3,2034,0)
+ ;;=93317^^9^143^6^^^^1
+ ;;^UTILITY(U,$J,358.3,2034,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2034,1,2,0)
+ ;;=2^93317
+ ;;^UTILITY(U,$J,358.3,2034,1,3,0)
+ ;;=3^Echo Image,Inerpretation and Report Only
+ ;;^UTILITY(U,$J,358.3,2035,0)
+ ;;=93318^^9^143^8^^^^1
+ ;;^UTILITY(U,$J,358.3,2035,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2035,1,2,0)
+ ;;=2^93318
+ ;;^UTILITY(U,$J,358.3,2035,1,3,0)
+ ;;=3^Echo Transesophageal Intraop
+ ;;^UTILITY(U,$J,358.3,2036,0)
+ ;;=93303^^9^143^14^^^^1
+ ;;^UTILITY(U,$J,358.3,2036,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2036,1,2,0)
+ ;;=2^93303
+ ;;^UTILITY(U,$J,358.3,2036,1,3,0)
+ ;;=3^Echo Transthoracic,Complete
+ ;;^UTILITY(U,$J,358.3,2037,0)
+ ;;=93304^^9^143^16^^^^1
+ ;;^UTILITY(U,$J,358.3,2037,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2037,1,2,0)
+ ;;=2^93304
+ ;;^UTILITY(U,$J,358.3,2037,1,3,0)
+ ;;=3^Echo Transthroacic F/U
+ ;;^UTILITY(U,$J,358.3,2038,0)
+ ;;=93308^^9^143^13^^^^1
+ ;;^UTILITY(U,$J,358.3,2038,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2038,1,2,0)
+ ;;=2^93308
+ ;;^UTILITY(U,$J,358.3,2038,1,3,0)
+ ;;=3^Echo Transthoracic,2D Image,Limited
+ ;;^UTILITY(U,$J,358.3,2039,0)
+ ;;=93000^^9^144^9
+ ;;^UTILITY(U,$J,358.3,2039,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2039,1,2,0)
+ ;;=2^93000
+ ;;^UTILITY(U,$J,358.3,2039,1,3,0)
+ ;;=3^EKG 12 Lead W/ Interp & Report
+ ;;^UTILITY(U,$J,358.3,2040,0)
+ ;;=93005^^9^144^11
+ ;;^UTILITY(U,$J,358.3,2040,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2040,1,2,0)
+ ;;=2^93005
+ ;;^UTILITY(U,$J,358.3,2040,1,3,0)
+ ;;=3^EKG, Tracing Only No Report
+ ;;^UTILITY(U,$J,358.3,2041,0)
+ ;;=93278^^9^144^12
+ ;;^UTILITY(U,$J,358.3,2041,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2041,1,2,0)
+ ;;=2^93278
+ ;;^UTILITY(U,$J,358.3,2041,1,3,0)
+ ;;=3^EKG/Signal-Averaged
+ ;;^UTILITY(U,$J,358.3,2042,0)
+ ;;=93010^^9^144^10^^^^1
+ ;;^UTILITY(U,$J,358.3,2042,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2042,1,2,0)
+ ;;=2^93010
+ ;;^UTILITY(U,$J,358.3,2042,1,3,0)
+ ;;=3^EKG Interp & Read Only
+ ;;^UTILITY(U,$J,358.3,2043,0)
+ ;;=0295T^^9^144^13^^^^1
+ ;;^UTILITY(U,$J,358.3,2043,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2043,1,2,0)
+ ;;=2^0295T
+ ;;^UTILITY(U,$J,358.3,2043,1,3,0)
+ ;;=3^Ext ECG Complete->48hrs/21 days
+ ;;^UTILITY(U,$J,358.3,2044,0)
+ ;;=0296T^^9^144^14^^^^1
+ ;;^UTILITY(U,$J,358.3,2044,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2044,1,2,0)
+ ;;=2^0296T
+ ;;^UTILITY(U,$J,358.3,2044,1,3,0)
+ ;;=3^Ext ECG Recording->48hr/21 days
+ ;;^UTILITY(U,$J,358.3,2045,0)
+ ;;=0297T^^9^144^16^^^^1
+ ;;^UTILITY(U,$J,358.3,2045,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2045,1,2,0)
+ ;;=2^0297T
+ ;;^UTILITY(U,$J,358.3,2045,1,3,0)
+ ;;=3^Ext ECG Scan w/Rpt-48hrs/21 days
+ ;;^UTILITY(U,$J,358.3,2046,0)
+ ;;=0298T^^9^144^15^^^^1
+ ;;^UTILITY(U,$J,358.3,2046,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2046,1,2,0)
+ ;;=2^0298T
+ ;;^UTILITY(U,$J,358.3,2046,1,3,0)
+ ;;=3^Ext ECG Review & Interp->48hrs/21 days
+ ;;^UTILITY(U,$J,358.3,2047,0)
+ ;;=93224^^9^144^1^^^^1
+ ;;^UTILITY(U,$J,358.3,2047,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2047,1,2,0)
+ ;;=2^93224
+ ;;^UTILITY(U,$J,358.3,2047,1,3,0)
+ ;;=3^ECG MONITOR, UP TO 48 HR, ALL INCLUSIVE
+ ;;^UTILITY(U,$J,358.3,2048,0)
+ ;;=93225^^9^144^2^^^^1
+ ;;^UTILITY(U,$J,358.3,2048,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2048,1,2,0)
+ ;;=2^93225
+ ;;^UTILITY(U,$J,358.3,2048,1,3,0)
+ ;;=3^ECG MONITOR, UP TO 48 HR, RECORDING ONLY
+ ;;^UTILITY(U,$J,358.3,2049,0)
+ ;;=93226^^9^144^4^^^^1
+ ;;^UTILITY(U,$J,358.3,2049,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2049,1,2,0)
+ ;;=2^93226
+ ;;^UTILITY(U,$J,358.3,2049,1,3,0)
+ ;;=3^ECG MONITOR, UP TO 48 HR, SCAN w/RPT
+ ;;^UTILITY(U,$J,358.3,2050,0)
+ ;;=93227^^9^144^3^^^^1
+ ;;^UTILITY(U,$J,358.3,2050,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2050,1,2,0)
+ ;;=2^93227
+ ;;^UTILITY(U,$J,358.3,2050,1,3,0)
+ ;;=3^ECG MONITOR, UP TO 48 HR, REVIEW & INTERP
+ ;;^UTILITY(U,$J,358.3,2051,0)
+ ;;=93228^^9^144^19^^^^1
+ ;;^UTILITY(U,$J,358.3,2051,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2051,1,2,0)
+ ;;=2^93228
+ ;;^UTILITY(U,$J,358.3,2051,1,3,0)
+ ;;=3^REMOTE 30 DAY ECG REV/REPORT
+ ;;^UTILITY(U,$J,358.3,2052,0)
+ ;;=93229^^9^144^20^^^^1
+ ;;^UTILITY(U,$J,358.3,2052,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,2052,1,2,0)
+ ;;=2^93229
+ ;;^UTILITY(U,$J,358.3,2052,1,3,0)
+ ;;=3^REMOTE 30 DAY ECG TECH SUPP
+ ;;^UTILITY(U,$J,358.3,2053,0)
+ ;;=93268^^9^144^5^^^^1

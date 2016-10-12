@@ -1,140 +1,336 @@
-IBDEI06H ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI06H ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,2703,1,4,0)
- ;;=4^K59.9
- ;;^UTILITY(U,$J,358.3,2703,2)
- ;;=^5008744
- ;;^UTILITY(U,$J,358.3,2704,0)
- ;;=K63.9^^18^206^64
- ;;^UTILITY(U,$J,358.3,2704,1,0)
+ ;;^UTILITY(U,$J,358.3,8080,0)
+ ;;=S81.832A^^29^437^180
+ ;;^UTILITY(U,$J,358.3,8080,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2704,1,3,0)
- ;;=3^Intestinal Disease,Unspec
- ;;^UTILITY(U,$J,358.3,2704,1,4,0)
- ;;=4^K63.9
- ;;^UTILITY(U,$J,358.3,2704,2)
- ;;=^5008768
- ;;^UTILITY(U,$J,358.3,2705,0)
- ;;=K58.0^^18^206^62
- ;;^UTILITY(U,$J,358.3,2705,1,0)
+ ;;^UTILITY(U,$J,358.3,8080,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of left lower leg, init encntr
+ ;;^UTILITY(U,$J,358.3,8080,1,4,0)
+ ;;=4^S81.832A
+ ;;^UTILITY(U,$J,358.3,8080,2)
+ ;;=^5040086
+ ;;^UTILITY(U,$J,358.3,8081,0)
+ ;;=S01.03XA^^29^437^195
+ ;;^UTILITY(U,$J,358.3,8081,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2705,1,3,0)
- ;;=3^IBS w/ Diarrhea
- ;;^UTILITY(U,$J,358.3,2705,1,4,0)
- ;;=4^K58.0
- ;;^UTILITY(U,$J,358.3,2705,2)
- ;;=^5008739
- ;;^UTILITY(U,$J,358.3,2706,0)
- ;;=K58.9^^18^206^63
- ;;^UTILITY(U,$J,358.3,2706,1,0)
+ ;;^UTILITY(U,$J,358.3,8081,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of scalp, init encntr
+ ;;^UTILITY(U,$J,358.3,8081,1,4,0)
+ ;;=4^S01.03XA
+ ;;^UTILITY(U,$J,358.3,8081,2)
+ ;;=^5020042
+ ;;^UTILITY(U,$J,358.3,8082,0)
+ ;;=S61.031A^^29^437^193
+ ;;^UTILITY(U,$J,358.3,8082,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2706,1,3,0)
- ;;=3^IBS w/o Diarrhea
- ;;^UTILITY(U,$J,358.3,2706,1,4,0)
- ;;=4^K58.9
- ;;^UTILITY(U,$J,358.3,2706,2)
- ;;=^5008740
- ;;^UTILITY(U,$J,358.3,2707,0)
- ;;=K90.9^^18^206^66
- ;;^UTILITY(U,$J,358.3,2707,1,0)
+ ;;^UTILITY(U,$J,358.3,8082,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of right thumb w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8082,1,4,0)
+ ;;=4^S61.031A
+ ;;^UTILITY(U,$J,358.3,8082,2)
+ ;;=^5032702
+ ;;^UTILITY(U,$J,358.3,8083,0)
+ ;;=S61.032A^^29^437^183
+ ;;^UTILITY(U,$J,358.3,8083,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2707,1,3,0)
- ;;=3^Malabsorption,Intestinal,Unspec
- ;;^UTILITY(U,$J,358.3,2707,1,4,0)
- ;;=4^K90.9
- ;;^UTILITY(U,$J,358.3,2707,2)
- ;;=^5008899
- ;;^UTILITY(U,$J,358.3,2708,0)
- ;;=K86.9^^18^206^67
- ;;^UTILITY(U,$J,358.3,2708,1,0)
+ ;;^UTILITY(U,$J,358.3,8083,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of left thumb w/o damage to nail, init
+ ;;^UTILITY(U,$J,358.3,8083,1,4,0)
+ ;;=4^S61.032A
+ ;;^UTILITY(U,$J,358.3,8083,2)
+ ;;=^5032705
+ ;;^UTILITY(U,$J,358.3,8084,0)
+ ;;=S61.531A^^29^437^194
+ ;;^UTILITY(U,$J,358.3,8084,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2708,1,3,0)
- ;;=3^Pancreas Disease,Unspec
- ;;^UTILITY(U,$J,358.3,2708,1,4,0)
- ;;=4^K86.9
- ;;^UTILITY(U,$J,358.3,2708,2)
- ;;=^5008892
- ;;^UTILITY(U,$J,358.3,2709,0)
- ;;=K85.9^^18^206^68
- ;;^UTILITY(U,$J,358.3,2709,1,0)
+ ;;^UTILITY(U,$J,358.3,8084,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of right wrist, init encntr
+ ;;^UTILITY(U,$J,358.3,8084,1,4,0)
+ ;;=4^S61.531A
+ ;;^UTILITY(U,$J,358.3,8084,2)
+ ;;=^5033038
+ ;;^UTILITY(U,$J,358.3,8085,0)
+ ;;=S61.532A^^29^437^184
+ ;;^UTILITY(U,$J,358.3,8085,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2709,1,3,0)
- ;;=3^Pancreatitis,Acute,Unspec
- ;;^UTILITY(U,$J,358.3,2709,1,4,0)
- ;;=4^K85.9
- ;;^UTILITY(U,$J,358.3,2709,2)
- ;;=^5008887
- ;;^UTILITY(U,$J,358.3,2710,0)
- ;;=Z87.11^^18^206^69
- ;;^UTILITY(U,$J,358.3,2710,1,0)
+ ;;^UTILITY(U,$J,358.3,8085,1,3,0)
+ ;;=3^Pnctr wnd w/o fb of left wrist, init encntr
+ ;;^UTILITY(U,$J,358.3,8085,1,4,0)
+ ;;=4^S61.532A
+ ;;^UTILITY(U,$J,358.3,8085,2)
+ ;;=^5033041
+ ;;^UTILITY(U,$J,358.3,8086,0)
+ ;;=S86.891A^^29^437^138
+ ;;^UTILITY(U,$J,358.3,8086,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2710,1,3,0)
- ;;=3^Personal Hx of PUD
- ;;^UTILITY(U,$J,358.3,2710,1,4,0)
- ;;=4^Z87.11
- ;;^UTILITY(U,$J,358.3,2710,2)
- ;;=^5063482
- ;;^UTILITY(U,$J,358.3,2711,0)
- ;;=D73.9^^18^206^70
- ;;^UTILITY(U,$J,358.3,2711,1,0)
+ ;;^UTILITY(U,$J,358.3,8086,1,3,0)
+ ;;=3^Musc/Tend Right Lower Leg Level Inj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,8086,1,4,0)
+ ;;=4^S86.891A
+ ;;^UTILITY(U,$J,358.3,8086,2)
+ ;;=^5137173
+ ;;^UTILITY(U,$J,358.3,8087,0)
+ ;;=S86.892A^^29^437^137
+ ;;^UTILITY(U,$J,358.3,8087,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2711,1,3,0)
- ;;=3^Spleen Disease,Unspec
- ;;^UTILITY(U,$J,358.3,2711,1,4,0)
- ;;=4^D73.9
- ;;^UTILITY(U,$J,358.3,2711,2)
- ;;=^5002386
- ;;^UTILITY(U,$J,358.3,2712,0)
- ;;=K26.7^^18^206^71
- ;;^UTILITY(U,$J,358.3,2712,1,0)
+ ;;^UTILITY(U,$J,358.3,8087,1,3,0)
+ ;;=3^Musc/Tend Left Lower Leg Level Inj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,8087,1,4,0)
+ ;;=4^S86.892A
+ ;;^UTILITY(U,$J,358.3,8087,2)
+ ;;=^5137174
+ ;;^UTILITY(U,$J,358.3,8088,0)
+ ;;=S43.51XA^^29^437^221
+ ;;^UTILITY(U,$J,358.3,8088,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2712,1,3,0)
- ;;=3^Ulcer,Chronic Duodenal w/o Hemorrhage/Perforation
- ;;^UTILITY(U,$J,358.3,2712,1,4,0)
- ;;=4^K26.7
- ;;^UTILITY(U,$J,358.3,2712,2)
- ;;=^5008526
- ;;^UTILITY(U,$J,358.3,2713,0)
- ;;=K25.7^^18^206^72
- ;;^UTILITY(U,$J,358.3,2713,1,0)
+ ;;^UTILITY(U,$J,358.3,8088,1,3,0)
+ ;;=3^Sprain of right acromioclavicular joint, initial encounter
+ ;;^UTILITY(U,$J,358.3,8088,1,4,0)
+ ;;=4^S43.51XA
+ ;;^UTILITY(U,$J,358.3,8088,2)
+ ;;=^5027903
+ ;;^UTILITY(U,$J,358.3,8089,0)
+ ;;=S43.52XA^^29^437^202
+ ;;^UTILITY(U,$J,358.3,8089,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2713,1,3,0)
- ;;=3^Ulcer,Chronic Gastric w/o Hemorrhage/Perforation
- ;;^UTILITY(U,$J,358.3,2713,1,4,0)
- ;;=4^K25.7
- ;;^UTILITY(U,$J,358.3,2713,2)
- ;;=^5008521
- ;;^UTILITY(U,$J,358.3,2714,0)
- ;;=K27.7^^18^206^73
- ;;^UTILITY(U,$J,358.3,2714,1,0)
+ ;;^UTILITY(U,$J,358.3,8089,1,3,0)
+ ;;=3^Sprain of left acromioclavicular joint, initial encounter
+ ;;^UTILITY(U,$J,358.3,8089,1,4,0)
+ ;;=4^S43.52XA
+ ;;^UTILITY(U,$J,358.3,8089,2)
+ ;;=^5027906
+ ;;^UTILITY(U,$J,358.3,8090,0)
+ ;;=S93.401A^^29^437^240
+ ;;^UTILITY(U,$J,358.3,8090,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2714,1,3,0)
- ;;=3^Ulcer,Chronic Peptic w/o Hemorrhage/Perforation
- ;;^UTILITY(U,$J,358.3,2714,1,4,0)
- ;;=4^K27.7
- ;;^UTILITY(U,$J,358.3,2714,2)
- ;;=^5008535
- ;;^UTILITY(U,$J,358.3,2715,0)
- ;;=D55.9^^18^207^1
- ;;^UTILITY(U,$J,358.3,2715,1,0)
+ ;;^UTILITY(U,$J,358.3,8090,1,3,0)
+ ;;=3^Sprain of unspecified ligament of right ankle, init encntr
+ ;;^UTILITY(U,$J,358.3,8090,1,4,0)
+ ;;=4^S93.401A
+ ;;^UTILITY(U,$J,358.3,8090,2)
+ ;;=^5045774
+ ;;^UTILITY(U,$J,358.3,8091,0)
+ ;;=S93.402A^^29^437^239
+ ;;^UTILITY(U,$J,358.3,8091,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2715,1,3,0)
- ;;=3^Anemia d/t Enzyme Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,2715,1,4,0)
- ;;=4^D55.9
- ;;^UTILITY(U,$J,358.3,2715,2)
- ;;=^5002304
- ;;^UTILITY(U,$J,358.3,2716,0)
- ;;=D63.1^^18^207^2
- ;;^UTILITY(U,$J,358.3,2716,1,0)
+ ;;^UTILITY(U,$J,358.3,8091,1,3,0)
+ ;;=3^Sprain of unspecified ligament of left ankle, init encntr
+ ;;^UTILITY(U,$J,358.3,8091,1,4,0)
+ ;;=4^S93.402A
+ ;;^UTILITY(U,$J,358.3,8091,2)
+ ;;=^5045777
+ ;;^UTILITY(U,$J,358.3,8092,0)
+ ;;=S53.401A^^29^437^222
+ ;;^UTILITY(U,$J,358.3,8092,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,2716,1,3,0)
- ;;=3^Anemia in Chronic Kidney Disease
- ;;^UTILITY(U,$J,358.3,2716,1,4,0)
- ;;=4^D63.1
- ;;^UTILITY(U,$J,358.3,2716,2)
- ;;=^332908
- ;;^UTILITY(U,$J,358.3,2717,0)
- ;;=D63.0^^18^207^3
+ ;;^UTILITY(U,$J,358.3,8092,1,3,0)
+ ;;=3^Sprain of right elbow unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8092,1,4,0)
+ ;;=4^S53.401A
+ ;;^UTILITY(U,$J,358.3,8092,2)
+ ;;=^5031361
+ ;;^UTILITY(U,$J,358.3,8093,0)
+ ;;=S53.402A^^29^437^203
+ ;;^UTILITY(U,$J,358.3,8093,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8093,1,3,0)
+ ;;=3^Sprain of left elbow unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8093,1,4,0)
+ ;;=4^S53.402A
+ ;;^UTILITY(U,$J,358.3,8093,2)
+ ;;=^5031364
+ ;;^UTILITY(U,$J,358.3,8094,0)
+ ;;=S63.610A^^29^437^225
+ ;;^UTILITY(U,$J,358.3,8094,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8094,1,3,0)
+ ;;=3^Sprain of right index finger unspec, initial encou
+ ;;^UTILITY(U,$J,358.3,8094,1,4,0)
+ ;;=4^S63.610A
+ ;;^UTILITY(U,$J,358.3,8094,2)
+ ;;=^5035622
+ ;;^UTILITY(U,$J,358.3,8095,0)
+ ;;=S63.611A^^29^437^206
+ ;;^UTILITY(U,$J,358.3,8095,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8095,1,3,0)
+ ;;=3^Sprain of left index finger unspec, initial encoun
+ ;;^UTILITY(U,$J,358.3,8095,1,4,0)
+ ;;=4^S63.611A
+ ;;^UTILITY(U,$J,358.3,8095,2)
+ ;;=^5035625
+ ;;^UTILITY(U,$J,358.3,8096,0)
+ ;;=S63.612A^^29^437^228
+ ;;^UTILITY(U,$J,358.3,8096,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8096,1,3,0)
+ ;;=3^Sprain of right middle finger unspec, initial enco
+ ;;^UTILITY(U,$J,358.3,8096,1,4,0)
+ ;;=4^S63.612A
+ ;;^UTILITY(U,$J,358.3,8096,2)
+ ;;=^5035628
+ ;;^UTILITY(U,$J,358.3,8097,0)
+ ;;=S63.613A^^29^437^209
+ ;;^UTILITY(U,$J,358.3,8097,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8097,1,3,0)
+ ;;=3^Sprain of left middle finger unspec, initial encou
+ ;;^UTILITY(U,$J,358.3,8097,1,4,0)
+ ;;=4^S63.613A
+ ;;^UTILITY(U,$J,358.3,8097,2)
+ ;;=^5035631
+ ;;^UTILITY(U,$J,358.3,8098,0)
+ ;;=S63.614A^^29^437^229
+ ;;^UTILITY(U,$J,358.3,8098,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8098,1,3,0)
+ ;;=3^Sprain of right ring finger unspec, initial encoun
+ ;;^UTILITY(U,$J,358.3,8098,1,4,0)
+ ;;=4^S63.614A
+ ;;^UTILITY(U,$J,358.3,8098,2)
+ ;;=^5035634
+ ;;^UTILITY(U,$J,358.3,8099,0)
+ ;;=S63.615A^^29^437^210
+ ;;^UTILITY(U,$J,358.3,8099,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8099,1,3,0)
+ ;;=3^Sprain of left ring finger unspec, initial encount
+ ;;^UTILITY(U,$J,358.3,8099,1,4,0)
+ ;;=4^S63.615A
+ ;;^UTILITY(U,$J,358.3,8099,2)
+ ;;=^5035637
+ ;;^UTILITY(U,$J,358.3,8100,0)
+ ;;=S63.616A^^29^437^227
+ ;;^UTILITY(U,$J,358.3,8100,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8100,1,3,0)
+ ;;=3^Sprain of right little finger unspec, initial enco
+ ;;^UTILITY(U,$J,358.3,8100,1,4,0)
+ ;;=4^S63.616A
+ ;;^UTILITY(U,$J,358.3,8100,2)
+ ;;=^5035640
+ ;;^UTILITY(U,$J,358.3,8101,0)
+ ;;=S63.617A^^29^437^208
+ ;;^UTILITY(U,$J,358.3,8101,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8101,1,3,0)
+ ;;=3^Sprain of left little finger unspec, initial encou
+ ;;^UTILITY(U,$J,358.3,8101,1,4,0)
+ ;;=4^S63.617A
+ ;;^UTILITY(U,$J,358.3,8101,2)
+ ;;=^5035643
+ ;;^UTILITY(U,$J,358.3,8102,0)
+ ;;=S93.601A^^29^437^223
+ ;;^UTILITY(U,$J,358.3,8102,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8102,1,3,0)
+ ;;=3^Sprain of right foot unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8102,1,4,0)
+ ;;=4^S93.601A
+ ;;^UTILITY(U,$J,358.3,8102,2)
+ ;;=^5045867
+ ;;^UTILITY(U,$J,358.3,8103,0)
+ ;;=S93.602A^^29^437^204
+ ;;^UTILITY(U,$J,358.3,8103,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8103,1,3,0)
+ ;;=3^Sprain of left foot unspec, initial encounter
+ ;;^UTILITY(U,$J,358.3,8103,1,4,0)
+ ;;=4^S93.602A
+ ;;^UTILITY(U,$J,358.3,8103,2)
+ ;;=^5045870
+ ;;^UTILITY(U,$J,358.3,8104,0)
+ ;;=S63.91XA^^29^437^238
+ ;;^UTILITY(U,$J,358.3,8104,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8104,1,3,0)
+ ;;=3^Sprain of unsp part of right wrist and hand, init encntr
+ ;;^UTILITY(U,$J,358.3,8104,1,4,0)
+ ;;=4^S63.91XA
+ ;;^UTILITY(U,$J,358.3,8104,2)
+ ;;=^5136046
+ ;;^UTILITY(U,$J,358.3,8105,0)
+ ;;=S63.92XA^^29^437^237
+ ;;^UTILITY(U,$J,358.3,8105,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8105,1,3,0)
+ ;;=3^Sprain of unsp part of left wrist and hand, init encntr
+ ;;^UTILITY(U,$J,358.3,8105,1,4,0)
+ ;;=4^S63.92XA
+ ;;^UTILITY(U,$J,358.3,8105,2)
+ ;;=^5136047
+ ;;^UTILITY(U,$J,358.3,8106,0)
+ ;;=S83.401A^^29^437^234
+ ;;^UTILITY(U,$J,358.3,8106,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8106,1,3,0)
+ ;;=3^Sprain of unsp collateral ligament of right knee, init
+ ;;^UTILITY(U,$J,358.3,8106,1,4,0)
+ ;;=4^S83.401A
+ ;;^UTILITY(U,$J,358.3,8106,2)
+ ;;=^5043103
+ ;;^UTILITY(U,$J,358.3,8107,0)
+ ;;=S83.402A^^29^437^233
+ ;;^UTILITY(U,$J,358.3,8107,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8107,1,3,0)
+ ;;=3^Sprain of unsp collateral ligament of left knee, init encntr
+ ;;^UTILITY(U,$J,358.3,8107,1,4,0)
+ ;;=4^S83.402A
+ ;;^UTILITY(U,$J,358.3,8107,2)
+ ;;=^5043106
+ ;;^UTILITY(U,$J,358.3,8108,0)
+ ;;=S83.411A^^29^437^217
+ ;;^UTILITY(U,$J,358.3,8108,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8108,1,3,0)
+ ;;=3^Sprain of medial collateral ligament of right knee, init
+ ;;^UTILITY(U,$J,358.3,8108,1,4,0)
+ ;;=4^S83.411A
+ ;;^UTILITY(U,$J,358.3,8108,2)
+ ;;=^5043109
+ ;;^UTILITY(U,$J,358.3,8109,0)
+ ;;=S83.412A^^29^437^218
+ ;;^UTILITY(U,$J,358.3,8109,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8109,1,3,0)
+ ;;=3^Sprain of medial collateral ligament of left knee, init
+ ;;^UTILITY(U,$J,358.3,8109,1,4,0)
+ ;;=4^S83.412A
+ ;;^UTILITY(U,$J,358.3,8109,2)
+ ;;=^5043112
+ ;;^UTILITY(U,$J,358.3,8110,0)
+ ;;=S83.421A^^29^437^200
+ ;;^UTILITY(U,$J,358.3,8110,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8110,1,3,0)
+ ;;=3^Sprain of lateral collateral ligament of right knee, init
+ ;;^UTILITY(U,$J,358.3,8110,1,4,0)
+ ;;=4^S83.421A
+ ;;^UTILITY(U,$J,358.3,8110,2)
+ ;;=^5043118
+ ;;^UTILITY(U,$J,358.3,8111,0)
+ ;;=S83.422A^^29^437^201
+ ;;^UTILITY(U,$J,358.3,8111,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8111,1,3,0)
+ ;;=3^Sprain of lateral collateral ligament of left knee, init
+ ;;^UTILITY(U,$J,358.3,8111,1,4,0)
+ ;;=4^S83.422A
+ ;;^UTILITY(U,$J,358.3,8111,2)
+ ;;=^5043121
+ ;;^UTILITY(U,$J,358.3,8112,0)
+ ;;=S83.501A^^29^437^236
+ ;;^UTILITY(U,$J,358.3,8112,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,8112,1,3,0)
+ ;;=3^Sprain of unsp cruciate ligament of right knee, init encntr
+ ;;^UTILITY(U,$J,358.3,8112,1,4,0)
+ ;;=4^S83.501A
+ ;;^UTILITY(U,$J,358.3,8112,2)
+ ;;=^5043127
+ ;;^UTILITY(U,$J,358.3,8113,0)
+ ;;=S83.502A^^29^437^235

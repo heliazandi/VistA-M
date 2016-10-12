@@ -1,140 +1,352 @@
-IBDEI07Y ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI07Y ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3419,0)
- ;;=M25.9^^18^219^74
- ;;^UTILITY(U,$J,358.3,3419,1,0)
+ ;;^UTILITY(U,$J,358.3,10052,2)
+ ;;=^5020036
+ ;;^UTILITY(U,$J,358.3,10053,0)
+ ;;=S01.91XA^^37^543^4
+ ;;^UTILITY(U,$J,358.3,10053,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3419,1,3,0)
- ;;=3^Joint Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,3419,1,4,0)
- ;;=4^M25.9
- ;;^UTILITY(U,$J,358.3,3419,2)
- ;;=^5011693
- ;;^UTILITY(U,$J,358.3,3420,0)
- ;;=M25.40^^18^219^75
- ;;^UTILITY(U,$J,358.3,3420,1,0)
+ ;;^UTILITY(U,$J,358.3,10053,1,3,0)
+ ;;=3^Laceration w/o FB of Head,Unspec Part,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10053,1,4,0)
+ ;;=4^S01.91XA
+ ;;^UTILITY(U,$J,358.3,10053,2)
+ ;;=^5020243
+ ;;^UTILITY(U,$J,358.3,10054,0)
+ ;;=S11.91XA^^37^543^35
+ ;;^UTILITY(U,$J,358.3,10054,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3420,1,3,0)
- ;;=3^Joint Effusion,Unspec Joint
- ;;^UTILITY(U,$J,358.3,3420,1,4,0)
- ;;=4^M25.40
- ;;^UTILITY(U,$J,358.3,3420,2)
- ;;=^5011575
- ;;^UTILITY(U,$J,358.3,3421,0)
- ;;=M25.70^^18^219^76
- ;;^UTILITY(U,$J,358.3,3421,1,0)
+ ;;^UTILITY(U,$J,358.3,10054,1,3,0)
+ ;;=3^Laceration w/o FB of Neck,Unspec Part,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10054,1,4,0)
+ ;;=4^S11.91XA
+ ;;^UTILITY(U,$J,358.3,10054,2)
+ ;;=^5021530
+ ;;^UTILITY(U,$J,358.3,10055,0)
+ ;;=S91.012A^^37^543^7
+ ;;^UTILITY(U,$J,358.3,10055,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3421,1,3,0)
- ;;=3^Joint Osteophyte,Unspec Joint
- ;;^UTILITY(U,$J,358.3,3421,1,4,0)
- ;;=4^M25.70
- ;;^UTILITY(U,$J,358.3,3421,2)
- ;;=^5011645
- ;;^UTILITY(U,$J,358.3,3422,0)
- ;;=M76.9^^18^219^77
- ;;^UTILITY(U,$J,358.3,3422,1,0)
+ ;;^UTILITY(U,$J,358.3,10055,1,3,0)
+ ;;=3^Laceration w/o FB of Left Ankle,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10055,1,4,0)
+ ;;=4^S91.012A
+ ;;^UTILITY(U,$J,358.3,10055,2)
+ ;;=^5044138
+ ;;^UTILITY(U,$J,358.3,10056,0)
+ ;;=S91.312A^^37^543^12
+ ;;^UTILITY(U,$J,358.3,10056,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3422,1,3,0)
- ;;=3^Joint Tendinitis,Lower Limb,Excluding Foot
- ;;^UTILITY(U,$J,358.3,3422,1,4,0)
- ;;=4^M76.9
- ;;^UTILITY(U,$J,358.3,3422,2)
- ;;=^5013299
- ;;^UTILITY(U,$J,358.3,3423,0)
- ;;=M14.60^^18^219^78
- ;;^UTILITY(U,$J,358.3,3423,1,0)
+ ;;^UTILITY(U,$J,358.3,10056,1,3,0)
+ ;;=3^Laceration w/o FB of Left Foot,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10056,1,4,0)
+ ;;=4^S91.312A
+ ;;^UTILITY(U,$J,358.3,10056,2)
+ ;;=^5044323
+ ;;^UTILITY(U,$J,358.3,10057,0)
+ ;;=S71.012A^^37^543^16
+ ;;^UTILITY(U,$J,358.3,10057,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3423,1,3,0)
- ;;=3^Joint,Charcot's,Unspec Site
- ;;^UTILITY(U,$J,358.3,3423,1,4,0)
- ;;=4^M14.60
- ;;^UTILITY(U,$J,358.3,3423,2)
- ;;=^5010714
- ;;^UTILITY(U,$J,358.3,3424,0)
- ;;=M25.00^^18^219^71
- ;;^UTILITY(U,$J,358.3,3424,1,0)
+ ;;^UTILITY(U,$J,358.3,10057,1,3,0)
+ ;;=3^Laceration w/o FB of Left Hip,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10057,1,4,0)
+ ;;=4^S71.012A
+ ;;^UTILITY(U,$J,358.3,10057,2)
+ ;;=^5036978
+ ;;^UTILITY(U,$J,358.3,10058,0)
+ ;;=S81.012A^^37^543^19
+ ;;^UTILITY(U,$J,358.3,10058,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3424,1,3,0)
- ;;=3^Hoint,Hemarthrosis,Unspec Joint
- ;;^UTILITY(U,$J,358.3,3424,1,4,0)
- ;;=4^M25.00
- ;;^UTILITY(U,$J,358.3,3424,2)
- ;;=^5011475
- ;;^UTILITY(U,$J,358.3,3425,0)
- ;;=Z96.652^^18^219^80
- ;;^UTILITY(U,$J,358.3,3425,1,0)
+ ;;^UTILITY(U,$J,358.3,10058,1,3,0)
+ ;;=3^Laceration w/o FB of Left Knee,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10058,1,4,0)
+ ;;=4^S81.012A
+ ;;^UTILITY(U,$J,358.3,10058,2)
+ ;;=^5040035
+ ;;^UTILITY(U,$J,358.3,10059,0)
+ ;;=S81.812A^^37^543^24
+ ;;^UTILITY(U,$J,358.3,10059,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3425,1,3,0)
- ;;=3^Knee Joint,Artificial,Left
- ;;^UTILITY(U,$J,358.3,3425,1,4,0)
- ;;=4^Z96.652
- ;;^UTILITY(U,$J,358.3,3425,2)
- ;;=^5063706
- ;;^UTILITY(U,$J,358.3,3426,0)
- ;;=Z96.651^^18^219^81
- ;;^UTILITY(U,$J,358.3,3426,1,0)
+ ;;^UTILITY(U,$J,358.3,10059,1,3,0)
+ ;;=3^Laceration w/o FB of Left Lower Leg,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10059,1,4,0)
+ ;;=4^S81.812A
+ ;;^UTILITY(U,$J,358.3,10059,2)
+ ;;=^5040074
+ ;;^UTILITY(U,$J,358.3,10060,0)
+ ;;=S71.112A^^37^543^30
+ ;;^UTILITY(U,$J,358.3,10060,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3426,1,3,0)
- ;;=3^Knee Joint,Artificial,Right
- ;;^UTILITY(U,$J,358.3,3426,1,4,0)
- ;;=4^Z96.651
- ;;^UTILITY(U,$J,358.3,3426,2)
- ;;=^5063705
- ;;^UTILITY(U,$J,358.3,3427,0)
- ;;=Z96.653^^18^219^79
- ;;^UTILITY(U,$J,358.3,3427,1,0)
+ ;;^UTILITY(U,$J,358.3,10060,1,3,0)
+ ;;=3^Laceration w/o FB of Left Thigh,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10060,1,4,0)
+ ;;=4^S71.112A
+ ;;^UTILITY(U,$J,358.3,10060,2)
+ ;;=^5037017
+ ;;^UTILITY(U,$J,358.3,10061,0)
+ ;;=S91.011A^^37^543^39
+ ;;^UTILITY(U,$J,358.3,10061,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3427,1,3,0)
- ;;=3^Knee Joint,Artificial,Bilateral
- ;;^UTILITY(U,$J,358.3,3427,1,4,0)
- ;;=4^Z96.653
- ;;^UTILITY(U,$J,358.3,3427,2)
- ;;=^5063707
- ;;^UTILITY(U,$J,358.3,3428,0)
- ;;=M40.209^^18^219^82
- ;;^UTILITY(U,$J,358.3,3428,1,0)
+ ;;^UTILITY(U,$J,358.3,10061,1,3,0)
+ ;;=3^Laceration w/o FB of Right Ankle,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10061,1,4,0)
+ ;;=4^S91.011A
+ ;;^UTILITY(U,$J,358.3,10061,2)
+ ;;=^5044135
+ ;;^UTILITY(U,$J,358.3,10062,0)
+ ;;=S91.311A^^37^543^44
+ ;;^UTILITY(U,$J,358.3,10062,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3428,1,3,0)
- ;;=3^Kyphosis,Unspec Site
- ;;^UTILITY(U,$J,358.3,3428,1,4,0)
- ;;=4^M40.209
- ;;^UTILITY(U,$J,358.3,3428,2)
- ;;=^5011817
- ;;^UTILITY(U,$J,358.3,3429,0)
- ;;=M32.9^^18^219^83
- ;;^UTILITY(U,$J,358.3,3429,1,0)
+ ;;^UTILITY(U,$J,358.3,10062,1,3,0)
+ ;;=3^Laceration w/o FB of Right Foot,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10062,1,4,0)
+ ;;=4^S91.311A
+ ;;^UTILITY(U,$J,358.3,10062,2)
+ ;;=^5044320
+ ;;^UTILITY(U,$J,358.3,10063,0)
+ ;;=S71.011A^^37^543^48
+ ;;^UTILITY(U,$J,358.3,10063,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3429,1,3,0)
- ;;=3^Lupus Erythematosus,Systemic,Unspec
- ;;^UTILITY(U,$J,358.3,3429,1,4,0)
- ;;=4^M32.9
- ;;^UTILITY(U,$J,358.3,3429,2)
- ;;=^5011761
- ;;^UTILITY(U,$J,358.3,3430,0)
- ;;=M62.830^^18^219^85
- ;;^UTILITY(U,$J,358.3,3430,1,0)
+ ;;^UTILITY(U,$J,358.3,10063,1,3,0)
+ ;;=3^Laceration w/o FB of Right Hip,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10063,1,4,0)
+ ;;=4^S71.011A
+ ;;^UTILITY(U,$J,358.3,10063,2)
+ ;;=^5036975
+ ;;^UTILITY(U,$J,358.3,10064,0)
+ ;;=S81.011A^^37^543^51
+ ;;^UTILITY(U,$J,358.3,10064,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3430,1,3,0)
- ;;=3^Muscle Spasm,Back
- ;;^UTILITY(U,$J,358.3,3430,1,4,0)
- ;;=4^M62.830
- ;;^UTILITY(U,$J,358.3,3430,2)
- ;;=^5012680
- ;;^UTILITY(U,$J,358.3,3431,0)
- ;;=M62.831^^18^219^86
- ;;^UTILITY(U,$J,358.3,3431,1,0)
+ ;;^UTILITY(U,$J,358.3,10064,1,3,0)
+ ;;=3^Laceration w/o FB of Right Knee,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10064,1,4,0)
+ ;;=4^S81.011A
+ ;;^UTILITY(U,$J,358.3,10064,2)
+ ;;=^5040032
+ ;;^UTILITY(U,$J,358.3,10065,0)
+ ;;=S81.811A^^37^543^56
+ ;;^UTILITY(U,$J,358.3,10065,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3431,1,3,0)
- ;;=3^Muscle Spasm,Calf
- ;;^UTILITY(U,$J,358.3,3431,1,4,0)
- ;;=4^M62.831
- ;;^UTILITY(U,$J,358.3,3431,2)
- ;;=^5012681
- ;;^UTILITY(U,$J,358.3,3432,0)
- ;;=M62.838^^18^219^87
- ;;^UTILITY(U,$J,358.3,3432,1,0)
+ ;;^UTILITY(U,$J,358.3,10065,1,3,0)
+ ;;=3^Laceration w/o FB of Right Lower Leg,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10065,1,4,0)
+ ;;=4^S81.811A
+ ;;^UTILITY(U,$J,358.3,10065,2)
+ ;;=^5040071
+ ;;^UTILITY(U,$J,358.3,10066,0)
+ ;;=S71.111A^^37^543^62
+ ;;^UTILITY(U,$J,358.3,10066,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3432,1,3,0)
- ;;=3^Muscle Spasm,Other
+ ;;^UTILITY(U,$J,358.3,10066,1,3,0)
+ ;;=3^Laceration w/o FB of Right Thigh,Init Encntr
+ ;;^UTILITY(U,$J,358.3,10066,1,4,0)
+ ;;=4^S71.111A
+ ;;^UTILITY(U,$J,358.3,10066,2)
+ ;;=^5037014
+ ;;^UTILITY(U,$J,358.3,10067,0)
+ ;;=C44.00^^37^544^10
+ ;;^UTILITY(U,$J,358.3,10067,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10067,1,3,0)
+ ;;=3^Malig Neop of Skin of Lip
+ ;;^UTILITY(U,$J,358.3,10067,1,4,0)
+ ;;=4^C44.00
+ ;;^UTILITY(U,$J,358.3,10067,2)
+ ;;=^340596
+ ;;^UTILITY(U,$J,358.3,10068,0)
+ ;;=C44.102^^37^544^13
+ ;;^UTILITY(U,$J,358.3,10068,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10068,1,3,0)
+ ;;=3^Malig Neop of Skin of Right Eyelid
+ ;;^UTILITY(U,$J,358.3,10068,1,4,0)
+ ;;=4^C44.102
+ ;;^UTILITY(U,$J,358.3,10068,2)
+ ;;=^5001017
+ ;;^UTILITY(U,$J,358.3,10069,0)
+ ;;=C44.109^^37^544^7
+ ;;^UTILITY(U,$J,358.3,10069,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10069,1,3,0)
+ ;;=3^Malig Neop of Skin of Left Eyelid
+ ;;^UTILITY(U,$J,358.3,10069,1,4,0)
+ ;;=4^C44.109
+ ;;^UTILITY(U,$J,358.3,10069,2)
+ ;;=^5001018
+ ;;^UTILITY(U,$J,358.3,10070,0)
+ ;;=C44.202^^37^544^12
+ ;;^UTILITY(U,$J,358.3,10070,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10070,1,3,0)
+ ;;=3^Malig Neop of Skin of Right Ear
+ ;;^UTILITY(U,$J,358.3,10070,1,4,0)
+ ;;=4^C44.202
+ ;;^UTILITY(U,$J,358.3,10070,2)
+ ;;=^5001029
+ ;;^UTILITY(U,$J,358.3,10071,0)
+ ;;=C44.209^^37^544^6
+ ;;^UTILITY(U,$J,358.3,10071,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10071,1,3,0)
+ ;;=3^Malig Neop of Skin of Left Ear
+ ;;^UTILITY(U,$J,358.3,10071,1,4,0)
+ ;;=4^C44.209
+ ;;^UTILITY(U,$J,358.3,10071,2)
+ ;;=^5001030
+ ;;^UTILITY(U,$J,358.3,10072,0)
+ ;;=C44.300^^37^544^5
+ ;;^UTILITY(U,$J,358.3,10072,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10072,1,3,0)
+ ;;=3^Malig Neop of Skin of Face,Unspec
+ ;;^UTILITY(U,$J,358.3,10072,1,4,0)
+ ;;=4^C44.300
+ ;;^UTILITY(U,$J,358.3,10072,2)
+ ;;=^5001040
+ ;;^UTILITY(U,$J,358.3,10073,0)
+ ;;=C44.301^^37^544^11
+ ;;^UTILITY(U,$J,358.3,10073,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10073,1,3,0)
+ ;;=3^Malig Neop of Skin of Nose
+ ;;^UTILITY(U,$J,358.3,10073,1,4,0)
+ ;;=4^C44.301
+ ;;^UTILITY(U,$J,358.3,10073,2)
+ ;;=^5001041
+ ;;^UTILITY(U,$J,358.3,10074,0)
+ ;;=C44.309^^37^544^4
+ ;;^UTILITY(U,$J,358.3,10074,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10074,1,3,0)
+ ;;=3^Malig Neop of Skin of Face NEC
+ ;;^UTILITY(U,$J,358.3,10074,1,4,0)
+ ;;=4^C44.309
+ ;;^UTILITY(U,$J,358.3,10074,2)
+ ;;=^5001042
+ ;;^UTILITY(U,$J,358.3,10075,0)
+ ;;=C44.40^^37^544^16
+ ;;^UTILITY(U,$J,358.3,10075,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10075,1,3,0)
+ ;;=3^Malig Neop of Skin of Scalp/Neck
+ ;;^UTILITY(U,$J,358.3,10075,1,4,0)
+ ;;=4^C44.40
+ ;;^UTILITY(U,$J,358.3,10075,2)
+ ;;=^340600
+ ;;^UTILITY(U,$J,358.3,10076,0)
+ ;;=C44.500^^37^544^1
+ ;;^UTILITY(U,$J,358.3,10076,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10076,1,3,0)
+ ;;=3^Malig Neop of Anal Skin
+ ;;^UTILITY(U,$J,358.3,10076,1,4,0)
+ ;;=4^C44.500
+ ;;^UTILITY(U,$J,358.3,10076,2)
+ ;;=^5001051
+ ;;^UTILITY(U,$J,358.3,10077,0)
+ ;;=C44.501^^37^544^3
+ ;;^UTILITY(U,$J,358.3,10077,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10077,1,3,0)
+ ;;=3^Malig Neop of Skin of Breast
+ ;;^UTILITY(U,$J,358.3,10077,1,4,0)
+ ;;=4^C44.501
+ ;;^UTILITY(U,$J,358.3,10077,2)
+ ;;=^5001052
+ ;;^UTILITY(U,$J,358.3,10078,0)
+ ;;=C44.509^^37^544^17
+ ;;^UTILITY(U,$J,358.3,10078,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10078,1,3,0)
+ ;;=3^Malig Neop of Skin of Trunk NEC
+ ;;^UTILITY(U,$J,358.3,10078,1,4,0)
+ ;;=4^C44.509
+ ;;^UTILITY(U,$J,358.3,10078,2)
+ ;;=^5001053
+ ;;^UTILITY(U,$J,358.3,10079,0)
+ ;;=C44.602^^37^544^15
+ ;;^UTILITY(U,$J,358.3,10079,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10079,1,3,0)
+ ;;=3^Malig Neop of Skin of Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,10079,1,4,0)
+ ;;=4^C44.602
+ ;;^UTILITY(U,$J,358.3,10079,2)
+ ;;=^5001064
+ ;;^UTILITY(U,$J,358.3,10080,0)
+ ;;=C44.609^^37^544^9
+ ;;^UTILITY(U,$J,358.3,10080,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10080,1,3,0)
+ ;;=3^Malig Neop of Skin of Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,10080,1,4,0)
+ ;;=4^C44.609
+ ;;^UTILITY(U,$J,358.3,10080,2)
+ ;;=^5001065
+ ;;^UTILITY(U,$J,358.3,10081,0)
+ ;;=C44.702^^37^544^14
+ ;;^UTILITY(U,$J,358.3,10081,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10081,1,3,0)
+ ;;=3^Malig Neop of Skin of Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,10081,1,4,0)
+ ;;=4^C44.702
+ ;;^UTILITY(U,$J,358.3,10081,2)
+ ;;=^5001076
+ ;;^UTILITY(U,$J,358.3,10082,0)
+ ;;=C44.709^^37^544^8
+ ;;^UTILITY(U,$J,358.3,10082,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10082,1,3,0)
+ ;;=3^Malig Neop of Skin of Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,10082,1,4,0)
+ ;;=4^C44.709
+ ;;^UTILITY(U,$J,358.3,10082,2)
+ ;;=^5001077
+ ;;^UTILITY(U,$J,358.3,10083,0)
+ ;;=C44.80^^37^544^2
+ ;;^UTILITY(U,$J,358.3,10083,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10083,1,3,0)
+ ;;=3^Malig Neop of Overlapping Sites of Skin
+ ;;^UTILITY(U,$J,358.3,10083,1,4,0)
+ ;;=4^C44.80
+ ;;^UTILITY(U,$J,358.3,10083,2)
+ ;;=^5001087
+ ;;^UTILITY(U,$J,358.3,10084,0)
+ ;;=C44.90^^37^544^18
+ ;;^UTILITY(U,$J,358.3,10084,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10084,1,3,0)
+ ;;=3^Malig Neop of Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,10084,1,4,0)
+ ;;=4^C44.90
+ ;;^UTILITY(U,$J,358.3,10084,2)
+ ;;=^5001091
+ ;;^UTILITY(U,$J,358.3,10085,0)
+ ;;=C43.9^^37^545^16
+ ;;^UTILITY(U,$J,358.3,10085,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10085,1,3,0)
+ ;;=3^Malig Melanoma of Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,10085,1,4,0)
+ ;;=4^C43.9
+ ;;^UTILITY(U,$J,358.3,10085,2)
+ ;;=^5001015
+ ;;^UTILITY(U,$J,358.3,10086,0)
+ ;;=C43.0^^37^545^7
+ ;;^UTILITY(U,$J,358.3,10086,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10086,1,3,0)
+ ;;=3^Malig Melanoma of Lip
+ ;;^UTILITY(U,$J,358.3,10086,1,4,0)
+ ;;=4^C43.0
+ ;;^UTILITY(U,$J,358.3,10086,2)
+ ;;=^5000994
+ ;;^UTILITY(U,$J,358.3,10087,0)
+ ;;=C43.11^^37^545^11
+ ;;^UTILITY(U,$J,358.3,10087,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,10087,1,3,0)
+ ;;=3^Malig Melanoma of Right Eyelid

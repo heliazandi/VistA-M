@@ -1,70 +1,64 @@
-IBDEI00F ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQR(358.1)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI00F ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
+ Q:'DIFQ(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.1,196,0)
- ;;=CPT PROCEDURE^41^^16^0^133^134^^^1^MARK BUBBLE FOR ALL PROCEDURES PERFORMED TODAY^CRUB^Common CPT-4 procedures^0
- ;;^UTILITY(U,$J,358.1,197,0)
- ;;=1995 VISIT TYPE CODES (V2.1)^41^^6^0^132^9^^^1^TYPE OF VISIT^CR^1995 visit types WITH CODES SHOWN^0
- ;;^UTILITY(U,$J,358.1,198,0)
- ;;=HEADER^41^^1^44^39^1^^^2
- ;;^UTILITY(U,$J,358.1,199,0)
- ;;=PATIENT INFORMATION^41^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,200,0)
- ;;=ICD-10 DIAGNOSES (V1.0)^41^^161^0^132^469^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^0
- ;;^UTILITY(U,$J,358.1,201,0)
- ;;=1995 VISIT TYPE CODES (V2.1)^42^^6^0^132^9^^^1^^CR^1995 visit types WITH CODES SHOWN^0
- ;;^UTILITY(U,$J,358.1,202,0)
- ;;=CPT CODES^42^^16^0^132^49^^^1^MARK PROCEDURE(S) PERFORMED THIS VISIT^RC^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,203,0)
- ;;=HEADER^42^^1^49^13^1^^^2
- ;;^UTILITY(U,$J,358.1,204,0)
- ;;=PATIENT INFORMATION^42^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,205,0)
- ;;=PAIN ICD-10^42^^66^0^132^174^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses
- ;;^UTILITY(U,$J,358.1,206,0)
- ;;=CPT CODES (3 COL)^43^^7^0^132^8^^^1^PLEASE CHECK OFF PROCEDURES PERFORMED THIS VISIT^BCU^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,207,0)
- ;;=HEADER^43^^1^58^23^1^^^2
- ;;^UTILITY(U,$J,358.1,208,0)
- ;;=PATIENT INFORMATION^43^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,209,0)
- ;;=MENTAL HEALTH ICD-10^43^^16^0^132^634^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^
- ;;^UTILITY(U,$J,358.1,210,0)
- ;;=1995 VISIT TYPE CODES (V2.1)^44^^6^0^132^10^^^1^TYPE OF VISIT^CR^1995 visit types WITH CODES SHOWN^0
- ;;^UTILITY(U,$J,358.1,211,0)
- ;;=HEADER^44^^1^58^17^1^^^2
- ;;^UTILITY(U,$J,358.1,212,0)
- ;;=PATIENT INFORMATION^44^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,213,0)
- ;;=PROCEDURES (V2.1)^44^^17^0^133^198^^^1^PROCEDURES^CR^Common CPT-4 procedures^0
- ;;^UTILITY(U,$J,358.1,214,0)
- ;;=PODIATRY ICD-10^44^^216^0^132^1118^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^0
- ;;^UTILITY(U,$J,358.1,215,0)
- ;;=HEADER^45^^1^49^26^1^^^2
- ;;^UTILITY(U,$J,358.1,216,0)
- ;;=PATIENT INFORMATION^45^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,217,0)
- ;;=PROCEDURES (V2.1)^45^^7^0^133^24^^^1^MARK ALL PROCEDURES PERFORMED^CR^Common CPT-4 procedures^0
- ;;^UTILITY(U,$J,358.1,218,0)
- ;;=PREVENTIVE HEALTH ICD-10^45^^32^0^132^178^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses
- ;;^UTILITY(U,$J,358.1,219,0)
- ;;=1995 VISIT TYPE CODES (V2.1)^46^^6^0^132^9^^^1^TYPE OF VISIT^CR^1995 visit types WITH CODES SHOWN^0
- ;;^UTILITY(U,$J,358.1,220,0)
- ;;=HEADER^46^^1^56^21^1^^^2
- ;;^UTILITY(U,$J,358.1,221,0)
- ;;=PATIENT INFORMATION^46^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,222,0)
- ;;=PROCEDURES (V2.1)^46^^16^0^133^84^^^1^MARK ALL PROCEDURES PERFORMED^CR^Common CPT-4 procedures^0
- ;;^UTILITY(U,$J,358.1,223,0)
- ;;=PRIMARY CARE ICD-10^46^^101^0^132^2229^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^0
- ;;^UTILITY(U,$J,358.1,224,0)
- ;;=CPT CODES^47^^14^0^132^56^^^1^PLEASE CHECK OFF PROCEDURES PERFORMED THIS VISIT^BC^Selection list - CPT codes^0
- ;;^UTILITY(U,$J,358.1,225,0)
- ;;=1995 VISIT TYPE CODES (V2.1)^47^^5^0^132^9^^^1^TYPE OF VISIT^CR^1995 visit types WITH CODES SHOWN^0
- ;;^UTILITY(U,$J,358.1,226,0)
- ;;=HEADER^47^^1^57^18^1^^^2
- ;;^UTILITY(U,$J,358.1,227,0)
- ;;=PATIENT INFORMATION^47^^3^0^132^3^^^2^^^Patient information-name/ssn/age
- ;;^UTILITY(U,$J,358.1,228,0)
- ;;=RESPIRATORY THERAPY ICD-10^47^^81^0^132^839^^^1^DIAGNOSIS^CR^Common ICD-10 diagnoses^0
+ ;;^DIC(358.3,0,"GL")
+ ;;=^IBE(358.3,
+ ;;^DIC("B","IMP/EXP SELECTION",358.3)
+ ;;=
+ ;;^DIC(358.3,"%D",0)
+ ;;=^^4^4^2940217^
+ ;;^DIC(358.3,"%D",1,0)
+ ;;= 
+ ;;^DIC(358.3,"%D",2,0)
+ ;;=This file is nearly identical to file #357.3. It is used by the
+ ;;^DIC(358.3,"%D",3,0)
+ ;;=Import/Export Utility as a temporary staging area for data from that file
+ ;;^DIC(358.3,"%D",4,0)
+ ;;=that is being imported or exported.
+ ;;^DD(358.3,0)
+ ;;=FIELD^^3^15
+ ;;^DD(358.3,0,"DDA")
+ ;;=N
+ ;;^DD(358.3,0,"DT")
+ ;;=2961031
+ ;;^DD(358.3,0,"ID",.03)
+ ;;=S %I=Y,Y=$S('$D(^(0)):"",$D(^IBE(358.2,+$P(^(0),U,3),0))#2:$P(^(0),U,1),1:""),C=$P(^DD(358.2,.01,0),U,2) D Y^DIQ:Y]"" W "   ",Y,@("$E("_DIC_"%I,0),0)") S Y=%I K %I
+ ;;^DD(358.3,0,"ID",.04)
+ ;;=S %I=Y,Y=$S('$D(^(0)):"",$D(^IBE(358.4,+$P(^(0),U,4),0))#2:$P(^(0),U,1),1:""),C=$P(^DD(358.4,.01,0),U,2) D Y^DIQ:Y]"" W "   ",Y,@("$E("_DIC_"%I,0),0)") S Y=%I K %I
+ ;;^DD(358.3,0,"IX","APO",358.3,.03)
+ ;;=
+ ;;^DD(358.3,0,"IX","APO1",358.3,.04)
+ ;;=
+ ;;^DD(358.3,0,"IX","APO2",358.3,.05)
+ ;;=
+ ;;^DD(358.3,0,"IX","B",358.3,.01)
+ ;;=
+ ;;^DD(358.3,0,"IX","C",358.3,.03)
+ ;;=
+ ;;^DD(358.3,0,"IX","D",358.3,.04)
+ ;;=
+ ;;^DD(358.3,0,"NM","IMP/EXP SELECTION")
+ ;;=
+ ;;^DD(358.3,0,"VRPK")
+ ;;=IBD
+ ;;^DD(358.3,.01,0)
+ ;;=SELECTION ID^RF^^0;1^K:$L(X)>30!($L(X)<3)!'(X'?1P.E) X
+ ;;^DD(358.3,.01,1,0)
+ ;;=^.1
+ ;;^DD(358.3,.01,1,1,0)
+ ;;=358.3^B
+ ;;^DD(358.3,.01,1,1,1)
+ ;;=S ^IBE(358.3,"B",$E(X,1,30),DA)=""
+ ;;^DD(358.3,.01,1,1,2)
+ ;;=K ^IBE(358.3,"B",$E(X,1,30),DA)
+ ;;^DD(358.3,.01,3)
+ ;;=Answer must be 3-30 characters in length.
+ ;;^DD(358.3,.01,21,0)
+ ;;=^^2^2^2930309^
+ ;;^DD(358.3,.01,21,1,0)
+ ;;= 
+ ;;^DD(358.3,.01,21,2,0)
+ ;;=The ID passed by the package.
+ ;;^DD(358.3,.01,"DT")
+ ;;=2921119

@@ -1,128 +1,356 @@
-IBDEI0HD ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0HD ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8038,1,3,0)
- ;;=3^Contusion of left lower leg, initial encounter
- ;;^UTILITY(U,$J,358.3,8038,1,4,0)
- ;;=4^S80.12XA
- ;;^UTILITY(U,$J,358.3,8038,2)
- ;;=^5039903
- ;;^UTILITY(U,$J,358.3,8039,0)
- ;;=T75.4XXA^^33^431^58
- ;;^UTILITY(U,$J,358.3,8039,1,0)
+ ;;^UTILITY(U,$J,358.3,22006,2)
+ ;;=^5008835
+ ;;^UTILITY(U,$J,358.3,22007,0)
+ ;;=K71.6^^58^843^32
+ ;;^UTILITY(U,$J,358.3,22007,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8039,1,3,0)
- ;;=3^Electrocution, initial encounter
- ;;^UTILITY(U,$J,358.3,8039,1,4,0)
- ;;=4^T75.4XXA
- ;;^UTILITY(U,$J,358.3,8039,2)
- ;;=^5054203
- ;;^UTILITY(U,$J,358.3,8040,0)
- ;;=T15.91XA^^33^431^61
- ;;^UTILITY(U,$J,358.3,8040,1,0)
+ ;;^UTILITY(U,$J,358.3,22007,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Hepatitis NEC
+ ;;^UTILITY(U,$J,358.3,22007,1,4,0)
+ ;;=4^K71.6
+ ;;^UTILITY(U,$J,358.3,22007,2)
+ ;;=^5008801
+ ;;^UTILITY(U,$J,358.3,22008,0)
+ ;;=K75.9^^58^843^17
+ ;;^UTILITY(U,$J,358.3,22008,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8040,1,3,0)
- ;;=3^FB on Right External Eye,Part Unspec,Init Encntr
- ;;^UTILITY(U,$J,358.3,8040,1,4,0)
- ;;=4^T15.91XA
- ;;^UTILITY(U,$J,358.3,8040,2)
- ;;=^5046411
- ;;^UTILITY(U,$J,358.3,8041,0)
- ;;=T15.92XA^^33^431^60
- ;;^UTILITY(U,$J,358.3,8041,1,0)
+ ;;^UTILITY(U,$J,358.3,22008,1,3,0)
+ ;;=3^Inflammatory Liver Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,22008,1,4,0)
+ ;;=4^K75.9
+ ;;^UTILITY(U,$J,358.3,22008,2)
+ ;;=^5008830
+ ;;^UTILITY(U,$J,358.3,22009,0)
+ ;;=K71.0^^58^843^24
+ ;;^UTILITY(U,$J,358.3,22009,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8041,1,3,0)
- ;;=3^FB on Left External Eye,Part Unspec,Init Encntr
- ;;^UTILITY(U,$J,358.3,8041,1,4,0)
- ;;=4^T15.92XA
- ;;^UTILITY(U,$J,358.3,8041,2)
- ;;=^5046414
- ;;^UTILITY(U,$J,358.3,8042,0)
- ;;=S82.891A^^33^431^63
- ;;^UTILITY(U,$J,358.3,8042,1,0)
+ ;;^UTILITY(U,$J,358.3,22009,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Cholestasis
+ ;;^UTILITY(U,$J,358.3,22009,1,4,0)
+ ;;=4^K71.0
+ ;;^UTILITY(U,$J,358.3,22009,2)
+ ;;=^5008793
+ ;;^UTILITY(U,$J,358.3,22010,0)
+ ;;=K71.10^^58^843^30
+ ;;^UTILITY(U,$J,358.3,22010,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8042,1,3,0)
- ;;=3^Fx of Right Lower Leg NEC,Init for Clos Fx
- ;;^UTILITY(U,$J,358.3,8042,1,4,0)
- ;;=4^S82.891A
- ;;^UTILITY(U,$J,358.3,8042,2)
- ;;=^5042863
- ;;^UTILITY(U,$J,358.3,8043,0)
- ;;=S82.892A^^33^431^62
- ;;^UTILITY(U,$J,358.3,8043,1,0)
+ ;;^UTILITY(U,$J,358.3,22010,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Hepatic Necrosis w/o Coma
+ ;;^UTILITY(U,$J,358.3,22010,1,4,0)
+ ;;=4^K71.10
+ ;;^UTILITY(U,$J,358.3,22010,2)
+ ;;=^5008794
+ ;;^UTILITY(U,$J,358.3,22011,0)
+ ;;=K71.11^^58^843^31
+ ;;^UTILITY(U,$J,358.3,22011,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8043,1,3,0)
- ;;=3^Fx of Left Lower Leg NEC,Init for Clos Fx
- ;;^UTILITY(U,$J,358.3,8043,1,4,0)
- ;;=4^S82.892A
- ;;^UTILITY(U,$J,358.3,8043,2)
- ;;=^5136944
- ;;^UTILITY(U,$J,358.3,8044,0)
- ;;=S62.101A^^33^431^89
- ;;^UTILITY(U,$J,358.3,8044,1,0)
+ ;;^UTILITY(U,$J,358.3,22011,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Hepatic Necrosis w/ Coma
+ ;;^UTILITY(U,$J,358.3,22011,1,4,0)
+ ;;=4^K71.11
+ ;;^UTILITY(U,$J,358.3,22011,2)
+ ;;=^5008795
+ ;;^UTILITY(U,$J,358.3,22012,0)
+ ;;=K71.2^^58^843^23
+ ;;^UTILITY(U,$J,358.3,22012,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8044,1,3,0)
- ;;=3^Fx of unsp carpal bone, right wrist, init for clos fx
- ;;^UTILITY(U,$J,358.3,8044,1,4,0)
- ;;=4^S62.101A
- ;;^UTILITY(U,$J,358.3,8044,2)
- ;;=^5033199
- ;;^UTILITY(U,$J,358.3,8045,0)
- ;;=S62.102A^^33^431^88
- ;;^UTILITY(U,$J,358.3,8045,1,0)
+ ;;^UTILITY(U,$J,358.3,22012,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Acute Hepatitis
+ ;;^UTILITY(U,$J,358.3,22012,1,4,0)
+ ;;=4^K71.2
+ ;;^UTILITY(U,$J,358.3,22012,2)
+ ;;=^5008796
+ ;;^UTILITY(U,$J,358.3,22013,0)
+ ;;=K71.3^^58^843^28
+ ;;^UTILITY(U,$J,358.3,22013,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8045,1,3,0)
- ;;=3^Fx of unsp carpal bone, left wrist, init for clos fx
- ;;^UTILITY(U,$J,358.3,8045,1,4,0)
- ;;=4^S62.102A
- ;;^UTILITY(U,$J,358.3,8045,2)
- ;;=^5033206
- ;;^UTILITY(U,$J,358.3,8046,0)
- ;;=S42.001A^^33^431^93
- ;;^UTILITY(U,$J,358.3,8046,1,0)
+ ;;^UTILITY(U,$J,358.3,22013,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Chronic Persistent Hepatitis
+ ;;^UTILITY(U,$J,358.3,22013,1,4,0)
+ ;;=4^K71.3
+ ;;^UTILITY(U,$J,358.3,22013,2)
+ ;;=^5008797
+ ;;^UTILITY(U,$J,358.3,22014,0)
+ ;;=K71.4^^58^843^27
+ ;;^UTILITY(U,$J,358.3,22014,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8046,1,3,0)
- ;;=3^Fx of unsp part of right clavicle, init for clos fx
- ;;^UTILITY(U,$J,358.3,8046,1,4,0)
- ;;=4^S42.001A
- ;;^UTILITY(U,$J,358.3,8046,2)
- ;;=^5026369
- ;;^UTILITY(U,$J,358.3,8047,0)
- ;;=S42.002A^^33^431^92
- ;;^UTILITY(U,$J,358.3,8047,1,0)
+ ;;^UTILITY(U,$J,358.3,22014,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Chronic Lobular Hepatitis
+ ;;^UTILITY(U,$J,358.3,22014,1,4,0)
+ ;;=4^K71.4
+ ;;^UTILITY(U,$J,358.3,22014,2)
+ ;;=^5008798
+ ;;^UTILITY(U,$J,358.3,22015,0)
+ ;;=K75.81^^58^843^19
+ ;;^UTILITY(U,$J,358.3,22015,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8047,1,3,0)
- ;;=3^Fx of unsp part of left clavicle, init for clos fx
- ;;^UTILITY(U,$J,358.3,8047,1,4,0)
- ;;=4^S42.002A
- ;;^UTILITY(U,$J,358.3,8047,2)
- ;;=^5026376
- ;;^UTILITY(U,$J,358.3,8048,0)
- ;;=S42.401A^^33^431^82
- ;;^UTILITY(U,$J,358.3,8048,1,0)
+ ;;^UTILITY(U,$J,358.3,22015,1,3,0)
+ ;;=3^Nonalcoholic Steatohepatitis (NASH)
+ ;;^UTILITY(U,$J,358.3,22015,1,4,0)
+ ;;=4^K75.81
+ ;;^UTILITY(U,$J,358.3,22015,2)
+ ;;=^5008828
+ ;;^UTILITY(U,$J,358.3,22016,0)
+ ;;=K75.89^^58^843^16
+ ;;^UTILITY(U,$J,358.3,22016,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8048,1,3,0)
- ;;=3^Fx of right lower end of humerus unspec, init
- ;;^UTILITY(U,$J,358.3,8048,1,4,0)
- ;;=4^S42.401A
- ;;^UTILITY(U,$J,358.3,8048,2)
- ;;=^5027294
- ;;^UTILITY(U,$J,358.3,8049,0)
- ;;=S42.402A^^33^431^69
- ;;^UTILITY(U,$J,358.3,8049,1,0)
+ ;;^UTILITY(U,$J,358.3,22016,1,3,0)
+ ;;=3^Inflammatory Liver Disease,Oth Spec
+ ;;^UTILITY(U,$J,358.3,22016,1,4,0)
+ ;;=4^K75.89
+ ;;^UTILITY(U,$J,358.3,22016,2)
+ ;;=^5008829
+ ;;^UTILITY(U,$J,358.3,22017,0)
+ ;;=K76.4^^58^843^21
+ ;;^UTILITY(U,$J,358.3,22017,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8049,1,3,0)
- ;;=3^Fx of left lower end of humerus unspec, init for cl
- ;;^UTILITY(U,$J,358.3,8049,1,4,0)
- ;;=4^S42.402A
- ;;^UTILITY(U,$J,358.3,8049,2)
- ;;=^5134713
- ;;^UTILITY(U,$J,358.3,8050,0)
- ;;=S72.91XA^^33^431^77
- ;;^UTILITY(U,$J,358.3,8050,1,0)
+ ;;^UTILITY(U,$J,358.3,22017,1,3,0)
+ ;;=3^Peliosis Hepatis
+ ;;^UTILITY(U,$J,358.3,22017,1,4,0)
+ ;;=4^K76.4
+ ;;^UTILITY(U,$J,358.3,22017,2)
+ ;;=^91041
+ ;;^UTILITY(U,$J,358.3,22018,0)
+ ;;=K71.50^^58^843^25
+ ;;^UTILITY(U,$J,358.3,22018,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8050,1,3,0)
- ;;=3^Fx of right femur unspec, init for clos fx
- ;;^UTILITY(U,$J,358.3,8050,1,4,0)
- ;;=4^S72.91XA
+ ;;^UTILITY(U,$J,358.3,22018,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Chronic Active Hepatitis w/o Ascites
+ ;;^UTILITY(U,$J,358.3,22018,1,4,0)
+ ;;=4^K71.50
+ ;;^UTILITY(U,$J,358.3,22018,2)
+ ;;=^5008799
+ ;;^UTILITY(U,$J,358.3,22019,0)
+ ;;=K71.51^^58^843^26
+ ;;^UTILITY(U,$J,358.3,22019,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22019,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Chronic Active Hepatitis w/ Ascites
+ ;;^UTILITY(U,$J,358.3,22019,1,4,0)
+ ;;=4^K71.51
+ ;;^UTILITY(U,$J,358.3,22019,2)
+ ;;=^5008800
+ ;;^UTILITY(U,$J,358.3,22020,0)
+ ;;=K71.7^^58^843^29
+ ;;^UTILITY(U,$J,358.3,22020,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22020,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Fibrosis & Cirrhosis of Liver
+ ;;^UTILITY(U,$J,358.3,22020,1,4,0)
+ ;;=4^K71.7
+ ;;^UTILITY(U,$J,358.3,22020,2)
+ ;;=^5008802
+ ;;^UTILITY(U,$J,358.3,22021,0)
+ ;;=K71.8^^58^843^33
+ ;;^UTILITY(U,$J,358.3,22021,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22021,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Oth Disorders of Liver
+ ;;^UTILITY(U,$J,358.3,22021,1,4,0)
+ ;;=4^K71.8
+ ;;^UTILITY(U,$J,358.3,22021,2)
+ ;;=^5008803
+ ;;^UTILITY(U,$J,358.3,22022,0)
+ ;;=K71.9^^58^843^34
+ ;;^UTILITY(U,$J,358.3,22022,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22022,1,3,0)
+ ;;=3^Toxic Liver Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,22022,1,4,0)
+ ;;=4^K71.9
+ ;;^UTILITY(U,$J,358.3,22022,2)
+ ;;=^5008804
+ ;;^UTILITY(U,$J,358.3,22023,0)
+ ;;=K75.2^^58^843^20
+ ;;^UTILITY(U,$J,358.3,22023,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22023,1,3,0)
+ ;;=3^Nonspecific Reactive Hepatitis
+ ;;^UTILITY(U,$J,358.3,22023,1,4,0)
+ ;;=4^K75.2
+ ;;^UTILITY(U,$J,358.3,22023,2)
+ ;;=^5008826
+ ;;^UTILITY(U,$J,358.3,22024,0)
+ ;;=K75.3^^58^843^13
+ ;;^UTILITY(U,$J,358.3,22024,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22024,1,3,0)
+ ;;=3^Granulomatous Hepatitis NEC
+ ;;^UTILITY(U,$J,358.3,22024,1,4,0)
+ ;;=4^K75.3
+ ;;^UTILITY(U,$J,358.3,22024,2)
+ ;;=^5008827
+ ;;^UTILITY(U,$J,358.3,22025,0)
+ ;;=K76.6^^58^843^22
+ ;;^UTILITY(U,$J,358.3,22025,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22025,1,3,0)
+ ;;=3^Portal Hypertension
+ ;;^UTILITY(U,$J,358.3,22025,1,4,0)
+ ;;=4^K76.6
+ ;;^UTILITY(U,$J,358.3,22025,2)
+ ;;=^5008834
+ ;;^UTILITY(U,$J,358.3,22026,0)
+ ;;=F20.3^^58^844^25
+ ;;^UTILITY(U,$J,358.3,22026,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22026,1,3,0)
+ ;;=3^Undifferentiated/Atypical Schizophrenia
+ ;;^UTILITY(U,$J,358.3,22026,1,4,0)
+ ;;=4^F20.3
+ ;;^UTILITY(U,$J,358.3,22026,2)
+ ;;=^5003472
+ ;;^UTILITY(U,$J,358.3,22027,0)
+ ;;=F20.9^^58^844^21
+ ;;^UTILITY(U,$J,358.3,22027,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22027,1,3,0)
+ ;;=3^Schizophrenia,Unspec
+ ;;^UTILITY(U,$J,358.3,22027,1,4,0)
+ ;;=4^F20.9
+ ;;^UTILITY(U,$J,358.3,22027,2)
+ ;;=^5003476
+ ;;^UTILITY(U,$J,358.3,22028,0)
+ ;;=F31.9^^58^844^6
+ ;;^UTILITY(U,$J,358.3,22028,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22028,1,3,0)
+ ;;=3^Bipolar Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,22028,1,4,0)
+ ;;=4^F31.9
+ ;;^UTILITY(U,$J,358.3,22028,2)
+ ;;=^331892
+ ;;^UTILITY(U,$J,358.3,22029,0)
+ ;;=F31.72^^58^844^7
+ ;;^UTILITY(U,$J,358.3,22029,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22029,1,3,0)
+ ;;=3^Bipolr Disorder,Full Remis,Most Recent Episode Hypomanic
+ ;;^UTILITY(U,$J,358.3,22029,1,4,0)
+ ;;=4^F31.72
+ ;;^UTILITY(U,$J,358.3,22029,2)
+ ;;=^5003512
+ ;;^UTILITY(U,$J,358.3,22030,0)
+ ;;=F31.71^^58^844^5
+ ;;^UTILITY(U,$J,358.3,22030,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22030,1,3,0)
+ ;;=3^Bipolar Disorder,Part Remis,Most Recent Episode Hypomanic
+ ;;^UTILITY(U,$J,358.3,22030,1,4,0)
+ ;;=4^F31.71
+ ;;^UTILITY(U,$J,358.3,22030,2)
+ ;;=^5003511
+ ;;^UTILITY(U,$J,358.3,22031,0)
+ ;;=F31.70^^58^844^4
+ ;;^UTILITY(U,$J,358.3,22031,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22031,1,3,0)
+ ;;=3^Bipolar Disorder,In Remis,Most Recent Episode Unspec
+ ;;^UTILITY(U,$J,358.3,22031,1,4,0)
+ ;;=4^F31.70
+ ;;^UTILITY(U,$J,358.3,22031,2)
+ ;;=^5003510
+ ;;^UTILITY(U,$J,358.3,22032,0)
+ ;;=F29.^^58^844^19
+ ;;^UTILITY(U,$J,358.3,22032,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22032,1,3,0)
+ ;;=3^Psychosis not d/t Substance/Known Physiol Cond,Unspec
+ ;;^UTILITY(U,$J,358.3,22032,1,4,0)
+ ;;=4^F29.
+ ;;^UTILITY(U,$J,358.3,22032,2)
+ ;;=^5003484
+ ;;^UTILITY(U,$J,358.3,22033,0)
+ ;;=F28.^^58^844^20
+ ;;^UTILITY(U,$J,358.3,22033,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22033,1,3,0)
+ ;;=3^Psychosis not d/t Substance/Known Physiol Cond NEC
+ ;;^UTILITY(U,$J,358.3,22033,1,4,0)
+ ;;=4^F28.
+ ;;^UTILITY(U,$J,358.3,22033,2)
+ ;;=^5003483
+ ;;^UTILITY(U,$J,358.3,22034,0)
+ ;;=F41.9^^58^844^3
+ ;;^UTILITY(U,$J,358.3,22034,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22034,1,3,0)
+ ;;=3^Anxiety Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,22034,1,4,0)
+ ;;=4^F41.9
+ ;;^UTILITY(U,$J,358.3,22034,2)
+ ;;=^5003567
+ ;;^UTILITY(U,$J,358.3,22035,0)
+ ;;=F42.^^58^844^13
+ ;;^UTILITY(U,$J,358.3,22035,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22035,1,3,0)
+ ;;=3^Obsessive-Compulsive Disorder
+ ;;^UTILITY(U,$J,358.3,22035,1,4,0)
+ ;;=4^F42.
+ ;;^UTILITY(U,$J,358.3,22035,2)
+ ;;=^5003568
+ ;;^UTILITY(U,$J,358.3,22036,0)
+ ;;=F45.0^^58^844^23
+ ;;^UTILITY(U,$J,358.3,22036,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22036,1,3,0)
+ ;;=3^Somatization Disorder
+ ;;^UTILITY(U,$J,358.3,22036,1,4,0)
+ ;;=4^F45.0
+ ;;^UTILITY(U,$J,358.3,22036,2)
+ ;;=^112280
+ ;;^UTILITY(U,$J,358.3,22037,0)
+ ;;=F69.^^58^844^2
+ ;;^UTILITY(U,$J,358.3,22037,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22037,1,3,0)
+ ;;=3^Adult Personality and Behavior Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,22037,1,4,0)
+ ;;=4^F69.
+ ;;^UTILITY(U,$J,358.3,22037,2)
+ ;;=^5003667
+ ;;^UTILITY(U,$J,358.3,22038,0)
+ ;;=F60.9^^58^844^17
+ ;;^UTILITY(U,$J,358.3,22038,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22038,1,3,0)
+ ;;=3^Personality Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,22038,1,4,0)
+ ;;=4^F60.9
+ ;;^UTILITY(U,$J,358.3,22038,2)
+ ;;=^5003639
+ ;;^UTILITY(U,$J,358.3,22039,0)
+ ;;=F32.9^^58^844^12
+ ;;^UTILITY(U,$J,358.3,22039,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22039,1,3,0)
+ ;;=3^MDD,Single Episode,Unspec
+ ;;^UTILITY(U,$J,358.3,22039,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,22039,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,22040,0)
+ ;;=F40.231^^58^844^9
+ ;;^UTILITY(U,$J,358.3,22040,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22040,1,3,0)
+ ;;=3^Fear of Injections/Transfusions
+ ;;^UTILITY(U,$J,358.3,22040,1,4,0)
+ ;;=4^F40.231
+ ;;^UTILITY(U,$J,358.3,22040,2)
+ ;;=^5003551
+ ;;^UTILITY(U,$J,358.3,22041,0)
+ ;;=F40.240^^58^844^8
+ ;;^UTILITY(U,$J,358.3,22041,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22041,1,3,0)
+ ;;=3^Claustrophobia
+ ;;^UTILITY(U,$J,358.3,22041,1,4,0)
+ ;;=4^F40.240
+ ;;^UTILITY(U,$J,358.3,22041,2)
+ ;;=^5003554

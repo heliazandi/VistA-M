@@ -1,136 +1,358 @@
-IBDEI0DW ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0DW ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6384,2)
- ;;=^5015759
- ;;^UTILITY(U,$J,358.3,6385,0)
- ;;=N52.32^^30^392^40
- ;;^UTILITY(U,$J,358.3,6385,1,0)
+ ;;^UTILITY(U,$J,358.3,17561,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6385,1,3,0)
- ;;=3^Erectile Dysfunction Following Radical Cystectomy
- ;;^UTILITY(U,$J,358.3,6385,1,4,0)
- ;;=4^N52.32
- ;;^UTILITY(U,$J,358.3,6385,2)
- ;;=^5015758
- ;;^UTILITY(U,$J,358.3,6386,0)
- ;;=N52.31^^30^392^41
- ;;^UTILITY(U,$J,358.3,6386,1,0)
+ ;;^UTILITY(U,$J,358.3,17561,1,3,0)
+ ;;=3^Renal Colic,Unspec
+ ;;^UTILITY(U,$J,358.3,17561,1,4,0)
+ ;;=4^N23.
+ ;;^UTILITY(U,$J,358.3,17561,2)
+ ;;=^5015615
+ ;;^UTILITY(U,$J,358.3,17562,0)
+ ;;=R10.13^^53^745^2
+ ;;^UTILITY(U,$J,358.3,17562,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6386,1,3,0)
- ;;=3^Erectile Dysfunction Following Radical Prostatectomy
- ;;^UTILITY(U,$J,358.3,6386,1,4,0)
- ;;=4^N52.31
- ;;^UTILITY(U,$J,358.3,6386,2)
- ;;=^5015757
- ;;^UTILITY(U,$J,358.3,6387,0)
- ;;=N52.2^^30^392^47
- ;;^UTILITY(U,$J,358.3,6387,1,0)
+ ;;^UTILITY(U,$J,358.3,17562,1,3,0)
+ ;;=3^Epigastric Pain
+ ;;^UTILITY(U,$J,358.3,17562,1,4,0)
+ ;;=4^R10.13
+ ;;^UTILITY(U,$J,358.3,17562,2)
+ ;;=^5019208
+ ;;^UTILITY(U,$J,358.3,17563,0)
+ ;;=D49.6^^53^746^2
+ ;;^UTILITY(U,$J,358.3,17563,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6387,1,3,0)
- ;;=3^Erectile Dysfunction,Drug-Induced
- ;;^UTILITY(U,$J,358.3,6387,1,4,0)
- ;;=4^N52.2
- ;;^UTILITY(U,$J,358.3,6387,2)
- ;;=^5015756
- ;;^UTILITY(U,$J,358.3,6388,0)
- ;;=N52.03^^30^392^38
- ;;^UTILITY(U,$J,358.3,6388,1,0)
+ ;;^UTILITY(U,$J,358.3,17563,1,3,0)
+ ;;=3^Brain Mass,Unspec
+ ;;^UTILITY(U,$J,358.3,17563,1,4,0)
+ ;;=4^D49.6
+ ;;^UTILITY(U,$J,358.3,17563,2)
+ ;;=^5002276
+ ;;^UTILITY(U,$J,358.3,17564,0)
+ ;;=E07.9^^53^746^13
+ ;;^UTILITY(U,$J,358.3,17564,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6388,1,3,0)
- ;;=3^Erectile Dysfunction Comb Artrl Insuff & Corporo-Venous Occlusv
- ;;^UTILITY(U,$J,358.3,6388,1,4,0)
- ;;=4^N52.03
- ;;^UTILITY(U,$J,358.3,6388,2)
- ;;=^5015754
- ;;^UTILITY(U,$J,358.3,6389,0)
- ;;=N52.02^^30^392^39
- ;;^UTILITY(U,$J,358.3,6389,1,0)
+ ;;^UTILITY(U,$J,358.3,17564,1,3,0)
+ ;;=3^Thyroid Mass
+ ;;^UTILITY(U,$J,358.3,17564,1,4,0)
+ ;;=4^E07.9
+ ;;^UTILITY(U,$J,358.3,17564,2)
+ ;;=^5002502
+ ;;^UTILITY(U,$J,358.3,17565,0)
+ ;;=N28.9^^53^746^6
+ ;;^UTILITY(U,$J,358.3,17565,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6389,1,3,0)
- ;;=3^Erectile Dysfunction Corporo-Venous Occlusive
- ;;^UTILITY(U,$J,358.3,6389,1,4,0)
- ;;=4^N52.02
- ;;^UTILITY(U,$J,358.3,6389,2)
- ;;=^5015753
- ;;^UTILITY(U,$J,358.3,6390,0)
- ;;=N52.1^^30^392^46
- ;;^UTILITY(U,$J,358.3,6390,1,0)
+ ;;^UTILITY(U,$J,358.3,17565,1,3,0)
+ ;;=3^Kidney Mass
+ ;;^UTILITY(U,$J,358.3,17565,1,4,0)
+ ;;=4^N28.9
+ ;;^UTILITY(U,$J,358.3,17565,2)
+ ;;=^5015630
+ ;;^UTILITY(U,$J,358.3,17566,0)
+ ;;=N48.89^^53^746^10
+ ;;^UTILITY(U,$J,358.3,17566,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6390,1,3,0)
- ;;=3^Erectile Dysfunction d/t Diseases Classified Elsewhere
- ;;^UTILITY(U,$J,358.3,6390,1,4,0)
- ;;=4^N52.1
- ;;^UTILITY(U,$J,358.3,6390,2)
- ;;=^5015755
- ;;^UTILITY(U,$J,358.3,6391,0)
- ;;=N52.01^^30^392^45
- ;;^UTILITY(U,$J,358.3,6391,1,0)
+ ;;^UTILITY(U,$J,358.3,17566,1,3,0)
+ ;;=3^Penile Mass
+ ;;^UTILITY(U,$J,358.3,17566,1,4,0)
+ ;;=4^N48.89
+ ;;^UTILITY(U,$J,358.3,17566,2)
+ ;;=^88018
+ ;;^UTILITY(U,$J,358.3,17567,0)
+ ;;=N50.8^^53^746^12
+ ;;^UTILITY(U,$J,358.3,17567,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6391,1,3,0)
- ;;=3^Erectile Dysfunction d/t Arterial Insufficiency
- ;;^UTILITY(U,$J,358.3,6391,1,4,0)
- ;;=4^N52.01
- ;;^UTILITY(U,$J,358.3,6391,2)
- ;;=^5015752
- ;;^UTILITY(U,$J,358.3,6392,0)
- ;;=N95.2^^30^392^87
- ;;^UTILITY(U,$J,358.3,6392,1,0)
+ ;;^UTILITY(U,$J,358.3,17567,1,3,0)
+ ;;=3^Testes Mass
+ ;;^UTILITY(U,$J,358.3,17567,1,4,0)
+ ;;=4^N50.8
+ ;;^UTILITY(U,$J,358.3,17567,2)
+ ;;=^88009
+ ;;^UTILITY(U,$J,358.3,17568,0)
+ ;;=N63.^^53^746^3
+ ;;^UTILITY(U,$J,358.3,17568,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6392,1,3,0)
- ;;=3^Postmenopausal Atrophic Vaginitis
- ;;^UTILITY(U,$J,358.3,6392,1,4,0)
- ;;=4^N95.2
- ;;^UTILITY(U,$J,358.3,6392,2)
- ;;=^270577
- ;;^UTILITY(U,$J,358.3,6393,0)
- ;;=R30.9^^30^392^71
- ;;^UTILITY(U,$J,358.3,6393,1,0)
+ ;;^UTILITY(U,$J,358.3,17568,1,3,0)
+ ;;=3^Breast Mass
+ ;;^UTILITY(U,$J,358.3,17568,1,4,0)
+ ;;=4^N63.
+ ;;^UTILITY(U,$J,358.3,17568,2)
+ ;;=^5015791
+ ;;^UTILITY(U,$J,358.3,17569,0)
+ ;;=N94.89^^53^746^14
+ ;;^UTILITY(U,$J,358.3,17569,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6393,1,3,0)
- ;;=3^Micturition Painful,Unspec
- ;;^UTILITY(U,$J,358.3,6393,1,4,0)
- ;;=4^R30.9
- ;;^UTILITY(U,$J,358.3,6393,2)
- ;;=^5019324
- ;;^UTILITY(U,$J,358.3,6394,0)
- ;;=R30.0^^30^392^30
- ;;^UTILITY(U,$J,358.3,6394,1,0)
+ ;;^UTILITY(U,$J,358.3,17569,1,3,0)
+ ;;=3^Uterine Mass
+ ;;^UTILITY(U,$J,358.3,17569,1,4,0)
+ ;;=4^N94.89
+ ;;^UTILITY(U,$J,358.3,17569,2)
+ ;;=^5015925
+ ;;^UTILITY(U,$J,358.3,17570,0)
+ ;;=R29.898^^53^746^5
+ ;;^UTILITY(U,$J,358.3,17570,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6394,1,3,0)
- ;;=3^Dysuria
- ;;^UTILITY(U,$J,358.3,6394,1,4,0)
- ;;=4^R30.0
- ;;^UTILITY(U,$J,358.3,6394,2)
- ;;=^5019322
- ;;^UTILITY(U,$J,358.3,6395,0)
- ;;=R33.9^^30^392^111
- ;;^UTILITY(U,$J,358.3,6395,1,0)
+ ;;^UTILITY(U,$J,358.3,17570,1,3,0)
+ ;;=3^Joint Mass,Unspec Joint
+ ;;^UTILITY(U,$J,358.3,17570,1,4,0)
+ ;;=4^R29.898
+ ;;^UTILITY(U,$J,358.3,17570,2)
+ ;;=^5019319
+ ;;^UTILITY(U,$J,358.3,17571,0)
+ ;;=M89.9^^53^746^1
+ ;;^UTILITY(U,$J,358.3,17571,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6395,1,3,0)
- ;;=3^Urine Retention,Unspec
- ;;^UTILITY(U,$J,358.3,6395,1,4,0)
- ;;=4^R33.9
- ;;^UTILITY(U,$J,358.3,6395,2)
- ;;=^5019332
- ;;^UTILITY(U,$J,358.3,6396,0)
- ;;=R32.^^30^392^109
- ;;^UTILITY(U,$J,358.3,6396,1,0)
+ ;;^UTILITY(U,$J,358.3,17571,1,3,0)
+ ;;=3^Bone Mass
+ ;;^UTILITY(U,$J,358.3,17571,1,4,0)
+ ;;=4^M89.9
+ ;;^UTILITY(U,$J,358.3,17571,2)
+ ;;=^5015119
+ ;;^UTILITY(U,$J,358.3,17572,0)
+ ;;=M94.9^^53^746^4
+ ;;^UTILITY(U,$J,358.3,17572,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6396,1,3,0)
- ;;=3^Urinary Incontinence,Unspec
- ;;^UTILITY(U,$J,358.3,6396,1,4,0)
- ;;=4^R32.
- ;;^UTILITY(U,$J,358.3,6396,2)
- ;;=^5019329
- ;;^UTILITY(U,$J,358.3,6397,0)
- ;;=N39.41^^30^392^107
- ;;^UTILITY(U,$J,358.3,6397,1,0)
+ ;;^UTILITY(U,$J,358.3,17572,1,3,0)
+ ;;=3^Cartilage Mass
+ ;;^UTILITY(U,$J,358.3,17572,1,4,0)
+ ;;=4^M94.9
+ ;;^UTILITY(U,$J,358.3,17572,2)
+ ;;=^5015366
+ ;;^UTILITY(U,$J,358.3,17573,0)
+ ;;=R22.9^^53^746^11
+ ;;^UTILITY(U,$J,358.3,17573,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6397,1,3,0)
- ;;=3^Urge Incontinence
- ;;^UTILITY(U,$J,358.3,6397,1,4,0)
- ;;=4^N39.41
- ;;^UTILITY(U,$J,358.3,6397,2)
- ;;=^5015680
+ ;;^UTILITY(U,$J,358.3,17573,1,3,0)
+ ;;=3^Skin Mass
+ ;;^UTILITY(U,$J,358.3,17573,1,4,0)
+ ;;=4^R22.9
+ ;;^UTILITY(U,$J,358.3,17573,2)
+ ;;=^5019292
+ ;;^UTILITY(U,$J,358.3,17574,0)
+ ;;=R22.1^^53^746^9
+ ;;^UTILITY(U,$J,358.3,17574,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17574,1,3,0)
+ ;;=3^Neck Mass
+ ;;^UTILITY(U,$J,358.3,17574,1,4,0)
+ ;;=4^R22.1
+ ;;^UTILITY(U,$J,358.3,17574,2)
+ ;;=^5019285
+ ;;^UTILITY(U,$J,358.3,17575,0)
+ ;;=R59.9^^53^746^8
+ ;;^UTILITY(U,$J,358.3,17575,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17575,1,3,0)
+ ;;=3^Lymph Node Mass
+ ;;^UTILITY(U,$J,358.3,17575,1,4,0)
+ ;;=4^R59.9
+ ;;^UTILITY(U,$J,358.3,17575,2)
+ ;;=^5019531
+ ;;^UTILITY(U,$J,358.3,17576,0)
+ ;;=R22.2^^53^746^7
+ ;;^UTILITY(U,$J,358.3,17576,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17576,1,3,0)
+ ;;=3^Lung/Chest Mass
+ ;;^UTILITY(U,$J,358.3,17576,1,4,0)
+ ;;=4^R22.2
+ ;;^UTILITY(U,$J,358.3,17576,2)
+ ;;=^5019286
+ ;;^UTILITY(U,$J,358.3,17577,0)
+ ;;=T82.818A^^53^747^54
+ ;;^UTILITY(U,$J,358.3,17577,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17577,1,3,0)
+ ;;=3^Embolism of Vascular Prosthetic Device/Implants/Grafts,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17577,1,4,0)
+ ;;=4^T82.818A
+ ;;^UTILITY(U,$J,358.3,17577,2)
+ ;;=^5054917
+ ;;^UTILITY(U,$J,358.3,17578,0)
+ ;;=T81.72XA^^53^747^24
+ ;;^UTILITY(U,$J,358.3,17578,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17578,1,3,0)
+ ;;=3^Complication of Vein Following Procedure,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17578,1,4,0)
+ ;;=4^T81.72XA
+ ;;^UTILITY(U,$J,358.3,17578,2)
+ ;;=^5054650
+ ;;^UTILITY(U,$J,358.3,17579,0)
+ ;;=T82.817A^^53^747^51
+ ;;^UTILITY(U,$J,358.3,17579,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17579,1,3,0)
+ ;;=3^Embolism of Cardiac Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17579,1,4,0)
+ ;;=4^T82.817A
+ ;;^UTILITY(U,$J,358.3,17579,2)
+ ;;=^5054914
+ ;;^UTILITY(U,$J,358.3,17580,0)
+ ;;=T80.0XXA^^53^747^1
+ ;;^UTILITY(U,$J,358.3,17580,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17580,1,3,0)
+ ;;=3^Air Embolism Following Infusion/Transfusion/Therapeutic Inj,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17580,1,4,0)
+ ;;=4^T80.0XXA
+ ;;^UTILITY(U,$J,358.3,17580,2)
+ ;;=^5054344
+ ;;^UTILITY(U,$J,358.3,17581,0)
+ ;;=T81.718A^^53^747^20
+ ;;^UTILITY(U,$J,358.3,17581,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17581,1,3,0)
+ ;;=3^Complication of Artery Following Procedure,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17581,1,4,0)
+ ;;=4^T81.718A
+ ;;^UTILITY(U,$J,358.3,17581,2)
+ ;;=^5054644
+ ;;^UTILITY(U,$J,358.3,17582,0)
+ ;;=J95.811^^53^747^195
+ ;;^UTILITY(U,$J,358.3,17582,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17582,1,3,0)
+ ;;=3^Postprocedural Pneumothorax
+ ;;^UTILITY(U,$J,358.3,17582,1,4,0)
+ ;;=4^J95.811
+ ;;^UTILITY(U,$J,358.3,17582,2)
+ ;;=^5008336
+ ;;^UTILITY(U,$J,358.3,17583,0)
+ ;;=T82.110A^^53^747^4
+ ;;^UTILITY(U,$J,358.3,17583,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17583,1,3,0)
+ ;;=3^Breakdown of Cardiac Electrode,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17583,1,4,0)
+ ;;=4^T82.110A
+ ;;^UTILITY(U,$J,358.3,17583,2)
+ ;;=^5054680
+ ;;^UTILITY(U,$J,358.3,17584,0)
+ ;;=T82.191A^^53^747^139
+ ;;^UTILITY(U,$J,358.3,17584,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17584,1,3,0)
+ ;;=3^Mechanical Compl of Cardiac Pulse Generator,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17584,1,4,0)
+ ;;=4^T82.191A
+ ;;^UTILITY(U,$J,358.3,17584,2)
+ ;;=^5054707
+ ;;^UTILITY(U,$J,358.3,17585,0)
+ ;;=T82.111A^^53^747^5
+ ;;^UTILITY(U,$J,358.3,17585,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17585,1,3,0)
+ ;;=3^Breakdown of Cardiac Pulse Generator,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17585,1,4,0)
+ ;;=4^T82.111A
+ ;;^UTILITY(U,$J,358.3,17585,2)
+ ;;=^5054683
+ ;;^UTILITY(U,$J,358.3,17586,0)
+ ;;=T82.120A^^53^747^34
+ ;;^UTILITY(U,$J,358.3,17586,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17586,1,3,0)
+ ;;=3^Displacement of Cardiac Electrode,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17586,1,4,0)
+ ;;=4^T82.120A
+ ;;^UTILITY(U,$J,358.3,17586,2)
+ ;;=^5054692
+ ;;^UTILITY(U,$J,358.3,17587,0)
+ ;;=T82.121A^^53^747^35
+ ;;^UTILITY(U,$J,358.3,17587,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17587,1,3,0)
+ ;;=3^Displacement of Cardiac Pulse Generator,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17587,1,4,0)
+ ;;=4^T82.121A
+ ;;^UTILITY(U,$J,358.3,17587,2)
+ ;;=^5054695
+ ;;^UTILITY(U,$J,358.3,17588,0)
+ ;;=T82.190A^^53^747^141
+ ;;^UTILITY(U,$J,358.3,17588,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17588,1,3,0)
+ ;;=3^Mechanical Compl of Cardiact Electrode,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17588,1,4,0)
+ ;;=4^T82.190A
+ ;;^UTILITY(U,$J,358.3,17588,2)
+ ;;=^5054704
+ ;;^UTILITY(U,$J,358.3,17589,0)
+ ;;=T82.310A^^53^747^2
+ ;;^UTILITY(U,$J,358.3,17589,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17589,1,3,0)
+ ;;=3^Breakdown of Aortic Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17589,1,4,0)
+ ;;=4^T82.310A
+ ;;^UTILITY(U,$J,358.3,17589,2)
+ ;;=^5054740
+ ;;^UTILITY(U,$J,358.3,17590,0)
+ ;;=T82.311A^^53^747^7
+ ;;^UTILITY(U,$J,358.3,17590,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17590,1,3,0)
+ ;;=3^Breakdown of Carotid Arterial Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17590,1,4,0)
+ ;;=4^T82.311A
+ ;;^UTILITY(U,$J,358.3,17590,2)
+ ;;=^5054743
+ ;;^UTILITY(U,$J,358.3,17591,0)
+ ;;=T82.312A^^53^747^8
+ ;;^UTILITY(U,$J,358.3,17591,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17591,1,3,0)
+ ;;=3^Breakdown of Femoral Arterial Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17591,1,4,0)
+ ;;=4^T82.312A
+ ;;^UTILITY(U,$J,358.3,17591,2)
+ ;;=^5054746
+ ;;^UTILITY(U,$J,358.3,17592,0)
+ ;;=T82.318A^^53^747^17
+ ;;^UTILITY(U,$J,358.3,17592,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17592,1,3,0)
+ ;;=3^Breakdown of Vascular Grafts,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17592,1,4,0)
+ ;;=4^T82.318A
+ ;;^UTILITY(U,$J,358.3,17592,2)
+ ;;=^5054749
+ ;;^UTILITY(U,$J,358.3,17593,0)
+ ;;=T82.319A^^53^747^18
+ ;;^UTILITY(U,$J,358.3,17593,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17593,1,3,0)
+ ;;=3^Breakdown of Vascular Grafts,Unspec,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17593,1,4,0)
+ ;;=4^T82.319A
+ ;;^UTILITY(U,$J,358.3,17593,2)
+ ;;=^5054752
+ ;;^UTILITY(U,$J,358.3,17594,0)
+ ;;=T82.320A^^53^747^32
+ ;;^UTILITY(U,$J,358.3,17594,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17594,1,3,0)
+ ;;=3^Displacement of Aortic Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17594,1,4,0)
+ ;;=4^T82.320A
+ ;;^UTILITY(U,$J,358.3,17594,2)
+ ;;=^5054755
+ ;;^UTILITY(U,$J,358.3,17595,0)
+ ;;=T82.321A^^53^747^37
+ ;;^UTILITY(U,$J,358.3,17595,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17595,1,3,0)
+ ;;=3^Displacement of Carotid Arterial Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,17595,1,4,0)
+ ;;=4^T82.321A
+ ;;^UTILITY(U,$J,358.3,17595,2)
+ ;;=^5054758
+ ;;^UTILITY(U,$J,358.3,17596,0)
+ ;;=T82.322A^^53^747^38
+ ;;^UTILITY(U,$J,358.3,17596,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,17596,1,3,0)
+ ;;=3^Displacement of Femoral Arterial Graft,Init Encntr

@@ -1,130 +1,368 @@
-IBDEI0J3 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0J3 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8875,1,0)
+ ;;^UTILITY(U,$J,358.3,24196,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8875,1,3,0)
- ;;=3^Pigmentary Glaucoma,Left Eye,Mild Stage
- ;;^UTILITY(U,$J,358.3,8875,1,4,0)
- ;;=4^H40.1321
- ;;^UTILITY(U,$J,358.3,8875,2)
- ;;=^5005781
- ;;^UTILITY(U,$J,358.3,8876,0)
- ;;=H40.1322^^41^469^94
- ;;^UTILITY(U,$J,358.3,8876,1,0)
+ ;;^UTILITY(U,$J,358.3,24196,1,3,0)
+ ;;=3^Depressive Disorder,Unsp
+ ;;^UTILITY(U,$J,358.3,24196,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,24196,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,24197,0)
+ ;;=F44.81^^64^952^6
+ ;;^UTILITY(U,$J,358.3,24197,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8876,1,3,0)
- ;;=3^Pigmentary Glaucoma,Left Eye,Moderate Stage
- ;;^UTILITY(U,$J,358.3,8876,1,4,0)
- ;;=4^H40.1322
- ;;^UTILITY(U,$J,358.3,8876,2)
- ;;=^5005782
- ;;^UTILITY(U,$J,358.3,8877,0)
- ;;=H40.1323^^41^469^95
- ;;^UTILITY(U,$J,358.3,8877,1,0)
+ ;;^UTILITY(U,$J,358.3,24197,1,3,0)
+ ;;=3^Dissociative Identity Disorder
+ ;;^UTILITY(U,$J,358.3,24197,1,4,0)
+ ;;=4^F44.81
+ ;;^UTILITY(U,$J,358.3,24197,2)
+ ;;=^331909
+ ;;^UTILITY(U,$J,358.3,24198,0)
+ ;;=F44.9^^64^952^5
+ ;;^UTILITY(U,$J,358.3,24198,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8877,1,3,0)
- ;;=3^Pigmentary Glaucoma,Left Eye,Severe Stage
- ;;^UTILITY(U,$J,358.3,8877,1,4,0)
- ;;=4^H40.1323
- ;;^UTILITY(U,$J,358.3,8877,2)
- ;;=^5133495
- ;;^UTILITY(U,$J,358.3,8878,0)
- ;;=H40.1324^^41^469^92
- ;;^UTILITY(U,$J,358.3,8878,1,0)
+ ;;^UTILITY(U,$J,358.3,24198,1,3,0)
+ ;;=3^Dissociative Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,24198,1,4,0)
+ ;;=4^F44.9
+ ;;^UTILITY(U,$J,358.3,24198,2)
+ ;;=^5003584
+ ;;^UTILITY(U,$J,358.3,24199,0)
+ ;;=F44.0^^64^952^2
+ ;;^UTILITY(U,$J,358.3,24199,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8878,1,3,0)
- ;;=3^Pigmentary Glaucoma,Left Eye,Indeterminate Stage
- ;;^UTILITY(U,$J,358.3,8878,1,4,0)
- ;;=4^H40.1324
- ;;^UTILITY(U,$J,358.3,8878,2)
- ;;=^5005783
- ;;^UTILITY(U,$J,358.3,8879,0)
- ;;=H40.1330^^41^469^91
- ;;^UTILITY(U,$J,358.3,8879,1,0)
+ ;;^UTILITY(U,$J,358.3,24199,1,3,0)
+ ;;=3^Dissociative Amnesia
+ ;;^UTILITY(U,$J,358.3,24199,1,4,0)
+ ;;=4^F44.0
+ ;;^UTILITY(U,$J,358.3,24199,2)
+ ;;=^5003577
+ ;;^UTILITY(U,$J,358.3,24200,0)
+ ;;=F48.1^^64^952^1
+ ;;^UTILITY(U,$J,358.3,24200,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8879,1,3,0)
- ;;=3^Pigmentary Glaucoma,Bilateral,Unspec Stage
- ;;^UTILITY(U,$J,358.3,8879,1,4,0)
- ;;=4^H40.1330
- ;;^UTILITY(U,$J,358.3,8879,2)
- ;;=^5005784
- ;;^UTILITY(U,$J,358.3,8880,0)
- ;;=H40.1331^^41^469^88
- ;;^UTILITY(U,$J,358.3,8880,1,0)
+ ;;^UTILITY(U,$J,358.3,24200,1,3,0)
+ ;;=3^Depersonalization/Derealization Disorder
+ ;;^UTILITY(U,$J,358.3,24200,1,4,0)
+ ;;=4^F48.1
+ ;;^UTILITY(U,$J,358.3,24200,2)
+ ;;=^5003593
+ ;;^UTILITY(U,$J,358.3,24201,0)
+ ;;=F44.89^^64^952^4
+ ;;^UTILITY(U,$J,358.3,24201,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8880,1,3,0)
- ;;=3^Pigmentary Glaucoma,Bilateral,Mild Stage
- ;;^UTILITY(U,$J,358.3,8880,1,4,0)
- ;;=4^H40.1331
- ;;^UTILITY(U,$J,358.3,8880,2)
- ;;=^5005785
- ;;^UTILITY(U,$J,358.3,8881,0)
- ;;=H40.1332^^41^469^89
- ;;^UTILITY(U,$J,358.3,8881,1,0)
+ ;;^UTILITY(U,$J,358.3,24201,1,3,0)
+ ;;=3^Dissociative Disorder,Other Specified
+ ;;^UTILITY(U,$J,358.3,24201,1,4,0)
+ ;;=4^F44.89
+ ;;^UTILITY(U,$J,358.3,24201,2)
+ ;;=^5003583
+ ;;^UTILITY(U,$J,358.3,24202,0)
+ ;;=F44.1^^64^952^3
+ ;;^UTILITY(U,$J,358.3,24202,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8881,1,3,0)
- ;;=3^Pigmentary Glaucoma,Bilateral,Moderate Stage
- ;;^UTILITY(U,$J,358.3,8881,1,4,0)
- ;;=4^H40.1332
- ;;^UTILITY(U,$J,358.3,8881,2)
- ;;=^5005786
- ;;^UTILITY(U,$J,358.3,8882,0)
- ;;=H40.1333^^41^469^90
- ;;^UTILITY(U,$J,358.3,8882,1,0)
+ ;;^UTILITY(U,$J,358.3,24202,1,3,0)
+ ;;=3^Dissociative Amnesia w/ Dissociative Fugue
+ ;;^UTILITY(U,$J,358.3,24202,1,4,0)
+ ;;=4^F44.1
+ ;;^UTILITY(U,$J,358.3,24202,2)
+ ;;=^331908
+ ;;^UTILITY(U,$J,358.3,24203,0)
+ ;;=F50.02^^64^953^1
+ ;;^UTILITY(U,$J,358.3,24203,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8882,1,3,0)
- ;;=3^Pigmentary Glaucoma,Bilateral,Severe Stage
- ;;^UTILITY(U,$J,358.3,8882,1,4,0)
- ;;=4^H40.1333
- ;;^UTILITY(U,$J,358.3,8882,2)
- ;;=^5005787
- ;;^UTILITY(U,$J,358.3,8883,0)
- ;;=H40.1334^^41^469^87
- ;;^UTILITY(U,$J,358.3,8883,1,0)
+ ;;^UTILITY(U,$J,358.3,24203,1,3,0)
+ ;;=3^Anorexia Nervosa,Binge-Eating/Purging Type
+ ;;^UTILITY(U,$J,358.3,24203,1,4,0)
+ ;;=4^F50.02
+ ;;^UTILITY(U,$J,358.3,24203,2)
+ ;;=^5003599
+ ;;^UTILITY(U,$J,358.3,24204,0)
+ ;;=F50.01^^64^953^2
+ ;;^UTILITY(U,$J,358.3,24204,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8883,1,3,0)
- ;;=3^Pigmentary Glaucoma,Bilateral,Indeterminate Stage
- ;;^UTILITY(U,$J,358.3,8883,1,4,0)
- ;;=4^H40.1334
- ;;^UTILITY(U,$J,358.3,8883,2)
- ;;=^5005788
- ;;^UTILITY(U,$J,358.3,8884,0)
- ;;=H40.151^^41^469^118
- ;;^UTILITY(U,$J,358.3,8884,1,0)
+ ;;^UTILITY(U,$J,358.3,24204,1,3,0)
+ ;;=3^Anorexia Nervosa,Restricting Type
+ ;;^UTILITY(U,$J,358.3,24204,1,4,0)
+ ;;=4^F50.01
+ ;;^UTILITY(U,$J,358.3,24204,2)
+ ;;=^5003598
+ ;;^UTILITY(U,$J,358.3,24205,0)
+ ;;=F50.9^^64^953^7
+ ;;^UTILITY(U,$J,358.3,24205,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8884,1,3,0)
- ;;=3^Residual Stage Open-Angle Glaucoma,Right Eye
- ;;^UTILITY(U,$J,358.3,8884,1,4,0)
- ;;=4^H40.151
- ;;^UTILITY(U,$J,358.3,8884,2)
- ;;=^5138037
- ;;^UTILITY(U,$J,358.3,8885,0)
- ;;=H40.152^^41^469^117
- ;;^UTILITY(U,$J,358.3,8885,1,0)
+ ;;^UTILITY(U,$J,358.3,24205,1,3,0)
+ ;;=3^Feeding/Eating Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,24205,1,4,0)
+ ;;=4^F50.9
+ ;;^UTILITY(U,$J,358.3,24205,2)
+ ;;=^5003602
+ ;;^UTILITY(U,$J,358.3,24206,0)
+ ;;=F50.8^^64^953^6
+ ;;^UTILITY(U,$J,358.3,24206,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8885,1,3,0)
- ;;=3^Residual Stage Open-Angle Glaucoma,Left Eye
- ;;^UTILITY(U,$J,358.3,8885,1,4,0)
- ;;=4^H40.152
- ;;^UTILITY(U,$J,358.3,8885,2)
- ;;=^5138038
- ;;^UTILITY(U,$J,358.3,8886,0)
- ;;=H40.153^^41^469^116
- ;;^UTILITY(U,$J,358.3,8886,1,0)
+ ;;^UTILITY(U,$J,358.3,24206,1,3,0)
+ ;;=3^Feeding/Eating Disorder,Other Specified
+ ;;^UTILITY(U,$J,358.3,24206,1,4,0)
+ ;;=4^F50.8
+ ;;^UTILITY(U,$J,358.3,24206,2)
+ ;;=^5003601
+ ;;^UTILITY(U,$J,358.3,24207,0)
+ ;;=F50.8^^64^953^3
+ ;;^UTILITY(U,$J,358.3,24207,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8886,1,3,0)
- ;;=3^Residual Stage Open-Angle Glaucoma,Bilateral
- ;;^UTILITY(U,$J,358.3,8886,1,4,0)
- ;;=4^H40.153
- ;;^UTILITY(U,$J,358.3,8886,2)
- ;;=^5138039
- ;;^UTILITY(U,$J,358.3,8887,0)
- ;;=H40.20X1^^41^469^103
- ;;^UTILITY(U,$J,358.3,8887,1,0)
+ ;;^UTILITY(U,$J,358.3,24207,1,3,0)
+ ;;=3^Avoidant/Restrictive Food Intake Disorder
+ ;;^UTILITY(U,$J,358.3,24207,1,4,0)
+ ;;=4^F50.8
+ ;;^UTILITY(U,$J,358.3,24207,2)
+ ;;=^5003601
+ ;;^UTILITY(U,$J,358.3,24208,0)
+ ;;=F50.8^^64^953^4
+ ;;^UTILITY(U,$J,358.3,24208,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8887,1,3,0)
- ;;=3^Primary Angle-Closure Glaucoma,Mild Stage
- ;;^UTILITY(U,$J,358.3,8887,1,4,0)
- ;;=4^H40.20X1
+ ;;^UTILITY(U,$J,358.3,24208,1,3,0)
+ ;;=3^Binge-Eating Disorder
+ ;;^UTILITY(U,$J,358.3,24208,1,4,0)
+ ;;=4^F50.8
+ ;;^UTILITY(U,$J,358.3,24208,2)
+ ;;=^5003601
+ ;;^UTILITY(U,$J,358.3,24209,0)
+ ;;=F50.2^^64^953^5
+ ;;^UTILITY(U,$J,358.3,24209,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24209,1,3,0)
+ ;;=3^Bulimia Nervosa
+ ;;^UTILITY(U,$J,358.3,24209,1,4,0)
+ ;;=4^F50.2
+ ;;^UTILITY(U,$J,358.3,24209,2)
+ ;;=^5003600
+ ;;^UTILITY(U,$J,358.3,24210,0)
+ ;;=F50.8^^64^953^8
+ ;;^UTILITY(U,$J,358.3,24210,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24210,1,3,0)
+ ;;=3^Pica in Adults
+ ;;^UTILITY(U,$J,358.3,24210,1,4,0)
+ ;;=4^F50.8
+ ;;^UTILITY(U,$J,358.3,24210,2)
+ ;;=^5003601
+ ;;^UTILITY(U,$J,358.3,24211,0)
+ ;;=F98.21^^64^953^9
+ ;;^UTILITY(U,$J,358.3,24211,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24211,1,3,0)
+ ;;=3^Rumination Disorder
+ ;;^UTILITY(U,$J,358.3,24211,1,4,0)
+ ;;=4^F98.21
+ ;;^UTILITY(U,$J,358.3,24211,2)
+ ;;=^5003713
+ ;;^UTILITY(U,$J,358.3,24212,0)
+ ;;=Z55.9^^64^954^1
+ ;;^UTILITY(U,$J,358.3,24212,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24212,1,3,0)
+ ;;=3^Academic/Educational Problem
+ ;;^UTILITY(U,$J,358.3,24212,1,4,0)
+ ;;=4^Z55.9
+ ;;^UTILITY(U,$J,358.3,24212,2)
+ ;;=^5063106
+ ;;^UTILITY(U,$J,358.3,24213,0)
+ ;;=Z56.82^^64^954^5
+ ;;^UTILITY(U,$J,358.3,24213,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24213,1,3,0)
+ ;;=3^Problems Related to Current Military Deployment Status
+ ;;^UTILITY(U,$J,358.3,24213,1,4,0)
+ ;;=4^Z56.82
+ ;;^UTILITY(U,$J,358.3,24213,2)
+ ;;=^5063115
+ ;;^UTILITY(U,$J,358.3,24214,0)
+ ;;=Z56.0^^64^954^10
+ ;;^UTILITY(U,$J,358.3,24214,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24214,1,3,0)
+ ;;=3^Unemployment,Unspec
+ ;;^UTILITY(U,$J,358.3,24214,1,4,0)
+ ;;=4^Z56.0
+ ;;^UTILITY(U,$J,358.3,24214,2)
+ ;;=^5063107
+ ;;^UTILITY(U,$J,358.3,24215,0)
+ ;;=Z56.1^^64^954^2
+ ;;^UTILITY(U,$J,358.3,24215,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24215,1,3,0)
+ ;;=3^Change of Job
+ ;;^UTILITY(U,$J,358.3,24215,1,4,0)
+ ;;=4^Z56.1
+ ;;^UTILITY(U,$J,358.3,24215,2)
+ ;;=^5063108
+ ;;^UTILITY(U,$J,358.3,24216,0)
+ ;;=Z56.2^^64^954^8
+ ;;^UTILITY(U,$J,358.3,24216,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24216,1,3,0)
+ ;;=3^Threat of Job Loss
+ ;;^UTILITY(U,$J,358.3,24216,1,4,0)
+ ;;=4^Z56.2
+ ;;^UTILITY(U,$J,358.3,24216,2)
+ ;;=^5063109
+ ;;^UTILITY(U,$J,358.3,24217,0)
+ ;;=Z56.3^^64^954^7
+ ;;^UTILITY(U,$J,358.3,24217,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24217,1,3,0)
+ ;;=3^Stressful Work Schedule
+ ;;^UTILITY(U,$J,358.3,24217,1,4,0)
+ ;;=4^Z56.3
+ ;;^UTILITY(U,$J,358.3,24217,2)
+ ;;=^5063110
+ ;;^UTILITY(U,$J,358.3,24218,0)
+ ;;=Z56.4^^64^954^3
+ ;;^UTILITY(U,$J,358.3,24218,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24218,1,3,0)
+ ;;=3^Discord w/ Boss and Workmates
+ ;;^UTILITY(U,$J,358.3,24218,1,4,0)
+ ;;=4^Z56.4
+ ;;^UTILITY(U,$J,358.3,24218,2)
+ ;;=^5063111
+ ;;^UTILITY(U,$J,358.3,24219,0)
+ ;;=Z56.5^^64^954^9
+ ;;^UTILITY(U,$J,358.3,24219,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24219,1,3,0)
+ ;;=3^Uncongenial Work Environment
+ ;;^UTILITY(U,$J,358.3,24219,1,4,0)
+ ;;=4^Z56.5
+ ;;^UTILITY(U,$J,358.3,24219,2)
+ ;;=^5063112
+ ;;^UTILITY(U,$J,358.3,24220,0)
+ ;;=Z56.6^^64^954^4
+ ;;^UTILITY(U,$J,358.3,24220,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24220,1,3,0)
+ ;;=3^Physical & Mental Strain Related to Work,Other
+ ;;^UTILITY(U,$J,358.3,24220,1,4,0)
+ ;;=4^Z56.6
+ ;;^UTILITY(U,$J,358.3,24220,2)
+ ;;=^5063113
+ ;;^UTILITY(U,$J,358.3,24221,0)
+ ;;=Z56.89^^64^954^6
+ ;;^UTILITY(U,$J,358.3,24221,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24221,1,3,0)
+ ;;=3^Problems Related to Employment,Other
+ ;;^UTILITY(U,$J,358.3,24221,1,4,0)
+ ;;=4^Z56.89
+ ;;^UTILITY(U,$J,358.3,24221,2)
+ ;;=^5063116
+ ;;^UTILITY(U,$J,358.3,24222,0)
+ ;;=F64.1^^64^955^1
+ ;;^UTILITY(U,$J,358.3,24222,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24222,1,3,0)
+ ;;=3^Gender Dysphoria in Adolescents & Adults
+ ;;^UTILITY(U,$J,358.3,24222,1,4,0)
+ ;;=4^F64.1
+ ;;^UTILITY(U,$J,358.3,24222,2)
+ ;;=^5003647
+ ;;^UTILITY(U,$J,358.3,24223,0)
+ ;;=F64.8^^64^955^2
+ ;;^UTILITY(U,$J,358.3,24223,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24223,1,3,0)
+ ;;=3^Gender Dysphoria,Other Specified
+ ;;^UTILITY(U,$J,358.3,24223,1,4,0)
+ ;;=4^F64.8
+ ;;^UTILITY(U,$J,358.3,24223,2)
+ ;;=^5003649
+ ;;^UTILITY(U,$J,358.3,24224,0)
+ ;;=F64.9^^64^955^3
+ ;;^UTILITY(U,$J,358.3,24224,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24224,1,3,0)
+ ;;=3^Gender Dysphoria,Unspec
+ ;;^UTILITY(U,$J,358.3,24224,1,4,0)
+ ;;=4^F64.9
+ ;;^UTILITY(U,$J,358.3,24224,2)
+ ;;=^5003650
+ ;;^UTILITY(U,$J,358.3,24225,0)
+ ;;=Z59.2^^64^956^1
+ ;;^UTILITY(U,$J,358.3,24225,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24225,1,3,0)
+ ;;=3^Discord w/ Neighbor,Lodger or Landlord
+ ;;^UTILITY(U,$J,358.3,24225,1,4,0)
+ ;;=4^Z59.2
+ ;;^UTILITY(U,$J,358.3,24225,2)
+ ;;=^5063131
+ ;;^UTILITY(U,$J,358.3,24226,0)
+ ;;=Z59.0^^64^956^3
+ ;;^UTILITY(U,$J,358.3,24226,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24226,1,3,0)
+ ;;=3^Homelessness
+ ;;^UTILITY(U,$J,358.3,24226,1,4,0)
+ ;;=4^Z59.0
+ ;;^UTILITY(U,$J,358.3,24226,2)
+ ;;=^5063129
+ ;;^UTILITY(U,$J,358.3,24227,0)
+ ;;=Z59.1^^64^956^5
+ ;;^UTILITY(U,$J,358.3,24227,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24227,1,3,0)
+ ;;=3^Inadequate Housing
+ ;;^UTILITY(U,$J,358.3,24227,1,4,0)
+ ;;=4^Z59.1
+ ;;^UTILITY(U,$J,358.3,24227,2)
+ ;;=^5063130
+ ;;^UTILITY(U,$J,358.3,24228,0)
+ ;;=Z59.3^^64^956^9
+ ;;^UTILITY(U,$J,358.3,24228,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24228,1,3,0)
+ ;;=3^Problems Related to Living in Residential Institution
+ ;;^UTILITY(U,$J,358.3,24228,1,4,0)
+ ;;=4^Z59.3
+ ;;^UTILITY(U,$J,358.3,24228,2)
+ ;;=^5063132
+ ;;^UTILITY(U,$J,358.3,24229,0)
+ ;;=Z59.4^^64^956^7
+ ;;^UTILITY(U,$J,358.3,24229,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24229,1,3,0)
+ ;;=3^Lack of Adequate Food or Safe Drinking Water
+ ;;^UTILITY(U,$J,358.3,24229,1,4,0)
+ ;;=4^Z59.4
+ ;;^UTILITY(U,$J,358.3,24229,2)
+ ;;=^5063133
+ ;;^UTILITY(U,$J,358.3,24230,0)
+ ;;=Z59.5^^64^956^2
+ ;;^UTILITY(U,$J,358.3,24230,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24230,1,3,0)
+ ;;=3^Extreme Poverty
+ ;;^UTILITY(U,$J,358.3,24230,1,4,0)
+ ;;=4^Z59.5
+ ;;^UTILITY(U,$J,358.3,24230,2)
+ ;;=^5063134
+ ;;^UTILITY(U,$J,358.3,24231,0)
+ ;;=Z59.6^^64^956^8
+ ;;^UTILITY(U,$J,358.3,24231,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24231,1,3,0)
+ ;;=3^Low Income
+ ;;^UTILITY(U,$J,358.3,24231,1,4,0)
+ ;;=4^Z59.6
+ ;;^UTILITY(U,$J,358.3,24231,2)
+ ;;=^5063135
+ ;;^UTILITY(U,$J,358.3,24232,0)
+ ;;=Z59.7^^64^956^6
+ ;;^UTILITY(U,$J,358.3,24232,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,24232,1,3,0)
+ ;;=3^Insufficient Social Insurance/Welfare Support

@@ -1,124 +1,332 @@
-IBDEI0D5 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0D5 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,6031,1,0)
+ ;;^UTILITY(U,$J,358.3,16598,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6031,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,6031,1,4,0)
- ;;=4^L97.213
- ;;^UTILITY(U,$J,358.3,6031,2)
- ;;=^5009502
- ;;^UTILITY(U,$J,358.3,6032,0)
- ;;=L97.214^^30^385^209
- ;;^UTILITY(U,$J,358.3,6032,1,0)
+ ;;^UTILITY(U,$J,358.3,16598,1,3,0)
+ ;;=3^Disp fx of segmental shaft of right tibia, sequela     
+ ;;^UTILITY(U,$J,358.3,16598,1,4,0)
+ ;;=4^S82.261S
+ ;;^UTILITY(U,$J,358.3,16598,2)
+ ;;=^5041538
+ ;;^UTILITY(U,$J,358.3,16599,0)
+ ;;=S82.242S^^47^714^30
+ ;;^UTILITY(U,$J,358.3,16599,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6032,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,6032,1,4,0)
- ;;=4^L97.214
- ;;^UTILITY(U,$J,358.3,6032,2)
- ;;=^5009503
- ;;^UTILITY(U,$J,358.3,6033,0)
- ;;=L97.219^^30^385^210
- ;;^UTILITY(U,$J,358.3,6033,1,0)
+ ;;^UTILITY(U,$J,358.3,16599,1,3,0)
+ ;;=3^Disp fx of spiral shaft of left tibia, sequela  
+ ;;^UTILITY(U,$J,358.3,16599,1,4,0)
+ ;;=4^S82.242S
+ ;;^UTILITY(U,$J,358.3,16599,2)
+ ;;=^5041362
+ ;;^UTILITY(U,$J,358.3,16600,0)
+ ;;=S82.241S^^47^714^32
+ ;;^UTILITY(U,$J,358.3,16600,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6033,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Unspec Severity
- ;;^UTILITY(U,$J,358.3,6033,1,4,0)
- ;;=4^L97.219
- ;;^UTILITY(U,$J,358.3,6033,2)
- ;;=^5009504
- ;;^UTILITY(U,$J,358.3,6034,0)
- ;;=L97.221^^30^385^176
- ;;^UTILITY(U,$J,358.3,6034,1,0)
+ ;;^UTILITY(U,$J,358.3,16600,1,3,0)
+ ;;=3^Disp fx of spiral shaft of right tibia, sequela 
+ ;;^UTILITY(U,$J,358.3,16600,1,4,0)
+ ;;=4^S82.241S
+ ;;^UTILITY(U,$J,358.3,16600,2)
+ ;;=^5041346
+ ;;^UTILITY(U,$J,358.3,16601,0)
+ ;;=S82.222S^^47^714^34
+ ;;^UTILITY(U,$J,358.3,16601,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6034,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,6034,1,4,0)
- ;;=4^L97.221
- ;;^UTILITY(U,$J,358.3,6034,2)
- ;;=^5009505
- ;;^UTILITY(U,$J,358.3,6035,0)
- ;;=L97.222^^30^385^177
- ;;^UTILITY(U,$J,358.3,6035,1,0)
+ ;;^UTILITY(U,$J,358.3,16601,1,3,0)
+ ;;=3^Disp fx of transverse shaft of left tibia, sequela     
+ ;;^UTILITY(U,$J,358.3,16601,1,4,0)
+ ;;=4^S82.222S
+ ;;^UTILITY(U,$J,358.3,16601,2)
+ ;;=^5041170
+ ;;^UTILITY(U,$J,358.3,16602,0)
+ ;;=S82.221S^^47^714^36
+ ;;^UTILITY(U,$J,358.3,16602,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6035,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,6035,1,4,0)
- ;;=4^L97.222
- ;;^UTILITY(U,$J,358.3,6035,2)
- ;;=^5009506
- ;;^UTILITY(U,$J,358.3,6036,0)
- ;;=L97.223^^30^385^178
- ;;^UTILITY(U,$J,358.3,6036,1,0)
+ ;;^UTILITY(U,$J,358.3,16602,1,3,0)
+ ;;=3^Disp fx of transverse shaft of right tibia, sequela   
+ ;;^UTILITY(U,$J,358.3,16602,1,4,0)
+ ;;=4^S82.221S
+ ;;^UTILITY(U,$J,358.3,16602,2)
+ ;;=^5041154
+ ;;^UTILITY(U,$J,358.3,16603,0)
+ ;;=S82.145S^^47^714^39
+ ;;^UTILITY(U,$J,358.3,16603,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6036,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,6036,1,4,0)
- ;;=4^L97.223
- ;;^UTILITY(U,$J,358.3,6036,2)
- ;;=^5009507
- ;;^UTILITY(U,$J,358.3,6037,0)
- ;;=L97.224^^30^385^179
- ;;^UTILITY(U,$J,358.3,6037,1,0)
+ ;;^UTILITY(U,$J,358.3,16603,1,3,0)
+ ;;=3^Nondisp fx of bicondylar of left tibia, sequela   
+ ;;^UTILITY(U,$J,358.3,16603,1,4,0)
+ ;;=4^S82.145S
+ ;;^UTILITY(U,$J,358.3,16603,2)
+ ;;=^5040950
+ ;;^UTILITY(U,$J,358.3,16604,0)
+ ;;=S82.144S^^47^714^40
+ ;;^UTILITY(U,$J,358.3,16604,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6037,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,6037,1,4,0)
- ;;=4^L97.224
- ;;^UTILITY(U,$J,358.3,6037,2)
- ;;=^5009508
- ;;^UTILITY(U,$J,358.3,6038,0)
- ;;=L97.229^^30^385^180
- ;;^UTILITY(U,$J,358.3,6038,1,0)
+ ;;^UTILITY(U,$J,358.3,16604,1,3,0)
+ ;;=3^Nondisp fx of bicondylar of right tibia, sequela  
+ ;;^UTILITY(U,$J,358.3,16604,1,4,0)
+ ;;=4^S82.144S
+ ;;^UTILITY(U,$J,358.3,16604,2)
+ ;;=^5040934
+ ;;^UTILITY(U,$J,358.3,16605,0)
+ ;;=S82.255S^^47^714^41
+ ;;^UTILITY(U,$J,358.3,16605,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6038,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Unspec Severity
- ;;^UTILITY(U,$J,358.3,6038,1,4,0)
- ;;=4^L97.229
- ;;^UTILITY(U,$J,358.3,6038,2)
- ;;=^5009509
- ;;^UTILITY(U,$J,358.3,6039,0)
- ;;=L97.311^^30^385^201
- ;;^UTILITY(U,$J,358.3,6039,1,0)
+ ;;^UTILITY(U,$J,358.3,16605,1,3,0)
+ ;;=3^Nondisp fx of comminuted shaft of left tibia, sequela 
+ ;;^UTILITY(U,$J,358.3,16605,1,4,0)
+ ;;=4^S82.255S
+ ;;^UTILITY(U,$J,358.3,16605,2)
+ ;;=^5041506
+ ;;^UTILITY(U,$J,358.3,16606,0)
+ ;;=S82.254S^^47^714^43
+ ;;^UTILITY(U,$J,358.3,16606,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6039,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Ankle w/ Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,6039,1,4,0)
- ;;=4^L97.311
- ;;^UTILITY(U,$J,358.3,6039,2)
- ;;=^5009515
- ;;^UTILITY(U,$J,358.3,6040,0)
- ;;=L97.312^^30^385^202
- ;;^UTILITY(U,$J,358.3,6040,1,0)
+ ;;^UTILITY(U,$J,358.3,16606,1,3,0)
+ ;;=3^Nondisp fx of comminuted shaft of right tibia, sequela 
+ ;;^UTILITY(U,$J,358.3,16606,1,4,0)
+ ;;=4^S82.254S
+ ;;^UTILITY(U,$J,358.3,16606,2)
+ ;;=^5041490
+ ;;^UTILITY(U,$J,358.3,16607,0)
+ ;;=S82.125S^^47^714^45
+ ;;^UTILITY(U,$J,358.3,16607,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6040,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Ankle w/ Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,6040,1,4,0)
- ;;=4^L97.312
- ;;^UTILITY(U,$J,358.3,6040,2)
- ;;=^5009516
- ;;^UTILITY(U,$J,358.3,6041,0)
- ;;=L97.313^^30^385^203
- ;;^UTILITY(U,$J,358.3,6041,1,0)
+ ;;^UTILITY(U,$J,358.3,16607,1,3,0)
+ ;;=3^Nondisp fx of lateral condyle of left tibia, sequela
+ ;;^UTILITY(U,$J,358.3,16607,1,4,0)
+ ;;=4^S82.125S
+ ;;^UTILITY(U,$J,358.3,16607,2)
+ ;;=^5040758
+ ;;^UTILITY(U,$J,358.3,16608,0)
+ ;;=S82.124S^^47^714^46
+ ;;^UTILITY(U,$J,358.3,16608,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6041,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Ankle w/ Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,6041,1,4,0)
- ;;=4^L97.313
- ;;^UTILITY(U,$J,358.3,6041,2)
- ;;=^5009517
- ;;^UTILITY(U,$J,358.3,6042,0)
- ;;=L97.314^^30^385^204
- ;;^UTILITY(U,$J,358.3,6042,1,0)
+ ;;^UTILITY(U,$J,358.3,16608,1,3,0)
+ ;;=3^Nondisp fx of lateral condyle of right tibia, sequela
+ ;;^UTILITY(U,$J,358.3,16608,1,4,0)
+ ;;=4^S82.124S
+ ;;^UTILITY(U,$J,358.3,16608,2)
+ ;;=^5040742
+ ;;^UTILITY(U,$J,358.3,16609,0)
+ ;;=S82.115S^^47^714^49
+ ;;^UTILITY(U,$J,358.3,16609,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,6042,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Ankle w/ Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,6042,1,4,0)
- ;;=4^L97.314
- ;;^UTILITY(U,$J,358.3,6042,2)
- ;;=^5009518
- ;;^UTILITY(U,$J,358.3,6043,0)
- ;;=L97.319^^30^385^205
+ ;;^UTILITY(U,$J,358.3,16609,1,3,0)
+ ;;=3^Nondisp fx of left tibial spine, sequela       
+ ;;^UTILITY(U,$J,358.3,16609,1,4,0)
+ ;;=4^S82.115S
+ ;;^UTILITY(U,$J,358.3,16609,2)
+ ;;=^5040662
+ ;;^UTILITY(U,$J,358.3,16610,0)
+ ;;=S82.155S^^47^714^50
+ ;;^UTILITY(U,$J,358.3,16610,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16610,1,3,0)
+ ;;=3^Nondisp fx of left tibial tuberosity, sequela   
+ ;;^UTILITY(U,$J,358.3,16610,1,4,0)
+ ;;=4^S82.155S
+ ;;^UTILITY(U,$J,358.3,16610,2)
+ ;;=^5041046
+ ;;^UTILITY(U,$J,358.3,16611,0)
+ ;;=S82.135S^^47^714^51
+ ;;^UTILITY(U,$J,358.3,16611,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16611,1,3,0)
+ ;;=3^Nondisp fx of medial condyle of left tibia, sequela
+ ;;^UTILITY(U,$J,358.3,16611,1,4,0)
+ ;;=4^S82.135S
+ ;;^UTILITY(U,$J,358.3,16611,2)
+ ;;=^5040854
+ ;;^UTILITY(U,$J,358.3,16612,0)
+ ;;=S82.134S^^47^714^52
+ ;;^UTILITY(U,$J,358.3,16612,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16612,1,3,0)
+ ;;=3^Nondisp fx of medial condyle of right tibia, sequela
+ ;;^UTILITY(U,$J,358.3,16612,1,4,0)
+ ;;=4^S82.134S
+ ;;^UTILITY(U,$J,358.3,16612,2)
+ ;;=^5040838
+ ;;^UTILITY(U,$J,358.3,16613,0)
+ ;;=S82.55XS^^47^714^53
+ ;;^UTILITY(U,$J,358.3,16613,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16613,1,3,0)
+ ;;=3^Nondisp fx of medial malleolus of left tibia, sequela
+ ;;^UTILITY(U,$J,358.3,16613,1,4,0)
+ ;;=4^S82.55XS
+ ;;^UTILITY(U,$J,358.3,16613,2)
+ ;;=^5042294
+ ;;^UTILITY(U,$J,358.3,16614,0)
+ ;;=S82.54XS^^47^714^54
+ ;;^UTILITY(U,$J,358.3,16614,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16614,1,3,0)
+ ;;=3^Nondisp fx of medial malleolus of right tibia, sequela
+ ;;^UTILITY(U,$J,358.3,16614,1,4,0)
+ ;;=4^S82.54XS
+ ;;^UTILITY(U,$J,358.3,16614,2)
+ ;;=^5042278
+ ;;^UTILITY(U,$J,358.3,16615,0)
+ ;;=S82.114S^^47^714^61
+ ;;^UTILITY(U,$J,358.3,16615,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16615,1,3,0)
+ ;;=3^Nondisp fx of right tibial spine, sequela      
+ ;;^UTILITY(U,$J,358.3,16615,1,4,0)
+ ;;=4^S82.114S
+ ;;^UTILITY(U,$J,358.3,16615,2)
+ ;;=^5040646
+ ;;^UTILITY(U,$J,358.3,16616,0)
+ ;;=S82.154S^^47^714^62
+ ;;^UTILITY(U,$J,358.3,16616,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16616,1,3,0)
+ ;;=3^Nondisp fx of right tibial tuberosity, sequela  
+ ;;^UTILITY(U,$J,358.3,16616,1,4,0)
+ ;;=4^S82.154S
+ ;;^UTILITY(U,$J,358.3,16616,2)
+ ;;=^5041030
+ ;;^UTILITY(U,$J,358.3,16617,0)
+ ;;=S82.235S^^47^714^56
+ ;;^UTILITY(U,$J,358.3,16617,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16617,1,3,0)
+ ;;=3^Nondisp fx of oblique shaft of left tibia, sequela
+ ;;^UTILITY(U,$J,358.3,16617,1,4,0)
+ ;;=4^S82.235S
+ ;;^UTILITY(U,$J,358.3,16617,2)
+ ;;=^5041314
+ ;;^UTILITY(U,$J,358.3,16618,0)
+ ;;=S82.234S^^47^714^58
+ ;;^UTILITY(U,$J,358.3,16618,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16618,1,3,0)
+ ;;=3^Nondisp fx of oblique shaft of right tibia, sequela  
+ ;;^UTILITY(U,$J,358.3,16618,1,4,0)
+ ;;=4^S82.234S
+ ;;^UTILITY(U,$J,358.3,16618,2)
+ ;;=^5041298
+ ;;^UTILITY(U,$J,358.3,16619,0)
+ ;;=S82.875S^^47^714^59
+ ;;^UTILITY(U,$J,358.3,16619,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16619,1,3,0)
+ ;;=3^Nondisp fx of pilon of left tibia, sequela        
+ ;;^UTILITY(U,$J,358.3,16619,1,4,0)
+ ;;=4^S82.875S
+ ;;^UTILITY(U,$J,358.3,16619,2)
+ ;;=^5042846
+ ;;^UTILITY(U,$J,358.3,16620,0)
+ ;;=S82.874S^^47^714^60
+ ;;^UTILITY(U,$J,358.3,16620,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16620,1,3,0)
+ ;;=3^Nondisp fx of pilon of right tibia, sequela       
+ ;;^UTILITY(U,$J,358.3,16620,1,4,0)
+ ;;=4^S82.874S
+ ;;^UTILITY(U,$J,358.3,16620,2)
+ ;;=^5042830
+ ;;^UTILITY(U,$J,358.3,16621,0)
+ ;;=S82.265S^^47^714^64
+ ;;^UTILITY(U,$J,358.3,16621,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16621,1,3,0)
+ ;;=3^Nondisp fx of segmental shaft of left tibia, sequela  
+ ;;^UTILITY(U,$J,358.3,16621,1,4,0)
+ ;;=4^S82.265S
+ ;;^UTILITY(U,$J,358.3,16621,2)
+ ;;=^5041602
+ ;;^UTILITY(U,$J,358.3,16622,0)
+ ;;=S82.264S^^47^714^65
+ ;;^UTILITY(U,$J,358.3,16622,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16622,1,3,0)
+ ;;=3^Nondisp fx of segmental shaft of right tibia, sequela 
+ ;;^UTILITY(U,$J,358.3,16622,1,4,0)
+ ;;=4^S82.264S
+ ;;^UTILITY(U,$J,358.3,16622,2)
+ ;;=^5041586
+ ;;^UTILITY(U,$J,358.3,16623,0)
+ ;;=S82.244S^^47^714^70
+ ;;^UTILITY(U,$J,358.3,16623,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16623,1,3,0)
+ ;;=3^Nondisp fx of spiral shaft of right tibia, sequela  
+ ;;^UTILITY(U,$J,358.3,16623,1,4,0)
+ ;;=4^S82.244S
+ ;;^UTILITY(U,$J,358.3,16623,2)
+ ;;=^5041394
+ ;;^UTILITY(U,$J,358.3,16624,0)
+ ;;=S82.245S^^47^714^68
+ ;;^UTILITY(U,$J,358.3,16624,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16624,1,3,0)
+ ;;=3^Nondisp fx of spiral shaft of left tibia, sequela   
+ ;;^UTILITY(U,$J,358.3,16624,1,4,0)
+ ;;=4^S82.245S
+ ;;^UTILITY(U,$J,358.3,16624,2)
+ ;;=^5041410
+ ;;^UTILITY(U,$J,358.3,16625,0)
+ ;;=S82.225S^^47^714^71
+ ;;^UTILITY(U,$J,358.3,16625,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16625,1,3,0)
+ ;;=3^Nondisp fx of transverse shaft of left tibia, sequela  
+ ;;^UTILITY(U,$J,358.3,16625,1,4,0)
+ ;;=4^S82.225S
+ ;;^UTILITY(U,$J,358.3,16625,2)
+ ;;=^5041218
+ ;;^UTILITY(U,$J,358.3,16626,0)
+ ;;=S82.224S^^47^714^73
+ ;;^UTILITY(U,$J,358.3,16626,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16626,1,3,0)
+ ;;=3^Nondisp fx of transverse shaft of right tibia, sequela  
+ ;;^UTILITY(U,$J,358.3,16626,1,4,0)
+ ;;=4^S82.224S
+ ;;^UTILITY(U,$J,358.3,16626,2)
+ ;;=^5041202
+ ;;^UTILITY(U,$J,358.3,16627,0)
+ ;;=M84.462S^^47^714^76
+ ;;^UTILITY(U,$J,358.3,16627,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16627,1,3,0)
+ ;;=3^Pathological fracture, left tibia, sequela
+ ;;^UTILITY(U,$J,358.3,16627,1,4,0)
+ ;;=4^M84.462S
+ ;;^UTILITY(U,$J,358.3,16627,2)
+ ;;=^5013943
+ ;;^UTILITY(U,$J,358.3,16628,0)
+ ;;=M84.461S^^47^714^78
+ ;;^UTILITY(U,$J,358.3,16628,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16628,1,3,0)
+ ;;=3^Pathological fracture, right tibia, sequela
+ ;;^UTILITY(U,$J,358.3,16628,1,4,0)
+ ;;=4^M84.461S
+ ;;^UTILITY(U,$J,358.3,16628,2)
+ ;;=^5013937
+ ;;^UTILITY(U,$J,358.3,16629,0)
+ ;;=S89.112S^^47^714^79
+ ;;^UTILITY(U,$J,358.3,16629,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16629,1,3,0)
+ ;;=3^Sltr-haris Type I physeal fx lower end of l tibia, sequela
+ ;;^UTILITY(U,$J,358.3,16629,1,4,0)
+ ;;=4^S89.112S
+ ;;^UTILITY(U,$J,358.3,16629,2)
+ ;;=^5137294
+ ;;^UTILITY(U,$J,358.3,16630,0)
+ ;;=S89.012S^^47^714^83
+ ;;^UTILITY(U,$J,358.3,16630,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,16630,1,3,0)
+ ;;=3^Sltr-haris Type I physeal fx upper end of l tibia, sequela
+ ;;^UTILITY(U,$J,358.3,16630,1,4,0)
+ ;;=4^S89.012S
+ ;;^UTILITY(U,$J,358.3,16630,2)
+ ;;=^5043654

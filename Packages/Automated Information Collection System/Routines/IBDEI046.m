@@ -1,134 +1,374 @@
-IBDEI046 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI046 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1528,2)
- ;;=^5007219
- ;;^UTILITY(U,$J,358.3,1529,0)
- ;;=I49.40^^11^143^33
- ;;^UTILITY(U,$J,358.3,1529,1,0)
+ ;;^UTILITY(U,$J,358.3,5003,2)
+ ;;=^5009033
+ ;;^UTILITY(U,$J,358.3,5004,0)
+ ;;=L03.114^^22^307^27
+ ;;^UTILITY(U,$J,358.3,5004,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1529,1,3,0)
- ;;=3^Premature Depolarization,Unspec
- ;;^UTILITY(U,$J,358.3,1529,1,4,0)
- ;;=4^I49.40
- ;;^UTILITY(U,$J,358.3,1529,2)
- ;;=^5007234
- ;;^UTILITY(U,$J,358.3,1530,0)
- ;;=I49.1^^11^143^7
- ;;^UTILITY(U,$J,358.3,1530,1,0)
+ ;;^UTILITY(U,$J,358.3,5004,1,3,0)
+ ;;=3^Cellulitis of Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,5004,1,4,0)
+ ;;=4^L03.114
+ ;;^UTILITY(U,$J,358.3,5004,2)
+ ;;=^5009034
+ ;;^UTILITY(U,$J,358.3,5005,0)
+ ;;=L03.317^^22^307^19
+ ;;^UTILITY(U,$J,358.3,5005,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1530,1,3,0)
- ;;=3^Atrial Premature Depolarization
- ;;^UTILITY(U,$J,358.3,1530,1,4,0)
- ;;=4^I49.1
- ;;^UTILITY(U,$J,358.3,1530,2)
- ;;=^5007231
- ;;^UTILITY(U,$J,358.3,1531,0)
- ;;=I49.49^^11^143^32
- ;;^UTILITY(U,$J,358.3,1531,1,0)
+ ;;^UTILITY(U,$J,358.3,5005,1,3,0)
+ ;;=3^Cellulitis of Buttock
+ ;;^UTILITY(U,$J,358.3,5005,1,4,0)
+ ;;=4^L03.317
+ ;;^UTILITY(U,$J,358.3,5005,2)
+ ;;=^5009053
+ ;;^UTILITY(U,$J,358.3,5006,0)
+ ;;=L03.211^^22^307^20
+ ;;^UTILITY(U,$J,358.3,5006,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1531,1,3,0)
- ;;=3^Premature Depolarization NEC
- ;;^UTILITY(U,$J,358.3,1531,1,4,0)
- ;;=4^I49.49
- ;;^UTILITY(U,$J,358.3,1531,2)
- ;;=^5007235
- ;;^UTILITY(U,$J,358.3,1532,0)
- ;;=I49.5^^11^143^40
- ;;^UTILITY(U,$J,358.3,1532,1,0)
+ ;;^UTILITY(U,$J,358.3,5006,1,3,0)
+ ;;=3^Cellulitis of Face
+ ;;^UTILITY(U,$J,358.3,5006,1,4,0)
+ ;;=4^L03.211
+ ;;^UTILITY(U,$J,358.3,5006,2)
+ ;;=^5009043
+ ;;^UTILITY(U,$J,358.3,5007,0)
+ ;;=L03.011^^22^307^29
+ ;;^UTILITY(U,$J,358.3,5007,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1532,1,3,0)
- ;;=3^Sick Sinus Syndrome
- ;;^UTILITY(U,$J,358.3,1532,1,4,0)
- ;;=4^I49.5
- ;;^UTILITY(U,$J,358.3,1532,2)
- ;;=^110404
- ;;^UTILITY(U,$J,358.3,1533,0)
- ;;=R00.1^^11^143^9
- ;;^UTILITY(U,$J,358.3,1533,1,0)
+ ;;^UTILITY(U,$J,358.3,5007,1,3,0)
+ ;;=3^Cellulitis of Right Finger
+ ;;^UTILITY(U,$J,358.3,5007,1,4,0)
+ ;;=4^L03.011
+ ;;^UTILITY(U,$J,358.3,5007,2)
+ ;;=^5009019
+ ;;^UTILITY(U,$J,358.3,5008,0)
+ ;;=L03.012^^22^307^24
+ ;;^UTILITY(U,$J,358.3,5008,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1533,1,3,0)
- ;;=3^Bradycardia,Unspec
- ;;^UTILITY(U,$J,358.3,1533,1,4,0)
- ;;=4^R00.1
- ;;^UTILITY(U,$J,358.3,1533,2)
- ;;=^5019164
- ;;^UTILITY(U,$J,358.3,1534,0)
- ;;=T82.110A^^11^143^10
- ;;^UTILITY(U,$J,358.3,1534,1,0)
+ ;;^UTILITY(U,$J,358.3,5008,1,3,0)
+ ;;=3^Cellulitis of Left Finger
+ ;;^UTILITY(U,$J,358.3,5008,1,4,0)
+ ;;=4^L03.012
+ ;;^UTILITY(U,$J,358.3,5008,2)
+ ;;=^5009020
+ ;;^UTILITY(U,$J,358.3,5009,0)
+ ;;=L03.119^^22^307^21
+ ;;^UTILITY(U,$J,358.3,5009,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1534,1,3,0)
- ;;=3^Breakdown of Cardiac Electrode,Init Encntr
- ;;^UTILITY(U,$J,358.3,1534,1,4,0)
- ;;=4^T82.110A
- ;;^UTILITY(U,$J,358.3,1534,2)
- ;;=^5054680
- ;;^UTILITY(U,$J,358.3,1535,0)
- ;;=T82.111A^^11^143^11
- ;;^UTILITY(U,$J,358.3,1535,1,0)
+ ;;^UTILITY(U,$J,358.3,5009,1,3,0)
+ ;;=3^Cellulitis of Foot
+ ;;^UTILITY(U,$J,358.3,5009,1,4,0)
+ ;;=4^L03.119
+ ;;^UTILITY(U,$J,358.3,5009,2)
+ ;;=^5009036
+ ;;^UTILITY(U,$J,358.3,5010,0)
+ ;;=L03.119^^22^307^23
+ ;;^UTILITY(U,$J,358.3,5010,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1535,1,3,0)
- ;;=3^Breakdown of Cardiac Pulse Generator,Init Encntr
- ;;^UTILITY(U,$J,358.3,1535,1,4,0)
- ;;=4^T82.111A
- ;;^UTILITY(U,$J,358.3,1535,2)
- ;;=^5054683
- ;;^UTILITY(U,$J,358.3,1536,0)
- ;;=T82.120A^^11^143^17
- ;;^UTILITY(U,$J,358.3,1536,1,0)
+ ;;^UTILITY(U,$J,358.3,5010,1,3,0)
+ ;;=3^Cellulitis of Hand
+ ;;^UTILITY(U,$J,358.3,5010,1,4,0)
+ ;;=4^L03.119
+ ;;^UTILITY(U,$J,358.3,5010,2)
+ ;;=^5009036
+ ;;^UTILITY(U,$J,358.3,5011,0)
+ ;;=L03.115^^22^307^30
+ ;;^UTILITY(U,$J,358.3,5011,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1536,1,3,0)
- ;;=3^Displacement of Cardiac Electrode,Init Encntr
- ;;^UTILITY(U,$J,358.3,1536,1,4,0)
- ;;=4^T82.120A
- ;;^UTILITY(U,$J,358.3,1536,2)
- ;;=^5054692
- ;;^UTILITY(U,$J,358.3,1537,0)
- ;;=T82.121A^^11^143^18
- ;;^UTILITY(U,$J,358.3,1537,1,0)
+ ;;^UTILITY(U,$J,358.3,5011,1,3,0)
+ ;;=3^Cellulitis of Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,5011,1,4,0)
+ ;;=4^L03.115
+ ;;^UTILITY(U,$J,358.3,5011,2)
+ ;;=^5009035
+ ;;^UTILITY(U,$J,358.3,5012,0)
+ ;;=L03.116^^22^307^25
+ ;;^UTILITY(U,$J,358.3,5012,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1537,1,3,0)
- ;;=3^Displacement of Cardiac Pulse Generator,Init Encntr
- ;;^UTILITY(U,$J,358.3,1537,1,4,0)
- ;;=4^T82.121A
- ;;^UTILITY(U,$J,358.3,1537,2)
- ;;=^5054695
- ;;^UTILITY(U,$J,358.3,1538,0)
- ;;=T82.190A^^11^143^26
- ;;^UTILITY(U,$J,358.3,1538,1,0)
+ ;;^UTILITY(U,$J,358.3,5012,1,3,0)
+ ;;=3^Cellulitis of Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,5012,1,4,0)
+ ;;=4^L03.116
+ ;;^UTILITY(U,$J,358.3,5012,2)
+ ;;=^5133645
+ ;;^UTILITY(U,$J,358.3,5013,0)
+ ;;=L03.221^^22^307^28
+ ;;^UTILITY(U,$J,358.3,5013,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1538,1,3,0)
- ;;=3^Mech Compl of Cardiac Electrode,Init Encntr
- ;;^UTILITY(U,$J,358.3,1538,1,4,0)
- ;;=4^T82.190A
- ;;^UTILITY(U,$J,358.3,1538,2)
- ;;=^5054704
- ;;^UTILITY(U,$J,358.3,1539,0)
- ;;=T82.191A^^11^143^27
- ;;^UTILITY(U,$J,358.3,1539,1,0)
+ ;;^UTILITY(U,$J,358.3,5013,1,3,0)
+ ;;=3^Cellulitis of Neck
+ ;;^UTILITY(U,$J,358.3,5013,1,4,0)
+ ;;=4^L03.221
+ ;;^UTILITY(U,$J,358.3,5013,2)
+ ;;=^5009045
+ ;;^UTILITY(U,$J,358.3,5014,0)
+ ;;=L03.031^^22^307^31
+ ;;^UTILITY(U,$J,358.3,5014,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1539,1,3,0)
- ;;=3^Mech Compl of Cardiac Pulse Generator,Init Encntr
- ;;^UTILITY(U,$J,358.3,1539,1,4,0)
- ;;=4^T82.191A
- ;;^UTILITY(U,$J,358.3,1539,2)
- ;;=^5054707
- ;;^UTILITY(U,$J,358.3,1540,0)
- ;;=Z95.0^^11^143^35
- ;;^UTILITY(U,$J,358.3,1540,1,0)
+ ;;^UTILITY(U,$J,358.3,5014,1,3,0)
+ ;;=3^Cellulitis of Right Toe
+ ;;^UTILITY(U,$J,358.3,5014,1,4,0)
+ ;;=4^L03.031
+ ;;^UTILITY(U,$J,358.3,5014,2)
+ ;;=^5009025
+ ;;^UTILITY(U,$J,358.3,5015,0)
+ ;;=L03.032^^22^307^26
+ ;;^UTILITY(U,$J,358.3,5015,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1540,1,3,0)
- ;;=3^Presence of Cardiac Pacemaker
- ;;^UTILITY(U,$J,358.3,1540,1,4,0)
- ;;=4^Z95.0
- ;;^UTILITY(U,$J,358.3,1540,2)
- ;;=^5063668
- ;;^UTILITY(U,$J,358.3,1541,0)
- ;;=Z95.810^^11^143^34
- ;;^UTILITY(U,$J,358.3,1541,1,0)
+ ;;^UTILITY(U,$J,358.3,5015,1,3,0)
+ ;;=3^Cellulitis of Left Toe
+ ;;^UTILITY(U,$J,358.3,5015,1,4,0)
+ ;;=4^L03.032
+ ;;^UTILITY(U,$J,358.3,5015,2)
+ ;;=^5009026
+ ;;^UTILITY(U,$J,358.3,5016,0)
+ ;;=L03.319^^22^307^33
+ ;;^UTILITY(U,$J,358.3,5016,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1541,1,3,0)
- ;;=3^Presence of Automatic Cardiac Defibrillator
- ;;^UTILITY(U,$J,358.3,1541,1,4,0)
- ;;=4^Z95.810
+ ;;^UTILITY(U,$J,358.3,5016,1,3,0)
+ ;;=3^Cellulitis of Trunk,Unspec
+ ;;^UTILITY(U,$J,358.3,5016,1,4,0)
+ ;;=4^L03.319
+ ;;^UTILITY(U,$J,358.3,5016,2)
+ ;;=^5009054
+ ;;^UTILITY(U,$J,358.3,5017,0)
+ ;;=L03.90^^22^307^34
+ ;;^UTILITY(U,$J,358.3,5017,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5017,1,3,0)
+ ;;=3^Cellulitis,Unspec
+ ;;^UTILITY(U,$J,358.3,5017,1,4,0)
+ ;;=4^L03.90
+ ;;^UTILITY(U,$J,358.3,5017,2)
+ ;;=^5009067
+ ;;^UTILITY(U,$J,358.3,5018,0)
+ ;;=L72.9^^22^307^41
+ ;;^UTILITY(U,$J,358.3,5018,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5018,1,3,0)
+ ;;=3^Cyst,Follicular of Skin/Subcutaneous Tissue,Unspec
+ ;;^UTILITY(U,$J,358.3,5018,1,4,0)
+ ;;=4^L72.9
+ ;;^UTILITY(U,$J,358.3,5018,2)
+ ;;=^5009283
+ ;;^UTILITY(U,$J,358.3,5019,0)
+ ;;=L12.1^^22^307^35
+ ;;^UTILITY(U,$J,358.3,5019,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5019,1,3,0)
+ ;;=3^Cicatricial Pemphigoid
+ ;;^UTILITY(U,$J,358.3,5019,1,4,0)
+ ;;=4^L12.1
+ ;;^UTILITY(U,$J,358.3,5019,2)
+ ;;=^5009096
+ ;;^UTILITY(U,$J,358.3,5020,0)
+ ;;=L30.2^^22^307^38
+ ;;^UTILITY(U,$J,358.3,5020,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5020,1,3,0)
+ ;;=3^Cutaneous Autosensitization
+ ;;^UTILITY(U,$J,358.3,5020,1,4,0)
+ ;;=4^L30.2
+ ;;^UTILITY(U,$J,358.3,5020,2)
+ ;;=^5009155
+ ;;^UTILITY(U,$J,358.3,5021,0)
+ ;;=B37.83^^22^307^2
+ ;;^UTILITY(U,$J,358.3,5021,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5021,1,3,0)
+ ;;=3^Candidal Cheilitis
+ ;;^UTILITY(U,$J,358.3,5021,1,4,0)
+ ;;=4^B37.83
+ ;;^UTILITY(U,$J,358.3,5021,2)
+ ;;=^5000622
+ ;;^UTILITY(U,$J,358.3,5022,0)
+ ;;=B37.0^^22^307^3
+ ;;^UTILITY(U,$J,358.3,5022,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5022,1,3,0)
+ ;;=3^Candidal Stomatitis
+ ;;^UTILITY(U,$J,358.3,5022,1,4,0)
+ ;;=4^B37.0
+ ;;^UTILITY(U,$J,358.3,5022,2)
+ ;;=^5000612
+ ;;^UTILITY(U,$J,358.3,5023,0)
+ ;;=D04.9^^22^307^18
+ ;;^UTILITY(U,$J,358.3,5023,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5023,1,3,0)
+ ;;=3^Carcinoma in Situ Skin,Unspec
+ ;;^UTILITY(U,$J,358.3,5023,1,4,0)
+ ;;=4^D04.9
+ ;;^UTILITY(U,$J,358.3,5023,2)
+ ;;=^5001925
+ ;;^UTILITY(U,$J,358.3,5024,0)
+ ;;=D04.0^^22^307^10
+ ;;^UTILITY(U,$J,358.3,5024,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5024,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Lip
+ ;;^UTILITY(U,$J,358.3,5024,1,4,0)
+ ;;=4^D04.0
+ ;;^UTILITY(U,$J,358.3,5024,2)
+ ;;=^267725
+ ;;^UTILITY(U,$J,358.3,5025,0)
+ ;;=D04.11^^22^307^13
+ ;;^UTILITY(U,$J,358.3,5025,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5025,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Right Eyelid
+ ;;^UTILITY(U,$J,358.3,5025,1,4,0)
+ ;;=4^D04.11
+ ;;^UTILITY(U,$J,358.3,5025,2)
+ ;;=^5001910
+ ;;^UTILITY(U,$J,358.3,5026,0)
+ ;;=D04.12^^22^307^7
+ ;;^UTILITY(U,$J,358.3,5026,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5026,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Left Eyelid
+ ;;^UTILITY(U,$J,358.3,5026,1,4,0)
+ ;;=4^D04.12
+ ;;^UTILITY(U,$J,358.3,5026,2)
+ ;;=^5001911
+ ;;^UTILITY(U,$J,358.3,5027,0)
+ ;;=D04.21^^22^307^12
+ ;;^UTILITY(U,$J,358.3,5027,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5027,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Right Ear/External Auricular Canal
+ ;;^UTILITY(U,$J,358.3,5027,1,4,0)
+ ;;=4^D04.21
+ ;;^UTILITY(U,$J,358.3,5027,2)
+ ;;=^5001913
+ ;;^UTILITY(U,$J,358.3,5028,0)
+ ;;=D04.22^^22^307^6
+ ;;^UTILITY(U,$J,358.3,5028,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5028,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Left Ear/External Auricular Canal
+ ;;^UTILITY(U,$J,358.3,5028,1,4,0)
+ ;;=4^D04.22
+ ;;^UTILITY(U,$J,358.3,5028,2)
+ ;;=^5001914
+ ;;^UTILITY(U,$J,358.3,5029,0)
+ ;;=D04.30^^22^307^5
+ ;;^UTILITY(U,$J,358.3,5029,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5029,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Face,Unspec
+ ;;^UTILITY(U,$J,358.3,5029,1,4,0)
+ ;;=4^D04.30
+ ;;^UTILITY(U,$J,358.3,5029,2)
+ ;;=^5001915
+ ;;^UTILITY(U,$J,358.3,5030,0)
+ ;;=D04.39^^22^307^4
+ ;;^UTILITY(U,$J,358.3,5030,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5030,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Face NEC
+ ;;^UTILITY(U,$J,358.3,5030,1,4,0)
+ ;;=4^D04.39
+ ;;^UTILITY(U,$J,358.3,5030,2)
+ ;;=^5001916
+ ;;^UTILITY(U,$J,358.3,5031,0)
+ ;;=D04.4^^22^307^16
+ ;;^UTILITY(U,$J,358.3,5031,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5031,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Scalp/Neck
+ ;;^UTILITY(U,$J,358.3,5031,1,4,0)
+ ;;=4^D04.4
+ ;;^UTILITY(U,$J,358.3,5031,2)
+ ;;=^267729
+ ;;^UTILITY(U,$J,358.3,5032,0)
+ ;;=D04.5^^22^307^17
+ ;;^UTILITY(U,$J,358.3,5032,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5032,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Trunk
+ ;;^UTILITY(U,$J,358.3,5032,1,4,0)
+ ;;=4^D04.5
+ ;;^UTILITY(U,$J,358.3,5032,2)
+ ;;=^5001917
+ ;;^UTILITY(U,$J,358.3,5033,0)
+ ;;=D04.61^^22^307^15
+ ;;^UTILITY(U,$J,358.3,5033,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5033,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,5033,1,4,0)
+ ;;=4^D04.61
+ ;;^UTILITY(U,$J,358.3,5033,2)
+ ;;=^5001919
+ ;;^UTILITY(U,$J,358.3,5034,0)
+ ;;=D04.62^^22^307^9
+ ;;^UTILITY(U,$J,358.3,5034,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5034,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,5034,1,4,0)
+ ;;=4^D04.62
+ ;;^UTILITY(U,$J,358.3,5034,2)
+ ;;=^5001920
+ ;;^UTILITY(U,$J,358.3,5035,0)
+ ;;=D04.71^^22^307^14
+ ;;^UTILITY(U,$J,358.3,5035,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5035,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,5035,1,4,0)
+ ;;=4^D04.71
+ ;;^UTILITY(U,$J,358.3,5035,2)
+ ;;=^5001922
+ ;;^UTILITY(U,$J,358.3,5036,0)
+ ;;=D04.72^^22^307^8
+ ;;^UTILITY(U,$J,358.3,5036,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5036,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,5036,1,4,0)
+ ;;=4^D04.72
+ ;;^UTILITY(U,$J,358.3,5036,2)
+ ;;=^5001923
+ ;;^UTILITY(U,$J,358.3,5037,0)
+ ;;=D04.8^^22^307^11
+ ;;^UTILITY(U,$J,358.3,5037,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5037,1,3,0)
+ ;;=3^Carcinoma in Situ Skin Other Sites
+ ;;^UTILITY(U,$J,358.3,5037,1,4,0)
+ ;;=4^D04.8
+ ;;^UTILITY(U,$J,358.3,5037,2)
+ ;;=^5001924
+ ;;^UTILITY(U,$J,358.3,5038,0)
+ ;;=L72.0^^22^307^40
+ ;;^UTILITY(U,$J,358.3,5038,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5038,1,3,0)
+ ;;=3^Cyst,Epidermal
+ ;;^UTILITY(U,$J,358.3,5038,1,4,0)
+ ;;=4^L72.0
+ ;;^UTILITY(U,$J,358.3,5038,2)
+ ;;=^5009277
+ ;;^UTILITY(U,$J,358.3,5039,0)
+ ;;=L72.11^^22^307^42
+ ;;^UTILITY(U,$J,358.3,5039,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5039,1,3,0)
+ ;;=3^Cyst,Pilar
+ ;;^UTILITY(U,$J,358.3,5039,1,4,0)
+ ;;=4^L72.11
+ ;;^UTILITY(U,$J,358.3,5039,2)
+ ;;=^5009278
+ ;;^UTILITY(U,$J,358.3,5040,0)
+ ;;=L72.12^^22^307^44
+ ;;^UTILITY(U,$J,358.3,5040,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,5040,1,3,0)
+ ;;=3^Cyst,Trichodermal
+ ;;^UTILITY(U,$J,358.3,5040,1,4,0)
+ ;;=4^L72.12

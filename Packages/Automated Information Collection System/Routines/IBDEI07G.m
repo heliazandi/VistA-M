@@ -1,138 +1,368 @@
-IBDEI07G ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI07G ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3177,1,0)
+ ;;^UTILITY(U,$J,358.3,9379,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3177,1,3,0)
- ;;=3^Acquired Absence of Uterus w/ Remaining Cervical Stump
- ;;^UTILITY(U,$J,358.3,3177,1,4,0)
- ;;=4^Z90.711
- ;;^UTILITY(U,$J,358.3,3177,2)
- ;;=^5063592
- ;;^UTILITY(U,$J,358.3,3178,0)
- ;;=R34.^^18^216^5
- ;;^UTILITY(U,$J,358.3,3178,1,0)
+ ;;^UTILITY(U,$J,358.3,9379,1,3,0)
+ ;;=3^Retinal Dystrophy,Hereditary,Unspec
+ ;;^UTILITY(U,$J,358.3,9379,1,4,0)
+ ;;=4^H35.50
+ ;;^UTILITY(U,$J,358.3,9379,2)
+ ;;=^5005695
+ ;;^UTILITY(U,$J,358.3,9380,0)
+ ;;=H35.31^^33^498^1
+ ;;^UTILITY(U,$J,358.3,9380,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3178,1,3,0)
- ;;=3^Anuria & Oliguria
- ;;^UTILITY(U,$J,358.3,3178,1,4,0)
- ;;=4^R34.
- ;;^UTILITY(U,$J,358.3,3178,2)
- ;;=^5019333
- ;;^UTILITY(U,$J,358.3,3179,0)
- ;;=Z93.50^^18^216^6
- ;;^UTILITY(U,$J,358.3,3179,1,0)
+ ;;^UTILITY(U,$J,358.3,9380,1,3,0)
+ ;;=3^Non-Exudative Age-Related Macular Degeneration
+ ;;^UTILITY(U,$J,358.3,9380,1,4,0)
+ ;;=4^H35.31
+ ;;^UTILITY(U,$J,358.3,9380,2)
+ ;;=^5005647
+ ;;^UTILITY(U,$J,358.3,9381,0)
+ ;;=H35.32^^33^498^2
+ ;;^UTILITY(U,$J,358.3,9381,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3179,1,3,0)
- ;;=3^Artificial Opening,Cystostomy,Unspec
- ;;^UTILITY(U,$J,358.3,3179,1,4,0)
- ;;=4^Z93.50
- ;;^UTILITY(U,$J,358.3,3179,2)
- ;;=^5063647
- ;;^UTILITY(U,$J,358.3,3180,0)
- ;;=Z93.6^^18^216^7
- ;;^UTILITY(U,$J,358.3,3180,1,0)
+ ;;^UTILITY(U,$J,358.3,9381,1,3,0)
+ ;;=3^Exudative Age-Related Macular Degeneration
+ ;;^UTILITY(U,$J,358.3,9381,1,4,0)
+ ;;=4^H35.32
+ ;;^UTILITY(U,$J,358.3,9381,2)
+ ;;=^5005648
+ ;;^UTILITY(U,$J,358.3,9382,0)
+ ;;=H35.361^^33^498^3
+ ;;^UTILITY(U,$J,358.3,9382,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3180,1,3,0)
- ;;=3^Artificial Opening,Urinary Tract,Other
- ;;^UTILITY(U,$J,358.3,3180,1,4,0)
- ;;=4^Z93.6
- ;;^UTILITY(U,$J,358.3,3180,2)
- ;;=^5063651
- ;;^UTILITY(U,$J,358.3,3181,0)
- ;;=N32.9^^18^216^8
- ;;^UTILITY(U,$J,358.3,3181,1,0)
+ ;;^UTILITY(U,$J,358.3,9382,1,3,0)
+ ;;=3^Drusen of Macula,Right Eye
+ ;;^UTILITY(U,$J,358.3,9382,1,4,0)
+ ;;=4^H35.361
+ ;;^UTILITY(U,$J,358.3,9382,2)
+ ;;=^5005658
+ ;;^UTILITY(U,$J,358.3,9383,0)
+ ;;=H35.362^^33^498^4
+ ;;^UTILITY(U,$J,358.3,9383,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3181,1,3,0)
- ;;=3^Baldder Disorder,Unspec
- ;;^UTILITY(U,$J,358.3,3181,1,4,0)
- ;;=4^N32.9
- ;;^UTILITY(U,$J,358.3,3181,2)
- ;;=^5015653
- ;;^UTILITY(U,$J,358.3,3182,0)
- ;;=R39.14^^18^216^10
- ;;^UTILITY(U,$J,358.3,3182,1,0)
+ ;;^UTILITY(U,$J,358.3,9383,1,3,0)
+ ;;=3^Drusen of Macula,Left Eye
+ ;;^UTILITY(U,$J,358.3,9383,1,4,0)
+ ;;=4^H35.362
+ ;;^UTILITY(U,$J,358.3,9383,2)
+ ;;=^5005659
+ ;;^UTILITY(U,$J,358.3,9384,0)
+ ;;=H35.363^^33^498^5
+ ;;^UTILITY(U,$J,358.3,9384,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3182,1,3,0)
- ;;=3^Bladder Emptying,Imcomplete Feeling
- ;;^UTILITY(U,$J,358.3,3182,1,4,0)
- ;;=4^R39.14
- ;;^UTILITY(U,$J,358.3,3182,2)
- ;;=^5019344
- ;;^UTILITY(U,$J,358.3,3183,0)
- ;;=N31.9^^18^216^11
- ;;^UTILITY(U,$J,358.3,3183,1,0)
+ ;;^UTILITY(U,$J,358.3,9384,1,3,0)
+ ;;=3^Drusen of Macula,Bilateral
+ ;;^UTILITY(U,$J,358.3,9384,1,4,0)
+ ;;=4^H35.363
+ ;;^UTILITY(U,$J,358.3,9384,2)
+ ;;=^5005660
+ ;;^UTILITY(U,$J,358.3,9385,0)
+ ;;=H35.731^^33^498^6
+ ;;^UTILITY(U,$J,358.3,9385,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3183,1,3,0)
- ;;=3^Bladder,Neuromuscular Dysfunction,Unspec
- ;;^UTILITY(U,$J,358.3,3183,1,4,0)
- ;;=4^N31.9
- ;;^UTILITY(U,$J,358.3,3183,2)
- ;;=^5015648
- ;;^UTILITY(U,$J,358.3,3184,0)
- ;;=N32.81^^18^216^9
- ;;^UTILITY(U,$J,358.3,3184,1,0)
+ ;;^UTILITY(U,$J,358.3,9385,1,3,0)
+ ;;=3^Hemorrhagic Detachment of RPE,Right Eye
+ ;;^UTILITY(U,$J,358.3,9385,1,4,0)
+ ;;=4^H35.731
+ ;;^UTILITY(U,$J,358.3,9385,2)
+ ;;=^5005711
+ ;;^UTILITY(U,$J,358.3,9386,0)
+ ;;=H35.732^^33^498^7
+ ;;^UTILITY(U,$J,358.3,9386,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3184,1,3,0)
- ;;=3^Baldder,Overactive
- ;;^UTILITY(U,$J,358.3,3184,1,4,0)
- ;;=4^N32.81
- ;;^UTILITY(U,$J,358.3,3184,2)
- ;;=^5015652
- ;;^UTILITY(U,$J,358.3,3185,0)
- ;;=N20.0^^18^216^12
- ;;^UTILITY(U,$J,358.3,3185,1,0)
+ ;;^UTILITY(U,$J,358.3,9386,1,3,0)
+ ;;=3^Hemorrhagic Detachment of RPE,Left Eye
+ ;;^UTILITY(U,$J,358.3,9386,1,4,0)
+ ;;=4^H35.732
+ ;;^UTILITY(U,$J,358.3,9386,2)
+ ;;=^5005712
+ ;;^UTILITY(U,$J,358.3,9387,0)
+ ;;=H35.721^^33^498^8
+ ;;^UTILITY(U,$J,358.3,9387,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3185,1,3,0)
- ;;=3^Calculus of Kidney
- ;;^UTILITY(U,$J,358.3,3185,1,4,0)
- ;;=4^N20.0
- ;;^UTILITY(U,$J,358.3,3185,2)
- ;;=^67056
- ;;^UTILITY(U,$J,358.3,3186,0)
- ;;=N20.2^^18^216^13
- ;;^UTILITY(U,$J,358.3,3186,1,0)
+ ;;^UTILITY(U,$J,358.3,9387,1,3,0)
+ ;;=3^Serous Detachment of RPE,Right Eye
+ ;;^UTILITY(U,$J,358.3,9387,1,4,0)
+ ;;=4^H35.721
+ ;;^UTILITY(U,$J,358.3,9387,2)
+ ;;=^5005707
+ ;;^UTILITY(U,$J,358.3,9388,0)
+ ;;=H35.722^^33^498^9
+ ;;^UTILITY(U,$J,358.3,9388,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3186,1,3,0)
- ;;=3^Calculus of Kidney w/ Calculus of Ureter
- ;;^UTILITY(U,$J,358.3,3186,1,4,0)
- ;;=4^N20.2
- ;;^UTILITY(U,$J,358.3,3186,2)
- ;;=^5015609
- ;;^UTILITY(U,$J,358.3,3187,0)
- ;;=N21.9^^18^216^14
- ;;^UTILITY(U,$J,358.3,3187,1,0)
+ ;;^UTILITY(U,$J,358.3,9388,1,3,0)
+ ;;=3^Serous Detachment of RPE,Left Eye
+ ;;^UTILITY(U,$J,358.3,9388,1,4,0)
+ ;;=4^H35.722
+ ;;^UTILITY(U,$J,358.3,9388,2)
+ ;;=^5005708
+ ;;^UTILITY(U,$J,358.3,9389,0)
+ ;;=H59.031^^33^498^10
+ ;;^UTILITY(U,$J,358.3,9389,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3187,1,3,0)
- ;;=3^Calculus of Lower Urinary Tract,Unspec
- ;;^UTILITY(U,$J,358.3,3187,1,4,0)
- ;;=4^N21.9
- ;;^UTILITY(U,$J,358.3,3187,2)
- ;;=^5015613
- ;;^UTILITY(U,$J,358.3,3188,0)
- ;;=N20.1^^18^216^15
- ;;^UTILITY(U,$J,358.3,3188,1,0)
+ ;;^UTILITY(U,$J,358.3,9389,1,3,0)
+ ;;=3^CME after Cataract Surgery,Right Eye
+ ;;^UTILITY(U,$J,358.3,9389,1,4,0)
+ ;;=4^H59.031
+ ;;^UTILITY(U,$J,358.3,9389,2)
+ ;;=^5006393
+ ;;^UTILITY(U,$J,358.3,9390,0)
+ ;;=H59.032^^33^498^11
+ ;;^UTILITY(U,$J,358.3,9390,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3188,1,3,0)
- ;;=3^Calculus of Ureter
- ;;^UTILITY(U,$J,358.3,3188,1,4,0)
- ;;=4^N20.1
- ;;^UTILITY(U,$J,358.3,3188,2)
- ;;=^5015608
- ;;^UTILITY(U,$J,358.3,3189,0)
- ;;=N20.9^^18^216^16
- ;;^UTILITY(U,$J,358.3,3189,1,0)
+ ;;^UTILITY(U,$J,358.3,9390,1,3,0)
+ ;;=3^CME after Cataract Surgery,Left Eye
+ ;;^UTILITY(U,$J,358.3,9390,1,4,0)
+ ;;=4^H59.032
+ ;;^UTILITY(U,$J,358.3,9390,2)
+ ;;=^5006394
+ ;;^UTILITY(U,$J,358.3,9391,0)
+ ;;=H35.81^^33^498^12
+ ;;^UTILITY(U,$J,358.3,9391,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3189,1,3,0)
- ;;=3^Calculus,Urinary,Unspec
- ;;^UTILITY(U,$J,358.3,3189,1,4,0)
- ;;=4^N20.9
- ;;^UTILITY(U,$J,358.3,3189,2)
- ;;=^5015610
- ;;^UTILITY(U,$J,358.3,3190,0)
- ;;=Z87.410^^18^216^55
- ;;^UTILITY(U,$J,358.3,3190,1,0)
+ ;;^UTILITY(U,$J,358.3,9391,1,3,0)
+ ;;=3^Retinal Edema/CME Other Etiology
+ ;;^UTILITY(U,$J,358.3,9391,1,4,0)
+ ;;=4^H35.81
+ ;;^UTILITY(U,$J,358.3,9391,2)
+ ;;=^5005715
+ ;;^UTILITY(U,$J,358.3,9392,0)
+ ;;=H35.371^^33^498^13
+ ;;^UTILITY(U,$J,358.3,9392,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3190,1,3,0)
- ;;=3^Personal Hx of Cervical Dysplasia
+ ;;^UTILITY(U,$J,358.3,9392,1,3,0)
+ ;;=3^Macular Pucker/ERM,Right Eye
+ ;;^UTILITY(U,$J,358.3,9392,1,4,0)
+ ;;=4^H35.371
+ ;;^UTILITY(U,$J,358.3,9392,2)
+ ;;=^5005662
+ ;;^UTILITY(U,$J,358.3,9393,0)
+ ;;=H35.372^^33^498^14
+ ;;^UTILITY(U,$J,358.3,9393,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9393,1,3,0)
+ ;;=3^Macular Pucker/ERM,Left Eye
+ ;;^UTILITY(U,$J,358.3,9393,1,4,0)
+ ;;=4^H35.372
+ ;;^UTILITY(U,$J,358.3,9393,2)
+ ;;=^5005663
+ ;;^UTILITY(U,$J,358.3,9394,0)
+ ;;=H35.373^^33^498^15
+ ;;^UTILITY(U,$J,358.3,9394,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9394,1,3,0)
+ ;;=3^Macular Pucker/ERM,Bilateral
+ ;;^UTILITY(U,$J,358.3,9394,1,4,0)
+ ;;=4^H35.373
+ ;;^UTILITY(U,$J,358.3,9394,2)
+ ;;=^5005664
+ ;;^UTILITY(U,$J,358.3,9395,0)
+ ;;=H35.341^^33^498^16
+ ;;^UTILITY(U,$J,358.3,9395,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9395,1,3,0)
+ ;;=3^Macular Hole/Cyst/Pseudohole,Right Eye
+ ;;^UTILITY(U,$J,358.3,9395,1,4,0)
+ ;;=4^H35.341
+ ;;^UTILITY(U,$J,358.3,9395,2)
+ ;;=^5005650
+ ;;^UTILITY(U,$J,358.3,9396,0)
+ ;;=H35.342^^33^498^17
+ ;;^UTILITY(U,$J,358.3,9396,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9396,1,3,0)
+ ;;=3^Macular Hole/Cyst/Pseudohole,Left Eye
+ ;;^UTILITY(U,$J,358.3,9396,1,4,0)
+ ;;=4^H35.342
+ ;;^UTILITY(U,$J,358.3,9396,2)
+ ;;=^5005651
+ ;;^UTILITY(U,$J,358.3,9397,0)
+ ;;=H43.821^^33^498^18
+ ;;^UTILITY(U,$J,358.3,9397,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9397,1,3,0)
+ ;;=3^Vitreomacular Adhesion,Right Eye
+ ;;^UTILITY(U,$J,358.3,9397,1,4,0)
+ ;;=4^H43.821
+ ;;^UTILITY(U,$J,358.3,9397,2)
+ ;;=^5005957
+ ;;^UTILITY(U,$J,358.3,9398,0)
+ ;;=H43.822^^33^498^19
+ ;;^UTILITY(U,$J,358.3,9398,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9398,1,3,0)
+ ;;=3^Vitreomacular Adhesion,Left Eye
+ ;;^UTILITY(U,$J,358.3,9398,1,4,0)
+ ;;=4^H43.822
+ ;;^UTILITY(U,$J,358.3,9398,2)
+ ;;=^5005958
+ ;;^UTILITY(U,$J,358.3,9399,0)
+ ;;=H35.711^^33^498^20
+ ;;^UTILITY(U,$J,358.3,9399,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9399,1,3,0)
+ ;;=3^Central Serous Retinopathy,Right Eye
+ ;;^UTILITY(U,$J,358.3,9399,1,4,0)
+ ;;=4^H35.711
+ ;;^UTILITY(U,$J,358.3,9399,2)
+ ;;=^5005703
+ ;;^UTILITY(U,$J,358.3,9400,0)
+ ;;=H35.712^^33^498^21
+ ;;^UTILITY(U,$J,358.3,9400,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9400,1,3,0)
+ ;;=3^Central Serous Retinopathy,Left Eye
+ ;;^UTILITY(U,$J,358.3,9400,1,4,0)
+ ;;=4^H35.712
+ ;;^UTILITY(U,$J,358.3,9400,2)
+ ;;=^5005704
+ ;;^UTILITY(U,$J,358.3,9401,0)
+ ;;=H35.383^^33^498^22
+ ;;^UTILITY(U,$J,358.3,9401,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9401,1,3,0)
+ ;;=3^Toxic Maculopathy,Bilateral
+ ;;^UTILITY(U,$J,358.3,9401,1,4,0)
+ ;;=4^H35.383
+ ;;^UTILITY(U,$J,358.3,9401,2)
+ ;;=^5005668
+ ;;^UTILITY(U,$J,358.3,9402,0)
+ ;;=H31.021^^33^498^23
+ ;;^UTILITY(U,$J,358.3,9402,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9402,1,3,0)
+ ;;=3^Solar Retinopathy,Right Eye
+ ;;^UTILITY(U,$J,358.3,9402,1,4,0)
+ ;;=4^H31.021
+ ;;^UTILITY(U,$J,358.3,9402,2)
+ ;;=^5005443
+ ;;^UTILITY(U,$J,358.3,9403,0)
+ ;;=H31.022^^33^498^24
+ ;;^UTILITY(U,$J,358.3,9403,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9403,1,3,0)
+ ;;=3^Solar Retinopathy,Left Eye
+ ;;^UTILITY(U,$J,358.3,9403,1,4,0)
+ ;;=4^H31.022
+ ;;^UTILITY(U,$J,358.3,9403,2)
+ ;;=^5005444
+ ;;^UTILITY(U,$J,358.3,9404,0)
+ ;;=H44.23^^33^498^25
+ ;;^UTILITY(U,$J,358.3,9404,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9404,1,3,0)
+ ;;=3^Degenerative Myopia,Bilateral
+ ;;^UTILITY(U,$J,358.3,9404,1,4,0)
+ ;;=4^H44.23
+ ;;^UTILITY(U,$J,358.3,9404,2)
+ ;;=^5005989
+ ;;^UTILITY(U,$J,358.3,9405,0)
+ ;;=H31.011^^33^498^26
+ ;;^UTILITY(U,$J,358.3,9405,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9405,1,3,0)
+ ;;=3^Macula Scars of Posterior Pole,Right Eye
+ ;;^UTILITY(U,$J,358.3,9405,1,4,0)
+ ;;=4^H31.011
+ ;;^UTILITY(U,$J,358.3,9405,2)
+ ;;=^5005439
+ ;;^UTILITY(U,$J,358.3,9406,0)
+ ;;=H31.012^^33^498^27
+ ;;^UTILITY(U,$J,358.3,9406,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9406,1,3,0)
+ ;;=3^Macula Scars of Posterior Pole,Left Eye
+ ;;^UTILITY(U,$J,358.3,9406,1,4,0)
+ ;;=4^H31.012
+ ;;^UTILITY(U,$J,358.3,9406,2)
+ ;;=^5005440
+ ;;^UTILITY(U,$J,358.3,9407,0)
+ ;;=H35.50^^33^498^28
+ ;;^UTILITY(U,$J,358.3,9407,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,9407,1,3,0)
+ ;;=3^Retinal Dystrophy,Hereditary,Unspec
+ ;;^UTILITY(U,$J,358.3,9407,1,4,0)
+ ;;=4^H35.50
+ ;;^UTILITY(U,$J,358.3,9407,2)
+ ;;=^5005695
+ ;;^UTILITY(U,$J,358.3,9408,0)
+ ;;=99201^^34^499^1
+ ;;^UTILITY(U,$J,358.3,9408,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,9408,1,1,0)
+ ;;=1^Problem Focus
+ ;;^UTILITY(U,$J,358.3,9408,1,2,0)
+ ;;=2^99201
+ ;;^UTILITY(U,$J,358.3,9409,0)
+ ;;=99202^^34^499^2
+ ;;^UTILITY(U,$J,358.3,9409,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,9409,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,9409,1,2,0)
+ ;;=2^99202
+ ;;^UTILITY(U,$J,358.3,9410,0)
+ ;;=99203^^34^499^3
+ ;;^UTILITY(U,$J,358.3,9410,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,9410,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,9410,1,2,0)
+ ;;=2^99203
+ ;;^UTILITY(U,$J,358.3,9411,0)
+ ;;=99204^^34^499^4
+ ;;^UTILITY(U,$J,358.3,9411,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,9411,1,1,0)
+ ;;=1^Comprehensive, Moderate
+ ;;^UTILITY(U,$J,358.3,9411,1,2,0)
+ ;;=2^99204
+ ;;^UTILITY(U,$J,358.3,9412,0)
+ ;;=99205^^34^499^5
+ ;;^UTILITY(U,$J,358.3,9412,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,9412,1,1,0)
+ ;;=1^Comprehensive, High
+ ;;^UTILITY(U,$J,358.3,9412,1,2,0)
+ ;;=2^99205
+ ;;^UTILITY(U,$J,358.3,9413,0)
+ ;;=99211^^34^500^1
+ ;;^UTILITY(U,$J,358.3,9413,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,9413,1,1,0)
+ ;;=1^Brief
+ ;;^UTILITY(U,$J,358.3,9413,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,9414,0)
+ ;;=99212^^34^500^2
+ ;;^UTILITY(U,$J,358.3,9414,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,9414,1,1,0)
+ ;;=1^Problem Focused
+ ;;^UTILITY(U,$J,358.3,9414,1,2,0)
+ ;;=2^99212
+ ;;^UTILITY(U,$J,358.3,9415,0)
+ ;;=99213^^34^500^3
+ ;;^UTILITY(U,$J,358.3,9415,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,9415,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,9415,1,2,0)
+ ;;=2^99213
+ ;;^UTILITY(U,$J,358.3,9416,0)
+ ;;=99214^^34^500^4
+ ;;^UTILITY(U,$J,358.3,9416,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,9416,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,9416,1,2,0)
+ ;;=2^99214
+ ;;^UTILITY(U,$J,358.3,9417,0)
+ ;;=99215^^34^500^5
+ ;;^UTILITY(U,$J,358.3,9417,1,0)
+ ;;=^358.31IA^2^2

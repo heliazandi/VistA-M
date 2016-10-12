@@ -1,126 +1,372 @@
-IBDEI0HP ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0HP ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8185,1,0)
+ ;;^UTILITY(U,$J,358.3,22436,0)
+ ;;=R19.4^^58^852^45
+ ;;^UTILITY(U,$J,358.3,22436,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8185,1,3,0)
- ;;=3^Strain of muscle, fascia and tendon at neck level, init
- ;;^UTILITY(U,$J,358.3,8185,1,4,0)
- ;;=4^S16.1XXA
- ;;^UTILITY(U,$J,358.3,8185,2)
- ;;=^5022358
- ;;^UTILITY(U,$J,358.3,8186,0)
- ;;=T69.9XXA^^33^431^56
- ;;^UTILITY(U,$J,358.3,8186,1,0)
+ ;;^UTILITY(U,$J,358.3,22436,1,3,0)
+ ;;=3^Bowel Habit Changes
+ ;;^UTILITY(U,$J,358.3,22436,1,4,0)
+ ;;=4^R19.4
+ ;;^UTILITY(U,$J,358.3,22436,2)
+ ;;=^5019273
+ ;;^UTILITY(U,$J,358.3,22437,0)
+ ;;=R19.8^^58^852^59
+ ;;^UTILITY(U,$J,358.3,22437,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8186,1,3,0)
- ;;=3^Effect of reduced temperature, unspecified, init encntr
- ;;^UTILITY(U,$J,358.3,8186,1,4,0)
- ;;=4^T69.9XXA
- ;;^UTILITY(U,$J,358.3,8186,2)
- ;;=^5053978
- ;;^UTILITY(U,$J,358.3,8187,0)
- ;;=T69.8XXA^^33^431^57
- ;;^UTILITY(U,$J,358.3,8187,1,0)
+ ;;^UTILITY(U,$J,358.3,22437,1,3,0)
+ ;;=3^Digestive System/Abdomen Symptoms NEC
+ ;;^UTILITY(U,$J,358.3,22437,1,4,0)
+ ;;=4^R19.8
+ ;;^UTILITY(U,$J,358.3,22437,2)
+ ;;=^5019277
+ ;;^UTILITY(U,$J,358.3,22438,0)
+ ;;=R20.0^^58^852^35
+ ;;^UTILITY(U,$J,358.3,22438,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8187,1,3,0)
- ;;=3^Effects of Reduced Temperature NEC,Init Encntr
- ;;^UTILITY(U,$J,358.3,8187,1,4,0)
- ;;=4^T69.8XXA
- ;;^UTILITY(U,$J,358.3,8187,2)
- ;;=^5053975
- ;;^UTILITY(U,$J,358.3,8188,0)
- ;;=L57.8^^33^431^196
- ;;^UTILITY(U,$J,358.3,8188,1,0)
+ ;;^UTILITY(U,$J,358.3,22438,1,3,0)
+ ;;=3^Anesthesia of Skin
+ ;;^UTILITY(U,$J,358.3,22438,1,4,0)
+ ;;=4^R20.0
+ ;;^UTILITY(U,$J,358.3,22438,2)
+ ;;=^5019278
+ ;;^UTILITY(U,$J,358.3,22439,0)
+ ;;=R20.1^^58^852^87
+ ;;^UTILITY(U,$J,358.3,22439,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8188,1,3,0)
- ;;=3^Skin Changes d/t Chr Expsr to Nonionizing Radiation NEC
- ;;^UTILITY(U,$J,358.3,8188,1,4,0)
- ;;=4^L57.8
- ;;^UTILITY(U,$J,358.3,8188,2)
- ;;=^5009226
- ;;^UTILITY(U,$J,358.3,8189,0)
- ;;=S91.001A^^33^431^165
- ;;^UTILITY(U,$J,358.3,8189,1,0)
+ ;;^UTILITY(U,$J,358.3,22439,1,3,0)
+ ;;=3^Hypoesthesia of Skin
+ ;;^UTILITY(U,$J,358.3,22439,1,4,0)
+ ;;=4^R20.1
+ ;;^UTILITY(U,$J,358.3,22439,2)
+ ;;=^5019279
+ ;;^UTILITY(U,$J,358.3,22440,0)
+ ;;=R20.2^^58^852^131
+ ;;^UTILITY(U,$J,358.3,22440,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8189,1,3,0)
- ;;=3^Open wnd of right ankle unspec, initial encounter
- ;;^UTILITY(U,$J,358.3,8189,1,4,0)
- ;;=4^S91.001A
- ;;^UTILITY(U,$J,358.3,8189,2)
- ;;=^5044129
- ;;^UTILITY(U,$J,358.3,8190,0)
- ;;=S91.002A^^33^431^155
- ;;^UTILITY(U,$J,358.3,8190,1,0)
+ ;;^UTILITY(U,$J,358.3,22440,1,3,0)
+ ;;=3^Paresthesia of Skin
+ ;;^UTILITY(U,$J,358.3,22440,1,4,0)
+ ;;=4^R20.2
+ ;;^UTILITY(U,$J,358.3,22440,2)
+ ;;=^5019280
+ ;;^UTILITY(U,$J,358.3,22441,0)
+ ;;=R20.3^^58^852^83
+ ;;^UTILITY(U,$J,358.3,22441,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8190,1,3,0)
- ;;=3^Open wnd of left ankle unspec, initial encounter
- ;;^UTILITY(U,$J,358.3,8190,1,4,0)
- ;;=4^S91.002A
- ;;^UTILITY(U,$J,358.3,8190,2)
- ;;=^5044132
- ;;^UTILITY(U,$J,358.3,8191,0)
- ;;=S41.101A^^33^431^174
- ;;^UTILITY(U,$J,358.3,8191,1,0)
+ ;;^UTILITY(U,$J,358.3,22441,1,3,0)
+ ;;=3^Hyperesthesia
+ ;;^UTILITY(U,$J,358.3,22441,1,4,0)
+ ;;=4^R20.3
+ ;;^UTILITY(U,$J,358.3,22441,2)
+ ;;=^60011
+ ;;^UTILITY(U,$J,358.3,22442,0)
+ ;;=R21.^^58^852^145
+ ;;^UTILITY(U,$J,358.3,22442,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8191,1,3,0)
- ;;=3^Open wnd of right upper arm unspec, initial enco
- ;;^UTILITY(U,$J,358.3,8191,1,4,0)
- ;;=4^S41.101A
- ;;^UTILITY(U,$J,358.3,8191,2)
- ;;=^5026330
- ;;^UTILITY(U,$J,358.3,8192,0)
- ;;=S41.102A^^33^431^164
- ;;^UTILITY(U,$J,358.3,8192,1,0)
+ ;;^UTILITY(U,$J,358.3,22442,1,3,0)
+ ;;=3^Rash
+ ;;^UTILITY(U,$J,358.3,22442,1,4,0)
+ ;;=4^R21.
+ ;;^UTILITY(U,$J,358.3,22442,2)
+ ;;=^5019283
+ ;;^UTILITY(U,$J,358.3,22443,0)
+ ;;=R22.0^^58^852^105
+ ;;^UTILITY(U,$J,358.3,22443,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8192,1,3,0)
- ;;=3^Open wnd of left upper arm unspec, initial encou
- ;;^UTILITY(U,$J,358.3,8192,1,4,0)
- ;;=4^S41.102A
- ;;^UTILITY(U,$J,358.3,8192,2)
- ;;=^5026333
- ;;^UTILITY(U,$J,358.3,8193,0)
- ;;=S61.200A^^33^431^169
- ;;^UTILITY(U,$J,358.3,8193,1,0)
+ ;;^UTILITY(U,$J,358.3,22443,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Head
+ ;;^UTILITY(U,$J,358.3,22443,1,4,0)
+ ;;=4^R22.0
+ ;;^UTILITY(U,$J,358.3,22443,2)
+ ;;=^5019284
+ ;;^UTILITY(U,$J,358.3,22444,0)
+ ;;=R22.1^^58^852^108
+ ;;^UTILITY(U,$J,358.3,22444,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8193,1,3,0)
- ;;=3^Open wnd of right idx fngr w/o damage to nail unspec, init
- ;;^UTILITY(U,$J,358.3,8193,1,4,0)
- ;;=4^S61.200A
- ;;^UTILITY(U,$J,358.3,8193,2)
- ;;=^5032741
- ;;^UTILITY(U,$J,358.3,8194,0)
- ;;=S61.201A^^33^431^159
- ;;^UTILITY(U,$J,358.3,8194,1,0)
+ ;;^UTILITY(U,$J,358.3,22444,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Neck
+ ;;^UTILITY(U,$J,358.3,22444,1,4,0)
+ ;;=4^R22.1
+ ;;^UTILITY(U,$J,358.3,22444,2)
+ ;;=^5019285
+ ;;^UTILITY(U,$J,358.3,22445,0)
+ ;;=R22.2^^58^852^111
+ ;;^UTILITY(U,$J,358.3,22445,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8194,1,3,0)
- ;;=3^Open wnd of left idx fngr w/o damage to nail unspec, init
- ;;^UTILITY(U,$J,358.3,8194,1,4,0)
- ;;=4^S61.201A
- ;;^UTILITY(U,$J,358.3,8194,2)
- ;;=^5032744
- ;;^UTILITY(U,$J,358.3,8195,0)
- ;;=S61.202A^^33^431^172
- ;;^UTILITY(U,$J,358.3,8195,1,0)
+ ;;^UTILITY(U,$J,358.3,22445,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Trunk
+ ;;^UTILITY(U,$J,358.3,22445,1,4,0)
+ ;;=4^R22.2
+ ;;^UTILITY(U,$J,358.3,22445,2)
+ ;;=^5019286
+ ;;^UTILITY(U,$J,358.3,22446,0)
+ ;;=R22.31^^58^852^110
+ ;;^UTILITY(U,$J,358.3,22446,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8195,1,3,0)
- ;;=3^Open wnd of right mid finger w/o damage to nail unspec, ini
- ;;^UTILITY(U,$J,358.3,8195,1,4,0)
- ;;=4^S61.202A
- ;;^UTILITY(U,$J,358.3,8195,2)
- ;;=^5032747
- ;;^UTILITY(U,$J,358.3,8196,0)
- ;;=S61.203A^^33^431^162
- ;;^UTILITY(U,$J,358.3,8196,1,0)
+ ;;^UTILITY(U,$J,358.3,22446,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,22446,1,4,0)
+ ;;=4^R22.31
+ ;;^UTILITY(U,$J,358.3,22446,2)
+ ;;=^5019288
+ ;;^UTILITY(U,$J,358.3,22447,0)
+ ;;=R22.32^^58^852^107
+ ;;^UTILITY(U,$J,358.3,22447,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8196,1,3,0)
- ;;=3^Open wnd of left mid finger w/o damage to nail unspec, ini
- ;;^UTILITY(U,$J,358.3,8196,1,4,0)
- ;;=4^S61.203A
- ;;^UTILITY(U,$J,358.3,8196,2)
- ;;=^5032750
- ;;^UTILITY(U,$J,358.3,8197,0)
- ;;=S61.204A^^33^431^173
- ;;^UTILITY(U,$J,358.3,8197,1,0)
+ ;;^UTILITY(U,$J,358.3,22447,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,22447,1,4,0)
+ ;;=4^R22.32
+ ;;^UTILITY(U,$J,358.3,22447,2)
+ ;;=^5019289
+ ;;^UTILITY(U,$J,358.3,22448,0)
+ ;;=R22.33^^58^852^103
+ ;;^UTILITY(U,$J,358.3,22448,1,0)
  ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22448,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Bilateral Upper Limb
+ ;;^UTILITY(U,$J,358.3,22448,1,4,0)
+ ;;=4^R22.33
+ ;;^UTILITY(U,$J,358.3,22448,2)
+ ;;=^5019290
+ ;;^UTILITY(U,$J,358.3,22449,0)
+ ;;=R22.42^^58^852^106
+ ;;^UTILITY(U,$J,358.3,22449,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22449,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Left Lower Limb
+ ;;^UTILITY(U,$J,358.3,22449,1,4,0)
+ ;;=4^R22.42
+ ;;^UTILITY(U,$J,358.3,22449,2)
+ ;;=^5134179
+ ;;^UTILITY(U,$J,358.3,22450,0)
+ ;;=R22.41^^58^852^109
+ ;;^UTILITY(U,$J,358.3,22450,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22450,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Right Lower Limb
+ ;;^UTILITY(U,$J,358.3,22450,1,4,0)
+ ;;=4^R22.41
+ ;;^UTILITY(U,$J,358.3,22450,2)
+ ;;=^5134178
+ ;;^UTILITY(U,$J,358.3,22451,0)
+ ;;=R22.43^^58^852^104
+ ;;^UTILITY(U,$J,358.3,22451,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22451,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Bilateral Lower Limb
+ ;;^UTILITY(U,$J,358.3,22451,1,4,0)
+ ;;=4^R22.43
+ ;;^UTILITY(U,$J,358.3,22451,2)
+ ;;=^5019291
+ ;;^UTILITY(U,$J,358.3,22452,0)
+ ;;=R22.9^^58^852^112
+ ;;^UTILITY(U,$J,358.3,22452,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22452,1,3,0)
+ ;;=3^Localized Swelling/Mass/Lump,Unspec
+ ;;^UTILITY(U,$J,358.3,22452,1,4,0)
+ ;;=4^R22.9
+ ;;^UTILITY(U,$J,358.3,22452,2)
+ ;;=^5019292
+ ;;^UTILITY(U,$J,358.3,22453,0)
+ ;;=R23.0^^58^852^57
+ ;;^UTILITY(U,$J,358.3,22453,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22453,1,3,0)
+ ;;=3^Cyanosis
+ ;;^UTILITY(U,$J,358.3,22453,1,4,0)
+ ;;=4^R23.0
+ ;;^UTILITY(U,$J,358.3,22453,2)
+ ;;=^5019293
+ ;;^UTILITY(U,$J,358.3,22454,0)
+ ;;=R23.1^^58^852^128
+ ;;^UTILITY(U,$J,358.3,22454,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22454,1,3,0)
+ ;;=3^Pallor
+ ;;^UTILITY(U,$J,358.3,22454,1,4,0)
+ ;;=4^R23.1
+ ;;^UTILITY(U,$J,358.3,22454,2)
+ ;;=^5019294
+ ;;^UTILITY(U,$J,358.3,22455,0)
+ ;;=R23.2^^58^852^75
+ ;;^UTILITY(U,$J,358.3,22455,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22455,1,3,0)
+ ;;=3^Flushing
+ ;;^UTILITY(U,$J,358.3,22455,1,4,0)
+ ;;=4^R23.2
+ ;;^UTILITY(U,$J,358.3,22455,2)
+ ;;=^47184
+ ;;^UTILITY(U,$J,358.3,22456,0)
+ ;;=R23.4^^58^852^147
+ ;;^UTILITY(U,$J,358.3,22456,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22456,1,3,0)
+ ;;=3^Skin Texture Changes
+ ;;^UTILITY(U,$J,358.3,22456,1,4,0)
+ ;;=4^R23.4
+ ;;^UTILITY(U,$J,358.3,22456,2)
+ ;;=^5019296
+ ;;^UTILITY(U,$J,358.3,22457,0)
+ ;;=R26.0^^58^852^43
+ ;;^UTILITY(U,$J,358.3,22457,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22457,1,3,0)
+ ;;=3^Ataxic Gait
+ ;;^UTILITY(U,$J,358.3,22457,1,4,0)
+ ;;=4^R26.0
+ ;;^UTILITY(U,$J,358.3,22457,2)
+ ;;=^5019304
+ ;;^UTILITY(U,$J,358.3,22458,0)
+ ;;=R26.1^^58^852^130
+ ;;^UTILITY(U,$J,358.3,22458,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22458,1,3,0)
+ ;;=3^Paralytic Gait
+ ;;^UTILITY(U,$J,358.3,22458,1,4,0)
+ ;;=4^R26.1
+ ;;^UTILITY(U,$J,358.3,22458,2)
+ ;;=^5019305
+ ;;^UTILITY(U,$J,358.3,22459,0)
+ ;;=R26.81^^58^852^156
+ ;;^UTILITY(U,$J,358.3,22459,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22459,1,3,0)
+ ;;=3^Unsteadiness on Feet
+ ;;^UTILITY(U,$J,358.3,22459,1,4,0)
+ ;;=4^R26.81
+ ;;^UTILITY(U,$J,358.3,22459,2)
+ ;;=^5019307
+ ;;^UTILITY(U,$J,358.3,22460,0)
+ ;;=R26.89^^58^852^30
+ ;;^UTILITY(U,$J,358.3,22460,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22460,1,3,0)
+ ;;=3^Abnormalities of Gait and Mobility NEC
+ ;;^UTILITY(U,$J,358.3,22460,1,4,0)
+ ;;=4^R26.89
+ ;;^UTILITY(U,$J,358.3,22460,2)
+ ;;=^5019308
+ ;;^UTILITY(U,$J,358.3,22461,0)
+ ;;=R26.9^^58^852^31
+ ;;^UTILITY(U,$J,358.3,22461,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22461,1,3,0)
+ ;;=3^Abnormalities of Gait and Mobility,Unspec
+ ;;^UTILITY(U,$J,358.3,22461,1,4,0)
+ ;;=4^R26.9
+ ;;^UTILITY(U,$J,358.3,22461,2)
+ ;;=^5019309
+ ;;^UTILITY(U,$J,358.3,22462,0)
+ ;;=R27.0^^58^852^42
+ ;;^UTILITY(U,$J,358.3,22462,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22462,1,3,0)
+ ;;=3^Ataxia,Unspec
+ ;;^UTILITY(U,$J,358.3,22462,1,4,0)
+ ;;=4^R27.0
+ ;;^UTILITY(U,$J,358.3,22462,2)
+ ;;=^5019310
+ ;;^UTILITY(U,$J,358.3,22463,0)
+ ;;=R27.8^^58^852^100
+ ;;^UTILITY(U,$J,358.3,22463,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22463,1,3,0)
+ ;;=3^Lack of Coordination NEC
+ ;;^UTILITY(U,$J,358.3,22463,1,4,0)
+ ;;=4^R27.8
+ ;;^UTILITY(U,$J,358.3,22463,2)
+ ;;=^5019311
+ ;;^UTILITY(U,$J,358.3,22464,0)
+ ;;=R27.9^^58^852^101
+ ;;^UTILITY(U,$J,358.3,22464,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22464,1,3,0)
+ ;;=3^Lack of Coordination,Unspec
+ ;;^UTILITY(U,$J,358.3,22464,1,4,0)
+ ;;=4^R27.9
+ ;;^UTILITY(U,$J,358.3,22464,2)
+ ;;=^5019312
+ ;;^UTILITY(U,$J,358.3,22465,0)
+ ;;=R29.0^^58^852^153
+ ;;^UTILITY(U,$J,358.3,22465,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22465,1,3,0)
+ ;;=3^Tetany
+ ;;^UTILITY(U,$J,358.3,22465,1,4,0)
+ ;;=4^R29.0
+ ;;^UTILITY(U,$J,358.3,22465,2)
+ ;;=^118032
+ ;;^UTILITY(U,$J,358.3,22466,0)
+ ;;=R29.1^^58^852^118
+ ;;^UTILITY(U,$J,358.3,22466,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22466,1,3,0)
+ ;;=3^Meningismus
+ ;;^UTILITY(U,$J,358.3,22466,1,4,0)
+ ;;=4^R29.1
+ ;;^UTILITY(U,$J,358.3,22466,2)
+ ;;=^5019313
+ ;;^UTILITY(U,$J,358.3,22467,0)
+ ;;=R29.5^^58^852^155
+ ;;^UTILITY(U,$J,358.3,22467,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22467,1,3,0)
+ ;;=3^Transient Paralysis
+ ;;^UTILITY(U,$J,358.3,22467,1,4,0)
+ ;;=4^R29.5
+ ;;^UTILITY(U,$J,358.3,22467,2)
+ ;;=^5019316
+ ;;^UTILITY(U,$J,358.3,22468,0)
+ ;;=R34.^^58^852^39
+ ;;^UTILITY(U,$J,358.3,22468,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22468,1,3,0)
+ ;;=3^Anuria and Oliguria
+ ;;^UTILITY(U,$J,358.3,22468,1,4,0)
+ ;;=4^R34.
+ ;;^UTILITY(U,$J,358.3,22468,2)
+ ;;=^5019333
+ ;;^UTILITY(U,$J,358.3,22469,0)
+ ;;=R35.8^^58^852^140
+ ;;^UTILITY(U,$J,358.3,22469,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22469,1,3,0)
+ ;;=3^Polyuria NEC
+ ;;^UTILITY(U,$J,358.3,22469,1,4,0)
+ ;;=4^R35.8
+ ;;^UTILITY(U,$J,358.3,22469,2)
+ ;;=^5019336
+ ;;^UTILITY(U,$J,358.3,22470,0)
+ ;;=R39.12^^58^852^141
+ ;;^UTILITY(U,$J,358.3,22470,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22470,1,3,0)
+ ;;=3^Poor Urinary Stream
+ ;;^UTILITY(U,$J,358.3,22470,1,4,0)
+ ;;=4^R39.12
+ ;;^UTILITY(U,$J,358.3,22470,2)
+ ;;=^5019342
+ ;;^UTILITY(U,$J,358.3,22471,0)
+ ;;=R39.14^^58^852^73
+ ;;^UTILITY(U,$J,358.3,22471,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22471,1,3,0)
+ ;;=3^Feeling of Incomplete Bladder Emptying
+ ;;^UTILITY(U,$J,358.3,22471,1,4,0)
+ ;;=4^R39.14
+ ;;^UTILITY(U,$J,358.3,22471,2)
+ ;;=^5019344
+ ;;^UTILITY(U,$J,358.3,22472,0)
+ ;;=R41.4^^58^852^122
+ ;;^UTILITY(U,$J,358.3,22472,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22472,1,3,0)
+ ;;=3^Neurologic Neglect Syndrome
+ ;;^UTILITY(U,$J,358.3,22472,1,4,0)
+ ;;=4^R41.4

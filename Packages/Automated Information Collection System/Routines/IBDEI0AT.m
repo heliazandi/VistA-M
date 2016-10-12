@@ -1,132 +1,364 @@
-IBDEI0AT ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0AT ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,4841,1,3,0)
- ;;=3^Diabetes Type 1 w/ Diabetic Amyotrophy
- ;;^UTILITY(U,$J,358.3,4841,1,4,0)
- ;;=4^E10.44
- ;;^UTILITY(U,$J,358.3,4841,2)
- ;;=^5002608
- ;;^UTILITY(U,$J,358.3,4842,0)
- ;;=E10.49^^24^305^23
- ;;^UTILITY(U,$J,358.3,4842,1,0)
+ ;;^UTILITY(U,$J,358.3,13713,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4842,1,3,0)
- ;;=3^Diabetes Type 1 w/ Diabetic Neurological Complications NEC
- ;;^UTILITY(U,$J,358.3,4842,1,4,0)
- ;;=4^E10.49
- ;;^UTILITY(U,$J,358.3,4842,2)
- ;;=^5002609
- ;;^UTILITY(U,$J,358.3,4843,0)
- ;;=E10.59^^24^305^11
- ;;^UTILITY(U,$J,358.3,4843,1,0)
+ ;;^UTILITY(U,$J,358.3,13713,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Chronic Active Hepatitis w/o Ascites
+ ;;^UTILITY(U,$J,358.3,13713,1,4,0)
+ ;;=4^K71.50
+ ;;^UTILITY(U,$J,358.3,13713,2)
+ ;;=^5008799
+ ;;^UTILITY(U,$J,358.3,13714,0)
+ ;;=K71.51^^43^627^26
+ ;;^UTILITY(U,$J,358.3,13714,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4843,1,3,0)
- ;;=3^Diabetes Type 1 w/ Circulatory Complications NEC
- ;;^UTILITY(U,$J,358.3,4843,1,4,0)
- ;;=4^E10.59
- ;;^UTILITY(U,$J,358.3,4843,2)
- ;;=^5002612
- ;;^UTILITY(U,$J,358.3,4844,0)
- ;;=E10.610^^24^305^24
- ;;^UTILITY(U,$J,358.3,4844,1,0)
+ ;;^UTILITY(U,$J,358.3,13714,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Chronic Active Hepatitis w/ Ascites
+ ;;^UTILITY(U,$J,358.3,13714,1,4,0)
+ ;;=4^K71.51
+ ;;^UTILITY(U,$J,358.3,13714,2)
+ ;;=^5008800
+ ;;^UTILITY(U,$J,358.3,13715,0)
+ ;;=K71.7^^43^627^29
+ ;;^UTILITY(U,$J,358.3,13715,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4844,1,3,0)
- ;;=3^Diabetes Type 1 w/ Diabetic Neuropathic Arthropathy
- ;;^UTILITY(U,$J,358.3,4844,1,4,0)
- ;;=4^E10.610
- ;;^UTILITY(U,$J,358.3,4844,2)
- ;;=^5002613
- ;;^UTILITY(U,$J,358.3,4845,0)
- ;;=E10.618^^24^305^16
- ;;^UTILITY(U,$J,358.3,4845,1,0)
+ ;;^UTILITY(U,$J,358.3,13715,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Fibrosis & Cirrhosis of Liver
+ ;;^UTILITY(U,$J,358.3,13715,1,4,0)
+ ;;=4^K71.7
+ ;;^UTILITY(U,$J,358.3,13715,2)
+ ;;=^5008802
+ ;;^UTILITY(U,$J,358.3,13716,0)
+ ;;=K71.8^^43^627^33
+ ;;^UTILITY(U,$J,358.3,13716,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4845,1,3,0)
- ;;=3^Diabetes Type 1 w/ Diabetic Arthropathy NEC
- ;;^UTILITY(U,$J,358.3,4845,1,4,0)
- ;;=4^E10.618
- ;;^UTILITY(U,$J,358.3,4845,2)
- ;;=^5002614
- ;;^UTILITY(U,$J,358.3,4846,0)
- ;;=E10.620^^24^305^19
- ;;^UTILITY(U,$J,358.3,4846,1,0)
+ ;;^UTILITY(U,$J,358.3,13716,1,3,0)
+ ;;=3^Toxic Liver Disease w/ Oth Disorders of Liver
+ ;;^UTILITY(U,$J,358.3,13716,1,4,0)
+ ;;=4^K71.8
+ ;;^UTILITY(U,$J,358.3,13716,2)
+ ;;=^5008803
+ ;;^UTILITY(U,$J,358.3,13717,0)
+ ;;=K71.9^^43^627^34
+ ;;^UTILITY(U,$J,358.3,13717,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4846,1,3,0)
- ;;=3^Diabetes Type 1 w/ Diabetic Dermatitis
- ;;^UTILITY(U,$J,358.3,4846,1,4,0)
- ;;=4^E10.620
- ;;^UTILITY(U,$J,358.3,4846,2)
- ;;=^5002615
- ;;^UTILITY(U,$J,358.3,4847,0)
- ;;=E10.621^^24^305^32
- ;;^UTILITY(U,$J,358.3,4847,1,0)
+ ;;^UTILITY(U,$J,358.3,13717,1,3,0)
+ ;;=3^Toxic Liver Disease,Unspec
+ ;;^UTILITY(U,$J,358.3,13717,1,4,0)
+ ;;=4^K71.9
+ ;;^UTILITY(U,$J,358.3,13717,2)
+ ;;=^5008804
+ ;;^UTILITY(U,$J,358.3,13718,0)
+ ;;=K75.2^^43^627^20
+ ;;^UTILITY(U,$J,358.3,13718,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4847,1,3,0)
- ;;=3^Diabetes Type 1 w/ Foot Ulcer
- ;;^UTILITY(U,$J,358.3,4847,1,4,0)
- ;;=4^E10.621
- ;;^UTILITY(U,$J,358.3,4847,2)
- ;;=^5002616
- ;;^UTILITY(U,$J,358.3,4848,0)
- ;;=E10.641^^24^305^34
- ;;^UTILITY(U,$J,358.3,4848,1,0)
+ ;;^UTILITY(U,$J,358.3,13718,1,3,0)
+ ;;=3^Nonspecific Reactive Hepatitis
+ ;;^UTILITY(U,$J,358.3,13718,1,4,0)
+ ;;=4^K75.2
+ ;;^UTILITY(U,$J,358.3,13718,2)
+ ;;=^5008826
+ ;;^UTILITY(U,$J,358.3,13719,0)
+ ;;=K75.3^^43^627^13
+ ;;^UTILITY(U,$J,358.3,13719,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4848,1,3,0)
- ;;=3^Diabetes Type 1 w/ Hypoglycemia w/ Coma
- ;;^UTILITY(U,$J,358.3,4848,1,4,0)
- ;;=4^E10.641
- ;;^UTILITY(U,$J,358.3,4848,2)
- ;;=^5002621
- ;;^UTILITY(U,$J,358.3,4849,0)
- ;;=E10.69^^24^305^50
- ;;^UTILITY(U,$J,358.3,4849,1,0)
+ ;;^UTILITY(U,$J,358.3,13719,1,3,0)
+ ;;=3^Granulomatous Hepatitis NEC
+ ;;^UTILITY(U,$J,358.3,13719,1,4,0)
+ ;;=4^K75.3
+ ;;^UTILITY(U,$J,358.3,13719,2)
+ ;;=^5008827
+ ;;^UTILITY(U,$J,358.3,13720,0)
+ ;;=K76.6^^43^627^22
+ ;;^UTILITY(U,$J,358.3,13720,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4849,1,3,0)
- ;;=3^Diabetes Type 1 w/ Specified Complications NEC
- ;;^UTILITY(U,$J,358.3,4849,1,4,0)
- ;;=4^E10.69
- ;;^UTILITY(U,$J,358.3,4849,2)
- ;;=^5002624
- ;;^UTILITY(U,$J,358.3,4850,0)
- ;;=E10.8^^24^305^12
- ;;^UTILITY(U,$J,358.3,4850,1,0)
+ ;;^UTILITY(U,$J,358.3,13720,1,3,0)
+ ;;=3^Portal Hypertension
+ ;;^UTILITY(U,$J,358.3,13720,1,4,0)
+ ;;=4^K76.6
+ ;;^UTILITY(U,$J,358.3,13720,2)
+ ;;=^5008834
+ ;;^UTILITY(U,$J,358.3,13721,0)
+ ;;=F20.3^^43^628^25
+ ;;^UTILITY(U,$J,358.3,13721,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4850,1,3,0)
- ;;=3^Diabetes Type 1 w/ Complications,Unspec
- ;;^UTILITY(U,$J,358.3,4850,1,4,0)
- ;;=4^E10.8
- ;;^UTILITY(U,$J,358.3,4850,2)
- ;;=^5002625
- ;;^UTILITY(U,$J,358.3,4851,0)
- ;;=E11.00^^24^305^70
- ;;^UTILITY(U,$J,358.3,4851,1,0)
+ ;;^UTILITY(U,$J,358.3,13721,1,3,0)
+ ;;=3^Undifferentiated/Atypical Schizophrenia
+ ;;^UTILITY(U,$J,358.3,13721,1,4,0)
+ ;;=4^F20.3
+ ;;^UTILITY(U,$J,358.3,13721,2)
+ ;;=^5003472
+ ;;^UTILITY(U,$J,358.3,13722,0)
+ ;;=F20.9^^43^628^21
+ ;;^UTILITY(U,$J,358.3,13722,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4851,1,3,0)
- ;;=3^Diabetes Type 2 w/ Hyperosmolarity w/o NKHHC
- ;;^UTILITY(U,$J,358.3,4851,1,4,0)
- ;;=4^E11.00
- ;;^UTILITY(U,$J,358.3,4851,2)
- ;;=^5002627
- ;;^UTILITY(U,$J,358.3,4852,0)
- ;;=E11.01^^24^305^69
- ;;^UTILITY(U,$J,358.3,4852,1,0)
+ ;;^UTILITY(U,$J,358.3,13722,1,3,0)
+ ;;=3^Schizophrenia,Unspec
+ ;;^UTILITY(U,$J,358.3,13722,1,4,0)
+ ;;=4^F20.9
+ ;;^UTILITY(U,$J,358.3,13722,2)
+ ;;=^5003476
+ ;;^UTILITY(U,$J,358.3,13723,0)
+ ;;=F31.9^^43^628^6
+ ;;^UTILITY(U,$J,358.3,13723,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4852,1,3,0)
- ;;=3^Diabetes Type 2 w/ Hyperosmolarity w/ Coma
- ;;^UTILITY(U,$J,358.3,4852,1,4,0)
- ;;=4^E11.01
- ;;^UTILITY(U,$J,358.3,4852,2)
- ;;=^5002628
- ;;^UTILITY(U,$J,358.3,4853,0)
- ;;=E11.36^^24^305^53
- ;;^UTILITY(U,$J,358.3,4853,1,0)
+ ;;^UTILITY(U,$J,358.3,13723,1,3,0)
+ ;;=3^Bipolar Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,13723,1,4,0)
+ ;;=4^F31.9
+ ;;^UTILITY(U,$J,358.3,13723,2)
+ ;;=^331892
+ ;;^UTILITY(U,$J,358.3,13724,0)
+ ;;=F31.72^^43^628^7
+ ;;^UTILITY(U,$J,358.3,13724,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,4853,1,3,0)
- ;;=3^Diabetes Type 2 w/  Diabetic Cataract
- ;;^UTILITY(U,$J,358.3,4853,1,4,0)
- ;;=4^E11.36
- ;;^UTILITY(U,$J,358.3,4853,2)
- ;;=^5002642
- ;;^UTILITY(U,$J,358.3,4854,0)
- ;;=E11.39^^24^305^65
+ ;;^UTILITY(U,$J,358.3,13724,1,3,0)
+ ;;=3^Bipolr Disorder,Full Remis,Most Recent Episode Hypomanic
+ ;;^UTILITY(U,$J,358.3,13724,1,4,0)
+ ;;=4^F31.72
+ ;;^UTILITY(U,$J,358.3,13724,2)
+ ;;=^5003512
+ ;;^UTILITY(U,$J,358.3,13725,0)
+ ;;=F31.71^^43^628^5
+ ;;^UTILITY(U,$J,358.3,13725,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13725,1,3,0)
+ ;;=3^Bipolar Disorder,Part Remis,Most Recent Episode Hypomanic
+ ;;^UTILITY(U,$J,358.3,13725,1,4,0)
+ ;;=4^F31.71
+ ;;^UTILITY(U,$J,358.3,13725,2)
+ ;;=^5003511
+ ;;^UTILITY(U,$J,358.3,13726,0)
+ ;;=F31.70^^43^628^4
+ ;;^UTILITY(U,$J,358.3,13726,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13726,1,3,0)
+ ;;=3^Bipolar Disorder,In Remis,Most Recent Episode Unspec
+ ;;^UTILITY(U,$J,358.3,13726,1,4,0)
+ ;;=4^F31.70
+ ;;^UTILITY(U,$J,358.3,13726,2)
+ ;;=^5003510
+ ;;^UTILITY(U,$J,358.3,13727,0)
+ ;;=F29.^^43^628^19
+ ;;^UTILITY(U,$J,358.3,13727,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13727,1,3,0)
+ ;;=3^Psychosis not d/t Substance/Known Physiol Cond,Unspec
+ ;;^UTILITY(U,$J,358.3,13727,1,4,0)
+ ;;=4^F29.
+ ;;^UTILITY(U,$J,358.3,13727,2)
+ ;;=^5003484
+ ;;^UTILITY(U,$J,358.3,13728,0)
+ ;;=F28.^^43^628^20
+ ;;^UTILITY(U,$J,358.3,13728,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13728,1,3,0)
+ ;;=3^Psychosis not d/t Substance/Known Physiol Cond NEC
+ ;;^UTILITY(U,$J,358.3,13728,1,4,0)
+ ;;=4^F28.
+ ;;^UTILITY(U,$J,358.3,13728,2)
+ ;;=^5003483
+ ;;^UTILITY(U,$J,358.3,13729,0)
+ ;;=F41.9^^43^628^3
+ ;;^UTILITY(U,$J,358.3,13729,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13729,1,3,0)
+ ;;=3^Anxiety Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,13729,1,4,0)
+ ;;=4^F41.9
+ ;;^UTILITY(U,$J,358.3,13729,2)
+ ;;=^5003567
+ ;;^UTILITY(U,$J,358.3,13730,0)
+ ;;=F42.^^43^628^13
+ ;;^UTILITY(U,$J,358.3,13730,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13730,1,3,0)
+ ;;=3^Obsessive-Compulsive Disorder
+ ;;^UTILITY(U,$J,358.3,13730,1,4,0)
+ ;;=4^F42.
+ ;;^UTILITY(U,$J,358.3,13730,2)
+ ;;=^5003568
+ ;;^UTILITY(U,$J,358.3,13731,0)
+ ;;=F45.0^^43^628^23
+ ;;^UTILITY(U,$J,358.3,13731,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13731,1,3,0)
+ ;;=3^Somatization Disorder
+ ;;^UTILITY(U,$J,358.3,13731,1,4,0)
+ ;;=4^F45.0
+ ;;^UTILITY(U,$J,358.3,13731,2)
+ ;;=^112280
+ ;;^UTILITY(U,$J,358.3,13732,0)
+ ;;=F69.^^43^628^2
+ ;;^UTILITY(U,$J,358.3,13732,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13732,1,3,0)
+ ;;=3^Adult Personality and Behavior Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,13732,1,4,0)
+ ;;=4^F69.
+ ;;^UTILITY(U,$J,358.3,13732,2)
+ ;;=^5003667
+ ;;^UTILITY(U,$J,358.3,13733,0)
+ ;;=F60.9^^43^628^17
+ ;;^UTILITY(U,$J,358.3,13733,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13733,1,3,0)
+ ;;=3^Personality Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,13733,1,4,0)
+ ;;=4^F60.9
+ ;;^UTILITY(U,$J,358.3,13733,2)
+ ;;=^5003639
+ ;;^UTILITY(U,$J,358.3,13734,0)
+ ;;=F32.9^^43^628^12
+ ;;^UTILITY(U,$J,358.3,13734,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13734,1,3,0)
+ ;;=3^MDD,Single Episode,Unspec
+ ;;^UTILITY(U,$J,358.3,13734,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,13734,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,13735,0)
+ ;;=F40.231^^43^628^9
+ ;;^UTILITY(U,$J,358.3,13735,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13735,1,3,0)
+ ;;=3^Fear of Injections/Transfusions
+ ;;^UTILITY(U,$J,358.3,13735,1,4,0)
+ ;;=4^F40.231
+ ;;^UTILITY(U,$J,358.3,13735,2)
+ ;;=^5003551
+ ;;^UTILITY(U,$J,358.3,13736,0)
+ ;;=F40.240^^43^628^8
+ ;;^UTILITY(U,$J,358.3,13736,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13736,1,3,0)
+ ;;=3^Claustrophobia
+ ;;^UTILITY(U,$J,358.3,13736,1,4,0)
+ ;;=4^F40.240
+ ;;^UTILITY(U,$J,358.3,13736,2)
+ ;;=^5003554
+ ;;^UTILITY(U,$J,358.3,13737,0)
+ ;;=F43.21^^43^628^10
+ ;;^UTILITY(U,$J,358.3,13737,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13737,1,3,0)
+ ;;=3^Grief Reaction
+ ;;^UTILITY(U,$J,358.3,13737,1,4,0)
+ ;;=4^F43.21
+ ;;^UTILITY(U,$J,358.3,13737,2)
+ ;;=^331948
+ ;;^UTILITY(U,$J,358.3,13738,0)
+ ;;=F43.10^^43^628^16
+ ;;^UTILITY(U,$J,358.3,13738,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13738,1,3,0)
+ ;;=3^PTSD,Unspec
+ ;;^UTILITY(U,$J,358.3,13738,1,4,0)
+ ;;=4^F43.10
+ ;;^UTILITY(U,$J,358.3,13738,2)
+ ;;=^5003570
+ ;;^UTILITY(U,$J,358.3,13739,0)
+ ;;=F43.11^^43^628^14
+ ;;^UTILITY(U,$J,358.3,13739,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13739,1,3,0)
+ ;;=3^PTSD,Acute
+ ;;^UTILITY(U,$J,358.3,13739,1,4,0)
+ ;;=4^F43.11
+ ;;^UTILITY(U,$J,358.3,13739,2)
+ ;;=^5003571
+ ;;^UTILITY(U,$J,358.3,13740,0)
+ ;;=F43.12^^43^628^15
+ ;;^UTILITY(U,$J,358.3,13740,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13740,1,3,0)
+ ;;=3^PTSD,Chronic
+ ;;^UTILITY(U,$J,358.3,13740,1,4,0)
+ ;;=4^F43.12
+ ;;^UTILITY(U,$J,358.3,13740,2)
+ ;;=^5003572
+ ;;^UTILITY(U,$J,358.3,13741,0)
+ ;;=F43.21^^43^628^1
+ ;;^UTILITY(U,$J,358.3,13741,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13741,1,3,0)
+ ;;=3^Adjustment Disorder w/ Depressed Mood
+ ;;^UTILITY(U,$J,358.3,13741,1,4,0)
+ ;;=4^F43.21
+ ;;^UTILITY(U,$J,358.3,13741,2)
+ ;;=^331948
+ ;;^UTILITY(U,$J,358.3,13742,0)
+ ;;=F45.9^^43^628^24
+ ;;^UTILITY(U,$J,358.3,13742,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13742,1,3,0)
+ ;;=3^Somatoform Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,13742,1,4,0)
+ ;;=4^F45.9
+ ;;^UTILITY(U,$J,358.3,13742,2)
+ ;;=^5003592
+ ;;^UTILITY(U,$J,358.3,13743,0)
+ ;;=F48.2^^43^628^18
+ ;;^UTILITY(U,$J,358.3,13743,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13743,1,3,0)
+ ;;=3^Pseudobulbar Affect
+ ;;^UTILITY(U,$J,358.3,13743,1,4,0)
+ ;;=4^F48.2
+ ;;^UTILITY(U,$J,358.3,13743,2)
+ ;;=^5003594
+ ;;^UTILITY(U,$J,358.3,13744,0)
+ ;;=G47.00^^43^628^11
+ ;;^UTILITY(U,$J,358.3,13744,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13744,1,3,0)
+ ;;=3^Insomnia,Unspec
+ ;;^UTILITY(U,$J,358.3,13744,1,4,0)
+ ;;=4^G47.00
+ ;;^UTILITY(U,$J,358.3,13744,2)
+ ;;=^332924
+ ;;^UTILITY(U,$J,358.3,13745,0)
+ ;;=F40.11^^43^628^22
+ ;;^UTILITY(U,$J,358.3,13745,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13745,1,3,0)
+ ;;=3^Social Phobia,Generalized
+ ;;^UTILITY(U,$J,358.3,13745,1,4,0)
+ ;;=4^F40.11
+ ;;^UTILITY(U,$J,358.3,13745,2)
+ ;;=^5003545
+ ;;^UTILITY(U,$J,358.3,13746,0)
+ ;;=R56.00^^43^629^6
+ ;;^UTILITY(U,$J,358.3,13746,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13746,1,3,0)
+ ;;=3^Simple Febrile Convulsions
+ ;;^UTILITY(U,$J,358.3,13746,1,4,0)
+ ;;=4^R56.00
+ ;;^UTILITY(U,$J,358.3,13746,2)
+ ;;=^5019522
+ ;;^UTILITY(U,$J,358.3,13747,0)
+ ;;=R56.9^^43^629^4
+ ;;^UTILITY(U,$J,358.3,13747,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13747,1,3,0)
+ ;;=3^Convulsions,Unspec
+ ;;^UTILITY(U,$J,358.3,13747,1,4,0)
+ ;;=4^R56.9
+ ;;^UTILITY(U,$J,358.3,13747,2)
+ ;;=^5019524
+ ;;^UTILITY(U,$J,358.3,13748,0)
+ ;;=R25.0^^43^629^1
+ ;;^UTILITY(U,$J,358.3,13748,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,13748,1,3,0)
+ ;;=3^Abnormal Head Movements
+ ;;^UTILITY(U,$J,358.3,13748,1,4,0)
+ ;;=4^R25.0
+ ;;^UTILITY(U,$J,358.3,13748,2)
+ ;;=^5019299
+ ;;^UTILITY(U,$J,358.3,13749,0)
+ ;;=R25.1^^43^629^7

@@ -1,126 +1,358 @@
-IBDEI049 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI049 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1566,1,4,0)
- ;;=4^I25.709
- ;;^UTILITY(U,$J,358.3,1566,2)
- ;;=^5007120
- ;;^UTILITY(U,$J,358.3,1567,0)
- ;;=I25.711^^11^144^7
- ;;^UTILITY(U,$J,358.3,1567,1,0)
+ ;;^UTILITY(U,$J,358.3,5115,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1567,1,3,0)
- ;;=3^Athscl Autologous Vein CABG w/ Ang Pctrs w/ Documented Spasm
- ;;^UTILITY(U,$J,358.3,1567,1,4,0)
- ;;=4^I25.711
- ;;^UTILITY(U,$J,358.3,1567,2)
- ;;=^5007122
- ;;^UTILITY(U,$J,358.3,1568,0)
- ;;=I25.718^^11^144^8
- ;;^UTILITY(U,$J,358.3,1568,1,0)
+ ;;^UTILITY(U,$J,358.3,5115,1,3,0)
+ ;;=3^B-Cell Lymphoma,Unspec,Spleen
+ ;;^UTILITY(U,$J,358.3,5115,1,4,0)
+ ;;=4^C85.17
+ ;;^UTILITY(U,$J,358.3,5115,2)
+ ;;=^5001708
+ ;;^UTILITY(U,$J,358.3,5116,0)
+ ;;=C85.10^^22^312^10
+ ;;^UTILITY(U,$J,358.3,5116,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1568,1,3,0)
- ;;=3^Athscl Autologous Vein CABG w/ Oth Ang Pctrs
- ;;^UTILITY(U,$J,358.3,1568,1,4,0)
- ;;=4^I25.718
- ;;^UTILITY(U,$J,358.3,1568,2)
- ;;=^5007123
- ;;^UTILITY(U,$J,358.3,1569,0)
- ;;=I25.719^^11^144^9
- ;;^UTILITY(U,$J,358.3,1569,1,0)
+ ;;^UTILITY(U,$J,358.3,5116,1,3,0)
+ ;;=3^B-Cell Lymphoma,Unspec,Unspec Site
+ ;;^UTILITY(U,$J,358.3,5116,1,4,0)
+ ;;=4^C85.10
+ ;;^UTILITY(U,$J,358.3,5116,2)
+ ;;=^5001701
+ ;;^UTILITY(U,$J,358.3,5117,0)
+ ;;=L60.1^^22^313^2
+ ;;^UTILITY(U,$J,358.3,5117,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1569,1,3,0)
- ;;=3^Athscl Autologous Vein CABG w/ Unspec Ang Pctrs
- ;;^UTILITY(U,$J,358.3,1569,1,4,0)
- ;;=4^I25.719
- ;;^UTILITY(U,$J,358.3,1569,2)
- ;;=^5007124
- ;;^UTILITY(U,$J,358.3,1570,0)
- ;;=I25.721^^11^144^3
- ;;^UTILITY(U,$J,358.3,1570,1,0)
+ ;;^UTILITY(U,$J,358.3,5117,1,3,0)
+ ;;=3^Onycholysis
+ ;;^UTILITY(U,$J,358.3,5117,1,4,0)
+ ;;=4^L60.1
+ ;;^UTILITY(U,$J,358.3,5117,2)
+ ;;=^186837
+ ;;^UTILITY(U,$J,358.3,5118,0)
+ ;;=L60.2^^22^313^1
+ ;;^UTILITY(U,$J,358.3,5118,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1570,1,3,0)
- ;;=3^Athscl Autologous Artery CABG w/ Ang Pctrs w/ Documented Spasm
- ;;^UTILITY(U,$J,358.3,1570,1,4,0)
- ;;=4^I25.721
- ;;^UTILITY(U,$J,358.3,1570,2)
- ;;=^5007126
- ;;^UTILITY(U,$J,358.3,1571,0)
- ;;=I25.728^^11^144^4
- ;;^UTILITY(U,$J,358.3,1571,1,0)
+ ;;^UTILITY(U,$J,358.3,5118,1,3,0)
+ ;;=3^Onychogryphosis
+ ;;^UTILITY(U,$J,358.3,5118,1,4,0)
+ ;;=4^L60.2
+ ;;^UTILITY(U,$J,358.3,5118,2)
+ ;;=^5009235
+ ;;^UTILITY(U,$J,358.3,5119,0)
+ ;;=B35.1^^22^313^3
+ ;;^UTILITY(U,$J,358.3,5119,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1571,1,3,0)
- ;;=3^Athscl Autologous Artery CABG w/ Oth Ang Pctrs
- ;;^UTILITY(U,$J,358.3,1571,1,4,0)
- ;;=4^I25.728
- ;;^UTILITY(U,$J,358.3,1571,2)
- ;;=^5133560
- ;;^UTILITY(U,$J,358.3,1572,0)
- ;;=I25.729^^11^144^5
- ;;^UTILITY(U,$J,358.3,1572,1,0)
+ ;;^UTILITY(U,$J,358.3,5119,1,3,0)
+ ;;=3^Onychomycosis
+ ;;^UTILITY(U,$J,358.3,5119,1,4,0)
+ ;;=4^B35.1
+ ;;^UTILITY(U,$J,358.3,5119,2)
+ ;;=^119748
+ ;;^UTILITY(U,$J,358.3,5120,0)
+ ;;=L50.8^^22^314^4
+ ;;^UTILITY(U,$J,358.3,5120,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1572,1,3,0)
- ;;=3^Athscl Autologous Artery CABG w/ Unspec Ang Pctrs
- ;;^UTILITY(U,$J,358.3,1572,1,4,0)
- ;;=4^I25.729
- ;;^UTILITY(U,$J,358.3,1572,2)
- ;;=^5133561
- ;;^UTILITY(U,$J,358.3,1573,0)
- ;;=I25.731^^11^144^25
- ;;^UTILITY(U,$J,358.3,1573,1,0)
+ ;;^UTILITY(U,$J,358.3,5120,1,3,0)
+ ;;=3^Urticaria,Other Spec
+ ;;^UTILITY(U,$J,358.3,5120,1,4,0)
+ ;;=4^L50.8
+ ;;^UTILITY(U,$J,358.3,5120,2)
+ ;;=^5009203
+ ;;^UTILITY(U,$J,358.3,5121,0)
+ ;;=L50.0^^22^314^2
+ ;;^UTILITY(U,$J,358.3,5121,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1573,1,3,0)
- ;;=3^Athscl Nonautologous Biological CABG w/ Ang Pctrs w/ Documented Spasm
- ;;^UTILITY(U,$J,358.3,1573,1,4,0)
- ;;=4^I25.731
- ;;^UTILITY(U,$J,358.3,1573,2)
- ;;=^5007128
- ;;^UTILITY(U,$J,358.3,1574,0)
- ;;=I25.738^^11^144^26
- ;;^UTILITY(U,$J,358.3,1574,1,0)
+ ;;^UTILITY(U,$J,358.3,5121,1,3,0)
+ ;;=3^Urticaria,Allergic
+ ;;^UTILITY(U,$J,358.3,5121,1,4,0)
+ ;;=4^L50.0
+ ;;^UTILITY(U,$J,358.3,5121,2)
+ ;;=^5009200
+ ;;^UTILITY(U,$J,358.3,5122,0)
+ ;;=L50.6^^22^314^3
+ ;;^UTILITY(U,$J,358.3,5122,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1574,1,3,0)
- ;;=3^Athscl Nonautologous Biological CABG w/ Oth Ang Pctrs
- ;;^UTILITY(U,$J,358.3,1574,1,4,0)
- ;;=4^I25.738
- ;;^UTILITY(U,$J,358.3,1574,2)
- ;;=^5007129
- ;;^UTILITY(U,$J,358.3,1575,0)
- ;;=I25.739^^11^144^27
- ;;^UTILITY(U,$J,358.3,1575,1,0)
+ ;;^UTILITY(U,$J,358.3,5122,1,3,0)
+ ;;=3^Urticaria,Contact
+ ;;^UTILITY(U,$J,358.3,5122,1,4,0)
+ ;;=4^L50.6
+ ;;^UTILITY(U,$J,358.3,5122,2)
+ ;;=^5009202
+ ;;^UTILITY(U,$J,358.3,5123,0)
+ ;;=L50.2^^22^314^1
+ ;;^UTILITY(U,$J,358.3,5123,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1575,1,3,0)
- ;;=3^Athscl Nonautologous Biological CABG w/ Unspec Ang Pctrs
- ;;^UTILITY(U,$J,358.3,1575,1,4,0)
- ;;=4^I25.739
- ;;^UTILITY(U,$J,358.3,1575,2)
- ;;=^5007130
- ;;^UTILITY(U,$J,358.3,1576,0)
- ;;=I25.751^^11^144^21
- ;;^UTILITY(U,$J,358.3,1576,1,0)
+ ;;^UTILITY(U,$J,358.3,5123,1,3,0)
+ ;;=3^Urticaria d/t Cold/Heat
+ ;;^UTILITY(U,$J,358.3,5123,1,4,0)
+ ;;=4^L50.2
+ ;;^UTILITY(U,$J,358.3,5123,2)
+ ;;=^271938
+ ;;^UTILITY(U,$J,358.3,5124,0)
+ ;;=L56.3^^22^314^5
+ ;;^UTILITY(U,$J,358.3,5124,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1576,1,3,0)
- ;;=3^Athscl Native Cor Art of Transplanted Hrt w/ Ang Pctrs w/ Spasm
- ;;^UTILITY(U,$J,358.3,1576,1,4,0)
- ;;=4^I25.751
- ;;^UTILITY(U,$J,358.3,1576,2)
- ;;=^5007132
- ;;^UTILITY(U,$J,358.3,1577,0)
- ;;=I25.758^^11^144^22
- ;;^UTILITY(U,$J,358.3,1577,1,0)
+ ;;^UTILITY(U,$J,358.3,5124,1,3,0)
+ ;;=3^Urticaria,Solar
+ ;;^UTILITY(U,$J,358.3,5124,1,4,0)
+ ;;=4^L56.3
+ ;;^UTILITY(U,$J,358.3,5124,2)
+ ;;=^5009217
+ ;;^UTILITY(U,$J,358.3,5125,0)
+ ;;=B02.8^^22^315^1
+ ;;^UTILITY(U,$J,358.3,5125,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1577,1,3,0)
- ;;=3^Athscl Native Cor Art of Transplanted Hrt w/ Oth Ang Pctrs
- ;;^UTILITY(U,$J,358.3,1577,1,4,0)
- ;;=4^I25.758
- ;;^UTILITY(U,$J,358.3,1577,2)
- ;;=^5007133
- ;;^UTILITY(U,$J,358.3,1578,0)
- ;;=I25.759^^11^144^23
- ;;^UTILITY(U,$J,358.3,1578,1,0)
+ ;;^UTILITY(U,$J,358.3,5125,1,3,0)
+ ;;=3^Zoster w/ Other Complications
+ ;;^UTILITY(U,$J,358.3,5125,1,4,0)
+ ;;=4^B02.8
+ ;;^UTILITY(U,$J,358.3,5125,2)
+ ;;=^5000500
+ ;;^UTILITY(U,$J,358.3,5126,0)
+ ;;=B02.9^^22^315^2
+ ;;^UTILITY(U,$J,358.3,5126,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1578,1,3,0)
- ;;=3^Athscl Native Cor Art of Transplanted Hrt w/ Unspec Ang Pctrs
- ;;^UTILITY(U,$J,358.3,1578,1,4,0)
- ;;=4^I25.759
+ ;;^UTILITY(U,$J,358.3,5126,1,3,0)
+ ;;=3^Zoster w/o Complications
+ ;;^UTILITY(U,$J,358.3,5126,1,4,0)
+ ;;=4^B02.9
+ ;;^UTILITY(U,$J,358.3,5126,2)
+ ;;=^5000501
+ ;;^UTILITY(U,$J,358.3,5127,0)
+ ;;=11000^^23^316^1^^^^1
+ ;;^UTILITY(U,$J,358.3,5127,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5127,1,2,0)
+ ;;=2^11000
+ ;;^UTILITY(U,$J,358.3,5127,1,3,0)
+ ;;=3^Debride ext eczematous skin,<10%
+ ;;^UTILITY(U,$J,358.3,5128,0)
+ ;;=11001^^23^316^2^^^^1
+ ;;^UTILITY(U,$J,358.3,5128,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5128,1,2,0)
+ ;;=2^11001
+ ;;^UTILITY(U,$J,358.3,5128,1,3,0)
+ ;;=3^Debride ext eczematous skin,Ea 10%
+ ;;^UTILITY(U,$J,358.3,5129,0)
+ ;;=11042^^23^316^3^^^^1
+ ;;^UTILITY(U,$J,358.3,5129,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5129,1,2,0)
+ ;;=2^11042
+ ;;^UTILITY(U,$J,358.3,5129,1,3,0)
+ ;;=3^Debride Subcut (epi/derm);20sq cm or <
+ ;;^UTILITY(U,$J,358.3,5130,0)
+ ;;=11045^^23^316^4^^^^1
+ ;;^UTILITY(U,$J,358.3,5130,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5130,1,2,0)
+ ;;=2^11045
+ ;;^UTILITY(U,$J,358.3,5130,1,3,0)
+ ;;=3^Debride Subcut (epi/derm);Ea Addl 20sq cm
+ ;;^UTILITY(U,$J,358.3,5131,0)
+ ;;=17000^^23^317^4^^^^1
+ ;;^UTILITY(U,$J,358.3,5131,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5131,1,2,0)
+ ;;=2^17000
+ ;;^UTILITY(U,$J,358.3,5131,1,3,0)
+ ;;=3^Destroy 1st Premalignant Lesion
+ ;;^UTILITY(U,$J,358.3,5132,0)
+ ;;=17004^^23^317^3^^^^1
+ ;;^UTILITY(U,$J,358.3,5132,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5132,1,2,0)
+ ;;=2^17004
+ ;;^UTILITY(U,$J,358.3,5132,1,3,0)
+ ;;=3^Destroy 15+ Premalignant Lesions
+ ;;^UTILITY(U,$J,358.3,5133,0)
+ ;;=17110^^23^317^1^^^^1
+ ;;^UTILITY(U,$J,358.3,5133,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5133,1,2,0)
+ ;;=2^17110
+ ;;^UTILITY(U,$J,358.3,5133,1,3,0)
+ ;;=3^Destroy 1-14 Benign Lesions
+ ;;^UTILITY(U,$J,358.3,5134,0)
+ ;;=17111^^23^317^2^^^^1
+ ;;^UTILITY(U,$J,358.3,5134,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5134,1,2,0)
+ ;;=2^17111
+ ;;^UTILITY(U,$J,358.3,5134,1,3,0)
+ ;;=3^Destroy 15+ Benign Lesions
+ ;;^UTILITY(U,$J,358.3,5135,0)
+ ;;=17003^^23^317^5^^^^1
+ ;;^UTILITY(U,$J,358.3,5135,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5135,1,2,0)
+ ;;=2^17003
+ ;;^UTILITY(U,$J,358.3,5135,1,3,0)
+ ;;=3^Destroy 2-14 Premalignant Lesions
+ ;;^UTILITY(U,$J,358.3,5136,0)
+ ;;=17260^^23^318^1^^^^1
+ ;;^UTILITY(U,$J,358.3,5136,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5136,1,2,0)
+ ;;=2^17260
+ ;;^UTILITY(U,$J,358.3,5136,1,3,0)
+ ;;=3^Dest Mal Lesion Tnk/Arm/Leg,0.5cm or <
+ ;;^UTILITY(U,$J,358.3,5137,0)
+ ;;=17261^^23^318^2^^^^1
+ ;;^UTILITY(U,$J,358.3,5137,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5137,1,2,0)
+ ;;=2^17261
+ ;;^UTILITY(U,$J,358.3,5137,1,3,0)
+ ;;=3^Dest Mal Lesion Tnk/Arm/Leg,0.6-1.0cm
+ ;;^UTILITY(U,$J,358.3,5138,0)
+ ;;=17262^^23^318^3^^^^1
+ ;;^UTILITY(U,$J,358.3,5138,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5138,1,2,0)
+ ;;=2^17262
+ ;;^UTILITY(U,$J,358.3,5138,1,3,0)
+ ;;=3^Dest Mal Lesion Tnk/Arm/Leg,1.1-2.0cm
+ ;;^UTILITY(U,$J,358.3,5139,0)
+ ;;=17263^^23^318^4^^^^1
+ ;;^UTILITY(U,$J,358.3,5139,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5139,1,2,0)
+ ;;=2^17263
+ ;;^UTILITY(U,$J,358.3,5139,1,3,0)
+ ;;=3^Dest Mal Lesion Tnk/Arm/Leg,2.1-3.0cm
+ ;;^UTILITY(U,$J,358.3,5140,0)
+ ;;=17264^^23^318^5^^^^1
+ ;;^UTILITY(U,$J,358.3,5140,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5140,1,2,0)
+ ;;=2^17264
+ ;;^UTILITY(U,$J,358.3,5140,1,3,0)
+ ;;=3^Dest Mal Lesion Tnk/Arm/Leg,3.1-4.0cm
+ ;;^UTILITY(U,$J,358.3,5141,0)
+ ;;=17266^^23^318^6^^^^1
+ ;;^UTILITY(U,$J,358.3,5141,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5141,1,2,0)
+ ;;=2^17266
+ ;;^UTILITY(U,$J,358.3,5141,1,3,0)
+ ;;=3^Dest Mal Lesion Tnk/Arm/Leg > 4.0cm
+ ;;^UTILITY(U,$J,358.3,5142,0)
+ ;;=11400^^23^319^1^^^^1
+ ;;^UTILITY(U,$J,358.3,5142,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5142,1,2,0)
+ ;;=2^11400
+ ;;^UTILITY(U,$J,358.3,5142,1,3,0)
+ ;;=3^Exc Ben Lesion Tnk/Arm/Leg,0.5cm or <
+ ;;^UTILITY(U,$J,358.3,5143,0)
+ ;;=11401^^23^319^2^^^^1
+ ;;^UTILITY(U,$J,358.3,5143,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5143,1,2,0)
+ ;;=2^11401
+ ;;^UTILITY(U,$J,358.3,5143,1,3,0)
+ ;;=3^Exc Ben Lesion Tnk/Arm/Leg,0.6-1.0cm
+ ;;^UTILITY(U,$J,358.3,5144,0)
+ ;;=11402^^23^319^3^^^^1
+ ;;^UTILITY(U,$J,358.3,5144,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5144,1,2,0)
+ ;;=2^11402
+ ;;^UTILITY(U,$J,358.3,5144,1,3,0)
+ ;;=3^Exc Ben Lesion Tnk/Arm/Leg,1.1-2.0cm
+ ;;^UTILITY(U,$J,358.3,5145,0)
+ ;;=11403^^23^319^4^^^^1
+ ;;^UTILITY(U,$J,358.3,5145,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5145,1,2,0)
+ ;;=2^11403
+ ;;^UTILITY(U,$J,358.3,5145,1,3,0)
+ ;;=3^Exc Ben Lesion Tnk/Arm/Leg,2.1-3.0cm
+ ;;^UTILITY(U,$J,358.3,5146,0)
+ ;;=11404^^23^319^5^^^^1
+ ;;^UTILITY(U,$J,358.3,5146,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5146,1,2,0)
+ ;;=2^11404
+ ;;^UTILITY(U,$J,358.3,5146,1,3,0)
+ ;;=3^Exc Ben Lesion Tnk/Arm/Leg,3.1-4.0cm
+ ;;^UTILITY(U,$J,358.3,5147,0)
+ ;;=11406^^23^319^6^^^^1
+ ;;^UTILITY(U,$J,358.3,5147,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5147,1,2,0)
+ ;;=2^11406
+ ;;^UTILITY(U,$J,358.3,5147,1,3,0)
+ ;;=3^Exc Ben Lesion Tnk/Arm/Leg > 4.0cm
+ ;;^UTILITY(U,$J,358.3,5148,0)
+ ;;=11600^^23^320^1^^^^1
+ ;;^UTILITY(U,$J,358.3,5148,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5148,1,2,0)
+ ;;=2^11600
+ ;;^UTILITY(U,$J,358.3,5148,1,3,0)
+ ;;=3^Exc Mal Lesion Tnk/Arm/Leg,0.5cm or <
+ ;;^UTILITY(U,$J,358.3,5149,0)
+ ;;=11601^^23^320^2^^^^1
+ ;;^UTILITY(U,$J,358.3,5149,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5149,1,2,0)
+ ;;=2^11601
+ ;;^UTILITY(U,$J,358.3,5149,1,3,0)
+ ;;=3^Exc Mal Lesion Tnk/Arm/Leg,0.6-1.0cm
+ ;;^UTILITY(U,$J,358.3,5150,0)
+ ;;=11602^^23^320^3^^^^1
+ ;;^UTILITY(U,$J,358.3,5150,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5150,1,2,0)
+ ;;=2^11602
+ ;;^UTILITY(U,$J,358.3,5150,1,3,0)
+ ;;=3^Exc Mal Lesion Tnk/Arm/Leg,1.1-2.0cm
+ ;;^UTILITY(U,$J,358.3,5151,0)
+ ;;=11603^^23^320^4^^^^1
+ ;;^UTILITY(U,$J,358.3,5151,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5151,1,2,0)
+ ;;=2^11603
+ ;;^UTILITY(U,$J,358.3,5151,1,3,0)
+ ;;=3^Exc Mal Lesion Tnk/Arm/Leg,2.1-3.0cm
+ ;;^UTILITY(U,$J,358.3,5152,0)
+ ;;=11604^^23^320^5^^^^1
+ ;;^UTILITY(U,$J,358.3,5152,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5152,1,2,0)
+ ;;=2^11604
+ ;;^UTILITY(U,$J,358.3,5152,1,3,0)
+ ;;=3^Exc Mal Lesion Tnk/Arm/Leg,3.1-4.0cm
+ ;;^UTILITY(U,$J,358.3,5153,0)
+ ;;=11606^^23^320^6^^^^1
+ ;;^UTILITY(U,$J,358.3,5153,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5153,1,2,0)
+ ;;=2^11606
+ ;;^UTILITY(U,$J,358.3,5153,1,3,0)
+ ;;=3^Exc Mal Lesion Tnk/Arm/Leg > 4.0cm
+ ;;^UTILITY(U,$J,358.3,5154,0)
+ ;;=10040^^23^321^1^^^^1
+ ;;^UTILITY(U,$J,358.3,5154,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5154,1,2,0)
+ ;;=2^10040
+ ;;^UTILITY(U,$J,358.3,5154,1,3,0)
+ ;;=3^Acne Surgery
+ ;;^UTILITY(U,$J,358.3,5155,0)
+ ;;=10060^^23^321^4^^^^1
+ ;;^UTILITY(U,$J,358.3,5155,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,5155,1,2,0)
+ ;;=2^10060
+ ;;^UTILITY(U,$J,358.3,5155,1,3,0)
+ ;;=3^I&D of abscess; simple or single
+ ;;^UTILITY(U,$J,358.3,5156,0)
+ ;;=10061^^23^321^3^^^^1
+ ;;^UTILITY(U,$J,358.3,5156,1,0)
+ ;;=^358.31IA^3^2

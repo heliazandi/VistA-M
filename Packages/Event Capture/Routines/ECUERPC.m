@@ -1,5 +1,5 @@
-ECUERPC ;ALB/JAM - Event Capture Data Entry Broker Utilities ;12/17/14  14:34
- ;;2.0;EVENT CAPTURE;**25,32,33,46,47,59,72,95,114,126**;8 May 96;Build 8
+ECUERPC ;ALB/JAM - Event Capture Data Entry Broker Utilities ;6/20/16  12:13
+ ;;2.0;EVENT CAPTURE;**25,32,33,46,47,59,72,95,114,126,129,131**;8 May 96;Build 13
  ;
  ; Reference to $$SINFO^ICDEX supported by ICR #5747
  ; Reference to $$ICDDX^ICDEX supported by ICR5747
@@ -40,11 +40,22 @@ UNTCHK ;Check if DSS unit exist as event code screen and if active
  ;I '$D(^ECJ("AP",ECL,IEN))!($P($G(^ECD(IEN,0)),U,6)) Q
  I ECL'="",'$D(^ECJ("AP",ECL,IEN)) Q
  I ($P($G(^ECD(IEN,0)),U,6))!('$P($G(^ECD(IEN,0)),U,8)) Q
+ ;Check if event code screens associated with DSS unit are active
+ I ECL'="",'$$ECSCHK(ECL,IEN) Q
  S DSSF=$P(^ECD(IEN,0),"^",14) S:DSSF="" DSSF="N"
  S DFD=$S($P(^ECD(IEN,0),"^",12)="N":"N",1:"X") ; added by VMP
  S CNT=CNT+1,STR=IEN_"^"_$P(^ECD(IEN,0),"^")_U_DSSF_"^"_DFD
  S ^TMP($J,"ECUSRUNT",CNT)=STR
  Q
+ECSCHK(ECL,ECIEN) ;Check if any event code screens associated with DSS unit are active; EC*129
+ N ECAT,ECPRX,ECS,ECNODE,ECFLG
+ S ECAT="",ECFLG=0
+ F  S ECAT=$O(^ECJ("AP",ECL,ECIEN,ECAT)) Q:ECAT=""  D  Q:ECFLG
+ .S ECPRX="" F  S ECPRX=$O(^ECJ("AP",ECL,ECIEN,ECAT,ECPRX)) Q:ECPRX=""  D  Q:ECFLG
+ ..S ECS=0 F  S ECS=$O(^ECJ("AP",ECL,ECIEN,ECAT,ECPRX,ECS)) Q:'ECS  D  Q:ECFLG
+ ...S ECNODE=$G(^ECJ(ECS,0)) I $P(ECNODE,"^",2)="" S ECFLG=1
+ Q ECFLG
+ ;
 CAT(RESULTS,ECARY) ;
  ;This broker entry point returns an array of categories for an Event 
  ;Code screen based on location and DSS unit.
@@ -90,8 +101,9 @@ PROC(RESULTS,ECARY) ;
  ;
  N ECL,ECD,ECC,CNT,DATA,STR,ECCPT,PX,NAME,NUM ;126
  D SETENV^ECUMRPC
- S ECL=$P(ECARY,U),ECD=$P(ECARY,U,2),ECC=$P(ECARY,U,3) S:ECC="" ECC=0
+ S ECL=$P(ECARY,U),ECD=$P(ECARY,U,2),ECC=$P(ECARY,U,3)
  I (ECL="")!(ECD="") Q
+ S:$P($G(^ECD(ECD,0)),U,11)=0 ECC="" S:ECC="" ECC=0 ;131
  S ECDT=$P(ECARY,U,4)
  K ^TMP($J,"ECPRO")
  D PROS^ECHECK1

@@ -1,120 +1,344 @@
-IBDEI0LN ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0LN ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,10094,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10094,1,3,0)
- ;;=3^Diab d/t Drug/Chem w/ Unspec Diab Retinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,10094,1,4,0)
- ;;=4^E09.319
- ;;^UTILITY(U,$J,358.3,10094,2)
- ;;=^5002553
- ;;^UTILITY(U,$J,358.3,10095,0)
- ;;=E09.321^^44^500^29
- ;;^UTILITY(U,$J,358.3,10095,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10095,1,3,0)
- ;;=3^Diab d/t Drug/Chem w/ Mild Nonprolif Diab Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,10095,1,4,0)
- ;;=4^E09.321
- ;;^UTILITY(U,$J,358.3,10095,2)
- ;;=^5002554
- ;;^UTILITY(U,$J,358.3,10096,0)
- ;;=E09.329^^44^500^30
- ;;^UTILITY(U,$J,358.3,10096,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10096,1,3,0)
- ;;=3^Diab d/t Drug/Chem w/ Mild Nonprolif Diab Retinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,10096,1,4,0)
- ;;=4^E09.329
- ;;^UTILITY(U,$J,358.3,10096,2)
- ;;=^5002555
- ;;^UTILITY(U,$J,358.3,10097,0)
- ;;=E09.351^^44^500^33
- ;;^UTILITY(U,$J,358.3,10097,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10097,1,3,0)
- ;;=3^Diab d/t Drug/Chem w/ Prolif Diab Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,10097,1,4,0)
- ;;=4^E09.351
- ;;^UTILITY(U,$J,358.3,10097,2)
- ;;=^5002560
- ;;^UTILITY(U,$J,358.3,10098,0)
- ;;=E09.359^^44^500^34
- ;;^UTILITY(U,$J,358.3,10098,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10098,1,3,0)
- ;;=3^Diab d/t Drug/Chem w/ Prolif Diab Retinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,10098,1,4,0)
- ;;=4^E09.359
- ;;^UTILITY(U,$J,358.3,10098,2)
- ;;=^5002561
- ;;^UTILITY(U,$J,358.3,10099,0)
- ;;=E08.351^^44^500^45
- ;;^UTILITY(U,$J,358.3,10099,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10099,1,3,0)
- ;;=3^Diab d/t Undrl Cond w/ Prolif Diab Rtnop w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,10099,1,4,0)
- ;;=4^E08.351
- ;;^UTILITY(U,$J,358.3,10099,2)
- ;;=^5002518
- ;;^UTILITY(U,$J,358.3,10100,0)
- ;;=E08.359^^44^500^46
- ;;^UTILITY(U,$J,358.3,10100,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10100,1,3,0)
- ;;=3^Diab d/t Undrl Cond w/ Prolif Diab Rtnop w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,10100,1,4,0)
- ;;=4^E08.359
- ;;^UTILITY(U,$J,358.3,10100,2)
- ;;=^5002519
- ;;^UTILITY(U,$J,358.3,10101,0)
- ;;=E13.351^^44^500^27
- ;;^UTILITY(U,$J,358.3,10101,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10101,1,3,0)
- ;;=3^DM w/ Prolif Diab Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,10101,1,4,0)
- ;;=4^E13.351
- ;;^UTILITY(U,$J,358.3,10101,2)
- ;;=^5002680
- ;;^UTILITY(U,$J,358.3,10102,0)
- ;;=E13.359^^44^500^28
- ;;^UTILITY(U,$J,358.3,10102,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10102,1,3,0)
- ;;=3^DM w/ Prolif Diab Retinopathy w/o Macular Edema
- ;;^UTILITY(U,$J,358.3,10102,1,4,0)
- ;;=4^E13.359
- ;;^UTILITY(U,$J,358.3,10102,2)
- ;;=^5002681
- ;;^UTILITY(U,$J,358.3,10103,0)
- ;;=E09.331^^44^500^31
- ;;^UTILITY(U,$J,358.3,10103,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10103,1,3,0)
- ;;=3^Diab d/t Drug/Chem w/ Moderate Nonprolif Diab Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,10103,1,4,0)
- ;;=4^E09.331
- ;;^UTILITY(U,$J,358.3,10103,2)
- ;;=^5002556
- ;;^UTILITY(U,$J,358.3,10104,0)
- ;;=E09.341^^44^500^35
- ;;^UTILITY(U,$J,358.3,10104,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10104,1,3,0)
- ;;=3^Diab d/t Drug/Chem w/ Severe Nonprolif Diab Retinopathy w/ Macula Edema
- ;;^UTILITY(U,$J,358.3,10104,1,4,0)
- ;;=4^E09.341
- ;;^UTILITY(U,$J,358.3,10104,2)
- ;;=^5002558
- ;;^UTILITY(U,$J,358.3,10105,0)
- ;;=E13.311^^44^500^49
- ;;^UTILITY(U,$J,358.3,10105,1,0)
- ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,10105,1,3,0)
- ;;=3^Diab w/ Unspec Diabetic Retinopathy w/ Macular Edema
- ;;^UTILITY(U,$J,358.3,10105,1,4,0)
- ;;=4^E13.311
+ ;;^UTILITY(U,$J,358.3,27366,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27366,1,2,0)
+ ;;=2^95990
+ ;;^UTILITY(U,$J,358.3,27366,1,3,0)
+ ;;=3^Refill Spinal Implant Pump by RN
+ ;;^UTILITY(U,$J,358.3,27367,0)
+ ;;=96402^^73^1159^15^^^^1
+ ;;^UTILITY(U,$J,358.3,27367,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27367,1,2,0)
+ ;;=2^96402
+ ;;^UTILITY(U,$J,358.3,27367,1,3,0)
+ ;;=3^Injec,IM,anti-neplastic horm
+ ;;^UTILITY(U,$J,358.3,27368,0)
+ ;;=96372^^73^1159^26^^^^1
+ ;;^UTILITY(U,$J,358.3,27368,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27368,1,2,0)
+ ;;=2^96372
+ ;;^UTILITY(U,$J,358.3,27368,1,3,0)
+ ;;=3^Ther/Proph/Diag Inj, SC/IM
+ ;;^UTILITY(U,$J,358.3,27369,0)
+ ;;=64616^^73^1159^7^^^^1
+ ;;^UTILITY(U,$J,358.3,27369,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27369,1,2,0)
+ ;;=2^64616
+ ;;^UTILITY(U,$J,358.3,27369,1,3,0)
+ ;;=3^Chemodenervation Neck Muscle,Unilateral            
+ ;;^UTILITY(U,$J,358.3,27370,0)
+ ;;=64642^^73^1159^3^^^^1
+ ;;^UTILITY(U,$J,358.3,27370,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27370,1,2,0)
+ ;;=2^64642
+ ;;^UTILITY(U,$J,358.3,27370,1,3,0)
+ ;;=3^Chemodenervation 1 Ext/1-4 Muscles
+ ;;^UTILITY(U,$J,358.3,27371,0)
+ ;;=64643^^73^1159^11^^^^1
+ ;;^UTILITY(U,$J,358.3,27371,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27371,1,2,0)
+ ;;=2^64643
+ ;;^UTILITY(U,$J,358.3,27371,1,3,0)
+ ;;=3^Chemodenervation,Ea Addl Ext,1-4 Muscle 
+ ;;^UTILITY(U,$J,358.3,27372,0)
+ ;;=64644^^73^1159^2^^^^1
+ ;;^UTILITY(U,$J,358.3,27372,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27372,1,2,0)
+ ;;=2^64644
+ ;;^UTILITY(U,$J,358.3,27372,1,3,0)
+ ;;=3^Chemodenervation 1 Ext 5 or > Muscles
+ ;;^UTILITY(U,$J,358.3,27373,0)
+ ;;=64645^^73^1159^12^^^^1
+ ;;^UTILITY(U,$J,358.3,27373,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27373,1,2,0)
+ ;;=2^64645
+ ;;^UTILITY(U,$J,358.3,27373,1,3,0)
+ ;;=3^Chemodenervation,Ea Addl Ext,5 or > Mu
+ ;;^UTILITY(U,$J,358.3,27374,0)
+ ;;=64646^^73^1159^9^^^^1
+ ;;^UTILITY(U,$J,358.3,27374,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27374,1,2,0)
+ ;;=2^64646
+ ;;^UTILITY(U,$J,358.3,27374,1,3,0)
+ ;;=3^Chemodenervation Trunk,1-5 Muscles
+ ;;^UTILITY(U,$J,358.3,27375,0)
+ ;;=64647^^73^1159^10^^^^1
+ ;;^UTILITY(U,$J,358.3,27375,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27375,1,2,0)
+ ;;=2^64647
+ ;;^UTILITY(U,$J,358.3,27375,1,3,0)
+ ;;=3^Chemodenervation Trunk,6 or > Muscles   
+ ;;^UTILITY(U,$J,358.3,27376,0)
+ ;;=64615^^73^1159^6^^^^1
+ ;;^UTILITY(U,$J,358.3,27376,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27376,1,2,0)
+ ;;=2^64615
+ ;;^UTILITY(U,$J,358.3,27376,1,3,0)
+ ;;=3^Chemodenervation Muscle for Migraine,Bilateral
+ ;;^UTILITY(U,$J,358.3,27377,0)
+ ;;=64617^^73^1159^5^^^^1
+ ;;^UTILITY(U,$J,358.3,27377,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27377,1,2,0)
+ ;;=2^64617
+ ;;^UTILITY(U,$J,358.3,27377,1,3,0)
+ ;;=3^Chemodenervation Muscle Larynx,Unilateral
+ ;;^UTILITY(U,$J,358.3,27378,0)
+ ;;=62270^^73^1159^22^^^^1
+ ;;^UTILITY(U,$J,358.3,27378,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27378,1,2,0)
+ ;;=2^62270
+ ;;^UTILITY(U,$J,358.3,27378,1,3,0)
+ ;;=3^Spinal Fluid Tap-Diagnostic 
+ ;;^UTILITY(U,$J,358.3,27379,0)
+ ;;=62272^^73^1159^13^^^^1
+ ;;^UTILITY(U,$J,358.3,27379,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27379,1,2,0)
+ ;;=2^62272
+ ;;^UTILITY(U,$J,358.3,27379,1,3,0)
+ ;;=3^Drain Cerebro Spinal Fluid
+ ;;^UTILITY(U,$J,358.3,27380,0)
+ ;;=64400^^73^1159^18^^^^1
+ ;;^UTILITY(U,$J,358.3,27380,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27380,1,2,0)
+ ;;=2^64400
+ ;;^UTILITY(U,$J,358.3,27380,1,3,0)
+ ;;=3^Nerve Block,Trigeminal
+ ;;^UTILITY(U,$J,358.3,27381,0)
+ ;;=78645^^73^1159^1^^^^1
+ ;;^UTILITY(U,$J,358.3,27381,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27381,1,2,0)
+ ;;=2^78645
+ ;;^UTILITY(U,$J,358.3,27381,1,3,0)
+ ;;=3^CSF Shunt Evaluation
+ ;;^UTILITY(U,$J,358.3,27382,0)
+ ;;=86580^^73^1159^23^^^^1
+ ;;^UTILITY(U,$J,358.3,27382,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27382,1,2,0)
+ ;;=2^86580
+ ;;^UTILITY(U,$J,358.3,27382,1,3,0)
+ ;;=3^TB Intradermal Test
+ ;;^UTILITY(U,$J,358.3,27383,0)
+ ;;=64405^^73^1159^17^^^^1
+ ;;^UTILITY(U,$J,358.3,27383,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27383,1,2,0)
+ ;;=2^64405
+ ;;^UTILITY(U,$J,358.3,27383,1,3,0)
+ ;;=3^Nerve Block,Occipital
+ ;;^UTILITY(U,$J,358.3,27384,0)
+ ;;=95991^^73^1159^20^^^^1
+ ;;^UTILITY(U,$J,358.3,27384,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27384,1,2,0)
+ ;;=2^95991
+ ;;^UTILITY(U,$J,358.3,27384,1,3,0)
+ ;;=3^Refill Spinal Implant Pump by MD/NP/PA
+ ;;^UTILITY(U,$J,358.3,27385,0)
+ ;;=95816^^73^1160^3^^^^1
+ ;;^UTILITY(U,$J,358.3,27385,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27385,1,2,0)
+ ;;=2^95816
+ ;;^UTILITY(U,$J,358.3,27385,1,3,0)
+ ;;=3^EEG, Awake and Drowsy
+ ;;^UTILITY(U,$J,358.3,27386,0)
+ ;;=95819^^73^1160^4^^^^1
+ ;;^UTILITY(U,$J,358.3,27386,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27386,1,2,0)
+ ;;=2^95819
+ ;;^UTILITY(U,$J,358.3,27386,1,3,0)
+ ;;=3^EEG, Awake and Asleep
+ ;;^UTILITY(U,$J,358.3,27387,0)
+ ;;=95822^^73^1160^5^^^^1
+ ;;^UTILITY(U,$J,358.3,27387,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27387,1,2,0)
+ ;;=2^95822
+ ;;^UTILITY(U,$J,358.3,27387,1,3,0)
+ ;;=3^EEG, Sleep or Coma only
+ ;;^UTILITY(U,$J,358.3,27388,0)
+ ;;=95827^^73^1160^6^^^^1
+ ;;^UTILITY(U,$J,358.3,27388,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27388,1,2,0)
+ ;;=2^95827
+ ;;^UTILITY(U,$J,358.3,27388,1,3,0)
+ ;;=3^EEG, all night monitor
+ ;;^UTILITY(U,$J,358.3,27389,0)
+ ;;=95812^^73^1160^1^^^^1
+ ;;^UTILITY(U,$J,358.3,27389,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27389,1,2,0)
+ ;;=2^95812
+ ;;^UTILITY(U,$J,358.3,27389,1,3,0)
+ ;;=3^EEG, 41-60 minutes
+ ;;^UTILITY(U,$J,358.3,27390,0)
+ ;;=95813^^73^1160^2^^^^1
+ ;;^UTILITY(U,$J,358.3,27390,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27390,1,2,0)
+ ;;=2^95813
+ ;;^UTILITY(U,$J,358.3,27390,1,3,0)
+ ;;=3^EEG, Over 1 hour
+ ;;^UTILITY(U,$J,358.3,27391,0)
+ ;;=95957^^73^1160^7^^^^1
+ ;;^UTILITY(U,$J,358.3,27391,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27391,1,2,0)
+ ;;=2^95957
+ ;;^UTILITY(U,$J,358.3,27391,1,3,0)
+ ;;=3^EEG, Digital Analysis
+ ;;^UTILITY(U,$J,358.3,27392,0)
+ ;;=95951^^73^1160^10^^^^1
+ ;;^UTILITY(U,$J,358.3,27392,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27392,1,2,0)
+ ;;=2^95951
+ ;;^UTILITY(U,$J,358.3,27392,1,3,0)
+ ;;=3^EEG Monitoring/Videorecord > 16 channel,ea 24hr
+ ;;^UTILITY(U,$J,358.3,27393,0)
+ ;;=95806^^73^1161^9^^^^1
+ ;;^UTILITY(U,$J,358.3,27393,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27393,1,2,0)
+ ;;=2^95806
+ ;;^UTILITY(U,$J,358.3,27393,1,3,0)
+ ;;=3^Sleep Study/Unattended
+ ;;^UTILITY(U,$J,358.3,27394,0)
+ ;;=95807^^73^1161^8^^^^1
+ ;;^UTILITY(U,$J,358.3,27394,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27394,1,2,0)
+ ;;=2^95807
+ ;;^UTILITY(U,$J,358.3,27394,1,3,0)
+ ;;=3^Sleep Study in Hosp/Clinic
+ ;;^UTILITY(U,$J,358.3,27395,0)
+ ;;=95805^^73^1161^3^^^^1
+ ;;^UTILITY(U,$J,358.3,27395,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27395,1,2,0)
+ ;;=2^95805
+ ;;^UTILITY(U,$J,358.3,27395,1,3,0)
+ ;;=3^Multiple Sleep Latency Test
+ ;;^UTILITY(U,$J,358.3,27396,0)
+ ;;=95808^^73^1161^4^^^^1
+ ;;^UTILITY(U,$J,358.3,27396,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27396,1,2,0)
+ ;;=2^95808
+ ;;^UTILITY(U,$J,358.3,27396,1,3,0)
+ ;;=3^Polysomnography,1-3
+ ;;^UTILITY(U,$J,358.3,27397,0)
+ ;;=G8839^^73^1161^7^^^^1
+ ;;^UTILITY(U,$J,358.3,27397,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27397,1,2,0)
+ ;;=2^G8839
+ ;;^UTILITY(U,$J,358.3,27397,1,3,0)
+ ;;=3^Sleep Apnea Assess
+ ;;^UTILITY(U,$J,358.3,27398,0)
+ ;;=92585^^73^1161^2^^^^1
+ ;;^UTILITY(U,$J,358.3,27398,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27398,1,2,0)
+ ;;=2^92585
+ ;;^UTILITY(U,$J,358.3,27398,1,3,0)
+ ;;=3^Auditor Evoke Potent,Comprehensive
+ ;;^UTILITY(U,$J,358.3,27399,0)
+ ;;=95803^^73^1161^1^^^^1
+ ;;^UTILITY(U,$J,358.3,27399,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27399,1,2,0)
+ ;;=2^95803
+ ;;^UTILITY(U,$J,358.3,27399,1,3,0)
+ ;;=3^Actigraphy Testing (72hrs/14 consecutive days)
+ ;;^UTILITY(U,$J,358.3,27400,0)
+ ;;=95810^^73^1161^5^^^^1
+ ;;^UTILITY(U,$J,358.3,27400,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27400,1,2,0)
+ ;;=2^95810
+ ;;^UTILITY(U,$J,358.3,27400,1,3,0)
+ ;;=3^Polysomnography w/ 4+ Parameters         
+ ;;^UTILITY(U,$J,358.3,27401,0)
+ ;;=95811^^73^1161^6^^^^1
+ ;;^UTILITY(U,$J,358.3,27401,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27401,1,2,0)
+ ;;=2^95811
+ ;;^UTILITY(U,$J,358.3,27401,1,3,0)
+ ;;=3^Polysomnography w/ 4+ Parameters w/ CPAP
+ ;;^UTILITY(U,$J,358.3,27402,0)
+ ;;=95860^^73^1162^12^^^^1
+ ;;^UTILITY(U,$J,358.3,27402,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27402,1,2,0)
+ ;;=2^95860
+ ;;^UTILITY(U,$J,358.3,27402,1,3,0)
+ ;;=3^EMG, one extremity
+ ;;^UTILITY(U,$J,358.3,27403,0)
+ ;;=95861^^73^1162^1^^^^1
+ ;;^UTILITY(U,$J,358.3,27403,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27403,1,2,0)
+ ;;=2^95861
+ ;;^UTILITY(U,$J,358.3,27403,1,3,0)
+ ;;=3^EMG, 2 extremities
+ ;;^UTILITY(U,$J,358.3,27404,0)
+ ;;=95863^^73^1162^2^^^^1
+ ;;^UTILITY(U,$J,358.3,27404,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27404,1,2,0)
+ ;;=2^95863
+ ;;^UTILITY(U,$J,358.3,27404,1,3,0)
+ ;;=3^EMG, 3 extremities
+ ;;^UTILITY(U,$J,358.3,27405,0)
+ ;;=95864^^73^1162^3^^^^1
+ ;;^UTILITY(U,$J,358.3,27405,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27405,1,2,0)
+ ;;=2^95864
+ ;;^UTILITY(U,$J,358.3,27405,1,3,0)
+ ;;=3^EMG, 4 extremities
+ ;;^UTILITY(U,$J,358.3,27406,0)
+ ;;=95869^^73^1162^11^^^^1
+ ;;^UTILITY(U,$J,358.3,27406,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27406,1,2,0)
+ ;;=2^95869
+ ;;^UTILITY(U,$J,358.3,27406,1,3,0)
+ ;;=3^EMG, Thoracic Paraspinal Muscles,T-2 to T-11
+ ;;^UTILITY(U,$J,358.3,27407,0)
+ ;;=95867^^73^1162^6^^^^1
+ ;;^UTILITY(U,$J,358.3,27407,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27407,1,2,0)
+ ;;=2^95867
+ ;;^UTILITY(U,$J,358.3,27407,1,3,0)
+ ;;=3^EMG, Cranial Nerve supplied Muscles, unilat
+ ;;^UTILITY(U,$J,358.3,27408,0)
+ ;;=51785^^73^1162^4^^^^1
+ ;;^UTILITY(U,$J,358.3,27408,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,27408,1,2,0)
+ ;;=2^51785

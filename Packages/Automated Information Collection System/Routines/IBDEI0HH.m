@@ -1,124 +1,358 @@
-IBDEI0HH ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0HH ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,8088,1,0)
+ ;;^UTILITY(U,$J,358.3,22147,1,4,0)
+ ;;=4^M71.162
+ ;;^UTILITY(U,$J,358.3,22147,2)
+ ;;=^5013140
+ ;;^UTILITY(U,$J,358.3,22148,0)
+ ;;=M72.0^^58^846^117
+ ;;^UTILITY(U,$J,358.3,22148,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8088,1,3,0)
- ;;=3^Toxic effect of unsp gases, fumes and vapors, acc, init
- ;;^UTILITY(U,$J,358.3,8088,1,4,0)
- ;;=4^T59.91XA
- ;;^UTILITY(U,$J,358.3,8088,2)
- ;;=^5053042
- ;;^UTILITY(U,$J,358.3,8089,0)
- ;;=S41.111A^^33^431^135
- ;;^UTILITY(U,$J,358.3,8089,1,0)
+ ;;^UTILITY(U,$J,358.3,22148,1,3,0)
+ ;;=3^Palmar Fascial Fibromatosis
+ ;;^UTILITY(U,$J,358.3,22148,1,4,0)
+ ;;=4^M72.0
+ ;;^UTILITY(U,$J,358.3,22148,2)
+ ;;=^5013233
+ ;;^UTILITY(U,$J,358.3,22149,0)
+ ;;=M75.111^^58^846^161
+ ;;^UTILITY(U,$J,358.3,22149,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8089,1,3,0)
- ;;=3^Laceration w/o fb of right upper arm, init encntr
- ;;^UTILITY(U,$J,358.3,8089,1,4,0)
- ;;=4^S41.111A
- ;;^UTILITY(U,$J,358.3,8089,2)
- ;;=^5026336
- ;;^UTILITY(U,$J,358.3,8090,0)
- ;;=S41.112A^^33^431^123
- ;;^UTILITY(U,$J,358.3,8090,1,0)
+ ;;^UTILITY(U,$J,358.3,22149,1,3,0)
+ ;;=3^Rotator Cuff Syndrome,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22149,1,4,0)
+ ;;=4^M75.111
+ ;;^UTILITY(U,$J,358.3,22149,2)
+ ;;=^5013245
+ ;;^UTILITY(U,$J,358.3,22150,0)
+ ;;=M75.112^^58^846^160
+ ;;^UTILITY(U,$J,358.3,22150,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8090,1,3,0)
- ;;=3^Laceration w/o fb of left upper arm, init encntr
- ;;^UTILITY(U,$J,358.3,8090,1,4,0)
- ;;=4^S41.112A
- ;;^UTILITY(U,$J,358.3,8090,2)
- ;;=^5026339
- ;;^UTILITY(U,$J,358.3,8091,0)
- ;;=S61.210A^^33^431^128
- ;;^UTILITY(U,$J,358.3,8091,1,0)
+ ;;^UTILITY(U,$J,358.3,22150,1,3,0)
+ ;;=3^Rotator Cuff Syndrome,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22150,1,4,0)
+ ;;=4^M75.112
+ ;;^UTILITY(U,$J,358.3,22150,2)
+ ;;=^5013246
+ ;;^UTILITY(U,$J,358.3,22151,0)
+ ;;=M75.51^^58^846^10
+ ;;^UTILITY(U,$J,358.3,22151,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8091,1,3,0)
- ;;=3^Laceration w/o fb of right indx fngr w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,8091,1,4,0)
- ;;=4^S61.210A
- ;;^UTILITY(U,$J,358.3,8091,2)
- ;;=^5032771
- ;;^UTILITY(U,$J,358.3,8092,0)
- ;;=S61.211A^^33^431^116
- ;;^UTILITY(U,$J,358.3,8092,1,0)
+ ;;^UTILITY(U,$J,358.3,22151,1,3,0)
+ ;;=3^Bursitis of Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22151,1,4,0)
+ ;;=4^M75.51
+ ;;^UTILITY(U,$J,358.3,22151,2)
+ ;;=^5133690
+ ;;^UTILITY(U,$J,358.3,22152,0)
+ ;;=M75.52^^58^846^9
+ ;;^UTILITY(U,$J,358.3,22152,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8092,1,3,0)
- ;;=3^Laceration w/o fb of left indx fngr w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,8092,1,4,0)
- ;;=4^S61.211A
- ;;^UTILITY(U,$J,358.3,8092,2)
- ;;=^5032774
- ;;^UTILITY(U,$J,358.3,8093,0)
- ;;=S61.212A^^33^431^132
- ;;^UTILITY(U,$J,358.3,8093,1,0)
+ ;;^UTILITY(U,$J,358.3,22152,1,3,0)
+ ;;=3^Bursitis of Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22152,1,4,0)
+ ;;=4^M75.52
+ ;;^UTILITY(U,$J,358.3,22152,2)
+ ;;=^5133691
+ ;;^UTILITY(U,$J,358.3,22153,0)
+ ;;=M77.11^^58^846^54
+ ;;^UTILITY(U,$J,358.3,22153,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8093,1,3,0)
- ;;=3^Laceration w/o fb of right mid finger w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,8093,1,4,0)
- ;;=4^S61.212A
- ;;^UTILITY(U,$J,358.3,8093,2)
- ;;=^5032777
- ;;^UTILITY(U,$J,358.3,8094,0)
- ;;=S61.213A^^33^431^120
- ;;^UTILITY(U,$J,358.3,8094,1,0)
+ ;;^UTILITY(U,$J,358.3,22153,1,3,0)
+ ;;=3^Lateral Epicondylitis,Right Elbow
+ ;;^UTILITY(U,$J,358.3,22153,1,4,0)
+ ;;=4^M77.11
+ ;;^UTILITY(U,$J,358.3,22153,2)
+ ;;=^5013304
+ ;;^UTILITY(U,$J,358.3,22154,0)
+ ;;=M77.12^^58^846^53
+ ;;^UTILITY(U,$J,358.3,22154,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8094,1,3,0)
- ;;=3^Laceration w/o fb of left mid finger w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,8094,1,4,0)
- ;;=4^S61.213A
- ;;^UTILITY(U,$J,358.3,8094,2)
- ;;=^5032780
- ;;^UTILITY(U,$J,358.3,8095,0)
- ;;=S61.214A^^33^431^133
- ;;^UTILITY(U,$J,358.3,8095,1,0)
+ ;;^UTILITY(U,$J,358.3,22154,1,3,0)
+ ;;=3^Lateral Epicondylitis,Left Elbow
+ ;;^UTILITY(U,$J,358.3,22154,1,4,0)
+ ;;=4^M77.12
+ ;;^UTILITY(U,$J,358.3,22154,2)
+ ;;=^5013305
+ ;;^UTILITY(U,$J,358.3,22155,0)
+ ;;=M79.1^^58^846^61
+ ;;^UTILITY(U,$J,358.3,22155,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8095,1,3,0)
- ;;=3^Laceration w/o fb of right rng fngr w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,8095,1,4,0)
- ;;=4^S61.214A
- ;;^UTILITY(U,$J,358.3,8095,2)
- ;;=^5032783
- ;;^UTILITY(U,$J,358.3,8096,0)
- ;;=S61.215A^^33^431^121
- ;;^UTILITY(U,$J,358.3,8096,1,0)
+ ;;^UTILITY(U,$J,358.3,22155,1,3,0)
+ ;;=3^Myalgia
+ ;;^UTILITY(U,$J,358.3,22155,1,4,0)
+ ;;=4^M79.1
+ ;;^UTILITY(U,$J,358.3,22155,2)
+ ;;=^5013321
+ ;;^UTILITY(U,$J,358.3,22156,0)
+ ;;=M79.7^^58^846^39
+ ;;^UTILITY(U,$J,358.3,22156,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8096,1,3,0)
- ;;=3^Laceration w/o fb of left rng fngr w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,8096,1,4,0)
- ;;=4^S61.215A
- ;;^UTILITY(U,$J,358.3,8096,2)
- ;;=^5032786
- ;;^UTILITY(U,$J,358.3,8097,0)
- ;;=S61.216A^^33^431^130
- ;;^UTILITY(U,$J,358.3,8097,1,0)
+ ;;^UTILITY(U,$J,358.3,22156,1,3,0)
+ ;;=3^Fibromyalgia
+ ;;^UTILITY(U,$J,358.3,22156,1,4,0)
+ ;;=4^M79.7
+ ;;^UTILITY(U,$J,358.3,22156,2)
+ ;;=^46261
+ ;;^UTILITY(U,$J,358.3,22157,0)
+ ;;=M80.08XA^^58^846^1
+ ;;^UTILITY(U,$J,358.3,22157,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8097,1,3,0)
- ;;=3^Laceration w/o fb of right litttle finger w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,8097,1,4,0)
- ;;=4^S61.216A
- ;;^UTILITY(U,$J,358.3,8097,2)
- ;;=^5032789
- ;;^UTILITY(U,$J,358.3,8098,0)
- ;;=S61.217A^^33^431^118
- ;;^UTILITY(U,$J,358.3,8098,1,0)
+ ;;^UTILITY(U,$J,358.3,22157,1,3,0)
+ ;;=3^Age-Related Osteoporosis w/ Vertebra Fx,Init Encntr
+ ;;^UTILITY(U,$J,358.3,22157,1,4,0)
+ ;;=4^M80.08XA
+ ;;^UTILITY(U,$J,358.3,22157,2)
+ ;;=^5013495
+ ;;^UTILITY(U,$J,358.3,22158,0)
+ ;;=M80.08XD^^58^846^2
+ ;;^UTILITY(U,$J,358.3,22158,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8098,1,3,0)
- ;;=3^Laceration w/o fb of left little finger w/o damage to nail, init
- ;;^UTILITY(U,$J,358.3,8098,1,4,0)
- ;;=4^S61.217A
- ;;^UTILITY(U,$J,358.3,8098,2)
- ;;=^5032792
- ;;^UTILITY(U,$J,358.3,8099,0)
- ;;=S91.311A^^33^431^124
- ;;^UTILITY(U,$J,358.3,8099,1,0)
+ ;;^UTILITY(U,$J,358.3,22158,1,3,0)
+ ;;=3^Age-Related Osteoporosis w/ Vertebra Fx,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,22158,1,4,0)
+ ;;=4^M80.08XD
+ ;;^UTILITY(U,$J,358.3,22158,2)
+ ;;=^5013496
+ ;;^UTILITY(U,$J,358.3,22159,0)
+ ;;=M84.48XA^^58^846^118
+ ;;^UTILITY(U,$J,358.3,22159,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,8099,1,3,0)
- ;;=3^Laceration w/o fb of right foot, init encntr
- ;;^UTILITY(U,$J,358.3,8099,1,4,0)
- ;;=4^S91.311A
- ;;^UTILITY(U,$J,358.3,8099,2)
- ;;=^5044320
- ;;^UTILITY(U,$J,358.3,8100,0)
- ;;=S91.312A^^33^431^112
+ ;;^UTILITY(U,$J,358.3,22159,1,3,0)
+ ;;=3^Pathological Fx,Oth Site,Init Encntr
+ ;;^UTILITY(U,$J,358.3,22159,1,4,0)
+ ;;=4^M84.48XA
+ ;;^UTILITY(U,$J,358.3,22159,2)
+ ;;=^5014016
+ ;;^UTILITY(U,$J,358.3,22160,0)
+ ;;=M84.48XD^^58^846^119
+ ;;^UTILITY(U,$J,358.3,22160,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22160,1,3,0)
+ ;;=3^Pathological Fx,Oth Site,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,22160,1,4,0)
+ ;;=4^M84.48XD
+ ;;^UTILITY(U,$J,358.3,22160,2)
+ ;;=^5014017
+ ;;^UTILITY(U,$J,358.3,22161,0)
+ ;;=M87.011^^58^846^45
+ ;;^UTILITY(U,$J,358.3,22161,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22161,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22161,1,4,0)
+ ;;=4^M87.011
+ ;;^UTILITY(U,$J,358.3,22161,2)
+ ;;=^5014658
+ ;;^UTILITY(U,$J,358.3,22162,0)
+ ;;=M87.012^^58^846^42
+ ;;^UTILITY(U,$J,358.3,22162,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22162,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22162,1,4,0)
+ ;;=4^M87.012
+ ;;^UTILITY(U,$J,358.3,22162,2)
+ ;;=^5014659
+ ;;^UTILITY(U,$J,358.3,22163,0)
+ ;;=M87.050^^58^846^43
+ ;;^UTILITY(U,$J,358.3,22163,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22163,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Pelvis
+ ;;^UTILITY(U,$J,358.3,22163,1,4,0)
+ ;;=4^M87.050
+ ;;^UTILITY(U,$J,358.3,22163,2)
+ ;;=^5014679
+ ;;^UTILITY(U,$J,358.3,22164,0)
+ ;;=M87.051^^58^846^44
+ ;;^UTILITY(U,$J,358.3,22164,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22164,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Right Femur
+ ;;^UTILITY(U,$J,358.3,22164,1,4,0)
+ ;;=4^M87.051
+ ;;^UTILITY(U,$J,358.3,22164,2)
+ ;;=^5014680
+ ;;^UTILITY(U,$J,358.3,22165,0)
+ ;;=M87.052^^58^846^41
+ ;;^UTILITY(U,$J,358.3,22165,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22165,1,3,0)
+ ;;=3^Idiopathic Aseptic Necrosis of Left Femur
+ ;;^UTILITY(U,$J,358.3,22165,1,4,0)
+ ;;=4^M87.052
+ ;;^UTILITY(U,$J,358.3,22165,2)
+ ;;=^5014681
+ ;;^UTILITY(U,$J,358.3,22166,0)
+ ;;=M87.111^^58^846^74
+ ;;^UTILITY(U,$J,358.3,22166,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22166,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22166,1,4,0)
+ ;;=4^M87.111
+ ;;^UTILITY(U,$J,358.3,22166,2)
+ ;;=^5014701
+ ;;^UTILITY(U,$J,358.3,22167,0)
+ ;;=M87.112^^58^846^71
+ ;;^UTILITY(U,$J,358.3,22167,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22167,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22167,1,4,0)
+ ;;=4^M87.112
+ ;;^UTILITY(U,$J,358.3,22167,2)
+ ;;=^5014702
+ ;;^UTILITY(U,$J,358.3,22168,0)
+ ;;=M87.150^^58^846^72
+ ;;^UTILITY(U,$J,358.3,22168,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22168,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Pelvis
+ ;;^UTILITY(U,$J,358.3,22168,1,4,0)
+ ;;=4^M87.150
+ ;;^UTILITY(U,$J,358.3,22168,2)
+ ;;=^5014722
+ ;;^UTILITY(U,$J,358.3,22169,0)
+ ;;=M87.151^^58^846^73
+ ;;^UTILITY(U,$J,358.3,22169,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22169,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Right Femur
+ ;;^UTILITY(U,$J,358.3,22169,1,4,0)
+ ;;=4^M87.151
+ ;;^UTILITY(U,$J,358.3,22169,2)
+ ;;=^5014723
+ ;;^UTILITY(U,$J,358.3,22170,0)
+ ;;=M87.152^^58^846^70
+ ;;^UTILITY(U,$J,358.3,22170,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22170,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Left Femur
+ ;;^UTILITY(U,$J,358.3,22170,1,4,0)
+ ;;=4^M87.152
+ ;;^UTILITY(U,$J,358.3,22170,2)
+ ;;=^5014724
+ ;;^UTILITY(U,$J,358.3,22171,0)
+ ;;=M87.180^^58^846^69
+ ;;^UTILITY(U,$J,358.3,22171,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22171,1,3,0)
+ ;;=3^Osteonecrosis d/t Drugs,Jaw
+ ;;^UTILITY(U,$J,358.3,22171,1,4,0)
+ ;;=4^M87.180
+ ;;^UTILITY(U,$J,358.3,22171,2)
+ ;;=^5014741
+ ;;^UTILITY(U,$J,358.3,22172,0)
+ ;;=M87.311^^58^846^168
+ ;;^UTILITY(U,$J,358.3,22172,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22172,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22172,1,4,0)
+ ;;=4^M87.311
+ ;;^UTILITY(U,$J,358.3,22172,2)
+ ;;=^5014788
+ ;;^UTILITY(U,$J,358.3,22173,0)
+ ;;=M87.312^^58^846^165
+ ;;^UTILITY(U,$J,358.3,22173,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22173,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22173,1,4,0)
+ ;;=4^M87.312
+ ;;^UTILITY(U,$J,358.3,22173,2)
+ ;;=^5014789
+ ;;^UTILITY(U,$J,358.3,22174,0)
+ ;;=M87.350^^58^846^166
+ ;;^UTILITY(U,$J,358.3,22174,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22174,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Pelvis
+ ;;^UTILITY(U,$J,358.3,22174,1,4,0)
+ ;;=4^M87.350
+ ;;^UTILITY(U,$J,358.3,22174,2)
+ ;;=^5014809
+ ;;^UTILITY(U,$J,358.3,22175,0)
+ ;;=M87.351^^58^846^167
+ ;;^UTILITY(U,$J,358.3,22175,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22175,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Right Femur
+ ;;^UTILITY(U,$J,358.3,22175,1,4,0)
+ ;;=4^M87.351
+ ;;^UTILITY(U,$J,358.3,22175,2)
+ ;;=^5014810
+ ;;^UTILITY(U,$J,358.3,22176,0)
+ ;;=M87.352^^58^846^164
+ ;;^UTILITY(U,$J,358.3,22176,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22176,1,3,0)
+ ;;=3^Secondary Osteonecrosis,Left Femur
+ ;;^UTILITY(U,$J,358.3,22176,1,4,0)
+ ;;=4^M87.352
+ ;;^UTILITY(U,$J,358.3,22176,2)
+ ;;=^5014811
+ ;;^UTILITY(U,$J,358.3,22177,0)
+ ;;=M87.811^^58^846^79
+ ;;^UTILITY(U,$J,358.3,22177,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22177,1,3,0)
+ ;;=3^Osteonecrosis,Right Shoulder
+ ;;^UTILITY(U,$J,358.3,22177,1,4,0)
+ ;;=4^M87.811
+ ;;^UTILITY(U,$J,358.3,22177,2)
+ ;;=^5014831
+ ;;^UTILITY(U,$J,358.3,22178,0)
+ ;;=M87.812^^58^846^76
+ ;;^UTILITY(U,$J,358.3,22178,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22178,1,3,0)
+ ;;=3^Osteonecrosis,Left Shoulder
+ ;;^UTILITY(U,$J,358.3,22178,1,4,0)
+ ;;=4^M87.812
+ ;;^UTILITY(U,$J,358.3,22178,2)
+ ;;=^5014832
+ ;;^UTILITY(U,$J,358.3,22179,0)
+ ;;=M87.850^^58^846^77
+ ;;^UTILITY(U,$J,358.3,22179,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22179,1,3,0)
+ ;;=3^Osteonecrosis,Pelvis
+ ;;^UTILITY(U,$J,358.3,22179,1,4,0)
+ ;;=4^M87.850
+ ;;^UTILITY(U,$J,358.3,22179,2)
+ ;;=^5014852
+ ;;^UTILITY(U,$J,358.3,22180,0)
+ ;;=M87.851^^58^846^78
+ ;;^UTILITY(U,$J,358.3,22180,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22180,1,3,0)
+ ;;=3^Osteonecrosis,Right Femur
+ ;;^UTILITY(U,$J,358.3,22180,1,4,0)
+ ;;=4^M87.851
+ ;;^UTILITY(U,$J,358.3,22180,2)
+ ;;=^5014853
+ ;;^UTILITY(U,$J,358.3,22181,0)
+ ;;=M87.852^^58^846^75
+ ;;^UTILITY(U,$J,358.3,22181,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22181,1,3,0)
+ ;;=3^Osteonecrosis,Left Femur
+ ;;^UTILITY(U,$J,358.3,22181,1,4,0)
+ ;;=4^M87.852
+ ;;^UTILITY(U,$J,358.3,22181,2)
+ ;;=^5014854
+ ;;^UTILITY(U,$J,358.3,22182,0)
+ ;;=M88.0^^58^846^66
+ ;;^UTILITY(U,$J,358.3,22182,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,22182,1,3,0)
+ ;;=3^Osteitis Deformans of Skull
+ ;;^UTILITY(U,$J,358.3,22182,1,4,0)
+ ;;=4^M88.0
+ ;;^UTILITY(U,$J,358.3,22182,2)
+ ;;=^5014874

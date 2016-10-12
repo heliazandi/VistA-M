@@ -1,128 +1,356 @@
-IBDEI0U1 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0U1 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14083,1,0)
+ ;;^UTILITY(U,$J,358.3,39503,1,2,0)
+ ;;=2^G8980
+ ;;^UTILITY(U,$J,358.3,39503,1,3,0)
+ ;;=3^Disch Status,D/E
+ ;;^UTILITY(U,$J,358.3,39504,0)
+ ;;=G9174^^111^1646^1^^^^1
+ ;;^UTILITY(U,$J,358.3,39504,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39504,1,2,0)
+ ;;=2^G9174
+ ;;^UTILITY(U,$J,358.3,39504,1,3,0)
+ ;;=3^Speech/Lang Path Lmt,Curr,Outset,Intrv
+ ;;^UTILITY(U,$J,358.3,39505,0)
+ ;;=G9175^^111^1646^2^^^^1
+ ;;^UTILITY(U,$J,358.3,39505,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39505,1,2,0)
+ ;;=2^G9175
+ ;;^UTILITY(U,$J,358.3,39505,1,3,0)
+ ;;=3^Proj Status,Outset,Intrv,D/E
+ ;;^UTILITY(U,$J,358.3,39506,0)
+ ;;=G9176^^111^1646^3^^^^1
+ ;;^UTILITY(U,$J,358.3,39506,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39506,1,2,0)
+ ;;=2^G9176
+ ;;^UTILITY(U,$J,358.3,39506,1,3,0)
+ ;;=3^Disch Status,D/E
+ ;;^UTILITY(U,$J,358.3,39507,0)
+ ;;=G8987^^111^1647^1^^^^1
+ ;;^UTILITY(U,$J,358.3,39507,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39507,1,2,0)
+ ;;=2^G8987
+ ;;^UTILITY(U,$J,358.3,39507,1,3,0)
+ ;;=3^Self-Care Fx Lmt,Curr,Outset,Intrv
+ ;;^UTILITY(U,$J,358.3,39508,0)
+ ;;=G8988^^111^1647^2^^^^1
+ ;;^UTILITY(U,$J,358.3,39508,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39508,1,2,0)
+ ;;=2^G8988
+ ;;^UTILITY(U,$J,358.3,39508,1,3,0)
+ ;;=3^Proj Status,Outset,Intrv,D/E
+ ;;^UTILITY(U,$J,358.3,39509,0)
+ ;;=G8989^^111^1647^3^^^^1
+ ;;^UTILITY(U,$J,358.3,39509,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39509,1,2,0)
+ ;;=2^G8989
+ ;;^UTILITY(U,$J,358.3,39509,1,3,0)
+ ;;=3^Disch Status,D/E
+ ;;^UTILITY(U,$J,358.3,39510,0)
+ ;;=G8999^^111^1648^1^^^^1
+ ;;^UTILITY(U,$J,358.3,39510,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39510,1,2,0)
+ ;;=2^G8999
+ ;;^UTILITY(U,$J,358.3,39510,1,3,0)
+ ;;=3^Mtr Spch Lmt,Curr,Outset,Intrv
+ ;;^UTILITY(U,$J,358.3,39511,0)
+ ;;=G9162^^111^1648^2^^^^1
+ ;;^UTILITY(U,$J,358.3,39511,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39511,1,2,0)
+ ;;=2^G9162
+ ;;^UTILITY(U,$J,358.3,39511,1,3,0)
+ ;;=3^Spkn Lang Lmt,Curr,Outset,Intrv
+ ;;^UTILITY(U,$J,358.3,39512,0)
+ ;;=G9163^^111^1648^3^^^^1
+ ;;^UTILITY(U,$J,358.3,39512,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39512,1,2,0)
+ ;;=2^G9163
+ ;;^UTILITY(U,$J,358.3,39512,1,3,0)
+ ;;=3^Proj Status,Outset,Intrv,D/E
+ ;;^UTILITY(U,$J,358.3,39513,0)
+ ;;=G9164^^111^1648^4^^^^1
+ ;;^UTILITY(U,$J,358.3,39513,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39513,1,2,0)
+ ;;=2^G9164
+ ;;^UTILITY(U,$J,358.3,39513,1,3,0)
+ ;;=3^Disch Status,D/E
+ ;;^UTILITY(U,$J,358.3,39514,0)
+ ;;=G9171^^111^1649^1^^^^1
+ ;;^UTILITY(U,$J,358.3,39514,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39514,1,2,0)
+ ;;=2^G9171
+ ;;^UTILITY(U,$J,358.3,39514,1,3,0)
+ ;;=3^Voice Fx Lmt,Curr,Outset,Intrv
+ ;;^UTILITY(U,$J,358.3,39515,0)
+ ;;=G9172^^111^1649^2^^^^1
+ ;;^UTILITY(U,$J,358.3,39515,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39515,1,2,0)
+ ;;=2^G9172
+ ;;^UTILITY(U,$J,358.3,39515,1,3,0)
+ ;;=3^Proj Status,Outset,Intrv,D/E
+ ;;^UTILITY(U,$J,358.3,39516,0)
+ ;;=G9173^^111^1649^3^^^^1
+ ;;^UTILITY(U,$J,358.3,39516,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39516,1,2,0)
+ ;;=2^G9173
+ ;;^UTILITY(U,$J,358.3,39516,1,3,0)
+ ;;=3^Disch Status,D/E
+ ;;^UTILITY(U,$J,358.3,39517,0)
+ ;;=G9159^^111^1650^1^^^^1
+ ;;^UTILITY(U,$J,358.3,39517,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39517,1,2,0)
+ ;;=2^G9159
+ ;;^UTILITY(U,$J,358.3,39517,1,3,0)
+ ;;=3^Spkn Lang Cmp Lmt,Curr,Outset,Intrv
+ ;;^UTILITY(U,$J,358.3,39518,0)
+ ;;=G9160^^111^1650^2^^^^1
+ ;;^UTILITY(U,$J,358.3,39518,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39518,1,2,0)
+ ;;=2^G9160
+ ;;^UTILITY(U,$J,358.3,39518,1,3,0)
+ ;;=3^Proj Status,Outset,Intrv,D/E
+ ;;^UTILITY(U,$J,358.3,39519,0)
+ ;;=G9161^^111^1650^3^^^^1
+ ;;^UTILITY(U,$J,358.3,39519,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39519,1,2,0)
+ ;;=2^G9161
+ ;;^UTILITY(U,$J,358.3,39519,1,3,0)
+ ;;=3^Disch Status,D/E
+ ;;^UTILITY(U,$J,358.3,39520,0)
+ ;;=G8996^^111^1651^1^^^^1
+ ;;^UTILITY(U,$J,358.3,39520,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39520,1,2,0)
+ ;;=2^G8996
+ ;;^UTILITY(U,$J,358.3,39520,1,3,0)
+ ;;=3^Swallow Lmt,Curr,Outset,Intrv
+ ;;^UTILITY(U,$J,358.3,39521,0)
+ ;;=G8997^^111^1651^2^^^^1
+ ;;^UTILITY(U,$J,358.3,39521,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39521,1,2,0)
+ ;;=2^G8997
+ ;;^UTILITY(U,$J,358.3,39521,1,3,0)
+ ;;=3^Proj Status,Outset,Intrv,D/E
+ ;;^UTILITY(U,$J,358.3,39522,0)
+ ;;=G8998^^111^1651^3^^^^1
+ ;;^UTILITY(U,$J,358.3,39522,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39522,1,2,0)
+ ;;=2^G8998
+ ;;^UTILITY(U,$J,358.3,39522,1,3,0)
+ ;;=3^Disch Status,D/E
+ ;;^UTILITY(U,$J,358.3,39523,0)
+ ;;=G9171^^111^1652^1^^^^1
+ ;;^UTILITY(U,$J,358.3,39523,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39523,1,2,0)
+ ;;=2^G9171
+ ;;^UTILITY(U,$J,358.3,39523,1,3,0)
+ ;;=3^Voice Fx Lmt,Curr,Outset,Intrv
+ ;;^UTILITY(U,$J,358.3,39524,0)
+ ;;=G9172^^111^1652^2^^^^1
+ ;;^UTILITY(U,$J,358.3,39524,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39524,1,2,0)
+ ;;=2^G9172
+ ;;^UTILITY(U,$J,358.3,39524,1,3,0)
+ ;;=3^Proj Status,Outset,Intrv,D/E
+ ;;^UTILITY(U,$J,358.3,39525,0)
+ ;;=G9173^^111^1652^3^^^^1
+ ;;^UTILITY(U,$J,358.3,39525,1,0)
+ ;;=^358.31IA^3^2
+ ;;^UTILITY(U,$J,358.3,39525,1,2,0)
+ ;;=2^G9173
+ ;;^UTILITY(U,$J,358.3,39525,1,3,0)
+ ;;=3^Disch Status,D/E
+ ;;^UTILITY(U,$J,358.3,39526,0)
+ ;;=F81.9^^112^1653^1
+ ;;^UTILITY(U,$J,358.3,39526,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14083,1,3,0)
- ;;=3^Migraine Intractable w/o Status Migrainosus,Other
- ;;^UTILITY(U,$J,358.3,14083,1,4,0)
- ;;=4^G43.819
- ;;^UTILITY(U,$J,358.3,14083,2)
- ;;=^5003903
- ;;^UTILITY(U,$J,358.3,14084,0)
- ;;=G43.909^^53^600^27
- ;;^UTILITY(U,$J,358.3,14084,1,0)
+ ;;^UTILITY(U,$J,358.3,39526,1,3,0)
+ ;;=3^Developmental d/o,Scholastic Skills,Unspec
+ ;;^UTILITY(U,$J,358.3,39526,1,4,0)
+ ;;=4^F81.9
+ ;;^UTILITY(U,$J,358.3,39526,2)
+ ;;=^5003682
+ ;;^UTILITY(U,$J,358.3,39527,0)
+ ;;=F81.81^^112^1653^11
+ ;;^UTILITY(U,$J,358.3,39527,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14084,1,3,0)
- ;;=3^Migraine Not Intractable w/o Status Migrainosus,Unspec
- ;;^UTILITY(U,$J,358.3,14084,1,4,0)
- ;;=4^G43.909
- ;;^UTILITY(U,$J,358.3,14084,2)
- ;;=^5003909
- ;;^UTILITY(U,$J,358.3,14085,0)
- ;;=G43.919^^53^600^26
- ;;^UTILITY(U,$J,358.3,14085,1,0)
+ ;;^UTILITY(U,$J,358.3,39527,1,3,0)
+ ;;=3^Written Expression Disorder
+ ;;^UTILITY(U,$J,358.3,39527,1,4,0)
+ ;;=4^F81.81
+ ;;^UTILITY(U,$J,358.3,39527,2)
+ ;;=^5003680
+ ;;^UTILITY(U,$J,358.3,39528,0)
+ ;;=F80.1^^112^1653^2
+ ;;^UTILITY(U,$J,358.3,39528,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14085,1,3,0)
- ;;=3^Migraine Intractable w/o Status Migrainosus,Unspec
- ;;^UTILITY(U,$J,358.3,14085,1,4,0)
- ;;=4^G43.919
- ;;^UTILITY(U,$J,358.3,14085,2)
- ;;=^5003911
- ;;^UTILITY(U,$J,358.3,14086,0)
- ;;=G51.0^^53^600^5
- ;;^UTILITY(U,$J,358.3,14086,1,0)
+ ;;^UTILITY(U,$J,358.3,39528,1,3,0)
+ ;;=3^Expressive language disorder
+ ;;^UTILITY(U,$J,358.3,39528,1,4,0)
+ ;;=4^F80.1
+ ;;^UTILITY(U,$J,358.3,39528,2)
+ ;;=^331958
+ ;;^UTILITY(U,$J,358.3,39529,0)
+ ;;=F81.2^^112^1653^3
+ ;;^UTILITY(U,$J,358.3,39529,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14086,1,3,0)
- ;;=3^Bell's Palsy
- ;;^UTILITY(U,$J,358.3,14086,1,4,0)
- ;;=4^G51.0
- ;;^UTILITY(U,$J,358.3,14086,2)
- ;;=^13238
- ;;^UTILITY(U,$J,358.3,14087,0)
- ;;=G57.10^^53^600^22
- ;;^UTILITY(U,$J,358.3,14087,1,0)
+ ;;^UTILITY(U,$J,358.3,39529,1,3,0)
+ ;;=3^Mathematics disorder
+ ;;^UTILITY(U,$J,358.3,39529,1,4,0)
+ ;;=4^F81.2
+ ;;^UTILITY(U,$J,358.3,39529,2)
+ ;;=^331957
+ ;;^UTILITY(U,$J,358.3,39530,0)
+ ;;=F80.2^^112^1653^4
+ ;;^UTILITY(U,$J,358.3,39530,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14087,1,3,0)
- ;;=3^Meralgia Paresthetica Lower Limb,Unspec
- ;;^UTILITY(U,$J,358.3,14087,1,4,0)
- ;;=4^G57.10
- ;;^UTILITY(U,$J,358.3,14087,2)
- ;;=^5004041
- ;;^UTILITY(U,$J,358.3,14088,0)
- ;;=G57.12^^53^600^23
- ;;^UTILITY(U,$J,358.3,14088,1,0)
+ ;;^UTILITY(U,$J,358.3,39530,1,3,0)
+ ;;=3^Mixed Recept-Express Lang d/o
+ ;;^UTILITY(U,$J,358.3,39530,1,4,0)
+ ;;=4^F80.2
+ ;;^UTILITY(U,$J,358.3,39530,2)
+ ;;=^331959
+ ;;^UTILITY(U,$J,358.3,39531,0)
+ ;;=F88.^^112^1653^8
+ ;;^UTILITY(U,$J,358.3,39531,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14088,1,3,0)
- ;;=3^Meralgia Paresthetica,Left Lower Limb
- ;;^UTILITY(U,$J,358.3,14088,1,4,0)
- ;;=4^G57.12
- ;;^UTILITY(U,$J,358.3,14088,2)
- ;;=^5004043
- ;;^UTILITY(U,$J,358.3,14089,0)
- ;;=G57.11^^53^600^24
- ;;^UTILITY(U,$J,358.3,14089,1,0)
+ ;;^UTILITY(U,$J,358.3,39531,1,3,0)
+ ;;=3^Psychological Development Disorder NEC
+ ;;^UTILITY(U,$J,358.3,39531,1,4,0)
+ ;;=4^F88.
+ ;;^UTILITY(U,$J,358.3,39531,2)
+ ;;=^5003690
+ ;;^UTILITY(U,$J,358.3,39532,0)
+ ;;=F07.0^^112^1653^6
+ ;;^UTILITY(U,$J,358.3,39532,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14089,1,3,0)
- ;;=3^Meralgia Paresthetica,Right Lower Limb
- ;;^UTILITY(U,$J,358.3,14089,1,4,0)
- ;;=4^G57.11
- ;;^UTILITY(U,$J,358.3,14089,2)
- ;;=^5004042
- ;;^UTILITY(U,$J,358.3,14090,0)
- ;;=G60.8^^53^600^32
- ;;^UTILITY(U,$J,358.3,14090,1,0)
+ ;;^UTILITY(U,$J,358.3,39532,1,3,0)
+ ;;=3^Personality Chnge d/t Knwn Physiol Cond
+ ;;^UTILITY(U,$J,358.3,39532,1,4,0)
+ ;;=4^F07.0
+ ;;^UTILITY(U,$J,358.3,39532,2)
+ ;;=^5003063
+ ;;^UTILITY(U,$J,358.3,39533,0)
+ ;;=F80.0^^112^1653^7
+ ;;^UTILITY(U,$J,358.3,39533,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14090,1,3,0)
- ;;=3^Neuropathies,Oth Hereditary and Idiopathic
- ;;^UTILITY(U,$J,358.3,14090,1,4,0)
- ;;=4^G60.8
- ;;^UTILITY(U,$J,358.3,14090,2)
- ;;=^5004070
- ;;^UTILITY(U,$J,358.3,14091,0)
- ;;=G60.9^^53^600^33
- ;;^UTILITY(U,$J,358.3,14091,1,0)
+ ;;^UTILITY(U,$J,358.3,39533,1,3,0)
+ ;;=3^Phonological disorder
+ ;;^UTILITY(U,$J,358.3,39533,1,4,0)
+ ;;=4^F80.0
+ ;;^UTILITY(U,$J,358.3,39533,2)
+ ;;=^5003674
+ ;;^UTILITY(U,$J,358.3,39534,0)
+ ;;=F82.^^112^1653^5
+ ;;^UTILITY(U,$J,358.3,39534,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14091,1,3,0)
- ;;=3^Neuropathy,Hereditary and Idiopathic Unspec
- ;;^UTILITY(U,$J,358.3,14091,1,4,0)
- ;;=4^G60.9
- ;;^UTILITY(U,$J,358.3,14091,2)
- ;;=^5004071
- ;;^UTILITY(U,$J,358.3,14092,0)
- ;;=I69.959^^53^600^18
- ;;^UTILITY(U,$J,358.3,14092,1,0)
+ ;;^UTILITY(U,$J,358.3,39534,1,3,0)
+ ;;=3^Motor Function Devel d/o NEC
+ ;;^UTILITY(U,$J,358.3,39534,1,4,0)
+ ;;=4^F82.
+ ;;^UTILITY(U,$J,358.3,39534,2)
+ ;;=^5003683
+ ;;^UTILITY(U,$J,358.3,39535,0)
+ ;;=F81.0^^112^1653^9
+ ;;^UTILITY(U,$J,358.3,39535,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14092,1,3,0)
- ;;=3^Hemplg/Hemprs d/t Cerebvasc Diz Aff Unspec Side
- ;;^UTILITY(U,$J,358.3,14092,1,4,0)
- ;;=4^I69.959
- ;;^UTILITY(U,$J,358.3,14092,2)
- ;;=^5007563
- ;;^UTILITY(U,$J,358.3,14093,0)
- ;;=I69.359^^53^600^19
- ;;^UTILITY(U,$J,358.3,14093,1,0)
+ ;;^UTILITY(U,$J,358.3,39535,1,3,0)
+ ;;=3^Reading Disorder NEC
+ ;;^UTILITY(U,$J,358.3,39535,1,4,0)
+ ;;=4^F81.0
+ ;;^UTILITY(U,$J,358.3,39535,2)
+ ;;=^5003679
+ ;;^UTILITY(U,$J,358.3,39536,0)
+ ;;=F80.4^^112^1653^10
+ ;;^UTILITY(U,$J,358.3,39536,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14093,1,3,0)
- ;;=3^Hemplg/Hemprs d/t Cerebvasc Infrc Aff Unspec Side
- ;;^UTILITY(U,$J,358.3,14093,1,4,0)
- ;;=4^I69.359
- ;;^UTILITY(U,$J,358.3,14093,2)
- ;;=^5007508
- ;;^UTILITY(U,$J,358.3,14094,0)
- ;;=S14.109S^^53^600^39
- ;;^UTILITY(U,$J,358.3,14094,1,0)
+ ;;^UTILITY(U,$J,358.3,39536,1,3,0)
+ ;;=3^Speech/Lang Devel Delay d/t Hearing Loss
+ ;;^UTILITY(U,$J,358.3,39536,1,4,0)
+ ;;=4^F80.4
+ ;;^UTILITY(U,$J,358.3,39536,2)
+ ;;=^5003675
+ ;;^UTILITY(U,$J,358.3,39537,0)
+ ;;=I69.020^^112^1654^4
+ ;;^UTILITY(U,$J,358.3,39537,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14094,1,3,0)
- ;;=3^Sequela of Unspec Injury to Cervical Spinal Cord
- ;;^UTILITY(U,$J,358.3,14094,1,4,0)
- ;;=4^S14.109S
- ;;^UTILITY(U,$J,358.3,14094,2)
- ;;=^5134243
- ;;^UTILITY(U,$J,358.3,14095,0)
- ;;=S34.109S^^53^600^40
- ;;^UTILITY(U,$J,358.3,14095,1,0)
+ ;;^UTILITY(U,$J,358.3,39537,1,3,0)
+ ;;=3^Aphasia s/p Nontraum Subarach Hem
+ ;;^UTILITY(U,$J,358.3,39537,1,4,0)
+ ;;=4^I69.020
+ ;;^UTILITY(U,$J,358.3,39537,2)
+ ;;=^5007395
+ ;;^UTILITY(U,$J,358.3,39538,0)
+ ;;=I69.320^^112^1654^2
+ ;;^UTILITY(U,$J,358.3,39538,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14095,1,3,0)
- ;;=3^Sequela of Unspec Injury to Lumbar Spinal Cord
+ ;;^UTILITY(U,$J,358.3,39538,1,3,0)
+ ;;=3^Aphasia s/p Cereb Infarc
+ ;;^UTILITY(U,$J,358.3,39538,1,4,0)
+ ;;=4^I69.320
+ ;;^UTILITY(U,$J,358.3,39538,2)
+ ;;=^5007491
+ ;;^UTILITY(U,$J,358.3,39539,0)
+ ;;=I69.120^^112^1654^3
+ ;;^UTILITY(U,$J,358.3,39539,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39539,1,3,0)
+ ;;=3^Aphasia s/p Nontraum Intracereb Hem
+ ;;^UTILITY(U,$J,358.3,39539,1,4,0)
+ ;;=4^I69.120
+ ;;^UTILITY(U,$J,358.3,39539,2)
+ ;;=^5007427
+ ;;^UTILITY(U,$J,358.3,39540,0)
+ ;;=I69.820^^112^1654^5
+ ;;^UTILITY(U,$J,358.3,39540,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39540,1,3,0)
+ ;;=3^Aphasia s/p Oth Cerebrovasc Dis
+ ;;^UTILITY(U,$J,358.3,39540,1,4,0)
+ ;;=4^I69.820
+ ;;^UTILITY(U,$J,358.3,39540,2)
+ ;;=^5007522
+ ;;^UTILITY(U,$J,358.3,39541,0)
+ ;;=I69.220^^112^1654^6
+ ;;^UTILITY(U,$J,358.3,39541,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39541,1,3,0)
+ ;;=3^Aphasia s/p Oth Nontraum Intracran Hem
+ ;;^UTILITY(U,$J,358.3,39541,1,4,0)
+ ;;=4^I69.220
+ ;;^UTILITY(U,$J,358.3,39541,2)
+ ;;=^5007459
+ ;;^UTILITY(U,$J,358.3,39542,0)
+ ;;=I69.920^^112^1654^1
+ ;;^UTILITY(U,$J,358.3,39542,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,39542,1,3,0)
+ ;;=3^Aphasia s/p Cerbrovasc Dis,Unspec
+ ;;^UTILITY(U,$J,358.3,39542,1,4,0)
+ ;;=4^I69.920
+ ;;^UTILITY(U,$J,358.3,39542,2)
+ ;;=^5007553
+ ;;^UTILITY(U,$J,358.3,39543,0)
+ ;;=I69.390^^112^1654^7

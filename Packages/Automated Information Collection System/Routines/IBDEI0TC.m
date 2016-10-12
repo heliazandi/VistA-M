@@ -1,134 +1,350 @@
-IBDEI0TC ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0TC ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,13758,1,4,0)
- ;;=4^J10.00
- ;;^UTILITY(U,$J,358.3,13758,2)
- ;;=^5008148
- ;;^UTILITY(U,$J,358.3,13759,0)
- ;;=J11.08^^53^595^43
- ;;^UTILITY(U,$J,358.3,13759,1,0)
+ ;;^UTILITY(U,$J,358.3,38605,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13759,1,3,0)
- ;;=3^Influenza d/t Unident Flu Virus w/ Spec Pneumonia
- ;;^UTILITY(U,$J,358.3,13759,1,4,0)
- ;;=4^J11.08
- ;;^UTILITY(U,$J,358.3,13759,2)
- ;;=^5008157
- ;;^UTILITY(U,$J,358.3,13760,0)
- ;;=J10.1^^53^595^42
- ;;^UTILITY(U,$J,358.3,13760,1,0)
+ ;;^UTILITY(U,$J,358.3,38605,1,3,0)
+ ;;=3^Nondisp fx of left radial styloid process, sequela
+ ;;^UTILITY(U,$J,358.3,38605,1,4,0)
+ ;;=4^S52.515S
+ ;;^UTILITY(U,$J,358.3,38605,2)
+ ;;=^5030698
+ ;;^UTILITY(U,$J,358.3,38606,0)
+ ;;=S52.511S^^106^1600^45
+ ;;^UTILITY(U,$J,358.3,38606,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13760,1,3,0)
- ;;=3^Influenza d/t Oth ID'd Influenza Virus w/ Oth Resp Manifest
- ;;^UTILITY(U,$J,358.3,13760,1,4,0)
- ;;=4^J10.1
- ;;^UTILITY(U,$J,358.3,13760,2)
- ;;=^5008151
- ;;^UTILITY(U,$J,358.3,13761,0)
- ;;=J10.01^^53^595^39
- ;;^UTILITY(U,$J,358.3,13761,1,0)
+ ;;^UTILITY(U,$J,358.3,38606,1,3,0)
+ ;;=3^Disp fx of right radial styloid process, sequela 
+ ;;^UTILITY(U,$J,358.3,38606,1,4,0)
+ ;;=4^S52.511S
+ ;;^UTILITY(U,$J,358.3,38606,2)
+ ;;=^5030634
+ ;;^UTILITY(U,$J,358.3,38607,0)
+ ;;=S52.514S^^106^1600^109
+ ;;^UTILITY(U,$J,358.3,38607,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13761,1,3,0)
- ;;=3^Influenza d/t Oth ID'd Flu Virus w/ Same Oth ID'd Flu Virus Pneumonia
- ;;^UTILITY(U,$J,358.3,13761,1,4,0)
- ;;=4^J10.01
- ;;^UTILITY(U,$J,358.3,13761,2)
- ;;=^5008149
- ;;^UTILITY(U,$J,358.3,13762,0)
- ;;=J11.1^^53^595^44
- ;;^UTILITY(U,$J,358.3,13762,1,0)
+ ;;^UTILITY(U,$J,358.3,38607,1,3,0)
+ ;;=3^Nondisp fx of right radial styloid process, sequela
+ ;;^UTILITY(U,$J,358.3,38607,1,4,0)
+ ;;=4^S52.514S
+ ;;^UTILITY(U,$J,358.3,38607,2)
+ ;;=^5030682
+ ;;^UTILITY(U,$J,358.3,38608,0)
+ ;;=S22.22XS^^106^1601^5
+ ;;^UTILITY(U,$J,358.3,38608,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13762,1,3,0)
- ;;=3^Influenza d/t Unident Influenza Virus w/ Oth Resp Manifest
- ;;^UTILITY(U,$J,358.3,13762,1,4,0)
- ;;=4^J11.1
- ;;^UTILITY(U,$J,358.3,13762,2)
- ;;=^5008158
- ;;^UTILITY(U,$J,358.3,13763,0)
- ;;=N12.^^53^595^85
- ;;^UTILITY(U,$J,358.3,13763,1,0)
+ ;;^UTILITY(U,$J,358.3,38608,1,3,0)
+ ;;=3^Fracture of body of sternum, sequela
+ ;;^UTILITY(U,$J,358.3,38608,1,4,0)
+ ;;=4^S22.22XS
+ ;;^UTILITY(U,$J,358.3,38608,2)
+ ;;=^5023092
+ ;;^UTILITY(U,$J,358.3,38609,0)
+ ;;=S22.21XS^^106^1601^8
+ ;;^UTILITY(U,$J,358.3,38609,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13763,1,3,0)
- ;;=3^Tubulo-Interstitial Nephritis
- ;;^UTILITY(U,$J,358.3,13763,1,4,0)
- ;;=4^N12.
- ;;^UTILITY(U,$J,358.3,13763,2)
- ;;=^5015575
- ;;^UTILITY(U,$J,358.3,13764,0)
- ;;=N11.9^^53^595^86
- ;;^UTILITY(U,$J,358.3,13764,1,0)
+ ;;^UTILITY(U,$J,358.3,38609,1,3,0)
+ ;;=3^Fracture of manubrium, sequela
+ ;;^UTILITY(U,$J,358.3,38609,1,4,0)
+ ;;=4^S22.21XS
+ ;;^UTILITY(U,$J,358.3,38609,2)
+ ;;=^5023086
+ ;;^UTILITY(U,$J,358.3,38610,0)
+ ;;=S22.32XS^^106^1601^10
+ ;;^UTILITY(U,$J,358.3,38610,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13764,1,3,0)
- ;;=3^Tubulo-Interstitial Nephritis,Chronic
- ;;^UTILITY(U,$J,358.3,13764,1,4,0)
- ;;=4^N11.9
- ;;^UTILITY(U,$J,358.3,13764,2)
- ;;=^5015574
- ;;^UTILITY(U,$J,358.3,13765,0)
- ;;=N13.6^^53^595^73
- ;;^UTILITY(U,$J,358.3,13765,1,0)
+ ;;^UTILITY(U,$J,358.3,38610,1,3,0)
+ ;;=3^Fracture of one rib, left side, sequela
+ ;;^UTILITY(U,$J,358.3,38610,1,4,0)
+ ;;=4^S22.32XS
+ ;;^UTILITY(U,$J,358.3,38610,2)
+ ;;=^5023116
+ ;;^UTILITY(U,$J,358.3,38611,0)
+ ;;=S22.31XS^^106^1601^11
+ ;;^UTILITY(U,$J,358.3,38611,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13765,1,3,0)
- ;;=3^Pyonephrosis
- ;;^UTILITY(U,$J,358.3,13765,1,4,0)
- ;;=4^N13.6
- ;;^UTILITY(U,$J,358.3,13765,2)
- ;;=^101552
- ;;^UTILITY(U,$J,358.3,13766,0)
- ;;=N30.91^^53^595^19
- ;;^UTILITY(U,$J,358.3,13766,1,0)
+ ;;^UTILITY(U,$J,358.3,38611,1,3,0)
+ ;;=3^Fracture of one rib, right side, sequela
+ ;;^UTILITY(U,$J,358.3,38611,1,4,0)
+ ;;=4^S22.31XS
+ ;;^UTILITY(U,$J,358.3,38611,2)
+ ;;=^5023110
+ ;;^UTILITY(U,$J,358.3,38612,0)
+ ;;=S22.24XS^^106^1601^16
+ ;;^UTILITY(U,$J,358.3,38612,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13766,1,3,0)
- ;;=3^Cystitis w/ Hematuria,Unspec
- ;;^UTILITY(U,$J,358.3,13766,1,4,0)
- ;;=4^N30.91
- ;;^UTILITY(U,$J,358.3,13766,2)
- ;;=^5015643
- ;;^UTILITY(U,$J,358.3,13767,0)
- ;;=N30.90^^53^595^20
- ;;^UTILITY(U,$J,358.3,13767,1,0)
+ ;;^UTILITY(U,$J,358.3,38612,1,3,0)
+ ;;=3^Fracture of xiphoid process, sequela
+ ;;^UTILITY(U,$J,358.3,38612,1,4,0)
+ ;;=4^S22.24XS
+ ;;^UTILITY(U,$J,358.3,38612,2)
+ ;;=^5023104
+ ;;^UTILITY(U,$J,358.3,38613,0)
+ ;;=S02.10XS^^106^1601^4
+ ;;^UTILITY(U,$J,358.3,38613,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13767,1,3,0)
- ;;=3^Cystitis w/o Hematuria,Unspec
- ;;^UTILITY(U,$J,358.3,13767,1,4,0)
- ;;=4^N30.90
- ;;^UTILITY(U,$J,358.3,13767,2)
- ;;=^5015642
- ;;^UTILITY(U,$J,358.3,13768,0)
- ;;=N41.9^^53^595^38
- ;;^UTILITY(U,$J,358.3,13768,1,0)
+ ;;^UTILITY(U,$J,358.3,38613,1,3,0)
+ ;;=3^Fracture of base of skull, sequela
+ ;;^UTILITY(U,$J,358.3,38613,1,4,0)
+ ;;=4^S02.10XS
+ ;;^UTILITY(U,$J,358.3,38613,2)
+ ;;=^5020263
+ ;;^UTILITY(U,$J,358.3,38614,0)
+ ;;=S02.67XS^^106^1601^1
+ ;;^UTILITY(U,$J,358.3,38614,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13768,1,3,0)
- ;;=3^Inflammatory Disease of Prostate,Unspec
- ;;^UTILITY(U,$J,358.3,13768,1,4,0)
- ;;=4^N41.9
- ;;^UTILITY(U,$J,358.3,13768,2)
- ;;=^5015694
- ;;^UTILITY(U,$J,358.3,13769,0)
- ;;=N70.91^^53^595^75
- ;;^UTILITY(U,$J,358.3,13769,1,0)
+ ;;^UTILITY(U,$J,358.3,38614,1,3,0)
+ ;;=3^Fracture of alveolus of mandible, sequela
+ ;;^UTILITY(U,$J,358.3,38614,1,4,0)
+ ;;=4^S02.67XS
+ ;;^UTILITY(U,$J,358.3,38614,2)
+ ;;=^5020419
+ ;;^UTILITY(U,$J,358.3,38615,0)
+ ;;=S02.42XS^^106^1601^2
+ ;;^UTILITY(U,$J,358.3,38615,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13769,1,3,0)
- ;;=3^Salpingitis,Unspec
- ;;^UTILITY(U,$J,358.3,13769,1,4,0)
- ;;=4^N70.91
- ;;^UTILITY(U,$J,358.3,13769,2)
- ;;=^5015806
- ;;^UTILITY(U,$J,358.3,13770,0)
- ;;=N70.93^^53^595^74
- ;;^UTILITY(U,$J,358.3,13770,1,0)
+ ;;^UTILITY(U,$J,358.3,38615,1,3,0)
+ ;;=3^Fracture of alveolus of maxilla, sequela
+ ;;^UTILITY(U,$J,358.3,38615,1,4,0)
+ ;;=4^S02.42XS
+ ;;^UTILITY(U,$J,358.3,38615,2)
+ ;;=^5020359
+ ;;^UTILITY(U,$J,358.3,38616,0)
+ ;;=S02.65XS^^106^1601^3
+ ;;^UTILITY(U,$J,358.3,38616,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13770,1,3,0)
- ;;=3^Salpingitis & Oophoritis,Unspec
- ;;^UTILITY(U,$J,358.3,13770,1,4,0)
- ;;=4^N70.93
- ;;^UTILITY(U,$J,358.3,13770,2)
- ;;=^5015808
- ;;^UTILITY(U,$J,358.3,13771,0)
- ;;=N70.92^^53^595^55
- ;;^UTILITY(U,$J,358.3,13771,1,0)
+ ;;^UTILITY(U,$J,358.3,38616,1,3,0)
+ ;;=3^Fracture of angle of mandible, sequela
+ ;;^UTILITY(U,$J,358.3,38616,1,4,0)
+ ;;=4^S02.65XS
+ ;;^UTILITY(U,$J,358.3,38616,2)
+ ;;=^5020407
+ ;;^UTILITY(U,$J,358.3,38617,0)
+ ;;=S02.61XS^^106^1601^6
+ ;;^UTILITY(U,$J,358.3,38617,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,13771,1,3,0)
- ;;=3^Oophoritis,Unspec
+ ;;^UTILITY(U,$J,358.3,38617,1,3,0)
+ ;;=3^Fracture of condylar process of mandible, sequela
+ ;;^UTILITY(U,$J,358.3,38617,1,4,0)
+ ;;=4^S02.61XS
+ ;;^UTILITY(U,$J,358.3,38617,2)
+ ;;=^5020383
+ ;;^UTILITY(U,$J,358.3,38618,0)
+ ;;=S02.63XS^^106^1601^7
+ ;;^UTILITY(U,$J,358.3,38618,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38618,1,3,0)
+ ;;=3^Fracture of coronoid process of mandible, sequela
+ ;;^UTILITY(U,$J,358.3,38618,1,4,0)
+ ;;=4^S02.63XS
+ ;;^UTILITY(U,$J,358.3,38618,2)
+ ;;=^5020395
+ ;;^UTILITY(U,$J,358.3,38619,0)
+ ;;=S02.2XXS^^106^1601^9
+ ;;^UTILITY(U,$J,358.3,38619,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38619,1,3,0)
+ ;;=3^Fracture of nasal bones, sequela
+ ;;^UTILITY(U,$J,358.3,38619,1,4,0)
+ ;;=4^S02.2XXS
+ ;;^UTILITY(U,$J,358.3,38619,2)
+ ;;=^5020311
+ ;;^UTILITY(U,$J,358.3,38620,0)
+ ;;=S02.3XXS^^106^1601^12
+ ;;^UTILITY(U,$J,358.3,38620,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38620,1,3,0)
+ ;;=3^Fracture of orbital floor, sequela
+ ;;^UTILITY(U,$J,358.3,38620,1,4,0)
+ ;;=4^S02.3XXS
+ ;;^UTILITY(U,$J,358.3,38620,2)
+ ;;=^5020317
+ ;;^UTILITY(U,$J,358.3,38621,0)
+ ;;=S02.62XS^^106^1601^14
+ ;;^UTILITY(U,$J,358.3,38621,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38621,1,3,0)
+ ;;=3^Fracture of subcondylar process of mandible, sequela
+ ;;^UTILITY(U,$J,358.3,38621,1,4,0)
+ ;;=4^S02.62XS
+ ;;^UTILITY(U,$J,358.3,38621,2)
+ ;;=^5020389
+ ;;^UTILITY(U,$J,358.3,38622,0)
+ ;;=S02.66XS^^106^1601^15
+ ;;^UTILITY(U,$J,358.3,38622,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38622,1,3,0)
+ ;;=3^Fracture of symphysis of mandible, sequela
+ ;;^UTILITY(U,$J,358.3,38622,1,4,0)
+ ;;=4^S02.66XS
+ ;;^UTILITY(U,$J,358.3,38622,2)
+ ;;=^5020413
+ ;;^UTILITY(U,$J,358.3,38623,0)
+ ;;=S22.43XS^^106^1601^17
+ ;;^UTILITY(U,$J,358.3,38623,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38623,1,3,0)
+ ;;=3^Multiple fractures of ribs, bilateral, sequela
+ ;;^UTILITY(U,$J,358.3,38623,1,4,0)
+ ;;=4^S22.43XS
+ ;;^UTILITY(U,$J,358.3,38623,2)
+ ;;=^5023140
+ ;;^UTILITY(U,$J,358.3,38624,0)
+ ;;=S22.42XS^^106^1601^18
+ ;;^UTILITY(U,$J,358.3,38624,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38624,1,3,0)
+ ;;=3^Multiple fractures of ribs, left side, sequela
+ ;;^UTILITY(U,$J,358.3,38624,1,4,0)
+ ;;=4^S22.42XS
+ ;;^UTILITY(U,$J,358.3,38624,2)
+ ;;=^5023134
+ ;;^UTILITY(U,$J,358.3,38625,0)
+ ;;=S22.41XS^^106^1601^19
+ ;;^UTILITY(U,$J,358.3,38625,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38625,1,3,0)
+ ;;=3^Multiple fractures of ribs, right side, sequela
+ ;;^UTILITY(U,$J,358.3,38625,1,4,0)
+ ;;=4^S22.41XS
+ ;;^UTILITY(U,$J,358.3,38625,2)
+ ;;=^5023128
+ ;;^UTILITY(U,$J,358.3,38626,0)
+ ;;=S22.23XS^^106^1601^20
+ ;;^UTILITY(U,$J,358.3,38626,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38626,1,3,0)
+ ;;=3^Sternal manubrial dissociation, sequela
+ ;;^UTILITY(U,$J,358.3,38626,1,4,0)
+ ;;=4^S22.23XS
+ ;;^UTILITY(U,$J,358.3,38626,2)
+ ;;=^5023098
+ ;;^UTILITY(U,$J,358.3,38627,0)
+ ;;=S02.110S^^106^1601^21
+ ;;^UTILITY(U,$J,358.3,38627,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38627,1,3,0)
+ ;;=3^Type I occipital condyle fracture, sequela
+ ;;^UTILITY(U,$J,358.3,38627,1,4,0)
+ ;;=4^S02.110S
+ ;;^UTILITY(U,$J,358.3,38627,2)
+ ;;=^5020269
+ ;;^UTILITY(U,$J,358.3,38628,0)
+ ;;=S02.111S^^106^1601^22
+ ;;^UTILITY(U,$J,358.3,38628,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38628,1,3,0)
+ ;;=3^Type II occipital condyle fracture, sequela
+ ;;^UTILITY(U,$J,358.3,38628,1,4,0)
+ ;;=4^S02.111S
+ ;;^UTILITY(U,$J,358.3,38628,2)
+ ;;=^5020275
+ ;;^UTILITY(U,$J,358.3,38629,0)
+ ;;=S02.112S^^106^1601^23
+ ;;^UTILITY(U,$J,358.3,38629,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38629,1,3,0)
+ ;;=3^Type III occipital condyle fracture, sequela
+ ;;^UTILITY(U,$J,358.3,38629,1,4,0)
+ ;;=4^S02.112S
+ ;;^UTILITY(U,$J,358.3,38629,2)
+ ;;=^5020281
+ ;;^UTILITY(U,$J,358.3,38630,0)
+ ;;=S02.64XS^^106^1601^13
+ ;;^UTILITY(U,$J,358.3,38630,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38630,1,3,0)
+ ;;=3^Fracture of ramus of mandible, sequela
+ ;;^UTILITY(U,$J,358.3,38630,1,4,0)
+ ;;=4^S02.64XS
+ ;;^UTILITY(U,$J,358.3,38630,2)
+ ;;=^5020401
+ ;;^UTILITY(U,$J,358.3,38631,0)
+ ;;=G89.29^^106^1602^5
+ ;;^UTILITY(U,$J,358.3,38631,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38631,1,3,0)
+ ;;=3^Pain,Chronic,Other
+ ;;^UTILITY(U,$J,358.3,38631,1,4,0)
+ ;;=4^G89.29
+ ;;^UTILITY(U,$J,358.3,38631,2)
+ ;;=^5004158
+ ;;^UTILITY(U,$J,358.3,38632,0)
+ ;;=G89.21^^106^1602^4
+ ;;^UTILITY(U,$J,358.3,38632,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38632,1,3,0)
+ ;;=3^Pain d/t Trauma,Chronic
+ ;;^UTILITY(U,$J,358.3,38632,1,4,0)
+ ;;=4^G89.21
+ ;;^UTILITY(U,$J,358.3,38632,2)
+ ;;=^5004155
+ ;;^UTILITY(U,$J,358.3,38633,0)
+ ;;=G89.22^^106^1602^14
+ ;;^UTILITY(U,$J,358.3,38633,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38633,1,3,0)
+ ;;=3^Pain,Post-Thoracotomy,Chronic
+ ;;^UTILITY(U,$J,358.3,38633,1,4,0)
+ ;;=4^G89.22
+ ;;^UTILITY(U,$J,358.3,38633,2)
+ ;;=^5004156
+ ;;^UTILITY(U,$J,358.3,38634,0)
+ ;;=G89.28^^106^1602^15
+ ;;^UTILITY(U,$J,358.3,38634,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38634,1,3,0)
+ ;;=3^Pain,Postprocedural,Chronic,Other
+ ;;^UTILITY(U,$J,358.3,38634,1,4,0)
+ ;;=4^G89.28
+ ;;^UTILITY(U,$J,358.3,38634,2)
+ ;;=^5004157
+ ;;^UTILITY(U,$J,358.3,38635,0)
+ ;;=M54.2^^106^1602^1
+ ;;^UTILITY(U,$J,358.3,38635,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38635,1,3,0)
+ ;;=3^Cervicalgia
+ ;;^UTILITY(U,$J,358.3,38635,1,4,0)
+ ;;=4^M54.2
+ ;;^UTILITY(U,$J,358.3,38635,2)
+ ;;=^5012304
+ ;;^UTILITY(U,$J,358.3,38636,0)
+ ;;=M54.9^^106^1602^2
+ ;;^UTILITY(U,$J,358.3,38636,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38636,1,3,0)
+ ;;=3^Dorsalgia,Unspec
+ ;;^UTILITY(U,$J,358.3,38636,1,4,0)
+ ;;=4^M54.9
+ ;;^UTILITY(U,$J,358.3,38636,2)
+ ;;=^5012314
+ ;;^UTILITY(U,$J,358.3,38637,0)
+ ;;=M54.5^^106^1602^13
+ ;;^UTILITY(U,$J,358.3,38637,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38637,1,3,0)
+ ;;=3^Pain,Low Back
+ ;;^UTILITY(U,$J,358.3,38637,1,4,0)
+ ;;=4^M54.5
+ ;;^UTILITY(U,$J,358.3,38637,2)
+ ;;=^5012311
+ ;;^UTILITY(U,$J,358.3,38638,0)
+ ;;=M79.2^^106^1602^3
+ ;;^UTILITY(U,$J,358.3,38638,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38638,1,3,0)
+ ;;=3^Neuralgia & Neuritis,Unspec
+ ;;^UTILITY(U,$J,358.3,38638,1,4,0)
+ ;;=4^M79.2
+ ;;^UTILITY(U,$J,358.3,38638,2)
+ ;;=^5013322
+ ;;^UTILITY(U,$J,358.3,38639,0)
+ ;;=M79.602^^106^1602^6
+ ;;^UTILITY(U,$J,358.3,38639,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,38639,1,3,0)
+ ;;=3^Pain,Left Arm
+ ;;^UTILITY(U,$J,358.3,38639,1,4,0)
+ ;;=4^M79.602

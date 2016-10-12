@@ -1,136 +1,356 @@
-IBDEI0Y4 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0Y4 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,16018,1,3,0)
- ;;=3^Anemia d/t Selective Vit B12 Malabsorption w/ Proteinuria
- ;;^UTILITY(U,$J,358.3,16018,1,4,0)
- ;;=4^D51.1
- ;;^UTILITY(U,$J,358.3,16018,2)
- ;;=^5002285
- ;;^UTILITY(U,$J,358.3,16019,0)
- ;;=D53.9^^61^716^19
- ;;^UTILITY(U,$J,358.3,16019,1,0)
+ ;;^UTILITY(U,$J,358.3,44767,1,4,0)
+ ;;=4^S81.001D
+ ;;^UTILITY(U,$J,358.3,44767,2)
+ ;;=^5040027
+ ;;^UTILITY(U,$J,358.3,44768,0)
+ ;;=S81.801D^^133^1910^44
+ ;;^UTILITY(U,$J,358.3,44768,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16019,1,3,0)
- ;;=3^Anemia,Nutritional,Unspec
- ;;^UTILITY(U,$J,358.3,16019,1,4,0)
- ;;=4^D53.9
- ;;^UTILITY(U,$J,358.3,16019,2)
- ;;=^5002298
- ;;^UTILITY(U,$J,358.3,16020,0)
- ;;=D52.9^^61^716^13
- ;;^UTILITY(U,$J,358.3,16020,1,0)
+ ;;^UTILITY(U,$J,358.3,44768,1,3,0)
+ ;;=3^Open Wound,Right Lower Leg,Subs Encntr
+ ;;^UTILITY(U,$J,358.3,44768,1,4,0)
+ ;;=4^S81.801D
+ ;;^UTILITY(U,$J,358.3,44768,2)
+ ;;=^5040066
+ ;;^UTILITY(U,$J,358.3,44769,0)
+ ;;=Z43.3^^133^1911^3
+ ;;^UTILITY(U,$J,358.3,44769,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16020,1,3,0)
- ;;=3^Anemia,Folate Deficiency,Unspec
- ;;^UTILITY(U,$J,358.3,16020,1,4,0)
- ;;=4^D52.9
- ;;^UTILITY(U,$J,358.3,16020,2)
- ;;=^5002293
- ;;^UTILITY(U,$J,358.3,16021,0)
- ;;=D52.0^^61^716^11
- ;;^UTILITY(U,$J,358.3,16021,1,0)
+ ;;^UTILITY(U,$J,358.3,44769,1,3,0)
+ ;;=3^Attention to Colostomy
+ ;;^UTILITY(U,$J,358.3,44769,1,4,0)
+ ;;=4^Z43.3
+ ;;^UTILITY(U,$J,358.3,44769,2)
+ ;;=^5062961
+ ;;^UTILITY(U,$J,358.3,44770,0)
+ ;;=Z43.5^^133^1911^4
+ ;;^UTILITY(U,$J,358.3,44770,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16021,1,3,0)
- ;;=3^Anemia,Folate Deficiency,Dietary
- ;;^UTILITY(U,$J,358.3,16021,1,4,0)
- ;;=4^D52.0
- ;;^UTILITY(U,$J,358.3,16021,2)
- ;;=^5002290
- ;;^UTILITY(U,$J,358.3,16022,0)
- ;;=D52.1^^61^716^12
- ;;^UTILITY(U,$J,358.3,16022,1,0)
+ ;;^UTILITY(U,$J,358.3,44770,1,3,0)
+ ;;=3^Attention to Cystostomy
+ ;;^UTILITY(U,$J,358.3,44770,1,4,0)
+ ;;=4^Z43.5
+ ;;^UTILITY(U,$J,358.3,44770,2)
+ ;;=^5062963
+ ;;^UTILITY(U,$J,358.3,44771,0)
+ ;;=Z43.1^^133^1911^5
+ ;;^UTILITY(U,$J,358.3,44771,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16022,1,3,0)
- ;;=3^Anemia,Folate Deficiency,Drug-Induced
- ;;^UTILITY(U,$J,358.3,16022,1,4,0)
- ;;=4^D52.1
- ;;^UTILITY(U,$J,358.3,16022,2)
- ;;=^5002291
- ;;^UTILITY(U,$J,358.3,16023,0)
- ;;=D59.9^^61^716^14
- ;;^UTILITY(U,$J,358.3,16023,1,0)
+ ;;^UTILITY(U,$J,358.3,44771,1,3,0)
+ ;;=3^Attention to Gastrostomy
+ ;;^UTILITY(U,$J,358.3,44771,1,4,0)
+ ;;=4^Z43.1
+ ;;^UTILITY(U,$J,358.3,44771,2)
+ ;;=^5062959
+ ;;^UTILITY(U,$J,358.3,44772,0)
+ ;;=Z43.2^^133^1911^6
+ ;;^UTILITY(U,$J,358.3,44772,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16023,1,3,0)
- ;;=3^Anemia,Hemolytic,Acquired
- ;;^UTILITY(U,$J,358.3,16023,1,4,0)
- ;;=4^D59.9
- ;;^UTILITY(U,$J,358.3,16023,2)
- ;;=^5002330
- ;;^UTILITY(U,$J,358.3,16024,0)
- ;;=D59.1^^61^716^15
- ;;^UTILITY(U,$J,358.3,16024,1,0)
+ ;;^UTILITY(U,$J,358.3,44772,1,3,0)
+ ;;=3^Attention to Ileostomy
+ ;;^UTILITY(U,$J,358.3,44772,1,4,0)
+ ;;=4^Z43.2
+ ;;^UTILITY(U,$J,358.3,44772,2)
+ ;;=^5062960
+ ;;^UTILITY(U,$J,358.3,44773,0)
+ ;;=Z43.6^^133^1911^11
+ ;;^UTILITY(U,$J,358.3,44773,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16024,1,3,0)
- ;;=3^Anemia,Hemolytic,Autoimmune
- ;;^UTILITY(U,$J,358.3,16024,1,4,0)
- ;;=4^D59.1
- ;;^UTILITY(U,$J,358.3,16024,2)
- ;;=^5002324
- ;;^UTILITY(U,$J,358.3,16025,0)
- ;;=D58.9^^61^716^16
- ;;^UTILITY(U,$J,358.3,16025,1,0)
+ ;;^UTILITY(U,$J,358.3,44773,1,3,0)
+ ;;=3^Attention to Urinostomy NEC
+ ;;^UTILITY(U,$J,358.3,44773,1,4,0)
+ ;;=4^Z43.6
+ ;;^UTILITY(U,$J,358.3,44773,2)
+ ;;=^5062964
+ ;;^UTILITY(U,$J,358.3,44774,0)
+ ;;=Z43.8^^133^1911^8
+ ;;^UTILITY(U,$J,358.3,44774,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16025,1,3,0)
- ;;=3^Anemia,Hemolytic,Hereditary,Unspec
- ;;^UTILITY(U,$J,358.3,16025,1,4,0)
- ;;=4^D58.9
- ;;^UTILITY(U,$J,358.3,16025,2)
- ;;=^5002322
- ;;^UTILITY(U,$J,358.3,16026,0)
- ;;=D59.4^^61^716^17
- ;;^UTILITY(U,$J,358.3,16026,1,0)
+ ;;^UTILITY(U,$J,358.3,44774,1,3,0)
+ ;;=3^Attention to Other Artificial Opening
+ ;;^UTILITY(U,$J,358.3,44774,1,4,0)
+ ;;=4^Z43.8
+ ;;^UTILITY(U,$J,358.3,44774,2)
+ ;;=^5062966
+ ;;^UTILITY(U,$J,358.3,44775,0)
+ ;;=Z43.9^^133^1911^10
+ ;;^UTILITY(U,$J,358.3,44775,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16026,1,3,0)
- ;;=3^Anemia,Hemolytic,Nonautoimmune
- ;;^UTILITY(U,$J,358.3,16026,1,4,0)
- ;;=4^D59.4
- ;;^UTILITY(U,$J,358.3,16026,2)
- ;;=^5002326
- ;;^UTILITY(U,$J,358.3,16027,0)
- ;;=D58.0^^61^716^30
- ;;^UTILITY(U,$J,358.3,16027,1,0)
+ ;;^UTILITY(U,$J,358.3,44775,1,3,0)
+ ;;=3^Attention to Unspec Artificial Opening
+ ;;^UTILITY(U,$J,358.3,44775,1,4,0)
+ ;;=4^Z43.9
+ ;;^UTILITY(U,$J,358.3,44775,2)
+ ;;=^5062967
+ ;;^UTILITY(U,$J,358.3,44776,0)
+ ;;=Z93.3^^133^1911^12
+ ;;^UTILITY(U,$J,358.3,44776,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16027,1,3,0)
- ;;=3^Spherocytosis,Hereditary
- ;;^UTILITY(U,$J,358.3,16027,1,4,0)
- ;;=4^D58.0
- ;;^UTILITY(U,$J,358.3,16027,2)
- ;;=^5002321
- ;;^UTILITY(U,$J,358.3,16028,0)
- ;;=D50.9^^61^716^18
- ;;^UTILITY(U,$J,358.3,16028,1,0)
+ ;;^UTILITY(U,$J,358.3,44776,1,3,0)
+ ;;=3^Colostomy Status
+ ;;^UTILITY(U,$J,358.3,44776,1,4,0)
+ ;;=4^Z93.3
+ ;;^UTILITY(U,$J,358.3,44776,2)
+ ;;=^5063645
+ ;;^UTILITY(U,$J,358.3,44777,0)
+ ;;=Z43.4^^133^1911^7
+ ;;^UTILITY(U,$J,358.3,44777,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16028,1,3,0)
- ;;=3^Anemia,Iron Deficiency,Unspec
- ;;^UTILITY(U,$J,358.3,16028,1,4,0)
- ;;=4^D50.9
- ;;^UTILITY(U,$J,358.3,16028,2)
- ;;=^5002283
- ;;^UTILITY(U,$J,358.3,16029,0)
- ;;=D61.82^^61^716^28
- ;;^UTILITY(U,$J,358.3,16029,1,0)
+ ;;^UTILITY(U,$J,358.3,44777,1,3,0)
+ ;;=3^Attention to Oth Artif Opening of Digestive Tract
+ ;;^UTILITY(U,$J,358.3,44777,1,4,0)
+ ;;=4^Z43.4
+ ;;^UTILITY(U,$J,358.3,44777,2)
+ ;;=^5062962
+ ;;^UTILITY(U,$J,358.3,44778,0)
+ ;;=Z43.0^^133^1911^9
+ ;;^UTILITY(U,$J,358.3,44778,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16029,1,3,0)
- ;;=3^Myelophthisis
- ;;^UTILITY(U,$J,358.3,16029,1,4,0)
- ;;=4^D61.82
- ;;^UTILITY(U,$J,358.3,16029,2)
- ;;=^334037
- ;;^UTILITY(U,$J,358.3,16030,0)
- ;;=D53.2^^61^716^21
- ;;^UTILITY(U,$J,358.3,16030,1,0)
+ ;;^UTILITY(U,$J,358.3,44778,1,3,0)
+ ;;=3^Attention to Tracheostomy
+ ;;^UTILITY(U,$J,358.3,44778,1,4,0)
+ ;;=4^Z43.0
+ ;;^UTILITY(U,$J,358.3,44778,2)
+ ;;=^5062958
+ ;;^UTILITY(U,$J,358.3,44779,0)
+ ;;=Z46.59^^133^1911^13
+ ;;^UTILITY(U,$J,358.3,44779,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16030,1,3,0)
- ;;=3^Anemia,Scorbutic
- ;;^UTILITY(U,$J,358.3,16030,1,4,0)
- ;;=4^D53.2
- ;;^UTILITY(U,$J,358.3,16030,2)
- ;;=^5002296
- ;;^UTILITY(U,$J,358.3,16031,0)
- ;;=D51.0^^61^716^26
- ;;^UTILITY(U,$J,358.3,16031,1,0)
+ ;;^UTILITY(U,$J,358.3,44779,1,3,0)
+ ;;=3^Fit/Adjust GI Appliance/Device
+ ;;^UTILITY(U,$J,358.3,44779,1,4,0)
+ ;;=4^Z46.59
+ ;;^UTILITY(U,$J,358.3,44779,2)
+ ;;=^5063019
+ ;;^UTILITY(U,$J,358.3,44780,0)
+ ;;=Z46.6^^133^1911^14
+ ;;^UTILITY(U,$J,358.3,44780,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,16031,1,3,0)
- ;;=3^Anemia,Vit B12 Defic d/t Intrinsic Factor Deficiency
+ ;;^UTILITY(U,$J,358.3,44780,1,3,0)
+ ;;=3^Fit/Adjust Urinary Device
+ ;;^UTILITY(U,$J,358.3,44780,1,4,0)
+ ;;=4^Z46.6
+ ;;^UTILITY(U,$J,358.3,44780,2)
+ ;;=^5063020
+ ;;^UTILITY(U,$J,358.3,44781,0)
+ ;;=Z93.1^^133^1911^15
+ ;;^UTILITY(U,$J,358.3,44781,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44781,1,3,0)
+ ;;=3^Gastrostomy Status
+ ;;^UTILITY(U,$J,358.3,44781,1,4,0)
+ ;;=4^Z93.1
+ ;;^UTILITY(U,$J,358.3,44781,2)
+ ;;=^5063643
+ ;;^UTILITY(U,$J,358.3,44782,0)
+ ;;=Z93.2^^133^1911^16
+ ;;^UTILITY(U,$J,358.3,44782,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44782,1,3,0)
+ ;;=3^Ileostomy Status
+ ;;^UTILITY(U,$J,358.3,44782,1,4,0)
+ ;;=4^Z93.2
+ ;;^UTILITY(U,$J,358.3,44782,2)
+ ;;=^5063644
+ ;;^UTILITY(U,$J,358.3,44783,0)
+ ;;=Z93.4^^133^1911^1
+ ;;^UTILITY(U,$J,358.3,44783,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44783,1,3,0)
+ ;;=3^Artificial Opening Gastrointestinal Tract Status
+ ;;^UTILITY(U,$J,358.3,44783,1,4,0)
+ ;;=4^Z93.4
+ ;;^UTILITY(U,$J,358.3,44783,2)
+ ;;=^5063646
+ ;;^UTILITY(U,$J,358.3,44784,0)
+ ;;=Z93.6^^133^1911^2
+ ;;^UTILITY(U,$J,358.3,44784,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44784,1,3,0)
+ ;;=3^Artificial Opening Urinary Tract Status
+ ;;^UTILITY(U,$J,358.3,44784,1,4,0)
+ ;;=4^Z93.6
+ ;;^UTILITY(U,$J,358.3,44784,2)
+ ;;=^5063651
+ ;;^UTILITY(U,$J,358.3,44785,0)
+ ;;=Z93.0^^133^1911^17
+ ;;^UTILITY(U,$J,358.3,44785,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44785,1,3,0)
+ ;;=3^Tracheostomy Status
+ ;;^UTILITY(U,$J,358.3,44785,1,4,0)
+ ;;=4^Z93.0
+ ;;^UTILITY(U,$J,358.3,44785,2)
+ ;;=^5063642
+ ;;^UTILITY(U,$J,358.3,44786,0)
+ ;;=E10.620^^133^1912^1
+ ;;^UTILITY(U,$J,358.3,44786,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44786,1,3,0)
+ ;;=3^Diabetes Type 1 w/ Diabetic Dermatitis
+ ;;^UTILITY(U,$J,358.3,44786,1,4,0)
+ ;;=4^E10.620
+ ;;^UTILITY(U,$J,358.3,44786,2)
+ ;;=^5002615
+ ;;^UTILITY(U,$J,358.3,44787,0)
+ ;;=E10.40^^133^1912^2
+ ;;^UTILITY(U,$J,358.3,44787,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44787,1,3,0)
+ ;;=3^Diabetes Type 1 w/ Diabetic Neuropathy,Unspec
+ ;;^UTILITY(U,$J,358.3,44787,1,4,0)
+ ;;=4^E10.40
+ ;;^UTILITY(U,$J,358.3,44787,2)
+ ;;=^5002604
+ ;;^UTILITY(U,$J,358.3,44788,0)
+ ;;=E10.51^^133^1912^3
+ ;;^UTILITY(U,$J,358.3,44788,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44788,1,3,0)
+ ;;=3^Diabetes Type 1 w/ Diabetic Peripheral Angiopath w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,44788,1,4,0)
+ ;;=4^E10.51
+ ;;^UTILITY(U,$J,358.3,44788,2)
+ ;;=^5002610
+ ;;^UTILITY(U,$J,358.3,44789,0)
+ ;;=E10.621^^133^1912^4
+ ;;^UTILITY(U,$J,358.3,44789,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44789,1,3,0)
+ ;;=3^Diabetes Type 1 w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,44789,1,4,0)
+ ;;=4^E10.621
+ ;;^UTILITY(U,$J,358.3,44789,2)
+ ;;=^5002616
+ ;;^UTILITY(U,$J,358.3,44790,0)
+ ;;=E10.628^^133^1912^5
+ ;;^UTILITY(U,$J,358.3,44790,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44790,1,3,0)
+ ;;=3^Diabetes Type 1 w/ Oth Skin Complications
+ ;;^UTILITY(U,$J,358.3,44790,1,4,0)
+ ;;=4^E10.628
+ ;;^UTILITY(U,$J,358.3,44790,2)
+ ;;=^5002618
+ ;;^UTILITY(U,$J,358.3,44791,0)
+ ;;=E10.622^^133^1912^6
+ ;;^UTILITY(U,$J,358.3,44791,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44791,1,3,0)
+ ;;=3^Diabetes Type 1 w/ Oth Skin Ulcer
+ ;;^UTILITY(U,$J,358.3,44791,1,4,0)
+ ;;=4^E10.622
+ ;;^UTILITY(U,$J,358.3,44791,2)
+ ;;=^5002617
+ ;;^UTILITY(U,$J,358.3,44792,0)
+ ;;=E11.620^^133^1912^7
+ ;;^UTILITY(U,$J,358.3,44792,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44792,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Diabetic Dermatitis
+ ;;^UTILITY(U,$J,358.3,44792,1,4,0)
+ ;;=4^E11.620
+ ;;^UTILITY(U,$J,358.3,44792,2)
+ ;;=^5002655
+ ;;^UTILITY(U,$J,358.3,44793,0)
+ ;;=E11.40^^133^1912^8
+ ;;^UTILITY(U,$J,358.3,44793,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44793,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Diabetic Neuropathy,Unspec
+ ;;^UTILITY(U,$J,358.3,44793,1,4,0)
+ ;;=4^E11.40
+ ;;^UTILITY(U,$J,358.3,44793,2)
+ ;;=^5002644
+ ;;^UTILITY(U,$J,358.3,44794,0)
+ ;;=E11.51^^133^1912^9
+ ;;^UTILITY(U,$J,358.3,44794,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44794,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Diabetic Peripheral Angiopath w/o Gangrene
+ ;;^UTILITY(U,$J,358.3,44794,1,4,0)
+ ;;=4^E11.51
+ ;;^UTILITY(U,$J,358.3,44794,2)
+ ;;=^5002650
+ ;;^UTILITY(U,$J,358.3,44795,0)
+ ;;=E11.621^^133^1912^10
+ ;;^UTILITY(U,$J,358.3,44795,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44795,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Foot Ulcer
+ ;;^UTILITY(U,$J,358.3,44795,1,4,0)
+ ;;=4^E11.621
+ ;;^UTILITY(U,$J,358.3,44795,2)
+ ;;=^5002656
+ ;;^UTILITY(U,$J,358.3,44796,0)
+ ;;=E11.618^^133^1912^11
+ ;;^UTILITY(U,$J,358.3,44796,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44796,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Oth Diabetic Arthropathy
+ ;;^UTILITY(U,$J,358.3,44796,1,4,0)
+ ;;=4^E11.618
+ ;;^UTILITY(U,$J,358.3,44796,2)
+ ;;=^5002654
+ ;;^UTILITY(U,$J,358.3,44797,0)
+ ;;=E11.628^^133^1912^12
+ ;;^UTILITY(U,$J,358.3,44797,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44797,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Oth Skin Complications
+ ;;^UTILITY(U,$J,358.3,44797,1,4,0)
+ ;;=4^E11.628
+ ;;^UTILITY(U,$J,358.3,44797,2)
+ ;;=^5002658
+ ;;^UTILITY(U,$J,358.3,44798,0)
+ ;;=E11.622^^133^1912^13
+ ;;^UTILITY(U,$J,358.3,44798,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44798,1,3,0)
+ ;;=3^Diabetes Type 2 w/ Oth Skin Ulcer
+ ;;^UTILITY(U,$J,358.3,44798,1,4,0)
+ ;;=4^E11.622
+ ;;^UTILITY(U,$J,358.3,44798,2)
+ ;;=^5002657
+ ;;^UTILITY(U,$J,358.3,44799,0)
+ ;;=L89.90^^133^1913^107
+ ;;^UTILITY(U,$J,358.3,44799,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44799,1,3,0)
+ ;;=3^Pressure Ulcer Unspec Site,Unspec Stage
+ ;;^UTILITY(U,$J,358.3,44799,1,4,0)
+ ;;=4^L89.90
+ ;;^UTILITY(U,$J,358.3,44799,2)
+ ;;=^5133666
+ ;;^UTILITY(U,$J,358.3,44800,0)
+ ;;=L89.91^^133^1913^103
+ ;;^UTILITY(U,$J,358.3,44800,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44800,1,3,0)
+ ;;=3^Pressure Ulcer Unspec Site,Stage 1
+ ;;^UTILITY(U,$J,358.3,44800,1,4,0)
+ ;;=4^L89.91
+ ;;^UTILITY(U,$J,358.3,44800,2)
+ ;;=^5133664
+ ;;^UTILITY(U,$J,358.3,44801,0)
+ ;;=L89.92^^133^1913^104
+ ;;^UTILITY(U,$J,358.3,44801,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44801,1,3,0)
+ ;;=3^Pressure Ulcer Unspec Site,Stage 2
+ ;;^UTILITY(U,$J,358.3,44801,1,4,0)
+ ;;=4^L89.92
+ ;;^UTILITY(U,$J,358.3,44801,2)
+ ;;=^5133667
+ ;;^UTILITY(U,$J,358.3,44802,0)
+ ;;=L89.93^^133^1913^105
+ ;;^UTILITY(U,$J,358.3,44802,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,44802,1,3,0)
+ ;;=3^Pressure Ulcer Unspec Site,Stage 3
+ ;;^UTILITY(U,$J,358.3,44802,1,4,0)
+ ;;=4^L89.93

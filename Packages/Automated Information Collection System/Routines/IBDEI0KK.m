@@ -1,132 +1,352 @@
-IBDEI0KK ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0KK ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,9568,1,3,0)
- ;;=3^92353
- ;;^UTILITY(U,$J,358.3,9569,0)
- ;;=92354^^43^486^10^^^^1
- ;;^UTILITY(U,$J,358.3,9569,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9569,1,2,0)
- ;;=2^Low Vision Aid Fitting, Single Element
- ;;^UTILITY(U,$J,358.3,9569,1,3,0)
- ;;=3^92354
- ;;^UTILITY(U,$J,358.3,9570,0)
- ;;=92355^^43^486^11^^^^1
- ;;^UTILITY(U,$J,358.3,9570,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9570,1,2,0)
- ;;=2^Low Vision Aid Fitting, Telescopic/Compound Lens
- ;;^UTILITY(U,$J,358.3,9570,1,3,0)
- ;;=3^92355
- ;;^UTILITY(U,$J,358.3,9571,0)
- ;;=92370^^43^486^12^^^^1
- ;;^UTILITY(U,$J,358.3,9571,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9571,1,2,0)
- ;;=2^Repair/Refit Glasses
- ;;^UTILITY(U,$J,358.3,9571,1,3,0)
- ;;=3^92370
- ;;^UTILITY(U,$J,358.3,9572,0)
- ;;=92371^^43^486^13^^^^1
- ;;^UTILITY(U,$J,358.3,9572,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9572,1,2,0)
- ;;=2^Repair/Refit Glasses for Aphakia
- ;;^UTILITY(U,$J,358.3,9572,1,3,0)
- ;;=3^92371
- ;;^UTILITY(U,$J,358.3,9573,0)
- ;;=92071^^43^486^2^^^^1
- ;;^UTILITY(U,$J,358.3,9573,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9573,1,2,0)
- ;;=2^Contact Lens Tx for Ocular Disease
- ;;^UTILITY(U,$J,358.3,9573,1,3,0)
- ;;=3^92071
- ;;^UTILITY(U,$J,358.3,9574,0)
- ;;=92072^^43^486^1^^^^1
- ;;^UTILITY(U,$J,358.3,9574,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9574,1,2,0)
- ;;=2^Contact Lens Mgmt Keratoconus,Init
- ;;^UTILITY(U,$J,358.3,9574,1,3,0)
- ;;=3^92072
- ;;^UTILITY(U,$J,358.3,9575,0)
- ;;=92314^^43^486^14^^^^1
- ;;^UTILITY(U,$J,358.3,9575,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9575,1,2,0)
- ;;=2^Rx Opt/Phys Char Lens,Supv Fitting
- ;;^UTILITY(U,$J,358.3,9575,1,3,0)
- ;;=3^92314
- ;;^UTILITY(U,$J,358.3,9576,0)
- ;;=65430^^43^487^8^^^^1
- ;;^UTILITY(U,$J,358.3,9576,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9576,1,2,0)
- ;;=2^Corneal Scrape* (dx culture)
- ;;^UTILITY(U,$J,358.3,9576,1,3,0)
- ;;=3^65430
- ;;^UTILITY(U,$J,358.3,9577,0)
- ;;=92285^^43^487^13^^^^1
- ;;^UTILITY(U,$J,358.3,9577,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9577,1,2,0)
- ;;=2^External Eye Photography
- ;;^UTILITY(U,$J,358.3,9577,1,3,0)
- ;;=3^92285
- ;;^UTILITY(U,$J,358.3,9578,0)
- ;;=92225^^43^487^12^^^^1
- ;;^UTILITY(U,$J,358.3,9578,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9578,1,2,0)
- ;;=2^Extended Ophthalmoscopy,Initial
- ;;^UTILITY(U,$J,358.3,9578,1,3,0)
- ;;=3^92225
- ;;^UTILITY(U,$J,358.3,9579,0)
- ;;=92235^^43^487^14^^^^1
- ;;^UTILITY(U,$J,358.3,9579,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9579,1,2,0)
- ;;=2^Fluorescein Angio
- ;;^UTILITY(U,$J,358.3,9579,1,3,0)
- ;;=3^92235
- ;;^UTILITY(U,$J,358.3,9580,0)
- ;;=92250^^43^487^15^^^^1
- ;;^UTILITY(U,$J,358.3,9580,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9580,1,2,0)
- ;;=2^Fundus Photography
- ;;^UTILITY(U,$J,358.3,9580,1,3,0)
- ;;=3^92250
- ;;^UTILITY(U,$J,358.3,9581,0)
- ;;=92020^^43^487^18^^^^1
- ;;^UTILITY(U,$J,358.3,9581,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9581,1,2,0)
- ;;=2^Gonioscopy
- ;;^UTILITY(U,$J,358.3,9581,1,3,0)
- ;;=3^92020
- ;;^UTILITY(U,$J,358.3,9582,0)
- ;;=92081^^43^487^34^^^^1
- ;;^UTILITY(U,$J,358.3,9582,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9582,1,2,0)
- ;;=2^Visual Field - Screening
- ;;^UTILITY(U,$J,358.3,9582,1,3,0)
- ;;=3^92081
- ;;^UTILITY(U,$J,358.3,9583,0)
- ;;=92082^^43^487^33^^^^1
- ;;^UTILITY(U,$J,358.3,9583,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9583,1,2,0)
- ;;=2^Visual Field - Intermediate
- ;;^UTILITY(U,$J,358.3,9583,1,3,0)
- ;;=3^92082
- ;;^UTILITY(U,$J,358.3,9584,0)
- ;;=92083^^43^487^35^^^^1
- ;;^UTILITY(U,$J,358.3,9584,1,0)
- ;;=^358.31IA^3^2
- ;;^UTILITY(U,$J,358.3,9584,1,2,0)
- ;;=2^Visual Field - Threshold
+ ;;^UTILITY(U,$J,358.3,26031,0)
+ ;;=F28.^^69^1080^12
+ ;;^UTILITY(U,$J,358.3,26031,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26031,1,3,0)
+ ;;=3^Schizophrenia Spectrum & Psychotic Disorder,Oth Specified
+ ;;^UTILITY(U,$J,358.3,26031,1,4,0)
+ ;;=4^F28.
+ ;;^UTILITY(U,$J,358.3,26031,2)
+ ;;=^5003483
+ ;;^UTILITY(U,$J,358.3,26032,0)
+ ;;=F29.^^69^1080^13
+ ;;^UTILITY(U,$J,358.3,26032,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26032,1,3,0)
+ ;;=3^Schizophrenia Spectrum & Psychotic Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,26032,1,4,0)
+ ;;=4^F29.
+ ;;^UTILITY(U,$J,358.3,26032,2)
+ ;;=^5003484
+ ;;^UTILITY(U,$J,358.3,26033,0)
+ ;;=F06.1^^69^1080^2
+ ;;^UTILITY(U,$J,358.3,26033,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26033,1,3,0)
+ ;;=3^Catatonia Associated w/ Another Mental Disorder
+ ;;^UTILITY(U,$J,358.3,26033,1,4,0)
+ ;;=4^F06.1
+ ;;^UTILITY(U,$J,358.3,26033,2)
+ ;;=^5003054
+ ;;^UTILITY(U,$J,358.3,26034,0)
+ ;;=F06.1^^69^1080^4
+ ;;^UTILITY(U,$J,358.3,26034,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26034,1,3,0)
+ ;;=3^Catatonic Disorder d/t Another Medical Condition
+ ;;^UTILITY(U,$J,358.3,26034,1,4,0)
+ ;;=4^F06.1
+ ;;^UTILITY(U,$J,358.3,26034,2)
+ ;;=^5003054
+ ;;^UTILITY(U,$J,358.3,26035,0)
+ ;;=F06.1^^69^1080^3
+ ;;^UTILITY(U,$J,358.3,26035,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26035,1,3,0)
+ ;;=3^Catatonia,Unspec
+ ;;^UTILITY(U,$J,358.3,26035,1,4,0)
+ ;;=4^F06.1
+ ;;^UTILITY(U,$J,358.3,26035,2)
+ ;;=^5003054
+ ;;^UTILITY(U,$J,358.3,26036,0)
+ ;;=R29.818^^69^1080^6
+ ;;^UTILITY(U,$J,358.3,26036,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26036,1,3,0)
+ ;;=3^Nervous & Musculoskeletal System Symptoms,Other
+ ;;^UTILITY(U,$J,358.3,26036,1,4,0)
+ ;;=4^R29.818
+ ;;^UTILITY(U,$J,358.3,26036,2)
+ ;;=^5019318
+ ;;^UTILITY(U,$J,358.3,26037,0)
+ ;;=F06.2^^69^1080^7
+ ;;^UTILITY(U,$J,358.3,26037,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26037,1,3,0)
+ ;;=3^Psychotic Disorder d/t Another Med Cond w/ Delusions
+ ;;^UTILITY(U,$J,358.3,26037,1,4,0)
+ ;;=4^F06.2
+ ;;^UTILITY(U,$J,358.3,26037,2)
+ ;;=^5003055
+ ;;^UTILITY(U,$J,358.3,26038,0)
+ ;;=F06.0^^69^1080^8
+ ;;^UTILITY(U,$J,358.3,26038,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26038,1,3,0)
+ ;;=3^Psychotic Disorder d/t Another Med Cond w/ Hallucinations
+ ;;^UTILITY(U,$J,358.3,26038,1,4,0)
+ ;;=4^F06.0
+ ;;^UTILITY(U,$J,358.3,26038,2)
+ ;;=^5003053
+ ;;^UTILITY(U,$J,358.3,26039,0)
+ ;;=F52.32^^69^1081^1
+ ;;^UTILITY(U,$J,358.3,26039,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26039,1,3,0)
+ ;;=3^Delayed Ejaculation
+ ;;^UTILITY(U,$J,358.3,26039,1,4,0)
+ ;;=4^F52.32
+ ;;^UTILITY(U,$J,358.3,26039,2)
+ ;;=^331927
+ ;;^UTILITY(U,$J,358.3,26040,0)
+ ;;=F52.21^^69^1081^2
+ ;;^UTILITY(U,$J,358.3,26040,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26040,1,3,0)
+ ;;=3^Erectile Disorder
+ ;;^UTILITY(U,$J,358.3,26040,1,4,0)
+ ;;=4^F52.21
+ ;;^UTILITY(U,$J,358.3,26040,2)
+ ;;=^5003620
+ ;;^UTILITY(U,$J,358.3,26041,0)
+ ;;=F52.31^^69^1081^3
+ ;;^UTILITY(U,$J,358.3,26041,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26041,1,3,0)
+ ;;=3^Female Orgasmic Disorder
+ ;;^UTILITY(U,$J,358.3,26041,1,4,0)
+ ;;=4^F52.31
+ ;;^UTILITY(U,$J,358.3,26041,2)
+ ;;=^331926
+ ;;^UTILITY(U,$J,358.3,26042,0)
+ ;;=F52.22^^69^1081^4
+ ;;^UTILITY(U,$J,358.3,26042,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26042,1,3,0)
+ ;;=3^Female Sexual Interest/Arousal Disorder
+ ;;^UTILITY(U,$J,358.3,26042,1,4,0)
+ ;;=4^F52.22
+ ;;^UTILITY(U,$J,358.3,26042,2)
+ ;;=^5003621
+ ;;^UTILITY(U,$J,358.3,26043,0)
+ ;;=F52.6^^69^1081^5
+ ;;^UTILITY(U,$J,358.3,26043,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26043,1,3,0)
+ ;;=3^Genito-Pelvic Pain/Penetration Disorder
+ ;;^UTILITY(U,$J,358.3,26043,1,4,0)
+ ;;=4^F52.6
+ ;;^UTILITY(U,$J,358.3,26043,2)
+ ;;=^5003623
+ ;;^UTILITY(U,$J,358.3,26044,0)
+ ;;=F52.0^^69^1081^6
+ ;;^UTILITY(U,$J,358.3,26044,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26044,1,3,0)
+ ;;=3^Male Hypoactive Sexual Desire Disorder
+ ;;^UTILITY(U,$J,358.3,26044,1,4,0)
+ ;;=4^F52.0
+ ;;^UTILITY(U,$J,358.3,26044,2)
+ ;;=^5003618
+ ;;^UTILITY(U,$J,358.3,26045,0)
+ ;;=F52.4^^69^1081^7
+ ;;^UTILITY(U,$J,358.3,26045,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26045,1,3,0)
+ ;;=3^Premature (Early) Ejaculation
+ ;;^UTILITY(U,$J,358.3,26045,1,4,0)
+ ;;=4^F52.4
+ ;;^UTILITY(U,$J,358.3,26045,2)
+ ;;=^331928
+ ;;^UTILITY(U,$J,358.3,26046,0)
+ ;;=F52.8^^69^1081^9
+ ;;^UTILITY(U,$J,358.3,26046,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26046,1,3,0)
+ ;;=3^Sexual Dysfuntion,Other
+ ;;^UTILITY(U,$J,358.3,26046,1,4,0)
+ ;;=4^F52.8
+ ;;^UTILITY(U,$J,358.3,26046,2)
+ ;;=^5003624
+ ;;^UTILITY(U,$J,358.3,26047,0)
+ ;;=F52.9^^69^1081^8
+ ;;^UTILITY(U,$J,358.3,26047,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26047,1,3,0)
+ ;;=3^Sexual Dysfunction,Unspec
+ ;;^UTILITY(U,$J,358.3,26047,1,4,0)
+ ;;=4^F52.9
+ ;;^UTILITY(U,$J,358.3,26047,2)
+ ;;=^5003625
+ ;;^UTILITY(U,$J,358.3,26048,0)
+ ;;=G47.09^^69^1082^16
+ ;;^UTILITY(U,$J,358.3,26048,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26048,1,3,0)
+ ;;=3^Insomnia,Other Specified
+ ;;^UTILITY(U,$J,358.3,26048,1,4,0)
+ ;;=4^G47.09
+ ;;^UTILITY(U,$J,358.3,26048,2)
+ ;;=^5003970
+ ;;^UTILITY(U,$J,358.3,26049,0)
+ ;;=G47.00^^69^1082^17
+ ;;^UTILITY(U,$J,358.3,26049,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26049,1,3,0)
+ ;;=3^Insomnia,Unspec
+ ;;^UTILITY(U,$J,358.3,26049,1,4,0)
+ ;;=4^G47.00
+ ;;^UTILITY(U,$J,358.3,26049,2)
+ ;;=^332924
+ ;;^UTILITY(U,$J,358.3,26050,0)
+ ;;=G47.10^^69^1082^14
+ ;;^UTILITY(U,$J,358.3,26050,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26050,1,3,0)
+ ;;=3^Hypersomnolence Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,26050,1,4,0)
+ ;;=4^G47.10
+ ;;^UTILITY(U,$J,358.3,26050,2)
+ ;;=^332926
+ ;;^UTILITY(U,$J,358.3,26051,0)
+ ;;=G47.419^^69^1082^20
+ ;;^UTILITY(U,$J,358.3,26051,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26051,1,3,0)
+ ;;=3^Narcolepsy w/o Cataplexy w/ Hypocretin Deficiency
+ ;;^UTILITY(U,$J,358.3,26051,1,4,0)
+ ;;=4^G47.419
+ ;;^UTILITY(U,$J,358.3,26051,2)
+ ;;=^5003982
+ ;;^UTILITY(U,$J,358.3,26052,0)
+ ;;=G47.33^^69^1082^24
+ ;;^UTILITY(U,$J,358.3,26052,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26052,1,3,0)
+ ;;=3^Obstructive Sleep Apnea Hypopnea
+ ;;^UTILITY(U,$J,358.3,26052,1,4,0)
+ ;;=4^G47.33
+ ;;^UTILITY(U,$J,358.3,26052,2)
+ ;;=^332763
+ ;;^UTILITY(U,$J,358.3,26053,0)
+ ;;=G47.31^^69^1082^4
+ ;;^UTILITY(U,$J,358.3,26053,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26053,1,3,0)
+ ;;=3^Central Sleep Apnea,Idiopathic
+ ;;^UTILITY(U,$J,358.3,26053,1,4,0)
+ ;;=4^G47.31
+ ;;^UTILITY(U,$J,358.3,26053,2)
+ ;;=^332761
+ ;;^UTILITY(U,$J,358.3,26054,0)
+ ;;=G47.21^^69^1082^7
+ ;;^UTILITY(U,$J,358.3,26054,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26054,1,3,0)
+ ;;=3^Circadian Rhythm Sleep-Wake D/O;Delayed Sleep Phase Type
+ ;;^UTILITY(U,$J,358.3,26054,1,4,0)
+ ;;=4^G47.21
+ ;;^UTILITY(U,$J,358.3,26054,2)
+ ;;=^332769
+ ;;^UTILITY(U,$J,358.3,26055,0)
+ ;;=G47.22^^69^1082^6
+ ;;^UTILITY(U,$J,358.3,26055,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26055,1,3,0)
+ ;;=3^Circadian Rhythm Sleep-Wake D/O;Advanced Sleep Phase Type
+ ;;^UTILITY(U,$J,358.3,26055,1,4,0)
+ ;;=4^G47.22
+ ;;^UTILITY(U,$J,358.3,26055,2)
+ ;;=^332770
+ ;;^UTILITY(U,$J,358.3,26056,0)
+ ;;=G47.23^^69^1082^8
+ ;;^UTILITY(U,$J,358.3,26056,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26056,1,3,0)
+ ;;=3^Circadian Rhythm Sleep-Wake D/O;Irregular Sleep Wake Type
+ ;;^UTILITY(U,$J,358.3,26056,1,4,0)
+ ;;=4^G47.23
+ ;;^UTILITY(U,$J,358.3,26056,2)
+ ;;=^5003975
+ ;;^UTILITY(U,$J,358.3,26057,0)
+ ;;=G47.24^^69^1082^9
+ ;;^UTILITY(U,$J,358.3,26057,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26057,1,3,0)
+ ;;=3^Circadian Rhythm Sleep-Wake D/O;Non-24 Hr Sleep Wake Type
+ ;;^UTILITY(U,$J,358.3,26057,1,4,0)
+ ;;=4^G47.24
+ ;;^UTILITY(U,$J,358.3,26057,2)
+ ;;=^5003976
+ ;;^UTILITY(U,$J,358.3,26058,0)
+ ;;=G47.26^^69^1082^10
+ ;;^UTILITY(U,$J,358.3,26058,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26058,1,3,0)
+ ;;=3^Circadian Rhythm Sleep-Wake D/O;Shift Work Type
+ ;;^UTILITY(U,$J,358.3,26058,1,4,0)
+ ;;=4^G47.26
+ ;;^UTILITY(U,$J,358.3,26058,2)
+ ;;=^332774
+ ;;^UTILITY(U,$J,358.3,26059,0)
+ ;;=G47.20^^69^1082^11
+ ;;^UTILITY(U,$J,358.3,26059,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26059,1,3,0)
+ ;;=3^Circadian Rhythm Sleep-Wake D/O;Unspec Type
+ ;;^UTILITY(U,$J,358.3,26059,1,4,0)
+ ;;=4^G47.20
+ ;;^UTILITY(U,$J,358.3,26059,2)
+ ;;=^5003974
+ ;;^UTILITY(U,$J,358.3,26060,0)
+ ;;=F51.3^^69^1082^22
+ ;;^UTILITY(U,$J,358.3,26060,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26060,1,3,0)
+ ;;=3^Non-Rapid Eye Movement Sleep Arousal D/O;Sleepwalking Type
+ ;;^UTILITY(U,$J,358.3,26060,1,4,0)
+ ;;=4^F51.3
+ ;;^UTILITY(U,$J,358.3,26060,2)
+ ;;=^5003613
+ ;;^UTILITY(U,$J,358.3,26061,0)
+ ;;=F51.4^^69^1082^23
+ ;;^UTILITY(U,$J,358.3,26061,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26061,1,3,0)
+ ;;=3^Non-Rapid Eye Movement Sleep Arousal D/O;Sleep Terror Type
+ ;;^UTILITY(U,$J,358.3,26061,1,4,0)
+ ;;=4^F51.4
+ ;;^UTILITY(U,$J,358.3,26061,2)
+ ;;=^5003614
+ ;;^UTILITY(U,$J,358.3,26062,0)
+ ;;=F51.5^^69^1082^21
+ ;;^UTILITY(U,$J,358.3,26062,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26062,1,3,0)
+ ;;=3^Nightmare Disorder
+ ;;^UTILITY(U,$J,358.3,26062,1,4,0)
+ ;;=4^F51.5
+ ;;^UTILITY(U,$J,358.3,26062,2)
+ ;;=^5003615
+ ;;^UTILITY(U,$J,358.3,26063,0)
+ ;;=G47.52^^69^1082^25
+ ;;^UTILITY(U,$J,358.3,26063,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26063,1,3,0)
+ ;;=3^Rapid Eye Movement Sleep Behavior Disorder
+ ;;^UTILITY(U,$J,358.3,26063,1,4,0)
+ ;;=4^G47.52
+ ;;^UTILITY(U,$J,358.3,26063,2)
+ ;;=^332778
+ ;;^UTILITY(U,$J,358.3,26064,0)
+ ;;=G25.81^^69^1082^26
+ ;;^UTILITY(U,$J,358.3,26064,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26064,1,3,0)
+ ;;=3^Restless Legs Syndrome
+ ;;^UTILITY(U,$J,358.3,26064,1,4,0)
+ ;;=4^G25.81
+ ;;^UTILITY(U,$J,358.3,26064,2)
+ ;;=^5003801
+ ;;^UTILITY(U,$J,358.3,26065,0)
+ ;;=G47.19^^69^1082^13
+ ;;^UTILITY(U,$J,358.3,26065,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,26065,1,3,0)
+ ;;=3^Hypersomnolence Disorder,Other Specified
+ ;;^UTILITY(U,$J,358.3,26065,1,4,0)
+ ;;=4^G47.19

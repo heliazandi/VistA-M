@@ -1,124 +1,380 @@
-IBDEI03X ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI03X ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,1405,1,0)
+ ;;^UTILITY(U,$J,358.3,4669,1,1,0)
+ ;;=1^Problem Focus
+ ;;^UTILITY(U,$J,358.3,4669,1,2,0)
+ ;;=2^99201
+ ;;^UTILITY(U,$J,358.3,4670,0)
+ ;;=99202^^21^289^2
+ ;;^UTILITY(U,$J,358.3,4670,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4670,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,4670,1,2,0)
+ ;;=2^99202
+ ;;^UTILITY(U,$J,358.3,4671,0)
+ ;;=99203^^21^289^3
+ ;;^UTILITY(U,$J,358.3,4671,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4671,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,4671,1,2,0)
+ ;;=2^99203
+ ;;^UTILITY(U,$J,358.3,4672,0)
+ ;;=99204^^21^289^4
+ ;;^UTILITY(U,$J,358.3,4672,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4672,1,1,0)
+ ;;=1^Comprehensive, Moderate
+ ;;^UTILITY(U,$J,358.3,4672,1,2,0)
+ ;;=2^99204
+ ;;^UTILITY(U,$J,358.3,4673,0)
+ ;;=99205^^21^289^5
+ ;;^UTILITY(U,$J,358.3,4673,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4673,1,1,0)
+ ;;=1^Comprehensive, High
+ ;;^UTILITY(U,$J,358.3,4673,1,2,0)
+ ;;=2^99205
+ ;;^UTILITY(U,$J,358.3,4674,0)
+ ;;=99211^^21^290^1
+ ;;^UTILITY(U,$J,358.3,4674,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4674,1,1,0)
+ ;;=1^Brief (no MD seen)
+ ;;^UTILITY(U,$J,358.3,4674,1,2,0)
+ ;;=2^99211
+ ;;^UTILITY(U,$J,358.3,4675,0)
+ ;;=99212^^21^290^2
+ ;;^UTILITY(U,$J,358.3,4675,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4675,1,1,0)
+ ;;=1^Problem Focused
+ ;;^UTILITY(U,$J,358.3,4675,1,2,0)
+ ;;=2^99212
+ ;;^UTILITY(U,$J,358.3,4676,0)
+ ;;=99213^^21^290^3
+ ;;^UTILITY(U,$J,358.3,4676,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4676,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,4676,1,2,0)
+ ;;=2^99213
+ ;;^UTILITY(U,$J,358.3,4677,0)
+ ;;=99214^^21^290^4
+ ;;^UTILITY(U,$J,358.3,4677,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4677,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,4677,1,2,0)
+ ;;=2^99214
+ ;;^UTILITY(U,$J,358.3,4678,0)
+ ;;=99215^^21^290^5
+ ;;^UTILITY(U,$J,358.3,4678,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4678,1,1,0)
+ ;;=1^Comprehensive
+ ;;^UTILITY(U,$J,358.3,4678,1,2,0)
+ ;;=2^99215
+ ;;^UTILITY(U,$J,358.3,4679,0)
+ ;;=99241^^21^291^1
+ ;;^UTILITY(U,$J,358.3,4679,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4679,1,1,0)
+ ;;=1^Problem Focused
+ ;;^UTILITY(U,$J,358.3,4679,1,2,0)
+ ;;=2^99241
+ ;;^UTILITY(U,$J,358.3,4680,0)
+ ;;=99242^^21^291^2
+ ;;^UTILITY(U,$J,358.3,4680,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4680,1,1,0)
+ ;;=1^Expanded Problem Focus
+ ;;^UTILITY(U,$J,358.3,4680,1,2,0)
+ ;;=2^99242
+ ;;^UTILITY(U,$J,358.3,4681,0)
+ ;;=99243^^21^291^3
+ ;;^UTILITY(U,$J,358.3,4681,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4681,1,1,0)
+ ;;=1^Detailed
+ ;;^UTILITY(U,$J,358.3,4681,1,2,0)
+ ;;=2^99243
+ ;;^UTILITY(U,$J,358.3,4682,0)
+ ;;=99244^^21^291^4
+ ;;^UTILITY(U,$J,358.3,4682,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4682,1,1,0)
+ ;;=1^Comprehensive, Moderate
+ ;;^UTILITY(U,$J,358.3,4682,1,2,0)
+ ;;=2^99244
+ ;;^UTILITY(U,$J,358.3,4683,0)
+ ;;=99245^^21^291^5
+ ;;^UTILITY(U,$J,358.3,4683,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4683,1,1,0)
+ ;;=1^Comprehensive, High
+ ;;^UTILITY(U,$J,358.3,4683,1,2,0)
+ ;;=2^99245
+ ;;^UTILITY(U,$J,358.3,4684,0)
+ ;;=99024^^21^292^1
+ ;;^UTILITY(U,$J,358.3,4684,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,4684,1,1,0)
+ ;;=1^Post-Op Follow-up Visit
+ ;;^UTILITY(U,$J,358.3,4684,1,2,0)
+ ;;=2^99024
+ ;;^UTILITY(U,$J,358.3,4685,0)
+ ;;=K12.0^^22^293^12
+ ;;^UTILITY(U,$J,358.3,4685,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1405,1,3,0)
- ;;=3^Poisoning by oth systemic antibiotics, undetermined, sequela
- ;;^UTILITY(U,$J,358.3,1405,1,4,0)
- ;;=4^T36.8X4S
- ;;^UTILITY(U,$J,358.3,1405,2)
- ;;=^5049411
- ;;^UTILITY(U,$J,358.3,1406,0)
- ;;=T49.6X1A^^8^135^54
- ;;^UTILITY(U,$J,358.3,1406,1,0)
+ ;;^UTILITY(U,$J,358.3,4685,1,3,0)
+ ;;=3^Aphthous Stomatitis
+ ;;^UTILITY(U,$J,358.3,4685,1,4,0)
+ ;;=4^K12.0
+ ;;^UTILITY(U,$J,358.3,4685,2)
+ ;;=^5008483
+ ;;^UTILITY(U,$J,358.3,4686,0)
+ ;;=L83.^^22^293^1
+ ;;^UTILITY(U,$J,358.3,4686,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1406,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, accidental, init
- ;;^UTILITY(U,$J,358.3,1406,1,4,0)
- ;;=4^T49.6X1A
- ;;^UTILITY(U,$J,358.3,1406,2)
- ;;=^5051914
- ;;^UTILITY(U,$J,358.3,1407,0)
- ;;=T49.6X1D^^8^135^55
- ;;^UTILITY(U,$J,358.3,1407,1,0)
+ ;;^UTILITY(U,$J,358.3,4686,1,3,0)
+ ;;=3^Acanthosis Nigricans
+ ;;^UTILITY(U,$J,358.3,4686,1,4,0)
+ ;;=4^L83.
+ ;;^UTILITY(U,$J,358.3,4686,2)
+ ;;=^1451
+ ;;^UTILITY(U,$J,358.3,4687,0)
+ ;;=E85.9^^22^293^10
+ ;;^UTILITY(U,$J,358.3,4687,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1407,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, accidental, subs
- ;;^UTILITY(U,$J,358.3,1407,1,4,0)
- ;;=4^T49.6X1D
- ;;^UTILITY(U,$J,358.3,1407,2)
- ;;=^5051915
- ;;^UTILITY(U,$J,358.3,1408,0)
- ;;=T49.6X1S^^8^135^56
- ;;^UTILITY(U,$J,358.3,1408,1,0)
+ ;;^UTILITY(U,$J,358.3,4687,1,3,0)
+ ;;=3^Amyloidosis,Unspec
+ ;;^UTILITY(U,$J,358.3,4687,1,4,0)
+ ;;=4^E85.9
+ ;;^UTILITY(U,$J,358.3,4687,2)
+ ;;=^334185
+ ;;^UTILITY(U,$J,358.3,4688,0)
+ ;;=L63.8^^22^293^4
+ ;;^UTILITY(U,$J,358.3,4688,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1408,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, accidental, sequela
- ;;^UTILITY(U,$J,358.3,1408,1,4,0)
- ;;=4^T49.6X1S
- ;;^UTILITY(U,$J,358.3,1408,2)
- ;;=^5051916
- ;;^UTILITY(U,$J,358.3,1409,0)
- ;;=T49.6X3D^^8^135^64
- ;;^UTILITY(U,$J,358.3,1409,1,0)
+ ;;^UTILITY(U,$J,358.3,4688,1,3,0)
+ ;;=3^Alopecia Areata,Other
+ ;;^UTILITY(U,$J,358.3,4688,1,4,0)
+ ;;=4^L63.8
+ ;;^UTILITY(U,$J,358.3,4688,2)
+ ;;=^5009245
+ ;;^UTILITY(U,$J,358.3,4689,0)
+ ;;=L63.9^^22^293^5
+ ;;^UTILITY(U,$J,358.3,4689,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1409,1,3,0)
- ;;=3^Poisoning by otorhino drugs and preparations, assault, subs
- ;;^UTILITY(U,$J,358.3,1409,1,4,0)
- ;;=4^T49.6X3D
- ;;^UTILITY(U,$J,358.3,1409,2)
- ;;=^5051921
- ;;^UTILITY(U,$J,358.3,1410,0)
- ;;=T49.6X3S^^8^135^57
- ;;^UTILITY(U,$J,358.3,1410,1,0)
+ ;;^UTILITY(U,$J,358.3,4689,1,3,0)
+ ;;=3^Alopecia Areata,Unspec
+ ;;^UTILITY(U,$J,358.3,4689,1,4,0)
+ ;;=4^L63.9
+ ;;^UTILITY(U,$J,358.3,4689,2)
+ ;;=^5009246
+ ;;^UTILITY(U,$J,358.3,4690,0)
+ ;;=L70.0^^22^293^3
+ ;;^UTILITY(U,$J,358.3,4690,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1410,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, assault, sequela
- ;;^UTILITY(U,$J,358.3,1410,1,4,0)
- ;;=4^T49.6X3S
- ;;^UTILITY(U,$J,358.3,1410,2)
- ;;=^5051922
- ;;^UTILITY(U,$J,358.3,1411,0)
- ;;=T49.6X2A^^8^135^58
- ;;^UTILITY(U,$J,358.3,1411,1,0)
+ ;;^UTILITY(U,$J,358.3,4690,1,3,0)
+ ;;=3^Acne Vulgaris
+ ;;^UTILITY(U,$J,358.3,4690,1,4,0)
+ ;;=4^L70.0
+ ;;^UTILITY(U,$J,358.3,4690,2)
+ ;;=^5009268
+ ;;^UTILITY(U,$J,358.3,4691,0)
+ ;;=L73.0^^22^293^2
+ ;;^UTILITY(U,$J,358.3,4691,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1411,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, self-harm, init
- ;;^UTILITY(U,$J,358.3,1411,1,4,0)
- ;;=4^T49.6X2A
- ;;^UTILITY(U,$J,358.3,1411,2)
- ;;=^5051917
- ;;^UTILITY(U,$J,358.3,1412,0)
- ;;=T49.6X2D^^8^135^59
- ;;^UTILITY(U,$J,358.3,1412,1,0)
+ ;;^UTILITY(U,$J,358.3,4691,1,3,0)
+ ;;=3^Acne Keloid
+ ;;^UTILITY(U,$J,358.3,4691,1,4,0)
+ ;;=4^L73.0
+ ;;^UTILITY(U,$J,358.3,4691,2)
+ ;;=^2149
+ ;;^UTILITY(U,$J,358.3,4692,0)
+ ;;=L63.0^^22^293^8
+ ;;^UTILITY(U,$J,358.3,4692,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1412,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, self-harm, subs
- ;;^UTILITY(U,$J,358.3,1412,1,4,0)
- ;;=4^T49.6X2D
- ;;^UTILITY(U,$J,358.3,1412,2)
- ;;=^5051918
- ;;^UTILITY(U,$J,358.3,1413,0)
- ;;=T49.6X2S^^8^135^60
- ;;^UTILITY(U,$J,358.3,1413,1,0)
+ ;;^UTILITY(U,$J,358.3,4692,1,3,0)
+ ;;=3^Alopecia Totalis
+ ;;^UTILITY(U,$J,358.3,4692,1,4,0)
+ ;;=4^L63.0
+ ;;^UTILITY(U,$J,358.3,4692,2)
+ ;;=^5009242
+ ;;^UTILITY(U,$J,358.3,4693,0)
+ ;;=L63.1^^22^293^9
+ ;;^UTILITY(U,$J,358.3,4693,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1413,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, self-harm, sequela
- ;;^UTILITY(U,$J,358.3,1413,1,4,0)
- ;;=4^T49.6X2S
- ;;^UTILITY(U,$J,358.3,1413,2)
- ;;=^5051919
- ;;^UTILITY(U,$J,358.3,1414,0)
- ;;=T49.6X4A^^8^135^61
- ;;^UTILITY(U,$J,358.3,1414,1,0)
+ ;;^UTILITY(U,$J,358.3,4693,1,3,0)
+ ;;=3^Alopecia Universalis
+ ;;^UTILITY(U,$J,358.3,4693,1,4,0)
+ ;;=4^L63.1
+ ;;^UTILITY(U,$J,358.3,4693,2)
+ ;;=^5009243
+ ;;^UTILITY(U,$J,358.3,4694,0)
+ ;;=L65.2^^22^293^7
+ ;;^UTILITY(U,$J,358.3,4694,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1414,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, undetermined, init
- ;;^UTILITY(U,$J,358.3,1414,1,4,0)
- ;;=4^T49.6X4A
- ;;^UTILITY(U,$J,358.3,1414,2)
- ;;=^5051923
- ;;^UTILITY(U,$J,358.3,1415,0)
- ;;=T49.6X4D^^8^135^62
- ;;^UTILITY(U,$J,358.3,1415,1,0)
+ ;;^UTILITY(U,$J,358.3,4694,1,3,0)
+ ;;=3^Alopecia Mucinosa
+ ;;^UTILITY(U,$J,358.3,4694,1,4,0)
+ ;;=4^L65.2
+ ;;^UTILITY(U,$J,358.3,4694,2)
+ ;;=^5103
+ ;;^UTILITY(U,$J,358.3,4695,0)
+ ;;=L66.9^^22^293^6
+ ;;^UTILITY(U,$J,358.3,4695,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1415,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, undetermined, subs
- ;;^UTILITY(U,$J,358.3,1415,1,4,0)
- ;;=4^T49.6X4D
- ;;^UTILITY(U,$J,358.3,1415,2)
- ;;=^5051924
- ;;^UTILITY(U,$J,358.3,1416,0)
- ;;=T49.6X4S^^8^135^63
- ;;^UTILITY(U,$J,358.3,1416,1,0)
+ ;;^UTILITY(U,$J,358.3,4695,1,3,0)
+ ;;=3^Alopecia Cicatricial,Unspec
+ ;;^UTILITY(U,$J,358.3,4695,1,4,0)
+ ;;=4^L66.9
+ ;;^UTILITY(U,$J,358.3,4695,2)
+ ;;=^5009258
+ ;;^UTILITY(U,$J,358.3,4696,0)
+ ;;=A60.9^^22^293^11
+ ;;^UTILITY(U,$J,358.3,4696,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,1416,1,3,0)
- ;;=3^Poisoning by otorhino drugs and prep, undetermined, sequela
- ;;^UTILITY(U,$J,358.3,1416,1,4,0)
- ;;=4^T49.6X4S
- ;;^UTILITY(U,$J,358.3,1416,2)
- ;;=^5051925
- ;;^UTILITY(U,$J,358.3,1417,0)
- ;;=T36.91XA^^8^135^65
+ ;;^UTILITY(U,$J,358.3,4696,1,3,0)
+ ;;=3^Anogenital Herpesviral Infection,Unspec
+ ;;^UTILITY(U,$J,358.3,4696,1,4,0)
+ ;;=4^A60.9
+ ;;^UTILITY(U,$J,358.3,4696,2)
+ ;;=^5000359
+ ;;^UTILITY(U,$J,358.3,4697,0)
+ ;;=L56.1^^22^294^28
+ ;;^UTILITY(U,$J,358.3,4697,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4697,1,3,0)
+ ;;=3^Drug Photoallergic Response
+ ;;^UTILITY(U,$J,358.3,4697,1,4,0)
+ ;;=4^L56.1
+ ;;^UTILITY(U,$J,358.3,4697,2)
+ ;;=^5009215
+ ;;^UTILITY(U,$J,358.3,4698,0)
+ ;;=L56.0^^22^294^29
+ ;;^UTILITY(U,$J,358.3,4698,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4698,1,3,0)
+ ;;=3^Drug Phototoxic Response
+ ;;^UTILITY(U,$J,358.3,4698,1,4,0)
+ ;;=4^L56.0
+ ;;^UTILITY(U,$J,358.3,4698,2)
+ ;;=^5009214
+ ;;^UTILITY(U,$J,358.3,4699,0)
+ ;;=L23.9^^22^294^6
+ ;;^UTILITY(U,$J,358.3,4699,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4699,1,3,0)
+ ;;=3^Dermatitis,Allergic Contact,Cause Unspec
+ ;;^UTILITY(U,$J,358.3,4699,1,4,0)
+ ;;=4^L23.9
+ ;;^UTILITY(U,$J,358.3,4699,2)
+ ;;=^5009125
+ ;;^UTILITY(U,$J,358.3,4700,0)
+ ;;=L30.9^^22^294^21
+ ;;^UTILITY(U,$J,358.3,4700,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4700,1,3,0)
+ ;;=3^Dermatitis,Unspec
+ ;;^UTILITY(U,$J,358.3,4700,1,4,0)
+ ;;=4^L30.9
+ ;;^UTILITY(U,$J,358.3,4700,2)
+ ;;=^5009159
+ ;;^UTILITY(U,$J,358.3,4701,0)
+ ;;=L24.9^^22^294^16
+ ;;^UTILITY(U,$J,358.3,4701,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4701,1,3,0)
+ ;;=3^Dermatitis,Irritant Contact,Cause Unspec
+ ;;^UTILITY(U,$J,358.3,4701,1,4,0)
+ ;;=4^L24.9
+ ;;^UTILITY(U,$J,358.3,4701,2)
+ ;;=^5009136
+ ;;^UTILITY(U,$J,358.3,4702,0)
+ ;;=L30.0^^22^294^17
+ ;;^UTILITY(U,$J,358.3,4702,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4702,1,3,0)
+ ;;=3^Dermatitis,Nummular
+ ;;^UTILITY(U,$J,358.3,4702,1,4,0)
+ ;;=4^L30.0
+ ;;^UTILITY(U,$J,358.3,4702,2)
+ ;;=^186823
+ ;;^UTILITY(U,$J,358.3,4703,0)
+ ;;=L23.2^^22^294^4
+ ;;^UTILITY(U,$J,358.3,4703,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4703,1,3,0)
+ ;;=3^Dermatitis,Allergic Contact d/t Cosmetics
+ ;;^UTILITY(U,$J,358.3,4703,1,4,0)
+ ;;=4^L23.2
+ ;;^UTILITY(U,$J,358.3,4703,2)
+ ;;=^5009117
+ ;;^UTILITY(U,$J,358.3,4704,0)
+ ;;=L24.3^^22^294^12
+ ;;^UTILITY(U,$J,358.3,4704,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4704,1,3,0)
+ ;;=3^Dermatitis,Irritant Contact d/t Cosmetics
+ ;;^UTILITY(U,$J,358.3,4704,1,4,0)
+ ;;=4^L24.3
+ ;;^UTILITY(U,$J,358.3,4704,2)
+ ;;=^5009129
+ ;;^UTILITY(U,$J,358.3,4705,0)
+ ;;=L27.2^^22^294^1
+ ;;^UTILITY(U,$J,358.3,4705,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4705,1,3,0)
+ ;;=3^Dermatitis d/t Ingested Food
+ ;;^UTILITY(U,$J,358.3,4705,1,4,0)
+ ;;=4^L27.2
+ ;;^UTILITY(U,$J,358.3,4705,2)
+ ;;=^5009146
+ ;;^UTILITY(U,$J,358.3,4706,0)
+ ;;=L21.8^^22^294^20
+ ;;^UTILITY(U,$J,358.3,4706,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4706,1,3,0)
+ ;;=3^Dermatitis,Seborrheic
+ ;;^UTILITY(U,$J,358.3,4706,1,4,0)
+ ;;=4^L21.8
+ ;;^UTILITY(U,$J,358.3,4706,2)
+ ;;=^303310
+ ;;^UTILITY(U,$J,358.3,4707,0)
+ ;;=L20.89^^22^294^7
+ ;;^UTILITY(U,$J,358.3,4707,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4707,1,3,0)
+ ;;=3^Dermatitis,Atopic
+ ;;^UTILITY(U,$J,358.3,4707,1,4,0)
+ ;;=4^L20.89
+ ;;^UTILITY(U,$J,358.3,4707,2)
+ ;;=^5009112
+ ;;^UTILITY(U,$J,358.3,4708,0)
+ ;;=E08.622^^22^294^23
+ ;;^UTILITY(U,$J,358.3,4708,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4708,1,3,0)
+ ;;=3^Diabetes d/t Underlying Condition w/ Skin Ulcer
+ ;;^UTILITY(U,$J,358.3,4708,1,4,0)
+ ;;=4^E08.622
+ ;;^UTILITY(U,$J,358.3,4708,2)
+ ;;=^5002535
+ ;;^UTILITY(U,$J,358.3,4709,0)
+ ;;=T81.31XA^^22^294^26
+ ;;^UTILITY(U,$J,358.3,4709,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,4709,1,3,0)
+ ;;=3^Disruption External Surgical Wound NEC,Init Encntr
+ ;;^UTILITY(U,$J,358.3,4709,1,4,0)
+ ;;=4^T81.31XA
+ ;;^UTILITY(U,$J,358.3,4709,2)
+ ;;=^5054470
+ ;;^UTILITY(U,$J,358.3,4710,0)
+ ;;=L26.^^22^294^8

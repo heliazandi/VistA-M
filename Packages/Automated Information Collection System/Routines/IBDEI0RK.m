@@ -1,122 +1,338 @@
-IBDEI0RK ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0RK ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,12930,2)
- ;;=^5009493
- ;;^UTILITY(U,$J,358.3,12931,0)
- ;;=L97.129^^53^582^200
- ;;^UTILITY(U,$J,358.3,12931,1,0)
+ ;;^UTILITY(U,$J,358.3,36420,1,3,0)
+ ;;=3^Athscl Autologous Artery CABG w/ Unstable Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,36420,1,4,0)
+ ;;=4^I25.720
+ ;;^UTILITY(U,$J,358.3,36420,2)
+ ;;=^5007125
+ ;;^UTILITY(U,$J,358.3,36421,0)
+ ;;=I25.711^^103^1549^13
+ ;;^UTILITY(U,$J,358.3,36421,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12931,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Thigh w/ Unspec Severity
- ;;^UTILITY(U,$J,358.3,12931,1,4,0)
- ;;=4^L97.129
- ;;^UTILITY(U,$J,358.3,12931,2)
- ;;=^5009494
- ;;^UTILITY(U,$J,358.3,12932,0)
- ;;=L97.211^^53^582^206
- ;;^UTILITY(U,$J,358.3,12932,1,0)
+ ;;^UTILITY(U,$J,358.3,36421,1,3,0)
+ ;;=3^Athscl Autologous Vein CABG w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,36421,1,4,0)
+ ;;=4^I25.711
+ ;;^UTILITY(U,$J,358.3,36421,2)
+ ;;=^5007122
+ ;;^UTILITY(U,$J,358.3,36422,0)
+ ;;=I25.718^^103^1549^14
+ ;;^UTILITY(U,$J,358.3,36422,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12932,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,12932,1,4,0)
- ;;=4^L97.211
- ;;^UTILITY(U,$J,358.3,12932,2)
- ;;=^5009500
- ;;^UTILITY(U,$J,358.3,12933,0)
- ;;=L97.212^^53^582^207
- ;;^UTILITY(U,$J,358.3,12933,1,0)
+ ;;^UTILITY(U,$J,358.3,36422,1,3,0)
+ ;;=3^Athscl Autologous Vein CABG w/ Ang Pctrs NEC
+ ;;^UTILITY(U,$J,358.3,36422,1,4,0)
+ ;;=4^I25.718
+ ;;^UTILITY(U,$J,358.3,36422,2)
+ ;;=^5007123
+ ;;^UTILITY(U,$J,358.3,36423,0)
+ ;;=I25.719^^103^1549^15
+ ;;^UTILITY(U,$J,358.3,36423,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12933,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,12933,1,4,0)
- ;;=4^L97.212
- ;;^UTILITY(U,$J,358.3,12933,2)
- ;;=^5009501
- ;;^UTILITY(U,$J,358.3,12934,0)
- ;;=L97.213^^53^582^208
- ;;^UTILITY(U,$J,358.3,12934,1,0)
+ ;;^UTILITY(U,$J,358.3,36423,1,3,0)
+ ;;=3^Athscl Autologous Vein CABG w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,36423,1,4,0)
+ ;;=4^I25.719
+ ;;^UTILITY(U,$J,358.3,36423,2)
+ ;;=^5007124
+ ;;^UTILITY(U,$J,358.3,36424,0)
+ ;;=I25.710^^103^1549^16
+ ;;^UTILITY(U,$J,358.3,36424,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12934,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,12934,1,4,0)
- ;;=4^L97.213
- ;;^UTILITY(U,$J,358.3,12934,2)
- ;;=^5009502
- ;;^UTILITY(U,$J,358.3,12935,0)
- ;;=L97.214^^53^582^209
- ;;^UTILITY(U,$J,358.3,12935,1,0)
+ ;;^UTILITY(U,$J,358.3,36424,1,3,0)
+ ;;=3^Athscl Autologous Vein CABG w/ Unstable Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,36424,1,4,0)
+ ;;=4^I25.710
+ ;;^UTILITY(U,$J,358.3,36424,2)
+ ;;=^5007121
+ ;;^UTILITY(U,$J,358.3,36425,0)
+ ;;=I25.761^^103^1549^17
+ ;;^UTILITY(U,$J,358.3,36425,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12935,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,12935,1,4,0)
- ;;=4^L97.214
- ;;^UTILITY(U,$J,358.3,12935,2)
- ;;=^5009503
- ;;^UTILITY(U,$J,358.3,12936,0)
- ;;=L97.219^^53^582^210
- ;;^UTILITY(U,$J,358.3,12936,1,0)
+ ;;^UTILITY(U,$J,358.3,36425,1,3,0)
+ ;;=3^Athscl Bypass Cor Art Transplt Hrt w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,36425,1,4,0)
+ ;;=4^I25.761
+ ;;^UTILITY(U,$J,358.3,36425,2)
+ ;;=^5007136
+ ;;^UTILITY(U,$J,358.3,36426,0)
+ ;;=I25.768^^103^1549^18
+ ;;^UTILITY(U,$J,358.3,36426,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12936,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Calf w/ Unspec Severity
- ;;^UTILITY(U,$J,358.3,12936,1,4,0)
- ;;=4^L97.219
- ;;^UTILITY(U,$J,358.3,12936,2)
- ;;=^5009504
- ;;^UTILITY(U,$J,358.3,12937,0)
- ;;=L97.221^^53^582^176
- ;;^UTILITY(U,$J,358.3,12937,1,0)
+ ;;^UTILITY(U,$J,358.3,36426,1,3,0)
+ ;;=3^Athscl Bypass Cor Art Transplt Hrt w/ Ang Pctrs NEC
+ ;;^UTILITY(U,$J,358.3,36426,1,4,0)
+ ;;=4^I25.768
+ ;;^UTILITY(U,$J,358.3,36426,2)
+ ;;=^5007137
+ ;;^UTILITY(U,$J,358.3,36427,0)
+ ;;=I25.769^^103^1549^19
+ ;;^UTILITY(U,$J,358.3,36427,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12937,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Breakdown of Skin
- ;;^UTILITY(U,$J,358.3,12937,1,4,0)
- ;;=4^L97.221
- ;;^UTILITY(U,$J,358.3,12937,2)
- ;;=^5009505
- ;;^UTILITY(U,$J,358.3,12938,0)
- ;;=L97.222^^53^582^177
- ;;^UTILITY(U,$J,358.3,12938,1,0)
+ ;;^UTILITY(U,$J,358.3,36427,1,3,0)
+ ;;=3^Athscl Bypass Cor Art Transplt Hrt w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,36427,1,4,0)
+ ;;=4^I25.769
+ ;;^UTILITY(U,$J,358.3,36427,2)
+ ;;=^5007138
+ ;;^UTILITY(U,$J,358.3,36428,0)
+ ;;=I25.760^^103^1549^20
+ ;;^UTILITY(U,$J,358.3,36428,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12938,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Fat Layer Exposed
- ;;^UTILITY(U,$J,358.3,12938,1,4,0)
- ;;=4^L97.222
- ;;^UTILITY(U,$J,358.3,12938,2)
- ;;=^5009506
- ;;^UTILITY(U,$J,358.3,12939,0)
- ;;=L97.223^^53^582^178
- ;;^UTILITY(U,$J,358.3,12939,1,0)
+ ;;^UTILITY(U,$J,358.3,36428,1,3,0)
+ ;;=3^Athscl Bypass Cor Art Transplt Hrt w/ Unstable Angina
+ ;;^UTILITY(U,$J,358.3,36428,1,4,0)
+ ;;=4^I25.760
+ ;;^UTILITY(U,$J,358.3,36428,2)
+ ;;=^5007135
+ ;;^UTILITY(U,$J,358.3,36429,0)
+ ;;=I25.701^^103^1549^23
+ ;;^UTILITY(U,$J,358.3,36429,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12939,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Necrosis of Muscle
- ;;^UTILITY(U,$J,358.3,12939,1,4,0)
- ;;=4^L97.223
- ;;^UTILITY(U,$J,358.3,12939,2)
- ;;=^5009507
- ;;^UTILITY(U,$J,358.3,12940,0)
- ;;=L97.224^^53^582^179
- ;;^UTILITY(U,$J,358.3,12940,1,0)
+ ;;^UTILITY(U,$J,358.3,36429,1,3,0)
+ ;;=3^Athscl CABG w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,36429,1,4,0)
+ ;;=4^I25.701
+ ;;^UTILITY(U,$J,358.3,36429,2)
+ ;;=^5007118
+ ;;^UTILITY(U,$J,358.3,36430,0)
+ ;;=I25.708^^103^1549^21
+ ;;^UTILITY(U,$J,358.3,36430,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12940,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Necrosis of Bone
- ;;^UTILITY(U,$J,358.3,12940,1,4,0)
- ;;=4^L97.224
- ;;^UTILITY(U,$J,358.3,12940,2)
- ;;=^5009508
- ;;^UTILITY(U,$J,358.3,12941,0)
- ;;=L97.229^^53^582^180
- ;;^UTILITY(U,$J,358.3,12941,1,0)
+ ;;^UTILITY(U,$J,358.3,36430,1,3,0)
+ ;;=3^Athscl CABG w/ Ang Pctrs NEC
+ ;;^UTILITY(U,$J,358.3,36430,1,4,0)
+ ;;=4^I25.708
+ ;;^UTILITY(U,$J,358.3,36430,2)
+ ;;=^5007119
+ ;;^UTILITY(U,$J,358.3,36431,0)
+ ;;=I25.709^^103^1549^25
+ ;;^UTILITY(U,$J,358.3,36431,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12941,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Left Calf w/ Unspec Severity
- ;;^UTILITY(U,$J,358.3,12941,1,4,0)
- ;;=4^L97.229
- ;;^UTILITY(U,$J,358.3,12941,2)
- ;;=^5009509
- ;;^UTILITY(U,$J,358.3,12942,0)
- ;;=L97.311^^53^582^201
- ;;^UTILITY(U,$J,358.3,12942,1,0)
+ ;;^UTILITY(U,$J,358.3,36431,1,3,0)
+ ;;=3^Athscl CABG w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,36431,1,4,0)
+ ;;=4^I25.709
+ ;;^UTILITY(U,$J,358.3,36431,2)
+ ;;=^5007120
+ ;;^UTILITY(U,$J,358.3,36432,0)
+ ;;=I25.700^^103^1549^27
+ ;;^UTILITY(U,$J,358.3,36432,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,12942,1,3,0)
- ;;=3^Non-Pressure Chr Ulcer of Right Ankle w/ Breakdown of Skin
+ ;;^UTILITY(U,$J,358.3,36432,1,3,0)
+ ;;=3^Athscl CABG w/ Unstable Angina
+ ;;^UTILITY(U,$J,358.3,36432,1,4,0)
+ ;;=4^I25.700
+ ;;^UTILITY(U,$J,358.3,36432,2)
+ ;;=^5007117
+ ;;^UTILITY(U,$J,358.3,36433,0)
+ ;;=I25.751^^103^1549^34
+ ;;^UTILITY(U,$J,358.3,36433,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36433,1,3,0)
+ ;;=3^Athscl Native Cor Art of Transplt Hrt w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,36433,1,4,0)
+ ;;=4^I25.751
+ ;;^UTILITY(U,$J,358.3,36433,2)
+ ;;=^5007132
+ ;;^UTILITY(U,$J,358.3,36434,0)
+ ;;=I25.758^^103^1549^35
+ ;;^UTILITY(U,$J,358.3,36434,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36434,1,3,0)
+ ;;=3^Athscl Native Cor Art of Transplt Hrt w/ Ang Pctrs NEC
+ ;;^UTILITY(U,$J,358.3,36434,1,4,0)
+ ;;=4^I25.758
+ ;;^UTILITY(U,$J,358.3,36434,2)
+ ;;=^5007133
+ ;;^UTILITY(U,$J,358.3,36435,0)
+ ;;=I25.759^^103^1549^36
+ ;;^UTILITY(U,$J,358.3,36435,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36435,1,3,0)
+ ;;=3^Athscl Native Cor Art of Transplt Hrt w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,36435,1,4,0)
+ ;;=4^I25.759
+ ;;^UTILITY(U,$J,358.3,36435,2)
+ ;;=^5007134
+ ;;^UTILITY(U,$J,358.3,36436,0)
+ ;;=I25.750^^103^1549^37
+ ;;^UTILITY(U,$J,358.3,36436,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36436,1,3,0)
+ ;;=3^Athscl Native Cor Art of Transplt Hrt w/ Unstable Angina
+ ;;^UTILITY(U,$J,358.3,36436,1,4,0)
+ ;;=4^I25.750
+ ;;^UTILITY(U,$J,358.3,36436,2)
+ ;;=^5007131
+ ;;^UTILITY(U,$J,358.3,36437,0)
+ ;;=I25.731^^103^1549^39
+ ;;^UTILITY(U,$J,358.3,36437,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36437,1,3,0)
+ ;;=3^Athscl Nonaut Bio CABG w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,36437,1,4,0)
+ ;;=4^I25.731
+ ;;^UTILITY(U,$J,358.3,36437,2)
+ ;;=^5007128
+ ;;^UTILITY(U,$J,358.3,36438,0)
+ ;;=I25.738^^103^1549^38
+ ;;^UTILITY(U,$J,358.3,36438,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36438,1,3,0)
+ ;;=3^Athscl Nonaut Bio CABG w/ Ang Pctrs NEC
+ ;;^UTILITY(U,$J,358.3,36438,1,4,0)
+ ;;=4^I25.738
+ ;;^UTILITY(U,$J,358.3,36438,2)
+ ;;=^5007129
+ ;;^UTILITY(U,$J,358.3,36439,0)
+ ;;=I25.739^^103^1549^40
+ ;;^UTILITY(U,$J,358.3,36439,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36439,1,3,0)
+ ;;=3^Athscl Nonaut Bio CABG w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,36439,1,4,0)
+ ;;=4^I25.739
+ ;;^UTILITY(U,$J,358.3,36439,2)
+ ;;=^5007130
+ ;;^UTILITY(U,$J,358.3,36440,0)
+ ;;=I25.730^^103^1549^41
+ ;;^UTILITY(U,$J,358.3,36440,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36440,1,3,0)
+ ;;=3^Athscl Nonaut Bio CABG w/ Unstable Angina
+ ;;^UTILITY(U,$J,358.3,36440,1,4,0)
+ ;;=4^I25.730
+ ;;^UTILITY(U,$J,358.3,36440,2)
+ ;;=^5007127
+ ;;^UTILITY(U,$J,358.3,36441,0)
+ ;;=I25.791^^103^1549^24
+ ;;^UTILITY(U,$J,358.3,36441,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36441,1,3,0)
+ ;;=3^Athscl CABG w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,36441,1,4,0)
+ ;;=4^I25.791
+ ;;^UTILITY(U,$J,358.3,36441,2)
+ ;;=^5007140
+ ;;^UTILITY(U,$J,358.3,36442,0)
+ ;;=I25.798^^103^1549^22
+ ;;^UTILITY(U,$J,358.3,36442,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36442,1,3,0)
+ ;;=3^Athscl CABG w/ Ang Pctrs NEC
+ ;;^UTILITY(U,$J,358.3,36442,1,4,0)
+ ;;=4^I25.798
+ ;;^UTILITY(U,$J,358.3,36442,2)
+ ;;=^5133558
+ ;;^UTILITY(U,$J,358.3,36443,0)
+ ;;=I25.799^^103^1549^26
+ ;;^UTILITY(U,$J,358.3,36443,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36443,1,3,0)
+ ;;=3^Athscl CABG w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,36443,1,4,0)
+ ;;=4^I25.799
+ ;;^UTILITY(U,$J,358.3,36443,2)
+ ;;=^5133559
+ ;;^UTILITY(U,$J,358.3,36444,0)
+ ;;=I25.790^^103^1549^28
+ ;;^UTILITY(U,$J,358.3,36444,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36444,1,3,0)
+ ;;=3^Athscl CABG w/ Unstable Angina
+ ;;^UTILITY(U,$J,358.3,36444,1,4,0)
+ ;;=4^I25.790
+ ;;^UTILITY(U,$J,358.3,36444,2)
+ ;;=^5007139
+ ;;^UTILITY(U,$J,358.3,36445,0)
+ ;;=I25.111^^103^1549^29
+ ;;^UTILITY(U,$J,358.3,36445,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36445,1,3,0)
+ ;;=3^Athscl Hrt Disease Native Cor Art w/ Ang Pctrs w/ Documented Spasm
+ ;;^UTILITY(U,$J,358.3,36445,1,4,0)
+ ;;=4^I25.111
+ ;;^UTILITY(U,$J,358.3,36445,2)
+ ;;=^5007109
+ ;;^UTILITY(U,$J,358.3,36446,0)
+ ;;=I25.118^^103^1549^30
+ ;;^UTILITY(U,$J,358.3,36446,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36446,1,3,0)
+ ;;=3^Athscl Hrt Disease Native Cor Art w/ Ang Pctrs NEC
+ ;;^UTILITY(U,$J,358.3,36446,1,4,0)
+ ;;=4^I25.118
+ ;;^UTILITY(U,$J,358.3,36446,2)
+ ;;=^5007110
+ ;;^UTILITY(U,$J,358.3,36447,0)
+ ;;=I25.119^^103^1549^31
+ ;;^UTILITY(U,$J,358.3,36447,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36447,1,3,0)
+ ;;=3^Athscl Hrt Disease Native Cor Art w/ Ang Pctrs,Unspec
+ ;;^UTILITY(U,$J,358.3,36447,1,4,0)
+ ;;=4^I25.119
+ ;;^UTILITY(U,$J,358.3,36447,2)
+ ;;=^5007111
+ ;;^UTILITY(U,$J,358.3,36448,0)
+ ;;=I25.110^^103^1549^32
+ ;;^UTILITY(U,$J,358.3,36448,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36448,1,3,0)
+ ;;=3^Athscl Hrt Disease Native Cor Art w/ Unstable Angina
+ ;;^UTILITY(U,$J,358.3,36448,1,4,0)
+ ;;=4^I25.110
+ ;;^UTILITY(U,$J,358.3,36448,2)
+ ;;=^5007108
+ ;;^UTILITY(U,$J,358.3,36449,0)
+ ;;=I25.10^^103^1549^33
+ ;;^UTILITY(U,$J,358.3,36449,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36449,1,3,0)
+ ;;=3^Athscl Hrt Disease Native Cor Art w/o Ang Pctrs
+ ;;^UTILITY(U,$J,358.3,36449,1,4,0)
+ ;;=4^I25.10
+ ;;^UTILITY(U,$J,358.3,36449,2)
+ ;;=^5007107
+ ;;^UTILITY(U,$J,358.3,36450,0)
+ ;;=I48.0^^103^1549^42
+ ;;^UTILITY(U,$J,358.3,36450,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36450,1,3,0)
+ ;;=3^Atrial Fibrillation
+ ;;^UTILITY(U,$J,358.3,36450,1,4,0)
+ ;;=4^I48.0
+ ;;^UTILITY(U,$J,358.3,36450,2)
+ ;;=^90473
+ ;;^UTILITY(U,$J,358.3,36451,0)
+ ;;=I49.9^^103^1549^44
+ ;;^UTILITY(U,$J,358.3,36451,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36451,1,3,0)
+ ;;=3^Cardiac Arrhythmia,Unspec
+ ;;^UTILITY(U,$J,358.3,36451,1,4,0)
+ ;;=4^I49.9
+ ;;^UTILITY(U,$J,358.3,36451,2)
+ ;;=^5007237
+ ;;^UTILITY(U,$J,358.3,36452,0)
+ ;;=I42.9^^103^1549^45
+ ;;^UTILITY(U,$J,358.3,36452,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36452,1,3,0)
+ ;;=3^Cardiomyopathy,Unspec
+ ;;^UTILITY(U,$J,358.3,36452,1,4,0)
+ ;;=4^I42.9
+ ;;^UTILITY(U,$J,358.3,36452,2)
+ ;;=^5007200
+ ;;^UTILITY(U,$J,358.3,36453,0)
+ ;;=I50.42^^103^1549^47
+ ;;^UTILITY(U,$J,358.3,36453,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,36453,1,3,0)
+ ;;=3^Chr Combined Systolic & Diastolic Congestive Hrt Failure
+ ;;^UTILITY(U,$J,358.3,36453,1,4,0)
+ ;;=4^I50.42

@@ -1,126 +1,368 @@
-IBDEI0BS ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0BS ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,5331,1,4,0)
- ;;=4^N06.0
- ;;^UTILITY(U,$J,358.3,5331,2)
- ;;=^5015549
- ;;^UTILITY(U,$J,358.3,5332,0)
- ;;=N06.1^^27^344^39
- ;;^UTILITY(U,$J,358.3,5332,1,0)
+ ;;^UTILITY(U,$J,358.3,14950,0)
+ ;;=F44.81^^45^659^6
+ ;;^UTILITY(U,$J,358.3,14950,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5332,1,3,0)
- ;;=3^Isolated proteinuria w/ focal & segmental glomerular lesions
- ;;^UTILITY(U,$J,358.3,5332,1,4,0)
- ;;=4^N06.1
- ;;^UTILITY(U,$J,358.3,5332,2)
- ;;=^5015550
- ;;^UTILITY(U,$J,358.3,5333,0)
- ;;=N06.2^^27^344^36
- ;;^UTILITY(U,$J,358.3,5333,1,0)
+ ;;^UTILITY(U,$J,358.3,14950,1,3,0)
+ ;;=3^Dissociative Identity Disorder
+ ;;^UTILITY(U,$J,358.3,14950,1,4,0)
+ ;;=4^F44.81
+ ;;^UTILITY(U,$J,358.3,14950,2)
+ ;;=^331909
+ ;;^UTILITY(U,$J,358.3,14951,0)
+ ;;=F44.9^^45^659^5
+ ;;^UTILITY(U,$J,358.3,14951,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5333,1,3,0)
- ;;=3^Isolated proteinuria w/ diffuse membranous glomerulonephritis
- ;;^UTILITY(U,$J,358.3,5333,1,4,0)
- ;;=4^N06.2
- ;;^UTILITY(U,$J,358.3,5333,2)
- ;;=^5015551
- ;;^UTILITY(U,$J,358.3,5334,0)
- ;;=N06.3^^27^344^37
- ;;^UTILITY(U,$J,358.3,5334,1,0)
+ ;;^UTILITY(U,$J,358.3,14951,1,3,0)
+ ;;=3^Dissociative Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,14951,1,4,0)
+ ;;=4^F44.9
+ ;;^UTILITY(U,$J,358.3,14951,2)
+ ;;=^5003584
+ ;;^UTILITY(U,$J,358.3,14952,0)
+ ;;=F44.0^^45^659^2
+ ;;^UTILITY(U,$J,358.3,14952,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5334,1,3,0)
- ;;=3^Isolated proteinuria w/ diffuse mesangial prolif glomrlneph
- ;;^UTILITY(U,$J,358.3,5334,1,4,0)
- ;;=4^N06.3
- ;;^UTILITY(U,$J,358.3,5334,2)
- ;;=^5015552
- ;;^UTILITY(U,$J,358.3,5335,0)
- ;;=N06.4^^27^344^35
- ;;^UTILITY(U,$J,358.3,5335,1,0)
+ ;;^UTILITY(U,$J,358.3,14952,1,3,0)
+ ;;=3^Dissociative Amnesia
+ ;;^UTILITY(U,$J,358.3,14952,1,4,0)
+ ;;=4^F44.0
+ ;;^UTILITY(U,$J,358.3,14952,2)
+ ;;=^5003577
+ ;;^UTILITY(U,$J,358.3,14953,0)
+ ;;=F48.1^^45^659^1
+ ;;^UTILITY(U,$J,358.3,14953,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5335,1,3,0)
- ;;=3^Isolated proteinuria w/ diffuse endocaplry prolif glomrlneph
- ;;^UTILITY(U,$J,358.3,5335,1,4,0)
- ;;=4^N06.4
- ;;^UTILITY(U,$J,358.3,5335,2)
- ;;=^5015553
- ;;^UTILITY(U,$J,358.3,5336,0)
- ;;=N06.5^^27^344^38
- ;;^UTILITY(U,$J,358.3,5336,1,0)
+ ;;^UTILITY(U,$J,358.3,14953,1,3,0)
+ ;;=3^Depersonalization/Derealization Disorder
+ ;;^UTILITY(U,$J,358.3,14953,1,4,0)
+ ;;=4^F48.1
+ ;;^UTILITY(U,$J,358.3,14953,2)
+ ;;=^5003593
+ ;;^UTILITY(U,$J,358.3,14954,0)
+ ;;=F44.89^^45^659^4
+ ;;^UTILITY(U,$J,358.3,14954,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5336,1,3,0)
- ;;=3^Isolated proteinuria w/ diffuse mesangiocapillary glomrlneph
- ;;^UTILITY(U,$J,358.3,5336,1,4,0)
- ;;=4^N06.5
- ;;^UTILITY(U,$J,358.3,5336,2)
- ;;=^5015554
- ;;^UTILITY(U,$J,358.3,5337,0)
- ;;=N06.6^^27^344^33
- ;;^UTILITY(U,$J,358.3,5337,1,0)
+ ;;^UTILITY(U,$J,358.3,14954,1,3,0)
+ ;;=3^Dissociative Disorder,Other Specified
+ ;;^UTILITY(U,$J,358.3,14954,1,4,0)
+ ;;=4^F44.89
+ ;;^UTILITY(U,$J,358.3,14954,2)
+ ;;=^5003583
+ ;;^UTILITY(U,$J,358.3,14955,0)
+ ;;=F44.1^^45^659^3
+ ;;^UTILITY(U,$J,358.3,14955,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5337,1,3,0)
- ;;=3^Isolated proteinuria w/ dense deposit disease
- ;;^UTILITY(U,$J,358.3,5337,1,4,0)
- ;;=4^N06.6
- ;;^UTILITY(U,$J,358.3,5337,2)
- ;;=^5015555
- ;;^UTILITY(U,$J,358.3,5338,0)
- ;;=N06.7^^27^344^34
- ;;^UTILITY(U,$J,358.3,5338,1,0)
+ ;;^UTILITY(U,$J,358.3,14955,1,3,0)
+ ;;=3^Dissociative Amnesia w/ Dissociative Fugue
+ ;;^UTILITY(U,$J,358.3,14955,1,4,0)
+ ;;=4^F44.1
+ ;;^UTILITY(U,$J,358.3,14955,2)
+ ;;=^331908
+ ;;^UTILITY(U,$J,358.3,14956,0)
+ ;;=F50.02^^45^660^1
+ ;;^UTILITY(U,$J,358.3,14956,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5338,1,3,0)
- ;;=3^Isolated proteinuria w/ diffuse crescentic glomerulonephritis
- ;;^UTILITY(U,$J,358.3,5338,1,4,0)
- ;;=4^N06.7
- ;;^UTILITY(U,$J,358.3,5338,2)
- ;;=^5015556
- ;;^UTILITY(U,$J,358.3,5339,0)
- ;;=N06.8^^27^344^41
- ;;^UTILITY(U,$J,358.3,5339,1,0)
+ ;;^UTILITY(U,$J,358.3,14956,1,3,0)
+ ;;=3^Anorexia Nervosa,Binge-Eating/Purging Type
+ ;;^UTILITY(U,$J,358.3,14956,1,4,0)
+ ;;=4^F50.02
+ ;;^UTILITY(U,$J,358.3,14956,2)
+ ;;=^5003599
+ ;;^UTILITY(U,$J,358.3,14957,0)
+ ;;=F50.01^^45^660^2
+ ;;^UTILITY(U,$J,358.3,14957,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5339,1,3,0)
- ;;=3^Isolated proteinuria w/ other morphologic lesion
- ;;^UTILITY(U,$J,358.3,5339,1,4,0)
- ;;=4^N06.8
- ;;^UTILITY(U,$J,358.3,5339,2)
- ;;=^5015557
- ;;^UTILITY(U,$J,358.3,5340,0)
- ;;=N06.9^^27^344^42
- ;;^UTILITY(U,$J,358.3,5340,1,0)
+ ;;^UTILITY(U,$J,358.3,14957,1,3,0)
+ ;;=3^Anorexia Nervosa,Restricting Type
+ ;;^UTILITY(U,$J,358.3,14957,1,4,0)
+ ;;=4^F50.01
+ ;;^UTILITY(U,$J,358.3,14957,2)
+ ;;=^5003598
+ ;;^UTILITY(U,$J,358.3,14958,0)
+ ;;=F50.9^^45^660^7
+ ;;^UTILITY(U,$J,358.3,14958,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5340,1,3,0)
- ;;=3^Isolated proteinuria w/ unspecified morphologic lesion
- ;;^UTILITY(U,$J,358.3,5340,1,4,0)
- ;;=4^N06.9
- ;;^UTILITY(U,$J,358.3,5340,2)
- ;;=^5015558
- ;;^UTILITY(U,$J,358.3,5341,0)
- ;;=N07.0^^27^344^30
- ;;^UTILITY(U,$J,358.3,5341,1,0)
+ ;;^UTILITY(U,$J,358.3,14958,1,3,0)
+ ;;=3^Feeding/Eating Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,14958,1,4,0)
+ ;;=4^F50.9
+ ;;^UTILITY(U,$J,358.3,14958,2)
+ ;;=^5003602
+ ;;^UTILITY(U,$J,358.3,14959,0)
+ ;;=F50.8^^45^660^6
+ ;;^UTILITY(U,$J,358.3,14959,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5341,1,3,0)
- ;;=3^Hereditary nephropathy, NEC w/ minor glomerular abnormality
- ;;^UTILITY(U,$J,358.3,5341,1,4,0)
- ;;=4^N07.0
- ;;^UTILITY(U,$J,358.3,5341,2)
- ;;=^5015559
- ;;^UTILITY(U,$J,358.3,5342,0)
- ;;=N07.1^^27^344^29
- ;;^UTILITY(U,$J,358.3,5342,1,0)
+ ;;^UTILITY(U,$J,358.3,14959,1,3,0)
+ ;;=3^Feeding/Eating Disorder,Other Specified
+ ;;^UTILITY(U,$J,358.3,14959,1,4,0)
+ ;;=4^F50.8
+ ;;^UTILITY(U,$J,358.3,14959,2)
+ ;;=^5003601
+ ;;^UTILITY(U,$J,358.3,14960,0)
+ ;;=F50.8^^45^660^3
+ ;;^UTILITY(U,$J,358.3,14960,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5342,1,3,0)
- ;;=3^Hereditary nephropathy, NEC w/ focal & seg glomerular lesions
- ;;^UTILITY(U,$J,358.3,5342,1,4,0)
- ;;=4^N07.1
- ;;^UTILITY(U,$J,358.3,5342,2)
- ;;=^5015560
- ;;^UTILITY(U,$J,358.3,5343,0)
- ;;=N07.2^^27^344^24
- ;;^UTILITY(U,$J,358.3,5343,1,0)
+ ;;^UTILITY(U,$J,358.3,14960,1,3,0)
+ ;;=3^Avoidant/Restrictive Food Intake Disorder
+ ;;^UTILITY(U,$J,358.3,14960,1,4,0)
+ ;;=4^F50.8
+ ;;^UTILITY(U,$J,358.3,14960,2)
+ ;;=^5003601
+ ;;^UTILITY(U,$J,358.3,14961,0)
+ ;;=F50.8^^45^660^4
+ ;;^UTILITY(U,$J,358.3,14961,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,5343,1,3,0)
- ;;=3^Hereditary nephropathy, NEC w/ diffuse membranous glomrlneph
- ;;^UTILITY(U,$J,358.3,5343,1,4,0)
- ;;=4^N07.2
+ ;;^UTILITY(U,$J,358.3,14961,1,3,0)
+ ;;=3^Binge-Eating Disorder
+ ;;^UTILITY(U,$J,358.3,14961,1,4,0)
+ ;;=4^F50.8
+ ;;^UTILITY(U,$J,358.3,14961,2)
+ ;;=^5003601
+ ;;^UTILITY(U,$J,358.3,14962,0)
+ ;;=F50.2^^45^660^5
+ ;;^UTILITY(U,$J,358.3,14962,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14962,1,3,0)
+ ;;=3^Bulimia Nervosa
+ ;;^UTILITY(U,$J,358.3,14962,1,4,0)
+ ;;=4^F50.2
+ ;;^UTILITY(U,$J,358.3,14962,2)
+ ;;=^5003600
+ ;;^UTILITY(U,$J,358.3,14963,0)
+ ;;=F50.8^^45^660^8
+ ;;^UTILITY(U,$J,358.3,14963,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14963,1,3,0)
+ ;;=3^Pica in Adults
+ ;;^UTILITY(U,$J,358.3,14963,1,4,0)
+ ;;=4^F50.8
+ ;;^UTILITY(U,$J,358.3,14963,2)
+ ;;=^5003601
+ ;;^UTILITY(U,$J,358.3,14964,0)
+ ;;=F98.21^^45^660^9
+ ;;^UTILITY(U,$J,358.3,14964,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14964,1,3,0)
+ ;;=3^Rumination Disorder
+ ;;^UTILITY(U,$J,358.3,14964,1,4,0)
+ ;;=4^F98.21
+ ;;^UTILITY(U,$J,358.3,14964,2)
+ ;;=^5003713
+ ;;^UTILITY(U,$J,358.3,14965,0)
+ ;;=Z55.9^^45^661^1
+ ;;^UTILITY(U,$J,358.3,14965,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14965,1,3,0)
+ ;;=3^Academic/Educational Problem
+ ;;^UTILITY(U,$J,358.3,14965,1,4,0)
+ ;;=4^Z55.9
+ ;;^UTILITY(U,$J,358.3,14965,2)
+ ;;=^5063106
+ ;;^UTILITY(U,$J,358.3,14966,0)
+ ;;=Z56.82^^45^661^5
+ ;;^UTILITY(U,$J,358.3,14966,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14966,1,3,0)
+ ;;=3^Problems Related to Current Military Deployment Status
+ ;;^UTILITY(U,$J,358.3,14966,1,4,0)
+ ;;=4^Z56.82
+ ;;^UTILITY(U,$J,358.3,14966,2)
+ ;;=^5063115
+ ;;^UTILITY(U,$J,358.3,14967,0)
+ ;;=Z56.0^^45^661^10
+ ;;^UTILITY(U,$J,358.3,14967,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14967,1,3,0)
+ ;;=3^Unemployment,Unspec
+ ;;^UTILITY(U,$J,358.3,14967,1,4,0)
+ ;;=4^Z56.0
+ ;;^UTILITY(U,$J,358.3,14967,2)
+ ;;=^5063107
+ ;;^UTILITY(U,$J,358.3,14968,0)
+ ;;=Z56.1^^45^661^2
+ ;;^UTILITY(U,$J,358.3,14968,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14968,1,3,0)
+ ;;=3^Change of Job
+ ;;^UTILITY(U,$J,358.3,14968,1,4,0)
+ ;;=4^Z56.1
+ ;;^UTILITY(U,$J,358.3,14968,2)
+ ;;=^5063108
+ ;;^UTILITY(U,$J,358.3,14969,0)
+ ;;=Z56.2^^45^661^8
+ ;;^UTILITY(U,$J,358.3,14969,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14969,1,3,0)
+ ;;=3^Threat of Job Loss
+ ;;^UTILITY(U,$J,358.3,14969,1,4,0)
+ ;;=4^Z56.2
+ ;;^UTILITY(U,$J,358.3,14969,2)
+ ;;=^5063109
+ ;;^UTILITY(U,$J,358.3,14970,0)
+ ;;=Z56.3^^45^661^7
+ ;;^UTILITY(U,$J,358.3,14970,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14970,1,3,0)
+ ;;=3^Stressful Work Schedule
+ ;;^UTILITY(U,$J,358.3,14970,1,4,0)
+ ;;=4^Z56.3
+ ;;^UTILITY(U,$J,358.3,14970,2)
+ ;;=^5063110
+ ;;^UTILITY(U,$J,358.3,14971,0)
+ ;;=Z56.4^^45^661^3
+ ;;^UTILITY(U,$J,358.3,14971,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14971,1,3,0)
+ ;;=3^Discord w/ Boss and Workmates
+ ;;^UTILITY(U,$J,358.3,14971,1,4,0)
+ ;;=4^Z56.4
+ ;;^UTILITY(U,$J,358.3,14971,2)
+ ;;=^5063111
+ ;;^UTILITY(U,$J,358.3,14972,0)
+ ;;=Z56.5^^45^661^9
+ ;;^UTILITY(U,$J,358.3,14972,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14972,1,3,0)
+ ;;=3^Uncongenial Work Environment
+ ;;^UTILITY(U,$J,358.3,14972,1,4,0)
+ ;;=4^Z56.5
+ ;;^UTILITY(U,$J,358.3,14972,2)
+ ;;=^5063112
+ ;;^UTILITY(U,$J,358.3,14973,0)
+ ;;=Z56.6^^45^661^4
+ ;;^UTILITY(U,$J,358.3,14973,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14973,1,3,0)
+ ;;=3^Physical & Mental Strain Related to Work,Other
+ ;;^UTILITY(U,$J,358.3,14973,1,4,0)
+ ;;=4^Z56.6
+ ;;^UTILITY(U,$J,358.3,14973,2)
+ ;;=^5063113
+ ;;^UTILITY(U,$J,358.3,14974,0)
+ ;;=Z56.89^^45^661^6
+ ;;^UTILITY(U,$J,358.3,14974,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14974,1,3,0)
+ ;;=3^Problems Related to Employment,Other
+ ;;^UTILITY(U,$J,358.3,14974,1,4,0)
+ ;;=4^Z56.89
+ ;;^UTILITY(U,$J,358.3,14974,2)
+ ;;=^5063116
+ ;;^UTILITY(U,$J,358.3,14975,0)
+ ;;=F64.1^^45^662^1
+ ;;^UTILITY(U,$J,358.3,14975,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14975,1,3,0)
+ ;;=3^Gender Dysphoria in Adolescents & Adults
+ ;;^UTILITY(U,$J,358.3,14975,1,4,0)
+ ;;=4^F64.1
+ ;;^UTILITY(U,$J,358.3,14975,2)
+ ;;=^5003647
+ ;;^UTILITY(U,$J,358.3,14976,0)
+ ;;=F64.8^^45^662^2
+ ;;^UTILITY(U,$J,358.3,14976,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14976,1,3,0)
+ ;;=3^Gender Dysphoria,Other Specified
+ ;;^UTILITY(U,$J,358.3,14976,1,4,0)
+ ;;=4^F64.8
+ ;;^UTILITY(U,$J,358.3,14976,2)
+ ;;=^5003649
+ ;;^UTILITY(U,$J,358.3,14977,0)
+ ;;=F64.9^^45^662^3
+ ;;^UTILITY(U,$J,358.3,14977,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14977,1,3,0)
+ ;;=3^Gender Dysphoria,Unspec
+ ;;^UTILITY(U,$J,358.3,14977,1,4,0)
+ ;;=4^F64.9
+ ;;^UTILITY(U,$J,358.3,14977,2)
+ ;;=^5003650
+ ;;^UTILITY(U,$J,358.3,14978,0)
+ ;;=Z59.2^^45^663^1
+ ;;^UTILITY(U,$J,358.3,14978,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14978,1,3,0)
+ ;;=3^Discord w/ Neighbor,Lodger or Landlord
+ ;;^UTILITY(U,$J,358.3,14978,1,4,0)
+ ;;=4^Z59.2
+ ;;^UTILITY(U,$J,358.3,14978,2)
+ ;;=^5063131
+ ;;^UTILITY(U,$J,358.3,14979,0)
+ ;;=Z59.0^^45^663^3
+ ;;^UTILITY(U,$J,358.3,14979,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14979,1,3,0)
+ ;;=3^Homelessness
+ ;;^UTILITY(U,$J,358.3,14979,1,4,0)
+ ;;=4^Z59.0
+ ;;^UTILITY(U,$J,358.3,14979,2)
+ ;;=^5063129
+ ;;^UTILITY(U,$J,358.3,14980,0)
+ ;;=Z59.1^^45^663^5
+ ;;^UTILITY(U,$J,358.3,14980,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14980,1,3,0)
+ ;;=3^Inadequate Housing
+ ;;^UTILITY(U,$J,358.3,14980,1,4,0)
+ ;;=4^Z59.1
+ ;;^UTILITY(U,$J,358.3,14980,2)
+ ;;=^5063130
+ ;;^UTILITY(U,$J,358.3,14981,0)
+ ;;=Z59.3^^45^663^9
+ ;;^UTILITY(U,$J,358.3,14981,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14981,1,3,0)
+ ;;=3^Problems Related to Living in Residential Institution
+ ;;^UTILITY(U,$J,358.3,14981,1,4,0)
+ ;;=4^Z59.3
+ ;;^UTILITY(U,$J,358.3,14981,2)
+ ;;=^5063132
+ ;;^UTILITY(U,$J,358.3,14982,0)
+ ;;=Z59.4^^45^663^7
+ ;;^UTILITY(U,$J,358.3,14982,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14982,1,3,0)
+ ;;=3^Lack of Adequate Food or Safe Drinking Water
+ ;;^UTILITY(U,$J,358.3,14982,1,4,0)
+ ;;=4^Z59.4
+ ;;^UTILITY(U,$J,358.3,14982,2)
+ ;;=^5063133
+ ;;^UTILITY(U,$J,358.3,14983,0)
+ ;;=Z59.5^^45^663^2
+ ;;^UTILITY(U,$J,358.3,14983,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14983,1,3,0)
+ ;;=3^Extreme Poverty
+ ;;^UTILITY(U,$J,358.3,14983,1,4,0)
+ ;;=4^Z59.5
+ ;;^UTILITY(U,$J,358.3,14983,2)
+ ;;=^5063134
+ ;;^UTILITY(U,$J,358.3,14984,0)
+ ;;=Z59.6^^45^663^8
+ ;;^UTILITY(U,$J,358.3,14984,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14984,1,3,0)
+ ;;=3^Low Income
+ ;;^UTILITY(U,$J,358.3,14984,1,4,0)
+ ;;=4^Z59.6
+ ;;^UTILITY(U,$J,358.3,14984,2)
+ ;;=^5063135
+ ;;^UTILITY(U,$J,358.3,14985,0)
+ ;;=Z59.7^^45^663^6
+ ;;^UTILITY(U,$J,358.3,14985,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,14985,1,3,0)
+ ;;=3^Insufficient Social Insurance/Welfare Support
+ ;;^UTILITY(U,$J,358.3,14985,1,4,0)
+ ;;=4^Z59.7
+ ;;^UTILITY(U,$J,358.3,14985,2)
+ ;;=^5063136
+ ;;^UTILITY(U,$J,358.3,14986,0)
+ ;;=Z59.9^^45^663^4
+ ;;^UTILITY(U,$J,358.3,14986,1,0)
+ ;;=^358.31IA^4^2

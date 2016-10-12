@@ -1,130 +1,368 @@
-IBDEI02C ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI02C ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,601,1,4,0)
- ;;=4^F18.921
- ;;^UTILITY(U,$J,358.3,601,2)
- ;;=^5003407
- ;;^UTILITY(U,$J,358.3,602,0)
- ;;=F18.129^^3^59^17
- ;;^UTILITY(U,$J,358.3,602,1,0)
+ ;;^UTILITY(U,$J,358.3,2591,1,3,0)
+ ;;=3^Somatization Disorder
+ ;;^UTILITY(U,$J,358.3,2591,1,4,0)
+ ;;=4^F45.0
+ ;;^UTILITY(U,$J,358.3,2591,2)
+ ;;=^112280
+ ;;^UTILITY(U,$J,358.3,2592,0)
+ ;;=F69.^^14^191^2
+ ;;^UTILITY(U,$J,358.3,2592,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,602,1,3,0)
- ;;=3^Inhalant Intoxication w/ Mild Use Disorder
- ;;^UTILITY(U,$J,358.3,602,1,4,0)
- ;;=4^F18.129
- ;;^UTILITY(U,$J,358.3,602,2)
- ;;=^5003383
- ;;^UTILITY(U,$J,358.3,603,0)
- ;;=F18.229^^3^59^18
- ;;^UTILITY(U,$J,358.3,603,1,0)
+ ;;^UTILITY(U,$J,358.3,2592,1,3,0)
+ ;;=3^Adult Personality and Behavior Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,2592,1,4,0)
+ ;;=4^F69.
+ ;;^UTILITY(U,$J,358.3,2592,2)
+ ;;=^5003667
+ ;;^UTILITY(U,$J,358.3,2593,0)
+ ;;=F60.9^^14^191^17
+ ;;^UTILITY(U,$J,358.3,2593,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,603,1,3,0)
- ;;=3^Inhalant Intoxication w/ Mod/Severe Use Disorder
- ;;^UTILITY(U,$J,358.3,603,1,4,0)
- ;;=4^F18.229
- ;;^UTILITY(U,$J,358.3,603,2)
- ;;=^5003396
- ;;^UTILITY(U,$J,358.3,604,0)
- ;;=F18.929^^3^59^19
- ;;^UTILITY(U,$J,358.3,604,1,0)
+ ;;^UTILITY(U,$J,358.3,2593,1,3,0)
+ ;;=3^Personality Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,2593,1,4,0)
+ ;;=4^F60.9
+ ;;^UTILITY(U,$J,358.3,2593,2)
+ ;;=^5003639
+ ;;^UTILITY(U,$J,358.3,2594,0)
+ ;;=F32.9^^14^191^12
+ ;;^UTILITY(U,$J,358.3,2594,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,604,1,3,0)
- ;;=3^Inhalant Intoxication w/o Use Disorder
- ;;^UTILITY(U,$J,358.3,604,1,4,0)
- ;;=4^F18.929
- ;;^UTILITY(U,$J,358.3,604,2)
- ;;=^5003408
- ;;^UTILITY(U,$J,358.3,605,0)
- ;;=F18.180^^3^59^1
- ;;^UTILITY(U,$J,358.3,605,1,0)
+ ;;^UTILITY(U,$J,358.3,2594,1,3,0)
+ ;;=3^MDD,Single Episode,Unspec
+ ;;^UTILITY(U,$J,358.3,2594,1,4,0)
+ ;;=4^F32.9
+ ;;^UTILITY(U,$J,358.3,2594,2)
+ ;;=^5003528
+ ;;^UTILITY(U,$J,358.3,2595,0)
+ ;;=F40.231^^14^191^9
+ ;;^UTILITY(U,$J,358.3,2595,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,605,1,3,0)
- ;;=3^Inhalant Induced Anxiety Disorder w/ Mild Use Disorder
- ;;^UTILITY(U,$J,358.3,605,1,4,0)
- ;;=4^F18.180
- ;;^UTILITY(U,$J,358.3,605,2)
- ;;=^5003389
- ;;^UTILITY(U,$J,358.3,606,0)
- ;;=F18.280^^3^59^2
- ;;^UTILITY(U,$J,358.3,606,1,0)
+ ;;^UTILITY(U,$J,358.3,2595,1,3,0)
+ ;;=3^Fear of Injections/Transfusions
+ ;;^UTILITY(U,$J,358.3,2595,1,4,0)
+ ;;=4^F40.231
+ ;;^UTILITY(U,$J,358.3,2595,2)
+ ;;=^5003551
+ ;;^UTILITY(U,$J,358.3,2596,0)
+ ;;=F40.240^^14^191^8
+ ;;^UTILITY(U,$J,358.3,2596,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,606,1,3,0)
- ;;=3^Inhalant Induced Anxiety Disorder w/ Mod/Severe Use Disorder
- ;;^UTILITY(U,$J,358.3,606,1,4,0)
- ;;=4^F18.280
- ;;^UTILITY(U,$J,358.3,606,2)
- ;;=^5003402
- ;;^UTILITY(U,$J,358.3,607,0)
- ;;=F18.980^^3^59^3
- ;;^UTILITY(U,$J,358.3,607,1,0)
+ ;;^UTILITY(U,$J,358.3,2596,1,3,0)
+ ;;=3^Claustrophobia
+ ;;^UTILITY(U,$J,358.3,2596,1,4,0)
+ ;;=4^F40.240
+ ;;^UTILITY(U,$J,358.3,2596,2)
+ ;;=^5003554
+ ;;^UTILITY(U,$J,358.3,2597,0)
+ ;;=F43.21^^14^191^10
+ ;;^UTILITY(U,$J,358.3,2597,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,607,1,3,0)
- ;;=3^Inhalant Induced Anxiety Disorder w/o Use Disorder
- ;;^UTILITY(U,$J,358.3,607,1,4,0)
- ;;=4^F18.980
- ;;^UTILITY(U,$J,358.3,607,2)
- ;;=^5003414
- ;;^UTILITY(U,$J,358.3,608,0)
- ;;=F18.94^^3^59^4
- ;;^UTILITY(U,$J,358.3,608,1,0)
+ ;;^UTILITY(U,$J,358.3,2597,1,3,0)
+ ;;=3^Grief Reaction
+ ;;^UTILITY(U,$J,358.3,2597,1,4,0)
+ ;;=4^F43.21
+ ;;^UTILITY(U,$J,358.3,2597,2)
+ ;;=^331948
+ ;;^UTILITY(U,$J,358.3,2598,0)
+ ;;=F43.10^^14^191^16
+ ;;^UTILITY(U,$J,358.3,2598,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,608,1,3,0)
- ;;=3^Inhalant Induced Depressive Disorder w/o Use Disorder
- ;;^UTILITY(U,$J,358.3,608,1,4,0)
- ;;=4^F18.94
- ;;^UTILITY(U,$J,358.3,608,2)
- ;;=^5003409
- ;;^UTILITY(U,$J,358.3,609,0)
- ;;=F18.17^^3^59^5
- ;;^UTILITY(U,$J,358.3,609,1,0)
+ ;;^UTILITY(U,$J,358.3,2598,1,3,0)
+ ;;=3^PTSD,Unspec
+ ;;^UTILITY(U,$J,358.3,2598,1,4,0)
+ ;;=4^F43.10
+ ;;^UTILITY(U,$J,358.3,2598,2)
+ ;;=^5003570
+ ;;^UTILITY(U,$J,358.3,2599,0)
+ ;;=F43.11^^14^191^14
+ ;;^UTILITY(U,$J,358.3,2599,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,609,1,3,0)
- ;;=3^Inhalant Induced Major Neurocog Disorder w/ Mild Use Disorder
- ;;^UTILITY(U,$J,358.3,609,1,4,0)
- ;;=4^F18.17
- ;;^UTILITY(U,$J,358.3,609,2)
- ;;=^5003388
- ;;^UTILITY(U,$J,358.3,610,0)
- ;;=F18.27^^3^59^6
- ;;^UTILITY(U,$J,358.3,610,1,0)
+ ;;^UTILITY(U,$J,358.3,2599,1,3,0)
+ ;;=3^PTSD,Acute
+ ;;^UTILITY(U,$J,358.3,2599,1,4,0)
+ ;;=4^F43.11
+ ;;^UTILITY(U,$J,358.3,2599,2)
+ ;;=^5003571
+ ;;^UTILITY(U,$J,358.3,2600,0)
+ ;;=F43.12^^14^191^15
+ ;;^UTILITY(U,$J,358.3,2600,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,610,1,3,0)
- ;;=3^Inhalant Induced Major Neurocog Disorder w/ Mod/Severe Use Disorder
- ;;^UTILITY(U,$J,358.3,610,1,4,0)
- ;;=4^F18.27
- ;;^UTILITY(U,$J,358.3,610,2)
- ;;=^5003401
- ;;^UTILITY(U,$J,358.3,611,0)
- ;;=F18.97^^3^59^7
- ;;^UTILITY(U,$J,358.3,611,1,0)
+ ;;^UTILITY(U,$J,358.3,2600,1,3,0)
+ ;;=3^PTSD,Chronic
+ ;;^UTILITY(U,$J,358.3,2600,1,4,0)
+ ;;=4^F43.12
+ ;;^UTILITY(U,$J,358.3,2600,2)
+ ;;=^5003572
+ ;;^UTILITY(U,$J,358.3,2601,0)
+ ;;=F43.21^^14^191^1
+ ;;^UTILITY(U,$J,358.3,2601,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,611,1,3,0)
- ;;=3^Inhalant Induced Major Neurocog Disorder w/o Use Disorder
- ;;^UTILITY(U,$J,358.3,611,1,4,0)
- ;;=4^F18.97
- ;;^UTILITY(U,$J,358.3,611,2)
- ;;=^5003413
- ;;^UTILITY(U,$J,358.3,612,0)
- ;;=F18.188^^3^59^8
- ;;^UTILITY(U,$J,358.3,612,1,0)
+ ;;^UTILITY(U,$J,358.3,2601,1,3,0)
+ ;;=3^Adjustment Disorder w/ Depressed Mood
+ ;;^UTILITY(U,$J,358.3,2601,1,4,0)
+ ;;=4^F43.21
+ ;;^UTILITY(U,$J,358.3,2601,2)
+ ;;=^331948
+ ;;^UTILITY(U,$J,358.3,2602,0)
+ ;;=F45.9^^14^191^24
+ ;;^UTILITY(U,$J,358.3,2602,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,612,1,3,0)
- ;;=3^Inhalant Induced Mild Neurocog Disorder w/ Mild Use Disorder
- ;;^UTILITY(U,$J,358.3,612,1,4,0)
- ;;=4^F18.188
- ;;^UTILITY(U,$J,358.3,612,2)
- ;;=^5003390
- ;;^UTILITY(U,$J,358.3,613,0)
- ;;=F18.288^^3^59^9
- ;;^UTILITY(U,$J,358.3,613,1,0)
+ ;;^UTILITY(U,$J,358.3,2602,1,3,0)
+ ;;=3^Somatoform Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,2602,1,4,0)
+ ;;=4^F45.9
+ ;;^UTILITY(U,$J,358.3,2602,2)
+ ;;=^5003592
+ ;;^UTILITY(U,$J,358.3,2603,0)
+ ;;=F48.2^^14^191^18
+ ;;^UTILITY(U,$J,358.3,2603,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,613,1,3,0)
- ;;=3^Inhalant Induced Mild Neurocog Disorder w/ Mod/Severe Use Disorder
- ;;^UTILITY(U,$J,358.3,613,1,4,0)
- ;;=4^F18.288
- ;;^UTILITY(U,$J,358.3,613,2)
- ;;=^5003403
- ;;^UTILITY(U,$J,358.3,614,0)
- ;;=F18.988^^3^59^10
+ ;;^UTILITY(U,$J,358.3,2603,1,3,0)
+ ;;=3^Pseudobulbar Affect
+ ;;^UTILITY(U,$J,358.3,2603,1,4,0)
+ ;;=4^F48.2
+ ;;^UTILITY(U,$J,358.3,2603,2)
+ ;;=^5003594
+ ;;^UTILITY(U,$J,358.3,2604,0)
+ ;;=G47.00^^14^191^11
+ ;;^UTILITY(U,$J,358.3,2604,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2604,1,3,0)
+ ;;=3^Insomnia,Unspec
+ ;;^UTILITY(U,$J,358.3,2604,1,4,0)
+ ;;=4^G47.00
+ ;;^UTILITY(U,$J,358.3,2604,2)
+ ;;=^332924
+ ;;^UTILITY(U,$J,358.3,2605,0)
+ ;;=F40.11^^14^191^22
+ ;;^UTILITY(U,$J,358.3,2605,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2605,1,3,0)
+ ;;=3^Social Phobia,Generalized
+ ;;^UTILITY(U,$J,358.3,2605,1,4,0)
+ ;;=4^F40.11
+ ;;^UTILITY(U,$J,358.3,2605,2)
+ ;;=^5003545
+ ;;^UTILITY(U,$J,358.3,2606,0)
+ ;;=F06.31^^14^191^26
+ ;;^UTILITY(U,$J,358.3,2606,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2606,1,3,0)
+ ;;=3^Mood Disorder d/t Physiological Cond w/ Depressive Features
+ ;;^UTILITY(U,$J,358.3,2606,1,4,0)
+ ;;=4^F06.31
+ ;;^UTILITY(U,$J,358.3,2606,2)
+ ;;=^5003057
+ ;;^UTILITY(U,$J,358.3,2607,0)
+ ;;=F20.0^^14^191^27
+ ;;^UTILITY(U,$J,358.3,2607,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2607,1,3,0)
+ ;;=3^Paranoid Schizophrenia
+ ;;^UTILITY(U,$J,358.3,2607,1,4,0)
+ ;;=4^F20.0
+ ;;^UTILITY(U,$J,358.3,2607,2)
+ ;;=^5003469
+ ;;^UTILITY(U,$J,358.3,2608,0)
+ ;;=M02.30^^14^192^141
+ ;;^UTILITY(U,$J,358.3,2608,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2608,1,3,0)
+ ;;=3^Reiter's Disease,Unspec Site
+ ;;^UTILITY(U,$J,358.3,2608,1,4,0)
+ ;;=4^M02.30
+ ;;^UTILITY(U,$J,358.3,2608,2)
+ ;;=^5009790
+ ;;^UTILITY(U,$J,358.3,2609,0)
+ ;;=M10.9^^14^192^40
+ ;;^UTILITY(U,$J,358.3,2609,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2609,1,3,0)
+ ;;=3^Gout,Unspec
+ ;;^UTILITY(U,$J,358.3,2609,1,4,0)
+ ;;=4^M10.9
+ ;;^UTILITY(U,$J,358.3,2609,2)
+ ;;=^5010404
+ ;;^UTILITY(U,$J,358.3,2610,0)
+ ;;=G90.59^^14^192^34
+ ;;^UTILITY(U,$J,358.3,2610,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2610,1,3,0)
+ ;;=3^Complex Regional Pain Syndrome I,Unspec
+ ;;^UTILITY(U,$J,358.3,2610,1,4,0)
+ ;;=4^G90.59
+ ;;^UTILITY(U,$J,358.3,2610,2)
+ ;;=^5004171
+ ;;^UTILITY(U,$J,358.3,2611,0)
+ ;;=G56.01^^14^192^12
+ ;;^UTILITY(U,$J,358.3,2611,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2611,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,2611,1,4,0)
+ ;;=4^G56.01
+ ;;^UTILITY(U,$J,358.3,2611,2)
+ ;;=^5004018
+ ;;^UTILITY(U,$J,358.3,2612,0)
+ ;;=G56.02^^14^192^11
+ ;;^UTILITY(U,$J,358.3,2612,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2612,1,3,0)
+ ;;=3^Carpal Tunnel Syndrome,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,2612,1,4,0)
+ ;;=4^G56.02
+ ;;^UTILITY(U,$J,358.3,2612,2)
+ ;;=^5004019
+ ;;^UTILITY(U,$J,358.3,2613,0)
+ ;;=G56.21^^14^192^56
+ ;;^UTILITY(U,$J,358.3,2613,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2613,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Right Upper Limb
+ ;;^UTILITY(U,$J,358.3,2613,1,4,0)
+ ;;=4^G56.21
+ ;;^UTILITY(U,$J,358.3,2613,2)
+ ;;=^5004024
+ ;;^UTILITY(U,$J,358.3,2614,0)
+ ;;=G56.22^^14^192^55
+ ;;^UTILITY(U,$J,358.3,2614,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2614,1,3,0)
+ ;;=3^Lesion of Ulnar Nerve,Left Upper Limb
+ ;;^UTILITY(U,$J,358.3,2614,1,4,0)
+ ;;=4^G56.22
+ ;;^UTILITY(U,$J,358.3,2614,2)
+ ;;=^5004025
+ ;;^UTILITY(U,$J,358.3,2615,0)
+ ;;=M26.60^^14^192^180
+ ;;^UTILITY(U,$J,358.3,2615,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2615,1,3,0)
+ ;;=3^Temporomandibular Joint Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,2615,1,4,0)
+ ;;=4^M26.60
+ ;;^UTILITY(U,$J,358.3,2615,2)
+ ;;=^5011714
+ ;;^UTILITY(U,$J,358.3,2616,0)
+ ;;=L40.52^^14^192^137
+ ;;^UTILITY(U,$J,358.3,2616,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2616,1,3,0)
+ ;;=3^Psoriatic Arthritis Mutilans
+ ;;^UTILITY(U,$J,358.3,2616,1,4,0)
+ ;;=4^L40.52
+ ;;^UTILITY(U,$J,358.3,2616,2)
+ ;;=^5009167
+ ;;^UTILITY(U,$J,358.3,2617,0)
+ ;;=L40.53^^14^192^138
+ ;;^UTILITY(U,$J,358.3,2617,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2617,1,3,0)
+ ;;=3^Psoriatic Spondylitis
+ ;;^UTILITY(U,$J,358.3,2617,1,4,0)
+ ;;=4^L40.53
+ ;;^UTILITY(U,$J,358.3,2617,2)
+ ;;=^5009168
+ ;;^UTILITY(U,$J,358.3,2618,0)
+ ;;=M32.9^^14^192^179
+ ;;^UTILITY(U,$J,358.3,2618,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2618,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Unspec
+ ;;^UTILITY(U,$J,358.3,2618,1,4,0)
+ ;;=4^M32.9
+ ;;^UTILITY(U,$J,358.3,2618,2)
+ ;;=^5011761
+ ;;^UTILITY(U,$J,358.3,2619,0)
+ ;;=M32.0^^14^192^175
+ ;;^UTILITY(U,$J,358.3,2619,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2619,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Drug-Induced
+ ;;^UTILITY(U,$J,358.3,2619,1,4,0)
+ ;;=4^M32.0
+ ;;^UTILITY(U,$J,358.3,2619,2)
+ ;;=^5011752
+ ;;^UTILITY(U,$J,358.3,2620,0)
+ ;;=M32.13^^14^192^177
+ ;;^UTILITY(U,$J,358.3,2620,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2620,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Lung Involvement
+ ;;^UTILITY(U,$J,358.3,2620,1,4,0)
+ ;;=4^M32.13
+ ;;^UTILITY(U,$J,358.3,2620,2)
+ ;;=^5011756
+ ;;^UTILITY(U,$J,358.3,2621,0)
+ ;;=M32.14^^14^192^176
+ ;;^UTILITY(U,$J,358.3,2621,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2621,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Glomerular Disease
+ ;;^UTILITY(U,$J,358.3,2621,1,4,0)
+ ;;=4^M32.14
+ ;;^UTILITY(U,$J,358.3,2621,2)
+ ;;=^5011757
+ ;;^UTILITY(U,$J,358.3,2622,0)
+ ;;=M32.12^^14^192^178
+ ;;^UTILITY(U,$J,358.3,2622,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2622,1,3,0)
+ ;;=3^Systemic Lupus Erythematosus,Pericarditis
+ ;;^UTILITY(U,$J,358.3,2622,1,4,0)
+ ;;=4^M32.12
+ ;;^UTILITY(U,$J,358.3,2622,2)
+ ;;=^5011755
+ ;;^UTILITY(U,$J,358.3,2623,0)
+ ;;=M05.59^^14^192^159
+ ;;^UTILITY(U,$J,358.3,2623,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2623,1,3,0)
+ ;;=3^Rheumatoid Polyneuropathy w/ Rheumatoid Arthritis of Mult Sites
+ ;;^UTILITY(U,$J,358.3,2623,1,4,0)
+ ;;=4^M05.59
+ ;;^UTILITY(U,$J,358.3,2623,2)
+ ;;=^5009976
+ ;;^UTILITY(U,$J,358.3,2624,0)
+ ;;=M05.711^^14^192^153
+ ;;^UTILITY(U,$J,358.3,2624,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2624,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Shoulder
+ ;;^UTILITY(U,$J,358.3,2624,1,4,0)
+ ;;=4^M05.711
+ ;;^UTILITY(U,$J,358.3,2624,2)
+ ;;=^5010001
+ ;;^UTILITY(U,$J,358.3,2625,0)
+ ;;=M05.712^^14^192^146
+ ;;^UTILITY(U,$J,358.3,2625,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2625,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Shoulder
+ ;;^UTILITY(U,$J,358.3,2625,1,4,0)
+ ;;=4^M05.712
+ ;;^UTILITY(U,$J,358.3,2625,2)
+ ;;=^5010002
+ ;;^UTILITY(U,$J,358.3,2626,0)
+ ;;=M05.731^^14^192^154
+ ;;^UTILITY(U,$J,358.3,2626,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2626,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Right Wrist
+ ;;^UTILITY(U,$J,358.3,2626,1,4,0)
+ ;;=4^M05.731
+ ;;^UTILITY(U,$J,358.3,2626,2)
+ ;;=^5010007
+ ;;^UTILITY(U,$J,358.3,2627,0)
+ ;;=M05.732^^14^192^147
+ ;;^UTILITY(U,$J,358.3,2627,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,2627,1,3,0)
+ ;;=3^Rheumatoid Arthritis of Left Wrist
+ ;;^UTILITY(U,$J,358.3,2627,1,4,0)
+ ;;=4^M05.732

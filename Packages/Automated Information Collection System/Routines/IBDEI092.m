@@ -1,132 +1,360 @@
-IBDEI092 ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI092 ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,3955,2)
- ;;=^5063169
- ;;^UTILITY(U,$J,358.3,3956,0)
- ;;=Z55.9^^18^224^132
- ;;^UTILITY(U,$J,358.3,3956,1,0)
+ ;;^UTILITY(U,$J,358.3,11455,1,4,0)
+ ;;=4^H53.60
+ ;;^UTILITY(U,$J,358.3,11455,2)
+ ;;=^5006353
+ ;;^UTILITY(U,$J,358.3,11456,0)
+ ;;=H54.11^^40^584^6
+ ;;^UTILITY(U,$J,358.3,11456,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3956,1,3,0)
- ;;=3^Problems Related to Education/Literacy,Unspec
- ;;^UTILITY(U,$J,358.3,3956,1,4,0)
- ;;=4^Z55.9
- ;;^UTILITY(U,$J,358.3,3956,2)
- ;;=^5063106
- ;;^UTILITY(U,$J,358.3,3957,0)
- ;;=Z56.9^^18^224^133
- ;;^UTILITY(U,$J,358.3,3957,1,0)
+ ;;^UTILITY(U,$J,358.3,11456,1,3,0)
+ ;;=3^Blindness Right Eye,Low Vision Lt Eye
+ ;;^UTILITY(U,$J,358.3,11456,1,4,0)
+ ;;=4^H54.11
+ ;;^UTILITY(U,$J,358.3,11456,2)
+ ;;=^5006359
+ ;;^UTILITY(U,$J,358.3,11457,0)
+ ;;=H54.41^^40^584^7
+ ;;^UTILITY(U,$J,358.3,11457,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3957,1,3,0)
- ;;=3^Problems Related to Employment,Unspec
- ;;^UTILITY(U,$J,358.3,3957,1,4,0)
- ;;=4^Z56.9
- ;;^UTILITY(U,$J,358.3,3957,2)
- ;;=^5063117
- ;;^UTILITY(U,$J,358.3,3958,0)
- ;;=Z65.5^^18^224^130
- ;;^UTILITY(U,$J,358.3,3958,1,0)
+ ;;^UTILITY(U,$J,358.3,11457,1,3,0)
+ ;;=3^Blindness Right Eye,Normal Vision Lt Eye
+ ;;^UTILITY(U,$J,358.3,11457,1,4,0)
+ ;;=4^H54.41
+ ;;^UTILITY(U,$J,358.3,11457,2)
+ ;;=^5006363
+ ;;^UTILITY(U,$J,358.3,11458,0)
+ ;;=H26.9^^40^584^14
+ ;;^UTILITY(U,$J,358.3,11458,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3958,1,3,0)
- ;;=3^Problems Related to Disaster/War/Other Hostilities
- ;;^UTILITY(U,$J,358.3,3958,1,4,0)
- ;;=4^Z65.5
- ;;^UTILITY(U,$J,358.3,3958,2)
- ;;=^5063184
- ;;^UTILITY(U,$J,358.3,3959,0)
- ;;=Z59.5^^18^224^134
- ;;^UTILITY(U,$J,358.3,3959,1,0)
+ ;;^UTILITY(U,$J,358.3,11458,1,3,0)
+ ;;=3^Cataract,Unspec
+ ;;^UTILITY(U,$J,358.3,11458,1,4,0)
+ ;;=4^H26.9
+ ;;^UTILITY(U,$J,358.3,11458,2)
+ ;;=^5005363
+ ;;^UTILITY(U,$J,358.3,11459,0)
+ ;;=H25.9^^40^584^13
+ ;;^UTILITY(U,$J,358.3,11459,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3959,1,3,0)
- ;;=3^Problems Related to Extreme Poverty
- ;;^UTILITY(U,$J,358.3,3959,1,4,0)
- ;;=4^Z59.5
- ;;^UTILITY(U,$J,358.3,3959,2)
- ;;=^5063134
- ;;^UTILITY(U,$J,358.3,3960,0)
- ;;=Z59.0^^18^224^136
- ;;^UTILITY(U,$J,358.3,3960,1,0)
+ ;;^UTILITY(U,$J,358.3,11459,1,3,0)
+ ;;=3^Cataract,Age-Related,Unspec
+ ;;^UTILITY(U,$J,358.3,11459,1,4,0)
+ ;;=4^H25.9
+ ;;^UTILITY(U,$J,358.3,11459,2)
+ ;;=^5005296
+ ;;^UTILITY(U,$J,358.3,11460,0)
+ ;;=Z98.41^^40^584^12
+ ;;^UTILITY(U,$J,358.3,11460,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3960,1,3,0)
- ;;=3^Problems Related to Homelessness
- ;;^UTILITY(U,$J,358.3,3960,1,4,0)
- ;;=4^Z59.0
- ;;^UTILITY(U,$J,358.3,3960,2)
- ;;=^5063129
- ;;^UTILITY(U,$J,358.3,3961,0)
- ;;=Z59.9^^18^224^137
- ;;^UTILITY(U,$J,358.3,3961,1,0)
+ ;;^UTILITY(U,$J,358.3,11460,1,3,0)
+ ;;=3^Cataract Extraction,Postprocedure,Right Eye
+ ;;^UTILITY(U,$J,358.3,11460,1,4,0)
+ ;;=4^Z98.41
+ ;;^UTILITY(U,$J,358.3,11460,2)
+ ;;=^5063737
+ ;;^UTILITY(U,$J,358.3,11461,0)
+ ;;=Z98.42^^40^584^11
+ ;;^UTILITY(U,$J,358.3,11461,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3961,1,3,0)
- ;;=3^Problems Related to Housing/Economic Circumstances
- ;;^UTILITY(U,$J,358.3,3961,1,4,0)
- ;;=4^Z59.9
- ;;^UTILITY(U,$J,358.3,3961,2)
- ;;=^5063138
- ;;^UTILITY(U,$J,358.3,3962,0)
- ;;=Z59.1^^18^224^138
- ;;^UTILITY(U,$J,358.3,3962,1,0)
+ ;;^UTILITY(U,$J,358.3,11461,1,3,0)
+ ;;=3^Cataract Extraction,Postprocedure,Left Eye
+ ;;^UTILITY(U,$J,358.3,11461,1,4,0)
+ ;;=4^Z98.42
+ ;;^UTILITY(U,$J,358.3,11461,2)
+ ;;=^5063738
+ ;;^UTILITY(U,$J,358.3,11462,0)
+ ;;=H53.50^^40^584^15
+ ;;^UTILITY(U,$J,358.3,11462,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3962,1,3,0)
- ;;=3^Problems Related to Inadequate Housing
- ;;^UTILITY(U,$J,358.3,3962,1,4,0)
- ;;=4^Z59.1
- ;;^UTILITY(U,$J,358.3,3962,2)
- ;;=^5063130
- ;;^UTILITY(U,$J,358.3,3963,0)
- ;;=Z59.7^^18^224^139
- ;;^UTILITY(U,$J,358.3,3963,1,0)
+ ;;^UTILITY(U,$J,358.3,11462,1,3,0)
+ ;;=3^Color Vision Deficiencies,Unspec
+ ;;^UTILITY(U,$J,358.3,11462,1,4,0)
+ ;;=4^H53.50
+ ;;^UTILITY(U,$J,358.3,11462,2)
+ ;;=^5006348
+ ;;^UTILITY(U,$J,358.3,11463,0)
+ ;;=H10.9^^40^584^16
+ ;;^UTILITY(U,$J,358.3,11463,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3963,1,3,0)
- ;;=3^Problems Related to Insufficient Social Insurance/Welfare Support
- ;;^UTILITY(U,$J,358.3,3963,1,4,0)
- ;;=4^Z59.7
- ;;^UTILITY(U,$J,358.3,3963,2)
- ;;=^5063136
- ;;^UTILITY(U,$J,358.3,3964,0)
- ;;=Z59.4^^18^224^140
- ;;^UTILITY(U,$J,358.3,3964,1,0)
+ ;;^UTILITY(U,$J,358.3,11463,1,3,0)
+ ;;=3^Conjunctivitis,Unspec
+ ;;^UTILITY(U,$J,358.3,11463,1,4,0)
+ ;;=4^H10.9
+ ;;^UTILITY(U,$J,358.3,11463,2)
+ ;;=^5004716
+ ;;^UTILITY(U,$J,358.3,11464,0)
+ ;;=Z97.3^^40^584^17
+ ;;^UTILITY(U,$J,358.3,11464,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3964,1,3,0)
- ;;=3^Problems Related to Lack of Food/Drinking Water
- ;;^UTILITY(U,$J,358.3,3964,1,4,0)
- ;;=4^Z59.4
- ;;^UTILITY(U,$J,358.3,3964,2)
- ;;=^5063133
- ;;^UTILITY(U,$J,358.3,3965,0)
- ;;=Z73.9^^18^224^141
- ;;^UTILITY(U,$J,358.3,3965,1,0)
+ ;;^UTILITY(U,$J,358.3,11464,1,3,0)
+ ;;=3^Contact Lenses/Eyeglasses,Presence of
+ ;;^UTILITY(U,$J,358.3,11464,1,4,0)
+ ;;=4^Z97.3
+ ;;^UTILITY(U,$J,358.3,11464,2)
+ ;;=^5063729
+ ;;^UTILITY(U,$J,358.3,11465,0)
+ ;;=H53.72^^40^584^18
+ ;;^UTILITY(U,$J,358.3,11465,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3965,1,3,0)
- ;;=3^Problems Related to Life Management Difficulty
- ;;^UTILITY(U,$J,358.3,3965,1,4,0)
- ;;=4^Z73.9
- ;;^UTILITY(U,$J,358.3,3965,2)
- ;;=^5063281
- ;;^UTILITY(U,$J,358.3,3966,0)
- ;;=Z72.9^^18^224^142
- ;;^UTILITY(U,$J,358.3,3966,1,0)
+ ;;^UTILITY(U,$J,358.3,11465,1,3,0)
+ ;;=3^Contrast Sensitivity,Impaired
+ ;;^UTILITY(U,$J,358.3,11465,1,4,0)
+ ;;=4^H53.72
+ ;;^UTILITY(U,$J,358.3,11465,2)
+ ;;=^5006355
+ ;;^UTILITY(U,$J,358.3,11466,0)
+ ;;=H04.121^^40^584^21
+ ;;^UTILITY(U,$J,358.3,11466,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3966,1,3,0)
- ;;=3^Problems Related to Lifestyle
- ;;^UTILITY(U,$J,358.3,3966,1,4,0)
- ;;=4^Z72.9
- ;;^UTILITY(U,$J,358.3,3966,2)
- ;;=^5063267
- ;;^UTILITY(U,$J,358.3,3967,0)
- ;;=Z73.6^^18^224^124
- ;;^UTILITY(U,$J,358.3,3967,1,0)
+ ;;^UTILITY(U,$J,358.3,11466,1,3,0)
+ ;;=3^Dry Eye Syndrome Right Lacrimal Gland
+ ;;^UTILITY(U,$J,358.3,11466,1,4,0)
+ ;;=4^H04.121
+ ;;^UTILITY(U,$J,358.3,11466,2)
+ ;;=^5004463
+ ;;^UTILITY(U,$J,358.3,11467,0)
+ ;;=H04.122^^40^584^20
+ ;;^UTILITY(U,$J,358.3,11467,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3967,1,3,0)
- ;;=3^Problems Related to Activity Limitations d/t Disability
- ;;^UTILITY(U,$J,358.3,3967,1,4,0)
- ;;=4^Z73.6
- ;;^UTILITY(U,$J,358.3,3967,2)
- ;;=^5063274
- ;;^UTILITY(U,$J,358.3,3968,0)
- ;;=Z60.2^^18^224^143
- ;;^UTILITY(U,$J,358.3,3968,1,0)
+ ;;^UTILITY(U,$J,358.3,11467,1,3,0)
+ ;;=3^Dry Eye Syndrome Left Lacrimal Gland
+ ;;^UTILITY(U,$J,358.3,11467,1,4,0)
+ ;;=4^H04.122
+ ;;^UTILITY(U,$J,358.3,11467,2)
+ ;;=^5004464
+ ;;^UTILITY(U,$J,358.3,11468,0)
+ ;;=H04.123^^40^584^19
+ ;;^UTILITY(U,$J,358.3,11468,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,3968,1,3,0)
- ;;=3^Problems Related to Living Alone
+ ;;^UTILITY(U,$J,358.3,11468,1,3,0)
+ ;;=3^Dry Eye Syndrome Bilateral Lacrimal Glands
+ ;;^UTILITY(U,$J,358.3,11468,1,4,0)
+ ;;=4^H04.123
+ ;;^UTILITY(U,$J,358.3,11468,2)
+ ;;=^5004465
+ ;;^UTILITY(U,$J,358.3,11469,0)
+ ;;=H02.106^^40^584^22
+ ;;^UTILITY(U,$J,358.3,11469,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11469,1,3,0)
+ ;;=3^Ectropion Left Eye,Unspec Eyelid
+ ;;^UTILITY(U,$J,358.3,11469,1,4,0)
+ ;;=4^H02.106
+ ;;^UTILITY(U,$J,358.3,11469,2)
+ ;;=^5004306
+ ;;^UTILITY(U,$J,358.3,11470,0)
+ ;;=H02.103^^40^584^23
+ ;;^UTILITY(U,$J,358.3,11470,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11470,1,3,0)
+ ;;=3^Ectropion Right Eye,Unspec Eyelid
+ ;;^UTILITY(U,$J,358.3,11470,1,4,0)
+ ;;=4^H02.103
+ ;;^UTILITY(U,$J,358.3,11470,2)
+ ;;=^5004304
+ ;;^UTILITY(U,$J,358.3,11471,0)
+ ;;=H02.006^^40^584^24
+ ;;^UTILITY(U,$J,358.3,11471,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11471,1,3,0)
+ ;;=3^Entropion Left Eye,Unspec Eyelid
+ ;;^UTILITY(U,$J,358.3,11471,1,4,0)
+ ;;=4^H02.006
+ ;;^UTILITY(U,$J,358.3,11471,2)
+ ;;=^5004277
+ ;;^UTILITY(U,$J,358.3,11472,0)
+ ;;=H02.003^^40^584^25
+ ;;^UTILITY(U,$J,358.3,11472,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11472,1,3,0)
+ ;;=3^Entropion Right Eye,Unspec Eyelid
+ ;;^UTILITY(U,$J,358.3,11472,1,4,0)
+ ;;=4^H02.003
+ ;;^UTILITY(U,$J,358.3,11472,2)
+ ;;=^5004275
+ ;;^UTILITY(U,$J,358.3,11473,0)
+ ;;=H53.71^^40^584^26
+ ;;^UTILITY(U,$J,358.3,11473,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11473,1,3,0)
+ ;;=3^Glare Sensitivity
+ ;;^UTILITY(U,$J,358.3,11473,1,4,0)
+ ;;=4^H53.71
+ ;;^UTILITY(U,$J,358.3,11473,2)
+ ;;=^5006354
+ ;;^UTILITY(U,$J,358.3,11474,0)
+ ;;=H40.9^^40^584^27
+ ;;^UTILITY(U,$J,358.3,11474,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11474,1,3,0)
+ ;;=3^Glaucoma,Unspec
+ ;;^UTILITY(U,$J,358.3,11474,1,4,0)
+ ;;=4^H40.9
+ ;;^UTILITY(U,$J,358.3,11474,2)
+ ;;=^5005931
+ ;;^UTILITY(U,$J,358.3,11475,0)
+ ;;=H54.52^^40^584^28
+ ;;^UTILITY(U,$J,358.3,11475,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11475,1,3,0)
+ ;;=3^Low Vision Lt Eye,Normal Vision Rt Eye
+ ;;^UTILITY(U,$J,358.3,11475,1,4,0)
+ ;;=4^H54.52
+ ;;^UTILITY(U,$J,358.3,11475,2)
+ ;;=^5133519
+ ;;^UTILITY(U,$J,358.3,11476,0)
+ ;;=H54.51^^40^584^29
+ ;;^UTILITY(U,$J,358.3,11476,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11476,1,3,0)
+ ;;=3^Low Vision Rt Eye,Normal Vision Lt Eye
+ ;;^UTILITY(U,$J,358.3,11476,1,4,0)
+ ;;=4^H54.51
+ ;;^UTILITY(U,$J,358.3,11476,2)
+ ;;=^5006365
+ ;;^UTILITY(U,$J,358.3,11477,0)
+ ;;=H35.30^^40^584^30
+ ;;^UTILITY(U,$J,358.3,11477,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11477,1,3,0)
+ ;;=3^Macular Degeneration,Unspec
+ ;;^UTILITY(U,$J,358.3,11477,1,4,0)
+ ;;=4^H35.30
+ ;;^UTILITY(U,$J,358.3,11477,2)
+ ;;=^5005646
+ ;;^UTILITY(U,$J,358.3,11478,0)
+ ;;=H55.00^^40^584^31
+ ;;^UTILITY(U,$J,358.3,11478,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11478,1,3,0)
+ ;;=3^Nystagmus,Unspec
+ ;;^UTILITY(U,$J,358.3,11478,1,4,0)
+ ;;=4^H55.00
+ ;;^UTILITY(U,$J,358.3,11478,2)
+ ;;=^5006370
+ ;;^UTILITY(U,$J,358.3,11479,0)
+ ;;=H11.001^^40^584^34
+ ;;^UTILITY(U,$J,358.3,11479,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11479,1,3,0)
+ ;;=3^Pterygium Right Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,11479,1,4,0)
+ ;;=4^H11.001
+ ;;^UTILITY(U,$J,358.3,11479,2)
+ ;;=^5004717
+ ;;^UTILITY(U,$J,358.3,11480,0)
+ ;;=H11.002^^40^584^33
+ ;;^UTILITY(U,$J,358.3,11480,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11480,1,3,0)
+ ;;=3^Pterygium Left Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,11480,1,4,0)
+ ;;=4^H11.002
+ ;;^UTILITY(U,$J,358.3,11480,2)
+ ;;=^5004718
+ ;;^UTILITY(U,$J,358.3,11481,0)
+ ;;=H11.003^^40^584^32
+ ;;^UTILITY(U,$J,358.3,11481,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11481,1,3,0)
+ ;;=3^Pterygium Bilateral,Unspec
+ ;;^UTILITY(U,$J,358.3,11481,1,4,0)
+ ;;=4^H11.003
+ ;;^UTILITY(U,$J,358.3,11481,2)
+ ;;=^5004719
+ ;;^UTILITY(U,$J,358.3,11482,0)
+ ;;=H33.001^^40^584^37
+ ;;^UTILITY(U,$J,358.3,11482,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11482,1,3,0)
+ ;;=3^Retinal Detachment w/ Retinal Break Right Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,11482,1,4,0)
+ ;;=4^H33.001
+ ;;^UTILITY(U,$J,358.3,11482,2)
+ ;;=^5005490
+ ;;^UTILITY(U,$J,358.3,11483,0)
+ ;;=H33.002^^40^584^36
+ ;;^UTILITY(U,$J,358.3,11483,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11483,1,3,0)
+ ;;=3^Retinal Detachment w/ Retinal Break Left Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,11483,1,4,0)
+ ;;=4^H33.002
+ ;;^UTILITY(U,$J,358.3,11483,2)
+ ;;=^5005491
+ ;;^UTILITY(U,$J,358.3,11484,0)
+ ;;=H33.003^^40^584^35
+ ;;^UTILITY(U,$J,358.3,11484,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11484,1,3,0)
+ ;;=3^Retinal Detachment w/ Retinal Break Bilateral,Unspec
+ ;;^UTILITY(U,$J,358.3,11484,1,4,0)
+ ;;=4^H33.003
+ ;;^UTILITY(U,$J,358.3,11484,2)
+ ;;=^5005492
+ ;;^UTILITY(U,$J,358.3,11485,0)
+ ;;=H53.9^^40^584^38
+ ;;^UTILITY(U,$J,358.3,11485,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11485,1,3,0)
+ ;;=3^Visual Disturbance,Unspec
+ ;;^UTILITY(U,$J,358.3,11485,1,4,0)
+ ;;=4^H53.9
+ ;;^UTILITY(U,$J,358.3,11485,2)
+ ;;=^124001
+ ;;^UTILITY(U,$J,358.3,11486,0)
+ ;;=H54.62^^40^584^40
+ ;;^UTILITY(U,$J,358.3,11486,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11486,1,3,0)
+ ;;=3^Visual Loss Lt Eye,Normal Vision Rt Eye
+ ;;^UTILITY(U,$J,358.3,11486,1,4,0)
+ ;;=4^H54.62
+ ;;^UTILITY(U,$J,358.3,11486,2)
+ ;;=^5133520
+ ;;^UTILITY(U,$J,358.3,11487,0)
+ ;;=H54.61^^40^584^41
+ ;;^UTILITY(U,$J,358.3,11487,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11487,1,3,0)
+ ;;=3^Visual Loss Rt Eye,Normal Vision Lt Eye
+ ;;^UTILITY(U,$J,358.3,11487,1,4,0)
+ ;;=4^H54.61
+ ;;^UTILITY(U,$J,358.3,11487,2)
+ ;;=^5006367
+ ;;^UTILITY(U,$J,358.3,11488,0)
+ ;;=H54.3^^40^584^39
+ ;;^UTILITY(U,$J,358.3,11488,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11488,1,3,0)
+ ;;=3^Visual Loss Both Eyes,Unqualified
+ ;;^UTILITY(U,$J,358.3,11488,1,4,0)
+ ;;=4^H54.3
+ ;;^UTILITY(U,$J,358.3,11488,2)
+ ;;=^268886
+ ;;^UTILITY(U,$J,358.3,11489,0)
+ ;;=W10.9XXA^^40^585^22
+ ;;^UTILITY(U,$J,358.3,11489,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11489,1,3,0)
+ ;;=3^Fall,Stairs/Steps,Init Encntr,Unspec
+ ;;^UTILITY(U,$J,358.3,11489,1,4,0)
+ ;;=4^W10.9XXA
+ ;;^UTILITY(U,$J,358.3,11489,2)
+ ;;=^5059592
+ ;;^UTILITY(U,$J,358.3,11490,0)
+ ;;=W10.0XXA^^40^585^19
+ ;;^UTILITY(U,$J,358.3,11490,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,11490,1,3,0)
+ ;;=3^Fall,Escalator,Init Encntr
+ ;;^UTILITY(U,$J,358.3,11490,1,4,0)
+ ;;=4^W10.0XXA
+ ;;^UTILITY(U,$J,358.3,11490,2)
+ ;;=^5059580
+ ;;^UTILITY(U,$J,358.3,11491,0)
+ ;;=W10.2XXA^^40^585^20

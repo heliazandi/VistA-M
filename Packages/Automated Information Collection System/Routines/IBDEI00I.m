@@ -1,76 +1,356 @@
-IBDEI00I ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
- Q:'DIFQ(358.2)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
+IBDEI00I ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
+ Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^DIC(358.2,0,"GL")
- ;;=^IBE(358.2,
- ;;^DIC("B","IMP/EXP SELECTION LIST",358.2)
- ;;=
- ;;^DIC(358.2,"%D",0)
- ;;=^^1^1^2940829^^^^
- ;;^DIC(358.2,"%D",1,0)
- ;;=Used by the import/export utility as a workspace.
- ;;^DIC(358.2,"%D",2,0)
- ;;= 
- ;;^DIC(358.2,"%D",3,0)
- ;;= 
- ;;^DIC(358.2,"%D",4,0)
- ;;= 
- ;;^DIC(358.2,"%D",5,0)
- ;;= 
- ;;^DIC(358.2,"%D",6,0)
- ;;= 
- ;;^DIC(358.2,"%D",7,0)
- ;;= 
- ;;^DIC(358.2,"%D",8,0)
- ;;=This file is nearly identical to file #357.2 . It is used by the
- ;;^DIC(358.2,"%D",9,0)
- ;;=Import/Export Utility as a temporary staging area for data from that file
- ;;^DIC(358.2,"%D",10,0)
- ;;=that is being imported or exported.
- ;;^DIC(358.2,"%D",11,0)
- ;;=provisions have been made to specify up to 4 columns per list.
- ;;^DD(358.2,0)
- ;;=FIELD^^2^19
- ;;^DD(358.2,0,"DDA")
- ;;=N
- ;;^DD(358.2,0,"DT")
- ;;=2960123
- ;;^DD(358.2,0,"ID",.02)
- ;;=W ""
- ;;^DD(358.2,0,"ID",.11)
- ;;=W ""
- ;;^DD(358.2,0,"IX","B",358.2,.01)
- ;;=
- ;;^DD(358.2,0,"IX","C",358.2,.02)
- ;;=
- ;;^DD(358.2,0,"NM","IMP/EXP SELECTION LIST")
- ;;=
- ;;^DD(358.2,0,"PT",358.3,.03)
- ;;=
- ;;^DD(358.2,0,"PT",358.4,.03)
- ;;=
- ;;^DD(358.2,0,"VRPK")
- ;;=IBD
- ;;^DD(358.2,.01,0)
- ;;=NAME^RF^^0;1^K:$L(X)>30!($L(X)<3)!'(X'?1P.E) X
- ;;^DD(358.2,.01,1,0)
- ;;=^.1
- ;;^DD(358.2,.01,1,1,0)
- ;;=358.2^B
- ;;^DD(358.2,.01,1,1,1)
- ;;=S ^IBE(358.2,"B",$E(X,1,30),DA)=""
- ;;^DD(358.2,.01,1,1,2)
- ;;=K ^IBE(358.2,"B",$E(X,1,30),DA)
- ;;^DD(358.2,.01,3)
- ;;=Answer must be 3-30 characters in length.
- ;;^DD(358.2,.01,21,0)
- ;;=^^2^2^2930527^
- ;;^DD(358.2,.01,21,1,0)
- ;;= 
- ;;^DD(358.2,.01,21,2,0)
- ;;=The name of the list.
- ;;^DD(358.2,.01,"DEL",1,0)
- ;;=I '$G(IBLISTPR) W "...Selection Lists can only be deleted through the Encounter Form Utilities!"
- ;;^DD(358.2,.01,"DT")
- ;;=2921119
+ ;;^UTILITY(U,$J,358.3,90,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,90,1,1,0)
+ ;;=1^DISCHARGE DAY MGMT > 30MIN
+ ;;^UTILITY(U,$J,358.3,90,1,2,0)
+ ;;=2^99239
+ ;;^UTILITY(U,$J,358.3,91,0)
+ ;;=99218^^2^13^1
+ ;;^UTILITY(U,$J,358.3,91,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,91,1,1,0)
+ ;;=1^DETAILED OR COMPREH HX & EXAM;SF OR LOW COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,91,1,2,0)
+ ;;=2^99218
+ ;;^UTILITY(U,$J,358.3,92,0)
+ ;;=99219^^2^13^2
+ ;;^UTILITY(U,$J,358.3,92,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,92,1,1,0)
+ ;;=1^COMPREH HX & EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,92,1,2,0)
+ ;;=2^99219
+ ;;^UTILITY(U,$J,358.3,93,0)
+ ;;=99220^^2^13^3
+ ;;^UTILITY(U,$J,358.3,93,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,93,1,1,0)
+ ;;=1^COMPREH HX & EXAM;HIGH COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,93,1,2,0)
+ ;;=2^99220
+ ;;^UTILITY(U,$J,358.3,94,0)
+ ;;=99217^^2^14^1
+ ;;^UTILITY(U,$J,358.3,94,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,94,1,1,0)
+ ;;=1^DISCHARGE DAY MGMT
+ ;;^UTILITY(U,$J,358.3,94,1,2,0)
+ ;;=2^99217
+ ;;^UTILITY(U,$J,358.3,95,0)
+ ;;=99234^^2^15^1
+ ;;^UTILITY(U,$J,358.3,95,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,95,1,1,0)
+ ;;=1^DETAIL OR COMPREH HX & EXAM;SF OR LOW COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,95,1,2,0)
+ ;;=2^99234
+ ;;^UTILITY(U,$J,358.3,96,0)
+ ;;=99235^^2^15^2
+ ;;^UTILITY(U,$J,358.3,96,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,96,1,1,0)
+ ;;=1^COMPREH HX & EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,96,1,2,0)
+ ;;=2^99235
+ ;;^UTILITY(U,$J,358.3,97,0)
+ ;;=99236^^2^15^3
+ ;;^UTILITY(U,$J,358.3,97,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,97,1,1,0)
+ ;;=1^COMPREH HX & EXAM;HIGH COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,97,1,2,0)
+ ;;=2^99236
+ ;;^UTILITY(U,$J,358.3,98,0)
+ ;;=99231^^2^16^1
+ ;;^UTILITY(U,$J,358.3,98,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,98,1,1,0)
+ ;;=1^PROB FOCUS HX OR EXAM;SF OR LOW COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,98,1,2,0)
+ ;;=2^99231
+ ;;^UTILITY(U,$J,358.3,99,0)
+ ;;=99232^^2^16^2
+ ;;^UTILITY(U,$J,358.3,99,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,99,1,1,0)
+ ;;=1^EXPAN PROB FOCUS HX OR EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,99,1,2,0)
+ ;;=2^99232
+ ;;^UTILITY(U,$J,358.3,100,0)
+ ;;=99233^^2^16^3
+ ;;^UTILITY(U,$J,358.3,100,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,100,1,1,0)
+ ;;=1^DETAILED HX OR EXAM;HIGH COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,100,1,2,0)
+ ;;=2^99233
+ ;;^UTILITY(U,$J,358.3,101,0)
+ ;;=99224^^2^17^1
+ ;;^UTILITY(U,$J,358.3,101,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,101,1,1,0)
+ ;;=1^PROB FOCUS HX OR EXAM;SF OR LOW COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,101,1,2,0)
+ ;;=2^99224
+ ;;^UTILITY(U,$J,358.3,102,0)
+ ;;=99225^^2^17^2
+ ;;^UTILITY(U,$J,358.3,102,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,102,1,1,0)
+ ;;=1^EXPAN PROB FOCUS HX OR EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,102,1,2,0)
+ ;;=2^99225
+ ;;^UTILITY(U,$J,358.3,103,0)
+ ;;=99226^^2^17^3
+ ;;^UTILITY(U,$J,358.3,103,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,103,1,1,0)
+ ;;=1^DETAILED HX OR EXAM;HIGH COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,103,1,2,0)
+ ;;=2^99226
+ ;;^UTILITY(U,$J,358.3,104,0)
+ ;;=99334^^2^18^1
+ ;;^UTILITY(U,$J,358.3,104,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,104,1,1,0)
+ ;;=1^PROBLEM FOCUSED HX OR EXAM;SF MDM
+ ;;^UTILITY(U,$J,358.3,104,1,2,0)
+ ;;=2^99334
+ ;;^UTILITY(U,$J,358.3,105,0)
+ ;;=99335^^2^18^2
+ ;;^UTILITY(U,$J,358.3,105,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,105,1,1,0)
+ ;;=1^EXPAND PROB FOCUS HX OR EXAM;LOW COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,105,1,2,0)
+ ;;=2^99335
+ ;;^UTILITY(U,$J,358.3,106,0)
+ ;;=99336^^2^18^3
+ ;;^UTILITY(U,$J,358.3,106,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,106,1,1,0)
+ ;;=1^DETAILED HX OR EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,106,1,2,0)
+ ;;=2^99336
+ ;;^UTILITY(U,$J,358.3,107,0)
+ ;;=99337^^2^18^4
+ ;;^UTILITY(U,$J,358.3,107,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,107,1,1,0)
+ ;;=1^COMPREH HX OR EXAM;HIGH COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,107,1,2,0)
+ ;;=2^99337
+ ;;^UTILITY(U,$J,358.3,108,0)
+ ;;=99324^^2^19^1
+ ;;^UTILITY(U,$J,358.3,108,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,108,1,1,0)
+ ;;=1^PROBLEM FOCUSED HX & EXAM;SF MDM
+ ;;^UTILITY(U,$J,358.3,108,1,2,0)
+ ;;=2^99324
+ ;;^UTILITY(U,$J,358.3,109,0)
+ ;;=99325^^2^19^2
+ ;;^UTILITY(U,$J,358.3,109,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,109,1,1,0)
+ ;;=1^EXPAND PROB FOCUS HX & EXAM;LOW COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,109,1,2,0)
+ ;;=2^99325
+ ;;^UTILITY(U,$J,358.3,110,0)
+ ;;=99326^^2^19^3
+ ;;^UTILITY(U,$J,358.3,110,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,110,1,1,0)
+ ;;=1^DETAILED HX & EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,110,1,2,0)
+ ;;=2^99326
+ ;;^UTILITY(U,$J,358.3,111,0)
+ ;;=99327^^2^19^4
+ ;;^UTILITY(U,$J,358.3,111,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,111,1,1,0)
+ ;;=1^COMPREH HX & EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,111,1,2,0)
+ ;;=2^99327
+ ;;^UTILITY(U,$J,358.3,112,0)
+ ;;=99328^^2^19^5
+ ;;^UTILITY(U,$J,358.3,112,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,112,1,1,0)
+ ;;=1^COMPREH HX & EXAM;HIGH COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,112,1,2,0)
+ ;;=2^99328
+ ;;^UTILITY(U,$J,358.3,113,0)
+ ;;=99324^^2^19^6
+ ;;^UTILITY(U,$J,358.3,113,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,113,1,1,0)
+ ;;=1^Domiciliary Visit-Problem Focused
+ ;;^UTILITY(U,$J,358.3,113,1,2,0)
+ ;;=2^99324
+ ;;^UTILITY(U,$J,358.3,114,0)
+ ;;=99347^^2^20^1
+ ;;^UTILITY(U,$J,358.3,114,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,114,1,1,0)
+ ;;=1^PROBLEM FOCUSED HX OR EXAM;SF MDM
+ ;;^UTILITY(U,$J,358.3,114,1,2,0)
+ ;;=2^99347
+ ;;^UTILITY(U,$J,358.3,115,0)
+ ;;=99348^^2^20^2
+ ;;^UTILITY(U,$J,358.3,115,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,115,1,1,0)
+ ;;=1^EXPAND PROB FOCUS HX OR EXAM;LOW COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,115,1,2,0)
+ ;;=2^99348
+ ;;^UTILITY(U,$J,358.3,116,0)
+ ;;=99349^^2^20^3
+ ;;^UTILITY(U,$J,358.3,116,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,116,1,1,0)
+ ;;=1^DETAILED HX OR EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,116,1,2,0)
+ ;;=2^99349
+ ;;^UTILITY(U,$J,358.3,117,0)
+ ;;=99350^^2^20^4
+ ;;^UTILITY(U,$J,358.3,117,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,117,1,1,0)
+ ;;=1^COMPREH HX OR EXAM;HIGH COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,117,1,2,0)
+ ;;=2^99350
+ ;;^UTILITY(U,$J,358.3,118,0)
+ ;;=99341^^2^21^1
+ ;;^UTILITY(U,$J,358.3,118,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,118,1,1,0)
+ ;;=1^PROBLEM FOCUSED HX & EXAM;SF MDM
+ ;;^UTILITY(U,$J,358.3,118,1,2,0)
+ ;;=2^99341
+ ;;^UTILITY(U,$J,358.3,119,0)
+ ;;=99342^^2^21^2
+ ;;^UTILITY(U,$J,358.3,119,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,119,1,1,0)
+ ;;=1^EXPAND PROB FOCUS HX & EXAM;LOW COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,119,1,2,0)
+ ;;=2^99342
+ ;;^UTILITY(U,$J,358.3,120,0)
+ ;;=99343^^2^21^3
+ ;;^UTILITY(U,$J,358.3,120,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,120,1,1,0)
+ ;;=1^DETAILED HX & EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,120,1,2,0)
+ ;;=2^99343
+ ;;^UTILITY(U,$J,358.3,121,0)
+ ;;=99344^^2^21^4
+ ;;^UTILITY(U,$J,358.3,121,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,121,1,1,0)
+ ;;=1^COMPREH HX & EXAM;MOD COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,121,1,2,0)
+ ;;=2^99344
+ ;;^UTILITY(U,$J,358.3,122,0)
+ ;;=99345^^2^21^5
+ ;;^UTILITY(U,$J,358.3,122,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,122,1,1,0)
+ ;;=1^COMPREH HX & EXAM;HIGH COMPLEX MDM
+ ;;^UTILITY(U,$J,358.3,122,1,2,0)
+ ;;=2^99345
+ ;;^UTILITY(U,$J,358.3,123,0)
+ ;;=99366^^2^22^1
+ ;;^UTILITY(U,$J,358.3,123,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,123,1,1,0)
+ ;;=1^Interdisc Tm Conf w/ Pt/Fam,30+min,Non-Phys
+ ;;^UTILITY(U,$J,358.3,123,1,2,0)
+ ;;=2^99366
+ ;;^UTILITY(U,$J,358.3,124,0)
+ ;;=99367^^2^22^3
+ ;;^UTILITY(U,$J,358.3,124,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,124,1,1,0)
+ ;;=1^Interdisc Tm Conf w/o Pt/Fam,30+min,Physician
+ ;;^UTILITY(U,$J,358.3,124,1,2,0)
+ ;;=2^99367
+ ;;^UTILITY(U,$J,358.3,125,0)
+ ;;=99368^^2^22^2
+ ;;^UTILITY(U,$J,358.3,125,1,0)
+ ;;=^358.31IA^2^2
+ ;;^UTILITY(U,$J,358.3,125,1,1,0)
+ ;;=1^Interdisc Tm Conf w/o Pt/Fam,30+min,Non-Phys
+ ;;^UTILITY(U,$J,358.3,125,1,2,0)
+ ;;=2^99368
+ ;;^UTILITY(U,$J,358.3,126,0)
+ ;;=T74.11XA^^3^23^5
+ ;;^UTILITY(U,$J,358.3,126,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,126,1,3,0)
+ ;;=3^Adult Physical Abuse,Confirmed,Initial Encounter  
+ ;;^UTILITY(U,$J,358.3,126,1,4,0)
+ ;;=4^T74.11XA
+ ;;^UTILITY(U,$J,358.3,126,2)
+ ;;=^5054146
+ ;;^UTILITY(U,$J,358.3,127,0)
+ ;;=T74.11XD^^3^23^6
+ ;;^UTILITY(U,$J,358.3,127,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,127,1,3,0)
+ ;;=3^Adult Physical Abuse,Confirmed,Subsequent Encounter 
+ ;;^UTILITY(U,$J,358.3,127,1,4,0)
+ ;;=4^T74.11XD
+ ;;^UTILITY(U,$J,358.3,127,2)
+ ;;=^5054147
+ ;;^UTILITY(U,$J,358.3,128,0)
+ ;;=T76.11XA^^3^23^7
+ ;;^UTILITY(U,$J,358.3,128,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,128,1,3,0)
+ ;;=3^Adult Physical Abuse,Suspected,Initial Encounter  
+ ;;^UTILITY(U,$J,358.3,128,1,4,0)
+ ;;=4^T76.11XA
+ ;;^UTILITY(U,$J,358.3,128,2)
+ ;;=^5054221
+ ;;^UTILITY(U,$J,358.3,129,0)
+ ;;=T76.11XD^^3^23^8
+ ;;^UTILITY(U,$J,358.3,129,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,129,1,3,0)
+ ;;=3^Adult Physical Abuse,Suspected,Subsequent Encounter  
+ ;;^UTILITY(U,$J,358.3,129,1,4,0)
+ ;;=4^T76.11XD
+ ;;^UTILITY(U,$J,358.3,129,2)
+ ;;=^5054222
+ ;;^UTILITY(U,$J,358.3,130,0)
+ ;;=Z69.11^^3^23^31
+ ;;^UTILITY(U,$J,358.3,130,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,130,1,3,0)
+ ;;=3^MH Svc for Victim of Spousal/Partner Neglect
+ ;;^UTILITY(U,$J,358.3,130,1,4,0)
+ ;;=4^Z69.11
+ ;;^UTILITY(U,$J,358.3,130,2)
+ ;;=^5063232
+ ;;^UTILITY(U,$J,358.3,131,0)
+ ;;=Z91.410^^3^23^35
+ ;;^UTILITY(U,$J,358.3,131,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,131,1,3,0)
+ ;;=3^Past Hx of Spouse/Partner Violence,Physical 
+ ;;^UTILITY(U,$J,358.3,131,1,4,0)
+ ;;=4^Z91.410
+ ;;^UTILITY(U,$J,358.3,131,2)
+ ;;=^5063619
+ ;;^UTILITY(U,$J,358.3,132,0)
+ ;;=Z69.12^^3^23^27
+ ;;^UTILITY(U,$J,358.3,132,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,132,1,3,0)
+ ;;=3^MH Svc for Perpetrator of Spousal/Partner Violence-Physical,Sexual or Psychological

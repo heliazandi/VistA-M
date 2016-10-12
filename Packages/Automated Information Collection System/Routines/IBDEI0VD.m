@@ -1,122 +1,362 @@
-IBDEI0VD ; ; 17-FEB-2016
- ;;3.0;IB ENCOUNTER FORM IMP/EXP;;JUN 29, 2015
+IBDEI0VD ; ; 09-AUG-2016
+ ;;3.0;IB ENCOUNTER FORM IMP/EXP;;MAY 12, 2016
  Q:'DIFQR(358.3)  F I=1:2 S X=$T(Q+I) Q:X=""  S Y=$E($T(Q+I+1),4,999),X=$E(X,4,999) S:$A(Y)=126 I=I+1,Y=$E(Y,2,999)_$E($T(Q+I+1),5,99) S:$A(Y)=61 Y=$E(Y,2,999) X NO E  S @X=Y
 Q Q
- ;;^UTILITY(U,$J,358.3,14701,2)
- ;;=^5061661
- ;;^UTILITY(U,$J,358.3,14702,0)
- ;;=Y36.300D^^53^612^127
- ;;^UTILITY(U,$J,358.3,14702,1,0)
+ ;;^UTILITY(U,$J,358.3,41197,1,3,0)
+ ;;=3^Binocular Movement Disorder,Unspec
+ ;;^UTILITY(U,$J,358.3,41197,1,4,0)
+ ;;=4^H51.9
+ ;;^UTILITY(U,$J,358.3,41197,2)
+ ;;=^5006258
+ ;;^UTILITY(U,$J,358.3,41198,0)
+ ;;=D86.82^^121^1768^38
+ ;;^UTILITY(U,$J,358.3,41198,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14702,1,3,0)
- ;;=3^War Op Inv Unspec Fire/Conflagr/Hot Subst,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,14702,1,4,0)
- ;;=4^Y36.300D
- ;;^UTILITY(U,$J,358.3,14702,2)
- ;;=^5061662
- ;;^UTILITY(U,$J,358.3,14703,0)
- ;;=Y36.410A^^53^612^121
- ;;^UTILITY(U,$J,358.3,14703,1,0)
+ ;;^UTILITY(U,$J,358.3,41198,1,3,0)
+ ;;=3^Multiple Cranial Nerve Palsies in Sarcoidosis
+ ;;^UTILITY(U,$J,358.3,41198,1,4,0)
+ ;;=4^D86.82
+ ;;^UTILITY(U,$J,358.3,41198,2)
+ ;;=^5002447
+ ;;^UTILITY(U,$J,358.3,41199,0)
+ ;;=H51.11^^121^1768^21
+ ;;^UTILITY(U,$J,358.3,41199,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14703,1,3,0)
- ;;=3^War Op Inv Rubber Bullets,Milt,Init Encntr
- ;;^UTILITY(U,$J,358.3,14703,1,4,0)
- ;;=4^Y36.410A
- ;;^UTILITY(U,$J,358.3,14703,2)
- ;;=^5061691
- ;;^UTILITY(U,$J,358.3,14704,0)
- ;;=Y36.410D^^53^612^123
- ;;^UTILITY(U,$J,358.3,14704,1,0)
+ ;;^UTILITY(U,$J,358.3,41199,1,3,0)
+ ;;=3^Convergence Insufficiency
+ ;;^UTILITY(U,$J,358.3,41199,1,4,0)
+ ;;=4^H51.11
+ ;;^UTILITY(U,$J,358.3,41199,2)
+ ;;=^5006251
+ ;;^UTILITY(U,$J,358.3,41200,0)
+ ;;=H50.51^^121^1768^22
+ ;;^UTILITY(U,$J,358.3,41200,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14704,1,3,0)
- ;;=3^War Op Inv Rubber Bullets,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,14704,1,4,0)
- ;;=4^Y36.410D
- ;;^UTILITY(U,$J,358.3,14704,2)
- ;;=^5061692
- ;;^UTILITY(U,$J,358.3,14705,0)
- ;;=Y36.6X0A^^53^612^113
- ;;^UTILITY(U,$J,358.3,14705,1,0)
+ ;;^UTILITY(U,$J,358.3,41200,1,3,0)
+ ;;=3^Esophoria
+ ;;^UTILITY(U,$J,358.3,41200,1,4,0)
+ ;;=4^H50.51
+ ;;^UTILITY(U,$J,358.3,41200,2)
+ ;;=^265435
+ ;;^UTILITY(U,$J,358.3,41201,0)
+ ;;=H50.00^^121^1768^23
+ ;;^UTILITY(U,$J,358.3,41201,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14705,1,3,0)
- ;;=3^War Op Inv Biological Weapons,Milt,Init Encntr
- ;;^UTILITY(U,$J,358.3,14705,1,4,0)
- ;;=4^Y36.6X0A
- ;;^UTILITY(U,$J,358.3,14705,2)
- ;;=^5061775
- ;;^UTILITY(U,$J,358.3,14706,0)
- ;;=Y36.6X0D^^53^612^115
- ;;^UTILITY(U,$J,358.3,14706,1,0)
+ ;;^UTILITY(U,$J,358.3,41201,1,3,0)
+ ;;=3^Esotropia,Unspec
+ ;;^UTILITY(U,$J,358.3,41201,1,4,0)
+ ;;=4^H50.00
+ ;;^UTILITY(U,$J,358.3,41201,2)
+ ;;=^5006208
+ ;;^UTILITY(U,$J,358.3,41202,0)
+ ;;=H50.52^^121^1768^24
+ ;;^UTILITY(U,$J,358.3,41202,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14706,1,3,0)
- ;;=3^War Op Inv Biological Weapons,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,14706,1,4,0)
- ;;=4^Y36.6X0D
- ;;^UTILITY(U,$J,358.3,14706,2)
- ;;=^5061776
- ;;^UTILITY(U,$J,358.3,14707,0)
- ;;=Y36.7X0A^^53^612^128
- ;;^UTILITY(U,$J,358.3,14707,1,0)
+ ;;^UTILITY(U,$J,358.3,41202,1,3,0)
+ ;;=3^Exophoria
+ ;;^UTILITY(U,$J,358.3,41202,1,4,0)
+ ;;=4^H50.52
+ ;;^UTILITY(U,$J,358.3,41202,2)
+ ;;=^265436
+ ;;^UTILITY(U,$J,358.3,41203,0)
+ ;;=H50.10^^121^1768^25
+ ;;^UTILITY(U,$J,358.3,41203,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14707,1,3,0)
- ;;=3^War Op w/ Chem Weapons/Unconvtl Warfare,Milt,Init Encntr
- ;;^UTILITY(U,$J,358.3,14707,1,4,0)
- ;;=4^Y36.7X0A
- ;;^UTILITY(U,$J,358.3,14707,2)
- ;;=^5061781
- ;;^UTILITY(U,$J,358.3,14708,0)
- ;;=Y36.7X0D^^53^612^129
- ;;^UTILITY(U,$J,358.3,14708,1,0)
+ ;;^UTILITY(U,$J,358.3,41203,1,3,0)
+ ;;=3^Exotropia,Unspec
+ ;;^UTILITY(U,$J,358.3,41203,1,4,0)
+ ;;=4^H50.10
+ ;;^UTILITY(U,$J,358.3,41203,2)
+ ;;=^5006218
+ ;;^UTILITY(U,$J,358.3,41204,0)
+ ;;=H53.001^^121^1768^27
+ ;;^UTILITY(U,$J,358.3,41204,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14708,1,3,0)
- ;;=3^War Op w/ Chem Weapons/Unconvtl Warfare,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,14708,1,4,0)
- ;;=4^Y36.7X0D
- ;;^UTILITY(U,$J,358.3,14708,2)
- ;;=^5061782
- ;;^UTILITY(U,$J,358.3,14709,0)
- ;;=Y36.810A^^53^612^22
- ;;^UTILITY(U,$J,358.3,14709,1,0)
+ ;;^UTILITY(U,$J,358.3,41204,1,3,0)
+ ;;=3^Amblyopia,Right Eye
+ ;;^UTILITY(U,$J,358.3,41204,1,4,0)
+ ;;=4^H53.001
+ ;;^UTILITY(U,$J,358.3,41204,2)
+ ;;=^5006292
+ ;;^UTILITY(U,$J,358.3,41205,0)
+ ;;=H53.002^^121^1768^28
+ ;;^UTILITY(U,$J,358.3,41205,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14709,1,3,0)
- ;;=3^Explosn of Mine Placed During War Op but Expld Aft,Milt,Init Encntr
- ;;^UTILITY(U,$J,358.3,14709,1,4,0)
- ;;=4^Y36.810A
- ;;^UTILITY(U,$J,358.3,14709,2)
- ;;=^5061787
- ;;^UTILITY(U,$J,358.3,14710,0)
- ;;=Y36.810D^^53^612^23
- ;;^UTILITY(U,$J,358.3,14710,1,0)
+ ;;^UTILITY(U,$J,358.3,41205,1,3,0)
+ ;;=3^Amblyopia,Left Eye
+ ;;^UTILITY(U,$J,358.3,41205,1,4,0)
+ ;;=4^H53.002
+ ;;^UTILITY(U,$J,358.3,41205,2)
+ ;;=^5006293
+ ;;^UTILITY(U,$J,358.3,41206,0)
+ ;;=Z44.22^^121^1769^18
+ ;;^UTILITY(U,$J,358.3,41206,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14710,1,3,0)
- ;;=3^Explosn of Mine Placed During War Op but Expld Aft,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,14710,1,4,0)
- ;;=4^Y36.810D
- ;;^UTILITY(U,$J,358.3,14710,2)
- ;;=^5061788
- ;;^UTILITY(U,$J,358.3,14711,0)
- ;;=Y36.820A^^53^612^19
- ;;^UTILITY(U,$J,358.3,14711,1,0)
+ ;;^UTILITY(U,$J,358.3,41206,1,3,0)
+ ;;=3^Fitting/Adjust Artificial Eye,Left Eye
+ ;;^UTILITY(U,$J,358.3,41206,1,4,0)
+ ;;=4^Z44.22
+ ;;^UTILITY(U,$J,358.3,41206,2)
+ ;;=^5062988
+ ;;^UTILITY(U,$J,358.3,41207,0)
+ ;;=Z44.21^^121^1769^17
+ ;;^UTILITY(U,$J,358.3,41207,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14711,1,3,0)
- ;;=3^Explosn of Bomb Placed During War Op But Expld Aft,Milt,Init Encntr
- ;;^UTILITY(U,$J,358.3,14711,1,4,0)
- ;;=4^Y36.820A
- ;;^UTILITY(U,$J,358.3,14711,2)
- ;;=^5061793
- ;;^UTILITY(U,$J,358.3,14712,0)
- ;;=Y36.820D^^53^612^20
- ;;^UTILITY(U,$J,358.3,14712,1,0)
+ ;;^UTILITY(U,$J,358.3,41207,1,3,0)
+ ;;=3^Fitting/Adjust Artificial Eye,Right Eye
+ ;;^UTILITY(U,$J,358.3,41207,1,4,0)
+ ;;=4^Z44.21
+ ;;^UTILITY(U,$J,358.3,41207,2)
+ ;;=^5062987
+ ;;^UTILITY(U,$J,358.3,41208,0)
+ ;;=H05.10^^121^1769^8
+ ;;^UTILITY(U,$J,358.3,41208,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14712,1,3,0)
- ;;=3^Explosn of Bomb Placed During War Op But Expld Aft,Milt,Subs Encntr
- ;;^UTILITY(U,$J,358.3,14712,1,4,0)
- ;;=4^Y36.820D
- ;;^UTILITY(U,$J,358.3,14712,2)
- ;;=^5061794
- ;;^UTILITY(U,$J,358.3,14713,0)
- ;;=Y37.200A^^53^612^91
- ;;^UTILITY(U,$J,358.3,14713,1,0)
+ ;;^UTILITY(U,$J,358.3,41208,1,3,0)
+ ;;=3^Chronic Inflammatory Orbit Disorders,Unspec
+ ;;^UTILITY(U,$J,358.3,41208,1,4,0)
+ ;;=4^H05.10
+ ;;^UTILITY(U,$J,358.3,41208,2)
+ ;;=^5004576
+ ;;^UTILITY(U,$J,358.3,41209,0)
+ ;;=H05.402^^121^1769^12
+ ;;^UTILITY(U,$J,358.3,41209,1,0)
  ;;=^358.31IA^4^2
- ;;^UTILITY(U,$J,358.3,14713,1,3,0)
- ;;=3^Miltary Op Inv Explosion/Fragments,Milt,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41209,1,3,0)
+ ;;=3^Enophthalmos Left Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,41209,1,4,0)
+ ;;=4^H05.402
+ ;;^UTILITY(U,$J,358.3,41209,2)
+ ;;=^5004632
+ ;;^UTILITY(U,$J,358.3,41210,0)
+ ;;=H05.401^^121^1769^11
+ ;;^UTILITY(U,$J,358.3,41210,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41210,1,3,0)
+ ;;=3^Enophthalmos Right Eye,Unspec
+ ;;^UTILITY(U,$J,358.3,41210,1,4,0)
+ ;;=4^H05.401
+ ;;^UTILITY(U,$J,358.3,41210,2)
+ ;;=^5004631
+ ;;^UTILITY(U,$J,358.3,41211,0)
+ ;;=E05.90^^121^1769^1
+ ;;^UTILITY(U,$J,358.3,41211,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41211,1,3,0)
+ ;;=3^Thyrotoxicosis,Unspec
+ ;;^UTILITY(U,$J,358.3,41211,1,4,0)
+ ;;=4^E05.90
+ ;;^UTILITY(U,$J,358.3,41211,2)
+ ;;=^5002492
+ ;;^UTILITY(U,$J,358.3,41212,0)
+ ;;=L71.1^^121^1769^2
+ ;;^UTILITY(U,$J,358.3,41212,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41212,1,3,0)
+ ;;=3^Rhinophyma
+ ;;^UTILITY(U,$J,358.3,41212,1,4,0)
+ ;;=4^L71.1
+ ;;^UTILITY(U,$J,358.3,41212,2)
+ ;;=^106083
+ ;;^UTILITY(U,$J,358.3,41213,0)
+ ;;=L71.8^^121^1769^3
+ ;;^UTILITY(U,$J,358.3,41213,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41213,1,3,0)
+ ;;=3^Rosacea NEC
+ ;;^UTILITY(U,$J,358.3,41213,1,4,0)
+ ;;=4^L71.8
+ ;;^UTILITY(U,$J,358.3,41213,2)
+ ;;=^5009275
+ ;;^UTILITY(U,$J,358.3,41214,0)
+ ;;=J32.9^^121^1769^4
+ ;;^UTILITY(U,$J,358.3,41214,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41214,1,3,0)
+ ;;=3^Sinusitis,Chronic,Unspec
+ ;;^UTILITY(U,$J,358.3,41214,1,4,0)
+ ;;=4^J32.9
+ ;;^UTILITY(U,$J,358.3,41214,2)
+ ;;=^5008207
+ ;;^UTILITY(U,$J,358.3,41215,0)
+ ;;=L03.211^^121^1769^5
+ ;;^UTILITY(U,$J,358.3,41215,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41215,1,3,0)
+ ;;=3^Cellulitis of Face
+ ;;^UTILITY(U,$J,358.3,41215,1,4,0)
+ ;;=4^L03.211
+ ;;^UTILITY(U,$J,358.3,41215,2)
+ ;;=^5009043
+ ;;^UTILITY(U,$J,358.3,41216,0)
+ ;;=H05.011^^121^1769^6
+ ;;^UTILITY(U,$J,358.3,41216,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41216,1,3,0)
+ ;;=3^Cellulitis of Right Orbit
+ ;;^UTILITY(U,$J,358.3,41216,1,4,0)
+ ;;=4^H05.011
+ ;;^UTILITY(U,$J,358.3,41216,2)
+ ;;=^5004560
+ ;;^UTILITY(U,$J,358.3,41217,0)
+ ;;=H05.012^^121^1769^7
+ ;;^UTILITY(U,$J,358.3,41217,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41217,1,3,0)
+ ;;=3^Cellulitis of Left Orbit
+ ;;^UTILITY(U,$J,358.3,41217,1,4,0)
+ ;;=4^H05.012
+ ;;^UTILITY(U,$J,358.3,41217,2)
+ ;;=^5004561
+ ;;^UTILITY(U,$J,358.3,41218,0)
+ ;;=L03.212^^121^1769^9
+ ;;^UTILITY(U,$J,358.3,41218,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41218,1,3,0)
+ ;;=3^Lymphangitis of Face,Acute
+ ;;^UTILITY(U,$J,358.3,41218,1,4,0)
+ ;;=4^L03.212
+ ;;^UTILITY(U,$J,358.3,41218,2)
+ ;;=^5009044
+ ;;^UTILITY(U,$J,358.3,41219,0)
+ ;;=Z90.01^^121^1769^10
+ ;;^UTILITY(U,$J,358.3,41219,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41219,1,3,0)
+ ;;=3^Acquired Absence of Eye
+ ;;^UTILITY(U,$J,358.3,41219,1,4,0)
+ ;;=4^Z90.01
+ ;;^UTILITY(U,$J,358.3,41219,2)
+ ;;=^322068
+ ;;^UTILITY(U,$J,358.3,41220,0)
+ ;;=H05.241^^121^1769^13
+ ;;^UTILITY(U,$J,358.3,41220,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41220,1,3,0)
+ ;;=3^Exophthalmos,Right Eye
+ ;;^UTILITY(U,$J,358.3,41220,1,4,0)
+ ;;=4^H05.241
+ ;;^UTILITY(U,$J,358.3,41220,2)
+ ;;=^5004598
+ ;;^UTILITY(U,$J,358.3,41221,0)
+ ;;=H05.242^^121^1769^14
+ ;;^UTILITY(U,$J,358.3,41221,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41221,1,3,0)
+ ;;=3^Exophthalmos,Left Eye
+ ;;^UTILITY(U,$J,358.3,41221,1,4,0)
+ ;;=4^H05.242
+ ;;^UTILITY(U,$J,358.3,41221,2)
+ ;;=^5004599
+ ;;^UTILITY(U,$J,358.3,41222,0)
+ ;;=H44.521^^121^1769^15
+ ;;^UTILITY(U,$J,358.3,41222,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41222,1,3,0)
+ ;;=3^Atrophy of Globe,Right Eye
+ ;;^UTILITY(U,$J,358.3,41222,1,4,0)
+ ;;=4^H44.521
+ ;;^UTILITY(U,$J,358.3,41222,2)
+ ;;=^5006025
+ ;;^UTILITY(U,$J,358.3,41223,0)
+ ;;=H44.522^^121^1769^16
+ ;;^UTILITY(U,$J,358.3,41223,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41223,1,3,0)
+ ;;=3^Atrophy of Globe,Left Eye
+ ;;^UTILITY(U,$J,358.3,41223,1,4,0)
+ ;;=4^H44.522
+ ;;^UTILITY(U,$J,358.3,41223,2)
+ ;;=^5006026
+ ;;^UTILITY(U,$J,358.3,41224,0)
+ ;;=T85.79XA^^121^1769^19
+ ;;^UTILITY(U,$J,358.3,41224,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41224,1,3,0)
+ ;;=3^Infect/Inflm Reaction d/t Internal Prosthetic Device/Implant,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41224,1,4,0)
+ ;;=4^T85.79XA
+ ;;^UTILITY(U,$J,358.3,41224,2)
+ ;;=^5055676
+ ;;^UTILITY(U,$J,358.3,41225,0)
+ ;;=T85.398A^^121^1769^20
+ ;;^UTILITY(U,$J,358.3,41225,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41225,1,3,0)
+ ;;=3^Mech Compl of Ocular Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41225,1,4,0)
+ ;;=4^T85.398A
+ ;;^UTILITY(U,$J,358.3,41225,2)
+ ;;=^5055559
+ ;;^UTILITY(U,$J,358.3,41226,0)
+ ;;=T85.328A^^121^1769^21
+ ;;^UTILITY(U,$J,358.3,41226,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41226,1,3,0)
+ ;;=3^Displacement of Ocular Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41226,1,4,0)
+ ;;=4^T85.328A
+ ;;^UTILITY(U,$J,358.3,41226,2)
+ ;;=^5055550
+ ;;^UTILITY(U,$J,358.3,41227,0)
+ ;;=T85.318A^^121^1769^22
+ ;;^UTILITY(U,$J,358.3,41227,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41227,1,3,0)
+ ;;=3^Breakdown of Ocular Prosthetic Device/Implant/Graft,Init Encntr
+ ;;^UTILITY(U,$J,358.3,41227,1,4,0)
+ ;;=4^T85.318A
+ ;;^UTILITY(U,$J,358.3,41227,2)
+ ;;=^5055541
+ ;;^UTILITY(U,$J,358.3,41228,0)
+ ;;=H43.21^^121^1770^4
+ ;;^UTILITY(U,$J,358.3,41228,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41228,1,3,0)
+ ;;=3^Asteroid Hyalosis,Right Eye
+ ;;^UTILITY(U,$J,358.3,41228,1,4,0)
+ ;;=4^H43.21
+ ;;^UTILITY(U,$J,358.3,41228,2)
+ ;;=^5005942
+ ;;^UTILITY(U,$J,358.3,41229,0)
+ ;;=H43.22^^121^1770^5
+ ;;^UTILITY(U,$J,358.3,41229,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41229,1,3,0)
+ ;;=3^Asteroid Hyalosis,Left Eye
+ ;;^UTILITY(U,$J,358.3,41229,1,4,0)
+ ;;=4^H43.22
+ ;;^UTILITY(U,$J,358.3,41229,2)
+ ;;=^5005943
+ ;;^UTILITY(U,$J,358.3,41230,0)
+ ;;=H43.23^^121^1770^6
+ ;;^UTILITY(U,$J,358.3,41230,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41230,1,3,0)
+ ;;=3^Asteroid Hyalosis,Bilateral
+ ;;^UTILITY(U,$J,358.3,41230,1,4,0)
+ ;;=4^H43.23
+ ;;^UTILITY(U,$J,358.3,41230,2)
+ ;;=^5005944
+ ;;^UTILITY(U,$J,358.3,41231,0)
+ ;;=H43.11^^121^1770^7
+ ;;^UTILITY(U,$J,358.3,41231,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41231,1,3,0)
+ ;;=3^Vitreous Hemorrhage,Right Eye
+ ;;^UTILITY(U,$J,358.3,41231,1,4,0)
+ ;;=4^H43.11
+ ;;^UTILITY(U,$J,358.3,41231,2)
+ ;;=^5005938
+ ;;^UTILITY(U,$J,358.3,41232,0)
+ ;;=H43.12^^121^1770^8
+ ;;^UTILITY(U,$J,358.3,41232,1,0)
+ ;;=^358.31IA^4^2
+ ;;^UTILITY(U,$J,358.3,41232,1,3,0)
+ ;;=3^Vitreous Hemorrhage,Left Eye
+ ;;^UTILITY(U,$J,358.3,41232,1,4,0)
+ ;;=4^H43.12
+ ;;^UTILITY(U,$J,358.3,41232,2)
+ ;;=^5005939
+ ;;^UTILITY(U,$J,358.3,41233,0)
+ ;;=H43.391^^121^1770^1
