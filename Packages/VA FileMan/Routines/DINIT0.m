@@ -1,9 +1,9 @@
-DINIT0 ;SFISC/GFT,XAK-INITIALIZE VA FILEMAN ;2JUL2011
- ;;22.2;MSC Fileman;;Jan 05, 2015;
+DINIT0 ;SFISC/GFT,XAK - INITIALIZE VA FILEMAN ;23AUG2015
+ ;;22.2;VA FileMan;**2**;Jan 05, 2016;Build 139
+ ;;Per VA Directive 6402, this routine should not be modified.
  ;;Submitted to OSEHRA 5 January 2015 by the VISTA Expertise Network.
- ;;Based on Medsphere Systems Corporation's MSC Fileman 1051.
+ ;;Based on Medsphere Systems Corporation's MSC FileMan 1051.
  ;;Licensed under the terms of the Apache License, Version 2.0.
- ;;GFT;**164,1040,1042**
  ;
  I '$D(^DD("SETPTCNODE")) S ^("SETPTCNODE")=$H W !! F I=0:0 S I=$O(^DD(I)) Q:'I  F J=0:0 S J=$O(^DD(I,J)) Q:'J  S %=+$P($P($G(^(J,0)),U,2),"p",2) I %,$D(^DD(%,0)) S ^(0,"PTC",I,J)="" ;COMPUTED POINTER
 DD F I=1:1 S X=$T(DD+I),Y=$P(X," ",3,99) G ^DINIT1:X?.P S @("^DD(0,"_$E($P(X," ",2),3,99)_")=Y")
@@ -39,6 +39,9 @@ DD F I=1:1 S X=$T(DD+I),Y=$P(X," ",3,99) G ^DINIT1:X?.P S @("^DD(0,"_$E($P(X," "
  ;;.2,1,3,0 ^
  ;;.2,1,3,1 S %=$P(X,"P",2) S:$A(%)=48!%&$D(^DD(+%,0)) ^(0,"PT",DA(1),DA)=""
  ;;.2,1,3,2 S %=$P(X,"P",2) K:$A(%)=48!% ^DD(+%,0,"PT",DA(1),DA)
+ ;;.2,1,41,0 ^
+ ;;.2,1,41,1 I X["t" D AFDEF^DIETLIB(DA(1),DA)
+ ;;.2,1,41,2 I X["t" D AFDEFDEL^DIETLIB(DA(1),DA)
  ;;.2,1,666,0 ^
  ;;.2,1,666,1 N % S %=+$P(X,"p",2) I %,$D(^DD(%,0)) S ^(0,"PTC",DA(1),DA)="" ;COMPUTED POINTER
  ;;.2,1,666,2 N % S %=+$P(X,"p",2) I %,$D(^DD(%,0)) K ^(0,"PTC",DA(1),DA)

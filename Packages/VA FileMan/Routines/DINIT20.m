@@ -1,9 +1,10 @@
-DINIT20 ;SFISC/XAK-INITIALIZE VA FILEMAN ;29MAR2013
- ;;22.2;MSC Fileman;;Jan 05, 2015;
+DINIT20 ;SFISC/XAK - INITIALIZE VA FILEMAN ;9JAN2016
+ ;;22.2;VA FileMan;**2**;Jan 05, 2016;Build 139
+ ;;Per VA Directive 6402, this routine should not be modified.
  ;;Submitted to OSEHRA 5 January 2015 by the VISTA Expertise Network.
- ;;Based on Medsphere Systems Corporation's MSC Fileman 1051.
+ ;;Based on Medsphere Systems Corporation's MSC FileMan 1051.
  ;;Licensed under the terms of the Apache License, Version 2.0.
- ;;GFT;**999,1001,1009,1040,1045**
+ ;GFT;**999,1001,1009,1040,1045,1053,1054**
  ;
 DD F I=1:1 S X=$T(DD+I),Y=$P(X," ",3,99) G ^DINIT22:X?.P S @("^DD(1.1,"_$E($P(X," ",2),3,99)_")=Y")
  ;;0 FIELD^^4.2^16
@@ -34,6 +35,7 @@ DD F I=1:1 S X=$T(DD+I),Y=$P(X," ",3,99) G ^DINIT22:X?.P S @("^DD(1.1,"_$E($P(X,
  ;;.05,21,1,0 When a new recorded is added to a file (sub-file) and the .01 field is
  ;;.05,21,2,0 being audited, then this field will be set to an 'A'.
  ;;.06,0 ACCESSED^S^i:INQUIRED TO ENTRY^0;6
+ ;;.06,3 This field should only have a value if the audit event represents an inquiry that DID NOT CHANGE DATA
  ;;.06,21,0 ^^2^2
  ;;.06,21,1,0 This flag (settable by ACCESSED^DIET) is designed to record that a user LOOKED UP the Entry, without necessarily
  ;;.06,21,2,0 changing it.  Such an audit might be set by the POST-SELECTION ACTION of a File, e.g. for HIPAA.
@@ -48,12 +50,18 @@ DD F I=1:1 S X=$T(DD+I),Y=$P(X," ",3,99) G ^DINIT22:X?.P S @("^DD(1.1,"_$E($P(X,
  ;;2.1,0 OLD INTERNAL VALUE^F^^2.1;1^K:$L(X)>30 X
  ;;2.2,0 DATATYPE OF OLD VALUE^S^S:SET;P:POINTER;V:VARIABLE POINTER;^2.1;2^Q
  ;;2.14,0 OLD W-P TEXT^Cm^^ ; ^X "N I,X F I=0:0 S I=$O(^DIA(DIA,D0,2.14,I)) Q:'I  S X=$G(^(I,0)) X DICMX"
+ ;;2.14,21,0 ^^1^1
+ ;;2.14,21,1,0 Tells what the entire multi-line text field looked like BEFORE it was changed by the audited event.
  ;;2.9,0 PATIENT^Cp2^^ ; ^N A,% S %=$G(^DIC(DIA,0,"GL")),A=+$G(^DIA(DIA,D0,0)) X ^DD(1.1,2.9,9.2)
  ;;2.9,9 ^
  ;;2.9,9.1 N A,% S %=$G(^DIC(DIA,0,"GL")),A=+$G(^DIA(DIA,D0,0)) X ^DD(1.1,2.9,9.2)
  ;;2.9,9.2 S X="",X=$S(DIA=2:A,DIA=9000001:A,1:"") X ^DD(1.1,2.9,9.3):'X
- ;;2.9,9.3 N I,GL S I=$S($O(^DD(2,0,"PT",DIA,0)):+$O(^(0)),1:$O(^DD(9000001,0,"PT",DIA,0))) I I S GL=$P($G(^DD(DIA,I,0)),U,4) I GL'="" S X=$S($D(@(%_+A_","_$P(GL,";")_")")):$P(^(0),U,+$P(GL,";",2)),1:"") X:X[";" ^DD(1.1,2.9,9.4)
+ ;;2.9,9.3 N I,GL S I=$S($O(^DD(2,0,"PT",DIA,0)):+$O(^(0)),1:$O(^DD(9000001,0,"PT",DIA,0))) I I S GL=$P($G(^DD(DIA,I,0)),U,4) I GL'="" X ^DD(1.1,2.9,9.5)
  ;;2.9,9.4 S X=$S(X[";DPT(":+X,X[";AUPNPAT(":+X,1:"")
+ ;;2.9,9.5 S X=$P(GL,";"),X=$S($D(@(%_+A_","""_X_""")")):$P(^(X),U,+$P(GL,";",2)),1:"") X:X[";" ^DD(1.1,2.9,9.4)
+ ;;2.9,21,0 ^^2^2
+ ;;2.9,21,1,0 If the audited File is #2 or #9000001, or if there is a pointer back to either of these Files from the audited File,
+ ;;2.9,21,2,0 then this field shows which particular Patient is involved in the audited data.
  ;;3,0 NEW VALUE^CJ80^^ ; ^S X=$G(^DIA(DIA,D0,3)) I X="",$G(^(2))]"" S X="<deleted>"
  ;;3,9 ^
  ;;3.1,0 NEW INTERNAL VALUE^F^^3.1;1^K:$L(X)>30 X
