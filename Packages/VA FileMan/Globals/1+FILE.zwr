@@ -1,5 +1,5 @@
 OSEHRA ZGO Export: FILE
-13-MAY-2017 00:17:34 ZWR
+13-MAY-2017 03:01:16 ZWR
 ^DIC(0)="FILE^1^9999999.64^2752"
 ^DIC(".11",0)="INDEX^.11"
 ^DIC(".11",0,"DD")="^"
@@ -8206,6 +8206,7 @@ OSEHRA ZGO Export: FILE
 ^DIC(130,"%D",2,0)="case made up of an operative procedure, or multiple operative procedures"
 ^DIC(130,"%D",3,0)="for a patient.  The file includes the information necessary for creating"
 ^DIC(130,"%D",4,0)="the Nurses' Intraoperative Report, Operation Report, and Anesthesia Report"
+^DIC(130,"%MSC")="3170513.02581"
 ^DIC(131,0)="PERSON FIELD RESTRICTION^131I"
 ^DIC(131,0,"AUDIT")="@"
 ^DIC(131,0,"DD")="@"
