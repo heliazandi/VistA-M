@@ -1,5 +1,5 @@
 OSEHRA ZGO Export: FILE
-15-MAY-2017 21:17:36 ZWR
+16-MAY-2017 04:25:36 ZWR
 ^DIC(0)="FILE^1^9999999.64^2752"
 ^DIC(".11",0)="INDEX^.11"
 ^DIC(".11",0,"DD")="^"
@@ -28911,7 +28911,7 @@ OSEHRA ZGO Export: FILE
 ^DIC("2006.1","%D",26,0)="Non-integrated sites and Integrated sites that have one shared image "
 ^DIC("2006.1","%D",27,0)="storage location have one record.  Integrated sites where each site has"
 ^DIC("2006.1","%D",28,0)="their own image storage have one record for each of the associated sites."
-^DIC("2006.1","%MSC")="3170515.15072"
+^DIC("2006.1","%MSC")="3170516.0422"
 ^DIC("2006.13",0)="MAG PATH CONFIG^2006.13"
 ^DIC("2006.13",0,"AUDIT")="@"
 ^DIC("2006.13",0,"DD")="@"
