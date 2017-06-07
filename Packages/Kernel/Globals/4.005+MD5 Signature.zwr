@@ -1,5 +1,5 @@
 OSEHRA ZGO Export: MD5 Signature
-10-MAY-2017 10:49:54 ZWR
+06-JUN-2017 15:27:47 ZWR
 ^DIC(4.005,0)="MD5 Signature^4.005^8926.1^33"
 ^DIC(4.005,0,"GL")="^DIC(4.005,"
 ^DIC(4.005,1,0)="ALLERGY CODESYSTEM^0"
@@ -820,6 +820,7 @@ OSEHRA ZGO Export: MD5 Signature
 ^DIC(4.005,8926.1,1,8926.12,1,"B",.01,.01)=""
 ^DIC(4.005,8926.1,1,"B",8926.1,8926.1)=""
 ^DIC(4.005,8926.1,1,"B",8926.12,8926.12)=""
+^DIC(4.005,8926.1,2)="^^3170530.170642^712e62156ccc832bbf1109f474fa8b23"
 ^DIC(4.005,"%",0)="^1.005^^0"
 ^DIC(4.005,"%D",0)="^^9^9^3050818^"
 ^DIC(4.005,"%D",1,0)="The file holds parameters related to the MD5 signature of  the Master "
