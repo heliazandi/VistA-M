@@ -1,5 +1,5 @@
 OSEHRA ZGO Export: DEVICE
-27-JUL-2017 14:47:10 ZWR
+27-JUL-2017 16:29:50 ZWR
 ^%ZIS(1,0)="DEVICE^3.5Is^52^52"
 ^%ZIS(1,1,0)="TIS51^51^1^1^^^^^TIS^^1"
 ^%ZIS(1,1,"SUBTYPE")="9"
@@ -33,7 +33,7 @@ OSEHRA ZGO Export: DEVICE
 ^%ZIS(1,9,"TYPE")="TRM"
 ^%ZIS(1,10,0)="HFS^USER$:[TEMP]TMP.DAT^1^1^^^^^"
 ^%ZIS(1,10,1)="Host File Server^^^^1^1"
-^%ZIS(1,10,5)="855"
+^%ZIS(1,10,5)="856"
 ^%ZIS(1,10,"IOPAR")="""WNS"""
 ^%ZIS(1,10,"SUBTYPE")="16"
 ^%ZIS(1,10,"TYPE")="HFS"
@@ -193,7 +193,7 @@ OSEHRA ZGO Export: DEVICE
 ^%ZIS(1,39,"TYPE")="TRM"
 ^%ZIS(1,40,0)="GTM-UNIX-TELNET^/dev/pts/^1^^^^^^^^1^0"
 ^%ZIS(1,40,1)="TELNET^^^^1"
-^%ZIS(1,40,5)="9168"
+^%ZIS(1,40,5)="9591"
 ^%ZIS(1,40,"MN",0)="^3.501^2^2"
 ^%ZIS(1,40,"MN",1,0)="GTM-LINUX-TELNET"
 ^%ZIS(1,40,"MN",2,0)="TELNET"
