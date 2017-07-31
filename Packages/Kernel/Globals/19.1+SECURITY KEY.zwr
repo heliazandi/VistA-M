@@ -1,6 +1,6 @@
 OSEHRA ZGO Export: SECURITY KEY
-28-JUL-2017 16:34:23 ZWR
-^DIC(19.1,0)="SECURITY KEY^19.1^598^561"
+31-JUL-2017 21:13:36 ZWR
+^DIC(19.1,0)="SECURITY KEY^19.1^599^562"
 ^DIC(19.1,0,"DD")="#"
 ^DIC(19.1,0,"DEL")="#"
 ^DIC(19.1,0,"GL")="^DIC(19.1,"
@@ -2501,6 +2501,9 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,598,1,0)="^^2^2^3150128^"
 ^DIC(19.1,598,1,1,0)="The purpose of this key is identify those non-provider users who are "
 ^DIC(19.1,598,1,2,0)="allowed to order supplies using the PSO SUPPLY order dialog."
+^DIC(19.1,599,0)="PSO SPMP ADMIN^"
+^DIC(19.1,599,1,0)="^19.11^1^1^3151118^^"
+^DIC(19.1,599,1,1,0)="This key is used by the Outpatient Pharmacy (OP) package to grant certain users administration privileges to perform configuration updates in the State Prescription Monitoring Program (SPMP) module."
 ^DIC(19.1,"%",0)="^1.005^2^2"
 ^DIC(19.1,"%",1,0)="XU"
 ^DIC(19.1,"%",2,0)="XQ"
@@ -2878,6 +2881,7 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,"B","PSO ADDRESS UPDATE",439)=""
 ^DIC(19.1,"B","PSO COPAY",349)=""
 ^DIC(19.1,"B","PSO EPHARMACY SITE MANAGER",578)=""
+^DIC(19.1,"B","PSO SPMP ADMIN",599)=""
 ^DIC(19.1,"B","PSO TECH ADV",549)=""
 ^DIC(19.1,"B","PSO TRICARE/CHAMPVA",526)=""
 ^DIC(19.1,"B","PSO TRICARE/CHAMPVA MGR",527)=""
