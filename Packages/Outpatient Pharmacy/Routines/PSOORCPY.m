@@ -1,5 +1,5 @@
 PSOORCPY ;BIR/SAB-copy orders from backdoor ;10/17/96
- ;;7.0;OUTPATIENT PHARMACY;**10,21,27,32,46,100,117,148,313,411**;DEC 1997;Build 95
+ ;;7.0;OUTPATIENT PHARMACY;**10,21,27,32,46,100,117,148,313,411,444**;DEC 1997;Build 34
  ;External reference to LK^ORX2 supported by DBIA 867
  ;External reference to ULK^ORX2 supported by DBIA 867
  ;External reference to ^PSDRUG( supported by DBIA 221
@@ -40,6 +40,10 @@ COPY ; Rx Copy Functionality
  .S VALMSG=$S('$G(PSOMTFLG):"Cannot COPY. ",1:"")_"Missing Sig"
  I '$P($G(^PSDRUG($P(PSORXED("RX0"),"^",6),2)),"^") S VALMBCK="R" G OUT
  S DREN=$P(PSORXED("RX0"),"^",6),PSODAYS=$P(PSORXED("RX0"),"^",8)
+ ; Checks if the current Days Supply value is greater than the Maximum Days Supply for the Drug
+ I '$G(PSOMTFLG) D
+ . S PSORXED("DAYS SUPPLY")=$P(PSORXED("RX0"),"^",8),PSORXED("QTY")=$P(PSORXED("RX0"),"^",7)
+ . D DAYSUP^PSOUTIL(DREN,.PSORXED,1)
  S PSORXST=+$P($G(^PS(53,$P(PSORXED("RX0"),"^",3),0)),"^",7)
  S POERR=1 D DRG^PSOORDRG K POERR
  I $G(PSORX("DFLG")) S VALMBCK="R"

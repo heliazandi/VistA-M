@@ -1,6 +1,6 @@
 OSEHRA ZGO Export: INDEX
-31-JUL-2017 18:21:24 ZWR
-^DD("IX",0)="INDEX^.11I^852^1262"
+31-JUL-2017 19:04:46 ZWR
+^DD("IX",0)="INDEX^.11I^462^1262"
 ^DD("IX",.001,0)="0^ADEL^Delete Keys and Indexes associated with a deleted field.^MU^^F^R^I^0^^^^^A"
 ^DD("IX",.001,1)="Q"
 ^DD("IX",.001,2)="D:'$D(DICATTED)&'$D(DIU) DELXRF^DICATT4(DA(1),DA)"
@@ -7498,7 +7498,7 @@ OSEHRA ZGO Export: INDEX
 ^DD("IX",460,11.1,"BB",3,3)=""
 ^DD("IX",460,11.1,"BB",4,4)=""
 ^DD("IX",461,0)="52^ACRO^Clinical Reminders index.^MU^^F^IR^I^52^^^^^A"
-^DD("IX",461,.1,0)="^^9^9^3041228"
+^DD("IX",461,.1,0)="^^9^9^3050224"
 ^DD("IX",461,.1,1,0)="This cross-reference builds two indexes, one for finding"
 ^DD("IX",461,.1,2,0)="all patients with a particular drug and one for"
 ^DD("IX",461,.1,3,0)="finding all the drugs a patient has. The indexes are"
@@ -7521,7 +7521,7 @@ OSEHRA ZGO Export: INDEX
 ^DD("IX",461,11.1,"BB",1,1)=""
 ^DD("IX",461,11.1,"BB",2,2)=""
 ^DD("IX",462,0)="52^ACRR^Clinical Reminders index.^MU^^F^IR^W^52.1^^^^^A"
-^DD("IX",462,.1,0)="^^9^9^3041228"
+^DD("IX",462,.1,0)="^^9^9^3050224"
 ^DD("IX",462,.1,1,0)="This cross-reference builds two indexes, one for finding"
 ^DD("IX",462,.1,2,0)="all patients with a particular drug and one for"
 ^DD("IX",462,.1,3,0)="finding all the drugs a patient has. The indexes are"

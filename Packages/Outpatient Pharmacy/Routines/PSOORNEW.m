@@ -1,11 +1,10 @@
 PSOORNEW ;BIR/SAB - display orders from oerr ;6/19/06 3:53pm
- ;;7.0;OUTPATIENT PHARMACY;**11,23,27,32,55,46,71,90,94,106,131,133,143,237,222,258,206,225,251,386,390,391,372,416,431,313,408,436,411**;DEC 1997;Build 95
+ ;;7.0;OUTPATIENT PHARMACY;**11,23,27,32,55,46,71,90,94,106,131,133,143,237,222,258,206,225,251,386,390,391,372,416,431,313,408,436,411,444**;DEC 1997;Build 34
  ;External reference to ^PS(50.7 supported by DBIA 2223
  ;External reference to ^PSDRUG supported by DBIA 221
  ;External reference to ^PS(50.606 supported by DBIA 2174
  ;External reference to ^PS(55 supported by DBIA 2228
  ;External reference to EN1^ORCFLAG supported by DBIA 3620
- ;External reference to ^DD("DD" supported by DBIA 999
  ;
  ;PSO*237 quit Finish if Today > Issue date + 365
  ;
@@ -131,7 +130,13 @@ ABORT S VALMBCK="Q",DIR(0)="E",DIR("?")="Press Return to continue",DIR("A")="Pre
  Q
 KV K DIRUT,DUOUT,DTOUT,DIR,PSOEDDOS
  Q
-REF D REF^PSOORFI4
+REF ;
+ ; Retrieving the Maximum Number of Refills allowed
+ N MAXRF S MAXRF=$$MAXNUMRF^PSOUTIL(+$G(PSODRUG("IEN")),+$G(PSONEW("DAYS SUPPLY")),+$G(PSONEW("PATIENT STATUS")),.CLOZPAT)
+ I ($G(PSONEW("# OF REFILLS"))'="")&($G(PSONEW("# OF REFILLS"))'>MAXRF) D
+ . S PSONEW("N# REF")=PSONEW("# OF REFILLS")
+ E  D
+ . S (PSONEW("N# REF"),PSONEW("# OF REFILLS"))=MAXRF
  Q
 1 I $P($G(OR0),"^",24) D  Q
  . W !!,"Digitally Signed Order - Orderable Item cannot be changed",! D PZ
