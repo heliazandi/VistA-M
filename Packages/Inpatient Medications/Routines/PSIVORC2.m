@@ -1,13 +1,11 @@
-PSIVORC2 ;BIR/MLM-PROCESS INCOMPLETE IV ORDER - CONT ;22 OCT 97 / 3:16 PM
- ;;5.0;INPATIENT MEDICATIONS;**29,49,50,65,58,85,101,110,127,151,181,267,275,257**;16 DEC 97;Build 105
+PSIVORC2 ;BIR/MLM - PROCESS INCOMPLETE IV ORDER - CONT ;22 OCT 97  3:16 PM
+ ;;5.0;INPATIENT MEDICATIONS;**29,49,50,65,58,85,101,110,127,151,181,267,275,257,281**;16 DEC 97;Build 113
  ;
- ; Reference to ^ORD(101 is supported by DBIA #872
  ; Reference to ^PS(51.2 is supported by DBIA #2178
  ; Reference to ^PS(55 is supported by DBIA #2191
- ; Reference to ^PS(52.6 is supported by DBIA #1231.
- ; Reference to ^PS(52.7 is supported by DBIA #2173.
  ; Reference to EN1^ORCFLAG is supported by DBIA #3620.
  ; Reference to ^PSSLOCK is supported by DBIA #2789
+ ; Reference to ^TMP("PSODAOC",$J is supported by# DBIA 6071
  ;
 EDCHK ;Update or create new order in 55.
  D CKORD D:'$G(PSJIVORF) ORPARM^PSIVOREN I 'PSJIVORF W !,"Either the Inpatient Medications or the IV Medications package is not on, please check the Order Parameters file" Q
@@ -38,7 +36,8 @@ CKORD ;Check if new order is to be created.
  I $G(PSIVCOPY) S PSIVCHG=0 Q
  N ND,PSJCHG S PSIVCHG=0,ND(0)=$G(^PS(53.1,+ON,0)),ND("PD")=$G(^PS(53.1,+ON,.2))_U_$P(ND(0),U,3)
  N X S X=$P($G(^PS(53.1,+ON,8)),U,5),X=$S(P(8)["@":$P(X,"@"),1:X)
- S ND=$S($E(P("OT"))="I":P(8)_U_$P(ND(0),U,3)_U_+$P(ND("PD"),U),1:X_U_+P("MR")_U_+P("PD"))
+ ;S ND=$S($E(P("OT"))="I":P(8)_U_$P(ND(0),U,3)_U_+$P(ND("PD"),U),1:X_U_+$P(ND(0),U,3))_U_+P("PD"))
+ S ND=$S($E(P("OT"))="I":P(8),1:X)_U_+$P(ND(0),U,3)_U_+$P(ND("PD"),U)
  S ND=ND_U_$S($P(ND(0),U,2)=+P("CLRK"):+$P(ND(0),U,2),1:+P(6))
  I ND'=($S($E(P("OT"))="I":P(8),P(8)["@":$P(P(8),"@"),1:P(8))_U_+P("MR")_U_+P("PD")_U_+P(6)) S PSIVCHG=1
  I 'PSIVCHG I $P($G(^PS(53.1,+ON,2)),U)'=P(9) S:($G(P("DTYP"))'=1) PSIVDSFG=1 S PSIVCHG=1
@@ -56,7 +55,7 @@ CKPC ;
  .;
  .; Check IV drugs for changes.
  .S DNE=0 F DRGT="AD","SOL" I $D(DRG(DRGT)) S FIL="52."_$S(DRGT="AD":6,1:7) D
- ..N ND,TDRG F DRGI=0:0 S DRGI=$O(DRG(DRGT,DRGI)) Q:'DRGI!DNE  S TDRG(+$P(DRG(DRGT,DRGI),U),DRGI)=DRGI,TDRG("CNT")=+$G(TDRG("CNT"))+1
+ ..N ND,TDRG,ON1 F DRGI=0:0 S DRGI=$O(DRG(DRGT,DRGI)) Q:'DRGI!DNE  S TDRG(+$P(DRG(DRGT,DRGI),U),DRGI)=DRGI,TDRG("CNT")=+$G(TDRG("CNT"))+1
  ..F ON1=0:0 S ON1=$O(^PS(53.1,+ON,DRGT,ON1)) Q:'+ON1!DNE  S ND=$G(^PS(53.1,+ON,DRGT,ON1,0)),ND("CNT")=$G(ND("CNT"))+1 D
  ...S DRG=+$P(ND,U) S:'$D(TDRG(+DRG)) (DNE,PSIVCHG)=1 F DRGI=0:0 S DRGI=$O(TDRG(+DRG,DRGI)) Q:'DRGI!DNE  I $P($G(DRG(DRGT,DRGI)),U)_U_$P($G(DRG(DRGT,DRGI)),U,3)'=$P(ND,U,1,2) S (DNE,PSIVCHG)=1
  ..S:$G(ND("CNT"))'=$G(TDRG("CNT")) (DNE,PSIVCHG)=1 K ND,TDRG
@@ -117,6 +116,8 @@ FINISH ; Ask only for missing data in incomplete IV order.
  Q
 NONVF() ; Updated 53.1 status to non-verified after finish.
  NEW PSGOEAV S PSGOEAV=+$P(PSJSYSP0,U,9)
+ S ^TMP("PSODAOC",$J,"IP NEW IEN")=ON
+ ;;;;D SETOC^PSJNEWOC(ON)
  I +PSJSYSU=3,PSGOEAV Q 0
  I +PSJSYSU=1,PSGOEAV Q 0
  I PSIVCHG D NWNONVF Q 1
@@ -128,7 +129,6 @@ NONVF() ; Updated 53.1 status to non-verified after finish.
  D NEWNVAL^PSGAL5(ON,$S(+PSJSYSU=1:22000,+PSJSYSU=3:22005,1:22006),"","")
  I ($G(PSJINFIN)=2) D NEWNVAL^PSGAL5(ON,6000,"OTHER PRINT INFO")
  NEW PSIVORFA S PSIVORFA=1 D:ON["V" DEL55^PSIVORE2
- D EN1^PSJHL2(DFN,"XX",ON,"UPDATED ORDER")
  D VF
  Q 1
 NWNONVF ;Create non-verified due to edit
@@ -143,6 +143,8 @@ NWNONVF ;Create non-verified due to edit
  S $P(^PS(53.1,+ON,0),U,25,26)=P("OLDON")_U_""
  D NEWNVAL^PSGAL5(ON,$S(+PSJSYSU=1:22000,+PSJSYSU=3:22005,1:22006),"","")
  D EN1^PSJHL2(DFN,"SN",ON,"SEND ORDER NUMBER")
+ S ^TMP("PSODAOC",$J,"IP NEW IEN")=ON
+ ;;;;D SETOC^PSJNEWOC(ON)
  S:$D(PSGP)#10 PSJNOL=$$LS^PSSLOCK(PSGP,ON)
  D VF
  Q
@@ -150,6 +152,7 @@ VF ; Display Verify screen
  Q:ON'["P"
  K PSJIVBD
  D GT531^PSIVORFA(DFN,ON)
+ S:$G(ON)]"" (ON55,PSJORD)=ON ;* CCR 6700
  S PSGACT="EL"
  I P(17)="N",(P("OLDON")=""),(+P("CLRK")=DUZ) S PSGACT="ELD"
  I +PSJSYSU=3!(+PSJSYSU=1) S PSGACT="DELV"
@@ -157,6 +160,8 @@ VF ; Display Verify screen
  I P("OT")="I" S PSJSTAR="(1)^(5)^(7)^(9)^(10)"
  I P("OT")'="I" S PSJSTAR="(1)^(2)^(3)^(5)^(7)^(9)"
  D EN^VALM("PSJ LM IV INPT ACTIVE")
+ ;RTC 178746 - Only store allergy if not verified after entering the order
+ I ($G(ON)["P"),($S(($G(PSJOCFG)="NEW OE IV"):1,($G(PSJOCFG)="FN IV"):1,$G(PSIVENO):1,1:0)) D SETOC^PSJNEWOC(ON)
  Q
  ;
 RESET ;Reset PSIVOI("DILIST") for additives with quick codes

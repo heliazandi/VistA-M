@@ -1,12 +1,13 @@
 PSIVEDRG ;BIR/MLM-ENTER/EDIT DRUGS FOR IV ORDER ;16 Mar 99 / 2:14 PM
- ;;5.0;INPATIENT MEDICATIONS ;**21,33,50,65,74,84,128,147,181,263**;16 DEC 97;Build 51
+ ;;5.0;INPATIENT MEDICATIONS ;**21,33,50,65,74,84,128,147,181,263,281**;16 DEC 97;Build 113
  ;
  ; References to ^PS(52.6 supported by DBIA# 1231.
  ; References to ^PS(52.7 supported by DBIA# 2173.
  ; Reference to EN^PSOORDRG supported by DBIA# 2190.
+ ; Reference to ^TMP("PSODAOC",$J supported by DBIA #6071.
  ;
 DRG ; Edit Additive/Solution data
- NEW DRGOC,PSGORQF K PSGORQF ;If PSGORQF=1 abort order after order check.
+ NEW DRGOC K PSGORQF ;If PSGORQF=1 abort order after order check. 2/25/15 - no longer NEW PSGORQF ;RTC 151046
  K PSIVOLD S DRG(2)="" I $D(DRG(DRGT)) S DRGI=+$O(DRG(DRGT,0)) I DRGI S PSIVOLD=1 D SETDRG
 DRG1 ;
  Q:$G(PSGORQF)
@@ -16,7 +17,7 @@ DRG1 ;
  I DRGT=$G(PSIVOI),($G(PSIVOI("DILIST",0))>1) D GTADSOL Q
  W:DRG(2)]"" DRG(2),"//" R X:DTIME S:'$T X="^" S:X=U DONE=1 I X["^"!(X=""&(DRG(2)="")) D CHKSCMNT Q
 DRG1A I X="" W !,DRGTN,": ",DRG(2),"//" R X:DTIME S:'$T X="^" D:X="^" CHKSCMNT Q:X="^"  I X="" S Y=1 D DRG3 G:DRGT="AD"!($G(P(4))="H") DRG1 Q
- I X="@",DRG(2)]"" D DEL G:%'=1 DRG1A K DRG(DRGT,DRGI) S DRGI=+$O(DRG(DRGT,0)) S:'DRGI DRG(DRGT,0)=0 D SETDRG G DRG1
+ I X="@",DRG(2)]"" D DEL G:%'=1 DRG1A K DRG(DRGT,DRGI),^TMP("PSODAOC",$J) S DRGI=+$O(DRG(DRGT,0)) S:'DRGI DRG(DRGT,0)=0 D SETDRG G DRG1
  I X["???",($E(P("OT"))="M"),(PSIVAC["C") D ORFLDS^PSIVEDT1 G DRG1
  I X'["?" S %=0 D:$D(DRG(DRGT)) CHK G:%=1 DRG1A D DRG2 Q:$G(Y)>0&($G(P(4))'="H"&(DRGT="SOL"))  G DRG1
  I $D(DRG(DRGT)) W !,"This order includes the following ",DRGTN,"S:",! F Y=0:0 S Y=$O(DRG(DRGT,Y)) Q:'Y  W !,$P(DRG(DRGT,Y),U,2)
@@ -108,7 +109,7 @@ SAVEDRG(NEW,OLD)   ;Store/restore DRG array.
  Q
  ;
 CHK ; Check if drug is already part of order
- N DDONE,I,TDRG,TDRGP F TDRG=0:0 S TDRG=$O(DRG(DRGT,TDRG)) Q:'TDRG!$G(DDONE)  D
+ N DDONE,I,TDRG,TDRGP,J F TDRG=0:0 S TDRG=$O(DRG(DRGT,TDRG)) Q:'TDRG!$G(DDONE)  D
  .I $$UPPER^VALM1($E($P(DRG(DRGT,+TDRG),U,2),1,$L(X)))=$$UPPER^VALM1(X) W $P($$UPPER^VALM1($P(DRG(DRGT,+TDRG),U,2)),$$UPPER^VALM1(X),2) D ASKCHK Q
  .S TDRGP=$P(DRG(DRGT,TDRG),U) F J=0:0 S J=$O(^PS(FIL,TDRGP,3,J)) Q:'J!$G(DDONE)  I $$UPPER^VALM1($E($P(^PS(FIL,TDRGP,3,J,0),U),1,$L(X)))=$$UPPER^VALM1(X) D  D ASKCHK Q
  ..W $P($$UPPER^VALM1($P(^PS(FIL,TDRGP,3,J,0),U)),$$UPPER^VALM1(X),2)," ",$P(DRG(DRGT,TDRG),U,2)
