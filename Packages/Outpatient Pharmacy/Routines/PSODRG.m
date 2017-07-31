@@ -1,5 +1,5 @@
 PSODRG ;IHS/DSD/JCM - ORDER ENTRY DRUG SELECTION ;2/16/12 12:50pm
- ;;7.0;OUTPATIENT PHARMACY;**20,23,36,53,54,46,112,139,207,148,243,268,324,251,375,387,398,390,427,411**;DEC 1997;Build 95
+ ;;7.0;OUTPATIENT PHARMACY;**20,23,36,53,54,46,112,139,207,148,243,268,324,251,375,387,398,390,427,411,458**;DEC 1997;Build 2
  ;Reference to ^PSDRUG( supported by DBIA 221
  ;Reference to ^PS(50.7 supported by DBIA 2223
  ;Reference to $$PROMPT^PSSDIN supported by DBIA 3166
@@ -163,7 +163,7 @@ POST ;order checks
  ;clinical reminder oc
  D:'$G(PSONCROC) CK^PSOCROC K CROCPFLG I $G(PSORX("DFLG")) Q
  K DIWF,DIWL,DIWR,ZX,DFN,CROCPFLG
- I $G(PSODRUG("DEA"))["S"!($E($G(PSODRUG("VA CLASS")),1,2)="XA") D  G POSTX ;stops if drug is supply
+ I $G(PSODRUG("DEA"))["S"!($E($G(PSODRUG("VA CLASS")),1,2)="XA"),'$G(PSODGCK) D  G POSTX ;stops if drug is supply
  .W !,"Now Processing Enhanced Order Checks!  Please wait...",! H 1
  ;enhanced OC
  D HD^PSODDPR2():(($Y+5)'>IOSL)
