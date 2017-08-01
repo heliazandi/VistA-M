@@ -1,6 +1,6 @@
 OSEHRA ZGO Export: INDEX
-01-AUG-2017 13:08:43 ZWR
-^DD("IX",0)="INDEX^.11I^854^1265"
+01-AUG-2017 14:36:02 ZWR
+^DD("IX",0)="INDEX^.11I^297^1265"
 ^DD("IX",.001,0)="0^ADEL^Delete Keys and Indexes associated with a deleted field.^MU^^F^R^I^0^^^^^A"
 ^DD("IX",.001,1)="Q"
 ^DD("IX",.001,2)="D:'$D(DICATTED)&'$D(DIU) DELXRF^DICATT4(DA(1),DA)"
@@ -5295,16 +5295,13 @@ OSEHRA ZGO Export: INDEX
 ^DD("IX",296,11.1,"BB",1,1)=""
 ^DD("IX",297,0)="361.1^ATRID^Xref by bank trace # and ins co id for uniqueness^R^^R^IR^I^361.1^^^^^S"
 ^DD("IX",297,1)="S ^IBM(361.1,""ATRID"",$E(X(1),1,50),$E(X(2),1,30),DA)="""""
-^DD("IX",297,1.4)="I 'X(3)"
+^DD("IX",297,1.4)="S X='X(3)"
 ^DD("IX",297,2)="K ^IBM(361.1,""ATRID"",$E(X(1),1,50),$E(X(2),1,30),DA)"
 ^DD("IX",297,2.5)="K ^IBM(361.1,""ATRID"")"
 ^DD("IX",297,11.1,0)="^.114IA^3^3"
 ^DD("IX",297,11.1,1,0)="1^F^361.1^.07^50^1^F"
-^DD("IX",297,11.1,1,3)=""
 ^DD("IX",297,11.1,2,0)="2^F^361.1^.03^30^2^F"
-^DD("IX",297,11.1,2,3)=""
 ^DD("IX",297,11.1,3,0)="3^F^361.1^.04^^^F"
-^DD("IX",297,11.1,3,3)=""
 ^DD("IX",297,11.1,"AC",1,1)=""
 ^DD("IX",297,11.1,"AC",2,2)=""
 ^DD("IX",297,11.1,"B",1,1)=""
