@@ -1,6 +1,6 @@
 OSEHRA ZGO Export: MAIL GROUP
-31-JUL-2017 21:17:39 ZWR
-^XMB(3.8,0)="MAIL GROUP^3.8^321^308"
+01-AUG-2017 13:13:03 ZWR
+^XMB(3.8,0)="MAIL GROUP^3.8^322^309"
 ^XMB(3.8,1,0)="POSTMASTER^PU^y^3^2971212^"
 ^XMB(3.8,1,3)="1"
 ^XMB(3.8,2,0)="EN PROJECTS^PU^y^^^"
@@ -1813,6 +1813,11 @@ OSEHRA ZGO Export: MAIL GROUP
 ^XMB(3.8,321,2,5,0)="notified will review the BT claim database for any payments provided based"
 ^XMB(3.8,321,2,6,0)="on inaccurate income during the identified period."
 ^XMB(3.8,321,3)="54"
+^XMB(3.8,322,0)="IB SSVI^PU^y^^^^"
+^XMB(3.8,322,2,0)="^3.801^1^1^3151002^^^^"
+^XMB(3.8,322,2,1,0)="SSVI application mail group for identifying problems."
+^XMB(3.8,322,3)="17"
+^XMB(3.8,322,5,0)="^3.811P"
 ^XMB(3.8,"AB",.5,240,1)=""
 ^XMB(3.8,"AB",.5,319,1)=""
 ^XMB(3.8,"AB",1,3,1)=""
@@ -2163,6 +2168,7 @@ OSEHRA ZGO Export: MAIL GROUP
 ^XMB(3.8,"B","IB MEANS TEST",205)=""
 ^XMB(3.8,"B","IB NEW INSURANCE",4)=""
 ^XMB(3.8,"B","IB RX COPAY CAP ERROR",137)=""
+^XMB(3.8,"B","IB SSVI",322)=""
 ^XMB(3.8,"B","IB UNBILLED AMOUNTS",5)=""
 ^XMB(3.8,"B","IBB PFSS CHARGE ERRORS",226)=""
 ^XMB(3.8,"B","IBB PFSS DATA TRANS ERROR",225)=""

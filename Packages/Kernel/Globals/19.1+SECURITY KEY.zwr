@@ -1,5 +1,5 @@
 OSEHRA ZGO Export: SECURITY KEY
-31-JUL-2017 21:13:36 ZWR
+01-AUG-2017 13:08:57 ZWR
 ^DIC(19.1,0)="SECURITY KEY^19.1^599^562"
 ^DIC(19.1,0,"DD")="#"
 ^DIC(19.1,0,"DEL")="#"
@@ -1632,7 +1632,7 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,389,1,2,0)="project (IIV).  It is used to restrict access to certain IIV options"
 ^DIC(19.1,389,1,3,0)="and applications.  Only users holding this key are allowed to access"
 ^DIC(19.1,389,1,4,0)="these IIV options and applications."
-^DIC(19.1,390,0)="IBCNE IIV AUTO MATCH"
+^DIC(19.1,390,0)="IBCNE EIV MAINTENANCE"
 ^DIC(19.1,390,1,0)="^^6^6^3020826^"
 ^DIC(19.1,390,1,1,0)="This security key is for the Insurance Identification and Verification"
 ^DIC(19.1,390,1,2,0)="project (IIV).  It is used to restrict access to the Auto Match "
@@ -2670,7 +2670,7 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,"B","IBCI CLAIMSMANAGER ASSIGN",364)=""
 ^DIC(19.1,"B","IBCI CLAIMSMANAGER OVERRIDE",362)=""
 ^DIC(19.1,"B","IBCI CM MULTIPLE CLAIM SEND",363)=""
-^DIC(19.1,"B","IBCNE IIV AUTO MATCH",390)=""
+^DIC(19.1,"B","IBCNE EIV MAINTENANCE",390)=""
 ^DIC(19.1,"B","IBCNE IIV SUPERVISOR",389)=""
 ^DIC(19.1,"B","IBCNF EDIT",559)=""
 ^DIC(19.1,"B","IBCNR E-PHARMACY SUPERVISOR",416)=""
