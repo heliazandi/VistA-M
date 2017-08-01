@@ -1,6 +1,6 @@
 OSEHRA ZGO Export: SECURITY KEY
-01-AUG-2017 19:04:26 ZWR
-^DIC(19.1,0)="SECURITY KEY^19.1^600^563"
+01-AUG-2017 20:30:33 ZWR
+^DIC(19.1,0)="SECURITY KEY^19.1^601^564"
 ^DIC(19.1,0,"DD")="#"
 ^DIC(19.1,0,"DEL")="#"
 ^DIC(19.1,0,"GL")="^DIC(19.1,"
@@ -2508,6 +2508,13 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,600,1,0)="^^2^2^3150922^"
 ^DIC(19.1,600,1,1,0)="Users with this key will be allowed access to the BPS OPECC PRODUCTIVITY "
 ^DIC(19.1,600,1,2,0)="REPORT option."
+^DIC(19.1,601,0)="PSS PADE INIT^PSS DADE INIT^l^n^0"
+^DIC(19.1,601,1,0)="^^5^5^3160122^"
+^DIC(19.1,601,1,1,0)="This security key enables users to transmit the entire drug file (or UD "
+^DIC(19.1,601,1,2,0)="and IV marked drugs) to Pharmacy Automated Dispensing Equipment (PADE) "
+^DIC(19.1,601,1,3,0)="System(s) within the ""Send Drug File Entries to External Interface"" Vista "
+^DIC(19.1,601,1,4,0)="option. This action is typically a onetime event to send a copy of the "
+^DIC(19.1,601,1,5,0)="formulary to a new PADE vendor."
 ^DIC(19.1,"%",0)="^1.005^2^2"
 ^DIC(19.1,"%",1,0)="XU"
 ^DIC(19.1,"%",2,0)="XQ"
@@ -2896,6 +2903,7 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,"B","PSOLOCKCLOZ",120)=""
 ^DIC(19.1,"B","PSORPH",119)=""
 ^DIC(19.1,"B","PSS ORDER CHECKS",581)=""
+^DIC(19.1,"B","PSS PADE INIT",601)=""
 ^DIC(19.1,"B","PSS_CUSTOM_TABLES_ADMIN",507)=""
 ^DIC(19.1,"B","PSS_CUSTOM_TABLES_APPROVER",508)=""
 ^DIC(19.1,"B","PSS_CUSTOM_TABLES_REL_MAN",509)=""
@@ -3305,6 +3313,7 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,"E","PROVIDER ID EDIT",354)=""
 ^DIC(19.1,"E","PSO TRICARE MGR",527)=""
 ^DIC(19.1,"E","PSOINTERFACE",310)=""
+^DIC(19.1,"E","PSS DADE INIT",601)=""
 ^DIC(19.1,"E","PSX DOD INTERAGENCY",369)=""
 ^DIC(19.1,"E","PTC ADMIN KEY",249)=""
 ^DIC(19.1,"E","PTC LAB SUPERVISOR KEY",248)=""
