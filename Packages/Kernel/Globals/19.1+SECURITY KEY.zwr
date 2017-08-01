@@ -1,6 +1,6 @@
 OSEHRA ZGO Export: SECURITY KEY
-01-AUG-2017 13:08:57 ZWR
-^DIC(19.1,0)="SECURITY KEY^19.1^599^562"
+01-AUG-2017 19:04:26 ZWR
+^DIC(19.1,0)="SECURITY KEY^19.1^600^563"
 ^DIC(19.1,0,"DD")="#"
 ^DIC(19.1,0,"DEL")="#"
 ^DIC(19.1,0,"GL")="^DIC(19.1,"
@@ -2504,6 +2504,10 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,599,0)="PSO SPMP ADMIN^"
 ^DIC(19.1,599,1,0)="^19.11^1^1^3151118^^"
 ^DIC(19.1,599,1,1,0)="This key is used by the Outpatient Pharmacy (OP) package to grant certain users administration privileges to perform configuration updates in the State Prescription Monitoring Program (SPMP) module."
+^DIC(19.1,600,0)="BPS SUPERVISOR^OPECC Productivity Report Key"
+^DIC(19.1,600,1,0)="^^2^2^3150922^"
+^DIC(19.1,600,1,1,0)="Users with this key will be allowed access to the BPS OPECC PRODUCTIVITY "
+^DIC(19.1,600,1,2,0)="REPORT option."
 ^DIC(19.1,"%",0)="^1.005^2^2"
 ^DIC(19.1,"%",1,0)="XU"
 ^DIC(19.1,"%",2,0)="XQ"
@@ -2522,6 +2526,7 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,"B","BPS MANAGER",412)=""
 ^DIC(19.1,"B","BPS MASTER",433)=""
 ^DIC(19.1,"B","BPS REPORTS",413)=""
+^DIC(19.1,"B","BPS SUPERVISOR",600)=""
 ^DIC(19.1,"B","BPS USER",414)=""
 ^DIC(19.1,"B","BPSMENU",415)=""
 ^DIC(19.1,"B","CD DELETE",367)=""
@@ -3252,6 +3257,7 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,"E","OCCURRENCE SCREEN CLIN REVR",252)=""
 ^DIC(19.1,"E","OOPS DOL TRANSMIT DATA",322)=""
 ^DIC(19.1,"E","OOPS TRANSMIT 2162 DATA",315)=""
+^DIC(19.1,"E","OPECC PRODUCTIVITY REPORT KEY",600)=""
 ^DIC(19.1,"E","OR EPCS SITE PARAMETER ACCESS",562)=""
 ^DIC(19.1,"E","OR EPCS USERS PARAMETER ACCESS",561)=""
 ^DIC(19.1,"E","OUTPATIENT PHARMACY COPAY KEY",349)=""
