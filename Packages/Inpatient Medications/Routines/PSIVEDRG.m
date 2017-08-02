@@ -1,5 +1,5 @@
 PSIVEDRG ;BIR/MLM-ENTER/EDIT DRUGS FOR IV ORDER ;16 Mar 99 / 2:14 PM
- ;;5.0;INPATIENT MEDICATIONS ;**21,33,50,65,74,84,128,147,181,263,281**;16 DEC 97;Build 113
+ ;;5.0;INPATIENT MEDICATIONS ;**21,33,50,65,74,84,128,147,181,263,281,313**;16 DEC 97;Build 26
  ;
  ; References to ^PS(52.6 supported by DBIA# 1231.
  ; References to ^PS(52.7 supported by DBIA# 2173.
@@ -7,7 +7,7 @@ PSIVEDRG ;BIR/MLM-ENTER/EDIT DRUGS FOR IV ORDER ;16 Mar 99 / 2:14 PM
  ; Reference to ^TMP("PSODAOC",$J supported by DBIA #6071.
  ;
 DRG ; Edit Additive/Solution data
- NEW DRGOC K PSGORQF ;If PSGORQF=1 abort order after order check. 2/25/15 - no longer NEW PSGORQF ;RTC 151046
+ N DRGOC K PSGORQF ;If PSGORQF=1 abort order after order check.
  K PSIVOLD S DRG(2)="" I $D(DRG(DRGT)) S DRGI=+$O(DRG(DRGT,0)) I DRGI S PSIVOLD=1 D SETDRG
 DRG1 ;
  Q:$G(PSGORQF)
@@ -20,8 +20,11 @@ DRG1A I X="" W !,DRGTN,": ",DRG(2),"//" R X:DTIME S:'$T X="^" D:X="^" CHKSCMNT Q
  I X="@",DRG(2)]"" D DEL G:%'=1 DRG1A K DRG(DRGT,DRGI),^TMP("PSODAOC",$J) S DRGI=+$O(DRG(DRGT,0)) S:'DRGI DRG(DRGT,0)=0 D SETDRG G DRG1
  I X["???",($E(P("OT"))="M"),(PSIVAC["C") D ORFLDS^PSIVEDT1 G DRG1
  I X'["?" S %=0 D:$D(DRG(DRGT)) CHK G:%=1 DRG1A D DRG2 Q:$G(Y)>0&($G(P(4))'="H"&(DRGT="SOL"))  G DRG1
- I $D(DRG(DRGT)) W !,"This order includes the following ",DRGTN,"S:",! F Y=0:0 S Y=$O(DRG(DRGT,Y)) Q:'Y  W !,$P(DRG(DRGT,Y),U,2)
- W !,"YOU MAY ENTER A NEW ",DRGTN,", IF YOU WISH",! D GTSCRN(X) S DIC(0)="EQM" D ^DIC K DIC G DRG1
+ I $D(DRG(DRGT)) W !,"This order includes the following ",DRGTN,"S:",! D
+ . F Y=0:0 S Y=$O(DRG(DRGT,Y)) Q:'Y  D
+ . . W !,$P(DRG(DRGT,Y),U,2)
+ . . W:DRGT="AD" ?40,"Additive Strength: ",$S($$GET1^DIQ(52.6,+$G(DRG(DRGT,Y)),19):$$GET1^DIQ(52.6,+$G(DRG(DRGT,Y)),19)_" "_$$GET1^DIQ(52.6,+$G(DRG(DRGT,Y)),2),1:"N/A")
+ W !!,"YOU MAY ENTER A NEW ",DRGTN,", IF YOU WISH",! D GTSCRN(X) S DIC(0)="EQM" D ^DIC K DIC G DRG1
  Q
  ;
 SETDRG ; Put Drug data into DRG(x).
@@ -31,10 +34,10 @@ SETDRG ; Put Drug data into DRG(x).
 DRG2 ;
  D GTSCRN(X) N PSIVX S PSIVX=X,DIC(0)="EQMZ" D ^DIC K DIC Q:Y<0
  S PSJIVIEN=+Y
- NEW PSJNF D NFIV^PSJDIN($S(DRGT="AD":52.6,1:52.7),+PSJIVIEN,.PSJNF)
+ N PSJNF D NFIV^PSJDIN($S(DRGT="AD":52.6,1:52.7),+PSJIVIEN,.PSJNF)
  W PSJNF("NF")
  S PSIVNEW=1,DRGTMP=+Y_U_$P(Y(0),U)_U_$S(DRGT="SOL":$P(Y(0),U,3),1:"")_U_U_$P(Y(0),U,13)_U_$P(Y(0),U,11)
- I '$D(ON55) NEW ON55 S ON55=ON
+ I '$D(ON55) N ON55 S ON55=ON
  D ORDERCHK(DFN,ON55,1) I $G(PSGORQF) S X=U,DONE=1 Q
  D DINIV^PSJDIN($S(DRGT="AD":52.6,1:52.7),+DRGTMP)
  S (DRG(DRGT,0),DRGI)=$G(DRG(DRGT,0))+1,DRG(DRGT,DRGI)=DRGTMP K PSIVOLD
@@ -60,7 +63,7 @@ CHKSCMNT ;
  Q
 SEECMENT() ;
  ;Return 1 if DRG array still contain "See Comments"
- NEW PSIVDRGI,PSIVDRG0,PSIVFLG
+ N PSIVDRGI,PSIVDRG0,PSIVFLG
  S PSIVFLG=0
  F PSIVDRGI=0:0 S PSIVDRGI=$O(DRG("AD",PSIVDRGI)) Q:'PSIVDRGI  Q:PSIVFLG  D
  . S PSIVDRG0=$G(DRG("AD",PSIVDRGI))
@@ -86,7 +89,7 @@ ORDERCHK(DFN,ON,X) ; Do order check
  ;This module is no longer used as of PSJ*5*181
  Q
  I X M:$D(DRG) DRGOC(ON)=DRG
- NEW TMPDRG,X,XX,Y,PSIVNEW,PSGDRG,PSGDRGN,PSJDD,PSGP
+ N TMPDRG,X,XX,Y,PSIVNEW,PSGDRG,PSGDRGN,PSJDD,PSGP
  D SAVEDRG(.TMPDRG,.DRG) ;Store DRG array in TMPDRG array
  S PSIVNEW=1,PSGDRGN=$P($G(DRGTMP),U,2)
  S (PSJDD,PSGDRG)=$P(^PS(FIL,+DRGTMP,0),U,2),PSGP=DFN
@@ -116,7 +119,7 @@ CHK ; Check if drug is already part of order
  Q
  ;
 ASKCHK ; Do you want a drug that was previously selected.
- S I=DRG(DRGT,TDRG) W " ",$P(I,U,3),$S($P(I,U,4):" ("_$P(I,U,4)_")",1:""),!,"...OK" S %=1 D YN^DICN
+ S I=DRG(DRGT,TDRG) W " ",$S($P(I,U,4):" ("_$P(I,U,4)_")",1:""),!,"...OK" S %=1 D YN^DICN
  I %=1 S X="",DRGI=TDRG,(DDONE,PSIVOLD)=1 D SETDRG Q
  W !,X
  Q
@@ -126,15 +129,17 @@ DEL ;
  Q
 GTADSOL ;Prompt for an ad/sol if there were multiple ad/sol matched to an OI
  ;PSIVOI array is defined in GTIVDRG^PSIVORC2
- NEW DIR,ND,X,Y
+ N DIR,ND,X,Y
  S DIR(0)="LA^1:"_+PSIVOI("DILIST",0)
  S DIR("?")="Please select "_$S(PSIVOI="AD":"an Additive or Quick Code",1:"a Solution")_" from the list"
  F X=0:0 S X=$O(PSIVOI("DILIST",X)) Q:'X  D
- . S DIR("A",X)="  "_X_"  "_$S($P(PSIVOI("DILIST",X,0),U,4)="QC":"  - "_$P(PSIVOI("DILIST",X,0),U,2)_" -",1:$P(PSIVOI("DILIST",X,0),U,2))_$S(PSIVOI="SOL":"  "_$P(PSIVOI("DILIST",X,0),U,3),1:"")
+ . S DIR("A",X)="  "_X_"  "_$S($P(PSIVOI("DILIST",X,0),U,4)="QC":"  - "_$P(PSIVOI("DILIST",X,0),U,2)_" -",1:$P(PSIVOI("DILIST",X,0),U,2))
+ . S DIR("A",X)=DIR("A",X)_$S(PSIVOI="SOL":"          "_$P(PSIVOI("DILIST",X,0),U,3),1:"")
+ . S DIR("A",X)=DIR("A",X)_$S(PSIVOI="AD":"          Additive Strength: "_$S($P(PSIVOI("DILIST",X,0),U,4)'="":$P(PSIVOI("DILIST",X,0),U,4)_" "_$P(PSIVOI("DILIST",X,0),U,3),1:"N/A"),1:"")
  S DIR("A")="Select (1 - "_+PSIVOI("DILIST",0)_"): "
  D ^DIR
  I +Y D
- . NEW PSIVOIND S PSIVOIND=PSIVOI("DILIST",+Y,0)
+ . N PSIVOIND S PSIVOIND=PSIVOI("DILIST",+Y,0)
  . W "  "_$P(PSIVOIND,U,2)_$S(PSIVOI="SOL":"  "_$P(PSIVOIND,U,3),1:"")
  . S ND=$G(^PS($S(PSIVOI="AD":52.6,1:52.7),+PSIVOIND,0))
  . S DRG(PSIVOI,0)=1
