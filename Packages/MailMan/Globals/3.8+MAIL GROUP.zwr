@@ -1,6 +1,6 @@
 OSEHRA ZGO Export: MAIL GROUP
-01-AUG-2017 14:40:20 ZWR
-^XMB(3.8,0)="MAIL GROUP^3.8^323^310"
+03-AUG-2017 15:09:20 ZWR
+^XMB(3.8,0)="MAIL GROUP^3.8^324^311"
 ^XMB(3.8,1,0)="POSTMASTER^PU^y^3^2971212^"
 ^XMB(3.8,1,3)="1"
 ^XMB(3.8,2,0)="EN PROJECTS^PU^y^^^"
@@ -1823,6 +1823,14 @@ OSEHRA ZGO Export: MAIL GROUP
 ^XMB(3.8,323,6,0)="^3.812^1^1"
 ^XMB(3.8,323,6,1,0)="S.RCDPE EDI CARC-RARC SERVER@FOIA.DOMAIN.EXT"
 ^XMB(3.8,323,6,"B","S.RCDPE EDI CARC-RARC SERVER@F",1)=""
+^XMB(3.8,324,0)="HMP IRM GROUP^PU^y^^^^"
+^XMB(3.8,324,2,0)="^3.801^5^5^3150624^^^"
+^XMB(3.8,324,2,1,0)="This is the mail group that will receive alerts from the eHMP subscription"
+^XMB(3.8,324,2,2,0)="process if the usage of global ^XTMP reaches the limit allowed and begins "
+^XMB(3.8,324,2,3,0)="to pause subscriptions until disk space is available. The mail group also"
+^XMB(3.8,324,2,4,0)="also receives notifications when disk space is available and subscriptions "
+^XMB(3.8,324,2,5,0)="are proceeding normally again."
+^XMB(3.8,324,3)="17"
 ^XMB(3.8,"AB",.5,240,1)=""
 ^XMB(3.8,"AB",.5,319,1)=""
 ^XMB(3.8,"AB",1,3,1)=""
@@ -2163,6 +2171,7 @@ OSEHRA ZGO Export: MAIL GROUP
 ^XMB(3.8,"B","HDIS LAB EXCEPTIONS",298)=""
 ^XMB(3.8,"B","HLEV EVENT MONITOR",193)=""
 ^XMB(3.8,"B","HLEV SERVER",194)=""
+^XMB(3.8,"B","HMP IRM GROUP",324)=""
 ^XMB(3.8,"B","IB CHAMP RX REJ",49)=""
 ^XMB(3.8,"B","IB CHAMP RX REV",50)=""
 ^XMB(3.8,"B","IB CHAMP RX START",51)=""
