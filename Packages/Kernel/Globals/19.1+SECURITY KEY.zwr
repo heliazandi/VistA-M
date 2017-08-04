@@ -1,6 +1,6 @@
 OSEHRA ZGO Export: SECURITY KEY
-03-AUG-2017 15:05:15 ZWR
-^DIC(19.1,0)="SECURITY KEY^19.1^606^569"
+04-AUG-2017 13:15:28 ZWR
+^DIC(19.1,0)="SECURITY KEY^19.1^607^570"
 ^DIC(19.1,0,"DD")="#"
 ^DIC(19.1,0,"DEL")="#"
 ^DIC(19.1,0,"GL")="^DIC(19.1,"
@@ -2533,6 +2533,10 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,606,1,0)="^^2^2^3150923^"
 ^DIC(19.1,606,1,1,0)="This key is used to determine which HMP users should be allowed to"
 ^DIC(19.1,606,1,2,0)="manage subscriptions and the subscription queue."
+^DIC(19.1,607,0)="IB HCSR PARAM EDIT^EDIT IB HCSR SITE PARAMETERS^^n"
+^DIC(19.1,607,1,0)="^19.11^2^2^3140307^"
+^DIC(19.1,607,1,1,0)="This key should be allocated to individuals who may change site "
+^DIC(19.1,607,1,2,0)="parameters related to Healthcare Services Review in Claims Tracking."
 ^DIC(19.1,"%",0)="^1.005^2^2"
 ^DIC(19.1,"%",1,0)="XU"
 ^DIC(19.1,"%",2,0)="XQ"
@@ -2692,6 +2696,7 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,"B","IB EDIT PAY-TO",588)=""
 ^DIC(19.1,"B","IB EDIT PAY-TO TC",589)=""
 ^DIC(19.1,"B","IB GROUP PLAN EDIT",583)=""
+^DIC(19.1,"B","IB HCSR PARAM EDIT",607)=""
 ^DIC(19.1,"B","IB INSURANCE COMPANY ADD",306)=""
 ^DIC(19.1,"B","IB INSURANCE COMPANY EDIT",582)=""
 ^DIC(19.1,"B","IB INSURANCE SUPERVISOR",94)=""
@@ -3203,6 +3208,7 @@ OSEHRA ZGO Export: SECURITY KEY
 ^DIC(19.1,"E","ECMS/IFCAP TRANS REPORT",580)=""
 ^DIC(19.1,"E","EDI LOCK BOX ENABLE ERA DELETE",592)=""
 ^DIC(19.1,"E","EDIT CANCELLATION REASONS",594)=""
+^DIC(19.1,"E","EDIT IB HCSR SITE PARAMETERS",607)=""
 ^DIC(19.1,"E","EDIT INSUFFICIENT REASONS",595)=""
 ^DIC(19.1,"E","EDIT LEDI RESULTS",300)=""
 ^DIC(19.1,"E","EDIT OTHER USERS' MAIL GROUPS",320)=""
