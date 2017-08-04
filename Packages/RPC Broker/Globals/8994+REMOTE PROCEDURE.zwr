@@ -1,5 +1,5 @@
 OSEHRA ZGO Export: REMOTE PROCEDURE
-04-AUG-2017 16:11:32 ZWR
+04-AUG-2017 16:54:07 ZWR
 ^XWB(8994,0)="REMOTE PROCEDURE^8994^3482^3389"
 ^XWB(8994,1,0)="XWB EGCHO STRING^ECHO1^XWBZ1^1^R"
 ^XWB(8994,1,1,0)="^^2^2^2970825^^"
@@ -2767,8 +2767,8 @@ OSEHRA ZGO Export: REMOTE PROCEDURE
 ^XWB(8994,172,1,1,0)="Function returns the current user's default patient list."
 ^XWB(8994,172,3,0)="^8994.03^1^1^3010315^^^^"
 ^XWB(8994,172,3,1,0)="User's default patient list in the format: patient dfn^patient name."
-^XWB(8994,173,0)="ORQPT PROVIDERS^PROV^ORQPTQ2^2^S"
-^XWB(8994,173,1,0)="^^1^1^2950608^"
+^XWB(8994,173,0)="ORQPT PROVIDERS^PROV^ORQPTQ2^2^S^^^^^^1"
+^XWB(8994,173,1,0)="^8994.01^1^1^3160531^^"
 ^XWB(8994,173,1,1,0)="Function returns an array of providers."
 ^XWB(8994,173,3,0)="^^1^1^2950608^"
 ^XWB(8994,173,3,1,0)="Array of providers in the format: provider id (DUZ)^provider name"
@@ -3339,7 +3339,7 @@ OSEHRA ZGO Export: REMOTE PROCEDURE
 ^XWB(8994,243,2,"B","DFN",1)=""
 ^XWB(8994,243,3,0)="^^1^1^2961117^^^"
 ^XWB(8994,243,3,1,0)="List of problems with comments"
-^XWB(8994,244,0)="ORWRP REPORT LISTS^LIST^ORWRP^2^S^^^1"
+^XWB(8994,244,0)="ORWRP REPORT LISTS^LIST^ORWRP^2^S^^^1^^^1"
 ^XWB(8994,244,1,0)="^^5^5^2961016^^^^"
 ^XWB(8994,244,1,1,0)="This remote procedure call returns a list of reports,"
 ^XWB(8994,244,1,2,0)="Health Summary types and date ranges that can be displayed"
@@ -12033,8 +12033,8 @@ OSEHRA ZGO Export: REMOTE PROCEDURE
 ^XWB(8994,1061,0)="ORQQPXRM MST UPDATE^MST^ORQQPXRM^1^R^^^1"
 ^XWB(8994,1061,1,0)="^8994.01^1^1^3010830^^"
 ^XWB(8994,1061,1,1,0)="Saves MST data"
-^XWB(8994,1062,0)="ORWMC PATIENT PROCEDURES1^PROD1^ORWMC^4^S^^^1"
-^XWB(8994,1062,1,0)="^8994.01^2^2^3010829^^"
+^XWB(8994,1062,0)="ORWMC PATIENT PROCEDURES1^PROD1^ORWMC^4^S^^^1^^^1"
+^XWB(8994,1062,1,0)="^8994.01^2^2^3160531^^^"
 ^XWB(8994,1062,1,1,0)="This remote procedure call returns a list of patient procedures for a"
 ^XWB(8994,1062,1,2,0)=" specific patient."
 ^XWB(8994,1062,2,0)="^8994.02A^1^1"
