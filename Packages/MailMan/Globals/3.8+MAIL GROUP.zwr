@@ -1,5 +1,5 @@
 OSEHRA ZGO Export: MAIL GROUP
-04-AUG-2017 13:19:30 ZWR
+09-AUG-2017 13:08:28 ZWR
 ^XMB(3.8,0)="MAIL GROUP^3.8^327^314"
 ^XMB(3.8,1,0)="POSTMASTER^PU^y^3^2971212^"
 ^XMB(3.8,1,3)="1"
@@ -566,7 +566,7 @@ OSEHRA ZGO Export: MAIL GROUP
 ^XMB(3.8,118,2,1,0)="This mail group will receive messages concerning errors with the results"
 ^XMB(3.8,118,2,2,0)="from the CareVue system."
 ^XMB(3.8,118,3)=""
-^XMB(3.8,119,0)="LMI^PU^^8^3120924^"
+^XMB(3.8,119,0)="LMI^PU^^9^3170808^"
 ^XMB(3.8,119,1,0)="^3.81P^2^2"
 ^XMB(3.8,119,1,1,0)="1"
 ^XMB(3.8,119,1,2,0)="17"
