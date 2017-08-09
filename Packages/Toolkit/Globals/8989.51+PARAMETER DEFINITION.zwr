@@ -1,5 +1,5 @@
 OSEHRA ZGO Export: PARAMETER DEFINITION
-09-AUG-2017 16:00:36 ZWR
+09-AUG-2017 17:27:33 ZWR
 ^XTV(8989.51,0)="PARAMETER DEFINITION^8989.51I^830^890"
 ^XTV(8989.51,1,0)="PSB VDL START TIME^Default hours prior to NOW for the VDL^0^^HOURS PRIOR TO NOW FOR VDL^0"
 ^XTV(8989.51,1,1)="N^0:24:0^Enter the number of hours prior to NOW that the VDL will initially display"
@@ -10930,7 +10930,7 @@ OSEHRA ZGO Export: PARAMETER DEFINITION
 ^XTV(8989.51,786,0)="RCDPE APAR^Display unposted EEOBs by user pref^1"
 ^XTV(8989.51,786,1)="F"
 ^XTV(8989.51,786,6)="F"
-^XTV(8989.51,786,20,0)="^^12^12^3140501^"
+^XTV(8989.51,786,20,0)="^^15^15^3150707^"
 ^XTV(8989.51,786,20,1,0)="The AUTO-POST - AWAITING RESOLUTION screen that is generated when"
 ^XTV(8989.51,786,20,2,0)="executing the RCDPE AUTO-POST AWAITING RESOLUTION option provides the"
 ^XTV(8989.51,786,20,3,0)="capability to filter the data displayed via the Change View action. The"
@@ -10943,6 +10943,9 @@ OSEHRA ZGO Export: PARAMETER DEFINITION
 ^XTV(8989.51,786,20,10,0)="                                     (e.g.,'R;AE;AEZ') "
 ^XTV(8989.51,786,20,11,0)="Note: The second and third fields of ALL_PAYERS/RANGE_OF_PAYERS are only"
 ^XTV(8989.51,786,20,12,0)="       present When the first field is set to 'R' (Range of Payers)"
+^XTV(8989.51,786,20,13,0)=" "
+^XTV(8989.51,786,20,14,0)="MEDICAL/PHARMACY                1 field: M/P/B"
+^XTV(8989.51,786,20,15,0)="Note: M/P/B (M)edical (P)harmacy or (B)"
 ^XTV(8989.51,786,30,0)="^8989.513I^1^1"
 ^XTV(8989.51,786,30,1,0)="1^200"
 ^XTV(8989.51,786,30,"AG","VA(200,",1)=""

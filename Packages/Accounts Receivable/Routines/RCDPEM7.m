@@ -1,5 +1,5 @@
 RCDPEM7 ;OIFO-BAYPINES/PJH - OVERDUE EFT AND ERA BULLETINS ;Jun 06, 2014@19:11:19
- ;;4.5;Accounts Receivable;**276,298,303**;Mar 20, 1995;Build 84
+ ;;4.5;Accounts Receivable;**276,298,303,304**;Mar 20, 1995;Build 104
  ;;Per VA Directive 6402, this routine should not be modified.
  ;
 EN ; Main entry point for overdue EFT/ERA bulletins
@@ -19,6 +19,8 @@ EN ; Main entry point for overdue EFT/ERA bulletins
  D ERASCAN
  ;Scan for overdue EFT
  D EFTSCAN
+ ;Scan for overdue Suspended ERA's - PRCA*4.5*304
+ D SUSPSCAN
  ;Bulletins
  D BULLETIN
  ;Clear workfiles
@@ -107,6 +109,56 @@ EFTSCAN ;Scan EFT
  .; date ascending order.
  .;Save Deposit No, Receipt, Payer ID, EFT Date and Deposit Amount
  .S ^TMP(RCPROG,$J,"EFT",EFTDATE,EFTCNT)=$$EFTL(DEPN,TRACE,PAYER,EFTDATE,DEPAMT)
+ Q
+ ;
+ ; PRCA*4.5*304
+ ; Scan for ERA's older than allowed by parameter
+SUSPSCAN ;
+ N RCCT,RCDATA,RCSDATE,RCDATA0,RCDATA2,RCDATA3,RCMAXDAY,RCRECTDA,RCTRANDA
+ N RCDEP,RCTRACE,RCPAYER,RCEFTDT,RCDEPAMT,RCDAYS,RCUSER,RCREC,RCDISP,RCRSN,RCSREC
+ ;
+ ;initialize counters
+ S (RCSUSAMT,RCSUSCNT)=0
+ ;
+ ;calculate the last date to stop gathering entries on
+ S RCMAXDAY=TODAY-RCMXDYS
+ ;
+ ;Loop through the In Suspense index
+ S (RCRECTDA,RCCT)=0
+ F  S RCRECTDA=$O(^RCY(344,"AN",RCRECTDA)) Q:'RCRECTDA  D
+ . S RCDATA=$G(^RCY(344,RCRECTDA,0))
+ . S RCREC=$P(RCDATA,U)
+ . S RCTRANDA=0 F  S RCTRANDA=$O(^RCY(344,"AN",RCRECTDA,RCTRANDA)) Q:'RCTRANDA  D
+ . . S RCDATA0=$G(^RCY(344,RCRECTDA,1,RCTRANDA,0))
+ . . S RCDATA2=$G(^RCY(344,RCRECTDA,1,RCTRANDA,2))
+ . . S RCDATA3=$G(^RCY(344,RCRECTDA,1,RCTRANDA,3))
+ . . ;get date into suspense
+ . . S RCSDATE=$P(RCDATA3,U,2)
+ . . S RCDAYS=$$FMTH^XLFDT(TODAY,1)-$$FMTH^XLFDT(RCSDATE,1)
+ . . Q:RCSDATE=""
+ . . ;
+ . . ;if younger than the cutoff date, quit
+ . . Q:RCDAYS'>RCMXDYS
+ . . ;
+ . . ; get the user and disposition
+ . . S RCUSER=$$GET1^DIQ(200,$P(RCDATA3,U,3)_",",1,"E")
+ . . S RCDISP=$$UP^XLFSTR($$GET1^DIQ(344.01,RCTRANDA_","_RCRECTDA_",",3.01))
+ . . ;
+ . . ;Suspense status has been cleared quit
+ . . Q:$P(RCDATA2,U,6)'="" 
+ . . ;
+ . . ;Extract needed info for report
+ . . S RCEFTDT=$P(RCDATA0,U,6),RCDEPAMT=$P(RCDATA0,U,4)
+ . . ;
+ . . ;update counter and amount info
+ . . S RCSUSCNT=RCSUSCNT+1
+ . . S RCSUSAMT=RCSUSAMT+RCDEPAMT
+ . . S RCRSN=$E($P($G(^RCY(344,RCRECTDA,1,RCTRANDA,1)),U,2),1,12)
+ . . S RCSREC=RCREC_"@"_RCTRANDA
+ . . ;
+ . . ;update temporary array
+ . . S ^TMP(RCPROG,$J,"SUSPENSE",RCSDATE,RCSUSCNT)=$$ESUSPL(RCSDATE,RCDAYS,RCUSER,RCSREC,RCDEPAMT,RCDISP,RCRSN)
+ ;
  Q
  ;
 BULLETIN ;Create bulletins only if overdue EFT/ERA found
@@ -214,6 +266,35 @@ B1 ;
  D SEND
  K @GLB
  ;
+ ;PRCA*4.5*304 - Add suspense bulletin
+ ; Suspense bulletins
+ ;
+ ; Send bulletin if items in suspense
+ I RCSUSCNT D
+ . ;
+ . N DT
+ . ;Retrieve the parameter
+ . S RCMXDYS=$$GET1^DIQ(342,"1,",7.04)
+ . ;
+ . ;Build header
+ . S SUB="SUSPENSE" K @GLB
+ . S SBJ="EDI LBOX-STA# "_$P($$SITE^VASITE,"^",3)_"-SUSPENSE ENTRIES OVERDUE FOR PROCESSING"
+ . S @GLB@(1)="The following entries have been in Suspense past the #days allowed by site"
+ . S @GLB@(2)="parameter - which is currently set at "_RCMXDYS_" days."
+ . S @GLB@(3)=" "
+ . S @GLB@(4)="Total # of Overdue Entries in Suspense  - "_RCSUSCNT
+ . S @GLB@(5)="Total Dollar Amount Overdue in Suspense - "_"$"_$FN(RCSUSAMT,",",2)
+ . S @GLB@(6)=" "
+ . S @GLB@(7)="SUSP DATE  #DAYS USER RECEIPT#               AMOUNT DISP        REASON"
+ . ;
+ . ;Move Suspense search findings into message
+ . S CNT=0,CNT1=8,SUB="SUSPENSE",DT=0
+ . F  S DT=$O(^TMP(RCPROG,$J,SUB,DT)) Q:'DT  D
+ . . F  S CNT=$O(^TMP(RCPROG,$J,SUB,DT,CNT)) Q:'CNT  D
+ . . . S CNT1=CNT1+1,@GLB@(CNT1)=^TMP(RCPROG,$J,SUB,DT,CNT)
+ . S @GLB@(CNT1+1)="** END OF REPORT **"
+ . D SEND
+ . K @GLB
  Q
  ;
 SEND ;Transmit mail message
@@ -242,3 +323,26 @@ EFTL(X1,X2,X3,X4,X5) ;Format EFT Message line
  S X4=$$FMTE^XLFDT(X4,"2D")
  S X5="$"_$FN(X5,",",2)
  Q X2_$J(X4,8)_$J(X5,15)
+ ;
+ ;PRCA*4.5*304
+ESUSPL(X1,X2,X3,X4,X5,X6,X7) ;Format Suspense Message line
+ N SPACE
+ S SPACE=$J("",80)
+ ;spacing for Suspense Date
+ S X1=$$FMTE^XLFDT(X1,"2D")
+ S X1=X1_$E(SPACE,1,10-$L(X1))
+ ;spacing for # days in suspense
+ S X2=$E(SPACE,1,6-$L(X2))_X2
+ ;spacing for USER
+ S X3=" "_X3_$E(SPACE,1,5-$L(X3))
+ ;spacing for RECEIPT NUMBER_TRANS #
+ S X4=$E(X4_SPACE,1,16)
+ ;spacing for amount in suspense
+ S X5=$J("$"_$FN(X5,",",2),13)_" "
+ ;spacing for STATUS
+ S X6=X6_$E(SPACE,1,12-$L(X6))
+ ;spacing for REASON
+ S X7=X7_$E(SPACE,1,12-$L(X7))
+ ;return concatenated string
+ Q X1_X2_X3_X4_X5_X6_X7
+ ;

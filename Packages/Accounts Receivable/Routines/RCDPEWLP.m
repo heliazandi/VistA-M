@@ -1,5 +1,5 @@
 RCDPEWLP ;ALBANY/KML - EDI LOCKBOX ERA and EEOB WORKLIST procedures ;Oct 15, 2014@12:37:32
- ;;4.5;Accounts Receivable;**298,303**;Mar 20, 1995;Build 84
+ ;;4.5;Accounts Receivable;**298,303,304**;Mar 20, 1995;Build 104
  ;;Per VA Directive 6402, this routine should not be modified.
  ;
  Q
@@ -203,14 +203,25 @@ PREVMSG(TYPE,DAYS,STR) ;  Display Error message when aged, unposted EFTs exist
  Q
  ;
 EXCDENY ; praca*4.5*298 display access denied message for those ERAs that are selected off the ERA Worklist and have exceptions  
- N DIR
- S DIR(0)="EA"
+ ; PRCA*4.5*304 - undeclared parameters (from WL^RCDPEWL7): RCERA and RCEXC 
+ N DIR,Y,RCDWLIEN,X,Y,DTOUT,DUOUT,DIRUT,DIROUT
+ S DIR(0)="YA"
  S DIR("A",1)="ACCESS DENIED:  Scratchpad creation is not allowed when third party"
  S DIR("A",2)="medical exceptions exist.  Fix Transmission Exceptions first and then Data"
  S DIR("A",3)="Exceptions with the EXE EDI Lockbox 3rd Party Exceptions option which is"
  S DIR("A",4)="located on the EDI Lockbox Main Menu."
  S DIR("A",5)=""
- S DIR("A")="Press ENTER to continue: " W ! D ^DIR
+ ;PRCA*4.5*304 - Allow users to go and fix exceptions
+ S DIR("A")="Do you want to begin clearing Exceptions for this ERA (Y/N)?: "
+ S DIR("B")="Y"
+ W ! D ^DIR
+ ;
+ ;PRCA*4.5*304 - allow jump to work on Exceptions
+ ;If they wish to work on the exceptions, send the necessary data, default the payer range to ALL (for now)
+ I Y=1 D  S:$G(RCMBG)'="" VALMBG=RCMBG S:$G(RCDWLIEN)'="" RCERA=RCDWLIEN S RCEXC=1 K RCMBG ; VALMBCK="R" 
+ . S RCMBG=$G(VALMBG)
+ . S RCDWLIEN=RCERA
+ . D EN^RCDPEX1
  Q
  ;
 EXCWARN(ERADA) ; prca*4.5*298  generate warning when exception exists
