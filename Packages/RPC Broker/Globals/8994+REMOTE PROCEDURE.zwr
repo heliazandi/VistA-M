@@ -1,5 +1,5 @@
 OSEHRA ZGO Export: REMOTE PROCEDURE
-09-AUG-2017 23:55:03 ZWR
+11-AUG-2017 03:06:24 ZWR
 ^XWB(8994,0)="REMOTE PROCEDURE^8994^3497^3403"
 ^XWB(8994,1,0)="XWB EGCHO STRING^ECHO1^XWBZ1^1^R"
 ^XWB(8994,1,1,0)="^^2^2^2970825^^"
@@ -1288,7 +1288,7 @@ OSEHRA ZGO Export: REMOTE PROCEDURE
 ^XWB(8994,94,3,0)="^^2^2^2960830^^"
 ^XWB(8994,94,3,1,0)="The return array will be subscripted by the field #, with the body of the"
 ^XWB(8994,94,3,2,0)="document in the ^TMP(""TIUEDIT"",$J,""TEXT"",n) subscript."
-^XWB(8994,95,0)="TIU DETAILED DISPLAY^RPC^TIUSRV^4^S^^^1"
+^XWB(8994,95,0)="TIU DETAILED DISPLAY^RPC^TIUSRV^4^S^^^1^^^1"
 ^XWB(8994,95,1,0)="^^1^1^2960703^^"
 ^XWB(8994,95,1,1,0)="Gets details for display of a given record."
 ^XWB(8994,95,2,0)="^8994.02A^1^1"
@@ -13221,7 +13221,7 @@ OSEHRA ZGO Export: REMOTE PROCEDURE
 ^XWB(8994,1109,3,5,0)=" "
 ^XWB(8994,1109,3,6,0)="If unsuccessful:"
 ^XWB(8994,1109,3,7,0)="   0^0^0^Explanatory text"
-^XWB(8994,1110,0)="TIU SET ADMINISTRATIVE CLOSURE^ADMNCLOS^TIUSRVPT^1^S"
+^XWB(8994,1110,0)="TIU SET ADMINISTRATIVE CLOSURE^ADMNCLOS^TIUSRVPT^1^S^^^^^^1"
 ^XWB(8994,1110,1,0)="^^4^4^3011025^"
 ^XWB(8994,1110,1,1,0)="This remote procedure sets the file attributes necessary to close a"
 ^XWB(8994,1110,1,2,0)="document by administrative action (either manually or by scanning a paper"
