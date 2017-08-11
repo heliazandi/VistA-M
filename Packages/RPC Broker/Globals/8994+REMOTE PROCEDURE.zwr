@@ -1,5 +1,5 @@
 OSEHRA ZGO Export: REMOTE PROCEDURE
-11-AUG-2017 03:06:24 ZWR
+11-AUG-2017 04:32:10 ZWR
 ^XWB(8994,0)="REMOTE PROCEDURE^8994^3497^3403"
 ^XWB(8994,1,0)="XWB EGCHO STRING^ECHO1^XWBZ1^1^R"
 ^XWB(8994,1,1,0)="^^2^2^2970825^^"
@@ -1299,7 +1299,7 @@ OSEHRA ZGO Export: REMOTE PROCEDURE
 ^XWB(8994,95,3,0)="^^2^2^2960703^"
 ^XWB(8994,95,3,1,0)="Returns all known details of the record identified by TIUDA (Source,"
 ^XWB(8994,95,3,2,0)="Signature, Linked Problems, Body of document, etc.)."
-^XWB(8994,96,0)="TIU CREATE ADDENDUM RECORD^MAKEADD^TIUSRVP^1^S"
+^XWB(8994,96,0)="TIU CREATE ADDENDUM RECORD^MAKEADD^TIUSRVP^1^S^^^^^^1"
 ^XWB(8994,96,1,0)="^^1^1^2970613^^^^"
 ^XWB(8994,96,1,1,0)="This Remote Procedure allows the creation of addenda to TIU Documents."
 ^XWB(8994,96,2,0)="^8994.02A^2^2"
@@ -2511,7 +2511,7 @@ OSEHRA ZGO Export: REMOTE PROCEDURE
 ^XWB(8994,156,3,6,0)="       TIUY(3)=172^WELBY,MARCUS"
 ^XWB(8994,156,3,7,0)=" "
 ^XWB(8994,156,3,8,0)="Note that the array elements are returned as DUZ^Username."
-^XWB(8994,157,0)="TIU UPDATE ADDITIONAL SIGNERS^IDSIGNRS^TIULX^1^S"
+^XWB(8994,157,0)="TIU UPDATE ADDITIONAL SIGNERS^IDSIGNRS^TIULX^1^S^^^^^^1"
 ^XWB(8994,157,1,0)="^^2^2^2980520^"
 ^XWB(8994,157,1,1,0)="This RPC accepts a list of persons, and adds them as additional signers"
 ^XWB(8994,157,1,2,0)="for the document identified by the first parameter."
