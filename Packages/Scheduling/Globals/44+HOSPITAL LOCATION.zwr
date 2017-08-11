@@ -1,6 +1,6 @@
 OSEHRA ZGO Export: HOSPITAL LOCATION
-24-JUL-2017 21:09:12 ZWR
-^SC(0)="HOSPITAL LOCATION^44I^2^2"
+11-AUG-2017 06:40:53 ZWR
+^SC(0)="HOSPITAL LOCATION^44I^2^11"
 ^SC(1,0)="LAB DIV 050 OOS ID 108^^C^1^^^111^0^^^^^^^1^^N^^Y^^0^1^^^^^^"
 ^SC(1,"OOS")="1^14"
 ^SC(1,"SDPROT")="Y"
@@ -1817,6 +1817,17 @@ OSEHRA ZGO Export: HOSPITAL LOCATION
 ^SC("ACST",143,9)=""
 ^SC("ACST",143,10)=""
 ^SC("ACST",143,11)=""
+^SC("AG","C","CLINICX",7)=""
+^SC("AG","C","CLInicA",8)=""
+^SC("AG","C","CLInicB",9)=""
+^SC("AG","C","CLInicC",10)=""
+^SC("AG","C","CLInicD",11)=""
+^SC("AG","C","Clinic1",5)=""
+^SC("AG","C","Clinic2",6)=""
+^SC("AG","C","LAB DIV 050 OOS ID 108",1)=""
+^SC("AG","C","VISTA HEALTH CARE",4)=""
+^SC("AG","Z","NUR FAKE NURWARD",3)=""
+^SC("AG","Z","SECURE MESSAGING",2)=""
 ^SC("AOOS",1,1)=""
 ^SC("AST",111,1)=""
 ^SC("AST",141,4)=""
