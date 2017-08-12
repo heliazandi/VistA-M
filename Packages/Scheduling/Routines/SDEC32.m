@@ -1,5 +1,5 @@
-SDEC32 ;ALB/SAT - VISTA SCHEDULING RPCS ;JAN 15, 2016
- ;;5.3;Scheduling;**627**;Aug 13, 1993;Build 249
+SDEC32 ;ALB/SAT - VISTA SCHEDULING RPCS ;FEB 04, 2016
+ ;;5.3;Scheduling;**627,643**;Aug 13, 1993;Build 14
  ;
  Q
  ;
@@ -71,11 +71,17 @@ HOSPLOC(SDECY,SDECP,MAXREC,LSUB) ;return HOSPITAL LOCATIONs
  K SDDUP
  Q
  ;
-CLINSET(SDECY,SDNOSLOT,SDIENS,SDECP) ;Returns CLINIC SETUP PARAMETERS for clinics that are active in the HOSPITAL LOCATION file
- ;CLINSET(SDECY,SDNOSLOT,SDIENS,SDECP)  external parameter tag is in SDEC
+CLINSET(SDECY,SDNOSLOT,SDIENS,SDECP,SDNOLET) ;Returns CLINIC SETUP PARAMETERS for clinics that are active in the HOSPITAL LOCATION file
+ ;CLINSET(SDECY,SDNOSLOT,SDIENS,SDECP,SDNOLET)  external parameter tag is in SDEC
  ;INPUT:
  ; SDNOSLOT - no slots flag - 0=return availability  1=do not return availability
  ; SDIENS - IENs for individual hospital locations separated by pipes
+ ; SDNOLET - flag to include clinics with no Recall Letter defined
+ ;            in RECALL REMINDERS LETTERS file
+ ;             0 = yes (include all clinics including those with no Recall Letter
+ ;                     defined)  [default]
+ ;             1 = no (only return clinics with a Recall Letter
+ ;                    defined)
  ;Returns CLINIC SETUP PARAMETERS file entries for clinics which
  ;are active in ^SC
  ;MGH Added SDIENS as input paramter to for hospital location IENs
@@ -105,7 +111,7 @@ CLINSET(SDECY,SDNOSLOT,SDIENS,SDECP) ;Returns CLINIC SETUP PARAMETERS for clinic
  ;                                  3=20-MIN
  ;                                  6=10-MIN
  ;18. HOLIDAYS             - 1918.5 Schedule on Holidays?  Y=YES
- ;19. SPECIAL              - <not used in 627>
+ ;19. SPECIAL              - 1910 SPECIAL INSTRUCTIONS separated by $C(13,10)
  ;20. CLINIC_STOP          - Stop code Number pointer to CLINIC STOP file 40.7
  N SDA,SDAPLEN,SDAR,SDDATA,SDFIELDS,SDI,SDJ,SDK,SDSLOTS,SDVAPL,SDECI,SDECIEN,SDECNOD,SDECNAM,SDECINA,SDECREA,SDTMP
  N SDECCRV,SDECDAT,SDECDATN,SDECVSC,SDECMULT,SDECREQ,SDECPCC,SDECMOB,SDECHPRV,SDECPROT,SDECNAM
@@ -124,6 +130,7 @@ CLINSET(SDECY,SDNOSLOT,SDIENS,SDECP) ;Returns CLINIC SETUP PARAMETERS for clinic
  ;
  S (SDECDAT,SDECDATN)=""
  S SDNOSLOT=$G(SDNOSLOT)
+ S SDNOLET=$G(SDNOLET)
  ;MGH change made for individual locations
  I $G(SDIENS) D
  .F SDK=1:1:$L(SDIENS,"|") D
@@ -145,17 +152,16 @@ CLINSET(SDECY,SDNOSLOT,SDIENS,SDECP) ;Returns CLINIC SETUP PARAMETERS for clinic
  Q
 PROCESS(SDECIEN) ;Process an individual clinic
  ;MGH broke this out to do all locations or individual ones
- N SDDI,SDH,SDHDB,SDSTOP
+ N SDI,SDI1,SDDI,SDH,SDHDB,SDSP,SDSTOP
  Q:'$D(^SC(+SDECIEN,0))
  Q:$$INACTIVE(+SDECIEN)
+ I SDNOLET,'$O(^SD(403.52,"B",+SDECIEN,0)) Q
  D RESCLIN1^SDEC01B(SDECIEN)
  S SDSLOTS=""
  K SDDATA,SDMSG
- ;S SDFIELDS=".01;2;1912;1913;1914;1917;1918;1918.5"_$S(SDNOSLOT:"",1:";1920*")_";2502.3;2505;2506;2507"
- S SDFIELDS=".01;2;8;1912;1913;1914;1917;1918;1918.5"_$S(SDNOSLOT:"",1:";1920*")_";2505;2506;2507"
+ S SDFIELDS=".01;2;8;50.01;1912;1913;1914;1917;1918;1918.5"_$S(SDNOSLOT:"",1:";1920*")_";2505;2506;2507"
  D GETS^DIQ(44,SDECIEN_",",SDFIELDS,"IE","SDDATA","SDMSG")
  Q:$G(SDDATA(44,SDECIEN_",",2,"I"))'="C"
- ;Q:$G(SDDATA(44,SDECIEN_",",2502.3,"I"))=1  ;HIDE FROM DISPLAY?
  S SDA="SDDATA(44,"""_SDECIEN_","")"
  S SDAPLEN=@SDA@(1912,"E")    ;length of appointment
  S SDVAPL=@SDA@(1913,"I")     ;variable appointment length V means yes
@@ -167,8 +173,6 @@ PROCESS(SDECIEN) ;Process an individual clinic
  S SDECDAT=@SDA@(2507,"I") ;DEFAULT APPOINTMENT TYPE ien
  S SDECDATN=@SDA@(2507,"E") ;DEFAULT APPOINTMENT TYPE name
  S SDSTOP=@SDA@(8,"I")      ;STOP CODE NUMBER
- I SDECINA]""&(SDECREA="") Q  ;Clinic is inactivated and has no reactivate date
- I SDECINA]""&(SDECREA]"")&(SDECINA>SDECREA) Q  ;MGH Inactive date is later than reactive date
  S SDECNAM=@SDA@(.01,"E")
  S SDECMOB=@SDA@(1918,"E")
  S SDH=@SDA@(1918.5,"I")
@@ -180,12 +184,13 @@ PROCESS(SDECIEN) ;Process an individual clinic
  S:'SDNOSLOT SDSLOTS=$$GETSLOTS(.SDDATA)
  S SDECHPRV=$O(^SC(+SDECIEN,"SDPRIV",0))>0
  S SDECPROT=$G(^SC(+SDECIEN,"SDPROT"))="Y"
+ S SDSP="" S SDI=0 F  S SDI=$O(^SC(+SDECIEN,"SI",SDI)) Q:SDI'>0  S SDI1=$G(^SC(+SDECIEN,"SI",SDI,0)) S:SDI1'="" SDSP=$S(SDSP'="":SDSP_$C(13,10),1:"")_SDI1
  ;       1         2         3         4         5          6         7         8
  S SDTMP=SDECIEN_U_SDECNAM_U_SDECCRV_U_SDECVSC_U_SDECMULT_U_SDECREQ_U_SDECPCC_U_SDECMOB
  ;               9         10         11        12           13       14         15
  S SDTMP=SDTMP_U_SDECDAT_U_SDECDATN_U_+SDAPLEN_U_SDVAPL_U_SDSLOTS_U_SDECHPRV_U_SDECPROT
- ;               16      17     18    19   20
- S SDTMP=SDTMP_U_SDHDB_U_SDDI_U_SDH_U_""_U_SDSTOP
+ ;               16      17     18    19     20
+ S SDTMP=SDTMP_U_SDHDB_U_SDDI_U_SDH_U_SDSP_U_SDSTOP
  S SDAR(SDECNAM,SDECIEN)=SDTMP
  Q
  ;
