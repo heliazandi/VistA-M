@@ -1,5 +1,5 @@
-SDECUTL2 ;ALB/SAT - VISTA SCHEDULING RPCS ;JAN 15, 2016
- ;;5.3;Scheduling;**627**;Aug 13, 1993;Build 249
+SDECUTL2 ;ALB/SAT - VISTA SCHEDULING RPCS ;APR 08, 2016
+ ;;5.3;Scheduling;**627,642**;Aug 13, 1993;Build 23
  ;
  Q
  ;
@@ -285,7 +285,7 @@ DEL1 ;
  K ^SDEC(409.821,"ARSCT")
  Q
  ;
-ARRAY(DTARRAY,SDPAT,SDAY,SDLEN,SDCLS,SDSI)  ;build date/time array from pattern
+ARRAY(DTARRAY,SDPAT,SDAY,SDLEN,SDCLS,SDSI,SDF)  ;build date/time array from pattern
  ; .DTARRAY   - Array of cancelled date/times
  ;             CARRAY(FMDATE,TIME)=<slots>
  ;  SDPAT - (required) pattern
@@ -296,10 +296,10 @@ ARRAY(DTARRAY,SDPAT,SDAY,SDLEN,SDCLS,SDSI)  ;build date/time array from pattern
  N SDA,SDI,SDSIM
  ;SDSIM - calculated using DISPLAY INCREMENTS PER HOUR field from file 44
  ;          $S(X="":4,X<3:4,X:X,1:4)
+ S SDF=$G(SDF,0)  ;cancelled flag
  S SDA=$S(SDSI=3:6,SDSI=6:12,1:8)
  S SDSIM=$S(SDSI="":4,SDSI<3:4,SDSI:SDSI,1:4)
  S:$E(SDPAT)?1A SDPAT=$E(SDPAT,SDA,$L(SDPAT))
- K SDBLKS
  ;1 2 3 4 OR 6
  D @SDSI
  Q
@@ -311,7 +311,7 @@ ARRAY(DTARRAY,SDPAT,SDAY,SDLEN,SDCLS,SDSI)  ;build date/time array from pattern
  F CNT=2:8 Q:CNT>$L(SDPAT)  D
  .I (CNT#8)=2 S HOUR=HOUR+1
  .S BSTART=SDAY_"."_$S($L(HOUR)=1:"0"_HOUR,1:HOUR)
- .S DTARRAY($P(BSTART,".",1),$P(BSTART,".",2))=$E(SDPAT,CNT)
+ .S DTARRAY($P(BSTART,".",1),$P(BSTART,".",2))=$S(+SDF:"X",1:$E(SDPAT,CNT))
  Q
 2  ;2 increments per hour (30 min)
  N BSTART,CNT,HOUR
@@ -321,7 +321,7 @@ ARRAY(DTARRAY,SDPAT,SDAY,SDLEN,SDCLS,SDSI)  ;build date/time array from pattern
  F CNT=2:4 Q:CNT>$L(SDPAT)  D
  .I (CNT#8)=2 S HOUR=HOUR+1
  .S BSTART=SDAY_"."_$S($L(HOUR)=1:"0"_HOUR,1:HOUR)_$S((CNT#8)=6:30,1:"00")
- .S DTARRAY($P(BSTART,".",1),$P(BSTART,".",2))=$E(SDPAT,CNT)
+ .S DTARRAY($P(BSTART,".",1),$P(BSTART,".",2))=$S(+SDF:"X",1:$E(SDPAT,CNT))
  Q
 3  ;3 increments per hour (20 min)
  N BSTART,CNT,HOUR
@@ -331,7 +331,7 @@ ARRAY(DTARRAY,SDPAT,SDAY,SDLEN,SDCLS,SDSI)  ;build date/time array from pattern
  F CNT=2:2 Q:CNT>$L(SDPAT)  D
  .I (CNT#6)=2 S HOUR=HOUR+1
  .S BSTART=SDAY_"."_$S($L(HOUR)=1:"0"_HOUR,1:HOUR)_$S((CNT#6)=4:20,(CNT#6)=0:40,1:"00")
- .S DTARRAY($P(BSTART,".",1),$P(BSTART,".",2))=$E(SDPAT,CNT)
+ .S DTARRAY($P(BSTART,".",1),$P(BSTART,".",2))=$S(+SDF:"X",1:$E(SDPAT,CNT))
  Q
 4  ;4 increments per hour (15 min)
  N BSTART,CNT,HOUR
@@ -341,7 +341,7 @@ ARRAY(DTARRAY,SDPAT,SDAY,SDLEN,SDCLS,SDSI)  ;build date/time array from pattern
  F CNT=2:2 Q:CNT>$L(SDPAT)  D
  .I (CNT#8)=2 S HOUR=HOUR+1
  .S BSTART=SDAY_"."_$S($L(HOUR)=1:"0"_HOUR,1:HOUR)_$S((CNT#8)=4:15,(CNT#8)=6:30,(CNT#8)=0:45,1:"00")
- .S DTARRAY($P(BSTART,".",1),$P(BSTART,".",2))=$E(SDPAT,CNT)
+ .S DTARRAY($P(BSTART,".",1),$P(BSTART,".",2))=$S(+SDF:"X",1:$E(SDPAT,CNT))
  Q
 6  ;6 increments per hour (10 min)
  N BSTART,CNT,HOUR
@@ -350,8 +350,8 @@ ARRAY(DTARRAY,SDPAT,SDAY,SDLEN,SDCLS,SDSI)  ;build date/time array from pattern
  S HOUR=SDCLS-1
  F CNT=2:2 Q:CNT>$L(SDPAT)  D
  .I (CNT#12)=2 S HOUR=HOUR+1
- .S BSTART=SDAY_"."_$S($L(HOUR)=1:"0"_HOUR,1:HOUR)_$S((CNT#12)=4:10,(CNT#12)=6:20,(CNT#12)=8:30,(CNT#12)=10:40,(CNT#12)=0:5,1:"00")
- .S DTARRAY($P(BSTART,".",1),$P(BSTART,".",2))=$E(SDPAT,CNT)
+ .S BSTART=SDAY_"."_$S($L(HOUR)=1:"0"_HOUR,1:HOUR)_$S((CNT#12)=4:10,(CNT#12)=6:20,(CNT#12)=8:30,(CNT#12)=10:40,(CNT#12)=0:50,1:"00")
+ .S DTARRAY($P(BSTART,".",1),$P(BSTART,".",2))=$S(+SDF:"X",1:$E(SDPAT,CNT))
  Q
 SDAV(SDAV,SDCL,SDAY,SDLEN,SDCLS,SDSI)  ;build modified availability array from AVAILABILITY in 44
  N DTARRAY

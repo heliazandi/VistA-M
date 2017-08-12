@@ -1,5 +1,5 @@
-SDEC57 ;ALB/SAT - VISTA SCHEDULING RPCS ;JAN 15, 2016
- ;;5.3;Scheduling;**627**;Aug 13, 1993;Build 249
+SDEC57 ;ALB/SAT - VISTA SCHEDULING RPCS ;APR 08, 2016
+ ;;5.3;Scheduling;**627,642**;Aug 13, 1993;Build 23
  ;
  Q
  ;APPSLOTS - return appt slots and availability
@@ -69,8 +69,9 @@ GETSLOTS(SDAB,SDECRES,SDECSTART,SDECEND)  ;load SDEC ACCESS BLOCKS from file 44
  Q:SDCL=""
  S SDI=$$FMADD^XLFDT(SDECSTART,-1)
  F  S SDI=$$FMADD^XLFDT(SDI,1) Q:SDI>$P(SDECEND,".",1)  D
- .Q:$G(^SC(SDCL,"ST",SDI,1))["**CANCELLED**"
+ .I ($O(^SC(SDCL,"T",0))="")!($O(^SC(SDCL,"T",0))>SDI) Q
  .I $$GET1^DIQ(44,SDCL_",",1918.5,"I")'="Y",$D(^HOLIDAY("B",SDI)) Q   ;do not schedule on holidays
+ .;Q:$G(^SC(SDCL,"ST",SDI,1))["**CANCELLED**"
  .Q:$$INACTIVE^SDEC32(SDCL,$P(SDI,".",1))   ;don't get availability if clinic inactive on day SDI
  .D RESAB(SDAB,SDCL,SDI,SDI_"."_2359,SDECRES)
  Q
@@ -125,16 +126,9 @@ TDAY1 ;
  ;SDA=begin position of pattern on template
  S SDA=$S(SDSI=3:6,SDSI=6:12,1:8)
  S SDTP=""
+ ;if no CURRENT AVAILABILITY pattern, try to build it
  I '$D(^SC(SDCL,"ST",$P(SDBEG,".",1),1)) S ST='$$ST(SDCL,SDBEG) Q:ST
- I $D(^SC(SDCL,"ST",$P(SDBEG,".",1),9)) S SDTP=$G(^SC(SDCL,"OST",$P(SDBEG,".",1),1)) S SDTP=$E(SDTP,SDA,$L(SDTP))
- E  D
- .;get day of week number
- .S D=$$DOW^XLFDT($P(SDBEG,".",1),1)
- .S Y=D#7
- .;find day template pattern
- .S SS=$$FDT(SDCL,Y)
- .Q:SS=""
- .S SDTP=SS
+ S SDTP=$G(^SC(SDCL,"ST",$P(SDBEG,".",1),1)) S SDTP=$E(SDTP,SDA,$L(SDTP))
  Q:SDTP=""
  K SDBLKS
  D GETBLKS^SDEC57A(.SDBLKS,SDTP,$P(SDBEG,".",1),SDCLS,SDLEN,SDSI,SDCL)

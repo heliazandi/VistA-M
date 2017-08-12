@@ -1,5 +1,5 @@
-SDEC01A ;ALB/SAT - VISTA SCHEDULING RPCS ;JAN 15, 2016
- ;;5.3;Scheduling;**627**;Aug 13, 1993;Build 249
+SDEC01A ;ALB/SAT - VISTA SCHEDULING RPCS ;APR 08, 2016
+ ;;5.3;Scheduling;**627,642**;Aug 13, 1993;Build 23
  ;
  Q
  ;
@@ -135,7 +135,7 @@ RES1 ; get data for 1 resource
  F SDEC=1:1:4 S $P(SDECRDAT,U,SDEC)=$P(SDECRNOD,U,SDEC)
  S SDECRDAT=SDECRES_U_SDECRDAT   ;1,2-5
  S SDCL=$P(SDECRDAT,U,5)
- ;Q:$$GET1^DIQ(44,SDCL_",",2502.3,"I")=1  ;HIDE FROM DISPLAY?
+ Q:+$$GET1^DIQ(44,SDCL_",",50.01,"I")=1  ;OOS?
  S PRO=0
  ;MGH code for new type to only contain prohibited clinics
  Q:$G(SDCL)=""&(SDPRO=1)

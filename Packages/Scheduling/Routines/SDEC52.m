@@ -1,5 +1,5 @@
-SDEC52 ;ALB/SAT - VISTA SCHEDULING RPCS ;JAN 15, 2016
- ;;5.3;Scheduling;**627**;Aug 13, 1993;Build 249
+SDEC52 ;ALB/SAT - VISTA SCHEDULING RPCS ;APR 08, 2016
+ ;;5.3;Scheduling;**627,642**;Aug 13, 1993;Build 23
  ;
  Q
  ;
@@ -267,7 +267,7 @@ GET1 ;
  S PROVNAME=SDDATA(403.5,IEN_",",4,"E")   ;    15. Provider NAME of Provider in RECALL REMINDERS PROVIDERS file
  S CLINIEN=SDDATA(403.5,IEN_",",4.5,"I")  ;    16. Clinic pointer to HOSPITAL LOCATION file
  S CLINNAME=SDDATA(403.5,IEN_",",4.5,"E") ;    17. Clinic NAME from HOSPITAL LOCATION file
- ;I CLINIEN'="",$$GET1^DIQ(44,CLINIEN_",",2502.3,"I")=1 Q   ;check HIDE FROM DISPLAY IN VSE GUI?
+ I CLINIEN'="",$$GET1^DIQ(44,CLINIEN_",",50.01,"I")=1 Q   ;check OOS?
  S:CLINIEN'="" PRHBLOC=$S($$GET1^DIQ(44,+CLINIEN_",",2500,"I")="Y":1,1:0)
  S APPTLEN=SDDATA(403.5,IEN_",",4.7,"E")  ;    18. Length of Appointment  numeric between 10 and 120
  S DATE=SDDATA(403.5,IEN_",",5,"I") S DATE=$$FMTE^XLFDT(DATE)           ;19. Recall Date in external format (no time)

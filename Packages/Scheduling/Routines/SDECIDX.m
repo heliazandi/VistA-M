@@ -1,11 +1,11 @@
-SDECIDX ;ALB/SAT - VISTA SCHEDULING RPCS ;JAN 15, 2016
- ;;5.3;Scheduling;**627**;Aug 13, 1993;Build 249
+SDECIDX ;ALB/SAT - VISTA SCHEDULING RPCS ;APR 08, 2016
+ ;;5.3;Scheduling;**627,642**;Aug 13, 1993;Build 23
  ;
  ; The following entry point causes the ^XTMP("SDEC","IDX" global
  ; to be rebuilt based on the scheduling of the SDEC BUILD IDX option.
 ENTRY ; When executed, the following actions will occur:
  ; - purge existing ^XTMP("SDEC","IDX" data
- ; - Loop through files 123, 403.3, 409.5, and 409.85 and placing content
+ ; - Loop through files 123, 403.5, 409.3, and 409.85 and placing content
  ;   into the XTMP global for retrieval by the SDECIDX GET RPC call.
  ;
  D PURGE

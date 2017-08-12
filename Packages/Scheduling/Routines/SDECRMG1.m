@@ -1,10 +1,10 @@
-SDECRMG1 ;ALB/SAT - VISTA SCHEDULING RPCS ;JAN 15, 2016
- ;;5.3;Scheduling;**627**;Aug 13, 1993;Build 249
+SDECRMG1 ;ALB/SAT - VISTA SCHEDULING RPCS ;APR 08, 2016
+ ;;5.3;Scheduling;**627,642**;Aug 13, 1993;Build 23
  ;
  ; The following entry point causes the ^XTMP("SDEC","IDX" global
  ; to be rebuilt based on the scheduling of the SDEC BUILD IDX option.
 WAIT(SDCY,MAXREC,DFN,SDBEG,SDEND,CLINIC,PRI,SVCCONN,SVCCON,ORIGDT,DESDT,DESDTR,PRIGRP,SORT,PTS,SDMAX,URG,SDSVC,SDLASTE,ORIGDTR,SDCNT,MGIENS,SDALL)  ;EP
- ;Key stored in 56th piec
+ ;Key stored in 56th piece
  ;SVCCONNP - 37th piece
  ;Desired DATE - 24th piece
  ;Origination Date - ORIGDT - 8th piece
@@ -48,7 +48,7 @@ WAIT1(MAXREC,DFN,SDBEG,SDEND,CLINIC,PRI,SVCCONN,SVCCON,ORIGDT,DESDT,DESDTR,PRIGR
  S CLGP=$P(NOD,U,16) ;I CLGP'="" S CLGP=$$GET1^DIQ(409.32,CLGP_",",.01,"I")
  I +CLINIC,CLGP="" Q
  I +CLINIC,CLGP'="",$D(CLINIC(CLGP))=0 Q       ;match clinic filter
- ;I CLGP'="",$$GET1^DIQ(44,CLGP_",",2502.3,"I")=1 Q  ;do not return if HIDE FROM DISPLAY IN GUI? is yes
+ I CLGP'="",$$GET1^DIQ(44,CLGP_",",50.01,"I")=1 Q  ;do not return if OOS? is yes
  S DESGP=$P(NOD,U,24)
  I DESDT'="",DESGP'="",$D(DESDT(DESGP))=0 Q      ;match date of request with desired date
  I DESDTR'="",DESGP'="",(DESGP<$P(DESDTR,"~",1))!(DESGP>$P(DESDTR,"~",2)) Q  ;match date of request with range of desired dates
@@ -113,11 +113,12 @@ APPT1(MAXREC,DFN,SDBEG,SDEND,CLINIC,PRI,SVCCONN,SVCCON,ORIGDT,DESDT,DESDTR,PRIGR
  I PRIGRP=1,$D(PRI(PGRP))=0 Q          ;No match on priority group
  S CLGP=$P(NOD,U,12)
  I +CLINIC,$D(CLINIC(+CLGP))=0 Q         ;match clinic
- ;I CLGP'="",$$GET1^DIQ(44,CLGP_",",2502.3,"I")=1 Q  ;sat - do not return if HIDE FROM DISPLAY IN GUI? is yes
+ I CLGP'="",$$GET1^DIQ(44,CLGP_",",50.01,"I")=1 Q  ;do not return if OOS? is yes
  S DESGP=$P(NOD,U,20)
  I DESDT'="",DESGP'="",$D(DESDT(DESGP))=0 Q      ;match date of request with desired date
  I DESDTR'="",DESGP'="",(DESGP<$P(DESDTR,"~",1))!(DESGP>$P(DESDTR,"~",2)) Q  ;match date of request with range of desired dates
  S ORIGGP=$P(NOD,U,8)
+ I ORIGGP'="",(ORIGGP>SDEND)!(ORIGGP<SDBEG) Q
  I ORIGDTR'="",ORIGGP'="",(ORIGGP<$P(ORIGDTR,"~",1))!(ORIGGP>$P(ORIGDTR,"~",2)) Q  ;match origination date range with file entry date
  I ORIGDT'="",ORIGGP'="",$D(ORIGDT(ORIGGP))=0 Q             ;match origination date with file entry date
  S IEN=$P(NOD,U,7)
@@ -158,7 +159,7 @@ RECALL(RET,MAXREC,DFN,SDBEG,SDEND,CLINIC,PRI,SVCCONN,SVCCON,ORIGDT,DESDT,DESDTR,
  S DFN=$G(DFN),SDBEG=$G(SDBEG),SDEND=$G(SDEND),MAXREC=$G(MAXREC),SDLASTR=$G(SDLASTR),CLINIC=$G(CLINIC)
  F  D  Q:SDLASTR=""  Q:SDCNT'<SDMAX   ;we throw some records out based on filters; continue until there are SDMAX records
  .D RECGET^SDEC(.SDECY,DFN,SDBEG,SDEND,SDMAX-SDCNT,SDLASTR)
- .S X=$O(@SDECY@(9999999),-1) S NOD=@SDECY@(X) S SDLASTR=$P(NOD,U,56)  ;get LASTSUB
+ .S X=$O(@SDECY@(9999999),-1) S NOD=@SDECY@(X) S SDLASTR=$P(NOD,U,42)  ;get LASTSUB  ;alb/sat 642 change 56 to 42
  .I 'X S SDLASTR="" Q
  .S LP=0 F  S LP=$O(@SDECY@(LP)) Q:LP=""  D
  ..S NOD=@SDECY@(LP)
@@ -171,7 +172,7 @@ RECALL(RET,MAXREC,DFN,SDBEG,SDEND,CLINIC,PRI,SVCCONN,SVCCON,ORIGDT,DESDT,DESDTR,
  ..I PRIGRP'="",$D(PRI(PGRP))=0 Q                 ;No match on priority group
  ..S CLGP=$P(NOD,U,16)
  ..I +CLINIC,CLGP'="",$D(CLINIC(CLGP))=0 Q                 ;match clinic
- ..;I CLGP'="",$$GET1^DIQ(44,CLGP_",",2502.3,"I")=1 Q  ;do not return if HIDE FROM DISPLAY IN GUI? is yes
+ ..I CLGP'="",$$GET1^DIQ(44,CLGP_",",50.01,"I")=1 Q  ;do not return if OOS? is yes
  ..I +SDSVC N SDSVCN S SDSVCN=$$GET1^DIQ(44,+$P(NOD,U,16)_",",8,"E") Q:SDSVCN=""  Q:'$D(SDSVC(SDSVCN))   ;check service
  ..S DESGP=$P(NOD,U,19)
  ..I DESDT'="",DESGP'="",$D(DESDT(DESGP))=0 Q      ;match date of request with desired date

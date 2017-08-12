@@ -1,5 +1,5 @@
-SDEC03 ;ALB/SAT - VISTA SCHEDULING RPCS ;JAN 15, 2016
- ;;5.3;Scheduling;**627**;Aug 13, 1993;Build 249
+SDEC03 ;ALB/SAT - VISTA SCHEDULING RPCS ;APR 08, 2016
+ ;;5.3;Scheduling;**627,642**;Aug 13, 1993;Build 23
  ;
  Q
  ;
@@ -55,11 +55,13 @@ XR4K(SDECDA) ;kill ARSCT xref for the STARTTIME field of the SDEC ACCESS BLOCK f
  ;support for single HOSPITAL LOCATION in SDEC RESOURCE
 XRC1(SDDA) ;computed routine for INACTIVE field in SDEC RESOURCE
  ;NO = active; YES = inactive
- N SDNOD,N21,N25,X
+ N SDNOD,SDTYPR,N21,N25,X
  S X=""
  S SDNOD=^SDEC(409.831,SDDA,0)
  S N21=$P(SDNOD,U,7)   ;inactive date/time
  S N25=$P(SDNOD,U,9)   ;reactive date/time
+ S SDTYPR=$P(SDNOD,U,11)
+ I $P(SDTYPR,";",2)="VA(200," I $$PC^SDEC45($P(SDTYPR,";",1)) S X="YES" D RESDG^SDEC01B(SDDA) Q X   ;do not include provider resource if NEW PERSON is not active
  I (N21="") S X="NO" Q X
  I (N25'="")&(N25>$$NOW^XLFDT) S X="YES" D RESDG^SDEC01B(SDDA) Q X
  I (N25'="")&(N25'>$$NOW^XLFDT) S X="NO" Q X
@@ -101,13 +103,13 @@ N44S(SDCL,SDCLN) ;MUMPS xref for NAME of file 44 to update SDEC RESOURCE name if
  .D UPDATE^DIE("","SDFDA")
  Q
  ;
-RTS(SDDA,X) ;New Style MUMPS xref for RESOURCE TYPE field of SDEC RESOURCE file 409.831
+RTS(SDDA,X) ;no longer used ;New Style MUMPS xref for RESOURCE TYPE field of SDEC RESOURCE file 409.831
  N SD1,SD2
  S SD1=$E($$OT1(X),1)
  S SD2=$P(X,";",1)
  S ^SDEC(409.831,"AC",SD1,SD2,SDDA)=""
  Q
-RTK(SDDA,X) ;New Style MUMPS xref for RESOURCE TYPE field of SDEC RESOURCE file 409.831
+RTK(SDDA,X) ;no longer used ;New Style MUMPS xref for RESOURCE TYPE field of SDEC RESOURCE file 409.831
  N SD1,SD2
  S SD1=$E($$OT1(X),1)
  S SD2=$P(X,";",1)

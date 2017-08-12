@@ -1,5 +1,5 @@
-SDECAR ;ALB/SAT - VISTA SCHEDULING RPCS ;JAN 15, 2016
- ;;5.3;Scheduling;**627**;Aug 13, 1993;Build 249
+SDECAR ;ALB/SAT - VISTA SCHEDULING RPCS ;APR 08, 2016
+ ;;5.3;Scheduling;**627,642**;Aug 13, 1993;Build 23
  ;
  Q
  ;
@@ -16,7 +16,8 @@ ARCLOSE(RET,INP) ;Appointment Request Close
  S ARIEN=$G(INP(1)) I ARIEN="" S RET=RET_"-1^Missing IEN"_$C(30,31) Q
  ;validate DISPOSITION
  S ARDISP=$G(INP(2))
- I (ARDISP'="D"),(ARDISP'="NC"),(ARDISP'="SA"),(ARDISP'="CC"),(ARDISP'="NN"),(ARDISP'="ER"),(ARDISP'="TR"),(ARDISP'="CL") D
+ ;MC:MRTC PARENT CLOSED
+ I (ARDISP'="D"),(ARDISP'="NC"),(ARDISP'="SA"),(ARDISP'="CC"),(ARDISP'="NN"),(ARDISP'="ER"),(ARDISP'="TR"),(ARDISP'="CL"),(ARDISP'="MC") D
  .S:ARDISP="DEATH" ARDISP="D"
  .S:ARDISP="REMOVED/NON-VA CARE" ARDISP="NC"
  .S:ARDISP="REMOVED/SCHEDULED-ASSIGNED" ARDISP="SA"
@@ -25,8 +26,9 @@ ARCLOSE(RET,INP) ;Appointment Request Close
  .S:ARDISP="ENTERED IN ERROR" ARDISP="ER"
  .S:ARDISP="TRANSFERRED TO EWL" ARDISP="TR"
  .S:ARDISP="CHANGED CLINIC" ARDISP="CL"
+ .S:ARDISP="MRTC PARENT CLOSED" ARDISP="MC"
  I ARDISP="" S RET=RET_"-1^Missing value for DISPOSITION"_$C(30,31) Q
- I (ARDISP'="D"),(ARDISP'="NC"),(ARDISP'="SA"),(ARDISP'="CC"),(ARDISP'="NN"),(ARDISP'="ER"),(ARDISP'="TR"),(ARDISP'="CL") D
+ I (ARDISP'="D"),(ARDISP'="NC"),(ARDISP'="SA"),(ARDISP'="CC"),(ARDISP'="NN"),(ARDISP'="ER"),(ARDISP'="TR"),(ARDISP'="CL"),(ARDISP'="MC") D
  .S RET=RET_"-1^Invalid value for DISPOSITION"_$C(30,31) Q
  ;validate DISPOSITIONED BY
  S ARDISPBY=$G(INP(3),DUZ)
@@ -170,6 +172,35 @@ ARMRTGET(SDECY,ARIEN) ;GET number of entries and values in MRTC CALC PREF DATES
  S @SDECY@(SDECI)=@SDECY@(SDECI)_$C(31)
  Q
  ;
+ARMULT(SDECY,ARIEN,MULT)  ;SET MULT APPTS MADE multiple in SDEC APPT REQUEST file. All entries are removed and replaced by the values in MULT
+ ;INPUT:
+ ; ARIEN - (required) pointer to SDEC APPT REQUEST file (usualy a parent request)
+ ; MULT - (optional) list of child pointers to SDEC APPOINTMENT and/or
+ ;                    SDEC APPT REQUEST files separated by pipe
+ ;        each pipe piece contains the following ~ pieces:
+ ;     1. (optional) Appointment Id pointer to SDEC APPOINTMENT
+ ;                   file 409.84
+ ;     2. (optional) Request Id pointer to SDEC APPT REQUEST
+ ;                   file 409.85
+ ;RETURN:
+ ; ERRORCODE^MESSAGE
+ ;
+ N MULT1,SDI
+ S SDECY="^TMP(""SDECAR"","_$J_",""ARMRTSET"")"
+ K @SDECY
+ ; data header
+ S @SDECY@(0)="T00030ERRORCODE^T00030MESSAGE"_$C(30)
+ S ARIEN=$G(ARIEN)
+ I ARIEN="" S @SDECY@(1)="-1^SDEC APPT REQUEST id is required." Q
+ I '$D(^SDEC(409.85,+ARIEN,0)) S @SDECY@(1)="-1^Invalid SDEC APPT REQUEST id." Q
+ S MULT=$G(MULT)
+ D MT1(ARIEN)
+ I MULT="" S @SDECY@(0)=@SDECY@(0)_$C(31) Q   ;nothing to do
+ F SDI=1:1:$L(MULT,"|") D
+ .S MULT1=$TR($P(MULT,"|",SDI),"^","~")
+ .D AR433^SDECAR2(ARIEN,MULT1)
+ S @SDECY@(1)="0^SUCCESS"_$C(30,31)
+ Q
 ARMRTSET(SDECY,ARIEN,MRTC) ;SET MRTC CALC PREF DATES dates - clears the multiple and sets the new ones that are passed into MRTC
  ;ARMRTSET(SDECY,ARIEN,MRTC)
  ;INPUT:
@@ -196,6 +227,14 @@ MT(ARIEN)  ; clear out existing MRTC CALC PREF DATES
  N DA,DIK,SDI
  S SDI=0 F  S SDI=$O(^SDEC(409.85,ARIEN,5,SDI)) Q:SDI'>0  D
  .S DIK="^SDEC(409.85,"_ARIEN_",5,"
+ .S DA=SDI
+ .S DA(1)=ARIEN
+ .D ^DIK
+ Q
+MT1(ARIEN)  ; clear out existing MULT APPTS MADE
+ N DA,DIK,SDI
+ S SDI=0 F  S SDI=$O(^SDEC(409.85,ARIEN,2,SDI)) Q:SDI'>0  D
+ .S DIK="^SDEC(409.85,"_ARIEN_",2,"
  .S DA=SDI
  .S DA(1)=ARIEN
  .D ^DIK
@@ -245,4 +284,25 @@ ARAPPT(SDECY,SDAPPT) ;GET appointment request for given SDEC APPOINTMENT id
  S SDY=$P(SDX,";",2)
  S SDTYP=$S(SDY="SDWL(409.3,":"E|",SDY="GMR(123,":"C|",SDY="SD(403.5,":"R|",SDY="SDEC(409.85,":"A|",1:"")_$P(SDX,";",1)  ;appt request type
  S SDECI=SDECI+1 S @SDECY@(SDECI)=SDTYP_$C(30,31)
+ Q
+ ;
+AUDITGET(SDECY,ARIEN)  ;GET entries from VS AUDIT field of SDEC APPT REQUEST file 409.85
+ N ARDATA,SDECI,SDI,SDTMP,SDX
+ S SDECY="^TMP(""SDECAR"","_$J_",""AUDITGET"")"
+ K @SDECY
+ S SDECI=0
+ S SDTMP="T00030IEN^T00030ID^T00030DATE^T00030USERIEN^T00030USERNAME"
+ S SDTMP=SDTMP_"^T00030CLINIEN^T00030CLINNAME^T00030STOPIEN^T00030STOPNAME"
+ S @SDECY@(SDECI)=SDTMP_$C(30)
+ ;validate ARIEN
+ S ARIEN=$G(ARIEN)
+ I '+$D(^SDEC(409.85,+ARIEN,0)) S @SDECY@(1)="-1^Invalid SDEC APPT REQUEST id."_$C(30,31) Q
+ S SDI=0 F  S SDI=$O(^SDEC(409.85,+ARIEN,6,SDI)) Q:SDI'>0  D
+ .K ARDATA
+ .D GETS^DIQ(409.8545,SDI_","_ARIEN_",","**","IE","ARDATA")
+ .S SDX="ARDATA(409.8545,"""_SDI_","_ARIEN_","")"
+ .S SDTMP=ARIEN_U_SDI_U_@SDX@(.01,"E")_U_@SDX@(1,"I")_U_@SDX@(1,"E")
+ .S SDTMP=SDTMP_U_@SDX@(2,"I")_U_@SDX@(2,"E")_U_@SDX@(3,"I")_U_@SDX@(3,"E")
+ .S SDECI=SDECI+1 S @SDECY@(SDECI)=SDTMP_$C(30)
+ S @SDECY@(SDECI)=@SDECY@(SDECI)_$C(31)
  Q

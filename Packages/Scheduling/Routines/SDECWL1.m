@@ -1,5 +1,5 @@
-SDECWL1 ;ALB/SAT - VISTA SCHEDULING RPCS ;JAN 15, 2016
- ;;5.3;Scheduling;**627**;Aug 13, 1993;Build 249
+SDECWL1 ;ALB/SAT - VISTA SCHEDULING RPCS ;APR 08, 2016
+ ;;5.3;Scheduling;**627,642**;Aug 13, 1993;Build 23
  ;
  Q
  ;
@@ -177,7 +177,7 @@ ONEPAT ; Process one patient
  S WLCLIENL=WLDATA(FNUM,WLIEN_",",8,"I")
  S SDCL=WLDATA(FNUM,WLIEN_",",8.5,"I")
  I SDCL="" S SDCL=$$GET1^DIQ(409.32,WLCLIENL_",",.01,"I")
- ;Q:(SDCL'="")&($$GET1^DIQ(44,SDCL_",",2502.3,"I")=1)  ;check HIDE FROM DISPLAY? in file 44
+ Q:(SDCL'="")&($$GET1^DIQ(44,SDCL_",",50.01,"I")=1)  ;check OOS? in file 44
  S PRHBLOC=$S($$GET1^DIQ(44,SDCL_",",2500,"I")="Y":1,1:0)
  ;collect demographics
  D PDEMO^SDECU2(.SDDEMO,DFN)

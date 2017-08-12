@@ -1,5 +1,5 @@
-SDECWL2 ;ALB/SAT - VISTA SCHEDULING RPCS ;JAN 15, 2016
- ;;5.3;Scheduling;**627**;Aug 13, 1993;Build 249
+SDECWL2 ;ALB/SAT - VISTA SCHEDULING RPCS ;APR 08, 2016
+ ;;5.3;Scheduling;**627,642**;Aug 13, 1993;Build 23
  ;
  Q
  ;
@@ -62,15 +62,16 @@ WLSET(RET,INP) ;Waitlist Set
  N X,Y,%DT
  N DFN,MI,WLIEN,WLORIGDT,WLINST,WLINSTI,WLTYPE,WLTEAM,WLPOS,WLSRVSP,WLCLIN
  N WLUSER,WLPRIO,WLREQBY,WLPROV,WLDAPTDT,WLCOMM,WLEESTAT,WLEDT,WLQUIT
- N FNUM,FDA,WLNEW,WLRET,WLMSG,WLDATA,WLERR,WLHOS
+ N AUDF,FNUM,FDA,WLNEW,WLRET,WLMSG,WLDATA,WLERR,WLHOS
  N WLAPTYP,WLPATTEL,WLENPRI,WLSVCCON,WLSVCCOP
- S WLQUIT=0
+ S (AUDF,WLQUIT)=0
  S FNUM=$$FNUM^SDECWL
  S RET="I00020ERRORID^T00030ERRORTEXT"_$C(30)
  ; Use MERGE instead of SET so we can know if values were actually specified or not.
  ; This way, if a value is null, we will delete any previous value,
  ; but if it is missing, then we will just ignore it.
  M WLIEN=INP(1)
+ S WLHOS=""
  S DFN=$G(INP(2))
  I '+DFN S RET=RET_"-1^Invalid Patient ID."_$C(30,31) Q
  I '$D(^DPT(DFN,0)) S RET=RET_"-1^Invalid Patient ID"_$C(30,31) Q
@@ -97,6 +98,8 @@ WLSET(RET,INP) ;Waitlist Set
  ..S WLHOS=$O(^SC("B",WLCLIN,0))  ;$S(+WLCLIN:$P($G(^SC($P($G(^SDWL(409.32,WLCLIN,0)),U,1),0)),U,1),1:WLCLIN)
  ..S WLCLIN=$O(^SDWL(409.32,"B",+WLHOS,0)) I 'WLCLIN S RET=RET_"-1^"_WLCLIN_" is an invalid WL Waitlist Specific Clinic Name."_$C(30,31) S WLQUIT=1 Q
  S INP(8)=$G(INP(8))
+ I INP(8)'="",WLCLIN'="" S RET=RET_"-1^Cannot include both Clinic and Service."_$C(30,31) Q   ;alb/sat 642
+ I +INP(8),'$D(^SDWL(409.31,+INP(8),0)) S RET=RET_"-1^Invalid service/specialty "_+INP(8)_"."_$C(30,31) Q   ;alb/sat 642
  S WLUSER=$G(INP(10))
  I WLUSER'="" I '+WLUSER S WLUSER=$O(^VA(200,"B",WLUSER,0))
  I WLUSER="" S WLUSER=DUZ
@@ -155,8 +158,8 @@ WLSET(RET,INP) ;Waitlist Set
  . ;I $D(WLTEAM),WLTEAM'=WLDATA(FNUM,WLIEN,5,"I") S @FDA@(5)=$S(WLTEAM="":"@",1:+WLTEAM)
  . I $D(WLPOS),WLPOS'=WLDATA(FNUM,WLIEN,6,"I") S @FDA@(6)=$S(WLPOS="":"@",1:+WLPOS)
  . ;I $D(WLSRVSP),WLSRVSP'=WLDATA(FNUM,WLIEN,7,"I") S @FDA@(7)=$S(WLSRVSP="":"@",+WLSRVSP:$P($G(^DIC(40.7,$P($G(^SDWL(409.31,WLSRVSP,0)),U),0)),U),1:WLSRVSP)
- . I $D(WLCLIN),WLCLIN'=WLDATA(FNUM,WLIEN,8,"I") S @FDA@(8)=$S(WLCLIN="":"@",1:+WLCLIN)
- . I $D(WLHOS),WLHOS'=WLDATA(FNUM,WLIEN,8,"I") S @FDA@(8.5)=WLHOS
+ . I $D(WLCLIN),WLCLIN'=WLDATA(FNUM,WLIEN,8,"I") S @FDA@(8)=$S(WLCLIN="":"@",1:+WLCLIN),AUDF=1 S:WLDATA(FNUM,WLIEN,7,"I")'="" @FDA@(7)="@"
+ . I $D(WLHOS),WLHOS'=WLDATA(FNUM,WLIEN,8.5,"I") S @FDA@(8.5)=WLHOS,AUDF=1 S:WLDATA(FNUM,WLIEN,7,"I")'="" @FDA@(7)="@"
  . S:+WLAPTYP @FDA@(8.7)=+WLAPTYP
  . I $D(WLUSER),WLUSER'=WLDATA(FNUM,WLIEN,9,"I") S @FDA@(9)=$S(WLUSER="":"@",1:+WLUSER)
  . I $D(WLEDT),WLEDT'=$G(WLDATA(FNUM,WLIEN,9.5,"I")) S @FDA@(9.5)=WLEDT
@@ -179,6 +182,7 @@ WLSET(RET,INP) ;Waitlist Set
  I $G(INP(6))'="" D WL6   ;wl specific team
  I $G(INP(8))'="" D WL8   ;wl service specialty
  I $D(INP(23)) D WL23(INP(23),$S(+WLIEN:WLIEN,1:WLRET(1)))   ;patient contacts
+ I +AUDF D WLAUD($S(+WLIEN:+WLIEN,1:WLRET(1)),WLCLIN,WLHOS,INP(8))   ;VS AUDIT
  I +$G(WLRET(1)) S RET=RET_WLRET(1)_U_$C(30,31)
  E  S RET=RET_+WLIEN_U_$C(30,31)
  Q
@@ -192,13 +196,20 @@ WL6 ;WL SPECIFIC TEAM does not store with bulk UPDATE^DIE with external data; do
 WL8 ;WL SERVICE/SPECIALTY does not store with bulk UPDATE^DIE if duplicates; need to look for 1st active one
  ; WL Service/Specialty name - NAME field in
  ; SD WL SERVICE/SPECIALTY file 409.31.
- N SDWLNOD,WLSRVSP
+ N ADUF,SDWLNOD,WLSRVSP
  S WLSRVSP=""
- I +INP(8) S WLSRVSP=$$GET1^DIQ+INP(8)
+ I +INP(8) S WLSRVSP=INP(8)
  I WLSRVSP="" S H="" F  S H=$O(^DIC(40.7,"B",$G(INP(8)),H)) Q:H=""  D  Q:WLSRVSP'=""
  .I $P(^DIC(40.7,H,0),U,3)'="",$P(^DIC(40.7,H,0),U,3)<$$NOW^XLFDT() Q
  .S WLSRVSP=$O(^SDWL(409.31,"B",H,0))
- I WLSRVSP'="" K FDA S FDA=$NA(FDA(409.3,$S(+WLIEN:WLIEN,1:WLRET(1))_",")) S @FDA@(7)=WLSRVSP D UPDATE^DIE("","FDA")
+ I WLSRVSP'="" D
+ .K FDA
+ .S FDA=$NA(FDA(409.3,$S(+WLIEN:WLIEN,1:WLRET(1))_","))
+ .S @FDA@(7)=WLSRVSP,ADUF=1
+ .I +WLIEN,$D(WLDATA) D
+ ..S:WLDATA(FNUM,WLIEN,8,"I")'="" @FDA@(8)="@"  ;errors
+ ..S:WLDATA(FNUM,WLIEN,8.5,"I")'="" @FDA@(8.5)="@" ;errors
+ .D:$D(FDA) UPDATE^DIE("","FDA")
  Q
  ;
 WLACT(NAME) ;
@@ -218,7 +229,7 @@ WL23(INP23,WLI) ;Patient Contacts
  .K FDA
  .S %DT="T" S X=$P($P(STR23,"~~",1),":",1,2) D ^%DT S WLASD=Y
  .I (WLASD=-1)!(WLASD="") Q
- .S WLASDH=""  ;$O(^SDWL(409.3,WLI,4,"B",WLASD,0))
+ .S WLASDH=""   ;$O(^SDWL(409.3,WLI,4,"B",WLASD,0))
  .S WLIENS1=$S(WLASDH'="":WLASDH,1:"+1")_","_WLIENS
  .S FDA=$NA(FDA(409.344,WLIENS1))
  .I WLASDH'="" D
@@ -236,4 +247,27 @@ WL23(INP23,WLI) ;Patient Contacts
  ..;I $P(STR23,"~~",6)'="" S @FDA@(5)=$E($P(STR23,"~~",6),1,160)     ;COMMENT
  .D:$D(@FDA) UPDATE^DIE("E","FDA","WLRET1","WLMSG1")
  .;D:$D(@FDA) UPDATE^DIE("E","FDA","WLRET1")
+ Q
+ ;
+WLAUD(WLIEN,WLCLIN,SDCL,WLSTOP,DATE,USER)  ;populate VS AUDIT multiple field 45
+ ; WLIEN   - (required) pointer to SDEC APPT REQUEST file 409.85
+ ; WLCLIN  - (optional) pointer to SD WL SPECIFIC CLINIC
+ ; SDCL    - (optional) pointer to HOSPITAL LOCATION file 44
+ ; WLSTOP  - (optional) pointer to CLINIC STOP file
+ ; DATE    - (optional) date/time in fileman format
+ N SDFDA,SDP,SDPN
+ S WLIEN=$G(WLIEN) Q:WLIEN=""
+ S WLCLIN=$G(WLCLIN)
+ S SDCL=$G(SDCL)
+ S WLSTOP=$G(WLSTOP)
+ S SDP=$O(^SDWL(409.3,WLIEN,6,9999999),-1)
+ I +SDP S SDPN=^SDWL(409.3,WLIEN,6,SDP,0) I $P(SDPN,U,3)=WLCLIN,$P(SDPN,U,4)=SDCL,$P(SDPN,U,5)=WLSTOP Q
+ S DATE=$G(DATE) S:DATE="" DATE=$E($$NOW^XLFDT,1,12)
+ S USER=$G(USER) S:USER="" USER=DUZ
+ S SDFDA(409.345,"+1,"_WLIEN_",",.01)=DATE
+ S SDFDA(409.345,"+1,"_WLIEN_",",1)=USER
+ S:WLCLIN'="" SDFDA(409.345,"+1,"_WLIEN_",",2)=WLCLIN
+ S:SDCL'="" SDFDA(409.345,"+1,"_WLIEN_",",3)=SDCL
+ S:WLSTOP'="" SDFDA(409.345,"+1,"_WLIEN_",",4)=WLSTOP
+ D UPDATE^DIE("","SDFDA")
  Q
