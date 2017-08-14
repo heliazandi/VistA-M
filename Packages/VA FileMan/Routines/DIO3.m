@@ -1,9 +1,10 @@
-DIO3 ;SFISC/GFT-TTLS, SUBTTLS ;2014-12-29  10:21 PM
- ;;22.2;MSC Fileman;;Jan 05, 2015;
+DIO3 ;SFISC/GFT - TTLS, SUBTTLS ;22JUN2016
+ ;;22.2;VA FileMan;**3**;Jan 05, 2016;Build 17
+ ;;Per VA Directive 6402, this routine should not be modified.
  ;;Submitted to OSEHRA 5 January 2015 by the VISTA Expertise Network.
- ;;Based on Medsphere Systems Corporation's MSC Fileman 1051.
+ ;;Based on Medsphere Systems Corporation's MSC FileMan 1051.
  ;;Licensed under the terms of the Apache License, Version 2.0.
- ;;GFT;**2,999,1005,1047**
+ ;GFT;**2,999,1005,1047,1055**;
  ;
 SUB ;
  N TYPE,V ;**CCO/NI This whole subroutine re-written for 'TOTAL', 'SUBTOTAL', 'COUNT', SUBCOUNT', ETC.
@@ -30,15 +31,16 @@ K K Z,X,V,C Q
 1 ;;TOTAL;S;;7090
  I $P(Z,U,6)]"" X $P(Z,U,6,99) S S(V)=Y
  S ^(DE)=$S($S(A:$D(^UTILITY($J,"SV",A,V,DE)),1:$D(^DOSV(0,IO(0),0,V,DE))):^(DE),1:0)+Y
- Q:TYPE["D"  Q:TYPE["F"&(Y=0)
-O I C]""!$P(Z,U,3) D  Q
+ Q:TYPE["D"  Q:TYPE["F"&(Y=0)  ;TOTALS FOR DATES AND (USUALLY) FREE-TEXT DON'T MAKE SENSE
+O I C]""!$P(Z,U,3) D  ;Q
  .N F,OUTRANSF
  .S F=$G(^DOSV(0,IO(0),"F",I))
  .S OUTRANSF="Q"
  .I $P($G(^DD(+F,+$P(F,U,2),0)),U,2)["O" S OUTRANSF=$G(^(2))
  .X OUTRANSF
  .S @("Y=$J(Y,+Z"_C_")")
- .S X(I,%X)=Y
+ S X(I,%X)=Y
+ Q
 2 ;;COUNT;N;;7089
  S ^(DE)=$S($S(A:$D(^UTILITY($J,"SV",A,V,DE)),1:$D(^DOSV(0,IO(0),0,V,DE))):^(DE),1:0)+Y
  S C=$P(",0",U,C]"") G O
